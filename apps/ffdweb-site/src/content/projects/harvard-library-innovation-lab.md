@@ -17,5 +17,5 @@ image:
 featured-content: https://www.ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-boosts-harvard-library-innovation-lab-s-work-to-democratize-open-knowledge
 external-link: https://lil.law.harvard.edu/
 seo:
-  description: ""
+  description: "Harvard Law Library's innovation lab explores decentralized tech like Filecoin and IPFS to advance knowledge preservation and discovery, supported by FFDW."
 ---

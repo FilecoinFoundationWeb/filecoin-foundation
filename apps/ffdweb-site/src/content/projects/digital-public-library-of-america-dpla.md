@@ -17,5 +17,5 @@ image:
   src: /assets/images/dplalogovector-1-.svg
 external-link: https://dp.la/
 seo:
-  description: ""
+  description: "DPLA partners hold 50M cultural heritage items. This project explores preserving these collections on Filecoin to enhance public access and ensure long-term preservation."
 ---

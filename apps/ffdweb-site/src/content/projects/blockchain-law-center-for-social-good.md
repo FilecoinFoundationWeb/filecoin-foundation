@@ -12,5 +12,5 @@ image:
   src: /assets/images/partnerlogo_blsgc.png
 external-link: https://www.blockchainlawsg.org/
 seo:
-  description: ""
+  description: "Educational initiative promoting blockchain technology for social good through research, policy development, and training programs for community college professors and CA government staff."
 ---

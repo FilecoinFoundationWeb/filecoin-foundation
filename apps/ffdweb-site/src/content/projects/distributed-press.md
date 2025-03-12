@@ -16,5 +16,5 @@ image:
 featured-content: https://www.ffdweb.org/blog/building-distributed-press-a-publishing-tool-for-the-decentralized-web
 external-link: https://distributed.press/
 seo:
-  description: ""
+  description: "An open source, no-code publishing tool for Web and DWeb that empowers authors and amplifies free expression by enabling creators to publish content across decentralized networks."
 ---

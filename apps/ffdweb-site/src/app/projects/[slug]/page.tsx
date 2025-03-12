@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { Newspaper } from '@phosphor-icons/react/dist/ssr'
@@ -15,6 +16,8 @@ import { CTALink } from '@/components/CTALink'
 
 import { getProjectData, getProjectsData } from '../utils/getProjectData'
 
+import { generateStructuredData } from './utils/generateStructuredData'
+
 type ProjectProps = {
   params: Promise<SlugParams>
 }
@@ -26,6 +29,7 @@ export default async function Project(props: ProjectProps) {
 
   return (
     <PageLayout gap="large">
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
       <ArticleLayout>
         <Heading tag="h1" variant="3xl-medium">
           {title}

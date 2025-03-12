@@ -16,5 +16,5 @@ image:
   src: /assets/images/eff_short.png
 external-link: https://www.eff.org/
 seo:
-  description: ""
+  description: "EFF champions digital rights through litigation, policy analysis, and activism. They protect privacy, free speech, and innovation as technology's role grows worldwide."
 ---

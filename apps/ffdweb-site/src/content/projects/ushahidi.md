@@ -14,5 +14,5 @@ image:
 external-link: https://www.ushahidi.com/
 has-collaborations: true
 seo:
-  description: ""
+  description: "Ushahidi's Election Data Resilience Initiative uses Filecoin to create a permanent, verifiable repository of election data for researchers and policymakers."
 ---

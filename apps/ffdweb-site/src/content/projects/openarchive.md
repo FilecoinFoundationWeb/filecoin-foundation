@@ -13,5 +13,5 @@ image:
   src: /assets/images/partnerlogo_openarchive.png
 featured-content: https://www.ffdweb.org/blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data/
 seo:
-  description: ""
+  description: "OpenArchive partners with FFDW to enable secure, decentralized preservation of human rights media through their Save app, leveraging IPFS and Filecoin for mobile-first documentation."
 ---

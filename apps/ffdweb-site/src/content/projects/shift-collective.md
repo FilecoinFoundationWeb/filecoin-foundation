@@ -15,5 +15,5 @@ image:
   src: /assets/images/partnerlogo_shift.png
 external-link: https://www.shiftcollective.us/ffdw
 seo:
-  description: ""
+  description: "Shift Collective partners with cultural memory organizations to build community-centered decentralized storage solutions, making archives more accessible and sustainable."
 ---
