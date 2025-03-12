@@ -325,9 +325,4 @@
   .page-header-image {
     @apply rounded-lg border border-brand-100;
   }
-
-  /* SECTION DIVIDER */
-  .section-divider {
-    @apply text-brand-300;
-  }
 }

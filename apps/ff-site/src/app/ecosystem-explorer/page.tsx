@@ -1,4 +1,3 @@
-import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
@@ -15,6 +14,7 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
+import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { EcosystemExplorerContent } from './components/EcosystemExplorerContent'

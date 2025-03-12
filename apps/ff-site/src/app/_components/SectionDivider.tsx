@@ -4,11 +4,9 @@ export type SectionDividerProps = {
 
 export function SectionDivider({ title }: SectionDividerProps) {
   return (
-    <div className="flex max-h-max items-center gap-2">
-      <span className="text-sm font-light uppercase text-brand-300">
-        {title}
-      </span>
-      <div className="h-px flex-1 bg-brand-300" />
+    <div className="flex items-center gap-2 text-brand-300">
+      <span className="text-sm font-light uppercase">{title}</span>
+      <hr className="flex-1" />
     </div>
   )
 }

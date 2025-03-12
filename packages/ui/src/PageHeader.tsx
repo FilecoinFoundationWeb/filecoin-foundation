@@ -13,7 +13,6 @@ import type {
 } from '@filecoin-foundation/utils/types/imageType'
 import { clsx } from 'clsx'
 import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
-import { SectionDivider } from '@filecoin-foundation/ui/SectionDivider'
 
 type TitleProps = {
   children: string
@@ -23,11 +22,10 @@ type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
 }
 
-type PageHeaderProps = {
+export type PageHeaderProps = {
   title: TitleProps['children']
   image: PageHeaderImageProps
   isFeatured?: boolean
-  sectionDividerText?: string
   metaData?: MetaDataType
   description?: DescriptionTextType
   children?: React.ReactElement
@@ -38,13 +36,11 @@ export function PageHeader({
   image,
   metaData,
   isFeatured,
-  sectionDividerText,
   description,
   children,
 }: PageHeaderProps) {
   return (
     <header className="grid grid-cols-1 gap-4">
-      {sectionDividerText && <SectionDivider title={sectionDividerText} />}
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="flex flex-col gap-6">
           {isFeatured && <TagLabel variant="secondary">Featured</TagLabel>}

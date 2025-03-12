@@ -1,4 +1,3 @@
-import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { TagGroup, TagLabel } from '@filecoin-foundation/ui/TagComponents'
@@ -13,6 +12,7 @@ import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
+import { PageHeader } from '@/components/PageHeader'
 
 import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData, getEventsData } from '../utils/getEventData'

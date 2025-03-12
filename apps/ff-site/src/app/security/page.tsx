@@ -1,5 +1,4 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
@@ -17,6 +16,7 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
+import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { developerSupportData } from './data/developerSupportData'
