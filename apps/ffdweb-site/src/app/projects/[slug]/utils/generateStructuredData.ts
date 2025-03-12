@@ -4,12 +4,10 @@ import { generateWebPageStructuredData } from '@/utils/generateWebPageStructured
 
 import type { Project } from '../../types/ProjectType'
 
-export function generateStructuredData(data: Project) {
-  const { seo } = data
-
+export function generateStructuredData({ seo, slug }: Project) {
   return generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
-    path: `${PATHS.PROJECTS.path}/${data.slug}` as DynamicPathValues,
+    path: `${PATHS.PROJECTS.path}/${slug}` as DynamicPathValues,
   })
 }
