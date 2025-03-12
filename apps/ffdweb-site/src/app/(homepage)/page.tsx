@@ -1,4 +1,3 @@
-import { Button } from '@filecoin-foundation/ui/Button'
 import { Card } from '@filecoin-foundation/ui/Card'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
@@ -15,6 +14,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { Button } from '@/components/Button'
 import { CTALink } from '@/components/CTALink'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
@@ -85,11 +85,7 @@ export default async function Home() {
         </CardGrid>
 
         <div className="flex justify-center">
-          <Button
-            href={PATHS.PROJECTS.path}
-            baseDomain={BASE_DOMAIN}
-            className="flex-1 sm:flex-none"
-          >
+          <Button href={PATHS.PROJECTS.path} className="flex-1 sm:flex-none">
             View Projects
           </Button>
         </div>
@@ -128,9 +124,7 @@ export default async function Home() {
       >
         <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
         <div className="flex justify-center">
-          <Button href={PATHS.BLOG.path} baseDomain={BASE_DOMAIN}>
-            View All
-          </Button>
+          <Button href={PATHS.BLOG.path}>View All</Button>
         </div>
       </PageSection>
 
