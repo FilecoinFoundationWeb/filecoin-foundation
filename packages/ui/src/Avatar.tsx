@@ -19,7 +19,7 @@ export function Avatar({ firstName, lastName, image }: AvatarProps) {
         alt={`Photo of ${firstName} ${lastName}`}
         width={IMAGE_SIZE}
         height={IMAGE_SIZE}
-        className={clsx(sharedAvatarStyle, 'inline-block h-8 w-8 object-cover')}
+        className={clsx(sharedAvatarStyle, 'inline-block size-8 object-cover')}
       />
     )
   }
