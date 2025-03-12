@@ -72,7 +72,7 @@ export default async function Home() {
                 image={{
                   ...(image || graphicsData.imageFallback.data),
                   alt: '',
-                  objectFit: 'cover',
+                  objectFit: 'contain',
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
                     sm: '350px',

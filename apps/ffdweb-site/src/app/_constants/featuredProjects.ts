@@ -1,14 +1,14 @@
 export const FEATURED_PROJECTS = [
   {
     id: '1',
-    slug: 'blockchain-law-center-for-social-good',
+    slug: 'internet-archive',
   },
   {
     id: '2',
-    slug: 'blockchain-law-center-for-social-good',
+    slug: 'starling-lab',
   },
   {
     id: '3',
-    slug: 'blockchain-law-center-for-social-good',
+    slug: 'easier-data-initiative',
   },
 ] as const
