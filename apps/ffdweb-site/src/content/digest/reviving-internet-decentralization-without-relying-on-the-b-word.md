@@ -12,7 +12,7 @@ authors:
     last-name: Badiei
     company: Digital Medusa
     image:
-      src: /assets/headshots/Farzaneh_Badiei.png
+      src: /assets/headshots/Farzaneh_Badiei.webp
     # bio: Farzaneh Badiei is a recovering academic and founded Digital Medusa to petrify the enemies of a global, interoperable Internet.
 seo:
   description: Internet decentralization needs smart governance, not complex tech. Learn how practical steps and collective action can restore a more distributed digital infrastructure.

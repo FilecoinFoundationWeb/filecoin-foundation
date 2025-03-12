@@ -12,7 +12,7 @@ authors:
     last-name: Opsahl
     company: "Filecoin Foundation"
     image:
-      src: /assets/headshots/Kurt_Opsahl.png
+      src: /assets/headshots/Kurt_Opsahl.webp
     # bio: Kurt Opsahl works to help build the legal and policy space in which the decentralized web can thrive.
 seo:
   description: Explore why protecting code as a form of free speech is essential for software development, open-source projects, and the future of the decentralized web. Learn about landmark legal cases and global implications.

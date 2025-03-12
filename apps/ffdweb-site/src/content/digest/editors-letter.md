@@ -12,7 +12,7 @@ authors:
     last-name: Masnick
     company: Techdirt, Copia Institute
     image:
-      src: /assets/headshots/Mike_Masnick.png
+      src: /assets/headshots/Mike_Masnick.webp
     # bio: Mike Masnick is the founder & editor of the popular Techdirt blog as well as the founder of the Silicon Valley think tank, the Copia Institute. In both roles, he explores the intersection of technology, innovation, policy, law, civil liberties, and economics.
 seo:
   description: "Mike Masnick introduces a magazine exploring decentralization's impact on cognitive liberty, privacy, blockchain, and the web's future through expert perspectives."

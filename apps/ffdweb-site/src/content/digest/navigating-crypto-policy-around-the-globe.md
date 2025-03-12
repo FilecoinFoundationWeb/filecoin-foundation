@@ -12,7 +12,7 @@ authors:
     last-name: Smith
     company: Blockchain Association
     image:
-      src: /assets/headshots/Kristin_Smith.png
+      src: /assets/headshots/Kristin_Smith.webp
   # bio: "Kristin is CEO of Blockchain Association, the Washington, D.C.-based trade association representing more than 100 of the industry’s leading companies."
 seo:
   description: "Explore how different regions approach crypto regulation: from US enforcement actions to EU's MiCA legislation and China's CBDC. Learn how global policies shape the future of decentralized technology."
