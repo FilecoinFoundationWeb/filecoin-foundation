@@ -1,22 +1,24 @@
 ---
-title: DWeb for Creators
-created-on: 2023-10-20T15:21:35.392Z
-updated-on: 2023-10-20T15:21:35.392Z
-published-on: 2023-10-20T15:22:08.074Z
-source: https://dweb.grayarea.org/
-organization: Gray Area
-description: The Decentralized Web For Creators Knowledge Base is an
-  interactive index of resources that accompanied the DWeb for Creators online
-  course at Gray Area, San Francisco. Here you will find essential links from
-  the sessions, including outside resources such as readings, videos and other
-  references. Start using the DWeb in your work today!
-type: tutorial
-topic:
-  - art
-  - social-impact
-keywords: Art, Humanities, Media theory, Curriculum, Courses, Metaverse, Paid
-length: Variable
-technicality: "2"
-language: English
-tags: resources
+title: Distributed Press Documentation
+created-on: "2023-10-20T15:21:35.236Z"
+updated-on: "2023-10-20T15:21:35.236Z"
+published-on: "2023-10-20T15:22:08.074Z"
+description: >-
+  This site contains technical documentation about Distributed Press: an
+  open-source publishing tool focused on censorship mitigation and content
+  hosting for the World Wide Web and Distributed Web. It automates publishing
+  and hosting content to the web that it seeds to decentralized protocols like
+  IPFS and Hypercore.
+organization: Distributed Press
+category: publishing-hosting
+resource-type: tool
+technicality: "3"
+keywords: >-
+  Censorship, Tools, Content hosting, Authorship and publishing, Digital
+  signatures, open source
+link: https://docs.distributed.press/
+seo:
+  description: >-
+    Technical documentation for Distributed Press, an open-source tool for 
+    censorship-resistant publishing and decentralized content hosting.
 ---

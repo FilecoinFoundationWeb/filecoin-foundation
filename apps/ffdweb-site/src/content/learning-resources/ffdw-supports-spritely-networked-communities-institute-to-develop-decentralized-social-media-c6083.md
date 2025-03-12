@@ -1,17 +1,8 @@
 ---
-source: >-
-  /ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media/
-technicality: "1"
-language: English
-keywords: >-
-  decentralized social media, online identities, encrypted storage,
-  gatekeeper-free, secure decentralized online communities, user-empowered
-  moderation tools, alternative architectures, user privacy, data protection
-title: >-
-  FFDW Supports Spritely Networked Communities Institute to Develop
-  Decentralized Social Media
-length: ~5 Minutes
-organization: Filecoin Foundation for the Decentralized Web (FFDW) & Spritely Institute
+title: FFDW Supports Spritely Networked Communities Institute to Develop Decentralized Social Media
+created-on: "2023-10-20T15:21:38.146Z"
+updated-on: "2023-10-20T15:21:38.146Z"
+published-on: "2023-10-20T15:22:08.074Z"
 description: >-
   This blog post is the announcement of FFDW's collaboration with Spritely
   Institute to support the creation of a decentralized social media platform.
@@ -20,12 +11,19 @@ description: >-
   individuals can freely build their online identities. Furthermore, this blog
   post describes Spritely's goals towards user-empowered moderation tools,
   infrastructure, user experience, etc.
-topic:
-  - social-impact
-type: blog
-updated-on: "2023-10-20T15:21:38.146Z"
-created-on: "2023-10-20T15:21:38.146Z"
-published-on: "2023-10-20T15:22:08.074Z"
-layout: "[resources].html"
-tags: resources
+organization: Filecoin Foundation for the Decentralized Web (FFDW) & Spritely Institute
+category: social-impact
+resource-type: blog-post
+technicality: "1"
+length: ~5 Minutes
+keywords: >-
+  decentralized social media, online identities, encrypted storage,
+  gatekeeper-free, secure decentralized online communities, user-empowered
+  moderation tools, alternative architectures, user privacy, data protection
+link: >-
+  https://www.ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media/
+seo:
+  description: >-
+    Learn how Spritely Institute and FFDW are building a decentralized, 
+    privacy-focused social media platform.
 ---

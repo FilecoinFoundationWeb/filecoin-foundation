@@ -38,6 +38,7 @@ export const PATHS = {
   LEARNING_RESOURCES: createPathConfig(
     '/learning-resources',
     'Learning Resources',
+    { includesEntries: true },
   ),
   PRIVACY_POLICY: createPathConfig('/privacy-policy', 'Privacy Policy'),
   PROJECTS: createPathConfig('/projects', 'Projects', {

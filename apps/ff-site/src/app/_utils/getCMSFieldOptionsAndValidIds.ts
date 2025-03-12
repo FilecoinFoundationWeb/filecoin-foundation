@@ -3,20 +3,20 @@ import {
   type CMSFieldOptionsAndValidIdsParams as SharedCMSFieldOptionsAndValidIdsParams,
 } from '@filecoin-foundation/utils/getCMSFieldOptionsAndValidIds'
 
+import type { FFCMSCollectionName } from '@/types/cmsTypes'
+
 import configData from '@/data/cmsConfigSchema.json'
 
 export type CMSFieldOptionsAndValidIdsParams = Omit<
-  SharedCMSFieldOptionsAndValidIdsParams,
+  SharedCMSFieldOptionsAndValidIdsParams<FFCMSCollectionName>,
   'configData'
 >
 
-export function getCMSFieldOptionsAndValidIds({
-  collectionName,
-  fieldName,
-}: CMSFieldOptionsAndValidIdsParams) {
-  return sharedGetCMSFieldOptionsAndValidIds({
-    collectionName,
-    fieldName,
+export function getCMSFieldOptionsAndValidIds(
+  args: CMSFieldOptionsAndValidIdsParams,
+) {
+  return sharedGetCMSFieldOptionsAndValidIds<FFCMSCollectionName>({
     configData,
+    ...args,
   })
 }
