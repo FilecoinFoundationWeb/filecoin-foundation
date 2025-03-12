@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { clsx } from 'clsx'
 
 const IMAGE_SIZE = 32
-const sharedAvatarStyle = 'rounded-full ring-2 avatar-ring'
+const sharedAvatarStyle = 'rounded-full ring avatar-ring'
 
 export type AvatarProps = {
   firstName: string
@@ -19,7 +19,7 @@ export function Avatar({ firstName, lastName, image }: AvatarProps) {
         alt={`Photo of ${firstName} ${lastName}`}
         width={IMAGE_SIZE}
         height={IMAGE_SIZE}
-        className={clsx(sharedAvatarStyle, 'inline-block object-cover')}
+        className={clsx(sharedAvatarStyle, 'inline-block h-8 w-8 object-cover')}
       />
     )
   }
