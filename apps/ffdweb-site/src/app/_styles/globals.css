@@ -316,7 +316,6 @@
   }
 
   /* PAGE HEADER */
-
   .page-header-image {
     @apply rounded-none;
   }
