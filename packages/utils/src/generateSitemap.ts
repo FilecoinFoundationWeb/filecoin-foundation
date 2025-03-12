@@ -1,0 +1,61 @@
+import type { DynamicBaseData } from '@filecoin-foundation/utils/schemas/DynamicDataBaseSchema'
+
+type GenericEntryData = {
+  updatedOn: DynamicBaseData['updated-on']
+  slug: string
+}
+
+type GenerateDynamicRoutesProps<T extends GenericEntryData> = {
+  data: Array<T>
+  basePath: string
+  baseUrl: string
+}
+
+type DynamicRouteConfig = {
+  getData: () => Promise<Array<GenericEntryData>>
+  basePath: string
+}
+
+type SitemapConfig = {
+  paths: Record<string, { path: string }>
+  baseUrl: string
+  dynamicRoutes: Record<string, DynamicRouteConfig>
+}
+
+export default async function generateSitemap({
+  paths,
+  baseUrl,
+  dynamicRoutes = {},
+}: SitemapConfig) {
+  const staticRoutes = Object.values(paths).map((pathConfig) => ({
+    url: `${baseUrl}${pathConfig.path}`,
+    lastModified: new Date(),
+  }))
+
+  const dynamicRoutesPromises = Object.values(dynamicRoutes).map(
+    async ({ getData, basePath }) => {
+      const entries = await getData()
+      return generateDynamicRoutes({
+        data: entries,
+        basePath,
+        baseUrl,
+      })
+    },
+  )
+
+  const dynamicRoutesResults = await Promise.all(dynamicRoutesPromises)
+  const allDynamicRoutes = dynamicRoutesResults.flat()
+
+  return [...staticRoutes, ...allDynamicRoutes]
+}
+
+function generateDynamicRoutes<T extends GenericEntryData>({
+  data,
+  basePath,
+  baseUrl,
+}: GenerateDynamicRoutesProps<T>) {
+  return data.map(({ slug, updatedOn }) => ({
+    url: `${baseUrl}${basePath}/${slug}`,
+    lastModified: updatedOn.toISOString(),
+  }))
+}

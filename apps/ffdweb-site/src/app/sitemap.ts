@@ -1,12 +1,29 @@
+import generateSitemap from '@filecoin-foundation/utils/generateSitemap'
+
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-export default async function sitemap() {
-  const staticRoutes = Object.values(PATHS).map((pathConfig) => ({
-    url: `${BASE_URL}${pathConfig.path}`,
-    lastModified: new Date(),
-    priority: pathConfig.path === '/' ? 1.0 : 0.7,
-  }))
+import { getBlogPostsData } from './blog/utils/getBlogPostData'
+import { getDigestArticlesData } from './digest/utils/getDigestArticleData'
+import { getProjectsData } from './projects/utils/getProjectData'
 
-  return [...staticRoutes]
+export default async function sitemap() {
+  return await generateSitemap({
+    paths: PATHS,
+    baseUrl: BASE_URL,
+    dynamicRoutes: {
+      blog: {
+        getData: getBlogPostsData,
+        basePath: PATHS.BLOG.path,
+      },
+      digestArticles: {
+        getData: getDigestArticlesData,
+        basePath: PATHS.DIGEST.path,
+      },
+      projects: {
+        getData: getProjectsData,
+        basePath: PATHS.PROJECTS.path,
+      },
+    },
+  })
 }
