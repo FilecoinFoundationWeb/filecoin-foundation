@@ -2,6 +2,7 @@ import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { BlogPostHeader } from '@filecoin-foundation/ui/BlogPostHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -16,6 +17,8 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 
 import { getBlogPostData } from '../utils/getBlogPostData'
 
+import { generateStructuredData } from './utils/generateStructuredData'
+
 type BlogPostProps = {
   params: Promise<SlugParams>
 }
@@ -28,6 +31,7 @@ export default async function BlogPost(props: BlogPostProps) {
 
   return (
     <PageLayout gap="large">
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
       <ArticleLayout>
         <BlogPostHeader
           title={title}
