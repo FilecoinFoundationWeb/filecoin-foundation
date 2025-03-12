@@ -25,7 +25,7 @@ import { getProjectsBySlugs } from './utils/getFeaturedProjects'
 
 export default async function Home() {
   const featuredProjects = await getProjectsBySlugs(
-    FEATURED_PROJECTS.map((p) => p.slug),
+    FEATURED_PROJECTS.map((project) => project.slug),
   )
   return (
     <PageLayout gap="large">
