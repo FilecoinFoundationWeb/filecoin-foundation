@@ -3,7 +3,6 @@
 import { useSearchParams } from 'next/navigation'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -16,11 +15,11 @@ import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { Card } from '@/components/Card'
+import { FilterContainer } from '@/components/FilterContainer'
 
 import type { Project } from '../types/ProjectType'
 
@@ -45,45 +44,46 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
   })
 
   return (
-    <section>
-      <Search query={searchQuery} />
-      {paginatedResults.length === 0 ? (
-        <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
-      ) : (
-        <CardGrid cols="smTwoLgThree">
-          {paginatedResults.map((post, i) => {
-            const { slug, title, description, image, publishedOn } = post
-            const isFirstThreeImages = i < 3
+    <FilterContainer
+      hasResults={Boolean(paginatedResults.length)}
+      search={<Search query={searchQuery} />}
+      pagination={
+        <Pagination pageCount={pageCount} currentPage={currentPage} />
+      }
+    >
+      <CardGrid cols="smTwoLgThree">
+        {paginatedResults.map((post, i) => {
+          const { slug, title, description, image, publishedOn } = post
+          const isFirstThreeImages = i < 3
 
-            return (
-              <Card
-                key={slug}
-                title={title}
-                description={{ text: description, isClamped: true }}
-                metaData={[formatDate(publishedOn)]}
-                cta={{
-                  href: `${PATHS.PROJECTS.path}/${slug}`,
-                  text: 'Read More',
-                  icon: CARET_RIGHT,
-                }}
-                image={{
-                  ...(image || graphicsData.imageFallback.data),
-                  alt: '',
-                  priority: isFirstThreeImages,
-                  objectFit: 'contain',
-                  sizes: buildImageSizeProp({
-                    startSize: '100vw',
-                    sm: '350px',
-                    md: '470px',
-                    lg: '360px',
-                  }),
-                }}
-              />
-            )
-          })}
-        </CardGrid>
-      )}
-      <Pagination pageCount={pageCount} currentPage={currentPage} />
-    </section>
+          return (
+            <Card
+              key={slug}
+              title={title}
+              description={{ text: description, isClamped: true }}
+              metaData={[formatDate(publishedOn)]}
+              cta={{
+                href: `${PATHS.PROJECTS.path}/${slug}`,
+                text: 'Read More',
+                icon: CARET_RIGHT,
+              }}
+              image={{
+                ...(image || graphicsData.imageFallback.data),
+                alt: '',
+                priority: isFirstThreeImages,
+                objectFit: 'contain',
+                padding: true,
+                sizes: buildImageSizeProp({
+                  startSize: '100vw',
+                  sm: '350px',
+                  md: '470px',
+                  lg: '360px',
+                }),
+              }}
+            />
+          )
+        })}
+      </CardGrid>
+    </FilterContainer>
   )
 }
