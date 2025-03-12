@@ -119,7 +119,7 @@
   }
 
   .avatar-ring {
-    @apply text-neutral-50;
+    @apply ring-neutral-50;
   }
 
   /* BREADCRUMBS */
