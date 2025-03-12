@@ -5,8 +5,8 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
+import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { FEATURED_PROJECTS } from '@/constants/featuredProjects'
-import { ICON_CONFIG } from '@/constants/icons'
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN, FFDW_URLS, SEO } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
@@ -21,12 +21,11 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
-import { getProjectsBySlugs } from './utils/getFeaturedProjects'
+import { getFeaturedProjects } from './utils/getFeaturedProjects'
 
 export default async function Home() {
-  const featuredProjects = await getProjectsBySlugs(
-    FEATURED_PROJECTS.map((project) => project.slug),
-  )
+  const featuredProjects = await getFeaturedProjects([...FEATURED_PROJECTS])
+
   return (
     <PageLayout gap="large">
       <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
@@ -67,7 +66,7 @@ export default async function Home() {
                   href: `${PATHS.PROJECTS.path}/${slug}`,
                   text: 'Read More',
                   baseDomain: BASE_DOMAIN,
-                  icon: ICON_CONFIG.CARET_RIGHT,
+                  icon: CARET_RIGHT,
                 }}
                 image={{
                   ...(image || graphicsData.imageFallback.data),

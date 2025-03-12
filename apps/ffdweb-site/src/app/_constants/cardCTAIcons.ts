@@ -1,6 +1,6 @@
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 
-export const ICON_CONFIG = {
+const CARD_CTA_ICON_CONFIG = {
   CARET_RIGHT: {
     component: CaretRight,
     size: 16,
@@ -8,3 +8,5 @@ export const ICON_CONFIG = {
     weight: 'bold',
   },
 } as const
+
+export const { CARET_RIGHT } = CARD_CTA_ICON_CONFIG

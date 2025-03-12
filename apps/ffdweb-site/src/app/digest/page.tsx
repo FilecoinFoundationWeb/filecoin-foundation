@@ -4,7 +4,7 @@ import { Social } from '@filecoin-foundation/ui/Social'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
-import { ICON_CONFIG } from '@/constants/icons'
+import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -67,7 +67,7 @@ export default async function Digest() {
                 cta={{
                   href: `${PATHS.DIGEST.path}/${slug}`,
                   text: 'Read Article',
-                  icon: ICON_CONFIG.CARET_RIGHT,
+                  icon: CARET_RIGHT,
                 }}
                 image={{
                   ...(image || graphicsData.imageFallback.data),

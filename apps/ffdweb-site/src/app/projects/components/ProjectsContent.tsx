@@ -14,7 +14,7 @@ import {
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
-import { ICON_CONFIG } from '@/constants/icons'
+import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
@@ -64,7 +64,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
                 cta={{
                   href: `${PATHS.PROJECTS.path}/${slug}`,
                   text: 'Read More',
-                  icon: ICON_CONFIG.CARET_RIGHT,
+                  icon: CARET_RIGHT,
                 }}
                 image={{
                   ...(image || graphicsData.imageFallback.data),
