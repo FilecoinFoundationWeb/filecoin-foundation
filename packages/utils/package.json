@@ -13,6 +13,7 @@
     "./dateUtils": "./src/dateUtils.ts",
     "./fileUtils": "./src/fileUtils.ts",
     "./findOrThrow": "./src/findOrThrow.ts",
+    "./generateBlogPostStructuredData": "./src/generateBlogPostStructuredData.ts",
     "./getAllMarkdownData": "./src/getAllMarkdownData.ts",
     "./getCategoryLabel": "./src/getCategoryLabel.ts",
     "./getCMSFieldOptionsAndValidIds": "./src/getCMSFieldOptionsAndValidIds.ts",
