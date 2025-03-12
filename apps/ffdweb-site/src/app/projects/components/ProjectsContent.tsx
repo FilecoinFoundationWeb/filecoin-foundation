@@ -13,8 +13,8 @@ import {
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
-import { CaretRight } from '@phosphor-icons/react'
 
+import { ICON_CONFIG } from '@/constants/icons'
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
@@ -64,12 +64,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
                 cta={{
                   href: `${PATHS.PROJECTS.path}/${slug}`,
                   text: 'Read More',
-                  icon: {
-                    component: CaretRight,
-                    size: 16,
-                    position: 'trailing',
-                    weight: 'bold',
-                  },
+                  icon: ICON_CONFIG.CARET_RIGHT,
                 }}
                 image={{
                   ...(image || graphicsData.imageFallback.data),
