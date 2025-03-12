@@ -25,7 +25,7 @@ type SitemapConfig = {
 export default async function generateSitemap({
   paths,
   baseUrl,
-  dynamicRoutes = {},
+  dynamicRoutes,
 }: SitemapConfig) {
   const staticRoutes = Object.values(paths).map((pathConfig) => ({
     url: `${baseUrl}${pathConfig.path}`,
