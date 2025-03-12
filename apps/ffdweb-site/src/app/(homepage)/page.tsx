@@ -5,7 +5,6 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
-import { FEATURED_PROJECTS } from '@/constants/featuredProjects'
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN, FFDW_URLS, SEO } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
@@ -21,6 +20,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
+import { FEATURED_PROJECTS } from './constants/featuredProjects'
 import { getFeaturedProjects } from './utils/getFeaturedProjects'
 
 export default async function Home() {
