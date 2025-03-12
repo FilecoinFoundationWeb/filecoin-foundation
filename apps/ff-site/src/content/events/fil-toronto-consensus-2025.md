@@ -13,6 +13,8 @@ location:
   region: north-america
 start-date: 2025-05-12
 end-date: 2025-05-16
+image:
+  src: /assets/images/toronto25.webp
 seo:
   twitter:
     card: summary

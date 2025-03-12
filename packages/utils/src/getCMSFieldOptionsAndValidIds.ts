@@ -3,19 +3,18 @@ import {
   getCollectionConfig,
 } from '@filecoin-foundation/utils/cmsConfigUtils'
 import { mapCMSOptionsToListboxFormat } from '@filecoin-foundation/utils/mapCMSOptionsToListboxFormat'
-import type { CMSCollectionName } from '@filecoin-foundation/utils/types/cmsConfig'
 
-export type CMSFieldOptionsAndValidIdsParams = {
-  collectionName: CMSCollectionName
+export type CMSFieldOptionsAndValidIdsParams<CollectionName extends string> = {
+  collectionName: CollectionName
   fieldName: string
   configData: unknown
 }
 
-export function getCMSFieldOptionsAndValidIds({
+export function getCMSFieldOptionsAndValidIds<CollectionName extends string>({
   collectionName,
   fieldName,
   configData,
-}: CMSFieldOptionsAndValidIdsParams) {
+}: CMSFieldOptionsAndValidIdsParams<CollectionName>) {
   const { fields } = getCollectionConfig(collectionName, configData)
   const cmsOptions = getCMSFieldOptions(fields, fieldName)
   const options = mapCMSOptionsToListboxFormat(cmsOptions)
