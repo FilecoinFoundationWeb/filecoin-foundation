@@ -1,4 +1,6 @@
-;`import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+`import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
 
@@ -11,9 +13,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { PageFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { CTASection } from '@/components/CTASection'
-import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 

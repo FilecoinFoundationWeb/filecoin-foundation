@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-import { Button } from '@filecoin-foundation/ui/Button'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
@@ -10,7 +9,6 @@ import { getFeaturedEntry } from '@filecoin-foundation/utils/getFeaturedEntry'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { attributes } from '@/content/pages/events.md'
 
@@ -20,6 +18,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { PageSection } from '@/components/PageSection'
 
@@ -72,10 +71,7 @@ export default async function Events(props: Props) {
           objectFit: 'cover',
         }}
       >
-        <Button
-          href={`${PATHS.EVENTS.path}/${featuredEvent.slug}`}
-          baseDomain={BASE_DOMAIN}
-        >
+        <Button href={`${PATHS.EVENTS.path}/${featuredEvent.slug}`}>
           {DEFAULT_CTA_TEXT}
         </Button>
       </PageHeader>

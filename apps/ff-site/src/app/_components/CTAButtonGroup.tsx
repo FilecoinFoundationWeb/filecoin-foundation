@@ -1,8 +1,7 @@
-import { Button } from '@filecoin-foundation/ui/Button'
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 import { clsx } from 'clsx'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
+import { Button } from '@/components/Button'
 
 export type CTAButtonGroupProps = {
   cta: CTAProps | Array<CTAProps>
@@ -25,7 +24,6 @@ export function CTAButtonGroup({ cta }: CTAButtonGroupProps) {
           key={href}
           href={href}
           variant={index === 0 ? 'primary' : 'ghost'}
-          baseDomain={BASE_DOMAIN}
         >
           {text}
         </Button>

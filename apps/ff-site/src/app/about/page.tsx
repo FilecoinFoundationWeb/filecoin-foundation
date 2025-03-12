@@ -1,4 +1,3 @@
-import { Button } from '@filecoin-foundation/ui/Button'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { KeyMemberCard } from '@filecoin-foundation/ui/KeyMemberCard'
 import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
@@ -9,7 +8,7 @@ import { Files } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { attributes } from '@/content/pages/about.md'
 
@@ -19,6 +18,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { PageSection } from '@/components/PageSection'
@@ -50,10 +50,7 @@ export default function About() {
         description={header.description}
         image={graphicsData.about}
       >
-        <Button
-          baseDomain={BASE_DOMAIN}
-          href={FILECOIN_FOUNDATION_URLS.annualReports['2024']}
-        >
+        <Button href={FILECOIN_FOUNDATION_URLS.annualReports['2024']}>
           Learn More in Our Annual Report
         </Button>
       </PageHeader>

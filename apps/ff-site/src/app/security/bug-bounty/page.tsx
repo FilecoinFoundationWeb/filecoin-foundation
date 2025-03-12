@@ -1,10 +1,9 @@
-import { Button } from '@filecoin-foundation/ui/Button'
 import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { attributes } from '@/content/pages/security/bug-bounty.md'
 
@@ -14,6 +13,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { Button } from '@/components/Button'
 import { PageSection } from '@/components/PageSection'
 
 import { Leaderboard } from './components/Leaderboard'
@@ -38,10 +38,7 @@ export default function BugBounty() {
         description={header.description}
         image={graphicsData.security4}
       >
-        <Button
-          href={FILECOIN_FOUNDATION_URLS.security.bugBountyProgram}
-          baseDomain={BASE_DOMAIN}
-        >
+        <Button href={FILECOIN_FOUNDATION_URLS.security.bugBountyProgram}>
           Learn More About the Program
         </Button>
       </PageHeader>

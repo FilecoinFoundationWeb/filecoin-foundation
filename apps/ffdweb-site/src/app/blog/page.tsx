@@ -1,6 +1,5 @@
 import { Suspense } from 'react'
 
-import { Button } from '@filecoin-foundation/ui/Button'
 import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -8,11 +7,12 @@ import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { getFeaturedEntry } from '@filecoin-foundation/utils/getFeaturedEntry'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+
+import { Button } from '@/components/Button'
 
 import { BlogContent } from './components/BlogContent'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -47,10 +47,7 @@ export default async function Blog() {
           objectFit: 'cover',
         }}
       >
-        <Button
-          baseDomain={BASE_DOMAIN}
-          href={`${PATHS.BLOG.path}/${featuredPost.slug}`}
-        >
+        <Button href={`${PATHS.BLOG.path}/${featuredPost.slug}`}>
           Read Featured Post
         </Button>
       </PageHeader>

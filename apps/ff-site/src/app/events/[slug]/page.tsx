@@ -68,6 +68,15 @@ export default async function EventEntry(props: EventProps) {
   const eventHasSpeakers = speakers && speakers.speakersList.length > 0
   const eventHasSponsors = sponsors && Object.keys(sponsors).length > 0
 
+  const ctaArray = buildCtaArray({
+    links: {
+      externalLink,
+      lumaCalendarLink,
+      youtubePlaylistUrl,
+    },
+    eventHasConcluded,
+  })
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
@@ -75,10 +84,8 @@ export default async function EventEntry(props: EventProps) {
         {eventHasConcluded ? (
           <TagGroup
             tags={[
-              {
-                text: categoryLabel,
-              },
-              { variant: 'callout', text: 'Past Event' },
+              { text: categoryLabel },
+              { text: 'Past Event', variant: 'callout' },
             ]}
           />
         ) : (
@@ -99,18 +106,7 @@ export default async function EventEntry(props: EventProps) {
             objectFit: 'cover',
           }}
         >
-          <CTAButtonGroup
-            cta={
-              buildCtaArray({
-                links: {
-                  externalLink,
-                  lumaCalendarLink,
-                  youtubePlaylistUrl,
-                },
-                eventHasConcluded,
-              }) ?? []
-            }
-          />
+          <CTAButtonGroup cta={ctaArray ?? []} />
         </PageHeader>
       </div>
 

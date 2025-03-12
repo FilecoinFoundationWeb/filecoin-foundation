@@ -1,11 +1,9 @@
-import { Button } from '@filecoin-foundation/ui/Button'
 import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { attributes } from '@/content/pages/ecosystem-explorer/ecosystem-explorer.md'
 
@@ -15,6 +13,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
 import { PageSection } from '@/components/PageSection'
 
@@ -50,10 +49,7 @@ export default async function EcosystemExplorer(props: Props) {
         description={header.description}
         image={graphicsData.ecosystem}
       >
-        <Button
-          href={PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path}
-          baseDomain={BASE_DOMAIN}
-        >
+        <Button href={PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path}>
           Submit Your Project
         </Button>
       </PageHeader>
