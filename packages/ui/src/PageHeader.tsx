@@ -46,7 +46,7 @@ export function PageHeader({
     <header className="grid grid-cols-1 gap-4">
       {sectionDividerText && <SectionDivider title={sectionDividerText} />}
       <div className="grid gap-6 lg:grid-cols-2">
-        <div className="grid grid-cols-1 gap-6">
+        <div className="flex flex-col gap-6">
           {isFeatured && <TagLabel variant="secondary">Featured</TagLabel>}
           <PageHeader.Title>{title}</PageHeader.Title>
           {metaData && <Meta metaData={metaData} />}
