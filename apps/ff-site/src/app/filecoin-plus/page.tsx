@@ -1,9 +1,7 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-import { FocusAreaCard } from '@filecoin-foundation/ui/FocusAreaCard'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
-import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
@@ -23,6 +21,7 @@ import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { Button } from '@/components/Button'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
+import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
@@ -58,21 +57,8 @@ export default function FilPlus() {
 
       <PageSection kicker="About" title="How Fil+ Works">
         <CardGrid cols="lgThree">
-          {aboutData.map(({ title, description, image }) => (
-            <FocusAreaCard
-              key={title}
-              title={title}
-              image={{
-                ...image,
-                sizes: buildImageSizeProp({
-                  startSize: '100vw',
-                  sm: '250px',
-                  md: '330px',
-                }),
-              }}
-            >
-              <p>{description}</p>
-            </FocusAreaCard>
+          {aboutData.map((data) => (
+            <FocusAreaCard key={data.title} {...data} />
           ))}
         </CardGrid>
 

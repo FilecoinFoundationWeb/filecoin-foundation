@@ -23,8 +23,18 @@ export function FocusAreaCard({
 }: FocusAreaCardProps) {
   return (
     <li className="focus-area-card">
-      {image && <FocusAreaCard.Image image={image} />}
-      {icon && <FocusAreaCard.Icon icon={icon} />}
+      {image && (
+        <Image
+          src={image.data}
+          alt={image.alt}
+          className="focus-area-card-image"
+        />
+      )}
+      {icon && (
+        <div className="accent-icon-regular">
+          <Icon component={icon} size={64} />
+        </div>
+      )}
       <div className="focus-area-card-content">
         <Heading tag="h3" variant="lg">
           {title}
@@ -32,27 +42,5 @@ export function FocusAreaCard({
         {children}
       </div>
     </li>
-  )
-}
-
-FocusAreaCard.Image = function FocusAreaCardImage({
-  image,
-}: Pick<FocusAreaCardProps, 'image'>) {
-  if (!image) return null
-
-  return (
-    <Image src={image.data} alt={image.alt} className="focus-area-card-image" />
-  )
-}
-
-FocusAreaCard.Icon = function FocusAreaCardIcon({
-  icon,
-}: Pick<FocusAreaCardProps, 'icon'>) {
-  if (!icon) return null
-
-  return (
-    <div className="accent-icon-regular">
-      <Icon component={icon} size={64} />
-    </div>
   )
 }

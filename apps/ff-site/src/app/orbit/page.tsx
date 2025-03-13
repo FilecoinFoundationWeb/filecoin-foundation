@@ -1,5 +1,4 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-import { FocusAreaCard } from '@filecoin-foundation/ui/FocusAreaCard'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
@@ -23,6 +22,7 @@ import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
+import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -84,18 +84,10 @@ export default async function Orbit(props: Props) {
             return (
               <FocusAreaCard
                 key={index}
+                image={image}
                 title={title}
-                image={{
-                  ...image,
-                  sizes: buildImageSizeProp({
-                    startSize: '100vw',
-                    sm: '250px',
-                    md: '330px',
-                  }),
-                }}
-              >
-                <p>{description}</p>
-              </FocusAreaCard>
+                description={description}
+              />
             )
           })}
         </CardGrid>
