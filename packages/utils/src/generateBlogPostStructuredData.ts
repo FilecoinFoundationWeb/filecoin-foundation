@@ -26,7 +26,7 @@ export function generateBlogPostStructuredData({
   baseUrl,
   basePath,
   organizationSchema,
-}: GenerateBlogPostStructuredDataProps): WithContext<BlogPosting> {
+}: GenerateBlogPostStructuredDataProps) {
   return {
     '@context': SCHEMA_CONTEXT_URL,
     '@type': 'BlogPosting',
@@ -45,5 +45,5 @@ export function generateBlogPostStructuredData({
       '@id': `${baseUrl}${basePath}/${slug}`,
     },
     publisher: organizationSchema,
-  }
+  } as const satisfies WithContext<BlogPosting>
 }
