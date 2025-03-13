@@ -3,6 +3,7 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
+import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
@@ -25,12 +26,17 @@ import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 // import { IconCardWithCTA } from './components/IconCardWithCTA'
 import { FEATURED_PROJECTS } from './constants/featuredProjects'
 // import { learningResources } from './constants/learningResources'
-import { getFeaturedBlogPosts } from './utils/getFeaturedBlogPosts'
 import { getFeaturedProjects } from './utils/getFeaturedProjects'
+
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 export default async function Home() {
   const featuredProjects = await getFeaturedProjects([...FEATURED_PROJECTS])
-  const featuredBlogPosts = await getFeaturedBlogPosts()
+  const featuredBlogPosts = await getFeaturedBlogPosts({
+    blogPosts: await getBlogPostsData(),
+    sort: 'newest',
+    limit: 6,
+  })
 
   return (
     <PageLayout gap="large">

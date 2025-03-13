@@ -2,6 +2,7 @@ import { Button } from '@filecoin-foundation/ui/Button'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN, FILECOIN_URLS } from '@/constants/siteMetadata'
@@ -27,8 +28,8 @@ import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
 import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
 import { FrontmatterSchema } from './schemas/FrontmatterSchema'
-import { getFeaturedBlogPosts } from './utils/getFeaturedBlogPosts'
 
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 import { getFeaturedEcosystemProjects } from '@/ecosystem-explorer/utils/getFeaturedEcosystemProjects'
 
 const {
@@ -47,7 +48,11 @@ export const metadata = createMetadata({
 })
 
 export default async function Home() {
-  const featuredBlogPosts = await getFeaturedBlogPosts()
+  const featuredBlogPosts = await getFeaturedBlogPosts({
+    blogPosts: await getBlogPostsData(),
+    sort: 'newest',
+    limit: 4,
+  })
   const hasFeaturedBlogPosts = featuredBlogPosts.length > 0
 
   const featuredEcosystemProjects = await getFeaturedEcosystemProjects(
