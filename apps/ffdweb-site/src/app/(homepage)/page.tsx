@@ -1,6 +1,5 @@
 import { Card } from '@filecoin-foundation/ui/Card'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-import { FocusAreaCard } from '@filecoin-foundation/ui/FocusAreaCard'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -21,6 +20,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
+import { IconCardWithCTA } from './components/IconCardWithCTA'
 import { FEATURED_PROJECTS } from './constants/featuredProjects'
 import { learningResources } from './constants/learningResources'
 import { getFeaturedProjects } from './utils/getFeaturedProjects'
@@ -100,13 +100,11 @@ export default async function Home() {
           'Learn how decentralized technologies are creating a better future for a better web. Explore educational content, research papers, tutorials, interactive content, and more resources from FFDW and beyond.',
         ]}
       >
-        {/* <CardGrid cols="mdThree">
-          {learningResources.map(({ icon, title, cta }) => (
-            <FocusAreaCard key={title} icon={icon} title={title}>
-              <CTALink href={cta.href}>{cta.text}</CTALink>
-            </FocusAreaCard>
-          ))}
-        </CardGrid> */}
+        <CardGrid cols="mdThree">
+          {/* {learningResources.map(({ icon, title, cta }) => (
+            <IconCardWithCTA key={title} icon={icon} title={title} cta={cta} />
+          ))} */}
+        </CardGrid>
         <CTALink href={PATHS.LEARNING_RESOURCES.path}>
           View All Learning Resources
         </CTALink>

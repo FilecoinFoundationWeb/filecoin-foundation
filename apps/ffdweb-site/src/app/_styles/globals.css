@@ -328,13 +328,4 @@
   .accent-icon-fill {
     @apply bg-brand-secondary-100 text-neutral-950;
   }
-
-  /* FOCUS AREA CARD */
-  .focus-area-card {
-    @apply border-brand-primary-700 flex items-center gap-6 border-2 p-6 sm:h-auto md:flex-col md:items-start;
-  }
-
-  .focus-area-card-content {
-    @apply flex flex-col gap-3;
-  }
 }

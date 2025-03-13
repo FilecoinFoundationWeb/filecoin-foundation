@@ -2,7 +2,6 @@ import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
-import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
