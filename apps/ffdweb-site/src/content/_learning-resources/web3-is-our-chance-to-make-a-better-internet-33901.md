@@ -1,12 +1,8 @@
 ---
-link: https://hbr.org/2022/05/web3-is-our-chance-to-make-a-better-internet
-technicality: "1"
-keywords: >-
-  decentralized internet, fairness, democratization, distributive justice,
-  freedom, equality, digital ownership, resource allocation,
 title: Web3 Is Our Chance to Make a Better Internet
-length: ~10-15 Minutes
-organization: Harvard Business Review
+created-on: "2023-10-20T15:21:41.912Z"
+updated-on: "2023-10-20T15:21:41.912Z"
+published-on: "2023-10-20T15:22:08.074Z"
 description: >-
   The article discusses the potential of Web3, a decentralized, blockchain-based
   internet ecosystem, to create a fairer and more equitable internet. It
@@ -17,9 +13,15 @@ description: >-
   It suggests promoting self-determination and agency, rewarding participation
   over capital, and incorporating initiatives that benefit disadvantaged
   individuals as key steps in achieving justice in Web3.
-resource-type: blog-post
+organization: Harvard Business Review
 category: general-web3
-updated-on: "2023-10-20T15:21:41.912Z"
-created-on: "2023-10-20T15:21:41.912Z"
-published-on: "2023-10-20T15:22:08.074Z"
+resource-type: blog-post
+technicality: "1"
+length: ~10-15 Minutes
+keywords: >-
+  decentralized internet, fairness, democratization, distributive justice,
+  freedom, equality, digital ownership, resource allocation,
+link: https://hbr.org/2022/05/web3-is-our-chance-to-make-a-better-internet
+seo:
+  description: "Harvard Business Review explores how Web3 could create a more equitable internet by applying Rawlsian justice principles to address wealth inequality, governance, and digital ownership."
 ---

@@ -3,8 +3,6 @@ title: Introducing SecureDrop Protocol
 created-on: 2024-09-10T20:36:23.259Z
 updated-on: 2024-09-10T20:36:23.271Z
 published-on: 2024-09-10T20:36:23.280Z
-link: https://securedrop.org/news/introducing-securedrop-protocol/
-organization: Freedom of the Press Foundation
 description: SecureDrop is an open-source whistleblower submission system that
   media organizations can install to securely accept documents from anonymous
   sources. The SecureDrop project has been aThe SecureDrop system has been
@@ -17,12 +15,13 @@ description: SecureDrop is an open-source whistleblower submission system that
   not ready for production use yet, it's a great example of the kinds of
   tradeoffs and considerations that are needed to protect user anonymity in
   decentralized systems.
-resource-type: blog-post
+organization: Freedom of the Press Foundation
 category: social-impact
-  - publishing-hosting
+resource-type: blog-post
+technicality: "3"
 keywords: whistleblower, journalism, freedom of the press, Edward Snowden,
   Aaron Schwartz, privacy, anonymity, signal, securedrop
-technicality: "3"
+link: https://securedrop.org/news/introducing-securedrop-protocol/
 seo:
-  description: ""
+  description: "Freedom of the Press Foundation unveils new SecureDrop protocol using cryptography to enhance whistleblower anonymity in decentralized systems, replacing their 12-year-old server-based architecture."
 ---

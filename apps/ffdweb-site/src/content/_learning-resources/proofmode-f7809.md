@@ -1,10 +1,8 @@
 ---
-link: https://guardianproject.info/apps/org.witness.proofmode/
-length: null
-technicality: "1"
-keywords: Tools, Apps, Verification, Camera, Microphone, open-source
 title: ProofMode
-organization: Guardian Project
+created-on: "2023-10-20T15:21:40.615Z"
+updated-on: "2023-10-20T15:21:40.615Z"
+published-on: "2023-10-20T15:22:08.074Z"
 description: >-
   The open-source project ProofMode operates as an almost invisible utility on a
   phone, automatically adding extra digital proof data to all the photos and
@@ -12,10 +10,12 @@ description: >-
   anyone through a "Share Proof" action. The app aims to enhance media's
   credibility and authenticity by providing cryptographically verifiable digital
   proof.
-category: social-impact
-  - data-provenance
+organization: Guardian Project
+category: data-provenance
 resource-type: tool
-updated-on: "2023-10-20T15:21:40.615Z"
-created-on: "2023-10-20T15:21:40.615Z"
-published-on: "2023-10-20T15:22:08.074Z"
+technicality: "1"
+keywords: Tools, Apps, Verification, Camera, Microphone, open-source
+link: https://guardianproject.info/apps/org.witness.proofmode/
+seo:
+  description: "Open-source mobile app that automatically adds cryptographic verification to photos and videos, enabling users to prove media authenticity and combat misinformation through verifiable data."
 ---

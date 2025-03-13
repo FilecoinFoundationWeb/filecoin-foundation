@@ -1,13 +1,8 @@
 ---
-link: https://www.youtube.com/watch?v=biI1sR859xE
-technicality: "1"
-keywords: >-
-  decentralized web, DWeb, internet, connected devices, centralized control,
-  distributed power, individual control, secure apps, activists, ProofMode app,
-  civil society
 title: How Can Civil Society Participate in the Decentralized Future of the Web?
-length: 50 Minutes
-organization: TechSoup
+created-on: "2023-10-20T15:21:39.393Z"
+updated-on: "2023-10-20T15:21:39.393Z"
+published-on: "2023-10-20T15:22:08.074Z"
 description: >-
   This YouTube video explores the concept of the decentralized web (DWeb), which
   aims to distribute internet resources across connected devices instead of
@@ -17,10 +12,16 @@ description: >-
   war crimes. The video emphasizes how decentralized solutions can empower civil
   society, distribute power away from individual control, and better serve
   communities worldwide.
+organization: TechSoup
 category: social-impact
-  - data-provenance
 resource-type: video
-updated-on: "2023-10-20T15:21:39.393Z"
-created-on: "2023-10-20T15:21:39.393Z"
-published-on: "2023-10-20T15:22:08.074Z"
+technicality: "1"
+length: ~50 Minutes
+keywords: >-
+  decentralized web, DWeb, internet, connected devices, centralized control,
+  distributed power, individual control, secure apps, activists, ProofMode app,
+  civil society
+link: https://www.youtube.com/watch?v=biI1sR859xE
+seo:
+  description: "Discover how decentralized web technologies empower civil society through tools like ProofMode that help document war crimes while protecting data from surveillance and censorship."
 ---
