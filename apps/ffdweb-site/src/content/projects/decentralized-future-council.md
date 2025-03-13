@@ -13,6 +13,7 @@ description:
 image:
   src: /assets/images/partnerlogo_decentfuturecoucil.png
 external-link: https://www.decentralizedfuturecouncil.org/
+active-partnership: true
 seo:
   description: "The Decentralized Future Council educates policymakers on emerging technologies like blockchain and cryptocurrency, addressing challenges in privacy, security, and digital trust."
 ---
