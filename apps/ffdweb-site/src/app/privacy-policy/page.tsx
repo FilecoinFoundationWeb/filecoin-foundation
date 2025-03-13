@@ -1,12 +1,15 @@
 import { MarkdownPage } from '@filecoin-foundation/ui/MarkdownPage'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
+import { PATHS } from '@/constants/paths'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
 import privacyPolicyMarkdown from './privacy-policy.md'
 import { generateStructuredData } from './utils/generateStructuredData'
+
 
 const { body } = privacyPolicyMarkdown
 
@@ -26,5 +29,6 @@ export default function PrivacyPolicy() {
 }
 
 export const metadata = createMetadata({
+  path: PATHS.PRIVACY_POLICY.path,
   ...SEO,
 })

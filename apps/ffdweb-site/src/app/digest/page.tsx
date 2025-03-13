@@ -101,5 +101,6 @@ export default async function Digest() {
 
 export const metadata = createMetadata({
   ...SEO,
+  path: PATHS.DIGEST.path,
   overrideTitle: true,
 })
