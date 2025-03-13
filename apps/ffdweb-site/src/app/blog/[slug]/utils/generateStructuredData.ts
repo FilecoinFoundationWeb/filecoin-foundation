@@ -9,7 +9,7 @@ import type { BlogPost } from '../../types/blogPostType'
 
 export function generateStructuredData(
   data: BlogPost,
-): WithContext<BlogPosting> {
+) {
   return generateBlogPostStructuredData({
     ...data,
     organizationName: ORGANIZATION_NAME,
