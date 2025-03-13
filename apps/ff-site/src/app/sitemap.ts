@@ -12,23 +12,23 @@ export default async function sitemap() {
   return await generateSitemap({
     paths: PATHS,
     baseUrl: BASE_URL,
-    dynamicRoutes: {
-      blog: {
+    dynamicRoutes: [
+      {
         getData: getBlogPostsData,
         basePath: PATHS.BLOG.path,
       },
-      digestArticles: {
+      {
         getData: getDigestArticlesData,
         basePath: PATHS.DIGEST.path,
       },
-      ecosystemProjects: {
+      {
         getData: getEcosystemProjectsData,
         basePath: PATHS.ECOSYSTEM_EXPLORER.path,
       },
-      events: {
+      {
         getData: getEventsData,
         basePath: PATHS.EVENTS.path,
       },
-    },
+    ],
   })
 }

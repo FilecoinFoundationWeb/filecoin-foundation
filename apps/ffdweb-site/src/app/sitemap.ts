@@ -11,19 +11,19 @@ export default async function sitemap() {
   return await generateSitemap({
     paths: PATHS,
     baseUrl: BASE_URL,
-    dynamicRoutes: {
-      blog: {
+    dynamicRoutes: [
+      {
         getData: getBlogPostsData,
         basePath: PATHS.BLOG.path,
       },
-      digestArticles: {
+      {
         getData: getDigestArticlesData,
         basePath: PATHS.DIGEST.path,
       },
-      projects: {
+      {
         getData: getProjectsData,
         basePath: PATHS.PROJECTS.path,
       },
-    },
+    ],
   })
 }
