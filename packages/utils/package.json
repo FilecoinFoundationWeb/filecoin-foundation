@@ -13,6 +13,7 @@
     "./dateUtils": "./src/dateUtils.ts",
     "./fileUtils": "./src/fileUtils.ts",
     "./findOrThrow": "./src/findOrThrow.ts",
+    "./generateSitemap": "./src/generateSitemap.ts",
     "./getAllMarkdownData": "./src/getAllMarkdownData.ts",
     "./getCategoryLabel": "./src/getCategoryLabel.ts",
     "./getCMSFieldOptionsAndValidIds": "./src/getCMSFieldOptionsAndValidIds.ts",
