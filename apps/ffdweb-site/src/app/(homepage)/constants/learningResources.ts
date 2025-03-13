@@ -1,4 +1,5 @@
-import { PATHS } from '@/_constants/paths'
+import { PATHS } from '@/constants/paths'
+
 import FolderIcon from '@/assets/icons/folder.svg'
 import TapGestureIcon from '@/assets/icons/tap-gesture.svg'
 import TvScreenIcon from '@/assets/icons/tv-screen.svg'
