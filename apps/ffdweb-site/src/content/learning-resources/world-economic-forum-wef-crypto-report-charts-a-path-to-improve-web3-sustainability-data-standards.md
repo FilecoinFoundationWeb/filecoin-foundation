@@ -14,7 +14,7 @@ description: >-
   for comprehensive blockchain emissions guidelines, transparency, and
   verifiability in emissions reporting within the Web3 ecosystem.
 organization: Forbes Digital Assets
-category: refi
+category: refinance
 resource-type: blog-post
 technicality: "1"
 length: ~5 Minutes

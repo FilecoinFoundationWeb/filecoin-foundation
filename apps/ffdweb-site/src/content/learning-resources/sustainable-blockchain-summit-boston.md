@@ -9,7 +9,7 @@ description: >-
   thought leaders in sustainability and web3, speaking on energy systems, carbon
   markets, sustainable finance, renewable energy, and impact beyond carbon.
 organization: Filecoin Green
-category: refi
+category: refinance
 resource-type: video
 technicality: "1"
 keywords: >-

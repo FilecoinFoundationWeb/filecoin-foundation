@@ -10,7 +10,7 @@ description: >-
   environment are recognized. Some concepts covered are carbon offsets, carbon
   credits, and the open forest protocol.
 organization: Forbes Digital Assets
-category: refi
+category: refinance
 resource-type: blog-post
 technicality: "1"
 length: ~5 Minutes

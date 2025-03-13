@@ -10,7 +10,7 @@ description: >-
   wiki are DeFi, NFTs, CCPs, carbon markets, ecosystem marketplaces, and the
   open climate registry.
 organization: "GitHub: nestorbonilla"
-category: refi
+category: refinance
 resource-type: tool
 technicality: "1"
 length: ~3 Minutes
