@@ -16,7 +16,7 @@ image:
   src: https://pbs.twimg.com/profile_images/1511746714688016387/EB6IZmuH_400x400.jpg
 featured-content: https://www.ffdweb.org/blog/ffdw-and-connect-humanity-empowering-an-equitable-digital-future
 external-link: https://connecthumanity.fund/
-has-collaborations: true
+active-partnership: true
 seo:
   description: "Connect Humanity conducts global surveys through community organizations to understand internet usage patterns and needs, advancing digital equity worldwide."
 ---

@@ -6,5 +6,5 @@ export const ProjectFrontmatterSchema = DynamicBaseDataSchema.extend({
   description: z.string(),
   'external-link': z.string().optional(),
   'featured-content': z.string().optional(),
-  'has-collaborations': z.boolean().optional().default(false),
+  'active-partnership': z.boolean().optional().default(false),
 }).strict()
