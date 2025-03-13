@@ -100,13 +100,13 @@ export default async function Home() {
           'Learn how decentralized technologies are creating a better future for a better web. Explore educational content, research papers, tutorials, interactive content, and more resources from FFDW and beyond.',
         ]}
       >
-        <CardGrid cols="mdThree">
+        {/* <CardGrid cols="mdThree">
           {learningResources.map(({ icon, title, cta }) => (
             <FocusAreaCard key={title} icon={icon} title={title}>
               <CTALink href={cta.href}>{cta.text}</CTALink>
             </FocusAreaCard>
           ))}
-        </CardGrid>
+        </CardGrid> */}
         <CTALink href={PATHS.LEARNING_RESOURCES.path}>
           View All Learning Resources
         </CTALink>
