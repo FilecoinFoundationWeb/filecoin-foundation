@@ -48,7 +48,9 @@ export function FilterContainer({
 
         <ResultsContainer hasResults={hasResults}>{children}</ResultsContainer>
 
-        <BottomFilterContainer>{bottom}</BottomFilterContainer>
+        <BottomFilterContainer hasResults={hasResults}>
+          {bottom}
+        </BottomFilterContainer>
       </MainContainer>
     </SectionContainer>
   )
@@ -85,16 +87,6 @@ function SecondaryFilterContainer({ children, className }: ContainerProps) {
   return (
     children && (
       <div className={clsx(className, 'w-full md:max-w-56')}>{children}</div>
-    )
-  )
-}
-
-function BottomFilterContainer({ children }: ContainerProps) {
-  return (
-    children && (
-      <div className="mt-16 flex justify-center">
-        <div className="max-w-readable w-full">{children}</div>
-      </div>
     )
   )
 }
@@ -145,5 +137,18 @@ function ResultsContainer({ children, hasResults }: ContainerWithResultsProps) {
     children
   ) : (
     <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
+  )
+}
+
+function BottomFilterContainer({
+  children,
+  hasResults,
+}: ContainerWithResultsProps) {
+  return (
+    hasResults && (
+      <div className="mt-16 flex justify-center">
+        <div className="max-w-readable w-full">{children}</div>
+      </div>
+    )
   )
 }
