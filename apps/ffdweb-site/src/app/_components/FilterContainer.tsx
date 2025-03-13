@@ -70,11 +70,12 @@ function MainFilterContainer({ children }: ContainerProps) {
   )
 }
 
-function TopFiltersContainer({ children }: ContainerProps) {
+function TopFiltersContainer({ children, className }: ContainerProps) {
   return (
     <div
       className={clsx(
         topFiltersGap,
+        className,
         'flex flex-col items-center justify-between md:flex-row',
       )}
     >
