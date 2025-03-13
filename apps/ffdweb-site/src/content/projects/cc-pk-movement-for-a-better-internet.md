@@ -12,5 +12,5 @@ image:
 external-link: https://www.movementforabetterinternet.org/
 has-collaborations: true
 seo:
-  description: ""
+  description: "FFDW supports the Movement for a Better Internet, a collaborative initiative working to shape the future of the internet around public interest values and improve the web for everyone."
 ---
