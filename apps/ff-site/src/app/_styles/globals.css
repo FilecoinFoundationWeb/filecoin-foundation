@@ -325,17 +325,4 @@
   .page-header-image {
     @apply rounded-lg border border-brand-100;
   }
-
-  /* FOCUS AREA CARD */
-  .focus-area-card {
-    @apply flex flex-col rounded-lg border border-brand-300 p-1 sm:flex lg:block;
-  }
-
-  .focus-area-card-content {
-    @apply space-y-2 px-4 py-3 text-brand-100 sm:grow lg:px-3 lg:py-4;
-  }
-
-  .focus-area-card-image {
-    @apply aspect-video w-full rounded-sm object-cover sm:w-60 sm:shrink-0 md:w-80 lg:w-full;
-  }
 }
