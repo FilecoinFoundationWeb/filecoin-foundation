@@ -14,7 +14,7 @@ type GetFeaturedBlogPostsProps<Entry extends WithPublishedOn> = {
 export async function getFeaturedBlogPosts<Entry extends WithPublishedOn>({
   blogPosts,
   sort,
-  limit = 4,
+  limit,
 }: GetFeaturedBlogPostsProps<Entry>) {
   let sortedBlogPosts: Array<Entry>
 
