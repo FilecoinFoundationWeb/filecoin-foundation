@@ -1,4 +1,5 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { FocusAreaCard } from '@filecoin-foundation/ui/FocusAreaCard'
 import { KeyMemberCard } from '@filecoin-foundation/ui/KeyMemberCard'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -19,7 +20,6 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
-import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
@@ -67,9 +67,17 @@ export default function About() {
             <FocusAreaCard
               key={title}
               title={title}
-              description={description}
-              image={image}
-            />
+              image={{
+                ...image,
+                sizes: buildImageSizeProp({
+                  startSize: '100vw',
+                  sm: '250px',
+                  md: '330px',
+                }),
+              }}
+            >
+              <p>{description}</p>
+            </FocusAreaCard>
           ))}
         </CardGrid>
       </PageSection>

@@ -23,6 +23,7 @@
     "./DescriptionText": "./src/DescriptionText.tsx",
     "./DigestArticleHeader": "./src/DigestArticleHeader.tsx",
     "./ErrorMessage": "./src/ErrorMessage.tsx",
+    "./FocusAreaCard": "./src/FocusAreaCard.tsx",
     "./GlobalError": "./src/GlobalError.tsx",
     "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx",
