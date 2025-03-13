@@ -35,7 +35,7 @@ export function FilterContainer({
       <SideFilterContainer>{side?.desktop}</SideFilterContainer>
 
       <MainContainer hasSidebar={Boolean(side)}>
-        <TopFiltersContainer>
+        <TopFiltersContainer className="mb-6">
           <SecondaryFiltersContainer hasChildren={hasSecondaryFilters}>
             <SecondaryFilterContainer className="block lg:hidden">
               {side?.mobile}
@@ -48,7 +48,7 @@ export function FilterContainer({
 
         <ResultsContainer hasResults={hasResults}>{children}</ResultsContainer>
 
-        <BottomFilterContainer hasResults={hasResults}>
+        <BottomFilterContainer className="mt-16" hasResults={hasResults}>
           {bottom}
         </BottomFilterContainer>
       </MainContainer>
@@ -75,7 +75,7 @@ function TopFiltersContainer({ children }: ContainerProps) {
     <div
       className={clsx(
         topFiltersGap,
-        'mb-6 flex flex-col items-center justify-between md:flex-row',
+        'flex flex-col items-center justify-between md:flex-row',
       )}
     >
       {children}
@@ -142,11 +142,12 @@ function ResultsContainer({ children, hasResults }: ContainerWithResultsProps) {
 
 function BottomFilterContainer({
   children,
+  className,
   hasResults,
 }: ContainerWithResultsProps) {
   return (
     hasResults && (
-      <div className="mt-16 flex justify-center">
+      <div className={clsx(className, 'flex justify-center')}>
         <div className="max-w-readable w-full">{children}</div>
       </div>
     )
