@@ -14,5 +14,5 @@ image:
   src: /assets/images/partnerlogo_easier.png
 featured-content: https://www.ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network
 seo:
-  description: ""
+  description: "FFDW partners with UMD researchers to make large geospatial datasets accessible using decentralized storage technologies like Filecoin and IPFS."
 ---

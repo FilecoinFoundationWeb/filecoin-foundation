@@ -1,7 +1,10 @@
-import { Button } from '@filecoin-foundation/ui/Button'
+import { Card } from '@filecoin-foundation/ui/Card'
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
+import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN, FFDW_URLS, SEO } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
@@ -10,13 +13,19 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { Button } from '@/components/Button'
 import { CTALink } from '@/components/CTALink'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
-export default function Home() {
+import { FEATURED_PROJECTS } from './constants/featuredProjects'
+import { getFeaturedProjects } from './utils/getFeaturedProjects'
+
+export default async function Home() {
+  const featuredProjects = await getFeaturedProjects([...FEATURED_PROJECTS])
+
   return (
     <PageLayout gap="large">
       <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
@@ -46,9 +55,37 @@ export default function Home() {
         kicker="Featured Projects"
         title="Building Decentralized Solutions for Real-World Impact"
       >
-        <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
+        <CardGrid cols="mdThree">
+          {featuredProjects.map(({ title, description, slug, image }) => {
+            return (
+              <Card
+                key={slug}
+                title={title}
+                description={{ text: description, isClamped: true }}
+                cta={{
+                  href: `${PATHS.PROJECTS.path}/${slug}`,
+                  text: 'Read More',
+                  baseDomain: BASE_DOMAIN,
+                  icon: CARET_RIGHT,
+                }}
+                image={{
+                  ...(image || graphicsData.imageFallback.data),
+                  alt: '',
+                  objectFit: 'contain',
+                  sizes: buildImageSizeProp({
+                    startSize: '100vw',
+                    sm: '350px',
+                    md: '470px',
+                    lg: '360px',
+                  }),
+                }}
+              />
+            )
+          })}
+        </CardGrid>
+
         <div className="flex justify-center">
-          <Button href={PATHS.PROJECTS.path} baseDomain={BASE_DOMAIN}>
+          <Button href={PATHS.PROJECTS.path} className="flex-1 sm:flex-none">
             View Projects
           </Button>
         </div>
@@ -87,9 +124,7 @@ export default function Home() {
       >
         <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
         <div className="flex justify-center">
-          <Button href={PATHS.BLOG.path} baseDomain={BASE_DOMAIN}>
-            View All
-          </Button>
+          <Button href={PATHS.BLOG.path}>View All</Button>
         </div>
       </PageSection>
 

@@ -12,5 +12,5 @@ image:
   src: /assets/images/partnerlogo_stackshift.png
 external-link: https://www.stackshift.com/
 seo:
-  description: ""
+  description: "Stack Shift connects remote talent in Africa with high-impact jobs at DWeb startups, advancing distributed work opportunities and expanding professional networks."
 ---
