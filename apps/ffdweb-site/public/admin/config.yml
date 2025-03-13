@@ -400,11 +400,11 @@ collections:
         widget: "string"
         required: false
         hint: "Optional link to the project's website or repository."
-      - name: "has-collaborations"
-        label: "Has Collaborations"
+      - name: "active-partnership"
+        label: "Active Partnership"
         widget: "boolean"
         default: false
         required: false
-        hint: "Check if this project involved collaborations."
+        hint: "Check if this project has a current active partnership."
       - *image_config
       - *meta_config_with_title_fallback
