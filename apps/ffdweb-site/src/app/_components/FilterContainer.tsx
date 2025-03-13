@@ -1,4 +1,4 @@
-import type { ReactElement } from 'react'
+import { Fragment, type ComponentProps, type ReactElement } from 'react'
 
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { clsx } from 'clsx'
@@ -28,38 +28,58 @@ export function FilterContainer({
   side,
   children,
 }: FilterContainerProps) {
-  const hasSecondaryFilters = Boolean(side?.mobile) || Boolean(top.secondary)
-
   return (
-    <SectionContainer hasSidebar={Boolean(side)}>
-      <SideFilterContainer>{side?.desktop}</SideFilterContainer>
+    <section
+      className={clsx(side && 'lg:grid lg:grid-cols-[200px_1fr] lg:gap-6')}
+    >
+      {side?.desktop && (
+        <SideFilterContainer>{side?.desktop}</SideFilterContainer>
+      )}
 
-      <MainContainer hasSidebar={Boolean(side)}>
+      <Tag as={side ? 'div' : Fragment}>
         <TopFiltersContainer className="mb-6">
-          <SecondaryFiltersContainer hasChildren={hasSecondaryFilters}>
-            <SecondaryFilterContainer className="block lg:hidden">
-              {side?.mobile}
-            </SecondaryFilterContainer>
-            <SecondaryFilterContainer>{top.secondary}</SecondaryFilterContainer>
+          <SecondaryFiltersContainer
+            className={clsx(
+              !top.secondary && !side?.mobile && 'hidden',
+              !top.secondary && side?.mobile && 'lg:hidden',
+            )}
+          >
+            {side?.mobile && (
+              <SecondaryFilterContainer className="block lg:hidden">
+                {side?.mobile}
+              </SecondaryFilterContainer>
+            )}
+
+            {top.secondary && (
+              <SecondaryFilterContainer>
+                {top.secondary}
+              </SecondaryFilterContainer>
+            )}
           </SecondaryFiltersContainer>
 
           <MainFilterContainer>{top.main}</MainFilterContainer>
         </TopFiltersContainer>
 
-        <ResultsContainer hasResults={hasResults}>{children}</ResultsContainer>
+        {hasResults ? (
+          children
+        ) : (
+          <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
+        )}
 
-        <BottomFilterContainer className="mt-16" hasResults={hasResults}>
-          {bottom}
-        </BottomFilterContainer>
-      </MainContainer>
-    </SectionContainer>
+        {hasResults && (
+          <BottomFilterContainer className="mt-16">
+            {bottom}
+          </BottomFilterContainer>
+        )}
+      </Tag>
+    </section>
   )
 }
 
-type ContainerProps = React.ComponentProps<'div'>
+type ContainerProps = ComponentProps<'div'>
 
 function SideFilterContainer({ children }: ContainerProps) {
-  return children && <div className="hidden lg:block">{children}</div>
+  return <div className="hidden lg:block">{children}</div>
 }
 
 function MainFilterContainer({ children }: ContainerProps) {
@@ -85,72 +105,31 @@ function TopFiltersContainer({ children, className }: ContainerProps) {
 }
 
 function SecondaryFilterContainer({ children, className }: ContainerProps) {
-  return (
-    children && (
-      <div className={clsx(className, 'w-full md:max-w-56')}>{children}</div>
-    )
-  )
+  return <div className={clsx(className, 'w-full md:max-w-56')}>{children}</div>
 }
 
-type ContainerWithSidebarProps = ContainerProps & {
-  hasSidebar?: boolean
-}
-
-function SectionContainer({ children, hasSidebar }: ContainerWithSidebarProps) {
+function SecondaryFiltersContainer({ children, className }: ContainerProps) {
   return (
-    <section
-      className={clsx(
-        hasSidebar && 'lg:grid lg:grid-cols-[200px_1fr] lg:gap-6',
-      )}
+    <div
+      className={clsx(topFiltersGap, className, 'flex w-full justify-start')}
     >
       {children}
-    </section>
+    </div>
   )
 }
 
-function MainContainer({ children, hasSidebar }: ContainerWithSidebarProps) {
-  return hasSidebar ? <div>{children}</div> : children
-}
-
-type ContainerWithChildrenProps = ContainerProps & {
-  hasChildren: boolean
-}
-
-function SecondaryFiltersContainer({
-  children,
-  hasChildren,
-}: ContainerWithChildrenProps) {
+function BottomFilterContainer({ children, className }: ContainerProps) {
   return (
-    hasChildren && (
-      <div className={clsx(topFiltersGap, 'flex w-full justify-start')}>
-        {children}
-      </div>
-    )
+    <div className={clsx(className, 'flex justify-center')}>
+      <div className="max-w-readable w-full">{children}</div>
+    </div>
   )
 }
 
-type ContainerWithResultsProps = ContainerProps & {
-  hasResults: FilterContainerProps['hasResults']
+type ContainerWithTagProps = ContainerProps & {
+  as: React.ElementType | typeof Fragment
 }
 
-function ResultsContainer({ children, hasResults }: ContainerWithResultsProps) {
-  return hasResults ? (
-    children
-  ) : (
-    <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
-  )
-}
-
-function BottomFilterContainer({
-  children,
-  className,
-  hasResults,
-}: ContainerWithResultsProps) {
-  return (
-    hasResults && (
-      <div className={clsx(className, 'flex justify-center')}>
-        <div className="max-w-readable w-full">{children}</div>
-      </div>
-    )
-  )
+function Tag({ children, as: Component }: ContainerWithTagProps) {
+  return <Component>{children}</Component>
 }
