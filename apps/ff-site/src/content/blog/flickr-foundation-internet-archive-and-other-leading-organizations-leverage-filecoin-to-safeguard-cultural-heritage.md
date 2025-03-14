@@ -34,7 +34,7 @@ MIT Open Learning and OpenCourseWare (OCW) have uploaded selected content to the
 
 Starling Lab recently launched a 22-petabyte Filecoin storage node at the University of Southern California (USC) Libraries. Initial collections stored include parts of the USC Shoah Foundation’s Visual History Archive, including testimony from survivors of atrocities, multiple photojournalism projects, and 3D/VR scans of historical sites. Starling Lab is an academic research center based at Stanford and USC that specializes in securing the integrity of historical, legal, and journalism archives. 
 
-These organizations are working with [Filecoin Foundation for the Decentralized Web](https://ffdweb.org/) (FFDW), Filecoin Foundation’s sister non-profit which aims to further the decentralized web through education, research, and development.
+These organizations are working with [Filecoin Foundation for the Decentralized Web](https://ffdweb.org) (FFDW), Filecoin Foundation’s sister non-profit which aims to further the decentralized web through education, research, and development.
 
 “Our mission is to preserve humanity’s most important information,” said Marta Belcher, President and Chair of Filecoin Foundation and FFDW. “We are thrilled to collaborate with these institutions to ensure that culturally significant datasets are permanently preserved using robust decentralized storage systems.” 
 

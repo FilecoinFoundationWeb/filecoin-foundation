@@ -47,7 +47,7 @@ Our community soared to new heights in the past three years and accomplished som
 
 Filecoin Foundation (FF) is one of many contributors to the Filecoin ecosystem, facilitating governance of the Filecoin network, funding research and development projects, and supporting the growth of the Filecoin ecosystem and community.
 
-Throughout the last three years, FF has awarded hundreds of developer grants to inspire more builders to engage with the Filecoin network. And our Filecoin Foundation and [Filecoin Foundation for the Decentralized Web](https://ffdweb.org/) Project Partners, such as Distributed Press, Guardian Project, OpenArchive, MuckRock, and Prelinger Archives, are creating and supporting better technology to preserve humanity’s most important information.
+Throughout the last three years, FF has awarded hundreds of developer grants to inspire more builders to engage with the Filecoin network. And our Filecoin Foundation and [Filecoin Foundation for the Decentralized Web](https://ffdweb.org) Project Partners, such as Distributed Press, Guardian Project, OpenArchive, MuckRock, and Prelinger Archives, are creating and supporting better technology to preserve humanity’s most important information.
 
 ## What’s Next for the Network
 
