@@ -62,7 +62,10 @@ export function MobileNavigation() {
               />
             ))}
           </ul>
-          <Social linksWithIcons={socialLinksWithIcons} />
+          <Social
+            linksWithIcons={socialLinksWithIcons}
+            spreadIconLinks={true}
+          />
         </div>
       </SlideOver>
     </div>

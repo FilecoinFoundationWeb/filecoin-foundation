@@ -30,7 +30,7 @@ export function Footer() {
 
       <hr />
       <div className="sm:px-8">
-        <Social linksWithIcons={socialLinksWithIcons} />
+        <Social linksWithIcons={socialLinksWithIcons} spreadIconLinks={true} />
       </div>
 
       <hr />
