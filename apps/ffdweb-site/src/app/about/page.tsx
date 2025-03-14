@@ -107,5 +107,6 @@ export default function About() {
 
 export const metadata = createMetadata({
   ...SEO,
+  path: PATHS.ABOUT.path,
   overrideTitle: false,
 })

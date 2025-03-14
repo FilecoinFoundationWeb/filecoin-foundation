@@ -68,6 +68,7 @@ export async function generateMetadata(props: DigestArticleProps) {
   return createMetadata({
     metaTitle: `${data.title} | FFDW`,
     metaDescription: data.seo.description,
+    path: `${PATHS.DIGEST.path}/${slug}`,
     overrideTitle: true,
   })
 }
