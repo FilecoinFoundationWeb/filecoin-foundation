@@ -12,8 +12,6 @@ seo:
 category: "technology"
 ---
 
-**Can Filecoin Be _The_ Storage Network for Human Rights Data?**
-
 Every single day, human rights violations occur around the world. But unfortunately, those events go unnoticed by many, which makes accountability more challenging.
 
 The [Human Rights Data Analysis Group](https://hrdag.org/), or HRDAG, leverages statistics to ensure that attention is paid to human rights violations across the globe. HRDAG is not advocates, nor do they explicitly take sides in political or military conflicts, but are scientists collecting data and producing objective results to ensure that their partners — advocates and human-rights defenders — present the most accurate truth possible. Their highest purpose is to promote accountability for human rights violations, by discovering as best as we can the truth behind those violations.
