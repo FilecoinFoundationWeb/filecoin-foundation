@@ -60,11 +60,7 @@ export function FilterContainer({
           <MainFilterContainer>{top.main}</MainFilterContainer>
         </TopFiltersContainer>
 
-        {hasResults ? (
-          children
-        ) : (
-          <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
-        )}
+        <ResultsContainer hasResults={hasResults}>{children}</ResultsContainer>
 
         {hasResults && (
           <BottomFilterContainer className="mt-16">
@@ -132,4 +128,17 @@ type ContainerWithTagProps = ContainerProps & {
 
 function Tag({ children, as: Component }: ContainerWithTagProps) {
   return <Component>{children}</Component>
+}
+
+type ResultsContainerProps = ContainerProps &
+  Pick<FilterContainerProps, 'hasResults'>
+
+function ResultsContainer({ children, hasResults }: ResultsContainerProps) {
+  return hasResults ? (
+    children
+  ) : (
+    <div className="mt-16">
+      <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
+    </div>
+  )
 }
