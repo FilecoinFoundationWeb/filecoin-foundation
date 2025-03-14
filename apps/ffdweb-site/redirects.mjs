@@ -207,6 +207,13 @@ export const redirects = [
       '/blog/ffdw-and-connect-humanity-empowering-an-equitable-digital-future',
     permanent: true,
   },
+  {
+    source:
+      '/blog/collect-preserve-democratize-a-q-a-with-democracy%E2%80%99s-library',
+    destination:
+      '/blog/collect-preserve-democratize-a-q-a-with-democracy-s-library',
+    permanent: true,
+  },
 
   // DIGEST ARTICLE REDIRECTS
   {
