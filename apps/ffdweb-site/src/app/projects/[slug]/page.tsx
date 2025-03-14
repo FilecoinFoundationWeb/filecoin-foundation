@@ -20,7 +20,6 @@ import { getProjectData, getProjectsData } from '../utils/getProjectData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
-
 type ProjectProps = {
   params: Promise<SlugParams>
 }
@@ -45,7 +44,7 @@ export default async function Project(props: ProjectProps) {
               priority
               src={image?.src || graphicsData.imageFallback.data.src}
               alt={`${title}'s logo`}
-              className="object-cover"
+              className="object-contain"
               sizes={buildImageSizeProp({
                 startSize: '100vw',
                 md: '730px',
