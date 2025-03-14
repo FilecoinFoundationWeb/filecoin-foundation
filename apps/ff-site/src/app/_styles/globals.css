@@ -272,7 +272,7 @@
   }
 
   /* SOCIAL */
-  .social-media-primary {
+  .social {
     @apply hover:text-brand-400;
   }
 
