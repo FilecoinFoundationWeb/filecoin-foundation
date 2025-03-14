@@ -66,9 +66,12 @@ export async function generateMetadata(props: DigestArticleProps) {
   const data = await getDigestArticleData(slug)
 
   return createMetadata({
-    metaTitle: `${data.title} | FFDW`,
-    metaDescription: data.seo.description,
+    title: { absolute: `${data.title} | FFDW` },
+    description: data.seo.description,
     path: `${PATHS.DIGEST.path}/${slug}`,
-    overrideTitle: true,
+    image: data.image?.src,
+    openGraph: {
+      type: 'article',
+    },
   })
 }

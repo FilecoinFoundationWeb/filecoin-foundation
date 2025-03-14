@@ -59,12 +59,15 @@ export default async function BlogPost(props: BlogPostProps) {
 
 export async function generateMetadata(props: BlogPostProps) {
   const { slug } = await props.params
-  const { title, description } = await getBlogPostData(slug)
+  const { title, description, image } = await getBlogPostData(slug)
 
   return createMetadata({
-    metaTitle: `${title} | FFDW`,
-    metaDescription: description,
+    title: { absolute: `${title} | FFDW` },
+    description,
     path: `${PATHS.BLOG.path}/${slug}`,
-    overrideTitle: true,
+    image: image?.src,
+    openGraph: {
+      type: 'article',
+    },
   })
 }

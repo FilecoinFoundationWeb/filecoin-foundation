@@ -83,12 +83,12 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: ProjectProps) {
   const { slug } = await props.params
-  const { title, description } = await getProjectData(slug)
+  const { title, description, image } = await getProjectData(slug)
 
   return createMetadata({
-    metaTitle: `${title} | FFDW`,
-    metaDescription: description,
+    title: { absolute: `${title} | FFDW` },
+    description,
     path: `${PATHS.PROJECTS.path}/${slug}`,
-    overrideTitle: true,
+    image: image?.src,
   })
 }

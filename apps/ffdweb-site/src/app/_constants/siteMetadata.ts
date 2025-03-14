@@ -5,8 +5,8 @@ const ORGANIZATION_NAME =
 const ORGANIZATION_NAME_SHORT = 'FFDW' as const
 
 const SEO = {
-  metaTitle: 'Rebuilding the Internet for Good',
-  metaDescription:
+  title: 'Rebuilding the Internet for Good',
+  description:
     'Filecoin Foundation for the Decentralized Web is a nonprofit organization committed to preserving humanity’s most important information by funding the development of open-source tools',
 } as const
 
