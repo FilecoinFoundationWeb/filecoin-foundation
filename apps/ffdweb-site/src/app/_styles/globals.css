@@ -105,6 +105,11 @@
 }
 
 @layer components {
+  /* SHARED */
+  .social-link {
+    @apply hover:text-brand-primary-400;
+  }
+
   /* AVATAR */
   .avatar-background {
     @apply bg-brand-primary-800; /* CHECK */
@@ -274,11 +279,6 @@
     @apply bg-neutral-950;
   }
 
-  /* SOCIAL */
-  .social {
-    @apply text-brand-primary-300;
-  }
-
   /* TAGS */
   .tag-label {
     @apply border;
@@ -309,10 +309,6 @@
   /* SHARE ARTICLE */
   .share-article-title {
     @apply text-brand-primary-300;
-  }
-
-  .share-article-tooltip-link {
-    @apply hover:text-brand-primary-400;
   }
 
   /* PAGE HEADER */
