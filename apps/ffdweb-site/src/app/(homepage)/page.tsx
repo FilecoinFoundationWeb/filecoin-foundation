@@ -1,19 +1,22 @@
-import { Card } from '@filecoin-foundation/ui/Card'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
+import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN, FFDW_URLS, SEO } from '@/constants/siteMetadata'
+import { FFDW_URLS, SEO } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { Button } from '@/components/Button'
+import { Card } from '@/components/Card'
 import { CTALink } from '@/components/CTALink'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
@@ -25,8 +28,14 @@ import { FEATURED_PROJECTS } from './constants/featuredProjects'
 // import { learningResources } from './constants/learningResources'
 import { getFeaturedProjects } from './utils/getFeaturedProjects'
 
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+
 export default async function Home() {
-  const featuredProjects = await getFeaturedProjects([...FEATURED_PROJECTS])
+  const featuredProjects = await getFeaturedProjects(FEATURED_PROJECTS)
+  const featuredBlogPosts = getFeaturedBlogPosts({
+    posts: await getBlogPostsData(),
+    limit: 6,
+  })
 
   return (
     <PageLayout gap="large">
@@ -67,7 +76,6 @@ export default async function Home() {
                 cta={{
                   href: `${PATHS.PROJECTS.path}/${slug}`,
                   text: 'Read More',
-                  baseDomain: BASE_DOMAIN,
                   icon: CARET_RIGHT,
                 }}
                 image={{
@@ -128,7 +136,44 @@ export default async function Home() {
         kicker="Latest News"
         title="Updates from FFDW and DWeb Community"
       >
-        <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
+        <CardGrid cols="smTwoLgThree">
+          {featuredBlogPosts.map((post, i) => {
+            const { slug, category, title, description, image, publishedOn } =
+              post
+
+            const categoryLabel = getCategoryLabel({
+              collectionName: 'blog_posts',
+              category,
+            })
+
+            return (
+              <Card
+                key={slug}
+                title={title}
+                description={{ text: description, isClamped: true }}
+                metaData={[formatDate(publishedOn)]}
+                tags={[{ text: categoryLabel }]}
+                cta={{
+                  href: `${PATHS.BLOG.path}/${slug}`,
+                  text: 'Read Post',
+                  icon: CARET_RIGHT,
+                }}
+                image={{
+                  ...(image || graphicsData.imageFallback.data),
+                  alt: '',
+                  objectFit: 'cover',
+                  sizes: buildImageSizeProp({
+                    startSize: '100vw',
+                    sm: '350px',
+                    md: '470px',
+                    lg: '360px',
+                  }),
+                }}
+              />
+            )
+          })}
+        </CardGrid>
+
         <div className="flex justify-center">
           <Button href={PATHS.BLOG.path}>View All News</Button>
         </div>

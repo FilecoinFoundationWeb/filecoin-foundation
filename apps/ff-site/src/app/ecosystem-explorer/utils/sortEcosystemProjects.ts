@@ -1,4 +1,4 @@
-import type { ValidSortKey } from '@/types/sortTypes'
+import type { FFSortKey } from '@/types/sortTypes'
 
 import type { EcosystemProject } from '../types/ecosystemProjectType'
 
@@ -16,7 +16,7 @@ export function sortEcosystemProjectsAlphabeticalDesc(
 
 function sortEcosystemProjectsAlphabetical(
   projects: Array<EcosystemProject>,
-  sortBy: Extract<ValidSortKey, 'a-z' | 'z-a'>,
+  sortBy: Extract<FFSortKey, 'a-z' | 'z-a'>,
 ) {
   return [...projects].sort((a, b) => {
     const titleA = a.title.toLowerCase()

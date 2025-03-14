@@ -27,7 +27,7 @@ export function PageSection({
       <div
         className={clsx(
           'flex max-w-2xl flex-col gap-8',
-          isCentered && 'lg:mx-auto lg:text-center',
+          isCentered && 'max-w-xl lg:mx-auto lg:text-center',
         )}
       >
         <span className="inline-block font-bold text-neutral-200">
