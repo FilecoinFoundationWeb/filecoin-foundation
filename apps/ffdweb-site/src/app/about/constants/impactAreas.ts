@@ -40,6 +40,6 @@ export const impactAreas = [
     icon: DnaIcon,
     title: 'Science and Environment',
     description:
-      'Scientific research produces large amounts of data, but there are limited systems in place to preserve this information publicly and securely. FFDW’s work in the area of science and environment aims to preserve this information for the long term.',
+      'Scientific research produces large amounts of data, but there are limited systems in place to preserve this information publicly and securely. FFDW is working with universities and other scientific institutions to preserve scientific data by leveraging the resilience of decentralized storage.',
   },
 ] as const

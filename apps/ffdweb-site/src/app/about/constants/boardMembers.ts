@@ -22,7 +22,7 @@ export const boardMembers = [
   {
     name: 'Sheila Warren',
     title: 'Chief Executive Officer',
-    company: 'Crypto Council for Innovation',
+    company: 'Project Liberty',
     linkedin: 'https://www.linkedin.com/in/sheilawarren/',
     image: sheilaWarren,
   },
