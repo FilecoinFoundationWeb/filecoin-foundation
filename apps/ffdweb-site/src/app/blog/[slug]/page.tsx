@@ -64,11 +64,15 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: BlogPostProps) {
   const { slug } = await props.params
-  const { title, description } = await getBlogPostData(slug)
+  const { title, description, image } = await getBlogPostData(slug)
 
   return createMetadata({
     title: { absolute: `${title} | FFDW` },
     description,
     path: `${PATHS.BLOG.path}/${slug}`,
+    image: image?.src,
+    openGraph: {
+      type: 'article',
+    },
   })
 }

@@ -110,5 +110,6 @@ export default function About() {
 export const metadata = createMetadata({
   title: { absolute: ABOUT_SEO.title },
   description: ABOUT_SEO.description,
+  image: graphicsData.about.data.src,
   path: PATHS.ABOUT.path,
 })

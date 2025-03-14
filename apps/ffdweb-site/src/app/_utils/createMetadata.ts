@@ -1,23 +1,39 @@
+import type { AbsoluteString } from 'next/dist/lib/metadata/types/metadata-types'
+
 import type { Metadata } from 'next'
+
+import { graphicsData } from '@/data/graphicsData'
 
 export type MetadataParams = {
   path: `/${string}`
-  metaTitle: string
-  metaDescription: string
-  overrideTitle?: boolean
+  title: string | AbsoluteString
+  image?: string
+  openGraph?: {
+    type?: 'website' | 'article'
+  }
+  description: string
 }
 
 export function createMetadata({
   path,
-  metaTitle,
-  metaDescription,
-  overrideTitle = false,
-}: MetadataParams): Metadata {
+  title,
+  description,
+  image,
+  openGraph = {},
+}: MetadataParams) {
+  const { type = 'website' } = openGraph
+
   return {
-    title: overrideTitle ? { absolute: metaTitle } : `${metaTitle}`,
-    description: metaDescription,
+    title,
+    description,
+    openGraph: {
+      type,
+      title,
+      description,
+      images: [image || graphicsData.imageFallback.data.src],
+    },
     alternates: {
       canonical: path,
     },
-  }
+  } as const satisfies Metadata
 }

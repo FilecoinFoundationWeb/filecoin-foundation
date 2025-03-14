@@ -69,5 +69,9 @@ export async function generateMetadata(props: DigestArticleProps) {
     title: { absolute: `${data.title} | FFDW` },
     description: data.seo.description,
     path: `${PATHS.DIGEST.path}/${slug}`,
+    image: data.image?.src,
+    openGraph: {
+      type: 'article',
+    },
   })
 }

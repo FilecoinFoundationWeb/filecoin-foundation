@@ -93,4 +93,5 @@ export const metadata = createMetadata({
   title: { absolute: DIGEST_SEO.title },
   description: DIGEST_SEO.description,
   path: PATHS.DIGEST.path,
+  image: graphicsData.digest.data.src,
 })
