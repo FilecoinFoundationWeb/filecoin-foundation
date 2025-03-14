@@ -19,7 +19,7 @@ keywords: >-
   data, digital information, disinformation, trustworthy sources, long-term
   preservation, fighting linkrot
 link: >-
-  https://www.ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-boosts-harvard-library-innovation-lab-s-work-to-democratize-open-knowledge/
+  https://ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-boosts-harvard-library-innovation-lab-s-work-to-democratize-open-knowledge/
 seo:
   description: >-
     Discover how FFDW and Harvard's Library Innovation Lab use decentralized 

@@ -14,14 +14,7 @@ image:
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423839922f06c7b3150fdd_guardian-project.png
 seo:
   description: ""
-# tags:
-#   - grants
-#   - community
-#   - smartphones
-#   - rights
 ---
-
-![Leveraging the Dweb to Enhance Free Speech bannner](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98cc21e567cc30009768_guardian-project-announcement.png)
 
 Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our award to [Guardian Project](https://guardianproject.info/), to support their efforts to integrate decentralized storage into their free and open-source solutions for distribution, authentication, and preservation of essential multimedia and software. Guardian Project is a global collective that develops privacy-focused mobile apps and free licensed, open-source software libraries that can be used by anyone looking to protect data and communications from unjust intrusion, interception, and monitoring. The Decentralizing Veracity and Distribution (DVD) project will focus on preserving content and expanding access for the human rights defenders, frontline journalists, and everyday activists that Guardian Project has sought to empower for over a decade.
 
@@ -34,3 +27,5 @@ The funding will also support expanded collaboration with human rights defenders
 Second, DVD will accelerate the adoption of decentralized storage technology for [F-Droid](https://www.f-droid.org/), the leading free and open-source app publishing platform. F-Droid has been a key part of Guardian Project’s goal to ensure people have access to the apps they need, even during humanitarian and human rights crises where internet access is often limited. The work that FFDW is funding builds upon previous work in “nearby app sharing” supported by Mozilla, the National Science Foundation, and Open Technology Fund. “The rise of smartphones, where the market is largely dominated by two companies, has exacerbated the issue of who has the right to choose what software is allowed to be installed and where you can download it,” says Hans-Christoph Steiner, Distributed Lead at Guardian Project. “By adding decentralized storage and access to F-Droid, we will make the app ecosystem both less fragile and more free.”
 
 > Our mission is to permanently preserve humanity’s most important information. We are proud to support Guardian Project’s work to preserve critical human rights data and empower greater access to applications using the decentralized web. —Marta Belcher, board chair of the Filecoin Foundation for the Decentralized Web
+
+![Leveraging the Dweb to Enhance Free Speech bannner](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98cc21e567cc30009768_guardian-project-announcement.png)

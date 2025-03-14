@@ -12,7 +12,7 @@ tech:
 image:
   src: /assets/images/proofmode.png
 website: "https://proofmode.org"
-featured-content: "https://www.ffdweb.org/blog/guardian-project-annoucement/"
+featured-content: "https://ffdweb.org/blog/guardian-project-annoucement/"
 repo: "https://github.com/guardianproject/proofmode-android "
 twitter: "https://twitter.com/guardianproject"
 category: data-storage-management

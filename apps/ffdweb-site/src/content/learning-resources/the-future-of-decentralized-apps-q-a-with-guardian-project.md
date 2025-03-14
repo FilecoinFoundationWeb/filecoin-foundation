@@ -22,7 +22,7 @@ keywords: >-
   humanitarian space, F-Droid, ProofMode, decentralized storage, IPFS,
   decentralized verification, chain-of-custody, enhanced privacy, data control
 link: >-
-  https://ffdweb.org/blog/the-future-of-decentralized-apps-a-q-a-with-guardian-project/
+  https://ffdweb.org/blog/the-future-of-decentralized-apps-a-q-a-with-guardian-project
 seo:
   description: "Guardian Project explains how decentralized apps enhance security and privacy for human rights workers through projects like ProofMode that provide verifiable documentation and secure data storage."
 ---

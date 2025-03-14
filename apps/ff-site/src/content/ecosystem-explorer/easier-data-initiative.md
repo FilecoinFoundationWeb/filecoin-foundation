@@ -11,7 +11,7 @@ tech:
 image:
   src: /assets/images/easier-data-initiative.png
 website: https://easierdata.org/
-featured-content: https://ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network/
+featured-content: https://ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network
 twitter: https://twitter.com/easierdataorg
 year-joined: 2022
 category: data-storage-management

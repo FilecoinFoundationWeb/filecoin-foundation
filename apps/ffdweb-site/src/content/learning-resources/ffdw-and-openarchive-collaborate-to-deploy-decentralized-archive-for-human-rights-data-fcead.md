@@ -21,7 +21,7 @@ keywords: >-
   mitigation, Archiving, Metadata authentication, Save, Empowering at-risk
   communities
 link: >-
-  https://www.ffdweb.org/blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data/
+  https://ffdweb.org/blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data/
 seo:
   description: >-
     Discover how OpenArchive and FFDW use IPFS and Filecoin to secure human 

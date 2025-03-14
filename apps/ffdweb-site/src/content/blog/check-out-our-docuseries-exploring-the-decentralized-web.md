@@ -13,10 +13,6 @@ description: >-
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381d1fe00b261574bc1d_0-w2tmph7o7z-pisg8-2.png
-# tags:
-#   - data-and-user-control
-#   - digital-identity
-#   - internet-evolution
 seo:
   description: ""
 ---

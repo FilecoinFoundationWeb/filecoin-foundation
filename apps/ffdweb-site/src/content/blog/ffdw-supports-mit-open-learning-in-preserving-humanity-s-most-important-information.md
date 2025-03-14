@@ -31,4 +31,4 @@ Open Learning’s project will take concrete steps to explore the decentralized 
 
 “FFDW is on a mission to preserve humanity’s most important information, and MIT’s project to explore how decentralized technologies can solve real-world challenges to preserve critical data is a natural fit,” said FFDW President and Chair Marta Belcher.
 
-To learn more about Open Learning, visit [openlearning.mit.edu/](https://openlearning.mit.edu/).
+To learn more about Open Learning, visit [openlearning.mit.edu](https://openlearning.mit.edu/).

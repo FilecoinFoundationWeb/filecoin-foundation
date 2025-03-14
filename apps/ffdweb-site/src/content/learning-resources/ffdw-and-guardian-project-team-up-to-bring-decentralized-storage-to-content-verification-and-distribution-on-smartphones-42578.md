@@ -19,7 +19,7 @@ keywords: >-
   Distribution (DVD), Content Sharing, ProofMode, Authentication, Verification,
   WITNESS, metadata, cryptographic signing, F-Droid
 link: >-
-  https://www.ffdweb.org/blog/guardian-project-annoucement/
+  https://ffdweb.org/blog/guardian-project-annoucement/
 seo:
   description: >-
     Learn how FFDW and Guardian Project integrate decentralized storage for 

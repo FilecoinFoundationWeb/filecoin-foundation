@@ -64,8 +64,8 @@ export function Footer() {
       </div>
 
       <div className="grid gap-8">
-        <hr />
-        <div className="grid grid-rows-2 gap-5 lg:grid-cols-2 lg:grid-rows-1 lg:items-baseline">
+        <hr className="text-neutral-600" />
+        <div className="grid grid-rows-2 gap-5 text-neutral-200 lg:grid-cols-2 lg:grid-rows-1 lg:items-baseline">
           <ul
             className={clsx(
               'grid auto-cols-max grid-flow-col',
@@ -75,7 +75,7 @@ export function Footer() {
             {footerLegalItems.map(({ label, href }) => (
               <li key={href} className="fit-content">
                 <Link
-                  className="focus:brand-outline text-neutral-50 hover:underline"
+                  className="focus:brand-outline hover:underline"
                   href={href}
                 >
                   {label}

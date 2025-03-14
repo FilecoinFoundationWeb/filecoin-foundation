@@ -10,7 +10,7 @@ description: HRDAG has been turning raw data into analyzable data for nearly 30
   their work.
 image:
   src: /assets/images/partnerlogo_hrdag.png
-featured-content: https://www.ffdweb.org/blog/can-filecoin-be-the-storage-network-for-human-rights-data
+featured-content: https://ffdweb.org/blog/can-filecoin-be-the-storage-network-for-human-rights-data
 external-link: https://hrdag.org/
 seo:
   description: "HRDAG collaborates with FFDW to explore decentralized web storage solutions for human rights organizations, building on 30 years of data analysis expertise."

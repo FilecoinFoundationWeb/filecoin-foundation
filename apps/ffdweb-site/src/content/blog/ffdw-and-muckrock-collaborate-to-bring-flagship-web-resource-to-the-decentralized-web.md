@@ -15,11 +15,6 @@ image:
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382b3db3a05fc766ec87_1-jduzu4kyyygqfyan9dl6da.png
 seo:
   description: ""
-# tags:
-#   - collaborative-news
-#   - award
-#   - muckrock
-#   - documentcloud
 ---
 
 _Joint Project will Help Preserve Key Public Interest Documents on the Filecoin Network_

@@ -11,17 +11,24 @@ type linkWithIcon = {
 type SocialProps = {
   linksWithIcons: linkWithIcon[]
   size?: IconProps['size']
+  spreadIconLinks?: boolean
 }
+
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'p-2',
   touchAreaOffset: '-m-2',
 }
 
-export function Social({ linksWithIcons, size = 32 }: SocialProps) {
+export function Social({
+  linksWithIcons,
+  size = 32,
+  spreadIconLinks = false,
+}: SocialProps) {
   return (
     <ul
       className={clsx(
-        'flex flex-wrap items-center justify-between gap-6',
+        'flex flex-wrap items-center gap-6',
+        spreadIconLinks && 'justify-between',
         TOUCH_TARGET.touchAreaOffset,
       )}
     >
