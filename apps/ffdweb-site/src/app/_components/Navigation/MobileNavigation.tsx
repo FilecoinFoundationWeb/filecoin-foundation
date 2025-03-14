@@ -53,9 +53,7 @@ export function MobileNavigation() {
               </li>
             ))}
           </ul>
-          <div className="w-full sm:w-1/2">
-            <Social linksWithIcons={socialLinksWithIcons} />
-          </div>
+          <Social linksWithIcons={socialLinksWithIcons} />
         </div>
       </SlideOver>
     </div>

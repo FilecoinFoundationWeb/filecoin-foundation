@@ -26,7 +26,7 @@ export function Social({
   return (
     <ul
       className={clsx(
-        'flex flex-wrap items-center justify-between gap-6',
+        'flex flex-wrap items-center gap-6',
         TOUCH_TARGET.touchAreaOffset,
       )}
     >
