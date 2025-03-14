@@ -148,4 +148,5 @@ export default async function Home() {
 
 export const metadata = createMetadata({
   ...SEO,
+  path: PATHS.HOME.path,
 })

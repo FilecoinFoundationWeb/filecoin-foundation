@@ -3,6 +3,7 @@ import { Suspense } from 'react'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
+import { PATHS } from '@/constants/paths'
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -15,6 +16,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { LearningResourcesContent } from './components/LearningResourcesContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getLearningResourcesData } from './utils/getLearningResourceData'
+
 
 const SEO = {
   metaTitle: 'FFDW Learning Resources | Decentralized Tech & Social Impact',
@@ -52,5 +54,6 @@ export default async function LearningResources() {
 
 export const metadata = createMetadata({
   ...SEO,
+  path: PATHS.LEARNING_RESOURCES.path,
   overrideTitle: true,
 })

@@ -1,12 +1,15 @@
 import { MarkdownPage } from '@filecoin-foundation/ui/MarkdownPage'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
+import { PATHS } from '@/constants/paths'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
 import termsOfUseMarkdown from './terms-of-use.md'
 import { generateStructuredData } from './utils/generateStructuredData'
+
 
 const { body } = termsOfUseMarkdown
 
@@ -26,5 +29,6 @@ export default function TermsOfUse() {
 }
 
 export const metadata = createMetadata({
+  path: PATHS.TERMS_OF_USE.path,
   ...SEO,
 })
