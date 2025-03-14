@@ -70,8 +70,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
                   ...(image || graphicsData.imageFallback.data),
                   alt: '',
                   priority: isFirstThreeImages,
-                  objectFit: 'cover',
-                  padding: true,
+                  objectFit: 'contain',
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
                     sm: '350px',
