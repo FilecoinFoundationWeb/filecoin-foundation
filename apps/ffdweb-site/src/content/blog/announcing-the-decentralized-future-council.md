@@ -1,9 +1,5 @@
 ---
 title: Announcing the Decentralized Future Council
-description: >-
-  The Decentralized Future Council (DFC) is a new organization dedicated to
-  advocacy and education for the emerging decentralized web and related
-  technologies.
 category: education
 image:
   src: >-

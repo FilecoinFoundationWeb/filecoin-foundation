@@ -4,10 +4,6 @@ created-on: 2024-02-27T14:38:33.527Z
 updated-on: 2024-02-27T14:38:33.545Z
 published-on: 2024-02-27T14:38:33.552Z
 category: updates
-description: In this report, you’ll see the progress achieved by FFDW and our
-  exceptional roster of project partners in creating profound and wide-reaching
-  impact in a moment of growing interest and appreciation for decentralized
-  values.
 image:
   src: /assets/images/022624-ffdw-annualreport.png
 seo:

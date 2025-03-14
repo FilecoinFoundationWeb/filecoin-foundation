@@ -4,11 +4,6 @@ created-on: 2024-03-06T16:46:52.600Z
 updated-on: 2024-03-06T16:46:52.611Z
 published-on: 2024-03-06T16:46:52.620Z
 category: technology
-description: "Starling Lab develops technology and protocols for digital
-  records that can establish provenance and authenticity, using a framework of
-  Capture, Store, Verify with fellows and collaborators in journalism, law,
-  history, and technology. The purpose of its work is to establish trust in
-  digital assets such as photographs, websites, audio, and video. "
 image:
   src: /assets/images/081123-starling-1.png
 seo:

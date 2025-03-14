@@ -1,10 +1,6 @@
 ---
 title: "Exploring the Decentralized Web: Episodes 5–8"
 category: "education"
-description: >-
-  Episodes 5–8 dive into some of the most impactful topics in the Web3 space
-  –from privacy, identity, and user control, to blockchain economics, dApps, and
-  open-source development.
 created-on: "2023-04-21T07:15:46.748Z"
 updated-on: "2023-04-21T07:18:19.495Z"
 published-on: "2023-04-21T08:01:04.314Z"

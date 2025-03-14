@@ -4,9 +4,6 @@ created-on: "2023-04-21T07:15:29.818Z"
 updated-on: "2023-04-21T07:15:29.818Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: updates
-description: >-
-  The following pages highlight FFDW's project partners and provide updates on
-  our work together in 2022.
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423811e3c08f0a484e3bc4_0206-22-annual-report.png
