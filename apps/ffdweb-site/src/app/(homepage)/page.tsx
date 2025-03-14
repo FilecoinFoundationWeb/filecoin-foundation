@@ -31,8 +31,8 @@ import { getFeaturedProjects } from './utils/getFeaturedProjects'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 export default async function Home() {
-  const featuredProjects = await getFeaturedProjects([...FEATURED_PROJECTS])
-  const featuredBlogPosts = await getFeaturedBlogPosts({
+  const featuredProjects = await getFeaturedProjects(FEATURED_PROJECTS)
+  const featuredBlogPosts = getFeaturedBlogPosts({
     posts: await getBlogPostsData(),
     limit: 6,
   })
@@ -136,7 +136,7 @@ export default async function Home() {
         kicker="Latest News"
         title="Updates from FFDW and DWeb Community"
       >
-        <CardGrid cols="smTwo">
+        <CardGrid cols="smTwoLgThree">
           {featuredBlogPosts.map((post, i) => {
             const { slug, category, title, description, image, publishedOn } =
               post

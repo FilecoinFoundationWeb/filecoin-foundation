@@ -1,5 +1,5 @@
 import { compareAsc, compareDesc } from 'date-fns'
-import type { SortType } from './types/sortTypes'
+import type { DateSortOrder } from './types/sortTypes'
 import type { WithPublishedOn } from './types/withPublishedOnType'
 
 export function sortPostsByDateDesc<Entry extends WithPublishedOn>(
@@ -16,9 +16,9 @@ export function sortPostsByDateAsc<Entry extends WithPublishedOn>(
 
 function sortPostsByDate<Entry extends WithPublishedOn>(
   posts: Array<Entry>,
-  sortBy: SortType<'newest' | 'oldest'>,
+  sortBy: DateSortOrder,
 ) {
-  return [...posts].sort((a, b) => {
+  return posts.toSorted((a, b) => {
     const dateA = a.publishedOn
     const dateB = b.publishedOn
 

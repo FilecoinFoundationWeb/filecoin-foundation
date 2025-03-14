@@ -48,10 +48,11 @@ export const metadata = createMetadata({
 })
 
 export default async function Home() {
-  const featuredBlogPosts = await getFeaturedBlogPosts({
+  const featuredBlogPosts = getFeaturedBlogPosts({
     posts: await getBlogPostsData(),
     limit: 4,
   })
+
   const hasFeaturedBlogPosts = featuredBlogPosts.length > 0
 
   const featuredEcosystemProjects = await getFeaturedEcosystemProjects(
