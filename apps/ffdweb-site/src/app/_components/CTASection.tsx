@@ -18,8 +18,8 @@ export function CTASection({ kicker, title, cta, children }: CTASectionProps) {
     <section>
       <div className="flex flex-col gap-16 sm:items-center">
         <div className="space-y-8 sm:max-w-lg sm:text-center">
-          <span className="block text-neutral-300">{kicker}</span>
-          <Heading tag="h2" variant="3xl">
+          <span className="block font-bold text-neutral-200">{kicker}</span>
+          <Heading tag="h2" variant="3xl-medium">
             {title}
           </Heading>
         </div>

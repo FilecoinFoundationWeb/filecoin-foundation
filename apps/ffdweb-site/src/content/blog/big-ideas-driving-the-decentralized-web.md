@@ -15,11 +15,6 @@ image:
 updated-on: "2023-04-21T07:18:16.763Z"
 created-on: "2023-04-21T07:15:36.863Z"
 published-on: "2023-04-21T08:01:04.314Z"
-# tags:
-#   - dweb
-#   - web3
-#   - open-source
-#   - decentralized-data-storage
 seo:
   description: ""
 ---

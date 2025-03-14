@@ -19,7 +19,7 @@ keywords: >-
   footage, decentralized web, accessibility, historical films, preservation,
   expand collection, digitizing, decentralized storage
 link: >-
-  https://www.ffdweb.org/blog/ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web/
+  https://ffdweb.org/blog/ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web/
 seo:
   description: >-
     Learn how FFDW and Prelinger Archives use the decentralized web to preserve 

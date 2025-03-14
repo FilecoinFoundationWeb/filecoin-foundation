@@ -88,7 +88,7 @@ export default async function Home() {
 
         <div className="flex justify-center">
           <Button href={PATHS.PROJECTS.path} className="flex-1 sm:flex-none">
-            View Projects
+            View All Projects
           </Button>
         </div>
       </PageSection>
@@ -130,7 +130,7 @@ export default async function Home() {
       >
         <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
         <div className="flex justify-center">
-          <Button href={PATHS.BLOG.path}>View All</Button>
+          <Button href={PATHS.BLOG.path}>View All News</Button>
         </div>
       </PageSection>
 

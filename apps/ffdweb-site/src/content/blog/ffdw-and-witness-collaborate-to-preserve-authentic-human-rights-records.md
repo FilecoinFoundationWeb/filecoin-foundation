@@ -12,14 +12,7 @@ image:
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382e3db3a0857c66f093_witness.png
 seo:
   description: ""
-# tags:
-#   - freedom
-#   - journalism
-#   - press
-#   - privacy
 ---
-
-![ffdw and witness collaborate to preserve authentic human rights records](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98c3fcda048a092b29cc_ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records.png)
 
 FFDW’s commitment to WITNESS will support the creation, authentication, and preservation of trusted documentation
 
@@ -40,3 +33,5 @@ The FFDW award will enable WITNESS to support communities to preserve human righ
 Among the key initiatives that will benefit is a [human rights archives](https://archiving.witness.org/) program. WITNESS has decades of experience supporting activists to preserve critical documentation in contexts such as Brazil, Myanmar, Syria, the [United States](https://lab.witness.org/berkeley-copwatch-database/), and Yemen. The FFDW award will support a range of frontline actors to create and sustain community archives that preserve documentation of state violence and war crimes, while centering grassroots needs. This work is closely linked to WITNESS’ ongoing efforts shaping a set of standards for [authenticity infrastructure](https://blog.witness.org/2020/05/authenticity-infrastructure/).
 
 “We’re proud to support WITNESS with this award,” said FFDW Board Chair Marta Belcher. “FFDW’s mission is to preserve humanity’s most important information, and this collaboration with WITNESS is a natural fit to further these efforts.”
+
+![ffdw and witness collaborate to preserve authentic human rights records](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98c3fcda048a092b29cc_ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records.png)

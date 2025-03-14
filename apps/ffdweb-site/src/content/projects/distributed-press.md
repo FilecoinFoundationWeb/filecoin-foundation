@@ -13,7 +13,7 @@ description: Distributed Press is an initiative to build an open source, no-code
   centering stories about the digital commons.
 image:
   src: /assets/images/partnerlogo_distributedpress.png
-featured-content: https://www.ffdweb.org/blog/building-distributed-press-a-publishing-tool-for-the-decentralized-web
+featured-content: https://ffdweb.org/blog/building-distributed-press-a-publishing-tool-for-the-decentralized-web
 external-link: https://distributed.press/
 seo:
   description: "An open source, no-code publishing tool for Web and DWeb that empowers authors and amplifies free expression by enabling creators to publish content across decentralized networks."

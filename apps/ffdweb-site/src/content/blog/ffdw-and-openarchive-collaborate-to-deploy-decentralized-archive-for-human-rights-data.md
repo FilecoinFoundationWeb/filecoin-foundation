@@ -19,13 +19,7 @@ image:
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382def619d14d6b54705_openarchive.png
 seo:
   description: ""
-# tags:
-#   - rights
-#   - smartphones
-#   - mobile-media
 ---
-
-![ffdw and openarchive collaborate to deploy decentralized archive](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98c1be93f295c8a42d6c_ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data.png)
 
 Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our award to [OpenArchive](https://open-archive.org/), a nonprofit dedicated to advancing human rights by empowering people to collect, verify, and securely preserve mobile media using distributed backends. Through this collaboration, OpenArchive will be able to support decentralized backends for the [Save](https://open-archive.org/Save-Launch/) app. This will enable people on the ground capturing images and footage of world events to leverage IPFS and Filecoin and other decentralized storage options via their mobile device.
 
@@ -38,3 +32,5 @@ OpenArchive created and maintains [Save](https://open-archive.org/Save-Launch/),
 Additionally, as part of the award, OpenArchive will embark on a campaign to educate people and organizations around the world about the benefits of adopting decentralized storage protocols by equipping them with tools and educational resources. OpenArchive’s work will also focus on empowering at-risk communities to move away from the single-point-of-failure infrastructure that they rely on today.
 
 > Our mission is to permanently preserve humanity’s most important information. We are proud to support OpenArchive’s work to preserve critical human rights data using the decentralized web. —Marta Belcher, board chair of the Filecoin Foundation for the Decentralized Web
+
+![ffdw and openarchive collaborate to deploy decentralized archive](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98c1be93f295c8a42d6c_ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data.png)

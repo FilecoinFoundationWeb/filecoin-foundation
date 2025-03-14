@@ -20,7 +20,6 @@ import { getProjectData, getProjectsData } from '../utils/getProjectData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
-
 type ProjectProps = {
   params: Promise<SlugParams>
 }
@@ -45,7 +44,7 @@ export default async function Project(props: ProjectProps) {
               priority
               src={image?.src || graphicsData.imageFallback.data.src}
               alt={`${title}'s logo`}
-              className="object-cover"
+              className="object-contain"
               sizes={buildImageSizeProp({
                 startSize: '100vw',
                 md: '730px',
@@ -55,7 +54,7 @@ export default async function Project(props: ProjectProps) {
             />
           </div>
 
-          <div className="mt-8 flex gap-12">
+          <div className="mt-8 inline-flex flex-col gap-8 sm:flex-row sm:gap-12">
             {externalLink && (
               <CTALink href={externalLink}>Visit Project Website</CTALink>
             )}

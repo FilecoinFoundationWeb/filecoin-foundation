@@ -107,9 +107,5 @@ FilterContainer.PaginationWrapper = function PaginationWrapper({
 }
 
 FilterContainer.MainWrapper = function MainWrapper({ children }: WrapperProps) {
-  return (
-    <div className="flex w-full flex-col gap-8 lg:flex-1 lg:gap-6">
-      {children}
-    </div>
-  )
+  return <div className="flex w-full flex-col gap-16 lg:flex-1">{children}</div>
 }

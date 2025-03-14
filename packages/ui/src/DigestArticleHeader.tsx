@@ -25,8 +25,8 @@ export function DigestArticleHeader({
     <ArticleHeader image={image}>
       <TagGroup
         tags={[
-          { text: `Issue ${issueNumber}` },
           { text: `Article ${articleNumber}` },
+          { text: `Issue ${issueNumber}` },
         ]}
       />
       <ArticleHeader.Title>{title}</ArticleHeader.Title>

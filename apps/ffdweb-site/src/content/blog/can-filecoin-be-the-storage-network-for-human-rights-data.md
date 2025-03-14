@@ -1,6 +1,6 @@
 ---
 title: "Can Filecoin Be The Storage Network for Human Rights Data?"
-description: Can Filecoin Be The Storage Network for Human Rights Data?
+description: ""
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381ce3c08ff22a4e3c10_0308-hrdag-spotlight.png
@@ -11,8 +11,6 @@ seo:
   description: ""
 category: "technology"
 ---
-
-**Can Filecoin Be _The_ Storage Network for Human Rights Data?**
 
 Every single day, human rights violations occur around the world. But unfortunately, those events go unnoticed by many, which makes accountability more challenging.
 
