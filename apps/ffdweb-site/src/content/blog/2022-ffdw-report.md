@@ -11,7 +11,7 @@ image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423811e3c08f0a484e3bc4_0206-22-annual-report.png
 seo:
-  description: 'Explore FFDW's 2022 project partnerships and achievements in advancing the decentralized web, preserving crucial information, and supporting innovative research and development.'
+  description: "Explore FFDW's 2022 project partnerships and achievements in advancing the decentralized web, preserving crucial information, and supporting innovative research and development."
 ---
 
 ## What is Filecoin Foundation for the Decentralized Web?
