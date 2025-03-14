@@ -67,9 +67,8 @@ export async function generateMetadata(props: BlogPostProps) {
   const { title, description } = await getBlogPostData(slug)
 
   return createMetadata({
-    metaTitle: `${title} | FFDW`,
-    metaDescription: description,
+    title: { absolute: `${title} | FFDW` },
+    description,
     path: `${PATHS.BLOG.path}/${slug}`,
-    overrideTitle: true,
   })
 }

@@ -17,10 +17,9 @@ import { LearningResourcesContent } from './components/LearningResourcesContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getLearningResourcesData } from './utils/getLearningResourceData'
 
-
-const SEO = {
-  metaTitle: 'FFDW Learning Resources | Decentralized Tech & Social Impact',
-  metaDescription:
+const LEARNING_RESOURCES_SEO = {
+  title: 'FFDW Learning Resources | Decentralized Tech & Social Impact',
+  description:
     'Discover case studies, tutorials, and tools on decentralized technologies driving social change. Learn, share, and help shape the future with FFDW.',
 } as const
 
@@ -29,7 +28,9 @@ export default async function LearningResources() {
 
   return (
     <PageLayout gap="large">
-      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+      <StructuredDataScript
+        structuredData={generateStructuredData(LEARNING_RESOURCES_SEO)}
+      />
       <PageHeader
         kicker="Learning Resources"
         title="Explore Decentralized Tech with Content from FFDW and Beyond"
@@ -53,7 +54,7 @@ export default async function LearningResources() {
 }
 
 export const metadata = createMetadata({
-  ...SEO,
+  title: { absolute: LEARNING_RESOURCES_SEO.title },
+  description: LEARNING_RESOURCES_SEO.description,
   path: PATHS.LEARNING_RESOURCES.path,
-  overrideTitle: true,
 })
