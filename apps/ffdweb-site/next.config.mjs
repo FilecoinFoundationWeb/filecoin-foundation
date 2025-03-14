@@ -6,11 +6,15 @@ import { redirects } from './redirects.mjs'
 const imageRemotePatterns = [
   {
     protocol: 'https',
-    hostname: 'uploads-ssl.webflow.com',
+    hostname: 'lh7-us.googleusercontent.com',
   },
   {
     protocol: 'https',
     hostname: 'pbs.twimg.com',
+  },
+  {
+    protocol: 'https',
+    hostname: 'uploads-ssl.webflow.com',
   },
 ]
 
