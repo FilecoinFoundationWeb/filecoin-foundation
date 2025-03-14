@@ -33,7 +33,7 @@ export function FilterContainer({
       className={clsx(side && 'lg:grid lg:grid-cols-[200px_1fr] lg:gap-6')}
     >
       {side?.desktop && (
-        <SideFilterContainer>{side?.desktop}</SideFilterContainer>
+        <SideFilterContainer>{side.desktop}</SideFilterContainer>
       )}
 
       <Tag as={side ? 'div' : Fragment}>

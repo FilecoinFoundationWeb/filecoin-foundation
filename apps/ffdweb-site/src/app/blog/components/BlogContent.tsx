@@ -51,7 +51,6 @@ export function BlogContent({ posts }: BlogContentProps) {
       bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
       top={{
         main: <Search query={searchQuery} />,
-        secondary: <Search query={searchQuery} />,
       }}
     >
       <CardGrid cols="smTwoLgThree">

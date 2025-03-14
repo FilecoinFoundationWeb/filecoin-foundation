@@ -46,11 +46,6 @@ export function LearningResourcesContent({
       bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
       top={{
         main: <Search query={searchQuery} />,
-        secondary: <Search query={searchQuery} />,
-      }}
-      side={{
-        desktop: <div className="bg-brand-primary-800 h-full w-full" />,
-        mobile: <Search query={searchQuery} />,
       }}
     >
       <CardGrid cols="smTwo">
