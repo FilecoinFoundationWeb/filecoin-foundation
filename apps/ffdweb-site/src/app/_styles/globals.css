@@ -315,4 +315,13 @@
   .page-header-image {
     @apply rounded-none;
   }
+
+  /* ACCENT ICONS */
+  .accent-icon-regular {
+    @apply text-brand-secondary-100;
+  }
+
+  .accent-icon-fill {
+    @apply bg-brand-secondary-100 text-neutral-950;
+  }
 }
