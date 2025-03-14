@@ -7,7 +7,7 @@ import homepage from '@/assets/graphics/homepage.webp'
 import learningResources from '@/assets/graphics/learning-resources.webp'
 import projects from '@/assets/graphics/projects.webp'
 
-export const graphicsData: Record<string, StaticImageProps> = {
+export const graphicsData = {
   imageFallback: {
     data: homepage,
     alt: 'Image fallback',
@@ -36,4 +36,4 @@ export const graphicsData: Record<string, StaticImageProps> = {
     data: projects,
     alt: 'A digital visualization of Earth as a glowing green and purple globe with connection points and network lines around it, resembling a global digital network or worldwide data connectivity system.',
   },
-}
+} as const satisfies Record<string, StaticImageProps>
