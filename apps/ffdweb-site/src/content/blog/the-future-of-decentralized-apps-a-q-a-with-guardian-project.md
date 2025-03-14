@@ -11,7 +11,7 @@ updated-on: "2023-04-21T07:16:14.499Z"
 created-on: "2023-04-21T07:16:14.499Z"
 published-on: "2023-04-21T08:01:04.314Z"
 seo:
-  description: ""
+  description: "Guardian Project's Nathan Freitas explains decentralized apps, their benefits, and how they're revolutionizing digital privacy and security in mobile technology."
 ---
 
 **The Future of Decentralized Apps: A Q&A with Guardian Project**

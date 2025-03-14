@@ -16,7 +16,7 @@ category: impact
 image:
   src: /assets/images/022124-sis.png
 seo:
-  description: ""
+  description: "Seven industry leaders share perspectives on how AI and decentralized technologies can drive positive social change while ensuring equitable distribution of benefits across society."
 ---
 
 - **Uncertainty lingers regarding the equitable distribution of benefits from decentralized and AI technologies.**

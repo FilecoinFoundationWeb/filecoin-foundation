@@ -14,7 +14,7 @@ description: This month, the Social Impact Summit 2024, co-hosted by
 image:
   src: /assets/images/031224-sis-retro.png
 seo:
-  description: ""
+  description: "Explore key insights from the Social Impact Summit 2024, where leaders discussed how decentralized technology is shaping trust, transparency, and social change."
 ---
 
 This month, the Social Impact Summit 2024, co-hosted by [Blockchain Law for Social Good Center](https://www.blockchainlawsg.org/) (BL4SG) and Filecoin Foundation for the Decentralized Web (FFDW), brought together changemakers to explore how emerging technologies can influence trust in the web. Through a series of thoughtful discussions, the Summit illustrated that these technologies are not merely theoretical concepts but are actively fostering a more connected, empowered, and resilient world. 

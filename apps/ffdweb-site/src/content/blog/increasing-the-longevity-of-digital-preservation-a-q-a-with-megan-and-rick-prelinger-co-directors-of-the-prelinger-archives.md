@@ -9,7 +9,7 @@ description: ""
 image:
   src: /assets/images/09262024-qa-prelinger.png
 seo:
-  description: ""
+  description: "Prelinger Archives co-directors discuss digital preservation challenges and how decentralized web technologies help safeguard cultural heritage for future generations."
 ---
 
 We often hear the phrase “the internet is forever,” but recent events have underscored just how fragile our digital world can be. With incidents like the sudden disappearance of [MTV News](https://variety.com/2024/digital/news/mtv-news-website-archives-pulled-offline-1236047163/), wiping decades of cultural media, we’re constantly reminded that online content can vanish in an instant.  

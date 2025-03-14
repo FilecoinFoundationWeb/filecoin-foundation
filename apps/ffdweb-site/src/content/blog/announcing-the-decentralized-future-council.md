@@ -12,7 +12,7 @@ updated-on: "2023-04-21T07:18:14.180Z"
 created-on: "2023-04-21T07:15:32.959Z"
 published-on: "2023-04-21T08:01:04.314Z"
 seo:
-  description: ""
+  description: "The Decentralized Future Council (DFC) launches to educate policymakers on Web3 technologies, hosting events and initiatives to advance understanding of the decentralized web."
 ---
 
 _New Organization Dedicated to Untangling Decentralized Technologies for Policymakers_

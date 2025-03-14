@@ -12,7 +12,7 @@ description: "Starling Lab develops technology and protocols for digital
 image:
   src: /assets/images/081123-starling-1.png
 seo:
-  description: ""
+  description: "Explore Starling Lab's innovative framework for digital authenticity, using Web3 technology to capture, store, and verify digital records for journalism, law, and history."
 ---
 
 _This is a guest post from FFDW project partner Starling Lab, written by Lindsay Walker and edited by Adam Rose._

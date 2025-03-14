@@ -13,7 +13,7 @@ description: "Filecoin Foundation for the Decentralized Web (FFDW) is proud to
 image:
   src: /assets/images/091924-rohingyaproject.png
 seo:
-  description: ""
+  description: "FFDW collaborates with Rohingya Project to preserve cultural heritage through decentralized storage, safeguarding vital documents and artifacts for future generations."
 ---
 
 In a world where decentralized technologies enable new avenues for preserving cultural heritage and identity, Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce a collaboration with Rohingya Project. With FFDW’s support, Rohingya Project will digitally preserve an array of cultural heritage documents that capture the essence of the Rohingya people – including audio recordings, photographs, videos, and written materials – to safeguard the cultural heritage of the Rohingya community. 

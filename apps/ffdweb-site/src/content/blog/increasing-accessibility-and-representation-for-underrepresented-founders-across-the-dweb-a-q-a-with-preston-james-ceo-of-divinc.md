@@ -9,7 +9,7 @@ description: ""
 image:
   src: /assets/images/0711-divinc.png
 seo:
-  description: ""
+  description: "DivInc CEO Preston James discusses their partnership with FFDW to support underrepresented founders in Web3, focusing on accessibility and diversity in tech."
 ---
 
 Earlier this year, Filecoin Foundation for the Decentralized Web (FFDW) [announced its support](https://www.divinc.org/blog/divinc-launches-dweb-for-social-impact-tech-accelerator) for [DivInc](https://www.divinc.org/), a 501(c)(3) nonprofit organization focused on championing young companies founded by underrepresented founders, ahead of the launch of its Fall 2023 DWeb for Social Impact Accelerator. 
