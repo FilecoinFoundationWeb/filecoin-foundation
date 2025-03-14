@@ -64,7 +64,7 @@ export function Footer() {
       </div>
 
       <div className="grid gap-8">
-        <hr />
+        <hr className="text-neutral-600" />
         <div className="grid grid-rows-2 gap-5 lg:grid-cols-2 lg:grid-rows-1 lg:items-baseline">
           <ul
             className={clsx(
