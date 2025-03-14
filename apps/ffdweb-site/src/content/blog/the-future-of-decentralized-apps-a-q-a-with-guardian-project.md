@@ -54,7 +54,7 @@ On a dApp, the data is also portable between services, and any functionality tha
 
 Just like the term "application" or "app", what a dApp is, how it is built, distributed, and secured, is constantly changing. That said, the primary value of a dApp is that you, as the user, are in control of the data and the functionality. You may not actually know when you've switched from using an App to a dApp, but you should always try to find services that support the core values of a dApp. You should be in control of your data and identity and have the ability to drive your car wherever you'd like it to go!
 
-–
+---
 
 At FFDW, our ultimate mission is to ensure the permanent preservation of humanity's most important information. We're working with multiple organizations and dApp developers that are leveraging the Filecoin network to store its data, offering unique benefits including enhanced privacy, security, and stability. This is just the beginning of what could lead to more widespread adoption of dApps and decentralized technologies in the coming years.
 
