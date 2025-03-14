@@ -12,16 +12,16 @@ export type CTALinkProps = {
   href: string
   children: string
   icon?: IconType
-  isCardLink?: boolean
-  cardLinkClassName?: string
+  inset?: boolean
+  textClassName?: string
 }
 
 export function CTALink({
   href,
   children,
   icon,
-  isCardLink = false,
-  cardLinkClassName,
+  inset,
+  textClassName,
 }: CTALinkProps) {
   const isExternal = isExternalLink(href, BASE_DOMAIN)
 
@@ -30,18 +30,10 @@ export function CTALink({
       href={href}
       className={clsx(
         'text-brand-primary-300 focus:brand-outline inline-flex items-center gap-1.5 font-bold hover:underline',
-        isCardLink && 'absolute inset-0',
+        inset && 'absolute inset-0',
       )}
     >
-      <span
-        className={clsx(
-          'flex items-center gap-2',
-          isCardLink && [
-            'absolute inline-flex items-center gap-2',
-            cardLinkClassName || 'bottom-6 left-28 md:left-6',
-          ],
-        )}
-      >
+      <span className={clsx('flex items-center gap-2', textClassName)}>
         {children}
         <Icon
           component={getIconComponent(isExternal, icon)}
