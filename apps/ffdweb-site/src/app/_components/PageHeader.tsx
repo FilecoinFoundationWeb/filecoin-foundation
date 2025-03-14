@@ -46,7 +46,9 @@ export function PageHeader({
         )}
       >
         <div className="flex flex-col gap-8">
-          {kicker && <span>{kicker}</span>}
+          {kicker && (
+            <span className="block font-bold text-neutral-200">{kicker}</span>
+          )}
           <PageHeader.Title isHomepage={isHomepage}>{title}</PageHeader.Title>
         </div>
         {cta && <PageHeader.CTAButton {...cta} />}
