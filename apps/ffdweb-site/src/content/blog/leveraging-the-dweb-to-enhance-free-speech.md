@@ -21,8 +21,6 @@ seo:
 #   - privacy
 ---
 
-![Leveraging the Dweb to Enhance Free Speech bannner](https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383bfcf3ec00b87f30ee_leveraging-the-dweb-to-enhance-free-speech.png)
-
 On September 28, the Filecoin Foundation for the Decentralized Web (FFDW) announced a $5.8 million award to the [Freedom of the Press Foundation](https://freedom.press/) (FPF) to support the further leveraging of the decentralized web to enhance freedom of speech for journalists.
 
 The three-year FFDW award will support infrastructure, user experience, and security enhancements for tools used by journalists around the globe. It will also be used to explore a zero-trust architecture for SecureDrop, an open-source news and information submission system used by newsrooms worldwide for secure document exchange and communication between journalists and anonymous sources. Overall, the award will further the organization’s efforts to preserve historically critical information, such as its comprehensive database of press freedom violations in the United States and government data that belongs in the public sphere.
