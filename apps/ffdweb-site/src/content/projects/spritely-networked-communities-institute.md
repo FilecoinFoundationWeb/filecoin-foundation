@@ -12,7 +12,7 @@ description:
   content are not tied to a specific server or company.
 image:
   src: /assets/images/partnerlogo_spritely.png
-featured-content: https://www.ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media
+featured-content: https://ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media
 seo:
   description: "Spritely develops open-source technology for decentralized identity and social networks, empowering users to control their online presence without corporate gatekeepers."
 ---

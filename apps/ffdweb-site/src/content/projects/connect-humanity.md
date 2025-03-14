@@ -14,7 +14,7 @@ description: As we pursue our goal of supporting an internet for everyone, it is
   advancement of digital equity.
 image:
   src: https://pbs.twimg.com/profile_images/1511746714688016387/EB6IZmuH_400x400.jpg
-featured-content: https://www.ffdweb.org/blog/ffdw-and-connect-humanity-empowering-an-equitable-digital-future
+featured-content: https://ffdweb.org/blog/ffdw-and-connect-humanity-empowering-an-equitable-digital-future
 external-link: https://connecthumanity.fund/
 active-partnership: true
 seo:

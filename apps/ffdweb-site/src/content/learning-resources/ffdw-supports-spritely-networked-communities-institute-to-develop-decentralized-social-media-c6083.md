@@ -21,7 +21,7 @@ keywords: >-
   gatekeeper-free, secure decentralized online communities, user-empowered
   moderation tools, alternative architectures, user privacy, data protection
 link: >-
-  https://www.ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media/
+  https://ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media/
 seo:
   description: >-
     Learn how Spritely Institute and FFDW are building a decentralized, 

@@ -24,7 +24,7 @@ keywords: >-
   spirituality, social practices, communication tools, data storage, social
   change
 link: >-
-  https://www.ffdweb.org/blog/ffdw-and-sacred-stacks-building-community-with-decentralized-tools/
+  https://ffdweb.org/blog/ffdw-and-sacred-stacks-building-community-with-decentralized-tools/
 seo:
   description: >-
     Learn how FFDW and Sacred Stacks use decentralized tools to empower 
