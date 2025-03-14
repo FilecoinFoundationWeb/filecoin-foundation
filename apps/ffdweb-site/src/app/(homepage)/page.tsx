@@ -105,7 +105,7 @@ export default async function Home() {
         kicker="Learning Resources"
         title="Discover the Power of Decentralization"
         description={[
-          'Learn how decentralized technologies are creating a better future for a better web. Explore educational content, research papers, tutorials, interactive content, and more resources from FFDW and beyond.',
+          'Learn how decentralized technologies are creating the infrastructure for a better web. Explore educational content, research papers, tutorials, interactive content, and more resources from FFDW and beyond.',
         ]}
       >
         {/*<CardGrid cols="mdThree">
@@ -123,7 +123,7 @@ export default async function Home() {
         title="Decentralization and Why it Matters"
         image={graphicsData.dWebDigestCover}
         description={[
-          'The DWeb Digest is an online magazine featuring articles from industry experts who teach people from newbies clearly to pique and satisfy their high digital ambition while to digital insights and learnings for digital future developers to build up the community inside DWeb to create a decentralized future.',
+          'The DWeb Digest is an online magazine featuring articles from industry experts on topics ranging from cognitive liberty to privacy and crypto policy. The digital publication offers in-depth insights and opinions on the latest trends in decentralization and explores ideas for a better, more decentralized future.',
         ]}
         cta={{
           href: PATHS.DIGEST.path,
@@ -181,7 +181,7 @@ export default async function Home() {
 
       <CTASection
         kicker="Get Involved"
-        title="Join the Conversation and Help Us Build a Better Internet"
+        title="Join the Conversation and Help Us Build a Better Web"
         cta={{
           href: FFDW_URLS.email,
           text: 'Contact Us',
