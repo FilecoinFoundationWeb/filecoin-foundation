@@ -4,10 +4,6 @@ created-on: "2023-04-21T07:15:48.576Z"
 updated-on: "2023-04-21T07:18:20.707Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: interviews
-description: >-
-  Decentralized web technology is enabling web developers and users alike to
-  solve some of the issues that arose during the Web2 era, such as a lack of
-  community governance and the stripping of web content’s value.
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423824686a077ccd90a61e_0-ghsro14ivrabstg6.png

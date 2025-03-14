@@ -4,9 +4,6 @@ created-on: "2023-04-21T07:15:50.533Z"
 updated-on: "2023-04-21T07:15:50.533Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >
-  Largest ever survey of civil society's digital haves and have-nots shines
-  light on one of the biggest barriers facing NGOs
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/644238263db3a0680966e3ab_0321-ch.png

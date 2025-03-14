@@ -6,11 +6,6 @@ created-on: "2023-04-21T07:15:31.358Z"
 updated-on: "2023-04-21T07:18:12.889Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >-
-  Filecoin Foundation for the Decentralized Web (FFDW) is launching an open
-  request for proposals (RFP). We’re looking for projects that support our core
-  mission — to ensure the permanent preservation of humanity’s most important
-  information.
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423813d1b0259171f6ef5e_ffdw-request-for-proposals.png

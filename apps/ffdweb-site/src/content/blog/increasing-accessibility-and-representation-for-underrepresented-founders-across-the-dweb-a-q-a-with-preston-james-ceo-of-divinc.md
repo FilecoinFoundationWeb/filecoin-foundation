@@ -5,7 +5,6 @@ created-on: 2023-07-12T19:47:37.201Z
 updated-on: 2023-07-12T19:47:37.214Z
 published-on: 2023-07-12T19:47:37.228Z
 category: interviews
-description: ""
 image:
   src: /assets/images/0711-divinc.png
 seo:

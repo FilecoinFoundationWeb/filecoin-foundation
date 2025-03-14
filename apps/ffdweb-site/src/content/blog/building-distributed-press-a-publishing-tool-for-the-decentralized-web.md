@@ -4,15 +4,11 @@ updated-on: "2023-04-21T07:15:38.854Z"
 created-on: "2023-04-21T07:15:38.854Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >-
-  FFDW works with Hypha Worker Co-operative and Sutty to foster decentralized
-  web publishing tools that offer creators an alternative to centralized
-  publishing platforms.
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381aaf6e60375caa347a_0208-distributedpress.png
 seo:
-  description: ""
+  description: "FFDW partners with Hypha and Sutty to develop Distributed Press, an open-source publishing platform empowering creators with decentralized alternatives to traditional publishing."
 ---
 
 **_FFDW works with Hypha Worker Co-operative and Sutty to foster decentralized web publishing tools that offer creators an alternative to centralized publishing platforms._**

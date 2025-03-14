@@ -6,13 +6,6 @@ created-on: "2023-04-21T07:15:52.152Z"
 updated-on: "2023-04-21T07:15:52.152Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >-
-  Filecoin Foundation for the Decentralized Web (FFDW) is excited to announce
-  our collaboration with the EASIER Data Initiative at the University of
-  Maryland, College Park (UMD). In partnership with researchers from UMD’s
-  Department of Geographical Sciences, the Initiative will ensure that large
-  geospatial datasets are accessible by research organizations and the general
-  public.
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423827686a07ac0f90ac2f_1005-ffdw-edi.png

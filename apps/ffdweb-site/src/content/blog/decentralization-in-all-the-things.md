@@ -4,9 +4,6 @@ created-on: "2023-04-21T07:15:43.794Z"
 updated-on: "2023-04-21T07:15:43.794Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: technology
-description: >-
-  This is a guest post by Mike Masnick, the founder and CEO of Floor64 and
-  editor of the Techdirt blog, about decentralization.
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381fb068b055975a464f_013023-ffdw-mikemasnick.png

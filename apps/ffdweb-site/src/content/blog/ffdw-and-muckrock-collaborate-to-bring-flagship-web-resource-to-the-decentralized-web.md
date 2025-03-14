@@ -6,10 +6,6 @@ created-on: "2023-04-21T07:15:55.677Z"
 updated-on: "2023-04-21T07:18:23.253Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >-
-  Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce its
-  award to MuckRock, a non-profit, collaborative news site that gives people the
-  tools to keep their government transparent and accountable.
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382b3db3a05fc766ec87_1-jduzu4kyyygqfyan9dl6da.png

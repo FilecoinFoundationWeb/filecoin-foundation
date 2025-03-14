@@ -6,14 +6,6 @@ created-on: "2023-04-21T07:15:57.492Z"
 updated-on: "2023-04-21T07:18:24.468Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >-
-  Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our
-  award to OpenArchive, a nonprofit dedicated to advancing human rights by
-  empowering people to collect, verify, and securely preserve mobile media using
-  distributed backends. Through this collaboration, OpenArchive will be able to
-  support decentralized backends for the Save app. This will enable people on
-  the ground capturing images and footage of world events to leverage IPFS and
-  Filecoin and other decentralized storage options via their mobile device.
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382def619d14d6b54705_openarchive.png
