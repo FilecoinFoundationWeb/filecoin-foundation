@@ -12,8 +12,8 @@ import {
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
-import { CaretRight } from '@phosphor-icons/react'
 
+import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -67,12 +67,7 @@ export function BlogContent({ posts }: BlogContentProps) {
               cta={{
                 href: `${PATHS.BLOG.path}/${slug}`,
                 text: 'Read Post',
-                icon: {
-                  component: CaretRight,
-                  size: 16,
-                  position: 'trailing',
-                  weight: 'bold',
-                },
+                icon: CARET_RIGHT,
               }}
               image={{
                 ...(image || graphicsData.imageFallback.data),

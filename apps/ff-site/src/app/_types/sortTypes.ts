@@ -1,9 +1,11 @@
-import { VALID_SORT_KEYS } from '@/constants/sortConstants'
+import type { DateSortOrder } from '@filecoin-foundation/utils/types/sortTypes'
 
-export type ValidSortKey = (typeof VALID_SORT_KEYS)[number]
+type SortKeys = 'upcoming-events' | 'past-events' | 'all-events' | 'a-z' | 'z-a'
 
 export type SortConfig<Entry extends Record<string, any>> = {
-  key: ValidSortKey
+  key: FFSortKey
   label: string
   sortFn: (entries: Array<Entry>) => Array<Entry>
 }
+
+export type FFSortKey = DateSortOrder | SortKeys
