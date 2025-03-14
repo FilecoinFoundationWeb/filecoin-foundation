@@ -19,8 +19,6 @@ seo:
 #   - grants
 ---
 
-![FFDW and Human Rights Data Analysis Group Collaborate](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98beae2f9ebd3f0e0e59_ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png)
-
 Collaboration will support outreach and training to accelerate market research for and adoption of decentralized web technologies
 
 Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce its award to [Human Rights Data Analysis Group](https://hrdag.org/) (HRDAG), a leading human rights organization that uncovers large-scale human rights violations using data science and statistics. Led by Executive Director Dr. Megan Price and Director of Research Dr. Patrick Ball, HRDAG has been turning raw data into analyzable data for nearly 30 years. The collaboration between FFDW and HRDAG will focus on outreach and training for human rights organizations to help them use methods and tools for storing and accessing data on the decentralized web.
@@ -32,3 +30,5 @@ In an era where fake news and misinformation are [on the rise](https://www.pewre
 In addition to enabling HRDAG to better understand the decentralized web landscape, FFDW’s award will allow HRDAG to adopt decentralized web technologies and empower its partner organizations — including human rights defenders, experts, and organizations worldwide — to do the same. A significant part of HRDAG’s work is training partners — teaching them to build tools and empowering them to leverage the power of quantitative analysis in the pursuit of justice. This award will support that work, kickstarting conversations and adoption of decentralized web technology with HRDAG’s global partners. This collaboration will also envelop the HRDAG’s work with current projects including the support for ongoing research and advocacy about criminal justice reform in the US, educational materials for Columbian Truth Commission, and other projects.
 
 “We’re proud to support HRDAG with this award,” said FFDW Board Chair Marta Belcher. “FFDW’s mission is to preserve humanity’s most important information, and this collaboration with HRDAG is a natural fit to further these efforts.”
+
+![FFDW and Human Rights Data Analysis Group Collaborate](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98beae2f9ebd3f0e0e59_ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png)
