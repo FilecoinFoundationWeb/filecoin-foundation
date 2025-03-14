@@ -8,6 +8,8 @@ import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizePro
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { Newspaper } from '@phosphor-icons/react/dist/ssr'
 
+import { PATHS } from '@/constants/paths'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -17,6 +19,7 @@ import { CTALink } from '@/components/CTALink'
 import { getProjectData, getProjectsData } from '../utils/getProjectData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
+
 
 type ProjectProps = {
   params: Promise<SlugParams>
@@ -86,6 +89,7 @@ export async function generateMetadata(props: ProjectProps) {
   return createMetadata({
     metaTitle: `${title} | FFDW`,
     metaDescription: description,
+    path: `${PATHS.PROJECTS.path}/${slug}`,
     overrideTitle: true,
   })
 }

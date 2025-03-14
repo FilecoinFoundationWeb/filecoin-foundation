@@ -3,6 +3,7 @@ import { Suspense } from 'react'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
+import { PATHS } from '@/constants/paths'
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -15,6 +16,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { ProjectsContent } from './components/ProjectsContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getProjectsData } from './utils/getProjectData'
+
 
 const SEO = {
   metaTitle:
@@ -53,5 +55,6 @@ export default async function Projects() {
 
 export const metadata = createMetadata({
   ...SEO,
+  path: PATHS.PROJECTS.path,
   overrideTitle: true,
 })

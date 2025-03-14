@@ -20,7 +20,9 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
+// import { IconCardWithCTA } from './components/IconCardWithCTA'
 import { FEATURED_PROJECTS } from './constants/featuredProjects'
+// import { learningResources } from './constants/learningResources'
 import { getFeaturedProjects } from './utils/getFeaturedProjects'
 
 export default async function Home() {
@@ -98,7 +100,11 @@ export default async function Home() {
           'Learn how decentralized technologies are creating a better future for a better web. Explore educational content, research papers, tutorials, interactive content, and more resources from FFDW and beyond.',
         ]}
       >
-        <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
+        {/*<CardGrid cols="mdThree">
+           {learningResources.map(({ icon, title, cta }) => (
+            <IconCardWithCTA key={title} icon={icon} title={title} cta={cta} />
+          ))} 
+        </CardGrid>*/}
         <CTALink href={PATHS.LEARNING_RESOURCES.path}>
           View All Learning Resources
         </CTALink>
@@ -142,4 +148,5 @@ export default async function Home() {
 
 export const metadata = createMetadata({
   ...SEO,
+  path: PATHS.HOME.path,
 })

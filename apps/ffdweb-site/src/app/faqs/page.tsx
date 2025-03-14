@@ -1,6 +1,8 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
+import { PATHS } from '@/constants/paths'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
@@ -34,5 +36,6 @@ export default function FAQs() {
 
 export const metadata = createMetadata({
   ...SEO,
+  path: PATHS.FAQS.path,
   overrideTitle: true,
 })

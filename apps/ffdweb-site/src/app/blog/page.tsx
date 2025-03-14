@@ -60,5 +60,6 @@ export default async function Blog() {
 
 export const metadata = createMetadata({
   ...SEO,
+  path: PATHS.BLOG.path,
   overrideTitle: true,
 })

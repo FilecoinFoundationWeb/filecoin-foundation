@@ -80,6 +80,11 @@
   }
 }
 @layer components {
+  /* SHARED */
+  .social-link {
+    @apply hover:text-brand-400;
+  }
+
   /* ARTICLE HEADER */
   .article-header-image {
     @apply rounded-lg;
@@ -269,11 +274,6 @@
   /* SLIDE OVER */
   .slide-over-panel {
     @apply bg-brand-800;
-  }
-
-  /* SOCIAL */
-  .social-media-primary {
-    @apply hover:text-brand-400;
   }
 
   /* TAGS */

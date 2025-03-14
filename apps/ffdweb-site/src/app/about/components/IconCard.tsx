@@ -12,12 +12,11 @@ type IconCardProps = {
 
 const iconStyles = {
   regular: {
-    container: 'text-brand-secondary-100',
+    container: 'accent-icon-regular',
     size: 64,
   },
   fill: {
-    container:
-      'bg-brand-secondary-100 flex size-20 items-center justify-center text-neutral-950',
+    container: 'accent-icon-fill flex size-20 items-center justify-center',
     size: 40,
   },
 } as const

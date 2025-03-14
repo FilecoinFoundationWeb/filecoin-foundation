@@ -105,6 +105,11 @@
 }
 
 @layer components {
+  /* SHARED */
+  .social-link {
+    @apply hover:text-brand-primary-400;
+  }
+
   /* AVATAR */
   .avatar-background {
     @apply bg-brand-primary-800; /* CHECK */
@@ -274,11 +279,6 @@
     @apply bg-neutral-950;
   }
 
-  /* SOCIAL */
-  .social {
-    @apply text-brand-primary-300;
-  }
-
   /* TAGS */
   .tag-label {
     @apply border;
@@ -311,12 +311,17 @@
     @apply text-brand-primary-300;
   }
 
-  .share-article-tooltip-link {
-    @apply hover:text-brand-primary-400;
-  }
-
   /* PAGE HEADER */
   .page-header-image {
     @apply rounded-none;
+  }
+
+  /* ACCENT ICONS */
+  .accent-icon-regular {
+    @apply text-brand-secondary-100;
+  }
+
+  .accent-icon-fill {
+    @apply bg-brand-secondary-100 text-neutral-950;
   }
 }
