@@ -44,15 +44,8 @@ export default async function Digest() {
       >
         <CardGrid cols="smTwo">
           {articles.map((article) => {
-            const {
-              title,
-              image,
-              slug,
-              issueNumber,
-              articleNumber,
-              description,
-              authors,
-            } = article
+            const { title, image, slug, articleNumber, description, authors } =
+              article
 
             return (
               <Card
@@ -60,10 +53,7 @@ export default async function Digest() {
                 title={title}
                 avatars={authors}
                 description={{ text: description, isClamped: true }}
-                tags={[
-                  { text: `Issue ${issueNumber}` },
-                  { text: `Article ${articleNumber}` },
-                ]}
+                tags={[{ text: `Article ${articleNumber}` }]}
                 cta={{
                   href: `${PATHS.DIGEST.path}/${slug}`,
                   text: 'Read Article',
