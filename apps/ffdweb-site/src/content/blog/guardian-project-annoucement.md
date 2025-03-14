@@ -14,11 +14,6 @@ image:
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423839922f06c7b3150fdd_guardian-project.png
 seo:
   description: ""
-# tags:
-#   - grants
-#   - community
-#   - smartphones
-#   - rights
 ---
 
 Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our award to [Guardian Project](https://guardianproject.info/), to support their efforts to integrate decentralized storage into their free and open-source solutions for distribution, authentication, and preservation of essential multimedia and software. Guardian Project is a global collective that develops privacy-focused mobile apps and free licensed, open-source software libraries that can be used by anyone looking to protect data and communications from unjust intrusion, interception, and monitoring. The Decentralizing Veracity and Distribution (DVD) project will focus on preserving content and expanding access for the human rights defenders, frontline journalists, and everyday activists that Guardian Project has sought to empower for over a decade.

@@ -14,11 +14,6 @@ image:
 updated-on: "2023-04-21T07:18:36.074Z"
 created-on: "2023-04-21T07:16:15.905Z"
 published-on: "2023-04-21T08:01:04.314Z"
-# tags:
-#   - another-world
-#   - frieze-week
-#   - the-finesse
-#   - contemporary-art
 seo:
   description: ""
 ---

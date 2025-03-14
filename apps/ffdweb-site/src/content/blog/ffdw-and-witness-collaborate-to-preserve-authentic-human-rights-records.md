@@ -12,11 +12,6 @@ image:
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382e3db3a0857c66f093_witness.png
 seo:
   description: ""
-# tags:
-#   - freedom
-#   - journalism
-#   - press
-#   - privacy
 ---
 
 FFDW’s commitment to WITNESS will support the creation, authentication, and preservation of trusted documentation

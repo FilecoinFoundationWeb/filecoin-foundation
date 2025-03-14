@@ -14,10 +14,6 @@ image:
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423816edebc4ceb27492e7_starling-lab-image.jpeg
 seo:
   description: ""
-# tags:
-#   - internet-education-foundation
-#   - advocacy
-#   - education
 ---
 
 [![Announcing The Starling Lab video preview image](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98b3638a0c3c5a6b8a19_hqdefault.jpeg)](https://www.youtube.com/watch?v=szltLBFoQg0)

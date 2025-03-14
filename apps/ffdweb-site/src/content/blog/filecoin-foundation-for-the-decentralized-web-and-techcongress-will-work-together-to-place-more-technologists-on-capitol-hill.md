@@ -15,10 +15,6 @@ image:
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423836a6ec419f1a28faed_1-by_cgybu5ago6_yxuh93g.png
 seo:
   description: ""
-# tags:
-#   - governance
-#   - fellowship
-#   - techcongress
 ---
 
 _Collaboration will build bridges between the people building emerging technologies and policymakers_

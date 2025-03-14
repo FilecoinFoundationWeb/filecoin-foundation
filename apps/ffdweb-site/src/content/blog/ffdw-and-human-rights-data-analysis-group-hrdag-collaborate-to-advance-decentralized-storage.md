@@ -14,9 +14,6 @@ image:
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423829fcf3ec16737f20d9_hrdag.png
 seo:
   description: ""
-# tags:
-#   - rights
-#   - grants
 ---
 
 Collaboration will support outreach and training to accelerate market research for and adoption of decentralized web technologies
