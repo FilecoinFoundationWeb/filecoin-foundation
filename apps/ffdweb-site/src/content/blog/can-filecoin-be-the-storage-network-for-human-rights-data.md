@@ -1,6 +1,6 @@
 ---
 title: "Can Filecoin Be The Storage Network for Human Rights Data?"
-description: Can Filecoin Be The Storage Network for Human Rights Data?
+description: ""
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381ce3c08ff22a4e3c10_0308-hrdag-spotlight.png
