@@ -20,9 +20,9 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
-import { IconCardWithCTA } from './components/IconCardWithCTA'
+// import { IconCardWithCTA } from './components/IconCardWithCTA'
 import { FEATURED_PROJECTS } from './constants/featuredProjects'
-import { learningResources } from './constants/learningResources'
+// import { learningResources } from './constants/learningResources'
 import { getFeaturedProjects } from './utils/getFeaturedProjects'
 
 export default async function Home() {
