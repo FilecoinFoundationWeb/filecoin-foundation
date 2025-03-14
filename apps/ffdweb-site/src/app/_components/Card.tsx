@@ -20,7 +20,3 @@ export function Card({ cta, ...rest }: CardProps) {
 
   return <SharedCard cta={ctaWithBaseDomain} {...rest} />
 }
-
-Card.Link = function CardLink({ ...rest }: CTAWithoutBaseDomain) {
-  return <SharedCard.Link {...rest} baseDomain={BASE_DOMAIN} />
-}
