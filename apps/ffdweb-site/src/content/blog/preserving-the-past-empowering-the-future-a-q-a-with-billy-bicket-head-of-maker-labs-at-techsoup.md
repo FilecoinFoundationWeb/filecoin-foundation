@@ -5,10 +5,6 @@ created-on: 2025-02-06T21:12:58.463Z
 updated-on: 2025-02-06T21:12:58.480Z
 published-on: 2025-02-06T21:12:58.493Z
 category: interviews
-description: In this Q&A, we sit down with Billy Bicket, Head of Maker Labs at
-  TechSoup, to discuss the goals of the CML, its implications for cultural
-  preservation, and how this initiative is building a more inclusive and
-  equitable future for archiving.
 image:
   src: /assets/images/techsoup-q-a.webp
 seo:
