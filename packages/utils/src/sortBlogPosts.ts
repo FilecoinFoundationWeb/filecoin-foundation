@@ -1,9 +1,6 @@
 import { compareAsc, compareDesc } from 'date-fns'
 import type { SortType } from './types/sortTypes'
-
-export type WithPublishedOn = {
-  publishedOn: Date
-}
+import type { WithPublishedOn } from './types/withPublishedOnType'
 
 export function sortPostsByDateDesc<Entry extends WithPublishedOn>(
   posts: Array<Entry>,
