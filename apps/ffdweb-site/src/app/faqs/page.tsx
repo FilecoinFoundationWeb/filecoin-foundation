@@ -13,16 +13,16 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const { body } = FAQsMarkdown
 
-const SEO = {
-  metaTitle: 'FFDW FAQs | Answers About Our Mission & the Decentralized Web',
-  metaDescription:
+const FAQS_SEO = {
+  title: 'FFDW FAQs | Answers About Our Mission & the Decentralized Web',
+  description:
     'Discover how FFDW supports open, decentralized tech, funds projects, and fosters a resilient internet. Get quick answers to your pressing questions.',
 } as const
 
 export default function FAQs() {
   return (
     <PageLayout gap="large">
-      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+      <StructuredDataScript structuredData={generateStructuredData(FAQS_SEO)} />
 
       <PageHeader
         kicker="FAQs"
@@ -35,7 +35,7 @@ export default function FAQs() {
 }
 
 export const metadata = createMetadata({
-  ...SEO,
+  title: { absolute: FAQS_SEO.title },
+  description: FAQS_SEO.description,
   path: PATHS.FAQS.path,
-  overrideTitle: true,
 })

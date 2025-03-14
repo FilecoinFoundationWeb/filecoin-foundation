@@ -192,6 +192,7 @@ export default async function Home() {
 }
 
 export const metadata = createMetadata({
-  ...SEO,
+  title: { absolute: SEO.title },
+  description: SEO.description,
   path: PATHS.HOME.path,
 })

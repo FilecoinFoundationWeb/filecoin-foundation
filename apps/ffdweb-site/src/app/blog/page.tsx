@@ -18,11 +18,11 @@ import { BlogContent } from './components/BlogContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
-const SEO = {
-  metaTitle: 'FFDW Blog | Latest Web3 Insights & Updates',
-  metaDescription:
+const BLOG_SEO = {
+  title: 'FFDW Blog | Latest Web3 Insights & Updates',
+  description:
     'Stay informed on the newest advancements in decentralized tech, human rights data preservation, and social impact. Discover fresh perspectives from FFDW.',
-} as const
+}
 
 export default async function Blog() {
   const posts = await getBlogPostsData()
@@ -34,7 +34,7 @@ export default async function Blog() {
 
   return (
     <PageLayout gap="large">
-      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+      <StructuredDataScript structuredData={generateStructuredData(BLOG_SEO)} />
 
       <PageHeader
         isFeatured
@@ -59,7 +59,7 @@ export default async function Blog() {
 }
 
 export const metadata = createMetadata({
-  ...SEO,
+  title: { absolute: BLOG_SEO.title },
+  description: BLOG_SEO.description,
   path: PATHS.BLOG.path,
-  overrideTitle: true,
 })
