@@ -25,6 +25,8 @@ export function CTALink({
 }: CTALinkProps) {
   const isExternal = isExternalLink(href, BASE_DOMAIN)
 
+  const isCaretRightIcon = getIconComponent(isExternal, icon) === CaretRight
+
   return (
     <Link
       href={href}
@@ -35,11 +37,13 @@ export function CTALink({
     >
       <span className={clsx('flex items-center gap-2', textClassName)}>
         {children}
-        <Icon
-          component={getIconComponent(isExternal, icon)}
-          size={18}
-          weight="bold"
-        />
+        <span className={clsx(isCaretRightIcon && 'translate-y-[1px]')}>
+          <Icon
+            component={getIconComponent(isExternal, icon)}
+            size={18}
+            weight="bold"
+          />
+        </span>
       </span>
     </Link>
   )

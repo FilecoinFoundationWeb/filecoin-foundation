@@ -192,7 +192,14 @@ function renderCardLinkContent({
   baseDomain,
 }: NonNullable<CardProps['cta']>) {
   const isExternal = isExternalLink(href, baseDomain)
-  const textElement = <span key="text">{text}</span>
+
+  const isCaretRightIcon = icon?.component?.displayName === 'CaretRight'
+
+  const textElement = (
+    <span className={clsx(isCaretRightIcon && '-translate-y-[1px]')} key="text">
+      {text}
+    </span>
+  )
 
   if (!icon) {
     return isExternal
