@@ -8,7 +8,7 @@ description: ""
 image:
   src: /assets/images/091523-qa-techcongress.png
 seo:
-  description: ""
+  description: "TechCongress founder Travis Moore discusses bridging tech and policy through Congressional fellowships, sharing insights on making meaningful impact in tech policy."
 ---
 
 In the ever-evolving landscape of technology and policy, organizations like [TechCongress](https://www.techcongress.io/) play a crucial role in bridging the gap between these two realms. Last year, Filecoin Foundation for the Decentralized Web (FFDW) began [working with TechCongress](/blog/filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill/) to connect technologists and policymakers in Congress. 

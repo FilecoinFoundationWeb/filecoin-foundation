@@ -11,7 +11,7 @@ description: "Filecoin Foundation for the Decentralized Web (FFDW) is the
 image:
   src: /assets/images/hero-ffdw.webp
 seo:
-  description: ""
+  description: "FFDW's 2024 Annual Report showcases achievements in DWeb development, education, human rights, cultural preservation, and scientific data storage across global partnerships."
 ---
 
 ## Welcoming the Decentralized Web 

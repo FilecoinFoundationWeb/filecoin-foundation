@@ -11,7 +11,7 @@ description: "This is a guest post from FFDW project partner, Authors
 image:
   src: /assets/images/021024-guest-authorsalliance.png
 seo:
-  description: ""
+  description: "Authors Alliance and FFDW partner to explore how decentralized web technologies can support public interest authors, copyright preservation, and text mining research."
 category: "partnerships"
 ---
 

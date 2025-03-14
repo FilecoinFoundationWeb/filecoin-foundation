@@ -14,7 +14,7 @@ image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423830e3c08f43474e3c40_0202-mit.png
 seo:
-  description: ""
+  description: "FFDW partners with MIT Open Learning to explore decentralized storage solutions for preserving OpenCourseWare, making educational resources freely accessible worldwide."
 ---
 
 **_FFDW Supports MIT Open Learning in Preserving Humanity’s Most Important Information_**

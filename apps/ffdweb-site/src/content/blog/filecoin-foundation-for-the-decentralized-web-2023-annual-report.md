@@ -11,7 +11,7 @@ description: In this report, you’ll see the progress achieved by FFDW and our
 image:
   src: /assets/images/022624-ffdw-annualreport.png
 seo:
-  description: ""
+  description: "Explore FFDW's 2023 achievements in advancing decentralized technology, supporting digital preservation, and fostering partnerships to protect humanity's vital information."
 ---
 
 Filecoin Foundation for the Decentralized Web (FFDW) is the sister nonprofit of Filecoin Foundation. FFDW’s mission is to serve the public good by supporting the entire decentralized web (DWeb) ecosystem. In the pursuit of preserving humanity's most important information, FFDW envisages a crucial role for decentralized storage systems –– such as those built by the many participants in the Filecoin ecosystem. 

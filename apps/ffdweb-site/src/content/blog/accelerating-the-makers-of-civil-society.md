@@ -8,7 +8,7 @@ description: ""
 image:
   src: /assets/images/051723-techsoup.png
 seo:
-  description: ""
+  description: "TechSoup and FFDW launch Accelerating Makers to connect civil society with DWeb technology, fostering innovation and building tools for public good through community events and resources."
 ---
 
 **By Marnie Webb, Chief Community Impact Officer, TechSoup**

@@ -10,7 +10,7 @@ description: Can decentralization really help build community? And how can
 image:
   src: /assets/images/051723-ucboulder.png
 seo:
-  description: ""
+  description: "Explore how Sacred Stacks and FFDW are empowering communities through decentralized tools, focusing on self-governance, autonomy, and accessibility in community building."
 ---
 
 FFDW and Sacred Stacks: Building Community with Decentralized Tools

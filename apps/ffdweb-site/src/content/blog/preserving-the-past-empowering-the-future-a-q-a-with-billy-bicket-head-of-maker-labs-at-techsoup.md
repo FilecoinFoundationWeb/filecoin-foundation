@@ -12,7 +12,7 @@ description: In this Q&A, we sit down with Billy Bicket, Head of Maker Labs at
 image:
   src: /assets/images/techsoup-q-a.webp
 seo:
-  description: ""
+  description: "TechSoup's Billy Bicket discusses how the Cultural Memory Lab uses decentralized technologies to democratize archiving and preserve diverse cultural narratives."
 ---
 
 In an era of eroding cultural memory, the need for innovative approaches to preserving collective history has never been greater. Decentralized technologies offer a transformative path forward, enabling communities to reclaim ownership of their narratives while democratizing access to the past.

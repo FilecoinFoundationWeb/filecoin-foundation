@@ -14,7 +14,7 @@ image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382b3db3a05fc766ec87_1-jduzu4kyyygqfyan9dl6da.png
 seo:
-  description: ""
+  description: "FFDW and MuckRock partner to integrate decentralized storage for DocumentCloud, enhancing preservation and access to over 8 million public interest documents."
 ---
 
 _Joint Project will Help Preserve Key Public Interest Documents on the Filecoin Network_

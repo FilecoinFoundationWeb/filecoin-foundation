@@ -15,7 +15,7 @@ description: >
 image:
   src: /assets/images/041524-guest-hrdag.png
 seo:
-  description: ""
+  description: "HRDAG explores how Filecoin and IPFS can protect vital human rights data through decentralized storage, ensuring critical evidence remains accessible for future generations."
 ---
 
 *This is a guest post from FFDW project partner Human Rights Data Analysis Group (HRDAG), written by Patrick Ball, HRDAG’s Director of Research.* 

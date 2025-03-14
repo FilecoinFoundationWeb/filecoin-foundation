@@ -9,7 +9,7 @@ created-on: "2023-04-21T07:15:46.748Z"
 updated-on: "2023-04-21T07:18:19.495Z"
 published-on: "2023-04-21T08:01:04.314Z"
 seo:
-  description: ""
+  description: "Episodes 5-8 of FFDW's documentary series explore Web3 privacy, open-source development, blockchain economics, and decentralized browsers with industry experts."
 ---
 
 _[Exploring the Decentralized Web](https://www.youtube.com/watch?v=P0yfvedPY94&list=PL37YlBYJT0nmfqDnbov6lKHUyZvRfQjap&index=1) is a 12-part documentary series produced by Filecoin Foundation for the Decentralized Web (FFDW). These videos, featuring leaders and visionaries from top projects across the space, explore the emergence and impact of decentralized technology._

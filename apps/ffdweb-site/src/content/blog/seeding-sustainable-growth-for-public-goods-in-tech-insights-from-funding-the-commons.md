@@ -8,7 +8,7 @@ category: impact
 image:
   src: /assets/images/043024_fundingthecommons_recap.png
 seo:
-  description: ""
+  description: "Leaders explore sustainable funding for public goods at Funding the Commons, discussing OSS development, decentralized funding models, and tech solutions for human rights."
 ---
 
 Imagine a scenario where a local government is looking to support a community garden but lacks resources, so motivated gardeners plant seeds and cultivate the garden because they recognize this public good is needed. The community comes together to fund and support a shared resource, and everyone benefits. This is an example of public goods funding.

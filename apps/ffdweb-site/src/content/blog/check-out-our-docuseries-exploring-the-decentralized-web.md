@@ -14,7 +14,7 @@ image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381d1fe00b261574bc1d_0-w2tmph7o7z-pisg8-2.png
 seo:
-  description: ""
+  description: "Discover our 12-part documentary series featuring tech leaders exploring the evolution of the web, decentralization, data privacy, and the future of digital identity."
 ---
 
 We recently launched [Exploring the Decentralized Web](https://www.youtube.com/watch?v=P0yfvedPY94&list=PL37YlBYJT0nmfqDnbov6lKHUyZvRfQjap&index=1), a 12-part documentary series produced by Filecoin Foundation for the Decentralized Web (FFDW). Featuring leaders and visionaries from top projects across the space, these videos explore the history of decentralized technology and its benefits for users and organizations.
