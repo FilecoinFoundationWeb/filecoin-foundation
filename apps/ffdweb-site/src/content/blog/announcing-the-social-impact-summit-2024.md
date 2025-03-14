@@ -8,7 +8,7 @@ description: ""
 image:
   src: /assets/images/eventbrite-header.png
 seo:
-  description: ""
+  description: "FFDW and BL4SG present the Social Impact Summit 2024, uniting experts in law, policy, and tech to explore how decentralized technologies can drive social innovation and impact."
 ---
 
 - Filecoin Foundation for the Decentralized Web (FFDW), together with Blockchain Law for Social Good Center (BL4SG), will spotlight socially beneficial use cases of decentralized and emerging technologies at the Social Impact Summit 2024.

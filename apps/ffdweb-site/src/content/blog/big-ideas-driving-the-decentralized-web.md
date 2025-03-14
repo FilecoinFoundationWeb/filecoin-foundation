@@ -16,7 +16,7 @@ updated-on: "2023-04-21T07:18:16.763Z"
 created-on: "2023-04-21T07:15:36.863Z"
 published-on: "2023-04-21T08:01:04.314Z"
 seo:
-  description: ""
+  description: "Explore key concepts shaping Web3: decentralization, P2P networks, open source, and distributed systems. Learn how these technologies are building a more secure and open internet."
 ---
 
 We are at a fork in the road when it comes to building an internet that enhances trust, allows users to maintain privacy, incentivizes entrepreneurs to build safe and secure systems, and enables the preservation of the world's most important information for future generations. At Filecoin Foundation for the Decentralized Web (FFDW), we believe that the Internet must return to its original – more decentralized – architecture. Some call this direction "Web3"; some call it the decentralized web or "DWeb."

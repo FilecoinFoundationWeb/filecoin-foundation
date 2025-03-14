@@ -12,7 +12,7 @@ description: In this Q&A, we sit down with Lia Holland, campaigns and
 image:
   src: /assets/images/103124-qa-fftf.png
 seo:
-  description: ""
+  description: "Fight For the Future's Lia Holland discusses digital rights advocacy, decentralized technologies, and using storytelling to combat surveillance in this insightful Q&A."
 ---
 
 As the Internet continues to evolve, so does the need for more open, transparent, and decentralized technologies that ensure long-term access to knowledge and safeguard individual privacy. Fight For the Future (FFtF) has been a key advocate in advancing these ideals, working to protect digital rights and promote a web that empowers users. 

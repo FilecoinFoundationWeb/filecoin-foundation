@@ -11,7 +11,7 @@ image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382e3db3a0857c66f093_witness.png
 seo:
-  description: ""
+  description: "FFDW partners with WITNESS to protect and authenticate human rights documentation using decentralized technology, ensuring vital records remain secure and trustworthy."
 ---
 
 FFDW’s commitment to WITNESS will support the creation, authentication, and preservation of trusted documentation

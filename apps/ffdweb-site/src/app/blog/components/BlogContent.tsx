@@ -12,8 +12,8 @@ import {
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
-import { CaretRight } from '@phosphor-icons/react'
 
+import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -21,6 +21,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { Card } from '@/components/Card'
+import { FilterContainer } from '@/components/FilterContainer'
 
 import type { BlogPost } from '../types/blogPostType'
 
@@ -41,17 +42,23 @@ export function BlogContent({ posts }: BlogContentProps) {
   const { currentPage, pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: searchResults,
+    entriesPerPage: 9,
   })
 
   return (
-    <section>
-      <Search query={searchQuery} />
-      <CardGrid cols="smTwo">
+    <FilterContainer
+      hasResults={Boolean(paginatedResults.length)}
+      bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
+      top={{
+        main: <Search query={searchQuery} />,
+      }}
+    >
+      <CardGrid cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {
           const { slug, category, title, description, image, publishedOn } =
             post
 
-          const isFirstTwoImages = i < 2
+          const isFirstTwoImages = i < 3
           const categoryLabel = getCategoryLabel({
             collectionName: 'blog_posts',
             category,
@@ -67,12 +74,7 @@ export function BlogContent({ posts }: BlogContentProps) {
               cta={{
                 href: `${PATHS.BLOG.path}/${slug}`,
                 text: 'Read Post',
-                icon: {
-                  component: CaretRight,
-                  size: 16,
-                  position: 'trailing',
-                  weight: 'bold',
-                },
+                icon: CARET_RIGHT,
               }}
               image={{
                 ...(image || graphicsData.imageFallback.data),
@@ -90,7 +92,6 @@ export function BlogContent({ posts }: BlogContentProps) {
           )
         })}
       </CardGrid>
-      <Pagination pageCount={pageCount} currentPage={currentPage} />
-    </section>
+    </FilterContainer>
   )
 }

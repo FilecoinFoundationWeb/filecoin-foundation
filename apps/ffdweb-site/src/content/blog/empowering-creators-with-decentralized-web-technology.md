@@ -12,7 +12,7 @@ description: "Filecoin Foundation for the Decentralized Web (FFDW) started
 image:
   src: /assets/images/181023-grayarea.png
 seo:
-  description: ""
+  description: "FFDW partners with Gray Area to launch DWeb for Creators, a new curriculum helping artists and creators leverage decentralized web technologies in their creative practices."
 ---
 
 **_New Gray Area Courses to Help Creators Leverage Decentralized Web Technologies_**

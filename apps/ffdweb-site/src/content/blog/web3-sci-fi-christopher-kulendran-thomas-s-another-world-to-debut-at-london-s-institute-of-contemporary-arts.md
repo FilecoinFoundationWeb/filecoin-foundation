@@ -15,7 +15,7 @@ updated-on: "2023-04-21T07:18:36.074Z"
 created-on: "2023-04-21T07:16:15.905Z"
 published-on: "2023-04-21T08:01:04.314Z"
 seo:
-  description: ""
+  description: "Artist Christopher Kulendran Thomas debuts 'Another World' at ICA London, exploring a post-nation-state future through AI and decentralized web technologies."
 ---
 
 _In his latest exhibition, internationally renowned artist Christopher Kulendran Thomas explores a vision of a future beyond nation-states, based on a new internet built and owned by its users_

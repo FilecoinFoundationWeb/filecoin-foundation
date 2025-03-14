@@ -8,7 +8,7 @@ description: ""
 image:
   src: /assets/images/091223-bl4sg-header.png
 seo:
-  description: ""
+  description: "Meet the inaugural International Affiliated Scholars cohort at USF's Blockchain Law for Social Good Center, exploring legal and policy implications of blockchain technology."
 ---
 
 *New Program Hosted by the Blockchain Law for Social Good Center at the University of San Francisco School of Law* 

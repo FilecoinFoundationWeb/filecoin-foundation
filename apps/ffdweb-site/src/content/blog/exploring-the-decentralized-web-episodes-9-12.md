@@ -12,7 +12,7 @@ image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423824686a077ccd90a61e_0-ghsro14ivrabstg6.png
 seo:
-  description: ""
+  description: "The final episodes of FFDW's documentary series examine Web3 advertising models, DAOs, the creator economy, and how decentralized technology shapes the future internet."
 ---
 
 _[Exploring the Decentralized Web](https://www.youtube.com/watch?v=P0yfvedPY94&list=PL37YlBYJT0nmfqDnbov6lKHUyZvRfQjap&index=1) is a 12-part documentary series produced by Filecoin Foundation for the Decentralized Web (FFDW). These videos, featuring leaders and visionaries from top projects across the space, explore the emergence and impact of decentralized technology._

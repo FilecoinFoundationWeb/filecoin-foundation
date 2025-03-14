@@ -14,7 +14,7 @@ image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423837922f062c19150fda_1-sqxvnk6dltsa3a9ec1fbyg.png
 seo:
-  description: ""
+  description: "FFDW supports Harvard's Library Innovation Lab in exploring decentralized technologies to preserve digital information and combat linkrot in academic resources."
 ---
 
 _Through Democratizing Open Knowledge Project, Harvard will Explore How Libraries Can Use Decentralized Technologies For Cultural Preservation and Self-Governance_

@@ -13,7 +13,7 @@ image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423829fcf3ec16737f20d9_hrdag.png
 seo:
-  description: ""
+  description: "FFDW partners with HRDAG to advance decentralized storage solutions for human rights organizations, supporting data preservation and analysis for justice worldwide."
 ---
 
 Collaboration will support outreach and training to accelerate market research for and adoption of decentralized web technologies

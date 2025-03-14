@@ -8,7 +8,7 @@ updated-on: "2023-04-21T07:15:40.535Z"
 created-on: "2023-04-21T07:15:40.535Z"
 published-on: "2023-04-21T08:01:04.314Z"
 seo:
-  description: ""
+  description: "Explore how HRDAG uses Filecoin to securely preserve human rights data, ensuring vital information remains accessible and protected from censorship through decentralized storage."
 category: "technology"
 ---
 
