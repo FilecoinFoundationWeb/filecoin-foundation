@@ -20,4 +20,4 @@ FFDW actively collaborates with other groups across the decentralized web ecosys
 
 ## Where can I find updates on the progress on FFDW projects?
 
-Check out the [Projects](/projects) page. Additionally, updates can be found on our blog and across social media channels: [X](https://twitter.com/ffdweb), [YouTube](https://www.youtube.com/channel/UCbj3Hck5cwKURkZKHjg_MKQ), and [LinkedIn](https://www.linkedin.com/company/filecoin-foundation-for-the-decentralized-web/).
+Check out the [Projects](/projects) page. Additionally, updates can be found on our blog and across social media channels: [BlueSky](https://bsky.app/profile/ffdweb.org), [X](https://twitter.com/ffdweb), [YouTube](https://www.youtube.com/channel/UCbj3Hck5cwKURkZKHjg_MKQ), and [LinkedIn](https://www.linkedin.com/company/filecoin-foundation-for-the-decentralized-web/).
