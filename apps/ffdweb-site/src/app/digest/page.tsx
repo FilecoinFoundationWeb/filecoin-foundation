@@ -89,7 +89,7 @@ export default async function Digest() {
         kicker="Social Media"
         title="Follow us and join the conversation."
       >
-        <div className="social-secondary">
+        <div className="text-brand-primary-300">
           <Social linksWithIcons={socialLinksWithIcons} size={40} />
         </div>
       </CTASection>

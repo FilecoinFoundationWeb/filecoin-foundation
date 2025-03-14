@@ -57,7 +57,7 @@ export function ShareArticle({
                 href={href}
                 rel="noopener noreferrer"
                 className={clsx(
-                  'social focus:brand-outline',
+                  'social-link focus:brand-outline',
                   TOUCH_TARGET.touchAreaPadding,
                 )}
               >

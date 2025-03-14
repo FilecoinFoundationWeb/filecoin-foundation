@@ -27,14 +27,14 @@ export function Social({ linksWithIcons, size = 32 }: SocialProps) {
     >
       {linksWithIcons.map(({ label, href, icon }) => {
         return (
-          <li key={label} className="social inline-flex">
+          <li key={label} className="inline-flex">
             <a
               aria-label={`Go to ${label}`}
               href={href}
               rel="noopener noreferrer"
               title={`Go to ${label}`}
               className={clsx(
-                'focus:brand-outline',
+                'social-link focus:brand-outline',
                 TOUCH_TARGET.touchAreaPadding,
               )}
             >

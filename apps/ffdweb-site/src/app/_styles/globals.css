@@ -105,6 +105,11 @@
 }
 
 @layer components {
+  /* SHARED */
+  .social-link {
+    @apply hover:text-brand-primary-400;
+  }
+
   /* AVATAR */
   .avatar-background {
     @apply bg-brand-primary-800; /* CHECK */
@@ -272,15 +277,6 @@
   /* SLIDE OVER */
   .slide-over-panel {
     @apply bg-neutral-950;
-  }
-
-  /* SOCIAL */
-  .social {
-    @apply hover:text-brand-primary-400;
-  }
-
-  .social-secondary {
-    @apply text-brand-primary-300;
   }
 
   /* TAGS */
