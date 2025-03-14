@@ -52,7 +52,7 @@ export default async function Project(props: ProjectProps) {
             />
           </div>
 
-          <div className="mt-8 flex gap-12">
+          <div className="mt-8 inline-flex flex-col gap-8 sm:flex-row sm:gap-12">
             {externalLink && (
               <CTALink href={externalLink}>Visit Project Website</CTALink>
             )}
