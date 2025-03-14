@@ -40,7 +40,7 @@ export default async function Digest() {
 
       <PageSection
         kicker="Issue 1 | May 2024"
-        title="Cognitive liberty in digital spaces and code as free speech"
+        title="DWeb Digest: Inaugural Edition"
       >
         <CardGrid cols="smTwo">
           {articles.map((article) => {
