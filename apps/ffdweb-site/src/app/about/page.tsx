@@ -71,7 +71,7 @@ export default function About() {
           ))}
         </IconCardGrid>
 
-        <CTALink href={PATHS.PROJECTS.path}>View all projects</CTALink>
+        <CTALink href={PATHS.PROJECTS.path}>View All Projects</CTALink>
       </PageSection>
 
       <PageSection
