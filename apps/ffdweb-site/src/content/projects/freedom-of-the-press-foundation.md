@@ -3,6 +3,7 @@ title: Freedom of the Press Foundation
 created-on: 2023-06-30T16:00:43.492Z
 updated-on: 2023-06-30T16:00:43.512Z
 published-on: 2023-06-30T16:00:43.528Z
+category: human-rights
 description:
   The three-year FFDW award supports infrastructure, user experience, and
   security enhancements for tools used by journalists around the globe. It’s

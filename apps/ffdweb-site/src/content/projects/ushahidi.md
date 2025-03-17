@@ -3,6 +3,7 @@ title: Ushahidi
 created-on: 2024-02-23T23:59:13.809Z
 updated-on: 2024-02-23T23:59:13.817Z
 published-on: 2024-02-23T23:59:13.828Z
+category: human-rights
 description:
   "Ushahidi's Election Data Resilience Initiative aims to make election
   data accessible and verifiable. This project plans to create a permanent

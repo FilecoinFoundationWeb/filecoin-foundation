@@ -3,6 +3,7 @@ title: Guardian Project
 created-on: 2023-06-30T16:02:19.861Z
 updated-on: 2023-06-30T16:02:19.879Z
 published-on: 2023-06-30T16:02:19.892Z
+category: dweb-research-development
 description:
   This project between FFDW and the Guardian Project is aimed at breaking
   down the notion that centralization is a necessary requirement for providing

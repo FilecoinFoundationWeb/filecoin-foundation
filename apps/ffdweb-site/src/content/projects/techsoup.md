@@ -3,6 +3,7 @@ title: TechSoup
 updated-on: "2023-06-28T18:54:51.524Z"
 created-on: "2023-06-28T18:54:51.524Z"
 published-on: "2023-10-20T14:07:03.064Z"
+category: education
 description: >-
   Working with a network of partners, TechSoup supports change makers worldwide
   as they use digital solutions to achieve their own goals. With FFDW’s award,

@@ -3,6 +3,7 @@ title: Starling Lab
 created-on: "2023-06-28T18:54:25.306Z"
 updated-on: "2023-06-28T18:54:25.306Z"
 published-on: "2023-10-20T14:07:03.064Z"
+category: human-rights
 description: >-
   FFDW’s commitment to Starling Lab will be used to support their work to
   prototype tools and principles to bring historians, legal experts, and
