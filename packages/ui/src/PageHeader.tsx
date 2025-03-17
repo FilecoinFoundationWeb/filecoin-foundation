@@ -109,17 +109,12 @@ function Description({
   description: PageHeaderProps['description']
 }) {
   if (typeof description === 'string') {
-    const text = description as DescriptionTextType
-    return <DescriptionText>{text}</DescriptionText>
+    return <DescriptionText>{description}</DescriptionText>
   }
 
-  if (typeof description === 'object') {
-    const { text, isClamped } = description as PageHeaderDescriptionProps
+  const { text, isClamped } = description as PageHeaderDescriptionProps
 
-    return (
-      <p className={clsx(isClamped && 'line-clamp-3 text-ellipsis')}>{text}</p>
-    )
-  }
-
-  return null
+  return (
+    <p className={clsx(isClamped && 'line-clamp-3 text-ellipsis')}>{text}</p>
+  )
 }
