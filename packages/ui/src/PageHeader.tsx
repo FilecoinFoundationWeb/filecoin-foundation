@@ -51,7 +51,7 @@ export function PageHeader({
           {isFeatured && <TagLabel variant="secondary">Featured</TagLabel>}
           <PageHeader.Title>{title}</PageHeader.Title>
           {metaData && <Meta metaData={metaData} />}
-          {description && <Description description={description} />}
+          <Description description={description} />
           {children}
         </div>
         {image && <PageHeader.Image image={image} />}
@@ -108,13 +108,17 @@ function Description({
 }: {
   description: PageHeaderProps['description']
 }) {
-  if (typeof description === 'string') {
-    return <DescriptionText>{description}</DescriptionText>
+  if (!description) return null
+
+  if (typeof description === 'object' && 'text' in description) {
+    return (
+      <p
+        className={clsx(description.isClamped && 'line-clamp-3 text-ellipsis')}
+      >
+        {description.text}
+      </p>
+    )
   }
 
-  const { text, isClamped } = description as PageHeaderDescriptionProps
-
-  return (
-    <p className={clsx(isClamped && 'line-clamp-3 text-ellipsis')}>{text}</p>
-  )
+  return <DescriptionText>{description}</DescriptionText>
 }
