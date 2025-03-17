@@ -15,7 +15,7 @@ import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
-import { getBlogPostData } from '../utils/getBlogPostData'
+import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -55,6 +55,11 @@ export default async function BlogPost(props: BlogPostProps) {
       </ArticleLayout>
     </PageLayout>
   )
+}
+
+export async function generateStaticParams() {
+  const entries = await getBlogPostsData()
+  return entries.map(({ slug }) => ({ slug }))
 }
 
 export async function generateMetadata(props: BlogPostProps) {
