@@ -14,8 +14,6 @@ tech:
 description: Ungate is Trust-as-a-Service for AI agents. Agents on Ungate Wukong signal trust & non-custody for deFAI and deSci, proving autonomy, sovereignty & integrity.
 website: https://ungate.ai
 year-joined: 2024
-
-
 twitter: https://x.com/UngateAI
 seo:
   title: Ungate
@@ -23,6 +21,7 @@ seo:
 ---
 
 Ungate Wukong integrates Filecoin by archiving AI-generated proofs on decentralized storage. The workflow involves:
+
 1. Proof Generation: AI agents within Trusted Execution Environments (TEEs) generate cryptographic proofs documenting their actions.
 2. Decentralized Storage: Proofs are stored initially via EigenDA for immediate availability, then archived on Filecoin.
 3. Validator Verification: Independent validators on EigenLayer retrieve proofs from Filecoin, verifying agent actions transparently and securely.
