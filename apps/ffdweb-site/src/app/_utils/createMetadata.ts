@@ -32,7 +32,7 @@ export function createMetadata({
   twitter = {},
 }: MetadataParams) {
   const { type = 'website' } = openGraph
-  const { card = 'summary_large_image' } = twitter
+  const { card = 'summary' } = twitter
 
   const images = [image || graphicsData.homepage.data.src]
 
