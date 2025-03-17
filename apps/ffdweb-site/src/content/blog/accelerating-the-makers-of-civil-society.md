@@ -3,7 +3,7 @@ title: Accelerating the Makers of Civil Society
 created-on: 2023-05-18T10:01:01.297Z
 updated-on: 2023-05-18T10:01:00.000Z
 published-on: 2023-05-18T10:01:00.000Z
-category: impact
+category: projects
 description: ""
 image:
   src: /assets/images/051723-techsoup.png

@@ -3,7 +3,7 @@ title: FFDW and WITNESS Collaborate to Preserve Authentic Human Rights Records
 created-on: "2023-04-21T07:15:59.414Z"
 updated-on: "2023-04-21T07:18:25.714Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: impact
+category: projects
 description: >-
   FFDW’s commitment to WITNESS will support the creation, authentication, and
   preservation of trusted documentation

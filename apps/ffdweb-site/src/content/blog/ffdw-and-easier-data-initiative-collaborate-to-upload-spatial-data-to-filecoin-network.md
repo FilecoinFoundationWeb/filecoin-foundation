@@ -5,7 +5,7 @@ title: >-
 created-on: "2023-04-21T07:15:52.152Z"
 updated-on: "2023-04-21T07:15:52.152Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: impact
+category: projects
 description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) is excited to announce
   our collaboration with the EASIER Data Initiative at the University of

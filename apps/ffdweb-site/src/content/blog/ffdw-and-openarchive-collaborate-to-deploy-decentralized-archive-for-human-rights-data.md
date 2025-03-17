@@ -5,7 +5,7 @@ title: >-
 created-on: "2023-04-21T07:15:57.492Z"
 updated-on: "2023-04-21T07:18:24.468Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: impact
+category: projects
 description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our
   award to OpenArchive, a nonprofit dedicated to advancing human rights by
