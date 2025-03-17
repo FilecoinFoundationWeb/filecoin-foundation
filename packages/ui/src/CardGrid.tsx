@@ -30,7 +30,7 @@ const extendedGridStyles: Record<GridColumnConfig, string> = {
 export function CardGrid({
   cols,
   hasGridAutoRows = true,
-  as: Tag = 'ul',
+  as: Tag = 'section',
   children,
 }: CardGridProps) {
   const autoRowsStyles = hasGridAutoRows && 'auto-rows-fr'

@@ -66,11 +66,13 @@ export function Card({
   cta,
   image,
   borderColor = 'base',
-  as: Tag = 'li',
+  as: Tag = 'article',
   avatars,
 }: CardProps) {
   return (
     <Tag
+      aria-label={title}
+      title={title}
       className={clsx(
         'card relative h-full border backdrop-blur-xl',
         borderStyles[borderColor],
