@@ -4,7 +4,7 @@ created-on: 2023-06-28T18:54:25.306Z
 updated-on: 2023-06-28T18:54:25.306Z
 published-on: 2023-10-20T14:07:03.064Z
 category: human-rights
-description: FFDW’s commitment to Starling Lab support stheir work to prototype
+description: FFDW’s commitment to Starling Lab supports their work to prototype
   tools and principles to bring historians, legal experts, and journalists into
   the new era of Web3. Our partnership supports the development of open-source
   tools, best practices, and case studies to verifiably document human and civil
