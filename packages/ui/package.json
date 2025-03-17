@@ -30,6 +30,7 @@
     "./KeyMemberCard": "./src/KeyMemberCard.tsx",
     "./MarkdownPage": "./src/MarkdownPage.tsx",
     "./Meta": "./src/Meta.tsx",
+    "./NotFoundAnalytics": "./src/NotFoundAnalytics.tsx",
     "./NotificationDialog": "./src/NotificationDialog/NotificationDialog.tsx",
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",

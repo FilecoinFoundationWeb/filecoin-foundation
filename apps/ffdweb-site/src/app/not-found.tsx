@@ -1,10 +1,12 @@
 import { ErrorMessage } from '@filecoin-foundation/ui/ErrorMessage'
+import { NotFoundAnalytics } from '@filecoin-foundation/ui/NotFoundAnalytics'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 export default function NotFound() {
   return (
     <>
+      <NotFoundAnalytics />
       <ErrorMessage
         kicker="404"
         title="Page Not Found"

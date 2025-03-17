@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import PlausibleProvider from 'next-plausible'
 
 import '@/styles/globals.css'
 
@@ -23,5 +24,14 @@ type RootLayoutProps = {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  return <SiteLayout>{children}</SiteLayout>
+  return (
+    <PlausibleProvider
+      trackOutboundLinks
+      hash
+      trackFileDownloads
+      domain="ffdweb.org"
+    >
+      <SiteLayout>{children}</SiteLayout>
+    </PlausibleProvider>
+  )
 }

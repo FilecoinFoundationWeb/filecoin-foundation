@@ -1,8 +1,7 @@
 import { ErrorMessage } from '@filecoin-foundation/ui/ErrorMessage'
+import { NotFoundAnalytics } from '@filecoin-foundation/ui/NotFoundAnalytics'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
-import { NotFoundAnalytics } from './not-found-analytics'
 
 export default function NotFound() {
   return (
