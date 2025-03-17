@@ -3,7 +3,7 @@ title: Announcing the Social Impact Summit 2024
 created-on: 2023-12-12T18:49:11.746Z
 updated-on: 2023-12-12T18:49:11.759Z
 published-on: 2023-12-12T18:49:11.767Z
-category: impact
+category: projects
 description: ""
 image:
   src: /assets/images/eventbrite-header.png

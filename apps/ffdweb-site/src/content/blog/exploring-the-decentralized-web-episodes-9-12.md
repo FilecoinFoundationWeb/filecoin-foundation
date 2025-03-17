@@ -3,7 +3,7 @@ title: Exploring the Decentralized Web (Episodes 9–12)
 created-on: "2023-04-21T07:15:48.576Z"
 updated-on: "2023-04-21T07:18:20.707Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: "education"
+category: interviews
 description: >-
   Decentralized web technology is enabling web developers and users alike to
   solve some of the issues that arose during the Web2 era, such as a lack of
