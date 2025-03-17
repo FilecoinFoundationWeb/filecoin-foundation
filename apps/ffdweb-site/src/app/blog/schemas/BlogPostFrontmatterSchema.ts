@@ -14,6 +14,5 @@ const CategorySchema = createEnumSchema(validCategoryIds)
 export const BlogPostFrontmatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: CategorySchema,
-  description: z.string(),
   content: z.string(),
 }).strict()
