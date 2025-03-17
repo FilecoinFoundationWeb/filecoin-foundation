@@ -34,7 +34,7 @@ export function createMetadata({
   const { type = 'website' } = openGraph
   const { card = 'summary_large_image' } = twitter
 
-  const images = [image || graphicsData.imageFallback.data.src]
+  const images = [image || graphicsData.homepage.data.src]
 
   return {
     title,
