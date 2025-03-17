@@ -63,15 +63,17 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: DigestArticleProps) {
   const { slug } = await props.params
-  const data = await getDigestArticleData(slug)
+  const { image, seo } = await getDigestArticleData(slug)
 
   return createMetadata({
-    title: { absolute: `${data.title} | ${ORGANIZATION_NAME_SHORT}` },
-    description: data.seo.description,
     path: `${PATHS.DIGEST.path}/${slug}`,
-    image: data.image?.src,
+    title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
+    description: seo.description,
+    image: seo.image || image?.src,
     openGraph: {
       type: 'article',
+      ...seo.openGraph,
     },
+    twitter: seo.twitter,
   })
 }

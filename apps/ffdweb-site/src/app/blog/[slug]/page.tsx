@@ -64,15 +64,17 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: BlogPostProps) {
   const { slug } = await props.params
-  const { title, description, image } = await getBlogPostData(slug)
+  const { image, seo } = await getBlogPostData(slug)
 
   return createMetadata({
-    title: { absolute: `${title} | ${ORGANIZATION_NAME_SHORT}` },
-    description,
     path: `${PATHS.BLOG.path}/${slug}`,
-    image: image?.src,
+    title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
+    description: seo.description,
+    image: seo.image || image?.src,
     openGraph: {
       type: 'article',
+      ...seo.openGraph,
     },
+    twitter: seo.twitter,
   })
 }

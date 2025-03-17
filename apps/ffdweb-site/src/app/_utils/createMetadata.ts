@@ -10,16 +10,24 @@ import {
 
 import { graphicsData } from '@/data/graphicsData'
 
+type SharedSocialMetadata = {
+  title?: string
+  description?: string
+  image?: string
+}
+
 export type MetadataParams = {
   path: `/${string}`
   title: string | AbsoluteString
   description: string
   image?: string
-  openGraph?: {
+  openGraph?: SharedSocialMetadata & {
     type?: 'website' | 'article'
   }
-  twitter?: {
-    card?: 'summary' | 'summary_large_image'
+  twitter?: SharedSocialMetadata & {
+    card?: 'summary' | 'summary_large_image' | 'player'
+    site?: string
+    creator?: string
   }
 }
 
@@ -31,29 +39,42 @@ export function createMetadata({
   openGraph = {},
   twitter = {},
 }: MetadataParams) {
-  const { type = 'website' } = openGraph
-  const { card = 'summary' } = twitter
+  const imageArray = [image || graphicsData.homepage.data.src]
 
-  const images = [image || graphicsData.homepage.data.src]
+  const {
+    type = 'website',
+    title: openGraphTitle = title,
+    description: openGraphDescription = description,
+    image: openGraphImage = imageArray,
+  } = openGraph
+
+  const {
+    card = 'summary',
+    title: twitterTitle = title,
+    description: twitterDescription = description,
+    site = FFDW_URLS.social.twitter.handle,
+    creator = FFDW_URLS.social.twitter.handle,
+    image: twitterImage = imageArray,
+  } = twitter
 
   return {
     title,
     description,
     openGraph: {
       type,
-      title,
-      description,
-      images,
+      title: openGraphTitle,
+      description: openGraphDescription,
+      images: openGraphImage,
       siteName: ORGANIZATION_NAME,
       url: BASE_URL,
     },
     twitter: {
-      title,
-      description,
+      title: twitterTitle,
+      description: twitterDescription,
       card,
-      site: FFDW_URLS.social.twitter.handle,
-      creator: FFDW_URLS.social.twitter.handle,
-      images,
+      site,
+      creator,
+      images: twitterImage,
     },
     alternates: {
       canonical: path,

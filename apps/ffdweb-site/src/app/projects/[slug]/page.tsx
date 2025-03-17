@@ -90,12 +90,14 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: ProjectProps) {
   const { slug } = await props.params
-  const { title, description, image } = await getProjectData(slug)
+  const { image, seo } = await getProjectData(slug)
 
   return createMetadata({
-    title: { absolute: `${title} | ${ORGANIZATION_NAME_SHORT}` },
-    description,
     path: `${PATHS.PROJECTS.path}/${slug}`,
-    image: image?.src,
+    title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
+    description: seo.description,
+    image: seo.image || image?.src,
+    openGraph: seo.openGraph,
+    twitter: seo.twitter,
   })
 }
