@@ -387,6 +387,22 @@ collections:
       - *created_on
       - *updated_on
       - *published_on
+      - name: "category"
+        label: "Category"
+        widget: "select"
+        options:
+          - label: "Cultural Preservation"
+            value: "cultural-preservation"
+          - label: "DWeb Research and Development"
+            value: "dweb-research-development"
+          - label: "Education"
+            value: "education"
+          - label: "Government Datasets and Policy"
+            value: "government-datasets-policy"
+          - label: "Human Rights"
+            value: "human-rights"
+          - label: "Science and Environment"
+            value: "science-environment"
       - name: "description"
         label: "Description"
         widget: "text"

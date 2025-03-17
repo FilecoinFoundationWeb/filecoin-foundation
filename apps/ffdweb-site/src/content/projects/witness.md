@@ -3,6 +3,7 @@ title: WITNESS
 created-on: 2023-06-30T16:56:57.007Z
 updated-on: 2023-06-30T16:56:57.025Z
 published-on: 2023-06-30T16:56:57.035Z
+category: human-rights
 description:
   WITNESS is an international nonprofit organization that helps people
   use video and technology to protect and defend human rights. With the support

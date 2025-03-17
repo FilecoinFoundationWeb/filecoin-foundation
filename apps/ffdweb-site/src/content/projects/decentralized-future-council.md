@@ -3,6 +3,7 @@ title: Decentralized Future Council
 created-on: 2023-06-30T15:07:12.654Z
 updated-on: 2023-06-30T15:07:12.672Z
 published-on: 2023-06-30T15:07:12.692Z
+category: dweb-research-development
 description:
   The Decentralized Future Council (DFC) is a collaboration between the
   Internet Education Foundation and FFDW. DFC is dedicated to raising awareness
