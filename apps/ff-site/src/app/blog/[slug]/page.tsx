@@ -19,7 +19,6 @@ import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
-
 type BlogPostProps = {
   params: Promise<SlugParams>
 }
