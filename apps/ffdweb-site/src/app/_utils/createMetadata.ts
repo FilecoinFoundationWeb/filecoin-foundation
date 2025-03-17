@@ -2,7 +2,11 @@ import type { AbsoluteString } from 'next/dist/lib/metadata/types/metadata-types
 
 import type { Metadata } from 'next'
 
-import { FFDW_URLS } from '@/constants/siteMetadata'
+import {
+  BASE_URL,
+  FFDW_URLS,
+  ORGANIZATION_NAME,
+} from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -16,8 +20,6 @@ export type MetadataParams = {
   }
   twitter?: {
     card?: 'summary' | 'summary_large_image'
-    site?: string
-    creator?: string
   }
 }
 
@@ -30,12 +32,7 @@ export function createMetadata({
   twitter = {},
 }: MetadataParams) {
   const { type = 'website' } = openGraph
-
-  const {
-    card = 'summary_large_image',
-    site = FFDW_URLS.social.twitter.handle,
-    creator = FFDW_URLS.social.twitter.handle,
-  } = twitter
+  const { card = 'summary_large_image' } = twitter
 
   const images = [image || graphicsData.imageFallback.data.src]
 
@@ -47,13 +44,15 @@ export function createMetadata({
       title,
       description,
       images,
+      siteName: ORGANIZATION_NAME,
+      url: BASE_URL,
     },
     twitter: {
       title,
       description,
       card,
-      site,
-      creator,
+      site: FFDW_URLS.social.twitter.handle,
+      creator: FFDW_URLS.social.twitter.handle,
       images,
     },
     alternates: {
