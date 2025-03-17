@@ -12,7 +12,7 @@ description: OpenArchive is a nonprofit dedicated to advancing human rights by
 image:
   src: /assets/images/partnerlogo_openarchive.png
 featured-content: https://ffdweb.org/blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data
-external-link: https://openarchive.org/
+website: https://openarchive.org/
 seo:
   description: "OpenArchive partners with FFDW to enable secure, decentralized preservation of human rights media through their Save app, leveraging IPFS and Filecoin for mobile-first documentation."
 ---

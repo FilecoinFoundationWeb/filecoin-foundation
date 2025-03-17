@@ -14,7 +14,7 @@ description:
   and in what areas a course correction is needed.
 image:
   src: /assets/images/web-foundation-hi-res-logo.jpeg
-external-link: https://www.webfoundation.org/
+website: https://www.webfoundation.org/
 active-partnership: true
 seo:
   description: "The Web Foundation advances Tim Berners-Lee's vision of an open web through the Web Index project, monitoring emerging issues and ensuring a safe digital future."

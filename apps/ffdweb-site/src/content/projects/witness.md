@@ -13,7 +13,7 @@ description:
   they live and work.
 image:
   src: /assets/images/partnerlogo_witness.png
-external-link: https://www.witness.org/
+website: https://www.witness.org/
 featured-content: https://ffdweb.org/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records
 seo:
   description: "WITNESS empowers activists and civic journalists to document human rights through video technology, exploring decentralized web solutions for preserving crucial evidence."

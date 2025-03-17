@@ -11,7 +11,7 @@ description:
   public and help ensure it cannot be altered. "
 image:
   src: /assets/images/ushahidi-logo_black_1x-1-.png
-external-link: https://www.ushahidi.com/
+website: https://www.ushahidi.com/
 seo:
   description: "Ushahidi's Election Data Resilience Initiative uses Filecoin to create a permanent, verifiable repository of election data for researchers and policymakers."
 ---

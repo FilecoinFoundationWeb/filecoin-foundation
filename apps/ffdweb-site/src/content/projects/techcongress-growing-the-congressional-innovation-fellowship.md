@@ -11,7 +11,7 @@ description:
 image:
   src: /assets/images/partnerlogo_techcongress.png
 featured-content: https://ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill/
-external-link: https://www.youtube.com/watch?v=biI1sR859xE&t=1s
+website: https://www.youtube.com/watch?v=biI1sR859xE&t=1s
 seo:
   description: "TechCongress bridges the tech-policy gap by placing technologists as advisors to Congress, helping legislators make informed decisions on technology policy issues."
 ---

@@ -13,7 +13,7 @@ description: Shift Collective is a nonprofit that helps cultural memory
   non-extractive, affordable, and accessible long-term, decentralized storage.
 image:
   src: /assets/images/partnerlogo_shift.png
-external-link: https://www.shiftcollective.us/ffdw
+website: https://www.shiftcollective.us/ffdw
 seo:
   description: "Shift Collective partners with cultural memory organizations to build community-centered decentralized storage solutions, making archives more accessible and sustainable."
 ---

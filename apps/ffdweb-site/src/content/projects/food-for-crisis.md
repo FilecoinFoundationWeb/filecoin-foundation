@@ -17,7 +17,7 @@ description:
   traditional bank transfers, e-vouchers, and mobile money).
 image:
   src: /assets/images/food-for-crisis-logo.svg
-external-link: www.gbbc.io/food-for-crisis
+website: www.gbbc.io/food-for-crisis
 seo:
   description: "Food for Crisis leverages blockchain technology to trace humanitarian aid from donation to beneficiary, ensuring transparency while integrating with local payment systems."
 ---

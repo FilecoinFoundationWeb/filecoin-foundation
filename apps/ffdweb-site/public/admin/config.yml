@@ -395,8 +395,8 @@ collections:
         widget: "markdown"
         required: false
         hint: "Optional featured content for this project on fil.org or ffdweb.org."
-      - name: "external-link"
-        label: "External Link"
+      - name: "website"
+        label: "Website"
         widget: "string"
         hint: "Link to the project's website or repository."
       - name: "active-partnership"

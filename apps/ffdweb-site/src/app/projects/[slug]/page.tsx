@@ -27,7 +27,7 @@ type ProjectProps = {
 export default async function Project(props: ProjectProps) {
   const { slug } = await props.params
   const data = await getProjectData(slug)
-  const { title, image, description, externalLink, featuredContent } = data
+  const { title, image, description, website, featuredContent } = data
 
   return (
     <PageLayout gap="large">
@@ -55,9 +55,7 @@ export default async function Project(props: ProjectProps) {
           </div>
 
           <div className="mt-8 inline-flex flex-col gap-8 sm:flex-row sm:gap-12">
-            {externalLink && (
-              <CTALink href={externalLink}>Visit Project Website</CTALink>
-            )}
+            <CTALink href={website}>Visit Project Website</CTALink>
 
             {featuredContent && (
               <CTALink href={featuredContent} icon={Newspaper}>

@@ -16,7 +16,7 @@ description:
 image:
   src: /assets/images/partnerlogo_gaurdian.png
 featured-content: https://ffdweb.org/blog/the-future-of-decentralized-apps-a-q-a-with-guardian-project
-external-link: https://guardianproject.info/
+website: https://guardianproject.info/
 seo:
   description: "FFDW and Guardian Project collaborate to integrate decentralized storage into ProofMode for secure content verification and F-Droid for open-source app distribution."
 ---
