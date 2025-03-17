@@ -9,7 +9,7 @@ description:
   supporting the set of maintainers governing and developing the project.
 image:
   src: /assets/images/rust-foundation-logo-new-black.png
-external-link: https://foundation.rust-lang.org/
+website: https://foundation.rust-lang.org/
 seo:
   description: "The Rust Foundation stewards the Rust programming language and ecosystem, supporting maintainers and developers while fostering the growth of this secure systems programming language."
 ---
