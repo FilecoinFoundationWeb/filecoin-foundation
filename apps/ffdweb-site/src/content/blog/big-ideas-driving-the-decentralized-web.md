@@ -1,5 +1,8 @@
 ---
 title: "Big Ideas Driving the Decentralized Web"
+updated-on: "2023-04-21T07:18:16.763Z"
+created-on: "2023-04-21T07:15:36.863Z"
+published-on: "2023-04-21T08:01:04.314Z"
 category: technology
 description: >-
   We are at a fork in the road when it comes to building an internet that
@@ -12,9 +15,6 @@ description: >-
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423818a6ec41950428fad8_0928-ffdw-glossary.png
-updated-on: "2023-04-21T07:18:16.763Z"
-created-on: "2023-04-21T07:15:36.863Z"
-published-on: "2023-04-21T08:01:04.314Z"
 seo:
   description: "Explore key concepts shaping Web3: decentralization, P2P networks, open source, and distributed systems. Learn how these technologies are building a more secure and open internet."
 ---

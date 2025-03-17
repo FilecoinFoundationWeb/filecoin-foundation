@@ -2,18 +2,18 @@
 title: >-
   Web3 Sci-Fi: Christopher Kulendran Thomas's 'Another World' to Debut at
   London's Institute of Contemporary Arts
+updated-on: "2023-04-21T07:18:36.074Z"
+created-on: "2023-04-21T07:16:15.905Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: projects
 description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) and the Institute of
   Contemporary Arts (ICA) London today announced that Christopher Kulendran
   Thomas's latest exhibition, Another World, will debut at the ICA on October
   11.
-category: projects
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383fef619d8564b54739_ckt-ffdw-ica.png
-updated-on: "2023-04-21T07:18:36.074Z"
-created-on: "2023-04-21T07:16:15.905Z"
-published-on: "2023-04-21T08:01:04.314Z"
 seo:
   description: "Artist Christopher Kulendran Thomas debuts 'Another World' at ICA London, exploring a post-nation-state future through AI and decentralized web technologies."
 ---
