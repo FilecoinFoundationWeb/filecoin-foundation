@@ -96,7 +96,7 @@ export async function generateMetadata(props: ProjectProps) {
     path: `${PATHS.PROJECTS.path}/${slug}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
-    image: seo.image || image?.src,
+    image: seo.image || image?.src || graphicsData.projects.data.src,
     openGraph: seo.openGraph,
     twitter: seo.twitter,
   })

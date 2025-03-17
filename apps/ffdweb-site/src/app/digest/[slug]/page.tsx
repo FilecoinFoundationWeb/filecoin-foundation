@@ -69,7 +69,7 @@ export async function generateMetadata(props: DigestArticleProps) {
     path: `${PATHS.DIGEST.path}/${slug}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
-    image: seo.image || image?.src,
+    image: seo.image || image?.src || graphicsData.digest.data.src,
     openGraph: {
       type: 'article',
       ...seo.openGraph,
