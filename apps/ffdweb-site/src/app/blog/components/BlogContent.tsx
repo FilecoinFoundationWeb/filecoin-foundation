@@ -11,6 +11,7 @@ import {
   SEARCH_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
+import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
@@ -32,10 +33,11 @@ type BlogContentProps = {
 export function BlogContent({ posts }: BlogContentProps) {
   const clientSearchParams = useSearchParams()
   const searchParams = Object.fromEntries(clientSearchParams.entries())
+  const sortedPosts = sortPostsByDateDesc(posts)
 
   const { searchQuery, searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
-    entries: posts,
+    entries: sortedPosts,
     searchBy: ['title', 'description'],
   })
 
