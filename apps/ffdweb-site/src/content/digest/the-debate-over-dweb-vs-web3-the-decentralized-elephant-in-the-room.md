@@ -10,7 +10,7 @@ image:
 authors:
   - first-name: Mai
     last-name: Ishikawa Sutton
-    company: Distributed.Press
+    company: DWeb Projects, COMPOST magazine, Hypha Worker Co-op
     image:
       src: /assets/headshots/Mai_Ishikawa_Sutton.webp
     # bio: "Mai Ishikawa Sutton is a senior organizer with DWeb projects, co-founder of Distributed.Press and COMPOST magazine, and contributor to Hypha Worker Co-op."
