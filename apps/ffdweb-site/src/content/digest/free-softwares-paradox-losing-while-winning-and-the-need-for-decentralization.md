@@ -11,7 +11,7 @@ image:
 authors:
   - first-name: Holmes
     last-name: Wilson
-    company: Fight for the Future
+    company: Fight for the Future, Quiet
     image:
       src: /assets/headshots/Holmes_Wilson.webp
     # bio: Holmes Wilson is a co-founder of Fight for the Future and Quiet, a decentralized alternative to Slack and Discord built on Tor and IPFS.
