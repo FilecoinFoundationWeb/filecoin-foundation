@@ -10,6 +10,7 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { Newspaper } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
+import { ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -21,6 +22,7 @@ import { CTALink } from '@/components/CTALink'
 import { getProjectData, getProjectsData } from '../utils/getProjectData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
+
 type ProjectProps = {
   params: Promise<SlugParams>
 }
@@ -91,7 +93,7 @@ export async function generateMetadata(props: ProjectProps) {
   const { title, description, image } = await getProjectData(slug)
 
   return createMetadata({
-    title: { absolute: `${title} | FFDW` },
+    title: { absolute: `${title} | ${ORGANIZATION_NAME_SHORT}` },
     description,
     path: `${PATHS.PROJECTS.path}/${slug}`,
     image: image?.src,
