@@ -7,7 +7,7 @@ description: >-
   Contemporary Arts (ICA) London today announced that Christopher Kulendran
   Thomas's latest exhibition, Another World, will debut at the ICA on October
   11.
-category: impact
+category: projects
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383fef619d8564b54739_ckt-ffdw-ica.png

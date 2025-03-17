@@ -3,7 +3,7 @@ title: Check out our Docuseries “Exploring the Decentralized Web”
 created-on: "2023-04-21T07:15:42.087Z"
 updated-on: "2023-04-21T07:18:17.975Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: "education"
+category: interviews
 description: >-
   We recently launched Exploring the Decentralized Web, a 12-part documentary
   series produced by Filecoin Foundation for the Decentralized Web (FFDW).

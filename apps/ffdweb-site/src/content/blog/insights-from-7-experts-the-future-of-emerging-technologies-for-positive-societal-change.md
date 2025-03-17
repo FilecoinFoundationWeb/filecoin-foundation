@@ -12,7 +12,7 @@ description: Artificial intelligence (AI) and decentralized technologies have
   advancements will improve financial access for all, elevate productivity,
   catalyze economic expansion, embolden individuals across artistic and
   scientific domains, and potentially tackle formidable global challenges.
-category: impact
+category: updates
 image:
   src: /assets/images/022124-sis.png
 seo:

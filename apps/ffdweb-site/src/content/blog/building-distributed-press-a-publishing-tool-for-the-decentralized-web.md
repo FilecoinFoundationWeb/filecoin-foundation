@@ -12,7 +12,7 @@ created-on: "2023-04-21T07:15:38.854Z"
 published-on: "2023-04-21T08:01:04.314Z"
 seo:
   description: ""
-category: "technology"
+category: projects
 ---
 
 **_FFDW works with Hypha Worker Co-operative and Sutty to foster decentralized web publishing tools that offer creators an alternative to centralized publishing platforms._**

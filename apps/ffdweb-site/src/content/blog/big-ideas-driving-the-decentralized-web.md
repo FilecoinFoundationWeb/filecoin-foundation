@@ -1,6 +1,6 @@
 ---
 title: "Big Ideas Driving the Decentralized Web"
-category: "education"
+category: technology
 description: >-
   We are at a fork in the road when it comes to building an internet that
   enhances trust, allows users to maintain privacy, incentivizes entrepreneurs

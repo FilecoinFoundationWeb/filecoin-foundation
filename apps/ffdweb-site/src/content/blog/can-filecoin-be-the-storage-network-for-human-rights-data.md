@@ -9,7 +9,7 @@ created-on: "2023-04-21T07:15:40.535Z"
 published-on: "2023-04-21T08:01:04.314Z"
 seo:
   description: "Explore how HRDAG uses Filecoin to securely preserve human rights data, ensuring vital information remains accessible and protected from censorship through decentralized storage."
-category: "technology"
+category: use-cases
 ---
 
 Every single day, human rights violations occur around the world. But unfortunately, those events go unnoticed by many, which makes accountability more challenging.
