@@ -398,8 +398,7 @@ collections:
       - name: "external-link"
         label: "External Link"
         widget: "string"
-        required: false
-        hint: "Optional link to the project's website or repository."
+        hint: "Link to the project's website or repository."
       - name: "active-partnership"
         label: "Active Partnership"
         widget: "boolean"
