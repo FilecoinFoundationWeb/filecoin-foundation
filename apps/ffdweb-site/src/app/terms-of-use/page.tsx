@@ -30,7 +30,7 @@ export default function TermsOfUse() {
 }
 
 export const metadata = createMetadata({
-  title: { absolute: TERMS_OF_USE_SEO.title },
+  title: TERMS_OF_USE_SEO.title,
   description: TERMS_OF_USE_SEO.description,
   path: PATHS.TERMS_OF_USE.path,
 })

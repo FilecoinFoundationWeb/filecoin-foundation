@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
 }
 
 export const metadata = createMetadata({
-  title: { absolute: PRIVACY_POLICY_SEO.title },
+  title: PRIVACY_POLICY_SEO.title,
   description: PRIVACY_POLICY_SEO.description,
   path: PATHS.PRIVACY_POLICY.path,
 })
