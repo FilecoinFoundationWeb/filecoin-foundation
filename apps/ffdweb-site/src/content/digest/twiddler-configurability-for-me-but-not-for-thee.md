@@ -1,5 +1,5 @@
 ---
-title: "Twiddler: Configurability for Me, But Not For Thee."
+title: "Twiddler: Configurability for Me, But Not For Thee"
 created-on: 2023-10-18T19:06:45.768Z
 updated-on: 2023-10-18T19:06:45.786Z
 published-on: 2023-10-18T19:06:45.797Z
