@@ -4,6 +4,7 @@ import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { Newspaper } from '@phosphor-icons/react/dist/ssr'
@@ -13,13 +14,13 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { CTALink } from '@/components/CTALink'
 
 import { getProjectData, getProjectsData } from '../utils/getProjectData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
-
 type ProjectProps = {
   params: Promise<SlugParams>
 }
@@ -27,18 +28,25 @@ type ProjectProps = {
 export default async function Project(props: ProjectProps) {
   const { slug } = await props.params
   const data = await getProjectData(slug)
-  const { title, image, description, website, featuredContent } = data
+  const { category, title, image, description, website, featuredContent } = data
+
+  const categoryLabel = getCategoryLabel({
+    collectionName: 'projects',
+    category,
+  })
 
   return (
     <PageLayout gap="large">
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <ArticleLayout>
-        <Heading tag="h1" variant="3xl-medium">
-          {title}
-        </Heading>
-
         <div>
-          <div className="relative aspect-video bg-neutral-50">
+          <div className="mb-8 space-y-4">
+            <TagLabel>{categoryLabel}</TagLabel>
+            <Heading tag="h1" variant="3xl-medium">
+              {title}
+            </Heading>
+          </div>
+          <div className="relative mb-6 aspect-video bg-neutral-50">
             <Image
               fill
               priority
@@ -53,8 +61,7 @@ export default async function Project(props: ProjectProps) {
               })}
             />
           </div>
-
-          <div className="mt-8 inline-flex flex-col gap-8 sm:flex-row sm:gap-12">
+          <div className="inline-flex flex-col gap-8 sm:flex-row sm:gap-12">
             <CTALink href={website}>Visit Project Website</CTALink>
 
             {featuredContent && (

@@ -18,6 +18,8 @@ import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
+import { getCategoryLabel } from '@/utils/getCategoryLabel'
+
 import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'
 
@@ -51,8 +53,14 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
     >
       <CardGrid cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {
-          const { slug, title, description, image, publishedOn } = post
+          const { slug, title, description, image, publishedOn, category } =
+            post
+
           const isFirstThreeImages = i < 3
+          const categoryLabel = getCategoryLabel({
+            collectionName: 'projects',
+            category,
+          })
 
           return (
             <Card
@@ -60,6 +68,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
               title={title}
               description={{ text: description, isClamped: true }}
               metaData={[formatDate(publishedOn)]}
+              tags={[{ text: categoryLabel }]}
               cta={{
                 href: `${PATHS.PROJECTS.path}/${slug}`,
                 text: 'Read More',
