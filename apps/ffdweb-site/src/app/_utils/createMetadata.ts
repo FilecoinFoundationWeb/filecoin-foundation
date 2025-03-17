@@ -2,16 +2,23 @@ import type { AbsoluteString } from 'next/dist/lib/metadata/types/metadata-types
 
 import type { Metadata } from 'next'
 
+import { FFDW_URLS } from '@/constants/siteMetadata'
+
 import { graphicsData } from '@/data/graphicsData'
 
 export type MetadataParams = {
   path: `/${string}`
   title: string | AbsoluteString
+  description: string
   image?: string
   openGraph?: {
     type?: 'website' | 'article'
   }
-  description: string
+  twitter?: {
+    card?: 'summary' | 'summary_large_image'
+    site?: string
+    creator?: string
+  }
 }
 
 export function createMetadata({
@@ -20,8 +27,17 @@ export function createMetadata({
   description,
   image,
   openGraph = {},
+  twitter = {},
 }: MetadataParams) {
   const { type = 'website' } = openGraph
+
+  const {
+    card = 'summary_large_image',
+    site = FFDW_URLS.social.twitter.handle,
+    creator = FFDW_URLS.social.twitter.handle,
+  } = twitter
+
+  const images = [image || graphicsData.imageFallback.data.src]
 
   return {
     title,
@@ -30,7 +46,15 @@ export function createMetadata({
       type,
       title,
       description,
-      images: [image || graphicsData.imageFallback.data.src],
+      images,
+    },
+    twitter: {
+      title,
+      description,
+      card,
+      site,
+      creator,
+      images,
     },
     alternates: {
       canonical: path,
