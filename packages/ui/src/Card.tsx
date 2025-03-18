@@ -66,7 +66,7 @@ export function Card({
   cta,
   image,
   borderColor = 'base',
-  as: Tag = 'article',
+  as: Tag = 'li',
   avatars,
 }: CardProps) {
   return (
