@@ -12,10 +12,6 @@ const imageRemotePatterns = [
     protocol: 'https',
     hostname: 'pbs.twimg.com',
   },
-  {
-    protocol: 'https',
-    hostname: 'uploads-ssl.webflow.com',
-  },
 ]
 
 const webpackRules = [
