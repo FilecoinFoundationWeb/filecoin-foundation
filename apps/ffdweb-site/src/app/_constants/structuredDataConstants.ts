@@ -16,7 +16,7 @@ export const ORGANIZATION_SCHEMA_BASE: WithContext<Organization> = {
   '@type': 'Organization',
   name: ORGANIZATION_NAME,
   alternateName: ORGANIZATION_NAME_SHORT,
-  description: SEO.metaDescription,
+  description: SEO.description,
   url: BASE_URL,
   sameAs: [social.linkedin.href, social.twitter.href, social.youtube.href],
   logo: {

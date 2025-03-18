@@ -6,7 +6,7 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
+import { BASE_URL, ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -64,12 +64,17 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: BlogPostProps) {
   const { slug } = await props.params
-  const { title, description } = await getBlogPostData(slug)
+  const { image, seo } = await getBlogPostData(slug)
 
   return createMetadata({
-    metaTitle: `${title} | FFDW`,
-    metaDescription: description,
     path: `${PATHS.BLOG.path}/${slug}`,
-    overrideTitle: true,
+    title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
+    description: seo.description,
+    image: seo.image || image?.src,
+    openGraph: {
+      type: 'article',
+      ...seo.openGraph,
+    },
+    twitter: seo.twitter,
   })
 }

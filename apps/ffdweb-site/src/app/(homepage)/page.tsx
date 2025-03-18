@@ -192,6 +192,8 @@ export default async function Home() {
 }
 
 export const metadata = createMetadata({
-  ...SEO,
+  title: SEO.title,
+  description: SEO.description,
   path: PATHS.HOME.path,
+  image: graphicsData.homepage.data.src,
 })
