@@ -1,7 +1,11 @@
 import { ErrorMessage } from '@filecoin-foundation/ui/ErrorMessage'
 import { NotFoundAnalytics } from '@filecoin-foundation/ui/NotFoundAnalytics'
 
-export default function PageNotFound({ baseDomain }: { baseDomain: string }) {
+type PageNotFoundProps = {
+  baseDomain: string
+}
+
+export default function PageNotFound({ baseDomain }: PageNotFoundProps) {
   return (
     <>
       <NotFoundAnalytics />
