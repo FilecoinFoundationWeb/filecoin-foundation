@@ -5,7 +5,11 @@ import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 import '@/styles/globals.css'
 
-import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
+import {
+  BASE_DOMAIN,
+  BASE_URL,
+  ORGANIZATION_NAME,
+} from '@/constants/siteMetadata'
 
 import { SiteLayout } from '@/components/SiteLayout'
 
@@ -28,7 +32,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         trackOutboundLinks
         hash
         trackFileDownloads
-        domain="fil.org"
+        domain={BASE_DOMAIN}
       >
         <SiteLayout>
           {children}
