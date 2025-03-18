@@ -3,6 +3,7 @@ import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { formatAuthors } from '@filecoin-foundation/utils/formatAuthors'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -46,6 +47,16 @@ export default async function DigestArticle(props: DigestArticleProps) {
           }}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
+        {authors.length > 0 && (
+          <div className="flex flex-col gap-2 sm:w-2/3">
+            <h2 className="text-base font-bold">
+              {formatAuthors({ authors })}
+            </h2>
+            <p className="prose">
+              {authors.map((author) => author.bio).join(' ')}
+            </p>
+          </div>
+        )}
         <ShareArticle
           articleTitle={title}
           path={`${PATHS.DIGEST.path}/${slug}`}

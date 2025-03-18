@@ -1,8 +1,6 @@
-import { Avatar, type AvatarProps } from './Avatar'
-
-type AuthorWithCompany = AvatarProps & {
-  company: string
-}
+import { Avatar } from './Avatar'
+import { type AuthorWithCompany } from '@filecoin-foundation/utils/types/authorWithCompanyType'
+import { formatAuthors } from '@filecoin-foundation/utils/formatAuthors'
 
 export type AvatarGroupProps = {
   authors: Array<AuthorWithCompany>
@@ -21,26 +19,9 @@ export function AvatarGroup({ authors }: AvatarGroupProps) {
           />
         ))}
       </div>
-      <span className="avatar-full-name text-sm">{formatAuthors(authors)}</span>
+      <span className="avatar-full-name text-sm">
+        {formatAuthors({ authors, showCompany: true })}
+      </span>
     </div>
   )
-}
-
-function formatAuthors(authors: Array<AuthorWithCompany>) {
-  return authors
-    .map((author, index) => {
-      const isLastAuthor = index === authors.length - 1
-      const isSecondToLastAuthor = index === authors.length - 2
-
-      let separator = ''
-      if (isSecondToLastAuthor && authors.length > 1) {
-        separator = ' & '
-      } else if (!isLastAuthor) {
-        separator = ', '
-      }
-
-      return `${author.firstName.trim()} ${author.lastName.trim()} (${author.company.trim()})${separator}`
-    })
-    .join('')
-    .trim()
 }

@@ -13,7 +13,7 @@ authors:
     company: NBTV.media
     image:
       src: /assets/headshots/Naomi_Brockwell.webp
-    # bio: Naomi Brockwell is a tech journalist, creator of NBTV.media, and author of "Beginner's Introduction to Privacy"
+    bio: Naomi Brockwell is a tech journalist, creator of NBTV.media, and author of "Beginner's Introduction to Privacy"
 
 seo:
   description: "Privacy is essential for freedom and democracy. Learn how surveillance threatens our future and why privacy matters - even if you think you have 'nothing to hide.'"
