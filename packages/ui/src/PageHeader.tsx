@@ -18,10 +18,9 @@ type TitleProps = {
   children: string
 }
 
-type PageHeaderDescriptionProps = {
-  text: string
-  isClamped?: boolean
-}
+export type PageHeaderDescriptionProp =
+  | DescriptionTextType
+  | { text: string; isClamped?: boolean }
 
 type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
@@ -32,7 +31,7 @@ export type PageHeaderProps = {
   image: PageHeaderImageProps
   isFeatured?: boolean
   metaData?: MetaDataType
-  description?: DescriptionTextType | PageHeaderDescriptionProps
+  description?: PageHeaderDescriptionProp
   children?: React.ReactElement
 }
 
@@ -51,7 +50,7 @@ export function PageHeader({
           {isFeatured && <TagLabel variant="secondary">Featured</TagLabel>}
           <PageHeader.Title>{title}</PageHeader.Title>
           {metaData && <Meta metaData={metaData} />}
-          <Description description={description} />
+          {description && <Description description={description} />}
           {children}
         </div>
         {image && <PageHeader.Image image={image} />}
@@ -106,17 +105,19 @@ PageHeader.Image = function PageHeaderImage({
 function Description({
   description,
 }: {
-  description: PageHeaderProps['description']
+  description: NonNullable<PageHeaderDescriptionProp>
 }) {
-  if (!description) return null
-
-  if (typeof description === 'object' && 'text' in description) {
+  if (
+    typeof description === 'object' &&
+    !Array.isArray(description) &&
+    'text' in description
+  ) {
     return (
-      <p
+      <DescriptionText
         className={clsx(description.isClamped && 'line-clamp-3 text-ellipsis')}
       >
         {description.text}
-      </p>
+      </DescriptionText>
     )
   }
 
