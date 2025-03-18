@@ -36,6 +36,7 @@
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
     "./PageLayout": "./src/PageLayout.tsx",
     "./PageHeader": "./src/PageHeader.tsx",
+    "./PageNotFound": "./src/PageNotFound.tsx",
     "./SearchInput": "./src/SearchInput.tsx",
     "./Search": "./src/Search/index.ts",
     "./SectionDivider": "./src/SectionDivider.tsx",
@@ -74,6 +75,7 @@
     "usehooks-ts": "^3.1.0"
   },
   "dependencies": {
-    "@radix-ui/react-tooltip": "^1.1.8"
+    "@radix-ui/react-tooltip": "^1.1.8",
+    "next-plausible": "^3.12.4"
   }
 }

@@ -7,6 +7,7 @@ import {
   BASE_URL,
   ORGANIZATION_NAME,
   ORGANIZATION_NAME_SHORT,
+  BASE_DOMAIN,
 } from '@/constants/siteMetadata'
 
 import { SiteLayout } from '@/components/SiteLayout'
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       trackOutboundLinks
       hash
       trackFileDownloads
-      domain="ffdweb.org"
+      domain={BASE_DOMAIN}
     >
       <SiteLayout>{children}</SiteLayout>
     </PlausibleProvider>
