@@ -298,7 +298,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply text-brand-primary-300 hover:text-brand-primary-500 focus:brand-outline hover:underline; /* CHECK */
+    @apply text-brand-primary-300! no-underline! hover:text-brand-primary-500! focus:brand-outline! hover:underline!; /* CHECK */
   }
 
   /* TOOLTIP */

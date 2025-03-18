@@ -79,6 +79,7 @@
     @apply text-brand-300;
   }
 }
+
 @layer components {
   /* SHARED */
   .social-link {
@@ -299,7 +300,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply text-brand-300 hover:underline focus:brand-outline;
+    @apply text-brand-300! no-underline! hover:underline! focus:brand-outline!;
   }
 
   /* TOC */
