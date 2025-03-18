@@ -33,6 +33,7 @@ type CardImageProps = (StaticImageProps | ImageProps) & {
   padding?: boolean
   priority?: boolean
   sizes?: string
+  aspectRatio?: 'square' | 'video'
 }
 
 export type ExtendedCTAProps = CTAProps & {
@@ -100,6 +101,9 @@ Card.Image = function ImageComponent({
   image,
 }: Required<Pick<CardProps, 'image'>>) {
   const isStaticImage = 'data' in image
+  // const aspectRatio = image.aspectRatio || 'video'
+  const ASPECT_RATIO =
+    image.aspectRatio === 'square' ? 'aspect-square' : 'aspect-video'
 
   const commonProps = {
     alt: image.alt,
@@ -111,7 +115,7 @@ Card.Image = function ImageComponent({
       'card-image',
       image.objectFit === 'cover' && 'object-cover',
       image.objectFit === 'contain' && 'object-contain',
-      image.padding && 'px-6 pt-4',
+      image.padding && 'card-image-spacing',
     ),
   }
 
@@ -119,7 +123,7 @@ Card.Image = function ImageComponent({
     return (
       <Image
         {...commonProps}
-        className={clsx(commonProps.className, 'aspect-video')}
+        className={clsx(commonProps.className, ASPECT_RATIO)}
         src={image.data}
         alt={commonProps.alt}
       />
@@ -127,7 +131,7 @@ Card.Image = function ImageComponent({
   }
 
   return (
-    <div className="relative aspect-video">
+    <div className={clsx('relative', ASPECT_RATIO)}>
       <Image
         fill
         {...commonProps}
