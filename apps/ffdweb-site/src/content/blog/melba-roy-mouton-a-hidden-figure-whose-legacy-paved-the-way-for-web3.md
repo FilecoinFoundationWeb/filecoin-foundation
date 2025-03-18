@@ -11,7 +11,7 @@ description: >-
   future generations.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383cfcf3ec3f5b7f32c6_melba-roy.jpeg
+    /assets/images/6442383cfcf3ec3f5b7f32c6_melba-roy.jpeg
 seo:
   description: "Discover how NASA mathematician Melba Roy Mouton's groundbreaking work in statistical analysis and programming documentation helped shape modern decentralized technologies."
 ---

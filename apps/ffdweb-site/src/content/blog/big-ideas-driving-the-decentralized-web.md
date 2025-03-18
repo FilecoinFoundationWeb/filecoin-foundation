@@ -14,7 +14,7 @@ description: >-
   some call it the decentralized web or"DWeb."
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423818a6ec41950428fad8_0928-ffdw-glossary.png
+    /assets/images/64423818a6ec41950428fad8_0928-ffdw-glossary.png
 seo:
   description: "Explore key concepts shaping Web3: decentralization, P2P networks, open source, and distributed systems. Learn how these technologies are building a more secure and open internet."
 ---
@@ -27,7 +27,7 @@ Now we're entering an era where there is a rising interest in alternatives to th
 
 Below we've outlined some of the big ideas that are shaping the future of the web.
 
-![This image shows three different configurations of computer networks. A centralized network (all connected to one point), a decentralized network (hub & spoke), and a distributed network in which each node is connected to each other.](https://uploads-ssl.webflow.com/643e92b3a344778457270525/644237da1cc993058c05e3e3_0928-ffdw-glossary2.png "Centralized - Decentralized - Distributed")
+![This image shows three different configurations of computer networks. A centralized network (all connected to one point), a decentralized network (hub & spoke), and a distributed network in which each node is connected to each other.](/assets/images/643e92b3a344778457270525/644237da1cc993058c05e3e3_0928-ffdw-glossary2.png "Centralized - Decentralized - Distributed")
 
 ## Decentralization
 

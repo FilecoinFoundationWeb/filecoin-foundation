@@ -11,7 +11,7 @@ description: >-
   decentralized storage technology on smartphones through ProofMode and F-Droid
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423839922f06c7b3150fdd_guardian-project.png
+    /assets/images/64423839922f06c7b3150fdd_guardian-project.png
 seo:
   description: "FFDW partners with Guardian Project to integrate decentralized storage into ProofMode and F-Droid, enhancing content verification and app distribution on smartphones."
 ---
@@ -28,4 +28,4 @@ Second, DVD will accelerate the adoption of decentralized storage technology for
 
 > Our mission is to permanently preserve humanity’s most important information. We are proud to support Guardian Project’s work to preserve critical human rights data and empower greater access to applications using the decentralized web. —Marta Belcher, board chair of the Filecoin Foundation for the Decentralized Web
 
-![Leveraging the Dweb to Enhance Free Speech bannner](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98cc21e567cc30009768_guardian-project-announcement.png)
+![Leveraging the Dweb to Enhance Free Speech bannner](/assets/images/643e98cc21e567cc30009768_guardian-project-announcement.png)

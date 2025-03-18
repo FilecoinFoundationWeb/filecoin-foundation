@@ -10,7 +10,7 @@ description: >-
   community governance and the stripping of web content’s value.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423824686a077ccd90a61e_0-ghsro14ivrabstg6.png
+    /assets/images/64423824686a077ccd90a61e_0-ghsro14ivrabstg6.png
 seo:
   description: "The final episodes of FFDW's documentary series examine Web3 advertising models, DAOs, the creator economy, and how decentralized technology shapes the future internet."
 ---

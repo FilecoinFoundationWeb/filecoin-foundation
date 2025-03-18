@@ -9,7 +9,7 @@ description: >-
   editor of the Techdirt blog, about decentralization.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381fb068b055975a464f_013023-ffdw-mikemasnick.png
+    /assets/images/6442381fb068b055975a464f_013023-ffdw-mikemasnick.png
 seo:
   description: "Explore how the Decentralized Web Gateway bridges Web2 and Web3, making decentralized content accessible through traditional browsers while preserving data integrity."
 ---

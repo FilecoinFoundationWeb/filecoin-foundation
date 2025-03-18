@@ -11,7 +11,7 @@ description: >-
   for and adoption of decentralized web technologies
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423829fcf3ec16737f20d9_hrdag.png
+    /assets/images/64423829fcf3ec16737f20d9_hrdag.png
 seo:
   description: "FFDW partners with HRDAG to advance decentralized storage solutions for human rights organizations, supporting data preservation and analysis for justice worldwide."
 ---
@@ -28,4 +28,4 @@ In addition to enabling HRDAG to better understand the decentralized web landsca
 
 “We’re proud to support HRDAG with this award,” said FFDW Board Chair Marta Belcher. “FFDW’s mission is to preserve humanity’s most important information, and this collaboration with HRDAG is a natural fit to further these efforts.”
 
-![FFDW and Human Rights Data Analysis Group Collaborate](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98beae2f9ebd3f0e0e59_ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png)
+![FFDW and Human Rights Data Analysis Group Collaborate](/assets/images/643e92b3a344778457270525/643e98beae2f9ebd3f0e0e59_ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png)
