@@ -1,6 +1,6 @@
 import {
   DescriptionText,
-  type DescriptionTextType,
+  type DescriptionProps,
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { clsx } from 'clsx'
@@ -9,7 +9,7 @@ export type PageSectionProps = {
   kicker: string
   title: string
   children?: React.ReactNode
-  description?: DescriptionTextType
+  description?: DescriptionProps['children']
   isCentered?: boolean
   as?: React.ElementType
 }

@@ -2,7 +2,7 @@ import Image, { type ImageProps } from 'next/image'
 
 import {
   DescriptionText,
-  type DescriptionTextType,
+  type DescriptionProps,
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Meta, type MetaDataType } from '@filecoin-foundation/ui/Meta'
@@ -18,8 +18,8 @@ type TitleProps = {
   children: string
 }
 
-export type PageHeaderDescriptionProp =
-  | DescriptionTextType
+type PageHeaderDescriptionProp =
+  | DescriptionProps['children']
   | { text: string; isClamped?: boolean }
 
 type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
@@ -50,7 +50,7 @@ export function PageHeader({
           {isFeatured && <TagLabel variant="secondary">Featured</TagLabel>}
           <PageHeader.Title>{title}</PageHeader.Title>
           {metaData && <Meta metaData={metaData} />}
-          {description && <Description description={description} />}
+          {description && <PageHeaderDescription description={description} />}
           {children}
         </div>
         {image && <PageHeader.Image image={image} />}
@@ -102,16 +102,12 @@ PageHeader.Image = function PageHeaderImage({
   )
 }
 
-function Description({
+function PageHeaderDescription({
   description,
 }: {
   description: NonNullable<PageHeaderDescriptionProp>
 }) {
-  if (
-    typeof description === 'object' &&
-    !Array.isArray(description) &&
-    'text' in description
-  ) {
+  if (typeof description === 'object' && 'text' in description) {
     return (
       <DescriptionText isClamped={description.isClamped}>
         {description.text}
