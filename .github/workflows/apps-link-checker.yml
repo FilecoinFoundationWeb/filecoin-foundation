@@ -29,6 +29,6 @@ jobs:
             --retry-wait-time 15
             --exclude https://twitter.com/*
             --exclude https://x.com/*
-            --exclude "^/.*"
+            --exclude "^\/(?:[^\/].*)?$"
             --max-retries 10
             './**/*.md'
