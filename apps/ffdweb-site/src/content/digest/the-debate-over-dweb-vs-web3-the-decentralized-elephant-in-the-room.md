@@ -42,8 +42,7 @@ Jay is saying that it isn’t exclusively new tech that holds the potential to u
 
 As Evgeny would point out, what’s the narrative that this is playing into? Are the problems that plague the Web purely technical? If sufficiently decentralized, will these technologies fix all that ails us? There’s a major oversight when one focuses solely on the technical affordances that were available at each stage of the Web, and points to them as fatal flaws. It strongly implies that all we need to do for this new Web to work in the long run is to just code our way to the right systems. Instead, the true issue at hand is: How do we architect those systems to reflect the complexities of diverse human interaction and need in distributed, digitally-mediated contexts?
 
-<!--
-![](https://lh5.googleusercontent.com/ekP1QA4z9yyVH9llB_UXGk5BkCambYhFz11g01GYDZJN0hvG2p2dwAVGLyBaypzLGk4pF_T2aR2_5SnvtwbxAnMVrBtTTkSo3aK22ffU-DYiQYCGcqqkqjVVVORtAthJSljojjFOXuALdA98MQcfz3s)_This is a screenshot of a Google Trends search of the terms comparing Web3 (blue) and DWeb (red) made on April 30, 2023._ -->
+![](https://lh5.googleusercontent.com/ekP1QA4z9yyVH9llB_UXGk5BkCambYhFz11g01GYDZJN0hvG2p2dwAVGLyBaypzLGk4pF_T2aR2_5SnvtwbxAnMVrBtTTkSo3aK22ffU-DYiQYCGcqqkqjVVVORtAthJSljojjFOXuALdA98MQcfz3s)_This is a screenshot of a Google Trends search of the terms comparing Web3 (blue) and DWeb (red) made on April 30, 2023._
 
 ## DWeb: An Evolving Web
 

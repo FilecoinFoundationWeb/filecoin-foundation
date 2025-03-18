@@ -20,6 +20,7 @@ import {
   getDigestArticlesData,
 } from '../utils/getDigestArticleData'
 
+import { AuthorsBio } from './components/AuthorsBio'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type DigestArticleProps = {
@@ -47,16 +48,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
           }}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
-        {authors.length > 0 && (
-          <div className="flex flex-col gap-2 sm:w-2/3">
-            <h2 className="text-base font-bold">
-              {formatAuthors({ authors })}
-            </h2>
-            <p className="prose">
-              {authors.map((author) => author.bio).join(' ')}
-            </p>
-          </div>
-        )}
+        <AuthorsBio authors={authors} />
         <ShareArticle
           articleTitle={title}
           path={`${PATHS.DIGEST.path}/${slug}`}

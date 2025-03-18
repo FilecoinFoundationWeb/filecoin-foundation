@@ -1,7 +1,7 @@
-import { type AuthorWithCompany } from './types/avatarGroupType'
+import { type AuthorExtended } from '@filecoin-foundation/utils/types/authorTypes'
 
 type FormatAuthorsProps = {
-  authors: Array<AuthorWithCompany>
+  authors: Array<AuthorExtended>
   showCompany?: boolean
 }
 
