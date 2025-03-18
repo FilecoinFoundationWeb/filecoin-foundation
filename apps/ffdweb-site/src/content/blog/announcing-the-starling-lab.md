@@ -11,7 +11,7 @@ description: >-
   trust in the most sensitive digital records of our human history.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423816edebc4ceb27492e7_starling-lab-image.jpeg
+    /assets/images/64423816edebc4ceb27492e7_starling-lab-image.jpeg
 seo:
   description: "FFDW and Protocol Labs commit to The Starling Lab, a groundbreaking research center developing tools to verify and preserve crucial digital records of human history."
 ---

@@ -12,7 +12,7 @@ description: >-
   Democratizing Open Knowledge program.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423837922f062c19150fda_1-sqxvnk6dltsa3a9ec1fbyg.png
+    /assets/images/64423837922f062c19150fda_1-sqxvnk6dltsa3a9ec1fbyg.png
 seo:
   description: "FFDW supports Harvard's Library Innovation Lab in exploring decentralized technologies to preserve digital information and combat linkrot in academic resources."
 ---

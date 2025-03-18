@@ -12,7 +12,7 @@ description: >-
   informational gap between technologists and policymakers in Congress.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423836a6ec419f1a28faed_1-by_cgybu5ago6_yxuh93g.png
+    /assets/images/64423836a6ec419f1a28faed_1-by_cgybu5ago6_yxuh93g.png
 seo:
   description: "FFDW partners with TechCongress to expand tech expertise on Capitol Hill, bridging the gap between technologists and policymakers through fellowship programs."
 ---

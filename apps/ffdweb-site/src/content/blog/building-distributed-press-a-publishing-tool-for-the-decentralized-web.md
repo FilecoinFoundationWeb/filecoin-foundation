@@ -10,7 +10,7 @@ description: >-
   publishing platforms.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381aaf6e60375caa347a_0208-distributedpress.png
+    /assets/images/6442381aaf6e60375caa347a_0208-distributedpress.png
 seo:
   description: ""
 ---
@@ -35,7 +35,7 @@ Decentralized publishing is an alternative, where resilient, decentralized infra
 
 Distributed Press will build off of [Sutty's content management system](https://panel.sutty.nl/usuaries/sign_in?locale=en) (CMS), a platform for managing and hosting resilient websites designed for activists, collectives, and organizations, to enable anyone to publish creative and journalistic works to both the World Wide Web (www) and dWeb. The decentralized protocols they are initially prioritizing are InterPlanetary File System (IPFS), Holepunch.to (previously Hypercore), and BitTorrent, as well as other protocols as the project progresses.
 
-![](https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381aaf6e604484aa34f8_publish_to_the_distributed_web.png)
+![](/assets/images/6442381aaf6e604484aa34f8_publish_to_the_distributed_web.png)
 
 They are building Distributed Press to prioritize the needs of organizations from all over the world, with special focus on reaching the Global South and geopolitically diverse collectives. They are specifically working with and for the following groups:
 

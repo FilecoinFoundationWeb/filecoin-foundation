@@ -10,7 +10,7 @@ description: >-
   growing misinformation?
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423821fcf3ec505f7f19bd_0202-muckrock-spotlight.png
+    /assets/images/64423821fcf3ec505f7f19bd_0202-muckrock-spotlight.png
 seo:
   description: "Discover how MuckRock leverages Filecoin and IPFS to preserve public documents, empowering journalists and researchers to build trust through transparent information access."
 ---
