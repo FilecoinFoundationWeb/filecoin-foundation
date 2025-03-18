@@ -1,9 +1,10 @@
 import { Avatar } from './Avatar'
-import { type AuthorWithCompany } from '@filecoin-foundation/utils/types/authorWithCompanyType'
+
 import { formatAuthors } from '@filecoin-foundation/utils/formatAuthors'
+import { type AuthorExtended } from '@filecoin-foundation/utils/types/authorTypes'
 
 export type AvatarGroupProps = {
-  authors: Array<AuthorWithCompany>
+  authors: Array<AuthorExtended>
 }
 
 export function AvatarGroup({ authors }: AvatarGroupProps) {
