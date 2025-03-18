@@ -12,8 +12,7 @@ description: >-
   Accelerating Makers will support a breed of early-stage creators so they can
   understand and adopt decentralized technologies in their work and lives.
 image:
-  src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/649c81faf4d7738ba43cceaa_image%20(1).png
+  src: /assets/images/649c81faf4d7738ba43cceaa_image%20(1).png
 website: https://www.techsoup.org/
 seo:
   description: "TechSoup's Accelerating Makers project supports early-stage creators in understanding and adopting decentralized technologies for civil society applications."

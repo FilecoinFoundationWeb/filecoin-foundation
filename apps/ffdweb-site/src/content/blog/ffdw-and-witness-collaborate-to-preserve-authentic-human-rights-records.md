@@ -9,7 +9,7 @@ description: >-
   preservation of trusted documentation
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382e3db3a0857c66f093_witness.png
+    /assets/images/6442382e3db3a0857c66f093_witness.png
 seo:
   description: "FFDW partners with WITNESS to protect and authenticate human rights documentation using decentralized technology, ensuring vital records remain secure and trustworthy."
 ---
@@ -34,4 +34,4 @@ Among the key initiatives that will benefit is a [human rights archives](https:/
 
 “We’re proud to support WITNESS with this award,” said FFDW Board Chair Marta Belcher. “FFDW’s mission is to preserve humanity’s most important information, and this collaboration with WITNESS is a natural fit to further these efforts.”
 
-![ffdw and witness collaborate to preserve authentic human rights records](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98c3fcda048a092b29cc_ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records.png)
+![ffdw and witness collaborate to preserve authentic human rights records](/assets/images/643e98c3fcda048a092b29cc_ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records.png)

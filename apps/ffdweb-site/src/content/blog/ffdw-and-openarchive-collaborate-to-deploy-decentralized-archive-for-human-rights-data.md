@@ -16,7 +16,7 @@ description: >-
   Filecoin and other decentralized storage options via their mobile device.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382def619d14d6b54705_openarchive.png
+    /assets/images/6442382def619d14d6b54705_openarchive.png
 seo:
   description: "FFDW partners with OpenArchive to enhance the Save app with decentralized storage, enabling secure preservation of crucial human rights documentation worldwide."
 ---
@@ -33,4 +33,4 @@ Additionally, as part of the award, OpenArchive will embark on a campaign to edu
 
 > Our mission is to permanently preserve humanity’s most important information. We are proud to support OpenArchive’s work to preserve critical human rights data using the decentralized web. —Marta Belcher, board chair of the Filecoin Foundation for the Decentralized Web
 
-![ffdw and openarchive collaborate to deploy decentralized archive](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98c1be93f295c8a42d6c_ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data.png)
+![ffdw and openarchive collaborate to deploy decentralized archive](/assets/images/643e98c1be93f295c8a42d6c_ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data.png)

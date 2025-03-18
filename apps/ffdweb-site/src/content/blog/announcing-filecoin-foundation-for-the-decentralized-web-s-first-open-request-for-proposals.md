@@ -13,7 +13,7 @@ description: >-
   information.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423813d1b0259171f6ef5e_ffdw-request-for-proposals.png
+    /assets/images/64423813d1b0259171f6ef5e_ffdw-request-for-proposals.png
 seo:
   description: "FFDW launches open RFP seeking projects to preserve humanity's vital information through development, education, and research. Funding available up to $1.75M for innovative proposals."
 ---

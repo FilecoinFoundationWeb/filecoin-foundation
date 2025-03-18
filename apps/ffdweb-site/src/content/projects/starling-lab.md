@@ -13,7 +13,7 @@ description: FFDW’s commitment to Starling Lab supports their work to prototyp
   storage network, has been highlighted in Fast Company and CNN.
 website: https://www.starlinglab.org/
 image:
-  src: https://uploads-ssl.webflow.com/643e92b3a344778457270525/649c81d53d6f2b384d2aa16e_image.png
+  src: /assets/images/649c81d53d6f2b384d2aa16e_image.png
 seo:
   description: Starling Lab develops open-source tools and best practices to
     document human rights violations and war crimes, leveraging Web3 and

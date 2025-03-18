@@ -11,7 +11,7 @@ description: >-
   speech for journalists.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383bfcf3ec00b87f30ee_leveraging-the-dweb-to-enhance-free-speech.png
+    /assets/images/6442383bfcf3ec00b87f30ee_leveraging-the-dweb-to-enhance-free-speech.png
 seo:
   description: "FFDW awards $5.8M to Freedom of the Press Foundation to enhance SecureDrop, preserve press freedom data, and explore decentralized web solutions for protecting journalism."
 ---

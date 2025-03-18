@@ -7,7 +7,7 @@ category: use-cases
 description: ""
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381ce3c08ff22a4e3c10_0308-hrdag-spotlight.png
+    /assets/images/6442381ce3c08ff22a4e3c10_0308-hrdag-spotlight.png
 seo:
   description: "Explore how HRDAG uses Filecoin to securely preserve human rights data, ensuring vital information remains accessible and protected from censorship through decentralized storage."
 ---

@@ -12,7 +12,7 @@ description: >-
   users and organizations.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381d1fe00b261574bc1d_0-w2tmph7o7z-pisg8-2.png
+    /assets/images/6442381d1fe00b261574bc1d_0-w2tmph7o7z-pisg8-2.png
 seo:
   description: "Discover our 12-part documentary series featuring tech leaders exploring the evolution of the web, decentralization, data privacy, and the future of digital identity."
 ---

@@ -9,7 +9,7 @@ description: >
   light on one of the biggest barriers facing NGOs
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/644238263db3a0680966e3ab_0321-ch.png
+    /assets/images/644238263db3a0680966e3ab_0321-ch.png
 seo:
   description: "Groundbreaking survey of 7,500+ civil society organizations reveals digital equity gaps and barriers, highlighting the need for better internet access and digital skills globally."
 ---
