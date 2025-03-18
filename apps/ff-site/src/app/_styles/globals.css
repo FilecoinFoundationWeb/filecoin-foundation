@@ -300,7 +300,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply text-brand-300! no-underline! hover:underline! focus:brand-outline!;
+    @apply font-normal! text-brand-300! no-underline! hover:underline! focus:brand-outline!;
   }
 
   /* TOC */
