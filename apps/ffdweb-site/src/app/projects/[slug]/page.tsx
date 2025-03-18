@@ -10,6 +10,7 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { Newspaper } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
+import { ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -21,6 +22,7 @@ import { CTALink } from '@/components/CTALink'
 import { getProjectData, getProjectsData } from '../utils/getProjectData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
+
 type ProjectProps = {
   params: Promise<SlugParams>
 }
@@ -88,12 +90,14 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: ProjectProps) {
   const { slug } = await props.params
-  const { title, description } = await getProjectData(slug)
+  const { image, seo } = await getProjectData(slug)
 
   return createMetadata({
-    metaTitle: `${title} | FFDW`,
-    metaDescription: description,
     path: `${PATHS.PROJECTS.path}/${slug}`,
-    overrideTitle: true,
+    title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
+    description: seo.description,
+    image: seo.image || image?.src || graphicsData.projects.data.src,
+    openGraph: seo.openGraph,
+    twitter: seo.twitter,
   })
 }

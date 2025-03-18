@@ -1,6 +1,4 @@
-import type { MetadataParams } from '@/utils/createMetadata'
-
-export type structuredDataParams = Pick<
-  MetadataParams,
-  'metaTitle' | 'metaDescription'
->
+export type StructuredDataParams = {
+  title: string
+  description: string
+}

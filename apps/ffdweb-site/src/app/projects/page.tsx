@@ -17,11 +17,9 @@ import { ProjectsContent } from './components/ProjectsContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getProjectsData } from './utils/getProjectData'
 
-
-const SEO = {
-  metaTitle:
-    'FFDW Projects | Explore Partnerships Advancing the Decentralized Web',
-  metaDescription:
+const PROJECTS_SEO = {
+  title: 'FFDW Projects | Explore Partnerships Advancing the Decentralized Web',
+  description:
     'Explore how FFDW collaborates with nonprofits to build open-source solutions, preserve vital data, and shape a decentralized internet. See our partners in action.',
 } as const
 
@@ -30,7 +28,9 @@ export default async function Projects() {
 
   return (
     <PageLayout gap="large">
-      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+      <StructuredDataScript
+        structuredData={generateStructuredData(PROJECTS_SEO)}
+      />
       <PageHeader
         kicker="Projects"
         title="Discover Current and Past FFDW Project Partners"
@@ -54,7 +54,8 @@ export default async function Projects() {
 }
 
 export const metadata = createMetadata({
-  ...SEO,
+  title: { absolute: PROJECTS_SEO.title },
+  description: PROJECTS_SEO.description,
   path: PATHS.PROJECTS.path,
-  overrideTitle: true,
+  image: graphicsData.projects.data.src,
 })

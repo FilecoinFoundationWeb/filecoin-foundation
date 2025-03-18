@@ -3,7 +3,7 @@ title: Empowering a More Informed, Transparent Society with Decentralized Techno
 created-on: "2023-04-21T07:15:45.476Z"
 updated-on: "2023-04-21T07:15:45.476Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: impact
+category: use-cases
 description: >-
   Since 2010, Michael Morisy and his team at MuckRock have been working to solve
   this problem: how do we help newsrooms and leaders build trust in an age of

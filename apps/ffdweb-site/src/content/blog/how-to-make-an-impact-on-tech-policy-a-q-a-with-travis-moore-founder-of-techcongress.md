@@ -3,7 +3,7 @@ title: "How to Make an Impact on Tech Policy: A Q&A with Travis Moore, Founder o
 created-on: 2023-08-16T18:51:13.562Z
 updated-on: 2023-08-16T18:51:13.580Z
 published-on: 2023-08-16T18:51:13.590Z
-category: impact
+category: interviews
 description: ""
 image:
   src: /assets/images/091523-qa-techcongress.png

@@ -3,7 +3,7 @@ title: "FFDW and Connect Humanity: Empowering an Equitable Digital Future"
 created-on: "2023-04-21T07:15:50.533Z"
 updated-on: "2023-04-21T07:15:50.533Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: partnerships
+category: projects
 description: >
   Largest ever survey of civil society's digital haves and have-nots shines
   light on one of the biggest barriers facing NGOs

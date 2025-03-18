@@ -3,7 +3,7 @@ title: "Melba Roy Mouton: A 'Hidden Figure' Whose Legacy Paved the Way for Web3"
 created-on: "2023-04-21T07:16:12.922Z"
 updated-on: "2023-04-21T07:18:34.828Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: impact
+category: technology
 description: >-
   Melba Roy Mouton was a statistician and computer scientist whose contributions
   to the scientific community during her tenure at NASA not only shaped modern

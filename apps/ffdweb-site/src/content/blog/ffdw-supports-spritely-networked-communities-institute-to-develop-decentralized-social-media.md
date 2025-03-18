@@ -5,7 +5,7 @@ title: >-
 created-on: "2023-04-21T07:16:03.198Z"
 updated-on: "2023-04-21T07:18:26.993Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: impact
+category: projects
 description: >-
   Award will further efforts to give people control over identity and
   relationships online

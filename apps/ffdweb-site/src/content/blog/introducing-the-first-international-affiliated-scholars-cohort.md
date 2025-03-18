@@ -3,7 +3,7 @@ title: Introducing the First International Affiliated Scholars Cohort
 created-on: 2023-09-14T15:01:30.562Z
 updated-on: 2023-09-14T15:01:30.580Z
 published-on: 2023-09-14T15:01:30.593Z
-category: impact
+category: projects
 description: ""
 image:
   src: /assets/images/091223-bl4sg-header.png

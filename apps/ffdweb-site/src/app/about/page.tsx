@@ -22,16 +22,18 @@ import { impactAreas } from './constants/impactAreas'
 import { priorities } from './constants/priorities'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const SEO = {
-  metaTitle: 'About FFDW | Building and Supporting the Decentralized Community',
-  metaDescription:
+const ABOUT_SEO = {
+  title: 'About FFDW | Building and Supporting the Decentralized Community',
+  description:
     'Discover how Filecoin Foundation for the Decentralized Web (FFDW) accelerates open, decentralized technologies and safeguards vital data. Learn about our mission to empower communities, preserve cultural knowledge, and shape a fairer, more resilient internet for everyone.',
 } as const
 
 export default function About() {
   return (
     <PageLayout gap="large">
-      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+      <StructuredDataScript
+        structuredData={generateStructuredData(ABOUT_SEO)}
+      />
       <PageHeader
         kicker="About"
         title="Building and Supporting the Decentralized Web Community"
@@ -106,7 +108,8 @@ export default function About() {
 }
 
 export const metadata = createMetadata({
-  ...SEO,
+  title: { absolute: ABOUT_SEO.title },
+  description: ABOUT_SEO.description,
+  image: graphicsData.about.data.src,
   path: PATHS.ABOUT.path,
-  overrideTitle: false,
 })

@@ -3,7 +3,7 @@ title: Announcing The Starling Lab
 created-on: "2023-04-21T07:15:34.887Z"
 updated-on: "2023-04-21T07:18:15.412Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: partnerships
+category: projects
 description: >-
   The Filecoin Foundation for the Decentralized Web (FFDW) and Protocol Labs are
   thrilled to announce a multi-year commitment to The Starling Lab, a new
