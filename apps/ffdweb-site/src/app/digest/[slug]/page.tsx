@@ -32,6 +32,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
   const data = await getDigestArticleData(slug)
 
   const { title, issueNumber, articleNumber, image, authors, content } = data
+  const hasAuthorBio = authors.some((author) => author.bio)
 
   return (
     <PageLayout>
@@ -48,7 +49,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
           }}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
-        <AuthorsBio authors={authors} />
+        {hasAuthorBio && <AuthorsBio authors={authors} />}
         <ShareArticle
           articleTitle={title}
           path={`${PATHS.DIGEST.path}/${slug}`}
