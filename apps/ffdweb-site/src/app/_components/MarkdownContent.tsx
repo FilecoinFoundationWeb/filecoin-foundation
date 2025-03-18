@@ -55,7 +55,7 @@ const MarkdownLink: Components['a'] = ({ href, children }) => {
     return <>{children}</>
   }
   return (
-    <SmartTextLink href={href} baseDomain={BASE_DOMAIN} className="not-prose">
+    <SmartTextLink href={href} baseDomain={BASE_DOMAIN}>
       {children}
     </SmartTextLink>
   )
