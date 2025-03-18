@@ -1,12 +1,11 @@
-const BASE_DOMAIN = 'ffdweb.org' as const
-const BASE_URL = `https://${BASE_DOMAIN}` as const
-const ORGANIZATION_NAME =
-  'Filecoin Foundation for the Decentralized Web' as const
-const ORGANIZATION_NAME_SHORT = 'FFDW' as const
+const BASE_DOMAIN = 'ffdweb.org'
+const BASE_URL = `https://${BASE_DOMAIN}`
+const ORGANIZATION_NAME = 'Filecoin Foundation for the Decentralized Web'
+const ORGANIZATION_NAME_SHORT = 'FFDW'
 
 const SEO = {
-  metaTitle: 'Rebuilding the Internet for Good',
-  metaDescription:
+  title: 'Rebuilding the Internet for Good',
+  description:
     'Filecoin Foundation for the Decentralized Web is a nonprofit organization committed to preserving humanity’s most important information by funding the development of open-source tools',
 } as const
 

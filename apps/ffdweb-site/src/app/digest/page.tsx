@@ -20,9 +20,9 @@ import { PageSection } from '@/components/PageSection'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getDigestArticlesData } from './utils/getDigestArticleData'
 
-const SEO = {
-  metaTitle: 'FFDW DWeb Digest | In-Depth Exploration of the Decentralized Web',
-  metaDescription:
+const DIGEST_SEO = {
+  title: 'FFDW DWeb Digest | In-Depth Exploration of the Decentralized Web',
+  description:
     'Explore FFDW DWeb Digest for expert insights on cognitive liberty, privacy, and crypto policy. Discover the evolving landscape of digital autonomy and blockchain.',
 } as const
 
@@ -31,7 +31,9 @@ export default async function Digest() {
 
   return (
     <PageLayout gap="large">
-      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+      <StructuredDataScript
+        structuredData={generateStructuredData(DIGEST_SEO)}
+      />
       <PageHeader
         kicker="Digest"
         title="The Go-to Publication for Exploring DWeb Ideas and Principles"
@@ -88,7 +90,8 @@ export default async function Digest() {
 }
 
 export const metadata = createMetadata({
-  ...SEO,
+  title: { absolute: DIGEST_SEO.title },
+  description: DIGEST_SEO.description,
   path: PATHS.DIGEST.path,
-  overrideTitle: true,
+  image: graphicsData.digest.data.src,
 })
