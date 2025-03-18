@@ -1,4 +1,4 @@
-import PageNotFound from '@filecoin-foundation/ui/PageNotFound'
+import { PageNotFound } from '@filecoin-foundation/ui/PageNotFound'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

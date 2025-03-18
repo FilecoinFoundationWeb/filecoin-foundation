@@ -5,7 +5,7 @@ type PageNotFoundProps = {
   baseDomain: string
 }
 
-export default function PageNotFound({ baseDomain }: PageNotFoundProps) {
+export function PageNotFound({ baseDomain }: PageNotFoundProps) {
   return (
     <>
       <NotFoundAnalytics />
