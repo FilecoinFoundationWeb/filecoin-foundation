@@ -113,9 +113,7 @@ function Description({
     'text' in description
   ) {
     return (
-      <DescriptionText
-        className={clsx(description.isClamped && 'line-clamp-3 text-ellipsis')}
-      >
+      <DescriptionText isClamped={description.isClamped}>
         {description.text}
       </DescriptionText>
     )
