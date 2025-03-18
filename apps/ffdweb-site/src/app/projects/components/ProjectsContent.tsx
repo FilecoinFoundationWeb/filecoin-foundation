@@ -79,6 +79,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
                 alt: '',
                 priority: isFirstThreeImages,
                 objectFit: 'contain',
+                aspectRatio: 'square',
                 padding: true,
                 sizes: buildImageSizeProp({
                   startSize: '100vw',
