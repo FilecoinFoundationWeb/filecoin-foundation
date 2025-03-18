@@ -3,6 +3,7 @@ title: "Authors Alliance and Filecoin Foundation for the Decentralized Web: Supp
 created-on: 2024-05-14T16:49:15.493Z
 updated-on: 2024-05-14T16:49:15.502Z
 published-on: 2024-05-14T16:49:15.507Z
+category: projects
 description: "This is a guest post from FFDW project partner, Authors
   Alliance, written by Dave Hansen, Authors Alliance Executive Director. Founded
   in 2014, Authors Alliance is a 501(c)(3) nonprofit that advocates for the
@@ -12,7 +13,6 @@ image:
   src: /assets/images/021024-guest-authorsalliance.png
 seo:
   description: "Authors Alliance and FFDW partner to explore how decentralized web technologies can support public interest authors, copyright preservation, and text mining research."
-category: "partnerships"
 ---
 
 *This is a guest post from FFDW project partner, Authors Alliance, written by Dave Hansen, Authors Alliance Executive Director.* 

@@ -179,7 +179,11 @@
   }
 
   .card-image {
-    @apply bg-neutral-50;
+    @apply bg-white;
+
+    &.card-image-spacing {
+      @apply p-4;
+    }
   }
 
   .card-link {

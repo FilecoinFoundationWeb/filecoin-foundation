@@ -165,6 +165,10 @@
 
   .card-image {
     @apply rounded-lg px-1 pt-1;
+
+    &.card-image-spacing {
+      @apply px-6 pt-4;
+    }
   }
 
   .card-link {

@@ -3,7 +3,7 @@ title: Decentralization in All the Things
 created-on: "2023-04-21T07:15:43.794Z"
 updated-on: "2023-04-21T07:15:43.794Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: education
+category: technology
 description: >-
   This is a guest post by Mike Masnick, the founder and CEO of Floor64 and
   editor of the Techdirt blog, about decentralization.

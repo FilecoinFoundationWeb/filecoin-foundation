@@ -3,7 +3,7 @@ title: "Collect, Preserve, Democratize: A Q&A With Democracy’s Library"
 created-on: 2023-05-09T10:05:25.820Z
 updated-on: 2023-05-09T10:05:00.000Z
 published-on: 2023-05-09T10:05:00.000Z
-category: impact
+category: use-cases
 description: ""
 image:
   src: /assets/images/0509-demo-qa.png

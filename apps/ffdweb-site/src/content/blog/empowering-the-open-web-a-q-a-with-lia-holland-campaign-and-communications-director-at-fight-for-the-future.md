@@ -4,7 +4,7 @@ title: "Empowering the Open Web: A Q&A with Lia Holland, Campaign and
 created-on: 2024-11-22T12:56:38.123Z
 updated-on: 2024-11-22T12:56:38.133Z
 published-on: 2024-11-22T12:56:38.144Z
-category: impact
+category: use-cases
 description: In this Q&A, we sit down with Lia Holland, campaigns and
   communications director at Fight for the Future, to explore the significance
   of this collaboration, their vision for a decentralized web, and how

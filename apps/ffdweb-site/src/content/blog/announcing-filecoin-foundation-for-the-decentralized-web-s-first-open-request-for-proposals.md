@@ -5,7 +5,7 @@ title: >-
 created-on: "2023-04-21T07:15:31.358Z"
 updated-on: "2023-04-21T07:18:12.889Z"
 published-on: "2023-04-21T08:01:04.314Z"
-category: impact
+category: projects
 description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) is launching an open
   request for proposals (RFP). We’re looking for projects that support our core

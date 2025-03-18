@@ -3,7 +3,7 @@ title: FFDW and Rohingya Project Working Together to Empower Cultural Preservati
 created-on: 2024-10-08T11:12:16.087Z
 updated-on: 2024-10-08T11:12:16.096Z
 published-on: 2024-10-08T11:12:16.103Z
-category: impact
+category: projects
 description: "Filecoin Foundation for the Decentralized Web (FFDW) is proud to
   announce a collaboration with Rohingya Project. With FFDW’s support, Rohingya
   Project will digitally preserve an array of cultural heritage documents that
