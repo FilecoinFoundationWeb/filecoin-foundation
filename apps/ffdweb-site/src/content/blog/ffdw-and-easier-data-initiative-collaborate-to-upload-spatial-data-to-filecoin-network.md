@@ -15,7 +15,7 @@ description: >-
   public.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423827686a07ac0f90ac2f_1005-ffdw-edi.png
+    /assets/images/64423827686a07ac0f90ac2f_1005-ffdw-edi.png
 seo:
   description: "FFDW partners with UMD's EASIER Data Initiative to store and distribute large geospatial datasets on Filecoin, making critical location data accessible to researchers worldwide."
 ---

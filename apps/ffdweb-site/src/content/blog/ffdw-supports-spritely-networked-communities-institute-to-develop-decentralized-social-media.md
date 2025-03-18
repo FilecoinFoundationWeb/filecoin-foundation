@@ -11,7 +11,7 @@ description: >-
   relationships online
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/644238321fe00b575d74cba1_0816-ffdw-spritely.png
+    /assets/images/644238321fe00b575d74cba1_0816-ffdw-spritely.png
 seo:
   description: "FFDW supports Spritely Institute in developing decentralized social media infrastructure that puts users in control of their online identities and relationships."
 ---

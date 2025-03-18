@@ -13,7 +13,7 @@ description: >-
   11.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383fef619d8564b54739_ckt-ffdw-ica.png
+    /assets/images/6442383fef619d8564b54739_ckt-ffdw-ica.png
 seo:
   description: "Artist Christopher Kulendran Thomas debuts 'Another World' at ICA London, exploring a post-nation-state future through AI and decentralized web technologies."
 ---

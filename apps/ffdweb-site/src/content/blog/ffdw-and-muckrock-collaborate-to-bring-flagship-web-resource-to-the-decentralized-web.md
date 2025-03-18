@@ -12,7 +12,7 @@ description: >-
   tools to keep their government transparent and accountable.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382b3db3a05fc766ec87_1-jduzu4kyyygqfyan9dl6da.png
+    /assets/images/6442382b3db3a05fc766ec87_1-jduzu4kyyygqfyan9dl6da.png
 seo:
   description: "FFDW and MuckRock partner to integrate decentralized storage for DocumentCloud, enhancing preservation and access to over 8 million public interest documents."
 ---

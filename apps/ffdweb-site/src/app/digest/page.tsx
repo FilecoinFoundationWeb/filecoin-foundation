@@ -35,8 +35,8 @@ export default async function Digest() {
         structuredData={generateStructuredData(DIGEST_SEO)}
       />
       <PageHeader
-        kicker="Digest"
-        title="The Go-to Publication for Exploring DWeb Ideas and Principles"
+        kicker="DWeb Digest"
+        title="A Publication Exploring DWeb Ideas and Principles"
         image={graphicsData.digest}
       />
 

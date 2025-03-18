@@ -11,7 +11,7 @@ description: >-
 
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/644238143db3a057d266cecd_1-dxorkqq-jlhbhjiqkehiig.png
+    /assets/images/644238143db3a057d266cecd_1-dxorkqq-jlhbhjiqkehiig.png
 seo:
   description: "The Decentralized Future Council (DFC) launches to educate policymakers on Web3 technologies, hosting events and initiatives to advance understanding of the decentralized web."
 ---

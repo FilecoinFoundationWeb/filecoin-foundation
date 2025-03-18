@@ -13,7 +13,7 @@ description: >-
   public.
 image:
   src: >-
-    https://uploads-ssl.webflow.com/643e92b3a344778457270525/644238341fe00b0f4374cbf2_1-yn2c8c8ey2qr9anuyu5xyq.png
+    /assets/images/644238341fe00b0f4374cbf2_1-yn2c8c8ey2qr9anuyu5xyq.png
 seo:
   description: "FFDW collaborates with Prelinger Archives to digitize and preserve rare historical films on the decentralized web, making valuable cultural heritage accessible to all."
 ---
