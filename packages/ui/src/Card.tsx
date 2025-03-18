@@ -72,6 +72,8 @@ export function Card({
 }: CardProps) {
   return (
     <Tag
+      aria-label={title}
+      title={title}
       className={clsx(
         'card relative h-full border backdrop-blur-xl',
         borderStyles[borderColor],
