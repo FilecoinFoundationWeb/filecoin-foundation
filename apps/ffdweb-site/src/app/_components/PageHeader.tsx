@@ -88,8 +88,12 @@ PageHeader.Image = function PageHeaderImage({
   const commonProps = {
     alt: image.alt,
     priority: true,
-    quality: 85,
-    sizes: buildImageSizeProp({ startSize: '300px', lg: '380px' }),
+    quality: 100,
+    sizes: buildImageSizeProp({
+      startSize: '90vw',
+      sm: '384px',
+      lg: '320px',
+    }),
   }
 
   if (isStaticImage) {
