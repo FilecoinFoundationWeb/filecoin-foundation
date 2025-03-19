@@ -30,7 +30,7 @@ export function PageSection({
           isCentered && 'max-w-xl lg:mx-auto lg:text-center',
         )}
       >
-        <span className="inline-block font-bold text-neutral-200">
+        <span className="inline-block font-bold text-neutral-400">
           {kicker}
         </span>
 
