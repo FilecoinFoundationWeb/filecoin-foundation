@@ -37,7 +37,7 @@ export function CTALink({
         {children}
         <Icon
           component={getIconComponent(isExternal, icon)}
-          size={18}
+          size={16}
           weight="bold"
         />
       </span>

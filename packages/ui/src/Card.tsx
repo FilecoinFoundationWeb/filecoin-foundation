@@ -80,17 +80,21 @@ export function Card({
       )}
     >
       {image && <Card.Image image={image} />}
-      <div className="flex flex-col gap-3 p-4">
+
+      <div className="flex flex-col gap-4 p-4">
         {tags && <TagGroup tags={tags} />}
         {metaData && <Meta metaData={metaData} />}
         <Card.Title title={title} />
+
         <div className={clsx(cta && 'mb-10')}>
           {description && typeof description === 'string' && (
             <Card.Description text={description} />
           )}
+
           {description && typeof description === 'object' && (
             <Card.Description {...description} />
           )}
+
           {avatars && <Card.Avatars avatars={avatars} />}
           {cta && <Card.Link {...cta} />}
         </div>

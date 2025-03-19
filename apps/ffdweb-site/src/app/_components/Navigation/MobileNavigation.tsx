@@ -10,7 +10,7 @@ import { clsx } from 'clsx'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { LogoLink } from '@/components/Logo/LogoLink'
+import { LogoLink } from '@/components/LogoLink'
 
 import { NAV_LINKS, TOUCH_TARGET_NAV_LINK } from './constants'
 import { NavigationLink } from './NavigationLink'
@@ -29,7 +29,7 @@ export function MobileNavigation() {
       <SlideOver open={open} setOpen={setOpen}>
         <div className="flex flex-col gap-12 p-8">
           <div className="flex items-center justify-between">
-            <LogoLink />
+            <LogoLink height={50} />
             <IconButton
               icon={X}
               label="Close mobile navigation"

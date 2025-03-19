@@ -40,15 +40,17 @@ export default async function Home() {
   return (
     <PageLayout gap="large">
       <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
-      <PageHeader
-        isHomepage
-        title="A Better Web for Everyone"
-        image={graphicsData.homepage}
-        cta={{
-          href: PATHS.PROJECTS.path,
-          text: 'View Projects',
-        }}
-      />
+      <div className="mt-16">
+        <PageHeader
+          isHomepage
+          title="A Better Web for Everyone"
+          image={graphicsData.homepage}
+          cta={{
+            href: PATHS.PROJECTS.path,
+            text: 'View Projects',
+          }}
+        />
+      </div>
 
       <PageSection
         kicker="About FFDW"
