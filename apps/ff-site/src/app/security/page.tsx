@@ -39,7 +39,7 @@ export default function Security() {
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
-        description={header.description}
+        description={{ text: header.description }}
         image={graphicsData.security}
       >
         <CTAButtonGroup

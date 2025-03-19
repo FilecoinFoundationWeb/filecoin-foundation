@@ -35,7 +35,7 @@ export default function BugBounty() {
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
-        description={header.description}
+        description={{ text: header.description }}
         image={graphicsData.security4}
       >
         <Button href={FILECOIN_FOUNDATION_URLS.security.bugBountyProgram}>
