@@ -19,7 +19,7 @@ authors:
     company: Starling Lab, Airwars
     image:
       src: /assets/headshots/Basile_Simon.webp
-    bio: Basile Simon leads the Lab’s research in law and criminal accountability, and is co-founder and advisor to Airwars. Both have spent most of their careers in journalism.
+    bio: Basile Simon leads the Lab’s research in law and criminal accountability, and is co-founder and advisor to Airwars.
 seo:
   description: "From ancient clay tablets to modern blockchains, discover how new technologies are preserving crucial digital evidence of war crimes, human rights violations, and historical events for future generations."
 ---

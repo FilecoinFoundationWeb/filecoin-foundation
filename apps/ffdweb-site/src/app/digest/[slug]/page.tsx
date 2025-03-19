@@ -3,7 +3,6 @@ import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { formatAuthors } from '@filecoin-foundation/utils/formatAuthors'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -20,7 +19,7 @@ import {
   getDigestArticlesData,
 } from '../utils/getDigestArticleData'
 
-import { AuthorsBio } from './components/AuthorsBio'
+import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type DigestArticleProps = {
@@ -32,7 +31,6 @@ export default async function DigestArticle(props: DigestArticleProps) {
   const data = await getDigestArticleData(slug)
 
   const { title, issueNumber, articleNumber, image, authors, content } = data
-  const hasAuthorBio = authors.some((author) => author.bio)
 
   return (
     <PageLayout>
@@ -49,7 +47,11 @@ export default async function DigestArticle(props: DigestArticleProps) {
           }}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
-        {hasAuthorBio && <AuthorsBio authors={authors} />}
+        <aside className="flex flex-col gap-5 sm:w-2/3">
+          {authors.map((author) => (
+            <AuthorBio key={author.firstName} author={author} />
+          ))}
+        </aside>
         <ShareArticle
           articleTitle={title}
           path={`${PATHS.DIGEST.path}/${slug}`}

@@ -1,10 +1,11 @@
 import { Avatar } from './Avatar'
 
-import { formatAuthors } from '@filecoin-foundation/utils/formatAuthors'
 import { type AuthorExtended } from '@filecoin-foundation/utils/types/authorTypes'
 
+type AuthorWithCompany = Omit<AuthorExtended, 'bio'>
+
 export type AvatarGroupProps = {
-  authors: Array<AuthorExtended>
+  authors: Array<AuthorWithCompany>
 }
 
 export function AvatarGroup({ authors }: AvatarGroupProps) {
@@ -20,9 +21,26 @@ export function AvatarGroup({ authors }: AvatarGroupProps) {
           />
         ))}
       </div>
-      <span className="avatar-full-name text-sm">
-        {formatAuthors({ authors, showCompany: true })}
-      </span>
+      <span className="avatar-full-name text-sm">{formatAuthors(authors)}</span>
     </div>
   )
+}
+
+function formatAuthors(authors: Array<AuthorWithCompany>) {
+  return authors
+    .map((author, index) => {
+      const isLastAuthor = index === authors.length - 1
+      const isSecondToLastAuthor = index === authors.length - 2
+
+      let separator = ''
+      if (isSecondToLastAuthor && authors.length > 1) {
+        separator = ' & '
+      } else if (!isLastAuthor) {
+        separator = ', '
+      }
+
+      return `${author.firstName.trim()} ${author.lastName.trim()} (${author.company.trim()})${separator}`
+    })
+    .join('')
+    .trim()
 }

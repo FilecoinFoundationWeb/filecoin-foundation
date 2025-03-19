@@ -6,9 +6,7 @@ import { clsx } from 'clsx'
 const IMAGE_SIZE = 32
 const sharedAvatarStyle = 'rounded-full ring avatar-ring'
 
-export type AvatarProps = Author
-
-export function Avatar({ firstName, lastName, image }: AvatarProps) {
+export function Avatar({ firstName, lastName, image }: Author) {
   if (image) {
     return (
       <Image
