@@ -47,7 +47,7 @@ export function Footer() {
         >
           {footerNavigationItems.map((section) => (
             <FooterSection key={section.title} title={section.title}>
-              <ul className="grid gap-3">
+              <ul className="grid gap-5">
                 {section.links.map(({ href, label }) => (
                   <FooterLink key={href} href={href} label={label} />
                 ))}
