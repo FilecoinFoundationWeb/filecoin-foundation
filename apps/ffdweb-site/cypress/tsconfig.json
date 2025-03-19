@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "..",
+    "paths": {
+      "@/*": ["src/app/*"],
+      "@/constants/*": ["src/app/_constants/*"],
+      "@/support/*": ["cypress/support/*"],
+      "@/layout": ["src/app/layout.tsx"],
+      "@/utils/*": ["src/app/_utils/*"]
+    }
+  },
+  "include": ["./**/*.ts"]
+}
