@@ -32,6 +32,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
 
   const { title, issueNumber, articleNumber, image, authors, content } = data
 
+  const anyAuthorHasBio = authors.some((author) => author.bio)
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
@@ -47,11 +48,13 @@ export default async function DigestArticle(props: DigestArticleProps) {
           }}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
-        <aside className="flex flex-col gap-5 sm:w-2/3">
-          {authors.map((author) => (
-            <AuthorBio key={author.firstName} author={author} />
-          ))}
-        </aside>
+        {anyAuthorHasBio && (
+          <aside className="flex flex-col gap-5 sm:w-2/3">
+            {authors.map((author) => (
+              <AuthorBio key={author.firstName} author={author} />
+            ))}
+          </aside>
+        )}
         <ShareArticle
           articleTitle={title}
           path={`${PATHS.DIGEST.path}/${slug}`}

@@ -6,5 +6,5 @@ export type Author = {
 
 export type AuthorExtended = Author & {
   company: string
-  bio: string
+  bio?: string
 }
