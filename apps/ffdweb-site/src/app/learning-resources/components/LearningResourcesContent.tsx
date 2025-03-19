@@ -10,7 +10,7 @@ import {
   SEARCH_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
-import { CaretRight } from '@phosphor-icons/react'
+import { ArrowUpRight } from '@phosphor-icons/react'
 
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
@@ -74,7 +74,7 @@ export function LearningResourcesContent({
                 href: link,
                 text: 'View Resource',
                 icon: {
-                  component: CaretRight,
+                  component: ArrowUpRight,
                   size: 16,
                   position: 'trailing',
                   weight: 'bold',
