@@ -84,7 +84,6 @@ export default async function Home() {
                   ...(image || graphicsData.imageFallback.data),
                   alt: '',
                   objectFit: 'contain',
-                  priority: false,
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
                     sm: '350px',
@@ -165,7 +164,6 @@ export default async function Home() {
                   ...(image || graphicsData.imageFallback.data),
                   alt: '',
                   objectFit: 'cover',
-                  priority: false,
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
                     sm: '350px',
