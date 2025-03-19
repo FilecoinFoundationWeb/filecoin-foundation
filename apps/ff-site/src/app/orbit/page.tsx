@@ -58,7 +58,7 @@ export default async function Orbit(props: Props) {
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
-        description={header.description}
+        description={{ text: header.description }}
         image={graphicsData.orbit}
       >
         <CTAButtonGroup

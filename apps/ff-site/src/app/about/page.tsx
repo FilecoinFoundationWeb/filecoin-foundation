@@ -47,7 +47,7 @@ export default function About() {
 
       <PageHeader
         title={header.title}
-        description={header.description}
+        description={{ text: header.description }}
         image={graphicsData.about}
       >
         <Button href={FILECOIN_FOUNDATION_URLS.annualReports['2024']}>

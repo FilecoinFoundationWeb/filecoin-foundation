@@ -4,11 +4,6 @@ updated-on: "2023-04-21T07:18:14.180Z"
 created-on: "2023-04-21T07:15:32.959Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >-
-  The Decentralized Future Council (DFC) is a new organization dedicated to
-  advocacy and education for the emerging decentralized web and related
-  technologies.
-
 image:
   src: >-
     /assets/images/644238143db3a057d266cecd_1-dxorkqq-jlhbhjiqkehiig.png

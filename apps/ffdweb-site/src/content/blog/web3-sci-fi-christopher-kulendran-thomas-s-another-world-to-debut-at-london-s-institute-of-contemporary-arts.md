@@ -6,11 +6,6 @@ updated-on: "2023-04-21T07:18:36.074Z"
 created-on: "2023-04-21T07:16:15.905Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >-
-  Filecoin Foundation for the Decentralized Web (FFDW) and the Institute of
-  Contemporary Arts (ICA) London today announced that Christopher Kulendran
-  Thomas's latest exhibition, Another World, will debut at the ICA on October
-  11.
 image:
   src: >-
     /assets/images/6442383fef619d8564b54739_ckt-ffdw-ica.png

@@ -4,7 +4,6 @@ updated-on: "2023-04-21T07:15:40.535Z"
 created-on: "2023-04-21T07:15:40.535Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: use-cases
-description: ""
 image:
   src: >-
     /assets/images/6442381ce3c08ff22a4e3c10_0308-hrdag-spotlight.png

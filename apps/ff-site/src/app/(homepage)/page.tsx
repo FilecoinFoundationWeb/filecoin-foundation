@@ -65,7 +65,7 @@ export default async function Home() {
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
         <PageHeader
           title={header.title}
-          description={header.description}
+          description={{ text: header.description }}
           image={graphicsData.home}
         >
           <CTAButtonGroup

@@ -47,7 +47,7 @@ export default function FilPlus() {
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
-        description={header.description}
+        description={{ text: header.description }}
         image={graphicsData.filPlus}
       >
         <Button href={FIL_PLUS_URLS.documentation}>

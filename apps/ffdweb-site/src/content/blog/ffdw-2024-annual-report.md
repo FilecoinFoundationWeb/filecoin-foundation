@@ -4,10 +4,6 @@ created-on: 2025-01-29T16:21:20.281Z
 updated-on: 2025-01-29T16:21:20.291Z
 published-on: 2025-01-29T16:21:20.299Z
 category: updates
-description: "Filecoin Foundation for the Decentralized Web (FFDW) is the
-  sister nonprofit of Filecoin Foundation. FFDW is a 501(c)(3) nonprofit
-  committed to preserving humanity's most important information and supporting
-  the development and adoption of decentralized technologies."
 image:
   src: /assets/images/hero-ffdw.webp
 seo:

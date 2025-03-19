@@ -48,7 +48,7 @@ export default async function Blog() {
       <PageHeader
         sectionDividerTitle="Featured"
         title={featuredPost.title}
-        description={featuredPost.description}
+        description={{ text: featuredPost.description }}
         metaData={[formatDate(featuredPost.publishedOn)]}
         image={{
           ...(featuredPost.image || graphicsData.imageFallback.data),

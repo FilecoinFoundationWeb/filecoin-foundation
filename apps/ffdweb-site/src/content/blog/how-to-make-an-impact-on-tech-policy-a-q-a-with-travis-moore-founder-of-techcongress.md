@@ -4,7 +4,6 @@ created-on: 2023-08-16T18:51:13.562Z
 updated-on: 2023-08-16T18:51:13.580Z
 published-on: 2023-08-16T18:51:13.590Z
 category: interviews
-description: ""
 image:
   src: /assets/images/091523-qa-techcongress.png
 seo:

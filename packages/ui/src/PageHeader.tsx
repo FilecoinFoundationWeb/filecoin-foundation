@@ -2,7 +2,7 @@ import Image, { type ImageProps } from 'next/image'
 
 import {
   DescriptionText,
-  type DescriptionTextType,
+  type DescriptionProps,
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Meta, type MetaDataType } from '@filecoin-foundation/ui/Meta'
@@ -22,12 +22,17 @@ type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
 }
 
+type PageHeaderDescriptionProps = {
+  text: DescriptionProps['children']
+  isClamped?: DescriptionProps['isClamped']
+}
+
 export type PageHeaderProps = {
   title: TitleProps['children']
   image: PageHeaderImageProps
   isFeatured?: boolean
   metaData?: MetaDataType
-  description?: DescriptionTextType
+  description?: PageHeaderDescriptionProps
   children?: React.ReactElement
 }
 
@@ -46,7 +51,11 @@ export function PageHeader({
           {isFeatured && <TagLabel variant="secondary">Featured</TagLabel>}
           <PageHeader.Title>{title}</PageHeader.Title>
           {metaData && <Meta metaData={metaData} />}
-          {description && <DescriptionText>{description}</DescriptionText>}
+          {description && (
+            <DescriptionText isClamped={description.isClamped}>
+              {description.text}
+            </DescriptionText>
+          )}
           {children}
         </div>
         {image && <PageHeader.Image image={image} />}

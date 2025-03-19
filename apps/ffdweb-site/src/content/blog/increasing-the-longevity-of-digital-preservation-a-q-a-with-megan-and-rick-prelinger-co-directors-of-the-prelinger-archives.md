@@ -5,7 +5,6 @@ created-on: 2024-09-06T15:14:39.910Z
 updated-on: 2024-09-06T15:14:39.918Z
 published-on: 2024-09-06T15:14:39.924Z
 category: interviews
-description: ""
 image:
   src: /assets/images/09262024-qa-prelinger.png
 seo:

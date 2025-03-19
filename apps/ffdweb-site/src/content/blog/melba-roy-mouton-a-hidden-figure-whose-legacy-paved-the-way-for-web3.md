@@ -4,11 +4,6 @@ created-on: "2023-04-21T07:16:12.922Z"
 updated-on: "2023-04-21T07:18:34.828Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: technology
-description: >-
-  Melba Roy Mouton was a statistician and computer scientist whose contributions
-  to the scientific community during her tenure at NASA not only shaped modern
-  programming uses and documentation practices, but also how it is taught to
-  future generations.
 image:
   src: >-
     /assets/images/6442383cfcf3ec3f5b7f32c6_melba-roy.jpeg
