@@ -12,13 +12,13 @@ import {
 
 import { SiteLayout } from '@/components/SiteLayout'
 
-export const metadata: Metadata = {
+export const metadata = {
   title: {
     template: `${ORGANIZATION_NAME_SHORT} | %s`,
     default: ORGANIZATION_NAME,
   },
   metadataBase: new URL(BASE_URL),
-}
+} as const satisfies Metadata
 
 type RootLayoutProps = {
   children: React.ReactNode
