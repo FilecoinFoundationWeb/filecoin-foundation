@@ -39,4 +39,4 @@ jobs:
             --base ${{ env.BASE_URL }}
             --exclude '(twitter|x)\.com'
             --retry-wait-time 3
-            'src/**/*.md'
+            './**/*.md'
