@@ -56,5 +56,6 @@ export default async function LearningResources() {
 export const metadata = createMetadata({
   title: { absolute: LEARNING_RESOURCES_SEO.title },
   description: LEARNING_RESOURCES_SEO.description,
+  image: graphicsData.learningResources.data.src,
   path: PATHS.LEARNING_RESOURCES.path,
 })
