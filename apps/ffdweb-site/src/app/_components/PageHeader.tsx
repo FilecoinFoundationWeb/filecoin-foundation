@@ -90,9 +90,9 @@ PageHeader.Image = function PageHeaderImage({
     priority: true,
     quality: 100,
     sizes: buildImageSizeProp({
-      startSize: '90vw',
-      sm: '384px',
-      lg: '320px',
+      startSize: '100vw',
+      sm: '340px',
+      lg: '384px',
     }),
   }
 
