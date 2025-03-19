@@ -65,7 +65,7 @@ export function Footer() {
 
       <div className="grid gap-8">
         <hr className="text-neutral-600" />
-        <div className="grid grid-rows-2 gap-5 text-neutral-200 lg:grid-cols-2 lg:grid-rows-1 lg:items-baseline">
+        <div className="grid grid-rows-2 gap-5 text-sm text-neutral-200 lg:grid-cols-2 lg:grid-rows-1 lg:items-baseline">
           <ul
             className={clsx(
               'grid auto-cols-max grid-flow-col',
@@ -84,7 +84,7 @@ export function Footer() {
             ))}
           </ul>
 
-          <p className="text-sm lg:text-end">
+          <p className="lg:text-end">
             &copy; {new Date().getFullYear()} Filecoin Foundation for
             Decentralized Web{' '}
           </p>
