@@ -33,7 +33,7 @@ function ButtonInner({
     <>
       {!isExternalLink && Icon && <IconComponent component={Icon} />}
       {children}
-      {isExternalLink && <IconComponent component={ArrowUpRight} />}
+      {isExternalLink && <IconComponent component={ArrowUpRight} size={20} />}
     </>
   )
 }
