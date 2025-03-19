@@ -12,6 +12,8 @@ import { clsx } from 'clsx'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
+import { Kicker } from '@/components/Kicker'
+
 type TitleProps = {
   children: string
   isHomepage?: PageHeaderProps['isHomepage']
@@ -46,13 +48,13 @@ export function PageHeader({
         )}
       >
         <div className="flex flex-col gap-8">
-          {kicker && (
-            <span className="block font-bold text-neutral-400">{kicker}</span>
-          )}
+          {kicker && <Kicker as="div">{kicker}</Kicker>}
           <PageHeader.Title isHomepage={isHomepage}>{title}</PageHeader.Title>
         </div>
+
         {cta && <PageHeader.CTAButton {...cta} />}
       </div>
+
       <div
         className={clsx(
           'flex justify-center lg:order-2 lg:justify-end',

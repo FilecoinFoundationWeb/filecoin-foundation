@@ -5,6 +5,8 @@ import {
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { clsx } from 'clsx'
 
+import { Kicker } from './Kicker'
+
 export type PageSectionProps = {
   kicker: string
   title: string
@@ -30,9 +32,7 @@ export function PageSection({
           isCentered && 'max-w-xl lg:mx-auto lg:text-center',
         )}
       >
-        <span className="inline-block font-bold text-neutral-400">
-          {kicker}
-        </span>
+        <Kicker>{kicker}</Kicker>
 
         <Heading tag="h2" variant="3xl-medium">
           {title}
