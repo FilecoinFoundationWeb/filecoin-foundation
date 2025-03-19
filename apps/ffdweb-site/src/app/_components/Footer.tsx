@@ -8,7 +8,7 @@ import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { LogoLink } from './Logo/LogoLink'
+import { LogoLink } from '@/components/LogoLink'
 
 import FooterDecorationLeft from '@/assets/graphics/footer-decoration-left.svg'
 import FooterDecorationRight from '@/assets/graphics/footer-decoration-right.svg'
@@ -36,7 +36,7 @@ export function Footer() {
           FOOTER_GAP,
         )}
       >
-        <LogoLink />
+        <LogoLink height={64} />
 
         <nav
           aria-label="Footer navigation"
