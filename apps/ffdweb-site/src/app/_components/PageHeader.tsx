@@ -89,7 +89,7 @@ PageHeader.Image = function PageHeaderImage({
     alt: image.alt,
     priority: true,
     quality: 100,
-    sizes: buildImageSizeProp({ startSize: '384px', lg: '320px' }),
+    sizes: buildImageSizeProp({ startSize: '300px', lg: '380px' }),
   }
 
   if (isStaticImage) {
