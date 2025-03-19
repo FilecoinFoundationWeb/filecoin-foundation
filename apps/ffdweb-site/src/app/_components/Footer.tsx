@@ -8,7 +8,7 @@ import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { LogoLink } from './Logo/LogoLink'
+import { LogoLink } from '@/components/LogoLink'
 
 import FooterDecorationLeft from '@/assets/graphics/footer-decoration-left.svg'
 import FooterDecorationRight from '@/assets/graphics/footer-decoration-right.svg'
@@ -36,7 +36,7 @@ export function Footer() {
           FOOTER_GAP,
         )}
       >
-        <LogoLink />
+        <LogoLink height={64} />
 
         <nav
           aria-label="Footer navigation"
@@ -65,7 +65,7 @@ export function Footer() {
 
       <div className="grid gap-8">
         <hr className="text-neutral-600" />
-        <div className="grid grid-rows-2 gap-5 text-neutral-200 lg:grid-cols-2 lg:grid-rows-1 lg:items-baseline">
+        <div className="grid grid-rows-2 gap-5 text-sm text-neutral-200 lg:grid-cols-2 lg:grid-rows-1 lg:items-baseline">
           <ul
             className={clsx(
               'grid auto-cols-max grid-flow-col',
@@ -84,7 +84,7 @@ export function Footer() {
             ))}
           </ul>
 
-          <p className="text-sm lg:text-end">
+          <p className="lg:text-end">
             &copy; {new Date().getFullYear()} Filecoin Foundation for
             Decentralized Web{' '}
           </p>
