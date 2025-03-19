@@ -49,7 +49,7 @@ export function Button({
   ...rest
 }: ButtonProps) {
   className = clsx(
-    'button focus:brand-outline inline-flex items-center justify-center gap-2 px-6 py-3 transition hover:no-underline sm:px-9',
+    'button focus:brand-outline inline-flex items-center justify-center gap-2 py-3 transition hover:no-underline',
     variantClasses[variant],
     {
       'button--disabled disabled:pointer-events-none': disabled,
