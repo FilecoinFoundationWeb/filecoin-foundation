@@ -1,16 +1,15 @@
 import { Button } from '@filecoin-foundation/ui/Button'
 import {
   DescriptionText,
-  type DescriptionTextType,
+  type DescriptionProps,
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
-
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 type CTASectionProps = {
   title: string
-  description: DescriptionTextType
+  description: DescriptionProps['children']
   cta?: {
     href: string
     text: string

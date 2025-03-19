@@ -6,10 +6,6 @@ updated-on: "2023-04-21T07:18:30.774Z"
 created-on: "2023-04-21T07:16:08.045Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >-
-  Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce an
-  award to the Library Innovation Lab (LIL) at Harvard University to support its
-  Democratizing Open Knowledge program.
 image:
   src: >-
     /assets/images/64423837922f062c19150fda_1-sqxvnk6dltsa3a9ec1fbyg.png

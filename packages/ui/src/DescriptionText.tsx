@@ -1,22 +1,16 @@
-type DescriptionProps = {
-  className?: string
-  children: DescriptionTextType
+import clsx from 'clsx'
+
+export type DescriptionProps = {
+  isClamped?: boolean
+  children: React.ReactNode
 }
 
-export type DescriptionTextType = React.ReactNode
+export function DescriptionText({ children, isClamped }: DescriptionProps) {
+  const childrenArray = Array.isArray(children) ? children : [children]
 
-export function DescriptionText({ className, children }: DescriptionProps) {
-  if (Array.isArray(children)) {
-    return (
-      <>
-        {children.map((item, index) => (
-          <p className={className} key={index}>
-            {item}
-          </p>
-        ))}
-      </>
-    )
-  }
-
-  return <p className={className}>{children}</p>
+  return childrenArray.map((item, index) => (
+    <p key={index} className={clsx(isClamped && 'line-clamp-3 text-ellipsis')}>
+      {item}
+    </p>
+  ))
 }

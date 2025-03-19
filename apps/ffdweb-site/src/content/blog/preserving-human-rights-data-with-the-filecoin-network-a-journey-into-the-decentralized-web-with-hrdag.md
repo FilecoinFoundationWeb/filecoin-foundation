@@ -5,13 +5,6 @@ created-on: 2024-04-18T16:50:24.039Z
 updated-on: 2024-04-18T16:50:24.046Z
 published-on: 2024-04-18T16:50:24.051Z
 category: projects
-description: >
-  This is a guest post from FFDW project partner Human Rights Data Analysis
-  Group (HRDAG), written by Patrick Ball, HRDAG’s Director of Research. HRDAG
-  began working with Filecoin Foundation for the Decentralized Web (FFDW) in
-  2021 to explore how decentralized technologies can support efforts to
-  safeguard this critical data and promote accountability for human rights
-  abuse.
 image:
   src: /assets/images/041524-guest-hrdag.png
 seo:

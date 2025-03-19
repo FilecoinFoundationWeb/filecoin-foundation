@@ -4,10 +4,6 @@ created-on: "2023-04-21T07:15:45.476Z"
 updated-on: "2023-04-21T07:15:45.476Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: use-cases
-description: >-
-  Since 2010, Michael Morisy and his team at MuckRock have been working to solve
-  this problem: how do we help newsrooms and leaders build trust in an age of
-  growing misinformation?
 image:
   src: >-
     /assets/images/64423821fcf3ec505f7f19bd_0202-muckrock-spotlight.png

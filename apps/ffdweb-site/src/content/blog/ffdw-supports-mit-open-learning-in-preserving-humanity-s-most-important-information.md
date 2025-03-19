@@ -6,10 +6,6 @@ created-on: "2023-04-21T07:16:01.068Z"
 updated-on: "2023-04-21T07:16:01.068Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >-
-  Filecoin Foundation for the Decentralized Web (FFDW) is proud to support MIT
-  Open Learning, an organization focused on transforming teaching and learning
-  through the innovative use of digital technologies.
 image:
   src: >-
     /assets/images/64423830e3c08f43474e3c40_0202-mit.png

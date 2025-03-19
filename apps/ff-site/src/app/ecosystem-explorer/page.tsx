@@ -46,7 +46,7 @@ export default async function EcosystemExplorer(props: Props) {
 
       <PageHeader
         title={header.title}
-        description={header.description}
+        description={{ text: header.description }}
         image={graphicsData.ecosystem}
       >
         <Button href={PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path}>

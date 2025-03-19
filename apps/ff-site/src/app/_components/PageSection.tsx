@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import {
   DescriptionText,
-  type DescriptionTextType,
+  type DescriptionProps,
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -21,7 +21,7 @@ import {
 type PageSectionProps = {
   kicker: SectionDividerProps['title']
   title: string
-  description?: DescriptionTextType
+  description?: DescriptionProps['children']
   image?: StaticImageProps
   cta?: CTAButtonGroupProps['cta']
   children?: React.ReactNode

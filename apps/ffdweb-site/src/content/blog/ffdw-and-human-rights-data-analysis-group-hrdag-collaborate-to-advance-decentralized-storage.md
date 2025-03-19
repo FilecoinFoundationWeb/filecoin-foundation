@@ -6,9 +6,6 @@ created-on: "2023-04-21T07:15:54.027Z"
 updated-on: "2023-04-21T07:18:21.985Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >-
-  Collaboration will support outreach and training to accelerate market research
-  for and adoption of decentralized web technologies
 image:
   src: >-
     /assets/images/64423829fcf3ec16737f20d9_hrdag.png

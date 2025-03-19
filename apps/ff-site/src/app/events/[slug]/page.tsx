@@ -94,7 +94,7 @@ export default async function EventEntry(props: EventProps) {
 
         <PageHeader
           title={title}
-          description={description}
+          description={{ text: description }}
           metaData={getMetaData({
             startDate,
             endDate,

@@ -56,7 +56,7 @@ export default async function Grants() {
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
-        description={header.description}
+        description={{ text: header.description }}
         image={graphicsData.grants}
       >
         <Button href={FILECOIN_FOUNDATION_URLS.grants.github}>Apply Now</Button>

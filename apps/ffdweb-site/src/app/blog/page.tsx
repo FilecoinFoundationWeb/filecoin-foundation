@@ -40,7 +40,7 @@ export default async function Blog() {
         isFeatured
         title={featuredPost.title}
         metaData={[formatDate(featuredPost.publishedOn)]}
-        description={featuredPost.description}
+        description={{ text: featuredPost.description, isClamped: true }}
         image={{
           ...(featuredPost.image || graphicsData.imageFallback.data),
           alt: '',

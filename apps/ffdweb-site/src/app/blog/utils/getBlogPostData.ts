@@ -1,5 +1,6 @@
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
 import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
+import removeMarkdown from 'remove-markdown'
 
 import { PATHS } from '@/constants/paths'
 
@@ -34,6 +35,7 @@ function transformBlogPostData(
 ) {
   return {
     ...post,
+    description: removeMarkdown(post.content),
     seo: {
       ...post.seo,
       title: post.seo.title || post.title,

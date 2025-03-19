@@ -4,9 +4,6 @@ created-on: 2023-05-30T09:57:39.743Z
 updated-on: 2023-05-30T09:57:00.000Z
 published-on: 2023-05-30T09:57:00.000Z
 category: projects
-description: Can decentralization really help build community? And how can
-  healthier social relations emerge around our technology, particularly in terms
-  of self-governance, autonomy, and accessibility?
 image:
   src: /assets/images/051723-ucboulder.png
 seo:

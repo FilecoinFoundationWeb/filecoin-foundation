@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import PlausibleProvider from 'next-plausible'
 
 import '@/styles/globals.css'
 
@@ -6,6 +7,7 @@ import {
   BASE_URL,
   ORGANIZATION_NAME,
   ORGANIZATION_NAME_SHORT,
+  BASE_DOMAIN,
 } from '@/constants/siteMetadata'
 
 import { SiteLayout } from '@/components/SiteLayout'
@@ -23,5 +25,14 @@ type RootLayoutProps = {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  return <SiteLayout>{children}</SiteLayout>
+  return (
+    <PlausibleProvider
+      trackOutboundLinks
+      hash
+      trackFileDownloads
+      domain={BASE_DOMAIN}
+    >
+      <SiteLayout>{children}</SiteLayout>
+    </PlausibleProvider>
+  )
 }

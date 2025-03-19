@@ -6,10 +6,6 @@ created-on: "2023-04-21T07:16:06.513Z"
 updated-on: "2023-04-21T07:18:29.556Z"
 published-on: "2023-04-21T08:01:04.314Z"
 category: projects
-description: >-
-  Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our
-  award to TechCongress, an organization that provides fellowships to bridge the
-  informational gap between technologists and policymakers in Congress.
 image:
   src: >-
     /assets/images/64423836a6ec419f1a28faed_1-by_cgybu5ago6_yxuh93g.png

@@ -59,7 +59,7 @@ export default async function Events(props: Props) {
       <PageHeader
         sectionDividerTitle="Featured"
         title={featuredEvent.title}
-        description={featuredEvent.description}
+        description={{ text: featuredEvent.description }}
         metaData={getMetaData({
           startDate: featuredEvent.startDate,
           endDate: featuredEvent.endDate,
