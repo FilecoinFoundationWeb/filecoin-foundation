@@ -17,14 +17,9 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
+import { DIGEST_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getDigestArticlesData } from './utils/getDigestArticleData'
-
-const DIGEST_SEO = {
-  title: 'FFDW DWeb Digest | In-Depth Exploration of the Decentralized Web',
-  description:
-    'Explore FFDW DWeb Digest for expert insights on cognitive liberty, privacy, and crypto policy. Discover the evolving landscape of digital autonomy and blockchain.',
-} as const
 
 export default async function Digest() {
   const articles = await getDigestArticlesData()

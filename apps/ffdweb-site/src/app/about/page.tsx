@@ -20,13 +20,8 @@ import { IconCardGrid } from './components/IconCardGrid'
 import { boardMembers } from './constants/boardMembers'
 import { impactAreas } from './constants/impactAreas'
 import { priorities } from './constants/priorities'
+import { ABOUT_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
-
-const ABOUT_SEO = {
-  title: 'About FFDW | Building and Supporting the Decentralized Community',
-  description:
-    'Discover how Filecoin Foundation for the Decentralized Web (FFDW) accelerates open, decentralized technologies and safeguards vital data. Learn about our mission to empower communities, preserve cultural knowledge, and shape a fairer, more resilient internet for everyone.',
-} as const
 
 export default function About() {
   return (
