@@ -108,6 +108,10 @@
     @apply text-brand-700;
   }
 
+  .avatar-group-expanded-full-name {
+    @apply text-brand-300;
+  }
+
   /* BREADCRUMBS */
   .breadcrumb-link {
     @apply hover:underline focus:brand-outline;
