@@ -1,17 +1,12 @@
 import Image from 'next/image'
 
+import { type Author } from '@filecoin-foundation/utils/types/authorTypes'
 import { clsx } from 'clsx'
 
 const IMAGE_SIZE = 32
 const sharedAvatarStyle = 'rounded-full ring avatar-ring'
 
-export type AvatarProps = {
-  firstName: string
-  lastName: string
-  image?: { src: string }
-}
-
-export function Avatar({ firstName, lastName, image }: AvatarProps) {
+export function Avatar({ firstName, lastName, image }: Author) {
   if (image) {
     return (
       <Image

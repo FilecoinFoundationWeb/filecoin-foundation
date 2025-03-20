@@ -1,8 +1,8 @@
-import { Avatar, type AvatarProps } from './Avatar'
+import { Avatar } from './Avatar'
 
-type AuthorWithCompany = AvatarProps & {
-  company: string
-}
+import { type AuthorExtended } from '@filecoin-foundation/utils/types/authorTypes'
+
+type AuthorWithCompany = Omit<AuthorExtended, 'bio'>
 
 export type AvatarGroupProps = {
   authors: Array<AuthorWithCompany>

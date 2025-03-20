@@ -14,7 +14,7 @@ authors:
     company: Fight for the Future, Quiet
     image:
       src: /assets/headshots/Holmes_Wilson.webp
-    # bio: Holmes Wilson is a co-founder of Fight for the Future and Quiet, a decentralized alternative to Slack and Discord built on Tor and IPFS.
+    bio: Holmes Wilson is a co-founder of Fight for the Future and Quiet, a decentralized alternative to Slack and Discord built on Tor and IPFS.
 seo:
   description: While free software has become ubiquitous, its goal of user control remains elusive due to cloud service dependencies. The solution lies in decentralization - making operational power as accessible as the code itself.
 ---
