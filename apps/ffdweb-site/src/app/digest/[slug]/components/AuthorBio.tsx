@@ -5,12 +5,14 @@ type AuthorBioProps = {
 }
 
 export function AuthorBio({ author }: AuthorBioProps) {
+  const { firstName, lastName, bio } = author
+
   return (
     <div className="flex flex-col gap-2">
       <p className="font-bold">
-        {author.firstName} {author.lastName}
+        {firstName} {lastName}
       </p>
-      <p className="prose">{author.bio}</p>
+      <p className="prose">{bio}</p>
     </div>
   )
 }
