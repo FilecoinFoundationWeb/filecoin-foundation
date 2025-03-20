@@ -2,11 +2,7 @@ import type { AbsoluteString } from 'next/dist/lib/metadata/types/metadata-types
 
 import type { Metadata } from 'next'
 
-import {
-  BASE_URL,
-  FFDW_URLS,
-  ORGANIZATION_NAME,
-} from '@/constants/siteMetadata'
+import { FFDW_URLS, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -23,6 +19,7 @@ export type MetadataParams = {
   image?: string
   openGraph?: SharedSocialMetadata & {
     type?: 'website' | 'article'
+    locale?: string
   }
   twitter?: SharedSocialMetadata & {
     card?: 'summary' | 'summary_large_image' | 'player'
@@ -43,13 +40,14 @@ export function createMetadata({
 
   const {
     type = 'website',
+    locale = 'en_US',
     title: openGraphTitle = title,
     description: openGraphDescription = description,
     image: openGraphImage = imageArray,
   } = openGraph
 
   const {
-    card = 'summary',
+    card = 'summary_large_image',
     title: twitterTitle = title,
     description: twitterDescription = description,
     site = FFDW_URLS.social.twitter.handle,
@@ -62,11 +60,12 @@ export function createMetadata({
     description,
     openGraph: {
       type,
+      locale,
       title: openGraphTitle,
       description: openGraphDescription,
       images: openGraphImage,
       siteName: ORGANIZATION_NAME,
-      url: BASE_URL,
+      url: path,
     },
     twitter: {
       title: twitterTitle,
