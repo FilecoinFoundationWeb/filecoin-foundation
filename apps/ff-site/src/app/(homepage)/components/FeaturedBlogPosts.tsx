@@ -20,7 +20,7 @@ export function FeaturedBlogPosts({
   featuredBlogPosts,
 }: FeaturedBlogPostsProps) {
   return (
-    <CardGrid cols="smTwo">
+    <CardGrid cols="smTwo" as="section">
       {featuredBlogPosts.map(
         ({ title, description, slug, image, category, publishedOn }) => {
           const categoryLabel = getCategoryLabel({
@@ -31,6 +31,7 @@ export function FeaturedBlogPosts({
           return (
             <Card
               key={slug}
+              as="article"
               metaData={[formatDate(publishedOn)]}
               tags={[{ text: categoryLabel }]}
               title={title}

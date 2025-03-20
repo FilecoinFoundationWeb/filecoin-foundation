@@ -44,7 +44,7 @@ export default async function Digest() {
         kicker="Issue 1 | May 2024"
         title="DWeb Digest: Inaugural Edition"
       >
-        <CardGrid cols="smTwo">
+        <CardGrid cols="smTwo" as="section">
           {articles.map((article) => {
             const { title, image, slug, articleNumber, description, authors } =
               article
@@ -52,6 +52,7 @@ export default async function Digest() {
             return (
               <Card
                 key={slug}
+                as="article"
                 title={title}
                 avatars={authors}
                 description={{ text: description, isClamped: true }}

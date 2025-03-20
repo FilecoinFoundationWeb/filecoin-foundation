@@ -68,11 +68,12 @@ export default async function Home() {
         kicker="Featured Projects"
         title="Building Decentralized Solutions for Real-World Impact"
       >
-        <CardGrid cols="mdThree">
+        <CardGrid cols="mdThree" as="section">
           {featuredProjects.map(({ title, description, slug, image }) => {
             return (
               <Card
                 key={slug}
+                as="article"
                 title={title}
                 description={{ text: description, isClamped: true }}
                 cta={{
@@ -138,7 +139,7 @@ export default async function Home() {
         kicker="Latest News"
         title="Updates from FFDW and DWeb Community"
       >
-        <CardGrid cols="smTwoLgThree">
+        <CardGrid cols="smTwoLgThree" as="section">
           {featuredBlogPosts.map((post, i) => {
             const { slug, category, title, description, image, publishedOn } =
               post
@@ -151,6 +152,7 @@ export default async function Home() {
             return (
               <Card
                 key={slug}
+                as="article"
                 title={title}
                 description={{ text: description, isClamped: true }}
                 metaData={[formatDate(publishedOn)]}

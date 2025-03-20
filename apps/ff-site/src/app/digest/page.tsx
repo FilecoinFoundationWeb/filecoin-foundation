@@ -53,7 +53,7 @@ export default async function Digest() {
           'Published in September 2024, the inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and sustainable data centers. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future.',
         ]}
       >
-        <CardGrid cols="smTwo">
+        <CardGrid cols="smTwo" as="section">
           {articles.map((article) => {
             const {
               title,
@@ -68,6 +68,7 @@ export default async function Digest() {
             return (
               <Card
                 key={slug}
+                as="article"
                 title={title}
                 avatars={authors}
                 description={{ text: description, isClamped: true }}

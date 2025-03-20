@@ -116,7 +116,7 @@ export function BlogContent({ posts }: BlogContentProps) {
             <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
           ) : (
             <>
-              <CardGrid cols="smTwo">
+              <CardGrid cols="smTwo" as="section">
                 {paginatedResults.map((post, i) => {
                   const {
                     slug,
@@ -136,6 +136,7 @@ export function BlogContent({ posts }: BlogContentProps) {
                   return (
                     <Card
                       key={slug}
+                      as="article"
                       title={title}
                       description={{ text: description, isClamped: true }}
                       metaData={[formatDate(publishedOn)]}
