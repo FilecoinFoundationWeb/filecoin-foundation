@@ -1,4 +1,4 @@
-import { LAYOUT_METADATA } from '@/constants/siteMetadata'
+import { LAYOUT_METADATA, BASE_URL } from '@/constants/siteMetadata'
 
 import type { MetadataParams } from '@/utils/createMetadata'
 
@@ -24,6 +24,11 @@ export function testPageMetaData(options: TestMetaDataOptions) {
   cy.get('head meta[name="description"]')
     .should('have.attr', 'content', description)
     .should('eq', description)
+
+  // Canonical link
+  cy.get('link[rel="canonical"]')
+    .should('have.attr', 'href', `${BASE_URL}${path}`)
+    .should('eq', `${BASE_URL}${path}`)
 
   // OG title
   cy.get('head meta[property="og:title"]')
