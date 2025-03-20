@@ -1,3 +1,5 @@
+import { Suspense } from 'react'
+
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -32,10 +34,9 @@ import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 export default async function Home() {
   const featuredProjects = await getFeaturedProjects(FEATURED_PROJECTS)
-  const posts = await getBlogPostsData()
 
   const featuredBlogPosts = getFeaturedBlogPosts({
-    posts,
+    posts: await getBlogPostsData(),
     limit: 6,
   })
 
@@ -71,31 +72,33 @@ export default async function Home() {
         title="Building Decentralized Solutions for Real-World Impact"
       >
         <CardGrid cols="mdThree">
-          {featuredProjects.map(({ title, description, slug, image }) => {
-            return (
-              <Card
-                key={slug}
-                title={title}
-                description={{ text: description, isClamped: true }}
-                cta={{
-                  href: `${PATHS.PROJECTS.path}/${slug}`,
-                  text: 'Read More',
-                  icon: CARET_RIGHT,
-                }}
-                image={{
-                  ...(image || graphicsData.imageFallback.data),
-                  alt: '',
-                  objectFit: 'contain',
-                  sizes: buildImageSizeProp({
-                    startSize: '100vw',
-                    sm: '350px',
-                    md: '470px',
-                    lg: '360px',
-                  }),
-                }}
-              />
-            )
-          })}
+          <Suspense fallback={<div>Loading...</div>}>
+            {featuredProjects.map(({ title, description, slug, image }) => {
+              return (
+                <Card
+                  key={slug}
+                  title={title}
+                  description={{ text: description, isClamped: true }}
+                  cta={{
+                    href: `${PATHS.PROJECTS.path}/${slug}`,
+                    text: 'Read More',
+                    icon: CARET_RIGHT,
+                  }}
+                  image={{
+                    ...(image || graphicsData.imageFallback.data),
+                    alt: '',
+                    objectFit: 'contain',
+                    sizes: buildImageSizeProp({
+                      startSize: '100vw',
+                      sm: '350px',
+                      md: '470px',
+                      lg: '360px',
+                    }),
+                  }}
+                />
+              )
+            })}
+          </Suspense>
         </CardGrid>
 
         <div className="flex justify-center">
@@ -141,41 +144,43 @@ export default async function Home() {
         title="Updates from FFDW and DWeb Community"
       >
         <CardGrid cols="smTwoLgThree">
-          {featuredBlogPosts.map((post, i) => {
-            const { slug, category, title, description, image, publishedOn } =
-              post
+          <Suspense fallback={<div>Loading...</div>}>
+            {featuredBlogPosts.map((post) => {
+              const { slug, category, title, description, image, publishedOn } =
+                post
 
-            const categoryLabel = getCategoryLabel({
-              collectionName: 'blog_posts',
-              category,
-            })
+              const categoryLabel = getCategoryLabel({
+                collectionName: 'blog_posts',
+                category,
+              })
 
-            return (
-              <Card
-                key={slug}
-                title={title}
-                description={{ text: description, isClamped: true }}
-                metaData={[formatDate(publishedOn)]}
-                tags={[{ text: categoryLabel }]}
-                cta={{
-                  href: `${PATHS.BLOG.path}/${slug}`,
-                  text: 'Read Post',
-                  icon: CARET_RIGHT,
-                }}
-                image={{
-                  ...(image || graphicsData.imageFallback.data),
-                  alt: '',
-                  objectFit: 'cover',
-                  sizes: buildImageSizeProp({
-                    startSize: '100vw',
-                    sm: '350px',
-                    md: '470px',
-                    lg: '360px',
-                  }),
-                }}
-              />
-            )
-          })}
+              return (
+                <Card
+                  key={slug}
+                  title={title}
+                  description={{ text: description, isClamped: true }}
+                  metaData={[formatDate(publishedOn)]}
+                  tags={[{ text: categoryLabel }]}
+                  cta={{
+                    href: `${PATHS.BLOG.path}/${slug}`,
+                    text: 'Read Post',
+                    icon: CARET_RIGHT,
+                  }}
+                  image={{
+                    ...(image || graphicsData.imageFallback.data),
+                    alt: '',
+                    objectFit: 'cover',
+                    sizes: buildImageSizeProp({
+                      startSize: '100vw',
+                      sm: '350px',
+                      md: '470px',
+                      lg: '360px',
+                    }),
+                  }}
+                />
+              )
+            })}
+          </Suspense>
         </CardGrid>
 
         <div className="flex justify-center">
