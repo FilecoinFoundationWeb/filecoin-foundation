@@ -30,12 +30,12 @@ import { getFeaturedProjects } from './utils/getFeaturedProjects'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
-export const revalidate = 3600
-
 export default async function Home() {
   const featuredProjects = await getFeaturedProjects(FEATURED_PROJECTS)
+  const posts = await getBlogPostsData()
+
   const featuredBlogPosts = getFeaturedBlogPosts({
-    posts: await getBlogPostsData(),
+    posts,
     limit: 6,
   })
 
