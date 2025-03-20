@@ -3,7 +3,7 @@ import { ArticleHeader } from '@filecoin-foundation/ui/Article/ArticleHeader'
 import {
   type AvatarGroupExpandedProps,
   AvatarGroupExpanded,
-} from '@filecoin-foundation/ui/AvatarGroup'
+} from './Avatar/AvatarGroupExpanded'
 import { TagGroup } from '@filecoin-foundation/ui/TagComponents'
 
 type DigestArticleProps = {
