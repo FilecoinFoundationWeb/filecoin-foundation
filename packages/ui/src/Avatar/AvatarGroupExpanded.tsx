@@ -23,8 +23,8 @@ export function AvatarGroupExpanded({ authors }: AvatarGroupExpandedProps) {
             size="large"
           />
           <div className="flex flex-col gap-0.5">
-            <span className="avatar-group-expanded-full-name">{`${firstName} ${lastName}`}</span>
-            <span>{company}</span>
+            <span className="avatar-group-expanded-full-name font-medium">{`${firstName} ${lastName}`}</span>
+            <span className="text-sm">{company}</span>
           </div>
         </div>
       ))}
