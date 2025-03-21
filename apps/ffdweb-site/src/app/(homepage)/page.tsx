@@ -71,41 +71,7 @@ export default async function Home() {
         kicker="Featured Projects"
         title="Building Decentralized Solutions for Real-World Impact"
       >
-        <CardGrid cols="mdThree">
-          <Suspense fallback={<div>Loading...</div>}>
-            {featuredProjects.map(({ title, description, slug, image }) => {
-              return (
-                <Card
-                  key={slug}
-                  title={title}
-                  description={{ text: description, isClamped: true }}
-                  cta={{
-                    href: `${PATHS.PROJECTS.path}/${slug}`,
-                    text: 'Read More',
-                    icon: CARET_RIGHT,
-                  }}
-                  image={{
-                    ...(image || graphicsData.imageFallback.data),
-                    alt: '',
-                    objectFit: 'contain',
-                    sizes: buildImageSizeProp({
-                      startSize: '100vw',
-                      sm: '350px',
-                      md: '470px',
-                      lg: '360px',
-                    }),
-                  }}
-                />
-              )
-            })}
-          </Suspense>
-        </CardGrid>
-
-        <div className="flex justify-center">
-          <Button href={PATHS.PROJECTS.path} className="flex-1 sm:flex-none">
-            View All Projects
-          </Button>
-        </div>
+        <FeaturedProjects />
       </PageSection>
 
       <PageSection
@@ -143,49 +109,7 @@ export default async function Home() {
         kicker="Latest News"
         title="Updates from FFDW and DWeb Community"
       >
-        <CardGrid cols="smTwoLgThree">
-          <Suspense fallback={<div>Loading...</div>}>
-            {featuredBlogPosts.map((post) => {
-              const { slug, category, title, description, image, publishedOn } =
-                post
-
-              const categoryLabel = getCategoryLabel({
-                collectionName: 'blog_posts',
-                category,
-              })
-
-              return (
-                <Card
-                  key={slug}
-                  title={title}
-                  description={{ text: description, isClamped: true }}
-                  metaData={[formatDate(publishedOn)]}
-                  tags={[{ text: categoryLabel }]}
-                  cta={{
-                    href: `${PATHS.BLOG.path}/${slug}`,
-                    text: 'Read Post',
-                    icon: CARET_RIGHT,
-                  }}
-                  image={{
-                    ...(image || graphicsData.imageFallback.data),
-                    alt: '',
-                    objectFit: 'cover',
-                    sizes: buildImageSizeProp({
-                      startSize: '100vw',
-                      sm: '350px',
-                      md: '470px',
-                      lg: '360px',
-                    }),
-                  }}
-                />
-              )
-            })}
-          </Suspense>
-        </CardGrid>
-
-        <div className="flex justify-center">
-          <Button href={PATHS.BLOG.path}>View All News</Button>
-        </div>
+        <LatestNews />
       </PageSection>
 
       <CTASection
@@ -197,6 +121,83 @@ export default async function Home() {
         }}
       />
     </PageLayout>
+  )
+}
+
+const FeaturedProjects = async () => {
+  const featuredProjects = await getFeaturedProjects(FEATURED_PROJECTS)
+
+  return (
+    <CardGrid cols="mdThree">
+      {featuredProjects.map(({ title, description, slug, image }) => (
+        <Card
+          key={slug}
+          title={title}
+          description={{ text: description, isClamped: true }}
+          cta={{
+            href: `${PATHS.PROJECTS.path}/${slug}`,
+            text: 'Read More',
+            icon: CARET_RIGHT,
+          }}
+          image={{
+            ...(image || graphicsData.imageFallback.data),
+            alt: '',
+            objectFit: 'contain',
+            sizes: buildImageSizeProp({
+              startSize: '100vw',
+              sm: '350px',
+              md: '470px',
+              lg: '360px',
+            }),
+          }}
+        />
+      ))}
+    </CardGrid>
+  )
+}
+
+const LatestNews = async () => {
+  const featuredBlogPosts = getFeaturedBlogPosts({
+    posts: await getBlogPostsData(),
+    limit: 6,
+  })
+
+  return (
+    <CardGrid cols="smTwoLgThree">
+      {featuredBlogPosts.map((post) => {
+        const { slug, category, title, description, image, publishedOn } = post
+        const categoryLabel = getCategoryLabel({
+          collectionName: 'blog_posts',
+          category,
+        })
+
+        return (
+          <Card
+            key={slug}
+            title={title}
+            description={{ text: description, isClamped: true }}
+            metaData={[formatDate(publishedOn)]}
+            tags={[{ text: categoryLabel }]}
+            cta={{
+              href: `${PATHS.BLOG.path}/${slug}`,
+              text: 'Read Post',
+              icon: CARET_RIGHT,
+            }}
+            image={{
+              ...(image || graphicsData.imageFallback.data),
+              alt: '',
+              objectFit: 'cover',
+              sizes: buildImageSizeProp({
+                startSize: '100vw',
+                sm: '350px',
+                md: '470px',
+                lg: '360px',
+              }),
+            }}
+          />
+        )
+      })}
+    </CardGrid>
   )
 }
 
