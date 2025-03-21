@@ -6,7 +6,7 @@ import {
   type TagGroupProps,
   TagGroup,
 } from '@filecoin-foundation/ui/TagComponents'
-import { type CTAProps } from '@filecoin-foundation/utils/types/ctaType'
+import { type ExtendedCTAProps } from '@filecoin-foundation/utils/types/ctaType'
 import { clsx } from 'clsx'
 
 import { Meta, type MetaDataType } from '../Meta'
@@ -15,9 +15,6 @@ import { type CardDescriptionProps, CardDescription } from './CardDescription'
 import { type CardTitleProps, CardTitle } from './CardTitle'
 import { type CardImageProps, CardImage } from './CardImage'
 import { CardLink } from './CardLink'
-export type ExtendedCTAProps = CTAProps & {
-  baseDomain: string
-}
 
 export type CardProps = {
   as: 'li' | 'article' | 'div'

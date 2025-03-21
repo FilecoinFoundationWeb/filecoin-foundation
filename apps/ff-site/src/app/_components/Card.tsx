@@ -1,8 +1,9 @@
 import {
   Card as SharedCard,
-  type ExtendedCTAProps,
   type CardProps as SharedCardProps,
 } from '@filecoin-foundation/ui/Card/Card'
+import { CardLink as SharedCardLink } from '@filecoin-foundation/ui/Card/CardLink'
+import type { ExtendedCTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
@@ -21,6 +22,6 @@ export function Card({ cta, ...rest }: CardProps) {
   return <SharedCard cta={ctaWithBaseDomain} {...rest} />
 }
 
-Card.Link = function CardLink({ ...rest }: CTAWithoutBaseDomain) {
-  return <SharedCard.Link {...rest} baseDomain={BASE_DOMAIN} />
+export function CardLink({ ...rest }: CTAWithoutBaseDomain) {
+  return <SharedCardLink {...rest} baseDomain={BASE_DOMAIN} />
 }

@@ -117,7 +117,7 @@ export default function About() {
                 <Card
                   as="div"
                   title={title}
-                  description={description}
+                  description={{ text: description }}
                   image={
                     image && {
                       ...(image || graphicsData.imageFallback.data),
