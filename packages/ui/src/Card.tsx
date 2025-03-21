@@ -42,7 +42,7 @@ export type ExtendedCTAProps = CTAProps & {
 
 export type CardProps = {
   as: 'li' | 'article' | 'div'
-  title: string | React.ReactNode
+  title: string
   tags?: TagGroupProps['tags']
   metaData?: MetaDataType
   description?: string | CardDescriptionProps
@@ -107,7 +107,6 @@ Card.Image = function ImageComponent({
   image,
 }: Required<Pick<CardProps, 'image'>>) {
   const isStaticImage = 'data' in image
-  // const aspectRatio = image.aspectRatio || 'video'
   const ASPECT_RATIO =
     image.aspectRatio === 'square' ? 'aspect-square' : 'aspect-video'
 
