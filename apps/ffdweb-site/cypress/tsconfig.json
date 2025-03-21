@@ -8,5 +8,6 @@
       "@/utils/*": ["src/app/_utils/*"],
       "@/support/*": ["cypress/support/*"]
     }
-  }
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
 }
