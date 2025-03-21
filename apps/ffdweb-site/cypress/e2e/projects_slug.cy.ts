@@ -6,7 +6,7 @@ import { tests } from '@/support/index'
 
 const CONTENT_FOLDER = 'projects'
 
-describe('Project Slug', () => {
+describe('Projects Slug Page', () => {
   it(tests.metadata.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
       cy.task<Frontmatter>('getEntryFrontmatter', {

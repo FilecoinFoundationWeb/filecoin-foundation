@@ -3,7 +3,7 @@ import { PATHS } from '@/constants/paths'
 import { PRIVACY_POLICY_SEO } from '@/privacy-policy/constants/seo'
 import { tests } from '@/support/index'
 
-describe('Privacy Policy', () => {
+describe('Privacy Policy Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path: PATHS.PRIVACY_POLICY.path,
