@@ -1,4 +1,4 @@
-export type Frontmatter = {
+export type GenericFrontmatter = {
   title: string
   seo: {
     title?: string
