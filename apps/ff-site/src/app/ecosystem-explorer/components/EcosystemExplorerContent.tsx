@@ -114,7 +114,7 @@ export function EcosystemExplorerContent({
             <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
           ) : (
             <>
-              <CardGrid cols="smTwo">
+              <CardGrid as="section" cols="smTwo">
                 {paginatedResults.map((project, i) => {
                   const {
                     slug,
@@ -133,6 +133,7 @@ export function EcosystemExplorerContent({
                   return (
                     <Card
                       key={slug}
+                      as="article"
                       title={title}
                       description={description}
                       tags={[{ text: category.label }]}

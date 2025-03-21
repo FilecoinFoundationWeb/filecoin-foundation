@@ -18,10 +18,11 @@ export function FeaturedGrantGraduates({
   grantGraduates,
 }: FeaturedGrantsGraduatesProps) {
   return (
-    <CardGrid cols="smTwo">
+    <CardGrid as="section" cols="smTwo">
       {grantGraduates.map(({ title, description, slug, image }) => (
         <Card
           key={slug}
+          as="article"
           title={title}
           description={{ text: description, isClamped: true }}
           cta={{

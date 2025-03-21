@@ -68,11 +68,12 @@ export default async function Home() {
         kicker="Featured Projects"
         title="Building Decentralized Solutions for Real-World Impact"
       >
-        <CardGrid cols="mdThree">
+        <CardGrid as="section" cols="mdThree">
           {featuredProjects.map(({ title, description, slug, image }) => {
             return (
               <Card
                 key={slug}
+                as="article"
                 title={title}
                 description={{ text: description, isClamped: true }}
                 cta={{
@@ -110,7 +111,7 @@ export default async function Home() {
           'Learn how decentralized technologies are creating the infrastructure for a better web. Explore educational content, research papers, tutorials, interactive content, and more resources from FFDW and beyond.',
         ]}
       >
-        {/*<CardGrid cols="mdThree">
+        {/*<CardGrid as="section" cols="mdThree">
            {learningResources.map(({ icon, title, cta }) => (
             <IconCardWithCTA key={title} icon={icon} title={title} cta={cta} />
           ))} 
@@ -138,8 +139,8 @@ export default async function Home() {
         kicker="Latest News"
         title="Updates from FFDW and DWeb Community"
       >
-        <CardGrid cols="smTwoLgThree">
-          {featuredBlogPosts.map((post, i) => {
+        <CardGrid as="section" cols="smTwoLgThree">
+          {featuredBlogPosts.map((post) => {
             const { slug, category, title, description, image, publishedOn } =
               post
 
@@ -151,6 +152,7 @@ export default async function Home() {
             return (
               <Card
                 key={slug}
+                as="article"
                 title={title}
                 description={{ text: description, isClamped: true }}
                 metaData={[formatDate(publishedOn)]}

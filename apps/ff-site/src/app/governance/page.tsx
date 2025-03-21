@@ -42,7 +42,7 @@ export default function Governance() {
       />
 
       <PageSection kicker="Learn More" title="Quickstart">
-        <CardGrid cols="smTwo">
+        <CardGrid as="ul" cols="smTwo">
           {governanceDocsData.map((card) => {
             const {
               heading: { title, icon },

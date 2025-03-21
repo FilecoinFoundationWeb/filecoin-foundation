@@ -41,14 +41,14 @@ export type ExtendedCTAProps = CTAProps & {
 }
 
 export type CardProps = {
-  title: string | React.ReactNode
+  as: 'li' | 'article' | 'div'
+  title: string
   tags?: TagGroupProps['tags']
   metaData?: MetaDataType
   description?: string | CardDescriptionProps
   cta?: ExtendedCTAProps
   image?: CardImageProps
   borderColor?: keyof typeof borderStyles
-  as?: React.ElementType
   avatars?: AvatarGroupProps['authors']
 }
 
@@ -60,6 +60,7 @@ const borderStyles = {
 }
 
 export function Card({
+  as: Tag,
   title,
   tags,
   metaData,
@@ -67,7 +68,6 @@ export function Card({
   cta,
   image,
   borderColor = 'base',
-  as: Tag = 'li',
   avatars,
 }: CardProps) {
   return (
@@ -107,7 +107,6 @@ Card.Image = function ImageComponent({
   image,
 }: Required<Pick<CardProps, 'image'>>) {
   const isStaticImage = 'data' in image
-  // const aspectRatio = image.aspectRatio || 'video'
   const ASPECT_RATIO =
     image.aspectRatio === 'square' ? 'aspect-square' : 'aspect-video'
 

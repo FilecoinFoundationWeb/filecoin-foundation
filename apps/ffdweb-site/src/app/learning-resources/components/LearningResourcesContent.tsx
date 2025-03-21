@@ -48,7 +48,7 @@ export function LearningResourcesContent({
         main: <Search query={searchQuery} />,
       }}
     >
-      <CardGrid cols="smTwo">
+      <CardGrid as="section" cols="smTwo" hasGridAutoRows={false}>
         {paginatedResults.map((resource) => {
           const { slug, title, description, category, resourceType, link } =
             resource
@@ -67,6 +67,7 @@ export function LearningResourcesContent({
           return (
             <Card
               key={slug}
+              as="article"
               title={title}
               description={{ text: description }}
               tags={[{ text: categoryLabel }, { text: resourceTypeLabel }]}

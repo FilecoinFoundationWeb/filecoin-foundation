@@ -64,7 +64,7 @@ export default function Security() {
       />
 
       <PageSection kicker="Secure Your Project" title="Developer Support">
-        <CardGrid cols="smTwo">
+        <CardGrid as="ul" cols="smTwo">
           {developerSupportData.map((card) => {
             const {
               heading: { title, icon },
