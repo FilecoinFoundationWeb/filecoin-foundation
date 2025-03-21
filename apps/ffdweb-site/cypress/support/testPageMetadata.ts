@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 import { LAYOUT_METADATA, BASE_URL } from '@/constants/siteMetadata'
 
 import type { MetadataParams } from '@/utils/createMetadata'

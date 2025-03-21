@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 import { testPageMetaData } from './testPageMetadata'
 
 export const tests = {
