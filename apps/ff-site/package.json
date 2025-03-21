@@ -44,7 +44,7 @@
     "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.0",
     "netlify-identity-widget": "^1.9.2",
-    "next": "15.1.6",
+    "next": "15.2.3",
     "next-plausible": "^3.12.4",
     "nuqs": "^2.2.3",
     "pluralize": "^8.0.0",
