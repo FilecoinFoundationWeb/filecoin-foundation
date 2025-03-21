@@ -13,8 +13,6 @@ export async function getRandomSlug(folder: DynamicEntryNamespace) {
     cwd: path.join(process.cwd(), CONTENT_ROOT, folder),
   })
 
-  console.log(files)
-
   const randomIndex = Math.floor(Math.random() * files.length)
   const randomFile = files[randomIndex]
   return randomFile.replace(MARKDOWN_EXTENSION, '')
