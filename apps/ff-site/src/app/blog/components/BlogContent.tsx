@@ -116,7 +116,7 @@ export function BlogContent({ posts }: BlogContentProps) {
             <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
           ) : (
             <>
-              <CardGrid cols="smTwo" as="section">
+              <CardGrid as="section" cols="smTwo">
                 {paginatedResults.map((post, i) => {
                   const {
                     slug,

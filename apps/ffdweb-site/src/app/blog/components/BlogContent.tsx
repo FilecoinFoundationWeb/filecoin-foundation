@@ -55,7 +55,7 @@ export function BlogContent({ posts }: BlogContentProps) {
         main: <Search query={searchQuery} />,
       }}
     >
-      <CardGrid cols="smTwoLgThree" as="section">
+      <CardGrid as="section" cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {
           const { slug, category, title, description, image, publishedOn } =
             post

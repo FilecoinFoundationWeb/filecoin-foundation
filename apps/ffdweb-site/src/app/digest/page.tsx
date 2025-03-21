@@ -44,7 +44,7 @@ export default async function Digest() {
         kicker="Issue 1 | May 2024"
         title="DWeb Digest: Inaugural Edition"
       >
-        <CardGrid cols="smTwo" as="section">
+        <CardGrid as="section" cols="smTwo">
           {articles.map((article) => {
             const { title, image, slug, articleNumber, description, authors } =
               article

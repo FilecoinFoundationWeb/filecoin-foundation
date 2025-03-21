@@ -86,7 +86,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
         <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
       ) : (
         <>
-          <CardGrid cols="smTwo" as="section">
+          <CardGrid as="section" cols="smTwo">
             {paginatedResults.map((event, index) => {
               const { title, city, startDate, registrationLink } = event
 

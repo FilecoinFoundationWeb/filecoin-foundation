@@ -18,7 +18,7 @@ export function FeaturedEcosystemProjects({
   ecosystemProjects,
 }: FeaturedEcosystemProjectsProps) {
   return (
-    <CardGrid cols="smTwoLgThree" as="section">
+    <CardGrid as="section" cols="smTwoLgThree">
       {ecosystemProjects.map(({ slug, title, description, image }) => (
         <Card
           key={slug}

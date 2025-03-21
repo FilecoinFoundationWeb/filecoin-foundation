@@ -68,7 +68,7 @@ export default async function Home() {
         kicker="Featured Projects"
         title="Building Decentralized Solutions for Real-World Impact"
       >
-        <CardGrid cols="mdThree" as="section">
+        <CardGrid as="section" cols="mdThree">
           {featuredProjects.map(({ title, description, slug, image }) => {
             return (
               <Card
@@ -139,7 +139,7 @@ export default async function Home() {
         kicker="Latest News"
         title="Updates from FFDW and DWeb Community"
       >
-        <CardGrid cols="smTwoLgThree" as="section">
+        <CardGrid as="section" cols="smTwoLgThree">
           {featuredBlogPosts.map((post, i) => {
             const { slug, category, title, description, image, publishedOn } =
               post

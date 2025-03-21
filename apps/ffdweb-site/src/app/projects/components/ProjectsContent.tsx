@@ -51,7 +51,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
       top={{ main: <Search query={searchQuery} /> }}
       bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
     >
-      <CardGrid cols="smTwoLgThree" as="section">
+      <CardGrid as="section" cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {
           const { slug, title, description, image, publishedOn, category } =
             post
