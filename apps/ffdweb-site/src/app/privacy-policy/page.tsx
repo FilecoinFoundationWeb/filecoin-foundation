@@ -7,16 +7,11 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
+import { PRIVACY_POLICY_SEO } from './constants/seo'
 import privacyPolicyMarkdown from './privacy-policy.md'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { body } = privacyPolicyMarkdown
-
-const PRIVACY_POLICY_SEO = {
-  title: 'Privacy Policy',
-  description:
-    'Discover how Filecoin Foundation safeguards your data. Read our comprehensive Privacy Policy for detailed information.',
-} as const
 
 export default function PrivacyPolicy() {
   return (

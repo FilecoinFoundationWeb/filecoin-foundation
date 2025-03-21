@@ -1,6 +1,6 @@
-export const WORKSPACE_ROOT = 'apps/ffdweb-site' as const
-export const CONTENT_ROOT = 'src/content' as const
-export const MARKDOWN_EXTENSION = '.md' as const
+export const WORKSPACE_ROOT = 'apps/ffdweb-site'
+export const CONTENT_ROOT = 'src/content'
+export const MARKDOWN_EXTENSION = '.md'
 
 type StaticPath =
   | '/'
@@ -13,10 +13,10 @@ type StaticPath =
   | '/projects'
   | '/terms-of-use'
 
+export type ContentCollectionName = 'blog' | 'digest' | 'projects'
+
 type DynamicPath = {
-  blog: `/blog/${string}`
-  digest: `/digest/${string}`
-  projects: `/project/${string}`
+  [key in ContentCollectionName]: `/${key}/${string}`
 }
 
 type PathConfig = {

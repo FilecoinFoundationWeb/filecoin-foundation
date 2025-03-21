@@ -15,14 +15,9 @@ import { createMetadata } from '@/utils/createMetadata'
 import { Button } from '@/components/Button'
 
 import { BlogContent } from './components/BlogContent'
+import { BLOG_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
-
-const BLOG_SEO = {
-  title: 'FFDW Blog | Latest Web3 Insights & Updates',
-  description:
-    'Stay informed on the newest advancements in decentralized tech, human rights data preservation, and social impact. Discover fresh perspectives from FFDW.',
-}
 
 export default async function Blog() {
   const posts = await getBlogPostsData()
