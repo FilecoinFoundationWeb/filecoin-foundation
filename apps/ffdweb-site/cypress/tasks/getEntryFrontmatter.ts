@@ -14,6 +14,14 @@ type GetEntryOptions = {
   slug: string
 }
 
+export type GenericEntryFrontmatter = {
+  title: string
+  seo: {
+    title?: string
+    description: string
+  }
+}
+
 export async function getEntryFrontmatter(options: GetEntryOptions) {
   const { collection, slug } = options
   const fileName = `${slug}${MARKDOWN_EXTENSION}`
@@ -21,5 +29,7 @@ export async function getEntryFrontmatter(options: GetEntryOptions) {
   const filePath = path.join(process.cwd(), CONTENT_ROOT, collection, fileName)
 
   const file = await fs.readFile(filePath, 'utf8')
-  return matter(file).data
+  const { data } = matter(file)
+
+  return data as GenericEntryFrontmatter
 }

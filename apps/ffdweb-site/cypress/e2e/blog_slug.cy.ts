@@ -1,7 +1,7 @@
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
 
-import type { GenericFrontmatter } from '../types/frontmatter'
+import type { GenericEntryFrontmatter } from '../tasks/getEntryFrontmatter'
 
 import { tests } from '@/support/index'
 
@@ -10,7 +10,7 @@ const CONTENT_FOLDER = 'blog'
 describe('Blog Slug Page', () => {
   it(tests.metadata.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      cy.task<GenericFrontmatter>('getEntryFrontmatter', {
+      cy.task<GenericEntryFrontmatter>('getEntryFrontmatter', {
         folder: CONTENT_FOLDER,
         slug,
       }).then(({ title, seo }) => {
