@@ -7,7 +7,7 @@ describe('Digest Index Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path: PATHS.DIGEST.path,
-      title: DIGEST_SEO.title,
+      title: { absolute: DIGEST_SEO.title },
       description: DIGEST_SEO.description,
     })
   })

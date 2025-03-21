@@ -7,7 +7,7 @@ describe('Blog Index Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path: PATHS.BLOG.path,
-      title: BLOG_SEO.title,
+      title: { absolute: BLOG_SEO.title },
       description: BLOG_SEO.description,
     })
   })

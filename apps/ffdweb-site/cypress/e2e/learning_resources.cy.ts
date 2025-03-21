@@ -7,7 +7,7 @@ describe('Learning Resources Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path: PATHS.LEARNING_RESOURCES.path,
-      title: LEARNING_RESOURCES_SEO.title,
+      title: { absolute: LEARNING_RESOURCES_SEO.title },
       description: LEARNING_RESOURCES_SEO.description,
     })
   })

@@ -7,7 +7,7 @@ describe('About Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path: PATHS.ABOUT.path,
-      title: ABOUT_SEO.title,
+      title: { absolute: ABOUT_SEO.title },
       description: ABOUT_SEO.description,
     })
   })

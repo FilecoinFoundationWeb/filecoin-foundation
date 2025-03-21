@@ -1,4 +1,5 @@
 import { PATHS } from '@/constants/paths'
+import { ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
 
 import type { Frontmatter } from '../types/frontmatter'
 
@@ -13,9 +14,11 @@ describe('Projects Slug Page', () => {
         folder: CONTENT_FOLDER,
         slug,
       }).then(({ title, seo }) => {
+        const seoTitle = seo.title || title
+
         tests.metadata.fn({
           path: `${PATHS.PROJECTS.path}/${slug}`,
-          title: seo.title || title,
+          title: { absolute: `${seoTitle} | ${ORGANIZATION_NAME_SHORT}` },
           description: seo.description,
         })
       })

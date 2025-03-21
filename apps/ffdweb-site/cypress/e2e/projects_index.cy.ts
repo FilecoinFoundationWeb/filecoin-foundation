@@ -7,7 +7,7 @@ describe('Projects Index Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path: PATHS.PROJECTS.path,
-      title: PROJECTS_SEO.title,
+      title: { absolute: PROJECTS_SEO.title },
       description: PROJECTS_SEO.description,
     })
   })
