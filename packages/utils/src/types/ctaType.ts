@@ -13,3 +13,7 @@ export type CTAProps = {
   icon?: CTAIconProps
   ariaLabel?: string
 }
+
+export type ExtendedCTAProps = CTAProps & {
+  baseDomain: string
+}

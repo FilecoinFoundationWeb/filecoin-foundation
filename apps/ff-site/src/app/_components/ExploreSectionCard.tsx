@@ -2,7 +2,7 @@ import { type HeadingProps, Heading } from '@filecoin-foundation/ui/Heading'
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 import { clsx } from 'clsx'
 
-import { Card } from '@/components/Card'
+import { CardLink } from '@/components/Card'
 
 type ExploreSectionCardProps = {
   heading: HeadingProps
@@ -21,7 +21,8 @@ export function ExploreSectionCard({
         <Heading {...heading} />
         {children && <p>{children}</p>}
       </div>
-      {cta && <Card.Link {...cta} />}
+
+      {cta && <CardLink {...cta} />}
     </li>
   )
 }

@@ -135,7 +135,7 @@ export function EcosystemExplorerContent({
                       key={slug}
                       as="article"
                       title={title}
-                      description={description}
+                      description={{ text: description }}
                       tags={[{ text: category.label }]}
                       cta={{
                         href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,

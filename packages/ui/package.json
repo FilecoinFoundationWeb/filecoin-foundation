@@ -16,7 +16,7 @@
     "./BreadCrumbs": "./src/BreadCrumbs.tsx",
     "./BreadCrumbsLayout": "./src/BreadCrumbsLayout.tsx",
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
-    "./Card": "./src/Card.tsx",
+    "./Card/*": "./src/Card/*.tsx",
     "./CardGrid": "./src/CardGrid.tsx",
     "./CopyToClipboard": "./src/CopyToClipboard.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",

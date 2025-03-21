@@ -39,7 +39,7 @@ export function ProgramSection({ title, kicker, events }: ProgramSectionProps) {
               key={title}
               as="article"
               title={title}
-              description={description}
+              description={description ? { text: description } : undefined}
               borderColor="light"
               metaData={getMetaData({
                 startDate,

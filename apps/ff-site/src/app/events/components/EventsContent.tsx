@@ -148,7 +148,12 @@ export default function EventsContent({
                       borderColor="light"
                       tags={[{ text: tagLabel }]}
                       description={
-                        description && { text: description, isClamped: true }
+                        description
+                          ? {
+                              text: description,
+                              isClamped: true,
+                            }
+                          : undefined
                       }
                       metaData={getMetaData({
                         startDate,
