@@ -1,4 +1,4 @@
-import Image, { type ImageProps } from 'next/image'
+import Image from 'next/image'
 
 import {
   AvatarGroup,
@@ -13,10 +13,6 @@ import {
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { type CTAProps } from '@filecoin-foundation/utils/types/ctaType'
-import type {
-  ImageObjectFit,
-  StaticImageProps,
-} from '@filecoin-foundation/utils/types/imageType'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
@@ -24,14 +20,7 @@ import { Meta, type MetaDataType } from '../Meta'
 
 import { type CardDescriptionProps, CardDescription } from './CardDescription'
 import { type CardTitleProps, CardTitle } from './CardTitle'
-
-type CardImageProps = (StaticImageProps | ImageProps) & {
-  objectFit?: ImageObjectFit
-  padding?: boolean
-  priority?: boolean
-  sizes?: string
-  aspectRatio?: 'square' | 'video'
-}
+import { type CardImageProps, CardImage } from './CardImage'
 
 export type ExtendedCTAProps = CTAProps & {
   baseDomain: string
@@ -76,7 +65,7 @@ export function Card({
         borderStyles[borderColor],
       )}
     >
-      {image && <Card.Image image={image} />}
+      {image && <CardImage image={image} />}
 
       <div className="flex flex-col gap-4 p-4">
         {tags && <TagGroup tags={tags} />}
@@ -85,60 +74,17 @@ export function Card({
 
         <div className={clsx(cta && 'mb-10')}>
           {description && <CardDescription {...description} />}
+
           {avatars && (
             <div className="mt-6">
               <AvatarGroup authors={avatars} />
             </div>
           )}
+
           {cta && <Card.Link {...cta} />}
         </div>
       </div>
     </Tag>
-  )
-}
-
-Card.Image = function ImageComponent({
-  image,
-}: Required<Pick<CardProps, 'image'>>) {
-  const isStaticImage = 'data' in image
-  const ASPECT_RATIO =
-    image.aspectRatio === 'square' ? 'aspect-square' : 'aspect-video'
-
-  const commonProps = {
-    alt: image.alt,
-    priority: image.priority,
-    quality: 100,
-    sizes:
-      image.sizes || buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
-    className: clsx(
-      'card-image',
-      image.objectFit === 'cover' && 'object-cover',
-      image.objectFit === 'contain' && 'object-contain',
-      image.padding && 'card-image-spacing',
-    ),
-  }
-
-  if (isStaticImage) {
-    return (
-      <Image
-        {...commonProps}
-        className={clsx(commonProps.className, ASPECT_RATIO)}
-        src={image.data}
-        alt={commonProps.alt}
-      />
-    )
-  }
-
-  return (
-    <div className={clsx('relative', ASPECT_RATIO)}>
-      <Image
-        fill
-        {...commonProps}
-        className={clsx(commonProps.className, 'h-full w-full')}
-        src={image.src}
-        alt={commonProps.alt}
-      />
-    </div>
   )
 }
 
