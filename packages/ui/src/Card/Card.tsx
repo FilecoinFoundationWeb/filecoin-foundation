@@ -5,7 +5,6 @@ import {
   type AvatarGroupProps,
 } from '@filecoin-foundation/ui/Avatar/AvatarGroup'
 import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
-import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import {
   type TagGroupProps,
@@ -23,10 +22,8 @@ import { clsx } from 'clsx'
 
 import { Meta, type MetaDataType } from '../Meta'
 
-type CardDescriptionProps = {
-  text: string
-  isClamped?: boolean
-}
+import { type CardDescriptionProps, CardDescription } from './CardDescription'
+import { type CardTitleProps, CardTitle } from './CardTitle'
 
 type CardImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
@@ -42,10 +39,10 @@ export type ExtendedCTAProps = CTAProps & {
 
 export type CardProps = {
   as: 'li' | 'article' | 'div'
-  title: string
+  title: CardTitleProps['children']
   tags?: TagGroupProps['tags']
   metaData?: MetaDataType
-  description?: string | CardDescriptionProps
+  description?: CardDescriptionProps
   cta?: ExtendedCTAProps
   image?: CardImageProps
   borderColor?: keyof typeof borderStyles
@@ -84,18 +81,15 @@ export function Card({
       <div className="flex flex-col gap-4 p-4">
         {tags && <TagGroup tags={tags} />}
         {metaData && <Meta metaData={metaData} />}
-        <Card.Title title={title} />
+        <CardTitle>{title}</CardTitle>
 
         <div className={clsx(cta && 'mb-10')}>
-          {description && typeof description === 'string' && (
-            <Card.Description text={description} />
+          {description && <CardDescription {...description} />}
+          {avatars && (
+            <div className="mt-6">
+              <AvatarGroup authors={avatars} />
+            </div>
           )}
-
-          {description && typeof description === 'object' && (
-            <Card.Description {...description} />
-          )}
-
-          {avatars && <Card.Avatars avatars={avatars} />}
           {cta && <Card.Link {...cta} />}
         </div>
       </div>
@@ -144,35 +138,6 @@ Card.Image = function ImageComponent({
         src={image.src}
         alt={commonProps.alt}
       />
-    </div>
-  )
-}
-
-Card.Title = function Title({ title }: Pick<CardProps, 'title'>) {
-  return typeof title === 'string' ? (
-    <Heading isClamped tag="h3" variant="lg">
-      {title}
-    </Heading>
-  ) : (
-    title
-  )
-}
-
-Card.Description = function Description({
-  text,
-  isClamped,
-}: CardDescriptionProps) {
-  return (
-    <p className={clsx(isClamped && 'line-clamp-3 text-ellipsis')}>{text}</p>
-  )
-}
-
-Card.Avatars = function Avatars({
-  avatars,
-}: Required<Pick<CardProps, 'avatars'>>) {
-  return (
-    <div className="mt-6">
-      <AvatarGroup authors={avatars} />
     </div>
   )
 }
