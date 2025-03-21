@@ -13,10 +13,10 @@ type StaticPath =
   | '/projects'
   | '/terms-of-use'
 
+export type DynamicEntryNamespace = 'blog' | 'digest' | 'projects'
+
 type DynamicPath = {
-  blog: `/blog/${string}`
-  digest: `/digest/${string}`
-  projects: `/project/${string}`
+  [key in DynamicEntryNamespace]: `/${key}/${string}`
 }
 
 type PathConfig = {
