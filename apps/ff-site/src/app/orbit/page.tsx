@@ -76,7 +76,7 @@ export default async function Orbit(props: Props) {
       </PageHeader>
 
       <PageSection kicker="Goals" title="Orbit Program Goals">
-        <CardGrid cols="lgThree">
+        <CardGrid as="ul" cols="lgThree">
           {programGoalsData.map((goal, index) => {
             const { image, title, description } = goal
 
@@ -93,7 +93,7 @@ export default async function Orbit(props: Props) {
       </PageSection>
 
       <PageSection kicker="Statistics" title="Key Statistics Since 2020">
-        <CardGrid cols="smTwo">
+        <CardGrid as="ul" cols="smTwo">
           {statisticsData.map((statistic, index) => (
             <StatisticCard key={index} {...statistic} />
           ))}
@@ -130,7 +130,7 @@ export default async function Orbit(props: Props) {
       </PageSection>
 
       <PageSection kicker="Get Involved" title="Explore Orbit">
-        <CardGrid cols="lgThree">
+        <CardGrid as="ul" cols="lgThree">
           {exploreOrbitData.map((data, index) => {
             const {
               heading: { title, icon },

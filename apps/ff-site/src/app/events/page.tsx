@@ -83,7 +83,7 @@ export default async function Events(props: Props) {
         kicker="Get Involved"
         title="Get in Touch With the Events Team"
       >
-        <CardGrid cols="mdTwo" as="div">
+        <CardGrid as="div" cols="mdTwo">
           <div className="row-span-2 h-96 md:h-auto">
             <Image
               src={graphicsData.events2.data}
@@ -95,10 +95,10 @@ export default async function Events(props: Props) {
           {getInvolvedData.map(({ title, description, cta }) => (
             <div key={title} className="h-48 md:h-56">
               <Card
+                as="div"
                 title={title}
                 description={description}
                 cta={cta}
-                as="div"
               />
             </div>
           ))}

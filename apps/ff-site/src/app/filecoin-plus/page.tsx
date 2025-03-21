@@ -56,7 +56,7 @@ export default function FilPlus() {
       </PageHeader>
 
       <PageSection kicker="About" title="How Fil+ Works">
-        <CardGrid cols="lgThree">
+        <CardGrid as="ul" cols="lgThree">
           {aboutData.map((data) => (
             <FocusAreaCard key={data.title} {...data} />
           ))}

@@ -41,6 +41,7 @@ export type ExtendedCTAProps = CTAProps & {
 }
 
 export type CardProps = {
+  as: 'li' | 'article' | 'div'
   title: string | React.ReactNode
   tags?: TagGroupProps['tags']
   metaData?: MetaDataType
@@ -48,7 +49,6 @@ export type CardProps = {
   cta?: ExtendedCTAProps
   image?: CardImageProps
   borderColor?: keyof typeof borderStyles
-  as?: React.ElementType
   avatars?: AvatarGroupProps['authors']
 }
 
@@ -60,6 +60,7 @@ const borderStyles = {
 }
 
 export function Card({
+  as: Tag,
   title,
   tags,
   metaData,
@@ -67,7 +68,6 @@ export function Card({
   cta,
   image,
   borderColor = 'base',
-  as: Tag = 'li',
   avatars,
 }: CardProps) {
   return (

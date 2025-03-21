@@ -83,7 +83,7 @@ export default async function Home() {
         </PageHeader>
 
         <PageSection kicker="Explore" title="The Filecoin Ecosystem">
-          <CardGrid cols="smTwo">
+          <CardGrid as="ul" cols="smTwo">
             {filecoinEcosystemData.map((card) => {
               const {
                 heading: { title, icon },

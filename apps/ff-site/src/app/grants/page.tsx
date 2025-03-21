@@ -67,7 +67,7 @@ export default async function Grants() {
         title="Grants and Funding Opportunities"
         description="Filecoin Foundation is seeking proposals for developer and data tooling, integrations, research and protocols, storage, retrieval, and the Filecoin Virtual Machine (FVM). These grants fall under the following categories."
       >
-        <CardGrid cols="lgThree">
+        <CardGrid as="ul" cols="lgThree">
           {opportunitiesData.map((card) => {
             const { title, description, icon, cta } = card
 
@@ -121,7 +121,7 @@ export default async function Grants() {
         title="Submission Criteria"
         description="Generally, all projects must meet the following requirements:"
       >
-        <CardGrid cols="lgThree">
+        <CardGrid as="ul" cols="lgThree">
           {submissionCriteriaData.map((data) => {
             const { title, description, icon } = data
 

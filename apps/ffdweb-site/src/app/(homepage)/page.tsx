@@ -111,7 +111,7 @@ export default async function Home() {
           'Learn how decentralized technologies are creating the infrastructure for a better web. Explore educational content, research papers, tutorials, interactive content, and more resources from FFDW and beyond.',
         ]}
       >
-        {/*<CardGrid cols="mdThree">
+        {/*<CardGrid as="section" cols="mdThree">
            {learningResources.map(({ icon, title, cta }) => (
             <IconCardWithCTA key={title} icon={icon} title={title} cta={cta} />
           ))} 
