@@ -21,7 +21,7 @@ import type {
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { Meta, type MetaDataType } from './Meta'
+import { Meta, type MetaDataType } from '../Meta'
 
 type CardDescriptionProps = {
   text: string
