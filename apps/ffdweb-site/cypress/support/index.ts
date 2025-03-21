@@ -4,7 +4,7 @@ import { testPageMetaData } from './testPageMetadata'
 
 export const tests = {
   metadata: {
-    prompt: 'should test the page metadata',
+    prompt: 'should have valid metadata',
     fn: testPageMetaData,
   },
 } as const
