@@ -6,19 +6,19 @@ import matter from 'gray-matter'
 import {
   CONTENT_ROOT,
   MARKDOWN_EXTENSION,
-  type DynamicEntryNamespace,
+  type ContentCollectionName,
 } from '../../src/app/_constants/paths'
 
 type GetEntryOptions = {
-  folder: DynamicEntryNamespace
+  collection: ContentCollectionName
   slug: string
 }
 
 export async function getEntryFrontmatter(options: GetEntryOptions) {
-  const { folder, slug } = options
+  const { collection, slug } = options
   const fileName = `${slug}${MARKDOWN_EXTENSION}`
 
-  const filePath = path.join(process.cwd(), CONTENT_ROOT, folder, fileName)
+  const filePath = path.join(process.cwd(), CONTENT_ROOT, collection, fileName)
 
   const file = await fs.readFile(filePath, 'utf8')
   return matter(file).data
