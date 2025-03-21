@@ -140,7 +140,7 @@ export default async function Home() {
         title="Updates from FFDW and DWeb Community"
       >
         <CardGrid as="section" cols="smTwoLgThree">
-          {featuredBlogPosts.map((post, i) => {
+          {featuredBlogPosts.map((post) => {
             const { slug, category, title, description, image, publishedOn } =
               post
 
