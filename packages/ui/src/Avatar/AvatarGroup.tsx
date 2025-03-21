@@ -1,11 +1,9 @@
 import { Avatar } from './Avatar'
 
-import { type AuthorExtended } from '@filecoin-foundation/utils/types/authorTypes'
-
-type AuthorWithCompany = Omit<AuthorExtended, 'bio'>
+import type { Author } from '@filecoin-foundation/utils/types/authorTypes'
 
 export type AvatarGroupProps = {
-  authors: Array<AuthorWithCompany>
+  authors: Array<Author>
 }
 
 export function AvatarGroup({ authors }: AvatarGroupProps) {
@@ -26,7 +24,7 @@ export function AvatarGroup({ authors }: AvatarGroupProps) {
   )
 }
 
-function formatAuthors(authors: Array<AuthorWithCompany>) {
+function formatAuthors(authors: Array<Author>) {
   return authors
     .map((author, index) => {
       const isLastAuthor = index === authors.length - 1
@@ -39,7 +37,7 @@ function formatAuthors(authors: Array<AuthorWithCompany>) {
         separator = ', '
       }
 
-      return `${author.firstName.trim()} ${author.lastName.trim()} (${author.company.trim()})${separator}`
+      return `${author.firstName.trim()} ${author.lastName.trim()}${separator}`
     })
     .join('')
     .trim()

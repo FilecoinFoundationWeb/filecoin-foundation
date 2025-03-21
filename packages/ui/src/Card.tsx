@@ -3,7 +3,7 @@ import Image, { type ImageProps } from 'next/image'
 import {
   AvatarGroup,
   type AvatarGroupProps,
-} from '@filecoin-foundation/ui/AvatarGroup'
+} from '@filecoin-foundation/ui/Avatar/AvatarGroup'
 import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'

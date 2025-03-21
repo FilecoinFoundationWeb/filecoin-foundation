@@ -9,8 +9,7 @@
   "exports": {
     "./Article": "./src/Article/index.ts",
     "./Article/*": "./src/Article/*.tsx",
-    "./Avatar": "./src/Avatar.tsx",
-    "./AvatarGroup": "./src/AvatarGroup.tsx",
+    "./Avatar/*": "./src/Avatar/*.tsx",
     "./BaseLink": "./src/BaseLink.tsx",
     "./Button": "./src/Button.tsx",
     "./BlogPostHeader": "./src/BlogPostHeader.tsx",
