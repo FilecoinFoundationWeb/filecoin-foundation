@@ -31,7 +31,7 @@ const FFDW_URLS = {
   newResourceForm: 'https://airtable.com/appqYx2g5gO6GX8jL/shrhkHIBbGxLnGGZh',
 } as const
 
-export const LAYOUT_METADATA = {
+export const ROOT_METADATA = {
   title: {
     template: `${ORGANIZATION_NAME_SHORT} | %s`,
     default: ORGANIZATION_NAME,

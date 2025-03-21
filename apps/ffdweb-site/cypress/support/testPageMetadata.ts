@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { LAYOUT_METADATA, BASE_URL } from '@/constants/siteMetadata'
+import { ROOT_METADATA, BASE_URL } from '@/constants/siteMetadata'
 
 import type { MetadataParams } from '@/utils/createMetadata'
 
@@ -65,7 +65,7 @@ export function testPageMetaData(options: TestMetaDataOptions) {
 
 function getMetaTitle(title: TestMetaDataOptions['title']) {
   if (typeof title === 'string') {
-    const templateTitle = LAYOUT_METADATA.title.template.replace('%s', title)
+    const templateTitle = ROOT_METADATA.title.template.replace('%s', title)
     return templateTitle
   } else {
     return title.absolute

@@ -2,11 +2,11 @@ import PlausibleProvider from 'next-plausible'
 
 import '@/styles/globals.css'
 
-import { BASE_DOMAIN, LAYOUT_METADATA } from '@/constants/siteMetadata'
+import { BASE_DOMAIN, ROOT_METADATA } from '@/constants/siteMetadata'
 
 import { SiteLayout } from '@/components/SiteLayout'
 
-export const metadata = LAYOUT_METADATA
+export const metadata = ROOT_METADATA
 
 type RootLayoutProps = {
   children: React.ReactNode
