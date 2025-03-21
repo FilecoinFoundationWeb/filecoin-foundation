@@ -10,7 +10,7 @@ export type AvatarGroupExpandedProps = {
 
 export function AvatarGroupExpanded({ authors }: AvatarGroupExpandedProps) {
   return (
-    <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-10">
+    <div className="flex flex-col flex-wrap gap-6 sm:flex-row sm:items-center sm:gap-10">
       {authors.map(({ firstName, lastName, image, company }) => (
         <div
           className="flex items-center gap-3"
