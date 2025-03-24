@@ -9,7 +9,6 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
-
 type CreateMetadataProps = {
   seo: SeoMetadata
   path: PathValues | DynamicPathValues
@@ -25,12 +24,6 @@ export function createMetadata({
     title: seo.title,
     description: seo.description,
     image: seo.image || graphicsData.home.data.src,
-    'open-graph': {
-      title: seo['open-graph']?.title || seo.title,
-      description: seo['open-graph']?.description || seo.description,
-      image:
-        seo['open-graph']?.image || seo.image || graphicsData.home.data.src,
-    },
     twitter: {
       card: seo.twitter?.card || 'summary',
       site: seo.twitter?.site || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
@@ -46,12 +39,10 @@ export function createMetadata({
       ? { absolute: parsedEnrichedSEO.title }
       : parsedEnrichedSEO.title,
     description: parsedEnrichedSEO.description,
-    openGraph: {
-      title: parsedEnrichedSEO['open-graph']?.title,
-      description: parsedEnrichedSEO['open-graph']?.description,
-      images: parsedEnrichedSEO['open-graph']?.image,
-    },
     twitter: { ...parsedEnrichedSEO.twitter },
+    openGraph: {
+      images: parsedEnrichedSEO.image,
+    },
     alternates: {
       canonical: path,
     },
