@@ -1,11 +1,10 @@
 'use client'
 
-import { Listbox as HeadlessUIListbox } from '@headlessui/react'
+import { Listbox } from '@filecoin-foundation/ui/Listbox'
+import { ListboxButton } from '@filecoin-foundation/ui/Listbox/ListboxButton'
+import { ListboxOption } from '@filecoin-foundation/ui/Listbox/ListboxOption'
+import { ListboxOptions } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
 import type { Column } from '@tanstack/react-table'
-
-import { ListboxButton } from '@/components/Listbox/ListboxButton'
-import { ListboxOption } from '@/components/Listbox/ListboxOption'
-import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
@@ -40,14 +39,14 @@ export function SelectFilter({
     allOptions.find((option) => option.id === currentFilterId) || defaultOption
 
   return (
-    <HeadlessUIListbox value={selectedOption} onChange={setColumnFilter}>
+    <Listbox value={selectedOption} onChange={setColumnFilter}>
       <ListboxButton text={selectedOption.name} />
       <ListboxOptions>
         {allOptions.map((option) => (
           <ListboxOption key={option.id} option={option} />
         ))}
       </ListboxOptions>
-    </HeadlessUIListbox>
+    </Listbox>
   )
 
   function setColumnFilter(newOption: FilterOption) {
