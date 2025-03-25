@@ -1,7 +1,7 @@
+import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import prettyBytes from 'pretty-bytes'
 import { z } from 'zod'
 
-import type { OptionType } from '@/components/Listbox/ListboxOption'
 
 import {
   BRIEF_CHARACTER_LIMIT,
