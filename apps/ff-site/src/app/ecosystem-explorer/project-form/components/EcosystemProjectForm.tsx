@@ -25,7 +25,7 @@ import {
   ALLOWED_IMAGE_FORMATS,
   BRIEF_CHARACTER_LIMIT,
   MAX_FILE_SIZE_IN_BYTES,
-  NETWORK_USE_CASE_CHARACTER_LIMIT,
+  DESCRIPTION_CHARACTER_LIMIT,
 } from '../constants'
 import { useSubmitEcosystemProjectForm } from '../hooks/useSubmitEcosystemProjectForm'
 import { EcosystemProjectFormSchema } from '../schema/EcosystemProjectFormSchema'
@@ -121,7 +121,7 @@ export function EcosystemProjectForm({
           name="briefSummary"
           label="Brief Summary"
           placeholder="Write a brief summary of your project..."
-          characterLimit={BRIEF_CHARACTER_LIMIT}
+          maxCharacter={BRIEF_CHARACTER_LIMIT.max}
           disabled={isSubmitting}
         />
 
@@ -130,7 +130,8 @@ export function EcosystemProjectForm({
           label="How does your project use the Filecoin network?"
           description="You can use Markdown in this field."
           placeholder="Describe how your project uses the Filecoin network..."
-          characterLimit={NETWORK_USE_CASE_CHARACTER_LIMIT}
+          minCharacter={DESCRIPTION_CHARACTER_LIMIT.min}
+          maxCharacter={DESCRIPTION_CHARACTER_LIMIT.max}
           disabled={isSubmitting}
         />
 

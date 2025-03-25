@@ -21,7 +21,8 @@ import { CharacterCounter } from './CharacterCounter'
 type ExcludedHeadlessUIProps = 'invalid' | 'className'
 
 export type FormTextareaProps = {
-  characterLimit: number
+  minCharacter?: number
+  maxCharacter: number
   characterCount: number
   description?: FormLabelDescriptionProps['children']
 } & Omit<HeadlessTextareaProps, ExcludedHeadlessUIProps> &
@@ -33,7 +34,8 @@ export function FormTextarea({
   label,
   hideLabel,
   characterCount,
-  characterLimit,
+  maxCharacter,
+  minCharacter,
   description,
   ...rest
 }: FormTextareaProps) {
@@ -59,7 +61,11 @@ export function FormTextarea({
       <FormError.Container>
         <div className="flex items-center justify-between gap-1">
           <FormError.Message error={error} />
-          <CharacterCounter count={characterCount} limit={characterLimit} />
+          <CharacterCounter
+            count={characterCount}
+            max={maxCharacter}
+            min={minCharacter}
+          />
         </div>
       </FormError.Container>
     </Field>
