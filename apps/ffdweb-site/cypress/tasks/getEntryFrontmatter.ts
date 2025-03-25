@@ -9,7 +9,7 @@ import {
   type ContentCollectionName,
 } from '../../src/app/_constants/paths'
 
-type GetEntryOptions = {
+export type GetEntryOptions = {
   collection: ContentCollectionName
   slug: string
 }
