@@ -13,8 +13,6 @@ seo:
     card: summary
   description: "Teams across the Filecoin ecosystem announced new L2s, extending
     the capabilities of the network."
-  open-graph:
-    image: /assets/images/blog-post-header-filecoin-ecosystem-teams-unveil-l2s.webp
 ---
 
 At the FIL Bangkok Main Stage event, hosted by Filecoin Foundation, teams across the Filecoin ecosystem announced new data storage solutions, signaling a new era of what’s possible with Filecoin by extending the capabilities of the network.

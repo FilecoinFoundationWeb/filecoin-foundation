@@ -71,10 +71,7 @@ export async function generateMetadata(props: BlogPostProps) {
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: seo.image || image?.src,
-    openGraph: {
-      type: 'article',
-      ...seo.openGraph,
-    },
+    openGraph: { type: 'article' },
     twitter: seo.twitter,
   })
 }

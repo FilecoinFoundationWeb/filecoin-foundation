@@ -1,14 +1,10 @@
-import {
-  type SeoMetadata,
-  SeoMetadataSchema,
-} from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
+import { type SeoMetadata } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
 import { type Metadata as NextMetadata } from 'next'
 
 import type { DynamicPathValues, PathValues } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
-
 
 type CreateMetadataProps = {
   seo: SeoMetadata
@@ -20,40 +16,33 @@ export function createMetadata({
   seo,
   path,
   overrideDefaultTitle = false,
-}: CreateMetadataProps): NextMetadata {
+}: CreateMetadataProps) {
   const enrichedSEO = {
     title: seo.title,
     description: seo.description,
     image: seo.image || graphicsData.home.data.src,
-    'open-graph': {
-      title: seo['open-graph']?.title || seo.title,
-      description: seo['open-graph']?.description || seo.description,
-      image:
-        seo['open-graph']?.image || seo.image || graphicsData.home.data.src,
-    },
     twitter: {
       card: seo.twitter?.card || 'summary',
       site: seo.twitter?.site || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
       creator:
         seo.twitter?.creator || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
     },
-  }
-
-  const parsedEnrichedSEO = SeoMetadataSchema.parse(enrichedSEO)
+  } as const
 
   return {
     title: overrideDefaultTitle
-      ? { absolute: parsedEnrichedSEO.title }
-      : parsedEnrichedSEO.title,
-    description: parsedEnrichedSEO.description,
-    openGraph: {
-      title: parsedEnrichedSEO['open-graph']?.title,
-      description: parsedEnrichedSEO['open-graph']?.description,
-      images: parsedEnrichedSEO['open-graph']?.image,
+      ? { absolute: enrichedSEO.title }
+      : enrichedSEO.title,
+    description: enrichedSEO.description,
+    twitter: {
+      ...enrichedSEO.twitter,
+      images: enrichedSEO.image,
     },
-    twitter: { ...parsedEnrichedSEO.twitter },
+    openGraph: {
+      images: enrichedSEO.image,
+    },
     alternates: {
       canonical: path,
     },
-  }
+  } as const satisfies NextMetadata
 }
