@@ -35,7 +35,7 @@ export function ListboxButton({
   return (
     <HeadlessUIListboxButton
       className={clsx(
-        'relative inline-flex w-full items-center justify-between gap-2 rounded-lg border bg-brand-800 p-3 text-brand-300 hover:border-current hover:text-brand-400 focus:brand-outline',
+        'bg-brand-800 text-brand-300 hover:text-brand-400 focus:brand-outline relative inline-flex w-full items-center justify-between gap-2 rounded-lg border p-3 hover:border-current',
         hasError ? 'border-brand-error' : 'border-brand-300',
       )}
     >

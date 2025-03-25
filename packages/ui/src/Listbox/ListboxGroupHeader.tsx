@@ -16,7 +16,7 @@ export function ListboxGroupHeader({
       <li
         key={label}
         id={label}
-        className="px-3 py-2 text-brand-300"
+        className="text-brand-300 px-3 py-2"
         role="presentation"
       >
         {label}
