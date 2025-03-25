@@ -29,10 +29,10 @@ program:
         summit is more than just a meetup—it's a place for meaningful and
         impactful conversations that help push Filecoin forward.
       external-link: https://www.fildev.io/FDS-6
-    - title: Consensus Toronto. Presented by CoinDesk, Sponsored by Filecoin
-        Foundation
+    - title: DePIN Exploration @ Consensus Toronto. Presented by CoinDesk, Sponsored
+        by Filecoin Foundation
       start-date: 2025-05-14
-      end-date: 2025-05-16
+      end-date: 2025-05-14
       location: Toronto, Canada
       description: n 2025, Consensus brings its flagship event to Toronto, where the
         world's first Bitcoin and Ethereum ETFs were born. As North America's

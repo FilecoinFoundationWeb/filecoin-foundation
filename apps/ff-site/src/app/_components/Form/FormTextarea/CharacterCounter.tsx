@@ -4,18 +4,25 @@ import type { FormTextareaProps } from './FormTextarea'
 
 type CharacterCounterProps = {
   count: FormTextareaProps['characterCount']
-  limit: FormTextareaProps['characterLimit']
+  max: FormTextareaProps['maxCharacter']
+  min: FormTextareaProps['minCharacter']
 }
 
-export function CharacterCounter({ count, limit }: CharacterCounterProps) {
+export function CharacterCounter({ count, max, min }: CharacterCounterProps) {
+  const isBelowMin = !!min && count < min
+  const isAboveMax = count > max
+
   return (
     <p
       className={clsx(
         'text-sm',
-        count > limit ? 'text-brand-error' : 'text-brand-300',
+        isAboveMax ? 'text-brand-error' : 'text-brand-300',
       )}
     >
-      {count} / {limit}
+      {count} / {max}
+      {isBelowMin && (
+        <span className="pl-1 text-brand-300">(Minimum {min} characters)</span>
+      )}
     </p>
   )
 }
