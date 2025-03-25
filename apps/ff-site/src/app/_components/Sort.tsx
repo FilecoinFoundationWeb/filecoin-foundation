@@ -3,11 +3,11 @@
 import { useState, useEffect } from 'react'
 
 import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
+import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import { SORT_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 
 import { useSort } from '@/hooks/useSort'
 
-import type { OptionType } from './Listbox/ListboxOption'
 import { SortListbox } from './SortListbox'
 
 type SortProps = {

@@ -1,4 +1,4 @@
-import React, { type ElementType } from 'react'
+import { type ElementType } from 'react'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ListboxOption as HeadlessUIListboxOption } from '@headlessui/react'
