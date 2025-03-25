@@ -41,15 +41,11 @@ export function createMetadata({
   const {
     type = 'website',
     locale = 'en_US',
-    title: openGraphTitle = title,
-    description: openGraphDescription = description,
     image: openGraphImage = imageArray,
   } = openGraph
 
   const {
     card = 'summary_large_image',
-    title: twitterTitle = title,
-    description: twitterDescription = description,
     site = FFDW_URLS.social.twitter.handle,
     creator = FFDW_URLS.social.twitter.handle,
     image: twitterImage = imageArray,
@@ -61,15 +57,11 @@ export function createMetadata({
     openGraph: {
       type,
       locale,
-      title: openGraphTitle,
-      description: openGraphDescription,
       images: openGraphImage,
       siteName: ORGANIZATION_NAME,
       url: path,
     },
     twitter: {
-      title: twitterTitle,
-      description: twitterDescription,
       card,
       site,
       creator,
