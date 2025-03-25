@@ -1,11 +1,11 @@
-import { Listbox } from '@headlessui/react'
+import { Listbox } from '@filecoin-foundation/ui/Listbox'
+import { ListboxButton } from '@filecoin-foundation/ui/Listbox/ListboxButton'
+import { ListboxGroupHeader } from '@filecoin-foundation/ui/Listbox/ListboxGroupHeader'
+import { ListboxOption } from '@filecoin-foundation/ui/Listbox/ListboxOption'
+import { ListboxOptions } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
 
 import { FormField } from '@/components/Form/FormField'
 import type { FormListboxProps } from '@/components/Form/FormListbox'
-import { ListboxButton } from '@/components/Listbox/ListboxButton'
-import { ListboxGroupHeader } from '@/components/Listbox/ListboxGroupHeader'
-import { ListboxOption } from '@/components/Listbox/ListboxOption'
-import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 export type GroupedOption = {
   label: string
