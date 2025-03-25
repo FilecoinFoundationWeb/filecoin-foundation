@@ -32,7 +32,7 @@ export function ListboxOptions({
       as={as}
       anchor={{ to: position, gap: GAP_BETWEEN_BUTTON_AND_OPTIONS_IN_PX }}
       className={clsx(
-        'border-brand-100 bg-brand-800 text-brand-100 focus:brand-outline min-w-[var(--button-width)] rounded-lg border py-2 focus-within:outline-2',
+        'listbox-options focus:brand-outline min-w-[var(--button-width)] py-2 focus-within:outline-2',
         matchButtonWidth && 'w-[var(--button-width)]',
       )}
     >

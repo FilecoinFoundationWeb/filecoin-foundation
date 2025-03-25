@@ -25,7 +25,7 @@ export function ListboxOption<Value extends OptionType>({
       as={as}
       value={option}
       disabled={option.disabled}
-      className="data-disabled:cursor-not-allowed ui-active:bg-brand-500 group flex cursor-default items-center justify-between gap-12 px-5 py-2"
+      className="listbox-option ui-disabled:cursor-not-allowed group flex cursor-default items-center justify-between gap-12 px-5 py-2"
     >
       <span>
         {option.name}
