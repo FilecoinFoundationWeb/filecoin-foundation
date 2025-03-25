@@ -1,7 +1,4 @@
-import {
-  type SeoMetadata,
-  SeoMetadataSchema,
-} from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
+import { type SeoMetadata } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
 import { type Metadata as NextMetadata } from 'next'
 
 import type { DynamicPathValues, PathValues } from '@/constants/paths'
@@ -19,7 +16,7 @@ export function createMetadata({
   seo,
   path,
   overrideDefaultTitle = false,
-}: CreateMetadataProps): NextMetadata {
+}: CreateMetadataProps) {
   const enrichedSEO = {
     title: seo.title,
     description: seo.description,
@@ -30,21 +27,22 @@ export function createMetadata({
       creator:
         seo.twitter?.creator || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
     },
-  }
-
-  const parsedEnrichedSEO = SeoMetadataSchema.parse(enrichedSEO)
+  } as const
 
   return {
     title: overrideDefaultTitle
-      ? { absolute: parsedEnrichedSEO.title }
-      : parsedEnrichedSEO.title,
-    description: parsedEnrichedSEO.description,
-    twitter: { ...parsedEnrichedSEO.twitter },
+      ? { absolute: enrichedSEO.title }
+      : enrichedSEO.title,
+    description: enrichedSEO.description,
+    twitter: {
+      ...enrichedSEO.twitter,
+      images: enrichedSEO.image,
+    },
     openGraph: {
-      images: parsedEnrichedSEO.image,
+      images: enrichedSEO.image,
     },
     alternates: {
       canonical: path,
     },
-  }
+  } as const satisfies NextMetadata
 }
