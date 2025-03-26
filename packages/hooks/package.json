@@ -8,7 +8,9 @@
   },
   "exports": {
     "./useUpdateSearchParams": "./src/useUpdateSearchParams/index.ts",
-    "./useFilter": "./src/useFilter/index.ts"
+    "./useFilter": "./src/useFilter/index.ts",
+    "./useFilter/constants": "./src/useFilter/constants/index.ts",
+    "./useFilter/utils": "./src/useFilter/utils/index.ts"
   },
   "scripts": {
     "lint": "eslint . --fix"

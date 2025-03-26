@@ -1,0 +1,1 @@
+export { entryMatchesCategoryQuery } from './filterUtils'
