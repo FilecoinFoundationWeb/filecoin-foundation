@@ -39,6 +39,39 @@ program:
         third-largest tech ecosystem and second-largest financial hub, Toronto
         unites global innovation with transformative technology leadership.
       external-link: https://consensus2025.coindesk.com/
+schedule:
+  kicker: DON'T MISS OUT
+  title: SPEAKING ENGAGEMENTS
+  days:
+    - date: 2025-05-13
+      events:
+        - title: Marta Belcher @ Blockchain Futurist Conference
+          speakers:
+            - name: Marta Belcher
+              company: Filecoin Foundation
+          moderators:
+            - name: Morva Rohani
+              company: Canadian Web3 Council
+          start-time: 12:00:00.000Z
+          url: https://www.futuristconference.com/
+          location: Design Exchange Events Venue, 234 Bay St., Toronto, ON M5K 1B2, Canada
+    - date: 2025-05-15
+      events:
+        - title: Marta Belcher @ Innovate Toronto
+          start-time: 12:00:00.000Z
+          location: STORYS Building, 11 Duncan St, Toronto, ON M5V 3M2, Canada
+          url: https://www.innovate.thetie.io/
+          description: From Hype to Utility –– Where Crypto and AI Actually Make Sense
+    - date: 2025-05-16
+      events:
+        - title: Clara Tsao @ Consensus 2025
+          start-time: 10:00:00.000Z
+          location: Metro Toronto Convention Center
+          url: https://consensus2025.coindesk.com/
+        - title: Juan Benet @ Consensus 2025
+          start-time: 10:00:00.000Z
+          url: https://consensus2025.coindesk.com/
+          location: Metro Toronto Convention Center
 speakers:
   kicker: CONNECT WITH US
   title: MEET THE TEAM
