@@ -332,4 +332,17 @@
   .accent-icon-fill {
     @apply bg-brand-secondary-100 text-neutral-950;
   }
+
+  /* LISTBOX */
+  .listbox-button {
+    @apply text-brand-primary-300 hover:text-brand-primary-400 focus:text-brand-primary-100 border border-current;
+  }
+
+  .listbox-options {
+    @apply border-brand-primary-300 text-brand-primary-100 border bg-neutral-950;
+  }
+
+  .listbox-option {
+    @apply ui-active:bg-brand-primary-500 text-brand-primary-100;
+  }
 }
