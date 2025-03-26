@@ -1,4 +1,5 @@
 import PlausibleProvider from 'next-plausible'
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 import '@/styles/globals.css'
 
@@ -14,13 +15,15 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <PlausibleProvider
-      trackOutboundLinks
-      hash
-      trackFileDownloads
-      domain={BASE_DOMAIN}
-    >
-      <SiteLayout>{children}</SiteLayout>
-    </PlausibleProvider>
+    <NuqsAdapter>
+      <PlausibleProvider
+        trackOutboundLinks
+        hash
+        trackFileDownloads
+        domain={BASE_DOMAIN}
+      >
+        <SiteLayout>{children}</SiteLayout>
+      </PlausibleProvider>
+    </NuqsAdapter>
   )
 }
