@@ -1,13 +1,12 @@
 'use client'
 
-import { Listbox as HeadlessUIListbox } from '@headlessui/react'
-
-import { ListboxButton } from '@/components/Listbox/ListboxButton'
+import { Listbox } from '@filecoin-foundation/ui/Listbox'
+import { ListboxButton } from '@filecoin-foundation/ui/Listbox/ListboxButton'
 import {
   ListboxOption,
   type OptionType,
-} from '@/components/Listbox/ListboxOption'
-import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
+} from '@filecoin-foundation/ui/Listbox/ListboxOption'
+import { ListboxOptions } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
 
 import { coreFunctionsData } from '../data/coreFunctionsData'
 import { scrollToSection } from '../utils/scrollToSection'
@@ -27,10 +26,7 @@ export function MobileTableOfContents() {
 
   return (
     <nav aria-label="Table of Contents" className="w-full max-w-sm">
-      <HeadlessUIListbox
-        value={selectedOption}
-        onChange={scrollToActiveSection}
-      >
+      <Listbox value={selectedOption} onChange={scrollToActiveSection}>
         <ListboxButton text={selectedOption.name} />
 
         <ListboxOptions matchButtonWidth>
@@ -38,7 +34,7 @@ export function MobileTableOfContents() {
             <ListboxOption key={option.id} option={option} />
           ))}
         </ListboxOptions>
-      </HeadlessUIListbox>
+      </Listbox>
     </nav>
   )
 

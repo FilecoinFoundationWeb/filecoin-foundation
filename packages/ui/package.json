@@ -27,6 +27,8 @@
     "./Icon": "./src/Icon.tsx",
     "./IconButton": "./src/IconButton.tsx",
     "./KeyMemberCard": "./src/KeyMemberCard.tsx",
+    "./Listbox": "./src/Listbox/Listbox.tsx",
+    "./Listbox/*": "./src/Listbox/*.tsx",
     "./MarkdownPage": "./src/MarkdownPage.tsx",
     "./Meta": "./src/Meta.tsx",
     "./NotFoundAnalytics": "./src/NotFoundAnalytics.tsx",

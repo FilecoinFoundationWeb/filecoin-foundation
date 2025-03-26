@@ -334,4 +334,25 @@
   .page-header-image {
     @apply rounded-lg border border-brand-100;
   }
+
+  /* LISTBOX */
+  .listbox-button {
+    @apply rounded-lg border border-current bg-brand-800 text-brand-300 hover:text-brand-400;
+
+    &[aria-invalid='true'] {
+      @apply border-brand-error;
+    }
+  }
+
+  .listbox-options {
+    @apply rounded-lg border border-brand-100 bg-brand-800 text-brand-100;
+  }
+
+  .listbox-option {
+    @apply text-brand-100 ui-active:bg-brand-500;
+  }
+
+  .listbox-group-header {
+    @apply text-brand-300;
+  }
 }

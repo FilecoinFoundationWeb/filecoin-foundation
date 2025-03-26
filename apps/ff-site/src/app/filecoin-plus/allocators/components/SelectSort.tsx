@@ -1,12 +1,11 @@
 'use client'
 
-import { Listbox as HeadlessUIListbox } from '@headlessui/react'
+import { Listbox } from '@filecoin-foundation/ui/Listbox'
+import { ListboxButton } from '@filecoin-foundation/ui/Listbox/ListboxButton'
+import { ListboxOption } from '@filecoin-foundation/ui/Listbox/ListboxOption'
+import { ListboxOptions } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
 import { ArrowsDownUp } from '@phosphor-icons/react/dist/ssr'
 import type { Column, SortDirection } from '@tanstack/react-table'
-
-import { ListboxButton } from '@/components/Listbox/ListboxButton'
-import { ListboxOption } from '@/components/Listbox/ListboxOption'
-import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
@@ -32,7 +31,7 @@ export function SelectSort({
     options.find((option) => option.id === currentSortId) || defaultOption
 
   return (
-    <HeadlessUIListbox value={selectedOption} onChange={setColumnSort}>
+    <Listbox value={selectedOption} onChange={setColumnSort}>
       <ListboxButton
         leadingIcon={ArrowsDownUp}
         text={selectedOption.name}
@@ -43,7 +42,7 @@ export function SelectSort({
           <ListboxOption key={option.id} option={option} />
         ))}
       </ListboxOptions>
-    </HeadlessUIListbox>
+    </Listbox>
   )
 
   function setColumnSort(newOption: TableSortOption) {

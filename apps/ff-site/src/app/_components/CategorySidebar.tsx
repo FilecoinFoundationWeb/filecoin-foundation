@@ -2,10 +2,9 @@
 
 import type { ElementType } from 'react'
 
+import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { clsx } from 'clsx'
-
-import type { OptionType } from './Listbox/ListboxOption'
 
 type CategorySidebarProps = {
   selected: OptionType

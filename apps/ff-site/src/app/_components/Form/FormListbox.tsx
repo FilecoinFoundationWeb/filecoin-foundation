@@ -1,17 +1,18 @@
 import { type IconProps } from '@filecoin-foundation/ui/Icon'
-import { type SpacingValue } from '@filecoin-foundation/utils/types/tailwindTypes'
-import { Listbox } from '@headlessui/react'
-
-import { FormField, type FormFieldProps } from '@/components/Form/FormField'
-import { ListboxButton } from '@/components/Listbox/ListboxButton'
+import { Listbox } from '@filecoin-foundation/ui/Listbox'
+import { ListboxButton } from '@filecoin-foundation/ui/Listbox/ListboxButton'
 import {
   ListboxOption,
   type OptionType,
-} from '@/components/Listbox/ListboxOption'
+} from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import {
   ListboxOptions,
   type ListboxOptionsProps,
-} from '@/components/Listbox/ListboxOptions'
+} from '@filecoin-foundation/ui/Listbox/ListboxOptions'
+import { type SpacingValue } from '@filecoin-foundation/utils/types/tailwindTypes'
+
+import { FormField, type FormFieldProps } from '@/components/Form/FormField'
+
 export type FormListboxProps = {
   value: OptionType
   onChange: (value: OptionType) => void

@@ -1,15 +1,14 @@
 'use client'
 
-import { Listbox } from '@headlessui/react'
-import { ArrowsDownUp } from '@phosphor-icons/react'
-
+import { Listbox } from '@filecoin-foundation/ui/Listbox'
 import {
   ListboxButton,
   type ListboxButtonProps,
-} from '@/components/Listbox/ListboxButton'
-import { ListboxOption } from '@/components/Listbox/ListboxOption'
-import type { OptionType } from '@/components/Listbox/ListboxOption'
-import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
+} from '@filecoin-foundation/ui/Listbox/ListboxButton'
+import { ListboxOption } from '@filecoin-foundation/ui/Listbox/ListboxOption'
+import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
+import { ListboxOptions } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
+import { ArrowsDownUp } from '@phosphor-icons/react'
 
 export type SortListboxProps = {
   selected: OptionType
