@@ -1,7 +1,8 @@
 import { useMemo } from 'react'
 
+import { type AnyObject } from '@filecoin-foundation/utils/types/utilTypes'
+
 import type { DefaultFilterOptionType } from '@/types/filterTypes'
-import { type Object } from '@/types/utils'
 
 import {
   getCMSFieldOptionsAndValidIds,
@@ -9,13 +10,13 @@ import {
 } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { sumCountValues } from '@/utils/sumCountValues'
 
-type UseFilterOptionsWithCountProps<Entry extends Object> =
+type UseFilterOptionsWithCountProps<Entry extends AnyObject> =
   CMSFieldOptionsAndValidIdsParams & {
     defaultOption: DefaultFilterOptionType
     entries: Array<Entry>
   }
 
-export function useListboxOptions<Entry extends Object>({
+export function useListboxOptions<Entry extends AnyObject>({
   collectionName,
   fieldName,
   defaultOption,

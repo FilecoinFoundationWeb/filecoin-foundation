@@ -2,12 +2,11 @@ import { useCallback, useMemo } from 'react'
 
 import type { QueryParamValue } from '@filecoin-foundation/utils/types/urlTypes'
 
-import type { Object } from '@/types/utils'
-
-import { DEFAULT_FILTER_ID } from '@/constants/filterConstants'
+import type { AnyObject } from '@filecoin-foundation/utils/types/utilTypes'
+import { DEFAULT_FILTER_ID } from './filterConstants'
 
 export type UseFilterProps<
-  Entry extends Object,
+  Entry extends AnyObject,
   Query extends QueryParamValue,
 > = {
   entries: Array<Entry>
@@ -15,11 +14,10 @@ export type UseFilterProps<
   filterFn: (entry: Entry, filterQuery: Query) => boolean
 }
 
-export function useFilter<Entry extends Object, Query extends QueryParamValue>({
-  entries,
-  filterQuery,
-  filterFn,
-}: UseFilterProps<Entry, Query>) {
+export function useFilter<
+  Entry extends AnyObject,
+  Query extends QueryParamValue,
+>({ entries, filterQuery, filterFn }: UseFilterProps<Entry, Query>) {
   const filterByQuery = useCallback(
     (entry: Entry) => filterFn(entry, filterQuery),
     [filterFn, filterQuery],
