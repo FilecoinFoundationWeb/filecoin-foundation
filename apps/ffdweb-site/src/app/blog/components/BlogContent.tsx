@@ -37,7 +37,7 @@ type BlogContentProps = {
   posts: Array<BlogPost>
 }
 
-const { options: topicOptions } = getCMSFieldOptionsAndValidIds({
+const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
   collectionName: 'blog_posts',
   fieldName: 'category',
 })
@@ -61,7 +61,7 @@ export function BlogContent({ posts }: BlogContentProps) {
 
   const [categoryOption, setCategoryOption] = useListboxQueryState({
     key: CATEGORY_KEY,
-    options: topicOptions,
+    options: categoryOptions,
     defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
   })
 
@@ -80,7 +80,7 @@ export function BlogContent({ posts }: BlogContentProps) {
         secondary: (
           <FilterListbox
             selected={categoryOption}
-            options={[DEFAULT_CATEGORY_FILTER_OPTION, ...topicOptions]}
+            options={[DEFAULT_CATEGORY_FILTER_OPTION, ...categoryOptions]}
             onChange={setCategoryOption}
           />
         ),
