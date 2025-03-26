@@ -31,6 +31,7 @@ const webpackRules = [
 const nextConfig = {
   images: {
     remotePatterns: imageRemotePatterns,
+    deviceSizes: [320, 384, 640, 750, 828, 1200],
   },
   webpack: (config) => {
     config.module.rules.push(...webpackRules)
