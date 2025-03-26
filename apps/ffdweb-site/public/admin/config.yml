@@ -88,32 +88,6 @@ image_config: &image_config
 
 seo_metadata_description_max_characters: &seo_metadata_description_max_characters 220
 
-open_graph_config: &open_graph_config
-  name: "open-graph"
-  label: "Open Graph Metadata"
-  widget: "object"
-  required: false
-  collapsed: true
-  hint: "Expand for more information on default values."
-  fields:
-    - name: "title"
-      label: "Open Graph Title"
-      widget: "string"
-      required: false
-      hint: "If left empty, the SEO meta title will be used."
-    - name: "description"
-      label: "Open Graph Description"
-      widget: "string"
-      required: false
-      hint: "If left empty, the SEO meta description will be used."
-    - name: "image"
-      label: "Open Graph Image"
-      widget: "image"
-      allow_multiple: false
-      choose_url: false
-      required: false
-      hint: "If left empty, the page header image will be used. If no header image is present, a default homepage image will be used."
-
 twitter_config: &twitter_config
   name: "twitter"
   label: "Twitter Metadata"
@@ -163,25 +137,6 @@ meta_config_with_title_fallback: &meta_config_with_title_fallback
         - "^.{0,220}$"
         - "Must have at most 220 characters."
       hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
-    - *open_graph_config
-    - *twitter_config
-
-meta_config: &meta_config
-  name: "seo"
-  label: "SEO Metadata"
-  widget: "object"
-  fields:
-    - name: "title"
-      label: "Meta Title"
-      widget: "string"
-    - name: "description"
-      label: "Meta Description"
-      widget: "text"
-      pattern:
-        - "^.{0,220}$"
-        - "Must have at most 220 characters."
-      hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
-    - *open_graph_config
     - *twitter_config
 
 collections:
