@@ -14,14 +14,9 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 
 import { ProjectsContent } from './components/ProjectsContent'
+import { PROJECTS_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getProjectsData } from './utils/getProjectData'
-
-const PROJECTS_SEO = {
-  title: 'FFDW Projects | Explore Partnerships Advancing the Decentralized Web',
-  description:
-    'Explore how FFDW collaborates with nonprofits to build open-source solutions, preserve vital data, and shape a decentralized internet. See our partners in action.',
-} as const
 
 export default async function Projects() {
   const projects = await getProjectsData()

@@ -1,25 +1,37 @@
 import Image from 'next/image'
 
+import { type Author } from '@filecoin-foundation/utils/types/authorTypes'
 import { clsx } from 'clsx'
 
-const IMAGE_SIZE = 32
-const sharedAvatarStyle = 'rounded-full ring avatar-ring'
-
-export type AvatarProps = {
-  firstName: string
-  lastName: string
-  image?: { src: string }
+const IMAGE_SIZE = {
+  default: 32,
+  large: 40,
 }
 
-export function Avatar({ firstName, lastName, image }: AvatarProps) {
+const sharedAvatarStyle = 'rounded-full ring avatar-ring'
+
+type AvatarProps = Author & {
+  size?: 'default' | 'large'
+}
+
+export function Avatar({
+  firstName,
+  lastName,
+  image,
+  size = 'default',
+}: AvatarProps) {
   if (image) {
     return (
       <Image
         src={image.src}
         alt={`Photo of ${firstName} ${lastName}`}
-        width={IMAGE_SIZE}
-        height={IMAGE_SIZE}
-        className={clsx(sharedAvatarStyle, 'inline-block size-8 object-cover')}
+        width={IMAGE_SIZE[size]}
+        height={IMAGE_SIZE[size]}
+        className={clsx(
+          sharedAvatarStyle,
+          'inline-block object-cover',
+          size === 'default' ? 'size-8' : 'size-10',
+        )}
       />
     )
   }
@@ -27,7 +39,7 @@ export function Avatar({ firstName, lastName, image }: AvatarProps) {
   return (
     <div
       aria-label={`Initials of ${firstName} ${lastName}`}
-      style={{ width: IMAGE_SIZE, height: IMAGE_SIZE }}
+      style={{ width: IMAGE_SIZE[size], height: IMAGE_SIZE[size] }}
       className={clsx(
         sharedAvatarStyle,
         'avatar-background flex items-center justify-center',

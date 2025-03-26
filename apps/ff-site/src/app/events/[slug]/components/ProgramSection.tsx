@@ -13,7 +13,7 @@ type ProgramSectionProps = NonNullable<Event['program']>
 export function ProgramSection({ title, kicker, events }: ProgramSectionProps) {
   return (
     <PageSection kicker={kicker} title={title}>
-      <CardGrid cols="smTwo">
+      <CardGrid as="section" cols="smTwo">
         {events.map((event) => {
           const {
             title,
@@ -37,8 +37,9 @@ export function ProgramSection({ title, kicker, events }: ProgramSectionProps) {
           return (
             <Card
               key={title}
+              as="article"
               title={title}
-              description={description}
+              description={description ? { text: description } : undefined}
               borderColor="light"
               metaData={getMetaData({
                 startDate,

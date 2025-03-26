@@ -1,4 +1,4 @@
-import type { DEFAULT_FILTER_ID } from '@/constants/filterConstants'
+import type { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter'
 
 export type DefaultFilterOptionType = {
   id: typeof DEFAULT_FILTER_ID

@@ -1,13 +1,13 @@
+import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import prettyBytes from 'pretty-bytes'
 import { z } from 'zod'
 
-import type { OptionType } from '@/components/Listbox/ListboxOption'
 
 import {
   BRIEF_CHARACTER_LIMIT,
+  DESCRIPTION_CHARACTER_LIMIT,
   GITHUB_BASE_URL,
   MAX_FILE_SIZE_IN_BYTES,
-  NETWORK_USE_CASE_CHARACTER_LIMIT,
   TWITTER_BASE_URL,
   X_BASE_URL,
   YOUTUBE_BASE_URL,
@@ -32,12 +32,7 @@ export const EcosystemProjectFormSchema = z.object({
     .string()
     .min(1, { message: 'Your email is required' })
     .email({ message: 'The email format is invalid' }),
-  title: z
-    .string()
-    .min(1, { message: 'Your project name is required' })
-    .max(NETWORK_USE_CASE_CHARACTER_LIMIT, {
-      message: 'Your project name is too long',
-    }),
+  title: z.string().min(1, { message: 'Your project name is required' }),
   tech: z
     .object({
       filecoin: z.boolean(),
@@ -51,11 +46,13 @@ export const EcosystemProjectFormSchema = z.object({
   briefSummary: z
     .string()
     .min(1, { message: 'The brief summary is required' })
-    .max(BRIEF_CHARACTER_LIMIT, { message: 'The summary is too long' }),
+    .max(BRIEF_CHARACTER_LIMIT.max, { message: 'The summary is too long' }),
   networkUseCase: z
     .string()
-    .min(1, { message: 'The network use case is required' })
-    .max(NETWORK_USE_CASE_CHARACTER_LIMIT, {
+    .min(DESCRIPTION_CHARACTER_LIMIT.min, {
+      message: 'The description is too short',
+    })
+    .max(DESCRIPTION_CHARACTER_LIMIT.max, {
       message: 'The description is too long',
     }),
   category: OptionSchema,

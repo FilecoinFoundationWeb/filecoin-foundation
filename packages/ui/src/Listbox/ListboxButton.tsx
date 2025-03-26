@@ -34,9 +34,9 @@ export function ListboxButton({
 }: ListboxButtonProps) {
   return (
     <HeadlessUIListboxButton
+      aria-invalid={hasError}
       className={clsx(
-        'relative inline-flex w-full items-center justify-between gap-2 rounded-lg border bg-brand-800 p-3 text-brand-300 hover:border-current hover:text-brand-400 focus:brand-outline',
-        hasError ? 'border-brand-error' : 'border-brand-300',
+        'listbox-button relative inline-flex w-full items-center justify-between gap-2 p-3',
       )}
     >
       <div

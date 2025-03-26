@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 const BASE_DOMAIN = 'ffdweb.org'
 const BASE_URL = `https://${BASE_DOMAIN}`
 const ORGANIZATION_NAME = 'Filecoin Foundation for the Decentralized Web'
@@ -28,6 +30,14 @@ const FFDW_URLS = {
   },
   newResourceForm: 'https://airtable.com/appqYx2g5gO6GX8jL/shrhkHIBbGxLnGGZh',
 } as const
+
+export const ROOT_METADATA = {
+  title: {
+    template: `${ORGANIZATION_NAME_SHORT} | %s`,
+    default: ORGANIZATION_NAME,
+  },
+  metadataBase: new URL(BASE_URL),
+} as const satisfies Metadata
 
 export {
   BASE_DOMAIN,

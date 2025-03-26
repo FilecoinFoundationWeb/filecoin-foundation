@@ -1,17 +1,16 @@
 'use client'
 
-import { Listbox } from '@headlessui/react'
-import { FunnelSimple } from '@phosphor-icons/react'
-
+import { Listbox } from '@filecoin-foundation/ui/Listbox'
 import {
   ListboxButton,
   type ListboxButtonProps,
-} from '@/components/Listbox/ListboxButton'
+} from '@filecoin-foundation/ui/Listbox/ListboxButton'
 import {
   ListboxOption,
   type OptionType,
-} from '@/components/Listbox/ListboxOption'
-import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
+} from '@filecoin-foundation/ui/Listbox/ListboxOption'
+import { ListboxOptions } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
+import { FunnelSimple } from '@phosphor-icons/react'
 
 type FilterListboxProps = {
   selected: OptionType

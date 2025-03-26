@@ -2,6 +2,8 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { useFilter } from '@filecoin-foundation/hooks/useFilter'
+import { DEFAULT_CATEGORY_FILTER_OPTION } from '@filecoin-foundation/hooks/useFilter'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
@@ -17,7 +19,6 @@ import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { BookOpen } from '@phosphor-icons/react'
 
-import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
@@ -27,7 +28,6 @@ import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { getSortOptions } from '@/utils/getSortOptions'
 
-import { useFilter } from '@/hooks/useFilter'
 import { useListboxOptions } from '@/hooks/useListboxOptions'
 import { useSort } from '@/hooks/useSort'
 
@@ -116,7 +116,7 @@ export function BlogContent({ posts }: BlogContentProps) {
             <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
           ) : (
             <>
-              <CardGrid cols="smTwo">
+              <CardGrid as="section" cols="smTwo">
                 {paginatedResults.map((post, i) => {
                   const {
                     slug,
@@ -136,6 +136,7 @@ export function BlogContent({ posts }: BlogContentProps) {
                   return (
                     <Card
                       key={slug}
+                      as="article"
                       title={title}
                       description={{ text: description, isClamped: true }}
                       metaData={[formatDate(publishedOn)]}

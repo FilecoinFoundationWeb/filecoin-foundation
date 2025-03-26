@@ -55,7 +55,7 @@ export function BlogContent({ posts }: BlogContentProps) {
         main: <Search query={searchQuery} />,
       }}
     >
-      <CardGrid cols="smTwoLgThree">
+      <CardGrid as="section" cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {
           const { slug, category, title, description, image, publishedOn } =
             post
@@ -69,6 +69,7 @@ export function BlogContent({ posts }: BlogContentProps) {
           return (
             <Card
               key={slug}
+              as="article"
               title={title}
               description={{ text: description, isClamped: true }}
               metaData={[formatDate(publishedOn)]}

@@ -51,7 +51,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
       top={{ main: <Search query={searchQuery} /> }}
       bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
     >
-      <CardGrid cols="smTwoLgThree">
+      <CardGrid as="section" cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {
           const { slug, title, description, image, publishedOn, category } =
             post
@@ -65,6 +65,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
           return (
             <Card
               key={slug}
+              as="article"
               title={title}
               description={{ text: description, isClamped: true }}
               metaData={[formatDate(publishedOn)]}

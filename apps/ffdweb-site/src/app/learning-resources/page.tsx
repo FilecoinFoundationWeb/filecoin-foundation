@@ -14,14 +14,9 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 
 import { LearningResourcesContent } from './components/LearningResourcesContent'
+import { LEARNING_RESOURCES_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getLearningResourcesData } from './utils/getLearningResourceData'
-
-const LEARNING_RESOURCES_SEO = {
-  title: 'FFDW Learning Resources | Decentralized Tech & Social Impact',
-  description:
-    'Discover case studies, tutorials, and tools on decentralized technologies driving social change. Learn, share, and help shape the future with FFDW.',
-} as const
 
 export default async function LearningResources() {
   const resources = await getLearningResourcesData()

@@ -62,7 +62,7 @@ export default function About() {
       />
 
       <PageSection kicker="What We Do" title="Focus Areas">
-        <CardGrid cols="lgThree">
+        <CardGrid as="ul" cols="lgThree">
           {focusAreasData.map(({ title, description, image }) => (
             <FocusAreaCard
               key={title}
@@ -75,7 +75,7 @@ export default function About() {
       </PageSection>
 
       <PageSection kicker="Board" title="Board of Directors">
-        <CardGrid cols="mdTwo">
+        <CardGrid as="ul" cols="mdTwo">
           {boardMembersData.map(({ name, title, linkedin, image }) => (
             <KeyMemberCard
               key={name}
@@ -93,7 +93,7 @@ export default function About() {
         title="Advisors"
         description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
       >
-        <CardGrid cols="mdTwo">
+        <CardGrid as="ul" cols="mdTwo">
           {advisorsData.map(({ name, title, linkedin, image }) => (
             <KeyMemberCard
               key={name}
@@ -107,7 +107,7 @@ export default function About() {
       </PageSection>
 
       <PageSection kicker="Insights" title="Reports">
-        <CardGrid cols="lgTwo" hasGridAutoRows={false}>
+        <CardGrid as="ul" cols="lgTwo" hasGridAutoRows={false}>
           {reportsData.map(({ title, description, link, image }, index) => {
             return (
               <li
@@ -117,7 +117,7 @@ export default function About() {
                 <Card
                   as="div"
                   title={title}
-                  description={description}
+                  description={{ text: description }}
                   image={
                     image && {
                       ...(image || graphicsData.imageFallback.data),

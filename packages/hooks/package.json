@@ -7,7 +7,8 @@
     "#*": "./src/*"
   },
   "exports": {
-    "./useUpdateSearchParams": "./src/useUpdateSearchParams/index.ts"
+    "./useUpdateSearchParams": "./src/useUpdateSearchParams/index.ts",
+    "./useFilter": "./src/useFilter/index.ts"
   },
   "scripts": {
     "lint": "eslint . --fix"

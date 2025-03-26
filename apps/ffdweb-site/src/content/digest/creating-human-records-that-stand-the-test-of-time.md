@@ -13,12 +13,13 @@ authors:
     company: Starling Lab
     image:
       src: /assets/headshots/Adam_Rose.webp
+    bio: Adam Rose is the chief operating officer at Starling Lab, and serves as press rights chair for the Los Angeles Press Club.
   - first-name: Basile
     last-name: Simon
     company: Starling Lab, Airwars
     image:
       src: /assets/headshots/Basile_Simon.webp
-    # bio: "Adam Rose is the chief operating officer at Starling Lab, and serves as press rights chair for the Los Angeles Press Club. Basile Simon leads the Lab’s research in law and criminal accountability, and is co-founder and advisor to Airwars. Both have spent most of their careers in journalism."
+    bio: Basile Simon leads the Lab’s research in law and criminal accountability, and is co-founder and advisor to Airwars.
 seo:
   description: "From ancient clay tablets to modern blockchains, discover how new technologies are preserving crucial digital evidence of war crimes, human rights violations, and historical events for future generations."
 ---

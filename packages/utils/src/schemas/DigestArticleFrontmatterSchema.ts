@@ -12,6 +12,7 @@ export const DigestArticleFrontmatterSchema = DynamicBaseDataSchema.extend({
       'last-name': z.string(),
       image: ImagePropsSchema.optional(),
       company: z.string(),
+      bio: z.string().optional(),
     }),
   ),
   content: z.string(),

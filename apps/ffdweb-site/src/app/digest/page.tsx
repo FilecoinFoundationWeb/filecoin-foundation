@@ -17,14 +17,9 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
+import { DIGEST_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getDigestArticlesData } from './utils/getDigestArticleData'
-
-const DIGEST_SEO = {
-  title: 'FFDW DWeb Digest | In-Depth Exploration of the Decentralized Web',
-  description:
-    'Explore FFDW DWeb Digest for expert insights on cognitive liberty, privacy, and crypto policy. Discover the evolving landscape of digital autonomy and blockchain.',
-} as const
 
 export default async function Digest() {
   const articles = await getDigestArticlesData()
@@ -44,7 +39,7 @@ export default async function Digest() {
         kicker="Issue 1 | May 2024"
         title="DWeb Digest: Inaugural Edition"
       >
-        <CardGrid cols="smTwo">
+        <CardGrid as="section" cols="smTwo">
           {articles.map((article) => {
             const { title, image, slug, articleNumber, description, authors } =
               article
@@ -52,6 +47,7 @@ export default async function Digest() {
             return (
               <Card
                 key={slug}
+                as="article"
                 title={title}
                 avatars={authors}
                 description={{ text: description, isClamped: true }}

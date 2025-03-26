@@ -16,7 +16,6 @@ import { ZodError } from 'zod'
 
 import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-
 import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'
 
@@ -87,7 +86,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
         <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
       ) : (
         <>
-          <CardGrid cols="smTwo">
+          <CardGrid as="section" cols="smTwo">
             {paginatedResults.map((event, index) => {
               const { title, city, startDate, registrationLink } = event
 
@@ -98,6 +97,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
               return (
                 <Card
                   key={index}
+                  as="article"
                   title={title}
                   metaData={[formatDate(startDate), city]}
                   borderColor="light"

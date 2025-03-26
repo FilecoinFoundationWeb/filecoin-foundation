@@ -1,16 +1,16 @@
 import type { ImageProps } from '@filecoin-foundation/utils/types/imageType'
 import { ArticleHeader } from '@filecoin-foundation/ui/Article/ArticleHeader'
 import {
-  type AvatarGroupProps,
-  AvatarGroup,
-} from '@filecoin-foundation/ui/AvatarGroup'
+  type AvatarGroupExpandedProps,
+  AvatarGroupExpanded,
+} from './Avatar/AvatarGroupExpanded'
 import { TagGroup } from '@filecoin-foundation/ui/TagComponents'
 
 type DigestArticleProps = {
   issueNumber: string
   articleNumber: number
   title: string
-  authors: AvatarGroupProps['authors']
+  authors: AvatarGroupExpandedProps['authors']
   image: ImageProps
 }
 
@@ -30,7 +30,7 @@ export function DigestArticleHeader({
         ]}
       />
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
-      <AvatarGroup authors={authors} />
+      <AvatarGroupExpanded authors={authors} />
     </ArticleHeader>
   )
 }

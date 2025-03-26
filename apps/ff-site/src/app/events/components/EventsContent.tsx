@@ -1,3 +1,4 @@
+import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
@@ -25,7 +26,6 @@ import {
 } from '@/utils/filterUtils'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
-import { useFilter } from '@/hooks/useFilter'
 import { useListboxOptions } from '@/hooks/useListboxOptions'
 import { useSort } from '@/hooks/useSort'
 
@@ -117,7 +117,7 @@ export default function EventsContent({
             <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
           ) : (
             <>
-              <CardGrid cols="smTwo">
+              <CardGrid as="section" cols="smTwo">
                 {paginatedResults.map((event, i) => {
                   const {
                     slug,
@@ -143,11 +143,17 @@ export default function EventsContent({
                   return (
                     <Card
                       key={slug}
+                      as="article"
                       title={title}
                       borderColor="light"
                       tags={[{ text: tagLabel }]}
                       description={
-                        description && { text: description, isClamped: true }
+                        description
+                          ? {
+                              text: description,
+                              isClamped: true,
+                            }
+                          : undefined
                       }
                       metaData={getMetaData({
                         startDate,

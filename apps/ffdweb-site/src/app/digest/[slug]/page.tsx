@@ -19,6 +19,7 @@ import {
   getDigestArticlesData,
 } from '../utils/getDigestArticleData'
 
+import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type DigestArticleProps = {
@@ -30,6 +31,8 @@ export default async function DigestArticle(props: DigestArticleProps) {
   const data = await getDigestArticleData(slug)
 
   const { title, issueNumber, articleNumber, image, authors, content } = data
+
+  const atLeastOneAuthorHasBio = authors.some((author) => author.bio)
 
   return (
     <PageLayout>
@@ -45,7 +48,17 @@ export default async function DigestArticle(props: DigestArticleProps) {
             alt: '',
           }}
         />
+
         {content && <MarkdownContent>{content}</MarkdownContent>}
+
+        {atLeastOneAuthorHasBio && (
+          <aside className="flex flex-col gap-5 sm:w-2/3">
+            {authors.map((author) => (
+              <AuthorBio key={author.firstName} author={author} />
+            ))}
+          </aside>
+        )}
+
         <ShareArticle
           articleTitle={title}
           path={`${PATHS.DIGEST.path}/${slug}`}
@@ -70,10 +83,7 @@ export async function generateMetadata(props: DigestArticleProps) {
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: seo.image || image?.src || graphicsData.digest.data.src,
-    openGraph: {
-      type: 'article',
-      ...seo.openGraph,
-    },
+    openGraph: { type: 'article' },
     twitter: seo.twitter,
   })
 }

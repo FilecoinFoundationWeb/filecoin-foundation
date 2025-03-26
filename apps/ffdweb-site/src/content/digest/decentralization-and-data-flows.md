@@ -13,7 +13,7 @@ authors:
     company: Data Transfer Initiative
     image:
       src: /assets/headshots/Chris_Riley.webp
-    # bio: Chris Riley is the executive director of the nonprofit Data Transfer Initiative and a distinguished research fellow at the Annenberg Public Policy Center at the University of Pennsylvania; he holds a Ph.D. in computer science from Johns Hopkins University and a J.D. from Yale Law School.
+    bio: Chris Riley is the executive director of the nonprofit Data Transfer Initiative and a distinguished research fellow at the Annenberg Public Policy Center at the University of Pennsylvania; he holds a Ph.D. in computer science from Johns Hopkins University and a J.D. from Yale Law School.
 seo:
   description: Explore how data portability and unrestricted data flows enable true decentralization. Learn why reciprocal data transfer policies and user control are essential for decentralized systems.
 ---

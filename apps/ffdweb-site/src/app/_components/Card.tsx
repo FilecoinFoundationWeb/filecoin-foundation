@@ -1,8 +1,8 @@
 import {
   Card as SharedCard,
-  type ExtendedCTAProps,
   type CardProps as SharedCardProps,
-} from '@filecoin-foundation/ui/Card'
+} from '@filecoin-foundation/ui/Card/Card'
+import type { ExtendedCTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
