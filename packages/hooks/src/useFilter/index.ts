@@ -1,0 +1,13 @@
+import { useFilter } from './useFilter'
+import {
+  DEFAULT_CATEGORY_FILTER_OPTION,
+  DEFAULT_LOCATION_FILTER_OPTION,
+  DEFAULT_FILTER_ID,
+} from './filterConstants'
+
+export {
+  useFilter,
+  DEFAULT_CATEGORY_FILTER_OPTION,
+  DEFAULT_LOCATION_FILTER_OPTION,
+  DEFAULT_FILTER_ID,
+}

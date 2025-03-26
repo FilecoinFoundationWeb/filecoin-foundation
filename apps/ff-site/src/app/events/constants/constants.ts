@@ -1,7 +1,7 @@
 import {
   DEFAULT_CATEGORY_FILTER_OPTION,
   DEFAULT_LOCATION_FILTER_OPTION,
-} from '@/constants/filterConstants'
+} from '@filecoin-foundation/hooks/useFilter'
 
 export const DEFAULT_CTA_TEXT = 'View Event Details'
 
