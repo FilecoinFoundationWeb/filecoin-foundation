@@ -1,4 +1,5 @@
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
+import { entryMatchesCategoryQuery } from '@filecoin-foundation/hooks/useFilter/utils'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
@@ -20,10 +21,6 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import {
-  entryMatchesCategoryQuery,
-  entryMatchesLocationQuery,
-} from '@/utils/filterUtils'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { useListboxOptions } from '@/hooks/useListboxOptions'
@@ -38,6 +35,7 @@ import { EventSort } from '../components/EventSort'
 import { DEFAULT_CTA_TEXT, FILTERS_CONFIG } from '../constants/constants'
 import { eventsSortConfigs } from '../constants/sortConfigs'
 import type { Event } from '../types/eventType'
+import { entryMatchesLocationQuery } from '../utils/filterUtils'
 import { getLocationListboxOptions } from '../utils/getLocationFilterOptions'
 import { getMetaData } from '../utils/getMetaData'
 
