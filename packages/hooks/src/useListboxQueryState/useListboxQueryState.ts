@@ -1,7 +1,6 @@
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import { parseAsString, useQueryState } from 'nuqs'
 
-
 type ListboxQueryStateConfig = {
   key: string
   options: Array<OptionType>
