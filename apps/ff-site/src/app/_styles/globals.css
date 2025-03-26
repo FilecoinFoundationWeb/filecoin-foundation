@@ -337,7 +337,7 @@
 
   /* LISTBOX */
   .listbox-button {
-    @apply rounded-lg border border-brand-300 bg-brand-800 text-brand-300 hover:border-current hover:text-brand-400;
+    @apply rounded-lg border border-current bg-brand-800 text-brand-300 hover:text-brand-400;
 
     &[aria-invalid='true'] {
       @apply border-brand-error;
