@@ -3,17 +3,23 @@
 import { useSearchParams } from 'next/navigation'
 
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
-import { DEFAULT_CATEGORY_FILTER_OPTION } from '@filecoin-foundation/hooks/useFilter/constants'
+import {
+  DEFAULT_CATEGORY_FILTER_OPTION,
+  DEFAULT_RESOURCE_FILTER_OPTION,
+} from '@filecoin-foundation/hooks/useFilter/constants'
 import { entryMatchesCategoryQuery } from '@filecoin-foundation/hooks/useFilter/utils'
+import { useListboxOptions } from '@filecoin-foundation/hooks/useListboxOptions'
 import { useListboxQueryState } from '@filecoin-foundation/hooks/useListboxQueryState'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { FilterListbox } from '@filecoin-foundation/ui/FilterListbox'
+import { FilterSidebar } from '@filecoin-foundation/ui/FilterSidebar'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import {
   PAGE_KEY,
   SEARCH_KEY,
   CATEGORY_KEY,
+  RESOURCE_TYPE_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { ArrowUpRight } from '@phosphor-icons/react'
@@ -25,6 +31,7 @@ import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'
 
 import type { LearningResource } from '../types/learningResourceType'
+import { entryMatchesResourceQuery } from '../utils/entryMatchesResourceQuery'
 
 type LearningResourcesContentProps = {
   resources: Array<LearningResource>
@@ -33,6 +40,11 @@ type LearningResourcesContentProps = {
 const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
   collectionName: 'learning_resources',
   fieldName: 'category',
+})
+
+const { options: resourceTypeOptions } = getCMSFieldOptionsAndValidIds({
+  collectionName: 'learning_resources',
+  fieldName: 'resource-type',
 })
 
 export function LearningResourcesContent({
@@ -47,7 +59,7 @@ export function LearningResourcesContent({
     searchBy: ['title', 'description'],
   })
 
-  const { filteredEntries } = useFilter({
+  const { filteredEntries: filteredByCategory } = useFilter({
     entries: searchResults,
     filterQuery: normalizeQueryParam(searchParams, CATEGORY_KEY),
     filterFn: entryMatchesCategoryQuery,
@@ -59,9 +71,28 @@ export function LearningResourcesContent({
     defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
   })
 
+  const { filteredEntries: filteredByResourceType } = useFilter({
+    entries: filteredByCategory,
+    filterQuery: normalizeQueryParam(searchParams, RESOURCE_TYPE_KEY),
+    filterFn: entryMatchesResourceQuery,
+  })
+
+  const [resourceTypeOption, setResourceTypeOption] = useListboxQueryState({
+    key: RESOURCE_TYPE_KEY,
+    options: resourceTypeOptions,
+    defaultOption: DEFAULT_RESOURCE_FILTER_OPTION,
+  })
+
   const { currentPage, pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
-    entries: filteredEntries,
+    entries: filteredByResourceType,
+  })
+
+  const { optionsWithCount: resourceTypeOptionsWithCount } = useListboxOptions({
+    options: resourceTypeOptions,
+    defaultOption: DEFAULT_RESOURCE_FILTER_OPTION,
+    entries: filteredByCategory,
+    countBy: 'resourceType',
   })
 
   return (
@@ -75,6 +106,22 @@ export function LearningResourcesContent({
             selected={categoryOption}
             options={[DEFAULT_CATEGORY_FILTER_OPTION, ...categoryOptions]}
             onChange={setCategoryOption}
+          />
+        ),
+      }}
+      side={{
+        desktop: (
+          <FilterSidebar
+            selected={resourceTypeOption}
+            options={resourceTypeOptionsWithCount}
+            onChange={setResourceTypeOption}
+          />
+        ),
+        mobile: (
+          <FilterListbox
+            selected={resourceTypeOption}
+            options={resourceTypeOptionsWithCount}
+            onChange={setResourceTypeOption}
           />
         ),
       }}

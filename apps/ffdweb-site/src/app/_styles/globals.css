@@ -345,4 +345,13 @@
   .listbox-option {
     @apply ui-active:bg-brand-primary-500;
   }
+
+  /* FILTER SIDEBAR */
+  .filter-sidebar-button {
+    @apply text-brand-primary-300 hover:bg-brand-primary-800 rounded-xs;
+
+    &[data-selected='true'] {
+      @apply bg-brand-primary-800 text-brand-primary-200;
+    }
+  }
 }
