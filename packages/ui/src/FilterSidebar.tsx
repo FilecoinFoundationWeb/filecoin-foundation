@@ -1,7 +1,5 @@
 'use client'
 
-import type { ElementType } from 'react'
-
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { clsx } from 'clsx'
@@ -14,7 +12,6 @@ type FilterSidebarProps = {
 
 type FilterContainerProps = {
   children: React.ReactNode
-  as?: ElementType
 }
 
 type FilterItemProps = Pick<OptionType, 'name' | 'count'> & {
@@ -48,14 +45,11 @@ export function FilterSidebar({
   )
 }
 
-FilterSidebar.Container = function List({
-  children,
-  as: Component = 'ul',
-}: FilterContainerProps) {
+FilterSidebar.Container = function List({ children }: FilterContainerProps) {
   return (
-    <Component className={clsx('space-y-3', TOUCH_TARGET.touchAreaOffset)}>
+    <ul className={clsx('space-y-3', TOUCH_TARGET.touchAreaOffset)}>
       {children}
-    </Component>
+    </ul>
   )
 }
 
