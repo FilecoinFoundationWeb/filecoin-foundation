@@ -40,7 +40,6 @@ schedule:
           start-time: 10:00:00.000Z
           location: TBD
         - url: https://lu.ma/depin-dubai
-          tag: ""
           title: Jen King @ DePIN Day Dubai
           start-time: 10:00:00.000Z
           location: TBC
