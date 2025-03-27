@@ -355,4 +355,13 @@
   .listbox-group-header {
     @apply text-brand-300;
   }
+
+  /* FILTER SIDEBAR */
+  .filter-sidebar-button {
+    @apply rounded-lg text-brand-300 hover:bg-brand-700;
+
+    &[data-selected='true'] {
+      @apply bg-brand-700 text-brand-400;
+    }
+  }
 }

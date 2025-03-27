@@ -1,4 +1,4 @@
-import type { DefaultFilterOptionType } from '@/types/filterTypes'
+import type { DefaultFilterOptionType } from '@filecoin-foundation/hooks/useFilter/types'
 
 import {
   getCMSFieldOptionsAndValidIds,
