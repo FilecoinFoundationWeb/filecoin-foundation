@@ -12,6 +12,9 @@
     "./useFilter": "./src/useFilter/index.ts",
     "./useFilter/constants": "./src/useFilter/constants/index.ts",
     "./useFilter/utils": "./src/useFilter/utils/index.ts",
+    "./useFilter/types": "./src/useFilter/types/index.ts",
+    "./useListboxOptions": "./src/useListboxOptions/index.ts",
+    "./useListboxOptions/utils": "./src/useListboxOptions/utils/index.ts",
     "./useListboxQueryState": "./src/useListboxQueryState/index.ts",
     "./useResetPageQuery": "./src/useResetPageQuery/index.ts"
   },
