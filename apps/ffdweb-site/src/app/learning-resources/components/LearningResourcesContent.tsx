@@ -2,17 +2,24 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { useFilter } from '@filecoin-foundation/hooks/useFilter'
+import { DEFAULT_CATEGORY_FILTER_OPTION } from '@filecoin-foundation/hooks/useFilter/constants'
+import { entryMatchesCategoryQuery } from '@filecoin-foundation/hooks/useFilter/utils'
+import { useListboxQueryState } from '@filecoin-foundation/hooks/useListboxQueryState'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { FilterListbox } from '@filecoin-foundation/ui/FilterListbox'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import {
   PAGE_KEY,
   SEARCH_KEY,
+  CATEGORY_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { ArrowUpRight } from '@phosphor-icons/react'
 
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 
 import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'
@@ -22,6 +29,11 @@ import type { LearningResource } from '../types/learningResourceType'
 type LearningResourcesContentProps = {
   resources: Array<LearningResource>
 }
+
+const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
+  collectionName: 'learning_resources',
+  fieldName: 'category',
+})
 
 export function LearningResourcesContent({
   resources,
@@ -35,9 +47,21 @@ export function LearningResourcesContent({
     searchBy: ['title', 'description'],
   })
 
+  const { filteredEntries } = useFilter({
+    entries: searchResults,
+    filterQuery: normalizeQueryParam(searchParams, CATEGORY_KEY),
+    filterFn: entryMatchesCategoryQuery,
+  })
+
+  const [categoryOption, setCategoryOption] = useListboxQueryState({
+    key: CATEGORY_KEY,
+    options: categoryOptions,
+    defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
+  })
+
   const { currentPage, pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
-    entries: searchResults,
+    entries: filteredEntries,
   })
 
   return (
@@ -46,6 +70,13 @@ export function LearningResourcesContent({
       bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
       top={{
         main: <Search query={searchQuery} />,
+        secondary: (
+          <FilterListbox
+            selected={categoryOption}
+            options={[DEFAULT_CATEGORY_FILTER_OPTION, ...categoryOptions]}
+            onChange={setCategoryOption}
+          />
+        ),
       }}
     >
       <CardGrid as="section" cols="smTwo" hasGridAutoRows={false}>
