@@ -5,7 +5,7 @@ description: "​At FIL Dev Summit, our goal is to advance the Filecoin network
   Toronto, we’re incorporating community feedback to spend less time presenting
   and more time collaborating with our time together IRL.  ​To make that happen,
   we’re introducing a new Virtual Track for FIL Dev Summit Toronto, happening on
-  April 23-30 before the in-person gathering in Toronto on May 12-13. "
+  April 23-30 before the in-person gathering in Toronto on May 12-13."
 created-on: 2025-03-27T14:07:00.000Z
 updated-on: 2025-03-27T14:07:00.000Z
 published-on: 2025-03-27T14:07:00.000Z
@@ -18,12 +18,12 @@ external-link: https://lu.ma/ry15g7r5?tk=YqBU2g
 image:
   src: /assets/images/devsummit6_virtual_social1.png
 program:
-  kicker: ""
   title: Track Schedule
   events:
     - title: "The Filecoin State of the Union: Navigating Growth & Market Shifts"
       start-date: 2025-04-23
-      description: This track provides a high-level overview of Filecoin's growth
+      description:
+        This track provides a high-level overview of Filecoin's growth
         trajectory, market shifts, and future roadmap. We'll explore the latest
         metrics, stakeholder growth trends, and macroeconomic influences on
         Filecoin's tokenomics. A panel discussion will dive into the realities
@@ -32,10 +32,12 @@ program:
         and broader infrastructure investments, AI integrations, and the
         potential for Filecoin to become a core player in decentralized AI.
       location: Virtual
-    - title: "Storage Adoption: Winning Clients, Scaling Demand, and Lessons from the
+    - title:
+        "Storage Adoption: Winning Clients, Scaling Demand, and Lessons from the
         Field"
       start-date: 2025-04-24
-      description: Storage adoption is at the heart of Filecoin’s success. This track
+      description:
+        Storage adoption is at the heart of Filecoin’s success. This track
         explores the latest trends in storage adoption, best practices for
         onboarding clients, and key takeaways from various onramps and storage
         networks. Hear from client success leaders and learn from real-world
@@ -44,7 +46,8 @@ program:
       location: Virtual
     - title: "The On-Chain Tech Stack: Unlocking Filecoin’s Smart Data Economy"
       start-date: 2025-04-25
-      description: Filecoin's on-chain capabilities are evolving rapidly, unlocking
+      description:
+        Filecoin's on-chain capabilities are evolving rapidly, unlocking
         new possibilities for decentralized data markets and financial flows.
         This track will cover the latest developments in Filecoin Web Services
         (FWS), stablecoin-backed payments, and L2 integrations. Learn how to
@@ -64,7 +67,8 @@ program:
     - title: "Value Accrual & Funding: The Path to Sustainable Growth"
       start-date: 2025-04-29
       location: Virtual
-      description: How does Filecoin capture value and sustain long-term growth? This
+      description:
+        How does Filecoin capture value and sustain long-term growth? This
         track explores Filecoin’s evolving economic model, including
         stablecoins, staking, ProPGF, and value accrual mechanisms. We'll
         examine how Filecoin fits into the broader DeFi and multi-chain economy,
@@ -84,6 +88,7 @@ program:
 seo:
   twitter:
     card: summary
-  description: Kick off FDS-6 with our engaging virtual sessions! Connect, learn,
+  description:
+    Kick off FDS-6 with our engaging virtual sessions! Connect, learn,
     and get ready for an exciting journey ahead. Don't miss out on the action!
 ---
