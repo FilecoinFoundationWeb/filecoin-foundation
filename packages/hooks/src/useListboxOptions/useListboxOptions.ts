@@ -19,7 +19,7 @@ export function useListboxOptions<Entry extends AnyObject>({
   defaultOption,
   entries,
 }: UseListboxOptionsArgs<Entry>) {
-  const optionsWithCount = useMemo(() => {
+  const allOptionsWithCount = useMemo(() => {
     const optionsWithCount = options.map((option) => {
       const matches = entries.filter((entry) => entry[countBy] === option.id)
       return { ...option, count: matches.length }
@@ -35,6 +35,6 @@ export function useListboxOptions<Entry extends AnyObject>({
 
   return {
     options: [defaultOption, ...options],
-    optionsWithCount,
+    optionsWithCount: allOptionsWithCount,
   }
 }

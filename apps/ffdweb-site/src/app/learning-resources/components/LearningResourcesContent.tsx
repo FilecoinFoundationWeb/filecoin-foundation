@@ -37,13 +37,15 @@ type LearningResourcesContentProps = {
   resources: Array<LearningResource>
 }
 
+const LEARNING_RESOURCES_COLLECTION_NAME = 'learning_resources'
+
 const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
-  collectionName: 'learning_resources',
+  collectionName: LEARNING_RESOURCES_COLLECTION_NAME,
   fieldName: 'category',
 })
 
 const { options: resourceTypeOptions } = getCMSFieldOptionsAndValidIds({
-  collectionName: 'learning_resources',
+  collectionName: LEARNING_RESOURCES_COLLECTION_NAME,
   fieldName: 'resource-type',
 })
 
@@ -132,12 +134,12 @@ export function LearningResourcesContent({
             resource
 
           const categoryLabel = getCategoryLabel({
-            collectionName: 'learning_resources',
+            collectionName: LEARNING_RESOURCES_COLLECTION_NAME,
             category,
           })
 
           const resourceTypeLabel = getCategoryLabel({
-            collectionName: 'learning_resources',
+            collectionName: LEARNING_RESOURCES_COLLECTION_NAME,
             category: resourceType,
             fieldName: 'resource-type',
           })
