@@ -10,8 +10,8 @@ location:
 start-date: 2025-04-30
 end-date: 2025-05-01
 schedule:
-  kicker: DON'T MISS OUT
-  title: SPEAKING ENGAGEMENTS
+  kicker: Don't miss out
+  title: Speaking engagements
   days:
     - date: 2025-04-29
       events:
@@ -51,8 +51,8 @@ schedule:
           start-time: 14:40:00.000Z
           end-time: 15:10:00.000Z
 speakers:
-  kicker: CONNECT WITH US
-  title: MEET THE TEAM
+  kicker: Connect with us
+  title: Meet the team
   speakers_list:
     - name: Clara Tsao
       title: Founding Officer
