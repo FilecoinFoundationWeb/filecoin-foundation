@@ -44,15 +44,15 @@ export function FilterContainer({
               !top.secondary && side?.mobile && 'lg:hidden',
             )}
           >
-            {side?.mobile && (
-              <SecondaryFilterContainer className="block lg:hidden">
-                {side?.mobile}
-              </SecondaryFilterContainer>
-            )}
-
             {top.secondary && (
               <SecondaryFilterContainer>
                 {top.secondary}
+              </SecondaryFilterContainer>
+            )}
+
+            {side?.mobile && (
+              <SecondaryFilterContainer className="block lg:hidden">
+                {side?.mobile}
               </SecondaryFilterContainer>
             )}
           </SecondaryFiltersContainer>
