@@ -343,6 +343,6 @@
   }
 
   .listbox-option {
-    @apply ui-active:bg-brand-primary-500 text-brand-primary-100;
+    @apply ui-active:bg-brand-primary-500;
   }
 }
