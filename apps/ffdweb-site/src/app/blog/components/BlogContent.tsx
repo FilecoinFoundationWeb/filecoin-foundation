@@ -2,11 +2,17 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { useFilter } from '@filecoin-foundation/hooks/useFilter'
+import { DEFAULT_CATEGORY_FILTER_OPTION } from '@filecoin-foundation/hooks/useFilter/constants'
+import { entryMatchesCategoryQuery } from '@filecoin-foundation/hooks/useFilter/utils'
+import { useListboxQueryState } from '@filecoin-foundation/hooks/useListboxQueryState'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { FilterListbox } from '@filecoin-foundation/ui/FilterListbox'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import {
+  CATEGORY_KEY,
   PAGE_KEY,
   SEARCH_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
@@ -20,6 +26,7 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 
 import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'
@@ -29,6 +36,11 @@ import type { BlogPost } from '../types/blogPostType'
 type BlogContentProps = {
   posts: Array<BlogPost>
 }
+
+const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
+  collectionName: 'blog_posts',
+  fieldName: 'category',
+})
 
 export function BlogContent({ posts }: BlogContentProps) {
   const clientSearchParams = useSearchParams()
@@ -41,9 +53,21 @@ export function BlogContent({ posts }: BlogContentProps) {
     searchBy: ['title', 'description'],
   })
 
+  const { filteredEntries } = useFilter({
+    entries: searchResults,
+    filterQuery: normalizeQueryParam(searchParams, CATEGORY_KEY),
+    filterFn: entryMatchesCategoryQuery,
+  })
+
+  const [categoryOption, setCategoryOption] = useListboxQueryState({
+    key: CATEGORY_KEY,
+    options: categoryOptions,
+    defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
+  })
+
   const { currentPage, pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
-    entries: searchResults,
+    entries: filteredEntries,
     entriesPerPage: 9,
   })
 
@@ -53,6 +77,13 @@ export function BlogContent({ posts }: BlogContentProps) {
       bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
       top={{
         main: <Search query={searchQuery} />,
+        secondary: (
+          <FilterListbox
+            selected={categoryOption}
+            options={[DEFAULT_CATEGORY_FILTER_OPTION, ...categoryOptions]}
+            onChange={setCategoryOption}
+          />
+        ),
       }}
     >
       <CardGrid as="section" cols="smTwoLgThree">
