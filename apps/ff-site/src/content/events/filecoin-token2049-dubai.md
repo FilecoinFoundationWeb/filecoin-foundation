@@ -58,7 +58,7 @@ speakers:
     - name: Clara Tsao
       title: Founding Officer
       company: Filecoin Foundation
-      linkedin: "https://www.linkedin.com/in/claratsao/ "
+      linkedin: https://www.linkedin.com/in/claratsao/
       image:
         src: /assets/images/clara-tsao-davos.webp
     - name: Paul Wagner
