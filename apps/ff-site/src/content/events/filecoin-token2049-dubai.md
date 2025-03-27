@@ -42,7 +42,7 @@ schedule:
         - url: https://lu.ma/depin-dubai
           title: Jen King @ DePIN Day Dubai
           start-time: 10:00:00.000Z
-          location: TBC
+          location: TBD
     - date: 2025-05-02
       events:
         - title: Clara Tsao @ Hack Seasons Conference Dubai
