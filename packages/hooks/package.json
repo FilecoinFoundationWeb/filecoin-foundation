@@ -8,10 +8,12 @@
   },
   "exports": {
     "./useUpdateSearchParams": "./src/useUpdateSearchParams/index.ts",
+    "./useUpdateSearchParams/utils": "./src/useUpdateSearchParams/utils/index.ts",
     "./useFilter": "./src/useFilter/index.ts",
     "./useFilter/constants": "./src/useFilter/constants/index.ts",
     "./useFilter/utils": "./src/useFilter/utils/index.ts",
-    "./useListboxQueryState": "./src/useListboxQueryState/index.ts"
+    "./useListboxQueryState": "./src/useListboxQueryState/index.ts",
+    "./useResetPageQuery": "./src/useResetPageQuery/index.ts"
   },
   "scripts": {
     "lint": "eslint . --fix"

@@ -1,3 +1,1 @@
-import { useUpdateSearchParams } from './useUpdateSearchParams'
-
-export { useUpdateSearchParams }
+export { useUpdateSearchParams } from './useUpdateSearchParams'
