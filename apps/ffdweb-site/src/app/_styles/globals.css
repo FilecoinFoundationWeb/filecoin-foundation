@@ -335,7 +335,7 @@
 
   /* LISTBOX */
   .listbox-button {
-    @apply text-brand-primary-300 hover:text-brand-primary-400 focus:text-brand-primary-100 border border-current;
+    @apply text-brand-primary-300 hover:text-brand-primary-400 focus:text-brand-primary-100 border;
   }
 
   .listbox-options {
