@@ -49,7 +49,7 @@ Combining blockchain technology with decentralized storage offers a fundamentall
 </a>
 
 
-Who Is Using Filecoin?
+## Who Is Using Filecoin?
 
 ### Web3 Projects 
 
