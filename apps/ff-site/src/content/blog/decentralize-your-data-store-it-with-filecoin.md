@@ -34,49 +34,21 @@ Combining blockchain technology with decentralized storage offers a fundamentall
 
 **Cost Efficiency:** A Smarter Storage Economy – With a competitive, open marketplace for storage, you can choose from a range of providers based on performance or price. Content-addressability and IPFS support means you can pick and switch fearlessly. 
 
-[[Get Started with Filecoin](mailto:sales@fil.org)]
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Started with Filecoin</title>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Archivo', sans-serif;
-        }
-        .button {
-            background-color: #73B4ED;
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            border-radius: 8px;
-            transition: background 0.3s;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .button:hover {
-            background-color: #5A9FD4;
-        }
-    </style>
-</head>
-<body>
+<a href="mailto:sales@fil.org" style="
+    display: inline-block; 
+    background-color: #73B4ED; 
+    color: black; 
+    text-decoration: none; 
+    padding: 12px 24px; 
+    font-family: Archivo, sans-serif; 
+    font-size: 16px; 
+    border-radius: 8px; 
+    transition: background 0.3s;">
+    Get Started with Filecoin
+</a>
 
-<a href="mailto:sales@fil.org" class="button">Contact Us</a>
 
-</body>
-</html>
-```
-
-## \
 Who Is Using Filecoin?
 
 ### Web3 Projects 
@@ -92,8 +64,6 @@ FF is building bridges with other ecosystems to enhance decentralization and res
 AI organizations, including [Aethir](https://fil.org/ecosystem-explorer/aethir), [KiteAI](https://fil.org/ecosystem-explorer/kite-ai), [Nuklai](https://fil.org/ecosystem-explorer/nuklai), and [SingularityNET](https://singularitynet.io/), store datasets and metadata on the network to ensure transparency, accountability, and robust audit trails.
 
 AI agent projects are leveraging the Filecoin network’s data verifiability capabilities to ensure AI-generated outputs can be trusted, including [Recall](https://recall.network/), [Ungate AI](https://fil.org/ecosystem-explorer/ungate), and [AIWS](https://fil.org/ecosystem-explorer/aiws). Plus, platforms like [Theoriq](https://www.theoriq.ai/) have [developed a series of AI agents](https://mirror.xyz/0xbCAa90C8bA95b3ba6C8Aa6900a92FE70b97E5eF7/y8zj9hbr6ZEES9V9bMtqyzEBm0osh5ivoSBEYVN3mkI) trained on data stored on Filecoin, making open data more accessible and usable for builders. 
-
-
 
 ### Journalists & Researchers
 
@@ -111,8 +81,6 @@ University of Maryland’s EASIER Data Initiative stores [academic tutorials](ht
 
 Over [500,000 culturally significant digital artifacts](https://fil.org/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage) are now safeguarded on the Filecoin network. Institutions like the Smithsonian Institution, Flickr Foundation, Internet Archive, and Starling Lab use decentralized storage to preserve and protect knowledge for future generations. Smithsonian's National Museum of American History uploaded 300 digitized sound recordings –– some of the earliest recordings ever made –– from Alexander Graham Bell.  
 
-
-
 ## How Filecoin Works For You
 
 ### 1. Upload Your Data
@@ -127,9 +95,6 @@ Filecoin’s global network is powered by powerful built-in economic incentives 
 
 Every file stored on Filecoin is assured by cryptographic proofs that continuously verify your data remains exactly as you stored it –– tamper-proof and unchanged. 
 
-
-
-## Own your data. Keep it secure. Make it last. 
-
+## Own your data. Keep it secure. Make it last.
 
 [Get Started with Filecoin](sales@fil.org). Decentralize Your Data Today.
