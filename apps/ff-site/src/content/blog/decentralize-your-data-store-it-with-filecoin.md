@@ -35,3 +35,20 @@ Combining blockchain technology with decentralized storage offers a fundamentall
 **Cost Efficiency:** A Smarter Storage Economy – With a competitive, open marketplace for storage, you can choose from a range of providers based on performance or price. Content-addressability and IPFS support means you can pick and switch fearlessly. 
 
 [[Get Started with Filecoin](mailto:sales@fil.org)]
+
+## \
+Who Is Using Filecoin?
+
+### Web3 Projects 
+
+FF is building bridges with other ecosystems to enhance decentralization and resilience in the broader Web3 world.
+
+**Cardano**: [Blockfrost integrated Filecoin](https://fil.org/blog/blockfrost-and-filecoin-foundation-collaborate-to-enhance-the-decentralization-of-cardano-data) as a robust backup layer for Blockfrost-built Cardano apps. Blockfrost will also introduce a new service tier for Cardano builders that includes IPFS and Filecoin storage. 
+
+**Solana**: DCENT, a Filecoin storage provider, collaborated with the Solana ecosystem to archive [Solana’s block history on Filecoin](https://destor.com/resources/news/solana-integrates-filecoin) as part of the [Old Faithful initiative](https://docs.triton.one/project-yellowstone/old-faithful-historical-archive/old-faithful-public-report) to make Solana's ledger data accessible and content-addressable. 
+
+### AI Organizations
+
+AI organizations, including [Aethir](https://fil.org/ecosystem-explorer/aethir), [KiteAI](https://fil.org/ecosystem-explorer/kite-ai), [Nuklai](https://fil.org/ecosystem-explorer/nuklai), and [SingularityNET](https://singularitynet.io/), store datasets and metadata on the network to ensure transparency, accountability, and robust audit trails.
+
+AI agent projects are leveraging the Filecoin network’s data verifiability capabilities to ensure AI-generated outputs can be trusted, including [Recall](https://recall.network/), [Ungate AI](https://fil.org/ecosystem-explorer/ungate), and [AIWS](https://fil.org/ecosystem-explorer/aiws). Plus, platforms like [Theoriq](https://www.theoriq.ai/) have [developed a series of AI agents](https://mirror.xyz/0xbCAa90C8bA95b3ba6C8Aa6900a92FE70b97E5eF7/y8zj9hbr6ZEES9V9bMtqyzEBm0osh5ivoSBEYVN3mkI) trained on data stored on Filecoin, making open data more accessible and usable for builders.
