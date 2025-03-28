@@ -51,4 +51,22 @@ FF is building bridges with other ecosystems to enhance decentralization and res
 
 AI organizations, including [Aethir](https://fil.org/ecosystem-explorer/aethir), [KiteAI](https://fil.org/ecosystem-explorer/kite-ai), [Nuklai](https://fil.org/ecosystem-explorer/nuklai), and [SingularityNET](https://singularitynet.io/), store datasets and metadata on the network to ensure transparency, accountability, and robust audit trails.
 
-AI agent projects are leveraging the Filecoin network’s data verifiability capabilities to ensure AI-generated outputs can be trusted, including [Recall](https://recall.network/), [Ungate AI](https://fil.org/ecosystem-explorer/ungate), and [AIWS](https://fil.org/ecosystem-explorer/aiws). Plus, platforms like [Theoriq](https://www.theoriq.ai/) have [developed a series of AI agents](https://mirror.xyz/0xbCAa90C8bA95b3ba6C8Aa6900a92FE70b97E5eF7/y8zj9hbr6ZEES9V9bMtqyzEBm0osh5ivoSBEYVN3mkI) trained on data stored on Filecoin, making open data more accessible and usable for builders.
+AI agent projects are leveraging the Filecoin network’s data verifiability capabilities to ensure AI-generated outputs can be trusted, including [Recall](https://recall.network/), [Ungate AI](https://fil.org/ecosystem-explorer/ungate), and [AIWS](https://fil.org/ecosystem-explorer/aiws). Plus, platforms like [Theoriq](https://www.theoriq.ai/) have [developed a series of AI agents](https://mirror.xyz/0xbCAa90C8bA95b3ba6C8Aa6900a92FE70b97E5eF7/y8zj9hbr6ZEES9V9bMtqyzEBm0osh5ivoSBEYVN3mkI) trained on data stored on Filecoin, making open data more accessible and usable for builders. 
+
+
+
+### Journalists & Researchers
+
+Journalistic records are among the most vulnerable information online, subject to link rot, censorship, and disappearance under centralized control. It’s not unlikely to see an archive vanish overnight, and it has happened to [government datasets](https://cyber.harvard.edu/story/2025-01/archivists-work-identify-and-save-thousands-datasets-disappearing-datagov), [political polling,](https://www.theguardian.com/us-news/2025/mar/05/abc-news-538-shut-down) and [reporting records](https://www.rollingstone.com/music/music-news/mtv-news-saved-internet-archive-1235051776/). In the age of AI, preserving and verifying journalism and research has never been more critical. 
+
+Projects like [The Defiant](https://thedefiant.io/news/defi/the-defiant-to-preserve-article-archives-on-filecoin) and other pioneering organizations, including [MuckRock](https://www.muckrock.com/news/archives/2024/sep/11/featured-add-on-push-to-ipfs-filecoin/) and [Numbers Protocol](https://votetw2024.numbersprotocol.io/En), use decentralized storage to safeguard archives and reporting, ensuring evidence prevails in an ephemeral era. [Rolling Stone](https://investigation.rollingstone.com/dj-photo-war-crimes-bosnia/) worked with Starling Lab to preserve an investigative journalism archive. 
+
+### Academic Institutions 
+
+Universities and research institutions around the world generate troves of research and data.  But without secure and sustainable infrastructure, that knowledge can be lost –– hampering scientific progress. 
+
+University of Maryland’s EASIER Data Initiative stores [academic tutorials](https://easierdata.org/notebooks/accessing-gedi-data) and [geospatial data](https://easierdata.org/updates/2024/2024-12-6-crop-classification-on-dweb) on Filecoin. UC Berkeley stored [experimental particle physics data](https://physics.berkeley.edu/news-events/news/seal-storage-technology-partners-with-orebi-gann-group). MIT Open Learning uploaded foundational [OpenCourseWare courses](https://fil.org/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage). By uploading data to Filecoin, these institutions ensure their work is globally accessible, cryptographically verifiable, and resistant to link rot or institutional turnover. 
+
+### Galleries, Libraries, Archives, and Museums
+
+Over [500,000 culturally significant digital artifacts](https://fil.org/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage) are now safeguarded on the Filecoin network. Institutions like the Smithsonian Institution, Flickr Foundation, Internet Archive, and Starling Lab use decentralized storage to preserve and protect knowledge for future generations. Smithsonian's National Museum of American History uploaded 300 digitized sound recordings –– some of the earliest recordings ever made –– from Alexander Graham Bell.
