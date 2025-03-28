@@ -30,7 +30,7 @@ Combining blockchain technology with decentralized storage offers a fundamentall
 
 ### Why Store Your Data with Filecoin?
 
-
+![](/assets/images/032625-defiant-why.webp)
 
 **Resilience**: Built to Withstand – With Filecoin, you can store multiple copies of your data, distributed across a global network of independent providers, eliminating single points of failure and protecting against loss. 
 
@@ -55,6 +55,8 @@ Combining blockchain technology with decentralized storage offers a fundamentall
 
 ## Who Is Using Filecoin?
 
+![](/assets/images/032625-defiant-who.webp)
+
 ### Web3 Projects 
 
 FF is building bridges with other ecosystems to enhance decentralization and resilience in the broader Web3 world.
@@ -68,6 +70,8 @@ FF is building bridges with other ecosystems to enhance decentralization and res
 AI organizations, including [Aethir](https://fil.org/ecosystem-explorer/aethir), [KiteAI](https://fil.org/ecosystem-explorer/kite-ai), [Nuklai](https://fil.org/ecosystem-explorer/nuklai), and [SingularityNET](https://singularitynet.io/), store datasets and metadata on the network to ensure transparency, accountability, and robust audit trails.
 
 AI agent projects are leveraging the Filecoin network’s data verifiability capabilities to ensure AI-generated outputs can be trusted, including [Recall](https://recall.network/), [Ungate AI](https://fil.org/ecosystem-explorer/ungate), and [AIWS](https://fil.org/ecosystem-explorer/aiws). Plus, platforms like [Theoriq](https://www.theoriq.ai/) have [developed a series of AI agents](https://mirror.xyz/0xbCAa90C8bA95b3ba6C8Aa6900a92FE70b97E5eF7/y8zj9hbr6ZEES9V9bMtqyzEBm0osh5ivoSBEYVN3mkI) trained on data stored on Filecoin, making open data more accessible and usable for builders. 
+
+![](/assets/images/032625-defiant-ailogos.webp)
 
 ### Journalists & Researchers
 
@@ -87,9 +91,13 @@ Over [500,000 culturally significant digital artifacts](https://fil.org/blog/fli
 
 ## How Filecoin Works For You
 
+![](/assets/images/032625-defiant-how.webp)
+
 ### 1. Upload Your Data
 
 Store your files on a decentralized, resilient network through platforms tailored to your needs –– from enterprise-grade data solutions to AI data services to archiving and preservation. Solutions like [Akave](https://www.akave.ai/), [Storacha](https://storacha.network/), [Lighthouse](https://lighthouse.storage/), and [CIDgravity](https://www.cidgravity.com/) offer a range of tools to help you get started.
+
+![](/assets/images/032625-defiant-howlogos.webp)
 
 ### 2. Guaranteed Storage
 
