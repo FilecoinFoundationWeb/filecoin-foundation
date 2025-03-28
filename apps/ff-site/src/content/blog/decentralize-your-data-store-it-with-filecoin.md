@@ -9,6 +9,8 @@ description: >+
   controls it. Filecoin puts that power back in your hands –– redefining data
   ownership in the digital age. 
 
+image:
+  src: /assets/images/032625-defiant-header.webp
 seo:
   twitter:
     card: summary
@@ -16,6 +18,8 @@ seo:
     also about who controls it. Filecoin puts that power back in your hands ––
     redefining data ownership in the digital age. "
 ---
+![](/assets/images/032625-defiant-centvdecent.webp)
+
 ## Your Data. Your Choice. Your Control.
 
 The future of storage isn’t just about where data lives –– it’s also about who controls it. Filecoin puts that power back in your hands –– redefining data ownership in the digital age. 
@@ -26,6 +30,8 @@ Combining blockchain technology with decentralized storage offers a fundamentall
 
 ### Why Store Your Data with Filecoin?
 
+
+
 **Resilience**: Built to Withstand – With Filecoin, you can store multiple copies of your data, distributed across a global network of independent providers, eliminating single points of failure and protecting against loss. 
 
 **Integrity**: Don’t Trust, Verify  – For every piece of data stored on the Filecoin network cryptographic proofs guarantee that data is preservedunchanged.
@@ -33,7 +39,6 @@ Combining blockchain technology with decentralized storage offers a fundamentall
 **Scalability**: Storage that Grows with Emerging Technology – Data generation is growing exponentially; Filecoin is the only decentralized storage project to scale to exabytes of data ––  with the capacity to meet global data demands.
 
 **Cost Efficiency:** A Smarter Storage Economy – With a competitive, open marketplace for storage, you can choose from a range of providers based on performance or price. Content-addressability and IPFS support means you can pick and switch fearlessly. 
-
 
 <a href="mailto:sales@fil.org" style="
     display: inline-block; 
@@ -47,7 +52,6 @@ Combining blockchain technology with decentralized storage offers a fundamentall
     transition: background 0.3s;">
     Get Started with Filecoin
 </a>
-
 
 ## Who Is Using Filecoin?
 
