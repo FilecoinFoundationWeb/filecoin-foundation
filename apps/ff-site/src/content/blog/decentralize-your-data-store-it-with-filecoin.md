@@ -36,6 +36,46 @@ Combining blockchain technology with decentralized storage offers a fundamentall
 
 [[Get Started with Filecoin](mailto:sales@fil.org)]
 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started with Filecoin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Archivo', sans-serif;
+        }
+        .button {
+            background-color: #73B4ED;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover {
+            background-color: #5A9FD4;
+        }
+    </style>
+</head>
+<body>
+
+<a href="mailto:sales@fil.org" class="button">Contact Us</a>
+
+</body>
+</html>
+```
+
 ## \
 Who Is Using Filecoin?
 
