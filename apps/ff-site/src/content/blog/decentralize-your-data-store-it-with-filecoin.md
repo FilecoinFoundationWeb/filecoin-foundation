@@ -69,4 +69,27 @@ University of Maryland’s EASIER Data Initiative stores [academic tutorials](ht
 
 ### Galleries, Libraries, Archives, and Museums
 
-Over [500,000 culturally significant digital artifacts](https://fil.org/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage) are now safeguarded on the Filecoin network. Institutions like the Smithsonian Institution, Flickr Foundation, Internet Archive, and Starling Lab use decentralized storage to preserve and protect knowledge for future generations. Smithsonian's National Museum of American History uploaded 300 digitized sound recordings –– some of the earliest recordings ever made –– from Alexander Graham Bell.
+Over [500,000 culturally significant digital artifacts](https://fil.org/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage) are now safeguarded on the Filecoin network. Institutions like the Smithsonian Institution, Flickr Foundation, Internet Archive, and Starling Lab use decentralized storage to preserve and protect knowledge for future generations. Smithsonian's National Museum of American History uploaded 300 digitized sound recordings –– some of the earliest recordings ever made –– from Alexander Graham Bell.  
+
+
+
+## How Filecoin Works For You
+
+### 1. Upload Your Data
+
+Store your files on a decentralized, resilient network through platforms tailored to your needs –– from enterprise-grade data solutions to AI data services to archiving and preservation. Solutions like [Akave](https://www.akave.ai/), [Storacha](https://storacha.network/), [Lighthouse](https://lighthouse.storage/), and [CIDgravity](https://www.cidgravity.com/) offer a range of tools to help you get started.
+
+### 2. Guaranteed Storage
+
+Filecoin’s global network is powered by powerful built-in economic incentives that ensure reliable, continuous storage and access.
+
+### 3. Verified Integrity 
+
+Every file stored on Filecoin is assured by cryptographic proofs that continuously verify your data remains exactly as you stored it –– tamper-proof and unchanged. 
+
+
+
+## Own your data. Keep it secure. Make it last. 
+
+
+Get Started with Filecoin. Decentralize Your Data Today.
