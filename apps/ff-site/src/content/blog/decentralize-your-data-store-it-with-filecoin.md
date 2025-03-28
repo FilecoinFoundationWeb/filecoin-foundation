@@ -92,4 +92,4 @@ Every file stored on Filecoin is assured by cryptographic proofs that continuous
 ## Own your data. Keep it secure. Make it last. 
 
 
-Get Started with Filecoin. Decentralize Your Data Today.
+[Get Started with Filecoin](sales@fil.org). Decentralize Your Data Today.
