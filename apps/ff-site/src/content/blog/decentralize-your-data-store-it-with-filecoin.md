@@ -1,5 +1,5 @@
 ---
-title: Decentralize Your Data. Store It with Filecoin
+title: "Decentralize Your Data. Store it with Filecoin. "
 created-on: 2025-03-28T13:07:00.000Z
 updated-on: 2025-03-28T13:07:00.000Z
 published-on: 2025-03-28T13:07:00.000Z
