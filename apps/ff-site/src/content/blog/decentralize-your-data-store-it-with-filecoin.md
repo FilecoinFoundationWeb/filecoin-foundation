@@ -18,13 +18,15 @@ seo:
     also about who controls it. Filecoin puts that power back in your hands ––
     redefining data ownership in the digital age. "
 ---
-![](/assets/images/032625-defiant-centvdecent.webp)
+![]()
 
 ## Your Data. Your Choice. Your Control.
 
 The future of storage isn’t just about where data lives –– it’s also about who controls it. Filecoin puts that power back in your hands –– redefining data ownership in the digital age. 
 
 Today, a handful of corporations control most of the world’s data. This approach creates single points of failure, limited transparency, and costly pricing models with few real alternatives. More importantly, it means you ultimately do not control your data. 
+
+![](/assets/images/032625-defiant-centvdecent.webp)
 
 Combining blockchain technology with decentralized storage offers a fundamentally different approach to data storage. And by distributing data across a decentralized, global network, Filecoin creates a foundation for a more open, resilient, and user-controlled digital future.
 
