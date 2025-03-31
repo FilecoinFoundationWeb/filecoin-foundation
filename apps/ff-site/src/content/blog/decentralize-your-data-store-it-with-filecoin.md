@@ -1,5 +1,5 @@
 ---
-title: Decentralize Your Data. Store It with Filecoin
+title: "Decentralize Your Data. Store it with Filecoin. "
 created-on: 2025-03-28T13:07:00.000Z
 updated-on: 2025-03-28T13:07:00.000Z
 published-on: 2025-03-28T13:07:00.000Z
@@ -54,9 +54,9 @@ Combining blockchain technology with decentralized storage offers a fundamentall
 Get Started with Filecoin
 </a>
 
-## Who Is Using Filecoin?
+## Who is Using Filecoin?
 
-![](/assets/images/032625-defiant-who.webp)
+![](/assets/images/032625-defiant-who-1.webp)
 
 ### Web3 Projects 
 
