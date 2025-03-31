@@ -18,6 +18,7 @@ seo:
     also about who controls it. Filecoin puts that power back in your hands ––
     redefining data ownership in the digital age. "
 ---
+
 ## Your Data. Your Choice. Your Control
 
 The future of storage isn’t just about where data lives –– it’s also about who controls it. Filecoin puts that power back in your hands –– redefining data ownership in the digital age. 
@@ -107,6 +108,6 @@ Filecoin’s global network is powered by powerful built-in economic incentives 
 
 Every file stored on Filecoin is assured by cryptographic proofs that continuously verify your data remains exactly as you stored it –– tamper-proof and unchanged.
 
-## Own your data. Keep it secure. Make it last. 
+## Own your data. Keep it secure. Make it last
 
 [Get Started with Filecoin](mailto:sales@fil.org). Decentralize Your Data Today.
