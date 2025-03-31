@@ -18,13 +18,12 @@ seo:
     also about who controls it. Filecoin puts that power back in your hands ––
     redefining data ownership in the digital age. "
 ---
-![]()
 
-## Your Data. Your Choice. Your Control.
+## Your Data. Your Choice. Your Control
 
 The future of storage isn’t just about where data lives –– it’s also about who controls it. Filecoin puts that power back in your hands –– redefining data ownership in the digital age. 
 
-Today, a handful of corporations control most of the world’s data. This approach creates single points of failure, limited transparency, and costly pricing models with few real alternatives. More importantly, it means you ultimately do not control your data. 
+Today, a handful of corporations control most of the world’s data. This approach creates single points of failure, limited transparency, and costly pricing models with few real alternatives. More importantly, it means you ultimately do not control your data.
 
 ![](/assets/images/032625-defiant-centvdecent.webp)
 
@@ -52,7 +51,7 @@ Combining blockchain technology with decentralized storage offers a fundamentall
     font-size: 16px; 
     border-radius: 8px; 
     transition: background 0.3s;">
-    Get Started with Filecoin
+Get Started with Filecoin
 </a>
 
 ## Who Is Using Filecoin?
@@ -107,8 +106,8 @@ Filecoin’s global network is powered by powerful built-in economic incentives 
 
 ### 3. Verified Integrity 
 
-Every file stored on Filecoin is assured by cryptographic proofs that continuously verify your data remains exactly as you stored it –– tamper-proof and unchanged. 
+Every file stored on Filecoin is assured by cryptographic proofs that continuously verify your data remains exactly as you stored it –– tamper-proof and unchanged.
 
-## Own your data. Keep it secure. Make it last.
+## Own your data. Keep it secure. Make it last
 
-[Get Started with Filecoin](sales@fil.org). Decentralize Your Data Today.
+[Get Started with Filecoin](mailto:sales@fil.org). Decentralize Your Data Today.
