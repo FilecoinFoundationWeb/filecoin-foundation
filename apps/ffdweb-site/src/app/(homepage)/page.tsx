@@ -32,7 +32,6 @@ import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 export default async function Home() {
   const featuredProjects = await getFeaturedProjects(FEATURED_PROJECTS)
-
   const featuredBlogPosts = getFeaturedBlogPosts({
     posts: await getBlogPostsData(),
     limit: 6,
