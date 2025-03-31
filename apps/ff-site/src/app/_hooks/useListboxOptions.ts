@@ -1,14 +1,13 @@
 import { useMemo } from 'react'
 
+import type { DefaultFilterOptionType } from '@filecoin-foundation/hooks/useFilter/types'
+import { sumCountValues } from '@filecoin-foundation/hooks/useListboxOptions/utils'
 import { type AnyObject } from '@filecoin-foundation/utils/types/utilTypes'
-
-import type { DefaultFilterOptionType } from '@/types/filterTypes'
 
 import {
   getCMSFieldOptionsAndValidIds,
   type CMSFieldOptionsAndValidIdsParams,
 } from '@/utils/getCMSFieldOptionsAndValidIds'
-import { sumCountValues } from '@/utils/sumCountValues'
 
 type UseFilterOptionsWithCountProps<Entry extends AnyObject> =
   CMSFieldOptionsAndValidIdsParams & {

@@ -9,3 +9,8 @@ export const DEFAULT_LOCATION_FILTER_OPTION = {
   id: DEFAULT_FILTER_ID,
   name: 'All Locations',
 } as const
+
+export const DEFAULT_RESOURCE_FILTER_OPTION = {
+  id: DEFAULT_FILTER_ID,
+  name: 'All Resources',
+} as const

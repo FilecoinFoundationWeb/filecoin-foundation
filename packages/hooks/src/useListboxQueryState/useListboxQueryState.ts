@@ -1,6 +1,7 @@
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import { parseAsString, useQueryState } from 'nuqs'
 
+import { useResetPageQuery } from '@filecoin-foundation/hooks/useResetPageQuery'
 
 type ListboxQueryStateConfig = {
   key: string
@@ -17,11 +18,13 @@ export function useListboxQueryState({
     key,
     parseAsString.withDefault(defaultOption.id).withOptions({ shallow: false }),
   )
+  const resetPageQuery = useResetPageQuery()
 
   const selectedOption =
     options.find((option) => option.id === optionId) || defaultOption
 
   function setOption(option: OptionType) {
+    resetPageQuery()
     setOptionId(option.id)
   }
 

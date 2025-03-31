@@ -8,7 +8,15 @@
   },
   "exports": {
     "./useUpdateSearchParams": "./src/useUpdateSearchParams/index.ts",
-    "./useFilter": "./src/useFilter/index.ts"
+    "./useUpdateSearchParams/utils": "./src/useUpdateSearchParams/utils/index.ts",
+    "./useFilter": "./src/useFilter/index.ts",
+    "./useFilter/constants": "./src/useFilter/constants/index.ts",
+    "./useFilter/utils": "./src/useFilter/utils/index.ts",
+    "./useFilter/types": "./src/useFilter/types/index.ts",
+    "./useListboxOptions": "./src/useListboxOptions/index.ts",
+    "./useListboxOptions/utils": "./src/useListboxOptions/utils/index.ts",
+    "./useListboxQueryState": "./src/useListboxQueryState/index.ts",
+    "./useResetPageQuery": "./src/useResetPageQuery/index.ts"
   },
   "scripts": {
     "lint": "eslint . --fix"
@@ -21,6 +29,7 @@
   "peerDependencies": {
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "nuqs": "^2.2.3"
   }
 }

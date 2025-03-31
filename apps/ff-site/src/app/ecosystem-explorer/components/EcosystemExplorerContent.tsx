@@ -1,4 +1,5 @@
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
+import { entryMatchesCategoryQuery } from '@filecoin-foundation/hooks/useFilter/utils'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
@@ -20,7 +21,6 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { useSort } from '@/hooks/useSort'

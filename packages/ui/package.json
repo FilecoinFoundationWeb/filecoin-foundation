@@ -22,6 +22,8 @@
     "./DescriptionText": "./src/DescriptionText.tsx",
     "./DigestArticleHeader": "./src/DigestArticleHeader.tsx",
     "./ErrorMessage": "./src/ErrorMessage.tsx",
+    "./FilterListbox": "./src/FilterListbox.tsx",
+    "./FilterSidebar": "./src/FilterSidebar.tsx",
     "./GlobalError": "./src/GlobalError.tsx",
     "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx",

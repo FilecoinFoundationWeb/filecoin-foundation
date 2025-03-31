@@ -2,26 +2,52 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { useFilter } from '@filecoin-foundation/hooks/useFilter'
+import {
+  DEFAULT_CATEGORY_FILTER_OPTION,
+  DEFAULT_RESOURCE_FILTER_OPTION,
+} from '@filecoin-foundation/hooks/useFilter/constants'
+import { entryMatchesCategoryQuery } from '@filecoin-foundation/hooks/useFilter/utils'
+import { useListboxOptions } from '@filecoin-foundation/hooks/useListboxOptions'
+import { useListboxQueryState } from '@filecoin-foundation/hooks/useListboxQueryState'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { FilterListbox } from '@filecoin-foundation/ui/FilterListbox'
+import { FilterSidebar } from '@filecoin-foundation/ui/FilterSidebar'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import {
   PAGE_KEY,
   SEARCH_KEY,
+  CATEGORY_KEY,
+  RESOURCE,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { ArrowUpRight } from '@phosphor-icons/react'
 
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 
 import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'
 
 import type { LearningResource } from '../types/learningResourceType'
+import { entryMatchesResourceQuery } from '../utils/entryMatchesResourceQuery'
 
 type LearningResourcesContentProps = {
   resources: Array<LearningResource>
 }
+
+const LEARNING_RESOURCES_COLLECTION_NAME = 'learning_resources'
+
+const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
+  collectionName: LEARNING_RESOURCES_COLLECTION_NAME,
+  fieldName: 'category',
+})
+
+const { options: resourceTypeOptions } = getCMSFieldOptionsAndValidIds({
+  collectionName: LEARNING_RESOURCES_COLLECTION_NAME,
+  fieldName: 'resource-type',
+})
 
 export function LearningResourcesContent({
   resources,
@@ -35,9 +61,40 @@ export function LearningResourcesContent({
     searchBy: ['title', 'description'],
   })
 
+  const { filteredEntries: filteredByCategory } = useFilter({
+    entries: searchResults,
+    filterQuery: normalizeQueryParam(searchParams, CATEGORY_KEY),
+    filterFn: entryMatchesCategoryQuery,
+  })
+
+  const [categoryOption, setCategoryOption] = useListboxQueryState({
+    key: CATEGORY_KEY,
+    options: categoryOptions,
+    defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
+  })
+
+  const { filteredEntries: filteredByResourceType } = useFilter({
+    entries: filteredByCategory,
+    filterQuery: normalizeQueryParam(searchParams, RESOURCE),
+    filterFn: entryMatchesResourceQuery,
+  })
+
+  const [resourceTypeOption, setResourceTypeOption] = useListboxQueryState({
+    key: RESOURCE,
+    options: resourceTypeOptions,
+    defaultOption: DEFAULT_RESOURCE_FILTER_OPTION,
+  })
+
   const { currentPage, pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
-    entries: searchResults,
+    entries: filteredByResourceType,
+  })
+
+  const { optionsWithCount: resourceTypeOptionsWithCount } = useListboxOptions({
+    options: resourceTypeOptions,
+    defaultOption: DEFAULT_RESOURCE_FILTER_OPTION,
+    entries: filteredByCategory,
+    countBy: 'resourceType',
   })
 
   return (
@@ -46,6 +103,29 @@ export function LearningResourcesContent({
       bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
       top={{
         main: <Search query={searchQuery} />,
+        secondary: (
+          <FilterListbox
+            selected={categoryOption}
+            options={[DEFAULT_CATEGORY_FILTER_OPTION, ...categoryOptions]}
+            onChange={setCategoryOption}
+          />
+        ),
+      }}
+      side={{
+        desktop: (
+          <FilterSidebar
+            selected={resourceTypeOption}
+            options={resourceTypeOptionsWithCount}
+            onChange={setResourceTypeOption}
+          />
+        ),
+        mobile: (
+          <FilterListbox
+            selected={resourceTypeOption}
+            options={resourceTypeOptionsWithCount}
+            onChange={setResourceTypeOption}
+          />
+        ),
       }}
     >
       <CardGrid as="section" cols="smTwo" hasGridAutoRows={false}>
@@ -54,12 +134,12 @@ export function LearningResourcesContent({
             resource
 
           const categoryLabel = getCategoryLabel({
-            collectionName: 'learning_resources',
+            collectionName: LEARNING_RESOURCES_COLLECTION_NAME,
             category,
           })
 
           const resourceTypeLabel = getCategoryLabel({
-            collectionName: 'learning_resources',
+            collectionName: LEARNING_RESOURCES_COLLECTION_NAME,
             category: resourceType,
             fieldName: 'resource-type',
           })

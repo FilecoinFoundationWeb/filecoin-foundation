@@ -337,7 +337,7 @@
 
   /* LISTBOX */
   .listbox-button {
-    @apply rounded-lg border border-current bg-brand-800 text-brand-300 hover:text-brand-400;
+    @apply rounded-lg border bg-brand-800 text-brand-300 hover:text-brand-400;
 
     &[aria-invalid='true'] {
       @apply border-brand-error;
@@ -354,5 +354,14 @@
 
   .listbox-group-header {
     @apply text-brand-300;
+  }
+
+  /* FILTER SIDEBAR */
+  .filter-sidebar-button {
+    @apply rounded-lg text-brand-300 hover:bg-brand-700;
+
+    &[data-selected='true'] {
+      @apply bg-brand-700 text-brand-400;
+    }
   }
 }

@@ -4,8 +4,8 @@ type WithCount = {
 
 const COUNT_INITIAL_VALUE = 0
 
-export function sumCountValues<AnyObject extends WithCount>(
-  objects: Array<AnyObject>,
+export function sumCountValues<Object extends WithCount>(
+  objects: Array<Object>,
 ) {
   return objects.reduce(
     (sum, object) => sum + object.count,
