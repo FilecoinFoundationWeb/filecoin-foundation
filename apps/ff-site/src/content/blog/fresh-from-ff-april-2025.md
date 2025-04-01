@@ -38,10 +38,11 @@ seo:
 ## Marketing, Comms, & Events
 
 * New for FIL Dev Summit Toronto: Introducing [Virtual Kickoff Sessions](https://lu.ma/ry15g7r5?tk=YqBU2g). Happening April 23-30 before the in-person gathering in Toronto May 12-13. Why join the Virtual Sessions? They are a great opportunity for collaboration, and a chance to get up to speed ahead of the on-site summit. Sessions will cover:
-* April 23 - The Filecoin State of the Union: Navigating Growth & Market Shifts
-* April 24 - Storage Adoption: Winning Clients, Scaling Demand, and Lessons from the Field
-* April 25 - The On-Chain Tech Stack: Unlocking Filecoin’s Smart Data Economy
-* April 28 - Tools & Builders: Supercharging Innovation in the Filecoin Ecosystem
-* April 29 - Value Accrual & Funding: The Path to Sustainable Growth
-* April 30 - Governance & Community: Strengthening the Filecoin Network from Within
+
+  * April 23 - The Filecoin State of the Union: Navigating Growth & Market Shifts
+  * April 24 - Storage Adoption: Winning Clients, Scaling Demand, and Lessons from the Field
+  * April 25 - The On-Chain Tech Stack: Unlocking Filecoin’s Smart Data Economy
+  * April 28 - Tools & Builders: Supercharging Innovation in the Filecoin Ecosystem
+  * April 29 - Value Accrual & Funding: The Path to Sustainable Growth
+  * April 30 - Governance & Community: Strengthening the Filecoin Network from Within
 * Watch the [newest episode of DWeb Decoded featuring the U.S. CFTC’s Kristin Johnson](https://youtu.be/LJO3PmzYUkI). This special episode recorded live from Davos, and hosted by Filecoin Foundation President Marta Belcher, explores the evolving regulatory landscape for cybersecurity, AI, and blockchain.
