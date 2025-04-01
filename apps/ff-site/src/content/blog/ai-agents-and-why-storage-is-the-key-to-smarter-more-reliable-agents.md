@@ -56,11 +56,11 @@ Imagine a meal planning agent that could source dietary adjustments from a diabe
 
 [Theoriq](https://mirror.xyz/0xbCAa90C8bA95b3ba6C8Aa6900a92FE70b97E5eF7/y8zj9hbr6ZEES9V9bMtqyzEBm0osh5ivoSBEYVN3mkI) is a protocol that facilitates the coordination of and communication between AI agents. Theoriq and Filecoin Foundation are working to develop a series of AI agents trained on data from the Filecoin network, making open data more accessible and usable to developers and researchers. A [Filecoin AI agent](https://infinity.theoriq.ai/) trained on the Filecoin docs and GitHub repositories allows users to get answers through natural language queries on how to build on Filecoin, troubleshoot common issues, getting started as a storage provider, and more.
 
-[Ungate AI](https://ungate.ai/) is a platform that facilitates AI agent-to-agent communication, leveraging Filecoin and Eigenlayer to build a trust layer for AI in order to avoid hidden human override or external manipulation occurring without detection. Ungate relies on Filecoin’s decentralized storage to store metadata, ensuring AI agent execution proofs are immutably recorded and permanently accessible.
+[Ungate AI](/ecosystem-explorer/ungate) is a platform that facilitates AI agent-to-agent communication, leveraging Filecoin and Eigenlayer to build a trust layer for AI in order to avoid hidden human override or external manipulation occurring without detection. Ungate relies on Filecoin’s decentralized storage to store metadata, ensuring AI agent execution proofs are immutably recorded and permanently accessible.
 
-[AIWS](https://fil.org/ecosystem-explorer/aiws) is creating a modular network for generating and managing autonomous AI agents fully integrated with decentralized storage and compute stacks. All AI agent metadata, prompts, and data are preserved on Filecoin.
+[AIWS](/ecosystem-explorer/aiws) is creating a modular network for generating and managing autonomous AI agents fully integrated with decentralized storage and compute stacks. All AI agent metadata, prompts, and data are preserved on Filecoin.
 
-[Storacha AI](https://medium.com/@storacha/introducing-storacha-ai-fueling-the-future-of-autonomous-ai-1344ef159e9a) is an AI-native decentralized storage layer, designed to power autonomous AI workflows with trustless, high-performance storage. AI agents can independently save the outputs it generates, fetch the information it needs, and share results with other agents, all on its own. Picture autonomous research teams, cross-organization AI collaboration, and personal AI collections of assistants - all unlocked by collaboration from freeing agents from centralized constraints.
+[Storacha AI](/ecosystem-explorer/storacha-network) is an AI-native decentralized storage layer, designed to power autonomous AI workflows with trustless, high-performance storage. AI agents can independently save the outputs it generates, fetch the information it needs, and share results with other agents, all on its own. Picture autonomous research teams, cross-organization AI collaboration, and personal AI collections of assistants - all unlocked by collaboration from freeing agents from centralized constraints.
 
 ## The Future of AI: User-Controlled Intelligence
 
@@ -73,8 +73,8 @@ Filecoin's decentralized infrastructure enables a fundamental shift in this rela
 3. Transparent intelligence: Every insight generated is backed by an immutable record of data provenance, creating greater accountability.
 4. Persistent accessibility: Unlike opaque, corporate-controlled AI that may change policies or shut down services, Filecoin-powered agents can maintain consistent operation and data access.
 
-For developers building the next generation of AI agents, this infrastructure offers a critical competitive advantage. In a market where users are increasingly [concerned](https://www.axios.com/2025/02/13/trust-ai-china-us) about data privacy and AI trustworthiness, systems built on verifiable foundations will command premium positioning.
+For developers building the next generation of AI agents, this infrastructure offers a critical competitive advantage. In a market where [users are increasingly concerned about data privacy and AI trustworthiness](https://www.axios.com/2025/02/13/trust-ai-china-us), systems built on verifiable foundations will command premium positioning.
 
 Filecoin provides the essential infrastructure for building AI that's not just smart, but transparent, accountable, and trustworthy — attributes that will ultimately determine which AI systems thrive in the long term.
 
-Ready to build the future of trusted AI? Start exploring Filecoin's [developer resources](https://docs.filecoin.io/) today.
+Ready to build the future of trusted AI? Start exploring [Filecoin's developer resources](https://docs.filecoin.io/) today.

@@ -1,5 +1,5 @@
 ---
-title: "Security Team Update: March 2025 "
+title: "Security Team Update: March 2025"
 created-on: 2025-03-31T20:14:00.000Z
 updated-on: 2025-03-31T20:14:00.000Z
 published-on: 2025-03-31T20:14:00.000Z
@@ -7,7 +7,7 @@ category: reports
 description: "Security is the backbone of any successful technology ecosystem —
   especially decentralized ecosystems. The Filecoin Foundation Security Team is
   dedicated to protecting the Filecoin network and its community of developers,
-  storage providers, and users. "
+  storage providers, and users."
 image:
   src: /assets/images/security.webp
 seo:
@@ -15,8 +15,9 @@ seo:
     card: summary
   description: "The Filecoin Foundation Security Team is dedicated to protecting
     the Filecoin network and its community of developers, storage providers, and
-    users. "
+    users."
 ---
+
 Security is the backbone of any successful technology ecosystem — especially decentralized ecosystems. The Filecoin Foundation Security Team is dedicated to protecting the Filecoin network and its community of developers, storage providers, and users. The approach to security in a decentralized ecosystem is incredibly broad, and our team has been hard at work designing and scaling a program that can support an ever-growing community. 
 
 The Filecoin Foundation’s Security Team has initiated and grown four primary programs over the last year –– with more to come! Each of these programs enhances Filecoin’s security in a unique way to provide core security capabilities to a sprawling set of organizations and technologies. For storage providers and network contributors, these efforts mean greater confidence that the protocol they rely on is being fortified every day. For developers, it means you have support to build secure products. For investors and Filecoin users, it means the network’s value and data are protected by a comprehensive, professional security apparatus that leaves no stone unturned. In short, the Security Team’s work leads to stronger trust, reliability, and longevity for the Filecoin network.
@@ -27,7 +28,7 @@ Incident response capabilities can be challenging to coordinate in decentralized
 
 ## The Filecoin Bug Bounty Program
 
-The Filecoin [bug bounty program](https://fil.org/security/bug-bounty) incentivizes the responsible disclosure of security vulnerabilities, bugs, and issues. We are dedicated to ensuring that any issues submitted through the bug bounty programs are validated, rewarded well, and reach resolution quickly. Since 2020, Filecoin has worked with 100+ top security researchers and rewarded more than $650k+ in bounties. Every submitted bounty is reviewed by FF staff and senior core contributors. This helps to ensure that issues are thoroughly evaluated, rated appropriately, and resolved quickly. 
+The Filecoin [bug bounty program](/security/bug-bounty) incentivizes the responsible disclosure of security vulnerabilities, bugs, and issues. We are dedicated to ensuring that any issues submitted through the bug bounty programs are validated, rewarded well, and reach resolution quickly. Since 2020, Filecoin has worked with 100+ top security researchers and rewarded more than $650k+ in bounties. Every submitted bounty is reviewed by FF staff and senior core contributors. This helps to ensure that issues are thoroughly evaluated, rated appropriately, and resolved quickly. 
 
 ## Continuous Testing and Monitoring
 
