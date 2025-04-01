@@ -1,5 +1,5 @@
 ---
-title: "Decentralize Your Data. Store it with Filecoin. "
+title: "Decentralize Your Data. Store it with Filecoin."
 created-on: 2025-03-28T13:07:00.000Z
 updated-on: 2025-03-28T13:07:00.000Z
 published-on: 2025-03-28T13:07:00.000Z
@@ -7,8 +7,7 @@ category: ecosystem
 description: >+
   The future of storage isn’t just about where data lives –– it’s also about who
   controls it. Filecoin puts that power back in your hands –– redefining data
-  ownership in the digital age. 
-
+  ownership in the digital age.
 image:
   src: /assets/images/032625-defiant-header.webp
 seo:
@@ -16,7 +15,7 @@ seo:
     card: summary
   description: "The future of storage isn’t just about where data lives –– it’s
     also about who controls it. Filecoin puts that power back in your hands ––
-    redefining data ownership in the digital age. "
+    redefining data ownership in the digital age."
 ---
 
 ## Your Data. Your Choice. Your Control
@@ -41,18 +40,7 @@ Combining blockchain technology with decentralized storage offers a fundamentall
 
 **Cost Efficiency:** A Smarter Storage Economy – With a competitive, open marketplace for storage, you can choose from a range of providers based on performance or price. Content-addressability and IPFS support means you can pick and switch fearlessly. 
 
-<a href="mailto:sales@fil.org" style="
-    display: inline-block; 
-    background-color: #73B4ED; 
-    color: black; 
-    text-decoration: none; 
-    padding: 12px 24px; 
-    font-family: Archivo, sans-serif; 
-    font-size: 16px; 
-    border-radius: 8px; 
-    transition: background 0.3s;">
-Get Started with Filecoin
-</a>
+[Get Started with Filecoin](mailto:sales@fil.org)
 
 ## Who is Using Filecoin?
 
@@ -62,15 +50,15 @@ Get Started with Filecoin
 
 FF is building bridges with other ecosystems to enhance decentralization and resilience in the broader Web3 world.
 
-**Cardano**: [Blockfrost integrated Filecoin](https://fil.org/blog/blockfrost-and-filecoin-foundation-collaborate-to-enhance-the-decentralization-of-cardano-data) as a robust backup layer for Blockfrost-built Cardano apps. Blockfrost will also introduce a new service tier for Cardano builders that includes IPFS and Filecoin storage. 
+**Cardano**: [Blockfrost integrated Filecoin](/blog/blockfrost-and-filecoin-foundation-collaborate-to-enhance-the-decentralization-of-cardano-data) as a robust backup layer for Blockfrost-built Cardano apps. Blockfrost will also introduce a new service tier for Cardano builders that includes IPFS and Filecoin storage. 
 
 **Solana**: DCENT, a Filecoin storage provider, collaborated with the Solana ecosystem to archive [Solana’s block history on Filecoin](https://destor.com/resources/news/solana-integrates-filecoin) as part of the [Old Faithful initiative](https://docs.triton.one/project-yellowstone/old-faithful-historical-archive/old-faithful-public-report) to make Solana's ledger data accessible and content-addressable. 
 
 ### AI Organizations
 
-AI organizations, including [Aethir](https://fil.org/ecosystem-explorer/aethir), [KiteAI](https://fil.org/ecosystem-explorer/kite-ai), [Nuklai](https://fil.org/ecosystem-explorer/nuklai), and [SingularityNET](https://singularitynet.io/), store datasets and metadata on the network to ensure transparency, accountability, and robust audit trails.
+AI organizations, including [Aethir](/ecosystem-explorer/aethir), [KiteAI](/ecosystem-explorer/kite-ai), [Nuklai](/ecosystem-explorer/nuklai), and [SingularityNET](https://singularitynet.io/), store datasets and metadata on the network to ensure transparency, accountability, and robust audit trails.
 
-AI agent projects are leveraging the Filecoin network’s data verifiability capabilities to ensure AI-generated outputs can be trusted, including [Recall](https://recall.network/), [Ungate AI](https://fil.org/ecosystem-explorer/ungate), and [AIWS](https://fil.org/ecosystem-explorer/aiws). Plus, platforms like [Theoriq](https://www.theoriq.ai/) have [developed a series of AI agents](https://mirror.xyz/0xbCAa90C8bA95b3ba6C8Aa6900a92FE70b97E5eF7/y8zj9hbr6ZEES9V9bMtqyzEBm0osh5ivoSBEYVN3mkI) trained on data stored on Filecoin, making open data more accessible and usable for builders. 
+AI agent projects are leveraging the Filecoin network’s data verifiability capabilities to ensure AI-generated outputs can be trusted, including [Recall](https://recall.network/), [Ungate AI](/ecosystem-explorer/ungate), and [AIWS](/ecosystem-explorer/aiws). Plus, platforms like [Theoriq](https://www.theoriq.ai/) have [developed a series of AI agents](https://mirror.xyz/0xbCAa90C8bA95b3ba6C8Aa6900a92FE70b97E5eF7/y8zj9hbr6ZEES9V9bMtqyzEBm0osh5ivoSBEYVN3mkI) trained on data stored on Filecoin, making open data more accessible and usable for builders. 
 
 ![](/assets/images/032625-defiant-ailogos.webp)
 
@@ -84,11 +72,11 @@ Projects like [The Defiant](https://thedefiant.io/news/defi/the-defiant-to-prese
 
 Universities and research institutions around the world generate troves of research and data.  But without secure and sustainable infrastructure, that knowledge can be lost –– hampering scientific progress. 
 
-University of Maryland’s EASIER Data Initiative stores [academic tutorials](https://easierdata.org/notebooks/accessing-gedi-data) and [geospatial data](https://easierdata.org/updates/2024/2024-12-6-crop-classification-on-dweb) on Filecoin. UC Berkeley stored [experimental particle physics data](https://physics.berkeley.edu/news-events/news/seal-storage-technology-partners-with-orebi-gann-group). MIT Open Learning uploaded foundational [OpenCourseWare courses](https://fil.org/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage). By uploading data to Filecoin, these institutions ensure their work is globally accessible, cryptographically verifiable, and resistant to link rot or institutional turnover. 
+University of Maryland’s EASIER Data Initiative stores [academic tutorials](https://easierdata.org/notebooks/accessing-gedi-data) and [geospatial data](https://easierdata.org/updates/2024/2024-12-6-crop-classification-on-dweb) on Filecoin. UC Berkeley stored [experimental particle physics data](https://physics.berkeley.edu/news-events/news/seal-storage-technology-partners-with-orebi-gann-group). MIT Open Learning uploaded foundational [OpenCourseWare courses](/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage). By uploading data to Filecoin, these institutions ensure their work is globally accessible, cryptographically verifiable, and resistant to link rot or institutional turnover. 
 
 ### Galleries, Libraries, Archives, and Museums
 
-Over [500,000 culturally significant digital artifacts](https://fil.org/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage) are now safeguarded on the Filecoin network. Institutions like the Smithsonian Institution, Flickr Foundation, Internet Archive, and Starling Lab use decentralized storage to preserve and protect knowledge for future generations. Smithsonian's National Museum of American History uploaded 300 digitized sound recordings –– some of the earliest recordings ever made –– from Alexander Graham Bell.  
+Over [500,000 culturally significant digital artifacts](/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage) are now safeguarded on the Filecoin network. Institutions like the Smithsonian Institution, Flickr Foundation, Internet Archive, and Starling Lab use decentralized storage to preserve and protect knowledge for future generations. Smithsonian's National Museum of American History uploaded 300 digitized sound recordings –– some of the earliest recordings ever made –– from Alexander Graham Bell.  
 
 ## How Filecoin Works For You
 
