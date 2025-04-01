@@ -1,10 +1,10 @@
 ---
-title: "Decentralize Your Data. Store it with Filecoin."
+title: Decentralize Your Data. Store it with Filecoin.
 created-on: 2025-03-28T13:07:00.000Z
 updated-on: 2025-03-28T13:07:00.000Z
 published-on: 2025-03-28T13:07:00.000Z
 category: ecosystem
-description: >+
+description: >
   The future of storage isn’t just about where data lives –– it’s also about who
   controls it. Filecoin puts that power back in your hands –– redefining data
   ownership in the digital age.
@@ -13,11 +13,10 @@ image:
 seo:
   twitter:
     card: summary
-  description: "The future of storage isn’t just about where data lives –– it’s
+  description: The future of storage isn’t just about where data lives –– it’s
     also about who controls it. Filecoin puts that power back in your hands ––
-    redefining data ownership in the digital age."
+    redefining data ownership in the digital age.
 ---
-
 ## Your Data. Your Choice. Your Control
 
 The future of storage isn’t just about where data lives –– it’s also about who controls it. Filecoin puts that power back in your hands –– redefining data ownership in the digital age. 
@@ -34,7 +33,7 @@ Combining blockchain technology with decentralized storage offers a fundamentall
 
 **Resilience**: Built to Withstand – With Filecoin, you can store multiple copies of your data, distributed across a global network of independent providers, eliminating single points of failure and protecting against loss. 
 
-**Integrity**: Don’t Trust, Verify  – For every piece of data stored on the Filecoin network cryptographic proofs guarantee that data is preservedunchanged.
+**Integrity**: Don’t Trust, Verify  – For every piece of data stored on the Filecoin network cryptographic proofs guarantee that data is preserved unchanged.
 
 **Scalability**: Storage that Grows with Emerging Technology – Data generation is growing exponentially; Filecoin is the only decentralized storage project to scale to exabytes of data ––  with the capacity to meet global data demands.
 
@@ -98,4 +97,4 @@ Every file stored on Filecoin is assured by cryptographic proofs that continuous
 
 ## Own your data. Keep it secure. Make it last
 
-[Get Started with Filecoin](mailto:sales@fil.org). Decentralize Your Data Today.
+[Get Started with Filecoin](mailto:sales@fil.org). Decentralize your data today.
