@@ -57,4 +57,5 @@ export const metadata = createMetadata({
   title: { absolute: BLOG_SEO.title },
   description: BLOG_SEO.description,
   path: PATHS.BLOG.path,
+  image: graphicsData.blog.data.src,
 })
