@@ -2,6 +2,7 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { useEntryView } from '@filecoin-foundation/hooks/useEntryView'
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@filecoin-foundation/hooks/useFilter/constants'
 import { entryMatchesCategoryQuery } from '@filecoin-foundation/hooks/useFilter/utils'
@@ -29,14 +30,13 @@ import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { useListboxOptions } from '@/hooks/useListboxOptions'
-import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
 import { Sort } from '@/components/Sort'
 
-import { blogSortConfigs } from '../constants/sortConfigs'
+import { entryViewConfigs } from '../constants/viewConfigs'
 import type { BlogPost } from '../types/blogPostType'
 
 type BlogContentProps = {
@@ -44,7 +44,7 @@ type BlogContentProps = {
 }
 
 export function BlogContent({ posts }: BlogContentProps) {
-  const sortOptions = getSortOptions(blogSortConfigs)
+  const sortOptions = getSortOptions(entryViewConfigs)
   const clientSearchParams = useSearchParams()
   const searchParams = Object.fromEntries(clientSearchParams.entries())
 
@@ -54,14 +54,14 @@ export function BlogContent({ posts }: BlogContentProps) {
     searchBy: ['title', 'description'],
   })
 
-  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
-    sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
+  const { query, viewResults, defaultQuery } = useEntryView({
+    query: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
-    configs: blogSortConfigs,
+    configs: entryViewConfigs,
   })
 
   const { filteredEntries } = useFilter({
-    entries: sortedResults,
+    entries: viewResults,
     filterQuery: normalizeQueryParam(searchParams, CATEGORY_KEY),
     filterFn: entryMatchesCategoryQuery,
   })
@@ -88,9 +88,9 @@ export function BlogContent({ posts }: BlogContentProps) {
           searchComponent={<Search query={searchQuery} />}
           sortComponent={
             <Sort
-              query={sortQuery}
+              query={query}
               options={sortOptions}
-              defaultQuery={defaultSortQuery}
+              defaultQuery={defaultQuery}
             />
           }
         />
@@ -105,9 +105,9 @@ export function BlogContent({ posts }: BlogContentProps) {
           ]}
           sortComponent={
             <Sort
-              query={sortQuery}
+              query={query}
               options={sortOptions}
-              defaultQuery={defaultSortQuery}
+              defaultQuery={defaultQuery}
             />
           }
         />

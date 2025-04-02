@@ -16,7 +16,9 @@
     "./useListboxOptions": "./src/useListboxOptions/index.ts",
     "./useListboxOptions/utils": "./src/useListboxOptions/utils/index.ts",
     "./useListboxQueryState": "./src/useListboxQueryState/index.ts",
-    "./useResetPageQuery": "./src/useResetPageQuery/index.ts"
+    "./useResetPageQuery": "./src/useResetPageQuery/index.ts",
+    "./useEntryView": "./src/useEntryView/index.ts",
+    "./useEntryView/types": "./src/useEntryView/types/index.ts"
   },
   "scripts": {
     "lint": "eslint . --fix"

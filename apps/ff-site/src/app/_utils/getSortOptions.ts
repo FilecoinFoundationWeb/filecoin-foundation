@@ -1,12 +1,8 @@
+import type { EntryViewConfig } from '@filecoin-foundation/hooks/useEntryView/types'
 import type { AnyObject } from '@filecoin-foundation/utils/types/utilTypes'
 
-import type { SortConfig } from '@/types/sortTypes'
-
-type PartialSortConfig = Pick<SortConfig<AnyObject>, 'key' | 'label'>
+type PartialSortConfig = Pick<EntryViewConfig<AnyObject>, 'id' | 'name'>
 
 export function getSortOptions(config: ReadonlyArray<PartialSortConfig>) {
-  return config.map(({ key, label }) => ({
-    id: key,
-    name: label,
-  }))
+  return config.map(({ id, name }) => ({ id, name }))
 }

@@ -1,0 +1,1 @@
+export { useEntryView } from './useEntryView'

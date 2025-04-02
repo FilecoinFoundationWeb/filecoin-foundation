@@ -1,3 +1,4 @@
+import { useEntryView } from '@filecoin-foundation/hooks/useEntryView'
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { entryMatchesCategoryQuery } from '@filecoin-foundation/hooks/useFilter/utils'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
@@ -23,8 +24,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { getSortOptions } from '@/utils/getSortOptions'
 
-import { useSort } from '@/hooks/useSort'
-
 import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'
 import { ResultsAndReset } from '@/components/ResultsAndReset'
@@ -32,7 +31,7 @@ import { Sort } from '@/components/Sort'
 
 import { CategoryFilters } from '../components/CategoryFilters'
 import { CategoryFiltersSlider } from '../components/CategoryFiltersSlider'
-import { ecosystemProjectsSortConfigs } from '../constants/sortConfigs'
+import { ecosystemProjectsViewConfigs } from '../constants/viewConfigs'
 import { useEcosystemCategoryTree } from '../hooks/useEcosystemCategoryTree'
 import type { EcosystemProject } from '../types/ecosystemProjectType'
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
@@ -44,7 +43,7 @@ type EcosystemExplorerContentProps = {
 }
 
 const categories = getEcosystemCMSCategories()
-const sortOptions = getSortOptions(ecosystemProjectsSortConfigs)
+const sortOptions = getSortOptions(ecosystemProjectsViewConfigs)
 
 export function EcosystemExplorerContent({
   searchParams,
@@ -56,20 +55,20 @@ export function EcosystemExplorerContent({
     searchBy: ['title', 'description'],
   })
 
-  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
-    sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
+  const { query, viewResults, defaultQuery } = useEntryView({
+    query: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
-    configs: ecosystemProjectsSortConfigs,
+    configs: ecosystemProjectsViewConfigs,
   })
 
   const { filteredEntries } = useFilter({
-    entries: sortedResults,
+    entries: viewResults,
     filterQuery: parseCategoryQueryParam(searchParams, CATEGORY_KEY),
     filterFn: entryMatchesCategoryQuery,
   })
 
   const categoryTree = useEcosystemCategoryTree({
-    entries: sortedResults,
+    entries: viewResults,
     categories,
   })
 
@@ -89,9 +88,9 @@ export function EcosystemExplorerContent({
           searchComponent={<Search query={searchQuery} />}
           sortComponent={
             <Sort
-              query={sortQuery}
+              query={query}
               options={sortOptions}
-              defaultQuery={defaultSortQuery}
+              defaultQuery={defaultQuery}
             />
           }
         />
@@ -103,9 +102,9 @@ export function EcosystemExplorerContent({
           ]}
           sortComponent={
             <Sort
-              query={sortQuery}
+              query={query}
               options={sortOptions}
-              defaultQuery={defaultSortQuery}
+              defaultQuery={defaultQuery}
             />
           }
         />

@@ -6,14 +6,12 @@ import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearc
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import { SORT_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 
-import { useSort } from '@/hooks/useSort'
-
 import { SortListbox } from './SortListbox'
 
 type SortProps = {
-  query: ReturnType<typeof useSort>['sortQuery']
+  query: string
   options: ReadonlyArray<OptionType>
-  defaultQuery: ReturnType<typeof useSort>['defaultSortQuery']
+  defaultQuery: string
 }
 
 export function Sort({ query, options, defaultQuery }: SortProps) {
