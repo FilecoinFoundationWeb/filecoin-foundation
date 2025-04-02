@@ -5,7 +5,7 @@ import { clsx } from 'clsx'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-type FilterContainerProps = {
+export type FilterContainerProps = {
   hasResults: boolean
   bottom: ReactElement
   top: {
@@ -71,6 +71,9 @@ export function FilterContainer({
     </section>
   )
 }
+
+FilterContainer.BottomFilterContainer = BottomFilterContainer
+FilterContainer.ResultsContainer = ResultsContainer
 
 type ContainerProps = ComponentProps<'div'>
 
