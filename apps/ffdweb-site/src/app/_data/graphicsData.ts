@@ -1,6 +1,7 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import about from '@/assets/graphics/about.webp'
+import blog from '@/assets/graphics/blog.webp'
 import digest from '@/assets/graphics/digest.webp'
 import dWebDigestCover from '@/assets/graphics/dweb-digest-cover.webp'
 import fallback from '@/assets/graphics/fallback.webp'
@@ -36,5 +37,9 @@ export const graphicsData = {
   projects: {
     data: projects,
     alt: 'A digital visualization of Earth as a glowing green and purple globe with connection points and network lines around it, resembling a global digital network or worldwide data connectivity system.',
+  },
+  blog: {
+    data: blog,
+    alt: 'A futuristic news studio with a glowing holographic globe, digital screens displaying data, and four panelists in discussion. Neon lighting and studio cameras enhance the high-tech atmosphere.',
   },
 } as const satisfies Record<string, StaticImageProps>
