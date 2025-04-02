@@ -6,7 +6,7 @@ import type {
 } from '@filecoin-foundation/utils/types/utilTypes'
 import type { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
-import type { SortConfig } from '@/types/sortTypes'
+import type { SortConfig } from './types/sortTypes'
 
 type UseSortProps<
   Entry extends AnyObject,
@@ -28,14 +28,14 @@ export function useSort<
   defaultConfig = configs[0],
 }: UseSortProps<Entry, Configs>) {
   const validSortKey = useMemo(() => {
-    const validSortKeys = configs.map((config) => config.key)
-    const sortKey = validSortKeys.find((key) => key === sortQuery)
+    const validSortKeys = configs.map((config) => config.id)
+    const sortKey = validSortKeys.find((id) => id === sortQuery)
 
-    return sortKey || defaultConfig.key
-  }, [configs, defaultConfig.key, sortQuery])
+    return sortKey || defaultConfig.id
+  }, [configs, defaultConfig.id, sortQuery])
 
   const sortedResults = useMemo(() => {
-    const config = configs.find((config) => config.key === validSortKey)
+    const config = configs.find((config) => config.id === validSortKey)
     const sortConfig = config || defaultConfig
 
     return sortConfig.sortFn(entries)
@@ -44,6 +44,6 @@ export function useSort<
   return {
     sortQuery: validSortKey,
     sortedResults,
-    defaultSortQuery: defaultConfig.key,
+    defaultSortQuery: defaultConfig.id,
   }
 }
