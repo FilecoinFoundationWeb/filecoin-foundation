@@ -1,6 +1,6 @@
+import { useEntryView } from '@filecoin-foundation/hooks/useEntryView'
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { entryMatchesCategoryQuery } from '@filecoin-foundation/hooks/useFilter/utils'
-import { useSort } from '@filecoin-foundation/hooks/useSort'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
@@ -33,7 +33,7 @@ import { LocationFilter } from '@/components/LocationFilter'
 
 import { EventSort } from '../components/EventSort'
 import { DEFAULT_CTA_TEXT, FILTERS_CONFIG } from '../constants/constants'
-import { eventsSortConfigs } from '../constants/sortConfigs'
+import { eventsViewConfigs } from '../constants/viewConfigs'
 import type { Event } from '../types/eventType'
 import { entryMatchesLocationQuery } from '../utils/filterUtils'
 import { getLocationListboxOptions } from '../utils/getLocationFilterOptions'
@@ -56,14 +56,14 @@ export default function EventsContent({
     searchBy: ['title', 'location'],
   })
 
-  const { sortedResults } = useSort({
-    sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
+  const { viewResults } = useEntryView({
+    query: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
-    configs: eventsSortConfigs,
+    configs: eventsViewConfigs,
   })
 
   const { filteredEntries: filteredEventsByLocation } = useFilter({
-    entries: sortedResults,
+    entries: viewResults,
     filterQuery: normalizeQueryParam(searchParams, LOCATION_KEY),
     filterFn: entryMatchesLocationQuery,
   })

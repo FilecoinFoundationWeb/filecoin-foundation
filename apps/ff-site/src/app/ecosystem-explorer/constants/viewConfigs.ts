@@ -1,5 +1,4 @@
-
-import { type SortConfig } from '@filecoin-foundation/hooks/useSort/types'
+import { type EntryViewConfig } from '@filecoin-foundation/hooks/useEntryView/types'
 
 import { type EcosystemProject } from '../types/ecosystemProjectType'
 
@@ -8,15 +7,15 @@ import {
   sortEcosystemProjectsAlphabeticalDesc,
 } from '@/ecosystem-explorer/utils/sortEcosystemProjects'
 
-export const ecosystemProjectsSortConfigs = [
+export const ecosystemProjectsViewConfigs = [
   {
     id: 'a-z',
     name: 'Alphabetical (A-Z)',
-    sortFn: sortEcosystemProjectsAlphabeticalAsc,
+    filterOrSortFn: sortEcosystemProjectsAlphabeticalAsc,
   },
   {
     id: 'z-a',
     name: 'Alphabetical (Z-A)',
-    sortFn: sortEcosystemProjectsAlphabeticalDesc,
+    filterOrSortFn: sortEcosystemProjectsAlphabeticalDesc,
   },
-] as const satisfies ReadonlyArray<SortConfig<EcosystemProject>>
+] as const satisfies ReadonlyArray<EntryViewConfig<EcosystemProject>>
