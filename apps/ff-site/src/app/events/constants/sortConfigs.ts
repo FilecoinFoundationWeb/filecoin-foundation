@@ -1,3 +1,7 @@
+import type { SortConfig } from '@filecoin-foundation/hooks/useSort/types'
+
+import { type Event } from '../types/eventType'
+
 import {
   sortEventsDesc,
   getUpcomingEvents,
@@ -6,18 +10,18 @@ import {
 
 export const eventsSortConfigs = [
   {
-    key: 'upcoming-events',
-    label: 'Upcoming Events',
+    id: 'upcoming-events',
+    name: 'Upcoming Events',
     sortFn: getUpcomingEvents,
   },
   {
-    key: 'all-events',
-    label: 'All Events',
+    id: 'all-events',
+    name: 'All Events',
     sortFn: sortEventsDesc,
   },
   {
-    key: 'past-events',
-    label: 'Past Events',
+    id: 'past-events',
+    name: 'Past Events',
     sortFn: getPastEvents,
   },
-] as const
+] as const satisfies ReadonlyArray<SortConfig<Event>>

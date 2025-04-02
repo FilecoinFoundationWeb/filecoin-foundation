@@ -1,17 +1,20 @@
+import { type SortConfig } from '@filecoin-foundation/hooks/useSort/types'
 import {
   sortPostsByDateAsc,
   sortPostsByDateDesc,
 } from '@filecoin-foundation/utils/sortBlogPosts'
 
+import { type BlogPost } from '../types/blogPostType'
+
 export const blogSortConfigs = [
   {
-    key: 'newest',
-    label: 'Newest',
+    id: 'newest',
+    name: 'Newest',
     sortFn: sortPostsByDateDesc,
   },
   {
-    key: 'oldest',
-    label: 'Oldest',
+    id: 'oldest',
+    name: 'Oldest',
     sortFn: sortPostsByDateAsc,
   },
-] as const
+] as const satisfies ReadonlyArray<SortConfig<BlogPost>>
