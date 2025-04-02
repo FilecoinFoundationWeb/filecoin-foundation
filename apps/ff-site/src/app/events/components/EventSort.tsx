@@ -6,18 +6,16 @@ import { CalendarBlank } from '@phosphor-icons/react'
 
 import { getSortOptions } from '@/utils/getSortOptions'
 
-
 import { SortListbox } from '@/components/SortListbox'
 
-import { eventsSortConfigs } from '../constants/sortConfigs'
+import { eventsViewConfigs } from '../constants/viewConfigs'
 
-const options = getSortOptions(eventsSortConfigs)
+const options = getSortOptions(eventsViewConfigs)
 
 export function EventSort() {
   const [selectedSort, setSelectedSort] = useListboxQueryState({
     key: SORT_KEY,
     options: options,
-    defaultOption: options[0],
   })
 
   return (

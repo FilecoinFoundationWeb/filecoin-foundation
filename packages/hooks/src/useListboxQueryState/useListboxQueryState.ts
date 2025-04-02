@@ -1,18 +1,18 @@
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
-import { parseAsString, useQueryState } from 'nuqs'
+import { useQueryState, parseAsString } from 'nuqs'
 
 import { useResetPageQuery } from '@filecoin-foundation/hooks/useResetPageQuery'
 
 type ListboxQueryStateConfig = {
   key: string
-  options: Array<OptionType>
-  defaultOption: OptionType
+  options: Array<OptionType> | ReadonlyArray<OptionType>
+  defaultOption?: OptionType
 }
 
 export function useListboxQueryState({
   key,
   options,
-  defaultOption,
+  defaultOption = options[0],
 }: ListboxQueryStateConfig) {
   const [optionId, setOptionId] = useQueryState<OptionType['id']>(
     key,
