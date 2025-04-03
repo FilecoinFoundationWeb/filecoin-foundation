@@ -11,6 +11,7 @@ type ProjectsFilterContainerProps = {
   top: {
     main: ReactElement
     secondary: ReactElement
+    tertiary: ReactElement
   }
   children: ReactElement
 }
@@ -23,11 +24,12 @@ export function ProjectsFilterContainer({
 }: ProjectsFilterContainerProps) {
   return (
     <section>
-      <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <div className="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         {top.main}
 
-        <div className="flex items-center justify-between gap-4">
-          <div className="w-full md:max-w-72">{top.secondary}</div>
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="w-full lg:max-w-72">{top.secondary}</div>
+          <div className="w-full sm:max-w-56">{top.tertiary}</div>
         </div>
       </div>
 

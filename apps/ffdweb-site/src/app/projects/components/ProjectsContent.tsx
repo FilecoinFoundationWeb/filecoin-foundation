@@ -63,6 +63,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
       top={{
         main: <PartnershipToggleFilter />,
         secondary: <Search query={searchQuery} />,
+        tertiary: <Search query={searchQuery} />,
       }}
     >
       <CardGrid as="section" cols="smTwoLgThree">
