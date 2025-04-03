@@ -4,7 +4,7 @@ import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
+import { TagGroup } from '@filecoin-foundation/ui/TagComponents'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { Newspaper } from '@phosphor-icons/react/dist/ssr'
@@ -30,7 +30,15 @@ type ProjectProps = {
 export default async function Project(props: ProjectProps) {
   const { slug } = await props.params
   const data = await getProjectData(slug)
-  const { category, title, image, description, website, featuredContent } = data
+  const {
+    category,
+    title,
+    image,
+    description,
+    website,
+    featuredContent,
+    activePartnership,
+  } = data
 
   const categoryLabel = getCategoryLabel({
     collectionName: 'projects',
@@ -43,7 +51,15 @@ export default async function Project(props: ProjectProps) {
       <ArticleLayout>
         <div>
           <div className="mb-8 space-y-4">
-            <TagLabel>{categoryLabel}</TagLabel>
+            <TagGroup
+              tags={[
+                { text: categoryLabel },
+                {
+                  text: `${activePartnership ? 'Current' : 'Past'} Partnership`,
+                },
+              ]}
+            />
+
             <Heading tag="h1" variant="3xl-medium">
               {title}
             </Heading>

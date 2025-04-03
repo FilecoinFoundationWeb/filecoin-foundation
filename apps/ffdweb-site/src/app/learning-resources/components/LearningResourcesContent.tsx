@@ -19,7 +19,7 @@ import {
   PAGE_KEY,
   SEARCH_KEY,
   CATEGORY_KEY,
-  RESOURCE,
+  RESOURCE_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { ArrowUpRight } from '@phosphor-icons/react'
@@ -75,12 +75,12 @@ export function LearningResourcesContent({
 
   const { filteredEntries: filteredByResourceType } = useFilter({
     entries: filteredByCategory,
-    filterQuery: normalizeQueryParam(searchParams, RESOURCE),
+    filterQuery: normalizeQueryParam(searchParams, RESOURCE_KEY),
     filterFn: entryMatchesResourceQuery,
   })
 
   const [resourceTypeOption, setResourceTypeOption] = useListboxQueryState({
-    key: RESOURCE,
+    key: RESOURCE_KEY,
     options: resourceTypeOptions,
     defaultOption: DEFAULT_RESOURCE_FILTER_OPTION,
   })

@@ -2,12 +2,14 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { useEntryView } from '@filecoin-foundation/hooks/useEntryView'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import {
   PAGE_KEY,
+  PARTNERSHIP_KEY,
   SEARCH_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
@@ -21,9 +23,12 @@ import { graphicsData } from '@/data/graphicsData'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { Card } from '@/components/Card'
-import { FilterContainer } from '@/components/FilterContainer'
 
+import { projectsViewConfigs } from '../constants/viewConfigs'
 import type { Project } from '../types/ProjectType'
+
+import { PartnershipToggleFilter } from './PartnershipToggleFilter'
+import { ProjectsFilterContainer } from './ProjectsFilterContainer'
 
 type ProjectsContentProps = {
   projects: Array<Project>
@@ -39,17 +44,26 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
     searchBy: ['title', 'description'],
   })
 
+  const { viewResults } = useEntryView({
+    query: normalizeQueryParam(searchParams, PARTNERSHIP_KEY),
+    entries: searchResults,
+    configs: projectsViewConfigs,
+  })
+
   const { currentPage, pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
-    entries: searchResults,
+    entries: viewResults,
     entriesPerPage: 12,
   })
 
   return (
-    <FilterContainer
+    <ProjectsFilterContainer
       hasResults={Boolean(paginatedResults.length)}
-      top={{ main: <Search query={searchQuery} /> }}
       bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
+      top={{
+        main: <PartnershipToggleFilter />,
+        secondary: <Search query={searchQuery} />,
+      }}
     >
       <CardGrid as="section" cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {
@@ -93,6 +107,6 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
           )
         })}
       </CardGrid>
-    </FilterContainer>
+    </ProjectsFilterContainer>
   )
 }
