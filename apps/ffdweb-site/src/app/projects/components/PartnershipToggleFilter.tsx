@@ -18,17 +18,17 @@ export function PartnershipToggleFilter() {
   })
 
   return (
-    <div className="flex gap-4 sm:gap-8">
+    <div className="flex gap-5 sm:gap-8">
       {projectsViewConfigs.map((partnershipConfig) => (
         <Button
           key={partnershipConfig.id}
           className={clsx(
-            'focus:brand-outline text-base sm:text-lg',
+            'focus:brand-outline cursor-pointer text-sm font-bold sm:text-base md:text-lg',
             TOUCH_TARGET.touchAreaPadding,
             TOUCH_TARGET.touchAreaOffset,
             activeOption.id === partnershipConfig.id
-              ? 'font-bold text-neutral-50'
-              : 'font-normal text-neutral-200',
+              ? 'text-neutral-50'
+              : 'text-neutral-400',
           )}
           onClick={() => {
             if (activeOption.id !== partnershipConfig.id) {
