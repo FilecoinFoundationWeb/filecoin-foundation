@@ -1,5 +1,7 @@
 import type { ReactElement } from 'react'
 
+import clsx from 'clsx'
+
 import {
   FilterContainer,
   type FilterContainerProps,
@@ -16,6 +18,8 @@ type ProjectsFilterContainerProps = {
   children: ReactElement
 }
 
+const layoutGap = 'gap-6'
+
 export function ProjectsFilterContainer({
   hasResults,
   bottom,
@@ -24,10 +28,20 @@ export function ProjectsFilterContainer({
 }: ProjectsFilterContainerProps) {
   return (
     <section>
-      <div className="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+      <div
+        className={clsx(
+          'mb-6 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between',
+          layoutGap,
+        )}
+      >
         {top.main}
 
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div
+          className={clsx(
+            'flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between',
+            layoutGap,
+          )}
+        >
           <div className="w-full lg:max-w-72">{top.secondary}</div>
           <div className="w-full sm:max-w-56">{top.tertiary}</div>
         </div>
