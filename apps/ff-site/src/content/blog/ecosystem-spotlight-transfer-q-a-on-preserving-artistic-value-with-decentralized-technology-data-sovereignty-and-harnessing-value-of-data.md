@@ -22,7 +22,7 @@ Q&A with Kelani Nichole, Founder of TRANSFER on preserving artistic value with d
 
 Experimental media art has long been overlooked by the traditional art world, and because of the rapid rate of obsolescence, much of the work is at risk of loss.
 
-[TRANSFER](http://transfer.art) is an experimental space exhibiting virtual worlds and decentralized networks in contemporary art since 2013. Post-pandemic TRANSFER has been virtual-first, exhibiting internationally at institutions, art fairs, and pop-ups. In 2023, TRANSFER launched an initiative to preserve all of the works they’ve supported over the years with the [TRANSFER Data Trust](https://transfergallery.com/data-trust/), an artist-owned cooperative trust model that artists can use to maintain and grow the value of their artwork.
+[TRANSFER](http://transfer.art) is an experimental space exhibiting virtual worlds and decentralized networks in contemporary art since 2013. Post-pandemic TRANSFER has been virtual-first, exhibiting internationally at institutions, art fairs, and pop-ups. In 2023, TRANSFER launched an initiative to preserve all of the works they’ve supported over the years with the [TRANSFER Data Trust](/ecosystem-explorer/transfer-data-trust), an artist-owned cooperative trust model that artists can use to maintain and grow the value of their artwork.
 
 ![Installation View TRANSFER Download at The Thoma Foundation in Santa Fe, 2018](https://lh7-us.googleusercontent.com/q-4Qu09242_zGqUTAU4OcblGN5ZPs7cy-LRgQzE9fLoczigTxKKtoDKqrDbRQKBZW3WRs23oF0etAJ6ter-ATP7Zv6yTWWAKiBdhORgvYaAPbvGpN9qz_Ee-cftIfrab1iFw6UQ3-rdoraO5ptI3JqU)
 _Installation view of TRANSFER Download exhibition at The Thoma Foundation in Santa Fe, 2018._

@@ -20,7 +20,7 @@ seo:
 
 _This post is also available on the [Filecoin Plus Medium](https://medium.com/filecoin-plus/announcing-the-quality-phase-for-filecoin-plus-2890a9797456)._
 
-The Filecoin Plus program has been in operation for over 2 years now, and has recently crossed over 700PiB of data onboarded through verified deals, constituting approximately 5% of total network capacity! At this time, we have over 550 large dataset applications representing open datasets (e.g., NASA, NOAA, Brazil Data Cube), onramps for decentralized data onboarding (e.g., FilSwan, FileDrive, Estuary, Web3.Storage), and commercial & academic projects (e.g., Internet Archive, USC Shoah Foundation, CERN).
+The Filecoin Plus program has been in operation for over 2 years now, and has recently crossed over 700PiB of data onboarded through verified deals, constituting approximately 5% of total network capacity! At this time, we have over 550 large dataset applications representing open datasets (e.g., NASA, NOAA, Brazil Data Cube), onramps for decentralized data onboarding (e.g., [FilSwan](/ecosystem-explorer/filswan), [FileDrive](/ecosystem-explorer/filedrive), Estuary, [Web3.Storage](/ecosystem-explorer/web3-storage)), and commercial & academic projects (e.g., Internet Archive, USC Shoah Foundation, CERN).
 
 Last year at this time (April 2022) the footprint of verified deal data was hovering around 50PiB. Our primary focus of the past year was “Scale” - scaling up to support the increasing demand on the network and serving a wider range of use cases (i.e., private and encrypted data). Initiative areas included growing the notary community, improving tooling to decrease “clicks to DataCap”, launching E-Fil+, and decreasing time to DataCap metrics from weeks to days.
 

@@ -15,7 +15,7 @@ seo:
 
 _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](/grants)._
 
-[Portrait](https://www.portrait.gg/) is the first open-source web page builder, allowing people to turn their blockchain address into a website. Portrait provides cryptographic proofs that verify the ownership and history of web pages designed on the platform. And Portrait web pages are automatically pinned to IPFS and Filecoin, allowing the sites to be secure and resilient by design.
+[Portrait](/ecosystem-explorer/portrait) is the first open-source web page builder, allowing people to turn their blockchain address into a website. Portrait provides cryptographic proofs that verify the ownership and history of web pages designed on the platform. And Portrait web pages are automatically pinned to IPFS and Filecoin, allowing the sites to be secure and resilient by design.
 
 The Portrait team was recently awarded a Filecoin Foundation developer grant to turn their proof of concept into an established, viable product. Portrait’s ultimate goal is to enable the Web3 community to express creative work and vision in a decentralized way– from custom blogs for writers to online portfolios for designers to landing pages for podcasts hosts.
 
