@@ -3,7 +3,12 @@
 import { useSearchParams } from 'next/navigation'
 
 import { useEntryView } from '@filecoin-foundation/hooks/useEntryView'
+import { useFilter } from '@filecoin-foundation/hooks/useFilter'
+import { DEFAULT_CATEGORY_FILTER_OPTION } from '@filecoin-foundation/hooks/useFilter/constants'
+import { entryMatchesCategoryQuery } from '@filecoin-foundation/hooks/useFilter/utils'
+import { useListboxQueryState } from '@filecoin-foundation/hooks/useListboxQueryState'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { FilterListbox } from '@filecoin-foundation/ui/FilterListbox'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -11,6 +16,7 @@ import {
   PAGE_KEY,
   PARTNERSHIP_KEY,
   SEARCH_KEY,
+  CATEGORY_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
@@ -21,6 +27,7 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 
 import { Card } from '@/components/Card'
 
@@ -34,6 +41,11 @@ type ProjectsContentProps = {
   projects: Array<Project>
 }
 
+const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
+  collectionName: 'projects',
+  fieldName: 'category',
+})
+
 export function ProjectsContent({ projects }: ProjectsContentProps) {
   const clientSearchParams = useSearchParams()
   const searchParams = Object.fromEntries(clientSearchParams.entries())
@@ -44,10 +56,22 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
     searchBy: ['title', 'description'],
   })
 
+  const { filteredEntries } = useFilter({
+    entries: searchResults,
+    filterQuery: normalizeQueryParam(searchParams, CATEGORY_KEY),
+    filterFn: entryMatchesCategoryQuery,
+  })
+
   const { viewResults } = useEntryView({
     query: normalizeQueryParam(searchParams, PARTNERSHIP_KEY),
-    entries: searchResults,
+    entries: filteredEntries,
     configs: projectsViewConfigs,
+  })
+
+  const [categoryOption, setCategoryOption] = useListboxQueryState({
+    key: CATEGORY_KEY,
+    options: categoryOptions,
+    defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -63,7 +87,14 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
       top={{
         main: <PartnershipToggleFilter />,
         secondary: <Search query={searchQuery} />,
-        tertiary: <Search query={searchQuery} />,
+        tertiary: (
+          <FilterListbox
+            selected={categoryOption}
+            options={[DEFAULT_CATEGORY_FILTER_OPTION, ...categoryOptions]}
+            optionsPosition="bottom end"
+            onChange={setCategoryOption}
+          />
+        ),
       }}
     >
       <CardGrid as="section" cols="smTwoLgThree">
