@@ -5,11 +5,11 @@ created-on: 2023-04-21T07:15:31.358Z
 updated-on: 2023-04-21T07:18:12.889Z
 published-on: 2023-04-21T08:01:04.314Z
 category: updates
-description: Filecoin Foundation for the Decentralized Web (FFDW) is launching
+description: "Filecoin Foundation for the Decentralized Web (FFDW) is launching
   an open request for proposals (RFP). We’re looking for projects that support
   our core mission — to ensure the permanent preservation of humanity’s most
   important information. We do this by stewarding the development of open-source
-  software and open protocols.
+  software and open protocols."
 image:
   src: /assets/images/64423813d1b0259171f6ef5e_ffdw-request-for-proposals.png
 seo:
