@@ -16,6 +16,7 @@ description: "EFF is an essential champion of user privacy, free expression, and
 image:
   src: /assets/images/eff_short.png
 website: https://www.eff.org/
+active-partnership: true
 seo:
   description: "EFF champions digital rights through litigation, policy analysis, and activism. They protect privacy, free speech, and innovation as technology's role grows worldwide."
 ---

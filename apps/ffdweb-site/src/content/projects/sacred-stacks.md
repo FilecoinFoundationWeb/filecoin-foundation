@@ -12,7 +12,7 @@ description: Sacred Stacks is an initiative within the Media Design Lab at the
   practices can make these communities even stronger.
 featured-content: https://ffdweb.org/blog/ffdw-and-sacred-stacks-building-community-with-decentralized-tools/
 website: https://www.colorado.edu/lab/medlab/sacred-stacks
-active-partnership: true
+active-partnership: false
 image:
   src: /assets/images/partnerlogo_boulder.png
 seo:

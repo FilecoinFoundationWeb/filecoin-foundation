@@ -13,10 +13,12 @@ description: FFDW and MuckRock are teaming up to integrate decentralized storage
   storage network, and support preservation, publication, and analysis efforts.
 featured-content: https://ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology
 website: https://www.muckrock.com/news/archives/2022/may/04/ffdw-and-muckrock-collaborate-to-bring-documentclo/
+active-partnership: true
 image:
   src: /assets/images/partnerlogo_muckrock.png
 seo:
-  description: FFDW and MuckRock are integrating Filecoin's decentralized storage
+  description:
+    FFDW and MuckRock are integrating Filecoin's decentralized storage
     with DocumentCloud to expand preservation and accessibility of over 8
     million verified public interest documents.
 ---

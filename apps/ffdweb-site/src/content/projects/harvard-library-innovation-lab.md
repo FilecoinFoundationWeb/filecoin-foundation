@@ -14,6 +14,7 @@ description: As a specialized lab within the Harvard Law Library, LIL explores
   and the Interplanetary File System (IPFS).
 featured-content: https://ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-boosts-harvard-library-innovation-lab-s-work-to-democratize-open-knowledge
 website: https://lil.law.harvard.edu/
+active-partnership: true
 image:
   src: /assets/images/partnerlogo_harvardlibrary.png
 seo:

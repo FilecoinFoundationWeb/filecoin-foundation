@@ -12,6 +12,7 @@ description: Promote blockchain technology’s potential to benefit all members 
 image:
   src: /assets/images/partnerlogo_blsgc.png
 website: https://www.blockchainlawsg.org/
+active-partnership: true
 seo:
   description: "Educational initiative promoting blockchain technology for social good through research, policy development, and training programs for community college professors and CA government staff."
 ---

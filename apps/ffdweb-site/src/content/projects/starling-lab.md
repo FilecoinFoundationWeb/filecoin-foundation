@@ -12,6 +12,7 @@ description: FFDW’s commitment to Starling Lab supports their work to prototyp
   to preserve human rights violations, with the help of Filecoin’s decentralized
   storage network, has been highlighted in Fast Company and CNN.
 website: https://www.starlinglab.org/
+active-partnership: true
 image:
   src: /assets/images/649c81d53d6f2b384d2aa16e_image.png
 seo:

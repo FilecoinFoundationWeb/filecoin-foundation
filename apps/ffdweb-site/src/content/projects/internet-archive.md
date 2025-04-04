@@ -17,6 +17,7 @@ description: "The Internet Archive runs dozens of projects, including: the
   advances the mission of both organizations to preserve humanity's most
   valuable information and improve access to information online."
 website: https://archive.org/
+active-partnership: true
 image:
   src: /assets/images/partnerlogo_internetarchive.png
 seo:
