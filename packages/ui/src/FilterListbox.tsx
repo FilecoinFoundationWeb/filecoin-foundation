@@ -9,7 +9,10 @@ import {
   ListboxOption,
   type OptionType,
 } from '@filecoin-foundation/ui/Listbox/ListboxOption'
-import { ListboxOptions } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
+import {
+  ListboxOptions,
+  type ListboxOptionsProps,
+} from '@filecoin-foundation/ui/Listbox/ListboxOptions'
 import { FunnelSimple } from '@phosphor-icons/react'
 
 type FilterListboxProps = {
@@ -17,6 +20,7 @@ type FilterListboxProps = {
   options: Array<OptionType>
   onChange: (selected: OptionType) => void
   buttonIcon?: ListboxButtonProps['leadingIcon']
+  optionsPosition?: ListboxOptionsProps['position']
 }
 
 export function FilterListbox({
@@ -24,11 +28,12 @@ export function FilterListbox({
   options,
   onChange,
   buttonIcon = FunnelSimple,
+  optionsPosition,
 }: FilterListboxProps) {
   return (
     <Listbox value={selected} onChange={onChange}>
       <ListboxButton text={selected.name} leadingIcon={buttonIcon} />
-      <ListboxOptions>
+      <ListboxOptions position={optionsPosition}>
         {options.map((option) => (
           <ListboxOption key={option.id} option={option} />
         ))}
