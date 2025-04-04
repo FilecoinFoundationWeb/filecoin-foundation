@@ -11,11 +11,12 @@ description: The Decentralized Future Council (DFC) was a collaboration between
   that correspond with these emerging technologies, including privacy, security,
   democracy, online trust and safety, and more.
 website: https://www.decentralizedfuturecouncil.org/
-active-partnership: true
+active-partnership: false
 image:
   src: /assets/images/partnerlogo_decentfuturecoucil.png
 seo:
-  description: The Decentralized Future Council educated policymakers on emerging
+  description:
+    The Decentralized Future Council educated policymakers on emerging
     technologies like blockchain and cryptocurrency, addressing challenges in
     privacy, security, and digital trust.
 ---

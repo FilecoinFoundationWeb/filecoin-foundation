@@ -12,7 +12,7 @@ description: As we pursue our goal of supporting an internet for everyone, it is
   from, and want to see on the internet.
 featured-content: https://ffdweb.org/blog/ffdw-and-connect-humanity-empowering-an-equitable-digital-future
 website: https://connecthumanity.fund/
-active-partnership: true
+active-partnership: false
 image:
   src: /assets/images/EB6IZmuH_400x400.jpg
 seo:

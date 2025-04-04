@@ -12,11 +12,12 @@ description: The Web Foundation advanced Sir Tim Berners-Lee's original vision
   happening in the online lives of users, and in what areas a course correction
   is needed.
 website: https://www.webfoundation.org/
-active-partnership: true
+active-partnership: false
 image:
   src: /assets/images/web-foundation-hi-res-logo.jpeg
 seo:
-  description: The Web Foundation advances Tim Berners-Lee's vision of an open web
+  description:
+    The Web Foundation advances Tim Berners-Lee's vision of an open web
     through the Web Index project, monitoring emerging issues and ensuring a
     safe digital future.
 ---
