@@ -22,7 +22,7 @@ seo:
     next generation of decentralized gaming.
 ---
 
-Basic Beasts and the Filecoin Network: Designing the Next Generation of P2E Gaming
+[Basic Beasts](/ecosystem-explorer/basic-beasts) and the Filecoin Network: Designing the Next Generation of P2E Gaming
 
 Non-fungible tokens (NFTs), which emerged a decade ago, gained global attention in 2020, spurred by the pandemic-accelerated digital shift. NFTs have revolutionized art collection by providing creators unique ways to engage audiences and monetize their work. Their non-fungibility ensures each piece is unique and irreplaceable, akin to original artworks.
 

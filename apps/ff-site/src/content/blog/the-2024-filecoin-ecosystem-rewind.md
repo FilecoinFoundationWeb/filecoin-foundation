@@ -23,7 +23,7 @@ We kicked off the year by announcing that Filecoin Foundation (FF) [successfu
 
 And FF is building bridges with other Layer 1 (L1) ecosystems to enhance decentralization and resilience. This month, [Blockfrost announced an integration with Filecoin](/blog/blockfrost-and-filecoin-foundation-collaborate-to-enhance-the-decentralization-of-cardano-data) as a robust backup layer for Blockfrost-built Cardano apps. Blockfrost will also introduce a new service tier for Cardano builders that includes IPFS and Filecoin storage.
 
-Earlier this year, we announced a collaboration driven by Triton One and DCENT to [archive Solana’s block history on Filecoin](https://destor.com/resources/news/solana-integrates-filecoin), enhancing the decentralization of the Solana ecosystem.
+Earlier this year, we announced a collaboration driven by Triton One and [DCENT](/ecosystem-explorer/dcent) to [archive Solana’s block history on Filecoin](https://destor.com/resources/news/solana-integrates-filecoin), enhancing the decentralization of the Solana ecosystem.
 
 ## Filecoin is Key Infrastructure for Decentralized AI
 

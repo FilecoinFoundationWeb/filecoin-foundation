@@ -59,7 +59,7 @@ Explore the [Orbit Nigeria Meetup Group](https://www.meetup.com/orbit-community-
 
 ![](/assets/images/643e68bf3820f64ae7d1de26_timo_lee_360.jpeg)
 
-Timo Lee, a Berlin-based Community Lead for Secured Finance, is helping spur financial innovation in the Filecoin community. An early follower of IPFS technology, he’s driven to help provide access to the emerging financial markets and business opportunities in crypto.
+Timo Lee, a Berlin-based Community Lead for [Secured Finance](/ecosystem-explorer/secured-finance), is helping spur financial innovation in the Filecoin community. An early follower of IPFS technology, he’s driven to help provide access to the emerging financial markets and business opportunities in crypto.
 
 “I used to be a mechanical engineer in the German automotive industry. Back in 2018, I met the IPFS core developers. They were talking about IPFS protocol specs, peer-to-peer, and super fundamental things. That was a turning point for me — I really saw what the next generation web would look like, and it was exciting.”
 
@@ -67,7 +67,7 @@ Timo sees the Filecoin Orbit Community Program as a crucial opportunity to provi
 
 “I have been to many hackathons, and there are lots of developers building NFTs on top of IPFS. This is just one use case — for any storage-related project, you can build on top of IPFS and Filecoin. And, with the Filecoin Virtual Machine (FVM) launching soon, there will be increasing traction in the corporate communities.”
 
-Secured Finance is aiming to build robust financial and crypto finance markets and key business collateral management building a yield curve for cryptocurrencies. Learn more about [Secured Finance](https://secured-finance.com/) here, and follow Timo on [Twitter](https://twitter.com/timowlee) and [LinkedIn](https://www.linkedin.com/in/timo-lee-a64b69136/) for news about upcoming Orbit events to get involved in.
+[Secured Finance](/ecosystem-explorer/secured-finance) is aiming to build robust financial and crypto finance markets and key business collateral management building a yield curve for cryptocurrencies. Learn more about [[Secured Finance](/ecosystem-explorer/secured-finance)](https://secured-finance.com/) here, and follow Timo on [Twitter](https://twitter.com/timowlee) and [LinkedIn](https://www.linkedin.com/in/timo-lee-a64b69136/) for news about upcoming Orbit events to get involved in.
 
 ## Advocating Filecoin Developer Success, Allan Mang’eni — Wengi Web
 

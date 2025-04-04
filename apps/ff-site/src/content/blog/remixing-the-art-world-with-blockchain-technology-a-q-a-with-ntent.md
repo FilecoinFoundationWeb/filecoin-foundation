@@ -18,7 +18,7 @@ seo:
 
 The art world has traditionally been shrouded in mystery and unwritten rules. Now, Web3 is creating a more inclusive and user-centric experience, lowering the barrier to entry through decentralized technology. The blockchain is uniquely suited for the challenge, as it has proven to be a highly effective steward of transparency thanks to the metadata that remains linked to the chain for its entire lifespan.
 
-Filecoin Foundation recently spoke with [Dr.Banner](https://www.ntent.art/drbanner), [Blue Moon](https://twitter.com/bluem0xn), and [jiwa](https://www.ntent.art/jiwa), co-founders of [ntent](https://www.ntent.art/), a collective exploring the intersection of art, fashion, and emerging technologies to create cultural moments that challenge the norms of the traditional art community by offering access to a wider audience.
+Filecoin Foundation recently spoke with [Dr.Banner](https://www.ntent.art/drbanner), [Blue Moon](https://twitter.com/bluem0xn), and [jiwa](https://www.ntent.art/jiwa), co-founders of [ntent](/ecosystem-explorer/ntent), a collective exploring the intersection of art, fashion, and emerging technologies to create cultural moments that challenge the norms of the traditional art community by offering access to a wider audience.
 
 Read on to learn how ntent is redefining how art is experienced and appreciated with its Web3 technology.
 

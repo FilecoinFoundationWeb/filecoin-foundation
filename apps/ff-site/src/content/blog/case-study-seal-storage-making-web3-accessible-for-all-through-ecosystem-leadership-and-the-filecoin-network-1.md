@@ -21,7 +21,7 @@ seo:
 
 ## Key Highlights
 
-- Seal Storage is a data platform that aims to make Web3 accessible for all by providing sustainable, immutable, and affordable Web3 cloud storage.
+- [Seal Storage](/ecosystem-explorer/seal-storage) is a data platform that aims to make Web3 accessible for all by providing sustainable, immutable, and affordable Web3 cloud storage.
 - As one of the earliest providers on the Filecoin network, Seal Storage is an established leader in the ecosystem. The company is a top storage provider in North America, with over 20PB of capacity across the U.S. and Canada, and is looking to add over 100PiBs more.
 - Seal Storage currently serves universities, research institutes, enterprises, and other firms to store their data in a more sustainable, affordable, and immutable way.
 - **Read the full** [Seal Storage Case Study](https://fil-foundation.on.fleek.co/hosting/FF-CaseStudy-SealStorage.pdf)

@@ -5,7 +5,7 @@ updated-on: 2023-04-21T07:28:18.531000Z
 published-on: 2023-04-21T07:33:56.200000Z
 description:
   "This winter, two new programs launched that make it easier than ever
-  to contribute to the Filecoin network: Filecoin Saturn and Filecoin Station."
+  to contribute to the Filecoin network: [Filecoin Saturn](/ecosystem-explorer/filecoin-saturn) and [Filecoin Station](/ecosystem-explorer/filecoin-station)."
 image:
   src: /assets/images/12202022-saturnandstation.png
 category: ecosystem
@@ -15,13 +15,13 @@ seo:
     to the Filecoin network.
 ---
 
-This winter, two new programs launched that make it easier than ever to contribute to the Filecoin network: Filecoin Saturn and Filecoin Station.
+This winter, two new programs launched that make it easier than ever to contribute to the Filecoin network: [Filecoin Saturn](/ecosystem-explorer/filecoin-saturn) and [Filecoin Station](/ecosystem-explorer/filecoin-station).
 
 Filecoin is the world's largest decentralized storage network, allowing users to store, request, and transfer data on the network via a verifiable marketplace. And now, these new programs will allow a new cohort of users and small enterprises to contribute to a more decentralized, efficient, and robust future for the internet.
 
 ## Filecoin Saturn
 
-[Filecoin Saturn](https://strn.network/) is a new content delivery network that will help scale the Filecoin network and allow Web3 applications to quickly retrieve content, making it both easier and more affordable to contribute to the Filecoin network.
+[Filecoin Saturn](/ecosystem-explorer/filecoin-saturn) is a new content delivery network that will help scale the Filecoin network and allow Web3 applications to quickly retrieve content, making it both easier and more affordable to contribute to the Filecoin network.
 
 Becoming a storage provider typically requires access to significant amounts of storage capacity which means the barrier to entry can be high for individuals. Now, anyone with their own server can download Saturn’s open-source software, contribute bandwidth to the network, and earn FIL.
 
@@ -31,11 +31,11 @@ Faster, more robust retrievals will unlock the next generation of Filecoin growt
 
 ![](/assets/images/643e68c395dde7170b2b8771_screen-shot-2023-01-05-at-12-01-41-pm.png)
 
-Learn how to set up a [Filecoin Saturn](https://strn.network/) node and learn more in [The Block](https://www.theblock.co/post/180450/filecoin-releases-new-content-delivery-network-called-saturn) and [Axios.](https://www.axios.com/newsletters/axios-crypto-db0eb110-3321-4160-b08f-93f104c5700a.html)
+Learn how to set up a Filecoin Saturn node and learn more in [The Block](https://www.theblock.co/post/180450/filecoin-releases-new-content-delivery-network-called-saturn) and [Axios.](https://www.axios.com/newsletters/axios-crypto-db0eb110-3321-4160-b08f-93f104c5700a.html)
 
 ## Filecoin Station
 
-In the alpha stage, [Filecoin Station](https://www.filstation.app/) is a desktop application that will act as an entry point to a selection of modules in the Filecoin ecosystem. The program connects your computer’s idle resources to the Filecoin network and will reward you with FIL for contributing your resources and services to each module.
+In the alpha stage, [Filecoin Station](/ecosystem-explorer/filecoin-station) is a desktop application that will act as an entry point to a selection of modules in the Filecoin ecosystem. The program connects your computer’s idle resources to the Filecoin network and will reward you with FIL for contributing your resources and services to each module.
 
 ![](/assets/images/643e68c395dde737e42b876f_screen-shot-2023-01-05-at-12-03-28-pm.png)
 

@@ -23,9 +23,9 @@ Filecoin Foundation experienced tremendous growth in 2021, both in size and scop
 
 🌉 **Ecosystem Collaborations:** We finalized agreements with ChainSafe to build and maintain Forest and the Polkadot networks and collaborated with Internet Archive to advance the mission of both organizations to preserve humanity’s most valuable information and improve access to information online.
 
-💻 **Storage Provider Support:** We established & are maintaining the [Storage Provider Bounty Board](https://filecoinfoundation.medium.com/introducing-the-storage-provider-bounty-board-b98eace44dd0), implemented the Storage Provider Working Group, launched the second cohort of the Storage Provider Venus Incubation Program, and led the charge on porting Web2 data sets onto the Filecoin Network.
+💻 **Storage Provider Support:** We established & are maintaining the [Storage Provider Bounty Board](/blog/introducing-the-storage-provider-bounty-board), implemented the Storage Provider Working Group, launched the second cohort of the Storage Provider Venus Incubation Program, and led the charge on porting Web2 data sets onto the Filecoin Network.
 
-➕**Filecoin Plus:** We worked to increase both the speed and the scope of the Filecoin Plus program, decreasing application time from 5 weeks to 5 days in 2021. Today, the program supports more than 90 active Large Dataset clients. The program is supported by over 20 active notaries, and this month we’re holding [another round of elections](https://filecoinfoundation.medium.com/applications-are-open-for-filecoin-plus-notary-elections-cca7c88ef60a). Through social and technical program improvements, we have driven the average “time to DataCap” down from 2 weeks to 19 hours.
+➕**Filecoin Plus:** We worked to increase both the speed and the scope of the Filecoin Plus program, decreasing application time from 5 weeks to 5 days in 2021. Today, the program supports more than 90 active Large Dataset clients. The program is supported by over 20 active notaries, and this month we’re holding [another round of elections](/blog/applications-are-open-for-filecoin-plus-notary-elections). Through social and technical program improvements, we have driven the average “time to DataCap” down from 2 weeks to 19 hours.
 
 ## Looking Ahead
 

@@ -43,7 +43,7 @@ The Warsaw crowd of technical, product, and web2 people was quite keen to hear R
 
 ## Madrid: Hosting at Cryptocafe with Zondax
 
-In Madrid, we teamed up with Web3 software development platform Zondax and Cryptocafe – the city’s new Web3 hub and co-work venue, to host a meetup for the local community – a vibrant mix of locals and expats taking advantage of the city’s quality of life and tech vibe.
+In Madrid, we teamed up with Web3 software development platform [Zondax](/ecosystem-explorer/zondax) and Cryptocafe – the city’s new Web3 hub and co-work venue, to host a meetup for the local community – a vibrant mix of locals and expats taking advantage of the city’s quality of life and tech vibe.
 
 Ainhoa Aldave, Zondax's COO, gave a Spanish-language talk discussing the tooling her team has built (everything from wallet integrations to block explorers) for the Filecoin ecosystem over the years.
 
@@ -69,7 +69,7 @@ In Portugal, we joined forces with Diogo Almeida of Lightshift Ventures, a Lisbo
 
 We had the pleasure of hosting at Poolside – which is an exciting new accelerator, co-work space and event hub serving the Lisbon Web3 community. The city has an incredibly eclectic community of both native Portuguese builders and expats who have set up in the city to take advantage of its favorable crypto climate.
 
-Stef Magdalinski, Head of Technical Programs at Filecoin Foundation, discussed the Foundation's [grants programs](/grants), the many opportunities for builders to get involved in the Filecoin world, and how people can apply for grant funding. Diogo Coimbra of Lisbon-based Haven Digital Partners was also onhand to present a new solution for Filecoin storage deals that matches investors with storage providers in need of Filecoin collateral.
+Stef Magdalinski, Head of Technical Programs at Filecoin Foundation, discussed the Foundation's [grants programs](/grants), the many opportunities for builders to get involved in the Filecoin world, and how people can apply for grant funding. Diogo Coimbra of Lisbon-based [Haven](/ecosystem-explorer/haven) Digital Partners was also onhand to present a new solution for Filecoin storage deals that matches investors with storage providers in need of Filecoin collateral.
 
 ## Munich: Student Fanfare at Technical University of Munich
 

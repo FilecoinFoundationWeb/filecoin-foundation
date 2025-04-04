@@ -21,7 +21,7 @@ seo:
     using blockchain technology.
 ---
 
-[Artifact Labs](https://www.artifactlabs.com/) is driven by a mission to “preserve and connect culture and history on the blockchain.” The company puts the power of preservation in the hands of organizations and individuals dedicated to the same goals: to preserve valuable assets, foster accessibility and engagement, facilitate rights management of digital assets, and unlock fundraising and commercialization opportunities.
+[Artifact Labs](/ecosystem-explorer/artifact-labs) is driven by a mission to “preserve and connect culture and history on the blockchain.” The company puts the power of preservation in the hands of organizations and individuals dedicated to the same goals: to preserve valuable assets, foster accessibility and engagement, facilitate rights management of digital assets, and unlock fundraising and commercialization opportunities.
 
 Historically, Artifact Labs has worked with museums and newspapers to preserve their collections using Web3 tools. Now they’re taking on a much larger project: the shipwreck _Titanic_.
 

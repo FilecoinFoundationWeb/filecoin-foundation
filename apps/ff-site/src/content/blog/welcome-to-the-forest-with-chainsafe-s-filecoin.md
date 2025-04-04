@@ -17,7 +17,7 @@ seo:
 
 Filecoin Mainnet launched one year ago this week, opening up the decentralized storage protocol to developers, storage providers, and Web3 enthusiasts worldwide. Today, we welcome the next phase of ecosystem growth with the launch of Forest, an implementation of the Filecoin protocol written in Rust.
 
-Implementations are a critical component of protocol infrastructure which allow developers, clients, and storage providers to securely connect to and build on the blockchain. Forest now joins Lotus, the reference implementation written in Go, as the second implementation devnet available within the Filecoin ecosystem.
+Implementations are a critical component of protocol infrastructure which allow developers, clients, and storage providers to securely connect to and build on the blockchain. Forest now joins [Lotus](/ecosystem-explorer/lotus), the reference implementation written in Go, as the second implementation devnet available within the Filecoin ecosystem.
 
 Built by the team at Chainsafe, this first-iteration of Forest is an alpha release that is now fully synced with the various [protocol enhancements and network upgrades](/blog/participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips) that have been delivered in recent months. As a next step, developers are invited to install, test, and run the Forest client in order to generate feedback and future use-cases.
 

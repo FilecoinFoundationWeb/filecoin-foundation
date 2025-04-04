@@ -17,6 +17,7 @@ seo:
     also about who controls it. Filecoin puts that power back in your hands ––
     redefining data ownership in the digital age.
 ---
+
 ## Your Data. Your Choice. Your Control
 
 The future of storage isn’t just about where data lives –– it’s also about who controls it. Filecoin puts that power back in your hands –– redefining data ownership in the digital age. 
@@ -51,7 +52,7 @@ FF is building bridges with other ecosystems to enhance decentralization and res
 
 **Cardano**: [Blockfrost integrated Filecoin](/blog/blockfrost-and-filecoin-foundation-collaborate-to-enhance-the-decentralization-of-cardano-data) as a robust backup layer for Blockfrost-built Cardano apps. Blockfrost will also introduce a new service tier for Cardano builders that includes IPFS and Filecoin storage. 
 
-**Solana**: DCENT, a Filecoin storage provider, collaborated with the Solana ecosystem to archive [Solana’s block history on Filecoin](https://destor.com/resources/news/solana-integrates-filecoin) as part of the [Old Faithful initiative](https://docs.triton.one/project-yellowstone/old-faithful-historical-archive/old-faithful-public-report) to make Solana's ledger data accessible and content-addressable. 
+**Solana**: [DCENT](/ecosystem-explorer/dcent), a Filecoin storage provider, collaborated with the Solana ecosystem to archive [Solana’s block history on Filecoin](https://destor.com/resources/news/solana-integrates-filecoin) as part of the [Old Faithful initiative](https://docs.triton.one/project-yellowstone/old-faithful-historical-archive/old-faithful-public-report) to make Solana's ledger data accessible and content-addressable. 
 
 ### AI Organizations
 
@@ -65,7 +66,7 @@ AI agent projects are leveraging the Filecoin network’s data verifiability cap
 
 Journalistic records are among the most vulnerable information online, subject to link rot, censorship, and disappearance under centralized control. It’s not unlikely to see an archive vanish overnight, and it has happened to [government datasets](https://cyber.harvard.edu/story/2025-01/archivists-work-identify-and-save-thousands-datasets-disappearing-datagov), [political polling,](https://www.theguardian.com/us-news/2025/mar/05/abc-news-538-shut-down) and [reporting records](https://www.rollingstone.com/music/music-news/mtv-news-saved-internet-archive-1235051776/). In the age of AI, preserving and verifying journalism and research has never been more critical. 
 
-Projects like [The Defiant](https://thedefiant.io/news/defi/the-defiant-to-preserve-article-archives-on-filecoin) and other pioneering organizations, including [MuckRock](https://www.muckrock.com/news/archives/2024/sep/11/featured-add-on-push-to-ipfs-filecoin/) and [Numbers Protocol](https://votetw2024.numbersprotocol.io/En), use decentralized storage to safeguard archives and reporting, ensuring evidence prevails in an ephemeral era. [Rolling Stone](https://investigation.rollingstone.com/dj-photo-war-crimes-bosnia/) worked with Starling Lab to preserve an investigative journalism archive. 
+Projects like [The Defiant](https://thedefiant.io/news/defi/the-defiant-to-preserve-article-archives-on-filecoin) and other pioneering organizations, including [MuckRock](/ecosystem-explorer/muckrock) and [Numbers Protocol](/ecosystem-explorer/numbers-protocol), use decentralized storage to safeguard archives and reporting, ensuring evidence prevails in an ephemeral era. [Rolling Stone](https://investigation.rollingstone.com/dj-photo-war-crimes-bosnia/) worked with [Starling Lab](/ecosystem-explorer/starling-lab) to preserve an investigative journalism archive. 
 
 ### Academic Institutions 
 
@@ -75,7 +76,7 @@ University of Maryland’s EASIER Data Initiative stores [academic tutorials](ht
 
 ### Galleries, Libraries, Archives, and Museums
 
-Over [500,000 culturally significant digital artifacts](/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage) are now safeguarded on the Filecoin network. Institutions like the Smithsonian Institution, Flickr Foundation, Internet Archive, and Starling Lab use decentralized storage to preserve and protect knowledge for future generations. Smithsonian's National Museum of American History uploaded 300 digitized sound recordings –– some of the earliest recordings ever made –– from Alexander Graham Bell.  
+Over [500,000 culturally significant digital artifacts](/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage) are now safeguarded on the Filecoin network. Institutions like the Smithsonian Institution, Flickr Foundation, Internet Archive, and [Starling Lab](/ecosystem-explorer/starling-lab) use decentralized storage to preserve and protect knowledge for future generations. Smithsonian's National Museum of American History uploaded 300 digitized sound recordings –– some of the earliest recordings ever made –– from Alexander Graham Bell.  
 
 ## How Filecoin Works For You
 
@@ -83,7 +84,7 @@ Over [500,000 culturally significant digital artifacts](/blog/flickr-foundation-
 
 ### 1. Upload Your Data
 
-Store your files on a decentralized, resilient network through platforms tailored to your needs –– from enterprise-grade data solutions to AI data services to archiving and preservation. Solutions like [Akave](https://www.akave.ai/), [Storacha](https://storacha.network/), [Lighthouse](https://lighthouse.storage/), and [CIDgravity](https://www.cidgravity.com/) offer a range of tools to help you get started.
+Store your files on a decentralized, resilient network through platforms tailored to your needs –– from enterprise-grade data solutions to AI data services to archiving and preservation. Solutions like [Akave](/ecosystem-explorer/akave), [Storacha](/ecosystem-explorer/storacha), [Lighthouse](/ecosystem-explorer/lighthouse), and [CIDgravity](/ecosystem-explorer/cidgravity) offer a range of tools to help you get started.
 
 ![](/assets/images/032625-defiant-howlogos.webp)
 

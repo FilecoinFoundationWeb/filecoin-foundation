@@ -16,7 +16,7 @@ seo:
 
 _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](/grants)._
 
-[Fileverse](https://fileverse.io/) is part of an emerging subset of decentralized apps (dApps) focused on everyday online activities and privacy. Supported by more than 14,000 Gitcoin contributors, the current Fileverse dApp ([Fileverse Solo](https://beta.fileverse.io/)) gives people tools to store, encrypt, share, and manage multimedia files — image, video, documents — as well as encrypted chat rooms using a digital wallet.
+[Fileverse](/ecosystem-explorer/fileverse) is part of an emerging subset of decentralized apps (dApps) focused on everyday online activities and privacy. Supported by more than 14,000 Gitcoin contributors, the current Fileverse dApp ([Fileverse Solo](https://beta.fileverse.io/)) gives people tools to store, encrypt, share, and manage multimedia files — image, video, documents — as well as encrypted chat rooms using a digital wallet.
 
 Fileverse started with a Gitcoin grant and two objectives: 1) building a public service that appeals to Web2 users as much as Web3 users, and 2) onboarding the next generation of Web3 users without compromising on the “no central point of failure” stack. Taking the grant path allowed Fileverse to build from the bottom up and find a niche as a non-financial dApp.
 
@@ -42,7 +42,7 @@ The Fileverse team is working on the development and dissemination of unique cry
 
 Finally, Fileverse is using Web3 technology to solve some of the pain points of Web2 applications, including data portability and security, platform lock-ins, and prove-ably shared ownership of accounts. These topics were recently covered by the Fileverse team in a [panel discussion of experts](https://www.youtube.com/watch?v=M7odSy7Lf9g) including Roger Dingledin, co-founder of Tor, and Mark Graham, director of the Wayback Machine.
 
-**What’s next for Fileverse?**
+## What’s next for Fileverse?
 
 This decentralized journey has led the Fileverse team to their new and most anticipated release – **Fileverse Portal**. Portal is a collaboration and productivity dApp that let’s individuals and groups deploy their own collaboration smart contract. Deploying a Portal gives people the ability to manage different storage services, create documents and collaborate live with others, all from one place.
 

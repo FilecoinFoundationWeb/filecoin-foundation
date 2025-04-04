@@ -22,14 +22,14 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 **We’re celebrating 1 year since the launch of the Filecoin Virtual Machine!** As of March 2024, 800+ FVM projects have created about 680,000 wallets and deployed 3,100+ unique contracts. Over this last year, dapp and smart contract builders have developed new features, integrations, and resources to enable a wide variety of projects built on Filecoin. [Read more on the FF blog](/blog/one-year-of-programmability-smart-contracts-and-dapp-growth-on-filecoin).
 
-**[Dive deep into The Starling Framework](https://ffdweb.org/blog/the-starling-lab-framework/) in a new post guest written by the Starling Lab team.** Co-founded by Stanford University’s Department of Electrical Engineering and USC Shoah Foundation, Starling Lab develops technology and protocols for digital records that can establish provenance and authenticity. Using its "Capture, Store, Verify" framework, Starling Lab is helping to build trust in digital assets such as photographs, websites, audio, and video.
+**[Dive deep into The Starling Framework](https://ffdweb.org/blog/the-starling-lab-framework/) in a new post guest written by the [Starling Lab](/ecosystem-explorer/starling-lab) team.** Co-founded by Stanford University’s Department of Electrical Engineering and USC Shoah Foundation, Starling Lab develops technology and protocols for digital records that can establish provenance and authenticity. Using its "Capture, Store, Verify" framework, Starling Lab is helping to build trust in digital assets such as photographs, websites, audio, and video.
 
 ## Ecosystem
 
 ### Developer Advocacy
 
 - FF Solutions Architect Yan Bo Ng recorded a workshop for the [Encode AI Hack](https://www.encode.club/ai-hackathon), and FF Dev Advocate Jenks Guo has been providing technical support. Both Yan and Jenks will be judging projects.
-- During ETHDenver, Yan participated in a [DePIN & AI panel](https://www.youtube.com/watch?v=k1HxuhBBvPg) at Fluence’s DePIN Day, and Jenks spoke on an [ecosystem panel](https://www.youtube.com/live/k1HxuhBBvPg?si=959cDKCDgk3hfR5R&t=25508).
+- During ETHDenver, Yan participated in a [DePIN & AI panel](https://www.youtube.com/watch?v=k1HxuhBBvPg) at [Fluence](/ecosystem-explorer/fluence)’s DePIN Day, and Jenks spoke on an [ecosystem panel](https://www.youtube.com/live/k1HxuhBBvPg?si=959cDKCDgk3hfR5R&t=25508).
 
 ### Storage
 
