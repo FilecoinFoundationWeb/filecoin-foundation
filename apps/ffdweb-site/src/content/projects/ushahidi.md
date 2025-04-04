@@ -10,6 +10,7 @@ description: "Ushahidi's Election Data Resilience Initiative aims to make
   This will make the data more accessible to researchers, policymakers, and the
   public and help ensure it cannot be altered. "
 website: https://www.ushahidi.com/
+active-partnership: true
 image:
   src: /assets/images/ushahidi-logo_black_1x-1-.png
 seo:

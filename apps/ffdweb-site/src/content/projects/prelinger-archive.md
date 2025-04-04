@@ -12,6 +12,7 @@ description: The Prelinger Archives is using its award from FFDW to digitize a
   preservation.
 featured-content: https://ffdweb.org/blog/ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web
 website: https://help.archive.org/help/prelinger-archive/
+active-partnership: true
 image:
   src: /assets/images/partnerlogo_prelinger.png
 seo:

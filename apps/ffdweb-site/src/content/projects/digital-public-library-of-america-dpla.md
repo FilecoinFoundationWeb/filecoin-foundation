@@ -15,6 +15,7 @@ description: Together, DPLA's partners hold 50 million items that represent our
   portion of one of DPLA partners’ collections on Filecoin for a trial period
   and share the results with their community.
 website: https://dp.la/
+active-partnership: true
 image:
   src: /assets/images/dplalogovector-1-.svg
 seo:

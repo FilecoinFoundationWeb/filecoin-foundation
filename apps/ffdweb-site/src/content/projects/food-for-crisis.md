@@ -16,6 +16,7 @@ description: Food for Crisis, a joint initiative between Global Blockchain
   twins on a blockchain. Food for Crisis will integrate with local payment
   systems (e.g., traditional bank transfers, e-vouchers, and mobile money).
 website: www.gbbc.io/food-for-crisis
+active-partnership: true
 image:
   src: /assets/images/food-for-crisis-logo.svg
 seo:

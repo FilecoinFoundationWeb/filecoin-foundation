@@ -12,6 +12,7 @@ description: In partnership with researchers from the University of Maryland’s
   of data using decentralized storage technologies, including Filecoin and IPFS.
 featured-content: https://ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network
 website: https://easierdata.org/
+active-partnership: true
 image:
   src: /assets/images/partnerlogo_easier.png
 seo:

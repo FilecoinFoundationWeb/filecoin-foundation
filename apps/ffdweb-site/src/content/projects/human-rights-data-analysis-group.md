@@ -13,6 +13,7 @@ image:
   src: /assets/images/partnerlogo_hrdag.png
 featured-content: https://ffdweb.org/blog/can-filecoin-be-the-storage-network-for-human-rights-data
 website: https://hrdag.org/
+active-partnership: true
 seo:
   description: "HRDAG collaborates with FFDW to explore decentralized web storage solutions for human rights organizations, building on 30 years of data analysis expertise."
 ---

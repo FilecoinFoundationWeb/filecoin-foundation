@@ -13,10 +13,12 @@ description: WITNESS is an international nonprofit organization that helps
   they live and work.
 featured-content: https://ffdweb.org/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records
 website: https://www.witness.org/
+active-partnership: true
 image:
   src: /assets/images/partnerlogo_witness.png
 seo:
-  description: WITNESS empowers activists and civic journalists to document human
+  description:
+    WITNESS empowers activists and civic journalists to document human
     rights through video technology, exploring decentralized web solutions for
     preserving crucial evidence.
 ---

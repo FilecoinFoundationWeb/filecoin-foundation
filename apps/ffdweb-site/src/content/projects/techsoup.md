@@ -14,6 +14,7 @@ description: >-
 image:
   src: /assets/images/649c81faf4d7738ba43cceaa_image.png
 website: https://www.techsoup.org/
+active-partnership: true
 seo:
   description: "TechSoup's Accelerating Makers project supports early-stage creators in understanding and adopting decentralized technologies for civil society applications."
 ---

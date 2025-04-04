@@ -15,6 +15,7 @@ description: This project between FFDW and the Guardian Project is aimed at
   open-source app publishing platform.
 featured-content: https://ffdweb.org/blog/the-future-of-decentralized-apps-a-q-a-with-guardian-project
 website: https://guardianproject.info/
+active-partnership: true
 image:
   src: /assets/images/partnerlogo_gaurdian.png
 seo:
