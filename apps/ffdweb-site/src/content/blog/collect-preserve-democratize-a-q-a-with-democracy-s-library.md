@@ -3,11 +3,18 @@ title: "Collect, Preserve, Democratize: A Q&A With Democracy’s Library"
 created-on: 2023-05-09T10:05:25.820Z
 updated-on: 2023-05-09T10:05:00.000Z
 published-on: 2023-05-09T10:05:00.000Z
-category: use-cases
+category: interviews
+description: Recently, FFDW spoke with Jamie Joyce, US Project Lead
+  at Democracy's Library, an organization striving to collect and preserve our
+  democracy's data in one place, providing a central repository of veritable
+  information for all stakeholders. Read on for more information about
+  Democracy's Library and its quest to empower the future of government.
 image:
   src: /assets/images/0509-demo-qa.png
 seo:
-  description: "Learn how Democracy's Library is working to preserve and democratize access to government data, creating a centralized repository of vital public information for future generations."
+  description: Learn how Democracy's Library is working to preserve and
+    democratize access to government data, creating a centralized repository of
+    vital public information for future generations.
 ---
 
 Every year, the United States federal government spends [billions of dollars](https://www.whitehouse.gov/wp-content/uploads/2022/08/08-2022-OSTP-Public-Access-Congressional-Report.pdf) producing research, reports, statistics, and data on almost every topic imaginable. This information is critical for government agencies, policymakers at all levels, public and private organizations, journalists, and citizens. Access to historical government records is necessary to create a more efficient, effective, and accountable system where all stakeholders work together to address current needs with an eye toward the future.
