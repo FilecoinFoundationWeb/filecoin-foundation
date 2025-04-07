@@ -64,6 +64,9 @@
   },
   "peerDependencies": {
     "@headlessui/react": "^2.2.0",
+    "@filecoin-foundation/hooks": "0.0.0",
+    "@filecoin-foundation/ui": "0.0.0",
+    "@filecoin-foundation/utils": "0.0.0",
     "@phosphor-icons/react": "^2.1.7",
     "@sentry/nextjs": "^9.9.0",
     "@tailwindcss/postcss": "^4.0.17",
@@ -72,12 +75,13 @@
     "postcss": "^8.5.3",
     "react": "^19.1.0",
     "react-dom": "19.1.0",
+    "schema-dts": "^1.1.5",
     "tailwindcss": "^4.0.5",
     "usehooks-ts": "^3.1.0"
   },
   "dependencies": {
+    "@radix-ui/react-popover": "^1.1.6",
     "@radix-ui/react-tooltip": "^1.1.8",
-    "remove-markdown": "^0.6.0",
     "next-plausible": "^3.12.4"
   }
 }
