@@ -4,11 +4,6 @@ created-on: 2023-05-09T10:05:25.820Z
 updated-on: 2023-05-09T10:05:00.000Z
 published-on: 2023-05-09T10:05:00.000Z
 category: interviews
-description: Recently, FFDW spoke with Jamie Joyce, US Project Lead
-  at Democracy's Library, an organization striving to collect and preserve our
-  democracy's data in one place, providing a central repository of veritable
-  information for all stakeholders. Read on for more information about
-  Democracy's Library and its quest to empower the future of government.
 image:
   src: /assets/images/0509-demo-qa.png
 seo:
