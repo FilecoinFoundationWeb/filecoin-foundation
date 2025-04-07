@@ -15,6 +15,6 @@
   },
   "devDependencies": {
     "frontmatter-markdown-loader": "^3.7.0",
-    "turbo": "^2.4.4"
+    "turbo": "^2.5.0"
   }
 }
