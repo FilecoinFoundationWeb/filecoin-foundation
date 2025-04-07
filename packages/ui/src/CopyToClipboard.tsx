@@ -17,6 +17,7 @@ import { NOTIFICATION_DIALOG_DURATION_MS } from '@filecoin-foundation/utils/cons
 type CopyToClipboardProps = {
   text: string
   notificationTitle: string
+  'aria-label'?: string
 }
 
 const TOUCH_TARGET: TouchTarget = {
@@ -26,6 +27,7 @@ const TOUCH_TARGET: TouchTarget = {
 export function CopyToClipboard({
   text,
   notificationTitle,
+  'aria-label': ariaLabel = 'Copy link to clipboard',
 }: CopyToClipboardProps) {
   const [, copy] = useCopyToClipboard()
   const [isCopied, setIsCopied] = useState(false)
@@ -57,6 +59,7 @@ export function CopyToClipboard({
             TOUCH_TARGET.touchAreaPadding,
           )}
           onClick={() => handleCopy(text)}
+          aria-label={ariaLabel}
         >
           <Icon component={Link} size={32} weight="light" />
         </Button>
