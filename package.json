@@ -16,7 +16,6 @@
     "fix:versions": "syncpack fix-mismatches"
   },
   "devDependencies": {
-    "frontmatter-markdown-loader": "^3.7.0",
     "syncpack": "^13.0.3",
     "turbo": "^2.4.4"
   }
