@@ -59,19 +59,19 @@
     "lint": "eslint . --fix"
   },
   "devDependencies": {
-    "@filecoin-foundation/eslint-config": "*",
-    "@filecoin-foundation/typescript-config": "*"
+    "@filecoin-foundation/eslint-config": "0.0.0",
+    "@filecoin-foundation/typescript-config": "0.0.0"
   },
   "peerDependencies": {
     "@headlessui/react": "^2.2.0",
     "@phosphor-icons/react": "^2.1.7",
-    "@sentry/nextjs": "^8.52.0",
-    "@tailwindcss/postcss": "^4.0.5",
+    "@sentry/nextjs": "^9.9.0",
+    "@tailwindcss/postcss": "^4.0.17",
     "clsx": "^2.1.1",
-    "next": "15.1.6",
-    "postcss": "^8.5.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "next": "15.2.4",
+    "postcss": "^8.5.3",
+    "react": "^19.1.0",
+    "react-dom": "19.1.0",
     "tailwindcss": "^4.0.5",
     "usehooks-ts": "^3.1.0"
   },

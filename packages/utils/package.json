@@ -37,9 +37,9 @@
     "lint": "eslint . --fix"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@filecoin-foundation/eslint-config": "*",
-    "@filecoin-foundation/typescript-config": "*"
+    "typescript": "^5.8.2",
+    "@filecoin-foundation/eslint-config": "0.0.0",
+    "@filecoin-foundation/typescript-config": "0.0.0"
   },
   "peerDependencies": {
     "camelcase-keys": "^9.1.3",
