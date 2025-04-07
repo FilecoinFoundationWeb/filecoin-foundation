@@ -1,5 +1,5 @@
-import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
-import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
+import { getAllMarkdownData } from './getAllMarkdownData'
+import { getMarkdownData } from './getMarkdownData'
 import removeMarkdown from 'remove-markdown'
 import { DigestArticleFrontmatterSchema } from './schemas/DigestArticleFrontmatterSchema'
 

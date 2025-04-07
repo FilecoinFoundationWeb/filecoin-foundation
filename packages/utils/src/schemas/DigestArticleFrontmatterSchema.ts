@@ -1,5 +1,5 @@
-import { DynamicBaseDataSchema } from '@filecoin-foundation/utils/schemas/DynamicDataBaseSchema'
-import { ImagePropsSchema } from '@filecoin-foundation/utils/schemas/ImagePropsSchema'
+import { DynamicBaseDataSchema } from './DynamicDataBaseSchema'
+import { ImagePropsSchema } from './ImagePropsSchema'
 import { z } from 'zod'
 
 export const DigestArticleFrontmatterSchema = DynamicBaseDataSchema.extend({

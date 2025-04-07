@@ -1,8 +1,5 @@
-import {
-  getCMSFieldOptions,
-  getCollectionConfig,
-} from '@filecoin-foundation/utils/cmsConfigUtils'
-import { mapCMSOptionsToListboxFormat } from '@filecoin-foundation/utils/mapCMSOptionsToListboxFormat'
+import { getCMSFieldOptions, getCollectionConfig } from './cmsConfigUtils'
+import { mapCMSOptionsToListboxFormat } from './mapCMSOptionsToListboxFormat'
 
 export type CMSFieldOptionsAndValidIdsParams<CollectionName extends string> = {
   collectionName: CollectionName

@@ -1,7 +1,7 @@
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import { useQueryState, parseAsString } from 'nuqs'
 
-import { useResetPageQuery } from '@filecoin-foundation/hooks/useResetPageQuery'
+import { useResetPageQuery } from '../useResetPageQuery'
 
 type ListboxQueryStateConfig = {
   key: string
