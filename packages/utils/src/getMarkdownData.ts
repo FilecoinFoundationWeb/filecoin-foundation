@@ -5,12 +5,11 @@ import {
   handleFileNotFound,
   readFileContents,
   checkPathExists,
-} from '@filecoin-foundation/utils/fileUtils'
-import { logZodError } from '@filecoin-foundation/utils/zodUtils'
+} from './fileUtils'
+import { logZodError } from './zodUtils'
 import convertObjectKeysToCamelCase from 'camelcase-keys'
 import matter from 'gray-matter'
 import { ZodError, ZodObject, type ZodRawShape } from 'zod'
-
 
 type GetMarkdownDataArgs<T extends ZodRawShape> = {
   slug: string

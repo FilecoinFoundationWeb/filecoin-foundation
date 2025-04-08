@@ -1,4 +1,4 @@
-import type { DynamicBaseData } from '@filecoin-foundation/utils/schemas/DynamicDataBaseSchema'
+import type { DynamicBaseData } from './schemas/DynamicDataBaseSchema'
 
 type GenericEntryData = {
   updatedOn: DynamicBaseData['updated-on']
