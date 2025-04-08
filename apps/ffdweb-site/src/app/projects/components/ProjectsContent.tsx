@@ -136,6 +136,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
               }}
               title={{
                 text: title,
+                tag: 'h2',
               }}
             />
           )

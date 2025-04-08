@@ -123,6 +123,7 @@ export function BlogContent({ posts }: BlogContentProps) {
               }}
               title={{
                 text: title,
+                tag: 'h2',
               }}
             />
           )

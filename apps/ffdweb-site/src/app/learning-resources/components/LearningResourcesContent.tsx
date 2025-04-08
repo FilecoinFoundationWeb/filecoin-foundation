@@ -162,6 +162,7 @@ export function LearningResourcesContent({
               }}
               title={{
                 text: title,
+                tag: 'h2',
               }}
             />
           )
