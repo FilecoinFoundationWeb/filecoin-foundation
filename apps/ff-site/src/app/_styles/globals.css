@@ -149,7 +149,7 @@
 
   /* CARD */
   .card {
-    @apply rounded-lg bg-brand-700/30;
+    @apply rounded-lg bg-brand-700/30 hover:bg-brand-400/20;
 
     &.card-border--lighter {
       @apply border-brand-300;
@@ -192,7 +192,7 @@
 
   /* KEY MEMBER CARD */
   .key-member-card {
-    @apply rounded-lg border border-brand-500 p-1;
+    @apply rounded-lg border border-brand-500 p-1 hover:bg-brand-400/20;
 
     .key-member-card-image {
       @apply rounded-sm;
