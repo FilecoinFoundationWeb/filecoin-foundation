@@ -38,7 +38,6 @@ export function ProgramSection({ title, kicker, events }: ProgramSectionProps) {
             <Card
               key={title}
               as="article"
-              title={title}
               description={description ? { text: description } : undefined}
               borderColor="light"
               metaData={getMetaData({
@@ -46,6 +45,9 @@ export function ProgramSection({ title, kicker, events }: ProgramSectionProps) {
                 endDate,
                 location,
               })}
+              title={{
+                text: title,
+              }}
               {...ctaProps}
             />
           )

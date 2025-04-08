@@ -148,7 +148,6 @@ export function LearningResourcesContent({
             <Card
               key={slug}
               as="article"
-              title={title}
               description={{ text: description }}
               tags={[{ text: categoryLabel }, { text: resourceTypeLabel }]}
               cta={{
@@ -160,6 +159,9 @@ export function LearningResourcesContent({
                   position: 'trailing',
                   weight: 'bold',
                 },
+              }}
+              title={{
+                text: title,
               }}
             />
           )

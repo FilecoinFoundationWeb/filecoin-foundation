@@ -74,7 +74,6 @@ export default async function Home() {
               <Card
                 key={slug}
                 as="article"
-                title={title}
                 description={{ text: description, isClamped: true }}
                 cta={{
                   href: `${PATHS.PROJECTS.path}/${slug}`,
@@ -91,6 +90,9 @@ export default async function Home() {
                     md: '470px',
                     lg: '360px',
                   }),
+                }}
+                title={{
+                  text: title,
                 }}
               />
             )
@@ -153,7 +155,6 @@ export default async function Home() {
               <Card
                 key={slug}
                 as="article"
-                title={title}
                 description={{ text: description, isClamped: true }}
                 metaData={[formatDate(publishedOn)]}
                 tags={[{ text: categoryLabel }]}
@@ -172,6 +173,9 @@ export default async function Home() {
                     md: '470px',
                     lg: '360px',
                   }),
+                }}
+                title={{
+                  text: title,
                 }}
               />
             )

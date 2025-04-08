@@ -34,7 +34,6 @@ export function FeaturedBlogPosts({
               as="article"
               metaData={[formatDate(publishedOn)]}
               tags={[{ text: categoryLabel }]}
-              title={title}
               description={{ text: description, isClamped: true }}
               cta={{
                 href: `${PATHS.BLOG.path}/${slug}`,
@@ -49,6 +48,9 @@ export function FeaturedBlogPosts({
                   sm: '350px',
                   md: '480px',
                 }),
+              }}
+              title={{
+                text: title,
               }}
             />
           )

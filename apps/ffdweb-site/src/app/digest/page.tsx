@@ -48,7 +48,6 @@ export default async function Digest() {
               <Card
                 key={slug}
                 as="article"
-                title={title}
                 avatars={authors}
                 description={{ text: description, isClamped: true }}
                 tags={[{ text: `Article ${articleNumber}` }]}
@@ -66,6 +65,9 @@ export default async function Digest() {
                     md: '470px',
                     lg: '360px',
                   }),
+                }}
+                title={{
+                  text: title,
                 }}
               />
             )

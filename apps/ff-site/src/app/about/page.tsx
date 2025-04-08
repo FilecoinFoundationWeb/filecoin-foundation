@@ -116,7 +116,6 @@ export default function About() {
               >
                 <Card
                   as="div"
-                  title={title}
                   description={{ text: description }}
                   image={
                     image && {
@@ -136,6 +135,9 @@ export default function About() {
                     icon: {
                       component: Files,
                     },
+                  }}
+                  title={{
+                    text: title,
                   }}
                 />
               </li>

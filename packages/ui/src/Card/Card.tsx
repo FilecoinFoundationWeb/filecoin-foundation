@@ -18,7 +18,10 @@ import { CardLink } from './CardLink'
 
 export type CardProps = {
   as: 'li' | 'article' | 'div'
-  title: CardTitleProps['children']
+  title: {
+    text: CardTitleProps['children']
+    tag?: CardTitleProps['tag']
+  }
   tags?: TagGroupProps['tags']
   metaData?: MetaDataType
   description?: CardDescriptionProps
@@ -48,8 +51,8 @@ export function Card({
 }: CardProps) {
   return (
     <Tag
-      aria-label={title}
-      title={title}
+      aria-label={title.text}
+      title={title.text}
       className={clsx(
         'card relative h-full border backdrop-blur-xl',
         borderStyles[borderColor],
@@ -60,7 +63,7 @@ export function Card({
       <div className="flex flex-col gap-4 p-4">
         {tags && <TagGroup tags={tags} />}
         {metaData && <Meta metaData={metaData} />}
-        <CardTitle>{title}</CardTitle>
+        <CardTitle tag={title.tag}>{title.text}</CardTitle>
 
         <div className={clsx(cta && 'mb-10')}>
           {description && <CardDescription {...description} />}

@@ -112,7 +112,6 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
             <Card
               key={slug}
               as="article"
-              title={title}
               description={{ text: description, isClamped: true }}
               metaData={[formatDate(publishedOn)]}
               tags={[{ text: categoryLabel }]}
@@ -134,6 +133,9 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
                   md: '470px',
                   lg: '360px',
                 }),
+              }}
+              title={{
+                text: title,
               }}
             />
           )
