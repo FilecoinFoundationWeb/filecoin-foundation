@@ -2,7 +2,7 @@ import eslintJs from '@eslint/js'
 import eslintTs from 'typescript-eslint'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import eslintPluginTurbo from 'eslint-plugin-turbo'
-import 'eslint-plugin-only-warn'
+import eslintPluginOnlyWarn from 'eslint-plugin-only-warn'
 
 /** @type {import("eslint").Linter.Config} */
 export const config = [
@@ -16,6 +16,11 @@ export const config = [
     rules: {
       'turbo/no-undeclared-env-vars': 'warn',
       eqeqeq: 'warn',
+    },
+  },
+  {
+    plugins: {
+      eslintPluginOnlyWarn,
     },
   },
   {

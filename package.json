@@ -17,6 +17,6 @@
   },
   "devDependencies": {
     "syncpack": "^13.0.3",
-    "turbo": "^2.4.4"
+    "turbo": "^2.5.0"
   }
 }
