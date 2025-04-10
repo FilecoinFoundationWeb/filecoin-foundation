@@ -47,7 +47,7 @@ export function ShareArticle({
           <CopyToClipboard
             text={articleUrl}
             notificationTitle="Link copied to clipboard!"
-            aria-label={`Copy link to article: ${articleTitle}`}
+            ariaLabel={`Copy article link: ${articleTitle}`}
           />
         </li>
         {socialLinksWithIcons.map(({ label, href, icon }) => (
