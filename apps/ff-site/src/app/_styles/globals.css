@@ -33,6 +33,10 @@
   border-color: transparent;
 }
 
+@utility bg-brand-overlay {
+  background-color: theme('colors.brand.400 / 20');
+}
+
 @utility prose {
   --tw-prose-body: theme('colors.brand.100');
   --tw-prose-headings: theme('colors.brand.100');
@@ -149,7 +153,7 @@
 
   /* CARD */
   .card {
-    @apply rounded-lg bg-brand-700/30 hover:bg-brand-400/20;
+    @apply hover:bg-brand-overlay rounded-lg bg-brand-700/30;
 
     &.card-border--lighter {
       @apply border-brand-300;
@@ -192,7 +196,7 @@
 
   /* KEY MEMBER CARD */
   .key-member-card {
-    @apply rounded-lg border border-brand-500 p-1 hover:bg-brand-400/20;
+    @apply hover:bg-brand-overlay rounded-lg border border-brand-500 p-1;
 
     .key-member-card-image {
       @apply rounded-sm;
