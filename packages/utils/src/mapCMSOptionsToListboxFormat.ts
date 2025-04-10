@@ -1,4 +1,4 @@
-import type { CMSFieldOption } from '@filecoin-foundation/utils/types/cmsConfig'
+import type { CMSFieldOption } from './types/cmsConfig'
 
 export function mapCMSOptionsToListboxFormat<T extends CMSFieldOption>(
   options: Array<T>,

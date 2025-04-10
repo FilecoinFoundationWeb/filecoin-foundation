@@ -2,11 +2,10 @@
 
 import path from 'path'
 
-import { extractSlugFromFilename } from '@filecoin-foundation/utils/fileUtils'
-import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
+import { extractSlugFromFilename } from './fileUtils'
+import { getMarkdownData } from './getMarkdownData'
 import glob from 'fast-glob'
 import { ZodObject, type ZodRawShape } from 'zod'
-
 
 export type GetAllMarkdownDataArgs<T extends ZodRawShape> = {
   directoryPath: string

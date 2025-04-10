@@ -1,16 +1,16 @@
 ---
-title: >-
-  Announcing Filecoin Foundation for the Decentralized Web’s First Open Request
-  for Proposals
-created-on: "2023-04-21T07:15:31.358Z"
-updated-on: "2023-04-21T07:18:12.889Z"
-published-on: "2023-04-21T08:01:04.314Z"
-category: projects
+title: Announcing Filecoin Foundation for the Decentralized Web’s First Open
+  Request for Proposals
+created-on: 2023-04-21T07:15:31.358Z
+updated-on: 2023-04-21T07:18:12.889Z
+published-on: 2023-04-21T08:01:04.314Z
+category: updates
 image:
-  src: >-
-    /assets/images/64423813d1b0259171f6ef5e_ffdw-request-for-proposals.png
+  src: /assets/images/64423813d1b0259171f6ef5e_ffdw-request-for-proposals.png
 seo:
-  description: "FFDW launches open RFP seeking projects to preserve humanity's vital information through development, education, and research. Funding available up to $1.75M for innovative proposals."
+  description: FFDW launches open RFP seeking projects to preserve humanity's
+    vital information through development, education, and research. Funding
+    available up to $1.75M for innovative proposals.
 ---
 
 Today, Filecoin Foundation for the Decentralized Web (FFDW) is launching an open request for proposals (RFP). We’re looking for projects that support our core mission — to ensure the permanent preservation of humanity’s most important information. We do this by stewarding the development of open-source software and open protocols.
