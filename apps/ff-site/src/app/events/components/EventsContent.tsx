@@ -142,7 +142,6 @@ export default function EventsContent({
                     <Card
                       key={slug}
                       as="article"
-                      title={title}
                       borderColor="light"
                       tags={[{ text: tagLabel }]}
                       description={
@@ -178,6 +177,9 @@ export default function EventsContent({
                         icon: {
                           component: MagnifyingGlass,
                         },
+                      }}
+                      title={{
+                        text: title,
                       }}
                     />
                   )

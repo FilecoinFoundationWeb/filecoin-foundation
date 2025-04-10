@@ -98,10 +98,12 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
                 <Card
                   key={index}
                   as="article"
-                  title={title}
                   metaData={[formatDate(startDate), city]}
                   borderColor="light"
                   cta={ctaProps}
+                  title={{
+                    text: title,
+                  }}
                 />
               )
             })}

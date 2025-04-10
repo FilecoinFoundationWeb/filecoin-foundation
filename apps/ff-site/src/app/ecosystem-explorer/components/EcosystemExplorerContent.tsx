@@ -133,7 +133,6 @@ export function EcosystemExplorerContent({
                     <Card
                       key={slug}
                       as="article"
-                      title={title}
                       description={{ text: description }}
                       tags={[{ text: category.label }]}
                       cta={{
@@ -155,6 +154,9 @@ export function EcosystemExplorerContent({
                           md: '440px',
                           lg: '280px',
                         }),
+                      }}
+                      title={{
+                        text: title,
                       }}
                     />
                   )

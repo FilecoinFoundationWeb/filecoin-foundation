@@ -96,9 +96,11 @@ export default async function Events(props: Props) {
             <div key={title} className="h-48 md:h-56">
               <Card
                 as="div"
-                title={title}
                 description={{ text: description }}
                 cta={cta}
+                title={{
+                  text: title,
+                }}
               />
             </div>
           ))}
