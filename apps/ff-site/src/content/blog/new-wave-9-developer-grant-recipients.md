@@ -19,7 +19,7 @@ Filecoin Foundation and Protocol Labs award funding on a monthly basis to critic
 
 For Wave 9, we’ve reviewed and awarded the following projects aligned with our strategic goals in providing a healthier ecosystem.
 
-- [Lotus Farcaster v3](https://github.com/s0nik42/devgrants/blob/master/open-grants/lotus-farcaster-v3.md)
+- [[Lotus](/ecosystem-explorer/lotus) Farcaster v3](https://github.com/s0nik42/devgrants/blob/master/open-grants/lotus-farcaster-v3.md)
 
   This new release for Farcaster, which is already used by more than 400 Filecoin miners worldwide, will offer more support to the new lotus split mode architecture and make it reusable for other projects by providing all the functions in a python module.
 

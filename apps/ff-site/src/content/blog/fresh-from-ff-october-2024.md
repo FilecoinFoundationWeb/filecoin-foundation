@@ -9,12 +9,12 @@ description: "Check out the latest updates about what Filecoin Foundation
 image:
   src: /assets/images/0215-ff-19-.webp
 seo:
-  description: Filecoin Foundation teams up with Aethir, the Filecoin Ecosystem
+  description: Filecoin Foundation teams up with [Aethir](/ecosystem-explorer/aethir), the Filecoin Ecosystem
     Digest is published, and DocumentCloud is now using Filecoin to ensure
     long-term preservation and distribution of documents.
 ---
 
-[Filecoin Foundation Teams up with Aethir.](https://x.com/Filecoin/status/1837192527130059255) Announced at FIL Singapore, Aethir (decentralized GPU cloud computing) and FF are collaborating to address GPU scarcity and enhance AI-driven data security. [Aethir](https://www.aethir.com/) announced support for the Filecoin network, offering advanced GPU leasing capabilities to improve data processing and storage efficiency.
+[Filecoin Foundation Teams up with [Aethir](/ecosystem-explorer/aethir).](https://x.com/Filecoin/status/1837192527130059255) Announced at FIL Singapore, [Aethir](/ecosystem-explorer/aethir) (decentralized GPU cloud computing) and FF are collaborating to address GPU scarcity and enhance AI-driven data security. [[Aethir](/ecosystem-explorer/aethir)](https://www.aethir.com/) announced support for the Filecoin network, offering advanced GPU leasing capabilities to improve data processing and storage efficiency.
 
 [The Filecoin Ecosystem Digest: All Systems Go](/digest) is live! The inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and sustainable data centers. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future.
 
@@ -50,4 +50,4 @@ seo:
 - Join us for the first-ever Filecoin Hacker House. ​FilOz, Polaris, FIL-B; and Filecoin Foundation​ are excited to invite passionate builders, developers, founders, and innovators to the first-ever Filecoin Hacker House in Chiang Mai, Thailand, from October 26 to November 3. This immersive 9-day event is an invitation-only gathering focused on fostering collaboration, growth, and community within the Filecoin ecosystem. [Apply to attend](https://lu.ma/j49yitcw).
 - Read the latest blog: [Harvesting Change: Filecoin’s Role in Addressing Agricultural Challenges](/blog/harvesting-change-filecoin-s-role-in-addressing-agricultural-challenges-in-africa). Filecoin Orbit ambassador Allan Mang'eni shares an interview with FF about the potential impact of Filecoin on the rural agricultural sector, and how blockchain is opening up new frontiers for sustainable farming practices and supply chain management.
 - Join us for the FIL Bangkok Network Base at FIL Dev Summit. Catch dynamic programming, major announcements, and networking opportunities before Devcon, Nov. 6-8. The summit is a place for meaningful and impactful conversations that help push Filecoin forward. [Register today](https://fildev.io/FDS-5) for early bird pricing.
-- Thanks for joining us at FIL Singapore! Hosted by [Kindred AI](https://www.kindredlabs.ai), formerly MetaPals, FIL Singapore: [Web3 Wonderland](https://x.com/kindred_ai/status/1838431564285493268) explored the intersection of Web3 and AI. Project founders, developers, and Web3 enthusiasts came together to gain a comprehensive understanding of the current state and future trajectory of the Filecoin ecosystem.
+- Thanks for joining us at FIL Singapore! Hosted by [Kindred AI](https://www.kindredlabs.ai), formerly [MetaPals](/ecosystem-explorer/metapals), FIL Singapore: [Web3 Wonderland](https://x.com/kindred_ai/status/1838431564285493268) explored the intersection of Web3 and AI. Project founders, developers, and Web3 enthusiasts came together to gain a comprehensive understanding of the current state and future trajectory of the Filecoin ecosystem.

@@ -111,7 +111,7 @@ Sandra is a proponent for ‘human-centric tech.’ She left a career in investm
 
 ![](/assets/images/643e68c10a5fe4385597f1b5_1-axddaq_vs0-mux-hurxp_a.png)
 
-Alex leads Murmuration Labs, a project aimed at fostering trust within distributed blockchain projects, including the Filecoin network. He serves as a content policy advisor for publishing platform Medium (where he spent four years as Head of Legal and Head of Trust and Safety) and on the board of the Responsible Data Economy Foundation. As lead advisor to the Digital Trust and Safety Partnership, he helped launch the first industry-led initiative for creating best practices for online trust and safety.
+Alex leads [Murmuration Labs](/ecosystem-explorer/murmuration-labs), a project aimed at fostering trust within distributed blockchain projects, including the Filecoin network. He serves as a content policy advisor for publishing platform Medium (where he spent four years as Head of Legal and Head of Trust and Safety) and on the board of the Responsible Data Economy Foundation. As lead advisor to the Digital Trust and Safety Partnership, he helped launch the first industry-led initiative for creating best practices for online trust and safety.
 
 > People want to make their own decisions about what content they interact with and about how they distribute and share it. Only the decentralized web has the potential to fully distribute decisionmaking in this area and empower ordinary web users to choose for themselves. I’m incredibly excited to join Filecoin Foundation and help change the way the world shares content.
 
