@@ -26,7 +26,7 @@ FVM Open Hack Days are hackathons hosted by Filecoin Orbit members. These events
 
 The upcoming FVM Open Hack Days will take place around the world:
 
-**2/11:** FVM x MetaPals Open Hack Day in [Jakarta, Indonesia](https://lu.ma/hhv2g4l4)
+**2/11:** FVM x [MetaPals](/ecosystem-explorer/metapals) Open Hack Day in [Jakarta, Indonesia](https://lu.ma/hhv2g4l4)
 
 **2/12:** FVM x The Phoenix Guild Open Hack Day in [Pune, India](https://lu.ma/fvmpune)
 

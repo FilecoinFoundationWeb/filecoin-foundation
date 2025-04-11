@@ -29,7 +29,7 @@ seo:
   <figcaption><a href="https://soundcloud.com/filecoin-foundation/decentralizing-art-a-deep-dive-into-waterlilyais-use-of-fvm-and-ai" target="_blank" title="Filecoin Foundation · Decentralizing Art: A Deep Dive into Waterlily.ai's Use of FVM and AI">Filecoin Foundation · Decentralizing Art: A Deep Dive into Waterlily.ai's Use of FVM and AI</a></figcaption>
 </figure>
 
-[Waterlily.ai](http://waterlily.ai) is a Filecoin-powered generative AI tool that allows digital artists to distribute their work while addressing the pain point of compensation when their art is used in AI training models.
+[Waterlily.ai](/ecosystem-explorer/waterlily-ai) is a Filecoin-powered generative AI tool that allows digital artists to distribute their work while addressing the pain point of compensation when their art is used in AI training models.
 
 In the recent episode of [The Decentralists](https://twitter.com/i/spaces/1LyxBqNjXVkJN), Filecoin Foundations’ Ally Haire and Aaron Stanley delved into the workings of Waterlily, and discussed the way we perceive AI-generated art. Waterlily.ai is not just another generative AI tool; it is a platform that is built on the principles of ethical AI, ensuring that original creators of artwork are compensated for their work.
 
@@ -37,7 +37,7 @@ The tool uses generative AI to create images in the style of some of the world�
 
 However, unlike other AI tools that often use pre-existing images without proper attribution or compensation to the original creator, Waterlily.ai implements a new approach. It compensates original creators of artwork with micropayments whenever a user selects their style to create a new [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion) artwork from a prompt.
 
-Haire explained the function of the Filecoin network and the [Filecoin Virtual Machine](https://fvm.filecoin.io/) (FVM) within the framework of Waterlily.ai. Rather than use AI endpoints to pull data onto the Filecoin network, Waterlily.ai Instead, employs its own stable diffusion scripts and trains unique artist models via Lilypad, which is also used to generate images from prompts. The Filecoin Virtual Machine (FVM) is utilized for payments and on-chain transparency, while [Bacalhau](https://www.bacalhau.org/) is used for decentralized machine learning models and verifiable off-chain computation.
+Haire explained the function of the Filecoin network and the [Filecoin Virtual Machine](https://fvm.filecoin.io/) (FVM) within the framework of Waterlily.ai. Rather than use AI endpoints to pull data onto the Filecoin network, Waterlily.ai Instead, employs its own stable diffusion scripts and trains unique artist models via Lilypad, which is also used to generate images from prompts. The Filecoin Virtual Machine (FVM) is utilized for payments and on-chain transparency, while [Bacalhau](/ecosystem-explorer/bacalhau) is used for decentralized machine learning models and verifiable off-chain computation.
 
 Haire further explained the importance of decentralizing AI, "If we look at decentralized technologies, one of the ways that they are really powerful is that they can reduce costs. So Filecoin itself as a storage network is way cheaper than storing on AWS or some of the equivalent cloud providers, for example. And that's because of the market mechanics, these cryptoeconomics that we've put into the system that matches demand and input."
 

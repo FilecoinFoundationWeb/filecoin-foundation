@@ -20,9 +20,9 @@ The creator economy is valued at more than [$100 billion](https://www.zippia.com
 
 Fair and timely compensation for content has become increasingly difficult for content creators, particularly as the market becomes more saturated. Decentralized technologies help artists monetize their work and connect with fans in new ways.
 
-[Numbers Protocol](https://www.numbersprotocol.io/) is focused on putting the power back in the hands of creators to address the issue of provenance across the digital media landscape. Founded in 2019, Numbers is a blockchain-based interoperate, cross-network, and transparent trust layer that addresses problems like misinformation, content manipulation, and intellectual property (IP) governance. It creates an immutable record of attribution and ownership of public and private assets, such as images, videos, and NFTs, to verify the authenticity and value of digital collections.
+[Numbers Protocol](/ecosystem-explorer/numbers-protocol) is focused on putting the power back in the hands of creators to address the issue of provenance across the digital media landscape. Founded in 2019, Numbers is a blockchain-based interoperate, cross-network, and transparent trust layer that addresses problems like misinformation, content manipulation, and intellectual property (IP) governance. It creates an immutable record of attribution and ownership of public and private assets, such as images, videos, and NFTs, to verify the authenticity and value of digital collections.
 
-The Numbers Protocol team originally discovered Filecoin through work with their key partner, [Starling Lab](https://www.starlinglab.org/). Numbers Protocol has also been able to further strengthen and build upon their commitment to develop groundbreaking digital media solutions through their membership in the Protocol Labs Accelerator Program.
+The Numbers Protocol team originally discovered Filecoin through work with their key partner, [Starling Lab](/ecosystem-explorer/starling-lab). Numbers Protocol has also been able to further strengthen and build upon their commitment to develop groundbreaking digital media solutions through their membership in the Protocol Labs Accelerator Program.
 
 ## Building A Movement
 

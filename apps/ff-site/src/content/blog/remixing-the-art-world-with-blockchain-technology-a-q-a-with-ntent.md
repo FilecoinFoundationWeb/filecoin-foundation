@@ -12,7 +12,7 @@ image:
 category: interviews
 seo:
   description:
-    A Q&A with Ntent on how blockchain technology is remixing the art world.
+    A Q&A with [Ntent](/ecosystem-explorer/ntent) on how blockchain technology is remixing the art world.
     Explore their insights.
 ---
 

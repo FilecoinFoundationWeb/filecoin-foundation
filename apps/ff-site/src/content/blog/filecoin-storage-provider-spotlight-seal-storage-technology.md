@@ -1,7 +1,7 @@
 ---
-title: Filecoin Storage Provider Spotlight — Seal Storage Technology
+title: Filecoin Storage Provider Spotlight — [Seal Storage](/ecosystem-explorer/seal-storage) Technology
 description: >-
-  Seal Storage Technology Inc was founded to accelerate the adoption of
+  [Seal Storage](/ecosystem-explorer/seal-storage) Technology Inc was founded to accelerate the adoption of
   decentralized cloud storage. Seal’s advanced infrastructure and services
   enable large organizations to seamlessly store files on the Filecoin network.
 image:
@@ -12,13 +12,13 @@ published-on: "2023-04-21T07:33:56.200Z"
 category: ecosystem
 seo:
   description:
-    Seal Storage Technology's role and contributions to the Filecoin storage
+    [Seal Storage](/ecosystem-explorer/seal-storage) Technology's role and contributions to the Filecoin storage
     network. Discover more.
 ---
 
 _This is one in a series of periodic blog posts devoted to profiling Filecoin storage providers. In these posts, we examine what they bring to — and the benefits they derive from — the Filecoin ecosystem._
 
-[Seal Storage Technology Inc](https://www.sealstorage.io/) was founded to accelerate the adoption of decentralized cloud storage. Seal’s advanced infrastructure and services enable large organizations to seamlessly store files on the Filecoin network. Seal is revolutionizing the [$76 billion cloud storage market](https://www.fortunebusinessinsights.com/cloud-storage-market-102773) by providing an immutable, green, and affordable home for data.
+[[Seal Storage](/ecosystem-explorer/seal-storage) Technology Inc](https://www.sealstorage.io/) was founded to accelerate the adoption of decentralized cloud storage. Seal’s advanced infrastructure and services enable large organizations to seamlessly store files on the Filecoin network. Seal is revolutionizing the [$76 billion cloud storage market](https://www.fortunebusinessinsights.com/cloud-storage-market-102773) by providing an immutable, green, and affordable home for data.
 
 Led by a team with over 100 years of experience in enterprise data storage from Seagate, Oracle, Cisco, and more, Seal has already established itself as a top storage provider in North America, with over 20PB of capacity across the US and Canada — and growing!
 

@@ -74,7 +74,7 @@ A look at projects supported by FF and Filecoin Foundation for the Decentralized
 - **Flickr Foundation** focuses on preserving digital heritage by archiving millions of photographs shared on the Flickr platform, ensuring visual culture remains accessible for future generations.
 - **Internet Archive**, best known for its Wayback Machine, is instrumental in preserving the web’s history by creating an extensive archive of web pages, allowing users to access snapshots of websites over time.
 - **Prelinger Archives** specializes in preserving historical films and ephemeral media, contributing to a comprehensive audiovisual record of 20th-century culture.
-- **Starling Lab** pioneers the use of decentralized technologies to ensure the permanence and integrity of digital records, tackling both the technological and ethical challenges of preserving digital content.
+- **[Starling Lab](/ecosystem-explorer/starling-lab)** pioneers the use of decentralized technologies to ensure the permanence and integrity of digital records, tackling both the technological and ethical challenges of preserving digital content.
 
 These findings highlight the urgent need for broader awareness of the fragility of online content and the importance of web preservation. As digital archivists, developers, and users, we must continue to support initiatives that safeguard the web’s legacy. The "Not Your Parents' Web" project, serves as a powerful reminder of how quickly the web can change — and how easily its history can be lost if we do not act.
 

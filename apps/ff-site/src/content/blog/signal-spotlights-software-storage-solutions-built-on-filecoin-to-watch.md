@@ -21,23 +21,23 @@ There are dozens of ways to store data on Filecoin. From user-friendly mobile ap
 
 As a continuation of Filecoin Foundation’s recent outline of [key initiatives and community involvement to drive widespread decentralized storage adoption](/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024), let’s explore some of the growing software services making a big impact in the Filecoin ecosystem.
 
-## Lighthouse
+## [Lighthouse](/ecosystem-explorer/lighthouse)
 
-[Lighthouse](/ecosystem-explorer/lighthouse), a perpetual data storage solution built on the Filecoin network, lets users make storage deals once, and store their files perpetually. Lighthouse incorporates encryption features and access control mechanisms to enhance data security and privacy.
+[[Lighthouse](/ecosystem-explorer/lighthouse)](/ecosystem-explorer/lighthouse), a perpetual data storage solution built on the Filecoin network, lets users make storage deals once, and store their files perpetually. [Lighthouse](/ecosystem-explorer/lighthouse) incorporates encryption features and access control mechanisms to enhance data security and privacy.
 
-Lighthouse focuses on serving as a decentralized storage layer for Web3 projects and applications across various sectors like NFTs, AI, and DePIN. The platform aims to cater to the storage requirements of blockchain ecosystems by offering tailored services aligned with the principles of decentralization.
+[Lighthouse](/ecosystem-explorer/lighthouse) focuses on serving as a decentralized storage layer for Web3 projects and applications across various sectors like NFTs, AI, and DePIN. The platform aims to cater to the storage requirements of blockchain ecosystems by offering tailored services aligned with the principles of decentralization.
 
-**What’s new with Lighthouse?** Eternal AI, a Bitcoin L2 blockchain powered by Bitcoin Virtual Machine designed explicitly for executing AI smart contracts and storing AI models, will use Filecoin’s scalable storage layer via Lighthouse for storing AI models. [Learn more](https://twitter.com/Filecoin/status/1773439183236849799).
+**What’s new with [Lighthouse](/ecosystem-explorer/lighthouse)?** Eternal AI, a Bitcoin L2 blockchain powered by Bitcoin Virtual Machine designed explicitly for executing AI smart contracts and storing AI models, will use Filecoin’s scalable storage layer via [Lighthouse](/ecosystem-explorer/lighthouse) for storing AI models. [Learn more](https://twitter.com/Filecoin/status/1773439183236849799).
 
-## CIDgravity
+## [CIDgravity](/ecosystem-explorer/cidgravity)
 
-[CIDgravity](/ecosystem-explorer/cidgravity) is a marketplace streamlining enterprise and ISV data onboarding onto Filecoin, providing a cost-effective and automated pathway using a zero-knowledge solution. With over 38 PiB of live data and 44 million transactions across 200 miners globally, CIDgravity is a premier data onboarding solution within the Filecoin ecosystem, driving the adoption of decentralized storage.
+[[CIDgravity](/ecosystem-explorer/cidgravity)](/ecosystem-explorer/cidgravity) is a marketplace streamlining enterprise and ISV data onboarding onto Filecoin, providing a cost-effective and automated pathway using a zero-knowledge solution. With over 38 PiB of live data and 44 million transactions across 200 miners globally, [CIDgravity](/ecosystem-explorer/cidgravity) is a premier data onboarding solution within the Filecoin ecosystem, driving the adoption of decentralized storage.
 
-CIDgravity focuses on deal matching and tracking while enabling direct data access between clients and storage providers in the Filecoin ecosystem. With 540 clients served, CID Gravity offers a comprehensive pricing and client management solution tailored for Filecoin storage providers.
+[CIDgravity](/ecosystem-explorer/cidgravity) focuses on deal matching and tracking while enabling direct data access between clients and storage providers in the Filecoin ecosystem. With 540 clients served, CID Gravity offers a comprehensive pricing and client management solution tailored for Filecoin storage providers.
 
-CIDgravity is a great tool for enterprises and independent software vendors looking to onboard and store extensive data volumes. Platform features include real-time service provider availability tracking, customized reputation scoring, and tailored price-matching algorithms.
+[CIDgravity](/ecosystem-explorer/cidgravity) is a great tool for enterprises and independent software vendors looking to onboard and store extensive data volumes. Platform features include real-time service provider availability tracking, customized reputation scoring, and tailored price-matching algorithms.
 
-**What’s new with CIDgravity?** With the launch of the [CIDgravity Gateway](https://www.cidgravity.com/), clients can now find the right storage providers and onboard data onto Filecoin easily.
+**What’s new with [CIDgravity](/ecosystem-explorer/cidgravity)?** With the launch of the [[CIDgravity](/ecosystem-explorer/cidgravity) Gateway](https://www.cidgravity.com/), clients can now find the right storage providers and onboard data onto Filecoin easily.
 
 ## GhostDrive
 
@@ -67,10 +67,10 @@ Through [Datadrop](https://www.decentrally.cloud/datadrop/) and [Filecoin S3](ht
 
 **What’s new with Decentrally?** Using its S3 CLI, Decentrally can streamline workflows with its intuitive S3-compatible API and IPFS integration, allowing for a seamless transition of Web2 apps to decentralized Web3 storage.
 
-## Titan Storage
+## [Titan Storage](/ecosystem-explorer/titan-storage)
 
-Titan Network is a digital resource network that incentivizes matching community idle resources with global demand, making it easy for everyone to leverage the power of DePIN services and participate in the construction of the Internet of Value. Right now, Titan Network is building a DePIN platform for aggregating digital resources like compute, storage, and bandwidth.
+[Titan Network](/ecosystem-explorer/titan-network) is a digital resource network that incentivizes matching community idle resources with global demand, making it easy for everyone to leverage the power of DePIN services and participate in the construction of the Internet of Value. Right now, [Titan Network](/ecosystem-explorer/titan-network) is building a DePIN platform for aggregating digital resources like compute, storage, and bandwidth.
 
-For the storage element of the platform, [Titan Network](https://storage.titannet.io/) is behind [Titan Storage](/ecosystem-explorer/titan-storage), a hot data storage solution integrated with the Filecoin network. Titan Storage enables users to efficiently store data on Filecoin through an intuitive graphical interface, eliminating the necessity for an in-depth understanding of Filecoin’s mechanics.
+For the storage element of the platform, [[Titan Network](/ecosystem-explorer/titan-network)](https://storage.titannet.io/) is behind [[Titan Storage](/ecosystem-explorer/titan-storage)](/ecosystem-explorer/titan-storage), a hot data storage solution integrated with the Filecoin network. [Titan Storage](/ecosystem-explorer/titan-storage) enables users to efficiently store data on Filecoin through an intuitive graphical interface, eliminating the necessity for an in-depth understanding of Filecoin’s mechanics.
 
-**What’s new with Titan?** The [Herschel Testnet](https://titannet.gitbook.io/titan-network-en/herschel-testnet/herschel-testnet) is Titan Network’s second testnet, offering enhanced rewards and gameplay, and more efficient solutions for data storage and processing.
+**What’s new with Titan?** The [Herschel Testnet](https://titannet.gitbook.io/titan-network-en/herschel-testnet/herschel-testnet) is [Titan Network](/ecosystem-explorer/titan-network)’s second testnet, offering enhanced rewards and gameplay, and more efficient solutions for data storage and processing.

@@ -25,7 +25,7 @@ The group launched the Beta version late last year, aiming to further optimize h
 
 Filecoin Foundation awarded 4EVERLAND a microgrant in recognition of its platform’s success and what these achievements are doing to enhance the Filecoin ecosystem. 4EVERLAND has already built a number of efficient storage nodes based on IPFS and is committed to developing API and SDK applications based on IPFS and Filecoin. This is continually making it easier and faster for developers to leverage Filecoin in building Web3 applications.
 
-4EVERLAND will use the funding to continue building momentum and finding innovative ways to speed the adoption of Web3. For instance, 4EVERLAND’s DWeb hosting service has similar functionality to many IPFS applications, such as Fleek or Pinata. However, 4EVERLAND differentiates itself by using IPFS as the infrastructure of the storage layer, which is helping 4EVERLAND lower the threshold for developers to use IPFS in building Web3 applications.
+4EVERLAND will use the funding to continue building momentum and finding innovative ways to speed the adoption of Web3. For instance, 4EVERLAND’s DWeb hosting service has similar functionality to many IPFS applications, such as [Fleek](/ecosystem-explorer/fleek) or Pinata. However, 4EVERLAND differentiates itself by using IPFS as the infrastructure of the storage layer, which is helping 4EVERLAND lower the threshold for developers to use IPFS in building Web3 applications.
 
 Filecoin Foundation is proud to support 4EVERLAND as it continues to smooth the way for more innovation on the Filecoin ecosystem and broader adoption in the developer community of Web3 technologies!
 

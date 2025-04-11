@@ -65,7 +65,7 @@ She also recapped a busy year of impactful events for the Foundation:
 - [FIL Vegas](/blog/ai-data-verifiability-and-decentralized-storage-a-recap-from-fil-vegas) shined a spotlight on storage providers and catalyzed conversations about decentralized storage, AI, and enterprise.
 - Filecoin Orbit –– a community-run program of volunteers that host Filecoin events around the world –– had 150 ambassadors host over 190 events in 40+ countries.
 
-Klimen outlined FF and FFDW’s social impact work with partners like Democracy’s Library, MuckRock, MIT Open Learning, and University of Maryland’s Easier Data Initiative, and highlighted the newly launched [DWeb Impact Resources Hub](https://ffdweb.org/resources/) –– a massive collection of blog posts, research papers, news, and tutorials at the intersection of the decentralized web and social good.
+Klimen outlined FF and FFDW’s social impact work with partners like Democracy’s Library, [MuckRock](/ecosystem-explorer/muckrock), MIT Open Learning, and University of Maryland’s Easier Data Initiative, and highlighted the newly launched [DWeb Impact Resources Hub](https://ffdweb.org/resources/) –– a massive collection of blog posts, research papers, news, and tutorials at the intersection of the decentralized web and social good.
 
 ## Filecoin and AI: Building the Next Generation of Data Storage
 

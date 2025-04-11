@@ -58,13 +58,13 @@ Our last full day in the Riley building was dedicated to all things FVM! We prov
 Here are some of the learnings from the day and what audience members were able to take as insights:
 
 - _[Matt Hamilton](https://youtu.be/J9i7J5lMsgg)_, Principal Developer Advocate, Protocol Labs walked us through understanding a Filecoin storage deal flow, how to create a storage contract using smart contracts and demonstrated rolls with the Filecoin network locally.
-- _[Andrew Hill](https://youtu.be/y1secDqVgYI)_, Co-Founder of Tableland, discussed relational databases on FVM and paving the way for a new era of data centric applications.
+- _[Andrew Hill](https://youtu.be/y1secDqVgYI)_, Co-Founder of [Tableland](/ecosystem-explorer/tableland), discussed relational databases on FVM and paving the way for a new era of data centric applications.
 - _[Preston James](https://youtu.be/dcYVssNSrak)_, CEO and Co-Founder of DivInc, announced their partnership with DivInc to launch a Dweb for Social Impact Accelerator - applications are being [accepted here](https://www.divinc.org/focusareas/social-impact).
 - _[Garrett Kinsman](https://youtu.be/-u83Cvv9lAM)_, Co-Founder of Nodle, showed the audience how AI generated content is unraveling civilization and how decentralized technologies will save the day.
 
 ![](/assets/images/filecoin-network-base-4.jpg)
 
-Our audience learned even more about what they can achieve with FVM, with a panel entitled “Unlocking Cross-Chain Doors with FVM,” moderated by our own Clara Tsao. The group continued to explore more of the opportunities available for builders from other chains and ecosystems to take advantage of smart contracts on Filecoin. Panelists included Anshuman Prasad of Protocol Labs, BZ, Stephen Fluin of Axelar Networks and Andrew Hill of Tableland.
+Our audience learned even more about what they can achieve with FVM, with a panel entitled “Unlocking Cross-Chain Doors with FVM,” moderated by our own Clara Tsao. The group continued to explore more of the opportunities available for builders from other chains and ecosystems to take advantage of smart contracts on Filecoin. Panelists included Anshuman Prasad of Protocol Labs, BZ, Stephen Fluin of Axelar Networks and Andrew Hill of [Tableland](/ecosystem-explorer/tableland).
 
 We closed out our programming for the day with a talk from Paul Brody of Ernst & Young discussing the utilization of decentralized storage for enterprise and we’re technology needs to be for enterprise adoption.
 

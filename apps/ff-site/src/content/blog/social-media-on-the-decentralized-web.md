@@ -41,7 +41,7 @@ Filecoin Foundation for the Decentralized Web (FFDW) recently [announced](https:
 
 ## Audius
 
-User-generated content boomed during the Web 2.0 era. [Audius](https://audius.co/) is a music streaming platform based on modern decentralized technologies, which puts creators directly in contact with listeners and in control of their own products.
+User-generated content boomed during the Web 2.0 era. [Audius](/ecosystem-explorer/audius) is a music streaming platform based on modern decentralized technologies, which puts creators directly in contact with listeners and in control of their own products.
 
 In today’s world, centralized music platforms offer little to no transparency on pay, publishing rights, licensing, and other serious issues. We’ve seen the backlash that the most popular platforms today have faced over their payment structure — or [lack thereof](https://www.nytimes.com/2021/05/07/arts/music/streaming-music-payments.html). The Audius API lets streamers and listeners determine the payment structure and redefines the concept of monetization on social platforms: Artists earn compensation each time they post content, and listeners earn by completing tasks such as streaming streaks and offering feedback. Plus, a recent integration with TikTok means that Audius creators can provide their music to TikTokers looking for a background track for their videos.
 
@@ -56,7 +56,7 @@ Last year, Filecoin Foundation awarded a developer [grant](https://filecoinfound
 And a few more:
 
 - **Gummys** — A community-powered streaming platform allowing users to generate income by creating, minting, and trading tokenized media content, watching videos, and more. Learn more about [Gummys](https://www.gummys.io/) work building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/607).
-- **Quest Chains** — A gamified learning onboarding platform which rewards users through questing. Quest makers create quest chains, while questers would then complete the quests and get rewarded with NFTs, which would showcase their newly acquired skills in profiles. Learn more about [Quest Chains](https://questchains.xyz/) building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/645).
+- **Quest Chains** — A gamified learning onboarding platform which rewards users through questing. Quest makers create quest chains, while questers would then complete the quests and get rewarded with NFTs, which would showcase their newly acquired skills in profiles. Learn more about [Quest Chains](/ecosystem-explorer/quest-chains) building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/645).
 - **Volaverse** — Creating a community-driven metaverse around the globe and building a learning, teaching, and socializing platform creating a gamified and immersive experience for users. Learn more about [Volaverse](https://www.volaverse.com/) building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/580).
 
 These are just a few of the many companies and non-profits creating an alternative to centralized internet platforms. Everything we do today happens online, and the data from almost every interaction we have is stored on a server somewhere. A decentralized web enables users to take back control of their information and know exactly what is happening to our most sensitive information.

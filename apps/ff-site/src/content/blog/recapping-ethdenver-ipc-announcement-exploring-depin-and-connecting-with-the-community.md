@@ -38,13 +38,13 @@ Sarah Thiam gave a [Crash Course to Getting Started with InterPlanetary Consensu
 
 ![](/assets/images/ghikuhlwoaauewy.jpeg)
 
-[Fluence announced the upcoming mainnet launch](https://filecoin.io/blog/posts/interplanetary-consensus-fluence-power-the-future-of-cloudless-computing) of its Interplanetary Consensus (IPC)-powered decentralized serverless computing platform, which offers cheaper, provable, and truly decentralized computing for Web3 builders. With Fluence and IPC, developers will be able to create and monetize next-gen web applications.
+[[Fluence](/ecosystem-explorer/fluence) announced the upcoming mainnet launch](https://filecoin.io/blog/posts/interplanetary-consensus-fluence-power-the-future-of-cloudless-computing) of its Interplanetary Consensus (IPC)-powered decentralized serverless computing platform, which offers cheaper, provable, and truly decentralized computing for Web3 builders. With [Fluence](/ecosystem-explorer/fluence) and IPC, developers will be able to create and monetize next-gen web applications.
 
 ![](/assets/images/ghywxzyxwaahyct.jpeg)
 
 ## Web3 and AI
 
-The intersection of AI and Web3 was a hot topic at ETHDenver. FF Founding Officer Clara Tsao shared her talk, [Filecoin and AI: Building the Next Generation of Data Storage](https://twitter.com/EthereumDenver/status/1763723498042659294), with the ETHDenver audience. Yan Bo Ng supported the AI discussion by participating in an [AI & DePIN panel](https://www.youtube.com/live/k1HxuhBBvPg?si=2z6Y4RwVvrrtjqk7&t=5362) at Fluence’s DE:PIN Day and delivering a talk on Filecoin, FVM, and AI at Filecoin Foundation Booth.
+The intersection of AI and Web3 was a hot topic at ETHDenver. FF Founding Officer Clara Tsao shared her talk, [Filecoin and AI: Building the Next Generation of Data Storage](https://twitter.com/EthereumDenver/status/1763723498042659294), with the ETHDenver audience. Yan Bo Ng supported the AI discussion by participating in an [AI & DePIN panel](https://www.youtube.com/live/k1HxuhBBvPg?si=2z6Y4RwVvrrtjqk7&t=5362) at [Fluence](/ecosystem-explorer/fluence)’s DE:PIN Day and delivering a talk on Filecoin, FVM, and AI at Filecoin Foundation Booth.
 
 With decentralized storage, we can avoid paths that concentrate the power of AI into fewer hands while providing solutions for a wealth of decentralized players to build and maintain their AI data responsibly. Filecoin is built to handle the unprecedented scale of AI data growth on a future-proof network. And in addition to decentralizing data storage, decentralized computing capabilities made possible by Filecoin help decentralize and speed up the [resource-intensive computation of AI models](https://blogs.nvidia.com/blog/2023/01/20/what-is-ai-computing/#:~:text=AI%20computing%20multiplies%20together%20every,data%20on%20fast%20computer%20networks.).
 
@@ -54,7 +54,7 @@ Another emerging theme at ETHDenver was decentralized physical infrastructure ne
 
 DePIN is gaining traction because of large addressable markets in these areas and the ongoing boom in generative artificial intelligence – which has created a surge in demand for related services. Meanwhile, global semiconductor shortages have made it difficult for hardware suppliers to keep up with the uptick in demand. Combined, these trends have accelerated the search for alternative ways to meet pressing infrastructure needs.
 
-Filecoin Foundation leaned into DePIN across stages during ETHDenver. Solutions Architect Yan Bo Ng participated in a panel at Fluence’s DE:PIN Day, Dev Advocate Jenks Guo spoke at DePIN Denver Web3 Coffee House, and Founding Officer Clara Tsao joined a roundtable at DePIN Summer.
+Filecoin Foundation leaned into DePIN across stages during ETHDenver. Solutions Architect Yan Bo Ng participated in a panel at [Fluence](/ecosystem-explorer/fluence)’s DE:PIN Day, Dev Advocate Jenks Guo spoke at DePIN Denver Web3 Coffee House, and Founding Officer Clara Tsao joined a roundtable at DePIN Summer.
 
 ## The Growing Filecoin Ecosystem
 

@@ -18,7 +18,7 @@ seo:
 
 Messari’s [State of Filecoin Q2 2024 report is out](https://messari.io/report/state-of-filecoin-q2-2024). Read it for a detailed overview of the network, including increased network utilization rates, more data client onboarding, continued network maturation as the DePIN backbone for AI advancements, and more.
 
-Join [FIL Singapore](/events/fil-singapore-alongside-token2049-2024), hosted by MetaPals and supported by Filecoin Foundation. FIL SG: Web3 Wonderland is the marquee event alongside TOKEN2049, bringing together some of the sharpest minds and most innovative projects across Web3 and AI. [Reserve your spot](https://lu.ma/escdw9dx?tk=LRE4fg).
+Join [FIL Singapore](/events/fil-singapore-alongside-token2049-2024), hosted by [MetaPals](/ecosystem-explorer/metapals) and supported by Filecoin Foundation. FIL SG: Web3 Wonderland is the marquee event alongside TOKEN2049, bringing together some of the sharpest minds and most innovative projects across Web3 and AI. [Reserve your spot](https://lu.ma/escdw9dx?tk=LRE4fg).
 
 ## Ecosystem
 
@@ -47,7 +47,7 @@ Join [FIL Singapore](/events/fil-singapore-alongside-token2049-2024), hosted by 
 ### Comms, Marketing, & Events
 
 - Filecoin Foundation President and Chair Marta Belcher joined Chainalysis CMO Ian Andrews on the [Public Key Podcast](https://www.chainalysis.com/blog/ipfs-filecoin-and-crypto-policy-developments-ep-121/) to talk about the evolving landscape of crypto policy.
-- Filecoin Foundation [joined the NFT.Storage community](https://nft.storage/blog/filecoin-foundation-joins-the-nft-storage-community) as a gold member to help preserve digital assets and ensure that NFTs remain accessible and verifiable for future generations.
+- Filecoin Foundation [joined the [NFT.Storage](/ecosystem-explorer/nftstorage) community](https://nft.storage/blog/filecoin-foundation-joins-the-nft-storage-community) as a gold member to help preserve digital assets and ensure that NFTs remain accessible and verifiable for future generations.
 - Join the Filecoin community in Bangkok to explore decentralized AI infrastructure, DePIN, and the evolving data economy at FIL Bangkok. [Reserve your spot](/events/fil-bangkok) now and keep an eye out for programming announcements!
 - Check out the global Orbit events happening near you at [fil.org/orbit](/orbit)! Network with members of your local Filecoin community at these always welcoming, free-to-attend Orbit events.
 
