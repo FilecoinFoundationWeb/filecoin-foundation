@@ -37,7 +37,7 @@ Below is a snapshot of each team. And you can find [more information](https://me
 
 **Nftfy** enables fractional ownership for the world’s most valuable NFTs.
 
-**CID Gravity** is building a 2nd layer of trust between Filecoin stakeholders, de-risking their data and increasing miner profitability.
+**[CIDGravity](/ecosystem-explorer/cidgravity)** is building a 2nd layer of trust between Filecoin stakeholders, de-risking their data and increasing miner profitability.
 
 **0xEssentials** provides permissionless gaming platforms where users bring their own NFTs to play, compete, and win.
 
@@ -53,7 +53,7 @@ Below is a snapshot of each team. And you can find [more information](https://me
 
 **The Convo Space** is a decentralized conversation layer of the Internet, offering all the tooling and infrastructure to add a social layer to any platform, supercharged by Web3.
 
-**The Mona** is a metaverse society for high-end, 3D art.
+**[Mona](/ecosystem-explorer/mona)** is a metaverse society for high-end, 3D art.
 
 **Paras** is a Hedgey protocol for adding options markets to any token.
 
@@ -63,6 +63,6 @@ Below is a snapshot of each team. And you can find [more information](https://me
 
 **Nifty Royale** is an NFT platform that distributes NFTs through gamified no-loss prize pools.
 
-**WeatherXM** **Inc**. is a community-powered weather network that rewards station owners and provides accurate weather services to Web3 enterprises.
+**[WeatherXM](/ecosystem-explorer/weatherxm)** is a community-powered weather network that rewards station owners and provides accurate weather services to Web3 enterprises.
 
 [REGISTER NOW](https://share.hsforms.com/1sOOp2P0hRJuuzhLG-BS4RQ3orpu) to see these startups in action on September 28 @ 11:00 AM EDT for the Filecoin II Launchpad Accelerator Demo Day! And don’t forget to [**submit your application**](https://prdpjz4zqoq.typeform.com/to/RxQSZ9dq?typeform-source=mesh.xyz)to be part of the Winter 2021 cohort for the upcoming Filecoin Launchpad Accelerator III program!

@@ -59,7 +59,7 @@ Explore the [Orbit Nigeria Meetup Group](https://www.meetup.com/orbit-community-
 
 ![](/assets/images/643e68bf3820f64ae7d1de26_timo_lee_360.jpeg)
 
-Timo Lee, a Berlin-based Community Lead for Secured Finance, is helping spur financial innovation in the Filecoin community. An early follower of IPFS technology, he’s driven to help provide access to the emerging financial markets and business opportunities in crypto.
+Timo Lee, a Berlin-based Community Lead for [Secured Finance](/ecosystem-explorer/secured-finance), is helping spur financial innovation in the Filecoin community. An early follower of IPFS technology, he’s driven to help provide access to the emerging financial markets and business opportunities in crypto.
 
 “I used to be a mechanical engineer in the German automotive industry. Back in 2018, I met the IPFS core developers. They were talking about IPFS protocol specs, peer-to-peer, and super fundamental things. That was a turning point for me — I really saw what the next generation web would look like, and it was exciting.”
 

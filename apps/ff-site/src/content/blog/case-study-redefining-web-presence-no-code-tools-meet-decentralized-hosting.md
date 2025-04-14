@@ -15,7 +15,7 @@ seo:
     in this detailed case study.
 ---
 
-In this case study, we at Filecoin Foundation explore an innovative approach to website design workflow, leveraging the respective Filecoin, InterPlanetary File System (IPFS), and Fleek tech stacks.
+In this case study, we at Filecoin Foundation explore an innovative approach to website design workflow, leveraging the respective Filecoin, InterPlanetary File System (IPFS), and [Fleek](/ecosystem-explorer/fleek) tech stacks.
 
 ## Approach
 

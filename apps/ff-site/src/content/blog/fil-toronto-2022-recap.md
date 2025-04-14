@@ -16,11 +16,11 @@ seo:
 
 Earlier this month, the Filecoin community convened for the first-ever FIL Toronto. From July 4–6, attendees gathered to discuss new features, partner tools, and other developments in the Filecoin ecosystem.
 
-The collaborative three-day event was hosted by FilSwan, with support from Filecoin Foundation through the Filecoin [Orbit Community](https://orbitcommunity.filecoin.io/) program. Speakers represented a variety of projects and organizations including Protocol Labs, Fil+, Filswan, Lotus, Estuary, Chainstorage, and many others excited to share their expertise with the growing Web3 community in Toronto.
+The collaborative three-day event was hosted by FilSwan, with support from Filecoin Foundation through the Filecoin [Orbit Community](https://orbitcommunity.filecoin.io/) program. Speakers represented a variety of projects and organizations including Protocol Labs, Fil+, Filswan, [Lotus](/ecosystem-explorer/lotus), Estuary, Chainstorage, and many others excited to share their expertise with the growing Web3 community in Toronto.
 
 ## Compute Over Data
 
-One highlight was a presentation from the team at [Bacalhau](https://github.com/filecoin-project/bacalhau/blob/main/DESIGN.md), an open-source compute over data (COD) project built on the Filecoin network. (Fun fact: [“bacalhau”](https://wetravelportugal.com/bacalhau-portuguese-cod/) is the name of the dried, salted cod fish that is the national dish of Portugal, where the project originated.) Despite the attention and funding committed to the issue of data storage, Bacalhau’s David Aronchick said businesses still find it challenging to manage unstructured data efficiently, costing organizations time and money because of poorly processed data.
+One highlight was a presentation from the team at [Bacalhau](/ecosystem-explorer/bacalhau), an open-source compute over data (COD) project built on the Filecoin network. (Fun fact: [“bacalhau”](https://wetravelportugal.com/bacalhau-portuguese-cod/) is the name of the dried, salted cod fish that is the national dish of Portugal, where the project originated.) Despite the attention and funding committed to the issue of data storage, Bacalhau’s David Aronchick said businesses still find it challenging to manage unstructured data efficiently, costing organizations time and money because of poorly processed data.
 
 By focusing on data developers, Bacalhau aims to transform how data is used, simplify data development, deliver performance improvements, and launch a collaborative scientific community. To do this, Bacalhau leverages the computing power and data that Filecoin storage providers host to enable the execution of relatively low compute activities, which can represent an additional revenue stream for the storage provider.
 

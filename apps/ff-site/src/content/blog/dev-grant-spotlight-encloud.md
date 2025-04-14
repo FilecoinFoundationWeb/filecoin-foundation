@@ -29,7 +29,7 @@ Encloud is creating an off-the-shelf web services portal for the decentralized c
 
 With the grant, encloud is building privacy services at scale for data on IPFS and Filecoin. This grant is the second in a series of dev grants which is ultimately intended to enable encloud to offer its command line interface and user application on an open-source basis to a wide audience.
 
-This project is also made possible in partnership with [Bacalhau](https://www.bacalhau.org/), a platform for easy, scalable, and cost efficient, data computation.
+This project is also made possible in partnership with [Bacalhau](/ecosystem-explorer/bacalhau), a platform for easy, scalable, and cost efficient, data computation.
 
 FF’s grant funds will help encloud establish its operating model, which involves a hub-and-spoke platform model delivering a core set of services hosted on partner storage provider hardware, alongside a lightweight web or desktop application designed to enable fee paying clients to use Filecoin web services either via encloud’s application directly or through a white label offering.
 

@@ -22,7 +22,7 @@ This incident highlights the glaring problem of single points of failure in the 
 
 As part of Filecoin Foundation’s work to showcase innovative teams building on Filecoin, today we’re shining the spotlight on GhostDrive, a platform that leverages Filecoin's decentralized storage to improve redundancy and security.
 
-GhostDrive distinguishes itself from centralized cloud storage providers in several key ways:
+[GhostDrive](/ecosystem-explorer/ghostdrive-global) distinguishes itself from centralized cloud storage providers in several key ways:
 
 ## Data Redundancy and Security
 

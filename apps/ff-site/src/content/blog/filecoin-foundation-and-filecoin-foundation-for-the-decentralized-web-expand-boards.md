@@ -23,7 +23,7 @@ Big announcements today from Filecoin Foundation and FFDW! Nicole Wong, former d
 
 Wong joins the board of FF, which includes Board Chair Marta Belcher, general counsel and head of policy at Protocol Labs; Brian Behlendorf, executive director of Hyperledger; and Marcia Hofmann, a technology policy attorney. Smith joins the FFDW board, which includes Belcher as board chair; Behlendorf; and Rainey Reitman, a digital rights activist.
 
-Kahle and Hanamura join an impressive group of advisors to FF and FFDW that includes Ethereum co-founder Joseph Lubin, digital rights activist Danny O’Brien, Brex General Counsel Katie Biber, Anchorage General Counsel Georgia Quinn, Global Blockchain Business Council CEO Sandra Ro, Murmuration Labs CEO Alex Feerst, and Sheila Warren of the World Economic Forum (FFDW only).
+Kahle and Hanamura join an impressive group of advisors to FF and FFDW that includes Ethereum co-founder Joseph Lubin, digital rights activist Danny O’Brien, Brex General Counsel Katie Biber, Anchorage General Counsel Georgia Quinn, Global Blockchain Business Council CEO Sandra Ro, [Murmuration Labs](/ecosystem-explorer/murmuration-labs) CEO Alex Feerst, and Sheila Warren of the World Economic Forum (FFDW only).
 
 Wong is a former vice president and deputy general counsel for Google, as well as former legal director for products at Twitter. She previously served as deputy U.S. chief technology officer during the Obama administration.
 

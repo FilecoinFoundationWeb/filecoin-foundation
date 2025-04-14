@@ -17,7 +17,7 @@ seo:
     Explore their sustainable approach.
 ---
 
-Supported by Filecoin Foundation and Protocol Labs, [Filecoin Green](https://green.filecoin.io/) aims to measure the environmental impacts of Filecoin and verifiably drive them below zero, building infrastructure along the way that allows anyone to make transparent and substantive environmental claims. Among the projects supported by Filecoin Green is a collaboration between [Twin Quasar and CELESTE](https://www.twinquasar.io/green-hosting) to offer more cost-effective hosting solutions in Europe.
+Supported by Filecoin Foundation and Protocol Labs, [Filecoin Green](/ecosystem-explorer/filecoin-green) aims to measure the environmental impacts of Filecoin and verifiably drive them below zero, building infrastructure along the way that allows anyone to make transparent and substantive environmental claims. Among the projects supported by Filecoin Green is a collaboration between [Twin Quasar](/ecosystem-explorer/twin-quasar) and CELESTE to offer more cost-effective hosting solutions in Europe.
 
 The two organizations have teamed up to build an environmentally friendly and cost-effective alternative for data storage on the Filecoin network. These B2B solutions, designed for existing and prospective Filecoin storage providers (SPs), leverage renewable energy options in the heart of Paris.
 

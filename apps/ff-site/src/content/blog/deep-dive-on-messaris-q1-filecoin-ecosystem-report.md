@@ -19,7 +19,7 @@ Insights from Messari's recently released Q1 2024 Filecoin Ecosystem Report.
 
 Last week, Messari released its [Q1 2024 Filecoin Ecosystem Report](https://messari.io/project/filecoin/quarterly-reports/q1-2024), which highlighted a rise in user adoption and in the number of projects building on Filecoin. Let’s dive into some of the key insights.
 
-**📈 The amount of data stored on the Filecoin network continues to climb.**
+## The amount of data stored on the Filecoin network continues to climb
 
 Nearly 1,900 PiB in total active deals were stored on the Filecoin network in Q1 2024, up 9% from 1,700 PiB in Q4 2023.
 
@@ -27,9 +27,9 @@ Why are active deals important? The amount of data stored in active deals betwee
 
 ![](https://lh7-us.googleusercontent.com/CJVlb9gBAqSM_CFOhmHyBCbGETO_QECsJBtEPnlnge3RwwPHQFMl5dR6E7QVFpZTR-9wN_tUGjRi_aKfdTTs9H9rQdsdckX-w4_YFnr0OrMhkyci54j3ijw85LJbcH_CQSSwOE1-9LKG5pCMSP64KKY)
 
-Q1 Highlight: Destor and Seal Storage [announced](https://destor.com/resources/news/seal-storage-filecoin-destor-ai-data-integrity-project) an AI data integrity improvement research project with Cyber SMART, an industry-university cooperative funded by the U.S. National Science Foundation and other industry members. The project will explore how immutable and auditable record-of-data technology can ensure trustworthiness in generative AI/ML applications.
+Q1 Highlight: [DeStor](/ecosystem-explorer/destor) and [Seal Storage](/ecosystem-explorer/seal-storage) [announced](https://destor.com/resources/news/seal-storage-filecoin-destor-ai-data-integrity-project) an AI data integrity improvement research project with Cyber SMART, an industry-university cooperative funded by the U.S. National Science Foundation and other industry members. The project will explore how immutable and auditable record-of-data technology can ensure trustworthiness in generative AI/ML applications.
 
-📘 **Large data sets stored on Filecoin increased in Q1.**
+## Large data sets stored on Filecoin increased in Q1
 
 As of Q1 2024, 2,007 clients have onboarded datasets on Filecoin, with 508 large dataset clients (i.e., storing datasets that exceed 1,000 TiB in size), a 9% jump from 465 in Q4 2023.
 
@@ -39,13 +39,13 @@ Data clients range from the [Democracy’s Library](/blog/democracy%E2%80%99s-li
 
 Interested in joining Filecoin Foundation’s (FF) Data Clients Working Group? Participants focus on sharing their data upload experiences, identifying hurdles and solutions for uploading data, and discussing how the Filecoin ecosystem can support data onboarding. To join, [drop us a note](mailto:dataclients@fil.org).
 
-📝 **Over 3,400 unique smart contracts deployed on Filecoin, up 26% from last quarter.**
+## Over 3,400 unique smart contracts deployed on Filecoin, up 26% from last quarter
 
 The Ethereum-compatible Filecoin Virtual Machine (FVM) continues to gain traction with builders. FVM dapps tap into storage primitives on Filecoin to create valuable workflows including perpetual storage, data access control, compute-over-data, data DAOs, and more.
 
 Are you building on Filecoin? The FF Developer Working Group (DevWG) is open to all devs and community members to share their technical or industry expertise, raise challenges for collective deliberation, advocate for developing in specific areas of the network, provide updates on projects, and develop a presence in the Filecoin governance process. Learn more on the [DevWG ReadMe](https://github.com/filecoin-project/DeveloperWG) and hop into the [\#dev-wg](https://filecoinproject.slack.com/archives/C06G5K8H3J7) Slack channel with any questions.
 
-⭐ **The Filecoin ecosystem expands.**
+## The Filecoin ecosystem expands
 
 The Messari report also provides an ecosystem overview featuring the [Filecoin Ecosystem Explorer](/ecosystem-explorer), a community-powered database of projects in the network. As of March 2024, over 160 known projects are highlighted, such as:
 

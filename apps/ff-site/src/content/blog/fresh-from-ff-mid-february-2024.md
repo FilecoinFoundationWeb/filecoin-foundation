@@ -59,7 +59,7 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
 
 ### User Experience Improvement Team (UXIT)
 
-- The UXIT completed its dogfooding exercise for [dashboard.starboard.ventures](https://dashboard.starboard.ventures/dashboard). Once the team compiles implementation recommendations, it will share feedback with the Starboard team.
+- The UXIT completed its dogfooding exercise for [dashboard.starboard.ventures](https://dashboard.starboard.ventures/dashboard). Once the team compiles implementation recommendations, it will share feedback with the [Starboard](/ecosystem-explorer/starboard) team.
 - Following its dogfooding session last year, UXIT is planning to implement usability fixes to CID.Contact.
 - The Fil.org website redesign is underway, focusing on:
 
@@ -90,6 +90,6 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
 
 ## FFDW
 
-- FFDW project partner Starling Lab [published a Dispatch](https://dispatch.starlinglab.org/p/mom-i-see-war) about the technical work behind its project, "Mom, I See War." The digital museum is a collection of over 10,000 drawings from children in Ukraine, which are stored on IPFS and encrypted archives, with more sensitive metadata stored on Filecoin.
+- FFDW project partner [Starling Lab](/ecosystem-explorer/starling-lab) [published a Dispatch](https://dispatch.starlinglab.org/p/mom-i-see-war) about the technical work behind its project, "Mom, I See War." The digital museum is a collection of over 10,000 drawings from children in Ukraine, which are stored on IPFS and encrypted archives, with more sensitive metadata stored on Filecoin.
 - FFDW project partner Gray Area opened enrollment for "[DWeb for Creators](https://grayarea.org/course/dweb-for-creators/)," an 8-week learning experience for artists and activists interested in the decentralized web.
 - FFDW project partner TechSoup hosted its first Maker Studio Sessions Town Hall for people with ideas on how to leverage blockchain, cryptocurrencies, DAOs, and the DWeb in real-world projects. Session recordings are available on the [event page](https://events.techsoup.org/events/details/techsoup-public-good-app-house-presents-crafting-our-collective-future-accelerating-makers-town-hall-session-1/) after the conclusion of the session.

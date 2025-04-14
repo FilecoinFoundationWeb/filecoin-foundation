@@ -263,7 +263,7 @@ schedule:
           description:
             "With AI-generated content expected to represent 90% of online data
             by 2026, we need smart platforms that democratize data ownership
-            while embedding necessary privacy protections. Ghostdrive delivers
+            while embedding necessary privacy protections. GhostDrive delivers
             an affordable, secure, AI-driven Web3 data platform empowering one
             million users to control and monetize their data via AI."
         - location: "Samyan Mitrtown: Main Hall"
@@ -299,7 +299,7 @@ schedule:
             AI training data –– and become a validator of AI data yourself!
           speakers:
             - name: "Roman Nebo"
-              company: "Ghost Drive"
+              company: "GhostDrive"
         - title:
             "From Models to Marketplaces: AI, DePIN, and a New Approach to Data
             Infra"
@@ -569,7 +569,7 @@ speakers:
         src: /assets/images/ethan-chae-headshot.webp
     - name: Roman Nebo
       title: CEO & Founder
-      company: Ghost Drive
+      company: GhostDrive
       linkedin: https://www.linkedin.com/in/romansky
       image:
         src: /assets/images/roman-nebo-headshot.webp
