@@ -23,4 +23,4 @@ In South Sudan, Sonia experienced limited internet access and frequent outages, 
 
 Sonia is passionate about the growth of open-source software, which can give everyone, no matter where they are in the world, access to the same technologies. “It’s a game-changer in the technology landscape,” she notes, especially for those who were not typically leaders in the software industry.
 
-Learn more from Sonia about her experience and her advice for where those interested in diving into blockchain should start in this recording from May 2021’s [Virtual Blockchain Small Business Week Forum](https://youtu.be/spReQI8kUek)**.**
+Learn more from Sonia about her experience and her advice for where those interested in diving into blockchain should start in this recording from May 2021’s Virtual Blockchain Small Business Week Forum _(original link no longer available)_.

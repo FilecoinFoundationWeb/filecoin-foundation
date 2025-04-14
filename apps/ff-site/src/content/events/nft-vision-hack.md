@@ -6,7 +6,6 @@ published-on: 2023-05-03T08:22:38.798Z
 category: supported-sponsored
 location:
   primary: Virtual
-external-link: https://www.nftvisionhack.com/
 start-date: 2021-06-30
 end-date: 2021-08-30
 seo:

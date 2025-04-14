@@ -11,7 +11,6 @@ category: decentralized-science
 description: Opscientia (OpSci) is an open source DeSci project leveraging the
   power of Web3 to grow, sustain, and continuously improve decentralized
   science.
-website: https://www.opsci.io
 tech:
   - filecoin
   - ipfs

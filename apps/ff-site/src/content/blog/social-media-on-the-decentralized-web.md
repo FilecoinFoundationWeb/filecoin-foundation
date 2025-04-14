@@ -55,7 +55,7 @@ Last year, Filecoin Foundation awarded a developer [grant](/blog/dev-grant-spotl
 
 And a few more:
 
-- **Gummys** — A community-powered streaming platform allowing users to generate income by creating, minting, and trading tokenized media content, watching videos, and more. Learn more about [Gummys](https://www.gummys.io/) work building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/607).
+- **Gummys** — A community-powered streaming platform allowing users to generate income by creating, minting, and trading tokenized media content, watching videos, and more. Learn more about Gummys _(original link no longer available)_ work building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/607).
 - **Quest Chains** — A gamified learning onboarding platform which rewards users through questing. Quest makers create quest chains, while questers would then complete the quests and get rewarded with NFTs, which would showcase their newly acquired skills in profiles. Learn more about [Quest Chains](/ecosystem-explorer/quest-chains) building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/645).
 - **Volaverse** — Creating a community-driven metaverse around the globe and building a learning, teaching, and socializing platform creating a gamified and immersive experience for users. Learn more about [Volaverse](https://www.volaverse.com/) building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/580).
 

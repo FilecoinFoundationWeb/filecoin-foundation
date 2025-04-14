@@ -28,7 +28,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 ### Developer Advocacy
 
-- Winners for the Data Economy Hackathon were announced on April 17. Participants submitted [over 120 projects](https://dorahacks.io/hackathon/filecoin-data-economy/buidl), including 67 for the Filecoin track and 20 for Interplanetary Consensus (IPC).
+- Winners for the Data Economy Hackathon were announced on April 17. Participants submitted over 120 projects _(original link no longer available)_, including 67 for the Filecoin track and 20 for Interplanetary Consensus (IPC).
 - FF Developer Advocate Jenks Guo gave a keynote at TeamZ Summit in Japan on AI Trust and Filecoin, and spoke at the Orbit Filecoin Ecosystem Showcase side event sharing the latest developments, growth, and transformative potential of Filecoin's decentralized storage network.
 
 ## Network Operations

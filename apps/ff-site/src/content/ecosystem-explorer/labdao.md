@@ -8,7 +8,6 @@ tech:
   - ipfs
 image:
   src: /assets/images/66073294cc627368322b763a_labdao.png
-website: https://app.lab.bio/experiments/new/protein-binder-design
 twitter: https://twitter.com/lab_dao
 year-joined: 2024
 category: decentralized-science

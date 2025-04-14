@@ -192,7 +192,7 @@ In 2024, FF announced 8 collaborations with prominent AI organizations, undersco
 
 [Aethir](/ecosystem-explorer/aethir): A decentralized GPU cloud computing platform, Aethir, is storing [data on Filecoin](https://blog.aethir.com/blog-posts/aethir-and-filecoin-foundation-combining-distributed-gpu-infrastructure-and-decentralized-storage) to ensure transparency, accountability, and robust audit trails for AI model governance. 
 
-[Bagel](/ecosystem-explorer/bagel): Bagel is an AI and cryptography research lab that is enabling AI developers to [train and store their models](https://blog.bagel.net/p/gpu-restaking) using Filecoin’s compute and storage power. 
+[Bagel](/ecosystem-explorer/bagel): Bagel is an AI and cryptography research lab that is enabling AI developers to train and store their models using Filecoin’s compute and storage power. 
 
 [Decentralized AI Society (DAIS)](https://dais.global/): With FF as a founding member, DAIS [launched](https://www.coindesk.com/policy/2024/09/18/decentralized-ai-society-launched-to-fight-tech-giants-who-own-the-regulators) to promote the development of an open, decentralized, and secure internet in the age of artificial intelligence.
 

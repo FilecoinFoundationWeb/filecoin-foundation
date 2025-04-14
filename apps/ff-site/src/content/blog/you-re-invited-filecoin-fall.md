@@ -21,7 +21,7 @@ As we enjoy the last days of summer, we’re already planning for our next set o
 
 ## First stop: Global Blockchain Business Council UNGA (Sept. 20)
 
-Filecoin Foundation is heading to New York City to sponsor the [Global Blockchain Business Council’s UNGA](https://gbbcouncil.org/event/blockchain-central-unga-2022/) in September. The event will draw thought leaders and the people driving change across blockchain, business, government, and technology for discussions on how blockchain-powered solutions can enable progress toward the United Nations’ Sustainable Development Goals.
+Filecoin Foundation is heading to New York City to sponsor the Global Blockchain Business Council’s UNGA _(original link no longer available)_ in September. The event will draw thought leaders and the people driving change across blockchain, business, government, and technology for discussions on how blockchain-powered solutions can enable progress toward the United Nations’ Sustainable Development Goals.
 
 ## Next up: Unfinished Live (Sept. 21–24)
 

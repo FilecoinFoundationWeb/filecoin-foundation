@@ -9,7 +9,7 @@ image:
   src: /assets/images/66073292f68243b0fc173909_forcecommunity.png
 category: governance-daos-public-goods
 description: "Force Community is a non-profit leading Web3 community."
-website: https://forcecommunity.io/
+website: https://www.forcecommunity.io/
 tech:
   - filecoin
 twitter: https://twitter.com/force_ipfs

@@ -54,7 +54,7 @@ The SPWG currently consists of two sub-working groups, one in North America/Euro
 
 The North American and European regions began developing their own storage providers’ association before they became involved with the SPWG. The initial team nominated eight candidates from the North American region and the European region. These nominees participated in weekly storage provider video conferences and workshops and became regular contributors to the Filecoin community, while cultivating positive and productive relationships among their colleagues and peers.
 
-Nomination criteria for the Asia region were similar to North America and Europe. But teams from Asia also sought to nominate storage providers who were involved in storage provider accelerators and programs such as [Space Race](https://spacerace.filecoin.io/), as well as storage providers who contributed to the Filecoin ecosystem through Filecoin Plus, tools, or notaries.
+Nomination criteria for the Asia region were similar to North America and Europe. But teams from Asia also sought to nominate storage providers who were involved in storage provider accelerators and programs such as Space Race _(original link no longer available)_, as well as storage providers who contributed to the Filecoin ecosystem through Filecoin Plus, tools, or notaries.
 
 ## Expectations
 
