@@ -77,7 +77,7 @@ In August, FF launched [The Filecoin Ecosystem Digest](/digest), a collection of
 
 The Filecoin ecosystem offers a thriving ecosystem for projects, teams, and companies to build technology for today and the future. Over the past several months, new organizations have launched to support the growth and decentralization of the network, driving change across Filecoin and the web.
 
-[FIL-B](https://fil.builders/), [FilOz](https://www.filoz.org/), [Akave](/ecosystem-explorer/akave), [Curio](https://curiostorage.org/), [Storacha](/ecosystem-explorer/storacha), [Filponto](https://filponto.io/), [IPC](https://docs.ipc.space/), [ANSA Research](https://ansaresearch.ai/), [CryptoEconLab](https://cryptoeconlab.io/), [DeStor](/ecosystem-explorer/destor), and [Space Meridian](https://meridian.space/) are just some of the new organizations helping to make Filecoin the base layer of the decentralized web.
+[FIL-B](https://fil.builders/), [FilOz](https://www.filoz.org/), [Akave](/ecosystem-explorer/akave), [Curio](https://curiostorage.org/), [Storacha](/ecosystem-explorer/storacha-network), [Filponto](https://filponto.io/), [IPC](https://docs.ipc.space/), [ANSA Research](https://ansaresearch.ai/), [CryptoEconLab](https://cryptoeconlab.io/), [DeStor](/ecosystem-explorer/destor), and [Space Meridian](https://meridian.space/) are just some of the new organizations helping to make Filecoin the base layer of the decentralized web.
 
 ![](/assets/images/dall-e-2024-05-16-11.07.50-a-realistic-clean-and-minimalistic-scene-using-only-white-and-blue-colors-1.webp)
 

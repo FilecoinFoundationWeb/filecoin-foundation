@@ -84,7 +84,7 @@ Over [500,000 culturally significant digital artifacts](/blog/flickr-foundation-
 
 ### 1. Upload Your Data
 
-Store your files on a decentralized, resilient network through platforms tailored to your needs –– from enterprise-grade data solutions to AI data services to archiving and preservation. Solutions like [Akave](/ecosystem-explorer/akave), [Storacha](/ecosystem-explorer/storacha), [Lighthouse](/ecosystem-explorer/lighthouse), and [CIDgravity](/ecosystem-explorer/cidgravity) offer a range of tools to help you get started.
+Store your files on a decentralized, resilient network through platforms tailored to your needs –– from enterprise-grade data solutions to AI data services to archiving and preservation. Solutions like [Akave](/ecosystem-explorer/akave), [Storacha](/ecosystem-explorer/storacha-network), [Lighthouse](/ecosystem-explorer/lighthouse), and [CIDgravity](/ecosystem-explorer/cidgravity) offer a range of tools to help you get started.
 
 ![](/assets/images/032625-defiant-howlogos.webp)
 

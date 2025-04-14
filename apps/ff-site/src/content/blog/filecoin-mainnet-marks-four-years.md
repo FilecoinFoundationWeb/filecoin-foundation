@@ -53,7 +53,7 @@ From easy-to-use mobile apps to enterprise-grade platforms, the Filecoin ecosyst
 
 ## Bringing Novel Layer-2 Solutions to the Network
 
-In the past year, an influx of new L2 solutions launched on the network, enabling a broad array of use cases and applications. [Basin](https://blog.textile.io/basin-launch-overview) and [Akave](/ecosystem-explorer/akave) are leveraging Filecoin’s infrastructure to provide data management and AI-related services, while [Storacha](/ecosystem-explorer/storacha) launched a scalable hot storage solution. Hot storage is essential for applications that require their data to be accessed quickly and frequently. The growing number of L2s and protocols built atop Filecoin and IPFS demonstrate that the network is well-positioned to support a wide range of use cases.
+In the past year, an influx of new L2 solutions launched on the network, enabling a broad array of use cases and applications. [Basin](https://blog.textile.io/basin-launch-overview) and [Akave](/ecosystem-explorer/akave) are leveraging Filecoin’s infrastructure to provide data management and AI-related services, while [Storacha](/ecosystem-explorer/storacha-network) launched a scalable hot storage solution. Hot storage is essential for applications that require their data to be accessed quickly and frequently. The growing number of L2s and protocols built atop Filecoin and IPFS demonstrate that the network is well-positioned to support a wide range of use cases.
 
 Are you looking for the right storage solution to scale your business? Reach out to Filecoin Foundation on [Slack](https://filecoinproject.slack.com/join/shared_invite/zt-2nt4v9ew3-T7pgMdDiSpZth0AVHWQUHg#/shared-invite/email) — we're here to help.
 
