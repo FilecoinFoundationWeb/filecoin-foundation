@@ -47,13 +47,14 @@ export function ShareArticle({
           <CopyToClipboard
             text={articleUrl}
             notificationTitle="Link copied to clipboard!"
+            ariaLabel={`Copy article link: ${articleTitle}`}
           />
         </li>
         {socialLinksWithIcons.map(({ label, href, icon }) => (
           <li key={label} className="inline-flex">
             <Tooltip description={`Share on ${label}`} side="bottom">
               <a
-                aria-label={`Share on ${label}`}
+                aria-label={`Share ${articleTitle} on ${label}`}
                 href={href}
                 rel="noopener noreferrer"
                 className={clsx(

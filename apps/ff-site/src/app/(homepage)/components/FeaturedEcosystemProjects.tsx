@@ -23,7 +23,6 @@ export function FeaturedEcosystemProjects({
         <Card
           key={slug}
           as="article"
-          title={title}
           description={{ text: description, isClamped: true }}
           borderColor="lighter"
           cta={{
@@ -44,6 +43,9 @@ export function FeaturedEcosystemProjects({
               md: '440px',
               lg: '280px',
             }),
+          }}
+          title={{
+            text: title,
           }}
         />
       ))}
