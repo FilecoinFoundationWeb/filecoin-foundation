@@ -30,9 +30,7 @@ export function BlogPostHeader({
       <TagLabel>{category}</TagLabel>
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
       <div className="flex flex-col gap-4 sm:flex-row sm:justify-between">
-        <span className="blog-post-header-date inline-block">
-          {formatDate(publishedOn)}
-        </span>
+        <span className="blog-post-header-date">{formatDate(publishedOn)}</span>
         {mandarinTranslationUrl && (
           <ExternalTextLink href={mandarinTranslationUrl}>
             中文版本 (Mandarin Version)
