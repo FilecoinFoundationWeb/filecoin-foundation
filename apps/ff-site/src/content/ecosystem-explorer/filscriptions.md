@@ -9,7 +9,6 @@ tech:
   - ipfs
 image:
   src: /assets/images/filscriptions_logo_white.png
-website: https://www.filscriptions.market/
 twitter: https://twitter.com/filscriptions
 year-joined: 2024
 category: data-storage-management

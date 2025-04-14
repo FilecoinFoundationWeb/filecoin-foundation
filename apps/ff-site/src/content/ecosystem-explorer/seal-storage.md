@@ -11,7 +11,7 @@ tech:
   - ipfs
 image:
   src: /assets/images/659751688bb318bafb3d5892_seal2blogo2brgbd-1.png
-website: "https://www.sealstorage.io/"
+website: "https://sealstorage.io/"
 twitter: "https://twitter.com/SealStorage"
 featured-content: "https://fil.org/blog/case-study-seal-storage-making-web3-accessible-for-all-through-ecosystem-leadership-and-the-filecoin-network-1"
 category: data-storage-management

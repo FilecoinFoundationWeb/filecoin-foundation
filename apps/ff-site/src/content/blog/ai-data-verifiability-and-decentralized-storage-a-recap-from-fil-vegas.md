@@ -56,8 +56,6 @@ To the hundreds of attendees from around the world who joined us on the ground i
 
 Interested in learning more about the Decentralized Storage Alliance and how you can get involved? [Learn more](https://dsalliance.io/get-involved).
 
-Searching for Filecoin Storage or Service Providers? Visit the new [DeStor Network directory](https://directory.destor.com/).
-
 Are you an independent software vendor and want to add Filecoin as a storage tier? Sign up for the private beta of the [DeStor REST API](https://destor.com/destor-rest-api-for-filecoin).
 
 Did we miss you in Vegas? If you’re interested in exploring ecosystem partnerships, data storage, or becoming a Storage Provider, [fill out this form](https://filecoinfoundation.typeform.com/filvegas).

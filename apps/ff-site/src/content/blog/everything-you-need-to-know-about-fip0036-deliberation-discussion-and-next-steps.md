@@ -70,9 +70,9 @@ With FIP0036, the CryptoEconLab has proposed economic changes that seek to bette
 
   By definition, FIPs are designed to support changes to the underlying Filecoin protocol. As a result, these proposals are often technically complex without significantly changing the social, economic, or operational logic of the broader Filecoin ecosystem. To support these FIPs, a ‘soft consensus’ model is used, allowing community members to opt into governance processes when they choose to, without requiring their participation to pass FIPs necessary for routine protocol maintenance and development.
 
-  Unfortunately, acceptance through ‘soft consensus’ is not possible when community members deeply disagree about whether to accept or reject the FIP draft. As a result, Filecoin Foundation will launch [FIL Poll](https://filpoll.io/about) to help community members advocate for their preference and reach general consensus.
+  Unfortunately, acceptance through ‘soft consensus’ is not possible when community members deeply disagree about whether to accept or reject the FIP draft. As a result, Filecoin Foundation will launch FIL Poll _(original link no longer available)_ to help community members advocate for their preference and reach general consensus.
 
-  [FIL Poll](https://filpoll.io/about) is a polling tool that allows storage providers, token holders, Core Devs, and deal clients to vote to reject or accept the FIP. The poll will be open from Weds., Sept.14 through Weds., Sept. 28. This polling period will serve as the ‘Last Call’ period for FIP0036.
+  FIL Poll is a polling tool that allows storage providers, token holders, Core Devs, and deal clients to vote to reject or accept the FIP. The poll will be open from Weds., Sept.14 through Weds., Sept. 28. This polling period will serve as the ‘Last Call’ period for FIP0036.
 
   If accepted, Core Devs have already agreed to schedule this FIP for inclusion in the v17 network upgrade. This inclusion was specifically requested by FIP authors, arguing that the specification of the FIP is time sensitive and premised on current network conditions.
 

@@ -61,9 +61,9 @@ SteelDome offers proprietary technology that enables fully managed solutions wit
 
 ## Decentrally
 
-[Decentrally](https://www.decentrally.cloud/) is unlocking fully verifiable data storage by providing a solution for storing and delivering large amounts of data within an S3-compatible object storage system, where its decentralized design ensures enhanced privacy, ensuring that only the user has access to their data.
+Decentrally _(original link no longer available)_ is unlocking fully verifiable data storage by providing a solution for storing and delivering large amounts of data within an S3-compatible object storage system, where its decentralized design ensures enhanced privacy, ensuring that only the user has access to their data.
 
-Through [Datadrop](https://www.decentrally.cloud/datadrop/) and [Filecoin S3](https://www.decentrally.cloud/s-3-cloud-storage/), Decentrally aims to redefine data storage by integrating with Filecoin's decentralized network to provide a robust, secure, and efficient method of managing data.
+Through Datadrop and Filecoin S3, Decentrally aims to redefine data storage by integrating with Filecoin's decentralized network to provide a robust, secure, and efficient method of managing data.
 
 **What’s new with Decentrally?** Using its S3 CLI, Decentrally can streamline workflows with its intuitive S3-compatible API and IPFS integration, allowing for a seamless transition of Web2 apps to decentralized Web3 storage.
 

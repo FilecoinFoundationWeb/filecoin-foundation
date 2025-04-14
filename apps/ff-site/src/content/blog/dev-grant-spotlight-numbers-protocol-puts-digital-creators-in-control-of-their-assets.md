@@ -16,7 +16,7 @@ seo:
     Explore their journey as a dev grant recipient.
 ---
 
-The creator economy is valued at more than [$100 billion](https://www.zippia.com/advice/creator-economy-statistics/#:~:text=There%20are%20an%20estimated%2050,to%20be%20worth%20%24104.2%20billion.). But according to a [2022 survey from Tipalti](https://tipalti.com/tipalti-study-identifies-compensation-issues-as-threat-to-creator-economy-success/), 90% of creators expressed issues with just getting paid, and 40% said content monetization was their greatest challenge.
+The creator economy is valued at more than [$100 billion](https://www.zippia.com/advice/creator-economy-statistics/#:~:text=There%20are%20an%20estimated%2050,to%20be%20worth%20%24104.2%20billion.). But according to a 2022 survey from Tipalti _(original link no longer available)_, 90% of creators expressed issues with just getting paid, and 40% said content monetization was their greatest challenge.
 
 Fair and timely compensation for content has become increasingly difficult for content creators, particularly as the market becomes more saturated. Decentralized technologies help artists monetize their work and connect with fans in new ways.
 

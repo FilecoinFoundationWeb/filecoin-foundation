@@ -19,7 +19,7 @@ seo:
 
 It’s time to [register](https://share.hsforms.com/1sOOp2P0hRJuuzhLG-BS4RQ3orpu) for the upcoming Filecoin II Launchpad Accelerator Demo Day, taking place September 28 @ 11:00 AM EDT!
 
-Powered by [Tachyon](https://mesh.xyz/tachyon/), an accelerator for early-stage blockchain and Web3 startups, the Filecoin Launchpad Accelerator is a full-time, fully-remote program for startups focused on the distributed and decentralized web. Twice a year, this program brings together the best founders across the world for an intense 12-week remote program to build validated, market-ready Web3 businesses.
+Powered by Tachyon _(original link no longer available)_, an accelerator for early-stage blockchain and Web3 startups, the Filecoin Launchpad Accelerator is a full-time, fully-remote program for startups focused on the distributed and decentralized web. Twice a year, this program brings together the best founders across the world for an intense 12-week remote program to build validated, market-ready Web3 businesses.
 
 On September 28, you can take in a day of demonstrations from the current cohort of startups working to build more open, interoperable and programmable tools, infrastructure, and applications for the distributed and decentralized web!
 
