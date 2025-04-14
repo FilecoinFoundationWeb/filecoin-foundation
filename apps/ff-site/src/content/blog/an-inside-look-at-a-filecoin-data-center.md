@@ -16,7 +16,7 @@ seo:
     in the first-ever DWeb Decoded Special Report.
 ---
 
-Just a short train ride north of Amsterdam, in the quiet city of Heerhugowaard, lies a facility that's anything but ordinary. It's here that Hidde Hoogland and his team at [DCENT](https://dcent.nl/), the largest Filecoin storage provider in Europe, are building a piece of the future—a future where data is stored not in the hands of tech giants, but across a vast, decentralized network.
+Just a short train ride north of Amsterdam, in the quiet city of Heerhugowaard, lies a facility that's anything but ordinary. It's here that Hidde Hoogland and his team at [DCENT](/ecosystem-projects/dcent), the largest Filecoin storage provider in Europe, are building a piece of the future—a future where data is stored not in the hands of tech giants, but across a vast, decentralized network.
 
 The futuristic facility includes a server room, maintenance room, and a battery room. Inside the server room, two imposing black cubes are fronted by sliding glass doors, each containing rows upon rows of server hardware, humming with activity. The high-capacity servers are connected through dark fiber links to Amsterdam— ensuring low-latency data movement within Filecoin’s decentralized storage network.
 

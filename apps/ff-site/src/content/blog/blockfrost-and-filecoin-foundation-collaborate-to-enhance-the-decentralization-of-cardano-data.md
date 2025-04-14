@@ -38,7 +38,7 @@ The benefits of the collaboration include:
 
 ## A More Resilient, Decentralized Future
 
-Blockfrost has integrated with Filecoin via [Lighthouse](https://www.lighthouse.storage/), a platform built on Filecoin offering perpetual storage, encryption, custom gateways, and multi-chain smart contracts. But this collaboration is more than just a technical integration—it’s a move toward a more resilient and decentralized future for Cardano apps. By empowering Cardano developers with new capabilities and leveraging Filecoin’s robust infrastructure, this collaboration enhances data quality assurance, scalability, and redundancy across the Cardano ecosystem.
+Blockfrost has integrated with Filecoin via [Lighthouse](/ecosystem-explorer/lighthouse), a platform built on Filecoin offering perpetual storage, encryption, custom gateways, and multi-chain smart contracts. But this collaboration is more than just a technical integration—it’s a move toward a more resilient and decentralized future for Cardano apps. By empowering Cardano developers with new capabilities and leveraging Filecoin’s robust infrastructure, this collaboration enhances data quality assurance, scalability, and redundancy across the Cardano ecosystem.
 
 This collaboration underscores the coordinated efforts of two legacy layer-1 blockchains and marks a step toward making decentralization the standard for the next generation of blockchain applications.
 

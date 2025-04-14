@@ -42,12 +42,12 @@ Filecoin offers other benefits for AI networks, too, including:
 
 ### How Prominent AI Organizations Are Leveraging Filecoin
 
-FF recently [announced collaborations](/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) with SingularityNET, Theoriq, Bagel, Nuklai, and [Aethir](https://cryptobriefing.com/aethir-filecoin-collaboration-gpu/), each highlighting the versatility of the Filecoin network as decentralized AI infrastructure. The Filecoin networks’ decentralized infrastructure provides the foundational layer that enables AI applications to scale efficiently, securely, and transparently.
+FF recently [announced collaborations](/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) with SingularityNET, Theoriq, Bagel, Nuklai, and Aethir, each highlighting the versatility of the Filecoin network as decentralized AI infrastructure. The Filecoin networks’ decentralized infrastructure provides the foundational layer that enables AI applications to scale efficiently, securely, and transparently.
 
-- SingularityNET: SingularityNET and FF are collaborating to store metadata on Filecoin via Lighthouse, enhancing the security and provenance of decentralized data storage.
+- SingularityNET: SingularityNET and FF are collaborating to store metadata on Filecoin via [Lighthouse](/ecosystem-explorer/lighthouse), enhancing the security and provenance of decentralized data storage.
 - Theoriq: FF and Theoriq are developing AI agents trained on open datasets stored on Filecoin, including a current project enabling natural language queries for Filecoin docs and a proposed project leveraging declassified CIA datasets for efficient and verifiable research.
-- Bagel: In collaboration with Bagel, FF is enabling AI developers to train and store models using Filecoin’s decentralized compute and storage network, optimizing resource utilization for machine learning workloads and driving the adoption of decentralized infrastructure.
-- Nuklai: Nuklai has integrated Filecoin to make metadata publicly accessible and is exploring Filecoin as a core storage cluster for enterprise use cases, offering secure, perpetual, and decentralized data storage.
+- [Bagel](/ecosystem-explorer/bagel): In collaboration with Bagel, FF is enabling AI developers to train and store models using Filecoin’s decentralized compute and storage network, optimizing resource utilization for machine learning workloads and driving the adoption of decentralized infrastructure.
+- [Nuklai](/ecosystem-explorer/nuklai): Nuklai has integrated Filecoin to make metadata publicly accessible and is exploring Filecoin as a core storage cluster for enterprise use cases, offering secure, perpetual, and decentralized data storage.
 
 Looking ahead, as new blockchain networks and layer-2s gain traction, Filecoin can be deeply embedded within their architectures, serving as a reliable and trustless storage layer. With the emergence of more AI tools, Filecoin can serve as an ideal storage option to support data verifiability and traceability.
 
@@ -71,13 +71,13 @@ Fast Finality in Filecoin (F3) represents one of the [biggest storage-retrieval 
 
 #### All Systems Go: FF Launches the Filecoin Ecosystem Digest
 
-In August, FF launched [The Filecoin Ecosystem Digest](/digest), a collection of seven editorial articles authored by individuals from the ecosystem. This inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and sustainable data centers. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future with expert contributors from FilOz, Numbers Protocol, DeStor, ND Labs, Holon Investments, and Ansa Research.
+In August, FF launched [The Filecoin Ecosystem Digest](/digest), a collection of seven editorial articles authored by individuals from the ecosystem. This inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and sustainable data centers. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future with expert contributors from FilOz, [Numbers Protocol](/ecosystem-explorer/numbers-protocol), [DeStor](/ecosystem-explorer/destor), ND Labs, Holon Investments, and Ansa Research.
 
 #### Meet the New Organizations Developing the Network
 
 The Filecoin ecosystem offers a thriving ecosystem for projects, teams, and companies to build technology for today and the future. Over the past several months, new organizations have launched to support the growth and decentralization of the network, driving change across Filecoin and the web.
 
-[FIL-B](https://fil.builders/), [FilOz](https://www.filoz.org/), [Akave](https://www.akave.ai/), [Curio](https://curiostorage.org/), [Storacha](https://storacha.network/), [Filponto](https://filponto.io/), [IPC](https://docs.ipc.space/), [ANSA Research](https://ansaresearch.ai/), [CryptoEconLab](https://cryptoeconlab.io/), [DeStor](https://destor.com/), and [Space Meridian](https://meridian.space/) are just some of the new organizations helping to make Filecoin the base layer of the decentralized web.
+[FIL-B](https://fil.builders/), [FilOz](https://www.filoz.org/), [Akave](/ecosystem-explorer/akave), [Curio](https://curiostorage.org/), [Storacha](/ecosystem-explorer/storacha-network), [Filponto](https://filponto.io/), [IPC](https://docs.ipc.space/), [ANSA Research](https://ansaresearch.ai/), [CryptoEconLab](https://research.protocol.ai/groups/cryptoeconlab/), [DeStor](/ecosystem-explorer/destor), and [Space Meridian](https://meridian.space/) are just some of the new organizations helping to make Filecoin the base layer of the decentralized web.
 
 ![](/assets/images/dall-e-2024-05-16-11.07.50-a-realistic-clean-and-minimalistic-scene-using-only-white-and-blue-colors-1.webp)
 
@@ -157,7 +157,7 @@ Filecoin is maturing and more decentralized than ever. FFn refreshed the Orbit C
 
 #### FIL Singapore
 
-At FIL Singapore, [hosted by MetaPals and supported by FF](https://lu.ma/escdw9dx?tk=LRE4fg), Aethir announced a collaboration with FF to help power the Filecoin network by securely storing AI and node data with advanced GPU leasing. FIL SG: Web3 Wonderland was the marquee event alongside TOKEN2049, bringing together some of the sharpest minds and most innovative projects across Web3 and AI.
+At [FIL Singapore](https://lu.ma/escdw9dx?tk=LRE4f), hosted by [MetaPals](/ecosystem-explorer/metapals) and supported by FF, [Aethir](/ecosystem-explorer/aethir) announced a collaboration with FF to help power the Filecoin network by securely storing AI and node data with advanced GPU leasing. FIL SG: Web3 Wonderland was the marquee event alongside TOKEN2049, bringing together some of the sharpest minds and most innovative projects across Web3 and AI.
 
 ![](/assets/images/01-title.webp)
 

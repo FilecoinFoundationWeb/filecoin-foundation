@@ -22,7 +22,7 @@ Q&A with Kelani Nichole, Founder of TRANSFER on preserving artistic value with d
 
 Experimental media art has long been overlooked by the traditional art world, and because of the rapid rate of obsolescence, much of the work is at risk of loss.
 
-[TRANSFER](http://transfer.art) is an experimental space exhibiting virtual worlds and decentralized networks in contemporary art since 2013. Post-pandemic TRANSFER has been virtual-first, exhibiting internationally at institutions, art fairs, and pop-ups. In 2023, TRANSFER launched an initiative to preserve all of the works they’ve supported over the years with the [TRANSFER Data Trust](https://transfergallery.com/data-trust/), an artist-owned cooperative trust model that artists can use to maintain and grow the value of their artwork.
+[TRANSFER](http://transfer.art) is an experimental space exhibiting virtual worlds and decentralized networks in contemporary art since 2013. Post-pandemic TRANSFER has been virtual-first, exhibiting internationally at institutions, art fairs, and pop-ups. In 2023, TRANSFER launched an initiative to preserve all of the works they’ve supported over the years with the [TRANSFER Data Trust](/ecosystem-explorer/transfer-data-trust), an artist-owned cooperative trust model that artists can use to maintain and grow the value of their artwork.
 
 ![Installation View TRANSFER Download at The Thoma Foundation in Santa Fe, 2018](https://lh7-us.googleusercontent.com/q-4Qu09242_zGqUTAU4OcblGN5ZPs7cy-LRgQzE9fLoczigTxKKtoDKqrDbRQKBZW3WRs23oF0etAJ6ter-ATP7Zv6yTWWAKiBdhORgvYaAPbvGpN9qz_Ee-cftIfrab1iFw6UQ3-rdoraO5ptI3JqU)
 _Installation view of TRANSFER Download exhibition at The Thoma Foundation in Santa Fe, 2018._
@@ -37,7 +37,7 @@ Recently, we had an opportunity to talk with Kelani Nichole, Founder of TRANSFER
 
 The TRANSFER Data Trust aims to be a future-proofed method of thinking about data stewardship.
 
-With support from FF’s Dev Grant program, TRANSFER was able to build a [proof-of-concept prototype](https://transfer-trust.fission.app/) for the public-facing component. Working with another project in the Filecoin ecosystem, [Fission](https://github.com/fission-codes), we built and deployed a decentralized catalog for works in the trust, which essentially makes an end-user a node in our decentralized data network, authenticating their browser as an access point, and delivering data from the decentralized web about the inventory of works available.
+With support from FF’s Dev Grant program, TRANSFER was able to build a proof-of-concept prototype for the public-facing component. Working with another project in the Filecoin ecosystem, [Fission](https://github.com/fission-codes), we built and deployed a decentralized catalog for works in the trust, which essentially makes an end-user a node in our decentralized data network, authenticating their browser as an access point, and delivering data from the decentralized web about the inventory of works available.
 
 ![](https://lh7-us.googleusercontent.com/HLW1nVm4lBmb31IeL3Ph2sXq2-ueNSHlGynm9V34ePot3pXrTVBNJA1O2YPv4XOngmI9rxVQjqlLiMJ2l_rdZ78_2-JX94wEwWXOoAVPHGr0SVJDlMJv7Kv08ObYoi77P-0TEwYGFBpfFxK3DovFU6I)
 

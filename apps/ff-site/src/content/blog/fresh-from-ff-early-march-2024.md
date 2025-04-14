@@ -22,7 +22,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 **Filecoin Foundation announced the formation of the [Developer Working Group (DevWG)](https://github.com/filecoin-project/DeveloperWG).** Community members can share knowledge and perspectives in areas that incorporate their technical or industry expertise, raise challenges and questions for collective deliberation, advocate the importance of developing in specific areas of the Filecoin Network, provide updates on projects and plans within the Filecoin ecosystem, and discuss open FIPs and develop a coordinated presence in the Filecoin governance process. Learn more on the [ReadMe](https://github.com/filecoin-project/DeveloperWG) and join the [\#dev-wg](https://filecoinproject.slack.com/archives/C06G5K8H3J7) Slack channel to participate.
 
-**FFDW hosted the inaugural Social Impact Summit on February 27.** Co-hosted with the Blockchain Law for Social Good Center (BL4SG), the Summit dove into how emerging technologies can create lasting impact, empower communities, and foster collaboration across diverse industries. The Summit welcomed a diverse audience – from academics, to changemakers in the human rights space – to learn about socially beneficial use cases of decentralized technologies, including FFDW project partners [Flickr Foundation](https://www.flickr.org/), [Guardian Project](https://guardianproject.info/), [MuckRock](https://www.muckrock.com/), and [Starling Lab](https://www.starlinglab.org/).
+**FFDW hosted the inaugural Social Impact Summit on February 27.** Co-hosted with the Blockchain Law for Social Good Center (BL4SG), the Summit dove into how emerging technologies can create lasting impact, empower communities, and foster collaboration across diverse industries. The Summit welcomed a diverse audience – from academics, to changemakers in the human rights space – to learn about socially beneficial use cases of decentralized technologies, including FFDW project partners [Flickr Foundation](https://www.flickr.org/), [Guardian Project](https://guardianproject.info/), [MuckRock](/ecosystem-explorer/muckrock), and [Starling Lab](/ecosystem-explorer/starling-lab).
 
 ## Ecosystem
 
@@ -35,7 +35,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 - Check out these new tools for SPs:
 
-  - The [Data Onboarding Dashboard and API for CIDgravity](https://app.cidgravity.com/) offers a seamless onboarding experience, designed to streamline the process for clients and offer onramps for engaging with SPs who manage their deal flow through CIDgravity.
+  - The [Data Onboarding Dashboard and API for [CIDgravity](/ecosystem-explorer/cidgravity)](https://app.cidgravity.com/) offers a seamless onboarding experience, designed to streamline the process for clients and offer onramps for engaging with SPs who manage their deal flow through [CIDgravity](/ecosystem-explorer/cidgravity).
   - New software platforms such as [Steeldome](https://www.steeldomecyber.com/), [Lighthouse](/ecosystem-explorer/lighthouse), [GhostDrive](/ecosystem-explorer/ghostdrive-global), and [Banyan](/ecosystem-explorer/banyan) are supporting deal-making and help driving more data onto the network.
   - [Web3Mine](https://www.web3mine.io/provide) is helping SPs build a viable, performant cloud storage business with Web3 tech for operations looking to further monetize storage capacity while simplifying Filecoin orchestration.
 

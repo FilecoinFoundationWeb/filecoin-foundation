@@ -23,9 +23,9 @@ This year, we received proposals that demonstrated impressive innovation within 
 
 - [Filecoin x Unreal Engine 5](https://www.3studio.online/): A multi-front integration that will bring decentralized storage via web3.storage and Filecoin payments to their existing Unreal Engine blockchain plugin.
 - [Lava: an incentivized RPC Pool](https://www.lavanet.xyz/): A framework for deploying multiple FVM-based applications using public Filecoin RPC solutions with functionality for one-click deployments, payments and more.
-- [Ghostdrive](https://ghostdrive.com/): A client-side storage solution optimized by FVM integration for data uploading, downloading and sharing.
+- [GhostDrive](/ecosystem-explorer/ghostdrive-global): A client-side storage solution optimized by FVM integration for data uploading, downloading and sharing.
 - [Lighthouse FVM Tooling](https://docs.lighthouse.storage/lighthouse-1/filecoin-virtual-machine): An FVM-integrated SDK for uploading and downloading files on Filecoin.
-- [TRANSFER Data DAO](https://transfer-trust.fission.app/): An open collective trust designed to create encrypted file systems and provide access to a global digital data archive.
+- TRANSFER Data DAO _(original link no longer available)_: An open collective trust designed to create encrypted file systems and provide access to a global digital data archive.
 
 We encourage everyone to continue sharing their creative ideas to help shape the future of the Filecoin ecosystem. Make sure to check out our [grant criteria](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Open%20Grants%20README.md) to inform your proposals.
 
@@ -48,14 +48,14 @@ The [FF Annual Report](/blog/filecoin-foundation-2023-annual-report), published 
 In FY’24, we’re continuing to fund projects that drive the ecosystem forward. In addition to 24 active projects (as August 2024), we had several projects complete their grant milestones, including:
 
 - [IPFS VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Dataseek.ipfs-vscode-extension): This extension is live and ready for users interested in installing and deploying the IPFS node daemon in the VS Code environment.
-- [LabDAO + Bacalhau Integration](https://www.labdao.xyz/): This integration provides scientists a low cost, easily accessible, and transparent environment for useful data workloads on Filecoin and IPFS.
-- [Hamster](https://hamsternet.io/): This tool ensures developers keen on security and privacy have an all-inclusive development and automation experience for Filecoin deployment.
+- [LabDAO](/ecosystem-explorer/labdao) + [Bacalhau](/ecosystem-explorer/bacalhau) Integration: This integration provides scientists a low cost, easily accessible, and transparent environment for useful data workloads on Filecoin and IPFS.
+- [Hamster](/ecosystem-explorer/hamster): This tool ensures developers keen on security and privacy have an all-inclusive development and automation experience for Filecoin deployment.
 - [Spheron](https://www.spheron.network/): Heroku for Decentralized Storage: This protocol is versatile and supports a wide range of scalable storage frameworks sufficient for all types of developer and business needs.
 - [ipEHR](https://ipehr.org/): This tool enhances critical data management for the healthcare industry.
 
 ## FIL-RetroPGF-1
 
-Several Filecoin Grant projects were nominated in [FIL-RetroPGF](https://www.fil-retropgf.io/projects?search=), a retroactive Public Goods funding program, including Portrait, Storswift, IPLD Prolly Trees, and Fileverse. A badgeholder voting process determined the allocation of funds. If you want to know more, here is a [deep dive](https://medium.com/cryptoeconlab/a-deepdive-into-fil-retropgf-1-results-7e5a0bcdba08) into the results.
+Several Filecoin Grant projects were nominated in [FIL-RetroPGF](https://www.fil-retropgf.io/projects?search=), a retroactive Public Goods funding program, including [Portrait](/ecosystem-explorer/portrait), Storswift, IPLD Prolly Trees, and [Fileverse](/ecosystem-explorer/fileverse). A badgeholder voting process determined the allocation of funds. If you want to know more, here is a [deep dive](https://medium.com/cryptoeconlab/a-deepdive-into-fil-retropgf-1-results-7e5a0bcdba08) into the results.
 
 ## Q3 Focus Areas and Outlook
 

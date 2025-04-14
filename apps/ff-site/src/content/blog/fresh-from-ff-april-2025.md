@@ -17,7 +17,7 @@ seo:
 
 [Decentralize Your Data. Store It with Filecoin](/blog/decentralize-your-data-store-it-with-filecoin). The future of storage isn’t just about where data lives –– it’s also about who controls it. Filecoin puts that power back in your hands. Combining blockchain technology with decentralized storage offers a fundamentally different approach to data storage. By distributing data across a decentralized, global network, Filecoin creates a foundation for a more open, resilient, and user-controlled digital future.
 
-[Ungate integrates Filecoin to enhance security, scalability, and reliability](https://x.com/UngateAI/status/1899802770821226549). Ungate Wukong – the Autonomous Verification Stack (AVS) for AI agents – is changing how autonomous agents operate through cryptographically verifiable and transparent actions. Ungate has integrated Filecoin via [Lighthouse](https://www.lighthouse.storage/), a platform built with Filecoin offering perpetual storage, to archive AI-generated proofs on decentralized storage. 
+[Ungate integrates Filecoin to enhance security, scalability, and reliability](https://x.com/UngateAI/status/1899802770821226549). Ungate Wukong – the Autonomous Verification Stack (AVS) for AI agents – is changing how autonomous agents operate through cryptographically verifiable and transparent actions. Ungate has integrated Filecoin via [Lighthouse](/ecosystem-explorer/lighthouse), a platform built with Filecoin offering perpetual storage, to archive AI-generated proofs on decentralized storage. 
 
 ## Ecosystem
 

@@ -65,7 +65,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 - Megan Klimen spoke at Earth Commons, a conference series exploring the nexus of Web3 and climate at [LabWeek Public Goods](https://www.labweek.io/24-pg).
 - Danny O'Brien led workshops on the topics of public goods profit sharing and Internet/Web3 standards at [Funding the Commons](/events/funding-the-commons). Keep an eye out on the [Funding the Commons YouTube channel](https://www.youtube.com/@Funding-the-Commons/videos) for an event recap!
 - FF supported the [Filecoin Orbit Ecosystem Showcase at Teamz Summit](https://lu.ma/fil-teamz), where Orbit Ambassadors outlined the unprecedented growth the Filecoin ecosystem is experiencing because of the Filecoin Virtual Machine (FVM) and InterPlanetary Consensus (IPC).
-- Brynn O’Donnell and Jefferson Sankara from the social impact team spoke at the University of Maryland’s EASIER Data Initiative workshop on [Open Geospatial Science and the Decentralized Geospatial Web](https://workshop.easierdata.org/).
+- Brynn O’Donnell and Jefferson Sankara from the social impact team spoke at the University of Maryland’s [EASIER Data Initiative](/ecosystem-explorer/easier-data-initiative) workshop on [Open Geospatial Science and the Decentralized Geospatial Web](https://workshop.easierdata.org/).
 - See you at [Consensus](https://consensus2024.coindesk.com/), May 29-31 in Austin, TX. Find FF and teams across the Filecoin ecosystem in Austin at events throughout the week. Stay tuned for more details.
 - Join us for the Orbit Europe Roadshow!
 

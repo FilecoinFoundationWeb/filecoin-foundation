@@ -9,7 +9,6 @@ image:
   src: /assets/images/66073291e29bf5086866ba7e_chemotronix.png
 category: decentralized-science
 description: Chemotronix leverages Filecoin for decentralized data storage.
-website: https://chemotronix.org/s
 tech:
   - filecoin
 twitter: https://twitter.com/chemotronix

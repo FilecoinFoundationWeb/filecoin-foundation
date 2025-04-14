@@ -19,7 +19,7 @@ seo:
 
 It’s time to [register](https://share.hsforms.com/1sOOp2P0hRJuuzhLG-BS4RQ3orpu) for the upcoming Filecoin II Launchpad Accelerator Demo Day, taking place September 28 @ 11:00 AM EDT!
 
-Powered by [Tachyon](https://mesh.xyz/tachyon/), an accelerator for early-stage blockchain and Web3 startups, the Filecoin Launchpad Accelerator is a full-time, fully-remote program for startups focused on the distributed and decentralized web. Twice a year, this program brings together the best founders across the world for an intense 12-week remote program to build validated, market-ready Web3 businesses.
+Powered by Tachyon _(original link no longer available)_, an accelerator for early-stage blockchain and Web3 startups, the Filecoin Launchpad Accelerator is a full-time, fully-remote program for startups focused on the distributed and decentralized web. Twice a year, this program brings together the best founders across the world for an intense 12-week remote program to build validated, market-ready Web3 businesses.
 
 On September 28, you can take in a day of demonstrations from the current cohort of startups working to build more open, interoperable and programmable tools, infrastructure, and applications for the distributed and decentralized web!
 
@@ -37,7 +37,7 @@ Below is a snapshot of each team. And you can find [more information](https://me
 
 **Nftfy** enables fractional ownership for the world’s most valuable NFTs.
 
-**CID Gravity** is building a 2nd layer of trust between Filecoin stakeholders, de-risking their data and increasing miner profitability.
+**[CIDGravity](/ecosystem-explorer/cidgravity)** is building a 2nd layer of trust between Filecoin stakeholders, de-risking their data and increasing miner profitability.
 
 **0xEssentials** provides permissionless gaming platforms where users bring their own NFTs to play, compete, and win.
 
@@ -53,7 +53,7 @@ Below is a snapshot of each team. And you can find [more information](https://me
 
 **The Convo Space** is a decentralized conversation layer of the Internet, offering all the tooling and infrastructure to add a social layer to any platform, supercharged by Web3.
 
-**The Mona** is a metaverse society for high-end, 3D art.
+**[Mona](/ecosystem-explorer/mona)** is a metaverse society for high-end, 3D art.
 
 **Paras** is a Hedgey protocol for adding options markets to any token.
 
@@ -63,6 +63,6 @@ Below is a snapshot of each team. And you can find [more information](https://me
 
 **Nifty Royale** is an NFT platform that distributes NFTs through gamified no-loss prize pools.
 
-**WeatherXM** **Inc**. is a community-powered weather network that rewards station owners and provides accurate weather services to Web3 enterprises.
+**[WeatherXM](/ecosystem-explorer/weatherxm)** is a community-powered weather network that rewards station owners and provides accurate weather services to Web3 enterprises.
 
 [REGISTER NOW](https://share.hsforms.com/1sOOp2P0hRJuuzhLG-BS4RQ3orpu) to see these startups in action on September 28 @ 11:00 AM EDT for the Filecoin II Launchpad Accelerator Demo Day! And don’t forget to [**submit your application**](https://prdpjz4zqoq.typeform.com/to/RxQSZ9dq?typeform-source=mesh.xyz)to be part of the Winter 2021 cohort for the upcoming Filecoin Launchpad Accelerator III program!

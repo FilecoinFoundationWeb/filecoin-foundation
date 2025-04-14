@@ -22,7 +22,7 @@ Let's explore the vast array of "as-a-service" offerings for storage providers, 
 
 ## Sales and Business Development-as-a-Service
 
-Engaging with potential clients and expanding your user base is crucial. Companies like [Distributed Storage Solutions](https://distributedstorage.com/), [PiKNiK](https://www.piknik.cloud/), and [Seal Storage](https://www.sealstorage.io/) offer marketing and selling storage solutions. By leveraging their expertise, you can focus on your core storage offerings while they handle client acquisition and relationship management.
+Engaging with potential clients and expanding your user base is crucial. Companies like [Distributed Storage Solutions](https://distributedstorage.com/), [PiKNiK](/ecosystem-explorer/piknik) offer marketing and selling storage solutions. By leveraging their expertise, you can focus on your core storage offerings while they handle client acquisition and relationship management.
 
 ## Infrastructure-as-a-Service (IaaS)
 
@@ -34,7 +34,7 @@ Sealing is an important but nuanced process in the Filecoin ecosystem. However, 
 
 ## Software-as-a-Service
 
-Software solutions can significantly enhance user experience and operational efficiency. Companies like [GhostDrive](https://ghostdrive.com/), Holon, and [SteelDome](https://www.steeldomecyber.com/?doing_wp_cron=1695407596.3194169998168945312500) offer software tools, such as a consumer user interface, data recovery, protection, and optimization. And the [Filecoin REST API](https://filecoin-project.github.io/filecoin-http-api) provides clear documentation for the S3 gateway.
+Software solutions can significantly enhance user experience and operational efficiency. Companies like [GhostDrive](/ecosystem-explorer/ghostdrive-global), Holon, and [SteelDome](https://www.steeldomecyber.com/?doing_wp_cron=1695407596.3194169998168945312500) offer software tools, such as a consumer user interface, data recovery, protection, and optimization. And the [Filecoin REST API](https://filecoin-project.github.io/filecoin-http-api) provides clear documentation for the S3 gateway.
 
 ## Client Services
 

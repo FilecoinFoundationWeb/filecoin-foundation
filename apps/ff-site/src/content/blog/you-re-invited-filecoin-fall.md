@@ -21,7 +21,7 @@ As we enjoy the last days of summer, we’re already planning for our next set o
 
 ## First stop: Global Blockchain Business Council UNGA (Sept. 20)
 
-Filecoin Foundation is heading to New York City to sponsor the [Global Blockchain Business Council’s UNGA](https://gbbcouncil.org/event/blockchain-central-unga-2022/) in September. The event will draw thought leaders and the people driving change across blockchain, business, government, and technology for discussions on how blockchain-powered solutions can enable progress toward the United Nations’ Sustainable Development Goals.
+Filecoin Foundation is heading to New York City to sponsor the Global Blockchain Business Council’s UNGA _(original link no longer available)_ in September. The event will draw thought leaders and the people driving change across blockchain, business, government, and technology for discussions on how blockchain-powered solutions can enable progress toward the United Nations’ Sustainable Development Goals.
 
 ## Next up: Unfinished Live (Sept. 21–24)
 
@@ -37,7 +37,7 @@ Use the [promo code FFVIP](http://www.eventbrite.com/e/396630501507/?discount=FF
 
 ## Explore Greener Solutions: Sustainable Blockchain Summit LATAM (Oct. 12)
 
-Organized by the Filecoin Green team, the Sustainable Blockchain Summit LATAM seeks to catalyze projects that will better align the global economy with the natural world, and broaden the scope of our ambitions to encompass all planetary boundaries required to keep our world habitable. Join the world’s premiere forum at the intersection of Web3 and the biosphere, and help us solve these problems together.
+Organized by the [Filecoin Green](/ecosystem-explorer/filecoin-green) team, the Sustainable Blockchain Summit LATAM seeks to catalyze projects that will better align the global economy with the natural world, and broaden the scope of our ambitions to encompass all planetary boundaries required to keep our world habitable. Join the world’s premiere forum at the intersection of Web3 and the biosphere, and help us solve these problems together.
 
 ## Let’s Cheers to 2 Years: Filecoin Mainnet Launch Anniversary
 

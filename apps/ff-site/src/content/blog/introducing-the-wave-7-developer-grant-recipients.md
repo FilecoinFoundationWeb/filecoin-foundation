@@ -41,15 +41,15 @@ The Geo Web project is a set of open protocols and property rights for anchoring
 
 [OpenRPC + Filecoin](https://github.com/filecoin-project/devgrants/blob/b55e88ea50ecee739744c3571dcc7cb4724d2be8/open-grant-proposals/open-proposal-open-rpc-part-2.md)
 
-Zachary Belford of the team that developed OpenRPC, an API description language built for JSON-RPC, is building a Filecoin-hosted Docs Generator site for the Lotus network. The site will be backed up by glif nodes and will improve tooling and testing functionalities, which will allow Filecoin developers to more easily generate and deploy documentation.
+Zachary Belford of the team that developed OpenRPC, an API description language built for JSON-RPC, is building a Filecoin-hosted Docs Generator site for the [Lotus](/ecosystem-explorer/lotus) network. The site will be backed up by glif nodes and will improve tooling and testing functionalities, which will allow Filecoin developers to more easily generate and deploy documentation.
 
 [Go-graphsplit](https://github.com/filecoin-project/devgrants/blob/8451afe585320d8401b0c404304d7f7afd859864/open-grant-proposals/open-proposal-Go-graphsplit.md)
 
-Go-graphsplit is a tool used for splitting large datasets into graph slices fit for making deals on the Filecoin network, which will streamline data retrieval. The FileDrive team is one of the leading storage competitors on Slingshot and their launch of go-graphsplit represents another significant contribution to the ecosystem.
+Go-graphsplit is a tool used for splitting large datasets into graph slices fit for making deals on the Filecoin network, which will streamline data retrieval. The [FileDrive](/ecosystem-explorer/filedrive) team is one of the leading storage competitors on Slingshot and their launch of go-graphsplit represents another significant contribution to the ecosystem.
 
 [Lighthouse Filecoin-Ethereum Infra](https://github.com/nandit123/devgrants/blob/master/open-grant-proposals/lighthouse.md)
 
-Lighthouse provides a way for Ethereum smart contracts to request Filecoin storage of content identifiers (CIDs) in IPFS via Textile’s Powergate. With this cross-chain infrastructure, DeFi and NFT-related projects building on the Ethereum blockchain will be able to employ Lighthouse for verifiable storage on the Filecoin Network.
+[Lighthouse](/ecosystem-explorer/lighthouse) provides a way for Ethereum smart contracts to request Filecoin storage of content identifiers (CIDs) in IPFS via Textile’s Powergate. With this cross-chain infrastructure, DeFi and NFT-related projects building on the Ethereum blockchain will be able to employ Lighthouse for verifiable storage on the Filecoin Network.
 
 [Music NFT Portal](https://github.com/filecoin-project/devgrants/blob/4267d83cf06219aec464ea143090480a089733da/open-grant-proposals/open-proposal-music-nft-portal.md)
 

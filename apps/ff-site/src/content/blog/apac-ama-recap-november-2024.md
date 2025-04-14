@@ -62,7 +62,7 @@ A significant portion of the AMA focused on the Filecoin Plus (Fil+) program. Pa
 
 Projects including Filecoin Virtual Machine (FVM) and Interplanetary Consensus (IPC) are key to Filecoin’s scalability and interoperability goals. Attendees expressed keen interest in timelines for deploying applications such as cross-network bridges, perpetual storage solutions, and data DAOs.
 
-The group discussed recent technical milestones and the collaborative efforts shaping its development such as Proof of Data Possession (PDP) for enhanced retrieval services and the need for new guides and documentation for new tools such as [Station](https://docs.filstation.app/).
+The group discussed recent technical milestones and the collaborative efforts shaping its development such as Proof of Data Possession (PDP) for enhanced retrieval services and the need for new guides and documentation for new tools such as Station _(original link no longer available)_.
 
 ### Reference Links
 

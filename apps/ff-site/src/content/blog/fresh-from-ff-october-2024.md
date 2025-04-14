@@ -14,7 +14,7 @@ seo:
     long-term preservation and distribution of documents.
 ---
 
-[Filecoin Foundation Teams up with Aethir.](https://x.com/Filecoin/status/1837192527130059255) Announced at FIL Singapore, Aethir (decentralized GPU cloud computing) and FF are collaborating to address GPU scarcity and enhance AI-driven data security. [Aethir](https://www.aethir.com/) announced support for the Filecoin network, offering advanced GPU leasing capabilities to improve data processing and storage efficiency.
+[Filecoin Foundation Teams up with [Aethir](/ecosystem-explorer/aethir). Announced at FIL Singapore, Aethir (decentralized GPU cloud computing) and FF are collaborating to address GPU scarcity and enhance AI-driven data security. Aethir announced support for the Filecoin network, offering advanced GPU leasing capabilities to improve data processing and storage efficiency.
 
 [The Filecoin Ecosystem Digest: All Systems Go](/digest) is live! The inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and sustainable data centers. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future.
 

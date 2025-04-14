@@ -25,7 +25,7 @@ Spread across three days of talks and presentations, reps from many exciting pro
 
 ## Highlights from Filecoin & Storage Provider Day
 
-Filecoin & Storage Provider Day on April 6 focused on driving broader ecosystem growth. Jen King and Mara McMahon from the FilStor/DeStor team shared insights on aligning product strategies with customer needs to drive Filecoin adoption.
+Filecoin & Storage Provider Day on April 6 focused on driving broader ecosystem growth. Jen King and Mara McMahon from the FilStor/[DeStor](/ecosystem-explorer/destor) team shared insights on aligning product strategies with customer needs to drive Filecoin adoption.
 
 Leveraging her experience crafting customer-led product strategies, King detailed how a well-defined product market fit is essential for startups and established companies alike, as it ensures that their products not only meet the existing demands of the market but also seamlessly integrate into customers’ workflows.
 
@@ -43,7 +43,7 @@ FF’s Yan Bo Ng explored the potential of integrating FVM with artificial intel
 
 ![FF’s Yan Bo Ng explored the potential of integrating FVM with artificial intelligence to enhance data processing capabilities across the Filecoin network.](/assets/images/unnamed-2-.jpg)
 
-Titan Network’s Konstantin Tkachuk presented on the transformative potential of using idle edge devices within the framework of DePIN. “In order to really capture the DePIN opportunity, and bring this technology closer to people, to you and me, we have to use the resources that are already available in this space,” Tkachuk said. “And by those resources I mean smartphones, tablets, PCs, and other devices that are surrounding us on a day-to-day basis.” Billions of global edge and personal devices, often overlooked Tkachuk said represent a vast untapped resource that could significantly advance the decentralization movement.
+[Titan Network](/ecosystem-explorer/titan-network)’s Konstantin Tkachuk presented on the transformative potential of using idle edge devices within the framework of DePIN. “In order to really capture the DePIN opportunity, and bring this technology closer to people, to you and me, we have to use the resources that are already available in this space,” Tkachuk said. “And by those resources I mean smartphones, tablets, PCs, and other devices that are surrounding us on a day-to-day basis.” Billions of global edge and personal devices, often overlooked Tkachuk said represent a vast untapped resource that could significantly advance the decentralization movement.
 
 ![](/assets/images/unnamed-3-.jpg)
 

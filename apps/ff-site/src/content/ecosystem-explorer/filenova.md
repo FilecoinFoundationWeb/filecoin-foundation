@@ -7,7 +7,6 @@ image:
   src: /assets/images/filenova.png
 category: data-storage-management
 description: EVM-compatible L2 network based on Filecoin.
-website: https://filenova.org/
 tech:
   - filecoin
 repo: https://github.com/Filenova

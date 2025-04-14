@@ -28,7 +28,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 ### Developer Advocacy
 
-- Winners for the Data Economy Hackathon were announced on April 17. Participants submitted [over 120 projects](https://dorahacks.io/hackathon/filecoin-data-economy/buidl), including 67 for the Filecoin track and 20 for Interplanetary Consensus (IPC).
+- Winners for the Data Economy Hackathon were announced on April 17. Participants submitted over 120 projects _(original link no longer available)_, including 67 for the Filecoin track and 20 for Interplanetary Consensus (IPC).
 - FF Developer Advocate Jenks Guo gave a keynote at TeamZ Summit in Japan on AI Trust and Filecoin, and spoke at the Orbit Filecoin Ecosystem Showcase side event sharing the latest developments, growth, and transformative potential of Filecoin's decentralized storage network.
 
 ## Network Operations
@@ -50,7 +50,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 - The April 18 edition of the Solana Community Update [highlighted](https://links.solana.org/e/evib?_t=6b1b9c346a704d0389c0a54539fcad7b&_m=cce4b150eead42069c1cfd3da5c8fb4c&_e=VSw4mjgbOriVAms_zEMB8IuPB7YevzCJ0O2EhIMt-H0uXFS4GEtKNCh-Sj4a11nG) the Triton One project to archive the entire Solana transaction history [on Filecoin](https://twitter.com/FilFoundation/status/1778828615557214380), making all of Solana's history accessible, content addressable, and available through a variety of means.
 - Read [Preserving Human Rights Data with the Filecoin Network: A Journey into the Decentralized Web with HRDAG](https://ffdweb.org/blog/preserving-human-rights-data-with-the-filecoin-network-a-journey-into-the-decentralized-web-with-hrdag/), a guest post written by Patrick Ball, HRDAG’s Director of Research, exploring how data serves as the backbone of truth in our collective memory.
 - Missed out on FIL Hong Kong? Check out the recap: [Filecoin Ecosystem Shines at FIL Hong Kong: AI, DePIN, FVM, and More](/blog/filecoin-ecosystem-shines-at-fil-hong-kong-ai-depin-fvm-and-more), and find the [FIL Hong Kong playlist of sessions](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kmq5JSUq2IrqO3Y33PVJsK) on Filecoin Foundation’s YouTube.
-- Senior Fellow and DWeb Strategy Danny O’Brien delivered opening remarks at a [webinar on community archiving and decentralized storage](https://youtu.be/fbbqdH73GHY) hosted by TechSoup, an FFDW project partner. Other projects partners OpenArchive and Starling Lab and FF dev grantee TRANSFER performed demos of their tools.
+- Senior Fellow and DWeb Strategy Danny O’Brien delivered opening remarks at a [webinar on community archiving and decentralized storage](https://youtu.be/fbbqdH73GHY) hosted by TechSoup, an FFDW project partner. Other projects partners OpenArchive and [Starling Lab](/ecosystem-explorer/starling-lab) and FF dev grantee TRANSFER performed demos of their tools.
 - Founding Officer Clara Tsao and Head of Events Meredith Pallante participated in roundtable discussions at the [Project Liberty Summit](https://www.mccourt.com/project-liberty-institute-inaugural-summit-hosted-in-boston/) at MIT –– a gathering focused on how to ethically design, develop, and govern the internet of tomorrow.
 
 ### Events
