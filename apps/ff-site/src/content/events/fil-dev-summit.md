@@ -1,10 +1,10 @@
 ---
-title: FIL Dev Summit 6
+title: "FIL Dev Summit 6: Toronto"
 description: FIL Dev Summit is a gathering of developers, builders, and engaged
   community members who want to contribute to the core protocol and network
   evolution of Filecoin (think IPFS Thing, but bigger!). This summit is more
   than just a meetup—it's a place for meaningful and impactful conversations
-  that help push Filecoin forward.  Discussions at the summit will cover a wide
+  that help push Filecoin forward. Discussions at the summit will cover a wide
   range of topics, from protocol scalability and network improvements to the
   intricacies of data onboarding and governance structures.These conversations
   serve to share and refine improvements - where participants can gain insights

@@ -225,6 +225,16 @@ const redirects = [
     permanent: true,
   },
   {
+    source: '/events/fil-dev-summit-canada',
+    destination: '/events/fil-dev-summit',
+    permanent: true,
+  },
+  {
+    source: '/events/fil-dev-summit-iceland-2023',
+    destination: '/events/fil-dev-summit-2-iceland',
+    permanent: true,
+  },
+  {
     source: '/events/fil-dev-summit-1',
     destination: '/events/fil-dev-summit-singapore-2023',
     permanent: true,
@@ -232,6 +242,11 @@ const redirects = [
   {
     source: '/events/fil-dev-summit-singapore',
     destination: '/events/fil-dev-summit-singapore-2023',
+    permanent: true,
+  },
+  {
+    source: '/events/fil-dev-summit-singapore-2023',
+    destination: '/events/fil-dev-summit-1-singapore',
     permanent: true,
   },
   {
