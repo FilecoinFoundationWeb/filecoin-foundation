@@ -210,6 +210,21 @@ const redirects = [
 
   // EVENTS REDIRECTS
   {
+    source: '/events/decentralized-web-gateway-davos',
+    destination: '/events/davos-2022',
+    permanent: true,
+  },
+  {
+    source: '/events/the-filecoin-sanctuary-davos-2024',
+    destination: '/events/davos-2024',
+    permanent: true,
+  },
+  {
+    source: '/events/the-filecoin-sanctuary-davos',
+    destination: '/events/davos-2023',
+    permanent: true,
+  },
+  {
     source: '/events/fil-bangkok',
     destination: '/events/fil-bangkok-2024',
     permanent: true,
