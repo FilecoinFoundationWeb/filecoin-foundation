@@ -6,6 +6,7 @@ created-on: 2024-05-17T19:51:58.627000Z
 updated-on: 2024-05-17T19:51:58.641000Z
 published-on: 2024-05-17T19:51:58.651000Z
 category: ecosystem
+mandarin-translation-url: https://mp.weixin.qq.com/s/H_rID4PQJQn_4drqvBzFFw?token=519016850&lang=zh_CN
 description:
   "Filecoin Foundation is one of many teams in the Filecoin network committed
   to the growth and success of the protocol. In this post, we highlight Filecoin's

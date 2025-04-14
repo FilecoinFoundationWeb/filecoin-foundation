@@ -4,6 +4,7 @@ created-on: 2025-01-13T19:09:00.000Z
 updated-on: 2025-01-13T19:09:00.000Z
 published-on: 2025-01-13T19:09:00.000Z
 category: reports
+mandarin-translation-url: https://mp.weixin.qq.com/s/gouaZC17NbzFvkH6lURKhQ?token=519016850&lang=zh_CN
 description: In this report, you’ll read about the ways that Filecoin Foundation
   supported the Filecoin community in 2024 and learn about FF’s strategic
   priorities in 2025.

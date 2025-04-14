@@ -4,6 +4,7 @@ created-on: 2025-03-24T18:50:00.000Z
 updated-on: 2025-03-24T18:50:00.000Z
 published-on: 2025-03-24T18:50:00.000Z
 category: use-cases
+mandarin-translation-url: https://mp.weixin.qq.com/s/3nrl4mEZnxglJohnRJ8tsQ
 description: "Filecoin provides the underlying storage layer to power
   verifiable, tamper-proof, and permissionless AI models, ensuring that
   AI-generated outputs can be trusted."

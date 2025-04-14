@@ -4,6 +4,7 @@ created-on: 2024-11-18T21:22:00.000Z
 updated-on: 2024-11-19T12:37:00.000Z
 published-on: 2024-11-19T12:37:00.000Z
 category: news
+mandarin-translation-url: https://mp.weixin.qq.com/s/bphQHq7TJuZoqUan8l6zcw?token=519016850&lang=zh_CN
 description: Filecoin Network Named in the AI and Data category for Fast
   Company’s 2024 Next Big Things in Tech Awards.
 image:

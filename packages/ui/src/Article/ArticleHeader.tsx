@@ -15,7 +15,7 @@ type TitleProps = {
 
 export function ArticleHeader({ image, children }: ArticleHeaderProps) {
   return (
-    <header className="space-y-6">
+    <header className="space-y-8">
       <div className="space-y-6">{children}</div>
       <div className="relative aspect-video">
         <Image

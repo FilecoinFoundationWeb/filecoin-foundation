@@ -1,4 +1,5 @@
 import { ArticleHeader } from '@filecoin-foundation/ui/Article/ArticleHeader'
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
@@ -9,6 +10,7 @@ type BlogPostHeaderProps = {
   publishedOn: Date
   image: ImageProps
   category: string
+  mandarinTranslationUrl?: string
 }
 
 export function BlogPostHeader({
@@ -16,6 +18,7 @@ export function BlogPostHeader({
   publishedOn,
   image,
   category,
+  mandarinTranslationUrl,
 }: BlogPostHeaderProps) {
   return (
     <ArticleHeader
@@ -26,9 +29,16 @@ export function BlogPostHeader({
     >
       <TagLabel>{category}</TagLabel>
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
-      <span className="blog-post-header-date inline-block">
-        {formatDate(publishedOn)}
-      </span>
+      <div className="flex flex-col gap-4 sm:flex-row sm:justify-between">
+        <span className="blog-post-header-date inline-block">
+          {formatDate(publishedOn)}
+        </span>
+        {mandarinTranslationUrl && (
+          <ExternalTextLink href={mandarinTranslationUrl}>
+            中文版本 (Mandarin Version)
+          </ExternalTextLink>
+        )}
+      </div>
     </ArticleHeader>
   )
 }

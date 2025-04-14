@@ -27,8 +27,15 @@ export default async function BlogPost(props: BlogPostProps) {
   const { slug } = await props.params
   const data = await getBlogPostData(slug)
 
-  const { title, image, content, publishedOn, category, addTableOfContents } =
-    data
+  const {
+    title,
+    image,
+    content,
+    publishedOn,
+    category,
+    addTableOfContents,
+    mandarinTranslationUrl,
+  } = data
 
   return (
     <PageLayout>
@@ -37,6 +44,7 @@ export default async function BlogPost(props: BlogPostProps) {
         <BlogPostHeader
           title={title}
           publishedOn={publishedOn}
+          mandarinTranslationUrl={mandarinTranslationUrl}
           category={getCategoryLabel({
             collectionName: 'blog_posts',
             category,
