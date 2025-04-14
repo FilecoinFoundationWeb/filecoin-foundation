@@ -21,7 +21,7 @@ seo:
 
 ## Key Highlights
 
-- Seal Storage is a data platform that aims to make Web3 accessible for all by providing sustainable, immutable, and affordable Web3 cloud storage.
+- [Seal Storage](/ecosystem-explorer/seal-storage) is a data platform that aims to make Web3 accessible for all by providing sustainable, immutable, and affordable Web3 cloud storage.
 - As one of the earliest providers on the Filecoin network, Seal Storage is an established leader in the ecosystem. The company is a top storage provider in North America, with over 20PB of capacity across the U.S. and Canada, and is looking to add over 100PiBs more.
 - Seal Storage currently serves universities, research institutes, enterprises, and other firms to store their data in a more sustainable, affordable, and immutable way.
 - **Read the full** [Seal Storage Case Study](https://fil-foundation.on.fleek.co/hosting/FF-CaseStudy-SealStorage.pdf)
@@ -30,7 +30,7 @@ seo:
 
 The use of cloud infrastructure services has [spiked](https://www.idc.com/getdoc.jsp?containerId=IDC_P31615) over the past few years, since companies around the world were forced to digitize their businesses during the pandemic. In Q4 2021, spending on these services grew by 13.5% YoY to an average of $21.1 billion, and tech research firm IDC predicts a continuous growth and need for these services as supply continues to catch up to demand.
 
-Founded in 2021 to shake up the [$76 billion cloud storage market](https://www.fortunebusinessinsights.com/cloud-storage-market-102773) largely controlled by a few big tech companies, [Seal Storage](https://www.sealstorage.io/) provides Web3 data storage for enterprises, research institutes, and Web3 firms in need of a more sustainable, secure, and affordable home for their valuable data. Michael Horowitz, the CEO; Andrew McFarlane, CIO; and Alex Altman, COO, are the founders of Seal Storage and have been working in blockchain for the past five years on a quest to revolutionize the cloud storage industry and make Web3 accessible for all.
+Founded in 2021 to shake up the [$76 billion cloud storage market](https://www.fortunebusinessinsights.com/cloud-storage-market-102773) largely controlled by a few big tech companies, [Seal Storage](https://fil.org/ecosystem-explorer/seal-storage) provides Web3 data storage for enterprises, research institutes, and Web3 firms in need of a more sustainable, secure, and affordable home for their valuable data. Michael Horowitz, the CEO; Andrew McFarlane, CIO; and Alex Altman, COO, are the founders of Seal Storage and have been working in blockchain for the past five years on a quest to revolutionize the cloud storage industry and make Web3 accessible for all.
 
 Seal’s team previously held careers in traditional finance, cloud storage, and cybersecurity. As the blockchain industry developed, each team member seized the opportunity to be involved in the emerging tech for various reasons. The Filecoin network was of special interest to all of the founders due to it’s immutable nature, data preservation, security, and the ability to create real-world applications through Web3.
 
@@ -86,6 +86,6 @@ Seal Storage continues to add more capacity and bring new data clients to the Fi
 
 The team believes that decentralized storage is a building block to Web3, and is continually looking for ways to further encourage the next generation of the decentralized internet.
 
-Learn more about [Seal Storage](https://www.sealstorage.io/).
+Learn more about [Seal Storage](https://sealstorage.io/).
 
 And to learn more about Filecoin, storage providers and developer use cases, please visit: [Filecoin.io](https://filecoin.io/) or [fil.org](/).

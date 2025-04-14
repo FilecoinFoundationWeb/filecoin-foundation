@@ -41,11 +41,11 @@ CIDgravity is a great tool for enterprises and independent software vendors look
 
 ## GhostDrive
 
-[GhostDrive](https://ghostdrive.com/) is a data storage platform prioritizing [privacy and security](/blog/ecosystem-spotlight-ghostdrives-secure-decentralized-storage-now-on-mobile) through encryption, decentralization, and novel storage optimization techniques.
+[GhostDrive](/ecosystem-explorer/ghostdrive-global) is a data storage platform prioritizing [privacy and security](/blog/ecosystem-spotlight-ghostdrives-secure-decentralized-storage-now-on-mobile) through encryption, decentralization, and novel storage optimization techniques.
 
-Ghost Drive offers data redundancy and security through encryption and features like data tokenization, designed for efficient and secure digital asset management. Ghost Drive also provides storage optimization by employing a compression algorithm that reduces file sizes without compromising data integrity, allowing users to store more data within the same capacity. For example, 1TB of uncompressed data could occupy approximately 2TB of optimized storage.
+GhostDrive offers data redundancy and security through encryption and features like data tokenization, designed for efficient and secure digital asset management. GhostDrive also provides storage optimization by employing a compression algorithm that reduces file sizes without compromising data integrity, allowing users to store more data within the same capacity. For example, 1TB of uncompressed data could occupy approximately 2TB of optimized storage.
 
-**What’s new with Ghost Drive?** GhostDrive is now available on the [Apple App Store](https://apps.apple.com/us/app/ghostdrive-app/id6475002179) or [Google Play Store](https://play.google.com/store/apps/details?id=com.wise.data.ghostdrive&pli=1), bringing the power of decentralized storage to your mobile devices. With the GhostDrive app, users can effortlessly manage their data; add, delete, or pin files to their node; and monitor the status and integrity of their digital assets within the Filecoin network.
+**What’s new with GhostDrive?** GhostDrive is now available on the [Apple App Store](https://apps.apple.com/us/app/ghostdrive-app/id6475002179) or [Google Play Store](https://play.google.com/store/apps/details?id=com.wise.data.ghostdrive&pli=1), bringing the power of decentralized storage to your mobile devices. With the GhostDrive app, users can effortlessly manage their data; add, delete, or pin files to their node; and monitor the status and integrity of their digital assets within the Filecoin network.
 
 ## SteelDome
 
@@ -61,9 +61,9 @@ SteelDome offers proprietary technology that enables fully managed solutions wit
 
 ## Decentrally
 
-[Decentrally](https://www.decentrally.cloud/) is unlocking fully verifiable data storage by providing a solution for storing and delivering large amounts of data within an S3-compatible object storage system, where its decentralized design ensures enhanced privacy, ensuring that only the user has access to their data.
+Decentrally _(original link no longer available)_ is unlocking fully verifiable data storage by providing a solution for storing and delivering large amounts of data within an S3-compatible object storage system, where its decentralized design ensures enhanced privacy, ensuring that only the user has access to their data.
 
-Through [Datadrop](https://www.decentrally.cloud/datadrop/) and [Filecoin S3](https://www.decentrally.cloud/s-3-cloud-storage/), Decentrally aims to redefine data storage by integrating with Filecoin's decentralized network to provide a robust, secure, and efficient method of managing data.
+Through Datadrop and Filecoin S3, Decentrally aims to redefine data storage by integrating with Filecoin's decentralized network to provide a robust, secure, and efficient method of managing data.
 
 **What’s new with Decentrally?** Using its S3 CLI, Decentrally can streamline workflows with its intuitive S3-compatible API and IPFS integration, allowing for a seamless transition of Web2 apps to decentralized Web3 storage.
 
@@ -71,6 +71,6 @@ Through [Datadrop](https://www.decentrally.cloud/datadrop/) and [Filecoin S3](ht
 
 Titan Network is a digital resource network that incentivizes matching community idle resources with global demand, making it easy for everyone to leverage the power of DePIN services and participate in the construction of the Internet of Value. Right now, Titan Network is building a DePIN platform for aggregating digital resources like compute, storage, and bandwidth.
 
-For the storage element of the platform, [Titan Network](https://storage.titannet.io/) is behind [Titan Storage](/ecosystem-explorer/titan-storage), a hot data storage solution integrated with the Filecoin network. Titan Storage enables users to efficiently store data on Filecoin through an intuitive graphical interface, eliminating the necessity for an in-depth understanding of Filecoin’s mechanics.
+For the storage element of the platform, Titan Network is behind [Titan Storage](/ecosystem-explorer/titan-storage), a hot data storage solution integrated with the Filecoin network. Titan Storage enables users to efficiently store data on Filecoin through an intuitive graphical interface, eliminating the necessity for an in-depth understanding of Filecoin’s mechanics.
 
 **What’s new with Titan?** The [Herschel Testnet](https://titannet.gitbook.io/titan-network-en/herschel-testnet/herschel-testnet) is Titan Network’s second testnet, offering enhanced rewards and gameplay, and more efficient solutions for data storage and processing.

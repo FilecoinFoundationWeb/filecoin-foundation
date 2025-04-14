@@ -4,6 +4,7 @@ created-on: 2024-11-18T21:22:00.000Z
 updated-on: 2024-11-19T12:37:00.000Z
 published-on: 2024-11-19T12:37:00.000Z
 category: news
+mandarin-translation-url: https://mp.weixin.qq.com/s/bphQHq7TJuZoqUan8l6zcw?token=519016850&lang=zh_CN
 description: Filecoin Network Named in the AI and Data category for Fast
   Company’s 2024 Next Big Things in Tech Awards.
 image:
@@ -36,13 +37,13 @@ The Filecoin network is the backbone for a better version of the web. Data stora
 
 ## A Look at How AI Organizations Are Leveraging Filecoin
 
-Filecoin Foundation recently [announced collaborations](/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) with SingularityNET, Theoriq, Bagel, Nuklai, and [Aethir](https://cryptobriefing.com/aethir-filecoin-collaboration-gpu/), each highlighting the versatility of the Filecoin network as decentralized AI infrastructure. The Filecoin network’s decentralized infrastructure provides the foundational layer that enables AI applications to scale efficiently, securely, and transparently.
+Filecoin Foundation recently [announced collaborations](/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) with SingularityNET, Theoriq, [Bagel](/ecosystem-explorer/bagel), [Nuklai](/ecosystem-explorer/nuklai), and [Aethir](/ecosystem-explorer/aethir), each highlighting the versatility of the Filecoin network as decentralized AI infrastructure. The Filecoin network’s decentralized infrastructure provides the foundational layer that enables AI applications to scale efficiently, securely, and transparently.
 
-- **SingularityNET:** SingularityNET and FF are collaborating to store metadata on Filecoin via Lighthouse, enhancing the security and provenance of decentralized data storage.
+- **SingularityNET:** SingularityNET and FF are collaborating to store metadata on Filecoin via [Lighthouse](/ecosystem-explorer/lighthouse), enhancing the security and provenance of decentralized data storage.
 - **Theoriq:** FF and Theoriq are developing AI agents trained on open datasets stored on Filecoin, including a current project enabling natural language queries for Filecoin docs and a proposed project leveraging declassified CIA datasets for efficient and verifiable research.
-- **Bagel:** In collaboration with Bagel, FF is enabling AI developers to train and store models using Filecoin’s decentralized compute and storage network, optimizing resource utilization for machine learning workloads and driving the adoption of decentralized infrastructure.
-- **Nuklai:** Nuklai has integrated Filecoin to make metadata publicly accessible and is exploring Filecoin as a core storage cluster for enterprise use cases, offering secure, perpetual, and decentralized data storage.
-- **Aethir:** Aethir and FF are [collaborating](https://blog.aethir.com/blog-posts/aethir-and-filecoin-foundation-combining-distributed-gpu-infrastructure-and-decentralized-storage) to address GPU scarcity and enhance AI-driven data security. Aethir announced support for the Filecoin network, offering advanced GPU leasing capabilities to improve data processing and storage efficiency.
+- **Bagel:** In collaboration with [Bagel](/ecosystem-explorer/bagel), FF is enabling AI developers to train and store models using Filecoin’s decentralized compute and storage network, optimizing resource utilization for machine learning workloads and driving the adoption of decentralized infrastructure.
+- **Nuklai:** [Nuklai](/ecosystem-explorer/nuklai) has integrated Filecoin to make metadata publicly accessible and is exploring Filecoin as a core storage cluster for enterprise use cases, offering secure, perpetual, and decentralized data storage.
+- **Aethir:** [Aethir](/ecosystem-explorer/aethir) and FF are [collaborating to address GPU scarcity and enhance AI-driven data security](https://blog.aethir.com/blog-posts/aethir-and-filecoin-foundation-combining-distributed-gpu-infrastructure-and-decentralized-storage). Aethir announced support for the Filecoin network, offering advanced GPU leasing capabilities to improve data processing and storage efficiency.
 
 “The Next Big Things in Tech provides a fascinating glimpse at near- and long-term technological breakthroughs across a variety of sectors,” says Brendan Vaughan, editor-in-chief of Fast Company. “Spanning everything from semiconductors to agricultural gene editing, the [companies featured in this year’s list](https://www.fastcompany.com/next-big-things-in-tech/list) are tackling some of the world’s most pressing and vexing problems.”
 

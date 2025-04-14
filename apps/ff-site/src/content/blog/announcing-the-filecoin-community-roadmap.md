@@ -28,6 +28,6 @@ The initial call for contributions period was open for approximately one month, 
 
 This 2022 Q2 contribution period will last for one month. During this period, the Roadmap Manager will update existing project statuses, incorporate new projects, and project the entire roadmap +1 quarter into the future. Improvements to the display and dynamism of the Roadmap will likewise be iterated upon each quarter. Over time, community members can expect to see the Roadmap incorporate more projects and transform into a reference tool that is increasingly accurate in its depiction of ongoing work and significantly more robust in its display of data.
 
-The Roadmap is one of the first products to originate from the [Filecoin Community Survey](https://filecoinfoundation.medium.com/surveying-the-filecoin-community-priorities-and-opportunities-for-2022-25dad67158a0), which sourced feedback about Filecoin community opportunities and needs in 2022.
+The Roadmap is one of the first products to originate from the [Filecoin Community Survey](/blog/surveying-the-filecoin-community-priorities-and-opportunities-for-2022), which sourced feedback about Filecoin community opportunities and needs in 2022.
 
 More information, including access to the dynamic Roadmap, is available [on Github](https://github.com/filecoin-project/community/discussions/456).

@@ -23,7 +23,7 @@ Also referred to by its developers as “_the Minecraft for colors,”_ it has b
 
 It’s not just about the digital art: Arlequin is engaged in animal welfare, too. Each time an Arlee is minted, 1 $FLOW is sent to an animal charity depending on the Arlee species.
 
-In November 2021, Arlequin won the [Mercury Hackathon](https://mercuryhackathon2021.com/#:~:text=At%20the%20Mercury%20Hackathon%202021,to%20innovate%20and%20redefine%20boundaries.), supported by the Filecoin and Flow ecosystems, and its developers have now been awarded a $73,000 grant to help fund the project during the remainder of 2022. Speaking about their success, Kevin Tale, Founder of Arlequin explained: “With the grant, we are planning to make this project alive! It will be used to pay the engineers and 3D artists to enhance the painting tool, create more Arlees and develop all the smart contracts using Cadence (Flow Blockchain) and website.”
+In November 2021, Arlequin won the Mercury Hackathon _(original link no longer available)_ supported by the Filecoin and Flow ecosystems, and its developers have now been awarded a $73,000 grant to help fund the project during the remainder of 2022. Speaking about their success, Kevin Tale, Founder of Arlequin explained: “With the grant, we are planning to make this project alive! It will be used to pay the engineers and 3D artists to enhance the painting tool, create more Arlees and develop all the smart contracts using Cadence (Flow Blockchain) and website.”
 
 ![](/assets/images/643e68ab0688955a1029c7b7_1-cz75xlg5leu6pxrsdzdqqq.png)
 

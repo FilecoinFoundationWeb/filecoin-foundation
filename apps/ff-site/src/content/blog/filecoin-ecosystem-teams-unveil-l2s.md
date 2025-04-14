@@ -4,6 +4,7 @@ created-on: 2024-11-11T05:05:00.000Z
 updated-on: 2024-11-11T05:05:00.000Z
 published-on: 2024-11-11T05:05:00.000Z
 category: news
+mandarin-translation-url: https://mp.weixin.qq.com/s/XyVPuCNUs_4SRLuik-GCXg?token=519016850&lang=zh_CN
 description: Akave and Storacha Share Announcements at FIL Bangkok Signaling New
   Era for the Filecoin Network
 image:
@@ -17,7 +18,7 @@ seo:
 
 At the FIL Bangkok Main Stage event, hosted by Filecoin Foundation, teams across the Filecoin ecosystem announced new data storage solutions, signaling a new era of what’s possible with Filecoin by extending the capabilities of the network.
 
-The launch of Akave and Storacha, two new Filecoin Layer-2 (L2) solutions mark a big leap forward in the network's maturity and strengthen its ability to meet more data clients' storage demands.
+The launch of [Akave](/ecosystem-explorer/akave) and Storacha, two new Filecoin Layer-2 (L2) solutions mark a big leap forward in the network's maturity and strengthen its ability to meet more data clients' storage demands.
 
 L2 networks such as Textile’s Basin, along with the newly-launched Akave and Storacha, are part of the Filecoin network and offer more modular, tailored, and scalable solutions. L2s advance Filecoin's chain capabilities and performance, with the ability to customize features for different markets and customers across artificial intelligence (AI), DePIN, enterprise, compute, gaming, and more.
 

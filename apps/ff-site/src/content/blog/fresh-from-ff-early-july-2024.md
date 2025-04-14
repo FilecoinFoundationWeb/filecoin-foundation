@@ -16,7 +16,7 @@ seo:
 
 ## Early July Highlights
 
-🇧🇪 The FIL Brussels schedule is live! Explore decentralized AI, DePIN, and compute with more than a dozen innovators speaking across three days, including Akash Network CEO Greg Osuri, Theoriq Head of Marketing Anjali George, Bagel Network CEO Bidhan Roy, Futurist Michael Clark, Lighthouse Founder Nandit Mehra, Filecoin Foundation Founding Officer Clara Tsao, FF Head of Community Porter Stowell, and more! [See the full schedule](https://www.fil-brussels.io/).
+🇧🇪 The FIL Brussels schedule is live! Explore decentralized AI, DePIN, and compute with more than a dozen innovators speaking across three days, including Akash Network CEO Greg Osuri, Theoriq Head of Marketing Anjali George, [Bagel](/ecosystem-explorer/bagel) Network CEO Bidhan Roy, Futurist Michael Clark, [Lighthouse](/ecosystem-explorer/lighthouse) Founder Nandit Mehra, Filecoin Foundation Founding Officer Clara Tsao, FF Head of Community Porter Stowell, and more! [See the full schedule](https://www.fil-brussels.io/).
 
 💾 Software storage solutions to watch. There are dozens of ways to store data on Filecoin. From user-friendly mobile apps to enterprise-grade data onboarding platforms, the Filecoin ecosystem includes various tools designed to cater to different storage needs. [Read Filecoin Foundation's deep dive](/blog/signal-spotlights-software-storage-solutions-built-on-filecoin-to-watch) into the growing list of software services making a big impact in the Filecoin ecosystem.
 
@@ -31,7 +31,7 @@ seo:
 
 ### Storage
 
-- Join FF for the first-ever Data Economy Day on July 10 during FIL Brussels. Join keynote speaker Micahel Clark and a packed lineup including speakers from [SingularityNET](https://nl.linkedin.com/company/singularitynet?trk=public_post-text), [Bagel Network](https://www.linkedin.com/company/bagelnet?trk=public_post-text), [Nuklai](https://nl.linkedin.com/company/nuklai?trk=public_post-text), [Hyperbolic](https://www.linkedin.com/company/hyperbolic-labs?trk=public_post-text), [Akave](https://www.linkedin.com/company/akave?trk=public_post-text), [Otaris](https://www.linkedin.com/company/otaris?trk=public_post-text), and [Theoriq](https://www.linkedin.com/company/theoriqai?trk=public_post-text) to explore decentralized storage, AI, and compute.
+- Join FF for the first-ever Data Economy Day on July 10 during FIL Brussels. Join keynote speaker Micahel Clark and a packed lineup including speakers from [SingularityNET](https://nl.linkedin.com/company/singularitynet?trk=public_post-text), [Bagel](/ecosystem-explorer/bagel), [Nuklai](/ecosystem-explorer/nuklai), [Hyperbolic](https://www.linkedin.com/company/hyperbolic-labs), [Akave](/ecosystem-explorer/akave), [Otaris](https://www.linkedin.com/company/otaris), and [Theoriq](https://www.linkedin.com/company/theoriqai) to explore decentralized storage, AI, and compute.
 
 ## Network Operations
 

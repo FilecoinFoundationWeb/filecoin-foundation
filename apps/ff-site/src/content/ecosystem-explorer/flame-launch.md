@@ -8,7 +8,6 @@ tech:
   - filecoin
 image:
   src: /assets/images/flame.png
-website: https://www.flamelaunch.com/
 twitter: https://twitter.com/flamelaunch
 year-joined: 2022
 category: dapp

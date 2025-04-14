@@ -8,7 +8,6 @@ image:
 category: wallets-identity-authentication
 description: Allows you to find a chain of social proof from a trusted community
   to a dataset.
-website: https://liquicert.io/
 tech:
   - filecoin
   - ipfs

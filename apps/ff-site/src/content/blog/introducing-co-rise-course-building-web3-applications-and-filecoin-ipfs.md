@@ -16,7 +16,7 @@ seo:
     Co-Rise course. Enroll now!
 ---
 
-The [Building Web3 Applications and Filecoin/IPFS](https://corise.com/course/web3-filecoin) is a four-week introductory course focused on building applications on a blockchain with decentralized storage on Filecoin/IPFS. The course will cover Bitcoin, Ethereum, Filecoin/IPFS, and a bit of data science, while students complete programming projects. The collaborative, project-based learning experience will include mastery of blockchain infrastructure tools, knowledge of building Web3 applications, and an understanding of how to host app files on decentralized storage.
+The Building Web3 Applications and Filecoin/IPFS _(original link no longer available)_ is a four-week introductory course focused on building applications on a blockchain with decentralized storage on Filecoin/IPFS. The course will cover Bitcoin, Ethereum, Filecoin/IPFS, and a bit of data science, while students complete programming projects. The collaborative, project-based learning experience will include mastery of blockchain infrastructure tools, knowledge of building Web3 applications, and an understanding of how to host app files on decentralized storage.
 
 Despite the massive interest in Web3 and industry demand for software engineers familiar with building on these new platforms, such material is not included in many traditional computer science and software engineering curricula.
 

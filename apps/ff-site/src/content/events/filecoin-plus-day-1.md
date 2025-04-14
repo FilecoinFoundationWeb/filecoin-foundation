@@ -7,7 +7,6 @@ category: hosted
 location:
   primary: Istanbul, Turkey
   region: europe
-external-link: https://23.labweek.io/fil-plus
 start-date: 2023-11-14
 image:
   src: /assets/images/03292023-filplusmission.png

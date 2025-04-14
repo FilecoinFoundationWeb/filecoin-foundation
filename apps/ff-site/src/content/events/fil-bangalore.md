@@ -7,7 +7,6 @@ category: supported-sponsored
 location:
   primary: Bangalore, India
   region: apac-asia
-external-link: https://fil-bangalore.io/
 start-date: 2022-11-29
 end-date: 2022-11-30
 image:

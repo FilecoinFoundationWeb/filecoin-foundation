@@ -29,5 +29,3 @@ For Origin’s leadership, the idea of decentralizing the storage and transmissi
 “What makes us more excited than earning a profit is the opportunity to participate in the making of Web3,” said Origin Storage CEO [Andy Guo](https://www.linkedin.com/in/andy-guo-010408103/). “We are grateful to be born at a time when we are able to participate in the expansion of the blockchain and other activities that advance the progress of mankind. Even if we are not ultimately successful, our technical experiments and economic models will serve as valuable lessons for future generations.”
 
 In addition to its work to grow Filecoin’s decentralized storage network, Origin Storage is working with others in the ecosystem to develop new tools and services that will strengthen the Filecoin community. Looking ahead, the company plans to establish a DAO in order to rally like-minded companies to identify, upload, and make findable new data sets to the chain.
-
-[Learn about](https://filecoinfoundation.medium.com/) other storage providers building on the Filecoin network.
