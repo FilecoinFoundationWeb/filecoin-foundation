@@ -255,6 +255,22 @@ const redirects = [
     // With Davos 2026, this should point to '/events/the-filecoin-penthouse-davos-2025',
     permanent: true,
   },
+  {
+    source: '/events/vision-weekend-us',
+    destination: '/events/vision-weekend-2022',
+    permanent: true,
+  },
+  {
+    source: '/events/vision-weekend-usa-2023',
+    destination: '/events/vision-weekend-2023',
+    permanent: true,
+  },
+  {
+    source: '/events/vision-weekend-usa-2024',
+    destination: '/events/vision-weekend',
+    // With Vision Weekend 2025, this should point to '/events/vision-weekend-2024',
+    permanent: true,
+  },
 
   // IMAGE REDIRECTS
   {
