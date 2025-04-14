@@ -40,7 +40,6 @@ Key parameters include:
 
 * Transparency through reporting: Participants are expected to publish metrics and insights throughout their process.
 
-
 ## The Role of FIDL in the Experimental Pathway Metaallocator
 
 Filecoin Incentive Design Labs (FIDL) is supporting this pathway by stewarding its structure and providing essential tooling and feedback loops. The shared goal with governance is to help the ecosystem onboard valuable data and test new approaches to allocation in a structured, observable way.
