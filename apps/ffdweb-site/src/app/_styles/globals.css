@@ -163,7 +163,7 @@
 
   /* CARD */
   .card {
-    @apply bg-transparent;
+    @apply hover:bg-brand-primary-900 bg-transparent;
 
     &.card-border--lighter {
       @apply border-brand-primary-500;
@@ -206,7 +206,7 @@
 
   /* KEY MEMBER CARD */
   .key-member-card {
-    @apply border-brand-primary-700 border p-0.5;
+    @apply border-brand-primary-700 hover:bg-brand-primary-900 border p-0.5;
 
     .key-member-card-link {
       @apply text-brand-primary-300;
