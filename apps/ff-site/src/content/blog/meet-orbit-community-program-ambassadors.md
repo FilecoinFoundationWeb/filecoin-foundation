@@ -67,7 +67,7 @@ Timo sees the Filecoin Orbit Community Program as a crucial opportunity to provi
 
 “I have been to many hackathons, and there are lots of developers building NFTs on top of IPFS. This is just one use case — for any storage-related project, you can build on top of IPFS and Filecoin. And, with the Filecoin Virtual Machine (FVM) launching soon, there will be increasing traction in the corporate communities.”
 
-[Secured Finance](/ecosystem-explorer/secured-finance) is aiming to build robust financial and crypto finance markets and key business collateral management building a yield curve for cryptocurrencies. Learn more about [[Secured Finance](/ecosystem-explorer/secured-finance)](https://secured-finance.com/) here, and follow Timo on [Twitter](https://twitter.com/timowlee) and [LinkedIn](https://www.linkedin.com/in/timo-lee-a64b69136/) for news about upcoming Orbit events to get involved in.
+Secured Finance is aiming to build robust financial and crypto finance markets and key business collateral management building a yield curve for cryptocurrencies. Learn more about [Secured Finance](https://secured-finance.com/) here, and follow Timo on [Twitter](https://twitter.com/timowlee) and [LinkedIn](https://www.linkedin.com/in/timo-lee-a64b69136/) for news about upcoming Orbit events to get involved in.
 
 ## Advocating Filecoin Developer Success, Allan Mang’eni — Wengi Web
 

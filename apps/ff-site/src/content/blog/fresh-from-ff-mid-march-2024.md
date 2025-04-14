@@ -29,7 +29,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 ### Developer Advocacy
 
 - FF Solutions Architect Yan Bo Ng recorded a workshop for the [Encode AI Hack](https://www.encode.club/ai-hackathon), and FF Dev Advocate Jenks Guo has been providing technical support. Both Yan and Jenks will be judging projects.
-- During ETHDenver, Yan participated in a [DePIN & AI panel](https://www.youtube.com/watch?v=k1HxuhBBvPg) at [Fluence](/ecosystem-explorer/fluence)’s DePIN Day, and Jenks spoke on an [ecosystem panel](https://www.youtube.com/live/k1HxuhBBvPg?si=959cDKCDgk3hfR5R&t=25508).
+- During ETHDenver, Yan participated in a [DePIN & AI panel](https://www.youtube.com/watch?v=k1HxuhBBvPg) at [Fluence’s](/ecosystem-explorer/fluence) DePIN Day, and Jenks spoke on an [ecosystem panel](https://www.youtube.com/live/k1HxuhBBvPg?si=959cDKCDgk3hfR5R&t=25508).
 
 ### Storage
 

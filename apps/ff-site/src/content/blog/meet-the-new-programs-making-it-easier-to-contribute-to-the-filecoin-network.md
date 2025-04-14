@@ -5,7 +5,7 @@ updated-on: 2023-04-21T07:28:18.531000Z
 published-on: 2023-04-21T07:33:56.200000Z
 description:
   "This winter, two new programs launched that make it easier than ever
-  to contribute to the Filecoin network: [Filecoin Saturn](/ecosystem-explorer/filecoin-saturn) and [Filecoin Station](/ecosystem-explorer/filecoin-station)."
+  to contribute to the Filecoin network: Filecoin Saturn and Filecoin Station."
 image:
   src: /assets/images/12202022-saturnandstation.png
 category: ecosystem

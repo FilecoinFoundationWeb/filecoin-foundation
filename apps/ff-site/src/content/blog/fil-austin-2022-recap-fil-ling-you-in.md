@@ -30,7 +30,7 @@ Filecoin Foundation and Unfinished launched the Explorer Awards (link previously
 
 [Starling Labs And Hala Systems Announce Cryptographic Submission to ICC](https://www.cnn.com/2022/06/10/tech/ukraine-war-crimes-blockchain/index.html)
 
-As part of the Filecoin ecosystem presence at Consensus, Jonathan Dotan, [Starling Lab](/ecosystem-explorer/starling-lab)’s founding director, demonstrated the end-to-end technology workflow and roadmap as a model of how new cryptographic and decentralized technologies can help ensure digital documents are securely captured, stored, and verified in Ukraine. Starling Labs and Hala Systems announced a cryptographic submission of evidence of war crimes in Ukraine to the International Criminal Court — a legal and technical breakthrough with digital evidence registered and preserved on seven protocols, including Filecoin, across the decentralized web.
+As part of the Filecoin ecosystem presence at Consensus, Jonathan Dotan, [Starling Lab’s](/ecosystem-explorer/starling-lab) founding director, demonstrated the end-to-end technology workflow and roadmap as a model of how new cryptographic and decentralized technologies can help ensure digital documents are securely captured, stored, and verified in Ukraine. Starling Labs and Hala Systems announced a cryptographic submission of evidence of war crimes in Ukraine to the International Criminal Court — a legal and technical breakthrough with digital evidence registered and preserved on seven protocols, including Filecoin, across the decentralized web.
 
 ## Filecoin Community Space
 
