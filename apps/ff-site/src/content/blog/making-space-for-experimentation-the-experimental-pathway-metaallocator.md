@@ -15,8 +15,9 @@ seo:
   twitter:
     card: summary
   description: "The Filecoin Plus (Fil+) program is adding a long-awaited
-    Experimental Pathway Metaallocator. "
+    Experimental Pathway Metaallocator."
 ---
+
 The Filecoin Plus (Fil+) program is adding a long-awaited Experimental Pathway Metaallocator. Over the past year, the Fil+ governance team, in close collaboration with FIDL and the broader community, has been working to streamline Datacap allocation by moving toward a Pathway Metaallocator model—a more accountable, transparent, and efficient system for approving storage clients. Earlier this year, the [Manual Pathway Metaallocator](https://www.fidl.tech/news/manual-pathway-metaallocator) launched as the first implementation of this model. Now, together, we're introducing the Experimental Pathway Metaallocator as the next major step.
 
 ## Why We Need Room to Experiment
@@ -27,7 +28,7 @@ The Experimental Pathway Metaallocator creates exactly that kind of space. It of
 
 ## Built for Builders, Designed for Safety
 
-Proposed in this[ governance discussion](https://github.com/filecoin-project/Allocator-Governance/issues/313), the Experimental Pathway was intentionally scoped to allow for innovation with guardrails.
+Proposed in this [governance discussion](https://github.com/filecoin-project/Allocator-Governance/issues/313), the Experimental Pathway was intentionally scoped to allow for innovation with guardrails.
 
 From the governance perspective, the value of this pathway is twofold: it opens up access to a broader group of contributors, and it gives the network better visibility into what kind of ideas, tooling, and practices are emerging at the edges.
 
@@ -35,12 +36,9 @@ Key parameters include:
 
 * Lower Datacap ceilings: Allocators in this pathway receive up to 1 PiB, minimizing risk while allowing space for real experimentation.
 
-
 * Faster review cycles: Tighter feedback loops support active iteration and learning.
 
-
 * Transparency through reporting: Participants are expected to publish metrics and insights throughout their process.
-
 
 
 ## The Role of FIDL in the Experimental Pathway Metaallocator
@@ -55,7 +53,6 @@ Specifically, FIDL is:
 
 * Sharing learnings with the Fil+ governance community to support evidence-based decisions.
 
-
 The Experimental Pathway offers a lightweight mechanism to validate ideas before they graduate into one of the main Fil+ allocation routes—Manual, Market-based, or Automated.
 
 Organizations that have previously submitted applications but haven’t yet reached the MVP threshold are especially encouraged to apply. This is a chance to test ideas and gather the evidence needed to progress toward full deployment.
@@ -66,7 +63,7 @@ The Experimental Pathway is more than a sandbox. It’s a deliberate mechanism f
 
 If you’re building new allocation logic, testing novel incentives, or prototyping better interfaces—this is the place to start.
 
-To apply, use the form on[ FIDL’s website](https://www.fidl.tech/apply-for-datacap_1). You can also follow the development and governance discussions here:
+To apply, use the form on [FIDL’s website](https://www.fidl.tech/apply-for-datacap_1). You can also follow the development and governance discussions here:
 
 * [Experimental Pathway Metaallocator proposal](https://github.com/filecoin-project/Allocator-Governance/issues/313)
 * [Manual Pathway Metaallocator](https://github.com/filecoin-project/Allocator-Governance/issues/282)
