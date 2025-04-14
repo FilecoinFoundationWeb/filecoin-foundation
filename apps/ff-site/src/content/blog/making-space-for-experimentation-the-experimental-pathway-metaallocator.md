@@ -9,6 +9,8 @@ description: Over the past year, the Fil+ governance team, in close
   streamline Datacap allocation by moving toward a Pathway Metaallocator model—a
   more accountable, transparent, and efficient system for approving storage
   clients.
+image:
+  src: /assets/images/fil-header-1-.webp
 seo:
   twitter:
     card: summary
