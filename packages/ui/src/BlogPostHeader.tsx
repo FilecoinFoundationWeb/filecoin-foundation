@@ -10,7 +10,7 @@ type BlogPostHeaderProps = {
   publishedOn: Date
   image: ImageProps
   category: string
-  mandarinTranslationUrl?: string
+  chineseTranslationUrl?: string
 }
 
 export function BlogPostHeader({
@@ -18,7 +18,7 @@ export function BlogPostHeader({
   publishedOn,
   image,
   category,
-  mandarinTranslationUrl,
+  chineseTranslationUrl,
 }: BlogPostHeaderProps) {
   return (
     <ArticleHeader
@@ -31,9 +31,9 @@ export function BlogPostHeader({
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
       <div className="flex flex-col gap-4 sm:flex-row sm:justify-between">
         <span className="blog-post-header-date">{formatDate(publishedOn)}</span>
-        {mandarinTranslationUrl && (
-          <ExternalTextLink href={mandarinTranslationUrl}>
-            中文版本 (Mandarin Version)
+        {chineseTranslationUrl && (
+          <ExternalTextLink href={chineseTranslationUrl}>
+            中文版本 (Chinese Version)
           </ExternalTextLink>
         )}
       </div>

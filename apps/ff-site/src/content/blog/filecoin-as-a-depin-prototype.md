@@ -4,7 +4,7 @@ created-on: 2024-03-04T15:11:05.167Z
 updated-on: 2024-03-04T15:11:05.193Z
 published-on: 2024-03-04T15:11:05.224Z
 category: ecosystem
-mandarin-translation-url: https://mp.weixin.qq.com/s/INxYCAbvfzSzonCenOiiaQ?token=519016850&lang=zh_CN
+chinese-translation-url: https://mp.weixin.qq.com/s/INxYCAbvfzSzonCenOiiaQ?token=519016850&lang=zh_CN
 description: The Decentralized Physical Infrastructure Network (DePIN) movement
   is re-architecting the Internet's physical and digital backbone.
 image:

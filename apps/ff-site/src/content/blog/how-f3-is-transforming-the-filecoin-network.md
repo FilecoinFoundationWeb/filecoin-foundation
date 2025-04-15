@@ -4,7 +4,7 @@ created-on: 2024-08-29T14:00:31.895661Z
 updated-on: 2024-08-29T14:00:31.895661Z
 published-on: 2024-08-29T14:00:31.895661Z
 category: ecosystem
-mandarin-translation-url: https://mp.weixin.qq.com/s/SFsF2BKLN5kvbdjTOH7kIQ
+chinese-translation-url: https://mp.weixin.qq.com/s/SFsF2BKLN5kvbdjTOH7kIQ
 description: "Fast Finality in Filecoin (F3) is coming to the network, speeding
   up finality on the network by 450X. "
 image:
