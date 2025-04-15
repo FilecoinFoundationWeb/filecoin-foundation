@@ -68,6 +68,6 @@ Additionally, TechCongress Alumni are integrated into our training and orientati
 
 TechCongress serves an incredibly important role, connecting Congressional offices with the technological knowledge needed to navigate the complex tech-driven policy landscape. TechCongress is currently recruiting 12 - 16 fellows for the January 2024 Fellowship, and we are seeking early- and mid-career technologists to serve in both Democrat and Republican offices. 
 
-TechCongress also welcomes [nominations](https://techcongress.us10.list-manage.com/track/click?u=af5890511c379af397cbc931d&id=b05feb1756&e=d04e36028e)! If you nominate a veteran, woman or nonbinary individual, underrepresented person of color, or person with a disability for the program, and they apply, are accepted, and join the program as a fellow, we will award you a [$500 Referral Award](https://techcongress.us10.list-manage.com/track/click?u=af5890511c379af397cbc931d&id=41d6727f97&e=d04e36028e).
+TechCongress also welcomes nominations _(original link no longer available)_. If you nominate a veteran, woman or nonbinary individual, underrepresented person of color, or person with a disability for the program, and they apply, are accepted, and join the program as a fellow, we will award you a [$500 Referral Award](https://techcongress.us10.list-manage.com/track/click?u=af5890511c379af397cbc931d&id=41d6727f97&e=d04e36028e).
 
 To learn more or apply, visit [TechCongress.io.](https://www.techcongress.io/apply)

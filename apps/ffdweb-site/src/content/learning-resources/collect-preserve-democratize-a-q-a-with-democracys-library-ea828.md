@@ -19,7 +19,7 @@ keywords: >-
   government data, data accessibility, centralized repository, verifiable
   information, knowledge management, historical records
 link: >-
-  https://ffdweb.org/collect-preserve-democratize-a-q-a-with-democracys-library
+  https://ffdweb.org/blog/collect-preserve-democratize-a-q-a-with-democracy-s-library
 seo:
   description: >-
     Democracy’s Library leverages Web3 to preserve and provide free access to 

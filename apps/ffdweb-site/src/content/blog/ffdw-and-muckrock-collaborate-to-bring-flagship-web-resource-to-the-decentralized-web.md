@@ -33,4 +33,4 @@ The DocumentCloud project will focus on three coordinated strategies, allowing M
 
 “We’re proud to support MuckRock with this award,” said FFDW Board Chair Marta Belcher. “FFDW’s mission is to preserve humanity’s most important information, and this collaboration with MuckRock is a natural fit to further these efforts.”
 
-Interested in getting involved and learning more? Register to attend [MuckRock’s Hack Day](https://www.muckrock.com/assignment/register-for-the-documentcloud-add-on-a-thon-on-may-27-385/embed/). Additionally, MuckRock is currently looking for a [front-end developer](https://www.muckrock.com/jobs/#frontend) to build out this exciting platform and a [data journalist](https://www.muckrock.com/jobs/#data) to join their growing team.
+Interested in getting involved and learning more? Register to attend MuckRock’s Hack Day _(original link no longer available)_. Additionally, MuckRock is currently looking for a [front-end developer](https://www.muckrock.com/jobs/#frontend) to build out this exciting platform and a [data journalist](https://www.muckrock.com/jobs/#data) to join their growing team.

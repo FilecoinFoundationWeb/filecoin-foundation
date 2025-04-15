@@ -4,7 +4,7 @@ created-on: 2025-02-21T14:24:00.000Z
 updated-on: 2025-02-21T14:24:00.000Z
 published-on: 2025-02-21T14:24:00.000Z
 category: news
-mandarin-translation-url: https://mp.weixin.qq.com/s/Gxk6IPuTSx-Cf_uwETTLOA?token=519016850&lang=zh_CN
+chinese-translation-url: https://mp.weixin.qq.com/s/Gxk6IPuTSx-Cf_uwETTLOA?token=519016850&lang=zh_CN
 description: Since Mainnet launch in October 2020, the Filecoin network has
   steadily evolved, with new tools and services emerging to support a growing
   range of data use cases.

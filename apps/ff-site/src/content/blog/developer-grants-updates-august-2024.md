@@ -4,7 +4,7 @@ created-on: 2024-08-16T10:00:00.000Z
 updated-on: 2024-08-16T10:00:00.000Z
 published-on: 2024-08-16T10:00:00.000Z
 category: reports
-mandarin-translation-url: https://mp.weixin.qq.com/s/KNbnKn1AGhzRm0CFrLs_Cg?token=519016850&lang=zh_CN
+chinese-translation-url: https://mp.weixin.qq.com/s/KNbnKn1AGhzRm0CFrLs_Cg?token=519016850&lang=zh_CN
 description: The Developer Grants Updates series brings news and highlights from
   Filecoin Foundation Developer Grants team.
 image:

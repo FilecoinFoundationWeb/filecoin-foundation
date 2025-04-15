@@ -34,7 +34,7 @@ export default async function BlogPost(props: BlogPostProps) {
     publishedOn,
     category,
     addTableOfContents,
-    mandarinTranslationUrl,
+    chineseTranslationUrl,
   } = data
 
   return (
@@ -44,7 +44,7 @@ export default async function BlogPost(props: BlogPostProps) {
         <BlogPostHeader
           title={title}
           publishedOn={publishedOn}
-          mandarinTranslationUrl={mandarinTranslationUrl}
+          chineseTranslationUrl={chineseTranslationUrl}
           category={getCategoryLabel({
             collectionName: 'blog_posts',
             category,
