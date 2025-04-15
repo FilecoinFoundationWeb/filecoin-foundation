@@ -4,7 +4,7 @@ created-on: 2025-03-07T18:57:00.000Z
 updated-on: 2025-03-07T18:57:00.000Z
 published-on: 2025-03-07T18:57:00.000Z
 category: ecosystem
-mandarin-translation-url: https://mp.weixin.qq.com/s/N9zGrJlCVkG42gYX8J_wpw?token=519016850&lang=zh_CN
+chinese-translation-url: https://mp.weixin.qq.com/s/N9zGrJlCVkG42gYX8J_wpw?token=519016850&lang=zh_CN
 description: In the past year, the Filecoin Plus (Fil+) program has evolved to
   help improve transparency and trust in the system by giving participants
   better tools to understand how Fil+ is working.

@@ -4,7 +4,7 @@ created-on: 2024-11-11T05:05:00.000Z
 updated-on: 2024-11-11T05:05:00.000Z
 published-on: 2024-11-11T05:05:00.000Z
 category: news
-mandarin-translation-url: https://mp.weixin.qq.com/s/XyVPuCNUs_4SRLuik-GCXg?token=519016850&lang=zh_CN
+chinese-translation-url: https://mp.weixin.qq.com/s/XyVPuCNUs_4SRLuik-GCXg?token=519016850&lang=zh_CN
 description: Akave and Storacha Share Announcements at FIL Bangkok Signaling New
   Era for the Filecoin Network
 image:

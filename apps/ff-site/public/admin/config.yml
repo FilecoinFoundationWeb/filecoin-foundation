@@ -410,11 +410,11 @@ collections:
       - name: "description"
         label: "Description"
         widget: "text"
-      - name: "mandarin-translation-url"
-        label: "Mandarin Translation URL"
+      - name: "chinese-translation-url"
+        label: "Chinese Translation URL"
         widget: "string"
         required: false
-        hint: "URL of the Mandarin translation of this post."
+        hint: "URL of the Chinese translation of this post."
       - *image_config
       - name: "add-table-of-contents"
         label: "Add a table of contents to this post?"
