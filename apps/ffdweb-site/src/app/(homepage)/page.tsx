@@ -77,7 +77,7 @@ export default async function Home() {
                 description={{ text: description, isClamped: true }}
                 cta={{
                   href: `${PATHS.PROJECTS.path}/${slug}`,
-                  text: 'Read More',
+                  text: 'About the project',
                   icon: CARET_RIGHT,
                 }}
                 image={{
