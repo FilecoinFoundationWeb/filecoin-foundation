@@ -33,4 +33,3 @@ Decentralized standards require a new core architecture that changes the way dev
 This new core architecture is based on secure capability semantics on decentralized networks — and this approach is not the current prevalent programming paradigm, so end-user and developer-focused educational materials must cover the ground from fundamentals up through best practices.
 
 “We’re proud to support Spritely Institute with this award,” said FFDW Board Chair Marta Belcher. “We experience so much of our daily lives through just a handful of corporations, and have no choice but to trust those corporations not to misuse troves of data about us. At FFDW, we believe that decentralized technologies can put people in control of their own data and protect user privacy and security.”
-
