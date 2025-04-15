@@ -4,6 +4,7 @@ created-on: 2024-12-06T13:55:00.000Z
 updated-on: 2024-12-06T13:55:00.000Z
 published-on: 2024-12-06T13:55:00.000Z
 category: ecosystem
+mandarin-translation-url: https://mp.weixin.qq.com/s/5uukUuMldfcXWL9X2NBXhw?token=519016850&lang=zh_CN
 description: As Filecoin Foundation (FF) looks ahead to 2025, we want to offer a
   closer look at FF’s vision and strategic priorities. In 2025, FF’s top
   objective is to mobilize the community to make Filecoin work seamlessly and

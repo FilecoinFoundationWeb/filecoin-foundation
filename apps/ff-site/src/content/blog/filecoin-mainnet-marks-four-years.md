@@ -4,6 +4,7 @@ created-on: 2024-10-14T12:00:00.000Z
 updated-on: 2024-10-14T12:00:00.000Z
 published-on: 2024-10-14T12:00:00.000Z
 category: ecosystem
+mandarin-translation-url: https://mp.weixin.qq.com/s/Gmh43FNLYHV-jicyi-tSLA?token=519016850&lang=zh_CN
 description: This month on October 15, we’re thrilled to celebrate the
   anniversary of Filecoin’s Mainnet launch! Over the past four years, the
   Filecoin network has grown tremendously, becoming the world’s largest
