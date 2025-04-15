@@ -1,19 +1,19 @@
 ---
-title: DWeb Camp 2022
-created-on: 2022-06-27T15:30:55.950Z
-updated-on: 2022-06-27T15:30:55.964Z
-published-on: 2022-06-27T15:30:55.978Z
+title: DWeb Camp 2024
+created-on: 2024-01-29T15:55:19.827Z
+updated-on: 2024-01-29T15:55:19.834Z
+published-on: 2024-01-29T15:55:19.842Z
 category: supported-sponsored
 location:
   primary: Navarro, CA
   region: north-america
 external-link: https://dwebcamp.org/
-start-date: 2022-08-22
-end-date: 2022-08-24
+start-date: 2024-08-07
+end-date: 2024-08-11
 image:
-  src: /assets/images/dweb-camp.png
+  src: /assets/images/dweb-camp24.png
 seo:
   description:
-    Explore the decentralized web at DWeb Camp 2022 through workshops,
-    discussions, and collaborative activities.
+    Attend DWeb Camp 2024 to engage in workshops, talks, and activities
+    focused on the decentralized web.
 ---
