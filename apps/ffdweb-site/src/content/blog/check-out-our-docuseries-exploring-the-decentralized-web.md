@@ -21,11 +21,11 @@ Tackling the origin of the internet, the first episode of _Exploring the Decentr
 
 **[Episode 2: "Return to Decentralization"](https://www.youtube.com/watch?v=sRAlwD5ScrY)**
 
-Exploring the benefits of decentralization, Episode 2 offers examples of how different industries — from finance and accounting, to art and architecture — can harness decentralized technologies. Hear from experts including Brian Behlendorf of the [Open Source Security Foundation](https://openssf.org/); Tara Tan of [IDEO CoLab Ventures](https://www.ideocolab.com/ventures/); artist and software engineer Sarah Friend; Maria Paula Fernandez of [jpg.space](https://jpg.space/); and Doug Petkanics of [Livepeer](https://livepeer.org/).
+Exploring the benefits of decentralization, Episode 2 offers examples of how different industries — from finance and accounting, to art and architecture — can harness decentralized technologies. Hear from experts including Brian Behlendorf of the [Open Source Security Foundation](https://openssf.org/); Tara Tan of IDEO CoLab Ventures; artist and software engineer Sarah Friend; Maria Paula Fernandez of jpg.space; and Doug Petkanics of [Livepeer](https://livepeer.org/).
 
 **[Episode 3: "Data and User Control"](https://www.youtube.com/watch?v=Tab_vJ6NNGw)**
 
-In today’s Web2 world, corporations control the majority of user data online. In Episode 3 of _Exploring the Decentralized Web_, experts including Sandra Ro of the [Global Blockchain Business Council](https://gbbcouncil.org/), Sheila Warren of the [World Economic Forum](https://www.weforum.org/), Mike Masnick of [Techdirt](https://www.techdirt.com/), and Carson Farmer of [Textile](https://www.textile.io/)examine users’ ability to control data and information on the decentralized web, and why this transition is critical for the long-term preservation of information.
+In today’s Web2 world, corporations control the majority of user data online. In Episode 3 of _Exploring the Decentralized Web_, experts including Sandra Ro of the Global Blockchain Business Council _(original link no longer available)_, Sheila Warren of the [World Economic Forum](https://www.weforum.org/), Mike Masnick of [Techdirt](https://www.techdirt.com/), and Carson Farmer of [Textile](https://www.textile.io/)examine users’ ability to control data and information on the decentralized web, and why this transition is critical for the long-term preservation of information.
 
 **[Episode 4: "Digital Identity"](https://www.youtube.com/watch?v=jm8y56KMkIw&t=16s)**
 

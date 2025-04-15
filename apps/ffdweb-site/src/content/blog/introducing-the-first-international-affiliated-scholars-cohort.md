@@ -16,7 +16,7 @@ In the landscape of modern technology, few innovations have sparked as much inte
 
 The International Affiliated Scholars (IAS) program is a part of the Center’s educational focus. The IAS program, supported by Filecoin Foundation for the Decentralized Web (FFDW), will bring together and empower blockchain scholars worldwide to explore the nexus of blockchain law and social good. 
 
-On Tuesday, September 26 at 8:30 am PT, the Center is hosting a [Virtual Kickoff](https://usfca.zoom.us/webinar/register/WN_M02vHZwAT4y_sHXC6Yzqaw) to welcome the new cohort and introduce the topics they’ll be exploring as part of the program. Each cohort member is poised to challenge norms, fuel cross-disciplinary collaboration, and explore how technology impacts our daily lives. 
+On Tuesday, September 26 at 8:30 am PT, the Center is hosting a Virtual Kickoff _(original link no longer available)_ to welcome the new cohort and introduce the topics they’ll be exploring as part of the program. Each cohort member is poised to challenge norms, fuel cross-disciplinary collaboration, and explore how technology impacts our daily lives. 
 
 - [Alexandra Andhov](https://www.linkedin.com/in/dr-alexandra-andhov-b1502423/?originalSubdomain=dk): Alexandra Andhov is a distinguished authority in law and technology. She currently holds the position of Associate Professor at the Faculty of Law, University of Copenhagen. Her expertise lies in understanding and regulating emergent technologies, encompassing areas like blockchain, crypto assets, and artificial intelligence. In academia, Andhov infuses her teaching with an entrepreneurial spirit. She has pioneered courses centered on start-up law, blockchain regulation, and computational legal thought. 
 
@@ -38,6 +38,6 @@ On Tuesday, September 26 at 8:30 am PT, the Center is hosting a [Virtual Kickoff
 
 These scholars represent the forefront of research into emerging blockchain technology and use cases, and their diverse backgrounds and expertise will undoubtedly catalyze a dynamic exchange of ideas that transcends borders and disciplines.
 
-Join us for the [IAS Virtual Kickoff](https://usfca.zoom.us/webinar/register/WN_M02vHZwAT4y_sHXC6Yzqaw) on September 26, 2023 at 8:30 AM PT to learn more about the topics they’ll be exploring as part of the IAS program! 
+Join us for the IAS Virtual Kickoff _(original link no longer available)_ on September 26, 2023 at 8:30 AM PT to learn more about the topics they’ll be exploring as part of the IAS program! 
 
 Be sure to [subscribe](https://www.blockchainlawsg.org/) to the Center’s mailing list to stay up-to-date on their work

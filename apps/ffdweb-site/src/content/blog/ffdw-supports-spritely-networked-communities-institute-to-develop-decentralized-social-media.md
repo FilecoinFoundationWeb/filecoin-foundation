@@ -34,4 +34,3 @@ This new core architecture is based on secure capability semantics on decentrali
 
 “We’re proud to support Spritely Institute with this award,” said FFDW Board Chair Marta Belcher. “We experience so much of our daily lives through just a handful of corporations, and have no choice but to trust those corporations not to misuse troves of data about us. At FFDW, we believe that decentralized technologies can put people in control of their own data and protect user privacy and security.”
 
-Learn more about Spritely Institute [here](https://cts.businesswire.com/ct/CT?id=smartlink&url=https%3A%2F%2Ffreedom.press%2F&esheet=52499626&newsitemid=20210928005396&lan=en-US&anchor=here&index=4&md5=32f96da8342f7c3b734fb38d32831cda).

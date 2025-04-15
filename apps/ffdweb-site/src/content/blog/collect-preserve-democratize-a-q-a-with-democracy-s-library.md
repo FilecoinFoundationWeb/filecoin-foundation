@@ -12,7 +12,7 @@ seo:
     vital public information for future generations.
 ---
 
-Every year, the United States federal government spends [billions of dollars](https://www.whitehouse.gov/wp-content/uploads/2022/08/08-2022-OSTP-Public-Access-Congressional-Report.pdf) producing research, reports, statistics, and data on almost every topic imaginable. This information is critical for government agencies, policymakers at all levels, public and private organizations, journalists, and citizens. Access to historical government records is necessary to create a more efficient, effective, and accountable system where all stakeholders work together to address current needs with an eye toward the future.
+Every year, the United States federal government spends billions of dollars _(original link no longer available)_ producing research, reports, statistics, and data on almost every topic imaginable. This information is critical for government agencies, policymakers at all levels, public and private organizations, journalists, and citizens. Access to historical government records is necessary to create a more efficient, effective, and accountable system where all stakeholders work together to address current needs with an eye toward the future.
 
 Unfortunately, many highly valuable assets are not readily available and accessible to those who need them the most. Paywalls and disjointed, non-standardized information keep data siloed and difficult to decipher and use.
 
