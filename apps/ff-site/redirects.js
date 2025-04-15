@@ -215,6 +215,16 @@ const redirects = [
     permanent: true,
   },
   {
+    source: '/events/dweb-camp-1',
+    destination: '/events/dweb-camp-2023',
+    permanent: true,
+  },
+  {
+    source: '/events/dweb-camp-2024',
+    destination: '/events/dweb-camp',
+    permanent: true,
+  },
+  {
     source: '/events/fil-bangkok',
     destination: '/events/fil-bangkok-2024',
     permanent: true,
