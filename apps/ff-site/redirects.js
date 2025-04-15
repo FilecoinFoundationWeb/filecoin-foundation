@@ -215,16 +215,6 @@ const redirects = [
     permanent: true,
   },
   {
-    source: '/events/the-filecoin-sanctuary-davos-2024',
-    destination: '/events/davos-2024',
-    permanent: true,
-  },
-  {
-    source: '/events/the-filecoin-sanctuary-davos',
-    destination: '/events/davos-2023',
-    permanent: true,
-  },
-  {
     source: '/events/fil-bangkok',
     destination: '/events/fil-bangkok-2024',
     permanent: true,
@@ -232,6 +222,11 @@ const redirects = [
   {
     source: '/events/fil-bangkok-network-base-with-fil-dev-summit',
     destination: '/events/fil-bangkok-2024',
+    permanent: true,
+  },
+  {
+    source: '/events/fil-dev-summit-1',
+    destination: '/events/fil-dev-summit-singapore-2023',
     permanent: true,
   },
   {
@@ -250,11 +245,6 @@ const redirects = [
     permanent: true,
   },
   {
-    source: '/events/fil-dev-summit-1',
-    destination: '/events/fil-dev-summit-singapore-2023',
-    permanent: true,
-  },
-  {
     source: '/events/fil-dev-summit-singapore',
     destination: '/events/fil-dev-summit-singapore-2023',
     permanent: true,
@@ -268,6 +258,16 @@ const redirects = [
     source: '/events/the-filecoin-penthouse-davos-2024',
     destination: '/events/davos',
     // With Davos 2026, this should point to '/events/the-filecoin-penthouse-davos-2025',
+    permanent: true,
+  },
+  {
+    source: '/events/the-filecoin-sanctuary-davos',
+    destination: '/events/davos-2023',
+    permanent: true,
+  },
+  {
+    source: '/events/the-filecoin-sanctuary-davos-2024',
+    destination: '/events/davos-2024',
     permanent: true,
   },
   {
