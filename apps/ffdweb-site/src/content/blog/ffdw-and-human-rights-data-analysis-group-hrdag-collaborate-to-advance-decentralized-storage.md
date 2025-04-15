@@ -25,4 +25,4 @@ In addition to enabling HRDAG to better understand the decentralized web landsca
 
 “We’re proud to support HRDAG with this award,” said FFDW Board Chair Marta Belcher. “FFDW’s mission is to preserve humanity’s most important information, and this collaboration with HRDAG is a natural fit to further these efforts.”
 
-![FFDW and Human Rights Data Analysis Group Collaborate](/assets/images/643e92b3a344778457270525/643e98beae2f9ebd3f0e0e59_ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png)
+![FFDW and Human Rights Data Analysis Group Collaborate](/assets/images/643e98beae2f9ebd3f0e0e59_ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage.png)

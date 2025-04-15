@@ -23,7 +23,7 @@ Episodes 9–12 cover how Web3 re-establishes the internet as an inclusive commu
 
 Episode 9 looks at the evolution of the advertising model and its relationship with media. “Can we make a system that works without all the middlemen, so you don’t have to host things on iTunes, or Amazon, or Spotify to be able to be discovered and to be able to be paid?” asked Brewster Kahle, Founder of Internet Archive. The answer, when it comes to Web3, is yes!
 
-Learn how advertising models will change when the web is decentralized, from experts including James Young of [Abridged](https://abridged.io/), Tara Tan of [IDEO Colab Ventures](https://www.ideocolab.com/ventures/), Brewster Kahle of [Internet Archive](https://archive.org/), Doug Petkanics of [Livepeer](https://livepeer.org/), Mariano Conti (formerly) of [MakerDAO](https://makerdao.com/en/), and Andrew Hill of [Textile](https://www.textile.io/).
+Learn how advertising models will change when the web is decentralized, from experts including James Young of [Abridged](https://abridged.io/), Tara Tan of IDEO Colab Ventures, Brewster Kahle of [Internet Archive](https://archive.org/), Doug Petkanics of [Livepeer](https://livepeer.org/), Mariano Conti (formerly) of [MakerDAO](https://makerdao.com/en/), and Andrew Hill of [Textile](https://www.textile.io/).
 
 **[Episode 10: "Communities and Coordination"](https://www.youtube.com/watch?v=kLHOV_1vlNY)**
 
@@ -35,7 +35,7 @@ Explore step-by-step how DAOs work and what a future built on networks of DAOs c
 
 We are in the midst of the transition from, Web2 — which focused on publishing your own work––to Web3, which focuses on monetizing that work. This episode addresses the shift in thinking from scarcity of access to scarcity of ownership in art and the rise of NFTs, as Matt Condon of Digitally Rare positions it “It’s the ‘seeing’ that creates value. It’s not ‘I want to own this so nobody sees it,’ it’s ‘I want to own this because everyone has seen it.’”
 
-Learn how the decentralized web allows us to build new spaces and leverage existing web2 platforms to create new community spaces with experts Matt Stephenson of [Planck](https://planckdata.com/), Scott Gralnick of [Lago Frame](https://lagoframe.com/) and [Portis](https://www.portis.io/), Maria Paula Fernandez of [jpg.space](https://jpg.space/), Carson Farmer of [Textile](https://www.textile.io/), Matt Condon of [Digitally Rare](https://anchor.fm/digitallyrare), Jimmy Lee of the Application Resource Group, Tara Tan of [IDEO Colab Ventures](https://www.ideocolab.com/ventures/), and Matt Lockyer of [Satori](https://www.satoriapp.xyz/).
+Learn how the decentralized web allows us to build new spaces and leverage existing web2 platforms to create new community spaces with experts Matt Stephenson of [Planck](https://planckdata.com/), Scott Gralnick of [Lago Frame](https://lagoframe.com/) and [Portis](https://www.portis.io/), Maria Paula Fernandez of jpg.space, Carson Farmer of [Textile](https://www.textile.io/), Matt Condon of [Digitally Rare](https://anchor.fm/digitallyrare), Jimmy Lee of the Application Resource Group, Tara Tan of IDEO Colab Ventures, and Matt Lockyer of Satori.
 
 **[Episode 12: "Emerging Web"](https://www.youtube.com/watch?v=sSaR7iCF86s)**
 
