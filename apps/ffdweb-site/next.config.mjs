@@ -6,6 +6,10 @@ import { redirects } from './redirects.mjs'
 const imageRemotePatterns = [
   {
     protocol: 'https',
+    hostname: 'lh5.googleusercontent.com',
+  },
+  {
+    protocol: 'https',
     hostname: 'lh5-us.googleusercontent.com',
   },
   {
