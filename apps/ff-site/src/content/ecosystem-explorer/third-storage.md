@@ -10,7 +10,6 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073297a94418c44efa178a_thirdstorage.png
-website: https://thirdstorage.com
 twitter: https://twitter.com/thirdstorage
 year-joined: 2024
 category: data-storage-management

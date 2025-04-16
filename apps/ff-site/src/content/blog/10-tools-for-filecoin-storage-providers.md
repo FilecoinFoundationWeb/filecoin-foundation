@@ -38,7 +38,7 @@ Software solutions can significantly enhance user experience and operational eff
 
 ## Client Services
 
-The [Filecoin Client Explorer](https://filecoin-explorer.com/) offers insights and analytics into the active clients using the Filecoin network. On it, you’ll find case studies covering how clients across industries – including media, life science, and research – use decentralized storage, as well as a look at data stored by industry and region.
+The Filecoin Client Explorer _(original link no longer available)_ offers insights and analytics into the active clients using the Filecoin network. On it, you’ll find case studies covering how clients across industries – including media, life science, and research – use decentralized storage, as well as a look at data stored by industry and region.
 
 ## Partnerships and Alliances
 

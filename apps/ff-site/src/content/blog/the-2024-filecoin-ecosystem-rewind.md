@@ -43,7 +43,7 @@ As the network scales, these developments mark an inflection point in the Fileco
 
 The Filecoin ecosystem offers a thriving ecosystem for projects, teams, and companies to build technology for today and for the future. Over the past year, new organizations have launched to support the growth and decentralization of the network, driving change across Filecoin and the web.
 
-[FIL-B](https://fil.builders), [FilOz](https://www.filoz.org), [Akave](/ecosystem-explorer/akave), [Curio](https://curiostorage.org), [Storacha](/ecosystem-explorer/storacha-network), [Filponto](https://filponto.io), [IPC](https://docs.ipc.space), [ANSA Research](https://ansaresearch.ai), [CryptoEconLab](https://cryptoeconlab.io), [DeStor](/ecosystem-explorer/destor), and [Space Meridian](https://meridian.space) are just some of the new organizations helping to make Filecoin the base layer of the decentralized web.
+[FIL-B](https://fil.builders), [FilOz](https://www.filoz.org), [Akave](/ecosystem-explorer/akave), [Curio](https://curiostorage.org), [Storacha](/ecosystem-explorer/storacha-network), [Filponto](https://filponto.io), [IPC](https://docs.ipc.space), [ANSA Research](https://ansaresearch.ai), CryptoEconLab _(original link no longer available)_, [DeStor](/ecosystem-explorer/destor), and [Space Meridian](https://meridian.space) are just some of the new organizations helping to make Filecoin the base layer of the decentralized web.
 
 ## Thank You
 

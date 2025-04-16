@@ -15,7 +15,6 @@ website: https://cedmav.sci.utah.edu/
 tech:
   - filecoin
   - ipfs
-featured-content: https://sealstorage.io/blog/utah#:~:text=The%20University%20of%20Utah%20is,of%20Seal's%20underlying%20network%2C%20Filecoin
 seo:
   description:
     University of Utah offers decentralized solutions for academic data

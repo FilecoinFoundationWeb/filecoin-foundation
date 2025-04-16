@@ -8,7 +8,6 @@ tech:
   - filecoin
 image:
   src: /assets/images/orbitvault_logo_white.png
-website: http://orbitvault.io/
 twitter: https://twitter.com/OrbitVault
 year-joined: 2024
 category: data-storage-management

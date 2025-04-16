@@ -11,7 +11,6 @@ tech:
   - filecoin
 image:
   src: /assets/images/zilla_logo_white.png
-website: https://file-zilla.pro/
 twitter: https://twitter.com/FileZillaToken
 year-joined: 2024
 category: data-storage-management
