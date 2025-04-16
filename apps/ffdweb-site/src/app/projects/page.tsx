@@ -4,13 +4,12 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
-import { FFDW_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { CTASection } from '@/components/CTASection'
+import { ContactCTA } from '@/components/ContactCTA'
 import { PageHeader } from '@/components/PageHeader'
 
 import { ProjectsContent } from './components/ProjectsContent'
@@ -26,6 +25,7 @@ export default async function Projects() {
       <StructuredDataScript
         structuredData={generateStructuredData(PROJECTS_SEO)}
       />
+      
       <PageHeader
         kicker="Projects"
         title="Discover Current and Past FFDW Project Partners"
@@ -36,14 +36,7 @@ export default async function Projects() {
         <ProjectsContent projects={projects} />
       </Suspense>
 
-      <CTASection
-        kicker="Work with FFDW"
-        title="Help FFDW Build a Better Web for Everyone"
-        cta={{
-          href: FFDW_URLS.email,
-          text: 'Contact Us',
-        }}
-      />
+      <ContactCTA />
     </PageLayout>
   )
 }

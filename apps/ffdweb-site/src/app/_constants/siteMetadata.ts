@@ -12,7 +12,7 @@ const SEO = {
 } as const
 
 const FFDW_URLS = {
-  email: 'impact@ffdweb.org',
+  email: 'mailto:impact@ffdweb.org',
   social: {
     linkedin: {
       label: 'LinkedIn',

@@ -3,14 +3,13 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
-import { FFDW_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { ContactCTA } from '@/components/ContactCTA'
 import { CTALink } from '@/components/CTALink'
-import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
@@ -90,14 +89,7 @@ export default function About() {
         </BoardMemberGrid>
       </PageSection>
 
-      <CTASection
-        kicker="Get Involved"
-        title="Join the Conversation and Help Us Build a Better Internet"
-        cta={{
-          href: FFDW_URLS.email,
-          text: 'Contact Us',
-        }}
-      />
+      <ContactCTA />
     </PageLayout>
   )
 }
