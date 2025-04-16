@@ -12,15 +12,14 @@
     "test:all": "cypress run --spec 'cypress/e2e/**/*.cy.ts'",
     "test:cypress:percy": "percy exec -- cypress run --spec 'cypress/e2e/**/*.cy.ts'",
     "test:cypress": "cypress run --spec 'cypress/e2e/**/*.cy.ts'",
-    "generate:page": "node scripts/generatePageTemplates.js",
-    "prepare": "husky"
+    "generate:page": "node scripts/generatePageTemplates.js"
   },
   "dependencies": {
     "@date-fns/utc": "^2.1.0",
     "@filecoin-foundation/hooks": "0.0.0",
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
-    "@headlessui/react": "^2.2.0",
+    "@headlessui/react": "^2.2.1",
     "@headlessui/tailwindcss": "^0.2.2",
     "@hookform/resolvers": "^5.0.1",
     "@jsdevtools/rehype-toc": "^3.0.2",
@@ -28,7 +27,7 @@
     "@phosphor-icons/react": "^2.1.7",
     "@sentry/nextjs": "^9.9.0",
     "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/postcss": "^4.0.17",
+    "@tailwindcss/postcss": "^4.1.4",
     "@tailwindcss/typography": "^0.5.15",
     "@tanstack/react-table": "^8.20.6",
     "@vercel/speed-insights": "^1.1.0",
@@ -39,7 +38,7 @@
     "gray-matter": "^4.0.3",
     "next": "15.3.0",
     "next-plausible": "^3.12.4",
-    "nuqs": "^2.2.3",
+    "nuqs": "^2.4.2",
     "pluralize": "^8.0.0",
     "pretty-bytes": "^6.1.1",
     "ramda": "^0.30.1",
@@ -56,7 +55,7 @@
     "swr": "^2.3.0",
     "tailwindcss": "^4.0.5",
     "usehooks-ts": "^3.1.0",
-    "zod": "^3.24.1"
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -68,17 +67,17 @@
     "@svgr/webpack": "^8.1.0",
     "@types/crypto-js": "^4.2.2",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.14.1",
     "@types/pluralize": "^0.0.33",
     "@types/ramda": "^0.30.2",
     "@types/react": "19.1.1",
     "@types/react-dom": "19.1.2",
-    "cypress": "^14.2.1",
+    "cypress": "^14.3.0",
     "frontmatter-markdown-loader": "^3.7.0",
     "husky": "^9.1.7",
     "postcss": "^8.5.3",
     "tsx": "^4.19.3",
-    "typescript": "^5.8.2",
+    "typescript": "^5.8.3",
     "yaml-loader": "^0.8.1"
   }
 }
