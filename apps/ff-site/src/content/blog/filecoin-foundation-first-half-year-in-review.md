@@ -28,7 +28,7 @@ Filecoin Foundation (FF) and Protocol Labs regularly award funding to critical d
 In the first half of 2022, Filecoin Foundation spotlighted a number of new developer grants, including:
 
 - [Webrecorder](/blog/dev-grant-spotlight-webrecorder) — Received a developer grant from Filecoin Foundation to improve areas of its open-source web archiving ecosystem while focusing on growth opportunities for the company through team expansion.
-- [Arlequin](/blog/dev-grant-spotlight-arlequin-the-artists-metaverse) — A community-driven ‘Paint-to-Earn’ system where users can collect NFT 3D animals, known as ‘Arlee’, in a creative ecosystem powered by the Flow blockchain and using Interplanetary File System (IPFS) via nft.storage.
+- [Arlequin](/blog/dev-grant-spotlight-arlequin-the-artist-s-metaverse) — A community-driven ‘Paint-to-Earn’ system where users can collect NFT 3D animals, known as ‘Arlee’, in a creative ecosystem powered by the Flow blockchain and using Interplanetary File System (IPFS) via nft.storage.
 - [Ukraine Art Collective](/blog/dev-grant-spotlight-ukraine-art-collective) — Aims to unite artists around the world to contribute their creative talents to support the Ukrainian people in their fight for freedom. The group deployed its fundraising platform using IPFS and Filecoin to create, mint, and sell NFTs, with proceeds donated to Razom for Ukraine, a nonprofit providing critical humanitarian war relief.
 - [Portrait](/ecosystem-explorer/portrait) — The first open-source web page builder, which allows people to turn their blockchain address into a website, was awarded a Filecoin Foundation developer grant to turn its proof of concept into an established, viable product. Portrait’s ultimate goal is to enable the Web3 community to express creative work and vision in a decentralized way.
 - [JACKAL Storage](/blog/dev-grant-spotlight-jackal-storage) — A platform that provides a secure, private, and user-friendly solution for decentralized storage on the Filecoin network, JACKAL was awarded a developer grant to bring speed, utility, and privacy by default to fully decentralized cloud storage.
@@ -54,7 +54,7 @@ We announced three new exciting joint grants in the first half of 2022:
 
 - [DZK Foundation Awarded Chainlink-Filecoin Joint Grant to Support zk-Rollup Research](/blog/dzk-foundation-awarded-chainlink-filecoin-joint-grant-to-support-zk-rollup-research)
 - An early-stage organization with extensive experience in zero-knowledge proofs, DZK Foundation’s grant will support research into how zk-Rollups can prove that specific data has been stored on Filecoin using a Chainlink External Adapter.
-- [FilSwan Awarded Chainlink-Filecoin Joint Grant to Create Multi-Chain Decentralized Data Storage Payment Solution](/blog/filswan-awarded-chainlink-filecoin-joint-grant-to-create-multi-chain-decentralized-data-storage)
+- [FilSwan Awarded Chainlink-Filecoin Joint Grant to Create Multi-Chain Decentralized Data Storage Payment Solution](/blog/filswan-awarded-chainlink-filecoin-joint-grant-to-create-multi-chain-decentralized-data-storage-payment-solution)
 - FilSwan’s joint grant was aimed at creating a multi-chain decentralized data storage solution that allows smart contracts on Polygon to pool together funds for the storage of data on Filecoin/IPFS.
 - [Linkstorage Awarded Chainlink-Filecoin Joint Grant to Create Blockchain Data Storage Protocol](/blog/linkstorage-awarded-chainlink-filecoin-joint-grant-to-create-blockchain-data-storage-protocol)
 
@@ -72,7 +72,7 @@ Joe Landon, vice president of advanced programs development, Lockheed Martin sai
 
 Last September, Filecoin Foundation and Electric Coin Co. (ECC) — along with Protocol Labs and the Ethereum Foundation — revealed a multi-faceted collaboration focused on Halo 2, the first trustless and recursive zero-knowledge-proof cryptography, discovered by ECC’s Sean Bowe.
 
-This April, the collaboration entered its second phase when FF and ECC [announced they are working together](/blog/new-agreement-between-filecoin-foundation-and-electric-coin-co) to empower the Filecoin, Zcash, and greater Web3 ecosystems through a new agreement that creates a joint grants pool with $5 million available for Filecoin and Zcash projects. Under the agreement, ECC’s Halo 2 codebase is also now shared via the MIT license — simpler and more permissive than its previous open-source license — in addition to the launch of the RFP-style grants program.
+This April, the collaboration entered its second phase when FF and ECC [announced they are working together](/blog/new-agreement-between-filecoin-foundation-and-electric-coin-co-simplifies-halo-licensing-and-creates-grant-pool-for-filecoin-zcash-projects) to empower the Filecoin, Zcash, and greater Web3 ecosystems through a new agreement that creates a joint grants pool with $5 million available for Filecoin and Zcash projects. Under the agreement, ECC’s Halo 2 codebase is also now shared via the MIT license — simpler and more permissive than its previous open-source license — in addition to the launch of the RFP-style grants program.
 
 Any proposal that leads to additional utility for both FIL and ZEC chains and their respective ecosystems would be considered, and innovation is encouraged. For more information about the program, email [ff-ecc-grants@fil.org](mailto:ff-ecc-grants@fil.org).
 

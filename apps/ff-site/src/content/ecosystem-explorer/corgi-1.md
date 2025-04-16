@@ -10,7 +10,6 @@ tech:
   - filecoin
 image:
   src: /assets/images/corgi_logo_white.png
-website: "https://filecorgi.xyz/"
 repo: "https://github.com/CORGIFILE/whitepaper"
 twitter: "https://twitter.com/file_corgi"
 year-joined: 2024

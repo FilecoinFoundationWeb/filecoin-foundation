@@ -53,7 +53,7 @@ Needs for video and audio capabilities have outgrown the constraints of today’
 
 ## Science and Academia
 
-Decentralization plays a significant role in supporting the research of scientific worlds. Since the Human Genome Project, [billions of gigabytes of genomic data are collected every year](/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of). For researchers, Filecoin provides a network with enough bandwidth to store and analyze that data without the worry of overflow.
+Decentralization plays a significant role in supporting the research of scientific worlds. Since the Human Genome Project, [billions of gigabytes of genomic data are collected every year](/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data). For researchers, Filecoin provides a network with enough bandwidth to store and analyze that data without the worry of overflow.
 
 ### ATLAS experiment at CERN
 

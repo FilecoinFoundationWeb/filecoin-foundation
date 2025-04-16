@@ -11,7 +11,6 @@ tech:
   - ipfs
 image:
   src: /assets/images/65975173625957e0087c7501_sinso_logo.png
-website: "https://sinso.io/"
 repo: "https://github.com/sinsoio"
 twitter: "https://twitter.com/sinsonetwork"
 category: health

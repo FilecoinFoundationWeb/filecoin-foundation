@@ -85,7 +85,7 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
 - FF ETHDenver Events
 
   - 2/29-3/3 - Filecoin Foundation ETHDenver Booth
-  - 3/1 - [Filecoin Orbit Side Event](https://filecoindenver.io/), 5:30-9:30 p.m. @ CSU Spur
+  - 3/1 - Filecoin Orbit Side Event _(original link no longer available)_, 5:30-9:30 p.m. @ CSU Spur
   - PLN Events Happening: [FIL Dev Summit](https://fildev.io/FDS-3), DePin Summit, DSA Workshop, [PLN Meetup](https://lu.ma/dg1bhavg), Libp2p Day
 
 ## FFDW
