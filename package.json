@@ -13,9 +13,11 @@
     "lint": "turbo run lint",
     "test": "turbo run test",
     "check:versions": "syncpack list-mismatches",
-    "fix:versions": "syncpack fix-mismatches"
+    "fix:versions": "syncpack fix-mismatches",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "syncpack": "^13.0.3",
     "turbo": "^2.5.0"
   }
