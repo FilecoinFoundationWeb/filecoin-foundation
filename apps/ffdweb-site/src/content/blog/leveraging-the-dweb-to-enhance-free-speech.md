@@ -6,7 +6,7 @@ published-on: "2023-04-21T08:01:04.314Z"
 category: projects
 image:
   src: >-
-    /assets/images/6442383bfcf3ec00b87f30ee_leveraging-the-dweb-to-enhance-free-speech.png
+    /assets/images/6442383bfcf3ec00b87f30ee_leveraging-the-dweb-to-enhance-free-speech.webp
 seo:
   description: "FFDW awards $5.8M to Freedom of the Press Foundation to enhance SecureDrop, preserve press freedom data, and explore decentralized web solutions for protecting journalism."
 ---

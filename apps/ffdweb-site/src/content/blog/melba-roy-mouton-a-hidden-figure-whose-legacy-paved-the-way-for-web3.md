@@ -6,7 +6,7 @@ published-on: "2023-04-21T08:01:04.314Z"
 category: technology
 image:
   src: >-
-    /assets/images/6442383cfcf3ec3f5b7f32c6_melba-roy.jpeg
+    /assets/images/6442383cfcf3ec3f5b7f32c6_melba-roy.webp
 seo:
   description: "Discover how NASA mathematician Melba Roy Mouton's groundbreaking work in statistical analysis and programming documentation helped shape modern decentralized technologies."
 ---
