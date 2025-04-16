@@ -52,7 +52,7 @@ We also heard from Kyle Samani and Mark Yusko on new avenues for growth across t
 
 ## What’s Next?
 
-To the hundreds of attendees from around the world who joined us on the ground in Las Vegas. Thank you! And a very special thank you to the sponsors of the week: [PiKNiK](/ecosystem-projects/piknik), [web3mine](/ecosystem-projects/web3mine), [Fluence](/ecosystem-projects/fluence), [STFIL](/ecosystem-projects/stfil), [SFT](/ecosystem-projects/sft), and [Huddle01](/ecosystem-projects/huddle01). If you attended FIL Vegas, please take a moment to [provide your feedback](https://filecoinfoundation.typeform.com/vegasfeedback?typeform-source=deploy-preview-223--fil.netlify.app).
+To the hundreds of attendees from around the world who joined us on the ground in Las Vegas. Thank you! And a very special thank you to the sponsors of the week: [PiKNiK](/ecosystem-projects/piknik), [web3mine](/ecosystem-projects/web3mine), [Fluence](/ecosystem-projects/fluence), [STFIL](/ecosystem-projects/stfil), [SFT](/ecosystem-projects/sft-chain), and [Huddle01](/ecosystem-projects/huddle01). If you attended FIL Vegas, please take a moment to [provide your feedback](https://filecoinfoundation.typeform.com/vegasfeedback?typeform-source=deploy-preview-223--fil.netlify.app).
 
 Interested in learning more about the Decentralized Storage Alliance and how you can get involved? [Learn more](https://dsalliance.io/get-involved).
 

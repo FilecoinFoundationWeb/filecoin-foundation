@@ -81,7 +81,7 @@ A good analogy is an umpire-less tennis game where any dispute (like determining
 
 ## Quick tour of Cadence
 
-Like Solidity language for Ethereum, Flow uses [Cadence Language](https://docs.onflow.org/cadence/language/) for smart contracts, transactions, and scripts. Inspired by the [Rust](https://rust-lang.org/) and [Move](https://move-book.com/) languages, the interpreter tracks when a resource is being _moved_ from a variable to the next and makes sure it can never be mutually accessible in the program.
+Like Solidity language for Ethereum, Flow uses [Cadence Language](https://docs.onflow.org/cadence/language/) for smart contracts, transactions, and scripts. Inspired by the [Rust](https://www.rust-lang.org/) and [Move](https://move-book.com/) languages, the interpreter tracks when a resource is being _moved_ from a variable to the next and makes sure it can never be mutually accessible in the program.
 
 The three types of Cadence programs you will be writing are [contracts](https://docs.onflow.org/cadence/language/contracts/#gatsby-focus-wrapper), [transactions](https://docs.onflow.org/cadence/language/transactions/#gatsby-focus-wrapper), and scripts.
 
