@@ -8,7 +8,7 @@ published-on: "2023-04-21T08:01:04.314Z"
 category: projects
 image:
   src: >-
-    /assets/images/6442383fef619d8564b54739_ckt-ffdw-ica.png
+    /assets/images/6442383fef619d8564b54739_ckt-ffdw-ica.webp
 seo:
   description: "Artist Christopher Kulendran Thomas debuts 'Another World' at ICA London, exploring a post-nation-state future through AI and decentralized web technologies."
 ---
