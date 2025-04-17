@@ -15,7 +15,7 @@ description: Gray Area is a 21st-century countercultural hub catalyzing creative
 website: https://grayarea.org/
 active-partnership: true
 image:
-  src: /assets/images/grayarea-banner-logo-left-gray.webp
+  src: /assets/images/grayarea-logo.webp
 seo:
   description: Gray Area is a countercultural hub fostering creative action at the
     intersection of art and technology, developing DWeb curriculum to empower
