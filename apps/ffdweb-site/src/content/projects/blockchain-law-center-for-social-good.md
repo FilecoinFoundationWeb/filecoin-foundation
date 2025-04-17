@@ -12,7 +12,7 @@ description: Promote blockchain technology’s potential to benefit all members 
 website: https://www.blockchainlawsg.org/
 active-partnership: true
 image:
-  src: /assets/images/usf-c4ltsg.webp
+  src: /assets/images/usf-logo.webp
 seo:
   description: Educational initiative promoting blockchain technology for social
     good through research, policy development, and training programs for
