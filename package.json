@@ -15,7 +15,7 @@
     "test": "turbo run test",
     "check:versions": "syncpack list-mismatches",
     "fix:versions": "syncpack fix-mismatches",
-    "prepare": "[ \"$CI\" != \"true\" ] && husky"
+    "prepare": "test \"$CI\" = \"true\" || husky"
   },
   "devDependencies": {
     "husky": "^9.1.7",
