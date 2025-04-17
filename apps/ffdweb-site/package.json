@@ -10,7 +10,9 @@
     "start": "next start",
     "lint": "next lint --fix",
     "test:cypress": "cypress run",
-    "test:cypress:percy": "echo 'test percy command to be implemented'"
+    "test:cypress:open": "cypress open",
+    "test:cypress:percy": "npx percy exec -- cypress run",
+    "test:cypress:percy:open": "npx percy exec -- cypress open"
   },
   "dependencies": {
     "@filecoin-foundation/hooks": "0.0.0",
@@ -41,6 +43,8 @@
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
+    "@percy/cli": "^1.30.10",
+    "@percy/cypress": "^3.1.5",
     "@svgr/webpack": "^8.1.0",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.14.1",

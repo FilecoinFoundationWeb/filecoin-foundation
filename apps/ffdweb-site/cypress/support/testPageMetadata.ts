@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+/// <reference types="@percy/cypress" />
 
 import { ROOT_METADATA, BASE_URL } from '@/constants/siteMetadata'
 
@@ -16,6 +17,7 @@ export function testPageMetaData(options: TestMetaDataOptions) {
   const metaTitle = getMetaTitle(title)
 
   cy.visit(path)
+  cy.percySnapshot()
 
   // Meta title
   cy.title().should('eq', metaTitle)
