@@ -11,11 +11,15 @@
     "start": "turbo run start",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
+    "lint:md": "markdownlint-cli2 \"apps/**/*.md\" --config .markdownlint.jsonc",
     "test": "turbo run test",
     "check:versions": "syncpack list-mismatches",
-    "fix:versions": "syncpack fix-mismatches"
+    "fix:versions": "syncpack fix-mismatches",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "markdownlint-cli2": "^0.17.2",
     "syncpack": "^13.0.3",
     "turbo": "^2.5.0"
   }

@@ -31,9 +31,9 @@
   "peerDependencies": {
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
-    "next": "15.2.4",
+    "next": "15.3.0",
     "react": "^19.1.0",
     "react-dom": "19.1.0",
-    "nuqs": "^2.2.3"
+    "nuqs": "^2.4.2"
   }
 }
