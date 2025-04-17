@@ -14,7 +14,7 @@ description: Working with a network of partners, TechSoup supports change makers
 website: https://www.techsoup.org/
 active-partnership: true
 image:
-  src: /assets/images/techsoup.webp
+  src: /assets/images/techsoup-logo.webp
 seo:
   description: TechSoup's Accelerating Makers project supports early-stage
     creators in understanding and adopting decentralized technologies for civil
