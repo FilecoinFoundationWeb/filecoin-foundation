@@ -14,7 +14,7 @@ featured-content: https://ffdweb.org/blog/ffdw-and-connect-humanity-empowering-a
 website: https://connecthumanity.fund/
 active-partnership: false
 image:
-  src: /assets/images/connect_humanity_logo.webp
+  src: /assets/images/connect-humanity-logo.webp
 seo:
   description: Connect Humanity conducts global surveys through community
     organizations to understand internet usage patterns and needs, advancing
