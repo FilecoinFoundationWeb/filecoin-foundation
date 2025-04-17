@@ -15,7 +15,7 @@ featured-content: https://ffdweb.org/blog/ffdw-and-witness-collaborate-to-preser
 website: https://www.witness.org/
 active-partnership: true
 image:
-  src: /assets/images/witness.webp
+  src: /assets/images/witness-logo.webp
 seo:
   description: WITNESS empowers activists and civic journalists to document human
     rights through video technology, exploring decentralized web solutions for
