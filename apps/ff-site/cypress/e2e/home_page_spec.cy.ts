@@ -13,4 +13,9 @@ describe('Homepage', () => {
   it('should check links', () => {
     verifyLinks(PATHS.HOME.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.HOME.path)
+    cy.percySnapshot()
+  })
 })

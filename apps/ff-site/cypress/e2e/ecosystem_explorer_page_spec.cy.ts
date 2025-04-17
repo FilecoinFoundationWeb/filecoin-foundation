@@ -13,4 +13,9 @@ describe('Ecosystem Explorer Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.ECOSYSTEM_EXPLORER.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.ECOSYSTEM_EXPLORER.path)
+    cy.percySnapshot()
+  })
 })

@@ -13,4 +13,9 @@ describe('About Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.ABOUT.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.ABOUT.path)
+    cy.percySnapshot()
+  })
 })

@@ -13,4 +13,9 @@ describe('Governance Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.GOVERNANCE.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.GOVERNANCE.path)
+    cy.percySnapshot()
+  })
 })

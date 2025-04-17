@@ -13,4 +13,9 @@ describe('Employee Privacy Policy Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.EMPLOYEE_PRIVACY_POLICY.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.EMPLOYEE_PRIVACY_POLICY.path)
+    cy.percySnapshot()
+  })
 })

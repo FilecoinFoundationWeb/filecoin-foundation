@@ -13,4 +13,9 @@ describe('GovHub Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.GOVHUB.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.GOVHUB.path)
+    cy.percySnapshot()
+  })
 })

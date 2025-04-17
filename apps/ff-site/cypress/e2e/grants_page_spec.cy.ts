@@ -13,4 +13,9 @@ describe('Grants Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.GRANTS.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.GRANTS.path)
+    cy.percySnapshot()
+  })
 })
