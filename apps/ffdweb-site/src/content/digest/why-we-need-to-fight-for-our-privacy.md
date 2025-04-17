@@ -29,7 +29,7 @@ The Iranian Revolution in 1979 led to the establishment of an Islamic republic a
 
 The loss of freedom may also be happening where you are, but, much like the parable of a frog in boiling water, you may not notice it. Massive technological shifts over the past few decades have improved society in all kinds of ways, but this new digital landscape has also granted governments and corporations unprecedented abilities to surveil individuals. We are monitored, both online and offline, through CCTV cameras, biometric identification systems, and data-tracking software. Our personal information is collected and analyzed to create detailed profiles of our behavior and preferences, and these are used to manipulate our choices and decisions. Governments go so far as to mandate the installation of spyware on citizens' devices [to monitor their communications and online activities](https://www.bitdefender.com/blog/hotforsecurity/australia-to-force-tech-companies-to-allow-government-access-to-encrypted-messages/). When people feel that they are being watched or monitored, they're less likely to express their opinions or engage in activism. Without private communication, agitation and pushback against authoritarianism becomes impossible out of fear of reprisal.
 
-As privacy advocate Juan Angel put it in his essay [“Privacy: The Hill to Die on”](https://thesovereignchimpanzee.substack.com/p/privacy-the-hill-to-die-on):
+As privacy advocate Juan Angel put it in his essay “Privacy: The Hill to Die on” _(original link no longer available)_:
 
 > Life in the panopticon of absolute digital surveillance forces humans to become shells of themselves, subjects who self-censor their own thoughts, behaviors, and expressions even in private interactions.
 

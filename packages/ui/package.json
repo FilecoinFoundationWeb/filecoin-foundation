@@ -63,15 +63,15 @@
     "@filecoin-foundation/typescript-config": "0.0.0"
   },
   "peerDependencies": {
-    "@headlessui/react": "^2.2.0",
+    "@headlessui/react": "^2.2.1",
     "@filecoin-foundation/hooks": "0.0.0",
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
     "@phosphor-icons/react": "^2.1.7",
     "@sentry/nextjs": "^9.9.0",
-    "@tailwindcss/postcss": "^4.0.17",
+    "@tailwindcss/postcss": "^4.1.4",
     "clsx": "^2.1.1",
-    "next": "15.2.4",
+    "next": "15.3.0",
     "postcss": "^8.5.3",
     "react": "^19.1.0",
     "react-dom": "19.1.0",
