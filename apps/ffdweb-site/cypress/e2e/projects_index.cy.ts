@@ -11,4 +11,10 @@ describe('Projects Index Page', () => {
       description: PROJECTS_SEO.description,
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn({
+      path: PATHS.PROJECTS.path,
+    })
+  })
 })

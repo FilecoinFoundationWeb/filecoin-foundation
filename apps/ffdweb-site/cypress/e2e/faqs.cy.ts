@@ -11,4 +11,10 @@ describe('FAQs Page', () => {
       description: FAQS_SEO.description,
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn({
+      path: PATHS.FAQS.path,
+    })
+  })
 })

@@ -11,4 +11,10 @@ describe('Digest Index Page', () => {
       description: DIGEST_SEO.description,
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn({
+      path: PATHS.DIGEST.path,
+    })
+  })
 })

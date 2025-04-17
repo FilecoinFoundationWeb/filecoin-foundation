@@ -11,4 +11,10 @@ describe('About Page', () => {
       description: ABOUT_SEO.description,
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn({
+      path: PATHS.ABOUT.path,
+    })
+  })
 })

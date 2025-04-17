@@ -11,4 +11,10 @@ describe('Terms of Use Page', () => {
       description: TERMS_OF_USE_SEO.description,
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn({
+      path: PATHS.TERMS_OF_USE.path,
+    })
+  })
 })

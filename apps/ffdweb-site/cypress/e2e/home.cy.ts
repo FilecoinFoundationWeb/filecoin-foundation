@@ -11,4 +11,10 @@ describe('Home Page', () => {
       description: SEO.description,
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn({
+      path: PATHS.HOME.path,
+    })
+  })
 })

@@ -11,4 +11,10 @@ describe('Learning Resources Page', () => {
       description: LEARNING_RESOURCES_SEO.description,
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn({
+      path: PATHS.LEARNING_RESOURCES.path,
+    })
+  })
 })

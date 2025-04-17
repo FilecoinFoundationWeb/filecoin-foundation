@@ -11,4 +11,10 @@ describe('Privacy Policy Page', () => {
       description: PRIVACY_POLICY_SEO.description,
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn({
+      path: PATHS.PRIVACY_POLICY.path,
+    })
+  })
 })
