@@ -117,7 +117,11 @@ The Filecoin community has reached a milestone — 100 Filecoin Improvement Prop
 
 ### Filecoin Plus: Scaling Utilization of the Filecoin Network 
 
+![](/assets/images/quarterlyupdate_q22025_fds.webp)
+
 [Introducing the Filecoin Plus FDS-5 Recap and 2025 Priorities.](https://fil.org/blog/filecoin-plus-fds-recap-and-2025-priorities) Dive deeper into the discussions around Filecoin Plus at FIL Dev Summit and explore  the 2025 program roadmap, where scalability, diligence, and user experience make up this year’s key priorities. 
+
+![](/assets/images/quarterlyupdate_q22025_fidl.webp)
 
 [Discover how FIDL is Enhancing Transparency and Accountability in Fil+](https://fil.org/blog/how-fidl-is-enhancing-transparency-and-accountability-in-fil). Filecoin Incentive Design Lab (FIDL) is a team in the Filecoin ecosystem focused on providing insights that help clients, storage providers, and allocators make informed decisions about how they engage with Fil+.
 
