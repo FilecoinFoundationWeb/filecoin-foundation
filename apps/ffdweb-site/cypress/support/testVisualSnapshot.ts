@@ -1,6 +1,3 @@
-/// <reference types="cypress" />
-/// <reference types="@percy/cypress" />
-
 import type { MetadataParams } from '@/utils/createMetadata'
 
 type TestVisualSnapshotOptions = {

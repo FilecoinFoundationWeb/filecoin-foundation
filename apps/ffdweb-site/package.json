@@ -11,8 +11,7 @@
     "lint": "next lint --fix",
     "test:cypress": "cypress run",
     "test:cypress:open": "cypress open",
-    "test:cypress:percy": "npx percy exec -- cypress run",
-    "test:cypress:percy:open": "npx percy exec -- cypress open"
+    "test:cypress:percy": "percy exec -- cypress run"
   },
   "dependencies": {
     "@filecoin-foundation/hooks": "0.0.0",
