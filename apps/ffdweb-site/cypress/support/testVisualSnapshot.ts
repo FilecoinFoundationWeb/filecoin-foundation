@@ -8,7 +8,6 @@ type TestVisualSnapshotOptions = {
 }
 
 export function testVisualSnapshot({ path }: TestVisualSnapshotOptions) {
-
   cy.visit(path)
   cy.percySnapshot()
 }
