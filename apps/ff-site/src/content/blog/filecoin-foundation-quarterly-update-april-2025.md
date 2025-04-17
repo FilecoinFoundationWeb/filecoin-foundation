@@ -60,7 +60,6 @@ Filecoin builders are shaping the future of AI and other emerging technologies a
 
 ![](/assets/images/quarterlyupdate_q22025_cultural.webp)
 
-
 [Flickr Foundation, Internet Archive, and Other Leading Organizations Leverage Filecoin to Safeguard Cultural Heritage](https://fil.org/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage). Over 500,000 culturally significant digital artifacts from renowned institutions, including the Smithsonian Institution, Flickr Foundation, Internet Archive, MIT Open Learning, and Starling Lab, are stored on the Filecoin network. Through their preservation, Filecoin is redefining data preservation in an age where integrity, provenance, and robustness of information are more critical than ever.
 
 ![](/assets/images/quarterlyupdate_q22025_blockfrost.webp)
@@ -87,32 +86,36 @@ FF continues to award grants valued at up to $50,000 for projects that align wit
 
 ### Storage Community: The Backbone of the Filecoin Network 
 
-Driving Growth
+#### Driving Growth
 
 FF's Storage and Community team continues to help share business strategies on how to drive demand, create additional revenue streams for storage providers (SP), and solidify Filecoin's market positioning as part of its ongoing mission to help the network achieve product-market fit (PMF). Alongside [FilOz](https://www.filoz.org/) and other key ecosystem builders, founders, and business development leaders, FF is supporting discussions outlining Filecoin’s value proposition and how it can align with market needs. 
 
-Activating the Global Storage Community 
+#### Activating the Global Storage Community 
+
+
 On January 27, 2025, Filecoin Foundation and MetaEra hosted FF’s second AMA, focusing on “APAC Builder Opportunities” and drawing over 24,000 listeners on X Spaces. During the session, FF shared important updates on gas changes, providing valuable context for ongoing network developments. Representatives from Secured Finance, FIL-B, Titan Network, Zetablock, and Storswift joined the call to offer insightful perspectives on key opportunities in the data marketplace, AI agents, stablecoins, and cross-chain collaboration. This AMA reinforced FF’s commitment to empowering APAC builders and fostering innovation across the ecosystem.
 
 On March 5, 2025, we hosted an online discussion with the Storage Provider  Working Group (SPWG), FilOz, and  FF regarding FIP-100. We gathered key concerns and feedback from APAC SPs, ensuring their perspectives were well represented in the discussion. FilOz and FF provided support, offering clear explanations and actively adjusting the FIP to better align with SP needs.
 
 ### Governance: A Foundation for Decentralized Decision-Making 
 
-**Building a More Flexible, Adaptable Network**
+![](/assets/images/quarterlyupdate_q22025_nv24.webp)
+
+#### **Building a More Flexible, Adaptable Network**
 
 [The NV24 upgrade](https://fil.org/blog/announcing-the-filecoin-nv24-tuk-tuk-upgrade-enhancing-filecoin-s-efficiency) combined crucial improvements in network security, performance, and developer functionality, continuing Filecoin's mission to provide a robust and decentralized storage solution to preserve humanity's most important information. [The NV25 "Teep" upgrade](https://filecoin.io/blog/posts/filecoins-nv25-teep-network-upgrade-is-here/) introduced improvements that make Filecoin more efficient and adaptable, simplifying storage provider economics and enhancing developer tooling to make the network more flexible, adaptable, and dynamic for builders, storage providers, and storage clients. Together, these enhancements are the latest steps in bolstering the network's storage capabilities and establishing Filecoin as a leading platform in the decentralized web as well as a broader distribution layer for decentralized services.
 
-Fast Finality 
+![](/assets/images/quarterlyupdate_q22025_f3.webp)
+
+#### **Fast Finality** 
 
 Fast Finality in Filecoin (F3) will speed up finality on the network by up to 450X, making the future of Filecoin fast, secure, and accessible to a wider range of applications. The network will introduce a new component called GossiPBFT, which works alongside the existing system to rapidly finalize transactions and allows Filecoin to improve its usability across a wider variety of applications while opening the door for new use cases. Fast Finality will be activated following its mainnet parameters that were implemented in the NV25 Upgrade. For more information about F3’s development, read FilOz's series: [The F3 Journey](https://medium.com/@filoz).
 
-Milestone: 100 Filecoin Improvement Proposals 
+#### **Milestone: 100 Filecoin Improvement Proposals** 
 
 The Filecoin community has reached a milestone — 100 Filecoin Improvement Proposals have been considered to date. Through the Filecoin Improvement Proposal (FIP) process, FF aims to facilitate a decentralized, innovative, and transparent system to support community decision-making and collective ownership of the Filecoin technology. However you choose to participate in Filecoin governance, we hope you will get involved. By joining ongoing governance discussions, reviewing FIPs, and staying connected with the latest developments through the [fil-gov Slack channel](https://filecoinproject.slack.com/archives/C0535S9TUUF) you're helping shape the future of the Filecoin network.
 
-### 
-Filecoin Plus: Scaling Utilization of the Filecoin Network 
-
+### Filecoin Plus: Scaling Utilization of the Filecoin Network 
 
 [Introducing the Filecoin Plus FDS-5 Recap and 2025 Priorities.](https://fil.org/blog/filecoin-plus-fds-recap-and-2025-priorities) Dive deeper into the discussions around Filecoin Plus at FIL Dev Summit and explore  the 2025 program roadmap, where scalability, diligence, and user experience make up this year’s key priorities. 
 
