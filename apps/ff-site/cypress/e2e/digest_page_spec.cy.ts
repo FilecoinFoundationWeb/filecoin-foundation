@@ -13,4 +13,9 @@ describe('Digest Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.DIGEST.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.DIGEST.path)
+    cy.percySnapshot()
+  })
 })

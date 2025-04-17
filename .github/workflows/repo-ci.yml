@@ -11,6 +11,9 @@ jobs:
     name: Build and Test
     timeout-minutes: 15
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [ff-site, ffdweb-site]
 
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
@@ -43,5 +46,5 @@ jobs:
         run: npm run build
         env:
           AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          PERCY_TOKEN: ${{ (matrix.app == 'ff-site' && secrets.PERCY_TOKEN_FF_SITE) || secrets.PERCY_TOKEN_FFDWEB_SITE }}
           ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"

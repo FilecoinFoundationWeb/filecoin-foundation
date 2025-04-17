@@ -13,4 +13,9 @@ describe('Events Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.EVENTS.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.EVENTS.path)
+    cy.percySnapshot()
+  })
 })

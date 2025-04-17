@@ -11,4 +11,9 @@ describe('Filecoin Plus Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.FIL_PLUS.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.FIL_PLUS.path)
+    cy.percySnapshot()
+  })
 })

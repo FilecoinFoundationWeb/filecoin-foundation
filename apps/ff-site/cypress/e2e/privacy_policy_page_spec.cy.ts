@@ -13,4 +13,9 @@ describe('Privacy Policy Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.PRIVACY_POLICY.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.PRIVACY_POLICY.path)
+    cy.percySnapshot()
+  })
 })

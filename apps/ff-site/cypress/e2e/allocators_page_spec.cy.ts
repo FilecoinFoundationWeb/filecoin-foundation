@@ -13,4 +13,9 @@ describe('Allocators Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.ALLOCATORS.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.ALLOCATORS.path)
+    cy.percySnapshot()
+  })
 })

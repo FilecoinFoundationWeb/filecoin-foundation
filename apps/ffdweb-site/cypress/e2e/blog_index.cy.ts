@@ -11,4 +11,10 @@ describe('Blog Index Page', () => {
       description: BLOG_SEO.description,
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn({
+      path: PATHS.BLOG.path,
+    })
+  })
 })

@@ -13,4 +13,9 @@ describe('Terms of Use Page', () => {
   it('should check links', () => {
     verifyLinks(PATHS.TERMS_OF_USE.path)
   })
+
+  it('should match visual snapshot', () => {
+    cy.visit(PATHS.TERMS_OF_USE.path)
+    cy.percySnapshot()
+  })
 })
