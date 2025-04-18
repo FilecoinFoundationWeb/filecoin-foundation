@@ -1,3 +1,5 @@
+import { withSentryConfig } from '@sentry/nextjs'
+
 import { redirects } from './redirects.mjs'
 
 /**
@@ -45,4 +47,13 @@ const nextConfig = {
   },
 }
 
-export default nextConfig
+export default withSentryConfig(nextConfig, {
+  org: 'filecoin-foundation-qk',
+  project: 'ffdweb-site',
+  silent: !process.env.CI,
+  widenClientFileUpload: true,
+  hideSourceMaps: true,
+  disableLogger: true,
+  automaticVercelMonitors: true,
+  authToken: process.env.SENTRY_AUTH_TOKEN_FFDWEB_SITE,
+})
