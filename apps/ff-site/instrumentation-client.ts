@@ -7,4 +7,8 @@ Sentry.init({
   replaysOnErrorSampleRate: 1.0,
   replaysSessionSampleRate: 0.01,
   environment: process.env.NODE_ENV,
-}) 
+})
+
+// Add navigation instrumentation
+export const onRouterTransitionStart = Sentry.captureRouterTransitionStart
+export const onRequestError = Sentry.captureRequestError 
