@@ -31,6 +31,7 @@
     "./KeyMemberCard": "./src/KeyMemberCard.tsx",
     "./Listbox": "./src/Listbox/Listbox.tsx",
     "./Listbox/*": "./src/Listbox/*.tsx",
+    "./Markdown": "./src/Markdown/index.ts",
     "./MarkdownPage": "./src/MarkdownPage.tsx",
     "./Meta": "./src/Meta.tsx",
     "./NotFoundAnalytics": "./src/NotFoundAnalytics.tsx",
@@ -53,8 +54,7 @@
     "./TextLink/*": "./src/TextLink/*.tsx",
     "./Tooltip/*": "./src/Tooltip/*.tsx",
     "./Pagination": "./src/Pagination/index.ts",
-    "./StructuredDataScript": "./src/StructuredDataScript.tsx",
-    "./Markdown": "./src/Markdown/index.ts"
+    "./StructuredDataScript": "./src/StructuredDataScript.tsx"
   },
   "scripts": {
     "lint": "eslint . --fix"
