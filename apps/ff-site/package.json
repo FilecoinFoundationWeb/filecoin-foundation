@@ -25,7 +25,7 @@
     "@jsdevtools/rehype-toc": "^3.0.2",
     "@octokit/rest": "^21.0.1",
     "@phosphor-icons/react": "^2.1.7",
-    "@sentry/nextjs": "^9.9.0",
+    "@sentry/nextjs": "^9.13.0",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/postcss": "^4.1.4",
     "@tailwindcss/typography": "^0.5.15",
