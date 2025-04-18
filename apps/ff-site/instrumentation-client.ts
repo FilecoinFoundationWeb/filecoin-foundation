@@ -9,6 +9,5 @@ Sentry.init({
   environment: process.env.NODE_ENV,
 })
 
-// Add navigation instrumentation
 export const onRouterTransitionStart = Sentry.captureRouterTransitionStart
-export const onRequestError = Sentry.captureRequestError 
+export const onRequestError = Sentry.captureRequestError

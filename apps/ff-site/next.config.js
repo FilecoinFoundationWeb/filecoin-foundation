@@ -1,11 +1,32 @@
-const { withSentryConfig } = require('@sentry/nextjs')
+import { withSentryConfig } from '@sentry/nextjs'
 
-const redirects = require('./redirects')
+import redirects from './redirects.js'
 
+/**
+ * @type {import('next').NextConfig}
+ */
 const imageRemotePatterns = [
   {
     protocol: 'https',
     hostname: 'lh7-us.googleusercontent.com',
+  },
+]
+
+const webpackRules = [
+  {
+    test: /\.md$/,
+    loader: 'frontmatter-markdown-loader',
+    options: {
+      mode: ['body', 'attributes', 'react-component'],
+    },
+  },
+  {
+    test: /\.svg$/,
+    use: ['@svgr/webpack'],
+  },
+  {
+    test: /\.yml$/,
+    use: 'yaml-loader',
   },
 ]
 
@@ -26,24 +47,6 @@ const outputFileTracingExcludes = {
   ],
 }
 
-const webpackRules = [
-  {
-    test: /\.md$/,
-    loader: 'frontmatter-markdown-loader',
-    options: {
-      mode: ['body', 'attributes', 'react-component'],
-    },
-  },
-  {
-    test: /\.svg$/,
-    use: ['@svgr/webpack'],
-  },
-  {
-    test: /\.yml$/,
-    use: 'yaml-loader',
-  },
-]
-
 const nextConfig = {
   images: {
     remotePatterns: imageRemotePatterns,
@@ -62,8 +65,7 @@ const nextConfig = {
   },
 }
 
-// Export configuration with Sentry integration
-module.exports = withSentryConfig(nextConfig, {
+export default withSentryConfig(nextConfig, {
   org: 'filecoin-foundation-qk',
   project: 'filecoin-foundation-site',
   silent: !process.env.CI,
@@ -71,4 +73,5 @@ module.exports = withSentryConfig(nextConfig, {
   hideSourceMaps: true,
   disableLogger: true,
   automaticVercelMonitors: true,
+  authToken: process.env.SENTRY_AUTH_TOKEN_FF_SITE,
 })
