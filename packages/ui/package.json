@@ -53,7 +53,8 @@
     "./TextLink/*": "./src/TextLink/*.tsx",
     "./Tooltip/*": "./src/Tooltip/*.tsx",
     "./Pagination": "./src/Pagination/index.ts",
-    "./StructuredDataScript": "./src/StructuredDataScript.tsx"
+    "./StructuredDataScript": "./src/StructuredDataScript.tsx",
+    "./Markdown": "./src/Markdown/index.ts"
   },
   "scripts": {
     "lint": "eslint . --fix"
@@ -68,7 +69,7 @@
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
     "@phosphor-icons/react": "^2.1.7",
-    "@sentry/nextjs": "^9.9.0",
+    "@sentry/nextjs": "^9.13.0",
     "@tailwindcss/postcss": "^4.1.4",
     "clsx": "^2.1.1",
     "next": "15.3.0",
