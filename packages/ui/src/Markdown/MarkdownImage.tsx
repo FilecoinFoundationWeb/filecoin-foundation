@@ -2,19 +2,22 @@ import Image from 'next/image'
 import * as Sentry from '@sentry/node'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
+import type { ComponentPropsWithoutRef } from 'react'
 
 const IMAGE_DIMENSIONS = {
   containerWidth: 672,
   aspectRatioHeight: Math.round(672 * (9 / 16)),
 } as const
 
-type MarkdownImageProps = {
-  src?: string
-  alt?: string
+type MarkdownImageProps = ComponentPropsWithoutRef<'img'> & {
   fallbackImage: StaticImageProps
 }
 
-export function MarkdownImage({ src, alt, fallbackImage }: MarkdownImageProps) {
+export function MarkdownImage({
+  src,
+  alt,
+  fallbackImage,
+}: MarkdownImageProps) {
   const commonProps = {
     quality: 100,
     width: IMAGE_DIMENSIONS.containerWidth,
@@ -41,13 +44,4 @@ export function MarkdownImage({ src, alt, fallbackImage }: MarkdownImageProps) {
   }
 
   return <Image {...commonProps} src={src} alt={alt || ''} />
-}
-
-export const createMarkdownImage = (fallbackImage: StaticImageProps) => {
-  const MarkdownImageWrapper = (props: React.ComponentPropsWithoutRef<'img'>) => (
-    <MarkdownImage {...props} fallbackImage={fallbackImage} />
-  )
-
-  MarkdownImageWrapper.displayName = 'MarkdownImageWrapper'
-  return MarkdownImageWrapper
 } 

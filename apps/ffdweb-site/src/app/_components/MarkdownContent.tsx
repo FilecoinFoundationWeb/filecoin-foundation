@@ -1,4 +1,4 @@
-import { createMarkdownImage, MarkdownLink } from '@filecoin-foundation/ui/Markdown'
+import { MarkdownImage, MarkdownLink } from '@filecoin-foundation/ui/Markdown'
 import ReactMarkdown, { type Components } from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
@@ -13,7 +13,7 @@ export type MarkdownContentProps = {
 }
 
 const markdownComponents: Components = {
-  img: createMarkdownImage(graphicsData.imageFallback),
+  img: (props) => <MarkdownImage {...props} fallbackImage={graphicsData.imageFallback} />,
   a: (props) => <MarkdownLink {...props} baseDomain={BASE_DOMAIN} />,
 }
 
