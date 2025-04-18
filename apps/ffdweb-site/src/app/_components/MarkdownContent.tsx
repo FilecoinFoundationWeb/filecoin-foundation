@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import * as Sentry from '@sentry/node'
 import ReactMarkdown, { type Components } from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
@@ -33,7 +34,9 @@ const MarkdownImage: Components['img'] = ({ src, alt }) => {
 
   if (!src) {
     const errorMessage = 'Invalid markdown: image is missing src attribute'
+
     console.error(errorMessage)
+    Sentry.captureException(new Error(errorMessage))
 
     return (
       <Image
@@ -50,10 +53,13 @@ const MarkdownImage: Components['img'] = ({ src, alt }) => {
 const MarkdownLink: Components['a'] = ({ href, children }) => {
   if (!href) {
     const errorMessage = `Invalid markdown: link is missing href attribute for text "${children}"`
+
     console.error(errorMessage)
+    Sentry.captureException(new Error(errorMessage))
 
     return <>{children}</>
   }
+
   return (
     <SmartTextLink href={href} baseDomain={BASE_DOMAIN}>
       {children}
