@@ -13,7 +13,5 @@ type RootLayoutProps = {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  return (
-    <SiteLayout>{children}</SiteLayout>
-  )
+  return <SiteLayout>{children}</SiteLayout>
 }

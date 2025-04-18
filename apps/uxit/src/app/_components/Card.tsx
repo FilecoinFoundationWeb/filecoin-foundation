@@ -19,4 +19,4 @@ export function Card({ cta, ...rest }: CardProps) {
   }
 
   return <SharedCard cta={ctaWithBaseDomain} {...rest} />
-} 
+}
