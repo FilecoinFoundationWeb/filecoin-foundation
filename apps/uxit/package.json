@@ -1,0 +1,27 @@
+{
+  "name": "uxit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --fix"
+  },
+  "dependencies": {
+    "@filecoin-foundation/ui": "0.0.0",
+    "next": "15.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.0.5"
+  },
+  "devDependencies": {
+    "@filecoin-foundation/eslint-config": "0.0.0",
+    "@filecoin-foundation/typescript-config": "0.0.0",
+    "@types/node": "^22.14.1",
+    "@types/react": "19.1.1",
+    "@types/react-dom": "19.1.2",
+    "postcss": "^8.5.3",
+    "typescript": "^5.8.3"
+  }
+} 
