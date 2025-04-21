@@ -110,6 +110,15 @@
     @apply hover:text-brand-primary-400;
   }
 
+  /* ACCENT ICONS */
+  .accent-icon-regular {
+    @apply text-brand-secondary-100;
+  }
+
+  .accent-icon-fill {
+    @apply bg-brand-secondary-100 text-neutral-950;
+  }
+
   /* AVATAR */
   .avatar-background {
     @apply bg-brand-primary-800;
@@ -199,6 +208,15 @@
     @apply hover:text-brand-primary-400;
   }
 
+  /* FILTER SIDEBAR */
+  .filter-sidebar-button {
+    @apply text-brand-primary-300 hover:bg-brand-primary-800 rounded-xs;
+
+    &[data-selected='true'] {
+      @apply bg-brand-primary-800 text-brand-primary-200;
+    }
+  }
+
   /* ICON BUTTON */
   .icon-button {
     @apply text-brand-primary-300 hover:bg-brand-primary-800;
@@ -213,6 +231,19 @@
     }
   }
 
+  /* LISTBOX */
+  .listbox-button {
+    @apply text-brand-primary-300 hover:text-brand-primary-400 focus:text-brand-primary-100 border;
+  }
+
+  .listbox-options {
+    @apply border-brand-primary-300 text-brand-primary-100 border bg-neutral-950;
+  }
+
+  .listbox-option {
+    @apply ui-active:bg-brand-primary-500;
+  }
+
   /* META */
   .meta {
     @apply text-sm text-neutral-200;
@@ -225,6 +256,11 @@
     .notification-close-button {
       @apply hover:text-brand-primary-300 hover:bg-brand-primary-800 text-neutral-100;
     }
+  }
+
+  /* PAGE HEADER */
+  .page-header-image {
+    @apply rounded-none;
   }
 
   /* PAGINATION */
@@ -302,7 +338,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply font-normal! text-brand-primary-300! no-underline! hover:text-brand-primary-500! hover:underline! focus:brand-outline!;
+    @apply text-brand-primary-300! hover:text-brand-primary-500! focus:brand-outline! font-normal! no-underline! hover:underline!;
   }
 
   /* TOOLTIP */
@@ -317,41 +353,5 @@
   /* SHARE ARTICLE */
   .share-article-title {
     @apply text-brand-primary-300;
-  }
-
-  /* PAGE HEADER */
-  .page-header-image {
-    @apply rounded-none;
-  }
-
-  /* ACCENT ICONS */
-  .accent-icon-regular {
-    @apply text-brand-secondary-100;
-  }
-
-  .accent-icon-fill {
-    @apply bg-brand-secondary-100 text-neutral-950;
-  }
-
-  /* LISTBOX */
-  .listbox-button {
-    @apply text-brand-primary-300 hover:text-brand-primary-400 focus:text-brand-primary-100 border;
-  }
-
-  .listbox-options {
-    @apply border-brand-primary-300 text-brand-primary-100 border bg-neutral-950;
-  }
-
-  .listbox-option {
-    @apply ui-active:bg-brand-primary-500;
-  }
-
-  /* FILTER SIDEBAR */
-  .filter-sidebar-button {
-    @apply text-brand-primary-300 hover:bg-brand-primary-800 rounded-xs;
-
-    &[data-selected='true'] {
-      @apply bg-brand-primary-800 text-brand-primary-200;
-    }
   }
 }
