@@ -23,9 +23,9 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
-// import { IconCardWithCTA } from './components/IconCardWithCTA'
+import { IconCardWithCTA } from './components/IconCardWithCTA'
 import { FEATURED_PROJECTS } from './constants/featuredProjects'
-// import { learningResources } from './constants/learningResources'
+import { learningResources } from './constants/learningResources'
 import { getFeaturedProjects } from './utils/getFeaturedProjects'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
@@ -113,11 +113,11 @@ export default async function Home() {
           'Learn how decentralized technologies are creating the infrastructure for a better web. Explore educational content, research papers, tutorials, interactive content, and more resources from FFDW and beyond.',
         ]}
       >
-        {/*<CardGrid as="section" cols="mdThree">
-           {learningResources.map(({ icon, title, cta }) => (
+        <CardGrid as="section" cols="mdThree">
+          {learningResources.map(({ icon, title, cta }) => (
             <IconCardWithCTA key={title} icon={icon} title={title} cta={cta} />
-          ))} 
-        </CardGrid>*/}
+          ))}
+        </CardGrid>
         <CTALink href={PATHS.LEARNING_RESOURCES.path}>
           View All Learning Resources
         </CTALink>

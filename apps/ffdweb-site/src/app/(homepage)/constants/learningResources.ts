@@ -1,16 +1,29 @@
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
+
 import { PATHS } from '@/constants/paths'
 
 import FolderIcon from '@/assets/icons/folder.svg'
 import TapGestureIcon from '@/assets/icons/tap-gesture.svg'
 import TvScreenIcon from '@/assets/icons/tv-screen.svg'
 
-export const learningResources = [
+const learningResourcePath = PATHS.LEARNING_RESOURCES.path + '?resource='
+
+type LearningResource = {
+  icon: IconProps['component']
+  title: string
+  cta: {
+    text: string
+    href: string
+  }
+}
+
+export const learningResources: LearningResource[] = [
   {
     icon: FolderIcon,
-    title: 'Use Cases',
+    title: 'Case Studies',
     cta: {
       text: 'Explore',
-      href: PATHS.LEARNING_RESOURCES.path,
+      href: learningResourcePath + 'case-study',
     },
   },
   {
@@ -18,7 +31,7 @@ export const learningResources = [
     title: 'Interactive Tutorials',
     cta: {
       text: 'Explore',
-      href: PATHS.LEARNING_RESOURCES.path,
+      href: learningResourcePath + 'tutorial',
     },
   },
   {
@@ -26,7 +39,7 @@ export const learningResources = [
     title: 'Videos',
     cta: {
       text: 'Explore',
-      href: PATHS.LEARNING_RESOURCES.path,
+      href: learningResourcePath + 'video',
     },
   },
 ] as const

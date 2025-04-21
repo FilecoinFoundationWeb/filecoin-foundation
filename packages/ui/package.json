@@ -18,6 +18,7 @@
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./Card/*": "./src/Card/*.tsx",
     "./CardGrid": "./src/CardGrid.tsx",
+    "./CopyrightText": "./src/CopyrightText.tsx",
     "./CopyToClipboard": "./src/CopyToClipboard.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",
     "./DigestArticleHeader": "./src/DigestArticleHeader.tsx",

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import { CopyrightText } from '@filecoin-foundation/ui/CopyrightText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Social } from '@filecoin-foundation/ui/Social'
 import clsx from 'clsx'
@@ -84,10 +85,7 @@ export function Footer() {
             ))}
           </ul>
 
-          <p className="lg:text-end">
-            &copy; {new Date().getFullYear()} Filecoin Foundation for
-            Decentralized Web{' '}
-          </p>
+          <CopyrightText siteName="Filecoin Foundation for the Decentralized Web" />
         </div>
       </div>
     </footer>
