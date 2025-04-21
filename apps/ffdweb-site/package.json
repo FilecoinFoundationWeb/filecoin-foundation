@@ -43,6 +43,7 @@
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
+    "@filecoin-foundation/cypress": "0.0.0",
     "@percy/cli": "^1.30.10",
     "@percy/cypress": "^3.1.5",
     "@svgr/webpack": "^8.1.0",
