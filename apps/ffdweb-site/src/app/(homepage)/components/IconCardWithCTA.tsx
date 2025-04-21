@@ -14,7 +14,7 @@ export type IconCardWithCTAProps = {
 
 export function IconCardWithCTA({ title, icon, cta }: IconCardWithCTAProps) {
   return (
-    <li className="border-brand-primary-700 relative flex items-center gap-6 border-2 p-6 md:flex-col md:items-start">
+    <div className="hover:bg-brand-primary-900 border-brand-primary-700 relative flex items-center gap-6 border-2 p-6 md:flex-col md:items-start">
       <div className="accent-icon-regular">
         <Icon component={icon} size={64} />
       </div>
@@ -30,6 +30,6 @@ export function IconCardWithCTA({ title, icon, cta }: IconCardWithCTAProps) {
           {cta.text}
         </CTALink>
       </div>
-    </li>
+    </div>
   )
 }
