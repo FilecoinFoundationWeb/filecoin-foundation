@@ -1,7 +1,6 @@
 {
   "singleQuote": true,
   "semi": false,
-  "tailwindStylesheet": "./src/app/_styles/globals.css",
   "tailwindFunctions": ["clsx"],
   "overrides": [
     {
