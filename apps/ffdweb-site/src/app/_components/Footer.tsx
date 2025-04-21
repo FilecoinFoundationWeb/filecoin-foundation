@@ -85,9 +85,7 @@ export function Footer() {
             ))}
           </ul>
 
-          <div className="lg:text-end">
-            <CopyrightText siteName="Filecoin Foundation for the Decentralized Web" />
-          </div>
+          <CopyrightText siteName="Filecoin Foundation for the Decentralized Web" />
         </div>
       </div>
     </footer>

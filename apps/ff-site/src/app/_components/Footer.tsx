@@ -56,7 +56,9 @@ export function Footer() {
       </nav>
 
       <hr />
-      <CopyrightText siteName="Filecoin Foundation" />
+      <div className="text-center text-sm">
+        <CopyrightText siteName="Filecoin Foundation" />
+      </div>
     </footer>
   )
 }
