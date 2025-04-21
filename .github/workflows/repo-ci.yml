@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        app: [ff-site, ffdweb-site]
+        app: [ff-site, ffdweb-site, uxit]
 
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
