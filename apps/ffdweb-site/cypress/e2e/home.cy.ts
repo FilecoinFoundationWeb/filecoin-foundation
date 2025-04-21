@@ -1,14 +1,16 @@
 import { PATHS } from '@/constants/paths'
-import { SEO } from '@/constants/siteMetadata'
+import { SEO, BASE_URL } from '@/constants/siteMetadata'
 
-import { tests } from '@/support/index'
+import { tests } from '@/cypress/support'
+import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
 
 describe('Home Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path: PATHS.HOME.path,
-      title: SEO.title,
+      title: getMetaTitleTemplate(SEO.title),
       description: SEO.description,
+      baseUrl: BASE_URL,
     })
   })
 

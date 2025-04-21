@@ -1,14 +1,17 @@
 import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
+import { tests } from '@/cypress/support'
+import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
 import { PRIVACY_POLICY_SEO } from '@/privacy-policy/constants/seo'
-import { tests } from '@/support/index'
 
 describe('Privacy Policy Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path: PATHS.PRIVACY_POLICY.path,
-      title: PRIVACY_POLICY_SEO.title,
+      title: getMetaTitleTemplate(PRIVACY_POLICY_SEO.title),
       description: PRIVACY_POLICY_SEO.description,
+      baseUrl: BASE_URL,
     })
   })
 

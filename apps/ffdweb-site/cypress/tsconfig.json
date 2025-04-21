@@ -6,7 +6,7 @@
       "@/*": ["src/app/*"],
       "@/constants/*": ["src/app/_constants/*"],
       "@/utils/*": ["src/app/_utils/*"],
-      "@/support/*": ["cypress/support/*"]
+      "@/cypress/*": ["cypress/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"]
