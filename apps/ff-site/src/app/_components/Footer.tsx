@@ -1,3 +1,4 @@
+import { CopyrightText } from '@filecoin-foundation/ui/CopyrightText'
 import { Social } from '@filecoin-foundation/ui/Social'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
@@ -19,9 +20,9 @@ export function Footer() {
           <Logo />
         </div>
         <div className="sm:col-span-3">
-          <p className="mb-6 max-w-readable">
+          <p className="max-w-readable mb-6">
             For the latest big ideas and news from the Filecoin ecosystem and
-            decentralized web, subscribe to Filecoin Foundation’s newsletter,
+            decentralized web, subscribe to Filecoin Foundation's newsletter,
             The Upload.
           </p>
           <NewsletterForm />
@@ -55,13 +56,7 @@ export function Footer() {
       </nav>
 
       <hr />
-      <p className="text-center text-sm">
-        &copy; {new Date().getFullYear()} Content on this site is licensed under
-        a{' '}
-        <ExternalTextLink href="https://creativecommons.org/licenses/by/4.0/">
-          Creative Commons Attribution 4.0 International license
-        </ExternalTextLink>
-      </p>
+      <CopyrightText siteName="Filecoin Foundation" />
     </footer>
   )
 }
