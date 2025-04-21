@@ -10,6 +10,7 @@
       "@/components/*": ["./src/app/_components/*"],
       "@/constants/*": ["./src/app/_constants/*"],
       "@/content/*": ["./src/content/*"],
+      "@/cypress/*": ["./cypress/*"],
       "@/data/*": ["./src/app/_data/*"],
       "@/hooks/*": ["./src/app/_hooks/*"],
       "@/schemas/*": ["./src/app/_schemas/*"],
