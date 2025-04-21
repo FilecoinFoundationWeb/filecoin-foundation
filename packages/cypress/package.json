@@ -1,0 +1,23 @@
+{
+  "name": "@filecoin-foundation/cypress",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#*": "./src/*"
+  },
+  "exports": {
+    "./metadata": "./src/metadata/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@filecoin-foundation/eslint-config": "0.0.0",
+    "@filecoin-foundation/typescript-config": "0.0.0"
+  },
+  "peerDependencies": {
+    "cypress": "^14.3.0"
+  }
+}
