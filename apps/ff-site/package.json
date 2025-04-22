@@ -71,7 +71,7 @@
     "@types/node": "^22.14.1",
     "@types/pluralize": "^0.0.33",
     "@types/ramda": "^0.30.2",
-    "@types/react": "19.1.1",
+    "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
     "cypress": "^14.3.0",
     "frontmatter-markdown-loader": "^3.7.0",
