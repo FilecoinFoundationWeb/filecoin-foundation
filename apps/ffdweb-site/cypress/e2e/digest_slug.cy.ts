@@ -1,12 +1,12 @@
 import { PATHS } from '@/constants/paths'
-import { ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
+import { BASE_URL } from '@/constants/siteMetadata'
 
+import { tests } from '@/cypress/support'
 import type {
   GenericEntryFrontmatter,
   GetEntryOptions,
-} from '../tasks/getEntryFrontmatter'
-
-import { tests } from '@/support/index'
+} from '@/cypress/tasks/getEntryFrontmatter'
+import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
 const CONTENT_FOLDER = 'digest'
 
@@ -20,8 +20,9 @@ describe('Digest Slug Page', () => {
         const seoTitle = seo.title || title
         tests.metadata.fn({
           path: `${PATHS.DIGEST.path}/${slug}`,
-          title: { absolute: `${seoTitle} | ${ORGANIZATION_NAME_SHORT}` },
+          title: getMetaTitleWithSuffix(seoTitle),
           description: seo.description,
+          baseUrl: BASE_URL,
         })
       })
     })

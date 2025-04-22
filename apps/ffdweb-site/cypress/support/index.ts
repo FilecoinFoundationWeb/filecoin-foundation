@@ -2,7 +2,8 @@
 
 import '@percy/cypress'
 
-import { testPageMetaData } from './testPageMetadata'
+import { testPageMetaData } from '@filecoin-foundation/cypress/metadata'
+
 import { testVisualSnapshot } from './testVisualSnapshot'
 
 export const tests = {

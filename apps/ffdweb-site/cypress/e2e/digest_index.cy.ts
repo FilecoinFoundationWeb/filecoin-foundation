@@ -1,14 +1,16 @@
 import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
+import { tests } from '@/cypress/support'
 import { DIGEST_SEO } from '@/digest/constants/seo'
-import { tests } from '@/support/index'
 
 describe('Digest Index Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path: PATHS.DIGEST.path,
-      title: { absolute: DIGEST_SEO.title },
+      title: DIGEST_SEO.title,
       description: DIGEST_SEO.description,
+      baseUrl: BASE_URL,
     })
   })
 

@@ -1,0 +1,11 @@
+{
+  "extends": "@filecoin-foundation/typescript-config/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#*": ["./src/*"]
+    }
+  },
+  "include": ["src", "tsconfig.json"],
+  "exclude": ["node_modules"]
+}

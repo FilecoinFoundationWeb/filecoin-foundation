@@ -1,14 +1,16 @@
 import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
 import { BLOG_SEO } from '@/blog/constants/seo'
-import { tests } from '@/support/index'
+import { tests } from '@/cypress/support'
 
 describe('Blog Index Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path: PATHS.BLOG.path,
-      title: { absolute: BLOG_SEO.title },
+      title: BLOG_SEO.title,
       description: BLOG_SEO.description,
+      baseUrl: BASE_URL,
     })
   })
 

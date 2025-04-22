@@ -1,22 +1,19 @@
-import { ROOT_METADATA, BASE_URL } from '@/constants/siteMetadata'
+/// <reference types="cypress" />
 
-import type { MetadataParams } from '@/utils/createMetadata'
-
-type TestMetaDataOptions = {
-  path: MetadataParams['path']
-  title: MetadataParams['title']
-  description: MetadataParams['description']
+export type TestMetaDataOptions = {
+  path: `/${string}`
+  title: string
+  description: string
+  baseUrl: string
 }
 
 export function testPageMetaData(options: TestMetaDataOptions) {
-  const { path, title, description } = options
-
-  const metaTitle = getMetaTitle(title)
+  const { path, title, description, baseUrl } = options
 
   cy.visit(path)
 
   // Meta title
-  cy.title().should('eq', metaTitle)
+  cy.title().should('eq', title)
 
   // Meta description
   cy.get('head meta[name="description"]').should(
@@ -29,15 +26,11 @@ export function testPageMetaData(options: TestMetaDataOptions) {
   cy.get('link[rel="canonical"]').should(
     'have.attr',
     'href',
-    path === '/' ? BASE_URL : `${BASE_URL}${path}`,
+    path === '/' ? baseUrl : `${baseUrl}${path}`,
   )
 
   // OG title
-  cy.get('head meta[property="og:title"]').should(
-    'have.attr',
-    'content',
-    metaTitle,
-  )
+  cy.get('head meta[property="og:title"]').should('have.attr', 'content', title)
 
   // OG description
   cy.get('head meta[property="og:description"]').should(
@@ -53,7 +46,7 @@ export function testPageMetaData(options: TestMetaDataOptions) {
   cy.get('head meta[name="twitter:title"]').should(
     'have.attr',
     'content',
-    metaTitle,
+    title,
   )
 
   // Twitter description
@@ -65,13 +58,4 @@ export function testPageMetaData(options: TestMetaDataOptions) {
 
   // Twitter image
   cy.get('head meta[name="twitter:image"]').should('have.attr', 'content')
-}
-
-function getMetaTitle(title: TestMetaDataOptions['title']) {
-  if (typeof title === 'string') {
-    const templateTitle = ROOT_METADATA.title.template.replace('%s', title)
-    return templateTitle
-  } else {
-    return title.absolute
-  }
 }
