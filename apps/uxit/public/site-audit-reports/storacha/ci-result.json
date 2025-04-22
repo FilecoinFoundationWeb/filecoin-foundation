@@ -1,0 +1,66 @@
+[
+  {
+    "path": "/",
+    "score": 0.89,
+    "performance": 0.74,
+    "accessibility": 0.9,
+    "best-practices": 1,
+    "seo": 0.92
+  },
+  {
+    "path": "/blog",
+    "score": 0.81,
+    "performance": 0.54,
+    "accessibility": 0.91,
+    "best-practices": 0.79,
+    "seo": 1
+  },
+  {
+    "path": "/cdn-cgi/l/email-protection",
+    "score": 0.87,
+    "performance": 1,
+    "accessibility": 0.93,
+    "best-practices": 1,
+    "seo": 0.54
+  },
+  {
+    "path": "/ecosystem",
+    "score": 0.95,
+    "performance": 0.92,
+    "accessibility": 0.89,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/node-providers",
+    "score": 0.96,
+    "performance": 0.93,
+    "accessibility": 0.89,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/referrals",
+    "score": 0.96,
+    "performance": 0.95,
+    "accessibility": 0.9,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/referred",
+    "score": 0.94,
+    "performance": 0.87,
+    "accessibility": 0.89,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/roadmap",
+    "score": 0.92,
+    "performance": 0.88,
+    "accessibility": 0.89,
+    "best-practices": 1,
+    "seo": 0.92
+  }
+]
