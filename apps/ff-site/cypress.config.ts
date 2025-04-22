@@ -3,12 +3,15 @@ import path from 'path'
 
 import { defineConfig } from 'cypress'
 
+import { getPageFrontmatterSeo } from './cypress/tasks/getPageFrontmatterSeo'
+
 export default defineConfig({
   e2e: {
     baseUrl: 'http://localhost:3000',
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
     setupNodeEvents(on) {
       on('task', {
+        getPageFrontmatterSeo,
         readDir(directoryPath) {
           return new Promise((resolve, reject) => {
             fs.readdir(directoryPath, (err, files) => {

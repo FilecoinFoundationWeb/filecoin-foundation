@@ -1,8 +1,18 @@
+import type { Metadata } from 'next'
+
 import { PATHS } from './paths'
 
 const BASE_DOMAIN = 'fil.org'
 const BASE_URL = `https://${BASE_DOMAIN}`
 const ORGANIZATION_NAME = 'Filecoin Foundation'
+
+export const ROOT_METADATA = {
+  title: {
+    template: `%s | ${ORGANIZATION_NAME}`,
+    default: ORGANIZATION_NAME,
+  },
+  metadataBase: new URL(BASE_URL),
+} satisfies Metadata
 
 const FIL_PLUS_URLS = {
   allocators: {
