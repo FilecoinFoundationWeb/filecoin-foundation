@@ -11,6 +11,14 @@ const nextConfig = {
     config.module.rules.push(...webpackRules)
     return config
   },
+  async rewrites() {
+    return [
+      {
+        source: '/site-audit-reports/:site',
+        destination: '/site-audit-reports/:site/index.html',
+      },
+    ]
+  },
 }
 
 export default nextConfig
