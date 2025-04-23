@@ -17,8 +17,7 @@ describe('Random Ecosystem Project', () => {
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
       ).then(({ title, seo }) => {
-        const seoTitle = seo.title || title
-        const metaTitle = buildMetaTitle(seoTitle)
+        const metaTitle = seo.title || buildMetaTitle(title)
         const metaTitleWithSuffix = getMetaTitleWithSuffix(metaTitle)
 
         tests.metadata.fn({
