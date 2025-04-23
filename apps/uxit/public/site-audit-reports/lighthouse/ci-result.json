@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/",
+    "score": 0.9,
+    "performance": 0.84,
+    "accessibility": 0.89,
+    "best-practices": 0.96,
+    "seo": 0.92
+  },
+  {
+    "path": "/blogs",
+    "score": 0.91,
+    "performance": 0.84,
+    "accessibility": 0.9,
+    "best-practices": 0.96,
+    "seo": 0.92
+  },
+  {
+    "path": "/blogs/The%20Role%20of%20Blockchain%20in%20AI%20%26%20Data%20Storage%3A%20A%20Decentralized%20Future%20for%20Technology",
+    "score": 0.92,
+    "performance": 0.89,
+    "accessibility": 0.91,
+    "best-practices": 0.96,
+    "seo": 0.92
+  },
+  {
+    "path": "/documentation",
+    "score": 0.93,
+    "performance": 0.93,
+    "accessibility": 0.9,
+    "best-practices": 0.96,
+    "seo": 0.92
+  },
+  {
+    "path": "/faq",
+    "score": 0.91,
+    "performance": 0.86,
+    "accessibility": 0.9,
+    "best-practices": 0.96,
+    "seo": 0.92
+  }
+]

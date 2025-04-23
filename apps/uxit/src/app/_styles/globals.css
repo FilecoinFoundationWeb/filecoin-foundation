@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 @source "../../../../../node_modules/@filecoin-foundation/ui";
 
+@theme {
+  --spacing-readable: 60ch;
+}
+
 @utility brand-outline {
   outline: 2px solid var(--color-indigo-500);
   outline-offset: 0px;
