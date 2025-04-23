@@ -5,13 +5,6 @@ import type { BreakpointValue } from './types/tailwindTypes'
 type Width = `${number}px` | `${number}vw`
 type Args = { startSize: Width } & Partial<Record<BreakpointValue, Width>>
 
-function getScreenWidthNumber(screenSize: BreakpointValue) {
-  const widthAsString = breakpoints[screenSize].replace('px', '')
-  const widthAsNumber = Number(widthAsString)
-
-  return widthAsNumber
-}
-
 export function buildImageSizeProp(args: Args) {
   const { startSize, ...breakpointWidthPairs } = args
 
@@ -39,5 +32,16 @@ export function buildImageSizeProp(args: Args) {
     },
   )
 
+  if (!mediaQueriesArray.length) {
+    return startSize
+  }
+
   return `${mediaQueriesArray.join(', ')}, ${startSize}`
+}
+
+function getScreenWidthNumber(screenSize: BreakpointValue) {
+  const widthAsString = breakpoints[screenSize].replace('px', '')
+  const widthAsNumber = Number(widthAsString)
+
+  return widthAsNumber
 }
