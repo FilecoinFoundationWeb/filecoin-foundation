@@ -71,12 +71,7 @@ export default async function Project(props: ProjectProps) {
               src={image?.src || graphicsData.imageFallback.data.src}
               alt={`${title}'s logo`}
               className="object-contain"
-              sizes={buildImageSizeProp({
-                startSize: '100vw',
-                md: '730px',
-                lg: '660px',
-                xl: '600px',
-              })}
+              sizes={buildImageSizeProp({ startSize: '100vw', md: '640px' })}
             />
           </div>
           <div className="inline-flex flex-col gap-8 sm:flex-row sm:gap-12">
