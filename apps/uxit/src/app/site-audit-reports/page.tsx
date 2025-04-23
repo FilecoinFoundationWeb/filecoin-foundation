@@ -38,7 +38,7 @@ export default function SiteAuditPage() {
             as="div"
             title={{ text: name }}
             cta={{
-              href: `${PATHS.SITE_AUDIT_REPORTS}/${id}/`,
+              href: `${PATHS.SITE_AUDIT_REPORTS.path}/${id}/`,
               text: 'View Report',
               icon: {
                 component: ArrowRight,
