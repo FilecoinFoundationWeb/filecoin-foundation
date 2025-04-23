@@ -1,6 +1,5 @@
 import { CopyrightText } from '@filecoin-foundation/ui/CopyrightText'
 import { Social } from '@filecoin-foundation/ui/Social'
-import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 
 import { footerNavigationItems } from '@/constants/navigation'
