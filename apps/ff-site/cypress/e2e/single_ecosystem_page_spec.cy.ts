@@ -1,27 +1,37 @@
+import path from 'path'
+
 import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
+import { tests } from '@/cypress/support'
+import type { GenericEntryFrontmatter } from '@/cypress/tasks/getEntryFrontmatter'
+import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 import { METADATA_TITLE_SUFFIX } from '@/ecosystem-explorer/constants/metadata'
-import { generateDynamicPaths } from '@/support/generateDynamicPathsUtil'
-import { getRandomSlug } from '@/support/getRandomSlugUtil'
-import { verifyMetadataForDynamicPages } from '@/support/verifyMetadataForDynamicPagesUtil'
 
-describe('Random Ecosystem Explorer Project', () => {
-  it('should check metadata', () => {
-    const ECOSYSTEM_BASE_PATHS = PATHS.ECOSYSTEM_EXPLORER
+const CONTENT_FOLDER = PATHS.ECOSYSTEM_EXPLORER.entriesContentPath as string
 
-    getRandomSlug(ECOSYSTEM_BASE_PATHS.entriesContentPath as string).then(
-      (slug) => {
-        const { contentFilePath, pageUrl } = generateDynamicPaths(
-          ECOSYSTEM_BASE_PATHS,
-          slug,
-        )
+describe('Random Ecosystem Project', () => {
+  it(tests.metadata.prompt, () => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      cy.task<GenericEntryFrontmatter>(
+        'getEntryFrontmatter',
+        path.join(CONTENT_FOLDER, slug),
+      ).then(({ title, seo }) => {
+        const seoTitle = seo.title || title
+        const metaTitle = buildMetaTitle(seoTitle)
+        const metaTitleWithSuffix = getMetaTitleWithSuffix(metaTitle)
 
-        verifyMetadataForDynamicPages({
-          contentFilePath,
-          urlPath: pageUrl,
-          metadataTitleSuffix: METADATA_TITLE_SUFFIX,
+        tests.metadata.fn({
+          path: path.join(PATHS.ECOSYSTEM_EXPLORER.path, slug),
+          title: metaTitleWithSuffix,
+          description: seo.description,
+          baseUrl: BASE_URL,
         })
-      },
-    )
+      })
+    })
   })
 })
+
+function buildMetaTitle(title: string) {
+  return `${title}${METADATA_TITLE_SUFFIX}`
+}
