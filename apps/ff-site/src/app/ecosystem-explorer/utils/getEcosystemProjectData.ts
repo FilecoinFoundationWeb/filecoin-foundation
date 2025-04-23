@@ -38,7 +38,7 @@ function transformEcosystemProjectData(
     ...project,
     seo: {
       ...project.seo,
-      title: project.seo.title || `${project.title} ${METADATA_TITLE_SUFFIX}`,
+      title: project.seo.title || `${project.title}${METADATA_TITLE_SUFFIX}`,
     },
   }
 }
