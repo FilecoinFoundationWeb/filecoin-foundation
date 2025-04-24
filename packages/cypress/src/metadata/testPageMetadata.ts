@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 export type TestMetaDataOptions = {
-  path: `/${string}`
+  path: string
   title: string
   description: string
   baseUrl: string
