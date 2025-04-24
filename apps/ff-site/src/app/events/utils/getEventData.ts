@@ -40,7 +40,7 @@ function transformEventData(
     ...event,
     seo: {
       ...event.seo,
-      title: event.seo.title || `${event.title}${METADATA_TITLE_SUFFIX}`,
+      title: event.seo.title || event.title + METADATA_TITLE_SUFFIX,
     },
   }
 }

@@ -17,7 +17,7 @@ describe('Random Ecosystem Project', () => {
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
       ).then(({ title, seo }) => {
-        const metaTitle = seo.title || buildMetaTitle(title)
+        const metaTitle = seo.title || title + METADATA_TITLE_SUFFIX
         const metaTitleWithSuffix = getMetaTitleWithSuffix(metaTitle)
 
         tests.metadata.fn({
@@ -30,7 +30,3 @@ describe('Random Ecosystem Project', () => {
     })
   })
 })
-
-function buildMetaTitle(title: string) {
-  return `${title}${METADATA_TITLE_SUFFIX}`
-}
