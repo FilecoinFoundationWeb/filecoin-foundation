@@ -338,7 +338,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply text-brand-primary-300! hover:text-brand-primary-500! focus:brand-outline! font-normal! no-underline! hover:underline!;
+    @apply text-brand-primary-300!  hover:text-brand-primary-500! focus:brand-outline! no-underline! hover:underline!;
   }
 
   /* TOOLTIP */
