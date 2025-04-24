@@ -1,21 +1,50 @@
 import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
-import { testPageMetadata } from '@/support/test-utils'
-import { verifyLinks } from '@/support/verifyLinksUtil'
+import { tests } from '@/cypress/support'
+import { verifyLinks } from '@/cypress/support/verifyLinksUtil'
+import type { PageFrontmatterSeo } from '@/cypress/tasks/getPageFrontmatterSeo'
+import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
 
 describe('Ecosystem Explorer Page', () => {
-  it('should check metadata', () => {
-    testPageMetadata(PATHS.ECOSYSTEM_EXPLORER, {
-      overrideDefaultTitle: true,
-    })
+  const { mainContentPath, path } = PATHS.ECOSYSTEM_EXPLORER
+
+  it(tests.metadata.prompt, () => {
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+      (seo) => {
+        tests.metadata.fn({
+          path,
+          title: seo.title,
+          description: seo.description,
+          baseUrl: BASE_URL,
+        })
+      },
+    )
   })
 
   it('should check links', () => {
-    verifyLinks(PATHS.ECOSYSTEM_EXPLORER.path)
+    verifyLinks(path)
   })
 
   it('should match visual snapshot', () => {
-    cy.visit(PATHS.ECOSYSTEM_EXPLORER.path)
+    cy.visit(path)
     cy.percySnapshot()
+  })
+})
+
+describe('Ecosystem Explorer Project Form Page', () => {
+  const { mainContentPath, path } = PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM
+
+  it(tests.metadata.prompt, () => {
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+      (seo) => {
+        tests.metadata.fn({
+          path,
+          title: getMetaTitleTemplate(seo.title),
+          description: seo.description,
+          baseUrl: BASE_URL,
+        })
+      },
+    )
   })
 })

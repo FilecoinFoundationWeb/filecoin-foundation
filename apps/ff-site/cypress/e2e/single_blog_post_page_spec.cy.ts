@@ -1,22 +1,29 @@
-import { PATHS } from '@/constants/paths'
+import path from 'path'
 
-import { generateDynamicPaths } from '@/support/generateDynamicPathsUtil'
-import { getRandomSlug } from '@/support/getRandomSlugUtil'
-import { verifyMetadataForDynamicPages } from '@/support/verifyMetadataForDynamicPagesUtil'
+import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
+
+import { tests } from '@/cypress/support'
+import type { GenericEntryFrontmatter } from '@/cypress/tasks/getEntryFrontmatter'
+import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
+
+const CONTENT_FOLDER = PATHS.BLOG.entriesContentPath as string
 
 describe('Random Blog Post', () => {
-  it('should check metadata', () => {
-    const BLOG_BASE_PATHS = PATHS.BLOG
+  it(tests.metadata.prompt, () => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      cy.task<GenericEntryFrontmatter>(
+        'getEntryFrontmatter',
+        path.join(CONTENT_FOLDER, slug),
+      ).then(({ title, seo }) => {
+        const seoTitle = seo.title || title
 
-    getRandomSlug(BLOG_BASE_PATHS.entriesContentPath as string).then((slug) => {
-      const { contentFilePath, pageUrl } = generateDynamicPaths(
-        BLOG_BASE_PATHS,
-        slug,
-      )
-
-      verifyMetadataForDynamicPages({
-        contentFilePath,
-        urlPath: pageUrl,
+        tests.metadata.fn({
+          path: path.join(PATHS.BLOG.path, slug),
+          title: getMetaTitleWithSuffix(seoTitle),
+          description: seo.description,
+          baseUrl: BASE_URL,
+        })
       })
     })
   })

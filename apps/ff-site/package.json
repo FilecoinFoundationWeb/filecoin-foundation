@@ -19,6 +19,7 @@
     "@filecoin-foundation/hooks": "0.0.0",
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
+    "@filecoin-foundation/cypress": "0.0.0",
     "@headlessui/react": "^2.2.1",
     "@headlessui/tailwindcss": "^0.2.2",
     "@hookform/resolvers": "^5.0.1",

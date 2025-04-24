@@ -1,34 +1,19 @@
-import fs from 'fs'
-import path from 'path'
-
 import { defineConfig } from 'cypress'
+
+import { getEntryFrontmatter } from './cypress/tasks/getEntryFrontmatter'
+import { getPageFrontmatterSeo } from './cypress/tasks/getPageFrontmatterSeo'
+import { getRandomSlug } from './cypress/tasks/getRandomSlug'
 
 export default defineConfig({
   e2e: {
     baseUrl: 'http://localhost:3000',
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
+    supportFile: false,
     setupNodeEvents(on) {
       on('task', {
-        readDir(directoryPath) {
-          return new Promise((resolve, reject) => {
-            fs.readdir(directoryPath, (err, files) => {
-              if (err) {
-                return reject(err)
-              }
-              resolve(files.filter((file) => path.extname(file) === '.md'))
-            })
-          })
-        },
-        readFile(filePath) {
-          return new Promise((resolve, reject) => {
-            fs.readFile(filePath, 'utf-8', (err, content) => {
-              if (err) {
-                return reject(err)
-              }
-              resolve(content)
-            })
-          })
-        },
+        getPageFrontmatterSeo,
+        getRandomSlug,
+        getEntryFrontmatter,
       })
     },
   },

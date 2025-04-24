@@ -1,69 +1,111 @@
 import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
-import { testPageMetadata } from '@/support/test-utils'
-import { verifyLinks } from '@/support/verifyLinksUtil'
+import { tests } from '@/cypress/support'
+import { verifyLinks } from '@/cypress/support/verifyLinksUtil'
+import type { PageFrontmatterSeo } from '@/cypress/tasks/getPageFrontmatterSeo'
+import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
 
 describe('Security - Main Page', () => {
-  it('should check metadata', () => {
-    testPageMetadata(PATHS.SECURITY, {
-      overrideDefaultTitle: true,
-    })
+  const { mainContentPath, path } = PATHS.SECURITY
+
+  it(tests.metadata.prompt, () => {
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+      (seo) => {
+        tests.metadata.fn({
+          path,
+          title: seo.title,
+          description: seo.description,
+          baseUrl: BASE_URL,
+        })
+      },
+    )
   })
 
   it('should check links', () => {
-    verifyLinks(PATHS.SECURITY.path)
+    verifyLinks(path)
   })
 
   it('should match visual snapshot', () => {
-    cy.visit(PATHS.SECURITY.path)
+    cy.visit(path)
     cy.percySnapshot()
   })
 })
 
 describe('Security - Bug Bounty Program Page', () => {
-  it('should check metadata', () => {
-    testPageMetadata(PATHS.BUG_BOUNTY)
+  const { mainContentPath, path } = PATHS.BUG_BOUNTY
+
+  it(tests.metadata.prompt, () => {
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+      (seo) => {
+        tests.metadata.fn({
+          path,
+          title: getMetaTitleTemplate(seo.title),
+          description: seo.description,
+          baseUrl: BASE_URL,
+        })
+      },
+    )
   })
 
   it('should check links', () => {
-    verifyLinks(PATHS.BUG_BOUNTY.path)
+    verifyLinks(path)
   })
 
   it('should match visual snapshot', () => {
-    cy.visit(PATHS.BUG_BOUNTY.path)
+    cy.visit(path)
     cy.percySnapshot()
   })
 })
 
 describe('Security - Coordinated Disclosure Policy Page', () => {
-  it('should check metadata', () => {
-    testPageMetadata(PATHS.COORDINATED_DISCLOSURE_POLICY, {
-      overrideDefaultTitle: true,
-    })
+  const { mainContentPath, path } = PATHS.COORDINATED_DISCLOSURE_POLICY
+
+  it(tests.metadata.prompt, () => {
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+      (seo) => {
+        tests.metadata.fn({
+          path,
+          title: seo.title,
+          description: seo.description,
+          baseUrl: BASE_URL,
+        })
+      },
+    )
   })
 
   it('should check links', () => {
-    verifyLinks(PATHS.COORDINATED_DISCLOSURE_POLICY.path)
+    verifyLinks(path)
   })
 
   it('should match visual snapshot', () => {
-    cy.visit(PATHS.COORDINATED_DISCLOSURE_POLICY.path)
+    cy.visit(path)
     cy.percySnapshot()
   })
 })
 
-
 describe('Security - Maturity Model Page', () => {
-  it('should check metadata', () => {
-    testPageMetadata(PATHS.MATURITY_MODEL)
+  const { mainContentPath, path } = PATHS.MATURITY_MODEL
+
+  it(tests.metadata.prompt, () => {
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+      (seo) => {
+        tests.metadata.fn({
+          path,
+          title: getMetaTitleTemplate(seo.title),
+          description: seo.description,
+          baseUrl: BASE_URL,
+        })
+      },
+    )
   })
 
   it('should check links', () => {
-    verifyLinks(PATHS.MATURITY_MODEL.path)
+    verifyLinks(path)
   })
 
   it('should match visual snapshot', () => {
-    cy.visit(PATHS.MATURITY_MODEL.path)
+    cy.visit(path)
     cy.percySnapshot()
   })
 })
