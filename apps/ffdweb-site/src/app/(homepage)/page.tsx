@@ -86,9 +86,7 @@ export default async function Home() {
                   objectFit: 'contain',
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
-                    sm: '350px',
-                    md: '470px',
-                    lg: '360px',
+                    md: '310px',
                   }),
                 }}
                 title={{
@@ -169,9 +167,9 @@ export default async function Home() {
                   objectFit: 'cover',
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
-                    sm: '350px',
+                    sm: '340px',
                     md: '470px',
-                    lg: '360px',
+                    lg: '310px',
                   }),
                 }}
                 title={{

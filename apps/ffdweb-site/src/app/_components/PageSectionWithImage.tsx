@@ -38,7 +38,7 @@ export function PageSectionWithImage({
       <Image
         src={image.data || graphicsData.homepage}
         alt={image.alt}
-        sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
+        sizes={buildImageSizeProp({ startSize: '100vw', lg: '460px' })}
         className={clsx(
           'aspect-video h-full w-full object-cover lg:aspect-auto',
           layout === 'reversed' && 'lg:order-first',

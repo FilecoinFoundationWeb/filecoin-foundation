@@ -116,9 +116,9 @@ export function BlogContent({ posts }: BlogContentProps) {
                 objectFit: 'cover',
                 sizes: buildImageSizeProp({
                   startSize: '100vw',
-                  sm: '350px',
+                  sm: '340px',
                   md: '470px',
-                  lg: '360px',
+                  lg: '310px',
                 }),
               }}
               title={{

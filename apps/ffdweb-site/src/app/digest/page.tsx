@@ -61,9 +61,9 @@ export default async function Digest() {
                   alt: image?.alt || '',
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
-                    sm: '350px',
+                    sm: '340px',
                     md: '470px',
-                    lg: '360px',
+                    lg: '480px',
                   }),
                 }}
                 title={{
