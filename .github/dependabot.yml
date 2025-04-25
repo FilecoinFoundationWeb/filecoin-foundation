@@ -16,7 +16,7 @@ updates:
       dependencies:
         patterns:
           - "*"
-    versioning-strategy: auto
+    versioning-strategy: increase
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -27,3 +27,4 @@ updates:
       actions:
         patterns:
           - "*"
+    versioning-strategy: increase
