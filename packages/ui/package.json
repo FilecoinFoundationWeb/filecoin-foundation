@@ -65,7 +65,7 @@
     "@filecoin-foundation/typescript-config": "0.0.0"
   },
   "peerDependencies": {
-    "@headlessui/react": "^2.2.1",
+    "@headlessui/react": "^2.2.2",
     "@filecoin-foundation/hooks": "0.0.0",
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
@@ -78,7 +78,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "schema-dts": "^1.1.5",
-    "tailwindcss": "^4.0.5",
+    "tailwindcss": "^4.1.4",
     "usehooks-ts": "^3.1.0"
   },
   "dependencies": {
