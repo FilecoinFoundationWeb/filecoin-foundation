@@ -6,9 +6,6 @@ updates:
   - package-ecosystem: "npm"
     directories:
       - "/"
-      - "/apps/ff-site"
-      - "/apps/ffdweb-site"
-      - "/apps/uxit"
     schedule:
       interval: "weekly"
       day: "sunday"
