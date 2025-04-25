@@ -4,21 +4,21 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directories:
-      - "/"
-      - "/apps/ff-site"
+    directory: "/"
     schedule:
       interval: "weekly"
+      day: "sunday"
     groups:
       dependencies:
         patterns:
           - "*"
-    versioning-strategy: auto
+    versioning-strategy: increase
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "sunday"
     groups:
       actions:
         patterns:
