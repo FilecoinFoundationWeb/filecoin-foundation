@@ -13,11 +13,7 @@ type MarkdownImageProps = ComponentPropsWithoutRef<'img'> & {
   fallbackImage: StaticImageProps
 }
 
-export function MarkdownImage({
-  src,
-  alt,
-  fallbackImage,
-}: MarkdownImageProps) {
+export function MarkdownImage({ src, alt, fallbackImage }: MarkdownImageProps) {
   const commonProps = {
     quality: 100,
     width: IMAGE_DIMENSIONS.containerWidth,
@@ -43,5 +39,5 @@ export function MarkdownImage({
     )
   }
 
-  return <Image {...commonProps} src={src} alt={alt || ''} />
-} 
+  return <Image {...commonProps} src={src as string} alt={alt || ''} />
+}
