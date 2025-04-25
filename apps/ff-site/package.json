@@ -60,6 +60,7 @@
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
+    "@filecoin-foundation/cypress": "0.0.0",
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
     "@percy/cli": "^1.30.10",
