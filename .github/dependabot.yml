@@ -11,6 +11,7 @@ updates:
       - "/apps/uxit"
     schedule:
       interval: "weekly"
+      day: "sunday"
     groups:
       dependencies:
         patterns:
@@ -21,6 +22,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "sunday"
     groups:
       actions:
         patterns:
