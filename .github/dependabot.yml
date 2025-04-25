@@ -24,4 +24,3 @@ updates:
       actions:
         patterns:
           - "*"
-    versioning-strategy: increase
