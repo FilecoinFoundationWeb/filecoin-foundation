@@ -23,21 +23,18 @@ program:
       start-date: 2025-05-12
       end-date: 2025-05-13
       location: MaRS Center
-      description:
-        FIL Dev Summit is a gathering of developers, builders, and engaged
+      description: FIL Dev Summit is a gathering of developers, builders, and engaged
         community members who want to contribute to the core protocol and
         network evolution of Filecoin (think IPFS Thing, but bigger!). This
         summit is more than just a meetup—it's a place for meaningful and
         impactful conversations that help push Filecoin forward.
       external-link: https://www.fildev.io/FDS-6
-    - title:
-        DePIN Exploration @ Consensus Toronto. Presented by CoinDesk, Sponsored
+    - title: DePIN Exploration @ Consensus Toronto. Presented by CoinDesk, Sponsored
         by Filecoin Foundation
       start-date: 2025-05-14
       end-date: 2025-05-14
       location: Toronto, Canada
-      description:
-        n 2025, Consensus brings its flagship event to Toronto, where the
+      description: n 2025, Consensus brings its flagship event to Toronto, where the
         world's first Bitcoin and Ethereum ETFs were born. As North America's
         third-largest tech ecosystem and second-largest financial hub, Toronto
         unites global innovation with transformative technology leadership.
@@ -134,7 +131,7 @@ speakers:
       image:
         src: /assets/images/meghan-gavis.jpg
     - name: Meredith Pallante
-      title: Head of Events
+      title: "Chief Experience Officer "
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/meredith-pallante-cem-cmp-7270549/
       image:
@@ -157,12 +154,6 @@ speakers:
       linkedin: https://www.linkedin.com/in/qingwarthen/
       image:
         src: /assets/images/qing-warthen.jpg
-    - name: Rachel Horn
-      title: Chief Marketing & Communications Officer
-      company: Filecoin Foundation
-      linkedin: https://www.linkedin.com/in/rachelgreenhorn/
-      image:
-        src: /assets/images/rachel-horn-davos.webp
     - name: Stef Magdalinski
       title: Head of Technical Programs
       company: Filecoin Foundation
@@ -173,8 +164,7 @@ seo:
   twitter:
     card: summary
   title: FIL Toronto @ Consensus 2025
-  description:
-    The Filecoin community is heading to Consensus in Toronto! Connect
+  description: The Filecoin community is heading to Consensus in Toronto! Connect
     with the ecosystem, explore the latest updates, and help build the
     decentralized web. Stay tuned for community events and ways to engage on the
     ground.
