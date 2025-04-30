@@ -6,6 +6,7 @@ published-on: 2025-04-30T14:56:00.000Z
 category: supported-sponsored
 location:
   primary: Europe
+  region: europe
 start-date: 2025-05-09
 end-date: 2025-07-03
 image:
