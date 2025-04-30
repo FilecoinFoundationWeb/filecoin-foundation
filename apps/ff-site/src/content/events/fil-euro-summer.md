@@ -22,6 +22,14 @@ program:
         team at ETH Lisbon! Join their Code n Corgi dogfooding workshop at AIhub
         by Unicorn Factory Lisboa. "
       external-link: https://lu.ma/ETH-Lisbon-2025
+speakers:
+  speakers_list:
+    - image:
+        src: /assets/images/clara-tsao.webp
+      name: Clara Tsao
+      title: Founding Officer
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/claratsao/
 seo:
   twitter:
     card: summary
