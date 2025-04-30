@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 
-import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import {
   useReactTable,
   getCoreRowModel,
@@ -11,6 +10,8 @@ import {
   type ColumnFiltersState,
   type SortingState,
 } from '@tanstack/react-table'
+
+import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

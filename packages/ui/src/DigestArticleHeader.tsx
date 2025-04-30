@@ -1,10 +1,12 @@
-import type { ImageProps } from '@filecoin-foundation/utils/types/imageType'
 import { ArticleHeader } from '@filecoin-foundation/ui/Article/ArticleHeader'
+import { TagGroup } from '@filecoin-foundation/ui/TagComponents'
+import type { ImageProps } from '@filecoin-foundation/utils/types/imageType'
+
 import {
   type AvatarGroupExpandedProps,
   AvatarGroupExpanded,
 } from './Avatar/AvatarGroupExpanded'
-import { TagGroup } from '@filecoin-foundation/ui/TagComponents'
+
 
 type DigestArticleProps = {
   issueNumber: string

@@ -1,3 +1,5 @@
+import { clsx } from 'clsx'
+
 import {
   AvatarGroup,
   type AvatarGroupProps,
@@ -7,14 +9,13 @@ import {
   TagGroup,
 } from '@filecoin-foundation/ui/TagComponents'
 import { type ExtendedCTAProps } from '@filecoin-foundation/utils/types/ctaType'
-import { clsx } from 'clsx'
 
 import { Meta, type MetaDataType } from '../Meta'
 
 import { type CardDescriptionProps, CardDescription } from './CardDescription'
-import { type CardTitleProps, CardTitle } from './CardTitle'
 import { type CardImageProps, CardImage } from './CardImage'
 import { CardLink } from './CardLink'
+import { type CardTitleProps, CardTitle } from './CardTitle'
 
 export type CardProps = {
   as: 'li' | 'article' | 'div'

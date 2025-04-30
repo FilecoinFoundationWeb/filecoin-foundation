@@ -1,6 +1,7 @@
-import { Icon } from '@filecoin-foundation/ui/Icon'
 import { Input, Label, Field, Button } from '@headlessui/react'
 import { MagnifyingGlass, X } from '@phosphor-icons/react/dist/ssr'
+
+import { Icon } from '@filecoin-foundation/ui/Icon'
 
 type SearchInputProps = {
   query: string

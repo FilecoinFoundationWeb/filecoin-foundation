@@ -1,4 +1,3 @@
-import type { NonEmptyMutableArray } from '@filecoin-foundation/utils/types/utilTypes'
 import {
   compareAsc,
   compareDesc,
@@ -6,6 +5,8 @@ import {
   isBefore,
   startOfToday,
 } from 'date-fns'
+
+import type { NonEmptyMutableArray } from '@filecoin-foundation/utils/types/utilTypes'
 
 import type { Event } from '../types/eventType'
 

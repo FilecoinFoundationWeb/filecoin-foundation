@@ -1,6 +1,7 @@
+import type { BlogPosting, Organization, WithContext } from 'schema-dts'
+
 import { SCHEMA_CONTEXT_URL } from './constants/structuredDataConstants'
 
-import type { BlogPosting, Organization, WithContext } from 'schema-dts'
 
 type GenerateBlogPostStructuredDataProps = {
   title: string

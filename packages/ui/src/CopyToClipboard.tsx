@@ -2,17 +2,17 @@
 
 import { useState } from 'react'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
-import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
-import { Tooltip } from '@filecoin-foundation/ui/Tooltip/Tooltip'
-import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { Button } from '@headlessui/react'
 import { Link } from '@phosphor-icons/react/dist/ssr'
 import * as Sentry from '@sentry/nextjs'
 import { clsx } from 'clsx'
 import { useCopyToClipboard } from 'usehooks-ts'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
+import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
+import { Tooltip } from '@filecoin-foundation/ui/Tooltip/Tooltip'
 import { NOTIFICATION_DIALOG_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
+import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
 type CopyToClipboardProps = {
   text: string

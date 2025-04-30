@@ -1,5 +1,6 @@
-import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 import { clsx } from 'clsx'
+
+import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 
 const variantClasses = {
   primary: 'tag-label--primary',

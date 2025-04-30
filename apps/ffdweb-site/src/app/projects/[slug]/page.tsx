@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { Newspaper } from '@phosphor-icons/react/dist/ssr'
+
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
@@ -7,7 +9,6 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { TagGroup } from '@filecoin-foundation/ui/TagComponents'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
-import { Newspaper } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'

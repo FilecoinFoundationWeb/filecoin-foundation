@@ -1,10 +1,11 @@
-import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import {
   GlobeHemisphereWest,
   GraduationCap,
   Trophy,
   UsersThree,
 } from '@phosphor-icons/react/dist/ssr'
+
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
 
 
 export type StatisticData = {

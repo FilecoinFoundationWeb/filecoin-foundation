@@ -1,6 +1,7 @@
+import { GithubLogo } from '@phosphor-icons/react/dist/ssr'
+
 import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
-import { GithubLogo } from '@phosphor-icons/react/dist/ssr'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 

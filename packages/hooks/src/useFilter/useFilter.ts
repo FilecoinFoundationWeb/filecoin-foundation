@@ -1,8 +1,8 @@
 import { useCallback, useMemo } from 'react'
 
 import type { QueryParamValue } from '@filecoin-foundation/utils/types/urlTypes'
-
 import type { AnyObject } from '@filecoin-foundation/utils/types/utilTypes'
+
 import { DEFAULT_FILTER_ID } from './constants/filterConstants'
 
 export type UseFilterProps<

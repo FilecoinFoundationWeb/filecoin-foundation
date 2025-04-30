@@ -1,5 +1,7 @@
 import Image, { type ImageProps } from 'next/image'
 
+import { clsx } from 'clsx'
+
 import { Button } from '@filecoin-foundation/ui/Button'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -8,7 +10,6 @@ import type {
   ImageObjectFit,
   StaticImageProps,
 } from '@filecoin-foundation/utils/types/imageType'
-import { clsx } from 'clsx'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

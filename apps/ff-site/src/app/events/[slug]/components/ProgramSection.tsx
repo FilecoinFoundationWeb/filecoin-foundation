@@ -1,5 +1,6 @@
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
+
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 
 import { Card } from '@/components/Card'
 import { PageSection } from '@/components/PageSection'

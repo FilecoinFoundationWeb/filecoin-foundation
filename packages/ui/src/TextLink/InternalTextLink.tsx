@@ -1,7 +1,10 @@
-import Link from 'next/link'
-import { clsx } from 'clsx'
-import type { Route } from 'next'
 import type { ComponentProps } from 'react'
+
+import type { Route } from 'next'
+
+import { clsx } from 'clsx'
+import Link from 'next/link'
+
 
 type InternalTextLinkProps = Omit<ComponentProps<typeof Link>, 'href'> & {
   href: Route

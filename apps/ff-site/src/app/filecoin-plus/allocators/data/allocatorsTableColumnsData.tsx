@@ -1,6 +1,7 @@
-import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { createColumnHelper } from '@tanstack/react-table'
+
+import { Icon } from '@filecoin-foundation/ui/Icon'
 
 import { PopoverHeader } from '@/components/Table/PopoverHeader'
 

@@ -10,7 +10,7 @@
     "./metadata": "./src/metadata/index.ts"
   },
   "scripts": {
-    "lint": "eslint . --fix"
+    "lint": "eslint --fix ."
   },
   "devDependencies": {
     "typescript": "^5.8.3",

@@ -1,7 +1,11 @@
-import Link from 'next/link'
 import type { AnchorHTMLAttributes } from 'react'
-import { isInternalLink } from '@filecoin-foundation/utils/linkUtils'
+
 import type { Route } from 'next'
+
+import Link from 'next/link'
+
+import { isInternalLink } from '@filecoin-foundation/utils/linkUtils'
+
 
 export type BaseLinkProps = {
   href: string | Route

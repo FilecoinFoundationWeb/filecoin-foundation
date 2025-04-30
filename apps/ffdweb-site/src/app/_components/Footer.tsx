@@ -1,9 +1,10 @@
 import Link from 'next/link'
 
+import clsx from 'clsx'
+
 import { CopyrightText } from '@filecoin-foundation/ui/CopyrightText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Social } from '@filecoin-foundation/ui/Social'
-import clsx from 'clsx'
 
 import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
 

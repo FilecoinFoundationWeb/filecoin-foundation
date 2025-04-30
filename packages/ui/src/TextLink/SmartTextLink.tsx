@@ -1,6 +1,7 @@
+import type { Route } from 'next'
+
 import { type BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
-import type { Route } from 'next'
 
 import { ExternalTextLink } from './ExternalTextLink'
 import { InternalTextLink } from './InternalTextLink'

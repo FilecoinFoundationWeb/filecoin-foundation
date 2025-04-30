@@ -1,10 +1,11 @@
 import Link from 'next/link'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
-import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import type { Icon as IconType } from '@phosphor-icons/react'
 import { CaretRight, ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
+
+import { Icon } from '@filecoin-foundation/ui/Icon'
+import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

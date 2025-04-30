@@ -1,7 +1,8 @@
 import type { AnchorHTMLAttributes } from 'react'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ArrowUpRight } from '@phosphor-icons/react'
+
+import { Icon } from '@filecoin-foundation/ui/Icon'
 
 type ExternalLinkProps = Omit<
   AnchorHTMLAttributes<HTMLAnchorElement>,

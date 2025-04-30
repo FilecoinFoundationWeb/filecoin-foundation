@@ -1,8 +1,8 @@
 import { useMemo } from 'react'
 
 import type { DefaultFilterOptionType } from '@filecoin-foundation/hooks/useFilter/types'
-import { type AnyObject } from '@filecoin-foundation/utils/types/utilTypes'
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
+import { type AnyObject } from '@filecoin-foundation/utils/types/utilTypes'
 
 import { sumCountValues } from './utils'
 

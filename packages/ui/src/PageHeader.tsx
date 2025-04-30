@@ -1,3 +1,4 @@
+import { clsx } from 'clsx'
 import Image, { type ImageProps } from 'next/image'
 
 import {
@@ -6,13 +7,12 @@ import {
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Meta, type MetaDataType } from '@filecoin-foundation/ui/Meta'
+import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type {
   ImageObjectFit,
   StaticImageProps,
 } from '@filecoin-foundation/utils/types/imageType'
-import { clsx } from 'clsx'
-import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
 
 type TitleProps = {
   children: string

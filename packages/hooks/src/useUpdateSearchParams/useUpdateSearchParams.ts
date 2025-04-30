@@ -3,6 +3,7 @@
 import { useCallback } from 'react'
 
 import type { Route } from 'next'
+
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 
 import { type ParamsObject, buildSearchParams } from './utils'

@@ -1,5 +1,4 @@
 import { breakpoints } from './constants/tailwindConstants'
-
 import type { BreakpointValue } from './types/tailwindTypes'
 
 type Width = `${number}px` | `${number}vw`

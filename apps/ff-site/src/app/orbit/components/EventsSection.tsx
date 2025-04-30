@@ -1,3 +1,6 @@
+import * as Sentry from '@sentry/nextjs'
+import { ZodError } from 'zod'
+
 import { Button } from '@filecoin-foundation/ui/Button'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
@@ -11,8 +14,6 @@ import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { logZodError } from '@filecoin-foundation/utils/zodUtils'
-import * as Sentry from '@sentry/nextjs'
-import { ZodError } from 'zod'
 
 import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 

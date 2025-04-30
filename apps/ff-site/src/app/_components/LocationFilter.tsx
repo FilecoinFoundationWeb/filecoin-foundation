@@ -1,11 +1,12 @@
 'use client'
 
+import { GlobeSimple } from '@phosphor-icons/react'
+
 import { DEFAULT_LOCATION_FILTER_OPTION } from '@filecoin-foundation/hooks/useFilter/constants'
 import { useListboxQueryState } from '@filecoin-foundation/hooks/useListboxQueryState'
 import { FilterListbox } from '@filecoin-foundation/ui/FilterListbox'
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import { LOCATION_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
-import { GlobeSimple } from '@phosphor-icons/react'
 
 type LocationFilterProps = {
   options: Array<OptionType>

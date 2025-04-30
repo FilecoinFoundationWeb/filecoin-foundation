@@ -1,11 +1,12 @@
 'use client'
 
-import Error from 'next/error'
 import { useEffect } from 'react'
-import * as Sentry from '@sentry/nextjs'
 
-import { FILECOIN_FOUNDATION_URLS } from '@filecoin-foundation/utils/constants/appMetadata'
+import * as Sentry from '@sentry/nextjs'
+import Error from 'next/error'
+
 import { ErrorMessage } from '@filecoin-foundation/ui/ErrorMessage'
+import { FILECOIN_FOUNDATION_URLS } from '@filecoin-foundation/utils/constants/appMetadata'
 
 type GlobalErrorProps = {
   error: Error

@@ -1,10 +1,11 @@
-import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 import type {
   Event as EventSchema,
   Place,
   VirtualLocation,
   WithContext,
 } from 'schema-dts'
+
+import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'

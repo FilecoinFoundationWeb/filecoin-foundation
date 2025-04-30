@@ -2,11 +2,12 @@
 
 import { useState } from 'react'
 
+import { List, X } from '@phosphor-icons/react'
+import { clsx } from 'clsx'
+
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 import { Social } from '@filecoin-foundation/ui/Social'
-import { List, X } from '@phosphor-icons/react'
-import { clsx } from 'clsx'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 

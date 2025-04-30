@@ -1,6 +1,7 @@
+import { FileText, UserCircle } from '@phosphor-icons/react/dist/ssr'
+
 import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
-import { FileText, UserCircle } from '@phosphor-icons/react/dist/ssr'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 

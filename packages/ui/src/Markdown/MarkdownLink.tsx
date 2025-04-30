@@ -1,6 +1,8 @@
-import { SmartTextLink } from '../TextLink/SmartTextLink'
-import * as Sentry from '@sentry/node'
 import type { ComponentPropsWithoutRef } from 'react'
+
+import * as Sentry from '@sentry/node'
+
+import { SmartTextLink } from '../TextLink/SmartTextLink'
 
 type MarkdownLinkProps = ComponentPropsWithoutRef<'a'> & {
   baseDomain: string

@@ -1,4 +1,5 @@
 import { compareAsc, compareDesc } from 'date-fns'
+
 import type { DateSortOrder } from './types/sortTypes'
 import type { WithPublishedOn } from './types/withPublishedOnType'
 

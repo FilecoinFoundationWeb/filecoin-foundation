@@ -1,6 +1,7 @@
+import { clsx } from 'clsx'
+
 import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
-import { clsx } from 'clsx'
 
 type linkWithIcon = {
   label: string

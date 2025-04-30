@@ -1,7 +1,8 @@
-import { Icon } from '@filecoin-foundation/ui/Icon'
 import { Image } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import prettyBytes from 'pretty-bytes'
+
+import { Icon } from '@filecoin-foundation/ui/Icon'
 
 import type { FormFileInputProps } from './FormFileInput'
 

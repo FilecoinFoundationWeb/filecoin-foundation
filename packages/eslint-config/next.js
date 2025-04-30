@@ -4,6 +4,7 @@ import globals from 'globals'
 import pluginNext from '@next/eslint-plugin-next'
 import pluginImport from 'eslint-plugin-import'
 import { config as baseConfig } from './base.js'
+import { sharedGroups } from './shared-import-rules.js'
 
 /** @type {import("eslint").Linter.Config} */
 export const config = [
@@ -56,18 +57,16 @@ export const config = [
       'import/order': [
         'error',
         {
-          groups: [
-            'builtin',
-            'external',
-            'internal',
-            'parent',
-            'sibling',
-            'index',
-          ],
+          groups: sharedGroups,
           pathGroups: [
-            { pattern: 'fs|path', group: 'builtin', position: 'before' },
+            { pattern: '{fs,path}', group: 'builtin', position: 'before' },
             { pattern: 'react', group: 'external', position: 'before' },
             { pattern: 'next/**', group: 'external', position: 'before' },
+            {
+              pattern: '@filecoin-foundation/**',
+              group: 'external',
+              position: 'after',
+            },
             { pattern: '@/types/**', group: 'internal', position: 'before' },
             {
               pattern: '@/constants/**',

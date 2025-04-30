@@ -1,7 +1,8 @@
 import { useMemo } from 'react'
 
-import type { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import type { AnyObject } from '@filecoin-foundation/utils/types/utilTypes'
+import type { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
+
 import { matchesQuery } from './utils/matchQuery'
 
 type UseSearchProps<Entry extends AnyObject> = {

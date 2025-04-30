@@ -1,8 +1,9 @@
-import { Icon } from '@filecoin-foundation/ui/Icon'
-import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { Checkbox, type CheckboxProps, Field, Label } from '@headlessui/react'
 import { Check } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
+
+import { Icon } from '@filecoin-foundation/ui/Icon'
+import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
 type ExcludedHeadlessUIProps = 'className'
 

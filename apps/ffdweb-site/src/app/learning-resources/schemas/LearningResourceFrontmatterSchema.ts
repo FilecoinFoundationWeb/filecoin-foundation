@@ -1,6 +1,7 @@
+import { z } from 'zod'
+
 import { DynamicBaseDataSchema } from '@filecoin-foundation/utils/schemas/DynamicDataBaseSchema'
 import { createEnumSchema } from '@filecoin-foundation/utils/zodUtils'
-import { z } from 'zod'
 
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 

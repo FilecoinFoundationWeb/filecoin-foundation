@@ -1,8 +1,9 @@
 'use client'
 
+import { clsx } from 'clsx'
+
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
-import { clsx } from 'clsx'
 
 type FilterSidebarProps = {
   selected: OptionType

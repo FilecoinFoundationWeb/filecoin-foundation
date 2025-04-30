@@ -1,7 +1,7 @@
+import { clsx } from 'clsx'
 import Image from 'next/image'
 
 import { type Author } from '@filecoin-foundation/utils/types/authorTypes'
-import { clsx } from 'clsx'
 
 const IMAGE_SIZE = {
   default: 32,

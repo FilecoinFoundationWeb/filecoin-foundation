@@ -1,9 +1,10 @@
+import { clsx } from 'clsx'
+
 import {
   DescriptionText,
   type DescriptionProps,
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
-import { clsx } from 'clsx'
 
 import { Kicker } from './Kicker'
 

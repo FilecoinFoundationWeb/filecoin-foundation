@@ -1,6 +1,7 @@
-import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
+
+import { Icon } from '@filecoin-foundation/ui/Icon'
 
 type ExternalTextLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string

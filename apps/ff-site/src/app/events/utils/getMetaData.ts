@@ -1,5 +1,6 @@
-import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { isSameDay } from 'date-fns'
+
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 
 import type { Event } from '../types/eventType'

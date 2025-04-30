@@ -1,12 +1,12 @@
 import { useMemo } from 'react'
 
+import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 import type {
   AnyObject,
   NonEmptyReadonlyArray,
 } from '@filecoin-foundation/utils/types/utilTypes'
 import type { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
-import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 import type { EntryViewConfig } from './types/entryViewTypes'
 
 type UseSortProps<
@@ -39,7 +39,7 @@ export function useEntryView<
     const viewConfig = findOrThrow(configs, (config) => config.id === viewId)
 
     return viewConfig.filterOrSortFn(entries)
-  }, [configs, defaultConfig, entries, viewId])
+  }, [configs, entries, viewId])
 
   return {
     query: viewId,

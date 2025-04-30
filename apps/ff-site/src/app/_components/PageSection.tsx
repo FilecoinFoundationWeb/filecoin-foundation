@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { clsx } from 'clsx'
+
 import {
   DescriptionText,
   type DescriptionProps,
@@ -7,7 +9,6 @@ import {
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
-import { clsx } from 'clsx'
 
 import {
   type CTAButtonGroupProps,

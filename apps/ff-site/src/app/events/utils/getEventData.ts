@@ -1,6 +1,7 @@
+import { isBefore } from 'date-fns'
+
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
 import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
-import { isBefore } from 'date-fns'
 
 import { PATHS } from '@/constants/paths'
 

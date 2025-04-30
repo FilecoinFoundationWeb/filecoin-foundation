@@ -2,12 +2,13 @@
 
 import type { Dispatch, SetStateAction } from 'react'
 
-import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
-import { Icon } from '@filecoin-foundation/ui/Icon'
-import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
+
+import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
+import { Icon } from '@filecoin-foundation/ui/Icon'
+import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

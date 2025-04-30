@@ -1,5 +1,6 @@
-import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import { Code, HardDrives, Money, Person } from '@phosphor-icons/react/dist/ssr'
+
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'

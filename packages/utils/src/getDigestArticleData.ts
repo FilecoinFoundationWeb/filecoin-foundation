@@ -1,6 +1,7 @@
+import removeMarkdown from 'remove-markdown'
+
 import { getAllMarkdownData } from './getAllMarkdownData'
 import { getMarkdownData } from './getMarkdownData'
-import removeMarkdown from 'remove-markdown'
 import { DigestArticleFrontmatterSchema } from './schemas/DigestArticleFrontmatterSchema'
 
 export async function getDigestArticleData(

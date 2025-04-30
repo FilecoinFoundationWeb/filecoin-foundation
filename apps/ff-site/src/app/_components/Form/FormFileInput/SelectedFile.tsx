@@ -1,7 +1,8 @@
 import Image from 'next/image'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
 import { X } from '@phosphor-icons/react/dist/ssr'
+
+import { Icon } from '@filecoin-foundation/ui/Icon'
 
 
 type SelectedFileProps = {

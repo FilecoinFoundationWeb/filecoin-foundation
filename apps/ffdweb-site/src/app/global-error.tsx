@@ -4,8 +4,9 @@ import { useEffect } from 'react'
 
 import Error from 'next/error'
 
-import { GlobalError as AppGlobalError } from '@filecoin-foundation/ui/GlobalError'
 import * as Sentry from '@sentry/nextjs'
+
+import { GlobalError as AppGlobalError } from '@filecoin-foundation/ui/GlobalError'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

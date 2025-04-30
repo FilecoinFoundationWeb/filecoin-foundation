@@ -1,6 +1,7 @@
+import type { AuthorExtended } from '@filecoin-foundation/utils/types/authorTypes'
+
 import { Avatar } from './Avatar'
 
-import type { AuthorExtended } from '@filecoin-foundation/utils/types/authorTypes'
 
 type AuthorWithCompany = Omit<AuthorExtended, 'bio'>
 

@@ -1,5 +1,6 @@
-import { SeoMetadataSchema } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
 import { z } from 'zod'
+
+import { SeoMetadataSchema } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
 
 import { MarkdownEntryPathSchema } from './MarkdownEntryPathSchema'
 
