@@ -3,6 +3,7 @@ import pluginReact from 'eslint-plugin-react'
 import pluginImport from 'eslint-plugin-import'
 import globals from 'globals'
 import { config as baseConfig } from './base.js'
+import { sharedGroups, sharedPathGroups } from './shared-import-rules.js'
 
 /** @type {import("eslint").Linter.Config} */
 export const config = [
@@ -31,30 +32,8 @@ export const config = [
       'import/order': [
         'error',
         {
-          groups: [
-            'builtin',
-            'external',
-            'internal',
-            'parent',
-            'sibling',
-            'index',
-          ],
-          pathGroups: [
-            { pattern: '{fs,path}', group: 'builtin', position: 'before' },
-            { pattern: 'react', group: 'external', position: 'before' },
-            { pattern: 'next', group: 'external', position: 'before' },
-            {
-              pattern: '@filecoin-foundation/**',
-              group: 'external',
-              position: 'after',
-            },
-            { pattern: '#**', group: 'internal', position: 'before' },
-            {
-              pattern: '*.+(css|scss|sass|less)',
-              group: 'index',
-              position: 'after',
-            },
-          ],
+          groups: sharedGroups,
+          pathGroups: sharedPathGroups,
           pathGroupsExcludedImportTypes: ['builtin'],
           'newlines-between': 'always',
           alphabetize: {
