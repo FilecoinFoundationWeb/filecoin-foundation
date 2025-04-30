@@ -6,7 +6,25 @@ const webpackRules = [
   },
 ]
 
+const outputFileTracingIncludes = {
+  '/': ['src/app/**'],
+}
+
+const outputFileTracingExcludes = {
+  '/': [
+    '.git/**',
+    '.github/**',
+    '.next/cache/**',
+    '.vscode/**',
+    'cypress/**',
+    'public/**',
+    'scripts/**',
+  ],
+}
+
 const nextConfig = {
+  outputFileTracingIncludes,
+  outputFileTracingExcludes,
   webpack: (config) => {
     config.module.rules.push(...webpackRules)
     return config

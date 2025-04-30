@@ -31,7 +31,7 @@ const webpackRules = [
 ]
 
 const outputFileTracingIncludes = {
-  '/': ['src/content/**'],
+  '/': ['src/app/**', 'src/content/**'],
 }
 
 const outputFileTracingExcludes = {
@@ -43,7 +43,6 @@ const outputFileTracingExcludes = {
     'cypress/**',
     'public/**',
     'scripts/**',
-    'src/app/**',
   ],
 }
 
@@ -56,12 +55,12 @@ const nextConfig = {
   },
   outputFileTracingIncludes,
   outputFileTracingExcludes,
-  async redirects() {
-    return redirects
-  },
   webpack: (config) => {
     config.module.rules.push(...webpackRules)
     return config
+  },
+  async redirects() {
+    return redirects
   },
 }
 
