@@ -1,6 +1,6 @@
 import { withSentryConfig } from '@sentry/nextjs'
 
-import redirects from './redirects.js'
+import { redirects } from './redirects.mjs'
 
 /**
  * @type {import('next').NextConfig}

@@ -1,4 +1,4 @@
-const redirects = [
+export const redirects = [
   // PAGE REDIRECTS
   {
     source: '/admin',
@@ -344,5 +344,3 @@ const redirects = [
     permanent: true,
   },
 ]
-
-module.exports = redirects
