@@ -203,7 +203,11 @@
 
   /* KEY MEMBER CARD */
   .key-member-card {
-    @apply border-brand-500 hover:bg-brand-overlay/20 rounded-lg border p-1;
+    @apply border-brand-500 rounded-lg border p-1;
+
+    &[data-with-link='true'] {
+      @apply hover:bg-brand-overlay/20;
+    }
 
     .key-member-card-image {
       @apply rounded-sm;
