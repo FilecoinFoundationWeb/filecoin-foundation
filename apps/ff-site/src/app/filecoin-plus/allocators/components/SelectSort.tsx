@@ -1,11 +1,12 @@
 'use client'
 
+import { ArrowsDownUp } from '@phosphor-icons/react/dist/ssr'
+import type { Column, SortDirection } from '@tanstack/react-table'
+
 import { Listbox } from '@filecoin-foundation/ui/Listbox'
 import { ListboxButton } from '@filecoin-foundation/ui/Listbox/ListboxButton'
 import { ListboxOption } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import { ListboxOptions } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
-import { ArrowsDownUp } from '@phosphor-icons/react/dist/ssr'
-import type { Column, SortDirection } from '@tanstack/react-table'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 

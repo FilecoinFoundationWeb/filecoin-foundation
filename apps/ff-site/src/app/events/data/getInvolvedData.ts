@@ -1,5 +1,6 @@
-import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 import { Clipboard, Envelope, HandWaving } from '@phosphor-icons/react/dist/ssr'
+
+import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 

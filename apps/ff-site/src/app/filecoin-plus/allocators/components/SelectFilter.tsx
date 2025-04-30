@@ -1,10 +1,11 @@
 'use client'
 
+import type { Column } from '@tanstack/react-table'
+
 import { Listbox } from '@filecoin-foundation/ui/Listbox'
 import { ListboxButton } from '@filecoin-foundation/ui/Listbox/ListboxButton'
 import { ListboxOption } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import { ListboxOptions } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
-import type { Column } from '@tanstack/react-table'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 

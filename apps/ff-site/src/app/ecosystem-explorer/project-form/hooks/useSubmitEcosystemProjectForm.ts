@@ -1,5 +1,6 @@
-import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import * as Sentry from '@sentry/nextjs'
+
+import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 

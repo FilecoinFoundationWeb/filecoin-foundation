@@ -1,7 +1,8 @@
 'use client'
 
-import { CATEGORY_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { useQueryState, parseAsString, parseAsArrayOf } from 'nuqs'
+
+import { CATEGORY_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 
 import { FormCheckbox } from '@/components/Form/FormCheckbox'
 

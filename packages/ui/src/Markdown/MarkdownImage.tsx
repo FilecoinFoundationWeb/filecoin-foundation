@@ -1,8 +1,11 @@
-import Image from 'next/image'
+import type { ComponentPropsWithoutRef } from 'react'
+
 import * as Sentry from '@sentry/node'
+import Image from 'next/image'
+
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
-import type { ComponentPropsWithoutRef } from 'react'
+
 
 const IMAGE_DIMENSIONS = {
   containerWidth: 672,

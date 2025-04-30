@@ -1,5 +1,6 @@
-import { NoResultsMessage } from '@filecoin-foundation/ui/NoResultsMessage'
 import { CloudSlash } from '@phosphor-icons/react/dist/ssr'
+
+import { NoResultsMessage } from '@filecoin-foundation/ui/NoResultsMessage'
 
 import { BASE_DOMAIN, FIL_PLUS_URLS } from '@/constants/siteMetadata'
 

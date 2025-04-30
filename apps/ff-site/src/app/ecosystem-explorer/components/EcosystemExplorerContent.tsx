@@ -1,3 +1,5 @@
+import { BookOpen } from '@phosphor-icons/react/dist/ssr'
+
 import { useEntryView } from '@filecoin-foundation/hooks/useEntryView'
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { entryMatchesCategoryQuery } from '@filecoin-foundation/hooks/useFilter/utils'
@@ -15,7 +17,6 @@ import {
 import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
-import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'

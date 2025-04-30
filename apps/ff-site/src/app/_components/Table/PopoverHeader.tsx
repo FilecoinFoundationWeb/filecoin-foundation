@@ -1,12 +1,13 @@
+import { Button } from '@headlessui/react'
+import { Question } from '@phosphor-icons/react/dist/ssr'
+import { clsx } from 'clsx'
+
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import {
   Popover,
   type PopoverProps,
 } from '@filecoin-foundation/ui/Tooltip/Popover'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
-import { Button } from '@headlessui/react'
-import { Question } from '@phosphor-icons/react/dist/ssr'
-import { clsx } from 'clsx'
 
 type TableHeaderWithPopoverProps = {
   title: string

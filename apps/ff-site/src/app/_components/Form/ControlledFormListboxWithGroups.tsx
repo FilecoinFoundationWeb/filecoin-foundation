@@ -1,10 +1,11 @@
-import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import {
   useFormContext,
   Controller,
   type FieldValues,
   type FieldPathByValue,
 } from 'react-hook-form'
+
+import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 
 
 import {

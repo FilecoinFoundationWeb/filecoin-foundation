@@ -1,9 +1,9 @@
 import { useQueryState } from 'nuqs'
-
-import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import { parseAsInteger } from 'nuqs'
 
 import { DEFAULT_PAGE_NUMBER } from '@filecoin-foundation/utils/constants/paginationConstants'
-import { parseAsInteger } from 'nuqs'
+import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+
 
 export function useResetPageQuery() {
   const [page, setPage] = useQueryState(

@@ -1,8 +1,9 @@
-import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
-import { type BreakpointValue } from '@filecoin-foundation/utils/types/tailwindTypes'
 import { ListboxButton as HeadlessUIListboxButton } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
+
+import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
+import { type BreakpointValue } from '@filecoin-foundation/utils/types/tailwindTypes'
 
 export type ListboxButtonProps = {
   text: string

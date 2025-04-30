@@ -1,5 +1,6 @@
-import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 import { Button, type ButtonProps } from '@headlessui/react'
+
+import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 
 type IconButtonProps = {
   icon: IconProps['component']

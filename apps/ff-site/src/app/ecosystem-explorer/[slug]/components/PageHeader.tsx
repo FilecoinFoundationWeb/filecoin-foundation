@@ -1,7 +1,8 @@
 import Image, { type ImageProps } from 'next/image'
 
-import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { clsx } from 'clsx'
+
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
 import { graphicsData } from '@/data/graphicsData'
 

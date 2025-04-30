@@ -1,8 +1,9 @@
+import { Button } from '@headlessui/react'
+import clsx from 'clsx'
+
 import { useListboxQueryState } from '@filecoin-foundation/hooks/useListboxQueryState'
 import { PARTNERSHIP_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
-import { Button } from '@headlessui/react'
-import clsx from 'clsx'
 
 import { projectsViewConfigs } from '../constants/viewConfigs'
 

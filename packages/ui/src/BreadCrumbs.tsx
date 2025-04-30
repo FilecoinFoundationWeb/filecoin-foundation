@@ -1,12 +1,15 @@
 'use client'
 
+import type { Route } from 'next'
+
+import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { capitalize, truncate } from '@filecoin-foundation/utils/stringUtils'
-import { CaretRight } from '@phosphor-icons/react/dist/ssr'
-import Link from 'next/link'
-import type { Route } from 'next'
+
 
 const HOME_PATH = '/'
 const HOME_LABEL = 'Home'

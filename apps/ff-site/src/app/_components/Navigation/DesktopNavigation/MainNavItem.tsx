@@ -1,8 +1,9 @@
 import Link from 'next/link'
 
-import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
+
+import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
 type MainNavItemProps = {
   href: Route

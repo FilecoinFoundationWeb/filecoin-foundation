@@ -4,10 +4,11 @@ import { useState } from 'react'
 
 import Link from 'next/link'
 
+import { List, X } from '@phosphor-icons/react'
+
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 import { Social } from '@filecoin-foundation/ui/Social'
-import { List, X } from '@phosphor-icons/react'
 
 import { mobileNavigationItems } from '@/constants/navigation'
 import { PATHS } from '@/constants/paths'

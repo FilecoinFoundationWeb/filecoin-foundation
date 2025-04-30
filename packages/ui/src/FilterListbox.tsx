@@ -1,5 +1,7 @@
 'use client'
 
+import { FunnelSimple } from '@phosphor-icons/react'
+
 import { Listbox } from '@filecoin-foundation/ui/Listbox'
 import {
   ListboxButton,
@@ -13,7 +15,6 @@ import {
   ListboxOptions,
   type ListboxOptionsProps,
 } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
-import { FunnelSimple } from '@phosphor-icons/react'
 
 type FilterListboxProps = {
   selected: OptionType

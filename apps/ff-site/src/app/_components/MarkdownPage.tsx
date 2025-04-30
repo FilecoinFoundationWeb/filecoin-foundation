@@ -1,5 +1,6 @@
-import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import type { WithContext, WebPage } from 'schema-dts'
+
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageHeader } from '@/components/PageHeader'

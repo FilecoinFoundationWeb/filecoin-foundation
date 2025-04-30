@@ -1,8 +1,8 @@
 import { useMemo } from 'react'
 
 import { DEFAULT_ENTRIES_PER_PAGE } from '@filecoin-foundation/utils/constants/paginationConstants'
-import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import type { AnyObject } from '@filecoin-foundation/utils/types/utilTypes'
+import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { validatePageNumber } from './utils/validatePageNumber'
 

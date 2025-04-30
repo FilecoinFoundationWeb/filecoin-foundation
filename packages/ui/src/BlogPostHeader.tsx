@@ -1,8 +1,7 @@
 import { ArticleHeader } from '@filecoin-foundation/ui/Article/ArticleHeader'
-import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
-
 import type { ImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 type BlogPostHeaderProps = {

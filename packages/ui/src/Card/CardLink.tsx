@@ -1,8 +1,9 @@
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
+
 import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { type CTAProps } from '@filecoin-foundation/utils/types/ctaType'
-import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 
 export type CardLinkProps = CTAProps & {
   baseDomain: string

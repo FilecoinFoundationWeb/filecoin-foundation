@@ -1,5 +1,6 @@
-import { generateBlogPostStructuredData } from '@filecoin-foundation/utils/generateBlogPostStructuredData'
 import type { BlogPosting, WithContext } from 'schema-dts'
+
+import { generateBlogPostStructuredData } from '@filecoin-foundation/utils/generateBlogPostStructuredData'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'

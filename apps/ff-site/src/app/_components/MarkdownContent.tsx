@@ -1,9 +1,10 @@
-import { MarkdownImage, MarkdownLink } from '@filecoin-foundation/ui/Markdown'
 import rehypeToc, { type HtmlElementNode } from '@jsdevtools/rehype-toc'
 import ReactMarkdown, { type Components } from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
+
+import { MarkdownImage, MarkdownLink } from '@filecoin-foundation/ui/Markdown'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

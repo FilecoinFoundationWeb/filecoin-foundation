@@ -1,5 +1,6 @@
-import { capitalize } from './stringUtils'
 import { z, type ZodError } from 'zod'
+
+import { capitalize } from './stringUtils'
 
 type LogConfig = {
   location?: string

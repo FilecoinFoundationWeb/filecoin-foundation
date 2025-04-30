@@ -1,8 +1,9 @@
 'use client'
 
+import { CalendarBlank } from '@phosphor-icons/react'
+
 import { useListboxQueryState } from '@filecoin-foundation/hooks/useListboxQueryState'
 import { SORT_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
-import { CalendarBlank } from '@phosphor-icons/react'
 
 import { getSortOptions } from '@/utils/getSortOptions'
 

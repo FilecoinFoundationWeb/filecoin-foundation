@@ -1,10 +1,11 @@
-import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import {
   CurrencyCircleDollar,
   Gift,
   MegaphoneSimple,
   PenNib,
 } from '@phosphor-icons/react/dist/ssr'
+
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
 
 
 type ProgramFeaturesAndPerksDataProps = {

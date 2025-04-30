@@ -1,3 +1,5 @@
+import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
+import { clsx } from 'clsx'
 import Image from 'next/image'
 
 import { Heading } from '@filecoin-foundation/ui/Heading'
@@ -6,8 +8,6 @@ import type {
   StaticImageProps,
   ImageProps,
 } from '@filecoin-foundation/utils/types/imageType'
-import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
-import { clsx } from 'clsx'
 
 type KeyMemberCardProps = {
   name: string

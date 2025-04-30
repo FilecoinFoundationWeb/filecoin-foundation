@@ -2,13 +2,14 @@
 
 import { useState } from 'react'
 
+import { Button as HeadlessUIButton } from '@headlessui/react'
+import { FunnelSimple, X } from '@phosphor-icons/react'
+
 import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { Button } from '@filecoin-foundation/ui/Button'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
-import { Button as HeadlessUIButton } from '@headlessui/react'
-import { FunnelSimple, X } from '@phosphor-icons/react'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

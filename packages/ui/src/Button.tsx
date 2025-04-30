@@ -1,11 +1,12 @@
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
+import { clsx } from 'clsx'
+
 import { BaseLink, type BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
 import {
   Icon as IconComponent,
   type IconProps,
 } from '@filecoin-foundation/ui/Icon'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
-import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
-import { clsx } from 'clsx'
 
 const variantClasses = {
   primary: 'button--primary',

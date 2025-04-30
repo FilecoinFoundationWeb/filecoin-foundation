@@ -1,6 +1,7 @@
+import removeMarkdown from 'remove-markdown'
+
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
 import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
-import removeMarkdown from 'remove-markdown'
 
 import { PATHS } from '@/constants/paths'
 

@@ -1,6 +1,7 @@
+import type { Author } from '@filecoin-foundation/utils/types/authorTypes'
+
 import { Avatar } from './Avatar'
 
-import type { Author } from '@filecoin-foundation/utils/types/authorTypes'
 
 export type AvatarGroupProps = {
   authors: Array<Author>

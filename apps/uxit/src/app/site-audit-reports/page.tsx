@@ -1,8 +1,9 @@
+import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
+
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
-import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
 

@@ -1,5 +1,7 @@
 'use client'
 
+import { ArrowsDownUp } from '@phosphor-icons/react'
+
 import { Listbox } from '@filecoin-foundation/ui/Listbox'
 import {
   ListboxButton,
@@ -8,7 +10,6 @@ import {
 import { ListboxOption } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import { ListboxOptions } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
-import { ArrowsDownUp } from '@phosphor-icons/react'
 
 export type SortListboxProps = {
   selected: OptionType

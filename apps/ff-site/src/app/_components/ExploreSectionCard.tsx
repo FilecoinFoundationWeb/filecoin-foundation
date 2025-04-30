@@ -1,6 +1,7 @@
+import { clsx } from 'clsx'
+
 import { type HeadingProps, Heading } from '@filecoin-foundation/ui/Heading'
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
-import { clsx } from 'clsx'
 
 import { CardLink } from '@/components/Card'
 

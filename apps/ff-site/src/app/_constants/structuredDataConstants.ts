@@ -1,5 +1,6 @@
-import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 import type { Organization, WithContext } from 'schema-dts'
+
+import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 
 import {
   BASE_URL,

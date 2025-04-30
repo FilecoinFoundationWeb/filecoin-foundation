@@ -1,5 +1,6 @@
-import type { SeoMetadata } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
 import type { WebPage, WithContext } from 'schema-dts'
+
+import type { SeoMetadata } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'

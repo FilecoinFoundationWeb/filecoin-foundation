@@ -2,6 +2,8 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { ArrowUpRight } from '@phosphor-icons/react'
+
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import {
   DEFAULT_CATEGORY_FILTER_OPTION,
@@ -22,7 +24,6 @@ import {
   RESOURCE_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
-import { ArrowUpRight } from '@phosphor-icons/react'
 
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'

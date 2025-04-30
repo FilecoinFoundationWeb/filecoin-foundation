@@ -2,10 +2,11 @@
 
 import path from 'path'
 
-import { extractSlugFromFilename } from './fileUtils'
-import { getMarkdownData } from './getMarkdownData'
 import glob from 'fast-glob'
 import { ZodObject, type ZodRawShape } from 'zod'
+
+import { extractSlugFromFilename } from './fileUtils'
+import { getMarkdownData } from './getMarkdownData'
 
 export type GetAllMarkdownDataArgs<T extends ZodRawShape> = {
   directoryPath: string

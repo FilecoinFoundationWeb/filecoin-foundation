@@ -1,8 +1,9 @@
 'use client'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react'
+
+import { Icon } from '@filecoin-foundation/ui/Icon'
 
 
 type PopOverProps = {

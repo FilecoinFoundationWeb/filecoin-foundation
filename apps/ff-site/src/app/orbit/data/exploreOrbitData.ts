@@ -1,9 +1,10 @@
-import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import {
   BookOpen,
   ClipboardText,
   Envelope,
 } from '@phosphor-icons/react/dist/ssr'
+
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 

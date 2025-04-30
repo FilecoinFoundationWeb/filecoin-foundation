@@ -1,5 +1,6 @@
-import type { DigestArticleData } from '@filecoin-foundation/utils/types/digestType'
 import type { WebPage, WithContext } from 'schema-dts'
+
+import type { DigestArticleData } from '@filecoin-foundation/utils/types/digestType'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 

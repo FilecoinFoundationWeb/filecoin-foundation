@@ -1,10 +1,11 @@
 import Link from 'next/link'
 
+import { CheckCircle } from '@phosphor-icons/react/dist/ssr'
+
 import { Button } from '@filecoin-foundation/ui/Button'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
-import { CheckCircle } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'

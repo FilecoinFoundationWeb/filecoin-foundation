@@ -1,6 +1,7 @@
-import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import prettyBytes from 'pretty-bytes'
 import { z } from 'zod'
+
+import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 
 
 import {

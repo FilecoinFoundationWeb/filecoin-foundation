@@ -1,7 +1,8 @@
 import { Fragment, type ComponentProps, type ReactElement } from 'react'
 
-import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { clsx } from 'clsx'
+
+import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from 'react'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
-import { DEFAULT_PAGE_NUMBER } from '@filecoin-foundation/utils/constants/paginationConstants'
-import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import { useDebounceCallback } from 'usehooks-ts'
+
+import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
+import { Icon } from '@filecoin-foundation/ui/Icon'
+import { DEFAULT_PAGE_NUMBER } from '@filecoin-foundation/utils/constants/paginationConstants'
 import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 
 import { useResponsiveRange } from './utils/useResponsiveRange'

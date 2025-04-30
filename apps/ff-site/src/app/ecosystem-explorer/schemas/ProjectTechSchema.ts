@@ -1,9 +1,10 @@
+import { z } from 'zod'
+
 import {
   getCollectionConfig,
   getCMSFieldOptions,
 } from '@filecoin-foundation/utils/cmsConfigUtils'
 import { createEnumSchema } from '@filecoin-foundation/utils/zodUtils'
-import { z } from 'zod'
 
 import configData from '@/data/cmsConfigSchema.json'
 

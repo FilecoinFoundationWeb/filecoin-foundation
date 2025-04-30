@@ -1,6 +1,8 @@
-import { ImagePropsSchema } from './ImagePropsSchema'
-import { SeoMetadataWithOptionalTitleSchema } from '../schemas/SeoMetadataSchema'
 import { z } from 'zod'
+
+import { SeoMetadataWithOptionalTitleSchema } from '../schemas/SeoMetadataSchema'
+
+import { ImagePropsSchema } from './ImagePropsSchema'
 
 export const DynamicBaseDataSchema = z
   .object({

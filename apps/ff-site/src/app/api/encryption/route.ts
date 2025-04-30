@@ -1,7 +1,8 @@
 import { type NextRequest } from 'next/server'
 
-import { getCollectionConfig } from '@filecoin-foundation/utils/cmsConfigUtils'
 import { z } from 'zod'
+
+import { getCollectionConfig } from '@filecoin-foundation/utils/cmsConfigUtils'
 
 import configData from '@/data/cmsConfigSchema.json'
 

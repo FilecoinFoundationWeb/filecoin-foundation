@@ -1,7 +1,8 @@
 'use client'
 
-import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { clsx } from 'clsx'
+
+import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 
 type ResultsAndResetProps = {
   results?: number

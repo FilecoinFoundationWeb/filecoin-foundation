@@ -1,5 +1,6 @@
-import { type SeoMetadata } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
 import { type Metadata as NextMetadata } from 'next'
+
+import { type SeoMetadata } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
 
 import type { DynamicPathValues, PathValues } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
