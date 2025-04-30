@@ -21,7 +21,7 @@ program:
       location: Lisbon, Portugal
       description: "Meet Mirha Masala, Charly Martin & Filipa Ribeiro from FF’s UXIT
         team at ETH Lisbon! Join their Code n Corgi dogfooding workshop at AIhub
-        by Unicorn Factory Lisboa. "
+        by Unicorn Factory Lisboa."
       external-link: https://lu.ma/ETH-Lisbon-2025
 speakers:
   speakers_list:
