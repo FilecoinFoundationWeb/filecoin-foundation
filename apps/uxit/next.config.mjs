@@ -1,3 +1,5 @@
+import { outputFileTracingExcludes } from '@filecoin-foundation/next-config'
+
 /** @type {import('next').NextConfig} */
 const webpackRules = [
   {
@@ -8,18 +10,6 @@ const webpackRules = [
 
 const outputFileTracingIncludes = {
   '/': ['src/app/**'],
-}
-
-const outputFileTracingExcludes = {
-  '/': [
-    '.git/**',
-    '.github/**',
-    '.next/cache/**',
-    '.vscode/**',
-    'cypress/**',
-    'public/**',
-    'scripts/**',
-  ],
 }
 
 const nextConfig = {

@@ -1,5 +1,11 @@
 import { withSentryConfig } from '@sentry/nextjs'
 
+import {
+  outputFileTracingIncludes,
+  outputFileTracingExcludes,
+  webpackRules as baseWebpackRules,
+} from '@filecoin-foundation/next-config'
+
 import { redirects } from './redirects.mjs'
 
 /**
@@ -13,38 +19,12 @@ const imageRemotePatterns = [
 ]
 
 const webpackRules = [
-  {
-    test: /\.md$/,
-    loader: 'frontmatter-markdown-loader',
-    options: {
-      mode: ['body', 'attributes', 'react-component'],
-    },
-  },
-  {
-    test: /\.svg$/,
-    use: ['@svgr/webpack'],
-  },
+  ...baseWebpackRules,
   {
     test: /\.yml$/,
     use: 'yaml-loader',
   },
 ]
-
-const outputFileTracingIncludes = {
-  '/': ['src/app/**', 'src/content/**'],
-}
-
-const outputFileTracingExcludes = {
-  '/': [
-    '.git/**',
-    '.github/**',
-    '.next/cache/**',
-    '.vscode/**',
-    'cypress/**',
-    'public/**',
-    'scripts/**',
-  ],
-}
 
 const nextConfig = {
   images: {
