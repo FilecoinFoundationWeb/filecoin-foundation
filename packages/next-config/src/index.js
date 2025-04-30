@@ -1,3 +1,4 @@
+export { createNextConfig } from './createNextConfig.js'
 export { createSentryConfig } from './createSentryConfig.js'
 export {
   outputFileTracingIncludes,

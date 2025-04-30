@@ -1,17 +1,10 @@
-import { withSentryConfig } from '@sentry/nextjs'
+// @ts-check
 
-import {
-  createSentryConfig,
-  outputFileTracingIncludes,
-  outputFileTracingExcludes,
-  webpackRules,
-} from '@filecoin-foundation/next-config'
+import { createNextConfig } from '@filecoin-foundation/next-config'
 
-import { redirects } from './redirects.mjs'
+import { redirects as rawRedirects } from './redirects.mjs'
 
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next/dist/shared/lib/image-config').RemotePattern[]} */
 const imageRemotePatterns = [
   {
     protocol: 'https',
@@ -27,22 +20,12 @@ const imageRemotePatterns = [
   },
 ]
 
-const nextConfig = {
-  images: {
-    remotePatterns: imageRemotePatterns,
+/** @type {import('next').NextConfig} */
+export default createNextConfig({
+  imageRemotePatterns,
+  redirects: async () => rawRedirects,
+  sentry: {
+    project: 'ffdweb-site',
+    authTokenEnvVar: 'SENTRY_AUTH_TOKEN_FFDWEB_SITE',
   },
-  outputFileTracingIncludes,
-  outputFileTracingExcludes,
-  webpack: (config) => {
-    config.module.rules.push(...webpackRules)
-    return config
-  },
-  async redirects() {
-    return redirects
-  },
-}
-
-export default withSentryConfig(
-  nextConfig,
-  createSentryConfig('ffdweb-site', 'SENTRY_AUTH_TOKEN_FFDWEB_SITE'),
-)
+})
