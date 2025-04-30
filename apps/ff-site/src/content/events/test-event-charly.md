@@ -14,6 +14,14 @@ program:
       location: Lisbon
       description: ETH Lisbon
       external-link: https://github.com/FilecoinFoundationWeb/filecoin-foundation/pulls
+speakers:
+  speakers_list:
+    - name: Charly
+      title: Martin
+      company: FF
+      linkedin: https://www.linkedin.com/in/charlymartin/
+      image:
+        src: /assets/images/ainhoa.jpg
 seo:
   twitter:
     card: summary
