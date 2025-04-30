@@ -843,6 +843,7 @@ collections:
               - name: "linkedin"
                 label: "LinkedIn Profile URL"
                 widget: "string"
+                required: false
               - name: "image"
                 label: "Image"
                 widget: "object"
