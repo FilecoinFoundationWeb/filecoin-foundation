@@ -160,6 +160,20 @@ speakers:
       linkedin: https://www.linkedin.com/in/smagdali/
       image:
         src: /assets/images/stef-magdalinski.webp
+sponsors:
+  first-tier:
+    - image:
+        src: /assets/images/glif-logo.webp
+      name: GLIF
+      website: https://www.glif.io/en
+    - name: "Secured Finance "
+      website: https://secured.finance/
+      image:
+        src: /assets/images/660732963cc8098d637f66b8_securedfinance.png
+    - image:
+        src: /assets/images/recall_wordmark_black.webp
+      name: Recall
+      website: https://recall.network/
 seo:
   twitter:
     card: summary
