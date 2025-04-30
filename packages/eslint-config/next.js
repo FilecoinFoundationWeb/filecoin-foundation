@@ -68,6 +68,11 @@ export const config = [
             { pattern: '{fs,path}', group: 'builtin', position: 'before' },
             { pattern: 'react', group: 'external', position: 'before' },
             { pattern: 'next/**', group: 'external', position: 'before' },
+            {
+              pattern: '@filecoin-foundation/**',
+              group: 'external',
+              position: 'after',
+            },
             { pattern: '@/types/**', group: 'internal', position: 'before' },
             {
               pattern: '@/constants/**',
