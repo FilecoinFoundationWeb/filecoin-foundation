@@ -6,7 +6,7 @@ const SpeakerSchema = z.object({
   name: z.string(),
   title: z.string(),
   company: z.string(),
-  linkedin: z.string().url(),
+  linkedin: z.string().url().optional(),
   image: ImagePropsSchema,
 })
 
