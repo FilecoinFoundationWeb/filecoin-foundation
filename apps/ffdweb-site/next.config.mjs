@@ -1,6 +1,7 @@
 import { withSentryConfig } from '@sentry/nextjs'
 
 import {
+  createSentryConfig,
   outputFileTracingIncludes,
   outputFileTracingExcludes,
   webpackRules,
@@ -41,13 +42,7 @@ const nextConfig = {
   },
 }
 
-export default withSentryConfig(nextConfig, {
-  org: 'filecoin-foundation-qk',
-  project: 'ffdweb-site',
-  silent: !process.env.CI,
-  widenClientFileUpload: true,
-  hideSourceMaps: true,
-  disableLogger: true,
-  automaticVercelMonitors: true,
-  authToken: process.env.SENTRY_AUTH_TOKEN_FFDWEB_SITE,
-})
+export default withSentryConfig(
+  nextConfig,
+  createSentryConfig('ffdweb-site', 'SENTRY_AUTH_TOKEN_FFDWEB_SITE'),
+)
