@@ -844,6 +844,7 @@ collections:
                 label: "LinkedIn Profile URL"
                 widget: "string"
                 required: false
+                hint: This field is optional in case the speaker does not have a LinkedIn profile. If they do, please enter the URL.
               - name: "image"
                 label: "Image"
                 widget: "object"
