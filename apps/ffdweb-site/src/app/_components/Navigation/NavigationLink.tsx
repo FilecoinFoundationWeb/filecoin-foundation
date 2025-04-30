@@ -5,12 +5,14 @@ import { usePathname } from 'next/navigation'
 
 import { clsx } from 'clsx'
 
+import type { PathValues } from '@/constants/paths'
+
 import { TOUCH_TARGET_NAV_LINK } from './constants'
 
 type NavigationLinkProps = {
   label: string
-  href: LinkProps['href']
-  onClick?: LinkProps['onClick']
+  href: LinkProps<PathValues>['href']
+  onClick?: LinkProps<PathValues>['onClick']
 }
 
 export function NavigationLink({ href, label, ...rest }: NavigationLinkProps) {
