@@ -58,7 +58,7 @@
     "./StructuredDataScript": "./src/StructuredDataScript.tsx"
   },
   "scripts": {
-    "lint": "eslint . --fix"
+    "lint": "eslint --fix ."
   },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
