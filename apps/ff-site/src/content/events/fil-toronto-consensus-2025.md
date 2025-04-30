@@ -39,26 +39,6 @@ program:
         third-largest tech ecosystem and second-largest financial hub, Toronto
         unites global innovation with transformative technology leadership.
       external-link: https://consensus2025.coindesk.com/
-    - title: Protocol Labs x Filecoin Network Hub
-      external-link: https://lu.ma/g7vz0rt8
-      location: "The Fifth Social Club "
-      start-date: 2025-05-12
-      end-date: 2025-05-16
-      description: ​Join us at our coworking hub during Consensus 2025—hosted by
-        Filecoin Foundation and Polaris. It’s the perfect space to connect with
-        ecosystem teams, collaborate, and network throughout the week.
-    - title: AI Agent Night
-      external-link: https://lu.ma/lkcswk34
-      description: "​AI is no longer just about models.  ​It’s about
-        agents.  ​Autonomy. Memory. Coordination. Infrastructure.  ​And the
-        builders leading this shift are solving real problems for real
-        users.  ​AI Agent Night is for those teams.  ​The ones using Filecoin to
-        anchor real systems:  ​– Verifiable compute– Onchain coordination  ​–
-        Agent memory stored on decentralized infra  ​– Cross-agent messaging and
-        coordination at scale  ​We’re gathering for one night — to share what
-        we’ve learned, where we’re stuck, and what’s working in the wild."
-      location: The Fifth Social Club
-      start-date: 2025-05-14
 schedule:
   kicker: Don't miss out
   title: Speaking engagements
