@@ -65,7 +65,7 @@ export const config = [
             'index',
           ],
           pathGroups: [
-            { pattern: 'fs|path', group: 'builtin', position: 'before' },
+            { pattern: '{fs,path}', group: 'builtin', position: 'before' },
             { pattern: 'react', group: 'external', position: 'before' },
             { pattern: 'next/**', group: 'external', position: 'before' },
             { pattern: '@/types/**', group: 'internal', position: 'before' },
