@@ -1,6 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalEnv": ["NODE_ENV", "NEXT_RUNTIME"],
+  "globalEnv": ["CI", "NEXT_RUNTIME", "NODE_ENV"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
