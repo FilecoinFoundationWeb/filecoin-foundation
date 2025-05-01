@@ -1,7 +1,7 @@
 ---
 title: FIL Euro Summer
 description: "FIL Euro Summer is here! From May to July 2025, we’re supporting
-  Filecoin activations  across Europe to empower the ecosystem to connect and
+  Filecoin activations across Europe to empower the ecosystem to connect and
   collaborate. Join us this summer as we connect with local communities across
   Europe to build the future of decentralized technology. Let’s #FollowTheCorgi.
   "
@@ -111,6 +111,41 @@ speakers:
       title: Founding Officer
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/claratsao/
+    - name: Yan Bo
+      title: Strategic Partnership Lead
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/ngyanbo/
+      image:
+        src: /assets/images/yan-bo.webp
+    - name: Filipa Ribeiro
+      title: Product Designer
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/filipagribeiro/
+      image:
+        src: /assets/images/filipa-ribeiro.webp
+    - name: Charly Martin
+      title: Senior Developer
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/charlymartin/
+      image:
+        src: /assets/images/charly-martin.webp
+    - linkedin: https://www.linkedin.com/in/jlfahle/
+      name: Jordan Fahle
+      title: Deputy Head of Communications and Marketing
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/jordan-fahle-davos.webp
+    - name: Gary Moran
+      title: Creative Director
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/gmoranxyz/
+      image:
+        src: /assets/images/gary-moran.png
+  kicker: Connect with us
+  title: Meet the Team
+  description: Our experts are ready to chat about Web3, decentralization, and
+    growing the Filecoin ecosystem. Reach out to marketing@fil.org to schedule a
+    meeting and explore opportunities.
 seo:
   twitter:
     card: summary
