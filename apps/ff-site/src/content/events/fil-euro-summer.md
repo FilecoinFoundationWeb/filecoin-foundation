@@ -152,8 +152,6 @@ speakers:
     growing the Filecoin ecosystem. Reach out to marketing@fil.org to schedule a
     meeting and explore opportunities.
 seo:
-  twitter:
-    card: summary
   description: "Join FIL Euro Summer 2025 — community-led Filecoin meetups,
     workshops & activations across Europe from May to July. Create, connect &
     celebrate. #FollowTheCorgi"
