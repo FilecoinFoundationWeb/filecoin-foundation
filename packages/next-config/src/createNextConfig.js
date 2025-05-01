@@ -16,13 +16,13 @@ import {
  * @param {{ project: string, authTokenEnvVar: string }} params.sentry
  * @returns {import('next').NextConfig}
  */
-export const createNextConfig = ({
+export function createNextConfig({
   imageRemotePatterns,
   redirects,
   extraWebpackRules = [],
   sentry,
-}) =>
-  withSentryConfig(
+}) {
+  return withSentryConfig(
     {
       images: {
         remotePatterns: imageRemotePatterns,
@@ -40,3 +40,4 @@ export const createNextConfig = ({
     },
     createSentryConfig(sentry),
   )
+}
