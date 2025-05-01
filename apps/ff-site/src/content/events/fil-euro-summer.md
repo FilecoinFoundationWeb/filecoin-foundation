@@ -3,8 +3,7 @@ title: FIL Euro Summer
 description: "FIL Euro Summer is here! From May to July 2025, we’re supporting
   Filecoin activations across Europe to empower the ecosystem to connect and
   collaborate. Join us this summer as we connect with local communities across
-  Europe to build the future of decentralized technology. Let’s #FollowTheCorgi.
-  "
+  Europe to build the future of decentralized technology. Let’s #FollowTheCorgi."
 created-on: 2025-04-30T14:56:00.000Z
 updated-on: 2025-04-30T14:56:00.000Z
 published-on: 2025-04-30T14:56:00.000Z
@@ -30,7 +29,7 @@ program:
         Meet Mirha Masala (Tech Lead), Charly Martin (Senior Developer) & Filipa
         Ribeiro (Product Designer) from FF’s UXIT team in-person at ETH Lisbon,
         and in the highly anticipated dogfooding workshop during Code n’ Corgi
-        at AIhub by Unicorn Factory Lisboa. "
+        at AIhub by Unicorn Factory Lisboa."
       external-link: https://lu.ma/ETH-Lisbon-2025
     - title: "Silesia Meetup: ETHWarsaw & Filecoin Meetup!"
       start-date: 2025-05-20
