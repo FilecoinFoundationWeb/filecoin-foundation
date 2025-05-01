@@ -110,7 +110,7 @@ function FooterLink({ href, label }: FooterLinkProps) {
   return (
     <li>
       <BaseLink
-        className="focus:brand-outline text-neutral-50 hover:underline" /* CHECK */
+        className="focus:brand-outline text-neutral-50 hover:underline"
         href={href}
         baseDomain={BASE_DOMAIN}
       >
