@@ -54,6 +54,7 @@ export function Card({
     <Tag
       aria-label={title.text}
       title={title.text}
+      data-with-link={Boolean(cta)}
       className={clsx(
         'card relative h-full border backdrop-blur-xl',
         borderStyles[borderColor],
