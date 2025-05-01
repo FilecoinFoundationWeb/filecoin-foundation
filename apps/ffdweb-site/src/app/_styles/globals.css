@@ -172,7 +172,11 @@
 
   /* CARD */
   .card {
-    @apply hover:bg-brand-primary-900 bg-transparent;
+    @apply bg-transparent;
+
+    &[data-with-link='true'] {
+      @apply hover:bg-brand-primary-900;
+    }
 
     &.card-border--lighter {
       @apply border-brand-primary-500;

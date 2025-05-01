@@ -151,7 +151,11 @@
 
   /* CARD */
   .card {
-    @apply bg-brand-700/30 hover:bg-brand-overlay/20 rounded-lg;
+    @apply bg-brand-700/30 rounded-lg;
+
+    &[data-with-link='true'] {
+      @apply hover:bg-brand-overlay/20;
+    }
 
     &.card-border--lighter {
       @apply border-brand-300;
