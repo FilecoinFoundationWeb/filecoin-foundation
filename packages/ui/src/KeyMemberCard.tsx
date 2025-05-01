@@ -13,7 +13,7 @@ type KeyMemberCardProps = {
   name: string
   title: string
   company?: string
-  linkedin: string
+  linkedin?: string
   image: StaticImageProps['data'] | ImageProps['src']
 }
 
@@ -27,7 +27,10 @@ export function KeyMemberCard({
   const fullTitle = [title, company].filter(Boolean).join(', ')
 
   return (
-    <li className="key-member-card relative flex">
+    <li
+      className="key-member-card relative flex"
+      data-with-link={Boolean(linkedin)}
+    >
       <KeyMemberImage image={image} name={name} />
 
       <div className="m-3 grow">
@@ -35,19 +38,21 @@ export function KeyMemberCard({
           {name}
         </Heading>
 
-        <p className="key-member-card-title mb-10 mt-1">{fullTitle}</p>
+        <p className="key-member-card-title mt-1 mb-10">{fullTitle}</p>
 
-        <a
-          aria-label={`Visit ${name}'s LinkedIn profile.`}
-          href={linkedin}
-          rel="noopener noreferrer"
-          className="key-member-card-link focus:brand-outline absolute inset-0"
-        >
-          <span className="absolute bottom-4 left-36 inline-flex items-center gap-2">
-            <Icon component={LinkedinLogo} />
-            LinkedIn
-          </span>
-        </a>
+        {linkedin && (
+          <a
+            aria-label={`Visit ${name}'s LinkedIn profile.`}
+            href={linkedin}
+            rel="noopener noreferrer"
+            className="key-member-card-link focus:brand-outline absolute inset-0"
+          >
+            <span className="absolute bottom-4 left-36 inline-flex items-center gap-2">
+              <Icon component={LinkedinLogo} />
+              LinkedIn
+            </span>
+          </a>
+        )}
       </div>
     </li>
   )

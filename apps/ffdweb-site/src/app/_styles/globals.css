@@ -224,7 +224,11 @@
 
   /* KEY MEMBER CARD */
   .key-member-card {
-    @apply border-brand-primary-700 hover:bg-brand-primary-900 border p-0.5;
+    @apply border-brand-primary-700 border p-0.5;
+
+    &[data-with-link='true'] {
+      @apply hover:bg-brand-primary-900;
+    }
 
     .key-member-card-link {
       @apply text-brand-primary-300;
@@ -338,7 +342,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply text-brand-primary-300!  hover:text-brand-primary-500! focus:brand-outline! no-underline! hover:underline!;
+    @apply text-brand-primary-300! hover:text-brand-primary-500! focus:brand-outline! no-underline! hover:underline!;
   }
 
   /* TOOLTIP */
