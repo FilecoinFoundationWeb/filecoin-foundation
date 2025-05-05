@@ -1,4 +1,6 @@
-/** @type {import('next').NextConfig} */
+// @ts-check
+import { outputFileTracingExcludes } from '@filecoin-foundation/next-config'
+
 const webpackRules = [
   {
     test: /\.svg$/,
@@ -6,7 +8,14 @@ const webpackRules = [
   },
 ]
 
+const outputFileTracingIncludes = {
+  '/': ['src/app/**'],
+}
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingIncludes,
+  outputFileTracingExcludes,
   webpack: (config) => {
     config.module.rules.push(...webpackRules)
     return config

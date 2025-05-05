@@ -2,11 +2,13 @@ import Link from 'next/link'
 
 import clsx from 'clsx'
 
+import { type BaseLinkProps, BaseLink } from '@filecoin-foundation/ui/BaseLink'
 import { CopyrightText } from '@filecoin-foundation/ui/CopyrightText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Social } from '@filecoin-foundation/ui/Social'
 
 import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
@@ -21,7 +23,7 @@ type FooterSectionProps = {
 }
 
 type FooterLinkProps = {
-  href: string
+  href: BaseLinkProps['href']
   label: string
 }
 
@@ -107,12 +109,13 @@ function FooterSection({ title, children }: FooterSectionProps) {
 function FooterLink({ href, label }: FooterLinkProps) {
   return (
     <li>
-      <Link
-        className="focus:brand-outline text-neutral-50 hover:underline" /* CHECK */
+      <BaseLink
+        className="focus:brand-outline text-neutral-50 hover:underline"
         href={href}
+        baseDomain={BASE_DOMAIN}
       >
         {label}
-      </Link>
+      </BaseLink>
     </li>
   )
 }

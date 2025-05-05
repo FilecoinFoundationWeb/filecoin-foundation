@@ -1,10 +1,9 @@
-import { withSentryConfig } from '@sentry/nextjs'
+// @ts-check
+import { createNextConfig } from '@filecoin-foundation/next-config'
 
-import redirects from './redirects.js'
+import { redirects as rawRedirects } from './redirects.mjs'
 
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next/dist/shared/lib/image-config').RemotePattern[]} */
 const imageRemotePatterns = [
   {
     protocol: 'https',
@@ -12,66 +11,20 @@ const imageRemotePatterns = [
   },
 ]
 
-const webpackRules = [
-  {
-    test: /\.md$/,
-    loader: 'frontmatter-markdown-loader',
-    options: {
-      mode: ['body', 'attributes', 'react-component'],
-    },
-  },
-  {
-    test: /\.svg$/,
-    use: ['@svgr/webpack'],
-  },
+const extraWebpackRules = [
   {
     test: /\.yml$/,
     use: 'yaml-loader',
   },
 ]
 
-const outputFileTracingIncludes = {
-  '/': ['src/content/**'],
-}
-
-const outputFileTracingExcludes = {
-  '/': [
-    '.git/**',
-    '.github/**',
-    '.next/cache/**',
-    '.vscode/**',
-    'cypress/**',
-    'public/**',
-    'scripts/**',
-    'src/app/**',
-  ],
-}
-
-const nextConfig = {
-  images: {
-    remotePatterns: imageRemotePatterns,
+/** @type {import('next').NextConfig} */
+export default createNextConfig({
+  imageRemotePatterns,
+  extraWebpackRules,
+  redirects: async () => rawRedirects,
+  sentry: {
+    project: 'filecoin-foundation-site',
+    authTokenEnvVar: 'SENTRY_AUTH_TOKEN_FF_SITE',
   },
-  experimental: {
-    typedRoutes: true,
-  },
-  outputFileTracingIncludes,
-  outputFileTracingExcludes,
-  async redirects() {
-    return redirects
-  },
-  webpack: (config) => {
-    config.module.rules.push(...webpackRules)
-    return config
-  },
-}
-
-export default withSentryConfig(nextConfig, {
-  org: 'filecoin-foundation-qk',
-  project: 'filecoin-foundation-site',
-  silent: !process.env.CI,
-  widenClientFileUpload: true,
-  hideSourceMaps: true,
-  disableLogger: true,
-  automaticVercelMonitors: true,
-  authToken: process.env.SENTRY_AUTH_TOKEN_FF_SITE,
 })

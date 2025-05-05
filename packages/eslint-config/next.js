@@ -10,6 +10,14 @@ import { sharedGroups } from './shared-import-rules.js'
 export const config = [
   ...baseConfig,
   {
+    files: ['next.config.mjs'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
+  {
     ...pluginReact.configs.flat.recommended,
     languageOptions: {
       ...pluginReact.configs.flat.recommended.languageOptions,
