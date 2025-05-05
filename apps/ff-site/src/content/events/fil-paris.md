@@ -315,7 +315,7 @@ speakers:
       image:
         src: /assets/images/zak-ayesh.webp
 recap:
-  youtube-playlist-url: https://www.youtube.com/embed/m-lWAQqLI6A
+  youtube-embed-url: https://www.youtube.com/embed/m-lWAQqLI6A
 seo:
   description: Join FIL Paris 2023, a week-long event celebrating the Filecoin
     ecosystem and decentralized web. Hosted in Paris by the Filecoin Foundation,
