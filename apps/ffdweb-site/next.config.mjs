@@ -1,10 +1,10 @@
-import { withSentryConfig } from '@sentry/nextjs'
+// @ts-check
 
-import { redirects } from './redirects.mjs'
+import { createNextConfig } from '@filecoin-foundation/next-config'
 
-/**
- * @type {import('next').NextConfig}
- */
+import { redirects as rawRedirects } from './redirects.mjs'
+
+/** @type {import('next/dist/shared/lib/image-config').RemotePattern[]} */
 const imageRemotePatterns = [
   {
     protocol: 'https',
@@ -20,40 +20,12 @@ const imageRemotePatterns = [
   },
 ]
 
-const webpackRules = [
-  {
-    test: /\.md$/,
-    loader: 'frontmatter-markdown-loader',
-    options: {
-      mode: ['body', 'attributes', 'react-component'],
-    },
+/** @type {import('next').NextConfig} */
+export default createNextConfig({
+  imageRemotePatterns,
+  redirects: async () => rawRedirects,
+  sentry: {
+    project: 'ffdweb-site',
+    authTokenEnvVar: 'SENTRY_AUTH_TOKEN_FFDWEB_SITE',
   },
-  {
-    test: /\.svg$/,
-    use: ['@svgr/webpack'],
-  },
-]
-
-const nextConfig = {
-  images: {
-    remotePatterns: imageRemotePatterns,
-  },
-  webpack: (config) => {
-    config.module.rules.push(...webpackRules)
-    return config
-  },
-  async redirects() {
-    return redirects
-  },
-}
-
-export default withSentryConfig(nextConfig, {
-  org: 'filecoin-foundation-qk',
-  project: 'ffdweb-site',
-  silent: !process.env.CI,
-  widenClientFileUpload: true,
-  hideSourceMaps: true,
-  disableLogger: true,
-  automaticVercelMonitors: true,
-  authToken: process.env.SENTRY_AUTH_TOKEN_FFDWEB_SITE,
 })
