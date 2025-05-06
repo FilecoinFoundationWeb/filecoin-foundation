@@ -2,7 +2,7 @@
   {
     "path": "/",
     "score": 0.91,
-    "performance": 0.91,
+    "performance": 0.94,
     "accessibility": 0.87,
     "best-practices": 0.93,
     "seo": 0.91
@@ -10,55 +10,55 @@
   {
     "path": "/blog",
     "score": 0.92,
-    "performance": 0.8,
+    "performance": 0.81,
     "accessibility": 0.92,
     "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/blog/ramo-computer",
-    "score": 0.91,
-    "performance": 0.87,
+    "score": 0.92,
+    "performance": 0.88,
     "accessibility": 0.82,
     "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/cloud-services",
-    "score": 0.93,
-    "performance": 0.88,
+    "score": 0.94,
+    "performance": 0.92,
     "accessibility": 0.91,
     "best-practices": 0.93,
     "seo": 1
   },
   {
     "path": "/events",
-    "score": 0.9,
-    "performance": 0.85,
+    "score": 0.91,
+    "performance": 0.9,
     "accessibility": 0.91,
     "best-practices": 0.93,
     "seo": 0.91
   },
   {
     "path": "/legal/privacy-policy",
-    "score": 0.94,
-    "performance": 0.86,
+    "score": 0.96,
+    "performance": 0.94,
     "accessibility": 0.92,
     "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/network",
-    "score": 0.93,
-    "performance": 0.88,
+    "score": 0.95,
+    "performance": 0.94,
     "accessibility": 0.91,
     "best-practices": 0.93,
     "seo": 1
   },
   {
     "path": "/stake",
-    "score": 0.95,
-    "performance": 0.94,
+    "score": 0.94,
+    "performance": 0.92,
     "accessibility": 0.92,
     "best-practices": 0.93,
     "seo": 1

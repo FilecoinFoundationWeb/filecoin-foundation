@@ -1,16 +1,16 @@
 [
   {
     "path": "/",
-    "score": 0.96,
-    "performance": 0.95,
+    "score": 0.97,
+    "performance": 0.98,
     "accessibility": 1,
     "best-practices": 0.96,
     "seo": 0.92
   },
   {
     "path": "/about",
-    "score": 0.97,
-    "performance": 0.93,
+    "score": 0.99,
+    "performance": 0.98,
     "accessibility": 1,
     "best-practices": 0.96,
     "seo": 1
@@ -18,16 +18,16 @@
   {
     "path": "/blog",
     "score": 0.93,
-    "performance": 0.76,
+    "performance": 0.78,
     "accessibility": 0.94,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/blog/the-foundations-roles-in-the-filecoin-ecosystem",
-    "score": 1,
-    "performance": 0.99,
-    "accessibility": 1,
+    "path": "/blog/case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science",
+    "score": 0.99,
+    "performance": 0.98,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
@@ -40,23 +40,23 @@
     "seo": 1
   },
   {
-    "path": "/digest/the-potential-for-decentralized-technology-to-rebuild-digital-trust",
+    "path": "/digest/from-participant-to-organizer-how-community-led-activities-drive-innovation-in-decentralized-systems",
     "score": 0.97,
-    "performance": 0.89,
+    "performance": 0.86,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/ecosystem-explorer",
-    "score": 0.95,
-    "performance": 0.99,
+    "score": 0.94,
+    "performance": 0.98,
     "accessibility": 0.94,
     "best-practices": 0.93,
     "seo": 0.92
   },
   {
-    "path": "/ecosystem-explorer/swan",
+    "path": "/ecosystem-explorer/democracys-library",
     "score": 1,
     "performance": 0.99,
     "accessibility": 1,
@@ -73,86 +73,14 @@
   },
   {
     "path": "/events",
-    "score": 0.96,
-    "performance": 0.9,
+    "score": 0.98,
+    "performance": 0.98,
     "accessibility": 0.94,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/events/storage-provider-working-group-meeting",
-    "score": 0.99,
-    "performance": 0.95,
-    "accessibility": 1,
-    "best-practices": 1,
-    "seo": 1
-  },
-  {
-    "path": "/filecoin-plus",
-    "score": 0.95,
-    "performance": 0.84,
-    "accessibility": 1,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/filecoin-plus/allocators",
-    "score": 0.94,
-    "performance": 0.85,
-    "accessibility": 0.95,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/governance",
-    "score": 0.95,
-    "performance": 0.9,
-    "accessibility": 1,
-    "best-practices": 0.96,
-    "seo": 0.92
-  },
-  {
-    "path": "/governance/govhub",
-    "score": 0.94,
-    "performance": 0.86,
-    "accessibility": 1,
-    "best-practices": 0.96,
-    "seo": 0.92
-  },
-  {
-    "path": "/grants",
-    "score": 0.94,
-    "performance": 0.87,
-    "accessibility": 1,
-    "best-practices": 0.96,
-    "seo": 0.92
-  },
-  {
-    "path": "/orbit",
-    "score": 0.98,
-    "performance": 0.94,
-    "accessibility": 1,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/privacy-policy",
-    "score": 0.99,
-    "performance": 0.98,
-    "accessibility": 0.96,
-    "best-practices": 1,
-    "seo": 1
-  },
-  {
-    "path": "/security",
-    "score": 0.98,
-    "performance": 0.95,
-    "accessibility": 1,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/security/coordinated-disclosure-policy",
+    "path": "/events/filecoin-orbit-playground-16-ai-and-data-storage-for-workforce",
     "score": 1,
     "performance": 0.99,
     "accessibility": 1,
@@ -160,9 +88,81 @@
     "seo": 1
   },
   {
-    "path": "/terms-of-use",
+    "path": "/filecoin-plus",
     "score": 0.99,
     "performance": 0.98,
+    "accessibility": 1,
+    "best-practices": 0.96,
+    "seo": 1
+  },
+  {
+    "path": "/filecoin-plus/allocators",
+    "score": 0.94,
+    "performance": 0.84,
+    "accessibility": 0.95,
+    "best-practices": 0.96,
+    "seo": 1
+  },
+  {
+    "path": "/governance",
+    "score": 0.97,
+    "performance": 0.99,
+    "accessibility": 1,
+    "best-practices": 0.96,
+    "seo": 0.92
+  },
+  {
+    "path": "/governance/govhub",
+    "score": 0.95,
+    "performance": 0.93,
+    "accessibility": 1,
+    "best-practices": 0.96,
+    "seo": 0.92
+  },
+  {
+    "path": "/grants",
+    "score": 0.96,
+    "performance": 0.97,
+    "accessibility": 1,
+    "best-practices": 0.96,
+    "seo": 0.92
+  },
+  {
+    "path": "/orbit",
+    "score": 0.98,
+    "performance": 0.97,
+    "accessibility": 1,
+    "best-practices": 0.96,
+    "seo": 1
+  },
+  {
+    "path": "/privacy-policy",
+    "score": 0.99,
+    "performance": 0.99,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/security",
+    "score": 0.98,
+    "performance": 0.96,
+    "accessibility": 1,
+    "best-practices": 0.96,
+    "seo": 1
+  },
+  {
+    "path": "/security/maturity-model",
+    "score": 0.99,
+    "performance": 0.98,
+    "accessibility": 1,
+    "best-practices": 0.96,
+    "seo": 1
+  },
+  {
+    "path": "/terms-of-use",
+    "score": 0.99,
+    "performance": 0.99,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
