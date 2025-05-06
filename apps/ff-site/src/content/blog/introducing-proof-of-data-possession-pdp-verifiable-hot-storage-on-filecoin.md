@@ -11,12 +11,11 @@ description: With PDP, the Filecoin network extends its capabilities to
 image:
   src: /assets/images/042425-pdp_blogheader.webp
 seo:
-  twitter:
-    card: summary
   description: "Today, Filecoin unlocks a new level of utility –– building on a
     foundation of decentralized, verifiable storage at planetary scale with a
-    new hot storage tier. "
+    new hot storage tier."
 ---
+
 Today, Filecoin unlocks a new level of utility –– building on a foundation of decentralized, verifiable storage at planetary scale with a new hot storage tier. 
 
 As the world’s largest decentralized storage network, Filecoin has established itself as the gold standard for archival, decentralized storage. Now, with Proof of Data Possession (PDP) live on mainnet, the network gains a critical new capability: on-demand verification of hot data. PDP allows storage providers to prove that they hold an immediately available copy of a file without needing to retrieve it, unseal it, or aggregate it.
@@ -31,14 +30,14 @@ PDP enables storage providers to cryptographically prove they possess an immedia
 
 Here are some useful properties of PDP:
 
-* Lightweight verification: Random sampling challenges require just 160 bytes of data per challenge, regardless of dataset size.
-* No sealing/unsealing: Data remains in its raw, accessible form, eliminating the more time-consuming process required by PoRep.
-* Mutable collections: Unlike PoRep, PDP proofs can be incrementally added to, deleted, and modified –– avoiding aggregation bottlenecks. 
-* Scheduled challenges: Data clients can schedule automated daily verification challenges.
-* CPU-friendly: Proving uses standard Secure Hash Algorithm 2 (SHA2) hashing without requiring specialized hardware.
-* Efficient retrieval: Sub-second access to data. 
-* More client choice: Clients are able to add new data or remove data at their own will. 
-* PoRep-compatible data identifiers: Uses the same hashing algorithm as sector CommP/CommD to ensure consistent CIDs. No extra work needed.
+- Lightweight verification: Random sampling challenges require just 160 bytes of data per challenge, regardless of dataset size.
+- No sealing/unsealing: Data remains in its raw, accessible form, eliminating the more time-consuming process required by PoRep.
+- Mutable collections: Unlike PoRep, PDP proofs can be incrementally added to, deleted, and modified –– avoiding aggregation bottlenecks. 
+- Scheduled challenges: Data clients can schedule automated daily verification challenges.
+- CPU-friendly: Proving uses standard Secure Hash Algorithm 2 (SHA2) hashing without requiring specialized hardware.
+- Efficient retrieval: Sub-second access to data. 
+- More client choice: Clients are able to add new data or remove data at their own will. 
+- PoRep-compatible data identifiers: Uses the same hashing algorithm as sector CommP/CommD to ensure consistent CIDs. No extra work needed.
 
 ## How PDP improves Filecoin
 
@@ -100,7 +99,7 @@ MinerX participants will form the core of a reliable, retrieval-capable network 
 
 If you're a service provider interested in pioneering this new frontier, the SPX program is an excellent opportunity to differentiate your services and participate in shaping the future of verifiable hot storage on Filecoin.
 
-[Here’s how to join](https://forms.gle/5oszoK7iVoTCY8yv8) - and for the latest updates, onboarding instructions, and announcements throughout May 2025, follow[ @_FilOz](https://x.com/_FilOz) on X.
+[Here’s how to join](https://forms.gle/5oszoK7iVoTCY8yv8) - and for the latest updates, onboarding instructions, and announcements throughout May 2025, follow [@\_FilOz](https://x.com/_FilOz) on X.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0oD0J-4lIXg?si=NLmcRfFcQGh_BGxR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -108,17 +107,13 @@ If you're a service provider interested in pioneering this new frontier, the SPX
 
 [FilOz](https://www.filoz.org/), a Filecoin network protocol design and development team, has published several technical articles on the PDP Journey series, including:
 
-
-
-* [The PDP Journey: A Refresher on Proof of Data Possession and Its Path to Mainnet](https://medium.com/@filoz/the-pdp-journey-a-refresher-on-proof-of-data-possession-and-its-path-to-mainnet-e6b481d9ad9a)
-* [The PDP Journey: An In-Depth Look at How PDP Works](https://medium.com/@filoz/the-pdp-journey-an-in-depth-look-at-how-pdp-works-4b6079f4baad)
-* [PoRep, PDP, Proof of Delivery: Different Proofs for Different Use Cases
-
-  ](https://medium.com/@filoz/porep-pdp-proof-of-delivery-different-proofs-for-different-use-cases-e6daede195fb)
+- [The PDP Journey: A Refresher on Proof of Data Possession and Its Path to Mainnet](https://medium.com/@filoz/the-pdp-journey-a-refresher-on-proof-of-data-possession-and-its-path-to-mainnet-e6b481d9ad9a)
+- [The PDP Journey: An In-Depth Look at How PDP Works](https://medium.com/@filoz/the-pdp-journey-an-in-depth-look-at-how-pdp-works-4b6079f4baad)
+- [PoRep, PDP, Proof of Delivery: Different Proofs for Different Use Cases](https://medium.com/@filoz/porep-pdp-proof-of-delivery-different-proofs-for-different-use-cases-e6daede195fb)
 
 The FilOz team also created comprehensive documentation to help you get started with PDP:
 
-* [Getting Started with PDP for Filecoin Storage Providers](https://docs.filecoin.io/storage-providers/pdp/prerequisites)
-* [Getting Started with PDP for Storage Clients](https://docs.filecoin.io/storage-providers/pdp/use-pdp)
+- [Getting Started with PDP for Filecoin Storage Providers](https://docs.filecoin.io/storage-providers/pdp/prerequisites)
+- [Getting Started with PDP for Storage Clients](https://docs.filecoin.io/storage-providers/pdp/use-pdp)
 
 Stay tuned for more updates, tutorials, and announcements coming soon!
