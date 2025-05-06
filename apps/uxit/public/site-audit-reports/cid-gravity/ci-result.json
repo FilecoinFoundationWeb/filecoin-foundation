@@ -1,8 +1,8 @@
 [
   {
     "path": "/",
-    "score": 0.74,
-    "performance": 0.55,
+    "score": 0.75,
+    "performance": 0.6,
     "accessibility": 0.82,
     "best-practices": 0.82,
     "seo": 0.75
@@ -10,7 +10,7 @@
   {
     "path": "/about-us",
     "score": 0.8,
-    "performance": 0.62,
+    "performance": 0.61,
     "accessibility": 0.87,
     "best-practices": 0.96,
     "seo": 0.75
@@ -18,15 +18,15 @@
   {
     "path": "/pricing",
     "score": 0.82,
-    "performance": 0.65,
+    "performance": 0.68,
     "accessibility": 0.86,
     "best-practices": 1,
     "seo": 0.75
   },
   {
     "path": "/storage-providers",
-    "score": 0.78,
-    "performance": 0.65,
+    "score": 0.79,
+    "performance": 0.67,
     "accessibility": 0.72,
     "best-practices": 1,
     "seo": 0.75

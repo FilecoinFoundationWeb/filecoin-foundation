@@ -2,15 +2,15 @@
   {
     "path": "/",
     "score": 0.96,
-    "performance": 0.88,
+    "performance": 0.92,
     "accessibility": 0.96,
-    "best-practices": 1,
+    "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/about-us",
-    "score": 0.83,
-    "performance": 0.34,
+    "score": 0.91,
+    "performance": 0.66,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
@@ -18,15 +18,15 @@
   {
     "path": "/akave-cloud",
     "score": 0.96,
-    "performance": 0.96,
+    "performance": 0.95,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 0.92
   },
   {
     "path": "/akavecloud-contact",
-    "score": 0.89,
-    "performance": 0.58,
+    "score": 0.96,
+    "performance": 0.87,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
@@ -34,29 +34,29 @@
   {
     "path": "/blog",
     "score": 0.97,
-    "performance": 0.91,
+    "performance": 0.92,
     "accessibility": 0.95,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/blog/akave-at-ethdenver-powering-the-new-data-layer-for-ai-depin",
-    "score": 0.98,
-    "performance": 0.95,
-    "accessibility": 0.95,
+    "path": "/blog/announcing-the-first-decentralized-storage-integration-with-snowflake",
+    "score": 0.96,
+    "performance": 0.87,
+    "accessibility": 0.97,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/ecosystem",
-    "score": 0.91,
-    "performance": 0.74,
+    "score": 0.9,
+    "performance": 0.72,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 0.92
   },
   {
-    "path": "/ecosystem/finisterra",
+    "path": "/ecosystem/xtrace",
     "score": 0.9,
     "performance": 0.74,
     "accessibility": 0.95,
@@ -64,25 +64,25 @@
     "seo": 0.92
   },
   {
-    "path": "/enterprise/s3-cloud-storage",
-    "score": 0.97,
-    "performance": 0.92,
-    "accessibility": 0.96,
+    "path": "/enterprise/datadrop",
+    "score": 0.95,
+    "performance": 0.9,
+    "accessibility": 0.91,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/test",
     "score": 0.92,
-    "performance": 0.9,
+    "performance": 0.92,
     "accessibility": 0.85,
     "best-practices": 1,
     "seo": 0.91
   },
   {
     "path": "/testnet",
-    "score": 0.97,
-    "performance": 0.88,
+    "score": 0.95,
+    "performance": 0.78,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1

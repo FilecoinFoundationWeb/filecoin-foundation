@@ -1,42 +1,42 @@
 [
   {
     "path": "/",
-    "score": 0.92,
-    "performance": 0.86,
+    "score": 0.91,
+    "performance": 0.84,
     "accessibility": 0.89,
     "best-practices": 1,
     "seo": 0.92
   },
   {
     "path": "/blog/",
-    "score": 0.84,
-    "performance": 0.67,
+    "score": 0.79,
+    "performance": 0.65,
     "accessibility": 0.83,
-    "best-practices": 1,
+    "best-practices": 0.82,
     "seo": 0.85
   },
   {
-    "path": "/blog/events/",
-    "score": 0.81,
-    "performance": 0.74,
+    "path": "/blog/interviews/",
+    "score": 0.75,
+    "performance": 0.7,
     "accessibility": 0.79,
-    "best-practices": 1,
+    "best-practices": 0.82,
     "seo": 0.69
   },
   {
-    "path": "/blog/posts/filecoin-roadmap-update-april-2020/",
-    "score": 0.88,
-    "performance": 0.8,
+    "path": "/blog/posts/filecoin-collaborative-resource-and-risk-management/",
+    "score": 0.87,
+    "performance": 0.85,
     "accessibility": 0.88,
-    "best-practices": 1,
-    "seo": 0.85
+    "best-practices": 0.82,
+    "seo": 0.92
   },
   {
     "path": "/build/",
-    "score": 0.89,
+    "score": 0.84,
     "performance": 0.82,
     "accessibility": 0.88,
-    "best-practices": 1,
+    "best-practices": 0.82,
     "seo": 0.85
   },
   {
@@ -48,7 +48,7 @@
     "seo": 0.82
   },
   {
-    "path": "/categories/interviews/",
+    "path": "/categories/filecoin-community/",
     "score": 0.81,
     "performance": 1,
     "accessibility": 0.55,
@@ -57,26 +57,26 @@
   },
   {
     "path": "/discord/",
-    "score": 0.76,
-    "performance": 0.47,
+    "score": 0.77,
+    "performance": 0.49,
     "accessibility": 1,
     "best-practices": 0.57,
     "seo": 1
   },
   {
     "path": "/provide/",
-    "score": 0.88,
-    "performance": 0.79,
+    "score": 0.83,
+    "performance": 0.78,
     "accessibility": 0.88,
-    "best-practices": 1,
+    "best-practices": 0.82,
     "seo": 0.85
   },
   {
     "path": "/store/",
-    "score": 0.89,
-    "performance": 0.77,
+    "score": 0.84,
+    "performance": 0.74,
     "accessibility": 0.88,
-    "best-practices": 1,
+    "best-practices": 0.82,
     "seo": 0.92
   },
   {
@@ -89,38 +89,38 @@
   },
   {
     "path": "/zh-cn/",
-    "score": 0.92,
-    "performance": 0.85,
+    "score": 0.91,
+    "performance": 0.84,
     "accessibility": 0.89,
     "best-practices": 1,
     "seo": 0.92
   },
   {
-    "path": "/zh-cn/blog/events/",
-    "score": 0.8,
-    "performance": 0.7,
-    "accessibility": 0.79,
-    "best-practices": 1,
-    "seo": 0.69
-  },
-  {
-    "path": "/zh-cn/blog/posts/filecoin-news-26-filecoin-10-eib/",
+    "path": "/zh-cn/blog/posts/filecoin-zk-snarks-filecoin/",
     "score": 0.87,
-    "performance": 0.73,
-    "accessibility": 0.84,
-    "best-practices": 1,
+    "performance": 0.84,
+    "accessibility": 0.88,
+    "best-practices": 0.82,
     "seo": 0.92
   },
   {
+    "path": "/zh-cn/blog/updates/",
+    "score": 0.76,
+    "performance": 0.75,
+    "accessibility": 0.79,
+    "best-practices": 0.82,
+    "seo": 0.69
+  },
+  {
     "path": "/zh-cn/categories/",
-    "score": 0.8,
+    "score": 0.81,
     "performance": 1,
     "accessibility": 0.55,
-    "best-practices": 0.82,
+    "best-practices": 0.86,
     "seo": 0.82
   },
   {
-    "path": "/zh-cn/categories/updates/",
+    "path": "/zh-cn/categories/events/",
     "score": 0.81,
     "performance": 1,
     "accessibility": 0.55,

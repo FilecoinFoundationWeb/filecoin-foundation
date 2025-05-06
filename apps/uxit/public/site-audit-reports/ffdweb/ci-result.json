@@ -2,7 +2,7 @@
   {
     "path": "/",
     "score": 0.99,
-    "performance": 0.94,
+    "performance": 0.95,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
@@ -10,21 +10,37 @@
   {
     "path": "/about",
     "score": 0.99,
-    "performance": 0.95,
+    "performance": 0.97,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/blog",
-    "score": 0.98,
-    "performance": 0.9,
+    "score": 0.99,
+    "performance": 0.94,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data",
+    "path": "/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology",
+    "score": 1,
+    "performance": 0.99,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/digest",
+    "score": 0.96,
+    "performance": 0.83,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/digest/twiddler-configurability-for-me-but-not-for-thee",
     "score": 0.99,
     "performance": 0.98,
     "accessibility": 0.98,
@@ -32,55 +48,39 @@
     "seo": 1
   },
   {
-    "path": "/digest",
-    "score": 0.98,
-    "performance": 0.91,
-    "accessibility": 1,
-    "best-practices": 1,
-    "seo": 1
-  },
-  {
-    "path": "/digest/decentralization-in-all-the-things",
-    "score": 1,
-    "performance": 0.98,
-    "accessibility": 1,
-    "best-practices": 1,
-    "seo": 1
-  },
-  {
     "path": "/faqs",
-    "score": 0.99,
+    "score": 1,
     "performance": 0.99,
-    "accessibility": 0.96,
+    "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/learning-resources",
-    "score": 0.98,
-    "performance": 0.91,
+    "score": 0.99,
+    "performance": 0.97,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/privacy-policy",
-    "score": 1,
-    "performance": 0.98,
+    "score": 0.98,
+    "performance": 0.93,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/projects",
-    "score": 0.98,
-    "performance": 0.98,
+    "score": 0.97,
+    "performance": 0.96,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 0.92
   },
   {
-    "path": "/projects/rust-foundation",
+    "path": "/projects/cc-pk-movement-for-a-better-internet",
     "score": 1,
     "performance": 0.99,
     "accessibility": 1,
