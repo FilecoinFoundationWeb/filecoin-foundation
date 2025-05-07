@@ -46,16 +46,6 @@ schedule:
     - date: 2025-05-13
       events:
         - title: Marta Belcher @ Blockchain Futurist Conference
-          speakers:
-            - name: Marta Belcher
-              company: Filecoin Foundation
-          moderators:
-            - name: Morva Rohani
-              company: Canadian Web3 Council
-          start-time: 12:00:00.000Z
-          url: https://www.futuristconference.com/
-          location: Design Exchange Events Venue, 234 Bay St., Toronto, ON M5K 1B2, Canada
-        - title: Marta Belcher @ Blockchain Futurist Conference
           description: >
             Regulating Emerging Technologies with Marta Belcher, Hosted by Morva
             Rohani
@@ -69,6 +59,20 @@ schedule:
           location: Design Exchange Events Venue
           start-time: 13:00:00.000Z
           end-time: 13:20:00.000Z
+    - date: 2025-05-14
+      events:
+        - title: "Marta Belcher @ Consensus "
+          description: "U.S. Crypto Policy: Shaping the Future of Digital Assets"
+          moderators:
+            - name: "Nikhilesh De "
+              company: CoinDesk
+          speakers:
+            - name: Marta Belcher
+              company: "Filecoin Foundation "
+          start-time: 10:15:00.000Z
+          end-time: 10:35:00.000Z
+          location: Exploration Stage, Metro Toronto Convention Centre
+          url: https://consensus2025.coindesk.com/
     - date: 2025-05-15
       events:
         - title: Marta Belcher @ Innovate Toronto
