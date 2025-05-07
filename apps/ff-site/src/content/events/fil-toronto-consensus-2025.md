@@ -46,32 +46,141 @@ schedule:
     - date: 2025-05-13
       events:
         - title: Marta Belcher @ Blockchain Futurist Conference
-          speakers:
-            - name: Marta Belcher
-              company: Filecoin Foundation
+          description: >
+            Regulating Emerging Technologies with Marta Belcher, Hosted by Morva
+            Rohani
           moderators:
             - name: Morva Rohani
-              company: Canadian Web3 Council
-          start-time: 12:00:00.000Z
+              company: "Moderator: Morva Rohani (Canadian Web3 Council) "
+          speakers:
+            - name: Marta Belcher
+              company: "Filecoin Foundation "
           url: https://www.futuristconference.com/
-          location: Design Exchange Events Venue, 234 Bay St., Toronto, ON M5K 1B2, Canada
+          location: Design Exchange Events Venue
+          start-time: 13:00:00.000Z
+          end-time: 13:20:00.000Z
+    - date: 2025-05-14
+      events:
+        - title: "Marta Belcher @ Consensus "
+          description: "U.S. Crypto Policy: Shaping the Future of Digital Assets"
+          moderators:
+            - name: "Nikhilesh De "
+              company: CoinDesk
+          speakers:
+            - name: Marta Belcher
+              company: "Filecoin Foundation "
+          start-time: 10:15:00.000Z
+          end-time: 10:35:00.000Z
+          location: Exploration Stage, Metro Toronto Convention Centre
+          url: https://consensus2025.coindesk.com/
+        - title: "Molly Mackinlay @ Consensus "
+          description: "DePIN's Next Chapter: Scaling Alternatives to Centralized Services"
+          moderators:
+            - name: "Benjamin Schiller "
+              company: CoinDesk
+          speakers:
+            - name: Molly Mackinlay
+              company: "Protocol Labs "
+            - name: Bill Lakeland
+              company: "Spexi "
+            - name: "Robin Wingardh "
+              company: Wingbits
+          start-time: 13:00:00.000Z
+          end-time: 13:20:00.000Z
+          location: Exploration Stage, Metro Toronto Convention Centre
+          url: https://consensus2025.coindesk.com/
+        - title: "Danny O'Brien @ AI Agent Night "
+          description: Why AI Agents Need DePIN
+          speakers:
+            - name: "Danny O'Brien "
+              company: "Filecoin Foundation "
+          start-time: 16:00:00.000Z
+          end-time: 17:00:00.000Z
+          location: "PL x Filecoin Network Hub: 225 Richmond St W Suite 100, Toronto, ON
+            M5V 1W2, Canada"
+          url: https://lu.ma/lkcswk34?tk=nipAAi
+        - title: "Marta Belcher @ Consensus "
+          description: Privacy is Normal
+          moderators:
+            - name: Marta Belcher
+              company: "Filecoin Foundation "
+          speakers:
+            - name: "Josh Swihart "
+              company: Electric Coin Co.
+            - name: "Matthew Green "
+              company: Sealance
+            - name: "James Mudgett "
+              company: Brave
+          start-time: 14:50:00.000Z
+          end-time: 15:10:00.000Z
+          location: Summit Stage, Metro Toronto Convention Centre
+          url: https://consensus2025.coindesk.com/
     - date: 2025-05-15
       events:
         - title: Marta Belcher @ Innovate Toronto
-          start-time: 12:00:00.000Z
+          start-time: 14:00:00.000Z
           location: STORYS Building, 11 Duncan St, Toronto, ON M5V 3M2, Canada
           url: https://www.innovate.thetie.io/
           description: From Hype to Utility –– Where Crypto and AI Actually Make Sense
+          moderators:
+            - name: "Mauricio Di Bartolomeo "
+              company: Ledn
+          speakers:
+            - name: Marta Belcher
+              company: "Filecoin Foundation "
+            - name: "Paul Rapino "
+              company: Hedera Foundation
+            - name: "Leeor Groen "
+              company: The Spartan Group
+            - name: "Mark Mi "
+              company: NEAR
+          end-time: 14:30:00.000Z
+        - title: "Danny O'Brien @ AI Agent Summit "
+          description: Why AI Agents Need DePIN
+          start-time: 13:00:00.000Z
+          end-time: 14:00:00.000Z
+          location: Sheraton Centre Toronto Hotel
+          url: https://lu.ma/uhtwiuhx
     - date: 2025-05-16
       events:
         - title: Clara Tsao @ Consensus 2025
-          start-time: 10:00:00.000Z
+          start-time: 12:10:00.000Z
           location: Metro Toronto Convention Center
           url: https://consensus2025.coindesk.com/
+          description: Is Web3 Losing the AI Race?
+          moderators:
+            - name: "Jeff Wilser "
+              company: The People's AI" Podcast
+          speakers:
+            - name: Clara Tsao
+              company: "Filecoin Foundation "
+            - name: "Jesus Rodriguez "
+              company: IntoTheBlock
+            - name: "Ben Goertzel "
+              company: Artificial Superintelligence Alliance
+            - name: "Ben Fielding "
+              company: Gensyn
+          end-time: 12:30:00.000Z
         - title: Juan Benet @ Consensus 2025
           start-time: 10:00:00.000Z
           url: https://consensus2025.coindesk.com/
           location: Metro Toronto Convention Center
+        - title: "Danny O'Brien @ Consensus "
+          description: "Shattering the Silos: How to Scale Decentralized AI"
+          moderators:
+            - name: "Tricia Wang "
+              company: Decentralized AI Society
+          speakers:
+            - name: "Danny O'Brien "
+              company: Filecoin Foundation
+            - name: "Lisa Loud "
+              company: Secret Network
+            - name: "Nick Emmons "
+              company: Allora Labs
+          start-time: 14:30:00.000Z
+          end-time: 14:50:00.000Z
+          location: Summit Stage, Metro Toronto Convention Centre
+          url: https://consensus2025.coindesk.com/
 speakers:
   kicker: Connect with us
   title: Meet the team
