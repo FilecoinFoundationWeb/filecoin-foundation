@@ -165,6 +165,22 @@ schedule:
           start-time: 10:00:00.000Z
           url: https://consensus2025.coindesk.com/
           location: Metro Toronto Convention Center
+        - title: "Danny O'Brien @ Consensus "
+          description: "Shattering the Silos: How to Scale Decentralized AI"
+          moderators:
+            - name: "Tricia Wang "
+              company: Decentralized AI Society
+          speakers:
+            - name: "Danny O'Brien "
+              company: Filecoin Foundation
+            - name: "Lisa Loud "
+              company: Secret Network
+            - name: "Nick Emmons "
+              company: Allora Labs
+          start-time: 14:30:00.000Z
+          end-time: 14:50:00.000Z
+          location: Summit Stage, Metro Toronto Convention Centre
+          url: https://consensus2025.coindesk.com/
 speakers:
   kicker: Connect with us
   title: Meet the team
