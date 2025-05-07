@@ -42,7 +42,7 @@ export function Pagination({ pageCount }: PaginationProps) {
           className={
             'pagination-navigation-button flex items-center gap-x-1.5 p-1 px-2 transition'
           }
-          onClick={goToPrevPage}
+          onClick={() => setPage(page - 1)}
         >
           <Icon component={CaretLeft} size={20} weight="bold" />
           <span className="hidden sm:mx-1.5 sm:inline">Prev</span>
@@ -88,7 +88,7 @@ export function Pagination({ pageCount }: PaginationProps) {
           aria-disabled={!canGoForward}
           disabled={!canGoForward}
           className="pagination-navigation-button flex items-center gap-x-1.5 p-1 px-2 transition"
-          onClick={goToNextPage}
+          onClick={() => setPage(page + 1)}
         >
           <span className="hidden sm:mx-1.5 sm:inline">Next</span>
           <Icon component={CaretRight} size={20} weight="bold" />
@@ -96,16 +96,4 @@ export function Pagination({ pageCount }: PaginationProps) {
       </div>
     </nav>
   )
-
-  function goToPrevPage() {
-    if (canGoBack) {
-      setPage(page - 1)
-    }
-  }
-
-  function goToNextPage() {
-    if (canGoForward) {
-      setPage(page + 1)
-    }
-  }
 }
