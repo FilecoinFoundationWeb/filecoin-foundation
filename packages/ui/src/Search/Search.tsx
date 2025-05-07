@@ -1,63 +1,28 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useQueryState, parseAsString } from 'nuqs'
 
-import { useSearchParams } from 'next/navigation'
-import { useDebounceCallback } from 'usehooks-ts'
-
-import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
-import { DEFAULT_PAGE_NUMBER } from '@filecoin-foundation/utils/constants/paginationConstants'
-import {
-  PAGE_KEY,
-  SEARCH_KEY,
-} from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import { useResetPageQuery } from '@filecoin-foundation/hooks/useResetPageQuery'
+import { SEARCH_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 
 import { SearchInput } from '../SearchInput'
 
-import type { useSearch } from './useSearch'
+const DEFAULT_SEARCH_QUERY = ''
 
-export type SearchProps = {
-  query: ReturnType<typeof useSearch>['searchQuery']
-}
-
-const DEBOUNCE_DELAY = 400
-
-export function Search({ query }: SearchProps) {
-  const [value, setValue] = useState(query)
-  const params = useSearchParams()
-
-  useEffect(() => {
-    const searchIsReset = !query
-
-    if (searchIsReset) {
-      setValue('')
-    }
-  }, [query])
-
-  const { updateSearchParams } = useUpdateSearchParams()
-
-  const debouncedUpdateSearchParams = useDebounceCallback(
-    updateSearchParams,
-    DEBOUNCE_DELAY,
+export function Search() {
+  const [query, setQuery] = useQueryState(
+    SEARCH_KEY,
+    parseAsString
+      .withDefault(DEFAULT_SEARCH_QUERY)
+      .withOptions({ shallow: false }),
   )
 
-  function handleSearchChange(newValue: string) {
-    setValue(newValue)
+  const resetPageQuery = useResetPageQuery()
 
-    const existingPageParam = params.get(PAGE_KEY)
+  return <SearchInput query={query} onChange={setQueryAndResetPage} />
 
-    if (
-      existingPageParam &&
-      existingPageParam !== String(DEFAULT_PAGE_NUMBER)
-    ) {
-      debouncedUpdateSearchParams({
-        [SEARCH_KEY]: newValue,
-        [PAGE_KEY]: DEFAULT_PAGE_NUMBER,
-      })
-    } else {
-      debouncedUpdateSearchParams({ [SEARCH_KEY]: newValue })
-    }
+  function setQueryAndResetPage(newValue: string) {
+    setQuery(newValue)
+    resetPageQuery()
   }
-
-  return <SearchInput query={value || ''} onChange={handleSearchChange} />
 }

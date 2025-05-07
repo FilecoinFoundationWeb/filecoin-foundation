@@ -49,7 +49,7 @@ export function BlogContent({ posts }: BlogContentProps) {
   const clientSearchParams = useSearchParams()
   const searchParams = Object.fromEntries(clientSearchParams.entries())
 
-  const { searchQuery, searchResults } = useSearch({
+  const { searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: posts,
     searchBy: ['title', 'description'],
@@ -86,7 +86,7 @@ export function BlogContent({ posts }: BlogContentProps) {
       />
       <FilterContainer.MainWrapper>
         <FilterContainer.DesktopFilters
-          searchComponent={<Search query={searchQuery} />}
+          searchComponent={<Search />}
           sortComponent={
             <Sort
               query={query}
@@ -97,7 +97,7 @@ export function BlogContent({ posts }: BlogContentProps) {
         />
 
         <FilterContainer.MobileFiltersAndResults
-          searchComponent={<Search query={searchQuery} />}
+          searchComponent={<Search />}
           filterComponents={[
             <CategoryFilter
               key="category"

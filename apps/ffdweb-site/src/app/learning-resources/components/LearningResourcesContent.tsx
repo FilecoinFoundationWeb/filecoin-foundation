@@ -56,7 +56,7 @@ export function LearningResourcesContent({
   const clientSearchParams = useSearchParams()
   const searchParams = Object.fromEntries(clientSearchParams.entries())
 
-  const { searchQuery, searchResults } = useSearch({
+  const { searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: resources,
     searchBy: ['title', 'description'],
@@ -103,7 +103,7 @@ export function LearningResourcesContent({
       hasResults={Boolean(paginatedResults.length)}
       bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
       top={{
-        main: <Search query={searchQuery} />,
+        main: <Search />,
         secondary: (
           <FilterListbox
             selected={categoryOption}

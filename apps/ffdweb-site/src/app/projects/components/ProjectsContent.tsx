@@ -50,7 +50,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
   const clientSearchParams = useSearchParams()
   const searchParams = Object.fromEntries(clientSearchParams.entries())
 
-  const { searchQuery, searchResults } = useSearch({
+  const { searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: projects,
     searchBy: ['title', 'description'],
@@ -86,7 +86,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
       bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
       top={{
         main: <PartnershipToggleFilter />,
-        secondary: <Search query={searchQuery} />,
+        secondary: <Search />,
         tertiary: (
           <FilterListbox
             selected={categoryOption}

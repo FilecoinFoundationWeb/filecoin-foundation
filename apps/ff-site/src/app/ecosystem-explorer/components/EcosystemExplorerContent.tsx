@@ -50,7 +50,7 @@ export function EcosystemExplorerContent({
   searchParams,
   ecosystemProjects,
 }: EcosystemExplorerContentProps) {
-  const { searchQuery, searchResults } = useSearch({
+  const { searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: ecosystemProjects,
     searchBy: ['title', 'description'],
@@ -86,7 +86,7 @@ export function EcosystemExplorerContent({
       />
       <FilterContainer.MainWrapper>
         <FilterContainer.DesktopFilters
-          searchComponent={<Search query={searchQuery} />}
+          searchComponent={<Search />}
           sortComponent={
             <Sort
               query={query}
@@ -97,7 +97,7 @@ export function EcosystemExplorerContent({
         />
 
         <FilterContainer.MobileFiltersAndResults
-          searchComponent={<Search query={searchQuery} />}
+          searchComponent={<Search />}
           filterComponents={[
             <CategoryFiltersSlider key="category" categories={categoryTree} />,
           ]}

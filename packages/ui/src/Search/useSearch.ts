@@ -28,5 +28,5 @@ export function useSearch<Entry extends AnyObject>({
     })
   }, [entries, searchQuery, searchBy])
 
-  return { searchQuery, searchResults }
+  return { searchResults }
 }
