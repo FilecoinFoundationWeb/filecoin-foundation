@@ -89,6 +89,16 @@ schedule:
           end-time: 13:20:00.000Z
           location: Exploration Stage, Metro Toronto Convention Centre
           url: https://consensus2025.coindesk.com/
+        - title: "Danny O'Brien @ AI Agent Night "
+          description: Why AI Agents Need DePIN
+          speakers:
+            - name: "Danny O'Brien "
+              company: "Filecoin Foundation "
+          start-time: 16:00:00.000Z
+          end-time: 17:00:00.000Z
+          location: "PL x Filecoin Network Hub: 225 Richmond St W Suite 100, Toronto, ON
+            M5V 1W2, Canada"
+          url: https://lu.ma/lkcswk34?tk=nipAAi
     - date: 2025-05-15
       events:
         - title: Marta Belcher @ Innovate Toronto
