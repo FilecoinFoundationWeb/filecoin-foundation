@@ -47,7 +47,7 @@ export async function OrbitEventsSection({
     }
 
     return (
-      <div className="flex max-w-readable">
+      <div className="max-w-readable flex">
         <Button
           href={FILECOIN_FOUNDATION_URLS.orbit.eventsCalendar}
           baseDomain={BASE_DOMAIN}
@@ -65,7 +65,7 @@ type OrbitEventsProps = {
 }
 
 function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
-  const { searchQuery, searchResults } = useSearch({
+  const { searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: events,
     searchBy: ['title', 'city'],
@@ -80,7 +80,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
   return (
     <>
       <div className="lg:max-w-readable">
-        <Search query={searchQuery} />
+        <Search />
       </div>
 
       {paginatedResults.length === 0 ? (

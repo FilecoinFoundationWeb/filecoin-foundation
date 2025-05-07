@@ -47,7 +47,7 @@ export function BlogContent({ posts }: BlogContentProps) {
   const searchParams = Object.fromEntries(clientSearchParams.entries())
   const sortedPosts = sortPostsByDateDesc(posts)
 
-  const { searchQuery, searchResults } = useSearch({
+  const { searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: sortedPosts,
     searchBy: ['title', 'description'],
@@ -76,7 +76,7 @@ export function BlogContent({ posts }: BlogContentProps) {
       hasResults={Boolean(paginatedResults.length)}
       bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
       top={{
-        main: <Search query={searchQuery} />,
+        main: <Search />,
         secondary: (
           <FilterListbox
             selected={categoryOption}

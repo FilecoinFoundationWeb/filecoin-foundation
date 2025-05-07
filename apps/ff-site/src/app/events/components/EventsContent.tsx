@@ -51,7 +51,7 @@ export default function EventsContent({
   searchParams,
   events,
 }: EventsContentProps) {
-  const { searchQuery, searchResults } = useSearch({
+  const { searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: events,
     searchBy: ['title', 'location'],
@@ -94,14 +94,14 @@ export default function EventsContent({
       />
       <FilterContainer.MainWrapper>
         <FilterContainer.DesktopFilters
-          searchComponent={<Search query={searchQuery} />}
+          searchComponent={<Search />}
           sortComponent={<EventSort />}
           filterComponents={[
             <LocationFilter key="location" options={locationOptions} />,
           ]}
         />
         <FilterContainer.MobileFiltersAndResults
-          searchComponent={<Search query={searchQuery} />}
+          searchComponent={<Search />}
           sortComponent={<EventSort />}
           filterComponents={[
             <CategoryFilter
