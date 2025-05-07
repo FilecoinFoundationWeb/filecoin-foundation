@@ -55,6 +55,20 @@ schedule:
           start-time: 12:00:00.000Z
           url: https://www.futuristconference.com/
           location: Design Exchange Events Venue, 234 Bay St., Toronto, ON M5K 1B2, Canada
+        - title: Marta Belcher @ Blockchain Futurist Conference
+          description: >
+            Regulating Emerging Technologies with Marta Belcher, Hosted by Morva
+            Rohani
+          moderators:
+            - name: Morva Rohani
+              company: "Moderator: Morva Rohani (Canadian Web3 Council) "
+          speakers:
+            - name: Marta Belcher
+              company: "Filecoin Foundation "
+          url: https://www.futuristconference.com/
+          location: Design Exchange Events Venue
+          start-time: 13:00:00.000Z
+          end-time: 13:20:00.000Z
     - date: 2025-05-15
       events:
         - title: Marta Belcher @ Innovate Toronto
