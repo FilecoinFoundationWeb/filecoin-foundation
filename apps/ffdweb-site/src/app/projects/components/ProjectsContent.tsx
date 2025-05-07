@@ -74,7 +74,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
     defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
   })
 
-  const { currentPage, pageCount, paginatedResults } = usePagination({
+  const { pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: viewResults,
     entriesPerPage: 12,
@@ -83,7 +83,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
   return (
     <ProjectsFilterContainer
       hasResults={Boolean(paginatedResults.length)}
-      bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
+      bottom={<Pagination pageCount={pageCount} />}
       top={{
         main: <PartnershipToggleFilter />,
         secondary: <Search />,

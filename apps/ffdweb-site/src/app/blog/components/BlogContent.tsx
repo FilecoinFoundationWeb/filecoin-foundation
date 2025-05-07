@@ -65,7 +65,7 @@ export function BlogContent({ posts }: BlogContentProps) {
     defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
   })
 
-  const { currentPage, pageCount, paginatedResults } = usePagination({
+  const { pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: filteredEntries,
     entriesPerPage: 9,
@@ -74,7 +74,7 @@ export function BlogContent({ posts }: BlogContentProps) {
   return (
     <FilterContainer
       hasResults={Boolean(paginatedResults.length)}
-      bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
+      bottom={<Pagination pageCount={pageCount} />}
       top={{
         main: <Search />,
         secondary: (

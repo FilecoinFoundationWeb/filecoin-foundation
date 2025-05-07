@@ -27,5 +27,5 @@ export function usePagination<Entry extends AnyObject>({
     return entries.slice(firstPostIndex, lastPostIndex)
   }, [pageNumber, entriesPerPage, entries])
 
-  return { currentPage: pageNumber, pageCount, paginatedResults }
+  return { pageCount, paginatedResults }
 }
