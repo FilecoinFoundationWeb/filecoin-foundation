@@ -118,10 +118,23 @@ schedule:
     - date: 2025-05-15
       events:
         - title: Marta Belcher @ Innovate Toronto
-          start-time: 12:00:00.000Z
+          start-time: 14:00:00.000Z
           location: STORYS Building, 11 Duncan St, Toronto, ON M5V 3M2, Canada
           url: https://www.innovate.thetie.io/
           description: From Hype to Utility –– Where Crypto and AI Actually Make Sense
+          moderators:
+            - name: "Mauricio Di Bartolomeo "
+              company: Ledn
+          speakers:
+            - name: Marta Belcher
+              company: "Filecoin Foundation "
+            - name: "Paul Rapino "
+              company: Hedera Foundation
+            - name: "Leeor Groen "
+              company: The Spartan Group
+            - name: "Mark Mi "
+              company: NEAR
+          end-time: 14:30:00.000Z
     - date: 2025-05-16
       events:
         - title: Clara Tsao @ Consensus 2025
