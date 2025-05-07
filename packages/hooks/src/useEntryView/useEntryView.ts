@@ -9,7 +9,7 @@ import type { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import type { EntryViewConfig } from './types/entryViewTypes'
 
-type UseSortProps<
+type UseEntryViewProps<
   Entry extends AnyObject,
   Configs extends NonEmptyReadonlyArray<EntryViewConfig<Entry>>,
 > = {
@@ -27,7 +27,7 @@ export function useEntryView<
   entries,
   configs,
   defaultConfig = configs[0],
-}: UseSortProps<Entry, Configs>) {
+}: UseEntryViewProps<Entry, Configs>) {
   const viewId = useMemo(() => {
     const viewIds = configs.map((config) => config.id)
     const viewId = viewIds.find((id) => id === query)
@@ -41,9 +41,5 @@ export function useEntryView<
     return viewConfig.filterOrSortFn(entries)
   }, [configs, entries, viewId])
 
-  return {
-    query: viewId,
-    viewResults,
-    defaultQuery: defaultConfig.id,
-  }
+  return { viewResults }
 }

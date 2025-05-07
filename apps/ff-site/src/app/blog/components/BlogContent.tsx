@@ -55,7 +55,7 @@ export function BlogContent({ posts }: BlogContentProps) {
     searchBy: ['title', 'description'],
   })
 
-  const { query, viewResults, defaultQuery } = useEntryView({
+  const { viewResults } = useEntryView({
     query: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: entryViewConfigs,
@@ -87,30 +87,18 @@ export function BlogContent({ posts }: BlogContentProps) {
       <FilterContainer.MainWrapper>
         <FilterContainer.DesktopFilters
           searchComponent={<Search />}
-          sortComponent={
-            <Sort
-              query={query}
-              options={sortOptions}
-              defaultQuery={defaultQuery}
-            />
-          }
+          sortComponent={<Sort options={sortOptions} />}
         />
 
         <FilterContainer.MobileFiltersAndResults
           searchComponent={<Search />}
+          sortComponent={<Sort options={sortOptions} />}
           filterComponents={[
             <CategoryFilter
               key="category"
               options={categoryOptionsWithCount}
             />,
           ]}
-          sortComponent={
-            <Sort
-              query={query}
-              options={sortOptions}
-              defaultQuery={defaultQuery}
-            />
-          }
         />
         <FilterContainer.ContentWrapper>
           {filteredEntries.length === 0 ? (

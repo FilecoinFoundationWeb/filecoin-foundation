@@ -1,44 +1,35 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { parseAsString, useQueryState } from 'nuqs'
 
-import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import { SORT_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 
 import { SortListbox } from './SortListbox'
 
 type SortProps = {
-  query: string
   options: ReadonlyArray<OptionType>
-  defaultQuery: string
+  defaultOption?: OptionType
 }
 
-export function Sort({ query, options, defaultQuery }: SortProps) {
-  const [sortId, setSortId] = useState<OptionType['id']>(query)
-  const { updateSearchParams } = useUpdateSearchParams()
+export function Sort({ options, defaultOption = options[0] }: SortProps) {
+  const [optionId, setOptionId] = useQueryState<OptionType['id']>(
+    SORT_KEY,
+    parseAsString.withDefault(defaultOption.id).withOptions({ shallow: false }),
+  )
 
   const selectedOption =
-    options.find((option) => option.id === sortId) || options[0]
-
-  useEffect(() => {
-    const sortIsReset = query === defaultQuery
-
-    if (sortIsReset) {
-      setSortId(defaultQuery)
-    }
-  }, [query, defaultQuery])
-
-  function handleSortChange(newOption: OptionType) {
-    setSortId(newOption.id)
-    updateSearchParams({ [SORT_KEY]: newOption.id })
-  }
+    options.find((option) => option.id === optionId) || defaultOption
 
   return (
     <SortListbox
       options={options}
       selected={selectedOption}
-      onChange={handleSortChange}
+      onChange={setOption}
     />
   )
+
+  function setOption(newOption: OptionType) {
+    setOptionId(newOption.id)
+  }
 }
