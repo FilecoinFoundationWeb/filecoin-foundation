@@ -73,6 +73,22 @@ schedule:
           end-time: 10:35:00.000Z
           location: Exploration Stage, Metro Toronto Convention Centre
           url: https://consensus2025.coindesk.com/
+        - title: "Molly Mackinlay @ Consensus "
+          description: "DePIN's Next Chapter: Scaling Alternatives to Centralized Services"
+          moderators:
+            - name: "Benjamin Schiller "
+              company: CoinDesk
+          speakers:
+            - name: Molly Mackinlay
+              company: "Protocol Labs "
+            - name: Bill Lakeland
+              company: "Spexi "
+            - name: "Robin Wingardh "
+              company: Wingbits
+          start-time: 13:00:00.000Z
+          end-time: 13:20:00.000Z
+          location: Exploration Stage, Metro Toronto Convention Centre
+          url: https://consensus2025.coindesk.com/
     - date: 2025-05-15
       events:
         - title: Marta Belcher @ Innovate Toronto
