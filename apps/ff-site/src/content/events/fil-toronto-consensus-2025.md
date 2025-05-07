@@ -135,6 +135,12 @@ schedule:
             - name: "Mark Mi "
               company: NEAR
           end-time: 14:30:00.000Z
+        - title: "Danny O'Brien @ AI Agent Summit "
+          description: Why AI Agents Need DePIN
+          start-time: 13:00:00.000Z
+          end-time: 14:00:00.000Z
+          location: Sheraton Centre Toronto Hotel
+          url: https://lu.ma/uhtwiuhx
     - date: 2025-05-16
       events:
         - title: Clara Tsao @ Consensus 2025
