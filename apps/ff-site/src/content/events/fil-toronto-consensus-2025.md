@@ -291,6 +291,15 @@ sponsors:
         src: /assets/images/recall_wordmark_black.webp
       name: Recall
       website: https://recall.network/
+  second-tier:
+    - image:
+        src: /assets/images/250304-ccc-oshi_crystal-white.webp
+      website: https://www.cryptococounsel.com/
+      name: Crypto Co Counsel
+    - image:
+        src: /assets/images/logotype-square-transperent-white-.webp
+      name: "Impossible Cloud Network "
+      website: https://www.icn.global/
 seo:
   twitter:
     card: summary
