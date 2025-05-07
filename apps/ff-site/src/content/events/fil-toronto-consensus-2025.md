@@ -99,6 +99,22 @@ schedule:
           location: "PL x Filecoin Network Hub: 225 Richmond St W Suite 100, Toronto, ON
             M5V 1W2, Canada"
           url: https://lu.ma/lkcswk34?tk=nipAAi
+        - title: "Marta Belcher @ Consensus "
+          description: Privacy is Normal
+          moderators:
+            - name: Marta Belcher
+              company: "Filecoin Foundation "
+          speakers:
+            - name: "Josh Swihart "
+              company: Electric Coin Co.
+            - name: "Matthew Green "
+              company: Sealance
+            - name: "James Mudgett "
+              company: Brave
+          start-time: 14:50:00.000Z
+          end-time: 15:10:00.000Z
+          location: Summit Stage, Metro Toronto Convention Centre
+          url: https://consensus2025.coindesk.com/
     - date: 2025-05-15
       events:
         - title: Marta Belcher @ Innovate Toronto
