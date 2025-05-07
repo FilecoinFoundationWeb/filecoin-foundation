@@ -39,6 +39,14 @@ program:
         third-largest tech ecosystem and second-largest financial hub, Toronto
         unites global innovation with transformative technology leadership.
       external-link: https://consensus2025.coindesk.com/
+    - title: "Protocol Labs x Filecoin Network Hub at Consensus "
+      start-date: 2025-05-12
+      end-date: 2025-05-16
+      location: "Fifth Social Club "
+      external-link: https://lu.ma/g7vz0rt8
+      description: Join us at our coworking hub during Consensus 2025—hosted by
+        Filecoin Foundation and Polaris. It’s the perfect space to connect with
+        ecosystem teams, collaborate, and network throughout the week.
 schedule:
   kicker: Don't miss out
   title: Speaking engagements
