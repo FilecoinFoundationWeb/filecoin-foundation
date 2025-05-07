@@ -144,9 +144,23 @@ schedule:
     - date: 2025-05-16
       events:
         - title: Clara Tsao @ Consensus 2025
-          start-time: 10:00:00.000Z
+          start-time: 12:10:00.000Z
           location: Metro Toronto Convention Center
           url: https://consensus2025.coindesk.com/
+          description: Is Web3 Losing the AI Race?
+          moderators:
+            - name: "Jeff Wilser "
+              company: The People's AI" Podcast
+          speakers:
+            - name: Clara Tsao
+              company: "Filecoin Foundation "
+            - name: "Jesus Rodriguez "
+              company: IntoTheBlock
+            - name: "Ben Goertzel "
+              company: Artificial Superintelligence Alliance
+            - name: "Ben Fielding "
+              company: Gensyn
+          end-time: 12:30:00.000Z
         - title: Juan Benet @ Consensus 2025
           start-time: 10:00:00.000Z
           url: https://consensus2025.coindesk.com/
