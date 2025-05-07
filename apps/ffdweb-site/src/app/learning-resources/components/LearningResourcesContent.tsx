@@ -86,7 +86,7 @@ export function LearningResourcesContent({
     defaultOption: DEFAULT_RESOURCE_FILTER_OPTION,
   })
 
-  const { currentPage, pageCount, paginatedResults } = usePagination({
+  const { pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: filteredByResourceType,
   })
@@ -101,7 +101,7 @@ export function LearningResourcesContent({
   return (
     <FilterContainer
       hasResults={Boolean(paginatedResults.length)}
-      bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
+      bottom={<Pagination pageCount={pageCount} />}
       top={{
         main: <Search />,
         secondary: (

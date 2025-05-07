@@ -82,7 +82,7 @@ export default function EventsContent({
     entries: filteredEventsByLocation,
   })
 
-  const { currentPage, pageCount, paginatedResults } = usePagination({
+  const { pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: filteredEntries,
   })
@@ -187,7 +187,7 @@ export default function EventsContent({
                 })}
               </CardGrid>
               <FilterContainer.PaginationWrapper>
-                <Pagination pageCount={pageCount} currentPage={currentPage} />
+                <Pagination pageCount={pageCount} />
               </FilterContainer.PaginationWrapper>
             </>
           )}

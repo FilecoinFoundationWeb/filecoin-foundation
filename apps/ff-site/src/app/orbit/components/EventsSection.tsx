@@ -71,7 +71,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
     searchBy: ['title', 'city'],
   })
 
-  const { currentPage, pageCount, paginatedResults } = usePagination({
+  const { pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: searchResults,
     entriesPerPage: 8,
@@ -111,7 +111,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
           </CardGrid>
 
           <FilterContainer.PaginationWrapper>
-            <Pagination pageCount={pageCount} currentPage={currentPage} />
+            <Pagination pageCount={pageCount} />
           </FilterContainer.PaginationWrapper>
         </>
       )}
