@@ -1,6 +1,6 @@
 import { format } from 'date-fns'
 
-export function formatDate(date: Date, formatString = 'MMM d, yyyy') {
+export function formatDate(date: Date | string, formatString = 'MMM d, yyyy') {
   return format(date, formatString)
 }
 
@@ -23,4 +23,9 @@ export function getUTCMidnightToday() {
   return new Date(
     Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
   )
+}
+
+export function getTodayDateISO() {
+  const now = new Date()
+  return now.toISOString().split('T')[0]
 }

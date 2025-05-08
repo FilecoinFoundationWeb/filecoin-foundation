@@ -3,13 +3,12 @@ import { format } from 'date-fns'
 
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
-
 import { ISO_TIME_REGEX } from '@/schemas/DateTimeSchema'
 
 const PLACEHOLDER_DATE = '1970-01-01'
 
-export function formatShortDate(date: Date) {
-  return formatDate(date, 'EEE, MMM d')
+export function formatShortDate(isoDateString: string) {
+  return formatDate(new UTCDate(isoDateString), 'EEE, MMM d')
 }
 
 export function formatTime(isoTimeString: string) {

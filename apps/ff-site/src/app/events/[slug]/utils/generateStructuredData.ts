@@ -24,6 +24,8 @@ type GetLocationProps = {
   slug: Event['slug']
 }
 
+const ZERO_TIMESTAMP = 'T00:00:00.000Z'
+
 export function generateStructuredData(data: Event): WithContext<EventSchema> {
   const {
     slug,
@@ -53,8 +55,8 @@ export function generateStructuredData(data: Event): WithContext<EventSchema> {
     eventAttendanceMode,
     name: seo.title,
     description: description || seo.description,
-    startDate: startDate.toISOString(),
-    endDate: (endDate || startDate)?.toISOString(),
+    startDate: startDate + ZERO_TIMESTAMP,
+    endDate: (endDate || startDate) + ZERO_TIMESTAMP,
     location: eventLocation,
     image: image?.src,
     url: `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
