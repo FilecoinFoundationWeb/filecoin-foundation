@@ -25,7 +25,11 @@ export function getUTCMidnightToday() {
   )
 }
 
-export function getTodayDateISO() {
+export function getTodayISODateOnly() {
   const now = new Date()
-  return now.toISOString().split('T')[0]
+  return getISODateOnly(now)
+}
+
+export function getISODateOnly(date: Date) {
+  return date.toISOString().split('T')[0]
 }

@@ -1,6 +1,6 @@
 import { compareAsc, compareDesc, isAfter, isBefore } from 'date-fns'
 
-import { getTodayDateISO } from '@filecoin-foundation/utils/dateUtils'
+import { getTodayISODateOnly } from '@filecoin-foundation/utils/dateUtils'
 import type { NonEmptyMutableArray } from '@filecoin-foundation/utils/types/utilTypes'
 
 import type { Event } from '../types/eventType'
@@ -31,7 +31,7 @@ export function sortNonEmptyEventsAsc<
 }
 
 export function getUpcomingEvents<T extends DateFields>(events: Array<T>) {
-  const today = getTodayDateISO()
+  const today = getTodayISODateOnly()
 
   return sortEventsAsc(
     events.filter(({ startDate, endDate }) =>
@@ -41,7 +41,7 @@ export function getUpcomingEvents<T extends DateFields>(events: Array<T>) {
 }
 
 export function getPastEvents<T extends DateFields>(events: Array<T>) {
-  const today = getTodayDateISO()
+  const today = getTodayISODateOnly()
 
   return sortEventsDesc(
     events.filter(({ startDate, endDate }) =>
