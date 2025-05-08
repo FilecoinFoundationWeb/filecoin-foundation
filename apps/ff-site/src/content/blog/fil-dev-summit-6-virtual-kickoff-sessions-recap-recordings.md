@@ -86,9 +86,7 @@ Key Takeaways:
 
 Watch the Day 4 Playlist on YouTube
 
-https://www.youtube.com/playlist?list=PL_0VrY55uV1_TdJ__9MP6oyiyOUm95Ik1
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=mpvOEjezyKCcclYQ&amp;list=PL_0VrY55uV1_TdJ__9MP6oyiyOUm95Ik1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Day 5: Value Accrual & Funding: The Path to Sustainable Growth
 
@@ -105,7 +103,7 @@ Key Takeaways:
 
 Watch the Day 5 Playlist on YouTube
 
-https://www.youtube.com/playlist?list=PL_0VrY55uV199pUaBbS-cVgdzJBklliz5
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=DhvzDAM_q8Qc_Pgl&amp;list=PL_0VrY55uV199pUaBbS-cVgdzJBklliz5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Day 6: Governance & Community: Strengthening the Filecoin Network from Within
 
@@ -122,11 +120,7 @@ Key Takeaways:
 
 Watch the Day 6 Playlist on YouTube
 
-<https://www.youtube.com/playlist?list=PL_0VrY55uV18UxKJ9CmpHjBaet722Qemf>
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=hE1CETLrM5vX6AF6&amp;list=PL_0VrY55uV18UxKJ9CmpHjBaet722Qemf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Join us IRL in Toronto for FDS-6
 
