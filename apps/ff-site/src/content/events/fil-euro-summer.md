@@ -1,6 +1,6 @@
 ---
-title: FIL Euro Summer
-description: "FIL Euro Summer is here! From May to July 2025, we’re supporting
+title: FIL Euro Tour
+description: "FIL Euro Tour is here! From May to July 2025, we’re supporting
   Filecoin activations across Europe to empower the ecosystem to connect and
   collaborate. Join us this summer as we connect with local communities across
   Europe to build the future of decentralized technology. Let’s
@@ -15,7 +15,7 @@ location:
 start-date: 2025-05-09
 end-date: 2025-07-03
 image:
-  src: /assets/images/fil-euro-summer-webp.webp
+  src: /assets/images/fileurotour_hero-1-.webp
 program:
   kicker: Find us around Europe
   title: Featured Events
@@ -145,7 +145,7 @@ speakers:
     growing the Filecoin ecosystem. Reach out to marketing@fil.org to schedule a
     meeting and explore opportunities.
 seo:
-  description: "Join FIL Euro Summer 2025 — community-led Filecoin meetups,
+  description: "Join FIL Euro Tour 2025 — community-led Filecoin meetups,
     workshops & activations across Europe from May to July. Create, connect &
     celebrate. #FollowTheCorgi"
 ---
