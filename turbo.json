@@ -24,7 +24,11 @@
         ".env.production",
         ".env"
       ],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "apps/ff-site/src/app/_data/cmsConfigSchema.json"
+      ]
     },
     "dev": {
       "persistent": true,
