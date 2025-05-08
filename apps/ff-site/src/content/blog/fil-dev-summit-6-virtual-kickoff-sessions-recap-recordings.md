@@ -33,7 +33,7 @@ The kickoff day served as a level set for the community with a macro view of Fil
 
 ### Watch the Day 1 Playlist on YouTube
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ta1gIGYAoMlhUI7v&amp;list=PL_0VrY55uV1-KsX4rbD6ibLyMAiT-VBqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JxmaSoMm4Ms?si=cI4LgGGakabqlg2H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Day 2: Storage Adoption: Winning Clients, Scaling Demand, and Lessons from the Field
 
