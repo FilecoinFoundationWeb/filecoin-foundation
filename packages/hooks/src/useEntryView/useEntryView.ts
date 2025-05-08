@@ -29,10 +29,8 @@ export function useEntryView<
   defaultConfig = configs[0],
 }: UseEntryViewProps<Entry, Configs>) {
   const viewId = useMemo(() => {
-    const viewIds = configs.map((config) => config.id)
-    const viewId = viewIds.find((id) => id === query)
-
-    return viewId || defaultConfig.id
+    const config = configs.find((config) => config.id === query)
+    return config?.id || defaultConfig.id
   }, [configs, defaultConfig.id, query])
 
   const viewResults = useMemo(() => {
