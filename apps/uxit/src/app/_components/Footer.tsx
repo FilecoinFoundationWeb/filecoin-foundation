@@ -2,7 +2,8 @@ import { CopyrightText } from '@filecoin-foundation/ui/CopyrightText'
 
 export function Footer() {
   return (
-    <footer className="fixed right-0 bottom-0 left-0 border-t border-gray-200 bg-white py-4 text-center text-sm text-slate-500">
+    <footer className="mt-16 flex flex-col gap-6 text-center text-sm">
+      <hr className="text-neutral-400" />
       <CopyrightText siteName="UXIT · Filecoin Foundation" />
     </footer>
   )
