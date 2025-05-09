@@ -3,9 +3,10 @@ import { clsx } from 'clsx'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
-type ExternalTextLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-  href: string
-}
+export type ExternalTextLinkProps =
+  React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+    href: string
+  }
 
 export function ExternalTextLink({
   className,

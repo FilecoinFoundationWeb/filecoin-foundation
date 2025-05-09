@@ -1,49 +1,40 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-
-import { PATHS } from '@/constants/paths'
+import { Heading } from '@filecoin-foundation/ui/Heading'
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { Card } from '@/components/Card'
 import Header from '@/components/Header'
+
+import { homepageCards, otherResources } from './data/homepage'
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-16">
       <Header />
-      <CardGrid as="section" cols="smThree">
-        <Card
-          as="div"
-          title={{ text: 'Site Audit Reports' }}
-          description={{
-            text: 'Data-driven insights to improve usability across Filecoin network sites.',
-          }}
-          cta={{
-            href: PATHS.SITE_AUDIT_REPORTS.path,
-            text: 'View Reports',
-          }}
-        />
-        <Card
-          as="div"
-          title={{ text: 'UXIT Dogfooding Roadmap' }}
-          description={{
-            text: 'Track the status of dogfooding projects and explore what’s coming up next.',
-          }}
-          cta={{
-            href: 'https://filecoin.notion.site/Dogfooding-Roadmap-506b84a493d746e68b7c55dbd2a2d9d1',
-            text: 'View Roadmap',
-          }}
-        />
-        <Card
-          as="div"
-          title={{ text: 'UXIT Dogfooding Reports' }}
-          description={{
-            text: 'Explore detailed feedback and insights from recent dogfooding efforts across Filecoin products.',
-          }}
-          cta={{
-            href: 'https://filecoin.notion.site/Dogfooding-Reports-List-14e14075f5194995a5a1ba198c932613',
-            text: 'View Reports',
-          }}
-        />
+      <CardGrid as="section" cols="mdTwo">
+        {homepageCards.map(({ title, description, cta }) => (
+          <Card
+            key={title.text}
+            as="div"
+            title={title}
+            description={description}
+            cta={cta}
+          />
+        ))}
       </CardGrid>
+
+      <section className="flex flex-col gap-6">
+        <Heading tag="h3" variant="lg">
+          Other Resources
+        </Heading>
+        <div className="grid auto-cols-max gap-4">
+          {otherResources.map(({ href, children }) => (
+            <ExternalTextLink key={href} href={href}>
+              {children}
+            </ExternalTextLink>
+          ))}
+        </div>
+      </section>
     </div>
   )
 }

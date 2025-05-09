@@ -14,7 +14,11 @@
 @layer components {
   /* CARD */
   .card {
-    @apply bg-transparent hover:bg-indigo-50;
+    @apply rounded-md bg-transparent hover:bg-indigo-50;
+  }
+
+  .card-link {
+    @apply rounded-md;
   }
 
   /* SITE LAYOUT */
