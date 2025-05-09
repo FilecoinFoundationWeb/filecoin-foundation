@@ -8,7 +8,6 @@ type GridColumnConfig =
   | 'smThree'
   | 'mdThree'
   | 'lgThree'
-  | 'lgFour'
 
 type CardGridProps = {
   as: 'ul' | 'section' | 'div'
@@ -26,7 +25,6 @@ const extendedGridStyles: Record<GridColumnConfig, string> = {
   smThree: 'sm:grid-cols-3 sm:gap-6',
   mdThree: 'md:grid-cols-3 md:gap-6',
   lgThree: 'lg:grid-cols-3 lg:gap-6',
-  lgFour: 'lg:grid-cols-4 lg:gap-6',
 }
 
 export function CardGrid({
