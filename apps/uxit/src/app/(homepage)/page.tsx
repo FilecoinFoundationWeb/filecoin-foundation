@@ -1,4 +1,6 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { Heading } from '@filecoin-foundation/ui/Heading'
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { PATHS } from '@/constants/paths'
 
@@ -55,6 +57,24 @@ export default function Home() {
           }}
         />
       </CardGrid>
+
+      <section className="flex flex-col gap-6">
+        <Heading tag="h2" variant="lg">
+          Other Resources
+        </Heading>
+        <ul className="grid auto-cols-max gap-4">
+          <li>
+            <ExternalTextLink href="https://filecoin.notion.site/Minimum-Viable-Discoverability-Checklist-19a7631f28258017b602ef3ba4e92ae3?pvs=74">
+              Minimum Viable Discoverability Checklist
+            </ExternalTextLink>
+          </li>
+          <li>
+            <ExternalTextLink href="https://www.notion.so/filecoin/12-Most-Common-UX-Pitfalls-and-How-to-Avoid-Them-690880000000000000000000">
+              12 Most Common UX Pitfalls and How to Avoid Them
+            </ExternalTextLink>
+          </li>
+        </ul>
+      </section>
     </div>
   )
 }
