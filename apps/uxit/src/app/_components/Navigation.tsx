@@ -8,7 +8,7 @@ import Logo from '@/assets/branding/logo.svg'
 
 export function Navigation() {
   return (
-    <nav className="mb-16 flex justify-between gap-12 lg:items-center">
+    <nav className="mb-24 flex justify-between gap-12 lg:items-center">
       <Link
         className="focus:brand-outline h-fit w-fit"
         href={PATHS.HOME.path}
