@@ -43,7 +43,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: npx turbo run build --filter="./apps/${{ matrix.app }}"
         env:
           AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
           PERCY_TOKEN: ${{ (matrix.app == 'ff-site' && secrets.PERCY_TOKEN_FF_SITE) || secrets.PERCY_TOKEN_FFDWEB_SITE }}
