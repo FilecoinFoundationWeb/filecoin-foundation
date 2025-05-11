@@ -83,8 +83,8 @@
     "usehooks-ts": "^3.1.0"
   },
   "dependencies": {
-    "@radix-ui/react-popover": "^1.1.7",
-    "@radix-ui/react-tooltip": "^1.2.0",
+    "@radix-ui/react-popover": "^1.1.13",
+    "@radix-ui/react-tooltip": "^1.2.6",
     "next-plausible": "^3.12.4"
   }
 }
