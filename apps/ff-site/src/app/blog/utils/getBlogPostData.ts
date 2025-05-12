@@ -7,31 +7,41 @@ import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
 const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesContentPath as string
 
+type RawBlogPost = Awaited<
+  ReturnType<typeof getMarkdownData<typeof BlogPostFrontmatterSchema.shape>>
+>
+export type BlogPostData = Awaited<ReturnType<typeof transformBlogPostData>>
+
+const isDev = process.env.NODE_ENV === 'development'
+
+let cachedPosts: BlogPostData[] | null = null
+
 export async function getBlogPostData(slug: string) {
-  const data = await getBlogPostMarkdownData(slug)
-  return transformBlogPostData(data)
+  const posts = await getBlogPostsData()
+  const post = posts.find((post) => post.slug === slug)
+
+  if (!post) {
+    throw new Error(`Blog post with slug "${slug}" not found`)
+  }
+
+  return post
 }
 
 export async function getBlogPostsData() {
-  const allPosts = await getAllMarkdownData({
+  if (!isDev && cachedPosts) {
+    return cachedPosts
+  }
+
+  const posts = await getAllMarkdownData({
     directoryPath: BLOG_DIRECTORY_PATH,
     zodSchema: BlogPostFrontmatterSchema,
   })
 
-  return allPosts.map(transformBlogPostData)
+  cachedPosts = posts.map(transformBlogPostData)
+  return cachedPosts
 }
 
-function getBlogPostMarkdownData(slug: string) {
-  return getMarkdownData({
-    slug,
-    directoryPath: BLOG_DIRECTORY_PATH,
-    zodSchema: BlogPostFrontmatterSchema,
-  })
-}
-
-function transformBlogPostData(
-  post: Awaited<ReturnType<typeof getBlogPostMarkdownData>>,
-) {
+function transformBlogPostData(post: RawBlogPost) {
   return {
     ...post,
     seo: {
