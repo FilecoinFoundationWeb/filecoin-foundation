@@ -23,18 +23,21 @@ program:
       start-date: 2025-05-12
       end-date: 2025-05-13
       location: MaRS Center
-      description: FIL Dev Summit is a gathering of developers, builders, and engaged
+      description:
+        FIL Dev Summit is a gathering of developers, builders, and engaged
         community members who want to contribute to the core protocol and
         network evolution of Filecoin (think IPFS Thing, but bigger!). This
         summit is more than just a meetup—it's a place for meaningful and
         impactful conversations that help push Filecoin forward.
       external-link: https://www.fildev.io/FDS-6
-    - title: DePIN Exploration @ Consensus Toronto. Presented by CoinDesk, Sponsored
+    - title:
+        DePIN Exploration @ Consensus Toronto. Presented by CoinDesk, Sponsored
         by Filecoin Foundation
       start-date: 2025-05-14
       end-date: 2025-05-14
       location: Toronto, Canada
-      description: n 2025, Consensus brings its flagship event to Toronto, where the
+      description:
+        In 2025, Consensus brings its flagship event to Toronto, where the
         world's first Bitcoin and Ethereum ETFs were born. As North America's
         third-largest tech ecosystem and second-largest financial hub, Toronto
         unites global innovation with transformative technology leadership.
@@ -59,65 +62,66 @@ schedule:
             Rohani
           moderators:
             - name: Morva Rohani
-              company: "Moderator: Morva Rohani (Canadian Web3 Council) "
+              company: "Moderator: Morva Rohani (Canadian Web3 Council)"
           speakers:
             - name: Marta Belcher
-              company: "Filecoin Foundation "
+              company: "Filecoin Foundation"
           url: https://www.futuristconference.com/
           location: Design Exchange Events Venue
           start-time: 13:00:00.000Z
           end-time: 13:20:00.000Z
     - date: 2025-05-14
       events:
-        - title: "Marta Belcher @ Consensus "
+        - title: "Marta Belcher @ Consensus"
           description: "U.S. Crypto Policy: Shaping the Future of Digital Assets"
           moderators:
-            - name: "Nikhilesh De "
+            - name: "Nikhilesh De"
               company: CoinDesk
           speakers:
             - name: Marta Belcher
-              company: "Filecoin Foundation "
+              company: "Filecoin Foundation"
           start-time: 10:15:00.000Z
           end-time: 10:35:00.000Z
           location: Exploration Stage, Metro Toronto Convention Centre
           url: https://consensus2025.coindesk.com/
-        - title: "Molly Mackinlay @ Consensus "
+        - title: "Molly Mackinlay @ Consensus"
           description: "DePIN's Next Chapter: Scaling Alternatives to Centralized Services"
           moderators:
-            - name: "Benjamin Schiller "
+            - name: "Benjamin Schiller"
               company: CoinDesk
           speakers:
             - name: Molly Mackinlay
-              company: "Protocol Labs "
+              company: "Protocol Labs"
             - name: Bill Lakeland
-              company: "Spexi "
-            - name: "Robin Wingardh "
+              company: "Spexi"
+            - name: "Robin Wingardh"
               company: Wingbits
           start-time: 13:00:00.000Z
           end-time: 13:20:00.000Z
           location: Exploration Stage, Metro Toronto Convention Centre
           url: https://consensus2025.coindesk.com/
-        - title: "Danny O'Brien @ AI Agent Night "
+        - title: "Danny O'Brien @ AI Agent Night"
           description: Why AI Agents Need DePIN
           speakers:
-            - name: "Danny O'Brien "
-              company: "Filecoin Foundation "
+            - name: "Danny O'Brien"
+              company: "Filecoin Foundation"
           start-time: 16:00:00.000Z
           end-time: 17:00:00.000Z
-          location: "PL x Filecoin Network Hub: 225 Richmond St W Suite 100, Toronto, ON
+          location:
+            "PL x Filecoin Network Hub: 225 Richmond St W Suite 100, Toronto, ON
             M5V 1W2, Canada"
           url: https://lu.ma/lkcswk34?tk=nipAAi
-        - title: "Marta Belcher @ Consensus "
+        - title: "Marta Belcher @ Consensus"
           description: Privacy is Normal
           moderators:
             - name: Marta Belcher
-              company: "Filecoin Foundation "
+              company: "Filecoin Foundation"
           speakers:
-            - name: "Josh Swihart "
+            - name: "Josh Swihart"
               company: Electric Coin Co.
-            - name: "Matthew Green "
+            - name: "Matthew Green"
               company: Sealance
-            - name: "James Mudgett "
+            - name: "James Mudgett"
               company: Brave
           start-time: 14:50:00.000Z
           end-time: 15:10:00.000Z
@@ -131,19 +135,19 @@ schedule:
           url: https://www.innovate.thetie.io/
           description: From Hype to Utility –– Where Crypto and AI Actually Make Sense
           moderators:
-            - name: "Mauricio Di Bartolomeo "
+            - name: "Mauricio Di Bartolomeo"
               company: Ledn
           speakers:
             - name: Marta Belcher
-              company: "Filecoin Foundation "
-            - name: "Paul Rapino "
+              company: "Filecoin Foundation"
+            - name: "Paul Rapino"
               company: Hedera Foundation
-            - name: "Leeor Groen "
+            - name: "Leeor Groen"
               company: The Spartan Group
-            - name: "Mark Mi "
+            - name: "Mark Mi"
               company: NEAR
           end-time: 14:30:00.000Z
-        - title: "Danny O'Brien @ AI Agent Summit "
+        - title: "Danny O'Brien @ AI Agent Summit"
           description: Why AI Agents Need DePIN
           start-time: 13:00:00.000Z
           end-time: 14:00:00.000Z
@@ -157,33 +161,33 @@ schedule:
           url: https://consensus2025.coindesk.com/
           description: Is Web3 Losing the AI Race?
           moderators:
-            - name: "Jeff Wilser "
+            - name: "Jeff Wilser"
               company: The People's AI" Podcast
           speakers:
             - name: Clara Tsao
-              company: "Filecoin Foundation "
-            - name: "Jesus Rodriguez "
+              company: "Filecoin Foundation"
+            - name: "Jesus Rodriguez"
               company: IntoTheBlock
-            - name: "Ben Goertzel "
+            - name: "Ben Goertzel"
               company: Artificial Superintelligence Alliance
-            - name: "Ben Fielding "
+            - name: "Ben Fielding"
               company: Gensyn
           end-time: 12:30:00.000Z
         - title: Juan Benet @ Consensus 2025
           start-time: 10:00:00.000Z
           url: https://consensus2025.coindesk.com/
           location: Metro Toronto Convention Center
-        - title: "Danny O'Brien @ Consensus "
+        - title: "Danny O'Brien @ Consensus"
           description: "Shattering the Silos: How to Scale Decentralized AI"
           moderators:
-            - name: "Tricia Wang "
+            - name: "Tricia Wang"
               company: Decentralized AI Society
           speakers:
-            - name: "Danny O'Brien "
+            - name: "Danny O'Brien"
               company: Filecoin Foundation
-            - name: "Lisa Loud "
+            - name: "Lisa Loud"
               company: Secret Network
-            - name: "Nick Emmons "
+            - name: "Nick Emmons"
               company: Allora Labs
           start-time: 14:30:00.000Z
           end-time: 14:50:00.000Z
@@ -248,7 +252,7 @@ speakers:
       image:
         src: /assets/images/meghan-gavis.jpg
     - name: Meredith Pallante
-      title: "Chief Experience Officer "
+      title: Chief Experience Officer
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/meredith-pallante-cem-cmp-7270549/
       image:
@@ -283,7 +287,7 @@ sponsors:
         src: /assets/images/glif-logo.webp
       name: GLIF
       website: https://www.glif.io/en
-    - name: "Secured Finance "
+    - name: Secured Finance
       website: https://secured.finance/
       image:
         src: /assets/images/660732963cc8098d637f66b8_securedfinance.png
@@ -297,14 +301,15 @@ sponsors:
       website: https://www.cryptococounsel.com/
       name: Crypto Co Counsel
     - image:
-        src: /assets/images/logotype-white-1.webp
+        src: /assets/images/impossible-cloud-network-logo.webp
       name: Impossible Cloud Network
       website: https://www.icn.global/
 seo:
   twitter:
     card: summary
   title: FIL Toronto @ Consensus 2025
-  description: The Filecoin community is heading to Consensus in Toronto! Connect
+  description:
+    The Filecoin community is heading to Consensus in Toronto! Connect
     with the ecosystem, explore the latest updates, and help build the
     decentralized web. Stay tuned for community events and ways to engage on the
     ground.
