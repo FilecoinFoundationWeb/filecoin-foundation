@@ -40,7 +40,8 @@ jobs:
         run: npm install --prefer-offline || npm install --prefer-offline
 
       - name: Build Project
-        run: npm run build
+        working-directory: .
+        run: npx turbo run build --filter="./apps/${{ matrix.app }}"
 
       - name: Start Server
         run: |
