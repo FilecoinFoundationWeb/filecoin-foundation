@@ -23,7 +23,7 @@ export function Pagination({ pageCount }: PaginationProps) {
   )
 
   const range = useResponsiveRange()
-  const visiblePages = useVisiblePages(pageCount, page, range)
+  const visiblePages = useVisiblePages({ pageCount, currentPage: page, range })
 
   const canGoBack = page > 1
   const canGoForward = page < pageCount

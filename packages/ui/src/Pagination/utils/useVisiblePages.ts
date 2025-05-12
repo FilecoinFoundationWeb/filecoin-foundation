@@ -1,14 +1,22 @@
 import { useMemo } from 'react'
 
+export const ELLIPSIS = '...'
+
+// TODO: Find a way to test this as well. Export the constants and use them in the tests.
 const DISTANCE_FROM_START = 3
 const DISTANCE_FROM_END = 2
-const ELLIPSIS = '...'
 
-export function useVisiblePages(
-  pageCount: number,
-  currentPage: number,
-  range: number,
-) {
+type UseVisiblePagesOptions = {
+  pageCount: number
+  currentPage: number
+  range: number
+}
+
+export function useVisiblePages({
+  pageCount,
+  currentPage,
+  range,
+}: UseVisiblePagesOptions) {
   if (range <= 0) {
     throw new Error('range must be greater than 0')
   }
@@ -20,7 +28,7 @@ export function useVisiblePages(
   const needsEllipsis = pageNumbers.length > range
   if (!needsEllipsis) return pageNumbers
 
-  if (range <= 4) {
+  if (range <= 5) {
     return getVisiblePagesSmallRange(pageNumbers, currentPage, range)
   }
 
@@ -69,10 +77,21 @@ function getMiddlePages(
   const remainingArraySlots = range - 4
   const currentPageIndex = pageNumbers.indexOf(currentPage)
 
-  return pageNumbers.slice(
-    currentPageIndex - Math.floor(remainingArraySlots / 2),
-    currentPageIndex + Math.ceil(remainingArraySlots / 2),
-  )
+  const startIndex = currentPageIndex - Math.floor(remainingArraySlots / 2)
+  const endIndex = currentPageIndex + Math.ceil(remainingArraySlots / 2)
+
+  if (startIndex <= 2) {
+    return pageNumbers.slice(2, remainingArraySlots + 2)
+  }
+
+  if (pageNumbers.length - endIndex <= 2) {
+    return pageNumbers.slice(
+      pageNumbers.length - remainingArraySlots - 2,
+      pageNumbers.length - 2,
+    )
+  }
+
+  return pageNumbers.slice(startIndex, endIndex)
 }
 
 function getVisiblePagesSmallRange(
@@ -111,6 +130,24 @@ function getVisiblePagesSmallRange(
       } else {
         return [firstPage, currentPage, ELLIPSIS, lastPage]
       }
+
+    case 5: {
+      if (currentPage === firstPage) {
+        return [firstPage, currentPage + 1, currentPage + 2, ELLIPSIS, lastPage]
+      } else if (currentPage === firstPage + 1) {
+        return [firstPage, currentPage, currentPage + 1, ELLIPSIS, lastPage]
+      } else if (currentPage === firstPage + 2) {
+        return [firstPage, currentPage - 1, currentPage, ELLIPSIS, lastPage]
+      } else if (currentPage === lastPage) {
+        return [firstPage, ELLIPSIS, currentPage - 2, currentPage - 1, lastPage]
+      } else if (currentPage === lastPage - 1) {
+        return [firstPage, ELLIPSIS, currentPage - 1, currentPage, lastPage]
+      } else if (currentPage === lastPage - 2) {
+        return [firstPage, ELLIPSIS, currentPage, lastPage - 1, lastPage]
+      } else {
+        return [firstPage, ELLIPSIS, currentPage, ELLIPSIS, lastPage]
+      }
+    }
 
     default:
       throw new Error(
