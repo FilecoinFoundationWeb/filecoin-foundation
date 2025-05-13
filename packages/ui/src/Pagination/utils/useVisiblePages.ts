@@ -2,10 +2,6 @@ import { useMemo } from 'react'
 
 export const ELLIPSIS = '...'
 
-// TODO: Find a way to test this as well. Export the constants and use them in the tests.
-const DISTANCE_FROM_START = 3
-const DISTANCE_FROM_END = 2
-
 type UseVisiblePagesOptions = {
   pageCount: number
   currentPage: number
@@ -29,19 +25,28 @@ export function useVisiblePages({
   if (!needsEllipsis) return pageNumbers
 
   if (range <= 5) {
-    return getVisiblePagesSmallRange(pageNumbers, currentPage, range)
+    return getVisiblePagesSmallRange({ pageNumbers, currentPage, range })
   }
 
-  return getVisiblePages(pageNumbers, currentPage, range)
+  return getVisiblePages({ pageNumbers, currentPage, range })
 }
 
-function getVisiblePages(
-  pageNumbers: Array<number>,
-  currentPage: number,
-  range: number,
-) {
-  const needsStartEllipsis = currentPage - DISTANCE_FROM_START > 0
-  const needsEndEllipsis = currentPage + DISTANCE_FROM_END < pageNumbers.length
+type GetVisiblePagesOptions = {
+  pageNumbers: Array<number>
+  currentPage: number
+  range: number
+}
+
+function getVisiblePages({
+  pageNumbers,
+  currentPage,
+  range,
+}: GetVisiblePagesOptions) {
+  const DISTANCE_FROM_BOUNDARY = 3
+
+  const needsStartEllipsis = currentPage - DISTANCE_FROM_BOUNDARY > 0
+  const needsEndEllipsis =
+    currentPage + DISTANCE_FROM_BOUNDARY < pageNumbers.length
 
   const firstPage = pageNumbers[0]
   const lastPage = pageNumbers[pageNumbers.length - 1]
@@ -63,42 +68,47 @@ function getVisiblePages(
   return [
     firstPage,
     ELLIPSIS,
-    ...getMiddlePages(pageNumbers, currentPage, range),
+    ...getMiddlePages({ pageNumbers, currentPage, range }),
     ELLIPSIS,
     lastPage,
   ]
 }
 
-function getMiddlePages(
-  pageNumbers: Array<number>,
-  currentPage: number,
-  range: number,
-) {
+function getMiddlePages({
+  pageNumbers,
+  currentPage,
+  range,
+}: GetVisiblePagesOptions) {
+  const DISTANCE_FROM_BOUNDARY = 2
+
   const remainingArraySlots = range - 4
   const currentPageIndex = pageNumbers.indexOf(currentPage)
 
   const startIndex = currentPageIndex - Math.floor(remainingArraySlots / 2)
   const endIndex = currentPageIndex + Math.ceil(remainingArraySlots / 2)
 
-  if (startIndex <= 2) {
-    return pageNumbers.slice(2, remainingArraySlots + 2)
+  if (startIndex <= DISTANCE_FROM_BOUNDARY) {
+    return pageNumbers.slice(
+      DISTANCE_FROM_BOUNDARY,
+      remainingArraySlots + DISTANCE_FROM_BOUNDARY,
+    )
   }
 
-  if (pageNumbers.length - endIndex <= 2) {
+  if (pageNumbers.length - endIndex <= DISTANCE_FROM_BOUNDARY) {
     return pageNumbers.slice(
-      pageNumbers.length - remainingArraySlots - 2,
-      pageNumbers.length - 2,
+      pageNumbers.length - remainingArraySlots - DISTANCE_FROM_BOUNDARY,
+      pageNumbers.length - DISTANCE_FROM_BOUNDARY,
     )
   }
 
   return pageNumbers.slice(startIndex, endIndex)
 }
 
-function getVisiblePagesSmallRange(
-  pageNumbers: Array<number>,
-  currentPage: number,
-  range: number,
-) {
+function getVisiblePagesSmallRange({
+  pageNumbers,
+  currentPage,
+  range,
+}: GetVisiblePagesOptions) {
   const firstPage = pageNumbers[0]
   const lastPage = pageNumbers[pageNumbers.length - 1]
 

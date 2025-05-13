@@ -251,16 +251,7 @@ describe('useVisiblePages', () => {
       const { result } = renderHook(() =>
         useVisiblePages({ pageCount: 20, currentPage: 17, range: 8 }),
       )
-      expect(result.current).toEqual([
-        1,
-        ELLIPSIS,
-        15,
-        16,
-        17,
-        18,
-        ELLIPSIS,
-        20,
-      ])
+      expect(result.current).toEqual([1, ELLIPSIS, 15, 16, 17, 18, 19, 20])
     })
 
     it('should show correct pages when range is 10 and current page is in middle', () => {
