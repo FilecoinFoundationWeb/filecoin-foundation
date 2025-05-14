@@ -1,14 +1,18 @@
 import { useMemo } from 'react'
 
-const DISTANCE_FROM_START = 3
-const DISTANCE_FROM_END = 2
-const ELLIPSIS = '...'
+export const ELLIPSIS = '...'
 
-export function useVisiblePages(
-  pageCount: number,
-  currentPage: number,
-  range: number,
-) {
+type UseVisiblePagesOptions = {
+  pageCount: number
+  currentPage: number
+  range: number
+}
+
+export function useVisiblePages({
+  pageCount,
+  currentPage,
+  range,
+}: UseVisiblePagesOptions) {
   if (range <= 0) {
     throw new Error('range must be greater than 0')
   }
@@ -20,20 +24,29 @@ export function useVisiblePages(
   const needsEllipsis = pageNumbers.length > range
   if (!needsEllipsis) return pageNumbers
 
-  if (range <= 4) {
-    return getVisiblePagesSmallRange(pageNumbers, currentPage, range)
+  if (range <= 5) {
+    return getVisiblePagesSmallRange({ pageNumbers, currentPage, range })
   }
 
-  return getVisiblePages(pageNumbers, currentPage, range)
+  return getVisiblePages({ pageNumbers, currentPage, range })
 }
 
-function getVisiblePages(
-  pageNumbers: Array<number>,
-  currentPage: number,
-  range: number,
-) {
-  const needsStartEllipsis = currentPage - DISTANCE_FROM_START > 0
-  const needsEndEllipsis = currentPage + DISTANCE_FROM_END < pageNumbers.length
+type GetVisiblePagesOptions = {
+  pageNumbers: Array<number>
+  currentPage: number
+  range: number
+}
+
+function getVisiblePages({
+  pageNumbers,
+  currentPage,
+  range,
+}: GetVisiblePagesOptions) {
+  const DISTANCE_FROM_BOUNDARY = 3
+
+  const needsStartEllipsis = currentPage - DISTANCE_FROM_BOUNDARY > 0
+  const needsEndEllipsis =
+    currentPage + DISTANCE_FROM_BOUNDARY < pageNumbers.length
 
   const firstPage = pageNumbers[0]
   const lastPage = pageNumbers[pageNumbers.length - 1]
@@ -55,31 +68,47 @@ function getVisiblePages(
   return [
     firstPage,
     ELLIPSIS,
-    ...getMiddlePages(pageNumbers, currentPage, range),
+    ...getMiddlePages({ pageNumbers, currentPage, range }),
     ELLIPSIS,
     lastPage,
   ]
 }
 
-function getMiddlePages(
-  pageNumbers: Array<number>,
-  currentPage: number,
-  range: number,
-) {
+function getMiddlePages({
+  pageNumbers,
+  currentPage,
+  range,
+}: GetVisiblePagesOptions) {
+  const DISTANCE_FROM_BOUNDARY = 2
+
   const remainingArraySlots = range - 4
   const currentPageIndex = pageNumbers.indexOf(currentPage)
 
-  return pageNumbers.slice(
-    currentPageIndex - Math.floor(remainingArraySlots / 2),
-    currentPageIndex + Math.ceil(remainingArraySlots / 2),
-  )
+  const startIndex = currentPageIndex - Math.floor(remainingArraySlots / 2)
+  const endIndex = currentPageIndex + Math.ceil(remainingArraySlots / 2)
+
+  if (startIndex <= DISTANCE_FROM_BOUNDARY) {
+    return pageNumbers.slice(
+      DISTANCE_FROM_BOUNDARY,
+      remainingArraySlots + DISTANCE_FROM_BOUNDARY,
+    )
+  }
+
+  if (pageNumbers.length - endIndex <= DISTANCE_FROM_BOUNDARY) {
+    return pageNumbers.slice(
+      pageNumbers.length - remainingArraySlots - DISTANCE_FROM_BOUNDARY,
+      pageNumbers.length - DISTANCE_FROM_BOUNDARY,
+    )
+  }
+
+  return pageNumbers.slice(startIndex, endIndex)
 }
 
-function getVisiblePagesSmallRange(
-  pageNumbers: Array<number>,
-  currentPage: number,
-  range: number,
-) {
+function getVisiblePagesSmallRange({
+  pageNumbers,
+  currentPage,
+  range,
+}: GetVisiblePagesOptions) {
   const firstPage = pageNumbers[0]
   const lastPage = pageNumbers[pageNumbers.length - 1]
 
@@ -111,6 +140,24 @@ function getVisiblePagesSmallRange(
       } else {
         return [firstPage, currentPage, ELLIPSIS, lastPage]
       }
+
+    case 5: {
+      if (currentPage === firstPage) {
+        return [firstPage, currentPage + 1, currentPage + 2, ELLIPSIS, lastPage]
+      } else if (currentPage === firstPage + 1) {
+        return [firstPage, currentPage, currentPage + 1, ELLIPSIS, lastPage]
+      } else if (currentPage === firstPage + 2) {
+        return [firstPage, currentPage - 1, currentPage, ELLIPSIS, lastPage]
+      } else if (currentPage === lastPage) {
+        return [firstPage, ELLIPSIS, currentPage - 2, currentPage - 1, lastPage]
+      } else if (currentPage === lastPage - 1) {
+        return [firstPage, ELLIPSIS, currentPage - 1, currentPage, lastPage]
+      } else if (currentPage === lastPage - 2) {
+        return [firstPage, ELLIPSIS, currentPage, lastPage - 1, lastPage]
+      } else {
+        return [firstPage, ELLIPSIS, currentPage, ELLIPSIS, lastPage]
+      }
+    }
 
     default:
       throw new Error(
