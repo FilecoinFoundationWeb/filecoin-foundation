@@ -1,7 +1,7 @@
 import {
   createMetadata as sharedCreateMetadata,
   type MetadataParams as SharedMetadataParams,
-} from '@filecoin-foundation/utils/createMetaData'
+} from '@filecoin-foundation/utils/createMetadata'
 
 import { FFDW_URLS, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
