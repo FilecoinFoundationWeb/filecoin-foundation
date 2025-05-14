@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-16">
       <Header />
+      <p>Hello</p>
       <CardGrid as="section" cols="mdTwo">
         {homepageCards.map(({ title, description, cta }) => (
           <Card
