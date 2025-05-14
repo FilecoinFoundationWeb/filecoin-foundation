@@ -18,7 +18,7 @@ export type MetadataParams = Omit<
 export function createMetadata(args: MetadataParams) {
   return sharedCreateMetadata({
     ...args,
-    fallbackImage: graphicsData.homepage.data.src,
+    fallbackImage: graphicsData.home.data.src,
     orgName: ORGANIZATION_NAME,
     orgHandle: FILECOIN_FOUNDATION_URLS.social.twitter.handle,
   })
