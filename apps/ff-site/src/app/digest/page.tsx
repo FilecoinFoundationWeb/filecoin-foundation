@@ -26,14 +26,6 @@ import { getDigestArticlesData } from './utils/getDigestArticleData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.digest.data.src,
-  },
-  path: PATHS.DIGEST.path,
-})
-
 export default async function Digest() {
   const articles = await getDigestArticlesData()
 
@@ -113,3 +105,10 @@ export default async function Digest() {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: seo.title,
+  description: seo.description,
+  image: graphicsData.digest.data.src,
+  path: PATHS.DIGEST.path,
+})

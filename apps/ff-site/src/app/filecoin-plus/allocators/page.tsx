@@ -19,12 +19,6 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
-export const metadata = createMetadata({
-  seo,
-  path: PATHS.ALLOCATORS.path,
-  overrideDefaultTitle: true,
-})
-
 export default function Allocators() {
   return (
     <PageLayout>
@@ -41,3 +35,10 @@ export default function Allocators() {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: seo.title },
+  description: seo.description,
+  image: graphicsData.filPlusAllocators.data.src,
+  path: PATHS.ALLOCATORS.path,
+})

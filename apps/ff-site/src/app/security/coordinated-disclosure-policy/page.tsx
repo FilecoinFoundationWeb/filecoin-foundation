@@ -14,12 +14,6 @@ const { attributes, body } = MarkdownPageSchema.parse(
   coordinatedDisclosurePolicyMarkdown,
 )
 
-export const metadata = createMetadata({
-  seo: attributes.seo,
-  path: PATHS.COORDINATED_DISCLOSURE_POLICY.path,
-  overrideDefaultTitle: true,
-})
-
 export default function CoordinatedDisclosurePolicy() {
   return (
     <MarkdownPage
@@ -30,3 +24,10 @@ export default function CoordinatedDisclosurePolicy() {
     </MarkdownPage>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: attributes.seo.title },
+  description: attributes.seo.description,
+  image: attributes.seo.image,
+  path: PATHS.COORDINATED_DISCLOSURE_POLICY.path,
+})

@@ -22,15 +22,6 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.governance2.data.src,
-  },
-  path: PATHS.GOVERNANCE.path,
-  overrideDefaultTitle: true,
-})
-
 export default function Governance() {
   return (
     <PageLayout>
@@ -84,3 +75,10 @@ export default function Governance() {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: seo.title },
+  description: seo.description,
+  image: graphicsData.governance2.data.src,
+  path: PATHS.GOVERNANCE.path,
+})

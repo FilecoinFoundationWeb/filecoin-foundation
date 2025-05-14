@@ -5,7 +5,7 @@ import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
-import { type DynamicPathValues, PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -80,10 +80,9 @@ export async function generateMetadata(props: BlogPostProps) {
   const data = await getBlogPostData(slug)
 
   return createMetadata({
-    seo: {
-      ...data.seo,
-      image: data.image?.src || graphicsData.blog.data.src,
-    },
-    path: `${PATHS.BLOG.path}/${data.slug}` as DynamicPathValues,
+    title: data.seo.title,
+    description: data.seo.description,
+    image: data.image?.src || graphicsData.blog.data.src,
+    path: `${PATHS.BLOG.path}/${data.slug}`,
   })
 }
