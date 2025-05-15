@@ -1,19 +1,8 @@
 import { z } from 'zod'
 
-const TwitterCardType = z.enum(['summary', 'summary_large_image', 'player'])
-
-const TwitterMetadataSchema = z
-  .object({
-    card: TwitterCardType.optional(),
-    site: z.string().optional(),
-    creator: z.string().optional(),
-  })
-  .strict()
-
 const BaseSeoMetadataSchema = z
   .object({
     description: z.string().max(220),
-    twitter: TwitterMetadataSchema.optional(),
   })
   .strict()
 
