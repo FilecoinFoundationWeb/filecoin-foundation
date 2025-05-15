@@ -63,6 +63,7 @@ export default async function Home() {
     <NoBreadCrumbsLayout>
       <PageLayout>
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
+        <p>Hello</p>
         <PageHeader
           title={header.title}
           description={{ text: header.description }}
