@@ -70,5 +70,6 @@ export async function generateMetadata(props: DigestArticleProps) {
     description: data.seo.description,
     image: data.image?.src || graphicsData.digest.data.src,
     path: `${PATHS.DIGEST.path}/${data.slug}`,
+    openGraph: { type: 'article' },
   })
 }
