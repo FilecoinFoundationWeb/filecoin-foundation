@@ -4,7 +4,7 @@ import { FILECOIN_LAUNCH_YEAR } from '@/ecosystem-explorer/project-form/utils/ge
 
 const currentYear = new Date().getFullYear()
 
-export const YearJoinedSchema = z
+export const YearJoinedSchema = z.coerce
   .number()
   .int()
   .min(FILECOIN_LAUNCH_YEAR)
