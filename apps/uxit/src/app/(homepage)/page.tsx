@@ -2,6 +2,10 @@ import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
+import { PATHS } from '@/constants/paths'
+
+import { createMetadata } from '@/utils/createMetadata'
+
 import { Card } from '@/components/Card'
 import Header from '@/components/Header'
 
@@ -38,3 +42,10 @@ export default function Home() {
     </div>
   )
 }
+
+export const metadata = createMetadata({
+  title: 'User Experience Improvements for the Filecoin Ecosystem',
+  description:
+    'Discover how the Filecoin Foundation’s User Experience Improvement Team (UXIT) is enhancing usability across the Filecoin network. Explore dogfooding reports, site audits, UX roadmaps, and monthly updates that drive a better future for Filecoin.',
+  path: PATHS.HOME.path,
+})
