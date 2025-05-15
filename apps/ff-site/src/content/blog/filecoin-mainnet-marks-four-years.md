@@ -12,8 +12,6 @@ description: This month on October 15, we’re thrilled to celebrate the
 image:
   src: /assets/images/ma-blogheader-fixed.webp
 seo:
-  twitter:
-    card: summary
   description:
     Today, we say a huge thank you to the incredible Filecoin community
     of builders, storage providers, data clients, and all those who are helping

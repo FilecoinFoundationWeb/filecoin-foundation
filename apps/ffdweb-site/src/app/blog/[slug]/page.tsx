@@ -72,6 +72,5 @@ export async function generateMetadata(props: BlogPostProps) {
     description: seo.description,
     image: image?.src || graphicsData.blog.data.src,
     openGraph: { type: 'article' },
-    twitter: seo.twitter,
   })
 }

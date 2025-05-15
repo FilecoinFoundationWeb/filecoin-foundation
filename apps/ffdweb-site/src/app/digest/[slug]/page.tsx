@@ -84,6 +84,5 @@ export async function generateMetadata(props: DigestArticleProps) {
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,
     openGraph: { type: 'article' },
-    twitter: seo.twitter,
   })
 }

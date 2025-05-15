@@ -11,8 +11,6 @@ description: In the past year, the Filecoin Plus (Fil+) program has evolved to
 image:
   src: /assets/images/030425-fidl.webp
 seo:
-  twitter:
-    card: summary
   description: In the past year, the Filecoin Plus (Fil+) program has evolved to
     help improve transparency and trust in the system by giving participants
     better tools to understand how Fil+ is working.

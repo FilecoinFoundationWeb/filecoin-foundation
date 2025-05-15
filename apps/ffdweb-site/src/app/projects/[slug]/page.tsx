@@ -110,6 +110,5 @@ export async function generateMetadata(props: ProjectProps) {
     description: seo.description,
     image: image?.src || graphicsData.projects.data.src,
     openGraph: { type: 'article' },
-    twitter: seo.twitter,
   })
 }

@@ -15,8 +15,6 @@ external-link: https://lu.ma/zc25ir6p
 image:
   src: /assets/images/orbit-placeholder.webp
 seo:
-  twitter:
-    card: summary
   description: "Join Filecoin Orbit Kampala: FVM Hack Day at The Innovation
     Village! Collaborate with developers, explore Filecoin's FVM, and build
     impactful blockchain projects. Don't miss this chance to innovate and

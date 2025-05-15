@@ -9,8 +9,6 @@ description: As 2024 comes to a close, it's time to look back and celebrate a
 image:
   src: /assets/images/2024rewind.webp
 seo:
-  twitter:
-    card: summary
   description: As 2024 comes to a close, it's time to look back and celebrate a
     year of progress, milestones, and innovation across the Filecoin ecosystem.
 ---

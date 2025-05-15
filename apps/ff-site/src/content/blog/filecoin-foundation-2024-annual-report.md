@@ -12,8 +12,6 @@ add-table-of-contents: true
 image:
   src: /assets/images/2024-annual-report-hero.webp
 seo:
-  twitter:
-    card: summary
   description:
     In this report, you’ll read about the ways that Filecoin Foundation
     supported the Filecoin community in 2024 and learn about FF’s strategic

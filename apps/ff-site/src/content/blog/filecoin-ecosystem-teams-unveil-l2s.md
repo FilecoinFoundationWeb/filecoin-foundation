@@ -10,8 +10,6 @@ description: Akave and Storacha Share Announcements at FIL Bangkok Signaling New
 image:
   src: /assets/images/blog-post-header-filecoin-ecosystem-teams-unveil-l2s.webp
 seo:
-  twitter:
-    card: summary
   description: "Teams across the Filecoin ecosystem announced new L2s, extending
     the capabilities of the network."
 ---

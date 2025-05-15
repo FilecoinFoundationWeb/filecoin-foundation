@@ -9,8 +9,6 @@ description: "This month, Filecoin Foundation (FF) is launching quarterly
 image:
   src: /assets/images/ff_q4report_hero-1-.webp
 seo:
-  twitter:
-    card: summary
   description: "This month, Filecoin Foundation (FF) is launching quarterly
     updates designed to hone in on different trends across our ecosystem. "
 ---

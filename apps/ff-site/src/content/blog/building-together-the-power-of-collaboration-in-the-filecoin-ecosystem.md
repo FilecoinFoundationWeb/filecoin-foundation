@@ -11,8 +11,6 @@ description: Since Mainnet launch in October 2020, the Filecoin network has
 image:
   src: /assets/images/022025-cid-lighthouse.webp
 seo:
-  twitter:
-    card: summary
   description: "Since Mainnet launch in October 2020, the Filecoin network has
     steadily evolved, with new tools and services emerging to support a growing
     range of data use cases."
