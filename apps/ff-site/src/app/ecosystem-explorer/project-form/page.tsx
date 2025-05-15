@@ -5,9 +5,10 @@ import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes
 
 import { PATHS } from '@/constants/paths'
 
+import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
-import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
 
 import { createMetadata } from '@/utils/createMetadata'
 

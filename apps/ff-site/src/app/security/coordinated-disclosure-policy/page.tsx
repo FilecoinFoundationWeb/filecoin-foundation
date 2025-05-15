@@ -2,9 +2,10 @@ import { PATHS } from '@/constants/paths'
 
 import coordinatedDisclosurePolicyMarkdown from '@/content/pages/security/coordinated-disclosure-policy.md'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 
-import { graphicsData } from '@/data/graphicsData'
 
 import { MarkdownPageSchema } from '@/schemas/PageFrontmatterSchema'
 
