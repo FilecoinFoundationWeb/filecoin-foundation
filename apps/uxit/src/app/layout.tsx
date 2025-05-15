@@ -1,12 +1,9 @@
-import type { Metadata } from 'next'
-
 import '@/styles/globals.css'
+import { ROOT_METADATA } from '@/constants/siteMetadata'
+
 import { SiteLayout } from '@/components/SiteLayout'
 
-export const metadata: Metadata = {
-  title: 'UXIT',
-  description: 'UXIT',
-}
+export const metadata = ROOT_METADATA
 
 type RootLayoutProps = {
   children: React.ReactNode
