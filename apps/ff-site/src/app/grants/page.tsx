@@ -37,15 +37,6 @@ const {
   featured_grant_graduates: featuredGrantGraduatesPaths,
 } = FrontmatterSchema.parse(attributes)
 
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.grants.data.src,
-  },
-  path: PATHS.GRANTS.path,
-  overrideDefaultTitle: true,
-})
-
 export default async function Grants() {
   const featuredGrantGraduates = await getFeaturedEcosystemProjects(
     featuredGrantGraduatesPaths,
@@ -172,3 +163,10 @@ export default async function Grants() {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: seo.title },
+  description: seo.description,
+  image: graphicsData.grants.data.src,
+  path: PATHS.GRANTS.path,
+})

@@ -37,15 +37,6 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.orbit.data.src,
-  },
-  path: PATHS.ORBIT.path,
-  overrideDefaultTitle: true,
-})
-
 type Props = {
   searchParams: AsyncQueryParams
 }
@@ -176,7 +167,7 @@ export default async function Orbit(props: Props) {
       </PageSection>
 
       <PageSection kicker="Frequently Asked Questions" title="FAQs">
-        <div className="prose space-y-10 prose-h3:text-brand-300 prose-h3:first:mt-0">
+        <div className="prose prose-h3:text-brand-300 prose-h3:first:mt-0 space-y-10">
           <div>
             <h3>
               Where can I find info about the Filecoin Orbit 2021 conference?
@@ -322,3 +313,10 @@ export default async function Orbit(props: Props) {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: seo.title },
+  description: seo.description,
+  image: graphicsData.orbit.data.src,
+  path: PATHS.ORBIT.path,
+})

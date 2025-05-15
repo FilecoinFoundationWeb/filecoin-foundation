@@ -86,8 +86,6 @@ program:
         structure.
       location: Virtual
 seo:
-  twitter:
-    card: summary
   description:
     Kick off FDS-6 with our engaging virtual sessions! Connect, learn,
     and get ready for an exciting journey ahead. Don't miss out on the action!

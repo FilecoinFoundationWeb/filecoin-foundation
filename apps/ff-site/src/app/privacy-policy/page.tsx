@@ -12,11 +12,6 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const { attributes, body } = MarkdownPageSchema.parse(privacyPolicyMarkdown)
 
-export const metadata = createMetadata({
-  seo: attributes.seo,
-  path: PATHS.PRIVACY_POLICY.path,
-})
-
 export default function PrivacyPolicy() {
   return (
     <MarkdownPage
@@ -27,3 +22,9 @@ export default function PrivacyPolicy() {
     </MarkdownPage>
   )
 }
+
+export const metadata = createMetadata({
+  title: attributes.seo.title,
+  description: attributes.seo.description,
+  path: PATHS.PRIVACY_POLICY.path,
+})

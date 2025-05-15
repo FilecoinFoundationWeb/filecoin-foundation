@@ -12,8 +12,6 @@ description: Blockfrost and Filecoin Foundation (FF) are collaborating to
 image:
   src: /assets/images/112524-cardanoblockfrost.webp
 seo:
-  twitter:
-    card: summary
   description: Blockfrost and Filecoin Foundation (FF) are collaborating to
     integrate Filecoin’s decentralized storage capabilities as a robust backup
     layer for Cardano apps built with Blockfrost.

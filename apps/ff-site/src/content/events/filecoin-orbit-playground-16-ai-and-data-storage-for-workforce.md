@@ -18,8 +18,6 @@ external-link: https://www.eventpop.me/e/63652/filecoinplayground16
 image:
   src: /assets/images/orbit-placeholder.webp
 seo:
-  twitter:
-    card: summary
   description: "Join Filecoin Playground #16 at SCBX Next Tech, Siam Paragon,
     Bangkok, on Dec 23! Explore AI, decentralized storage, and workforce
     innovation. Limited seats—register now to network and learn!"

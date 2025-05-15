@@ -308,8 +308,6 @@ sponsors:
 recap:
   youtube-playlist-url: https://www.youtube.com/playlist?list=PLp3zrT1ewY0mjCUeq_pEFH_H4J-376pRr
 seo:
-  twitter:
-    card: summary
   description: Join the Filecoin community in Davos during the World Economic
     Forum (Jan 20-23, 2025). Explore speaking engagements and events shaping the
     future of the decentralized web.

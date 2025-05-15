@@ -212,8 +212,6 @@ speakers:
       image:
         src: /assets/images/robert-dowling.webp
 seo:
-  twitter:
-    card: summary
   description:
     Join Filecoin at ETHDenver 2025 to explore cutting-edge blockchain
     technology, network with industry leaders, and discover new opportunities in

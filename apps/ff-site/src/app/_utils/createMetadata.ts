@@ -1,49 +1,25 @@
-import { type Metadata as NextMetadata } from 'next'
+import {
+  createMetadata as sharedCreateMetadata,
+  type MetadataParams as SharedMetadataParams,
+} from '@filecoin-foundation/utils/createMetadata'
 
-import { type SeoMetadata } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
-
-import type { DynamicPathValues, PathValues } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import {
+  FILECOIN_FOUNDATION_URLS,
+  ORGANIZATION_NAME,
+} from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
-type CreateMetadataProps = {
-  seo: SeoMetadata
-  path: PathValues | DynamicPathValues
-  overrideDefaultTitle?: boolean
-}
+export type MetadataParams = Omit<
+  SharedMetadataParams,
+  'fallbackImage' | 'orgName' | 'orgHandle'
+>
 
-export function createMetadata({
-  seo,
-  path,
-  overrideDefaultTitle = false,
-}: CreateMetadataProps) {
-  const enrichedSEO = {
-    title: seo.title,
-    description: seo.description,
-    image: seo.image || graphicsData.home.data.src,
-    twitter: {
-      card: seo.twitter?.card || 'summary',
-      site: seo.twitter?.site || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
-      creator:
-        seo.twitter?.creator || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
-    },
-  } as const
-
-  return {
-    title: overrideDefaultTitle
-      ? { absolute: enrichedSEO.title }
-      : enrichedSEO.title,
-    description: enrichedSEO.description,
-    twitter: {
-      ...enrichedSEO.twitter,
-      images: enrichedSEO.image,
-    },
-    openGraph: {
-      images: enrichedSEO.image,
-    },
-    alternates: {
-      canonical: path,
-    },
-  } as const satisfies NextMetadata
+export function createMetadata(args: MetadataParams) {
+  return sharedCreateMetadata({
+    ...args,
+    fallbackImage: graphicsData.home.data.src,
+    orgName: ORGANIZATION_NAME,
+    orgHandle: FILECOIN_FOUNDATION_URLS.social.twitter.handle,
+  })
 }

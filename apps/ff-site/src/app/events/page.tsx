@@ -35,15 +35,6 @@ type Props = {
 
 const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
 
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.events1.data.src,
-  },
-  path: PATHS.EVENTS.path,
-  overrideDefaultTitle: true,
-})
-
 export default async function Events(props: Props) {
   const searchParams = await props.searchParams
   const events = await getEventsData()
@@ -117,3 +108,10 @@ export default async function Events(props: Props) {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: seo.title },
+  description: seo.description,
+  image: graphicsData.events1.data.src,
+  path: PATHS.EVENTS.path,
+})

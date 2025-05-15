@@ -10,8 +10,6 @@ description: Over 500,000 Culturally Significant Digital Artifacts Now Stored on
 image:
   src: /assets/images/012125-culturalheritage.webp
 seo:
-  twitter:
-    card: summary
   description: Filecoin Foundation announced the addition of over 500,000
     culturally significant digital artifacts now stored on the Filecoin Network.
 ---

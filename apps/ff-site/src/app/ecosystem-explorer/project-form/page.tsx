@@ -7,6 +7,9 @@ import { PATHS } from '@/constants/paths'
 
 import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
 
+import { graphicsData } from '@/data/graphicsData'
+
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
@@ -24,11 +27,6 @@ import { generateStructuredData } from './utils/generateStructuredData'
 import { getFormInitialValue } from './utils/getFormInitialValue'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
-
-export const metadata = createMetadata({
-  seo,
-  path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
-})
 
 const groupedCategoryOptions = getGroupedCategoryOptions()
 
@@ -50,7 +48,7 @@ export default async function EcosystemExplorerProjectForm(props: Props) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
 
-      <div className="space-y-4 md:max-w-readable">
+      <div className="md:max-w-readable space-y-4">
         <PageHeader.Title>{header.title}</PageHeader.Title>
         <DescriptionText>{PROJECT_FORM_DESCRIPTION}</DescriptionText>
       </div>
@@ -65,3 +63,10 @@ export default async function EcosystemExplorerProjectForm(props: Props) {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: seo.title,
+  description: seo.description,
+  image: graphicsData.ecosystem.data.src,
+  path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
+})

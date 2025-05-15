@@ -11,8 +11,6 @@ description: "Filecoin provides the underlying storage layer to power
 image:
   src: /assets/images/filecoinai.webp
 seo:
-  twitter:
-    card: summary
   description: "Filecoin provides the underlying storage layer to power
     verifiable, tamper-proof, and permissionless AI models, ensuring that
     AI-generated outputs can be trusted."

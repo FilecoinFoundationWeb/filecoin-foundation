@@ -87,8 +87,6 @@ speakers:
       image:
         src: /assets/images/qing-warthen.jpg
 seo:
-  twitter:
-    card: summary
   description: Explore Filecoin's impactful presence at Consensus Hong Kong,
     featuring key announcements, innovations, and industry collaborations
     shaping the future of decentralized storage.

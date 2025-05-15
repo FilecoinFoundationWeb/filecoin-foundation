@@ -2,7 +2,10 @@ import { PATHS } from '@/constants/paths'
 
 import coordinatedDisclosurePolicyMarkdown from '@/content/pages/security/coordinated-disclosure-policy.md'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
+
 
 import { MarkdownPageSchema } from '@/schemas/PageFrontmatterSchema'
 
@@ -14,12 +17,6 @@ const { attributes, body } = MarkdownPageSchema.parse(
   coordinatedDisclosurePolicyMarkdown,
 )
 
-export const metadata = createMetadata({
-  seo: attributes.seo,
-  path: PATHS.COORDINATED_DISCLOSURE_POLICY.path,
-  overrideDefaultTitle: true,
-})
-
 export default function CoordinatedDisclosurePolicy() {
   return (
     <MarkdownPage
@@ -30,3 +27,10 @@ export default function CoordinatedDisclosurePolicy() {
     </MarkdownPage>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: attributes.seo.title },
+  description: attributes.seo.description,
+  image: graphicsData.security4.data.src,
+  path: PATHS.COORDINATED_DISCLOSURE_POLICY.path,
+})

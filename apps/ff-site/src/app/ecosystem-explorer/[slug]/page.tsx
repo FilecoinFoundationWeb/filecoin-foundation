@@ -5,7 +5,7 @@ import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextL
 import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
-import { type DynamicPathValues, PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 import { BASE_URL, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -106,10 +106,10 @@ export async function generateMetadata(props: EcosystemProjectProps) {
   const data = await getEcosystemProjectData(slug)
 
   return createMetadata({
-    seo: {
-      ...data.seo,
-      image: graphicsData.ecosystem.data.src,
-    },
-    path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}` as DynamicPathValues,
+    title: data.seo.title,
+    description: data.seo.description,
+    image: graphicsData.ecosystem.data.src,
+    path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}`,
+    openGraph: { type: 'article' },
   })
 }

@@ -24,15 +24,6 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.security.data.src,
-  },
-  path: PATHS.SECURITY.path,
-  overrideDefaultTitle: true,
-})
-
 export default function Security() {
   return (
     <PageLayout>
@@ -132,3 +123,10 @@ export default function Security() {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: seo.title },
+  description: seo.description,
+  image: graphicsData.security.data.src,
+  path: PATHS.SECURITY.path,
+})

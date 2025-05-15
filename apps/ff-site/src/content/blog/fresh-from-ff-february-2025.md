@@ -8,8 +8,6 @@ description: Check out the latest updates about what Filecoin Foundation has bee
 image:
   src: /assets/images/0215-ff-22-.webp
 seo:
-  twitter:
-    card: summary
   description: Check out the latest updates about what Filecoin Foundation has
     been up to in February, 2025.
 ---

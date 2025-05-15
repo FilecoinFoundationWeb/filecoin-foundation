@@ -12,11 +12,6 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const { attributes, body } = MarkdownPageSchema.parse(termsOfUseMarkdown)
 
-export const metadata = createMetadata({
-  seo: attributes.seo,
-  path: PATHS.TERMS_OF_USE.path,
-})
-
 export default function TermsOfUse() {
   return (
     <MarkdownPage
@@ -27,3 +22,9 @@ export default function TermsOfUse() {
     </MarkdownPage>
   )
 }
+
+export const metadata = createMetadata({
+  title: attributes.seo.title,
+  description: attributes.seo.description,
+  path: PATHS.TERMS_OF_USE.path,
+})

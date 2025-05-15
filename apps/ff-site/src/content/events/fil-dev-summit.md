@@ -22,8 +22,6 @@ external-link: https://www.fildev.io/FDS-6
 image:
   src: /assets/images/fil-dev-summit.png
 seo:
-  twitter:
-    card: summary
   title: FIL Dev Summit 6 - Toronto, Canada | May 12-13, 2025
   description:
     Join us for FIL Dev Summit 6 in Toronto, Canada, on May 12-13! This
