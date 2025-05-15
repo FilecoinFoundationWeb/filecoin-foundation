@@ -3,7 +3,7 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { TagGroup, TagLabel } from '@filecoin-foundation/ui/TagComponents'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
-import { type DynamicPathValues, PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -145,10 +145,9 @@ export async function generateMetadata(props: EventProps) {
   const data = await getEventData(slug)
 
   return createMetadata({
-    seo: {
-      ...data.seo,
-      image: graphicsData.events1.data.src,
-    },
-    path: `${PATHS.EVENTS.path}/${data.slug}` as DynamicPathValues,
+    title: data.seo.title,
+    description: data.seo.description,
+    image: graphicsData.events1.data.src,
+    path: `${PATHS.EVENTS.path}/${data.slug}`,
   })
 }

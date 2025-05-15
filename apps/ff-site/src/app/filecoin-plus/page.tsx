@@ -33,14 +33,6 @@ const { header, seo } = PageFrontmatterSchema.parse(attributes)
 const { header: allocatorsHeader } =
   PageFrontmatterSchema.parse(allocatorsAttributes)
 
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.filPlus.data.src,
-  },
-  path: PATHS.FIL_PLUS.path,
-})
-
 export default function FilPlus() {
   return (
     <PageLayout>
@@ -81,7 +73,7 @@ export default function FilPlus() {
       />
 
       <PageSection kicker="Allocator Application" title="Become an Allocator">
-        <p className="mb-2 max-w-readable">
+        <p className="max-w-readable mb-2">
           An allocator’s primary responsibilities include allocating DataCap,
           ensuring trust and compliance, and participating in community
           governance. For a full list of instructions on how to become an
@@ -121,3 +113,10 @@ export default function FilPlus() {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: seo.title,
+  description: seo.description,
+  image: graphicsData.filPlus.data.src,
+  path: PATHS.FIL_PLUS.path,
+})

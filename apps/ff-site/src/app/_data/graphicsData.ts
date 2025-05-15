@@ -29,7 +29,7 @@ import security3 from '@/assets/graphics/Filorg_Security3.webp'
 import security4 from '@/assets/graphics/Filorg_Security4.webp'
 import security5 from '@/assets/graphics/Filorg_Security5.webp'
 
-export const graphicsData: Record<string, StaticImageProps> = {
+export const graphicsData = {
   imageFallback: {
     data: imageFallback,
     alt: 'Image coming soon',
@@ -142,4 +142,4 @@ export const graphicsData: Record<string, StaticImageProps> = {
     data: security5,
     alt: 'A futuristic digital shield with a lock icon in the center, surrounded by binary code and glowing blue circular elements, symbolizing cybersecurity and data protection.',
   },
-}
+} as const satisfies Record<string, StaticImageProps>

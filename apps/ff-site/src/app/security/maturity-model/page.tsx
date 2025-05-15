@@ -25,14 +25,6 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.security5.data.src,
-  },
-  path: PATHS.MATURITY_MODEL.path,
-})
-
 export default function MaturityModel() {
   return (
     <PageLayout>
@@ -83,3 +75,10 @@ export default function MaturityModel() {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: seo.title,
+  description: seo.description,
+  image: graphicsData.security5.data.src,
+  path: PATHS.MATURITY_MODEL.path,
+})

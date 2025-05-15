@@ -25,12 +25,6 @@ import { getBlogPostsData } from './utils/getBlogPostData'
 
 const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
 
-export const metadata = createMetadata({
-  seo,
-  path: PATHS.BLOG.path,
-  overrideDefaultTitle: true,
-})
-
 export default async function Blog() {
   const posts = await getBlogPostsData()
 
@@ -72,3 +66,10 @@ export default async function Blog() {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: seo.title },
+  description: seo.description,
+  image: graphicsData.blog.data.src,
+  path: PATHS.BLOG.path,
+})
