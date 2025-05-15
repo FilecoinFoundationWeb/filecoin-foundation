@@ -41,12 +41,6 @@ const {
 const { header: digestPageHeader } =
   PageFrontmatterSchema.parse(digestAttributes)
 
-export const metadata = createMetadata({
-  seo,
-  path: PATHS.HOME.path,
-  overrideDefaultTitle: true,
-})
-
 export default async function Home() {
   const featuredBlogPosts = getFeaturedBlogPosts({
     posts: await getBlogPostsData(),
@@ -171,3 +165,10 @@ export default async function Home() {
     </NoBreadCrumbsLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: seo.title },
+  description: seo.description,
+  path: PATHS.HOME.path,
+  image: graphicsData.home.data.src,
+})

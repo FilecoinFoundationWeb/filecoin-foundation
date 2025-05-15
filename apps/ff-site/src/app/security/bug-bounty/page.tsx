@@ -21,14 +21,6 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.security4.data.src,
-  },
-  path: PATHS.BUG_BOUNTY.path,
-})
-
 export default function BugBounty() {
   return (
     <PageLayout>
@@ -49,3 +41,10 @@ export default function BugBounty() {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: seo.title,
+  description: seo.description,
+  image: graphicsData.security4.data.src,
+  path: PATHS.BUG_BOUNTY.path,
+})

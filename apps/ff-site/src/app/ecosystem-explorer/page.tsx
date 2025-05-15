@@ -27,15 +27,6 @@ type Props = {
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.ecosystem.data.src,
-  },
-  path: PATHS.ECOSYSTEM_EXPLORER.path,
-  overrideDefaultTitle: true,
-})
-
 export default async function EcosystemExplorer(props: Props) {
   const searchParams = await props.searchParams
   const ecosystemProjects = await getEcosystemProjectsData()
@@ -76,3 +67,10 @@ export default async function EcosystemExplorer(props: Props) {
     </PageLayout>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: seo.title },
+  description: seo.description,
+  image: graphicsData.ecosystem.data.src,
+  path: PATHS.ECOSYSTEM_EXPLORER.path,
+})
