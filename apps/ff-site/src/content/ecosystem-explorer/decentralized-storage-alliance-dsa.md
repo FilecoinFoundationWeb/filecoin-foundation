@@ -17,10 +17,10 @@ tech:
   - ipfs
 twitter: https://x.com/_DSAlliance
 seo:
-  twitter:
-    card: summary
-  description: The Decentralized Storage Alliance is an organization of companies
+  description:
+    The Decentralized Storage Alliance is an organization of companies
     who imagine a better path to storing data through decentralized storage
     solutions.
 ---
+
 The DSA is a first-of-its-kind, member-led industry organization to drive awareness and adoption of decentralized technologies, such as Filecoin, IPFS, and libp2p, and help enterprises in Web2 make the transition to Web3 through education, advocacy, and best practices. Filecoin Foundation is a founding member of the DSA, alongside Protocol Labs, AMD, EY, and Seagate.
