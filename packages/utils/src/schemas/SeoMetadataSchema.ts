@@ -13,7 +13,6 @@ const TwitterMetadataSchema = z
 const BaseSeoMetadataSchema = z
   .object({
     description: z.string().max(220),
-    image: z.string().optional(),
     twitter: TwitterMetadataSchema.optional(),
   })
   .strict()
