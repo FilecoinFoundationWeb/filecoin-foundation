@@ -28,6 +28,5 @@ export default function EmployeePrivacyPolicy() {
 export const metadata = createMetadata({
   title: attributes.seo.title,
   description: attributes.seo.description,
-  image: attributes.seo.image,
   path: PATHS.EMPLOYEE_PRIVACY_POLICY.path,
 })

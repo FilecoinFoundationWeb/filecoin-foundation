@@ -11,8 +11,6 @@ description: >
 image:
   src: /assets/images/032625-defiant-header.webp
 seo:
-  twitter:
-    card: summary
   description: The future of storage isn’t just about where data lives –– it’s
     also about who controls it. Filecoin puts that power back in your hands ––
     redefining data ownership in the digital age.

@@ -7,6 +7,9 @@ import { PATHS } from '@/constants/paths'
 
 import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
 
+import { graphicsData } from '@/data/graphicsData'
+
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
@@ -64,6 +67,6 @@ export default async function EcosystemExplorerProjectForm(props: Props) {
 export const metadata = createMetadata({
   title: seo.title,
   description: seo.description,
-  image: seo.image,
+  image: graphicsData.ecosystem.data.src,
   path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
 })

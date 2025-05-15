@@ -10,8 +10,6 @@ description: Discover how Seal Storage, a Filecoin ecosystem pioneer, partners
 image:
   src: /assets/images/102224-seal.webp
 seo:
-  twitter:
-    card: summary
   description: Discover how Seal Storage, a Filecoin ecosystem pioneer, partners
     with CERN, IEEE, and others to provide scalable, decentralized cloud storage
     for research institutions worldwide.

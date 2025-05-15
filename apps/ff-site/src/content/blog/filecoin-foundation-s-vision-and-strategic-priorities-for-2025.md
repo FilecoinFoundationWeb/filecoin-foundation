@@ -12,8 +12,6 @@ description: As Filecoin Foundation (FF) looks ahead to 2025, we want to offer a
 image:
   src: /assets/images/102924-2025vision.webp
 seo:
-  twitter:
-    card: summary
   description:
     As Filecoin Foundation (FF looks ahead to 2025, we want to offer a
     closer look at FF’s vision and strategic priorities.

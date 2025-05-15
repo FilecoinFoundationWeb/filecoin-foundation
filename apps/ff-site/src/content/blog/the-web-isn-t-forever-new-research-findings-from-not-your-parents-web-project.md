@@ -11,8 +11,6 @@ description: Findings from the "Not Your Parents Web" project –– an extensiv
 image:
   src: /assets/images/101024-nypw-1-.webp
 seo:
-  twitter:
-    card: summary
   description: The "Not Your Parents' Web" project reveals the fragile lifespan
     of online content.
 ---

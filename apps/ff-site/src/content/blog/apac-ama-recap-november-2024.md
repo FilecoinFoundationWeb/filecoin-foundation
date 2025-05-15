@@ -10,8 +10,6 @@ description: The latest APAC Ask Me Anything (AMA), held on November 21, brought
 image:
   src: /assets/images/apac-ama-header.webp
 seo:
-  twitter:
-    card: summary
   description:
     The latest APAC Ask Me Anything (AMA), held on November 21, brought
     together more than 70 participants, including many Storage Providers (SPs),

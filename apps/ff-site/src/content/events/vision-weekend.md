@@ -13,8 +13,6 @@ external-link: https://foresight.org/vw2024us/
 image:
   src: /assets/images/vision-sf-2022.png
 seo:
-  twitter:
-    card: summary
   description:
     Join Foresight Institute’s Vision Weekends—two immersive festivals
     focused on long-term futures. Explore tech breakthroughs, mentorship, demos,

@@ -8,8 +8,6 @@ description: "Check out the latest updates about what Filecoin Foundation has be
 image:
   src: /assets/images/fresh-from-ff-december-2024.webp
 seo:
-  twitter:
-    card: summary
   description: "Check out the latest updates about what Filecoin Foundation has
     been up to."
 ---

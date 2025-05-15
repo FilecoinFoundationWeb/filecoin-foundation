@@ -10,8 +10,6 @@ description: Filecoin Network Named in the AI and Data category for Fast
 image:
   src: /assets/images/blog-post-header-fast-company-we-made-the-list.webp
 seo:
-  twitter:
-    card: summary
   title: Filecoin as the Infrastructure for Decentralized AI
   description: Filecoin Network Named in the AI and Data category for Fast
     Company’s 2024 Next Big Things in Tech Awards.

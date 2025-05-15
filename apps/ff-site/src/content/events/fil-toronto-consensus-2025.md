@@ -305,8 +305,6 @@ sponsors:
       name: Impossible Cloud Network
       website: https://www.icn.global/
 seo:
-  twitter:
-    card: summary
   title: FIL Toronto @ Consensus 2025
   description:
     The Filecoin community is heading to Consensus in Toronto! Connect

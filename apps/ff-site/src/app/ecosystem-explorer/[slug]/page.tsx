@@ -110,5 +110,6 @@ export async function generateMetadata(props: EcosystemProjectProps) {
     description: data.seo.description,
     image: graphicsData.ecosystem.data.src,
     path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}`,
+    openGraph: { type: 'article' },
   })
 }

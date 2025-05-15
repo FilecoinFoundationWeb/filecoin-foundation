@@ -8,8 +8,6 @@ description: The Filecoin network has completed its NV24 upgrade, marking anothe
 image:
   src: /assets/images/blog-post-header-nv24-upgrade.webp
 seo:
-  twitter:
-    card: summary
   description: The Filecoin network has completed its NV24 upgrade, marking another significant step in enhancing the network's security, efficiency, and developer capabilities.
 ---
 
