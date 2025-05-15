@@ -12,14 +12,10 @@ website: https://docs.ipc.space/
 tech:
   - filecoin
 seo:
-  twitter:
-    card: summary
   description: Interplanetary Consensus (IPC) is a framework that enables
     on-demand horizontal scalability of networks.
 ---
+
 [Interplanetary Consensus (IPC)](https://www.ipc.space/) is a framework that enables on-demand horizontal scalability of networks, by deploying "subnets" running different consensus algorithms depending on the application's requirements.
 
-
 With IPC, dApps can reach planetary scale through recursively scalable subnets, sub-second transactions, robust compute workloads, and highly adaptable WebAssembly runtimes tailored to developer requirements.
-
-## [](https://docs.ipc.space/#what-is-ipc)
