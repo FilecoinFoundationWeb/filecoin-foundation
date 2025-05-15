@@ -22,8 +22,6 @@ start-date: 2025-05-14
 end-date: 2025-05-16
 external-link: https://consensus2025.coindesk.com/
 seo:
-  twitter:
-    card: summary
   description: Discover Consensus 2025 in Toronto – the premier gathering for
     blockchain, Web3, and AI leaders. Join industry pioneers shaping the future
     of digital assets and innovation. Don’t miss out!

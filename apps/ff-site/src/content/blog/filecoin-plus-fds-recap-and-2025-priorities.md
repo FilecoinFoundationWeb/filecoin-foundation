@@ -9,8 +9,6 @@ description: Dive deeper into the discussions around Fil+ at FIL Dev Summit and
 image:
   src: /assets/images/02122025-fil-plus-blog-1-.webp
 seo:
-  twitter:
-    card: summary
   description:
     Dive deeper into the discussions around Fil+ at FIL Dev Summit and
     get an overview and 2025 roadmap for the program.

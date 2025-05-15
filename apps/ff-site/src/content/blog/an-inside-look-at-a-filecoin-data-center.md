@@ -10,8 +10,6 @@ description: >
 image:
   src: /assets/images/102224-dcent-documentary.webp
 seo:
-  twitter:
-    card: summary
   description: Take a tour of DCENT, Europe’s largest Filecoin storage provider,
     in the first-ever DWeb Decoded Special Report.
 ---

@@ -9,8 +9,6 @@ description: University blockchain organizations are invited to design and
 image:
   src: /assets/images/orbit-university-challenge.webp
 seo:
-  twitter:
-    card: summary
   description: University blockchain organizations are invited to design and
     propose decentralized AI applications leveraging the Filecoin network.
 ---

@@ -67,8 +67,6 @@ speakers:
       image:
         src: /assets/images/paul-wagner.webp
 seo:
-  twitter:
-    card: summary
   description: Join our team in Dubai during Token2049 for expert insights,
     networking opportunities, and exclusive speaking engagements. Connect with
     industry leaders and stay ahead in the world of crypto and blockchain!

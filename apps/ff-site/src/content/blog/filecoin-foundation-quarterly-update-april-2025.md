@@ -6,12 +6,10 @@ published-on: 2025-04-17T20:27:00.000Z
 category: reports
 description: In this quarterly update, we will spotlight how the Filecoin
   network is forming the backbone for not only a better version of the web, but
-  a better foundation for emerging technologies like AI. 
+  a better foundation for emerging technologies like AI.
 image:
   src: /assets/images/quarterlyupdate_q22025_header.webp
 seo:
-  twitter:
-    card: summary
   description: In this quarterly update, we will spotlight how the Filecoin
     network is forming the backbone for not only a better version of the web,
     but a better foundation for emerging technologies like AI.
@@ -25,9 +23,9 @@ The challenges of centralization extend to AI agents –– autonomous systems r
 
 The Filecoin network is uniquely positioned to address these challenges by enabling decentralization and transparency. Key advantages include: 
 
-* Creating an auditable and tamper-proof way for AI projects to verify their models, datasets, and computations;
-* Offering a compelling alternative to these centralized models through decentralized, transparent data storage; and
-* Fostering trust while reinforcing the resilience of our digital infrastructure. 
+- Creating an auditable and tamper-proof way for AI projects to verify their models, datasets, and computations;
+- Offering a compelling alternative to these centralized models through decentralized, transparent data storage; and
+- Fostering trust while reinforcing the resilience of our digital infrastructure. 
 
 In this quarterly update, we will spotlight how the Filecoin network is forming the backbone for not only a better version of the web, but a better foundation for emerging technologies like AI. 
 
@@ -71,9 +69,9 @@ Filecoin builders are shaping the future of AI and other emerging technologies a
 
 FF’s Developer Grants Updates bring news and highlights from the FF Developer Grants team. [The second issue](/blog/developer-grants-updates-february-2025), published in February, explores how FF continues to support new, impactful projects and introduce program updates to empower more developers in the Filecoin ecosystem. A few proposals that we recently funded include:
 
-* [Eastore](https://github.com/filecoin-project/devgrants/issues/1770): An onchain way of storing small files on Filecoin, as an alternative to traditional centralized file storage protocols. 
-* [UCAN development support](https://github.com/filecoin-project/devgrants/issues/1776): A project supporting the development of multiple User Controlled Authorization Network (UCAN) functionalities, including v1 JS UCAN implementation, debugger, and other developer tooling and resources for ecosystem projects using UCANs. 
-* [IPNI Reverse Index](https://github.com/filecoin-project/devgrants/issues/1781): This project will help assess the quality of Filecoin retrieval services and drive improvements. 
+- [Eastore](https://github.com/filecoin-project/devgrants/issues/1770): An onchain way of storing small files on Filecoin, as an alternative to traditional centralized file storage protocols. 
+- [UCAN development support](https://github.com/filecoin-project/devgrants/issues/1776): A project supporting the development of multiple User Controlled Authorization Network (UCAN) functionalities, including v1 JS UCAN implementation, debugger, and other developer tooling and resources for ecosystem projects using UCANs. 
+- [IPNI Reverse Index](https://github.com/filecoin-project/devgrants/issues/1781): This project will help assess the quality of Filecoin retrieval services and drive improvements. 
 
 For a more comprehensive look at developer projects we have funded in the past, check out Filecoin Foundation’s [2024 Annual Report](/blog/filecoin-foundation-2024-annual-report). 
 
@@ -91,7 +89,7 @@ FF continues to award grants valued at up to $50,000 for projects that align wit
 
 FF's Storage and Community team continues to help share business strategies on how to drive demand, create additional revenue streams for storage providers (SP), and solidify Filecoin's market positioning as part of its ongoing mission to help the network achieve product-market fit (PMF). Alongside [FilOz](https://www.filoz.org/) and other key ecosystem builders, founders, and business development leaders, FF is supporting discussions outlining Filecoin’s value proposition and how it can align with market needs. 
 
-#### Activating the Global Storage Community 
+#### Activating the Global Storage Community
 
 On January 27, 2025, Filecoin Foundation and MetaEra hosted FF’s second AMA, focusing on “APAC Builder Opportunities” and drawing over 24,000 listeners on X Spaces. During the session, FF shared important updates on gas changes, providing valuable context for ongoing network developments. Representatives from Secured Finance, FIL-B, Titan Network, Zetablock, and Storswift joined the call to offer insightful perspectives on key opportunities in the data marketplace, AI agents, stablecoins, and cross-chain collaboration. This AMA reinforced FF’s commitment to empowering APAC builders and fostering innovation across the ecosystem.
 

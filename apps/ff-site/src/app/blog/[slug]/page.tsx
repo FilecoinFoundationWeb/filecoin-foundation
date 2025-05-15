@@ -84,5 +84,6 @@ export async function generateMetadata(props: BlogPostProps) {
     description: data.seo.description,
     image: data.image?.src || graphicsData.blog.data.src,
     path: `${PATHS.BLOG.path}/${data.slug}`,
+    openGraph: { type: 'article' },
   })
 }

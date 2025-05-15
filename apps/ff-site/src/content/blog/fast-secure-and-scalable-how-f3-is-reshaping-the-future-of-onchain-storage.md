@@ -10,8 +10,6 @@ description: The upcoming Fast Finality in Filecoin (F3) represents one of the
 image:
   src: /assets/images/030625-f3.webp
 seo:
-  twitter:
-    card: summary
   description: The upcoming Fast Finality in Filecoin (F3) represents one of the
     biggest storage-retrieval lifecycle improvements in the network’s history,
     making the future of Filecoin fast, secure, and accessible.

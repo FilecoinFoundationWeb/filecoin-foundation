@@ -9,8 +9,6 @@ description: The Developer Grants Updates series brings news and highlights from
 image:
   src: /assets/images/feb25-dg-updates.webp
 seo:
-  twitter:
-    card: summary
   description: "Explore Filecoin Foundation's latest Developer Grants Updates,
     featuring new highlights and builder opportunities."
 ---

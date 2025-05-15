@@ -26,6 +26,5 @@ export default function TermsOfUse() {
 export const metadata = createMetadata({
   title: attributes.seo.title,
   description: attributes.seo.description,
-  image: attributes.seo.image,
   path: PATHS.TERMS_OF_USE.path,
 })

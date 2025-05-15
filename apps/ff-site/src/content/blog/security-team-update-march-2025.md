@@ -11,8 +11,6 @@ description: "Security is the backbone of any successful technology ecosystem â€
 image:
   src: /assets/images/security.webp
 seo:
-  twitter:
-    card: summary
   description: "The Filecoin Foundation Security Team is dedicated to protecting
     the Filecoin network and its community of developers, storage providers, and
     users."

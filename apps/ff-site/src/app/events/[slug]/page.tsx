@@ -149,5 +149,6 @@ export async function generateMetadata(props: EventProps) {
     description: data.seo.description,
     image: graphicsData.events1.data.src,
     path: `${PATHS.EVENTS.path}/${data.slug}`,
+    openGraph: { type: 'article' },
   })
 }
