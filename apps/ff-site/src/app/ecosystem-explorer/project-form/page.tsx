@@ -5,6 +5,8 @@ import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes
 
 import { PATHS } from '@/constants/paths'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -64,6 +66,6 @@ export default async function EcosystemExplorerProjectForm(props: Props) {
 export const metadata = createMetadata({
   title: seo.title,
   description: seo.description,
-  image: seo.image,
+  image: graphicsData.ecosystem.data.src,
   path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
 })

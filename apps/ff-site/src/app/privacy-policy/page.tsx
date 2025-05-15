@@ -26,6 +26,5 @@ export default function PrivacyPolicy() {
 export const metadata = createMetadata({
   title: attributes.seo.title,
   description: attributes.seo.description,
-  image: attributes.seo.image,
   path: PATHS.PRIVACY_POLICY.path,
 })

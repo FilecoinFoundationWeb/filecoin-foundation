@@ -4,6 +4,8 @@ import coordinatedDisclosurePolicyMarkdown from '@/content/pages/security/coordi
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { MarkdownPageSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { MarkdownPage } from '@/components/MarkdownPage'
@@ -28,6 +30,6 @@ export default function CoordinatedDisclosurePolicy() {
 export const metadata = createMetadata({
   title: { absolute: attributes.seo.title },
   description: attributes.seo.description,
-  image: attributes.seo.image,
+  image: graphicsData.security4.data.src,
   path: PATHS.COORDINATED_DISCLOSURE_POLICY.path,
 })

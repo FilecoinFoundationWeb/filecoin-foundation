@@ -70,7 +70,7 @@ export async function generateMetadata(props: BlogPostProps) {
     path: `${PATHS.BLOG.path}/${slug}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
-    image: seo.image || image?.src || graphicsData.blog.data.src,
+    image: image?.src || graphicsData.blog.data.src,
     openGraph: { type: 'article' },
     twitter: seo.twitter,
   })
