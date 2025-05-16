@@ -1,6 +1,6 @@
 import { Crown, Medal, Trophy } from '@phosphor-icons/react/dist/ssr'
 
-import type { PointsAndRewardsCardProps } from '@/components/StatisticCard'
+import type { PointsAndRewardsCardProps } from '@/components/StatisticCard/PointsAndRewardsCard'
 
 export const pointsAndRewardsData: Array<PointsAndRewardsCardProps> = [
   {
