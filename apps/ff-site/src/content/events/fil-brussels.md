@@ -122,6 +122,36 @@ speakers:
       linkedin: https://www.linkedin.com/in/anilmurty/
       image:
         src: /assets/images/li-photo-enhanced.webp
+    - name: Anjali George
+      title: Strategic Comms Leader
+      company: Theoriq
+      linkedin: https://www.linkedin.com/in/anjaliegeorge/
+      image:
+        src: /assets/images/anjali-anjali-george.webp
+    - name: Arthur Tan
+      title: CEO
+      company: FiLLiquid
+      linkedin: https://www.linkedin.com/in/arthur-tan/
+      image:
+        src: /assets/images/arthur_headshot.webp
+    - name: Bidhan Roy
+      title: CEO
+      company: Bagel.net
+      linkedin: "https://www.linkedin.com/in/bidhanr "
+      image:
+        src: /assets/images/bidhan-roy.webp
+    - name: Christian Kaul
+      title: Founder & COO
+      company: Impossible Cloud Network
+      linkedin: "https://www.linkedin.com/in/christiankaul/?originalSubdomain=de "
+      image:
+        src: /assets/images/ck.webp
+    - name: Clara Tsao
+      title: Founding Officer
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/claratsao
+      image:
+        src: /assets/images/clara-tsao-davos.webp
 seo:
   description: Join FIL Brussels to connect with the Filecoin community and
     explore new developments.
