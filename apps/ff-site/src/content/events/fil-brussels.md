@@ -66,7 +66,7 @@ program:
         Filecoin vision, the latest developments for the EVM-compatible Filecoin
         network, and understand why storage is just the start for Filecoin.
     - title: FILDev Summit
-      start-date: 2024-09-07
+      start-date: 2024-07-09
       end-date: 2024-07-11
       location: " Radisson, Grand Place Brussels, Rue du Fossé aux Loups 47, 1000
         Bruxelles, Belgium"
