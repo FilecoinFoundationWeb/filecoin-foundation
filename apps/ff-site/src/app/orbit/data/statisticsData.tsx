@@ -5,16 +5,9 @@ import {
   UsersThree,
 } from '@phosphor-icons/react/dist/ssr'
 
-import type { IconProps } from '@filecoin-foundation/ui/Icon'
+import type { BasicStatisticCardProps } from '@/components/StatisticCard/BasicStatisticCard'
 
-
-export type StatisticData = {
-  icon: IconProps['component']
-  value: number
-  description: string
-}
-
-export const statisticsData: Array<StatisticData> = [
+export const statisticsData: Array<BasicStatisticCardProps> = [
   {
     icon: UsersThree,
     value: 145,
