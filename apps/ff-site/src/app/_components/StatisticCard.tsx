@@ -1,22 +1,61 @@
-import { Icon } from '@filecoin-foundation/ui/Icon'
+import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 
-import type { StatisticData } from '@/orbit/data/statisticsData'
+type StatisticCardLayoutProps = {
+  icon: IconProps['component']
+  children: React.ReactNode
+}
 
-export function StatisticCard({ icon, value, description }: StatisticData) {
+function StatisticCardLayout({ icon, children }: StatisticCardLayoutProps) {
   return (
-    <li className="flex min-h-32 rounded-lg border border-brand-300 p-1">
-      <figure className="grid w-1/3 place-items-center rounded-sm bg-brand-500">
+    <li className="border-brand-300 flex min-h-32 rounded-lg border p-1">
+      <figure className="bg-brand-500 grid w-1/3 place-items-center rounded-sm">
         <Icon component={icon} color="accent" size={40} />
       </figure>
-
       <div className="flex w-2/3 place-items-center p-4">
-        <div className="space-y-2">
-          <span className="text-4xl font-light text-brand-100">
-            {value.toLocaleString()}+
-          </span>
-          <p className="text-sm leading-4 text-brand-200">{description}</p>
-        </div>
+        <div className="space-y-2">{children}</div>
       </div>
     </li>
+  )
+}
+
+export type BasicStatisticCardProps = {
+  icon: IconProps['component']
+  value: number
+  description: string
+}
+
+export function BasicStatisticCard({
+  icon,
+  value,
+  description,
+}: BasicStatisticCardProps) {
+  return (
+    <StatisticCardLayout icon={icon}>
+      <span className="text-brand-100 text-4xl font-light">
+        {value.toLocaleString()}+
+      </span>
+      <p className="text-brand-200 text-sm leading-4">{description}</p>
+    </StatisticCardLayout>
+  )
+}
+
+export type PointsAndRewardsCardProps = {
+  icon: IconProps['component']
+  accomplishmentValue: number
+  rewardValue: number
+}
+
+export function PointsAndRewardsCard({
+  icon,
+  accomplishmentValue,
+  rewardValue,
+}: PointsAndRewardsCardProps) {
+  return (
+    <StatisticCardLayout icon={icon}>
+      <span className="text-brand-100 font-bold">
+        {accomplishmentValue.toLocaleString()}+ points
+      </span>
+      <p className="text-brand-200">${rewardValue.toLocaleString()} swag</p>
+    </StatisticCardLayout>
   )
 }
