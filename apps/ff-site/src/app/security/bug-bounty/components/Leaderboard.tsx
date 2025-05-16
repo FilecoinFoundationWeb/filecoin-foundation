@@ -4,6 +4,7 @@ import {
   useReactTable,
   getCoreRowModel,
   getSortedRowModel,
+  getPaginationRowModel,
 } from '@tanstack/react-table'
 
 import { Table } from '@/components/Table/Table'
@@ -13,15 +14,21 @@ import { TableHead } from '@/components/Table/TableHead'
 import { leaderboardData } from '../data/leaderboard'
 import { leaderboardTableColumnsData } from '../data/leaderboardTableColumnsData'
 
-export function Leaderboard() {
+type LeaderboardProps = {
+  limit?: number
+}
+
+export function Leaderboard({ limit }: LeaderboardProps) {
   const table = useReactTable({
     data: leaderboardData,
     columns: leaderboardTableColumnsData,
     initialState: {
       sorting: [{ id: 'points', desc: true }],
+      ...(limit && { pagination: { pageSize: limit } }),
     },
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
+    ...(limit && { getPaginationRowModel: getPaginationRowModel() }),
   })
 
   return (
