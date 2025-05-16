@@ -25,7 +25,7 @@ import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { StatisticCard } from '@/components/StatisticCard'
+import { BasicStatisticCard } from '@/components/StatisticCard/BasicStatisticCard'
 
 import { OrbitEventsSection } from './components/EventsSection'
 import { ambassadorsData } from './data/ambassadorsData'
@@ -86,7 +86,7 @@ export default async function Orbit(props: Props) {
       <PageSection kicker="Statistics" title="Key Statistics Since 2020">
         <CardGrid as="ul" cols="smTwo">
           {statisticsData.map((statistic, index) => (
-            <StatisticCard key={index} {...statistic} />
+            <BasicStatisticCard key={index} {...statistic} />
           ))}
         </CardGrid>
       </PageSection>
