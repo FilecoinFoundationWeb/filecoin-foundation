@@ -5,7 +5,7 @@ import {
   UsersThree,
 } from '@phosphor-icons/react/dist/ssr'
 
-import type { BasicStatisticCardProps } from '@/components/StatisticCard'
+import type { BasicStatisticCardProps } from '@/components/StatisticCard/BasicStatisticCard'
 
 export const statisticsData: Array<BasicStatisticCardProps> = [
   {
