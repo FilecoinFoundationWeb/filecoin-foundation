@@ -326,7 +326,7 @@ collections:
           - *header_config
           - *meta_config
 
-      - name: "security/bug-bounty"
+      - name: "security-bug-bounty"
         label: "Security - Bug Bounty"
         file: "apps/ff-site/src/content/pages/security/bug-bounty.md"
         preview_path: "security/bug-bounty"
