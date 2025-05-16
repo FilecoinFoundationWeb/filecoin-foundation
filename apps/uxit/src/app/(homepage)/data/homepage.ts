@@ -71,7 +71,7 @@ export const otherResources: Resource[] = [
     children: 'Minimum Viable Discoverability Checklist',
   },
   {
-    href: 'https://www.notion.so/filecoin/12-Most-Common-UX-Pitfalls-and-How-to-Avoid-Them-690880000000000000000000',
+    href: 'https://filecoin.notion.site/12-Most-Common-UX-Pitfalls-and-How-to-Avoid-Them-1377631f28258055aa82dfe02cb0c6cc',
     children: '12 Most Common UX Pitfalls and How to Avoid Them',
   },
 ]
