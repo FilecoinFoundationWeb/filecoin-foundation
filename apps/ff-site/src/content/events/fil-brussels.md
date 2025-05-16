@@ -212,6 +212,138 @@ speakers:
       linkedin: https://www.linkedin.com/in/gosuri/
       image:
         src: /assets/images/greg-osuri-akash-network.webp
+    - name: Guiseppe De Luca
+      title: Blockchain Developer
+      company: IoTeX
+      linkedin: https://www.linkedin.com/in/giupi-deluca/
+      image:
+        src: /assets/images/1710434659542.webp
+    - name: Hannah Howard
+      title: CEO
+      company: Storacha
+      linkedin: https://www.linkedin.com/in/techgirlwonder/
+      image:
+        src: /assets/images/hannahhoward-headshot.webp
+    - name: Harry Grieve
+      title: Co-Founder
+      company: Gensyn
+      linkedin: https://uk.linkedin.com/in/harry-grieve-81427771
+      image:
+        src: /assets/images/greg.webp
+    - name: Heath Behncke
+      title: Founder & Managing Director
+      company: Holon
+      linkedin: https://www.linkedin.com/in/heath-behncke/?originalSubdomain=au
+      image:
+        src: /assets/images/heath_sq_bw_kk_00097.webp
+    - name: Jen King
+      title: Enterprise Growth Lead
+      company: Filecoin Foundation
+      linkedin: https://ca.linkedin.com/in/jenniedking?trk=public_post_feed-actor-name
+      image:
+        src: /assets/images/jen_king_destor-1-1-.jpeg
+    - name: Konstantin Tkachuk
+      title: "Co-founder and CSO "
+      company: Titan Network
+      linkedin: https://www.linkedin.com/in/tkachukk/
+      image:
+        src: /assets/images/konstantin-tkachuk.webp
+    - name: Mara McMahon
+      title: "Co-Founder "
+      company: DeStor & FilStor
+      linkedin: https://www.linkedin.com/in/maramcmahon/
+      image:
+        src: /assets/images/mara-mcmahon-destor.webp
+    - name: Megan Klimen
+      title: Founding Officer
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/megan-klimen
+      image:
+        src: /assets/images/megan-klimen-davos.webp
+    - name: Michael Clark
+      title: Founder
+      company: The Next Things
+      linkedin: https://www.linkedin.com/in/futureofmichael/
+      image:
+        src: /assets/images/michael-clark-profile-2024.webp
+    - name: Molly Mackinlay
+      company: FilOz
+      title: CEO
+      linkedin: https://www.linkedin.com/in/mollymackinlay
+      image:
+        src: /assets/images/molly-mackinlay-headshot.webp
+    - name: Natalie Wang
+      title: Lead of Global Outreach
+      company: Numbers Protocol
+      linkedin: https://www.linkedin.com/in/natalie-sw-wang/?originalSubdomain=tw
+      image:
+        src: /assets/images/natalie-wang.jpg
+    - name: Paul Warren
+      title: CEO
+      company: Blocklive
+      linkedin: https://www.linkedin.com/in/tormund/?originalSubdomain=ae
+      image:
+        src: /assets/images/image-12-.webp
+    - name: Porter Stowell
+      title: "Head of Ecosystem & Community "
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/porterstowell
+      image:
+        src: /assets/images/porter-stowell.webp
+    - name: Ram
+      title: Lead
+      company: Openledger
+      linkedin: https://x.com/Ramkumartweet
+      image:
+        src: /assets/images/whatsapp-image-2024-07-01-at-21.24.24-1-.webp
+    - name: Richard Muirhead
+      title: Co-Founder
+      company: Fabric Ventures
+      linkedin: https://www.linkedin.com/in/richardmuirhead/?originalSubdomain=uk
+      image:
+        src: /assets/images/screenshot-2024-06-26-at-16.53.01-1-.webp
+    - name: Sara Teixeira
+      title: Marketing Director
+      company: Impossible Cloud Network
+      linkedin: https://www.linkedin.com/in/saraflteixeira/?originalSubdomain=pt
+      image:
+        src: /assets/images/photo_2024-07-05-11.23.04.webp
+    - name: Sebastian Pfeiffer
+      title: Managing Director
+      company: Impossible Cloud Network
+      linkedin: https://www.linkedin.com/in/sebastian-pfeiffer/
+      image:
+        src: /assets/images/2024-07-05-11.23.11.webp
+    - name: Stefaan Vervaet
+      title: CEO
+      company: Akave
+      linkedin: https://www.linkedin.com/in/stefaan-vervaet/?originalSubdomain=pr
+      image:
+        src: /assets/images/stefaan-vervaet-headshot.webp
+    - name: Tom Trowbridge
+      title: Co-Founder
+      company: Fluence Labs
+      linkedin: https://www.linkedin.com/in/tom-trowbridge-12623/
+      image:
+        src: /assets/images/tom-trowbridge.webp
+    - name: Ty Smith
+      title: Sr Product Manager
+      company: Swirlds Labs
+      linkedin: https://www.linkedin.com/in/ty-patches-smith/
+      image:
+        src: /assets/images/1658941938716.webp
+    - name: Yan Bo Ng
+      title: Strategic Partnerships
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/ngyanbo/?originalSubdomain=sg
+      image:
+        src: /assets/images/image-11-.webp
+    - name: Marla Natoli
+      title: "Strategic Partnerships "
+      company: Textile
+      linkedin: https://www.linkedin.com/in/marlanatoli/?originalSubdomain=ca
+      image:
+        src: /assets/images/headshot-marla-natoli.webp
 seo:
   description: Join FIL Brussels to connect with the Filecoin community and
     explore new developments.
