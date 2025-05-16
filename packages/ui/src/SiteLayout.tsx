@@ -17,9 +17,9 @@ export function SiteLayout({
 }: SiteLayoutProps) {
   return (
     <html lang="en" className={font.className}>
-      <body className="site-layout m-auto flex max-w-[1032px] flex-col justify-between px-6 pt-8 pb-8 tracking-wide">
+      <body className="site-layout m-auto flex min-h-screen max-w-[1032px] flex-col justify-between px-6 pt-8 pb-8 tracking-wide">
         <Navigation />
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
 
         {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}

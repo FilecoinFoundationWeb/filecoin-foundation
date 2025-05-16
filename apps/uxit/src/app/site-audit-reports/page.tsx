@@ -45,9 +45,7 @@ export default function SiteAuditPage() {
               text: 'View Report',
               icon: {
                 component: ArrowRight,
-                size: 16,
                 position: 'trailing',
-                weight: 'bold',
               },
             }}
           />

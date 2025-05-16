@@ -1,3 +1,5 @@
+import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
+
 import { type CardProps } from '@filecoin-foundation/ui/Card/Card'
 import { type ExternalTextLinkProps } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
@@ -47,6 +49,10 @@ export const homepageCards: HomepageCard[] = [
       href: PATHS.SITE_AUDIT_REPORTS.path,
       text: 'View Reports',
       baseDomain: 'filecoin.org',
+      icon: {
+        component: ArrowRight,
+        position: 'trailing',
+      },
     },
   },
   {
@@ -71,7 +77,7 @@ export const otherResources: Resource[] = [
     children: 'Minimum Viable Discoverability Checklist',
   },
   {
-    href: 'https://www.notion.so/filecoin/12-Most-Common-UX-Pitfalls-and-How-to-Avoid-Them-690880000000000000000000',
+    href: 'https://filecoin.notion.site/12-Most-Common-UX-Pitfalls-and-How-to-Avoid-Them-1377631f28258055aa82dfe02cb0c6cc',
     children: '12 Most Common UX Pitfalls and How to Avoid Them',
   },
 ]
