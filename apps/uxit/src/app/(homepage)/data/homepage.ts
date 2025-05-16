@@ -1,3 +1,5 @@
+import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
+
 import { type CardProps } from '@filecoin-foundation/ui/Card/Card'
 import { type ExternalTextLinkProps } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
@@ -47,6 +49,10 @@ export const homepageCards: HomepageCard[] = [
       href: PATHS.SITE_AUDIT_REPORTS.path,
       text: 'View Reports',
       baseDomain: 'filecoin.org',
+      icon: {
+        component: ArrowRight,
+        position: 'trailing',
+      },
     },
   },
   {
