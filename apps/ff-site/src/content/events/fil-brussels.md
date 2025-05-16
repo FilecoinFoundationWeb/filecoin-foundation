@@ -90,6 +90,38 @@ program:
         Ownership, and Data, Syncing Bytes at Scale, Libp2p Day, Climate
         Resilience and IPFS, and more. Get your IPFS Camp ticket."
       external-link: https://lu.ma/ipfscamp24
+speakers:
+  speakers_list:
+    - name: Aaron Stanley
+      title: Editorial Director
+      company: Filecoin Foundation
+      linkedin: https://br.linkedin.com/in/aaronstanley27
+      image:
+        src: /assets/images/aaron-stanley-davos.webp
+    - name: Adrienne Youngman
+      title: CEO
+      company: Partisia Blockchain
+      linkedin: https://pt.linkedin.com/in/adrienneyoungman
+      image:
+        src: /assets/images/adrienne-1-.webp
+    - name: Alex Blagirev
+      title: Partner
+      company: SingularityNET
+      linkedin: https://www.linkedin.com/in/alexei-blagirev/
+      image:
+        src: /assets/images/2022-12-23-09.33.08-1-.webp
+    - name: Angelo Schalley
+      title: CTO & Co-Founder Akave
+      company: Akave
+      linkedin: https://www.linkedin.com/in/angeloschalley/
+      image:
+        src: /assets/images/angelo-schalley-pl-1-.webp
+    - name: Anil Murty
+      title: VP - Product, Eng & Partnerships
+      company: Akash Network
+      linkedin: https://www.linkedin.com/in/anilmurty/
+      image:
+        src: /assets/images/li-photo-enhanced.webp
 seo:
   description: Join FIL Brussels to connect with the Filecoin community and
     explore new developments.
