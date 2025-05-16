@@ -152,6 +152,66 @@ speakers:
       linkedin: https://www.linkedin.com/in/claratsao
       image:
         src: /assets/images/clara-tsao-davos.webp
+    - name: Daniel Andrade
+      title: "Co-Founder / CTO "
+      company: Hotspotty
+      linkedin: https://www.linkedin.com/in/dansku/
+      image:
+        src: /assets/images/daniel-andrade.webp
+    - name: Daniel van der Woude
+      title: Lead Product Manager
+      company: Nuklai
+      linkedin: https://www.linkedin.com/in/cdavanderwoude/
+      image:
+        src: /assets/images/img_9825-daniel-van-der-woude.webp
+    - name: Danielle DuBravac
+      title: Communications
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/danielledubravac
+      image:
+        src: /assets/images/danielle-dubravac.webp
+    - name: Danny O'Brien
+      title: Senior Fellow
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/dannyo2
+      image:
+        src: /assets/images/danny-o-brien-davos.webp
+    - name: Diogo Coimbra
+      title: Founder
+      company: Haven Digital Partners
+      linkedin: https://www.linkedin.com/in/diogo-coimbra/?originalSubdomain=pt
+      image:
+        src: /assets/images/diogo-haven.webp
+    - name: Doug Petkanics
+      title: Founder
+      company: Liverpeer
+      linkedin: https://www.linkedin.com/in/dougpetkanics/
+      image:
+        src: /assets/images/doug-petkanics-livepeer-.webp
+    - name: Eric Hillerbrand
+      title: CEO
+      company: Brainstems.ai
+      linkedin: https://www.linkedin.com/in/erichillerbrand/
+      image:
+        src: /assets/images/1516209091009.webp
+    - name: Ethan Lau
+      title: Marketing Business Development Manager
+      company: RRM Global
+      linkedin: NA
+      image:
+        src: /assets/images/ethan-lau-rrm-global.webp
+    - name: Gary Moran
+      title: "Creative Director "
+      company: Filecoin Foundation
+      linkedin: "https://www.linkedin.com/in/gmoranxyz/ "
+      image:
+        src: /assets/images/gary-moran.png
+    - name: Greg Osuri
+      title: Founder
+      company: Akash Network
+      linkedin: https://www.linkedin.com/in/gosuri/
+      image:
+        src: /assets/images/greg-osuri-akash-network.webp
 seo:
   description: Join FIL Brussels to connect with the Filecoin community and
     explore new developments.
