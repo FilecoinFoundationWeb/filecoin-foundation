@@ -1,10 +1,6 @@
 ---
 title: FIL Euro Tour
-description: "FIL Euro Tour is here! From May to July 2025, we’re supporting
-  Filecoin activations across Europe to empower the ecosystem to connect and
-  collaborate. Join us this summer as we connect with local communities across
-  Europe to build the future of decentralized technology. Let’s
-  #FollowTheCorgi."
+description: "FIL Euro Tour is here! From May to July 2025, we’re supporting Filecoin activations across Europe to empower the ecosystem to connect and collaborate. Join us this summer as we connect with local communities across Europe to build the future of decentralized technology. Let’s #FollowTheCorgi."
 created-on: 2025-04-30T14:56:00.000Z
 updated-on: 2025-04-30T14:56:00.000Z
 published-on: 2025-04-30T14:56:00.000Z
@@ -14,7 +10,6 @@ location:
   region: europe
 start-date: 2025-05-09
 end-date: 2025-07-03
-external-link: ""
 image:
   src: /assets/images/fileurotour_hero-1-.webp
 program:
@@ -35,7 +30,8 @@ program:
     - title: "Silesia Web3 Meetup: ETHWarsaw & Filecoin"
       start-date: 2025-05-20
       location: Wrocław, Poland
-      description: Join ETHWarsaw and Filecoin for a special night in Wrocław! Connect
+      description:
+        Join ETHWarsaw and Filecoin for a special night in Wrocław! Connect
         with builders, developers, and researchers over expert talks, technical
         workshops, and pizza and refreshments. Whether you're a Web3 newbie or
         native come learn, network & deepen ecosystem connections!
@@ -44,15 +40,16 @@ program:
       start-date: 2025-05-20
       end-date: 2025-05-22
       location: London, UK
-      description: Meet Yan Bo (Strategic Partnerships Lead) at Avalanche Summit to
+      description:
+        Meet Yan Bo (Strategic Partnerships Lead) at Avalanche Summit to
         discuss enterprise strategy, AI projects, L1/L2, and VC relations. Reach
         out to marketing@fil.org to book a meeting and explore opportunities.
       external-link: https://www.avalanchesummitlondon.com/
     - title: ETH Dublin
       start-date: 2025-05-23
-      end-date: 2025-05-25
       location: Dublin, Ireland
-      description: Meet FF’s team at ETH Dublin — Gary Moran (Creative Director) and
+      description:
+        Meet FF’s team at ETH Dublin — Gary Moran (Creative Director) and
         Yan Bo (Strategic Partnerships Lead). Connect to explore opportunities
         in the Filecoin ecosystem. Reach out to marketing@fil.org to book a
         meeting!
@@ -68,25 +65,27 @@ program:
     - title: Filecoin Code n' Corgi Prague
       start-date: 2025-05-30
       location: Prague, Czechia
-      description: ​Love memes? You need to be here. ​Join us for a lighthearted and
+      description:
+        ​Love memes? You need to be here. ​Join us for a lighthearted and
         lively gathering of Filecoin builders, devs, and community friends.
         Expect laughs, plushie corgis (yes, limited edition Prague plushies),
         and plenty of Filecoin camaraderie. Come for the memes and corgis, stay
         for the code and the community.
-      end-date: ""
       external-link: https://lu.ma/vyqhbucj
     - title: ETHGlobal Prague
       start-date: 2025-05-30
       end-date: 2025-06-01
       location: Prague, Czechia
-      description: Protocol Labs is sponsoring the ETHGlobal Prague hackathon with a
+      description:
+        Protocol Labs is sponsoring the ETHGlobal Prague hackathon with a
         bounty prize! Be sure to register and stay tuned for more details.
       external-link: https://ethglobal.com/events/prague
     - title: FtC Berlin Forum
       start-date: 2025-06-10
       end-date: 2025-06-15
       location: Berlin, Germany
-      description: Funding the Commons (FtC) and Web3Privacy Now are teaming up for
+      description:
+        Funding the Commons (FtC) and Web3Privacy Now are teaming up for
         two days of cross-disciplinary programming and  workshops focused on the
         Infrastructure of Resilience. Join the FtC co-working space, sponsored
         by Protocol Labs, on June 12–13 in Berlin.
@@ -103,7 +102,8 @@ program:
       start-date: 2025-06-30
       end-date: 2025-07-03
       location: Cannes, France
-      description: Meet Clara Tsao (FF’s Founding Officer) during EthCC! Reach out to
+      description:
+        Meet Clara Tsao (FF’s Founding Officer) during EthCC! Reach out to
         marketing@fil.org to book a meeting and explore opportunities in the
         Filecoin ecosystem.
       external-link: https://ethcc.io/
