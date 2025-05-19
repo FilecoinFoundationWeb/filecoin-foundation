@@ -32,7 +32,7 @@ program:
         and in the highly anticipated dogfooding workshop during Code n’ Corgi
         at AIhub by Unicorn Factory Lisboa.
       external-link: https://lu.ma/ETH-Lisbon-2025
-    - title: "Silesia Meetup: ETHWarsaw & Filecoin Meetup!"
+    - title: "Silesia Web3 Meetup: ETHWarsaw & Filecoin"
       start-date: 2025-05-20
       location: Wrocław, Poland
       description: Join ETHWarsaw and Filecoin for a special night in Wrocław! Connect
