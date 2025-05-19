@@ -39,6 +39,7 @@ program:
         with builders, developers, and researchers over expert talks, technical
         workshops, and pizza and refreshments. Whether you're a Web3 newbie or
         native come learn, network & deepen ecosystem connections!
+      external-link: https://lu.ma/m0rn6eim
     - title: Avalanche Summit
       start-date: 2025-05-20
       end-date: 2025-05-22
