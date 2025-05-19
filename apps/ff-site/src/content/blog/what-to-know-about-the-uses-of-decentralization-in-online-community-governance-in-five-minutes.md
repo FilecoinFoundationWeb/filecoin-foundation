@@ -23,7 +23,7 @@ seo:
 
 _The Decentralists, a twitter space series hosted by Filecoin Foundation speaks with top minds at the intersection of Dweb and technology created for real world applications._
 
-Filecoin Foundation Senior Fellow [Danny O’Brien](https://twitter.com/mala) spoke with [Nathan Schneider](https://twitter.com/ntnsndr), professor of media studies at the University of Colorado Boulder, about decentralization and the potential advantages it has for the growth of online community governance. Schneider is a renowned scholar, activist, and journalist, who has been recognized for his work on democratic ownership and governance models for online platforms and protocols. Stream the full episode [here](https://twitter.com/FilFoundation/status/1636035589874110465?s=20), and check out the highlights below:
+Filecoin Foundation Senior Fellow [Danny O’Brien](https://twitter.com/mala) spoke with [Nathan Schneider](https://twitter.com/ntnsndr), professor of media studies at the University of Colorado Boulder, about decentralization and the potential advantages it has for the growth of online community governance. Schneider is a renowned scholar, activist, and journalist, who has been recognized for his work on democratic ownership and governance models for online platforms and protocols. Stream the full episode on Twitter: [Filecoin Foundation episode – full video](https://twitter.com/FilFoundation/status/1636035589874110465?s=20), and check out the highlights below:
 
 ## **“We are at risk of building digital systems that are effectively silencing and steamrolling governance practices that have long preceded them.”**
 

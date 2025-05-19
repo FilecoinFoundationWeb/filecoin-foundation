@@ -16,7 +16,7 @@ seo:
     guide for developers. Part 2 of the series.
 ---
 
-This is part two in Filecoin Developer [Pan Chasinga](https://pancy.medium.com/)’s tutorial on how to create a simple NFT marketplace app on the [Flow](https://www.onflow.org/) blockchain from scratch, using the Flow blockchain and IPFS/Filecoin storage via [nft.storage](https://nft.storage/). Catch up on Part One [HERE](/blog/building-a-flow-nft-pet-store-part-1).
+This is part two in Filecoin Developer [Pan Chasinga](https://pancy.medium.com/)'s tutorial on how to create a simple NFT marketplace app on the [Flow blockchain](https://www.onflow.org/) from scratch, using the Flow blockchain and IPFS/Filecoin storage via [nft.storage](https://nft.storage/). Catch up on [Part One of the NFT marketplace tutorial](/blog/building-a-flow-nft-pet-store-part-1).
 
 In this second part of the tutorial, we will work on building the UI with React.js and Flow’s [fcl.js](https://docs.onflow.org/fcl/) library to interact with the on-chain smart contract we deployed in the [first part](https://dev.to/pancy/building-a-flow-nft-pet-store-part-1-4bn9).
 

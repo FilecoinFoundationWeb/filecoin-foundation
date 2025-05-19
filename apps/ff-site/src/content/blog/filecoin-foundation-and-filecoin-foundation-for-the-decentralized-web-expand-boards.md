@@ -35,7 +35,7 @@ A _Fortune_ 40 Under 40 recipient, Smith is the founding executive director of t
 
 “We are thrilled to welcome these industry leaders to FF and FFDW,” said Marta Belcher, board chair of FF and FFDW. “We are so excited about the amazing group of people we are bringing together to help advance our missions of preserving humanity’s most important information and decentralizing the Web.”
 
-Find information about FF and FFDW’s board members and advisors [here](https://medium.com/p/ed13da68c66a/edit).
+Find information about FF and FFDW’s board members and advisors in this [Medium post overviewing the leadership team](https://medium.com/p/ed13da68c66a).
 
 **About Filecoin Foundation**
 Filecoin is a peer-to-peer network that stores files, with built-in economic incentives to ensure files are stored reliably over time. The mission of Filecoin Foundation is to accelerate the growth of Filecoin and related technologies to create a decentralized, efficient, and robust foundation for humanity’s information.

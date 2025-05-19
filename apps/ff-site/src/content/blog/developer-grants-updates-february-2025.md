@@ -19,7 +19,7 @@ Welcome back to the Developer Grants Updates series! Since our [last update](/bl
 
 Filecoin Foundation (FF) is working with [FIL-B](https://fil.builders/) to provide FIL Builder Next Step Grants valued between $5,000 and $10,000. This grant type is intended to support builders taking their active Filecoin projects to the next level! 
 
-Are you working on an onchain Filecoin project that incorporates the [Filecoin Virtual Machine](https://fvm.filecoin.io/) (FVM)? Do you have a proof of concept or a solid background in Web3 development? This grant might be perfect for you! Review the criteria list and grant scope [here](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Builder%20Next%20Step%20Grants.md).
+Are you working on an onchain Filecoin project that incorporates the [Filecoin Virtual Machine (FVM)](https://fvm.filecoin.io/)? Do you have a proof of concept or a solid background in Web3 development? This grant might be perfect for you! Review the [Builder Next Step Grants criteria and scope](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Builder%20Next%20Step%20Grants.md) to learn more.
 
 FIL Builder Next Steps Grants are open for applications: the official review process kicked off on December 1, 2024, and will run through April 30, 2025. [Documentation Enhancement Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Documentation%20Enhancement%20Grants%20README.md), launched in May 2024, are now included in the Next Step Grants. 
 

@@ -98,4 +98,4 @@ Rounding out the first half of 2022 was our first-ever FIL Austin, a week of Fil
 
 Headlining FIL Austin was a full day of programming featuring two tracks and talks from Web3 thought leaders, entrepreneurs, and Filecoin ecosystem builders. From NFTs, to the metaverse, to actual outer space, discussions throughout the three-day event focused on how the Filecoin network provides the infrastructure to build a resilient decentralized Web.
 
-A full recap of FIL Austin can be found [here](/blog/fil-austin-2022-recap-fil-ling-you-in) and you can relive the whole experience with on-demand recordings of all FIL Austin Main Stage programming [here](https://www.youtube.com/playlist?list=PLp3zrT1ewY0nKSt_IKNhxNyRCzI7KiWwS).
+Read our [detailed FIL Austin 2022 event recap](/blog/fil-austin-2022-recap-fil-ling-you-in) and watch [all FIL Austin Main Stage programming sessions](https://www.youtube.com/playlist?list=PLp3zrT1ewY0nKSt_IKNhxNyRCzI7KiWwS) on demand.

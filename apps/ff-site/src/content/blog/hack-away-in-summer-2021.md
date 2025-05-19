@@ -36,7 +36,7 @@ This ETHGlobal virtual hackathon, sponsored by Filecoin Foundation, challenges d
 
 ## Filecoin Club
 
-Encode Club, a community of university students, researchers, and developers building in blockchain, is introducing Filecoin Club to educate the next generation of students about Filecoin’s technology. Even though this hackathon does not begin until October, anyone can get involved during this summer’s 12-week program of educational events on all things Filecoin and IPFS. In the fall, join the 8-week hackathon to build projects on Filecoin and compete for prizes, including the chance to be selected for the Filecoin Club Accelerator program. See how you can engage with the Filecoin Club [here](https://www.encode.club/).
+Encode Club, a community of university students, researchers, and developers building in blockchain, is introducing Filecoin Club to educate the next generation of students about Filecoin’s technology. Even though this hackathon does not begin until October, anyone can get involved during this summer’s 12-week program of educational events on all things Filecoin and IPFS. In the fall, join the 8-week hackathon to build projects on Filecoin and compete for prizes, including the chance to be selected for the Filecoin Club Accelerator program. [Learn more and get involved through the Encode Club website](https://www.encode.club/).
 
 ## Need Inspiration?
 

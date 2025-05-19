@@ -45,4 +45,4 @@ A beta version of the Distributed Press integration into the Sutty CMS will be r
 
 COMPOST is a DWeb-native magazine about the digital commons that is the sister project to Distributed Press. Check out [Issue 02 here!](https://two.compost.digital/) COMPOST is designed to live test Distributed Press and research distributed publishing features directly with communities of artists, journalists, and more. For instance, Sutty works closely with activists and journalists to help host vulnerable web resources that are at risk of being compromised or unilaterally removed.
 
-FFDW is supporting the third issue of COMPOST, which is expected to go live in March 2023. To stay up-to-date on COMPOST, you can subscribe to their newsletter [here](https://lists.hypha.coop/cgi-bin/mailman/listinfo/compost).
+FFDW is supporting the third issue of COMPOST, which is expected to go live in March 2023. To stay up-to-date on COMPOST, you can [subscribe to the COMPOST newsletter via Hypha](https://lists.hypha.coop/cgi-bin/mailman/listinfo/compost).

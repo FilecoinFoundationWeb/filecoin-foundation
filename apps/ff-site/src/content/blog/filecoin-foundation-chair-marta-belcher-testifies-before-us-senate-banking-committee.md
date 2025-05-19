@@ -34,4 +34,4 @@ Committee Chairman Sherrod Brown (D-OH) said that “some of these underlying te
 
 Marta urged the committee to think expansively about cryptocurrency’s potential: “This technology is in its early days, and this stage of development for cryptocurrency is often compared to the Internet of the early ’90s. It would have been a mistake, in 1995, to believe that we understood then what the Internet was good for. I would urge the Committee to embrace the possibility that cryptocurrency’s uses might be just as expansive, and to ensure that innovation in this space can continue to thrive.”
 
-[Read](https://www.banking.senate.gov/imo/media/doc/Belcher%20Testimony%207-27-21.pdf) Marta’s oral testimony, and watch the full hearing [here](https://www.banking.senate.gov/hearings/cryptocurrencies-what-are-they-good-for).
+[Read Marta's full written testimony](https://www.banking.senate.gov/imo/media/doc/Belcher%20Testimony%207-27-21.pdf) and [watch the complete Senate Banking Committee hearing](https://www.banking.senate.gov/hearings/cryptocurrencies-what-are-they-good-for).

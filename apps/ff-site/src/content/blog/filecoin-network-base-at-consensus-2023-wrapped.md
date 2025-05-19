@@ -21,7 +21,7 @@ seo:
 
 Across the week, more than 600 people visited the Network Base to co-work, network, and hear some amazing talks from folks within the Filecoin ecosystem and beyond.
 
-Take a look at all the talks from FIL Network Base [here](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kwXj2NgQU6ZrbLlb_Uwmc0)!
+Watch all the recorded talks from the Filecoin Network Base at Consensus 2023 [on our YouTube playlist](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kwXj2NgQU6ZrbLlb_Uwmc0)!
 
 ![](/assets/images/filecoin-network-base-1.jpg)
 

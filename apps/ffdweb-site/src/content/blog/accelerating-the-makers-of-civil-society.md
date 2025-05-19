@@ -26,7 +26,7 @@ Accelerating Makers will connect emerging DWeb tools and the needs of civil soci
 
 We'll accomplish this through a series of community events that bring the Maker, civil society, and funder communities together, all of which will be supported by expert-developed educational materials. Along with this dynamic event series, we'll be launching a GitHub repo in which all the resources we've developed — including open-source code — will be made available to the public.
 
-We've already held our first event, [How Can Civil Society Participate in the Decentralized Future of the Web?](https://www.youtube.com/watch?v=biI1sR859xE), featuring Hunter Treseder, head of global social impact programs at Filecoin Foundation & FFDW, and Nathan Freitas, founder and director of Guardian Project. You can find a video of that full event [here](https://www.youtube.com/watch?v=biI1sR859xE).
+We've already held our first event, [How Can Civil Society Participate in the Decentralized Future of the Web?](https://www.youtube.com/watch?v=biI1sR859xE), featuring Hunter Treseder, head of global social impact programs at Filecoin Foundation & FFDW, and Nathan Freitas, founder and director of Guardian Project. You can [watch the full event recording on YouTube](https://www.youtube.com/watch?v=biI1sR859xE).
 
 This is the first of many events and actions that we'll be taking to achieve the goals of this project. Here's how we plan to introduce civil society decision-makers (such as NGO executive directors and more) to DWeb technology — and how we'll introduce the Makers of Dweb technology (blockchain software developers, for example) to those same decision-makers:
 
