@@ -15,7 +15,7 @@ _[Exploring the Decentralized Web](https://www.youtube.com/watch?v=P0yfvedPY94&l
 
 Decentralized web technology is enabling web developers and users alike to solve some of the issues that arose during the Web2 era, such as a lack of community governance and the stripping of web content’s value.
 
-Episodes 9–12 cover how Web3 re-establishes the internet as an inclusive community and returns content ownership and control to users. You can find recaps of episodes 1–4 [here](https://medium.com/@FFDWeb/check-out-our-docuseries-exploring-the-decentralized-web-b7d13e2415d), and episodes 5–8 [here](https://medium.com/@FFDWeb/exploring-the-decentralized-web-episodes-5-8-a7be0b3ff25). See below for a sneak peek into the final four episodes:
+Episodes 9–12 cover how Web3 re-establishes the internet as an inclusive community and returns content ownership and control to users. You can find recaps of episodes 1–4 in our [first blog post about the documentary series](https://medium.com/@FFDWeb/check-out-our-docuseries-exploring-the-decentralized-web-b7d13e2415d), and episodes 5–8 in our [second blog post](https://medium.com/@FFDWeb/exploring-the-decentralized-web-episodes-5-8-a7be0b3ff25). See below for a sneak peek into the final four episodes:
 
 **[Episode 9: "Beyond the Ad Model"](https://www.youtube.com/watch?v=BSvwtY05doY)**
 

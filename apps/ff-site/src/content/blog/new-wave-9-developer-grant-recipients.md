@@ -15,7 +15,7 @@ seo:
     their innovative projects.
 ---
 
-Filecoin Foundation and Protocol Labs award funding on a monthly basis to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. You can learn more about the DevGrants [here](https://github.com/markg85/devgrants/blob/IPFS-support-in-FFmpeg-based-media-players/open-grants/open-proposal-IPFS-support-in-FFmpeg-based-media-players.md).
+Filecoin Foundation and Protocol Labs award funding on a monthly basis to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. You can learn more about the DevGrants program and view the IPFS support proposal for FFmpeg-based media players [on GitHub](https://github.com/markg85/devgrants/blob/IPFS-support-in-FFmpeg-based-media-players/open-grants/open-proposal-IPFS-support-in-FFmpeg-based-media-players.md).
 
 For Wave 9, we’ve reviewed and awarded the following projects aligned with our strategic goals in providing a healthier ecosystem.
 
@@ -55,7 +55,7 @@ For Wave 9, we’ve reviewed and awarded the following projects aligned with our
 
 ## Wave 10 and Other Upcoming Grants
 
-Wave 10 proposals are due Tuesday, August 31, by 11:59 p.m. PT for priority consideration. You can also find examples of previous proposals [here](https://github.com/filecoin-project/devgrants/labels/proposal-type%3Aopen).
+Wave 10 proposals are due Tuesday, August 31, by 11:59 p.m. PT for priority consideration. You can also [browse examples of previous open proposals on GitHub](https://github.com/filecoin-project/devgrants/labels/proposal-type%3Aopen).
 
 Additionally, there are other grants that Filecoin Foundation is currently funding:
 

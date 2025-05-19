@@ -18,7 +18,7 @@ seo:
 
 _The Decentralists, a twitter space series hosted by Filecoin Foundation speaks with top minds at the intersection of Dweb and technology created for real world applications._
 
-Filecoin Foundation Senior Fellow [Danny O’Brien](https://twitter.com/mala) spoke with [Ethan Zuckerman](https://twitter.com/EthanZ), a professor at the University of Massachusetts at Amherst, about the future of digital public infrastructure and how communities can govern their own digital spaces. Stream the full episode [here](https://twitter.com/FilFoundation/status/1629225134308433922?s=20), and check out the highlights below:
+Filecoin Foundation Senior Fellow [Danny O’Brien](https://twitter.com/mala) spoke with [Ethan Zuckerman](https://twitter.com/EthanZ), a professor at the University of Massachusetts at Amherst, about the future of digital public infrastructure and how communities can govern their own digital spaces. [Watch the full conversation on Twitter](https://twitter.com/FilFoundation/status/1629225134308433922?s=20), and check out the highlights below:
 
 ### The Importance of Community Involvement in Shaping Digital Spaces
 

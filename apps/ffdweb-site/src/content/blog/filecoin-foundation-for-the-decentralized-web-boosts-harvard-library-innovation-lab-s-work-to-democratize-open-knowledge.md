@@ -32,4 +32,4 @@ This award will help the Lab to pursue new projects that align with the Lab’s 
 
 “FFDW is on a mission to preserve humanity’s most important information,” said FFDW President and Chair Marta Belcher. “This collaboration will enable the Library Innovation Lab to explore how decentralized technologies can solve real-world challenges to preserve critical data, and we’re thrilled to support the Library’s Democratizing Open Knowledge program.”
 
-You can learn more about the Library Innovation Lab and its projects [**here**](https://lil.law.harvard.edu/).
+Learn more about the Library Innovation Lab and its innovative projects at [lil.law.harvard.edu](https://lil.law.harvard.edu/).

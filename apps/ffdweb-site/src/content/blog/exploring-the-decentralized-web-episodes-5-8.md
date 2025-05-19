@@ -10,7 +10,7 @@ seo:
 
 _[Exploring the Decentralized Web](https://www.youtube.com/watch?v=P0yfvedPY94&list=PL37YlBYJT0nmfqDnbov6lKHUyZvRfQjap&index=1) is a 12-part documentary series produced by Filecoin Foundation for the Decentralized Web (FFDW). These videos, featuring leaders and visionaries from top projects across the space, explore the emergence and impact of decentralized technology._
 
-Episodes 5–8 dive into some of the most impactful topics in the Web3 space –from privacy, identity, and user control, to blockchain economics, dApps, and open-source development. You can find a recap of the first four episodes [here](https://medium.com/@FFDWeb/check-out-our-docuseries-exploring-the-decentralized-web-b7d13e2415d). Check out a sneak peak of the next four episodes below:
+Episodes 5–8 dive into some of the most impactful topics in the Web3 space –from privacy, identity, and user control, to blockchain economics, dApps, and open-source development. You can find a recap of the first four episodes [in our previous blog post](https://medium.com/@FFDWeb/check-out-our-docuseries-exploring-the-decentralized-web-b7d13e2415d). Check out a sneak peak of the next four episodes below:
 
 **[Episode 5: "Privacy and Rights"](https://www.youtube.com/watch?v=paeI3LiHIuI&t=1s)**
 

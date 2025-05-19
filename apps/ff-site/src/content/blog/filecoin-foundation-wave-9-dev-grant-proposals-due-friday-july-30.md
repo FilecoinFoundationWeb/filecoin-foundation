@@ -19,7 +19,7 @@ Filecoin Foundation and Protocol Labs periodically award funding to critical dev
 
 Dev Grants are a way to reward those who are adding value to the Filecoin ecosystem, encourage new builders to get involved and seed new products and businesses that increase the utility of Filecoin.
 
-Filecoin Dev Grants are now awarded on a monthly basis. **Wave 9 proposals are due Friday, July 30, by 11:59 PM PDT for priority consideration. Submit your proposal** **[here](https://github.com/filecoin-project/devgrants).**
+Filecoin Dev Grants are now awarded on a monthly basis. **Wave 9 proposals are due Friday, July 30, by 11:59 PM PDT for priority consideration. Submit your proposal** **[through the Filecoin Dev Grants GitHub repository](https://github.com/filecoin-project/devgrants).**
 
 Here’s a summary of the ten projects that received funding in July as part of the Wave 8 Dev Grant cycle:
 

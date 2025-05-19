@@ -30,7 +30,7 @@ Developers will also be able to build Web3 applications on top of JACKAL’s hot
 
 The Filecoin Developer Grant will specifically help power JACKAL’s team to launch JACKAL Storage in March of this year. The grant will be used in the span of 14 weeks supporting the team until the minimum viable product launches on the Mainnet. Shortly after launch, JACKAL will host a private sale and launch the utility token for node incentivization to drive the expansion of Filecoin’s peer-to-peer storage network, motivating new storage providers to sign up. The grant will help build momentum until JACKAL Storage becomes fully operational.
 
-JACKAL will also conduct a Testnet alpha of JACKAL Storage between February 14 and March 4. Individuals interested in incentivized testing can sign up [HERE](https://docs.google.com/forms/d/e/1FAIpQLSdda_X6rnHPIUe8DbsJnC1ppIoayglBud-3-ek8ELSqtv71vg/viewform).
+JACKAL will also conduct a Testnet alpha of JACKAL Storage between February 14 and March 4. Individuals interested in incentivized testing can [sign up for the Testnet alpha program](https://docs.google.com/forms/d/e/1FAIpQLSdda_X6rnHPIUe8DbsJnC1ppIoayglBud-3-ek8ELSqtv71vg/viewform).
 
 Through all this process, JACKAL is bringing together the Filecoin Network and the Secret Network, with the goal of increasing usage and user acquisition, providing a product that both enterprise clients and individuals need.
 

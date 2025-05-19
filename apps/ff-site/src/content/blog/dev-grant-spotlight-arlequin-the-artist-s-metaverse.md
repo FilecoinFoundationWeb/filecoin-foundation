@@ -33,6 +33,6 @@ The platform uses [nft.storage](https://nft.storage/), backed by Filecoin and IP
 
 Looking ahead, Kevin and his team plan to build a 3D Metaverse in 2023. In the meantime, players can mint their Arlees directly with the Painter. This Painter proposes one Arlee at a time and it changes every 3 weeks. The current Arlee is the Cockatoo and each time a player mints it 1 $FLOW is sent to an animal charity for birds ([LPO](https://www.lpo.fr/)).
 
-Read more about the Arlequin backstory and their plans for the future [here](https://medium.com/@arlequinnft/arlequin-the-minecraft-for-colors-30b5bd3bf58f).
+Read more about Arlequin's journey from concept to creation and their vision for building a 3D Metaverse in their [Medium article](https://medium.com/@arlequinnft/arlequin-the-minecraft-for-colors-30b5bd3bf58f).
 
 _The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

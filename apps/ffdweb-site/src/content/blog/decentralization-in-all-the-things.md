@@ -11,7 +11,7 @@ seo:
   description: "Explore how the Decentralized Web Gateway bridges Web2 and Web3, making decentralized content accessible through traditional browsers while preserving data integrity."
 ---
 
-_This is a guest post by Mike Masnick, the founder and CEO of Floor64 and editor of the Techdirt blog. You can find a PDF of this essay [here](https://fil-foundation.on.fleek.co/hosting/Decentralization%20In%20All%20the%20Things.pdf)._
+_This is a guest post by Mike Masnick, the founder and CEO of Floor64 and editor of the Techdirt blog. You can [download a PDF version of this essay](https://fil-foundation.on.fleek.co/hosting/Decentralization%20In%20All%20the%20Things.pdf)._
 
 We’re at an inflection point in the way we view society. We’ve been locked into industrial age views in an increasingly digital age. The economic and industrial policies of today are still tied to a world that existed over a century ago, and there are so many ways in which we can and should rethink them. This goes way beyond just planning for an ever-increasingly digital world: it means taking the lessons of what a digital world has taught us –– including upending some antiquated thinking about scarcity –– and applying it much more broadly to society.
 
