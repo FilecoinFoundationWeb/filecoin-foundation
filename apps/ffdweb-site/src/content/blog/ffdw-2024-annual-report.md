@@ -69,7 +69,7 @@ Decentralized storage focuses not just on storing data but also on enabling meth
 
 Two of Spritely's core projects are Spritely Goblins and [OCapN, the Object Capability Network](https://spritely.institute/news/introducing-ocapn-interoperable-capabilities-over-the-network.html). Spritely Goblins is a library and toolkit to make secure, distributed programming the default. Since its initial release, the team has shipped implementations across two programming languages: Racket and Guile. OCapN is the powerful protocol behind Spritely's distributed objecting programming. OCapN is a standard that will let decentralized services link together securely and share processes, identities, and data. This ambitious, multi-year project will permit the DWeb to interconnect and share resources in a way that centralized tools cannot. 
 
-#### [Web Foundation](https://webfoundation.org/)
+#### Web Foundation
 
 The Web Foundation advanced Sir Tim Berners-Lee's original vision for an open web that is safe, trusted, and empowering for all its users. FFDW's award helped Web Foundation to assess the current state of the web and determine how to use its voice to advocate for a better, re-decentralized future for the web. 
 

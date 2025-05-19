@@ -23,8 +23,6 @@ The two organizations have teamed up to build an environmentally friendly and co
 
 Twin Quasar uses the French capital’s position as an IP transit hub with super low latency connectivity and high density to offer data storage for a fraction of the cost of other offerings. To put this in perspective – Paris represents 30% of the global datasphere and is the largest market of data consumers and data producers in the world (two times the size of the U.S.).
 
-![IDC Global Datasphere by Region Chart](https://lh7-us.googleusercontent.com/IuMAdj-mK8taWHZ4uF-HKi8SQMaa4-JMCeVjX-QKMfm0e_Pe6cJ2xBupTItBbW1UVY3giuScNaKPQsWG2XyrShBbhmjb7HGlRipVy23lVsdtynMNtZMA4c9qYRZJo8d50cDjxIEUg407h1lf6bR1uV0)
-
 CELESTE, the major telecommunication, cloud, and cybersecurity provider for businesses, operates its own infrastructure of over 10,000 km of optical fiber network in France and Switzerland, five ecological data centers in Europe, and more than 1,500 peering agreements.
 
 Together, Twin Quasar and CELESTE’s data centers use solar panels and unique cooling techniques to create a patented environmentally-friendly approach to data storage. Combined, these power saving techniques bring down power usage effectiveness (PUE) to 1.3 – one of the lowest rates in the market.

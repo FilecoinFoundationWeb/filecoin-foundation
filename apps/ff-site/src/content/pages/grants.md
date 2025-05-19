@@ -12,7 +12,6 @@ featured_grant_graduates:
     "apps/ff-site/src/content/ecosystem-explorer/filedrive.md",
     "apps/ff-site/src/content/ecosystem-explorer/fileverse.md",
     "apps/ff-site/src/content/ecosystem-explorer/museum-of-crypto-art-m-c.md",
-    "apps/ff-site/src/content/ecosystem-explorer/opsci.md",
     "apps/ff-site/src/content/ecosystem-explorer/portrait.md",
   ]
 seo:
