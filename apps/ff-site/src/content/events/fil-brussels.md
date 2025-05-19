@@ -20,19 +20,22 @@ image:
   src: /assets/images/filbrussels.webp
 program:
   events:
-    - title: FIL Fest, in partnership with CoinDesk Studios, at FIL Brussels Network
+    - title:
+        FIL Fest, in partnership with CoinDesk Studios, at FIL Brussels Network
         Base
       start-date: 2024-07-08
       end-date: 2024-07-08
-      location: Maison Grand Place, Grand Place 19, 1000 Bruxelles, Belgium
-      description: Hear it here first. Catch the latest signal and breakthroughs from
+      location: Maison Grand Place, Grand Place 19
+      description:
+        Hear it here first. Catch the latest signal and breakthroughs from
         leading Filecoin ecosystem projects as they build an in-demand open data
         economy.
     - title: Cloud and Compute Day at FIL Brussels Network Base
       start-date: 2024-07-08
       end-date: 2024-07-08
-      location: Maison Grand Place, Grand Place 19, 1000 Bruxelles, Belgium
-      description: Infra 3.0 - Brussels DePIN Deep Dive, Hosted by Impossible Cloud
+      location: Maison Grand Place, Grand Place 19
+      description:
+        Infra 3.0 - Brussels DePIN Deep Dive, Hosted by Impossible Cloud
         Network and Pokt. Presented by Impossible Cloud Network, explore Web3’s
         hottest sector, DePIN, and learn about the possibilities unlocked by
         decentralized storage and compute-over-data advancements as DePIN
@@ -40,18 +43,18 @@ program:
       external-link: https://lu.ma/cgi2nejb
     - start-date: 2024-07-10
       title: AI and the Data Economy Day
-      end-date: 2024-10-07
-      location: Maison Grand Place, Grand Place 19, 1000 Bruxelles, Belgium
-      description: Join us as we explore why data is destined to become one of the
+      end-date: 2024-07-10
+      location: Maison Grand Place, Grand Place 19
+      description:
+        Join us as we explore why data is destined to become one of the
         world’s largest digital assets and how decentralized data networks like
         Filecoin underpin how data assets maintain their value – from AI agents
         to data marketplaces to use-case-specific LLMs.
-      external-link: https://fil-brussels.io/#agenda
     - title: Protocol Labs Meetup at EthCC
       start-date: 2024-07-08
       end-date: 2024-07-08
       external-link: https://lu.ma/aj5p0mwe
-      location: Grand Place 19, 1000 Bruxelles, Belgium
+      location: Maison Grand Place, Grand Place 19
       description: Come join us to catch up with familiar faces and meet fellow
         members from the Protocol Labs network. This is a great opportunity to
         kick off EthCC over food and drinks. Please note that this event is
@@ -59,17 +62,17 @@ program:
         approved by the event organizer.
     - start-date: 2024-07-10
       end-date: 2024-07-11
-      location: " SQUARE Brussels Meeting Centre, Mont des Arts, 1000 Bruxelles, Belgium"
+      location: SQUARE Brussels Meeting Centre, Mont des Arts
       title: Filecoin Booth at EthCC
-      description: Filecoin Booth at EthCC, hosted by the Filecoin Foundation, July
+      description:
+        Filecoin Booth at EthCC, hosted by the Filecoin Foundation, July
         10–11 at the SQUARE Brussels Meeting Centre, to learn more about the
         Filecoin vision, the latest developments for the EVM-compatible Filecoin
         network, and understand why storage is just the start for Filecoin.
     - title: FILDev Summit
       start-date: 2024-07-09
       end-date: 2024-07-11
-      location: " Radisson, Grand Place Brussels, Rue du Fossé aux Loups 47, 1000
-        Bruxelles, Belgium"
+      location: Radisson, Grand Place Brussels, Rue du Fossé aux Loups 47
       description: This vital summit brings together developers, innovators, and
         enthusiasts from the Filecoin community to dive deep into the future of
         decentralized storage technology. Whether you're looking to enhance your
@@ -77,11 +80,12 @@ program:
         transformative discussions, FDS is your gateway to advancing the
         blockchain frontier.
       external-link: https://www.fildev.io/FDS-4
-    - title: " IPFS Camp 2024"
+    - title: IPFS Camp 2024
       start-date: 2024-07-11
       end-date: 2024-07-13
-      location: Bruxelles, Bruxelles
-      description: "IPFS Camp is for those who want to bend the arc of the Internet to
+      location: Register to see location
+      description:
+        "IPFS Camp is for those who want to bend the arc of the Internet to
         be more open, efficient, and secure. Connecting builders and users,
         organized by thematic tracks, and inspired by both the in-depth
         conversations and unbounded energy of previous IPFS gatherings, it will
@@ -130,20 +134,20 @@ speakers:
         src: /assets/images/anjali-anjali-george.webp
     - name: Arthur Tan
       title: CEO
-      company: FiLLiquid
+      company: Fil Liquid
       linkedin: https://www.linkedin.com/in/arthur-tan/
       image:
         src: /assets/images/arthur_headshot.webp
     - name: Bidhan Roy
       title: CEO
       company: Bagel.net
-      linkedin: "https://www.linkedin.com/in/bidhanr "
+      linkedin: "https://www.linkedin.com/in/bidhanr"
       image:
         src: /assets/images/bidhan-roy.webp
     - name: Christian Kaul
       title: Founder & COO
       company: Impossible Cloud Network
-      linkedin: "https://www.linkedin.com/in/christiankaul/?originalSubdomain=de "
+      linkedin: "https://www.linkedin.com/in/christiankaul"
       image:
         src: /assets/images/ck.webp
     - name: Clara Tsao
@@ -153,7 +157,7 @@ speakers:
       image:
         src: /assets/images/clara-tsao-davos.webp
     - name: Daniel Andrade
-      title: "Co-Founder / CTO "
+      title: "Co-Founder & CTO"
       company: Hotspotty
       linkedin: https://www.linkedin.com/in/dansku/
       image:
@@ -184,7 +188,7 @@ speakers:
         src: /assets/images/diogo-haven.webp
     - name: Doug Petkanics
       title: Founder
-      company: Liverpeer
+      company: Livepeer
       linkedin: https://www.linkedin.com/in/dougpetkanics/
       image:
         src: /assets/images/doug-petkanics-livepeer-.webp
@@ -197,13 +201,12 @@ speakers:
     - name: Ethan Lau
       title: Marketing Business Development Manager
       company: RRM Global
-      linkedin: NA
       image:
         src: /assets/images/ethan-lau-rrm-global.webp
     - name: Gary Moran
-      title: "Creative Director "
+      title: Creative Director
       company: Filecoin Foundation
-      linkedin: "https://www.linkedin.com/in/gmoranxyz/ "
+      linkedin: https://www.linkedin.com/in/gmoranxyz/
       image:
         src: /assets/images/gary-moran.png
     - name: Greg Osuri
@@ -212,7 +215,7 @@ speakers:
       linkedin: https://www.linkedin.com/in/gosuri/
       image:
         src: /assets/images/greg-osuri-akash-network.webp
-    - name: Guiseppe De Luca
+    - name: Giuseppe De Luca
       title: Blockchain Developer
       company: IoTeX
       linkedin: https://www.linkedin.com/in/giupi-deluca/
@@ -243,13 +246,13 @@ speakers:
       image:
         src: /assets/images/jen_king_destor-1-1-.jpeg
     - name: Konstantin Tkachuk
-      title: "Co-founder and CSO "
+      title: "Co-founder and CSO"
       company: Titan Network
       linkedin: https://www.linkedin.com/in/tkachukk/
       image:
         src: /assets/images/konstantin-tkachuk.webp
     - name: Mara McMahon
-      title: "Co-Founder "
+      title: "Co-Founder"
       company: DeStor & FilStor
       linkedin: https://www.linkedin.com/in/maramcmahon/
       image:
@@ -285,7 +288,7 @@ speakers:
       image:
         src: /assets/images/image-12-.webp
     - name: Porter Stowell
-      title: "Head of Ecosystem & Community "
+      title: "Head of Ecosystem & Community"
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/porterstowell
       image:
@@ -339,7 +342,7 @@ speakers:
       image:
         src: /assets/images/image-11-.webp
     - name: Marla Natoli
-      title: "Strategic Partnerships "
+      title: Strategic Partnerships
       company: Textile
       linkedin: https://www.linkedin.com/in/marlanatoli/?originalSubdomain=ca
       image:
@@ -347,5 +350,4 @@ speakers:
 seo:
   description: Join FIL Brussels to connect with the Filecoin community and
     explore new developments.
-  title: FIL Brussels
 ---
