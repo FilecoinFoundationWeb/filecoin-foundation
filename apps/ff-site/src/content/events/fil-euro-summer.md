@@ -65,12 +65,16 @@ program:
         explore collaboration opportunities. To schedule a meeting, reach out at
         marketing@fil.org.
       external-link: https://ethprague.com/
-    - title: Filecoin Network Base
-      start-date: 2025-05-29
+    - title: Filecoin Code n' Corgi Prague
+      start-date: 2025-05-30
       location: Prague, Czechia
-      description: Join the Filecoin ecosystem at Filecoin Network Base during ETH
-        Prague! A full day of coworking, workshops, and networking — come
-        connect, learn, and engage with the community.
+      description: ​Love memes? You need to be here. ​Join us for a lighthearted and
+        lively gathering of Filecoin builders, devs, and community friends.
+        Expect laughs, plushie corgis (yes, limited edition Prague plushies),
+        and plenty of Filecoin camaraderie. Come for the memes and corgis, stay
+        for the code and the community.
+      end-date: ""
+      external-link: https://lu.ma/vyqhbucj
     - title: ETHGlobal Prague
       start-date: 2025-05-30
       end-date: 2025-06-01
