@@ -14,7 +14,7 @@ location:
   region: europe
 start-date: 2025-05-09
 end-date: 2025-07-03
-external-link: https://lu.ma/m0rn6eim
+external-link: ""
 image:
   src: /assets/images/fileurotour_hero-1-.webp
 program:
