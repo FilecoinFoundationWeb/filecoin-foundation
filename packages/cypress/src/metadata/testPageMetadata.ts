@@ -12,50 +12,43 @@ export function testPageMetaData(options: TestMetaDataOptions) {
 
   cy.visit(path)
 
-  // Meta title
-  cy.title().should('eq', title)
+  cy.get('head').within(() => {
+    // Basic metadata group
+    cy.get('title,meta[name="description"],link[rel="canonical"]').should(
+      ($elements) => {
+        expect($elements.eq(0)).to.have.text(title)
+        expect($elements.eq(1)).to.have.attr('content', description)
+        expect($elements.eq(2)).to.have.attr(
+          'href',
+          path === '/' ? baseUrl : `${baseUrl}${path}`,
+        )
+      },
+    )
 
-  // Meta description
-  cy.get('head meta[name="description"]').should(
-    'have.attr',
-    'content',
-    description,
-  )
+    // Open Graph metadata group
+    cy.get('meta[property^="og:"]').should(($elements) => {
+      expect($elements.filter('[property="og:title"]')).to.have.attr(
+        'content',
+        title,
+      )
+      expect($elements.filter('[property="og:description"]')).to.have.attr(
+        'content',
+        description,
+      )
+      expect($elements.filter('[property="og:image"]')).to.have.attr('content')
+    })
 
-  // Canonical link
-  cy.get('link[rel="canonical"]').should(
-    'have.attr',
-    'href',
-    path === '/' ? baseUrl : `${baseUrl}${path}`,
-  )
-
-  // OG title
-  cy.get('head meta[property="og:title"]').should('have.attr', 'content', title)
-
-  // OG description
-  cy.get('head meta[property="og:description"]').should(
-    'have.attr',
-    'content',
-    description,
-  )
-
-  // OG image
-  cy.get('head meta[property="og:image"]').should('have.attr', 'content')
-
-  // Twitter title
-  cy.get('head meta[name="twitter:title"]').should(
-    'have.attr',
-    'content',
-    title,
-  )
-
-  // Twitter description
-  cy.get('head meta[name="twitter:description"]').should(
-    'have.attr',
-    'content',
-    description,
-  )
-
-  // Twitter image
-  cy.get('head meta[name="twitter:image"]').should('have.attr', 'content')
+    // Twitter metadata group
+    cy.get('meta[name^="twitter:"]').should(($elements) => {
+      expect($elements.filter('[name="twitter:title"]')).to.have.attr(
+        'content',
+        title,
+      )
+      expect($elements.filter('[name="twitter:description"]')).to.have.attr(
+        'content',
+        description,
+      )
+      expect($elements.filter('[name="twitter:image"]')).to.have.attr('content')
+    })
+  })
 }
