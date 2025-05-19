@@ -7,48 +7,52 @@ export type TestMetaDataOptions = {
   baseUrl: string
 }
 
-export function testPageMetaData(options: TestMetaDataOptions) {
-  const { path, title, description, baseUrl } = options
+export function testPageMetaData({
+  path,
+  title,
+  description,
+  baseUrl,
+}: TestMetaDataOptions) {
+  const canonicalUrl = path === '/' ? baseUrl : `${baseUrl}${path}`
 
   cy.visit(path)
 
-  cy.get('head').within(() => {
-    // Basic metadata group
-    cy.get('title,meta[name="description"],link[rel="canonical"]').should(
-      ($elements) => {
-        expect($elements.eq(0)).to.have.text(title)
-        expect($elements.eq(1)).to.have.attr('content', description)
-        expect($elements.eq(2)).to.have.attr(
-          'href',
-          path === '/' ? baseUrl : `${baseUrl}${path}`,
-        )
-      },
-    )
+  // Title is not inside <head> element in DOM traversal context (it's a special case)
+  cy.title().should('eq', title)
 
-    // Open Graph metadata group
-    cy.get('meta[property^="og:"]').should(($elements) => {
-      expect($elements.filter('[property="og:title"]')).to.have.attr(
+  cy.get('head').within(() => {
+    // Basic metadata
+    cy.get('meta[name="description"]').should(
+      'have.attr',
+      'content',
+      description,
+    )
+    cy.get('link[rel="canonical"]').should('have.attr', 'href', canonicalUrl)
+
+    // Open Graph metadata
+    cy.get('meta[property^="og:"]').then(($els) => {
+      expect($els.filter('[property="og:title"]')).to.have.attr(
         'content',
         title,
       )
-      expect($elements.filter('[property="og:description"]')).to.have.attr(
+      expect($els.filter('[property="og:description"]')).to.have.attr(
         'content',
         description,
       )
-      expect($elements.filter('[property="og:image"]')).to.have.attr('content')
+      expect($els.filter('[property="og:image"]')).to.have.attr('content')
     })
 
-    // Twitter metadata group
-    cy.get('meta[name^="twitter:"]').should(($elements) => {
-      expect($elements.filter('[name="twitter:title"]')).to.have.attr(
+    // Twitter metadata
+    cy.get('meta[name^="twitter:"]').then(($els) => {
+      expect($els.filter('[name="twitter:title"]')).to.have.attr(
         'content',
         title,
       )
-      expect($elements.filter('[name="twitter:description"]')).to.have.attr(
+      expect($els.filter('[name="twitter:description"]')).to.have.attr(
         'content',
         description,
       )
-      expect($elements.filter('[name="twitter:image"]')).to.have.attr('content')
+      expect($els.filter('[name="twitter:image"]')).to.have.attr('content')
     })
   })
 }
