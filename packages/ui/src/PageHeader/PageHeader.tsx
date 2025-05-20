@@ -15,7 +15,7 @@ type PageHeaderDescriptionProps = {
 
 export type PageHeaderProps = {
   title: PageHeaderTitleProps['children']
-  image: PageHeaderImageProps
+  image?: PageHeaderImageProps
   isFeatured?: boolean
   metaData?: MetaDataType
   description?: PageHeaderDescriptionProps
