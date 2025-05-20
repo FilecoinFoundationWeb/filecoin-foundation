@@ -14,12 +14,13 @@ import { socialLinksWithIcons } from '@/utils/socialConfig'
 
 import { Card } from '@/components/Card'
 import { CTASection } from '@/components/CTASection'
-import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { DIGEST_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getDigestArticlesData } from './utils/getDigestArticleData'
+
+import { PageHeader } from '@/_components/PageHeader/PageHeader'
 
 export default async function Digest() {
   const articles = await getDigestArticlesData()
