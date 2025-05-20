@@ -63,7 +63,7 @@ program:
         explore collaboration opportunities. To schedule a meeting, reach out at
         marketing@fil.org.
       external-link: https://ethprague.com/
-    - title: Filecoin Code n' Corgi Prague
+    - title: "Filecoin Code n' Corgi Prague : Meme-a-thon"
       start-date: 2025-05-30
       location: Prague, Czechia
       description: ​Love memes? You need to be here. ​Join us for a lighthearted and
