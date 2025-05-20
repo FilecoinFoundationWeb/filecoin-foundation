@@ -39,7 +39,7 @@ Additionally, FF and Theoriq are exploring an AI agent leveraging [25 years of d
 
 ## Accelerating and Securing Access to AI Data
 
-[Nuklai](/ecosystem-explorer/nuklai), a collaborative data marketplace and infrastructure provider for data ecosystems, has integrated Filecoin through [Lighthouse](/ecosystem-explorer/lighthouse) to make Nuklai’s metadata publicly accessible. Nuklai plans to support secure data uploads to the InterPlanetary File System (IPFS) in the future and is exploring integrating Filecoin as a data storage cluster within its Layer 1 network for enterprise and other use cases, providing a perpetual and decentralized data storage model. Read the [Nuklai announcement](https://www.nukl.ai/blog/nuklai-and-filecoin-foundation-collaborate-to-archive-the-worlds-data).
+[Nuklai](/ecosystem-explorer/nuklai), a collaborative data marketplace and infrastructure provider for data ecosystems, has integrated Filecoin through [Lighthouse](/ecosystem-explorer/lighthouse) to make Nuklai’s metadata publicly accessible. Nuklai plans to support secure data uploads to the InterPlanetary File System (IPFS) in the future and is exploring integrating Filecoin as a data storage cluster within its Layer 1 network for enterprise and other use cases, providing a perpetual and decentralized data storage model.
 
 “For a more decentralized, open, and transparent AI-driven industry, we need data storage and compute solutions that work for businesses, while providing greater transparency and trust around the tech products transforming our lives,” said Danny O’Brien, Senior Fellow, Filecoin Foundation. “We’re thrilled to work with leading projects in this space to make decentralized storage on Filecoin the backbone of the AI wave.”
 

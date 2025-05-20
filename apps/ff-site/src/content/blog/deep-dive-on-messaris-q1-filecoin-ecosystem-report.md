@@ -50,7 +50,7 @@ Are you building on Filecoin? The FF Developer Working Group (DevWG) is open to 
 The Messari report also provides an ecosystem overview featuring the [Filecoin Ecosystem Explorer](/ecosystem-explorer), a community-powered database of projects in the network. As of March 2024, over 160 known projects are highlighted, such as:
 
 - [EQTY Lab](/ecosystem-explorer/eqty-lab-arc-collective): Uses cryptographic methods to validate snapshots of an AI model's lineage, leveraging decentralized technologies, like IPFS and Filecoin, to anchor model data.
-- [Banyan](/ecosystem-explorer/banyan): Web2-like decentralized storage for enterprises beyond archival.
+- Banyan: Web2-like decentralized storage for enterprises beyond archival.
 - [Lighthouse](/ecosystem-explorer/lighthouse): Perpetual data storage service with a one-time payment pricing model.
 - [Numbers Protocol](/ecosystem-explorer/numbers-protocol): Preserves data authenticity for digital media and generative AI.
 - [Fluence](/ecosystem-explorer/fluence): a decentralized, serverless computing platform empowering developers to scale their Web3 project.

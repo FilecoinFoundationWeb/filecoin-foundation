@@ -11,7 +11,6 @@ description: The Web Foundation advanced Sir Tim Berners-Lee's original vision
   which provided unique data and insights to help better understand what is
   happening in the online lives of users, and in what areas a course correction
   is needed.
-website: https://www.webfoundation.org/
 active-partnership: false
 image:
   src: /assets/images/web-foundation-hi-res-logo.jpeg

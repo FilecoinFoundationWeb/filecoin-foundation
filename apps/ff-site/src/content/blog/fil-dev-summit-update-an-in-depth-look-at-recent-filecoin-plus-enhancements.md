@@ -29,7 +29,7 @@ To streamline DataCap distribution and improve governance oversight, we've intro
 
 - Manual Pathway Meta Allocator (MPMA): provides an easy management of DataCap allocations to manual allocators, reducing overhead and speeding up governance interactions.
 - [Experimental Pathway Meta Allocator](https://github.com/fidlabs/Experimental-Pathway-Metaallocator): Supports innovative allocation strategies and new allocator types, fostering ecosystem experimentation and growth.
-- Automated Allocator ([faucet.allocator.tech](faucet.allocator.tech)): Provides immediate small-scale DataCap, assisting rapid testing and smaller scale use-cases.
+- Automated Allocator ([faucet.allocator.tech](https://faucet.allocator.tech/)): Provides immediate small-scale DataCap, assisting rapid testing and smaller scale use-cases.
 
 ### Compliance Trends and Allocator Adjustments
 

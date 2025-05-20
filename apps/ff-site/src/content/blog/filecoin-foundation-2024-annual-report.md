@@ -197,7 +197,7 @@ In 2024, FF announced 8 collaborations with prominent AI organizations, undersco
 
 [KiteAI](https://kiteai.tech/): As a foundational AI layer unlocking access to AI assets, [KiteAI is working with FF](https://medium.com/@KiteAI/kite-ai-and-filecoin-foundation-collaborate-to-redefine-ai-data-management-b4fdfc62b82a) to enhance data management for AI training. KiteAI will archive AI training datasets on Filecoin and integrate IPFS as part of its provenance layer.
 
-[Nuklai](/ecosystem-explorer/nuklai): Nuklai is a collaborative data marketplace and infrastructure provider for data ecosystems which [integrated](https://www.nukl.ai/blog/nuklai-and-filecoin-foundation-collaborate-to-archive-the-worlds-data) Filecoin to make its metadata publicly accessible.
+[Nuklai](/ecosystem-explorer/nuklai): Nuklai is a collaborative data marketplace and infrastructure provider for data ecosystems which integrated Filecoin to make its metadata publicly accessible.
 
 [SingularityNET](https://singularitynet.io/): A leading AI platform developer, SingularityNET, is [storing metadata](https://medium.com/singularitynet/singularitynet-and-filecoin-foundation-collaborate-to-enhance-ai-capabilities-through-depin-6b6db3ea224a) on Filecoin. The collaboration with FF will also integrate the Filecoin tech stack to support archival data needs. 
 
