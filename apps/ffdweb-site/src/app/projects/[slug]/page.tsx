@@ -65,6 +65,7 @@ export default async function Project(props: ProjectProps) {
               {title}
             </Heading>
           </div>
+
           <div className="relative mb-6 aspect-video bg-neutral-50">
             <Image
               fill
@@ -75,15 +76,20 @@ export default async function Project(props: ProjectProps) {
               sizes={buildImageSizeProp({ startSize: '100vw', md: '640px' })}
             />
           </div>
-          <div className="inline-flex flex-col gap-8 sm:flex-row sm:gap-12">
-            <CTALink href={website}>Visit Project Website</CTALink>
 
-            {featuredContent && (
-              <CTALink href={featuredContent} icon={Newspaper}>
-                Read Blog Post
-              </CTALink>
-            )}
-          </div>
+          {(website || featuredContent) && (
+            <div className="inline-flex flex-col gap-8 sm:flex-row sm:gap-12">
+              {website && (
+                <CTALink href={website}>Visit Project Website</CTALink>
+              )}
+
+              {featuredContent && (
+                <CTALink href={featuredContent} icon={Newspaper}>
+                  Read Blog Post
+                </CTALink>
+              )}
+            </div>
+          )}
         </div>
 
         <div className="prose">
