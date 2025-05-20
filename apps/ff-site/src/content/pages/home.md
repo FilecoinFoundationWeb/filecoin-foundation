@@ -8,7 +8,6 @@ featured_ecosystem_projects:
     "apps/ff-site/src/content/ecosystem-explorer/fleek.md",
     "apps/ff-site/src/content/ecosystem-explorer/tableland.md",
     "apps/ff-site/src/content/ecosystem-explorer/lighthouse.md",
-    "apps/ff-site/src/content/ecosystem-explorer/genrait.md",
     "apps/ff-site/src/content/ecosystem-explorer/starling-lab.md",
   ]
 seo:

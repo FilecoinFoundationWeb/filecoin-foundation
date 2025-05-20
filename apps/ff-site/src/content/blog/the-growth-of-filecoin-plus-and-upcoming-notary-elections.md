@@ -49,7 +49,7 @@ The Governance team is looking ahead and projecting another election cycle in Q3
 More than 300 clients have onboarded large datasets through the Filecoin Plus program (e.g., datasets that exceed 100TiB in storage size). Clients range from the USC Shoah Foundation, to Web3 platforms such as OpenSea. Other notable efforts to onboard valuable data into the Filecoin network include:
 
 - UC Berkeley collaborating with [Seal Storage](/ecosystem-explorer/seal-storage) for [storing physics research](https://www.newswire.ca/news-releases/uc-berkeley-engages-seal-storage-web3-technology-to-advance-innovative-neutrino-physics-research-883282087.html).
-- [GenRAIT](/ecosystem-explorer/genrait) leveraging Estuary to store critical [genomics data](/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data) on Filecoin.
+- GenRAIT leveraging Estuary to store critical [genomics data](/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data) on Filecoin.
 - Starling Labs research center storing sensitive [digital records of human history](https://medium.com/@FFDWeb/announcing-the-starling-lab-4f1ce0204f07).
 - Eweison (a fast growing host of photographs, illustrations, and vector files in China) using Filecoin for [data preservation](/blog/storage-company-ewesion-leverages-filecoin-network-for-data-preservation).
 
