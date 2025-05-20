@@ -16,7 +16,7 @@ export const ProjectFrontmatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: CategorySchema,
   description: z.string(),
-  website: z.string(),
+  website: z.string().optional(),
   'featured-content': z.string().optional(),
   'active-partnership': z.boolean().optional().default(false),
 }).strict()
