@@ -1,5 +1,5 @@
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
-import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
+import { PageHeaderTitle } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
@@ -47,7 +47,7 @@ export default async function EcosystemExplorerProjectForm(props: Props) {
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
 
       <div className="md:max-w-readable space-y-4">
-        <PageHeader.Title>{header.title}</PageHeader.Title>
+        <PageHeaderTitle>{header.title}</PageHeaderTitle>
         <DescriptionText>{PROJECT_FORM_DESCRIPTION}</DescriptionText>
       </div>
 
