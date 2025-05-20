@@ -1,4 +1,5 @@
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
@@ -9,12 +10,9 @@ import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
-
 import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
-
-import { PageHeader } from '@/components/PageHeader'
 
 import { getGroupedCategoryOptions } from '../utils/getGroupedCategoryOptions'
 

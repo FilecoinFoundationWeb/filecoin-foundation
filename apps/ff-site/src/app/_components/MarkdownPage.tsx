@@ -1,9 +1,9 @@
 import type { WithContext, WebPage } from 'schema-dts'
 
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
-import { PageHeader } from '@/components/PageHeader'
 
 type MarkdownPageProps = {
   title: string
