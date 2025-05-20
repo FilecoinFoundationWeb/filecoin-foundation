@@ -22,4 +22,6 @@ seo:
     infrastructure operates.
 ---
 
-Ansa Research is a research firm focused on distributed infrastructure. We cover digital networks aiming to rebuild how internet infrastructure operates.[](https://filecointldr.io/)[](mailto:contact@ansaresearch.ai)
+[Ansa Research](https://ansaresearch.ai/) is a research firm focused on distributed infrastructure. [FilecoinTLDR](https://filecointldr.io/) is a project of ANSA. They cover digital networks aiming to rebuild how internet infrastructure operates.
+
+For ecosystem, publication and collaboration inquiries, send an email to [contact@ansaresearch.ai](mailto:contact@ansaresearch.ai)
