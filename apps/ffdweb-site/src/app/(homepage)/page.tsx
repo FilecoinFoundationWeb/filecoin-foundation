@@ -19,6 +19,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { ContactCTA } from '@/components/ContactCTA'
 import { CTALink } from '@/components/CTALink'
+import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
@@ -27,7 +28,6 @@ import { FEATURED_PROJECTS } from './constants/featuredProjects'
 import { learningResources } from './constants/learningResources'
 import { getFeaturedProjects } from './utils/getFeaturedProjects'
 
-import { PageHeader } from '@/_components/PageHeader/PageHeader'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 export default async function Home() {

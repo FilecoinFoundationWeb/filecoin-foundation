@@ -30,7 +30,6 @@ export default async function Blog() {
   return (
     <PageLayout gap="large">
       <StructuredDataScript structuredData={generateStructuredData(BLOG_SEO)} />
-
       <PageHeader
         isFeatured
         title={featuredPost.title}
@@ -46,6 +45,7 @@ export default async function Blog() {
           Read Featured Post
         </Button>
       </PageHeader>
+
       <Suspense>
         <BlogContent posts={posts} />
       </Suspense>

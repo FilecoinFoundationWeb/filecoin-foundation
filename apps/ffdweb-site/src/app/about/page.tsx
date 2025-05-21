@@ -10,6 +10,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { ContactCTA } from '@/components/ContactCTA'
 import { CTALink } from '@/components/CTALink'
+import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { BoardMemberGrid } from './components/BoardMemberGrid'
@@ -20,8 +21,6 @@ import { impactAreas } from './constants/impactAreas'
 import { priorities } from './constants/priorities'
 import { ABOUT_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
-
-import { PageHeader } from '@/_components/PageHeader/PageHeader'
 
 export default function About() {
   return (

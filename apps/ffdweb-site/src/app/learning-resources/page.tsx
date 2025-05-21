@@ -11,14 +11,12 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { CTASection } from '@/components/CTASection'
-
+import { PageHeader } from '@/components/PageHeader'
 
 import { LearningResourcesContent } from './components/LearningResourcesContent'
 import { LEARNING_RESOURCES_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getLearningResourcesData } from './utils/getLearningResourceData'
-
-import { PageHeader } from '@/_components/PageHeader/PageHeader'
 
 export default async function LearningResources() {
   const resources = await getLearningResourcesData()
