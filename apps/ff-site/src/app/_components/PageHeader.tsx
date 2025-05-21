@@ -1,7 +1,7 @@
 import {
   PageHeader as SharedPageHeader,
   type PageHeaderProps as SharedPageHeaderProps,
-} from '@filecoin-foundation/ui/PageHeader/PageHeader'
+} from '@filecoin-foundation/ui/PageHeader'
 
 import { SectionDivider } from '@/components/SectionDivider'
 

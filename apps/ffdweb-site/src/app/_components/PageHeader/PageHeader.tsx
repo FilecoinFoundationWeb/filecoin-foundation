@@ -1,9 +1,11 @@
 import { clsx } from 'clsx'
 
+import type { PageHeaderImageProps } from '@filecoin-foundation/ui/PageHeader'
+
 import { Kicker } from '@/components/Kicker'
 
 import { type PageHeaderCTAProps, PageHeaderCTA } from './PageHeaderCTA'
-import { type PageHeaderImageProps, PageHeaderImage } from './PageHeaderImage'
+import { PageHeaderImage } from './PageHeaderImage'
 import { type PageHeaderTitleProps, PageHeaderTitle } from './PageHeaderTitle'
 
 type PageHeaderProps = {
