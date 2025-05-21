@@ -26,7 +26,7 @@ export function PageSection({
   as: Tag = 'section',
 }: PageSectionProps) {
   return (
-    <Tag className="space-y-16">
+    <Tag className="flex flex-col space-y-16">
       <div
         className={clsx(
           'flex max-w-2xl flex-col gap-8',
