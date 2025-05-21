@@ -21,6 +21,7 @@ export function getPageHeaderImageProps(
     quality: 100,
     sizes: buildImageSizeProp(sizeInput),
     className: clsx(
+      'page-header-image',
       image.objectFit === 'cover' && 'object-cover',
       image.objectFit === 'contain' && 'object-contain',
     ),

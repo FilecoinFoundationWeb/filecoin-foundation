@@ -1,10 +1,11 @@
 import { clsx } from 'clsx'
 
 import type { PageHeaderImageProps } from '@filecoin-foundation/ui/PageHeader'
+import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
+import { Button } from '@/components/Button'
 import { Kicker } from '@/components/Kicker'
 
-import { type PageHeaderCTAProps, PageHeaderCTA } from './PageHeaderCTA'
 import { PageHeaderImage } from './PageHeaderImage'
 import { type PageHeaderTitleProps, PageHeaderTitle } from './PageHeaderTitle'
 
@@ -12,7 +13,7 @@ type PageHeaderProps = {
   title: PageHeaderTitleProps['children']
   image: PageHeaderImageProps
   kicker?: string
-  cta?: PageHeaderCTAProps
+  cta?: CTAProps
   isHomepage?: boolean
 }
 
@@ -37,7 +38,11 @@ export function PageHeader({
           <PageHeaderTitle isHomepage={isHomepage}>{title}</PageHeaderTitle>
         </div>
 
-        {cta && <PageHeaderCTA {...cta} />}
+        {cta && (
+          <Button href={cta.href} aria-label={cta.ariaLabel}>
+            {cta.text}
+          </Button>
+        )}
       </div>
 
       <div
