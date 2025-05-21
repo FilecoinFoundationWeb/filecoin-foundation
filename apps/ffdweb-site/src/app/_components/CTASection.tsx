@@ -1,8 +1,6 @@
-import { Button } from '@filecoin-foundation/ui/Button'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
+import { Button } from './Button'
 import { Kicker } from './Kicker'
 
 type CTASectionProps = {
@@ -26,11 +24,7 @@ export function CTASection({ kicker, title, cta, children }: CTASectionProps) {
           </Heading>
         </div>
 
-        {cta && (
-          <Button href={cta.href} baseDomain={BASE_DOMAIN}>
-            {cta.text}
-          </Button>
-        )}
+        {cta && <Button href={cta.href}>{cta.text}</Button>}
 
         {children}
       </div>

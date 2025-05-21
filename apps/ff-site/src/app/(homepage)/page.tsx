@@ -1,4 +1,3 @@
-import { Button } from '@filecoin-foundation/ui/Button'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -18,6 +17,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { Button } from '@/components/Button'
 import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
@@ -117,7 +117,6 @@ export default async function Home() {
           <Button
             className="sm:self-center"
             href={PATHS.ECOSYSTEM_EXPLORER.path}
-            baseDomain={BASE_DOMAIN}
           >
             View All
           </Button>
@@ -142,11 +141,7 @@ export default async function Home() {
           >
             <FeaturedBlogPosts featuredBlogPosts={featuredBlogPosts} />
 
-            <Button
-              className="sm:self-center"
-              href={PATHS.BLOG.path}
-              baseDomain={BASE_DOMAIN}
-            >
+            <Button className="sm:self-center" href={PATHS.BLOG.path}>
               View All
             </Button>
           </PageSection>

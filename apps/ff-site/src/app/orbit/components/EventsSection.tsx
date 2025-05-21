@@ -1,7 +1,6 @@
 import * as Sentry from '@sentry/nextjs'
 import { ZodError } from 'zod'
 
-import { Button } from '@filecoin-foundation/ui/Button'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
@@ -17,6 +16,7 @@ import { logZodError } from '@filecoin-foundation/utils/zodUtils'
 
 import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'
 
@@ -48,10 +48,7 @@ export async function OrbitEventsSection({
 
     return (
       <div className="max-w-readable flex">
-        <Button
-          href={FILECOIN_FOUNDATION_URLS.orbit.eventsCalendar}
-          baseDomain={BASE_DOMAIN}
-        >
+        <Button href={FILECOIN_FOUNDATION_URLS.orbit.eventsCalendar}>
           Check Upcoming Events
         </Button>
       </div>
