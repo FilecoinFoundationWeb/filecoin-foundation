@@ -1,4 +1,4 @@
-import { Heading } from '@filecoin-foundation/ui/Heading'
+import { PageHeaderTitle as SharedPageHeaderTitle } from '@filecoin-foundation/ui/PageHeader'
 
 export type PageHeaderTitleProps = {
   isHomepage?: boolean
@@ -12,8 +12,8 @@ export function PageHeaderTitle({
   const titleVariant = isHomepage ? '5xl-fluid' : '4xl-fluid'
 
   return (
-    <Heading tag="h1" variant={titleVariant}>
+    <SharedPageHeaderTitle variant={titleVariant}>
       {children}
-    </Heading>
+    </SharedPageHeaderTitle>
   )
 }
