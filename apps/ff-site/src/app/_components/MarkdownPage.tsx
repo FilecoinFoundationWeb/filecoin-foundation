@@ -1,9 +1,9 @@
 import type { WithContext, WebPage } from 'schema-dts'
 
+import { PageHeaderTitle } from '@filecoin-foundation/ui/PageHeader'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
-import { PageHeader } from '@/components/PageHeader'
 
 type MarkdownPageProps = {
   title: string
@@ -20,7 +20,7 @@ export function MarkdownPage({
     <article className="prose">
       <StructuredDataScript structuredData={structuredData} />
       <header className="mb-6">
-        <PageHeader.Title>{title}</PageHeader.Title>
+        <PageHeaderTitle>{title}</PageHeaderTitle>
       </header>
       <MarkdownContent>{children}</MarkdownContent>
     </article>

@@ -40,7 +40,7 @@
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
     "./PageLayout": "./src/PageLayout.tsx",
-    "./PageHeader": "./src/PageHeader.tsx",
+    "./PageHeader": "./src/PageHeader/index.ts",
     "./PageNotFound": "./src/PageNotFound.tsx",
     "./SearchInput": "./src/SearchInput.tsx",
     "./Search": "./src/Search/index.ts",

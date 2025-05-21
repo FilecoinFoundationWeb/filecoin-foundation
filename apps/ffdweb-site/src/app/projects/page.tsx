@@ -25,7 +25,7 @@ export default async function Projects() {
       <StructuredDataScript
         structuredData={generateStructuredData(PROJECTS_SEO)}
       />
-      
+
       <PageHeader
         kicker="Projects"
         title="Discover Current and Past FFDW Project Partners"
