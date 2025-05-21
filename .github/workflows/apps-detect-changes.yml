@@ -1,0 +1,46 @@
+name: Detect Affected Apps
+
+on:
+  workflow_call:
+    outputs:
+      matrix:
+        description: "Matrix of affected apps"
+        value: ${{ jobs.detect-changes.outputs.affected_apps }}
+      has_changes:
+        description: "Whether there are any changes"
+        value: ${{ jobs.detect-changes.outputs.has_changes }}
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      affected_apps: ${{ steps.set-affected-apps.outputs.affected_apps }}
+      has_changes: ${{ steps.set-affected-apps.outputs.has_changes }}
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch base branch
+        run: git fetch origin ${{ github.base_ref }} --depth=1
+
+      - name: Determine affected apps
+        id: set-affected-apps
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }} HEAD | grep "^apps/" || echo "")
+          else
+            CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep "^apps/" || echo "")
+          fi
+
+          AFFECTED_APPS=$(echo "$CHANGED_FILES" | grep -o "apps/[^/]*" | cut -d/ -f2 | sort -u)
+          MATRIX=$(echo "$AFFECTED_APPS" | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          HAS_CHANGES=$(echo "$MATRIX" | jq 'length > 0')
+
+          echo "Affected apps: $MATRIX"
+          echo "Has changes: $HAS_CHANGES"
+
+          echo "affected_apps=$MATRIX" >> $GITHUB_OUTPUT
+          echo "has_changes=$HAS_CHANGES" >> $GITHUB_OUTPUT
