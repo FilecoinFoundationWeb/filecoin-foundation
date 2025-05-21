@@ -5,7 +5,8 @@ import {
 import { Meta, type MetaDataType } from '@filecoin-foundation/ui/Meta'
 import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
 
-import { PageHeaderImage, type PageHeaderImageProps } from './PageHeaderImage'
+import { PageHeaderImage } from './PageHeaderImage'
+import type { PageHeaderImageProps } from './pageHeaderImageHelpers'
 import { PageHeaderTitle, type PageHeaderTitleProps } from './PageHeaderTitle'
 
 type PageHeaderDescriptionProps = {

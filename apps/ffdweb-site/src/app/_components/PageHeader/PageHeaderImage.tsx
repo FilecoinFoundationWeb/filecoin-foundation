@@ -1,30 +1,24 @@
-import Image, { type ImageProps } from 'next/image'
+import Image from 'next/image'
 
-import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-import type {
-  ImageObjectFit,
-  StaticImageProps,
-} from '@filecoin-foundation/utils/types/imageType'
+import { clsx } from 'clsx'
 
-export type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
-  objectFit?: ImageObjectFit
-}
+import {
+  getPageHeaderImageProps,
+  type PageHeaderImageProps,
+} from '@filecoin-foundation/ui/PageHeader'
 
 export function PageHeaderImage(image: PageHeaderImageProps) {
   const isStaticImage = 'data' in image
-
-  const commonProps = {
-    alt: image.alt,
-    priority: true,
-    quality: 100,
-    sizes: buildImageSizeProp({ startSize: '390px' }),
-  }
+  const commonProps = getPageHeaderImageProps(image, {
+    startSize: '100vw',
+    lg: '490px',
+  })
 
   if (isStaticImage) {
     return (
       <Image
         {...commonProps}
-        className="aspect-square h-auto w-full max-w-96 object-contain"
+        className={clsx(commonProps.className, 'aspect-video')}
         src={image.data}
       />
     )
@@ -32,13 +26,7 @@ export function PageHeaderImage(image: PageHeaderImageProps) {
 
   return (
     <div className="relative aspect-video">
-      <Image
-        fill
-        {...commonProps}
-        className="h-full w-full"
-        src={image.src}
-        alt={commonProps.alt}
-      />
+      <Image fill {...commonProps} src={image.src} />
     </div>
   )
 }
