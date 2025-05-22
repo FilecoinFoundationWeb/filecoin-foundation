@@ -114,6 +114,16 @@ program:
         exclusive networking event is open to both beginners and experts in
         crypto, providing an engaging environment to discuss the exciting world
         of decentralized storage and how data is stored on the blockchain.
+    - title: Build a Private Data Pipeline for AI Agents with Akave
+      start-date: 2025-05-30
+      location: Prague, Czechia
+      description: ​Start your ETHGlobal Prague weekend with Akave’s immersive,
+        hands-on workshop focused on building private, AI-native data pipelines
+        using our latest MCP server configuration and O3 (S3-compatible)
+        decentralized storage.  ​Whether you're new to Akave or looking to
+        integrate Filecoin-backed workflows into your stack, this session is
+        your soft landing into the future of AI x storage.
+      external-link: https://lu.ma/dma0dxns
 speakers:
   speakers_list:
     - image:
