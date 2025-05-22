@@ -5,11 +5,9 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import prettyBytes from 'pretty-bytes'
 import { useForm } from 'react-hook-form'
 
-import { Button } from '@filecoin-foundation/ui/Button'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
+import { Button } from '@/components/Button'
 import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormCheckbox } from '@/components/Form/ControlledFormCheckbox'
 import { ControlledFormFileInput } from '@/components/Form/ControlledFormFileInput'
@@ -202,11 +200,7 @@ export function EcosystemProjectForm({
           disabled={isSubmitting}
         />
       </FormSection>
-      <Button
-        disabled={isSubmitting}
-        className="w-full sm:w-auto"
-        baseDomain={BASE_DOMAIN}
-      >
+      <Button disabled={isSubmitting} className="w-full sm:w-auto">
         {isSubmitting ? 'Submitting...' : 'Submit Project'}
       </Button>
     </ControlledForm>

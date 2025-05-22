@@ -2,13 +2,14 @@ import Link from 'next/link'
 
 import { CheckCircle } from '@phosphor-icons/react/dist/ssr'
 
-import { Button } from '@filecoin-foundation/ui/Button'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { Button } from '@/components/Button'
 
 type SuccessMessageProps = {
   prNumber: number
@@ -49,9 +50,7 @@ export function SuccessMessage({ prNumber }: SuccessMessageProps) {
           href={PATHS.ECOSYSTEM_EXPLORER.path}
           className="inline-block w-full sm:w-auto"
         >
-          <Button className="w-full" baseDomain={BASE_DOMAIN}>
-            Go to Ecosystem Explorer Page
-          </Button>
+          <Button className="w-full">Go to Ecosystem Explorer Page</Button>
         </Link>
       </div>
     </section>

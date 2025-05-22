@@ -8,13 +8,11 @@ import * as Sentry from '@sentry/nextjs'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
-import { Button } from '@filecoin-foundation/ui/Button'
 import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
 import { NOTIFICATION_DIALOG_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
+import { Button } from '@/components/Button'
 import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
 
@@ -55,12 +53,7 @@ export function NewsletterForm() {
           />
         </div>
         <div className="flex min-w-36">
-          <Button
-            type="submit"
-            disabled={isSubmitting}
-            className="flex-1"
-            baseDomain={BASE_DOMAIN}
-          >
+          <Button type="submit" disabled={isSubmitting} className="flex-1">
             {isSubmitting ? 'Subscribing' : 'Subscribe'}
           </Button>
         </div>

@@ -97,11 +97,9 @@ export default async function Home() {
           })}
         </CardGrid>
 
-        <div className="flex justify-center">
-          <Button href={PATHS.PROJECTS.path} className="flex-1 sm:flex-none">
-            View All Projects
-          </Button>
-        </div>
+        <Button href={PATHS.PROJECTS.path} className="sm:self-center">
+          View All Projects
+        </Button>
       </PageSection>
 
       <PageSection
@@ -180,9 +178,9 @@ export default async function Home() {
           })}
         </CardGrid>
 
-        <div className="flex justify-center">
-          <Button href={PATHS.BLOG.path}>View All News</Button>
-        </div>
+        <Button href={PATHS.BLOG.path} className="sm:self-center">
+          View All News
+        </Button>
       </PageSection>
 
       <ContactCTA />

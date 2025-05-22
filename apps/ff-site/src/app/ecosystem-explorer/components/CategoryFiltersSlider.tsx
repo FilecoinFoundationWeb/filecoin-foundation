@@ -6,12 +6,11 @@ import { Button as HeadlessUIButton } from '@headlessui/react'
 import { FunnelSimple, X } from '@phosphor-icons/react'
 
 import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
-import { Button } from '@filecoin-foundation/ui/Button'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
+import { Button } from '@/components/Button'
 
 import { CategoryFilters, type CategoryFiltersProps } from './CategoryFilters'
 
@@ -26,7 +25,7 @@ export function CategoryFiltersSlider({
   return (
     <>
       <HeadlessUIButton
-        className="flex h-full w-full items-center gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 font-bold text-brand-300 hover:border-current hover:text-brand-400 focus:brand-outline"
+        className="border-brand-300 bg-brand-800 text-brand-300 hover:text-brand-400 focus:brand-outline flex h-full w-full items-center gap-2 rounded-lg border p-3 font-bold hover:border-current"
         onClick={openSlider}
       >
         <Icon component={FunnelSimple} />
@@ -51,22 +50,17 @@ export function CategoryFiltersSlider({
           <CategoryFilters categories={categories} />
         </div>
 
-        <div className="sticky bottom-0 z-10 border-t border-brand-300 bg-brand-800 p-6">
+        <div className="border-brand-300 bg-brand-800 sticky bottom-0 z-10 border-t p-6">
           <div className="flex items-center gap-3">
             <Button
               className="basis-1/2"
               variant="ghost"
-              baseDomain={BASE_DOMAIN}
               onClick={resetParamsAndCloseSlider}
             >
               Clear All
             </Button>
 
-            <Button
-              className="basis-1/2"
-              baseDomain={BASE_DOMAIN}
-              onClick={closeSlider}
-            >
+            <Button className="basis-1/2" onClick={closeSlider}>
               See Results
             </Button>
           </div>
