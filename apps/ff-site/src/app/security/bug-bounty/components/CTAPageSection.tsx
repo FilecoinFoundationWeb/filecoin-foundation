@@ -6,7 +6,7 @@ export function CTAPageSection() {
   return (
     <CTASection
       title="Explore the Program"
-      description="For complete details on eligible targets, submission guidelines, and reward tiers, visit the Filecoin bug bounty program on Immunefi."
+      description="For complete details of the Filecoin Bug Bounty program, visit Immunefi."
       cta={{
         href: FILECOIN_FOUNDATION_URLS.security.bugBountyProgram,
         text: 'Explore the Program',

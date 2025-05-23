@@ -6,12 +6,12 @@ export const bugBountyProgramData = [
     title: 'Submit a Report',
     description: (
       <>
-        Provide a detailed breakdown of the vulnerability via our{' '}
+        Report security vulnerabilities through our{' '}
         <ExternalTextLink href="https://immunefi.com/bug-bounty/filecoin/information/">
           secure portal
         </ExternalTextLink>
-        . Once submitted, our security team will assess the report’s accuracy
-        and severity.
+        . The Filecoin Foundation security team will review your submission for
+        accuracy and severity. 
       </>
     ),
   },
@@ -19,12 +19,12 @@ export const bugBountyProgramData = [
     step: 2,
     title: 'Earn Bounty & Points',
     description:
-      'Valid in-scope reports earn bounty payouts and leaderboard points. Valid out-of-scope reports may earn reputation points.',
+      'Valid in-scope reports earn bounty payouts and Bounty Points. Valid out-of-scope reports can earn Reputation Points for meaningful contributions.',
   },
   {
     step: 3,
-    title: 'Get Recognized & Redeem Rewards',
+    title: 'Get Recognized',
     description:
-      'Earn points for your contributions, move up the leaderboard, and redeem them for exclusive Filecoin swag and recognition.',
+      'Climb the leaderboard, earn exclusive Filecoin swag, and gain recognition in the community.',
   },
 ]
