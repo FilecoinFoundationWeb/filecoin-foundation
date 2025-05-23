@@ -26,7 +26,6 @@ export default function Leaderboard() {
       <PageHeader
         title={header.title}
         description={{ text: header.description }}
-        image={graphicsData.security4}
       />
       <LeaderboardComponent />
       <CTAPageSection />
