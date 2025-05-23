@@ -126,7 +126,7 @@ export default function BugBounty() {
       <PageSection
         kicker="Disclosure Guidelines"
         title="Coordinated Disclosure Policy"
-        // image={graphicsData.security4}
+        image={graphicsData.securityCoordinatedDisclosurePolicy}
         description={[
           'We believe in responsible and coordinated vulnerability disclosure. By working together with the security community, we can resolve issues quickly and protect the Filecoin ecosystem.',
           'Before submitting a report, we encourage all researchers to review our disclosure guidelines to understand expectations around timelines, confidentiality, and communication.',

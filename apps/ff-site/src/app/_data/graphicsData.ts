@@ -28,6 +28,7 @@ import security2 from '@/assets/graphics/Filorg_Security2.webp'
 import security3 from '@/assets/graphics/Filorg_Security3.webp'
 import security4 from '@/assets/graphics/Filorg_Security4.webp'
 import security5 from '@/assets/graphics/Filorg_Security5.webp'
+import securityCoordinatedDisclosurePolicy from '@/assets/graphics/Filorg_Security_CoordinatedDisclosurePolicy.webp'
 
 export const graphicsData = {
   imageFallback: {
@@ -141,5 +142,9 @@ export const graphicsData = {
   security5: {
     data: security5,
     alt: 'A futuristic digital shield with a lock icon in the center, surrounded by binary code and glowing blue circular elements, symbolizing cybersecurity and data protection.',
+  },
+  securityCoordinatedDisclosurePolicy: {
+    data: securityCoordinatedDisclosurePolicy,
+    alt: 'A blue magnifying glass resting on a stack of white papers, with light and shadow from window blinds creating striped patterns across the surface.',
   },
 } as const satisfies Record<string, StaticImageProps>
