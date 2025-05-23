@@ -83,7 +83,9 @@ export const PATHS = {
   BLOG: createPathConfig('/blog', 'Blog', {
     includesEntries: true,
   }),
-  BUG_BOUNTY: createPathConfig('/security/bug-bounty', 'Bug Bounty Program'),
+  BUG_BOUNTY: createPathConfig('/security/bug-bounty', 'Bug Bounty Program', {
+    hasSubpaths: true,
+  }),
   COORDINATED_DISCLOSURE_POLICY: createPathConfig(
     '/security/coordinated-disclosure-policy',
     'Coordinated Disclosure Policy',
@@ -133,6 +135,6 @@ export const PATHS = {
   }),
   SECURITY_BUG_BOUNTY_LEADERBOARD: createPathConfig(
     '/security/bug-bounty/leaderboard',
-    'Security/bug Bounty/leaderboard',
+    'Leaderboard',
   ),
 } as const
