@@ -58,6 +58,32 @@ describe('Security - Bug Bounty Program Page', () => {
   })
 })
 
+describe('Security - Bug Bounty Program - Leaderboard Page', () => {
+  const { mainContentPath, path } = PATHS.SECURITY_BUG_BOUNTY_LEADERBOARD
+
+  it(tests.metadata.prompt, () => {
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+      (seo) => {
+        tests.metadata.fn({
+          path,
+          title: seo.title,
+          description: seo.description,
+          baseUrl: BASE_URL,
+        })
+      },
+    )
+  })
+
+  it('should check links', () => {
+    verifyLinks(path)
+  })
+
+  it('should match visual snapshot', () => {
+    cy.visit(path)
+    cy.percySnapshot()
+  })
+})
+
 describe('Security - Coordinated Disclosure Policy Page', () => {
   const { mainContentPath, path } = PATHS.COORDINATED_DISCLOSURE_POLICY
 
