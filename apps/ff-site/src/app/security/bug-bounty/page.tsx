@@ -19,12 +19,12 @@ import { Button } from '@/components/Button'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { PointsAndRewardsCard } from '@/components/StatisticCard/PointsAndRewardsCard'
+// import { PointsAndRewardsCard } from '@/components/StatisticCard/PointsAndRewardsCard'
 
 import { CTAPageSection } from './components/CTAPageSection'
 import { Leaderboard } from './components/Leaderboard'
 import { bugBountyProgramData } from './data/bugBountyProgramData'
-import { pointsAndRewardsData } from './data/pointsAndRewardsData'
+// import { pointsAndRewardsData } from './data/pointsAndRewardsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
@@ -43,11 +43,7 @@ export default function BugBounty() {
         </Button>
       </PageHeader>
 
-      <PageSection
-        kicker="How It Works"
-        title="How to Participate"
-        description="Here’s how you can participate in improving Filecoin’s security and earn rewards while doing it."
-      >
+      <PageSection kicker="How It Works" title="How to Participate">
         <BadgeCardGrid cols="smThree">
           {bugBountyProgramData.map((item) => {
             const { step, title, description } = item
@@ -64,10 +60,7 @@ export default function BugBounty() {
       <PageSection
         kicker="Points System"
         title="How Points Are Calculated"
-        description={[
-          'We reward researchers not just for bounty payouts, but for their overall contributions to Filecoin’s security.',
-          'The points system includes two parts: Bounty Points and Reputation Points. The final score is the sum of both.',
-        ]}
+        description="We reward more than just payouts – we recognize meaningful contributirons that enhance security across the Filecoin nework. Your total score is a combination of two components: Bounty Points and Reputation Points."
       >
         <CardGrid as="section" cols="smTwo">
           <Card
@@ -77,7 +70,7 @@ export default function BugBounty() {
               tag: 'h3',
             }}
             description={{
-              text: 'Bounty Points are calculated by dividing the bounty amount (in USD) by 100. For example, a bounty of $1,000 would result in 10 Bounty Points.',
+              text: 'Earned for valid, in-scope reports, Bounty Points are calculated by dividing the bounty amount (in USD) by 100. A bounty of $1,000 = 10 Bounty Points.',
             }}
           />
           <Card
@@ -87,7 +80,7 @@ export default function BugBounty() {
               tag: 'h3',
             }}
             description={{
-              text: 'Reputation Points are awarded based on the severity level of resolved out-of-scope (OOS) reports: 5 points for Low severity, 20 points for Medium, 50 points for High, and 100 points for Critical.',
+              text: 'Earned for valid, out-of-scope reports, Reputation Points are based on the severity level: 5 points for low severity, 20 points for medium severity, 50 points for high severity, and 100 points for critical severity.',
             }}
           />
         </CardGrid>
@@ -128,13 +121,19 @@ export default function BugBounty() {
         title="Coordinated Disclosure Policy"
         image={graphicsData.securityCoordinatedDisclosurePolicy}
         description={[
-          'We believe in responsible and coordinated vulnerability disclosure. By working together with the security community, we can resolve issues quickly and protect the Filecoin ecosystem.',
-          'Before submitting a report, we encourage all researchers to review our disclosure guidelines to understand expectations around timelines, confidentiality, and communication.',
+          'We believe in responsible, coordinated vulnerability disclosure. By working together with the security community, we can resolve issues quickly and safeguard the Filecoin ecosystem.',
+          'Before submitting a report, please review our disclosure guidelines to understand expectations around timelines, confidentiality, and communication, and the Filecoin Foundation privacy policy.',
         ]}
-        cta={{
-          href: PATHS.COORDINATED_DISCLOSURE_POLICY.path,
-          text: 'Read the Disclosure Guidelines',
-        }}
+        cta={[
+          {
+            href: PATHS.COORDINATED_DISCLOSURE_POLICY.path,
+            text: 'Read the Disclosure Guidelines',
+          },
+          {
+            href: PATHS.PRIVACY_POLICY.path,
+            text: 'Read the Privacy Policy',
+          },
+        ]}
       />
 
       <CTAPageSection />

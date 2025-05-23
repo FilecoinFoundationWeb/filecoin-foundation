@@ -3,10 +3,10 @@ header:
   title: "Bug Bounty Program"
   description:
     [
-      "Filecoin Foundation is deeply committed to the integrity and security of the Filecoin network. With that in mind, we launched a bug bounty program for reported security vulnerabilities on the Filecoin protocol. Earn up to 150,000 USD, paid in USD/USDC, for reporting critical vulnerabilities.",
-      "Since launching our bug bounty program, we have worked with over 100 researchers and paid out more than $400,000 in rewards –– recognizing external efforts in strengthening our network’s security.",
+      "Filecoin Foundation is committed to the integrity and security of the Filecoin network. The Bug Bounty program rewards security researchers who help protect and strengthen the Filecoin protocol. Earn up to $150,000 (paid in USD and USDC) for reporting a qualifying critical vulnerability.",
+      "Since launch, we have collaborated with over 100 researchers and awarded more than $600,000 in bounties –– highlighting the vital role of community contributors in enhancing Filecoin’s resilience.",
     ]
 seo:
   title: "Bug Bounty Program"
-  description: Contribute to the security of the Filecoin network and earn up to $150,000 by reporting critical vulnerabilities. We've already paid out over $400,000 in rewards.
+  description: Contribute to the security of the Filecoin network and earn up to $150,000 by reporting critical vulnerabilities. We've already paid out over $600,000 in rewards.
 ---
