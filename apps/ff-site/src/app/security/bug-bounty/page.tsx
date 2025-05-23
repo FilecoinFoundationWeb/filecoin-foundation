@@ -105,7 +105,7 @@ export default function BugBounty() {
         </div>
       </PageSection>
 
-      <PageSection
+      {/* <PageSection
         kicker="Redeem Points"
         title="Unlock Exclusive Swag"
         description="Your points can be exchanged for limited-edition Filecoin and security-themed merch."
@@ -121,7 +121,7 @@ export default function BugBounty() {
             Redeem Points for Swag
           </Button>
         </div>
-      </PageSection>
+      </PageSection> */}
 
       <PageSection
         kicker="Disclosure Guidelines"
