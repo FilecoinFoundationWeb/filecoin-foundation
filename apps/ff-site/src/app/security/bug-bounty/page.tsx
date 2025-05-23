@@ -45,7 +45,7 @@ export default function BugBounty() {
 
       <PageSection
         kicker="How It Works"
-        title="How To Participate"
+        title="How to Participate"
         description="Here’s how you can participate in improving Filecoin’s security and earn rewards while doing it."
       >
         <BadgeCardGrid cols="smThree">
