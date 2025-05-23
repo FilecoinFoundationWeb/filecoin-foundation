@@ -84,7 +84,7 @@ export default function Security() {
       <PageSection
         kicker="Report Bugs"
         title="Bug Bounty Program"
-        description="Filecoin Foundation offers bug bounties for reported security vulnerabilities on the Filecoin protocol. Earn up to 150,000 USD, paid in USD/USDC, for reporting critical vulnerabilities. Since launching our Bug Bounty program, we’ve paid out more than $400,000 in rewards."
+        description="Filecoin Foundation offers bug bounties for reported security vulnerabilities on the Filecoin protocol. Earn up to 150,000 USD, paid in USD/USDC, for reporting critical vulnerabilities. Since launching our Bug Bounty program, we’ve paid out more than $600,000 in rewards."
         image={graphicsData.security4}
         cta={[
           {
