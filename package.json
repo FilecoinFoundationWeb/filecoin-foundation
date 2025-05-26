@@ -11,7 +11,7 @@
     "start": "turbo run start",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "lint:md": "markdownlint-cli2 \"apps/**/*.md\" --config .markdownlint.jsonc",
+    "lint:md": "markdownlint-cli2 \"apps/**/*.md\" \"!**/node_modules/**\" --config .markdownlint.jsonc",
     "test": "turbo run test",
     "check:versions": "syncpack list-mismatches",
     "fix:versions": "syncpack fix-mismatches",
