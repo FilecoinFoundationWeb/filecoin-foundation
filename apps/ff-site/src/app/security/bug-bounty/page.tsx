@@ -19,12 +19,10 @@ import { Button } from '@/components/Button'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-// import { PointsAndRewardsCard } from '@/components/StatisticCard/PointsAndRewardsCard'
 
 import { CTAPageSection } from './components/CTAPageSection'
 import { Leaderboard } from './components/Leaderboard'
 import { bugBountyProgramData } from './data/bugBountyProgramData'
-// import { pointsAndRewardsData } from './data/pointsAndRewardsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
@@ -97,24 +95,6 @@ export default function BugBounty() {
           </Button>
         </div>
       </PageSection>
-
-      {/* <PageSection
-        kicker="Redeem Points"
-        title="Unlock Exclusive Swag"
-        description="Your points can be exchanged for limited-edition Filecoin and security-themed merch."
-      >
-        <CardGrid as="ul" cols="smThree">
-          {pointsAndRewardsData.map((data, index) => (
-            <PointsAndRewardsCard key={index} {...data} />
-          ))}
-        </CardGrid>
-
-        <div className="mt-4 flex flex-col sm:flex-row sm:justify-center">
-          <Button href="" variant="ghost">
-            Redeem Points for Swag
-          </Button>
-        </div>
-      </PageSection> */}
 
       <PageSection
         kicker="Disclosure Guidelines"
