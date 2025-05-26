@@ -27,6 +27,7 @@ export type PathValues =
   | '/privacy-policy'
   | '/security'
   | '/security/bug-bounty'
+  | '/security/bug-bounty/leaderboard'
   | '/security/coordinated-disclosure-policy'
   | '/security/maturity-model'
   | '/terms-of-use'
@@ -82,8 +83,9 @@ export const PATHS = {
   BLOG: createPathConfig('/blog', 'Blog', {
     includesEntries: true,
   }),
-
-  BUG_BOUNTY: createPathConfig('/security/bug-bounty', 'Bug Bounty Program'),
+  BUG_BOUNTY: createPathConfig('/security/bug-bounty', 'Bug Bounty Program', {
+    hasSubpaths: true,
+  }),
   COORDINATED_DISCLOSURE_POLICY: createPathConfig(
     '/security/coordinated-disclosure-policy',
     'Coordinated Disclosure Policy',
@@ -122,7 +124,6 @@ export const PATHS = {
   HOME: createPathConfig('/', 'Home', {
     customMainContentPath: '/home',
   }),
-
   MATURITY_MODEL: createPathConfig(
     '/security/maturity-model',
     'Maturity Model',
@@ -132,4 +133,8 @@ export const PATHS = {
   SECURITY: createPathConfig('/security', 'Security', {
     hasSubpaths: true,
   }),
+  SECURITY_BUG_BOUNTY_LEADERBOARD: createPathConfig(
+    '/security/bug-bounty/leaderboard',
+    'Leaderboard',
+  ),
 } as const

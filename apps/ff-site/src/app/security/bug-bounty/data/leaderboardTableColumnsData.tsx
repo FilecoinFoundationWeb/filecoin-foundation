@@ -21,7 +21,7 @@ export const leaderboardTableColumnsData = [
     id: 'points',
     header: 'Total Points',
     meta: {
-      align: 'right',
+      align: 'center',
       cellStyle: 'w-full',
     },
     cell: (info) => {

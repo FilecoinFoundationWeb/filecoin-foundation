@@ -33,14 +33,41 @@ describe('Security - Main Page', () => {
 })
 
 describe('Security - Bug Bounty Program Page', () => {
-  const { mainContentPath, path } = PATHS.BUG_BOUNTY
+  const { path } = PATHS.BUG_BOUNTY
+
+  it(tests.metadata.prompt, () => {
+    cy.task<PageFrontmatterSeo>(
+      'getPageFrontmatterSeo',
+      'src/content/pages/security/bug-bounty/bug-bounty', // Will be refactored when createPathConfig gets refactored
+    ).then((seo) => {
+      tests.metadata.fn({
+        path,
+        title: getMetaTitleTemplate(seo.title),
+        description: seo.description,
+        baseUrl: BASE_URL,
+      })
+    })
+  })
+
+  it('should check links', () => {
+    verifyLinks(path)
+  })
+
+  it('should match visual snapshot', () => {
+    cy.visit(path)
+    cy.percySnapshot()
+  })
+})
+
+describe('Security - Bug Bounty Program - Leaderboard Page', () => {
+  const { mainContentPath, path } = PATHS.SECURITY_BUG_BOUNTY_LEADERBOARD
 
   it(tests.metadata.prompt, () => {
     cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
       (seo) => {
         tests.metadata.fn({
           path,
-          title: getMetaTitleTemplate(seo.title),
+          title: seo.title,
           description: seo.description,
           baseUrl: BASE_URL,
         })
