@@ -5,7 +5,10 @@ type StatisticCardLayoutProps = {
   children: React.ReactNode
 }
 
-function StatisticCardLayout({ icon, children }: StatisticCardLayoutProps) {
+export function StatisticCardLayout({
+  icon,
+  children,
+}: StatisticCardLayoutProps) {
   return (
     <li className="border-brand-300 flex min-h-32 rounded-lg border p-1">
       <figure className="bg-brand-500 grid w-1/3 place-items-center rounded-sm">
@@ -17,5 +20,3 @@ function StatisticCardLayout({ icon, children }: StatisticCardLayoutProps) {
     </li>
   )
 }
-
-export { StatisticCardLayout }
