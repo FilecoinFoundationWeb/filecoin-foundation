@@ -68,16 +68,16 @@
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "ts-jest": "^29.3.2"
+    "ts-jest": "^29.3.4"
   },
   "peerDependencies": {
     "@filecoin-foundation/hooks": "0.0.0",
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
-    "@headlessui/react": "^2.2.2",
-    "@phosphor-icons/react": "^2.1.7",
-    "@sentry/nextjs": "^9.17.0",
-    "@tailwindcss/postcss": "^4.1.6",
+    "@headlessui/react": "^2.2.4",
+    "@phosphor-icons/react": "^2.1.10",
+    "@sentry/nextjs": "^9.22.0",
+    "@tailwindcss/postcss": "^4.1.7",
     "clsx": "^2.1.1",
     "next": "^15.3.2",
     "nuqs": "^2.4.3",
@@ -89,8 +89,8 @@
     "usehooks-ts": "^3.1.0"
   },
   "dependencies": {
-    "@radix-ui/react-popover": "^1.1.13",
-    "@radix-ui/react-tooltip": "^1.2.6",
+    "@radix-ui/react-popover": "^1.1.14",
+    "@radix-ui/react-tooltip": "^1.2.7",
     "next-plausible": "^3.12.4"
   }
 }
