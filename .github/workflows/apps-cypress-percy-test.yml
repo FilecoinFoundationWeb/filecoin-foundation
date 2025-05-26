@@ -17,6 +17,7 @@ jobs:
     strategy:
       matrix:
         app: [ff-site, ffdweb-site]
+      fail-fast: false
     defaults:
       run:
         working-directory: apps/${{ matrix.app }}
@@ -30,6 +31,9 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
+      - name: Detect Changes in Apps
+        run: npx turbo-ignore ${{ matrix.app }}
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v4
         with:
@@ -37,15 +41,15 @@ jobs:
           cache: "npm"
 
       - name: Install Dependencies
-        run: npm install --prefer-offline || npm install --prefer-offline
+        run: npm ci
 
       - name: Build Project
         working-directory: .
-        run: npx turbo run build --filter="./apps/${{ matrix.app }}"
+        run: npx turbo ${{ matrix.app }}#build
 
       - name: Start Server
         run: |
-          npm start &
+          npx turbo ${{ matrix.app }}#start &
           echo "Waiting for server to start..."
           npx wait-on http://localhost:3000
 
