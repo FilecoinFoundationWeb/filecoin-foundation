@@ -12,7 +12,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
-import { CTAPageSection } from '../components/CTAPageSection'
+import { BugBountyCTASection } from '../components/BugBountyCTASection'
 import { Leaderboard as LeaderboardComponent } from '../components/Leaderboard'
 
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -28,7 +28,7 @@ export default function Leaderboard() {
         description={{ text: header.description }}
       />
       <LeaderboardComponent />
-      <CTAPageSection />
+      <BugBountyCTASection />
     </PageLayout>
   )
 }

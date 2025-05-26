@@ -2,7 +2,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { CTASection } from '@/components/CTASection'
 
-export function CTAPageSection() {
+export function BugBountyCTASection() {
   return (
     <CTASection
       title="Explore the Program"

@@ -20,7 +20,7 @@ import { CardWithBadge } from '@/components/CardWithBadge'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
-import { CTAPageSection } from './components/CTAPageSection'
+import { BugBountyCTASection } from './components/BugBountyCTASection'
 import { Leaderboard } from './components/Leaderboard'
 import { bugBountyProgramData } from './data/bugBountyProgramData'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -116,7 +116,7 @@ export default function BugBounty() {
         ]}
       />
 
-      <CTAPageSection />
+      <BugBountyCTASection />
     </PageLayout>
   )
 }
