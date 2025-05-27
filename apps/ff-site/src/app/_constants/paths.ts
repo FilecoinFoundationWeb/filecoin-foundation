@@ -1,3 +1,9 @@
+import {
+  createPathConfig,
+  type PathConfigWithEntries,
+  type PathConfigWithoutEntries,
+} from './createPathConfig'
+
 type BlogPostPath = `/blog/${string}`
 type DigestPath = `/digest/${string}`
 type EcosystemPath = `/ecosystem/${string}`
@@ -32,56 +38,18 @@ export type PathValues =
   | '/security/maturity-model'
   | '/terms-of-use'
 
-export interface PathConfig {
-  path: PathValues
-  label: string
-  mainContentPath: string
-  entriesContentPath?: string
-}
-
-interface CMSConfig {
-  includesEntries?: boolean
-  customMainContentPath?: string
-  hasSubpaths?: boolean
-}
+export type PathConfig = PathConfigWithEntries | PathConfigWithoutEntries
 
 export const WORKSPACE_ROOT = 'apps/ff-site'
 export const CONTENT_ROOT = 'src/content'
-const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
+export const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 export const MARKDOWN_EXTENSION = '.md'
-
-function createPathConfig(
-  path: PathValues,
-  label: string,
-  cmsConfig: CMSConfig = {},
-): PathConfig {
-  const {
-    includesEntries = false,
-    customMainContentPath,
-    hasSubpaths = false,
-  } = cmsConfig
-
-  const mainContentPath = hasSubpaths
-    ? `${CONTENT_PAGES_ROOT}${path}${path}`
-    : `${CONTENT_PAGES_ROOT}${customMainContentPath ?? path}`
-
-  const entriesContentPath = includesEntries
-    ? `${CONTENT_ROOT}${path}`
-    : undefined
-
-  return {
-    path,
-    label,
-    mainContentPath,
-    entriesContentPath,
-  }
-}
 
 export const PATHS = {
   ABOUT: createPathConfig('/about', 'About'),
   ALLOCATORS: createPathConfig('/filecoin-plus/allocators', 'Allocators'),
   BLOG: createPathConfig('/blog', 'Blog', {
-    includesEntries: true,
+    hasEntries: true,
   }),
   BUG_BOUNTY: createPathConfig('/security/bug-bounty', 'Bug Bounty Program', {
     hasSubpaths: true,
@@ -91,14 +59,14 @@ export const PATHS = {
     'Coordinated Disclosure Policy',
   ),
   DIGEST: createPathConfig('/digest', 'Digest', {
-    includesEntries: true,
+    hasEntries: true,
   }),
   ECOSYSTEM_EXPLORER: createPathConfig(
     '/ecosystem-explorer',
     'Ecosystem Explorer',
     {
       hasSubpaths: true,
-      includesEntries: true,
+      hasEntries: true,
     },
   ),
   ECOSYSTEM_EXPLORER_PROJECT_FORM: createPathConfig(
@@ -110,7 +78,7 @@ export const PATHS = {
     'Employee Privacy Policy',
   ),
   EVENTS: createPathConfig('/events', 'Events', {
-    includesEntries: true,
+    hasEntries: true,
   }),
   FIL_PLUS: createPathConfig('/filecoin-plus', 'Filecoin Plus', {
     hasSubpaths: true,
@@ -122,7 +90,7 @@ export const PATHS = {
   GRANTS: createPathConfig('/grants', 'Grants'),
   ORBIT: createPathConfig('/orbit', 'Orbit'),
   HOME: createPathConfig('/', 'Home', {
-    customMainContentPath: '/home',
+    customContentPath: '/home',
   }),
   MATURITY_MODEL: createPathConfig(
     '/security/maturity-model',
