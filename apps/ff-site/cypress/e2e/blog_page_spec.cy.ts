@@ -5,11 +5,11 @@ import { tests } from '@/cypress/support'
 import { verifyLinks } from '@/cypress/support/verifyLinksUtil'
 import type { PageFrontmatterSeo } from '@/cypress/tasks/getPageFrontmatterSeo'
 
-const { mainContentPath, path } = PATHS.BLOG
+const { contentPath, path } = PATHS.BLOG
 
 describe('Blog Page', () => {
   it(tests.metadata.prompt, () => {
-    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
       (seo) => {
         tests.metadata.fn({
           path,

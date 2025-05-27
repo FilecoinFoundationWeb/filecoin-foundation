@@ -7,7 +7,7 @@ import { tests } from '@/cypress/support'
 import type { GenericEntryFrontmatter } from '@/cypress/tasks/getEntryFrontmatter'
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
-const CONTENT_FOLDER = PATHS.BLOG.entriesContentPath as string
+const CONTENT_FOLDER = PATHS.BLOG.entriesPath
 
 describe('Random Blog Post', () => {
   it(tests.metadata.prompt, () => {

@@ -8,7 +8,7 @@ import { PATHS } from '@/constants/paths'
 import { METADATA_TITLE_SUFFIX } from '../constants/metadata'
 import { EventFrontmatterSchema } from '../schemas/EventFrontmatterSchema'
 
-const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesContentPath as string
+const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesPath
 
 export async function getEventData(slug: string) {
   const data = await getEventMarkdownData(slug)
