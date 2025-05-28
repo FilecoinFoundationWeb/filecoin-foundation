@@ -1,8 +1,4 @@
-import {
-  createPathConfig,
-  type PathConfigWithEntries,
-  type PathConfigWithoutEntries,
-} from './createPathConfig'
+import { createPathConfig } from './createPathConfig'
 
 type BlogPostPath = `/blog/${string}`
 type DigestPath = `/digest/${string}`
@@ -37,8 +33,6 @@ export type PathValues =
   | '/security/coordinated-disclosure-policy'
   | '/security/maturity-model'
   | '/terms-of-use'
-
-export type PathConfig = PathConfigWithEntries | PathConfigWithoutEntries
 
 export const WORKSPACE_ROOT = 'apps/ff-site'
 export const CONTENT_ROOT = 'src/content'

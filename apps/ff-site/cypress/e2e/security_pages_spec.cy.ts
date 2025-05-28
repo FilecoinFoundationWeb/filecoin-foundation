@@ -33,20 +33,19 @@ describe('Security - Main Page', () => {
 })
 
 describe('Security - Bug Bounty Program Page', () => {
-  const { path } = PATHS.BUG_BOUNTY
+  const { path, contentPath } = PATHS.BUG_BOUNTY
 
   it(tests.metadata.prompt, () => {
-    cy.task<PageFrontmatterSeo>(
-      'getPageFrontmatterSeo',
-      'src/content/pages/security/bug-bounty/bug-bounty', // Will be refactored when createPathConfig gets refactored
-    ).then((seo) => {
-      tests.metadata.fn({
-        path,
-        title: getMetaTitleTemplate(seo.title),
-        description: seo.description,
-        baseUrl: BASE_URL,
-      })
-    })
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
+      (seo) => {
+        tests.metadata.fn({
+          path,
+          title: getMetaTitleTemplate(seo.title),
+          description: seo.description,
+          baseUrl: BASE_URL,
+        })
+      },
+    )
   })
 
   it('should check links', () => {

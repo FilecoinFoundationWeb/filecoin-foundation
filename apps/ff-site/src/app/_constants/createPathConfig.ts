@@ -47,7 +47,7 @@ export function createPathConfig(
   const { hasEntries, customContentPath, hasSubpaths } = cmsConfig
 
   const contentPath = hasSubpaths
-    ? `${CONTENT_PAGES_ROOT}${path}${path}`
+    ? `${CONTENT_PAGES_ROOT}${path}${getPathLeaf(path)}`
     : `${CONTENT_PAGES_ROOT}${customContentPath ?? path}`
 
   if (hasEntries) {
@@ -64,4 +64,14 @@ export function createPathConfig(
     label,
     contentPath,
   }
+}
+
+function getPathLeaf(path: PathValues) {
+  const leaf = path.split('/').filter(Boolean).at(-1)
+
+  if (!leaf) {
+    throw new Error(`Invalid path: ${path}`)
+  }
+
+  return `/${leaf}`
 }
