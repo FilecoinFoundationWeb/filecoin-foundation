@@ -8,7 +8,7 @@ import type { GenericEntryFrontmatter } from '@/cypress/tasks/getEntryFrontmatte
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 import { METADATA_TITLE_SUFFIX } from '@/events/constants/metadata'
 
-const CONTENT_FOLDER = PATHS.EVENTS.contentPath
+const CONTENT_FOLDER = PATHS.EVENTS.entriesPath
 
 describe('Random Event Page', () => {
   it(tests.metadata.prompt, () => {

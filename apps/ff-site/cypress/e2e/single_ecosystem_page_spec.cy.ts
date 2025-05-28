@@ -8,7 +8,7 @@ import type { GenericEntryFrontmatter } from '@/cypress/tasks/getEntryFrontmatte
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 import { METADATA_TITLE_SUFFIX } from '@/ecosystem-explorer/constants/metadata'
 
-const CONTENT_FOLDER = PATHS.ECOSYSTEM_EXPLORER.contentPath
+const CONTENT_FOLDER = PATHS.ECOSYSTEM_EXPLORER.entriesPath
 
 describe('Random Ecosystem Project', () => {
   it(tests.metadata.prompt, () => {

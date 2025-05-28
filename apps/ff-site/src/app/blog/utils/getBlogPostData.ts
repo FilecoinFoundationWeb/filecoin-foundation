@@ -5,7 +5,7 @@ import { PATHS } from '@/constants/paths'
 
 import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
-const BLOG_DIRECTORY_PATH = PATHS.BLOG.contentPath
+const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesPath
 
 export async function getBlogPostData(slug: string) {
   const data = await getBlogPostMarkdownData(slug)
