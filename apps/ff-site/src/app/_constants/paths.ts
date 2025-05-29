@@ -1,4 +1,4 @@
-import { createPathConfig } from './createPathConfig'
+import { createPathConfig } from '@/utils/createPathConfig'
 
 type BlogPostPath = `/blog/${string}`
 type DigestPath = `/digest/${string}`

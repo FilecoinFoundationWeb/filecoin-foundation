@@ -5,8 +5,7 @@ import { PATHS } from '@/constants/paths'
 
 import { LearningResourceFrontmatterSchema } from '../schemas/LearningResourceFrontmatterSchema'
 
-const LEARNING_RESOURCES_DIRECTORY_PATH = PATHS.LEARNING_RESOURCES
-  .entriesContentPath as string
+const LEARNING_RESOURCES_DIRECTORY_PATH = PATHS.LEARNING_RESOURCES.entriesPath
 
 export async function getLearningResourceData(slug: string) {
   const data = await getLearningResourceMarkdownData(slug)

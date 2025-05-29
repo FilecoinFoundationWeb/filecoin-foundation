@@ -5,7 +5,7 @@ import {
 
 import { PATHS } from '@/constants/paths'
 
-const DIGEST_DIRECTORY_PATH = PATHS.DIGEST.entriesContentPath as string
+const DIGEST_DIRECTORY_PATH = PATHS.DIGEST.entriesPath
 
 export async function getDigestArticleData(slug: string) {
   return sharedGetDigestArticleData(slug, DIGEST_DIRECTORY_PATH)

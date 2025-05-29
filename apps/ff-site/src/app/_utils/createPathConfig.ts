@@ -1,4 +1,8 @@
-import { CONTENT_PAGES_ROOT, CONTENT_ROOT, type PathValues } from './paths'
+import {
+  CONTENT_PAGES_ROOT,
+  CONTENT_ROOT,
+  type PathValues,
+} from '@/constants/paths'
 
 interface BaseCMSConfig {
   customContentPath?: string
@@ -13,14 +17,14 @@ interface CMSConfigWithoutEntries extends BaseCMSConfig {
   hasEntries?: false
 }
 
-export interface PathConfigWithEntries {
+interface PathConfigWithEntries {
   path: PathValues
   label: string
   contentPath: string
   entriesPath: string
 }
 
-export interface PathConfigWithoutEntries {
+interface PathConfigWithoutEntries {
   path: PathValues
   label: string
   contentPath: string

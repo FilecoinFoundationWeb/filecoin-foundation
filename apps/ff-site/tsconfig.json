@@ -1,6 +1,7 @@
 {
   "extends": "@filecoin-foundation/typescript-config/base.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "noEmit": true,
     "jsx": "preserve",
     "paths": {

@@ -4,11 +4,11 @@ import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structu
 
 import type { StructuredDataParams } from '@/types/structuredDataParams'
 
-import { type DynamicPathValues, type PathValues } from '@/constants/paths'
+import { type PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 type GenerateWebPageStructuredDataProps = StructuredDataParams & {
-  path: PathValues | DynamicPathValues
+  path: PathValues
 }
 
 export function generateWebPageStructuredData({
