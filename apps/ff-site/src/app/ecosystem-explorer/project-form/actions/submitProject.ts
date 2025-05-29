@@ -42,7 +42,7 @@ export async function submitProject({
     message: 'New Ecosystem Project',
     markdown: {
       template: markdownTemplate,
-      path: `${WORKSPACE_ROOT}/${PATHS.ECOSYSTEM_EXPLORER.entriesContentPath}/${slug}.md`,
+      path: `${WORKSPACE_ROOT}/${PATHS.ECOSYSTEM_EXPLORER.entriesPath}/${slug}.md`,
     },
     file: {
       base64: formattedFile.base64,

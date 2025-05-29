@@ -6,11 +6,11 @@ import { verifyLinks } from '@/cypress/support/verifyLinksUtil'
 import type { PageFrontmatterSeo } from '@/cypress/tasks/getPageFrontmatterSeo'
 import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
 
-const { mainContentPath, path } = PATHS.PRIVACY_POLICY
+const { contentPath, path } = PATHS.PRIVACY_POLICY
 
 describe('Privacy Policy Page', () => {
   it(tests.metadata.prompt, () => {
-    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
       (seo) => {
         tests.metadata.fn({
           path,

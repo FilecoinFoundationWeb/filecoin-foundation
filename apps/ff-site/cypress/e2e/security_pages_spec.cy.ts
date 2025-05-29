@@ -7,10 +7,10 @@ import type { PageFrontmatterSeo } from '@/cypress/tasks/getPageFrontmatterSeo'
 import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
 
 describe('Security - Main Page', () => {
-  const { mainContentPath, path } = PATHS.SECURITY
+  const { contentPath, path } = PATHS.SECURITY
 
   it(tests.metadata.prompt, () => {
-    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
       (seo) => {
         tests.metadata.fn({
           path,
@@ -33,20 +33,19 @@ describe('Security - Main Page', () => {
 })
 
 describe('Security - Bug Bounty Program Page', () => {
-  const { path } = PATHS.BUG_BOUNTY
+  const { path, contentPath } = PATHS.BUG_BOUNTY
 
   it(tests.metadata.prompt, () => {
-    cy.task<PageFrontmatterSeo>(
-      'getPageFrontmatterSeo',
-      'src/content/pages/security/bug-bounty/bug-bounty', // Will be refactored when createPathConfig gets refactored
-    ).then((seo) => {
-      tests.metadata.fn({
-        path,
-        title: getMetaTitleTemplate(seo.title),
-        description: seo.description,
-        baseUrl: BASE_URL,
-      })
-    })
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
+      (seo) => {
+        tests.metadata.fn({
+          path,
+          title: getMetaTitleTemplate(seo.title),
+          description: seo.description,
+          baseUrl: BASE_URL,
+        })
+      },
+    )
   })
 
   it('should check links', () => {
@@ -60,10 +59,10 @@ describe('Security - Bug Bounty Program Page', () => {
 })
 
 describe('Security - Bug Bounty Program - Leaderboard Page', () => {
-  const { mainContentPath, path } = PATHS.SECURITY_BUG_BOUNTY_LEADERBOARD
+  const { contentPath, path } = PATHS.SECURITY_BUG_BOUNTY_LEADERBOARD
 
   it(tests.metadata.prompt, () => {
-    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
       (seo) => {
         tests.metadata.fn({
           path,
@@ -86,10 +85,10 @@ describe('Security - Bug Bounty Program - Leaderboard Page', () => {
 })
 
 describe('Security - Coordinated Disclosure Policy Page', () => {
-  const { mainContentPath, path } = PATHS.COORDINATED_DISCLOSURE_POLICY
+  const { contentPath, path } = PATHS.COORDINATED_DISCLOSURE_POLICY
 
   it(tests.metadata.prompt, () => {
-    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
       (seo) => {
         tests.metadata.fn({
           path,
@@ -112,10 +111,10 @@ describe('Security - Coordinated Disclosure Policy Page', () => {
 })
 
 describe('Security - Maturity Model Page', () => {
-  const { mainContentPath, path } = PATHS.MATURITY_MODEL
+  const { contentPath, path } = PATHS.MATURITY_MODEL
 
   it(tests.metadata.prompt, () => {
-    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
       (seo) => {
         tests.metadata.fn({
           path,

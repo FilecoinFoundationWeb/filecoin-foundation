@@ -7,10 +7,10 @@ import type { PageFrontmatterSeo } from '@/cypress/tasks/getPageFrontmatterSeo'
 import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
 
 describe('Ecosystem Explorer Page', () => {
-  const { mainContentPath, path } = PATHS.ECOSYSTEM_EXPLORER
+  const { contentPath, path } = PATHS.ECOSYSTEM_EXPLORER
 
   it(tests.metadata.prompt, () => {
-    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
       (seo) => {
         tests.metadata.fn({
           path,
@@ -33,10 +33,10 @@ describe('Ecosystem Explorer Page', () => {
 })
 
 describe('Ecosystem Explorer Project Form Page', () => {
-  const { mainContentPath, path } = PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM
+  const { contentPath, path } = PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM
 
   it(tests.metadata.prompt, () => {
-    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', mainContentPath).then(
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
       (seo) => {
         tests.metadata.fn({
           path,

@@ -6,8 +6,8 @@ import { PATHS } from '@/constants/paths'
 import { METADATA_TITLE_SUFFIX } from '../constants/metadata'
 import { EcosystemProjectFrontmatterSchema } from '../schemas/EcosystemProjectFrontmatterSchema'
 
-export const ECOSYSTEM_EXPLORER_DIRECTORY_PATH = PATHS.ECOSYSTEM_EXPLORER
-  .entriesContentPath as string
+export const ECOSYSTEM_EXPLORER_DIRECTORY_PATH =
+  PATHS.ECOSYSTEM_EXPLORER.entriesPath
 
 export async function getEcosystemProjectData(slug: string) {
   const data = await getEcosystemProjectMarkdownData(slug)
