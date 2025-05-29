@@ -5,7 +5,7 @@ import { PATHS } from '@/constants/paths'
 
 import { ProjectFrontmatterSchema } from '../schemas/ProjectFrontmatterSchema'
 
-const PROJECTS_DIRECTORY_PATH = PATHS.PROJECTS.entriesContentPath as string
+const PROJECTS_DIRECTORY_PATH = PATHS.PROJECTS.entriesPath
 
 export async function getProjectData(slug: string) {
   const data = await getProjectMarkdownData(slug)

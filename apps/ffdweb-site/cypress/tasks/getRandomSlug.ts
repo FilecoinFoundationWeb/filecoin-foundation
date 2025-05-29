@@ -2,15 +2,11 @@ import path from 'path'
 
 import fg from 'fast-glob'
 
-import {
-  CONTENT_ROOT,
-  MARKDOWN_EXTENSION,
-  type ContentCollectionName,
-} from '../../src/app/_constants/paths'
+import { MARKDOWN_EXTENSION } from '../../src/app/_constants/paths'
 
-export async function getRandomSlug(collection: ContentCollectionName) {
+export async function getRandomSlug(contentFolder: string) {
   const files = await fg(`**/*${MARKDOWN_EXTENSION}`, {
-    cwd: path.join(process.cwd(), CONTENT_ROOT, collection),
+    cwd: path.join(process.cwd(), contentFolder),
   })
 
   const randomIndex = Math.floor(Math.random() * files.length)
