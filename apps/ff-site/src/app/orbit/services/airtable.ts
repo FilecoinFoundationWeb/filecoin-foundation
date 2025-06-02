@@ -3,7 +3,6 @@ import { z } from 'zod'
 
 import { getUTCMidnightToday } from '@filecoin-foundation/utils/dateUtils'
 
-
 import { AIRTABLE_ORBIT_EVENTS_CONFIG } from '../constants/airtableOrbitEventsConfig'
 
 const airtable = new Airtable({ apiKey: process.env.AIRTABLE_READ_ONLY_TOKEN })

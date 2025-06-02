@@ -14,7 +14,7 @@
     "./webpackRules": "./src/webpackRules.js"
   },
   "peerDependencies": {
-    "next": "^15.3.2"
+    "next": "^15.3.3"
   },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",

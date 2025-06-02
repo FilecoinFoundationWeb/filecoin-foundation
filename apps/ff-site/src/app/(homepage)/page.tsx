@@ -4,7 +4,7 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN, FILECOIN_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { attributes as digestAttributes } from '@/content/pages/digest.md'
