@@ -11,7 +11,7 @@ export const bugBountyProgramData = [
           secure portal
         </ExternalTextLink>
         . The Filecoin Foundation security team will review your submission for
-        accuracy and severity. 
+        accuracy and severity.
       </>
     ),
   },
