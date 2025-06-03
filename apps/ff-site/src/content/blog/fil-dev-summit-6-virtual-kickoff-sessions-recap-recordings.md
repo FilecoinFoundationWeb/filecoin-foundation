@@ -20,7 +20,7 @@ Whether you’re gearing up to attend FDS-6 IRL or catching up async, here’s a
 
 ## Day 1: The Filecoin State of the Union: Navigating Growth & Market Shifts
 
-The kickoff day served as a level set for the community with a macro view of Filecoin’s progress and potential. The track offered a compelling vision of Filecoin as a backbone for decentralized data infrastructure, zeroing in on retrieval performance, economic sustainability, and recent network innovations like [Proof of Data Possession](https://fil.org/blog/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin) (PDP).
+The kickoff day served as a level set for the community with a macro view of Filecoin’s progress and potential. The track offered a compelling vision of Filecoin as a backbone for decentralized data infrastructure, zeroing in on retrieval performance, economic sustainability, and recent network innovations like [Proof of Data Possession](/blog/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin) (PDP).
 
 ### Key Takeaways
 
