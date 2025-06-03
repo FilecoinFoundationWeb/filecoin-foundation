@@ -19,7 +19,9 @@ import { PageSection } from '@/components/PageSection'
 
 import { CoreFunctions } from './components/CoreFunctions'
 import { DesktopTableOfContents } from './components/DesktopTableOfContents'
+import { DesktopTableOfContentsWrapper } from './components/DesktopTableOfContentsWrapper'
 import { MobileTableOfContents } from './components/MobileTableOfContents'
+import { MobileTableOfContentsWrapper } from './components/MobileTableOfContentsWrapper'
 import { applicationAndUseData } from './data/applicationAndUseData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -64,12 +66,12 @@ export default function MaturityModel() {
           <div className="grow">
             <CoreFunctions />
           </div>
-          <div className="hidden lg:sticky lg:top-12 lg:order-last lg:block lg:w-72">
+          <DesktopTableOfContentsWrapper>
             <DesktopTableOfContents />
-          </div>
-          <div className="sticky top-6 z-10 order-first block lg:hidden">
+          </DesktopTableOfContentsWrapper>
+          <MobileTableOfContentsWrapper>
             <MobileTableOfContents />
-          </div>
+          </MobileTableOfContentsWrapper>
         </div>
       </PageSection>
     </PageLayout>
