@@ -114,16 +114,6 @@ program:
         marketing@fil.org to book a meeting and explore opportunities in the
         Filecoin ecosystem.
       external-link: https://ethcc.io/
-    - title: Seaside Soirée at EthCC with Filecoin
-      start-date: 2025-07-01
-      location: Cannes, France
-      external-link: https://lu.ma/tisw1cdm
-      description: ​Connect with industry leaders and fellow blockchain enthusiasts at
-        the Seaside Soirée, hosted by Filecoin, on Tuesday, July 1st, 2025, from
-        6:00 PM to 10:00 PM in the stunning seaside location of Cannes. This
-        exclusive networking event is open to both beginners and experts in
-        crypto, providing an engaging environment to discuss the exciting world
-        of decentralized storage and how data is stored on the blockchain.
 speakers:
   speakers_list:
     - image:
