@@ -115,6 +115,124 @@ speakers:
       title: "Solutions & Architecture Lead "
       image:
         src: /assets/images/angelo-schalley-pl-1-.webp
+    - name: Ashwanth Samuel
+      company: Protocol Labs, DeStor
+      linkedin: https://www.linkedin.com/in/ashwanth-samuel/
+      title: Startup Operator
+      image:
+        src: /assets/images/ashwanth-samuel-pl.webp
+    - name: Bernhard Borges
+      company: Fluence Labs, DeStor
+      title: Chief Scientist
+      image:
+        src: /assets/images/bernhard-borges-fluence-labs.webp
+    - name: Chris Hackney
+      company: AI Guardian
+      linkedin: https://www.linkedin.com/in/chrishackney/
+      title: CEO
+      image:
+        src: /assets/images/chris-hackney.webp
+    - name: Claudia Richoux
+      company: Banyan
+      linkedin: https://www.linkedin.com/in/laudiacay/
+      title: Founder
+      image:
+        src: /assets/images/claudia-richoux.webp
+    - name: Daniel Leon
+      company: Protocol Labs, DeStor
+      linkedin: https://www.linkedin.com/in/danielmleon/
+      title: Partnerships & Alliances Lead
+      image:
+        src: /assets/images/daniel-leon-pl.webp
+    - name: David Post
+      company: Helix
+      linkedin: https://www.linkedin.com/in/davidcpost/
+      title: Founder
+      image:
+        src: /assets/images/david-post-helix.webp
+    - name: Deep Kapur
+      company: Protocol Labs, DeStor
+      title: "PM / Operator "
+      linkedin: https://www.linkedin.com/in/deepkkapur/
+      image:
+        src: /assets/images/deep-kapur-pl.webp
+    - name: Evan Fisher
+      company: Portal Ventures
+      linkedin: https://www.linkedin.com/in/evanfisher1/
+      title: Founder
+      image:
+        src: /assets/images/evan-fisher-portal-ventures.webp
+    - name: Heath Behncke
+      company: Holon Global Investments
+      linkedin: https://www.linkedin.com/in/heath-behncke/?originalSubdomain=au
+      title: Founder
+      image:
+        src: /assets/images/heath-behncke-holon-global-investments.webp
+    - name: James Gray
+      company: Power Meta Corporation, DeStor
+      title: "Business Development "
+      linkedin: https://www.linkedin.com/in/james-gray-58533017a/
+      image:
+        src: /assets/images/james-gray-power-meta-corporation.webp
+    - name: James Purton
+      company: Servers.com, DeStor
+      linkedin: https://www.linkedin.com/in/james-purton-b13423160/?originalSubdomain=uk
+      title: "Account Executive "
+      image:
+        src: /assets/images/james-purton-servers.com.webp
+    - name: Jamey Canterbury
+      company: EY
+      linkedin: https://www.linkedin.com/in/jameycanterbury/
+      title: "Principal "
+      image:
+        src: /assets/images/jamey-canterbury-ey-1-.webp
+    - name: Jeff Slapp
+      company: Steeldome, DeStor
+      linkedin: https://www.linkedin.com/in/jeffreyslapp/
+      title: Co-Founder & CTO
+      image:
+        src: /assets/images/jeff-slapp-steeldome.webp
+    - name: " Jen King"
+      company: Protocol Labs, DeStor
+      linkedin: https://ca.linkedin.com/in/jenniedking?trk=public_post_feed-actor-name
+      title: Marketing Lead
+      image:
+        src: /assets/images/jen-king-pl.webp
+    - name: Jonathan Hooker
+      title: "Co-Founder, Director "
+      linkedin: https://www.linkedin.com/in/jonathan-hooker-syd/
+      company: Holon, DeStor
+      image:
+        src: /assets/images/jonathan-hooker-holon.webp
+    - name: Jonathan Schwartz
+      company: Glif, DeStor
+      title: Founder
+      linkedin: https://www.linkedin.com/in/schwartzz8990/
+      image:
+        src: /assets/images/jonathan-schwartz-glif.webp
+    - name: Jörg Roskowetz
+      company: AMD
+      linkedin: https://www.linkedin.com/in/joergroskowetz/
+      title: "Director, Product Managment "
+      image:
+        src: /assets/images/jorg-roskowetz-amd-jorg-should-have-two-dots-over-the-_o_-.webp
+    - name: "Kate Wong "
+      company: DeStor
+      title: Fellow
+      image:
+        src: /assets/images/kate-wong-stfil.webp
+    - name: Koby Phillips
+      company: Telarus, DeStor
+      linkedin: https://www.linkedin.com/in/koby-phillips-cloud-expert/
+      title: VP of Sales
+      image:
+        src: /assets/images/koby-phillips-telarus.webp
+    - name: Kyle Samani
+      company: Multicoin
+      linkedin: https://www.linkedin.com/in/kylesamani/
+      title: Managing Partner
+      image:
+        src: /assets/images/kyle-samani_headshot.webp
 seo:
   description: Attend FIL Vegas to engage with the Filecoin community and learn
     about the latest developments.
