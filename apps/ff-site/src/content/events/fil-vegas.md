@@ -54,6 +54,67 @@ program:
         supporting paid storage deals.
 schedule:
   days: []
+speakers:
+  speakers_list:
+    - name: Juan Benet
+      company: Protocol Labs
+      title: CEO
+      linkedin: https://www.linkedin.com/in/jbenetcs
+      image:
+        src: /assets/images/juan-benet-headshot.webp
+    - name: Clara Tsao
+      title: "Founding Officer "
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/claratsao
+      image:
+        src: /assets/images/clara-tsao-davos.webp
+    - name: Vijay Karunamurthy
+      company: Scale AI
+      linkedin: https://www.linkedin.com/in/vjkaruna
+      title: CTO
+      image:
+        src: /assets/images/vijay-karunamurthy-.webp
+    - name: Alexey Danilushkin
+      company: Supermicro, DeStor
+      linkedin: https://www.linkedin.com/in/alexey-danilushkin-2593b216/
+      title: Sales Manager
+      image:
+        src: /assets/images/alexey-danilushkin-supermicro-1-.webp
+    - name: Allen Cho
+      company: Zetacube, DeStor
+      linkedin: https://www.linkedin.com/in/allen-cho-55953b2b7/
+      title: President & CTO
+      image:
+        src: /assets/images/allen-cho-zetacube.webp
+    - name: Andrew Ferrone
+      company: Protocol Labs, DeStor
+      linkedin: https://www.linkedin.com/in/andrewferrone/
+      title: "Head of Client Products & Solutions "
+      image:
+        src: /assets/images/andrew-ferrone-protocol-labs.webp
+    - name: Andromeda Huang
+      company: Power Meta Corporation
+      title: Co-Founder
+      linkedin: https://www.linkedin.com/in/andromedah/
+      image:
+        src: /assets/images/andromeda-huang-power-meta-corporation.webp
+    - name: Angela Yi
+      company: Ark Data Services, DeStor
+      title: "Fellow "
+      image:
+        src: /assets/images/angela-yi-ark-data-services.webp
+    - name: Ahmad Shadid
+      company: IO.NET, DeStor
+      linkedin: https://www.linkedin.com/in/grayspark/
+      title: Founder
+      image:
+        src: /assets/images/ahmad-shadid-io.net-.webp
+    - name: Angelo Schalley
+      company: Protocol Labs, DeStor
+      linkedin: https://www.linkedin.com/in/angeloschalley/
+      title: "Solutions & Architecture Lead "
+      image:
+        src: /assets/images/angelo-schalley-pl-1-.webp
 seo:
   description: Attend FIL Vegas to engage with the Filecoin community and learn
     about the latest developments.
