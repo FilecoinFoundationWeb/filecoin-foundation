@@ -233,6 +233,112 @@ speakers:
       title: Managing Partner
       image:
         src: /assets/images/kyle-samani_headshot.webp
+    - name: Lindsay Walker
+      company: Starling Lab
+      linkedin: https://www.linkedin.com/in/lindsayjowalker/
+      title: Product Lead
+      image:
+        src: /assets/images/me.webp
+    - name: Mara McMahon
+      company: Protocol Labs, DeStor
+      linkedin: https://www.linkedin.com/in/maramcmahon/
+      title: Storage Provider GTM
+      image:
+        src: /assets/images/mara-mcmahon-pl.webp
+    - name: Marina Kostioutchenko
+      company: Protocol Labs, DeStor
+      linkedin: https://www.linkedin.com/in/marina-kostioutchenko-4259938/
+      title: Director of Product
+      image:
+        src: /assets/images/marina-kostioutchenko-pl.webp
+    - name: Mark Conner
+      company: Intel, DeStor
+      linkedin: https://www.linkedin.com/in/mark-connor-6b635915/?originalSubdomain=uk
+      title: "Strategic Business Development Manager "
+      image:
+        src: /assets/images/mark-conner-intel.webp
+    - name: Mark Yusko
+      company: Morgan Creek Capital Management
+      linkedin: https://www.linkedin.com/in/mark-yusko-0400a6176/
+      title: CEO
+      image:
+        src: /assets/images/yusko-es-16-1.webp
+    - name: Muthaiah Venkatachalam
+      company: Intel, DeStor
+      title: Fellow
+      image:
+        src: /assets/images/muthaiah-venkatachalam-intel.webp
+    - name: Patrick Oborn
+      company: Telarus, DeStor
+      linkedin: https://www.linkedin.com/in/patrickoborn/
+      title: Co-Founder
+      image:
+        src: /assets/images/patrick-oborn-telarus.webp
+    - name: Rich Van Duysen
+      company: Steeldome, DeStor
+      linkedin: https://www.linkedin.com/in/richard-van-duysen-99ab051/
+      title: CSO
+      image:
+        src: /assets/images/rich-van-duysen-steeldome.webp
+    - name: Sam Gustman
+      company: USC Shoah Foundation and USC Libraries
+      linkedin: https://www.linkedin.com/in/samgustman/
+      title: CTO
+      image:
+        src: /assets/images/libraries-headshots-047-edit.webp
+    - name: Scott Doughman
+      company: Seal Storage Technology, DeStor
+      linkedin: https://www.linkedin.com/in/doughman/
+      title: "Chief Growth Officer "
+      image:
+        src: /assets/images/scott-doughman-headshot-seal-storage-technology.webp
+    - name: Simon Peffers
+      company: Supranational, DeStor
+      linkedin: https://www.linkedin.com/in/simon-peffers-056a49/
+      title: Founder
+      image:
+        src: /assets/images/simon-peffers-supranational.webp
+    - name: Stefaan Vervaet
+      company: Protocol Labs, DeStor
+      linkedin: https://www.linkedin.com/in/stefaan-vervaet/?originalSubdomain=pr
+      title: "Head of Network Growth "
+      image:
+        src: /assets/images/stefaan-vervaet-protocol-labs-.webp
+    - name: Susmit
+      company: Huddle01
+      linkedin: https://www.linkedin.com/in/susmit-lavania-4b9558107/
+      title: Co-Founder & CTO
+      image:
+        src: /assets/images/photo-2023-09-28-20-42-01.webp
+    - name: Tim Lorenc
+      title: Staff Field Applications Engineer
+      company: Supermicro, DeStor
+      linkedin: https://www.linkedin.com/in/tim-lorenc/
+      image:
+        src: /assets/images/tim-lorenc-supermicro.webp
+    - name: Tim Yong
+      company: Banyan, DeSto
+      linkedin: https://www.linkedin.com/in/timyong/?originalSubdomain=ca
+      title: Business Development Lead
+      image:
+        src: /assets/images/tim-yong-banyan.webp
+    - name: Xilin Zhang
+      company: Protocol Labs, DeStor
+      linkedin: https://www.linkedin.com/in/xilin-zhang/
+      title: Product Lead
+      image:
+        src: /assets/images/xilin-zhang-pl.webp
+    - name: Xinan Xu
+      title: Technical Lead
+      company: Protocol Labs, DeStor
+      linkedin: https://www.linkedin.com/in/xinan-xu-b868a326/
+      image:
+        src: /assets/images/xinan-xu-pl.webp
+    - name: Yolan Romailler
+      title: "Fellow "
+      company: Drand, DeStor
+      image:
+        src: /assets/images/yolan-romailler-drand.webp
 seo:
   description: Attend FIL Vegas to engage with the Filecoin community and learn
     about the latest developments.
