@@ -20,22 +20,19 @@ image:
   src: /assets/images/filbrussels.webp
 program:
   events:
-    - title:
-        FIL Fest, in partnership with CoinDesk Studios, at FIL Brussels Network
+    - title: FIL Fest, in partnership with CoinDesk Studios, at FIL Brussels Network
         Base
       start-date: 2024-07-08
       end-date: 2024-07-08
       location: Maison Grand Place, Grand Place 19
-      description:
-        Hear it here first. Catch the latest signal and breakthroughs from
+      description: Hear it here first. Catch the latest signal and breakthroughs from
         leading Filecoin ecosystem projects as they build an in-demand open data
         economy.
     - title: Cloud and Compute Day at FIL Brussels Network Base
       start-date: 2024-07-08
       end-date: 2024-07-08
       location: Maison Grand Place, Grand Place 19
-      description:
-        Infra 3.0 - Brussels DePIN Deep Dive, Hosted by Impossible Cloud
+      description: Infra 3.0 - Brussels DePIN Deep Dive, Hosted by Impossible Cloud
         Network and Pokt. Presented by Impossible Cloud Network, explore Web3’s
         hottest sector, DePIN, and learn about the possibilities unlocked by
         decentralized storage and compute-over-data advancements as DePIN
@@ -45,8 +42,7 @@ program:
       title: AI and the Data Economy Day
       end-date: 2024-07-10
       location: Maison Grand Place, Grand Place 19
-      description:
-        Join us as we explore why data is destined to become one of the
+      description: Join us as we explore why data is destined to become one of the
         world’s largest digital assets and how decentralized data networks like
         Filecoin underpin how data assets maintain their value – from AI agents
         to data marketplaces to use-case-specific LLMs.
@@ -64,8 +60,7 @@ program:
       end-date: 2024-07-11
       location: SQUARE Brussels Meeting Centre, Mont des Arts
       title: Filecoin Booth at EthCC
-      description:
-        Filecoin Booth at EthCC, hosted by the Filecoin Foundation, July
+      description: Filecoin Booth at EthCC, hosted by the Filecoin Foundation, July
         10–11 at the SQUARE Brussels Meeting Centre, to learn more about the
         Filecoin vision, the latest developments for the EVM-compatible Filecoin
         network, and understand why storage is just the start for Filecoin.
@@ -84,8 +79,7 @@ program:
       start-date: 2024-07-11
       end-date: 2024-07-13
       location: Register to see location
-      description:
-        "IPFS Camp is for those who want to bend the arc of the Internet to
+      description: "IPFS Camp is for those who want to bend the arc of the Internet to
         be more open, efficient, and secure. Connecting builders and users,
         organized by thematic tracks, and inspired by both the in-depth
         conversations and unbounded energy of previous IPFS gatherings, it will
@@ -141,13 +135,13 @@ speakers:
     - name: Bidhan Roy
       title: CEO
       company: Bagel.net
-      linkedin: "https://www.linkedin.com/in/bidhanr"
+      linkedin: https://www.linkedin.com/in/bidhanr
       image:
         src: /assets/images/bidhan-roy.webp
     - name: Christian Kaul
       title: Founder & COO
       company: Impossible Cloud Network
-      linkedin: "https://www.linkedin.com/in/christiankaul"
+      linkedin: https://www.linkedin.com/in/christiankaul
       image:
         src: /assets/images/ck.webp
     - name: Clara Tsao
@@ -157,7 +151,7 @@ speakers:
       image:
         src: /assets/images/clara-tsao-davos.webp
     - name: Daniel Andrade
-      title: "Co-Founder & CTO"
+      title: Co-Founder & CTO
       company: Hotspotty
       linkedin: https://www.linkedin.com/in/dansku/
       image:
@@ -246,13 +240,13 @@ speakers:
       image:
         src: /assets/images/jen_king_destor-1-1-.jpeg
     - name: Konstantin Tkachuk
-      title: "Co-founder and CSO"
+      title: Co-founder and CSO
       company: Titan Network
       linkedin: https://www.linkedin.com/in/tkachukk/
       image:
         src: /assets/images/konstantin-tkachuk.webp
     - name: Mara McMahon
-      title: "Co-Founder"
+      title: Co-Founder
       company: DeStor & FilStor
       linkedin: https://www.linkedin.com/in/maramcmahon/
       image:
@@ -288,7 +282,7 @@ speakers:
       image:
         src: /assets/images/image-12-.webp
     - name: Porter Stowell
-      title: "Head of Ecosystem & Community"
+      title: Head of Ecosystem & Community
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/porterstowell
       image:
@@ -347,6 +341,8 @@ speakers:
       linkedin: https://www.linkedin.com/in/marlanatoli/?originalSubdomain=ca
       image:
         src: /assets/images/headshot-marla-natoli.webp
+recap:
+  youtube-embed-url: https://www.youtube.com/embed/TGpFMAA9R3U
 seo:
   description: Join FIL Brussels to connect with the Filecoin community and
     explore new developments.
