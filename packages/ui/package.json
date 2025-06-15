@@ -66,9 +66,9 @@
     "@filecoin-foundation/typescript-config": "0.0.0",
     "@testing-library/react": "^16.3.0",
     "@types/jest": "^29.5.14",
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
-    "ts-jest": "^29.3.4"
+    "jest": "^30.0.0",
+    "jest-environment-jsdom": "^30.0.0",
+    "ts-jest": "^29.4.0"
   },
   "peerDependencies": {
     "@filecoin-foundation/hooks": "0.0.0",
