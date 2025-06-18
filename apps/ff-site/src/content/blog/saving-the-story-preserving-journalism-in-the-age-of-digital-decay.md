@@ -8,6 +8,8 @@ description: Today, we’re excited to share that Filecoin Foundation’s sister
   non-profit, Filecoin Foundation for the Decentralized Web (FFDW), is working
   with Fasila, an organization dedicated to supporting local journalism, to help
   fortify media infrastructures for the future.
+image:
+  src: /assets/images/060925-fasila-relationship.webp
 seo:
   description: Today, we’re excited to share that Filecoin Foundation’s sister
     non-profit, Filecoin Foundation for the Decentralized Web (FFDW), is working
