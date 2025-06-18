@@ -254,7 +254,7 @@
 
   /* NOTIFICATION DIALOG */
   .notification {
-    @apply border-brand-100/20 bg-brand-800 rounded-lg border;
+    @apply border-brand-100/40 bg-brand-800 rounded-lg border;
 
     .notification-close-button {
       @apply text-brand-200 hover:text-brand-400 rounded-md;
