@@ -5,8 +5,10 @@ import {
   DialogTitle,
 } from '@headlessui/react'
 import { X } from '@phosphor-icons/react/dist/ssr'
+import { clsx } from 'clsx'
 
 import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
+import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
 type NotificationDialogProps = {
   isOpen: boolean
@@ -14,6 +16,11 @@ type NotificationDialogProps = {
   title?: string
   icon?: IconProps
 }
+
+const TOUCH_TARGET = {
+  touchAreaPadding: 'p-4',
+  touchAreaOffset: '-m-4',
+} as const satisfies TouchTarget
 
 export function NotificationDialog({
   isOpen,
@@ -33,7 +40,7 @@ export function NotificationDialog({
           transition
           role="alertdialog"
           aria-modal="true"
-          className="notification flex w-full max-w-96 gap-3 p-5 transition duration-300 ease-out data-closed:translate-y-[-20%] data-closed:transform-[scale(95%)] data-closed:opacity-0"
+          className="notification flex w-full max-w-96 items-center gap-3 p-5 transition duration-300 ease-out data-closed:translate-y-[-20%] data-closed:transform-[scale(95%)] data-closed:opacity-0"
         >
           <DialogTitle as="h3" className="flex flex-1 items-center gap-3">
             {icon && <Icon {...icon} />}
@@ -41,7 +48,11 @@ export function NotificationDialog({
           </DialogTitle>
 
           <CloseButton
-            className="notification-close-button focus:brand-outline cursor-pointer p-1"
+            className={clsx(
+              'notification-close-button focus:brand-outline cursor-pointer',
+              TOUCH_TARGET.touchAreaPadding,
+              TOUCH_TARGET.touchAreaOffset,
+            )}
             aria-label="Close notification"
           >
             <Icon component={X} size={16} aria-hidden="true" />
