@@ -9,18 +9,19 @@ description: Today, we’re excited to share that Filecoin Foundation’s sister
   with Fasila, an organization dedicated to supporting local journalism, to help
   fortify media infrastructures for the future.
 image:
-  src: /assets/images/060925-fasila-relationship.webp
+  src: /assets/images/060925-fasila-main.webp
 seo:
   description: Today, we’re excited to share that Filecoin Foundation’s sister
     non-profit, Filecoin Foundation for the Decentralized Web (FFDW), is working
     with Fasila to help fortify media infrastructures for the future.
 ---
-
 In an increasingly digital era, the stories we tell—and how we preserve them—matter more than ever. Journalism remains a cornerstone of democratic society: documenting our shared history, holding power to account, and amplifying unheard voices. But as media becomes increasingly digital, it also becomes more fragile. From censorship to misinformation to the quiet disappearance of archives, the digital record of our times is under threat.
 
 The Filecoin network offers a powerful alternative: it allows anyone to store data in a verifiable and resilient way. For journalism and media, that means content can be archived and remain accessible even if the original publisher goes offline. By distributing data across multiple nodes, Filecoin eliminates single points of failure, while cryptographic proofs ensure that the content’s integrity is preserved over time. This infrastructure enables media organizations and independent journalists to safeguard their work against technological breakdowns and ensure the public record remains intact.
 
 Today, we’re excited to share that Filecoin Foundation’s sister non-profit, Filecoin Foundation for the Decentralized Web (FFDW), is working with [Fasila](https://www.fasila-inc.com/), an organization dedicated to supporting local journalism, to help fortify media infrastructures for the future.
+
+![](/assets/images/060925-fasila-stats.webp)
 
 ## The Fragility of Digital Records
 
@@ -54,26 +55,30 @@ Here’s a quick look at how decentralized storage is supporting resilience in m
 
 **Decentralized Distribution Platforms**: Journalism publishing via platforms like Medium or Substack is subject to centralized control and platform risks. [Distributed Press](https://distributed.press/en/), with support from FFDW, is building beginner-friendly, open-source publishing tools that give creators a decentralized, no-code alternative to centralized platforms — empowering writers to publish freely and retain control of their work.
 
+![](/assets/images/060925-fasila-relationship-1-.webp)
+
 ## Announcing: FFDW + Fasila
 
-As part of the mission to preserve humanity’s most important information, FFDW is working with [Fasila](https://www.fasila-inc.com/), an organization rooted in local journalism and storytelling. Through this collaboration, Fasila will support more than 20 journalists in preserving their most critical reporting. Stories from their journalist partners — along with associated digital assets — will be stored on the Filecoin network and made accessible through IPFS, ensuring these vital narratives are not lost to time, censorship, or technological failure. 
+As part of the mission to preserve humanity’s most important information, FFDW is working with[ Fasila](https://www.fasila-inc.com/), an organization rooted in local journalism and storytelling. Through this collaboration, Fasila will support more than 20 journalists in preserving their most critical reporting. Stories from their journalist partners — along with associated digital records— will be stored on the Filecoin network and made accessible through IPFS, ensuring these vital narratives are not lost to time, censorship, or technological failure. 
 
 The archived stories will be showcased on a dedicated web page, enriched with metadata and contextual descriptions to support discovery and analysis by relevant communities, as well as researchers, educators, journalists, and filmmakers. By opening access to these archives, the initiative highlights the importance of resilient storage in protecting essential stories, promotes open access to historical records, and offers a replicable model for preserving critical content for future generations.
 
-This project marks another tangible step in safeguarding cultural memory in the digital age — and demonstrates the power of decentralized storage to equip and empower journalists today and tomorrow. Follow FFDW for updates on this project.
+This project marks another tangible step in safeguarding cultural memory in the digital age — and demonstrates the power of decentralized storage to equip and empower journalists today and tomorrow. Follow FFDW for updates on this project. 
+
+![](/assets/images/060925-fasila-how-1-.webp)
 
 ## Learn More About Media and Decentralization
 
-If you're curious in learning more about how decentralized technologies are reshaping journalism and media, tune into these episodes of _DWeb Decoded_. Each one explores a unique perspective on the intersection of blockchain, media, and emerging tech.
+If you're curious in learning more about how decentralized technologies are reshaping journalism and media, tune into these episodes of *DWeb Decoded*. Each one explores a unique perspective on the intersection of blockchain, media, and emerging tech.
 
-- [AI Enhanced Blockchain-Based Lifeforms with Primavera De Filippi](https://www.youtube.com/watch?v=wli8UmjlrV8&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=88): Legal scholar and internet activist Primavera De Filippi dives into the intersection of blockchain, AI, and the arts — unpacking implications for media regulation, authorship, and ownership in decentralized ecosystems. 
-- [Blockchain-Based Content Licensing with Arikia Millikan](https://www.youtube.com/watch?v=JzAQnRp7bwQ&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=19): Arikia Millikan, founder of CTRL+X, shares how her platform empowers journalists and creators with blockchain-based tools to license, distribute, and monetize their work on their own terms.
-- [Crypto Cinema, Web3 Journalism, and Decentralized Media with Cami Russo](https://www.youtube.com/watch?v=3nVyrlf4tqM&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=61&pp=iAQB): Cami Russo, founder of The Defiant, explores how Web3 is transforming documentary filmmaking and journalism — from funding to distribution — through decentralized, crypto-native platforms.
-- [Decentralized Publishing with Distributed Press](https://www.youtube.com/watch?v=zZqPomT1Teo&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=93&pp=iAQB): This episode spotlights Distributed Press, a project building open-source, beginner-friendly tools for decentralized publishing — offering creators an alternative to centralized platforms like Medium or Substack.
-- [How Numbers Protocol Combats Misinfo with Vera Wu](https://www.youtube.com/watch?v=EpR_PbgeX4Y&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=56&pp=iAQB): Vera Wu of Numbers Protocol explains how blockchain can help verify the authenticity of media content — a critical tool in the fight against misinformation and AI-generated fakes.
-- [Protocols, Not Platforms with Mike Masnick](https://www.youtube.com/watch?v=9-xxIJC8wJA&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=91&pp=iAQB): Tech policy thinker Mike Masnick breaks down why “protocols, not platforms” could be the future of digital media — shifting control away from gatekeepers toward open, decentralized systems. 
-- [Starling Lab’s Fight for Digital Integrity with Adam Rose](https://www.youtube.com/watch?v=xSGG4eMoA-o&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=54&pp=iAQB): Adam Rose of Starling Lab discusses how cryptographic technologies like IPFS and Filecoin are being used to preserve sensitive digital records — from war crimes evidence to investigative journalism.
-- [Using Blockchain & AI to Reinvent Journalism with Brad Keoun](https://www.youtube.com/watch?v=Yl58v4CB9Uk&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=36&pp=iAQB): Brad Keoun shares insights into how AI and decentralized infrastructure could reinvent journalism — enabling more resilient, trustworthy, and independent reporting in the digital age.
+* [AI Enhanced Blockchain-Based Lifeforms with Primavera De Filippi](https://www.youtube.com/watch?v=wli8UmjlrV8&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=88): Legal scholar and internet activist Primavera De Filippi dives into the intersection of blockchain, AI, and the arts — unpacking implications for media regulation, authorship, and ownership in decentralized ecosystems. 
+* [Blockchain-Based Content Licensing with Arikia Millikan](https://www.youtube.com/watch?v=JzAQnRp7bwQ&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=19): Arikia Millikan, founder of CTRL+X, shares how her platform empowers journalists and creators with blockchain-based tools to license, distribute, and monetize their work on their own terms.
+* [Crypto Cinema, Web3 Journalism, and Decentralized Media with Cami Russo](https://www.youtube.com/watch?v=3nVyrlf4tqM&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=61&pp=iAQB): Cami Russo, founder of The Defiant, explores how Web3 is transforming documentary filmmaking and journalism — from funding to distribution — through decentralized, crypto-native platforms.
+* [Decentralized Publishing with Distributed Press](https://www.youtube.com/watch?v=zZqPomT1Teo&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=93&pp=iAQB): This episode spotlights Distributed Press, a project building open-source, beginner-friendly tools for decentralized publishing — offering creators an alternative to centralized platforms like Medium or Substack.
+* [How Numbers Protocol Combats Misinfo with Vera Wu](https://www.youtube.com/watch?v=EpR_PbgeX4Y&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=56&pp=iAQB): Vera Wu of Numbers Protocol explains how blockchain can help verify the authenticity of media content — a critical tool in the fight against misinformation and AI-generated fakes.
+* [Protocols, Not Platforms with Mike Masnick](https://www.youtube.com/watch?v=9-xxIJC8wJA&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=91&pp=iAQB): Tech policy thinker Mike Masnick breaks down why “protocols, not platforms” could be the future of digital media — shifting control away from gatekeepers toward open, decentralized systems. 
+* [Starling Lab’s Fight for Digital Integrity with Adam Rose](https://www.youtube.com/watch?v=xSGG4eMoA-o&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=54&pp=iAQB): Adam Rose of Starling Lab discusses how cryptographic technologies like IPFS and Filecoin are being used to preserve sensitive digital records — from war crimes evidence to investigative journalism.
+* [Using Blockchain & AI to Reinvent Journalism with Brad Keoun](https://www.youtube.com/watch?v=Yl58v4CB9Uk&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=36&pp=iAQB): Brad Keoun shares insights into how AI and decentralized infrastructure could reinvent journalism — enabling more resilient, trustworthy, and independent reporting in the digital age.
 
 ## The Path Ahead
 
