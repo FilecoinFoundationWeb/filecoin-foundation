@@ -3,6 +3,7 @@ import {
   Dialog,
   DialogPanel,
   DialogTitle,
+  type DialogProps,
 } from '@headlessui/react'
 import { X } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
@@ -11,9 +12,9 @@ import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
 type NotificationDialogProps = {
-  isOpen: boolean
-  setIsOpen: (arg: boolean) => void
-  title?: string
+  message: string
+  isOpen: DialogProps['open']
+  onClose: DialogProps['onClose']
   icon?: IconProps
 }
 
@@ -24,8 +25,8 @@ const TOUCH_TARGET = {
 
 export function NotificationDialog({
   isOpen,
-  setIsOpen,
-  title,
+  onClose,
+  message,
   icon,
 }: NotificationDialogProps) {
   return (
@@ -33,7 +34,7 @@ export function NotificationDialog({
       open={isOpen}
       as="div"
       className="fixed inset-0 z-50 w-screen overflow-y-auto"
-      onClose={() => setIsOpen(false)}
+      onClose={onClose}
     >
       <div className="flex items-start justify-center p-4">
         <DialogPanel
@@ -44,7 +45,7 @@ export function NotificationDialog({
         >
           <DialogTitle as="h3" className="flex flex-1 items-center gap-3">
             {icon && <Icon {...icon} />}
-            <span>{title}</span>
+            <span>{message}</span>
           </DialogTitle>
 
           <CloseButton

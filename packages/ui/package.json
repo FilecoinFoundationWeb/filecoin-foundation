@@ -36,7 +36,7 @@
     "./MarkdownPage": "./src/MarkdownPage.tsx",
     "./Meta": "./src/Meta.tsx",
     "./NotFoundAnalytics": "./src/NotFoundAnalytics.tsx",
-    "./NotificationDialog": "./src/NotificationDialog/NotificationDialog.tsx",
+    "./NotificationDialog": "./src/NotificationDialog/index.ts",
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
     "./PageLayout": "./src/PageLayout.tsx",
