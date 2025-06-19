@@ -7,30 +7,32 @@ category: use-cases
 description: Today, we’re excited to share that Filecoin Foundation’s sister
   non-profit, Filecoin Foundation for the Decentralized Web (FFDW), is working
   with Fasila, an organization dedicated to supporting local journalism, to help
-  fortify media infrastructures for the future.
+  fortify media infrastructure for the future.
 image:
-  src: /assets/images/060925-fasila-relationship.webp
+  src: /assets/images/060925-fasila-main.webp
 seo:
   description: Today, we’re excited to share that Filecoin Foundation’s sister
     non-profit, Filecoin Foundation for the Decentralized Web (FFDW), is working
     with Fasila to help fortify media infrastructures for the future.
 ---
 
-In an increasingly digital era, the stories we tell—and how we preserve them—matter more than ever. Journalism remains a cornerstone of democratic society: documenting our shared history, holding power to account, and amplifying unheard voices. But as media becomes increasingly digital, it also becomes more fragile. From censorship to misinformation to the quiet disappearance of archives, the digital record of our times is under threat.
+In an increasingly digital era, the stories we tell — and how we preserve them — matter more than ever. Journalism remains a cornerstone of democratic society: documenting our shared history, holding power to account, and amplifying unheard voices. But as media becomes increasingly digital, it also becomes more fragile. From censorship to misinformation to the quiet disappearance of archives, the digital record of our times is under threat.
 
 The Filecoin network offers a powerful alternative: it allows anyone to store data in a verifiable and resilient way. For journalism and media, that means content can be archived and remain accessible even if the original publisher goes offline. By distributing data across multiple nodes, Filecoin eliminates single points of failure, while cryptographic proofs ensure that the content’s integrity is preserved over time. This infrastructure enables media organizations and independent journalists to safeguard their work against technological breakdowns and ensure the public record remains intact.
 
-Today, we’re excited to share that Filecoin Foundation’s sister non-profit, Filecoin Foundation for the Decentralized Web (FFDW), is working with [Fasila](https://www.fasila-inc.com/), an organization dedicated to supporting local journalism, to help fortify media infrastructures for the future.
+Today, we’re excited to share that Filecoin Foundation’s sister non-profit, Filecoin Foundation for the Decentralized Web (FFDW), is working with [Fasila](https://www.fasila-inc.com/), an organization dedicated to supporting local journalism, to help fortify media infrastructure for the future.
+
+![](/assets/images/060925-fasila-stats.webp)
 
 ## The Fragility of Digital Records
 
 Traditional news archives are often stored on centralized servers — vulnerable to corporate decisions, hacks, or policy changes. Entire bodies of work can vanish overnight when a platform shutters or a server fails. This fragility isn’t just theoretical. It’s happened before, and it’s happening now. 
 
-Just this year, ABC News shuttered [FiveThirtyEight](https://www.theguardian.com/us-news/2025/mar/05/abc-news-538-shut-down),the data-driven news platform known for its election and polling analysis, removing the entire archive. Last year, [MTV News](https://variety.com/2024/digital/news/mtv-news-website-archives-pulled-offline-1236047163/) closed down and more than two decades’ worth of content was taken offline. Renowned tech journalist Kara Swisher lost years of her reporting on All Things Digital. 
+Just this year, ABC News shuttered [FiveThirtyEight](https://www.theguardian.com/us-news/2025/mar/05/abc-news-538-shut-down), the data-driven news platform known for its election and polling analysis, removing the entire archive. Last year, [MTV News](https://variety.com/2024/digital/news/mtv-news-website-archives-pulled-offline-1236047163/) closed down and more than two decades’ worth of content was taken offline. Renowned tech journalist Kara Swisher lost years of her reporting on All Things Digital. 
 
 It’s part of a growing pattern.
 
-The [‘Not Your Parents Web’](/blog/the-web-isn-t-forever-new-research-findings-from-not-your-parents-web-project) project found that **the median lifespan of a web page is only 2.3 years**. Research data from [Pew Research Center](https://www.pewresearch.org/wp-content/uploads/sites/20/2024/05/pl_2024.05.17_link-rot_report.pdf) supports these findings: **38% of web pages that existed in 2013 are no longer accessible.** A [2021 study](https://www.cjr.org/analysis/linkrot-content-drift-new-york-times.php) by Harvard Law School and the New York Times looked at 2.2 million URLS and found that 25% of links in the New York Times articles were completely broken –– no longer pointing to accurate sources. Recently, the [Internet Archive](https://blog.archive.org/2025/02/06/update-on-the-2024-2025-end-of-term-web-archive/) and [Harvard Law’s Library Innovation Lab](https://hls.harvard.edu/amicus-libris/the-data-gov-archive-at-the-harvard-law-school-library-innovation-lab/) embarked on initiatives to preserve government websites and datasets during the recent Presidential administration. 
+The [‘Not Your Parents Web’](/blog/the-web-isn-t-forever-new-research-findings-from-not-your-parents-web-project) project found that **the median lifespan of a web page is only 2.3 years**. Research data from [Pew Research Center](https://www.pewresearch.org/wp-content/uploads/sites/20/2024/05/pl_2024.05.17_link-rot_report.pdf) supports these findings: **38% of web pages that existed in 2013 are no longer accessible.** A [2021 study](https://www.cjr.org/analysis/linkrot-content-drift-new-york-times.php) by Harvard Law School and the New York Times looked at 2.2 million URLS and found that 25% of links in the New York Times articles were completely broken — no longer pointing to accurate sources. Recently, the [Internet Archive](https://blog.archive.org/2025/02/06/update-on-the-2024-2025-end-of-term-web-archive/) and [Harvard Law’s Library Innovation Lab](https://hls.harvard.edu/amicus-libris/the-data-gov-archive-at-the-harvard-law-school-library-innovation-lab/) embarked on initiatives to preserve government websites and datasets during the recent U.S. presidential administration. 
 
 All of these examples underscore a hard truth: the web is not forever, despite what we once believed. Media publications and journalists can no longer assume the digital world will remember what they publish.
 
@@ -54,13 +56,17 @@ Here’s a quick look at how decentralized storage is supporting resilience in m
 
 **Decentralized Distribution Platforms**: Journalism publishing via platforms like Medium or Substack is subject to centralized control and platform risks. [Distributed Press](https://distributed.press/en/), with support from FFDW, is building beginner-friendly, open-source publishing tools that give creators a decentralized, no-code alternative to centralized platforms — empowering writers to publish freely and retain control of their work.
 
+![](/assets/images/060925-fasila-relationship-1-.webp)
+
 ## Announcing: FFDW + Fasila
 
-As part of the mission to preserve humanity’s most important information, FFDW is working with [Fasila](https://www.fasila-inc.com/), an organization rooted in local journalism and storytelling. Through this collaboration, Fasila will support more than 20 journalists in preserving their most critical reporting. Stories from their journalist partners — along with associated digital assets — will be stored on the Filecoin network and made accessible through IPFS, ensuring these vital narratives are not lost to time, censorship, or technological failure. 
+As part of the mission to preserve humanity’s most important information, FFDW is working with [Fasila](https://www.fasila-inc.com/), an organization rooted in local journalism and storytelling. Through this collaboration, Fasila will support more than 20 journalists in preserving their most critical reporting. Stories from their journalist partners — along with associated digital records— will be stored on the Filecoin network and made accessible through IPFS, ensuring these vital narratives are not lost to time, censorship, or technological failure. 
 
 The archived stories will be showcased on a dedicated web page, enriched with metadata and contextual descriptions to support discovery and analysis by relevant communities, as well as researchers, educators, journalists, and filmmakers. By opening access to these archives, the initiative highlights the importance of resilient storage in protecting essential stories, promotes open access to historical records, and offers a replicable model for preserving critical content for future generations.
 
 This project marks another tangible step in safeguarding cultural memory in the digital age — and demonstrates the power of decentralized storage to equip and empower journalists today and tomorrow. Follow FFDW for updates on this project.
+
+![](/assets/images/060925-fasila-how-1-.webp)
 
 ## Learn More About Media and Decentralization
 
