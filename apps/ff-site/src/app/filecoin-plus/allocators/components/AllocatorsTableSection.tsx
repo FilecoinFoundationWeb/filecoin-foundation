@@ -5,6 +5,8 @@ import { getAllocatorsWithDatacap } from '../utils/getAllocatorsWithDatacap'
 import { AllocatorsTableWithFilters } from './AllocatorsTableWithFilters'
 import { NoDataAvailableMessage } from './NoDataAvailableMessage'
 
+// https://filecoin-foundation-qk.sentry.io/issues/6061156926/?project=4507390577999872&query=&referrer=issue-stream&stream_index=6
+
 export async function AllocatorsTableSection() {
   try {
     const allocatorsWithDatacap = await getAllocatorsWithDatacap()
@@ -15,13 +17,9 @@ export async function AllocatorsTableSection() {
 
     return <AllocatorsTableWithFilters data={allocatorsWithDatacap} />
   } catch (error) {
-    const message = 'Error fetching or validating allocators'
-
-    console.error({ message, error })
-
-    Sentry.captureException(error, {
-      tags: { component: AllocatorsTableSection.name },
-      extra: { message },
+    Sentry.captureException('Error fetching or validating allocators', {
+      tags: { slack: true },
+      extra: { error, location: 'Allocators Table Section' },
     })
 
     return <NoDataAvailableMessage />
