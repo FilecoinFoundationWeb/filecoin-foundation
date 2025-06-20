@@ -4,13 +4,15 @@ This monorepo contains the web projects for the [Filecoin Foundation](https://fi
 
 ## Overview
 
+This monorepo contains multiple workspaces for applications and packages. Applications are the projects meant to be deployed while our packages are internal-only and centralize code shared accross multiple applications.
+
 ### Applications
 
-It contains the following applications, located in the `apps` directory:
+You can find the following applications in the `apps` directory:
 
-- [ff-site](packages/ff-site): The main Filecoin Foundation website, live at [fil.org](https://fil.org)
-- [ffdweb-site](packages/ffdweb-site): The Filecoin Foundation for the Decentralized Web website, live at [ffdweb.org](https://ffdweb.org)
-- [uxit](packages/uxit): A UX/UI testing and auditing tool, live at [uxit.fil.org](https://uxit.fil.org)
+- [ff-site](apps/ff-site): The main Filecoin Foundation website, live at [fil.org](https://fil.org)
+- [ffdweb-site](apps/ffdweb-site): The Filecoin Foundation for the Decentralized Web website, live at [ffdweb.org](https://ffdweb.org)
+- [uxit](apps/uxit): A UX/UI testing and auditing tool, live at [uxit.fil.org](https://uxit.fil.org)
 
 ### Packages
 
@@ -55,7 +57,7 @@ Running `npx turbo dev` from the root of the monorepo will call the `dev` script
 In 99% of cases, you only want to start the development server for one application at a time. Let's say you want to start the `ffdweb-site` application. You can do so by running `turbo dev` with a filter flag `npx turbo dev --filter=ffdweb-site`, or the shorthand syntax `npx turbo ffdweb-site#dev`.
 
 > [!NOTE]
-> When using npm commands, such as `npm install`, the `--workspace` flag refers to the location of the application or package, relative to the root of the monorepo. When using turbo commands, such as `turbo dev`, the `--filter` flag refers to the name of the application or package, as defined in their respecive `package.json` file.
+> When using npm commands, such as `npm install`, the `--workspace` flag refers to the location of the application or package, relative to the root of the monorepo. When using turbo commands, such as `turbo dev`, the `--filter` flag refers to the name of the application or package, as defined in their respective `package.json` file.
 
 ### Building for production
 
