@@ -3,12 +3,14 @@ import { z } from 'zod'
 
 import { getUTCMidnightToday } from '@filecoin-foundation/utils/dateUtils'
 
-import { AIRTABLE_ORBIT_EVENTS_CONFIG } from '../constants/airtableOrbitEventsConfig'
+import {
+  AIRTABLE_ORBIT_EVENTS_CONFIG,
+  APPROVED_STATUS_VALUE,
+} from '../constants/airtableOrbitEventsConfig'
 
 const airtable = new Airtable({ apiKey: process.env.AIRTABLE_READ_ONLY_TOKEN })
 
-const { BASE_ID, EVENTS_TABLE_ID, FIELDS, APPROVED_STATUS_VALUE } =
-  AIRTABLE_ORBIT_EVENTS_CONFIG
+const { BASE_ID, EVENTS_TABLE_ID, FIELDS } = AIRTABLE_ORBIT_EVENTS_CONFIG
 const { TITLE, CITY, START_DATE, REGISTRATION_LINK } = FIELDS
 
 const airtableRecordSchema = z.object({
