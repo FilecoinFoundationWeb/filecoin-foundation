@@ -3,55 +3,63 @@ import {
   Dialog,
   DialogPanel,
   DialogTitle,
+  type DialogProps,
 } from '@headlessui/react'
 import { X } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
-
-import './NotificationDialog.css'
+import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
 type NotificationDialogProps = {
-  isOpen: boolean
-  setIsOpen: (arg: boolean) => void
-  title?: string
+  message: string
+  isOpen: DialogProps['open']
+  onClose: DialogProps['onClose']
   icon?: IconProps
 }
 
+const TOUCH_TARGET = {
+  touchAreaPadding: 'p-4',
+  touchAreaOffset: '-m-4',
+} as const satisfies TouchTarget
+
 export function NotificationDialog({
   isOpen,
-  setIsOpen,
-  title,
+  onClose,
+  message,
   icon,
 }: NotificationDialogProps) {
   return (
     <Dialog
       open={isOpen}
       as="div"
-      className="fixed inset-0 z-50 flex items-start justify-center p-4"
-      onClose={() => setIsOpen(false)}
+      className="fixed inset-0 z-50 w-screen overflow-y-auto"
+      onClose={onClose}
     >
-      <DialogPanel
-        transition
-        role="alertdialog"
-        aria-modal="true"
-        className={clsx('notification flex w-80 gap-3 p-5 sm:w-96', {
-          'animate-slide-in-from-top': isOpen,
-          'animate-shrink-and-fade-out': !isOpen,
-        })}
-      >
-        <DialogTitle as="h3" className="flex flex-1 items-center gap-3">
-          {icon && <Icon {...icon} />}
-          <span>{title}</span>
-        </DialogTitle>
-
-        <CloseButton
-          className="notification-close-button focus:brand-outline cursor-pointer p-1"
-          aria-label="Close notification"
+      <div className="flex items-start justify-center p-4">
+        <DialogPanel
+          transition
+          role="alertdialog"
+          aria-modal="true"
+          className="notification flex w-full max-w-96 items-center gap-3 p-5 transition duration-300 ease-out data-closed:translate-y-[-20%] data-closed:transform-[scale(95%)] data-closed:opacity-0"
         >
-          <Icon component={X} size={16} aria-hidden="true" />
-        </CloseButton>
-      </DialogPanel>
+          <DialogTitle as="h3" className="flex flex-1 items-center gap-3">
+            {icon && <Icon {...icon} />}
+            <span>{message}</span>
+          </DialogTitle>
+
+          <CloseButton
+            className={clsx(
+              'notification-close-button focus:brand-outline cursor-pointer',
+              TOUCH_TARGET.touchAreaPadding,
+              TOUCH_TARGET.touchAreaOffset,
+            )}
+            aria-label="Close notification"
+          >
+            <Icon component={X} size={16} aria-hidden="true" />
+          </CloseButton>
+        </DialogPanel>
+      </div>
     </Dialog>
   )
 }

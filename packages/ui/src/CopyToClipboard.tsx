@@ -1,7 +1,5 @@
 'use client'
 
-import { useState } from 'react'
-
 import { Button } from '@headlessui/react'
 import { Link } from '@phosphor-icons/react/dist/ssr'
 import * as Sentry from '@sentry/nextjs'
@@ -9,9 +7,11 @@ import { clsx } from 'clsx'
 import { useCopyToClipboard } from 'usehooks-ts'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
-import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
+import {
+  NotificationDialog,
+  useNotificationDialog,
+} from '@filecoin-foundation/ui/NotificationDialog'
 import { Tooltip } from '@filecoin-foundation/ui/Tooltip/Tooltip'
-import { NOTIFICATION_DIALOG_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
 type CopyToClipboardProps = {
@@ -30,15 +30,15 @@ export function CopyToClipboard({
   ariaLabel = 'Copy link to clipboard',
 }: CopyToClipboardProps) {
   const [, copy] = useCopyToClipboard()
-  const [isCopied, setIsCopied] = useState(false)
 
-  const resetCopyState = () => setIsCopied(false)
+  const dialog = useNotificationDialog({
+    message: notificationTitle,
+  })
 
   async function handleCopy(text: string) {
     try {
       await copy(text)
-      setIsCopied(true)
-      setTimeout(resetCopyState, NOTIFICATION_DIALOG_DURATION_MS)
+      dialog.open()
     } catch (error) {
       console.error('Failed to copy!', error)
       Sentry.captureException(error)
@@ -48,9 +48,9 @@ export function CopyToClipboard({
   return (
     <>
       <NotificationDialog
-        isOpen={isCopied}
-        setIsOpen={setIsCopied}
-        title={notificationTitle}
+        isOpen={dialog.isOpen}
+        onClose={dialog.close}
+        message={dialog.message}
       />
       <Tooltip description="Copy link to clipboard" side="bottom">
         <Button
