@@ -40,7 +40,10 @@ export async function OrbitEventsSection({
 
     return <OrbitEvents events={events} searchParams={searchParams} />
   } catch (error) {
-    Sentry.captureException(error)
+    Sentry.captureException('Error fetching or validating orbit events', {
+      tags: { slack: true },
+      extra: { error, location: 'Orbit Events Section' },
+    })
 
     if (error instanceof ZodError) {
       logZodError(error, { location: 'Orbit Events' })
