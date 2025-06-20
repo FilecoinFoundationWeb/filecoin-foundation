@@ -115,7 +115,7 @@ const FILECOIN_FOUNDATION_URLS = {
       href: 'mailto:orbit@fil.org',
     },
     eventsCalendar:
-      'https://airtable.com/appAGdqyYrqoFNuPI/shrIZSogQcFNtN9SW/tblnrsxREgBikWu9A',
+      'https://airtable.com/apprCQqrHfze7O5S7/shrqWLN6F7mEY36ol/tblnrsxREgBikWu9A',
     orbitYearInReview: {
       '2023': `${PATHS.BLOG.path}/orbit-year-in-review-growing-a-global-community-of-builders/`,
     },
