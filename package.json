@@ -21,7 +21,7 @@
     "husky": "^9.1.7",
     "markdownlint-cli2": "^0.18.0",
     "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.12",
+    "prettier-plugin-tailwindcss": "^0.6.13",
     "syncpack": "^13.0.4",
     "turbo": "^2.5.4"
   }
