@@ -86,12 +86,14 @@ npm install jest -w 'apps/ff-site'
 
 This will update both the `apps/ff-site/package.json` and the root `package-lock.json` file.
 
-We also use [syncpack](https://www.npmjs.com/package/syncpack) to occasionally check and fix version mismatch across the monorepo with the following commands:
+We also use [syncpack](https://www.npmjs.com/package/syncpack) to check and fix version mismatch across the monorepo with the following commands:
 
 ```bash
 npm run check:versions
 npm run fix:versions
 ```
+
+`npm run check:versions` is already set as a pre-push hook with [husky](https://typicode.github.io/husky/), so it runs automatically before every push. `npm run fix:versions` should be run manually when necessary, usually after adding/updating a dependency or reviewing Dependabot PRs.
 
 ### Adding internal dependencies (packages)
 
