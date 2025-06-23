@@ -121,7 +121,7 @@ Similar to the development command, running `npx turbo build` from the root of t
 To build a specific application, the `ffdweb-site` one for example, you can use the filter flag:
 
 ```bash
-npx turbo build --filter=ffdweb-site`
+npx turbo build --filter=ffdweb-site
 ```
 
 or the shorthand syntax:
