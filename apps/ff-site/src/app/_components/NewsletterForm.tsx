@@ -1,16 +1,16 @@
 'use client'
 
-import { useState } from 'react'
-
 import { zodResolver } from '@hookform/resolvers/zod'
 import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import * as Sentry from '@sentry/nextjs'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
-import type { IconProps } from '@filecoin-foundation/ui/Icon'
-import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
-import { NOTIFICATION_DIALOG_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
+import {
+  NotificationDialog,
+  useNotificationDialog,
+} from '@filecoin-foundation/ui/NotificationDialog'
+import { NOTIFICATION_DIALOG_ERROR_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
 
 import { Button } from '@/components/Button'
 import { ControlledForm } from '@/components/Form/ControlledForm'
@@ -25,15 +25,10 @@ const NewsletterSchema = z.object({
 
 export type NewsLetterFormType = z.infer<typeof NewsletterSchema>
 
-type NotificationDialogState = {
-  isOpen: boolean
-  title?: string
-  icon?: IconProps
-}
-
 export function NewsletterForm() {
-  const { form, isSubmitting, dialogState, handleCloseDialog, onSubmit } =
-    useNewsletterForm()
+  const { form, dialog, onSubmit } = useNewsletterForm()
+
+  const isSubmitting = form.formState.isSubmitting
 
   return (
     <ControlledForm<NewsLetterFormType>
@@ -59,10 +54,10 @@ export function NewsletterForm() {
         </div>
       </div>
       <NotificationDialog
-        title={dialogState.title}
-        icon={dialogState.icon}
-        isOpen={dialogState.isOpen}
-        setIsOpen={handleCloseDialog}
+        message={dialog.message}
+        isOpen={dialog.isOpen}
+        icon={dialog.icon}
+        onClose={dialog.close}
       />
     </ControlledForm>
   )
@@ -73,24 +68,7 @@ function useNewsletterForm() {
     resolver: zodResolver(NewsletterSchema),
   })
 
-  const { isSubmitting } = form.formState
-  const [dialogState, setDialogState] = useState<NotificationDialogState>({
-    isOpen: false,
-  })
-
-  function handleCloseDialog() {
-    setDialogState((prev) => ({ ...prev, isOpen: false }))
-  }
-
-  function displayNotification(title: string, icon: IconProps) {
-    setDialogState({
-      isOpen: true,
-      title,
-      icon,
-    })
-
-    setTimeout(handleCloseDialog, NOTIFICATION_DIALOG_DURATION_MS)
-  }
+  const dialog = useNotificationDialog()
 
   async function onSubmit(values: NewsLetterFormType) {
     try {
@@ -106,15 +84,17 @@ function useNewsletterForm() {
         throw new Error('Failed to subscribe')
       }
 
-      displayNotification('Successfully subscribed!', {
-        component: CheckCircle,
-        color: 'success',
+      dialog.open({
+        message: 'Successfully subscribed!',
+        icon: { component: CheckCircle, color: 'success' },
       })
     } catch (error) {
-      displayNotification('An error has occurred. Please try again.', {
-        component: XCircle,
-        color: 'error',
+      dialog.open({
+        message: 'An error has occurred. Please try again.',
+        duration: NOTIFICATION_DIALOG_ERROR_DURATION_MS,
+        icon: { component: XCircle, color: 'error' },
       })
+
       Sentry.captureException(error)
     } finally {
       form.resetField('email')
@@ -123,10 +103,7 @@ function useNewsletterForm() {
 
   return {
     form,
-    isSubmitting,
-    dialogState,
-    handleCloseDialog,
-    displayNotification,
+    dialog,
     onSubmit,
   }
 }
