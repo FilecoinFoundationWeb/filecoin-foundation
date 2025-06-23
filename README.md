@@ -40,6 +40,9 @@ npm install
 
 At this point you should be able to run the development server for any of the applications.
 
+> [!NOTE]
+> We use `npx turbo <commands>` instead of relying on npm scripts or globally installed Turbo. This ensures the correct version defined in the project is used and avoids script indirection.
+
 ### Development
 
 Running `npx turbo dev` from the root of the monorepo will call the `dev` script for all applications and packages in the monorepo, as defined in each `package.json`. In our case, this will start the development server for all applications in our monorepo, packages do not have a `dev` script.
