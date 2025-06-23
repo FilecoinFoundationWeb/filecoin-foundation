@@ -4,7 +4,7 @@ This monorepo contains the web projects for [Filecoin Foundation](https://fil.or
 
 ## Overview
 
-This codebase includes multiple workspaces for applications and internal packages. Applications are deployed projects while packages centralise shared code used across applications.
+This codebase includes multiple [workspaces](https://docs.npmjs.com/cli/v8/using-npm/workspaces) for applications and internal packages. Applications are deployed projects while packages centralise shared code used across applications.
 
 ### Applications
 
@@ -44,7 +44,7 @@ At this point you should be able to run the development server for any of the ap
 
 Running `npx turbo dev` from the root of the monorepo will call the `dev` script for all applications and packages in the monorepo, as defined in each `package.json`. In our case, this will start the development server for all applications in our monorepo, packages do not have a `dev` script.
 
-In 99% of cases, you only want to start the development server for one application at a time. To do so, you should run `turbo dev` with a filter flag.
+In 99% of cases, you only want to start the development server for one application at a time. To do so, you should run `npx turbo dev` with a filter flag.
 
 For instance, to start the development server of the `ffdweb-site` application, run:
 
@@ -58,8 +58,8 @@ You can also use the shorthand syntax:
 npx turbo ffdweb-site#dev
 ```
 
-> [!NOTE]
-> When using npm commands, such as `npm install`, the `--workspace` flag refers to the path of the application or package, relative to the root of the monorepo. When using turbo commands, such as `turbo dev`, the `--filter` flag refers to the name of the application or package, as defined in each `package.json` file.
+> [!CAUTION]
+> When using npm commands, such as `npm install`, the `--workspace` flag refers to the path of the application or package workspace, relative to the root of the monorepo. When using turbo commands, such as `turbo dev`, the `--filter` flag refers to the name of the application or package, as defined in each workspace `package.json`.
 
 ### Adding npm dependencies
 
@@ -69,7 +69,7 @@ The `npm install <dependency>` command will install dependencies for all applica
 npm install <dependency> --workspace=<application/package>
 ```
 
-> [!NOTE]
+> [!CAUTION]
 > The install commands should be run from the root of the monorepo. Do not install dependencies inside the application or package directory, otherwise Turborepo will not be aware of it and will not resolve the dependencies properly.
 
 For example, to add `jest` to the `ff-site` application, run:
@@ -144,10 +144,10 @@ npx turbo ffdweb-site#build
 
 Once the build is complete, you might want to start the production server by running `npx turbo start --filter=ffdweb-site` or `npx turbo ffdweb-site#start`.
 
-## Remote caching
+### Remote caching
 
 We use Turborepo’s [remote caching](https://turborepo.com/docs/core-concepts/remote-caching) feature to speed up local development. This lets everyone share and access the same build cache on Vercel and speed up development.
 
-To opt in, run `npx turbo login` to authenticate with Vercel and `turbo link` to link your local repo to the Vercel cache. You will need to be added to our Vercel organization to be able to do so.
+To opt in, run `npx turbo login` to authenticate with Vercel and `npx turbo link` to link your local repo to the Vercel cache. You will need to be added to our Vercel organization to be able to do so.
 
-Once the project is successfully linked, you should see `Remote caching enabled` in the logs the next time you run `turbo dev` or `turbo build` locally.
+Once the project is successfully linked, you should see `Remote caching enabled` in the logs the next time you run `npx turbo dev` or `npx turbo build` locally.
