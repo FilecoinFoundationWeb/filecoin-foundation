@@ -12,6 +12,10 @@ import {
   useNotificationDialog,
 } from '@filecoin-foundation/ui/NotificationDialog'
 import { Tooltip } from '@filecoin-foundation/ui/Tooltip/Tooltip'
+import {
+  NOTIFICATION_DIALOG_DURATION_MS,
+  NOTIFICATION_DIALOG_ERROR_DURATION_MS,
+} from '@filecoin-foundation/utils/constants/notificationDialogDuration'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
 type CopyToClipboardProps = {
@@ -31,15 +35,20 @@ export function CopyToClipboard({
 }: CopyToClipboardProps) {
   const [, copy] = useCopyToClipboard()
 
-  const dialog = useNotificationDialog({
-    message: notificationTitle,
-  })
+  const dialog = useNotificationDialog()
 
   async function handleCopy(text: string) {
     try {
       await copy(text)
-      dialog.open()
+      dialog.open({
+        message: notificationTitle,
+        duration: NOTIFICATION_DIALOG_DURATION_MS,
+      })
     } catch (error) {
+      dialog.open({
+        message: 'Failed to copy to clipboard',
+        duration: NOTIFICATION_DIALOG_ERROR_DURATION_MS,
+      })
       console.error('Failed to copy!', error)
       Sentry.captureException(error)
     }
