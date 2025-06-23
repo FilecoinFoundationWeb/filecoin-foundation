@@ -84,7 +84,7 @@ npm install jest --workspace 'apps/ff-site'
 Or the shorthand syntax:
 
 ```bash
-npm install jest -w 'apps/ff-site'
+npm i jest -w 'apps/ff-site'
 ```
 
 This will update both the `apps/ff-site/package.json` and the root `package-lock.json` file.
