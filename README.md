@@ -102,24 +102,24 @@ Packages in the monorepo can be viewed as private npm dependencies. To add a pac
 Then, create a `src` directory in the package directory and add your source files. The local `package.json` should export some or all of the source files:
 
 ```json
-// packages/ui/package.json
 "exports": {
   "./Button": "./src/Button.tsx",
-  ...
 }
 ```
+
+_packages/ui/package.json_
 
 Finally, to use the newly-created package in an application, add it as a dependency `manually` in the application's `package.json` file and run `npm install` from the root of the monorepo.
 
 For instance, to use the `@filecoin-foundation/ui` package in the `ff-site` application, add the following line to the `dependencies` section of the `apps/ff-site/package.json` file:
 
 ```json
-// apps/ff-site/package.json
 "dependencies": {
   "@filecoin-foundation/ui": "0.0.0",
-  ...
 }
 ```
+
+_apps/ff-site/package.json_
 
 > [!TIP]
 > As noted above, internal packages use [just-in-time compilation](https://turborepo.com/docs/core-concepts/internal-packages#just-in-time-packages). They don’t include a build step — the consuming application compiles them directly.
