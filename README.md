@@ -89,9 +89,16 @@ npm run fix:versions
 
 ### Adding internal dependencies (packages)
 
-Packages in the monorepo can be viewed as private npm packages. To create a new package, create a new directory in the `packages` directory and add a `package.json` file. The name of the package should start with `@filecoin-foundation/`.
+Packages in the monorepo can be viewed as private npm dependencies. To add a package, create a directory in the `packages` directory and add a `package.json` file. The name of the package should start with `@filecoin-foundation/`.
 
-Then, create a `src` directory in the package directory and add your source files. The local `package.json` should export some or all of the source files.
+Then, create a `src` directory in the package directory and add your source files. The local `package.json` should export some or all of the source files:
+
+```json
+// packages/ui/package.json
+"exports": {
+  "./Button": "./src/Button.tsx",
+}
+```
 
 Finally, to use the newly-created package in an application, add it as a dependency `manually` in the application's `package.json` file and run `npm install` from the root of the monorepo.
 
