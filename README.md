@@ -75,7 +75,13 @@ npm install <dependency> --workspace=<application/package>
 For example, to add `jest` to the `ff-site` application, run:
 
 ```bash
-npm install jest --w 'apps/ff-site'
+npm install jest --workspace 'apps/ff-site'
+```
+
+Or the shorthand syntax:
+
+```bash
+npm install jest -w 'apps/ff-site'
 ```
 
 This will update both the `apps/ff-site/package.json` and the root `package-lock.json` file.
@@ -97,6 +103,7 @@ Then, create a `src` directory in the package directory and add your source file
 // packages/ui/package.json
 "exports": {
   "./Button": "./src/Button.tsx",
+  ...
 }
 ```
 
