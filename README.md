@@ -58,7 +58,7 @@ You can also use the shorthand syntax:
 npx turbo ffdweb-site#dev
 ```
 
-> [!CAUTION]
+> [!IMPORTANT]
 > When using npm commands, such as `npm install`, the `--workspace` flag refers to the path of the application or package workspace, relative to the root of the monorepo. When using turbo commands, such as `turbo dev`, the `--filter` flag refers to the name of the application or package, as defined in each workspace `package.json`.
 
 ### Adding npm dependencies
@@ -69,7 +69,7 @@ The `npm install <dependency>` command will install dependencies for all applica
 npm install <dependency> --workspace=<application/package>
 ```
 
-> [!CAUTION]
+> [!IMPORTANT]
 > The install commands should be run from the root of the monorepo. Do not install dependencies inside the application or package directory, otherwise Turborepo will not be aware of it and will not resolve the dependencies properly.
 
 For example, to add `jest` to the `ff-site` application, run:
