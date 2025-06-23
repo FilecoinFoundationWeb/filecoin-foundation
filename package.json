@@ -7,7 +7,6 @@
   ],
   "packageManager": "npm@10.9.2",
   "scripts": {
-    "lint": "turbo lint",
     "lint:md": "markdownlint-cli2 \"apps/**/*.md\" \"!**/node_modules/**\" --config .markdownlint.jsonc",
     "check:versions": "syncpack list-mismatches",
     "fix:versions": "syncpack fix-mismatches",
