@@ -121,6 +121,9 @@ For instance, to use the `@filecoin-foundation/ui` package in the `ff-site` appl
 }
 ```
 
+> [!TIP]
+> As noted above, internal packages use [just-in-time compilation](https://turborepo.com/docs/core-concepts/internal-packages#just-in-time-packages). They don’t include a build step — the consuming application compiles them directly.
+
 For more information, read the [Anatomy of a package](https://turborepo.com/docs/crafting-your-repository/structuring-a-repository#anatomy-of-a-package) section of the Turborepo docs.
 
 ### Building for production
