@@ -2,68 +2,19 @@
 
 ## Overview
 
-This project is developed for Filecoin Foundation, aiming to provide comprehensive information and resources about Filecoin's initiatives and contributions to the decentralized web. Utilizing Next.js for server-side rendering and static site generation, Tailwind CSS for styling, and other dependencies for Markdown processing and validation, this project aims to offer an accessible and user-friendly website for the Filecoin community.
+This project contains the website of Filecoin Foundation, available at [fil.org](https://fil.org/). It aims to provide comprehensive information and resources about Filecoin's initiatives and contributions to the decentralized web.
 
 ## Getting Started
 
-### Prerequisites
+This [Next.js project](https://nextjs.org/docs) is part of a monorepo managed by [Turborepo](https://turborepo.com/docs). To get started, refer to the [root README](../../README.md) for installation and development instructions.
 
-- Node.js (v18 or later)
-- npm
-
-### Installation
-
-Clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/FilecoinFoundationWeb/filecoin-foundation
-cd filecoin-foundation
-npm install
-```
-
-### Development
-
-To start the development server:
-
-```bash
-npm run dev
-```
-
-This command starts a local development server on `http://localhost:3000`. The server will automatically reload if any of the source files are changed.
-
-### Building for Production
-
-The build process includes a pre-build step that converts the CMS configuration file (`public/admin/config.yml`) to JSON (located at `src/app/_data/cmsConfigSchema.json`).
-
-```bash
-npm run build
-```
-
-This command generates a `.next` folder with the production build. To start the production server:
-
-```bash
-npm run start
-```
-
-### Formatting
-
-This project uses [Prettier](https://prettier.io/) for automatic code formatting. The shared Prettier configuration is located in `.prettierrc.json`.
-
-### Linting
-
-This project uses [ESLint](https://eslint.org/) for linting. The shared ESLint configuration is located in `.eslintrc.json`. To lint and fix issues in the codebase:
-
-```bash
-npm run lint
-```
+If you're only interested in working on the website, you can run `npm run dev` in this directory, assuming you have already installed the dependencies at the root of the monorepo.
 
 ## Technologies
 
 - **Next.js 15**: For server-side rendering, static site generation, and routing.
 - **TypeScript**: For static type checking.
 - **Tailwind CSS**: For utility-first CSS styling.
-- **React 19**: For building the user interface.
-- **clsx**: For conditionally joining `classNames` together.
 - **Zod**: For data validation.
 
 ## Decap CMS Integration
@@ -149,6 +100,8 @@ The `Relation` widget is how we create links between related pieces of content, 
 
 ### Accessing the CMS
 
+The CMS is accessible at `/admin`, whether [locally](http://localhost:3000/admin) or in [production](https://fil.org/admin).
+
 #### Authenticating with GitHub in production
 
 Our project integrates with Github for user authentication and content management in a production environment. This integration allows authorized users to access the CMS and make changes to the website content. The list of authorized users is available in the [settings of the GitHub repository](https://github.com/FilecoinFoundationWeb/filecoin-foundation/settings/access). We also use a [Cloudflare worker](https://github.com/FilecoinFoundationWeb/decap-proxy) to handle the authentication process.
@@ -157,11 +110,7 @@ This setup is only necessary for production. For local development, follow the i
 
 #### Working with the CMS locally
 
-You can connect Decap CMS to the local Git repository. To do this, follow these steps:
-
-1. Run `npx decap-server`
-2. Run `npm run dev`
-3. Open http://localhost:3000/admin/index.html
+You can connect Decap CMS to the local Git repository using Decap's local server by running `npx decap-server`. This will bypass the github authentication and allow you to work with the CMS locally.
 
 ### Data Encryption
 
@@ -194,6 +143,8 @@ Alternatively, you can also manually grab the API key from the [Vercel dashboard
 
 ## Creating Page Templates
 
+<!-- Should we keep it? -->
+
 To create a new page template, run the following command:
 
 `npm run generate:page <page-name>`
@@ -207,31 +158,33 @@ Replace `<page-name>` with the desired name of the page. This command will gener
 
 It will also update `paths.ts` to include the new page.
 
+## Lintind and Formatting
+
+We rely on [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to ensure code quality and consistency. We encourage contributors to set up their editors to run Prettier on save. For VSCode, you can add the following to your `.vscode/settings.json`:
+
+```json
+"editor.formatOnSave": true`.
+```
+
+ESLint is configured to run on pre-commit via [husky](https://typicode.github.io/husky/#/). To run it manually, use `npm run lint`. This is fix automatically fixable issues.
+
 ## Continuous Integration and Deployment
 
-Our project leverages GitHub Actions for Continuous Integration (CI) to automate the testing and linting of code. This ensures that every push and pull request to the `main` branch meets our quality standards and passes all tests. Below are the key workflows integrated into our CI process:
+We use GitHub Actions for Continuous Integration (CI) to automate testing. Every pull request to the `main` branch must pass all tests and meet our quality standards. Below are the key workflows in our CI process:
 
-### Cypress Tests
-
-Our CI pipeline includes running end-to-end (E2E) tests with Cypress on every push and pull request to the `main` branch. This workflow ensures that the application behaves as expected from a user's perspective.
-
-### Lint Code Base
-
-We enforce code quality standards through a linting workflow that runs ESLint on every push and pull request to the `main` branch. This workflow identifies and reports patterns found in ECMAScript/JavaScript code, to make code more consistent and avoid bugs.
-
-### Contributing
-
-Contributors are encouraged to ensure their code passes these checks before submitting pull requests. Local setup instructions are provided to run these tests and linters, emulating the CI environment to catch and resolve issues early in the development process.
+- We run end-to-end (E2E) tests with [Cypress](https://www.cypress.io/) to ensure pages contain the correct content and metadata.
+- We use [Percy](https://percy.io/) to compare visual changes between the PR and the production site. It's possible to disable it by adding `[skip percy]` to the PR title.
+- We use [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) to lint our Markdown files. This is especially helpful for PRs coming from Decap CMS, as the author doesn't have control over the formatting.
 
 ## End-to-End Testing with Cypress
 
-To ensure the highest quality of user experience, we employ Cypress for end-to-end (E2E) testing. These tests simulate real user interactions within the application to catch any potential issues before they affect our users.
+To ensure the highest quality of user experience, we employ Cypress for end-to-end (E2E) testing.
 
 ### Running Tests Locally
 
 To run Cypress tests on your local machine:
 
-1. Ensure the development server is running (`npm run dev`).
+1. Ensure the development server is running: `npm run dev`
 2. Open Cypress Test Runner with `npx cypress open` for interactive testing.
 3. Alternatively, run `npx cypress run` to execute tests in headless mode directly from the terminal.
 
