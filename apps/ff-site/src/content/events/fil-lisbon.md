@@ -47,4 +47,124 @@ program:
       end-date: 2022-11-01
       description: Keep an eye out for our program filled with incredible speakers and workshops you won't want to miss.
       location: LX Factory
+
+speakers:
+  speakers_list:
+    - name: Juan Benet
+      title: CEO & Founder
+      company: Protocol Labs
+      linkedin: https://www.linkedin.com/in/jbenetcs/
+      image:
+        src: /assets/images/juan-benet-headshot.webp
+    - name: Marta Belcher
+      title: President and Chair
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/martabelcher/
+      image:
+        src: /assets/headshots/Marta_Belcher.png
+    - name: Clara Tsao
+      title: Founding Officer
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/claratsao/
+      image:
+        src: /assets/images/clara-tsao.webp
+    - name: Megan Klimen
+      title: Founding Officer
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/megan-klimen/
+      image:
+        src: /assets/images/megan-klimen-headshot.webp
+    - name: Angie Lau
+      title: CEO & Founder
+      company: Forkast News
+      linkedin: https://www.linkedin.com/in/angie-lau/
+      image:
+        src: /assets/images/angie-lau-headshot.jpg
+    # - name: Eugenia Filippova
+    #   title: Segment Lead
+    #   company: Everstake
+    # - name: Kurt Opsahl
+    #   title: Deputy Executive Director and General Counsel
+    #   company: Electronic Frontier Foundation
+    # - name: Illia Polosukhin
+    #   title: Co-Founder
+    #   company: NEAR
+    # - name: Brynn O'Donnell
+    #   title: Social Impact Program Manager
+    #   company: Filecoin Foundation & Filecoin Foundation for the Decentralized Web
+    # - name: Bailey Reutzel
+    #   title: President
+    #   company: BLR Media and Events
+    # - name: Molly Mckinlay
+    #   title: EngRes Lead
+    #   company: Protocol Labs
+    # - name: Michael Morisy
+    #   title: Chief Executive Officer
+    #   company: MuckRock
+    # - name: Chris Worman
+    #   title: Co-Founder
+    #   company: Connect Humanity
+    # - name: David Choi
+    #   title: Chief Executive Officer
+    #   company: DAG House
+    # - name: Puncar Jan Brezina
+    #   title: Chief Executive Officer
+    #   company: Gitcoin Llama and Bankless Consulting
+    # - name: Masa Senshi Kikuchi
+    #   title: Founder & CEO
+    #   company: Secured Finance AG
+    # - name: Jonathan Victor
+    #   title: NFT Lead
+    #   company: Protocol Labs
+    # - name: Jeff Bandman
+    #   title: COO and GC
+    #   company: 6529 Group
+    # - name: Vera Wu
+    #   title: COO
+    #   company: Numbers Protocol
+    # - name: Anna Tumadóttir
+    #   title: COO
+    #   company: Creative Commons
+    # - name: J Chris Anderson
+    #   title: Startup Operator
+    #   company: Protocol Labs
+    # - name: Kristin Smith
+    #   title: Executive Director
+    #   company: Blockchain Association
+    # - name: Alex North
+    #   title: Software Protocol Engineer
+    #   company: Protocol Labs
+    # - name: Luiz Fernando Toledo
+    #   title: Cofounder
+    #   company: Data Fixers/Fiquem Sabendo
+    # - name: Danny O'Brien
+    #   title: Senior Fellow
+    #   company: Filecoin Foundation
+    # - name: Alex Altman
+    #   title: COO
+    #   company: Seal Storage
+    # - name: Sarah Thiam
+    #   title: Developer Advocate
+    #   company: Protocol Labs
+    # - name: Sai Varanasi
+    #   title: SVP of Product and Business Marketing
+    #   company: Seagate
+    # - name: Adelyn Zhou
+    #   title: Chief Ecosystem Growth Officer
+    #   company: Chainlink
+    # - name: Jonathan Dotan
+    #   title: Founding Director
+    #   company: Starling Lab
+    # - name: Aaron Stanley
+    #   title: Editorial Director
+    #   company: Filecoin Foundation
+    # - name: Fabian Riewe
+    #   title: Co-founder and CEO
+    #   company: KYVE
+    # - name: Deep Kapur
+    #   title: Technical PM/Startup Operator
+    #   company: Protocol Labs
+    # - name: Charles Cao
+    #   title: Founder
+    #   company: FilSwan
 ---
