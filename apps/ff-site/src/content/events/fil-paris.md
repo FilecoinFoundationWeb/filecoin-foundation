@@ -20,14 +20,14 @@ program:
     - title: FIL Paris Network Base
       start-date: 2023-07-18
       end-date: 2023-07-20
-      location: Le Son de la Terre
+      location: Le Son de la Terr
       description:
         We're bringing together developers, storage providers, clients, and
         ecosystem partners for programming and networking throughout the week.
     - title: Funding the Commons
       start-date: 2023-07-15
       end-date: 2023-07-16
-      location: Sorbonne University 15-21 Rue de l'École de médecine
+      location: Sorbonne University
       description:
         Funding the Commons is a two-day conference that bridges the public
         goods community across Web2, Web3, research, philanthropy, and industry.
@@ -45,7 +45,7 @@ program:
     - title: Storage Providers Workshops
       start-date: 2023-07-18
       end-date: 2023-07-18
-      location: Le Son de la Terre 2 Port Montebello
+      location: Le Son de la Terre
       description:
         Join our workshops around what it's like to be a storage provider
         in the Filecoin ecosystem with Servers.com and DCENT. Deep dive into
@@ -54,7 +54,7 @@ program:
     - title: Filecoin Unleashed
       start-date: 2023-07-18
       end-date: 2023-07-18
-      location: Cyclone le studio 16 Rue Vulpian
+      location: Cyclone le studio
       description:
         Filecoin Unleashed is the ultimate event to learn how Filecoin is
         transforming data storage and unlocking the open data economy.
@@ -72,7 +72,7 @@ program:
     - title: Launchpad Social
       start-date: 2023-07-18
       end-date: 2023-07-18
-      location: Le Son de la Terre 2 Port Montebello
+      location: Le Son de la Terre
       description:
         The Launchpad Social is a unique opportunity to create meaningful
         connections within the Protocol Labs Network. Embark on a floating
@@ -103,7 +103,7 @@ program:
     - title: Filecoin Builders Day
       start-date: 2023-07-20
       end-date: 2023-07-20
-      location: Le Son de la Terre 2 Port Montebello
+      location: Le Son de la Terre
       description:
         It's Builders' Day at the Filecoin Network Base -- a chance to
         celebrate the amazing projects in development across the Filecoin
@@ -116,7 +116,7 @@ program:
     - title: Filecoin Orbit and Friends Happy Hour
       start-date: 2023-07-20
       end-date: 2023-07-20
-      location: Le Son de la Terre 2 Port Montebello
+      location: Le Son de la Terre
       description: After all the great sessions, stick around to say that you've
         partied on the Seine. Filecoin Orbit along with Kryptosphere presents
         our closing event with live entertainment, food, drink and fun.
