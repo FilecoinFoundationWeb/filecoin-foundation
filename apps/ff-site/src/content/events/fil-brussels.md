@@ -88,6 +88,286 @@ program:
         Ownership, and Data, Syncing Bytes at Scale, Libp2p Day, Climate
         Resilience and IPFS, and more. Get your IPFS Camp ticket."
       external-link: https://lu.ma/ipfscamp24
+schedule:
+  kicker: JOIN US
+  title: Schedule
+  days:
+    - date: 2024-07-08
+      events:
+        - title: "Doors Open | Welcome to FIL Fest Day at FIL Brussels Network Base!"
+          start-time: 09:00:00.000Z
+          end-time: 09:00:00.000Z
+          location: ""
+        - title: "Coworking Space"
+          description: "Boost your productivity with our professional workspace, complete with high-speed internet, comfortable seating, and complimentary coffee and snacks. Meet the Filecoin team and hear the latest happenings on the network!"
+          start-time: 09:30:00.000Z
+          end-time: 11:00:00.000Z
+          location: ""
+        - title: "Clara Tsao, Filecoin Foundation | The Future of Filecoin"
+          description: "Kick off FIL Fest with the latest updates on the state of the Filecoin network and get a sneak peek at themes spanning the entire week at FIL Brussels, including possibilities and priorities for the Filecoin ecosystem to thrive in the growing data economy."
+          speakers:
+            - name: Clara Tsao
+              company: Filecoin Foundation
+          start-time: 11:00:00.000Z
+          end-time: 11:10:00.000Z
+          location: ""
+        - title: "FIL Fest, in partnership with CoinDesk Studios"
+          description: "Hear it here first. Catch the latest signal and breakthroughs from leading Filecoin ecosystem projects as they build an in-demand open data economy."
+          start-time: 11:00:00.000Z
+          end-time: 13:00:00.000Z
+          location: ""
+        - title: "Heath Behncke, Holon | Materially Reducing the Cost of Data Infrastructure"
+          description: "Data infrastructure solutions for the exponential age will need to be vastly more capital and energy efficient than existing data networks. Holon's vision for green edge data infrastructure provides a solution for that future network state."
+          speakers:
+            - name: Heath Behncke
+              company: Holon
+          start-time: 11:15:00.000Z
+          end-time: 11:25:00.000Z
+          location: ""
+        - title: "Jen King, FilStor & DeStor | DeStor. Not Your Dad's Dropbox."
+          description: 'Discover DeStor, the cutting-edge decentralized storage solution revolutionizing data storage for the Web3 era. Unlike traditional services like Dropbox, http://DeStor.com leverages blockchain technology to provide a secure, scalable, and decentralized storage marketplace, connecting data owners with Filecoin storage providers. Learn how DeStor is pioneering a new market in decentralized storage, similar to DePIN''s impact. Innovators are using DeStor with Filecoin as the L3 storage layer to enhance their data management: improving how they handle, store, and manage data. Join the future of data storage with DeStor –– where "Proof Beats Promises."'
+          speakers:
+            - name: Jen King
+              company: FilStor & DeStor
+          start-time: 11:25:00.000Z
+          end-time: 11:30:00.000Z
+          location: ""
+        - title: "Bidhan Roy, Bagel | People Powered AI"
+          description: "Bagel's novel GPU restaking technology shatters AI's compute monopoly. This groundbreaking technology lays the first step in Bagel's vision: a P2P machine learning ecosystem enabling truly people-powered AI."
+          speakers:
+            - name: Bidhan Roy
+              company: Bagel
+          start-time: 11:35:00.000Z
+          end-time: 11:50:00.000Z
+          location: ""
+        - title: "Molly Mackinlay, Protocol Labs & FilOz | Filecoin Forward!"
+          description: "What are the most exciting opportunities for Filecoin in 2024 and how is FilOz contributing to a thriving future for Filecoin? Come learn about Fast Finality, hot storage proofs, and a new vision of a Filecoin-powered AWS!"
+          speakers:
+            - name: Molly Mackinlay
+              company: Protocol Labs & FilOz
+          start-time: 11:50:00.000Z
+          end-time: 12:05:00.000Z
+          location: ""
+        - title: "Michael Clark & Porter Stowell, FF | Fireside Chat: Data as an Asset Class"
+          description: 'Two of the foremost thinkers and achievers in the industry introduce us to the "data economy" –– a world where data is no longer a cost center but a revenue center. Learn how the AI boom is accelerating the transition to this new digital age and why blockchain is vital for retainining data''s value.'
+          speakers:
+            - name: Michael Clark
+              company: FF
+            - name: Porter Stowell
+              company: FF
+          start-time: 12:05:00.000Z
+          end-time: 12:25:00.000Z
+          location: ""
+        - title: "Natalie Wang, Numbers Protocol | TRUST 2024: Combating Misinformation in Election Media with Decentralized Tools"
+          description: "Discover cutting-edge decentralized tools for combating misinformation in a year of elections globally. Learn how blockchain-based tech enhances media transparency, safeguarding democratic integrity. Explore the future of the trust economy!"
+          speakers:
+            - name: Natalie Wang
+              company: Numbers Protocol
+          start-time: 12:30:00.000Z
+          end-time: 12:40:00.000Z
+          location: ""
+        - title: "Ty Smith, Swirlds Labs | Hedera: Innovating RWA Tokenization (sponsored session #paidpartnership)"
+          description: "Tokenizing real-world assets (RWAs) can revolutionize asset management, but security and efficiency are paramount. Hedera's Token Service (HTS) and EVM equivalency address these needs, making it the best choice for RWA tokenization. Explore how Hedera's unique features ensure seamless, secure, and compliant asset digitization."
+          speakers:
+            - name: Ty Smith
+              company: Swirlds Labs
+          start-time: 13:40:00.000Z
+          end-time: 14:15:00.000Z
+          location: ""
+        - title: "Panel Discussion | Pathways to Data Onboarding"
+          description: "Hannah Howard, Storacha; Mara McMahon, DeStor & FilStor; Daniel van der Woude, Nuklai; and Konstantin Tkachuk, Titan Network; (Moderator) Danielle DuBravac, Filecoin Foundation"
+          speakers:
+            - name: Hannah Howard
+              company: Storacha
+            - name: Mara McMahon
+              company: DeStor & FilStor
+            - name: Daniel van der Woude
+              company: Nuklai
+            - name: Konstantin Tkachuk
+              company: Titan Network
+            - name: Danielle DuBravac
+              company: Filecoin Foundation
+          start-time: 16:00:00.000Z
+          end-time: 16:25:00.000Z
+          location: ""
+        - title: "Panel Discussion | Data at the Center: The Possibilities of Decentralized Compute, Storage, and AI"
+          description: "Anil Murty, Akash Network; Tom Trowbridge, Fluence; Angelo Schalley, Akave; (Moderator) Clara Tsao, Filecoin Foundation"
+          speakers:
+            - name: Anil Murty
+              company: Akash Network
+            - name: Tom Trowbridge
+              company: Fluence
+            - name: Angelo Schalley
+              company: Akave
+            - name: Clara Tsao
+              company: Filecoin Foundation
+          start-time: 16:30:00.000Z
+          end-time: 16:55:00.000Z
+          location: ""
+        - title: "Networking Reception sponsored by Haven"
+          start-time: 17:00:00.000Z
+          end-time: 19:00:00.000Z
+          location: ""
+        - title: "Molly Mackinlay, Protocol Labs & FilOz | Closing Keynote: Faster, Stronger, Everywhere: Filecoin Upgrades & Opportunities in 2024"
+          description: "Come learn about some of the most exciting updates in Filecoin-land from the CEO of FilOz and Protocol Labs EngRes Lead Molly Mackinlay! We'll talk about new opportunities for decentralized storage in Compute, DePIN, and AI –– and how Filecoin is upgrading with faster bridging & interop, new hot-storage proofs, and better builder tools to support a thriving community of founders!"
+          speakers:
+            - name: Molly Mackinlay
+              company: Protocol Labs & FilOz
+          start-time: 17:30:00.000Z
+          end-time: 18:00:00.000Z
+          location: ""
+    - date: 2024-07-09
+      events:
+        - title: "Doors Open | Welcome to Cloud & Compute Day at FIL Brussels Network Base!"
+          description: "Presented by Impossible Cloud Network, explore Web3's hottest sector, DePIN, and learn about the possibilities unlocked by decentralized storage and compute-over-data advancements as DePIN creates scalable alternatives to centralized players."
+          start-time: 09:00:00.000Z
+          location: ""
+        - title: "Ty Smith, Swirlds Labs | Unlocking RWAs: Advanced Tokenization on Hedera using HTS & Smart Contracts (Sponsor spotlight #paidpartnership)"
+          description: "In this interactive workshop, participants will learn to create and manage RWA tokens utilizing both Hedera's Token Service and EVM Smart contracts. Experience first-hand why Hedera is optimal for secure, efficient, and compliant asset digitization. Join us to master the essentials of leveraging Hedera for innovative asset management."
+          speakers:
+            - name: Ty Smith
+              company: Swirlds Labs
+          start-time: 11:00:00.000Z
+          end-time: 12:00:00.000Z
+          location: ""
+        - title: "Infra 3.0 DePin Deep Dive | Opening Remarks"
+          description: "A member of ICN will welcome the participants and co-hosting parties. Register for Infra 3.0 DePin Deep Dive here: https://lu.ma/cgi2nejb"
+          start-time: 13:00:00.000Z
+          end-time: 13:00:00.000Z
+          location: ""
+        - title: "Infra 3.0 DePIN Deep Dive | Filecoin Foundation Introduction"
+          description: "Register for Infra 3.0 DePIN Deep Dive here: https://lu.ma/cgi2nejb"
+          start-time: 13:05:00.000Z
+          end-time: 13:20:00.000Z
+          location: ""
+        - title: "Infra 3.0 DePIN Deep Dive | POKT Network Intro"
+          start-time: 13:20:00.000Z
+          end-time: 13:35:00.000Z
+          location: ""
+        - title: "Infra 3.0 DePIN Deep Dive | Incredible Cloud Network Intro"
+          description: "COO CK will explain ICNs mission. Register for Infra 3.0 DePIN Deep Dive Here: https://lu.ma/cgi2nejb"
+          start-time: 13:35:00.000Z
+          end-time: 13:50:00.000Z
+          location: ""
+        - title: "Infra 3.0 DePIN Deep Dive | Panel: ​wen web3 100%? The way to a full-stack decentralized infrastructure"
+          description: "Where are we on our way to a full-stack web3 infrastructure? This panel discussion explores the roadmap and challenges to achieving a fully decentralized Web3 infrastructure, focusing on key components like decentralized storage, computing, RPC, blockchain interoperability and other essential components of a comprehensive web infra. Register for Infra 3.0 DePin Deep Dive here: https://lu.ma/cgi2nejb"
+          start-time: 14:00:00.000Z
+          end-time: 14:30:00.000Z
+          location: ""
+        - title: "Infra 3.0 DePIN Deep Dive | Panel: Nodes Together Strong! - The role of community for DePIN success"
+          description: "Why is everyone talking about Community? What do DePINs need a Community for and what are members expected to do? This panel discussion examines the crucial role of community in the success of DePINs, highlighting how collaboration and collective effort drive innovation and resilience. Register for Infra 3.0 DePIN Deep Dive Here: https://lu.ma/cgi2nejb"
+          start-time: 14:30:00.000Z
+          end-time: 14:55:00.000Z
+          location: ""
+        - title: "Infra 3.0 DePin Deep Dive | Closing Remarks"
+          description: "ICN will close the event off and thank all organizers and participants. Register for Infra 3.0 DePIN Deep Dive Here: https://lu.ma/cgi2nejb"
+          start-time: 14:55:00.000Z
+          end-time: 15:00:00.000Z
+          location: ""
+    - date: 2024-07-10
+      events:
+        - title: "Doors Open | Welcome to Data Economy Day at FIL Brussels Network Base!"
+          description: "Join us as we explore why data is destined to become one of the world's largest digital assets and how decentralized data networks like Filecoin underpin how data assets maintain their value – from AI agents to data marketplaces to use-case-specific LLMs."
+          start-time: 09:00:00.000Z
+          location: ""
+        - title: "Coworking Space"
+          description: "Boost your productivity with our professional workspace, complete with high-speed internet, comfortable seating, and complimentary coffee and snacks. Meet the Filecoin team and hear the latest happenings on the network!"
+          start-time: 09:00:00.000Z
+          end-time: 11:00:00.000Z
+          location: ""
+        - title: "Porter Stowell, Filecoin Foundation | Welcome to the Data Economy!"
+          speakers:
+            - name: Porter Stowell
+              company: Filecoin Foundation
+          start-time: 13:00:00.000Z
+          end-time: 13:15:00.000Z
+          location: ""
+        - title: "Michael Clark | Understanding Data as an Asset Class"
+          speakers:
+            - name: Michael Clark
+              company: ""
+          start-time: 13:15:00.000Z
+          end-time: 13:30:00.000Z
+          location: ""
+        - title: "Fireside Chat | Empowering AI and DePIN Without Sacrificing Decentralization"
+          description: "Fireside chat with Alex Blagirev , SingularityNET and Yan Bo Ng, Filecoin Foundation"
+          speakers:
+            - name: Alex Blagirev
+              company: SingularityNET
+            - name: Yan Bo Ng
+              company: Filecoin Foundation
+          start-time: 13:30:00.000Z
+          end-time: 13:45:00.000Z
+          location: ""
+        - title: "Anjali George, Theoriq | From Archive to Action: AI Agents' Potential to Drive Breakthroughs From Untapped Data"
+          speakers:
+            - name: Anjali George
+              company: Theoriq
+          start-time: 13:50:00.000Z
+          end-time: 14:05:00.000Z
+          location: ""
+        - title: "Panel Discussion | Pioneering the Data Economy: From Cost Center to Revenue Center"
+          description: "(Moderator) Eric Hillerbrand, Brainstems.ai  Stefaan Vervaet, Akave  Sebastian Cheek, Faculty Group  Jeremy Hazan, Hyperbolic.Meet the builders at the cutting edge of the new age of data as they help lay the foundations for the rising data economy –– from the ground up with decentralized storage and compute infra and from the top down at the VC level."
+          speakers:
+            - name: Eric Hillerbrand
+              company: Brainstems.ai
+            - name: Stefaan Vervaet
+              company: Akave
+            - name: Sebastian Cheek
+              company: Faculty Group
+            - name: Jeremy Hazan
+              company: Hyperbolic
+          start-time: 14:05:00.000Z
+          end-time: 14:35:00.000Z
+          location: ""
+        - title: "Bidhan Roy, Bagel & Richard Muirhead, Fabric Ventures |Fireside Chat: Decentralized AI Insights from Bagel and Fabric VC"
+          speakers:
+            - name: Bidhan Roy
+              company: Bagel
+            - name: Richard Muirhead
+              company: Fabric Ventures
+          start-time: 14:35:00.000Z
+          end-time: 14:50:00.000Z
+          location: ""
+        - title: "Marla Natoli, Textile| The World's First Data L2 on Filecoin: Unlocking Opportunities for AI/ML, DePINs and Data-Driven Applications"
+          description: "A look at Basin, Textile's decentralized object storage solution built on the Filecoin network and powered by InterPlanetary Consensus. Discover how DePINs and AI protocols use this high-throughput data layer to maximize data value, and explore how Basin is positioned to optimize synthetic data management, accelerating advancements in AI."
+          speakers:
+            - name: Marla Natoli
+              company: Textile
+          start-time: 14:50:00.000Z
+          end-time: 15:05:00.000Z
+          location: ""
+        - title: "Daniel van der Woude, Nuklai | AI's New Horizon: The Dawn of Collaborative Data Ecosystems"
+          speakers:
+            - name: Daniel van der Woude
+              company: Nuklai
+          start-time: 15:25:00.000Z
+          end-time: 15:45:00.000Z
+          location: ""
+        - title: "Ram, Openledger & Aaron Stanley, Filecoin Foundation| Role of Data in Decentralized AI"
+          speakers:
+            - name: Ram
+              company: Openledger
+            - name: Aaron Stanley
+              company: Filecoin Foundation
+          start-time: 15:50:00.000Z
+          end-time: 16:10:00.000Z
+          location: ""
+        - title: "DeAI Mixer with Filecoin + Lumerin"
+          start-time: 16:00:00.000Z
+          end-time: 17:00:00.000Z
+          location: ""
+        - title: "Danny O'Brien, Filecoin Foundation | The History of Open Source and Future of DeAI"
+          speakers:
+            - name: Danny O'Brien
+              company: Filecoin Foundation
+          start-time: 17:00:00.000Z
+          end-time: 17:25:00.000Z
+          location: ""
+        - title: "Reception"
+          start-time: 17:00:00.000Z
+          end-time: 18:00:00.000Z
+          location: ""
 speakers:
   speakers_list:
     - name: Aaron Stanley
@@ -341,6 +621,38 @@ speakers:
       linkedin: https://www.linkedin.com/in/marlanatoli/?originalSubdomain=ca
       image:
         src: /assets/images/headshot-marla-natoli.webp
+sponsors:
+  first-tier:
+    - name: Hedera
+      image:
+        src: /assets/images/hedera-logo.webp
+      website: https://hedera.com/
+  second-tier:
+    - name: Haven Digital Partners
+      image:
+        src: /assets/images/haven-logo.webp
+      website: https://www.havendp.com/
+    - name: Impossible Cloud Network
+      image:
+        src: /assets/images/impossible-logo.webp
+      website: https://www.impossiblecloud.com/icn
+    - name: Open Ledger
+      image:
+        src: /assets/images/open-ledger-logo.webp
+      website: https://www.openledger.xyz/
+  third-tier:
+    - name: RRM Global
+      image:
+        src: /assets/images/rrm-logo.webp
+      website: https://www.rrmglobal.io
+    - name: Textile
+      image:
+        src: /assets/images/textile-logo.webp
+      website: https://linktr.ee/recalllabs
+    - name: W3
+      image:
+        src: /assets/images/w3-logo.webp
+      website: https://w3.io
 recap:
   youtube-embed-url: https://www.youtube.com/embed/TGpFMAA9R3U
 seo:
