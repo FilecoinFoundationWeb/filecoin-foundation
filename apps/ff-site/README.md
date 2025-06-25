@@ -158,7 +158,7 @@ Replace `<page-name>` with the desired name of the page. This command will gener
 
 It will also update `paths.ts` to include the new page.
 
-## Lintind and Formatting
+## Linting and Formatting
 
 We rely on [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to ensure consistent code formatting.
 
