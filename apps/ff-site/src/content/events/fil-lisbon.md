@@ -10,6 +10,8 @@ location:
   region: europe
 start-date: 2022-10-31
 end-date: 2022-11-04
+recap:
+  youtube-embed-url: https://www.youtube.com/embed/pCwG0-aZ9D8
 image:
   src: /assets/images/645217c53763d71fa57e55a0_fil-lisbon.jpg
 seo:
