@@ -56,115 +56,200 @@ speakers:
       linkedin: https://www.linkedin.com/in/jbenetcs/
       image:
         src: /assets/images/juan-benet-headshot.webp
+    - name: Molly Mckinlay
+      title: EngRes Lead
+      company: Protocol Labs
+      linkedin: https://www.linkedin.com/in/mollymackinlay/
+      image:
+        src: /assets/images/molly-mackinlay-headshot.webp
     - name: Marta Belcher
       title: President and Chair
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/martabelcher/
       image:
         src: /assets/headshots/Marta_Belcher.png
-    - name: Clara Tsao
-      title: Founding Officer
-      company: Filecoin Foundation
-      linkedin: https://www.linkedin.com/in/claratsao/
-      image:
-        src: /assets/images/clara-tsao.webp
     - name: Megan Klimen
       title: Founding Officer
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/megan-klimen/
       image:
         src: /assets/images/megan-klimen-headshot.webp
+    - name: Clara Tsao
+      title: Founding Officer
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/claratsao/
+      image:
+        src: /assets/images/clara-tsao.webp
     - name: Angie Lau
       title: CEO & Founder
       company: Forkast News
       linkedin: https://www.linkedin.com/in/angie-lau/
       image:
-        src: /assets/images/angie-lau-headshot.jpg
-    # - name: Eugenia Filippova
-    #   title: Segment Lead
-    #   company: Everstake
-    # - name: Kurt Opsahl
-    #   title: Deputy Executive Director and General Counsel
-    #   company: Electronic Frontier Foundation
-    # - name: Illia Polosukhin
-    #   title: Co-Founder
-    #   company: NEAR
-    # - name: Brynn O'Donnell
-    #   title: Social Impact Program Manager
-    #   company: Filecoin Foundation & Filecoin Foundation for the Decentralized Web
-    # - name: Bailey Reutzel
-    #   title: President
-    #   company: BLR Media and Events
-    # - name: Molly Mckinlay
-    #   title: EngRes Lead
-    #   company: Protocol Labs
-    # - name: Michael Morisy
-    #   title: Chief Executive Officer
-    #   company: MuckRock
-    # - name: Chris Worman
-    #   title: Co-Founder
-    #   company: Connect Humanity
-    # - name: David Choi
-    #   title: Chief Executive Officer
-    #   company: DAG House
-    # - name: Puncar Jan Brezina
-    #   title: Chief Executive Officer
-    #   company: Gitcoin Llama and Bankless Consulting
-    # - name: Masa Senshi Kikuchi
-    #   title: Founder & CEO
-    #   company: Secured Finance AG
-    # - name: Jonathan Victor
-    #   title: NFT Lead
-    #   company: Protocol Labs
-    # - name: Jeff Bandman
-    #   title: COO and GC
-    #   company: 6529 Group
-    # - name: Vera Wu
-    #   title: COO
-    #   company: Numbers Protocol
-    # - name: Anna Tumadóttir
-    #   title: COO
-    #   company: Creative Commons
-    # - name: J Chris Anderson
-    #   title: Startup Operator
-    #   company: Protocol Labs
-    # - name: Kristin Smith
-    #   title: Executive Director
-    #   company: Blockchain Association
-    # - name: Alex North
-    #   title: Software Protocol Engineer
-    #   company: Protocol Labs
-    # - name: Luiz Fernando Toledo
-    #   title: Cofounder
-    #   company: Data Fixers/Fiquem Sabendo
-    # - name: Danny O'Brien
-    #   title: Senior Fellow
-    #   company: Filecoin Foundation
-    # - name: Alex Altman
-    #   title: COO
-    #   company: Seal Storage
-    # - name: Sarah Thiam
-    #   title: Developer Advocate
-    #   company: Protocol Labs
-    # - name: Sai Varanasi
-    #   title: SVP of Product and Business Marketing
-    #   company: Seagate
-    # - name: Adelyn Zhou
-    #   title: Chief Ecosystem Growth Officer
-    #   company: Chainlink
-    # - name: Jonathan Dotan
-    #   title: Founding Director
-    #   company: Starling Lab
-    # - name: Aaron Stanley
-    #   title: Editorial Director
-    #   company: Filecoin Foundation
-    # - name: Fabian Riewe
-    #   title: Co-founder and CEO
-    #   company: KYVE
-    # - name: Deep Kapur
-    #   title: Technical PM/Startup Operator
-    #   company: Protocol Labs
-    # - name: Charles Cao
-    #   title: Founder
-    #   company: FilSwan
+        src: /assets/images/angie-lau-headshot.webp
+    - name: Eugenia Filippova
+      title: Segment Lead
+      company: Everstake
+      image:
+        src: /assets/images/eugenia-filippova-headshot.webp
+    - name: Kurt Opsahl
+      title: Deputy Executive Director and General Counsel
+      company: Electronic Frontier Foundation
+      linkedin: https://www.linkedin.com/in/kurt-opsahl-0858654/
+      image:
+        src: /assets/images/kurt-opsahl-headshot.webp
+    - name: Illia Polosukhin
+      title: Co-Founder
+      company: NEAR
+      linkedin: https://www.linkedin.com/in/illia-polosukhin-77b6538/
+      image:
+        src: /assets/images/illia-polosukhin-headshot.webp
+    - name: Brynn O'Donnell
+      title: Social Impact Program Manager
+      company: Filecoin Foundation & FFDWeb
+      linkedin: https://www.linkedin.com/in/brynn-odonnell/
+      image:
+        src: /assets/images/brynn-odonnell-headshot.webp
+    - name: Bailey Reutzel
+      title: President
+      company: BLR Media and Events
+      image:
+        src: /assets/images/bailey-reutzel-headshot.webp
+    - name: Michael Morisy
+      title: Chief Executive Officer
+      company: MuckRock
+      linkedin: https://www.linkedin.com/in/morisy/
+      image:
+        src: /assets/images/michael-morisy-headshot.webp
+    - name: Chris Worman
+      title: Co-Founder
+      company: Connect Humanity
+      linkedin: https://www.linkedin.com/in/chris-worman/
+      image:
+        src: /assets/images/chris-worman-headshot.webp
+    - name: David Choi
+      title: Chief Executive Officer
+      company: DAG House
+      linkedin: https://www.linkedin.com/in/davidsunilchoi/
+      image:
+        src: /assets/images/david-choi-headshot.webp
+    - name: Puncar Jan Brezina
+      title: Chief Executive Officer
+      company: Gitcoin Llama and Bankless Consulting
+      linkedin: https://www.linkedin.com/in/puncar/
+      image:
+        src: /assets/images/puncar-jan-brezina-headshot.webp
+    - name: Masa Senshi Kikuchi
+      title: Founder & CEO
+      company: Secured Finance AG
+      linkedin: https://www.linkedin.com/in/masa-senshi-kikuchi-55185a23/
+      image:
+        src: /assets/images/masa-kikuchi-headshot.webp
+    - name: Jonathan Victor
+      title: NFT Lead
+      company: Protocol Labs
+      linkedin: https://www.linkedin.com/in/jonathan-victor-69a44255/
+      image:
+        src: /assets/images/jonathan-victor-headshot.webp
+    - name: Jeff Bandman
+      title: COO and GC
+      company: 6529 Group
+      linkedin: https://www.linkedin.com/in/jeffbandman/
+      image:
+        src: /assets/images/jeff-bandman-headshot.webp
+    - name: Vera Wu
+      title: COO
+      company: Numbers Protocol
+      linkedin: https://www.linkedin.com/in/vera-wu/
+      image:
+        src: /assets/images/vera-wu-headshot.webp
+    - name: Anna Tumadóttir
+      title: COO
+      company: Creative Commons
+      linkedin: https://www.linkedin.com/in/anna-tumadottir/
+      image:
+        src: /assets/images/anna-tumadottir-headshot.webp
+    - name: J Chris Anderson
+      title: Startup Operator
+      company: Protocol Labs
+      linkedin: https://www.linkedin.com/in/jchris/
+      image:
+        src: /assets/images/j-chris-anderson-headshot.webp
+    - name: Kristin Smith
+      title: Executive Director
+      company: Blockchain Association
+      linkedin: https://www.linkedin.com/in/smithk1/
+      image:
+        src: /assets/images/kristin-smith-headshot.webp
+    - name: Alex North
+      title: Software Protocol Engineer
+      company: Protocol Labs
+      linkedin: https://www.linkedin.com/in/alexnorth/
+      image:
+        src: /assets/images/alex-north-headshot.webp
+    - name: Luiz Fernando Toledo
+      title: Cofounder
+      company: Data Fixers/Fiquem Sabendo
+      linkedin: https://www.linkedin.com/in/luizftoledo1/
+      image:
+        src: /assets/images/luiz-fernando-toledo-headshot.webp
+    - name: Danny O'Brien
+      title: Senior Fellow
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/dannyo2/
+      image:
+        src: /assets/images/danny-obrien.webp
+    - name: Alex Altman
+      title: COO
+      company: Seal Storage
+      linkedin: https://www.linkedin.com/in/alex-altman-1b9499134/
+      image:
+        src: /assets/images/alex-altman-headshot.webp
+    - name: Sarah Thiam
+      title: Developer Advocate
+      company: Protocol Labs
+      linkedin: https://www.linkedin.com/in/sarahthiam/
+      image:
+        src: /assets/images/sarah-thiam.webp
+    - name: Sai Varanasi
+      title: SVP of Product and Business Marketing
+      company: Seagate
+      linkedin: https://www.linkedin.com/in/sai-varanasi-02509815/
+      image:
+        src: /assets/images/sai-varanasi-headshot.webp
+    - name: Adelyn Zhou
+      title: Chief Ecosystem Growth Officer
+      company: Chainlink
+      linkedin: https://www.linkedin.com/in/adelynzhou/
+      image:
+        src: /assets/images/adelyn-zhou-headshot.webp
+    - name: Jonathan Dotan
+      title: Founding Director
+      company: Starling Lab
+      linkedin: https://www.linkedin.com/in/jonathan-dotan-8158151/
+      image:
+        src: /assets/images/jonathan-dotan-headshot.webp
+    - name: Aaron Stanley
+      title: Editorial Director
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/aaronstanley27/
+      image:
+        src: /assets/images/aaron-stanley-headshot.webp
+    - name: Fabian Riewe
+      title: Co-founder and CEO
+      company: KYVE
+      linkedin: https://www.linkedin.com/in/fabian-riewe-76a5221b9/
+      image:
+        src: /assets/images/fabian-riewe-headshot.webp
+    - name: Deep Kapur
+      title: Technical PM/Startup Operator
+      company: Protocol Labs
+      linkedin: https://www.linkedin.com/in/deepkkapur/
+      image:
+        src: /assets/images/deep-kapur-headshot.webp
+    - name: Charles Cao
+      title: Founder
+      company: FilSwan
+      linkedin: https://www.linkedin.com/in/charlescao/
+      image:
+        src: /assets/images/charles-cao-headshot.webp
 ---
