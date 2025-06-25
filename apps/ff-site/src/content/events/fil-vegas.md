@@ -289,7 +289,6 @@ schedule:
           location: Presidio Ballroom
         - title: "Data Solutions for Disaster Recovery and AI Innovation"
           description: "A Filecoin storage provider illustrates the importance of data integrity from dual perspectives: a post-apocalyptic view on why decentralized storage and data preservation will be critical to a human being's existence for the long-term; and a current update on Power Meta's cloud mining pools that fuel AI projects."
-
           tag: Mainstage
           speakers:
             - name: Andromeda Huang
@@ -316,7 +315,6 @@ schedule:
           location: Presidio Ballroom
         - title: "How AI needs Crypto(graphy)"
           description: "Discover how cryptographic and decentralized protocols like Filecoin can help humanity avoid some of the most dystopian outcomes of AI and increase the probability of the outcomes that improve human flourishing. In a technical talk accessible to a range of backgrounds, you'll cover data auditing and chain-of-custody with proofs of storage, content verification and identification, consumer data privacy and sovereignty using web3 engineering patterns, and AI democratization using open training data and shared computing networks."
-
           tag: Mainstage
           speakers:
             - name: Claudia Richoux
@@ -368,7 +366,6 @@ schedule:
       events:
         - title: "DePIN: The Evolution of Real-time Communication"
           description: "How Huddle01 is creating a new decentralized physical infrastructure network to coordinate bandwidth and computation resources of the community to enable decentralized real-time communication for better performance, improved privacy, and a new bottom-up economy."
-
           tag: Mainstage
           speakers:
             - name: Susmit
@@ -378,7 +375,6 @@ schedule:
           location: Presidio Ballroom
         - title: "Empowering AI with Decentralized Data: SFT Protocol Insights"
           description: "This talk will delve into the evolution and future of the AI data layer, focusing on the innovative solutions and technical architecture of the SFT Protocol in decentralizing data and tokenizing trust, while addressing the challenges and opportunities presented by the integration of advanced technologies such as Filecoin and DePIN."
-
           tag: Mainstage
           speakers:
             - name: Joey Lee
