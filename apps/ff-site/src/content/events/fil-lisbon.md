@@ -7,7 +7,6 @@ category: hosted
 location:
   primary: Lisbon, Portugal
   region: europe
-external-link: https://fil-lisbon.io/
 start-date: 2022-10-31
 end-date: 2022-11-04
 image:
