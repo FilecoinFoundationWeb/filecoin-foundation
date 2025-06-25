@@ -20,7 +20,7 @@ program:
     - title: FIL Paris Network Base
       start-date: 2023-07-18
       end-date: 2023-07-20
-      location: Le Son de la Terr
+      location: Le Son de la Terre
       description:
         We're bringing together developers, storage providers, clients, and
         ecosystem partners for programming and networking throughout the week.
