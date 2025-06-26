@@ -140,7 +140,7 @@ speakers:
         src: /assets/images/puncar-jan-brezina-headshot.webp
     - name: Masa Senshi Kikuchi
       title: Founder & CEO
-      company: Secured Finance AG
+      company: Secured Finance
       linkedin: https://www.linkedin.com/in/masa-senshi-kikuchi-55185a23/
       image:
         src: /assets/images/masa-kikuchi-headshot.webp
@@ -254,7 +254,7 @@ speakers:
         src: /assets/images/charles-cao-headshot.webp
 schedule:
   days:
-    - date: "2022-10-24"
+    - date: 2022-10-24
       events:
         - title: PL Summit
           start-time: 11:00:00.000Z
@@ -270,7 +270,7 @@ schedule:
             light bites, and music to kick the week off in style. Check the
             website for more information!
           url: https://fillisbon2022.sched.com/event/1CVls/lab-week-opening-party
-    - date: "2022-10-25"
+    - date: 2022-10-25
       events:
         - title: Filecoin Foundation x Fission x Lightshift Hacker Base
           start-time: 09:00:00.000Z
@@ -299,7 +299,7 @@ schedule:
             deployment, 20 min Q&ABreak3 PM: Metaverse tour into VR arcade 5 PM:
             Happy Hour reception Check the website for more information!
           url: https://fillisbon2022.sched.com/event/1CVrO/open-metaverse-meetup-with-mona-galleries
-    - date: "2022-10-26"
+    - date: 2022-10-26
       events:
         - title: Funding the Commons
           start-time: 09:00:00.000Z
@@ -368,7 +368,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1Cuhh/decentralize-all-the-things-an-ffdw-view-of-decentralization-beyond-filecoin
           speakers:
             - name: Danny O'Brien
-              company: ""
+              company: "Filecoin Foundation"
         - title: "Launchpad Social Hour #4"
           start-time: 19:00:00.000Z
           location: Go A Lisboa
@@ -378,7 +378,7 @@ schedule:
             cohorts happening in the next months, meet the team and our current
             residents. Check the website for more information!
           url: https://fillisbon2022.sched.com/event/1CVbJ/launchpad-social-hour-#4
-    - date: "2022-10-27"
+    - date: 2022-10-27
       events:
         - title: Talent Day @ Talent House Lisbon
           start-time: 10:00:00.000Z
@@ -454,7 +454,7 @@ schedule:
             blockchain... And have a good time!!!! Check the website for more
             information!
           url: https://fillisbon2022.sched.com/event/1CVsM/zama-party
-    - date: "2022-10-28"
+    - date: 2022-10-28
       events:
         - title: UCAN Build Apps with IPFS
           start-time: 10:00:00.000Z
@@ -527,7 +527,7 @@ schedule:
             Join Filecoin Green and the Filecoin Foundation's Social Impact team
             for an evening happy hour. Please register here.
           url: https://fillisbon2022.sched.com/event/1D6LE/sustainability-social-impact-and-spirits
-    - date: "2022-10-29"
+    - date: 2022-10-29
       events:
         - title: FVM Open Hack Day
           start-time: 11:00:00.000Z
@@ -554,7 +554,7 @@ schedule:
             ways and have fun while at the job fair! Check the website for more
             information!
           url: https://fillisbon2022.sched.com/event/1CW1h/decentralized-job-fair-ipfs-camp
-    - date: "2022-10-30"
+    - date: 2022-10-30
       events:
         - title: Filecoin Plus - Community Symposium
           start-time: 09:00:00.000Z
@@ -615,7 +615,7 @@ schedule:
             with outer space-y vibes! Make sure you are registered for FIL Lisbon
             to access the party!
           url: https://fillisbon2022.sched.com/event/1CUg4/filecoin-interplanetary-party
-    - date: "2022-10-31"
+    - date: 2022-10-31
       events:
         - title: FIL Lisbon Main Stage Days - Doors open!
           start-time: 10:30:00.000Z
@@ -637,21 +637,22 @@ schedule:
             on Filecoin Rewards Brynn O'Donnell on Filecoin Foundation for the
             Decentralized Web
           url: https://fillisbon2022.sched.com/event/1CUgr/brunch-n-build-lightning-talks
-          speakers:
+          moderators:
             - name: Danny O'Brien
-              company: ""
+              company: "Filecoin Foundation"
+          speakers:
             - name: Ruben Amenyogbo
-              company: ""
+              company: "Protocol Labs"
             - name: Brynn O'Donnell
-              company: ""
+              company: "Filecoin Foundation"
             - name: Masa 'Senshi' Kikuch
-              company: ""
+              company: "Secured Finance"
             - name: Alex North
-              company: ""
+              company: "Protocol Labs"
             - name: Sarah Thiam
-              company: ""
+              company: "Protocol Labs"
             - name: J Chris Anderson
-              company: ""
+              company: "Protocol Labs"
         - title: Welcome to FIL Lisbon
           start-time: 13:00:00.000Z
           location: LX Factory
@@ -661,7 +662,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUmD/welcome-to-fil-lisbon
           speakers:
             - name: Danny O'Brien
-              company: ""
+              company: "Filecoin Foundation"
         - title: Filecoin Network Analytics Day
           start-time: 13:00:00.000Z
           location: Brotéria
@@ -681,7 +682,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUjH/filecoin-ecosystem-overview
           speakers:
             - name: Stefaan Vervaet
-              company: ""
+              company: "Protocol Labs"
         - title: Get Ready for the Filecoin Virtual Machine!
           start-time: 13:15:00.000Z
           location: LX Factory
@@ -692,7 +693,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUmM/get-ready-for-the-filecoin-virtual-machine
           speakers:
             - name: Molly Mckinlay
-              company: ""
+              company: "Protocol Labs"
         - title: Building on the Filecoin Virtual Machine
           start-time: 13:30:00.000Z
           location: LX Factory
@@ -706,7 +707,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUmT/building-on-the-filecoin-virtual-machine
           speakers:
             - name: Raul Kripalani
-              company: ""
+              company: "Protocol Labs"
         - title: Crypto and Policy
           start-time: 13:45:00.000Z
           location: LX Factory
@@ -714,17 +715,18 @@ schedule:
             Listen to this in-depth conversation from crypto policy experts to
             help you navigate Web3's regulatory complexities.
           url: https://fillisbon2022.sched.com/event/1CUmV/crypto-and-policy
-          speakers:
+          moderators:
             - name: Jeff Bandman
-              company: ""
-            - name: Veronica McGregor
-              company: ""
+              company: "6529 Group"
+          speakers:
             - name: Marta Belcher
-              company: ""
+              company: "Filecoin Foundation"
+            - name: Veronica McGregor
+              company: "Exodus"
             - name: Kristin Smith
-              company: ""
+              company: "Blockchain Association"
             - name: Kurt Opsahl
-              company: ""
+              company: "Electronic Frontier Foundation"
         - title: "Upping the Petabytes: Fil+ and the Meaning of Social Trust"
           start-time: 14:15:00.000Z
           location: LX Factory
@@ -733,13 +735,13 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUmW/upping-the-petabytes-fil+-and-the-meaning-of-social-trust
           speakers:
             - name: Megan Klimen
-              company: ""
+              company: "Filecoin Foundation"
             - name: Galen McAndrew
-              company: ""
+              company: "Filecoin Foundation"
             - name: Deep Kapur
-              company: ""
+              company: "Protocol Labs"
             - name: Charles Cao
-              company: ""
+              company: "FilSwan"
         - title: >-
             Filecoin Green: Charting the Path to a Verifiable Environmentalism
           start-time: 14:30:00.000Z
@@ -753,7 +755,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUmc/filecoin-green-charting-the-path-to-a-verifiable-environmentalism
           speakers:
             - name: Caitlin Moore
-              company: ""
+              company: "Protocol Labs"
         - title: "Coming Soon: Earn Filecoin From Your Desktop"
           start-time: 14:55:00.000Z
           location: LX Factory
@@ -763,7 +765,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CVQ6/coming-soon-earn-filecoin-from-your-desktop
           speakers:
             - name: Ansgar Grunseid
-              company: ""
+              company: "Protocol Labs"
         - title: Web3 Cloud Storage in the Real World
           start-time: 15:10:00.000Z
           location: LX Factory
@@ -775,7 +777,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUmf/web3-cloud-storage-in-the-real-world
           speakers:
             - name: Alex Altman
-              company: ""
+              company: "Seal Storage"
         - title: "The Singularity Is Here: Data Onboarding for Web2"
           start-time: 15:25:00.000Z
           location: LX Factory
@@ -787,7 +789,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1DRkk/the-singularity-is-here-data-onboarding-for-web2
           speakers:
             - name: Joao Fiadeiro
-              company: ""
+              company: "Protocol Labs"
         - title: UCAN Build Apps With IPFS
           start-time: 15:40:00.000Z
           location: LX Factory
@@ -799,7 +801,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUmh/ucan-build-apps-with-ipfs
           speakers:
             - name: J Chris Anderson
-              company: ""
+              company: "Protocol Labs"
         - title: "Web2🤝Web3: Don't Miss This Decentralized Storage Announcement"
           start-time: 15:55:00.000Z
           location: LX Factory
@@ -807,15 +809,16 @@ schedule:
             Learn which enterprises are excited about adopting Web3 tech and
             storing data in a decentralized manner.
           url: https://fillisbon2022.sched.com/event/1CUmk/web2web3-dont-miss-this-decentralized-storage-announcement
-          speakers:
+          moderators:
             - name: Stefaan Vervaet
-              company: ""
+              company: "Protocol Labs"
+          speakers:
             - name: Magnus Jones
-              company: ""
+              company: "EY"
             - name: Clara Tsao
-              company: ""
+              company: "Filecoin Foundation"
             - name: Sai Varanasi
-              company: ""
+              company: "Seagate"
         - title: Tracking Digital Media All the Way to Mainnet
           start-time: 16:45:00.000Z
           location: LX Factory
@@ -823,7 +826,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUmq/tracking-digital-media-all-the-way-to-mainnet
           speakers:
             - name: Vera Wu
-              company: ""
+              company: "Numbers Protocol"
         - title: Juan and Illia on the Convergence of AI and Web3
           start-time: 17:00:00.000Z
           location: LX Factory
@@ -834,9 +837,9 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUmu/juan-and-illia-on-the-convergence-of-ai-and-web3
           speakers:
             - name: Juan Benet
-              company: ""
+              company: "Protocol Labs"
             - name: Illia Polosukhin
-              company: ""
+              company: "NEAR"
         - title: Juan and Illia AMA
           start-time: 17:30:00.000Z
           location: LX Factory
@@ -846,9 +849,9 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUmx/juan-and-illia-ama
           speakers:
             - name: Juan Benet
-              company: ""
+              company: "Protocol Labs"
             - name: Illia Polosukhin
-              company: ""
+              company: "NEAR"
         - title: See You Tomorrow FIL Lisbon
           start-time: 17:50:00.000Z
           location: LX Factory
@@ -860,7 +863,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1CUmz/see-you-tomorrow-fil-lisbon
           speakers:
             - name: Marta Belcher
-              company: ""
+              company: "Filecoin Foundation"
         - title: FIL Lisbon Main Stage Happy Hour!
           start-time: 18:00:00.000Z
           location: LX Factory
@@ -880,7 +883,7 @@ schedule:
             thought leaders interested in the Web3 tech stack and the challenges
             it faces today. Check the website for more information!
           url: https://fillisbon2022.sched.com/event/1CW3U/peer-to-peer-networks-meetup-by-fluence
-    - date: "2022-11-01"
+    - date: 2022-11-01
       events:
         - title: Old Friends Reunion-Sovereign Individual & ZK Odyssey
           start-time: 08:00:00.000Z
@@ -946,15 +949,16 @@ schedule:
             Puncar Jan Brezina on DAO Governance Fabian Riewe on Data Veracity
             in Web3Eugenia Filippova on Supporting Ukraine Through Crypto
           url: https://fillisbon2022.sched.com/event/1D3vv/brunch-n-build-lightning-talks
-          speakers:
+          moderators:
             - name: Danny O'Brien
-              company: ""
+              company: "Filecoin Foundation"
+          speakers:
             - name: Eugenia Filippova
-              company: ""
+              company: "Everstake"
             - name: Puncar Jan Brezina
-              company: ""
+              company: "Gitcoin"
             - name: Fabian Riewe
-              company: ""
+              company: "KYVE"
         - title: CryptoEconDay
           start-time: 12:00:00.000Z
           location: Hyatt Regency Lisbon
@@ -982,7 +986,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1DRkn/welcome-to-fil-lisbon-day-2
           speakers:
             - name: Danny O'Brien
-              company: ""
+              company: "Filecoin Foundation"
         - title: "Supercharged: The State of Filecoin Network Growth"
           start-time: 13:10:00.000Z
           location: LX Factory
@@ -992,13 +996,14 @@ schedule:
             charge to onboard more data to the network and what's the outlook
             for next year.
           url: https://fillisbon2022.sched.com/event/1D3zy/supercharged-the-state-of-filecoin-network-growth
-          speakers:
+          moderators:
             - name: Ashwanth Samuel
-              company: ""
+              company: "Protocol Labs"
+          speakers:
             - name: Joao Fiadeiro
-              company: ""
+              company: "Protocol Labs"
             - name: Stefaan Vervaet
-              company: ""
+              company: "Protocol Labs"
         - title: "PSA: We're Building Better Internet"
           start-time: 13:30:00.000Z
           location: LX Factory
@@ -1008,15 +1013,16 @@ schedule:
             from Creative Commons and Public Knowledge, the two groups
             spearheading the Movement for a Better Internet.
           url: https://fillisbon2022.sched.com/event/1D4Ob/psa-were-building-better-internet
-          speakers:
+          moderators:
             - name: Danny O'Brien
-              company: ""
+              company: "Filecoin Foundation"
+          speakers:
             - name: Marta Belcher
-              company: ""
+              company: "Filecoin Foundation"
             - name: Chris Lewis
-              company: ""
+              company: "Public Knowledge"
             - name: Anna Tumadóttir
-              company: ""
+              company: "Creative Commons"
         - title: "From the CIA to the Amazon: How MuckRock Makes Data Transparent"
           start-time: 13:50:00.000Z
           location: LX Factory
@@ -1028,9 +1034,9 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1D3SL/from-the-cia-to-the-amazon-how-muckrock-makes-data-transparent
           speakers:
             - name: Michael Morisy
-              company: ""
+              company: "MuckRock"
             - name: Luiz Fernando Toledo
-              company: ""
+              company: "Fiquem Sabendo"
         - title: >-
             Infrastructure for the Metaverse: The Cornerstone of the Digital
             World
@@ -1040,13 +1046,14 @@ schedule:
             IPFS is the backbone of much of the NFT world. Strap on your headset
             (not really) and get a lay of the (virtual) land.
           url: https://fillisbon2022.sched.com/event/1D8Ah/infrastructure-for-the-metaverse-the-cornerstone-of-the-digital-world
-          speakers:
+          moderators:
             - name: Angie Lau
-              company: ""
+              company: "Forkast"
+          speakers:
             - name: Matthew Hoerl
-              company: ""
+              company: "Mona"
             - name: Jonathan Palmer
-              company: ""
+              company: "Peregrine"
         - title: What We Learned About the Global Digital Divide
           start-time: 14:45:00.000Z
           location: LX Factory
@@ -1060,7 +1067,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1D4SU/what-we-learned-about-the-global-digital-divide
           speakers:
             - name: Chris Worman
-              company: ""
+              company: "Connect Humanity"
         - title: Unlocking the Data Layer With Web3.storage and Filecoin
           start-time: 15:00:00.000Z
           location: LX Factory
@@ -1071,7 +1078,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1D3SO/unlocking-the-data-layer-with-web3storage-and-filecoin
           speakers:
             - name: David Choi
-              company: ""
+              company: "DAG House"
         - title: Opening the Doors to Democracy's Library
           start-time: 15:20:00.000Z
           location: LX Factory
@@ -1083,17 +1090,18 @@ schedule:
             latest collab with the Internet Archive to support Democracy's
             Library.
           url: https://fillisbon2022.sched.com/event/1D8Ak/opening-the-doors-to-democracys-library
-          speakers:
+          moderators:
             - name: Zack Seward
-              company: ""
+              company: "Amplified Events Strategy"
+          speakers:
             - name: Clara Tsao
-              company: ""
+              company: "Filecoin Foundation"
             - name: Nicole Wong
-              company: ""
+              company: "Filecoin Foundation"
             - name: Marta Belcher
-              company: ""
+              company: "Filecoin Foundation"
             - name: John Paul Farmer
-              company: ""
+              company: "Filecoin Foundation"
         - title: "NFTs: It's All About Resiliency and Filecoin Offers That"
           start-time: 15:45:00.000Z
           location: LX Factory
@@ -1102,15 +1110,16 @@ schedule:
             about why Filecoin is such important infrastructure for NFTs,
             whether they're being used for digital art or anything else.
           url: https://fillisbon2022.sched.com/event/1D3WB/nfts-its-all-about-resiliency-and-filecoin-offers-that
-          speakers:
+          moderators:
             - name: Jonathan Victor
-              company: ""
+              company: "Protocol Labs"
+          speakers:
             - name: Nancy Baker Cahill
-              company: ""
+              company: "4th Wall app"
             - name: Anna Tumadóttir
-              company: ""
+              company: "Creative Commons"
             - name: Adelyn Zhou
-              company: ""
+              company: "ChainLink"
         - title: "Trustless Evidence: Starling Lab on Documenting the War in Ukraine"
           start-time: 16:25:00.000Z
           location: LX Factory
@@ -1122,7 +1131,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1D8An/trustless-evidence-starling-lab-on-documenting-the-war-in-ukraine
           speakers:
             - name: Jonathan Dotan
-              company: ""
+              company: "Starling Lab"
         - title: >-
             Fireside chat with Filecoin Foundation President & Chair Marta
             Belcher
@@ -1133,11 +1142,12 @@ schedule:
             the organization's efforts to preserve humanity's most important
             information.
           url: https://fillisbon2022.sched.com/event/1CcMs/fireside-chat-with-filecoin-foundation-president-chair-marta-belcher
-          speakers:
+          moderators:
             - name: Zack Seward
-              company: ""
+              company: "Amplified Events Strategy"
+          speakers:
             - name: Marta Belcher
-              company: ""
+              company: "Filecoin Foundation"
         - title: Juan Benet Closing Keynote
           start-time: 17:00:00.000Z
           location: LX Factory
@@ -1148,7 +1158,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1D4Oe/juan-benet-closing-keynote
           speakers:
             - name: Juan Benet
-              company: ""
+              company: "Protocol Labs"
         - title: Thanks and See You at the Next Filecoin Event
           start-time: 17:30:00.000Z
           location: LX Factory
@@ -1159,7 +1169,7 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1D3SP/thanks-and-see-you-at-the-next-filecoin-event
           speakers:
             - name: Marta Belcher
-              company: ""
+              company: "Filecoin Foundation"
         - title: FIL Lisbon Main Stage Happy Hour!
           start-time: 18:00:00.000Z
           location: LX Factory
@@ -1167,9 +1177,9 @@ schedule:
           url: https://fillisbon2022.sched.com/event/1DdgC/fil-lisbon-main-stage-happy-hour
         - title: Social Impact Reception @ FIL Lisbon (Invite Only)
           start-time: 18:00:00.000Z
-          location: null
+          location: "Location upon registration"
           url: https://fillisbon2022.sched.com/event/1Cuiz/social-impact-reception-fil-lisbon-invite-only
-    - date: "2022-11-02"
+    - date: 2022-11-02
       events:
         - title: >-
             Technical Workshop: Building Interoperable Gig Marketplaces with
@@ -1187,7 +1197,7 @@ schedule:
             Meetup for Orbit Ambassadors! Presentations, happy hour open bar,
             and a special appearance.
           url: https://fillisbon2022.sched.com/event/1CZDd/orbit-ambassador-meetup
-    - date: "2022-11-03"
+    - date: 2022-11-03
       events:
         - title: FIL x NEAR Happy Hour
           start-time: 18:00:00.000Z
