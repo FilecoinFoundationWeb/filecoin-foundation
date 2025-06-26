@@ -20,19 +20,22 @@ image:
   src: /assets/images/filbrussels.webp
 program:
   events:
-    - title: FIL Fest, in partnership with CoinDesk Studios, at FIL Brussels Network
+    - title:
+        FIL Fest, in partnership with CoinDesk Studios, at FIL Brussels Network
         Base
       start-date: 2024-07-08
       end-date: 2024-07-08
       location: Maison Grand Place, Grand Place 19
-      description: Hear it here first. Catch the latest signal and breakthroughs from
+      description:
+        Hear it here first. Catch the latest signal and breakthroughs from
         leading Filecoin ecosystem projects as they build an in-demand open data
         economy.
     - title: Cloud and Compute Day at FIL Brussels Network Base
       start-date: 2024-07-08
       end-date: 2024-07-08
       location: Maison Grand Place, Grand Place 19
-      description: Infra 3.0 - Brussels DePIN Deep Dive, Hosted by Impossible Cloud
+      description:
+        Infra 3.0 - Brussels DePIN Deep Dive, Hosted by Impossible Cloud
         Network and Pokt. Presented by Impossible Cloud Network, explore Web3’s
         hottest sector, DePIN, and learn about the possibilities unlocked by
         decentralized storage and compute-over-data advancements as DePIN
@@ -42,7 +45,8 @@ program:
       title: AI and the Data Economy Day
       end-date: 2024-07-10
       location: Maison Grand Place, Grand Place 19
-      description: Join us as we explore why data is destined to become one of the
+      description:
+        Join us as we explore why data is destined to become one of the
         world’s largest digital assets and how decentralized data networks like
         Filecoin underpin how data assets maintain their value – from AI agents
         to data marketplaces to use-case-specific LLMs.
@@ -60,7 +64,8 @@ program:
       end-date: 2024-07-11
       location: SQUARE Brussels Meeting Centre, Mont des Arts
       title: Filecoin Booth at EthCC
-      description: Filecoin Booth at EthCC, hosted by the Filecoin Foundation, July
+      description:
+        Filecoin Booth at EthCC, hosted by the Filecoin Foundation, July
         10–11 at the SQUARE Brussels Meeting Centre, to learn more about the
         Filecoin vision, the latest developments for the EVM-compatible Filecoin
         network, and understand why storage is just the start for Filecoin.
@@ -79,7 +84,8 @@ program:
       start-date: 2024-07-11
       end-date: 2024-07-13
       location: Register to see location
-      description: "IPFS Camp is for those who want to bend the arc of the Internet to
+      description:
+        "IPFS Camp is for those who want to bend the arc of the Internet to
         be more open, efficient, and secure. Connecting builders and users,
         organized by thematic tracks, and inspired by both the in-depth
         conversations and unbounded energy of previous IPFS gatherings, it will
@@ -96,7 +102,6 @@ schedule:
       events:
         - title: "Doors Open | Welcome to FIL Fest Day at FIL Brussels Network Base!"
           start-time: 09:00:00.000Z
-          end-time: 09:00:00.000Z
           location: ""
         - title: "Coworking Space"
           description: "Boost your productivity with our professional workspace, complete with high-speed internet, comfortable seating, and complimentary coffee and snacks. Meet the Filecoin team and hear the latest happenings on the network!"
@@ -174,8 +179,29 @@ schedule:
           start-time: 13:40:00.000Z
           end-time: 14:15:00.000Z
           location: ""
+        - title: "Ethan Lau, RRM Global | Compute as a Currency (sponsored session #paidpartnership)"
+          description: "GPU: Driving the future by breaking limitations."
+          speakers:
+            - name: Ethan Lau
+              company: RRM Global
+          start-time: 14:15:00.000Z
+          end-time: 14:30:00.000Z
+          location: ""
+        - title: "Diogo Coimbra, Haven Digital Partners | Haven Digital Partners: Institutional FIL Liquidity for Storage Providers (sponsored session #paidpartnership)"
+          speakers:
+            - name: Diogo Coimbra
+              company: Haven Digital Partners
+          start-time: 14:45:00.000Z
+          end-time: 15:00:00.000Z
+          location: ""
+        - title: "Arthur Tan, FiLLiquid | FiLLiquid: Filecoin’s Next Generation Liquidity Leasing Solutions (sponsored session #paidpartnership)"
+          speakers:
+            - name: Arthur Tan
+              company: FiLLiquid
+          start-time: 15:45:00.000Z
+          end-time: 16:00:00.000Z
+          location: ""
         - title: "Panel Discussion | Pathways to Data Onboarding"
-          description: "Hannah Howard, Storacha; Mara McMahon, DeStor & FilStor; Daniel van der Woude, Nuklai; and Konstantin Tkachuk, Titan Network; (Moderator) Danielle DuBravac, Filecoin Foundation"
           speakers:
             - name: Hannah Howard
               company: Storacha
@@ -191,7 +217,6 @@ schedule:
           end-time: 16:25:00.000Z
           location: ""
         - title: "Panel Discussion | Data at the Center: The Possibilities of Decentralized Compute, Storage, and AI"
-          description: "Anil Murty, Akash Network; Tom Trowbridge, Fluence; Angelo Schalley, Akave; (Moderator) Clara Tsao, Filecoin Foundation"
           speakers:
             - name: Anil Murty
               company: Akash Network
@@ -204,9 +229,10 @@ schedule:
           start-time: 16:30:00.000Z
           end-time: 16:55:00.000Z
           location: ""
-        - title: "Networking Reception sponsored by Haven"
+        - title: Filecoin Orbit 2.0
+          description: Relaunching Orbit to supercharge the Filecoin Community
           start-time: 17:00:00.000Z
-          end-time: 19:00:00.000Z
+          end-time: 17:30:00.000Z
           location: ""
         - title: "Molly Mackinlay, Protocol Labs & FilOz | Closing Keynote: Faster, Stronger, Everywhere: Filecoin Upgrades & Opportunities in 2024"
           description: "Come learn about some of the most exciting updates in Filecoin-land from the CEO of FilOz and Protocol Labs EngRes Lead Molly Mackinlay! We'll talk about new opportunities for decentralized storage in Compute, DePIN, and AI –– and how Filecoin is upgrading with faster bridging & interop, new hot-storage proofs, and better builder tools to support a thriving community of founders!"
@@ -222,14 +248,7 @@ schedule:
           description: "Presented by Impossible Cloud Network, explore Web3's hottest sector, DePIN, and learn about the possibilities unlocked by decentralized storage and compute-over-data advancements as DePIN creates scalable alternatives to centralized players."
           start-time: 09:00:00.000Z
           location: ""
-        - title: "Ty Smith, Swirlds Labs | Unlocking RWAs: Advanced Tokenization on Hedera using HTS & Smart Contracts (Sponsor spotlight #paidpartnership)"
-          description: "In this interactive workshop, participants will learn to create and manage RWA tokens utilizing both Hedera's Token Service and EVM Smart contracts. Experience first-hand why Hedera is optimal for secure, efficient, and compliant asset digitization. Join us to master the essentials of leveraging Hedera for innovative asset management."
-          speakers:
-            - name: Ty Smith
-              company: Swirlds Labs
-          start-time: 11:00:00.000Z
-          end-time: 12:00:00.000Z
-          location: ""
+
         - title: "Infra 3.0 DePin Deep Dive | Opening Remarks"
           description: "A member of ICN will welcome the participants and co-hosting parties. Register for Infra 3.0 DePin Deep Dive here: https://lu.ma/cgi2nejb"
           start-time: 13:00:00.000Z
@@ -264,6 +283,10 @@ schedule:
           start-time: 14:55:00.000Z
           end-time: 15:00:00.000Z
           location: ""
+        - title: "Networking Reception sponsored by Haven"
+          start-time: 17:00:00.000Z
+          end-time: 19:00:00.000Z
+          location: ""
     - date: 2024-07-10
       events:
         - title: "Doors Open | Welcome to Data Economy Day at FIL Brussels Network Base!"
@@ -274,6 +297,14 @@ schedule:
           description: "Boost your productivity with our professional workspace, complete with high-speed internet, comfortable seating, and complimentary coffee and snacks. Meet the Filecoin team and hear the latest happenings on the network!"
           start-time: 09:00:00.000Z
           end-time: 11:00:00.000Z
+          location: ""
+        - title: "Ty Smith, Swirlds Labs | Unlocking RWAs: Advanced Tokenization on Hedera using HTS & Smart Contracts (Sponsor spotlight #paidpartnership)"
+          description: "In this interactive workshop, participants will learn to create and manage RWA tokens utilizing both Hedera's Token Service and EVM Smart contracts. Experience first-hand why Hedera is optimal for secure, efficient, and compliant asset digitization. Join us to master the essentials of leveraging Hedera for innovative asset management."
+          speakers:
+            - name: Ty Smith
+              company: Swirlds Labs
+          start-time: 11:00:00.000Z
+          end-time: 12:00:00.000Z
           location: ""
         - title: "Porter Stowell, Filecoin Foundation | Welcome to the Data Economy!"
           speakers:
@@ -320,7 +351,7 @@ schedule:
           start-time: 14:05:00.000Z
           end-time: 14:35:00.000Z
           location: ""
-        - title: "Bidhan Roy, Bagel & Richard Muirhead, Fabric Ventures |Fireside Chat: Decentralized AI Insights from Bagel and Fabric VC"
+        - title: "Bidhan Roy, Bagel & Richard Muirhead, Fabric Ventures | Fireside Chat: Decentralized AI Insights from Bagel and Fabric VC"
           speakers:
             - name: Bidhan Roy
               company: Bagel
@@ -329,7 +360,7 @@ schedule:
           start-time: 14:35:00.000Z
           end-time: 14:50:00.000Z
           location: ""
-        - title: "Marla Natoli, Textile| The World's First Data L2 on Filecoin: Unlocking Opportunities for AI/ML, DePINs and Data-Driven Applications"
+        - title: "Marla Natoli, Textile | The World's First Data L2 on Filecoin: Unlocking Opportunities for AI/ML, DePINs and Data-Driven Applications"
           description: "A look at Basin, Textile's decentralized object storage solution built on the Filecoin network and powered by InterPlanetary Consensus. Discover how DePINs and AI protocols use this high-throughput data layer to maximize data value, and explore how Basin is positioned to optimize synthetic data management, accelerating advancements in AI."
           speakers:
             - name: Marla Natoli
@@ -344,7 +375,7 @@ schedule:
           start-time: 15:25:00.000Z
           end-time: 15:45:00.000Z
           location: ""
-        - title: "Ram, Openledger & Aaron Stanley, Filecoin Foundation| Role of Data in Decentralized AI"
+        - title: "Ram, Openledger & Aaron Stanley, Filecoin Foundation | Role of Data in Decentralized AI"
           speakers:
             - name: Ram
               company: Openledger
