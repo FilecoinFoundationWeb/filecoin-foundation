@@ -594,8 +594,8 @@ speakers:
       image:
         src: /assets/images/juan-benet-headshot.webp
     - name: Kate Wong
-      company: STFIL, DeStor
-      title: Founder
+      company: STFIL
+      title: Co-Founder
       image:
         src: /assets/images/kate-wong-stfil.webp
     - name: Koby Phillips
