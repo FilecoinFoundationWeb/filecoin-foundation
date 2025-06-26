@@ -2,10 +2,10 @@ import type { MemberData } from '@/types/memberType'
 
 import AlexFeerst from '@/assets/headshots/Alex_Feerst.png'
 import BrewsterKahle from '@/assets/headshots/Brewster_Kahle.png'
+import BrianBehlendorf from '@/assets/headshots/Brian_Behlendorf.png'
 import CatherineStihler from '@/assets/headshots/Catherine_Stihler.png'
 import DenelleDixon from '@/assets/headshots/Denelle_Dixon.png'
 import GeorgiaQuinn from '@/assets/headshots/Georgia_Quinn.png'
-import JoeLubin from '@/assets/headshots/Joe_Lubin.png'
 import KatieBiber from '@/assets/headshots/Katie_Biber.png'
 import RyeBarcott from '@/assets/headshots/Rye_Barcott.png'
 import SandraRo from '@/assets/headshots/Sandra_Ro.png'
@@ -20,10 +20,10 @@ export const advisorsData: Array<MemberData> = [
     image: BrewsterKahle,
   },
   {
-    name: 'Joe Lubin',
-    title: 'Founder, Consensys & Cofounder, Ethereum',
-    linkedin: 'https://www.linkedin.com/in/joseph-lubin-48406489/',
-    image: JoeLubin,
+    name: 'Brian Behlendorf',
+    title: 'Chief AI Strategist, Linux Foundation',
+    linkedin: 'https://www.linkedin.com/in/brianbehlendorf/',
+    image: BrianBehlendorf,
   },
   {
     name: 'Denelle Dixon',
