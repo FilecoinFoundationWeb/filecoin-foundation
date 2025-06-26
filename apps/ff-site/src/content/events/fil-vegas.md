@@ -504,7 +504,7 @@ speakers:
       title: Founder
       image:
         src: /assets/images/claudia-richoux.webp
-    - name: Daniel Leon
+    - name: Daniel León
       company: Protocol Labs, DeStor
       linkedin: https://www.linkedin.com/in/danielmleon/
       title: Partnerships & Alliances Lead
