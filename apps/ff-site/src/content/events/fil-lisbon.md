@@ -56,7 +56,7 @@ speakers:
       linkedin: https://www.linkedin.com/in/jbenetcs/
       image:
         src: /assets/images/juan-benet-headshot.webp
-    - name: Molly Mckinlay
+    - name: Molly Mackinlay
       title: EngRes Lead
       company: Protocol Labs
       linkedin: https://www.linkedin.com/in/mollymackinlay/
@@ -308,7 +308,7 @@ schedule:
             Funding the Commons - Lab Week will focus on high quality, impactful
             conversation around new and evolving funding mechanisms and entities
             for public goods projects. Attendees can expect an internal update
-            from the Network Goods team, engagning keynote presentations,
+            from the Network Goods team, engaging keynote presentations,
             opportunities for interactivity and a social hour to close out our
             day. Early Bird Free registration until Oct. 16! Check the website
             for more information!
@@ -448,9 +448,9 @@ schedule:
           start-time: 19:00:00.000Z
           location: Flat Eventos Lisboa
           description: >-
-            As part of LabWeek22 by Protocal Labs, Zama is throwing a party on
+            As part of LabWeek22 by Protocol Labs, Zama is throwing a party on
             Thursday, October 27th. The idea is to connect web3 entrepreneurs
-            and builders, meet the Zama team, discuss privacy, crypto—graphy and
+            and builders, meet the Zama team, discuss privacy, cryptography and
             blockchain... And have a good time!!!! Check the website for more
             information!
           url: https://fillisbon2022.sched.com/event/1CVsM/zama-party
@@ -645,7 +645,7 @@ schedule:
               company: "Protocol Labs"
             - name: Brynn O'Donnell
               company: "Filecoin Foundation"
-            - name: Masa 'Senshi' Kikuch
+            - name: Masa 'Senshi' Kikuchi
               company: "Secured Finance"
             - name: Alex North
               company: "Protocol Labs"
@@ -898,12 +898,12 @@ schedule:
             Friends Reunion — De Fi Summit 2020, 8th Old Friends Reunion-Scaling
             Summit and Metaverse Carnival 2021, we're excited to initiate the
             trend each year, make in-depth conversation and gather the most
-            visioners and professionals to bring value to the vibrant blockchain
-            industry.​By inviting industry professionals and visioners to build
+            visionaries and professionals to bring value to the vibrant blockchain
+            industry.​By inviting industry professionals and visionaries to build
             a comprehensive and mindful discussion, OFR 2022 will navigate on
             the topics of Data, Privacy, DID, zk EVM, ZKPs, zk Rollup, etc.,
             featuring zero knowledge's implementation of Blockchain and how to
-            navigate cryptographic primitives as a buidler. Attendees will have
+            navigate cryptographic primitives as a builder. Attendees will have
             a chance to listen to the mind-blowing panel discussions and keynote
             sessions in the fully engaged one-day event. About IOSG Ventures
             IOSG Ventures is a community-friendly and research-driven early-stage
