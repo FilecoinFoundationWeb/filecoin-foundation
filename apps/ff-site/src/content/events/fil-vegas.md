@@ -417,7 +417,7 @@ schedule:
         - title: "Decentralization: Historic Computing Cycles & New Usages"
           tag: Mainstage
           speakers:
-            - name: Muthu Venkatachalam
+            - name: Muthaiah Venkatachalam
               company: DeStor
             - name: Mark Connor
               company: DeStor
@@ -564,6 +564,11 @@ speakers:
       title: Marketing Lead
       image:
         src: /assets/images/jen-king-pl.webp
+    - name: Joey Lee
+      company: SFT Protocol, DeStor
+      title: Founder
+      image:
+        src: /assets/images/joey-lee-sft-protocol.webp
     - name: Jonathan Hooker
       title: "Co-Founder, Director"
       linkedin: https://www.linkedin.com/in/jonathan-hooker-syd/
@@ -588,6 +593,11 @@ speakers:
       linkedin: https://www.linkedin.com/in/jbenetcs
       image:
         src: /assets/images/juan-benet-headshot.webp
+    - name: Kate Wong
+      company: STFIL, DeStor
+      title: Founder
+      image:
+        src: /assets/images/kate-wong-stfil.webp
     - name: Koby Phillips
       company: Telarus, DeStor
       linkedin: https://www.linkedin.com/in/koby-phillips-cloud-expert/
