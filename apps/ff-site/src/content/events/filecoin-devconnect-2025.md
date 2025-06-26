@@ -10,7 +10,7 @@ published-on: 2025-05-30T16:48:00.000Z
 category: supported-sponsored
 location:
   primary: Buenos Aires, Argentina
-  region: apac-asia
+  region: south-america
 start-date: 2025-11-13
 end-date: 2025-11-22
 seo:
