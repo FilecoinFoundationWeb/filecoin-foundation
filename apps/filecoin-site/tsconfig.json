@@ -5,7 +5,8 @@
     "noEmit": true,
     "jsx": "preserve",
     "paths": {
-      "@/*": ["./src/app/*"]
+      "@/*": ["./src/app/*"],
+      "@/styles/*": ["./src/app/_styles/*"]
     },
     "plugins": [{ "name": "next" }]
   },
