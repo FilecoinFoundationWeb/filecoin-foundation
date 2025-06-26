@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
+    "@filecoin-foundation/typescript-config": "0.0.0",
     "typescript": "^5.8.3",
     "@types/node": "^24.0.3",
     "@types/react": "19.1.8",
