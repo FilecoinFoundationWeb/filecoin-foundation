@@ -400,7 +400,7 @@ schedule:
           start-time: "15:40:00.000Z"
           end-time: "16:10:00.000Z"
           location: "Lower Deck"
-          description: "An quantitative retrospective into the impact liquidity mining has had on DeFi with discussion on how to improve the mechanics of inefficient funding mining programs."
+          description: "A quantitative retrospective into the impact liquidity mining has had on DeFi with discussion on how to improve the mechanics of inefficient funding mining programs."
         - title: "LUNCH BREAK + Panel Discussion: The Economics of Tokenized Infrastructure"
           start-time: "16:10:00.000Z"
           end-time: "16:40:00.000Z"
@@ -483,7 +483,7 @@ schedule:
           start-time: "16:45:00.000Z"
           end-time: "17:00:00.000Z"
           location: "Lower Deck"
-          description: "WWhat if we could access smart contracts from anywhere, on any web page? In this talk, we'll discuss the challenges in Web3-native frontend development, fragmented client-side computations, and clunky user experiences. We'll also introduce a new approach to building embeddable transactional interfaces."
+          description: "What if we could access smart contracts from anywhere, on any web page? In this talk, we'll discuss the challenges in Web3-native frontend development, fragmented client-side computations, and clunky user experiences. We'll also introduce a new approach to building embeddable transactional interfaces."
         - title: "Butian Li | Decentralizing Dynamism and Simple Complexity"
           start-time: "17:00:00.000Z"
           end-time: "17:30:00.000Z"
@@ -517,7 +517,7 @@ schedule:
           start-time: "19:00:00.000Z"
           end-time: "22:00:00.000Z"
           location: "Upper/Lower Deck"
-          description: "After all the great sessions, stick around to say that you've partied on the Siene. Filecoin Orbit along with Kryptosphere present our closing event with live entertainment, food, drink and fun."
+          description: "After all the great sessions, stick around to say that you've partied on the Seine. Filecoin Orbit along with Kryptosphere present our closing event with live entertainment, food, drink and fun."
 recap:
   youtube-embed-url: https://www.youtube.com/embed/m-lWAQqLI6A
 seo:
