@@ -154,7 +154,7 @@ schedule:
           end-time: 12:05:00.000Z
           location: ""
         - title: "Michael Clark & Porter Stowell, FF | Fireside Chat: Data as an Asset Class"
-          description: 'Two of the foremost thinkers and achievers in the industry introduce us to the "data economy" –– a world where data is no longer a cost center but a revenue center. Learn how the AI boom is accelerating the transition to this new digital age and why blockchain is vital for retainining data''s value.'
+          description: 'Two of the foremost thinkers and achievers in the industry introduce us to the "data economy" –– a world where data is no longer a cost center but a revenue center. Learn how the AI boom is accelerating the transition to this new digital age and why blockchain is vital for retaining data''s value.'
           speakers:
             - name: Michael Clark
               company: FF
@@ -249,8 +249,8 @@ schedule:
           start-time: 09:00:00.000Z
           location: ""
 
-        - title: "Infra 3.0 DePin Deep Dive | Opening Remarks"
-          description: "A member of ICN will welcome the participants and co-hosting parties. Register for Infra 3.0 DePin Deep Dive here: https://lu.ma/cgi2nejb"
+        - title: "Infra 3.0 DePIN Deep Dive | Opening Remarks"
+          description: "A member of ICN will welcome the participants and co-hosting parties. Register for Infra 3.0 DePIN Deep Dive here: https://lu.ma/cgi2nejb"
           start-time: 13:00:00.000Z
           end-time: 13:00:00.000Z
           location: ""
@@ -269,7 +269,7 @@ schedule:
           end-time: 13:50:00.000Z
           location: ""
         - title: "Infra 3.0 DePIN Deep Dive | Panel: ​wen web3 100%? The way to a full-stack decentralized infrastructure"
-          description: "Where are we on our way to a full-stack web3 infrastructure? This panel discussion explores the roadmap and challenges to achieving a fully decentralized Web3 infrastructure, focusing on key components like decentralized storage, computing, RPC, blockchain interoperability and other essential components of a comprehensive web infra. Register for Infra 3.0 DePin Deep Dive here: https://lu.ma/cgi2nejb"
+          description: "Where are we on our way to a full-stack web3 infrastructure? This panel discussion explores the roadmap and challenges to achieving a fully decentralized Web3 infrastructure, focusing on key components like decentralized storage, computing, RPC, blockchain interoperability and other essential components of a comprehensive web infra. Register for Infra 3.0 DePIN Deep Dive here: https://lu.ma/cgi2nejb"
           start-time: 14:00:00.000Z
           end-time: 14:30:00.000Z
           location: ""
@@ -278,7 +278,7 @@ schedule:
           start-time: 14:30:00.000Z
           end-time: 14:55:00.000Z
           location: ""
-        - title: "Infra 3.0 DePin Deep Dive | Closing Remarks"
+        - title: "Infra 3.0 DePIN Deep Dive | Closing Remarks"
           description: "ICN will close the event off and thank all organizers and participants. Register for Infra 3.0 DePIN Deep Dive Here: https://lu.ma/cgi2nejb"
           start-time: 14:55:00.000Z
           end-time: 15:00:00.000Z
@@ -321,7 +321,7 @@ schedule:
           end-time: 13:30:00.000Z
           location: ""
         - title: "Fireside Chat | Empowering AI and DePIN Without Sacrificing Decentralization"
-          description: "Fireside chat with Alex Blagirev , SingularityNET and Yan Bo Ng, Filecoin Foundation"
+          description: "Fireside chat with Alex Blagirev (SingularityNET) and Yan Bo Ng (Filecoin Foundation)."
           speakers:
             - name: Alex Blagirev
               company: SingularityNET
@@ -338,7 +338,7 @@ schedule:
           end-time: 14:05:00.000Z
           location: ""
         - title: "Panel Discussion | Pioneering the Data Economy: From Cost Center to Revenue Center"
-          description: "(Moderator) Eric Hillerbrand, Brainstems.ai  Stefaan Vervaet, Akave  Sebastian Cheek, Faculty Group  Jeremy Hazan, Hyperbolic.Meet the builders at the cutting edge of the new age of data as they help lay the foundations for the rising data economy –– from the ground up with decentralized storage and compute infra and from the top down at the VC level."
+          description: "(Moderator) Eric Hillerbrand (Brainstems.ai), Stefaan Vervaet (Akave), Sebastian Cheek (Faculty Group), Jeremy Hazan (Hyperbolic). Meet the builders at the cutting edge of the new age of data as they help lay the foundations for the rising data economy –– from the ground up with decentralized storage and compute infra and from the top down at the VC level."
           speakers:
             - name: Eric Hillerbrand
               company: Brainstems.ai
