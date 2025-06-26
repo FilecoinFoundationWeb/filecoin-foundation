@@ -25,7 +25,7 @@ program:
       end-date: 2022-11-04
       description: Welcome to the first-ever decentralized conference. Teams in the network will spin up dozens of events over a 10-day period, including research-focused seminars, engineering workshops, summits, unconferences, and celebrations.
       external-link: https://22.labweek.io/
-      location: Lisbon (Multiple Venues)
+      location: Various locations
     - title: Filecoin Foundation x Fission Codes x Lightshift Hacker Base
       start-date: 2022-10-24
       end-date: 2022-11-04
