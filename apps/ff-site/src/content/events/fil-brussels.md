@@ -3,7 +3,7 @@ title: FIL Brussels
 description: The Filecoin community is descending upon Brussels, Belgium from
   July 8-11, alongside EthCC 2024, for an exploration into the realms of
   decentralized AI, DePIN, and compute. Join us for insightful talks, hands-on
-  workshops, networking opportunities, and can’t miss announcements from
+  workshops, networking opportunities, and can't miss announcements from
   trailblazing Filecoin ecosystem teams building at the forefront of the data
   economy.
 created-on: 2024-01-29T15:53:57.402Z
@@ -36,7 +36,7 @@ program:
       location: Maison Grand Place, Grand Place 19
       description:
         Infra 3.0 - Brussels DePIN Deep Dive, Hosted by Impossible Cloud
-        Network and Pokt. Presented by Impossible Cloud Network, explore Web3’s
+        Network and Pokt. Presented by Impossible Cloud Network, explore Web3's
         hottest sector, DePIN, and learn about the possibilities unlocked by
         decentralized storage and compute-over-data advancements as DePIN
         creates scalable alternatives to centralized players.
@@ -47,7 +47,7 @@ program:
       location: Maison Grand Place, Grand Place 19
       description:
         Join us as we explore why data is destined to become one of the
-        world’s largest digital assets and how decentralized data networks like
+        world's largest digital assets and how decentralized data networks like
         Filecoin underpin how data assets maintain their value – from AI agents
         to data marketplaces to use-case-specific LLMs.
     - title: Protocol Labs Meetup at EthCC
@@ -194,7 +194,7 @@ schedule:
           start-time: 14:45:00.000Z
           end-time: 15:00:00.000Z
           location: ""
-        - title: "Arthur Tan, FiLLiquid | FiLLiquid: Filecoin’s Next Generation Liquidity Leasing Solutions (sponsored session #paidpartnership)"
+        - title: "Arthur Tan, FiLLiquid | FiLLiquid: Filecoin's Next Generation Liquidity Leasing Solutions (sponsored session #paidpartnership)"
           speakers:
             - name: Arthur Tan
               company: FiLLiquid
@@ -575,11 +575,17 @@ speakers:
       image:
         src: /assets/images/michael-clark-profile-2024.webp
     - name: Molly Mackinlay
-      company: FilOz
       title: CEO
+      company: FilOz
       linkedin: https://www.linkedin.com/in/mollymackinlay
       image:
         src: /assets/images/molly-mackinlay-headshot.webp
+    - name: Marla Natoli
+      title: Strategic Partnerships
+      company: Textile
+      linkedin: https://www.linkedin.com/in/marlanatoli/?originalSubdomain=ca
+      image:
+        src: /assets/images/headshot-marla-natoli.webp
     - name: Natalie Wang
       title: Lead of Global Outreach
       company: Numbers Protocol
@@ -646,12 +652,6 @@ speakers:
       linkedin: https://www.linkedin.com/in/ngyanbo/?originalSubdomain=sg
       image:
         src: /assets/images/image-11-.webp
-    - name: Marla Natoli
-      title: Strategic Partnerships
-      company: Textile
-      linkedin: https://www.linkedin.com/in/marlanatoli/?originalSubdomain=ca
-      image:
-        src: /assets/images/headshot-marla-natoli.webp
 sponsors:
   first-tier:
     - name: Hedera
