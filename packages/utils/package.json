@@ -23,6 +23,7 @@
     "./getFeaturedBlogPosts": "./src/getFeaturedBlogPosts.ts",
     "./getFeaturedEntry": "./src/getFeaturedEntry.ts",
     "./getMarkdownData": "./src/getMarkdownData.ts",
+    "./generateRobotsTxt": "./src/generateRobotsTxt.ts",
     "./generateShareArticleLinks": "./src/generateShareArticleLinks.ts",
     "./linkUtils": "./src/linkUtils.ts",
     "./mapCMSOptionsToListboxFormat": "./src/mapCMSOptionsToListboxFormat.ts",
