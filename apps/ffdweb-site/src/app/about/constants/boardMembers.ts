@@ -1,6 +1,6 @@
-import marciaHofmann from '@/assets/images/marcia_hofmann.png'
-import martaBelcher from '@/assets/images/marta-belcher.png'
-import raineyReitman from '@/assets/images/rainey-reitman.png'
+import marciaHofmann from '@/assets/headshots/Marcia_Hofmann.png'
+import martaBelcher from '@/assets/headshots/Marta_Belcher.png'
+import raineyReitman from '@/assets/headshots/Rainey_Reitman.png'
 
 export const boardMembers = [
   {

@@ -27,7 +27,7 @@ export const boardMembersData: Array<MemberData> = [
   },
   {
     name: 'Philip Rosendale',
-    title: 'Founder & CTO, Linden Lab',
+    title: 'Founder & CTO, Linden Lab / Second Life',
     linkedin: 'https://www.linkedin.com/in/philiprosedale',
     image: PhilipRosendale,
   },
