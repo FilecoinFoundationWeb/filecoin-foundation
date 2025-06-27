@@ -1,5 +1,6 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { getFeaturedEntry } from '@filecoin-foundation/utils/getFeaturedEntry'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -10,7 +11,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
+import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
@@ -25,23 +26,36 @@ type Props = {
   searchParams: AsyncQueryParams
 }
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
+const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
 
 export default async function EcosystemExplorer(props: Props) {
   const searchParams = await props.searchParams
   const ecosystemProjects = await getEcosystemProjectsData()
+
+  const featuredProject = getFeaturedEntry({
+    entries: ecosystemProjects,
+    featuredEntryPath: featured_entry,
+  })
 
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
 
       <PageHeader
-        title={header.title}
-        description={{ text: header.description }}
-        image={graphicsData.ecosystem}
+        sectionDividerTitle="Featured"
+        title={featuredProject.title}
+        description={{ text: featuredProject.description }}
+        image={{
+          ...(featuredProject.image || graphicsData.imageFallback.data),
+          alt: '',
+          objectFit: 'contain',
+          padding: Boolean(featuredProject.image),
+        }}
       >
-        <Button href={PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path}>
-          Submit Your Project
+        <Button
+          href={`${PATHS.ECOSYSTEM_EXPLORER.path}/${featuredProject.slug}`}
+        >
+          View Project Details
         </Button>
       </PageHeader>
 
