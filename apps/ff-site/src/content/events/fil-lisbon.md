@@ -139,7 +139,7 @@ speakers:
       image:
         src: /assets/images/eugenia-filippova-headshot.webp
     - name: Fabian Riewe
-      title: Co-founder and CEO
+      title: Co-Founder & CEO
       company: KYVE
       linkedin: https://www.linkedin.com/in/fabian-riewe-76a5221b9/
       image:
@@ -199,7 +199,7 @@ speakers:
       image:
         src: /assets/images/luiz-fernando-toledo-headshot.webp
     - name: Masa Senshi Kikuchi
-      title: Founder & CEO
+      title: CEO & Founder
       company: Secured Finance
       linkedin: https://www.linkedin.com/in/masa-senshi-kikuchi-55185a23/
       image:
@@ -230,7 +230,7 @@ speakers:
         src: /assets/images/molly-mackinlay-headshot.webp
     - name: Puncar Jan Brezina
       title: Chief Executive Officer
-      company: Gitcoin Llama and Bankless Consulting
+      company: Gitcoin Llama & Bankless Consulting
       linkedin: https://www.linkedin.com/in/puncar/
       image:
         src: /assets/images/puncar-jan-brezina-headshot.webp
