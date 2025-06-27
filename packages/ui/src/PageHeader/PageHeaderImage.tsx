@@ -9,6 +9,7 @@ import type {
 
 export type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
+  padding?: boolean
 }
 
 export function PageHeaderImage(image: PageHeaderImageProps) {
@@ -23,6 +24,7 @@ export function PageHeaderImage(image: PageHeaderImageProps) {
       'page-header-image',
       image.objectFit === 'cover' && 'object-cover',
       image.objectFit === 'contain' && 'object-contain',
+      image.padding && 'page-header-image-spacing',
     ),
   }
 
