@@ -16,7 +16,11 @@ type SiteLayoutProps = {
 
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
-    <SharedSiteLayout font={inter} Navigation={Navigation} Footer={Footer}>
+    <SharedSiteLayout
+      font={inter.className}
+      Navigation={Navigation}
+      Footer={Footer}
+    >
       {children}
     </SharedSiteLayout>
   )
