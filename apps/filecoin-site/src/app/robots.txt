@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: https://filecoin.io/sitemap.xml
