@@ -660,6 +660,10 @@ sponsors:
         src: /assets/images/hedera-logo.webp
       website: https://hedera.com/
   second-tier:
+    - name: FilStor
+      image:
+        src: /assets/images/filstor-logo.webp
+      website: https://filstor.io/
     - name: Haven Digital Partners
       image:
         src: /assets/images/haven-logo.webp
@@ -668,11 +672,11 @@ sponsors:
       image:
         src: /assets/images/impossible-logo.webp
       website: https://www.impossiblecloud.com/icn
+  third-tier:
     - name: Open Ledger
       image:
         src: /assets/images/open-ledger-logo.webp
       website: https://www.openledger.xyz/
-  third-tier:
     - name: RRM Global
       image:
         src: /assets/images/rrm-logo.webp
