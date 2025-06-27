@@ -264,6 +264,10 @@
   /* PAGE HEADER */
   .page-header-image {
     @apply border-brand-100 rounded-lg border;
+
+    &.page-header-image-spacing {
+      @apply px-6 pt-4;
+    }
   }
 
   /* PAGINATION */
