@@ -122,30 +122,6 @@ program:
         our closing event with live entertainment, food, drink and fun.
 speakers:
   speakers_list:
-    - name: Juan Benet
-      title: Founder and CEO
-      company: Protocol Labs
-      linkedin: https://www.linkedin.com/in/jbenetcs/
-      image:
-        src: /assets/images/juan-benet-headshot.webp
-    - name: Molly Mackinlay
-      title: Head of Engineering, Product, & Research Development
-      company: Protocol Labs
-      linkedin: https://www.linkedin.com/in/mollymackinlay/
-      image:
-        src: /assets/images/molly-mackinlay-headshot.webp
-    - name: Clara Tsao
-      title: Co-founding Officer
-      company: Filecoin Foundation
-      linkedin: https://www.linkedin.com/in/claratsao/
-      image:
-        src: /assets/images/clara-tsao.webp
-    - name: Megan Klimen
-      title: Co-founding Officer
-      company: Filecoin Foundation
-      linkedin: https://www.linkedin.com/in/megan-klimen/
-      image:
-        src: /assets/images/megan-klimen-headshot.webp
     - name: Ainhoa Aldave
       title: Lead of Growth and Blockchain Operations
       company: Zondax
@@ -194,6 +170,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/christiancasazza/
       image:
         src: /assets/images/christian-casazza.webp
+    - name: Clara Tsao
+      title: Co-founding Officer
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/claratsao/
+      image:
+        src: /assets/images/clara-tsao.webp
     - name: Danning Sui
       title: Research Scientist
       company: Flashbots
@@ -266,6 +248,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/jespertoftkristensen/
       image:
         src: /assets/images/jesper-kristensen.webp
+    - name: Juan Benet
+      title: Founder and CEO
+      company: Protocol Labs
+      linkedin: https://www.linkedin.com/in/jbenetcs/
+      image:
+        src: /assets/images/juan-benet-headshot.webp
     - name: Maria Silva
       title: Senior Research Scientist
       company: CryptoEconLab
@@ -290,6 +278,18 @@ speakers:
       linkedin: https://www.linkedin.com/in/matheusventuryne/
       image:
         src: /assets/images/matheus-venturyne-xavier-ferreira.webp
+    - name: Megan Klimen
+      title: Co-founding Officer
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/megan-klimen/
+      image:
+        src: /assets/images/megan-klimen-headshot.webp
+    - name: Molly Mackinlay
+      title: Head of Engineering, Product, & Research Development
+      company: Protocol Labs
+      linkedin: https://www.linkedin.com/in/mollymackinlay/
+      image:
+        src: /assets/images/molly-mackinlay-headshot.webp
     - name: Paul Sengh
       title: Co-founder
       company: OpenBlock Labs
@@ -478,7 +478,7 @@ schedule:
           start-time: "16:30:00.000Z"
           end-time: "16:45:00.000Z"
           location: "Lower Deck"
-          description: "Verifiable, truly internet-scale distributed compute networks are necessary for the next stage of web3 development. A lot of discussion has gone into friendlier UX & scaling blockchain over the past year, culminating in account abstraction & ZK proofs. However, the next frontier for computing is really at the data layer - to build truly decentralised applications that can run at internet scale requires more efficient off-chain computation (that isn’t a centralised backend!). This opens up the door to so many opportunities unavailable in the web2 world including ML DAOs, decentralised AI, DeSci & applications that take advantage of both the features of blockchain and the the power of distributed compute (eg. Waterlily.ai)."
+          description: "Verifiable, truly internet-scale distributed compute networks are necessary for the next stage of web3 development. A lot of discussion has gone into friendlier UX & scaling blockchain over the past year, culminating in account abstraction & ZK proofs. However, the next frontier for computing is really at the data layer - to build truly decentralised applications that can run at internet scale requires more efficient off-chain computation (that isn't a centralised backend!). This opens up the door to so many opportunities unavailable in the web2 world including ML DAOs, decentralised AI, DeSci & applications that take advantage of both the features of blockchain and the the power of distributed compute (eg. Waterlily.ai)."
         - title: "Ida Swarczewskaja and Henri Binstzok | Embeddable transactional interfaces"
           start-time: "16:45:00.000Z"
           end-time: "17:00:00.000Z"
@@ -488,7 +488,7 @@ schedule:
           start-time: "17:00:00.000Z"
           end-time: "17:30:00.000Z"
           location: "Lower Deck"
-          description: "'Life is just complex simplicity. Thug it out' - Teedra Moses, Complex Simplicity, 2004. We will explore the history of the internet and the prospect of decentralized dynamic frontends, before getting into why building complex decentralized systems just doesn’t have to be so damn complicated."
+          description: "'Life is just complex simplicity. Thug it out' - Teedra Moses, Complex Simplicity, 2004. We will explore the history of the internet and the prospect of decentralized dynamic frontends, before getting into why building complex decentralized systems just doesn't have to be so damn complicated."
         - title: "Ainhoa Aldave | Empowering Filecoin Development: A Journey with Beryx and FVM"
           start-time: "17:30:00.000Z"
           end-time: "17:45:00.000Z"
@@ -512,7 +512,7 @@ schedule:
           start-time: "18:45:00.000Z"
           end-time: "19:00:00.000Z"
           location: "Lower Deck"
-          description: "Explores the Filecoin ecosystem growth, implications of flexible lending, liquid staking strategies, and fixed-term lending. Discusses the convergence of DeFi and TradFi, global DeFi trends, regulatory insights, the impact of Filecoin’s listing in Japan, and Secured Finance’s journey from a test pilot to a defined roadmap."
+          description: "Explores the Filecoin ecosystem growth, implications of flexible lending, liquid staking strategies, and fixed-term lending. Discusses the convergence of DeFi and TradFi, global DeFi trends, regulatory insights, the impact of Filecoin's listing in Japan, and Secured Finance's journey from a test pilot to a defined roadmap."
         - title: "Filecoin Orbit and Friends Happy Hour"
           start-time: "19:00:00.000Z"
           end-time: "22:00:00.000Z"
