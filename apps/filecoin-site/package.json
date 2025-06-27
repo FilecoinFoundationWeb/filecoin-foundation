@@ -1,32 +1,27 @@
 {
-  "name": "uxit",
+  "name": "filecoin-site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix",
-    "unlighthouse": "tsx ./scripts/generateSiteAuditReports.ts"
+    "lint": "next lint --fix"
   },
   "dependencies": {
-    "@filecoin-foundation/ui": "0.0.0",
-    "@unlighthouse/cli": "^0.16.3",
-    "@unlighthouse/core": "^0.16.3",
     "next": "^15.3.4",
-    "puppeteer": "^24.10.2",
+    "postcss": "^8.5.6",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.11"
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
+    "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^24.0.3",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
-    "postcss": "^8.5.6",
-    "tsx": "^4.20.3",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
   }
 }
