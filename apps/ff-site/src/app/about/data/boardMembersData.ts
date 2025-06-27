@@ -1,33 +1,40 @@
 import type { MemberData } from '@/types/memberType'
 
-import BrianBehlendorf from '@/assets/headshots/Brian_Behlendorf.png'
-import MarciaHofmann from '@/assets/headshots/Marcia_Hofmann.png'
+import JoeLubin from '@/assets/headshots/Joe_Lubin.png'
+import KristinSmith from '@/assets/headshots/Kristin_Smith.png'
 import MartaBelcher from '@/assets/headshots/Marta_Belcher.png'
-import NicoleWong from '@/assets/headshots/Nicole_Wong.png'
+import PhilipRosendale from '@/assets/headshots/Philip_Rosendale.png'
+import SheilaWarren from '@/assets/headshots/Sheila_Warren.png'
 
 export const boardMembersData: Array<MemberData> = [
   {
     name: 'Marta Belcher',
-    title: 'President & Chair, Filecoin Foundation',
+    title: 'President & Board Chair, FF & FFDW',
     linkedin: 'https://www.linkedin.com/in/martabelcher/',
     image: MartaBelcher,
   },
   {
-    name: 'Brian Behlendorf',
-    title: 'Chief AI Strategist, Linux Foundation',
-    linkedin: 'https://www.linkedin.com/in/brianbehlendorf/',
-    image: BrianBehlendorf,
+    name: 'Sheila Warren',
+    title: 'CEO, Project Liberty Institute',
+    linkedin: 'https://www.linkedin.com/in/sheilawarren/',
+    image: SheilaWarren,
   },
   {
-    name: 'Marcia Hofmann',
-    title: 'Electronic Privacy Attorney',
-    linkedin: 'https://www.linkedin.com/in/marciahofmann/',
-    image: MarciaHofmann,
+    name: 'Kristin Smith',
+    title: 'President, Solana Policy Institute',
+    linkedin: 'https://www.linkedin.com/in/smithk1/',
+    image: KristinSmith,
   },
   {
-    name: 'Nicole Wong',
-    title: 'Former Deputy U.S. Chief Technology Officer',
-    linkedin: 'https://www.linkedin.com/in/nicole-wong-96b4335/',
-    image: NicoleWong,
+    name: 'Philip Rosendale',
+    title: 'Founder & CTO, Linden Lab / Second Life',
+    linkedin: 'https://www.linkedin.com/in/philiprosedale',
+    image: PhilipRosendale,
+  },
+  {
+    name: 'Joe Lubin',
+    title: 'Co-Founder & President, Rendezvous Robotics',
+    linkedin: 'https://www.linkedin.com/in/joseph-lubin-48406489/',
+    image: JoeLubin,
   },
 ]
