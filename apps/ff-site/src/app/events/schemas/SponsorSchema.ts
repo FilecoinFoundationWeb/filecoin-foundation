@@ -4,7 +4,7 @@ import { ImagePropsSchema } from '@filecoin-foundation/utils/schemas/ImagePropsS
 
 const sponsorSchema = z.object({
   name: z.string(),
-  website: z.string().url(),
+  website: z.string().url().optional(),
   image: ImagePropsSchema,
 })
 
