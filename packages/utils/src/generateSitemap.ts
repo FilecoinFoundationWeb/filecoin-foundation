@@ -19,10 +19,10 @@ type DynamicRouteConfig = {
 type SitemapConfig = {
   paths: Record<string, { path: string }>
   baseUrl: string
-  dynamicRoutes: Array<DynamicRouteConfig>
+  dynamicRoutes?: Array<DynamicRouteConfig>
 }
 
-export default async function generateSitemap({
+export async function generateSitemap({
   paths,
   baseUrl,
   dynamicRoutes,
@@ -32,6 +32,10 @@ export default async function generateSitemap({
     lastModified: new Date(),
     priority: pathConfig.path === '/' ? 1.0 : 0.7,
   }))
+
+  if (!dynamicRoutes) {
+    return staticRoutes
+  }
 
   const dynamicRoutesPromises = dynamicRoutes.map((config) =>
     generateDynamicSitemapEntries(config, baseUrl),

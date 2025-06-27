@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: https://uxit.fil.org/sitemap.xml
