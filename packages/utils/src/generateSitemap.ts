@@ -22,7 +22,7 @@ type SitemapConfig = {
   dynamicRoutes?: Array<DynamicRouteConfig>
 }
 
-export default async function generateSitemap({
+export async function generateSitemap({
   paths,
   baseUrl,
   dynamicRoutes,
