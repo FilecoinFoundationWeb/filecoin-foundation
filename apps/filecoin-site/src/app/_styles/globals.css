@@ -26,3 +26,30 @@
   outline-offset: 0px;
   border-color: transparent;
 }
+
+@layer components {
+  .button {
+    @apply rounded-full border-2 px-6 py-4 text-base font-medium;
+  }
+
+  .button-primary {
+    /* TODO: Add gradient and hover effect */
+    @apply border-brand-600 hover:border-brand-700 transition;
+  }
+
+  .button-primary:not(.button-primary-dark) {
+    @apply text-zinc-900;
+  }
+
+  .button-primary.button-primary-dark {
+    @apply text-zinc-100;
+  }
+
+  .button-ghost:not(.button-ghost-dark) {
+    @apply border-zinc-100 bg-zinc-100 text-zinc-900;
+  }
+
+  .button-ghost.button-ghost-dark {
+    @apply border-zinc-800 bg-zinc-800 text-white;
+  }
+}
