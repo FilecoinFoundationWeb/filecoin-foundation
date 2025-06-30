@@ -10,6 +10,15 @@ export type StaticPath =
   | '/privacy-policy'
   | '/terms-of-use'
 
+type ContentCollectionName = 'blog'
+
+type DynamicPath = {
+  [key in ContentCollectionName]: `/${key}/${string}`
+}
+
+export type DynamicPathValues = DynamicPath[keyof DynamicPath]
+export type PathValues = StaticPath | DynamicPathValues
+
 export const PATHS = {
   BLOG: createPathConfig('/blog', 'Blog'),
   BUILD_ON_FILECOIN: createPathConfig(
