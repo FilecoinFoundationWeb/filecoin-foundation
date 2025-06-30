@@ -2,11 +2,10 @@
 
 import { useState } from 'react'
 
-import Link from 'next/link'
-
 import { List, X } from '@phosphor-icons/react'
 
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
+import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 import { Social } from '@filecoin-foundation/ui/Social'
 
@@ -34,14 +33,9 @@ export function MobileNavigation() {
       <SlideOver open={open} setOpen={setOpen}>
         <div className="flex flex-col gap-12 px-6 py-8">
           <div className="flex items-center justify-between">
-            <Link
-              className="shrink-0 focus:brand-outline"
-              href={PATHS.HOME.path}
-              aria-label="Go to homepage"
-              onClick={() => setOpen(false)}
-            >
-              <Logo />
-            </Link>
+            <div className="shrink-0">
+              <LogoLink logo={Logo} onClick={() => setOpen(false)} />
+            </div>
             <IconButton
               icon={X}
               label="Close mobile navigation"
