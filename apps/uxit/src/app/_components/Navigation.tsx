@@ -1,22 +1,13 @@
-import Link from 'next/link'
-
 import { GithubLogo } from '@phosphor-icons/react/dist/ssr'
 
-import { PATHS } from '@/constants/paths'
+import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 
-import Logo from '@/assets/branding/logo.svg'
+import { Logo } from '@/components/Logo'
 
 export function Navigation() {
   return (
     <nav className="mb-24 flex justify-between gap-12 lg:items-center">
-      <Link
-        className="focus:brand-outline h-fit w-fit"
-        href={PATHS.HOME.path}
-        aria-label="Go to homepage"
-      >
-        <Logo height={48} preserveAspectRatio="xMidYMid meet" />
-        <span className="sr-only">Home</span>
-      </Link>
+      <LogoLink logo={Logo} />
       <a
         href="https://github.com/FilecoinFoundationWeb/uxit"
         aria-label="View project on GitHub"
