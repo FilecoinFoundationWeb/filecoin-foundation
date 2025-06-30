@@ -8,6 +8,7 @@ export type StaticPath =
   | '/learn'
   | '/store-data'
   | '/privacy-policy'
+  | '/terms-of-use'
 
 export const PATHS = {
   BLOG: createPathConfig('/blog', 'Blog'),
@@ -20,4 +21,5 @@ export const PATHS = {
   LEARN: createPathConfig('/learn', 'Learn'),
   STORE_DATA: createPathConfig('/store-data', 'Store Data'),
   PRIVACY_POLICY: createPathConfig('/privacy-policy', 'Privacy Policy'),
+  TERMS_OF_USE: createPathConfig('/terms-of-use', 'Terms of Use'),
 } as const
