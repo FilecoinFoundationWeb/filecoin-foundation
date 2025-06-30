@@ -5,11 +5,19 @@ import {
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-type ButtonProps = Omit<SharedButtonProps, 'baseDomain'>
+const variantClasses = {
+  primary: 'button--primary',
+  ghost: 'button--ghost',
+} as const
+
+type ButtonProps = Omit<
+  SharedButtonProps<typeof variantClasses>,
+  'baseDomain' | 'variants'
+>
 
 export function Button({ children, ...props }: ButtonProps) {
   return (
-    <SharedButton baseDomain={BASE_DOMAIN} {...props}>
+    <SharedButton variants={variantClasses} baseDomain={BASE_DOMAIN} {...props}>
       {children}
     </SharedButton>
   )
