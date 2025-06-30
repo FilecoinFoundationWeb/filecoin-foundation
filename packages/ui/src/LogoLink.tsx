@@ -4,7 +4,7 @@ import Link, { type LinkProps } from 'next/link'
 
 type LogoLinkProps = {
   logo: ComponentType<React.SVGProps<SVGSVGElement>>
-} & Omit<LinkProps, 'href' | 'children' | 'className'>
+} & Omit<LinkProps<unknown>, 'href' | 'children' | 'className'>
 
 export function LogoLink({ logo: Logo, ...rest }: LogoLinkProps) {
   return (
