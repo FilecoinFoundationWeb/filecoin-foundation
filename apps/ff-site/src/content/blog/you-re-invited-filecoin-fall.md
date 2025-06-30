@@ -45,6 +45,6 @@ Filecoin Foundation will mark the second anniversary of the Filecoin mainnet lau
 
 ## Final stop: FIL-Lisbon (Oct. 30-Nov. 4)
 
-We’re rounding out Filecoin Fall with [FIL-Lisbon](https://fil-lisbon.io/) at the [LX Factory](https://www.google.com/maps/place/LxFactory/@38.7034979,-9.178873,15z/data=!4m5!3m4!1s0x0:0x33ebaaaa14f543ac!8m2!3d38.7034979!4d-9.178873) in Lisbon, Portugal. The event will bring together the builders, developers and contributors building the Filecoin ecosystem. Hosted by Filecoin Foundation, the event will feature two days of mainstage programming and a week’s worth of workshops, panels, networking, and hands-on experiences for our European community, including our Hacker House.
+We’re rounding out Filecoin Fall with [FIL-Lisbon](/events/fil-lisbon) at the [LX Factory](https://www.google.com/maps/place/LxFactory/@38.7034979,-9.178873,15z/data=!4m5!3m4!1s0x0:0x33ebaaaa14f543ac!8m2!3d38.7034979!4d-9.178873) in Lisbon, Portugal. The event will bring together the builders, developers and contributors building the Filecoin ecosystem. Hosted by Filecoin Foundation, the event will feature two days of mainstage programming and a week’s worth of workshops, panels, networking, and hands-on experiences for our European community, including our Hacker House.
 
 Come join us to learn how the Filecoin network is expanding and how you can help grow the Web3 ecosystem. Save the date for Oct. 30-Nov. 4 in Lisbon!

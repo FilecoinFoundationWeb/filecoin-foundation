@@ -15,7 +15,7 @@ location:
   region: europe
 start-date: 2024-07-08
 end-date: 2024-07-13
-external-link: https://www.fil-brussels.io/
+external-link: /events/fil-brussels
 image:
   src: /assets/images/filbrussels.webp
 program:
