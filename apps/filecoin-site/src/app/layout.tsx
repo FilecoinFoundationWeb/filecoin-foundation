@@ -1,3 +1,5 @@
+import { SiteLayout } from '@/components/SiteLayout'
+
 import '@/styles/globals.css'
 
 export const metadata = {
@@ -10,9 +12,5 @@ type RootLayoutProps = {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  )
+  return <SiteLayout>{children}</SiteLayout>
 }

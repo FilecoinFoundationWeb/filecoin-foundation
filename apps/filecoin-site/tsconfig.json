@@ -8,7 +8,8 @@
       "@/*": ["./src/app/*"],
       "@/styles/*": ["./src/app/_styles/*"],
       "@/constants/*": ["./src/app/_constants/*"],
-      "@/utils/*": ["./src/app/_utils/*"]
+      "@/utils/*": ["./src/app/_utils/*"],
+      "@/components/*": ["./src/app/_components/*"]
     },
     "plugins": [{ "name": "next" }]
   },
