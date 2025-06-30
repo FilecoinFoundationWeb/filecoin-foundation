@@ -3,8 +3,9 @@ import { Inter } from 'next/font/google'
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { SiteLayout as SharedSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
 
-import { LogoBlue } from '@/components/LogoBlue'
-import { LogoWhiteWithText } from '@/components/LogoWhiteWithText'
+import { LogoFull } from '@/components/LogoFull'
+import { LogoIcon } from '@/components/LogoIcon'
+
 
 const inter = Inter({
   subsets: ['latin'],
@@ -21,12 +22,12 @@ export function SiteLayout({ children }: SiteLayoutProps) {
       font={inter}
       Navigation={() => (
         <header className="bg-zinc-50 p-8">
-          <LogoLink logo={LogoBlue} />
+          <LogoLink logo={LogoIcon} />
         </header>
       )}
       Footer={() => (
         <footer className="bg-zinc-900 p-8">
-          <LogoLink logo={LogoWhiteWithText} />
+          <LogoLink logo={LogoFull} />
         </footer>
       )}
     >
