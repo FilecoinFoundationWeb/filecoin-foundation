@@ -2,7 +2,7 @@ import { GithubLogo } from '@phosphor-icons/react/dist/ssr'
 
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 
-import Logo from '@/assets/branding/logo.svg'
+import { Logo } from '@/components/Logo'
 
 export function Navigation() {
   return (
