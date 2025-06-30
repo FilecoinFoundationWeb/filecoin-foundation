@@ -6,15 +6,14 @@ import * as Sentry from '@sentry/nextjs'
 import Error from 'next/error'
 
 import { ErrorMessage } from '@filecoin-foundation/ui/ErrorMessage'
-import { FILECOIN_FOUNDATION_URLS } from '@filecoin-foundation/utils/constants/appMetadata'
 
 type GlobalErrorProps = {
   error: Error
-  baseDomain: string
   Layout: React.ComponentType<{ children: React.ReactNode }>
+  children?: React.ReactNode
 }
 
-export function GlobalError({ error, baseDomain, Layout }: GlobalErrorProps) {
+export function GlobalError({ error, Layout, children }: GlobalErrorProps) {
   useEffect(() => {
     if (Sentry?.captureException) {
       Sentry.captureException(error)
@@ -26,14 +25,10 @@ export function GlobalError({ error, baseDomain, Layout }: GlobalErrorProps) {
       <ErrorMessage
         kicker="500"
         title="Internal Server Error"
-        baseDomain={baseDomain}
-        cta={{
-          href: FILECOIN_FOUNDATION_URLS.techSupportEmail.href,
-          text: 'Contact Us',
-        }}
+        message="Oops, something went wrong. Try to refresh this page or contact us if
+        the problem persists."
       >
-        Oops, something went wrong. Try to refresh this page or contact us if
-        the problem persists.
+        {children}
       </ErrorMessage>
     </Layout>
   )

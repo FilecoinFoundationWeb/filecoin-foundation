@@ -8,14 +8,14 @@ import {
 } from '@filecoin-foundation/ui/Icon'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 
-const variantClasses = {
-  primary: 'button--primary',
-  ghost: 'button--ghost',
-} as const
+type VariantClasses = {
+  primary: string
+} & Record<Exclude<string, 'primary'>, string>
 
-export type ButtonProps = {
+export type ButtonProps<Variants extends VariantClasses = VariantClasses> = {
   children: React.ReactNode
-  variant?: keyof typeof variantClasses
+  variants: Variants
+  variant?: keyof Variants
   icon?: IconProps['component']
   href?: BaseLinkProps['href']
   baseDomain: string
@@ -25,22 +25,9 @@ type ButtonInnerProps = Pick<ButtonProps, 'children' | 'icon'> & {
   isExternalLink?: boolean
 }
 
-function ButtonInner({
-  icon: Icon,
-  children,
-  isExternalLink,
-}: ButtonInnerProps) {
-  return (
-    <>
-      {!isExternalLink && Icon && <IconComponent component={Icon} />}
-      {children}
-      {isExternalLink && <IconComponent component={ArrowUpRight} size={20} />}
-    </>
-  )
-}
-
-export function Button({
-  variant = 'primary',
+export function Button<Variants extends VariantClasses = VariantClasses>({
+  variants,
+  variant = variants.primary,
   className,
   icon,
   children,
@@ -48,13 +35,11 @@ export function Button({
   href,
   baseDomain,
   ...rest
-}: ButtonProps) {
+}: ButtonProps<Variants>) {
   className = clsx(
     'button focus:brand-outline inline-flex items-center justify-center gap-2 py-3 transition hover:no-underline',
-    variantClasses[variant],
-    {
-      'button--disabled disabled:pointer-events-none': disabled,
-    },
+    variants[variant],
+    { 'button--disabled disabled:pointer-events-none': disabled },
     className,
   )
 
@@ -75,5 +60,19 @@ export function Button({
         {children}
       </ButtonInner>
     </BaseLink>
+  )
+}
+
+function ButtonInner({
+  icon: Icon,
+  children,
+  isExternalLink,
+}: ButtonInnerProps) {
+  return (
+    <>
+      {!isExternalLink && Icon && <IconComponent component={Icon} />}
+      {children}
+      {isExternalLink && <IconComponent component={ArrowUpRight} size={20} />}
+    </>
   )
 }

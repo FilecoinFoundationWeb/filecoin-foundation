@@ -1,7 +1,11 @@
 import { PageNotFound } from '@filecoin-foundation/ui/PageNotFound'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
+import { Button } from '@/components/Button'
 
 export default function NotFound() {
-  return <PageNotFound baseDomain={BASE_DOMAIN} />
+  return (
+    <PageNotFound>
+      <Button href="/">Return Home</Button>
+    </PageNotFound>
+  )
 }

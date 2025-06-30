@@ -19,7 +19,6 @@ import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -113,7 +112,7 @@ export default function EventsContent({
         />
         <FilterContainer.ContentWrapper>
           {filteredEntries.length === 0 ? (
-            <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
+            <NoSearchResultsMessage />
           ) : (
             <>
               <CardGrid as="section" cols="smTwo">

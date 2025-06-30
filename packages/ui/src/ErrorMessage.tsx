@@ -1,38 +1,29 @@
-import { Button } from '@filecoin-foundation/ui/Button'
+import type React from 'react'
+
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
-import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
 type ErrorMessageProps = {
   kicker: string
   title: string
-  baseDomain: string
-  cta?: CTAProps
-  children: string
+  message: string
+  children: React.ReactNode
 }
 
 export function ErrorMessage({
   kicker,
   title,
-  baseDomain,
-  cta,
+  message,
   children,
 }: ErrorMessageProps) {
-  const { href, text } = cta || {
-    href: '/',
-    text: 'Return Home',
-  }
-
   return (
     <div className="m-auto flex max-w-xs flex-col gap-6 py-32 sm:items-center sm:text-center">
       <span className="text-7xl">{kicker}</span>
       <Heading tag="h2" variant="3xl">
         {title}
       </Heading>
-      <DescriptionText>{children}</DescriptionText>
-      <Button href={href} baseDomain={baseDomain}>
-        {text}
-      </Button>
+      <DescriptionText>{message}</DescriptionText>
+      {children}
     </div>
   )
 }
