@@ -14,7 +14,7 @@ export function NewsletterForm() {
         />
         <button
           type="submit"
-          className="absolute right-0 -mr-3 h-12 w-12 cursor-pointer"
+          className="absolute right-0 -mr-3 flex h-12 w-12 cursor-pointer items-center justify-center"
         >
           <i className="bx bx-arrow-right-stroke bx-sm gradient-text"></i>
         </button>

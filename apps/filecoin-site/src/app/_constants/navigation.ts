@@ -3,34 +3,36 @@ import { FILECOIN_URLS } from './siteMetadata'
 
 type NavItem = { label: string; href: string }
 
+const { social: socialLinks, docs, github, security, ecosystemExplorer } = FILECOIN_URLS
+
 const social: NavItem[] = [
   {
-    label: FILECOIN_URLS.social.slack.label,
-    href: FILECOIN_URLS.social.slack.href,
+    label: socialLinks.slack.label,
+    href: socialLinks.slack.href,
   },
   {
-    label: FILECOIN_URLS.social.bluesky.label,
-    href: FILECOIN_URLS.social.bluesky.href,
+    label: socialLinks.bluesky.label,
+    href: socialLinks.bluesky.href,
   },
   {
-    label: FILECOIN_URLS.social.twitter.label,
-    href: FILECOIN_URLS.social.twitter.href,
+    label: socialLinks.twitter.label,
+    href: socialLinks.twitter.href,
   },
   {
-    label: FILECOIN_URLS.social.telegram.label,
-    href: FILECOIN_URLS.social.telegram.href,
+    label: socialLinks.telegram.label,
+    href: socialLinks.telegram.href,
   },
   {
-    label: FILECOIN_URLS.social.discord.label,
-    href: FILECOIN_URLS.social.discord.href,
+    label: socialLinks.discord.label,
+    href: socialLinks.discord.href,
   },
 ]
 
 const resources: NavItem[] = [
-  { label: 'Docs', href: FILECOIN_URLS.docs },
-  { label: 'Github', href: FILECOIN_URLS.github },
-  { label: 'Security', href: FILECOIN_URLS.security },
-  { label: 'Ecosystem Explorer', href: FILECOIN_URLS.ecosystemExplorer },
+  { label: 'Docs', href: docs },
+  { label: 'Github', href: github },
+  { label: 'Security', href: security },
+  { label: 'Ecosystem Explorer', href: ecosystemExplorer },
 ]
 
 const navigation: NavItem[] = [
