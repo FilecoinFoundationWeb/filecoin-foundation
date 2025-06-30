@@ -6,10 +6,11 @@
     "jsx": "preserve",
     "paths": {
       "@/*": ["./src/app/*"],
+      "@/assets/*": ["./public/assets/*"],
       "@/styles/*": ["./src/app/_styles/*"],
       "@/constants/*": ["./src/app/_constants/*"],
-      "@/utils/*": ["./src/app/_utils/*"],
-      "@/components/*": ["./src/app/_components/*"]
+      "@/components/*": ["./src/app/_components/*"],
+      "@/utils/*": ["./src/app/_utils/*"]
     },
     "plugins": [{ "name": "next" }]
   },
