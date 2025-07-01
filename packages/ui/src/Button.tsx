@@ -72,8 +72,10 @@ function ButtonInner({
   return (
     <>
       {!isExternalLink && Icon && <IconComponent component={Icon} />}
-      {children}
-      {isExternalLink && <IconComponent component={ArrowUpRightIcon} size={20} />}
+      <span>{children}</span>
+      {isExternalLink && (
+        <IconComponent component={ArrowUpRightIcon} size={20} />
+      )}
     </>
   )
 }

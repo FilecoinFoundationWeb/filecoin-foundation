@@ -33,23 +33,66 @@
   }
 
   .button--primary {
-    /* TODO: Add gradient and hover effect */
-    @apply border-brand-600 hover:border-brand-700 transition;
+    @apply relative border-transparent;
+
+    &.button--primary--dark {
+      @apply text-zinc-100;
+    }
+
+    &:not(.button--primary--dark) {
+      @apply text-zinc-900;
+    }
+
+    /* Gradient */
+    &::before,
+    &::after {
+      @apply absolute inset-0 rounded-full border-2 border-transparent;
+      content: '';
+      mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+    }
+
+    &::before {
+      background: linear-gradient(
+          to right,
+          var(--color-brand-500),
+          var(--color-brand-700)
+        )
+        border-box;
+    }
+
+    &::after {
+      @apply opacity-0 transition-opacity;
+      background: linear-gradient(
+          to right,
+          var(--color-brand-400),
+          var(--color-brand-600)
+        )
+        border-box;
+    }
+
+    &:hover::after {
+      @apply opacity-100;
+    }
   }
 
-  .button--primary:not(.button--primary--dark) {
-    @apply text-zinc-900;
-  }
+  .button--ghost {
+    &.button--ghost--dark {
+      @apply border-zinc-800 bg-zinc-800 text-white;
 
-  .button--primary.button--primary--dark {
-    @apply text-zinc-100;
-  }
+      &:hover {
+        @apply border-zinc-700 bg-zinc-700;
+      }
+    }
 
-  .button--ghost:not(.button--ghost--dark) {
-    @apply border-zinc-100 bg-zinc-100 text-zinc-900;
-  }
+    &:not(.button--ghost--dark) {
+      @apply border-zinc-100 bg-zinc-100 text-zinc-900;
 
-  .button--ghost.button--ghost--dark {
-    @apply border-zinc-800 bg-zinc-800 text-white;
+      &:hover {
+        @apply border-zinc-200 bg-zinc-200;
+      }
+    }
   }
 }
