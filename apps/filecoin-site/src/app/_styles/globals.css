@@ -79,6 +79,8 @@
   }
 
   .button--ghost {
+    @apply transition-colors;
+
     &.button--ghost--dark {
       @apply border-zinc-800 bg-zinc-800 text-white;
 

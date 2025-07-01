@@ -1,3 +1,5 @@
+import { GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
+
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 
 import { Button } from '@/components/Button'
@@ -24,6 +26,15 @@ export default function Home() {
         </Button>
         <Button variant="ghostDark" href="https://example.com">
           Ghost Dark
+        </Button>
+      </section>
+
+      <section className="flex gap-3 p-3">
+        <Button variant="ghost" icon={GithubLogoIcon}>
+          GitHub
+        </Button>
+        <Button variant="ghostDark" icon={GithubLogoIcon}>
+          GitHub
         </Button>
       </section>
 
