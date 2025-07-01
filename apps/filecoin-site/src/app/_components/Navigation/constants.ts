@@ -12,4 +12,5 @@ export const NAV_LINKS = [
 
 export const TOUCH_TARGET_NAV_LINK = {
   touchAreaPadding: 'px-3 py-2',
+  touchAreaOffset: '-ml-3',
 } as const satisfies TouchTarget
