@@ -4,8 +4,7 @@ import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { SiteLayout as SharedSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
 
 import { LogoFull } from '@/components/LogoFull'
-import { LogoIcon } from '@/components/LogoIcon'
-
+import { Navigation } from '@/components/Navigation/Navigation'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -20,11 +19,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
   return (
     <SharedSiteLayout
       font={inter}
-      Navigation={() => (
-        <header className="bg-zinc-50 p-8">
-          <LogoLink logo={LogoIcon} />
-        </header>
-      )}
+      Navigation={Navigation}
       Footer={() => (
         <footer className="bg-zinc-900 p-8">
           <LogoLink logo={LogoFull} />
