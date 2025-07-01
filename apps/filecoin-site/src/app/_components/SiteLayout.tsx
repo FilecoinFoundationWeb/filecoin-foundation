@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google'
 
 import { SiteLayout as SharedSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
 
-import { Footer } from '@/_components/Footer/Footer'
+import { Footer } from '@/components/Footer/Footer'
 
 const inter = Inter({
   subsets: ['latin'],
