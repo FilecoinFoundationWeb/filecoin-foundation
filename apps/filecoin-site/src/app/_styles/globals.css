@@ -64,11 +64,11 @@
     }
 
     &::after {
-      @apply opacity-0 transition-opacity;
+      @apply opacity-0 transition-opacity duration-300;
       background: linear-gradient(
           to right,
-          var(--color-brand-400),
-          var(--color-brand-600)
+          var(--color-brand-300),
+          var(--color-brand-500)
         )
         border-box;
     }
