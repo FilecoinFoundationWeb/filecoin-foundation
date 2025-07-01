@@ -6,10 +6,10 @@ import {
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 const variantClasses = {
-  primary: 'button-primary',
-  primaryDark: 'button-primary button-primary-dark',
-  ghost: 'button-ghost',
-  ghostDark: 'button-ghost button-ghost-dark',
+  primary: 'button--primary',
+  primaryDark: 'button--primary button--primary--dark',
+  ghost: 'button--ghost',
+  ghostDark: 'button--ghost button--ghost--dark',
 } as const
 
 type ButtonProps = Omit<
