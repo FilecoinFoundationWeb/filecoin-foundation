@@ -10,12 +10,12 @@ import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 
 type VariantClasses = {
   primary: string
-} & Record<Exclude<string, 'primary'>, string>
+  [key: string]: string
+}
 
 export type ButtonProps<Variants extends VariantClasses = VariantClasses> = {
   children: React.ReactNode
-  variants: Variants
-  variant?: keyof Variants
+  variants: { options: Variants; selected?: keyof Variants }
   icon?: IconProps['component']
   href?: BaseLinkProps['href']
   baseDomain: string
@@ -27,7 +27,6 @@ type ButtonInnerProps = Pick<ButtonProps, 'children' | 'icon'> & {
 
 export function Button<Variants extends VariantClasses = VariantClasses>({
   variants,
-  variant = variants.primary,
   className,
   icon,
   children,
@@ -36,9 +35,11 @@ export function Button<Variants extends VariantClasses = VariantClasses>({
   baseDomain,
   ...rest
 }: ButtonProps<Variants>) {
+  const variant = variants.options[variants.selected || 'primary']
+
   className = clsx(
     'button focus:brand-outline inline-flex items-center justify-center gap-2 py-3 transition hover:no-underline',
-    variants[variant],
+    variant,
     { 'button--disabled disabled:pointer-events-none': disabled },
     className,
   )
