@@ -16,7 +16,7 @@ seo:
 
 ## Early July Highlights
 
-🇧🇪 The FIL Brussels schedule is live! Explore decentralized AI, DePIN, and compute with more than a dozen innovators speaking across three days, including Akash Network CEO Greg Osuri, Theoriq Head of Marketing Anjali George, [Bagel](/ecosystem-explorer/bagel) Network CEO Bidhan Roy, Futurist Michael Clark, [Lighthouse](/ecosystem-explorer/lighthouse) Founder Nandit Mehra, Filecoin Foundation Founding Officer Clara Tsao, FF Head of Community Porter Stowell, and more! [See the full schedule](https://www.fil-brussels.io/).
+🇧🇪 The FIL Brussels schedule is live! Explore decentralized AI, DePIN, and compute with more than a dozen innovators speaking across three days, including Akash Network CEO Greg Osuri, Theoriq Head of Marketing Anjali George, [Bagel](/ecosystem-explorer/bagel) Network CEO Bidhan Roy, Futurist Michael Clark, [Lighthouse](/ecosystem-explorer/lighthouse) Founder Nandit Mehra, Filecoin Foundation Founding Officer Clara Tsao, FF Head of Community Porter Stowell, and more! [See the full schedule](/events/fil-brussels).
 
 💾 Software storage solutions to watch. There are dozens of ways to store data on Filecoin. From user-friendly mobile apps to enterprise-grade data onboarding platforms, the Filecoin ecosystem includes various tools designed to cater to different storage needs. [Read Filecoin Foundation's deep dive](/blog/signal-spotlights-software-storage-solutions-built-on-filecoin-to-watch) into the growing list of software services making a big impact in the Filecoin ecosystem.
 

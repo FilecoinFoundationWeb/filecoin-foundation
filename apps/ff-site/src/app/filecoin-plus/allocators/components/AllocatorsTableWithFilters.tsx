@@ -13,8 +13,6 @@ import {
 
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
 import { FilterContainer } from '@/components/FilterContainer'
 
 import { NAME_COLUMN_SORT_CONFIG } from '../constants/sorting'
@@ -61,7 +59,7 @@ export function AllocatorsTableWithFilters({
         <AllocatorsTable headerGroups={headerGroups} rowModel={rowModel} />
       ) : (
         <div className="flex w-full justify-center">
-          <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
+          <NoSearchResultsMessage />
         </div>
       )}
     </FilterContainer.MainWrapper>

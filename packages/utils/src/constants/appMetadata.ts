@@ -1,6 +1,6 @@
 const FILECOIN_FOUNDATION_URLS = {
   techSupportEmail: {
-    label: 'Tech Support',
+    label: 'Contact Tech Support',
     href: 'mailto:support@fil.org',
   },
 }

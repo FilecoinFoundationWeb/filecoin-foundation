@@ -4,8 +4,6 @@ import { clsx } from 'clsx'
 
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
 export type FilterContainerProps = {
   hasResults: boolean
   bottom: ReactElement
@@ -142,7 +140,7 @@ function ResultsContainer({ children, hasResults }: ResultsContainerProps) {
     children
   ) : (
     <div className="mt-16">
-      <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
+      <NoSearchResultsMessage />
     </div>
   )
 }
