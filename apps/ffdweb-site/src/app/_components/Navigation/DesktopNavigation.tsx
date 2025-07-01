@@ -13,7 +13,9 @@ export function DesktopNavigation() {
       )}
     >
       {NAV_LINKS.map((link) => (
-        <NavigationLink key={link.path} href={link.path} label={link.label} />
+        <li key={link.path}>
+          <NavigationLink href={link.path} label={link.label} />
+        </li>
       ))}
     </ul>
   )
