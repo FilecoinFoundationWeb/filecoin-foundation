@@ -8,7 +8,7 @@ import {
 } from '@filecoin-foundation/ui/Icon'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 
-type VariantClasses = {
+export type VariantClasses = {
   primary: string
   [key: string]: string
 }

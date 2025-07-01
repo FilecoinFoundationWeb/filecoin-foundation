@@ -1,7 +1,5 @@
-import {
-  Button as SharedButton,
-  type ButtonProps as SharedButtonProps,
-} from '@filecoin-foundation/ui/Button'
+import { Button as SharedButton } from '@filecoin-foundation/ui/Button'
+import { type LocalButtonProps } from '@filecoin-foundation/utils/types/buttonTypes'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
@@ -10,12 +8,7 @@ const variantClasses = {
   ghost: 'button--ghost',
 } as const
 
-type ButtonProps = Omit<
-  SharedButtonProps<typeof variantClasses>,
-  'baseDomain' | 'variants'
-> & {
-  variant?: keyof typeof variantClasses
-}
+type ButtonProps = LocalButtonProps<typeof variantClasses>
 
 export function Button({ children, variant, ...props }: ButtonProps) {
   return (
