@@ -38,9 +38,9 @@ export function Button<Variants extends VariantClasses = VariantClasses>({
   const variant = variants.options[variants.selected || 'primary']
 
   className = clsx(
-    'button focus:brand-outline inline-flex cursor-pointer items-center justify-center gap-2 py-3 transition hover:no-underline disabled:pointer-events-none disabled:cursor-not-allowed',
+    'button focus:brand-outline inline-flex cursor-pointer items-center justify-center gap-2 py-3 transition hover:no-underline',
+    disabled && 'button--disabled pointer-events-none cursor-not-allowed',
     variant,
-    disabled && 'button--disabled',
     className,
   )
 
