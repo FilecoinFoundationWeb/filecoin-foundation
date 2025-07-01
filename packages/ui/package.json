@@ -32,6 +32,7 @@
     "./KeyMemberCard": "./src/KeyMemberCard.tsx",
     "./Listbox": "./src/Listbox/Listbox.tsx",
     "./Listbox/*": "./src/Listbox/*.tsx",
+    "./LogoLink": "./src/LogoLink.tsx",
     "./Markdown": "./src/Markdown/index.ts",
     "./MarkdownPage": "./src/MarkdownPage.tsx",
     "./Meta": "./src/Meta.tsx",
