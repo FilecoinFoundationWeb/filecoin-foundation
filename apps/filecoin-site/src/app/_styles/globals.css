@@ -13,13 +13,29 @@
   --color-brand-800: oklch(0.53 0.1592 252.62);
   --color-brand-900: oklch(0.47 0.1224 248.85);
   --color-brand-950: oklch(0.33 0.0795 249.37);
+
+  --color-icon-accent: linear-gradient(
+    var(--color-brand-600),
+    var(--color-brand-200)
+  );
 }
 
-.gradient-text {
-  background: linear-gradient(var(--color-brand-600), var(--color-brand-200));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+.gradient-svg-fill {
+  position: relative;
   display: inline-block;
+}
+
+.gradient-svg-fill::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-200),
+    var(--color-brand-600)
+  );
+  mix-blend-mode: multiply;
 }

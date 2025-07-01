@@ -7,7 +7,6 @@ export type SiteLayoutProps = {
   Navigation: React.ComponentType
   Footer: React.ComponentType
   children: React.ReactNode
-  headElements?: React.ReactNode
 }
 
 export function SiteLayout({
@@ -15,11 +14,9 @@ export function SiteLayout({
   Navigation,
   Footer,
   children,
-  headElements,
 }: SiteLayoutProps) {
   return (
     <html lang="en" className={font.className}>
-      <head>{headElements}</head>
       <body className="site-layout m-auto flex min-h-screen max-w-[1032px] flex-col justify-between px-6 pt-8 pb-8 tracking-wide">
         <Navigation />
         <main className="flex-1">{children}</main>

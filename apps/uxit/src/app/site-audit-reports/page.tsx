@@ -1,4 +1,4 @@
-import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
+import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { Heading } from '@filecoin-foundation/ui/Heading'
@@ -44,7 +44,7 @@ export default function SiteAuditPage() {
               href: `${PATHS.SITE_AUDIT_REPORTS.path}/${id}/`,
               text: 'View Report',
               icon: {
-                component: ArrowRight,
+                component: ArrowRightIcon,
                 position: 'trailing',
               },
             }}

@@ -1,3 +1,5 @@
+import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
+
 export function NewsletterForm() {
   return (
     <form className="flex min-w-[100px] flex-col gap-2 text-white">
@@ -16,7 +18,9 @@ export function NewsletterForm() {
           type="submit"
           className="absolute right-0 -mr-3 flex h-12 w-12 cursor-pointer items-center justify-center"
         >
-          <i className="bx bx-arrow-right-stroke bx-sm gradient-text"></i>
+          <div className="gradient-svg-fill">
+            <ArrowRightIcon weight="bold" />
+          </div>
         </button>
       </div>
     </form>

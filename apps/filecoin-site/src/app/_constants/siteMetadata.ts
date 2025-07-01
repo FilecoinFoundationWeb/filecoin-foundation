@@ -7,25 +7,25 @@ export const FILECOIN_URLS = {
   security: 'https://fil.org/security',
   ecosystemExplorer: 'https://fil.org/ecosystem-explorer',
   social: {
-    slack: {
-      href: 'https://filecoin.io/slack',
-      label: 'Slack',
-    },
     bluesky: {
       href: 'https://bsky.app/profile/filecoin.io',
       label: 'Bluesky',
     },
-    twitter: {
-      href: 'https://twitter.com/filecoin',
-      label: 'X',
+    discord: {
+      href: 'https://discord.gg/yeQ2hcd2TD',
+      label: 'Discord',
+    },
+    slack: {
+      href: 'https://filecoinproject.slack.com/ssb/redirect',
+      label: 'Slack',
     },
     telegram: {
       href: 'https://t.me/filecoin',
       label: 'Telegram',
     },
-    discord: {
-      href: 'https://discord.gg/yeQ2hcd2TD',
-      label: 'Discord',
+    twitter: {
+      href: 'https://twitter.com/filecoin',
+      label: 'X',
     },
   },
 } as const
