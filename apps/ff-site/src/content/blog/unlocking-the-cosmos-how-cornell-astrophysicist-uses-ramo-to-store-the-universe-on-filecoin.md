@@ -13,13 +13,14 @@ seo:
   description: "Astrophysics meets decentralized storage: why Ramo is becoming a
     go-to solution for researchers working with petabyte-scale simulations."
 ---
+
 When Dr. Drummond Fielding, astrophysicist at Cornell University, set out to simulate the behavior of interstellar gas on the fastest supercomputer in the world, he faced a critical problem common to many researchers: where to store the results. His simulations generate petabytes of data—far more than institutional systems can reliably afford to retain in the context of academic budgets and far too valuable to risk losing. Enter Ramo Cloud, a network that helps onboard valuable data to Filecoin, the world’s largest decentralized storage protocol. Ramo seeks out data-rich clients, prepares their datasets, and works with storage providers to ensure seamless integration into the network.
 
 ## The Challenge: Science at the Limits of Storage
 
 Fielding’s simulations aren’t just big—they’re record-breaking. One frame of his 3D model of galactic plasma dynamics is over 80 terabytes. A complete run easily exceeds 5 petabytes of output.
 
-But working on a national supercomputer comes with constraints. Storage space is limited. Administrators purge older files without warning. Researchers are forced to analyze data *in real time* or risk losing it forever. "You spend years preparing a simulation, only to watch data disappear before you can fully examine it," Fielding explains.
+But working on a national supercomputer comes with constraints. Storage space is limited. Administrators purge older files without warning. Researchers are forced to analyze data _in real time_ or risk losing it forever. "You spend years preparing a simulation, only to watch data disappear before you can fully examine it," Fielding explains.
 
 ## The Cost of Repetition
 
