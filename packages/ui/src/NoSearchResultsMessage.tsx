@@ -1,21 +1,19 @@
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
-import { NoResultsMessage } from './NoResultsMessage'
+import { Button } from '@filecoin-foundation/ui/Button'
+import { NoResultsMessage } from '@filecoin-foundation/ui/NoResultsMessage'
 
 type NoSearchResultsMessageProps = {
-  children?: React.ReactNode
+  cta?: React.ReactElement<typeof Button>
 }
 
-export function NoSearchResultsMessage({
-  children,
-}: NoSearchResultsMessageProps) {
+export function NoSearchResultsMessage({ cta }: NoSearchResultsMessageProps) {
   return (
     <NoResultsMessage
       icon={MagnifyingGlass}
       title="No Results Found"
       message="Try changing your search query."
-    >
-      {children}
-    </NoResultsMessage>
+      cta={cta}
+    />
   )
 }

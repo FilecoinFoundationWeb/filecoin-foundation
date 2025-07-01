@@ -1,3 +1,4 @@
+import { Button } from '@filecoin-foundation/ui/Button'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 
@@ -5,14 +6,14 @@ type NoResultsMessageProps = {
   icon: IconProps['component']
   title: string
   message: string
-  children?: React.ReactNode
+  cta?: React.ReactElement<typeof Button>
 }
 
 export function NoResultsMessage({
   icon,
   title,
   message,
-  children,
+  cta,
 }: NoResultsMessageProps) {
   return (
     <div className="text-brand-200 flex flex-col items-center gap-4">
@@ -23,7 +24,7 @@ export function NoResultsMessage({
         {title}
       </Heading>
       <p className="max-w-md text-center">{message}</p>
-      {children}
+      {cta}
     </div>
   )
 }

@@ -22,10 +22,14 @@ export default function GlobalError({ error }: GlobalErrorProps) {
   }, [error])
 
   return (
-    <AppGlobalError error={error} Layout={SiteLayout}>
-      <Button href={FILECOIN_FOUNDATION_URLS.techSupportEmail.href}>
-        {FILECOIN_FOUNDATION_URLS.techSupportEmail.label}
-      </Button>
-    </AppGlobalError>
+    <AppGlobalError
+      error={error}
+      Layout={SiteLayout}
+      cta={
+        <Button href={FILECOIN_FOUNDATION_URLS.techSupportEmail.href}>
+          {FILECOIN_FOUNDATION_URLS.techSupportEmail.label}
+        </Button>
+      }
+    />
   )
 }
