@@ -21,21 +21,24 @@ export function LogoSection({ logos, title }: LogoSectionProps) {
         </h2>
       )}
       <ul className="flex flex-wrap justify-start gap-x-16 gap-y-10">
-        {logos.map(({ src, alt, height, width, href }) => (
-          <li key={alt} className="flex items-center">
-            {href ? (
-              <a
-                href={href}
-                aria-label={`Visit ${alt} website`}
-                className="rounded focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none"
-              >
-                <Logo src={src} alt={alt} height={height} width={width} />
-              </a>
-            ) : (
-              <Logo src={src} alt={alt} height={height} width={width} />
-            )}
-          </li>
-        ))}
+        {logos.map((logoProps) => {
+          const { alt, href } = logoProps
+          return (
+            <li key={alt} className="flex items-center">  
+              {href ? (
+                <a
+                  href={href}
+                  aria-label={`Visit ${alt} website`}
+                  className="rounded focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none"
+                >
+                  <Logo {...logoProps} />
+                </a>
+              ) : (
+                <Logo {...logoProps} />
+              )}
+            </li>
+          )
+        })}
       </ul>
     </section>
   )
