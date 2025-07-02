@@ -1,5 +1,8 @@
 import { LogoSection } from '@/components/LogoSection'
 
+import LogoAsset from '@/assets/filecoin-logo-full.svg'
+import LogoIconAsset from '@/assets/filecoin-logo-icon.svg'
+
 export default function BuildOnFilecoin() {
   return (
     <div>
@@ -7,40 +10,36 @@ export default function BuildOnFilecoin() {
         title="Filecoin Partners"
         logos={[
           {
-            src: '/assets/filecoin-logo-full.svg',
+            logo: LogoAsset,
             alt: 'Filecoin Logo Full',
             href: 'https://filecoin.io',
           },
           {
-            src: '/assets/filecoin-logo-icon.svg',
+            logo: LogoIconAsset,
             alt: 'Filecoin Logo',
             height: 36,
-            width: 36,
           },
           {
-            src: '/assets/filecoin-logo-icon.svg',
+            logo: LogoIconAsset,
             alt: 'Filecoin Logo',
             height: 36,
-            width: 36,
           },
           {
-            src: '/assets/filecoin-logo-full.svg',
+            logo: LogoAsset,
             alt: 'Filecoin Logo Full',
           },
           {
-            src: '/assets/filecoin-logo-icon.svg',
+            logo: LogoAsset,
             alt: 'Filecoin Logo',
             height: 36,
-            width: 36,
           },
           {
-            src: '/assets/filecoin-logo-icon.svg',
+            logo: LogoAsset,
             alt: 'Filecoin Logo',
             height: 36,
-            width: 36,
           },
           {
-            src: '/assets/filecoin-logo-full.svg',
+            logo: LogoAsset,
             alt: 'Filecoin Logo Full',
           },
         ]}

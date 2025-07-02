@@ -1,10 +1,9 @@
-import Image from 'next/image'
+import type { ComponentType, SVGProps } from 'react'
 
 type Logo = {
-  src: string
+  logo: ComponentType<SVGProps<SVGSVGElement>>
   alt: string
   height?: number
-  width?: number
   href?: string
 }
 
@@ -21,37 +20,27 @@ export function LogoSection({ logos, title }: LogoSectionProps) {
         </h2>
       )}
       <ul className="flex flex-wrap justify-start gap-x-16 gap-y-10">
-        {logos.map((logoProps) => {
-          const { alt, href } = logoProps
+        {logos.map(({ logo: SvgComponent, alt, height, href }: Logo, index) => {
+          const logoElement = (
+            <SvgComponent height={height || 40} aria-label={alt} />
+          )
           return (
-            <li key={alt} className="flex items-center">  
+            <li key={index} className="flex items-center">
               {href ? (
                 <a
                   href={href}
                   aria-label={`Visit ${alt} website`}
-                  className="rounded focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none"
+                  className="focus:brand-outline"
                 >
-                  <Logo {...logoProps} />
+                  {logoElement}
                 </a>
               ) : (
-                <Logo {...logoProps} />
+                logoElement
               )}
             </li>
           )
         })}
       </ul>
     </section>
-  )
-}
-
-function Logo({ src, alt, height, width }: Logo) {
-  return (
-    <Image
-      src={src}
-      alt={alt}
-      width={width || 120}
-      height={height || 40}
-      className="object-contain"
-    />
   )
 }
