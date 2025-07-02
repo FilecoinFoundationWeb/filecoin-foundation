@@ -110,4 +110,13 @@
   .slide-over-panel {
     @apply bg-white;
   }
+
+  /* TOOLTIP */
+  .tooltip {
+    @apply rounded-3xl border border-zinc-300 bg-white;
+
+    .tooltip-arrow {
+      @apply fill-zinc-300;
+    }
+  }
 }
