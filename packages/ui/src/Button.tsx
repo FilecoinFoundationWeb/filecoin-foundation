@@ -38,9 +38,9 @@ export function Button<Variants extends VariantClasses = VariantClasses>({
   const variant = variants.options[variants.selected || 'primary']
 
   className = clsx(
-    'button focus:brand-outline inline-flex items-center justify-center gap-2 py-3 transition hover:no-underline',
+    'button focus:brand-outline inline-flex cursor-pointer items-center justify-center gap-2 py-3 transition hover:no-underline',
+    disabled && 'button--disabled pointer-events-none cursor-not-allowed',
     variant,
-    { 'button--disabled disabled:pointer-events-none': disabled },
     className,
   )
 
@@ -72,8 +72,10 @@ function ButtonInner({
   return (
     <>
       {!isExternalLink && Icon && <IconComponent component={Icon} />}
-      {children}
-      {isExternalLink && <IconComponent component={ArrowUpRightIcon} size={20} />}
+      <span>{children}</span>
+      {isExternalLink && (
+        <IconComponent component={ArrowUpRightIcon} size={20} />
+      )}
     </>
   )
 }

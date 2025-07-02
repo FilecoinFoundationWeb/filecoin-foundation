@@ -13,10 +13,94 @@
   --color-brand-800: oklch(0.53 0.1592 252.62);
   --color-brand-900: oklch(0.47 0.1224 248.85);
   --color-brand-950: oklch(0.33 0.0795 249.37);
+
+  --gradient-brand: linear-gradient(
+    90deg,
+    var(--color-brand-300),
+    var(--color-brand-600)
+  );
+
+  --gradient-brand-dark: linear-gradient(
+    90deg,
+    var(--color-brand-500),
+    var(--color-brand-800)
+  );
+
+  --gradient-brand-light: linear-gradient(
+    90deg,
+    var(--color-brand-100),
+    var(--color-brand-400)
+  );
 }
 
 @utility brand-outline {
   outline: 2px solid var(--color-brand-600);
   outline-offset: 0px;
   border-color: transparent;
+}
+
+@layer components {
+  .button {
+    @apply rounded-full border-2 px-6 py-4 text-base font-medium;
+  }
+
+  .button--primary {
+    @apply relative border-transparent text-zinc-900;
+
+    &::before {
+      background: var(--gradient-brand-dark) border-box;
+    }
+
+    &::after {
+      @apply opacity-0 transition-opacity duration-300;
+      background: var(--gradient-brand) border-box;
+    }
+
+    &:hover::after {
+      @apply opacity-100;
+    }
+
+    &::before,
+    &::after {
+      @apply absolute -inset-0.5 rounded-full border-2 border-transparent;
+      content: '';
+      mask:
+        linear-gradient(var(--color-white)) content-box,
+        linear-gradient(var(--color-white));
+      mask-composite: exclude;
+    }
+
+    &.button--primary--dark {
+      @apply text-zinc-100;
+
+      &::before {
+        background: var(--gradient-brand) border-box;
+      }
+
+      &::after {
+        @apply opacity-0 transition-opacity duration-300;
+        background: var(--gradient-brand-light) border-box;
+      }
+
+      &:hover::after {
+        @apply opacity-100;
+      }
+    }
+  }
+
+  .button--ghost {
+    @apply border-none bg-zinc-100 text-zinc-900 transition-colors;
+
+    &:hover {
+      @apply bg-zinc-200;
+    }
+
+    &.button--ghost--dark {
+      @apply bg-zinc-800 text-white;
+
+      &:hover {
+        @apply bg-zinc-700;
+      }
+    }
+  }
 }
