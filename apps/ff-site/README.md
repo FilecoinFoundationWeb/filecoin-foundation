@@ -112,13 +112,13 @@ The CMS is accessible at `/admin`, whether [locally](http://localhost:3000/admin
 
 #### Authenticating with GitHub in production
 
-Our project integrates with Github for user authentication and content management in a production environment. This integration allows authorized users to access the CMS and make changes to the website content. The list of authorized users is available in the [settings of the GitHub repository](https://github.com/FilecoinFoundationWeb/filecoin-foundation/settings/access). We also use a [Cloudflare worker](https://github.com/FilecoinFoundationWeb/decap-proxy) to handle the authentication process.
+Our project integrates with GitHub for user authentication and content management in a production environment. This integration allows authorized users to access the CMS and make changes to the website content. The list of authorized users is available in the [settings of the GitHub repository](https://github.com/FilecoinFoundationWeb/filecoin-foundation/settings/access). We also use a [Cloudflare worker](https://github.com/FilecoinFoundationWeb/decap-proxy) to handle the authentication process.
 
 This setup is only necessary for production. For local development, follow the instructions below.
 
 #### Working with the CMS locally
 
-You can connect Decap CMS to the local Git repository using Decap's local server by running `npx decap-server`. This will bypass the github authentication and allow you to work with the CMS locally.
+You can connect Decap CMS to the local Git repository using Decap's local server by running `npx decap-server`. This will bypass the GitHub authentication and allow you to work with the CMS locally.
 
 ### Data Encryption
 
@@ -174,7 +174,7 @@ We encourage contributors to set up their editors to run Prettier on save. For V
 "editor.formatOnSave": true
 ```
 
-ESLint is configured to run on pre-commit via [husky](https://typicode.github.io/husky/). To run it manually, use `npx turbo filecoin-foundation-site#lint`. This will fix automatically fixable issues.
+ESLint is configured to run on pre-commit via [husky](https://typicode.github.io/husky/). To run it manually, use `npx turbo filecoin-foundation-site#lint`. This will fix auto-fixable issues.
 
 ## Continuous Integration and Deployment
 
@@ -211,11 +211,11 @@ Check out the [development guidelines](../../README.md#development-guidelines) i
 
 ## Contributing
 
-We welcome contributions to Filecoin Foundation website!
+We welcome contributions to the Filecoin Foundation website!
 
-### Github Workflow
+### GitHub Workflow
 
-We try to keep each pull request small and focused. If the work requires large file changes, we break it down into smaller pieces as outlined in this article on [GitHub Protips from Sarah Vessels](https://github.blog/developer-skills/github/github-protips-tips-tricks-hacks-and-secrets-from-sarah-vessels/)
+We try to keep each pull request small and focused. If the work requires large file changes, we break it down into smaller pieces as outlined in this article on [GitHub Protips from Sarah Vessels](https://github.blog/developer-skills/github/github-protips-tips-tricks-hacks-and-secrets-from-sarah-vessels/).
 
 ## License
 
