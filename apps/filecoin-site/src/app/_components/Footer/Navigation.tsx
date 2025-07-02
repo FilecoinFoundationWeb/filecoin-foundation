@@ -3,7 +3,7 @@ import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 import { footerNavigationItems } from '@/constants/navigation'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-export function FooterNavigation() {
+export function Navigation() {
   return (
     <nav
       aria-label="Footer navigation"

@@ -1,20 +1,20 @@
 import { NewsletterForm } from '@/components/Footer/NewsletterForm'
-import { LogoFull } from '@/components/LogoFull'
+import { Logo } from '@/components/Logo/Logo'
 
-import { FooterLegal } from './FooterLegal/FooterLegal'
-import { FooterNavigation } from './FooterNavigation'
+import { LegalSection } from './LegalSection/LegalSection'
+import { Navigation } from './Navigation'
 
-export function FooterDesktop() {
+export function DesktopFooter() {
   return (
     <div className="hidden md:flex md:flex-col md:gap-16">
       <div className="flex justify-between gap-8">
         <div className="flex-shrink-0">
-          <LogoFull height={30} />
+          <Logo height={30} />
         </div>
-        <FooterNavigation />
+        <Navigation />
         <NewsletterForm />
       </div>
-      <FooterLegal />
+      <LegalSection />
     </div>
   )
 }
