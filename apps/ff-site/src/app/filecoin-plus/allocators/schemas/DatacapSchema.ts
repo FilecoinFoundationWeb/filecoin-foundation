@@ -32,7 +32,7 @@ const APIDatacapSchema = z.object({
   issueCreateTimestamp: z.number().nullable(),
   createMessageTimestamp: z.number(),
   verifiedClientsCount: z.number(),
-  receivedDatacapChange: z.string(),
+  receivedDatacapChange: z.string().nullable(),
   allowanceArray: z.array(APIDatacapAllowanceHistorySchema),
   auditStatus: z.string().nullable(),
   remainingDatacap: z.string(),
