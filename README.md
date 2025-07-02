@@ -154,3 +154,87 @@ We use Turborepo’s [remote caching](https://turborepo.com/docs/core-concepts/r
 To opt in, run `npx turbo login` to authenticate with Vercel and `npx turbo link` to link your local repo to the Vercel cache. You will need to be added to our Vercel organization to be able to do so.
 
 Once the project is successfully linked, you should see `Remote caching enabled` in the logs the next time you run `npx turbo dev` or `npx turbo build` locally.
+
+## Development Guidelines
+
+To maintain the quality and consistency of our codebase, we have established a set of development guidelines. Contributors are encouraged to follow these practices when making contributions to the project. These guidelines apply to all `apps` in the monorepo.
+
+### Component Organization
+
+Reusable React components should be stored in the general `_components` directory. Page-specific components should live closer to the page they are used on.
+
+### Component Exports
+
+Use named exports for React components to maintain consistency and support efficient tree shaking. This practice facilitates easier and more predictable imports across the project.
+
+### Naming Props
+
+When defining props for components, explicitly name the props type rather than using a generic `Props` type. For example,
+
+```typescript
+type BadgeProps = {
+  featured: boolean
+  children?: string
+}
+```
+
+### Paths and URLs
+
+- **Centralized Paths**: Utilize the `PATHS` object for defining and accessing paths throughout the application. See `_constants/paths.ts`
+
+- **Site Metadata and URLs**: Reference site metadata and URLs using centralized constants to ensure consistency and ease of maintenance. See `_constants/siteMetadata.ts`
+
+### Adding New Pages
+
+When adding a new page to the project, please ensure the following:
+
+1. **Update PATHS Configuration**: Ensure the `PATHS` object includes configurations for new content types, specifying paths, labels, and content directory paths. See `_constants/paths.ts`
+
+2. **Metadata and SEO**: Each new page should have associated metadata and SEO tags defined. Use the `createMetadata` function to set up a page's metadata correctly. Example:
+
+   ```javascript
+   export const metadata = createMetadata(seo, PATHS.ABOUT.path)
+   ```
+
+3. **Structured Data**: Include structured data for the new page to enhance search engine visibility and accessibility. Use the `generateWebPageStructuredData` function to create structured data for the page, which provides the base structured data. Example:
+
+   ```javascript
+   const aboutPageBaseData = generateWebPageStructuredData({
+     title: seo.title,
+     description: seo.description,
+     path: PATHS.ABOUT.path,
+   })
+   ```
+
+   This can be further customized based on the page's content and structure. Example:
+
+   ```javascript
+   const aboutPageStructuredData: WithContext<WebPage> = {
+     ...aboutPageBaseData,
+     about: {
+       '@type': 'Organization',
+       name: ORGANIZATION_NAME,
+       contactPoint: [
+         {
+           '@type': 'ContactPoint',
+           contactType: FILECOIN_FOUNDATION_URLS.email.label,
+           email: FILECOIN_FOUNDATION_URLS.email.href,
+         },
+         {
+           '@type': 'ContactPoint',
+           contactType:  FILECOIN_FOUNDATION_URLS.grants.email.label,
+           email: FILECOIN_FOUNDATION_URLS.grants.email.href,
+         },
+       ],
+     },
+     sameAs: Object.values(FILECOIN_FOUNDATION_URLS.social).map(
+       (link) => link.href
+     ),
+   }
+   ```
+
+4. **Testing**: Ensure that tests are added to verify the presence of metadata and structured data on the new page. These tests are crucial for maintaining the integrity of the site's SEO and ensuring that all pages meet our standards for content visibility.
+
+5. **Updating the Sitemap**: When adding new dynamic content (such as blog posts, ecosystem projects, or events) that isn't automatically included in the sitemap through static routing, it's essential to manually update the sitemap with the new page's details. This step is crucial for SEO, helping ensure that search engines can easily discover and index these new pages.
+
+Following these guidelines helps ensure that our website remains consistent, accessible, and search engine friendly.
