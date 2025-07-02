@@ -20,3 +20,14 @@
   outline-offset: 0px;
   border-color: transparent;
 }
+
+@layer components {
+  /* TOOLTIP */
+  .tooltip {
+    @apply rounded-3xl border border-zinc-300 bg-white;
+
+    .tooltip-arrow {
+      @apply fill-zinc-300;
+    }
+  }
+}
