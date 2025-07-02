@@ -23,7 +23,6 @@ import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -102,7 +101,7 @@ export function BlogContent({ posts }: BlogContentProps) {
         />
         <FilterContainer.ContentWrapper>
           {filteredEntries.length === 0 ? (
-            <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
+            <NoSearchResultsMessage />
           ) : (
             <>
               <CardGrid as="section" cols="smTwo">

@@ -14,7 +14,7 @@ import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { logZodError } from '@filecoin-foundation/utils/zodUtils'
 
-import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -81,7 +81,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
       </div>
 
       {paginatedResults.length === 0 ? (
-        <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
+        <NoSearchResultsMessage />
       ) : (
         <>
           <CardGrid as="section" cols="smTwo">

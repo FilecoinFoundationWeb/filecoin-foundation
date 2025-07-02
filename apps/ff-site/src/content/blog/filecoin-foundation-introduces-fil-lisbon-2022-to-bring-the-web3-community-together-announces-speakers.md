@@ -17,7 +17,7 @@ seo:
     community together. Announcing speakers.
 ---
 
-**OCTOBER 17, 2022** — [Filecoin Foundation](/) — an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of the Filecoin ecosystem, and advocates for Filecoin and the decentralized web — unveils the details of [FIL Lisbon](https://fil-lisbon.io/), the first major gathering of the Filecoin community in Lisbon, Portugal, taking place October 30 — November 4.
+**OCTOBER 17, 2022** — [Filecoin Foundation](/) — an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of the Filecoin ecosystem, and advocates for Filecoin and the decentralized web — unveils the details of [FIL Lisbon](/events/fil-lisbon), the first major gathering of the Filecoin community in Lisbon, Portugal, taking place October 30 — November 4.
 
 The six-day event will feature over 50 industry-leading speakers and will convene builders, developers, storage providers, ecosystem partners, clients, and investors from across Web3 and the Filecoin ecosystem. FIL Lisbon is bringing the community together for workshops, hackathons, panels, meetups, networking, happy hours and more in one of the world’s preeminent cities for blockchain technology.
 
@@ -33,7 +33,7 @@ FIL Lisbon Main Stage Days will take place at the LX Factory on October 31 and N
 - Michael Morisy, Chief Executive Officer, MuckRock
 - Jeff Bandman, COO and GC, 6529 Group
 - Eugenia Filippova, Segment Lead, Everstake
-- More [speakers](https://fil-lisbon.io/speakers/) to be announced
+- More [speakers](/events/fil-lisbon) to be announced
 
 “The Filecoin ecosystem has seen tremendous growth this year. The amount of client data onboarded to the network has increased 9x to over 230 PiB in 2022 and is growing ~25% month over month. Clients storing data to Filecoin include traditional Web2 institutions with large datasets and growing Web3 applications, such as web3.storage, which now stores 140M uploads from 80K+ users,” said Colin Evran, Ecosystem Lead at Protocol Labs. “FIL Lisbon provides this engaged and growing community an opportunity to connect, learn, and share ideas on how to bring more startups and use cases to the world’s largest decentralized network. We look forward to seeing everyone there.”
 
@@ -46,7 +46,7 @@ Additionally, from October 24 — November 4, Filecoin Foundation is hosting a [
 
 “Filecoin Foundation is so thrilled to be bringing together the Filecoin community in Lisbon, two years after Filecoin mainnet launch, following a year of tremendous network growth,” says Marta Belcher, President and Chair of Filecoin Foundation.
 
-FIL Lisbon is open to everyone and provides a unique opportunity for people within and outside of the blockchain industry to learn, build, connect, and venture into the exciting prospects of the future of Web3. You can [register for the FIL Lisbon kickoff party and Main Stage days](https://fil-lisbon.io/register-now/) to join the event. For more information about the event, visit the [FIL Lisbon official website](https://fil-lisbon.io/)
+FIL Lisbon is open to everyone and provides a unique opportunity for people within and outside of the blockchain industry to learn, build, connect, and venture into the exciting prospects of the future of Web3. You can [register for the FIL Lisbon kickoff party and Main Stage days](/events/fil-lisbon) to join the event. For more information about the event, visit the [FIL Lisbon official website](/events/fil-lisbon)
 
 ## About Filecoin Foundation
 

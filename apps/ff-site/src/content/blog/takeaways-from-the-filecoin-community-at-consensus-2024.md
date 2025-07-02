@@ -52,4 +52,4 @@ With a thriving ecosystem of developers, storage providers, and partners, the Fi
 
 ---
 
-Interested in connecting with the community and learning more? Don’t miss the upcoming [FIL Brussels](https://www.fil-brussels.io/) during EthCC!
+Interested in connecting with the community and learning more? Don’t miss the upcoming [FIL Brussels](/events/fil-brussels) during EthCC!

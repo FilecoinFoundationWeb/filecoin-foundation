@@ -63,7 +63,7 @@ Filecoin Foundation shared the stage in Barcelona with representatives from Ethe
 
 ## Lisbon: Forging New Partnerships
 
-In Portugal, we joined forces with Diogo Almeida of Lightshift Ventures, a Lisbon-based VC and longtime friend of the Filecoin world and Protocol Labs network, to host the first Filecoin event in Lisbon since our flagship [FIL Lisbon](https://fil-lisbon.io/) conference in 2022 ([watch those sessions here](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kWhcrnEWz1r3r2k97TjPz2)).
+In Portugal, we joined forces with Diogo Almeida of Lightshift Ventures, a Lisbon-based VC and longtime friend of the Filecoin world and Protocol Labs network, to host the first Filecoin event in Lisbon since our flagship [FIL Lisbon](/events/fil-lisbon) conference in 2022 ([watch those sessions here](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kWhcrnEWz1r3r2k97TjPz2)).
 
 ![A person gives a presentation in a dark room with a blue slide titled "The anatomy of a Filecoin storage deal."](/assets/images/lisbon2.png)
 
@@ -83,7 +83,7 @@ Web3Mine’s co-founder Lukas Bresser delivered a talk about a new decentralized
 
 As the world continues its shift toward decentralized architectures, the Filecoin Orbit Community Program plays a crucial role in educating and onboarding the next generation of Web3 builders and pioneers, paving the way for a more decentralized future.
 
-Next, the Filecoin community is descending upon Brussels from July 8-10, alongside EthCC 2024, for an exploration into the realms of decentralized AI, DePIN, and compute. Join us at FIL Brussels for insightful talks, hands-on workshops, networking opportunities, and can’t miss announcements from trailblazing Filecoin ecosystem teams building at the forefront of the data economy. [Secure your spot](https://www.fil-brussels.io/).
+Next, the Filecoin community is descending upon Brussels from July 8-10, alongside EthCC 2024, for an exploration into the realms of decentralized AI, DePIN, and compute. Join us at FIL Brussels for insightful talks, hands-on workshops, networking opportunities, and can’t miss announcements from trailblazing Filecoin ecosystem teams building at the forefront of the data economy. [Secure your spot](/events/fil-brussels).
 
 **Interested in Getting Involved with Orbit?**
 
