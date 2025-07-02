@@ -1,12 +1,20 @@
 # Filecoin Foundation Website
 
-This project contains the website of Filecoin Foundation, available at [fil.org](https://fil.org/). It aims to provide comprehensive information and resources about Filecoin's initiatives and contributions to the decentralized web.
+This project contains the website of Filecoin Foundation, available at [fil.org](https://fil.org/). This site aims to provide comprehensive information and resources about Filecoin's initiatives and contributions to the decentralized web.
 
 ## Getting Started
 
 This Next.js project is part of a monorepo managed by [Turborepo](https://turborepo.com/docs). To get started, refer to the [root README](../../README.md) for installation and development instructions.
 
-If you're only interested in working on this project, you can run `npm run dev` in this directory, assuming you have already installed the dependencies at the root of the monorepo.
+### Useful commands
+
+| Command                                    | Action                        |
+| ------------------------------------------ | ----------------------------- |
+| `npx turbo filecoin-foundation-site#dev`   | Starts the development server |
+| `npx turbo filecoin-foundation-site#build` | Builds the application        |
+| `npx turbo filecoin-foundation-site#start` | Starts the production server  |
+| `npx turbo filecoin-foundation-site#lint`  | Lints the code                |
+| `npm i <package> -w 'apps/ff-site'`        | Installs a dependency         |
 
 ## Technologies
 
@@ -143,9 +151,7 @@ Alternatively, you can also manually grab the API key from the [Vercel dashboard
 
 ## Creating Page Templates
 
-<!-- Should we keep it? -->
-
-To create a new page template, run the following command:
+To create a new page template, run the following command from the `apps/ff-site` directory:
 
 `npm run generate:page <page-name>`
 
@@ -168,7 +174,7 @@ We encourage contributors to set up their editors to run Prettier on save. For V
 "editor.formatOnSave": true
 ```
 
-ESLint is configured to run on pre-commit via [husky](https://typicode.github.io/husky/). To run it manually, use `npm run lint`. This will fix automatically fixable issues.
+ESLint is configured to run on pre-commit via [husky](https://typicode.github.io/husky/). To run it manually, use `npx turbo filecoin-foundation-site#lint`. This will fix automatically fixable issues.
 
 ## Continuous Integration and Deployment
 
@@ -186,9 +192,12 @@ To ensure the highest quality of user experience, we employ Cypress for end-to-e
 
 To run Cypress tests on your local machine:
 
-1. Ensure the development server is running: `npm run dev`
+1. Ensure the development server is running: `npx turbo filecoin-foundation-site#dev`
 2. Open Cypress Test Runner with `npx cypress open` for interactive testing.
 3. Alternatively, run `npx cypress run` to execute tests in headless mode directly from the terminal.
+
+> [!NOTE]
+> The `turbo` command needs to be run from the root of the monorepo while the `cypress` command needs to be run from the `apps/ff-site` directory.
 
 ### Writing and Modifying Tests
 
@@ -198,87 +207,7 @@ This hands-on approach to testing complements our CI/CD pipeline, allowing devel
 
 ## Development Guidelines
 
-To maintain the quality and consistency of our codebase, we have established a set of development guidelines. Contributors are encouraged to follow these practices when making contributions to the project.
-
-### Component Organization
-
-Reusable React components should be stored in the general `_components` directory. Page-specific components should live closer to the page they are used on.
-
-### Component Exports
-
-Use named exports for React components to maintain consistency and support efficient tree shaking. This practice facilitates easier and more predictable imports across the project.
-
-### Naming Props
-
-When defining props for components, explicitly name the props type rather than using a generic `Props` type. For example,
-
-```typescript
-type BadgeProps = {
-  featured: boolean
-  children?: string
-}
-```
-
-### Paths and URLs
-
-- **Centralized Paths**: Utilize the `PATHS` object for defining and accessing paths throughout the application. See `_constants/paths.ts`
-
-- **Site Metadata and URLs**: Reference site metadata and URLs using centralized constants to ensure consistency and ease of maintenance. See `_constants/siteMetadata.ts`
-
-### Adding New Pages
-
-When adding a new page to the project, please ensure the following:
-
-1. **Update PATHS Configuration**: Ensure the `PATHS` object includes configurations for new content types, specifying paths, labels, and content directory paths. See `_constants/paths.ts`
-
-2. **Metadata and SEO**: Each new page should have associated metadata and SEO tags defined. Use the `createMetadata` function to set up a page's metadata correctly. Example:
-
-   ```javascript
-   export const metadata = createMetadata(seo, PATHS.ABOUT.path)
-   ```
-
-3. **Structured Data**: Include structured data for the new page to enhance search engine visibility and accessibility. Use the `generateWebPageStructuredData` function to create structured data for the page, which provides the base structured data. Example:
-
-   ```javascript
-   const aboutPageBaseData = generateWebPageStructuredData({
-     title: seo.title,
-     description: seo.description,
-     path: PATHS.ABOUT.path,
-   })
-   ```
-
-   This can be further customized based on the page's content and structure. Example:
-
-   ```javascript
-   const aboutPageStructuredData: WithContext<WebPage> = {
-     ...aboutPageBaseData,
-     about: {
-       '@type': 'Organization',
-       name: ORGANIZATION_NAME,
-       contactPoint: [
-         {
-           '@type': 'ContactPoint',
-           contactType: FILECOIN_FOUNDATION_URLS.email.label,
-           email: FILECOIN_FOUNDATION_URLS.email.href,
-         },
-         {
-           '@type': 'ContactPoint',
-           contactType:  FILECOIN_FOUNDATION_URLS.grants.email.label,
-           email: FILECOIN_FOUNDATION_URLS.grants.email.href,
-         },
-       ],
-     },
-     sameAs: Object.values(FILECOIN_FOUNDATION_URLS.social).map(
-       (link) => link.href
-     ),
-   }
-   ```
-
-4. **Testing**: Ensure that tests are added to verify the presence of metadata and structured data on the new page. These tests are crucial for maintaining the integrity of the site's SEO and ensuring that all pages meet our standards for content visibility.
-
-5. **Updating the Sitemap**: When adding new dynamic content (such as blog posts, ecosystem projects, or events) that isn't automatically included in the sitemap through static routing, it's essential to manually update the sitemap with the new page's details. This step is crucial for SEO, helping ensure that search engines can easily discover and index these new pages.
-
-Following these guidelines helps ensure that our website remains consistent, accessible, and search engine friendly.
+Check out the [development guidelines](../../README.md#development-guidelines) in the root README for more information.
 
 ## Contributing
 
