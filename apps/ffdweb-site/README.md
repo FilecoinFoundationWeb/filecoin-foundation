@@ -6,6 +6,16 @@ This project contains the website of Filecoin Foundation for the Decentralized W
 
 This Next.js project is part of a monorepo managed by [Turborepo](https://turborepo.com/docs). To get started, refer to the [root README](../../README.md#getting-started) for installation and development instructions.
 
+### Useful commands
+
+| Command                                 | Action                        |
+| --------------------------------------- | ----------------------------- |
+| `npx turbo ffdweb-site#dev`             | Starts the development server |
+| `npx turbo ffdweb-site#build`           | Builds the application        |
+| `npx turbo ffdweb-site#start`           | Starts the production server  |
+| `npx turbo ffdweb-site#lint`            | Lints the code                |
+| `npm i <package> -w 'apps/ffdweb-site'` | Installs a dependency         |
+
 ## Technologies
 
 This project uses the following open-source technologies:
@@ -27,11 +37,11 @@ We use GitHub Actions for Continuous Integration (CI) to automate testing. Every
 
 ## Development Guidelines
 
-The development guidelines are the same as for the Filecoin Foundation website. For more information, refer to the [ff-site README](../ff-site/README.md#development-guidelines).
+Check out the [development guidelines](../../README.md#development-guidelines) in the root README for more information.
 
 ## Contributing
 
-We welcome contributions to Filecoin Foundation for the Decentralized Web website!
+We welcome contributions to the Filecoin Foundation for the Decentralized Web website!
 
 ## License
 
