@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Filecoin Foundation for the Decentralized Web Website
+
+This project contains the website of Filecoin Foundation for the Decentralized Web, Filecoin Foundation's sister nonprofit. It's available at [ffdweb.org](https://ffdweb.org/).
 
 ## Getting Started
 
-First, run the development server:
+This Next.js project is part of a monorepo managed by [Turborepo](https://turborepo.com/docs). To get started, refer to the [root README](../../README.md#getting-started) for installation and development instructions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Useful commands
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The following commands are specific to the `ffdweb-site` workspace and should be run from the root of the monorepo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Command                                 | Action                        |
+| --------------------------------------- | ----------------------------- |
+| `npx turbo ffdweb-site#dev`             | Starts the development server |
+| `npx turbo ffdweb-site#build`           | Builds the application        |
+| `npx turbo ffdweb-site#start`           | Starts the production server  |
+| `npx turbo ffdweb-site#lint`            | Lints the code                |
+| `npm i <package> -w 'apps/ffdweb-site'` | Installs a dependency         |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies
 
-## Learn More
+This project uses the following open-source technologies:
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js (App Router)](https://nextjs.org/) for server-side rendering, static site generation, and routing.
+- [TypeScript](https://www.typescriptlang.org/) for static type checking.
+- [Tailwind CSS](https://tailwindcss.com/) for utility-first CSS styling.
+- [Zod](https://zod.dev/) for data validation.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content Management
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+We use [Decap CMS](https://decapcms.org/docs/intro/), formerly known as Netlify CMS, for content management, allowing non-technical team members to update website content easily.
 
-## Deploy on Vercel
+For more information on how to update content, refer to the [ff-site README](../ff-site/README.md#decap-cms-integration). The setup and workflow are the same for both websites, except that there's no encryption required for this project.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Continuous Integration and Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We use GitHub Actions for Continuous Integration (CI) to automate testing. Every pull request to the `main` branch must pass all tests and meet our quality standards. The workflows are the same as for the Filecoin Foundation website. For more information, refer to the [ff-site README](../ff-site/README.md#continuous-integration-and-deployment).
+
+## Development Guidelines
+
+Check out the [development guidelines](../../README.md#development-guidelines) in the root README for more information.
+
+## Contributing
+
+We welcome contributions to the Filecoin Foundation for the Decentralized Web website!
+
+### GitHub Workflow
+
+We try to keep each pull request small and focused. If the work requires large file changes, we break it down into smaller pieces as outlined in this article on [GitHub Protips from Sarah Vessels](https://github.blog/developer-skills/github/github-protips-tips-tricks-hacks-and-secrets-from-sarah-vessels/).
+
+## License
+
+This project is licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).

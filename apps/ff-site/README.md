@@ -1,70 +1,31 @@
 # Filecoin Foundation Website
 
-## Overview
-
-This project is developed for Filecoin Foundation, aiming to provide comprehensive information and resources about Filecoin's initiatives and contributions to the decentralized web. Utilizing Next.js for server-side rendering and static site generation, Tailwind CSS for styling, and other dependencies for Markdown processing and validation, this project aims to offer an accessible and user-friendly website for the Filecoin community.
+This project contains the website of Filecoin Foundation, available at [fil.org](https://fil.org/). This site aims to provide comprehensive information and resources about Filecoin's initiatives and contributions to the decentralized web.
 
 ## Getting Started
 
-### Prerequisites
+This Next.js project is part of a monorepo managed by [Turborepo](https://turborepo.com/docs). To get started, refer to the [root README](../../README.md) for installation and development instructions.
 
-- Node.js (v18 or later)
-- npm
+### Useful commands
 
-### Installation
+The following commands are specific to the `ff-site` workspace and should be run from the root of the monorepo.
 
-Clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/FilecoinFoundationWeb/filecoin-foundation
-cd filecoin-foundation
-npm install
-```
-
-### Development
-
-To start the development server:
-
-```bash
-npm run dev
-```
-
-This command starts a local development server on `http://localhost:3000`. The server will automatically reload if any of the source files are changed.
-
-### Building for Production
-
-The build process includes a pre-build step that converts the CMS configuration file (`public/admin/config.yml`) to JSON (located at `src/app/_data/cmsConfigSchema.json`).
-
-```bash
-npm run build
-```
-
-This command generates a `.next` folder with the production build. To start the production server:
-
-```bash
-npm run start
-```
-
-### Formatting
-
-This project uses [Prettier](https://prettier.io/) for automatic code formatting. The shared Prettier configuration is located in `.prettierrc.json`.
-
-### Linting
-
-This project uses [ESLint](https://eslint.org/) for linting. The shared ESLint configuration is located in `.eslintrc.json`. To lint and fix issues in the codebase:
-
-```bash
-npm run lint
-```
+| Command                                    | Action                        |
+| ------------------------------------------ | ----------------------------- |
+| `npx turbo filecoin-foundation-site#dev`   | Starts the development server |
+| `npx turbo filecoin-foundation-site#build` | Builds the application        |
+| `npx turbo filecoin-foundation-site#start` | Starts the production server  |
+| `npx turbo filecoin-foundation-site#lint`  | Lints the code                |
+| `npm i <package> -w 'apps/ff-site'`        | Installs a dependency         |
 
 ## Technologies
 
-- **Next.js 15**: For server-side rendering, static site generation, and routing.
-- **TypeScript**: For static type checking.
-- **Tailwind CSS**: For utility-first CSS styling.
-- **React 19**: For building the user interface.
-- **clsx**: For conditionally joining `classNames` together.
-- **Zod**: For data validation.
+This project uses the following open-source technologies:
+
+- [Next.js (App Router)](https://nextjs.org/) for server-side rendering, static site generation, and routing.
+- [TypeScript](https://www.typescriptlang.org/) for static type checking.
+- [Tailwind CSS](https://tailwindcss.com/) for utility-first CSS styling.
+- [Zod](https://zod.dev/) for data validation.
 
 ## Decap CMS Integration
 
@@ -74,14 +35,14 @@ Decap CMS is a Git-based content management system, meaning that content is mana
 
 All the content managed through Decap CMS is stored in `src/app/content/`. This directory includes various Markdown files that the CMS edits. Each file represents a different section or page of the website, structured for easy editing and updates.
 
-### Decap CMS Configuration
+### Configuration
 
 The Decap CMS setup includes two configuration files:
 
-1. `public/admin/config.yml` - This file primarily contains the schema and metadata for the content but also includes authentication settings among other things.
-2. `public/admin/index.html` - This HTML template enables viewing and editing the content in a web interface. Access it via [/admin/index.html](http://localhost:3000/admin/index.html#/).
+1. `public/admin/config.yml` - This file primarily contains the content and schema metadata under the `collections` section, but also includes authentication settings under the `backend` [section](https://decapcms.org/docs/configuration-options/#backend). We use GitHub as the backend for Decap CMS, as explained in further details below.
+2. `public/admin/index.html` - This HTML template enables viewing and editing the content in a web interface. It is what is loaded when you visit `/admin` in the browser.
 
-Additionally, `src/app/_data/cmsConfigSchema.json` is a file autogenerated when the server starts, using `predev` and `prebuild` commands.
+Additionally, `src/app/_data/cmsConfigSchema.json` is a file autogenerated when the server starts, using `predev` and `prebuild` commands. It is a JSON representation of the `config.yml` file.
 
 ### Markdown Files
 
@@ -149,19 +110,17 @@ The `Relation` widget is how we create links between related pieces of content, 
 
 ### Accessing the CMS
 
+The CMS is accessible at `/admin`, whether [locally](http://localhost:3000/admin) or in [production](https://fil.org/admin).
+
 #### Authenticating with GitHub in production
 
-Our project integrates with Github for user authentication and content management in a production environment. This integration allows authorized users to access the CMS and make changes to the website content. The list of authorized users is available in the [settings of the GitHub repository](https://github.com/FilecoinFoundationWeb/filecoin-foundation/settings/access). We also use a [Cloudflare worker](https://github.com/FilecoinFoundationWeb/decap-proxy) to handle the authentication process.
+Our project integrates with GitHub for user authentication and content management in a production environment. This integration allows authorized users to access the CMS and make changes to the website content. The list of authorized users is available in the [settings of the GitHub repository](https://github.com/FilecoinFoundationWeb/filecoin-foundation/settings/access). We also use a [Cloudflare worker](https://github.com/FilecoinFoundationWeb/decap-proxy) to handle the authentication process.
 
 This setup is only necessary for production. For local development, follow the instructions below.
 
 #### Working with the CMS locally
 
-You can connect Decap CMS to the local Git repository. To do this, follow these steps:
-
-1. Run `npx decap-server`
-2. Run `npm run dev`
-3. Open http://localhost:3000/admin/index.html
+You can connect Decap CMS to the local Git repository using Decap's local server by running `npx decap-server`. This will bypass the GitHub authentication and allow you to work with the CMS locally.
 
 ### Data Encryption
 
@@ -194,7 +153,7 @@ Alternatively, you can also manually grab the API key from the [Vercel dashboard
 
 ## Creating Page Templates
 
-To create a new page template, run the following command:
+To create a new page template, run the following command from the `apps/ff-site` directory:
 
 `npm run generate:page <page-name>`
 
@@ -207,33 +166,40 @@ Replace `<page-name>` with the desired name of the page. This command will gener
 
 It will also update `paths.ts` to include the new page.
 
+## Linting and Formatting
+
+We rely on [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to ensure consistent code formatting.
+
+We encourage contributors to set up their editors to run Prettier on save. For VSCode, you can add the following to your `.vscode/settings.json`:
+
+```json
+"editor.formatOnSave": true
+```
+
+ESLint is configured to run on pre-commit via [husky](https://typicode.github.io/husky/). To run it manually, use `npx turbo filecoin-foundation-site#lint`. This will fix auto-fixable issues.
+
 ## Continuous Integration and Deployment
 
-Our project leverages GitHub Actions for Continuous Integration (CI) to automate the testing and linting of code. This ensures that every push and pull request to the `main` branch meets our quality standards and passes all tests. Below are the key workflows integrated into our CI process:
+We use GitHub Actions for Continuous Integration (CI) to automate testing. Every pull request to the `main` branch must pass all tests and meet our quality standards. Below are the key workflows in our CI process:
 
-### Cypress Tests
-
-Our CI pipeline includes running end-to-end (E2E) tests with Cypress on every push and pull request to the `main` branch. This workflow ensures that the application behaves as expected from a user's perspective.
-
-### Lint Code Base
-
-We enforce code quality standards through a linting workflow that runs ESLint on every push and pull request to the `main` branch. This workflow identifies and reports patterns found in ECMAScript/JavaScript code, to make code more consistent and avoid bugs.
-
-### Contributing
-
-Contributors are encouraged to ensure their code passes these checks before submitting pull requests. Local setup instructions are provided to run these tests and linters, emulating the CI environment to catch and resolve issues early in the development process.
+- We run end-to-end (E2E) tests with [Cypress](https://www.cypress.io/) to ensure pages contain the correct content and metadata.
+- We use [Percy](https://percy.io/) to compare visual changes between the PR and the production site. It's possible to disable it by adding `[skip percy]` to the PR title.
+- We use [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) to lint our Markdown files. This is especially helpful for PRs coming from Decap CMS, as the author doesn't have control over the code formatting.
 
 ## End-to-End Testing with Cypress
 
-To ensure the highest quality of user experience, we employ Cypress for end-to-end (E2E) testing. These tests simulate real user interactions within the application to catch any potential issues before they affect our users.
+To ensure the highest quality of user experience, we employ Cypress for end-to-end (E2E) testing.
 
 ### Running Tests Locally
 
 To run Cypress tests on your local machine:
 
-1. Ensure the development server is running (`npm run dev`).
+1. Ensure the development server is running: `npx turbo filecoin-foundation-site#dev`
 2. Open Cypress Test Runner with `npx cypress open` for interactive testing.
 3. Alternatively, run `npx cypress run` to execute tests in headless mode directly from the terminal.
+
+> [!NOTE]
+> The `turbo` command needs to be run from the root of the monorepo while the `cypress` command needs to be run from the `apps/ff-site` directory.
 
 ### Writing and Modifying Tests
 
@@ -243,95 +209,15 @@ This hands-on approach to testing complements our CI/CD pipeline, allowing devel
 
 ## Development Guidelines
 
-To maintain the quality and consistency of our codebase, we have established a set of development guidelines. Contributors are encouraged to follow these practices when making contributions to the project.
-
-### Component Organization
-
-Reusable React components should be stored in the general `_components` directory. Page-specific components should live closer to the page they are used on.
-
-### Component Exports
-
-Use named exports for React components to maintain consistency and support efficient tree shaking. This practice facilitates easier and more predictable imports across the project.
-
-### Naming Props
-
-When defining props for components, explicitly name the props type rather than using a generic `Props` type. For example,
-
-```typescript
-type BadgeProps = {
-  featured: boolean
-  children?: string
-}
-```
-
-### Paths and URLs
-
-- **Centralized Paths**: Utilize the `PATHS` object for defining and accessing paths throughout the application. See `_constants/paths.ts`
-
-- **Site Metadata and URLs**: Reference site metadata and URLs using centralized constants to ensure consistency and ease of maintenance. See `_constants/siteMetadata.ts`
-
-### Adding New Pages
-
-When adding a new page to the project, please ensure the following:
-
-1. **Update PATHS Configuration**: Ensure the `PATHS` object includes configurations for new content types, specifying paths, labels, and content directory paths. See `_constants/paths.ts`
-
-2. **Metadata and SEO**: Each new page should have associated metadata and SEO tags defined. Use the `createMetadata` function to set up a page's metadata correctly. Example:
-
-   ```javascript
-   export const metadata = createMetadata(seo, PATHS.ABOUT.path)
-   ```
-
-3. **Structured Data**: Include structured data for the new page to enhance search engine visibility and accessibility. Use the `generateWebPageStructuredData` function to create structured data for the page, which provides the base structured data. Example:
-
-   ```javascript
-   const aboutPageBaseData = generateWebPageStructuredData({
-     title: seo.title,
-     description: seo.description,
-     path: PATHS.ABOUT.path,
-   })
-   ```
-
-   This can be further customized based on the page's content and structure. Example:
-
-   ```javascript
-   const aboutPageStructuredData: WithContext<WebPage> = {
-     ...aboutPageBaseData,
-     about: {
-       '@type': 'Organization',
-       name: ORGANIZATION_NAME,
-       contactPoint: [
-         {
-           '@type': 'ContactPoint',
-           contactType: FILECOIN_FOUNDATION_URLS.email.label,
-           email: FILECOIN_FOUNDATION_URLS.email.href,
-         },
-         {
-           '@type': 'ContactPoint',
-           contactType:  FILECOIN_FOUNDATION_URLS.grants.email.label,
-           email: FILECOIN_FOUNDATION_URLS.grants.email.href,
-         },
-       ],
-     },
-     sameAs: Object.values(FILECOIN_FOUNDATION_URLS.social).map(
-       (link) => link.href
-     ),
-   }
-   ```
-
-4. **Testing**: Ensure that tests are added to verify the presence of metadata and structured data on the new page. These tests are crucial for maintaining the integrity of the site's SEO and ensuring that all pages meet our standards for content visibility.
-
-5. **Updating the Sitemap**: When adding new dynamic content (such as blog posts, ecosystem projects, or events) that isn't automatically included in the sitemap through static routing, it's essential to manually update the sitemap with the new page's details. This step is crucial for SEO, helping ensure that search engines can easily discover and index these new pages.
-
-Following these guidelines helps ensure that our website remains consistent, accessible, and search engine friendly.
+Check out the [development guidelines](../../README.md#development-guidelines) in the root README for more information.
 
 ## Contributing
 
-We welcome contributions to Filecoin Foundation website!
+We welcome contributions to the Filecoin Foundation website!
 
-### Github Workflow
+### GitHub Workflow
 
-We try to keep each pull request small and focused. If the work requires large file changes, we break it down into smaller pieces as outlined in this article on [GitHub Protips from Sarah Vessels](https://github.blog/developer-skills/github/github-protips-tips-tricks-hacks-and-secrets-from-sarah-vessels/)
+We try to keep each pull request small and focused. If the work requires large file changes, we break it down into smaller pieces as outlined in this article on [GitHub Protips from Sarah Vessels](https://github.blog/developer-skills/github/github-protips-tips-tricks-hacks-and-secrets-from-sarah-vessels/).
 
 ## License
 

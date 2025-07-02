@@ -7,12 +7,7 @@
   ],
   "packageManager": "npm@10.9.2",
   "scripts": {
-    "build": "turbo run build",
-    "start": "turbo run start",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
     "lint:md": "markdownlint-cli2 \"apps/**/*.md\" \"!**/node_modules/**\" --config .markdownlint.jsonc",
-    "test": "turbo run test",
     "check:versions": "syncpack list-mismatches",
     "fix:versions": "syncpack fix-mismatches",
     "prepare": "test \"$CI\" = \"true\" || husky"
@@ -20,7 +15,7 @@
   "devDependencies": {
     "husky": "^9.1.7",
     "markdownlint-cli2": "^0.18.0",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.13",
     "syncpack": "^13.0.4",
     "turbo": "^2.5.4"
