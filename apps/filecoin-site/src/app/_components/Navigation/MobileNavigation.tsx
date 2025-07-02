@@ -8,7 +8,7 @@ import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 
-import { LogoIcon } from '@/components/LogoIcon'
+import { LogoIcon } from '@/components/Logo/IconLogo'
 
 import { NAV_LINKS } from './constants'
 import { NavigationLink } from './NavigationLink'

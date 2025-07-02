@@ -1,6 +1,6 @@
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 
-import { LogoIcon } from '@/components/LogoIcon'
+import { LogoIcon } from '@/components/Logo/IconLogo'
 
 import { DesktopNavigation } from './DesktopNavigation'
 import { MobileNavigation } from './MobileNavigation'
