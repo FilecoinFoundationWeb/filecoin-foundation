@@ -11,8 +11,8 @@ export function Navigation() {
     >
       {Object.entries(footerNavigationItems).map(([title, items]) => (
         <div key={title} className="space-y-4">
-          <span className="block text-sm font-medium">{title}</span>
-          <ul className="flex w-max flex-col gap-3">
+          <span className="block text-sm font-medium text-white">{title}</span>
+          <ul className="flex flex-col gap-3">
             {items.map(({ href, label }) => (
               <li key={href} className="text-sm text-zinc-400">
                 <SmartTextLink href={href} baseDomain={BASE_DOMAIN}>

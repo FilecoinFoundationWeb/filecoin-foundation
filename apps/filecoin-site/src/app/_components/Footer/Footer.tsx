@@ -1,9 +1,11 @@
 import { DesktopFooter } from './DesktopFooter'
 import { MobileFooter } from './MobileFooter'
 
+export const CONTAINER_SPACING = 'px-6 md:px-16'
+
 export function Footer() {
   return (
-    <footer className="flex flex-col gap-16 bg-zinc-950 px-6 pt-20 pb-16 text-white md:px-16">
+    <footer className="flex flex-col bg-zinc-950">
       <DesktopFooter />
       <MobileFooter />
     </footer>
