@@ -2,7 +2,7 @@
 
 import type { Route } from 'next'
 
-import { CaretRight } from '@phosphor-icons/react/dist/ssr'
+import { CaretRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -40,7 +40,7 @@ export function BreadCrumbs() {
             >
               {!isRoot && (
                 <Icon
-                  component={CaretRight}
+                  component={CaretRightIcon}
                   size={20}
                   color="subtle"
                   weight="bold"

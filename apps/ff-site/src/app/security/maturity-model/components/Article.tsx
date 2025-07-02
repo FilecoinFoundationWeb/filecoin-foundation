@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 
-import { LinkSimple } from '@phosphor-icons/react/dist/ssr'
+import { LinkSimpleIcon } from '@phosphor-icons/react/dist/ssr'
 import type { Route } from 'next'
 import { useIntersectionObserver } from 'usehooks-ts'
 
@@ -45,7 +45,7 @@ export function Article({ title, slug, children }: ArticleProps) {
         >
           {title}
           <span className="invisible group-hover:visible">
-            <Icon component={LinkSimple} size={18} />
+            <Icon component={LinkSimpleIcon} size={18} />
           </span>
         </Link>
       </h3>

@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowsDownUp } from '@phosphor-icons/react'
+import { ArrowsDownUpIcon } from '@phosphor-icons/react'
 
 import { Listbox } from '@filecoin-foundation/ui/Listbox'
 import {
@@ -22,7 +22,7 @@ export function SortListbox({
   selected,
   onChange,
   options,
-  buttonIcon = ArrowsDownUp,
+  buttonIcon = ArrowsDownUpIcon,
 }: SortListboxProps) {
   return (
     <Listbox value={selected} onChange={onChange}>

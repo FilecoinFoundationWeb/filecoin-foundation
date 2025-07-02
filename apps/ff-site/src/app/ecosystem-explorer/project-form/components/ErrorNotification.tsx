@@ -1,6 +1,6 @@
 'use client'
 
-import { XCircle } from '@phosphor-icons/react'
+import { XCircleIcon } from '@phosphor-icons/react'
 
 import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import {
@@ -19,7 +19,7 @@ export function ErrorNotification(props: ErrorMessageProps) {
   const dialog = useNotificationDialog({
     init: 'open',
     message: props.message,
-    icon: { component: XCircle, color: 'error' },
+    icon: { component: XCircleIcon, color: 'error' },
     duration: NOTIFICATION_DIALOG_ERROR_DURATION_MS,
     onClose: resetSearchParams,
   })

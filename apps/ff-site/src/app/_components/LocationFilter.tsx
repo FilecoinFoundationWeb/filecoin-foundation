@@ -1,6 +1,6 @@
 'use client'
 
-import { GlobeSimple } from '@phosphor-icons/react'
+import { GlobeSimpleIcon } from '@phosphor-icons/react'
 
 import { DEFAULT_LOCATION_FILTER_OPTION } from '@filecoin-foundation/hooks/useFilter/constants'
 import { useListboxQueryState } from '@filecoin-foundation/hooks/useListboxQueryState'
@@ -23,7 +23,7 @@ export function LocationFilter({ options }: LocationFilterProps) {
     <FilterListbox
       selected={locationOption}
       options={options}
-      buttonIcon={GlobeSimple}
+      buttonIcon={GlobeSimpleIcon}
       onChange={setLocationOption}
     />
   )

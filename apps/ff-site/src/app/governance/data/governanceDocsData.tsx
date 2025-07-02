@@ -1,4 +1,4 @@
-import { GithubLogo } from '@phosphor-icons/react/dist/ssr'
+import { GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 
 import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
@@ -18,7 +18,7 @@ export const governanceDocsData: Array<GovernanceDocsData> = [
   {
     heading: {
       title: 'Governance GitHub',
-      icon: GithubLogo,
+      icon: GithubLogoIcon,
     },
     description:
       'Deep dive into the Filecoin Improvement Proposal (FIP) process, including proposals, discussions, and technical documentation.',

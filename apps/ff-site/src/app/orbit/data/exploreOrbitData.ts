@@ -1,13 +1,12 @@
 import {
-  BookOpen,
-  ClipboardText,
-  Envelope,
+  BookOpenIcon,
+  ClipboardTextIcon,
+  EnvelopeIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
 import type { IconProps } from '@filecoin-foundation/ui/Icon'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-
 
 type ExploreOrbitData = {
   heading: {
@@ -25,7 +24,7 @@ export const exploreOrbitData: Array<ExploreOrbitData> = [
   {
     heading: {
       title: '2023 Orbit Recap',
-      icon: BookOpen,
+      icon: BookOpenIcon,
     },
     description: 'Discover the highlights and milestones from our past year.',
     cta: {
@@ -36,7 +35,7 @@ export const exploreOrbitData: Array<ExploreOrbitData> = [
   {
     heading: {
       title: 'Get in Touch',
-      icon: Envelope,
+      icon: EnvelopeIcon,
     },
     description:
       'Connect with the Orbit Team for more information and support.',
@@ -48,7 +47,7 @@ export const exploreOrbitData: Array<ExploreOrbitData> = [
   {
     heading: {
       title: "Ambassador's Portal",
-      icon: ClipboardText,
+      icon: ClipboardTextIcon,
     },
     description: 'Access the private portal with tools and resources.',
     cta: {

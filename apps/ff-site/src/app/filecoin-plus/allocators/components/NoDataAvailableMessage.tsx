@@ -1,4 +1,4 @@
-import { CloudSlash } from '@phosphor-icons/react/dist/ssr'
+import { CloudSlashIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { NoResultsMessage } from '@filecoin-foundation/ui/NoResultsMessage'
 
@@ -9,7 +9,7 @@ import { Button } from '@/components/Button'
 export function NoDataAvailableMessage() {
   return (
     <NoResultsMessage
-      icon={CloudSlash}
+      icon={CloudSlashIcon}
       title="Allocator Data Unavailable"
       message="We're having trouble fetching the allocator data. For the latest
         information, please check the Allocators list on the Filecoin Plus

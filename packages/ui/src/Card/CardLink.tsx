@@ -1,4 +1,4 @@
-import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
+import { ArrowUpRightIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
 import { Icon } from '@filecoin-foundation/ui/Icon'
@@ -37,7 +37,7 @@ function renderCardLinkContent({
 
   if (!icon) {
     return isExternal
-      ? [textElement, <Icon key="arrow" component={ArrowUpRight} />]
+      ? [textElement, <Icon key="arrow" component={ArrowUpRightIcon} />]
       : textElement
   }
 

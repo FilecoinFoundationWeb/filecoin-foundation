@@ -1,7 +1,7 @@
 'use client'
 
 import { zodResolver } from '@hookform/resolvers/zod'
-import { CheckCircle, XCircle } from '@phosphor-icons/react'
+import { CheckCircleIcon, XCircleIcon } from '@phosphor-icons/react'
 import * as Sentry from '@sentry/nextjs'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
@@ -86,13 +86,13 @@ function useNewsletterForm() {
 
       dialog.open({
         message: 'Successfully subscribed!',
-        icon: { component: CheckCircle, color: 'success' },
+        icon: { component: CheckCircleIcon, color: 'success' },
       })
     } catch (error) {
       dialog.open({
         message: 'An error has occurred. Please try again.',
         duration: NOTIFICATION_DIALOG_ERROR_DURATION_MS,
-        icon: { component: XCircle, color: 'error' },
+        icon: { component: XCircleIcon, color: 'error' },
       })
 
       Sentry.captureException(error)

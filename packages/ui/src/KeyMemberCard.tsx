@@ -1,4 +1,4 @@
-import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
+import { LinkedinLogoIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import Image from 'next/image'
 
@@ -48,7 +48,7 @@ export function KeyMemberCard({
             className="key-member-card-link focus:brand-outline absolute inset-0"
           >
             <span className="absolute bottom-4 left-36 inline-flex items-center gap-2">
-              <Icon component={LinkedinLogo} />
+              <Icon component={LinkedinLogoIcon} />
               LinkedIn
             </span>
           </a>

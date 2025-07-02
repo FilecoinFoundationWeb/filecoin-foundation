@@ -1,8 +1,8 @@
 import {
-  FacebookLogo,
-  LinkedinLogo,
-  RedditLogo,
-  XLogo,
+  FacebookLogoIcon,
+  LinkedinLogoIcon,
+  RedditLogoIcon,
+  XLogoIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
 const PLACEHOLDER_TITLE = 'Explore more on our website!'
@@ -23,22 +23,22 @@ export function generateShareArticleLinks({
 
   const SHARE_SOCIAL_LINKS_CONFIG = [
     {
-      icon: FacebookLogo,
+      icon: FacebookLogoIcon,
       label: 'Facebook',
       href: `https://www.facebook.com/sharer/sharer.php?u=${PLACEHOLDER_URL}&quote=${PLACEHOLDER_TITLE}`,
     },
     {
-      icon: LinkedinLogo,
+      icon: LinkedinLogoIcon,
       label: 'LinkedIn',
       href: `https://www.linkedin.com/shareArticle?mini=true&url=${PLACEHOLDER_URL}&title=${PLACEHOLDER_TITLE}`,
     },
     {
-      icon: RedditLogo,
+      icon: RedditLogoIcon,
       label: 'Reddit',
       href: `https://old.reddit.com/submit?url=${PLACEHOLDER_URL}&title=${PLACEHOLDER_TITLE}`,
     },
     {
-      icon: XLogo,
+      icon: XLogoIcon,
       label: 'X',
       href: `https://twitter.com/share?url=${PLACEHOLDER_URL}&text=${PLACEHOLDER_TITLE}`,
     },

@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import { List, X } from '@phosphor-icons/react'
+import { ListIcon, XIcon } from '@phosphor-icons/react'
 
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
@@ -25,7 +25,7 @@ export function MobileNavigation() {
   return (
     <div className="lg:hidden">
       <IconButton
-        icon={List}
+        icon={ListIcon}
         label="Open mobile navigation"
         onClick={() => setOpen(true)}
       />
@@ -37,7 +37,7 @@ export function MobileNavigation() {
               <LogoLink logo={Logo} onClick={() => setOpen(false)} />
             </div>
             <IconButton
-              icon={X}
+              icon={XIcon}
               label="Close mobile navigation"
               onClick={() => setOpen(false)}
             />

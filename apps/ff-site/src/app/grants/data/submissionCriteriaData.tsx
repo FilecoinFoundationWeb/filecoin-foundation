@@ -1,4 +1,4 @@
-import { Code, BracketsAngle, Users } from '@phosphor-icons/react/dist/ssr'
+import { CodeIcon, BracketsAngleIcon, UsersIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
@@ -7,7 +7,7 @@ export const submissionCriteriaData = [
   {
     title: 'Open-source',
     description: 'All projects must be open-sourced.',
-    icon: Code,
+    icon: CodeIcon,
   },
   {
     title: 'MIT and APACHE2',
@@ -24,11 +24,11 @@ export const submissionCriteriaData = [
         licenses.
       </>
     ),
-    icon: BracketsAngle,
+    icon: BracketsAngleIcon,
   },
   {
     title: 'Self-Management',
     description: 'All teams must be self-managed.',
-    icon: Users,
+    icon: UsersIcon,
   },
 ]

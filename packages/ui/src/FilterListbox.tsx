@@ -1,6 +1,6 @@
 'use client'
 
-import { FunnelSimple } from '@phosphor-icons/react'
+import { FunnelSimpleIcon } from '@phosphor-icons/react'
 
 import { Listbox } from '@filecoin-foundation/ui/Listbox'
 import {
@@ -28,7 +28,7 @@ export function FilterListbox({
   selected,
   options,
   onChange,
-  buttonIcon = FunnelSimple,
+  buttonIcon = FunnelSimpleIcon,
   optionsPosition,
 }: FilterListboxProps) {
   return (
