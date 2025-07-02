@@ -5,5 +5,5 @@ type LogoFilecoinFoundationProps = React.SVGProps<SVGSVGElement>
 export function LogoFilecoinFoundation({
   height = 24,
 }: LogoFilecoinFoundationProps) {
-  return <LogoAsset height={height} />
+  return <LogoAsset height={height}  />
 }

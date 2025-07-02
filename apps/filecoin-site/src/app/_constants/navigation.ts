@@ -30,7 +30,7 @@ const social: NavItem[] = [
 
 const resources: NavItem[] = [
   { label: 'Docs', href: docs },
-  { label: 'Github', href: github },
+  { label: 'GitHub', href: github },
   { label: 'Security', href: security },
   { label: 'Ecosystem Explorer', href: ecosystemExplorer },
 ]
