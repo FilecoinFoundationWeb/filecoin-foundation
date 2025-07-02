@@ -1,4 +1,4 @@
-import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
+import { BookOpenIcon, GitForkIcon, GlobeIcon, XLogoIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
@@ -52,7 +52,7 @@ export function Article({
         <ul className="flex flex-col gap-5">
           {website && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
-              <Icon component={Globe} />
+              <Icon component={GlobeIcon} />
               <SmartTextLink href={website} baseDomain={BASE_DOMAIN}>
                 Website
               </SmartTextLink>
@@ -60,19 +60,19 @@ export function Article({
           )}
           {repo && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
-              <Icon component={GitFork} />
+              <Icon component={GitForkIcon} />
               <ExternalTextLink href={repo}>GitHub</ExternalTextLink>
             </li>
           )}
           {twitter && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
-              <Icon component={XLogo} />
+              <Icon component={XLogoIcon} />
               <ExternalTextLink href={twitter}>X.com</ExternalTextLink>
             </li>
           )}
           {featuredContent && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
-              <Icon component={BookOpen} />
+              <Icon component={BookOpenIcon} />
               <SmartTextLink href={featuredContent} baseDomain={BASE_DOMAIN}>
                 Featured Content
               </SmartTextLink>

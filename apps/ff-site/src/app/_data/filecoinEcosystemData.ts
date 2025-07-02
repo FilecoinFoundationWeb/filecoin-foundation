@@ -1,4 +1,4 @@
-import { Code, HardDrives, Money, Person } from '@phosphor-icons/react/dist/ssr'
+import { CodeIcon, HardDrivesIcon, MoneyIcon, PersonIcon } from '@phosphor-icons/react/dist/ssr'
 
 import type { IconProps } from '@filecoin-foundation/ui/Icon'
 
@@ -26,7 +26,7 @@ export const filecoinEcosystemData: Array<FilecoinEcosystemData> = [
   {
     heading: {
       title: 'Grants Program',
-      icon: Money,
+      icon: MoneyIcon,
     },
     description:
       'Learn more about support for teams building on the Filecoin network.',
@@ -38,7 +38,7 @@ export const filecoinEcosystemData: Array<FilecoinEcosystemData> = [
   {
     heading: {
       title: 'Filecoin Events',
-      icon: Person,
+      icon: PersonIcon,
     },
     description:
       'Connect and collaborate with the Filecoin community around the globe! Get details on the latest Filecoin Foundation, Web3, and community events.',
@@ -50,7 +50,7 @@ export const filecoinEcosystemData: Array<FilecoinEcosystemData> = [
   {
     heading: {
       title: 'Builder Resources',
-      icon: Code,
+      icon: CodeIcon,
     },
     description:
       'Join thousands of developers and teams building on the Filecoin network.',
@@ -62,7 +62,7 @@ export const filecoinEcosystemData: Array<FilecoinEcosystemData> = [
   {
     heading: {
       title: 'Storage Resources',
-      icon: HardDrives,
+      icon: HardDrivesIcon,
     },
     description:
       'Join the Filecoin community as a Storage Provider or leverage the network to store your data with robust and secure storage.',

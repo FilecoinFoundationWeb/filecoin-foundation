@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowsDownUp } from '@phosphor-icons/react/dist/ssr'
+import { ArrowsDownUpIcon } from '@phosphor-icons/react/dist/ssr'
 import type { Column, SortDirection } from '@tanstack/react-table'
 
 import { Listbox } from '@filecoin-foundation/ui/Listbox'
@@ -34,7 +34,7 @@ export function SelectSort({
   return (
     <Listbox value={selectedOption} onChange={setColumnSort}>
       <ListboxButton
-        leadingIcon={ArrowsDownUp}
+        leadingIcon={ArrowsDownUpIcon}
         text={selectedOption.name}
         compactBelow="md"
       />

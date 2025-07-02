@@ -1,4 +1,4 @@
-import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
+import { ArrowUpRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
@@ -20,7 +20,7 @@ export function ExternalTextLink({
     >
       {children}
       <span className="ml-1 inline-flex self-center">
-        <Icon component={ArrowUpRight} size={16} color="subtle" />
+        <Icon component={ArrowUpRightIcon} size={16} color="subtle" />
       </span>
     </a>
   )

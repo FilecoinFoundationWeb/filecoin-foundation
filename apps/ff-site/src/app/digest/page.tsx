@@ -1,4 +1,4 @@
-import { BookOpen } from '@phosphor-icons/react/dist/ssr'
+import { BookOpenIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
@@ -72,7 +72,7 @@ export default async function Digest() {
                   href: `${PATHS.DIGEST.path}/${slug}`,
                   text: 'Read Article',
                   icon: {
-                    component: BookOpen,
+                    component: BookOpenIcon,
                   },
                 }}
                 image={{

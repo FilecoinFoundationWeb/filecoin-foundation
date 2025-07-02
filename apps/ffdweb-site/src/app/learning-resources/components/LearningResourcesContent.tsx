@@ -2,7 +2,7 @@
 
 import { useSearchParams } from 'next/navigation'
 
-import { ArrowUpRight } from '@phosphor-icons/react'
+import { ArrowUpRightIcon } from '@phosphor-icons/react'
 
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import {
@@ -155,7 +155,7 @@ export function LearningResourcesContent({
                 href: link,
                 text: 'View Resource',
                 icon: {
-                  component: ArrowUpRight,
+                  component: ArrowUpRightIcon,
                   size: 16,
                   position: 'trailing',
                   weight: 'bold',

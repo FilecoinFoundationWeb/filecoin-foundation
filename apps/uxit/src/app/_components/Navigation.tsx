@@ -1,4 +1,4 @@
-import { GithubLogo } from '@phosphor-icons/react/dist/ssr'
+import { GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 
@@ -13,7 +13,7 @@ export function Navigation() {
         aria-label="View project on GitHub"
         className="focus:brand-outline inline-flex items-center gap-2 hover:opacity-80"
       >
-        <GithubLogo size={24} aria-hidden="true" />
+        <GithubLogoIcon size={24} aria-hidden="true" />
         <span className="sr-only">GitHub Repository</span>
       </a>
     </nav>

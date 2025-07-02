@@ -2,7 +2,7 @@
 
 import type { Dispatch, SetStateAction } from 'react'
 
-import { ArrowUpRight } from '@phosphor-icons/react'
+import { ArrowUpRightIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
 import { type BaseLinkProps, BaseLink } from '@filecoin-foundation/ui/BaseLink'
@@ -35,7 +35,9 @@ export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
       >
         {label}
       </BaseLink>
-      {isExternal && <Icon size={16} component={ArrowUpRight} color="subtle" />}
+      {isExternal && (
+        <Icon size={16} component={ArrowUpRightIcon} color="subtle" />
+      )}
     </li>
   )
 }

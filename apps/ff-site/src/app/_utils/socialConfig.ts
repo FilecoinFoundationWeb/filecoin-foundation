@@ -1,8 +1,8 @@
 import {
-  GithubLogo,
-  LinkedinLogo,
-  XLogo,
-  YoutubeLogo,
+  GithubLogoIcon,
+  LinkedinLogoIcon,
+  XLogoIcon,
+  YoutubeLogoIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -11,10 +11,10 @@ import BlueskyLogo from '@/assets/logos/bluesky-logo.svg'
 
 const socialIcons = {
   bluesky: BlueskyLogo,
-  github: GithubLogo,
-  linkedin: LinkedinLogo,
-  twitter: XLogo,
-  youtube: YoutubeLogo,
+  github: GithubLogoIcon,
+  linkedin: LinkedinLogoIcon,
+  twitter: XLogoIcon,
+  youtube: YoutubeLogoIcon,
 }
 
 type SocialIconKey = keyof typeof socialIcons

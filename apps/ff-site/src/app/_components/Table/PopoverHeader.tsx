@@ -1,5 +1,5 @@
 import { Button } from '@headlessui/react'
-import { Question } from '@phosphor-icons/react/dist/ssr'
+import { QuestionIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
@@ -52,7 +52,7 @@ export function PopoverHeader({
               )}
             >
               <Icon
-                component={Question}
+                component={QuestionIcon}
                 size={TOUCH_TARGET_ICON.visibleElementSize}
               />
             </span>

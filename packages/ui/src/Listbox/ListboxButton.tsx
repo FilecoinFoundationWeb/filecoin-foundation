@@ -1,5 +1,5 @@
 import { ListboxButton as HeadlessUIListboxButton } from '@headlessui/react'
-import { CaretDown } from '@phosphor-icons/react/dist/ssr'
+import { CaretDownIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
@@ -50,7 +50,7 @@ export function ListboxButton({
         <span className="block truncate pr-6">{text}</span>
 
         <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center">
-          <Icon component={CaretDown} size={16} weight="bold" />
+          <Icon component={CaretDownIcon} size={16} weight="bold" />
         </div>
       </div>
 
@@ -60,7 +60,7 @@ export function ListboxButton({
           compactBelow ? breakpointStyles[compactBelow].compact : 'hidden',
         )}
       >
-        <Icon component={leadingIcon ?? CaretDown} />
+        <Icon component={leadingIcon ?? CaretDownIcon} />
       </div>
     </HeadlessUIListboxButton>
   )

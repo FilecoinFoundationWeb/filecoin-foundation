@@ -1,4 +1,4 @@
-import { Image } from '@phosphor-icons/react/dist/ssr'
+import { ImageIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import prettyBytes from 'pretty-bytes'
 
@@ -25,7 +25,7 @@ export function UploadInstructions({
       )}
     >
       <div className="flex flex-col items-center justify-center gap-2 p-4">
-        <Icon component={Image} size={80} weight="fill" />
+        <Icon component={ImageIcon} size={80} weight="fill" />
         <p className="max-w-xs text-center text-brand-100">
           <span className="font-bold text-brand-300 group-hover:text-brand-400">
             Upload a file

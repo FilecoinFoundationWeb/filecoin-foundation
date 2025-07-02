@@ -1,4 +1,4 @@
-import { BookOpen } from '@phosphor-icons/react/dist/ssr'
+import { BookOpenIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { useEntryView } from '@filecoin-foundation/hooks/useEntryView'
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
@@ -127,7 +127,7 @@ export function EcosystemExplorerContent({
                         href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                         text: 'Learn More',
                         icon: {
-                          component: BookOpen,
+                          component: BookOpenIcon,
                         },
                       }}
                       image={{

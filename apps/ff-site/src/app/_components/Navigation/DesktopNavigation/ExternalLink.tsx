@@ -1,6 +1,6 @@
 import type { AnchorHTMLAttributes } from 'react'
 
-import { ArrowUpRight } from '@phosphor-icons/react'
+import { ArrowUpRightIcon } from '@phosphor-icons/react'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
@@ -29,13 +29,13 @@ export function ExternalLink({
       target="_blank"
       {...rest}
     >
-      <div className="inline-flex items-center gap-1">
+      <div className="group inline-flex items-center gap-1">
         <p className="font-bold">{label}</p>
         <span className="text-brand-400 group-hover:text-brand-100">
-          <Icon component={ArrowUpRight} size={20} />
+          <Icon component={ArrowUpRightIcon} size={20} />
         </span>
       </div>
-      {description && <p className="mt-1 text-brand-300">{description}</p>}
+      {description && <p className="text-brand-300 mt-1">{description}</p>}
     </a>
   )
 }

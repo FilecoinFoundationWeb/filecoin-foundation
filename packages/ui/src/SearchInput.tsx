@@ -1,5 +1,5 @@
 import { Input, Label, Field, Button } from '@headlessui/react'
-import { MagnifyingGlass, X } from '@phosphor-icons/react/dist/ssr'
+import { MagnifyingGlassIcon, XIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
@@ -21,7 +21,7 @@ export function SearchInput({ query, onChange }: SearchInputProps) {
           onChange={(event) => onChange(event.target.value)}
         />
         <div className="search-icon peer pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-          <Icon component={MagnifyingGlass} />
+          <Icon component={MagnifyingGlassIcon} />
         </div>
         {query && (
           <Button
@@ -29,7 +29,7 @@ export function SearchInput({ query, onChange }: SearchInputProps) {
             aria-label="Clear search input"
             onClick={() => onChange('')}
           >
-            <Icon component={X} size={16} weight="bold" />
+            <Icon component={XIcon} size={16} weight="bold" />
           </Button>
         )}
       </div>

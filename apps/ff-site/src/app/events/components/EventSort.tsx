@@ -1,6 +1,6 @@
 'use client'
 
-import { CalendarBlank } from '@phosphor-icons/react'
+import { CalendarBlankIcon } from '@phosphor-icons/react'
 
 import { useListboxQueryState } from '@filecoin-foundation/hooks/useListboxQueryState'
 import { SORT_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
@@ -23,7 +23,7 @@ export function EventSort() {
     <SortListbox
       options={options}
       selected={selectedSort}
-      buttonIcon={CalendarBlank}
+      buttonIcon={CalendarBlankIcon}
       onChange={setSelectedSort}
     />
   )

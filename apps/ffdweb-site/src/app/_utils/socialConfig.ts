@@ -1,15 +1,15 @@
 import {
-  LinkedinLogo,
-  XLogo,
-  YoutubeLogo,
+  LinkedinLogoIcon,
+  XLogoIcon,
+  YoutubeLogoIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
 const socialIcons = {
-  linkedin: LinkedinLogo,
-  twitter: XLogo,
-  youtube: YoutubeLogo,
+  linkedin: LinkedinLogoIcon,
+  twitter: XLogoIcon,
+  youtube: YoutubeLogoIcon,
 }
 
 type SocialIconKey = keyof typeof socialIcons

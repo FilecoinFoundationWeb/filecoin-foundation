@@ -1,6 +1,6 @@
 'use client'
 
-import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
+import { CaretLeftIcon, CaretRightIcon, LineVerticalIcon } from '@phosphor-icons/react'
 import { useQueryState, parseAsInteger } from 'nuqs'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
@@ -44,12 +44,12 @@ export function Pagination({ pageCount }: PaginationProps) {
           }
           onClick={() => setPage(page - 1)}
         >
-          <Icon component={CaretLeft} size={20} weight="bold" />
+          <Icon component={CaretLeftIcon} size={20} weight="bold" />
           <span className="hidden sm:mx-1.5 sm:inline">Prev</span>
         </button>
 
         <div className="pagination-delimiter flex items-center">
-          <Icon component={LineVertical} weight="light" />
+          <Icon component={LineVerticalIcon} weight="light" />
         </div>
       </div>
 
@@ -80,7 +80,7 @@ export function Pagination({ pageCount }: PaginationProps) {
 
       <div className="flex">
         <div className="pagination-delimiter flex items-center">
-          <Icon component={LineVertical} weight="light" />
+          <Icon component={LineVerticalIcon} weight="light" />
         </div>
 
         <button
@@ -91,7 +91,7 @@ export function Pagination({ pageCount }: PaginationProps) {
           onClick={() => setPage(page + 1)}
         >
           <span className="hidden sm:mx-1.5 sm:inline">Next</span>
-          <Icon component={CaretRight} size={20} weight="bold" />
+          <Icon component={CaretRightIcon} size={20} weight="bold" />
         </button>
       </div>
     </nav>

@@ -1,4 +1,4 @@
-import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
+import { ArrowUpRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { BaseLink, type BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
@@ -73,7 +73,7 @@ function ButtonInner({
     <>
       {!isExternalLink && Icon && <IconComponent component={Icon} />}
       {children}
-      {isExternalLink && <IconComponent component={ArrowUpRight} size={20} />}
+      {isExternalLink && <IconComponent component={ArrowUpRightIcon} size={20} />}
     </>
   )
 }

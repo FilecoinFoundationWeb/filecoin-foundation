@@ -1,4 +1,4 @@
-import { ArrowUpRight } from '@phosphor-icons/react'
+import { ArrowUpRightIcon } from '@phosphor-icons/react'
 import { createColumnHelper } from '@tanstack/react-table'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
@@ -24,18 +24,18 @@ export const allocatorsTableColumnsData = [
               aria-label={`See more information about ${name} allocator`}
               href={link}
               title={name}
-              className="group flex items-center hover:text-brand-300 hover:underline focus:brand-outline focus:text-brand-300"
+              className="group hover:text-brand-300 focus:brand-outline focus:text-brand-300 flex items-center hover:underline"
               rel="noopener noreferrer"
             >
-              <span className="block truncate text-brand-100 group-hover:text-inherit group-focus:text-inherit">
+              <span className="text-brand-100 block truncate group-hover:text-inherit group-focus:text-inherit">
                 {name}
               </span>
-              <span className="ml-2 inline-flex self-center text-brand-300">
-                <Icon component={ArrowUpRight} size={18} />
+              <span className="text-brand-300 ml-2 inline-flex self-center">
+                <Icon component={ArrowUpRightIcon} size={18} />
               </span>
             </a>
           ) : (
-            <p title={name} className="truncate text-brand-100">
+            <p title={name} className="text-brand-100 truncate">
               {name}
             </p>
           )}
