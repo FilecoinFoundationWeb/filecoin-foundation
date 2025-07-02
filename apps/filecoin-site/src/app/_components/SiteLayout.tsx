@@ -17,7 +17,7 @@ type SiteLayoutProps = {
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="site-layout min-h-screen pt-9 tracking-wide">
+      <body className="site-layout min-h-screen tracking-wide">
         <Navigation />
         <main className="flex-1">{children}</main>
         <Footer />
