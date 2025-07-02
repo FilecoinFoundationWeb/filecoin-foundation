@@ -67,7 +67,7 @@
     "@filecoin-foundation/typescript-config": "0.0.0",
     "@testing-library/react": "^16.3.0",
     "@types/jest": "^30.0.0",
-    "jest": "^30.0.2",
+    "jest": "^30.0.3",
     "jest-environment-jsdom": "^30.0.2",
     "ts-jest": "^29.4.0"
   },
@@ -77,7 +77,7 @@
     "@filecoin-foundation/utils": "0.0.0",
     "@headlessui/react": "^2.2.4",
     "@phosphor-icons/react": "^2.1.10",
-    "@sentry/nextjs": "^9.30.0",
+    "@sentry/nextjs": "^9.34.0",
     "@tailwindcss/postcss": "^4.1.11",
     "clsx": "^2.1.1",
     "next": "^15.3.4",
