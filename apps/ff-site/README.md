@@ -8,6 +8,8 @@ This Next.js project is part of a monorepo managed by [Turborepo](https://turbor
 
 ### Useful commands
 
+The following commands are specific to the `ff-site` workspace and should be run from the root of the monorepo.
+
 | Command                                    | Action                        |
 | ------------------------------------------ | ----------------------------- |
 | `npx turbo filecoin-foundation-site#dev`   | Starts the development server |
