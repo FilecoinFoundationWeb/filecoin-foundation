@@ -44,11 +44,11 @@ export function SharePost({ articleTitle, path, baseUrl }: SharePostProps) {
               href={href}
               rel="noopener noreferrer"
               className={clsx(
-                'social-link focus:brand-outline',
+                'focus:brand-outline text-zinc-900',
                 TOUCH_TARGET.touchAreaPadding,
               )}
             >
-              <Icon component={icon} weight="light" size={32} />
+              <Icon component={icon} size={32} />
             </a>
           </Tooltip>
         </li>
