@@ -4,7 +4,7 @@ This monorepo contains the web projects for [Filecoin Foundation](https://fil.or
 
 ## Overview
 
-This codebase includes multiple [workspaces](https://docs.npmjs.com/cli/v8/using-npm/workspaces) for applications and internal packages. Applications are deployed projects while packages centralise shared code used across applications.
+This codebase includes multiple [workspaces](https://docs.npmjs.com/cli/v8/using-npm/workspaces) for applications and internal packages. Applications are deployed projects while packages centralize shared code used across applications.
 
 ### Applications
 
@@ -12,7 +12,7 @@ You can find the applications in the `apps` directory, which include:
 
 - [ff-site](apps/ff-site): The Filecoin Foundation website, live at [fil.org](https://fil.org)
 - [ffdweb-site](apps/ffdweb-site): The Filecoin Foundation for the Decentralized Web website, live at [ffdweb.org](https://ffdweb.org)
-- [uxit](apps/uxit): The public dashboard of the The Filecoin Foundation User Experience Improvement Team, live at [uxit.fil.org](https://uxit.fil.org)
+- [uxit](apps/uxit): The public dashboard of the Filecoin Foundation User Experience Improvement Team, live at [uxit.fil.org](https://uxit.fil.org)
 
 ### Packages
 
@@ -112,7 +112,7 @@ Then, create a `src` directory in the package directory and add your source file
 
 _packages/ui/package.json_
 
-Finally, to use the newly-created package in an application, add it as a dependency `manually` in the application's `package.json` file and run `npm install` from the root of the monorepo.
+Finally, to use the newly-created package in an application, add it as a dependency manually in the application's `package.json` file and run `npm install` from the root of the monorepo.
 
 For instance, to use the `@filecoin-foundation/ui` package in the `ff-site` application, add the following line to the `dependencies` section of the `apps/ff-site/package.json` file:
 
