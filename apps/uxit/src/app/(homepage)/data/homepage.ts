@@ -48,7 +48,7 @@ export const homepageCards: HomepageCard[] = [
     cta: {
       href: PATHS.SITE_AUDIT_REPORTS.path,
       text: 'View Reports',
-      baseDomain: 'filecoin.org',
+      baseDomain: 'fil.org',
       icon: {
         component: ArrowRightIcon,
         position: 'trailing',

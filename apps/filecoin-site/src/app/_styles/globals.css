@@ -13,6 +13,12 @@
   --color-brand-800: oklch(0.53 0.1592 252.62);
   --color-brand-900: oklch(0.47 0.1224 248.85);
   --color-brand-950: oklch(0.33 0.0795 249.37);
+
+  --gradient-brand: linear-gradient(
+    90deg,
+    var(--color-brand-200),
+    var(--color-brand-600)
+  );
 }
 
 @utility brand-outline {
