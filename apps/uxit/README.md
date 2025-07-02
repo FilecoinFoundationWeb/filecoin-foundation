@@ -6,6 +6,16 @@ This project is the home of the [Filecoin Foundation](https://fil.org/) User Exp
 
 This Next.js project is part of a monorepo managed by [Turborepo](https://turborepo.com/docs). To get started, refer to the [root README](../../README.md#getting-started) for installation and development instructions.
 
+### Useful commands
+
+| Command                          | Action                        |
+| -------------------------------- | ----------------------------- |
+| `npx turbo uxit#dev`             | Starts the development server |
+| `npx turbo uxit#build`           | Builds the application        |
+| `npx turbo uxit#start`           | Starts the production server  |
+| `npx turbo uxit#lint`            | Lints the code                |
+| `npm i <package> -w 'apps/uxit'` | Installs a dependency         |
+
 ## Technologies
 
 This project uses the following open-source technologies:
@@ -28,6 +38,14 @@ npm run unlighthouse
 ```
 
 Then commit the changes and push them to the repository.
+
+## Development Guidelines
+
+Check out the [development guidelines](../../README.md#development-guidelines) in the root README for more information.
+
+## Contributing
+
+We welcome contributions to the UXIT website!
 
 ## License
 
