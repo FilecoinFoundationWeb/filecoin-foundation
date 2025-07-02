@@ -43,6 +43,10 @@ Check out the [development guidelines](../../README.md#development-guidelines) i
 
 We welcome contributions to the Filecoin Foundation for the Decentralized Web website!
 
+### GitHub Workflow
+
+We try to keep each pull request small and focused. If the work requires large file changes, we break it down into smaller pieces as outlined in this article on [GitHub Protips from Sarah Vessels](https://github.blog/developer-skills/github/github-protips-tips-tricks-hacks-and-secrets-from-sarah-vessels/).
+
 ## License
 
 This project is licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
