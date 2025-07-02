@@ -62,11 +62,11 @@
 
     &::before,
     &::after {
-      @apply absolute inset-0 rounded-full border-2 border-transparent;
+      @apply absolute -inset-0.5 rounded-full border-2 border-transparent;
       content: '';
       mask:
-        linear-gradient(var(--color-white) 0 0) content-box,
-        linear-gradient(var(--color-white) 0 0);
+        linear-gradient(var(--color-white)) content-box,
+        linear-gradient(var(--color-white));
       mask-composite: exclude;
     }
 
@@ -89,17 +89,17 @@
   }
 
   .button--ghost {
-    @apply border-zinc-100 bg-zinc-100 text-zinc-900 transition-colors;
+    @apply border-none bg-zinc-100 text-zinc-900 transition-colors;
 
     &:hover {
-      @apply border-zinc-200 bg-zinc-200;
+      @apply bg-zinc-200;
     }
 
     &.button--ghost--dark {
-      @apply border-zinc-800 bg-zinc-800 text-white;
+      @apply bg-zinc-800 text-white;
 
       &:hover {
-        @apply border-zinc-700 bg-zinc-700;
+        @apply bg-zinc-700;
       }
     }
   }
