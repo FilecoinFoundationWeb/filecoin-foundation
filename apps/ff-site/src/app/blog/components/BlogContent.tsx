@@ -2,7 +2,7 @@
 
 import { useSearchParams } from 'next/navigation'
 
-import { BookOpen } from '@phosphor-icons/react'
+import { BookOpenIcon } from '@phosphor-icons/react'
 
 import { useEntryView } from '@filecoin-foundation/hooks/useEntryView'
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
@@ -132,7 +132,7 @@ export function BlogContent({ posts }: BlogContentProps) {
                         href: `${PATHS.BLOG.path}/${slug}`,
                         text: 'Read Post',
                         icon: {
-                          component: BookOpen,
+                          component: BookOpenIcon,
                         },
                       }}
                       image={{

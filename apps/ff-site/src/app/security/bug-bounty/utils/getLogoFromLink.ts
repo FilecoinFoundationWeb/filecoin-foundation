@@ -1,24 +1,24 @@
 import {
-  GithubLogo,
-  Globe,
-  LinkedinLogo,
-  XLogo,
+  GithubLogoIcon,
+  GlobeIcon,
+  LinkedinLogoIcon,
+  XLogoIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
 export function getLogoFromLink(url: string) {
   const { hostname } = new URL(url)
 
   if (hostname.includes('linkedin.com')) {
-    return LinkedinLogo
+    return LinkedinLogoIcon
   }
 
   if (hostname.includes('x.com') || hostname.includes('twitter.com')) {
-    return XLogo
+    return XLogoIcon
   }
 
   if (hostname.includes('github.com')) {
-    return GithubLogo
+    return GithubLogoIcon
   }
 
-  return Globe
+  return GlobeIcon
 }

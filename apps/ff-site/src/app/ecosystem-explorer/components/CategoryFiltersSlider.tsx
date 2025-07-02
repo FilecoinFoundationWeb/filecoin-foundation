@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 import { Button as HeadlessUIButton } from '@headlessui/react'
-import { FunnelSimple, X } from '@phosphor-icons/react'
+import { FunnelSimpleIcon, XIcon } from '@phosphor-icons/react'
 
 import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { Icon } from '@filecoin-foundation/ui/Icon'
@@ -28,19 +28,19 @@ export function CategoryFiltersSlider({
         className="border-brand-300 bg-brand-800 text-brand-300 hover:text-brand-400 focus:brand-outline flex h-full w-full items-center gap-2 rounded-lg border p-3 font-bold hover:border-current"
         onClick={openSlider}
       >
-        <Icon component={FunnelSimple} />
+        <Icon component={FunnelSimpleIcon} />
         Filters
       </HeadlessUIButton>
 
       <SlideOver open={open} setOpen={setOpen} slideFrom="left">
         <div className="flex items-center justify-between px-6 pt-6">
           <div className="flex items-center gap-2">
-            <Icon component={FunnelSimple} size={24} />
+            <Icon component={FunnelSimpleIcon} size={24} />
             <h2 className="text-xl font-bold">Filters</h2>
           </div>
 
           <IconButton
-            icon={X}
+            icon={XIcon}
             label="Close category filters"
             onClick={closeSlider}
           />

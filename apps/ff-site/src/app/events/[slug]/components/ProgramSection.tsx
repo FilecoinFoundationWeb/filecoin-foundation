@@ -1,4 +1,4 @@
-import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
+import { MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 
@@ -30,7 +30,7 @@ export function ProgramSection({ title, kicker, events }: ProgramSectionProps) {
               href: externalLink,
               text: DEFAULT_CTA_TEXT,
               icon: {
-                component: MagnifyingGlass,
+                component: MagnifyingGlassIcon,
               },
             },
           }

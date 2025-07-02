@@ -1,10 +1,9 @@
 'use client'
 
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
-import { CaretDown } from '@phosphor-icons/react'
+import { CaretDownIcon } from '@phosphor-icons/react'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
-
 
 type PopOverProps = {
   label: string
@@ -29,8 +28,8 @@ export function NavigationPopover({
         className={mainNavItemStyles}
       >
         <span>{label}</span>
-        <span className="transition-transform ui-open:rotate-180">
-          <Icon component={CaretDown} size={20} color="subtle" />
+        <span className="ui-open:rotate-180 transition-transform">
+          <Icon component={CaretDownIcon} size={20} color="subtle" />
         </span>
       </PopoverButton>
       <PopoverPanel
@@ -44,7 +43,7 @@ export function NavigationPopover({
       >
         {(props) => (
           <div
-            className="overflow-hidden rounded-2xl border border-brand-500 bg-brand-800 p-4"
+            className="border-brand-500 bg-brand-800 overflow-hidden rounded-2xl border p-4"
             onClick={(e) => {
               e.stopPropagation()
               props.close()

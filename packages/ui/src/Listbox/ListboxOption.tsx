@@ -1,7 +1,7 @@
 import { type ElementType } from 'react'
 
 import { ListboxOption as HeadlessUIListboxOption } from '@headlessui/react'
-import { Check } from '@phosphor-icons/react'
+import { CheckIcon } from '@phosphor-icons/react'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
@@ -35,8 +35,8 @@ export function ListboxOption<Value extends OptionType>({
         )}
       </span>
 
-      <span className="group-data-selected:visible invisible mb-px">
-        <Icon component={Check} size={20} />
+      <span className="invisible mb-px group-data-selected:visible">
+        <Icon component={CheckIcon} size={20} />
       </span>
     </HeadlessUIListboxOption>
   )

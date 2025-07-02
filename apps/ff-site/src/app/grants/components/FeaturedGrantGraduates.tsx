@@ -1,4 +1,4 @@
-import { BookOpen } from '@phosphor-icons/react/dist/ssr'
+import { BookOpenIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -29,7 +29,7 @@ export function FeaturedGrantGraduates({
             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
             text: 'Read More',
             icon: {
-              component: BookOpen,
+              component: BookOpenIcon,
             },
           }}
           image={{

@@ -1,5 +1,8 @@
 import type { Icon as IconType } from '@phosphor-icons/react'
-import { CaretRight, ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
+import {
+  CaretRightIcon,
+  ArrowUpRightIcon,
+} from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 
 import { type BaseLinkProps, BaseLink } from '@filecoin-foundation/ui/BaseLink'
@@ -52,8 +55,8 @@ function getIconComponent(isExternal: boolean, icon?: IconType) {
   }
 
   if (isExternal) {
-    return ArrowUpRight
+    return ArrowUpRightIcon
   }
 
-  return CaretRight
+  return CaretRightIcon
 }

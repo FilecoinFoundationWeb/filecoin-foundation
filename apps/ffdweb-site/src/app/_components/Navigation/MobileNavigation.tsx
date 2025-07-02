@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import { List, X } from '@phosphor-icons/react'
+import { ListIcon, XIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
@@ -22,7 +22,7 @@ export function MobileNavigation() {
   return (
     <div className="lg:hidden">
       <IconButton
-        icon={List}
+        icon={ListIcon}
         label="Open mobile navigation"
         onClick={openPanel}
       />
@@ -32,7 +32,7 @@ export function MobileNavigation() {
           <div className="flex items-center justify-between">
             <LogoLink height={50} />
             <IconButton
-              icon={X}
+              icon={XIcon}
               label="Close mobile navigation"
               onClick={closePanel}
             />

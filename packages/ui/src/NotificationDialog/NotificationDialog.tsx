@@ -5,7 +5,7 @@ import {
   DialogTitle,
   type DialogProps,
 } from '@headlessui/react'
-import { X } from '@phosphor-icons/react/dist/ssr'
+import { XIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
@@ -56,7 +56,7 @@ export function NotificationDialog({
             )}
             aria-label="Close notification"
           >
-            <Icon component={X} size={16} aria-hidden="true" />
+            <Icon component={XIcon} size={16} aria-hidden="true" />
           </CloseButton>
         </DialogPanel>
       </div>

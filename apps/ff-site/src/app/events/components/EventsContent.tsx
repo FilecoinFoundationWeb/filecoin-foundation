@@ -1,4 +1,4 @@
-import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
+import { MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { useEntryView } from '@filecoin-foundation/hooks/useEntryView'
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
@@ -175,7 +175,7 @@ export default function EventsContent({
                           `${PATHS.EVENTS.path}/${slug}`,
                         text: DEFAULT_CTA_TEXT,
                         icon: {
-                          component: MagnifyingGlass,
+                          component: MagnifyingGlassIcon,
                         },
                       }}
                       title={{

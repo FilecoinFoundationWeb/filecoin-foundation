@@ -1,4 +1,4 @@
-import { Clipboard, Envelope, HandWaving } from '@phosphor-icons/react/dist/ssr'
+import { ClipboardIcon, EnvelopeIcon, HandWavingIcon } from '@phosphor-icons/react/dist/ssr'
 
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
@@ -20,7 +20,7 @@ export const getInvolvedData: Array<GetInvolvedData> = [
       href: FILECOIN_FOUNDATION_URLS.events.sponsorshipsEmail,
       text: 'Email Us',
       icon: {
-        component: Envelope,
+        component: EnvelopeIcon,
       },
     },
   },
@@ -32,7 +32,7 @@ export const getInvolvedData: Array<GetInvolvedData> = [
       href: FILECOIN_FOUNDATION_URLS.events.speakerEngagementForm,
       text: 'Submit Form',
       icon: {
-        component: Clipboard,
+        component: ClipboardIcon,
       },
     },
   },
@@ -44,7 +44,7 @@ export const getInvolvedData: Array<GetInvolvedData> = [
       href: FILECOIN_FOUNDATION_URLS.events.orbitAmbassadorForm,
       text: 'Apply to Filecoin Orbit',
       icon: {
-        component: HandWaving,
+        component: HandWavingIcon,
       },
     },
   },

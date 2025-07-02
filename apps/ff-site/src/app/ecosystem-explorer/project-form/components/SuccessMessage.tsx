@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { CheckCircle } from '@phosphor-icons/react/dist/ssr'
+import { CheckCircleIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
@@ -23,7 +23,7 @@ export function SuccessMessage({ prNumber }: SuccessMessageProps) {
       <div className="max-w-[420px] space-y-6 sm:text-center">
         <div className="sm:flex sm:justify-center">
           <Icon
-            component={CheckCircle}
+            component={CheckCircleIcon}
             size={96}
             weight="fill"
             color="primary"

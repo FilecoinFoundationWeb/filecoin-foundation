@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@headlessui/react'
-import { Link } from '@phosphor-icons/react/dist/ssr'
+import { LinkIcon } from '@phosphor-icons/react/dist/ssr'
 import * as Sentry from '@sentry/nextjs'
 import { clsx } from 'clsx'
 import { useCopyToClipboard } from 'usehooks-ts'
@@ -70,7 +70,7 @@ export function CopyToClipboard({
           onClick={() => handleCopy(text)}
           aria-label={ariaLabel}
         >
-          <Icon component={Link} size={32} weight="light" />
+          <Icon component={LinkIcon} size={32} weight="light" />
         </Button>
       </Tooltip>
     </>

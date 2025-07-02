@@ -1,4 +1,4 @@
-import { FileText, UserCircle } from '@phosphor-icons/react/dist/ssr'
+import { FileTextIcon, UserCircleIcon } from '@phosphor-icons/react/dist/ssr'
 
 import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
@@ -6,7 +6,6 @@ import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextL
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
-
 
 type DeveloperSupportData = {
   heading: {
@@ -20,7 +19,7 @@ export const developerSupportData: Array<DeveloperSupportData> = [
   {
     heading: {
       title: 'Auditor Network',
-      icon: UserCircle,
+      icon: UserCircleIcon,
     },
     description: (
       <>
@@ -41,7 +40,7 @@ export const developerSupportData: Array<DeveloperSupportData> = [
   {
     heading: {
       title: 'Security Resources',
-      icon: FileText,
+      icon: FileTextIcon,
     },
     description: (
       <>

@@ -1,4 +1,4 @@
-import { Files } from '@phosphor-icons/react/dist/ssr'
+import { FilesIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
@@ -125,7 +125,7 @@ export default function About() {
                     href: link,
                     text: 'View Report',
                     icon: {
-                      component: Files,
+                      component: FilesIcon,
                     },
                   }}
                   title={{

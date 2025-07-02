@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Newspaper } from '@phosphor-icons/react/dist/ssr'
+import { NewspaperIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { Heading } from '@filecoin-foundation/ui/Heading'
@@ -84,7 +84,7 @@ export default async function Project(props: ProjectProps) {
               )}
 
               {featuredContent && (
-                <CTALink href={featuredContent} icon={Newspaper}>
+                <CTALink href={featuredContent} icon={NewspaperIcon}>
                   Read Blog Post
                 </CTALink>
               )}

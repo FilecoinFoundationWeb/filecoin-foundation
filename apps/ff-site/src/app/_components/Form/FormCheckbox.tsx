@@ -1,5 +1,5 @@
 import { Checkbox, type CheckboxProps, Field, Label } from '@headlessui/react'
-import { Check } from '@phosphor-icons/react/dist/ssr'
+import { CheckIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
@@ -40,7 +40,7 @@ export function FormCheckbox({
           )}
         >
           <span className="hidden group-data-checked:block">
-            <Icon component={Check} size={16} weight="bold" />
+            <Icon component={CheckIcon} size={16} weight="bold" />
           </span>
         </div>
       </Checkbox>
