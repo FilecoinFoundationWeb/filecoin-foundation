@@ -1,3 +1,5 @@
+import { Title } from '@/components/PageHeader/Title'
+
 export default function Blog() {
-  return <h1>Blog</h1>
+  return <Title backgroundVariant="light">Blog</Title>
 }

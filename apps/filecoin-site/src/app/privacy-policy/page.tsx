@@ -1,3 +1,5 @@
+import { Title } from '@/components/PageHeader/Title'
+
 export default function PrivacyPolicy() {
-  return <h1>Privacy Policy</h1>
+  return <Title backgroundVariant="light">Privacy Policy</Title>
 }
