@@ -1,5 +1,7 @@
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
+import { Title } from '@/components/PageHeader/Title'
+
 type BlogPostProps = {
   params: Promise<SlugParams>
 }
@@ -7,5 +9,5 @@ type BlogPostProps = {
 export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params
 
-  return <h1>Blog Post: {slug}</h1>
+  return <Title backgroundVariant="light">{slug}</Title>
 }

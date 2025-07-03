@@ -1,12 +1,17 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 
+import { Title } from '@/components/PageHeader/Title'
+
 export default function Home() {
   return (
     <PageLayout>
       <section>
-        <h1 className="text-brand-500 text-4xl font-bold">Filecoin.io V3</h1>
-        <p className="mt-4 text-lg text-zinc-600">
-          This is the new Filecoin.io website, built with Next.js and Tailwind.
+        <Title backgroundVariant="light">
+          Preserving humanity’s most important information
+        </Title>
+        <p>
+          Keep your data accessible, verifiable, and free from centralized
+          control with the world’s largest decentralized storage network.
         </p>
       </section>
     </PageLayout>

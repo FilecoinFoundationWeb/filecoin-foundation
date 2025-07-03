@@ -1,3 +1,5 @@
+import { Title } from '@/components/PageHeader/Title'
+
 export default function TermsOfUse() {
-  return <h1>Terms of Use</h1>
+  return <Title backgroundVariant="light">Terms of Use</Title>
 }
