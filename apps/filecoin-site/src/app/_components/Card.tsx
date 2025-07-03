@@ -7,6 +7,7 @@ import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
+import { Heading } from './Heading'
 import { IconBadge } from './IconBadge'
 
 type IconPosition = 'top' | 'side'
@@ -15,7 +16,7 @@ type CardProps = {
   as: 'li' | 'article' | 'div'
   title: string
   description: string
-  variant: 'dark' | 'light'
+  backgroundVariant: 'dark' | 'light'
   cta?: CTAProps
   icon?: {
     component: IconProps['component']
@@ -27,11 +28,11 @@ export function Card({
   as: Tag,
   title,
   description,
-  variant,
+  backgroundVariant,
   cta,
   icon,
 }: CardProps) {
-  const styles = getVariantClasses(variant === 'dark')
+  const styles = getVariantClasses(backgroundVariant === 'dark')
 
   return (
     <Tag className={getLayoutClasses(icon)}>
@@ -39,7 +40,13 @@ export function Card({
 
       <div className="space-y-10">
         <div className="space-y-3">
-          <h3 className={clsx('text-xl font-medium', styles.title)}>{title}</h3>
+          <Heading
+            tag="h3"
+            variant="xl-medium"
+            backgroundVariant={backgroundVariant}
+          >
+            {title}
+          </Heading>
           <p className={clsx('text-xl', styles.description)}>{description}</p>
         </div>
 
@@ -66,7 +73,6 @@ export function Card({
 
 function getVariantClasses(isDark: boolean) {
   return {
-    title: isDark ? 'text-white' : 'text-zinc-950',
     description: isDark ? 'text-zinc-400' : 'text-zinc-600',
     ctaText: isDark ? 'text-white' : 'text-zinc-600',
   }
