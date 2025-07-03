@@ -35,16 +35,7 @@ export function Card({
 
   return (
     <Tag className={getLayoutClasses(icon)}>
-      {icon && (
-        <IconBadge
-          size={14}
-          className="flex-shrink-0"
-          icon={{
-            component: icon.component,
-            size: 30,
-          }}
-        />
-      )}
+      {icon && <IconBadge className="flex-shrink-0" icon={icon.component} />}
 
       <div className="space-y-10">
         <div className="space-y-3">
@@ -59,11 +50,9 @@ export function Card({
             className="flex max-w-max items-center gap-6"
           >
             <IconBadge
-              size={12}
+              size="sm"
               className="flex-shrink-0"
-              icon={{
-                component: cta.icon?.component || ArrowRightIcon,
-              }}
+              icon={cta.icon?.component || ArrowRightIcon}
             />
             <span className={clsx('font-semibold', styles.ctaText)}>
               {cta.text}

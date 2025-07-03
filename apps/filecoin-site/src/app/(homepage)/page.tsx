@@ -1,8 +1,5 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 
-import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
-
 export default function Home() {
   return (
     <PageLayout>
