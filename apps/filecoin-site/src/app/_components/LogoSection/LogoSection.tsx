@@ -1,3 +1,5 @@
+import { Heading } from '@/components/Heading'
+
 import { type LogoItemProps, LogoItem } from './LogoItem'
 
 type LogoSectionProps = {
@@ -9,9 +11,15 @@ export function LogoSection({ logos, title }: LogoSectionProps) {
   return (
     <section aria-labelledby={title ? 'logo-section-title' : undefined}>
       {title && (
-        <h2 id="logo-section-title" className="sr-only">
+        <Heading
+          id="logo-section-title"
+          className="sr-only"
+          tag="h2"
+          variant="xl-regular"
+          backgroundVariant="light"
+        >
           {title}
-        </h2>
+        </Heading>
       )}
       <ul className="flex flex-wrap justify-start gap-x-16 gap-y-10">
         {logos.map((logoItem, index) => (
