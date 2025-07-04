@@ -13,11 +13,11 @@ export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params
 
   const data = await getBlogPostData(slug)
-  const { content } = data
+  const { title, content } = data
 
   return (
     <>
-      <Title backgroundVariant="light">{slug}</Title>
+      <Title backgroundVariant="light">{title}</Title>
 
       <MarkdownContent>{content}</MarkdownContent>
     </>
