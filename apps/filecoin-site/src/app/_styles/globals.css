@@ -104,11 +104,6 @@
     }
   }
 
-  /* SITE LAYOUT */
-  .site-layout {
-    @apply bg-white text-zinc-900;
-  }
-
   /* SLIDE OVER */
   .slide-over-panel {
     @apply bg-white;

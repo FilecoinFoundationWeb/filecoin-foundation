@@ -6,12 +6,10 @@ import { MobileFooter } from './MobileFooter'
 
 export function Footer() {
   return (
-    <Section as="footer" bg="dark">
+    <Section as="footer" backgroundVariant="dark">
       <Container>
-        <div className="flex flex-col">
-          <DesktopFooter />
-          <MobileFooter />
-        </div>
+        <DesktopFooter />
+        <MobileFooter />
       </Container>
     </Section>
   )
