@@ -1,10 +1,6 @@
 import Link from 'next/link'
 
-import clsx from 'clsx'
-
 import { legalLinks } from '@/constants/navigation'
-
-import { CONTAINER_SPACING } from '../Footer'
 
 import { FilecoinFoundationLogo } from './FilecoinFoundationLogo'
 
@@ -12,12 +8,7 @@ export function LegalSection() {
   return (
     <>
       <hr className="border-zinc-400/10" />
-      <div
-        className={clsx(
-          'flex flex-col-reverse items-center justify-between gap-16 sm:flex-row',
-          CONTAINER_SPACING,
-        )}
-      >
+      <div className="flex flex-col-reverse items-center justify-between gap-16 sm:flex-row">
         <span className="flex items-center gap-3 text-xs text-zinc-400">
           Managed by <FilecoinFoundationLogo />
         </span>

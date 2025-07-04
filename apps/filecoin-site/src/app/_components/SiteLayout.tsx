@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 
-import { SiteLayout as SharedSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
+import { BreakpointDebugger } from '@filecoin-foundation/ui/BreakpointDebugger'
 
 import { Footer } from '@/components/Footer/Footer'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -16,8 +16,14 @@ type SiteLayoutProps = {
 
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
-    <SharedSiteLayout font={inter} Navigation={Navigation} Footer={Footer}>
-      {children}
-    </SharedSiteLayout>
+    <html lang="en" className={inter.className}>
+      <body className="flex min-h-screen flex-col bg-white tracking-wide text-zinc-900">
+        <Navigation />
+        <main className="flex-1">{children}</main>
+        <Footer />
+
+        {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
+      </body>
+    </html>
   )
 }
