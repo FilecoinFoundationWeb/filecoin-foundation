@@ -1,3 +1,9 @@
+import { Title } from '@/components/PageHeader/Title'
+
 export default function OfferStorage() {
-  return <h1>Offer Storage</h1>
+  return (
+    <section className="bg-zinc-950">
+      <Title backgroundVariant="dark">Offer storage</Title>
+    </section>
+  )
 }

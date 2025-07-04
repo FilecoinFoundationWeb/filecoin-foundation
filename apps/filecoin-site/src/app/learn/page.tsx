@@ -1,3 +1,5 @@
+import { Title } from '@/components/PageHeader/Title'
+
 export default function Learn() {
-  return <h1>Learn</h1>
+  return <Title backgroundVariant="light">Learn</Title>
 }
