@@ -1,9 +1,9 @@
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
-import { getBlogPostData } from '@/utils/getBlogPostData'
-
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { Title } from '@/components/PageHeader/Title'
+
+import { getBlogPostData } from '../utils/getBlogPostData'
 
 type BlogPostProps = {
   params: Promise<SlugParams>
