@@ -25,7 +25,7 @@ export function MobileNavigation() {
       />
 
       <SlideOver open={open} setOpen={setOpen}>
-        <div className="flex flex-col gap-12 p-8">
+        <div className="flex flex-col gap-12 px-6 py-8">
           <div className="flex items-center justify-between">
             <LogoLink logo={LogoIcon} />
             <IconButton
