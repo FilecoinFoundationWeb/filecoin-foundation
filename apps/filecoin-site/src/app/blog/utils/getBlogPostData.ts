@@ -2,7 +2,7 @@ import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 
 import { PATHS } from '@/constants/paths'
 
-import { BlogPostFrontmatterSchema } from '@/schemas/BlogPostFrontmatterSchema'
+import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
 const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesPath
 
