@@ -10,6 +10,9 @@ export type StaticPath =
   | '/privacy-policy'
   | '/terms-of-use'
 
+export const CONTENT_ROOT = 'src/content'
+export const MARKDOWN_EXTENSION = '.md'
+
 type ContentCollectionName = 'blog'
 
 type DynamicPath = {
@@ -20,7 +23,9 @@ export type DynamicPathValues = DynamicPath[keyof DynamicPath]
 export type PathValues = StaticPath | DynamicPathValues
 
 export const PATHS = {
-  BLOG: createPathConfig('/blog', 'Blog'),
+  BLOG: createPathConfig('/blog', 'Blog', {
+    hasEntries: true,
+  }),
   BUILD_ON_FILECOIN: createPathConfig(
     '/build-on-filecoin',
     'Build on Filecoin',
