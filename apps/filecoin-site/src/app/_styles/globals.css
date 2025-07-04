@@ -104,9 +104,10 @@
         @apply bg-zinc-700;
       }
     }
-    /* SLIDE OVER */
-    .slide-over-panel {
-      @apply bg-white;
-    }
+  }
+
+  /* SLIDE OVER */
+  .slide-over-panel {
+    @apply bg-white;
   }
 }
