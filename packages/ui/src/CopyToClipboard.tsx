@@ -3,7 +3,6 @@
 import { Button } from '@headlessui/react'
 import { LinkIcon } from '@phosphor-icons/react/dist/ssr'
 import * as Sentry from '@sentry/nextjs'
-import { clsx } from 'clsx'
 import { useCopyToClipboard } from 'usehooks-ts'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
@@ -61,9 +60,7 @@ export function CopyToClipboard({
       />
       <Tooltip description="Copy link to clipboard" side="bottom">
         <Button
-          className={clsx(
-            'copy-to-clipboard-button focus:brand-outline cursor-pointer',
-          )}
+          className="copy-to-clipboard-button focus:brand-outline cursor-pointer"
           onClick={() => handleCopy(text)}
           aria-label={ariaLabel}
         >

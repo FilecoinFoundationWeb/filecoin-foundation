@@ -55,7 +55,7 @@ export function SharePost({ articleTitle, path, baseUrl }: SharePostProps) {
               aria-label={`Share ${articleTitle} on ${label}`}
               href={href}
               rel="noopener noreferrer"
-              className={clsx('focus:brand-outline social-link')}
+              className="focus:brand-outline social-link"
             >
               <Icon component={icon} size={20} />
             </a>
