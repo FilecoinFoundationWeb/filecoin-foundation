@@ -113,7 +113,7 @@
 
   /* TOOLTIP */
   .tooltip {
-    @apply rounded-xl border border-zinc-200 bg-white shadow-sm;
+    @apply rounded-xl border border-zinc-200 bg-white text-zinc-950 shadow-sm;
 
     .tooltip-arrow {
       @apply fill-zinc-300;

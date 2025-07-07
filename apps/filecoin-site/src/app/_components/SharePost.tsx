@@ -31,7 +31,12 @@ export function SharePost({ articleTitle, path, baseUrl }: SharePostProps) {
   })
 
   return (
-    <ul className={clsx('flex flex-wrap items-center gap-1.5')}>
+    <ul
+      className={clsx(
+        'flex flex-wrap items-center gap-1.5',
+        TOUCH_TARGET.touchAreaOffset,
+      )}
+    >
       <li className={TOUCH_TARGET.touchAreaPadding}>
         <CopyToClipboard
           iconSize={20}
