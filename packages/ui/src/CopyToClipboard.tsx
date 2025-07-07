@@ -7,6 +7,7 @@ import { clsx } from 'clsx'
 import { useCopyToClipboard } from 'usehooks-ts'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import {
   NotificationDialog,
   useNotificationDialog,
@@ -16,22 +17,19 @@ import {
   NOTIFICATION_DIALOG_DURATION_MS,
   NOTIFICATION_DIALOG_ERROR_DURATION_MS,
 } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
-import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
 type CopyToClipboardProps = {
   text: string
   notificationTitle: string
   ariaLabel: string
-}
-
-const TOUCH_TARGET: TouchTarget = {
-  touchAreaPadding: 'p-2',
+  iconSize?: IconProps['size']
 }
 
 export function CopyToClipboard({
   text,
   notificationTitle,
   ariaLabel = 'Copy link to clipboard',
+  iconSize = 32,
 }: CopyToClipboardProps) {
   const [, copy] = useCopyToClipboard()
 
@@ -65,12 +63,11 @@ export function CopyToClipboard({
         <Button
           className={clsx(
             'copy-to-clipboard-button focus:brand-outline cursor-pointer',
-            TOUCH_TARGET.touchAreaPadding,
           )}
           onClick={() => handleCopy(text)}
           aria-label={ariaLabel}
         >
-          <Icon component={LinkIcon} size={32} weight="light" />
+          <Icon component={LinkIcon} size={iconSize} weight="light" />
         </Button>
       </Tooltip>
     </>

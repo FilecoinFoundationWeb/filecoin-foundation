@@ -188,7 +188,7 @@
 
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
-    @apply hover:text-brand-400;
+    @apply hover:text-brand-400 p-2;
   }
 
   /* FILTER SIDEBAR */
