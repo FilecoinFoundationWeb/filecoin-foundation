@@ -20,6 +20,8 @@ const TOUCH_TARGET: TouchTarget = {
   touchAreaOffset: '-m-2',
 }
 
+const ICON_SIZE = 20
+
 export function SharePost({ articleTitle, path, baseUrl }: SharePostProps) {
   const articleUrl = `${baseUrl}${path}`
 
@@ -39,7 +41,7 @@ export function SharePost({ articleTitle, path, baseUrl }: SharePostProps) {
     >
       <li className={TOUCH_TARGET.touchAreaPadding}>
         <CopyToClipboard
-          iconSize={20}
+          iconSize={ICON_SIZE}
           text={articleUrl}
           notificationTitle="Link copied to clipboard!"
           ariaLabel={`Copy post link: ${articleTitle}`}
@@ -57,7 +59,7 @@ export function SharePost({ articleTitle, path, baseUrl }: SharePostProps) {
               rel="noopener noreferrer"
               className="focus:brand-outline social-link"
             >
-              <Icon component={icon} size={20} />
+              <Icon component={icon} size={ICON_SIZE} />
             </a>
           </Tooltip>
         </li>
