@@ -1,8 +1,9 @@
 import { Title } from '@/components/PageHeader/Title'
+import { PageSection } from '@/components/PageSection'
 
 export default function BuildOnFilecoin() {
   return (
-    <section>
+    <PageSection backgroundVariant="light">
       <Title backgroundVariant="light">
         Build on Filecoin with programmable storage
       </Title>
@@ -11,6 +12,6 @@ export default function BuildOnFilecoin() {
         Machine (FVM) and power dApps with verifiable, persistent data—perfect
         for AI, cross-chain storage, and storage-native apps.
       </p>
-    </section>
+    </PageSection>
   )
 }

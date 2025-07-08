@@ -1,5 +1,10 @@
 import { Title } from '@/components/PageHeader/Title'
+import { PageSection } from '@/components/PageSection'
 
 export default function PrivacyPolicy() {
-  return <Title backgroundVariant="light">Privacy Policy</Title>
+  return (
+    <PageSection backgroundVariant="light">
+      <Title backgroundVariant="light">Privacy Policy</Title>
+    </PageSection>
+  )
 }

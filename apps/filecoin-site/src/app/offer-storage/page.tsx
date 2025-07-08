@@ -1,9 +1,10 @@
 import { Title } from '@/components/PageHeader/Title'
+import { PageSection } from '@/components/PageSection'
 
 export default function OfferStorage() {
   return (
-    <section className="bg-zinc-950">
+    <PageSection backgroundVariant="dark">
       <Title backgroundVariant="dark">Offer storage</Title>
-    </section>
+    </PageSection>
   )
 }
