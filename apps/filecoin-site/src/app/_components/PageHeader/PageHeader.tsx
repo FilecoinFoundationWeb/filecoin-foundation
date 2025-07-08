@@ -1,17 +1,24 @@
 import Image, { type StaticImageData } from 'next/image'
 
-import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
-
-import { Button } from '@/components/Button'
+import { Button, type ButtonProps } from '@/components/Button'
 import { Kicker } from '@/components/Kicker'
+
+import type { BackgroundVariant } from '@/styles/theme'
 
 import { Description, type DescriptionProps } from './Description'
 import { Title, type TitleProps } from './Title'
 
+type CTAProps = {
+  href: string
+  variant: ButtonProps['variant']
+  ariaLabel: string
+  text: string
+}
+
 type PageHeaderProps = {
   title: TitleProps['children']
   description: DescriptionProps['children']
-  backgroundVariant: 'light' | 'dark'
+  backgroundVariant: BackgroundVariant
   backgroundImage?: StaticImageData
   kicker?: string
   cta?: CTAProps
@@ -50,7 +57,11 @@ export function PageHeader({
         </div>
 
         {cta && (
-          <Button href={cta.href} aria-label={cta.ariaLabel}>
+          <Button
+            href={cta.href}
+            variant={cta.variant}
+            aria-label={cta.ariaLabel}
+          >
             {cta.text}
           </Button>
         )}

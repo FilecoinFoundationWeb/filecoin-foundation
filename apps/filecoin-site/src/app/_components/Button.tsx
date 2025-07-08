@@ -10,7 +10,7 @@ const variantClasses = {
   ghostDark: 'button--ghost button--ghost--dark',
 } as const
 
-type ButtonProps = LocalButtonProps<typeof variantClasses>
+export type ButtonProps = LocalButtonProps<typeof variantClasses>
 
 export function Button({ children, variant, ...props }: ButtonProps) {
   return (
