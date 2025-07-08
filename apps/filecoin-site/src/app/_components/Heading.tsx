@@ -19,7 +19,7 @@ const variantStyles = {
 }
 
 const textColorStyles = {
-  light: 'text-zinc-900',
+  light: 'text-zinc-950',
   dark: 'text-white',
 }
 
