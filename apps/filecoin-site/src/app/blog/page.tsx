@@ -20,7 +20,7 @@ export default async function Blog() {
       >
         <Button
           href="/blog/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin"
-          variant="primary"
+          variant="primaryDark"
         >
           Read more
         </Button>
