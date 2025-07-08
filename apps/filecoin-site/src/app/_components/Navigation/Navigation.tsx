@@ -9,7 +9,7 @@ import { MobileNavigation } from './MobileNavigation'
 
 export function Navigation() {
   return (
-    <Section as="header">
+    <Section as="header" backgroundVariant="transparent">
       <Container>
         <nav className="my-9 flex items-center justify-between lg:justify-start lg:gap-24">
           <div className="shrink-0">
