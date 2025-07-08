@@ -2,6 +2,7 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { Title } from '@/components/PageHeader/Title'
+import { PageSection } from '@/components/PageSection'
 
 import { getBlogPostData } from '../utils/getBlogPostData'
 
@@ -16,10 +17,9 @@ export default async function BlogPost({ params }: BlogPostProps) {
   const { title, content } = data
 
   return (
-    <>
-      <Title backgroundVariant="light">{title}</Title>
-
+    <PageSection backgroundVariant="light">
+      <Title color="dark">{title}</Title>
       <MarkdownContent>{content}</MarkdownContent>
-    </>
+    </PageSection>
   )
 }

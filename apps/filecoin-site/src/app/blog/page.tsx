@@ -10,7 +10,7 @@ export default async function Blog() {
 
   return (
     <PageSection backgroundVariant="light">
-      <Title backgroundVariant="light">Blog</Title>
+      <Title color="dark">Blog</Title>
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>

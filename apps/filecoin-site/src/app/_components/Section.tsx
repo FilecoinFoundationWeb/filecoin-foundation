@@ -6,6 +6,11 @@ export type SectionProps = {
   children: React.ReactNode
 }
 
+export type LimitedBackgroundVariant = Extract<
+  typeof backgroundVariants,
+  'light' | 'dark'
+>
+
 const backgroundVariants = {
   dark: 'bg-zinc-950',
   gray: 'bg-gray-200',

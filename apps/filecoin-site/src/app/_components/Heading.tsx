@@ -7,7 +7,7 @@ type HeadingTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 export type HeadingProps<T extends HeadingTag = HeadingTag> = {
   tag: T
   variant: '6xl-medium' | '5xl-medium' | 'xl-medium' | 'xl-regular'
-  backgroundVariant: 'light' | 'dark'
+  color: 'light' | 'dark'
   children: string
 } & Omit<ComponentPropsWithoutRef<T>, 'children'>
 
@@ -19,14 +19,14 @@ const variantStyles = {
 }
 
 const colorStyles = {
-  light: 'text-zinc-950',
-  dark: 'text-white',
+  light: 'text-white',
+  dark: 'text-zinc-950',
 }
 
 export function Heading({
   tag,
   variant,
-  backgroundVariant,
+  color,
   className,
   children,
 }: HeadingProps) {
@@ -34,7 +34,7 @@ export function Heading({
 
   const combinedClassName = clsx(
     variantStyles[variant],
-    colorStyles[backgroundVariant],
+    colorStyles[color],
     className,
   )
 

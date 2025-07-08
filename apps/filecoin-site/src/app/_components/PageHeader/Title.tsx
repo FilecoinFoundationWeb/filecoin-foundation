@@ -1,17 +1,13 @@
-import { Heading } from '@/components/Heading'
+import { type HeadingProps, Heading } from '@/components/Heading'
 
 type TitleProps = {
-  backgroundVariant: 'light' | 'dark'
+  color: HeadingProps['color']
   children: string
 }
 
-export function Title({ backgroundVariant, children }: TitleProps) {
+export function Title({ color, children }: TitleProps) {
   return (
-    <Heading
-      tag="h1"
-      variant="5xl-medium"
-      backgroundVariant={backgroundVariant}
-    >
+    <Heading tag="h1" variant="5xl-medium" color={color}>
       {children}
     </Heading>
   )

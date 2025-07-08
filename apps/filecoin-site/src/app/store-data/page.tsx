@@ -4,7 +4,7 @@ import { PageSection } from '@/components/PageSection'
 export default function StoreData() {
   return (
     <PageSection backgroundVariant="dark">
-      <Title backgroundVariant="dark">
+      <Title color="light">
         Secure, decentralized storage for data that matters
       </Title>
       <p>

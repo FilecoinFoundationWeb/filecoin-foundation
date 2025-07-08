@@ -4,7 +4,7 @@ import { PageSection } from '@/components/PageSection'
 export default function Home() {
   return (
     <PageSection backgroundVariant="transparent">
-      <Title backgroundVariant="light">
+      <Title color="dark">
         Preserving humanity's most important information
       </Title>
       <p>

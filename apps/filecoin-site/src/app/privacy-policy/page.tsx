@@ -4,7 +4,7 @@ import { PageSection } from '@/components/PageSection'
 export default function PrivacyPolicy() {
   return (
     <PageSection backgroundVariant="light">
-      <Title backgroundVariant="light">Privacy Policy</Title>
+      <Title color="dark">Privacy Policy</Title>
     </PageSection>
   )
 }
