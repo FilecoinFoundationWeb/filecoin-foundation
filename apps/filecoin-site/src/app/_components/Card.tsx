@@ -41,16 +41,7 @@ export function Card({
 
       <div className="space-y-10">
         <div className="space-y-3">
-          <Heading
-            tag="h3"
-            variant="xl-medium"
-            color={
-              backgroundVariant === 'dark' ||
-              backgroundVariant === 'transparent'
-                ? 'light'
-                : 'dark'
-            }
-          >
+          <Heading tag="h3" variant="xl-medium">
             {title}
           </Heading>
           <p className={clsx('text-xl', styles.description)}>{description}</p>

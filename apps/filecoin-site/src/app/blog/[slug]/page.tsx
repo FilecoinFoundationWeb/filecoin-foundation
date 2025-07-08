@@ -18,7 +18,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
   return (
     <PageSection backgroundVariant="light">
-      <Title color="dark">{title}</Title>
+      <Title>{title}</Title>
       <MarkdownContent>{content}</MarkdownContent>
     </PageSection>
   )
