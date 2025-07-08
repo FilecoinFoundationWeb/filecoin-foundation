@@ -1,7 +1,9 @@
 import { Heading } from '@/components/Heading'
 
-type TitleProps = {
-  backgroundVariant: 'light' | 'dark'
+import type { BackgroundVariant } from '@/styles/theme'
+
+export type TitleProps = {
+  backgroundVariant: BackgroundVariant
   children: string
 }
 

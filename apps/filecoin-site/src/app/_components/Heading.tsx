@@ -2,6 +2,8 @@ import { type ComponentPropsWithoutRef } from 'react'
 
 import { clsx } from 'clsx'
 
+import { textColorStyles } from '@/styles/theme'
+
 type HeadingTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 
 export type HeadingProps<T extends HeadingTag = HeadingTag> = {
@@ -18,11 +20,6 @@ const variantStyles = {
   'xl-regular': 'text-xl font-normal',
 }
 
-const colorStyles = {
-  light: 'text-zinc-950',
-  dark: 'text-white',
-}
-
 export function Heading({
   tag,
   variant,
@@ -34,7 +31,7 @@ export function Heading({
 
   const combinedClassName = clsx(
     variantStyles[variant],
-    colorStyles[backgroundVariant],
+    textColorStyles[backgroundVariant],
     className,
   )
 
