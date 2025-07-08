@@ -17,22 +17,22 @@ type CTAProps = {
 
 type PageHeaderProps = {
   title: TitleProps['children']
+  kicker?: KickerProps['children']
   description?: DescriptionProps['children']
   backgroundVariant?: BackgroundVariant
   backgroundImage?: StaticImageData
   imageOverlay?: boolean
-  kicker?: KickerProps['children']
   cta?: CTAProps
 }
 
 export function PageHeader({
   title,
+  kicker,
   description,
+  backgroundVariant = 'light',
   backgroundImage,
   imageOverlay = false,
-  kicker,
   cta,
-  backgroundVariant = 'light',
 }: PageHeaderProps) {
   return (
     <header className="relative flex flex-col items-start gap-10 px-14 py-32">
