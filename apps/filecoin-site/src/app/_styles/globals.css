@@ -128,4 +128,13 @@
   .copy-to-clipboard-button {
     @apply rounded-full border-2 border-zinc-200 p-1 text-zinc-950;
   }
+
+  /* NOTIFICATION DIALOG */
+  .notification {
+    @apply rounded-lg border border-zinc-200 bg-zinc-50 text-zinc-950;
+
+    .notification-close-button {
+      @apply rounded-md text-zinc-700 hover:text-zinc-950;
+    }
+  }
 }
