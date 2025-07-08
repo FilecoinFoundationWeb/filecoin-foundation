@@ -1,8 +1,10 @@
 import { clsx } from 'clsx'
 
+import type { BackgroundVariant } from '@/styles/theme'
+
 export type KickerProps = {
   children: React.ReactNode
-  backgroundVariant: 'light' | 'dark'
+  backgroundVariant: BackgroundVariant
   size?: 'sm' | 'md'
 }
 

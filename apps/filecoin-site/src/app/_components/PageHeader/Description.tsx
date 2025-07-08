@@ -8,12 +8,14 @@ export type DescriptionProps = {
 }
 
 const textColorStyles = {
-  light: 'text-zinc-600',
-  dark: 'text-white',
+  light: 'text-zinc-950',
+  dark: 'text-zinc-50',
 }
 
 export function Description({ backgroundVariant, children }: DescriptionProps) {
-  const combinedClassName = clsx(textColorStyles[backgroundVariant])
-
-  return <p className={clsx('text-xl', combinedClassName)}>{children}</p>
+  return (
+    <p className={clsx('text-xl', textColorStyles[backgroundVariant])}>
+      {children}
+    </p>
+  )
 }
