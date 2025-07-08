@@ -9,6 +9,7 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { Heading } from './Heading'
 import { IconBadge } from './IconBadge'
+import type { SectionProps } from './Section'
 
 type IconPosition = 'top' | 'side'
 
@@ -16,7 +17,7 @@ type CardProps = {
   as: 'li' | 'article' | 'div'
   title: string
   description: string
-  backgroundVariant: 'dark' | 'light'
+  backgroundVariant: SectionProps['backgroundVariant']
   cta?: CTAProps
   icon?: {
     component: IconProps['component']
@@ -40,11 +41,7 @@ export function Card({
 
       <div className="space-y-10">
         <div className="space-y-3">
-          <Heading
-            tag="h3"
-            variant="xl-medium"
-            backgroundVariant={backgroundVariant}
-          >
+          <Heading tag="h3" variant="xl-medium">
             {title}
           </Heading>
           <p className={clsx('text-xl', styles.description)}>{description}</p>

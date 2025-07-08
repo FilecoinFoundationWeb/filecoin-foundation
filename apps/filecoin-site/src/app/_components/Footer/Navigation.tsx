@@ -7,7 +7,7 @@ export function Navigation() {
   return (
     <nav
       aria-label="Footer navigation"
-      className="grid grid-cols-2 gap-10 gap-y-10 sm:grid-cols-3"
+      className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3"
     >
       {Object.entries(footerNavigationItems).map(([title, items]) => (
         <div key={title} className="space-y-4">

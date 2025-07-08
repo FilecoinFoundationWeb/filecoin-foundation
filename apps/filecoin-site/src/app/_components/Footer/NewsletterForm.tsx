@@ -4,7 +4,7 @@ import { Icon } from '@filecoin-foundation/ui/Icon'
 
 export function NewsletterForm() {
   return (
-    <form className="flex min-w-[100px] flex-col gap-2 text-white">
+    <form className="flex flex-col gap-2 text-white">
       <label htmlFor="newsletter-email" className="text-sm font-medium">
         Sign up for Filecoin updates
       </label>
