@@ -19,7 +19,7 @@ export default async function Blog() {
         backgroundImage={headerImage}
       >
         <Button
-          href="/blog/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin"
+          href="/blog/introducing-proof-of-data"
           variant="primaryDark"
         >
           Read more
