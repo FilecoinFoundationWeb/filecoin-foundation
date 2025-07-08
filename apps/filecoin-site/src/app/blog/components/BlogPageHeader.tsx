@@ -4,20 +4,20 @@ import type { StaticImageData } from 'next/image'
 import { Description } from '@/components/PageHeader/Description'
 import { Title } from '@/components/PageHeader/Title'
 
-import { Badge } from './Badge'
+import { Kicker } from './Kicker'
 
 type PageHeaderProps = {
   title: string
   description: string
   children: React.ReactNode
-  tag: string
+  kicker: string
   backgroundImage?: StaticImageData
 }
 
 export function BlogPageHeader({
   title,
   description,
-  tag,
+  kicker,
   backgroundImage,
   children,
 }: PageHeaderProps) {
@@ -37,7 +37,7 @@ export function BlogPageHeader({
         </>
       )}
       <div className="flex max-w-2xl flex-col gap-6">
-        <Badge backgroundVariant={backgroundVariant}>{tag}</Badge>
+        <Kicker backgroundVariant={backgroundVariant}>{kicker}</Kicker>
         <Title backgroundVariant={backgroundVariant}>{title}</Title>
         <Description backgroundVariant={backgroundVariant}>
           {description}

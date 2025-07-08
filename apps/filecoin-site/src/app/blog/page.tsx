@@ -15,7 +15,7 @@ export default async function Blog() {
       <BlogPageHeader
         title="Introducing Proof of Data Possession (PDP): Verifiable Hot Storage on Filecoin"
         description="Filecoin introduces verifiable hot storage with Proof of Data Possession, enabling fast, on-demand access while maintaining cryptographic integrity."
-        tag="Latest News"
+        kicker="Latest News"
         backgroundImage={headerImage}
       >
         <Button

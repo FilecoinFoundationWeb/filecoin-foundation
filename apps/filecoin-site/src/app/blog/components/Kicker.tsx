@@ -1,6 +1,6 @@
 import { clsx } from 'clsx'
 
-export type BadgeProps = {
+export type KickerProps = {
   children: React.ReactNode
   backgroundVariant?: 'light' | 'dark'
 }
@@ -10,7 +10,7 @@ const colorStyles = {
   dark: 'text-white',
 }
 
-export function Badge({ children, backgroundVariant = 'dark' }: BadgeProps) {
+export function Kicker({ children, backgroundVariant = 'dark' }: KickerProps) {
   return (
     <span
       className={clsx('font-mono text-base', colorStyles[backgroundVariant])}
