@@ -1,10 +1,13 @@
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
-import { Title } from '@/components/PageHeader/Title'
 import { PageSection } from '@/components/PageSection'
 
+import { BlogPostHeader } from '../components/BlogPostHeader'
+import { Categories } from '../components/Categories'
 import { getBlogPostData } from '../utils/getBlogPostData'
+
+import headerImage from '@/assets/images/042425-PDP_BlogHeader.webp'
 
 type BlogPostProps = {
   params: Promise<SlugParams>
@@ -18,7 +21,9 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
   return (
     <PageSection backgroundVariant="light">
-      <Title>{title}</Title>
+      <BlogPostHeader image={{ src: headerImage.src, alt: '' }}>
+        <Categories categories={data.categories} />
+      </BlogPostHeader>
       <MarkdownContent>{content}</MarkdownContent>
     </PageSection>
   )
