@@ -12,10 +12,10 @@ export type LimitedBackgroundVariant = Extract<
 >
 
 const backgroundVariants = {
-  dark: 'bg-zinc-950',
-  gray: 'bg-gray-200',
-  light: 'bg-white',
-  transparent: 'bg-transparent',
+  dark: 'bg-zinc-950 text-white',
+  gray: 'bg-gray-200 text-zinc-950',
+  light: 'bg-white text-zinc-950',
+  transparent: 'bg-transparent text-zinc-950',
 } as const
 
 export function Section({
