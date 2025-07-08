@@ -1,11 +1,13 @@
 import Image, { type StaticImageData } from 'next/image'
 
+import {
+  DescriptionText,
+  type DescriptionProps,
+} from '@filecoin-foundation/ui/DescriptionText'
+
 import { Button, type ButtonProps } from '@/components/Button'
 import { Kicker, type KickerProps } from '@/components/Kicker'
 
-import type { BackgroundVariant } from '@/styles/theme'
-
-import { Description, type DescriptionProps } from './Description'
 import { Title, type TitleProps } from './Title'
 
 type CTAProps = {
@@ -19,7 +21,6 @@ type PageHeaderProps = {
   title: TitleProps['children']
   kicker?: KickerProps['children']
   description?: DescriptionProps['children']
-  backgroundVariant?: BackgroundVariant
   backgroundImage?: StaticImageData
   imageOverlay?: boolean
   cta?: CTAProps
@@ -29,7 +30,6 @@ export function PageHeader({
   title,
   kicker,
   description,
-  backgroundVariant = 'light',
   backgroundImage,
   imageOverlay = false,
   cta,
@@ -51,17 +51,9 @@ export function PageHeader({
       )}
       <div className="flex flex-col items-start gap-10">
         <div className="flex max-w-2xl flex-col gap-6">
-          {kicker && (
-            <Kicker size="md" backgroundVariant={backgroundVariant}>
-              {kicker}
-            </Kicker>
-          )}
-          <Title backgroundVariant={backgroundVariant}>{title}</Title>
-          {description && (
-            <Description backgroundVariant={backgroundVariant}>
-              {description}
-            </Description>
-          )}
+          {kicker && <Kicker size="md">{kicker}</Kicker>}
+          <Title>{title}</Title>
+          {description && <DescriptionText>{description}</DescriptionText>}
         </div>
 
         {cta && (

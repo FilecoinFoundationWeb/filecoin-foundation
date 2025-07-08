@@ -1,16 +1,8 @@
 import { clsx } from 'clsx'
 
-import type { BackgroundVariant } from '@/styles/theme'
-
 export type KickerProps = {
   children: string | Array<string>
-  backgroundVariant: BackgroundVariant
   size?: 'sm' | 'md'
-}
-
-const colorStyles = {
-  light: 'text-zinc-800',
-  dark: 'text-zinc-50',
 }
 
 const sizeStyles = {
@@ -18,14 +10,9 @@ const sizeStyles = {
   md: 'text-base',
 }
 
-export function Kicker({
-  children,
-  backgroundVariant,
-  size = 'md',
-}: KickerProps) {
+export function Kicker({ children, size = 'md' }: KickerProps) {
   const combinedClassName = clsx(
     'font-mono text-base capitalize',
-    colorStyles[backgroundVariant],
     sizeStyles[size],
   )
 
