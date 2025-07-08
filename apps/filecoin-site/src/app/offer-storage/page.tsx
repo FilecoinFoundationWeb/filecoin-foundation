@@ -4,7 +4,7 @@ import { PageSection } from '@/components/PageSection'
 export default function OfferStorage() {
   return (
     <PageSection backgroundVariant="dark">
-      <Title color="light">Offer storage</Title>
+      <Title>Offer storage</Title>
     </PageSection>
   )
 }

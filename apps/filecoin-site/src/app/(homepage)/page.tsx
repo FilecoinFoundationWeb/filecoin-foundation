@@ -27,9 +27,7 @@ export default function Home() {
   return (
     <>
       <PageSection backgroundVariant="transparent">
-        <Title color="dark">
-          Preserving humanity's most important information
-        </Title>
+        <Title>Preserving humanity's most important information</Title>
         <DescriptionText>
           Keep your data accessible, verifiable, and free from centralized
           control with the world's largest decentralized storage network.
@@ -69,7 +67,7 @@ export default function Home() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <Heading tag="h2" variant="6xl-medium" color="light">
+        <Heading tag="h2" variant="6xl-medium">
           Build apps better with resilient storage
         </Heading>
         <DescriptionText>Open. Scalable. Built for the future.</DescriptionText>
@@ -99,7 +97,7 @@ export default function Home() {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        <Heading tag="h2" variant="6xl-medium" color="dark">
+        <Heading tag="h2" variant="6xl-medium">
           Store your data with confidence
         </Heading>
         <p>
@@ -120,7 +118,7 @@ export default function Home() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <Heading tag="h2" variant="6xl-medium" color="light">
+        <Heading tag="h2" variant="6xl-medium">
           Power a more open, resilient web
         </Heading>
         <DescriptionText>
@@ -156,7 +154,7 @@ export default function Home() {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        <Heading tag="h2" variant="6xl-medium" color="dark">
+        <Heading tag="h2" variant="6xl-medium">
           Mission-driven, built to scale, verifiable by design
         </Heading>
         <DescriptionText>
@@ -212,7 +210,7 @@ export default function Home() {
       </PageSection>
 
       <PageSection backgroundVariant="gray">
-        <Heading tag="h2" variant="6xl-medium" color="dark">
+        <Heading tag="h2" variant="6xl-medium">
           Latest news
         </Heading>
         <DescriptionText>
@@ -223,7 +221,7 @@ export default function Home() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <Heading tag="h2" variant="6xl-medium" color="light">
+        <Heading tag="h2" variant="6xl-medium">
           Join the community
         </Heading>
         <DescriptionText>
