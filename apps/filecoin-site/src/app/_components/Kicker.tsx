@@ -2,13 +2,13 @@ import { clsx } from 'clsx'
 
 export type KickerProps = {
   children: React.ReactNode
-  backgroundVariant?: 'light' | 'dark'
+  backgroundVariant: 'light' | 'dark'
   size?: 'sm' | 'md'
 }
 
 const colorStyles = {
-  light: 'text-zinc-950',
-  dark: 'text-white',
+  light: 'text-zinc-800',
+  dark: 'text-zinc-50',
 }
 
 const sizeStyles = {
@@ -18,7 +18,7 @@ const sizeStyles = {
 
 export function Kicker({
   children,
-  backgroundVariant = 'dark',
+  backgroundVariant,
   size = 'md',
 }: KickerProps) {
   const combinedClassName = clsx(
@@ -28,4 +28,3 @@ export function Kicker({
   )
   return <span className={combinedClassName}>{children}</span>
 }
-

@@ -1,14 +1,17 @@
 import { Container } from '@/components/Container'
-import { Title } from '@/components/PageHeader/Title'
+import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 export default function Home() {
   return (
     <Container>
       <PageSection>
-        <Title backgroundVariant="light">
-          Preserving humanity's most important information
-        </Title>
+        <PageHeader
+          description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
+          title="Preserving humanity's most important information"
+          backgroundVariant="light"
+          kicker="Filecoin"
+        />
         <p>
           Keep your data accessible, verifiable, and free from centralized
           control with the world's largest decentralized storage network.

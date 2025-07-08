@@ -2,8 +2,6 @@ import { type ComponentPropsWithoutRef } from 'react'
 
 import { clsx } from 'clsx'
 
-import { textColorStyles } from '@/styles/theme'
-
 type HeadingTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 
 export type HeadingProps<T extends HeadingTag = HeadingTag> = {
@@ -18,6 +16,11 @@ const variantStyles = {
   '5xl-medium': 'text-5xl font-medium',
   'xl-medium': 'text-xl font-medium',
   'xl-regular': 'text-xl font-normal',
+}
+
+const textColorStyles = {
+  light: 'text-zinc-900',
+  dark: 'text-white',
 }
 
 export function Heading({

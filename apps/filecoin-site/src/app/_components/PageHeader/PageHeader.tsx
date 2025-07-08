@@ -1,7 +1,7 @@
 import Image, { type StaticImageData } from 'next/image'
 
 import { Button, type ButtonProps } from '@/components/Button'
-import { Kicker } from '@/components/Kicker'
+import { Kicker, type KickerProps } from '@/components/Kicker'
 
 import type { BackgroundVariant } from '@/styles/theme'
 
@@ -17,10 +17,10 @@ type CTAProps = {
 
 type PageHeaderProps = {
   title: TitleProps['children']
-  description: DescriptionProps['children']
-  backgroundVariant: BackgroundVariant
+  description?: DescriptionProps['children']
+  backgroundVariant?: BackgroundVariant
   backgroundImage?: StaticImageData
-  kicker?: string
+  kicker?: KickerProps['children']
   cta?: CTAProps
 }
 
@@ -30,10 +30,10 @@ export function PageHeader({
   backgroundImage,
   kicker,
   cta,
-  backgroundVariant,
+  backgroundVariant = 'light',
 }: PageHeaderProps) {
   return (
-    <header className="relative flex flex-col items-start gap-10 px-32 py-44">
+    <header className="relative flex flex-col items-start gap-10 py-32">
       {backgroundImage && (
         <>
           <Image
@@ -46,8 +46,12 @@ export function PageHeader({
         </>
       )}
       <div>
-        <div className="flex flex-col gap-6">
-          {kicker && <Kicker size="md">{kicker}</Kicker>}
+        <div className="flex max-w-2xl flex-col gap-6">
+          {kicker && (
+            <Kicker size="md" backgroundVariant={backgroundVariant}>
+              {kicker}
+            </Kicker>
+          )}
           <Title backgroundVariant={backgroundVariant}>{title}</Title>
           {description && (
             <Description backgroundVariant={backgroundVariant}>
