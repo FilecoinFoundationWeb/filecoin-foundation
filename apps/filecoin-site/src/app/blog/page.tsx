@@ -1,26 +1,38 @@
 import Link from 'next/link'
 
-import { Container } from '@/components/Container'
-import { Title } from '@/components/PageHeader/Title'
-import { PageSection } from '@/components/PageSection'
+import { Button } from '@/components/Button'
 
+import { BlogPageHeader } from './components/BlogPageHeader'
 import { getBlogPostsData } from './utils/getBlogPostData'
+
+import headerImage from '@/assets/images/042425-PDP_BlogHeader.webp'
 
 export default async function Blog() {
   const posts = await getBlogPostsData()
 
   return (
-    <Container>
-      <PageSection>
-        <Title backgroundVariant="light">Blog</Title>
-        <ul>
-          {posts.map((post) => (
-            <li key={post.slug}>
-              <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </PageSection>
-    </Container>
+    <>
+      <BlogPageHeader
+        title="Introducing Proof of Data Possession (PDP): Verifiable Hot Storage on Filecoin"
+        description="Filecoin introduces verifiable hot storage with Proof of Data Possession, enabling fast, on-demand access while maintaining cryptographic integrity."
+        tag="Latest News"
+        backgroundImage={headerImage}
+      >
+        <Button
+          href="/blog/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin"
+          variant="primary"
+        >
+          Read more
+        </Button>
+      </BlogPageHeader>
+
+      <ul>
+        {posts.map((post) => (
+          <li key={post.slug}>
+            <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+          </li>
+        ))}
+      </ul>
+    </>
   )
 }
