@@ -4,18 +4,12 @@ import {
   DescriptionText,
   type DescriptionProps,
 } from '@filecoin-foundation/ui/DescriptionText'
+import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
-import { Button, type ButtonProps } from '@/components/Button'
+import { Button } from '@/components/Button'
 import { Kicker, type KickerProps } from '@/components/Kicker'
 
 import { Title, type TitleProps } from './Title'
-
-type CTAProps = {
-  href: string
-  variant: ButtonProps['variant']
-  ariaLabel: string
-  text: string
-}
 
 type PageHeaderProps = {
   title: TitleProps['children']
@@ -57,11 +51,7 @@ export function PageHeader({
         </div>
 
         {cta && (
-          <Button
-            href={cta.href}
-            variant={cta.variant}
-            aria-label={cta.ariaLabel}
-          >
+          <Button href={cta.href} aria-label={cta.ariaLabel}>
             {cta.text}
           </Button>
         )}
