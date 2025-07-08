@@ -1,15 +1,21 @@
 import { clsx } from 'clsx'
 
 export type SectionProps = {
-  children: React.ReactNode
+  backgroundVariant: keyof typeof backgroundVariants
   as?: React.ElementType
-  backgroundVariant?: keyof typeof backgroundVariants
+  children: React.ReactNode
 }
 
+export type LimitedBackgroundVariant = Extract<
+  typeof backgroundVariants,
+  'light' | 'dark'
+>
+
 const backgroundVariants = {
-  transparent: 'bg-transparent',
-  gray: 'bg-gray-200',
   dark: 'bg-zinc-950',
+  gray: 'bg-gray-200',
+  light: 'bg-white',
+  transparent: 'bg-transparent',
 } as const
 
 export function Section({

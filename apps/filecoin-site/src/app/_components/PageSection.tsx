@@ -2,11 +2,11 @@ import { Container } from '@/components/Container'
 import { Section, type SectionProps } from '@/components/Section'
 
 type PageSectionProps = {
-  backgroundVariant?: SectionProps['backgroundVariant']
+  backgroundVariant: SectionProps['backgroundVariant']
   children: React.ReactNode
 }
 
-export function PageSection({ children, backgroundVariant }: PageSectionProps) {
+export function PageSection({ backgroundVariant, children }: PageSectionProps) {
   return (
     <Section backgroundVariant={backgroundVariant}>
       <Container>
