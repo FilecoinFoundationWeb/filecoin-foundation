@@ -1,5 +1,5 @@
 type SectionDividerProps = {
-  variant: 'light' | 'subtle'
+  variant: keyof typeof styles
 }
 
 const styles = {
