@@ -1,30 +1,60 @@
 import Image from 'next/image'
 
-import type { ImageProps } from '@filecoin-foundation/utils/types/imageType'
+import { Heading } from '@/components/Heading'
+
+import { BlogPostContainer } from './BlogPostContainer'
+import { Categories } from './Categories'
 
 type BlogPostHeaderProps = {
-  image: ImageProps
-  children: React.ReactNode
+  image: string
+  categories: Array<string> | string
+  author: string
+  date: Date
+  title: string
 }
 
-export function BlogPostHeader({ image, children }: BlogPostHeaderProps) {
+export function BlogPostHeader({
+  image,
+  categories,
+  title,
+  author,
+  date,
+}: BlogPostHeaderProps) {
   return (
-    <header className="space-y-10">
-      <div className="relative min-h-80">
+    <header>
+      <div className="relative mb-10 min-h-80">
         <Image
           fill
           priority
           quality={100}
-          src={image.src}
-          alt={image.alt}
+          src={image}
+          alt=""
           className="object-cover"
           sizes="100vw"
         />
       </div>
-      <div className="m-auto max-w-4xl space-y-10">
-        <div className="flex justify-between">{children}</div>
-        <hr className="border-zinc-200" />
-      </div>
+
+      <BlogPostContainer>
+        <div className="flex justify-between">
+          <Categories categories={categories} />
+          <p>Share Post Component</p>
+        </div>
+
+        <hr className="mt-10 mb-16 border-zinc-200" />
+
+        <p className="mb-8 font-mono text-sm text-zinc-800">
+          {author},{' '}
+          {date.toLocaleDateString('en-US', {
+            dateStyle: 'long',
+          })}
+        </p>
+
+        <div className="mb-8">
+          <Heading tag="h1" variant="4xl-medium">
+            {title}
+          </Heading>
+        </div>
+      </BlogPostContainer>
     </header>
   )
 }
