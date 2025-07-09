@@ -2,7 +2,7 @@ import { clsx } from 'clsx'
 
 export type KickerProps = {
   children: string | Array<string>
-  size?: 'sm' | 'md'
+  size?: keyof typeof sizeStyles
 }
 
 const sizeStyles = {
