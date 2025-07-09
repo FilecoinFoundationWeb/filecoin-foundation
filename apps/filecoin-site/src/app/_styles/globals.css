@@ -111,7 +111,7 @@
   }
 
   .tag-label {
-    @apply font-mono text-sm capitalize;
+    @apply font-mono text-sm text-zinc-800 capitalize;
   }
 
   /* SLIDE OVER */

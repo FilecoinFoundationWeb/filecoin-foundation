@@ -1,18 +1,13 @@
 import { clsx } from 'clsx'
 
-import {
-  CardDescription,
-  type CardDescriptionProps,
-} from '@filecoin-foundation/ui/Card/CardDescription'
+import { type CardDescriptionProps } from '@filecoin-foundation/ui/Card/CardDescription'
 import {
   CardImage,
   type CardImageProps,
 } from '@filecoin-foundation/ui/Card/CardImage'
 import { CardLink } from '@filecoin-foundation/ui/Card/CardLink'
-import {
-  CardTitle,
-  type CardTitleProps,
-} from '@filecoin-foundation/ui/Card/CardTitle'
+import { type CardTitleProps } from '@filecoin-foundation/ui/Card/CardTitle'
+import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { type MetaDataType } from '@filecoin-foundation/ui/Meta'
 import {
   type TagGroupProps,
@@ -20,6 +15,8 @@ import {
 } from '@filecoin-foundation/ui/TagComponents'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { type ExtendedCTAProps } from '@filecoin-foundation/utils/types/ctaType'
+
+import { Heading } from '@/components/Heading'
 
 export type CardProps = {
   title: {
@@ -33,11 +30,6 @@ export type CardProps = {
   image?: CardImageProps
   author?: string
   date?: string
-}
-
-type MetaDataProps = {
-  author: string
-  date: string
 }
 
 export function BlogCard({
@@ -60,10 +52,12 @@ export function BlogCard({
 
       <div className="card-content flex flex-col gap-4 py-4">
         {tags && <TagGroup tags={tags} />}
-        <CardTitle tag={title.tag}>{title.text}</CardTitle>
+        <Heading tag="h3" variant="xl-medium">
+          {title.text}
+        </Heading>
 
         <div className={clsx(cta && 'mb-10')}>
-          {description && <CardDescription {...description} />}
+          {description && <DescriptionText>{description.text}</DescriptionText>}
 
           {(author || date) && (
             <div className="mt-6 flex items-center gap-2 font-mono text-sm text-zinc-600">
@@ -79,4 +73,3 @@ export function BlogCard({
     </article>
   )
 }
-
