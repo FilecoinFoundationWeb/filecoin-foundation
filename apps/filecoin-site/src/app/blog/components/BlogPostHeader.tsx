@@ -21,7 +21,7 @@ export function BlogPostHeader({
   date,
 }: BlogPostHeaderProps) {
   return (
-    <header>
+    <header className="mb-8">
       <div className="relative mb-10 min-h-80">
         <Image
           fill
@@ -49,11 +49,9 @@ export function BlogPostHeader({
           })}
         </p>
 
-        <div className="mb-8">
-          <Heading tag="h1" variant="4xl-medium">
-            {title}
-          </Heading>
-        </div>
+        <Heading tag="h1" variant="4xl-medium">
+          {title}
+        </Heading>
       </BlogPostContainer>
     </header>
   )
