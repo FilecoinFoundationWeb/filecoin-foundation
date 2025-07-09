@@ -12,7 +12,7 @@ const sizeStyles = {
 
 export function Kicker({ children, size = 'md' }: KickerProps) {
   const combinedClassName = clsx(
-    'font-mono text-base capitalize',
+    'font-mono capitalize',
     sizeStyles[size],
   )
 
