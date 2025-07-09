@@ -5,7 +5,7 @@ import {
   FormLabelDescription,
   type FormFieldProps,
   type FormLabelDescriptionProps,
-} from '@filecoin-foundation/ui/Form'
+} from '@filecoin-foundation/ui/FormField'
 
 import { SelectedFile } from './SelectedFile'
 import { UploadInstructions } from './UploadInstructions'

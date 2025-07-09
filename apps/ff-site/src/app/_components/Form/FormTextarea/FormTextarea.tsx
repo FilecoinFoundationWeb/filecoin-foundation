@@ -15,7 +15,7 @@ import {
   formFieldStyle,
   FormLabelDescription,
   type FormLabelDescriptionProps,
-} from '@filecoin-foundation/ui/Form'
+} from '@filecoin-foundation/ui/FormField'
 
 import { CharacterCounter } from './CharacterCounter'
 

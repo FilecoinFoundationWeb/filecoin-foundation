@@ -1,4 +1,4 @@
-import { FormField } from '@filecoin-foundation/ui/Form'
+import { FormField } from '@filecoin-foundation/ui/FormField'
 import { Listbox } from '@filecoin-foundation/ui/Listbox'
 import { ListboxButton } from '@filecoin-foundation/ui/Listbox/ListboxButton'
 import { ListboxGroupHeader } from '@filecoin-foundation/ui/Listbox/ListboxGroupHeader'

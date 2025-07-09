@@ -26,6 +26,8 @@
     "./FilterListbox": "./src/FilterListbox.tsx",
     "./FilterSidebar": "./src/FilterSidebar.tsx",
     "./Form": "./src/Form/index.ts",
+    "./FormInput": "./src/FormInput/index.ts",
+    "./FormField": "./src/FormField/index.ts",
     "./GlobalError": "./src/GlobalError.tsx",
     "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx",
@@ -86,6 +88,7 @@
     "postcss": "^8.5.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hook-form": "^7.59.0",
     "schema-dts": "^1.1.5",
     "tailwindcss": "^4.1.11",
     "usehooks-ts": "^3.1.0"

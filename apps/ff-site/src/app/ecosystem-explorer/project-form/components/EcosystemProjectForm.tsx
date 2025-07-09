@@ -5,18 +5,19 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import prettyBytes from 'pretty-bytes'
 import { useForm } from 'react-hook-form'
 
+import { ControlledForm } from '@filecoin-foundation/ui/Form'
 import {
+  FormField,
   FormLabel,
   FormError,
   formFieldStyle,
-} from '@filecoin-foundation/ui/Form'
+} from '@filecoin-foundation/ui/FormField'
+import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { Button } from '@/components/Button'
-import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormCheckbox } from '@/components/Form/ControlledFormCheckbox'
 import { ControlledFormFileInput } from '@/components/Form/ControlledFormFileInput'
-import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
 import { ControlledFormListbox } from '@/components/Form/ControlledFormListbox'
 import { ControlledFormListboxWithGroups } from '@/components/Form/ControlledFormListboxWithGroups'
 import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea'
@@ -69,12 +70,13 @@ export function EcosystemProjectForm({
         title="Personal Information"
         description="We'll use this to verify your site updates and reach out to you in case of questions."
       >
-        <ControlledFormInput<EcosystemProjectFormData>
-          name="name"
-          label="Name"
-          placeholder="Your Name"
-          disabled={isSubmitting}
-        />
+        <FormField label="Name">
+          <ControlledFormInput<EcosystemProjectFormData>
+            name="name"
+            placeholder="Your Name"
+            disabled={isSubmitting}
+          />
+        </FormField>
         <ControlledFormInput<EcosystemProjectFormData>
           name="email"
           label="Email"

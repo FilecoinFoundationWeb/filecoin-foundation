@@ -1,4 +1,7 @@
-import { FormField, type FormFieldProps } from '@filecoin-foundation/ui/Form'
+import {
+  FormField,
+  type FormFieldProps,
+} from '@filecoin-foundation/ui/FormField'
 import { type IconProps } from '@filecoin-foundation/ui/Icon'
 import { Listbox } from '@filecoin-foundation/ui/Listbox'
 import { ListboxButton } from '@filecoin-foundation/ui/Listbox/ListboxButton'
