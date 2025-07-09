@@ -20,18 +20,17 @@ import { PATHS } from '@/constants/paths'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
-import { Title } from '@/components/PageHeader/Title'
+import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 export default function Home() {
   return (
     <>
       <PageSection backgroundVariant="transparent">
-        <Title>Preserving humanity's most important information</Title>
-        <DescriptionText>
-          Keep your data accessible, verifiable, and free from centralized
-          control with the world's largest decentralized storage network.
-        </DescriptionText>
+        <PageHeader
+          description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
+          title="Preserving humanity's most important information"
+        />
         <CardGrid as="ul" cols="lgThree">
           <Card
             as="li"

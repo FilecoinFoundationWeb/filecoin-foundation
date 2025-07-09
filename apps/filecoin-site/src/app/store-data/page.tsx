@@ -5,7 +5,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
-import { Title } from '@/components/PageHeader/Title'
+import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { filecoinFeatures } from './data/filecoinFeatures'
@@ -16,16 +16,15 @@ export default function StoreData() {
   return (
     <>
       <PageSection backgroundVariant="dark">
-        <Title>Secure, decentralized storage for data that matters</Title>
-
-        <DescriptionText>
-          A powerful and dynamic distributed cloud storage network for your
-          data.
-        </DescriptionText>
-
-        <Button href="" variant="primaryDark">
-          Explore storage solutions
-        </Button>
+        <PageHeader
+          title="Secure, decentralized storage for data that matters"
+          description="A powerful and dynamic distributed cloud storage network for your data."
+          cta={
+            <Button href="" variant="primaryDark">
+              Explore storage solutions
+            </Button>
+          }
+        />
       </PageSection>
 
       <PageSection backgroundVariant="dark">
