@@ -1,8 +1,7 @@
-import { Card } from '@filecoin-foundation/ui/Card/Card'
-
 import { Title } from '@/components/PageHeader/Title'
 import { PageSection } from '@/components/PageSection'
 
+import { BlogCard } from './components/BlogCard'
 import blogPostsData from './test-data.json'
 
 export default async function Blog() {
@@ -11,11 +10,12 @@ export default async function Blog() {
       <Title>Blog</Title>
       <ul>
         {blogPostsData.map((post: any) => (
-          <Card
+          <BlogCard
             key={post.title}
-            as="li"
             title={{ text: post.title }}
             description={{ text: post.excerpt }}
+            author={post.author}
+            date={post.date}
             tags={post.categories.map((category: string) => ({
               text: category,
             }))}

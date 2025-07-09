@@ -174,10 +174,6 @@
     }
   }
 
-  .card-content {
-    @apply px-4;
-  }
-
   .card-image {
     @apply rounded-lg px-1 pt-1;
 
