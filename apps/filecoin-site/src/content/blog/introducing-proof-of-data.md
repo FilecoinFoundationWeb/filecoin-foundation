@@ -6,7 +6,7 @@ excerpt: >-
   enabling fast, on-demand access while maintaining cryptographic integrity.
 share_image: assets/images/042425-PDP_BlogHeader.webp
 image:
-  url: assets/images/042425-PDP_BlogHeader.webp
+  url: /assets/images/042425-PDP_BlogHeader.webp
 date: 2025-05-01T17:55:01.524Z
 categories:
   - updates
