@@ -41,6 +41,10 @@
   border-color: transparent;
 }
 
+@utility icon-button {
+  @apply rounded-full border-2 border-zinc-200 p-1 text-zinc-950;
+}
+
 @layer components {
   .button {
     @apply rounded-full px-6 py-4 text-base font-medium;
@@ -120,13 +124,14 @@
     }
   }
 
+  /* SOCIAL LINKS */
   .social-link {
-    @apply rounded-full border-2 border-zinc-200 p-1 text-zinc-950;
+    @apply icon-button;
   }
 
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
-    @apply rounded-full border-2 border-zinc-200 p-1 text-zinc-950;
+    @apply icon-button;
   }
 
   /* NOTIFICATION DIALOG */

@@ -3,10 +3,10 @@
 import { Button } from '@headlessui/react'
 import { LinkIcon } from '@phosphor-icons/react/dist/ssr'
 import * as Sentry from '@sentry/nextjs'
+import { clsx } from 'clsx'
 import { useCopyToClipboard } from 'usehooks-ts'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
-import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import {
   NotificationDialog,
   useNotificationDialog,
@@ -16,19 +16,22 @@ import {
   NOTIFICATION_DIALOG_DURATION_MS,
   NOTIFICATION_DIALOG_ERROR_DURATION_MS,
 } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
+import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
 type CopyToClipboardProps = {
   text: string
   notificationTitle: string
   ariaLabel: string
-  iconSize?: IconProps['size']
+}
+
+const TOUCH_TARGET: TouchTarget = {
+  touchAreaPadding: 'p-2',
 }
 
 export function CopyToClipboard({
   text,
   notificationTitle,
   ariaLabel = 'Copy link to clipboard',
-  iconSize = 32,
 }: CopyToClipboardProps) {
   const [, copy] = useCopyToClipboard()
 
@@ -60,11 +63,14 @@ export function CopyToClipboard({
       />
       <Tooltip description="Copy link to clipboard" side="bottom">
         <Button
-          className="copy-to-clipboard-button focus:brand-outline cursor-pointer"
+          className={clsx(
+            'copy-to-clipboard-button focus:brand-outline cursor-pointer',
+            TOUCH_TARGET.touchAreaPadding,
+          )}
           onClick={() => handleCopy(text)}
           aria-label={ariaLabel}
         >
-          <Icon component={LinkIcon} size={iconSize} weight="light" />
+          <Icon component={LinkIcon} size={32} weight="light" />
         </Button>
       </Tooltip>
     </>

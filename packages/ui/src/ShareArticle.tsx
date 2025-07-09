@@ -8,7 +8,6 @@ import { Tooltip } from '@filecoin-foundation/ui/Tooltip/Tooltip'
 import { generateShareArticleLinks } from '@filecoin-foundation/utils/generateShareArticleLinks'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
-
 type ShareArticleProps = {
   articleTitle: string
   path: string
@@ -24,7 +23,7 @@ const TOUCH_TARGET: TouchTarget = {
 export function ShareArticle({
   articleTitle,
   path,
-  sectionTitle = 'Share Article',
+  sectionTitle,
   baseUrl,
 }: ShareArticleProps) {
   const articleUrl = `${baseUrl}${path}`
@@ -37,7 +36,11 @@ export function ShareArticle({
 
   return (
     <div className="space-y-3">
-      <p className="share-article-title font-bold capitalize">{sectionTitle}</p>
+      {sectionTitle && (
+        <p className="share-article-title font-bold capitalize">
+          {sectionTitle}
+        </p>
+      )}
       <ul
         className={clsx(
           'flex flex-wrap items-center gap-6',
