@@ -1,11 +1,11 @@
 import { Input, type InputProps as HeadlessInputProps } from '@headlessui/react'
 
-import { FormField, type FormFieldProps } from '@/components/Form/FormField'
-
 import {
+  FormField,
   FormLabelDescription,
+  type FormFieldProps,
   type FormLabelDescriptionProps,
-} from '../FormLabelDescription'
+} from '@filecoin-foundation/ui/Form'
 
 import { SelectedFile } from './SelectedFile'
 import { UploadInstructions } from './UploadInstructions'
@@ -65,7 +65,7 @@ export function FormFileInput({
                 accept={accept.join(',')}
                 invalid={Boolean(error)}
                 multiple={false}
-                className="peer absolute inset-0 z-10 opacity-0 ui-disabled:cursor-not-allowed ui-not-disabled:cursor-pointer"
+                className="peer ui-disabled:cursor-not-allowed ui-not-disabled:cursor-pointer absolute inset-0 z-10 opacity-0"
                 onChange={loadFile}
               />
               <UploadInstructions

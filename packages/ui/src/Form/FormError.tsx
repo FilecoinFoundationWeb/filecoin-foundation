@@ -3,7 +3,7 @@ import type { PropsWithChildren } from 'react'
 import { Description } from '@headlessui/react'
 
 export type FormErrorProps = {
-  error?: string
+  error: string | undefined
 }
 
 export function FormError({ error }: FormErrorProps) {
@@ -20,6 +20,6 @@ FormError.Container = function Container({ children }: PropsWithChildren) {
 
 FormError.Message = function Message({ error }: Pick<FormErrorProps, 'error'>) {
   return (
-    <Description className="text-nowrap text-brand-error">{error}</Description>
+    <Description className="text-brand-error text-nowrap">{error}</Description>
   )
 }

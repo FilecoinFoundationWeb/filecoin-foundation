@@ -1,3 +1,4 @@
+import { FormField, type FormFieldProps } from '@filecoin-foundation/ui/Form'
 import { type IconProps } from '@filecoin-foundation/ui/Icon'
 import { Listbox } from '@filecoin-foundation/ui/Listbox'
 import { ListboxButton } from '@filecoin-foundation/ui/Listbox/ListboxButton'
@@ -10,8 +11,6 @@ import {
   type ListboxOptionsProps,
 } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
 import { type SpacingValue } from '@filecoin-foundation/utils/types/tailwindTypes'
-
-import { FormField, type FormFieldProps } from '@/components/Form/FormField'
 
 export type FormListboxProps = {
   value: OptionType

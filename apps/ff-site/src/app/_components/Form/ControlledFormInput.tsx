@@ -7,7 +7,7 @@ import {
   type FieldPathByValue,
 } from 'react-hook-form'
 
-import { FormInput, type FormInputProps } from '@/components/Form/FormInput'
+import { FormInput, type FormInputProps } from '@filecoin-foundation/ui/Form'
 
 type ExcludedReactHookFormProps =
   | 'defaultValue'

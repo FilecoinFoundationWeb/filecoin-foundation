@@ -5,6 +5,11 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import prettyBytes from 'pretty-bytes'
 import { useForm } from 'react-hook-form'
 
+import {
+  FormLabel,
+  FormError,
+  formFieldStyle,
+} from '@filecoin-foundation/ui/Form'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { Button } from '@/components/Button'
@@ -15,9 +20,6 @@ import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
 import { ControlledFormListbox } from '@/components/Form/ControlledFormListbox'
 import { ControlledFormListboxWithGroups } from '@/components/Form/ControlledFormListboxWithGroups'
 import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea'
-import { FormError } from '@/components/Form/FormError'
-import { formFieldStyle } from '@/components/Form/FormField'
-import { FormLabel } from '@/components/Form/FormLabel'
 import { type GroupedOption } from '@/components/Form/FormListboxWithGroups'
 
 import {

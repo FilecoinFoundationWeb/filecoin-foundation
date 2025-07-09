@@ -378,4 +378,13 @@
       @apply fill-brand-200;
     }
   }
+
+  /* FORM */
+  .text-input {
+    @apply border-brand-300 bg-brand-800 placeholder:text-brand-300 hover:border-brand-400 hover:placeholder:text-brand-400 focus:brand-outline focus:text-brand-100 focus:placeholder:text-brand-100 block w-full rounded-lg border px-3.5 py-3 data-disabled:cursor-not-allowed;
+
+    &.text-input--error {
+      @apply border-brand-error;
+    }
+  }
 }
