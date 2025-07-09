@@ -80,5 +80,5 @@ function getLayoutClasses(icon?: CardProps['icon']) {
 
   return icon.position === 'top'
     ? 'flex flex-col gap-6'
-    : 'flex flex-row items-center gap-6'
+    : 'flex flex-row items-start gap-6'
 }
