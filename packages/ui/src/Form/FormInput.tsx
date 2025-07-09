@@ -27,7 +27,7 @@ export function FormInput({
       <Input
         {...rest}
         invalid={Boolean(error)}
-        className={clsx('text-input', error && 'text-input--error')}
+        className={clsx('form-text-input', error && 'form-text-input--error')}
       />
     </FormField>
   )

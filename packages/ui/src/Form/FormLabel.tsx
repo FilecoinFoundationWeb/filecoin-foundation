@@ -21,10 +21,7 @@ export function FormLabel({
     <Label
       {...rest}
       as={as}
-      className={clsx(
-        'text-brand-100 inline-block text-base font-bold',
-        hideLabel && 'sr-only',
-      )}
+      className={clsx('form-label', hideLabel && 'sr-only')}
     >
       {label}
       {addOptionalToLabel && (
