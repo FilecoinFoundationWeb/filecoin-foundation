@@ -4,7 +4,7 @@ import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
-import { Title } from '@/components/PageHeader/Title'
+import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { blockExplorers } from './data/blockExplorers'
@@ -18,21 +18,21 @@ import { getInvolvedOptions } from './data/getInvolvedOptions'
 export default function BuildOnFilecoin() {
   return (
     <>
-      {' '}
       <PageSection backgroundVariant="dark">
-        <Title>Build on Filecoin with programmable storage</Title>
-
-        <DescriptionText>
-          Build on Filecoin — the programmable, permissionless storage network
+        <PageHeader
+          title="Build on Filecoin with programmable storage"
+          description="Build on Filecoin — the programmable, permissionless storage network
           with cryptographic verification and global redundancy by design.
           Integrate storage that safeguards data integrity at every layer and
-          scales with your application's needs.
-        </DescriptionText>
-
-        <Button href="" variant="primaryDark">
-          Explore documentation
-        </Button>
+          scales with your application's needs."
+          cta={
+            <Button href="" variant="primaryDark">
+              Explore documentation
+            </Button>
+          }
+        />
       </PageSection>
+
       <PageSection backgroundVariant="dark">
         <Heading tag="h2" variant="6xl-medium">
           Beyond storage, a foundation for next-gen applications
