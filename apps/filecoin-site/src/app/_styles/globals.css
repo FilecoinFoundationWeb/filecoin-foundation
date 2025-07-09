@@ -106,6 +106,14 @@
     }
   }
 
+  .card {
+    @apply border-none bg-white p-0;
+  }
+
+  .tag-label {
+    @apply font-mono text-sm capitalize;
+  }
+
   /* SLIDE OVER */
   .slide-over-panel {
     @apply bg-white;

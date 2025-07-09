@@ -195,6 +195,10 @@
     }
   }
 
+  .card-content {
+    @apply px-4;
+  }
+
   .card-image {
     @apply bg-white;
 
@@ -333,7 +337,7 @@
 
   /* TAGS */
   .tag-label {
-    @apply border;
+    @apply border px-2;
 
     &.tag-label--primary {
       @apply border-brand-secondary-100 bg-brand-secondary-100 text-brand-secondary-800;

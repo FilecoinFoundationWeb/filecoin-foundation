@@ -20,7 +20,7 @@ export function TagLabel({ variant = 'primary', icon, children }: TagProps) {
   return (
     <span
       className={clsx(
-        'tag-label inline-flex max-w-fit gap-1 px-2 py-1 text-xs font-semibold',
+        'tag-label inline-flex max-w-fit gap-1 py-1 text-xs font-semibold',
         variantClasses[variant],
       )}
     >

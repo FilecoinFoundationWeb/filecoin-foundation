@@ -9,7 +9,7 @@ type CTAIconProps = {
 
 export type CTAProps = {
   href: string
-  text: string
+  text?: string
   icon?: CTAIconProps
   ariaLabel?: string
 }

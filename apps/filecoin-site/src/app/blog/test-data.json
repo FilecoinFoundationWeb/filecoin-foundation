@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Introducing Curio: A Lotus-Miner Replacement for Filecoin Storage Providers",
+    "draft": false,
+    "excerpt": "Meet Curio! It's never been easier for a data center to be a Filecoin Storage Provider (SP) than with Curio, which takes care of the responsibilities of reliable SP storage proving & sealing with minimal operations time.",
+    "share_image": "/assets/images/042425-PDP_BlogHeader.webp",
+    "image": {
+      "src": "/assets/images/042425-PDP_BlogHeader.webp",
+      "alt": "Introducing Curio: A Lotus-Miner Replacement for Filecoin Storage Providers"
+    },
+    "author": "Andy Jackson",
+    "date": "2024-05-07T17:43:29.927Z",
+    "categories": ["updates", "curio"],
+    "dim_image": true
+  },
+  {
+    "title": "A Lotus-Miner Replacement for Filecoin Storage Providers",
+    "draft": false,
+    "excerpt": "Meet Curio! It's never been easier for a data center to be a Filecoin Storage Provider (SP) than with Curio, which takes care of the responsibilities of reliable SP storage proving & sealing with minimal operations time.",
+    "share_image": "/assets/images/042425-PDP_BlogHeader.webp",
+    "image": {
+      "src": "/assets/images/042425-PDP_BlogHeader.webp",
+      "alt": "Introducing Curio: A Lotus-Miner Replacement for Filecoin Storage Providers"
+    },
+    "author": "Andy Jackson",
+    "date": "2024-05-07T17:43:29.927Z",
+    "categories": ["updates"],
+    "dim_image": true
+  }
+]

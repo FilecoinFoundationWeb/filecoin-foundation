@@ -1,21 +1,33 @@
-import Link from 'next/link'
+import { Card } from '@filecoin-foundation/ui/Card/Card'
 
 import { Title } from '@/components/PageHeader/Title'
 import { PageSection } from '@/components/PageSection'
 
-import { getBlogPostsData } from './utils/getBlogPostData'
+import blogPostsData from './test-data.json'
 
 export default async function Blog() {
-  const posts = await getBlogPostsData()
-
   return (
     <PageSection backgroundVariant="light">
       <Title>Blog</Title>
       <ul>
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-          </li>
+        {blogPostsData.map((post: any) => (
+          <Card
+            key={post.title}
+            as="li"
+            title={{ text: post.title }}
+            description={{ text: post.excerpt }}
+            tags={post.categories.map((category: string) => ({
+              text: category,
+            }))}
+            image={{
+              src: post.image.src,
+              alt: post.image.alt,
+            }}
+            cta={{
+              href: `/`,
+              baseDomain: 'https://filecoin.io',
+            }}
+          />
         ))}
       </ul>
     </PageSection>

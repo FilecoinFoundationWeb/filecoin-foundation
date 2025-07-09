@@ -62,7 +62,7 @@ export function Card({
     >
       {image && <CardImage image={image} />}
 
-      <div className="flex flex-col gap-4 p-4">
+      <div className="card-content flex flex-col gap-4 py-4">
         {tags && <TagGroup tags={tags} />}
         {metaData && <Meta metaData={metaData} />}
         <CardTitle tag={title.tag}>{title.text}</CardTitle>
