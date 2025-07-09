@@ -6,6 +6,7 @@ import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { SectionDivider } from '@/components/SectionDivider'
 
 import { blockExplorers } from './data/blockExplorers'
 import { communityConnections } from './data/communityConnections'
@@ -90,7 +91,7 @@ export default function BuildOnFilecoin() {
             </CardGrid>
           </div>
 
-          <hr />
+          <SectionDivider variant="dark" />
 
           <div className="flex flex-col gap-20">
             <Heading tag="h3" variant="3xl-medium">
@@ -114,7 +115,7 @@ export default function BuildOnFilecoin() {
             </CardGrid>
           </div>
 
-          <hr />
+          <SectionDivider variant="dark" />
 
           <div className="flex flex-col gap-20">
             <div>
