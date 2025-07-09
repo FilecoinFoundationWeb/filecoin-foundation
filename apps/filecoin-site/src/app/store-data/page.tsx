@@ -1,13 +1,116 @@
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
+
+import { Button } from '@/components/Button'
+import { Card } from '@/components/Card'
+import { Heading } from '@/components/Heading'
+import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { Title } from '@/components/PageHeader/Title'
 import { PageSection } from '@/components/PageSection'
 
+import { filecoinFeatures } from './data/filecoinFeatures'
+import { storageCategories } from './data/storageCategories'
+import { trustedByLogos } from './data/trustedByLogos'
+
 export default function StoreData() {
   return (
-    <PageSection backgroundVariant="dark">
-      <Title>Secure, decentralized storage for data that matters</Title>
-      <p>
-        A powerful and dynamic distributed cloud storage network for your data.
-      </p>
-    </PageSection>
+    <>
+      <PageSection backgroundVariant="dark">
+        <Title>Secure, decentralized storage for data that matters</Title>
+
+        <DescriptionText>
+          A powerful and dynamic distributed cloud storage network for your
+          data.
+        </DescriptionText>
+
+        <Button href="" variant="primaryDark">
+          Explore storage solutions
+        </Button>
+      </PageSection>
+
+      <PageSection backgroundVariant="dark">
+        <div className="flex flex-col items-center gap-20 px-15">
+          <Heading tag="h2" variant="xl-regular">
+            Trusted by industry leaders
+          </Heading>
+
+          <LogoSection
+            title="Trusted by industry leaders"
+            logos={trustedByLogos}
+          />
+        </div>
+      </PageSection>
+
+      <PageSection backgroundVariant="dark">
+        <Heading tag="h2" variant="6xl-medium">
+          Decentralized, secure, and verifiable by design
+        </Heading>
+
+        <DescriptionText>
+          Filecoin offers a powerful alternative to traditional cloud storage —
+          combining a distributed network architecture with built-in
+          cryptographic guarantees. Your data stays available, authentic, and
+          tamper-proof over time.
+        </DescriptionText>
+
+        <CardGrid as="ul" cols="mdThree">
+          {filecoinFeatures.map(({ title, description, icon }) => (
+            <Card
+              key={title}
+              as="li"
+              backgroundVariant="dark"
+              title={title}
+              description={description}
+              icon={{
+                component: icon,
+                position: 'top',
+              }}
+            />
+          ))}
+        </CardGrid>
+      </PageSection>
+
+      <PageSection backgroundVariant="light">
+        <Heading tag="h2" variant="6xl-medium">
+          Store on Filecoin
+        </Heading>
+
+        <DescriptionText>
+          Find the perfect storage solution for your data on Filecoin.
+        </DescriptionText>
+
+        <div className="flex items-baseline gap-6 bg-zinc-100 px-9 py-6">
+          <p>Not sure what storage solution to choose?</p>
+
+          <Button href="" variant="primary">
+            Talk to an expert
+          </Button>
+        </div>
+
+        <div className="flex gap-4">
+          {storageCategories.map(({ name, description }) => (
+            <div key={name} className="flex flex-col gap-3">
+              <span className="font-medium text-zinc-600">{name}</span>
+              <span className="text-sm text-zinc-600">{description}</span>
+            </div>
+          ))}
+        </div>
+      </PageSection>
+
+      <PageSection backgroundVariant="gray">
+        <Heading tag="h2" variant="6xl-medium">
+          Don't see your project?
+        </Heading>
+
+        <DescriptionText>
+          Showcase your Filecoin storage solution in this directory and reach
+          thousands of data owners.
+        </DescriptionText>
+
+        <Button href="" variant="primary">
+          Submit your storage solution
+        </Button>
+      </PageSection>
+    </>
   )
 }

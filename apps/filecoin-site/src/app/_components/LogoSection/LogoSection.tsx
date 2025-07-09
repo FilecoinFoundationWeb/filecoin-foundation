@@ -16,7 +16,6 @@ export function LogoSection({ logos, title }: LogoSectionProps) {
           className="sr-only"
           tag="h2"
           variant="xl-regular"
-          color="dark"
         >
           {title}
         </Heading>
