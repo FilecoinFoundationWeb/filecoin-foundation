@@ -1,10 +1,12 @@
-type CategoriesProps = string | Array<string>
+type CategoriesProps = {
+  categories: string | Array<string>
+}
 
 type TagProps = {
   children: string
 }
 
-export function Categories({ categories }: { categories: CategoriesProps }) {
+export function Categories({ categories }: CategoriesProps) {
   const categoriesArray = Array.isArray(categories) ? categories : [categories]
 
   return (

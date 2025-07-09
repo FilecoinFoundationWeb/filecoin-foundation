@@ -2,12 +2,12 @@ import Image from 'next/image'
 
 import type { ImageProps } from '@filecoin-foundation/utils/types/imageType'
 
-type ArticleHeaderProps = {
+type BlogPostHeaderProps = {
   image: ImageProps
-  children?: React.ReactNode
+  children: React.ReactNode
 }
 
-export function BlogPostHeader({ image, children }: ArticleHeaderProps) {
+export function BlogPostHeader({ image, children }: BlogPostHeaderProps) {
   return (
     <header className="space-y-10">
       <div className="relative min-h-80">
@@ -21,8 +21,8 @@ export function BlogPostHeader({ image, children }: ArticleHeaderProps) {
           sizes="100vw"
         />
       </div>
-      <div className="max-w-4xl space-y-10 m-auto">
-        <div className="flex flex-col gap-4">{children}</div>
+      <div className="m-auto max-w-4xl space-y-10">
+        <div className="flex justify-between">{children}</div>
         <hr className="border-zinc-200" />
       </div>
     </header>

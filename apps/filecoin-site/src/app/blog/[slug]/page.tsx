@@ -23,6 +23,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
     <PageSection backgroundVariant="light">
       <BlogPostHeader image={{ src: headerImage.src, alt: '' }}>
         <Categories categories={data.categories} />
+        <Categories categories={data.categories} />
       </BlogPostHeader>
       <MarkdownContent>{content}</MarkdownContent>
     </PageSection>
