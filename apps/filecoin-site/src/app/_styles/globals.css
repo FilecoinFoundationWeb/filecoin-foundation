@@ -41,6 +41,10 @@
   border-color: transparent;
 }
 
+@utility icon-button {
+  @apply scale-75 rounded-full border-2 border-zinc-200 text-zinc-950;
+}
+
 @layer components {
   .button {
     @apply rounded-full px-6 py-4 text-base font-medium;
@@ -106,8 +110,41 @@
     }
   }
 
+  /* COPY TO CLIPBOARD */
+  .copy-to-clipboard-button {
+    @apply icon-button;
+  }
+
+  /* NOTIFICATION DIALOG */
+  .notification {
+    @apply rounded-lg border border-zinc-200 bg-zinc-50 text-zinc-950;
+
+    .notification-close-button {
+      @apply rounded-md text-zinc-700 hover:text-zinc-950;
+    }
+  }
+
+  /* SHARE ARTICLE */
+  .share-article-list {
+    @apply gap-4;
+  }
+
   /* SLIDE OVER */
   .slide-over-panel {
     @apply bg-white;
+  }
+
+  /* TOOLTIP */
+  .tooltip {
+    @apply rounded-xl border border-zinc-200 bg-white text-zinc-950 shadow-sm;
+
+    .tooltip-arrow {
+      @apply fill-zinc-300;
+    }
+  }
+
+  /* SOCIAL LINKS */
+  .social-link {
+    @apply icon-button;
   }
 }

@@ -1,5 +1,10 @@
 import Image from 'next/image'
 
+import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
+
+import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
+
 import { Heading } from '@/components/Heading'
 import { SectionDivider } from '@/components/SectionDivider'
 
@@ -10,6 +15,7 @@ type BlogPostHeaderProps = {
   image: string
   categories: Array<string> | string
   title: string
+  slug: string
   author: string
   date: Date
 }
@@ -18,6 +24,7 @@ export function BlogPostHeader({
   image,
   categories,
   title,
+  slug,
   author,
   date,
 }: BlogPostHeaderProps) {
@@ -36,9 +43,13 @@ export function BlogPostHeader({
       </div>
 
       <BlogPostContainer>
-        <div className="mb-10 flex justify-between">
+        <div className="mb-10 flex flex-col justify-between gap-8 md:flex-row md:gap-4">
           <Categories categories={categories} />
-          <p>Share Post Component</p>
+          <ShareArticle
+            articleTitle={title}
+            path={`${PATHS.BLOG.path}/${slug}`}
+            baseUrl={BASE_URL}
+          />
         </div>
 
         <SectionDivider variant="light" />

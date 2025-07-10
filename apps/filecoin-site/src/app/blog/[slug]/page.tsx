@@ -26,6 +26,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
         author={author}
         date={date || new Date()}
         title={title}
+        slug={slug}
       />
 
       <BlogPostContainer>
