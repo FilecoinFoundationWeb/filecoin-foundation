@@ -1,6 +1,7 @@
 ---
 title: "Introducing Proof of Data Possession (PDP): Verifiable Hot Storage on Filecoin"
 draft: false
+author: Emily Vaughan
 excerpt: >-
   Filecoin introduces verifiable hot storage with Proof of Data Possession,
   enabling fast, on-demand access while maintaining cryptographic integrity.

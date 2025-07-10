@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+import { PATHS } from '@/constants/paths'
+
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
@@ -16,7 +18,7 @@ export default async function Blog() {
       <BackgroundImage withOverlay src={featuredPost.image?.url || ''}>
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
-            kicker="Latest Updates"
+            kicker="Latest updates"
             title={featuredPost.title}
             description={featuredPost.excerpt}
             cta={
@@ -30,9 +32,9 @@ export default async function Blog() {
 
       <PageSection backgroundVariant="light">
         <ul>
-          {posts.map((post) => (
-            <li key={post.slug}>
-              <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+          {posts.map(({ slug, title }) => (
+            <li key={slug}>
+              <Link href={`${PATHS.BLOG.path}/${slug}`}>{title}</Link>
             </li>
           ))}
         </ul>
