@@ -1,7 +1,5 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 
-import { BASE_URL } from '@/constants/siteMetadata'
-
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
@@ -38,24 +36,25 @@ export default async function Blog() {
             const { title, slug, excerpt, categories, image, author, date } =
               post
             return (
-              <BlogCard
-                key={title}
-                title={title}
-                description={excerpt}
-                author={author}
-                date={date}
-                tags={categories}
-                image={
-                  image && {
-                    src: image.url,
-                    alt: title,
+              <li key={title}>
+                <BlogCard
+                  title={title}
+                  description={excerpt}
+                  author={author}
+                  date={date}
+                  tags={categories}
+                  image={
+                    image && {
+                      src: image.url,
+                      alt: title,
+                    }
                   }
-                }
-                cta={{
-                  href: `/blog/${slug}`,
-                  baseDomain: BASE_URL,
-                }}
-              />
+                  cta={{
+                    href: `/blog/${slug}`,
+                    ariaLabel: `Read more about ${title}`,
+                  }}
+                />
+              </li>
             )
           })}
         </CardGrid>

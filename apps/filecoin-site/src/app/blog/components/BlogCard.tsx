@@ -1,21 +1,26 @@
+import Link from 'next/link'
+
 import {
   CardImage,
   type CardImageProps,
 } from '@filecoin-foundation/ui/Card/CardImage'
-import { CardLink } from '@filecoin-foundation/ui/Card/CardLink'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
-import { type ExtendedCTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
 import { Heading } from '@/components/Heading'
 import { TagGroup } from '@/components/TagGroup/TagGroup'
 
 import { type BlogPost } from '../schemas/BlogPostFrontmatterSchema'
 
+type BlogCardLink = {
+  href: string
+  ariaLabel: string
+}
+
 export type BlogCardProps = {
   title: BlogPost['title']
+  cta?: BlogCardLink
   tags?: BlogPost['categories']
   description?: BlogPost['excerpt']
-  cta?: ExtendedCTAProps
   image?: CardImageProps
   author?: BlogPost['author']
   date?: BlogPost['date']
@@ -31,12 +36,7 @@ export function BlogCard({
   author,
 }: BlogCardProps) {
   return (
-    <article
-      aria-label={title}
-      title={title}
-      data-with-link={Boolean(cta)}
-      className="relative h-full"
-    >
+    <article aria-label={title} title={title} className="group relative h-full">
       {image && <CardImage image={image} />}
 
       <div className="flex flex-col gap-4 py-4">
@@ -54,9 +54,15 @@ export function BlogCard({
             {date && <span>{formatDate(date, 'MMM d, yyyy')}</span>}
           </div>
         )}
-
-        {cta && <CardLink {...cta} />}
       </div>
+
+      {cta && (
+        <Link
+          href={cta.href}
+          aria-label={cta.ariaLabel}
+          className="focus:brand-outline absolute inset-0 z-10"
+        ></Link>
+      )}
     </article>
   )
 }
