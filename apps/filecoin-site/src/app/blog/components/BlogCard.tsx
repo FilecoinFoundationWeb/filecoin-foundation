@@ -48,7 +48,7 @@ export function BlogCard({
 
         {description && <p className="text-zinc-600">{description}</p>}
 
-        {(author || date) && <PostMetadata author={author} date={date} />}
+        <PostMetadata author={author} date={date} />
       </div>
 
       {cta && (
