@@ -1,5 +1,6 @@
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
+import { Container } from '@/components/Container'
 import { MarkdownContent } from '@/components/MarkdownContent'
 
 import { BlogPostContainer } from '../components/BlogPostContainer'
@@ -16,20 +17,22 @@ export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params
 
   const data = await getBlogPostData(slug)
-  const { content, image, categories, date, title } = data
+  const { image, categories, author, date, title, content } = data
 
   return (
-    <>
+    <div className="space-y-8 pb-30">
       <BlogPostHeader
         image={image?.url || headerImage.src}
         categories={categories}
-        author="Emily Vaughan"
+        author={author}
         date={date || new Date()}
         title={title}
       />
-      <BlogPostContainer>
-        <MarkdownContent>{content}</MarkdownContent>
-      </BlogPostContainer>
-    </>
+      <Container>
+        <BlogPostContainer>
+          <MarkdownContent>{content}</MarkdownContent>
+        </BlogPostContainer>
+      </Container>
+    </div>
   )
 }
