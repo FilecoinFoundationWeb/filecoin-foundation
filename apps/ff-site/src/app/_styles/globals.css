@@ -345,7 +345,7 @@
 
   /* TAGS */
   .tag-label {
-    @apply bg-brand-800 text-brand-100 rounded-lg border capitalize px-2;
+    @apply bg-brand-800 text-brand-100 rounded-lg border capitalize;
 
     &.tag-label--primary {
       @apply border-brand-300;

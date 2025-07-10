@@ -1,10 +1,9 @@
-import { Card } from '@filecoin-foundation/ui/Card/Card'
-
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
+import { BlogCard } from './components/BlogCard'
 import blogPostsData from './test-data.json'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
@@ -32,11 +31,12 @@ export default async function Blog() {
       <PageSection backgroundVariant="light">
         <ul>
           {blogPostsData.map((post: any) => (
-            <Card
+            <BlogCard
               key={post.title}
-              as="li"
               title={{ text: post.title }}
               description={{ text: post.excerpt }}
+              author={post.author}
+              date={post.date}
               tags={post.categories.map((category: string) => ({
                 text: category,
               }))}

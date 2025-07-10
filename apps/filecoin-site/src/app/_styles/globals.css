@@ -106,12 +106,8 @@
     }
   }
 
-  .card {
-    @apply border-none bg-white p-0;
-  }
-
   .tag-label {
-    @apply font-mono text-sm text-zinc-800 capitalize;
+    @apply font-mono text-sm font-light text-zinc-800 capitalize;
   }
 
   /* SLIDE OVER */
