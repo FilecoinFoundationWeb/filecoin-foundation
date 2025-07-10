@@ -24,7 +24,7 @@ export type BlogCardProps = {
   description?: BlogPost['excerpt']
   image?: CardImageProps
   author?: BlogPost['author']
-  date?: BlogPost['date']
+  date: BlogPost['date']
 }
 
 export function BlogCard({

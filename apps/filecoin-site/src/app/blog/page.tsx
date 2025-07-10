@@ -1,7 +1,5 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 
-import { PATHS } from '@/constants/paths'
-
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader/PageHeader'

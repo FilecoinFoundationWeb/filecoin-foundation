@@ -21,10 +21,10 @@ export default async function BlogPost({ params }: BlogPostProps) {
   return (
     <div className="space-y-8 pb-30">
       <BlogPostHeader
-        image={image?.url || headerImage.src}
+        image={{ url: image?.url || headerImage.src }}
         categories={categories}
         author={author}
-        date={date || new Date()}
+        date={date}
         title={title}
       />
 
