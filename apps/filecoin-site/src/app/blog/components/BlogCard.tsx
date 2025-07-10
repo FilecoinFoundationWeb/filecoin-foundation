@@ -13,7 +13,7 @@ import { type ExtendedCTAProps } from '@filecoin-foundation/utils/types/ctaType'
 import { Heading, type HeadingProps } from '@/components/Heading'
 import { type TagGroupProps, TagGroup } from '@/components/TagGroup/TagGroup'
 
-export type CardProps = {
+export type BlogCardProps = {
   title: HeadingProps['children']
   tags?: TagGroupProps['tags']
   description?: DescriptionProps['children']
@@ -31,8 +31,7 @@ export function BlogCard({
   cta,
   image,
   author,
-}: CardProps) {
-
+}: BlogCardProps) {
   return (
     <article
       aria-label={title}

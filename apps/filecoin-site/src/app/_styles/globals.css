@@ -106,10 +106,6 @@
     }
   }
 
-  .tag-label {
-    @apply font-mono text-sm font-light text-zinc-800 capitalize;
-  }
-
   /* SLIDE OVER */
   .slide-over-panel {
     @apply bg-white;
