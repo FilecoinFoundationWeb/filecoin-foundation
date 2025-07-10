@@ -8,6 +8,7 @@ import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { SectionDivider } from '@/components/SectionDivider'
 
 import { ComparisonTable } from './components/ComparisonTable'
 import { ecosystemPartners } from './data/ecosystemPartners'
@@ -97,7 +98,7 @@ export default function Learn() {
                 How Filecoin works
               </Heading>
               <DescriptionText>
-                Imagine you have a file that you want to store. Here’s how
+                Imagine you have a file that you want to store. Here's how
                 Filecoin makes that possible:
               </DescriptionText>
             </div>
@@ -114,7 +115,7 @@ export default function Learn() {
             </ul>
           </div>
 
-          <hr className="border-zinc-400" />
+          <SectionDivider variant="light" />
 
           <div>
             <div>
