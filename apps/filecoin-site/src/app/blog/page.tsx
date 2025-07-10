@@ -29,28 +29,27 @@ export default async function Blog() {
       </BackgroundImage>
 
       <PageSection backgroundVariant="light">
-        <ul>
-          {blogPostsData.map((post: any) => (
+        {blogPostsData.map((post: any) => {
+          const { title, excerpt, categories, image, author, date } = post
+          return (
             <BlogCard
-              key={post.title}
-              title={{ text: post.title }}
-              description={{ text: post.excerpt }}
-              author={post.author}
-              date={post.date}
-              tags={post.categories.map((category: string) => ({
-                text: category,
-              }))}
+              key={title}
+              title={title}
+              description={excerpt}
+              author={author}
+              date={date}
+              tags={categories}
               image={{
-                src: post.image.src,
-                alt: post.image.alt,
+                src: image.src,
+                alt: image.alt,
               }}
               cta={{
                 href: `/`,
                 baseDomain: 'https://filecoin.io',
               }}
             />
-          ))}
-        </ul>
+          )
+        })}
       </PageSection>
     </>
   )

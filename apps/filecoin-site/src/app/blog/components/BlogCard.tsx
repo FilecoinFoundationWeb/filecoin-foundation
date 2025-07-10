@@ -1,26 +1,22 @@
-import { type CardDescriptionProps } from '@filecoin-foundation/ui/Card/CardDescription'
 import {
   CardImage,
   type CardImageProps,
 } from '@filecoin-foundation/ui/Card/CardImage'
 import { CardLink } from '@filecoin-foundation/ui/Card/CardLink'
-import { type CardTitleProps } from '@filecoin-foundation/ui/Card/CardTitle'
-import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
-import { type MetaDataType } from '@filecoin-foundation/ui/Meta'
+import {
+  DescriptionText,
+  type DescriptionProps,
+} from '@filecoin-foundation/ui/DescriptionText'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { type ExtendedCTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
-import { Heading } from '@/components/Heading'
+import { Heading, type HeadingProps } from '@/components/Heading'
 import { type TagGroupProps, TagGroup } from '@/components/TagGroup/TagGroup'
 
 export type CardProps = {
-  title: {
-    text: CardTitleProps['children']
-    tag?: CardTitleProps['tag']
-  }
+  title: HeadingProps['children']
   tags?: TagGroupProps['tags']
-  metaData?: MetaDataType
-  description?: CardDescriptionProps
+  description?: DescriptionProps['children']
   cta?: ExtendedCTAProps
   image?: CardImageProps
   author?: string
@@ -36,10 +32,11 @@ export function BlogCard({
   image,
   author,
 }: CardProps) {
+
   return (
     <article
-      aria-label={title.text}
-      title={title.text}
+      aria-label={title}
+      title={title}
       data-with-link={Boolean(cta)}
       className="relative h-full"
     >
@@ -48,10 +45,10 @@ export function BlogCard({
       <div className="flex flex-col gap-4 py-4">
         {tags && <TagGroup tags={tags} />}
         <Heading tag="h3" variant="xl-medium" className="leading-none">
-          {title.text}
+          {title}
         </Heading>
 
-        {description && <DescriptionText>{description.text}</DescriptionText>}
+        {description && <DescriptionText>{description}</DescriptionText>}
 
         {(author || date) && (
           <div className="flex items-center gap-2 font-mono text-sm text-zinc-600">
