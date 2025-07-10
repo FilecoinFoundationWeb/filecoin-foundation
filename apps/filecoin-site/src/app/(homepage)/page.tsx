@@ -37,6 +37,7 @@ export default function Home() {
             title="Build on Filecoin"
             description="Learn how to store AI data, deploy dApps, and integrate smart contracts with guides, tools, and a growing dev community."
             backgroundVariant="light"
+            topBorder={true}
             icon={{
               component: BracketsAngleIcon,
               position: 'side',
@@ -48,6 +49,7 @@ export default function Home() {
             title="Store your data"
             description="Keep your data secure and verifiable with built-in authenticity and integrity."
             backgroundVariant="light"
+            topBorder={true}
             icon={{
               component: HardDriveIcon,
               position: 'side',
@@ -59,6 +61,7 @@ export default function Home() {
             title="Become a storage provider"
             description="Connect your data center to global, decentralized infrastructure open to everyone."
             backgroundVariant="light"
+            topBorder={true}
             icon={{
               component: DatabaseIcon,
               position: 'side',

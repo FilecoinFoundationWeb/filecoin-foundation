@@ -18,6 +18,7 @@ type CardProps = {
   description: string
   backgroundVariant: SectionProps['backgroundVariant']
   cta?: CTAProps
+  topBorder?: boolean
   icon?: {
     component: IconProps['component']
     size?: IconBadgeProps['size']
@@ -31,12 +32,13 @@ export function Card({
   description,
   backgroundVariant,
   cta,
+  topBorder = false,
   icon,
 }: CardProps) {
   const styles = getVariantClasses(backgroundVariant === 'dark')
 
   return (
-    <Tag className={getLayoutClasses(icon)}>
+    <Tag className={getLayoutClasses(icon, topBorder)}>
       {icon && (
         <IconBadge
           className="flex-shrink-0"
@@ -74,10 +76,13 @@ function getVariantClasses(isDark: boolean) {
   }
 }
 
-function getLayoutClasses(icon?: CardProps['icon']) {
+function getLayoutClasses(icon?: CardProps['icon'], topBorder?: boolean) {
   if (!icon) return ''
 
   return icon.position === 'top'
     ? 'flex flex-col gap-6'
-    : 'flex flex-row items-start gap-6'
+    : clsx(
+        'flex flex-row items-start gap-6',
+        topBorder && 'border-t border-zinc-200 pt-8',
+      )
 }
