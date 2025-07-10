@@ -1,6 +1,5 @@
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
-import { Container } from '@/components/Container'
 import { MarkdownContent } from '@/components/MarkdownContent'
 
 import { BlogPostContainer } from '../components/BlogPostContainer'
@@ -28,11 +27,10 @@ export default async function BlogPost({ params }: BlogPostProps) {
         date={date || new Date()}
         title={title}
       />
-      <Container>
-        <BlogPostContainer>
-          <MarkdownContent>{content}</MarkdownContent>
-        </BlogPostContainer>
-      </Container>
+
+      <BlogPostContainer>
+        <MarkdownContent>{content}</MarkdownContent>
+      </BlogPostContainer>
     </div>
   )
 }
