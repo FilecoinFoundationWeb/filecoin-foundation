@@ -3,7 +3,6 @@ import {
   type CardImageProps,
 } from '@filecoin-foundation/ui/Card/CardImage'
 import { CardLink } from '@filecoin-foundation/ui/Card/CardLink'
-import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { type ExtendedCTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
@@ -46,7 +45,7 @@ export function BlogCard({
           {title}
         </Heading>
 
-        {description && <DescriptionText>{description}</DescriptionText>}
+        {description && <p className="text-zinc-600">{description}</p>}
 
         {(author || date) && (
           <div className="flex items-center gap-2 font-mono text-sm text-zinc-600">

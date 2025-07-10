@@ -10,7 +10,7 @@ export function TagGroup({ tags }: TagGroupProps) {
   }
 
   return (
-    <span className="flex gap-2">
+    <span className="flex gap-4">
       {tags.map((tag, index) => (
         <TagLabel key={index}>{tag}</TagLabel>
       ))}
