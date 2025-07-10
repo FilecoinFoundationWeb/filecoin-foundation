@@ -26,7 +26,11 @@ const variantStyles = {
 export function Heading({ tag, variant, className, children }: HeadingProps) {
   const Tag = tag
 
-  const combinedClassName = clsx(variantStyles[variant], className)
+  const combinedClassName = clsx(
+    'leading-14',
+    variantStyles[variant],
+    className,
+  )
 
   return <Tag className={combinedClassName}>{children}</Tag>
 }

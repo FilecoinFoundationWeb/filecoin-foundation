@@ -1,10 +1,10 @@
-import { Title } from '@/components/PageHeader/Title'
+import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 export default function TermsOfUse() {
   return (
     <PageSection backgroundVariant="light">
-      <Title>Terms of Use</Title>
+      <PageHeader title="Terms of Use" />
     </PageSection>
   )
 }

@@ -6,7 +6,7 @@ import { PATHS } from '@/constants/paths'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
-import { Title } from '@/components/PageHeader/Title'
+import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { ComparisonTable } from './components/ComparisonTable'
@@ -15,23 +15,22 @@ import { filecoinParticipants } from './data/filecoinParticipants'
 import { filecoinStackFeatures } from './data/filecoinStackFeatures'
 import { filecoinStorageFlow } from './data/filecoinStorageFlow'
 import { filecoinValues } from './data/filecoinValues'
-// import { filecoinVsCloudComparison } from './data/filecoinVsCloudComparison'
 
 export default function Learn() {
   return (
     <>
       <PageSection backgroundVariant="dark">
-        <Title>A decentralized storage network for humanity's data</Title>
-
-        <DescriptionText>
-          Filecoin is a protocol, economy, and community powering the world's
+        <PageHeader
+          title="A decentralized storage network for humanity's data"
+          description="Filecoin is a protocol, economy, and community powering the world's
           largest open storage network. It enables anyone to store, retrieve,
-          and build on verifiable data — securely and at scale.
-        </DescriptionText>
-
-        <Button href="" variant="primaryDark">
-          Explore documentation
-        </Button>
+          and build on verifiable data — securely and at scale."
+          cta={
+            <Button href="" variant="primaryDark">
+              Explore documentation
+            </Button>
+          }
+        />
       </PageSection>
 
       <PageSection backgroundVariant="dark">

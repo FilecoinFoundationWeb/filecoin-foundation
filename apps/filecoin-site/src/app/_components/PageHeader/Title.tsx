@@ -1,6 +1,6 @@
 import { Heading } from '@/components/Heading'
 
-type TitleProps = {
+export type TitleProps = {
   children: string
 }
 
