@@ -40,6 +40,7 @@ export default function Home() {
             icon={{
               component: BracketsAngleIcon,
               position: 'side',
+              size: 'sm',
             }}
           />
           <Card
@@ -50,6 +51,7 @@ export default function Home() {
             icon={{
               component: HardDriveIcon,
               position: 'side',
+              size: 'sm',
             }}
           />
           <Card
@@ -60,6 +62,7 @@ export default function Home() {
             icon={{
               component: DatabaseIcon,
               position: 'side',
+              size: 'sm',
             }}
           />
         </CardGrid>
