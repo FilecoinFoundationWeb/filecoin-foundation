@@ -4,7 +4,7 @@ import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
-import { PageHeader } from '@/components/PageHeader/PageHeader'
+import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionDivider } from '@/components/SectionDivider'
 

@@ -9,7 +9,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
 import { IconBadge } from '@/components/IconBadge'
-import { PageHeader } from '@/components/PageHeader/PageHeader'
+import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { communityLinks } from './data/communityLinks'

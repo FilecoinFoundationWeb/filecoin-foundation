@@ -5,7 +5,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
-import { PageHeader } from '@/components/PageHeader/PageHeader'
+import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { filecoinFeatures } from './data/filecoinFeatures'
