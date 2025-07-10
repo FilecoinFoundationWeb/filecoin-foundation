@@ -4,12 +4,13 @@ import {
   CardImage,
   type CardImageProps,
 } from '@filecoin-foundation/ui/Card/CardImage'
-import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 import { Heading } from '@/components/Heading'
 import { TagGroup } from '@/components/TagGroup/TagGroup'
 
 import { type BlogPost } from '../schemas/BlogPostFrontmatterSchema'
+
+import { PostMetadata } from './PostMetadata'
 
 type BlogCardLink = {
   href: string
@@ -47,13 +48,7 @@ export function BlogCard({
 
         {description && <p className="text-zinc-600">{description}</p>}
 
-        {(author || date) && (
-          <div className="flex items-center gap-2 font-mono text-sm text-zinc-600">
-            {author && <span>{author}</span>}
-            {author && date && <span className="text-zinc-400">|</span>}
-            {date && <span>{formatDate(date, 'MMM d, yyyy')}</span>}
-          </div>
-        )}
+        {(author || date) && <PostMetadata author={author} date={date} />}
       </div>
 
       {cta && (

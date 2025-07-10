@@ -5,6 +5,7 @@ import { SectionDivider } from '@/components/SectionDivider'
 
 import { BlogPostContainer } from './BlogPostContainer'
 import { Categories } from './Categories'
+import { PostMetadata } from './PostMetadata'
 
 type BlogPostHeaderProps = {
   image: string
@@ -43,12 +44,9 @@ export function BlogPostHeader({
 
         <SectionDivider variant="light" />
 
-        <p className="mt-16 mb-8 font-mono text-sm text-zinc-800">
-          {author} |{' '}
-          {date.toLocaleDateString('en-US', {
-            dateStyle: 'long',
-          })}
-        </p>
+        <div className="mt-16 mb-8">
+          <PostMetadata author={author} date={date} />
+        </div>
 
         <Heading tag="h1" variant="4xl-medium">
           {title}
