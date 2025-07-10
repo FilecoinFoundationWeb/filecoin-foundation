@@ -12,8 +12,7 @@ import { DesktopNavigation } from './DesktopNavigation'
 import { MobileNavigation } from './MobileNavigation'
 
 export function Navigation() {
-  const theme = useNavigationTheme()
-  const isDarkTheme = theme === 'dark'
+  const isDarkTheme = useNavigationTheme()
 
   return (
     <Section
