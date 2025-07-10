@@ -42,7 +42,7 @@
 }
 
 @utility icon-button {
-  @apply rounded-full border-2 border-zinc-200 text-zinc-950;
+  @apply scale-75 rounded-full border-2 border-zinc-200 text-zinc-950;
 }
 
 @layer components {
@@ -124,9 +124,9 @@
     }
   }
 
-  /* SOCIAL LINKS */
-  .social-link {
-    @apply icon-button;
+  /* SHARE ARTICLE */
+  .share-article-list {
+    @apply gap-4;
   }
 
   /* SLIDE OVER */
@@ -141,5 +141,10 @@
     .tooltip-arrow {
       @apply fill-zinc-300;
     }
+  }
+
+  /* SOCIAL LINKS */
+  .social-link {
+    @apply icon-button;
   }
 }

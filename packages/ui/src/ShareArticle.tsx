@@ -43,7 +43,7 @@ export function ShareArticle({
       )}
       <ul
         className={clsx(
-          'flex flex-wrap items-center gap-6',
+          'share-article-list flex flex-wrap items-center',
           TOUCH_TARGET.touchAreaOffset,
         )}
       >

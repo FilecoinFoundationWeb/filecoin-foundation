@@ -43,7 +43,7 @@ export function BlogPostHeader({
       </div>
 
       <BlogPostContainer>
-        <div className="mb-10 flex justify-between">
+        <div className="mb-10 flex flex-col justify-between gap-8 md:flex-row md:gap-4">
           <Categories categories={categories} />
           <ShareArticle
             articleTitle={title}
