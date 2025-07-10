@@ -1,10 +1,14 @@
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+
+import { BASE_URL } from '@/constants/siteMetadata'
+
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { BlogCard } from './components/BlogCard'
-import blogPostsData from './test-data.json'
+import type { BlogPost } from './schemas/BlogPostFrontmatterSchema'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
 export default async function Blog() {
@@ -29,27 +33,32 @@ export default async function Blog() {
       </BackgroundImage>
 
       <PageSection backgroundVariant="light">
-        {blogPostsData.map((post: any) => {
-          const { title, excerpt, categories, image, author, date } = post
-          return (
-            <BlogCard
-              key={title}
-              title={title}
-              description={excerpt}
-              author={author}
-              date={date}
-              tags={categories}
-              image={{
-                src: image.src,
-                alt: image.alt,
-              }}
-              cta={{
-                href: `/`,
-                baseDomain: 'https://filecoin.io',
-              }}
-            />
-          )
-        })}
+        <CardGrid as="ul" cols="lgTwo">
+          {posts.map((post: BlogPost) => {
+            const { title, slug, excerpt, categories, image, author, date } =
+              post
+            return (
+              <BlogCard
+                key={title}
+                title={title}
+                description={excerpt}
+                author={author}
+                date={date}
+                tags={categories}
+                image={
+                  image && {
+                    src: image.url,
+                    alt: title,
+                  }
+                }
+                cta={{
+                  href: `/blog/${slug}`,
+                  baseDomain: BASE_URL,
+                }}
+              />
+            )
+          })}
+        </CardGrid>
       </PageSection>
     </>
   )

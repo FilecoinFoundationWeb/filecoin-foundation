@@ -3,24 +3,23 @@ import {
   type CardImageProps,
 } from '@filecoin-foundation/ui/Card/CardImage'
 import { CardLink } from '@filecoin-foundation/ui/Card/CardLink'
-import {
-  DescriptionText,
-  type DescriptionProps,
-} from '@filecoin-foundation/ui/DescriptionText'
+import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { type ExtendedCTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
-import { Heading, type HeadingProps } from '@/components/Heading'
-import { type TagGroupProps, TagGroup } from '@/components/TagGroup/TagGroup'
+import { Heading } from '@/components/Heading'
+import { TagGroup } from '@/components/TagGroup/TagGroup'
+
+import { type BlogPost } from '../schemas/BlogPostFrontmatterSchema'
 
 export type BlogCardProps = {
-  title: HeadingProps['children']
-  tags?: TagGroupProps['tags']
-  description?: DescriptionProps['children']
+  title: BlogPost['title']
+  tags?: BlogPost['categories']
+  description?: BlogPost['excerpt']
   cta?: ExtendedCTAProps
   image?: CardImageProps
-  author?: string
-  date?: string
+  author?: BlogPost['author']
+  date?: BlogPost['date']
 }
 
 export function BlogCard({
@@ -43,7 +42,7 @@ export function BlogCard({
 
       <div className="flex flex-col gap-4 py-4">
         {tags && <TagGroup tags={tags} />}
-        <Heading tag="h3" variant="xl-medium" className="leading-none">
+        <Heading tag="h3" variant="xl-medium" className="leading-tight">
           {title}
         </Heading>
 
