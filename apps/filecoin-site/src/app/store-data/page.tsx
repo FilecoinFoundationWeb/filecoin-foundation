@@ -1,5 +1,4 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -7,6 +6,7 @@ import { Heading } from '@/components/Heading'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { SectionContent } from '@/components/SectionContent'
 
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { storageCategories } from './data/storageCategories'
@@ -41,42 +41,36 @@ export default function StoreData() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <Heading tag="h2" variant="6xl-medium">
-          Decentralized, secure, and verifiable by design
-        </Heading>
-
-        <DescriptionText>
-          Filecoin offers a powerful alternative to traditional cloud storage —
+        <SectionContent
+          title="Decentralized, secure, and verifiable by design"
+          description="Filecoin offers a powerful alternative to traditional cloud storage —
           combining a distributed network architecture with built-in
           cryptographic guarantees. Your data stays available, authentic, and
-          tamper-proof over time.
-        </DescriptionText>
-
-        <CardGrid as="ul" cols="mdThree">
-          {filecoinFeatures.map(({ title, description, icon }) => (
-            <Card
-              key={title}
-              as="li"
-              backgroundVariant="dark"
-              title={title}
-              description={description}
-              icon={{
-                component: icon,
-                position: 'top',
-              }}
-            />
-          ))}
-        </CardGrid>
+          tamper-proof over time."
+        >
+          <CardGrid as="ul" cols="mdThree">
+            {filecoinFeatures.map(({ title, description, icon }) => (
+              <Card
+                key={title}
+                as="li"
+                backgroundVariant="dark"
+                title={title}
+                description={description}
+                icon={{
+                  component: icon,
+                  position: 'top',
+                }}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        <Heading tag="h2" variant="6xl-medium">
-          Store on Filecoin
-        </Heading>
-
-        <DescriptionText>
-          Find the perfect storage solution for your data on Filecoin.
-        </DescriptionText>
+        <SectionContent
+          title="Store on Filecoin"
+          description="Find the perfect storage solution for your data on Filecoin."
+        />
 
         <div className="flex items-baseline gap-6 bg-zinc-100 px-9 py-6">
           <p>Not sure what storage solution to choose?</p>
@@ -97,18 +91,16 @@ export default function StoreData() {
       </PageSection>
 
       <PageSection backgroundVariant="gray">
-        <Heading tag="h2" variant="6xl-medium">
-          Don't see your project?
-        </Heading>
-
-        <DescriptionText>
-          Showcase your Filecoin storage solution in this directory and reach
-          thousands of data owners.
-        </DescriptionText>
-
-        <Button href="" variant="primary">
-          Submit your storage solution
-        </Button>
+        <SectionContent
+          title="Don't see your project?"
+          description="Showcase your Filecoin storage solution in this directory and reach
+          thousands of data owners."
+          cta={
+            <Button href="" variant="primary">
+              Submit your storage solution
+            </Button>
+          }
+        />
       </PageSection>
     </>
   )
