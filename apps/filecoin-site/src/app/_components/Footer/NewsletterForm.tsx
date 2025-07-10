@@ -55,7 +55,8 @@ export function NewsletterForm() {
             </div>
           </Button>
         </div>
-        <p className="mt-2 text-sm text-red-300">{error}</p>
+
+        {error && <p className="mt-2 text-sm text-red-300">{error}</p>}
       </Field>
     </form>
   )
