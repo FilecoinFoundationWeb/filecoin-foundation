@@ -6,11 +6,10 @@ import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { useForm } from 'react-hook-form'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
-
 import {
   NewsletterFormSchema,
   type NewsletterFormData,
-} from './NewsletterFormSchema'
+} from '@filecoin-foundation/utils/schemas/NewsletterFormSchema'
 
 export function NewsletterForm() {
   const { register, handleSubmit, formState } = useForm<NewsletterFormData>({
