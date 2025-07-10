@@ -110,25 +110,6 @@
     }
   }
 
-  /* SLIDE OVER */
-  .slide-over-panel {
-    @apply bg-white;
-  }
-
-  /* TOOLTIP */
-  .tooltip {
-    @apply rounded-xl border border-zinc-200 bg-white text-zinc-950 shadow-sm;
-
-    .tooltip-arrow {
-      @apply fill-zinc-300;
-    }
-  }
-
-  /* SOCIAL LINKS */
-  .social-link {
-    @apply icon-button;
-  }
-
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
     @apply icon-button;
@@ -140,6 +121,25 @@
 
     .notification-close-button {
       @apply rounded-md text-zinc-700 hover:text-zinc-950;
+    }
+  }
+
+  /* SOCIAL LINKS */
+  .social-link {
+    @apply icon-button;
+  }
+
+  /* SLIDE OVER */
+  .slide-over-panel {
+    @apply bg-white;
+  }
+
+  /* TOOLTIP */
+  .tooltip {
+    @apply rounded-xl border border-zinc-200 bg-white text-zinc-950 shadow-sm;
+
+    .tooltip-arrow {
+      @apply fill-zinc-300;
     }
   }
 }
