@@ -47,6 +47,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
         <ShareArticle
+          sectionTitle="Share Article"
           articleTitle={title}
           path={`${PATHS.DIGEST.path}/${slug}`}
           baseUrl={BASE_URL}

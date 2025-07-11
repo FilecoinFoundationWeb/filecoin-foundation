@@ -60,6 +60,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
         )}
 
         <ShareArticle
+          sectionTitle="Share Article"
           articleTitle={title}
           path={`${PATHS.DIGEST.path}/${slug}`}
           baseUrl={BASE_URL}

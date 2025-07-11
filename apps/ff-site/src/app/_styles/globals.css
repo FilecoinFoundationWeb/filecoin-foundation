@@ -325,6 +325,10 @@
   }
 
   /* SHARE ARTICLE */
+  .share-article-list {
+    @apply gap-6;
+  }
+
   .share-article-title {
     @apply text-brand-300;
   }
