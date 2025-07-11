@@ -5,50 +5,59 @@ import {
   XLogoIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-const PLACEHOLDER_TITLE = 'Explore more on our website!'
+const ALL_SOCIAL_LINKS = {
+  facebook: {
+    icon: FacebookLogoIcon,
+    label: 'Facebook',
+    buildLink(url: string, title: string) {
+      return `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${title}`
+    },
+  },
+  linkedin: {
+    icon: LinkedinLogoIcon,
+    label: 'LinkedIn',
+    buildLink(url: string, title: string) {
+      return `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}`
+    },
+  },
+  reddit: {
+    icon: RedditLogoIcon,
+    label: 'Reddit',
+    buildLink(url: string, title: string) {
+      return `https://old.reddit.com/submit?url=${url}&title=${title}`
+    },
+  },
+  x: {
+    icon: XLogoIcon,
+    label: 'X',
+    buildLink(url: string, title: string) {
+      return `https://twitter.com/share?url=${url}&text=${title}`
+    },
+  },
+}
+
+type SocialPlatform = keyof typeof ALL_SOCIAL_LINKS
 
 type ShareArticleLinksProps = {
   URL: string
   title: string
   BASE_URL: string
+  platforms?: Array<SocialPlatform>
 }
 
 export function generateShareArticleLinks({
   URL,
   title,
   BASE_URL,
+  platforms = ['facebook', 'linkedin', 'reddit', 'x'],
 }: ShareArticleLinksProps) {
-  const PLACEHOLDER_URL = BASE_URL
-  const formattedURL = URL ? encodeURIComponent(URL) : PLACEHOLDER_URL
+  const formattedURL = URL ? encodeURIComponent(URL) : BASE_URL
 
-  const SHARE_SOCIAL_LINKS_CONFIG = [
-    {
-      icon: FacebookLogoIcon,
-      label: 'Facebook',
-      href: `https://www.facebook.com/sharer/sharer.php?u=${PLACEHOLDER_URL}&quote=${PLACEHOLDER_TITLE}`,
-    },
-    {
-      icon: LinkedinLogoIcon,
-      label: 'LinkedIn',
-      href: `https://www.linkedin.com/shareArticle?mini=true&url=${PLACEHOLDER_URL}&title=${PLACEHOLDER_TITLE}`,
-    },
-    {
-      icon: RedditLogoIcon,
-      label: 'Reddit',
-      href: `https://old.reddit.com/submit?url=${PLACEHOLDER_URL}&title=${PLACEHOLDER_TITLE}`,
-    },
-    {
-      icon: XLogoIcon,
-      label: 'X',
-      href: `https://twitter.com/share?url=${PLACEHOLDER_URL}&text=${PLACEHOLDER_TITLE}`,
-    },
-  ]
+  const selectedLinks = platforms.map((platform) => ALL_SOCIAL_LINKS[platform])
 
-  return SHARE_SOCIAL_LINKS_CONFIG.map(({ icon, label, href }) => ({
+  return selectedLinks.map(({ icon, label, buildLink }) => ({
     icon,
     label,
-    href: href
-      .replace(PLACEHOLDER_URL, formattedURL)
-      .replace(PLACEHOLDER_TITLE, title || PLACEHOLDER_TITLE),
+    href: buildLink(formattedURL, title),
   }))
 }

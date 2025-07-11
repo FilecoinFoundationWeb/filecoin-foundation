@@ -2,7 +2,7 @@ import clsx from 'clsx'
 
 import { type IconProps, Icon } from '@filecoin-foundation/ui/Icon'
 
-type IconBadgeProps = {
+export type IconBadgeProps = {
   icon: IconProps['component']
   size?: keyof typeof ICON_CONFIG
   className?: string
@@ -11,7 +11,7 @@ type IconBadgeProps = {
 const ICON_CONFIG = {
   sm: {
     containerSize: 'size-10',
-    iconSize: 24,
+    iconSize: 20,
   },
   md: {
     containerSize: 'size-[60px]',

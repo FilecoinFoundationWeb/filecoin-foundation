@@ -12,6 +12,7 @@ export const BlogPostFrontmatterSchema = z
     title: z.string(),
     draft: z.boolean().optional(),
     excerpt: z.string().optional(),
+    author: z.string(),
     share_image: z.string().optional(),
     image: z
       .object({

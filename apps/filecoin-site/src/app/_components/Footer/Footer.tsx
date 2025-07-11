@@ -1,5 +1,6 @@
 import { Container } from '@/components/Container'
 import { Section } from '@/components/Section'
+import { SectionDivider } from '@/components/SectionDivider'
 
 import { FooterLogo } from './FooterLogo'
 import { LegalSection } from './LegalSection'
@@ -23,7 +24,7 @@ export function Footer() {
         </div>
       </Container>
 
-      <hr className="border-zinc-400/10" />
+      <SectionDivider variant="subtle" />
 
       <Container>
         <LegalSection />

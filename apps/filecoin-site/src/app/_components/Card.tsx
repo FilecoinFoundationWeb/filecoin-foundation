@@ -1,4 +1,3 @@
-import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 
 import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
@@ -8,7 +7,7 @@ import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { Heading } from './Heading'
-import { IconBadge } from './IconBadge'
+import { IconBadge, type IconBadgeProps } from './IconBadge'
 import type { SectionProps } from './Section'
 
 type IconPosition = 'top' | 'side'
@@ -19,8 +18,10 @@ type CardProps = {
   description: string
   backgroundVariant: SectionProps['backgroundVariant']
   cta?: CTAProps
+  topBorder?: boolean
   icon?: {
     component: IconProps['component']
+    size?: IconBadgeProps['size']
     position: IconPosition
   }
 }
@@ -31,13 +32,20 @@ export function Card({
   description,
   backgroundVariant,
   cta,
+  topBorder = false,
   icon,
 }: CardProps) {
   const styles = getVariantClasses(backgroundVariant === 'dark')
 
   return (
-    <Tag className={getLayoutClasses(icon)}>
-      {icon && <IconBadge className="flex-shrink-0" icon={icon.component} />}
+    <Tag className={getLayoutClasses(icon, topBorder)}>
+      {icon && (
+        <IconBadge
+          className="flex-shrink-0"
+          icon={icon.component}
+          size={icon?.size || 'md'}
+        />
+      )}
 
       <div className="space-y-10">
         <div className="space-y-3">
@@ -51,16 +59,9 @@ export function Card({
           <BaseLink
             href={cta.href}
             baseDomain={BASE_DOMAIN}
-            className="flex max-w-max items-center gap-6"
+            className={clsx('font-semibold', styles.ctaText)}
           >
-            <IconBadge
-              size="sm"
-              className="flex-shrink-0"
-              icon={cta.icon?.component || ArrowRightIcon}
-            />
-            <span className={clsx('font-semibold', styles.ctaText)}>
-              {cta.text}
-            </span>
+            {cta.text}
           </BaseLink>
         )}
       </div>
@@ -75,10 +76,13 @@ function getVariantClasses(isDark: boolean) {
   }
 }
 
-function getLayoutClasses(icon?: CardProps['icon']) {
+function getLayoutClasses(icon?: CardProps['icon'], topBorder?: boolean) {
   if (!icon) return ''
 
   return icon.position === 'top'
     ? 'flex flex-col gap-6'
-    : 'flex flex-row items-start gap-6'
+    : clsx(
+        'flex flex-row items-start gap-6',
+        topBorder && 'border-t border-zinc-200 pt-8',
+      )
 }

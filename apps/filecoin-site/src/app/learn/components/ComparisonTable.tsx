@@ -13,6 +13,7 @@ import {
   filecoinVsCloudComparison,
   type ComparisonRow,
 } from '../data/filecoinVsCloudComparison'
+
 import { IconBadge } from '@/_components/IconBadge'
 
 type ComparisonCell = boolean | 'limited'
