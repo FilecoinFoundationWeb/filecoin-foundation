@@ -1,4 +1,4 @@
-import { PageHeader } from '@/components/PageHeader/PageHeader'
+import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 export default function PrivacyPolicy() {
