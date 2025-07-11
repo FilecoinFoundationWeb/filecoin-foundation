@@ -1,7 +1,5 @@
 import { z } from 'zod'
 
-import { getBlogPostData } from '../utils/getBlogPostData'
-
 const AllowedCategories = z.union([
   z.literal('updates'),
   z.literal('events'),
@@ -27,5 +25,3 @@ export const BlogPostFrontmatterSchema = z
     content: z.string(),
   })
   .strict()
-
-export type BlogPost = Awaited<ReturnType<typeof getBlogPostData>>
