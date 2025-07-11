@@ -1,3 +1,5 @@
+import clsx from 'clsx'
+
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 import type { BlogPost } from '../types/blogPostType'
@@ -8,11 +10,19 @@ type PostMetadataProps = {
 }
 
 export function PostMetadata({ author, date }: PostMetadataProps) {
-  return (
-    <div className="flex items-center gap-2 font-mono text-sm text-zinc-600">
-      {author && <span>{author}</span>}
-      {author && date && <span className="text-zinc-400">|</span>}
-      <span>{formatDate(date, 'MMM d, yyyy')}</span>
-    </div>
-  )
+  const formattedDate = formatDate(date, 'MMM d, yyyy')
+
+  const commonClasses = 'font-mono text-sm text-zinc-600'
+
+  if (author) {
+    return (
+      <div className={clsx('flex items-center gap-2', commonClasses)}>
+        <span>{author}</span>
+        <span className="text-zinc-400">|</span>
+        <span>{formattedDate}</span>
+      </div>
+    )
+  }
+
+  return <span className={commonClasses}>{formattedDate}</span>
 }

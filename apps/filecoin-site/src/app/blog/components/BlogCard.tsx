@@ -8,7 +8,7 @@ import {
 import { Heading } from '@/components/Heading'
 import { TagGroup } from '@/components/TagGroup/TagGroup'
 
-import { type BlogPost } from '../schemas/BlogPostFrontmatterSchema'
+import type { BlogPost } from '../types/blogPostType'
 
 import { PostMetadata } from './PostMetadata'
 

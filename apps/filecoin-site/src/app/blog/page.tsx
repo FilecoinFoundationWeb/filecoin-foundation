@@ -1,12 +1,14 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 
+import { PATHS } from '@/constants/paths'
+
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { BlogCard } from './components/BlogCard'
-import type { BlogPost } from './schemas/BlogPostFrontmatterSchema'
+import type { BlogPost } from './types/blogPostType'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
 export default async function Blog() {
@@ -50,7 +52,7 @@ export default async function Blog() {
                     }
                   }
                   cta={{
-                    href: `{PATHS.blog.path}/${slug}`,
+                    href: `${PATHS.BLOG.path}/${slug}`,
                     ariaLabel: `Read more about ${title}`,
                   }}
                 />
