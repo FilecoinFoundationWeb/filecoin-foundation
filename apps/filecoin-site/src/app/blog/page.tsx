@@ -4,7 +4,7 @@ import { PATHS } from '@/constants/paths'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
-import { PageHeader } from '@/components/PageHeader/PageHeader'
+import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { getBlogPostsData } from './utils/getBlogPostData'
