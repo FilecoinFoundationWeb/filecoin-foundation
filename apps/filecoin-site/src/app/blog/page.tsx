@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 
 import { PATHS } from '@/constants/paths'
 
@@ -7,6 +7,8 @@ import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
+import { BlogCard } from './components/BlogCard'
+import type { BlogPost } from './types/blogPostType'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
 export default async function Blog() {
@@ -31,13 +33,32 @@ export default async function Blog() {
       </BackgroundImage>
 
       <PageSection backgroundVariant="light">
-        <ul>
-          {posts.map(({ slug, title }) => (
-            <li key={slug}>
-              <Link href={`${PATHS.BLOG.path}/${slug}`}>{title}</Link>
-            </li>
-          ))}
-        </ul>
+        <CardGrid as="ul" cols="lgTwo">
+          {posts.map((post: BlogPost) => {
+            const { title, slug, excerpt, categories, image, author, date } =
+              post
+            return (
+              <BlogCard
+                key={title}
+                title={title}
+                description={excerpt}
+                author={author}
+                date={date}
+                tags={categories}
+                image={
+                  image && {
+                    src: image.url,
+                    alt: title,
+                  }
+                }
+                cta={{
+                  href: `${PATHS.BLOG.path}/${slug}`,
+                  ariaLabel: `Read more about ${title}`,
+                }}
+              />
+            )
+          })}
+        </CardGrid>
       </PageSection>
     </>
   )

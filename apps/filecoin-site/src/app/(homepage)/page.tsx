@@ -5,6 +5,8 @@ import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 
 import { PATHS } from '@/constants/paths'
 
+import { getFeaturedBlogPosts } from '@/utils/getFeaturedBlogPosts'
+
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { IconBadge } from '@/components/IconBadge'
@@ -17,7 +19,16 @@ import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
 import { providerBenefits } from './data/providerBenefits'
 
-export default function Home() {
+import { BlogCard } from '@/blog/components/BlogCard'
+import type { BlogPost } from '@/blog/types/blogPostType'
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+
+export default async function Home() {
+  const featuredBlogPosts = getFeaturedBlogPosts({
+    posts: await getBlogPostsData(),
+    limit: 6,
+  })
+
   return (
     <>
       <PageSection backgroundVariant="transparent">
@@ -167,7 +178,32 @@ export default function Home() {
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
         >
-          TODO
+          <CardGrid as="ul" cols="lgThree">
+            {featuredBlogPosts.map((post: BlogPost) => {
+              const { title, slug, excerpt, categories, image, author, date } =
+                post
+              return (
+                <BlogCard
+                  key={title}
+                  title={title}
+                  description={excerpt}
+                  author={author}
+                  date={date}
+                  tags={categories}
+                  image={
+                    image && {
+                      src: image.url,
+                      alt: title,
+                    }
+                  }
+                  cta={{
+                    href: `${PATHS.BLOG.path}/${slug}`,
+                    ariaLabel: `Read more about ${title}`,
+                  }}
+                />
+              )
+            })}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
