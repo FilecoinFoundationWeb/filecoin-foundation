@@ -4,26 +4,20 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { CheckCircleIcon, XCircleIcon } from '@phosphor-icons/react'
 import * as Sentry from '@sentry/nextjs'
 import { useForm } from 'react-hook-form'
-import { z } from 'zod'
 
 import {
   NotificationDialog,
   useNotificationDialog,
 } from '@filecoin-foundation/ui/NotificationDialog'
 import { NOTIFICATION_DIALOG_ERROR_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
+import {
+  NewsletterFormSchema,
+  type NewsletterFormData,
+} from '@filecoin-foundation/utils/schemas/NewsletterFormSchema'
 
 import { Button } from '@/components/Button'
 import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
-
-const NewsletterSchema = z.object({
-  email: z
-    .string()
-    .min(1, { message: 'This field has to be filled.' })
-    .email('This is not a valid email.'),
-})
-
-export type NewsLetterFormType = z.infer<typeof NewsletterSchema>
 
 export function NewsletterForm() {
   const { form, dialog, onSubmit } = useNewsletterForm()
@@ -31,14 +25,14 @@ export function NewsletterForm() {
   const isSubmitting = form.formState.isSubmitting
 
   return (
-    <ControlledForm<NewsLetterFormType>
+    <ControlledForm<NewsletterFormData>
       form={form}
       className="relative"
       onSubmit={onSubmit}
     >
       <div className="-mb-8 flex items-start space-x-2">
         <div className="w-72">
-          <ControlledFormInput<NewsLetterFormType>
+          <ControlledFormInput<NewsletterFormData>
             hideLabel
             name="email"
             label="Email"
@@ -64,13 +58,13 @@ export function NewsletterForm() {
 }
 
 function useNewsletterForm() {
-  const form = useForm<NewsLetterFormType>({
-    resolver: zodResolver(NewsletterSchema),
+  const form = useForm<NewsletterFormData>({
+    resolver: zodResolver(NewsletterFormSchema),
   })
 
   const dialog = useNotificationDialog()
 
-  async function onSubmit(values: NewsLetterFormType) {
+  async function onSubmit(values: NewsletterFormData) {
     try {
       const response = await fetch('/api/subscribe', {
         method: 'POST',
