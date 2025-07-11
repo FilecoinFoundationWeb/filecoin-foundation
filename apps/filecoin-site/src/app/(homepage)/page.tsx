@@ -105,10 +105,14 @@ export default function Home() {
           title="Power a more open, resilient web"
           description="Join a global network of independent data centers powering the Filecoin ecosystem."
           cta={[
-            <Button href={PATHS.OFFER_STORAGE.path} variant="primaryDark">
+            <Button
+              key="button-1"
+              href={PATHS.OFFER_STORAGE.path}
+              variant="primaryDark"
+            >
               Become a storage provider
             </Button>,
-            <Button href={PATHS.LEARN.path} variant="ghostDark">
+            <Button key="button-2" href={PATHS.LEARN.path} variant="ghostDark">
               Explore documentation
             </Button>,
           ]}
