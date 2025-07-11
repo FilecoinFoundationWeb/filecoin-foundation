@@ -177,7 +177,7 @@ export default async function Home() {
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
         >
-           <CardGrid as="ul" cols="lgTwo">
+          <CardGrid as="ul" cols="lgTwo">
             {featuredBlogPosts.map((post: BlogPost) => {
               const { title, slug, excerpt, categories, image, author, date } =
                 post
