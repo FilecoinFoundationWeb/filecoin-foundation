@@ -3,10 +3,13 @@
 import { useState } from 'react'
 
 import { ListIcon, XIcon } from '@phosphor-icons/react'
+import { clsx } from 'clsx'
 
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
+
+import { useNavigationTheme } from '@/hooks/useNavigationTheme'
 
 import { LogoIcon } from '@/components/Logo/IconLogo'
 
@@ -15,14 +18,17 @@ import { NavigationLink } from './NavigationLink'
 
 export function MobileNavigation() {
   const [open, setOpen] = useState(false)
+  const isDarkTheme = useNavigationTheme()
 
   return (
     <div className="lg:hidden">
-      <IconButton
-        icon={ListIcon}
-        label="Open mobile navigation"
-        onClick={openPanel}
-      />
+      <div className={clsx(isDarkTheme ? 'text-white' : 'text-zinc-600')}>
+        <IconButton
+          icon={ListIcon}
+          label="Open mobile navigation"
+          onClick={openPanel}
+        />
+      </div>
 
       <SlideOver open={open} setOpen={setOpen}>
         <div className="flex flex-col gap-12 px-6 py-8">
@@ -36,7 +42,7 @@ export function MobileNavigation() {
           </div>
           <ul aria-label="Navigation options" className="flex flex-col gap-2">
             {NAV_LINKS.map((link) => (
-              <li key={link.label}>
+              <li key={link.label} className="text-zinc-600">
                 <NavigationLink
                   href={link.path}
                   label={link.label}

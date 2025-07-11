@@ -42,7 +42,7 @@
 }
 
 @utility icon-button {
-  @apply scale-75 rounded-full border-2 border-zinc-200 text-zinc-950;
+  @apply scale-75 rounded-full border-2 border-zinc-200;
 }
 
 @layer components {
