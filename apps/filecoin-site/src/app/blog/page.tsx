@@ -50,7 +50,7 @@ export default async function Blog() {
                     }
                   }
                   cta={{
-                    href: `/blog/${slug}`,
+                    href: `{PATHS.blog.path}/${slug}`,
                     ariaLabel: `Read more about ${title}`,
                   }}
                 />
