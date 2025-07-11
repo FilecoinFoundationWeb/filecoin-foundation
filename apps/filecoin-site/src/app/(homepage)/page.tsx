@@ -5,6 +5,8 @@ import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 
 import { PATHS } from '@/constants/paths'
 
+import { getFeaturedBlogPosts } from '@/utils/getFeaturedBlogPosts'
+
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { IconBadge } from '@/components/IconBadge'
@@ -12,15 +14,14 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 
-import { getFeaturedBlogPosts } from '../_utils/getFeaturedBlogPosts'
-import { BlogCard } from '../blog/components/BlogCard'
-import type { BlogPost } from '../blog/types/blogPostType'
-import { getBlogPostsData } from '../blog/utils/getBlogPostData'
-
 import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
 import { providerBenefits } from './data/providerBenefits'
+
+import { BlogCard } from '@/blog/components/BlogCard'
+import type { BlogPost } from '@/blog/types/blogPostType'
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 export default async function Home() {
   const featuredBlogPosts = getFeaturedBlogPosts({
