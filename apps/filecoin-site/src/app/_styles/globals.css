@@ -16,22 +16,16 @@
   --color-brand-900: oklch(0.47 0.1224 248.85);
   --color-brand-950: oklch(0.33 0.0795 249.37);
 
-  --gradient-brand: linear-gradient(
-    90deg,
-    var(--color-brand-300),
-    var(--color-brand-600)
-  );
-
   --gradient-brand-dark: linear-gradient(
     90deg,
     var(--color-brand-500),
-    var(--color-brand-800)
+    var(--color-brand-700)
   );
 
   --gradient-brand-light: linear-gradient(
     90deg,
-    var(--color-brand-100),
-    var(--color-brand-400)
+    var(--color-brand-300),
+    var(--color-brand-500)
   );
 }
 
