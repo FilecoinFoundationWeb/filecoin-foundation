@@ -124,7 +124,7 @@ export default function OfferStorage() {
               If you're already running infrastructure at this level — or
               planning to — you might be a great fit.
             </p>
-            <Button href="" variant="primaryDark">
+            <Button href="" variant="primary">
               Book a call with our onboarding team
             </Button>
           </div>
