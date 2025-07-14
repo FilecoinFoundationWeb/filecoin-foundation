@@ -13,6 +13,8 @@ location:
   region: apac-asia
 start-date: 2025-09-29
 end-date: 2025-10-03
+image:
+  src: /assets/images/token2049_singapore.webp
 seo:
   description: Meet the Filecoin community at TOKEN2049 in Singapore! Explore
     ecosystem updates, join events, and help shape the future of the
