@@ -127,25 +127,18 @@ export default function Learn() {
 
                 <CardGrid as="ul" cols="mdThree">
                   {filecoinParticipants.map(({ title, description, cta }) => (
-                    <Card
-                      key={title}
-                      as="li"
-                      backgroundVariant="light"
-                      title={title}
-                      description={description}
-                      cta={{ href: cta.href, text: cta.label }}
-                    />
+                    <li key={title} className="flex flex-col gap-6">
+                      <div className="space-y-3">
+                        <Heading tag="h4" variant="xl-medium">
+                          {title}
+                        </Heading>
+                        <p className="color-zinc-600">{description}</p>
+                      </div>
+                      <a href={cta.href}>{cta.label}</a>
+                    </li>
                   ))}
                 </CardGrid>
               </div>
-
-              <CardGrid as="ul" cols="mdTwo">
-                <li>
-                  <Heading tag="h4" variant="xl-medium">
-                    Storage providers
-                  </Heading>
-                </li>
-              </CardGrid>
             </div>
           </div>
         </SectionContent>
