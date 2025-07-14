@@ -5,9 +5,7 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 const variantClasses = {
   primary: 'button--primary',
-  ghost: 'button--ghost',
-  ghostDark: 'button--ghost button--ghost--dark',
-  tertiary: 'button--tertiary',
+  secondary: 'button--secondary',
 } as const
 
 export type ButtonProps = LocalButtonProps<typeof variantClasses>

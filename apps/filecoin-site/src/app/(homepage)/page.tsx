@@ -63,23 +63,25 @@ export default async function Home() {
                 'Filecoin democratizes data infrastructure, so you can build without compromise — knowing your data belongs to you and your users, not centralized gatekeepers.',
               ]}
             />
-            <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="primary">
-              Explore builder's hub
-            </Button>
-            <a
-              href={PATHS.LEARN.path}
-              className="inline-flex items-center gap-2 text-zinc-300"
-            >
-              <GithubLogoIcon size={24} />
-              GitHub
-            </a>
-            <a
-              href={PATHS.BLOG.path}
-              className="inline-flex items-center gap-2 text-zinc-300"
-            >
-              <BookIcon size={24} />
-              Documentation
-            </a>
+            <div className="flex items-center justify-start">
+              <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="primary">
+                Explore builder's hub
+              </Button>
+              <Button
+                href={PATHS.LEARN.path}
+                variant="secondary"
+                icon={GithubLogoIcon}
+              >
+                GitHub
+              </Button>
+              <Button
+                href={PATHS.BLOG.path}
+                variant="secondary"
+                icon={BookIcon}
+              >
+                Documentation
+              </Button>
+            </div>
           </div>
         </SectionContent>
       </PageSection>
@@ -99,7 +101,7 @@ export default async function Home() {
               replication and lower egress fees.
             </DescriptionText>
             <Button href={PATHS.STORE_DATA.path}>Find storage solutions</Button>
-            <Button href="#" variant="ghost">
+            <Button href="#" variant="secondary">
               Why store on Filecoin
             </Button>
           </div>
@@ -119,7 +121,7 @@ export default async function Home() {
             >
               Become a storage provider
             </Button>,
-            <Button key="button-2" href={PATHS.LEARN.path} variant="ghostDark">
+            <Button key="button-2" href={PATHS.LEARN.path} variant="secondary">
               Explore documentation
             </Button>,
           ]}
