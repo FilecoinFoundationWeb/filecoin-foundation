@@ -41,40 +41,19 @@
 
 @layer components {
   .button {
-    @apply rounded-full px-6 py-4 text-base font-medium;
+    @apply text-base font-medium;
   }
 
   .button--primary {
-    @apply relative border-2 border-transparent text-zinc-900;
+    @apply relative rounded-full border-2 border-transparent px-6 py-4 text-zinc-900;
 
-    &::before {
-      background: var(--gradient-brand-dark) border-box;
+    &.button--disabled {
+      @apply border-2 border-zinc-500 bg-zinc-100 text-zinc-400;
     }
 
-    &::after {
-      @apply opacity-0 transition-opacity duration-300;
-      background: var(--gradient-brand) border-box;
-    }
-
-    &:hover::after {
-      @apply opacity-100;
-    }
-
-    &::before,
-    &::after {
-      @apply absolute -inset-0.5 rounded-full border-2 border-transparent;
-      content: '';
-      mask:
-        linear-gradient(var(--color-white)) content-box,
-        linear-gradient(var(--color-white));
-      mask-composite: exclude;
-    }
-
-    &.button--primary--dark {
-      @apply text-zinc-100;
-
+    &:not(.button--disabled) {
       &::before {
-        background: var(--gradient-brand) border-box;
+        background: var(--gradient-brand-dark) border-box;
       }
 
       &::after {
@@ -84,6 +63,20 @@
 
       &:hover::after {
         @apply opacity-100;
+      }
+
+      &::before,
+      &::after {
+        @apply absolute -inset-0.5 rounded-full border-2 border-transparent;
+        content: '';
+        mask:
+          linear-gradient(var(--color-white)) content-box,
+          linear-gradient(var(--color-white));
+        mask-composite: exclude;
+      }
+
+      &:focus {
+        @apply outline-brand-200 outline-3;
       }
     }
   }
