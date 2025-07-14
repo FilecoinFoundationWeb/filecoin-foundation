@@ -50,10 +50,7 @@ export default function BuildOnFilecoin() {
                 backgroundVariant="dark"
                 title={title}
                 description={description}
-                icon={{
-                  component: icon,
-                  position: 'top',
-                }}
+                icon={icon}
               />
             ))}
           </CardGrid>
