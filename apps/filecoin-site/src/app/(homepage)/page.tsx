@@ -189,6 +189,7 @@ export default async function Home() {
               return (
                 <BlogCard
                   key={title}
+                  slug={slug}
                   title={title}
                   description={excerpt}
                   author={author}
@@ -200,10 +201,6 @@ export default async function Home() {
                       alt: title,
                     }
                   }
-                  cta={{
-                    href: `${PATHS.BLOG.path}/${slug}`,
-                    ariaLabel: `Read more about ${title}`,
-                  }}
                 />
               )
             })}

@@ -35,12 +35,20 @@ export default async function Blog() {
       <PageSection backgroundVariant="light">
         <CardGrid as="ul" cols="lgTwo">
           {posts.map((post: BlogPost) => {
-            const { title, slug, excerpt, categories, image, author, publishedOn } =
-              post
+            const {
+              title,
+              slug,
+              excerpt,
+              categories,
+              image,
+              author,
+              publishedOn,
+            } = post
             return (
               <BlogCard
                 key={title}
                 title={title}
+                slug={slug}
                 description={excerpt}
                 author={author}
                 date={publishedOn}
@@ -51,10 +59,6 @@ export default async function Blog() {
                     alt: title,
                   }
                 }
-                cta={{
-                  href: `${PATHS.BLOG.path}/${slug}`,
-                  ariaLabel: `Read more about ${title}`,
-                }}
               />
             )
           })}

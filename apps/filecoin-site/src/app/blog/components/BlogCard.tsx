@@ -5,6 +5,8 @@ import {
   type CardImageProps,
 } from '@filecoin-foundation/ui/Card/CardImage'
 
+import { PATHS } from '@/constants/paths'
+
 import { Heading } from '@/components/Heading'
 import { TagGroup } from '@/components/TagGroup/TagGroup'
 
@@ -12,14 +14,9 @@ import type { BlogPost } from '../types/blogPostType'
 
 import { PostMetadata } from './PostMetadata'
 
-type BlogCardLink = {
-  href: string
-  ariaLabel: string
-}
-
 export type BlogCardProps = {
   title: BlogPost['title']
-  cta: BlogCardLink
+  slug: BlogPost['slug']
   tags: BlogPost['categories']
   description: BlogPost['excerpt']
   image?: CardImageProps
@@ -29,10 +26,10 @@ export type BlogCardProps = {
 
 export function BlogCard({
   title,
+  slug,
   tags,
   date,
   description,
-  cta,
   image,
   author,
 }: BlogCardProps) {
@@ -57,8 +54,8 @@ export function BlogCard({
         </div>
 
         <Link
-          href={cta.href}
-          aria-label={cta.ariaLabel}
+          href={`${PATHS.BLOG.path}/${slug}`}
+          aria-label={`Read more about ${title}`}
           className="focus:brand-outline absolute inset-0 z-10"
         />
       </article>
