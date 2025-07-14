@@ -69,16 +69,12 @@ export default async function Home() {
               </Button>
               <Button
                 href={PATHS.LEARN.path}
-                variant="secondary"
+                variant="ghost"
                 icon={GithubLogoIcon}
               >
                 GitHub
               </Button>
-              <Button
-                href={PATHS.BLOG.path}
-                variant="secondary"
-                icon={BookIcon}
-              >
+              <Button href={PATHS.BLOG.path} variant="ghost" icon={BookIcon}>
                 Documentation
               </Button>
             </div>
@@ -101,7 +97,7 @@ export default async function Home() {
               replication and lower egress fees.
             </DescriptionText>
             <Button href={PATHS.STORE_DATA.path}>Find storage solutions</Button>
-            <Button href="#" variant="secondary">
+            <Button href="#" variant="ghost">
               Why store on Filecoin
             </Button>
           </div>
@@ -121,7 +117,7 @@ export default async function Home() {
             >
               Become a storage provider
             </Button>,
-            <Button key="button-2" href={PATHS.LEARN.path} variant="secondary">
+            <Button key="button-2" href={PATHS.LEARN.path} variant="ghost">
               Explore documentation
             </Button>,
           ]}
