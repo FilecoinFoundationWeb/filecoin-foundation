@@ -8,7 +8,7 @@ excerpt: >-
 share_image: assets/images/042425-PDP_BlogHeader.webp
 image:
   url: /assets/images/042425-PDP_BlogHeader.webp
-date: 2025-05-01T17:55:01.524Z
+publishedOn: 2025-05-01T17:55:01.524Z
 categories:
   - updates
 dim_image: true

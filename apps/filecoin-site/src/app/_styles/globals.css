@@ -110,6 +110,11 @@
     }
   }
 
+  /* CARD */
+  .card-image {
+    @apply border border-zinc-200;
+  }
+
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
     @apply icon-button;

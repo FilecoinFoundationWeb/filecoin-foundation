@@ -2,6 +2,7 @@ import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
+import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 
@@ -17,7 +18,16 @@ import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
 import { providerBenefits } from './data/providerBenefits'
 
-export default function Home() {
+import { BlogCard } from '@/blog/components/BlogCard'
+import type { BlogPost } from '@/blog/types/blogPostType'
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+
+export default async function Home() {
+  const featuredBlogPosts = getFeaturedBlogPosts({
+    posts: await getBlogPostsData(),
+    limit: 6,
+  })
+
   return (
     <>
       <PageSection backgroundVariant="transparent">
@@ -164,7 +174,37 @@ export default function Home() {
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
         >
-          TODO
+          <CardGrid as="ul" cols="lgThree">
+            {featuredBlogPosts.map((post: BlogPost) => {
+              const {
+                title,
+                slug,
+                excerpt,
+                categories,
+                image,
+                author,
+                publishedOn,
+              } = post
+
+              return (
+                <BlogCard
+                  key={title}
+                  slug={slug}
+                  title={title}
+                  description={excerpt}
+                  author={author}
+                  date={publishedOn}
+                  tags={categories}
+                  image={
+                    image && {
+                      src: image.url,
+                      alt: title,
+                    }
+                  }
+                />
+              )
+            })}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 

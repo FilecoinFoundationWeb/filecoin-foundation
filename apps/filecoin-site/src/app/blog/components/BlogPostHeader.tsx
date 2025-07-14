@@ -8,16 +8,19 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { Heading } from '@/components/Heading'
 import { SectionDivider } from '@/components/SectionDivider'
 
+import type { BlogPost } from '../types/blogPostType'
+
 import { BlogPostContainer } from './BlogPostContainer'
 import { Categories } from './Categories'
+import { PostMetadata } from './PostMetadata'
 
 type BlogPostHeaderProps = {
-  image: string
-  categories: Array<string> | string
-  title: string
+  image: BlogPost['image']
+  categories: BlogPost['categories']
+  title: BlogPost['title']
   slug: string
-  author: string
-  date: Date
+  author?: BlogPost['author']
+  date: BlogPost['publishedOn']
 }
 
 export function BlogPostHeader({
@@ -35,7 +38,7 @@ export function BlogPostHeader({
           fill
           priority
           quality={100}
-          src={image}
+          src={image?.url || ''}
           alt=""
           className="object-cover"
           sizes="100vw"
@@ -54,12 +57,9 @@ export function BlogPostHeader({
 
         <SectionDivider variant="light" />
 
-        <p className="mt-16 mb-8 font-mono text-sm text-zinc-800">
-          {author} |{' '}
-          {date.toLocaleDateString('en-US', {
-            dateStyle: 'long',
-          })}
-        </p>
+        <div className="mt-16 mb-8">
+          <PostMetadata author={author} date={date} />
+        </div>
 
         <Heading tag="h1" variant="4xl-medium">
           {title}
