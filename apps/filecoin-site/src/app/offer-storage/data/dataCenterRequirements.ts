@@ -1,10 +1,10 @@
 import {
   BatteryChargingVerticalIcon,
+  HardDrivesIcon,
+  HeartbeatIcon,
+  LockKeyIcon,
   ThermometerIcon,
   WifiHighIcon,
-  LockKeyIcon,
-  HeartbeatIcon,
-  HardDriveIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
 import type { CardData } from '@/components/Card'
@@ -44,6 +44,6 @@ export const dataCenterRequirements: CardData[] = [
     title: 'Space',
     description:
       'Provide adequate rack space, cabling, and room for large JBOD arrays.',
-    icon: HardDriveIcon,
+    icon: HardDrivesIcon,
   },
 ] as const
