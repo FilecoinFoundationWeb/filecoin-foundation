@@ -13,7 +13,7 @@ export type VariantClasses = {
   [key: string]: string
 }
 
-export type ButtonProps<Variants extends VariantClasses = VariantClasses> = {
+export type ButtonProps<Variants extends VariantClasses> = {
   children: React.ReactNode
   variants: { options: Variants; selected?: keyof Variants }
   icon?: IconProps['component']
@@ -21,11 +21,14 @@ export type ButtonProps<Variants extends VariantClasses = VariantClasses> = {
   baseDomain: string
 } & React.ComponentPropsWithoutRef<'button'>
 
-type ButtonInnerProps = Pick<ButtonProps, 'children' | 'icon'> & {
+type ButtonInnerProps = Pick<
+  ButtonProps<VariantClasses>,
+  'children' | 'icon'
+> & {
   isExternalLink?: boolean
 }
 
-export function Button<Variants extends VariantClasses = VariantClasses>({
+export function Button<Variants extends VariantClasses>({
   variants,
   className,
   icon,
