@@ -20,6 +20,8 @@ type CardProps = {
   }
 }
 
+export type CardData = Pick<CardProps, 'title' | 'description' | 'icon'>
+
 export function Card({
   as: Tag,
   backgroundVariant,

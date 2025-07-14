@@ -1,7 +1,12 @@
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+
 import { Button } from '@/components/Button'
+import { Card } from '@/components/Card'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
+
+import { dataCenterRequirements } from './data/dataCenterRequirements'
 
 export default function OfferStorage() {
   return (
@@ -23,7 +28,18 @@ export default function OfferStorage() {
           title="What you need to offer storage on Filecoin"
           description="To offer storage on Filecoin you’ll need enterprise-grade infrastructure and deep technical expertise to get started."
         >
-          TODO
+          <CardGrid as="ul" cols="mdThree">
+            {dataCenterRequirements.map(({ title, description, icon }) => (
+              <Card
+                key={title}
+                as="li"
+                backgroundVariant="dark"
+                title={title}
+                description={description}
+                icon={{ component: icon, position: 'top' }}
+              />
+            ))}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
