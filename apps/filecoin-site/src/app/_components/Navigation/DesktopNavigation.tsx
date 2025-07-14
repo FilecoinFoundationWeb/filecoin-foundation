@@ -3,7 +3,7 @@ import { NavigationLink } from './NavigationLink'
 
 export function DesktopNavigation() {
   return (
-    <ul aria-label="Main navigation menu" className="hidden lg:flex lg:gap-6">
+    <ul aria-label="Main navigation menu" className="hidden lg:flex lg:gap-9">
       {NAV_LINKS.map(({ path, label }) => (
         <li key={path}>
           <NavigationLink href={path} label={label} />

@@ -35,11 +35,11 @@ export function MobileNavigation() {
             />
           </div>
           <ul aria-label="Navigation options" className="flex flex-col gap-2">
-            {NAV_LINKS.map((link) => (
-              <li key={link.label}>
+            {NAV_LINKS.map(({ path, label }) => (
+              <li key={path}>
                 <NavigationLink
-                  href={link.path}
-                  label={link.label}
+                  href={path}
+                  label={label}
                   onClick={closePanel}
                 />
               </li>
