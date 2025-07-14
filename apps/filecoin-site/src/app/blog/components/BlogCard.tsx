@@ -43,9 +43,7 @@ export function BlogCard({
         title={title}
         className="group relative h-full"
       >
-        <div className="border border-zinc-200">
-          {image && <CardImage image={image} />}
-        </div>
+        {image && <CardImage image={image} />}
 
         <div className="flex flex-col gap-4 py-4">
           <TagGroup tags={tags} />
