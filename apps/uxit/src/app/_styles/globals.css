@@ -12,6 +12,11 @@
 }
 
 @layer components {
+  /* BUTTON */
+  .button {
+    @apply focus:brand-outline;
+  }
+
   /* CARD */
   .card {
     @apply rounded-md bg-transparent hover:bg-indigo-50;
@@ -29,10 +34,5 @@
   /* TEXT LINKS */
   .text-link {
     @apply focus:brand-outline! font-normal! text-indigo-500! no-underline! hover:text-indigo-800! hover:underline!;
-  }
-
-  /* BUTTON */
-  .button {
-    @apply focus:brand-outline;
   }
 }
