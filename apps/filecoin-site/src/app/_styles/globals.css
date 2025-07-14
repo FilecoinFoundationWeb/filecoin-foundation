@@ -76,7 +76,15 @@
       }
 
       &:focus {
-        @apply outline-brand-200 outline-3;
+        @apply outline-brand-100 outline-4;
+      }
+    }
+
+    .dark-section & {
+      @apply text-zinc-100;
+
+      &.button--disabled {
+        @apply border-2 border-zinc-400 bg-zinc-800 text-zinc-400;
       }
     }
   }

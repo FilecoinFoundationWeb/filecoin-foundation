@@ -22,7 +22,7 @@ export default function OfferStorage() {
           title="Join the world's largest decentralized storage network"
           description="Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important data. If you've got the infrastructure, you can become a core part of it."
           cta={
-            <Button href="" variant="primaryDark">
+            <Button href="" variant="primary">
               Check requirements
             </Button>
           }
@@ -188,7 +188,7 @@ export default function OfferStorage() {
           title="Build an open, resilient, and trustworthy web"
           description="Storing more files is directly related to winning more block rewards. The more storage you add, the more Filecoin you’ll earn."
           cta={
-            <Button href="" variant="primaryDark">
+            <Button href="" variant="primary">
               Book a call with our onboarding team
             </Button>
           }

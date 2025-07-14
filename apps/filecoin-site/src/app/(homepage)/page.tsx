@@ -63,7 +63,7 @@ export default async function Home() {
                 'Filecoin democratizes data infrastructure, so you can build without compromise — knowing your data belongs to you and your users, not centralized gatekeepers.',
               ]}
             />
-            <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="primaryDark">
+            <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="primary">
               Explore builder's hub
             </Button>
             <a
@@ -115,7 +115,7 @@ export default async function Home() {
             <Button
               key="button-1"
               href={PATHS.OFFER_STORAGE.path}
-              variant="primaryDark"
+              variant="primary"
             >
               Become a storage provider
             </Button>,
