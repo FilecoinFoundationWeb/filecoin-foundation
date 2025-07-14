@@ -144,7 +144,7 @@
       @apply bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400 border-white;
     }
 
-    &.button--disabled {
+    &:disabled {
       @apply bg-brand-200;
     }
   }

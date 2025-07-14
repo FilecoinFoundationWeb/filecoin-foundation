@@ -41,13 +41,13 @@ export function Button<Variants extends VariantClasses>({
   const variant = variants.options[variants.selected || 'primary']
 
   className = clsx(
-    'button inline-flex cursor-pointer items-center justify-center gap-2 py-3 transition hover:no-underline',
-    disabled && 'button--disabled pointer-events-none cursor-not-allowed',
+    'button inline-flex items-center justify-center gap-2 py-3 transition hover:no-underline',
+    disabled ? 'cursor-not-allowed' : 'cursor-pointer',
     variant,
     className,
   )
 
-  if (typeof href === 'undefined') {
+  if (typeof href === 'undefined' || disabled) {
     return (
       <button className={className} disabled={disabled} {...rest}>
         <ButtonInner icon={icon}>{children}</ButtonInner>

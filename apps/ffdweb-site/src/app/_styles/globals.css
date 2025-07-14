@@ -165,7 +165,7 @@
       @apply text-brand-primary-300 border-brand-primary-300 focus:text-brand-primary-300 bg-neutral-950 hover:border-neutral-100 hover:text-neutral-100;
     }
 
-    &.button--disabled {
+    &:disabled {
       @apply bg-neutral-300;
     }
   }

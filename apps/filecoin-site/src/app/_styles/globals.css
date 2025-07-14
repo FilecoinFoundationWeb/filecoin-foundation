@@ -41,22 +41,13 @@
 
 @layer components {
   .button {
-    @apply text-base font-medium;
-  }
-
-  .button--primary,
-  .button--secondary {
-    @apply rounded-full px-6 py-4;
+    @apply rounded-full px-6 py-4 text-base font-medium;
   }
 
   .button--primary {
     @apply relative border-2 border-transparent text-zinc-900;
 
-    &.button--disabled {
-      @apply border-2 border-zinc-500 bg-zinc-100 text-zinc-400;
-    }
-
-    &:not(.button--disabled) {
+    &:not(:disabled) {
       &::before {
         background: var(--gradient-brand-dark) border-box;
       }
@@ -85,10 +76,14 @@
       }
     }
 
+    &:disabled {
+      @apply border-2 border-zinc-500 bg-zinc-100 text-zinc-400;
+    }
+
     .dark-section & {
       @apply text-zinc-100;
 
-      &.button--disabled {
+      &:disabled {
         @apply border-2 border-zinc-400 bg-zinc-800 text-zinc-400;
       }
     }
@@ -97,11 +92,7 @@
   .button--secondary {
     @apply bg-zinc-100 text-zinc-900 transition-colors;
 
-    &.button--disabled {
-      @apply cursor-not-allowed text-zinc-500;
-    }
-
-    &:not(.button--disabled) {
+    &:not(:disabled) {
       &:hover {
         @apply bg-zinc-200;
       }
@@ -111,14 +102,14 @@
       }
     }
 
+    &:disabled {
+      @apply text-zinc-500;
+    }
+
     .dark-section & {
       @apply bg-zinc-800 text-white;
 
-      &.button--disabled {
-        @apply text-zinc-400;
-      }
-
-      &:not(.button--disabled) {
+      &:not(:disabled) {
         &:hover {
           @apply bg-zinc-600;
         }
@@ -126,6 +117,10 @@
         &:focus {
           @apply bg-zinc-600 outline-2 outline-zinc-400;
         }
+      }
+
+      &:disabled {
+        @apply text-zinc-400;
       }
     }
   }
