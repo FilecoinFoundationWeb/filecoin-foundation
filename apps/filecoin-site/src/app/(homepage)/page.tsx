@@ -8,7 +8,7 @@ import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
-import { IconBadge } from '@/components/IconBadge'
+import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
@@ -35,20 +35,17 @@ export default async function Home() {
           description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
           title="Preserving humanity's most important information"
         />
+        <div className="py-8 sm:py-12"></div>
         <CardGrid as="ul" cols="lgThree">
-          {networkActions.map(({ title, description, icon }) => (
-            <Card
+          {networkActions.map(({ title, description, href, icon }) => (
+            <LinkCard
               key={title}
               as="li"
               backgroundVariant="light"
-              topBorder={true}
               title={title}
               description={description}
-              icon={{
-                component: icon,
-                position: 'side',
-                size: 'sm',
-              }}
+              href={href}
+              icon={icon}
             />
           ))}
         </CardGrid>
@@ -96,7 +93,7 @@ export default async function Home() {
             </p>
             <p>Secure, verifiable, long-term storage that you control.</p>
             <DescriptionText>
-              No matter what you’re storing — your data remains tamper-proof and
+              No matter what you're storing — your data remains tamper-proof and
               verifiable. Filecoin offers cost-effective storage backed by a
               global network of independent data centers with automatic
               replication and lower egress fees.
@@ -220,13 +217,15 @@ export default async function Home() {
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
           <CardGrid as="ul" cols="smTwo">
-            {communityLinks.map(({ icon, href, label }) => (
-              <li key={label} className="flex flex-col">
-                <div className="flex items-center gap-5 border-t border-white/10 pt-6">
-                  <IconBadge icon={icon} size="sm" />
-                  <a href={href}>{label}</a>
-                </div>
-              </li>
+            {communityLinks.map(({ title, href, icon }) => (
+              <LinkCard
+                key={title}
+                as="li"
+                backgroundVariant="dark"
+                title={title}
+                href={href}
+                icon={icon}
+              />
             ))}
           </CardGrid>
         </SectionContent>

@@ -7,30 +7,26 @@ import {
 
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
-type CommunityLink = {
-  label: string
-  href: string
-  icon: typeof SlackLogoIcon
-}
+import type { LinkCardData } from '@/components/LinkCard'
 
-export const communityLinks: CommunityLink[] = [
+export const communityLinks: LinkCardData[] = [
   {
-    label: 'Chat on Slack',
+    title: 'Chat on Slack',
     href: FILECOIN_URLS.social.slack.href,
     icon: SlackLogoIcon,
   },
   {
-    label: 'Get involved on GitHub',
+    title: 'Get involved on GitHub',
     href: FILECOIN_URLS.github,
     icon: GithubLogoIcon,
   },
   {
-    label: 'Explore the documentation',
+    title: 'Explore the documentation',
     href: FILECOIN_URLS.docs,
     icon: BookIcon,
   },
   {
-    label: 'Join the Protocol Labs Developer Guild',
+    title: 'Join the Protocol Labs Developer Guild',
     href: 'https://www.pldg.xyz/',
     icon: CodeIcon,
   },

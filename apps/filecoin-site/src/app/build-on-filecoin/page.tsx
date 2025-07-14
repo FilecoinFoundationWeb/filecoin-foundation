@@ -4,6 +4,7 @@ import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
+import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
@@ -96,19 +97,19 @@ export default function BuildOnFilecoin() {
               </Heading>
 
               <CardGrid as="ul" cols="mdTwo">
-                {developerResources.map(({ title, description, icon }) => (
-                  <Card
-                    key={title}
-                    as="li"
-                    backgroundVariant="light"
-                    title={title}
-                    description={description}
-                    icon={{
-                      component: icon,
-                      position: 'side',
-                    }}
-                  />
-                ))}
+                {developerResources.map(
+                  ({ title, description, href, icon }) => (
+                    <LinkCard
+                      key={title}
+                      as="li"
+                      backgroundVariant="light"
+                      title={title}
+                      description={description}
+                      href={href}
+                      icon={icon}
+                    />
+                  ),
+                )}
               </CardGrid>
             </div>
 
@@ -165,14 +166,15 @@ export default function BuildOnFilecoin() {
           Connect, collaborate, and grow with the ecosystem."
         >
           <CardGrid as="ul" cols="mdThree">
-            {communityConnections.map(({ title, description, icon }) => (
-              <Card
+            {communityConnections.map(({ title, description, href, icon }) => (
+              <LinkCard
                 key={title}
                 as="li"
                 backgroundVariant="light"
                 title={title}
                 description={description}
-                icon={{ component: icon, position: 'side' }}
+                href={href}
+                icon={icon}
               />
             ))}
           </CardGrid>
@@ -211,14 +213,15 @@ export default function BuildOnFilecoin() {
           contributions, there are many ways to get involved."
         >
           <CardGrid as="ul" cols="mdTwo">
-            {getInvolvedOptions.map(({ title, description, icon }) => (
-              <Card
+            {getInvolvedOptions.map(({ title, description, href, icon }) => (
+              <LinkCard
                 key={title}
                 as="li"
                 backgroundVariant="dark"
                 title={title}
                 description={description}
-                icon={{ component: icon, position: 'side' }}
+                href={href}
+                icon={icon}
               />
             ))}
           </CardGrid>
