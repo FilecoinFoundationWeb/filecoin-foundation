@@ -1,4 +1,5 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 
@@ -13,7 +14,8 @@ import { getBlogPostsData } from './utils/getBlogPostData'
 
 export default async function Blog() {
   const posts = await getBlogPostsData()
-  const featuredPost = posts[0]
+  const sortedPosts = sortPostsByDateDesc(posts)
+  const featuredPost = sortedPosts[0]
 
   return (
     <>
@@ -24,7 +26,10 @@ export default async function Blog() {
             title={featuredPost.title}
             description={featuredPost.excerpt}
             cta={
-              <Button variant="primaryDark" href={`/blog/${featuredPost.slug}`}>
+              <Button
+                variant="primaryDark"
+                href={`${PATHS.BLOG.path}/${featuredPost.slug}`}
+              >
                 Read more
               </Button>
             }
@@ -34,7 +39,7 @@ export default async function Blog() {
 
       <PageSection backgroundVariant="light">
         <CardGrid as="ul" cols="lgTwo">
-          {posts.map((post: BlogPost) => {
+          {sortedPosts.map((post: BlogPost) => {
             const {
               title,
               slug,
