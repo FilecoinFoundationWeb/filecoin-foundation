@@ -366,7 +366,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply text-brand-300! focus:brand-outline! font-normal! no-underline! hover:underline!;
+    @apply text-brand-300 focus:brand-outline no-underline hover:underline;
   }
 
   /* TOC */
