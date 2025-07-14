@@ -9,6 +9,7 @@
       "@/assets/*": ["./public/assets/*"],
       "@/styles/*": ["./src/app/_styles/*"],
       "@/constants/*": ["./src/app/_constants/*"],
+      "@/hooks/*": ["./src/app/_hooks/*"],
       "@/components/*": ["./src/app/_components/*"],
       "@/utils/*": ["./src/app/_utils/*"]
     },
