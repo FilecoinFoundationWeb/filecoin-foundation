@@ -147,4 +147,9 @@
   .social-link {
     @apply icon-button;
   }
+
+  /* CARD */
+  .card-image {
+    @apply border border-zinc-200;
+  }
 }

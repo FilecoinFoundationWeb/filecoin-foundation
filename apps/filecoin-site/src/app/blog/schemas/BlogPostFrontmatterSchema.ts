@@ -10,16 +10,16 @@ const AllowedCategories = z.union([
 export const BlogPostFrontmatterSchema = z
   .object({
     title: z.string(),
+    author: z.string().optional(),
     draft: z.boolean().optional(),
-    excerpt: z.string().optional(),
-    author: z.string(),
+    excerpt: z.string(),
     share_image: z.string().optional(),
     image: z
       .object({
         url: z.string(),
       })
       .optional(),
-    date: z.coerce.date().optional(),
+    publishedOn: z.coerce.date(),
     categories: z.array(AllowedCategories),
     dim_image: z.boolean().optional(),
     content: z.string(),
