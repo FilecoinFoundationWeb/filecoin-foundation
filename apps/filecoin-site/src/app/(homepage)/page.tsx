@@ -157,10 +157,7 @@ export default async function Home() {
                 backgroundVariant="light"
                 title={title}
                 description={description}
-                icon={{
-                  component: icon,
-                  position: 'top',
-                }}
+                icon={icon}
               />
             ))}
           </CardGrid>
