@@ -4,29 +4,28 @@ import {
   XLogoIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-type CommunityConnection = {
-  title: string
-  description: string
-  icon: typeof ChatsIcon
-}
+import type { LinkCardData } from '@/components/LinkCard'
 
-export const communityConnections: CommunityConnection[] = [
+export const communityConnections: LinkCardData[] = [
   {
     title: '#fil-builder on Slack',
     description:
       'Join the conversation, ask questions, and share your progress with fellow builders in the Filecoin Slack community.',
+    href: '#',
     icon: SlackLogoIcon,
   },
   {
     title: '@filbuilders on X',
     description:
       'Follow for the latest updates, developer highlights, and ecosystem news.',
+    href: '#',
     icon: XLogoIcon,
   },
   {
     title: 'Developer Working Group',
     description:
       'Collaborate directly with other developers through regular meetups, discussions, and technical deep-dives.',
+    href: '#',
     icon: ChatsIcon,
   },
 ] as const
