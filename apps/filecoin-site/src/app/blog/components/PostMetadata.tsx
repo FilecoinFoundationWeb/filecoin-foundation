@@ -6,11 +6,11 @@ import type { BlogPost } from '../types/blogPostType'
 
 type PostMetadataProps = {
   author?: BlogPost['author']
-  date: BlogPost['date']
+  date: BlogPost['publishedOn']
 }
 
 export function PostMetadata({ author, date }: PostMetadataProps) {
-  const formattedDate = formatDate(date, 'MMM d, yyyy')
+  const formattedDate = formatDate(date)
 
   const baseStyles = 'font-mono text-sm text-zinc-600'
 

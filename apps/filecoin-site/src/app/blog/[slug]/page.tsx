@@ -16,7 +16,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params
 
   const data = await getBlogPostData(slug)
-  const { image, categories, author, date, title, content } = data
+  const { image, categories, author, publishedOn, title, content } = data
 
   return (
     <div className="space-y-8 pb-30">
@@ -24,7 +24,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
         image={{ url: image?.url || headerImage.src }}
         categories={categories}
         author={author}
-        date={date}
+        date={publishedOn}
         title={title}
         slug={slug}
       />

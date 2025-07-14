@@ -35,7 +35,7 @@ export default async function Blog() {
       <PageSection backgroundVariant="light">
         <CardGrid as="ul" cols="lgTwo">
           {posts.map((post: BlogPost) => {
-            const { title, slug, excerpt, categories, image, author, date } =
+            const { title, slug, excerpt, categories, image, author, publishedOn } =
               post
             return (
               <BlogCard
@@ -43,7 +43,7 @@ export default async function Blog() {
                 title={title}
                 description={excerpt}
                 author={author}
-                date={date}
+                date={publishedOn}
                 tags={categories}
                 image={
                   image && {

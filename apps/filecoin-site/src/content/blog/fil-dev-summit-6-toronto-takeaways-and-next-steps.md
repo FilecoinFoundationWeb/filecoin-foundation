@@ -7,7 +7,7 @@ excerpt: >-
 share_image: /assets/images/DevSummit6_Social_Header.webp
 image:
   url: /assets/images/DevSummit6_Social_Header.webp
-date: 2025-05-28T04:00:00.000Z
+publishedOn: 2025-05-28T04:00:00.000Z
 categories:
   - updates
   - events

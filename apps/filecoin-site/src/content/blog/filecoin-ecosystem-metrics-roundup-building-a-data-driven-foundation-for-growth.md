@@ -9,7 +9,7 @@ excerpt:
 share_image: /assets/images/170366980-78f835fb-8168-4914-9a75-d62b1a157133.webp
 image:
   url: /assets/images/170366980-78f835fb-8168-4914-9a75-d62b1a157133.webp
-date: 2025-06-26T13:18:47.060Z
+publishedOn: 2025-06-26T13:18:47.060Z
 categories:
   - updates
 dim_image: true

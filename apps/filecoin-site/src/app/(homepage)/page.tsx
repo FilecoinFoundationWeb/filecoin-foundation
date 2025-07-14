@@ -2,10 +2,9 @@ import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
+import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
-
-import { getFeaturedBlogPosts } from '@/utils/getFeaturedBlogPosts'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -180,15 +179,23 @@ export default async function Home() {
         >
           <CardGrid as="ul" cols="lgThree">
             {featuredBlogPosts.map((post: BlogPost) => {
-              const { title, slug, excerpt, categories, image, author, date } =
-                post
+              const {
+                title,
+                slug,
+                excerpt,
+                categories,
+                image,
+                author,
+                publishedOn,
+              } = post
+
               return (
                 <BlogCard
                   key={title}
                   title={title}
                   description={excerpt}
                   author={author}
-                  date={date}
+                  date={publishedOn}
                   tags={categories}
                   image={
                     image && {

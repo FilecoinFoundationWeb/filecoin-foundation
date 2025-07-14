@@ -20,7 +20,7 @@ type BlogPostHeaderProps = {
   title: BlogPost['title']
   slug: string
   author?: BlogPost['author']
-  date: BlogPost['date']
+  date: BlogPost['publishedOn']
 }
 
 export function BlogPostHeader({

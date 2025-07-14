@@ -19,7 +19,7 @@ export const BlogPostFrontmatterSchema = z
         url: z.string(),
       })
       .optional(),
-    date: z.coerce.date(),
+    publishedOn: z.coerce.date(),
     categories: z.array(AllowedCategories),
     dim_image: z.boolean().optional(),
     content: z.string(),
