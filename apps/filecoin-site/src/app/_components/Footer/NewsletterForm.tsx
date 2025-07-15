@@ -46,7 +46,7 @@ export function NewsletterForm() {
                 className="absolute inset-0"
                 style={{
                   content: '',
-                  background: 'var(--gradient-brand)',
+                  background: 'var(--gradient-brand-dark)',
                   mixBlendMode: 'multiply',
                 }}
               />

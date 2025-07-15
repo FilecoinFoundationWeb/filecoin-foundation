@@ -29,7 +29,7 @@ export default function BuildOnFilecoin() {
           Integrate storage that safeguards data integrity at every layer and
           scales with your application's needs."
           cta={
-            <Button href="" variant="primaryDark">
+            <Button href="" variant="primary">
               Explore documentation
             </Button>
           }
@@ -146,10 +146,7 @@ export default function BuildOnFilecoin() {
           title="Explore the ecosystem"
           description="Discover the diverse landscape of projects in the Filecoin ecosystem."
           cta={
-            <Button
-              href="https://fil.org/ecosystem-explorer"
-              variant="primaryDark"
-            >
+            <Button href="https://fil.org/ecosystem-explorer" variant="primary">
               Visit the ecosystem explorer
             </Button>
           }

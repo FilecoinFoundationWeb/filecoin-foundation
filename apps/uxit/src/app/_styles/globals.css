@@ -12,6 +12,11 @@
 }
 
 @layer components {
+  /* BUTTON */
+  .button {
+    @apply focus:brand-outline transition;
+  }
+
   /* CARD */
   .card {
     @apply rounded-md bg-transparent hover:bg-indigo-50;

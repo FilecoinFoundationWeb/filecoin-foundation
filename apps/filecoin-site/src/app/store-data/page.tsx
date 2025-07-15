@@ -20,7 +20,7 @@ export default function StoreData() {
           title="Secure, decentralized storage for data that matters"
           description="A powerful and dynamic distributed cloud storage network for your data."
           cta={
-            <Button href="" variant="primaryDark">
+            <Button href="" variant="primary">
               Explore storage solutions
             </Button>
           }

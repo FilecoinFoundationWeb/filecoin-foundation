@@ -27,7 +27,7 @@ export default async function Blog() {
             description={featuredPost.excerpt}
             cta={
               <Button
-                variant="primaryDark"
+                variant="primary"
                 href={`${PATHS.BLOG.path}/${featuredPost.slug}`}
               >
                 Read more

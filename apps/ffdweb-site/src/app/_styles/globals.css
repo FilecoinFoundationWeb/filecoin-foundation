@@ -155,7 +155,7 @@
 
   /* BUTTONS */
   .button {
-    @apply border-2 px-6 font-bold;
+    @apply focus:brand-outline border-2 px-6 font-bold transition;
 
     &.button--primary {
       @apply border-brand-primary-300 bg-brand-primary-300 text-neutral-950 hover:border-neutral-100 hover:bg-neutral-100 focus:bg-neutral-100;
@@ -165,7 +165,7 @@
       @apply text-brand-primary-300 border-brand-primary-300 focus:text-brand-primary-300 bg-neutral-950 hover:border-neutral-100 hover:text-neutral-100;
     }
 
-    &.button--disabled {
+    &:disabled {
       @apply bg-neutral-300;
     }
   }

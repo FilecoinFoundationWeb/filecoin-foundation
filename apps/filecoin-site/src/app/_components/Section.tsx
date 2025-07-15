@@ -13,7 +13,7 @@ export type LimitedBackgroundVariant = Extract<
 
 const backgroundVariants = {
   dark: 'dark-section bg-zinc-950 text-zinc-50',
-  gray: 'bg-gray-200 text-zinc-950',
+  gray: 'gray-section bg-gray-200 text-zinc-950',
   light: 'light-section bg-white text-zinc-950',
   transparent: 'bg-transparent text-zinc-950',
   transparentDark: 'bg-transparent text-zinc-50',
