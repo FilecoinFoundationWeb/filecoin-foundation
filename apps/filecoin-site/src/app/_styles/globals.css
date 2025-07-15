@@ -91,11 +91,11 @@
   }
 
   .button--ghost {
-    @apply bg-zinc-100 text-zinc-900 transition-colors;
+    @apply bg-zinc-100 text-zinc-900;
 
     &:not(:disabled) {
       &:hover {
-        @apply bg-zinc-200;
+        @apply bg-zinc-200 transition-colors;
       }
 
       &:focus {
@@ -112,7 +112,7 @@
 
       &:not(:disabled) {
         &:hover {
-          @apply bg-zinc-600;
+          @apply bg-zinc-600 transition-colors;
         }
 
         &:focus {
