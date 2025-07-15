@@ -1,10 +1,12 @@
-import { CTALink as SharedCTALink } from '@filecoin-foundation/ui/CTALink'
-import type { CTALinkProps } from '@filecoin-foundation/ui/CTALink'
+import {
+  CTALink as SharedCTALink,
+  type CTALinkProps as SharedCTALinkProps,
+} from '@filecoin-foundation/ui/CTALink'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-type LocalCTALinkProps = Omit<CTALinkProps, 'baseDomain'>
+export type CTALinkProps = Omit<SharedCTALinkProps, 'baseDomain'>
 
-export function CTALink(props: LocalCTALinkProps) {
+export function CTALink(props: CTALinkProps) {
   return <SharedCTALink {...props} baseDomain={BASE_DOMAIN} />
 }
