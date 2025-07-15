@@ -53,15 +53,6 @@
         background: var(--gradient-brand-dark) border-box;
       }
 
-      &::after {
-        @apply opacity-0 transition-opacity duration-300;
-        background: var(--gradient-brand-light) border-box;
-      }
-
-      &:hover::after {
-        @apply opacity-100;
-      }
-
       &::before,
       &::after {
         @apply absolute -inset-0.5 rounded-full border-2 border-transparent;
@@ -72,8 +63,22 @@
         mask-composite: exclude;
       }
 
+      &::after {
+        @apply opacity-0 transition-opacity duration-300;
+        background: var(--gradient-brand-light) border-box;
+      }
+
+      &:hover::after {
+        @apply opacity-100;
+      }
+
       &:focus {
         @apply outline-brand-100 outline-4;
+
+        &::after {
+          @apply opacity-100;
+          background: var(--gradient-brand-light) border-box;
+        }
       }
     }
 
