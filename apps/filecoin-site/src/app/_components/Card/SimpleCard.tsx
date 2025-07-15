@@ -1,15 +1,14 @@
-import { CTALink } from '@filecoin-foundation/ui/CTALink'
+import type { CTALinkProps } from '@filecoin-foundation/ui/CTALink'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
+import { CTALink } from '@/components/CTALink'
 import { Heading } from '@/components/Heading'
 
 export type SimpleCardProps = {
   title: string
   description: string
   cta: {
-    href: string
-    text: string
+    href: CTALinkProps['href']
+    text: CTALinkProps['children']
   }
 }
 
@@ -22,7 +21,7 @@ export function SimpleCard({ title, description, cta }: SimpleCardProps) {
         </Heading>
         <p className="text-zinc-600">{description}</p>
       </div>
-      <CTALink baseDomain={BASE_DOMAIN} href={cta.href} aria-label={cta.text}>
+      <CTALink href={cta.href} aria-label={cta.text}>
         {cta.text}
       </CTALink>
     </div>

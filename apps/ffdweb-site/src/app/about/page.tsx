@@ -1,16 +1,15 @@
-import { CTALink } from '@filecoin-foundation/ui/CTALink'
 import { KeyMemberCard } from '@filecoin-foundation/ui/KeyMemberCard'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
 import { ContactCTA } from '@/components/ContactCTA'
+import { CTALink } from '@/components/CTALink'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
@@ -68,9 +67,7 @@ export default function About() {
           ))}
         </IconCardGrid>
 
-        <CTALink baseDomain={BASE_DOMAIN} href={PATHS.PROJECTS.path}>
-          View All Projects
-        </CTALink>
+        <CTALink href={PATHS.PROJECTS.path}>View All Projects</CTALink>
       </PageSection>
 
       <PageSection

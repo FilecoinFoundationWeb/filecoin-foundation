@@ -1,8 +1,8 @@
-import { CTALink, type CTALinkProps } from '@filecoin-foundation/ui/CTALink'
+import type { CTALinkProps } from '@filecoin-foundation/ui/CTALink'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
+import { CTALink } from '@/components/CTALink'
 
 export type IconCardWithCTAProps = {
   title: string
@@ -25,7 +25,6 @@ export function IconCardWithCTA({ title, icon, cta }: IconCardWithCTAProps) {
         </Heading>
         <CTALink
           inset
-          baseDomain={BASE_DOMAIN}
           href={cta.href}
           textClassName="absolute bottom-6 md:left-6 left-28"
         >

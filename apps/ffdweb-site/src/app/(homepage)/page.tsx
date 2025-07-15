@@ -1,5 +1,4 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-import { CTALink } from '@filecoin-foundation/ui/CTALink'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -19,6 +18,7 @@ import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { ContactCTA } from '@/components/ContactCTA'
+import { CTALink } from '@/components/CTALink'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
@@ -60,9 +60,7 @@ export default async function Home() {
           'FFDW’s work includes supporting open source software and protocols that safeguard critical data from centralized control and single points of failure. FFDW also empowers institutions to preserve vulnerable information by leveraging the resilience of decentralized storage.',
         ]}
       >
-        <CTALink href={PATHS.ABOUT.path} baseDomain={BASE_DOMAIN}>
-          More About FFDW
-        </CTALink>
+        <CTALink href={PATHS.ABOUT.path}>More About FFDW</CTALink>
       </PageSection>
 
       <PageSection
@@ -116,7 +114,7 @@ export default async function Home() {
             <IconCardWithCTA key={title} icon={icon} title={title} cta={cta} />
           ))}
         </CardGrid>
-        <CTALink baseDomain={BASE_DOMAIN} href={PATHS.LEARNING_RESOURCES.path}>
+        <CTALink href={PATHS.LEARNING_RESOURCES.path}>
           View All Learning Resources
         </CTALink>
       </PageSection>
