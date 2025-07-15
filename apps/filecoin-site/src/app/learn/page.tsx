@@ -10,6 +10,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SimpleCard } from '@/components/SimpleCard'
 
 import { ComparisonTable } from './components/ComparisonTable'
 import { ecosystemPartners } from './data/ecosystemPartners'
@@ -124,15 +125,13 @@ export default function Learn() {
 
                 <CardGrid as="ul" cols="mdThree">
                   {filecoinParticipants.map(({ title, description, cta }) => (
-                    <li key={title} className="flex flex-col gap-6">
-                      <div className="space-y-3">
-                        <Heading tag="h4" variant="xl-medium">
-                          {title}
-                        </Heading>
-                        <p className="color-zinc-600">{description}</p>
-                      </div>
-                      <a href={cta.href}>{cta.label}</a>
-                    </li>
+                    <SimpleCard
+                      key={title}
+                      hasTopBorder
+                      title={title}
+                      description={description}
+                      cta={cta}
+                    />
                   ))}
                 </CardGrid>
               </div>

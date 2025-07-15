@@ -1,4 +1,3 @@
-import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 
 import { Button } from '@/components/Button'
@@ -8,6 +7,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SimpleCard } from '@/components/SimpleCard'
 
 import { coreInfrastructureSpecs } from './data/coreInfrastructureSpecs'
 import { dataCenterRequirements } from './data/dataCenterRequirements'
@@ -165,20 +165,13 @@ export default function OfferStorage() {
         />
         <CardGrid as="ul" cols="mdTwo">
           {filecoinEarningsInsights.map(({ title, description, href }) => (
-            <li
+            <SimpleCard
               key={title}
-              className="flex flex-col gap-6 border-t border-zinc-950/10 pt-8"
-            >
-              <div>
-                <Heading tag="h3" variant="xl-medium">
-                  {title}
-                </Heading>
-                <p className="pt-3 text-zinc-600">{description}</p>
-              </div>
-              <BaseLink href={href} baseDomain="https://filecoin.io">
-                Learn more
-              </BaseLink>
-            </li>
+              hasTopBorder
+              title={title}
+              description={description}
+              cta={{ href, text: 'Learn more' }}
+            />
           ))}
         </CardGrid>
       </PageSection>

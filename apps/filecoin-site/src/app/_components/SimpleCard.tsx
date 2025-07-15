@@ -33,11 +33,12 @@ export function SimpleCard({
 }: SimpleCardProps) {
   const isGradientCard = gradient && badge
   const isBorderedCard = hasTopBorder
+
   return (
-    <div
+    <li
       className={clsx(
-        'rounded-sm border border-black/15',
-        isBorderedCard && 'rounded-none border-x-0 border-b-0',
+        'border border-black/15',
+        isBorderedCard ? 'rounded-none border-x-0 border-b-0' : 'rounded-sm',
       )}
     >
       {isGradientCard && (
@@ -62,6 +63,6 @@ export function SimpleCard({
           {cta.text}
         </CTALink>
       </div>
-    </div>
+    </li>
   )
 }

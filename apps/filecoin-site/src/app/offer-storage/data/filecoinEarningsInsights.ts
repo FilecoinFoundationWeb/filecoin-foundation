@@ -1,7 +1,9 @@
+import type { SimpleCardProps } from '@/components/SimpleCard'
+
 type FilecoinEarningsInsight = {
-  title: string
-  description: string
-  href: string
+  title: SimpleCardProps['title']
+  description: SimpleCardProps['description']
+  href: SimpleCardProps['cta']['href']
 }
 
 export const filecoinEarningsInsights: FilecoinEarningsInsight[] = [

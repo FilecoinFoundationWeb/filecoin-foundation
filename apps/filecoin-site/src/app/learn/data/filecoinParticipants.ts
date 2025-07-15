@@ -1,12 +1,11 @@
 import { PATHS } from '@/constants/paths'
 
+import type { SimpleCardProps } from '@/components/SimpleCard'
+
 type FilecoinRole = {
-  title: string
-  description: string
-  cta: {
-    label: string
-    href: string
-  }
+  title: SimpleCardProps['title']
+  description: SimpleCardProps['description']
+  cta: SimpleCardProps['cta']
 }
 
 export const filecoinParticipants: FilecoinRole[] = [
@@ -15,7 +14,7 @@ export const filecoinParticipants: FilecoinRole[] = [
     description:
       'The foundation of the network. It manages storage deals, verifies data, and ensures everything runs securely.',
     cta: {
-      label: 'Learn more',
+      text: 'Learn more',
       href: '#',
     },
   },
@@ -24,7 +23,7 @@ export const filecoinParticipants: FilecoinRole[] = [
     description:
       'Individuals or organizations that offer storage space and earn rewards for storing data reliably.',
     cta: {
-      label: 'Become a storage provider',
+      text: 'Become a storage provider',
       href: PATHS.OFFER_STORAGE.path,
     },
   },
@@ -33,7 +32,7 @@ export const filecoinParticipants: FilecoinRole[] = [
     description:
       'Interfaces like apps, websites, or integrations that connect users and providers to the network.',
     cta: {
-      label: 'Find a storage solution',
+      text: 'Find a storage solution',
       href: '#',
     },
   },
@@ -42,7 +41,7 @@ export const filecoinParticipants: FilecoinRole[] = [
     description:
       'Build the tools, protocols, and smart contracts that power and expand the ecosystem.',
     cta: {
-      label: 'Build on Filecoin',
+      text: 'Build on Filecoin',
       href: PATHS.BUILD_ON_FILECOIN.path,
     },
   },
@@ -51,7 +50,7 @@ export const filecoinParticipants: FilecoinRole[] = [
     description:
       'People or organizations who use Filecoin to store and retrieve data.',
     cta: {
-      label: 'Store your data on Filecoin',
+      text: 'Store your data on Filecoin',
       href: PATHS.STORE_DATA.path,
     },
   },
