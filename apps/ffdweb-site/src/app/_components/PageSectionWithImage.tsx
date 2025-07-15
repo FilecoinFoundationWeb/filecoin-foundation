@@ -2,21 +2,17 @@ import Image from 'next/image'
 
 import { clsx } from 'clsx'
 
-import type { CTALinkProps } from '@filecoin-foundation/ui/CTALink'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { CTALink } from '@/components/CTALink'
+import { CTALink, type LocalCTALinkProps } from '@/components/CTALink'
 import { PageSection, type PageSectionProps } from '@/components/PageSection'
 
 type PageSectionWithImageProps = PageSectionProps & {
   image: StaticImageProps
-  cta: {
-    href: CTALinkProps['href']
-    children: CTALinkProps['children']
-  }
+  cta: LocalCTALinkProps
   layout?: 'regular' | 'reversed'
 }
 
