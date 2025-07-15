@@ -42,15 +42,28 @@
 @layer components {
   /* BUTTON */
   .button {
-    @apply rounded-full px-6 py-4 text-base font-medium;
+    @apply rounded-full border-2 px-6 py-4 text-base font-medium;
   }
 
   .button--primary {
-    @apply relative border-2 border-transparent text-zinc-900;
+    @apply relative border-transparent;
+
+    &:focus {
+      @apply outline-2;
+    }
 
     &:not(:disabled) {
       &::before {
         background: var(--gradient-brand-dark) border-box;
+      }
+
+      &::after {
+        @apply opacity-0 transition-opacity duration-300;
+        background: var(--gradient-brand-light) border-box;
+      }
+
+      &:hover::after {
+        @apply opacity-100;
       }
 
       &::before,
@@ -63,70 +76,72 @@
         mask-composite: exclude;
       }
 
-      &::after {
-        @apply opacity-0 transition-opacity duration-300;
-        background: var(--gradient-brand-light) border-box;
-      }
-
-      &:hover::after {
-        @apply opacity-100;
-      }
-
       &:focus {
-        @apply outline-brand-200 outline-2;
-
-        &::after {
-          @apply opacity-100;
-          background: var(--gradient-brand-light) border-box;
-        }
+        @apply outline-brand-300;
       }
     }
 
-    &:disabled {
-      @apply border-2 border-zinc-300 bg-zinc-100 text-zinc-400;
+    .light-section &,
+    .gray-section &,
+    .dark-section & {
+      &:disabled {
+        @apply text-zinc-400;
+      }
+    }
+
+    .light-section &,
+    .gray-section & {
+      @apply text-zinc-900;
+
+      &:disabled {
+        @apply border-zinc-300 bg-zinc-100;
+      }
     }
 
     .dark-section & {
       @apply text-zinc-100;
 
       &:disabled {
-        @apply border-2 border-zinc-400 bg-zinc-800 text-zinc-400;
+        @apply border-zinc-500 bg-zinc-800;
       }
     }
   }
 
   .button--ghost {
-    @apply bg-zinc-100 text-zinc-900;
+    @apply border-zinc-100;
 
-    &:not(:disabled) {
-      &:hover {
-        @apply bg-zinc-200 transition-colors;
-      }
+    &:hover {
+      @apply bg-zinc-200 transition-colors;
+    }
 
+    &:focus {
+      @apply outline-zinc-400;
+    }
+
+    .light-section &,
+    .gray-section & {
+      @apply bg-zinc-100 text-zinc-900;
+
+      &:not(:disabled):hover,
       &:focus {
-        @apply outline-2 outline-zinc-400;
-      }
-    }
-
-    &:disabled {
-      @apply text-zinc-400;
-    }
-
-    .dark-section & {
-      @apply bg-zinc-800 text-white;
-
-      &:not(:disabled) {
-        &:hover {
-          @apply bg-zinc-600 transition-colors;
-        }
-
-        &:focus {
-          @apply bg-zinc-600 outline-2 outline-zinc-400;
-        }
+        @apply border-zinc-200 bg-zinc-200;
       }
 
       &:disabled {
-        @apply text-zinc-400;
+        @apply text-zinc-500;
+      }
+    }
+
+    .dark-section & {
+      @apply border-zinc-800 bg-zinc-800 text-zinc-50;
+
+      &:not(:disabled):hover,
+      &:focus {
+        @apply border-zinc-600 bg-zinc-600;
+      }
+
+      &:disabled {
+        @apply bg-zinc-800 text-zinc-500;
       }
     }
   }
