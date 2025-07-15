@@ -1,3 +1,5 @@
+import clsx from 'clsx'
+
 import type { CTALinkProps } from '@filecoin-foundation/ui/CTALink'
 
 import { Badge, type BadgeProps } from '@/components/Badge'
@@ -18,6 +20,7 @@ export type SimpleCardProps = {
   badge?: {
     text: BadgeProps['children']
   }
+  hasTopBorder?: boolean
 }
 
 export function SimpleCard({
@@ -26,10 +29,18 @@ export function SimpleCard({
   cta,
   gradient,
   badge,
+  hasTopBorder = false,
 }: SimpleCardProps) {
+  const isGradientCard = gradient && badge
+  const isBorderedCard = hasTopBorder
   return (
-    <div className="rounded-sm border border-black/15">
-      {gradient && (
+    <div
+      className={clsx(
+        'rounded-sm border border-black/15',
+        isBorderedCard && 'rounded-none border-x-0 border-b-0',
+      )}
+    >
+      {isGradientCard && (
         <div
           className="h-25 w-full"
           style={{
@@ -37,8 +48,10 @@ export function SimpleCard({
           }}
         />
       )}
-      <div className="flex flex-col gap-6 p-8">
-        {badge && <Badge>{badge.text}</Badge>}
+      <div
+        className={clsx('flex flex-col gap-6 p-6', isBorderedCard && 'px-0')}
+      >
+        {isGradientCard && <Badge>{badge.text}</Badge>}
         <div className="flex flex-col gap-3">
           <Heading tag="h3" variant="xl-medium" className="text-zinc-950">
             {title}

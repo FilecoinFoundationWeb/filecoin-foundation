@@ -38,19 +38,20 @@ export default async function Home() {
         />
         <div className="py-8 sm:py-12">
           <SimpleCard
+            hasTopBorder
             title="Build apps better with resilient storage"
             description="Open. Scalable. Built for the future."
             cta={{
               href: PATHS.BUILD_ON_FILECOIN.path,
               text: "Explore builder's hub",
             }}
-            gradient={{
-              from: '#48DAFF',
-              to: '#D6F5FF',
-            }}
-            badge={{
-              text: 'Featured',
-            }}
+            // gradient={{
+            //   from: '#48DAFF',
+            //   to: '#D6F5FF',
+            // }}
+            // badge={{
+            //   text: 'Featured',
+            // }}
           />
         </div>
         <CardGrid as="ul" cols="lgThree">
