@@ -1,6 +1,6 @@
 import type { MemberData } from '@/types/memberType'
 
-import JoeLubin from '@/assets/headshots/Joe_Lubin.png'
+import JoeLandon from '@/assets/headshots/Joe_Landon.png'
 import KristinSmith from '@/assets/headshots/Kristin_Smith.png'
 import MartaBelcher from '@/assets/headshots/Marta_Belcher.png'
 import PhilipRosendale from '@/assets/headshots/Philip_Rosendale.png'
@@ -32,9 +32,9 @@ export const boardMembersData: Array<MemberData> = [
     image: PhilipRosendale,
   },
   {
-    name: 'Joe Lubin',
+    name: 'Joe Landon',
     title: 'Co-Founder & President, Rendezvous Robotics',
-    linkedin: 'https://www.linkedin.com/in/joseph-lubin-48406489/',
-    image: JoeLubin,
+    linkedin: 'https://www.linkedin.com/in/joelandon/',
+    image: JoeLandon,
   },
 ]
