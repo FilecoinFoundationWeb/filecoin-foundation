@@ -18,6 +18,8 @@ import { filecoinStackFeatures } from './data/filecoinStackFeatures'
 import { filecoinStorageFlow } from './data/filecoinStorageFlow'
 import { filecoinValues } from './data/filecoinValues'
 
+import { SideBySideContent } from '@/_components/SideBySideContent'
+
 export default function Learn() {
   return (
     <>
@@ -57,20 +59,18 @@ export default function Learn() {
 
       <PageSection backgroundVariant="gray">
         <SectionContent title="Breaking free from centralized control">
-          <div>
-            <span>Why decentralize storage?</span>
-            <div>
-              <DescriptionText
-                children={[
-                  "Today, most of the world's data lives in the hands of a few centralized cloud providers. This creates risks — from single points of failure and rising costs to censorship and opaque control.",
-                  'Filecoin turns this model on its head. By creating a global, trustless marketplace for storage, it gives individuals, developers, and organizations control over their data and infrastructure. Data becomes verifiable, programmable, and interoperable across use cases, industries, and chains.',
-                ]}
-              />
+          <SideBySideContent
+            title="Why decentralize storage?"
+            description={[
+              "Today, most of the world's data lives in the hands of a few centralized cloud providers. This creates risks — from single points of failure and rising costs to censorship and opaque control.",
+              'Filecoin turns this model on its head. By creating a global, trustless marketplace for storage, it gives individuals, developers, and organizations control over their data and infrastructure. Data becomes verifiable, programmable, and interoperable across use cases, industries, and chains.',
+            ]}
+            cta={
               <Button href="" variant="primary">
                 Store on Filecoin
               </Button>
-            </div>
-          </div>
+            }
+          />
         </SectionContent>
       </PageSection>
 

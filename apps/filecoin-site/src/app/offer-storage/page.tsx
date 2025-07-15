@@ -8,6 +8,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SideBySideContent } from '@/components/SideBySideContent'
 
 import { coreInfrastructureSpecs } from './data/coreInfrastructureSpecs'
 import { dataCenterRequirements } from './data/dataCenterRequirements'
@@ -133,28 +134,18 @@ export default function OfferStorage() {
 
       <PageSection backgroundVariant="gray">
         <SectionContent title="Return on investment">
-          <div className="flex gap-6 sm:flex-row">
-            <span className="flex-grow text-zinc-400">
-              Break even in 18 to 24 months.
-            </span>
-            <div className="flex flex-col gap-14">
-              <div>
-                <p>
-                  Most Storage Providers recover their hardware investment
-                  within 18 to 24 months, depending on uptime, deal-making
-                  activity, and operational efficiency.
-                </p>
-                <p>
-                  Once breakeven is reached, earnings can turn into long-term
-                  profit — all while contributing to the backbone of
-                  decentralized data.
-                </p>
-              </div>
+          <SideBySideContent
+            title="Break even in 18 to 24 months."
+            description={[
+              'Most Storage Providers recover their hardware investment within 18 to 24 months, depending on uptime, deal-making activity, and operational efficiency.',
+              'Once breakeven is reached, earnings can turn into long-term profit — all while contributing to the backbone of decentralized data.',
+            ]}
+            cta={
               <Button href="" variant="primary" className="w-fit">
                 Learn more
               </Button>
-            </div>
-          </div>
+            }
+          />
         </SectionContent>
       </PageSection>
 
