@@ -18,10 +18,10 @@ import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
 import { providerBenefits } from './data/providerBenefits'
 
+import { SimpleCard } from '@/_components/Card/SimpleCard'
 import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPost } from '@/blog/types/blogPostType'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
-import { SimpleCard } from '@/_components/Card/SimpleCard'
 
 export default async function Home() {
   const featuredBlogPosts = getFeaturedBlogPosts({
@@ -43,6 +43,13 @@ export default async function Home() {
             cta={{
               href: PATHS.BUILD_ON_FILECOIN.path,
               text: "Explore builder's hub",
+            }}
+            gradient={{
+              from: '#48DAFF',
+              to: '#D6F5FF',
+            }}
+            badge={{
+              text: 'Featured',
             }}
           />
         </div>
