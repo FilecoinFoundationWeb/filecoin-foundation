@@ -10,6 +10,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SideBySideContent } from '@/components/SideBySideContent'
 
 import { ComparisonTable } from './components/ComparisonTable'
 import { ecosystemPartners } from './data/ecosystemPartners'
@@ -17,8 +18,6 @@ import { filecoinParticipants } from './data/filecoinParticipants'
 import { filecoinStackFeatures } from './data/filecoinStackFeatures'
 import { filecoinStorageFlow } from './data/filecoinStorageFlow'
 import { filecoinValues } from './data/filecoinValues'
-
-import { SideBySideContent } from '@/_components/SideBySideContent'
 
 export default function Learn() {
   return (
