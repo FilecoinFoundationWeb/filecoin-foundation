@@ -18,7 +18,6 @@ import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
 import { providerBenefits } from './data/providerBenefits'
 
-import { SimpleCard } from '@/_components/Card/SimpleCard'
 import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPost } from '@/blog/types/blogPostType'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
@@ -36,24 +35,7 @@ export default async function Home() {
           description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
           title="Preserving humanity's most important information"
         />
-        <div className="py-8 sm:py-12">
-          <SimpleCard
-            hasTopBorder
-            title="Build apps better with resilient storage"
-            description="Open. Scalable. Built for the future."
-            cta={{
-              href: PATHS.BUILD_ON_FILECOIN.path,
-              text: "Explore builder's hub",
-            }}
-            // gradient={{
-            //   from: '#48DAFF',
-            //   to: '#D6F5FF',
-            // }}
-            // badge={{
-            //   text: 'Featured',
-            // }}
-          />
-        </div>
+        <div className="py-8 sm:py-12"></div>
         <CardGrid as="ul" cols="lgThree">
           {networkActions.map(({ title, description, href, icon }) => (
             <LinkCard
