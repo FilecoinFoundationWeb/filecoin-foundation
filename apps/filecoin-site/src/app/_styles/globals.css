@@ -78,7 +78,7 @@
     }
 
     &:disabled {
-      @apply border-2 border-zinc-500 bg-zinc-100 text-zinc-400;
+      @apply border-2 border-zinc-300 bg-zinc-100 text-zinc-400;
     }
 
     .dark-section & {
@@ -104,7 +104,7 @@
     }
 
     &:disabled {
-      @apply text-zinc-500;
+      @apply text-zinc-400;
     }
 
     .dark-section & {
