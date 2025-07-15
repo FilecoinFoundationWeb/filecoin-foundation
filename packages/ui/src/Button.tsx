@@ -74,10 +74,16 @@ function ButtonInner({
 }: ButtonInnerProps) {
   return (
     <>
-      {!isExternalLink && Icon && <IconComponent component={Icon} />}
+      {!isExternalLink && Icon && (
+        <span className="button-custom-icon">
+          <IconComponent component={Icon} />
+        </span>
+      )}
       <span>{children}</span>
       {isExternalLink && (
-        <IconComponent component={ArrowUpRightIcon} size={20} />
+        <span className="button-arrow-icon">
+          <IconComponent component={ArrowUpRightIcon} size={20} />
+        </span>
       )}
     </>
   )

@@ -57,11 +57,12 @@
         }
 
         &::after {
-          @apply opacity-0 transition-opacity duration-300;
+          @apply opacity-0 transition-opacity duration-200;
           background: var(--gradient-brand-light) border-box;
         }
 
-        &:hover::after {
+        &:hover::after,
+        &:focus::after {
           @apply opacity-100;
         }
 
@@ -76,18 +77,7 @@
         }
 
         &:focus {
-          @apply outline-brand-300;
-
-          &::after {
-            @apply opacity-100;
-          }
-        }
-      }
-
-      .light-section &,
-      .gray-section & {
-        &:disabled {
-          @apply text-zinc-400;
+          @apply outline-brand-400 transition-none;
         }
       }
 
@@ -95,13 +85,39 @@
       .gray-section & {
         @apply text-zinc-900;
 
+        & .button-arrow-icon {
+          @apply text-zinc-600;
+        }
+
+        & .button-custom-icon {
+          @apply text-blue-600;
+        }
+
+        &:hover .button-custom-icon,
+        &:focus .button-custom-icon {
+          @apply text-blue-400 transition-colors duration-200;
+        }
+
         &:disabled {
-          @apply border-zinc-300 bg-zinc-100;
+          @apply border-zinc-300 bg-zinc-100 text-zinc-400;
         }
       }
 
       .dark-section & {
         @apply text-zinc-100;
+
+        & .button-arrow-icon {
+          @apply text-zinc-300;
+        }
+
+        & .button-custom-icon {
+          @apply text-blue-500;
+        }
+
+        &:hover .button-custom-icon,
+        &:focus .button-custom-icon {
+          @apply text-blue-300 transition-colors duration-200;
+        }
 
         &:disabled {
           @apply border-zinc-500 bg-zinc-800 text-zinc-500;
@@ -131,6 +147,10 @@
 
         &:disabled {
           @apply text-zinc-400;
+        }
+
+        & .button-arrow-icon {
+          @apply text-zinc-500;
         }
       }
 

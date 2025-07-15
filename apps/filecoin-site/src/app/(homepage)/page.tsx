@@ -1,4 +1,8 @@
-import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
+import {
+  BookIcon,
+  GithubLogoIcon,
+  HardDrivesIcon,
+} from '@phosphor-icons/react/dist/ssr'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
@@ -67,7 +71,7 @@ export default async function Home() {
             <Button href="https://docs.filecoin.io/" variant="primary">
               Explore documentation
             </Button>
-            <Button href="#" variant="primary" icon={GithubLogoIcon}>
+            <Button href="#" variant="primary" icon={HardDrivesIcon}>
               GitHub
             </Button>
           </div>
@@ -108,7 +112,7 @@ export default async function Home() {
             <Button href="https://docs.filecoin.io/" variant="primary">
               Explore documentation
             </Button>
-            <Button href="#" variant="primary" icon={GithubLogoIcon}>
+            <Button href="#" variant="primary" icon={HardDrivesIcon}>
               GitHub
             </Button>
           </div>
