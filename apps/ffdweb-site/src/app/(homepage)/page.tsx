@@ -1,4 +1,5 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { CTALink } from '@filecoin-foundation/ui/CTALink'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -7,7 +8,7 @@ import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlog
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
-import { SEO } from '@/constants/siteMetadata'
+import { BASE_DOMAIN, SEO } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -18,7 +19,6 @@ import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { ContactCTA } from '@/components/ContactCTA'
-import { CTALink } from '@/components/CTALink'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
@@ -60,7 +60,9 @@ export default async function Home() {
           'FFDW’s work includes supporting open source software and protocols that safeguard critical data from centralized control and single points of failure. FFDW also empowers institutions to preserve vulnerable information by leveraging the resilience of decentralized storage.',
         ]}
       >
-        <CTALink href={PATHS.ABOUT.path}>More About FFDW</CTALink>
+        <CTALink href={PATHS.ABOUT.path} baseDomain={BASE_DOMAIN}>
+          More About FFDW
+        </CTALink>
       </PageSection>
 
       <PageSection
@@ -114,7 +116,7 @@ export default async function Home() {
             <IconCardWithCTA key={title} icon={icon} title={title} cta={cta} />
           ))}
         </CardGrid>
-        <CTALink href={PATHS.LEARNING_RESOURCES.path}>
+        <CTALink baseDomain={BASE_DOMAIN} href={PATHS.LEARNING_RESOURCES.path}>
           View All Learning Resources
         </CTALink>
       </PageSection>
@@ -129,6 +131,7 @@ export default async function Home() {
         cta={{
           href: PATHS.DIGEST.path,
           children: 'Read FFDW Digest',
+          baseDomain: BASE_DOMAIN,
         }}
       />
 

@@ -2,14 +2,13 @@ import Image from 'next/image'
 
 import { clsx } from 'clsx'
 
+import { CTALink, type CTALinkProps } from '@filecoin-foundation/ui/CTALink'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { PageSection, type PageSectionProps } from '@/components/PageSection'
-
-import { CTALink, type CTALinkProps } from './CTALink'
 
 type PageSectionWithImageProps = PageSectionProps & {
   image: StaticImageProps

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { NewspaperIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
+import { CTALink } from '@filecoin-foundation/ui/CTALink'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -11,14 +12,12 @@ import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizePro
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
-import { ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
+import { BASE_DOMAIN, ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
-
-import { CTALink } from '@/components/CTALink'
 
 import { getProjectData, getProjectsData } from '../utils/getProjectData'
 
@@ -80,11 +79,17 @@ export default async function Project(props: ProjectProps) {
           {(website || featuredContent) && (
             <div className="inline-flex flex-col gap-8 sm:flex-row sm:gap-12">
               {website && (
-                <CTALink href={website}>Visit Project Website</CTALink>
+                <CTALink baseDomain={BASE_DOMAIN} href={website}>
+                  Visit Project Website
+                </CTALink>
               )}
 
               {featuredContent && (
-                <CTALink href={featuredContent} icon={NewspaperIcon}>
+                <CTALink
+                  baseDomain={BASE_DOMAIN}
+                  href={featuredContent}
+                  icon={NewspaperIcon}
+                >
                   Read Blog Post
                 </CTALink>
               )}

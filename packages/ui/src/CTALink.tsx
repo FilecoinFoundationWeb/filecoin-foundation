@@ -9,14 +9,13 @@ import { type BaseLinkProps, BaseLink } from '@filecoin-foundation/ui/BaseLink'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
 export type CTALinkProps = {
   href: BaseLinkProps['href']
   children: string
   icon?: IconType
   inset?: boolean
   textClassName?: string
+  baseDomain: string
 }
 
 export function CTALink({
@@ -25,15 +24,16 @@ export function CTALink({
   icon,
   inset,
   textClassName,
+  baseDomain,
 }: CTALinkProps) {
-  const isExternal = isExternalLink(href, BASE_DOMAIN)
+  const isExternal = isExternalLink(href, baseDomain)
 
   return (
     <BaseLink
       href={href}
-      baseDomain={BASE_DOMAIN}
+      baseDomain={baseDomain}
       className={clsx(
-        'text-brand-primary-300 focus:brand-outline inline-flex items-center gap-1.5 font-bold hover:underline',
+        'cta-link focus:brand-outline inline-flex items-center gap-1.5 font-bold hover:underline',
         inset && 'absolute inset-0',
       )}
     >

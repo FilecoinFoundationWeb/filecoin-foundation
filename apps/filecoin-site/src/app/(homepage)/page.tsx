@@ -21,6 +21,7 @@ import { providerBenefits } from './data/providerBenefits'
 import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPost } from '@/blog/types/blogPostType'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { SimpleCard } from '@/_components/Card/SimpleCard'
 
 export default async function Home() {
   const featuredBlogPosts = getFeaturedBlogPosts({
@@ -35,7 +36,16 @@ export default async function Home() {
           description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
           title="Preserving humanity's most important information"
         />
-        <div className="py-8 sm:py-12"></div>
+        <div className="py-8 sm:py-12">
+          <SimpleCard
+            title="Build apps better with resilient storage"
+            description="Open. Scalable. Built for the future."
+            cta={{
+              href: PATHS.BUILD_ON_FILECOIN.path,
+              text: "Explore builder's hub",
+            }}
+          />
+        </div>
         <CardGrid as="ul" cols="lgThree">
           {networkActions.map(({ title, description, href, icon }) => (
             <LinkCard
