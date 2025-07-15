@@ -29,7 +29,7 @@ export default function Learn() {
           largest open storage network. It enables anyone to store, retrieve,
           and build on verifiable data — securely and at scale."
           cta={
-            <Button href="" variant="primaryDark">
+            <Button href="" variant="primary">
               Explore documentation
             </Button>
           }
@@ -146,7 +146,7 @@ export default function Learn() {
           title="See how Filecoin storage stacks up"
           description="Compare decentralized object storage against the traditional cloud storage."
           cta={
-            <Button href={PATHS.STORE_DATA.path} variant="primaryDark">
+            <Button href={PATHS.STORE_DATA.path} variant="primary">
               Store on Filecoin
             </Button>
           }
@@ -202,7 +202,7 @@ export default function Learn() {
           title="Go further with Filecoin"
           description="Whether you're a developer, a storage provider, or just curious, the Filecoin documentation has everything you need — from quick starts to in-depth guides."
           cta={
-            <Button href="" variant="primaryDark">
+            <Button href="" variant="primary">
               Explore documentation
             </Button>
           }

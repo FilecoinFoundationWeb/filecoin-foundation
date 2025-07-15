@@ -134,7 +134,7 @@
 
   /* BUTTONS */
   .button {
-    @apply rounded-lg border px-6 font-semibold sm:px-9;
+    @apply focus:brand-outline rounded-lg border px-6 font-semibold transition sm:px-9;
 
     &.button--primary {
       @apply border-brand-300 bg-brand-300 text-brand-800 hover:border-brand-400 hover:bg-brand-400;
@@ -144,7 +144,7 @@
       @apply bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400 border-white;
     }
 
-    &.button--disabled {
+    &:disabled {
       @apply bg-brand-200;
     }
   }
@@ -366,7 +366,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply text-brand-300! focus:brand-outline! font-normal! no-underline! hover:underline!;
+    @apply text-brand-300 focus:brand-outline no-underline hover:underline;
   }
 
   /* TOC */

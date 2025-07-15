@@ -16,22 +16,16 @@
   --color-brand-900: oklch(0.47 0.1224 248.85);
   --color-brand-950: oklch(0.33 0.0795 249.37);
 
-  --gradient-brand: linear-gradient(
-    90deg,
-    var(--color-brand-300),
-    var(--color-brand-600)
-  );
-
   --gradient-brand-dark: linear-gradient(
     90deg,
     var(--color-brand-500),
-    var(--color-brand-800)
+    var(--color-brand-700)
   );
 
   --gradient-brand-light: linear-gradient(
     90deg,
-    var(--color-brand-100),
-    var(--color-brand-400)
+    var(--color-brand-300),
+    var(--color-brand-500)
   );
 }
 
@@ -46,66 +40,131 @@
 }
 
 @layer components {
+  /* BUTTON */
   .button {
-    @apply rounded-full px-6 py-4 text-base font-medium;
-  }
+    @apply rounded-full border-2 px-6 py-4 text-base font-medium;
 
-  .button--primary {
-    @apply relative border-2 border-transparent text-zinc-900;
-
-    &::before {
-      background: var(--gradient-brand-dark) border-box;
+    &:focus {
+      @apply outline-2 outline-offset-0;
     }
 
-    &::after {
-      @apply opacity-0 transition-opacity duration-300;
-      background: var(--gradient-brand) border-box;
-    }
+    &.button--primary {
+      @apply relative border-transparent;
 
-    &:hover::after {
-      @apply opacity-100;
-    }
+      &:not(:disabled) {
+        &::before {
+          background: var(--gradient-brand-dark) border-box;
+        }
 
-    &::before,
-    &::after {
-      @apply absolute -inset-0.5 rounded-full border-2 border-transparent;
-      content: '';
-      mask:
-        linear-gradient(var(--color-white)) content-box,
-        linear-gradient(var(--color-white));
-      mask-composite: exclude;
-    }
+        &::after {
+          @apply opacity-0 transition-opacity duration-200;
+          background: var(--gradient-brand-light) border-box;
+        }
 
-    &.button--primary--dark {
-      @apply text-zinc-100;
+        &:hover::after,
+        &:focus::after {
+          @apply opacity-100;
+        }
 
-      &::before {
-        background: var(--gradient-brand) border-box;
+        &::before,
+        &::after {
+          @apply absolute -inset-0.5 rounded-full border-2 border-transparent;
+          content: '';
+          mask:
+            linear-gradient(var(--color-white)) content-box,
+            linear-gradient(var(--color-white));
+          mask-composite: exclude;
+        }
+
+        &:focus {
+          @apply outline-brand-400 transition-none;
+        }
       }
 
-      &::after {
-        @apply opacity-0 transition-opacity duration-300;
-        background: var(--gradient-brand-light) border-box;
+      .light-section &,
+      .gray-section & {
+        @apply text-zinc-900;
+
+        & .button-arrow-icon {
+          @apply text-zinc-600;
+        }
+
+        & .button-custom-icon {
+          @apply text-blue-600;
+        }
+
+        &:hover .button-custom-icon,
+        &:focus .button-custom-icon {
+          @apply text-blue-400 transition-colors duration-200;
+        }
+
+        &:disabled {
+          @apply border-zinc-300 bg-zinc-100 text-zinc-400;
+        }
       }
 
-      &:hover::after {
-        @apply opacity-100;
+      .dark-section & {
+        @apply text-zinc-100;
+
+        & .button-arrow-icon {
+          @apply text-zinc-300;
+        }
+
+        & .button-custom-icon {
+          @apply text-blue-500;
+        }
+
+        &:hover .button-custom-icon,
+        &:focus .button-custom-icon {
+          @apply text-blue-300 transition-colors duration-200;
+        }
+
+        &:disabled {
+          @apply border-zinc-500 bg-zinc-800 text-zinc-500;
+        }
       }
     }
-  }
 
-  .button--ghost {
-    @apply bg-zinc-100 text-zinc-900 transition-colors;
-
-    &:hover {
-      @apply bg-zinc-200;
-    }
-
-    &.button--ghost--dark {
-      @apply bg-zinc-800 text-white;
+    &.button--ghost {
+      @apply border-zinc-100;
 
       &:hover {
-        @apply bg-zinc-700;
+        @apply bg-zinc-200 transition-colors;
+      }
+
+      &:focus {
+        @apply outline-zinc-400;
+      }
+
+      .light-section &,
+      .gray-section & {
+        @apply bg-zinc-100 text-zinc-900;
+
+        &:not(:disabled):hover,
+        &:focus {
+          @apply border-zinc-200 bg-zinc-200;
+        }
+
+        &:disabled {
+          @apply text-zinc-400;
+        }
+
+        & .button-arrow-icon {
+          @apply text-zinc-500;
+        }
+      }
+
+      .dark-section & {
+        @apply border-zinc-800 bg-zinc-800 text-zinc-50;
+
+        &:not(:disabled):hover,
+        &:focus {
+          @apply border-zinc-600 bg-zinc-600;
+        }
+
+        &:disabled {
+          @apply bg-zinc-800 text-zinc-500;
+        }
       }
     }
   }
@@ -127,12 +186,12 @@
 
   /* NAVIGATION */
   .navigation-link {
-    .dark-section & {
-      @apply text-zinc-300;
-    }
-
     .light-section & {
       @apply text-zinc-600;
+    }
+
+    .dark-section & {
+      @apply text-zinc-300;
     }
   }
 
@@ -158,6 +217,11 @@
   /* SLIDE OVER */
   .slide-over-panel {
     @apply bg-white;
+  }
+
+  /* TEXT LINKS */
+  .text-link {
+    @apply focus:brand-outline text-brand-800 font-normal no-underline hover:underline;
   }
 
   /* TOOLTIP */

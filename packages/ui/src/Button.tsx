@@ -13,7 +13,7 @@ export type VariantClasses = {
   [key: string]: string
 }
 
-export type ButtonProps<Variants extends VariantClasses = VariantClasses> = {
+export type ButtonProps<Variants extends VariantClasses> = {
   children: React.ReactNode
   variants: { options: Variants; selected?: keyof Variants }
   icon?: IconProps['component']
@@ -21,11 +21,14 @@ export type ButtonProps<Variants extends VariantClasses = VariantClasses> = {
   baseDomain: string
 } & React.ComponentPropsWithoutRef<'button'>
 
-type ButtonInnerProps = Pick<ButtonProps, 'children' | 'icon'> & {
+type ButtonInnerProps = Pick<
+  ButtonProps<VariantClasses>,
+  'children' | 'icon'
+> & {
   isExternalLink?: boolean
 }
 
-export function Button<Variants extends VariantClasses = VariantClasses>({
+export function Button<Variants extends VariantClasses>({
   variants,
   className,
   icon,
@@ -38,13 +41,13 @@ export function Button<Variants extends VariantClasses = VariantClasses>({
   const variant = variants.options[variants.selected || 'primary']
 
   className = clsx(
-    'button focus:brand-outline inline-flex cursor-pointer items-center justify-center gap-2 py-3 transition hover:no-underline',
-    disabled && 'button--disabled pointer-events-none cursor-not-allowed',
+    'button inline-flex items-center justify-center gap-2 py-3 hover:no-underline',
+    disabled ? 'cursor-not-allowed' : 'cursor-pointer',
     variant,
     className,
   )
 
-  if (typeof href === 'undefined') {
+  if (typeof href === 'undefined' || disabled) {
     return (
       <button className={className} disabled={disabled} {...rest}>
         <ButtonInner icon={icon}>{children}</ButtonInner>
@@ -71,10 +74,16 @@ function ButtonInner({
 }: ButtonInnerProps) {
   return (
     <>
-      {!isExternalLink && Icon && <IconComponent component={Icon} />}
+      {!isExternalLink && Icon && (
+        <span className="button-custom-icon">
+          <IconComponent component={Icon} />
+        </span>
+      )}
       <span>{children}</span>
       {isExternalLink && (
-        <IconComponent component={ArrowUpRightIcon} size={20} />
+        <span className="button-arrow-icon">
+          <IconComponent component={ArrowUpRightIcon} size={20} />
+        </span>
       )}
     </>
   )
