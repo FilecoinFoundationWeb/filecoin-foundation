@@ -1,8 +1,4 @@
-import {
-  BookIcon,
-  GithubLogoIcon,
-  HardDrivesIcon,
-} from '@phosphor-icons/react/dist/ssr'
+import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
