@@ -1,18 +1,14 @@
-import { clsx } from 'clsx'
-
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 
-import { Button } from '@/components/Button'
+import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
 import { Heading, type HeadingProps } from '@/components/Heading'
 
 type SectionContentProps = {
   title: HeadingProps['children']
   description?: string
   children?: React.ReactNode
-  cta?:
-    | React.ReactElement<typeof Button>
-    | Array<React.ReactElement<typeof Button>>
-  centerCTA?: boolean
+  cta?: ButtonRowProps['buttons']
+  centerCTA?: ButtonRowProps['centered']
 }
 
 export function SectionContent({
@@ -36,13 +32,8 @@ export function SectionContent({
       </div>
       {children && <div className="mt-32 flex flex-col gap-32">{children}</div>}
       {cta && (
-        <div
-          className={clsx(
-            'mt-16 flex flex-wrap gap-3 sm:gap-6',
-            centerCTA && 'justify-center',
-          )}
-        >
-          {cta}
+        <div className="mt-16">
+          <ButtonRow buttons={cta} centered={centerCTA} />
         </div>
       )}
     </div>
