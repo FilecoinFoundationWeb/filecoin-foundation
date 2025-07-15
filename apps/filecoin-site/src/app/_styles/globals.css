@@ -73,7 +73,7 @@
       }
 
       &:focus {
-        @apply outline-brand-100 outline-4;
+        @apply outline-brand-200 outline-2;
 
         &::after {
           @apply opacity-100;
