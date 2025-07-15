@@ -155,6 +155,11 @@
     @apply bg-white;
   }
 
+  /* TEXT LINKS */
+  .text-link {
+    @apply focus:brand-outline text-brand-800 font-normal no-underline hover:underline;
+  }
+
   /* TOOLTIP */
   .tooltip {
     @apply rounded-xl border border-zinc-200 bg-white text-zinc-950 shadow-sm;

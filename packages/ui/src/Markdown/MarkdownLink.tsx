@@ -1,6 +1,7 @@
 import type { ComponentPropsWithoutRef } from 'react'
 
 import * as Sentry from '@sentry/node'
+import { clsx } from 'clsx'
 
 import { SmartTextLink } from '../TextLink/SmartTextLink'
 
@@ -12,6 +13,7 @@ export function MarkdownLink({
   href,
   children,
   baseDomain,
+  className,
   ...props
 }: MarkdownLinkProps) {
   if (!href) {
@@ -27,9 +29,10 @@ export function MarkdownLink({
     <SmartTextLink
       href={href}
       baseDomain={baseDomain}
+      className={clsx('not-prose', className)}
       {...props}
     >
       {children}
     </SmartTextLink>
   )
-} 
+}
