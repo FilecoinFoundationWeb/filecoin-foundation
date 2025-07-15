@@ -7,7 +7,7 @@ import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlog
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
-import { BASE_DOMAIN, SEO } from '@/constants/siteMetadata'
+import { SEO } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -129,7 +129,6 @@ export default async function Home() {
         cta={{
           href: PATHS.DIGEST.path,
           children: 'Read FFDW Digest',
-          baseDomain: BASE_DOMAIN,
         }}
       />
 

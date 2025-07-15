@@ -13,7 +13,10 @@ import { PageSection, type PageSectionProps } from '@/components/PageSection'
 
 type PageSectionWithImageProps = PageSectionProps & {
   image: StaticImageProps
-  cta: CTALinkProps
+  cta: {
+    href: CTALinkProps['href']
+    children: CTALinkProps['children']
+  }
   layout?: 'regular' | 'reversed'
 }
 
