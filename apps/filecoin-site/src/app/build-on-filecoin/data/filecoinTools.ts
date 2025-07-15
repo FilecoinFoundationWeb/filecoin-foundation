@@ -1,11 +1,10 @@
 import type { SimpleCardProps } from '@/components/SimpleCard'
 
-type FilecoinTool = {
-  title: SimpleCardProps['title']
-  description: SimpleCardProps['description']
+export type FilecoinTool = Pick<
+  SimpleCardProps,
+  'title' | 'description' | 'cta' | 'gradient'
+> & {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
-  href: SimpleCardProps['cta']['href']
-  gradient?: SimpleCardProps['gradient']
 }
 
 export const filecoinTools: FilecoinTool[] = [
@@ -14,7 +13,10 @@ export const filecoinTools: FilecoinTool[] = [
     description:
       'Deploy your first storage-backed smart contract quickly and securely.',
     difficulty: 'Beginner',
-    href: '/learn/erc20-quickstart',
+    cta: {
+      href: '/learn/erc20-quickstart',
+      text: 'Learn more',
+    },
     gradient: {
       from: 'var(--color-brand-100)',
       to: 'var(--color-brand-300)',
@@ -24,7 +26,10 @@ export const filecoinTools: FilecoinTool[] = [
     title: 'FilFrame',
     description: 'React-based template for building FVM frontends fast.',
     difficulty: 'Intermediate',
-    href: '/learn/filframe',
+    cta: {
+      href: '/learn/filframe',
+      text: 'Learn more',
+    },
     gradient: {
       from: 'var(--color-brand-400)',
       to: 'var(--color-brand-600)',
@@ -35,7 +40,10 @@ export const filecoinTools: FilecoinTool[] = [
     description:
       'Deep-dive technical recipes for advanced architecture and FVM programming patterns.',
     difficulty: 'Advanced',
-    href: '/learn/cookbooks',
+    cta: {
+      href: '/learn/cookbooks',
+      text: 'Learn more',
+    },
     gradient: {
       from: 'var(--color-brand-700)',
       to: 'var(--color-brand-900)',

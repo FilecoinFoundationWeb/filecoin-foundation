@@ -2,11 +2,10 @@ import { PATHS } from '@/constants/paths'
 
 import type { SimpleCardProps } from '@/components/SimpleCard'
 
-type FilecoinRole = {
-  title: SimpleCardProps['title']
-  description: SimpleCardProps['description']
-  cta: SimpleCardProps['cta']
-}
+export type FilecoinRole = Pick<
+  SimpleCardProps,
+  'title' | 'description' | 'cta'
+>
 
 export const filecoinParticipants: FilecoinRole[] = [
   {

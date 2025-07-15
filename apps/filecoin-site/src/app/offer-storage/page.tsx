@@ -164,13 +164,13 @@ export default function OfferStorage() {
           description="Join the world's largest decentralized storage network — empowering independent operators to store and protect critical data without relying on centralized tech giants. Your infrastructure helps power a more open, resilient, and censorship-resistant internet."
         />
         <CardGrid as="ul" cols="mdTwo">
-          {filecoinEarningsInsights.map(({ title, description, href }) => (
+          {filecoinEarningsInsights.map(({ title, description, cta }) => (
             <SimpleCard
               key={title}
               hasTopBorder
               title={title}
               description={description}
-              cta={{ href, text: 'Learn more' }}
+              cta={cta}
             />
           ))}
         </CardGrid>

@@ -71,11 +71,11 @@ export default function BuildOnFilecoin() {
 
               <CardGrid as="ul" cols="mdThree">
                 {filecoinTools.map(
-                  ({ title, description, difficulty, href, gradient }) => (
+                  ({ title, description, difficulty, cta, gradient }) => (
                     <SimpleCard
                       title={title}
                       description={description}
-                      cta={{ href, text: 'Learn more' }}
+                      cta={cta}
                       gradient={gradient}
                       badge={{ text: difficulty }}
                     />
