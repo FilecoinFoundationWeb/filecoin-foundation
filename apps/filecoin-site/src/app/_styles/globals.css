@@ -158,12 +158,12 @@
 
   /* NAVIGATION */
   .navigation-link {
-    .dark-section & {
-      @apply text-zinc-300;
-    }
-
     .light-section & {
       @apply text-zinc-600;
+    }
+
+    .dark-section & {
+      @apply text-zinc-300;
     }
   }
 
