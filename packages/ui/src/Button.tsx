@@ -41,7 +41,7 @@ export function Button<Variants extends VariantClasses>({
   const variant = variants.options[variants.selected || 'primary']
 
   className = clsx(
-    'button inline-flex items-center justify-center gap-2 py-3 transition hover:no-underline',
+    'button inline-flex items-center justify-center gap-2 py-3 hover:no-underline',
     disabled ? 'cursor-not-allowed' : 'cursor-pointer',
     variant,
     className,

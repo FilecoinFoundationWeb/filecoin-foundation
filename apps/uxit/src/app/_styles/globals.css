@@ -14,7 +14,7 @@
 @layer components {
   /* BUTTON */
   .button {
-    @apply focus:brand-outline;
+    @apply focus:brand-outline transition;
   }
 
   /* CARD */

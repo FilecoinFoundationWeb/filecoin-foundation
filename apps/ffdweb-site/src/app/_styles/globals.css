@@ -155,7 +155,7 @@
 
   /* BUTTONS */
   .button {
-    @apply focus:brand-outline border-2 px-6 font-bold;
+    @apply focus:brand-outline border-2 px-6 font-bold transition;
 
     &.button--primary {
       @apply border-brand-primary-300 bg-brand-primary-300 text-neutral-950 hover:border-neutral-100 hover:bg-neutral-100 focus:bg-neutral-100;

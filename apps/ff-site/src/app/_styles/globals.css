@@ -134,7 +134,7 @@
 
   /* BUTTONS */
   .button {
-    @apply focus:brand-outline rounded-lg border px-6 font-semibold sm:px-9;
+    @apply focus:brand-outline rounded-lg border px-6 font-semibold transition sm:px-9;
 
     &.button--primary {
       @apply border-brand-300 bg-brand-300 text-brand-800 hover:border-brand-400 hover:bg-brand-400;
