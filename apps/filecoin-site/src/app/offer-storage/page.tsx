@@ -114,7 +114,6 @@ export default function OfferStorage() {
             </CardGrid>
           </div>
 
-          {/* Create auto variants for section divider */}
           <SectionDivider variant="light" />
 
           <div className="space-y-6">
