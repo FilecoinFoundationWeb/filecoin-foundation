@@ -40,9 +40,10 @@ export function SimpleCard({
   return (
     <li
       className={clsx(
+        'relative',
         hasTopBorder
-          ? 'border-t border-black/15'
-          : 'rounded-sm border border-black/15',
+          ? 'border-t border-zinc-950/15'
+          : 'rounded-sm border border-zinc-950/15',
       )}
     >
       {isGradientCard && (
@@ -55,13 +56,18 @@ export function SimpleCard({
       )}
       <div className={clsx('flex flex-col gap-6 p-6', hasTopBorder && 'px-0')}>
         {isGradientCard && <Badge>{gradientHeaderAndBadge.badgeText}</Badge>}
-        <div className="flex flex-col gap-3">
-          <Heading tag="h3" variant="xl-medium" className="text-zinc-950">
+        <div className="mb-12 flex flex-col gap-3">
+          <Heading tag="h3" variant="xl-medium">
             {title}
           </Heading>
           <p className="text-zinc-600">{description}</p>
         </div>
-        <CTALink href={cta.href} aria-label={cta.text}>
+        <CTALink
+          inset
+          href={cta.href}
+          aria-label={cta.text}
+          textClassName="absolute bottom-6 left-6"
+        >
           {cta.text}
         </CTALink>
       </div>
