@@ -3,5 +3,9 @@ type HeroSectionCardGridProps = {
 }
 
 export function HeroSectionCardGrid({ children }: HeroSectionCardGridProps) {
-  return <ul className="grid grid-cols-3 gap-8">{children}</ul>
+  return (
+    <ul className="grid gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+      {children}
+    </ul>
+  )
 }
