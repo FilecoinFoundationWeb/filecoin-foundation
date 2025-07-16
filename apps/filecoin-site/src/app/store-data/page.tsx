@@ -1,5 +1,7 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 
+import { trustedByLogos } from '@/data/trustedByLogos'
+
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
@@ -10,7 +12,6 @@ import { SectionContent } from '@/components/SectionContent'
 
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { storageCategories } from './data/storageCategories'
-import { trustedByLogos } from './data/trustedByLogos'
 
 export default function StoreData() {
   return (

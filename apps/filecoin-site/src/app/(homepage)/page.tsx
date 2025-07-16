@@ -5,6 +5,8 @@ import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlog
 
 import { PATHS } from '@/constants/paths'
 
+import { trustedByLogos } from '@/data/trustedByLogos'
+
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { LinkCard } from '@/components/LinkCard'
@@ -23,7 +25,6 @@ import { resilientWebLogos } from './data/resilientWebLogos'
 import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPost } from '@/blog/types/blogPostType'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
-import { trustedByLogos } from '@/store-data/data/trustedByLogos'
 
 export default async function Home() {
   const featuredBlogPosts = getFeaturedBlogPosts({
