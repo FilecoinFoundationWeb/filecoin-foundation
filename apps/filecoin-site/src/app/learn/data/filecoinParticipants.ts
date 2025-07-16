@@ -1,13 +1,8 @@
 import { PATHS } from '@/constants/paths'
 
-import type { SimpleCardProps } from '@/components/SimpleCard'
+import type { SimpleCardData } from '@/components/SimpleCard'
 
-export type FilecoinRole = Pick<
-  SimpleCardProps,
-  'title' | 'description' | 'cta'
->
-
-export const filecoinParticipants: Array<FilecoinRole> = [
+export const filecoinParticipants: Array<SimpleCardData> = [
   {
     title: 'Protocol layer',
     description:

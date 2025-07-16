@@ -1,11 +1,6 @@
-import type { SimpleCardProps } from '@/components/SimpleCard'
+import type { SimpleCardData } from '@/components/SimpleCard'
 
-export type BlockExplorer = Pick<
-  SimpleCardProps,
-  'title' | 'description' | 'cta'
->
-
-export const blockExplorers: Array<BlockExplorer> = [
+export const blockExplorers: Array<SimpleCardData> = [
   {
     title: 'Filfox',
     description:

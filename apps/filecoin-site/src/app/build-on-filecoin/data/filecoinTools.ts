@@ -1,11 +1,10 @@
-import type { SimpleCardProps } from '@/components/SimpleCard'
+import type { SimpleCardData } from '@/components/SimpleCard'
 
-export type FilecoinTool = Pick<
-  SimpleCardProps,
-  'title' | 'description' | 'cta'
-> & {
+export type FilecoinTool = SimpleCardData & {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
 }
+
+const CTA_TEXT = 'Learn more'
 
 export const filecoinTools: Array<FilecoinTool> = [
   {
@@ -15,7 +14,7 @@ export const filecoinTools: Array<FilecoinTool> = [
     difficulty: 'Beginner',
     cta: {
       href: '/learn/erc20-quickstart',
-      text: 'Learn more',
+      text: CTA_TEXT,
     },
   },
   {
@@ -24,7 +23,7 @@ export const filecoinTools: Array<FilecoinTool> = [
     difficulty: 'Intermediate',
     cta: {
       href: '/learn/filframe',
-      text: 'Learn more',
+      text: CTA_TEXT,
     },
   },
   {
@@ -34,7 +33,7 @@ export const filecoinTools: Array<FilecoinTool> = [
     difficulty: 'Advanced',
     cta: {
       href: '/learn/cookbooks',
-      text: 'Learn more',
+      text: CTA_TEXT,
     },
   },
 ]

@@ -4,7 +4,7 @@ import { Badge, type BadgeProps } from '@/components/Badge'
 import { CTALink, type CTALinkProps } from '@/components/CTALink'
 import { Heading } from '@/components/Heading'
 
-export type SimpleCardProps = {
+type SimpleCardProps = {
   title: string
   description: string
   cta: {
@@ -17,6 +17,11 @@ export type SimpleCardProps = {
   }
   hasTopBorder?: boolean
 }
+
+export type SimpleCardData = Pick<
+  SimpleCardProps,
+  'title' | 'description' | 'cta'
+>
 
 const GRADIENT_STEPS = [
   { from: 'var(--color-brand-100)', to: 'var(--color-brand-300)' },

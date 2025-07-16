@@ -1,11 +1,6 @@
-import type { SimpleCardProps } from '@/components/SimpleCard'
+import type { SimpleCardData } from '@/components/SimpleCard'
 
-export type FilecoinEarningsInsight = Pick<
-  SimpleCardProps,
-  'title' | 'description' | 'cta'
->
-
-export const filecoinEarningsInsights: Array<FilecoinEarningsInsight> = [
+export const filecoinEarningsInsights: Array<SimpleCardData> = [
   {
     title: 'Earning filecoin and fiat',
     description:
