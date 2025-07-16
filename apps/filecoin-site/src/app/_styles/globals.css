@@ -27,6 +27,8 @@
     var(--color-brand-300),
     var(--color-brand-500)
   );
+
+  --spacing-readable: 60ch;
 }
 
 @utility brand-outline {
@@ -219,9 +221,43 @@
     @apply bg-white;
   }
 
+  /* SIDE BY SIDE CONTENT */
+  .split-section-heading-text {
+    .dark-section & {
+      @apply text-zinc-200;
+    }
+
+    .light-section &,
+    .gray-section & {
+      @apply text-zinc-600;
+    }
+  }
+
+  .split-section-description-text {
+    @apply text-lg leading-7 text-balance;
+
+    .dark-section & {
+      @apply text-zinc-50;
+    }
+
+    .light-section &,
+    .gray-section & {
+      @apply text-zinc-950;
+    }
+  }
+
   /* TEXT LINKS */
   .text-link {
-    @apply focus:brand-outline text-brand-800 font-normal no-underline hover:underline;
+    @apply focus:brand-outline font-normal no-underline hover:underline;
+
+    .light-section &,
+    .gray-section & {
+      @apply text-brand-800;
+    }
+
+    .dark-section & {
+      @apply text-zinc-400;
+    }
   }
 
   /* TOOLTIP */
