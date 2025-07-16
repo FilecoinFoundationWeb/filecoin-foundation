@@ -16,7 +16,7 @@ import { SectionContent } from '@/components/SectionContent'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { HeroSectionCardGrid } from './components/HeroSectionCardGrid'
-import { StorageProviderSectionGrid } from './components/StorageProviderSectionGrid'
+import { StorageProviderSectionCardGrid } from './components/StorageProviderSectionCardGrid'
 import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
@@ -122,7 +122,7 @@ export default async function Home() {
         >
           <p>TODO: Add logos</p>
           <p>TODO: Add image</p>
-          <StorageProviderSectionGrid>
+          <StorageProviderSectionCardGrid>
             {providerBenefits.map(({ title, description }) => (
               <Card
                 key={title}
@@ -132,7 +132,7 @@ export default async function Home() {
                 description={description}
               />
             ))}
-          </StorageProviderSectionGrid>
+          </StorageProviderSectionCardGrid>
         </SectionContent>
       </PageSection>
 
