@@ -6,7 +6,7 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
   {
     title: 'Proof of Replication (PoRep)',
     description:
-      'Proves a storage provider has created a unique, real copy of the data.',
+      'Proves that a storage provider has created a unique copy of data.',
     cta: {
       href: '#',
       text: CTA_TEXT,
@@ -15,16 +15,16 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
   {
     title: 'Proof of Spacetime (PoSt)',
     description:
-      'Verifies over time that the data is continuously being stored, ensuring long-term reliability.',
+      'Verifies that the unique copy of data remains unchanged over time, with continuous proofs submitted to the network.',
     cta: {
       href: '#',
       text: CTA_TEXT,
     },
   },
   {
-    title: 'Piece Deal Proofs (PDP)',
+    title: 'Proof of Data Possession (PDP)',
     description:
-      'Confirms that specific files are stored as promised, down to the byte.',
+      'Allows a client to check that data is held by a provider, without needing to retrieve the entire file.',
     cta: {
       href: '#',
       text: CTA_TEXT,
@@ -33,16 +33,7 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
   {
     title: 'Filecoin Virtual Machine (FVM)',
     description:
-      'Enables smart contracts and programmable logic directly on Filecoin’s storage layer.',
-    cta: {
-      href: '#',
-      text: CTA_TEXT,
-    },
-  },
-  {
-    title: 'Filecoin Web Services (FWS)',
-    description:
-      'Developer-friendly APIs and services to make building on Filecoin fast and scalable.',
+      'Brings smart contracts and programmability to the newtwork, enabling custom logic and decentralized apps',
     cta: {
       href: '#',
       text: CTA_TEXT,
@@ -52,6 +43,15 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
     title: 'Filecoin Plus (Fil+)',
     description:
       'A social trust system that rewards useful, verifiable data with storage incentives.',
+    cta: {
+      href: '#',
+      text: CTA_TEXT,
+    },
+  },
+  {
+    title: 'Filecoin Programmable Cloud (FPC)',
+    description:
+      'A set of open APIs and tools that make it easy for developers to integrate Filecoin storage into apps and workflows.',
     cta: {
       href: '#',
       text: CTA_TEXT,
