@@ -2,7 +2,7 @@ import type { SimpleCardProps } from '@/components/SimpleCard'
 
 export type FilecoinTool = Pick<
   SimpleCardProps,
-  'title' | 'description' | 'cta' | 'gradient'
+  'title' | 'description' | 'cta'
 > & {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
 }
@@ -17,10 +17,6 @@ export const filecoinTools: Array<FilecoinTool> = [
       href: '/learn/erc20-quickstart',
       text: 'Learn more',
     },
-    gradient: {
-      from: 'var(--color-brand-100)',
-      to: 'var(--color-brand-300)',
-    },
   },
   {
     title: 'FilFrame',
@@ -29,10 +25,6 @@ export const filecoinTools: Array<FilecoinTool> = [
     cta: {
       href: '/learn/filframe',
       text: 'Learn more',
-    },
-    gradient: {
-      from: 'var(--color-brand-400)',
-      to: 'var(--color-brand-600)',
     },
   },
   {
@@ -43,10 +35,6 @@ export const filecoinTools: Array<FilecoinTool> = [
     cta: {
       href: '/learn/cookbooks',
       text: 'Learn more',
-    },
-    gradient: {
-      from: 'var(--color-brand-700)',
-      to: 'var(--color-brand-900)',
     },
   },
 ]

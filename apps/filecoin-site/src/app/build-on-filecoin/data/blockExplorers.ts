@@ -2,7 +2,7 @@ import type { SimpleCardProps } from '@/components/SimpleCard'
 
 export type BlockExplorer = Pick<
   SimpleCardProps,
-  'title' | 'description' | 'cta' | 'gradient'
+  'title' | 'description' | 'cta'
 >
 
 export const blockExplorers: Array<BlockExplorer> = [
