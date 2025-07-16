@@ -217,7 +217,7 @@
   }
 
   /* SIDE BY SIDE CONTENT */
-  .side-by-side-heading {
+  .split-section-heading-text {
     .dark-section & {
       @apply text-zinc-200;
     }
@@ -228,7 +228,7 @@
     }
   }
 
-  .side-by-side-description {
+  .split-section-description-text {
     @apply text-lg leading-7 text-balance;
 
     .dark-section & {

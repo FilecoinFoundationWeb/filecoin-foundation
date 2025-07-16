@@ -25,7 +25,11 @@ export function SplitSectionContent({
   return (
     <div className={clsx('grid grid-cols-6', gap)}>
       <div className="col-span-6 lg:col-span-2 lg:pr-8">
-        <Heading tag="h3" variant="xl-medium" className="side-by-side-heading">
+        <Heading
+          tag="h3"
+          variant="xl-medium"
+          className="split-section-heading-text"
+        >
           {title}
         </Heading>
       </div>
@@ -33,7 +37,7 @@ export function SplitSectionContent({
       <div className={clsx('col-span-6 flex flex-col lg:col-span-4', gap)}>
         <div className="space-y-6">
           {descriptionArray.map((item, index) => (
-            <p key={index} className="side-by-side-description">
+            <p key={index} className="split-section-description-text">
               {item}
             </p>
           ))}
