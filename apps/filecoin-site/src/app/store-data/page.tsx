@@ -17,8 +17,8 @@ export default function StoreData() {
     <>
       <PageSection backgroundVariant="dark">
         <PageHeader
-          title="Secure, decentralized storage for data that matters"
-          description="A powerful and dynamic distributed cloud storage network for your data."
+          title="Decentralized, Secure Storage for Data that Matters "
+          description="A dynamic and powerful distributed storage network for your data."
           cta={
             <Button href="" variant="primary">
               Explore storage solutions
@@ -42,13 +42,10 @@ export default function StoreData() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
-          title="Decentralized, secure, and verifiable by design"
-          description="Filecoin offers a powerful alternative to traditional cloud storage —
-          combining a distributed network architecture with built-in
-          cryptographic guarantees. Your data stays available, authentic, and
-          tamper-proof over time."
+          title="Future-proof your data infrastructure"
+          description="Filecoin is a powerful alternative to traditional cloud storage. Filecoin ensures your data always remains secure and verified on a daily basis – so that you can store your data with confidence."
         >
-          <CardGrid as="ul" cols="mdThree">
+          <CardGrid as="ul" cols="mdTwo">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -89,9 +86,8 @@ export default function StoreData() {
 
       <PageSection backgroundVariant="gray">
         <SectionContent
-          title="Don't see your project?"
-          description="Showcase your Filecoin storage solution in this directory and reach
-          thousands of data owners."
+          title="Don't see your storage solution?"
+          description="Showcase your Filecoin storage solution in this storage directory and reach thousands of data clients."
           cta={
             <Button href="" variant="primary">
               Submit your storage solution
