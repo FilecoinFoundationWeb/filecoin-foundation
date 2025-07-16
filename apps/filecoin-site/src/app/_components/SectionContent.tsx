@@ -1,3 +1,5 @@
+import { clsx } from 'clsx'
+
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 
 import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
@@ -32,7 +34,7 @@ export function SectionContent({
       </div>
       {children && <div className="mt-30 flex flex-col gap-30">{children}</div>}
       {cta && (
-        <div className="mt-30">
+        <div className={clsx(children ? 'mt-30' : 'mt-15')}>
           <ButtonRow buttons={cta} centered={centerCTA} />
         </div>
       )}
