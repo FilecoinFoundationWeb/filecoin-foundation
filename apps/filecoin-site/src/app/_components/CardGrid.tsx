@@ -6,6 +6,7 @@ type CardGridProps = {
   as?: React.ElementType
 }
 
+// Will be renamed
 const variants = {
   'col2-one': 'gap-8 md:grid-cols-2',
   'col2-two': 'gap-x-15 gap-y-8 md:grid-cols-2',
