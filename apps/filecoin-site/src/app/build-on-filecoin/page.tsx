@@ -1,8 +1,8 @@
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
+import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
 import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -43,7 +43,7 @@ export default function BuildOnFilecoin() {
           description="          From powering AI workflows to enabling cross-chain data bridges,
           Filecoin provides programmable, permissionless storage infrastructure."
         >
-          <CardGrid as="ul" cols="mdThree">
+          <CardGrid variant="col3-two">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -65,11 +65,12 @@ export default function BuildOnFilecoin() {
         >
           <div className="space-y-30">
             <div className="flex flex-col gap-20">
+              {/* Check spacing here */}
               <Heading tag="h3" variant="3xl-medium">
                 Getting stared
               </Heading>
 
-              <CardGrid as="ul" cols="mdThree">
+              <CardGrid variant="col3-four">
                 {filecoinTools.map(
                   ({ title, description, difficulty, cta }, index) => (
                     <SimpleCard
@@ -94,21 +95,24 @@ export default function BuildOnFilecoin() {
                 Developer resources
               </Heading>
 
-              <CardGrid as="ul" cols="mdTwo">
-                {developerResources.map(
-                  ({ title, description, href, icon }) => (
-                    <LinkCard
-                      key={title}
-                      as="li"
-                      backgroundVariant="light"
-                      title={title}
-                      description={description}
-                      href={href}
-                      icon={icon}
-                    />
-                  ),
-                )}
-              </CardGrid>
+              {/* Make this max-w-6xl a layout maybe */}
+              <div className="max-w-6xl">
+                <CardGrid variant="col2-two">
+                  {developerResources.map(
+                    ({ title, description, href, icon }) => (
+                      <LinkCard
+                        key={title}
+                        as="li"
+                        backgroundVariant="light"
+                        title={title}
+                        description={description}
+                        href={href}
+                        icon={icon}
+                      />
+                    ),
+                  )}
+                </CardGrid>
+              </div>
             </div>
 
             <SectionDivider variant="dark" />
@@ -124,7 +128,7 @@ export default function BuildOnFilecoin() {
                 </DescriptionText>
               </div>
 
-              <CardGrid as="ul" cols="mdThree">
+              <CardGrid variant="col3-four">
                 {blockExplorers.map(({ title, description, cta }) => (
                   <SimpleCard
                     key={title}
@@ -157,7 +161,7 @@ export default function BuildOnFilecoin() {
           description="Connect with a vibrant network of developers building on Filecoin.
           Connect, collaborate, and grow with the ecosystem."
         >
-          <CardGrid as="ul" cols="mdThree">
+          <CardGrid variant="col3-one">
             {communityConnections.map(({ title, description, href, icon }) => (
               <LinkCard
                 key={title}
@@ -180,7 +184,7 @@ export default function BuildOnFilecoin() {
             advancing the protocol and building the tools that power its
             ecosystem."
         >
-          <CardGrid as="ul" cols="mdTwo">
+          <CardGrid variant="col2-three">
             {communityHubs.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -199,19 +203,21 @@ export default function BuildOnFilecoin() {
           description="Whether you're just getting started or looking to deepen your
           contributions, there are many ways to get involved."
         >
-          <CardGrid as="ul" cols="mdTwo">
-            {getInvolvedOptions.map(({ title, description, href, icon }) => (
-              <LinkCard
-                key={title}
-                as="li"
-                backgroundVariant="dark"
-                title={title}
-                description={description}
-                href={href}
-                icon={icon}
-              />
-            ))}
-          </CardGrid>
+          <div className="max-w-6xl">
+            <CardGrid variant="col2-two">
+              {getInvolvedOptions.map(({ title, description, href, icon }) => (
+                <LinkCard
+                  key={title}
+                  as="li"
+                  backgroundVariant="dark"
+                  title={title}
+                  description={description}
+                  href={href}
+                  icon={icon}
+                />
+              ))}
+            </CardGrid>
+          </div>
         </SectionContent>
       </PageSection>
     </>
