@@ -8,7 +8,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
-import { SideBySideContent } from '@/components/SideBySideContent'
+import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { coreInfrastructureSpecs } from './data/coreInfrastructureSpecs'
 import { dataCenterRequirements } from './data/dataCenterRequirements'
@@ -134,7 +134,7 @@ export default function OfferStorage() {
 
       <PageSection backgroundVariant="gray">
         <SectionContent title="Return on investment">
-          <SideBySideContent
+          <SplitSectionContent
             title="Break even in 18 to 24 months."
             description={[
               'Most Storage Providers recover their hardware investment within 18 to 24 months, depending on uptime, deal-making activity, and operational efficiency.',

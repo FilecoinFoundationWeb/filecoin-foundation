@@ -13,7 +13,7 @@ type SideBySideContentProps = {
 
 const gap = 'gap-8 lg:gap-16'
 
-export function SideBySideContent({
+export function SplitSectionContent({
   title,
   description,
   cta,

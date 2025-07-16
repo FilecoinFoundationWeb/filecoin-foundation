@@ -11,7 +11,7 @@ import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
-import { SideBySideContent } from '@/components/SideBySideContent'
+import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
@@ -53,7 +53,7 @@ export default async function Home() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Build apps better with resilient storage">
-          <SideBySideContent
+          <SplitSectionContent
             title="Open. Scalable. Built for the future."
             description={[
               'Filecoin gives developers a decentralized, verifiable storage layer that scales — perfect for AI pipelines, dApps, data-heavy SaaS platforms, and more. Accelerate development with open source tools, native IPFS integration, instant retrieval, and a permissionless storage marketplace.',
@@ -82,7 +82,7 @@ export default async function Home() {
         <SectionContent title="Store your data with confidence">
           <p>TODO: Add logos</p>
 
-          <SideBySideContent
+          <SplitSectionContent
             title="Secure, verifiable, long-term storage that you control."
             description="No matter what you’re storing — your data remains tamper-proof and verifiable. Filecoin offers cost-effective storage backed by a global network of independent data centers with automatic replication and lower egress fees."
             cta={[

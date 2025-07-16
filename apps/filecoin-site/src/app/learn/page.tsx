@@ -10,7 +10,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
-import { SideBySideContent } from '@/components/SideBySideContent'
+import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { ComparisonTable } from './components/ComparisonTable'
 import { ecosystemPartners } from './data/ecosystemPartners'
@@ -58,7 +58,7 @@ export default function Learn() {
 
       <PageSection backgroundVariant="gray">
         <SectionContent title="Breaking free from centralized control">
-          <SideBySideContent
+          <SplitSectionContent
             title="Why decentralize storage?"
             description={[
               "Today, most of the world's data lives in the hands of a few centralized cloud providers. This creates risks — from single points of failure and rising costs to censorship and opaque control.",
