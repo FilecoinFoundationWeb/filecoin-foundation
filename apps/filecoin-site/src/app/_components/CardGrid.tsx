@@ -18,5 +18,5 @@ const variants = {
 }
 
 export function CardGrid({ as: Tag = 'ul', children, variant }: CardGridProps) {
-  return <Tag className={clsx('gap- grid', variants[variant])}>{children}</Tag>
+  return <Tag className={clsx('grid', variants[variant])}>{children}</Tag>
 }
