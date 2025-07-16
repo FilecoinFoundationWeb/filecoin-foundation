@@ -17,8 +17,8 @@ export default function StoreData() {
     <>
       <PageSection backgroundVariant="dark">
         <PageHeader
-          title="Secure, decentralized storage for data that matters"
-          description="A powerful and dynamic distributed cloud storage network for your data."
+          title="Decentralized, Secure Storage for Data that Matters "
+          description="A dynamic and powerful distributed storage network for your data."
           cta={
             <Button href="" variant="primary">
               Explore storage solutions
@@ -86,9 +86,8 @@ export default function StoreData() {
 
       <PageSection backgroundVariant="gray">
         <SectionContent
-          title="Don't see your project?"
-          description="Showcase your Filecoin storage solution in this directory and reach
-          thousands of data owners."
+          title="Don't see your storage solution?"
+          description="Showcase your Filecoin storage solution in this storage directory and reach thousands of data clients."
           cta={
             <Button href="" variant="primary">
               Submit your storage solution
