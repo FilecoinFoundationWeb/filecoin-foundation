@@ -77,7 +77,7 @@ export default function BuildOnFilecoin() {
                       description={description}
                       cta={cta}
                       gradient={gradient}
-                      badge={{ text: difficulty }}
+                      badge={difficulty}
                     />
                   ),
                 )}
@@ -122,12 +122,12 @@ export default function BuildOnFilecoin() {
               </div>
 
               <CardGrid as="ul" cols="mdThree">
-                {blockExplorers.map(({ name, description, href }) => (
+                {blockExplorers.map(({ title, description, cta }) => (
                   <SimpleCard
-                    key={name}
-                    title={name}
+                    key={title}
+                    title={title}
                     description={description}
-                    cta={{ href, text: `Visit ${name}` }}
+                    cta={cta}
                   />
                 ))}
               </CardGrid>

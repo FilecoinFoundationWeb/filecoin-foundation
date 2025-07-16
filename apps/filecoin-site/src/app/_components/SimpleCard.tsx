@@ -15,9 +15,7 @@ export type SimpleCardProps = {
     from: string
     to: string
   }
-  badge?: {
-    text: BadgeProps['children']
-  }
+  badge?: BadgeProps['children']
   hasTopBorder?: boolean
 }
 
@@ -30,13 +28,13 @@ export function SimpleCard({
   hasTopBorder = false,
 }: SimpleCardProps) {
   const isGradientCard = gradient && badge
-  const isBorderedCard = hasTopBorder
 
   return (
     <li
       className={clsx(
-        'border border-black/15',
-        isBorderedCard ? 'rounded-none border-x-0 border-b-0' : 'rounded-sm',
+        hasTopBorder
+          ? 'border-t border-black/15'
+          : 'rounded-sm border border-black/15',
       )}
     >
       {isGradientCard && (
@@ -47,10 +45,8 @@ export function SimpleCard({
           }}
         />
       )}
-      <div
-        className={clsx('flex flex-col gap-6 p-6', isBorderedCard && 'px-0')}
-      >
-        {isGradientCard && <Badge>{badge.text}</Badge>}
+      <div className={clsx('flex flex-col gap-6 p-6', hasTopBorder && 'px-0')}>
+        {isGradientCard && <Badge>{badge}</Badge>}
         <div className="flex flex-col gap-3">
           <Heading tag="h3" variant="xl-medium" className="text-zinc-950">
             {title}

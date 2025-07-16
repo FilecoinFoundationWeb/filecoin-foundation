@@ -5,7 +5,7 @@ export type FilecoinEarningsInsight = Pick<
   'title' | 'description' | 'cta'
 >
 
-export const filecoinEarningsInsights: FilecoinEarningsInsight[] = [
+export const filecoinEarningsInsights: Array<FilecoinEarningsInsight> = [
   {
     title: 'Earning filecoin and fiat',
     description:
@@ -24,4 +24,4 @@ export const filecoinEarningsInsights: FilecoinEarningsInsight[] = [
       text: 'Learn more',
     },
   },
-] as const
+]

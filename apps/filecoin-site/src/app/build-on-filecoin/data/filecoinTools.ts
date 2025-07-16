@@ -7,7 +7,7 @@ export type FilecoinTool = Pick<
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
 }
 
-export const filecoinTools: FilecoinTool[] = [
+export const filecoinTools: Array<FilecoinTool> = [
   {
     title: 'ERC-20 Quickstart',
     description:
@@ -49,4 +49,4 @@ export const filecoinTools: FilecoinTool[] = [
       to: 'var(--color-brand-900)',
     },
   },
-] as const
+]

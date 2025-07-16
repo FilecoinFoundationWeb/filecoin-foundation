@@ -7,7 +7,7 @@ export type FilecoinRole = Pick<
   'title' | 'description' | 'cta'
 >
 
-export const filecoinParticipants: FilecoinRole[] = [
+export const filecoinParticipants: Array<FilecoinRole> = [
   {
     title: 'Protocol layer',
     description:
@@ -53,4 +53,4 @@ export const filecoinParticipants: FilecoinRole[] = [
       href: PATHS.STORE_DATA.path,
     },
   },
-] as const
+]
