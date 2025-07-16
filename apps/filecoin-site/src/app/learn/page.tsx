@@ -10,6 +10,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SimpleCard } from '@/components/SimpleCard'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { ComparisonTable } from './components/ComparisonTable'
@@ -123,15 +124,13 @@ export default function Learn() {
 
                 <CardGrid as="ul" cols="mdThree">
                   {filecoinParticipants.map(({ title, description, cta }) => (
-                    <li key={title} className="flex flex-col gap-6">
-                      <div className="space-y-3">
-                        <Heading tag="h4" variant="xl-medium">
-                          {title}
-                        </Heading>
-                        <p className="color-zinc-600">{description}</p>
-                      </div>
-                      <a href={cta.href}>{cta.label}</a>
-                    </li>
+                    <SimpleCard
+                      key={title}
+                      hasTopBorder
+                      title={title}
+                      description={description}
+                      cta={cta}
+                    />
                   ))}
                 </CardGrid>
               </div>
@@ -161,16 +160,13 @@ export default function Learn() {
           description="Filecoin provides the foundation for critically important public data, such as open access scientific data, creative commons media, historical archives, preservation, and more."
         >
           <CardGrid as="ul" cols="mdTwo">
-            {ecosystemPartners.map(({ name, description, href }) => (
-              <li key={name} className="flex flex-col gap-6">
-                <div className="space-y-3">
-                  <Heading tag="h4" variant="xl-medium">
-                    {name}
-                  </Heading>
-                  <p className="color-zinc-600">{description}</p>
-                </div>
-                <a href={href}>Visit website</a>
-              </li>
+            {ecosystemPartners.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                title={title}
+                description={description}
+                cta={cta}
+              />
             ))}
           </CardGrid>
         </SectionContent>
@@ -182,16 +178,13 @@ export default function Learn() {
           description="Filecoin is more than storage. It's a full stack of innovation."
         >
           <CardGrid as="ul" cols="mdThree">
-            {filecoinStackFeatures.map(({ title, description, href }) => (
-              <li key={title} className="flex flex-col gap-6">
-                <div className="space-y-3">
-                  <Heading tag="h4" variant="xl-medium">
-                    {title}
-                  </Heading>
-                  <p className="color-zinc-600">{description}</p>
-                </div>
-                <a href={href}>Learn more</a>
-              </li>
+            {filecoinStackFeatures.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                title={title}
+                description={description}
+                cta={cta}
+              />
             ))}
           </CardGrid>
         </SectionContent>

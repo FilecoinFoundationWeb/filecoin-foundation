@@ -1,34 +1,44 @@
-type CommunityHub = {
-  name: string
-  description: string
-  href: string
-  //   logo: string
-}
+import type { SimpleCardData } from '@/components/SimpleCard'
 
-export const communityHubs: CommunityHub[] = [
+export const communityHubs: Array<SimpleCardData> = [
   {
-    name: 'Filecoin Foundation',
+    title: 'Filecoin Foundation',
     description: 'Network governance.',
-    href: 'https://fil.org/',
+    cta: {
+      href: 'https://fil.org/',
+      text: 'Visit Filecoin Foundation',
+    },
   },
   {
-    name: 'FIDL',
+    title: 'FIDL',
     description: 'Research and protocol design.',
-    href: 'https://fidl.network/',
+    cta: {
+      href: 'https://fidl.network/',
+      text: 'Visit FIDL',
+    },
   },
   {
-    name: 'FilOz',
+    title: 'FilOz',
     description: 'Core software development.',
-    href: 'https://filoz.dev/',
+    cta: {
+      href: 'https://filoz.dev/',
+      text: 'Visit FilOz',
+    },
   },
   {
-    name: 'Fil-B',
+    title: 'Fil-B',
     description: 'Builder community and education.',
-    href: 'https://fil-b.dev/',
+    cta: {
+      href: 'https://fil-b.dev/',
+      text: 'Visit Fil-B',
+    },
   },
   {
-    name: 'ANSA',
+    title: 'ANSA',
     description: 'Applied research and investor relations.',
-    href: 'https://ansa.network/',
+    cta: {
+      href: 'https://ansa.network/',
+      text: 'Visit ANSA',
+    },
   },
 ] as const

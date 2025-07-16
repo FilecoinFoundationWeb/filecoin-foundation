@@ -9,6 +9,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SimpleCard } from '@/components/SimpleCard'
 
 import { blockExplorers } from './data/blockExplorers'
 import { communityConnections } from './data/communityConnections'
@@ -70,17 +71,17 @@ export default function BuildOnFilecoin() {
 
               <CardGrid as="ul" cols="mdThree">
                 {filecoinTools.map(
-                  ({ title, description, difficulty, href }) => (
-                    <li key={title} className="flex flex-col gap-6">
-                      <span>{difficulty}</span>
-                      <div className="space-y-3">
-                        <Heading tag="h4" variant="xl-medium">
-                          {title}
-                        </Heading>
-                        <p>{description}</p>
-                      </div>
-                      <a href={href}>Learn more</a>
-                    </li>
+                  ({ title, description, difficulty, cta }, index) => (
+                    <SimpleCard
+                      key={title}
+                      title={title}
+                      description={description}
+                      cta={cta}
+                      gradientHeaderAndBadge={{
+                        gradientIndex: index,
+                        badgeText: difficulty,
+                      }}
+                    />
                   ),
                 )}
               </CardGrid>
@@ -124,16 +125,13 @@ export default function BuildOnFilecoin() {
               </div>
 
               <CardGrid as="ul" cols="mdThree">
-                {blockExplorers.map(({ name, description, href }) => (
-                  <li key={name} className="flex flex-col gap-6">
-                    <div className="space-y-3">
-                      <Heading tag="h4" variant="xl-medium">
-                        {name}
-                      </Heading>
-                      <p>{description}</p>
-                    </div>
-                    <a href={href}>Visit {name}</a>
-                  </li>
+                {blockExplorers.map(({ title, description, cta }) => (
+                  <SimpleCard
+                    key={title}
+                    title={title}
+                    description={description}
+                    cta={cta}
+                  />
                 ))}
               </CardGrid>
             </div>
@@ -183,18 +181,13 @@ export default function BuildOnFilecoin() {
             ecosystem."
         >
           <CardGrid as="ul" cols="mdTwo">
-            {communityHubs.map(({ name, description, href }) => (
-              <li key={name} className="flex flex-col gap-6">
-                <div className="space-y-3">
-                  <Heading tag="h4" variant="xl-medium">
-                    {name}
-                  </Heading>
-                  <p className="text-zinc-600">{description}</p>
-                </div>
-                <a className="font-semibold text-zinc-600" href={href}>
-                  Visit {name}
-                </a>
-              </li>
+            {communityHubs.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                title={title}
+                description={description}
+                cta={cta}
+              />
             ))}
           </CardGrid>
         </SectionContent>

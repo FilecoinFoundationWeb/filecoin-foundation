@@ -212,6 +212,11 @@
     @apply hover:text-brand-primary-400;
   }
 
+  /* CTALINK */
+  .cta-link {
+    @apply text-brand-primary-300;
+  }
+
   /* FILTER SIDEBAR */
   .filter-sidebar-button {
     @apply text-brand-primary-300 hover:bg-brand-primary-800 rounded-xs;

@@ -1,7 +1,8 @@
+import type { CTALinkProps } from '@filecoin-foundation/ui/CTALink'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 
-import { CTALink, type CTALinkProps } from '@/components/CTALink'
+import { CTALink } from '@/components/CTALink'
 
 export type IconCardWithCTAProps = {
   title: string

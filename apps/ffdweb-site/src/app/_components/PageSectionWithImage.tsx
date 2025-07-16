@@ -7,9 +7,8 @@ import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageTyp
 
 import { graphicsData } from '@/data/graphicsData'
 
+import { CTALink, type CTALinkProps } from '@/components/CTALink'
 import { PageSection, type PageSectionProps } from '@/components/PageSection'
-
-import { CTALink, type CTALinkProps } from './CTALink'
 
 type PageSectionWithImageProps = PageSectionProps & {
   image: StaticImageProps

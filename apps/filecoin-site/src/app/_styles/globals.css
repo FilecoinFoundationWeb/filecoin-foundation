@@ -181,6 +181,11 @@
     @apply icon-button;
   }
 
+  /* CTALINK */
+  .cta-link {
+    @apply text-zinc-600;
+  }
+
   /* NAVIGATION */
   .navigation-link {
     .light-section & {

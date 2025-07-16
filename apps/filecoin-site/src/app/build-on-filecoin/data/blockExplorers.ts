@@ -1,36 +1,47 @@
-type BlockExplorer = {
-  name: string
-  description: string
-  href: string
-}
+import type { SimpleCardData } from '@/components/SimpleCard'
 
-export const blockExplorers: BlockExplorer[] = [
+export const blockExplorers: Array<SimpleCardData> = [
   {
-    name: 'Filfox',
+    title: 'Filfox',
     description:
       'Popular explorer for viewing messages, addresses, and network stats.',
-    href: 'https://filfox.info/',
+    cta: {
+      href: 'https://filfox.info/',
+      text: 'Visit Filfox',
+    },
   },
   {
-    name: 'Beryx',
+    title: 'Beryx',
     description:
       'A real-time explorer built for developers, featuring FEVM insights.',
-    href: 'https://beryx.xyz/',
+    cta: {
+      href: 'https://beryx.xyz/',
+      text: 'Visit Beryx',
+    },
   },
   {
-    name: 'Blockscout (FEVM)',
+    title: 'Blockscout (FEVM)',
     description: 'EVM-compatible explorer to view smart contracts activity.',
-    href: 'https://filecoin.blockscout.com/',
+    cta: {
+      href: 'https://filecoin.blockscout.com/',
+      text: 'Visit Blockscout (FEVM)',
+    },
   },
   {
-    name: 'Filscan',
+    title: 'Filscan',
     description: 'Overview of storage deals, messages, and chain activity.',
-    href: 'https://filscan.io/',
+    cta: {
+      href: 'https://filscan.io/',
+      text: 'Visit Filscan',
+    },
   },
   {
-    name: 'Filutils',
+    title: 'Filutils',
     description:
       'A feature-rich tool for querying actors and accessing onchain data.',
-    href: 'https://filutils.com/',
+    cta: {
+      href: 'https://filutils.com/',
+      text: 'Visit Filutils',
+    },
   },
-] as const
+]
