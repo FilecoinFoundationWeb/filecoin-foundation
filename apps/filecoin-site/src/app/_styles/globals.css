@@ -217,7 +217,6 @@
   }
 
   /* SIDE BY SIDE CONTENT */
-
   .side-by-side-heading {
     .dark-section & {
       @apply text-zinc-200;
