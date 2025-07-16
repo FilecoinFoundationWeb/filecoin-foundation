@@ -6,6 +6,6 @@ export function NetworkSectionCardGrid({
   children,
 }: NetworkSectionCardGridProps) {
   return (
-    <ul className="grid gap-16 md:grid-cols-2 xl:grid-cols-4">{children}</ul>
+    <ul className="grid gap-15 md:grid-cols-2 xl:grid-cols-4">{children}</ul>
   )
 }

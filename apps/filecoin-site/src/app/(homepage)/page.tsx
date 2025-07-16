@@ -16,6 +16,7 @@ import { SectionContent } from '@/components/SectionContent'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { HeroSectionCardGrid } from './components/HeroSectionCardGrid'
+import { LatestNewsSectionCardGrid } from './components/LatestNewsSectionCardGrid'
 import { NetworkSectionCardGrid } from './components/NetworkSectionCardGrid'
 import { StorageProviderSectionCardGrid } from './components/StorageProviderSectionCardGrid'
 import { communityLinks } from './data/communityLinks'
@@ -170,7 +171,7 @@ export default async function Home() {
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
         >
-          <CardGrid as="ul" cols="lgThree">
+          <LatestNewsSectionCardGrid>
             {featuredBlogPosts.map((post: BlogPost) => {
               const {
                 title,
@@ -200,7 +201,7 @@ export default async function Home() {
                 />
               )
             })}
-          </CardGrid>
+          </LatestNewsSectionCardGrid>
         </SectionContent>
       </PageSection>
 
