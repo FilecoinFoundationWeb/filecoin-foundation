@@ -1,6 +1,7 @@
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
+import { Section } from '@/components/Section'
 
 import { BlogPostContainer } from '../components/BlogPostContainer'
 import { BlogPostHeader } from '../components/BlogPostHeader'
@@ -19,19 +20,21 @@ export default async function BlogPost({ params }: BlogPostProps) {
   const { image, categories, author, publishedOn, title, content } = data
 
   return (
-    <div className="space-y-8 pb-30">
-      <BlogPostHeader
-        image={{ url: image?.url || headerImage.src }}
-        categories={categories}
-        author={author}
-        date={publishedOn}
-        title={title}
-        slug={slug}
-      />
+    <Section backgroundVariant="light">
+      <div className="space-y-8 pb-30">
+        <BlogPostHeader
+          image={{ url: image?.url || headerImage.src }}
+          categories={categories}
+          author={author}
+          date={publishedOn}
+          title={title}
+          slug={slug}
+        />
 
-      <BlogPostContainer>
-        <MarkdownContent>{content}</MarkdownContent>
-      </BlogPostContainer>
-    </div>
+        <BlogPostContainer>
+          <MarkdownContent>{content}</MarkdownContent>
+        </BlogPostContainer>
+      </div>
+    </Section>
   )
 }
