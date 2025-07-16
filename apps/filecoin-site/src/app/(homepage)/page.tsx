@@ -1,6 +1,5 @@
 import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
@@ -15,6 +14,7 @@ import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
+import { CommunitySectionCardGrid } from './components/CommunitySectionCardGrid'
 import { HeroSectionCardGrid } from './components/HeroSectionCardGrid'
 import { LatestNewsSectionCardGrid } from './components/LatestNewsSectionCardGrid'
 import { NetworkSectionCardGrid } from './components/NetworkSectionCardGrid'
@@ -210,7 +210,7 @@ export default async function Home() {
           title="Join the community"
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
-          <CardGrid as="ul" cols="smTwo">
+          <CommunitySectionCardGrid>
             {communityLinks.map(({ title, href, icon }) => (
               <LinkCard
                 key={title}
@@ -221,7 +221,7 @@ export default async function Home() {
                 icon={icon}
               />
             ))}
-          </CardGrid>
+          </CommunitySectionCardGrid>
         </SectionContent>
       </PageSection>
     </>
