@@ -107,7 +107,6 @@ export default function Learn() {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        {/* Create Section content component here, but an alternative */}
         <SectionDivider variant="light" />
 
         <Heading tag="h3" variant="3xl-medium">

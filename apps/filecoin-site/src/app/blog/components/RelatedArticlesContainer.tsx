@@ -1,7 +1,7 @@
 import { clsx } from 'clsx'
 
 import { Container } from '@/components/Container'
-import { pageSectionStyle } from '@/components/PageSection'
+import { pageSectionPadding } from '@/components/PageSection'
 
 type RelatedArticlesContainerProps = {
   children: React.ReactNode
@@ -12,7 +12,7 @@ export function RelatedArticlesContainer({
 }: RelatedArticlesContainerProps) {
   return (
     <Container>
-      <div className={clsx(pageSectionStyle, 'mx-auto max-w-5xl')}>
+      <div className={clsx(pageSectionPadding, 'mx-auto max-w-5xl')}>
         {children}
       </div>
     </Container>

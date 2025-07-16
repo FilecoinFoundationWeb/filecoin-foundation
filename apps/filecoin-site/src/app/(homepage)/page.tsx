@@ -15,6 +15,7 @@ import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
+import { CardGridContainer } from './components/CardGridContainer'
 import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
@@ -206,7 +207,7 @@ export default async function Home() {
           title="Join the community"
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
-          <div className="max-w-4xl">
+          <CardGridContainer>
             <CardGrid variant="col2-one">
               {communityLinks.map(({ title, href, icon }) => (
                 <LinkCard
@@ -219,7 +220,7 @@ export default async function Home() {
                 />
               ))}
             </CardGrid>
-          </div>
+          </CardGridContainer>
         </SectionContent>
       </PageSection>
     </>

@@ -11,6 +11,7 @@ import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
 import { SimpleCard } from '@/components/SimpleCard'
 
+import { CardGridContainer } from './components/CardGridContainer'
 import { blockExplorers } from './data/blockExplorers'
 import { communityConnections } from './data/communityConnections'
 import { communityHubs } from './data/communityHubs'
@@ -65,7 +66,6 @@ export default function BuildOnFilecoin() {
         >
           <div className="space-y-30">
             <div className="flex flex-col gap-20">
-              {/* Check spacing here */}
               <Heading tag="h3" variant="3xl-medium">
                 Getting stared
               </Heading>
@@ -95,8 +95,7 @@ export default function BuildOnFilecoin() {
                 Developer resources
               </Heading>
 
-              {/* Make this max-w-6xl a layout maybe */}
-              <div className="max-w-6xl">
+              <CardGridContainer>
                 <CardGrid variant="col2-two">
                   {developerResources.map(
                     ({ title, description, href, icon }) => (
@@ -112,7 +111,7 @@ export default function BuildOnFilecoin() {
                     ),
                   )}
                 </CardGrid>
-              </div>
+              </CardGridContainer>
             </div>
 
             <SectionDivider variant="dark" />
@@ -203,7 +202,7 @@ export default function BuildOnFilecoin() {
           description="Whether you're just getting started or looking to deepen your
           contributions, there are many ways to get involved."
         >
-          <div className="max-w-6xl">
+          <CardGridContainer>
             <CardGrid variant="col2-two">
               {getInvolvedOptions.map(({ title, description, href, icon }) => (
                 <LinkCard
@@ -217,7 +216,7 @@ export default function BuildOnFilecoin() {
                 />
               ))}
             </CardGrid>
-          </div>
+          </CardGridContainer>
         </SectionContent>
       </PageSection>
     </>
