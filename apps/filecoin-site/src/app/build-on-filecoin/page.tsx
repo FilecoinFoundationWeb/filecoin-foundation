@@ -1,6 +1,9 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 
+import { graphicsData } from '@/data/graphicsData'
+
+import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
@@ -9,6 +12,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SectionImage } from '@/components/SectionImage'
 import { SimpleCard } from '@/components/SimpleCard'
 
 import { blockExplorers } from './data/blockExplorers'
@@ -22,21 +26,25 @@ import { getInvolvedOptions } from './data/getInvolvedOptions'
 export default function BuildOnFilecoin() {
   return (
     <>
-      <PageSection backgroundVariant="dark">
-        <PageHeader
-          title="Build on Filecoin with programmable storage"
-          description="Build on Filecoin — the programmable, permissionless storage network
+      <BackgroundImage
+        withOverlay
+        src={graphicsData.buildOnFilecoinHero.data.src}
+      >
+        <PageSection backgroundVariant="transparentDark">
+          <PageHeader
+            title="Build on Filecoin with programmable storage"
+            description="Build on Filecoin — the programmable, permissionless storage network
           with cryptographic verification and global redundancy by design.
           Integrate storage that safeguards data integrity at every layer and
           scales with your application's needs."
-          cta={
-            <Button href="" variant="primary">
-              Explore documentation
-            </Button>
-          }
-        />
-      </PageSection>
-
+            cta={
+              <Button href="" variant="primary">
+                Explore documentation
+              </Button>
+            }
+          />
+        </PageSection>
+      </BackgroundImage>
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Beyond storage, a foundation for next-gen applications"
@@ -148,6 +156,10 @@ export default function BuildOnFilecoin() {
               Visit the ecosystem explorer
             </Button>
           }
+        />
+        <SectionImage
+          src={graphicsData.buildOnFilecoinSection.data}
+          alt="Satellite view of Earth showing city lights across continents"
         />
       </PageSection>
 

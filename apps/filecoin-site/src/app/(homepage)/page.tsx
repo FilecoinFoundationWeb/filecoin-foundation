@@ -5,12 +5,16 @@ import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlog
 
 import { PATHS } from '@/constants/paths'
 
+import { graphicsData } from '@/data/graphicsData'
+
+import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
+import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { communityLinks } from './data/communityLinks'
@@ -30,26 +34,28 @@ export default async function Home() {
 
   return (
     <>
-      <PageSection backgroundVariant="transparent">
-        <PageHeader
-          description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
-          title="Preserving humanity's most important information"
-        />
-        <div className="py-8 sm:py-12"></div>
-        <CardGrid as="ul" cols="lgThree">
-          {networkActions.map(({ title, description, href, icon }) => (
-            <LinkCard
-              key={title}
-              as="li"
-              backgroundVariant="light"
-              title={title}
-              description={description}
-              href={href}
-              icon={icon}
-            />
-          ))}
-        </CardGrid>
-      </PageSection>
+      <BackgroundImage src={graphicsData.homepageHero.data.src}>
+        <PageSection backgroundVariant="transparent">
+          <PageHeader
+            description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
+            title="Preserving humanity's most important information"
+          />
+          <div className="py-8 sm:py-12"></div>
+          <CardGrid as="ul" cols="lgThree">
+            {networkActions.map(({ title, description, href, icon }) => (
+              <LinkCard
+                key={title}
+                as="li"
+                backgroundVariant="light"
+                title={title}
+                description={description}
+                href={href}
+                icon={icon}
+              />
+            ))}
+          </CardGrid>
+        </PageSection>
+      </BackgroundImage>
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Build apps better with resilient storage">
@@ -111,6 +117,10 @@ export default async function Home() {
             </Button>,
           ]}
         >
+          <SectionImage
+            src={graphicsData.homepageSection.data}
+            alt={graphicsData.homepageSection.alt}
+          />
           <CardGrid as="ul" cols="lgThree">
             {providerBenefits.map(({ title, description }) => (
               <Card

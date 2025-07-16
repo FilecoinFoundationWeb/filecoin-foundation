@@ -1,5 +1,8 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 
+import { graphicsData } from '@/data/graphicsData'
+
+import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
@@ -7,6 +10,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SectionImage } from '@/components/SectionImage'
 import { SimpleCard } from '@/components/SimpleCard'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
@@ -18,17 +22,19 @@ import { specializedInfrastructureSpecs } from './data/specializedInfrastructure
 export default function OfferStorage() {
   return (
     <>
-      <PageSection backgroundVariant="dark">
-        <PageHeader
-          title="Join the world's largest decentralized storage network"
-          description="Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important data. If you've got the infrastructure, you can become a core part of it."
-          cta={
-            <Button href="" variant="primary">
-              Check requirements
-            </Button>
-          }
-        />
-      </PageSection>
+      <BackgroundImage withOverlay src={graphicsData.offerStorageHero.data.src}>
+        <PageSection backgroundVariant="transparentDark">
+          <PageHeader
+            title="Join the world's largest decentralized storage network"
+            description="Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important data. If you've got the infrastructure, you can become a core part of it."
+            cta={
+              <Button href="" variant="primary">
+                Check requirements
+              </Button>
+            }
+          />
+        </PageSection>
+      </BackgroundImage>
 
       <PageSection backgroundVariant="dark">
         <SectionContent
@@ -113,6 +119,10 @@ export default function OfferStorage() {
                 </li>
               ))}
             </ul>
+            <SectionImage
+              src={graphicsData.offerStorageSection.data}
+              alt={graphicsData.offerStorageSection.alt}
+            />
           </div>
 
           <SectionDivider variant="light" />

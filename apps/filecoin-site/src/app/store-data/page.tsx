@@ -1,5 +1,8 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 
+import { graphicsData } from '@/data/graphicsData'
+
+import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
@@ -15,17 +18,19 @@ import { trustedByLogos } from './data/trustedByLogos'
 export default function StoreData() {
   return (
     <>
-      <PageSection backgroundVariant="dark">
-        <PageHeader
-          title="Decentralized, Secure Storage for Data that Matters "
-          description="A dynamic and powerful distributed storage network for your data."
-          cta={
-            <Button href="" variant="primary">
-              Explore storage solutions
-            </Button>
-          }
-        />
-      </PageSection>
+      <BackgroundImage withOverlay src={graphicsData.storeDataHero.data.src}>
+        <PageSection backgroundVariant="transparentDark">
+          <PageHeader
+            title="Secure, decentralized storage for data that matters"
+            description="A powerful and dynamic distributed cloud storage network for your data."
+            cta={
+              <Button href="" variant="primary">
+                Explore storage solutions
+              </Button>
+            }
+          />
+        </PageSection>
+      </BackgroundImage>
 
       <PageSection backgroundVariant="dark">
         <div className="flex flex-col items-center gap-20 px-15">

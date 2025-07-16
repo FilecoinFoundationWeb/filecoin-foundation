@@ -7,10 +7,11 @@
     "paths": {
       "@/*": ["./src/app/*"],
       "@/assets/*": ["./public/assets/*"],
-      "@/styles/*": ["./src/app/_styles/*"],
-      "@/constants/*": ["./src/app/_constants/*"],
-      "@/hooks/*": ["./src/app/_hooks/*"],
       "@/components/*": ["./src/app/_components/*"],
+      "@/constants/*": ["./src/app/_constants/*"],
+      "@/data/*": ["./src/app/_data/*"],
+      "@/hooks/*": ["./src/app/_hooks/*"],
+      "@/styles/*": ["./src/app/_styles/*"],
       "@/utils/*": ["./src/app/_utils/*"]
     },
     "plugins": [{ "name": "next" }]
