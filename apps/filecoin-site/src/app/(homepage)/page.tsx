@@ -1,11 +1,6 @@
-import {
-  BookIcon,
-  GithubLogoIcon,
-  HardDrivesIcon,
-} from '@phosphor-icons/react/dist/ssr'
+import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
@@ -16,6 +11,7 @@ import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
+import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
@@ -57,54 +53,47 @@ export default async function Home() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Build apps better with resilient storage">
-          <div>
-            <DescriptionText>
-              Open. Scalable. Built for the future.
-            </DescriptionText>
-            <DescriptionText
-              children={[
-                'Filecoin gives developers a decentralized, verifiable storage layer that scales — perfect for AI pipelines, dApps, data-heavy SaaS platforms, and more. Accelerate development with open source tools, native IPFS integration, instant retrieval, and a permissionless storage marketplace.',
-                'Filecoin democratizes data infrastructure, so you can build without compromise — knowing your data belongs to you and your users, not centralized gatekeepers.',
-              ]}
-            />
-            <div className="flex items-center justify-start">
+          <SplitSectionContent
+            title="Open. Scalable. Built for the future."
+            description={[
+              'Filecoin gives developers a decentralized, verifiable storage layer that scales — perfect for AI pipelines, dApps, data-heavy SaaS platforms, and more. Accelerate development with open source tools, native IPFS integration, instant retrieval, and a permissionless storage marketplace.',
+              'Filecoin democratizes data infrastructure, so you can build without compromise — knowing your data belongs to you and your users, not centralized gatekeepers.',
+            ]}
+            cta={[
               <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="primary">
                 Explore builder's hub
-              </Button>
+              </Button>,
               <Button
                 href={PATHS.LEARN.path}
                 variant="ghost"
                 icon={GithubLogoIcon}
               >
                 GitHub
-              </Button>
+              </Button>,
               <Button href={PATHS.BLOG.path} variant="ghost" icon={BookIcon}>
                 Documentation
-              </Button>
-            </div>
-          </div>
+              </Button>,
+            ]}
+          />
         </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="light">
         <SectionContent title="Store your data with confidence">
-          <div>
-            <p>
-              Join leading organizations leveraging Filecoin for a more
-              resilient digital future
-            </p>
-            <p>Secure, verifiable, long-term storage that you control.</p>
-            <DescriptionText>
-              No matter what you're storing — your data remains tamper-proof and
-              verifiable. Filecoin offers cost-effective storage backed by a
-              global network of independent data centers with automatic
-              replication and lower egress fees.
-            </DescriptionText>
-            <Button href={PATHS.STORE_DATA.path}>Find storage solutions</Button>
-            <Button href="#" variant="ghost">
-              Why store on Filecoin
-            </Button>
-          </div>
+          <p>TODO: Add logos</p>
+
+          <SplitSectionContent
+            title="Secure, verifiable, long-term storage that you control."
+            description="No matter what you’re storing — your data remains tamper-proof and verifiable. Filecoin offers cost-effective storage backed by a global network of independent data centers with automatic replication and lower egress fees."
+            cta={[
+              <Button href={PATHS.STORE_DATA.path}>
+                Find storage solutions
+              </Button>,
+              <Button href="#" variant="ghost">
+                Why store on Filecoin
+              </Button>,
+            ]}
+          />
         </SectionContent>
       </PageSection>
 
@@ -114,14 +103,10 @@ export default async function Home() {
           title="Power a more open, resilient web"
           description="Join a global network of independent data centers powering the Filecoin ecosystem."
           cta={[
-            <Button
-              key="button-1"
-              href={PATHS.OFFER_STORAGE.path}
-              variant="primary"
-            >
+            <Button href={PATHS.OFFER_STORAGE.path} variant="primary">
               Become a storage provider
             </Button>,
-            <Button key="button-2" href={PATHS.LEARN.path} variant="ghost">
+            <Button href={PATHS.LEARN.path} variant="ghost">
               Explore documentation
             </Button>,
           ]}
