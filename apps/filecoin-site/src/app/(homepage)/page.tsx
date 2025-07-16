@@ -6,6 +6,7 @@ import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
+import { CardGrid } from '@/components/CardGrid'
 import { Container } from '@/components/Container'
 import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -14,11 +15,6 @@ import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
-import { CommunitySectionCardGrid } from './components/CommunitySectionCardGrid'
-import { HeroSectionCardGrid } from './components/HeroSectionCardGrid'
-import { LatestNewsSectionCardGrid } from './components/LatestNewsSectionCardGrid'
-import { NetworkSectionCardGrid } from './components/NetworkSectionCardGrid'
-import { StorageProviderSectionCardGrid } from './components/StorageProviderSectionCardGrid'
 import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
@@ -45,7 +41,7 @@ export default async function Home() {
             />
           </div>
           <div className="mb-52">
-            <HeroSectionCardGrid>
+            <CardGrid variant="col3-one">
               {networkActions.map(({ title, description, href, icon }) => (
                 <LinkCard
                   key={title}
@@ -57,7 +53,7 @@ export default async function Home() {
                   icon={icon}
                 />
               ))}
-            </HeroSectionCardGrid>
+            </CardGrid>
           </div>
         </Container>
       </Section>
@@ -124,7 +120,7 @@ export default async function Home() {
         >
           <p>TODO: Add logos</p>
           <p>TODO: Add image</p>
-          <StorageProviderSectionCardGrid>
+          <CardGrid variant="col3-two">
             {providerBenefits.map(({ title, description }) => (
               <Card
                 key={title}
@@ -134,7 +130,7 @@ export default async function Home() {
                 description={description}
               />
             ))}
-          </StorageProviderSectionCardGrid>
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
@@ -149,7 +145,7 @@ export default async function Home() {
             </Button>
           }
         >
-          <NetworkSectionCardGrid>
+          <CardGrid variant="col4-one">
             {networkPrinciples.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -160,7 +156,7 @@ export default async function Home() {
                 icon={icon}
               />
             ))}
-          </NetworkSectionCardGrid>
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
@@ -171,7 +167,7 @@ export default async function Home() {
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
         >
-          <LatestNewsSectionCardGrid>
+          <CardGrid variant="col3-three">
             {featuredBlogPosts.map((post: BlogPost) => {
               const {
                 title,
@@ -201,7 +197,7 @@ export default async function Home() {
                 />
               )
             })}
-          </LatestNewsSectionCardGrid>
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
@@ -210,18 +206,20 @@ export default async function Home() {
           title="Join the community"
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
-          <CommunitySectionCardGrid>
-            {communityLinks.map(({ title, href, icon }) => (
-              <LinkCard
-                key={title}
-                as="li"
-                backgroundVariant="dark"
-                title={title}
-                href={href}
-                icon={icon}
-              />
-            ))}
-          </CommunitySectionCardGrid>
+          <div className="max-w-4xl">
+            <CardGrid variant="col2-one">
+              {communityLinks.map(({ title, href, icon }) => (
+                <LinkCard
+                  key={title}
+                  as="li"
+                  backgroundVariant="dark"
+                  title={title}
+                  href={href}
+                  icon={icon}
+                />
+              ))}
+            </CardGrid>
+          </div>
         </SectionContent>
       </PageSection>
     </>
