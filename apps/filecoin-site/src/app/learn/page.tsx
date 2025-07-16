@@ -1,10 +1,10 @@
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 
 import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
+import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -49,7 +49,7 @@ export default function Learn() {
             ]}
           />
 
-          <CardGrid as="ul" cols="mdTwo">
+          <CardGrid variant="col2-three">
             {ecosystemPartners.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -64,7 +64,7 @@ export default function Learn() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Building a decentralized future">
-          <CardGrid as="ul" cols="mdThree">
+          <CardGrid variant="col3-four">
             {filecoinValues.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -90,7 +90,7 @@ export default function Learn() {
             </Button>
           }
         >
-          <ul className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <CardGrid variant="col3-three">
             {filecoinStorageFlow.map(({ step, title, description }) => (
               <li key={description} className="flex flex-col gap-3">
                 <span className="text-brand-500 text-4xl font-medium">
@@ -102,38 +102,37 @@ export default function Learn() {
                 <DescriptionText>{description}</DescriptionText>
               </li>
             ))}
-          </ul>
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="light">
         <SectionDivider variant="light" />
-        <div>
-          <Heading tag="h3" variant="3xl-medium">
-            The Filecoin ecosystem
-          </Heading>
-          <DescriptionText>
-            Storing a file on Filecoin involves several participants working
-            together.
-          </DescriptionText>
 
-          <CardGrid as="ul" cols="mdThree">
-            {filecoinParticipants.map(({ title, description, cta }) => (
-              <SimpleCard
-                key={title}
-                hasTopBorder
-                title={title}
-                description={description}
-                cta={cta}
-              />
-            ))}
-          </CardGrid>
-        </div>
+        <Heading tag="h3" variant="3xl-medium">
+          The Filecoin ecosystem
+        </Heading>
+        <DescriptionText>
+          Storing a file on Filecoin involves several participants working
+          together.
+        </DescriptionText>
+
+        <CardGrid variant="col3-two">
+          {filecoinParticipants.map(({ title, description, cta }) => (
+            <SimpleCard
+              key={title}
+              hasTopBorder
+              title={title}
+              description={description}
+              cta={cta}
+            />
+          ))}
+        </CardGrid>
       </PageSection>
 
       <PageSection backgroundVariant="gray">
         <SectionContent title="What powers the Filecoin network">
-          <CardGrid as="ul" cols="mdThree">
+          <CardGrid variant="col3-two">
             {filecoinStackFeatures.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}

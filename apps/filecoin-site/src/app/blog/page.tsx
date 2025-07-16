@@ -1,4 +1,3 @@
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'
@@ -9,6 +8,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { BlogCard } from './components/BlogCard'
+import { BlogPostsGrid } from './components/BlogPostsGrid'
 import type { BlogPost } from './types/blogPostType'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
@@ -38,7 +38,7 @@ export default async function Blog() {
       </BackgroundImage>
 
       <PageSection backgroundVariant="light">
-        <CardGrid as="ul" cols="lgTwo">
+        <BlogPostsGrid>
           {sortedPosts.map((post: BlogPost) => {
             const {
               title,
@@ -67,7 +67,7 @@ export default async function Blog() {
               />
             )
           })}
-        </CardGrid>
+        </BlogPostsGrid>
       </PageSection>
     </>
   )

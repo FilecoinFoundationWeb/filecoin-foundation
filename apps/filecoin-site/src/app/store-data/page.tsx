@@ -1,7 +1,6 @@
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
+import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { PageHeader } from '@/components/PageHeader'
@@ -45,7 +44,7 @@ export default function StoreData() {
           title="Future-proof your data infrastructure"
           description="Filecoin is a powerful alternative to traditional cloud storage. Filecoin ensures your data always remains secure and verified on a daily basis – so that you can store your data with confidence."
         >
-          <CardGrid as="ul" cols="mdTwo">
+          <CardGrid variant="col4-one">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}

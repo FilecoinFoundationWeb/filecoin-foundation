@@ -6,11 +6,13 @@ type PageSectionProps = {
   children: React.ReactNode
 }
 
+export const pageSectionPadding = 'pt-8 pb-24 sm:py-36'
+
 export function PageSection({ backgroundVariant, children }: PageSectionProps) {
   return (
     <Section backgroundVariant={backgroundVariant}>
       <Container>
-        <div className="pt-8 pb-24 sm:py-36">{children}</div>
+        <div className={pageSectionPadding}>{children}</div>
       </Container>
     </Section>
   )

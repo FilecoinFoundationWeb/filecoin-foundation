@@ -1,18 +1,21 @@
 import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
+import { CardGrid } from '@/components/CardGrid'
+import { Container } from '@/components/Container'
 import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
+import { CardGridContainer } from './components/CardGridContainer'
 import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
@@ -30,26 +33,31 @@ export default async function Home() {
 
   return (
     <>
-      <PageSection backgroundVariant="transparent">
-        <PageHeader
-          description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
-          title="Preserving humanity's most important information"
-        />
-        <div className="py-8 sm:py-12"></div>
-        <CardGrid as="ul" cols="lgThree">
-          {networkActions.map(({ title, description, href, icon }) => (
-            <LinkCard
-              key={title}
-              as="li"
-              backgroundVariant="light"
-              title={title}
-              description={description}
-              href={href}
-              icon={icon}
+      <Section backgroundVariant="transparent">
+        <Container>
+          <div className="mt-32 mb-24">
+            <PageHeader
+              description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
+              title="Preserving humanity's most important information"
             />
-          ))}
-        </CardGrid>
-      </PageSection>
+          </div>
+          <div className="mb-52">
+            <CardGrid variant="col3-one">
+              {networkActions.map(({ title, description, href, icon }) => (
+                <LinkCard
+                  key={title}
+                  as="li"
+                  backgroundVariant="light"
+                  title={title}
+                  description={description}
+                  href={href}
+                  icon={icon}
+                />
+              ))}
+            </CardGrid>
+          </div>
+        </Container>
+      </Section>
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Build apps better with resilient storage">
@@ -111,7 +119,9 @@ export default async function Home() {
             </Button>,
           ]}
         >
-          <CardGrid as="ul" cols="lgThree">
+          <p>TODO: Add logos</p>
+          <p>TODO: Add image</p>
+          <CardGrid variant="col3-two">
             {providerBenefits.map(({ title, description }) => (
               <Card
                 key={title}
@@ -136,7 +146,7 @@ export default async function Home() {
             </Button>
           }
         >
-          <CardGrid as="ul" cols="smTwo">
+          <CardGrid variant="col4-one">
             {networkPrinciples.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -158,7 +168,7 @@ export default async function Home() {
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
         >
-          <CardGrid as="ul" cols="lgThree">
+          <CardGrid variant="col3-three">
             {featuredBlogPosts.map((post: BlogPost) => {
               const {
                 title,
@@ -197,18 +207,20 @@ export default async function Home() {
           title="Join the community"
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
-          <CardGrid as="ul" cols="smTwo">
-            {communityLinks.map(({ title, href, icon }) => (
-              <LinkCard
-                key={title}
-                as="li"
-                backgroundVariant="dark"
-                title={title}
-                href={href}
-                icon={icon}
-              />
-            ))}
-          </CardGrid>
+          <CardGridContainer>
+            <CardGrid variant="col2-one">
+              {communityLinks.map(({ title, href, icon }) => (
+                <LinkCard
+                  key={title}
+                  as="li"
+                  backgroundVariant="dark"
+                  title={title}
+                  href={href}
+                  icon={icon}
+                />
+              ))}
+            </CardGrid>
+          </CardGridContainer>
         </SectionContent>
       </PageSection>
     </>
