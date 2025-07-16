@@ -16,6 +16,7 @@ import { SectionContent } from '@/components/SectionContent'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { HeroSectionCardGrid } from './components/HeroSectionCardGrid'
+import { NetworkSectionCardGrid } from './components/NetworkSectionCardGrid'
 import { StorageProviderSectionCardGrid } from './components/StorageProviderSectionCardGrid'
 import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
@@ -147,7 +148,7 @@ export default async function Home() {
             </Button>
           }
         >
-          <CardGrid as="ul" cols="smTwo">
+          <NetworkSectionCardGrid>
             {networkPrinciples.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -158,7 +159,7 @@ export default async function Home() {
                 icon={icon}
               />
             ))}
-          </CardGrid>
+          </NetworkSectionCardGrid>
         </SectionContent>
       </PageSection>
 
