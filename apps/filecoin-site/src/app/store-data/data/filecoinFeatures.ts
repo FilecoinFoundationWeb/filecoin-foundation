@@ -1,33 +1,34 @@
 import {
   CertificateIcon,
-  LinkBreakIcon,
+  CurrencyCircleDollarIcon,
   LockKeyIcon,
+  GlobeHemisphereWestIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-type FilecoinFeature = {
-  title: string
-  description: string
-  icon: typeof LockKeyIcon | typeof CertificateIcon | typeof LinkBreakIcon
-}
+import type { CardData } from '@/components/Card'
 
-export const filecoinFeatures: FilecoinFeature[] = [
+export const filecoinFeatures: Array<CardData> = [
   {
-    title: 'Encryption & security',
-    description:
-      'Client-side encryption and content-addressing ensure only you (and those you authorize) can read or alter your files.',
+    title: 'Data Integrity and Security',
+    description: 'Highly secure and verified on Filecoin.',
     icon: LockKeyIcon,
   },
   {
-    title: 'Compliance-ready',
+    title: 'Compliance',
     description:
-      'Providers on the network offer SOC 2, ISO 27001, HIPAA-aligned environments so you can meet industry and regional requirements.',
+      'Meet enterprise and industry requirements with storage providers that adhere to leading standards—including SOC 2 compliance and Tier III data center certifications.',
     icon: CertificateIcon,
   },
-
   {
-    title: 'No vendor lock-in fees',
+    title: 'Predictable pricing',
     description:
-      'Storage costs are determined by an open market—no egress penalties, no proprietary APIs. Retrieve or move data whenever you like.',
-    icon: LinkBreakIcon,
+      'Store and retrieve data on your terms, with clear and competitive rates. No hidden pricing or unpredictable egress fees.',
+    icon: CurrencyCircleDollarIcon,
+  },
+  {
+    title: 'Infinitely Scalable for Big Data',
+    description:
+      "Filecoin's decentralized infrastructure supports exabyte-scale datasets, high-throughput workloads, and long-term archival—with built-in redundancy and global distribution.",
+    icon: GlobeHemisphereWestIcon,
   },
 ] as const
