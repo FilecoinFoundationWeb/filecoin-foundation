@@ -7,12 +7,15 @@ import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
+import { Container } from '@/components/Container'
 import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
+import { HeroSectionCardGrid } from './components/HeroSectionCardGrid'
 import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
@@ -30,26 +33,31 @@ export default async function Home() {
 
   return (
     <>
-      <PageSection backgroundVariant="transparent">
-        <PageHeader
-          description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
-          title="Preserving humanity's most important information"
-        />
-        <div className="py-8 sm:py-12"></div>
-        <CardGrid as="ul" cols="lgThree">
-          {networkActions.map(({ title, description, href, icon }) => (
-            <LinkCard
-              key={title}
-              as="li"
-              backgroundVariant="light"
-              title={title}
-              description={description}
-              href={href}
-              icon={icon}
+      <Section backgroundVariant="transparent">
+        <Container>
+          <div className="mt-32 mb-24">
+            <PageHeader
+              description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
+              title="Preserving humanity's most important information"
             />
-          ))}
-        </CardGrid>
-      </PageSection>
+          </div>
+          <div className="mb-52">
+            <HeroSectionCardGrid>
+              {networkActions.map(({ title, description, href, icon }) => (
+                <LinkCard
+                  key={title}
+                  as="li"
+                  backgroundVariant="light"
+                  title={title}
+                  description={description}
+                  href={href}
+                  icon={icon}
+                />
+              ))}
+            </HeroSectionCardGrid>
+          </div>
+        </Container>
+      </Section>
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Build apps better with resilient storage">
