@@ -8,6 +8,7 @@ import { PATHS } from '@/constants/paths'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { LinkCard } from '@/components/LinkCard'
+import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
@@ -17,10 +18,12 @@ import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
 import { providerBenefits } from './data/providerBenefits'
+import { resilientWebLogos } from './data/resilientWebLogos'
 
 import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPost } from '@/blog/types/blogPostType'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { trustedByLogos } from '@/store-data/data/trustedByLogos'
 
 export default async function Home() {
   const featuredBlogPosts = getFeaturedBlogPosts({
@@ -80,7 +83,7 @@ export default async function Home() {
 
       <PageSection backgroundVariant="light">
         <SectionContent title="Store your data with confidence">
-          <p>TODO: Add logos</p>
+          <LogoSection logos={trustedByLogos} />
 
           <SplitSectionContent
             title="Secure, verifiable, long-term storage that you control."
@@ -111,6 +114,7 @@ export default async function Home() {
             </Button>,
           ]}
         >
+          <LogoSection logos={resilientWebLogos} />
           <CardGrid as="ul" cols="lgThree">
             {providerBenefits.map(({ title, description }) => (
               <Card

@@ -1,6 +1,12 @@
 import { type LogoItemProps } from '@/components/LogoSection/LogoItem'
 
-import SolanaLogo from '@/assets/logos/SolanaLogo.svg'
+import AethirLogo from '@/assets/logos/aethir-logo.svg'
+import FlickrFoundationLogo from '@/assets/logos/flickr-foundation-logo.svg'
+import InternetArchiveLogo from '@/assets/logos/internet-archive-logo.svg'
+import MITOpenLearningLogo from '@/assets/logos/MIT-open-learning-logo.svg'
+import SmithsonianLogo from '@/assets/logos/smithsonian-logo.svg'
+import SolanaLogo from '@/assets/logos/solana-logo.svg'
+import VictorChanLogo from '@/assets/logos/victor-chang-logo.svg'
 
 export const trustedByLogos: Array<LogoItemProps> = [
   {
@@ -9,48 +15,33 @@ export const trustedByLogos: Array<LogoItemProps> = [
     href: 'https://solana.com',
   },
   {
-    logo: SolanaLogo,
-    alt: 'Solana Logo',
-    href: 'https://solana.com',
+    logo: InternetArchiveLogo,
+    alt: 'Internet Archive Logo',
+    href: 'https://archive.org',
   },
   {
-    logo: SolanaLogo,
-    alt: 'Solana Logo',
-    href: 'https://solana.com',
+    logo: MITOpenLearningLogo,
+    alt: 'MIT Open Learning Logo',
+    href: 'https://openlearning.mit.edu',
   },
   {
-    logo: SolanaLogo,
-    alt: 'Solana Logo',
-    href: 'https://solana.com',
+    logo: SmithsonianLogo,
+    alt: 'Smithsonian Logo',
+    href: 'https://www.si.edu',
   },
   {
-    logo: SolanaLogo,
-    alt: 'Solana Logo',
-    href: 'https://solana.com',
+    logo: FlickrFoundationLogo,
+    alt: 'Flickr Foundation Logo',
+    href: 'https://www.flickr.org',
   },
   {
-    logo: SolanaLogo,
-    alt: 'Solana Logo',
-    href: 'https://solana.com',
+    logo: AethirLogo,
+    alt: 'Aethir Logo',
+    href: 'https://aethir.com',
   },
   {
-    logo: SolanaLogo,
-    alt: 'Solana Logo',
-    href: 'https://solana.com',
-  },
-  {
-    logo: SolanaLogo,
-    alt: 'Solana Logo',
-    href: 'https://solana.com',
-  },
-  {
-    logo: SolanaLogo,
-    alt: 'Solana Logo',
-    href: 'https://solana.com',
-  },
-  {
-    logo: SolanaLogo,
-    alt: 'Solana Logo',
-    href: 'https://solana.com',
+    logo: VictorChanLogo,
+    alt: 'Victor Chan Logo',
+    href: 'https://www.victorchang.edu.au/',
   },
 ]
