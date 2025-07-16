@@ -71,7 +71,10 @@ export function SimpleCard({
           inset
           href={cta.href}
           aria-label={cta.text}
-          textClassName="absolute bottom-6 left-6"
+          textClassName={clsx(
+            'absolute bottom-6',
+            hasTopBorder ? 'left-0' : 'left-6',
+          )}
         >
           {cta.text}
         </CTALink>
