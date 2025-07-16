@@ -25,11 +25,9 @@ export function SideBySideContent({
   return (
     <div className={clsx('grid grid-cols-6', gap)}>
       <div className="col-span-6 lg:col-span-2 lg:pr-8">
-        <div className="side-by-side-heading">
-          <Heading tag="h3" variant="xl-medium">
-            {title}
-          </Heading>
-        </div>
+        <Heading tag="h3" variant="xl-medium" className="side-by-side-heading">
+          {title}
+        </Heading>
       </div>
 
       <div className={clsx('col-span-6 flex flex-col lg:col-span-4', gap)}>
