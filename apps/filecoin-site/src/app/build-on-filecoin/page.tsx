@@ -181,18 +181,13 @@ export default function BuildOnFilecoin() {
             ecosystem."
         >
           <CardGrid as="ul" cols="mdTwo">
-            {communityHubs.map(({ name, description, href }) => (
-              <li key={name} className="flex flex-col gap-6">
-                <div className="space-y-3">
-                  <Heading tag="h4" variant="xl-medium">
-                    {name}
-                  </Heading>
-                  <p className="text-zinc-600">{description}</p>
-                </div>
-                <a className="font-semibold text-zinc-600" href={href}>
-                  Visit {name}
-                </a>
-              </li>
+            {communityHubs.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                title={title}
+                description={description}
+                cta={cta}
+              />
             ))}
           </CardGrid>
         </SectionContent>
