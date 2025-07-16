@@ -1,69 +1,94 @@
-type EcosystemPartner = {
-  name: string
-  description: string
-  href: string
-  //   logo: string
-}
+import type { SimpleCardData } from '@/components/SimpleCard'
 
-export const ecosystemPartners: EcosystemPartner[] = [
+export const ecosystemPartners: Array<SimpleCardData> = [
   {
-    name: 'Internet Archive',
+    title: 'Internet Archive',
     description:
       'A nonprofit library preserving websites, books, audio, and video for public access.',
-    href: 'https://archive.org/',
+    cta: {
+      href: 'https://archive.org/',
+      text: 'Visit website',
+    },
   },
   {
-    name: 'Solana',
+    title: 'Solana',
     description:
       'A high-performance blockchain supporting scalable applications and smart contracts.',
-    href: 'https://solana.com/',
+    cta: {
+      href: 'https://solana.com/',
+      text: 'Visit website',
+    },
   },
   {
-    name: 'MIT Open Learning',
+    title: 'MIT Open Learning',
     description:
       'An initiative bringing open, high-quality educational content to learners worldwide.',
-    href: 'https://openlearning.mit.edu/',
+    cta: {
+      href: 'https://openlearning.mit.edu/',
+      text: 'Visit website',
+    },
   },
   {
-    name: 'Smithsonian',
+    title: 'Smithsonian',
     description:
       'The world’s largest museum and research complex, preserving art, culture, and science.',
-    href: 'https://www.si.edu/',
+    cta: {
+      href: 'https://www.si.edu/',
+      text: 'Visit website',
+    },
   },
   {
-    name: 'Flickr Foundation',
+    title: 'Flickr Foundation',
     description:
       'Dedicated to the long-term preservation and accessibility of digital photography.',
-    href: 'https://www.flickr.org/',
+    cta: {
+      href: 'https://www.flickr.org/',
+      text: 'Visit website',
+    },
   },
   {
-    name: 'Starling Labs',
+    title: 'Starling Labs',
     description:
       'Advances digital trust technologies to safeguard truth in human rights and history.',
-    href: 'https://www.starlinglab.org/',
+    cta: {
+      href: 'https://www.starlinglab.org/',
+      text: 'Visit website',
+    },
   },
   {
-    name: 'Easier Data Initiative',
+    title: 'Easier Data Initiative',
     description:
       'Supports open data efforts by helping institutions manage and share their data more effectively.',
-    href: 'https://www.easierdata.org/', // Example link, confirm actual URL
+    cta: {
+      href: 'https://www.easierdata.org/',
+      text: 'Visit website',
+    },
   },
   {
-    name: 'Aethir',
+    title: 'Aethir',
     description:
       'A decentralized cloud infrastructure provider focused on AI and gaming workloads.',
-    href: 'https://aethir.com/',
+    cta: {
+      href: 'https://aethir.com/',
+      text: 'Visit website',
+    },
   },
   {
-    name: 'Victor Chang Institute',
+    title: 'Victor Chang Institute',
     description:
       'A leading research institute focused on solving cardiovascular disease through science.',
-    href: 'https://www.victorchang.edu.au/',
+    cta: {
+      href: 'https://www.victorchang.edu.au/',
+      text: 'Visit website',
+    },
   },
   {
-    name: 'Seti Institute',
+    title: 'SETI Institute',
     description:
       'Conducts scientific research and education around the search for extraterrestrial life.',
-    href: 'https://www.seti.org/',
+    cta: {
+      href: 'https://www.seti.org/',
+      text: 'Visit website',
+    },
   },
 ] as const
