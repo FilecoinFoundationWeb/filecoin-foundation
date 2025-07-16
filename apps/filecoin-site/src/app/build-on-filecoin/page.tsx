@@ -129,6 +129,10 @@ export default function BuildOnFilecoin() {
             </Button>
           }
         />
+        <SectionImage
+          src={graphicsData.buildOnFilecoinSection.data}
+          alt="Satellite view of Earth showing city lights across continents"
+        />
       </PageSection>
 
       <PageSection backgroundVariant="gray">

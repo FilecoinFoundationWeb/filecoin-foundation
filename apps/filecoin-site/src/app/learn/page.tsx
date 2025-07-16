@@ -2,6 +2,9 @@ import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 
 import { PATHS } from '@/constants/paths'
 
+import { graphicsData } from '@/data/graphicsData'
+
+import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -153,6 +156,46 @@ export default function Learn() {
           }
         >
           <ComparisonTable />
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="light">
+        <SectionContent
+          title="A robust foundation for humanity's information"
+          description="Filecoin provides the foundation for critically important public data, such as open access scientific data, creative commons media, historical archives, preservation, and more."
+        >
+          <SectionImage
+            src={graphicsData.learnSection.data}
+            alt={graphicsData.learnSection.alt}
+          />
+          <CardGrid as="ul" cols="mdTwo">
+            {ecosystemPartners.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                title={title}
+                description={description}
+                cta={cta}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="gray">
+        <SectionContent
+          title="What powers the Filecoin network"
+          description="Filecoin is more than storage. It's a full stack of innovation."
+        >
+          <CardGrid as="ul" cols="mdThree">
+            {filecoinStackFeatures.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                title={title}
+                description={description}
+                cta={cta}
+              />
+            ))}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 

@@ -1,0 +1,50 @@
+import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
+
+import ClassicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
+import DataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
+import DigitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
+import EarthFromSpaceAtNight from '@/assets/graphics/earth-from-space-at-night.webp'
+import FilecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
+import FilecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
+import FilecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
+import MinimalistEarthGlobe from '@/assets/graphics/minimalist-earth-globe.webp'
+import ServerBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
+
+export const graphicsData = {
+  buildOnFilecoinHero: {
+    data: DataCenterServerRow,
+    alt: 'Row of server racks in a modern data center with blue LED lighting',
+  },
+  buildOnFilecoinSection: {
+    data: EarthFromSpaceAtNight,
+    alt: 'Earth viewed from space at night showing city lights and continents',
+  },
+  homepageHero: {
+    data: MinimalistEarthGlobe,
+    alt: 'Minimalist Earth globe with clean geometric design and network connections',
+  },
+  homepageSection: {
+    data: ServerBladeChassis,
+    alt: 'Server blade chassis with turquoise lighting in a rack mount',
+  },
+  learnHero: {
+    data: FilecoinServerRack,
+    alt: 'Filecoin server rack with multiple blade servers and network connections',
+  },
+  learnSection: {
+    data: ClassicLibraryInterior,
+    alt: 'Classic library interior with wooden shelves and books',
+  },
+  offerStorageHero: {
+    data: FilecoinMiningRig,
+    alt: 'Filecoin mining rig with multiple graphics cards and cooling systems',
+  },
+  offerStorageSection: {
+    data: FilecoinStorageDevice,
+    alt: 'Filecoin storage device with hard drives and cooling fans',
+  },
+  storeDataHero: {
+    data: DigitalMediaConversionSetup,
+    alt: 'Digital media conversion setup with various equipment and cables',
+  },
+} as const satisfies Record<string, StaticImageProps>
