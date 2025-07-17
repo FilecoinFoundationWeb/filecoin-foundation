@@ -42,7 +42,7 @@ export default async function Home() {
             />
           </div>
           <div className="mb-52">
-            <CardGrid variant="col3-one">
+            <CardGrid as="ul" variant="col3-one">
               {networkActions.map(({ title, description, href, icon }) => (
                 <LinkCard
                   key={title}
@@ -121,7 +121,7 @@ export default async function Home() {
         >
           <p>TODO: Add logos</p>
           <p>TODO: Add image</p>
-          <CardGrid variant="col3-two">
+          <CardGrid as="ul" variant="col3-two">
             {providerBenefits.map(({ title, description }) => (
               <Card
                 key={title}
@@ -146,7 +146,7 @@ export default async function Home() {
             </Button>
           }
         >
-          <CardGrid variant="col4-one">
+          <CardGrid as="ul" variant="col4-one">
             {networkPrinciples.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -168,7 +168,7 @@ export default async function Home() {
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
         >
-          <CardGrid variant="col3-three">
+          <CardGrid as="ul" variant="col3-three">
             {featuredBlogPosts.map((post: BlogPost) => {
               const {
                 title,
@@ -208,7 +208,7 @@ export default async function Home() {
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
           <CardGridContainer width="4xl">
-            <CardGrid variant="col2-one">
+            <CardGrid as="ul" variant="col2-one">
               {communityLinks.map(({ title, href, icon }) => (
                 <LinkCard
                   key={title}

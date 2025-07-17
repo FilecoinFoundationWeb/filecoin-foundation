@@ -1,9 +1,9 @@
 import { clsx } from 'clsx'
 
 type CardGridProps = {
+  as: 'ul'
   children: React.ReactNode
   variant: keyof typeof variants
-  as?: React.ElementType
 }
 
 // To rename
@@ -19,6 +19,6 @@ const variants = {
   'col4-one': 'gap-15 md:grid-cols-2 xl:grid-cols-4',
 }
 
-export function CardGrid({ as: Tag = 'ul', children, variant }: CardGridProps) {
+export function CardGrid({ as: Tag, children, variant }: CardGridProps) {
   return <Tag className={clsx('grid', variants[variant])}>{children}</Tag>
 }

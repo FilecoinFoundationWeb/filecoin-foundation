@@ -44,7 +44,7 @@ export default function OfferStorage() {
             </p>
           </div>
 
-          <CardGrid variant="col3-two">
+          <CardGrid as="ul" variant="col3-two">
             {dataCenterRequirements.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -70,7 +70,7 @@ export default function OfferStorage() {
               </p>
             </div>
 
-            <CardGrid variant="col2-four">
+            <CardGrid as="ul" variant="col2-four">
               {coreInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
                   <Heading tag="h4" variant="xl-medium">
@@ -98,7 +98,7 @@ export default function OfferStorage() {
               </p>
             </div>
 
-            <CardGrid variant="col2-four">
+            <CardGrid as="ul" variant="col2-four">
               {specializedInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
                   <Heading tag="h4" variant="xl-medium">
@@ -153,7 +153,7 @@ export default function OfferStorage() {
           title="Earn more rewards for more storage"
           description="Join the world's largest decentralized storage network — empowering independent operators to store and protect critical data without relying on centralized tech giants. Your infrastructure helps power a more open, resilient, and censorship-resistant internet."
         >
-          <CardGrid variant="col2-four">
+          <CardGrid as="ul" variant="col2-four">
             {filecoinEarningsInsights.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}

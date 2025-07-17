@@ -49,7 +49,7 @@ export default function Learn() {
             ]}
           />
 
-          <CardGrid variant="col2-three">
+          <CardGrid as="ul" variant="col2-three">
             {ecosystemPartners.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -64,7 +64,7 @@ export default function Learn() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Building a decentralized future">
-          <CardGrid variant="col3-four">
+          <CardGrid as="ul" variant="col3-four">
             {filecoinValues.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -90,7 +90,7 @@ export default function Learn() {
             </Button>
           }
         >
-          <CardGrid variant="col3-three">
+          <CardGrid as="ul" variant="col3-three">
             {filecoinStorageFlow.map(({ step, title, description }) => (
               <li key={description} className="flex flex-col gap-3">
                 <span className="text-brand-500 text-4xl font-medium">
@@ -117,7 +117,7 @@ export default function Learn() {
           together.
         </DescriptionText>
 
-        <CardGrid variant="col3-two">
+        <CardGrid as="ul" variant="col3-two">
           {filecoinParticipants.map(({ title, description, cta }) => (
             <SimpleCard
               key={title}
@@ -132,7 +132,7 @@ export default function Learn() {
 
       <PageSection backgroundVariant="gray">
         <SectionContent title="What powers the Filecoin network">
-          <CardGrid variant="col3-two">
+          <CardGrid as="ul" variant="col3-two">
             {filecoinStackFeatures.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}

@@ -44,7 +44,7 @@ export default function BuildOnFilecoin() {
           description="          From powering AI workflows to enabling cross-chain data bridges,
           Filecoin provides programmable, permissionless storage infrastructure."
         >
-          <CardGrid variant="col3-two">
+          <CardGrid as="ul" variant="col3-two">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -70,7 +70,7 @@ export default function BuildOnFilecoin() {
                 Getting stared
               </Heading>
 
-              <CardGrid variant="col3-four">
+              <CardGrid as="ul" variant="col3-four">
                 {filecoinTools.map(
                   ({ title, description, difficulty, cta }, index) => (
                     <SimpleCard
@@ -96,7 +96,7 @@ export default function BuildOnFilecoin() {
               </Heading>
 
               <CardGridContainer width="6xl">
-                <CardGrid variant="col2-two">
+                <CardGrid as="ul" variant="col2-two">
                   {developerResources.map(
                     ({ title, description, href, icon }) => (
                       <LinkCard
@@ -127,7 +127,7 @@ export default function BuildOnFilecoin() {
                 </DescriptionText>
               </div>
 
-              <CardGrid variant="col3-four">
+              <CardGrid as="ul" variant="col3-four">
                 {blockExplorers.map(({ title, description, cta }) => (
                   <SimpleCard
                     key={title}
@@ -160,7 +160,7 @@ export default function BuildOnFilecoin() {
           description="Connect with a vibrant network of developers building on Filecoin.
           Connect, collaborate, and grow with the ecosystem."
         >
-          <CardGrid variant="col3-one">
+          <CardGrid as="ul" variant="col3-one">
             {communityConnections.map(({ title, description, href, icon }) => (
               <LinkCard
                 key={title}
@@ -183,7 +183,7 @@ export default function BuildOnFilecoin() {
             advancing the protocol and building the tools that power its
             ecosystem."
         >
-          <CardGrid variant="col2-three">
+          <CardGrid as="ul" variant="col2-three">
             {communityHubs.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -203,7 +203,7 @@ export default function BuildOnFilecoin() {
           contributions, there are many ways to get involved."
         >
           <CardGridContainer width="6xl">
-            <CardGrid variant="col2-two">
+            <CardGrid as="ul" variant="col2-two">
               {getInvolvedOptions.map(({ title, description, href, icon }) => (
                 <LinkCard
                   key={title}
