@@ -96,7 +96,7 @@ export default function BuildOnFilecoin() {
               </Heading>
 
               <CardGridContainer width="6xl">
-                <CardGrid as="ul" variant="col2-two">
+                <CardGrid as="ul" variant="mdTwo">
                   {developerResources.map(
                     ({ title, description, href, icon }) => (
                       <LinkCard
@@ -203,7 +203,7 @@ export default function BuildOnFilecoin() {
           contributions, there are many ways to get involved."
         >
           <CardGridContainer width="6xl">
-            <CardGrid as="ul" variant="col2-two">
+            <CardGrid as="ul" variant="mdTwo">
               {getInvolvedOptions.map(({ title, description, href, icon }) => (
                 <LinkCard
                   key={title}

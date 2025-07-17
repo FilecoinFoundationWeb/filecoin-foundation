@@ -38,7 +38,7 @@ export default async function Blog() {
       </BackgroundImage>
 
       <PageSection backgroundVariant="light">
-        <CardGrid as="ul" variant="col2-two">
+        <CardGrid as="ul" variant="mdTwo">
           {sortedPosts.map((post: BlogPost) => {
             const {
               title,
