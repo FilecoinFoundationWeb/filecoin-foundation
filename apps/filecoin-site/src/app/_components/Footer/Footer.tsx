@@ -24,7 +24,7 @@ export function Footer() {
         </div>
       </Container>
 
-      <SectionDivider variant="subtle" />
+      <SectionDivider />
 
       <Container>
         <LegalSection />

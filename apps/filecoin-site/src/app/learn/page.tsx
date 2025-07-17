@@ -10,6 +10,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
@@ -80,59 +81,55 @@ export default function Learn() {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        <SectionContent
-          centerCTA
-          title="How Filecoin works"
-          description="How data gets stored on Filecoin"
-          cta={
-            <Button href="" variant="primary">
-              Find storage solutions
-            </Button>
-          }
-        >
-          <CardGrid as="ul" variant="smTwoXlThreeWidest">
-            {filecoinStorageFlow.map(({ step, title, description }) => (
-              <li key={description} className="flex flex-col gap-3">
-                <span className="text-brand-500 text-4xl font-medium">
-                  {`0${step}.`}
-                </span>
-                <Heading tag="h4" variant="xl-medium">
-                  {title}
-                </Heading>
-                <DescriptionText>{description}</DescriptionText>
-              </li>
-            ))}
-          </CardGrid>
+        <SectionContent title="How Filecoin works">
+          <SectionSubContent
+            centerCTA
+            title="How data gets stored on Filecoin"
+            cta={
+              <Button href="" variant="primary">
+                Find storage solutions
+              </Button>
+            }
+          >
+            <CardGrid as="ul" variant="smTwoXlThreeWidest">
+              {filecoinStorageFlow.map(({ step, title, description }) => (
+                <li key={description} className="flex flex-col gap-3">
+                  <span className="text-brand-500 text-4xl font-medium">
+                    {`0${step}.`}
+                  </span>
+                  <Heading tag="h4" variant="xl-medium">
+                    {title}
+                  </Heading>
+                  <DescriptionText>{description}</DescriptionText>
+                </li>
+              ))}
+            </CardGrid>
+          </SectionSubContent>
+
+          <SectionDivider />
+
+          <SectionSubContent
+            title="The Filecoin ecosystem"
+            description="Storing a file on Filecoin involves several participants working together."
+          >
+            <CardGrid as="ul" variant="smTwoLgThreeWider">
+              {filecoinParticipants.map(({ title, description, cta }) => (
+                <SimpleCard
+                  key={title}
+                  hasTopBorder
+                  title={title}
+                  description={description}
+                  cta={cta}
+                />
+              ))}
+            </CardGrid>
+          </SectionSubContent>
         </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="light">
-        <SectionDivider variant="light" />
-
-        <Heading tag="h3" variant="3xl-medium">
-          The Filecoin ecosystem
-        </Heading>
-        <DescriptionText>
-          Storing a file on Filecoin involves several participants working
-          together.
-        </DescriptionText>
-
-        <CardGrid as="ul" variant="smTwoLgThreeWider">
-          {filecoinParticipants.map(({ title, description, cta }) => (
-            <SimpleCard
-              key={title}
-              hasTopBorder
-              title={title}
-              description={description}
-              cta={cta}
-            />
-          ))}
-        </CardGrid>
       </PageSection>
 
       <PageSection backgroundVariant="gray">
         <SectionContent title="What powers the Filecoin network">
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
+          <CardGrid as="ul" variant="smTwoLgThree">
             {filecoinStackFeatures.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}

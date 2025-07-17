@@ -1,15 +1,13 @@
-import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
-
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
-import { Heading } from '@/components/Heading'
 import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 
 import { blockExplorers } from './data/blockExplorers'
@@ -64,81 +62,64 @@ export default function BuildOnFilecoin() {
           title="Useful tools for builders"
           description="Accelerate development with Filecoin's ecosystem tools."
         >
-          <div className="space-y-30">
-            <div className="flex flex-col gap-20">
-              <Heading tag="h3" variant="3xl-medium">
-                Getting stared
-              </Heading>
-
-              <CardGrid as="ul" variant="smTwoLgThree">
-                {filecoinTools.map(
-                  ({ title, description, difficulty, cta }, index) => (
-                    <SimpleCard
-                      key={title}
-                      title={title}
-                      description={description}
-                      cta={cta}
-                      gradientHeaderAndBadge={{
-                        gradientIndex: index,
-                        badgeText: difficulty,
-                      }}
-                    />
-                  ),
-                )}
-              </CardGrid>
-            </div>
-
-            <SectionDivider variant="dark" />
-
-            <div className="flex flex-col gap-20">
-              <Heading tag="h3" variant="3xl-medium">
-                Developer resources
-              </Heading>
-
-              <CardGridContainer width="6xl">
-                <CardGrid as="ul" variant="mdTwo">
-                  {developerResources.map(
-                    ({ title, description, href, icon }) => (
-                      <LinkCard
-                        key={title}
-                        as="li"
-                        backgroundVariant="light"
-                        title={title}
-                        description={description}
-                        href={href}
-                        icon={icon}
-                      />
-                    ),
-                  )}
-                </CardGrid>
-              </CardGridContainer>
-            </div>
-
-            <SectionDivider variant="dark" />
-
-            <div className="flex flex-col gap-20">
-              <div>
-                <Heading tag="h3" variant="3xl-medium">
-                  Block explorers
-                </Heading>
-                <DescriptionText>
-                  Track transactions, contracts, and onchain activity with
-                  Filecoin-compatible block explorers.
-                </DescriptionText>
-              </div>
-
-              <CardGrid as="ul" variant="smTwoLgThree">
-                {blockExplorers.map(({ title, description, cta }) => (
+          <SectionSubContent title="Getting stared">
+            <CardGrid as="ul" variant="smTwoLgThree">
+              {filecoinTools.map(
+                ({ title, description, difficulty, cta }, index) => (
                   <SimpleCard
                     key={title}
                     title={title}
                     description={description}
                     cta={cta}
+                    gradientHeaderAndBadge={{
+                      gradientIndex: index,
+                      badgeText: difficulty,
+                    }}
                   />
-                ))}
+                ),
+              )}
+            </CardGrid>
+          </SectionSubContent>
+
+          <SectionDivider />
+
+          <SectionSubContent title="Developer resources">
+            <CardGridContainer width="6xl">
+              <CardGrid as="ul" variant="mdTwo">
+                {developerResources.map(
+                  ({ title, description, href, icon }) => (
+                    <LinkCard
+                      key={title}
+                      as="li"
+                      backgroundVariant="light"
+                      title={title}
+                      description={description}
+                      href={href}
+                      icon={icon}
+                    />
+                  ),
+                )}
               </CardGrid>
-            </div>
-          </div>
+            </CardGridContainer>
+          </SectionSubContent>
+
+          <SectionDivider />
+
+          <SectionSubContent
+            title="Block explorers"
+            description="Track transactions, contracts, and onchain activity with Filecoin-compatible block explorers."
+          >
+            <CardGrid as="ul" variant="smTwoLgThree">
+              {blockExplorers.map(({ title, description, cta }) => (
+                <SimpleCard
+                  key={title}
+                  title={title}
+                  description={description}
+                  cta={cta}
+                />
+              ))}
+            </CardGrid>
+          </SectionSubContent>
         </SectionContent>
       </PageSection>
 

@@ -6,6 +6,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
@@ -34,42 +35,30 @@ export default function OfferStorage() {
           title="What you need to offer storage on Filecoin"
           description="To offer storage on Filecoin you'll need enterprise-grade infrastructure and deep technical expertise to get started."
         >
-          <div className="space-y-6">
-            <Heading tag="h3" variant="xl-medium">
-              Data center environment
-            </Heading>
-            <p className="text-zinc-400">
-              You'll need to run your infrastructure in a secure, reliable, and
-              always-on environment.
-            </p>
-          </div>
+          <SectionSubContent
+            title="Data center environment"
+            description="You'll need to run your infrastructure in a secure, reliable, and always-on environment."
+          >
+            <CardGrid as="ul" variant="smTwoLgThreeWider">
+              {dataCenterRequirements.map(({ title, description, icon }) => (
+                <Card
+                  key={title}
+                  as="li"
+                  backgroundVariant="dark"
+                  title={title}
+                  description={description}
+                  icon={icon}
+                />
+              ))}
+            </CardGrid>
+          </SectionSubContent>
 
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
-            {dataCenterRequirements.map(({ title, description, icon }) => (
-              <Card
-                key={title}
-                as="li"
-                backgroundVariant="dark"
-                title={title}
-                description={description}
-                icon={icon}
-              />
-            ))}
-          </CardGrid>
+          <SectionDivider />
 
-          <SectionDivider variant="light" />
-
-          <div className="space-y-20">
-            <div className="space-y-6">
-              <Heading tag="h3" variant="xl-medium">
-                Core infrastructure setup
-              </Heading>
-              <p className="text-zinc-400">
-                This includes high-throughput networking and two powerful CPU
-                nodes required to operate the system reliably and at scale.
-              </p>
-            </div>
-
+          <SectionSubContent
+            title="Core infrastructure setup"
+            description="This includes high-throughput networking and two powerful CPU nodes required to operate the system reliably and at scale."
+          >
             <CardGrid as="ul" variant="lgTwoWide">
               {coreInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
@@ -84,20 +73,14 @@ export default function OfferStorage() {
                 </li>
               ))}
             </CardGrid>
-          </div>
+          </SectionSubContent>
 
-          <div className="space-y-20">
-            <div className="space-y-6">
-              <Heading tag="h3" variant="xl-medium">
-                Specialized & storage systems
-              </Heading>
-              <p className="text-zinc-400">
-                The Sealing Node prepares and proves data with GPU acceleration,
-                while the JBOD stores large volumes of client data persistently
-                and reliably.
-              </p>
-            </div>
+          <SectionDivider />
 
+          <SectionSubContent
+            title="Specialized & storage systems"
+            description="The Sealing Node prepares and proves data with GPU acceleration, while the JBOD stores large volumes of client data persistently and reliably."
+          >
             <CardGrid as="ul" variant="lgTwoWide">
               {specializedInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
@@ -112,22 +95,19 @@ export default function OfferStorage() {
                 </li>
               ))}
             </CardGrid>
-          </div>
+          </SectionSubContent>
 
-          <SectionDivider variant="light" />
+          <SectionDivider />
 
-          <div className="space-y-6">
-            <Heading tag="h3" variant="xl-medium">
-              Begin your storage provider journey
-            </Heading>
-            <p className="mb-20 text-zinc-400">
-              If you're already running infrastructure at this level — or
-              planning to — you might be a great fit.
-            </p>
-            <Button href="" variant="primary">
-              Book a call with our onboarding team
-            </Button>
-          </div>
+          <SectionSubContent
+            title="Begin your storage provider journey"
+            description="If you're already running infrastructure at this level — or planning to — you might be a great fit."
+            cta={
+              <Button href="" variant="primary">
+                Book a call with our onboarding team
+              </Button>
+            }
+          />
         </SectionContent>
       </PageSection>
 
