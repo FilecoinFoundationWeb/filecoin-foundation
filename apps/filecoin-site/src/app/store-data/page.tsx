@@ -3,7 +3,6 @@ import { trustedByLogos } from '@/data/trustedByLogos'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { Heading } from '@/components/Heading'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -28,16 +27,10 @@ export default function StoreData() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <div className="flex flex-col items-center gap-20 px-15">
-          <Heading tag="h2" variant="xl-regular">
-            Trusted by industry leaders
-          </Heading>
-
-          <LogoSection
-            title="Trusted by industry leaders"
-            logos={trustedByLogos}
-          />
-        </div>
+        <LogoSection
+          title="Trusted by industry leaders"
+          logos={trustedByLogos}
+        />
       </PageSection>
 
       <PageSection backgroundVariant="dark">

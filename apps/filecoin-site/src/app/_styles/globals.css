@@ -246,6 +246,20 @@
     }
   }
 
+  /* LOGO SECTION */
+  .logo-section-logo-item {
+    @apply text-zinc-400 transition-colors duration-200;
+
+    .dark-section & {
+      @apply hover:text-zinc-50;
+    }
+
+    .light-section &,
+    .gray-section & {
+      @apply hover:opacity-80;
+    }
+  }
+
   /* TEXT LINKS */
   .text-link {
     @apply focus:brand-outline font-normal no-underline hover:underline;

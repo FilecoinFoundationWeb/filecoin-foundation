@@ -19,7 +19,7 @@ export function LogoItem({
       width="auto"
       aria-label={href ? undefined : alt}
       aria-hidden={href ? 'true' : undefined}
-      className="max-w-full text-zinc-400"
+      className="logo-section-logo-item max-w-full"
     />
   )
 
@@ -29,7 +29,7 @@ export function LogoItem({
         <a
           href={href}
           aria-label={`Visit ${alt} website`}
-          className="focus:brand-outline transition-opacity hover:opacity-80"
+          className="focus:brand-outline"
         >
           {logoElement}
         </a>

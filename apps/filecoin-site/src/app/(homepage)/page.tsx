@@ -92,7 +92,11 @@ export default async function Home() {
 
       <PageSection backgroundVariant="light">
         <SectionContent title="Store your data with confidence">
-          <LogoSection logos={trustedByLogos} />
+          <LogoSection
+            title="Join leading organizations leveraging Filecoin for a more resilient digital future"
+            logos={trustedByLogos}
+            tag="h3"
+          />
 
           <SplitSectionContent
             title="Secure, verifiable, long-term storage that you control."
