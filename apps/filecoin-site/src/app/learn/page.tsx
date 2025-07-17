@@ -1,4 +1,3 @@
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 
 import { PATHS } from '@/constants/paths'
@@ -8,12 +7,14 @@ import { graphicsData } from '@/data/graphicsData'
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
+import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
+import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
@@ -33,10 +34,8 @@ export default function Learn() {
       >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
-            title="A decentralized storage network for humanity's data"
-            description="Filecoin is a protocol, economy, and community powering the world's
-          largest open storage network. It enables anyone to store, retrieve,
-          and build on verifiable data — securely and at scale."
+            title="The authenticity layer of a more resilient internet"
+            description="Filecoin is a protocol, economy, and community powering the world's largest open storage network. It enables anyone to store, retrieve, and build on verifiable data — securely and at scale."
             cta={
               <Button href="" variant="primary">
                 Explore documentation
@@ -59,8 +58,8 @@ export default function Learn() {
               'Petabytes of data, from cultural archives to scientific research, are stored on the network, protected by cryptographic proofs and distributed across nodes worldwide. The decentralized model empowers users with true control over their information, building a more open and resilient foundation for the web.',
             ]}
           />
-
-          <CardGrid as="ul" cols="mdTwo">
+          <SectionImage image={graphicsData.learnDiagramSection} />
+          <CardGrid as="ul" variant="lgTwo">
             {ecosystemPartners.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -75,7 +74,7 @@ export default function Learn() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Building a decentralized future">
-          <CardGrid as="ul" cols="mdThree">
+          <CardGrid as="ul" variant="smTwoLgThree">
             {filecoinValues.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -91,59 +90,56 @@ export default function Learn() {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        <SectionContent
-          centerCTA
-          title="How Filecoin works"
-          description="How data gets stored on Filecoin"
-          cta={
-            <Button href="" variant="primary">
-              Find storage solutions
-            </Button>
-          }
-        >
-          <ul className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            {filecoinStorageFlow.map(({ step, title, description }) => (
-              <li key={description} className="flex flex-col gap-3">
-                <span className="text-brand-500 text-4xl font-medium">
-                  {`0${step}.`}
-                </span>
-                <Heading tag="h4" variant="xl-medium">
-                  {title}
-                </Heading>
-                <DescriptionText>{description}</DescriptionText>
-              </li>
-            ))}
-          </ul>
+        <SectionContent title="How Filecoin works">
+          <SectionSubContent
+            centerCTA
+            title="How data gets stored on Filecoin"
+            cta={
+              <Button href="" variant="primary">
+                Find storage solutions
+              </Button>
+            }
+          >
+            <CardGrid as="ul" variant="smTwoXlThreeWidest">
+              {filecoinStorageFlow.map(({ step, title, description }) => (
+                <li key={description} className="flex flex-col gap-3">
+                  <span className="text-brand-500 text-4xl font-medium">
+                    {`0${step}.`}
+                  </span>
+                  <Heading tag="h4" variant="xl-medium">
+                    {title}
+                  </Heading>
+                  <DescriptionText>{description}</DescriptionText>
+                </li>
+              ))}
+            </CardGrid>
+          </SectionSubContent>
+
+          <SectionDivider />
+
+          <SectionSubContent
+            title="The Filecoin ecosystem"
+            description="Storing a file on Filecoin involves several participants working together."
+          >
+            <CardGrid as="ul" variant="smTwoLgThreeWider">
+              {filecoinParticipants.map(({ title, description, cta }) => (
+                <SimpleCard
+                  key={title}
+                  hasTopBorder
+                  title={title}
+                  description={description}
+                  cta={cta}
+                />
+              ))}
+            </CardGrid>
+            <SectionImage image={graphicsData.learnLibrarySection} />
+          </SectionSubContent>
         </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="light">
-        <SectionDivider variant="light" />
-        <Heading tag="h3" variant="3xl-medium">
-          The Filecoin ecosystem
-        </Heading>
-        <DescriptionText>
-          Storing a file on Filecoin involves several participants working
-          together.
-        </DescriptionText>
-
-        <CardGrid as="ul" cols="mdThree">
-          {filecoinParticipants.map(({ title, description, cta }) => (
-            <SimpleCard
-              key={title}
-              hasTopBorder
-              title={title}
-              description={description}
-              cta={cta}
-            />
-          ))}
-        </CardGrid>
-        <SectionImage image={graphicsData.learnLibrarySection} />
       </PageSection>
 
       <PageSection backgroundVariant="gray">
         <SectionContent title="What powers the Filecoin network">
-          <CardGrid as="ul" cols="mdThree">
+          <CardGrid as="ul" variant="smTwoLgThree">
             {filecoinStackFeatures.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -168,43 +164,6 @@ export default function Learn() {
           }
         >
           <ComparisonTable />
-        </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="light">
-        <SectionContent
-          title="A robust foundation for humanity's information"
-          description="Filecoin provides the foundation for critically important public data, such as open access scientific data, creative commons media, historical archives, preservation, and more."
-        >
-          <SectionImage image={graphicsData.learnDiagramSection} />
-          <CardGrid as="ul" cols="mdTwo">
-            {ecosystemPartners.map(({ title, description, cta }) => (
-              <SimpleCard
-                key={title}
-                title={title}
-                description={description}
-                cta={cta}
-              />
-            ))}
-          </CardGrid>
-        </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="gray">
-        <SectionContent
-          title="What powers the Filecoin network"
-          description="Filecoin is more than storage. It's a full stack of innovation."
-        >
-          <CardGrid as="ul" cols="mdThree">
-            {filecoinStackFeatures.map(({ title, description, cta }) => (
-              <SimpleCard
-                key={title}
-                title={title}
-                description={description}
-                cta={cta}
-              />
-            ))}
-          </CardGrid>
         </SectionContent>
       </PageSection>
 

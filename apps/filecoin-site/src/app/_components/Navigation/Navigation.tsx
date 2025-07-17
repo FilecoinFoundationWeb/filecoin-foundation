@@ -17,7 +17,7 @@ export function Navigation() {
   return (
     <Section as="header" backgroundVariant={isDarkTheme ? 'dark' : 'light'}>
       <Container>
-        <nav className="my-9 flex items-center justify-between lg:justify-start lg:gap-24">
+        <nav className="my-8 flex items-center justify-between lg:justify-start lg:gap-24">
           <div className="shrink-0">
             <LogoLink logo={LogoIcon} />
           </div>
