@@ -2,6 +2,7 @@ import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageTyp
 
 import ClassicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
 import DataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
+import Diagram from '@/assets/graphics/diagram.webp'
 import DigitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
 import EarthFromSpaceAtNight from '@/assets/graphics/earth-from-space-at-night.webp'
 import FilecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
@@ -31,9 +32,13 @@ export const graphicsData = {
     data: FilecoinServerRack,
     alt: 'Filecoin server rack with multiple blade servers and network connections',
   },
-  learnSection: {
+  learnLibrarySection: {
     data: ClassicLibraryInterior,
     alt: 'Classic library interior with wooden shelves and books',
+  },
+  learnDiagramSection: {
+    data: Diagram,
+    alt: 'Three concentric circles of decreasing size, outlined in black on a white background.',
   },
   offerStorageHero: {
     data: FilecoinMiningRig,

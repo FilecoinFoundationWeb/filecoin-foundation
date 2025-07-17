@@ -28,7 +28,7 @@ export default function Learn() {
   return (
     <>
       <BackgroundImage withOverlay src={graphicsData.learnHero.data.src}>
-        <PageSection backgroundVariant="dark">
+        <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="A decentralized storage network for humanity's data"
             description="Filecoin is a protocol, economy, and community powering the world's
@@ -116,27 +116,29 @@ export default function Learn() {
 
       <PageSection backgroundVariant="light">
         <SectionDivider variant="light" />
-        <div>
-          <Heading tag="h3" variant="3xl-medium">
-            The Filecoin ecosystem
-          </Heading>
-          <DescriptionText>
-            Storing a file on Filecoin involves several participants working
-            together.
-          </DescriptionText>
+        <Heading tag="h3" variant="3xl-medium">
+          The Filecoin ecosystem
+        </Heading>
+        <DescriptionText>
+          Storing a file on Filecoin involves several participants working
+          together.
+        </DescriptionText>
 
-          <CardGrid as="ul" cols="mdThree">
-            {filecoinParticipants.map(({ title, description, cta }) => (
-              <SimpleCard
-                key={title}
-                hasTopBorder
-                title={title}
-                description={description}
-                cta={cta}
-              />
-            ))}
-          </CardGrid>
-        </div>
+        <CardGrid as="ul" cols="mdThree">
+          {filecoinParticipants.map(({ title, description, cta }) => (
+            <SimpleCard
+              key={title}
+              hasTopBorder
+              title={title}
+              description={description}
+              cta={cta}
+            />
+          ))}
+        </CardGrid>
+        <SectionImage
+          src={graphicsData.learnLibrarySection.data}
+          alt={graphicsData.learnLibrarySection.alt}
+        />
       </PageSection>
 
       <PageSection backgroundVariant="gray">
@@ -175,8 +177,8 @@ export default function Learn() {
           description="Filecoin provides the foundation for critically important public data, such as open access scientific data, creative commons media, historical archives, preservation, and more."
         >
           <SectionImage
-            src={graphicsData.learnSection.data}
-            alt={graphicsData.learnSection.alt}
+            src={graphicsData.learnDiagramSection.data}
+            alt={graphicsData.learnDiagramSection.alt}
           />
           <CardGrid as="ul" cols="mdTwo">
             {ecosystemPartners.map(({ title, description, cta }) => (

@@ -3,21 +3,20 @@ import Image, { type StaticImageData } from 'next/image'
 type SectionImageProps = {
   src: StaticImageData
   alt: string
-  height?: string
+  width?: number
+  height?: number
 }
 
-export function SectionImage({ src, alt, height = 'h-96' }: SectionImageProps) {
+export function SectionImage({ src, alt, width, height }: SectionImageProps) {
   return (
-    <div className={`relative ${height} w-full`}>
-      <Image
-        fill
-        priority
-        quality={100}
-        sizes="100vw"
-        src={src}
-        alt={alt}
-        className="object-cover object-center"
-      />
-    </div>
+    <Image
+      width={width}
+      height={height}
+      quality={100}
+      sizes="100vw"
+      src={src}
+      alt={alt}
+      className="h-full w-full object-contain"
+    />
   )
 }
