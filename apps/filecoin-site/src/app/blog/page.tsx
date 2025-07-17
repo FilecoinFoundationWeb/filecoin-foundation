@@ -4,11 +4,11 @@ import { PATHS } from '@/constants/paths'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
+import { CardGrid } from '@/components/CardGrid'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { BlogCard } from './components/BlogCard'
-import { BlogPostsGrid } from './components/BlogPostsGrid'
 import type { BlogPost } from './types/blogPostType'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
@@ -38,7 +38,7 @@ export default async function Blog() {
       </BackgroundImage>
 
       <PageSection backgroundVariant="light">
-        <BlogPostsGrid>
+        <CardGrid variant="col2-two">
           {sortedPosts.map((post: BlogPost) => {
             const {
               title,
@@ -67,7 +67,7 @@ export default async function Blog() {
               />
             )
           })}
-        </BlogPostsGrid>
+        </CardGrid>
       </PageSection>
     </>
   )
