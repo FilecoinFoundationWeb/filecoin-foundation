@@ -8,6 +8,8 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 
+import { ExpertSupportBanner } from './components/ExpertSupportBanner'
+import { StorageCategoryFilter } from './components/StorageCategoryFilter'
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { storageCategories } from './data/storageCategories'
 
@@ -59,22 +61,24 @@ export default function StoreData() {
           description="Find the perfect storage solution for your data on Filecoin."
         />
 
-        <div className="flex items-baseline gap-6 bg-zinc-100 px-9 py-6">
-          <p>Not sure what storage solution to choose?</p>
-
-          <Button href="" variant="primary">
-            Talk to an expert
-          </Button>
+        <div className="mt-15">
+          <ExpertSupportBanner />
         </div>
 
-        <div className="flex gap-4">
-          {storageCategories.map(({ name, description }) => (
-            <div key={name} className="flex flex-col gap-3">
-              <span className="font-medium text-zinc-600">{name}</span>
-              <span className="text-sm text-zinc-600">{description}</span>
-            </div>
+        <ul
+          role="tablist"
+          className="mt-20 flex flex-wrap gap-4 lg:flex-nowrap"
+        >
+          {storageCategories.map(({ name, description }, index) => (
+            <StorageCategoryFilter
+              key={name}
+              isActive={index === 0}
+              name={name}
+              description={description}
+              count={(index + 1) * 10}
+            />
           ))}
-        </div>
+        </ul>
       </PageSection>
 
       <PageSection backgroundVariant="gray">
