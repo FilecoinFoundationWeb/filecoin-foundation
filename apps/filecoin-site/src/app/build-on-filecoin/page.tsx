@@ -44,7 +44,7 @@ export default function BuildOnFilecoin() {
           description="          From powering AI workflows to enabling cross-chain data bridges,
           Filecoin provides programmable, permissionless storage infrastructure."
         >
-          <CardGrid as="ul" variant="col3-two">
+          <CardGrid as="ul" variant="smTwoLgThreeWider">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -70,7 +70,7 @@ export default function BuildOnFilecoin() {
                 Getting stared
               </Heading>
 
-              <CardGrid as="ul" variant="col3-four">
+              <CardGrid as="ul" variant="smTwoLgThree">
                 {filecoinTools.map(
                   ({ title, description, difficulty, cta }, index) => (
                     <SimpleCard
@@ -127,7 +127,7 @@ export default function BuildOnFilecoin() {
                 </DescriptionText>
               </div>
 
-              <CardGrid as="ul" variant="col3-four">
+              <CardGrid as="ul" variant="smTwoLgThree">
                 {blockExplorers.map(({ title, description, cta }) => (
                   <SimpleCard
                     key={title}
@@ -160,7 +160,7 @@ export default function BuildOnFilecoin() {
           description="Connect with a vibrant network of developers building on Filecoin.
           Connect, collaborate, and grow with the ecosystem."
         >
-          <CardGrid as="ul" variant="col3-one">
+          <CardGrid as="ul" variant="smTwoLgThreeTight">
             {communityConnections.map(({ title, description, href, icon }) => (
               <LinkCard
                 key={title}
@@ -183,7 +183,7 @@ export default function BuildOnFilecoin() {
             advancing the protocol and building the tools that power its
             ecosystem."
         >
-          <CardGrid as="ul" variant="col2-three">
+          <CardGrid as="ul" variant="lgTwo">
             {communityHubs.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
