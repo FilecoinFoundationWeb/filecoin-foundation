@@ -129,10 +129,7 @@ export default function BuildOnFilecoin() {
             </Button>
           }
         />
-        <SectionImage
-          src={graphicsData.buildOnFilecoinSection.data}
-          alt={graphicsData.buildOnFilecoinSection.alt}
-        />
+        <SectionImage image={graphicsData.buildOnFilecoinSection} />
       </PageSection>
 
       <PageSection backgroundVariant="gray">

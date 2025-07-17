@@ -1,21 +1,21 @@
 import Image, { type StaticImageData } from 'next/image'
 
 type SectionImageProps = {
-  src: StaticImageData
-  alt: string
-  width?: number
-  height?: number
+  image: {
+    data: StaticImageData
+    alt: string
+  }
+  priority?: boolean
 }
 
-export function SectionImage({ src, alt, width, height }: SectionImageProps) {
+export function SectionImage({ image, priority = false }: SectionImageProps) {
   return (
     <Image
-      width={width}
-      height={height}
-      quality={100}
+      quality={85}
       sizes="100vw"
-      src={src}
-      alt={alt}
+      src={image.data}
+      alt={image.alt}
+      priority={priority}
       className="h-full w-full object-contain"
     />
   )

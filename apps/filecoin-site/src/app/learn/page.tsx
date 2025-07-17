@@ -164,10 +164,7 @@ export default function Learn() {
           title="A robust foundation for humanity's information"
           description="Filecoin provides the foundation for critically important public data, such as open access scientific data, creative commons media, historical archives, preservation, and more."
         >
-          <SectionImage
-            src={graphicsData.learnDiagramSection.data}
-            alt={graphicsData.learnDiagramSection.alt}
-          />
+          <SectionImage image={graphicsData.learnDiagramSection} />
           <CardGrid as="ul" cols="mdTwo">
             {ecosystemPartners.map(({ title, description, cta }) => (
               <SimpleCard
