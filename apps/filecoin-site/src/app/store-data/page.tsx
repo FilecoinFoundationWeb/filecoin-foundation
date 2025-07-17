@@ -1,6 +1,3 @@
-
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-
 import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { Button } from '@/components/Button'
