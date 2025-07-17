@@ -10,8 +10,10 @@ import { SectionContent } from '@/components/SectionContent'
 
 import { ExpertSupportBanner } from './components/ExpertSupportBanner'
 import { StorageCategoryFilter } from './components/StorageCategoryFilter'
+import { StorageProviderCard } from './components/StorageProviderCard'
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { storageCategories } from './data/storageCategories'
+import { storageProviders } from './data/storageProviders'
 
 export default function StoreData() {
   return (
@@ -79,6 +81,14 @@ export default function StoreData() {
             />
           ))}
         </ul>
+
+        <div className="mt-10">
+          <CardGrid as="ul" variant="smTwoLgThree">
+            {storageProviders.map(({ name }) => (
+              <StorageProviderCard key={name} name={name} />
+            ))}
+          </CardGrid>
+        </div>
       </PageSection>
 
       <PageSection backgroundVariant="gray">
