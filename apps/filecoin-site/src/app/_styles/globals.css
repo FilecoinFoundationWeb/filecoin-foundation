@@ -206,6 +206,29 @@
     }
   }
 
+  /* SECTION SUB CONTENT */
+  .section-sub-content-heading-text {
+    .light-section &,
+    .gray-section & {
+      @apply text-zinc-950;
+    }
+
+    .dark-section & {
+      @apply text-zinc-50;
+    }
+  }
+
+  .section-sub-content-description-text {
+    .light-section &,
+    .gray-section & {
+      @apply text-zinc-600;
+    }
+
+    .dark-section & {
+      @apply text-zinc-400;
+    }
+  }
+
   /* SHARE ARTICLE */
   .share-article-list {
     @apply gap-4;
