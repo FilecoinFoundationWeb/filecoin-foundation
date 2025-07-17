@@ -3,6 +3,7 @@ import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
+import { CardGridContainer } from '@/components/CardGridContainer'
 import { Heading } from '@/components/Heading'
 import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -11,7 +12,6 @@ import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
 import { SimpleCard } from '@/components/SimpleCard'
 
-import { CardGridContainer } from './components/CardGridContainer'
 import { blockExplorers } from './data/blockExplorers'
 import { communityConnections } from './data/communityConnections'
 import { communityHubs } from './data/communityHubs'
@@ -95,7 +95,7 @@ export default function BuildOnFilecoin() {
                 Developer resources
               </Heading>
 
-              <CardGridContainer>
+              <CardGridContainer width="6xl">
                 <CardGrid variant="col2-two">
                   {developerResources.map(
                     ({ title, description, href, icon }) => (
@@ -202,7 +202,7 @@ export default function BuildOnFilecoin() {
           description="Whether you're just getting started or looking to deepen your
           contributions, there are many ways to get involved."
         >
-          <CardGridContainer>
+          <CardGridContainer width="6xl">
             <CardGrid variant="col2-two">
               {getInvolvedOptions.map(({ title, description, href, icon }) => (
                 <LinkCard
