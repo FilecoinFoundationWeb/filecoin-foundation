@@ -11,6 +11,7 @@ import VictorChanLogo from '@/assets/logos/victor-chang-logo.svg'
 export const trustedByLogos: Array<LogoItemProps> = [
   {
     logo: SolanaLogo,
+    size: 24,
     alt: 'Solana Logo',
     href: 'https://solana.com',
   },
@@ -36,6 +37,7 @@ export const trustedByLogos: Array<LogoItemProps> = [
   },
   {
     logo: AethirLogo,
+    size: 24,
     alt: 'Aethir Logo',
     href: 'https://aethir.com',
   },
