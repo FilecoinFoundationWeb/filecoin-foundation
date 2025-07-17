@@ -57,7 +57,7 @@ export default function OfferStorage() {
             ))}
           </CardGrid>
 
-          <SectionDivider variant="light" />
+          <SectionDivider />
 
           <div className="space-y-20">
             <div className="space-y-6">
@@ -114,7 +114,7 @@ export default function OfferStorage() {
             </CardGrid>
           </div>
 
-          <SectionDivider variant="light" />
+          <SectionDivider />
 
           <div className="space-y-6">
             <Heading tag="h3" variant="xl-medium">

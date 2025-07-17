@@ -107,7 +107,15 @@ export default function Learn() {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        <SectionDivider variant="light" />
+        <SectionDivider />
+
+        <Heading tag="h3" variant="3xl-medium">
+          The Filecoin ecosystem
+        </Heading>
+        <DescriptionText>
+          Storing a file on Filecoin involves several participants working
+          together.
+        </DescriptionText>
 
         <Heading tag="h3" variant="3xl-medium">
           The Filecoin ecosystem

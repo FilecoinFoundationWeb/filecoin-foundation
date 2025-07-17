@@ -229,6 +229,18 @@
     }
   }
 
+  /* SECTION DIVIDER */
+  .section-divider {
+    .light-section &,
+    .gray-section & {
+      @apply border-zinc-200;
+    }
+
+    .dark-section & {
+      @apply border-zinc-400/10;
+    }
+  }
+
   /* SHARE ARTICLE */
   .share-article-list {
     @apply gap-4;

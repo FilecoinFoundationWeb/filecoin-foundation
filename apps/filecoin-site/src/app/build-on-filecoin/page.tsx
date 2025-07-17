@@ -88,7 +88,7 @@ export default function BuildOnFilecoin() {
               </CardGrid>
             </div>
 
-            <SectionDivider variant="dark" />
+            <SectionDivider />
 
             <div className="flex flex-col gap-20">
               <Heading tag="h3" variant="3xl-medium">
@@ -114,7 +114,7 @@ export default function BuildOnFilecoin() {
               </CardGridContainer>
             </div>
 
-            <SectionDivider variant="dark" />
+            <SectionDivider />
 
             <div className="flex flex-col gap-20">
               <div>
