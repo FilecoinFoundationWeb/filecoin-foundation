@@ -8,7 +8,7 @@ import { Heading } from '@/components/Heading'
 type SideBySideContentProps = {
   title: string
   description: string | Array<string>
-  cta: ButtonRowProps['buttons']
+  cta?: ButtonRowProps['buttons']
 }
 
 const gap = 'gap-8 lg:gap-16'
@@ -43,7 +43,7 @@ export function SplitSectionContent({
           ))}
         </div>
 
-        <ButtonRow buttons={cta} />
+        {cta && <ButtonRow buttons={cta} />}
       </div>
     </div>
   )

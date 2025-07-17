@@ -1,7 +1,6 @@
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
-
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
+import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -45,7 +44,7 @@ export default function OfferStorage() {
             </p>
           </div>
 
-          <CardGrid as="ul" cols="mdThree">
+          <CardGrid as="ul" variant="smTwoLgThreeWider">
             {dataCenterRequirements.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -71,7 +70,7 @@ export default function OfferStorage() {
               </p>
             </div>
 
-            <ul className="flex gap-14 sm:flex-row">
+            <CardGrid as="ul" variant="lgTwoWide">
               {coreInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
                   <Heading tag="h4" variant="xl-medium">
@@ -84,7 +83,7 @@ export default function OfferStorage() {
                   </ul>
                 </li>
               ))}
-            </ul>
+            </CardGrid>
           </div>
 
           <div className="space-y-20">
@@ -99,7 +98,7 @@ export default function OfferStorage() {
               </p>
             </div>
 
-            <ul className="flex gap-14 sm:flex-row">
+            <CardGrid as="ul" variant="lgTwoWide">
               {specializedInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
                   <Heading tag="h4" variant="xl-medium">
@@ -112,7 +111,7 @@ export default function OfferStorage() {
                   </ul>
                 </li>
               ))}
-            </ul>
+            </CardGrid>
           </div>
 
           <SectionDivider variant="light" />
@@ -153,18 +152,19 @@ export default function OfferStorage() {
         <SectionContent
           title="Earn more rewards for more storage"
           description="Join the world's largest decentralized storage network — empowering independent operators to store and protect critical data without relying on centralized tech giants. Your infrastructure helps power a more open, resilient, and censorship-resistant internet."
-        />
-        <CardGrid as="ul" cols="mdTwo">
-          {filecoinEarningsInsights.map(({ title, description, cta }) => (
-            <SimpleCard
-              key={title}
-              hasTopBorder
-              title={title}
-              description={description}
-              cta={cta}
-            />
-          ))}
-        </CardGrid>
+        >
+          <CardGrid as="ul" variant="lgTwoWide">
+            {filecoinEarningsInsights.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                hasTopBorder
+                title={title}
+                description={description}
+                cta={cta}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="dark">
