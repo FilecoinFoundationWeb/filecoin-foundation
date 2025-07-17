@@ -27,7 +27,7 @@ export default function BuildOnFilecoin() {
   return (
     <>
       <BackgroundImage
-        withOverlay
+        overlayVariant="light"
         src={graphicsData.buildOnFilecoinHero.data.src}
       >
         <PageSection backgroundVariant="transparentDark">

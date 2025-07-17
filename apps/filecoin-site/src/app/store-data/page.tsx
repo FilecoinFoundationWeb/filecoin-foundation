@@ -18,7 +18,10 @@ import { trustedByLogos } from './data/trustedByLogos'
 export default function StoreData() {
   return (
     <>
-      <BackgroundImage withOverlay src={graphicsData.storeDataHero.data.src}>
+      <BackgroundImage
+        overlayVariant="light"
+        src={graphicsData.storeDataHero.data.src}
+      >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Secure, decentralized storage for data that matters"

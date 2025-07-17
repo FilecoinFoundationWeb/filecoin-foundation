@@ -27,7 +27,10 @@ import { filecoinValues } from './data/filecoinValues'
 export default function Learn() {
   return (
     <>
-      <BackgroundImage withOverlay src={graphicsData.learnHero.data.src}>
+      <BackgroundImage
+        overlayVariant="light"
+        src={graphicsData.learnHero.data.src}
+      >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="A decentralized storage network for humanity's data"

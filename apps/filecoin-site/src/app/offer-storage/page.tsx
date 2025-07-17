@@ -22,7 +22,10 @@ import { specializedInfrastructureSpecs } from './data/specializedInfrastructure
 export default function OfferStorage() {
   return (
     <>
-      <BackgroundImage withOverlay src={graphicsData.offerStorageHero.data.src}>
+      <BackgroundImage
+        overlayVariant="light"
+        src={graphicsData.offerStorageHero.data.src}
+      >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Join the world's largest decentralized storage network"
