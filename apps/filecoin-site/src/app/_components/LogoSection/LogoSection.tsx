@@ -1,22 +1,21 @@
-import { Heading } from '@/components/Heading'
+import { Heading, type HeadingProps } from '@/components/Heading'
 
 import { type LogoItemProps, LogoItem } from './LogoItem'
 
 type LogoSectionProps = {
   logos: Array<LogoItemProps>
   title?: string
+  tag?: HeadingProps['tag']
 }
 
-export function LogoSection({ logos, title }: LogoSectionProps) {
+export function LogoSection({ logos, title, tag = 'h2' }: LogoSectionProps) {
   return (
-    <section aria-labelledby={title ? 'logo-section-title' : undefined}>
+    <section
+      className="space-y-20"
+      aria-labelledby={title ? 'logo-section-title' : undefined}
+    >
       {title && (
-        <Heading
-          id="logo-section-title"
-          className="sr-only"
-          tag="h2"
-          variant="xl-regular"
-        >
+        <Heading tag={tag} variant="xl-regular" id="logo-section-title">
           {title}
         </Heading>
       )}

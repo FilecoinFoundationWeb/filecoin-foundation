@@ -3,22 +3,23 @@ import type { ComponentType, SVGProps } from 'react'
 export type LogoItemProps = {
   logo: ComponentType<SVGProps<SVGSVGElement>>
   alt: string
-  height?: number
+  size?: number
   href?: string
 }
 
 export function LogoItem({
   logo: SvgComponent,
   alt,
-  height = 40,
+  size = 40,
   href,
 }: LogoItemProps) {
   const logoElement = (
     <SvgComponent
-      height={height}
+      height={size}
+      width="auto"
       aria-label={href ? undefined : alt}
       aria-hidden={href ? 'true' : undefined}
-      className="h-auto max-w-full"
+      className="logo-section-logo-item max-w-full"
     />
   )
 
@@ -28,7 +29,7 @@ export function LogoItem({
         <a
           href={href}
           aria-label={`Visit ${alt} website`}
-          className="focus:brand-outline transition-opacity hover:opacity-80"
+          className="focus:brand-outline"
         >
           {logoElement}
         </a>

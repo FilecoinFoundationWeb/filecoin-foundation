@@ -1,7 +1,8 @@
+import { trustedByLogos } from '@/data/trustedByLogos'
+
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { Heading } from '@/components/Heading'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -9,7 +10,6 @@ import { SectionContent } from '@/components/SectionContent'
 
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { storageCategories } from './data/storageCategories'
-import { trustedByLogos } from './data/trustedByLogos'
 
 export default function StoreData() {
   return (
@@ -27,16 +27,10 @@ export default function StoreData() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <div className="flex flex-col items-center gap-20 px-15">
-          <Heading tag="h2" variant="xl-regular">
-            Trusted by industry leaders
-          </Heading>
-
-          <LogoSection
-            title="Trusted by industry leaders"
-            logos={trustedByLogos}
-          />
-        </div>
+        <LogoSection
+          title="Trusted by industry leaders"
+          logos={trustedByLogos}
+        />
       </PageSection>
 
       <PageSection backgroundVariant="dark">

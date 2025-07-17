@@ -4,12 +4,15 @@ import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlog
 
 import { PATHS } from '@/constants/paths'
 
+import { trustedByLogos } from '@/data/trustedByLogos'
+
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { Container } from '@/components/Container'
 import { LinkCard } from '@/components/LinkCard'
+import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { Section } from '@/components/Section'
@@ -20,6 +23,7 @@ import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
 import { providerBenefits } from './data/providerBenefits'
+import { resilientWebLogos } from './data/resilientWebLogos'
 
 import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPost } from '@/blog/types/blogPostType'
@@ -88,7 +92,11 @@ export default async function Home() {
 
       <PageSection backgroundVariant="light">
         <SectionContent title="Store your data with confidence">
-          <p>TODO: Add logos</p>
+          <LogoSection
+            title="Join leading organizations leveraging Filecoin for a more resilient digital future"
+            logos={trustedByLogos}
+            tag="h3"
+          />
 
           <SplitSectionContent
             title="Secure, verifiable, long-term storage that you control."
@@ -119,8 +127,7 @@ export default async function Home() {
             </Button>,
           ]}
         >
-          <p>TODO: Add logos</p>
-          <p>TODO: Add image</p>
+          <LogoSection logos={resilientWebLogos} />
           <CardGrid as="ul" variant="smTwoLgThreeWider">
             {providerBenefits.map(({ title, description }) => (
               <Card
