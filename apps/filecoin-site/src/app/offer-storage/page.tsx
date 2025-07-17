@@ -122,10 +122,7 @@ export default function OfferStorage() {
                 </li>
               ))}
             </ul>
-            <SectionImage
-              src={graphicsData.offerStorageSection.data}
-              alt={graphicsData.offerStorageSection.alt}
-            />
+            <SectionImage image={graphicsData.offerStorageSection} />
           </div>
 
           <SectionDivider variant="light" />

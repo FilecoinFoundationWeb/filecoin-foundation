@@ -117,10 +117,7 @@ export default async function Home() {
             </Button>,
           ]}
         >
-          <SectionImage
-            src={graphicsData.homepageSection.data}
-            alt={graphicsData.homepageSection.alt}
-          />
+          <SectionImage image={graphicsData.homepageSection} />
           <CardGrid as="ul" cols="lgThree">
             {providerBenefits.map(({ title, description }) => (
               <Card
