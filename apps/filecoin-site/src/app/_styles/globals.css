@@ -237,7 +237,7 @@
     }
 
     .dark-section & {
-      @apply border-zinc-400/10;
+      @apply border-zinc-400/20;
     }
   }
 
