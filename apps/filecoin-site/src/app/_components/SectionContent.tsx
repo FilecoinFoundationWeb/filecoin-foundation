@@ -1,7 +1,5 @@
 import { clsx } from 'clsx'
 
-import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
-
 import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
 import { Heading, type HeadingProps } from '@/components/Heading'
 
@@ -27,9 +25,9 @@ export function SectionContent({
           {title}
         </Heading>
         {description && (
-          <div className="pt-6 text-xl leading-8 font-normal text-balance">
-            <DescriptionText>{description}</DescriptionText>
-          </div>
+          <p className="pt-6 text-xl leading-8 font-normal text-balance">
+            {description}
+          </p>
         )}
       </div>
       {children && <div className="mt-30 flex flex-col gap-30">{children}</div>}
