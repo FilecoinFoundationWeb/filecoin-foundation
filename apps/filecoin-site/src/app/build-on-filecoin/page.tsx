@@ -25,7 +25,10 @@ import { getInvolvedOptions } from './data/getInvolvedOptions'
 export default function BuildOnFilecoin() {
   return (
     <>
-      <BackgroundImage src={graphicsData.buildOnFilecoinHero.data.src}>
+      <BackgroundImage
+        overlayVariant="light"
+        src={graphicsData.buildOnFilecoinHero.data.src}
+      >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Build on Filecoin with programmable storage"
