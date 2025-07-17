@@ -131,7 +131,7 @@ export default function BuildOnFilecoin() {
         />
         <SectionImage
           src={graphicsData.buildOnFilecoinSection.data}
-          alt="Satellite view of Earth showing city lights across continents"
+          alt={graphicsData.buildOnFilecoinSection.alt}
         />
       </PageSection>
 
