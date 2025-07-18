@@ -4,7 +4,7 @@ import { clsx } from 'clsx'
 
 type BackgroundImageProps = {
   src: string
-  overlayVariant?: 'dark' | 'light'
+  overlayVariant?: keyof typeof OVERLAY_CLASSES
   children?: React.ReactNode
 }
 
