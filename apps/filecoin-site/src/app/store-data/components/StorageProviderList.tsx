@@ -14,11 +14,11 @@ import { storageProviders } from '../data/storageProviders'
 import { StorageCategoryFilter } from './StorageCategoryFilter'
 import { StorageProviderCard } from './StorageProviderCard'
 
-const URL_KEY = 'storage-type'
+const URL_SEARCH_PARAM = 'storage-type'
 
 export function StorageProviderList() {
   const [filters, setFilters] = useQueryState(
-    URL_KEY,
+    URL_SEARCH_PARAM,
     parseAsArrayOf(parseAsString).withDefault([]).withOptions({
       shallow: false,
       clearOnDefault: true,

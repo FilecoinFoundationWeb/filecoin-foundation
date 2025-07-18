@@ -2,7 +2,7 @@ import type { StorageProviderCardProps } from '../components/StorageProviderCard
 
 import type { StorageKey } from './storageCategories'
 
-type StorageProvider = StorageProviderCardProps & {
+type StorageProvider = Pick<StorageProviderCardProps, 'name'> & {
   category: StorageKey
 }
 
