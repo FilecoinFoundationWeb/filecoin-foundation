@@ -29,6 +29,7 @@
     "./mapCMSOptionsToListboxFormat": "./src/mapCMSOptionsToListboxFormat.ts",
     "./stringUtils": "./src/stringUtils.ts",
     "./sortBlogPosts": "./src/sortBlogPosts.ts",
+    "./toggleArraySelection": "./src/toggleArraySelection.ts",
     "./urlUtils": "./src/urlUtils.ts",
     "./zodUtils": "./src/zodUtils.ts",
     "./constants/*": "./src/constants/*.ts",

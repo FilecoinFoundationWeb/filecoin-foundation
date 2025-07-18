@@ -1,3 +1,5 @@
+import { Suspense } from 'react'
+
 import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { Button } from '@/components/Button'
@@ -8,8 +10,9 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 
+import { ExpertSupportBanner } from './components/ExpertSupportBanner'
+import { StorageProviderList } from './components/StorageProviderList'
 import { filecoinFeatures } from './data/filecoinFeatures'
-import { storageCategories } from './data/storageCategories'
 
 export default function StoreData() {
   return (
@@ -59,21 +62,14 @@ export default function StoreData() {
           description="Find the perfect storage solution for your data on Filecoin."
         />
 
-        <div className="flex items-baseline gap-6 bg-zinc-100 px-9 py-6">
-          <p>Not sure what storage solution to choose?</p>
-
-          <Button href="" variant="primary">
-            Talk to an expert
-          </Button>
+        <div className="mt-15">
+          <ExpertSupportBanner />
         </div>
 
-        <div className="flex gap-4">
-          {storageCategories.map(({ name, description }) => (
-            <div key={name} className="flex flex-col gap-3">
-              <span className="font-medium text-zinc-600">{name}</span>
-              <span className="text-sm text-zinc-600">{description}</span>
-            </div>
-          ))}
+        <div className="mt-20">
+          <Suspense>
+            <StorageProviderList />
+          </Suspense>
         </div>
       </PageSection>
 

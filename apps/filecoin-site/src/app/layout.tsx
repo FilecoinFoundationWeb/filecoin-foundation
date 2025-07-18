@@ -1,3 +1,5 @@
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
+
 import { SiteLayout } from '@/components/SiteLayout'
 
 import '@/styles/globals.css'
@@ -12,5 +14,9 @@ type RootLayoutProps = {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  return <SiteLayout>{children}</SiteLayout>
+  return (
+    <NuqsAdapter>
+      <SiteLayout>{children}</SiteLayout>
+    </NuqsAdapter>
+  )
 }
