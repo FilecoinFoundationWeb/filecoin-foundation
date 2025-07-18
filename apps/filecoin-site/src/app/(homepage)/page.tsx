@@ -40,13 +40,13 @@ export default async function Home() {
       <BackgroundImage src={graphicsData.homepageHero.data.src}>
         <Section backgroundVariant="transparent">
           <Container>
-            <div className="mt-32 mb-24">
+            <div className="pt-32 pb-24">
               <PageHeader
                 description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
                 title="Preserving humanity's most important information"
               />
             </div>
-            <div className="mb-52">
+            <div className="pb-52">
               <CardGrid as="ul" variant="smTwoLgThreeTight">
                 {networkActions.map(({ title, description, href, icon }) => (
                   <LinkCard
