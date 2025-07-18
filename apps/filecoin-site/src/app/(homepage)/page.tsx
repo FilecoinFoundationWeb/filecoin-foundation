@@ -126,7 +126,9 @@ export default async function Home() {
           ]}
         >
           <p>TODO: Add logos</p>
-          <SectionImage image={graphicsData.homepageSection} />
+
+          <SectionImage {...graphicsData.homepageSection} />
+
           <CardGrid as="ul" variant="smTwoLgThreeWider">
             {providerBenefits.map(({ title, description }) => (
               <Card
