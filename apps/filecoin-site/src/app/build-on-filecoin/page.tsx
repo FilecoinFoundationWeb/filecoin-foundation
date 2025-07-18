@@ -1,3 +1,5 @@
+import { graphicsData } from '@/data/graphicsData'
+
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -7,6 +9,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 
@@ -129,6 +132,7 @@ export default function BuildOnFilecoin() {
             </Button>
           }
         />
+        <SectionImage {...graphicsData.buildOnFilecoinSection} />
       </PageSection>
 
       <PageSection backgroundVariant="gray">

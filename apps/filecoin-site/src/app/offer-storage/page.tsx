@@ -1,3 +1,6 @@
+import { graphicsData } from '@/data/graphicsData'
+
+import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -18,17 +21,22 @@ import { specializedInfrastructureSpecs } from './data/specializedInfrastructure
 export default function OfferStorage() {
   return (
     <>
-      <PageSection backgroundVariant="dark">
-        <PageHeader
-          title="Join the world's largest decentralized storage network"
-          description="Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important data. If you've got the infrastructure, you can become a core part of it."
-          cta={
-            <Button href="" variant="primary">
-              Check requirements
-            </Button>
-          }
-        />
-      </PageSection>
+      <BackgroundImage
+        overlayVariant="light"
+        src={graphicsData.offerStorageHero.data.src}
+      >
+        <PageSection backgroundVariant="transparentDark">
+          <PageHeader
+            title="Join the world's largest decentralized storage network"
+            description="Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important data. If you've got the infrastructure, you can become a core part of it."
+            cta={
+              <Button href="" variant="primary">
+                Check requirements
+              </Button>
+            }
+          />
+        </PageSection>
+      </BackgroundImage>
 
       <PageSection backgroundVariant="dark">
         <SectionContent
