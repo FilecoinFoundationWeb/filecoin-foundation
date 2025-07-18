@@ -1,3 +1,5 @@
+import { Suspense } from 'react'
+
 import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { Button } from '@/components/Button'
@@ -65,7 +67,9 @@ export default function StoreData() {
         </div>
 
         <div className="mt-20">
-          <StorageProviderList />
+          <Suspense>
+            <StorageProviderList />
+          </Suspense>
         </div>
       </PageSection>
 
