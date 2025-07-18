@@ -6,6 +6,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
+import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
@@ -20,6 +21,7 @@ import { filecoinParticipants } from './data/filecoinParticipants'
 import { filecoinStackFeatures } from './data/filecoinStackFeatures'
 import { filecoinStorageFlow } from './data/filecoinStorageFlow'
 import { filecoinValues } from './data/filecoinValues'
+import { resilientInternetCta } from './data/resilientInternetCta'
 
 export default function Learn() {
   return (
@@ -27,7 +29,7 @@ export default function Learn() {
       <PageSection backgroundVariant="dark">
         <PageHeader
           title="The authenticity layer of a more resilient internet"
-          description="Filecoin is a protocol, economy, and community powering the world's largest open storage network. It enables anyone to store, retrieve, and build on verifiable data — securely and at scale."
+          description="Filecoin is the world's largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's most important information — free from centralized control."
           cta={
             <Button href="" variant="primary">
               Explore documentation
@@ -36,11 +38,8 @@ export default function Learn() {
         />
       </PageSection>
 
-      <PageSection backgroundVariant="light">
-        <SectionContent
-          title="A robust foundation for humanity's information"
-          description="Filecoin provides the foundation for critically important public data, such as open access scientific data, creative commons media, historical archives, preservation, and more."
-        >
+      <PageSection backgroundVariant="dark">
+        <SectionContent title="A robust foundation for humanity's most important information">
           <SplitSectionContent
             title="A decentralized, efficient, and robust protocol."
             description={[
@@ -63,7 +62,7 @@ export default function Learn() {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection backgroundVariant="gray">
         <SectionContent title="Building a decentralized future">
           <CardGrid as="ul" variant="smTwoLgThree">
             {filecoinValues.map(({ title, description, icon }) => (
@@ -161,7 +160,20 @@ export default function Learn() {
         <SectionContent
           title="Be a part of a more resilient internet"
           description="Filecoin is more than storage — it's an innovative ecosystem working to verify and preserve humanity's most important information."
-        />
+        >
+          <CardGrid as="ul" variant="smThree">
+            {resilientInternetCta.map(({ title, href, icon }) => (
+              <LinkCard
+                key={title}
+                as="li"
+                backgroundVariant="dark"
+                title={title}
+                href={href}
+                icon={icon}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
       </PageSection>
     </>
   )

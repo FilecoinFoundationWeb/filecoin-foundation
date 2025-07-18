@@ -42,7 +42,7 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
   {
     title: 'Filecoin Plus (Fil+)',
     description:
-      'A social trust system that rewards useful, verifiable data with storage incentives.',
+      'An incentive system that aims to increase the amount of useful data stored on the Filecoin network.',
     cta: {
       href: '#',
       text: CTA_TEXT,
