@@ -14,9 +14,11 @@ import { storageProviders } from '../data/storageProviders'
 import { StorageCategoryFilter } from './StorageCategoryFilter'
 import { StorageProviderCard } from './StorageProviderCard'
 
+const URL_KEY = 'storage-type'
+
 export function StorageProviderList() {
   const [filters, setFilters] = useQueryState(
-    'storage-type',
+    URL_KEY,
     parseAsArrayOf(parseAsString).withDefault([]).withOptions({
       shallow: false,
       clearOnDefault: true,
@@ -37,6 +39,7 @@ export function StorageProviderList() {
     <>
       <fieldset>
         <legend className="sr-only">Filter by storage type</legend>
+        {/* TODO: Implement responsiveness */}
         <div className="grid grid-cols-5 gap-8">
           {storageCategories.map(({ name, description, id }) => {
             const matches = storageProviders
