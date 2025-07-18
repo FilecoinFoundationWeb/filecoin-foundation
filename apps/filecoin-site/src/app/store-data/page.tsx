@@ -16,7 +16,7 @@ export default function StoreData() {
     <>
       <PageSection backgroundVariant="dark">
         <PageHeader
-          title="Decentralized, Secure Storage for Data that Matters "
+          title="Decentralized, secure storage for data that matters"
           description="A dynamic and powerful distributed storage network for your data."
           cta={
             <Button href="" variant="primary">
@@ -36,7 +36,7 @@ export default function StoreData() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Future-proof your data infrastructure"
-          description="Filecoin is a powerful alternative to traditional cloud storage. Filecoin ensures your data always remains secure and verified on a daily basis – so that you can store your data with confidence."
+          description="Filecoin is a powerful alternative to traditional cloud storage. The network ensures your data remains secure and verified, so that you can store your data with confidence."
         >
           <CardGrid as="ul" variant="smTwoXlFourWide">
             {filecoinFeatures.map(({ title, description, icon }) => (

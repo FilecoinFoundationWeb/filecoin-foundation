@@ -22,7 +22,7 @@ export const communityConnections: LinkCardData[] = [
     icon: XLogoIcon,
   },
   {
-    title: 'Developer Working Group',
+    title: 'Developer working group',
     description:
       'Collaborate directly with other developers through regular meetups, discussions, and technical deep-dives.',
     href: '#',

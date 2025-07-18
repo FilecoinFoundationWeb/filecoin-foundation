@@ -1,12 +1,14 @@
 import type { SimpleCardData } from '@/components/SimpleCard'
 
+const CTA_TEXT = 'Visit website'
+
 export const communityHubs: Array<SimpleCardData> = [
   {
     title: 'Filecoin Foundation',
     description: 'Network governance.',
     cta: {
       href: 'https://fil.org/',
-      text: 'Visit Filecoin Foundation',
+      text: CTA_TEXT,
     },
   },
   {
@@ -14,7 +16,7 @@ export const communityHubs: Array<SimpleCardData> = [
     description: 'Research and protocol design.',
     cta: {
       href: 'https://fidl.network/',
-      text: 'Visit FIDL',
+      text: CTA_TEXT,
     },
   },
   {
@@ -22,7 +24,7 @@ export const communityHubs: Array<SimpleCardData> = [
     description: 'Core software development.',
     cta: {
       href: 'https://filoz.dev/',
-      text: 'Visit FilOz',
+      text: CTA_TEXT,
     },
   },
   {
@@ -30,7 +32,7 @@ export const communityHubs: Array<SimpleCardData> = [
     description: 'Builder community and education.',
     cta: {
       href: 'https://fil-b.dev/',
-      text: 'Visit Fil-B',
+      text: CTA_TEXT,
     },
   },
   {
@@ -38,7 +40,7 @@ export const communityHubs: Array<SimpleCardData> = [
     description: 'Applied research and investor relations.',
     cta: {
       href: 'https://ansa.network/',
-      text: 'Visit ANSA',
+      text: CTA_TEXT,
     },
   },
 ] as const

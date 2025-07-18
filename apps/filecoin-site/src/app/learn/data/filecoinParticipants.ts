@@ -33,7 +33,7 @@ export const filecoinParticipants: Array<SimpleCardData> = [
   {
     title: 'Clients',
     description:
-      'Store and retrieve data, which is accessible and verifiable at all times.',
+      'Store and retrieve data with consistent accessibility and verifiability.',
     cta: {
       href: PATHS.STORE_DATA.path,
       text: 'Store your data on Filecoin',

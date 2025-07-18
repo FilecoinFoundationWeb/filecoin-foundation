@@ -9,8 +9,9 @@ import type { CardData } from '@/components/Card'
 
 export const filecoinFeatures: Array<CardData> = [
   {
-    title: 'Data Integrity and Security',
-    description: 'Highly secure and verified on Filecoin.',
+    title: 'Data integrity and security',
+    description:
+      'All storage is verifiable, tamper-resistant, and secured end-to-end, ensuring your data remains intact, safe, and auditable over time.',
     icon: LockKeyIcon,
   },
   {
@@ -26,9 +27,9 @@ export const filecoinFeatures: Array<CardData> = [
     icon: CurrencyCircleDollarIcon,
   },
   {
-    title: 'Infinitely Scalable for Big Data',
+    title: 'Infinitely  scalable for big data',
     description:
-      "Filecoin's decentralized infrastructure supports exabyte-scale datasets, high-throughput workloads, and long-term archival—with built-in redundancy and global distribution.",
+      'Filecoin’s decentralized infrastructure supports exabyte-scale datasets, high-throughput workloads, and long-term archival—with built-in redundancy and global distribution.',
     icon: GlobeHemisphereWestIcon,
   },
 ] as const

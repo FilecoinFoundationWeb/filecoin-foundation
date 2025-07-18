@@ -1,53 +1,49 @@
 import {
-  GlobeIcon,
   ShieldCheckIcon,
-  RocketLaunchIcon,
   MagnifyingGlassIcon,
+  RocketLaunchIcon,
+  GlobeIcon,
   LinkSimpleIcon,
   ScalesIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-type FilecoinValue = {
-  title: string
-  description: string
-  icon: typeof GlobeIcon
-}
+import type { CardData } from '@/components/Card'
 
-export const filecoinValues: FilecoinValue[] = [
+export const filecoinValues: CardData[] = [
   {
-    title: 'Openness',
+    title: 'Preservation first',
     description:
-      'Anyone can store, build, or contribute — no gatekeepers, just open participation.',
-    icon: GlobeIcon,
-  },
-  {
-    title: 'Resilience',
-    description:
-      'Data remains safe and available, even in the face of failures, outages, or censorship.',
+      'The Filecoin network is built to safeguard culturally and scientifically significant data against loss, censorship, or corporate control through cryptographic verification and redundancy.',
     icon: ShieldCheckIcon,
   },
   {
-    title: 'Empowerment',
+    title: 'Cryptographic integrity',
     description:
-      'Tools and incentives to give users control over data and developers freedom to innovate.',
+      'The network offers unmatched cryptographic storage at scale, enabling transparent, verifiable storage without reliance on institutional trust.',
+    icon: MagnifyingGlassIcon,
+  },
+  {
+    title: 'Open innovation',
+    description:
+      'Filecoin is built on open-source protocols and transparent development, empowering a global community to build and advance decentralized infrastructure.',
     icon: RocketLaunchIcon,
   },
   {
-    title: 'Verifiability',
+    title: 'Democratized access',
     description:
-      'Proof, not promises — data storage is backed by cryptographic guarantees.',
-    icon: MagnifyingGlassIcon,
+      'The network empowers users to bypass centralized gatekeepers, ensuring data infrastructure belongs to everyone and embedding civil liberties into the fabric of the internet.',
+    icon: GlobeIcon,
+  },
+  {
+    title: 'Economic sustainability',
+    description:
+      'Network health is aligned by economic incentives, transforming a network of independent contributors into essential infrastructure and supporting a self-sustaining, participant-driven economy.',
+    icon: ScalesIcon,
   },
   {
     title: 'Interoperability',
     description:
       'Designed to integrate with other blockchains and protocols for a connected future.',
     icon: LinkSimpleIcon,
-  },
-  {
-    title: 'Equity',
-    description:
-      'A fairer infrastructure that rewards useful contributions and levels the playing field.',
-    icon: ScalesIcon,
   },
 ] as const
