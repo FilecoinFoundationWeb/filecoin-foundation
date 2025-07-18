@@ -9,11 +9,8 @@ import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 
 import { ExpertSupportBanner } from './components/ExpertSupportBanner'
-import { StorageCategoryFilter } from './components/StorageCategoryFilter'
-import { StorageProviderCard } from './components/StorageProviderCard'
+import { StorageProviderList } from './components/StorageProviderList'
 import { filecoinFeatures } from './data/filecoinFeatures'
-import { storageCategories } from './data/storageCategories'
-import { storageProviders } from './data/storageProviders'
 
 export default function StoreData() {
   return (
@@ -67,27 +64,8 @@ export default function StoreData() {
           <ExpertSupportBanner />
         </div>
 
-        <ul
-          role="tablist"
-          className="mt-20 flex flex-wrap gap-4 lg:flex-nowrap"
-        >
-          {storageCategories.map(({ name, description }, index) => (
-            <StorageCategoryFilter
-              key={name}
-              isActive={index === 0}
-              name={name}
-              description={description}
-              count={(index + 1) * 10}
-            />
-          ))}
-        </ul>
-
-        <div className="mt-10">
-          <CardGrid as="ul" variant="smTwoLgThree">
-            {storageProviders.map(({ name }) => (
-              <StorageProviderCard key={name} name={name} />
-            ))}
-          </CardGrid>
+        <div className="mt-20">
+          <StorageProviderList />
         </div>
       </PageSection>
 
