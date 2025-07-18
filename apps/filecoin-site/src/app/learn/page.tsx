@@ -159,13 +159,8 @@ export default function Learn() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
-          title="Go further with Filecoin"
-          description="Whether you're a developer, a storage provider, or just curious, the Filecoin documentation has everything you need — from quick starts to in-depth guides."
-          cta={
-            <Button href="" variant="primary">
-              Explore documentation
-            </Button>
-          }
+          title="Be a part of a more resilient internet"
+          description="Filecoin is more than storage — it's an innovative ecosystem working to verify and preserve humanity's most important information."
         />
       </PageSection>
     </>

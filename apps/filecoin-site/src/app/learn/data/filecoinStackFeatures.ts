@@ -48,13 +48,4 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
       text: CTA_TEXT,
     },
   },
-  {
-    title: 'Filecoin Programmable Cloud (FPC)',
-    description:
-      'A set of open APIs and tools that make it easy for developers to integrate Filecoin storage into apps and workflows.',
-    cta: {
-      href: '#',
-      text: CTA_TEXT,
-    },
-  },
 ] as const
