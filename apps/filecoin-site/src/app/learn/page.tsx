@@ -4,7 +4,6 @@ import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -14,6 +13,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
@@ -164,8 +164,8 @@ export default function Learn() {
           title="A robust foundation for humanity's information"
           description="Filecoin provides the foundation for critically important public data, such as open access scientific data, creative commons media, historical archives, preservation, and more."
         >
-          <SectionImage image={graphicsData.learnDiagramSection} />
-          <CardGrid as="ul" cols="mdTwo">
+          <SectionImage {...graphicsData.learnDiagramSection} />
+          <CardGrid as="ul" variant="mdTwo">
             {ecosystemPartners.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -183,7 +183,7 @@ export default function Learn() {
           title="What powers the Filecoin network"
           description="Filecoin is more than storage. It's a full stack of innovation."
         >
-          <CardGrid as="ul" cols="mdThree">
+          <CardGrid as="ul" variant="smThree">
             {filecoinStackFeatures.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}

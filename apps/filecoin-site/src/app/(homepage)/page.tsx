@@ -17,7 +17,6 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
-import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { communityLinks } from './data/communityLinks'
