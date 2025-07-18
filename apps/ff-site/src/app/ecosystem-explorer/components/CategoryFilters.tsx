@@ -3,12 +3,12 @@
 import { useQueryState, parseAsString, parseAsArrayOf } from 'nuqs'
 
 import { CATEGORY_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import { toggleArraySelection } from '@filecoin-foundation/utils/toggleArraySelection'
 
 import { FormCheckbox } from '@/components/Form/FormCheckbox'
 
 import { CATEGORY_QUERY_SEPARATOR_SYMBOL } from '../constants/searchParams'
 import type { useEcosystemCategoryTree } from '../hooks/useEcosystemCategoryTree'
-import { toggleArraySelection } from '../utils/toggleArraySelection'
 
 export type CategoryFiltersProps = {
   categories: ReturnType<typeof useEcosystemCategoryTree>
@@ -26,7 +26,7 @@ export function CategoryFilters({ categories }: CategoryFiltersProps) {
     <ul className="w-full space-y-10 lg:max-w-72">
       {categories.map(([categoryGroupName, categories]) => (
         <li key={categoryGroupName}>
-          <h3 className="pb-7 text-sm font-bold text-brand-300 lg:pb-4">
+          <h3 className="text-brand-300 pb-7 text-sm font-bold lg:pb-4">
             {categoryGroupName}
           </h3>
           <div className="flex flex-col gap-7 pl-3 lg:gap-4">
