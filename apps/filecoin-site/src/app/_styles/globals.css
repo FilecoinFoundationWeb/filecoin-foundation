@@ -169,6 +169,40 @@
         }
       }
     }
+
+    &.button--tertiary {
+      @apply border-transparent;
+
+      &:not(:disabled) {
+        &:hover,
+        &:focus {
+          @apply transition-colors;
+        }
+
+        &:focus {
+          @apply outline-brand-500;
+        }
+      }
+
+      .light-section &,
+      .gray-section & {
+        @apply text-zinc-600;
+
+        &:hover,
+        &:focus {
+          @apply text-zinc-950;
+        }
+      }
+
+      .dark-section & {
+        @apply text-zinc-300;
+
+        &:hover,
+        &:focus {
+          @apply bg-zinc-900 text-zinc-50;
+        }
+      }
+    }
   }
 
   /* CARD */

@@ -77,12 +77,12 @@ export default async function Home() {
               </Button>,
               <Button
                 href={PATHS.LEARN.path}
-                variant="ghost"
+                variant="tertiary"
                 icon={GithubLogoIcon}
               >
                 GitHub
               </Button>,
-              <Button href={PATHS.BLOG.path} variant="ghost" icon={BookIcon}>
+              <Button href={PATHS.BLOG.path} variant="tertiary" icon={BookIcon}>
                 Documentation
               </Button>,
             ]}
