@@ -1,22 +1,18 @@
-import Image, { type StaticImageData } from 'next/image'
+import Image, { type StaticImageData, type ImageProps } from 'next/image'
 
 type SectionImageProps = {
-  image: {
-    data: StaticImageData
-    alt: string
-  }
-  priority?: boolean
-}
+  data: StaticImageData
+} & Pick<ImageProps, 'alt' | 'priority'>
 
-export function SectionImage({ image, priority = false }: SectionImageProps) {
+export function SectionImage({ data, alt, priority }: SectionImageProps) {
   return (
     <Image
       quality={85}
       sizes="100vw"
-      src={image.data}
-      alt={image.alt}
+      src={data}
+      alt={alt}
       priority={priority}
-      className="h-full w-full object-contain"
+      className="w-full object-contain"
     />
   )
 }
