@@ -60,6 +60,7 @@ export default function OfferStorage() {
                 />
               ))}
             </CardGrid>
+
             <SectionImage {...graphicsData.offerStorageSection} />
           </SectionSubContent>
 

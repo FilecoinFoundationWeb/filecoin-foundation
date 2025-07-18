@@ -58,7 +58,9 @@ export default function Learn() {
               'Petabytes of data, from cultural archives to scientific research, are stored on the network, protected by cryptographic proofs and distributed across nodes worldwide. The decentralized model empowers users with true control over their information, building a more open and resilient foundation for the web.',
             ]}
           />
+
           <SectionImage {...graphicsData.learnDiagramSection} />
+
           <CardGrid as="ul" variant="lgTwo">
             {ecosystemPartners.map(({ title, description, cta }) => (
               <SimpleCard
