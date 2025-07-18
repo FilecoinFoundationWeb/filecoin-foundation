@@ -23,11 +23,8 @@ export default function BuildOnFilecoin() {
     <>
       <PageSection backgroundVariant="dark">
         <PageHeader
-          title="Build on Filecoin with programmable storage"
-          description="Build on Filecoin — the programmable, permissionless storage network
-          with cryptographic verification and global redundancy by design.
-          Integrate storage that safeguards data integrity at every layer and
-          scales with your application's needs."
+          title="Build on Filecoin: open, scalable, verifiable storage"
+          description="Filecoin is a programmable, permissionless storage network with cryptographic verification and global redundancy by design. Integrate storage that safeguards data integrity at every layer and scales with your application's needs."
           cta={
             <Button href="" variant="primary">
               Explore documentation
@@ -38,9 +35,8 @@ export default function BuildOnFilecoin() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
-          title="Beyond storage, a foundation for next-gen applications"
-          description="          From powering AI workflows to enabling cross-chain data bridges,
-          Filecoin provides programmable, permissionless storage infrastructure."
+          title="A foundation for next-gen applications"
+          description="From powering AI workflows to enabling cross-chain data bridges, Filecoin provides programmable, permissionless storage infrastructure."
         >
           <CardGrid as="ul" variant="smTwoLgThreeWider">
             {filecoinFeatures.map(({ title, description, icon }) => (
@@ -62,7 +58,7 @@ export default function BuildOnFilecoin() {
           title="Useful tools for builders"
           description="Accelerate development with Filecoin's ecosystem tools."
         >
-          <SectionSubContent title="Getting stared">
+          <SectionSubContent title="Getting started">
             <CardGrid as="ul" variant="smTwoLgThree">
               {filecoinTools.map(
                 ({ title, description, difficulty, cta }, index) => (
@@ -126,10 +122,10 @@ export default function BuildOnFilecoin() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Explore the ecosystem"
-          description="Discover the diverse landscape of projects in the Filecoin ecosystem."
+          description="Visit the Ecosystem Explorer to discover Filecoin projects, get inspired by what others are building, and find your place in the Filecoin ecosystem."
           cta={
             <Button href="https://fil.org/ecosystem-explorer" variant="primary">
-              Visit the ecosystem explorer
+              Visit Filecoin Foundation's ecosystem explorer
             </Button>
           }
         />
@@ -160,7 +156,7 @@ export default function BuildOnFilecoin() {
       <PageSection backgroundVariant="light">
         <SectionContent
           title="Community hubs"
-          description="            Filecoin is open-source and community-driven. Explore groups
+          description="Filecoin is open-source and community-driven. Explore groups
             advancing the protocol and building the tools that power its
             ecosystem."
         >

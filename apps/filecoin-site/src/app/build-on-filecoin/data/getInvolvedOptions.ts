@@ -16,7 +16,7 @@ export const getInvolvedOptions: LinkCardData[] = [
     icon: CurrencyDollarIcon,
   },
   {
-    title: 'Explore Retroactive Public Good Funding',
+    title: 'Explore retroactive public good funding',
     description:
       'Get rewarded for impactful, open-source contributions that advance the Filecoin ecosystem.',
     href: '#',
@@ -30,7 +30,7 @@ export const getInvolvedOptions: LinkCardData[] = [
     icon: MegaphoneIcon,
   },
   {
-    title: 'Attend Community events',
+    title: 'Attend community events',
     description:
       'Connect with builders, researchers, and advocates at hackathons, meetups, and summits around the world.',
     href: '#',
