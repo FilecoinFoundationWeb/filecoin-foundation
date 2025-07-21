@@ -16,7 +16,6 @@ export function LogoItem({
   const logoElement = (
     <SvgComponent
       height={size}
-      width="auto"
       aria-label={href ? undefined : alt}
       aria-hidden={href ? 'true' : undefined}
       className="logo-section-logo-item max-w-full"
