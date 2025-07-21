@@ -8,7 +8,7 @@ import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 
-import { LogoIcon } from '@/components/Logo/IconLogo'
+import { IconLogo } from '@/components/Logo/IconLogo'
 
 import { NAV_LINKS } from './constants'
 import { NavigationLink } from './NavigationLink'
@@ -27,7 +27,7 @@ export function MobileNavigation() {
       <SlideOver open={open} setOpen={setOpen}>
         <div className="flex flex-col gap-12 px-6 py-8">
           <div className="flex items-center justify-between">
-            <LogoLink logo={LogoIcon} />
+            <LogoLink logo={IconLogo} />
             <IconButton
               icon={XIcon}
               label="Close mobile navigation"

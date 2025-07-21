@@ -1,7 +1,7 @@
 import LogoAsset from '@/assets/logos/filecoin-logo-icon.svg'
 
-type LogoIconProps = React.SVGProps<SVGSVGElement>
+type IconLogoProps = React.SVGProps<SVGSVGElement>
 
-export function LogoIcon({ height = 40 }: LogoIconProps) {
+export function IconLogo({ height = 40 }: IconLogoProps) {
   return <LogoAsset height={height} />
 }
