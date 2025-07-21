@@ -62,9 +62,17 @@ export function StorageProviderList() {
 
       <div className="mt-10">
         <CardGrid as="ul" variant="smTwoLgThree">
-          {filteredStorageProviders.map(({ name }) => (
-            <StorageProviderCard key={name} name={name} />
-          ))}
+          {filteredStorageProviders.map(
+            ({ name, description, bestFor, keyFeatures }) => (
+              <StorageProviderCard
+                key={name}
+                name={name}
+                description={description}
+                bestFor={bestFor}
+                keyFeatures={keyFeatures}
+              />
+            ),
+          )}
         </CardGrid>
       </div>
     </>
