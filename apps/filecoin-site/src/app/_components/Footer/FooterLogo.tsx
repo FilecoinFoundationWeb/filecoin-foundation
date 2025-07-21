@@ -10,7 +10,10 @@ export function FooterLogo() {
         <LogoLink logo={IconLogo} logoProps={{ height: 40 }} />
       </div>
       <div className="hidden lg:block">
-        <LogoLink logo={Logo} logoProps={{ height: 32, color: 'white' }} />
+        <LogoLink
+          logo={Logo}
+          logoProps={{ height: 32, className: 'text-zinc-50' }}
+        />
       </div>
     </>
   )
