@@ -4,8 +4,10 @@ import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlog
 
 import { PATHS } from '@/constants/paths'
 
+import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
 
+import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -17,6 +19,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
+import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { communityLinks } from './data/communityLinks'
@@ -37,31 +40,33 @@ export default async function Home() {
 
   return (
     <>
-      <Section backgroundVariant="transparent">
-        <Container>
-          <div className="mt-32 mb-24">
-            <PageHeader
-              title="Preserving humanity's most important information"
-              description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
-            />
-          </div>
-          <div className="mb-52">
-            <CardGrid as="ul" variant="smTwoLgThreeTight">
-              {networkActions.map(({ title, description, href, icon }) => (
-                <LinkCard
-                  key={title}
-                  as="li"
-                  backgroundVariant="light"
-                  title={title}
-                  description={description}
-                  href={href}
-                  icon={icon}
-                />
-              ))}
-            </CardGrid>
-          </div>
-        </Container>
-      </Section>
+      <BackgroundImage src={graphicsData.homepageHero.data.src}>
+        <Section backgroundVariant="transparent">
+          <Container>
+            <div className="pt-32 pb-24">
+              <PageHeader
+                title="Preserving humanity's most important information"
+                description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
+              />
+            </div>
+            <div className="pb-52">
+              <CardGrid as="ul" variant="smTwoLgThreeTight">
+                {networkActions.map(({ title, description, href, icon }) => (
+                  <LinkCard
+                    key={title}
+                    as="li"
+                    backgroundVariant="light"
+                    title={title}
+                    description={description}
+                    href={href}
+                    icon={icon}
+                  />
+                ))}
+              </CardGrid>
+            </div>
+          </Container>
+        </Section>
+      </BackgroundImage>
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Build apps better with resilient storage">
@@ -128,6 +133,9 @@ export default async function Home() {
           ]}
         >
           <LogoSection logos={resilientWebLogos} />
+
+          <SectionImage {...graphicsData.homepageSection} />
+
           <CardGrid as="ul" variant="smTwoLgThreeWider">
             {providerBenefits.map(({ title, description }) => (
               <Card
