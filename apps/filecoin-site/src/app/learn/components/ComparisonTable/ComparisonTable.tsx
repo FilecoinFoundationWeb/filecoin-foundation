@@ -21,13 +21,8 @@ const columns: Array<ColumnProps> = [
 export function ComparisonTable() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
-      {columns.map((column, index) => (
-        <Column
-          key={index}
-          title={column.title}
-          features={column.features}
-          theme={column.theme}
-        />
+      {columns.map(({ title, features, theme }) => (
+        <Column key={title} title={title} features={features} theme={theme} />
       ))}
     </div>
   )
