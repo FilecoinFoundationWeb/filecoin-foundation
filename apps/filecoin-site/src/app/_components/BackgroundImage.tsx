@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
 
 import { clsx } from 'clsx'
 
@@ -6,7 +6,7 @@ type BackgroundImageProps = {
   src: string
   overlayVariant?: keyof typeof OVERLAY_CLASSES
   children?: React.ReactNode
-}
+} & Pick<StaticImageData, 'blurDataURL'>
 
 const OVERLAY_CLASSES = {
   dark: 'bg-black/60',
@@ -17,6 +17,7 @@ export function BackgroundImage({
   src,
   overlayVariant,
   children,
+  blurDataURL,
 }: BackgroundImageProps) {
   return (
     <div className="relative">
@@ -28,6 +29,10 @@ export function BackgroundImage({
         src={src}
         className="-z-20 object-cover object-center"
         alt=""
+        {...(blurDataURL && {
+          placeholder: 'blur',
+          blurDataURL,
+        })}
       />
       {overlayVariant && (
         <div

@@ -33,6 +33,7 @@ export default function Learn() {
       <BackgroundImage
         overlayVariant="light"
         src={graphicsData.learnHero.data.src}
+        blurDataURL={graphicsData.learnHero.data.blurDataURL}
       >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader

@@ -22,6 +22,7 @@ export default function StoreData() {
       <BackgroundImage
         overlayVariant="light"
         src={graphicsData.storeDataHero.data.src}
+        blurDataURL={graphicsData.storeDataHero.data.blurDataURL}
       >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader

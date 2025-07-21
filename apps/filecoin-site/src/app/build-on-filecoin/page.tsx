@@ -28,6 +28,7 @@ export default function BuildOnFilecoin() {
       <BackgroundImage
         overlayVariant="light"
         src={graphicsData.buildOnFilecoinHero.data.src}
+        blurDataURL={graphicsData.buildOnFilecoinHero.data.blurDataURL}
       >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader

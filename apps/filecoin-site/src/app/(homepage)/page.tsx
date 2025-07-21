@@ -40,7 +40,10 @@ export default async function Home() {
 
   return (
     <>
-      <BackgroundImage src={graphicsData.homepageHero.data.src}>
+      <BackgroundImage
+        src={graphicsData.homepageHero.data.src}
+        blurDataURL={graphicsData.homepageHero.data.blurDataURL}
+      >
         <Section backgroundVariant="transparent">
           <Container>
             <div className="pt-32 pb-24">

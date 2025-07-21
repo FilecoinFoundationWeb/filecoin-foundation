@@ -25,6 +25,7 @@ export default function OfferStorage() {
       <BackgroundImage
         overlayVariant="light"
         src={graphicsData.offerStorageHero.data.src}
+        blurDataURL={graphicsData.offerStorageHero.data.blurDataURL}
       >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
