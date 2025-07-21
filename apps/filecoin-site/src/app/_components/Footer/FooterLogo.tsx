@@ -1,13 +1,16 @@
-import { Logo } from '@/components/Logo/Logo'
+import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
+
+import Logo from '@/assets/logos/filecoin-logo-full.svg'
+import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
 
 export function FooterLogo() {
   return (
     <>
       <div className="block lg:hidden">
-        <Logo height={40} />
+        <LogoLink logo={IconLogo} height={40} color="text-zinc-50" />
       </div>
       <div className="hidden lg:block">
-        <Logo height={32} />
+        <LogoLink logo={Logo} height={32} color="text-zinc-50" />
       </div>
     </>
   )

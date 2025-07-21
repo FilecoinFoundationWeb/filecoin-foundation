@@ -20,7 +20,7 @@ export function NewsletterForm() {
 
   return (
     <form
-      className="flex flex-col gap-2 text-white"
+      className="flex flex-col gap-2 text-zinc-50"
       onSubmit={handleSubmit(submitForm)}
     >
       <Field>

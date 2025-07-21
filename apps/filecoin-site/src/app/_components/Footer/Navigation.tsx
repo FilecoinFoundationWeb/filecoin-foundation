@@ -11,7 +11,9 @@ export function Navigation() {
     >
       {Object.entries(footerNavigationItems).map(([title, items]) => (
         <div key={title} className="space-y-4">
-          <span className="block text-sm font-medium text-white">{title}</span>
+          <span className="block text-sm font-medium text-zinc-50">
+            {title}
+          </span>
           <ul className="flex flex-col gap-3">
             {items.map(({ href, label }) => (
               <li key={href} className="text-sm text-zinc-400">

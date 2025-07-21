@@ -5,6 +5,7 @@ import clsx from 'clsx'
 import { type BaseLinkProps, BaseLink } from '@filecoin-foundation/ui/BaseLink'
 import { CopyrightText } from '@filecoin-foundation/ui/CopyrightText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
+import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { Social } from '@filecoin-foundation/ui/Social'
 
 import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
@@ -12,7 +13,7 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { LogoLink } from '@/components/LogoLink'
+import { Logo } from '@/components/Logo'
 
 import FooterDecorationLeft from '@/assets/graphics/footer-decoration-left.svg'
 import FooterDecorationRight from '@/assets/graphics/footer-decoration-right.svg'
@@ -40,7 +41,7 @@ export function Footer() {
           FOOTER_GAP,
         )}
       >
-        <LogoLink height={64} />
+        <LogoLink logo={Logo} height={64} />
 
         <nav
           aria-label="Footer navigation"

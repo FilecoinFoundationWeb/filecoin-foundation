@@ -4,17 +4,24 @@ import Link, { type LinkProps } from 'next/link'
 
 type LogoLinkProps = {
   logo: ComponentType<React.SVGProps<SVGSVGElement>>
-} & Omit<LinkProps<unknown>, 'href' | 'children' | 'className'>
+  onNavigate?: LinkProps<unknown>['onNavigate']
+  color?: `text-${string}`
+} & Pick<React.SVGProps<SVGSVGElement>, 'height'>
 
-export function LogoLink({ logo: Logo, ...rest }: LogoLinkProps) {
+export function LogoLink({
+  logo: Logo,
+  onNavigate,
+  color,
+  ...svgProps
+}: LogoLinkProps) {
   return (
     <Link
-      className="focus:brand-outline"
+      className="focus:brand-outline inline-block"
       href="/"
       aria-label="Go to homepage"
-      {...rest}
+      onNavigate={onNavigate}
     >
-      <Logo />
+      <Logo {...svgProps} className={color} />
       <span className="sr-only">Home</span>
     </Link>
   )
