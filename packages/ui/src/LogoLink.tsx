@@ -10,7 +10,7 @@ type LogoLinkProps = {
 export function LogoLink({ logo: Logo, logoProps, ...rest }: LogoLinkProps) {
   return (
     <Link
-      className="focus:brand-outline"
+      className="focus:brand-outline inline-block"
       href="/"
       aria-label="Go to homepage"
       {...rest}

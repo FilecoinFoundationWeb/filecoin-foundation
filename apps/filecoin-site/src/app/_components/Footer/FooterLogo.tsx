@@ -1,7 +1,5 @@
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 
-// import { Logo } from '@/components/Logo/Logo'
-
 import Logo from '@/assets/logos/filecoin-logo-full.svg'
 import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
 
