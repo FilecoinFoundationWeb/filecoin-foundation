@@ -1,3 +1,6 @@
+import { graphicsData } from '@/data/graphicsData'
+
+import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -7,6 +10,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 
@@ -21,17 +25,23 @@ import { getInvolvedOptions } from './data/getInvolvedOptions'
 export default function BuildOnFilecoin() {
   return (
     <>
-      <PageSection backgroundVariant="dark">
-        <PageHeader
-          title="Build on Filecoin: open, scalable, verifiable storage"
-          description="Filecoin is a programmable, permissionless storage network with cryptographic verification and global redundancy by design. Integrate storage that safeguards data integrity at every layer and scales with your application's needs."
-          cta={
-            <Button href="" variant="primary">
-              Explore documentation
-            </Button>
-          }
-        />
-      </PageSection>
+      <BackgroundImage
+        overlayVariant="light"
+        src={graphicsData.buildOnFilecoinHero.data.src}
+        blurDataURL={graphicsData.buildOnFilecoinHero.data.blurDataURL}
+      >
+        <PageSection backgroundVariant="transparentDark">
+          <PageHeader
+            title="Build on Filecoin: open, scalable, verifiable storage"
+            description="Filecoin is a programmable, permissionless storage network with cryptographic verification and global redundancy by design. Integrate storage that safeguards data integrity at every layer and scales with your application's needs."
+            cta={
+              <Button href="" variant="primary">
+                Explore documentation
+              </Button>
+            }
+          />
+        </PageSection>
+      </BackgroundImage>
 
       <PageSection backgroundVariant="dark">
         <SectionContent
@@ -129,6 +139,8 @@ export default function BuildOnFilecoin() {
             </Button>
           }
         />
+
+        <SectionImage {...graphicsData.buildOnFilecoinSection} />
       </PageSection>
 
       <PageSection backgroundVariant="gray">
