@@ -4,16 +4,25 @@ export const filecoinEarningsInsights: Array<SimpleCardData> = [
   {
     title: 'Earning filecoin and fiat',
     description:
-      'Storage providers earn filecoin and fiat by storing data for clients, and computing cryptographic proofs to verify storage across time.',
+      'Providers are compensated for reliable storage via the network’s programmable reward system.',
     cta: {
       href: '/',
       text: 'Learn more',
     },
   },
   {
-    title: 'Block rewards',
+    title: 'More storage, more rewards',
     description:
-      'The probability of earning the block rewards and transaction fees is proportional to the amount of storage the provider contributes to the network, and not hashing power.',
+      'Growing your storage capacity unlocks greater block rewards, reflecting your increased contribution to the network’s foundation.',
+    cta: {
+      href: '/',
+      text: 'Learn more',
+    },
+  },
+  {
+    title: '18 to 24 months',
+    description:
+      'Most providers recover their hardware investments in under two years, depending on uptime and operational efficiency.',
     cta: {
       href: '/',
       text: 'Learn more',
