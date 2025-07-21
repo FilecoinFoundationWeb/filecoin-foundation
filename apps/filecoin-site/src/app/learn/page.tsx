@@ -2,6 +2,9 @@ import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 
 import { PATHS } from '@/constants/paths'
 
+import { graphicsData } from '@/data/graphicsData'
+
+import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -11,6 +14,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
@@ -26,17 +30,22 @@ import { resilientInternetCta } from './data/resilientInternetCta'
 export default function Learn() {
   return (
     <>
-      <PageSection backgroundVariant="dark">
-        <PageHeader
-          title="The authenticity layer of a more resilient internet"
-          description="Filecoin is the world's largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's most important information — free from centralized control."
-          cta={
-            <Button href="" variant="primary">
-              Explore documentation
-            </Button>
-          }
-        />
-      </PageSection>
+      <BackgroundImage
+        overlayVariant="light"
+        src={graphicsData.learnHero.data.src}
+      >
+        <PageSection backgroundVariant="transparentDark">
+          <PageHeader
+            title="The authenticity layer of a more resilient internet"
+            description="Filecoin is the world's largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's most important information — free from centralized control."
+            cta={
+              <Button href="" variant="primary">
+                Explore documentation
+              </Button>
+            }
+          />
+        </PageSection>
+      </BackgroundImage>
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="A robust foundation for humanity's most important information">
@@ -122,6 +131,7 @@ export default function Learn() {
                 />
               ))}
             </CardGrid>
+            <SectionImage {...graphicsData.learnDiagramSection} />
           </SectionSubContent>
         </SectionContent>
       </PageSection>
