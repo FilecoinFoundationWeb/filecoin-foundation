@@ -52,6 +52,7 @@ export default async function Blog() {
               author,
               publishedOn,
             } = post
+
             return (
               <BlogCard
                 key={title}

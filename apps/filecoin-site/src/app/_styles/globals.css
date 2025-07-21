@@ -39,6 +39,10 @@
 
 @utility icon-button {
   @apply rounded-full border-2 border-zinc-200;
+
+  .share-article-list & {
+    @apply scale-80;
+  }
 }
 
 @layer components {
@@ -243,7 +247,7 @@
 
   /* SHARE ARTICLE */
   .share-article-list {
-    @apply gap-4;
+    @apply gap-2;
   }
 
   /* SOCIAL LINKS */
