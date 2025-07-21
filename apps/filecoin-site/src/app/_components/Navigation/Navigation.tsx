@@ -5,7 +5,7 @@ import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { useNavigationTheme } from '@/hooks/useNavigationTheme'
 
 import { Container } from '@/components/Container'
-import { IconLogo } from '@/components/Logo/IconLogo'
+import { IconLogo } from '@/components/Navigation/IconLogo'
 import { Section } from '@/components/Section'
 
 import { DesktopNavigation } from './DesktopNavigation'
