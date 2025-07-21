@@ -1,17 +1,39 @@
-export const filecoinFeatures: Array<string> = [
-  'Resilience through global redundancy',
-  'Censorship resistance by design',
-  'Open, permissionless participation',
-  'Verifiable storage commitments',
-  'Economic incentives for participants',
-  'Data outlives institutions',
-] as const
+type ComparisonItem = {
+  filecoin: string
+  traditional: string
+}
 
-export const traditionalCloudFeatures: Array<string> = [
-  'Single points of failure',
-  'Susceptible to censorship and takedowns',
-  'Controlled by corporate gatekeepers',
-  'Opaque trust models',
-  'Profits flow to shareholders',
-  'Data loss if provider fails',
-] as const
+const filecoinVsCloudComparison: Array<ComparisonItem> = [
+  {
+    filecoin: 'Resilience through global redundancy',
+    traditional: 'Single points of failure',
+  },
+  {
+    filecoin: 'Censorship resistance by design',
+    traditional: 'Susceptible to censorship and takedowns',
+  },
+  {
+    filecoin: 'Open, permissionless participation',
+    traditional: 'Controlled by corporate gatekeepers',
+  },
+  {
+    filecoin: 'Verifiable storage commitments',
+    traditional: 'Opaque trust models',
+  },
+  {
+    filecoin: 'Economic incentives for participants',
+    traditional: 'Profits flow to shareholders',
+  },
+  {
+    filecoin: 'Data outlives institutions',
+    traditional: 'Data loss if provider fails',
+  },
+] satisfies Array<ComparisonItem>
+
+export const filecoinFeatures = filecoinVsCloudComparison.map(
+  (item) => item.filecoin,
+)
+
+export const traditionalCloudFeatures = filecoinVsCloudComparison.map(
+  (item) => item.traditional,
+)
