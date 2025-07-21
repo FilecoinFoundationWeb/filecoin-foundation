@@ -1,40 +1,17 @@
-type ComparisonCell = boolean | 'limited'
+export const filecoinFeatures: Array<string> = [
+  'Resilience through global redundancy',
+  'Censorship resistance by design',
+  'Open, permissionless participation',
+  'Verifiable storage commitments',
+  'Economic incentives for participants',
+  'Data outlives institutions',
+] as const
 
-export type ComparisonRow = {
-  feature: string
-  filecoin: ComparisonCell
-  traditionalCloud: ComparisonCell
-}
-
-export const filecoinVsCloudComparison: ComparisonRow[] = [
-  {
-    feature: 'Open participation',
-    filecoin: true,
-    traditionalCloud: false,
-  },
-  {
-    feature: 'Censorship resistance',
-    filecoin: true,
-    traditionalCloud: false,
-  },
-  {
-    feature: 'Verifiable storage proofs',
-    filecoin: true,
-    traditionalCloud: false,
-  },
-  {
-    feature: 'Programmable infrastructure',
-    filecoin: true,
-    traditionalCloud: 'limited',
-  },
-  {
-    feature: 'Cost efficiency via markets',
-    filecoin: true,
-    traditionalCloud: false,
-  },
-  {
-    feature: 'Data retrieval incentives',
-    filecoin: true,
-    traditionalCloud: false,
-  },
+export const traditionalCloudFeatures: Array<string> = [
+  'Single points of failure',
+  'Susceptible to censorship and takedowns',
+  'Controlled by corporate gatekeepers',
+  'Opaque trust models',
+  'Profits flow to shareholders',
+  'Data loss if provider fails',
 ] as const
