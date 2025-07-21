@@ -29,8 +29,8 @@ export default function OfferStorage() {
       >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
-            title="Join the world's largest decentralized storage network"
-            description="Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important data. If you've got the infrastructure, you can become a core part of it."
+            title="Power the world's largest decentralized storage network"
+            description="Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important information."
             cta={
               <Button href="" variant="primary">
                 Check requirements
@@ -42,12 +42,12 @@ export default function OfferStorage() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
-          title="What you need to offer storage on Filecoin"
-          description="To offer storage on Filecoin you'll need enterprise-grade infrastructure and deep technical expertise to get started."
+          title="What it takes to offer storage on Filecoin"
+          description="Filecoin is open and permissionless, empowering anyone with the right infrastructure and expertise to participate. Storage providers are foundational to the network's mission, ensuring information stays safe, retrievable, and verifiable."
         >
           <SectionSubContent
-            title="Data center environment"
-            description="You'll need to run your infrastructure in a secure, reliable, and always-on environment."
+            title="Reliable data center environment"
+            description="Filecoin is open and permissionless, empowering anyone with the right infrastructure and expertise to participate. Storage providers are foundational to the network's mission, ensuring information stays safe, retrievable, and verifiable."
           >
             <CardGrid as="ul" variant="smTwoLgThreeWider">
               {dataCenterRequirements.map(({ title, description, icon }) => (
@@ -67,7 +67,7 @@ export default function OfferStorage() {
 
           <SectionSubContent
             title="Core infrastructure setup"
-            description="This includes high-throughput networking and two powerful CPU nodes required to operate the system reliably and at scale."
+            description="Ensure your system can deliver high-performance, reliable storage."
           >
             <CardGrid as="ul" variant="lgTwoWide">
               {coreInfrastructureSpecs.map(({ title, list }) => (
@@ -88,8 +88,8 @@ export default function OfferStorage() {
           <SectionDivider />
 
           <SectionSubContent
-            title="Specialized & storage systems"
-            description="The Sealing Node prepares and proves data with GPU acceleration, while the JBOD stores large volumes of client data persistently and reliably."
+            title="Specialized hardware"
+            description="Filecoin's sealing and storage system require purpose-build hardware."
           >
             <CardGrid as="ul" variant="lgTwoWide">
               {specializedInfrastructureSpecs.map(({ title, list }) => (
@@ -108,44 +108,27 @@ export default function OfferStorage() {
 
             <SectionImage {...graphicsData.offerStorageSection} />
           </SectionSubContent>
-
-          <SectionDivider />
-
-          <SectionSubContent
-            title="Begin your storage provider journey"
-            description="If you're already running infrastructure at this level — or planning to — you might be a great fit."
-            cta={
-              <Button href="" variant="primary">
-                Book a call with our onboarding team
-              </Button>
-            }
-          />
         </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="gray">
-        <SectionContent title="Return on investment">
-          <SplitSectionContent
-            title="Break even in 18 to 24 months."
-            description={[
-              'Most Storage Providers recover their hardware investment within 18 to 24 months, depending on uptime, deal-making activity, and operational efficiency.',
-              'Once breakeven is reached, earnings can turn into long-term profit — all while contributing to the backbone of decentralized data.',
-            ]}
-            cta={
-              <Button href="" variant="primary" className="w-fit">
-                Learn more
-              </Button>
-            }
-          />
-        </SectionContent>
+        <SectionContent
+          title="Begin your storage provider journey"
+          description="If you already operate enterprise-grade infrastructure—or plan to—Filecoin offers a scalable path to meaningful, global impact."
+          cta={
+            <Button href="" variant="primary">
+              Book a call with storage providers' onboarding team
+            </Button>
+          }
+        />
       </PageSection>
 
       <PageSection backgroundVariant="light">
         <SectionContent
-          title="Earn more rewards for more storage"
-          description="Join the world's largest decentralized storage network — empowering independent operators to store and protect critical data without relying on centralized tech giants. Your infrastructure helps power a more open, resilient, and censorship-resistant internet."
+          title="Create long-term value"
+          description="The Filecoin Network rewards storage providers through a self-sustaining marketplace designed for long-term commitment and resilience."
         >
-          <CardGrid as="ul" variant="lgTwoWide">
+          <CardGrid as="ul" variant="smTwoLgThreeWider">
             {filecoinEarningsInsights.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -161,11 +144,11 @@ export default function OfferStorage() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
-          title="Build an open, resilient, and trustworthy web"
-          description="Storing more files is directly related to winning more block rewards. The more storage you add, the more Filecoin you’ll earn."
+          title="Empower a more open and resilient web"
+          description="As a Filecoin storage provider, you'll empower independent infrastructure, protect critical data without relying on centralized tech giants, and unlock new revenue streams—all while helping build a more open, resilient, and censorship-resistant internet."
           cta={
             <Button href="" variant="primary">
-              Book a call with our onboarding team
+              Book a call with storage providers' onboarding team
             </Button>
           }
         />
