@@ -1,6 +1,6 @@
 import { type LogoItemProps } from '@/components/LogoSection/LogoItem'
 
-import FilecoinFoundationLogo from '@/assets/filecoin-foundation-logo.svg'
+import FilecoinFoundationLogo from '@/assets/logos/filecoin-foundation-logo.svg'
 
 export const resilientWebLogos: Array<LogoItemProps> = [
   {

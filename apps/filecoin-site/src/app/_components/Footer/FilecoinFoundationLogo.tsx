@@ -1,4 +1,4 @@
-import LogoAsset from '@/assets/filecoin-foundation-logo.svg'
+import LogoAsset from '@/assets/logos/filecoin-foundation-logo.svg'
 
 type FilecoinFoundationLogoProps = React.SVGProps<SVGSVGElement>
 
