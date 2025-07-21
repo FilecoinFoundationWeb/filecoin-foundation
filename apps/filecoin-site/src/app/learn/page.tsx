@@ -58,6 +58,8 @@ export default function Learn() {
             ]}
           />
 
+          <SectionImage {...graphicsData.learnLibrarySection} />
+
           <CardGrid as="ul" variant="lgTwo">
             {ecosystemPartners.map(({ title, description, cta }) => (
               <SimpleCard
