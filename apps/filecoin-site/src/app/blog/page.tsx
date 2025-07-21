@@ -19,7 +19,10 @@ export default async function Blog() {
 
   return (
     <>
-      <BackgroundImage withOverlay src={featuredPost.image?.url || ''}>
+      <BackgroundImage
+        overlayVariant="dark"
+        src={featuredPost.image?.url || ''}
+      >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             kicker="Latest updates"
@@ -49,6 +52,7 @@ export default async function Blog() {
               author,
               publishedOn,
             } = post
+
             return (
               <BlogCard
                 key={title}

@@ -57,7 +57,7 @@ export function BlogPostHeader({
 
         <SectionDivider />
 
-        <div className="mt-16 mb-8">
+        <div className="mt-15 mb-4">
           <PostMetadata author={author} date={date} />
         </div>
 

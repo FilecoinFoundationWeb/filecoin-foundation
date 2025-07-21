@@ -1,7 +1,9 @@
 import { Suspense } from 'react'
 
+import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
 
+import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -17,17 +19,23 @@ import { filecoinFeatures } from './data/filecoinFeatures'
 export default function StoreData() {
   return (
     <>
-      <PageSection backgroundVariant="dark">
-        <PageHeader
-          title="Decentralized, secure storage for data that matters"
-          description="A dynamic and powerful distributed storage network for your data."
-          cta={
-            <Button href="" variant="primary">
-              Explore storage solutions
-            </Button>
-          }
-        />
-      </PageSection>
+      <BackgroundImage
+        overlayVariant="light"
+        src={graphicsData.storeDataHero.data.src}
+        blurDataURL={graphicsData.storeDataHero.data.blurDataURL}
+      >
+        <PageSection backgroundVariant="transparentDark">
+          <PageHeader
+            title="Decentralized, secure storage for data that matters"
+            description="A dynamic and powerful distributed storage network for your data."
+            cta={
+              <Button href="" variant="primary">
+                Explore storage solutions
+              </Button>
+            }
+          />
+        </PageSection>
+      </BackgroundImage>
 
       <PageSection backgroundVariant="dark">
         <LogoSection

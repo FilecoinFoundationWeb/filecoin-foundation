@@ -1,15 +1,23 @@
-import Image from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
+
+import { clsx } from 'clsx'
 
 type BackgroundImageProps = {
   src: string
-  withOverlay?: boolean
+  overlayVariant?: keyof typeof OVERLAY_CLASSES
   children?: React.ReactNode
+} & Pick<StaticImageData, 'blurDataURL'>
+
+const OVERLAY_CLASSES = {
+  dark: 'bg-black/60',
+  light: 'bg-black/30',
 }
 
 export function BackgroundImage({
   src,
-  withOverlay = false,
+  overlayVariant,
   children,
+  blurDataURL,
 }: BackgroundImageProps) {
   return (
     <div className="relative">
@@ -21,8 +29,19 @@ export function BackgroundImage({
         src={src}
         className="-z-20 object-cover object-center"
         alt=""
+        {...(blurDataURL && {
+          placeholder: 'blur',
+          blurDataURL,
+        })}
       />
-      {withOverlay && <div className="absolute inset-0 -z-10 bg-black/60" />}
+      {overlayVariant && (
+        <div
+          className={clsx(
+            'absolute inset-0 -z-10',
+            OVERLAY_CLASSES[overlayVariant],
+          )}
+        />
+      )}
       {children}
     </div>
   )
