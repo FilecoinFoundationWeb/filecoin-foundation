@@ -1,3 +1,5 @@
+import { Heading } from '@/components/Heading'
+
 type StorageProviderCardSectionProps = {
   title: string
   children: React.ReactNode
@@ -8,8 +10,10 @@ export function StorageProviderCardSection({
   children,
 }: StorageProviderCardSectionProps) {
   return (
-    <div>
-      <h4 className="mb-4 font-medium text-zinc-950">{title}</h4>
+    <div className="space-y-4">
+      <Heading tag="h4" variant="base-medium">
+        {title}
+      </Heading>
       {children}
     </div>
   )

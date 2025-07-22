@@ -1,5 +1,6 @@
 import { Badge } from '@/components/Badge'
 import { Button } from '@/components/Button'
+import { Heading } from '@/components/Heading'
 
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'
@@ -27,7 +28,9 @@ export function StorageProviderCard({
               aria-hidden="true"
               className="size-9 rounded-full bg-gradient-to-tr from-blue-950 to-blue-800"
             />
-            <h3 className="text-xl font-medium text-zinc-950">{name}</h3>
+            <Heading tag="h3" variant="xl-medium">
+              {name}
+            </Heading>
           </div>
 
           <p className="text-zinc-600">{description}</p>
@@ -53,11 +56,7 @@ export function StorageProviderCard({
           </StorageProviderCardSection>
         </div>
 
-        <Button
-          href="#"
-          variant="ghost"
-          className="mt-20 w-full"
-        >
+        <Button href="#" variant="ghost" className="mt-20 w-full">
           Visit {name}'s website
         </Button>
       </article>
