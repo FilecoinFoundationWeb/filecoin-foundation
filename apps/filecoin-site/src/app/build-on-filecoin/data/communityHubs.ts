@@ -43,4 +43,4 @@ export const communityHubs: Array<SimpleCardData> = [
       text: CTA_TEXT,
     },
   },
-] as const
+]

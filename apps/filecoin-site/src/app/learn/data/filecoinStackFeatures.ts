@@ -48,4 +48,4 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
       text: CTA_TEXT,
     },
   },
-] as const
+]

@@ -16,10 +16,11 @@ export type SimpleCardProps = {
   }
 }
 
-export type SimpleCardData = Pick<
-  SimpleCardProps,
-  'title' | 'description' | 'cta'
->
+export type SimpleCardData = {
+  title: SimpleCardProps['title']
+  description: SimpleCardProps['description']
+  cta: NonNullable<SimpleCardProps['cta']>
+}
 
 const borderClasses = {
   none: 'border-none',
