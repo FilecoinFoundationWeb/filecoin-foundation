@@ -17,6 +17,7 @@ import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
+import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
@@ -63,11 +64,12 @@ export default function Learn() {
 
           <CardGrid as="ul" variant="lgTwo">
             {ecosystemPartners.map(({ title, description, cta }) => (
-              <SimpleCard
+              <SimpleCardWithLogo
                 key={title}
                 title={title}
                 description={description}
                 cta={cta}
+                logoBackgroundColor="#353535"
               />
             ))}
           </CardGrid>

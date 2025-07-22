@@ -16,10 +16,15 @@ export function SimpleCardWithLogo({
 }: SimpleCardWithLogoProps) {
   return (
     <li className="card-border-color relative flex h-full flex-col border sm:flex-row">
-      {/* @todo: replace with logo */}
+      {/* @todo: add logo */}
       <div
-        className="card-border-color h-44 w-full flex-shrink-0 border-b sm:size-48 sm:border-r sm:border-b-0"
+        className="h-44 w-full flex-shrink-0 sm:h-full sm:w-44"
         style={{ backgroundColor: logoBackgroundColor }}
+      />
+
+      <div
+        aria-hidden="true"
+        className="card-border-color border-b sm:border-r sm:border-b-0"
       />
 
       <SimpleCard
@@ -33,7 +38,7 @@ export function SimpleCardWithLogo({
         inset
         href={cta.href}
         aria-label={cta.text}
-        textClassName="absolute bottom-6 sm:left-54 left-6"
+        textClassName="absolute bottom-6 sm:left-50 left-6"
       >
         {cta.text}
       </CTALink>

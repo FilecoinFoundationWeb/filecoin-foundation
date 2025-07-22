@@ -26,7 +26,7 @@ export const communityHubs: Array<SimpleCardWithLogoProps> = [
     description: 'Protocol Labs dev guild and hackathons.',
     logoBackgroundColor: '#ffffff',
     cta: {
-      href: 'https://www.pldg.xyz/',
+      href: 'https://directory.plnetwork.io/teams/clz1ls1gr0003xl02n5lpvbhn',
       text: CTA_TEXT,
     },
   },
