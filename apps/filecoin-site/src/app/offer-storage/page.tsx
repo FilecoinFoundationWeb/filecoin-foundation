@@ -12,7 +12,6 @@ import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
-import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { coreInfrastructureSpecs } from './data/coreInfrastructureSpecs'
 import { dataCenterRequirements } from './data/dataCenterRequirements'
@@ -132,7 +131,7 @@ export default function OfferStorage() {
             {filecoinEarningsInsights.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
-                hasTopBorder
+                border="only-top"
                 title={title}
                 description={description}
                 cta={cta}
