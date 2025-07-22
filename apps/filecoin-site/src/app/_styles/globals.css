@@ -16,6 +16,8 @@
   --color-brand-900: oklch(0.47 0.1224 248.85);
   --color-brand-950: oklch(0.33 0.0795 249.37);
 
+  --color-icon-success: var(--color-green-500);
+
   --gradient-brand-dark: linear-gradient(
     90deg,
     var(--color-brand-500),

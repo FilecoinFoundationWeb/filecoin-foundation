@@ -16,7 +16,7 @@ import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
-import { ComparisonTable } from './components/ComparisonTable'
+import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { StepCard } from './components/StepCard'
 import { ecosystemPartners } from './data/ecosystemPartners'
 import { filecoinParticipants } from './data/filecoinParticipants'
@@ -153,7 +153,7 @@ export default function Learn() {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection backgroundVariant="light">
         <SectionContent
           centerCTA
           title="See how Filecoin storage stacks up"

@@ -17,6 +17,7 @@ const variantStyles = {
   '3xl-medium': 'text-3xl font-medium',
   'xl-medium': 'text-xl font-medium',
   'xl-regular': 'text-xl font-normal',
+  'base-medium': 'text-base font-medium',
 }
 
 export function Heading({ tag, variant, className, children }: HeadingProps) {
