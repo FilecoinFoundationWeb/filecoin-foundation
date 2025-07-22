@@ -57,7 +57,6 @@ export function StorageProviderCard({
           href="#"
           variant="ghost"
           className="mt-20 w-full"
-          aria-label={`Visit ${name}'s website`}
         >
           Visit {name}'s website
         </Button>
