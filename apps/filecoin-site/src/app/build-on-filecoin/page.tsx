@@ -24,7 +24,6 @@ import { filecoinFeatures } from './data/filecoinFeatures'
 import { filecoinTools } from './data/filecoinTools'
 import { getInvolvedOptions } from './data/getInvolvedOptions'
 
-
 export default function BuildOnFilecoin() {
   return (
     <>
@@ -174,14 +173,17 @@ export default function BuildOnFilecoin() {
             ecosystem."
         >
           <CardGrid as="ul" variant="lgTwo">
-            {communityHubs.map(({ title, description, cta }) => (
-              <SimpleCardWithLogo
-                key={title}
-                title={title}
-                description={description}
-                cta={cta}
-              />
-            ))}
+            {communityHubs.map(
+              ({ title, description, cta, logoBackgroundColor }) => (
+                <SimpleCardWithLogo
+                  key={title}
+                  title={title}
+                  description={description}
+                  cta={cta}
+                  logoBackgroundColor={logoBackgroundColor}
+                />
+              ),
+            )}
           </CardGrid>
         </SectionContent>
       </PageSection>

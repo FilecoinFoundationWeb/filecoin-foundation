@@ -1,21 +1,26 @@
 import { CTALink } from './CTALink'
 import { SimpleCard, type SimpleCardProps } from './SimpleCard'
 
-type SimpleCardWithLogoProps = {
+export type SimpleCardWithLogoProps = {
   title: SimpleCardProps['title']
   description: SimpleCardProps['description']
   cta: NonNullable<SimpleCardProps['cta']>
+  logoBackgroundColor: `#${string}`
 }
 
 export function SimpleCardWithLogo({
   title,
   description,
   cta,
+  logoBackgroundColor,
 }: SimpleCardWithLogoProps) {
   return (
     <li className="card-border-color relative flex h-full border">
       {/* @todo: replace with logo */}
-      <div className="size-48 flex-shrink-0 bg-blue-100" />
+      <div
+        className="size-48 flex-shrink-0"
+        style={{ backgroundColor: logoBackgroundColor }}
+      />
 
       <SimpleCard
         as="div"
