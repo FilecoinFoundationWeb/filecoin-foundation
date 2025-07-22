@@ -9,7 +9,7 @@ type ThemeClasses = {
 
 const themeClasses: Record<Theme, ThemeClasses> = {
   dark: {
-    container: 'divide-zinc-50/30 bg-blue-950 text-white',
+    container: 'divide-zinc-50/30 bg-brand-950 text-white',
     divider: 'divide-zinc-50/30',
   },
   light: {
