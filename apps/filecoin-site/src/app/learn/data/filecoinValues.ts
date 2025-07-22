@@ -39,4 +39,4 @@ export const filecoinValues: CardData[] = [
       'Network health is aligned by economic incentives, transforming a network of independent contributors into essential infrastructure and supporting a self-sustaining, participant-driven economy.',
     icon: ScalesIcon,
   },
-] as const
+]
