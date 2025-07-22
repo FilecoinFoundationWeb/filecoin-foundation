@@ -39,7 +39,7 @@ export function SimpleCard({
   return (
     <Component
       className={clsx(
-        'h-full w-full',
+        'simple-card h-full w-full',
         cta && 'relative',
         borderClasses[border],
       )}
@@ -54,7 +54,7 @@ export function SimpleCard({
           <Heading tag="h3" variant="xl-medium">
             {title}
           </Heading>
-          <p className="text-zinc-600">{description}</p>
+          <p className="simple-card-description-text">{description}</p>
         </div>
         {cta && (
           <CTALink

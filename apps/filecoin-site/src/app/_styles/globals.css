@@ -182,8 +182,26 @@
     @apply border border-zinc-200;
   }
 
+  .simple-card-description-text {
+    .light-section &,
+    .gray-section & {
+      @apply text-zinc-600;
+    }
+
+    .dark-section & {
+      @apply text-zinc-400;
+    }
+  }
+
   .card-border-color {
-    @apply border-zinc-950/15;
+    .light-section &,
+    .gray-section & {
+      @apply border-zinc-950/15;
+    }
+
+    .dark-section & {
+      @apply border-zinc-50/15;
+    }
   }
 
   /* COPY TO CLIPBOARD */
@@ -193,7 +211,14 @@
 
   /* CTALINK */
   .cta-link {
-    @apply text-zinc-600;
+    .light-section &,
+    .gray-section & {
+      @apply text-zinc-600;
+    }
+
+    .dark-section & {
+      @apply text-zinc-300;
+    }
   }
 
   /* NAVIGATION */
