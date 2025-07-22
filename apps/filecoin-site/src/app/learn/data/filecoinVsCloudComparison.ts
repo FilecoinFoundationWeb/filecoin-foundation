@@ -28,7 +28,7 @@ const filecoinVsCloudComparison: Array<ComparisonItem> = [
     filecoin: 'Data outlives institutions',
     traditional: 'Data loss if provider fails',
   },
-] satisfies Array<ComparisonItem>
+]
 
 export const filecoinFeatures = filecoinVsCloudComparison.map(
   (item) => item.filecoin,
