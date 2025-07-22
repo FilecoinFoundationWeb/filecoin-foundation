@@ -1,7 +1,7 @@
 import { CTALink } from './CTALink'
 import { SimpleCard, type SimpleCardProps } from './SimpleCard'
 
-type SimpleCardWithGradientProps = {
+type SimpleCardWithLogoProps = {
   title: SimpleCardProps['title']
   description: SimpleCardProps['description']
   cta: NonNullable<SimpleCardProps['cta']>
@@ -11,7 +11,7 @@ export function SimpleCardWithLogo({
   title,
   description,
   cta,
-}: SimpleCardWithGradientProps) {
+}: SimpleCardWithLogoProps) {
   return (
     <li className="card-border-color relative flex h-full border">
       {/* @todo: replace with logo */}
