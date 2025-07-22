@@ -12,7 +12,7 @@ import { storageCategories } from '../data/storageCategories'
 import { storageProviders } from '../data/storageProviders'
 
 import { StorageCategoryFilter } from './StorageCategoryFilter'
-import { StorageProviderCard } from './StorageProviderCard'
+import { StorageProviderCard } from './StorageProviderCard/StorageProviderCard'
 
 const URL_SEARCH_PARAM = 'storage-type'
 

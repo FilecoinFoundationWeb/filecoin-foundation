@@ -1,8 +1,8 @@
 import { Badge } from '@/components/Badge'
 import { Button } from '@/components/Button'
 
-import { CardKeyFeature } from './CardKeyFeature'
-import { CardSection } from './CardSection'
+import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
+import { StorageProviderCardSection } from './StorageProviderCardSection'
 
 export type StorageProviderCardProps = {
   name: string
@@ -20,8 +20,9 @@ export function StorageProviderCard({
   return (
     <li>
       <article className="flex h-full flex-col justify-between space-y-8 border border-zinc-200 p-8">
-        <div className="mb-20 space-y-8">
+        <div className="space-y-8">
           <div className="flex items-center gap-3">
+            {/* Placeholder for logo */}
             <div
               aria-hidden="true"
               className="size-9 rounded-full bg-gradient-to-tr from-blue-950 to-blue-800"
@@ -31,7 +32,7 @@ export function StorageProviderCard({
 
           <p className="text-zinc-600">{description}</p>
 
-          <CardSection title="Best For">
+          <StorageProviderCardSection title="Best For">
             <ul className="flex flex-wrap gap-2.5">
               {bestFor.map((text) => (
                 <li key={text}>
@@ -39,23 +40,23 @@ export function StorageProviderCard({
                 </li>
               ))}
             </ul>
-          </CardSection>
+          </StorageProviderCardSection>
 
-          <CardSection title="Key Features">
+          <StorageProviderCardSection title="Key Features">
             <ul className="space-y-2.5">
               {keyFeatures.map((feature) => (
                 <li key={feature}>
-                  <CardKeyFeature feature={feature} />
+                  <StorageProviderCardKeyFeature feature={feature} />
                 </li>
               ))}
             </ul>
-          </CardSection>
+          </StorageProviderCardSection>
         </div>
 
         <Button
           href="#"
           variant="ghost"
-          className="w-full"
+          className="mt-20 w-full"
           aria-label={`Visit ${name}'s website`}
         >
           Visit {name}'s website

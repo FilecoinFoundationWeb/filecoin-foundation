@@ -1,4 +1,4 @@
-import type { StorageProviderCardProps } from '../components/StorageProviderCard'
+import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 
 import type { StorageKey } from './storageCategories'
 
