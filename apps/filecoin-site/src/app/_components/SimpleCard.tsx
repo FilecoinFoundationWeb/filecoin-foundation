@@ -60,7 +60,11 @@ export function SimpleCard({
         />
       )}
       <div className={clsx('flex flex-col gap-6 p-6', hasTopBorder && 'px-0')}>
-        {isGradientCard && <Badge>{gradientHeaderAndBadge.badgeText}</Badge>}
+        {isGradientCard && (
+          <div className="flex">
+            <Badge>{gradientHeaderAndBadge.badgeText}</Badge>
+          </div>
+        )}
         <div className="mb-12 flex flex-col gap-3">
           <Heading tag="h3" variant="xl-medium">
             {title}
