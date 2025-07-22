@@ -15,16 +15,16 @@ export function SimpleCardWithLogo({
   logoBackgroundColor,
 }: SimpleCardWithLogoProps) {
   return (
-    <li className="card-border-color relative flex h-full border">
+    <li className="card-border-color relative flex h-full flex-col border sm:flex-row">
       {/* @todo: replace with logo */}
       <div
-        className="size-48 flex-shrink-0"
+        className="card-border-color h-44 w-full flex-shrink-0 border-b sm:size-48 sm:border-r sm:border-b-0"
         style={{ backgroundColor: logoBackgroundColor }}
       />
 
       <SimpleCard
         as="div"
-        border="only-left"
+        border="none"
         title={title}
         description={description}
       />
@@ -33,7 +33,7 @@ export function SimpleCardWithLogo({
         inset
         href={cta.href}
         aria-label={cta.text}
-        textClassName="absolute bottom-6 left-54"
+        textClassName="absolute bottom-6 sm:left-54 left-6"
       >
         {cta.text}
       </CTALink>

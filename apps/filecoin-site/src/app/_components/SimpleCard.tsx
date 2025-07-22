@@ -26,7 +26,6 @@ const borderClasses = {
   none: 'border-none',
   all: 'border card-border-color',
   'only-top': 'border-t card-border-color',
-  'only-left': 'border-l card-border-color',
 }
 
 export function SimpleCard({
