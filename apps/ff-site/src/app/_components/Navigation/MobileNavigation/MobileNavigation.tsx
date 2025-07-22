@@ -27,19 +27,18 @@ export function MobileNavigation() {
       <IconButton
         icon={ListIcon}
         label="Open mobile navigation"
-        onClick={() => setOpen(true)}
+        onClick={openPanel}
       />
 
       <SlideOver open={open} setOpen={setOpen}>
         <div className="flex flex-col gap-12 px-6 py-8">
           <div className="flex items-center justify-between">
-            <div className="shrink-0">
-              <LogoLink logo={Logo} onClick={() => setOpen(false)} />
-            </div>
+            <LogoLink logo={Logo} onNavigate={closePanel} />
+
             <IconButton
               icon={XIcon}
               label="Close mobile navigation"
-              onClick={() => setOpen(false)}
+              onClick={closePanel}
             />
           </div>
           <ul className="space-y-6" aria-label="Navigation options">
@@ -65,4 +64,12 @@ export function MobileNavigation() {
       </SlideOver>
     </div>
   )
+
+  function openPanel() {
+    setOpen(true)
+  }
+
+  function closePanel() {
+    setOpen(false)
+  }
 }

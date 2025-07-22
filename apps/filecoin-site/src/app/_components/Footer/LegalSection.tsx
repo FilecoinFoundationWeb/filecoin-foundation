@@ -2,14 +2,24 @@ import Link from 'next/link'
 
 import { legalLinks } from '@/constants/navigation'
 
-import { FilecoinFoundationLogo } from './FilecoinFoundationLogo'
+import FilecoinFoundationLogo from '@/assets/logos/filecoin-foundation-logo.svg'
 
 export function LegalSection() {
   return (
     <div className="my-16 flex flex-col-reverse items-center justify-between gap-8 sm:flex-row md:gap-16">
-      <span className="flex items-center gap-2 text-xs text-zinc-400">
-        Managed by <FilecoinFoundationLogo />
-      </span>
+      <a
+        href="https://fil.org/"
+        className="focus:brand-outline flex items-center gap-2 text-xs text-zinc-400"
+        aria-label="Managed by Filecoin Foundation &ndash; Visit website"
+      >
+        <span>Managed by</span>
+        <FilecoinFoundationLogo
+          height={24}
+          aria-hidden="true"
+          focusable="false"
+        />
+      </a>
+
       <ul className="order-1 flex items-center gap-10 text-sm text-zinc-400 md:gap-16">
         {legalLinks.map(({ href, label }) => (
           <li key={href}>

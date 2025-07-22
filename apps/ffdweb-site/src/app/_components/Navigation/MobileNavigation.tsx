@@ -6,12 +6,13 @@ import { ListIcon, XIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
+import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 import { Social } from '@filecoin-foundation/ui/Social'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { LogoLink } from '@/components/LogoLink'
+import { Logo } from '@/components/Logo'
 
 import { NAV_LINKS, TOUCH_TARGET_NAV_LINK } from './constants'
 import { NavigationLink } from './NavigationLink'
@@ -28,9 +29,10 @@ export function MobileNavigation() {
       />
 
       <SlideOver open={open} setOpen={setOpen}>
-        <div className="flex flex-col gap-12 pt-8 px-6">
+        <div className="flex flex-col gap-12 px-6 pt-8">
           <div className="flex items-center justify-between">
-            <LogoLink height={50} />
+            <LogoLink logo={Logo} height={50} onNavigate={closePanel} />
+
             <IconButton
               icon={XIcon}
               label="Close mobile navigation"
