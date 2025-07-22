@@ -1,5 +1,3 @@
-import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
-
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -8,7 +6,6 @@ import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { Heading } from '@/components/Heading'
 import { LinkCard } from '@/components/LinkCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -20,6 +17,7 @@ import { SimpleCard } from '@/components/SimpleCard'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { ComparisonTable } from './components/ComparisonTable'
+import { StepCard } from './components/StepCard'
 import { ecosystemPartners } from './data/ecosystemPartners'
 import { filecoinParticipants } from './data/filecoinParticipants'
 import { filecoinStackFeatures } from './data/filecoinStackFeatures'
@@ -95,6 +93,7 @@ export default function Learn() {
         <SectionContent title="How Filecoin works">
           <SectionSubContent
             centerCTA
+            headingTag="h3"
             title="How data gets stored on Filecoin"
             cta={
               <Button href="" variant="primary">
@@ -104,15 +103,14 @@ export default function Learn() {
           >
             <CardGrid as="ul" variant="smTwoXlThreeWidest">
               {filecoinStorageFlow.map(({ step, title, description }) => (
-                <li key={description} className="flex flex-col gap-3">
-                  <span className="text-brand-500 text-4xl font-medium">
-                    {`0${step}.`}
-                  </span>
-                  <Heading tag="h4" variant="xl-medium">
-                    {title}
-                  </Heading>
-                  <DescriptionText>{description}</DescriptionText>
-                </li>
+                <StepCard
+                  key={title}
+                  as="li"
+                  step={step}
+                  title={title}
+                  headingTag="h4"
+                  description={description}
+                />
               ))}
             </CardGrid>
           </SectionSubContent>
@@ -120,6 +118,7 @@ export default function Learn() {
           <SectionDivider />
 
           <SectionSubContent
+            headingTag="h3"
             title="The Filecoin ecosystem"
             description="Storing a file on Filecoin involves several participants working together."
           >
