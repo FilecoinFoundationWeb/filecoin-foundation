@@ -127,7 +127,7 @@ export default function Learn() {
               {filecoinParticipants.map(({ title, description, cta }) => (
                 <SimpleCard
                   key={title}
-                  hasTopBorder
+                  border="only-top"
                   title={title}
                   description={description}
                   cta={cta}

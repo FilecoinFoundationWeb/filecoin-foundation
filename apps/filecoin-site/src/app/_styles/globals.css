@@ -182,6 +182,10 @@
     @apply border border-zinc-200;
   }
 
+  .card-border-color {
+    @apply border-zinc-950/15;
+  }
+
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
     @apply icon-button;
