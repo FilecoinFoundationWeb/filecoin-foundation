@@ -1,40 +1,39 @@
-type ComparisonCell = boolean | 'limited'
-
-export type ComparisonRow = {
-  feature: string
-  filecoin: ComparisonCell
-  traditionalCloud: ComparisonCell
+type ComparisonItem = {
+  filecoin: string
+  traditional: string
 }
 
-export const filecoinVsCloudComparison: ComparisonRow[] = [
+const filecoinVsCloudComparison: Array<ComparisonItem> = [
   {
-    feature: 'Open participation',
-    filecoin: true,
-    traditionalCloud: false,
+    filecoin: 'Resilience through global redundancy',
+    traditional: 'Single points of failure',
   },
   {
-    feature: 'Censorship resistance',
-    filecoin: true,
-    traditionalCloud: false,
+    filecoin: 'Censorship resistance by design',
+    traditional: 'Susceptible to censorship and takedowns',
   },
   {
-    feature: 'Verifiable storage proofs',
-    filecoin: true,
-    traditionalCloud: false,
+    filecoin: 'Open, permissionless participation',
+    traditional: 'Controlled by corporate gatekeepers',
   },
   {
-    feature: 'Programmable infrastructure',
-    filecoin: true,
-    traditionalCloud: 'limited',
+    filecoin: 'Verifiable storage commitments',
+    traditional: 'Opaque trust models',
   },
   {
-    feature: 'Cost efficiency via markets',
-    filecoin: true,
-    traditionalCloud: false,
+    filecoin: 'Economic incentives for participants',
+    traditional: 'Profits flow to shareholders',
   },
   {
-    feature: 'Data retrieval incentives',
-    filecoin: true,
-    traditionalCloud: false,
+    filecoin: 'Data outlives institutions',
+    traditional: 'Data loss if provider fails',
   },
-] as const
+]
+
+export const filecoinFeatures = filecoinVsCloudComparison.map(
+  (item) => item.filecoin,
+)
+
+export const traditionalCloudFeatures = filecoinVsCloudComparison.map(
+  (item) => item.traditional,
+)
