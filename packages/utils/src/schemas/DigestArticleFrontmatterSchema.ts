@@ -2,8 +2,7 @@ import { z } from 'zod'
 
 import { DynamicBaseDataSchema } from './DynamicDataBaseSchema'
 import { ImagePropsSchema } from './ImagePropsSchema'
-
-export const DigestArticleFrontmatterSchema = DynamicBaseDataSchema.extend({
+const DigestArticleFrontmatterFields = {
   title: z.string(),
   'issue-number': z.string(),
   'article-number': z.number(),
@@ -17,4 +16,9 @@ export const DigestArticleFrontmatterSchema = DynamicBaseDataSchema.extend({
     }),
   ),
   content: z.string(),
-}).strict()
+}
+
+export const DigestArticleFrontmatterSchema = z.strictObject({
+  ...DynamicBaseDataSchema.shape,
+  ...DigestArticleFrontmatterFields,
+})

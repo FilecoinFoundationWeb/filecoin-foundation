@@ -17,7 +17,7 @@ const airtableRecordSchema = z.object({
   [TITLE]: z.string(),
   [CITY]: z.string(),
   [START_DATE]: z.coerce.date(),
-  [REGISTRATION_LINK]: z.string().url().optional(),
+  [REGISTRATION_LINK]: z.url().optional(),
 })
 
 export async function fetchAndParseAirtableEvents() {

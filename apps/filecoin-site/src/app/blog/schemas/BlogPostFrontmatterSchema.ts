@@ -7,21 +7,19 @@ const AllowedCategories = z.union([
   z.literal('awards'),
 ])
 
-export const BlogPostFrontmatterSchema = z
-  .object({
-    title: z.string(),
-    author: z.string().optional(),
-    draft: z.boolean().optional(),
-    excerpt: z.string(),
-    share_image: z.string().optional(),
-    image: z
-      .object({
-        url: z.string(),
-      })
-      .optional(),
-    publishedOn: z.coerce.date(),
-    categories: z.array(AllowedCategories),
-    dim_image: z.boolean().optional(),
-    content: z.string(),
-  })
-  .strict()
+export const BlogPostFrontmatterSchema = z.strictObject({
+  title: z.string(),
+  author: z.string().optional(),
+  draft: z.boolean().optional(),
+  excerpt: z.string(),
+  share_image: z.string().optional(),
+  image: z
+    .object({
+      url: z.string(),
+    })
+    .optional(),
+  publishedOn: z.coerce.date(),
+  categories: z.array(AllowedCategories),
+  dim_image: z.boolean().optional(),
+  content: z.string(),
+})

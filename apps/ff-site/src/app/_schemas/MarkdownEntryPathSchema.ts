@@ -7,7 +7,7 @@ import {
 } from '@/constants/paths'
 
 export const MarkdownEntryPathSchema = z.string().refine(isValidMarkdownPath, {
-  message: 'Invalid markdown file path format',
+  error: 'Invalid markdown file path format',
 })
 
 export function isValidMarkdownPath(path: string) {

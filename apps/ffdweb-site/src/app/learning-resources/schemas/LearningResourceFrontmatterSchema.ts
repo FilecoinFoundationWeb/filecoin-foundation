@@ -24,7 +24,7 @@ const CategorySchema = createEnumSchema(validCategoryIds)
 const TechnicalitySchema = createEnumSchema(validTechnicalityIds)
 const ResourceTypeSchema = createEnumSchema(validResourceTypeIds)
 
-export const LearningResourceFrontmatterSchema = DynamicBaseDataSchema.extend({
+const LearningResourceFrontmatterFields = {
   title: z.string(),
   description: z.string(),
   organization: z.string().optional(),
@@ -33,5 +33,10 @@ export const LearningResourceFrontmatterSchema = DynamicBaseDataSchema.extend({
   technicality: TechnicalitySchema,
   length: z.string().optional(),
   keywords: z.string().optional(),
-  link: z.string().url(),
-}).strict()
+  link: z.url(),
+}
+
+export const LearningResourceFrontmatterSchema = z.strictObject({
+  ...DynamicBaseDataSchema.shape,
+  ...LearningResourceFrontmatterFields,
+})
