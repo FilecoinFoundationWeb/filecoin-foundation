@@ -1,36 +1,46 @@
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
 import clsx from 'clsx'
-
-import { type IconProps, Icon } from '@filecoin-foundation/ui/Icon'
-
-export type IconBadgeProps = {
-  icon: IconProps['component']
-  size?: keyof typeof ICON_CONFIG
-  className?: string
-}
 
 const ICON_CONFIG = {
   sm: {
-    containerSize: 'size-10',
+    containerSize: 'size-10 min-w-10',
     iconSize: 20,
   },
   md: {
-    containerSize: 'size-[60px]',
+    containerSize: 'size-[60px] min-w-[60px]',
     iconSize: 30,
   },
 } as const
 
-export function IconBadge({ icon, size = 'md', className }: IconBadgeProps) {
+const VARIANTS = {
+  outline: 'border-brand-500 text-brand-500 bg-transparent',
+  filled: 'border-brand-700 bg-brand-700 text-zinc-50',
+}
+
+type IconSize = keyof typeof ICON_CONFIG
+
+export type IconBadgeProps = {
+  component: PhosphorIcon
+  size?: IconSize
+  variant?: keyof typeof VARIANTS
+}
+
+export function IconBadge({
+  component: Icon,
+  size = 'md',
+  variant = 'outline',
+}: IconBadgeProps) {
   const config = ICON_CONFIG[size]
 
   return (
     <div
       className={clsx(
-        'border-brand-500 text-brand-500 grid place-items-center rounded-full border-2',
+        'grid place-items-center rounded-full border-2',
+        VARIANTS[variant],
         config.containerSize,
-        className,
       )}
     >
-      <Icon component={icon} size={config.iconSize} />
+      <Icon width={config.iconSize} height={config.iconSize} />
     </div>
   )
 }
