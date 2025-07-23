@@ -132,6 +132,7 @@ export default function Learn() {
               {filecoinParticipants.map(({ title, description, cta }) => (
                 <SimpleCard
                   key={title}
+                  as="li"
                   border="only-top"
                   title={title}
                   description={description}
@@ -150,6 +151,7 @@ export default function Learn() {
             {filecoinStackFeatures.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
+                as="li"
                 title={title}
                 description={description}
                 cta={cta}

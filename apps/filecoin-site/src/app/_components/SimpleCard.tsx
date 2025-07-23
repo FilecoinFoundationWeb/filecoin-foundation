@@ -7,7 +7,7 @@ import { Heading } from '@/components/Heading'
 export type SimpleCardProps = {
   title: string
   description: string
-  as?: 'li' | 'div'
+  as: 'li' | 'div'
   badge?: BadgeProps['children']
   border?: keyof typeof borderClasses
   cta?: {
@@ -29,7 +29,7 @@ const borderClasses = {
 }
 
 export function SimpleCard({
-  as: Component = 'li',
+  as: Tag,
   title,
   description,
   cta,
@@ -37,7 +37,7 @@ export function SimpleCard({
   border = 'all',
 }: SimpleCardProps) {
   return (
-    <Component
+    <Tag
       className={clsx(
         'simple-card h-full w-full',
         cta && 'relative',
@@ -67,6 +67,6 @@ export function SimpleCard({
           </CTALink>
         )}
       </div>
-    </Component>
+    </Tag>
   )
 }
