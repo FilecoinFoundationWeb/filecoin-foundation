@@ -42,9 +42,9 @@ export function SimpleCardWithLogo({
         )}
       </div>
 
-      <div
+      <hr
         aria-hidden="true"
-        className="card-border-color border-b sm:border-r sm:border-b-0"
+        className="card-border-color h-full border-t sm:border-t-0 sm:border-r"
       />
 
       <SimpleCard
