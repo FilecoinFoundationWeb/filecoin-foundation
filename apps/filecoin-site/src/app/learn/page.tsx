@@ -71,8 +71,12 @@ export default function Learn() {
                 title={title}
                 description={description}
                 cta={cta}
-                logoBackgroundColor="#353535"
-                logo={DummyLogo}
+                logo={{
+                  type: 'svg',
+                  src: DummyLogo,
+                  bgColor: '#353535',
+                  color: '#fff',
+                }}
               />
             ))}
           </CardGrid>

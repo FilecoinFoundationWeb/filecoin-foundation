@@ -7,12 +7,26 @@ import { Icon } from '@filecoin-foundation/ui/Icon'
 import { CTALink } from './CTALink'
 import { SimpleCard, type SimpleCardProps } from './SimpleCard'
 
+type HEXCodeType = `#${string}`
+
+type ImageLogoProps = {
+  type: 'image'
+  src: StaticImageData
+  bgColor: HEXCodeType
+}
+
+type SVGLogoProps = {
+  type: 'svg'
+  src: ComponentType<SVGProps<SVGSVGElement>>
+  bgColor: HEXCodeType
+  color: HEXCodeType
+}
+
 export type SimpleCardWithLogoProps = {
   title: SimpleCardProps['title']
   description: SimpleCardProps['description']
   cta: NonNullable<SimpleCardProps['cta']>
-  logoBackgroundColor: `#${string}`
-  logo: ComponentType<SVGProps<SVGSVGElement>> | StaticImageData
+  logo: ImageLogoProps | SVGLogoProps
 }
 
 const LOGO_SIZE = 60
@@ -21,24 +35,25 @@ export function SimpleCardWithLogo({
   title,
   description,
   cta,
-  logoBackgroundColor,
-  logo: Logo,
+  logo,
 }: SimpleCardWithLogoProps) {
   return (
     <li className="card-border-color relative flex h-full flex-col border sm:flex-row">
       <div
         className="grid h-44 w-full flex-shrink-0 place-items-center sm:h-full sm:w-42"
-        style={{ backgroundColor: logoBackgroundColor }}
+        style={{ backgroundColor: logo.bgColor }}
       >
-        {'src' in Logo ? (
+        {logo.type === 'svg' ? (
+          <span style={{ color: logo.color }}>
+            <Icon component={logo.src} size={LOGO_SIZE} />
+          </span>
+        ) : (
           <Image
-            src={Logo}
+            src={logo.src}
             alt={`${title}'s logo`}
             height={LOGO_SIZE}
             width={LOGO_SIZE}
           />
-        ) : (
-          <Icon component={Logo} size={LOGO_SIZE} />
         )}
       </div>
 

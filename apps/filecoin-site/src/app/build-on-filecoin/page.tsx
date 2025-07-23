@@ -174,18 +174,15 @@ export default function BuildOnFilecoin() {
             ecosystem."
         >
           <CardGrid as="ul" variant="lgTwo">
-            {communityHubs.map(
-              ({ title, description, cta, logoBackgroundColor, logo }) => (
-                <SimpleCardWithLogo
-                  key={title}
-                  title={title}
-                  description={description}
-                  cta={cta}
-                  logoBackgroundColor={logoBackgroundColor}
-                  logo={logo}
-                />
-              ),
-            )}
+            {communityHubs.map(({ title, description, cta, logo }) => (
+              <SimpleCardWithLogo
+                key={title}
+                title={title}
+                description={description}
+                cta={cta}
+                logo={logo}
+              />
+            ))}
           </CardGrid>
         </SectionContent>
       </PageSection>

@@ -13,8 +13,12 @@ export const communityHubs: Array<SimpleCardWithLogoProps> = [
   {
     title: 'Filecoin Foundation',
     description: 'Network governance.',
-    logoBackgroundColor: '#08072E',
-    logo: FilecoinFoundationIconLogo,
+    logo: {
+      type: 'svg',
+      src: FilecoinFoundationIconLogo,
+      bgColor: '#08072E',
+      color: '#fff',
+    },
     cta: {
       href: 'https://fil.org/',
       text: CTA_TEXT,
@@ -23,8 +27,12 @@ export const communityHubs: Array<SimpleCardWithLogoProps> = [
   {
     title: 'FilOz',
     description: 'Core software development.',
-    logoBackgroundColor: '#0090FF',
-    logo: FilOzLogo,
+    logo: {
+      type: 'svg',
+      src: FilOzLogo,
+      bgColor: '#0090FF',
+      color: '#F7F7F7',
+    },
     cta: {
       href: 'https://filoz.dev/',
       text: CTA_TEXT,
@@ -33,8 +41,11 @@ export const communityHubs: Array<SimpleCardWithLogoProps> = [
   {
     title: 'Polaris',
     description: 'Protocol Labs dev guild and hackathons.',
-    logoBackgroundColor: '#ffffff',
-    logo: PolarisLogo,
+    logo: {
+      type: 'image',
+      src: PolarisLogo,
+      bgColor: '#fff',
+    },
     cta: {
       href: 'https://directory.plnetwork.io/teams/clz1ls1gr0003xl02n5lpvbhn',
       text: CTA_TEXT,
@@ -43,8 +54,11 @@ export const communityHubs: Array<SimpleCardWithLogoProps> = [
   {
     title: 'Fil-B',
     description: 'Builder community and education.',
-    logoBackgroundColor: '#FAFAFA',
-    logo: FilBLogo,
+    logo: {
+      type: 'image',
+      src: FilBLogo,
+      bgColor: '#FAFAFA',
+    },
     cta: {
       href: 'https://fil-b.dev/',
       text: CTA_TEXT,
@@ -53,8 +67,11 @@ export const communityHubs: Array<SimpleCardWithLogoProps> = [
   {
     title: 'FIDL',
     description: 'Research and protocol design.',
-    logoBackgroundColor: '#000000',
-    logo: FIDLLogo,
+    logo: {
+      type: 'image',
+      src: FIDLLogo,
+      bgColor: '#000',
+    },
     cta: {
       href: 'https://fidl.network/',
       text: CTA_TEXT,
@@ -63,8 +80,12 @@ export const communityHubs: Array<SimpleCardWithLogoProps> = [
   {
     title: 'ANSA',
     description: 'Applied research and investor relations.',
-    logoBackgroundColor: '#F5F4F2',
-    logo: ANSALogo,
+    logo: {
+      type: 'svg',
+      src: ANSALogo,
+      bgColor: '#F5F4F2',
+      color: '#000',
+    },
     cta: {
       href: 'https://ansa.network/',
       text: CTA_TEXT,
