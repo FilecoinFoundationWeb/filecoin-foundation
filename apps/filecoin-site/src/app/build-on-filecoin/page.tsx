@@ -174,13 +174,14 @@ export default function BuildOnFilecoin() {
         >
           <CardGrid as="ul" variant="lgTwo">
             {communityHubs.map(
-              ({ title, description, cta, logoBackgroundColor }) => (
+              ({ title, description, cta, logoBackgroundColor, logo }) => (
                 <SimpleCardWithLogo
                   key={title}
                   title={title}
                   description={description}
                   cta={cta}
                   logoBackgroundColor={logoBackgroundColor}
+                  logo={logo}
                 />
               ),
             )}
