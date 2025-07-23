@@ -1,12 +1,11 @@
 import clsx from 'clsx'
 
 import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
-import type { IconProps } from '@filecoin-foundation/ui/Icon'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { Heading } from './Heading'
-import { IconBadge } from './IconBadge'
+import { IconBadge, type IconBadgeProps } from './IconBadge'
 import type { SectionProps } from './Section'
 
 type LinkCardProps = {
@@ -15,13 +14,18 @@ type LinkCardProps = {
   title: string
   description?: string
   href: string
-  icon: IconProps['component']
+  icon: {
+    component: IconBadgeProps['component']
+    variant?: IconBadgeProps['variant']
+  }
 }
 
 export type LinkCardData = Pick<
   LinkCardProps,
-  'title' | 'description' | 'href' | 'icon'
->
+  'title' | 'description' | 'href'
+> & {
+  icon: IconBadgeProps['component']
+}
 
 export function LinkCard({
   as: Tag,
@@ -42,7 +46,7 @@ export function LinkCard({
         styles.border,
       )}
     >
-      <IconBadge className="flex-shrink-0" icon={icon} size="sm" />
+      <IconBadge component={icon.component} size="sm" variant={icon.variant} />
 
       {description && (
         <div className="space-y-5">
