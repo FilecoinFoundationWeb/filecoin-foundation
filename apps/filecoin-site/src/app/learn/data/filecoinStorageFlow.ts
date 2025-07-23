@@ -8,7 +8,7 @@ type FilecoinStorageStepData = {
 
 type FilecoinSteps = Record<FilecoinStorageStep, StepCardData>
 
-export const filecoinStorageFlowData: FilecoinSteps = {
+const filecoinStorageFlowData: FilecoinSteps = {
   1: {
     title: 'The data is prepared',
     description:
