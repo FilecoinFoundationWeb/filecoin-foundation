@@ -46,6 +46,7 @@ export default function OfferStorage() {
           description="Filecoin is open and permissionless, empowering anyone with the right infrastructure and expertise to participate. Storage providers are foundational to the network's mission, ensuring information stays safe, retrievable, and verifiable."
         >
           <SectionSubContent
+            headingTag="h3"
             title="Reliable data center environment"
             description="Filecoin is open and permissionless, empowering anyone with the right infrastructure and expertise to participate. Storage providers are foundational to the network's mission, ensuring information stays safe, retrievable, and verifiable."
           >
@@ -66,6 +67,7 @@ export default function OfferStorage() {
           <SectionDivider />
 
           <SectionSubContent
+            headingTag="h3"
             title="Core infrastructure setup"
             description="Ensure your system can deliver high-performance, reliable storage."
           >
@@ -88,6 +90,7 @@ export default function OfferStorage() {
           <SectionDivider />
 
           <SectionSubContent
+            headingTag="h3"
             title="Specialized hardware"
             description="Filecoin's sealing and storage system require purpose-build hardware."
           >

@@ -68,7 +68,7 @@ export default function BuildOnFilecoin() {
           title="Useful tools for builders"
           description="Accelerate development with Filecoin's ecosystem tools."
         >
-          <SectionSubContent title="Getting started">
+          <SectionSubContent headingTag="h3" title="Getting started">
             <CardGrid as="ul" variant="smTwoLgThree">
               {filecoinTools.map(
                 ({ title, description, difficulty, cta }, index) => (
@@ -89,7 +89,7 @@ export default function BuildOnFilecoin() {
 
           <SectionDivider />
 
-          <SectionSubContent title="Developer resources">
+          <SectionSubContent headingTag="h3" title="Developer resources">
             <CardGridContainer width="6xl">
               <CardGrid as="ul" variant="mdTwo">
                 {developerResources.map(
@@ -112,6 +112,7 @@ export default function BuildOnFilecoin() {
           <SectionDivider />
 
           <SectionSubContent
+            headingTag="h3"
             title="Block explorers"
             description="Track transactions, contracts, and onchain activity with Filecoin-compatible block explorers."
           >

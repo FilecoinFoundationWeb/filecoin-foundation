@@ -2,6 +2,7 @@ import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
 import { Heading, type HeadingProps } from '@/components/Heading'
 
 type SectionSubContentProps = {
+  headingTag: HeadingProps['tag']
   title: HeadingProps['children']
   description?: string
   children?: React.ReactNode
@@ -10,6 +11,7 @@ type SectionSubContentProps = {
 }
 
 export function SectionSubContent({
+  headingTag,
   title,
   description,
   children,
@@ -20,7 +22,7 @@ export function SectionSubContent({
     <div className="space-y-20">
       <div className="max-w-2xl">
         <Heading
-          tag="h2"
+          tag={headingTag}
           variant="3xl-medium"
           className="section-sub-content-heading-text"
         >
