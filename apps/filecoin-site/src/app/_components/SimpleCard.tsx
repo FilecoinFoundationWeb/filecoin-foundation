@@ -44,7 +44,7 @@ export function SimpleCard({
         borderClasses[border],
       )}
     >
-      <div className={clsx('flex flex-col gap-6 p-6')}>
+      <div className="flex flex-col gap-6 p-6"
         {badge && (
           <div className="flex">
             <Badge>{badge}</Badge>
