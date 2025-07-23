@@ -8,7 +8,7 @@ import {
 
 import type { CardData } from '@/components/Card'
 
-export const filecoinValues: CardData[] = [
+export const filecoinValues: Array<CardData> = [
   {
     title: 'Preservation first',
     description:

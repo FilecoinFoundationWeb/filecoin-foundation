@@ -5,13 +5,9 @@ import {
   ShieldCheckIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-type NetworkPrinciple = {
-  title: string
-  description: string
-  icon: typeof ShareNetworkIcon
-}
+import type { CardData } from '@/components/Card'
 
-export const networkPrinciples: NetworkPrinciple[] = [
+export const networkPrinciples: Array<CardData> = [
   {
     title: 'Decentralized & permissionless',
     description:
@@ -36,4 +32,4 @@ export const networkPrinciples: NetworkPrinciple[] = [
       'Ever-growing storage capacity across a global network of independent data centers ensures accessibility, redundancy, and resilience.',
     icon: GlobeIcon,
   },
-] as const
+]

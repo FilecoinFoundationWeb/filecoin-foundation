@@ -7,7 +7,7 @@ import {
 
 import type { LinkCardData } from '@/components/LinkCard'
 
-export const developerResources: LinkCardData[] = [
+export const developerResources: Array<LinkCardData> = [
   {
     title: 'testFIL Faucet',
     description:
@@ -35,4 +35,4 @@ export const developerResources: LinkCardData[] = [
     href: 'https://docs.filecoin.io/',
     icon: BookIcon,
   },
-] as const
+]

@@ -9,7 +9,7 @@ import {
 
 import type { CardData } from '@/components/Card'
 
-export const dataCenterRequirements: CardData[] = [
+export const dataCenterRequirements: Array<CardData> = [
   {
     title: 'Power',
     description: 'Redundant and stable supply.',
@@ -43,4 +43,4 @@ export const dataCenterRequirements: CardData[] = [
       'Provide adequate cabling, rack space, and room for large JBOD arrays.',
     icon: HardDrivesIcon,
   },
-] as const
+]

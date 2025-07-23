@@ -62,7 +62,7 @@ export default async function Home() {
                     title={title}
                     description={description}
                     href={href}
-                    icon={icon}
+                    icon={{ component: icon }}
                   />
                 ))}
               </CardGrid>
@@ -234,7 +234,7 @@ export default async function Home() {
                   backgroundVariant="dark"
                   title={title}
                   href={href}
-                  icon={icon}
+                  icon={{ component: icon, variant: 'filled' }}
                 />
               ))}
             </CardGrid>

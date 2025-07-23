@@ -7,7 +7,7 @@ import {
 
 import type { LinkCardData } from '@/components/LinkCard'
 
-export const getInvolvedOptions: LinkCardData[] = [
+export const getInvolvedOptions: Array<LinkCardData> = [
   {
     title: 'Apply for a grant',
     description:
@@ -36,4 +36,4 @@ export const getInvolvedOptions: LinkCardData[] = [
     href: '#',
     icon: MapPinLineIcon,
   },
-] as const
+]

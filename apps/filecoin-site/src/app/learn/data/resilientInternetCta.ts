@@ -8,7 +8,7 @@ import { PATHS } from '@/constants/paths'
 
 import type { LinkCardData } from '@/components/LinkCard'
 
-export const resilientInternetCta: LinkCardData[] = [
+export const resilientInternetCta: Array<LinkCardData> = [
   {
     title: 'Build on Filecoin',
     href: PATHS.BUILD_ON_FILECOIN.path,
