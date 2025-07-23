@@ -28,6 +28,8 @@ import { filecoinStorageFlow } from './data/filecoinStorageFlow'
 import { filecoinValues } from './data/filecoinValues'
 import { resilientInternetCta } from './data/resilientInternetCta'
 
+import DummyLogo from '@/assets/logos/filecoin-foundation-icon-logo.svg'
+
 export default function Learn() {
   return (
     <>
@@ -70,6 +72,7 @@ export default function Learn() {
                 description={description}
                 cta={cta}
                 logoBackgroundColor="#353535"
+                logo={DummyLogo}
               />
             ))}
           </CardGrid>
