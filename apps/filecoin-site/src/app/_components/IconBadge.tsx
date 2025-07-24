@@ -33,7 +33,7 @@ export function IconBadge({
   return (
     <div
       className={clsx(
-        'grid place-items-center rounded-full border-2',
+        'grid flex-shrink-0 place-items-center rounded-full border-2',
         VARIANTS[variant],
         config.containerSize,
       )}
