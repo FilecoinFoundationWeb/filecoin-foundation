@@ -18,4 +18,4 @@ const techOptions = getCMSFieldOptions(
 
 const TechSchema = createEnumSchema(techOptions)
 
-export const ProjectTechSchema = z.array(TechSchema).min(1)
+export const ProjectTechSchema = z.array(TechSchema).nonempty()
