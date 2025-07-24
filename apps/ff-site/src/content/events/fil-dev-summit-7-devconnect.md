@@ -12,7 +12,7 @@ location:
   region: south-america
 start-date: 2025-11-13
 end-date: 2025-11-15
-external-link: https://lu.ma/lql41ipv
+external-link: https://www.fildev.io/FDS-7
 image:
   src: /assets/images/devsummit7_social2-squooshed.webp
 seo:
