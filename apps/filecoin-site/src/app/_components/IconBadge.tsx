@@ -17,11 +17,9 @@ const VARIANTS = {
   filled: 'border-brand-700 bg-brand-700 text-zinc-50',
 }
 
-type IconSize = keyof typeof ICON_CONFIG
-
 export type IconBadgeProps = {
   component: PhosphorIcon
-  size?: IconSize
+  size?: keyof typeof ICON_CONFIG
   variant?: keyof typeof VARIANTS
 }
 
