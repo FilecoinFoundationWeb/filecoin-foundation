@@ -20,9 +20,19 @@ export const leaderboardData = [
     profileLink: null,
   },
   {
+    reporter: 'Joran Honig',
+    points: 335,
+    profileLink: 'https://x.com/joranhonig',
+  },
+  {
     reporter: '0xdeadbeef',
     points: 350,
     profileLink: 'https://x.com/0xdeadbeef____',
+  },
+  {
+    reporter: 'CircuitCrusher3',
+    points: 323,
+    profileLink: null,
   },
   {
     reporter: 'gln',
@@ -32,11 +42,6 @@ export const leaderboardData = [
   {
     reporter: 'Tin Tin',
     points: 264,
-    profileLink: null,
-  },
-  {
-    reporter: 'Matthew Jiang',
-    points: 120,
     profileLink: null,
   },
   {
@@ -50,8 +55,23 @@ export const leaderboardData = [
     profileLink: null,
   },
   {
+    reporter: 'Matthew Jiang',
+    points: 120,
+    profileLink: null,
+  },
+  {
     reporter: 'Maksim Skorikov',
     points: 108,
+    profileLink: null,
+  },
+  {
+    reporter: 'Yonathan Michalsky',
+    points: 85,
+    profileLink: null,
+  },
+  {
+    reporter: 'Yangming',
+    points: 85,
     profileLink: null,
   },
   {
@@ -65,23 +85,8 @@ export const leaderboardData = [
     profileLink: 'https://twitter.com/QiuhaoLi',
   },
   {
-    reporter: 'Yangming',
-    points: 85,
-    profileLink: null,
-  },
-  {
     reporter: 'Axt Attila',
     points: 62,
-    profileLink: null,
-  },
-  {
-    reporter: 'Yonathan Michalsky',
-    points: 85,
-    profileLink: null,
-  },
-  {
-    reporter: 'cryptowhizzard',
-    points: 15,
     profileLink: null,
   },
   {
@@ -90,13 +95,13 @@ export const leaderboardData = [
     profileLink: 'https://www.linkedin.com/in/swapnil-kothawade-813854a7/',
   },
   {
-    reporter: 'Joran Honig',
-    points: 335,
-    profileLink: 'https://x.com/joranhonig',
+    reporter: 'cryptowhizzard',
+    points: 15,
+    profileLink: null,
   },
   {
-    reporter: 'Jay Niffley',
-    points: 7,
+    reporter: 'gajnithehero',
+    points: 15,
     profileLink: null,
   },
   {
@@ -108,11 +113,6 @@ export const leaderboardData = [
     reporter: 'Anupam Singh',
     points: 13,
     profileLink: 'https://www.linkedin.com/in/anupam-singh-226463201/',
-  },
-  {
-    reporter: 'gajnithehero',
-    points: 15,
-    profileLink: null,
   },
   {
     reporter: 'Brijesh Pal',
@@ -132,6 +132,11 @@ export const leaderboardData = [
   {
     reporter: 'Patrick Ventuzelo',
     points: 8,
+    profileLink: null,
+  },
+  {
+    reporter: 'Jay Niffley',
+    points: 7,
     profileLink: null,
   },
   {
