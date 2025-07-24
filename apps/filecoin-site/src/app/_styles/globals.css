@@ -52,10 +52,6 @@
   .button {
     @apply rounded-full border-2 px-6 py-4 text-base font-medium;
 
-    &:focus {
-      @apply outline-2 outline-offset-0;
-    }
-
     &.button--primary {
       @apply relative border-transparent;
 
@@ -85,7 +81,7 @@
         }
 
         &:focus {
-          @apply outline-brand-400 transition-none;
+          @apply outline-brand-400 outline-2 outline-offset-0 transition-none;
         }
       }
 
@@ -141,7 +137,7 @@
       }
 
       &:focus {
-        @apply outline-zinc-400;
+        @apply outline-2 outline-offset-0 outline-zinc-400;
       }
 
       .light-section &,
@@ -172,6 +168,57 @@
 
         &:disabled {
           @apply bg-zinc-800 text-zinc-500;
+        }
+      }
+    }
+
+    &.button--tertiary {
+      @apply border-transparent;
+
+      .light-section & {
+        @apply text-zinc-600;
+      }
+
+      .gray-section & {
+        @apply text-zinc-950;
+      }
+
+      .light-section &,
+      .gray-section & {
+        &:not(:disabled) {
+          &:hover,
+          &:focus,
+          &.force-hover,
+          &.force-focus {
+            @apply text-zinc-950;
+          }
+        }
+
+        &:focus,
+        &.force-focus {
+          @apply decoration-brand-600 underline underline-offset-8 outline-none;
+        }
+
+        &:disabled {
+          @apply text-zinc-400;
+        }
+      }
+
+      .dark-section & {
+        @apply text-zinc-300;
+
+        &:not(:disabled) {
+          &:hover,
+          &:focus,
+          &.force-hover,
+          &.force-focus {
+            @apply bg-zinc-900 text-zinc-50;
+          }
+        }
+
+        &:focus,
+        &.force-focus {
+          @apply brand-outline;
         }
       }
     }
