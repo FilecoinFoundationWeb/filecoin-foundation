@@ -1,5 +1,5 @@
 ---
-title: Filecoin @ DevConnect 2025
+title: FIL Buenos Aires @ DevConnect 2025
 description: The Filecoin community is heading to DevConnect in Argentina!
   Connect with the ecosystem, explore the latest updates, and discover how you
   can help build the decentralized web. Stay tuned for community events and ways
@@ -13,6 +13,16 @@ location:
   region: south-america
 start-date: 2025-11-13
 end-date: 2025-11-22
+program:
+  events:
+    - title: FIL Dev Summit 7 @ DevConnect
+      start-date: 2025-11-13
+      end-date: 2025-11-15
+      location: Buenos Aires
+      description: FDS-7 is where developers, builders, storage providers, and
+        community members are coming together to solve hard problems and ship
+        solutions that will define Filecoin’s future.
+      external-link: https://www.fildev.io/FDS-7
 seo:
   description: Join Filecoin at DevConnect in Argentina! Explore ecosystem
     updates, connect with the community, and discover how you can help build the
