@@ -22,7 +22,7 @@ program:
       description: FDS-7 is where developers, builders, storage providers, and
         community members are coming together to solve hard problems and ship
         solutions that will define Filecoin’s future.
-      external-link: https://lu.ma/lql41ipv
+      external-link: https://www.fildev.io/FDS-7
 seo:
   description: Join Filecoin at DevConnect in Argentina! Explore ecosystem
     updates, connect with the community, and discover how you can help build the
