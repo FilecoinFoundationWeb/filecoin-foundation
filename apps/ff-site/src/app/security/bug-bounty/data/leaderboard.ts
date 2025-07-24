@@ -56,7 +56,7 @@ export const leaderboardData = [
   },
   {
     reporter: 'Matthew Jiang',
-    points: 120,
+    points: 170,
     profileLink: null,
   },
   {
@@ -66,7 +66,7 @@ export const leaderboardData = [
   },
   {
     reporter: 'Yonathan Michalsky',
-    points: 85,
+    points: 70,
     profileLink: null,
   },
   {
