@@ -1,5 +1,4 @@
 {
-  "packageManager": "npm@9.0.0",
   "name": "filecoin-foundation",
   "private": true,
   "workspaces": [
