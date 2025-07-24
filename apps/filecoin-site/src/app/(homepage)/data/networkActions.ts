@@ -8,7 +8,7 @@ import { PATHS } from '@/constants/paths'
 
 import type { LinkCardData } from '@/components/LinkCard'
 
-export const networkActions: LinkCardData[] = [
+export const networkActions: Array<LinkCardData> = [
   {
     title: 'Build on Filecoin',
     description:
@@ -30,4 +30,4 @@ export const networkActions: LinkCardData[] = [
     href: PATHS.OFFER_STORAGE.path,
     icon: DatabaseIcon,
   },
-] as const
+]

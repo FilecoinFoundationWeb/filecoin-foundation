@@ -192,7 +192,7 @@ export default function Learn() {
                 backgroundVariant="dark"
                 title={title}
                 href={href}
-                icon={icon}
+                icon={{ component: icon, variant: 'filled' }}
               />
             ))}
           </CardGrid>

@@ -101,7 +101,7 @@ export default function BuildOnFilecoin() {
                       title={title}
                       description={description}
                       href={href}
-                      icon={icon}
+                      icon={{ component: icon }}
                     />
                   ),
                 )}
@@ -160,7 +160,7 @@ export default function BuildOnFilecoin() {
                 title={title}
                 description={description}
                 href={href}
-                icon={icon}
+                icon={{ component: icon }}
               />
             ))}
           </CardGrid>
@@ -204,7 +204,7 @@ export default function BuildOnFilecoin() {
                   title={title}
                   description={description}
                   href={href}
-                  icon={icon}
+                  icon={{ component: icon, variant: 'filled' }}
                 />
               ))}
             </CardGrid>

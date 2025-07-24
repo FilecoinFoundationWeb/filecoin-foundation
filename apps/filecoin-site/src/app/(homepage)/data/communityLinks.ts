@@ -9,7 +9,7 @@ import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import type { LinkCardData } from '@/components/LinkCard'
 
-export const communityLinks: LinkCardData[] = [
+export const communityLinks: Array<LinkCardData> = [
   {
     title: 'Chat on Slack',
     href: FILECOIN_URLS.social.slack.href,
@@ -30,4 +30,4 @@ export const communityLinks: LinkCardData[] = [
     href: 'https://www.pldg.xyz/',
     icon: CodeIcon,
   },
-] as const
+]

@@ -6,7 +6,7 @@ import {
 
 import type { LinkCardData } from '@/components/LinkCard'
 
-export const communityConnections: LinkCardData[] = [
+export const communityConnections: Array<LinkCardData> = [
   {
     title: '#fil-builder on Slack',
     description:
@@ -28,4 +28,4 @@ export const communityConnections: LinkCardData[] = [
     href: '#',
     icon: ChatsIcon,
   },
-] as const
+]
