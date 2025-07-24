@@ -96,7 +96,7 @@ export const leaderboardData = [
   },
   {
     reporter: 'cryptowhizzard',
-    points: 15,
+    points: 16,
     profileLink: null,
   },
   {
@@ -129,7 +129,7 @@ export const leaderboardData = [
     points: 10,
     profileLink: null,
   },
-  {
+  { 
     reporter: 'Patrick Ventuzelo',
     points: 8,
     profileLink: null,
