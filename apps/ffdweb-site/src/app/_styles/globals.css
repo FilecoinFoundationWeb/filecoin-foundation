@@ -287,10 +287,6 @@
         @apply focus-visible:outline-2 focus-visible:outline-white;
       }
 
-      &:disabled {
-        @apply cursor-not-allowed;
-      }
-
       &:not(:disabled):hover {
         @apply bg-brand-primary-400;
       }

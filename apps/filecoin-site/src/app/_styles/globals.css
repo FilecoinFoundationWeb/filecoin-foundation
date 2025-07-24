@@ -314,10 +314,6 @@
     & .pagination-arrow-button {
       @apply focus:brand-outline font-medium text-zinc-600;
 
-      &:disabled {
-        @apply cursor-not-allowed;
-      }
-
       &:not(:disabled):hover {
         @apply bg-zinc-100;
       }
