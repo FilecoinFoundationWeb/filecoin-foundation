@@ -3,6 +3,7 @@ import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
@@ -84,13 +85,17 @@ export default async function Home() {
                 Explore builder's hub
               </Button>,
               <Button
-                href={PATHS.LEARN.path}
-                variant="ghost"
+                href={FILECOIN_URLS.github}
+                variant="tertiary"
                 icon={GithubLogoIcon}
               >
                 GitHub
               </Button>,
-              <Button href={PATHS.BLOG.path} variant="ghost" icon={BookIcon}>
+              <Button
+                href={FILECOIN_URLS.docs}
+                variant="tertiary"
+                icon={BookIcon}
+              >
                 Documentation
               </Button>,
             ]}
