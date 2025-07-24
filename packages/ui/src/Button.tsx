@@ -74,7 +74,7 @@ function ButtonInner({
 }: ButtonInnerProps) {
   return (
     <>
-      {!isExternalLink && Icon && (
+      {Icon && (
         <span className="button-custom-icon">
           <IconComponent component={Icon} />
         </span>

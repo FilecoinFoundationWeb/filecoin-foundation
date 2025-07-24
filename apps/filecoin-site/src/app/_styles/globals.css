@@ -99,7 +99,7 @@
 
         &:hover .button-custom-icon,
         &:focus .button-custom-icon {
-          @apply text-blue-400 transition-colors duration-200;
+          @apply text-blue-400;
         }
 
         &:disabled {
@@ -120,7 +120,7 @@
 
         &:hover .button-custom-icon,
         &:focus .button-custom-icon {
-          @apply text-blue-300 transition-colors duration-200;
+          @apply text-blue-300;
         }
 
         &:disabled {
@@ -175,32 +175,36 @@
     &.button--tertiary {
       @apply border-transparent;
 
-      .light-section & {
-        @apply text-zinc-600;
-      }
-
-      .gray-section & {
-        @apply text-zinc-950;
-      }
-
       .light-section &,
       .gray-section & {
+        @apply text-zinc-600;
+
         &:not(:disabled) {
           &:hover,
-          &:focus,
-          &.force-hover,
-          &.force-focus {
+          &:focus {
             @apply text-zinc-950;
+          }
+
+          &:hover .button-custom-icon,
+          &:focus .button-custom-icon {
+            @apply text-zinc-800;
           }
         }
 
-        &:focus,
-        &.force-focus {
+        &:focus {
           @apply decoration-brand-600 underline underline-offset-8 outline-none;
         }
 
         &:disabled {
           @apply text-zinc-400;
+        }
+
+        & .button-arrow-icon {
+          @apply text-zinc-600;
+        }
+
+        & .button-custom-icon {
+          @apply text-zinc-500;
         }
       }
 
@@ -209,16 +213,30 @@
 
         &:not(:disabled) {
           &:hover,
-          &:focus,
-          &.force-hover,
-          &.force-focus {
+          &:focus {
             @apply bg-zinc-900 text-zinc-50;
+          }
+
+          &:hover .button-custom-icon,
+          &:focus .button-custom-icon {
+            @apply text-zinc-300;
           }
         }
 
-        &:focus,
-        &.force-focus {
+        &:focus {
           @apply brand-outline;
+        }
+
+        &:disabled {
+          @apply text-zinc-500;
+        }
+
+        & .button-arrow-icon {
+          @apply text-zinc-300;
+        }
+
+        & .button-custom-icon {
+          @apply text-zinc-400;
         }
       }
     }
