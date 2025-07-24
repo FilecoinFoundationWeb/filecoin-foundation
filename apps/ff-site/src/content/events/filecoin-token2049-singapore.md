@@ -15,6 +15,18 @@ start-date: 2025-09-29
 end-date: 2025-10-03
 image:
   src: /assets/images/token2049_singapore.webp
+program:
+  title: Events
+  events:
+    - title: "Protocol Labs and Filecoin Network Hub"
+      start-date: 2025-09-29
+      end-date: 2025-10-03
+      location: "JustCo – Marina Square (6 Raffles Blvd, #03-308 Marina Square,
+        Singapore 039594)"
+    - title: "Filecoin SP Meetup"
+      start-date: 2025-09-30
+      location: "JustCo – Marina Square (6 Raffles Blvd, #03-308 Marina Square,
+        Singapore 039594)"
 seo:
   description: Meet the Filecoin community at TOKEN2049 in Singapore! Explore
     ecosystem updates, join events, and help shape the future of the
