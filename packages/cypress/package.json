@@ -18,6 +18,6 @@
     "@filecoin-foundation/typescript-config": "0.0.0"
   },
   "peerDependencies": {
-    "cypress": "^14.5.0"
+    "cypress": "^14.5.2"
   }
 }

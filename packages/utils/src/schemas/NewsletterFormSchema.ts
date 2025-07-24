@@ -2,9 +2,8 @@ import { z } from 'zod'
 
 export const NewsletterFormSchema = z.object({
   email: z
-    .string()
-    .min(1, { message: 'Your email is required' })
-    .email({ message: 'Your email format is invalid' }),
+    .email({ error: 'Your email format is invalid' })
+    .min(1, { error: 'Your email is required' }),
 })
 
 export type NewsletterFormData = z.infer<typeof NewsletterFormSchema>
