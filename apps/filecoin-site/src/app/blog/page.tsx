@@ -1,15 +1,15 @@
+import { Suspense } from 'react'
+
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
-import { CardGrid } from '@/components/CardGrid'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
-import { BlogCard } from './components/BlogCard'
-import type { BlogPost } from './types/blogPostType'
+import { BlogPostList } from './components/BlogPostList'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
 export default async function Blog() {
@@ -41,37 +41,9 @@ export default async function Blog() {
       </BackgroundImage>
 
       <PageSection backgroundVariant="light">
-        <CardGrid as="ul" variant="mdTwo">
-          {sortedPosts.map((post: BlogPost) => {
-            const {
-              title,
-              slug,
-              excerpt,
-              categories,
-              image,
-              author,
-              publishedOn,
-            } = post
-
-            return (
-              <BlogCard
-                key={title}
-                title={title}
-                slug={slug}
-                description={excerpt}
-                author={author}
-                date={publishedOn}
-                tags={categories}
-                image={
-                  image && {
-                    src: image.url,
-                    alt: title,
-                  }
-                }
-              />
-            )
-          })}
-        </CardGrid>
+        <Suspense>
+          <BlogPostList posts={sortedPosts} />
+        </Suspense>
       </PageSection>
     </>
   )

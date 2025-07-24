@@ -1,20 +1,25 @@
 'use client'
 
-import { CaretLeftIcon, CaretRightIcon, LineVerticalIcon } from '@phosphor-icons/react'
+import { Button } from '@headlessui/react'
 import { useQueryState, parseAsInteger } from 'nuqs'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
 import { DEFAULT_PAGE_NUMBER } from '@filecoin-foundation/utils/constants/paginationConstants'
 import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 
-import { useResponsiveRange } from './utils/useResponsiveRange'
+import { PaginationArrowButton } from './components/PaginationArrowButton'
+import { PaginationDelimiter } from './components/PaginationDelimiter'
+import { MAX_RANGE, useResponsiveRange } from './utils/useResponsiveRange'
 import { useVisiblePages } from './utils/useVisiblePages'
 
 type PaginationProps = {
   pageCount: number
+  numberRange?: number
 }
 
-export function Pagination({ pageCount }: PaginationProps) {
+export function Pagination({
+  pageCount,
+  numberRange = MAX_RANGE,
+}: PaginationProps) {
   const [page, setPage] = useQueryState(
     PAGE_KEY,
     parseAsInteger
@@ -22,7 +27,9 @@ export function Pagination({ pageCount }: PaginationProps) {
       .withOptions({ shallow: false }),
   )
 
-  const range = useResponsiveRange()
+  const responsiveRange = useResponsiveRange()
+  const range = Math.min(responsiveRange, numberRange)
+
   const visiblePages = useVisiblePages({ pageCount, currentPage: page, range })
 
   const canGoBack = page > 1
@@ -35,40 +42,30 @@ export function Pagination({ pageCount }: PaginationProps) {
       className="pagination flex w-full justify-between"
     >
       <div className="flex">
-        <button
-          aria-label="Go to previous page"
-          aria-disabled={!canGoBack}
+        <PaginationArrowButton
+          to="prev"
           disabled={!canGoBack}
-          className={
-            'pagination-navigation-button flex items-center gap-x-1.5 p-1 px-2 transition'
-          }
-          onClick={() => setPage(page - 1)}
-        >
-          <Icon component={CaretLeftIcon} size={20} weight="bold" />
-          <span className="hidden sm:mx-1.5 sm:inline">Prev</span>
-        </button>
-
-        <div className="pagination-delimiter flex items-center">
-          <Icon component={LineVerticalIcon} weight="light" />
-        </div>
+          pageSetter={setPage}
+        />
+        <PaginationDelimiter />
       </div>
 
-      <ul className="-mx-1 flex shrink grow justify-center gap-1">
+      <ul className="pagination-index-list flex shrink grow justify-center">
         {visiblePages.map((item, index) => (
           <li
             key={index}
-            className="h-10 w-10 md:h-9 md:w-10"
+            className="pagination-index-container"
             aria-current={item === page ? 'page' : undefined}
           >
             {typeof item === 'number' ? (
-              <button
+              <Button
                 aria-label={`Go to page ${item}`}
                 data-current={item === page}
-                className="pagination-navigation-number focus-visible:outline-2 focus-visible:outline-white"
+                className="pagination-number-button cursor-pointer"
                 onClick={() => setPage(item)}
               >
                 {item}
-              </button>
+              </Button>
             ) : (
               <span className="flex h-full w-full items-baseline justify-center">
                 <span className="mt-1.5">{item}</span>
@@ -79,20 +76,12 @@ export function Pagination({ pageCount }: PaginationProps) {
       </ul>
 
       <div className="flex">
-        <div className="pagination-delimiter flex items-center">
-          <Icon component={LineVerticalIcon} weight="light" />
-        </div>
-
-        <button
-          aria-label="Go to next page"
-          aria-disabled={!canGoForward}
+        <PaginationDelimiter />
+        <PaginationArrowButton
+          to="next"
           disabled={!canGoForward}
-          className="pagination-navigation-button flex items-center gap-x-1.5 p-1 px-2 transition"
-          onClick={() => setPage(page + 1)}
-        >
-          <span className="hidden sm:mx-1.5 sm:inline">Next</span>
-          <Icon component={CaretRightIcon} size={20} weight="bold" />
-        </button>
+          pageSetter={setPage}
+        />
       </div>
     </nav>
   )

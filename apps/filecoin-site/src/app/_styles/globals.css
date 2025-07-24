@@ -309,6 +309,45 @@
     }
   }
 
+  /* PAGINATION */
+  .pagination {
+    & .pagination-arrow-button {
+      @apply focus:brand-outline font-medium text-zinc-600;
+
+      &:disabled {
+        @apply cursor-not-allowed;
+      }
+
+      &:not(:disabled):hover {
+        @apply bg-zinc-100;
+      }
+    }
+
+    & .pagination-delimiter {
+      @apply text-zinc-950/10;
+    }
+
+    & .pagination-index-container {
+      @apply size-10;
+    }
+
+    & .pagination-index-list {
+      @apply gap-5;
+    }
+
+    & .pagination-number-button {
+      @apply focus:brand-outline h-full w-full cursor-pointer rounded-full focus:outline-offset-1;
+
+      &[data-current='true'] {
+        @apply bg-brand-800 text-white;
+      }
+
+      &[data-current='false']:hover {
+        @apply bg-brand-50;
+      }
+    }
+  }
+
   /* SECTION SUB CONTENT */
   .section-sub-content-heading-text {
     .light-section &,
