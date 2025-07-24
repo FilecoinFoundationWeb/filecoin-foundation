@@ -20,14 +20,19 @@ const { validIds: validCategoryIds } = getCMSFieldOptionsAndValidIds({
 
 const CategorySchema = createEnumSchema(validCategoryIds)
 
-export const EventFrontmatterSchema = DynamicBaseDataSchema.extend({
+const EventFrontmatterFields = {
   ...EventBaseFrontmatterSchema.shape,
   category: CategorySchema,
   location: LocationSchema,
-  'luma-calendar-link': z.string().url().optional(),
+  'luma-calendar-link': z.url().optional(),
   program: ProgramSchema.optional(),
   recap: RecapSchema.optional(),
   schedule: ScheduleSchema.optional(),
   speakers: SpeakersSchema.optional(),
   sponsors: SponsorsSchema.optional(),
-}).strict()
+}
+
+export const EventFrontmatterSchema = z.strictObject({
+  ...DynamicBaseDataSchema.shape,
+  ...EventFrontmatterFields,
+})

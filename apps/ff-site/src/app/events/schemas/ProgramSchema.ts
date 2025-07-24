@@ -3,16 +3,18 @@ import { z } from 'zod'
 import { EventBaseFrontmatterSchema } from './EventBaseFrontmatterSchema'
 
 export const ProgramSchema = z
-  .object({
+  .strictObject({
     kicker: z.string().optional().default('Explore'),
     title: z.string().optional().default('Events'),
-    events: z
-      .array(
+    events: z.tuple(
+      [
         EventBaseFrontmatterSchema.extend({
           location: z.string(),
         }),
-      )
-      .nonempty(),
+      ],
+      EventBaseFrontmatterSchema.extend({
+        location: z.string(),
+      })
+    ),
   })
-  .strict()
   .optional()

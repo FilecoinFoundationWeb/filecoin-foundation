@@ -17,11 +17,10 @@ const { validIds: validRegionIds } = getCMSFieldOptionsAndValidIds({
 const RegionSchema = createEnumSchema(validRegionIds)
 
 export const LocationSchema = z
-  .object({
+  .strictObject({
     primary: z.string(),
     region: RegionSchema.nullish(),
   })
-  .strict()
   .refine(virtualEventHasNoRegion, {
     message: 'Virtual events cannot have a region.',
     path: ['region'],

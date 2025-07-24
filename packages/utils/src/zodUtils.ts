@@ -48,7 +48,6 @@ function logZodIssues(zodError: ZodError) {
 
     if (error.code === 'invalid_type') {
       console.error(`Expected: ${error.expected}`)
-      console.error(`Received: ${error.received}`)
     }
   })
 }

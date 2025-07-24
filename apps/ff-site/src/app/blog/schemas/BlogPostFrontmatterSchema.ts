@@ -12,11 +12,16 @@ const { validIds: validCategoryIds } = getCMSFieldOptionsAndValidIds({
 
 const CategorySchema = createEnumSchema(validCategoryIds)
 
-export const BlogPostFrontmatterSchema = DynamicBaseDataSchema.extend({
+const BlogPostFields = {
   title: z.string(),
   category: CategorySchema,
   description: z.string(),
   content: z.string(),
   'add-table-of-contents': z.boolean().optional(),
-  'chinese-translation-url': z.string().url().optional(),
-}).strict()
+  'chinese-translation-url': z.url().optional(),
+}
+
+export const BlogPostFrontmatterSchema = z.strictObject({
+  ...DynamicBaseDataSchema.shape,
+  ...BlogPostFields,
+})

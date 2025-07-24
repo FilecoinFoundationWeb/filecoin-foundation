@@ -12,11 +12,16 @@ const { validIds: validCategoryIds } = getCMSFieldOptionsAndValidIds({
 
 const CategorySchema = createEnumSchema(validCategoryIds)
 
-export const ProjectFrontmatterSchema = DynamicBaseDataSchema.extend({
+const ProjectFrontmatterFields = {
   title: z.string(),
   category: CategorySchema,
   description: z.string(),
   website: z.string().optional(),
   'featured-content': z.string().optional(),
   'active-partnership': z.boolean().optional().default(false),
-}).strict()
+}
+
+export const ProjectFrontmatterSchema = z.strictObject({
+  ...DynamicBaseDataSchema.shape,
+  ...ProjectFrontmatterFields,
+})

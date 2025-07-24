@@ -6,18 +6,23 @@ import { CategorySchema } from './CategorySchemas'
 import { ProjectTechSchema } from './ProjectTechSchema'
 import { YearJoinedSchema } from './YearJoinedSchema'
 
-export const EcosystemProjectFrontmatterSchema = DynamicBaseDataSchema.extend({
+const EcosystemProjectFrontmatterFields = {
   title: z.string(),
   category: CategorySchema,
   description: z.string(),
   tech: ProjectTechSchema,
-  website: z.string().url().optional(),
-  'featured-content': z.string().url().optional(),
-  repo: z.string().url().optional(),
-  twitter: z.string().url().optional(),
-  'video-url': z.string().url().optional(),
+  website: z.url().optional(),
+  'featured-content': z.url().optional(),
+  repo: z.url().optional(),
+  twitter: z.url().optional(),
+  'video-url': z.url().optional(),
   'year-joined': YearJoinedSchema.optional(),
   content: z.string().optional(),
   email: z.string(),
   'full-name': z.string(),
-}).strict()
+}
+
+export const EcosystemProjectFrontmatterSchema = z.strictObject({
+  ...DynamicBaseDataSchema.shape,
+  ...EcosystemProjectFrontmatterFields,
+})

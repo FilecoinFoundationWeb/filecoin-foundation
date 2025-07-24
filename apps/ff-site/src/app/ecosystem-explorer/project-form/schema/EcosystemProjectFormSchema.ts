@@ -3,7 +3,6 @@ import { z } from 'zod'
 
 import type { OptionType } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 
-
 import {
   BRIEF_CHARACTER_LIMIT,
   DESCRIPTION_CHARACTER_LIMIT,
@@ -14,7 +13,7 @@ import {
   YOUTUBE_BASE_URL,
 } from '../constants'
 
-const invalidUrlMessage = { message: 'Invalid URL format' } as const
+const invalidUrlMessage = { error: 'Invalid URL format' } as const
 
 const EmptyStringSchema = z.literal('')
 
@@ -24,50 +23,48 @@ const OptionSchema = z
     name: z.string(),
   })
   .refine(validateListboxSelected, {
-    message: 'Please select an option',
+    error: 'Please select an option',
   })
 
 export const EcosystemProjectFormSchema = z.object({
-  name: z.string().min(1, { message: 'Your name is required' }),
+  name: z.string().min(1, { error: 'Your name is required' }),
   email: z
-    .string()
-    .min(1, { message: 'Your email is required' })
-    .email({ message: 'The email format is invalid' }),
-  title: z.string().min(1, { message: 'Your project name is required' }),
+    .email({ error: 'The email format is invalid' })
+    .min(1, { error: 'Your email is required' }),
+  title: z.string().min(1, { error: 'Your project name is required' }),
   tech: z
     .object({
       filecoin: z.boolean(),
       ipfs: z.boolean(),
     })
     .refine(validateOneTechSelected, {
-      message: 'Select at least one technology',
+      error: 'Select at least one technology',
       path: ['root'],
     }),
   yearJoined: OptionSchema,
   briefSummary: z
     .string()
-    .min(1, { message: 'The brief summary is required' })
-    .max(BRIEF_CHARACTER_LIMIT.max, { message: 'The summary is too long' }),
+    .min(1, { error: 'The brief summary is required' })
+    .max(BRIEF_CHARACTER_LIMIT.max, { error: 'The summary is too long' }),
   networkUseCase: z
     .string()
     .min(DESCRIPTION_CHARACTER_LIMIT.min, {
-      message: 'The description is too short',
+      error: 'The description is too short',
     })
     .max(DESCRIPTION_CHARACTER_LIMIT.max, {
-      message: 'The description is too long',
+      error: 'The description is too long',
     }),
   category: OptionSchema,
   logo: z
-    .instanceof(File, { message: 'A logo is required' })
+    .instanceof(File, { error: 'A logo is required' })
     .refine(validateFileSize, {
-      message: `Logo size exceeds the limit of ${prettyBytes(MAX_FILE_SIZE_IN_BYTES)}`,
+      error: `Logo size exceeds the limit of ${prettyBytes(MAX_FILE_SIZE_IN_BYTES)}`,
     }),
-  websiteUrl: z.string().url({ message: 'Invalid website URL' }),
+  websiteUrl: z.url({ error: 'Invalid website URL' }),
   youtubeUrl: z
-    .string()
     .url(invalidUrlMessage)
     .refine(validateYoutubeUrlFormat, {
-      message: `URL must start with ${YOUTUBE_BASE_URL}`,
+      error: `URL must start with ${YOUTUBE_BASE_URL}`,
     })
     .optional()
     .or(EmptyStringSchema),
@@ -75,15 +72,14 @@ export const EcosystemProjectFormSchema = z.object({
     .string()
     .url(invalidUrlMessage)
     .refine(validateGithubUrlFormat, {
-      message: `URL must start with ${GITHUB_BASE_URL}`,
+      error: `URL must start with ${GITHUB_BASE_URL}`,
     })
     .optional()
     .or(EmptyStringSchema),
   xUrl: z
-    .string()
     .url(invalidUrlMessage)
     .refine(validateXUrlFormat, {
-      message: `URL must start with ${X_BASE_URL} or ${TWITTER_BASE_URL}`,
+      error: `URL must start with ${X_BASE_URL} or ${TWITTER_BASE_URL}`,
     })
     .optional()
     .or(EmptyStringSchema),

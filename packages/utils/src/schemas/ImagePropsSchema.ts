@@ -1,8 +1,6 @@
 import { z } from 'zod'
 
-export const ImagePropsSchema = z
-  .object({
-    src: z.string(),
-    alt: z.string().optional(),
-  })
-  .strict()
+export const ImagePropsSchema = z.strictObject({
+  src: z.string(),
+  alt: z.string().optional(),
+})

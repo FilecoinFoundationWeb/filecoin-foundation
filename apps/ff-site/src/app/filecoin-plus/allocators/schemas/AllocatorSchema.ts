@@ -31,16 +31,16 @@ const AllocatorFileMetaDataBaseSchema = z.object({
   path: z.string(),
   sha: z.string(),
   size: z.number(),
-  url: z.string().url(),
-  html_url: z.string().url(),
-  git_url: z.string().url(),
-  download_url: z.string().url(),
+  url: z.url(),
+  html_url: z.url(),
+  git_url: z.url(),
+  download_url: z.url(),
   type: z.enum(['file']),
   _links: z
     .object({
-      self: z.string().url(),
-      git: z.string().url(),
-      html: z.string().url(),
+      self: z.url(),
+      git: z.url(),
+      html: z.url(),
     })
     .optional(),
 })
