@@ -18,12 +18,12 @@ image:
 program:
   title: Events
   events:
-    - title: "Protocol Labs and Filecoin Network Hub "
+    - title: "Protocol Labs and Filecoin Network Hub"
       start-date: 2025-09-29
       end-date: 2025-10-03
       location: "JustCo – Marina Square (6 Raffles Blvd, #03-308 Marina Square,
         Singapore 039594)"
-    - title: "Filecoin SP Meetup "
+    - title: "Filecoin SP Meetup"
       start-date: 2025-09-30
       location: "JustCo – Marina Square (6 Raffles Blvd, #03-308 Marina Square,
         Singapore 039594)"
