@@ -1,5 +1,5 @@
 ---
-title: Filecoin @ DevConnect 2025
+title: FIL Buenos Aires @ DevConnect 2025
 description: The Filecoin community is heading to DevConnect in Argentina!
   Connect with the ecosystem, explore the latest updates, and discover how you
   can help build the decentralized web. Stay tuned for community events and ways
