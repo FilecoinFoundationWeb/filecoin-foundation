@@ -13,6 +13,8 @@ import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
+import { SimpleCardWithGradient } from '@/components/SimpleCardWithGradient'
+import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { blockExplorers } from './data/blockExplorers'
 import { communityConnections } from './data/communityConnections'
@@ -72,15 +74,13 @@ export default function BuildOnFilecoin() {
             <CardGrid as="ul" variant="smTwoLgThree">
               {filecoinTools.map(
                 ({ title, description, difficulty, cta }, index) => (
-                  <SimpleCard
+                  <SimpleCardWithGradient
                     key={title}
                     title={title}
                     description={description}
                     cta={cta}
-                    gradientHeaderAndBadge={{
-                      gradientIndex: index,
-                      badgeText: difficulty,
-                    }}
+                    badge={difficulty}
+                    gradientIndex={index}
                   />
                 ),
               )}
@@ -120,6 +120,7 @@ export default function BuildOnFilecoin() {
               {blockExplorers.map(({ title, description, cta }) => (
                 <SimpleCard
                   key={title}
+                  as="li"
                   title={title}
                   description={description}
                   cta={cta}
@@ -174,12 +175,13 @@ export default function BuildOnFilecoin() {
             ecosystem."
         >
           <CardGrid as="ul" variant="lgTwo">
-            {communityHubs.map(({ title, description, cta }) => (
-              <SimpleCard
+            {communityHubs.map(({ title, description, cta, logo }) => (
+              <SimpleCardWithLogo
                 key={title}
                 title={title}
                 description={description}
                 cta={cta}
+                logo={logo}
               />
             ))}
           </CardGrid>

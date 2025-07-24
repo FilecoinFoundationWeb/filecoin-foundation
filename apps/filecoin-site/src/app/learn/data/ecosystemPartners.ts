@@ -93,4 +93,4 @@ export const ecosystemPartners: Array<SimpleCardData> = [
       text: CTA_TEXT,
     },
   },
-] as const
+]

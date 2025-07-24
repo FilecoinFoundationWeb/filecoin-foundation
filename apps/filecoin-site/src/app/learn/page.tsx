@@ -14,6 +14,7 @@ import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
+import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
@@ -24,6 +25,8 @@ import { filecoinStackFeatures } from './data/filecoinStackFeatures'
 import { filecoinStorageFlow } from './data/filecoinStorageFlow'
 import { filecoinValues } from './data/filecoinValues'
 import { resilientInternetCta } from './data/resilientInternetCta'
+
+import DummyLogo from '@/assets/logos/filecoin-foundation-icon-logo.svg'
 
 export default function Learn() {
   return (
@@ -61,11 +64,17 @@ export default function Learn() {
 
           <CardGrid as="ul" variant="lgTwo">
             {ecosystemPartners.map(({ title, description, cta }) => (
-              <SimpleCard
+              <SimpleCardWithLogo
                 key={title}
                 title={title}
                 description={description}
                 cta={cta}
+                logo={{
+                  type: 'svg',
+                  src: DummyLogo,
+                  bgColor: '#353535',
+                  color: '#fff',
+                }}
               />
             ))}
           </CardGrid>
@@ -126,7 +135,8 @@ export default function Learn() {
               {filecoinParticipants.map(({ title, description, cta }) => (
                 <SimpleCard
                   key={title}
-                  hasTopBorder
+                  as="li"
+                  border="only-top"
                   title={title}
                   description={description}
                   cta={cta}
@@ -144,6 +154,7 @@ export default function Learn() {
             {filecoinStackFeatures.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
+                as="li"
                 title={title}
                 description={description}
                 cta={cta}

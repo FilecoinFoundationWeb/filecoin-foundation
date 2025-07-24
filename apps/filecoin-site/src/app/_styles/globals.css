@@ -182,6 +182,17 @@
     @apply border border-zinc-200;
   }
 
+  .card-border-color {
+    .light-section &,
+    .gray-section & {
+      @apply border-zinc-950/15;
+    }
+
+    .dark-section & {
+      @apply border-zinc-50/15;
+    }
+  }
+
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
     @apply icon-button;
@@ -189,7 +200,28 @@
 
   /* CTALINK */
   .cta-link {
-    @apply text-zinc-600;
+    .light-section &,
+    .gray-section & {
+      @apply text-zinc-600;
+    }
+
+    .dark-section & {
+      @apply text-zinc-300;
+    }
+  }
+
+  /* LOGO SECTION */
+  .logo-section-logo-item {
+    @apply text-zinc-400 transition-colors duration-200;
+
+    .dark-section & {
+      @apply hover:text-zinc-50;
+    }
+
+    .light-section &,
+    .gray-section & {
+      @apply hover:opacity-80;
+    }
   }
 
   /* NAVIGATION */
@@ -287,17 +319,15 @@
     }
   }
 
-  /* LOGO SECTION */
-  .logo-section-logo-item {
-    @apply text-zinc-400 transition-colors duration-200;
-
-    .dark-section & {
-      @apply hover:text-zinc-50;
-    }
-
+  /* SIMPLE CARD */
+  .simple-card-description-text {
     .light-section &,
     .gray-section & {
-      @apply hover:opacity-80;
+      @apply text-zinc-600;
+    }
+
+    .dark-section & {
+      @apply text-zinc-400;
     }
   }
 

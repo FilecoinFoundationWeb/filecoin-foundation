@@ -134,7 +134,8 @@ export default function OfferStorage() {
             {filecoinEarningsInsights.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
-                hasTopBorder
+                as="li"
+                border="only-top"
                 title={title}
                 description={description}
                 cta={cta}
