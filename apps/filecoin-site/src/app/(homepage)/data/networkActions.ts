@@ -12,7 +12,7 @@ export const networkActions: Array<LinkCardData> = [
   {
     title: 'Build on Filecoin',
     description:
-      'Learn how to store AI data, deploy dApps, and integrate smart contracts with guides, tools, and a growing dev community.',
+      'Learn how to backup AI models, deploy dApps, integrate smart contracts, and more.',
     href: PATHS.BUILD_ON_FILECOIN.path,
     icon: BracketsAngleIcon,
   },

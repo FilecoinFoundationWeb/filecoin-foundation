@@ -24,7 +24,7 @@ export const blockExplorers: Array<SimpleCardData> = [
     description: 'EVM-compatible explorer to view smart contracts activity.',
     cta: {
       href: 'https://filecoin.blockscout.com/',
-      text: 'Visit Blockscout (FEVM)',
+      text: 'Visit Blockscout',
     },
   },
   {

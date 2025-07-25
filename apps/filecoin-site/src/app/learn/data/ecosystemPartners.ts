@@ -33,7 +33,7 @@ export const ecosystemPartners: Array<SimpleCardData> = [
   {
     title: 'Smithsonian',
     description:
-      'The Smithsonian’s National Museum of American History is working to upload nearly 300 digitized sound recordings from Alexander Graham Bell to the InterPlanetary File System (IPFS) and Filecoin.',
+      "The Smithsonian's National Museum of American History is working to upload nearly 300 digitized sound recordings from Alexander Graham Bell to the InterPlanetary File System (IPFS) and Filecoin.",
     cta: {
       href: 'https://www.si.edu/',
       text: CTA_TEXT,
@@ -78,7 +78,7 @@ export const ecosystemPartners: Array<SimpleCardData> = [
   {
     title: 'MIT Open Learning',
     description:
-      'MIT Open Learning has uploaded the entire OpenCourseWare (OCW) archive to the Filecoin network, to support the institution’s need for tamper-proof archiving.',
+      "MIT Open Learning has uploaded the entire OpenCourseWare (OCW) archive to the Filecoin network, to support the institution's need for tamper-proof archiving.",
     cta: {
       href: 'https://openlearning.mit.edu/',
       text: CTA_TEXT,

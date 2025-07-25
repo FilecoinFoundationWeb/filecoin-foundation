@@ -7,12 +7,12 @@ export const providerBenefits: ProviderBenefit[] = [
   {
     title: 'Tap into global demand',
     description:
-      'Connect with global clients seeking blockchain-based, permissionless storage — powering AI, crypto innovation, media organizations, scientific research, and more.',
+      'Connect with global clients seeking blockchain-based, permissionless storage that is powering the future of AI, crypto innovation, and more.',
   },
   {
     title: 'Diversify revenue streams',
     description:
-      'Earn from both storage and retrieval deals — turning idle capacity and hardware into income in an ecosystem built for the future.',
+      'Earn from both storage and retrieval deals, turning idle capacity and hardware into income in an ecosystem built for the future.',
   },
   {
     title: 'Scale on your terms',

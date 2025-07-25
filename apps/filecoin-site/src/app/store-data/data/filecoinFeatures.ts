@@ -17,7 +17,7 @@ export const filecoinFeatures: Array<CardData> = [
   {
     title: 'Compliance',
     description:
-      'Meet enterprise and industry requirements with storage providers that adhere to leading standards—including SOC 2 compliance and Tier III data center certifications.',
+      'Meet enterprise and industry requirements with storage providers that adhere to leading standards, including SOC 2 compliance and Tier III data center certifications.',
     icon: CertificateIcon,
   },
   {
@@ -29,7 +29,7 @@ export const filecoinFeatures: Array<CardData> = [
   {
     title: 'Infinitely  scalable for big data',
     description:
-      'Filecoin’s decentralized infrastructure supports exabyte-scale datasets, high-throughput workloads, and long-term archival—with built-in redundancy and global distribution.',
+      "Filecoin's decentralized infrastructure supports exabyte-scale datasets, high-throughput workloads, and long-term archival with built-in redundancy and global distribution.",
     icon: GlobeHemisphereWestIcon,
   },
-] as const
+]

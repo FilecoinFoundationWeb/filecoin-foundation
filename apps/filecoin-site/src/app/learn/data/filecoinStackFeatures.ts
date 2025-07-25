@@ -1,3 +1,5 @@
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
+
 import type { SimpleCardData } from '@/components/SimpleCard'
 
 const CTA_TEXT = 'Learn more'
@@ -8,7 +10,7 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
     description:
       'Proves that a storage provider has created a unique copy of data.',
     cta: {
-      href: '#',
+      href: `${FILECOIN_URLS.docs}basics/the-blockchain/proofs#proof-of-replication-porep`,
       text: CTA_TEXT,
     },
   },
@@ -17,7 +19,7 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
     description:
       'Verifies that the unique copy of data remains unchanged over time, with continuous proofs submitted to the network.',
     cta: {
-      href: '#',
+      href: `${FILECOIN_URLS.docs}basics/the-blockchain/proofs#proof-of-spacetime-post#`,
       text: CTA_TEXT,
     },
   },
@@ -26,7 +28,7 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
     description:
       'Allows a client to check that data is held by a provider, without needing to retrieve the entire file.',
     cta: {
-      href: '#',
+      href: '#todo',
       text: CTA_TEXT,
     },
   },
@@ -35,7 +37,7 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
     description:
       'Brings smart contracts and programmability to the newtwork, enabling custom logic and decentralized apps',
     cta: {
-      href: '#',
+      href: `${FILECOIN_URLS.docs}smart-contracts/fundamentals/the-fvm`,
       text: CTA_TEXT,
     },
   },
@@ -44,7 +46,7 @@ export const filecoinStackFeatures: Array<SimpleCardData> = [
     description:
       'An incentive system that aims to increase the amount of useful data stored on the Filecoin network.',
     cta: {
-      href: '#',
+      href: `${FILECOIN_URLS.docs}basics/how-storage-works/filecoin-plus`,
       text: CTA_TEXT,
     },
   },

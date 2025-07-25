@@ -1,3 +1,5 @@
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
@@ -18,8 +20,8 @@ import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { blockExplorers } from './data/blockExplorers'
 import { communityConnections } from './data/communityConnections'
-import { communityHubs } from './data/communityHubs'
 import { developerResources } from './data/developerResources'
+import { ecosystemResources } from './data/ecosystemResources'
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { filecoinTools } from './data/filecoinTools'
 import { getInvolvedOptions } from './data/getInvolvedOptions'
@@ -37,7 +39,7 @@ export default function BuildOnFilecoin() {
             title="Build on Filecoin: open, scalable, verifiable storage"
             description="Filecoin is a programmable, permissionless storage network with cryptographic verification and global redundancy by design. Integrate storage that safeguards data integrity at every layer and scales with your application's needs."
             cta={
-              <Button href="" variant="primary">
+              <Button href={FILECOIN_URLS.docs} variant="primary">
                 Explore documentation
               </Button>
             }
@@ -115,6 +117,11 @@ export default function BuildOnFilecoin() {
             headingTag="h3"
             title="Block explorers"
             description="Track transactions, contracts, and onchain activity with Filecoin-compatible block explorers."
+            cta={
+              <Button href="#todo" variant="primary">
+                Submit block explorer
+              </Button>
+            }
           >
             <CardGrid as="ul" variant="smTwoLgThree">
               {blockExplorers.map(({ title, description, cta }) => (
@@ -134,10 +141,10 @@ export default function BuildOnFilecoin() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Explore the ecosystem"
-          description="Visit the Ecosystem Explorer to discover Filecoin projects, get inspired by what others are building, and find your place in the Filecoin ecosystem."
+          description="Visit Filecoin Foundation's Ecosystem Explorer to discover Filecoin projects, get inspired by what others are building, and find your place in the Filecoin ecosystem."
           cta={
             <Button href="https://fil.org/ecosystem-explorer" variant="primary">
-              Visit Filecoin Foundation's ecosystem explorer
+              Visit ecosystem explorer
             </Button>
           }
         />
@@ -169,13 +176,11 @@ export default function BuildOnFilecoin() {
 
       <PageSection backgroundVariant="light">
         <SectionContent
-          title="Community hubs"
-          description="Filecoin is open-source and community-driven. Explore groups
-            advancing the protocol and building the tools that power its
-            ecosystem."
+          title="Ecosystem resources"
+          description="Filecoin is open-source and community-driven. Explore groups advancing the protocol and building the tools that power its ecosystem."
         >
           <CardGrid as="ul" variant="lgTwo">
-            {communityHubs.map(({ title, description, cta, logo }) => (
+            {ecosystemResources.map(({ title, description, cta, logo }) => (
               <SimpleCardWithLogo
                 key={title}
                 title={title}

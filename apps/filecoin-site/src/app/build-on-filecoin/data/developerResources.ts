@@ -5,6 +5,8 @@ import {
   PlugIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
+
 import type { LinkCardData } from '@/components/LinkCard'
 
 export const developerResources: Array<LinkCardData> = [
@@ -12,27 +14,27 @@ export const developerResources: Array<LinkCardData> = [
     title: 'testFIL Faucet',
     description:
       'Instantly access test tokens for development and experimentation.',
-    href: '#',
+    href: 'https://faucet.calibnet.chainsafe-fil.io/',
     icon: DropIcon,
   },
   {
     title: 'Filecoin.sol',
     description:
       'Solidity libraries for integration with the Filecoin Virtual Machine.',
-    href: 'https://docs.filecoin.io/smart-contracts/developing-contracts/filecoin.sol',
+    href: `${FILECOIN_URLS.docs}smart-contracts/developing-contracts/filecoin.sol`,
     icon: BracketsCurlyIcon,
   },
   {
     title: 'RPC Endpoints',
     description:
       'Reliable endpoints for connecting your dApps to the Filecoin network.',
-    href: 'https://docs.filecoin.io/networks/calibration/rpcs',
+    href: `${FILECOIN_URLS.docs}networks/mainnet/rpcs`,
     icon: PlugIcon,
   },
   {
     title: 'Documentation',
     description: 'Comprehensive guides and tutorials to build on Filecoin.',
-    href: 'https://docs.filecoin.io/',
+    href: FILECOIN_URLS.docs,
     icon: BookIcon,
   },
 ]

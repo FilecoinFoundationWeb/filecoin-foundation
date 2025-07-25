@@ -1,4 +1,5 @@
 import { clsx } from 'clsx'
+import slugify from 'slugify'
 
 import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
 import { Heading, type HeadingProps } from '@/components/Heading'
@@ -19,7 +20,7 @@ export function SectionContent({
   centerCTA,
 }: SectionContentProps) {
   return (
-    <div>
+    <div id={slugify(title.toString(), { lower: true })}>
       <div className="max-w-3xl">
         <Heading tag="h2" variant="6xl-medium">
           {title}

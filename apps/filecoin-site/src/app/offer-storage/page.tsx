@@ -1,3 +1,6 @@
+import { PATHS } from '@/constants/paths'
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
@@ -31,8 +34,11 @@ export default function OfferStorage() {
             title="Power the world's largest decentralized storage network"
             description="Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important information."
             cta={
-              <Button href="" variant="primary">
-                Check requirements
+              <Button
+                href={`${FILECOIN_URLS.docs}storage-providers/basics`}
+                variant="primary"
+              >
+                Explore documentation
               </Button>
             }
           />
@@ -118,8 +124,11 @@ export default function OfferStorage() {
           title="Begin your storage provider journey"
           description="If you already operate enterprise-grade infrastructure—or plan to—Filecoin offers a scalable path to meaningful, global impact."
           cta={
-            <Button href="" variant="primary">
-              Book a call with storage providers' onboarding team
+            <Button
+              href={PATHS.OFFER_STORAGE_ONBOARDING.path}
+              variant="primary"
+            >
+              Book a call with the onboarding team
             </Button>
           }
         />
@@ -127,7 +136,7 @@ export default function OfferStorage() {
 
       <PageSection backgroundVariant="light">
         <SectionContent
-          title="Create long-term value"
+          title="Optimize your storage potential"
           description="The Filecoin Network rewards storage providers through a self-sustaining marketplace designed for long-term commitment and resilience."
         >
           <CardGrid as="ul" variant="smTwoLgThreeWider">
@@ -150,8 +159,11 @@ export default function OfferStorage() {
           title="Empower a more open and resilient web"
           description="As a Filecoin storage provider, you'll empower independent infrastructure, protect critical data without relying on centralized tech giants, and unlock new revenue streams—all while helping build a more open, resilient, and censorship-resistant internet."
           cta={
-            <Button href="" variant="primary">
-              Book a call with storage providers' onboarding team
+            <Button
+              href={PATHS.OFFER_STORAGE_ONBOARDING.path}
+              variant="primary"
+            >
+              Book a call with the onboarding team
             </Button>
           }
         />

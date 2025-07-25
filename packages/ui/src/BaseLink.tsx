@@ -6,7 +6,6 @@ import Link from 'next/link'
 
 import { isInternalLink } from '@filecoin-foundation/utils/linkUtils'
 
-
 export type BaseLinkProps = {
   href: string | Route
   baseDomain: string
