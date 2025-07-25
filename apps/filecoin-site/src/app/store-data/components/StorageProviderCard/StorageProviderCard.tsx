@@ -10,6 +10,7 @@ export type StorageProviderCardProps = {
   description: string
   bestFor: Array<string>
   keyFeatures: Array<string>
+  url: string
 }
 
 export function StorageProviderCard({
@@ -17,6 +18,7 @@ export function StorageProviderCard({
   description,
   bestFor,
   keyFeatures,
+  url,
 }: StorageProviderCardProps) {
   return (
     <li>
@@ -56,7 +58,7 @@ export function StorageProviderCard({
           </StorageProviderCardSection>
         </div>
 
-        <Button href="#" variant="ghost" className="mt-20 w-full">
+        <Button href={url} variant="ghost" className="mt-20 w-full">
           Visit {name}'s website
         </Button>
       </article>
