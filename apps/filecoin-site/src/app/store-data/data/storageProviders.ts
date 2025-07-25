@@ -4,242 +4,157 @@ import type { StorageKey } from './storageCategories'
 
 type StorageProvider = Pick<
   StorageProviderCardProps,
-  'name' | 'description' | 'bestFor' | 'keyFeatures'
+  'name' | 'description' | 'keyFeatures' | 'url'
 > & {
+  bestFor: Array<BestForType>
   category: StorageKey
 }
+
+type BestForType = 'S3Cloud' | 'Backup' | 'Archival'
 
 export const storageProviders = [
   {
     name: 'Akave',
     category: 's3-compatible',
     description:
-      'Akave is the first L2 storage chain, enabling on-chain data lakes for scalable and decentralized AI.',
-    bestFor: ['AI', 'Data Lakes', 'Decentralized Storage'],
-    keyFeatures: [
-      'On-chain Data Lakes',
-      'Scalable Storage',
-      'Decentralized AI',
-    ],
+      'Akave is a protocol that enables businesses and users with a decentralized storage layer and data management tools to efficiently manage on-chain data lakes.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://www.akave.ai/',
+  },
+  {
+    name: 'ChainSafe Storage',
+    category: 'nft',
+    description:
+      'ChainSafe Storage makes it easy to store and retrieve files on decentralized networks like IPFS and Filecoin. It offers a simple, secure, and reliable way for developers and teams to manage data without relying on centralized providers.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://storage.chainsafe.io/',
   },
   {
     name: 'CID Gravity',
+    category: 'backup-recovery',
+    description:
+      'A polished, enterprise-grade gateway that simplifies storage on IPFS and Filecoin built for businesses, independent software vendors (ISVs), and storage providers who want powerful tools.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://www.cidgravity.com/',
+  },
+  {
+    name: 'Dcent',
+    category: 'archival',
+    description:
+      'DCENT offers high-performance, eco-friendly decentralized storage and edge compute services in Europe, with top-tier hardware and green-certified infrastructure.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://dcent.nl/',
+  },
+  {
+    name: 'Fileverse',
+    category: 'drag-drop',
+    description:
+      'Fileverse is a privacy-first, peer-to-peer collaboration platform that replaces tools like Google Workspace and Notion with fully decentralized workspaces. It’s built on IPFS, Arweave, and blockchain smart contracts—so you stay in control of your data.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://fileverse.io/',
+  },
+  {
+    name: 'Filedrive Labs',
     category: 's3-compatible',
     description:
-      'CID Gravity is a marketplace streamlining enterprise and ISV data onboarding onto Filecoin, providing a cost-effective and automated pathway using a zero-knowledge solution.',
-    bestFor: ['Enterprise', 'ISV', 'Data Onboarding'],
-    keyFeatures: [
-      'Cost-Effective',
-      'Automated Onboarding',
-      'Zero-Knowledge Solution',
-    ],
+      'FileDrive connects publishers of large datasets—like researchers and open-data platforms—with the Filecoin storage network, offering an easy path from raw data to decentralized storage with reliability, scalability, and speed.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://filedrive.io/',
+  },
+  {
+    name: 'FileMarket',
+    category: 'nft',
+    description:
+      'FileMarket.xyz is a Web3 platform that lets creators tokenize, sell, share, and manage digital files securely using blockchain and decentralized storage. Files are minted as Encrypted FileTokens (EFTs), stored on Filecoin via IPFS, and exchanged with full encryption and programmable access control.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://filemarket.xyz/',
+  },
+  {
+    name: 'Future Tech Holdings Inc.',
+    category: 'backup-recovery',
+    description:
+      'FTH delivers enterprise-grade decentralized cloud services—combining high-speed compute and resilient storage built on Web3 infrastructure. Perfect for startups and developers aiming to scale smart applications quickly and securely.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://future-tech-holdings.com/',
+  },
+  {
+    name: 'Holon',
+    category: 'archival',
+    description:
+      'Holon delivers sustainable, enterprise-grade decentralized storage and edge compute powered by Filecoin. With green energy, verifiable infrastructure, and regional presence across Asia-Pacific and the UAE, Holon blends performance with environmental stewardship.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://holon.investments/',
   },
   {
     name: 'Lighthouse',
-    category: 'nft',
+    category: 'drag-drop',
     description:
-      'Lighthouse is a platform for storing and retrieving data on the Filecoin network, with a focus on NFTs and Web3 applications.',
-    bestFor: ['NFTs', 'Web3 Applications', 'Data Storage'],
-    keyFeatures: ['NFT Storage', 'Web3 Applications', 'Decentralized Storage'],
+      'Akave is a protocol that enables businesses and users with a decentralized storage layer and data management tools to efficiently manage on-chain data lakes. ',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://www.lighthouse.storage/',
   },
   {
-    name: 'GhostDrive',
+    name: 'ND Labs',
+    category: 's3-compatible',
+    description:
+      'ND Labs is a global Web3 technology and decentralized storage services provider, specializing in building blockchain-based infrastructure—including Filecoin‑backed data systems—for enterprise and metaverse use cases. With a presence in Singapore, Poland, Hong Kong, the US, and Dubai, they support businesses worldwide.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://www.ndlabs.io/',
+  },
+  {
+    name: 'Nebula Block',
+    category: 'nft',
+    description:
+      'Nebula Block is a leading Web3 infrastructure provider, offering global GPU hosting, decentralized storage, and turnkey data‑center solutions. They’ve been a major Filecoin ecosystem participant in North America since 2020 and operate across four data centers with over 700 PiB of storage and more than 3,000 servers.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://www.nebulablock.com/',
+  },
+  {
+    name: 'Swan',
     category: 'backup-recovery',
     description:
-      'GhostDrive is a data storage platform prioritizing privacy and security through encryption, decentralization, and novel storage optimization techniques.',
-    bestFor: ['Privacy', 'Security', 'Decentralized Storage'],
-    keyFeatures: [
-      'Client-Side Encryption',
-      'Decentralized Storage',
-      'Storage Optimization',
-    ],
+      'A decentralized AI and computing marketplace built on an Ethereum-compatible Layer 2 (using OP Stack). Swan Chain combines storage, computing, bandwidth, and payments into one seamless platform—designed to make AI and Web3 infrastructure accessible, efficient, and scalable.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://www.swanchain.io/',
+  },
+  {
+    name: 'Titan Network',
+    category: 'archival',
+    description:
+      'Titan Network is a Web3 infrastructure platform that transforms spare storage, compute, and bandwidth on everyday devices into a decentralized, enterprise-grade cloud service built on Filecoin. Over 650,000 nodes across 21+ countries are already in the network, supporting global clients like TikTok, Tencent, Bilibili, NetEase, iQIYI, and Volcengine.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://www.titannet.io/',
   },
   {
     name: 'Storacha',
-    category: 'archival',
-    description:
-      'Storacha is a decentralized hot data storage and retrieval system built on the Filecoin network, optimized for large-scale data on the open web.',
-    bestFor: ['Hot Storage', 'Large-Scale Data', 'Open Web'],
-    keyFeatures: ['Hot Storage', 'Large-Scale Data', 'Open Web'],
-  },
-  {
-    name: 'Web3.Storage',
     category: 'drag-drop',
     description:
-      'Web3.Storage is a suite of APIs and services for developers and storage clients to interact with data that’s not physically stored.',
-    bestFor: ['Drag & Drop', 'Ease of Use', 'Web3 Applications'],
-    keyFeatures: ['Drag & Drop', 'Ease of Use', 'Web3 Applications'],
+      'Storacha is a next-generation storage network built by Protocol Labs. It offers fast, decentralized “hot” storage combined with the long-term durability of Filecoin—ideal for applications that need both instant access and blockchain-grade verifiable backup.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://storacha.network/',
   },
   {
-    name: 'IPFS Desktop',
-    category: 'drag-drop',
-    description:
-      'IPFS Desktop is a desktop application for managing and interacting with IPFS data.',
-    bestFor: ['Drag & Drop', 'Ease of Use', 'IPFS'],
-    keyFeatures: ['Drag & Drop', 'Ease of Use', 'IPFS'],
-  },
-  {
-    name: 'FilSwan',
+    name: 'RAMO',
     category: 's3-compatible',
     description:
-      'FilSwan is a storage provider that specializes in edge data and goes to great lengths to bring data closer to the data source.',
-    bestFor: ['Edge Data', 'Data Closer to Source', 'S3 Compatibility'],
-    keyFeatures: ['Edge Data', 'Data Closer to Source', 'S3 Compatibility'],
-  },
-  {
-    name: 'Estuary',
-    category: 'archival',
-    description:
-      'Estuary is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'Spheron',
-    category: 'backup-recovery',
-    description:
-      'Spheron is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'Chainsafe Storage',
-    category: 'backup-recovery',
-    description:
-      'Chainsafe Storage is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'Pinata',
-    category: 'nft',
-    description:
-      'Pinata is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'NFT.Storage',
-    category: 'nft',
-    description:
-      'NFT.Storage is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'Fleek',
-    category: 'drag-drop',
-    description:
-      'Fleek is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'ThirdWeb Storage',
-    category: 'nft',
-    description:
-      'ThirdWeb Storage is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'Moralis IPFS',
-    category: 'nft',
-    description:
-      'Moralis IPFS is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'Textile Buckets',
-    category: 's3-compatible',
-    description:
-      'Textile Buckets is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'Temporal',
-    category: 'archival',
-    description:
-      'Temporal is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'Infura IPFS',
-    category: 's3-compatible',
-    description:
-      'Infura IPFS is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'ChainStack Storage',
-    category: 'backup-recovery',
-    description:
-      'ChainStack Storage is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'Storj DCS',
-    category: 's3-compatible',
-    description:
-      'Storj DCS is a data storage platform that provides a simple and easy-to-use interface for developers to store and retrieve data on the Filecoin network.',
-    bestFor: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-    keyFeatures: ['Ease of Use', 'Developer-Friendly', 'Data Storage'],
-  },
-  {
-    name: 'Arweave Deploy',
-    category: 'archival',
-    description:
-      'Arweave Deploy provides permanent, immutable storage solutions with a focus on long-term data preservation and decentralized archival services.',
-    bestFor: ['Permanent Storage', 'Data Archival', 'Immutable Records'],
-    keyFeatures: [
-      'Permanent Storage',
-      'Immutable Data',
-      'Decentralized Archive',
-    ],
-  },
-  {
-    name: 'Bundlr Network',
-    category: 'archival',
-    description:
-      'Bundlr Network is a decentralized storage network that enables instant data uploads and permanent storage with guaranteed data availability.',
-    bestFor: [
-      'Instant Uploads',
-      'Guaranteed Availability',
-      'Permanent Storage',
-    ],
-    keyFeatures: [
-      'Instant Data Upload',
-      'Guaranteed Availability',
-      'Permanent Storage',
-    ],
-  },
-  {
-    name: 'IpfsCloud',
-    category: 'drag-drop',
-    description:
-      'IpfsCloud offers a user-friendly cloud storage interface with drag-and-drop functionality for seamless file management on IPFS.',
-    bestFor: ['Cloud Storage', 'User-Friendly Interface', 'File Management'],
-    keyFeatures: ['Drag & Drop Interface', 'Cloud Storage', 'IPFS Integration'],
-  },
-  {
-    name: 'Filebase',
-    category: 's3-compatible',
-    description:
-      'Filebase provides S3-compatible object storage built on decentralized networks, offering enterprise-grade storage solutions with familiar APIs.',
-    bestFor: ['Object Storage', 'Enterprise Solutions', 'S3 Compatibility'],
-    keyFeatures: ['S3-Compatible API', 'Object Storage', 'Enterprise-Grade'],
-  },
-  {
-    name: 'Eternum Storage',
-    category: 'backup-recovery',
-    description:
-      'Eternum Storage specializes in secure backup and recovery solutions with advanced encryption and redundancy for critical data protection.',
-    bestFor: ['Secure Backup', 'Data Recovery', 'Critical Data Protection'],
-    keyFeatures: ['Secure Backup', 'Advanced Encryption', 'Data Redundancy'],
+      'Ramo is an open-cloud infrastructure platform that lets anyone—individuals or enterprises—turn idle storage and compute hardware into revenue-generating assets. It delivers decentralized, S3-compatible storage and compute services by integrating multiple Web3 networks like Filecoin, Fluence, and others.',
+    bestFor: ['S3Cloud', 'Backup', 'Archival'],
+    keyFeatures: ['Free Tier Available'],
+    url: 'https://www.ramo.io/',
   },
 ] as const satisfies Array<StorageProvider>

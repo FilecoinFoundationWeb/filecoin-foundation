@@ -35,6 +35,10 @@ export function StorageProviderList() {
     })
   }, [filters])
 
+  const alphaSortedStorageProviders = useMemo(() => {
+    return filteredStorageProviders.sort((a, b) => a.name.localeCompare(b.name))
+  }, [filteredStorageProviders])
+
   return (
     <>
       <fieldset>
@@ -62,14 +66,15 @@ export function StorageProviderList() {
 
       <div className="mt-10">
         <CardGrid as="ul" variant="smTwoLgThree">
-          {filteredStorageProviders.map(
-            ({ name, description, bestFor, keyFeatures }) => (
+          {alphaSortedStorageProviders.map(
+            ({ name, description, bestFor, keyFeatures, url }) => (
               <StorageProviderCard
                 key={name}
                 name={name}
                 description={description}
                 bestFor={bestFor}
                 keyFeatures={keyFeatures}
+                url={url}
               />
             ),
           )}
