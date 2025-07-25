@@ -8,6 +8,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { LinkCard } from '@/components/LinkCard'
+import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
@@ -37,6 +38,7 @@ export default function Learn() {
         src={graphicsData.learnHero.data.src}
         blurDataURL={graphicsData.learnHero.data.blurDataURL}
       >
+        <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="The authenticity layer of a more resilient internet"
