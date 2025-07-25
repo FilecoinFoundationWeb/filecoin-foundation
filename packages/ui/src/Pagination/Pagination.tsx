@@ -20,6 +20,12 @@ export function Pagination({
   pageCount,
   numberRange = MAX_RANGE,
 }: PaginationProps) {
+  if (numberRange > MAX_RANGE) {
+    console.warn(
+      `[Pagination]: The numberRange provided (${numberRange}) exceeds the maximum range allowed (${MAX_RANGE}). The maximum range (${MAX_RANGE}) will be used instead.`,
+    )
+  }
+
   const [page, setPage] = useQueryState(
     PAGE_KEY,
     parseAsInteger
