@@ -9,7 +9,7 @@ import PolarisLogo from '@/assets/logos/polaris-logo.png'
 
 const CTA_TEXT = 'Visit website'
 
-export const communityHubs: Array<SimpleCardWithLogoProps> = [
+export const ecosystemResources: Array<SimpleCardWithLogoProps> = [
   {
     title: 'Filecoin Foundation',
     description: 'Network governance.',

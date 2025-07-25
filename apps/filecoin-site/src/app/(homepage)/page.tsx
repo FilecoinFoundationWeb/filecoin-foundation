@@ -50,7 +50,7 @@ export default async function Home() {
             <div className="pt-32 pb-24">
               <PageHeader
                 title="Preserving humanity's most important information"
-                description="Keep your data accessible, verifiable, and free from centralized control with the world's largest decentralized storage network."
+                description="Keep your data accessible, verifiable, and free from centralized control with the world’s largest decentralized storage network."
               />
             </div>
             <div className="pb-52">
@@ -77,7 +77,7 @@ export default async function Home() {
           <SplitSectionContent
             title="Open. Scalable. Built for the future."
             description={[
-              'Filecoin gives developers a decentralized, verifiable storage layer that scales — perfect for AI pipelines, dApps, data-heavy SaaS platforms, and more. Accelerate development with open source tools, native IPFS integration, FVM-compatible cross-chain data bridges, and a permissionless storage marketplace.',
+              'Filecoin gives developers a decentralized, verifiable storage layer that scales — perfect for AI pipelines, dApps, data-heavy SaaS platforms, and more. Accelerate development with open source tools, native IPFS integration, cross-chain data bridges, and a permissionless storage marketplace.',
               'Filecoin democratizes data infrastructure, so you can build without compromise — knowing your data belongs to you and your users, not centralized gatekeepers.',
             ]}
             cta={[
@@ -113,7 +113,7 @@ export default async function Home() {
 
           <SplitSectionContent
             title="Secure, verifiable, long-term storage that you control."
-            description="No matter what you're storing — your data remains tamper-proof and verifiable. Filecoin offers cost-effective storage backed by a global network of independent data centers with automatic replication and lower egress fees."
+            description="No matter what you're storing — your data remains tamper-proof and verifiable. Filecoin offers storage backed by a global network of independent data centers with automatic replication and lower egress fees."
             cta={[
               <Button href={PATHS.STORE_DATA.path}>
                 Find storage solutions
@@ -138,7 +138,10 @@ export default async function Home() {
             <Button href={PATHS.OFFER_STORAGE.path} variant="primary">
               Become a storage provider
             </Button>,
-            <Button href={PATHS.LEARN.path} variant="ghost">
+            <Button
+              href={`${FILECOIN_URLS.docs}storage-providers/basics`}
+              variant="ghost"
+            >
               Explore documentation
             </Button>,
           ]}

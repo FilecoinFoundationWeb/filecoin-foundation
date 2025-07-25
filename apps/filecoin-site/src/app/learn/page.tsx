@@ -1,4 +1,5 @@
 import { PATHS } from '@/constants/paths'
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -41,7 +42,7 @@ export default function Learn() {
             title="The authenticity layer of a more resilient internet"
             description="Filecoin is the world's largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's most important information — free from centralized control."
             cta={
-              <Button href="" variant="primary">
+              <Button href={FILECOIN_URLS.docs} variant="primary">
                 Explore documentation
               </Button>
             }
@@ -105,7 +106,10 @@ export default function Learn() {
             headingTag="h3"
             title="How data gets stored on Filecoin"
             cta={
-              <Button href="" variant="primary">
+              <Button
+                href={`${PATHS.STORE_DATA.path}#store-on-filecoin`}
+                variant="primary"
+              >
                 Find storage solutions
               </Button>
             }

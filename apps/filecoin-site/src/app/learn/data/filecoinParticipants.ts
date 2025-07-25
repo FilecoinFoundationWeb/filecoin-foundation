@@ -4,11 +4,11 @@ import type { SimpleCardData } from '@/components/SimpleCard'
 
 export const filecoinParticipants: Array<SimpleCardData> = [
   {
-    title: 'Protocol layer',
+    title: 'Blockchain',
     description:
       'Verifies continuous data integrity, and enables secure, reliable operations across the system.',
     cta: {
-      href: '#',
+      href: 'https://docs.filecoin.io/basics/what-is-filecoin/blockchain',
       text: 'Learn more',
     },
   },
@@ -26,7 +26,7 @@ export const filecoinParticipants: Array<SimpleCardData> = [
     description:
       'Support clients in onboarding and managing data, simplifying access to decentralized storage.',
     cta: {
-      href: '#',
+      href: `${PATHS.STORE_DATA.path}#store-on-filecoin`,
       text: 'Find a storage solution',
     },
   },
@@ -42,7 +42,7 @@ export const filecoinParticipants: Array<SimpleCardData> = [
   {
     title: 'Developers',
     description:
-      'Build innovative applications and services on Filecoin’s programmable data layer.',
+      "Build innovative applications and services on Filecoin's programmable data layer.",
     cta: {
       href: PATHS.BUILD_ON_FILECOIN.path,
       text: 'Build on Filecoin',

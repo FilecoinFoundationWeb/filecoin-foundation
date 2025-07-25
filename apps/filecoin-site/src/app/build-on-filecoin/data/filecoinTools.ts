@@ -1,3 +1,5 @@
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
+
 import type { SimpleCardData } from '@/components/SimpleCard'
 
 export type FilecoinTool = SimpleCardData & {
@@ -27,12 +29,12 @@ export const filecoinTools: Array<FilecoinTool> = [
     },
   },
   {
-    title: 'Cookbooks',
+    title: 'Cookbook',
     description:
       'Deep-dive technical recipes for advanced architecture and FVM programming patterns.',
     difficulty: 'Advanced',
     cta: {
-      href: '#todo',
+      href: `${FILECOIN_URLS.docs}builder-cookbook/overview`,
       text: CTA_TEXT,
     },
   },

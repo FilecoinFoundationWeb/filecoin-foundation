@@ -17,7 +17,7 @@ export const networkPrinciples: Array<CardData> = [
   {
     title: 'Verifiable storage',
     description:
-      'Cryptographic proofs ensure your data remains accessible and tamper-proof with onchain audits that guarantee authenticity and integrity.',
+      'Cryptographic proofs ensure your data remains accessible and with onchain audits that guarantee authenticity and integrity.',
     icon: ShieldCheckIcon,
   },
   {
@@ -29,7 +29,7 @@ export const networkPrinciples: Array<CardData> = [
   {
     title: 'Global reach, local resilience',
     description:
-      'Ever-growing storage capacity across a global network of independent data centers ensures accessibility, redundancy, and resilience.',
+      'Growing storage capacity across a global network of independent data centers ensures accessibility, redundancy, and resilience.',
     icon: GlobeIcon,
   },
 ]
