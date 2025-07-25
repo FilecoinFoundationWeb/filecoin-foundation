@@ -52,10 +52,6 @@
   .button {
     @apply rounded-full border-2 px-6 py-4 text-base font-medium;
 
-    &:focus {
-      @apply outline-2 outline-offset-0;
-    }
-
     &.button--primary {
       @apply relative border-transparent;
 
@@ -85,7 +81,7 @@
         }
 
         &:focus {
-          @apply outline-brand-400 transition-none;
+          @apply outline-brand-400 outline-2 outline-offset-0 transition-none;
         }
       }
 
@@ -103,7 +99,7 @@
 
         &:hover .button-custom-icon,
         &:focus .button-custom-icon {
-          @apply text-blue-400 transition-colors duration-200;
+          @apply text-blue-400;
         }
 
         &:disabled {
@@ -124,7 +120,7 @@
 
         &:hover .button-custom-icon,
         &:focus .button-custom-icon {
-          @apply text-blue-300 transition-colors duration-200;
+          @apply text-blue-300;
         }
 
         &:disabled {
@@ -141,7 +137,7 @@
       }
 
       &:focus {
-        @apply outline-zinc-400;
+        @apply outline-2 outline-offset-0 outline-zinc-400;
       }
 
       .light-section &,
@@ -172,6 +168,75 @@
 
         &:disabled {
           @apply bg-zinc-800 text-zinc-500;
+        }
+      }
+    }
+
+    &.button--tertiary {
+      @apply border-transparent;
+
+      .light-section &,
+      .gray-section & {
+        @apply text-zinc-600;
+
+        &:not(:disabled) {
+          &:hover,
+          &:focus {
+            @apply text-zinc-950;
+          }
+
+          &:hover .button-custom-icon,
+          &:focus .button-custom-icon {
+            @apply text-zinc-800;
+          }
+        }
+
+        &:focus {
+          @apply decoration-brand-600 underline underline-offset-8 outline-none;
+        }
+
+        &:disabled {
+          @apply text-zinc-400;
+        }
+
+        & .button-arrow-icon {
+          @apply text-zinc-600;
+        }
+
+        & .button-custom-icon {
+          @apply text-zinc-500;
+        }
+      }
+
+      .dark-section & {
+        @apply text-zinc-300;
+
+        &:not(:disabled) {
+          &:hover,
+          &:focus {
+            @apply bg-zinc-900 text-zinc-50;
+          }
+
+          &:hover .button-custom-icon,
+          &:focus .button-custom-icon {
+            @apply text-zinc-300;
+          }
+        }
+
+        &:focus {
+          @apply brand-outline;
+        }
+
+        &:disabled {
+          @apply text-zinc-500;
+        }
+
+        & .button-arrow-icon {
+          @apply text-zinc-300;
+        }
+
+        & .button-custom-icon {
+          @apply text-zinc-400;
         }
       }
     }
