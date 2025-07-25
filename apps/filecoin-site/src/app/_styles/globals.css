@@ -344,6 +344,31 @@
     }
   }
 
+  /* PAGE HEADER */
+  .page-header {
+    & .page-header-title {
+      .light-section &,
+      .gray-section & {
+        @apply text-zinc-900;
+      }
+
+      .dark-section & {
+        @apply text-zinc-50;
+      }
+    }
+
+    & .page-header-description {
+      .light-section &,
+      .gray-section & {
+        @apply text-zinc-600;
+      }
+
+      .dark-section & {
+        @apply text-zinc-50;
+      }
+    }
+  }
+
   /* SECTION SUB CONTENT */
   .section-sub-content-heading-text {
     .light-section &,
