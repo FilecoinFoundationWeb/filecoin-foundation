@@ -21,14 +21,14 @@ export const developerResources: Array<LinkCardData> = [
     title: 'Filecoin.sol',
     description:
       'Solidity libraries for integration with the Filecoin Virtual Machine.',
-    href: `${FILECOIN_URLS.docs}/smart-contracts/developing-contracts/filecoin.sol`,
+    href: `${FILECOIN_URLS.docs}smart-contracts/developing-contracts/filecoin.sol`,
     icon: BracketsCurlyIcon,
   },
   {
     title: 'RPC Endpoints',
     description:
       'Reliable endpoints for connecting your dApps to the Filecoin network.',
-    href: `${FILECOIN_URLS.docs}/networks/mainnet/rpcs`,
+    href: `${FILECOIN_URLS.docs}networks/mainnet/rpcs`,
     icon: PlugIcon,
   },
   {
