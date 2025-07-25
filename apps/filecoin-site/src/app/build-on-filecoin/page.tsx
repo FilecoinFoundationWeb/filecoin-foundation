@@ -1,3 +1,5 @@
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
@@ -37,7 +39,7 @@ export default function BuildOnFilecoin() {
             title="Build on Filecoin: open, scalable, verifiable storage"
             description="Filecoin is a programmable, permissionless storage network with cryptographic verification and global redundancy by design. Integrate storage that safeguards data integrity at every layer and scales with your application's needs."
             cta={
-              <Button href="" variant="primary">
+              <Button href={FILECOIN_URLS.docs} variant="primary">
                 Explore documentation
               </Button>
             }

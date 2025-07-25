@@ -11,21 +11,21 @@ export const communityConnections: Array<LinkCardData> = [
     title: '#fil-builder on Slack',
     description:
       'Join the conversation, ask questions, and share your progress with fellow builders in the Filecoin Slack community.',
-    href: '#',
+    href: 'https://filecoinproject.slack.com/archives/CRK2LKYHW',
     icon: SlackLogoIcon,
   },
   {
     title: '@filbuilders on X',
     description:
       'Follow for the latest updates, developer highlights, and ecosystem news.',
-    href: '#',
+    href: 'https://x.com/filbuilders',
     icon: XLogoIcon,
   },
   {
     title: 'Developer working group',
     description:
       'Collaborate directly with other developers through regular meetups, discussions, and technical deep-dives.',
-    href: '#',
+    href: 'https://filecoinproject.slack.com/archives/CRK2LKYHW',
     icon: ChatsIcon,
   },
 ]

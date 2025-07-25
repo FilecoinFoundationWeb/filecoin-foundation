@@ -13,7 +13,7 @@ export const filecoinTools: Array<FilecoinTool> = [
       'Deploy your first storage-backed smart contract quickly and securely.',
     difficulty: 'Beginner',
     cta: {
-      href: '/learn/erc20-quickstart',
+      href: '#todo',
       text: CTA_TEXT,
     },
   },
@@ -22,7 +22,7 @@ export const filecoinTools: Array<FilecoinTool> = [
     description: 'React-based template for building FVM frontends fast.',
     difficulty: 'Intermediate',
     cta: {
-      href: '/learn/filframe',
+      href: 'https://github.com/FIL-Builders/fil-frame',
       text: CTA_TEXT,
     },
   },
@@ -32,7 +32,7 @@ export const filecoinTools: Array<FilecoinTool> = [
       'Deep-dive technical recipes for advanced architecture and FVM programming patterns.',
     difficulty: 'Advanced',
     cta: {
-      href: '/learn/cookbooks',
+      href: '#todo',
       text: CTA_TEXT,
     },
   },

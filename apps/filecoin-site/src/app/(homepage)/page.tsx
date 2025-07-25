@@ -118,7 +118,10 @@ export default async function Home() {
               <Button href={PATHS.STORE_DATA.path}>
                 Find storage solutions
               </Button>,
-              <Button href="#" variant="ghost">
+              <Button
+                href={`${PATHS.STORE_DATA.path}#store-on-filecoin`}
+                variant="ghost"
+              >
                 Why store on Filecoin
               </Button>,
             ]}
