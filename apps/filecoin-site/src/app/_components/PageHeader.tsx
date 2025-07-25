@@ -1,8 +1,3 @@
-import {
-  DescriptionText,
-  type DescriptionProps,
-} from '@filecoin-foundation/ui/DescriptionText'
-
 import { Button } from '@/components/Button'
 import { Heading, type HeadingProps } from '@/components/Heading'
 import { Kicker, type KickerProps } from '@/components/Kicker'
@@ -10,7 +5,7 @@ import { Kicker, type KickerProps } from '@/components/Kicker'
 type PageHeaderProps = {
   title: HeadingProps['children']
   kicker?: KickerProps['children']
-  description?: DescriptionProps['children']
+  description?: string
   cta?: React.ReactElement<typeof Button>
 }
 
@@ -21,13 +16,19 @@ export function PageHeader({
   cta,
 }: PageHeaderProps) {
   return (
-    <header>
+    <header className="page-header">
       <div className="flex max-w-3xl flex-col gap-6">
         {kicker && <Kicker size="md">{kicker}</Kicker>}
-        <Heading tag="h1" variant="3xl-md5xl-medium">
+        <Heading
+          tag="h1"
+          variant="3xl-md5xl-medium"
+          className="page-header-title"
+        >
           {title}
         </Heading>
-        {description && <DescriptionText>{description}</DescriptionText>}
+        {description && (
+          <p className="page-header-description">{description}</p>
+        )}
       </div>
 
       {cta && <div className="mt-10">{cta}</div>}
