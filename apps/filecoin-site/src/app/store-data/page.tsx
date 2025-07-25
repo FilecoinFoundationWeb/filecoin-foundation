@@ -1,5 +1,7 @@
 import { Suspense } from 'react'
 
+import { PATHS } from '@/constants/paths'
+
 import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
 
@@ -29,7 +31,10 @@ export default function StoreData() {
             title="Decentralized, secure storage for data that matters"
             description="A dynamic and powerful distributed storage network for your data."
             cta={
-              <Button href="" variant="primary">
+              <Button
+                href={`${PATHS.STORE_DATA.path}#store-on-filecoin`}
+                variant="primary"
+              >
                 Explore storage solutions
               </Button>
             }
@@ -86,7 +91,7 @@ export default function StoreData() {
           title="Don't see your storage solution?"
           description="Showcase your Filecoin storage solution in this storage directory and reach thousands of data clients."
           cta={
-            <Button href="" variant="primary">
+            <Button href="#todo" variant="primary">
               Submit your storage solution
             </Button>
           }
