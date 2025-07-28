@@ -293,10 +293,18 @@
   .navigation-link {
     .light-section & {
       @apply text-zinc-600;
+
+      &[aria-current='true'] {
+        @apply text-zinc-950;
+      }
     }
 
     .dark-section & {
       @apply text-zinc-300;
+
+      &[aria-current='true'] {
+        @apply text-zinc-50;
+      }
     }
   }
 
