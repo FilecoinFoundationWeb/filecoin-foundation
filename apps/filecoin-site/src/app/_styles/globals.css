@@ -265,6 +265,8 @@
 
   /* CTALINK */
   .cta-link {
+    @apply font-semibold;
+
     .light-section &,
     .gray-section & {
       @apply text-zinc-600;

@@ -191,6 +191,11 @@
     @apply hover:text-brand-400;
   }
 
+  /* CTALINK */
+  .cta-link {
+    @apply font-bold;
+  }
+
   /* FILTER SIDEBAR */
   .filter-sidebar-button {
     @apply text-brand-300 hover:bg-brand-700 rounded-lg;
