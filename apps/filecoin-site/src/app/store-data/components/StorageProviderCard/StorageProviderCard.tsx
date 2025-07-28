@@ -35,7 +35,9 @@ export function StorageProviderCard({
             </Heading>
           </div>
 
-          <p className="text-zinc-600">{description}</p>
+          <p className="line-clamp-4 h-24 text-zinc-600" title={description}>
+            {description}
+          </p>
 
           <StorageProviderCardSection title="Best For">
             <ul className="flex flex-wrap gap-2.5">
