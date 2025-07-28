@@ -12,10 +12,9 @@ type SimpleCardWithGradientProps = {
 }
 
 const GRADIENT_STEPS = [
-  'from-brand-100 to-brand-300',
-  'from-brand-300 to-brand-500',
-  'from-brand-500 to-brand-700',
-  'from-brand-700 to-brand-900',
+  'from-brand-100 to-brand-400',
+  'from-brand-400 to-brand-700',
+  'from-brand-700 to-brand-950',
 ] as const
 
 export function SimpleCardWithGradient({
