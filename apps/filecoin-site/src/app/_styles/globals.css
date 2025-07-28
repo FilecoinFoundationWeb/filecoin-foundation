@@ -276,16 +276,27 @@
   }
 
   /* LOGO SECTION */
-  .logo-section-logo-item {
-    @apply text-zinc-400 transition-colors duration-200;
+  .logos-section {
+    .light-section &,
+    .gray-section & {
+      @apply text-zinc-600;
+    }
 
     .dark-section & {
-      @apply hover:text-zinc-50;
+      @apply text-zinc-50;
     }
+  }
+
+  .logos-section-logo-item {
+    @apply text-zinc-400 transition-colors duration-200;
 
     .light-section &,
     .gray-section & {
       @apply hover:opacity-80;
+    }
+
+    .dark-section & {
+      @apply hover:text-zinc-50;
     }
   }
 
