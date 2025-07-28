@@ -42,6 +42,11 @@ export const trustedByLogos: Array<LogoItemProps> = [
     alt: 'Starling Lab Logo',
     href: 'https://www.starlinglab.org/',
   },
+  // {
+  //   logo: EasierDataInitiativeLogo,
+  //   alt: 'Easier Data Initiative Logo',
+  //   href: 'https://easierdata.org/',
+  // },
   {
     logo: AethirLogo,
     size: 24,
