@@ -6,6 +6,7 @@ import InternetArchiveLogo from '@/assets/logos/internet-archive-logo.svg'
 import MITOpenLearningLogo from '@/assets/logos/MIT-open-learning-logo.svg'
 import SmithsonianLogo from '@/assets/logos/smithsonian-logo.svg'
 import SolanaLogo from '@/assets/logos/solana-logo.svg'
+import StarlingLabLogo from '@/assets/logos/starling-lab-logo.svg'
 import VictorChanLogo from '@/assets/logos/victor-chang-logo.svg'
 
 export const trustedByLogos: Array<LogoItemProps> = [
@@ -34,6 +35,11 @@ export const trustedByLogos: Array<LogoItemProps> = [
     logo: FlickrFoundationLogo,
     alt: 'Flickr Foundation Logo',
     href: 'https://www.flickr.org',
+  },
+  {
+    logo: StarlingLabLogo,
+    alt: 'Starling Lab Logo',
+    href: 'https://www.starlinglab.org/',
   },
   {
     logo: AethirLogo,
