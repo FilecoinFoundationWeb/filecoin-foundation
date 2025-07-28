@@ -61,7 +61,7 @@ export function StorageProviderCard({
         </div>
 
         <Button href={url} variant="ghost" className="mt-20 w-full">
-          Visit {name}'s website
+          Visit {name}
         </Button>
       </article>
     </li>
