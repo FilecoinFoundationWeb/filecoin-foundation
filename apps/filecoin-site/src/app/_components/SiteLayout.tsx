@@ -17,10 +17,8 @@ export function SiteLayout({ children }: SiteLayoutProps) {
   return (
     <html lang="en" className={inter.className}>
       <body className="bg-white text-zinc-900">
-        <main>
-          {children}
-          <Footer />
-        </main>
+        <main>{children}</main>
+        <Footer />
 
         {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
       </body>
