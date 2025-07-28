@@ -38,7 +38,7 @@ export function MobileNavigation() {
                 <NavigationLink
                   href={path}
                   label={label}
-                  onClick={closePanel}
+                  onNavigate={closePanel}
                 />
               </li>
             ))}
