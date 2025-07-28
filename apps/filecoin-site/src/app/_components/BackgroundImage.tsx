@@ -9,8 +9,8 @@ type BackgroundImageProps = {
 } & Pick<StaticImageData, 'blurDataURL'>
 
 const OVERLAY_CLASSES = {
-  dark: 'bg-black/60',
-  light: 'bg-black/30',
+  dark: 'bg-zinc-950/60',
+  light: 'bg-zinc-950/30',
 }
 
 export function BackgroundImage({

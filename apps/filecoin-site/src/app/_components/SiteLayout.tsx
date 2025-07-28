@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import { BreakpointDebugger } from '@filecoin-foundation/ui/BreakpointDebugger'
 
 import { Footer } from '@/components/Footer/Footer'
-import { NavigationThemeWrapper } from '@/components/Navigation/NavigationThemeWrapper'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,10 +16,11 @@ type SiteLayoutProps = {
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="flex min-h-screen flex-col bg-white text-zinc-900">
-        <NavigationThemeWrapper />
-        <main className="flex-1">{children}</main>
-        <Footer />
+      <body className="bg-white text-zinc-900">
+        <main>
+          {children}
+          <Footer />
+        </main>
 
         {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
       </body>

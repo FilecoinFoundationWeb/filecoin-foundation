@@ -8,6 +8,7 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { LinkCard } from '@/components/LinkCard'
+import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
@@ -34,6 +35,7 @@ export default function BuildOnFilecoin() {
         src={graphicsData.buildOnFilecoinHero.data.src}
         blurDataURL={graphicsData.buildOnFilecoinHero.data.blurDataURL}
       >
+        <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Build on Filecoin: open, scalable, verifiable storage"

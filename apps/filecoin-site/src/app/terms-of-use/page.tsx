@@ -1,10 +1,14 @@
+import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 export default function TermsOfUse() {
   return (
-    <PageSection backgroundVariant="light">
-      <PageHeader title="Terms of Use" />
-    </PageSection>
+    <>
+      <Navigation backgroundVariant="light" />
+      <PageSection backgroundVariant="light">
+        <PageHeader title="Terms of Use" />
+      </PageSection>
+    </>
   )
 }

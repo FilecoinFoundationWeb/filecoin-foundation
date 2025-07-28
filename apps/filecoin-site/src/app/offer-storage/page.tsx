@@ -8,6 +8,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
+import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
@@ -25,10 +26,11 @@ export default function OfferStorage() {
   return (
     <>
       <BackgroundImage
-        overlayVariant="light"
+        overlayVariant="dark"
         src={graphicsData.offerStorageHero.data.src}
         blurDataURL={graphicsData.offerStorageHero.data.blurDataURL}
       >
+        <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Power the world's largest decentralized storage network"
