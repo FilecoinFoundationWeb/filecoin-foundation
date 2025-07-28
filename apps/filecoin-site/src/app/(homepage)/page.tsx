@@ -237,7 +237,7 @@ export default async function Home() {
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
           <CardGridContainer width="4xl">
-            <CardGrid as="ul" variant="mdTwo">
+            <CardGrid as="ul" variant="mdTwoWide">
               {communityLinks.map(({ title, href, icon }) => (
                 <LinkCard
                   key={title}
