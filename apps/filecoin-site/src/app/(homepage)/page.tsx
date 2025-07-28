@@ -43,6 +43,7 @@ export default async function Home() {
   return (
     <>
       <BackgroundImage
+        withOpacity
         src={graphicsData.homepageHero.data.src}
         blurDataURL={graphicsData.homepageHero.data.blurDataURL}
       >

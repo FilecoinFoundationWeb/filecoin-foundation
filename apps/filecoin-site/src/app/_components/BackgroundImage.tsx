@@ -4,6 +4,7 @@ import { clsx } from 'clsx'
 
 type BackgroundImageProps = {
   src: string
+  withOpacity?: boolean
   overlayVariant?: keyof typeof OVERLAY_CLASSES
   children?: React.ReactNode
 } & Pick<StaticImageData, 'blurDataURL'>
@@ -16,6 +17,7 @@ const OVERLAY_CLASSES = {
 export function BackgroundImage({
   src,
   overlayVariant,
+  withOpacity,
   children,
   blurDataURL,
 }: BackgroundImageProps) {
@@ -27,8 +29,11 @@ export function BackgroundImage({
         quality={100}
         sizes="100vw"
         src={src}
-        className="-z-20 object-cover object-center"
         alt=""
+        className={clsx(
+          '-z-20 object-cover object-center',
+          withOpacity && 'opacity-70',
+        )}
         {...(blurDataURL && {
           placeholder: 'blur',
           blurDataURL,
