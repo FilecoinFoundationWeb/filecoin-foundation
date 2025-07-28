@@ -114,6 +114,7 @@ export default function BuildOnFilecoin() {
           <SectionDivider />
 
           <SectionSubContent
+            centerCTA
             headingTag="h3"
             title="Block explorers"
             description="Track transactions, contracts, and onchain activity with Filecoin-compatible block explorers."
@@ -123,17 +124,22 @@ export default function BuildOnFilecoin() {
               </Button>
             }
           >
-            <CardGrid as="ul" variant="smTwoLgThree">
-              {blockExplorers.map(({ title, description, cta }) => (
-                <SimpleCard
-                  key={title}
-                  as="li"
-                  title={title}
-                  description={description}
-                  cta={cta}
-                />
-              ))}
-            </CardGrid>
+            <>
+              <CardGrid as="ul" variant="smTwoLgThree">
+                {blockExplorers.map(({ title, description, cta }) => (
+                  <SimpleCard
+                    key={title}
+                    as="li"
+                    title={title}
+                    description={description}
+                    cta={cta}
+                  />
+                ))}
+              </CardGrid>
+              <p className="-mb-12 text-center text-lg text-zinc-600">
+                Have a block explorer to feature?
+              </p>
+            </>
           </SectionSubContent>
         </SectionContent>
       </PageSection>
