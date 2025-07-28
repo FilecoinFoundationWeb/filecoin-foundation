@@ -4,6 +4,7 @@ import AethirLogo from '@/assets/logos/aethir-logo.svg'
 import FlickrFoundationLogo from '@/assets/logos/flickr-foundation-logo.svg'
 import InternetArchiveLogo from '@/assets/logos/internet-archive-logo.svg'
 import MITOpenLearningLogo from '@/assets/logos/MIT-open-learning-logo.svg'
+import SetiInstituteLogo from '@/assets/logos/seti-institute-logo.svg'
 import SmithsonianLogo from '@/assets/logos/smithsonian-logo.svg'
 import SolanaLogo from '@/assets/logos/solana-logo.svg'
 import StarlingLabLogo from '@/assets/logos/starling-lab-logo.svg'
@@ -51,5 +52,10 @@ export const trustedByLogos: Array<LogoItemProps> = [
     logo: VictorChanLogo,
     alt: 'Victor Chan Logo',
     href: 'https://www.victorchang.edu.au/',
+  },
+  {
+    logo: SetiInstituteLogo,
+    alt: 'Seti Institute Logo',
+    href: 'https://www.seti.org/',
   },
 ]
