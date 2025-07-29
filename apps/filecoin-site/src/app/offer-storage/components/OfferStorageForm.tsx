@@ -1,28 +1,100 @@
+'use client'
+
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm } from 'react-hook-form'
+
+import { ControlledForm } from '@filecoin-foundation/ui/Form'
+import { ControlledFormCheckbox } from '@filecoin-foundation/ui/FormCheckbox'
+import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
+import { ControlledFormTextarea } from '@filecoin-foundation/ui/FormTextarea'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
-// import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 
 import { Button } from '@/components/Button'
 
+import {
+  OfferStorageFormSchema,
+  type OfferStorageFormData,
+} from '../types/OfferStorageFormSchema'
+
 export function OfferStorageForm() {
+  const form = useForm<OfferStorageFormData>({
+    resolver: zodResolver(OfferStorageFormSchema),
+    defaultValues: {
+      communicationOptIn: false,
+    },
+  })
+
+  const isSubmitting = form.formState.isSubmitting
+
   return (
-    <div className="space-y-15">
-      <p>Form</p>
+    <ControlledForm<OfferStorageFormData>
+      form={form}
+      className="space-y-15"
+      onSubmit={(data) => console.log(data)}
+    >
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+        <ControlledFormInput<OfferStorageFormData>
+          name="firstName"
+          label="First Name"
+          placeholder="First Name"
+          disabled={isSubmitting}
+        />
+        <ControlledFormInput<OfferStorageFormData>
+          name="lastName"
+          label="Last Name"
+          placeholder="Last Name"
+          disabled={isSubmitting}
+        />
+      </div>
 
-      <p className="text-zinc-600">
-        From time to time, we would like to contact you about our products and
-        services, as well as other content that may be of interest to you.
-        Please review the{' '}
-        <ExternalTextLink href="#">
-          Filecoin Foundation Privacy Policy
-        </ExternalTextLink>{' '}
-        and the{' '}
-        <ExternalTextLink href="#">
-          Protocol Labs Privacy Policy
-        </ExternalTextLink>{' '}
-        for additional information on our privacy practices. Please select one:
-      </p>
+      <ControlledFormInput<OfferStorageFormData>
+        name="businessEmail"
+        label="Business email address"
+        type="email"
+        placeholder="alex@company.com"
+        disabled={isSubmitting}
+      />
 
-      <Button variant="primary">Book onboarding call</Button>
-    </div>
+      <ControlledFormInput<OfferStorageFormData>
+        name="company"
+        label="Company Name"
+        placeholder="Company Co"
+        disabled={isSubmitting}
+      />
+
+      <ControlledFormTextarea<OfferStorageFormData>
+        addOptionalToLabel
+        name="additionalInfo"
+        label="Additional Information"
+        placeholder="Please provide any additional information that may help us understand your storage needs."
+        disabled={isSubmitting}
+      />
+
+      <div className="space-y-8">
+        <p className="text-zinc-600">
+          From time to time, we would like to contact you about our products and
+          services, as well as other content that may be of interest to you.
+          Please review the{' '}
+          <ExternalTextLink href="#">
+            Filecoin Foundation Privacy Policy
+          </ExternalTextLink>{' '}
+          and the{' '}
+          <ExternalTextLink href="#">
+            Protocol Labs Privacy Policy
+          </ExternalTextLink>{' '}
+          for additional information on our privacy practices. Please select
+          one:
+        </p>
+
+        <ControlledFormCheckbox<OfferStorageFormData>
+          name="communicationOptIn"
+          label="I agree to receive other communications from Protocol Labs and Filecoin Foundation. You may unsubscribe from these communications at any time."
+        />
+      </div>
+
+      <Button variant="primary" type="submit">
+        Book onboarding call
+      </Button>
+    </ControlledForm>
   )
 }
