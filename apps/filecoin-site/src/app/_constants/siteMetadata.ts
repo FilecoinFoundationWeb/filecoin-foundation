@@ -1,7 +1,17 @@
-export const BASE_DOMAIN = 'filecoin.io'
-export const BASE_URL = `https://${BASE_DOMAIN}`
+import type { Metadata } from 'next'
 
-export const FILECOIN_URLS = {
+const BASE_DOMAIN = 'filecoin.io'
+const BASE_URL = `https://${BASE_DOMAIN}`
+const ORGANIZATION_NAME = 'Filecoin'
+
+const SEO = {
+  title:
+    "Filecoin | World's Largest Decentralized Storage Network for Humanity's Data",
+  description:
+    "Preserve humanity's most important information on Filecoin, the decentralized storage network with verifiable integrity, global redundancy, and no centralized control. Build apps, store data securely, or become a storage provider today.",
+} as const
+
+const FILECOIN_URLS = {
   docs: 'https://docs.filecoin.io/',
   github: 'https://github.com/filecoin-project',
   security: 'https://fil.org/security',
@@ -26,6 +36,24 @@ export const FILECOIN_URLS = {
     twitter: {
       href: 'https://twitter.com/filecoin',
       label: 'X',
+      handle: '@filecoin',
     },
   },
 } as const
+
+const ROOT_METADATA = {
+  title: {
+    template: `${ORGANIZATION_NAME} | %s`,
+    default: ORGANIZATION_NAME,
+  },
+  metadataBase: new URL(BASE_URL),
+} as const satisfies Metadata
+
+export {
+  BASE_DOMAIN,
+  BASE_URL,
+  FILECOIN_URLS,
+  ORGANIZATION_NAME,
+  ROOT_METADATA,
+  SEO,
+}
