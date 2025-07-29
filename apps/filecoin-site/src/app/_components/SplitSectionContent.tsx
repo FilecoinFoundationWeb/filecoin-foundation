@@ -11,7 +11,7 @@ type SideBySideContentProps = {
   cta?: ButtonRowProps['buttons']
 }
 
-const gap = 'gap-8 lg:gap-16'
+const gap = 'gap-8 md:gap-16'
 
 export function SplitSectionContent({
   title,
