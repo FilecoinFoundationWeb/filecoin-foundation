@@ -66,7 +66,7 @@ export function OfferStorageForm() {
         addOptionalToLabel
         name="additionalInfo"
         label="Additional Information"
-        placeholder="Please provide any additional information that may help us understand your storage needs."
+        placeholder="Share details about your setup, goals, or anything you'd like us to know."
         disabled={isSubmitting}
       />
 
