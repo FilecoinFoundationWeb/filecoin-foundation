@@ -31,9 +31,13 @@ export function SectionContent({
           </p>
         )}
       </div>
-      {children && <div className="mt-30 flex flex-col gap-30">{children}</div>}
+      {children && (
+        <div className="mt-15 flex flex-col gap-15 md:mt-30 md:gap-30">
+          {children}
+        </div>
+      )}
       {cta && (
-        <div className={clsx(children ? 'mt-30' : 'mt-15')}>
+        <div className={clsx(children ? 'mt-15 md:mt-30' : 'mt-15')}>
           <ButtonRow buttons={cta} centered={centerCTA} />
         </div>
       )}
