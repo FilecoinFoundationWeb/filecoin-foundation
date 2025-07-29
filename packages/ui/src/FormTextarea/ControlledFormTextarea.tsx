@@ -23,7 +23,7 @@ type BaseControlledFormTextareaProps = Omit<
 
 interface ControlledFormTextareaProps<FormValues extends FieldValues>
   extends BaseControlledFormTextareaProps {
-  name: FieldPathByValue<FormValues, string>
+  name: FieldPathByValue<FormValues, string | undefined>
 }
 
 export function ControlledFormTextarea<FormValues extends FieldValues>({

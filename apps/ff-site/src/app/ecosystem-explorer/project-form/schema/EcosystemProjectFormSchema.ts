@@ -69,7 +69,6 @@ export const EcosystemProjectFormSchema = z.object({
     .optional()
     .or(EmptyStringSchema),
   githubUrl: z
-    .string()
     .url(invalidUrlMessage)
     .refine(validateGithubUrlFormat, {
       error: `URL must start with ${GITHUB_BASE_URL}`,

@@ -230,7 +230,7 @@
   }
 
   .form-checkbox-input-label {
-    @apply text-brand-100;
+    @apply text-brand-100 ml-3;
   }
 
   .form-error-description {
