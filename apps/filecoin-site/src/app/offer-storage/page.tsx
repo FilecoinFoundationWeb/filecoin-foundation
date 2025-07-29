@@ -3,6 +3,8 @@ import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
+import { createMetadata } from '@/utils/createMetadata'
+
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -16,6 +18,7 @@ import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 
+import { OFFER_STORAGE_SEO } from './constants/seo'
 import { coreInfrastructureSpecs } from './data/coreInfrastructureSpecs'
 import { dataCenterRequirements } from './data/dataCenterRequirements'
 import { filecoinEarningsInsights } from './data/filecoinEarningsInsights'
@@ -171,3 +174,9 @@ export default function OfferStorage() {
     </>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: OFFER_STORAGE_SEO.title },
+  description: OFFER_STORAGE_SEO.description,
+  path: PATHS.OFFER_STORAGE.path,
+})
