@@ -3,6 +3,9 @@ import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
+
+import { createMetadata } from '@/utils/createMetadata'
+
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -20,6 +23,7 @@ import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { StepCard } from './components/StepCard'
+import { LEARN_SEO } from './constants/seo'
 import { ecosystemPartners } from './data/ecosystemPartners'
 import { filecoinParticipants } from './data/filecoinParticipants'
 import { filecoinStackFeatures } from './data/filecoinStackFeatures'
@@ -205,3 +209,9 @@ export default function Learn() {
     </>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: LEARN_SEO.title },
+  description: LEARN_SEO.description,
+  path: PATHS.LEARN.path,
+})
