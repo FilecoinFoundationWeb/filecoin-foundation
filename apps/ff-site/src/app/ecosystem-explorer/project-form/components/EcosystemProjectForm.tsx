@@ -13,13 +13,13 @@ import {
   FormLabel,
 } from '@filecoin-foundation/ui/FormField'
 import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
+import { ControlledFormTextarea } from '@filecoin-foundation/ui/FormTextarea'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { Button } from '@/components/Button'
 import { ControlledFormFileInput } from '@/components/Form/ControlledFormFileInput'
 import { ControlledFormListbox } from '@/components/Form/ControlledFormListbox'
 import { ControlledFormListboxWithGroups } from '@/components/Form/ControlledFormListboxWithGroups'
-import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea'
 import { type GroupedOption } from '@/components/Form/FormListboxWithGroups'
 
 import {

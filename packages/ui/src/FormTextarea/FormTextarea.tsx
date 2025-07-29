@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
   Field,
   Textarea,
@@ -59,8 +57,8 @@ export function FormTextarea({
         {...rest}
         invalid={Boolean(error)}
         className={clsx(
-          'border-brand-300 bg-brand-800 placeholder:text-brand-300 hover:border-brand-400 hover:placeholder:text-brand-400 focus:brand-outline focus:text-brand-100 focus:placeholder:text-brand-100 block min-h-44 w-full rounded-lg border px-3.5 py-3 data-disabled:cursor-not-allowed',
-          error && 'border-brand-error',
+          'form-textarea-input',
+          error && 'form-textarea-input-error',
         )}
       />
       <FormError.Container>

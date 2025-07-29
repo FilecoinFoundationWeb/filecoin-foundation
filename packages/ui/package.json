@@ -28,6 +28,7 @@
     "./FormField": "./src/FormField/index.ts",
     "./FormInput": "./src/FormInput/index.ts",
     "./FormCheckbox": "./src/FormCheckbox/index.ts",
+    "./FormTextarea": "./src/FormTextarea/index.ts",
     "./FilterListbox": "./src/FilterListbox.tsx",
     "./FilterSidebar": "./src/FilterSidebar.tsx",
     "./GlobalError": "./src/GlobalError.tsx",
