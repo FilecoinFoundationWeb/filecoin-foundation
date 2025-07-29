@@ -10,7 +10,7 @@ export function PageSection({ backgroundVariant, children }: PageSectionProps) {
   return (
     <Section backgroundVariant={backgroundVariant}>
       <Container>
-        <div className="pt-8 pb-24 sm:py-36">{children}</div>
+        <div className="py-25 md:py-35">{children}</div>
       </Container>
     </Section>
   )

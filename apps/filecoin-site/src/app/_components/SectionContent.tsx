@@ -22,7 +22,7 @@ export function SectionContent({
   return (
     <div id={slugify(title.toString(), { lower: true })}>
       <div className="max-w-3xl">
-        <Heading tag="h2" variant="6xl-medium">
+        <Heading tag="h2" variant="4xl-md6xl-medium">
           {title}
         </Heading>
         {description && (
@@ -31,9 +31,13 @@ export function SectionContent({
           </p>
         )}
       </div>
-      {children && <div className="mt-30 flex flex-col gap-30">{children}</div>}
+      {children && (
+        <div className="mt-15 flex flex-col gap-15 md:mt-30 md:gap-30">
+          {children}
+        </div>
+      )}
       {cta && (
-        <div className={clsx(children ? 'mt-30' : 'mt-15')}>
+        <div className={clsx(children ? 'mt-15 md:mt-30' : 'mt-15')}>
           <ButtonRow buttons={cta} centered={centerCTA} />
         </div>
       )}
