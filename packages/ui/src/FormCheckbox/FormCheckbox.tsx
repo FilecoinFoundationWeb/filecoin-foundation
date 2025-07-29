@@ -36,7 +36,7 @@ export function FormCheckbox({
         <div
           className={clsx(
             TOUCH_TARGET.visibleElementSize,
-            'rounded-sm bg-brand-100 p-0.5 text-brand-100 group-focus:bg-brand-200 group-focus:outline group-focus:outline-1 group-focus:outline-offset-2 group-focus:outline-brand-100 group-data-checked:bg-brand-400 group-data-disabled:cursor-not-allowed hover:bg-brand-200 group-data-checked:hover:bg-brand-500',
+            'form-checkbox-input',
           )}
         >
           <span className="hidden group-data-checked:block">
@@ -46,7 +46,7 @@ export function FormCheckbox({
       </Checkbox>
       <Label
         className={clsx(
-          'text-brand-100',
+          'form-checkbox-input-label',
           labelSize === 'md' && 'text-base',
           labelSize === 'sm' && 'text-sm',
         )}

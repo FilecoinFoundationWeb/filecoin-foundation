@@ -6,7 +6,7 @@ import FilecoinFoundationLogo from '@/assets/logos/filecoin-foundation-logo.svg'
 
 export function LegalSection() {
   return (
-    <div className="my-16 flex flex-col-reverse items-center justify-between gap-8 sm:flex-row md:gap-16">
+    <div className="flex flex-col-reverse items-center justify-between gap-8 py-16 sm:flex-row md:gap-16">
       <a
         href="https://fil.org/"
         className="focus:brand-outline flex items-center gap-2 text-xs text-zinc-400"

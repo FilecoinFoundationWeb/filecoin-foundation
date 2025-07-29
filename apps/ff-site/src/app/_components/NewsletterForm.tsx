@@ -5,6 +5,8 @@ import { CheckCircleIcon, XCircleIcon } from '@phosphor-icons/react'
 import * as Sentry from '@sentry/nextjs'
 import { useForm } from 'react-hook-form'
 
+import { ControlledForm } from '@filecoin-foundation/ui/Form'
+import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
 import {
   NotificationDialog,
   useNotificationDialog,
@@ -16,8 +18,6 @@ import {
 } from '@filecoin-foundation/utils/schemas/NewsletterFormSchema'
 
 import { Button } from '@/components/Button'
-import { ControlledForm } from '@/components/Form/ControlledForm'
-import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
 
 export function NewsletterForm() {
   const { form, dialog, onSubmit } = useNewsletterForm()

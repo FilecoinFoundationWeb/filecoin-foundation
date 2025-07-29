@@ -6,6 +6,6 @@ export type FormLabelDescriptionProps = {
 
 export function FormLabelDescription({ children }: FormLabelDescriptionProps) {
   return (
-    <Description className="text-sm text-brand-100">{children}</Description>
+    <Description className="form-label-description">{children}</Description>
   )
 }

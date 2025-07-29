@@ -1,8 +1,7 @@
 import { Field } from '@headlessui/react'
 
-import { FormError, type FormErrorProps } from '@/components/Form/FormError'
-import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
-
+import { FormError, type FormErrorProps } from './FormError'
+import { FormLabel, type FormLabelProps } from './FormLabel'
 import {
   FormLabelDescription,
   type FormLabelDescriptionProps,

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
   Field,
   Textarea,
@@ -7,14 +5,19 @@ import {
 } from '@headlessui/react'
 import { clsx } from 'clsx'
 
-import { FormError, type FormErrorProps } from '@/components/Form/FormError'
-import { formFieldStyle } from '@/components/Form/FormField'
-import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
-
+import {
+  FormError,
+  type FormErrorProps,
+} from '@filecoin-foundation/ui/FormField'
+import { formFieldStyle } from '@filecoin-foundation/ui/FormField'
+import {
+  FormLabel,
+  type FormLabelProps,
+} from '@filecoin-foundation/ui/FormField'
 import {
   FormLabelDescription,
   type FormLabelDescriptionProps,
-} from '../FormLabelDescription'
+} from '@filecoin-foundation/ui/FormField'
 
 import { CharacterCounter } from './CharacterCounter'
 
@@ -54,8 +57,8 @@ export function FormTextarea({
         {...rest}
         invalid={Boolean(error)}
         className={clsx(
-          'block min-h-44 w-full rounded-lg border border-brand-300 bg-brand-800 px-3.5 py-3 placeholder:text-brand-300 hover:border-brand-400 hover:placeholder:text-brand-400 focus:brand-outline focus:text-brand-100 focus:placeholder:text-brand-100 data-disabled:cursor-not-allowed',
-          error && 'border-brand-error',
+          'form-textarea-input',
+          error && 'form-textarea-input-error',
         )}
       />
       <FormError.Container>

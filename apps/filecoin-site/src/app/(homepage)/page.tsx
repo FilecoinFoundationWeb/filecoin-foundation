@@ -18,6 +18,7 @@ import { CardGridContainer } from '@/components/CardGridContainer'
 import { Container } from '@/components/Container'
 import { LinkCard } from '@/components/LinkCard'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
+import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { Section } from '@/components/Section'
@@ -44,9 +45,11 @@ export default async function Home() {
   return (
     <>
       <BackgroundImage
+        withOpacity
         src={graphicsData.homepageHero.data.src}
         blurDataURL={graphicsData.homepageHero.data.blurDataURL}
       >
+        <Navigation backgroundVariant="transparent" />
         <Section backgroundVariant="transparent">
           <Container>
             <div className="pt-32 pb-24">
@@ -55,7 +58,7 @@ export default async function Home() {
                 description="Keep your data accessible, verifiable, and free from centralized control with the world’s largest decentralized storage network."
               />
             </div>
-            <div className="pb-52">
+            <div className="pb-60">
               <CardGrid as="ul" variant="smTwoLgThreeTight">
                 {networkActions.map(({ title, description, href, icon }) => (
                   <LinkCard
@@ -239,7 +242,7 @@ export default async function Home() {
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
           <CardGridContainer width="4xl">
-            <CardGrid as="ul" variant="mdTwo">
+            <CardGrid as="ul" variant="mdTwoWide">
               {communityLinks.map(({ title, href, icon }) => (
                 <LinkCard
                   key={title}

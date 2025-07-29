@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
   useFormContext,
   Controller,
@@ -7,7 +5,7 @@ import {
   type FieldPathByValue,
 } from 'react-hook-form'
 
-import { FormInput, type FormInputProps } from '@/components/Form/FormInput'
+import { FormInput, type FormInputProps } from './FormInput'
 
 type ExcludedReactHookFormProps =
   | 'defaultValue'

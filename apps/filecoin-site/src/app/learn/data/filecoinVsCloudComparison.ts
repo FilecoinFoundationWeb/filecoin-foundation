@@ -1,39 +1,46 @@
-type ComparisonItem = {
-  filecoin: string
-  traditional: string
+import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
+
+type ComparisonProvider = 'filecoin' | 'traditional-cloud'
+
+type ComparisonFeature = {
+  [key in ComparisonProvider]: string
 }
 
-const filecoinVsCloudComparison: Array<ComparisonItem> = [
+const comparisonFeatures: Array<ComparisonFeature> = [
   {
     filecoin: 'Resilience through global redundancy',
-    traditional: 'Single points of failure',
+    'traditional-cloud': 'Single points of failure',
   },
   {
     filecoin: 'Censorship resistance by design',
-    traditional: 'Susceptible to censorship and takedowns',
+    'traditional-cloud': 'Susceptible to censorship and takedowns',
   },
   {
     filecoin: 'Open, permissionless participation',
-    traditional: 'Controlled by corporate gatekeepers',
+    'traditional-cloud': 'Controlled by corporate gatekeepers',
   },
   {
     filecoin: 'Verifiable storage commitments',
-    traditional: 'Opaque trust models',
+    'traditional-cloud': 'Opaque trust models',
   },
   {
     filecoin: 'Economic incentives for participants',
-    traditional: 'Profits flow to shareholders',
+    'traditional-cloud': 'Profits flow to shareholders',
   },
   {
     filecoin: 'Data outlives institutions',
-    traditional: 'Data loss if provider fails',
+    'traditional-cloud': 'Data loss if provider fails',
   },
 ]
 
-export const filecoinFeatures = filecoinVsCloudComparison.map(
-  (item) => item.filecoin,
-)
-
-export const traditionalCloudFeatures = filecoinVsCloudComparison.map(
-  (item) => item.traditional,
-)
+export const filecoinVsCloudComparison = [
+  {
+    logo: IconLogo,
+    title: 'Filecoin',
+    features: comparisonFeatures.map((item) => item.filecoin),
+  },
+  {
+    title: 'Traditional Cloud',
+    features: comparisonFeatures.map((item) => item['traditional-cloud']),
+  },
+]

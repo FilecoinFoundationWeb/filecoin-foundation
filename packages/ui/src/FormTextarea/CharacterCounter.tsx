@@ -15,14 +15,12 @@ export function CharacterCounter({ count, max, min }: CharacterCounterProps) {
   return (
     <p
       className={clsx(
-        'text-sm',
-        isAboveMax ? 'text-brand-error' : 'text-brand-300',
+        'character-counter',
+        isAboveMax && 'character-counter-error',
       )}
     >
       {count} / {max}
-      {isBelowMin && (
-        <span className="pl-1 text-brand-300">(Minimum {min} characters)</span>
-      )}
+      {isBelowMin && <span className="pl-1">(Minimum {min} characters)</span>}
     </p>
   )
 }

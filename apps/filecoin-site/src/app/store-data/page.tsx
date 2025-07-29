@@ -12,6 +12,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
+import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
@@ -25,10 +26,11 @@ export default function StoreData() {
   return (
     <>
       <BackgroundImage
-        overlayVariant="light"
+        overlayVariant="dark"
         src={graphicsData.storeDataHero.data.src}
         blurDataURL={graphicsData.storeDataHero.data.blurDataURL}
       >
+        <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Decentralized, secure storage for data that matters"

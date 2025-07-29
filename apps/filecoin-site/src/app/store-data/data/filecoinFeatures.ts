@@ -1,6 +1,6 @@
 import {
   CertificateIcon,
-  CurrencyCircleDollarIcon,
+  TagIcon,
   LockKeyIcon,
   GlobeHemisphereWestIcon,
 } from '@phosphor-icons/react/dist/ssr'
@@ -24,7 +24,7 @@ export const filecoinFeatures: Array<CardData> = [
     title: 'Predictable pricing',
     description:
       'Store and retrieve data on your terms, with clear and competitive rates. No hidden pricing or unpredictable egress fees.',
-    icon: CurrencyCircleDollarIcon,
+    icon: TagIcon,
   },
   {
     title: 'Infinitely  scalable for big data',
