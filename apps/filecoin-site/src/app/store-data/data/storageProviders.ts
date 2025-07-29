@@ -77,7 +77,7 @@ export const storageProviders = [
     url: 'https://filemarket.xyz/',
   },
   {
-    name: 'Future Tech Holdings Inc.',
+    name: 'Future Tech Holdings',
     category: 'backup-recovery',
     description:
       'FTH delivers enterprise-grade decentralized cloud services—combining high-speed compute and resilient storage built on Web3 infrastructure. Perfect for startups and developers aiming to scale smart applications quickly and securely.',

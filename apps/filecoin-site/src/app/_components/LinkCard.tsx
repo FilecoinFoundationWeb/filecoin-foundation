@@ -40,9 +40,9 @@ export function LinkCard({
   return (
     <Tag
       className={clsx(
-        'relative flex flex-row border-t',
-        description && 'items-start gap-6 pt-8',
-        !description && 'items-center gap-5 pt-6',
+        'relative flex flex-row border-t pt-8',
+        description && 'items-start gap-6',
+        !description && 'items-center gap-5',
         styles.border,
       )}
     >

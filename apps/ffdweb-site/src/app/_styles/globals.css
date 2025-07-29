@@ -214,7 +214,7 @@
 
   /* CTALINK */
   .cta-link {
-    @apply text-brand-primary-300;
+    @apply text-brand-primary-300 font-bold;
   }
 
   /* FILTER SIDEBAR */

@@ -33,7 +33,7 @@ export function CTALink({
       href={href}
       baseDomain={baseDomain}
       className={clsx(
-        'cta-link focus:brand-outline inline-flex items-center gap-1.5 font-bold hover:underline',
+        'cta-link focus:brand-outline inline-flex items-center gap-1.5 hover:underline',
         inset && 'absolute inset-0',
       )}
     >
