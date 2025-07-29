@@ -5,10 +5,7 @@ import {
   type FieldPathByValue,
 } from 'react-hook-form'
 
-import {
-  FormTextarea,
-  type FormTextareaProps,
-} from '@/components/Form/FormTextarea/FormTextarea'
+import { FormTextarea, type FormTextareaProps } from './FormTextarea'
 
 type ExcludedReactHookFormProps =
   | 'characterCount'

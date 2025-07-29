@@ -200,6 +200,55 @@
     }
   }
 
+  /* FORM */
+  .form-text-input {
+    @apply border-brand-300 bg-brand-800 placeholder:text-brand-300 hover:border-brand-400 hover:placeholder:text-brand-400 focus:brand-outline focus:text-brand-100 focus:placeholder:text-brand-100 block w-full rounded-lg border px-3.5 py-3 data-disabled:cursor-not-allowed;
+
+    &.form-text-input-error {
+      @apply border-brand-error;
+    }
+  }
+
+  .form-textarea-input {
+    @apply border-brand-300 bg-brand-800 placeholder:text-brand-300 hover:border-brand-400 hover:placeholder:text-brand-400 focus:brand-outline focus:text-brand-100 focus:placeholder:text-brand-100 block min-h-44 w-full rounded-lg border px-3.5 py-3 data-disabled:cursor-not-allowed;
+
+    &.form-textarea-input-error {
+      @apply border-brand-error;
+    }
+  }
+
+  & .character-counter {
+    @apply text-brand-300 text-sm;
+
+    &.character-counter-error {
+      @apply text-brand-error;
+    }
+  }
+
+  .form-checkbox-input {
+    @apply bg-brand-100 text-brand-100 group-focus:bg-brand-200 group-focus:outline-brand-100 group-data-checked:bg-brand-400 hover:bg-brand-200 group-data-checked:hover:bg-brand-500 rounded-sm p-0.5 group-focus:outline group-focus:outline-offset-2 group-data-disabled:cursor-not-allowed;
+  }
+
+  .form-checkbox-input-label {
+    @apply text-brand-100;
+  }
+
+  .form-error-description {
+    @apply text-brand-error text-nowrap;
+  }
+
+  .form-label {
+    @apply text-brand-100 inline-block text-base font-bold;
+  }
+
+  .form-label-optional {
+    @apply ml-2 inline-block font-light lowercase;
+  }
+
+  .form-label-description {
+    @apply text-brand-100 text-sm;
+  }
+
   /* ICON BUTTONS */
   .icon-button {
     @apply border-brand-300 text-brand-300 rounded-lg border;

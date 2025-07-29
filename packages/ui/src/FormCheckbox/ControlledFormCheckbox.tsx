@@ -5,10 +5,7 @@ import {
   type FieldPathByValue,
 } from 'react-hook-form'
 
-import {
-  FormCheckbox,
-  type FormCheckboxProps,
-} from '@/components/Form/FormCheckbox'
+import { FormCheckbox, type FormCheckboxProps } from './FormCheckbox'
 
 type ExcludedReactHookFormProps =
   | 'checked'

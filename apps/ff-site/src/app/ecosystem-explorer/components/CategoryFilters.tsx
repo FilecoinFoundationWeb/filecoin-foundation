@@ -2,10 +2,9 @@
 
 import { useQueryState, parseAsString, parseAsArrayOf } from 'nuqs'
 
+import { FormCheckbox } from '@filecoin-foundation/ui/FormCheckbox'
 import { CATEGORY_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { toggleArraySelection } from '@filecoin-foundation/utils/toggleArraySelection'
-
-import { FormCheckbox } from '@/components/Form/FormCheckbox'
 
 import { CATEGORY_QUERY_SEPARATOR_SYMBOL } from '../constants/searchParams'
 import type { useEcosystemCategoryTree } from '../hooks/useEcosystemCategoryTree'
