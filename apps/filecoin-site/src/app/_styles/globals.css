@@ -278,7 +278,7 @@
   }
 
   /* LOGO SECTION */
-  .logos-section {
+  .logo-section {
     .light-section &,
     .gray-section & {
       @apply text-zinc-600;
@@ -289,7 +289,7 @@
     }
   }
 
-  .logos-section-logo-item {
+  .logo-section-logo-item {
     @apply text-zinc-400 transition-colors duration-200;
 
     .light-section &,

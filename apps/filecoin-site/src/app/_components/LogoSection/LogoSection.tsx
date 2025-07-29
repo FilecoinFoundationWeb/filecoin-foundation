@@ -11,7 +11,7 @@ type LogoSectionProps = {
 export function LogoSection({ logos, title, tag = 'h2' }: LogoSectionProps) {
   return (
     <section
-      className="logos-section space-y-20"
+      className="logo-section space-y-20"
       aria-labelledby={title ? 'logo-section-title' : undefined}
     >
       {title && (
