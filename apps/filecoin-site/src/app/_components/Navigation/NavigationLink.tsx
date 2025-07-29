@@ -12,7 +12,7 @@ import { TOUCH_TARGET_NAV_LINK } from './constants'
 type NavigationLinkProps = {
   label: string
   href: LinkProps<PathValues>['href']
-  onClick?: LinkProps<PathValues>['onClick']
+  onNavigate?: LinkProps<PathValues>['onNavigate']
 }
 
 export function NavigationLink({ href, label, ...rest }: NavigationLinkProps) {

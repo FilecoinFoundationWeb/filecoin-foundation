@@ -6,6 +6,7 @@ import { PATHS } from '@/constants/paths'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
+import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
@@ -19,6 +20,7 @@ export default async function Blog() {
 
   return (
     <>
+      <Navigation backgroundVariant="light" />
       <BackgroundImage
         overlayVariant="dark"
         src={featuredPost.image?.url || ''}

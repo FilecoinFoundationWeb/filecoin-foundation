@@ -5,10 +5,10 @@ import DataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import Diagram from '@/assets/graphics/diagram.webp'
 import DigitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
 import EarthFromSpaceAtNight from '@/assets/graphics/earth-from-space-at-night.webp'
+import EarthGlobe from '@/assets/graphics/earth-globe.webp'
 import FilecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import FilecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import FilecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
-import MinimalistEarthGlobe from '@/assets/graphics/minimalist-earth-globe.webp'
 import ServerBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
 
 export const graphicsData = {
@@ -21,7 +21,7 @@ export const graphicsData = {
     alt: 'Earth viewed from space at night showing city lights and continents',
   },
   homepageHero: {
-    data: MinimalistEarthGlobe,
+    data: EarthGlobe,
     alt: 'Minimalist Earth globe with clean geometric design and network connections',
   },
   homepageSection: {

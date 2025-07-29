@@ -293,10 +293,18 @@
   .navigation-link {
     .light-section & {
       @apply text-zinc-600;
+
+      &[aria-current='true'] {
+        @apply text-zinc-950;
+      }
     }
 
     .dark-section & {
       @apply text-zinc-300;
+
+      &[aria-current='true'] {
+        @apply text-zinc-50;
+      }
     }
   }
 
@@ -340,6 +348,31 @@
 
       &[data-current='false']:hover {
         @apply bg-brand-50;
+      }
+    }
+  }
+
+  /* PAGE HEADER */
+  .page-header {
+    & .page-header-title {
+      .light-section &,
+      .gray-section & {
+        @apply text-zinc-900;
+      }
+
+      .dark-section & {
+        @apply text-zinc-50;
+      }
+    }
+
+    & .page-header-description {
+      .light-section &,
+      .gray-section & {
+        @apply text-zinc-600;
+      }
+
+      .dark-section & {
+        @apply text-zinc-50;
       }
     }
   }

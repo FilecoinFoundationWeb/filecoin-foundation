@@ -11,7 +11,7 @@ export function Footer() {
   return (
     <Section as="footer" backgroundVariant="dark">
       <Container>
-        <div className="mt-20 mb-16 flex flex-col gap-16 lg:flex-row lg:gap-10">
+        <div className="flex flex-col gap-16 pt-20 pb-16 lg:flex-row lg:gap-10">
           <div className="self-start lg:self-auto lg:pr-28 xl:pr-36">
             <FooterLogo />
           </div>
