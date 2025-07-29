@@ -420,8 +420,6 @@
   }
 
   .split-section-description-text {
-    @apply text-lg leading-7 text-balance;
-
     .dark-section & {
       @apply text-zinc-50;
     }

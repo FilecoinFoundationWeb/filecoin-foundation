@@ -24,7 +24,7 @@ export function PageHeader({
     <header>
       <div className="flex max-w-3xl flex-col gap-6">
         {kicker && <Kicker size="md">{kicker}</Kicker>}
-        <Heading tag="h1" variant="5xl-medium">
+        <Heading tag="h1" variant="3xl-md5xl-medium">
           {title}
         </Heading>
         {description && <DescriptionText>{description}</DescriptionText>}
