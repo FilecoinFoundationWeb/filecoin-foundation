@@ -5,6 +5,8 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
 
+import { createMetadata } from '@/utils/createMetadata'
+
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -16,6 +18,7 @@ import { SectionContent } from '@/components/SectionContent'
 
 import { ExpertSupportBanner } from './components/ExpertSupportBanner'
 import { StorageProviderList } from './components/StorageProviderList'
+import { STORE_DATA_SEO } from './constants/seo'
 import { filecoinFeatures } from './data/filecoinFeatures'
 
 export default function StoreData() {
@@ -100,3 +103,9 @@ export default function StoreData() {
     </>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: STORE_DATA_SEO.title },
+  description: STORE_DATA_SEO.description,
+  path: PATHS.STORE_DATA.path,
+})
