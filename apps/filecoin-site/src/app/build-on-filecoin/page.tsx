@@ -1,6 +1,9 @@
+import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
@@ -18,6 +21,7 @@ import { SimpleCard } from '@/components/SimpleCard'
 import { SimpleCardWithGradient } from '@/components/SimpleCardWithGradient'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
+import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
 import { blockExplorers } from './data/blockExplorers'
 import { communityConnections } from './data/communityConnections'
 import { developerResources } from './data/developerResources'
@@ -219,3 +223,9 @@ export default function BuildOnFilecoin() {
     </>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: BUILD_ON_FILECOIN_SEO.title },
+  description: BUILD_ON_FILECOIN_SEO.description,
+  path: PATHS.BUILD_ON_FILECOIN.path,
+})
