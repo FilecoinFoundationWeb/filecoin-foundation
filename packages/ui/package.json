@@ -24,6 +24,10 @@
     "./DescriptionText": "./src/DescriptionText.tsx",
     "./DigestArticleHeader": "./src/DigestArticleHeader.tsx",
     "./ErrorMessage": "./src/ErrorMessage.tsx",
+    "./Form": "./src/Form/index.ts",
+    "./FormField": "./src/FormField/index.ts",
+    "./FormInput": "./src/FormInput/index.ts",
+    "./FormCheckbox": "./src/FormCheckbox/index.ts",
     "./FilterListbox": "./src/FilterListbox.tsx",
     "./FilterSidebar": "./src/FilterSidebar.tsx",
     "./GlobalError": "./src/GlobalError.tsx",
@@ -86,6 +90,7 @@
     "postcss": "^8.5.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hook-form": "^7.60.0",
     "schema-dts": "^1.1.5",
     "tailwindcss": "^4.1.11",
     "usehooks-ts": "^3.1.0"

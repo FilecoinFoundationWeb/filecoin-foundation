@@ -5,19 +5,21 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import prettyBytes from 'pretty-bytes'
 import { useForm } from 'react-hook-form'
 
+import { ControlledForm } from '@filecoin-foundation/ui/Form'
+import { ControlledFormCheckbox } from '@filecoin-foundation/ui/FormCheckbox'
+import {
+  FormError,
+  formFieldStyle,
+  FormLabel,
+} from '@filecoin-foundation/ui/FormField'
+import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { Button } from '@/components/Button'
-import { ControlledForm } from '@/components/Form/ControlledForm'
-import { ControlledFormCheckbox } from '@/components/Form/ControlledFormCheckbox'
 import { ControlledFormFileInput } from '@/components/Form/ControlledFormFileInput'
-import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
 import { ControlledFormListbox } from '@/components/Form/ControlledFormListbox'
 import { ControlledFormListboxWithGroups } from '@/components/Form/ControlledFormListboxWithGroups'
 import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea'
-import { FormError } from '@/components/Form/FormError'
-import { formFieldStyle } from '@/components/Form/FormField'
-import { FormLabel } from '@/components/Form/FormLabel'
 import { type GroupedOption } from '@/components/Form/FormListboxWithGroups'
 
 import {

@@ -1,4 +1,4 @@
-import React, { type ElementType } from 'react'
+import { type ElementType } from 'react'
 
 import { Label } from '@headlessui/react'
 import { clsx } from 'clsx'
@@ -22,15 +22,13 @@ export function FormLabel({
       {...rest}
       as={as}
       className={clsx(
-        'inline-block text-base font-bold text-brand-100',
+        'form-label text-brand-100 inline-block text-base font-bold',
         hideLabel && 'sr-only',
       )}
     >
       {label}
       {addOptionalToLabel && (
-        <span className="ml-2 inline-block font-light lowercase">
-          (optional)
-        </span>
+        <span className="form-label-optional">(optional)</span>
       )}
     </Label>
   )
