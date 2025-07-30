@@ -9,14 +9,14 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
-    "@hookform/resolvers": "^5.1.1",
+    "@hookform/resolvers": "^5.2.1",
     "@phosphor-icons/react": "^2.1.10",
-    "next": "^15.4.3",
+    "next": "^15.4.4",
     "nuqs": "^2.4.3",
     "postcss": "^8.5.6",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-hook-form": "^7.60.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.61.1"
   },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
@@ -27,8 +27,8 @@
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^24.1.0",
-    "@types/react": "19.1.8",
-    "@types/react-dom": "19.1.6",
+    "@types/react": "19.1.9",
+    "@types/react-dom": "19.1.7",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
   }
