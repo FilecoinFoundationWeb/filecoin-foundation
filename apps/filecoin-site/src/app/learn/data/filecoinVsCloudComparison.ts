@@ -1,3 +1,5 @@
+import type { ColumnPropsData } from '../components/ComparisonTable/Column'
+
 import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
 
 type ComparisonProvider = 'filecoin' | 'traditional-cloud'
@@ -33,14 +35,13 @@ const comparisonFeatures: Array<ComparisonFeature> = [
   },
 ]
 
-export const filecoinVsCloudComparison = [
-  {
-    logo: IconLogo,
-    title: 'Filecoin',
-    features: comparisonFeatures.map((item) => item.filecoin),
-  },
-  {
-    title: 'Traditional Cloud',
-    features: comparisonFeatures.map((item) => item['traditional-cloud']),
-  },
-]
+export const filecoin: ColumnPropsData = {
+  title: 'Filecoin',
+  features: comparisonFeatures.map((item) => item.filecoin),
+  logo: IconLogo,
+}
+
+export const traditionalCloud: ColumnPropsData = {
+  title: 'Traditional Cloud',
+  features: comparisonFeatures.map((item) => item['traditional-cloud']),
+}

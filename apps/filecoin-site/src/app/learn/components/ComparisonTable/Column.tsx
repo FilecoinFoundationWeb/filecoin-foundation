@@ -3,42 +3,39 @@ import type { SVGProps } from 'react'
 import { CheckIcon, XIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { SectionDivider } from '@/components/SectionDivider'
-
-export type ColumnProps = {
+type ColumnProps = {
+  perspective: 'advantage' | 'disadvantage'
   title: string
   features: Array<string>
-  columnIndex: 1 | 2
   logo?: React.ComponentType<SVGProps<SVGSVGElement>>
 }
 
-const DIVIDER_COLOR = 'divide-zinc-950/15'
+export type ColumnPropsData = Omit<ColumnProps, 'perspective'>
 
 const ICON_CONFIG = {
-  1: {
+  advantage: {
     Icon: CheckIcon,
     color: 'text-brand-700',
   },
-  2: {
+  disadvantage: {
     Icon: XIcon,
     color: 'text-zinc-600',
   },
 }
 
 export function Column({
+  perspective,
   title,
   features,
-  columnIndex,
   logo: Logo,
 }: ColumnProps) {
-  const { Icon, color } = ICON_CONFIG[columnIndex]
+  const { Icon, color } = ICON_CONFIG[perspective]
 
   return (
     <div
       className={clsx(
-        DIVIDER_COLOR,
-        'text-center first:text-zinc-950 last:text-zinc-600 md:divide-y md:last:border-l md:last:border-zinc-950/15',
-        columnIndex === 2 ? 'order-first md:order-none' : 'order-none',
+        'text-center',
+        perspective === 'advantage' ? 'text-zinc-950' : 'text-zinc-600',
       )}
     >
       <div className="py-6 text-2xl font-medium text-zinc-950 md:py-18">
@@ -48,7 +45,7 @@ export function Column({
         </div>
       </div>
 
-      <ul className={clsx(DIVIDER_COLOR, 'md:space-y-3 md:divide-y')}>
+      <ul className="divide-zinc-950/15 md:space-y-3 md:divide-y">
         {features.map((feature) => (
           <li
             key={feature}
