@@ -31,7 +31,7 @@ export function PageHeader({
         )}
       </div>
 
-      {cta && <div className="mt-10">{cta}</div>}
+      {cta && <div className="mt-10 grid md:block">{cta}</div>}
     </header>
   )
 }
