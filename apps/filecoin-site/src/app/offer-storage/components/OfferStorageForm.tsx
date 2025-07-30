@@ -79,7 +79,7 @@ export function OfferStorageForm() {
             Filecoin Foundation Privacy Policy
           </ExternalTextLink>{' '}
           and the{' '}
-          <ExternalTextLink href="#">
+          <ExternalTextLink href="https://www.protocol.ai/legal/#privacy-policy">
             Protocol Labs Privacy Policy
           </ExternalTextLink>{' '}
           for additional information on our privacy practices. Please select
