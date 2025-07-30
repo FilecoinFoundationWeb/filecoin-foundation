@@ -5,17 +5,10 @@ import { storageProviders } from '../data/storageProviders'
 
 import { StorageCategoryCheckbox } from './StorageCategoryCheckbox'
 
-type StorageCategoryCheckboxListProps = {
-  activeFilters: Array<string>
-  setFilters: (
-    value: Array<string> | ((old: Array<string>) => Array<string>),
-  ) => unknown
-}
-
 export function StorageCategoryCheckboxList({
   activeFilters,
   setFilters,
-}: StorageCategoryCheckboxListProps) {
+}: StorageCategoryFilterProps) {
   return (
     <div className="grid grid-cols-5 gap-8">
       {storageCategories.map(({ name, description, id }) => {

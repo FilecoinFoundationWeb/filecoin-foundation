@@ -49,8 +49,11 @@ export function StorageProviderList() {
           />
         </div>
 
-        <div className="xl:hidden">
-          <StorageCategoryListbox />
+        <div className="max-w-xl xl:hidden">
+          <StorageCategoryListbox
+            activeFilters={filters}
+            setFilters={setFilters}
+          />
         </div>
       </fieldset>
 
