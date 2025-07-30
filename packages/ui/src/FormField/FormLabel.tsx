@@ -25,7 +25,7 @@ export function FormLabel({
     >
       {label}
       {addOptionalToLabel && (
-        <span className="form-label-optional">(optional)</span>
+        <span className="form-label-optional-text">(optional)</span>
       )}
     </Label>
   )
