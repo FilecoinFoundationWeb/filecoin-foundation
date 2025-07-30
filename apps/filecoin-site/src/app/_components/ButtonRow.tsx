@@ -15,7 +15,7 @@ export function ButtonRow({ buttons, centered }: ButtonRowProps) {
   return (
     <div
       className={clsx(
-        'flex flex-col flex-wrap gap-3 sm:flex-row',
+        'flex flex-col flex-wrap gap-6 sm:flex-row',
         centered && 'justify-center',
       )}
     >
