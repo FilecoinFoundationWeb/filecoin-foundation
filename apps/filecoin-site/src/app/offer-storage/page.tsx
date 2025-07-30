@@ -144,7 +144,7 @@ export default function OfferStorage() {
           title="Optimize your storage potential"
           description="The Filecoin Network rewards storage providers through a self-sustaining marketplace designed for long-term commitment and resilience."
         >
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
+          <CardGrid as="ul" variant="lgThree">
             {filecoinEarningsInsights.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
