@@ -1,13 +1,23 @@
-import { PageHeader } from '@/components/PageHeader'
+import { Heading } from '@/components/Heading'
 import { PageSection } from '@/components/PageSection'
 
-export default function OfferStorageOnboarding() {
+import { OfferStorageForm } from '../components/OfferStorageForm'
+
+export default function OfferStorageFormPage() {
   return (
     <PageSection backgroundVariant="light">
-      <PageHeader
-        title="Thanks for your interest in offering storage on the Filecoin network."
-        description="Please fill out this form below, and a member of the onboarding team will reach out to guide you through next steps in becoming a storage provider."
-      />
+      <div className="max-w-4xl">
+        <Heading tag="h2" variant="5xl-medium">
+          Thanks for your interest in offering storage on the Filecoin network.
+        </Heading>
+        <p className="pt-6 pb-25 text-xl leading-8 font-normal text-balance text-zinc-600">
+          Please fill out this form below, and a member of the onboarding team
+          will reach out to guide you through next steps in becoming a storage
+          provider.
+        </p>
+
+        <OfferStorageForm />
+      </div>
     </PageSection>
   )
 }
