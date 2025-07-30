@@ -19,7 +19,7 @@ export function SectionSubContent({
   centerCTA,
 }: SectionSubContentProps) {
   return (
-    <div className="space-y-20">
+    <div className="space-y-10 md:space-y-20">
       <div className="max-w-2xl">
         <Heading
           tag={headingTag}
