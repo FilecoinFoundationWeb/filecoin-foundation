@@ -57,7 +57,7 @@ export function OfferStorageForm() {
       />
 
       <ControlledFormInput<OfferStorageFormData>
-        name="company"
+        name="companyName"
         label="Company Name"
         placeholder="Company Co"
         disabled={isSubmitting}
