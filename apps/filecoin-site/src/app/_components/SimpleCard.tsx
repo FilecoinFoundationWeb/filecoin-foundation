@@ -36,6 +36,8 @@ export function SimpleCard({
   badge,
   border = 'all',
 }: SimpleCardProps) {
+  const hasOnlyTopBorder = border === 'only-top'
+
   return (
     <Tag
       className={clsx(
@@ -44,13 +46,23 @@ export function SimpleCard({
         borderClasses[border],
       )}
     >
-      <div className="flex flex-col gap-6 p-6">
+      <div
+        className={clsx(
+          'flex flex-col gap-6',
+          hasOnlyTopBorder ? 'pt-8 pb-6' : 'p-6',
+        )}
+      >
         {badge && (
           <div className="flex">
             <Badge>{badge}</Badge>
           </div>
         )}
-        <div className="mb-12 flex flex-col gap-3">
+        <div
+          className={clsx(
+            'flex flex-col gap-3',
+            hasOnlyTopBorder ? 'mb-6' : 'mb-12',
+          )}
+        >
           <Heading tag="h3" variant="xl-medium">
             {title}
           </Heading>
@@ -61,7 +73,10 @@ export function SimpleCard({
             inset
             href={cta.href}
             aria-label={cta.text}
-            textClassName="absolute bottom-6 left-6"
+            textClassName={clsx(
+              'absolute',
+              hasOnlyTopBorder ? 'bottom-0' : 'bottom-6 left-6',
+            )}
           >
             {cta.text}
           </CTALink>
