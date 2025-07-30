@@ -3,10 +3,12 @@ import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_URLS, SEO } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
+
+import { createMetadata } from '@/utils/createMetadata'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
@@ -258,3 +260,10 @@ export default async function Home() {
     </>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: SEO.title },
+  description: SEO.description,
+  path: PATHS.HOME.path,
+  image: '', // #todo: add image
+})
