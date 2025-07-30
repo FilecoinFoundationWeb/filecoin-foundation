@@ -13,7 +13,7 @@ import { Button } from '@/components/Button'
 import {
   OfferStorageFormSchema,
   type OfferStorageFormData,
-} from '../types/OfferStorageFormSchema'
+} from '../schema/OfferStorageFormSchema'
 
 import { OfferStoragePrivacyDisclaimer } from './OfferStoragePrivacyDisclaimer'
 
