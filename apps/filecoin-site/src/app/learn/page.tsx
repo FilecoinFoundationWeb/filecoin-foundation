@@ -3,7 +3,6 @@ import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
-
 import { createMetadata } from '@/utils/createMetadata'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
