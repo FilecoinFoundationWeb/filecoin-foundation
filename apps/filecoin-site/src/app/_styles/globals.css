@@ -286,7 +286,7 @@
       @apply focus:border-brand-700 border-zinc-500 placeholder:text-zinc-400 hover:border-zinc-600 hover:placeholder:text-zinc-500 focus:bg-zinc-50 focus:outline-none focus:placeholder:text-zinc-500;
 
       &[data-invalid] {
-        @apply border-brand-error!;
+        @apply border-brand-error;
       }
     }
 
@@ -294,7 +294,7 @@
       @apply focus:border-brand-500 border-zinc-400 placeholder-zinc-400 hover:border-zinc-50 focus:bg-zinc-900 focus:outline-none;
 
       &[data-invalid] {
-        @apply border-brand-error!;
+        @apply border-brand-error;
       }
     }
   }
