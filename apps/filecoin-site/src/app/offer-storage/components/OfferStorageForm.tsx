@@ -7,7 +7,6 @@ import { ControlledForm } from '@filecoin-foundation/ui/Form'
 import { ControlledFormCheckbox } from '@filecoin-foundation/ui/FormCheckbox'
 import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
 import { ControlledFormTextarea } from '@filecoin-foundation/ui/FormTextarea'
-import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { Button } from '@/components/Button'
 
@@ -15,6 +14,8 @@ import {
   OfferStorageFormSchema,
   type OfferStorageFormData,
 } from '../types/OfferStorageFormSchema'
+
+import { OfferStoragePrivacyDisclaimer } from './OfferStoragePrivacyDisclaimer'
 
 export function OfferStorageForm() {
   const form = useForm<OfferStorageFormData>({
@@ -71,20 +72,7 @@ export function OfferStorageForm() {
       />
 
       <div className="space-y-8">
-        <p className="text-zinc-600">
-          From time to time, we would like to contact you about our products and
-          services, as well as other content that may be of interest to you.
-          Please review the{' '}
-          <ExternalTextLink href="https://fil.org/privacy-policy">
-            Filecoin Foundation Privacy Policy
-          </ExternalTextLink>{' '}
-          and the{' '}
-          <ExternalTextLink href="https://www.protocol.ai/legal/#privacy-policy">
-            Protocol Labs Privacy Policy
-          </ExternalTextLink>{' '}
-          for additional information on our privacy practices. Please select
-          one:
-        </p>
+        <OfferStoragePrivacyDisclaimer />
 
         <ControlledFormCheckbox<OfferStorageFormData>
           name="communicationOptIn"
