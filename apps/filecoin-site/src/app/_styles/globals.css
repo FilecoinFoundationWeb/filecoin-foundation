@@ -303,10 +303,10 @@
 
   .form-label {
     @apply inline-block text-sm font-medium text-zinc-950;
-  }
 
-  .form-label-optional {
-    @apply ml-1 inline-block font-light;
+    & .form-label-optional {
+      @apply ml-1 inline-block font-light;
+    }
   }
 
   .form-label-description {

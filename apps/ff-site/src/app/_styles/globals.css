@@ -239,10 +239,10 @@
 
   .form-label {
     @apply text-brand-100 inline-block text-base font-bold;
-  }
 
-  .form-label-optional {
-    @apply ml-2 inline-block font-light lowercase;
+    & .form-label-optional {
+      @apply ml-2 inline-block font-light lowercase;
+    }
   }
 
   .form-label-description {
