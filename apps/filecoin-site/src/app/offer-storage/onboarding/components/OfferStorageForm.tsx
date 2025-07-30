@@ -33,43 +33,45 @@ export function OfferStorageForm() {
       className="space-y-15"
       onSubmit={(data) => console.log(data)}
     >
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+      <div className="space-y-10">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+          <ControlledFormInput<OfferStorageFormData>
+            name="firstName"
+            label="First name"
+            placeholder="Alex"
+            disabled={isSubmitting}
+          />
+          <ControlledFormInput<OfferStorageFormData>
+            name="lastName"
+            label="Last name"
+            placeholder="Smith"
+            disabled={isSubmitting}
+          />
+        </div>
+
         <ControlledFormInput<OfferStorageFormData>
-          name="firstName"
-          label="First name"
-          placeholder="Alex"
+          name="businessEmail"
+          label="Business email address"
+          type="email"
+          placeholder="alex@company.com"
           disabled={isSubmitting}
         />
+
         <ControlledFormInput<OfferStorageFormData>
-          name="lastName"
-          label="Last name"
-          placeholder="Smith"
+          name="companyName"
+          label="Company name"
+          placeholder="Company Co"
+          disabled={isSubmitting}
+        />
+
+        <ControlledFormTextarea<OfferStorageFormData>
+          addOptionalToLabel
+          name="additionalInfo"
+          label="Additional information"
+          placeholder="Share details about your setup, goals, or anything you'd like us to know."
           disabled={isSubmitting}
         />
       </div>
-
-      <ControlledFormInput<OfferStorageFormData>
-        name="businessEmail"
-        label="Business email address"
-        type="email"
-        placeholder="alex@company.com"
-        disabled={isSubmitting}
-      />
-
-      <ControlledFormInput<OfferStorageFormData>
-        name="companyName"
-        label="Company name"
-        placeholder="Company Co"
-        disabled={isSubmitting}
-      />
-
-      <ControlledFormTextarea<OfferStorageFormData>
-        addOptionalToLabel
-        name="additionalInfo"
-        label="Additional information"
-        placeholder="Share details about your setup, goals, or anything you'd like us to know."
-        disabled={isSubmitting}
-      />
 
       <div className="space-y-8">
         <OfferStoragePrivacyDisclaimer />
