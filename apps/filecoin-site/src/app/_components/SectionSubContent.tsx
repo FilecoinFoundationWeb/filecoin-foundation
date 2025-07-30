@@ -23,7 +23,7 @@ export function SectionSubContent({
       <div className="max-w-2xl">
         <Heading
           tag={headingTag}
-          variant="3xl-medium"
+          variant="2xl-md3xl-medium"
           className="section-sub-content-heading-text"
         >
           {title}
