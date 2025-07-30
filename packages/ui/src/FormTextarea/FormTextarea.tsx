@@ -25,7 +25,7 @@ type ExcludedHeadlessUIProps = 'invalid' | 'className'
 
 export type FormTextareaProps = {
   minCharacter?: number
-  maxCharacter: number
+  maxCharacter?: number
   characterCount: number
   description?: FormLabelDescriptionProps['children']
 } & Omit<HeadlessTextareaProps, ExcludedHeadlessUIProps> &
@@ -38,6 +38,7 @@ export function FormTextarea({
   hideLabel,
   characterCount,
   maxCharacter,
+  addOptionalToLabel,
   minCharacter,
   description,
   ...rest
@@ -46,29 +47,36 @@ export function FormTextarea({
     <Field className={formFieldStyle}>
       {description ? (
         <div className="space-y-1">
-          <FormLabel label={label} hideLabel={hideLabel} />
+          <FormLabel
+            label={label}
+            hideLabel={hideLabel}
+            addOptionalToLabel={addOptionalToLabel}
+          />
           <FormLabelDescription>{description}</FormLabelDescription>
         </div>
       ) : (
-        <FormLabel label={label} hideLabel={hideLabel} />
+        <FormLabel
+          label={label}
+          hideLabel={hideLabel}
+          addOptionalToLabel={addOptionalToLabel}
+        />
       )}
 
       <Textarea
         {...rest}
         invalid={Boolean(error)}
-        className={clsx(
-          'form-textarea-input',
-          error && 'form-textarea-input-error',
-        )}
+        className="form-textarea-input"
       />
       <FormError.Container>
         <div className="flex items-center justify-between gap-1">
           <FormError.Message error={error} />
-          <CharacterCounter
-            count={characterCount}
-            max={maxCharacter}
-            min={minCharacter}
-          />
+          {maxCharacter && (
+            <CharacterCounter
+              count={characterCount}
+              max={maxCharacter}
+              min={minCharacter}
+            />
+          )}
         </div>
       </FormError.Container>
     </Field>

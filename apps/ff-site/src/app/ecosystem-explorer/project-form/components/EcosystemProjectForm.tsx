@@ -38,8 +38,6 @@ import { getYearOptions } from '../utils/getYearOptions'
 
 import { FormSection } from './FormSection'
 
-type StringOrUndefined = string | undefined
-
 type ProjectFormProps = {
   groupedCategoryOptions: Array<GroupedOption>
   initialValues: EcosystemProjectFormDataWithoutLogo
@@ -175,7 +173,7 @@ export function EcosystemProjectForm({
           disabled={isSubmitting}
         />
 
-        <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
+        <ControlledFormInput<EcosystemProjectFormData>
           addOptionalToLabel
           name="youtubeUrl"
           label="YouTube video URL"
@@ -184,7 +182,7 @@ export function EcosystemProjectForm({
           disabled={isSubmitting}
         />
 
-        <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
+        <ControlledFormInput<EcosystemProjectFormData>
           addOptionalToLabel
           name="githubUrl"
           label="GitHub repository URL"
@@ -193,7 +191,7 @@ export function EcosystemProjectForm({
           disabled={isSubmitting}
         />
 
-        <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
+        <ControlledFormInput<EcosystemProjectFormData>
           addOptionalToLabel
           name="xUrl"
           label="X (Twitter) profile URL"

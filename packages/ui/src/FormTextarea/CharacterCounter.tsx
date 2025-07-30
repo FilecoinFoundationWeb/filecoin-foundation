@@ -4,7 +4,7 @@ import type { FormTextareaProps } from './FormTextarea'
 
 type CharacterCounterProps = {
   count: FormTextareaProps['characterCount']
-  max: FormTextareaProps['maxCharacter']
+  max: NonNullable<FormTextareaProps['maxCharacter']>
   min: FormTextareaProps['minCharacter']
 }
 

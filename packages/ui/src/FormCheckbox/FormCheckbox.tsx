@@ -24,7 +24,7 @@ export function FormCheckbox({
   ...rest
 }: FormCheckboxProps) {
   return (
-    <Field className="flex items-center gap-3">
+    <Field className="flex items-center">
       <Checkbox
         {...rest}
         className={clsx(

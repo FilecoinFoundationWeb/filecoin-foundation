@@ -24,38 +24,29 @@ export function NewsletterForm() {
       onSubmit={handleSubmit(submitForm)}
     >
       <Field>
-        <Label className="text-sm font-medium">
-          Sign up for Filecoin updates
-        </Label>
-        <div className="relative flex items-center gap-4">
+        <Label className="form-label">Sign up for Filecoin updates</Label>
+        <div className="relative flex items-center gap-4 pt-1">
           <Input
             {...register('email', { required: true })}
             type="email"
             invalid={Boolean(error)}
             placeholder="Your email"
             autoComplete="email"
-            className="form-input h-14 w-full border-b border-zinc-400 placeholder-zinc-400 placeholder:text-sm hover:border-white focus:border-white focus:ring-0 focus:outline-none data-invalid:border-red-500"
+            className="form-text-input"
           />
           <Button
             disabled={formState.isSubmitting}
             className="absolute right-0 -mr-1 flex h-12 w-12 cursor-pointer items-center justify-center"
             type="submit"
           >
-            <div className="relative inline-block">
-              <div
-                className="absolute inset-0"
-                style={{
-                  content: '',
-                  background: 'var(--gradient-brand-dark)',
-                  mixBlendMode: 'multiply',
-                }}
-              />
+            {/* TODO: Add gradient to icon */}
+            <div className="text-brand-600 relative inline-block">
               <Icon component={ArrowRightIcon} weight="bold" size={24} />
             </div>
           </Button>
         </div>
 
-        {error && <p className="mt-2 text-sm text-red-300">{error}</p>}
+        {error && <p className="form-error-description mt-2">{error}</p>}
       </Field>
     </form>
   )

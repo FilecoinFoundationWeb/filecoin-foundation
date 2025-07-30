@@ -209,7 +209,7 @@
   .form-text-input {
     @apply border-brand-300 bg-brand-800 placeholder:text-brand-300 hover:border-brand-400 hover:placeholder:text-brand-400 focus:brand-outline focus:text-brand-100 focus:placeholder:text-brand-100 block w-full rounded-lg border px-3.5 py-3 data-disabled:cursor-not-allowed;
 
-    &.form-text-input-error {
+    &[data-invalid] {
       @apply border-brand-error;
     }
   }
@@ -217,7 +217,7 @@
   .form-textarea-input {
     @apply border-brand-300 bg-brand-800 placeholder:text-brand-300 hover:border-brand-400 hover:placeholder:text-brand-400 focus:brand-outline focus:text-brand-100 focus:placeholder:text-brand-100 block min-h-44 w-full rounded-lg border px-3.5 py-3 data-disabled:cursor-not-allowed;
 
-    &.form-textarea-input-error {
+    &[data-invalid] {
       @apply border-brand-error;
     }
   }
@@ -235,7 +235,7 @@
   }
 
   .form-checkbox-input-label {
-    @apply text-brand-100;
+    @apply text-brand-100 ml-3;
   }
 
   .form-error-description {
@@ -244,10 +244,10 @@
 
   .form-label {
     @apply text-brand-100 inline-block text-base font-bold;
-  }
 
-  .form-label-optional {
-    @apply ml-2 inline-block font-light lowercase;
+    & .form-label-optional-text {
+      @apply ml-2 inline-block font-light lowercase;
+    }
   }
 
   .form-label-description {

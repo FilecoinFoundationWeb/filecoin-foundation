@@ -17,6 +17,8 @@
   --color-brand-950: oklch(0.33 0.0795 249.37); /* #0E385D */
 
   --color-icon-success: var(--color-green-500);
+  --color-brand-error: var(--color-red-500);
+  --color-brand-error-dark: var(--color-red-300);
 
   --gradient-brand-dark: linear-gradient(
     90deg,
@@ -274,6 +276,78 @@
 
     .dark-section & {
       @apply text-zinc-300;
+    }
+  }
+
+  /* FORM */
+  .form-text-input {
+    @apply block w-full border-b py-3 placeholder:text-sm data-disabled:cursor-not-allowed;
+
+    .light-section &,
+    .gray-section & {
+      @apply focus:border-brand-700 border-zinc-500 placeholder:text-zinc-400 hover:border-zinc-600 hover:placeholder:text-zinc-500 focus:bg-zinc-50 focus:outline-none focus:placeholder:text-zinc-500;
+
+      &[data-invalid] {
+        @apply border-brand-error;
+      }
+    }
+
+    .dark-section & {
+      @apply focus:border-brand-500 border-zinc-400 placeholder-zinc-400 hover:border-zinc-50 focus:bg-zinc-900 focus:outline-none;
+
+      &[data-invalid] {
+        @apply border-brand-error;
+      }
+    }
+  }
+
+  .form-textarea-input {
+    @apply focus:border-brand-700 block min-h-32 w-full border-b border-zinc-500 py-3 placeholder:text-sm placeholder:text-zinc-400 hover:border-zinc-600 hover:placeholder:text-zinc-500 focus:bg-zinc-50 focus:outline-none focus:placeholder:text-zinc-500 data-disabled:cursor-not-allowed;
+
+    &[data-invalid] {
+      @apply border-brand-error!;
+    }
+  }
+
+  .form-checkbox-input {
+    @apply group-focus:outline-brand-600 group-data-checked:bg-brand-600 group-data-checked:ring-brand-600 group-data-checked:hover:bg-brand-700 group-data-checked:hover:ring-brand-700 text-brand-100 rounded-sm bg-zinc-100 p-0.5 ring ring-zinc-600 group-focus:bg-zinc-200 group-focus:outline-2 group-focus:outline-offset-3 group-data-disabled:cursor-not-allowed hover:bg-zinc-200;
+  }
+
+  .form-checkbox-input-label {
+    @apply ml-4 text-zinc-600;
+  }
+
+  .form-label {
+    @apply inline-block text-sm font-medium;
+
+    .light-section &,
+    .gray-section & {
+      @apply text-zinc-950;
+    }
+
+    .dark-section & {
+      @apply text-zinc-50;
+    }
+
+    & .form-label-optional-text {
+      @apply ml-1 inline-block font-light;
+    }
+  }
+
+  .form-label-description {
+    @apply text-brand-100 text-sm;
+  }
+
+  .form-error-description {
+    @apply text-sm text-nowrap;
+
+    .light-section &,
+    .gray-section & {
+      @apply text-brand-error;
+    }
+
+    .dark-section & {
+      @apply text-brand-error-dark;
     }
   }
 
