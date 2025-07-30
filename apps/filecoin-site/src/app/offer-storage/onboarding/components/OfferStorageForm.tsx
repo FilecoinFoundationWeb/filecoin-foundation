@@ -80,9 +80,11 @@ export function OfferStorageForm() {
         />
       </div>
 
-      <Button variant="primary" type="submit">
-        Book onboarding call
-      </Button>
+      <div className="grid md:block">
+        <Button variant="primary" type="submit">
+          Book onboarding call
+        </Button>
+      </div>
     </ControlledForm>
   )
 }
