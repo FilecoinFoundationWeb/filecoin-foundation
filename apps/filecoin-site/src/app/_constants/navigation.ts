@@ -3,7 +3,13 @@ import { FILECOIN_URLS } from './siteMetadata'
 
 type NavItem = { label: string; href: string }
 
-const { social: socialLinks, docs, github, security, ecosystemExplorer } = FILECOIN_URLS
+const {
+  social: socialLinks,
+  docs,
+  github,
+  security,
+  ecosystemExplorer,
+} = FILECOIN_URLS
 
 const social: NavItem[] = [
   {
@@ -33,6 +39,7 @@ const resources: NavItem[] = [
   { label: 'GitHub', href: github },
   { label: 'Security', href: security },
   { label: 'Ecosystem Explorer', href: ecosystemExplorer },
+  { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
 ]
 
 const navigation: NavItem[] = [
