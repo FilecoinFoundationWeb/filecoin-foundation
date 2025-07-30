@@ -65,10 +65,7 @@ export function FormTextarea({
       <Textarea
         {...rest}
         invalid={Boolean(error)}
-        className={clsx(
-          'form-textarea-input',
-          error && 'form-textarea-input-error',
-        )}
+        className="form-textarea-input"
       />
       <FormError.Container>
         <div className="flex items-center justify-between gap-1">

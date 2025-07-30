@@ -9,10 +9,6 @@ export function OfferStoragePrivacyDisclaimer() {
       <ExternalTextLink href="https://fil.org/privacy-policy">
         Filecoin Foundation Privacy Policy
       </ExternalTextLink>{' '}
-      and the{' '}
-      <ExternalTextLink href="https://www.protocol.ai/legal/#privacy-policy">
-        Protocol Labs Privacy Policy
-      </ExternalTextLink>{' '}
       for additional information on our privacy practices.
     </p>
   )

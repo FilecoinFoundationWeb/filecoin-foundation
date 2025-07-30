@@ -36,14 +36,14 @@ export function OfferStorageForm() {
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
         <ControlledFormInput<OfferStorageFormData>
           name="firstName"
-          label="First Name"
-          placeholder="First Name"
+          label="First name"
+          placeholder="Alex"
           disabled={isSubmitting}
         />
         <ControlledFormInput<OfferStorageFormData>
           name="lastName"
-          label="Last Name"
-          placeholder="Last Name"
+          label="Last name"
+          placeholder="Smith"
           disabled={isSubmitting}
         />
       </div>
@@ -58,7 +58,7 @@ export function OfferStorageForm() {
 
       <ControlledFormInput<OfferStorageFormData>
         name="companyName"
-        label="Company Name"
+        label="Company name"
         placeholder="Company Co"
         disabled={isSubmitting}
       />
@@ -66,7 +66,7 @@ export function OfferStorageForm() {
       <ControlledFormTextarea<OfferStorageFormData>
         addOptionalToLabel
         name="additionalInfo"
-        label="Additional Information"
+        label="Additional information"
         placeholder="Share details about your setup, goals, or anything you'd like us to know."
         disabled={isSubmitting}
       />
@@ -76,7 +76,7 @@ export function OfferStorageForm() {
 
         <ControlledFormCheckbox<OfferStorageFormData>
           name="communicationOptIn"
-          label="I agree to receive other communications from Protocol Labs and Filecoin Foundation. You may unsubscribe from these communications at any time."
+          label="I agree to receive other communications from Filecoin Foundation. You may unsubscribe from these communications at any time."
         />
       </div>
 

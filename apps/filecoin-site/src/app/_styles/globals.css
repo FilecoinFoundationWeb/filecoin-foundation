@@ -18,6 +18,7 @@
 
   --color-icon-success: var(--color-green-500);
   --color-brand-error: var(--color-red-500);
+  --color-brand-error-dark: var(--color-red-300);
 
   --gradient-brand-dark: linear-gradient(
     90deg,
@@ -278,18 +279,31 @@
 
   /* FORM */
   .form-text-input {
-    @apply focus:border-brand-600 block w-full border-b border-zinc-500 py-3 placeholder:text-zinc-400 hover:border-zinc-600 hover:placeholder:text-zinc-500 focus:bg-zinc-50 focus:outline-none focus:placeholder:text-zinc-500 data-disabled:cursor-not-allowed;
+    @apply block w-full border-b py-3 placeholder:text-sm data-disabled:cursor-not-allowed;
 
-    &.form-text-input-error {
-      @apply border-brand-error;
+    .light-section &,
+    .gray-section & {
+      @apply focus:border-brand-700 border-zinc-500 placeholder:text-zinc-400 hover:border-zinc-600 hover:placeholder:text-zinc-500 focus:bg-zinc-50 focus:outline-none focus:placeholder:text-zinc-500;
+
+      &[data-invalid] {
+        @apply border-brand-error!;
+      }
+    }
+
+    .dark-section & {
+      @apply focus:border-brand-500 border-zinc-400 placeholder-zinc-400 hover:border-zinc-50 focus:bg-zinc-900 focus:outline-none;
+
+      &[data-invalid] {
+        @apply border-brand-error!;
+      }
     }
   }
 
   .form-textarea-input {
-    @apply focus:border-brand-600 block min-h-32 w-full border-b border-zinc-500 py-3 placeholder:text-zinc-400 hover:border-zinc-600 hover:placeholder:text-zinc-500 focus:bg-zinc-50 focus:outline-none focus:placeholder:text-zinc-500 data-disabled:cursor-not-allowed;
+    @apply focus:border-brand-700 block min-h-32 w-full border-b border-zinc-500 py-3 placeholder:text-sm placeholder:text-zinc-400 hover:border-zinc-600 hover:placeholder:text-zinc-500 focus:bg-zinc-50 focus:outline-none focus:placeholder:text-zinc-500 data-disabled:cursor-not-allowed;
 
-    &.form-textarea-input-error {
-      @apply border-brand-error;
+    &[data-invalid] {
+      @apply border-brand-error!;
     }
   }
 
@@ -302,7 +316,16 @@
   }
 
   .form-label {
-    @apply inline-block text-sm font-medium text-zinc-950;
+    @apply inline-block text-sm font-medium;
+
+    .light-section &,
+    .gray-section & {
+      @apply text-zinc-950;
+    }
+
+    .dark-section & {
+      @apply text-zinc-50;
+    }
 
     & .form-label-optional {
       @apply ml-1 inline-block font-light;
@@ -314,7 +337,16 @@
   }
 
   .form-error-description {
-    @apply text-brand-error text-nowrap;
+    @apply text-sm text-nowrap;
+
+    .light-section &,
+    .gray-section & {
+      @apply text-brand-error;
+    }
+
+    .dark-section & {
+      @apply text-brand-error-dark;
+    }
   }
 
   /* LOGO SECTION */
