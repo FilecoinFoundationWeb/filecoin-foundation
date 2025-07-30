@@ -39,16 +39,8 @@ export function NewsletterForm() {
             className="absolute right-0 -mr-1 flex h-12 w-12 cursor-pointer items-center justify-center"
             type="submit"
           >
-            <div className="relative inline-block">
-              {/* Remove background from icon button */}
-              <div
-                className="absolute inset-0"
-                style={{
-                  content: '',
-                  background: 'var(--gradient-brand-dark)',
-                  mixBlendMode: 'multiply',
-                }}
-              />
+            {/* TODO: Add gradient to icon */}
+            <div className="text-brand-600 relative inline-block">
               <Icon component={ArrowRightIcon} weight="bold" size={24} />
             </div>
           </Button>
