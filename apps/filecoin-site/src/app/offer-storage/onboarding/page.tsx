@@ -1,7 +1,7 @@
 import { Heading } from '@/components/Heading'
 import { PageSection } from '@/components/PageSection'
 
-import { OfferStorageForm } from '../components/OfferStorageForm'
+import { OfferStorageForm } from './components/OfferStorageForm'
 
 export default function OfferStorageFormPage() {
   return (
