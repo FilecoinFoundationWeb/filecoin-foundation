@@ -48,10 +48,12 @@ export default function StoreData() {
       </BackgroundImage>
 
       <PageSection backgroundVariant="dark">
-        <LogoSection
-          title="Trusted by industry leaders"
-          logos={trustedByLogos}
-        />
+        <div className="-mb-10">
+          <LogoSection
+            title="Trusted by industry leaders"
+            logos={trustedByLogos}
+          />
+        </div>
       </PageSection>
 
       <PageSection backgroundVariant="dark">
