@@ -17,11 +17,12 @@ const variantStyles = {
   '3xl-medium': 'text-3xl font-medium',
   'xl-medium': 'text-xl font-medium',
   'xl-regular': 'text-xl font-normal',
-  'xl-md2xl-medium': 'text-xl md:text-2xl font-medium',
+  'lg-regular': 'text-lg font-normal',
   'base-medium': 'text-base font-medium',
   '4xl-md6xl-medium': 'text-4xl font-medium md:text-6xl md:leading-16',
   '3xl-md5xl-medium': 'text-3xl font-medium md:leading-14 md:text-5xl',
   '2xl-md3xl-medium': 'text-2xl font-medium md:text-3xl',
+  'xl-md2xl-medium': 'text-xl md:text-2xl font-medium',
 }
 
 export function Heading({ tag, variant, className, children }: HeadingProps) {
