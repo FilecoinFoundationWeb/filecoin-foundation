@@ -368,7 +368,7 @@
 
   /* NAVIGATION */
   .mobile-navigation {
-    @apply flex flex-col gap-2 divide-y;
+    @apply flex flex-col divide-y;
 
     .light-section & {
       @apply divide-zinc-950/15;

@@ -5,9 +5,14 @@ import { usePathname } from 'next/navigation'
 
 import { clsx } from 'clsx'
 
+import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
+
 import type { PathValues } from '@/constants/paths'
 
-import { TOUCH_TARGET_NAV_LINK } from './constants'
+const TOUCH_TARGET_NAV_LINK = {
+  touchAreaPadding: 'p-6',
+  touchAreaOffset: '-mx-6',
+} as const satisfies TouchTarget
 
 type NavigationLinkProps = {
   label: string

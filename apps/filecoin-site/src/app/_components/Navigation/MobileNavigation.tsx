@@ -46,7 +46,7 @@ export function MobileNavigation({ backgroundVariant }: MobileNavigationProps) {
           </div>
           <ul aria-label="Navigation options" className="mobile-navigation">
             {NAV_LINKS.map(({ path, label }) => (
-              <li key={path} className="py-1.5">
+              <li key={path}>
                 <NavigationLink
                   href={path}
                   label={label}
