@@ -8,14 +8,19 @@ import { clsx } from 'clsx'
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 
-import { backgroundVariants } from '@/components/Section'
+import { backgroundVariants, type SectionProps } from '@/components/Section'
 
 import { NAV_LINKS } from './constants'
 import { HomeLogoIconLink } from './HomeLogoIconLink'
 import { NavigationLink } from './NavigationLink'
 
+type MobileBackgroundVariant = Extract<
+  SectionProps['backgroundVariant'],
+  'light' | 'dark'
+>
+
 export type MobileNavigationProps = {
-  backgroundVariant: 'dark' | 'light'
+  backgroundVariant: MobileBackgroundVariant
 }
 
 export function MobileNavigation({ backgroundVariant }: MobileNavigationProps) {
