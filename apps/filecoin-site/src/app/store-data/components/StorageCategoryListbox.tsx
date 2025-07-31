@@ -14,6 +14,7 @@ import {
   type StorageCategory,
 } from '../data/storageCategories'
 import { storageProviders } from '../data/storageProviders'
+import { getProvidersForCategory } from '../utils/getProvidersForCategory'
 
 const DEFAULT_BUTTON_TEXT = 'Categories'
 
@@ -43,10 +44,7 @@ export function StorageCategoryListbox({
       >
         {storageCategories.map((category) => {
           const { id, name, description } = category
-
-          const matches = storageProviders
-            .filter((provider) => provider.category === id)
-            .filter(Boolean)
+          const matches = getProvidersForCategory(storageProviders, id)
 
           return (
             <ListboxOption

@@ -2,7 +2,7 @@ import type { StorageProviderCardProps } from '../components/StorageProviderCard
 
 import type { StorageKey } from './storageCategories'
 
-type StorageProvider = Pick<
+export type StorageProvider = Pick<
   StorageProviderCardProps,
   'name' | 'description' | 'keyFeatures' | 'url'
 > & {
