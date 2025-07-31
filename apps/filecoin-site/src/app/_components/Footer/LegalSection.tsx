@@ -9,7 +9,7 @@ export function LegalSection() {
     <div className="flex flex-col-reverse items-center justify-between gap-8 py-16 sm:flex-row md:gap-16">
       <a
         href="https://fil.org/"
-        className="focus:brand-outline text-zinc-40 flex items-center gap-2 text-xs hover:text-white"
+        className="focus:brand-outline text-zinc-400 flex items-center gap-2 text-xs hover:text-white"
         aria-label="Managed by Filecoin Foundation &ndash; Visit website"
       >
         <span>Managed by</span>
