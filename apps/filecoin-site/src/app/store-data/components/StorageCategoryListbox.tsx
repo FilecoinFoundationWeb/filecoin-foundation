@@ -7,13 +7,13 @@ import {
 import { CaretDownIcon } from '@phosphor-icons/react'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
-import { isTruthy } from '@filecoin-foundation/utils/isTruthy'
 
 import {
   storageCategories,
   type StorageCategory,
 } from '../data/storageCategories'
 import { storageProviders } from '../data/storageProviders'
+import { getActiveCategories } from '../utils/getActiveCategories'
 import { getProvidersForCategory } from '../utils/getProvidersForCategory'
 
 const DEFAULT_BUTTON_TEXT = 'Categories'
@@ -22,9 +22,7 @@ export function StorageCategoryListbox({
   activeFilters,
   setFilters,
 }: StorageCategoryFilterProps) {
-  const activeCategories = activeFilters
-    .map((id) => storageCategories.find((category) => category.id === id))
-    .filter(isTruthy)
+  const activeCategories = getActiveCategories(activeFilters)
 
   return (
     <Listbox multiple value={activeCategories} onChange={handleCategoryChange}>
