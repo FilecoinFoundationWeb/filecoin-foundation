@@ -31,8 +31,6 @@ import { filecoinStorageFlow } from './data/filecoinStorageFlow'
 import { filecoinValues } from './data/filecoinValues'
 import { resilientInternetCta } from './data/resilientInternetCta'
 
-import DummyLogo from '@/assets/logos/filecoin-foundation-icon-logo.svg'
-
 export default function Learn() {
   return (
     <>
@@ -69,18 +67,13 @@ export default function Learn() {
           <SectionImage {...graphicsData.learnLibrarySection} />
 
           <CardGrid as="ul" variant="lgTwo">
-            {ecosystemPartners.map(({ title, description, cta }) => (
+            {ecosystemPartners.map(({ title, description, cta, logo }) => (
               <SimpleCardWithLogo
                 key={title}
                 title={title}
                 description={description}
                 cta={cta}
-                logo={{
-                  type: 'svg',
-                  src: DummyLogo,
-                  bgColor: '#353535',
-                  color: '#fff',
-                }}
+                logo={logo}
               />
             ))}
           </CardGrid>

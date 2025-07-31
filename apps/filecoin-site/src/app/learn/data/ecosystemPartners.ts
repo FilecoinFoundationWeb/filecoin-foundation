@@ -1,8 +1,19 @@
-import type { SimpleCardData } from '@/components/SimpleCard'
+import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
+
+import AethirLogo from '@/assets/logos/aethir-icon-logo.svg'
+import EasierDataInitiativeLogo from '@/assets/logos/easier-data-initiative-logo.png'
+import FlickrFoundationLogo from '@/assets/logos/flickr-foundation-icon-logo.svg'
+import InternetArchiveLogo from '@/assets/logos/internet-archive-icon-logo.svg'
+import MITOpenLearningLogo from '@/assets/logos/MIT-open-learning-icon-logo.svg'
+import SetiInstituteLogo from '@/assets/logos/seti-institute-logo.svg'
+import SmithsonianLogo from '@/assets/logos/smithsonian-icon-logo.png'
+import SolanaLogo from '@/assets/logos/solana-icon-logo.png'
+import StarlingLabLogo from '@/assets/logos/starling-lab-icon-logo.png'
+import VictorChanLogo from '@/assets/logos/victor-chang-icon-logo.svg'
 
 const CTA_TEXT = 'Visit website'
 
-export const ecosystemPartners: Array<SimpleCardData> = [
+export const ecosystemPartners: Array<SimpleCardWithLogoProps> = [
   {
     title: 'Easier Data Initiative',
     description:
@@ -10,6 +21,11 @@ export const ecosystemPartners: Array<SimpleCardData> = [
     cta: {
       href: 'https://www.easierdata.org/',
       text: CTA_TEXT,
+    },
+    logo: {
+      type: 'image',
+      src: EasierDataInitiativeLogo,
+      bgColor: '#ffffff',
     },
   },
   {
@@ -20,6 +36,11 @@ export const ecosystemPartners: Array<SimpleCardData> = [
       href: 'https://solana.com/',
       text: CTA_TEXT,
     },
+    logo: {
+      type: 'image',
+      src: SolanaLogo,
+      bgColor: '#000000',
+    },
   },
   {
     title: 'Victor Chang Cardiac Research Institute',
@@ -28,6 +49,12 @@ export const ecosystemPartners: Array<SimpleCardData> = [
     cta: {
       href: 'https://www.victorchang.edu.au/',
       text: CTA_TEXT,
+    },
+    logo: {
+      type: 'svg',
+      src: VictorChanLogo,
+      bgColor: '#ffffff',
+      color: '#000000',
     },
   },
   {
@@ -38,6 +65,11 @@ export const ecosystemPartners: Array<SimpleCardData> = [
       href: 'https://www.si.edu/',
       text: CTA_TEXT,
     },
+    logo: {
+      type: 'image',
+      src: SmithsonianLogo,
+      bgColor: '#101820',
+    },
   },
   {
     title: 'Starling Labs',
@@ -46,6 +78,11 @@ export const ecosystemPartners: Array<SimpleCardData> = [
     cta: {
       href: 'https://www.starlinglab.org/',
       text: CTA_TEXT,
+    },
+    logo: {
+      type: 'image',
+      src: StarlingLabLogo,
+      bgColor: '#FAF8F2',
     },
   },
   {
@@ -56,6 +93,12 @@ export const ecosystemPartners: Array<SimpleCardData> = [
       href: 'https://aethir.com/',
       text: CTA_TEXT,
     },
+    logo: {
+      type: 'svg',
+      src: AethirLogo,
+      bgColor: '#111111',
+      color: '#D7FE51',
+    },
   },
   {
     title: 'Seti Institute',
@@ -64,6 +107,12 @@ export const ecosystemPartners: Array<SimpleCardData> = [
     cta: {
       href: 'https://www.seti.org/',
       text: CTA_TEXT,
+    },
+    logo: {
+      type: 'svg',
+      src: SetiInstituteLogo,
+      bgColor: '#000000',
+      color: '#ffffff',
     },
   },
   {
@@ -74,6 +123,12 @@ export const ecosystemPartners: Array<SimpleCardData> = [
       href: 'https://archive.org/',
       text: CTA_TEXT,
     },
+    logo: {
+      type: 'svg',
+      src: InternetArchiveLogo,
+      bgColor: '#222222',
+      color: '#ffffff',
+    },
   },
   {
     title: 'MIT Open Learning',
@@ -83,6 +138,12 @@ export const ecosystemPartners: Array<SimpleCardData> = [
       href: 'https://openlearning.mit.edu/',
       text: CTA_TEXT,
     },
+    logo: {
+      type: 'svg',
+      src: MITOpenLearningLogo,
+      bgColor: '#325B6B',
+      color: '#ffffff',
+    },
   },
   {
     title: 'Flickr Foundation',
@@ -91,6 +152,12 @@ export const ecosystemPartners: Array<SimpleCardData> = [
     cta: {
       href: 'https://www.flickr.org/',
       text: CTA_TEXT,
+    },
+    logo: {
+      type: 'svg',
+      src: FlickrFoundationLogo,
+      bgColor: '#EDEDED',
+      color: '#FF0084',
     },
   },
 ]
