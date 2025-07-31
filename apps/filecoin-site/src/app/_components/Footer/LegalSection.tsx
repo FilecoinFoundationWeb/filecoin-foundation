@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 
 import { legalLinks } from '@/constants/navigation'
 
@@ -23,7 +23,7 @@ export function LegalSection() {
       <ul className="order-1 flex items-center gap-10 text-sm text-zinc-400 md:gap-16">
         {legalLinks.map(({ href, label }) => (
           <li key={href}>
-            <Link href={href}>{label}</Link>
+            <InternalTextLink href={href}>{label}</InternalTextLink>
           </li>
         ))}
       </ul>
