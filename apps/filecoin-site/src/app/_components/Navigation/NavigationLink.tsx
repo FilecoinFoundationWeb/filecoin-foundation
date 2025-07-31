@@ -27,7 +27,7 @@ export function NavigationLink({ href, label, ...rest }: NavigationLinkProps) {
       className={clsx(
         TOUCH_TARGET_NAV_LINK.touchAreaPadding,
         TOUCH_TARGET_NAV_LINK.touchAreaOffset,
-        'navigation-link focus:brand-outline inline-block text-base font-semibold',
+        'navigation-link',
       )}
       {...rest}
     >

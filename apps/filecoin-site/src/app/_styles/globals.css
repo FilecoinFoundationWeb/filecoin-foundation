@@ -367,20 +367,34 @@
   }
 
   /* NAVIGATION */
-  .navigation-link {
+  .mobile-navigation {
+    @apply flex flex-col gap-2 divide-y;
+
     .light-section & {
-      @apply text-zinc-600;
+      @apply divide-zinc-950/15;
+    }
+
+    .dark-section & {
+      @apply divide-zinc-50/15;
+    }
+  }
+
+  .navigation-link {
+    @apply focus:brand-outline inline-block text-base;
+
+    .light-section & {
+      @apply text-zinc-950;
 
       &[aria-current='true'] {
-        @apply text-zinc-950;
+        @apply text-brand-900;
       }
     }
 
     .dark-section & {
-      @apply text-zinc-300;
+      @apply text-zinc-50;
 
       &[aria-current='true'] {
-        @apply text-zinc-50;
+        @apply text-brand-100;
       }
     }
   }

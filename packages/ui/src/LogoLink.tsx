@@ -2,7 +2,7 @@ import type { ComponentType } from 'react'
 
 import Link, { type LinkProps } from 'next/link'
 
-type LogoLinkProps = {
+export type LogoLinkProps = {
   logo: ComponentType<React.SVGProps<SVGSVGElement>>
   onNavigate?: LinkProps<unknown>['onNavigate']
   color?: `text-${string}`
