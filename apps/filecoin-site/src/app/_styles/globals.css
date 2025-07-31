@@ -109,7 +109,7 @@
       }
 
       .dark-section & {
-        @apply text-zinc-100;
+        @apply text-zinc-50;
 
         & .button-arrow-icon {
           @apply text-zinc-300;
