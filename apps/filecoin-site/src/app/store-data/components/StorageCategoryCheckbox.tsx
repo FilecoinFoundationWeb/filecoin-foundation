@@ -2,27 +2,27 @@
 
 import { Input, Label, Field, Description } from '@headlessui/react'
 
-type StorageCategoryFilterProps = {
+type StorageCategoryCheckboxProps = {
   name: string
   description: string
   count: number
-  isActive?: boolean
+  checked?: boolean
   onClick: () => void
 }
 
-export function StorageCategoryFilter({
+export function StorageCategoryCheckbox({
   name,
   description,
   count,
-  isActive,
+  checked,
   onClick,
-}: StorageCategoryFilterProps) {
+}: StorageCategoryCheckboxProps) {
   return (
     <Field>
       <Input
         type="checkbox"
         className="peer sr-only"
-        checked={isActive}
+        checked={checked}
         onChange={onClick}
       />
 

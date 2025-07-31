@@ -4,14 +4,12 @@ import { useMemo } from 'react'
 
 import { useQueryState, parseAsArrayOf, parseAsString } from 'nuqs'
 
-import { toggleArraySelection } from '@filecoin-foundation/utils/toggleArraySelection'
-
 import { CardGrid } from '@/components/CardGrid'
 
-import { storageCategories } from '../data/storageCategories'
 import { storageProviders } from '../data/storageProviders'
 
-import { StorageCategoryFilter } from './StorageCategoryFilter'
+import { StorageCategoryCheckboxList } from './StorageCategoryCheckboxList'
+import { StorageCategoryListbox } from './StorageCategoryListbox'
 import { StorageProviderCard } from './StorageProviderCard/StorageProviderCard'
 
 const URL_SEARCH_PARAM = 'storage-type'
@@ -43,24 +41,19 @@ export function StorageProviderList() {
     <>
       <fieldset>
         <legend className="sr-only">Filter by storage type</legend>
-        {/* TODO: Implement responsiveness */}
-        <div className="grid grid-cols-5 gap-8">
-          {storageCategories.map(({ name, description, id }) => {
-            const matches = storageProviders
-              .filter((provider) => provider.category === id)
-              .filter(Boolean)
 
-            return (
-              <StorageCategoryFilter
-                key={name}
-                isActive={filters.includes(id)}
-                name={name}
-                description={description}
-                count={matches.length}
-                onClick={() => setFilters(toggleArraySelection(filters, id))}
-              />
-            )
-          })}
+        <div className="hidden xl:block">
+          <StorageCategoryCheckboxList
+            activeFilters={filters}
+            setFilters={setFilters}
+          />
+        </div>
+
+        <div className="max-w-xl xl:hidden">
+          <StorageCategoryListbox
+            activeFilters={filters}
+            setFilters={setFilters}
+          />
         </div>
       </fieldset>
 

@@ -1,5 +1,7 @@
 export type StorageKey = (typeof storageCategories)[number]['id']
 
+export type StorageCategory = (typeof storageCategories)[number]
+
 export const storageCategories = [
   {
     name: 'S3-Compatible',
