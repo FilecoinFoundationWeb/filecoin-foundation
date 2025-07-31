@@ -15,8 +15,8 @@ const DESKTOP_TOUCH_TARGET: TouchTarget = {
 }
 
 const MOBILE_TOUCH_TARGET: TouchTarget = {
-  touchAreaPadding: 'p-6',
-  touchAreaOffset: '-mx-6',
+  touchAreaPadding: 'px-5 py-6',
+  touchAreaOffset: '-mx-5',
 }
 
 const desktopStyle = clsx(
