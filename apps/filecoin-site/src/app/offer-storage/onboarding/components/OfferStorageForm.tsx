@@ -21,7 +21,7 @@ export function OfferStorageForm() {
   const form = useForm<OfferStorageFormData>({
     resolver: zodResolver(OfferStorageFormSchema),
     defaultValues: {
-      communicationOptIn: true,
+      communicationOptIn: false,
     },
   })
 
