@@ -65,7 +65,7 @@ export function StorageProviderList() {
       </fieldset>
 
       <div className="mt-10">
-        <CardGrid as="ul" variant="smTwoLgThree">
+        <CardGrid as="ul" variant="lgTwoXlThree">
           {alphaSortedStorageProviders.map(
             ({ name, description, bestFor, keyFeatures, url }) => (
               <StorageProviderCard
