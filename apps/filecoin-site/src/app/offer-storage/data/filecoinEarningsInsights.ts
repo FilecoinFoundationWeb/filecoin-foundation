@@ -10,7 +10,7 @@ export const filecoinEarningsInsights: Array<SimpleCardData> = [
     description:
       "Providers are compensated for reliable storage via the network's programmable reward system.",
     cta: {
-      href: '#todo',
+      href: `${FILECOIN_URLS.docs}storage-providers/filecoin-economics/block-rewards#block-rewards`,
       text: CTA_TEXT,
     },
   },
@@ -28,7 +28,7 @@ export const filecoinEarningsInsights: Array<SimpleCardData> = [
     description:
       'Historically, some storage providers have recouped their costs within 30 months, depending on uptime and operational efficiency.',
     cta: {
-      href: '#todo',
+      href: `${FILECOIN_URLS.docs}storage-providers/filecoin-economics/block-rewards#block-rewards`,
       text: 'Learn more',
     },
   },

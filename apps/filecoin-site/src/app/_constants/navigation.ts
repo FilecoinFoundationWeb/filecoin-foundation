@@ -3,9 +3,17 @@ import { FILECOIN_URLS } from './siteMetadata'
 
 type NavItem = { label: string; href: string }
 
-const { social: socialLinks, docs, github, security, ecosystemExplorer } = FILECOIN_URLS
+type FooterNavigationItem = { title: string; items: Array<NavItem> }
 
-const social: NavItem[] = [
+const {
+  social: socialLinks,
+  docs,
+  github,
+  security,
+  ecosystemExplorer,
+} = FILECOIN_URLS
+
+const social: Array<NavItem> = [
   {
     label: socialLinks.slack.label,
     href: socialLinks.slack.href,
@@ -28,14 +36,15 @@ const social: NavItem[] = [
   },
 ]
 
-const resources: NavItem[] = [
+const resources: Array<NavItem> = [
   { label: 'Docs', href: docs },
   { label: 'GitHub', href: github },
   { label: 'Security', href: security },
   { label: 'Ecosystem Explorer', href: ecosystemExplorer },
+  { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
 ]
 
-const navigation: NavItem[] = [
+const navigation: Array<NavItem> = [
   { label: PATHS.BUILD_ON_FILECOIN.label, href: PATHS.BUILD_ON_FILECOIN.path },
   { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
   { label: PATHS.OFFER_STORAGE.label, href: PATHS.OFFER_STORAGE.path },
@@ -43,13 +52,13 @@ const navigation: NavItem[] = [
   { label: PATHS.BLOG.label, href: PATHS.BLOG.path },
 ]
 
-export const legalLinks: NavItem[] = [
+export const legalLinks: Array<NavItem> = [
   { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
   { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
 ]
 
-export const footerNavigationItems: Record<string, NavItem[]> = {
-  Navigation: navigation,
-  Resources: resources,
-  'Reach out': social,
-}
+export const footerNavigationItems: Array<FooterNavigationItem> = [
+  { title: 'Navigation', items: navigation },
+  { title: 'Resources', items: resources },
+  { title: 'Reach out', items: social },
+]
