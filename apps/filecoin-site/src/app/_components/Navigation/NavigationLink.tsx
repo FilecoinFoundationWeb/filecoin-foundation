@@ -5,22 +5,21 @@ import { usePathname } from 'next/navigation'
 
 import { clsx } from 'clsx'
 
-import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
-
 import type { PathValues } from '@/constants/paths'
 
-const TOUCH_TARGET_NAV_LINK = {
-  touchAreaPadding: 'p-6',
-  touchAreaOffset: '-mx-6',
-} as const satisfies TouchTarget
-
 type NavigationLinkProps = {
+  on: 'mobile' | 'desktop'
   label: string
   href: LinkProps<PathValues>['href']
   onNavigate?: LinkProps<PathValues>['onNavigate']
 }
 
-export function NavigationLink({ href, label, ...rest }: NavigationLinkProps) {
+export function NavigationLink({
+  href,
+  label,
+  on,
+  ...rest
+}: NavigationLinkProps) {
   const pathname = usePathname()
   const isActive = pathname.startsWith(href.toString())
 
@@ -30,9 +29,8 @@ export function NavigationLink({ href, label, ...rest }: NavigationLinkProps) {
       aria-label={`Go to ${label} page`}
       aria-current={isActive}
       className={clsx(
-        TOUCH_TARGET_NAV_LINK.touchAreaPadding,
-        TOUCH_TARGET_NAV_LINK.touchAreaOffset,
-        'navigation-link',
+        on === 'desktop' && 'navigation-link',
+        on === 'mobile' && 'mobile-navigation-link',
       )}
       {...rest}
     >

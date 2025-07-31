@@ -53,6 +53,7 @@ export function MobileNavigation({ backgroundVariant }: MobileNavigationProps) {
             {NAV_LINKS.map(({ path, label }) => (
               <li key={path}>
                 <NavigationLink
+                  on="mobile"
                   href={path}
                   label={label}
                   onNavigate={closePanel}

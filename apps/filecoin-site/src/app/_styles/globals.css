@@ -380,7 +380,27 @@
   }
 
   .navigation-link {
-    @apply focus:brand-outline inline-block text-base;
+    @apply focus:brand-outline inline-block py-3 font-semibold;
+
+    .light-section & {
+      @apply text-zinc-600;
+
+      &[aria-current='true'] {
+        @apply text-zinc-950;
+      }
+    }
+
+    .dark-section & {
+      @apply text-zinc-300;
+
+      &[aria-current='true'] {
+        @apply text-zinc-50;
+      }
+    }
+  }
+
+  .mobile-navigation-link {
+    @apply focus:brand-outline inline-block py-6;
 
     .light-section & {
       @apply text-zinc-950;
