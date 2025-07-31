@@ -7,8 +7,12 @@ import {
 import { CaretDownIcon } from '@phosphor-icons/react'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import { isTruthy } from '@filecoin-foundation/utils/isTruthy'
 
-import { storageCategories } from '../data/storageCategories'
+import {
+  storageCategories,
+  type StorageCategory,
+} from '../data/storageCategories'
 import { storageProviders } from '../data/storageProviders'
 
 const DEFAULT_BUTTON_TEXT = 'Categories'
@@ -78,9 +82,7 @@ export function StorageCategoryListbox({
   )
 }
 
-function renderButtonText(
-  categories: Array<(typeof storageCategories)[number]>,
-) {
+function renderButtonText(categories: Array<StorageCategory>) {
   if (!categories.length) {
     return DEFAULT_BUTTON_TEXT
   }
@@ -92,8 +94,4 @@ function renderButtonText(
   }
 
   return categoryNames[0] + ` +${categoryNames.length - 1} more`
-}
-
-function isTruthy<T>(value: T | undefined): value is T {
-  return Boolean(value)
 }
