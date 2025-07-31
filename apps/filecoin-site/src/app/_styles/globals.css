@@ -447,7 +447,7 @@
       }
 
       .dark-section & {
-        @apply text-zinc-50;
+        @apply text-zinc-100;
       }
     }
   }
