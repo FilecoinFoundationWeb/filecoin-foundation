@@ -22,7 +22,7 @@ export const ecosystemPartners: Array<SimpleCardData> = [
     },
   },
   {
-    title: 'Victor Chang Institute',
+    title: 'Victor Chang Cardiac Research Institute',
     description:
       'The Victor Chang Cardiac Research Institute uses Filecoin to securely store and preserve over 125 TiB of vital cardiac research data.',
     cta: {

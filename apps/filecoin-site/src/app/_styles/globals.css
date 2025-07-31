@@ -87,9 +87,8 @@
         }
       }
 
-      .light-section &,
-      .gray-section & {
-        @apply text-zinc-900;
+      .light-section & {
+        @apply text-zinc-950;
 
         & .button-arrow-icon {
           @apply text-zinc-600;
@@ -110,7 +109,7 @@
       }
 
       .dark-section & {
-        @apply text-zinc-100;
+        @apply text-zinc-50;
 
         & .button-arrow-icon {
           @apply text-zinc-300;
@@ -142,8 +141,7 @@
         @apply outline-2 outline-offset-0 outline-zinc-400;
       }
 
-      .light-section &,
-      .gray-section & {
+      .light-section & {
         @apply bg-zinc-100 text-zinc-900;
 
         &:not(:disabled):hover,
@@ -177,8 +175,7 @@
     &.button--tertiary {
       @apply border-transparent;
 
-      .light-section &,
-      .gray-section & {
+      .light-section & {
         @apply text-zinc-600;
 
         &:not(:disabled) {
@@ -250,8 +247,7 @@
   }
 
   .card-border-color {
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply border-zinc-950/15;
     }
 
@@ -269,8 +265,7 @@
   .cta-link {
     @apply font-semibold;
 
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply text-zinc-600;
     }
 
@@ -283,8 +278,7 @@
   .form-text-input {
     @apply block w-full border-b py-3 placeholder:text-sm data-disabled:cursor-not-allowed;
 
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply focus:border-brand-700 border-zinc-500 placeholder:text-zinc-400 hover:border-zinc-600 hover:placeholder:text-zinc-500 focus:bg-zinc-50 focus:outline-none focus:placeholder:text-zinc-500;
 
       &[data-invalid] {
@@ -320,8 +314,7 @@
   .form-label {
     @apply inline-block text-sm font-medium;
 
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply text-zinc-950;
     }
 
@@ -341,8 +334,7 @@
   .form-error-description {
     @apply text-sm text-nowrap;
 
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply text-brand-error;
     }
 
@@ -353,8 +345,7 @@
 
   /* LOGO SECTION */
   .logo-section {
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply text-zinc-600;
     }
 
@@ -366,8 +357,7 @@
   .logo-section-logo-item {
     @apply text-zinc-400 transition-colors duration-200;
 
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply hover:opacity-80;
     }
 
@@ -442,8 +432,7 @@
   /* PAGE HEADER */
   .page-header {
     & .page-header-title {
-      .light-section &,
-      .gray-section & {
+      .light-section & {
         @apply text-zinc-900;
       }
 
@@ -453,21 +442,19 @@
     }
 
     & .page-header-description {
-      .light-section &,
-      .gray-section & {
+      .light-section & {
         @apply text-zinc-600;
       }
 
       .dark-section & {
-        @apply text-zinc-50;
+        @apply text-zinc-100;
       }
     }
   }
 
   /* SECTION SUB CONTENT */
   .section-sub-content-heading-text {
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply text-zinc-950;
     }
 
@@ -477,8 +464,7 @@
   }
 
   .section-sub-content-description-text {
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply text-zinc-600;
     }
 
@@ -489,8 +475,7 @@
 
   /* SECTION DIVIDER */
   .section-divider {
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply border-zinc-200;
     }
 
@@ -520,8 +505,7 @@
       @apply text-zinc-200;
     }
 
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply text-zinc-600;
     }
   }
@@ -531,16 +515,14 @@
       @apply text-zinc-50;
     }
 
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply text-zinc-950;
     }
   }
 
   /* SIMPLE CARD */
   .simple-card-description-text {
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply text-zinc-600;
     }
 
@@ -553,8 +535,7 @@
   .text-link {
     @apply focus:brand-outline font-normal no-underline hover:underline;
 
-    .light-section &,
-    .gray-section & {
+    .light-section & {
       @apply text-brand-800;
     }
 

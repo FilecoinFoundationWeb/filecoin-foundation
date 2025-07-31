@@ -3,7 +3,6 @@ import {
   Textarea,
   type TextareaProps as HeadlessTextareaProps,
 } from '@headlessui/react'
-import { clsx } from 'clsx'
 
 import {
   FormError,
