@@ -367,7 +367,7 @@
   }
 
   /* NAVIGATION */
-  .mobile-navigation {
+  .mobile-navigation-list {
     .light-section & {
       @apply divide-zinc-950/15;
     }
