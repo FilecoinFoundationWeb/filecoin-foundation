@@ -39,9 +39,9 @@ export function NewsletterForm() {
             className="absolute right-0 -mr-1 flex h-12 w-12 cursor-pointer items-center justify-center"
             type="submit"
           >
-            {/* TODO: Add gradient to icon */}
+            {/* #todo: Add gradient to icon */}
             <div className="text-brand-600 relative inline-block">
-              <Icon component={ArrowRightIcon} weight="bold" size={24} />
+              <Icon component={ArrowRightIcon} size={20} />
             </div>
           </Button>
         </div>

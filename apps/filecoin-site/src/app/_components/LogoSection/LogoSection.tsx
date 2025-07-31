@@ -15,7 +15,7 @@ export function LogoSection({ logos, title, tag = 'h2' }: LogoSectionProps) {
       aria-labelledby={title ? 'logo-section-title' : undefined}
     >
       {title && (
-        <Heading tag={tag} variant="xl-regular" id="logo-section-title">
+        <Heading tag={tag} variant="lg-regular" id="logo-section-title">
           {title}
         </Heading>
       )}
