@@ -32,7 +32,7 @@ export function BackgroundImage({
         alt=""
         className={clsx(
           '-z-20 object-cover object-center',
-          withOpacity && 'opacity-70',
+          withOpacity && 'opacity-60',
         )}
         {...(blurDataURL && {
           placeholder: 'blur',
