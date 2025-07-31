@@ -15,7 +15,7 @@ export const filecoinTools: Array<FilecoinTool> = [
       'Deploy your first storage-backed smart contract quickly and securely.',
     difficulty: 'Beginner',
     cta: {
-      href: '#todo',
+      href: `${FILECOIN_URLS.docs}smart-contracts/quickstarts/erc20-quickstart`,
       text: CTA_TEXT,
     },
   },
