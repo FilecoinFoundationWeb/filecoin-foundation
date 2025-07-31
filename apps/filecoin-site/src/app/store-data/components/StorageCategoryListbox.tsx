@@ -26,14 +26,7 @@ export function StorageCategoryListbox({
     .filter(isTruthy)
 
   return (
-    <Listbox
-      multiple
-      value={activeCategories}
-      onChange={(newSelection) => {
-        const newSelectionIds = newSelection.map((category) => category?.id)
-        setFilters(newSelectionIds)
-      }}
-    >
+    <Listbox multiple value={activeCategories} onChange={handleCategoryChange}>
       <ListboxButton className="listbox-button group">
         <span className="block truncate pr-6 font-medium">
           {renderButtonText(activeCategories)}
@@ -80,6 +73,11 @@ export function StorageCategoryListbox({
       </ListboxOptions>
     </Listbox>
   )
+
+  function handleCategoryChange(newSelection: Array<StorageCategory>) {
+    const newSelectionIds = newSelection.map((category) => category?.id)
+    setFilters(newSelectionIds)
+  }
 }
 
 function renderButtonText(categories: Array<StorageCategory>) {
