@@ -380,7 +380,7 @@
   }
 
   .navigation-link {
-    @apply focus:brand-outline inline-block py-3 font-semibold;
+    @apply focus:brand-outline inline-block font-semibold;
 
     .light-section & {
       @apply text-zinc-600;
@@ -400,7 +400,7 @@
   }
 
   .mobile-navigation-link {
-    @apply focus:brand-outline inline-block py-6;
+    @apply focus:brand-outline inline-block font-normal;
 
     .light-section & {
       @apply text-zinc-950;
