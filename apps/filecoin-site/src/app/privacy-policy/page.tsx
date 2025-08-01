@@ -1,3 +1,5 @@
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+
 import { PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -7,10 +9,14 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { PRIVACY_POLICY_SEO } from './constants/seo'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function PrivacyPolicy() {
   return (
     <>
+      <StructuredDataScript
+        structuredData={generateStructuredData(PRIVACY_POLICY_SEO)}
+      />
       <Navigation backgroundVariant="light" />
       <PageSection backgroundVariant="light">
         <PageHeader title="Privacy Policy" />

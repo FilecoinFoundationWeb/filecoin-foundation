@@ -1,5 +1,7 @@
 import { z } from 'zod'
 
+import { SeoMetadataWithOptionalTitleSchema } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
+
 const AllowedCategories = z.union([
   z.literal('updates'),
   z.literal('events'),
@@ -22,4 +24,5 @@ export const BlogPostFrontmatterSchema = z.strictObject({
   categories: z.array(AllowedCategories),
   dim_image: z.boolean().optional(),
   content: z.string(),
+  seo: SeoMetadataWithOptionalTitleSchema,
 })

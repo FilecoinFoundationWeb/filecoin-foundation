@@ -32,5 +32,11 @@ function getBlogPostMarkdownData(slug: string) {
 function transformBlogPostData(
   post: Awaited<ReturnType<typeof getBlogPostMarkdownData>>,
 ) {
-  return post
+  return {
+    ...post,
+    seo: {
+      title: post.seo?.title || post.title,
+      description: post.seo?.description || post.excerpt,
+    },
+  }
 }

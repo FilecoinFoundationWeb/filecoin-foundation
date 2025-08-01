@@ -1,3 +1,5 @@
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
@@ -24,10 +26,14 @@ import { coreInfrastructureSpecs } from './data/coreInfrastructureSpecs'
 import { dataCenterRequirements } from './data/dataCenterRequirements'
 import { filecoinEarningsInsights } from './data/filecoinEarningsInsights'
 import { specializedInfrastructureSpecs } from './data/specializedInfrastructureSpecs'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function OfferStorage() {
   return (
     <>
+      <StructuredDataScript
+        structuredData={generateStructuredData(OFFER_STORAGE_SEO)}
+      />
       <BackgroundImage
         overlayVariant="dark"
         src={graphicsData.offerStorageHero.data.src}

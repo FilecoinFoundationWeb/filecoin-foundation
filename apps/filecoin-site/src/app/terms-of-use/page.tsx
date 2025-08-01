@@ -1,3 +1,5 @@
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+
 import { PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -7,10 +9,14 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { TERMS_OF_USE_SEO } from './constants/seo'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function TermsOfUse() {
   return (
     <>
+      <StructuredDataScript
+        structuredData={generateStructuredData(TERMS_OF_USE_SEO)}
+      />
       <Navigation backgroundVariant="light" />
       <PageSection backgroundVariant="light">
         <PageHeader title="Terms of Use" />

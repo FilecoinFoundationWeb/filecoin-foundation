@@ -11,6 +11,8 @@ categories:
   - updates
   - events
 dim_image: true
+seo:
+  description: "Filecoin & Avalanche launch a cross-chain data bridge via FVM—offload data with cryptographic proofs, lower costs, and unlock multi-chain scale."
 ---
 
 ## ✨ Highlights ✨
