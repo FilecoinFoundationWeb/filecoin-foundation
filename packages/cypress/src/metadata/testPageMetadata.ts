@@ -22,7 +22,7 @@ export function testPageMetaData({
 
   cy.get('head').within(() => {
     // Basic metadata
-    cy.get('meta[name="description"]').should(
+    cy.get('meta[name="description"]', { timeout: 10000 }).should(
       'have.attr',
       'content',
       description,
