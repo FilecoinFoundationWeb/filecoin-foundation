@@ -1,8 +1,7 @@
 import type { WebPage, WithContext } from 'schema-dts'
 
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
-
-import type { StructuredDataParams } from '@/types/structuredDataParams'
+import type { StructuredDataParams } from '@filecoin-foundation/utils/types/structuredDataParams'
 
 import { type PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
