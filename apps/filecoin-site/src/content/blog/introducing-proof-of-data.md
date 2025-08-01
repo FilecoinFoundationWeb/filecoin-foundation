@@ -12,6 +12,8 @@ publishedOn: 2025-05-01T17:55:01.524Z
 categories:
   - updates
 dim_image: true
+seo:
+  description: "Filecoin introduces verifiable hot storage with Proof of Data Possession, enabling fast, on-demand access while maintaining cryptographic integrity."
 ---
 
 Today, Filecoin unlocks a new level of utility –– building on a foundation of decentralized, verifiable storage at planetary scale with a new hot storage tier. 

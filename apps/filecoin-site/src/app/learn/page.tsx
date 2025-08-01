@@ -1,3 +1,5 @@
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
@@ -30,10 +32,14 @@ import { filecoinStackFeatures } from './data/filecoinStackFeatures'
 import { filecoinStorageFlow } from './data/filecoinStorageFlow'
 import { filecoinValues } from './data/filecoinValues'
 import { resilientInternetCta } from './data/resilientInternetCta'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function Learn() {
   return (
     <>
+      <StructuredDataScript
+        structuredData={generateStructuredData(LEARN_SEO)}
+      />
       <BackgroundImage
         overlayVariant="light"
         src={graphicsData.learnHero.data.src}

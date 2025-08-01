@@ -1,9 +1,11 @@
 import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS, SEO } from '@/constants/siteMetadata'
+import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
@@ -44,6 +46,7 @@ export default async function Home() {
 
   return (
     <>
+      <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
       <BackgroundImage
         withOpacity
         src={graphicsData.homepageHero.data.src}

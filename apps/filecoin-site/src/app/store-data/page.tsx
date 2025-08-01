@@ -1,5 +1,7 @@
 import { Suspense } from 'react'
 
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -21,10 +23,14 @@ import { ExpertSupportBanner } from './components/ExpertSupportBanner'
 import { StorageProviderList } from './components/StorageProviderList'
 import { STORE_DATA_SEO } from './constants/seo'
 import { filecoinFeatures } from './data/filecoinFeatures'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function StoreData() {
   return (
     <>
+      <StructuredDataScript
+        structuredData={generateStructuredData(STORE_DATA_SEO)}
+      />
       <BackgroundImage
         overlayVariant="dark"
         src={graphicsData.storeDataHero.data.src}
