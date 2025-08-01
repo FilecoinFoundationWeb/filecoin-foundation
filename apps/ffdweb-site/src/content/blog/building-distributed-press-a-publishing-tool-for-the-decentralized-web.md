@@ -39,10 +39,10 @@ They are building Distributed Press to prioritize the needs of organizations fro
 - **Offline networks** — through locally-hosted content that is persistent, highly available, and suitable for creating distributed archives.
 - **Artists** — through new economic, ownership, and governance models that promise fairer relationships with creative platforms.
 
-A beta version of the Distributed Press integration into the Sutty CMS will be released March 2023! To stay informed on its release and try out the tool, you can subscribe to their [newsletter](https://lists.hypha.coop/cgi-bin/mailman/listinfo/compost) and follow [Distributed Press](https://twitter.com/dwebpress) or [Sutty](https://twitter.com/SuttyWeb) on Twitter.
+A beta version of the Distributed Press integration into the Sutty CMS will be released March 2023! To stay informed on its release and try out the tool, you can follow [Distributed Press](https://twitter.com/dwebpress) or [Sutty](https://twitter.com/SuttyWeb) on Twitter.
 
 ## Introducing COMPOST, a DWeb-native Magazine
 
 COMPOST is a DWeb-native magazine about the digital commons that is the sister project to Distributed Press. Check out [Issue 02 here!](https://two.compost.digital/) COMPOST is designed to live test Distributed Press and research distributed publishing features directly with communities of artists, journalists, and more. For instance, Sutty works closely with activists and journalists to help host vulnerable web resources that are at risk of being compromised or unilaterally removed.
 
-FFDW is supporting the third issue of COMPOST, which is expected to go live in March 2023. To stay up-to-date on COMPOST, you can [subscribe to the COMPOST newsletter via Hypha](https://lists.hypha.coop/cgi-bin/mailman/listinfo/compost).
+FFDW is supporting the third issue of COMPOST, which is expected to go live in March 2023. To stay up-to-date on COMPOST,you can follow [@COMPOST](https://x.com/COMPOSTmag) on Twitter.
