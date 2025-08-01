@@ -1,3 +1,4 @@
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
@@ -7,6 +8,8 @@ import { Section } from '@/components/Section'
 import { BlogPostContainer } from '../components/BlogPostContainer'
 import { BlogPostHeader } from '../components/BlogPostHeader'
 import { getBlogPostData } from '../utils/getBlogPostData'
+
+import { generateStructuredData } from './utils/generateStructuredData'
 
 import headerImage from '@/assets/images/042425-PDP_BlogHeader.webp'
 
@@ -22,6 +25,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
   return (
     <>
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
       <Navigation backgroundVariant="light" />
       <Section backgroundVariant="light">
         <div className="space-y-8 pb-30">
