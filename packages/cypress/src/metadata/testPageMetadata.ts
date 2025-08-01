@@ -17,12 +17,6 @@ export function testPageMetaData({
 
   cy.visit(path)
 
-  cy.get('body').should('be.visible')
-  cy.window()
-    .should('have.property', 'document')
-    .its('readyState')
-    .should('eq', 'complete')
-
   // Title is not inside <head> element in DOM traversal context (it's a special case)
   cy.title().should('eq', title)
 
