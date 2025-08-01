@@ -27,6 +27,7 @@ export function BackgroundImage({
         fill
         priority
         quality={100}
+        fetchPriority="high"
         sizes="100vw"
         src={src}
         alt=""
