@@ -22,4 +22,7 @@ export const BlogPostFrontmatterSchema = z.strictObject({
   categories: z.array(AllowedCategories),
   dim_image: z.boolean().optional(),
   content: z.string(),
+  seo: z.object({
+    description: z.string().max(220),
+  }),
 })

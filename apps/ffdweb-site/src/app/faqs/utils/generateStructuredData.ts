@@ -1,6 +1,6 @@
 import type { WebPage, WithContext } from 'schema-dts'
 
-import type { StructuredDataParams } from '@/types/structuredDataParams'
+import type { StructuredDataParams } from '@filecoin-foundation/utils/types/structuredDataParams'
 
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'

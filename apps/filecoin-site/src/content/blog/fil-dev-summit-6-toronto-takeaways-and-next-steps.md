@@ -12,6 +12,8 @@ categories:
   - updates
   - events
 dim_image: true
+seo:
+  description: "FIL Dev Summit 6 in Toronto brought devs together for deep dives, demos, and big ideas—shaping Filecoin's future as essential decentralized infrastructure. Check out the event recap!"
 ---
 
 The sixth edition of the FIL Dev Summit (FDS) in Toronto brought builders, developers, and the Filecoin ecosystem together for two days of collaboration. The event focused on decision making, technical experimentation and forward-thinking discussions about the future of the network. The in-person summit followed the Virtual FDS Kickoff Sessions, a topic-driven prelude that offered a high-level overview of key challenges and opportunities. Together, they created space for everything from technical deep dives to real-time product dogfooding and focused workshops.

@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'
@@ -14,6 +15,7 @@ import { PageSection } from '@/components/PageSection'
 
 import { BlogPostList } from './components/BlogPostList'
 import { BLOG_SEO } from './constants/seo'
+import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
 export default async function Blog() {
@@ -23,6 +25,7 @@ export default async function Blog() {
 
   return (
     <>
+      <StructuredDataScript structuredData={generateStructuredData(BLOG_SEO)} />
       <Navigation backgroundVariant="light" />
       <BackgroundImage
         overlayVariant="dark"

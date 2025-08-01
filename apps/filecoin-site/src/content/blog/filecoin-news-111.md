@@ -13,6 +13,8 @@ categories:
   - updates
   - events
 dim_image: true
+seo:
+  description: "Filecoin is evolving from a supply-focused network to one increasingly defined by real usage, paying clients, and long-term sustainability."
 ---
 
 ## ✨ Highlights ✨

@@ -1,3 +1,5 @@
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
@@ -30,10 +32,14 @@ import { ecosystemResources } from './data/ecosystemResources'
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { filecoinTools } from './data/filecoinTools'
 import { getInvolvedOptions } from './data/getInvolvedOptions'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function BuildOnFilecoin() {
   return (
     <>
+      <StructuredDataScript
+        structuredData={generateStructuredData(BUILD_ON_FILECOIN_SEO)}
+      />
       <BackgroundImage
         overlayVariant="light"
         src={graphicsData.buildOnFilecoinHero.data.src}
