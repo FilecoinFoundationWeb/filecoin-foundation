@@ -14,7 +14,7 @@ categories:
   - updates
 dim_image: true
 seo:
-  description: "Explore the inaugural Filecoin Ecosystem Metrics Roundup, focusing on key metrics like daily data onboarding, client engagement, paid deals revenue, and economic activity to foster data-driven decisions and ecosystem health."
+  description: "Explore the inaugural Filecoin Ecosystem Metrics Roundup, focusing on key metrics like daily data onboarding, client engagement, paid deals revenue, and economic activity to foster data-driven decisions."
 ---
 
 Welcome to the inaugural edition of the Filecoin Ecosystem Metrics Roundup, a monthly series designed to align our community around the metrics that matter most for sustainable ecosystem growth. This series will focus on metrics education, analysis, and optimization to drive data-informed decision making across the Filecoin ecosystem. The goal is to create transparency around key contributors to ecosystem growth, propose actionable next steps, and establish a shared understanding of where our ecosystem stands and where it's headed.
