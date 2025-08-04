@@ -18,4 +18,4 @@ This means supporting endeavors that preserve data and distribute it: safekeepin
 
 In this report, you’ll see the progress achieved by FFDW and our exceptional roster of project partners in creating profound and wide-reaching impact in a moment of growing interest and appreciation for decentralized values.
 
-Y﻿ou can access the full [Filecoin Foundation for the Decentralized Web Annual Report here](https://link.ffdweb.org/report24).
+Y﻿ou can access the full [Filecoin Foundation for the Decentralized Web Annual Report here](https://www.figma.com/proto/UALMWtiqPNHZJ8iNvUNopY/2023-FFDW-Annual-Report?page-id=0:1&node-id=2-1875&viewport=-671,10549,0.32&t=imS0OksSMLA4j1Xl-1&scaling=min-zoom&content-scaling=fixed).
