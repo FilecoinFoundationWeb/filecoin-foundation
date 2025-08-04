@@ -18,7 +18,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 ## Early March Highlights
 
-**Dive into the FF and FFDW Annual Reports to learn more about the work of these two organizations!** The [FF annual report](https://link.fil.org/report24) highlights the organizations’ accomplishments in 2023 –– from events, network-wide initiatives, partnerships, and governance, to network upgrades and core infrastructure improvements. It also provides a touchpoint to reflect on the potential of the Filecoin network, the promises of the decentralized web, and the mission of the Foundation. The [FFDW annual report](https://link.ffdweb.org/report24) outlines the progress achieved by FFDW and its exceptional roster of project partners in creating profound and wide-reaching impact during a moment of growing interest and appreciation for decentralized values.
+**Dive into the FF and FFDW Annual Reports to learn more about the work of these two organizations!** The [FF annual report](https://link.fil.org/report24) highlights the organizations’ accomplishments in 2023 –– from events, network-wide initiatives, partnerships, and governance, to network upgrades and core infrastructure improvements. It also provides a touchpoint to reflect on the potential of the Filecoin network, the promises of the decentralized web, and the mission of the Foundation. The [FFDW annual report](https://www.figma.com/proto/UALMWtiqPNHZJ8iNvUNopY/2023-FFDW-Annual-Report?page-id=0:1&node-id=2-1875&viewport=-671,10549,0.32&t=imS0OksSMLA4j1Xl-1&scaling=min-zoom&content-scaling=fixed) outlines the progress achieved by FFDW and its exceptional roster of project partners in creating profound and wide-reaching impact during a moment of growing interest and appreciation for decentralized values.
 
 **Filecoin Foundation announced the formation of the [Developer Working Group (DevWG)](https://github.com/filecoin-project/DeveloperWG).** Community members can share knowledge and perspectives in areas that incorporate their technical or industry expertise, raise challenges and questions for collective deliberation, advocate the importance of developing in specific areas of the Filecoin Network, provide updates on projects and plans within the Filecoin ecosystem, and discuss open FIPs and develop a coordinated presence in the Filecoin governance process. Learn more on the [ReadMe](https://github.com/filecoin-project/DeveloperWG) and join the [\#dev-wg](https://filecoinproject.slack.com/archives/C06G5K8H3J7) Slack channel to participate.
 
@@ -34,7 +34,6 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 ### Storage
 
 - Check out these new tools for SPs:
-
   - The [Data Onboarding Dashboard and API for [CIDgravity](/ecosystem-explorer/cidgravity)](https://app.cidgravity.com/) offers a seamless onboarding experience, designed to streamline the process for clients and offer onramps for engaging with SPs who manage their deal flow through [CIDgravity](/ecosystem-explorer/cidgravity).
   - New software platforms such as [Steeldome](https://www.steeldomecyber.com/), [Lighthouse](/ecosystem-explorer/lighthouse), [GhostDrive](/ecosystem-explorer/ghostdrive-global), and Banyan are supporting deal-making and help driving more data onto the network.
   - [Web3Mine](https://www.web3mine.io/provide) is helping SPs build a viable, performant cloud storage business with Web3 tech for operations looking to further monetize storage capacity while simplifying Filecoin orchestration.
@@ -47,7 +46,6 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 ### Governance
 
 - The timeline for nv22 Dragon has been updated and is now slated for April 2. There are four FIPs in scope for this upgrade:
-
   - [FIP0063](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0063.md) - Switching to a new Drand Mainnet Network
   - [FIP0074](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0074.md) - Remove cron-based automatic deal settlement
   - [FIP0076](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0076.md) - Direct Data Onboarding
@@ -62,14 +60,13 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 ### Marketing & Comms
 
 - Catch FF’s Clara Tsao talking about [Filecoin & AI: Building the Next Generation of Data Storage](https://hub.fil.org/events/ethdenver/see-the-schedule), Friday, March 1, on the Neptune Stage at ETHDenver.
-- ICYMI: the team published the [FF](https://link.fil.org/report24) and [FFDW](https://link.ffdweb.org/report24) Annual Reports last week. Check them out!
+- ICYMI: the team published the [FF](https://link.fil.org/report24) and [FFDW](https://www.figma.com/proto/UALMWtiqPNHZJ8iNvUNopY/2023-FFDW-Annual-Report?page-id=0:1&node-id=2-1875&viewport=-671,10549,0.32&t=imS0OksSMLA4j1Xl-1&scaling=min-zoom&content-scaling=fixed) Annual Reports last week. Check them out!
 
 ### Events
 
 - Check out the [Filecoin at ETHDenver website](https://hub.fil.org/ethdenver2024) for all of the Filecoin community events happening throughout the week.
 - The Filecoin Orbit team announced an ETHDenver bounty to build an app to track and reward the activities of the Filecoin Orbit ambassador program in the form of NFT “achievements” and associated ERC20 token reward points. The aim of the bounty is to build an app that creates a standard rewards system for the Orbit program on FVM.
 - Don’t miss our upcoming community events!
-
   - 4/5-4/8 - [FIL Hong Kong](/events/fil-hong-kong-hosted-by-ndlabs) hosted by NDLabs alongside Hong Kong Web3 Festival
   - 4/13-4/14 - [Funding the Commons SF](/events/funding-the-commons), sponsored by FF
   - 4/16 - 4/19 - Token2049 Dubai Filecoin Orbit Meetup Event

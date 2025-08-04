@@ -10,12 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        app: [ff-site, ffdweb-site]
+        app: [ff-site, ffdweb-site, filecoin-site]
         include:
           - app: ff-site
             base_url: https://fil.org
           - app: ffdweb-site
             base_url: https://ffdweb.org
+          - app: filecoin-site
+            base_url: https://filecoin-site.vercel.app/
 
     env:
       BASE_URL: ${{ matrix.base_url }}
