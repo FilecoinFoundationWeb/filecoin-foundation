@@ -1,13 +1,12 @@
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
+import { ROOT_METADATA } from '@/constants/siteMetadata'
+
 import { SiteLayout } from '@/components/SiteLayout'
 
 import '@/styles/globals.css'
 
-export const metadata = {
-  title: 'Filecoin.io',
-  description: 'The official Filecoin website.',
-}
+export const metadata = ROOT_METADATA
 
 type RootLayoutProps = {
   children: React.ReactNode
