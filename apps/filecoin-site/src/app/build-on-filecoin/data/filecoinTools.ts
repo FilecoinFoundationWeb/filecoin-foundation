@@ -6,7 +6,7 @@ export type FilecoinTool = SimpleCardData & {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
 }
 
-const CTA_TEXT = 'Learn more'
+const CTA_TEXT = 'View documentation'
 
 export const filecoinTools: Array<FilecoinTool> = [
   {
