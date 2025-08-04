@@ -16,6 +16,7 @@ export type CTALinkProps = {
   inset?: boolean
   textClassName?: string
   baseDomain: string
+  ariaLabel?: string
 }
 
 export function CTALink({
@@ -25,11 +26,13 @@ export function CTALink({
   inset,
   textClassName,
   baseDomain,
+  ariaLabel,
 }: CTALinkProps) {
   const isExternal = isExternalLink(href, baseDomain)
 
   return (
     <BaseLink
+      aria-label={ariaLabel}
       href={href}
       baseDomain={baseDomain}
       className={clsx(

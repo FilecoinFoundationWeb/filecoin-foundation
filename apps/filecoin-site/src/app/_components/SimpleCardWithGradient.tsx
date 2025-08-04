@@ -47,7 +47,7 @@ export function SimpleCardWithGradient({
       <CTALink
         inset
         href={cta.href}
-        aria-label={`Learn more about ${title}`}
+        ariaLabel={`Learn more about ${title}`}
         textClassName="absolute bottom-6 left-6"
       >
         {cta.text}
