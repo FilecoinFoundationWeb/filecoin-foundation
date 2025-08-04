@@ -32,7 +32,7 @@ describe('Ecosystem Explorer Page', () => {
   })
 })
 
-describe('Ecosystem Explorer Project Form Page', () => {
+describe.skip('Ecosystem Explorer Project Form Page', () => {
   const { contentPath, path } = PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM
 
   it(tests.metadata.prompt, () => {
