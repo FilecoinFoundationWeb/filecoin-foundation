@@ -72,7 +72,7 @@ export function SimpleCard({
           <CTALink
             inset
             href={cta.href}
-            aria-label={cta.text}
+            aria-label={`Learn more about ${title}`}
             textClassName={clsx(
               'absolute',
               hasOnlyTopBorder ? 'bottom-0' : 'bottom-6 left-6',

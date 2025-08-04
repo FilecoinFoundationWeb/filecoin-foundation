@@ -12,6 +12,7 @@ type LinkCardProps = {
   as: 'li' | 'article' | 'div'
   backgroundVariant: SectionProps['backgroundVariant']
   title: string
+  titleAs?: 'h2' | 'h3'
   description?: string
   href: string
   icon: {
@@ -31,6 +32,7 @@ export function LinkCard({
   as: Tag,
   backgroundVariant,
   title,
+  titleAs = 'h3',
   description,
   href,
   icon,
@@ -50,7 +52,7 @@ export function LinkCard({
 
       {description && (
         <div className="space-y-5">
-          <Heading tag="h3" variant="xl-medium" className={styles.heading}>
+          <Heading tag={titleAs} variant="xl-medium" className={styles.heading}>
             {title}
           </Heading>
           <p className={styles.description}>{description}</p>
@@ -63,6 +65,7 @@ export function LinkCard({
         href={href}
         baseDomain={BASE_DOMAIN}
         className="focus:brand-outline absolute inset-0"
+        aria-label={`Read more about ${title}`}
       />
     </Tag>
   )

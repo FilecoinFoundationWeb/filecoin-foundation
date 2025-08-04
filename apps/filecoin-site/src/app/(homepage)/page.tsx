@@ -69,6 +69,7 @@ export default async function Home() {
                     as="li"
                     backgroundVariant="light"
                     title={title}
+                    titleAs="h2"
                     description={description}
                     href={href}
                     icon={{ component: icon }}
