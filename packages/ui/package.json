@@ -75,7 +75,7 @@
     "@types/jest": "^30.0.0",
     "jest": "^30.0.5",
     "jest-environment-jsdom": "^30.0.5",
-    "ts-jest": "^29.4.0"
+    "ts-jest": "^29.4.1"
   },
   "peerDependencies": {
     "@filecoin-foundation/hooks": "0.0.0",

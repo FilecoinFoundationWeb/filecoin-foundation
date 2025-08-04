@@ -24,7 +24,7 @@
     "lint": "eslint --fix ."
   },
   "devDependencies": {
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.2",
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0"
   },
