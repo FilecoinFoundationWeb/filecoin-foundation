@@ -2,7 +2,7 @@ import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import type { SimpleCardData } from '@/components/SimpleCard'
 
-const CTA_TEXT = 'Learn more'
+const CTA_TEXT = 'Learn how it works'
 
 export const filecoinStackFeatures: Array<SimpleCardData> = [
   {
