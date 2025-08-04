@@ -38,7 +38,7 @@ After extensive analysis and community input, we've identified four core metrics
 - Daily data onboarding provides the best proxy for actual data storage activity. This metric tracks the daily amount of raw data being onboarded to the Filecoin network, measured in pebibytes (PiBs
 - The data originates from the [Spacescope API](https://docs.spacescope.io/) and reflects trends in meaningful network usage
 
-![](/uploads/screenshot-2025-06-24_08_54_26.png)
+![](/assets/images/screenshot-2025-06-24_08_54_26.png)
 
 ### 2. Number of Clients with More Than 1TiB Active Data
 
@@ -47,7 +47,7 @@ After extensive analysis and community input, we've identified four core metrics
 
 This data comes from the [State Market Deals tables in Lily BigQuery](https://lily.starboard.ventures/data/actors/#storage-market-actor).
 
-![](/uploads/screenshot-2025-06-24_08_54_51.png)
+![](/assets/images/screenshot-2025-06-24_08_54_51.png)
 
 ### 3. Total FIL in Paid Deals
 
@@ -55,7 +55,7 @@ This data comes from the [State Market Deals tables in Lily BigQuery](https://li
 - This metric focuses on State Market Deals where storage providers set meaningful pricing for their services. 
 - The price is extracted from the [storage_price_per_epoch](https://lily.starboard.ventures/data/actors/#storage-market-actor) value, converted from attoFIL to FIL, and calculated as [storage_price_per_epoch_fil](https://lily.starboard.ventures/data/actors/#storage-market-actor) multiplied by deal_length_epochs.
 
-![](/uploads/screenshot-2025-06-24_08_55_05.png)
+![](/assets/images/screenshot-2025-06-24_08_55_05.png)
 
 ### 4. Total Value Transacted Plus Gas Fees
 
@@ -64,7 +64,7 @@ This data comes from the [State Market Deals tables in Lily BigQuery](https://li
 
 The data originates from [Lily's derived_gas_outputs table](https://lily.starboard.ventures/data/chain/#derived_gas_outputs), which contains raw transaction and gas data joined with manual mappings of actor methods.
 
-![](/uploads/screenshot-2025-06-24_08_55_25.png)
+![](/assets/images/screenshot-2025-06-24_08_55_25.png)
 
 ## Current State: The Data Tells a Story of Transformation
 
