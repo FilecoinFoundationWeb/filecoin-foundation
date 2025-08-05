@@ -1,6 +1,6 @@
 import type { ComponentPropsWithoutRef } from 'react'
 
-import * as Sentry from '@sentry/node'
+import * as Sentry from '@sentry/nextjs'
 import { clsx } from 'clsx'
 
 import { SmartTextLink } from '../TextLink/SmartTextLink'

@@ -1,6 +1,6 @@
 import type { ComponentPropsWithoutRef } from 'react'
 
-import * as Sentry from '@sentry/node'
+import * as Sentry from '@sentry/nextjs'
 import Image from 'next/image'
 
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
