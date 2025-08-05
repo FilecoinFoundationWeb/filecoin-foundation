@@ -43,3 +43,15 @@ jobs:
             --exclude '(twitter|x)\.com'
             --retry-wait-time 3
             'apps/${{ matrix.app }}/src/**/*.md'
+
+      - name: Notify Slack on Link Check Results
+        if: always()
+        uses: slackapi/slack-github-action@v2.1.1
+        with:
+          method: chat.postMessage
+          token: ${{ secrets.SLACK_BOT_TOKEN }}
+          payload: |
+            {
+              "channel": "${{ secrets.SLACK_CHANNEL_ID }}",
+              "text": "Link Checker Results for ${{ matrix.app }}: ${{ job.status == 'success' && '✅ All links OK' || '❌ Broken links found' }} - <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Details>"
+            }
