@@ -22,7 +22,6 @@ seo:
 
 - Filecoin Foundation helped lead the client success track at FDS-6, focused on the practical challenges and strategies for driving real-world adoption of Filecoin storage, particularly among enterprise clients. Participants explored client-centric growth, Ideal Customer Profiles (ICPs), improved onboarding tools, driving real-world adoption of Filecoin, and laying the groundwork for scalable demand. 
 - [Proof of Data Possession (PDP) is live on mainnet.](https://filecoin.io/blog/posts/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin) PDP supports verifiable hot storage on the Filecoin network, opening the door to new use cases while preserving integrity and openness - resulting in a more capable network offering both cold storage proofs and hot storage for fast retrievals. 
-- Register for the next [Developer Working Group](https://lu.ma/p9azo1pl) on June 5! The DevWG connects Filecoin developers and community members to discuss key areas of interest across the developer community.
 
 ## Network Operations
 

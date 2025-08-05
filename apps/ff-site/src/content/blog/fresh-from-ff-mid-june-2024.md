@@ -25,7 +25,7 @@ seo:
 
 ### Builders Funnel
 
-- Thanks to all the hackers who submitted to HackFS! Submissions ended June 7, resulting in 83 projects across all tracks. The finale is available on [YouTube](https://ethglobal.tv/hackfs2024-finale-mio15).
+- Thanks to all the hackers who submitted to HackFS! Submissions ended June 7, resulting in 83 projects across all tracks.
 - Learn more about the Developer Working Group and the new dev grant opportunities from Developer Grants Coordinator Erin O'Conner [in her session](https://youtu.be/DR9x67S0pZE?feature=shared) at the Filecoin Booth at Consensus.
 
 ### Storage
@@ -39,7 +39,6 @@ seo:
 
 - We want your input! For the first time, the Filecoin community can suggest names and vote on the code name for nv23 [using Metropolis](https://metropolis.vote/dashboard/c/6pnapz4axv). All Filecoin upgrades are assigned code names, and each upgrade is assigned a unique code name that reflects the change’s significance and scope.
 - Share your technical expertise by joining a community governance working group! As the network welcomes new builders and wider adoption, the Foundation launched three community groups: the Storage Provider Working Group (SPWG), the Developer Working Group (DevWG), and the Data Clients Working Group (DCWG).
-
   - [The SPWG](https://filecoinproject.slack.com/archives/C02GQUMFQVA) holds weekly calls to discuss the latest developments for Filecoin Storage Providers.
   - [The DevWG](https://github.com/filecoin-project/DeveloperWG) is a space to connect with developers, community members, researchers, and others interested in the development of new tools, technologies, and use cases that leverage the Filecoin protocol.
   - [The DCWG](mailto:dataclients@fil.org) welcomes participants to share their data upload experiences, identify hurdles and solutions for uploading data, and discuss how the Filecoin ecosystem can support data onboarding.
@@ -55,7 +54,6 @@ seo:
 - Alexey Potapov, Chief AGI Officer at SingularityNET, sat down with FF’s Aaron Stanley at Web Summit Rio to discuss [The Evolution of Decentralized AGI on DWeb Decoded](https://youtu.be/-sos3Ljogeo?feature=shared).
 - Read the latest [Ecosystem Spotlight on GhostDrive](/blog/ecosystem-spotlight-ghostdrives-secure-decentralized-storage-now-on-mobile) and how it leverages Filecoin's decentralized storage to improve redundancy and security.
 - FIL Brussels opportunities for Filecoin ecosystem members are available:
-
   - For sponsorship interest, please contact [sponsorships@fil.org](mailto:sponsorships@fil.org).
   - For interest in speaking at the FIL Brussels Network Base, please contact [events@fil.org](mailto:events@fil.org).
   - To request an FF speaker at your event, please contact [comms@fil.org](mailto:comms@fil.org).

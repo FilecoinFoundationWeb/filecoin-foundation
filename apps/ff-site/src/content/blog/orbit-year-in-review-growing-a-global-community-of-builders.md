@@ -50,7 +50,7 @@ This year some Orbit Ambassadors hosted larger, multi-day conferences in Jakarta
 
 ![Filecoin Orbit Events](https://lh7-us.googleusercontent.com/XNeOoVWzGM_EYVuSDzPhd6WCoHHWfiFhgQji2D4xzsOzp8T8YshHA_JZelsau0qqeMogW4ZU4s-NxvAbUJ49fJ4TAH2DBN4h4JYPhmSMVZNxBWNpQSM4j61XJW9H4GFlVL0p5v-FEEJ5-nRPRfGw4v4)
 
-Hosted by Orbit Ambassador Ryan Long and [MetaPals](https://metapals.pet/), [FIL Jakarta](/events/fil-jakarta) was the most-attended in-person Filecoin event in Indonesia, drawing over 700 developers, students, storage providers, and community members participating in insightful discussions and hands-on workshops led by industry experts.
+Hosted by Orbit Ambassador Ryan Long and [MetaPals](https://faq.metapals.pet/), [FIL Jakarta](/events/fil-jakarta) was the most-attended in-person Filecoin event in Indonesia, drawing over 700 developers, students, storage providers, and community members participating in insightful discussions and hands-on workshops led by industry experts.
 
 ![Filecoin Orbit FIL Seoul with Secured Finance Event](https://lh7-us.googleusercontent.com/hi_I6856UzIAelg8ra4od-KZVF--dQjVIgJh8Kz1ySV377EKN5Qcyt6BvdCEc3h7CudP7Ptwopq0p0aGk2T3fwhDXYFiWw2ZcoqXPdM9iDnL8sBPv3C1ar-Mwp7k3FfG3kLD9mJBwbtgRPWImu0mD8c)
 

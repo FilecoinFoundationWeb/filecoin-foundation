@@ -48,7 +48,7 @@ The [FF Annual Report](/blog/filecoin-foundation-2023-annual-report), published 
 In FY’24, we’re continuing to fund projects that drive the ecosystem forward. In addition to 24 active projects (as August 2024), we had several projects complete their grant milestones, including:
 
 - [IPFS VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Dataseek.ipfs-vscode-extension): This extension is live and ready for users interested in installing and deploying the IPFS node daemon in the VS Code environment.
-- [LabDAO](/ecosystem-explorer/labdao) + [Bacalhau](/ecosystem-explorer/bacalhau) Integration: This integration provides scientists a low cost, easily accessible, and transparent environment for useful data workloads on Filecoin and IPFS.
+- [Bacalhau](/ecosystem-explorer/bacalhau) Integration: This integration provides scientists a low cost, easily accessible, and transparent environment for useful data workloads on Filecoin and IPFS.
 - [Hamster](/ecosystem-explorer/hamster): This tool ensures developers keen on security and privacy have an all-inclusive development and automation experience for Filecoin deployment.
 - [Spheron](https://www.spheron.network/): Heroku for Decentralized Storage: This protocol is versatile and supports a wide range of scalable storage frameworks sufficient for all types of developer and business needs.
 - [ipEHR](https://ipehr.org/): This tool enhances critical data management for the healthcare industry.

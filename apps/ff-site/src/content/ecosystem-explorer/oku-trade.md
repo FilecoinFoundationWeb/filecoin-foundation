@@ -24,4 +24,4 @@ seo:
     Polygon and Base.
 ---
 
-Oku is a non-custodial DeFi meta-aggregator offering the best [swap](https://docs.oku.trade/home/general/getting-started-with-oku-trade/swap) and [bridge](https://docs.oku.trade/home/general/getting-started-with-oku-trade/bridge) rates across any EVM chain. Oku Trade supports bridging and swapping on Filecoin.
+Oku is a non-custodial DeFi meta-aggregator offering the best swap and [bridge](https://docs.oku.trade/home/general/getting-started-with-oku-trade/bridge) rates across any EVM chain. Oku Trade supports bridging and swapping on Filecoin.

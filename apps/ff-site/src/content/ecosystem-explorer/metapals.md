@@ -11,7 +11,7 @@ tech:
   - ipfs
 image:
   src: /assets/images/6607367ee29bf508686a1043_metapals.png
-website: https://metapals.pet/
+website: https://faq.metapals.pet/
 year-joined: 2024
 category: dapp
 seo:

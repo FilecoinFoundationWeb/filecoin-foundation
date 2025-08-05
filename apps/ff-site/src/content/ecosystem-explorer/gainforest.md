@@ -12,7 +12,7 @@ tech:
 image:
   src: /assets/images/6598730db2c229176c8afc29_gainforest_logo_white.png
 website: https://gainforest.earth
-featured-content: https://green.filecoin.io/web3-and-the-sustainable-data-movement/
+featured-content: ""
 repo: https://github.com/gainforest
 twitter: https://twitter.com/GainForestNow
 category: climate

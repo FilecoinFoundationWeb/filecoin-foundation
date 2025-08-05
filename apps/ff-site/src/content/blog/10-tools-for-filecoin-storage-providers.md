@@ -22,7 +22,7 @@ Let's explore the vast array of "as-a-service" offerings for storage providers, 
 
 ## Sales and Business Development-as-a-Service
 
-Engaging with potential clients and expanding your user base is crucial. Companies like [Distributed Storage Solutions](https://distributedstorage.com/), [PiKNiK](/ecosystem-explorer/piknik) offer marketing and selling storage solutions. By leveraging their expertise, you can focus on your core storage offerings while they handle client acquisition and relationship management.
+Engaging with potential clients and expanding your user base is crucial. Companies like Distributed Storage Solutions, [PiKNiK](/ecosystem-explorer/piknik) offer marketing and selling storage solutions. By leveraging their expertise, you can focus on your core storage offerings while they handle client acquisition and relationship management.
 
 ## Infrastructure-as-a-Service (IaaS)
 

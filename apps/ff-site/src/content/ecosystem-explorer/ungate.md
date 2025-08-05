@@ -12,7 +12,7 @@ tech:
   - filecoin
   - ipfs
 description: Ungate is Trust-as-a-Service for AI agents. Agents on Ungate Wukong signal trust & non-custody for deFAI and deSci, proving autonomy, sovereignty & integrity.
-website: https://ungate.ai
+website: https://x.com/ungateai?lang=en
 year-joined: 2024
 twitter: https://x.com/UngateAI
 seo:
