@@ -4,7 +4,7 @@ import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import { Heading } from './Heading'
+import { Heading, type HeadingProps } from './Heading'
 import { IconBadge, type IconBadgeProps } from './IconBadge'
 import type { SectionProps } from './Section'
 
@@ -12,7 +12,7 @@ type LinkCardProps = {
   as: 'li' | 'article' | 'div'
   backgroundVariant: SectionProps['backgroundVariant']
   title: string
-  titleAs?: 'h2' | 'h3'
+  headingTag: HeadingProps['tag']
   description?: string
   href: string
   icon: {
@@ -32,7 +32,7 @@ export function LinkCard({
   as: Tag,
   backgroundVariant,
   title,
-  titleAs = 'h3',
+  headingTag,
   description,
   href,
   icon,
@@ -52,7 +52,11 @@ export function LinkCard({
 
       {description && (
         <div className="space-y-5">
-          <Heading tag={titleAs} variant="xl-medium" className={styles.heading}>
+          <Heading
+            tag={headingTag}
+            variant="xl-medium"
+            className={styles.heading}
+          >
             {title}
           </Heading>
           <p className={styles.description}>{description}</p>

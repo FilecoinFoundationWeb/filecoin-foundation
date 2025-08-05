@@ -199,6 +199,7 @@ export default function Learn() {
                 as="li"
                 backgroundVariant="dark"
                 title={title}
+                headingTag="h3"
                 href={href}
                 icon={{ component: icon, variant: 'filled' }}
               />

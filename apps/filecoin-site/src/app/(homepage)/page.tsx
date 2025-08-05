@@ -69,7 +69,7 @@ export default async function Home() {
                     as="li"
                     backgroundVariant="light"
                     title={title}
-                    titleAs="h2"
+                    headingTag="h2"
                     description={description}
                     href={href}
                     icon={{ component: icon }}
@@ -253,6 +253,7 @@ export default async function Home() {
                   as="li"
                   backgroundVariant="dark"
                   title={title}
+                  headingTag="h3"
                   href={href}
                   icon={{ component: icon, variant: 'filled' }}
                 />
