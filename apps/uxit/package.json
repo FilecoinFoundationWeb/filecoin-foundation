@@ -13,7 +13,7 @@
     "@filecoin-foundation/ui": "0.0.0",
     "@unlighthouse/cli": "^0.17.2",
     "@unlighthouse/core": "^0.17.1",
-    "next": "^15.4.4",
+    "next": "^15.4.5",
     "puppeteer": "^24.14.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -27,6 +27,6 @@
     "@types/react-dom": "19.1.7",
     "postcss": "^8.5.6",
     "tsx": "^4.20.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   }
 }
