@@ -29,7 +29,7 @@ export function SectionSubContent({
           {title}
         </Heading>
         {description && (
-          <p className="section-sub-content-description-text pt-6 text-lg leading-7 font-normal text-balance">
+          <p className="section-sub-content-description-text pt-6 text-lg/7 font-normal text-balance">
             {description}
           </p>
         )}
