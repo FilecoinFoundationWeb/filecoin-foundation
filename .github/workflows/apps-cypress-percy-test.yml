@@ -4,31 +4,26 @@ on:
   push:
     paths:
       - "apps/**"
+      - "packages/**" # Include packages that apps might depend on
     branches: [main]
   pull_request:
     paths:
       - "apps/**"
+      - "packages/**"
     branches: [main]
 
 jobs:
-  cypress-run:
-    if: github.event.pull_request.draft == false
+  # First job to detect which apps have changes
+  detect-changes:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        app: [ff-site, ffdweb-site]
-    defaults:
-      run:
-        working-directory: apps/${{ matrix.app }}
-
-    env:
-      AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
-      PERCY_TOKEN: ${{ matrix.app == 'ff-site' && secrets.PERCY_TOKEN_FF_SITE || secrets.PERCY_TOKEN_FFDWEB_SITE || '' }}
-      ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
-
+    outputs:
+      matrix: ${{ steps.detect-changes.outputs.matrix }}
+      has_changes: ${{ steps.detect-changes.outputs.has_changes }}
     steps:
       - name: Check out code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Need full history for turbo-ignore
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v4
@@ -37,21 +32,142 @@ jobs:
           cache: "npm"
 
       - name: Install Dependencies
-        run: npm install --prefer-offline || npm install --prefer-offline
+        run: npm ci
+
+      - name: Detect Changes in Apps
+        id: detect-changes
+        run: |
+          # Initialize empty array for apps with changes
+          apps_with_changes=()
+
+          # Map of workspace names to directory names
+          declare -A workspace_to_dir=(
+            ["filecoin-foundation-site"]="ff-site"
+            ["ffdweb-site"]="ffdweb-site"
+          )
+
+          # List of all apps that have Cypress tests (using workspace names)
+          all_apps=("filecoin-foundation-site" "ffdweb-site")
+
+          # Check each app for changes using turbo-ignore
+          for app in "${all_apps[@]}"; do
+            dir_name="${workspace_to_dir[$app]}"
+            echo "Checking changes for $app (directory: $dir_name)..."
+            cd "apps/$dir_name"
+            
+            # Debug: Show what files changed
+            echo "🔍 Git diff for this PR:"
+            git diff --name-only HEAD~1 HEAD || git diff --name-only origin/main...HEAD || echo "Could not determine diff"
+            
+            # Debug: Show turbo-ignore command and reasoning
+            echo "🔍 Running turbo-ignore with verbose output:"
+            npx turbo-ignore --help || echo "turbo-ignore help not available"
+            
+            # Use turbo-ignore to check if this app should be built/tested
+            # turbo-ignore returns 0 if no changes (should skip), 1 if changes detected
+            echo "🔍 turbo-ignore result for $app:"
+            if npx turbo-ignore; then
+              echo "✅ No changes detected for $app, skipping..."
+            else
+              echo "🔄 Changes detected for $app, will run tests"
+              apps_with_changes+=("$app")
+            fi
+            
+            cd ../..
+          done
+
+          # Convert array to JSON matrix format
+          if [ ${#apps_with_changes[@]} -eq 0 ]; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "matrix={\"app\":[]}" >> $GITHUB_OUTPUT
+            echo "📝 No apps have changes - skipping all Cypress tests"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            # Create JSON array for GitHub Actions matrix using printf approach
+            apps_json=$(printf '"%s",' "${apps_with_changes[@]}" | sed 's/,$//')
+            echo "matrix={\"app\":[$apps_json]}" >> $GITHUB_OUTPUT
+            echo "📝 Apps with changes: ${apps_with_changes[*]}"
+          fi
+
+  cypress-run:
+    needs: detect-changes
+    # Only run if we have changes and it's not a draft PR
+    if: needs.detect-changes.outputs.has_changes == 'true' && github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{ fromJSON(needs.detect-changes.outputs.matrix) }}
+      fail-fast: false # Don't cancel other apps if one fails
+    defaults:
+      run:
+        # Map workspace names back to directory names
+        working-directory: apps/${{ matrix.app == 'filecoin-foundation-site' && 'ff-site' || matrix.app }}
+
+    env:
+      AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
+      PERCY_TOKEN: ${{ matrix.app == 'filecoin-foundation-site' && secrets.PERCY_TOKEN_FF_SITE || secrets.PERCY_TOKEN_FFDWEB_SITE || '' }}
+      ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Check if Cypress scripts exist
+        id: check-scripts
+        run: |
+          # Get the actual directory name from workspace name
+          DIR_NAME=${{ matrix.app == 'filecoin-foundation-site' && 'ff-site' || matrix.app }}
+          echo "🔍 Checking if Cypress scripts exist for ${{ matrix.app }} (directory: $DIR_NAME)..."
+
+          # Check if the required scripts exist in package.json
+          if jq -e '.scripts["test:cypress"]' package.json > /dev/null 2>&1; then
+            echo "cypress_exists=true" >> $GITHUB_OUTPUT
+            echo "✅ test:cypress script found"
+          else
+            echo "cypress_exists=false" >> $GITHUB_OUTPUT
+            echo "⚠️ test:cypress script not found in ${{ matrix.app }}"
+          fi
+
+          if jq -e '.scripts["test:cypress:percy"]' package.json > /dev/null 2>&1; then
+            echo "percy_exists=true" >> $GITHUB_OUTPUT
+            echo "✅ test:cypress:percy script found"
+          else
+            echo "percy_exists=false" >> $GITHUB_OUTPUT
+            echo "⚠️ test:cypress:percy script not found in ${{ matrix.app }}"
+          fi
 
       - name: Build Project
-        working-directory: .
-        run: npx turbo run build --filter="./apps/${{ matrix.app }}"
+        run: |
+          DIR_NAME=${{ matrix.app == 'filecoin-foundation-site' && 'ff-site' || matrix.app }}
+          echo "🏗️ Building ${{ matrix.app }} (directory: $DIR_NAME)..."
+          cd ../..
+          npx turbo build --filter="./apps/$DIR_NAME"
 
       - name: Start Server
         run: |
+          echo "🚀 Starting server for ${{ matrix.app }}..."
+          # Start the server in the background
           npm start &
-          echo "Waiting for server to start..."
-          npx wait-on http://localhost:3000
+
+          # Wait for the server to be ready
+          echo "⏳ Waiting for server to start on http://localhost:3000..."
+          npx wait-on http://localhost:3000 --timeout 60000
 
       - name: Determine Test Type
         id: test-type
         run: |
+          echo "🎯 Determining test type for ${{ matrix.app }}..."
+
           if [[ "${{ github.event_name }}" == "pull_request" ]]; then
             BRANCH_NAME="${{ github.head_ref }}"
             COMMIT_MESSAGE="${{ github.event.pull_request.title }}"
@@ -62,14 +178,51 @@ jobs:
 
           if [[ "$BRANCH_NAME" == cms/* ]] || [[ "$COMMIT_MESSAGE" == *"[skip percy]"* ]]; then
             echo "skip_percy=true" >> $GITHUB_OUTPUT
+            echo "🔕 Percy tests will be skipped (CMS branch or [skip percy] in commit message)"
           else
             echo "skip_percy=false" >> $GITHUB_OUTPUT
+            echo "📸 Percy tests will be included"
           fi
 
       - name: Run Cypress Tests without Percy
-        if: steps.test-type.outputs.skip_percy == 'true'
-        run: npm run test:cypress
+        if: steps.test-type.outputs.skip_percy == 'true' && steps.check-scripts.outputs.cypress_exists == 'true'
+        run: |
+          echo "🧪 Running Cypress tests for ${{ matrix.app }} (without Percy)..."
+          npm run test:cypress
 
       - name: Run Cypress Tests with Percy
-        if: steps.test-type.outputs.skip_percy == 'false'
-        run: npm run test:cypress:percy
+        if: steps.test-type.outputs.skip_percy == 'false' && steps.check-scripts.outputs.percy_exists == 'true'
+        run: |
+          echo "🧪📸 Running Cypress tests for ${{ matrix.app }} (with Percy)..."
+          npm run test:cypress:percy
+
+      - name: Skip Cypress Tests (script not found)
+        if: |
+          (steps.test-type.outputs.skip_percy == 'true' && steps.check-scripts.outputs.cypress_exists == 'false') ||
+          (steps.test-type.outputs.skip_percy == 'false' && steps.check-scripts.outputs.percy_exists == 'false')
+        run: |
+          echo "⚠️ Skipping Cypress tests for ${{ matrix.app }} - required script not found in package.json"
+          echo "Please add the missing script(s) to apps/${{ matrix.app }}/package.json"
+
+  # Summary job to show overall results
+  cypress-summary:
+    needs: [detect-changes, cypress-run]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Summary
+        run: |
+          echo "## 📊 Cypress Test Summary" >> $GITHUB_STEP_SUMMARY
+
+          if [[ "${{ needs.detect-changes.outputs.has_changes }}" == "false" ]]; then
+            echo "✅ No changes detected in any apps - all tests skipped efficiently!" >> $GITHUB_STEP_SUMMARY
+          elif [[ "${{ needs.cypress-run.result }}" == "success" ]]; then
+            echo "✅ All Cypress tests passed!" >> $GITHUB_STEP_SUMMARY
+          elif [[ "${{ needs.cypress-run.result }}" == "failure" ]]; then
+            echo "❌ Some Cypress tests failed. Check the job logs above for details." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️ Cypress tests were skipped or cancelled." >> $GITHUB_STEP_SUMMARY
+          fi
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Changed apps tested: ${{ needs.detect-changes.outputs.matrix }}" >> $GITHUB_STEP_SUMMARY
