@@ -9,6 +9,7 @@ jobs:
   linkChecker:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         app: [ff-site, ffdweb-site, filecoin-site]
         include:
