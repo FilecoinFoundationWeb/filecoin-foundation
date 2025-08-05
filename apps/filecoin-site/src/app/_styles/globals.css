@@ -45,7 +45,7 @@
   @apply rounded-full border-2 border-zinc-200;
 
   .share-article-list & {
-    @apply scale-80;
+    @apply scale-70;
   }
 }
 

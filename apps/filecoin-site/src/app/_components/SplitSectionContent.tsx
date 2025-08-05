@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { clsx } from 'clsx'
 
 import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
@@ -39,7 +37,7 @@ export function SplitSectionContent({
           {descriptionArray.map((item, index) => (
             <p
               key={index}
-              className="split-section-description-text text-lg/7 text-balance md:text-2xl/8"
+              className="split-section-description-text text-lg/7 text-balance md:text-2xl/9"
             >
               {item}
             </p>
