@@ -130,7 +130,7 @@ Incentivized [RPC Pool](https://github.com/filecoin-project/devgrants/issues/164
 
 [PiKNiK](https://www.piknik.com/): To help FVM developers test out storage deal workflows, PiKNiK will set up a Boost-enabled storage provider on Calibration testnet to auto-accept smaller storage deals advertised in Boost messages.
 
-[Regen Foundation - ReFi Chamas](https://regen.foundation/towards-a-decentralized-future-the-promise-of-the-permissionless-credit-class-registry/): This project supports ReFi initiatives for women and indigenous communities in East Africa in partnership with Regen Network, including real-world use cases of Filecoin empowering the climate-vulnerable population and the financially disenfranchised.
+Regen Foundation - ReFi Chamas: This project supports ReFi initiatives for women and indigenous communities in East Africa in partnership with Regen Network, including real-world use cases of Filecoin empowering the climate-vulnerable population and the financially disenfranchised.
 
 [Renderhive](/ecosystem-explorer/renderhive): Renderhive is a trust-free, decentralized, self-governed marketplace that enables any owner of a CPU/GPU to offer available computation power. This platform uses IPFS, Filecoin, and Hedera’s DLT to establish trust among the participants of the network. 
 
