@@ -1,0 +1,12 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "src/app/_data/cmsConfigSchema.json"
+      ]
+    }
+  }
+}
