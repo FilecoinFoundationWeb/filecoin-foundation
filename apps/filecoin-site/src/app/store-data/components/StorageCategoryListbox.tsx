@@ -13,6 +13,7 @@ import {
   type StorageCategory,
 } from '../data/storageCategories'
 import { storageProviders } from '../data/storageProviders'
+import type { StorageCategoryFilterProps } from '../types'
 import { getActiveCategories } from '../utils/getActiveCategories'
 import { getProvidersForCategory } from '../utils/getProvidersForCategory'
 
