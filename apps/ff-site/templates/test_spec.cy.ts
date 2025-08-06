@@ -1,14 +1,33 @@
-`import { PATHS } from '@/constants/paths'
+;`import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
-import { testPageMetadata } from '@/support/test-utils'
-import { verifyLinks } from '@/support/verifyLinksUtil'
+import { tests } from '@/cypress/support'
+import { verifyLinks } from '@/cypress/support/verifyLinksUtil'
+import type { PageFrontmatterSeo } from '@/cypress/tasks/getPageFrontmatterSeo'
+import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
+
+const { contentPath, path } = PATHS.__PATH_NAME__
 
 describe('__PAGE_NAME_START_CASE__ Page', () => {
-  it('should check metadata', () => {
-    testPageMetadata(PATHS.__PATH_NAME__)
+  it(tests.metadata.prompt, () => {
+    cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
+      (seo) => {
+        tests.metadata.fn({
+          path,
+          title: getMetaTitleTemplate(seo.title),
+          description: seo.description,
+          baseUrl: BASE_URL,
+        })
+      },
+    )
   })
 
   it('should check links', () => {
-    verifyLinks(PATHS.__PATH_NAME__.path)
+    verifyLinks(path)
   })
-});`
+
+  it('should match visual snapshot', () => {
+    cy.visit(path)
+    cy.percySnapshot()
+  })
+})`
