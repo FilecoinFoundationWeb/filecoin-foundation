@@ -36,7 +36,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         id: lychee
         with:
-          fail: false
           args: |
             --accept 100..=103,200..=299,403,429
             --base ${{ env.BASE_URL }}
