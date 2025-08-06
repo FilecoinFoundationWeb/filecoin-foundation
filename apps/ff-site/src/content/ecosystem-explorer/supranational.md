@@ -12,7 +12,6 @@ tech:
 image:
   src: /assets/images/6597243a0061214bd86cb9b1_gkbtq5uuduql3wfgayraupovzkfhcxrwdk6iqhtmili.png
 twitter: "https://twitter.com/_Supranational"
-featured-content: ""
 repo: "https://github.com/supranational"
 website: "https://www.supranational.net/"
 year-joined: 2024
