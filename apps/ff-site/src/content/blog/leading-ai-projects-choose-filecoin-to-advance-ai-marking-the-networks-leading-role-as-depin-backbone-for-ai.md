@@ -51,7 +51,7 @@ Also on stage at FIL Brussels and during EthCC, Filecoin ecosystem teams made an
 
 ## [Fileverse](/ecosystem-explorer/fileverse) launches dDocs, a private, peer-to-peer, onchain alternative for real-time collaboration
 
-[Fileverse](/ecosystem-explorer/fileverse) launched a decentralized docs app, providing a privacy-enhancing alternative to one of the most used apps on the Internet: Google Docs. With end-to-end encryption by design, [ddocs.new](http://ddocs.new) is a decentralized docs app that ensures that user data remains accessible only by the document owner and those with whom they choose to share it. This encryption approach is also maintained during real-time collaboration. Unlike other platforms, ddocs.new does not store any data on centralized servers. Instead, documents and drafts are stored via peer-to-peer networks like IPFS. Read Fileverse’s announcement](https://portal.fileverse.io/#/0x73266E4875f3A0828310920A0A54AC1D6d5bec75/file/2?chainId=100).
+[Fileverse](/ecosystem-explorer/fileverse) launched a decentralized docs app, providing a privacy-enhancing alternative to one of the most used apps on the Internet: Google Docs. With end-to-end encryption by design, [ddocs.new](https://docs.fileverse.io/document/create) is a decentralized docs app that ensures that user data remains accessible only by the document owner and those with whom they choose to share it. This encryption approach is also maintained during real-time collaboration. Unlike other platforms, ddocs.new does not store any data on centralized servers. Instead, documents and drafts are stored via peer-to-peer networks like IPFS. Read Fileverse’s announcement](https://portal.fileverse.io/#/0x73266E4875f3A0828310920A0A54AC1D6d5bec75/file/2?chainId=100).
 
 ### About Filecoin
 

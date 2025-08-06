@@ -193,7 +193,12 @@ export const redirects = [
   },
   {
     source: '/ecosystem-explorer/solmedia/%E2%80%A6',
-    destination: '/ecosystem-explorer/solmedia',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/solmedia',
+    destination: '/ecosystem-explorer',
     permanent: true,
   },
   {
