@@ -32,7 +32,7 @@ export function Card({
 
         <p
           className={clsx(
-            'text-xl',
+            'text-xl/6',
             backgroundVariant === 'dark' ? 'text-zinc-400' : 'text-zinc-600',
           )}
         >

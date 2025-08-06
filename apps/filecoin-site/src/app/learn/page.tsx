@@ -88,7 +88,7 @@ export default function Learn() {
 
       <PageSection backgroundVariant="gray">
         <SectionContent title="Building a decentralized future">
-          <CardGrid as="ul" variant="smTwoLgThree">
+          <CardGrid as="ul" variant="lgTwoWide">
             {filecoinValues.map(({ title, description, icon }) => (
               <Card
                 key={title}
