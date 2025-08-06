@@ -9,7 +9,7 @@ export const filecoinParticipants: Array<SimpleCardData> = [
       'Verifies continuous data integrity, and enables secure, reliable operations across the system.',
     cta: {
       href: 'https://docs.filecoin.io/basics/what-is-filecoin/blockchain',
-      text: 'Learn more',
+      text: 'Learn about blockchain',
     },
   },
   {

@@ -2,6 +2,7 @@ import { toggleArraySelection } from '@filecoin-foundation/utils/toggleArraySele
 
 import { storageCategories } from '../data/storageCategories'
 import { storageProviders } from '../data/storageProviders'
+import type { StorageCategoryFilterProps } from '../types'
 import { getProvidersForCategory } from '../utils/getProvidersForCategory'
 
 import { StorageCategoryCheckbox } from './StorageCategoryCheckbox'

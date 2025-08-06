@@ -72,7 +72,6 @@ export function SimpleCardWithLogo({
       <CTALink
         inset
         href={cta.href}
-        aria-label={cta.text}
         textClassName="absolute bottom-6 sm:left-48 left-6"
       >
         {cta.text}

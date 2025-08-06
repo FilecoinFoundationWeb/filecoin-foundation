@@ -38,6 +38,7 @@ export function NewsletterForm() {
             disabled={formState.isSubmitting}
             className="absolute right-0 -mr-1 flex h-12 w-12 cursor-pointer items-center justify-center"
             type="submit"
+            aria-label="Submit newsletter subscription"
           >
             {/* #todo: Add gradient to icon */}
             <div className="text-brand-600 relative inline-block">

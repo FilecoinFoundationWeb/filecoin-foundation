@@ -19,7 +19,15 @@ export function StepCard({
 }: StepCardProps) {
   return (
     <Tag className="flex flex-col gap-3">
-      <span className="text-brand-500 text-4xl font-medium">
+      <span
+        className="text-4xl font-medium text-transparent"
+        style={{
+          background: 'var(--gradient-brand-dark)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+        }}
+      >
         {String(step).padStart(2, '0')}.
       </span>
       <Heading tag={headingTag} variant="xl-medium">
