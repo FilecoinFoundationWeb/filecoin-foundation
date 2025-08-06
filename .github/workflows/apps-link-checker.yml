@@ -44,3 +44,13 @@ jobs:
             --exclude '(twitter|x)\.com'
             --retry-wait-time 3
             'apps/${{ matrix.app }}/src/**/*.md'
+      - name: Create Link Check Summary
+        if: always()
+        run: |
+          echo "## Link Check Results for ${{ matrix.app }}" >> $GITHUB_STEP_SUMMARY
+          echo "Base URL: ${{ env.BASE_URL }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ -f lychee/out.md ]; then
+            cat lychee/out.md >> $GITHUB_STEP_SUMMARY
+          fi
