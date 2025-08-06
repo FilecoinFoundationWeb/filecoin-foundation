@@ -11,12 +11,12 @@
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
     "@phosphor-icons/react": "^2.1.10",
-    "next": "^15.4.4",
+    "next": "^15.4.5",
     "nuqs": "^2.4.3",
     "postcss": "^8.5.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-hook-form": "^7.61.1"
+    "react-hook-form": "^7.62.0"
   },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
@@ -30,6 +30,6 @@
     "@types/react": "19.1.9",
     "@types/react-dom": "19.1.7",
     "tailwindcss": "^4.1.11",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   }
 }
