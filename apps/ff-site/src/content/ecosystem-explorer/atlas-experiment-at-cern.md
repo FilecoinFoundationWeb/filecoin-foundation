@@ -13,7 +13,6 @@ tech:
 image:
   src: /assets/images/6597243ac2419e5f35982ce6_rbbxg-heb6koeqarfszeocq4yjtsw2cqpkwb9atop1y.png
 website: "https://atlas.cern"
-featured-content: ""
 twitter: "https://twitter.com/ATLASexperiment"
 category: decentralized-science
 seo:
