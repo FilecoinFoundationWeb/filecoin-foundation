@@ -40,8 +40,6 @@ Three years after the Filecoin mainnet launch, we’re at a pivotal moment in th
 
 According to the latest [Messari report](https://messari.io/project/filecoin/quarterly-reports/q1-2024), more than 2,000 clients have onboarded datasets to Filecoin, with 508 large-dataset clients storing datasets bigger than 1,000 TiB. Over 3,000 storage provider systems contribute storage capacity to the network –– a vast web of servers and small businesses dedicated to decentralized storage. And the amount of data stored on the Filecoin network continues to climb. Nearly 1,900 PiB were stored on the Filecoin network in total active deals in Q1 2024, up 200% year over year.
 
-![](https://lh7-us.googleusercontent.com/9Y909Wbn-hRqILdkSypg8q8RRl1KA0UnwaoORg4tjlSE6oKzRYXyY4IFSGusHymnd_HI22kI9NVhYPzEIHy4fQOdGDSjcj9gs0JXLKBp0h5trqVd9rt-Nn9Lshwq964rimds-76vkPaUiJw-aXApwzI)
-
 Ansa Research recently published a post laying out ideas for [Filecoin growth](https://filecointldr.io/article/charting-success-for-filecoin-2024) in 2024. In it, they highlight three focus areas for the community this year: more deals, more onchain activity, and more concrete examples of value-add over other storage alternatives to thrive in 2024. Below, we spotlight each of these pursuits to better understand what success looks like. For more details on why these metrics matter, [read Ansa’s post](https://filecointldr.io/article/charting-success-for-filecoin-2024).
 
 ## Three Keys to Filecoin Network Growth in 2024

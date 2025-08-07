@@ -48,7 +48,7 @@ The concepts in this prototype have allowed us to bring these ideas into the art
 Finally, we are developing a conservation protocol layer on top of the data to allow for efficiency in keeping the artworks maintained as they evolve over time. Doing this specialized work of conservation and care – which is currently centralized in institutions – in a decentralized and distributed way will create great efficiencies can ensure the work stands the test of time.
 
 ![](https://lh7-us.googleusercontent.com/Vm9X8zYn6LuIjr3qQHu1AOZGT5f5Ww2V3C8aDllYVA8uY8RfCQ0AbFgGpbWwJdcQhpZVzjyGuXJXcpf04lw950KxyMXDccVRWUOY3wobbr92No_jzDpl6GPuNbGu-Su8KwcDiwLjEucmOzePUy6AIfo)
-_Tinsel Poycarbonate (2019) by Huntrezz Janos, Augmented Reality Face Filter Installation represented by the TRANSFER Data Trust featured at [PHOTOFAIRS New York](https://www.photofairs.org/newyork/) 2023_
+_Tinsel Poycarbonate (2019) by Huntrezz Janos, Augmented Reality Face Filter Installation represented by the TRANSFER Data Trust featured at PHOTOFAIRS New York 2023_
 
 **Talk about the automated governance system you are building.**
 

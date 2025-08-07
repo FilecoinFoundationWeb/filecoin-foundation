@@ -32,7 +32,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 ### Storage
 
 - FF’s Community & Data Onboarding team hosted its first [Network Growth 2.0 call](https://filecoinproject.slack.com/archives/C02GQUMFQVA/p1711138050905809) on March 22, where builders throughout the ecosystem came together to give a high-level view of what they’re working on. The first call featured Cloud Forest, Web3Mine, CID Gravity, [Seal Storage](/ecosystem-explorer/seal-storage), and more. Join the [\#global-storage-provider-community](https://filecoinproject.slack.com/archives/C02GQUMFQVA) Slack channel for details on future meetings.
-- The Decentralized Storage Alliance (DSA), of which FF is a founding member, [announced a leap forward in zk proof computation](https://dsalliance.io/resources/blog/dsa-announces-leap-forward-in-zk-proof-computation) on the Filecoin network. These advances optimize several key steps in the proof process via CPU and GPU optimizations. The result is an 80% reduction in cost and latency for proof generation – saving storage providers money, and increasing flexibility in how they use their hardware.
+- The Decentralized Storage Alliance (DSA), of which FF is a founding member, announced a leap forward in zk proof computation on the Filecoin network. These advances optimize several key steps in the proof process via CPU and GPU optimizations. The result is an 80% reduction in cost and latency for proof generation – saving storage providers money, and increasing flexibility in how they use their hardware.
 
 ## Network Operations
 
@@ -40,7 +40,6 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 - The FF Governance team held its monthly Community Governance Call on March 25. Subscribe to the [governance calendar](https://bit.ly/3T4NKAa) to get the meeting details and to stay updated.
 - Nv22 Dragon remains on track for April 11. There are four FIPs in scope for this upgrade:
-
   - [FIP0063](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0063.md) - Switching to a new Drand mainnet network
   - [FIP0074](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0074.md) - Remove cron-based automatic deal settlement
   - [FIP0076](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0076.md) - Direct data onboarding

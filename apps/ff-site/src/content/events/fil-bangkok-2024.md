@@ -570,7 +570,7 @@ speakers:
     - name: Roman Nebo
       title: CEO & Founder
       company: GhostDrive
-      linkedin: https://www.linkedin.com/in/romansky
+      linkedin: https://www.linkedin.com/in/romanebo/
       image:
         src: /assets/images/roman-nebo-headshot.webp
     - name: Patrick Kearney
