@@ -19,7 +19,7 @@ export function CategoryFilter({
 }: CategoryFilterProps) {
   return (
     <div className="space-y-10">
-      <div className="flex justify-between text-lg">
+      <div className="flex flex-col justify-between gap-15 text-lg lg:flex-row">
         <div className="flex flex-wrap gap-x-15 gap-y-10">
           {blogCategories.map(({ id, name }) => {
             const isActive = selectedCategory === id

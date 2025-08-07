@@ -28,14 +28,14 @@ type BlogPostListProps = {
 
 const BLOG_POSTS_PER_PAGE = 6
 const PAGINATION_INDEX_MAX_RANGE = 6
-const CATEGORY_KEY = 'category'
+const URL_SEARCH_PARAM = 'category'
 
 export function BlogPostList({ posts }: BlogPostListProps) {
   const clientSearchParams = useSearchParams()
   const searchParams = Object.fromEntries(clientSearchParams.entries())
 
   const [selectedCategory, setSelectedCategory] = useQueryState(
-    CATEGORY_KEY,
+    URL_SEARCH_PARAM,
     parseAsString
       .withDefault(DEFAULT_CATEGORY_KEY)
       .withOptions({ shallow: false }),
