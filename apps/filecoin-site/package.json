@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run generateRSS && next build",
     "start": "next start",
-    "lint": "next lint --fix"
+    "lint": "next lint --fix",
+    "generate-rss": "tsx scripts/generateRSS.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
