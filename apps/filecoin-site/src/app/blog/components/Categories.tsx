@@ -1,7 +1,9 @@
 import { Badge } from '@/components/Badge'
 
-type CategoriesProps = {
-  categories: string | Array<string>
+import type { AllowedCategory } from '../types/categoriesType'
+
+export type CategoriesProps = {
+  categories: AllowedCategory | Array<AllowedCategory>
 }
 
 export function Categories({ categories }: CategoriesProps) {

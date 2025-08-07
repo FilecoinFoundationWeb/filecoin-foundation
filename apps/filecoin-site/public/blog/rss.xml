@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filecoin Foundation Blog</title>
+    <link>https://filecoin.io/blog</link>
+    <description>Latest updates from the Filecoin Foundation</description>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Aug 2025 10:39:19 GMT</lastBuildDate>
+    <atom:link href="https://filecoin.io/blog/rss.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>FIL Dev Summit 6 Toronto: Takeaways and Next Steps</title>
+      <link>https://filecoin.io/blog/fil-dev-summit-6-toronto-takeaways-and-next-steps</link>
+      <guid>https://filecoin.io/blog/fil-dev-summit-6-toronto-takeaways-and-next-steps</guid>
+      <pubDate>Wed, 28 May 2025 04:00:00 GMT</pubDate>
+      <description><![CDATA[FIL Dev Summit 6 in Toronto brought devs together for deep dives, demos, and big ideas—shaping Filecoin’s future as essential decentralized infrastructure. Check out the event recap!]]></description>
+    </item>
+    
+    <item>
+      <title>Filecoin Ecosystem Metrics Roundup: Building a Data-Driven Foundation for Growth</title>
+      <link>https://filecoin.io/blog/filecoin-ecosystem-metrics-roundup-building-a-data-driven-foundation-for-growth</link>
+      <guid>https://filecoin.io/blog/filecoin-ecosystem-metrics-roundup-building-a-data-driven-foundation-for-growth</guid>
+      <pubDate>Thu, 26 Jun 2025 13:18:47 GMT</pubDate>
+      <description><![CDATA[Welcome to the inaugural edition of the Filecoin Ecosystem Metrics Roundup, a monthly series designed to align our community around the metrics that matter most for sustainable ecosystem growth.]]></description>
+    </item>
+    
+    <item>
+      <title>Filecoin News 110</title>
+      <link>https://filecoin.io/blog/filecoin-news-110</link>
+      <guid>https://filecoin.io/blog/filecoin-news-110</guid>
+      <pubDate>Tue, 27 May 2025 04:00:00 GMT</pubDate>
+      <description><![CDATA[🚀 Filecoin & Avalanche launch a cross-chain data bridge via FVM—offload data with cryptographic proofs, lower costs, and unlock multi-chain scale.]]></description>
+    </item>
+    
+    <item>
+      <title>Filecoin News 111</title>
+      <link>https://filecoin.io/blog/filecoin-news-111</link>
+      <guid>https://filecoin.io/blog/filecoin-news-111</guid>
+      <pubDate>Tue, 10 Jun 2025 04:00:00 GMT</pubDate>
+      <description><![CDATA[Filecoin is evolving from a supply-focused network to one increasingly defined by real usage, paying clients, and long-term sustainability.]]></description>
+    </item>
+    
+    <item>
+      <title>Introducing Proof of Data Possession (PDP): Verifiable Hot Storage on Filecoin</title>
+      <link>https://filecoin.io/blog/introducing-proof-of-data</link>
+      <guid>https://filecoin.io/blog/introducing-proof-of-data</guid>
+      <pubDate>Thu, 01 May 2025 17:55:01 GMT</pubDate>
+      <description><![CDATA[Filecoin introduces verifiable hot storage with Proof of Data Possession, enabling fast, on-demand access while maintaining cryptographic integrity.]]></description>
+    </item>
+    
+  </channel>
+</rss>

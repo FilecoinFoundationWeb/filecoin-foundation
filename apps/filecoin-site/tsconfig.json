@@ -21,7 +21,8 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "cypress/**/*.ts"
+    "cypress/**/*.ts",
+    "scripts/generateRSS.ts"
   ],
   "exclude": ["node_modules"]
 }
