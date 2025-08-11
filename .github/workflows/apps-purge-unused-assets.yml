@@ -57,7 +57,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
-          title: "🧹 Clean up unused assets"
+          title: "[AUTOMATED][SHARED] Clean up unused assets [skip percy]"
           body: |
             ## 📝 Description
 
@@ -84,10 +84,6 @@ jobs:
               3. Verify all apps still build and run correctly
             - **Expected Results:** All applications function normally with no missing assets
             - **Additional Notes:** If any asset was incorrectly flagged, you can restore it before merging this PR
-
-            ## 📸 Screenshots
-
-            N/A - Backend cleanup only
 
             ## 🔖 Resources
 
