@@ -103,7 +103,7 @@ jobs:
           payload: |
             {
               "channel": "${{ secrets.SLACK_CHANNEL_ID }}",
-              "text": "[AUTOMATED][SHARED] Clean up unused assets - <${{ steps.cpr.outputs.pull-request-url }}|Review PR> | <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Workflow>"
+              "text": "🧹 Automated Asset Cleanup action completed: Unused assets found - <${{ steps.cpr.outputs.pull-request-url }}|Review PR> | <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Workflow>"
             }
 
       - name: Notify Slack - No Cleanup Needed
@@ -115,5 +115,5 @@ jobs:
           payload: |
             {
               "channel": "${{ secrets.SLACK_CHANNEL_ID }}",
-              "text": "✅ Asset cleanup completed - no unused assets found. Repository is clean! 🎉"
+              "text": "🧹 Automated Asset Cleanup action completed: No unused assets found - Repository is clean!"
             }
