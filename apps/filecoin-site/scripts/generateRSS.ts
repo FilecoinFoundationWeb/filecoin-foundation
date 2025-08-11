@@ -1,8 +1,10 @@
-import { mkdirSync, writeFileSync } from 'fs'
+import { mkdir, writeFile } from 'fs/promises'
 import { dirname } from 'path'
 
 import { BASE_URL } from '../src/app/_constants/siteMetadata'
 import { getBlogPostsData } from '../src/app/blog/utils/getBlogPostData'
+
+import { BLOG_PATHS } from '@/blog/constants/paths'
 
 async function generateRSS() {
   const posts = await getBlogPostsData()
@@ -15,7 +17,7 @@ async function generateRSS() {
     <description>Latest updates from the Filecoin Foundation</description>
     <language>en</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    <atom:link href="${BASE_URL}/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="${BASE_URL}${BLOG_PATHS.RSS}" rel="self" type="application/rss+xml" />
     ${posts
       .map(
         (post) => `
@@ -32,9 +34,9 @@ async function generateRSS() {
   </channel>
 </rss>`
 
-  const outputPath = './public/blog/rss.xml'
-  mkdirSync(dirname(outputPath), { recursive: true })
-  writeFileSync(outputPath, rss)
+  const outputPath = `./public${BLOG_PATHS.RSS}`
+  await mkdir(dirname(outputPath), { recursive: true })
+  await writeFile(outputPath, rss)
 
   console.log('RSS feed generated at:', outputPath)
 }
