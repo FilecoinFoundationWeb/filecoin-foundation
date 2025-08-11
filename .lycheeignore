@@ -12,3 +12,6 @@ sealstorage.io
 
 # Sites that block automated requests
 dorahacks.io
+
+# Sites with server errors (500 Internal Server Error)
+docs.fileverse.io
