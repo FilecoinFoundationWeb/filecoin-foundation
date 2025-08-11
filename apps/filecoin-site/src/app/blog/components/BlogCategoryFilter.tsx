@@ -7,7 +7,7 @@ import { RSSFeed } from './RSSFeed'
 export function BlogCategoryFilter() {
   return (
     <div className="space-y-10">
-      <div className="flex flex-col items-center justify-between gap-15 sm:flex-row">
+      <div className="flex flex-col justify-between gap-15 sm:flex-row sm:items-center">
         <div className="hidden xl:block">
           <CategoryTabs />
         </div>
