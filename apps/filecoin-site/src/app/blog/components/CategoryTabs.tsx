@@ -3,12 +3,11 @@
 import clsx from 'clsx'
 
 import { blogCategories } from '../data/blogCategories'
-import type { BlogCategoryFilter } from '../types/blogCatergoryFilterType'
+import { useCategoryState } from '../hooks/useCategoryState'
 
-export function CategoryTabs({
-  selectedCategory,
-  setSelectedCategory,
-}: BlogCategoryFilter) {
+export function CategoryTabs() {
+  const [selectedCategory, setSelectedCategory] = useCategoryState()
+
   return (
     <div className="flex gap-15 text-lg">
       {blogCategories.map(({ id, name }) => {

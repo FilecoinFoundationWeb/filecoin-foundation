@@ -27,7 +27,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
   const clientSearchParams = useSearchParams()
   const searchParams = Object.fromEntries(clientSearchParams.entries())
 
-  const [selectedCategory, setSelectedCategory] = useCategoryState()
+  const [selectedCategory] = useCategoryState()
 
   const { filteredEntries } = useFilter({
     entries: posts,
@@ -43,10 +43,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
 
   return (
     <div className="space-y-15">
-      <CategoryFilter
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
-      />
+      <BlogCategoryFilter />
 
       <CardGrid as="ul" variant="mdTwo">
         {paginatedResults.map((post: BlogPost) => {
