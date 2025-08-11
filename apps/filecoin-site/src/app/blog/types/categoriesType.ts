@@ -1,5 +1,5 @@
 import { z } from 'zod'
 
-import { AllowedCategories } from '../schemas/BlogPostFrontmatterSchema'
+import { AllowedCategoriesSchema } from '../schemas/BlogPostFrontmatterSchema'
 
-export type AllowedCategory = z.infer<typeof AllowedCategories>
+export type AllowedCategory = z.infer<typeof AllowedCategoriesSchema>
