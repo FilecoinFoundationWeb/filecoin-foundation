@@ -42,7 +42,7 @@ GhostDrive offers client-side encryption, file management tools, data tokenizati
 
 ## Now Available on Mobile
 
-GhostDrive is now available on the [Apple App Store](https://apps.apple.com/us/app/ghostdrive-app/id6475002179) or [Google Play Store](https://play.google.com/store/apps/details?id=com.wise.data.ghostdrive&pli=1), bringing the power of decentralized storage to your mobile devices. With the GhostDrive app, users can effortlessly manage their data; add, delete, or pin files to their node; and monitor the status and integrity of their digital assets within the Filecoin network.
+GhostDrive is now available on the [Apple App Store](https://apps.apple.com/us/app/ghostdrive-app/id6475002179), bringing the power of decentralized storage to your mobile devices. With the GhostDrive app, users can effortlessly manage their data; add, delete, or pin files to their node; and monitor the status and integrity of their digital assets within the Filecoin network.
 
 ---
 

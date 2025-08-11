@@ -41,7 +41,7 @@ export default async function Blog() {
                 variant="primary"
                 href={`${PATHS.BLOG.path}/${featuredPost.slug}`}
               >
-                Read more
+                Read full article
               </Button>
             }
           />

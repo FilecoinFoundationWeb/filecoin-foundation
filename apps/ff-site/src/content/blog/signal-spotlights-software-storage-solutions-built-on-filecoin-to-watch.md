@@ -45,7 +45,7 @@ CIDgravity is a great tool for enterprises and independent software vendors look
 
 GhostDrive offers data redundancy and security through encryption and features like data tokenization, designed for efficient and secure digital asset management. GhostDrive also provides storage optimization by employing a compression algorithm that reduces file sizes without compromising data integrity, allowing users to store more data within the same capacity. For example, 1TB of uncompressed data could occupy approximately 2TB of optimized storage.
 
-**What’s new with GhostDrive?** GhostDrive is now available on the [Apple App Store](https://apps.apple.com/us/app/ghostdrive-app/id6475002179) or [Google Play Store](https://play.google.com/store/apps/details?id=com.wise.data.ghostdrive&pli=1), bringing the power of decentralized storage to your mobile devices. With the GhostDrive app, users can effortlessly manage their data; add, delete, or pin files to their node; and monitor the status and integrity of their digital assets within the Filecoin network.
+**What’s new with GhostDrive?** GhostDrive is now available on the [Apple App Store](https://apps.apple.com/us/app/ghostdrive-app/id6475002179), bringing the power of decentralized storage to your mobile devices. With the GhostDrive app, users can effortlessly manage their data; add, delete, or pin files to their node; and monitor the status and integrity of their digital assets within the Filecoin network.
 
 ## SteelDome
 

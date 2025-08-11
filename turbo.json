@@ -4,31 +4,13 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "env": [
-        "AIRTABLE_READ_ONLY_TOKEN",
-        "ENCRYPTION_ENDPOINT_ACCESS_KEY",
-        "ENCRYPTION_SECRET_KEY",
-        "GITHUB_AUTH_TOKEN",
-        "NEWSLETTER_SUBSCRIPTION_API_KEY",
-        "NEWSLETTER_SUBSCRIPTION_API_URL",
-        "NEWSLETTER_SUBSCRIPTION_PUBLICATION_ID",
-        "PERCY_TOKEN_FF_SITE",
-        "PERCY_TOKEN_FFDWEB_SITE",
-        "SENTRY_AUTH_TOKEN_FF_SITE",
-        "SENTRY_AUTH_TOKEN_FFDWEB_SITE",
-        "SENTRY_TELEMETRY"
-      ],
       "inputs": [
         "$TURBO_DEFAULT$",
         ".env.production.local",
         ".env.production",
         ".env"
       ],
-      "outputs": [
-        ".next/**",
-        "!.next/cache/**",
-        "apps/ff-site/src/app/_data/cmsConfigSchema.json"
-      ]
+      "outputs": [".next/**", "!.next/cache/**"]
     },
     "dev": {
       "persistent": true,

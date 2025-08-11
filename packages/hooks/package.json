@@ -24,14 +24,14 @@
     "lint": "eslint --fix ."
   },
   "devDependencies": {
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.2",
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0"
   },
   "peerDependencies": {
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
-    "next": "^15.4.4",
+    "next": "^15.4.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "nuqs": "^2.4.3"

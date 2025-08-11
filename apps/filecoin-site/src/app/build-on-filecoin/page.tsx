@@ -113,6 +113,7 @@ export default function BuildOnFilecoin() {
                       as="li"
                       backgroundVariant="light"
                       title={title}
+                      headingTag="h3"
                       description={description}
                       href={href}
                       icon={{ component: icon }}
@@ -183,6 +184,7 @@ export default function BuildOnFilecoin() {
                 as="li"
                 backgroundVariant="light"
                 title={title}
+                headingTag="h3"
                 description={description}
                 href={href}
                 icon={{ component: icon }}
@@ -225,6 +227,7 @@ export default function BuildOnFilecoin() {
                   as="li"
                   backgroundVariant="dark"
                   title={title}
+                  headingTag="h3"
                   description={description}
                   href={href}
                   icon={{ component: icon, variant: 'filled' }}

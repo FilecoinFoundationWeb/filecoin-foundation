@@ -1,6 +1,11 @@
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
+import { PATHS } from '@/constants/paths'
+import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
+
+import { createMetadata } from '@/utils/createMetadata'
+
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { Section } from '@/components/Section'
@@ -45,4 +50,17 @@ export default async function BlogPost({ params }: BlogPostProps) {
       </Section>
     </>
   )
+}
+
+export async function generateMetadata(props: BlogPostProps) {
+  const { slug } = await props.params
+  const { image, seo } = await getBlogPostData(slug)
+
+  return createMetadata({
+    path: `${PATHS.BLOG.path}/${slug}`,
+    title: { absolute: `${seo.title} | ${ORGANIZATION_NAME}` },
+    description: seo.description,
+    image: image?.url,
+    openGraph: { type: 'article' },
+  })
 }

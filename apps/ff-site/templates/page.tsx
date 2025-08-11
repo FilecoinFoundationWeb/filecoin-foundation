@@ -1,16 +1,16 @@
-`import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
-import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
+;`import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { attributes } from '@/content/pages/__PATH_NAME__.md'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { PageFrontmatterSchema } from '@/schemas/PageDataSchema'
+import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { CTASection } from '@/components/CTASection'
 import { PageSection } from '@/components/PageSection'
@@ -18,14 +18,6 @@ import { PageSection } from '@/components/PageSection'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
-
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.imageFallback.data.src,
-  },
-  path: PATHS.__PATH_NAME__.path,
-})
 
 export default function __PAGE_NAME_PASCAL_CASE__() {
   return (
@@ -44,4 +36,11 @@ export default function __PAGE_NAME_PASCAL_CASE__() {
       />
     </PageLayout>
   )
-}`
+}
+
+export const metadata = createMetadata({
+  title: { absolute: seo.title },
+  description: seo.description,
+  image: graphicsData.imageFallback.data.src,
+  path: PATHS.__PATH_NAME__.path,
+})`
