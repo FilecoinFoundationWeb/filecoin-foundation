@@ -121,7 +121,7 @@ jobs:
           payload: |
             {
               "channel": "${{ secrets.SLACK_CHANNEL_ID }}",
-              "text": "🧹 Asset cleanup PR created - <${{ steps.cpr.outputs.pull-request-url }}|Review PR> | <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Workflow>"
+              "text": "[AUTOMATED][SHARED] Clean up unused assets - <${{ steps.cpr.outputs.pull-request-url }}|Review PR> | <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Workflow>"
             }
 
       - name: Notify Slack - No Cleanup Needed
