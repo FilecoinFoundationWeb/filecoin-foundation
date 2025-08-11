@@ -13,7 +13,7 @@ import { useCategory } from '../hooks/useCategory'
 import type { BlogPost } from '../types/blogPostType'
 
 import { BlogCard } from './BlogCard'
-import { CategoryFilter } from './CategoryFilter'
+import { BlogCategoryFilter } from './BlogCategoryFilter'
 
 type BlogPostListProps = {
   posts: Array<BlogPost>
@@ -41,10 +41,11 @@ export function BlogPostList({ posts }: BlogPostListProps) {
 
   return (
     <div className="space-y-15">
-      <CategoryFilter
+      <BlogCategoryFilter
         selectedCategory={selectedCategory as BlogCategoryKey}
         setSelectedCategory={setSelectedCategory}
       />
+
       <CardGrid as="ul" variant="mdTwo">
         {paginatedResults.map((post: BlogPost) => {
           const {
