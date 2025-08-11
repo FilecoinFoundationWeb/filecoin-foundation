@@ -27,11 +27,12 @@ export function CategoryFilter({
             return (
               <button
                 key={id}
+                aria-label={`Show ${name} posts`}
                 className={clsx(
                   'cursor-pointer',
                   isActive
                     ? 'text-zinc-950'
-                    : 'text-zinc-600 hover:text-zinc-700',
+                    : 'text-zinc-600 hover:text-zinc-950',
                 )}
                 onClick={() => setSelectedCategory(id)}
               >
