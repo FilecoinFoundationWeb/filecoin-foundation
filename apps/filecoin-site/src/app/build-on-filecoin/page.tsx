@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
@@ -7,7 +9,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -16,6 +17,7 @@ import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
@@ -40,24 +42,32 @@ export default function BuildOnFilecoin() {
       <StructuredDataScript
         structuredData={generateStructuredData(BUILD_ON_FILECOIN_SEO)}
       />
-      <BackgroundImage
-        overlayVariant="light"
-        src={graphicsData.buildOnFilecoinHero.data.src}
-        blurDataURL={graphicsData.buildOnFilecoinHero.data.blurDataURL}
-      >
-        <Navigation backgroundVariant="transparentDark" />
-        <PageSection backgroundVariant="transparentDark">
-          <PageHeader
-            title="Build on Filecoin: open, scalable, verifiable storage"
-            description="Filecoin is a programmable, permissionless storage network with cryptographic verification and global redundancy by design. Integrate storage that safeguards data integrity at every layer and scales with your application's needs."
-            cta={
-              <Button href={FILECOIN_URLS.docs} variant="primary">
-                Explore documentation
-              </Button>
-            }
+
+      <Navigation backgroundVariant="dark" />
+      <PageSection backgroundVariant="dark">
+        <PageHeader
+          title="Build on Filecoin: open, scalable, verifiable storage"
+          description="Filecoin is a programmable, permissionless storage network with cryptographic verification and global redundancy by design. Integrate storage that safeguards data integrity at every layer and scales with your application's needs."
+          cta={
+            <Button href={FILECOIN_URLS.docs} variant="primary">
+              Explore documentation
+            </Button>
+          }
+        />
+      </PageSection>
+
+      <Section backgroundVariant="dark">
+        <div className="-mx-28 h-80 lg:mx-0 lg:h-[580px]">
+          <Image
+            priority
+            width={10_000}
+            sizes="100vw"
+            src={graphicsData.gradientPurple.data}
+            alt=""
+            quality={100}
           />
-        </PageSection>
-      </BackgroundImage>
+        </div>
+      </Section>
 
       <PageSection backgroundVariant="dark">
         <SectionContent

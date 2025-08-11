@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
@@ -7,7 +9,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -15,6 +16,7 @@ import { Heading } from '@/components/Heading'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
@@ -34,27 +36,36 @@ export default function OfferStorage() {
       <StructuredDataScript
         structuredData={generateStructuredData(OFFER_STORAGE_SEO)}
       />
-      <BackgroundImage
-        overlayVariant="dark"
-        src={graphicsData.offerStorageHero.data.src}
-        blurDataURL={graphicsData.offerStorageHero.data.blurDataURL}
-      >
-        <Navigation backgroundVariant="transparentDark" />
-        <PageSection backgroundVariant="transparentDark">
-          <PageHeader
-            title="Power the world's largest decentralized storage network"
-            description="Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important information."
-            cta={
-              <Button
-                href={`${FILECOIN_URLS.docs}storage-providers/basics`}
-                variant="primary"
-              >
-                Explore documentation
-              </Button>
-            }
+
+      <Navigation backgroundVariant="dark" />
+      <PageSection backgroundVariant="dark">
+        <PageHeader
+          title="Power the world's largest decentralized storage network"
+          description="Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important information."
+          cta={
+            <Button
+              href={`${FILECOIN_URLS.docs}storage-providers/basics`}
+              variant="primary"
+            >
+              Explore documentation
+            </Button>
+          }
+        />
+      </PageSection>
+
+      <Section backgroundVariant="dark">
+        <div className="relative h-10 w-full">
+          <Image
+            priority
+            sizes="100vw"
+            src={graphicsData.gradientPlanets.data}
+            alt=""
+            quality={100}
+            width={800}
+            className="absolute -top-[640px] right-0"
           />
-        </PageSection>
-      </BackgroundImage>
+        </div>
+      </Section>
 
       <PageSection backgroundVariant="dark">
         <SectionContent

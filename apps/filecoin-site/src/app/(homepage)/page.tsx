@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -80,6 +82,19 @@ export default async function Home() {
           </Container>
         </Section>
       </BackgroundImage>
+
+      <Section backgroundVariant="dark">
+        <div className="-mx-48 h-28 md:mx-0">
+          <Image
+            priority
+            width={10_000}
+            src={graphicsData.gradientOrange.data}
+            sizes="100vw"
+            alt=""
+            quality={100}
+          />
+        </div>
+      </Section>
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Build apps better with resilient storage">
