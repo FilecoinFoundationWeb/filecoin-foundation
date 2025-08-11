@@ -2,12 +2,14 @@ import { z } from 'zod'
 
 import { SeoMetadataWithOptionalTitleSchema } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
 
-export const AllowedCategories = z.union([
-  z.literal('updates'),
-  z.literal('events'),
-  z.literal('interviews'),
-  z.literal('awards'),
-])
+export const BLOG_CATEGORY_VALUES = [
+  'updates',
+  'events',
+  'interviews',
+  'awards',
+] as const
+
+export const AllowedCategoriesSchema = z.enum(BLOG_CATEGORY_VALUES)
 
 export const BlogPostFrontmatterSchema = z.strictObject({
   title: z.string(),
@@ -15,13 +17,9 @@ export const BlogPostFrontmatterSchema = z.strictObject({
   draft: z.boolean().optional(),
   excerpt: z.string(),
   share_image: z.string().optional(),
-  image: z
-    .object({
-      url: z.string(),
-    })
-    .optional(),
+  image: z.object({ url: z.string() }).optional(),
   publishedOn: z.coerce.date(),
-  categories: z.array(AllowedCategories),
+  categories: z.array(AllowedCategoriesSchema),
   dim_image: z.boolean().optional(),
   content: z.string(),
   seo: SeoMetadataWithOptionalTitleSchema,

@@ -1,8 +1,8 @@
+import { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter/constants'
+
 import type { AllowedCategory } from '../types/categoriesType'
 
-export const DEFAULT_CATEGORY_KEY = 'all'
-
-export type BlogCategoryKey = AllowedCategory | typeof DEFAULT_CATEGORY_KEY
+export type BlogCategoryKey = AllowedCategory | typeof DEFAULT_FILTER_ID
 
 type BlogCategory = {
   name: string
@@ -12,7 +12,7 @@ type BlogCategory = {
 export const blogCategories: Array<BlogCategory> = [
   {
     name: 'View All',
-    id: DEFAULT_CATEGORY_KEY,
+    id: DEFAULT_FILTER_ID,
   },
   {
     name: 'Events',

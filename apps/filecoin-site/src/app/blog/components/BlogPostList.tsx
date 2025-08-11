@@ -2,15 +2,16 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { CardGrid } from '@/components/CardGrid'
 
-import { type BlogCategoryKey } from '../data/blogCategories'
-import { useCategory } from '../hooks/useCategory'
+import { useCategoryState } from '../hooks/useCategoryState'
 import type { BlogPost } from '../types/blogPostType'
+import { postMatchesCategory } from '../utils/postMatchesCategory'
 
 import { BlogCard } from './BlogCard'
 import { BlogCategoryFilter } from './BlogCategoryFilter'
@@ -26,23 +27,24 @@ export function BlogPostList({ posts }: BlogPostListProps) {
   const clientSearchParams = useSearchParams()
   const searchParams = Object.fromEntries(clientSearchParams.entries())
 
-  const {
-    selectedCategory,
-    setSelectedCategory,
-    filteredPosts,
-    hasFilteredPosts,
-  } = useCategory({ posts })
+  const [selectedCategory, setSelectedCategory] = useCategoryState()
+
+  const { filteredEntries } = useFilter({
+    entries: posts,
+    filterQuery: selectedCategory,
+    filterFn: postMatchesCategory,
+  })
 
   const { pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
-    entries: filteredPosts,
+    entries: filteredEntries,
     entriesPerPage: BLOG_POSTS_PER_PAGE,
   })
 
   return (
     <div className="space-y-15">
-      <BlogCategoryFilter
-        selectedCategory={selectedCategory as BlogCategoryKey}
+      <CategoryFilter
+        selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
 
@@ -78,7 +80,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
         })}
       </CardGrid>
 
-      {hasFilteredPosts && (
+      {filteredEntries.length > 0 && (
         <div className="mx-auto mt-20 max-w-2xl">
           <Pagination
             pageCount={pageCount}
