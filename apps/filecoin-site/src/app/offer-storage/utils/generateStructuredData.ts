@@ -1,23 +1,19 @@
-import type { WebPage, WithContext } from 'schema-dts'
-
+import type { ServicePageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import type { StructuredDataParams } from '@filecoin-foundation/utils/types/structuredDataParams'
 
 import { PATHS } from '@/constants/paths'
-import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
-import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
+import { generateServiceStructuredData } from '@/utils/generateServiceStructuredData'
+
+import { SERVICE_STRUCTURED_DATA } from '../constants/serviceStructuredData'
 
 export function generateStructuredData(
   seo: StructuredDataParams,
-): WithContext<WebPage> {
-  const baseData = generateWebPageStructuredData({
+): ServicePageGraph {
+  return generateServiceStructuredData({
     title: seo.title,
     description: seo.description,
     path: PATHS.OFFER_STORAGE.path,
+    ...SERVICE_STRUCTURED_DATA,
   })
-
-  return {
-    ...baseData,
-    about: ORGANIZATION_SCHEMA_BASE,
-  }
 }

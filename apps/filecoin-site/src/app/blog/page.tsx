@@ -4,6 +4,7 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
 import { createMetadata } from '@/utils/createMetadata'
 
@@ -15,7 +16,7 @@ import { PageSection } from '@/components/PageSection'
 
 import { BlogPostList } from './components/BlogPostList'
 import { BLOG_SEO } from './constants/seo'
-import { generateStructuredData } from './utils/generateStructuredData'
+import { generateBlogStructuredData } from './utils/generateBlogStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
 export default async function Blog() {
@@ -23,9 +24,18 @@ export default async function Blog() {
   const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = sortedPosts[0]
 
+  const structuredData = generateBlogStructuredData({
+    path: PATHS.BLOG.path,
+    name: BLOG_SEO.title,
+    items: sortedPosts.map((post) => ({
+      url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
+      name: post.title,
+    })),
+  })
+
   return (
     <>
-      <StructuredDataScript structuredData={generateStructuredData(BLOG_SEO)} />
+      <StructuredDataScript structuredData={structuredData} />
       <Navigation backgroundVariant="light" />
       <BackgroundImage
         overlayVariant="dark"
