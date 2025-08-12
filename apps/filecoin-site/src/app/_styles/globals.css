@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 @source "../../../../../node_modules/@filecoin-foundation/ui";
-
 @plugin "@tailwindcss/typography";
 
 @theme {
@@ -33,6 +32,12 @@
   );
 
   --spacing-readable: 60ch;
+}
+
+@theme inline {
+  --font-sans: var(--font-funnel-sans);
+  --font-display: var(--font-funnel-display);
+  --font-heading: var(--font-aspekta);
 }
 
 @utility brand-outline {
