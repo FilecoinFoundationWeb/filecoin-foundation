@@ -67,7 +67,6 @@ export default async function Home() {
                   <LinkCard
                     key={title}
                     as="li"
-                    backgroundVariant="light"
                     title={title}
                     headingTag="h2"
                     description={description}
@@ -251,7 +250,6 @@ export default async function Home() {
                 <LinkCard
                   key={title}
                   as="li"
-                  backgroundVariant="dark"
                   title={title}
                   headingTag="h3"
                   href={href}

@@ -30,40 +30,28 @@ export type LinkCardData = Pick<
 
 export function LinkCard({
   as: Tag,
-  backgroundVariant,
   title,
   headingTag,
   description,
   href,
   icon,
 }: LinkCardProps) {
-  const styles = getVariantClasses(backgroundVariant === 'dark')
-
   return (
     <Tag
       className={clsx(
-        'relative flex flex-row border-t pt-8',
-        description && 'items-start gap-6',
-        !description && 'items-center gap-5',
-        styles.border,
+        'link-card relative flex flex-row border-t pt-8',
+        description ? 'items-start gap-6' : 'items-center gap-5',
       )}
     >
       <IconBadge component={icon.component} size="sm" variant={icon.variant} />
 
-      {description && (
-        <div className="space-y-5">
-          <Heading
-            tag={headingTag}
-            variant="xl-medium"
-            className={styles.heading}
-          >
-            {title}
-          </Heading>
-          <p className={styles.description}>{description}</p>
-        </div>
-      )}
+      <div className={clsx(description && 'space-y-5')}>
+        <Heading tag={headingTag} className="card-heading">
+          {title}
+        </Heading>
 
-      {!description && <p className={styles.heading}>{title}</p>}
+        {description && <p className="link-card-description">{description}</p>}
+      </div>
 
       <BaseLink
         href={href}
@@ -73,12 +61,4 @@ export function LinkCard({
       />
     </Tag>
   )
-}
-
-function getVariantClasses(isDark: boolean) {
-  return {
-    border: isDark ? 'border-zinc-50/10' : 'border-zinc-950/10',
-    description: isDark ? 'text-zinc-400' : 'text-zinc-600',
-    heading: isDark ? 'text-zinc-50' : 'text-zinc-950',
-  }
 }

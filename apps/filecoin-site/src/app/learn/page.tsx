@@ -197,7 +197,6 @@ export default function Learn() {
               <LinkCard
                 key={title}
                 as="li"
-                backgroundVariant="dark"
                 title={title}
                 headingTag="h3"
                 href={href}

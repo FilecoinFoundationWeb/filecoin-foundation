@@ -371,6 +371,39 @@
     }
   }
 
+  /* LINK CARD */
+  .link-card {
+    .light-section & {
+      @apply border-zinc-950/10;
+    }
+
+    .dark-section & {
+      @apply border-zinc-50/10;
+    }
+
+    & .card-heading {
+      .light-section & {
+        @apply text-zinc-950;
+      }
+
+      .dark-section & {
+        @apply text-zinc-50;
+      }
+    }
+
+    & .link-card-description {
+      @apply tracking-tight;
+
+      .light-section & {
+        @apply text-zinc-600;
+      }
+
+      .dark-section & {
+        @apply text-zinc-400;
+      }
+    }
+  }
+
   /* LISTBOX BUTTON */
   .listbox-button {
     @apply relative w-full cursor-pointer border bg-white px-6 py-4 text-left;
