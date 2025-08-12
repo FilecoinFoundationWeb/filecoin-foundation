@@ -41,6 +41,10 @@ const FILECOIN_URLS = {
       handle: '@filecoin',
     },
   },
+  emails: {
+    contact: 'hello@fil.org',
+    devgrants: 'devgrants@fil.org',
+  },
 } as const
 
 const ROOT_METADATA = {

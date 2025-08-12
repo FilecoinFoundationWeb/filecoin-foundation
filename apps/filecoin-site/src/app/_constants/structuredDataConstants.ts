@@ -13,13 +13,13 @@ const CONTACT_POINTS = [
   {
     '@type': 'ContactPoint',
     contactType: 'Media and collaboration inquiries',
-    email: 'hello@fil.org',
+    email: FILECOIN_URLS.emails.contact,
     areaServed: 'Global',
   },
   {
     '@type': 'ContactPoint',
     contactType: 'Ecosystem grants inquiries',
-    email: 'devgrants@fil.org',
+    email: FILECOIN_URLS.emails.devgrants,
     areaServed: 'Global',
   },
 ] as const
