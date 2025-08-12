@@ -8,6 +8,7 @@ import type {
   WebSite,
   WithContext,
   ItemList,
+  BlogPosting,
 } from 'schema-dts'
 
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
@@ -27,6 +28,11 @@ export type BlogPageGraph = {
   '@graph': Array<Blog | ItemList | BreadcrumbList>
 }
 
+export type BlogPostPageGraph = {
+  '@context': typeof SCHEMA_CONTEXT_URL
+  '@graph': Array<BlogPosting | BreadcrumbList>
+}
+
 export type OrganizationGraph = {
   '@context': typeof SCHEMA_CONTEXT_URL
   '@graph': readonly [Organization, WebSite]
@@ -38,6 +44,7 @@ type StructuredDataScriptProps = {
     | WebPageGraph
     | ServicePageGraph
     | BlogPageGraph
+    | BlogPostPageGraph
     | OrganizationGraph
 }
 

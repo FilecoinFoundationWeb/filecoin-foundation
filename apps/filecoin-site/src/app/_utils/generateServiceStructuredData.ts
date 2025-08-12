@@ -37,10 +37,10 @@ export function generateServiceStructuredData({
   const pageSchema: Service = {
     '@type': 'Service',
     '@id': `${fullUrl}#service`,
-    url: fullUrl,
-    name: title,
-    description,
     serviceType,
+    name: title,
+    url: fullUrl,
+    description,
     provider: { '@id': providerId },
     ...(areaServed && { areaServed }),
     ...(termsOfService && { termsOfService }),
