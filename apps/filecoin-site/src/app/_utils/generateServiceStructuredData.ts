@@ -7,16 +7,15 @@ import type { StructuredDataParams } from '@filecoin-foundation/utils/types/stru
 import type { PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { makeBreadcrumbs } from './makeBreadcrumbs'
+import { generateBreadcrumbList } from './generateBreadcrumbsList'
 
 type ServiceProps = StructuredDataParams & {
-  path: PathValues | string
-
-  serviceType: string
+  path: PathValues
+  serviceType: Service['serviceType']
   providerId?: string
-  areaServed?: string
-  termsOfService?: string
-  serviceOutput?: string
+  areaServed?: Service['areaServed']
+  termsOfService?: Service['termsOfService']
+  serviceOutput?: Service['serviceOutput']
   offers?: Service['offers']
   audience?: Service['audience']
 }
@@ -35,7 +34,7 @@ export function generateServiceStructuredData({
 }: ServiceProps): ServicePageGraph {
   const fullUrl = `${BASE_URL}${path}`
 
-  const mainEntity: Service = {
+  const pageSchema: Service = {
     '@type': 'Service',
     '@id': `${fullUrl}#service`,
     url: fullUrl,
@@ -52,6 +51,6 @@ export function generateServiceStructuredData({
 
   return {
     '@context': SCHEMA_CONTEXT_URL,
-    '@graph': [mainEntity, makeBreadcrumbs({ path, title })],
+    '@graph': [pageSchema, generateBreadcrumbList({ path, title })],
   }
 }

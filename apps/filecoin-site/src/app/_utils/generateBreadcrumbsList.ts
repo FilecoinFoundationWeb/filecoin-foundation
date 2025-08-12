@@ -2,15 +2,15 @@ import type { BreadcrumbList, ListItem } from 'schema-dts'
 
 import { BASE_URL } from '@/constants/siteMetadata'
 
-type MakeBreadcrumbsProps = {
+type GenerateBreadcrumbListProps = {
   path: string
   title: string
 }
 
-export function makeBreadcrumbs({
+export function generateBreadcrumbList({
   path,
   title,
-}: MakeBreadcrumbsProps): BreadcrumbList {
+}: GenerateBreadcrumbListProps): BreadcrumbList {
   const fullUrl = `${BASE_URL}${path}`
 
   const HOME_ITEM: ListItem = {

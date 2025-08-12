@@ -6,7 +6,7 @@ import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structu
 import type { PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { makeBreadcrumbs } from '@/utils/makeBreadcrumbs'
+import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
 
 type GenerateBlogStructuredDataProps = {
   path: PathValues
@@ -51,7 +51,7 @@ export function generateBlogStructuredData({
   const graph: BlogPageGraph['@graph'] = [
     blog,
     ...(itemList ? [itemList] : []),
-    makeBreadcrumbs({ path, title: 'Blog' }),
+    generateBreadcrumbList({ path, title: 'Blog' }),
   ]
 
   return {

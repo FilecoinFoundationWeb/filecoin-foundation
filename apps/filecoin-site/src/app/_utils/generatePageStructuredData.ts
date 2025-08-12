@@ -1,4 +1,4 @@
-import type { CollectionPage, WebPage } from 'schema-dts'
+import type { WebPage } from 'schema-dts'
 
 import type { WebPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
@@ -8,14 +8,19 @@ import { type PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import { WEBSITE_SCHEMA } from '@/constants/structuredDataConstants'
 
-import { makeBreadcrumbs } from './makeBreadcrumbs'
+import { generateBreadcrumbList } from './generateBreadcrumbsList'
 
-type PageType = WebPage['@type'] | CollectionPage['@type']
+type PageType = 'WebPage' | 'CollectionPage'
 
 type GenerateWebPageStructuredDataProps = StructuredDataParams & {
   path: PathValues
   pageType: PageType
   about?: Array<{ '@type': 'Thing'; name: string }>
+}
+
+const PAGE_ID_SUFFIXES: Record<PageType, string> = {
+  CollectionPage: 'page',
+  WebPage: 'webpage',
 }
 
 export function generatePageStructuredData({
@@ -25,12 +30,10 @@ export function generatePageStructuredData({
   pageType,
   about,
 }: GenerateWebPageStructuredDataProps): WebPageGraph {
-  const pageIdSuffix = pageType === 'CollectionPage' ? 'page' : 'webpage'
-
   const fullUrl = `${BASE_URL}${path}`
-  const pageId = `${fullUrl}#${pageIdSuffix}`
+  const pageId = `${fullUrl}#${PAGE_ID_SUFFIXES[pageType]}`
 
-  const mainEntity: WebPage = {
+  const pageSchema: WebPage = {
     '@type': pageType,
     '@id': pageId,
     url: fullUrl,
@@ -42,6 +45,6 @@ export function generatePageStructuredData({
 
   return {
     '@context': SCHEMA_CONTEXT_URL,
-    '@graph': [mainEntity, makeBreadcrumbs({ path, title })],
+    '@graph': [pageSchema, generateBreadcrumbList({ path, title })],
   }
 }
