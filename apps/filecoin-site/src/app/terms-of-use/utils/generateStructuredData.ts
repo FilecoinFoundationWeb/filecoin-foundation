@@ -3,7 +3,7 @@ import type { StructuredDataParams } from '@filecoin-foundation/utils/types/stru
 
 import { PATHS } from '@/constants/paths'
 
-import { generatePageStructuredData } from '@/_utils/generatePageStructuredData'
+import { generatePageStructuredData } from '@/utils/generatePageStructuredData'
 
 export function generateStructuredData(
   seo: StructuredDataParams,
