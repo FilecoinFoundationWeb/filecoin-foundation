@@ -18,7 +18,7 @@ export const BlogPostFrontmatterSchema = z.strictObject({
   excerpt: z.string(),
   share_image: z.string().optional(),
   image: z.object({ url: z.string() }).optional(),
-  publishedOn: z.coerce.date(),
+  published_on: z.coerce.date(),
   categories: z.array(AllowedCategoriesSchema),
   dim_image: z.boolean().optional(),
   content: z.string(),

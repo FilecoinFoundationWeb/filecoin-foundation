@@ -3,5 +3,3 @@ node_modules
 .next
 .vercel
 
-# RSS feeds
-**/rss.xml

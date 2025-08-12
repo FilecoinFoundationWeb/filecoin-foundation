@@ -77,14 +77,18 @@ export function BlogPostList({ posts }: BlogPostListProps) {
         })}
       </CardGrid>
 
-      {filteredEntries.length > 0 && (
-        <div className="mx-auto mt-20 max-w-2xl">
+      <div className="mx-auto mt-20 max-w-2xl">
+        {filteredEntries.length > 0 ? (
           <Pagination
             pageCount={pageCount}
             numberRange={PAGINATION_INDEX_MAX_RANGE}
           />
-        </div>
-      )}
+        ) : (
+          <p className="text-center text-lg text-zinc-950">
+            No posts in this category
+          </p>
+        )}
+      </div>
     </div>
   )
 }

@@ -1,15 +1,19 @@
 import { mkdir, writeFile } from 'fs/promises'
 import { dirname } from 'path'
 
-import { BASE_URL } from '../src/app/_constants/siteMetadata'
-import { getBlogPostsData } from '../src/app/blog/utils/getBlogPostData'
+import { BLOG_PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
-import { BLOG_PATHS } from '@/blog/constants/paths'
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 async function generateRSS() {
-  const posts = await getBlogPostsData()
+  try {
+    console.log('Starting RSS feed generation...')
 
-  const rss = `<?xml version="1.0" encoding="UTF-8"?>
+    const posts = await getBlogPostsData()
+    console.log(`Found ${posts.length} blog posts`)
+
+    const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Filecoin Foundation Blog</title>
@@ -22,7 +26,7 @@ async function generateRSS() {
       .map(
         (post) => `
     <item>
-      <title>${post.title}</title>
+      <title><![CDATA[${post.title}]]></title>
       <link>${BASE_URL}/blog/${post.slug}</link>
       <guid>${BASE_URL}/blog/${post.slug}</guid>
       <pubDate>${post.publishedOn.toUTCString()}</pubDate>
@@ -34,11 +38,15 @@ async function generateRSS() {
   </channel>
 </rss>`
 
-  const outputPath = `./public${BLOG_PATHS.RSS}`
-  await mkdir(dirname(outputPath), { recursive: true })
-  await writeFile(outputPath, rss)
+    const outputPath = `./public${BLOG_PATHS.RSS}`
+    await mkdir(dirname(outputPath), { recursive: true })
+    await writeFile(outputPath, rss)
 
-  console.log('RSS feed generated at:', outputPath)
+    console.log('✅ RSS feed generated successfully at:', outputPath)
+  } catch (error) {
+    console.error('❌ Failed to generate RSS feed:', error)
+    process.exit(1)
+  }
 }
 
 generateRSS()

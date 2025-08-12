@@ -42,3 +42,7 @@ export const PATHS = {
   PRIVACY_POLICY: createPathConfig('/privacy-policy', 'Privacy Policy'),
   TERMS_OF_USE: createPathConfig('/terms-of-use', 'Terms of Use'),
 } as const
+
+export const BLOG_PATHS = {
+  RSS: `${PATHS.BLOG.path}/rss.xml`,
+} as const
