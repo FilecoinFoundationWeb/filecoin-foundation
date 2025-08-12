@@ -1,7 +1,7 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import ClassicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
-import EarthInSpace from '@/assets/graphics/cropped-earth-in-space.png'
+import EarthInSpace from '@/assets/graphics/cropped-earth-in-space.webp'
 import DataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import Diagram from '@/assets/graphics/diagram.webp'
 import DigitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
@@ -11,10 +11,10 @@ import FilecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import FilecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import FilecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
 import GradientOrange from '@/assets/graphics/gradient-orange.png'
-import GradientPlanets from '@/assets/graphics/gradient-planets.png'
 import GradientPurple from '@/assets/graphics/gradient-purple.png'
+import PlanetShadow from '@/assets/graphics/planets-shadow.webp'
 import ServerBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
-import StarsSpinning from '@/assets/graphics/stars-spinning.png'
+import StarsSpinning from '@/assets/graphics/stars-spinning.webp'
 
 export const graphicsData = {
   buildOnFilecoinHero: {
@@ -65,8 +65,8 @@ export const graphicsData = {
     data: GradientPurple,
     alt: '',
   },
-  gradientPlanets: {
-    data: GradientPlanets,
+  planetShadow: {
+    data: PlanetShadow,
     alt: '',
   },
   earthInSpace: {
