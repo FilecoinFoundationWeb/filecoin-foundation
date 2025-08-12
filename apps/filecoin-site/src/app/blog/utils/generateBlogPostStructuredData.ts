@@ -3,13 +3,12 @@ import type { BlogPosting } from 'schema-dts'
 import type { BlogPostPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 
-import type { PathValues } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
 
 type GenerateBlogPostStructuredDataProps = {
-  path: PathValues
+  path: string
   headline: string
   description: BlogPosting['description']
   image: BlogPosting['image']

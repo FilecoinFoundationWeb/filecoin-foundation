@@ -6,7 +6,7 @@ import { generateBlogPostStructuredData } from '@/blog/utils/generateBlogPostStr
 export function generateStructuredData(data: BlogPost) {
   const { title, excerpt, image, publishedOn } = data
   return generateBlogPostStructuredData({
-    path: PATHS.BLOG.path,
+    path: `${PATHS.BLOG.path}/${data.slug}`,
     headline: title,
     description: excerpt,
     image: image ? image.url : undefined,
