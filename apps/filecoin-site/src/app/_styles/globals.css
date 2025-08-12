@@ -422,7 +422,7 @@
 
   /* LISTBOX BUTTON */
   .listbox-button {
-    @apply relative w-full cursor-pointer border bg-white px-6 py-4 text-left;
+    @apply font-display relative w-full cursor-pointer border bg-white px-6 py-4 text-left font-normal tracking-wider;
 
     &::before {
       background: var(--color-zinc-200) border-box;
