@@ -23,10 +23,6 @@ jobs:
     env:
       BASE_URL: ${{ matrix.base_url }}
 
-    defaults:
-      run:
-        working-directory: apps/${{ matrix.app }}
-
     steps:
       - name: Check out code
         uses: actions/checkout@v4
@@ -35,14 +31,12 @@ jobs:
         uses: lycheeverse/lychee-action@v2.5.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        id: lychee
         with:
           args: |
             --accept 100..=103,200..=299,403,429
             --base ${{ env.BASE_URL }}
-            --exclude-file .lycheeignore
             --retry-wait-time 3
-            'apps/${{ matrix.app }}/src/**/*.md'
+            "apps/${{ matrix.app }}/src/**/*.md"
 
       - name: Notify Slack on Link Check Results
         if: always()
