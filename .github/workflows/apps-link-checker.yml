@@ -29,6 +29,7 @@ jobs:
 
       - name: Lychee Link Checker
         uses: lycheeverse/lychee-action@v2.5.0
+        id: lychee
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -47,5 +48,5 @@ jobs:
           payload: |
             {
               "channel": "${{ secrets.SLACK_CHANNEL_ID }}",
-              "text": "Link Checker Results for ${{ matrix.app }}: ${{ job.status == 'success' && '✅ All links OK' || '❌ Broken links found' }} - <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Details>"
+              "text": "Link Checker Results for ${{ matrix.app }}: ${{ steps.lychee.outcome == 'success' && '✅ All links OK' || '❌ Broken links found' }} - <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Details>"
             }
