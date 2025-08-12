@@ -30,7 +30,7 @@ export function StepCard({
       >
         {String(step).padStart(2, '0')}.
       </span>
-      <Heading tag={headingTag} variant="xl-medium">
+      <Heading tag={headingTag} className="card-heading">
         {title}
       </Heading>
       <p className="text-xl text-zinc-600">{description}</p>

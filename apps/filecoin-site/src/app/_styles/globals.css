@@ -32,6 +32,14 @@
   );
 
   --spacing-readable: 60ch;
+
+  --tracking-tight: -1%;
+  --tracking-tighter: -2%;
+  --tracking-tightest: -3%;
+
+  --tracking-wide: 1%;
+  --tracking-wider: 2%;
+  --tracking-widest: 3%;
 }
 
 @theme inline {
@@ -57,7 +65,7 @@
 @layer components {
   /* BUTTON */
   .button {
-    @apply rounded-full border-2 px-6 py-4 text-base font-medium;
+    @apply font-display rounded-full border-2 px-6 py-4 text-base tracking-wider;
 
     &.button--primary {
       @apply relative border-transparent;
@@ -247,6 +255,10 @@
   }
 
   /* CARD */
+  .card-heading {
+    @apply text-xl font-medium;
+  }
+
   .card-image {
     @apply border border-zinc-200;
   }
@@ -357,6 +369,10 @@
     .dark-section & {
       @apply text-zinc-50;
     }
+
+    & #logo-section-title {
+      @apply text-xl font-normal;
+    }
   }
 
   .logo-section-logo-item {
@@ -450,6 +466,8 @@
   }
 
   .navigation-link {
+    @apply font-display tracking-wider;
+
     .light-section & {
       @apply text-zinc-600;
 
@@ -478,6 +496,8 @@
   }
 
   .mobile-navigation-link {
+    @apply font-display tracking-wider;
+
     .light-section & {
       @apply text-zinc-950;
 
@@ -540,30 +560,39 @@
   }
 
   /* PAGE HEADER */
-  .page-header {
-    & .page-header-title {
-      .light-section & {
-        @apply text-zinc-900;
-      }
+  .section-heading {
+    @apply font-heading text-3xl font-medium tracking-tight md:text-5xl md:leading-14;
 
-      .dark-section & {
-        @apply text-zinc-50;
-      }
+    .light-section & {
+      @apply text-zinc-900;
     }
 
-    & .page-header-description {
-      .light-section & {
-        @apply text-zinc-600;
-      }
-
-      .dark-section & {
-        @apply text-zinc-100;
-      }
+    .dark-section & {
+      @apply text-zinc-50;
     }
+  }
+
+  .page-header-description {
+    @apply font-sans tracking-tighter text-pretty md:text-xl;
+
+    .light-section & {
+      @apply text-zinc-600;
+    }
+
+    .dark-section & {
+      @apply text-zinc-100;
+    }
+  }
+
+  /* SECTION CONTENT */
+  .section-content-description-text {
+    @apply text-2xl leading-8 font-normal tracking-tight text-balance;
   }
 
   /* SECTION SUB CONTENT */
   .section-sub-content-heading-text {
+    @apply font-heading text-2xl font-medium tracking-tight md:text-3xl;
+
     .light-section & {
       @apply text-zinc-950;
     }
@@ -611,6 +640,8 @@
 
   /* SIDE BY SIDE CONTENT */
   .split-section-heading-text {
+    @apply font-display text-lg font-light tracking-wider text-balance md:text-2xl;
+
     .dark-section & {
       @apply text-zinc-200;
     }
@@ -621,6 +652,8 @@
   }
 
   .split-section-description-text {
+    @apply font-sans text-lg font-light tracking-tight md:text-2xl;
+
     .dark-section & {
       @apply text-zinc-50;
     }
@@ -643,7 +676,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply focus:brand-outline font-normal no-underline hover:underline;
+    @apply focus:brand-outline font-display font-normal tracking-wider no-underline hover:underline;
 
     .light-section & {
       @apply text-brand-800;

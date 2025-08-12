@@ -23,11 +23,7 @@ export function SplitSectionContent({
   return (
     <div className={clsx('grid grid-cols-6', gap)}>
       <div className="col-span-6 lg:col-span-2 lg:pr-8">
-        <Heading
-          tag="h3"
-          variant="lg-md2xl-medium"
-          className="split-section-heading-text"
-        >
+        <Heading tag="h3" className="split-section-heading-text">
           {title}
         </Heading>
       </div>

@@ -21,11 +21,7 @@ export function SectionSubContent({
   return (
     <div className="space-y-10 md:space-y-20">
       <div className="max-w-2xl">
-        <Heading
-          tag={headingTag}
-          variant="2xl-md3xl-medium"
-          className="section-sub-content-heading-text"
-        >
+        <Heading tag={headingTag} className="section-sub-content-heading-text">
           {title}
         </Heading>
         {description && (

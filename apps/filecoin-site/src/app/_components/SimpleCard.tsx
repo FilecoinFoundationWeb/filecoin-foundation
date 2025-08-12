@@ -63,7 +63,7 @@ export function SimpleCard({
             hasOnlyTopBorder ? 'mb-6' : 'mb-12',
           )}
         >
-          <Heading tag="h3" variant="xl-medium">
+          <Heading tag="h3" className="card-heading">
             {title}
           </Heading>
           <p className="simple-card-description-text">{description}</p>

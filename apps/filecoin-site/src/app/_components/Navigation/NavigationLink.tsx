@@ -20,13 +20,13 @@ const MOBILE_TOUCH_TARGET: TouchTarget = {
 }
 
 const desktopStyle = clsx(
-  'navigation-link focus:brand-outline inline-block font-semibold',
+  'navigation-link focus:brand-outline inline-block',
   DESKTOP_TOUCH_TARGET.touchAreaPadding,
   DESKTOP_TOUCH_TARGET.touchAreaOffset,
 )
 
 const mobileStyle = clsx(
-  'mobile-navigation-link focus:brand-outline inline-block font-normal',
+  'mobile-navigation-link focus:brand-outline inline-block',
   MOBILE_TOUCH_TARGET.touchAreaPadding,
   MOBILE_TOUCH_TARGET.touchAreaOffset,
 )

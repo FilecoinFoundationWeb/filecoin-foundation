@@ -6,11 +6,9 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { Heading, type HeadingProps } from './Heading'
 import { IconBadge, type IconBadgeProps } from './IconBadge'
-import type { SectionProps } from './Section'
 
 type LinkCardProps = {
   as: 'li' | 'article' | 'div'
-  backgroundVariant: SectionProps['backgroundVariant']
   title: string
   headingTag: HeadingProps['tag']
   description?: string
