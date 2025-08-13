@@ -14,6 +14,7 @@ const funnelDisplay = localFont({
   src: '../_fonts/Funnel_Display/FunnelDisplay[wght].woff2',
   display: 'swap',
   variable: '--font-funnel-display',
+  fallback: ['Arial', 'Helvetica', 'sans-serif'],
 })
 
 const funnelSans = localFont({
@@ -29,12 +30,14 @@ const funnelSans = localFont({
   ],
   display: 'swap',
   variable: '--font-funnel-sans',
+  fallback: ['Arial', 'Helvetica', 'sans-serif'],
 })
 
 const aspekta = localFont({
   src: '../_fonts/Aspekta/AspektaVF.woff2',
   display: 'swap',
   variable: '--font-aspekta',
+  fallback: ['Arial', 'Helvetica', 'sans-serif'],
 })
 
 export function SiteLayout({ children }: SiteLayoutProps) {
