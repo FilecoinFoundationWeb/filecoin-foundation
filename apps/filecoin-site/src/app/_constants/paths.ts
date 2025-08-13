@@ -43,6 +43,4 @@ export const PATHS = {
   TERMS_OF_USE: createPathConfig('/terms-of-use', 'Terms of Use'),
 } as const
 
-export const BLOG_PATHS = {
-  RSS: `${PATHS.BLOG.path}/rss.xml`,
-} as const
+export const BLOG_RSS_PATH = `${PATHS.BLOG.path}/rss.xml`

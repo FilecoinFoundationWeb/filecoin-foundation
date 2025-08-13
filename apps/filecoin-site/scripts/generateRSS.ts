@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from 'fs/promises'
 import { dirname } from 'path'
 
-import { BLOG_PATHS } from '@/constants/paths'
+import { BLOG_RSS_PATH } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
@@ -21,7 +21,7 @@ async function generateRSS() {
     <description>Latest updates from the Filecoin Foundation</description>
     <language>en</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    <atom:link href="${BASE_URL}${BLOG_PATHS.RSS}" rel="self" type="application/rss+xml" />
+    <atom:link href="${BASE_URL}${BLOG_RSS_PATH}" rel="self" type="application/rss+xml" />
     ${posts
       .map(
         (post) => `
@@ -38,7 +38,7 @@ async function generateRSS() {
   </channel>
 </rss>`
 
-    const outputPath = `./public${BLOG_PATHS.RSS}`
+    const outputPath = `./public${BLOG_RSS_PATH}`
     await mkdir(dirname(outputPath), { recursive: true })
     await writeFile(outputPath, rss)
 
