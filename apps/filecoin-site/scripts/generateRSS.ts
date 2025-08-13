@@ -6,6 +6,8 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
+const BLOG_BASE_URL = `${BASE_URL}${PATHS.BLOG.path}`
+
 async function generateRSS() {
   try {
     console.log('Starting RSS feed generation...')
@@ -17,7 +19,7 @@ async function generateRSS() {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Filecoin Foundation Blog</title>
-    <link>${BASE_URL}${PATHS.BLOG.path}</link>
+    <link>${BLOG_BASE_URL}</link>
     <description>Latest updates from the Filecoin Foundation</description>
     <language>en</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
@@ -27,8 +29,8 @@ async function generateRSS() {
         (post) => `
     <item>
       <title><![CDATA[${post.title}]]></title>
-      <link>${BASE_URL}${PATHS.BLOG.path}/${post.slug}</link>
-      <guid>${BASE_URL}${PATHS.BLOG.path}/${post.slug}</guid>
+      <link>${BLOG_BASE_URL}/${post.slug}</link>
+      <guid>${BLOG_BASE_URL}/${post.slug}</guid>
       <pubDate>${post.publishedOn.toUTCString()}</pubDate>
       <description><![CDATA[${post.excerpt}]]></description>
     </item>
