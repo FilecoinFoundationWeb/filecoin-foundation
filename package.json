@@ -13,7 +13,7 @@
     "prepare": "test \"$CI\" = \"true\" || husky"
   },
   "devDependencies": {
-    "glob": "^10.3.10",
+    "glob": "^11.0.3",
     "husky": "^9.1.7",
     "markdownlint-cli2": "^0.18.0",
     "prettier": "^3.6.2",
@@ -22,6 +22,6 @@
     "turbo": "^2.5.5"
   },
   "dependencies": {
-    "zod": "^4.0.14"
+    "zod": "^4.0.17"
   }
 }
