@@ -44,7 +44,7 @@ export function BlogCard({
 
         <div className="flex flex-col gap-4 py-4">
           <TagGroup tags={tags} />
-          <Heading tag="h2" variant="xl-medium">
+          <Heading tag="h2" variant="card-heading">
             {title}
           </Heading>
 

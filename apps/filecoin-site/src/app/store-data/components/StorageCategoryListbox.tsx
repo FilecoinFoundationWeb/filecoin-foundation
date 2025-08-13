@@ -28,7 +28,7 @@ export function StorageCategoryListbox({
   return (
     <Listbox multiple value={activeCategories} onChange={handleCategoryChange}>
       <ListboxButton className="listbox-button group">
-        <span className="block truncate pr-6 font-medium">
+        <span className="block truncate pr-6">
           {renderButtonText(activeCategories)}
         </span>
 

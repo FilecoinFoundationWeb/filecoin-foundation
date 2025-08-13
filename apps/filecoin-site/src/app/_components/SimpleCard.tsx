@@ -24,8 +24,8 @@ export type SimpleCardData = {
 
 const borderClasses = {
   none: 'border-none',
-  all: 'border card-border-color',
-  'only-top': 'border-t card-border-color',
+  all: 'border border-[var(--color-border)]',
+  'only-top': 'border-t border-[var(--color-border)]',
 }
 
 export function SimpleCard({
@@ -63,10 +63,12 @@ export function SimpleCard({
             hasOnlyTopBorder ? 'mb-6' : 'mb-12',
           )}
         >
-          <Heading tag="h3" variant="xl-medium">
+          <Heading tag="h3" variant="card-heading">
             {title}
           </Heading>
-          <p className="simple-card-description-text">{description}</p>
+          <p className="tracking-tight text-[var(--color-text-paragraph-muted)]">
+            {description}
+          </p>
         </div>
         {cta && (
           <CTALink

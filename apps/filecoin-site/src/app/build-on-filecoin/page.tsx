@@ -69,7 +69,6 @@ export default function BuildOnFilecoin() {
               <Card
                 key={title}
                 as="li"
-                backgroundVariant="dark"
                 title={title}
                 description={description}
                 icon={icon}
@@ -111,7 +110,6 @@ export default function BuildOnFilecoin() {
                     <LinkCard
                       key={title}
                       as="li"
-                      backgroundVariant="light"
                       title={title}
                       headingTag="h3"
                       description={description}
@@ -182,7 +180,6 @@ export default function BuildOnFilecoin() {
               <LinkCard
                 key={title}
                 as="li"
-                backgroundVariant="light"
                 title={title}
                 headingTag="h3"
                 description={description}
@@ -225,7 +222,6 @@ export default function BuildOnFilecoin() {
                 <LinkCard
                   key={title}
                   as="li"
-                  backgroundVariant="dark"
                   title={title}
                   headingTag="h3"
                   description={description}

@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 @source "../../../../../node_modules/@filecoin-foundation/ui";
-
 @plugin "@tailwindcss/typography";
 
 @theme {
@@ -33,6 +32,20 @@
   );
 
   --spacing-readable: 60ch;
+
+  --tracking-tight: -1%;
+  --tracking-tighter: -2%;
+  --tracking-tightest: -3%;
+
+  --tracking-wide: 1%;
+  --tracking-wider: 2%;
+  --tracking-widest: 3%;
+}
+
+@theme inline {
+  --font-sans: var(--font-funnel-sans);
+  --font-display: var(--font-funnel-display);
+  --font-heading: var(--font-aspekta);
 }
 
 @utility brand-outline {
@@ -49,10 +62,47 @@
   }
 }
 
+/* SECTION VARIANT COLORS */
+.light-section {
+  --color-text-base: theme('colors.zinc.950');
+  --color-text-heading-muted: theme('colors.zinc.600');
+  --color-text-paragraph-important: theme('colors.zinc.600');
+  --color-text-paragraph-muted: theme('colors.zinc.600');
+  --color-text-cta-link: theme('colors.zinc.600');
+  --color-text-navigation-link: theme('colors.zinc.600');
+  --color-text-navigation-link-active: theme('colors.zinc.950');
+  --color-text-navigation-link-mobile-active: theme('colors.brand.900');
+  --color-bg-navigation-link-hover: theme('colors.zinc.700 / 5%');
+
+  --color-border: theme('colors.zinc.950 / 15%');
+  --color-border-muted: theme('colors.zinc.950 / 10%');
+
+  --color-logo: theme('colors.zinc.400');
+  --color-logo-hover: theme('colors.zinc.400 / 80%');
+}
+
+.dark-section {
+  --color-text-base: theme('colors.zinc.50');
+  --color-text-heading-muted: theme('colors.zinc.200');
+  --color-text-paragraph-important: theme('colors.zinc.50');
+  --color-text-paragraph-muted: theme('colors.zinc.400');
+  --color-text-cta-link: theme('colors.zinc.300');
+  --color-text-navigation-link: theme('colors.zinc.300');
+  --color-text-navigation-link-active: theme('colors.zinc.50');
+  --color-text-navigation-link-mobile-active: theme('colors.brand.100');
+  --color-bg-navigation-link-hover: theme('colors.zinc.200 / 10%');
+
+  --color-border: theme('colors.zinc.50 / 20%');
+  --color-border-muted: theme('colors.zinc.50 / 10%');
+
+  --color-logo: theme('colors.zinc.400');
+  --color-logo-hover: theme('colors.zinc.50');
+}
+
 @layer components {
   /* BUTTON */
   .button {
-    @apply rounded-full border-2 px-6 py-4 text-base font-medium;
+    @apply font-display rounded-full border-2 px-6 py-4 text-base tracking-wider;
 
     &.button--primary {
       @apply relative border-transparent;
@@ -246,16 +296,6 @@
     @apply border border-zinc-200;
   }
 
-  .card-border-color {
-    .light-section & {
-      @apply border-zinc-950/15;
-    }
-
-    .dark-section & {
-      @apply border-zinc-50/15;
-    }
-  }
-
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
     @apply icon-button;
@@ -263,15 +303,7 @@
 
   /* CTALINK */
   .cta-link {
-    @apply font-semibold;
-
-    .light-section & {
-      @apply text-zinc-600;
-    }
-
-    .dark-section & {
-      @apply text-zinc-300;
-    }
+    @apply font-semibold text-[var(--color-text-cta-link)];
   }
 
   /* FORM */
@@ -343,32 +375,9 @@
     }
   }
 
-  /* LOGO SECTION */
-  .logo-section {
-    .light-section & {
-      @apply text-zinc-600;
-    }
-
-    .dark-section & {
-      @apply text-zinc-50;
-    }
-  }
-
-  .logo-section-logo-item {
-    @apply text-zinc-400 transition-colors duration-200;
-
-    .light-section & {
-      @apply hover:opacity-80;
-    }
-
-    .dark-section & {
-      @apply hover:text-zinc-50;
-    }
-  }
-
   /* LISTBOX BUTTON */
   .listbox-button {
-    @apply relative w-full cursor-pointer border bg-white px-6 py-4 text-left;
+    @apply font-display relative w-full cursor-pointer border bg-white px-6 py-4 text-left tracking-wider;
 
     &::before {
       background: var(--color-zinc-200) border-box;
@@ -397,63 +406,6 @@
 
     &:focus {
       @apply focus:outline-none;
-    }
-  }
-
-  /* NAVIGATION */
-  .mobile-navigation-list {
-    .light-section & {
-      @apply divide-zinc-950/15;
-    }
-
-    .dark-section & {
-      @apply divide-zinc-50/15;
-    }
-  }
-
-  .navigation-link {
-    .light-section & {
-      @apply text-zinc-600;
-
-      &:hover,
-      &:focus {
-        @apply bg-zinc-700/5;
-      }
-
-      &[aria-current='true'] {
-        @apply text-zinc-950;
-      }
-    }
-
-    .dark-section & {
-      @apply text-zinc-300;
-
-      &:hover,
-      &:focus {
-        @apply bg-zinc-200/10;
-      }
-
-      &[aria-current='true'] {
-        @apply text-zinc-50;
-      }
-    }
-  }
-
-  .mobile-navigation-link {
-    .light-section & {
-      @apply text-zinc-950;
-
-      &[aria-current='true'] {
-        @apply text-brand-900;
-      }
-    }
-
-    .dark-section & {
-      @apply text-zinc-50;
-
-      &[aria-current='true'] {
-        @apply text-brand-100;
-      }
     }
   }
 
@@ -501,61 +453,6 @@
     }
   }
 
-  /* PAGE HEADER */
-  .page-header {
-    & .page-header-title {
-      .light-section & {
-        @apply text-zinc-900;
-      }
-
-      .dark-section & {
-        @apply text-zinc-50;
-      }
-    }
-
-    & .page-header-description {
-      .light-section & {
-        @apply text-zinc-600;
-      }
-
-      .dark-section & {
-        @apply text-zinc-100;
-      }
-    }
-  }
-
-  /* SECTION SUB CONTENT */
-  .section-sub-content-heading-text {
-    .light-section & {
-      @apply text-zinc-950;
-    }
-
-    .dark-section & {
-      @apply text-zinc-50;
-    }
-  }
-
-  .section-sub-content-description-text {
-    .light-section & {
-      @apply text-zinc-600;
-    }
-
-    .dark-section & {
-      @apply text-zinc-400;
-    }
-  }
-
-  /* SECTION DIVIDER */
-  .section-divider {
-    .light-section & {
-      @apply border-zinc-200;
-    }
-
-    .dark-section & {
-      @apply border-zinc-400/20;
-    }
-  }
-
   /* SHARE ARTICLE */
   .share-article-list {
     @apply gap-2;
@@ -571,41 +468,9 @@
     @apply bg-white;
   }
 
-  /* SIDE BY SIDE CONTENT */
-  .split-section-heading-text {
-    .dark-section & {
-      @apply text-zinc-200;
-    }
-
-    .light-section & {
-      @apply text-zinc-600;
-    }
-  }
-
-  .split-section-description-text {
-    .dark-section & {
-      @apply text-zinc-50;
-    }
-
-    .light-section & {
-      @apply text-zinc-950;
-    }
-  }
-
-  /* SIMPLE CARD */
-  .simple-card-description-text {
-    .light-section & {
-      @apply text-zinc-600;
-    }
-
-    .dark-section & {
-      @apply text-zinc-400;
-    }
-  }
-
   /* TEXT LINKS */
   .text-link {
-    @apply focus:brand-outline font-normal no-underline hover:underline;
+    @apply focus:brand-outline font-display font-normal tracking-wider no-underline hover:underline;
 
     .light-section & {
       @apply text-brand-800;
