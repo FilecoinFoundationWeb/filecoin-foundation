@@ -1,9 +1,7 @@
-import { type ComponentPropsWithoutRef } from 'react'
+import { type ComponentPropsWithoutRef, type ElementType } from 'react'
+import { clsx } from 'clsx'
 
-type HeadingTag = Extract<
-  React.ElementType,
-  'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
->
+type HeadingTag = Extract<ElementType, 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'>
 
 type BaseHeadingProps<T extends HeadingTag = HeadingTag> = {
   tag: T
@@ -19,11 +17,11 @@ export type HeadingProps<T extends HeadingTag = HeadingTag> =
 const variants = {
   'card-heading': 'text-xl font-medium',
   'section-heading':
-    'font-heading text-3xl font-medium tracking-tight text-pretty md:text-5xl md:leading-14',
+    'font-heading text-3xl font-medium tracking-tight md:text-5xl md:leading-14',
 } as const
 
 export function Heading({ tag: Tag, variant, ...rest }: HeadingProps) {
   const className = variant ? variants[variant] : rest.className
 
-  return <Tag className={className} {...rest} />
+  return <Tag {...rest} className={clsx('text-pretty', className)} />
 }
