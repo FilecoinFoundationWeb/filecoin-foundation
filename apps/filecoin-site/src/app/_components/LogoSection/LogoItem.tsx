@@ -18,7 +18,7 @@ export function LogoItem({
       height={size}
       aria-label={href ? undefined : alt}
       aria-hidden={href ? 'true' : undefined}
-      className="logo-section-logo-item max-w-full"
+      className="max-w-full text-[var(--color-logo)] transition-colors duration-200 hover:text-[var(--color-logo-hover)]"
     />
   )
 
