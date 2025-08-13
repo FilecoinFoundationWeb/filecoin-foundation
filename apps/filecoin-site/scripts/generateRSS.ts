@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from 'fs/promises'
 import { dirname } from 'path'
 
-import { BLOG_RSS_PATH } from '@/constants/paths'
+import { BLOG_RSS_PATH, PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
@@ -17,7 +17,7 @@ async function generateRSS() {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Filecoin Foundation Blog</title>
-    <link>${BASE_URL}/blog</link>
+    <link>${BASE_URL}${PATHS.BLOG.path}</link>
     <description>Latest updates from the Filecoin Foundation</description>
     <language>en</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
@@ -27,8 +27,8 @@ async function generateRSS() {
         (post) => `
     <item>
       <title><![CDATA[${post.title}]]></title>
-      <link>${BASE_URL}/blog/${post.slug}</link>
-      <guid>${BASE_URL}/blog/${post.slug}</guid>
+      <link>${BASE_URL}${PATHS.BLOG.path}/${post.slug}</link>
+      <guid>${BASE_URL}${PATHS.BLOG.path}/${post.slug}</guid>
       <pubDate>${post.publishedOn.toUTCString()}</pubDate>
       <description><![CDATA[${post.excerpt}]]></description>
     </item>
