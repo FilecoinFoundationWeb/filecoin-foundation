@@ -3,7 +3,7 @@ import type { MemberData } from '@/types/memberType'
 import JoeLandon from '@/assets/headshots/Joe_Landon.png'
 import KristinSmith from '@/assets/headshots/Kristin_Smith.png'
 import MartaBelcher from '@/assets/headshots/Marta_Belcher.png'
-import PhilipRosendale from '@/assets/headshots/Philip_Rosendale.png'
+import PhilipRosedale from '@/assets/headshots/Philip_Rosedale.png'
 import SheilaWarren from '@/assets/headshots/Sheila_Warren.png'
 
 export const boardMembersData: Array<MemberData> = [
@@ -29,7 +29,7 @@ export const boardMembersData: Array<MemberData> = [
     name: 'Philip Rosedale',
     title: 'Founder & CTO, Linden Lab / Second Life',
     linkedin: 'https://www.linkedin.com/in/philiprosedale',
-    image: PhilipRosendale,
+    image: PhilipRosedale,
   },
   {
     name: 'Joe Landon',
