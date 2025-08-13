@@ -68,6 +68,7 @@
   --text-color-heading-muted: theme('colors.zinc.600');
   --text-color-paragraph-important: theme('colors.zinc.600');
   --text-color-paragraph-muted: theme('colors.zinc.600');
+  --text-color-cta-link: theme('colors.zinc.600');
 
   --text-color-navigation-link: theme('colors.zinc.600');
   --text-color-navigation-link-active: theme('colors.zinc.950');
@@ -82,6 +83,7 @@
   --text-color-heading-muted: theme('colors.zinc.200');
   --text-color-paragraph-important: theme('colors.zinc.100');
   --text-color-paragraph-muted: theme('colors.zinc.400');
+  --text-color-cta-link: theme('colors.zinc.300');
 
   --text-color-navigation-link: theme('colors.zinc.300');
   --text-color-navigation-link-active: theme('colors.zinc.50');
@@ -305,15 +307,7 @@
 
   /* CTALINK */
   .cta-link {
-    @apply font-semibold;
-
-    .light-section & {
-      @apply text-zinc-600;
-    }
-
-    .dark-section & {
-      @apply text-zinc-300;
-    }
+    @apply font-semibold text-[var(--text-color-cta-link)];
   }
 
   /* FORM */
@@ -421,7 +415,7 @@
 
   /* LISTBOX BUTTON */
   .listbox-button {
-    @apply font-display relative w-full cursor-pointer border bg-white px-6 py-4 text-left font-normal tracking-wider;
+    @apply font-display relative w-full cursor-pointer border bg-white px-6 py-4 text-left tracking-wider;
 
     &::before {
       background: var(--color-zinc-200) border-box;
