@@ -25,7 +25,7 @@ export function SectionContent({
       id={slugify(title.toString(), { lower: true })}
     >
       <div className="max-w-3xl">
-        <Heading tag="h2" className="section-heading">
+        <Heading tag="h2" variant="section-heading">
           {title}
         </Heading>
         {description && (

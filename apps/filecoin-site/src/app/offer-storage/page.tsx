@@ -90,7 +90,7 @@ export default function OfferStorage() {
             <CardGrid as="ul" variant="lgTwoWide">
               {coreInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
-                  <Heading tag="h4" className="card-heading">
+                  <Heading tag="h4" variant="card-heading">
                     {title}
                   </Heading>
                   <ul className="list-disc pl-4 text-xl text-zinc-400">
@@ -113,7 +113,7 @@ export default function OfferStorage() {
             <CardGrid as="ul" variant="lgTwoWide">
               {specializedInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
-                  <Heading tag="h4" className="card-heading">
+                  <Heading tag="h4" variant="card-heading">
                     {title}
                   </Heading>
                   <ul className="list-disc pl-4 text-xl text-zinc-400">

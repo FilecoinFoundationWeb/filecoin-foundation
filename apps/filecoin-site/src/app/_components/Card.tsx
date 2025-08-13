@@ -26,7 +26,7 @@ export function Card({
       {icon && <IconBadge component={icon} size="md" />}
 
       <div className="space-y-3">
-        <Heading tag="h3" className="card-heading">
+        <Heading tag="h3" variant="card-heading">
           {title}
         </Heading>
 

@@ -1,12 +1,29 @@
 import { type ComponentPropsWithoutRef } from 'react'
 
-type HeadingTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+type HeadingTag = Extract<
+  React.ElementType,
+  'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+>
 
-export type HeadingProps<T extends HeadingTag = HeadingTag> = {
+type BaseHeadingProps<T extends HeadingTag = HeadingTag> = {
   tag: T
   children: string
-} & Omit<ComponentPropsWithoutRef<T>, 'children'>
+} & Omit<ComponentPropsWithoutRef<T>, 'children' | 'className'>
 
-export function Heading({ tag: Tag, ...rest }: HeadingProps) {
-  return <Tag {...rest} />
+type Variant = keyof typeof variants
+
+export type HeadingProps<T extends HeadingTag = HeadingTag> =
+  | (BaseHeadingProps<T> & { variant: Variant; className?: never })
+  | (BaseHeadingProps<T> & { className: string; variant?: never })
+
+const variants = {
+  'card-heading': 'text-xl font-medium',
+  'section-heading':
+    'font-heading text-3xl font-medium tracking-tight text-pretty md:text-5xl md:leading-14',
+} as const
+
+export function Heading({ tag: Tag, variant, ...rest }: HeadingProps) {
+  const className = variant ? variants[variant] : rest.className
+
+  return <Tag className={className} {...rest} />
 }

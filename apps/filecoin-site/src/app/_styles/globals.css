@@ -255,10 +255,6 @@
   }
 
   /* CARD */
-  .card-heading {
-    @apply text-xl font-medium;
-  }
-
   .card-image {
     @apply border border-zinc-200;
   }
@@ -369,10 +365,6 @@
     .dark-section & {
       @apply text-zinc-50;
     }
-
-    & #logo-section-title {
-      @apply text-xl font-normal;
-    }
   }
 
   .logo-section-logo-item {
@@ -395,16 +387,6 @@
 
     .dark-section & {
       @apply border-zinc-50/10;
-    }
-
-    & .card-heading {
-      .light-section & {
-        @apply text-zinc-950;
-      }
-
-      .dark-section & {
-        @apply text-zinc-50;
-      }
     }
 
     & .link-card-description {
@@ -560,18 +542,6 @@
   }
 
   /* PAGE HEADER */
-  .section-heading {
-    @apply font-heading text-3xl font-medium tracking-tight md:text-5xl md:leading-14;
-
-    .light-section & {
-      @apply text-zinc-900;
-    }
-
-    .dark-section & {
-      @apply text-zinc-50;
-    }
-  }
-
   .page-header-description {
     @apply font-sans tracking-tighter text-pretty md:text-xl;
 
@@ -587,19 +557,6 @@
   /* SECTION CONTENT */
   .section-content-description-text {
     @apply text-2xl leading-8 font-normal tracking-tight text-balance;
-  }
-
-  /* SECTION SUB CONTENT */
-  .section-sub-content-heading-text {
-    @apply font-heading text-2xl font-medium tracking-tight md:text-3xl;
-
-    .light-section & {
-      @apply text-zinc-950;
-    }
-
-    .dark-section & {
-      @apply text-zinc-50;
-    }
   }
 
   .section-sub-content-description-text {
@@ -639,18 +596,6 @@
   }
 
   /* SIDE BY SIDE CONTENT */
-  .split-section-heading-text {
-    @apply font-display text-lg font-light tracking-wider text-balance md:text-2xl;
-
-    .dark-section & {
-      @apply text-zinc-200;
-    }
-
-    .light-section & {
-      @apply text-zinc-600;
-    }
-  }
-
   .split-section-description-text {
     @apply font-sans text-lg font-light tracking-tight md:text-2xl;
 

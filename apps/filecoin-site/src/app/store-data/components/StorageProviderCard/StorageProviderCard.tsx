@@ -30,7 +30,7 @@ export function StorageProviderCard({
               aria-hidden="true"
               className="size-9 rounded-full bg-gradient-to-tr from-blue-950 to-blue-800"
             />
-            <Heading tag="h3" className="card-heading">
+            <Heading tag="h3" variant="card-heading">
               {name}
             </Heading>
           </div>
