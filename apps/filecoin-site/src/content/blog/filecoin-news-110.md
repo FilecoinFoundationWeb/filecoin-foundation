@@ -6,7 +6,7 @@ share_image: /assets/images/FilecoinNewsHeader.webp
 image:
   url: /assets/images/FilecoinNewsHeader.webp
 author: Emily Vaughan
-publishedOn: 2025-05-27T04:00:00.000Z
+published_on: 2025-05-27T04:00:00.000Z
 categories:
   - updates
   - events

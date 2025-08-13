@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run generate-rss && next build",
     "start": "next start",
-    "lint": "next lint --fix"
+    "lint": "next lint --fix",
+    "generate-rss": "tsx scripts/generateRSS.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
     "@phosphor-icons/react": "^2.1.10",
+    "feed": "^5.1.0",
     "next": "^15.4.6",
     "nuqs": "^2.4.3",
     "postcss": "^8.5.6",
