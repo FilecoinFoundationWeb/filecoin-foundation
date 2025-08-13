@@ -24,7 +24,9 @@ export function PageHeader({
         </Heading>
 
         {description && (
-          <p className="page-header-description">{description}</p>
+          <p className="font-sans tracking-tighter text-pretty text-[var(--text-color-paragraph-important)] md:text-xl">
+            {description}
+          </p>
         )}
       </div>
 

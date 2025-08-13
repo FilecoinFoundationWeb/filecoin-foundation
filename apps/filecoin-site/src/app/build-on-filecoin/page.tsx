@@ -69,7 +69,6 @@ export default function BuildOnFilecoin() {
               <Card
                 key={title}
                 as="li"
-                backgroundVariant="dark"
                 title={title}
                 description={description}
                 icon={icon}

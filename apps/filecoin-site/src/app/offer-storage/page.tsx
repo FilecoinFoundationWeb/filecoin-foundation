@@ -71,7 +71,6 @@ export default function OfferStorage() {
                 <Card
                   key={title}
                   as="li"
-                  backgroundVariant="dark"
                   title={title}
                   description={description}
                   icon={icon}

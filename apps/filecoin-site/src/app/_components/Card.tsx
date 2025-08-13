@@ -1,12 +1,8 @@
-import clsx from 'clsx'
-
 import { Heading } from './Heading'
 import { IconBadge, type IconBadgeProps } from './IconBadge'
-import type { SectionProps } from './Section'
 
 type CardProps = {
   as: 'li' | 'article' | 'div'
-  backgroundVariant: SectionProps['backgroundVariant']
   title: string
   description: string
   icon?: IconBadgeProps['component']
@@ -14,13 +10,7 @@ type CardProps = {
 
 export type CardData = Pick<CardProps, 'title' | 'description' | 'icon'>
 
-export function Card({
-  as: Tag,
-  backgroundVariant,
-  title,
-  description,
-  icon,
-}: CardProps) {
+export function Card({ as: Tag, title, description, icon }: CardProps) {
   return (
     <Tag className="flex flex-col gap-6">
       {icon && <IconBadge component={icon} size="md" />}
@@ -30,12 +20,7 @@ export function Card({
           {title}
         </Heading>
 
-        <p
-          className={clsx(
-            'text-xl/6',
-            backgroundVariant === 'dark' ? 'text-zinc-400' : 'text-zinc-600',
-          )}
-        >
+        <p className="text-xl/6 text-[var(--text-color-paragraph-muted)]">
           {description}
         </p>
       </div>

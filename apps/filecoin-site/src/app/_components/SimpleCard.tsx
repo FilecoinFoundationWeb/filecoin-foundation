@@ -66,7 +66,9 @@ export function SimpleCard({
           <Heading tag="h3" variant="card-heading">
             {title}
           </Heading>
-          <p className="simple-card-description-text">{description}</p>
+          <p className="tracking-tight text-[var(--text-color-paragraph-muted)]">
+            {description}
+          </p>
         </div>
         {cta && (
           <CTALink

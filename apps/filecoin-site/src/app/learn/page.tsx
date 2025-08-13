@@ -93,7 +93,6 @@ export default function Learn() {
               <Card
                 key={title}
                 as="li"
-                backgroundVariant="gray"
                 title={title}
                 description={description}
                 icon={icon}

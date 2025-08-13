@@ -64,13 +64,17 @@
 
 /* SECTION VARIANT COLORS */
 .light-section {
-  --text-color-accent: theme('colors.zinc.950');
-  --text-color-muted: theme('colors.zinc.600');
+  --text-color-base: theme('colors.zinc.950');
+  --text-color-heading-muted: theme('colors.zinc.600');
+  --text-color-paragraph-important: theme('colors.zinc.600');
+  --text-color-paragraph-muted: theme('colors.zinc.600');
 }
 
 .dark-section {
-  --text-color-accent: theme('colors.zinc.50');
-  --text-color-muted: theme('colors.zinc.200');
+  --text-color-base: theme('colors.zinc.50');
+  --text-color-heading-muted: theme('colors.zinc.200');
+  --text-color-paragraph-important: theme('colors.zinc.100');
+  --text-color-paragraph-muted: theme('colors.zinc.400');
 }
 
 @layer components {
@@ -399,18 +403,6 @@
     .dark-section & {
       @apply border-zinc-50/10;
     }
-
-    & .link-card-description {
-      @apply tracking-tight;
-
-      .light-section & {
-        @apply text-zinc-600;
-      }
-
-      .dark-section & {
-        @apply text-zinc-400;
-      }
-    }
   }
 
   /* LISTBOX BUTTON */
@@ -552,34 +544,6 @@
     }
   }
 
-  /* PAGE HEADER */
-  .page-header-description {
-    @apply font-sans tracking-tighter text-pretty md:text-xl;
-
-    .light-section & {
-      @apply text-zinc-600;
-    }
-
-    .dark-section & {
-      @apply text-zinc-100;
-    }
-  }
-
-  /* SECTION CONTENT */
-  .section-content-description-text {
-    @apply text-2xl leading-8 font-normal tracking-tight text-balance;
-  }
-
-  .section-sub-content-description-text {
-    .light-section & {
-      @apply text-zinc-600;
-    }
-
-    .dark-section & {
-      @apply text-zinc-400;
-    }
-  }
-
   /* SECTION DIVIDER */
   .section-divider {
     .light-section & {
@@ -604,30 +568,6 @@
   /* SLIDE OVER */
   .slide-over-panel {
     @apply bg-white;
-  }
-
-  /* SIDE BY SIDE CONTENT */
-  .split-section-description-text {
-    @apply font-sans text-lg font-light tracking-tight md:text-2xl;
-
-    .dark-section & {
-      @apply text-zinc-50;
-    }
-
-    .light-section & {
-      @apply text-zinc-950;
-    }
-  }
-
-  /* SIMPLE CARD */
-  .simple-card-description-text {
-    .light-section & {
-      @apply text-zinc-600;
-    }
-
-    .dark-section & {
-      @apply text-zinc-400;
-    }
   }
 
   /* TEXT LINKS */

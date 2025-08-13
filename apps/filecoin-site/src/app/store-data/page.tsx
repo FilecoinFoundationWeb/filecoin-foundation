@@ -72,7 +72,6 @@ export default function StoreData() {
               <Card
                 key={title}
                 as="li"
-                backgroundVariant="dark"
                 title={title}
                 description={description}
                 icon={icon}
