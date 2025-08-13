@@ -74,7 +74,7 @@
   --color-text-navigation-link-mobile-active: theme('colors.brand.900');
   --color-bg-navigation-link-hover: theme('colors.zinc.700 / 5%');
 
-  --color-border-base: theme('colors.zinc.950 / 15%');
+  --color-border: theme('colors.zinc.950 / 15%');
   --color-border-muted: theme('colors.zinc.950 / 10%');
 
   --color-logo: theme('colors.zinc.400');
@@ -92,7 +92,7 @@
   --color-text-navigation-link-mobile-active: theme('colors.brand.100');
   --color-bg-navigation-link-hover: theme('colors.zinc.200 / 10%');
 
-  --color-border-base: theme('colors.zinc.50 / 20%');
+  --color-border: theme('colors.zinc.50 / 20%');
   --color-border-muted: theme('colors.zinc.50 / 10%');
 
   --color-logo: theme('colors.zinc.400');

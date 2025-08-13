@@ -62,7 +62,7 @@ export function MobileNavigation({ backgroundVariant }: MobileNavigationProps) {
           </div>
           <ul
             aria-label="Navigation options"
-            className="flex flex-col divide-y divide-[var(--color-border-base)]"
+            className="flex flex-col divide-y divide-[var(--color-border)]"
           >
             {NAV_LINKS.map(({ path, label }) => (
               <li key={path}>

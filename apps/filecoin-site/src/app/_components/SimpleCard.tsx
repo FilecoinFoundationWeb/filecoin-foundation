@@ -24,8 +24,8 @@ export type SimpleCardData = {
 
 const borderClasses = {
   none: 'border-none',
-  all: 'border border-[var(--color-border-base)]',
-  'only-top': 'border-t border-[var(--color-border-base)]',
+  all: 'border border-[var(--color-border)]',
+  'only-top': 'border-t border-[var(--color-border)]',
 }
 
 export function SimpleCard({
