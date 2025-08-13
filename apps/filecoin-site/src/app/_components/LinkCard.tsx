@@ -37,7 +37,7 @@ export function LinkCard({
   return (
     <Tag
       className={clsx(
-        'relative flex flex-row border-t border-[var(--border-color-muted)] pt-8',
+        'relative flex flex-row border-t border-[var(--color-border-muted)] pt-8',
         description ? 'items-start gap-6' : 'items-center gap-5',
       )}
     >
@@ -49,7 +49,7 @@ export function LinkCard({
         </Heading>
 
         {description && (
-          <p className="tracking-tight text-[var(--text-color-paragraph-muted)]">
+          <p className="tracking-tight text-[var(--color-text-paragraph-muted)]">
             {description}
           </p>
         )}

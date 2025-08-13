@@ -20,7 +20,7 @@ export function Card({ as: Tag, title, description, icon }: CardProps) {
           {title}
         </Heading>
 
-        <p className="text-xl/6 text-[var(--text-color-paragraph-muted)]">
+        <p className="text-xl/6 text-[var(--color-text-paragraph-muted)]">
           {description}
         </p>
       </div>

@@ -20,13 +20,13 @@ const MOBILE_TOUCH_TARGET: TouchTarget = {
 }
 
 const desktopStyle = clsx(
-  'text-[var(--text-color-navigation-link)] hover:bg-[var(--bg-color-navigation-link-hover)] focus:bg-[var(--bg-color-navigation-link-hover)] aria-[current=true]:text-[var(--text-color-navigation-link-active)]',
+  'text-[var(--color-text-navigation-link)] hover:bg-[var(--color-bg-navigation-link-hover)] focus:bg-[var(--color-bg-navigation-link-hover)] aria-[current=true]:text-[var(--color-text-navigation-link-active)]',
   DESKTOP_TOUCH_TARGET.touchAreaPadding,
   DESKTOP_TOUCH_TARGET.touchAreaOffset,
 )
 
 const mobileStyle = clsx(
-  'text-[var(--text-color-base)] aria-[current=true]:text-[var(--text-color-navigation-link-mobile-active)]',
+  'text-[var(--color-text-base)] aria-[current=true]:text-[var(--color-text-navigation-link-mobile-active)]',
   MOBILE_TOUCH_TARGET.touchAreaPadding,
   MOBILE_TOUCH_TARGET.touchAreaOffset,
 )

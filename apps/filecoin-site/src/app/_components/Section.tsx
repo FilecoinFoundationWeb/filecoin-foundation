@@ -24,7 +24,7 @@ export function Section({
   return (
     <Tag
       className={clsx(
-        'text-[var(--text-color-base)]',
+        'text-[var(--color-text-base)]',
         backgroundVariants[backgroundVariant],
       )}
     >

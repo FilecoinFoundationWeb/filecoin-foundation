@@ -64,38 +64,36 @@
 
 /* SECTION VARIANT COLORS */
 .light-section {
-  --text-color-base: theme('colors.zinc.950');
-  --text-color-heading-muted: theme('colors.zinc.600');
-  --text-color-paragraph-important: theme('colors.zinc.600');
-  --text-color-paragraph-muted: theme('colors.zinc.600');
-  --text-color-cta-link: theme('colors.zinc.600');
+  --color-text-base: theme('colors.zinc.950');
+  --color-text-heading-muted: theme('colors.zinc.600');
+  --color-text-paragraph-important: theme('colors.zinc.600');
+  --color-text-paragraph-muted: theme('colors.zinc.600');
+  --color-text-cta-link: theme('colors.zinc.600');
+  --color-text-navigation-link: theme('colors.zinc.600');
+  --color-text-navigation-link-active: theme('colors.zinc.950');
+  --color-text-navigation-link-mobile-active: theme('colors.brand.900');
+  --color-bg-navigation-link-hover: theme('colors.zinc.700 / 5%');
 
-  --text-color-navigation-link: theme('colors.zinc.600');
-  --text-color-navigation-link-active: theme('colors.zinc.950');
-  --text-color-navigation-link-mobile-active: theme('colors.brand.900');
-  --bg-color-navigation-link-hover: theme('colors.zinc.700 / 5%');
-
-  --border-color: theme('colors.zinc.950 / 15%');
-  --border-color-muted: theme('colors.zinc.950 / 10%');
+  --color-border-base: theme('colors.zinc.950 / 15%');
+  --color-border-muted: theme('colors.zinc.950 / 10%');
 
   --color-logo: theme('colors.zinc.400');
   --color-logo-hover: theme('colors.zinc.400 / 80%');
 }
 
 .dark-section {
-  --text-color-base: theme('colors.zinc.50');
-  --text-color-heading-muted: theme('colors.zinc.200');
-  --text-color-paragraph-important: theme('colors.zinc.50');
-  --text-color-paragraph-muted: theme('colors.zinc.400');
-  --text-color-cta-link: theme('colors.zinc.300');
+  --color-text-base: theme('colors.zinc.50');
+  --color-text-heading-muted: theme('colors.zinc.200');
+  --color-text-paragraph-important: theme('colors.zinc.50');
+  --color-text-paragraph-muted: theme('colors.zinc.400');
+  --color-text-cta-link: theme('colors.zinc.300');
+  --color-text-navigation-link: theme('colors.zinc.300');
+  --color-text-navigation-link-active: theme('colors.zinc.50');
+  --color-text-navigation-link-mobile-active: theme('colors.brand.100');
+  --color-bg-navigation-link-hover: theme('colors.zinc.200 / 10%');
 
-  --text-color-navigation-link: theme('colors.zinc.300');
-  --text-color-navigation-link-active: theme('colors.zinc.50');
-  --text-color-navigation-link-mobile-active: theme('colors.brand.100');
-  --bg-color-navigation-link-hover: theme('colors.zinc.200 / 10%');
-
-  --border-color: theme('colors.zinc.50 / 20%');
-  --border-color-muted: theme('colors.zinc.50 / 10%');
+  --color-border-base: theme('colors.zinc.50 / 20%');
+  --color-border-muted: theme('colors.zinc.50 / 10%');
 
   --color-logo: theme('colors.zinc.400');
   --color-logo-hover: theme('colors.zinc.50');
@@ -305,7 +303,7 @@
 
   /* CTALINK */
   .cta-link {
-    @apply font-semibold text-[var(--text-color-cta-link)];
+    @apply font-semibold text-[var(--color-text-cta-link)];
   }
 
   /* FORM */

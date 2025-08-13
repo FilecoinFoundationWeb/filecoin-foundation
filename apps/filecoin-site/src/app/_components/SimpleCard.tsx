@@ -24,8 +24,8 @@ export type SimpleCardData = {
 
 const borderClasses = {
   none: 'border-none',
-  all: 'border border-[var(--border-color)]',
-  'only-top': 'border-t border-[var(--border-color)]',
+  all: 'border border-[var(--color-border-base)]',
+  'only-top': 'border-t border-[var(--color-border-base)]',
 }
 
 export function SimpleCard({
@@ -66,7 +66,7 @@ export function SimpleCard({
           <Heading tag="h3" variant="card-heading">
             {title}
           </Heading>
-          <p className="tracking-tight text-[var(--text-color-paragraph-muted)]">
+          <p className="tracking-tight text-[var(--color-text-paragraph-muted)]">
             {description}
           </p>
         </div>

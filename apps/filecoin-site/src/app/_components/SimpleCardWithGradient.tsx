@@ -27,7 +27,7 @@ export function SimpleCardWithGradient({
   const index = gradientIndex % GRADIENT_STEPS.length
 
   return (
-    <li className="relative flex h-full flex-col border border-[var(--border-color)]">
+    <li className="relative flex h-full flex-col border border-[var(--color-border-base)]">
       <div
         aria-hidden="true"
         className={clsx(
