@@ -9,11 +9,11 @@ export type SectionProps = {
 }
 
 export const backgroundVariants = {
-  dark: 'dark-section bg-zinc-950 text-zinc-50',
-  gray: 'light-section bg-gray-200 text-zinc-950',
-  light: 'light-section bg-white text-zinc-950',
-  transparent: 'light-section bg-transparent text-zinc-950',
-  transparentDark: 'dark-section bg-transparent text-zinc-50',
+  dark: 'dark-section bg-zinc-950',
+  gray: 'light-section bg-gray-200',
+  light: 'light-section bg-white',
+  transparent: 'light-section bg-transparent',
+  transparentDark: 'dark-section bg-transparent',
 } as const
 
 export function Section({
@@ -22,7 +22,12 @@ export function Section({
   as: Tag = 'section',
 }: SectionProps) {
   return (
-    <Tag className={clsx(backgroundVariants[backgroundVariant])}>
+    <Tag
+      className={clsx(
+        'text-[var(--text-color-accent)]',
+        backgroundVariants[backgroundVariant],
+      )}
+    >
       {children}
     </Tag>
   )
