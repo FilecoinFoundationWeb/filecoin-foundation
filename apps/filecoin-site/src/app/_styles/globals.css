@@ -68,6 +68,13 @@
   --text-color-heading-muted: theme('colors.zinc.600');
   --text-color-paragraph-important: theme('colors.zinc.600');
   --text-color-paragraph-muted: theme('colors.zinc.600');
+
+  --text-color-navigation-link: theme('colors.zinc.600');
+  --text-color-navigation-link-active: theme('colors.zinc.950');
+  --text-color-navigation-link-mobile-active: theme('colors.brand.900');
+  --bg-color-navigation-link-hover: theme('colors.zinc.700 / 5%');
+
+  --border-color-muted: theme('colors.zinc.950 / 15%');
 }
 
 .dark-section {
@@ -75,6 +82,13 @@
   --text-color-heading-muted: theme('colors.zinc.200');
   --text-color-paragraph-important: theme('colors.zinc.100');
   --text-color-paragraph-muted: theme('colors.zinc.400');
+
+  --text-color-navigation-link: theme('colors.zinc.300');
+  --text-color-navigation-link-active: theme('colors.zinc.50');
+  --text-color-navigation-link-mobile-active: theme('colors.brand.100');
+  --bg-color-navigation-link-hover: theme('colors.zinc.200 / 10%');
+
+  --border-color-muted: theme('colors.zinc.50 / 20%');
 }
 
 @layer components {
@@ -436,67 +450,6 @@
 
     &:focus {
       @apply focus:outline-none;
-    }
-  }
-
-  /* NAVIGATION */
-  .mobile-navigation-list {
-    .light-section & {
-      @apply divide-zinc-950/15;
-    }
-
-    .dark-section & {
-      @apply divide-zinc-50/15;
-    }
-  }
-
-  .navigation-link {
-    @apply font-display tracking-wider;
-
-    .light-section & {
-      @apply text-zinc-600;
-
-      &:hover,
-      &:focus {
-        @apply bg-zinc-700/5;
-      }
-
-      &[aria-current='true'] {
-        @apply text-zinc-950;
-      }
-    }
-
-    .dark-section & {
-      @apply text-zinc-300;
-
-      &:hover,
-      &:focus {
-        @apply bg-zinc-200/10;
-      }
-
-      &[aria-current='true'] {
-        @apply text-zinc-50;
-      }
-    }
-  }
-
-  .mobile-navigation-link {
-    @apply font-display tracking-wider;
-
-    .light-section & {
-      @apply text-zinc-950;
-
-      &[aria-current='true'] {
-        @apply text-brand-900;
-      }
-    }
-
-    .dark-section & {
-      @apply text-zinc-50;
-
-      &[aria-current='true'] {
-        @apply text-brand-100;
-      }
     }
   }
 
