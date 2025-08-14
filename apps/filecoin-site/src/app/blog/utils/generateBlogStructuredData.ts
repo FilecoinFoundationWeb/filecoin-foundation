@@ -5,8 +5,8 @@ import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structu
 
 import type { PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
+import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
-import { STRUCTURED_DATA_IDS } from '@/_constants/structuredDataConstants'
 import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
 
 type GenerateBlogStructuredDataProps = {
