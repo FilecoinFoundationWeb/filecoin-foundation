@@ -8,12 +8,13 @@ export function NavigationItems() {
     <>
       {footerNavigationItems.map(({ title, items }) => (
         <div key={title} className="space-y-4">
-          <span className="block text-sm font-medium text-zinc-50">
-            {title}
-          </span>
+          <span className="block text-sm font-medium">{title}</span>
           <ul className="flex flex-col gap-3">
             {items.map(({ href, label }) => (
-              <li key={href} className="text-sm text-zinc-400">
+              <li
+                key={href}
+                className="text-sm text-[var(--color-text-paragraph-muted)]"
+              >
                 <SmartTextLink href={href} baseDomain={BASE_DOMAIN}>
                   {label}
                 </SmartTextLink>

@@ -352,14 +352,6 @@
   .form-label {
     @apply inline-block text-sm font-medium;
 
-    .light-section & {
-      @apply text-zinc-950;
-    }
-
-    .dark-section & {
-      @apply text-zinc-50;
-    }
-
     & .form-label-optional-text {
       @apply ml-1 inline-block font-light;
     }
@@ -435,7 +427,7 @@
     }
 
     & .pagination-delimiter {
-      @apply text-zinc-950/10;
+      @apply text-[var(--color-border-muted)];
     }
 
     & .pagination-index-container {
@@ -489,7 +481,7 @@
 
   /* TOOLTIP */
   .tooltip {
-    @apply rounded-xl border border-zinc-200 bg-white text-zinc-950 shadow-sm;
+    @apply rounded-xl border border-zinc-200 bg-white shadow-sm;
 
     .tooltip-arrow {
       @apply fill-zinc-300;

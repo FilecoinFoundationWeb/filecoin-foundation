@@ -1,7 +1,5 @@
 'use client'
 
-import clsx from 'clsx'
-
 import { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter/constants'
 
 import { blogCategories } from '../data/blogCategories'
@@ -18,16 +16,14 @@ export function CategoryTabs() {
         return (
           <button
             key={id}
-            aria-pressed={isActive}
+            role="tab"
+            aria-selected={isActive}
+            className="focus:brand-outline cursor-pointer text-[var(--color-text-paragraph-muted)] hover:text-[var(--color-text-base)] aria-selected:text-[var(--color-text-base)]"
             aria-label={
               id === DEFAULT_FILTER_ID
                 ? 'View all blog posts'
                 : `Filter by ${name}`
             }
-            className={clsx(
-              'focus:brand-outline cursor-pointer',
-              isActive ? 'text-zinc-950' : 'text-zinc-600 hover:text-zinc-950',
-            )}
             onClick={() => setSelectedCategory(id)}
           >
             {name}

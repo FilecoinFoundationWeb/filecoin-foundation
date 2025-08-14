@@ -24,7 +24,7 @@ export function CategoryListbox() {
           {getCategoryDisplayName(selectedCategory)}
         </span>
 
-        <div className="pointer-events-none absolute inset-y-0 right-6 flex items-center text-zinc-950 group-data-open:rotate-180">
+        <div className="pointer-events-none absolute inset-y-0 right-6 flex items-center group-data-open:rotate-180">
           <Icon component={CaretDownIcon} size={16} weight="bold" />
         </div>
       </ListboxButton>

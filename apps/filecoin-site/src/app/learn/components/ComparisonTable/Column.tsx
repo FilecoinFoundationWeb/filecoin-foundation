@@ -32,20 +32,21 @@ export function Column({
   const { Icon, color } = ICON_CONFIG[perspective]
 
   return (
-    <div
-      className={clsx(
-        'text-center',
-        perspective === 'advantage' ? 'text-zinc-950' : 'text-zinc-600',
-      )}
-    >
-      <div className="py-6 text-2xl font-medium text-zinc-950 md:py-18">
+    <div className="text-center">
+      <div className="py-6 text-2xl font-medium md:py-18">
         <div className="flex min-h-10 items-center gap-3 md:justify-center">
           {Logo && <Logo className="h-10 w-10" />}
           {title}
         </div>
       </div>
 
-      <ul className="divide-zinc-950/15 md:space-y-3 md:divide-y">
+      <ul
+        className={clsx(
+          'divide-[var(--color-border)] md:space-y-3 md:divide-y',
+          perspective === 'disadvantage' &&
+            'text-[var(--color-text-paragraph-muted)]',
+        )}
+      >
         {features.map((feature) => (
           <li
             key={feature}
