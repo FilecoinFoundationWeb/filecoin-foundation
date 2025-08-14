@@ -32,7 +32,7 @@ export function generatePageStructuredData({
 
   const pageSchema: WebPage = {
     '@type': pageType,
-    '@id': STRUCTURED_DATA_IDS.WEB_PAGE(path, pageType),
+    '@id': STRUCTURED_DATA_IDS.getPageId(path, pageType),
     url: fullUrl,
     name: title,
     description,

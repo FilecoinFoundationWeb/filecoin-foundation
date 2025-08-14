@@ -20,9 +20,9 @@ export const STRUCTURED_DATA_IDS = {
   ORGANIZATION: `${BASE_URL}/#org`,
   WEBSITE: `${BASE_URL}/#website`,
   BLOG: `${BASE_URL}/${PATHS.BLOG.path}#blog`,
-  SERVICE: (path: PathValues) => `${BASE_URL}${path}#service`,
-  BLOG_POST: (path: string) => `${BASE_URL}${path}#post`,
-  WEB_PAGE: (path: PathValues, type: 'WebPage' | 'CollectionPage') =>
+  getServiceId: (path: PathValues) => `${BASE_URL}${path}#service`,
+  getBlogPostId: (path: string) => `${BASE_URL}${path}#post`,
+  getPageId: (path: PathValues, type: 'WebPage' | 'CollectionPage') =>
     `${BASE_URL}${path}#${type === 'CollectionPage' ? 'page' : 'webpage'}`,
 } as const
 

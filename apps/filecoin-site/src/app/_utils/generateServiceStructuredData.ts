@@ -35,7 +35,7 @@ export function generateServiceStructuredData({
 
   const pageSchema: Service = {
     '@type': 'Service',
-    '@id': STRUCTURED_DATA_IDS.SERVICE(path),
+    '@id': STRUCTURED_DATA_IDS.getServiceId(path),
     serviceType: service.serviceType,
     name: title,
     url: fullUrl,

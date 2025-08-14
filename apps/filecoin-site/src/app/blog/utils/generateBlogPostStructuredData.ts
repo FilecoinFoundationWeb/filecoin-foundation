@@ -5,18 +5,17 @@ import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structu
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
+import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
 import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
-
-import { STRUCTURED_DATA_IDS } from '@/_constants/structuredDataConstants'
 
 type GenerateBlogPostStructuredDataProps = {
   path: string
   headline: string
   description: BlogPosting['description']
-  image: BlogPosting['image']
   datePublished: Date
   dateModified?: Date
+  image?: BlogPosting['image']
 }
 
 export function generateBlogPostStructuredData({
@@ -31,11 +30,11 @@ export function generateBlogPostStructuredData({
 
   const blogPost: BlogPosting = {
     '@type': 'BlogPosting',
-    '@id': STRUCTURED_DATA_IDS.BLOG_POST(path),
+    '@id': STRUCTURED_DATA_IDS.getBlogPostId(path),
     mainEntityOfPage: fullUrl,
     headline,
     description,
-    image,
+    ...(image && { image }),
     datePublished: datePublished.toISOString(),
     dateModified: dateModified?.toISOString(),
     author: {
