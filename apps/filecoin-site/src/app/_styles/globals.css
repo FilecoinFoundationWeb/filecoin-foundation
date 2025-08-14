@@ -55,7 +55,7 @@
 }
 
 @utility icon-button {
-  @apply rounded-full border-2 border-zinc-200;
+  @apply rounded-full border border-[var(--color-border-icon-button)] text-[var(--color-text-base)] hover:border-[var(--color-border-icon-button-hover)] hover:bg-[var(--color-bg-icon-button-hover)];
 
   .share-article-list & {
     @apply scale-70;
@@ -78,7 +78,14 @@
   --color-border-muted: theme('colors.zinc.950 / 10%');
 
   --color-logo: theme('colors.zinc.400');
-  --color-logo-hover: theme('colors.zinc.400 / 80%');
+  --color-logo-hover: theme('colors.zinc.500');
+
+  --color-card-heading-hover: theme('colors.brand.800');
+  --color-bg-card-hover: theme('colors.zinc.50');
+
+  --color-border-icon-button: theme('colors.zinc.300');
+  --color-border-icon-button-hover: theme('colors.zinc.400');
+  --color-bg-icon-button-hover: theme('colors.zinc.100');
 }
 
 .dark-section {
@@ -97,6 +104,13 @@
 
   --color-logo: theme('colors.zinc.400');
   --color-logo-hover: theme('colors.zinc.50');
+
+  --color-card-heading-hover: theme('colors.brand.500');
+  --color-bg-card-hover: theme('colors.zinc.800');
+
+  --color-border-icon-button: theme('colors.zinc.600');
+  --color-border-icon-button-hover: theme('colors.zinc.500');
+  --color-bg-icon-button-hover: theme('colors.zinc.700');
 }
 
 @layer components {

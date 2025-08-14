@@ -18,12 +18,12 @@ export function LogoItem({
       height={size}
       aria-label={href ? undefined : alt}
       aria-hidden={href ? 'true' : undefined}
-      className="max-w-full text-[var(--color-logo)] transition-colors duration-200 hover:text-[var(--color-logo-hover)]"
+      className="max-w-full text-[var(--color-logo)] group-focus-within:text-[var(--color-logo-hover)] group-hover:text-[var(--color-logo-hover)]"
     />
   )
 
   return (
-    <li className="flex items-center">
+    <li className="group flex items-center">
       {href ? (
         <a
           href={href}

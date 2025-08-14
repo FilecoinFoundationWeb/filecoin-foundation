@@ -44,9 +44,11 @@ export function BlogCard({
 
         <div className="flex flex-col gap-4 py-4">
           <TagGroup tags={tags} />
-          <Heading tag="h2" variant="card-heading">
-            {title}
-          </Heading>
+          <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
+            <Heading tag="h2" variant="card-heading">
+              {title}
+            </Heading>
+          </span>
 
           <p className="text-zinc-600">{description}</p>
 
