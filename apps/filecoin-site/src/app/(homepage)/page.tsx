@@ -67,7 +67,6 @@ export default async function Home() {
                   <LinkCard
                     key={title}
                     as="li"
-                    backgroundVariant="light"
                     title={title}
                     headingTag="h2"
                     description={description}
@@ -163,7 +162,6 @@ export default async function Home() {
             {providerBenefits.map(({ title, description }) => (
               <Card
                 key={title}
-                backgroundVariant="dark"
                 as="li"
                 title={title}
                 description={description}
@@ -189,7 +187,6 @@ export default async function Home() {
               <Card
                 key={title}
                 as="li"
-                backgroundVariant="light"
                 title={title}
                 description={description}
                 icon={icon}
@@ -251,7 +248,6 @@ export default async function Home() {
                 <LinkCard
                   key={title}
                   as="li"
-                  backgroundVariant="dark"
                   title={title}
                   headingTag="h3"
                   href={href}

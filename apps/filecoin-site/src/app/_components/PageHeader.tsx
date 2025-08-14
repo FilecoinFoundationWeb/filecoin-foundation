@@ -19,15 +19,14 @@ export function PageHeader({
     <header className="page-header">
       <div className="flex max-w-3xl flex-col gap-6">
         {kicker && <Kicker size="md">{kicker}</Kicker>}
-        <Heading
-          tag="h1"
-          variant="3xl-md5xl-medium"
-          className="page-header-title"
-        >
+        <Heading tag="h1" variant="section-heading">
           {title}
         </Heading>
+
         {description && (
-          <p className="page-header-description">{description}</p>
+          <p className="font-sans tracking-tighter text-pretty text-[var(--color-text-paragraph-important)] md:text-xl">
+            {description}
+          </p>
         )}
       </div>
 

@@ -87,7 +87,6 @@ export default function Learn() {
               <Card
                 key={title}
                 as="li"
-                backgroundVariant="gray"
                 title={title}
                 description={description}
                 icon={icon}
@@ -191,7 +190,6 @@ export default function Learn() {
               <LinkCard
                 key={title}
                 as="li"
-                backgroundVariant="dark"
                 title={title}
                 headingTag="h3"
                 href={href}
