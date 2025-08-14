@@ -18,7 +18,7 @@ export function PostMetadata({ author, date }: PostMetadataProps) {
     return (
       <div className={clsx('flex items-center gap-2', baseStyles)}>
         <span>{formattedDate}</span>
-        <span className="text-zinc-400">|</span>
+        <span>|</span>
         <span>{author}</span>
       </div>
     )

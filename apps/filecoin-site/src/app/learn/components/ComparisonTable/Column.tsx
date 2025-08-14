@@ -19,7 +19,7 @@ const ICON_CONFIG = {
   },
   disadvantage: {
     Icon: XIcon,
-    color: 'text-zinc-600',
+    color: 'text-[var(--color-text-paragraph)]',
   },
 }
 

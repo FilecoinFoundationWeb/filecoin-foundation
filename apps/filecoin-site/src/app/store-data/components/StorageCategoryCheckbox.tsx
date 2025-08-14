@@ -30,7 +30,7 @@ export function StorageCategoryCheckbox({
         <p className="font-medium text-[var(--color-text-paragraph)] group-peer-checked:text-white">
           {name}
         </p>
-        <span className="group-peer-checked:bg-brand-800 grid size-7 place-items-center rounded-full bg-zinc-200 text-xs font-medium text-zinc-700 group-peer-checked:text-white">
+        <span className="group-peer-checked:bg-brand-800 grid size-7 place-items-center rounded-full bg-zinc-200 text-xs font-medium text-[var(--color-text-paragraph-strong)] group-peer-checked:text-white">
           {count}
         </span>
       </Label>
