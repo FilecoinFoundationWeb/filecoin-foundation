@@ -32,9 +32,9 @@ export default function StoreData() {
         structuredData={generateStructuredData(STORE_DATA_SEO)}
       />
       <BackgroundImage
-        overlayVariant="dark"
-        src={graphicsData.storeDataHero.data.src}
-        blurDataURL={graphicsData.storeDataHero.data.blurDataURL}
+        overlayVariant="light"
+        src={graphicsData.starsSpinning.data.src}
+        blurDataURL={graphicsData.starsSpinning.data.blurDataURL}
       >
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">

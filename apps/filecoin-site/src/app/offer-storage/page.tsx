@@ -34,10 +34,10 @@ export default function OfferStorage() {
       <StructuredDataScript
         structuredData={generateStructuredData(OFFER_STORAGE_SEO)}
       />
+
       <BackgroundImage
-        overlayVariant="dark"
-        src={graphicsData.offerStorageHero.data.src}
-        blurDataURL={graphicsData.offerStorageHero.data.blurDataURL}
+        src={graphicsData.planetShadow.data.src}
+        blurDataURL={graphicsData.planetShadow.data.blurDataURL}
       >
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
