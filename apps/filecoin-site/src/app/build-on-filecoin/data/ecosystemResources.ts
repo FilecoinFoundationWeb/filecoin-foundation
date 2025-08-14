@@ -34,7 +34,7 @@ export const ecosystemResources: Array<SimpleCardWithLogoProps> = [
       color: '#F7F7F7',
     },
     cta: {
-      href: 'https://filoz.dev/',
+      href: 'https://www.filoz.org/',
       text: CTA_TEXT,
     },
   },
@@ -60,7 +60,7 @@ export const ecosystemResources: Array<SimpleCardWithLogoProps> = [
       bgColor: '#FAFAFA',
     },
     cta: {
-      href: 'https://fil-b.dev/',
+      href: 'https://fil.builders',
       text: CTA_TEXT,
     },
   },
@@ -73,7 +73,7 @@ export const ecosystemResources: Array<SimpleCardWithLogoProps> = [
       bgColor: '#000',
     },
     cta: {
-      href: 'https://fidl.network/',
+      href: 'https://www.fidl.tech/',
       text: CTA_TEXT,
     },
   },
@@ -87,7 +87,7 @@ export const ecosystemResources: Array<SimpleCardWithLogoProps> = [
       color: '#000',
     },
     cta: {
-      href: 'https://ansa.network/',
+      href: 'https://ansaresearch.ai/',
       text: CTA_TEXT,
     },
   },
