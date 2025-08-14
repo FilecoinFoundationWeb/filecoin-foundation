@@ -51,7 +51,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
         'antialiased',
       )}
     >
-      <body className="bg-white font-sans tracking-tight text-zinc-900">
+      <body className="bg-white font-sans tracking-tight">
         <main>{children}</main>
         <Footer />
 

@@ -198,7 +198,7 @@
       }
 
       .light-section & {
-        @apply bg-zinc-100 text-zinc-900;
+        @apply bg-zinc-100 text-zinc-950;
 
         &:not(:disabled):hover,
         &:focus {
