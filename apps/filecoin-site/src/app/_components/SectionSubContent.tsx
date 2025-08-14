@@ -28,7 +28,7 @@ export function SectionSubContent({
           {title}
         </Heading>
         {description && (
-          <p className="pt-6 text-lg/7 font-normal text-balance text-[var(--color-text-paragraph-muted)]">
+          <p className="pt-6 text-lg/7 font-normal text-balance text-[var(--color-text-paragraph)]">
             {description}
           </p>
         )}

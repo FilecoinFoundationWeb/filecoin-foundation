@@ -45,7 +45,7 @@ export function CategoryListbox() {
             >
               <div className="px-4 py-3 group-data-selected:bg-zinc-100">
                 <div className="flex items-center gap-4">
-                  <p className="font-medium text-zinc-600 group-data-selected:text-zinc-800">
+                  <p className="font-medium text-[var(--color-text-paragraph)] group-data-selected:text-zinc-800">
                     {displayName}
                   </p>
                 </div>

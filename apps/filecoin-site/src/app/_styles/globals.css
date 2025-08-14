@@ -67,7 +67,7 @@
   --color-text-base: theme('colors.zinc.950');
   --color-text-heading-muted: theme('colors.zinc.600');
   --color-text-paragraph-important: theme('colors.zinc.600');
-  --color-text-paragraph-muted: theme('colors.zinc.600');
+  --color-text-paragraph: theme('colors.zinc.600');
   --color-text-cta-link: theme('colors.zinc.600');
   --color-text-navigation-link: theme('colors.zinc.600');
   --color-text-navigation-link-active: theme('colors.zinc.950');
@@ -88,7 +88,7 @@
   --color-text-base: theme('colors.zinc.50');
   --color-text-heading-muted: theme('colors.zinc.200');
   --color-text-paragraph-important: theme('colors.zinc.50');
-  --color-text-paragraph-muted: theme('colors.zinc.400');
+  --color-text-paragraph: theme('colors.zinc.400');
   --color-text-cta-link: theme('colors.zinc.300');
   --color-text-navigation-link: theme('colors.zinc.300');
   --color-text-navigation-link-active: theme('colors.zinc.50');

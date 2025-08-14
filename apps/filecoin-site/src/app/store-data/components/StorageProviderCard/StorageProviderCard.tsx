@@ -35,7 +35,10 @@ export function StorageProviderCard({
             </Heading>
           </div>
 
-          <p className="line-clamp-4 h-24 text-zinc-600" title={description}>
+          <p
+            className="line-clamp-4 h-24 text-[var(--color-text-paragraph)]"
+            title={description}
+          >
             {description}
           </p>
 

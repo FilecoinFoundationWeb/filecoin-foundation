@@ -92,7 +92,7 @@ export default function OfferStorage() {
                   <Heading tag="h4" variant="card-heading">
                     {title}
                   </Heading>
-                  <ul className="list-disc pl-4 text-xl text-zinc-400">
+                  <ul className="list-disc pl-4 text-xl text-[var(--color-text-paragraph)]">
                     {list.map((item) => (
                       <li key={item}>{item}</li>
                     ))}
@@ -115,7 +115,7 @@ export default function OfferStorage() {
                   <Heading tag="h4" variant="card-heading">
                     {title}
                   </Heading>
-                  <ul className="list-disc pl-4 text-xl text-zinc-400">
+                  <ul className="list-disc pl-4 text-xl text-[var(--color-text-paragraph)]">
                     {list.map((item) => (
                       <li key={item}>{item}</li>
                     ))}

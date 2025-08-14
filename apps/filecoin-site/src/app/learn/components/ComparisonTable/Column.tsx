@@ -44,7 +44,7 @@ export function Column({
         className={clsx(
           'divide-[var(--color-border)] md:space-y-3 md:divide-y',
           perspective === 'disadvantage' &&
-            'text-[var(--color-text-paragraph-muted)]',
+            'text-[var(--color-text-paragraph)]',
         )}
       >
         {features.map((feature) => (

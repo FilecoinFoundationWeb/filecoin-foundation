@@ -49,7 +49,7 @@ export function LinkCard({
         </Heading>
 
         {description && (
-          <p className="tracking-tight text-[var(--color-text-paragraph-muted)]">
+          <p className="tracking-tight text-[var(--color-text-paragraph)]">
             {description}
           </p>
         )}

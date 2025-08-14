@@ -53,14 +53,14 @@ export function StorageCategoryListbox({
             >
               <div className="group-data-selected:bg-brand-900 px-4 py-3">
                 <div className="flex items-center gap-4">
-                  <p className="font-medium text-zinc-600 group-data-selected:text-white">
+                  <p className="font-medium text-[var(--color-text-paragraph)] group-data-selected:text-white">
                     {name}
                   </p>
                   <span className="group-data-selected:bg-brand-800 grid size-7 place-items-center rounded-full bg-zinc-200 text-xs font-medium text-zinc-700 group-data-selected:text-white">
                     {matches.length}
                   </span>
                 </div>
-                <p className="group-data-selected:text-brand-50 mt-3 text-sm text-zinc-600">
+                <p className="group-data-selected:text-brand-50 mt-3 text-sm text-[var(--color-text-paragraph)]">
                   {description}
                 </p>
               </div>
