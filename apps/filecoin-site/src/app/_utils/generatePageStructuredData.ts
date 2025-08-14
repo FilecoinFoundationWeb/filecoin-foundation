@@ -36,8 +36,8 @@ export function generatePageStructuredData({
     url: fullUrl,
     name: title,
     description,
-    isPartOf: { '@id': WEBSITE_SCHEMA['@id']! },
     ...(about && { about }),
+    isPartOf: { '@id': WEBSITE_SCHEMA['@id']! },
   }
 
   return {

@@ -10,6 +10,7 @@ import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structu
 
 import {
   BASE_URL,
+  FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
   ORGANIZATION_NAME,
 } from '@/constants/siteMetadata'
@@ -30,13 +31,13 @@ const CONTACT_POINTS: Array<ContactPoint> = [
   {
     '@type': 'ContactPoint',
     contactType: 'Media and collaboration inquiries',
-    email: FILECOIN_URLS.emails.contact,
+    email: FILECOIN_FOUNDATION_URLS.emails.contact,
     areaServed: 'Global',
   },
   {
     '@type': 'ContactPoint',
     contactType: 'Ecosystem grants inquiries',
-    email: FILECOIN_URLS.emails.devgrants,
+    email: FILECOIN_FOUNDATION_URLS.emails.devgrants,
     areaServed: 'Global',
   },
 ] as const
