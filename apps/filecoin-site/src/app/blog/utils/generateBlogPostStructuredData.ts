@@ -3,6 +3,7 @@ import type { BlogPosting } from 'schema-dts'
 import type { BlogPostPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 
+import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
@@ -55,7 +56,7 @@ export function generateBlogPostStructuredData({
       generateBreadcrumbList({
         path,
         title: headline,
-        includeBlogLevel: true,
+        parentPaths: [{ path: PATHS.BLOG.path, title: PATHS.BLOG.label }],
       }),
     ],
   }
