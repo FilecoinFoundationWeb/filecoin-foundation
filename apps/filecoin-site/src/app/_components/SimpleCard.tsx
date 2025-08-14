@@ -9,7 +9,7 @@ export type SimpleCardProps = {
   description: string
   as: 'li' | 'div'
   badge?: BadgeProps['children']
-  border?: keyof typeof variants
+  border?: keyof typeof borderStyles
   cta?: {
     href: CTALinkProps['href']
     text: CTALinkProps['children']
@@ -22,9 +22,16 @@ export type SimpleCardData = {
   cta: NonNullable<SimpleCardProps['cta']>
 }
 
-const variants = {
-  none: 'border-none group-focus-within:bg-[var(--color-bg-card-hover)] group-hover:bg-[var(--color-bg-card-hover)]',
-  all: 'border border-[var(--color-border)] focus-within:bg-[var(--color-bg-card-hover)] hover:bg-[var(--color-bg-card-hover)]',
+const interactiveStyles = {
+  direct:
+    'focus-within:bg-[var(--color-bg-card-hover)] hover:bg-[var(--color-bg-card-hover)]',
+  delagated:
+    'group-focus-within:bg-[var(--color-bg-card-hover)] group-hover:bg-[var(--color-bg-card-hover)]',
+}
+
+const borderStyles = {
+  none: 'border-none',
+  all: 'border border-[var(--color-border)]',
   'only-top': 'border-t border-[var(--color-border)]',
 }
 
@@ -43,7 +50,9 @@ export function SimpleCard({
       className={clsx(
         'group h-full w-full',
         cta && 'relative',
-        variants[border],
+        borderStyles[border],
+        border === 'all' && interactiveStyles.direct,
+        border === 'none' && interactiveStyles.delagated,
       )}
     >
       <div
