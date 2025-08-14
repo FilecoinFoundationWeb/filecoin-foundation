@@ -1,12 +1,14 @@
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
-import { WEBSITE_SCHEMA } from '@/constants/structuredDataConstants'
+import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
-export const SERVICE_STRUCTURED_DATA = {
+import type { ServiceDetails } from '@/utils/generateServiceStructuredData'
+
+export const SERVICE_STRUCTURED_DATA: ServiceDetails = {
   serviceType: 'Decentralized data storage',
-  providerId: WEBSITE_SCHEMA.publisher['@id'],
+  provider: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
   areaServed: 'Global',
-  termsOfService: `${BASE_URL}/terms`,
+  termsOfService: `${BASE_URL}/${PATHS.TERMS_OF_USE.path}`,
   serviceOutput: 'Tamper-evident, verifiable data storage',
   offers: {
     '@type': 'Offer',

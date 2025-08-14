@@ -6,7 +6,10 @@ import type { StructuredDataParams } from '@filecoin-foundation/utils/types/stru
 
 import { type PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
-import { WEBSITE_SCHEMA } from '@/constants/structuredDataConstants'
+import {
+  STRUCTURED_DATA_IDS,
+  WEBSITE_SCHEMA,
+} from '@/constants/structuredDataConstants'
 
 import { generateBreadcrumbList } from './generateBreadcrumbsList'
 
@@ -18,11 +21,6 @@ type GenerateWebPageStructuredDataProps = StructuredDataParams & {
   about?: Array<{ '@type': 'Thing'; name: string }>
 }
 
-const PAGE_ID_SUFFIXES: Record<PageType, string> = {
-  CollectionPage: 'page',
-  WebPage: 'webpage',
-}
-
 export function generatePageStructuredData({
   title,
   description,
@@ -31,15 +29,14 @@ export function generatePageStructuredData({
   about,
 }: GenerateWebPageStructuredDataProps): WebPageGraph {
   const fullUrl = `${BASE_URL}${path}`
-  const pageId = `${fullUrl}#${PAGE_ID_SUFFIXES[pageType]}`
 
   const pageSchema: WebPage = {
     '@type': pageType,
-    '@id': pageId,
+    '@id': STRUCTURED_DATA_IDS.WEB_PAGE(path, pageType),
     url: fullUrl,
     name: title,
     description,
-    isPartOf: { '@id': WEBSITE_SCHEMA['@id'] },
+    isPartOf: { '@id': WEBSITE_SCHEMA['@id']! },
     ...(about && { about }),
   }
 

@@ -8,6 +8,8 @@ import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
 
+import { STRUCTURED_DATA_IDS } from '@/_constants/structuredDataConstants'
+
 type GenerateBlogPostStructuredDataProps = {
   path: string
   headline: string
@@ -15,7 +17,6 @@ type GenerateBlogPostStructuredDataProps = {
   image: BlogPosting['image']
   datePublished: Date
   dateModified?: Date
-  publisherId?: string
 }
 
 export function generateBlogPostStructuredData({
@@ -25,14 +26,12 @@ export function generateBlogPostStructuredData({
   image,
   datePublished,
   dateModified,
-  publisherId = `${BASE_URL}/#org`,
 }: GenerateBlogPostStructuredDataProps): BlogPostPageGraph {
   const fullUrl = `${BASE_URL}${path}`
-  const postId = `${fullUrl}#post`
 
   const blogPost: BlogPosting = {
     '@type': 'BlogPosting',
-    '@id': postId,
+    '@id': STRUCTURED_DATA_IDS.BLOG_POST(path),
     mainEntityOfPage: fullUrl,
     headline,
     description,
@@ -44,8 +43,8 @@ export function generateBlogPostStructuredData({
       name: ORGANIZATION_NAME,
       url: BASE_URL,
     },
-    publisher: { '@id': publisherId },
-    isPartOf: { '@id': `${BASE_URL}/blog#blog` },
+    publisher: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
+    isPartOf: { '@id': STRUCTURED_DATA_IDS.BLOG },
     inLanguage: 'en',
   }
 

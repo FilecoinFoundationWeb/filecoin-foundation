@@ -6,6 +6,7 @@ import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structu
 import type { PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
+import { STRUCTURED_DATA_IDS } from '@/_constants/structuredDataConstants'
 import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
 
 type GenerateBlogStructuredDataProps = {
@@ -15,14 +16,12 @@ type GenerateBlogStructuredDataProps = {
     url: string
     name: string
   }>
-  publisherId?: string
 }
 
 export function generateBlogStructuredData({
   path,
   name,
   items = [],
-  publisherId = `${BASE_URL}/#org`,
 }: GenerateBlogStructuredDataProps): BlogPageGraph {
   const fullUrl = `${BASE_URL}${path}`
   const blogId = `${fullUrl}#blog`
@@ -32,7 +31,7 @@ export function generateBlogStructuredData({
     '@id': blogId,
     name,
     url: fullUrl,
-    publisher: { '@id': publisherId },
+    publisher: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
   }
 
   const itemList: ItemList | undefined =

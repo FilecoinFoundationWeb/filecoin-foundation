@@ -15,7 +15,7 @@ import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structu
 
 export type WebPageGraph = {
   '@context': typeof SCHEMA_CONTEXT_URL
-  '@graph': [WebPage, BreadcrumbList]
+  '@graph': Array<WebPage | BreadcrumbList>
 }
 
 export type ServicePageGraph = {

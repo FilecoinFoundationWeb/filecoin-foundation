@@ -6,47 +6,46 @@ import type { StructuredDataParams } from '@filecoin-foundation/utils/types/stru
 
 import type { PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
+import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
 import { generateBreadcrumbList } from './generateBreadcrumbsList'
 
+export type ServiceDetails = {
+  serviceType: Service['serviceType']
+  provider: Service['provider']
+  areaServed: Service['areaServed']
+  serviceOutput?: Service['serviceOutput']
+  audience?: Service['audience']
+  termsOfService: Service['termsOfService']
+  offers: Service['offers']
+}
+
 type ServiceProps = StructuredDataParams & {
   path: PathValues
-  serviceType: Service['serviceType']
-  providerId?: string
-  areaServed?: Service['areaServed']
-  termsOfService?: Service['termsOfService']
-  serviceOutput?: Service['serviceOutput']
-  offers?: Service['offers']
-  audience?: Service['audience']
+  service: ServiceDetails
 }
 
 export function generateServiceStructuredData({
-  path,
   title,
   description,
-  serviceType,
-  providerId = `${BASE_URL}/#org`,
-  areaServed,
-  termsOfService,
-  serviceOutput,
-  offers,
-  audience,
+  path,
+  service,
 }: ServiceProps): ServicePageGraph {
   const fullUrl = `${BASE_URL}${path}`
 
   const pageSchema: Service = {
     '@type': 'Service',
-    '@id': `${fullUrl}#service`,
-    serviceType,
+    '@id': STRUCTURED_DATA_IDS.SERVICE(path),
+    serviceType: service.serviceType,
     name: title,
     url: fullUrl,
+    provider: service.provider,
+    areaServed: service.areaServed,
     description,
-    provider: { '@id': providerId },
-    ...(areaServed && { areaServed }),
-    ...(termsOfService && { termsOfService }),
-    ...(serviceOutput && { serviceOutput }),
-    ...(offers && { offers }),
-    ...(audience && { audience }),
+    audience: service.audience,
+    termsOfService: service.termsOfService,
+    serviceOutput: service.serviceOutput,
+    offers: service.offers,
   }
 
   return {

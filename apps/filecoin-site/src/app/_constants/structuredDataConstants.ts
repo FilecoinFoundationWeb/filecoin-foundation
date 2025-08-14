@@ -1,3 +1,10 @@
+import type {
+  ContactPoint,
+  ImageObject,
+  Organization,
+  WebSite,
+} from 'schema-dts'
+
 import type { OrganizationGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 
@@ -5,11 +12,21 @@ import {
   BASE_URL,
   FILECOIN_URLS,
   ORGANIZATION_NAME,
-  PARENT_ORGANIZATION_NAME,
-  PARENT_ORGANIZATION_URL,
 } from '@/constants/siteMetadata'
 
-const CONTACT_POINTS = [
+import { PATHS, type PathValues } from './paths'
+
+export const STRUCTURED_DATA_IDS = {
+  ORGANIZATION: `${BASE_URL}/#org`,
+  WEBSITE: `${BASE_URL}/#website`,
+  BLOG: `${BASE_URL}/${PATHS.BLOG.path}#blog`,
+  SERVICE: (path: PathValues) => `${BASE_URL}${path}#service`,
+  BLOG_POST: (path: string) => `${BASE_URL}${path}#post`,
+  WEB_PAGE: (path: PathValues, type: 'WebPage' | 'CollectionPage') =>
+    `${BASE_URL}${path}#${type === 'CollectionPage' ? 'page' : 'webpage'}`,
+} as const
+
+const CONTACT_POINTS: Array<ContactPoint> = [
   {
     '@type': 'ContactPoint',
     contactType: 'Media and collaboration inquiries',
@@ -24,30 +41,24 @@ const CONTACT_POINTS = [
   },
 ] as const
 
-const LOGO_SCHEMA = {
+const LOGO_SCHEMA: ImageObject = {
   '@type': 'ImageObject',
   url: `${BASE_URL}/assets/logos/filecoin-logo-full.svg`,
   width: '512',
   height: '512',
 } as const
 
-const PARENT_ORGANIZATION = {
-  '@type': 'Organization',
-  name: PARENT_ORGANIZATION_NAME,
-  url: PARENT_ORGANIZATION_URL,
-} as const
-
-export const WEBSITE_SCHEMA = {
+export const WEBSITE_SCHEMA: WebSite = {
   '@type': 'WebSite',
-  '@id': `${BASE_URL}/#website`,
+  '@id': STRUCTURED_DATA_IDS.WEBSITE,
   url: BASE_URL,
   name: ORGANIZATION_NAME,
-  publisher: { '@id': `${BASE_URL}/#org` },
+  publisher: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
 } as const
 
-export const FILECOIN_ORGANIZATION_SCHEMA = {
+export const FILECOIN_ORGANIZATION_SCHEMA: Organization = {
   '@type': 'Organization',
-  '@id': `${BASE_URL}/#org`,
+  '@id': STRUCTURED_DATA_IDS.ORGANIZATION,
   name: ORGANIZATION_NAME,
   url: BASE_URL,
   sameAs: [
@@ -59,10 +70,9 @@ export const FILECOIN_ORGANIZATION_SCHEMA = {
   ],
   contactPoint: CONTACT_POINTS,
   logo: LOGO_SCHEMA,
-  parentOrganization: PARENT_ORGANIZATION,
 } as const
 
 export const ORGANIZATION_SCHEMA_BASE: OrganizationGraph = {
   '@context': SCHEMA_CONTEXT_URL,
   '@graph': [FILECOIN_ORGANIZATION_SCHEMA, WEBSITE_SCHEMA],
-} as const
+}

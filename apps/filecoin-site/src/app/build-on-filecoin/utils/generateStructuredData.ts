@@ -5,6 +5,8 @@ import { PATHS } from '@/constants/paths'
 
 import { generatePageStructuredData } from '@/utils/generatePageStructuredData'
 
+import { filecoinFeatures } from '../data/filecoinFeatures'
+
 export function generateStructuredData(
   seo: StructuredDataParams,
 ): WebPageGraph {
@@ -13,10 +15,9 @@ export function generateStructuredData(
     description: seo.description,
     path: PATHS.BUILD_ON_FILECOIN.path,
     pageType: 'CollectionPage',
-    about: [
-      { '@type': 'Thing', name: 'AI data storage & processing' },
-      { '@type': 'Thing', name: 'Cross-chain data bridges' },
-      { '@type': 'Thing', name: 'Storage-enabled dApps' },
-    ],
+    about: filecoinFeatures.map((feature) => ({
+      '@type': 'Thing',
+      name: feature.title,
+    })),
   })
 }

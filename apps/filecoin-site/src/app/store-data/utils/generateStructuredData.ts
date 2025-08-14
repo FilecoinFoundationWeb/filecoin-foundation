@@ -14,6 +14,6 @@ export function generateStructuredData(
     title: seo.title,
     description: seo.description,
     path: PATHS.STORE_DATA.path,
-    ...SERVICE_STRUCTURED_DATA,
+    service: SERVICE_STRUCTURED_DATA,
   })
 }

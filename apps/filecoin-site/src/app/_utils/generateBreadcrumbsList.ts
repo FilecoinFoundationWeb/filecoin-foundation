@@ -1,6 +1,6 @@
 import type { BreadcrumbList, ListItem } from 'schema-dts'
 
-import type { PathValues } from '@/constants/paths'
+import { PATHS, type PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 type GenerateBreadcrumbListProps = {
@@ -23,21 +23,25 @@ export function generateBreadcrumbList({
     item: BASE_URL,
   }
 
-  const items: ListItem[] = [HOME_ITEM]
+  if (path === PATHS.HOME.path) {
+    return { '@type': 'BreadcrumbList', itemListElement: [HOME_ITEM] }
+  }
 
-  parentPaths.map((level, index) => ({
-    '@type': 'ListItem',
-    position: index + 2,
-    name: level.title,
-    item: `${BASE_URL}${level.path}`,
-  }))
-
-  items.push({
-    '@type': 'ListItem',
-    position: items.length + 1,
-    name: title,
-    item: fullUrl,
-  })
+  const items: Array<ListItem> = [
+    HOME_ITEM,
+    ...parentPaths.map((level, index) => ({
+      '@type': 'ListItem' as const,
+      position: index + 2,
+      name: level.title,
+      item: `${BASE_URL}${level.path}`,
+    })),
+    {
+      '@type': 'ListItem' as const,
+      position: parentPaths.length + 2,
+      name: title,
+      item: fullUrl,
+    },
+  ]
 
   return { '@type': 'BreadcrumbList', itemListElement: items }
 }

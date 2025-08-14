@@ -3,8 +3,6 @@ import type { Metadata } from 'next'
 const BASE_DOMAIN = 'filecoin.io'
 const BASE_URL = `https://${BASE_DOMAIN}`
 const ORGANIZATION_NAME = 'Filecoin'
-const PARENT_ORGANIZATION_NAME = 'Filecoin Foundation'
-const PARENT_ORGANIZATION_URL = 'https://fil.org/'
 
 const SEO = {
   title:
@@ -60,8 +58,6 @@ export {
   BASE_URL,
   FILECOIN_URLS,
   ORGANIZATION_NAME,
-  PARENT_ORGANIZATION_NAME,
-  PARENT_ORGANIZATION_URL,
   ROOT_METADATA,
   SEO,
 }
