@@ -10,13 +10,6 @@ type SiteLayoutProps = {
   children: React.ReactNode
 }
 
-const funnelDisplay = localFont({
-  src: '../_fonts/Funnel_Display/FunnelDisplay[wght].woff2',
-  display: 'swap',
-  variable: '--font-funnel-display',
-  fallback: ['Arial', 'Helvetica', 'sans-serif'],
-})
-
 const funnelSans = localFont({
   src: [
     {
@@ -44,12 +37,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
   return (
     <html
       lang="en"
-      className={clsx(
-        aspekta.variable,
-        funnelDisplay.variable,
-        funnelSans.variable,
-        'antialiased',
-      )}
+      className={clsx(aspekta.variable, funnelSans.variable, 'antialiased')}
     >
       <body className="bg-white font-sans tracking-tight">
         <main>{children}</main>
