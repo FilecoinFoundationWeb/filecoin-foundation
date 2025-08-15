@@ -24,6 +24,6 @@ export function Heading({ tag: Tag, variant, ...rest }: HeadingProps) {
   const className = variant ? variants[variant] : rest.className
 
   return (
-    <Tag {...rest} className={clsx('font-heading text-pretty', className)} />
+    <Tag {...rest} className={clsx('font-heading text-balance', className)} />
   )
 }
