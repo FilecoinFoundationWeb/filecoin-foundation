@@ -36,7 +36,7 @@ export function SplitSectionContent({
           {descriptionArray.map((item, index) => (
             <p
               key={index}
-              className="font-sans text-lg/7 font-light text-pretty md:text-2xl/9"
+              className="text-lg/7 font-light text-pretty md:text-2xl/9"
             >
               {item}
             </p>
