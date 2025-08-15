@@ -19,10 +19,7 @@ export function NewsletterForm() {
   const error = formState.errors.email?.message
 
   return (
-    <form
-      className="flex flex-col gap-2 text-zinc-50"
-      onSubmit={handleSubmit(submitForm)}
-    >
+    <form className="flex flex-col gap-2" onSubmit={handleSubmit(submitForm)}>
       <Field>
         <Label className="form-label">Sign up for Filecoin updates</Label>
         <div className="relative flex items-center gap-4 pt-1">

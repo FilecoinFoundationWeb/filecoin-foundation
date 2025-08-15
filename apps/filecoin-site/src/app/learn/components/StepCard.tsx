@@ -33,7 +33,9 @@ export function StepCard({
       <Heading tag={headingTag} variant="card-heading">
         {title}
       </Heading>
-      <p className="text-xl text-zinc-600">{description}</p>
+      <p className="text-xl text-[var(--color-text-paragraph)]">
+        {description}
+      </p>
     </Tag>
   )
 }

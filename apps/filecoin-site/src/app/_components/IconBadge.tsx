@@ -13,8 +13,8 @@ const ICON_CONFIG = {
 } as const
 
 const VARIANTS = {
-  outline: 'border-brand-500 text-brand-500 bg-transparent',
-  filled: 'border-brand-700 bg-brand-700 text-zinc-50',
+  outline: 'border-brand-500 bg-transparent text-brand-500',
+  filled: 'border-brand-700 bg-brand-700 text-[var(--color-text-base)]',
 }
 
 export type IconBadgeProps = {

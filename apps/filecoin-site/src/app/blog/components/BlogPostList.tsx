@@ -84,9 +84,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
             numberRange={PAGINATION_INDEX_MAX_RANGE}
           />
         ) : (
-          <p className="text-center text-lg text-zinc-950">
-            No posts in this category
-          </p>
+          <p className="text-center text-lg">No posts in this category</p>
         )}
       </div>
     </div>

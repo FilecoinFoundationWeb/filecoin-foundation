@@ -23,12 +23,12 @@ export function SectionSubContent({
       <div className="max-w-2xl">
         <Heading
           tag={headingTag}
-          className="text-xl font-medium tracking-tighter text-pretty md:text-2xl"
+          className="text-xl font-medium tracking-tighter md:text-2xl"
         >
           {title}
         </Heading>
         {description && (
-          <p className="pt-6 text-lg/7 font-normal text-balance text-[var(--color-text-paragraph-muted)]">
+          <p className="pt-6 text-lg/7 text-pretty text-[var(--color-text-paragraph)]">
             {description}
           </p>
         )}

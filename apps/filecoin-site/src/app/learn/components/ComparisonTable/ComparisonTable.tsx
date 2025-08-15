@@ -9,7 +9,7 @@ import { Column } from './Column'
 
 export function ComparisonTable() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:divide-zinc-950/15">
+    <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:divide-[var(--color-border)]">
       <div className="order-3 md:order-1">
         <Column
           perspective="advantage"

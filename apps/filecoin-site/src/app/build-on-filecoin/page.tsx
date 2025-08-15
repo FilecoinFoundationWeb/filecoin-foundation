@@ -147,7 +147,7 @@ export default function BuildOnFilecoin() {
                   />
                 ))}
               </CardGrid>
-              <p className="-mb-12 text-center text-lg text-zinc-600">
+              <p className="-mb-12 text-center text-lg text-[var(--color-text-paragraph)]">
                 Have a block explorer to feature?
               </p>
             </>
