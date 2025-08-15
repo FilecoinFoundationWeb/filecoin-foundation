@@ -16,13 +16,14 @@ export type HeadingProps<T extends HeadingTag = HeadingTag> =
   | (BaseHeadingProps<T> & { className: string; variant?: never })
 
 const variants = {
-  'card-heading': 'font-heading text-xl font-medium',
-  'section-heading':
-    'font-heading text-3xl font-medium md:text-5xl md:leading-14',
+  'card-heading': 'text-xl font-medium',
+  'section-heading': 'text-3xl font-medium md:text-5xl md:leading-14',
 } as const
 
 export function Heading({ tag: Tag, variant, ...rest }: HeadingProps) {
   const className = variant ? variants[variant] : rest.className
 
-  return <Tag {...rest} className={clsx('text-pretty', className)} />
+  return (
+    <Tag {...rest} className={clsx('font-heading text-pretty', className)} />
+  )
 }

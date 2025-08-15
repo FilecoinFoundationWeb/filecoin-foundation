@@ -61,7 +61,7 @@ export function BlogPostHeader({
           <PostMetadata author={author} date={date} />
         </div>
 
-        <Heading tag="h1" className="font-heading text-4xl font-medium">
+        <Heading tag="h1" className="text-4xl font-medium">
           {title}
         </Heading>
       </BlogPostContainer>
