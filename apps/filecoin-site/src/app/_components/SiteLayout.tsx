@@ -3,6 +3,9 @@ import localFont from 'next/font/local'
 import { clsx } from 'clsx'
 
 import { BreakpointDebugger } from '@filecoin-foundation/ui/BreakpointDebugger'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+
+import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { Footer } from '@/components/Footer/Footer'
 
@@ -51,6 +54,9 @@ export function SiteLayout({ children }: SiteLayoutProps) {
         'antialiased',
       )}
     >
+      <head>
+        <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
+      </head>
       <body className="bg-white font-sans tracking-tight text-zinc-900">
         <main>{children}</main>
         <Footer />
