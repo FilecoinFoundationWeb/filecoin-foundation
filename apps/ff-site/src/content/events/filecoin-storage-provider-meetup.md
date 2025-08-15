@@ -15,7 +15,7 @@ location:
 start-date: 2025-09-30
 external-link: https://lu.ma/q1mi7n9y
 image:
-  src: /assets/images/sp-meetup-singapore-.avif
+  src: /assets/images/spmeetup_singapore.webp
 seo:
   title: SP Meetup Singapore – Filecoin Network Updates & Collaboration
   description: Join Filecoin storage providers in Singapore on Sept 30 for key
