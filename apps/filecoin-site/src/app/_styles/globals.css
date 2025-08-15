@@ -35,11 +35,9 @@
 
   --tracking-tight: -1%;
   --tracking-tighter: -2%;
-  --tracking-tightest: -3%;
 
   --tracking-wide: 1%;
   --tracking-wider: 2%;
-  --tracking-widest: 3%;
 }
 
 @theme inline {
