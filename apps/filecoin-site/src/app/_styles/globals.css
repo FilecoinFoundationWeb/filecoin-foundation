@@ -35,16 +35,13 @@
 
   --tracking-tight: -1%;
   --tracking-tighter: -2%;
-  --tracking-tightest: -3%;
 
   --tracking-wide: 1%;
   --tracking-wider: 2%;
-  --tracking-widest: 3%;
 }
 
 @theme inline {
   --font-sans: var(--font-funnel-sans);
-  --font-display: var(--font-funnel-display);
   --font-heading: var(--font-aspekta);
 }
 
@@ -120,7 +117,7 @@
 @layer components {
   /* BUTTON */
   .button {
-    @apply font-display rounded-full border-2 px-6 py-4 text-base tracking-wider;
+    @apply rounded-full border-2 px-6 py-4 text-base tracking-wide;
 
     &.button--primary {
       @apply relative border-transparent;
@@ -387,7 +384,7 @@
 
   /* LISTBOX BUTTON */
   .listbox-button {
-    @apply font-display relative w-full cursor-pointer border bg-white px-6 py-4 text-left tracking-wider;
+    @apply relative w-full cursor-pointer border bg-white px-6 py-4 text-left tracking-wide;
 
     &::before {
       background: var(--color-zinc-200) border-box;
@@ -480,7 +477,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply focus:brand-outline font-display font-normal tracking-wider no-underline hover:underline;
+    @apply focus:brand-outline tracking-wide no-underline hover:underline;
 
     .light-section & {
       @apply text-brand-800;
@@ -493,10 +490,10 @@
 
   /* TOOLTIP */
   .tooltip {
-    @apply rounded-xl border border-[var(--color-border)] bg-white shadow-sm;
+    @apply rounded-xl border border-zinc-200 bg-white shadow-sm;
 
     .tooltip-arrow {
-      @apply fill-zinc-300;
+      @apply fill-zinc-200;
     }
   }
 }

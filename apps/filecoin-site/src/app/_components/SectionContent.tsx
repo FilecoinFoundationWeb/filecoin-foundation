@@ -29,9 +29,7 @@ export function SectionContent({
           {title}
         </Heading>
         {description && (
-          <p className="pt-6 text-2xl leading-8 font-normal tracking-tight text-balance">
-            {description}
-          </p>
+          <p className="pt-6 text-2xl/8 text-pretty">{description}</p>
         )}
       </div>
       {children && (

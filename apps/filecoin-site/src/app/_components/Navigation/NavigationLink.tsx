@@ -53,7 +53,7 @@ export function NavigationLink({
       aria-label={`Go to ${label} page`}
       aria-current={isActive}
       className={clsx(
-        'font-display focus:brand-outline inline-block tracking-wider',
+        'focus:brand-outline inline-block font-medium',
         on === 'desktop' && desktopStyle,
         on === 'mobile' && mobileStyle,
       )}
