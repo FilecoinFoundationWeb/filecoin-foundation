@@ -477,7 +477,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply focus:brand-outline font-normal tracking-wide no-underline hover:underline;
+    @apply focus:brand-outline tracking-wide no-underline hover:underline;
 
     .light-section & {
       @apply text-brand-800;

@@ -12,12 +12,12 @@ export default function OfferStorageFormPage() {
         <div className="max-w-4xl">
           <Heading
             tag="h2"
-            className="font-heading text-5xl leading-14 font-medium tracking-tight"
+            className="font-heading text-5xl leading-14 font-medium"
           >
             Thanks for your interest in offering storage on the Filecoin
             network.
           </Heading>
-          <p className="pt-6 pb-25 text-xl leading-8 font-normal text-balance text-[var(--color-text-paragraph)]">
+          <p className="pt-6 pb-25 text-xl leading-8 text-balance text-[var(--color-text-paragraph)]">
             Please fill out this form below, and a member of the onboarding team
             will reach out to guide you through next steps in becoming a storage
             provider.
