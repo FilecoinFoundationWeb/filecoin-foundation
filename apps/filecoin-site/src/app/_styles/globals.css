@@ -490,7 +490,7 @@
 
   /* TOOLTIP */
   .tooltip {
-    @apply rounded-xl border border-[var(--color-border)] bg-white shadow-sm;
+    @apply rounded-xl border border-zinc-200 bg-white shadow-sm;
 
     .tooltip-arrow {
       @apply fill-zinc-300;
