@@ -21,9 +21,9 @@
     "@headlessui/react": "^2.2.7",
     "@headlessui/tailwindcss": "^0.2.2",
     "@phosphor-icons/react": "^2.1.10",
-    "@sentry/nextjs": "^10.4.0",
+    "@sentry/nextjs": "^10.5.0",
     "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/postcss": "^4.1.11",
+    "@tailwindcss/postcss": "^4.1.12",
     "@tailwindcss/typography": "^0.5.15",
     "clsx": "^2.1.1",
     "fast-glob": "^3.3.3",
@@ -38,7 +38,7 @@
     "remark-gfm": "^4.0.0",
     "remove-markdown": "^0.6.2",
     "schema-dts": "^1.1.5",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.1.12",
     "zod": "^4.0.17"
   },
   "devDependencies": {
@@ -49,13 +49,13 @@
     "@percy/cypress": "^3.1.6",
     "@svgr/webpack": "^8.1.0",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^24.2.1",
-    "@types/react": "19.1.9",
+    "@types/node": "^24.3.0",
+    "@types/react": "19.1.10",
     "@types/react-dom": "19.1.7",
     "cypress": "^14.5.4",
     "frontmatter-markdown-loader": "^3.7.0",
     "postcss": "^8.5.6",
-    "tsx": "^4.20.3",
+    "tsx": "^4.20.4",
     "typescript": "^5.9.2"
   }
 }

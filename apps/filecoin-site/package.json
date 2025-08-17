@@ -27,11 +27,11 @@
     "@filecoin-foundation/utils": "0.0.0",
     "@phosphor-icons/react": "^2.1.10",
     "@svgr/webpack": "^8.1.0",
-    "@tailwindcss/postcss": "^4.1.11",
-    "@types/node": "^24.2.1",
-    "@types/react": "19.1.9",
+    "@tailwindcss/postcss": "^4.1.12",
+    "@types/node": "^24.3.0",
+    "@types/react": "19.1.10",
     "@types/react-dom": "19.1.7",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.1.12",
     "typescript": "^5.9.2"
   }
 }
