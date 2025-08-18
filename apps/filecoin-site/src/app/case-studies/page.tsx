@@ -1,5 +1,7 @@
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
+import { PATHS } from '@/constants/paths'
+
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -11,8 +13,6 @@ import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { CASE_STUDIES_SEO } from './constants/seo'
 import { caseStudies } from './data/caseStudies'
 import { generateStructuredData } from './utils/generateStructuredData'
-
-import { PATHS } from '@/_constants/paths'
 
 export default function CaseStudies() {
   return (
