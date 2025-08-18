@@ -20,7 +20,6 @@ import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
-import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { StepCard } from './components/StepCard'
 import { LEARN_SEO } from './constants/seo'
@@ -46,7 +45,7 @@ export default function Learn() {
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="The authenticity layer of a more resilient internet"
-            description="Filecoin is the world's largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's most important information — free from centralized control."
+            description="Filecoin exists to decentralize the world’s information infrastructure, giving users control over their data and creating a more resilient, transparent, and equitable foundation for the internet."
             cta={
               <Button href={FILECOIN_URLS.docs} variant="primary">
                 Explore documentation
@@ -55,21 +54,6 @@ export default function Learn() {
           />
         </PageSection>
       </BackgroundImage>
-
-      <PageSection backgroundVariant="dark">
-        <SectionContent title="A robust foundation for humanity's most important information">
-          <SplitSectionContent
-            title="A decentralized, efficient, and robust protocol."
-            description={[
-              "Today, a handful of corporations control most of the world's data, creating centralized gatekeepers that limit transparency and introduce single points of failure.",
-              'Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, ensuring greater security and resilience.',
-              'Petabytes of data, from cultural archives to scientific research, are stored on the network, protected by cryptographic proofs and distributed across nodes worldwide. The decentralized model empowers users with true control over their information, building a more open and resilient foundation for the web.',
-            ]}
-          />
-
-          <SectionImage {...graphicsData.learnLibrarySection} />
-        </SectionContent>
-      </PageSection>
 
       <PageSection backgroundVariant="gray">
         <SectionContent title="Building a decentralized future">
