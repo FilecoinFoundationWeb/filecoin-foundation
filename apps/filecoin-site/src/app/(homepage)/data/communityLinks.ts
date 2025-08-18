@@ -1,7 +1,7 @@
 import {
-  BookIcon,
-  CodeIcon,
   GithubLogoIcon,
+  MapPinIcon,
+  MegaphoneIcon,
   SlackLogoIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
@@ -16,18 +16,18 @@ export const communityLinks: Array<LinkCardData> = [
     icon: SlackLogoIcon,
   },
   {
+    title: 'Attend a Filecoin event',
+    href: 'https://fil.org/events',
+    icon: MapPinIcon,
+  },
+  {
     title: 'Get involved on GitHub',
     href: FILECOIN_URLS.github,
     icon: GithubLogoIcon,
   },
   {
-    title: 'Explore the documentation',
-    href: FILECOIN_URLS.docs,
-    icon: BookIcon,
-  },
-  {
-    title: 'Join the Protocol Labs Developer Guild',
+    title: 'Become a Filecoin Orbit ambassador',
     href: 'https://www.pldg.xyz/',
-    icon: CodeIcon,
+    icon: MegaphoneIcon,
   },
 ]

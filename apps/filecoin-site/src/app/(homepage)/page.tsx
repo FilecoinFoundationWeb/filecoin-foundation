@@ -281,7 +281,7 @@ export default async function Home() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
-          title="Join the community"
+          title="Join a vibrant community"
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
           <CardGridContainer width="4xl">
