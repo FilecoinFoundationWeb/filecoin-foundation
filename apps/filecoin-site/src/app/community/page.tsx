@@ -1,4 +1,7 @@
+import Image from 'next/image'
+
 import clsx from 'clsx'
+// import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
 
@@ -9,6 +12,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
+import { ImageGrid } from '@/components/ImageGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
@@ -16,12 +20,14 @@ import { PageSection } from '@/components/PageSection'
 import { backgroundVariants } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
+import { SimpleCard } from '@/components/SimpleCard'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { COMMUNITY_SEO } from './constants/seo'
+import { communityConnectionImages } from './data/communityConnectionImages'
 import { communityConnections } from './data/communityConnections'
 import { ecosystemResources } from './data/ecosystemResources'
-import { getInvolvedOptions } from './data/getInvolvedOptions'
+import { getInvolvedWithCommunity } from './data/getInvolvedWithCommunity'
 
 export default function BuildOnFilecoin() {
   return (
@@ -50,10 +56,36 @@ export default function BuildOnFilecoin() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
+          title="Get involved"
+          description="Whether you want to contribute, connect or build, there’s a place for you in the Filecoin community."
+        >
+          <CardGridContainer width="6xl">
+            <CardGrid as="ul" variant="mdTwoWide">
+              {getInvolvedWithCommunity.map(({ title, description, cta }) => (
+                <SimpleCard
+                  key={title}
+                  as="li"
+                  title={title}
+                  description={description}
+                  cta={cta}
+                />
+              ))}
+            </CardGrid>
+          </CardGridContainer>
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="light">
+        <SectionContent
           title="Connect with the community"
           description="Connect with a vibrant network of developers building on Filecoin.
           Connect, collaborate, and grow with the ecosystem."
         >
+          <ImageGrid variant="oneMdThreeCollage">
+            {communityConnectionImages.map(({ data, alt }) => (
+              <Image key={alt} src={data} alt={alt} />
+            ))}
+          </ImageGrid>
           <CardGrid as="ul" variant="smTwoLgThreeTight">
             {communityConnections.map(({ title, description, href, icon }) => (
               <LinkCard
@@ -100,30 +132,6 @@ export default function BuildOnFilecoin() {
               />
             ))}
           </CardGrid>
-        </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="dark">
-        <SectionContent
-          title="Get involved"
-          description="Whether you're just getting started or looking to deepen your
-          contributions, there are many ways to get involved."
-        >
-          <CardGridContainer width="6xl">
-            <CardGrid as="ul" variant="mdTwoWide">
-              {getInvolvedOptions.map(({ title, description, href, icon }) => (
-                <LinkCard
-                  key={title}
-                  as="li"
-                  title={title}
-                  headingTag="h3"
-                  description={description}
-                  href={href}
-                  icon={{ component: icon, variant: 'filled' }}
-                />
-              ))}
-            </CardGrid>
-          </CardGridContainer>
         </SectionContent>
       </PageSection>
     </>
