@@ -92,6 +92,18 @@ export default function BuildOnFilecoin() {
 
       <PageSection backgroundVariant="light">
         <SectionContent
+          title="Built on Filecoin"
+          description="Discover tools and applications powered by Filecoin."
+          cta={
+            <Button href="https://fil.org/ecosystem-explorer" variant="primary">
+              Visit ecosystem explorer
+            </Button>
+          }
+        />
+      </PageSection>
+
+      <PageSection backgroundVariant="light">
+        <SectionContent
           title="Tutorials and guides"
           description="Learn the basics to start building with Filecoin."
         />
