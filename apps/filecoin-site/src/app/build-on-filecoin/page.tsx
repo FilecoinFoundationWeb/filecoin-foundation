@@ -21,7 +21,6 @@ import { SectionImage } from '@/components/SectionImage'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
-import { ecosystemResources } from '../community/data/ecosystemResources'
 import { getInvolvedOptions } from '../community/data/getInvolvedOptions'
 
 import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
@@ -128,25 +127,6 @@ export default function BuildOnFilecoin() {
               ))}
             </CardGrid>
           </CardGridContainer>
-        </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="light">
-        <SectionContent
-          title="Ecosystem resources"
-          description="Filecoin is open-source and community-driven. Explore groups advancing the protocol and building the tools that power its ecosystem."
-        >
-          <CardGrid as="ul" variant="lgTwo">
-            {ecosystemResources.map(({ title, description, cta, logo }) => (
-              <SimpleCardWithLogo
-                key={title}
-                title={title}
-                description={description}
-                cta={cta}
-                logo={logo}
-              />
-            ))}
-          </CardGrid>
         </SectionContent>
       </PageSection>
 
