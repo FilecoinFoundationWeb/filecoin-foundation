@@ -61,7 +61,7 @@ export default function ProvideStorage() {
         </PageSection>
       </BackgroundImage>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection backgroundVariant="light">
         <SectionContent
           title="What it takes to provide storage on Filecoin"
           description="Filecoin is open and permissionless, empowering anyone with the right infrastructure and expertise to participate. Storage providers are foundational to the network's mission, ensuring information stays safe, retrievable, and verifiable."
@@ -97,7 +97,7 @@ export default function ProvideStorage() {
                   <Heading tag="h4" variant="card-heading">
                     {title}
                   </Heading>
-                  <ul className="list-disc pl-4 text-xl text-zinc-400">
+                  <ul className="list-disc pl-4 text-xl text-zinc-600">
                     {list.map((item) => (
                       <li key={item}>{item}</li>
                     ))}
@@ -120,7 +120,7 @@ export default function ProvideStorage() {
                   <Heading tag="h4" variant="card-heading">
                     {title}
                   </Heading>
-                  <ul className="list-disc pl-4 text-xl text-zinc-400">
+                  <ul className="list-disc pl-4 text-xl text-zinc-600">
                     {list.map((item) => (
                       <li key={item}>{item}</li>
                     ))}
@@ -128,8 +128,6 @@ export default function ProvideStorage() {
                 </li>
               ))}
             </CardGrid>
-
-            <SectionImage {...graphicsData.provideStorageSection} />
           </SectionSubContent>
         </SectionContent>
       </PageSection>
@@ -170,6 +168,8 @@ export default function ProvideStorage() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
+        <SectionImage {...graphicsData.provideStorageSection} />
+
         <SectionContent
           title="Empower a more open and resilient web"
           description="As a Filecoin storage provider, you'll empower independent infrastructure, protect critical data without relying on centralized tech giants, and unlock new revenue streams—all while helping build a more open, resilient, and censorship-resistant internet."
