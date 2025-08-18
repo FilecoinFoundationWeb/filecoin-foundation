@@ -4,6 +4,7 @@ export type StaticPath =
   | '/'
   | '/blog'
   | '/build-on-filecoin'
+  | '/case-studies'
   | '/community'
   | '/offer-storage'
   | '/offer-storage/onboarding'
@@ -32,6 +33,7 @@ export const PATHS = {
     '/build-on-filecoin',
     'Build on Filecoin',
   ),
+  CASE_STUDIES: createPathConfig('/case-studies', 'Case Studies'),
   COMMUNITY: createPathConfig('/community', 'Community'),
   HOME: createPathConfig('/', 'Home'),
   OFFER_STORAGE: createPathConfig('/offer-storage', 'Offer Storage'),
