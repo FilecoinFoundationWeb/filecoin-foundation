@@ -15,10 +15,8 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
-import { SimpleCard } from '@/components/SimpleCard'
 
 import { LEARN_SEO } from './constants/seo'
-import { filecoinStackFeatures } from './data/filecoinStackFeatures'
 import { resilientInternetCta } from './data/resilientInternetCta'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -54,22 +52,6 @@ export default function Learn() {
 
 Instead of relying on a single company or data centre, Filecoin distributes data across a global marketplace of independent storage providers, secured by cryptographic proofs."
         />
-      </PageSection>
-
-      <PageSection backgroundVariant="gray">
-        <SectionContent title="What powers the Filecoin network">
-          <CardGrid as="ul" variant="smTwoLgThree">
-            {filecoinStackFeatures.map(({ title, description, cta }) => (
-              <SimpleCard
-                key={title}
-                as="li"
-                title={title}
-                description={description}
-                cta={cta}
-              />
-            ))}
-          </CardGrid>
-        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="dark">
