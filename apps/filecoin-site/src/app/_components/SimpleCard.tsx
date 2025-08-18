@@ -9,7 +9,7 @@ export type SimpleCardProps = {
   description: string
   as: 'li' | 'div'
   badge?: BadgeProps['children']
-  border?: keyof typeof borderClasses
+  border?: keyof typeof borderStyles
   cta?: {
     href: CTALinkProps['href']
     text: CTALinkProps['children']
@@ -22,7 +22,14 @@ export type SimpleCardData = {
   cta: NonNullable<SimpleCardProps['cta']>
 }
 
-const borderClasses = {
+const interactiveStyles = {
+  direct:
+    'focus-within:bg-[var(--color-bg-card-hover)] hover:bg-[var(--color-bg-card-hover)]',
+  delagated:
+    'group-focus-within:bg-[var(--color-bg-card-hover)] group-hover:bg-[var(--color-bg-card-hover)]',
+}
+
+const borderStyles = {
   none: 'border-none',
   all: 'border border-[var(--color-border)]',
   'only-top': 'border-t border-[var(--color-border)]',
@@ -41,9 +48,11 @@ export function SimpleCard({
   return (
     <Tag
       className={clsx(
-        'simple-card h-full w-full',
+        'group h-full w-full',
         cta && 'relative',
-        borderClasses[border],
+        borderStyles[border],
+        border === 'all' && interactiveStyles.direct,
+        border === 'none' && interactiveStyles.delagated,
       )}
     >
       <div
@@ -63,9 +72,11 @@ export function SimpleCard({
             hasOnlyTopBorder ? 'mb-6' : 'mb-12',
           )}
         >
-          <Heading tag="h3" variant="card-heading">
-            {title}
-          </Heading>
+          <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
+            <Heading tag="h3" variant="card-heading">
+              {title}
+            </Heading>
+          </span>
           <p className="tracking-tight text-[var(--color-text-paragraph-muted)]">
             {description}
           </p>
