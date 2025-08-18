@@ -109,13 +109,16 @@ export default async function Home() {
       <PageSection backgroundVariant="light">
         <SectionContent
           centerCTA
-          title="See how Filecoin storage stacks up"
+          title="How Filecoin storage stacks up"
           description="Compare decentralized object storage against the traditional cloud storage."
-          cta={
+          cta={[
             <Button href={PATHS.STORE_DATA.path} variant="primary">
-              Store on Filecoin
-            </Button>
-          }
+              Store data
+            </Button>,
+            <Button href="https://github.com/filecoin-project" variant="ghost">
+              Learn more
+            </Button>,
+          ]}
         >
           <ComparisonTable />
         </SectionContent>
