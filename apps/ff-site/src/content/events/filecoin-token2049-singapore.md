@@ -18,15 +18,51 @@ image:
 program:
   title: Events
   events:
-    - title: "Protocol Labs and Filecoin Network Hub"
+    - title: Protocol Labs and Filecoin Network Hub
       start-date: 2025-09-29
       end-date: 2025-10-03
       location: "JustCo – Marina Square (6 Raffles Blvd, #03-308 Marina Square,
         Singapore 039594)"
-    - title: "Filecoin SP Meetup"
+      external-link: https://lu.ma/ujdh0qh0
+    - title: Filecoin Storage Provider Meetup
       start-date: 2025-09-30
       location: "JustCo – Marina Square (6 Raffles Blvd, #03-308 Marina Square,
         Singapore 039594)"
+      external-link: https://lu.ma/q1mi7n9y
+speakers:
+  kicker: CONNECT WITH US
+  title: Meet the team
+  speakers_list:
+    - name: Clara Tsao
+      title: Founding Officer
+      company: Filecoin Foundation
+      linkedin: https://fil.org/events/fil-toronto-consensus-2025
+      image:
+        src: /assets/images/clara-tsao-davos.webp
+    - name: Yan Bo Ng
+      title: Strategic Partnerships Lead
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/ngyanbo/
+      image:
+        src: /assets/images/yan-bo.webp
+    - name: Qing Warthen
+      title: APAC Community and Ecosystem Growth Manager
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/qingwarthen/
+      image:
+        src: /assets/images/qing-warthen.jpg
+    - name: Paul Wagner
+      title: Data Onboarding
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/thpaulwagner/
+      image:
+        src: /assets/images/paul-wagner.webp
+    - name: Olivia Sigler
+      title: Events Manager
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/olivia-sigler-cmp-des-897a30190/
+      image:
+        src: /assets/images/olivia-sigler.webp
 seo:
   description: Meet the Filecoin community at TOKEN2049 in Singapore! Explore
     ecosystem updates, join events, and help shape the future of the

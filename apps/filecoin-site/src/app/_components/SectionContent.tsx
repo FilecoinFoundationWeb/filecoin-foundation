@@ -20,13 +20,16 @@ export function SectionContent({
   centerCTA,
 }: SectionContentProps) {
   return (
-    <div id={slugify(title.toString(), { lower: true })}>
+    <div
+      className="section-content"
+      id={slugify(title.toString(), { lower: true })}
+    >
       <div className="max-w-3xl">
-        <Heading tag="h2" variant="4xl-md6xl-medium">
+        <Heading tag="h2" variant="section-heading">
           {title}
         </Heading>
         {description && (
-          <p className="pt-6 text-xl leading-8 font-normal text-balance">
+          <p className="pt-6 text-2xl leading-8 font-normal tracking-tight text-balance">
             {description}
           </p>
         )}

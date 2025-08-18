@@ -25,8 +25,7 @@ export function SplitSectionContent({
       <div className="col-span-6 lg:col-span-2 lg:pr-8">
         <Heading
           tag="h3"
-          variant="lg-md2xl-medium"
-          className="split-section-heading-text"
+          className="font-display text-lg font-light tracking-wider text-balance text-[var(--color-text-heading-muted)] md:text-2xl"
         >
           {title}
         </Heading>
@@ -37,7 +36,7 @@ export function SplitSectionContent({
           {descriptionArray.map((item, index) => (
             <p
               key={index}
-              className="split-section-description-text text-lg/7 text-balance md:text-2xl/9"
+              className="font-sans text-lg/7 font-light tracking-tight text-balance md:text-2xl/9"
             >
               {item}
             </p>

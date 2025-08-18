@@ -12,10 +12,14 @@ export function LogoSection({ logos, title, tag = 'h2' }: LogoSectionProps) {
   return (
     <section
       className="logo-section flex flex-col items-center gap-15 md:gap-20 lg:items-start"
-      aria-labelledby={title ? 'logo-section-title' : undefined}
+      aria-labelledby={title && 'logo-section-title'}
     >
       {title && (
-        <Heading tag={tag} variant="lg-regular" id="logo-section-title">
+        <Heading
+          tag={tag}
+          className="text-xl font-normal text-[var(--color-text-paragraph-important)]"
+          id="logo-section-title"
+        >
           {title}
         </Heading>
       )}

@@ -2,15 +2,19 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { CardGrid } from '@/components/CardGrid'
 
+import { useCategoryState } from '../hooks/useCategoryState'
 import type { BlogPost } from '../types/blogPostType'
+import { postMatchesCategory } from '../utils/postMatchesCategory'
 
 import { BlogCard } from './BlogCard'
+import { BlogCategoryFilter } from './BlogCategoryFilter'
 
 type BlogPostListProps = {
   posts: Array<BlogPost>
@@ -23,14 +27,24 @@ export function BlogPostList({ posts }: BlogPostListProps) {
   const clientSearchParams = useSearchParams()
   const searchParams = Object.fromEntries(clientSearchParams.entries())
 
+  const [selectedCategory] = useCategoryState()
+
+  const { filteredEntries } = useFilter({
+    entries: posts,
+    filterQuery: selectedCategory,
+    filterFn: postMatchesCategory,
+  })
+
   const { pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
-    entries: posts,
+    entries: filteredEntries,
     entriesPerPage: BLOG_POSTS_PER_PAGE,
   })
 
   return (
-    <>
+    <div className="space-y-15">
+      <BlogCategoryFilter />
+
       <CardGrid as="ul" variant="mdTwo">
         {paginatedResults.map((post: BlogPost) => {
           const {
@@ -64,11 +78,17 @@ export function BlogPostList({ posts }: BlogPostListProps) {
       </CardGrid>
 
       <div className="mx-auto mt-20 max-w-2xl">
-        <Pagination
-          pageCount={pageCount}
-          numberRange={PAGINATION_INDEX_MAX_RANGE}
-        />
+        {filteredEntries.length > 0 ? (
+          <Pagination
+            pageCount={pageCount}
+            numberRange={PAGINATION_INDEX_MAX_RANGE}
+          />
+        ) : (
+          <p className="text-center text-lg text-zinc-950">
+            No posts in this category
+          </p>
+        )}
       </div>
-    </>
+    </div>
   )
 }

@@ -4,14 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run generate-rss && next build",
     "start": "next start",
-    "lint": "next lint --fix"
+    "lint": "next lint --fix",
+    "generate-rss": "tsx scripts/generateRSS.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
     "@phosphor-icons/react": "^2.1.10",
-    "next": "^15.4.5",
+    "feed": "^5.1.0",
+    "next": "^15.4.6",
     "nuqs": "^2.4.3",
     "postcss": "^8.5.6",
     "react": "^19.1.1",
@@ -26,7 +28,7 @@
     "@phosphor-icons/react": "^2.1.10",
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.1.11",
-    "@types/node": "^24.1.0",
+    "@types/node": "^24.2.1",
     "@types/react": "19.1.9",
     "@types/react-dom": "19.1.7",
     "tailwindcss": "^4.1.11",

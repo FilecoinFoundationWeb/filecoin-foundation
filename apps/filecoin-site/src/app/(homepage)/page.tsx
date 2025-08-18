@@ -69,7 +69,6 @@ export default async function Home() {
                   <LinkCard
                     key={title}
                     as="li"
-                    backgroundVariant="light"
                     title={title}
                     headingTag="h2"
                     description={description}
@@ -139,13 +138,11 @@ export default async function Home() {
             title="Secure, verifiable, long-term storage that you control."
             description="No matter what you're storing — your data remains tamper-proof and verifiable. Filecoin offers storage backed by a global network of independent data centers with automatic replication and lower egress fees."
             cta={[
-              <Button href={PATHS.STORE_DATA.path}>
+              <Button>
+                href={`${PATHS.STORE_DATA.path}#store-on-filecoin`}
                 Find storage solutions
               </Button>,
-              <Button
-                href={`${PATHS.STORE_DATA.path}#store-on-filecoin`}
-                variant="ghost"
-              >
+              <Button href={PATHS.STORE_DATA.path} variant="ghost">
                 Why store on Filecoin
               </Button>,
             ]}
@@ -178,7 +175,6 @@ export default async function Home() {
             {providerBenefits.map(({ title, description }) => (
               <Card
                 key={title}
-                backgroundVariant="dark"
                 as="li"
                 title={title}
                 description={description}
@@ -204,7 +200,6 @@ export default async function Home() {
               <Card
                 key={title}
                 as="li"
-                backgroundVariant="light"
                 title={title}
                 description={description}
                 icon={icon}
@@ -266,7 +261,6 @@ export default async function Home() {
                 <LinkCard
                   key={title}
                   as="li"
-                  backgroundVariant="dark"
                   title={title}
                   headingTag="h3"
                   href={href}

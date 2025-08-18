@@ -10,7 +10,10 @@ export default function OfferStorageFormPage() {
       <Navigation backgroundVariant="light" />
       <PageSection backgroundVariant="light">
         <div className="max-w-4xl">
-          <Heading tag="h2" variant="5xl-medium">
+          <Heading
+            tag="h2"
+            className="font-heading text-5xl leading-14 font-medium tracking-tight"
+          >
             Thanks for your interest in offering storage on the Filecoin
             network.
           </Heading>
