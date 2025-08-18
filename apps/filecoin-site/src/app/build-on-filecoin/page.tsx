@@ -97,29 +97,7 @@ export default function BuildOnFilecoin() {
         <SectionContent
           title="Tutorials and guides"
           description="Learn the basics to start building with Filecoin."
-        >
-          <SectionDivider />
-
-          <SectionSubContent headingTag="h3" title="Developer resources">
-            <CardGridContainer width="6xl">
-              <CardGrid as="ul" variant="mdTwoWide">
-                {developerResources.map(
-                  ({ title, description, href, icon }) => (
-                    <LinkCard
-                      key={title}
-                      as="li"
-                      title={title}
-                      headingTag="h3"
-                      description={description}
-                      href={href}
-                      icon={{ component: icon }}
-                    />
-                  ),
-                )}
-              </CardGrid>
-            </CardGridContainer>
-          </SectionSubContent>
-        </SectionContent>
+        />
       </PageSection>
 
       <PageSection backgroundVariant="dark">
@@ -134,6 +112,26 @@ export default function BuildOnFilecoin() {
         />
 
         <SectionImage {...graphicsData.buildOnFilecoinSection} />
+      </PageSection>
+
+      <PageSection backgroundVariant="gray">
+        <SectionContent title="Developer resources">
+          <CardGridContainer width="6xl">
+            <CardGrid as="ul" variant="mdTwoWide">
+              {developerResources.map(({ title, description, href, icon }) => (
+                <LinkCard
+                  key={title}
+                  as="li"
+                  title={title}
+                  headingTag="h3"
+                  description={description}
+                  href={href}
+                  icon={{ component: icon }}
+                />
+              ))}
+            </CardGrid>
+          </CardGridContainer>
+        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="gray">
