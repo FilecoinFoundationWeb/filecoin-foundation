@@ -17,13 +17,10 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
-import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
-import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
-import { communityConnections } from '../community/data/communityConnections'
 import { ecosystemResources } from '../community/data/ecosystemResources'
 import { getInvolvedOptions } from '../community/data/getInvolvedOptions'
 
@@ -131,28 +128,6 @@ export default function BuildOnFilecoin() {
               ))}
             </CardGrid>
           </CardGridContainer>
-        </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="gray">
-        <SectionContent
-          title="Connect with the community"
-          description="Connect with a vibrant network of developers building on Filecoin.
-          Connect, collaborate, and grow with the ecosystem."
-        >
-          <CardGrid as="ul" variant="smTwoLgThreeTight">
-            {communityConnections.map(({ title, description, href, icon }) => (
-              <LinkCard
-                key={title}
-                as="li"
-                title={title}
-                headingTag="h3"
-                description={description}
-                href={href}
-                icon={{ component: icon }}
-              />
-            ))}
-          </CardGrid>
         </SectionContent>
       </PageSection>
 
