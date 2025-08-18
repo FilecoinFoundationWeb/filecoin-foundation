@@ -133,23 +133,16 @@ export default async function Home() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <SectionContent title="Build apps better with resilient storage">
+        <SectionContent title="Open, scalable, and built for the future">
           <SplitSectionContent
-            title="Open. Scalable. Built for the future."
+            title="A decentralized, verifiable storage layer that scales."
             description={[
-              'Filecoin gives developers a decentralized, verifiable storage layer that scales — perfect for AI pipelines, dApps, data-heavy SaaS platforms, and more. Accelerate development with open source tools, native IPFS integration, cross-chain data bridges, and a permissionless storage marketplace.',
-              'Filecoin democratizes data infrastructure, so you can build without compromise — knowing your data belongs to you and your users, not centralized gatekeepers.',
+              'Filecoin gives developers a decentralized, verifiable storage layer that scales effortlessly. Power chain storage, dApps, data-heavy SaaS platforms, immutable archives, and beyond.',
+              'Accelerate development with open-source tools, native IPFS integration, cross-chain data bridges, and a permissionless storage marketplace. Build without compromise, knowing your data belongs to you and your users — not to centralized gatekeepers.',
             ]}
             cta={[
               <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="primary">
-                Explore builder's hub
-              </Button>,
-              <Button
-                href={FILECOIN_URLS.github}
-                variant="tertiary"
-                icon={GithubLogoIcon}
-              >
-                GitHub
+                Start building
               </Button>,
               <Button
                 href={FILECOIN_URLS.docs}
