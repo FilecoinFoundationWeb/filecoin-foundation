@@ -2,13 +2,13 @@ import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import type { SimpleCardData } from '@/components/SimpleCard'
 
-export type BlockExplorer = SimpleCardData & {
+export type TutorialsAndGuides = SimpleCardData & {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
 }
 
 const CTA_TEXT = 'Learn more'
 
-export const blockExplorers: Array<BlockExplorer> = [
+export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
   {
     title: 'Understand Filecoin basics',
     description:

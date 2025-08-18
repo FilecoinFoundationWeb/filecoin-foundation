@@ -28,11 +28,11 @@ import { SplitSectionContent } from '@/components/SplitSectionContent'
 import { getInvolvedOptions } from '../community/data/getInvolvedOptions'
 
 import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
-import { blockExplorers } from './data/blockExplorers'
 import { builtOnFilecoin } from './data/builtOnFilecoin'
 import { developerResources } from './data/developerResources'
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { getInvolvedImages } from './data/getInvolvedImages'
+import { tutorialsAndGuides } from './data/tutorialsAndGuides'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function BuildOnFilecoin() {
@@ -130,16 +130,18 @@ export default function BuildOnFilecoin() {
           description="Learn the basics to start building with Filecoin."
         >
           <CardGrid as="ul" variant="mdTwoWide">
-            {blockExplorers.map(({ title, description, cta, difficulty }) => (
-              <SimpleCard
-                key={title}
-                badge={difficulty}
-                as="li"
-                title={title}
-                description={description}
-                cta={cta}
-              />
-            ))}
+            {tutorialsAndGuides.map(
+              ({ title, description, cta, difficulty }) => (
+                <SimpleCard
+                  key={title}
+                  badge={difficulty}
+                  as="li"
+                  title={title}
+                  description={description}
+                  cta={cta}
+                />
+              ),
+            )}
           </CardGrid>
         </SectionContent>
       </PageSection>
