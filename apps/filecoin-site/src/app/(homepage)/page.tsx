@@ -56,26 +56,22 @@ export default async function Home() {
         <Navigation backgroundVariant="dark" />
         <Section backgroundVariant="dark">
           <Container>
-            <div className="pt-32 pb-24">
-              <Announcement href={PATHS.BLOG.path}>
+            <div className="space-y-15 pt-32 pb-24">
+              <Announcement centered href={PATHS.BLOG.path}>
                 Announcing Filecoin Onchain Cloud
               </Announcement>
               <PageHeader
+                centered
                 title="Preserve humanity's most important information"
                 description="Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control."
-                cta={
+                cta={[
                   <Button href={PATHS.STORE_DATA.path} variant="primary">
                     Store data
-                  </Button>
-                }
-                // cta={[
-                //   <Button href={PATHS.STORE_DATA.path} variant="primary">
-                //     Store data
-                //   </Button>,
-                //   <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
-                //     Start building
-                //   </Button>,
-                // ]}
+                  </Button>,
+                  <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
+                    Start building
+                  </Button>,
+                ]}
               />
             </div>
           </Container>
