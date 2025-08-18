@@ -1,6 +1,7 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import BuildpageGradient from '@/assets/graphics/build-gradient.svg'
+import caseStudies from '@/assets/graphics/casestudies.svg'
 import ClassicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
 import DataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import Diagram from '@/assets/graphics/diagram.webp'
@@ -76,5 +77,9 @@ export const graphicsData = {
   planetsShadow: {
     data: planetsShadow,
     alt: 'Planets casting shadows on each other',
+  },
+  caseStudies: {
+    data: caseStudies,
+    alt: 'Case studies page hero image',
   },
 } as const satisfies Record<string, StaticImageProps>
