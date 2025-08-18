@@ -9,12 +9,22 @@ import EarthGlobe from '@/assets/graphics/earth-globe.webp'
 import FilecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import FilecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import FilecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
+import HomepageGradient from '@/assets/graphics/homepage-gradient.svg'
 import ServerBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
+import BuildpageGradient from '@/assets/graphics/build-gradient.svg'
 
 export const graphicsData = {
+  homepageGradient: {
+    data: HomepageGradient,
+    alt: 'Gradient background for homepage',
+  },
   buildOnFilecoinHero: {
     data: DataCenterServerRow,
     alt: 'Row of server racks in a modern data center with blue LED lighting',
+  },
+  buildOnFilecoinGradient: {
+    data: BuildpageGradient,
+    alt: 'Gradient background for build on filecoin page',
   },
   buildOnFilecoinSection: {
     data: EarthFromSpaceAtNight,

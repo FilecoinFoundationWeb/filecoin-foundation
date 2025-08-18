@@ -7,7 +7,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -16,6 +15,7 @@ import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
@@ -33,24 +33,25 @@ export default function BuildOnFilecoin() {
       <StructuredDataScript
         structuredData={generateStructuredData(BUILD_ON_FILECOIN_SEO)}
       />
-      <BackgroundImage
-        overlayVariant="light"
-        src={graphicsData.buildOnFilecoinHero.data.src}
-        blurDataURL={graphicsData.buildOnFilecoinHero.data.blurDataURL}
-      >
-        <Navigation backgroundVariant="transparentDark" />
-        <PageSection backgroundVariant="transparentDark">
-          <PageHeader
-            title="Build on Filecoin: open, scalable, verifiable storage"
-            description="Scale storage like the cloud, own it like your code. Filecoin is open-source, self-hostable, and built on shared APIs running on permissionless infrastructure — giving developers performance, flexibility, and data sovereignty."
-            cta={
-              <Button href={FILECOIN_URLS.docs} variant="primary">
-                Explore documentation
-              </Button>
-            }
-          />
-        </PageSection>
-      </BackgroundImage>
+
+      <Navigation backgroundVariant="dark" />
+      <PageSection backgroundVariant="dark">
+        <PageHeader
+          title="Build on Filecoin: open, scalable, verifiable storage"
+          description="Scale storage like the cloud, own it like your code. Filecoin is open-source, self-hostable, and built on shared APIs running on permissionless infrastructure — giving developers performance, flexibility, and data sovereignty."
+          cta={
+            <Button href={FILECOIN_URLS.docs} variant="primary">
+              Explore documentation
+            </Button>
+          }
+        />
+      </PageSection>
+
+      <Section backgroundVariant="dark">
+        <div className="h-[480px] overflow-x-clip overflow-y-visible">
+          <graphicsData.buildOnFilecoinGradient.data className="relative -top-[100%] w-[200%] -translate-x-1/4 transform overflow-visible" />
+        </div>
+      </Section>
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Announcing Filecoin Onchain Cloud">
