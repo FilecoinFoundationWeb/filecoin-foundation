@@ -79,14 +79,26 @@ export default async function Home() {
         </Section>
       </BackgroundImage>
 
+      <PageSection backgroundVariant="dark">
+        <SectionContent title="Filecoin by the numbers" />
+      </PageSection>
+
       <PageSection backgroundVariant="light">
-        <SectionContent title="A robust foundation for humanity's most important information">
+        <SectionContent title="A robust foundation for humanity's information">
           <SplitSectionContent
             title="A decentralized, efficient, and robust protocol."
             description={[
-              "Today, a handful of corporations control most of the world's data, creating centralized gatekeepers that limit transparency and introduce single points of failure.",
+              "Filecoin is reshaping how the world stores data. Today, a handful of corporations control most of the world's data, creating centralized gatekeepers that limit transparency and introduce single points of failure.",
               'Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, ensuring greater security and resilience.',
               'Petabytes of data, from cultural archives to scientific research, are stored on the network, protected by cryptographic proofs and distributed across nodes worldwide. The decentralized model empowers users with true control over their information, building a more open and resilient foundation for the web.',
+            ]}
+            cta={[
+              <Button href={PATHS.STORE_DATA.path} variant="primary">
+                Store data
+              </Button>,
+              <Button href={PATHS.PROVIDE_STORAGE.path} variant="ghost">
+                Become a storage provider
+              </Button>,
             ]}
           />
 
