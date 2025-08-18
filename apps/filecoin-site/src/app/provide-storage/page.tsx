@@ -1,3 +1,5 @@
+import clsx from 'clsx'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
@@ -6,7 +8,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -14,6 +15,7 @@ import { Heading } from '@/components/Heading'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { backgroundVariants } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
@@ -33,10 +35,12 @@ export default function ProvideStorage() {
       <StructuredDataScript
         structuredData={generateStructuredData(PROVIDE_STORAGE_SEO)}
       />
-      <BackgroundImage
-        overlayVariant="dark"
-        src={graphicsData.provideStorageHero.data.src}
-        blurDataURL={graphicsData.provideStorageHero.data.blurDataURL}
+
+      <div
+        className={clsx(
+          'relative isolate overflow-x-clip',
+          backgroundVariants.dark,
+        )}
       >
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
@@ -48,17 +52,11 @@ export default function ProvideStorage() {
                 Book a call with the onboarding team
               </Button>
             }
-            // cta={
-            //   <Button
-            //     href={`${FILECOIN_URLS.docs}storage-providers/basics`}
-            //     variant="primary"
-            //   >
-            //     Explore documentation
-            //   </Button>
-            // }
           />
         </PageSection>
-      </BackgroundImage>
+
+        <graphicsData.planetsShadow.data className="-z-10 w-[125vw] -translate-x-1/12 transform overflow-visible py-4 sm:mx-auto sm:w-4/5 sm:py-16 lg:absolute lg:top-[20%] lg:-right-1/5 lg:mx-0 lg:w-[760px] lg:py-0 2xl:w-[860px]" />
+      </div>
 
       <PageSection backgroundVariant="dark">
         <SectionContent

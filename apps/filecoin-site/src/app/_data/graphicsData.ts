@@ -12,6 +12,7 @@ import FilecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import FilecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import FilecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
 import HomepageGradient from '@/assets/graphics/homepage-gradient.svg'
+import planetsShadow from '@/assets/graphics/planets-shadow.svg'
 import ServerBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
 import starsSpinning from '@/assets/graphics/stars-spinning.webp'
 
@@ -71,5 +72,9 @@ export const graphicsData = {
   starsSpinning: {
     data: starsSpinning,
     alt: 'Stars spinning in space',
+  },
+  planetsShadow: {
+    data: planetsShadow,
+    alt: 'Planets casting shadows on each other',
   },
 } as const satisfies Record<string, StaticImageProps>
