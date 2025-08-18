@@ -1,5 +1,3 @@
-import { Suspense } from 'react'
-
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
@@ -19,7 +17,6 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 
-import { StorageProviderList } from './components/StorageProviderList'
 import { STORE_DATA_SEO } from './constants/seo'
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -85,12 +82,6 @@ export default function StoreData() {
           title="Store on Filecoin"
           description="Find the perfect storage solution for your data on Filecoin."
         />
-
-        <div className="mt-20">
-          <Suspense>
-            <StorageProviderList />
-          </Suspense>
-        </div>
       </PageSection>
 
       <PageSection backgroundVariant="gray">
