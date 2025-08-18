@@ -54,6 +54,22 @@ Instead of relying on a single company or data centre, Filecoin distributes data
         />
       </PageSection>
 
+      <PageSection backgroundVariant="light">
+        <SectionContent
+          centerCTA
+          title="What is Filecoin used for?"
+          description="Whether you're backing up a petabyte or building a next-gen application, Filecoin offers verifiable, decentralized storage at scale."
+          cta={[
+            <Button href={PATHS.CASE_STUDIES.path} variant="primary">
+              Explore case studies
+            </Button>,
+            <Button href={PATHS.STORE_DATA.path} variant="ghost">
+              Store data
+            </Button>,
+          ]}
+        />
+      </PageSection>
+
       <PageSection backgroundVariant="gray">
         <SectionContent
           title="Learn about the Filecoin protocol"
