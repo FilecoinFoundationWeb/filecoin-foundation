@@ -30,7 +30,6 @@ import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { communityLinks } from './data/communityLinks'
-import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
 import { providerBenefits } from './data/providerBenefits'
 import { resilientWebLogos } from './data/resilientWebLogos'
@@ -53,29 +52,28 @@ export default async function Home() {
         src={graphicsData.homepageHero.data.src}
         blurDataURL={graphicsData.homepageHero.data.blurDataURL}
       >
-        <Navigation backgroundVariant="transparent" />
-        <Section backgroundVariant="transparent">
+        <Navigation backgroundVariant="dark" />
+        <Section backgroundVariant="dark">
           <Container>
             <div className="pt-32 pb-24">
+              <span>Announcing Filecoin Onchain Cloud</span>
               <PageHeader
-                title="Preserving humanity's most important information"
-                description="Keep your data accessible, verifiable, and free from centralized control with the world’s largest decentralized storage network."
+                title="Preserve humanity's most important information"
+                description="Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control."
+                cta={
+                  <Button href={PATHS.STORE_DATA.path} variant="primary">
+                    Store data
+                  </Button>
+                }
+                // cta={[
+                //   <Button href={PATHS.STORE_DATA.path} variant="primary">
+                //     Store data
+                //   </Button>,
+                //   <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
+                //     Start building
+                //   </Button>,
+                // ]}
               />
-            </div>
-            <div className="pb-60">
-              <CardGrid as="ul" variant="smTwoLgThreeTight">
-                {networkActions.map(({ title, description, href, icon }) => (
-                  <LinkCard
-                    key={title}
-                    as="li"
-                    title={title}
-                    headingTag="h2"
-                    description={description}
-                    href={href}
-                    icon={{ component: icon }}
-                  />
-                ))}
-              </CardGrid>
             </div>
           </Container>
         </Section>
