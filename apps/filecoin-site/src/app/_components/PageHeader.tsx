@@ -1,36 +1,51 @@
-import { Button } from '@/components/Button'
+import { clsx } from 'clsx'
+
 import { Heading, type HeadingProps } from '@/components/Heading'
 import { Kicker, type KickerProps } from '@/components/Kicker'
+
+import { ButtonRow, type ButtonRowProps } from './ButtonRow'
 
 type PageHeaderProps = {
   title: HeadingProps['children']
   kicker?: KickerProps['children']
   description?: string
-  cta?: React.ReactElement<typeof Button>
+  centered?: boolean
+  cta?: ButtonRowProps['buttons']
 }
 
 export function PageHeader({
   title,
   kicker,
   description,
+  centered,
   cta,
 }: PageHeaderProps) {
   return (
-    <header className="page-header">
-      <div className="flex max-w-3xl flex-col gap-6">
+    <header>
+      <div
+        className={clsx(
+          'flex max-w-3xl flex-col gap-6 text-balance',
+          centered && 'mx-auto text-center',
+        )}
+      >
         {kicker && <Kicker size="md">{kicker}</Kicker>}
+
         <Heading tag="h1" variant="section-heading">
           {title}
         </Heading>
 
         {description && (
-          <p className="font-sans tracking-tighter text-pretty text-[var(--color-text-paragraph-important)] md:text-xl">
+          <p className="font-sans tracking-tighter text-pretty text-[var(--color-text-paragraph-muted)] md:text-xl">
             {description}
           </p>
         )}
       </div>
 
-      {cta && <div className="mt-10 grid md:block">{cta}</div>}
+      {cta && (
+        <div className="mt-10">
+          <ButtonRow buttons={cta} centered={centered} />
+        </div>
+      )}
     </header>
   )
 }
