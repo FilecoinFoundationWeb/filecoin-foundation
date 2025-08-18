@@ -1,4 +1,4 @@
-export const OFFER_STORAGE_SEO = {
+export const PROVIDE_STORAGE_SEO = {
   title:
     'Become a Filecoin Storage Provider | Earn Rewards in Decentralized Network',
   description:

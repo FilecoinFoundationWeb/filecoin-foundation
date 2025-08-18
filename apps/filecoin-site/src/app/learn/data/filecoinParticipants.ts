@@ -17,7 +17,7 @@ export const filecoinParticipants: Array<SimpleCardData> = [
     description:
       'Contribute storage capacity to the network and are rewarded for reliably storing and maintaining data.',
     cta: {
-      href: PATHS.OFFER_STORAGE.path,
+      href: PATHS.PROVIDE_STORAGE.path,
       text: 'Become a storage provider',
     },
   },

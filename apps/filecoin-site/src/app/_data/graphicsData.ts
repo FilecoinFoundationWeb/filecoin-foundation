@@ -40,11 +40,11 @@ export const graphicsData = {
     data: Diagram,
     alt: 'Three concentric circles of decreasing size, outlined in black on a white background.',
   },
-  offerStorageHero: {
+  provideStorageHero: {
     data: FilecoinMiningRig,
     alt: 'Filecoin mining rig with multiple graphics cards and cooling systems',
   },
-  offerStorageSection: {
+  provideStorageSection: {
     data: FilecoinStorageDevice,
     alt: 'Filecoin storage device with hard drives and cooling fans',
   },

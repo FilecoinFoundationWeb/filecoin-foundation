@@ -11,15 +11,15 @@ import { ControlledFormTextarea } from '@filecoin-foundation/ui/FormTextarea'
 import { Button } from '@/components/Button'
 
 import {
-  OfferStorageFormSchema,
-  type OfferStorageFormData,
-} from '../../schema/OfferStorageFormSchema'
+  ProvideStorageFormSchema,
+  type ProvideStorageFormData,
+} from '../../schema/ProvideStorageFormSchema'
 
-import { OfferStoragePrivacyDisclaimer } from './OfferStoragePrivacyDisclaimer'
+import { ProvideStoragePrivacyDisclaimer } from './ProvideStoragePrivacyDisclaimer'
 
-export function OfferStorageForm() {
-  const form = useForm<OfferStorageFormData>({
-    resolver: zodResolver(OfferStorageFormSchema),
+export function ProvideStorageForm() {
+  const form = useForm<ProvideStorageFormData>({
+    resolver: zodResolver(ProvideStorageFormSchema),
     defaultValues: {
       communicationOptIn: false,
     },
@@ -28,20 +28,20 @@ export function OfferStorageForm() {
   const isSubmitting = form.formState.isSubmitting
 
   return (
-    <ControlledForm<OfferStorageFormData>
+    <ControlledForm<ProvideStorageFormData>
       form={form}
       className="space-y-15"
       onSubmit={(data) => console.log(data)}
     >
       <div className="space-y-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-          <ControlledFormInput<OfferStorageFormData>
+          <ControlledFormInput<ProvideStorageFormData>
             name="firstName"
             label="First name"
             placeholder="Alex"
             disabled={isSubmitting}
           />
-          <ControlledFormInput<OfferStorageFormData>
+          <ControlledFormInput<ProvideStorageFormData>
             name="lastName"
             label="Last name"
             placeholder="Smith"
@@ -49,7 +49,7 @@ export function OfferStorageForm() {
           />
         </div>
 
-        <ControlledFormInput<OfferStorageFormData>
+        <ControlledFormInput<ProvideStorageFormData>
           name="businessEmail"
           label="Business email address"
           type="email"
@@ -57,14 +57,14 @@ export function OfferStorageForm() {
           disabled={isSubmitting}
         />
 
-        <ControlledFormInput<OfferStorageFormData>
+        <ControlledFormInput<ProvideStorageFormData>
           name="companyName"
           label="Company name"
           placeholder="Company Co"
           disabled={isSubmitting}
         />
 
-        <ControlledFormTextarea<OfferStorageFormData>
+        <ControlledFormTextarea<ProvideStorageFormData>
           addOptionalToLabel
           name="additionalInfo"
           label="Additional information"
@@ -74,9 +74,9 @@ export function OfferStorageForm() {
       </div>
 
       <div className="space-y-8">
-        <OfferStoragePrivacyDisclaimer />
+        <ProvideStoragePrivacyDisclaimer />
 
-        <ControlledFormCheckbox<OfferStorageFormData>
+        <ControlledFormCheckbox<ProvideStorageFormData>
           name="communicationOptIn"
           label="I agree to receive other communications from Filecoin Foundation. You may unsubscribe from these communications at any time."
         />

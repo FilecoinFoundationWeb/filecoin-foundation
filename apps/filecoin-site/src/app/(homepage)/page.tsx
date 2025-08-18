@@ -141,7 +141,7 @@ export default async function Home() {
           title="Power a more open, resilient web"
           description="Join a global network of independent storage providers powering the Filecoin ecosystem."
           cta={[
-            <Button href={PATHS.OFFER_STORAGE.path} variant="primary">
+            <Button href={PATHS.PROVIDE_STORAGE.path} variant="primary">
               Become a storage provider
             </Button>,
             <Button

@@ -27,7 +27,7 @@ export const networkActions: Array<LinkCardData> = [
     title: 'Become a storage provider',
     description:
       'Connect your data center to global, decentralized infrastructure open to everyone.',
-    href: PATHS.OFFER_STORAGE.path,
+    href: PATHS.PROVIDE_STORAGE.path,
     icon: DatabaseIcon,
   },
 ]

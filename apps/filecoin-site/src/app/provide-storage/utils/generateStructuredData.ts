@@ -13,7 +13,7 @@ export function generateStructuredData(
   const baseData = generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
-    path: PATHS.OFFER_STORAGE.path,
+    path: PATHS.PROVIDE_STORAGE.path,
   })
 
   return {

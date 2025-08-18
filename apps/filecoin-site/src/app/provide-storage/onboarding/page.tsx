@@ -2,9 +2,9 @@ import { Heading } from '@/components/Heading'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
-import { OfferStorageForm } from './components/OfferStorageForm'
+import { ProvideStorageForm } from './components/ProvideStorageForm'
 
-export default function OfferStorageFormPage() {
+export default function ProvideStorageFormPage() {
   return (
     <>
       <Navigation backgroundVariant="light" />
@@ -23,7 +23,7 @@ export default function OfferStorageFormPage() {
             provider.
           </p>
 
-          <OfferStorageForm />
+          <ProvideStorageForm />
         </div>
       </PageSection>
     </>

@@ -21,23 +21,23 @@ import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 
-import { OFFER_STORAGE_SEO } from './constants/seo'
+import { PROVIDE_STORAGE_SEO } from './constants/seo'
 import { coreInfrastructureSpecs } from './data/coreInfrastructureSpecs'
 import { dataCenterRequirements } from './data/dataCenterRequirements'
 import { filecoinEarningsInsights } from './data/filecoinEarningsInsights'
 import { specializedInfrastructureSpecs } from './data/specializedInfrastructureSpecs'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-export default function OfferStorage() {
+export default function ProvideStorage() {
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(OFFER_STORAGE_SEO)}
+        structuredData={generateStructuredData(PROVIDE_STORAGE_SEO)}
       />
       <BackgroundImage
         overlayVariant="dark"
-        src={graphicsData.offerStorageHero.data.src}
-        blurDataURL={graphicsData.offerStorageHero.data.blurDataURL}
+        src={graphicsData.provideStorageHero.data.src}
+        blurDataURL={graphicsData.provideStorageHero.data.blurDataURL}
       >
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
@@ -58,7 +58,7 @@ export default function OfferStorage() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
-          title="What it takes to offer storage on Filecoin"
+          title="What it takes to provide storage on Filecoin"
           description="Filecoin is open and permissionless, empowering anyone with the right infrastructure and expertise to participate. Storage providers are foundational to the network's mission, ensuring information stays safe, retrievable, and verifiable."
         >
           <SectionSubContent
@@ -124,7 +124,7 @@ export default function OfferStorage() {
               ))}
             </CardGrid>
 
-            <SectionImage {...graphicsData.offerStorageSection} />
+            <SectionImage {...graphicsData.provideStorageSection} />
           </SectionSubContent>
         </SectionContent>
       </PageSection>
@@ -135,7 +135,7 @@ export default function OfferStorage() {
           description="If you already operate enterprise-grade infrastructure—or plan to—Filecoin offers a scalable path to meaningful, global impact."
           cta={
             <Button
-              href={PATHS.OFFER_STORAGE_ONBOARDING.path}
+              href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
               variant="primary"
             >
               Book a call with the onboarding team
@@ -170,7 +170,7 @@ export default function OfferStorage() {
           description="As a Filecoin storage provider, you'll empower independent infrastructure, protect critical data without relying on centralized tech giants, and unlock new revenue streams—all while helping build a more open, resilient, and censorship-resistant internet."
           cta={
             <Button
-              href={PATHS.OFFER_STORAGE_ONBOARDING.path}
+              href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
               variant="primary"
             >
               Book a call with the onboarding team
@@ -183,7 +183,7 @@ export default function OfferStorage() {
 }
 
 export const metadata = createMetadata({
-  title: { absolute: OFFER_STORAGE_SEO.title },
-  description: OFFER_STORAGE_SEO.description,
-  path: PATHS.OFFER_STORAGE.path,
+  title: { absolute: PROVIDE_STORAGE_SEO.title },
+  description: PROVIDE_STORAGE_SEO.description,
+  path: PATHS.PROVIDE_STORAGE.path,
 })
