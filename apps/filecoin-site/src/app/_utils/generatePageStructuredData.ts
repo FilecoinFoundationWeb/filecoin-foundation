@@ -4,7 +4,7 @@ import type { WebPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 import type { StructuredDataParams } from '@filecoin-foundation/utils/types/structuredDataParams'
 
-import { type PathValues } from '@/constants/paths'
+import { type StaticPath } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import {
   STRUCTURED_DATA_IDS,
@@ -13,10 +13,10 @@ import {
 
 import { generateBreadcrumbList } from './generateBreadcrumbsList'
 
-type PageType = 'WebPage' | 'CollectionPage'
+export type PageType = 'WebPage' | 'CollectionPage'
 
 type GenerateWebPageStructuredDataProps = StructuredDataParams & {
-  path: PathValues
+  path: StaticPath
   pageType: PageType
   about?: Array<{ '@type': 'Thing'; name: string }>
 }
@@ -28,12 +28,10 @@ export function generatePageStructuredData({
   pageType,
   about,
 }: GenerateWebPageStructuredDataProps): WebPageGraph {
-  const fullUrl = `${BASE_URL}${path}`
-
   const pageSchema: WebPage = {
     '@type': pageType,
     '@id': STRUCTURED_DATA_IDS.getPageId(path, pageType),
-    url: fullUrl,
+    url: `${BASE_URL}${path}`,
     name: title,
     description,
     ...(about && { about }),

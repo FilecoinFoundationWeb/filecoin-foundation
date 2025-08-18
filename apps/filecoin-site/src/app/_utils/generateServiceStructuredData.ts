@@ -4,7 +4,7 @@ import type { ServicePageGraph } from '@filecoin-foundation/ui/StructuredDataScr
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 import type { StructuredDataParams } from '@filecoin-foundation/utils/types/structuredDataParams'
 
-import type { PathValues } from '@/constants/paths'
+import type { StaticPath } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
@@ -21,7 +21,7 @@ export type ServiceDetails = {
 }
 
 type ServiceProps = StructuredDataParams & {
-  path: PathValues
+  path: StaticPath
   service: ServiceDetails
 }
 
@@ -31,14 +31,12 @@ export function generateServiceStructuredData({
   path,
   service,
 }: ServiceProps): ServicePageGraph {
-  const fullUrl = `${BASE_URL}${path}`
-
   const pageSchema: Service = {
     '@type': 'Service',
     '@id': STRUCTURED_DATA_IDS.getServiceId(path),
     serviceType: service.serviceType,
     name: title,
-    url: fullUrl,
+    url: `${BASE_URL}${path}`,
     provider: service.provider,
     areaServed: service.areaServed,
     description,

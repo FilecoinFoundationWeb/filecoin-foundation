@@ -26,12 +26,10 @@ export function generateBlogPostStructuredData({
   datePublished,
   dateModified,
 }: GenerateBlogPostStructuredDataProps): BlogPostPageGraph {
-  const fullUrl = `${BASE_URL}${path}`
-
   const blogPost: BlogPosting = {
     '@type': 'BlogPosting',
     '@id': STRUCTURED_DATA_IDS.getBlogPostId(path),
-    mainEntityOfPage: fullUrl,
+    mainEntityOfPage: `${BASE_URL}${path}`,
     headline,
     description,
     ...(image && { image }),

@@ -10,7 +10,7 @@ import { generateBlogStructuredData } from './generateBlogStructuredData'
 
 export function generateStructuredData(
   seo: StructuredDataParams,
-  sortedPosts: BlogPost[],
+  sortedPosts: Array<BlogPost>,
 ): BlogPageGraph {
   return generateBlogStructuredData({
     path: PATHS.BLOG.path,

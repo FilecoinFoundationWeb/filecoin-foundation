@@ -23,14 +23,11 @@ export function generateBlogStructuredData({
   name,
   items = [],
 }: GenerateBlogStructuredDataProps): BlogPageGraph {
-  const fullUrl = `${BASE_URL}${path}`
-  const blogId = `${fullUrl}#blog`
-
   const blog: Blog = {
     '@type': 'Blog',
-    '@id': blogId,
+    '@id': STRUCTURED_DATA_IDS.BLOG,
     name,
-    url: fullUrl,
+    url: `${BASE_URL}${path}`,
     publisher: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
   }
 

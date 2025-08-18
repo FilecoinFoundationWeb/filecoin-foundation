@@ -15,15 +15,17 @@ import {
   ORGANIZATION_NAME,
 } from '@/constants/siteMetadata'
 
-import { PATHS, type PathValues } from './paths'
+import type { PageType } from '@/utils/generatePageStructuredData'
+
+import { PATHS, type StaticPath } from './paths'
 
 export const STRUCTURED_DATA_IDS = {
   ORGANIZATION: `${BASE_URL}/#org`,
   WEBSITE: `${BASE_URL}/#website`,
-  BLOG: `${BASE_URL}/${PATHS.BLOG.path}#blog`,
-  getServiceId: (path: PathValues) => `${BASE_URL}${path}#service`,
+  BLOG: `${BASE_URL}${PATHS.BLOG.path}#blog`,
+  getServiceId: (path: StaticPath) => `${BASE_URL}${path}#service`,
   getBlogPostId: (path: string) => `${BASE_URL}${path}#post`,
-  getPageId: (path: PathValues, type: 'WebPage' | 'CollectionPage') =>
+  getPageId: (path: StaticPath, type: PageType) =>
     `${BASE_URL}${path}#${type === 'CollectionPage' ? 'page' : 'webpage'}`,
 } as const
 
@@ -40,14 +42,14 @@ const CONTACT_POINTS: Array<ContactPoint> = [
     email: FILECOIN_FOUNDATION_URLS.emails.devgrants,
     areaServed: 'Global',
   },
-] as const
+]
 
 const LOGO_SCHEMA: ImageObject = {
   '@type': 'ImageObject',
   url: `${BASE_URL}/assets/logos/filecoin-logo-full.svg`,
   width: '512',
   height: '512',
-} as const
+}
 
 export const WEBSITE_SCHEMA: WebSite = {
   '@type': 'WebSite',
@@ -55,7 +57,7 @@ export const WEBSITE_SCHEMA: WebSite = {
   url: BASE_URL,
   name: ORGANIZATION_NAME,
   publisher: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
-} as const
+}
 
 export const FILECOIN_ORGANIZATION_SCHEMA: Organization = {
   '@type': 'Organization',
@@ -71,7 +73,7 @@ export const FILECOIN_ORGANIZATION_SCHEMA: Organization = {
   ],
   contactPoint: CONTACT_POINTS,
   logo: LOGO_SCHEMA,
-} as const
+}
 
 export const ORGANIZATION_SCHEMA_BASE: OrganizationGraph = {
   '@context': SCHEMA_CONTEXT_URL,

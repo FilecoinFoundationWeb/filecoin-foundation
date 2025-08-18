@@ -17,4 +17,4 @@ export const SERVICE_STRUCTURED_DATA: ServiceDetails = {
     '@type': 'Offer',
     url: `${BASE_URL}${PATHS.OFFER_STORAGE.path}`,
   },
-} as const
+}

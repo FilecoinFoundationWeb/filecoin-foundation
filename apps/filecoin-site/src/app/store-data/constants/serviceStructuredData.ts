@@ -18,4 +18,4 @@ export const SERVICE_STRUCTURED_DATA: ServiceDetails = {
     },
     url: `${BASE_URL}${PATHS.STORE_DATA.path}`,
   },
-} as const
+}
