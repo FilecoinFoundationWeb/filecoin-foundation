@@ -8,7 +8,7 @@ const errorMessages = {
   businessEmailRequired: 'Your company email is required',
 } as const
 
-export const OfferStorageFormSchema = z.object({
+export const ProvideStorageFormSchema = z.object({
   firstName: z
     .string({ error: errorMessages.firstNameRequired })
     .min(1, { error: errorMessages.firstNameRequired }),
@@ -25,4 +25,4 @@ export const OfferStorageFormSchema = z.object({
   communicationOptIn: z.boolean(),
 })
 
-export type OfferStorageFormData = z.infer<typeof OfferStorageFormSchema>
+export type ProvideStorageFormData = z.infer<typeof ProvideStorageFormSchema>
