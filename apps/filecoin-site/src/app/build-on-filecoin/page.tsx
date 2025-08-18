@@ -21,7 +21,6 @@ import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
-import { SimpleCardWithGradient } from '@/components/SimpleCardWithGradient'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
@@ -33,7 +32,6 @@ import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
 import { blockExplorers } from './data/blockExplorers'
 import { developerResources } from './data/developerResources'
 import { filecoinFeatures } from './data/filecoinFeatures'
-import { filecoinTools } from './data/filecoinTools'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function BuildOnFilecoin() {
@@ -99,26 +97,9 @@ export default function BuildOnFilecoin() {
 
       <PageSection backgroundVariant="light">
         <SectionContent
-          title="Useful tools for builders"
-          description="Accelerate development with Filecoin's ecosystem tools."
+          title="Tutorials and guides"
+          description="Learn the basics to start building with Filecoin."
         >
-          <SectionSubContent headingTag="h3" title="Getting started">
-            <CardGrid as="ul" variant="smTwoLgThree">
-              {filecoinTools.map(
-                ({ title, description, difficulty, cta }, index) => (
-                  <SimpleCardWithGradient
-                    key={title}
-                    title={title}
-                    description={description}
-                    cta={cta}
-                    badge={difficulty}
-                    gradientIndex={index}
-                  />
-                ),
-              )}
-            </CardGrid>
-          </SectionSubContent>
-
           <SectionDivider />
 
           <SectionSubContent headingTag="h3" title="Developer resources">
