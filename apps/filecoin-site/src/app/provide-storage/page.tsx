@@ -60,6 +60,26 @@ export default function ProvideStorage() {
         </PageSection>
       </BackgroundImage>
 
+      <PageSection backgroundVariant="dark">
+        <SectionContent
+          title="Optimize your storage potential"
+          description="The Filecoin Network rewards storage providers through a self-sustaining marketplace designed for long-term commitment and resilience."
+        >
+          <CardGrid as="ul" variant="lgThree">
+            {filecoinEarningsInsights.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                as="li"
+                border="only-top"
+                title={title}
+                description={description}
+                cta={cta}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
+      </PageSection>
+
       <PageSection backgroundVariant="light">
         <SectionContent
           title="What it takes to provide storage on Filecoin"
@@ -128,26 +148,6 @@ export default function ProvideStorage() {
               ))}
             </CardGrid>
           </SectionSubContent>
-        </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="light">
-        <SectionContent
-          title="Optimize your storage potential"
-          description="The Filecoin Network rewards storage providers through a self-sustaining marketplace designed for long-term commitment and resilience."
-        >
-          <CardGrid as="ul" variant="lgThree">
-            {filecoinEarningsInsights.map(({ title, description, cta }) => (
-              <SimpleCard
-                key={title}
-                as="li"
-                border="only-top"
-                title={title}
-                description={description}
-                cta={cta}
-              />
-            ))}
-          </CardGrid>
         </SectionContent>
       </PageSection>
 
