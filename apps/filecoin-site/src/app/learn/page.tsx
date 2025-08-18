@@ -9,7 +9,6 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -26,7 +25,6 @@ import { LEARN_SEO } from './constants/seo'
 import { filecoinParticipants } from './data/filecoinParticipants'
 import { filecoinStackFeatures } from './data/filecoinStackFeatures'
 import { filecoinStorageFlow } from './data/filecoinStorageFlow'
-import { filecoinValues } from './data/filecoinValues'
 import { resilientInternetCta } from './data/resilientInternetCta'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -55,20 +53,13 @@ export default function Learn() {
         </PageSection>
       </BackgroundImage>
 
-      <PageSection backgroundVariant="gray">
-        <SectionContent title="Building a decentralized future">
-          <CardGrid as="ul" variant="lgTwoWide">
-            {filecoinValues.map(({ title, description, icon }) => (
-              <Card
-                key={title}
-                as="li"
-                title={title}
-                description={description}
-                icon={icon}
-              />
-            ))}
-          </CardGrid>
-        </SectionContent>
+      <PageSection backgroundVariant="dark">
+        <SectionContent
+          title="What is Filecoin?"
+          description="Filecoin is a decentralized storage network where users can store, retrieve, and verify data.
+
+Instead of relying on a single company or data centre, Filecoin distributes data across a global marketplace of independent storage providers, secured by cryptographic proofs."
+        />
       </PageSection>
 
       <PageSection backgroundVariant="light">
