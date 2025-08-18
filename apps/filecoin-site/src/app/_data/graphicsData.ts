@@ -13,6 +13,7 @@ import FilecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import FilecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
 import HomepageGradient from '@/assets/graphics/homepage-gradient.svg'
 import ServerBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
+import starsSpinning from '@/assets/graphics/stars-spinning.webp'
 
 export const graphicsData = {
   homepageGradient: {
@@ -35,7 +36,6 @@ export const graphicsData = {
     data: EarthGlobe,
     alt: 'Minimalist Earth globe with clean geometric design and network connections',
   },
-
   learnHero: {
     data: FilecoinServerRack,
     alt: 'Filecoin server rack with multiple blade servers and network connections',
@@ -67,5 +67,9 @@ export const graphicsData = {
   earthAtNight: {
     data: EarthAtNight,
     alt: 'Earth at night with city lights and continents',
+  },
+  starsSpinning: {
+    data: starsSpinning,
+    alt: 'Stars spinning in space',
   },
 } as const satisfies Record<string, StaticImageProps>
