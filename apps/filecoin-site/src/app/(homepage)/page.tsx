@@ -198,8 +198,6 @@ export default async function Home() {
         >
           <LogoSection logos={resilientWebLogos} />
 
-          <SectionImage {...graphicsData.homepageSection} />
-
           <CardGrid as="ul" variant="smTwoLgThreeWider">
             {providerBenefits.map(({ title, description }) => (
               <Card
