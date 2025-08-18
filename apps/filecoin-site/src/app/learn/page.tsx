@@ -20,13 +20,11 @@ import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
-import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { StepCard } from './components/StepCard'
 import { LEARN_SEO } from './constants/seo'
-import { ecosystemPartners } from './data/ecosystemPartners'
 import { filecoinParticipants } from './data/filecoinParticipants'
 import { filecoinStackFeatures } from './data/filecoinStackFeatures'
 import { filecoinStorageFlow } from './data/filecoinStorageFlow'
@@ -71,18 +69,6 @@ export default function Learn() {
           />
 
           <SectionImage {...graphicsData.learnLibrarySection} />
-
-          <CardGrid as="ul" variant="lgTwo">
-            {ecosystemPartners.map(({ title, description, cta, logo }) => (
-              <SimpleCardWithLogo
-                key={title}
-                title={title}
-                description={description}
-                cta={cta}
-                logo={logo}
-              />
-            ))}
-          </CardGrid>
         </SectionContent>
       </PageSection>
 
