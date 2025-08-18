@@ -1,4 +1,4 @@
-import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
+import { BookIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
