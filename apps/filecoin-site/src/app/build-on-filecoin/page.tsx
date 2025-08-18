@@ -83,7 +83,7 @@ export default function BuildOnFilecoin() {
           title="A foundation for next-gen applications"
           description="From powering AI workflows to enabling cross-chain data bridges, Filecoin provides programmable, permissionless storage infrastructure."
         >
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
+          <CardGrid as="ul" variant="smTwoXlFourWide">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}
