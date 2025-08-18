@@ -65,6 +65,8 @@ export default function ProvideStorage() {
           title="Optimize your storage potential"
           description="The Filecoin Network rewards storage providers through a self-sustaining marketplace designed for long-term commitment and resilience."
         >
+          <SectionImage {...graphicsData.provideStorageSection} />
+
           <CardGrid as="ul" variant="lgThree">
             {filecoinEarningsInsights.map(({ title, description, cta }) => (
               <SimpleCard
@@ -152,7 +154,7 @@ export default function ProvideStorage() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <SectionImage {...graphicsData.provideStorageSection} />
+        <SectionImage {...graphicsData.provideStorageSection2} />
 
         <SectionContent
           title="Empower a more open and resilient web"

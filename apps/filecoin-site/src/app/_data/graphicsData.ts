@@ -24,10 +24,7 @@ export const graphicsData = {
     data: EarthGlobe,
     alt: 'Minimalist Earth globe with clean geometric design and network connections',
   },
-  homepageSection: {
-    data: ServerBladeChassis,
-    alt: 'Server blade chassis with turquoise lighting in a rack mount',
-  },
+
   learnHero: {
     data: FilecoinServerRack,
     alt: 'Filecoin server rack with multiple blade servers and network connections',
@@ -45,6 +42,10 @@ export const graphicsData = {
     alt: 'Filecoin mining rig with multiple graphics cards and cooling systems',
   },
   provideStorageSection: {
+    data: ServerBladeChassis,
+    alt: 'Server blade chassis with turquoise lighting in a rack mount',
+  },
+  provideStorageSection2: {
     data: FilecoinStorageDevice,
     alt: 'Filecoin storage device with hard drives and cooling fans',
   },
