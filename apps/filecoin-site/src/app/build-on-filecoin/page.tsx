@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
@@ -11,6 +13,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
+import { ImageGrid } from '@/components/ImageGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
@@ -18,13 +21,18 @@ import { PageSection } from '@/components/PageSection'
 import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
+import { SimpleCard } from '@/components/SimpleCard'
+import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { getInvolvedOptions } from '../community/data/getInvolvedOptions'
 
 import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
+import { blockExplorers } from './data/blockExplorers'
+import { builtOnFilecoin } from './data/builtOnFilecoin'
 import { developerResources } from './data/developerResources'
 import { filecoinFeatures } from './data/filecoinFeatures'
+import { getInvolvedImages } from './data/getInvolvedImages'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function BuildOnFilecoin() {
@@ -93,6 +101,7 @@ export default function BuildOnFilecoin() {
 
       <PageSection backgroundVariant="light">
         <SectionContent
+          centerCTA
           title="Built on Filecoin"
           description="Discover tools and applications powered by Filecoin."
           cta={
@@ -100,14 +109,39 @@ export default function BuildOnFilecoin() {
               Visit ecosystem explorer
             </Button>
           }
-        />
+        >
+          <CardGrid as="ul" variant="lgTwo">
+            {builtOnFilecoin.map(({ title, description, cta, logo }) => (
+              <SimpleCardWithLogo
+                key={title}
+                title={title}
+                description={description}
+                cta={cta}
+                logo={logo}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="light">
         <SectionContent
           title="Tutorials and guides"
           description="Learn the basics to start building with Filecoin."
-        />
+        >
+          <CardGrid as="ul" variant="mdTwoWide">
+            {blockExplorers.map(({ title, description, cta, difficulty }) => (
+              <SimpleCard
+                key={title}
+                badge={difficulty}
+                as="li"
+                title={title}
+                description={description}
+                cta={cta}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="gray">
@@ -136,6 +170,12 @@ export default function BuildOnFilecoin() {
           description="Whether you're just getting started or looking to deepen your
           contributions, there are many ways to get involved."
         >
+          <ImageGrid as="ul" variant="oneMdThree">
+            {getInvolvedImages.map(({ image }) => (
+              <Image key={image.alt} src={image.data} alt={image.alt} />
+            ))}
+          </ImageGrid>
+
           <CardGridContainer width="6xl">
             <CardGrid as="ul" variant="mdTwoWide">
               {getInvolvedOptions.map(({ title, description, href, icon }) => (
