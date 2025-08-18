@@ -20,7 +20,6 @@ import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
-import { SimpleCard } from '@/components/SimpleCard'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
@@ -29,7 +28,6 @@ import { ecosystemResources } from '../community/data/ecosystemResources'
 import { getInvolvedOptions } from '../community/data/getInvolvedOptions'
 
 import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
-import { blockExplorers } from './data/blockExplorers'
 import { developerResources } from './data/developerResources'
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -120,37 +118,6 @@ export default function BuildOnFilecoin() {
                 )}
               </CardGrid>
             </CardGridContainer>
-          </SectionSubContent>
-
-          <SectionDivider />
-
-          <SectionSubContent
-            centerCTA
-            headingTag="h3"
-            title="Block explorers"
-            description="Track transactions, contracts, and onchain activity with Filecoin-compatible block explorers."
-            cta={
-              <Button href="#todo" variant="primary">
-                Submit block explorer
-              </Button>
-            }
-          >
-            <>
-              <CardGrid as="ul" variant="smTwoLgThree">
-                {blockExplorers.map(({ title, description, cta }) => (
-                  <SimpleCard
-                    key={title}
-                    as="li"
-                    title={title}
-                    description={description}
-                    cta={cta}
-                  />
-                ))}
-              </CardGrid>
-              <p className="-mb-12 text-center text-lg text-zinc-600">
-                Have a block explorer to feature?
-              </p>
-            </>
           </SectionSubContent>
         </SectionContent>
       </PageSection>
