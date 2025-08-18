@@ -24,14 +24,15 @@ import { SimpleCard } from '@/components/SimpleCard'
 import { SimpleCardWithGradient } from '@/components/SimpleCardWithGradient'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
+import { communityConnections } from '../community/data/communityConnections'
+import { ecosystemResources } from '../community/data/ecosystemResources'
+import { getInvolvedOptions } from '../community/data/getInvolvedOptions'
+
 import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
 import { blockExplorers } from './data/blockExplorers'
-import { communityConnections } from './data/communityConnections'
 import { developerResources } from './data/developerResources'
-import { ecosystemResources } from './data/ecosystemResources'
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { filecoinTools } from './data/filecoinTools'
-import { getInvolvedOptions } from './data/getInvolvedOptions'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function BuildOnFilecoin() {
