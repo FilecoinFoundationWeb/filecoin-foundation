@@ -67,7 +67,7 @@ export default function StoreData() {
           title="Future-proof your data infrastructure"
           description="Filecoin is a powerful alternative to traditional cloud storage. The network ensures your data remains secure and verified, so that you can store your data with confidence."
         >
-          <CardGrid as="ul" variant="smTwoLgThree">
+          <CardGrid as="ul" variant="smTwoLgThreeWider">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}
