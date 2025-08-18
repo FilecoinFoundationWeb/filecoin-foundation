@@ -23,6 +23,7 @@ import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 import { SimpleCardWithGradient } from '@/components/SimpleCardWithGradient'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
+import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { communityConnections } from '../community/data/communityConnections'
 import { ecosystemResources } from '../community/data/ecosystemResources'
@@ -59,6 +60,23 @@ export default function BuildOnFilecoin() {
           />
         </PageSection>
       </BackgroundImage>
+
+      <PageSection backgroundVariant="dark">
+        <SectionContent title="Announcing Filecoin Onchain Cloud">
+          <SplitSectionContent
+            title="Verifiable onchain services with transparent storage, retrieval, and payments."
+            description={[
+              'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pinning, retrieval, and payments are transparent, programmable, and interoperable by default. ,',
+              'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
+            ]}
+            cta={[
+              <Button href="#todo" variant="primary">
+                Get started with Filecoin Onchain Cloud
+              </Button>,
+            ]}
+          />
+        </SectionContent>
+      </PageSection>
 
       <PageSection backgroundVariant="dark">
         <SectionContent
