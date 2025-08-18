@@ -18,7 +18,6 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
-import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { getInvolvedOptions } from '../community/data/getInvolvedOptions'
@@ -68,6 +67,8 @@ export default function BuildOnFilecoin() {
             ]}
           />
         </SectionContent>
+
+        <SectionImage {...graphicsData.buildOnFilecoinSection} />
       </PageSection>
 
       <PageSection backgroundVariant="dark">
@@ -94,20 +95,6 @@ export default function BuildOnFilecoin() {
           title="Tutorials and guides"
           description="Learn the basics to start building with Filecoin."
         />
-      </PageSection>
-
-      <PageSection backgroundVariant="dark">
-        <SectionContent
-          title="Explore the ecosystem"
-          description="Visit Filecoin Foundation's Ecosystem Explorer to discover Filecoin projects, get inspired by what others are building, and find your place in the Filecoin ecosystem."
-          cta={
-            <Button href="https://fil.org/ecosystem-explorer" variant="primary">
-              Visit ecosystem explorer
-            </Button>
-          }
-        />
-
-        <SectionImage {...graphicsData.buildOnFilecoinSection} />
       </PageSection>
 
       <PageSection backgroundVariant="gray">
