@@ -54,6 +54,18 @@ Instead of relying on a single company or data centre, Filecoin distributes data
         />
       </PageSection>
 
+      <PageSection backgroundVariant="gray">
+        <SectionContent
+          title="Learn about the Filecoin protocol"
+          description="For technically curious people who want to go deeper into how Filecoin actually works."
+          cta={
+            <Button href={FILECOIN_URLS.docs} variant="primary">
+              Explore documentation
+            </Button>
+          }
+        />
+      </PageSection>
+
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Be a part of a more resilient internet"
