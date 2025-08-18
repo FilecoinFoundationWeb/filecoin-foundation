@@ -1,7 +1,6 @@
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -130,21 +129,6 @@ export default function ProvideStorage() {
             </CardGrid>
           </SectionSubContent>
         </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="gray">
-        <SectionContent
-          title="Begin your storage provider journey"
-          description="If you already operate enterprise-grade infrastructure—or plan to—Filecoin offers a scalable path to meaningful, global impact."
-          cta={
-            <Button
-              href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
-              variant="primary"
-            >
-              Book a call with the onboarding team
-            </Button>
-          }
-        />
       </PageSection>
 
       <PageSection backgroundVariant="light">
