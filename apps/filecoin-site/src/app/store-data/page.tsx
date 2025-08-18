@@ -19,7 +19,6 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 
-import { ExpertSupportBanner } from './components/ExpertSupportBanner'
 import { StorageProviderList } from './components/StorageProviderList'
 import { STORE_DATA_SEO } from './constants/seo'
 import { filecoinFeatures } from './data/filecoinFeatures'
@@ -86,10 +85,6 @@ export default function StoreData() {
           title="Store on Filecoin"
           description="Find the perfect storage solution for your data on Filecoin."
         />
-
-        <div className="mt-15">
-          <ExpertSupportBanner />
-        </div>
 
         <div className="mt-20">
           <Suspense>
