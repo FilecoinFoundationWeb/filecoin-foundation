@@ -42,16 +42,21 @@ export default function ProvideStorage() {
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
-            title="Power the world's largest decentralized storage network"
+            title="Power a more open and resilient web"
             description="Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important information."
             cta={
-              <Button
-                href={`${FILECOIN_URLS.docs}storage-providers/basics`}
-                variant="primary"
-              >
-                Explore documentation
+              <Button href="#todo" variant="primary">
+                Book a call with the onboarding team
               </Button>
             }
+            // cta={
+            //   <Button
+            //     href={`${FILECOIN_URLS.docs}storage-providers/basics`}
+            //     variant="primary"
+            //   >
+            //     Explore documentation
+            //   </Button>
+            // }
           />
         </PageSection>
       </BackgroundImage>
