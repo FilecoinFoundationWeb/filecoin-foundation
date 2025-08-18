@@ -1,4 +1,5 @@
 import {
+  BridgeIcon,
   IntersectThreeIcon,
   SparkleIcon,
   StackSimpleIcon,
@@ -12,21 +13,24 @@ type FilecoinFeature = {
 
 export const filecoinFeatures: FilecoinFeature[] = [
   {
-    title: 'AI data storage & processing',
+    title: 'Persistent, verifiable storage',
     description:
-      'Store and process large-scale AI datasets with cryptographic integrity and global redundancy. Filecoin’s programmable storage layer is designed for data-intensive, high-performance applications.',
+      "Your users' data is cryptographically proven to be stored and retrievable.",
     icon: SparkleIcon,
   },
   {
-    title: 'Cross-chain data bridges',
-    description:
-      'Seamlessly bridge and store data across leading blockchain ecosystems. With native interoperability, Filecoin keeps your data accessible, verifiable, and censorship-resistant—no matter where your application operates.',
+    title: 'Native IPFS integration',
+    description: 'Store and retrieve with IPFS-compatible tools.',
+    icon: StackSimpleIcon,
+  },
+  {
+    title: 'Scales with your app',
+    description: 'From MBs to petabytes, with predictable costs.',
     icon: IntersectThreeIcon,
   },
   {
-    title: 'Storage-enabled dApps',
-    description:
-      'Build decentralized, resilient applications with permissionless storage and FVM-powered smart contracts. Filecoin empowers developers to create dApps that are verifiable by default and resilient by design.',
-    icon: StackSimpleIcon,
+    title: 'Cross-chain ready',
+    description: 'Bridges and SDKs for multi-chain workflows.',
+    icon: BridgeIcon,
   },
-] as const
+]

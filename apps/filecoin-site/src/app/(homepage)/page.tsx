@@ -123,13 +123,11 @@ export default async function Home() {
             title="Secure, verifiable, long-term storage that you control."
             description="No matter what you're storing — your data remains tamper-proof and verifiable. Filecoin offers storage backed by a global network of independent data centers with automatic replication and lower egress fees."
             cta={[
-              <Button href={PATHS.STORE_DATA.path}>
+              <Button>
+                href={`${PATHS.STORE_DATA.path}#store-on-filecoin`}
                 Find storage solutions
               </Button>,
-              <Button
-                href={`${PATHS.STORE_DATA.path}#store-on-filecoin`}
-                variant="ghost"
-              >
+              <Button href={PATHS.STORE_DATA.path} variant="ghost">
                 Why store on Filecoin
               </Button>,
             ]}
