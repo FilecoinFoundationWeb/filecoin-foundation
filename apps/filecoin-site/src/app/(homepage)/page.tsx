@@ -116,6 +116,32 @@ export default async function Home() {
 
       <PageSection backgroundVariant="light">
         <SectionContent
+          title="The missing incentive layer to IPFS"
+          cta={
+            <Button href={FILECOIN_URLS.docs} variant="primary">
+              Learn more about IPFS
+            </Button>
+          }
+        >
+          <div className="flex flex-col gap-4 text-xl">
+            <p>
+              Filecoin adds incentivized, persistent storage to the
+              InterPlanetary File System (IPFS), a peer-to-peer protocol that
+              identifies content based on what it is rather than where it is,
+              creating a powerful, versatile, and long-term home for data.
+            </p>
+            <p>
+              Filecoin makes it easy for IPFS users to reliably store their data
+              directly on the Filecoin network. The result is a decentralized,
+              storage layer opening up an entirely new class of applications and
+              use cases.
+            </p>
+          </div>
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="light">
+        <SectionContent
           centerCTA
           title="How Filecoin storage stacks up"
           description="Compare decentralized object storage against the traditional cloud storage."
