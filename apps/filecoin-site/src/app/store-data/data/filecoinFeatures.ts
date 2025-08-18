@@ -2,7 +2,6 @@ import {
   CertificateIcon,
   TagIcon,
   LockKeyIcon,
-  GlobeHemisphereWestIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
 import type { CardData } from '@/components/Card'
@@ -25,11 +24,5 @@ export const filecoinFeatures: Array<CardData> = [
     description:
       'Store and retrieve data on your terms, with clear and competitive rates. No hidden pricing or unpredictable egress fees.',
     icon: TagIcon,
-  },
-  {
-    title: 'Infinitely  scalable for big data',
-    description:
-      "Filecoin's decentralized infrastructure supports exabyte-scale datasets, high-throughput workloads, and long-term archival with built-in redundancy and global distribution.",
-    icon: GlobeHemisphereWestIcon,
   },
 ]
