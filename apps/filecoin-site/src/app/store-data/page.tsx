@@ -87,7 +87,7 @@ export default function StoreData() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Not sure what storage solution to choose?"
-          description="Tell us about your needs and we’ll guide you to the Filecoin solution that fits best."
+          description="Tell us about your needs and we'll guide you to the Filecoin solution that fits best."
           cta={
             <Button href="#todo" variant="primary">
               Talk to an expert
