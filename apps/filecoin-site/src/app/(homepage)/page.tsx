@@ -28,6 +28,7 @@ import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
+import { Announcement } from './components/Announcement'
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { communityLinks } from './data/communityLinks'
 import { networkPrinciples } from './data/networkPrinciples'
@@ -56,7 +57,9 @@ export default async function Home() {
         <Section backgroundVariant="dark">
           <Container>
             <div className="pt-32 pb-24">
-              <span>Announcing Filecoin Onchain Cloud</span>
+              <Announcement href={PATHS.BLOG.path}>
+                Announcing Filecoin Onchain Cloud
+              </Announcement>
               <PageHeader
                 title="Preserve humanity's most important information"
                 description="Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control."
