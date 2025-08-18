@@ -50,7 +50,7 @@ export default function BuildOnFilecoin() {
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Build on Filecoin: open, scalable, verifiable storage"
-            description="Filecoin is a programmable, permissionless storage network with cryptographic verification and global redundancy by design. Integrate storage that safeguards data integrity at every layer and scales with your application's needs."
+            description="Scale storage like the cloud, own it like your code. Filecoin is open-source, self-hostable, and built on shared APIs running on permissionless infrastructure — giving developers performance, flexibility, and data sovereignty."
             cta={
               <Button href={FILECOIN_URLS.docs} variant="primary">
                 Explore documentation
