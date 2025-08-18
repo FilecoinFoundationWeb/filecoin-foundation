@@ -80,6 +80,14 @@ export default async function Home() {
       </BackgroundImage>
 
       <PageSection backgroundVariant="dark">
+        <LogoSection
+          title="Trusted by industry leaders"
+          logos={trustedByLogos}
+          tag="h3"
+        />
+      </PageSection>
+
+      <PageSection backgroundVariant="dark">
         <SectionContent title="Filecoin by the numbers" />
       </PageSection>
 
@@ -157,12 +165,6 @@ export default async function Home() {
 
       <PageSection backgroundVariant="light">
         <SectionContent title="Store your data with confidence">
-          <LogoSection
-            title="Join leading organizations leveraging Filecoin for a more resilient digital future"
-            logos={trustedByLogos}
-            tag="h3"
-          />
-
           <SplitSectionContent
             title="Secure, verifiable, long-term storage that you control."
             description="No matter what you're storing — your data remains tamper-proof and verifiable. Filecoin offers storage backed by a global network of independent data centers with automatic replication and lower egress fees."
