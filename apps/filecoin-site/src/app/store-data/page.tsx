@@ -84,13 +84,13 @@ export default function StoreData() {
         />
       </PageSection>
 
-      <PageSection backgroundVariant="gray">
+      <PageSection backgroundVariant="dark">
         <SectionContent
-          title="Don't see your storage solution?"
-          description="Showcase your Filecoin storage solution in this storage directory and reach thousands of data clients."
+          title="Not sure what storage solution to choose?"
+          description="Tell us about your needs and we’ll guide you to the Filecoin solution that fits best."
           cta={
             <Button href="#todo" variant="primary">
-              Submit your storage solution
+              Talk to an expert
             </Button>
           }
         />
