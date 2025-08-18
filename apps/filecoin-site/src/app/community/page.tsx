@@ -1,4 +1,4 @@
-// import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import clsx from 'clsx'
 
 import { PATHS } from '@/constants/paths'
 
@@ -6,7 +6,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-// import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
@@ -14,6 +13,7 @@ import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { backgroundVariants } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
@@ -26,23 +26,29 @@ import { getInvolvedOptions } from './data/getInvolvedOptions'
 export default function BuildOnFilecoin() {
   return (
     <>
-      {/* <StructuredDataScript
-        structuredData={generateStructuredData(COMMUNITY_SEO)}
-      /> */}
-      <Navigation backgroundVariant="dark" />
-      <PageSection backgroundVariant="dark">
-        <PageHeader
-          title="Build, connect and grow with the Filecoin community"
-          description="A global network of builders, researchers, advocates and creators is shaping the future of Filecoin. Plug into the community and start contributing in your own way."
-          cta={
-            <Button href="#todo" variant="primary">
-              Explore how to get involved
-            </Button>
-          }
-        />
-      </PageSection>
+      <div
+        className={clsx(
+          'relative isolate overflow-clip',
+          backgroundVariants.dark,
+        )}
+      >
+        <Navigation backgroundVariant="transparentDark" />
+        <PageSection backgroundVariant="transparentDark">
+          <PageHeader
+            title="Build, connect and grow with the Filecoin community"
+            description="A global network of builders, researchers, advocates and creators is shaping the future of Filecoin. Plug into the community and start contributing in your own way."
+            cta={
+              <Button href="#todo" variant="primary">
+                Explore how to get involved
+              </Button>
+            }
+          />
+        </PageSection>
 
-      <PageSection backgroundVariant="light">
+        <graphicsData.communityHero.data className="absolute -top-[30vw] left-0 -z-10 w-[130vw]" />
+      </div>
+
+      <PageSection backgroundVariant="dark">
         <SectionContent
           title="Connect with the community"
           description="Connect with a vibrant network of developers building on Filecoin.
