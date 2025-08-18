@@ -1,9 +1,11 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
+import BuildpageGradient from '@/assets/graphics/build-gradient.svg'
 import ClassicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
 import DataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import Diagram from '@/assets/graphics/diagram.webp'
 import DigitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
+import EarthAtNight from '@/assets/graphics/earth-at-night(1).png'
 import EarthFromSpaceAtNight from '@/assets/graphics/earth-from-space-at-night.webp'
 import EarthGlobe from '@/assets/graphics/earth-globe.webp'
 import FilecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
@@ -11,7 +13,6 @@ import FilecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import FilecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
 import HomepageGradient from '@/assets/graphics/homepage-gradient.svg'
 import ServerBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
-import BuildpageGradient from '@/assets/graphics/build-gradient.svg'
 
 export const graphicsData = {
   homepageGradient: {
@@ -62,5 +63,9 @@ export const graphicsData = {
   storeDataHero: {
     data: DigitalMediaConversionSetup,
     alt: 'Digital media conversion setup with various equipment and cables',
+  },
+  earthAtNight: {
+    data: EarthAtNight,
+    alt: 'Earth at night with city lights and continents',
   },
 } as const satisfies Record<string, StaticImageProps>
