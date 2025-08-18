@@ -28,6 +28,7 @@ import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
+import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { communityLinks } from './data/communityLinks'
 import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
@@ -79,6 +80,21 @@ export default async function Home() {
           </Container>
         </Section>
       </BackgroundImage>
+
+      <PageSection backgroundVariant="light">
+        <SectionContent
+          centerCTA
+          title="See how Filecoin storage stacks up"
+          description="Compare decentralized object storage against the traditional cloud storage."
+          cta={
+            <Button href={PATHS.STORE_DATA.path} variant="primary">
+              Store on Filecoin
+            </Button>
+          }
+        >
+          <ComparisonTable />
+        </SectionContent>
+      </PageSection>
 
       <PageSection backgroundVariant="dark">
         <SectionContent title="Build apps better with resilient storage">

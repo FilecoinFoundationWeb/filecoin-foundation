@@ -22,7 +22,6 @@ import { SectionSubContent } from '@/components/SectionSubContent'
 import { SimpleCard } from '@/components/SimpleCard'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
-import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { StepCard } from './components/StepCard'
 import { LEARN_SEO } from './constants/seo'
 import { filecoinParticipants } from './data/filecoinParticipants'
@@ -154,21 +153,6 @@ export default function Learn() {
               />
             ))}
           </CardGrid>
-        </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="light">
-        <SectionContent
-          centerCTA
-          title="See how Filecoin storage stacks up"
-          description="Compare decentralized object storage against the traditional cloud storage."
-          cta={
-            <Button href={PATHS.STORE_DATA.path} variant="primary">
-              Store on Filecoin
-            </Button>
-          }
-        >
-          <ComparisonTable />
         </SectionContent>
       </PageSection>
 
