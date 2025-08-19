@@ -44,7 +44,10 @@ export default function BuildOnFilecoin() {
             title="Build, connect and grow with the Filecoin community"
             description="A global network of builders, researchers, advocates and creators is shaping the future of Filecoin. Plug into the community and start contributing in your own way."
             cta={
-              <Button href="#todo" variant="primary">
+              <Button
+                href={`${PATHS.COMMUNITY.path}#get-involved`}
+                variant="primary"
+              >
                 Explore how to get involved
               </Button>
             }
@@ -60,7 +63,7 @@ export default function BuildOnFilecoin() {
           description="Whether you want to contribute, connect or build, there’s a place for you in the Filecoin community."
         >
           <CardGridContainer width="6xl">
-            <CardGrid as="ul" variant="mdTwoWide">
+            <CardGrid as="ul" variant="smThree">
               {getInvolvedWithCommunity.map(({ title, description, cta }) => (
                 <SimpleCard
                   key={title}
@@ -102,20 +105,6 @@ export default function BuildOnFilecoin() {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="dark">
-        <SectionContent
-          title="Explore the ecosystem"
-          description="Visit Filecoin Foundation's Ecosystem Explorer to discover Filecoin projects, get inspired by what others are building, and find your place in the Filecoin ecosystem."
-          cta={
-            <Button href="https://fil.org/ecosystem-explorer" variant="primary">
-              Visit ecosystem explorer
-            </Button>
-          }
-        />
-
-        <SectionImage {...graphicsData.buildOnFilecoinSection} />
-      </PageSection>
-
       <PageSection backgroundVariant="light">
         <SectionContent
           title="Ecosystem resources"
@@ -133,6 +122,20 @@ export default function BuildOnFilecoin() {
             ))}
           </CardGrid>
         </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="dark">
+        <SectionContent
+          title="Explore the ecosystem"
+          description="Visit Filecoin Foundation's Ecosystem Explorer to discover Filecoin projects, get inspired by what others are building, and find your place in the Filecoin ecosystem."
+          cta={
+            <Button href="https://fil.org/ecosystem-explorer" variant="primary">
+              Visit ecosystem explorer
+            </Button>
+          }
+        />
+
+        <SectionImage {...graphicsData.buildOnFilecoinSection} />
       </PageSection>
     </>
   )
