@@ -27,20 +27,20 @@ export const dataCenterRequirements: Array<CardData> = [
   },
   {
     title: 'Uptime',
-    description: 'Always-on, with backup and failover systems..',
+    description: 'Always-on, with backup and failover systems.',
     icon: HeartbeatIcon,
   },
   {
     title: 'Connectivity',
     description:
-      'Use fiber uplinks and enterprise-grade networking for high throughput.',
+      'Fiber uplinks and enterprise-grade networking for high throughput.',
     icon: WifiHighIcon,
   },
 
   {
     title: 'Space',
     description:
-      'Provide adequate cabling, rack space, and room for large JBOD arrays.',
+      'Adequate cabling, rack space, and room for large JBOD arrays.',
     icon: HardDrivesIcon,
   },
 ]

@@ -48,8 +48,8 @@ export default function ProvideStorage() {
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
-            title="Power a more open and resilient web"
-            description="Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important information."
+            title="Power the world's largest decentralized storage network"
+            description="Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity’s most important information."
             cta={[
               <Button href="#todo" variant="primary">
                 Book a call with the onboarding team
@@ -98,7 +98,7 @@ export default function ProvideStorage() {
       <PageSection backgroundVariant="light">
         <SectionContent
           title="What it takes to provide storage on Filecoin"
-          description="Filecoin is open and permissionless, empowering anyone with the right infrastructure and expertise to participate. Storage providers are foundational to the network's mission, ensuring information stays safe, retrievable, and verifiable."
+          description="Storage providers are foundational to the network's mission, ensuring information stays safe, retrievable, and verifiable."
         >
           <SectionSubContent
             headingTag="h3"
@@ -171,7 +171,7 @@ export default function ProvideStorage() {
 
         <SectionContent
           title="Empower a more open and resilient web"
-          description="As a Filecoin storage provider, you'll empower independent infrastructure, protect critical data without relying on centralized tech giants, and unlock new revenue streams—all while helping build a more open, resilient, and censorship-resistant internet."
+          description="Contribute to a decentralized physical infrastructure network (DePIN), protect critical data without relying on centralized tech giants, and unlock new revenue streams — all while helping build a more open, resilient, and censorship-resistant internet."
           cta={
             <Button
               href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
