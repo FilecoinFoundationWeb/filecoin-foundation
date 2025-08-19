@@ -1,12 +1,10 @@
-export function MetricCard({
-  title,
-  subTitle,
-  description,
-}: {
+type MetricCardProps = {
   title: string
   subTitle: string
   description: string
-}) {
+}
+
+export function MetricCard({ title, subTitle, description }: MetricCardProps) {
   return (
     <div className="flex h-full max-w-sm flex-col gap-8 text-center">
       <div className="space-y-2">
