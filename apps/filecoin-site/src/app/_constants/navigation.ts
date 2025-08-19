@@ -1,9 +1,17 @@
 import { PATHS } from './paths'
 import { FILECOIN_URLS } from './siteMetadata'
 
-type NavItem = { label: string; href: string }
+export type NavItem = { label: string; href: string }
 
 type FooterNavigationItem = { title: string; items: Array<NavItem> }
+
+export type ExpandedNavItem = {
+  label: NavItem['label']
+  items: Array<{
+    title: string
+    links: Array<NavItem & { description: string }>
+  }>
+}
 
 const {
   social: socialLinks,
@@ -42,6 +50,152 @@ const resources: Array<NavItem> = [
   { label: 'Security', href: security },
   { label: 'Ecosystem Explorer', href: ecosystemExplorer },
   { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
+]
+
+export const navigationBis: Array<NavItem | ExpandedNavItem> = [
+  {
+    label: PATHS.LEARN.label,
+    items: [
+      {
+        title: 'Understand Filecoin',
+        links: [
+          {
+            label: 'What is Filecoin?',
+            description: 'Understand what Filecoin is and how it works',
+            href: 'https://docs.filecoin.io/basics/what-is-filecoin',
+          },
+          {
+            label: 'Case Studies',
+            description: 'See how others are using Filecoin in the real world',
+            href: PATHS.CASE_STUDIES.path,
+          },
+        ],
+      },
+    ],
+  },
+  { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
+  { label: PATHS.PROVIDE_STORAGE.label, href: PATHS.PROVIDE_STORAGE.path },
+  {
+    label: 'Developers',
+    items: [
+      {
+        title: 'Explore',
+        links: [
+          {
+            label: 'Build on Filecoin',
+            description: 'Start building apps on the Filecoin network',
+            href: '/',
+          },
+          {
+            label: 'Documentation',
+            description: 'Official documentation for Filecoin',
+            href: FILECOIN_URLS.docs,
+          },
+          {
+            label: 'Cookbook',
+            description: 'Recipes for building with Filecoin and the FVM',
+            href: '/',
+          },
+          {
+            label: 'GitHub',
+            description: "Explore Filecoin's open-source repositories",
+            href: FILECOIN_URLS.github,
+          },
+        ],
+      },
+      {
+        title: 'Contribute',
+        links: [
+          {
+            label: 'Grants',
+            description: 'Funding opportunities to build in the ecosystem',
+            href: FILECOIN_URLS.grants,
+          },
+          {
+            label: 'Bug Bounty',
+            description: 'Help find vulnerabilities and get rewarded',
+            href: FILECOIN_URLS.securityBugBounty,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: 'Network',
+    items: [
+      {
+        title: 'Block Explorers',
+        links: [
+          {
+            label: 'Beryx',
+            description: 'Explorer and API for accessing real-time data',
+            href: 'https://beryx.io/',
+          },
+          {
+            label: 'Blockscout (FEVM)',
+            description: 'Open-source explorer for FEVM smart contracts',
+            href: 'https://www.blockscout.com/',
+          },
+          {
+            label: 'Filfox',
+            description: 'Explorer with rich network and storage statistics',
+            href: 'https://filfox.info/',
+          },
+          {
+            label: 'Filscan',
+            description: 'Explorer for blocks, deals, and addresses',
+            href: 'https://filscan.io/en/',
+          },
+        ],
+      },
+      {
+        title: 'Network Monitoring',
+        links: [
+          {
+            label: 'Network Status',
+            description: 'The status of the Filecoin networks',
+            href: '/',
+          },
+          {
+            label: 'Network Health',
+            description: 'Filecoin chain activity and performance',
+            href: '/',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: 'Community',
+    items: [
+      {
+        title: 'Get involved',
+        links: [
+          {
+            label: 'Community Hub',
+            description: 'Explore ways to contribute to the ecosystem',
+            href: '/',
+          },
+          {
+            label: 'Events',
+            description: 'Join meetups, hackathons, and conferences',
+            href: FILECOIN_URLS.events,
+          },
+          {
+            label: 'Orbit',
+            description: 'Become a Filecoin Orbit ambassador',
+            href: '/',
+          },
+          {
+            label: 'FIPs & Governance',
+            description: 'Propose, discuss, and shape future upgrades',
+            href: '/',
+          },
+        ],
+      },
+    ],
+  },
+  { label: PATHS.BLOG.label, href: PATHS.BLOG.path },
 ]
 
 const navigation: Array<NavItem> = [
