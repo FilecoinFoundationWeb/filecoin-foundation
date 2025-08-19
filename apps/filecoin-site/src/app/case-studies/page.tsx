@@ -19,7 +19,6 @@ import { CASE_STUDIES_SEO } from './constants/seo'
 import { caseStudies } from './data/caseStudies'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-
 export default function CaseStudies() {
   return (
     <>
@@ -48,7 +47,7 @@ export default function CaseStudies() {
         <graphicsData.caseStudies.data className="absolute -top-[840px] right-0 -z-10 hidden w-[600px] overflow-visible sm:block" />
       </div>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection paddingVariant="topOnly" backgroundVariant="dark">
         <SectionContent
           title="Featured datasets"
           description="Explore some of the organizations using Filecoin to preserve their data."

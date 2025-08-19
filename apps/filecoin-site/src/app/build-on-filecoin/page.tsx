@@ -99,7 +99,7 @@ export default function BuildOnFilecoin() {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="light">
+      <PageSection paddingVariant="topOnly" backgroundVariant="light">
         <SectionContent
           centerCTA
           title="Built on Filecoin"

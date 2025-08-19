@@ -12,7 +12,6 @@ import { trustedByLogos } from '@/data/trustedByLogos'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { Container } from '@/components/Container'
@@ -29,7 +28,6 @@ import { SplitSectionContent } from '@/components/SplitSectionContent'
 import { Announcement } from './components/Announcement'
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { communityLinks } from './data/communityLinks'
-import { networkPrinciples } from './data/networkPrinciples'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 import { BlogCard } from '@/blog/components/BlogCard'
@@ -49,7 +47,8 @@ export default async function Home() {
       <Navigation backgroundVariant="dark" />
       <Section backgroundVariant="dark">
         <Container>
-          <div className="space-y-15 pt-32 pb-24">
+          <div className="space-y-15 pt-24 pb-24 md:pt-32">
+            {/* todo look into when we need space-y-15 */}
             <Announcement centered href={PATHS.BLOG.path}>
               Announcing Filecoin Onchain Cloud
             </Announcement>
@@ -76,7 +75,8 @@ export default async function Home() {
         </div>
       </Section>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection paddingVariant="none" backgroundVariant="dark">
+        <div className="py-12" />
         <LogoSection
           title="Trusted by industry leaders"
           logos={trustedByLogos}
@@ -111,7 +111,7 @@ export default async function Home() {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="light">
+      <PageSection paddingVariant="none" backgroundVariant="light">
         <SectionContent
           title="The missing incentive layer to IPFS"
           cta={
@@ -176,49 +176,6 @@ export default async function Home() {
               </Button>,
             ]}
           />
-        </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="light">
-        <SectionContent title="Store your data with confidence">
-          <SplitSectionContent
-            title="Secure, verifiable, long-term storage that you control."
-            description="No matter what you're storing — your data remains tamper-proof and verifiable. Filecoin offers storage backed by a global network of independent data centers with automatic replication and lower egress fees."
-            cta={[
-              <Button>
-                href={`${PATHS.STORE_DATA.path}#store-on-filecoin`}
-                Find storage solutions
-              </Button>,
-              <Button href={PATHS.STORE_DATA.path} variant="ghost">
-                Why store on Filecoin
-              </Button>,
-            ]}
-          />
-        </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="light">
-        <SectionContent
-          centerCTA
-          title="Mission-driven, built to scale, verifiable by design"
-          description="Filecoin offers a fundamentally different approach to data storage and creates a foundation for a more open, resilient, and user-controlled web."
-          cta={
-            <Button href={PATHS.LEARN.path}>
-              Learn more about the Filecoin network
-            </Button>
-          }
-        >
-          <CardGrid as="ul" variant="smTwoXlFourWide">
-            {networkPrinciples.map(({ title, description, icon }) => (
-              <Card
-                key={title}
-                as="li"
-                title={title}
-                description={description}
-                icon={icon}
-              />
-            ))}
-          </CardGrid>
         </SectionContent>
       </PageSection>
 
