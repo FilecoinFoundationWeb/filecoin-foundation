@@ -47,7 +47,7 @@ const resources: Array<NavItem> = [
 const navigation: Array<NavItem> = [
   { label: PATHS.BUILD_ON_FILECOIN.label, href: PATHS.BUILD_ON_FILECOIN.path },
   { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
-  { label: PATHS.OFFER_STORAGE.label, href: PATHS.OFFER_STORAGE.path },
+  { label: PATHS.PROVIDE_STORAGE.label, href: PATHS.PROVIDE_STORAGE.path },
   { label: PATHS.LEARN.label, href: PATHS.LEARN.path },
   { label: PATHS.BLOG.label, href: PATHS.BLOG.path },
 ]

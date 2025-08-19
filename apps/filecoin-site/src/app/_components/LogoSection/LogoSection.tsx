@@ -13,7 +13,7 @@ export function LogoSection({ logos, title, tag = 'h3' }: LogoSectionProps) {
 
   return (
     <section
-      className="logo-section flex flex-col items-center gap-15 md:gap-20 lg:items-start"
+      className="logo-section flex flex-col items-center gap-15 md:gap-20"
       aria-labelledby={title && 'logo-section-title'}
     >
       {title && (
@@ -24,7 +24,7 @@ export function LogoSection({ logos, title, tag = 'h3' }: LogoSectionProps) {
           {title}
         </Tag>
       )}
-      <ul className="grid grid-cols-2 justify-items-center gap-15 lg:grid-cols-4 lg:justify-items-start xl:grid-cols-5">
+      <ul className="grid grid-cols-2 justify-items-center gap-15 lg:grid-cols-4 xl:grid-cols-5">
         {logos.map((logoItem, index) => (
           <LogoItem key={`logo-${index}`} {...logoItem} />
         ))}

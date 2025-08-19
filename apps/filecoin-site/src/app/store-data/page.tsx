@@ -1,5 +1,3 @@
-import { Suspense } from 'react'
-
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
@@ -19,8 +17,6 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 
-import { ExpertSupportBanner } from './components/ExpertSupportBanner'
-import { StorageProviderList } from './components/StorageProviderList'
 import { STORE_DATA_SEO } from './constants/seo'
 import { filecoinFeatures } from './data/filecoinFeatures'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -67,7 +63,7 @@ export default function StoreData() {
           title="Future-proof your data infrastructure"
           description="Filecoin is a powerful alternative to traditional cloud storage. The network ensures your data remains secure and verified, so that you can store your data with confidence."
         >
-          <CardGrid as="ul" variant="smTwoXlFourWide">
+          <CardGrid as="ul" variant="smTwoLgThreeWider">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -86,25 +82,15 @@ export default function StoreData() {
           title="Store on Filecoin"
           description="Find the perfect storage solution for your data on Filecoin."
         />
-
-        <div className="mt-15">
-          <ExpertSupportBanner />
-        </div>
-
-        <div className="mt-20">
-          <Suspense>
-            <StorageProviderList />
-          </Suspense>
-        </div>
       </PageSection>
 
-      <PageSection backgroundVariant="gray">
+      <PageSection backgroundVariant="dark">
         <SectionContent
-          title="Don't see your storage solution?"
-          description="Showcase your Filecoin storage solution in this storage directory and reach thousands of data clients."
+          title="Not sure what storage solution to choose?"
+          description="Tell us about your needs and we'll guide you to the Filecoin solution that fits best."
           cta={
             <Button href="#todo" variant="primary">
-              Submit your storage solution
+              Talk to an expert
             </Button>
           }
         />

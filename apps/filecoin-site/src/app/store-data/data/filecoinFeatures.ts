@@ -2,34 +2,27 @@ import {
   CertificateIcon,
   TagIcon,
   LockKeyIcon,
-  GlobeHemisphereWestIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
 import type { CardData } from '@/components/Card'
 
 export const filecoinFeatures: Array<CardData> = [
   {
-    title: 'Data integrity and security',
+    title: 'Built-in resilience',
     description:
-      'All storage is verifiable, tamper-resistant, and secured end-to-end, ensuring your data remains intact, safe, and auditable over time.',
+      'Your data is stored across multiple independent providers, reducing risk of loss or downtime.',
     icon: LockKeyIcon,
   },
   {
-    title: 'Compliance',
+    title: 'Provably stored & unchanged',
     description:
-      'Meet enterprise and industry requirements with storage providers that adhere to leading standards, including SOC 2 compliance and Tier III data center certifications.',
+      "Cryptographic proofs guarantee your data is actually being stored and hasn't been tampered with.",
     icon: CertificateIcon,
   },
   {
-    title: 'Predictable pricing',
+    title: 'Censorship-resistant by design',
     description:
-      'Store and retrieve data on your terms, with clear and competitive rates. No hidden pricing or unpredictable egress fees.',
+      'No single company can take down or block access to your data.',
     icon: TagIcon,
-  },
-  {
-    title: 'Infinitely  scalable for big data',
-    description:
-      "Filecoin's decentralized infrastructure supports exabyte-scale datasets, high-throughput workloads, and long-term archival with built-in redundancy and global distribution.",
-    icon: GlobeHemisphereWestIcon,
   },
 ]

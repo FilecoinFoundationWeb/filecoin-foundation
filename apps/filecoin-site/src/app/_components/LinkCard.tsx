@@ -37,16 +37,18 @@ export function LinkCard({
   return (
     <Tag
       className={clsx(
-        'relative flex flex-row border-t border-[var(--color-border-muted)] pt-8',
+        'group relative flex flex-row border-t border-[var(--color-border-muted)] pt-8',
         description ? 'items-start gap-6' : 'items-center gap-5',
       )}
     >
       <IconBadge component={icon.component} size="sm" variant={icon.variant} />
 
       <div className={clsx(description && 'space-y-5')}>
-        <Heading tag={headingTag} variant="card-heading">
-          {title}
-        </Heading>
+        <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
+          <Heading tag={headingTag} variant="card-heading">
+            {title}
+          </Heading>
+        </span>
 
         {description && (
           <p className="text-[var(--color-text-paragraph)]">{description}</p>
