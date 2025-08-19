@@ -10,6 +10,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Button } from '@/components/Button'
+import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -17,9 +18,12 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { backgroundVariants } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
+import { SimpleCard } from '@/components/SimpleCard'
 
 import { LEARN_SEO } from './constants/seo'
+import { learnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
 import { resilientInternetCta } from './data/resilientInternetCta'
+import { whatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
 
 export default function Learn() {
   return (
@@ -67,11 +71,24 @@ Instead of relying on a single company or data centre, Filecoin distributes data
               Store data
             </Button>,
           ]}
-        />
+        >
+          <CardGrid as="ul" variant="smTwoXlFourWide">
+            {whatIsFilecoinUsedFor.map(({ title, description, icon }) => (
+              <Card
+                key={title}
+                as="li"
+                title={title}
+                description={description}
+                icon={icon}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="gray">
         <SectionContent
+          centerCTA
           title="Learn about the Filecoin protocol"
           description="For technically curious people who want to go deeper into how Filecoin actually works."
           cta={
@@ -79,7 +96,19 @@ Instead of relying on a single company or data centre, Filecoin distributes data
               Explore documentation
             </Button>
           }
-        />
+        >
+          <CardGrid as="ul" variant="smThree">
+            {learnAboutFilecoinProtocol.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                as="li"
+                title={title}
+                description={description}
+                cta={cta}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="dark">
