@@ -16,7 +16,11 @@ export function Footer() {
       <Container>
         <div className="flex flex-col gap-15 pt-20 pb-15 lg:gap-10 xl:flex-row xl:gap-40">
           <div className="self-start xl:self-auto">
-            <LogoLink logo={Logo} height={32} color="text-zinc-50" />
+            <LogoLink
+              logo={Logo}
+              height={32}
+              color="text-[var(--color-text-base)]"
+            />
           </div>
 
           <nav

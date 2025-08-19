@@ -1,4 +1,4 @@
-import { BookIcon, GithubLogoIcon } from '@phosphor-icons/react/dist/ssr'
+import { BookIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
@@ -27,8 +27,9 @@ import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
+import { Announcement } from './components/Announcement'
+import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { communityLinks } from './data/communityLinks'
-import { networkActions } from './data/networkActions'
 import { networkPrinciples } from './data/networkPrinciples'
 import { providerBenefits } from './data/providerBenefits'
 import { resilientWebLogos } from './data/resilientWebLogos'
@@ -41,7 +42,7 @@ import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 export default async function Home() {
   const featuredBlogPosts = getFeaturedBlogPosts({
     posts: await getBlogPostsData(),
-    limit: 6,
+    limit: 3,
   })
 
   return (
@@ -52,52 +53,121 @@ export default async function Home() {
         src={graphicsData.homepageHero.data.src}
         blurDataURL={graphicsData.homepageHero.data.blurDataURL}
       >
-        <Navigation backgroundVariant="transparent" />
-        <Section backgroundVariant="transparent">
+        <Navigation backgroundVariant="dark" />
+        <Section backgroundVariant="dark">
           <Container>
-            <div className="pt-32 pb-24">
+            <div className="space-y-15 pt-32 pb-24">
+              <Announcement centered href={PATHS.BLOG.path}>
+                Announcing Filecoin Onchain Cloud
+              </Announcement>
               <PageHeader
-                title="Preserving humanity's most important information"
-                description="Keep your data accessible, verifiable, and free from centralized control with the world’s largest decentralized storage network."
+                centered
+                title="Preserve humanity's most important information"
+                description="Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control."
+                cta={[
+                  <Button href={PATHS.STORE_DATA.path} variant="primary">
+                    Store data
+                  </Button>,
+                  <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
+                    Start building
+                  </Button>,
+                ]}
               />
-            </div>
-            <div className="pb-60">
-              <CardGrid as="ul" variant="smTwoLgThreeTight">
-                {networkActions.map(({ title, description, href, icon }) => (
-                  <LinkCard
-                    key={title}
-                    as="li"
-                    title={title}
-                    headingTag="h2"
-                    description={description}
-                    href={href}
-                    icon={{ component: icon }}
-                  />
-                ))}
-              </CardGrid>
             </div>
           </Container>
         </Section>
       </BackgroundImage>
 
       <PageSection backgroundVariant="dark">
-        <SectionContent title="Build apps better with resilient storage">
+        <LogoSection
+          title="Trusted by industry leaders"
+          logos={trustedByLogos}
+          tag="h3"
+        />
+      </PageSection>
+
+      <PageSection backgroundVariant="dark">
+        <SectionContent title="Filecoin by the numbers" />
+      </PageSection>
+
+      <PageSection backgroundVariant="light">
+        <SectionContent title="A robust foundation for humanity's information">
           <SplitSectionContent
-            title="Open. Scalable. Built for the future."
+            title="A decentralized, efficient, and robust protocol."
             description={[
-              'Filecoin gives developers a decentralized, verifiable storage layer that scales — perfect for AI pipelines, dApps, data-heavy SaaS platforms, and more. Accelerate development with open source tools, native IPFS integration, cross-chain data bridges, and a permissionless storage marketplace.',
-              'Filecoin democratizes data infrastructure, so you can build without compromise — knowing your data belongs to you and your users, not centralized gatekeepers.',
+              "Filecoin is reshaping how the world stores data. Today, a handful of corporations control most of the world's data, creating centralized gatekeepers that limit transparency and introduce single points of failure.",
+              'Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, ensuring greater security and resilience.',
+              'Petabytes of data, from cultural archives to scientific research, are stored on the network, protected by cryptographic proofs and distributed across nodes worldwide. The decentralized model empowers users with true control over their information, building a more open and resilient foundation for the web.',
+            ]}
+            cta={[
+              <Button href={PATHS.STORE_DATA.path} variant="primary">
+                Store data
+              </Button>,
+              <Button href={PATHS.PROVIDE_STORAGE.path} variant="ghost">
+                Become a storage provider
+              </Button>,
+            ]}
+          />
+
+          <SectionImage {...graphicsData.learnLibrarySection} />
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="light">
+        <SectionContent
+          title="The missing incentive layer to IPFS"
+          cta={
+            <Button href={FILECOIN_URLS.docs} variant="primary">
+              Learn more about IPFS
+            </Button>
+          }
+        >
+          <div className="flex flex-col gap-4 text-xl">
+            <p>
+              Filecoin adds incentivized, persistent storage to the
+              InterPlanetary File System (IPFS), a peer-to-peer protocol that
+              identifies content based on what it is rather than where it is,
+              creating a powerful, versatile, and long-term home for data.
+            </p>
+            <p>
+              Filecoin makes it easy for IPFS users to reliably store their data
+              directly on the Filecoin network. The result is a decentralized,
+              storage layer opening up an entirely new class of applications and
+              use cases.
+            </p>
+          </div>
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="light">
+        <SectionContent
+          centerCTA
+          title="How Filecoin storage stacks up"
+          description="Compare decentralized object storage against the traditional cloud storage."
+          cta={[
+            <Button href={PATHS.STORE_DATA.path} variant="primary">
+              Store data
+            </Button>,
+            <Button href="https://github.com/filecoin-project" variant="ghost">
+              Learn more
+            </Button>,
+          ]}
+        >
+          <ComparisonTable />
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="dark">
+        <SectionContent title="Open, scalable, and built for the future">
+          <SplitSectionContent
+            title="A decentralized, verifiable storage layer that scales."
+            description={[
+              'Filecoin gives developers a decentralized, verifiable storage layer that scales effortlessly. Power chain storage, dApps, data-heavy SaaS platforms, immutable archives, and beyond.',
+              'Accelerate development with open-source tools, native IPFS integration, cross-chain data bridges, and a permissionless storage marketplace. Build without compromise, knowing your data belongs to you and your users — not to centralized gatekeepers.',
             ]}
             cta={[
               <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="primary">
-                Explore builder's hub
-              </Button>,
-              <Button
-                href={FILECOIN_URLS.github}
-                variant="tertiary"
-                icon={GithubLogoIcon}
-              >
-                GitHub
+                Start building
               </Button>,
               <Button
                 href={FILECOIN_URLS.docs}
@@ -113,12 +183,6 @@ export default async function Home() {
 
       <PageSection backgroundVariant="light">
         <SectionContent title="Store your data with confidence">
-          <LogoSection
-            title="Join leading organizations leveraging Filecoin for a more resilient digital future"
-            logos={trustedByLogos}
-            tag="h3"
-          />
-
           <SplitSectionContent
             title="Secure, verifiable, long-term storage that you control."
             description="No matter what you're storing — your data remains tamper-proof and verifiable. Filecoin offers storage backed by a global network of independent data centers with automatic replication and lower egress fees."
@@ -141,7 +205,7 @@ export default async function Home() {
           title="Power a more open, resilient web"
           description="Join a global network of independent storage providers powering the Filecoin ecosystem."
           cta={[
-            <Button href={PATHS.OFFER_STORAGE.path} variant="primary">
+            <Button href={PATHS.PROVIDE_STORAGE.path} variant="primary">
               Become a storage provider
             </Button>,
             <Button
@@ -153,8 +217,6 @@ export default async function Home() {
           ]}
         >
           <LogoSection logos={resilientWebLogos} />
-
-          <SectionImage {...graphicsData.homepageSection} />
 
           <CardGrid as="ul" variant="smTwoLgThreeWider">
             {providerBenefits.map(({ title, description }) => (
@@ -237,7 +299,7 @@ export default async function Home() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
-          title="Join the community"
+          title="Join a vibrant community"
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
           <CardGridContainer width="4xl">

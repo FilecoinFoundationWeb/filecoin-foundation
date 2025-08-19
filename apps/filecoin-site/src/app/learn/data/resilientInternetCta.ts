@@ -21,7 +21,7 @@ export const resilientInternetCta: Array<LinkCardData> = [
   },
   {
     title: 'Become a storage provider',
-    href: PATHS.OFFER_STORAGE.path,
+    href: PATHS.PROVIDE_STORAGE.path,
     icon: DatabaseIcon,
   },
 ]

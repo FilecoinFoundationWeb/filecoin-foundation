@@ -12,13 +12,13 @@ type PostMetadataProps = {
 export function PostMetadata({ author, date }: PostMetadataProps) {
   const formattedDate = formatDate(date)
 
-  const baseStyles = 'font-mono text-sm text-zinc-600'
+  const baseStyles = 'font-mono text-sm text-[var(--color-text-paragraph)]'
 
   if (author) {
     return (
       <div className={clsx('flex items-center gap-2', baseStyles)}>
         <span>{formattedDate}</span>
-        <span className="text-zinc-400">|</span>
+        <span>|</span>
         <span>{author}</span>
       </div>
     )

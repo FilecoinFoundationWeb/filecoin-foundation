@@ -35,16 +35,13 @@
 
   --tracking-tight: -1%;
   --tracking-tighter: -2%;
-  --tracking-tightest: -3%;
 
   --tracking-wide: 1%;
   --tracking-wider: 2%;
-  --tracking-widest: 3%;
 }
 
 @theme inline {
   --font-sans: var(--font-funnel-sans);
-  --font-display: var(--font-funnel-display);
   --font-heading: var(--font-aspekta);
 }
 
@@ -55,7 +52,7 @@
 }
 
 @utility icon-button {
-  @apply rounded-full border-2 border-zinc-200;
+  @apply rounded-full border border-[var(--color-border-icon-button)] text-[var(--color-text-base)] hover:border-[var(--color-border-icon-button-hover)] hover:bg-[var(--color-bg-icon-button-hover)] focus:bg-[var(--color-bg-icon-button-hover)];
 
   .share-article-list & {
     @apply scale-70;
@@ -65,10 +62,16 @@
 /* SECTION VARIANT COLORS */
 .light-section {
   --color-text-base: theme('colors.zinc.950');
+
+  --color-text-subheading: theme('colors.zinc.600');
   --color-text-heading-muted: theme('colors.zinc.600');
-  --color-text-paragraph-important: theme('colors.zinc.600');
-  --color-text-paragraph-muted: theme('colors.zinc.600');
+
+  --color-text-paragraph-subtle: theme('colors.zinc.500');
+  --color-text-paragraph: theme('colors.zinc.600');
+  --color-text-paragraph-strong: theme('colors.zinc.800');
+
   --color-text-cta-link: theme('colors.zinc.600');
+
   --color-text-navigation-link: theme('colors.zinc.600');
   --color-text-navigation-link-active: theme('colors.zinc.950');
   --color-text-navigation-link-mobile-active: theme('colors.brand.900');
@@ -78,15 +81,28 @@
   --color-border-muted: theme('colors.zinc.950 / 10%');
 
   --color-logo: theme('colors.zinc.400');
-  --color-logo-hover: theme('colors.zinc.400 / 80%');
+  --color-logo-hover: theme('colors.zinc.500');
+
+  --color-card-heading-hover: theme('colors.brand.800');
+  --color-bg-card-hover: theme('colors.zinc.50');
+
+  --color-border-icon-button: theme('colors.zinc.300');
+  --color-border-icon-button-hover: theme('colors.zinc.400');
+  --color-bg-icon-button-hover: theme('colors.zinc.100');
 }
 
 .dark-section {
   --color-text-base: theme('colors.zinc.50');
+
+  --color-text-subheading: theme('colors.zinc.50');
   --color-text-heading-muted: theme('colors.zinc.200');
-  --color-text-paragraph-important: theme('colors.zinc.50');
-  --color-text-paragraph-muted: theme('colors.zinc.400');
+
+  --color-text-paragraph-subtle: theme('colors.zinc.500');
+  --color-text-paragraph: theme('colors.zinc.400');
+  --color-text-paragraph-strong: theme('colors.zinc.200');
+
   --color-text-cta-link: theme('colors.zinc.300');
+
   --color-text-navigation-link: theme('colors.zinc.300');
   --color-text-navigation-link-active: theme('colors.zinc.50');
   --color-text-navigation-link-mobile-active: theme('colors.brand.100');
@@ -97,12 +113,19 @@
 
   --color-logo: theme('colors.zinc.400');
   --color-logo-hover: theme('colors.zinc.50');
+
+  --color-card-heading-hover: theme('colors.brand.500');
+  --color-bg-card-hover: theme('colors.zinc.800');
+
+  --color-border-icon-button: theme('colors.zinc.600');
+  --color-border-icon-button-hover: theme('colors.zinc.500');
+  --color-bg-icon-button-hover: theme('colors.zinc.700');
 }
 
 @layer components {
   /* BUTTON */
   .button {
-    @apply font-display rounded-full border-2 px-6 py-4 text-base tracking-wider;
+    @apply rounded-full border-2 px-6 py-4 text-base tracking-wide;
 
     &.button--primary {
       @apply relative border-transparent;
@@ -192,7 +215,7 @@
       }
 
       .light-section & {
-        @apply bg-zinc-100 text-zinc-900;
+        @apply bg-zinc-100 text-zinc-950;
 
         &:not(:disabled):hover,
         &:focus {
@@ -293,7 +316,7 @@
 
   /* CARD */
   .card-image {
-    @apply border border-zinc-200;
+    @apply border border-[var(--color-border)];
   }
 
   /* COPY TO CLIPBOARD */
@@ -346,14 +369,6 @@
   .form-label {
     @apply inline-block text-sm font-medium;
 
-    .light-section & {
-      @apply text-zinc-950;
-    }
-
-    .dark-section & {
-      @apply text-zinc-50;
-    }
-
     & .form-label-optional-text {
       @apply ml-1 inline-block font-light;
     }
@@ -377,7 +392,7 @@
 
   /* LISTBOX BUTTON */
   .listbox-button {
-    @apply font-display relative w-full cursor-pointer border bg-white px-6 py-4 text-left tracking-wider;
+    @apply relative w-full cursor-pointer border bg-white px-6 py-4 text-left tracking-wide;
 
     &::before {
       background: var(--color-zinc-200) border-box;
@@ -429,7 +444,7 @@
     }
 
     & .pagination-delimiter {
-      @apply text-zinc-950/10;
+      @apply text-[var(--color-border-muted)];
     }
 
     & .pagination-index-container {
@@ -470,7 +485,7 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply focus:brand-outline font-display font-normal tracking-wider no-underline hover:underline;
+    @apply focus:brand-outline tracking-wide no-underline hover:underline;
 
     .light-section & {
       @apply text-brand-800;
@@ -483,10 +498,10 @@
 
   /* TOOLTIP */
   .tooltip {
-    @apply rounded-xl border border-zinc-200 bg-white text-zinc-950 shadow-sm;
+    @apply rounded-xl border border-zinc-200 bg-white shadow-sm;
 
     .tooltip-arrow {
-      @apply fill-zinc-300;
+      @apply fill-zinc-200;
     }
   }
 }
