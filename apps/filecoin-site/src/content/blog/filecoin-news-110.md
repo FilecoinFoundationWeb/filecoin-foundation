@@ -2,9 +2,6 @@
 title: Filecoin News 110
 draft: false
 excerpt: "\U0001F680 Filecoin & Avalanche launch a cross-chain data bridge via FVM—offload data with cryptographic proofs, lower costs, and unlock multi-chain scale."
-share_image: /assets/images/FilecoinNewsHeader.webp
-image:
-  url: /assets/images/FilecoinNewsHeader.webp
 author: Emily Vaughan
 published_on: 2025-05-27T04:00:00.000Z
 categories:
