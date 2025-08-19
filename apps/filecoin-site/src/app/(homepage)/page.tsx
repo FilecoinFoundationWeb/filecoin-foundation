@@ -30,8 +30,6 @@ import { Announcement } from './components/Announcement'
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { communityLinks } from './data/communityLinks'
 import { networkPrinciples } from './data/networkPrinciples'
-import { providerBenefits } from './data/providerBenefits'
-import { resilientWebLogos } from './data/resilientWebLogos'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 import { BlogCard } from '@/blog/components/BlogCard'
@@ -196,38 +194,6 @@ export default async function Home() {
               </Button>,
             ]}
           />
-        </SectionContent>
-      </PageSection>
-
-      <PageSection backgroundVariant="dark">
-        <SectionContent
-          centerCTA
-          title="Power a more open, resilient web"
-          description="Join a global network of independent storage providers powering the Filecoin ecosystem."
-          cta={[
-            <Button href={PATHS.PROVIDE_STORAGE.path} variant="primary">
-              Become a storage provider
-            </Button>,
-            <Button
-              href={`${FILECOIN_URLS.docs}storage-providers/basics`}
-              variant="ghost"
-            >
-              Explore documentation
-            </Button>,
-          ]}
-        >
-          <LogoSection logos={resilientWebLogos} />
-
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
-            {providerBenefits.map(({ title, description }) => (
-              <Card
-                key={title}
-                as="li"
-                title={title}
-                description={description}
-              />
-            ))}
-          </CardGrid>
         </SectionContent>
       </PageSection>
 

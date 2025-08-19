@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -12,6 +13,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
+import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -27,6 +29,7 @@ import { coreInfrastructureSpecs } from './data/coreInfrastructureSpecs'
 import { dataCenterRequirements } from './data/dataCenterRequirements'
 import { filecoinEarningsInsights } from './data/filecoinEarningsInsights'
 import { specializedInfrastructureSpecs } from './data/specializedInfrastructureSpecs'
+import { storageProvidersLogos } from './data/storageProvidersLogos'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function ProvideStorage() {
@@ -47,16 +50,27 @@ export default function ProvideStorage() {
           <PageHeader
             title="Power a more open and resilient web"
             description="Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important information."
-            cta={
+            cta={[
               <Button href="#todo" variant="primary">
                 Book a call with the onboarding team
-              </Button>
-            }
+              </Button>,
+              <Button href={FILECOIN_URLS.github} variant="ghost">
+                Explore documentation
+              </Button>,
+            ]}
           />
         </PageSection>
 
         <graphicsData.planetsShadow.data className="-z-10 w-[125vw] -translate-x-1/12 transform overflow-visible py-4 sm:mx-auto sm:w-4/5 sm:py-16 lg:absolute lg:top-[20%] lg:-right-1/5 lg:mx-0 lg:w-[760px] lg:py-0 2xl:w-[860px]" />
       </div>
+
+      <PageSection backgroundVariant="dark">
+        <LogoSection
+          title="Join a global network of storage providers"
+          tag="h2"
+          logos={storageProvidersLogos}
+        />
+      </PageSection>
 
       <PageSection backgroundVariant="dark">
         <SectionContent
