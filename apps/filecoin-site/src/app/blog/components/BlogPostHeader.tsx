@@ -17,7 +17,7 @@ import { Categories } from './Categories'
 import { PostMetadata } from './PostMetadata'
 
 type BlogPostHeaderProps = {
-  image: BlogPost['image']
+  image?: string
   categories: BlogPost['categories']
   title: BlogPost['title']
   slug: string
@@ -40,7 +40,7 @@ export function BlogPostHeader({
           fill
           priority
           quality={100}
-          src={image?.url || graphicsData.fallback.data.src}
+          src={image || graphicsData.fallback.data.src}
           alt=""
           className="object-cover"
           sizes="100vw"

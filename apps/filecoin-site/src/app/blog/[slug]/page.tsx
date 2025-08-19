@@ -16,8 +16,6 @@ import { getBlogPostData } from '../utils/getBlogPostData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
-import headerImage from '@/assets/images/042425-PDP_BlogHeader.webp'
-
 type BlogPostProps = {
   params: Promise<SlugParams>
 }
@@ -35,7 +33,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
       <Section backgroundVariant="light">
         <div className="space-y-8 pb-30">
           <BlogPostHeader
-            image={{ url: image?.url || headerImage.src }}
+            image={image?.url}
             categories={categories}
             author={author}
             date={publishedOn}
