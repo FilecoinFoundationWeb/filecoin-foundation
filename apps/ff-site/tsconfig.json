@@ -15,7 +15,6 @@
       "@/data/*": ["./src/app/_data/*"],
       "@/hooks/*": ["./src/app/_hooks/*"],
       "@/schemas/*": ["./src/app/_schemas/*"],
-      "@/services/*": ["./src/app/_services/*"],
       "@/styles/*": ["./src/app/_styles/*"],
       "@/support/*": ["./cypress/support/*"],
       "@/types/*": ["./src/app/_types/*"],
