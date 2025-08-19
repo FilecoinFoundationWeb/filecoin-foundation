@@ -51,9 +51,7 @@ export function LinkCard({
         </span>
 
         {description && (
-          <p className="tracking-tight text-[var(--color-text-paragraph-muted)]">
-            {description}
-          </p>
+          <p className="text-[var(--color-text-paragraph)]">{description}</p>
         )}
       </div>
 

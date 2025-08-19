@@ -5,9 +5,12 @@ import {
   ListboxOptions,
 } from '@headlessui/react'
 import { CaretDownIcon } from '@phosphor-icons/react'
+import { clsx } from 'clsx'
 
 import { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter/constants'
 import { Icon } from '@filecoin-foundation/ui/Icon'
+
+import { backgroundVariants } from '@/components/Section'
 
 import { blogCategories, type BlogCategoryKey } from '../data/blogCategories'
 import { useCategoryState } from '../hooks/useCategoryState'
@@ -20,18 +23,21 @@ export function CategoryListbox() {
   return (
     <Listbox value={selectedCategory} onChange={handleCategoryChange}>
       <ListboxButton className="listbox-button group">
-        <span className="block truncate pr-6 font-medium">
+        <span className="block truncate pr-6">
           {getCategoryDisplayName(selectedCategory)}
         </span>
 
-        <div className="pointer-events-none absolute inset-y-0 right-6 flex items-center text-zinc-950 group-data-open:rotate-180">
+        <div className="pointer-events-none absolute inset-y-0 right-6 flex items-center group-data-open:rotate-180">
           <Icon component={CaretDownIcon} size={16} weight="bold" />
         </div>
       </ListboxButton>
 
       <ListboxOptions
-        className="focus:brand-outline mt-2 w-[var(--button-width)] space-y-2 border border-zinc-200 bg-white p-2 shadow-lg"
         anchor="bottom start"
+        className={clsx(
+          backgroundVariants.light,
+          'focus:brand-outline mt-2 w-[var(--button-width)] space-y-2 border border-[var(--color-border)] p-2 shadow-lg',
+        )}
       >
         {blogCategories.map((category) => {
           const { id } = category
@@ -45,7 +51,7 @@ export function CategoryListbox() {
             >
               <div className="px-4 py-3 group-data-selected:bg-zinc-100">
                 <div className="flex items-center gap-4">
-                  <p className="font-medium text-zinc-600 group-data-selected:text-zinc-800">
+                  <p className="font-medium text-[var(--color-text-paragraph)] group-data-focus:text-[var(--color-text-paragraph-strong)] group-data-selected:text-[var(--color-text-paragraph-strong)]">
                     {displayName}
                   </p>
                 </div>

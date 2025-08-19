@@ -50,7 +50,7 @@ export function BlogCard({
             </Heading>
           </span>
 
-          <p className="text-zinc-600">{description}</p>
+          <p className="text-[var(--color-text-paragraph)]">{description}</p>
 
           <PostMetadata author={author} date={date} />
         </div>
