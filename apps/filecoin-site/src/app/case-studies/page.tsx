@@ -69,7 +69,7 @@ export default function CaseStudies() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Preserve your most important data with Filecoin"
-          description="Join the organizations already protecting their most valuable datasets on Filecoin’s secure, decentralized storage network."
+          description="Join the organizations already protecting their most valuable datasets on Filecoin's secure, decentralized storage network."
           cta={
             <Button href={PATHS.STORE_DATA.path} variant="primary">
               Start storing on Filecoin
