@@ -77,9 +77,7 @@ export function SimpleCard({
               {title}
             </Heading>
           </span>
-          <p className="text-[var(--color-text-paragraph-muted)]">
-            {description}
-          </p>
+          <p className="text-[var(--color-text-paragraph)]">{description}</p>
         </div>
         {cta && (
           <CTALink
