@@ -6,9 +6,9 @@ const CTA_TEXT = 'Learn more'
 
 export const filecoinEarningsInsights: Array<SimpleCardData> = [
   {
-    title: 'Earn rewards',
+    title: 'Earn Filecoin and Fiat',
     description:
-      "Providers are compensated for reliable storage via the Filecoin network's reward system.",
+      "Providers are compensated for reliable storage via the network's reward system.",
     cta: {
       href: `${FILECOIN_URLS.docs}storage-providers/filecoin-economics/block-rewards#block-rewards`,
       text: CTA_TEXT,
@@ -17,7 +17,7 @@ export const filecoinEarningsInsights: Array<SimpleCardData> = [
   {
     title: 'More storage, more rewards',
     description:
-      'Growing your storage capacity unlocks greater block rewards, reflecting your increased contribution to the network’s foundation.',
+      "Growing your storage capacity unlocks greater block rewards, reflecting your increased contribution to the network's foundation.",
     cta: {
       href: `${FILECOIN_URLS.docs}storage-providers/filecoin-economics/block-rewards#impact-of-storage-capacity-on-block-rewards`,
       text: CTA_TEXT,
