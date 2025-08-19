@@ -47,7 +47,8 @@ export default async function Home() {
       <Navigation backgroundVariant="dark" />
       <Section backgroundVariant="dark">
         <Container>
-          <div className="space-y-15 pt-32 pb-24">
+          <div className="space-y-15 pt-24 pb-24 md:pt-32">
+            {/* todo look into when we need space-y-15 */}
             <Announcement centered href={PATHS.BLOG.path}>
               Announcing Filecoin Onchain Cloud
             </Announcement>
@@ -74,7 +75,8 @@ export default async function Home() {
         </div>
       </Section>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection paddingVariant="none" backgroundVariant="dark">
+        <div className="py-12" />
         <LogoSection
           title="Trusted by industry leaders"
           logos={trustedByLogos}
@@ -109,7 +111,7 @@ export default async function Home() {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="light">
+      <PageSection paddingVariant="none" backgroundVariant="light">
         <SectionContent
           title="The missing incentive layer to IPFS"
           cta={

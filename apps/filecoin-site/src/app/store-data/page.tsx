@@ -53,13 +53,11 @@ export default function StoreData() {
         />
       </div>
 
-      <PageSection backgroundVariant="dark">
-        <div className="-mb-10">
-          <LogoSection
-            title="Trusted by industry leaders"
-            logos={trustedByLogos}
-          />
-        </div>
+      <PageSection paddingVariant="none" backgroundVariant="dark">
+        <LogoSection
+          title="Trusted by industry leaders"
+          logos={trustedByLogos}
+        />
       </PageSection>
 
       <PageSection backgroundVariant="dark">

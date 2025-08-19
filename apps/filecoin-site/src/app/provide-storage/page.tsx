@@ -64,7 +64,8 @@ export default function ProvideStorage() {
         <graphicsData.planetsShadow.data className="-z-10 w-[125vw] -translate-x-1/12 transform overflow-visible py-4 sm:mx-auto sm:w-4/5 sm:py-16 lg:absolute lg:top-[20%] lg:-right-1/5 lg:mx-0 lg:w-[760px] lg:py-0 2xl:w-[860px]" />
       </div>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection paddingVariant="none" backgroundVariant="dark">
+        <div className="py-24" />
         <LogoSection
           title="Join a global network of storage providers"
           tag="h2"

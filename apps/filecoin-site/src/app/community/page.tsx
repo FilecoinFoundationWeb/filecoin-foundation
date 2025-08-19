@@ -76,7 +76,7 @@ export default function BuildOnFilecoin() {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="light">
+      <PageSection paddingVariant="topOnly" backgroundVariant="light">
         <SectionContent
           title="Connect with the community"
           description="Connect with a vibrant network of developers building on Filecoin.

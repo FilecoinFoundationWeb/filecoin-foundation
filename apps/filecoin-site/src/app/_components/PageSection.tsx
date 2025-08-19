@@ -1,16 +1,29 @@
+import clsx from 'clsx'
+
 import { Container } from '@/components/Container'
 import { Section, type SectionProps } from '@/components/Section'
 
 type PageSectionProps = {
   backgroundVariant: SectionProps['backgroundVariant']
+  paddingVariant?: keyof typeof paddingVariants
   children: React.ReactNode
 }
 
-export function PageSection({ backgroundVariant, children }: PageSectionProps) {
+const paddingVariants = {
+  default: 'py-24 md:py-32',
+  none: 'py-0',
+  topOnly: 'pt-24 md:pt-32 pb-0',
+}
+
+export function PageSection({
+  backgroundVariant,
+  paddingVariant = 'default',
+  children,
+}: PageSectionProps) {
   return (
     <Section backgroundVariant={backgroundVariant}>
       <Container>
-        <div className="py-25 md:py-35">{children}</div>
+        <div className={clsx(paddingVariants[paddingVariant])}>{children}</div>
       </Container>
     </Section>
   )
