@@ -172,9 +172,9 @@ export default function BuildOnFilecoin() {
           description="Whether you're just getting started or looking to deepen your
           contributions, there are many ways to get involved."
         >
-          <ImageGrid as="ul" variant="oneMdThree">
-            {getInvolvedImages.map(({ image }) => (
-              <Image key={image.alt} src={image.data} alt={image.alt} />
+          <ImageGrid variant="oneMdThree">
+            {getInvolvedImages.map(({ data, alt }) => (
+              <Image key={alt} src={data} alt={alt} />
             ))}
           </ImageGrid>
 
