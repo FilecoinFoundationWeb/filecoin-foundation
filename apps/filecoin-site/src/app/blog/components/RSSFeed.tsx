@@ -13,7 +13,9 @@ export function RSSFeed() {
       className="focus:brand-outline flex items-center gap-3"
     >
       <Icon component={RSSFeedIcon} size={14} aria-hidden="true" />
-      <span className="text-zinc-500">Available in RSS</span>
+      <span className="text-[var(--color-text-paragraph-subtle)]">
+        Available in RSS
+      </span>
     </Link>
   )
 }
