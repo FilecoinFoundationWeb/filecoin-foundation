@@ -27,7 +27,9 @@ import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { Announcement } from './components/Announcement'
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
+import { MetricCard } from './components/MetricCard'
 import { communityLinks } from './data/communityLinks'
+import { filecoinByTheNumbers } from './data/filecoinByTheNumbers'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 import { BlogCard } from '@/blog/components/BlogCard'
@@ -85,7 +87,18 @@ export default async function Home() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <SectionContent title="Filecoin by the numbers" />
+        <SectionContent centerTitle title="Filecoin by the numbers">
+          <CardGrid as="ul" variant="smThree">
+            {filecoinByTheNumbers.map(({ title, subTitle, description }) => (
+              <MetricCard
+                key={title}
+                title={title}
+                subTitle={subTitle}
+                description={description}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="light">
