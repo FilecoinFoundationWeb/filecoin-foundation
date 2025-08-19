@@ -1,23 +1,23 @@
-import type { WebPage, WithContext } from 'schema-dts'
-
+import type { BlogPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import type { StructuredDataParams } from '@filecoin-foundation/utils/types/structuredDataParams'
 
 import { PATHS } from '@/constants/paths'
-import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
+import { BASE_URL } from '@/constants/siteMetadata'
 
-import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
+import type { BlogPost } from '../types/blogPostType'
+
+import { generateBlogStructuredData } from './generateBlogStructuredData'
 
 export function generateStructuredData(
   seo: StructuredDataParams,
-): WithContext<WebPage> {
-  const baseData = generateWebPageStructuredData({
-    title: seo.title,
-    description: seo.description,
+  sortedPosts: Array<BlogPost>,
+): BlogPageGraph {
+  return generateBlogStructuredData({
     path: PATHS.BLOG.path,
+    name: seo.title,
+    items: sortedPosts.map((post) => ({
+      url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
+      name: post.title,
+    })),
   })
-
-  return {
-    ...baseData,
-    about: ORGANIZATION_SCHEMA_BASE,
-  }
 }

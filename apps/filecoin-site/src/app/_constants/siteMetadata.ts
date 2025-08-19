@@ -41,6 +41,13 @@ const FILECOIN_URLS = {
   },
 } as const
 
+const FILECOIN_FOUNDATION_URLS = {
+  emails: {
+    contact: 'hello@fil.org',
+    devgrants: 'devgrants@fil.org',
+  },
+} as const
+
 const ROOT_METADATA = {
   title: {
     template: `${ORGANIZATION_NAME} | %s`,
@@ -52,6 +59,7 @@ const ROOT_METADATA = {
 export {
   BASE_DOMAIN,
   BASE_URL,
+  FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
   ORGANIZATION_NAME,
   ROOT_METADATA,

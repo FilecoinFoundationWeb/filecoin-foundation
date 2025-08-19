@@ -5,7 +5,6 @@ import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlog
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS, SEO } from '@/constants/siteMetadata'
-import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
@@ -33,6 +32,7 @@ import { communityLinks } from './data/communityLinks'
 import { networkPrinciples } from './data/networkPrinciples'
 import { providerBenefits } from './data/providerBenefits'
 import { resilientWebLogos } from './data/resilientWebLogos'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPost } from '@/blog/types/blogPostType'
@@ -46,7 +46,7 @@ export default async function Home() {
 
   return (
     <>
-      <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
+      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
 
       <Navigation backgroundVariant="dark" />
       <Section backgroundVariant="dark">

@@ -1,7 +1,51 @@
-import type { Thing, WithContext } from 'schema-dts'
+import type {
+  BreadcrumbList,
+  Blog,
+  Organization,
+  Service,
+  Thing,
+  WebPage,
+  WebSite,
+  WithContext,
+  ItemList,
+  BlogPosting,
+} from 'schema-dts'
+
+import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
+
+export type WebPageGraph = {
+  '@context': typeof SCHEMA_CONTEXT_URL
+  '@graph': Array<WebPage | BreadcrumbList>
+}
+
+export type ServicePageGraph = {
+  '@context': typeof SCHEMA_CONTEXT_URL
+  '@graph': Array<Service | BreadcrumbList>
+}
+
+export type BlogPageGraph = {
+  '@context': typeof SCHEMA_CONTEXT_URL
+  '@graph': Array<Blog | ItemList | BreadcrumbList>
+}
+
+export type BlogPostPageGraph = {
+  '@context': typeof SCHEMA_CONTEXT_URL
+  '@graph': Array<BlogPosting | BreadcrumbList>
+}
+
+export type OrganizationGraph = {
+  '@context': typeof SCHEMA_CONTEXT_URL
+  '@graph': readonly [Organization, WebSite]
+}
 
 type StructuredDataScriptProps = {
-  structuredData: WithContext<Thing>
+  structuredData:
+    | WithContext<Thing>
+    | WebPageGraph
+    | ServicePageGraph
+    | BlogPageGraph
+    | BlogPostPageGraph
+    | OrganizationGraph
 }
 
 export function StructuredDataScript({

@@ -25,7 +25,9 @@ export default async function Blog() {
 
   return (
     <>
-      <StructuredDataScript structuredData={generateStructuredData(BLOG_SEO)} />
+      <StructuredDataScript
+        structuredData={generateStructuredData(BLOG_SEO, sortedPosts)}
+      />
       <Navigation backgroundVariant="light" />
       <BackgroundImage
         overlayVariant="dark"
