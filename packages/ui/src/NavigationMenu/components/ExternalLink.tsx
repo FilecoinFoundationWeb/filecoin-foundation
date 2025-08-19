@@ -4,38 +4,35 @@ import { ArrowUpRightIcon } from '@phosphor-icons/react'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
+import type { LinkItemProps } from '../types'
+
+import { LinkDescription } from './LinkDescription'
+import { LinkLabel } from './LinkLabel'
+
 type ExternalLinkProps = Omit<
   AnchorHTMLAttributes<HTMLAnchorElement>,
   'children'
-> & {
-  href: string
-  label: string
-  description?: string
-  ariaLabel?: string
-}
+> &
+  LinkItemProps
 
 export function ExternalLink({
-  href,
   label,
   description,
-  ariaLabel,
   ...rest
 }: ExternalLinkProps) {
   return (
-    <a
-      aria-label={ariaLabel}
-      href={href}
-      rel="noopener noreferrer"
-      target="_blank"
-      {...rest}
-    >
+    <a {...rest} rel="noopener noreferrer" target="_blank">
       <div className="group inline-flex items-center gap-1">
-        <p className="font-bold">{label}</p>
-        <span className="text-brand-400 group-hover:text-brand-100">
+        <LinkLabel>{label}</LinkLabel>
+        <span className="navigation-menu-link-external-icon">
           <Icon component={ArrowUpRightIcon} size={20} />
         </span>
       </div>
-      {description && <p className="text-brand-300 mt-1">{description}</p>}
+      {description && (
+        <div className="mt-1">
+          <LinkDescription>{description}</LinkDescription>
+        </div>
+      )}
     </a>
   )
 }
