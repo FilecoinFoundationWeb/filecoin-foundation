@@ -13,24 +13,27 @@ type FilecoinFeature = {
 
 export const filecoinFeatures: FilecoinFeature[] = [
   {
-    title: 'Persistent, verifiable storage',
+    title: 'AI data storage',
     description:
-      "Your users' data is cryptographically proven to be stored and retrievable.",
+      "Store AI datasets with cryptographic integrity and global redundancy. Filecoin's programmable storage layer is designed for data-intensive and large-scale data storage.",
     icon: SparkleIcon,
   },
   {
-    title: 'Native IPFS integration',
-    description: 'Store and retrieve with IPFS-compatible tools.',
+    title: 'Large archival storage',
+    description:
+      'Archive large datasets, especially datasets that would be good for AI training.',
     icon: StackSimpleIcon,
   },
   {
-    title: 'Scales with your app',
-    description: 'From MBs to petabytes, with predictable costs.',
+    title: 'Cross-chain data bridges',
+    description:
+      'Easily write data bridges that store data from other chains on Filecoin. With native interoperability, Filecoin keeps your data accessible and verifiable.',
     icon: IntersectThreeIcon,
   },
   {
-    title: 'Cross-chain ready',
-    description: 'Bridges and SDKs for multi-chain workflows.',
+    title: 'Storage-enabled dApps',
+    description:
+      'Build decentralized, resilient applications with permissionless storage and FVM-powered smart contracts.',
     icon: BridgeIcon,
   },
 ]

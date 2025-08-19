@@ -46,7 +46,7 @@ export default function BuildOnFilecoin() {
       <PageSection backgroundVariant="dark">
         <PageHeader
           title="Build on Filecoin: open, scalable, verifiable storage"
-          description="Scale storage like the cloud, own it like your code. Filecoin is open-source, self-hostable, and built on shared APIs running on permissionless infrastructure — giving developers performance, flexibility, and data sovereignty."
+          description="Filecoin is a programmable, permissionless network from the ground up with cryptographic verification and global redundancy. Integrate decentralized storage that scales with your needs and safeguards data integrity at every layer."
           cta={
             <Button href={FILECOIN_URLS.docs} variant="primary">
               Explore documentation
@@ -64,7 +64,7 @@ export default function BuildOnFilecoin() {
       <PageSection backgroundVariant="dark">
         <SectionContent title="Announcing Filecoin Onchain Cloud">
           <SplitSectionContent
-            title="Verifiable onchain services with transparent storage, retrieval, and payments."
+            title="Verifiable onchain services with transparent storage, retrieval, and payments"
             description={[
               'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pinning, retrieval, and payments are transparent, programmable, and interoperable by default. ,',
               'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
