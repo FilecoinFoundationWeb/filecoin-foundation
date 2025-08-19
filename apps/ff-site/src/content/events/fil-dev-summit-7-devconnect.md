@@ -14,7 +14,7 @@ start-date: 2025-11-13
 end-date: 2025-11-15
 external-link: https://www.fildev.io/FDS-7
 image:
-  src: /assets/images/devsummit7_social2-squooshed.webp
+  src: /assets/images/devsummit7_main-1-.png
 seo:
   title: FDS-7 | FIL Dev Summit 7 @ DevConnect | Buenos Aires, Argentina
   description: Join developers, partners & core contributors at FDS-7 to build
