@@ -1,20 +1,35 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
+import BuildpageGradient from '@/assets/graphics/build-gradient.svg'
+import caseStudies from '@/assets/graphics/casestudies.svg'
 import ClassicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
+import communityHero from '@/assets/graphics/community.svg'
 import DataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import Diagram from '@/assets/graphics/diagram.webp'
 import DigitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
+import EarthAtNight from '@/assets/graphics/earth-at-night.png'
 import EarthFromSpaceAtNight from '@/assets/graphics/earth-from-space-at-night.webp'
 import EarthGlobe from '@/assets/graphics/earth-globe.webp'
 import FilecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import FilecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import FilecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
+import HomepageGradient from '@/assets/graphics/homepage-gradient.svg'
+import planetsShadow from '@/assets/graphics/planets-shadow.svg'
 import ServerBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
+import starsSpinning from '@/assets/graphics/stars-spinning.webp'
 
 export const graphicsData = {
+  homepageGradient: {
+    data: HomepageGradient,
+    alt: 'Gradient background for homepage',
+  },
   buildOnFilecoinHero: {
     data: DataCenterServerRow,
     alt: 'Row of server racks in a modern data center with blue LED lighting',
+  },
+  buildOnFilecoinGradient: {
+    data: BuildpageGradient,
+    alt: 'Gradient background for build on filecoin page',
   },
   buildOnFilecoinSection: {
     data: EarthFromSpaceAtNight,
@@ -24,7 +39,6 @@ export const graphicsData = {
     data: EarthGlobe,
     alt: 'Minimalist Earth globe with clean geometric design and network connections',
   },
-
   learnHero: {
     data: FilecoinServerRack,
     alt: 'Filecoin server rack with multiple blade servers and network connections',
@@ -52,5 +66,25 @@ export const graphicsData = {
   storeDataHero: {
     data: DigitalMediaConversionSetup,
     alt: 'Digital media conversion setup with various equipment and cables',
+  },
+  earthAtNight: {
+    data: EarthAtNight,
+    alt: 'Earth at night with city lights and continents',
+  },
+  starsSpinning: {
+    data: starsSpinning,
+    alt: 'Stars spinning in space',
+  },
+  planetsShadow: {
+    data: planetsShadow,
+    alt: 'Planets casting shadows on each other',
+  },
+  caseStudies: {
+    data: caseStudies,
+    alt: 'Case studies page hero image',
+  },
+  communityHero: {
+    data: communityHero,
+    alt: 'Community page hero image',
   },
 } as const satisfies Record<string, StaticImageProps>
