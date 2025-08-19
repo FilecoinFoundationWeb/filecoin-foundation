@@ -36,7 +36,7 @@ export default function Learn() {
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="The authenticity layer of a more resilient internet"
-            description="Filecoin exists to decentralize the world's information infrastructure, giving users control over their data and creating a more resilient, transparent, and equitable foundation for the internet."
+            description="Filecoin is the world’s largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's most important information, keeping it free from centralized control."
             cta={
               <Button href={FILECOIN_URLS.docs} variant="primary">
                 Explore documentation
@@ -56,9 +56,8 @@ export default function Learn() {
         <SectionContent
           title="What is Filecoin?"
           description={[
-            'Filecoin is a decentralized storage network where users can store, retrieve, and verify data.',
-
-            'Instead of relying on a single company or data centre, Filecoin distributes data across a global marketplace of independent storage providers, secured by cryptographic proofs.',
+            "Filecoin is the world's largest decentralized storage network, creating a decentralized, efficient, and robust foundation for humanity's most important information.",
+            "Today, a handful of corporations control most of the world's data, creating centralized gatekeepers that limit transparency and introduce single points of failure. Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, protected by cryptographic proofs.",
           ]}
         >
           <YouTubeVideoEmbed videoUrl={WHAT_IS_FILECOIN_VIDEO_URL} />
@@ -69,7 +68,7 @@ export default function Learn() {
         <SectionContent
           centerCTA
           title="What is Filecoin used for?"
-          description="Whether you're backing up a petabyte or building a next-gen application, Filecoin offers verifiable, decentralized storage at scale."
+          description="Filecoin is a better foundation for the next generation of the web. From everyday backups to advanced Web3 apps, Filecoin offers verifiable, decentralized storage at scale."
           cta={[
             <Button href={PATHS.CASE_STUDIES.path} variant="primary">
               Explore case studies
@@ -121,7 +120,7 @@ export default function Learn() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Be a part of a more resilient internet"
-          description="Filecoin is more than storage — it's an innovative ecosystem working to verify and preserve humanity's most important information."
+          description="Filecoin is more than storage; it's an innovative, open ecosystem built to preserve humanity's most important information."
         >
           <CardGrid as="ul" variant="smThree">
             {resilientInternetCta.map(({ title, href, icon }) => (

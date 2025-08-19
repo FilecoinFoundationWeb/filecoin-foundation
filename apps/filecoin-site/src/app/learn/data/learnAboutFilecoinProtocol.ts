@@ -8,7 +8,7 @@ export const learnAboutFilecoinProtocol: Array<SimpleCardData> = [
   {
     title: 'Content addressing',
     description:
-      'Files are retrieved based on what they are (cryptographic CIDs), not where they live..',
+      'Files are retrieved via content identifiers (CIDs) instead of location-based URLs prone to deterioration.',
     cta: {
       href: `${FILECOIN_URLS.docs}basics/the-blockchain/proofs#proof-of-replication-porep`,
       text: CTA_TEXT,
@@ -17,7 +17,7 @@ export const learnAboutFilecoinProtocol: Array<SimpleCardData> = [
   {
     title: 'Storage & retrieval deals',
     description:
-      'Clients form programmable deals with independent storage providers in a global marketplace.',
+      'Clients make programmable deals with independent storage providers in a global marketplace.',
     cta: {
       href: `${FILECOIN_URLS.docs}basics/the-blockchain/proofs#proof-of-spacetime-post`,
       text: CTA_TEXT,
@@ -33,7 +33,7 @@ export const learnAboutFilecoinProtocol: Array<SimpleCardData> = [
     },
   },
   {
-    title: 'Token incentives (FIL)',
+    title: 'Token Incentives (FIL)',
     description:
       'The native token aligns economic incentives and rewards useful storage over time.',
     cta: {
@@ -44,7 +44,7 @@ export const learnAboutFilecoinProtocol: Array<SimpleCardData> = [
   {
     title: 'Filecoin Virtual Machine (FVM)',
     description:
-      'Smart-contract layer that lets developers build logic, automation, and apps on top of Filecoin storage.',
+      'The smart-contract layer that lets developers build logic, automation, and apps on top of Filecoin storage.',
     cta: {
       href: `${FILECOIN_URLS.docs}smart-contracts/fundamentals/the-fvm`,
       text: CTA_TEXT,
