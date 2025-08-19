@@ -12,7 +12,6 @@ export type VariantClasses = {
 
 export type NavigationMenuLinkProps<Variants extends VariantClasses> =
   LinkItemProps & {
-    href: string
     variants: { options: Variants; selected: keyof Variants }
     baseDomain: string
   }

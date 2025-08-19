@@ -1,22 +1,21 @@
-import type { ComponentProps } from 'react'
-
-import Link from 'next/link'
+import Link, { type LinkProps } from 'next/link'
 
 import type { LinkItemProps } from '../types'
 
 import { LinkDescription } from './LinkDescription'
 import { LinkLabel } from './LinkLabel'
 
-type InternalLinkProps = Omit<ComponentProps<typeof Link>, 'children'> &
+type InternalLinkProps = Omit<LinkProps<unknown>, 'children' | 'href'> &
   LinkItemProps
 
 export function InternalLink({
   label,
+  href,
   description,
   ...rest
 }: InternalLinkProps) {
   return (
-    <Link {...rest}>
+    <Link href={href as LinkProps<unknown>['href']} {...rest}>
       <LinkLabel>{label}</LinkLabel>
 
       {description && (

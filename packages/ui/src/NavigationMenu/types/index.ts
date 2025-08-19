@@ -4,6 +4,7 @@ import type {
 } from '../NavigationMenuLink'
 
 export type LinkItemProps = {
+  href: string
   label: string
   description?: string
 }

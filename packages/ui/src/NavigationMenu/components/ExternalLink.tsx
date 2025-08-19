@@ -1,4 +1,4 @@
-import type { AnchorHTMLAttributes } from 'react'
+import type { ComponentProps } from 'react'
 
 import { ArrowUpRightIcon } from '@phosphor-icons/react'
 
@@ -9,10 +9,7 @@ import type { LinkItemProps } from '../types'
 import { LinkDescription } from './LinkDescription'
 import { LinkLabel } from './LinkLabel'
 
-type ExternalLinkProps = Omit<
-  AnchorHTMLAttributes<HTMLAnchorElement>,
-  'children'
-> &
+type ExternalLinkProps = Omit<ComponentProps<'a'>, 'children' | 'href'> &
   LinkItemProps
 
 export function ExternalLink({
