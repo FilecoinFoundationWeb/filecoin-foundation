@@ -1,4 +1,6 @@
-export const filecoinByTheNumbers = [
+import type { MetricCardProps } from '../components/MetricCard'
+
+export const filecoinByTheNumbers: Array<MetricCardProps> = [
   {
     title: '3.12 EiB',
     subTitle: 'network storage capacity',

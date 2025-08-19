@@ -1,4 +1,4 @@
-type MetricCardProps = {
+export type MetricCardProps = {
   title: string
   subTitle: string
   description: string
