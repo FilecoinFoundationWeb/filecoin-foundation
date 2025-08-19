@@ -11,7 +11,6 @@ import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -48,35 +47,36 @@ export default async function Home() {
   return (
     <>
       <StructuredDataScript structuredData={generateStructuredData(SEO)} />
-      <BackgroundImage
-        withOpacity
-        src={graphicsData.homepageHero.data.src}
-        blurDataURL={graphicsData.homepageHero.data.blurDataURL}
-      >
-        <Navigation backgroundVariant="dark" />
-        <Section backgroundVariant="dark">
-          <Container>
-            <div className="space-y-15 pt-32 pb-24">
-              <Announcement centered href={PATHS.BLOG.path}>
-                Announcing Filecoin Onchain Cloud
-              </Announcement>
-              <PageHeader
-                centered
-                title="Preserve humanity's most important information"
-                description="Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control."
-                cta={[
-                  <Button href={PATHS.STORE_DATA.path} variant="primary">
-                    Store data
-                  </Button>,
-                  <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
-                    Start building
-                  </Button>,
-                ]}
-              />
-            </div>
-          </Container>
-        </Section>
-      </BackgroundImage>
+
+      <Navigation backgroundVariant="dark" />
+      <Section backgroundVariant="dark">
+        <Container>
+          <div className="space-y-15 pt-32 pb-24">
+            <Announcement centered href={PATHS.BLOG.path}>
+              Announcing Filecoin Onchain Cloud
+            </Announcement>
+            <PageHeader
+              centered
+              title="Preserve humanity's most important information"
+              description="Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control."
+              cta={[
+                <Button href={PATHS.STORE_DATA.path} variant="primary">
+                  Store data
+                </Button>,
+                <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
+                  Start building
+                </Button>,
+              ]}
+            />
+          </div>
+        </Container>
+      </Section>
+
+      <Section backgroundVariant="dark">
+        <div className="overflow-x-clip overflow-y-visible">
+          <graphicsData.homepageGradient.data className="w-[200%] -translate-x-1/3 transform overflow-visible" />
+        </div>
+      </Section>
 
       <PageSection backgroundVariant="dark">
         <LogoSection

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
@@ -7,7 +9,6 @@ import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -27,11 +28,8 @@ export default function StoreData() {
       <StructuredDataScript
         structuredData={generateStructuredData(STORE_DATA_SEO)}
       />
-      <BackgroundImage
-        overlayVariant="dark"
-        src={graphicsData.storeDataHero.data.src}
-        blurDataURL={graphicsData.storeDataHero.data.blurDataURL}
-      >
+
+      <div className="relative isolate overflow-clip">
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
@@ -47,7 +45,13 @@ export default function StoreData() {
             }
           />
         </PageSection>
-      </BackgroundImage>
+
+        <Image
+          src={graphicsData.starsSpinning.data}
+          alt={graphicsData.starsSpinning.alt}
+          className="absolute right-0 bottom-0 -z-10 h-full object-cover object-bottom-right"
+        />
+      </div>
 
       <PageSection backgroundVariant="dark">
         <div className="-mb-10">

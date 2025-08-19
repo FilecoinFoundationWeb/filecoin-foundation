@@ -1,3 +1,10 @@
+
+import Image from 'next/image'
+
+import { clsx } from 'clsx'
+
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
@@ -5,13 +12,13 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BackgroundImage } from '@/components/BackgroundImage'
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { backgroundVariants } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 
 import { LEARN_SEO } from './constants/seo'
@@ -20,11 +27,11 @@ import { resilientInternetCta } from './data/resilientInternetCta'
 export default function Learn() {
   return (
     <>
-      <BackgroundImage
-        overlayVariant="light"
-        src={graphicsData.learnHero.data.src}
-        blurDataURL={graphicsData.learnHero.data.blurDataURL}
-      >
+      <StructuredDataScript
+        structuredData={generateStructuredData(LEARN_SEO)}
+      />
+
+      <div className={clsx('relative isolate', backgroundVariants.dark)}>
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
@@ -37,7 +44,13 @@ export default function Learn() {
             }
           />
         </PageSection>
-      </BackgroundImage>
+
+        <Image
+          src={graphicsData.earthAtNight.data}
+          alt={graphicsData.earthAtNight.alt}
+          className="absolute top-0 right-0 -z-10 h-[110vh] translate-x-1/3 rotate-[15deg] transform object-contain object-right-top sm:translate-x-0 sm:rotate-0"
+        />
+      </div>
 
       <PageSection backgroundVariant="dark">
         <SectionContent
