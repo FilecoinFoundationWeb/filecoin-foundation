@@ -16,7 +16,7 @@ export const getInvolvedOptions: Array<LinkCardData> = [
     icon: CurrencyDollarIcon,
   },
   {
-    title: 'Explore retroactive public good funding', // #todo: review copy
+    title: 'Explore Retroactive Public Good Funding',
     description:
       'Get rewarded for impactful, open-source contributions that advance the Filecoin ecosystem.',
     href: 'https://fil-propgf.questbook.app',

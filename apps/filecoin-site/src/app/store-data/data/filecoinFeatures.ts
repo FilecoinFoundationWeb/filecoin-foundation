@@ -8,21 +8,21 @@ import type { CardData } from '@/components/Card'
 
 export const filecoinFeatures: Array<CardData> = [
   {
-    title: 'Built-in resilience',
+    title: 'Data security',
     description:
-      'Your data is stored across multiple independent providers, reducing risk of loss or downtime.',
+      'All storage is tamper-proof and verifiable. Regular health checks mathematically prove that your data is stored correctly and securely over time.',
     icon: LockKeyIcon,
   },
   {
-    title: 'Provably stored & unchanged',
+    title: 'Compliance',
     description:
-      "Cryptographic proofs guarantee your data is actually being stored and hasn't been tampered with.",
+      'Meet enterprise and industry requirements with storage providers that adhere to leading standards, including SOC 2 compliance and Tier III data center certifications.',
     icon: CertificateIcon,
   },
   {
-    title: 'Censorship-resistant by design',
+    title: 'Scalable for big data',
     description:
-      'No single company can take down or block access to your data.',
+      "Filecoin's decentralized infrastructure supports exabyte-scale datasets and long-term archival, with built-in redundancy and global distribution.",
     icon: TagIcon,
   },
 ]

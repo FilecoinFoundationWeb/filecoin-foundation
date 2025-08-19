@@ -5,7 +5,7 @@ type SpecializedInfrastructureSpec = {
 
 export const specializedInfrastructureSpecs: SpecializedInfrastructureSpec[] = [
   {
-    title: 'Sealing Node (GPU)',
+    title: 'Sealing Node (GPU-enabled)',
     list: [
       'GPU: NVIDIA RTX 3090+ (24 GB VRAM)',
       'CPU: 24-core',
