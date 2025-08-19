@@ -128,7 +128,7 @@ export default async function Home() {
         <SectionContent
           centerCTA
           title="How Filecoin storage compares to traditional cloud storage"
-          description="Compare decentralized object storage against the traditional cloud storage."
+          description="Compare decentralized storage against the traditional cloud storage."
           cta={[
             <Button href={PATHS.STORE_DATA.path} variant="primary">
               Store data
