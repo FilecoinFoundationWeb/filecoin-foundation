@@ -24,7 +24,13 @@ export function LogoSection({ logos, title, tag = 'h3' }: LogoSectionProps) {
           {title}
         </Tag>
       )}
-      <div className="w-full overflow-x-auto">
+      <div
+        className="logo-section-scroll-bar w-full overflow-x-auto"
+        style={{
+          scrollbarWidth: 'thin',
+          scrollbarColor: 'var(--color-border-muted) transparent',
+        }}
+      >
         <ul className="flex min-w-max items-center gap-15 py-2 md:gap-20">
           {logos.map((logoItem, index) => (
             <LogoItem key={`logo-${index}`} {...logoItem} />

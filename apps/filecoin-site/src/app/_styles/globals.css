@@ -424,6 +424,24 @@
     }
   }
 
+  /* LOGO SECTION SCROLLBAR */
+  .logo-section-scroll-bar::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .logo-section-scroll-bar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .logo-section-scroll-bar::-webkit-scrollbar-thumb {
+    background-color: var(--color-border-muted);
+    border-radius: 3px;
+  }
+
+  .logo-section-scroll-bar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-border);
+  }
+
   /* NOTIFICATION DIALOG */
   .notification {
     @apply rounded-lg border border-zinc-200 bg-zinc-50 text-zinc-950;
@@ -503,28 +521,5 @@
     .tooltip-arrow {
       @apply fill-zinc-200;
     }
-  }
-
-  /* HORIZONTAL SCROLLBAR STYLING */
-  .logo-section .overflow-x-auto {
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-border-muted) transparent;
-  }
-
-  .logo-section .overflow-x-auto::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  .logo-section .overflow-x-auto::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  .logo-section .overflow-x-auto::-webkit-scrollbar-thumb {
-    background-color: var(--color-border-muted);
-    border-radius: 3px;
-  }
-
-  .logo-section .overflow-x-auto::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-border);
   }
 }
