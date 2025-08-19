@@ -1,4 +1,3 @@
-import { clsx } from 'clsx'
 import slugify from 'slugify'
 
 import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
@@ -36,12 +35,10 @@ export function SectionContent({
         {description && <SectionContentDescription description={description} />}
       </div>
       {children && (
-        <div className="mt-15 flex flex-col gap-15 md:mt-30 md:gap-30">
-          {children}
-        </div>
+        <div className="mt-15 flex flex-col gap-15 md:gap-30">{children}</div>
       )}
       {cta && (
-        <div className={clsx(children ? 'mt-15 md:mt-30' : 'mt-15')}>
+        <div className="mt-15">
           <ButtonRow buttons={cta} centered={centerCTA} />
         </div>
       )}

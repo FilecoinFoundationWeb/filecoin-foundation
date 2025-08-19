@@ -125,7 +125,7 @@
 @layer components {
   /* BUTTON */
   .button {
-    @apply rounded-full border-2 px-6 py-4 text-base tracking-wide;
+    @apply rounded-full border-2 px-6 py-4 text-base font-medium tracking-wide;
 
     &.button--primary {
       @apply relative border-transparent;
@@ -422,6 +422,24 @@
     &:focus {
       @apply focus:outline-none;
     }
+  }
+
+  /* LOGO SECTION SCROLLBAR */
+  .logo-section-scroll-bar::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .logo-section-scroll-bar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .logo-section-scroll-bar::-webkit-scrollbar-thumb {
+    background-color: var(--color-border-muted);
+    border-radius: 3px;
+  }
+
+  .logo-section-scroll-bar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-border);
   }
 
   /* NOTIFICATION DIALOG */
