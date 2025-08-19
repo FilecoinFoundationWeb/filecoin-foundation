@@ -19,11 +19,14 @@ import { PageSection } from '@/components/PageSection'
 import { backgroundVariants } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SimpleCard } from '@/components/SimpleCard'
+import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbeded'
 
 import { LEARN_SEO } from './constants/seo'
 import { learnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
 import { resilientInternetCta } from './data/resilientInternetCta'
 import { whatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
+
+const WHAT_IS_FILECOIN_VIDEO_URL = 'https://www.youtube.com/embed/26ZdMAo23mM'
 
 export default function Learn() {
   return (
@@ -33,7 +36,7 @@ export default function Learn() {
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="The authenticity layer of a more resilient internet"
-            description="Filecoin exists to decentralize the world’s information infrastructure, giving users control over their data and creating a more resilient, transparent, and equitable foundation for the internet."
+            description="Filecoin exists to decentralize the world's information infrastructure, giving users control over their data and creating a more resilient, transparent, and equitable foundation for the internet."
             cta={
               <Button href={FILECOIN_URLS.docs} variant="primary">
                 Explore documentation
@@ -52,10 +55,14 @@ export default function Learn() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="What is Filecoin?"
-          description="Filecoin is a decentralized storage network where users can store, retrieve, and verify data.
+          description={[
+            'Filecoin is a decentralized storage network where users can store, retrieve, and verify data.',
 
-Instead of relying on a single company or data centre, Filecoin distributes data across a global marketplace of independent storage providers, secured by cryptographic proofs."
-        />
+            'Instead of relying on a single company or data centre, Filecoin distributes data across a global marketplace of independent storage providers, secured by cryptographic proofs.',
+          ]}
+        >
+          <YouTubeVideoEmbed videoUrl={WHAT_IS_FILECOIN_VIDEO_URL} />
+        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="light">

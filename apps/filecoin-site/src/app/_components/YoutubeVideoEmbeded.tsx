@@ -1,11 +1,11 @@
 'use client'
 
+import { PlayCircleIcon } from '@phosphor-icons/react'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed'
 import useSWR from 'swr'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { fetchYouTubeVideoMetadata } from '@filecoin-foundation/utils/fetchYouTubeVideoMetadata'
-
-import YouTubeLogoIcon from '@/assets/logos/youtube-logo-icon.svg'
 
 type PlaceholderProps = {
   text: string
@@ -40,23 +40,46 @@ export function YouTubeVideoEmbed({ videoUrl }: YouTubeVideoEmbedProps) {
     return <Placeholder text="Loading video..." />
   }
 
+  const { title, thumbnail_url } = data
+
   return (
-    <div className="relative">
+    <div
+      aria-label={`Video: ${title}`}
+      role="region"
+      className="group focus-visible:brand-outline relative"
+      tabIndex={0}
+    >
       <LiteYouTubeEmbed
         id={videoId}
-        title={data.title}
+        title={title}
         activatedClass="lyt-activated"
-        iframeClass="h-full w-full cursor-pointer focus:brand-outline"
+        iframeClass="h-full w-full cursor-pointer"
         params={REMOVE_MORE_VIDEOS_SUGGESTIONS}
         playerClass="sr-only"
-        poster="maxresdefault"
         webp={true}
-        wrapperClass="aspect-video cursor-pointer overflow-hidden rounded-lg border border-brand-500 bg-cover"
+        wrapperClass="aspect-video opacity-50 [&:has(iframe)]:opacity-100 cursor-pointer overflow-hidden bg-cover"
+        style={{
+          backgroundImage: `url(${thumbnail_url})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       />
-      <YouTubeLogoIcon
-        aria-hidden="true"
-        className="pointer-events-none absolute top-1/2 left-1/2 h-12 -translate-x-1/2 -translate-y-1/2 opacity-100 transition-all duration-300 ease-in-out [.lyt-activated_+_&]:invisible [.lyt-activated_+_&]:opacity-0"
-      />
+      <PlayButton />
+    </div>
+  )
+}
+
+function PlayButton() {
+  return (
+    <div
+      aria-hidden="true"
+      role="presentation"
+      className="pointer-events-none absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center space-x-2 rounded-full bg-zinc-800 px-6 py-4 text-[var(--color-logo)] opacity-100 [.lyt-activated_+_&]:invisible [.lyt-activated_+_&]:opacity-0"
+    >
+      <Icon component={PlayCircleIcon} color="inherit" size={20} />
+      <span className="text-base text-[var(--color-text-base)]">
+        See how it works
+      </span>
     </div>
   )
 }
@@ -64,8 +87,9 @@ export function YouTubeVideoEmbed({ videoUrl }: YouTubeVideoEmbedProps) {
 function Placeholder({ text }: PlaceholderProps) {
   return (
     <div
-      className="bg-brand-700 flex aspect-video items-center justify-center rounded-lg"
       role="status"
+      aria-live="polite"
+      className="flex aspect-video items-center justify-center"
     >
       <p>{text}</p>
     </div>

@@ -3,9 +3,13 @@ import slugify from 'slugify'
 import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
 import { Heading, type HeadingProps } from '@/components/Heading'
 
+type SectionContentDescriptionProps = {
+  description: string | string[]
+}
+
 type SectionContentProps = {
   title: HeadingProps['children']
-  description?: string
+  description?: SectionContentDescriptionProps['description']
   children?: React.ReactNode
   cta?: ButtonRowProps['buttons']
   centerCTA?: ButtonRowProps['centered']
@@ -27,9 +31,8 @@ export function SectionContent({
         <Heading tag="h2" variant="section-heading">
           {title}
         </Heading>
-        {description && (
-          <p className="pt-6 text-2xl/8 text-pretty">{description}</p>
-        )}
+
+        {description && <SectionContentDescription description={description} />}
       </div>
       {children && (
         <div className="mt-15 flex flex-col gap-15 md:gap-30">{children}</div>
@@ -41,4 +44,18 @@ export function SectionContent({
       )}
     </div>
   )
+}
+
+function SectionContentDescription({
+  description,
+}: SectionContentDescriptionProps) {
+  const descriptionArray = Array.isArray(description)
+    ? description
+    : [description]
+
+  return descriptionArray.map((item, index) => (
+    <p key={index} className="pt-6 text-2xl/8 text-pretty">
+      {item}
+    </p>
+  ))
 }

@@ -12,6 +12,7 @@
     "./cmsConfigUtils": "./src/cmsConfigUtils.ts",
     "./convertYamlToJson": "./src/convertYamlToJson.ts",
     "./dateUtils": "./src/dateUtils.ts",
+    "./fetchYouTubeVideoMetadata": "./src/fetchYouTubeVideoMetadata.ts",
     "./fileUtils": "./src/fileUtils.ts",
     "./findOrThrow": "./src/findOrThrow.ts",
     "./generateBlogPostStructuredData": "./src/generateBlogPostStructuredData.ts",
