@@ -7,39 +7,71 @@ export type StorageProvider = Pick<
   bestFor: Array<BestForType>
 }
 
-type BestForType = 'S3Cloud' | 'Backup' | 'Archival'
+type BestForType =
+  | 'AI/ML developers'
+  | 'Advanced technical users'
+  | 'DePIN'
+  | 'Developers'
+  | 'Enterprises'
+  | 'Personal Storage'
+  | 'SaaS'
+  | 'Web3'
 
 export const storageProviders = [
   {
     name: 'Akave',
     description:
-      'Akave is a protocol that enables businesses and users with a decentralized storage layer and data management tools to efficiently manage on-chain data lakes.',
-    bestFor: ['S3Cloud', 'Backup', 'Archival'],
-    keyFeatures: ['Free Tier Available'],
+      'Enterprise-grade, hot storage designed for AI, data-intensive workloads, and on-chain data lakes.',
+    bestFor: ['Enterprises', 'AI/ML developers'],
+    keyFeatures: [
+      'S3-compatible API',
+      'Client-side encryption',
+      'Access control',
+    ],
     url: 'https://www.akave.ai/',
   },
   {
-    name: 'CID Gravity',
-    description:
-      'A polished, enterprise-grade gateway that simplifies storage on IPFS and Filecoin built for businesses, independent software vendors (ISVs), and storage providers who want powerful tools.',
-    bestFor: ['S3Cloud', 'Backup', 'Archival'],
-    keyFeatures: ['Free Tier Available'],
+    name: 'CIDgravity',
+    description: 'Simple decentralized storage backend for Nextcloud.',
+    bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
+    keyFeatures: [
+      'S3-compatible API',
+      'Client-side encryption',
+      'Access control',
+    ],
     url: 'https://www.cidgravity.com/',
   },
   {
     name: 'Lighthouse',
-    description:
-      'Akave is a protocol that enables businesses and users with a decentralized storage layer and data management tools to efficiently manage on-chain data lakes. ',
-    bestFor: ['S3Cloud', 'Backup', 'Archival'],
-    keyFeatures: ['Free Tier Available'],
+    description: 'Perpetual, long-term data storage.',
+    bestFor: ['Enterprises', 'Developers', 'Personal Storage'],
+    keyFeatures: [
+      '"Pay once, store forever" pricing mode',
+      'Simple web app',
+      'Developer SDK/CLI',
+    ],
     url: 'https://www.lighthouse.storage/',
   },
   {
     name: 'Storacha',
-    description:
-      'Storacha is a next-generation storage network built by Protocol Labs. It offers fast, decentralized “hot” storage combined with the long-term durability of Filecoin—ideal for applications that need both instant access and blockchain-grade verifiable backup.',
-    bestFor: ['S3Cloud', 'Backup', 'Archival'],
-    keyFeatures: ['Free Tier Available'],
+    description: 'High-speed hot storage for fast data retrieval.',
+    bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
+    keyFeatures: [
+      'S3-compatible API',
+      'Client-side encryption',
+      'Access control',
+    ],
     url: 'https://storacha.network/',
+  },
+  {
+    name: 'Singularity CLI',
+    description: 'Directly manage the full deal-making lifecycle on Filecoin.',
+    bestFor: ['Advanced technical users'],
+    keyFeatures: [
+      'S3-compatible API',
+      'Client-side encryption',
+      'Access control',
+    ],
+    url: 'https://github.com/filecoin-project/singularity',
   },
 ] as const satisfies Array<StorageProvider>
