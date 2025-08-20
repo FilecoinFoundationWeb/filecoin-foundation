@@ -4,6 +4,7 @@ import Image, { type StaticImageData } from 'next/image'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
+import { CTALink } from './CTALink'
 import { SimpleCard, type SimpleCardProps } from './SimpleCard'
 
 type HEXCodeType = `#${string}`
@@ -52,8 +53,15 @@ export function SimpleCardWithLogo({
         border="none"
         title={title}
         description={description}
-        cta={cta}
       />
+
+      <CTALink
+        inset
+        href={cta.href}
+        textClassName="absolute bottom-6 sm:left-48 left-6"
+      >
+        {cta.text}
+      </CTALink>
     </li>
   )
 }
