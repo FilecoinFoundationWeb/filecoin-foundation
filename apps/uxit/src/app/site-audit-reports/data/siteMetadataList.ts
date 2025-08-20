@@ -25,6 +25,10 @@ export const siteMetadataList: SiteMetadata[] = [
     name: 'Filecoin.io',
   },
   {
+    id: 'filecoin-prototype',
+    name: 'Filecoin.io Prototype',
+  },
+  {
     id: 'lighthouse',
     name: 'Lighthouse Storage',
   },
