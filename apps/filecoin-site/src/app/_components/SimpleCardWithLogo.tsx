@@ -43,7 +43,10 @@ export function SimpleCardWithLogo({
   logo,
 }: SimpleCardWithLogoProps) {
   return (
-    <li className="group relative flex h-full flex-col rounded-xs border border-[var(--color-border-base)] sm:flex-row">
+    <li
+      data-card-type="simple-with-logo"
+      className="group relative flex h-full flex-col rounded-xs border border-[var(--color-border-base)] sm:flex-row"
+    >
       <Logo logo={logo} title={title} />
 
       <Divider />

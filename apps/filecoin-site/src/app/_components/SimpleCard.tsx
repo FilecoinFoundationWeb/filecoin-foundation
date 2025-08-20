@@ -68,6 +68,7 @@ export function SimpleCard({
 
   return (
     <Tag
+      data-card-type="simple"
       className={clsx(
         'group h-full w-full',
         cta && 'relative',
