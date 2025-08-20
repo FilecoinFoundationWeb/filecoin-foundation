@@ -45,4 +45,12 @@ describe.skip('Ecosystem Explorer Project Form Page', () => {
       },
     )
   })
+
+  it(tests.links.prompt, () => {
+    tests.links.fn(path)
+  })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path)
+  })
 })
