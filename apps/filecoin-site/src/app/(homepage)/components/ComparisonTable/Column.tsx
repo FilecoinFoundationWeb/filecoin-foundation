@@ -1,6 +1,5 @@
 import type { SVGProps } from 'react'
 
-import { CheckIcon, XIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 type ColumnProps = {
@@ -12,14 +11,28 @@ type ColumnProps = {
 
 export type ColumnPropsData = Omit<ColumnProps, 'perspective'>
 
-const ICON_CONFIG = {
+type ColumnStyleConfig = {
+  borderColor: string
+  dividerColor: string
+  textColor: string
+  backgroundColor: string
+}
+
+const COLUMN_STYLE_CONFIG: Record<
+  ColumnProps['perspective'],
+  ColumnStyleConfig
+> = {
   advantage: {
-    Icon: CheckIcon,
-    color: 'text-brand-700',
+    borderColor: 'border-[var(--color-border-muted)]',
+    dividerColor: 'divide-[var(--color-border-muted)]',
+    textColor: 'text-[var(--color-text-base)]',
+    backgroundColor: 'bg-transparent',
   },
   disadvantage: {
-    Icon: XIcon,
-    color: 'text-[var(--color-text-paragraph)]',
+    borderColor: 'border-zinc-950/5',
+    dividerColor: 'divide-zinc-950/5',
+    textColor: 'text-[var(--color-text-paragraph)]',
+    backgroundColor: 'bg-zinc-50',
   },
 }
 
@@ -29,32 +42,38 @@ export function Column({
   features,
   logo: Logo,
 }: ColumnProps) {
-  const { Icon, color } = ICON_CONFIG[perspective]
+  const styles = COLUMN_STYLE_CONFIG[perspective]
 
   return (
-    <div className="text-center">
-      <div className="py-6 text-2xl font-medium md:py-18">
-        <div className="flex min-h-10 items-center gap-3 md:justify-center">
-          {Logo && <Logo className="h-10 w-10" />}
+    <div
+      aria-label={`${perspective} features: ${title}`}
+      className={clsx(
+        'flex flex-col items-center rounded-2xl border',
+        styles.borderColor,
+        styles.backgroundColor,
+      )}
+    >
+      <div
+        className={clsx(
+          'w-full border-b py-8 text-2xl font-medium',
+          styles.borderColor,
+        )}
+      >
+        <div className="flex min-h-10 items-center justify-center gap-3">
+          {Logo && <Logo className="size-8" />}
           {title}
         </div>
       </div>
 
       <ul
         className={clsx(
-          'divide-[var(--color-border)] md:space-y-3 md:divide-y',
-          perspective === 'disadvantage' &&
-            'text-[var(--color-text-paragraph)]',
+          'flex w-full flex-col items-center divide-y',
+          styles.dividerColor,
+          styles.textColor,
         )}
       >
         {features.map((feature) => (
-          <li
-            key={feature}
-            className="flex items-center gap-3 py-6 md:flex-col md:px-4 md:py-10"
-          >
-            <span className={color}>
-              <Icon size={20} />
-            </span>
+          <li key={feature} className="w-full py-6 text-center">
             {feature}
           </li>
         ))}

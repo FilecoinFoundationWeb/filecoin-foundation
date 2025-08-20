@@ -140,6 +140,7 @@ export default async function Home() {
       <PageSection backgroundVariant="light">
         <SectionContent
           centerCTA
+          centerTitle
           title="How Filecoin storage compares to traditional cloud storage"
           description="Compare decentralized storage against the traditional cloud storage."
           cta={[
