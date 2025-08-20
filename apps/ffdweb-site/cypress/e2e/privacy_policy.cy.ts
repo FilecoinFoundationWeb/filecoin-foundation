@@ -20,8 +20,6 @@ describe('Privacy Policy Page', () => {
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn({
-      path: PATHS.PRIVACY_POLICY.path,
-    })
+    tests.visualSnapshot.fn(PATHS.PRIVACY_POLICY.path)
   })
 })

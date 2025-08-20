@@ -19,8 +19,6 @@ describe('Projects Index Page', () => {
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn({
-      path: PATHS.PROJECTS.path,
-    })
+    tests.visualSnapshot.fn(PATHS.PROJECTS.path)
   })
 })

@@ -35,4 +35,10 @@ describe('Random Ecosystem Project', () => {
       tests.links.fn(path.join(PATHS.ECOSYSTEM_EXPLORER.path, slug))
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      tests.visualSnapshot.fn(path.join(PATHS.ECOSYSTEM_EXPLORER.path, slug))
+    })
+  })
 })

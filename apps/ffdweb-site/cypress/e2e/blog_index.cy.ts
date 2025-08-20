@@ -19,8 +19,6 @@ describe('Blog Index Page', () => {
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn({
-      path: PATHS.BLOG.path,
-    })
+    tests.visualSnapshot.fn(PATHS.BLOG.path)
   })
 })

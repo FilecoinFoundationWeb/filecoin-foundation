@@ -19,8 +19,6 @@ describe('FAQs Page', () => {
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn({
-      path: PATHS.FAQS.path,
-    })
+    tests.visualSnapshot.fn(PATHS.FAQS.path)
   })
 })

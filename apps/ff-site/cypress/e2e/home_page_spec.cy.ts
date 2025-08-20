@@ -24,8 +24,7 @@ describe('Homepage', () => {
     tests.links.fn(path)
   })
 
-  it('should match visual snapshot', () => {
-    cy.visit(path)
-    cy.percySnapshot()
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path)
   })
 })

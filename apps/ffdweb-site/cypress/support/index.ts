@@ -1,11 +1,8 @@
 /// <reference types="cypress" />
 
-import '@percy/cypress'
-
 import { verifyLinks } from '@filecoin-foundation/cypress/links'
 import { testPageMetaData } from '@filecoin-foundation/cypress/metadata'
-
-import { testVisualSnapshot } from './testVisualSnapshot'
+import { testVisualSnapshot } from '@filecoin-foundation/cypress/percy'
 
 export const tests = {
   metadata: {

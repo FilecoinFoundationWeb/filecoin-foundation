@@ -19,8 +19,6 @@ describe('About Page', () => {
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn({
-      path: PATHS.ABOUT.path,
-    })
+    tests.visualSnapshot.fn(PATHS.ABOUT.path)
   })
 })

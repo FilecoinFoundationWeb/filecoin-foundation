@@ -19,8 +19,6 @@ describe('Learning Resources Page', () => {
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn({
-      path: PATHS.LEARNING_RESOURCES.path,
-    })
+    tests.visualSnapshot.fn(PATHS.LEARNING_RESOURCES.path)
   })
 })

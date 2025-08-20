@@ -19,8 +19,6 @@ describe('Home Page', () => {
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn({
-      path: PATHS.HOME.path,
-    })
+    tests.visualSnapshot.fn(PATHS.HOME.path)
   })
 })

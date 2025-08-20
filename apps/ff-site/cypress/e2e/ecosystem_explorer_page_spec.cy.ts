@@ -25,9 +25,8 @@ describe('Ecosystem Explorer Page', () => {
     tests.links.fn(path)
   })
 
-  it('should match visual snapshot', () => {
-    cy.visit(path)
-    cy.percySnapshot()
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path)
   })
 })
 
@@ -45,5 +44,13 @@ describe.skip('Ecosystem Explorer Project Form Page', () => {
         })
       },
     )
+  })
+
+  it(tests.links.prompt, () => {
+    tests.links.fn(path)
+  })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path)
   })
 })
