@@ -13,6 +13,7 @@ import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { ImageGrid } from '@/components/ImageGrid'
+import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -26,6 +27,7 @@ import { COMMUNITY_SEO } from './constants/seo'
 import { communityConnectionImages } from './data/communityConnectionImages'
 import { ecosystemResources } from './data/ecosystemResources'
 import { getInvolvedWithCommunity } from './data/getInvolvedWithCommunity'
+import { socialMedia } from './data/socialMedia'
 
 export default function BuildOnFilecoin() {
   return (
@@ -87,6 +89,19 @@ export default function BuildOnFilecoin() {
               <Image key={alt} src={data} alt={alt} />
             ))}
           </ImageGrid>
+          <CardGrid as="ul" variant="smThree">
+            {socialMedia.map(({ title, description, href, icon }) => (
+              <LinkCard
+                key={title}
+                as="li"
+                title={title}
+                headingTag="h3"
+                description={description}
+                href={href}
+                icon={{ component: icon }}
+              />
+            ))}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
