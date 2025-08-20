@@ -60,7 +60,7 @@ export function Column({
         )}
       >
         <div className="flex min-h-10 items-center justify-center gap-3">
-          {Logo && <Logo className="h-8 w-8" />}
+          {Logo && <Logo className="size-8" />}
           {title}
         </div>
       </div>
