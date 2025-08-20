@@ -19,8 +19,6 @@ describe('Digest Index Page', () => {
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn({
-      path: PATHS.DIGEST.path,
-    })
+    tests.visualSnapshot.fn(PATHS.DIGEST.path)
   })
 })

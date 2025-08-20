@@ -20,8 +20,6 @@ describe('Terms of Use Page', () => {
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn({
-      path: PATHS.TERMS_OF_USE.path,
-    })
+    tests.visualSnapshot.fn(PATHS.TERMS_OF_USE.path)
   })
 })

@@ -33,4 +33,10 @@ describe('Blog Slug Page', () => {
       tests.links.fn(`${PATHS.BLOG.path}/${slug}`)
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      tests.visualSnapshot.fn(`${PATHS.BLOG.path}/${slug}`)
+    })
+  })
 })

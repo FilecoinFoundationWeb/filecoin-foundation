@@ -1,10 +1,6 @@
 import '@percy/cypress'
 
-type TestVisualSnapshotOptions = {
-  path: string
-}
-
-export function testVisualSnapshot({ path }: TestVisualSnapshotOptions) {
+export function testVisualSnapshot(path: string) {
   cy.visit(path)
   cy.percySnapshot()
 }
