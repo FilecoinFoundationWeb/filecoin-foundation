@@ -14,6 +14,7 @@ import FilecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import FilecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import FilecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
 import HomepageGradient from '@/assets/graphics/homepage-gradient.svg'
+import imageFallback from '@/assets/graphics/image-fallback.webp'
 import planetsShadow from '@/assets/graphics/planets-shadow.svg'
 import ServerBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
 import starsSpinning from '@/assets/graphics/stars-spinning.webp'
@@ -86,5 +87,9 @@ export const graphicsData = {
   communityHero: {
     data: communityHero,
     alt: 'Community page hero image',
+  },
+  fallback: {
+    data: imageFallback,
+    alt: '',
   },
 } as const satisfies Record<string, StaticImageProps>

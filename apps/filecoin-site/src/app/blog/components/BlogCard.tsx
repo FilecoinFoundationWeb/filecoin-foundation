@@ -7,6 +7,8 @@ import {
 
 import { PATHS } from '@/constants/paths'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { Heading } from '@/components/Heading'
 import { TagGroup } from '@/components/TagGroup/TagGroup'
 
@@ -40,7 +42,7 @@ export function BlogCard({
         title={title}
         className="group relative h-full"
       >
-        {image && <CardImage image={image} />}
+        <CardImage image={image || graphicsData.fallback} />
 
         <div className="flex flex-col gap-4 py-4">
           <TagGroup tags={tags} />
