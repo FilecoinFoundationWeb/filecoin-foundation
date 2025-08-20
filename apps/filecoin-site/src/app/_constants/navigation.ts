@@ -17,10 +17,9 @@ export type ExpandedNavItem = {
   }>
 }
 
-const { social: socialLinks, github } = FILECOIN_URLS
+const { social: socialLinks, github, securityBugBounty } = FILECOIN_URLS
 
-const { security, ecosystemExplorer, grants, securityBugBounty, events } =
-  FILECOIN_FOUNDATION_URLS
+const { security, ecosystemExplorer, grants, events } = FILECOIN_FOUNDATION_URLS
 
 const social: Array<NavItem> = [
   {

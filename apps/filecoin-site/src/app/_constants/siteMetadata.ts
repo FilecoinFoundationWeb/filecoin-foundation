@@ -15,7 +15,6 @@ const FILECOIN_FOUNDATION_URLS = {
   events: 'https://fil.org/events',
   grants: 'https://fil.org/grants',
   security: 'https://fil.org/security',
-  securityBugBounty: 'https://immunefi.com/bug-bounty/filecoin/',
   ecosystemExplorer: 'https://fil.org/ecosystem-explorer',
   emails: {
     contact: 'hello@fil.org',
