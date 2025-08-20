@@ -74,7 +74,7 @@ function PlayButton() {
     <div
       aria-hidden="true"
       role="presentation"
-      className="pointer-events-none absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center space-x-2 rounded-full bg-zinc-800 px-6 py-4 text-[var(--color-logo)] opacity-100 [.lyt-activated_+_&]:invisible [.lyt-activated_+_&]:opacity-0"
+      className="pointer-events-none absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center space-x-2 rounded-full bg-zinc-800 px-6 py-4 text-[var(--color-logo-item)] opacity-100 [.lyt-activated_+_&]:invisible [.lyt-activated_+_&]:opacity-0"
     >
       <Icon component={PlayCircleIcon} color="inherit" size={20} />
       <span className="text-base text-[var(--color-text-base)]">

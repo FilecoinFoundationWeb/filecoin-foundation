@@ -52,7 +52,7 @@ export function BlogCard({
             </Heading>
           </span>
 
-          <p className="text-[var(--color-text-paragraph)]">{description}</p>
+          <p className="text-[var(--color-paragraph-text)]">{description}</p>
 
           <PostMetadata author={author} date={date} />
         </div>

@@ -38,7 +38,7 @@ export function SimpleCardWithLogo({
   logo,
 }: SimpleCardWithLogoProps) {
   return (
-    <li className="group relative flex h-full flex-col border border-[var(--color-border)] sm:flex-row">
+    <li className="group relative flex h-full flex-col border border-[var(--color-border-base)] sm:flex-row">
       <div
         className="grid h-44 w-full flex-shrink-0 place-items-center sm:h-full sm:w-42"
         style={{ backgroundColor: logo.bgColor }}
@@ -59,7 +59,7 @@ export function SimpleCardWithLogo({
 
       <hr
         aria-hidden="true"
-        className="h-full border-t border-[var(--color-border)] sm:border-t-0 sm:border-r"
+        className="h-full border-t border-[var(--color-border-base)] sm:border-t-0 sm:border-r"
       />
 
       <SimpleCard

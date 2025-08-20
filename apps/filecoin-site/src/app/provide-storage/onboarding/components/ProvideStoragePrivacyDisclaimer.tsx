@@ -2,7 +2,7 @@ import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink'
 
 export function ProvideStoragePrivacyDisclaimer() {
   return (
-    <p className="text-[var(--color-text-paragraph)]">
+    <p className="text-[var(--color-paragraph-text)]">
       From time to time, we would like to contact you about our products and
       services, as well as other content that may be of interest to you. Please
       review the{' '}

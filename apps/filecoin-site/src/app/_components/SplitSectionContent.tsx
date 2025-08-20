@@ -25,7 +25,7 @@ export function SplitSectionContent({
       <div className="col-span-6 lg:col-span-2 lg:pr-8">
         <Heading
           tag="h3"
-          className="text-xl text-[var(--color-text-heading-muted)] md:text-2xl"
+          className="text-xl text-[var(--color-subheading-text-muted)] md:text-2xl"
         >
           {title}
         </Heading>
