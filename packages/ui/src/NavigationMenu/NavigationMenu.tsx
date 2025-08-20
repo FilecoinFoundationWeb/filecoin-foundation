@@ -2,12 +2,13 @@
 
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import { CaretDownIcon } from '@phosphor-icons/react'
+import { clsx } from 'clsx'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
 type PopOverProps = {
   label: string
-  mainNavItemStyles: string
+  labelClassName: string
   as: React.ElementType
   children: React.ReactElement
 }
@@ -15,21 +16,21 @@ type PopOverProps = {
 const SPACE_BETWEEN_PANEL_AND_BUTTON = 24
 const SPACE_BETWEEN_PANEL_AND_VIEWPORT = 8
 
-export function NavigationPopover({
-  label,
-  mainNavItemStyles,
+export function NavigationMenu({
   as,
+  label,
+  labelClassName,
   children,
 }: PopOverProps) {
   return (
     <Popover as={as}>
       <PopoverButton
         aria-label={`${label} (opens a navigation menu)`}
-        className={mainNavItemStyles}
+        className={clsx('group', labelClassName)}
       >
         <span>{label}</span>
-        <span className="ui-open:rotate-180 transition-transform">
-          <Icon component={CaretDownIcon} size={20} color="subtle" />
+        <span className="transition-transform group-data-open:rotate-180">
+          <Icon component={CaretDownIcon} size={20} />
         </span>
       </PopoverButton>
       <PopoverPanel
@@ -43,7 +44,7 @@ export function NavigationPopover({
       >
         {(props) => (
           <div
-            className="border-brand-500 bg-brand-800 overflow-hidden rounded-2xl border p-4"
+            className="navigation-menu-panel"
             onClick={(e) => {
               e.stopPropagation()
               props.close()

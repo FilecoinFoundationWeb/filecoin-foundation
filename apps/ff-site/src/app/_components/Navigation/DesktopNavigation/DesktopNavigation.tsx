@@ -4,19 +4,19 @@ import { usePathname } from 'next/navigation'
 
 import { clsx } from 'clsx'
 
+import { NavigationMenu } from '@filecoin-foundation/ui/NavigationMenu'
+
 import { desktopNavigationItems } from '@/constants/navigation'
 import { PATHS } from '@/constants/paths'
 
 import { useNavigationItems } from '@/hooks/useNavigationItems'
-
-import { NavigationPopover } from '@/components/NavigationPopover'
 
 import {
   getMainNavItemStyles,
   MainNavItem,
   TOUCH_TARGET_MAIN_NAV_ITEM,
 } from './MainNavItem'
-import { SubNavItem } from './SubNavItem'
+import { NavigationMenuLink } from './NavigationMenuLink'
 
 const {
   careersItem,
@@ -55,63 +55,70 @@ export function DesktopNavigation() {
         isActive={pathname === PATHS.ABOUT.path}
       />
 
-      <NavigationPopover
+      <NavigationMenu
         as="li"
         label="Get Involved"
-        mainNavItemStyles={getMainNavItemStyles({
+        labelClassName={getMainNavItemStyles({
           isActive: isGetInvolvedActive,
           isPopover: true,
         })}
       >
-        <div className="grid w-screen max-w-2xl grid-cols-2 gap-4">
+        <div className="grid max-w-2xl grid-cols-2 gap-4">
           <div className="space-y-4">
             {getInvolvedInternalItems.map((item) => (
-              <SubNavItem key={item.href} {...item} linkType="internal" />
+              <NavigationMenuLink
+                key={item.href}
+                variant="internal"
+                {...item}
+              />
             ))}
-            <SubNavItem {...careersItem} linkType="externalGhost" />
+            <NavigationMenuLink variant="externalGhost" {...careersItem} />
           </div>
           <div className="space-y-4">
             {getInvolvedExternalItems.map((item) => (
-              <SubNavItem
+              <NavigationMenuLink
                 key={item.href}
                 {...item}
-                linkType="externalPrimary"
+                variant="externalPrimary"
               />
             ))}
-            <SubNavItem {...learnMoreItem} linkType="externalSecondary" />
+            <NavigationMenuLink
+              {...learnMoreItem}
+              variant="externalSecondary"
+            />
           </div>
         </div>
-      </NavigationPopover>
+      </NavigationMenu>
 
-      <NavigationPopover
+      <NavigationMenu
         as="li"
         label="Community"
-        mainNavItemStyles={getMainNavItemStyles({
+        labelClassName={getMainNavItemStyles({
           isActive: isCommunityActive,
           isPopover: true,
         })}
       >
         <div className="w-80 space-y-4">
           {communityInternalItems.map((item) => (
-            <SubNavItem key={item.label} {...item} linkType="internal" />
+            <NavigationMenuLink key={item.label} variant="internal" {...item} />
           ))}
         </div>
-      </NavigationPopover>
+      </NavigationMenu>
 
-      <NavigationPopover
+      <NavigationMenu
         as="li"
         label="Resources"
-        mainNavItemStyles={getMainNavItemStyles({
+        labelClassName={getMainNavItemStyles({
           isActive: isResourcesActive,
           isPopover: true,
         })}
       >
         <div className="w-80 space-y-4">
           {resourcesInternalItems.map((item) => (
-            <SubNavItem key={item.label} {...item} linkType="internal" />
+            <NavigationMenuLink key={item.label} variant="internal" {...item} />
           ))}
         </div>
-      </NavigationPopover>
+      </NavigationMenu>
     </ul>
   )
 }
