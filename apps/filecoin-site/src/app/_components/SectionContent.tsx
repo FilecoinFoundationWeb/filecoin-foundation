@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import slugify from 'slugify'
 
 import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
@@ -13,6 +14,7 @@ type SectionContentProps = {
   children?: React.ReactNode
   cta?: ButtonRowProps['buttons']
   centerCTA?: ButtonRowProps['centered']
+  centerTitle?: boolean
 }
 
 export function SectionContent({
@@ -21,13 +23,14 @@ export function SectionContent({
   children,
   cta,
   centerCTA,
+  centerTitle,
 }: SectionContentProps) {
   return (
     <div
       className="section-content"
       id={slugify(title.toString(), { lower: true })}
     >
-      <div className="max-w-3xl">
+      <div className={clsx('max-w-3xl', centerTitle && 'mx-auto text-center')}>
         <Heading tag="h2" variant="section-heading">
           {title}
         </Heading>
