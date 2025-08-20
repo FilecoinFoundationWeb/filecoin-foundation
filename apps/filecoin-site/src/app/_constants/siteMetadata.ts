@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-const BASE_DOMAIN = 'filecoin.io'
+const BASE_DOMAIN = 'filecoin-site.vercel.app'
 const BASE_URL = `https://${BASE_DOMAIN}`
 const ORGANIZATION_NAME = 'Filecoin'
 
