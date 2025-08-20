@@ -13,8 +13,11 @@ const SEO = {
 
 const FILECOIN_URLS = {
   docs: 'https://docs.filecoin.io/',
+  events: 'https://fil.org/events',
+  grants: 'https://fil.org/grants',
   github: 'https://github.com/filecoin-project',
   security: 'https://fil.org/security',
+  securityBugBounty: 'https://immunefi.com/bug-bounty/filecoin/',
   ecosystemExplorer: 'https://fil.org/ecosystem-explorer',
   social: {
     bluesky: {

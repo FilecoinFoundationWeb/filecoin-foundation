@@ -8,7 +8,8 @@ import { Icon } from '@filecoin-foundation/ui/Icon'
 
 type PopOverProps = {
   label: string
-  labelClassName: string
+  labelClassName?: string
+  panelClassName?: string
   as: React.ElementType
   children: React.ReactElement
 }
@@ -20,6 +21,7 @@ export function NavigationMenu({
   as,
   label,
   labelClassName,
+  panelClassName,
   children,
 }: PopOverProps) {
   return (
@@ -44,7 +46,7 @@ export function NavigationMenu({
       >
         {(props) => (
           <div
-            className="navigation-menu-panel"
+            className={clsx('navigation-menu-panel', panelClassName)}
             onClick={(e) => {
               e.stopPropagation()
               props.close()

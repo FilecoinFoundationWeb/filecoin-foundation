@@ -10,22 +10,9 @@ import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 
 import { type SectionProps, backgroundVariants } from '@/components/Section'
 
-import { NAV_LINKS } from './constants'
+import { NAV_LINKS, variantMapping } from './constants'
 import { HomeLogoIconLink } from './HomeLogoIconLink'
-import { NavigationLink } from './NavigationLink'
-
-type VariantMapping = Record<
-  SectionProps['backgroundVariant'],
-  MobileNavigationProps['backgroundVariant']
->
-
-const mobileNavigationVariantMapping: VariantMapping = {
-  light: 'light',
-  gray: 'light',
-  transparent: 'light',
-  dark: 'dark',
-  transparentDark: 'dark',
-}
+import { NavigationMainLink } from './NavigationMainLink'
 
 export type MobileNavigationProps = {
   backgroundVariant: SectionProps['backgroundVariant']
@@ -34,11 +21,10 @@ export type MobileNavigationProps = {
 export function MobileNavigation({ backgroundVariant }: MobileNavigationProps) {
   const [open, setOpen] = useState(false)
 
-  const mobileBackgroundVariant =
-    mobileNavigationVariantMapping[backgroundVariant]
+  const mobileBackgroundVariant = variantMapping[backgroundVariant]
 
   return (
-    <div className="lg:hidden">
+    <div className="xl:hidden">
       <IconButton
         icon={ListIcon}
         label="Open mobile navigation"
@@ -66,7 +52,7 @@ export function MobileNavigation({ backgroundVariant }: MobileNavigationProps) {
           >
             {NAV_LINKS.map(({ path, label }) => (
               <li key={path}>
-                <NavigationLink
+                <NavigationMainLink
                   on="mobile"
                   href={path}
                   label={label}

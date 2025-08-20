@@ -19,8 +19,10 @@ const MOBILE_TOUCH_TARGET: TouchTarget = {
   touchAreaOffset: '-mx-5',
 }
 
-const desktopStyle = clsx(
-  'text-[var(--color-text-navigation-link)] hover:bg-[var(--color-bg-navigation-link-hover)] focus:bg-[var(--color-bg-navigation-link-hover)] aria-[current=true]:text-[var(--color-text-navigation-link-active)]',
+export const baseStyle = 'focus:brand-outline font-medium'
+
+export const desktopStyle = clsx(
+  'rounded text-[var(--color-text-navigation-link)] hover:bg-[var(--color-bg-navigation-link-hover)] focus:bg-[var(--color-bg-navigation-link-hover)] aria-[current=true]:text-[var(--color-text-navigation-link-active)]',
   DESKTOP_TOUCH_TARGET.touchAreaPadding,
   DESKTOP_TOUCH_TARGET.touchAreaOffset,
 )
@@ -38,7 +40,7 @@ type NavigationLinkProps = {
   onNavigate?: LinkProps<PathValues>['onNavigate']
 }
 
-export function NavigationLink({
+export function NavigationMainLink({
   href,
   label,
   on,
@@ -53,7 +55,8 @@ export function NavigationLink({
       aria-label={`Go to ${label} page`}
       aria-current={isActive}
       className={clsx(
-        'focus:brand-outline inline-block font-medium',
+        'inline-block',
+        baseStyle,
         on === 'desktop' && desktopStyle,
         on === 'mobile' && mobileStyle,
       )}

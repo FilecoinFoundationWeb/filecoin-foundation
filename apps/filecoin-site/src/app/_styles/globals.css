@@ -89,6 +89,10 @@
   --color-border-icon-button: theme('colors.zinc.300');
   --color-border-icon-button-hover: theme('colors.zinc.400');
   --color-bg-icon-button-hover: theme('colors.zinc.100');
+
+  --color-navigation-menu-panel: theme('colors.zinc.100');
+  --color-navigation-menu-panel-border: theme('colors.zinc.300');
+  --color-navigation-menu-panel-external-icon: theme('colors.zinc.700');
 }
 
 .dark-section {
@@ -120,6 +124,10 @@
   --color-border-icon-button: theme('colors.zinc.600');
   --color-border-icon-button-hover: theme('colors.zinc.500');
   --color-bg-icon-button-hover: theme('colors.zinc.700');
+
+  --color-navigation-menu-panel: theme('colors.zinc.800');
+  --color-navigation-menu-panel-border: theme('colors.zinc.600');
+  --color-navigation-menu-panel-external-icon: theme('colors.zinc.300');
 }
 
 @layer components {
@@ -440,6 +448,19 @@
 
   .logo-section-scroll-bar::-webkit-scrollbar-thumb:hover {
     background-color: var(--color-border);
+  }
+
+  /* NAVIGATION MENU   */
+  .navigation-menu-link-label {
+    @apply font-medium text-[var(--color-text-base)];
+  }
+
+  .navigation-menu-link-description {
+    @apply text-[var(--color-text-paragraph)];
+  }
+
+  .navigation-menu-link-external-icon {
+    @apply text-[var(--color-navigation-menu-panel-external-icon)];
   }
 
   /* NOTIFICATION DIALOG */

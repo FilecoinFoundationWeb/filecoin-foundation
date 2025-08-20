@@ -11,5 +11,5 @@ export type LinkItemProps = {
 
 export type LocalNavigationMenuLinkProps<Variants extends VariantClasses> =
   Omit<SharedNavigationMenuLinkProps<Variants>, 'variants' | 'baseDomain'> & {
-    variant: keyof Variants
+    variant?: keyof Variants
   }
