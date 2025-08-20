@@ -13,20 +13,20 @@
     "@filecoin-foundation/ui": "0.0.0",
     "@unlighthouse/cli": "^0.17.2",
     "@unlighthouse/core": "^0.17.1",
-    "next": "^15.4.6",
-    "puppeteer": "^24.16.1",
+    "next": "^15.5.0",
+    "puppeteer": "^24.16.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
-    "@types/node": "^24.2.1",
-    "@types/react": "19.1.9",
+    "@types/node": "^24.3.0",
+    "@types/react": "19.1.10",
     "@types/react-dom": "19.1.7",
     "postcss": "^8.5.6",
-    "tsx": "^4.20.3",
+    "tsx": "^4.20.4",
     "typescript": "^5.9.2"
   }
 }
