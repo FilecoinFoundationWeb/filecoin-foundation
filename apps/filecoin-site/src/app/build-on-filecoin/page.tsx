@@ -174,7 +174,7 @@ export default function BuildOnFilecoin() {
         >
           <ImageGrid variant="oneMdThree">
             {getInvolvedImages.map(({ data, alt }) => (
-              <Image key={alt} src={data} alt={alt} />
+              <Image src={data} alt={alt} />
             ))}
           </ImageGrid>
 
