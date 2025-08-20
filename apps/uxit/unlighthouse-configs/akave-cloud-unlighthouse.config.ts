@@ -1,9 +1,9 @@
 import type { UserConfig } from '@unlighthouse/core'
 
 const config: UserConfig = {
-  site: 'https://www.akave.network/',
-  outputPath: 'public/site-audit-reports/akave',
-  routerPrefix: '/site-audit-reports/akave',
+  site: 'https://akave.com/',
+  outputPath: 'public/site-audit-reports/akave-cloud',
+  routerPrefix: '/site-audit-reports/akave-cloud',
   debug: true,
   scanner: {
     samples: 3,
