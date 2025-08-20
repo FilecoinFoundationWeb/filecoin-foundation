@@ -1,42 +1,58 @@
 [
   {
     "path": "/",
-    "score": 0.88,
-    "performance": 0.75,
-    "accessibility": 0.89,
-    "best-practices": 0.96,
-    "seo": 0.92
+    "score": 0.94,
+    "performance": 0.74,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
   },
   {
     "path": "/blogs",
-    "score": 0.87,
-    "performance": 0.68,
-    "accessibility": 0.9,
-    "best-practices": 0.96,
-    "seo": 0.92
+    "score": 0.97,
+    "performance": 0.89,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
   },
   {
-    "path": "/blogs/Decentralized%20Excellence%3A%20Elevating%20Data%20Storage%20with%20Lighthouse",
-    "score": 0.91,
-    "performance": 0.86,
-    "accessibility": 0.91,
-    "best-practices": 0.96,
-    "seo": 0.92
+    "path": "/blogs/On-Chain%20Encryption%3A%20Security%20Unveiled",
+    "score": 0.97,
+    "performance": 0.88,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
   },
   {
     "path": "/documentation",
-    "score": 0.93,
-    "performance": 0.92,
-    "accessibility": 0.9,
-    "best-practices": 0.96,
-    "seo": 0.92
+    "score": 0.98,
+    "performance": 0.9,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/ecosystem",
+    "score": 0.89,
+    "performance": 0.74,
+    "accessibility": 1,
+    "best-practices": 0.82,
+    "seo": 1
   },
   {
     "path": "/faq",
-    "score": 0.91,
-    "performance": 0.86,
-    "accessibility": 0.9,
+    "score": 0.95,
+    "performance": 0.85,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/pricing",
+    "score": 0.98,
+    "performance": 0.96,
+    "accessibility": 1,
     "best-practices": 0.96,
-    "seo": 0.92
+    "seo": 1
   }
 ]

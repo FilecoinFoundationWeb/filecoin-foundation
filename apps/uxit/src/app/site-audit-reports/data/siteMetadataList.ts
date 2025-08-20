@@ -9,6 +9,10 @@ export const siteMetadataList: SiteMetadata[] = [
     name: 'Akave',
   },
   {
+    id: 'akave-cloud',
+    name: 'Akave Cloud',
+  },
+  {
     id: 'cid-gravity',
     name: 'CID Gravity',
   },
@@ -23,6 +27,10 @@ export const siteMetadataList: SiteMetadata[] = [
   {
     id: 'filecoin',
     name: 'Filecoin.io',
+  },
+  {
+    id: 'filecoin-prototype',
+    name: 'Filecoin.io Prototype',
   },
   {
     id: 'lighthouse',
