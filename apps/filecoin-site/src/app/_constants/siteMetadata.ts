@@ -46,7 +46,7 @@ const FILECOIN_URLS = {
     },
     twitter: {
       href: 'https://twitter.com/filecoin',
-      label: 'X (Twitter)',
+      label: 'X',
       handle: '@filecoin',
     },
     weChat: {
