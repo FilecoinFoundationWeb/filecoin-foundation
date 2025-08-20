@@ -1,11 +1,10 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import buildpPageGradient from '@/assets/graphics/build-gradient.svg'
-import caseStudies from '@/assets/graphics/case-studies.svg'
+import caseStudiesGradient from '@/assets/graphics/case-studies-gradient.svg'
 import classicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
-import communityHero from '@/assets/graphics/community.svg'
+import communityGradient from '@/assets/graphics/community-gradient.svg'
 import dataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
-import diagram from '@/assets/graphics/diagram.webp'
 import digitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
 import earthAtNight from '@/assets/graphics/earth-at-night.png'
 import earthFromSpaceAtNight from '@/assets/graphics/earth-from-space-at-night.webp'
@@ -23,67 +22,63 @@ import starsSpinning from '@/assets/graphics/stars-spinning.webp'
 export const graphicsData = {
   buildOnFilecoinGradient: {
     data: buildpPageGradient,
-    alt: 'Gradient background for build on filecoin page',
+    alt: '',
   },
   buildOnFilecoinHero: {
     data: dataCenterServerRow,
-    alt: 'Row of server racks in a modern data center with blue LED lighting',
+    alt: 'Row of black server towers with glowing blue Filecoin logos in a dark data center.',
   },
   buildOnFilecoinSection: {
     data: earthFromSpaceAtNight,
-    alt: 'Earth viewed from space at night showing city lights and continents',
+    alt: 'Satellite view of Earth at night with illuminated cities and glowing networks of lights.',
   },
   caseStudies: {
-    data: caseStudies,
-    alt: 'Case studies page hero image',
+    data: caseStudiesGradient,
+    alt: '',
   },
   communityHero: {
-    data: communityHero,
-    alt: 'Community page hero image',
+    data: communityGradient,
+    alt: '',
   },
   earthAtNight: {
     data: earthAtNight,
-    alt: 'Earth at night with city lights and continents',
+    alt: 'View of Earth’s curved horizon from space, with a soft blue atmospheric glow.',
   },
   fallback: {
     data: imageFallback,
-    alt: '',
+    alt: 'Image coming soon',
   },
   homepageGradient: {
     data: homepageGradient,
-    alt: 'Gradient background for homepage',
+    alt: '',
   },
   homepageIPFSIllustration: {
     data: IPFSIllustration,
     alt: 'Illustration showing the IPFS cube logo in the center with Filecoin logos surrounding it.',
   },
-  learndiagramSection: {
-    data: diagram,
-    alt: 'Three concentric circles of decreasing size, outlined in black on a white background.',
-  },
   learnHero: {
     data: filecoinServerRack,
-    alt: 'Filecoin server rack with multiple blade servers and network connections',
+    alt: 'Filecoin-branded blue server racks with one open unit revealing rows of storage drives.',
   },
   learnLibrarySection: {
     data: classicLibraryInterior,
-    alt: 'Classic library interior with wooden shelves and books',
+    alt: 'Interior of a grand historic library with high vaulted wooden ceiling, rows of tall bookshelves, and marble busts lining the hall.',
   },
   planetsShadow: {
     data: planetsShadow,
-    alt: 'Planets casting shadows on each other',
+    alt: '',
   },
   provideStorageHero: {
     data: filecoinMiningRig,
-    alt: 'Filecoin mining rig with multiple graphics cards and cooling systems',
+    alt: 'Blue Filecoin mining rig with scattered and stacked Filecoin-branded coins on the floor.',
   },
   provideStorageSection: {
     data: serverBladeChassis,
-    alt: 'Server blade chassis with turquoise lighting in a rack mount',
+    alt: 'Front view of a server blade chassis with multiple slots, each marked with glowing Filecoin logos.',
   },
   provideStorageSection2: {
     data: filecoinStorageDevice,
-    alt: 'Filecoin storage device with hard drives and cooling fans',
+    alt: 'Black storage device with Filecoin logo and glowing green indicator lights.',
   },
   rocketLaunch: {
     data: rocketLaunch,
@@ -91,10 +86,10 @@ export const graphicsData = {
   },
   starsSpinning: {
     data: starsSpinning,
-    alt: 'Stars spinning in space',
+    alt: 'Long-exposure photograph of the night sky showing star trails swirling in circular motion.',
   },
   storeDataHero: {
     data: digitalMediaConversionSetup,
-    alt: 'Digital media conversion setup with various equipment and cables',
+    alt: 'Collection of digital and analog media formats including VHS tapes, cassettes, CDs, USB drive, film reels, and photographs.',
   },
 } as const satisfies Record<string, StaticImageProps>
