@@ -1,10 +1,10 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
-import audienceAtMeetup from '@/assets/images/audienceAtMeetup.webp'
-import corgiWithSunglasses from '@/assets/images/corgiWithSunglasses.webp'
-import filecoinOrbitCommunity from '@/assets/images/filecoinOrbitCommunity.webp'
-import keynoteSpeaker from '@/assets/images/keynoteSpeaker.webp'
-import speakersReceivingCertificates from '@/assets/images/speakersReceivingCertificates.webp'
+import audienceAtMeetup from '@/assets/images/audience-at-meetup.webp'
+import corgiWithSunglasses from '@/assets/images/corgi-with-sunglasses.webp'
+import filecoinOrbitCommunity from '@/assets/images/filecoin-orbit-community.webp'
+import keynoteSpeaker from '@/assets/images/keynote-speaker.webp'
+import speakersReceivingCertificates from '@/assets/images/speakers-receiving-certificates.webp'
 
 export const communityConnectionImages: Array<StaticImageProps> = [
   {
