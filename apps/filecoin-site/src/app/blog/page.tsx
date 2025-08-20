@@ -5,6 +5,8 @@ import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { BackgroundImage } from '@/components/BackgroundImage'
@@ -31,7 +33,7 @@ export default async function Blog() {
       <Navigation backgroundVariant="light" />
       <BackgroundImage
         overlayVariant="dark"
-        src={featuredPost.image?.url || ''}
+        src={featuredPost.image?.url || graphicsData.fallback.data.src}
       >
         <PageSection backgroundVariant="transparentDark">
           <PageHeader

@@ -17,9 +17,9 @@
   "dependencies": {
     "@date-fns/utc": "^2.1.1",
     "@filecoin-foundation/hooks": "0.0.0",
+    "@filecoin-foundation/next-config": "0.0.0",
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
-    "@filecoin-foundation/next-config": "0.0.0",
     "@headlessui/react": "^2.2.7",
     "@headlessui/tailwindcss": "^0.2.2",
     "@hookform/resolvers": "^5.2.1",

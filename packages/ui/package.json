@@ -42,6 +42,7 @@
     "./Markdown": "./src/Markdown/index.ts",
     "./MarkdownPage": "./src/MarkdownPage.tsx",
     "./Meta": "./src/Meta.tsx",
+    "./NavigationMenu": "./src/NavigationMenu/index.ts",
     "./NotFoundAnalytics": "./src/NotFoundAnalytics.tsx",
     "./NotificationDialog": "./src/NotificationDialog/index.ts",
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",

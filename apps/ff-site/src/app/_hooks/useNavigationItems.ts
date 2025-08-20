@@ -7,9 +7,14 @@ import {
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import type { SubNavItemProps } from '@/components/Navigation/DesktopNavigation/SubNavItem'
+type BaseNavigationItem = {
+  href: string
+  label: string
+}
 
-export function useNavigationItems(items: Array<SubNavItemProps>) {
+export function useNavigationItems<Item extends BaseNavigationItem>(
+  items: Array<Item>,
+) {
   const pathname = usePathname()
   const internalItems = items.filter(({ href }) =>
     isInternalLink(href, BASE_DOMAIN),

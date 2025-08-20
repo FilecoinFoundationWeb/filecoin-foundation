@@ -306,6 +306,27 @@
     @apply text-brand-300;
   }
 
+  /* NAVIGATION MENU */
+  .navigation-menu-panel {
+    @apply border-brand-500 bg-brand-800 overflow-hidden rounded-2xl border p-4;
+  }
+
+  .navigation-menu-link {
+    @apply focus:brand-outline w-full rounded-lg;
+  }
+
+  .navigation-menu-link-label {
+    @apply font-bold;
+  }
+
+  .navigation-menu-link-external-icon {
+    @apply text-brand-400 group-hover:text-brand-100;
+  }
+
+  .navigation-menu-link-description {
+    @apply text-brand-300;
+  }
+
   /* NOTIFICATION DIALOG */
   .notification {
     @apply border-brand-100/40 bg-brand-800 rounded-lg border;

@@ -4,9 +4,6 @@ draft: false
 excerpt: >-
   Filecoin is evolving from a supply-focused network to one increasingly defined
   by real usage, paying clients, and long-term sustainability.
-share_image: /assets/images/FilecoinNewsHeader.webp
-image:
-  url: /assets/images/FilecoinNewsHeader.webp
 author: Emily Vaughan
 published_on: 2025-06-10T04:00:00.000Z
 categories:

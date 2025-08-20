@@ -5,6 +5,8 @@ import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { Heading } from '@/components/Heading'
 import { SectionDivider } from '@/components/SectionDivider'
 
@@ -15,7 +17,7 @@ import { Categories } from './Categories'
 import { PostMetadata } from './PostMetadata'
 
 type BlogPostHeaderProps = {
-  image: BlogPost['image']
+  image?: string
   categories: BlogPost['categories']
   title: BlogPost['title']
   slug: string
@@ -38,7 +40,7 @@ export function BlogPostHeader({
           fill
           priority
           quality={100}
-          src={image?.url || ''}
+          src={image || graphicsData.fallback.data.src}
           alt=""
           className="object-cover"
           sizes="100vw"
