@@ -60,6 +60,7 @@
 }
 
 /* SECTION VARIANT COLORS */
+:root,
 .light-section {
   /* General colors */
   --color-text-base: theme('colors.zinc.950');
@@ -96,8 +97,12 @@
 }
 
 .dark-section {
+  /* General colors */
   --color-text-base: theme('colors.zinc.50');
+  --color-border-base: theme('colors.zinc.50 / 20%');
+  --color-border-muted: theme('colors.zinc.50 / 10%');
 
+  /* Component specific colors */
   --color-subheading-text: theme('colors.zinc.50');
   --color-subheading-text-muted: theme('colors.zinc.200');
 
@@ -110,9 +115,6 @@
   --color-navigation-link-text: theme('colors.zinc.300');
   --color-navigation-link-text-active: theme('colors.zinc.50');
   --color-bg-navigation-link-hover: theme('colors.zinc.200 / 10%');
-
-  --color-border-base: theme('colors.zinc.50 / 20%');
-  --color-border-muted: theme('colors.zinc.50 / 10%');
 
   --color-logo-item: theme('colors.zinc.400');
   --color-logo-item-hover: theme('colors.zinc.50');
