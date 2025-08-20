@@ -17,6 +17,7 @@ import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { Container } from '@/components/Container'
+import { ImageGrid } from '@/components/ImageGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -24,6 +25,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
+import { SectionContentWrapper } from '@/components/SectionContentWrapper'
 import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
@@ -32,9 +34,9 @@ import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { MetricCard } from './components/MetricCard'
 import { communityLinks } from './data/communityLinks'
 import { filecoinByTheNumbers } from './data/filecoinByTheNumbers'
+import { joinVibrantCommunityImages } from './data/joinVibrantCommunityImages'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-import { SectionContentWrapper } from '@/_components/SectionContentWrapper'
 import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPost } from '@/blog/types/blogPostType'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
@@ -190,6 +192,7 @@ export default async function Home() {
               </Button>,
             ]}
           />
+          <SectionImage {...graphicsData.rocketLaunch} />
         </SectionContent>
       </PageSection>
 
@@ -253,6 +256,11 @@ export default async function Home() {
               ))}
             </CardGrid>
           </CardGridContainer>
+          <ImageGrid variant="oneMdThree">
+            {joinVibrantCommunityImages.map(({ data, alt }) => (
+              <Image key={alt} src={data} alt={alt} />
+            ))}
+          </ImageGrid>
         </SectionContent>
       </PageSection>
     </>

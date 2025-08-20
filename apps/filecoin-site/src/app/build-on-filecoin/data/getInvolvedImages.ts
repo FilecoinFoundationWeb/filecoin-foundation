@@ -1,8 +1,8 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
-import conferencePresentation from '@/assets/images/conferencePresentation.webp'
-import groupCollaboration from '@/assets/images/groupCollaboration.webp'
-import pairProgramming from '@/assets/images/pairProgramming.webp'
+import conferencePresentation from '@/assets/images/conference-presentation.webp'
+import groupCollaboration from '@/assets/images/group-collaboration.webp'
+import pairProgramming from '@/assets/images/pair-programming.webp'
 
 export const getInvolvedImages: Array<StaticImageProps> = [
   {
