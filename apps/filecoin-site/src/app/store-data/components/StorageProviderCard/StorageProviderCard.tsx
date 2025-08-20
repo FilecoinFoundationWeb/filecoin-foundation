@@ -22,7 +22,7 @@ export function StorageProviderCard({
 }: StorageProviderCardProps) {
   return (
     <li>
-      <article className="flex h-full flex-col justify-between space-y-8 border border-zinc-200 p-8">
+      <article className="flex h-full flex-col justify-between space-y-8 rounded-2xl border border-[var(--color-border)] p-8">
         <div className="space-y-8">
           <div className="flex items-center gap-3">
             {/* Placeholder for logo */}
@@ -35,7 +35,7 @@ export function StorageProviderCard({
             </Heading>
           </div>
 
-          <p className="line-clamp-4 h-24 text-zinc-600" title={description}>
+          <p className="text-[var(--color-text-paragraph)]" title={description}>
             {description}
           </p>
 
@@ -60,7 +60,7 @@ export function StorageProviderCard({
           </StorageProviderCardSection>
         </div>
 
-        <Button href={url} variant="ghost" className="mt-20 w-full">
+        <Button href={url} variant="ghost" className="w-full">
           Visit {name}
         </Button>
       </article>
