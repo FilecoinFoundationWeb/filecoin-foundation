@@ -1,5 +1,9 @@
 import { PATHS } from './paths'
-import { FILECOIN_URLS } from './siteMetadata'
+import {
+  FILECOIN_DOCS_BASE_URL,
+  FILECOIN_FOUNDATION_URLS,
+  FILECOIN_URLS,
+} from './siteMetadata'
 
 export type NavItem = { label: string; href: string }
 
@@ -13,13 +17,10 @@ export type ExpandedNavItem = {
   }>
 }
 
-const {
-  social: socialLinks,
-  docs,
-  github,
-  security,
-  ecosystemExplorer,
-} = FILECOIN_URLS
+const { social: socialLinks, github } = FILECOIN_URLS
+
+const { security, ecosystemExplorer, grants, securityBugBounty, events } =
+  FILECOIN_FOUNDATION_URLS
 
 const social: Array<NavItem> = [
   {
@@ -45,7 +46,7 @@ const social: Array<NavItem> = [
 ]
 
 const resources: Array<NavItem> = [
-  { label: 'Docs', href: docs },
+  { label: 'Docs', href: FILECOIN_DOCS_BASE_URL },
   { label: 'GitHub', href: github },
   { label: 'Security', href: security },
   { label: 'Ecosystem Explorer', href: ecosystemExplorer },
@@ -89,7 +90,7 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Documentation',
             description: 'Official documentation for Filecoin',
-            href: FILECOIN_URLS.docs,
+            href: FILECOIN_DOCS_BASE_URL,
           },
           {
             label: 'Cookbook',
@@ -109,12 +110,12 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Grants',
             description: 'Funding opportunities to build in the ecosystem',
-            href: FILECOIN_URLS.grants,
+            href: grants,
           },
           {
             label: 'Bug Bounty',
             description: 'Help find vulnerabilities and get rewarded',
-            href: FILECOIN_URLS.securityBugBounty,
+            href: securityBugBounty,
           },
         ],
       },
@@ -179,7 +180,7 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Events',
             description: 'Join meetups, hackathons, and conferences',
-            href: FILECOIN_URLS.events,
+            href: events,
           },
           {
             label: 'Orbit',

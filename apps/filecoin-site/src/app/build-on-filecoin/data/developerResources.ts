@@ -1,11 +1,14 @@
 import {
-  DropIcon,
-  BracketsCurlyIcon,
   BookIcon,
+  BracketsCurlyIcon,
+  DropIcon,
   PlugIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import {
+  FILECOIN_DOCS_BASE_URL,
+  FILECOIN_DOCS_URLS,
+} from '@/constants/siteMetadata'
 
 import type { LinkCardData } from '@/components/LinkCard'
 
@@ -13,7 +16,7 @@ export const developerResources: Array<LinkCardData> = [
   {
     title: 'Documentation',
     description: 'Comprehensive guides and tutorials to build on Filecoin.',
-    href: FILECOIN_URLS.docs,
+    href: FILECOIN_DOCS_BASE_URL,
     icon: BookIcon,
   },
   {
@@ -27,14 +30,14 @@ export const developerResources: Array<LinkCardData> = [
     title: 'RPC Endpoints',
     description:
       'Reliable endpoints for connecting your dApps to the Filecoin network.',
-    href: `${FILECOIN_URLS.docs}networks/mainnet/rpcs`,
+    href: FILECOIN_DOCS_URLS.networksMainnetRCPs,
     icon: PlugIcon,
   },
   {
     title: 'Filecoin.sol',
     description:
       'Solidity libraries for seamless integration with the Filecoin Virtual Machine.',
-    href: `${FILECOIN_URLS.docs}smart-contracts/developing-contracts/filecoin.sol`,
+    href: FILECOIN_DOCS_URLS.smartContractDevelopingFilecoinSol,
     icon: BracketsCurlyIcon,
   },
 ]

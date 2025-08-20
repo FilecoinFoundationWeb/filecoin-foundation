@@ -6,7 +6,8 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_URLS, SEO } from '@/constants/siteMetadata'
+import { SEO } from '@/constants/siteMetadata'
+import { FILECOIN_DOCS_BASE_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
@@ -139,7 +140,7 @@ export default async function Home() {
               'Filecoin makes it easy for IPFS users to reliably store their data directly on the Filecoin network. The result is a decentralized, storage layer opening up an entirely new class of applications and use cases.',
             ]}
             cta={
-              <Button href={FILECOIN_URLS.docs} variant="primary">
+              <Button href={FILECOIN_DOCS_BASE_URL} variant="primary">
                 Learn more about IPFS
               </Button>
             }
@@ -184,7 +185,7 @@ export default async function Home() {
                 Start building
               </Button>,
               <Button
-                href={FILECOIN_URLS.docs}
+                href={FILECOIN_DOCS_BASE_URL}
                 variant="tertiary"
                 icon={BookIcon}
               >

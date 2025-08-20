@@ -1,4 +1,4 @@
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
 import type { SimpleCardData } from '@/components/SimpleCard'
 
@@ -15,7 +15,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
       'A quick intro to Filecoin’s role as a decentralized, verifiable storage network and why developers use it.',
     difficulty: 'Beginner',
     cta: {
-      href: `${FILECOIN_URLS.docs}basics/what-is-filecoin`,
+      href: FILECOIN_DOCS_URLS.basicsWhatIsFilecoin,
       text: CTA_TEXT,
     },
   },
@@ -35,7 +35,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
       'Use the Calibration testnet to build safely. Claim testFIL from the faucet and connect via an RPC endpoint.',
     difficulty: 'Beginner',
     cta: {
-      href: `${FILECOIN_URLS.docs}builder-cookbook/overview`,
+      href: FILECOIN_DOCS_URLS.builderCookbook,
       text: CTA_TEXT,
     },
   },
@@ -45,7 +45,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
       'Upload a file using a storage API or SDK, get a CID, and retrieve it through an IPFS gateway.',
     difficulty: 'Beginner',
     cta: {
-      href: `${FILECOIN_URLS.docs}builder-cookbook/overview`,
+      href: FILECOIN_DOCS_URLS.builderCookbook,
       text: CTA_TEXT,
     },
   },
@@ -55,7 +55,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
       'Use the JavaScript SDK or HTTP API to store and retrieve files directly in your application logic.',
     difficulty: 'Intermediate',
     cta: {
-      href: `${FILECOIN_URLS.docs}builder-cookbook/overview`,
+      href: FILECOIN_DOCS_URLS.builderCookbook,
       text: CTA_TEXT,
     },
   },
@@ -65,7 +65,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
       'Deploy a simple smart contract to store references to Filecoin data on the FEVM.',
     difficulty: 'Intermediate',
     cta: {
-      href: `${FILECOIN_URLS.docs}builder-cookbook/overview`,
+      href: FILECOIN_DOCS_URLS.builderCookbook,
       text: CTA_TEXT,
     },
   },
@@ -75,7 +75,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
       'Create a minimal dApp with a frontend, storage backend, and FVM smart contract working together.',
     difficulty: 'Intermediate',
     cta: {
-      href: `${FILECOIN_URLS.docs}builder-cookbook/overview`,
+      href: FILECOIN_DOCS_URLS.builderCookbook,
       text: CTA_TEXT,
     },
   },
@@ -85,7 +85,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
       'Learn patterns for NFTs, AI datasets, hybrid cloud storage, and cross-chain integrations.',
     difficulty: 'Advanced',
     cta: {
-      href: `${FILECOIN_URLS.docs}builder-cookbook/overview`,
+      href: FILECOIN_DOCS_URLS.builderCookbook,
       text: CTA_TEXT,
     },
   },
