@@ -35,4 +35,10 @@ describe('Random Event Page', () => {
       tests.links.fn(path.join(PATHS.EVENTS.path, slug))
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      tests.visualSnapshot.fn(path.join(PATHS.EVENTS.path, slug))
+    })
+  })
 })

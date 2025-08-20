@@ -33,4 +33,10 @@ describe('Random Digest Article', () => {
       tests.links.fn(path.join(PATHS.DIGEST.path, slug))
     })
   })
+
+  it(tests.visualSnapshot.prompt, () => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      tests.visualSnapshot.fn(path.join(PATHS.DIGEST.path, slug))
+    })
+  })
 })

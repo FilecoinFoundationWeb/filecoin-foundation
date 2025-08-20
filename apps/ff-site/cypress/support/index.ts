@@ -4,6 +4,7 @@ import '@percy/cypress'
 
 import { verifyLinks } from '@filecoin-foundation/cypress/links'
 import { testPageMetaData } from '@filecoin-foundation/cypress/metadata'
+import { testVisualSnapshot } from '@filecoin-foundation/cypress/percy'
 
 export const tests = {
   metadata: {
@@ -13,5 +14,9 @@ export const tests = {
   links: {
     prompt: 'should check links',
     fn: verifyLinks,
+  },
+  visualSnapshot: {
+    prompt: 'should match visual snapshot',
+    fn: testVisualSnapshot,
   },
 } as const

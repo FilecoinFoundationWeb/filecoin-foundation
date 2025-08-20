@@ -25,9 +25,8 @@ describe('Security - Main Page', () => {
     tests.links.fn(path)
   })
 
-  it('should match visual snapshot', () => {
-    cy.visit(path)
-    cy.percySnapshot()
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path)
   })
 })
 
@@ -51,9 +50,8 @@ describe('Security - Bug Bounty Program Page', () => {
     tests.links.fn(path)
   })
 
-  it('should match visual snapshot', () => {
-    cy.visit(path)
-    cy.percySnapshot()
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path)
   })
 })
 
@@ -77,9 +75,8 @@ describe('Security - Bug Bounty Program - Leaderboard Page', () => {
     tests.links.fn(path)
   })
 
-  it('should match visual snapshot', () => {
-    cy.visit(path)
-    cy.percySnapshot()
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path)
   })
 })
 
@@ -103,9 +100,8 @@ describe('Security - Coordinated Disclosure Policy Page', () => {
     tests.links.fn(path)
   })
 
-  it('should match visual snapshot', () => {
-    cy.visit(path)
-    cy.percySnapshot()
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path)
   })
 })
 
@@ -129,8 +125,7 @@ describe('Security - Maturity Model Page', () => {
     tests.links.fn(path)
   })
 
-  it('should match visual snapshot', () => {
-    cy.visit(path)
-    cy.percySnapshot()
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path)
   })
 })
