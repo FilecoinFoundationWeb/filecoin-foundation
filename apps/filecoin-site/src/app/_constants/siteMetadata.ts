@@ -28,6 +28,10 @@ const FILECOIN_URLS = {
       href: 'https://discord.gg/yeQ2hcd2TD',
       label: 'Discord',
     },
+    reddit: {
+      href: 'https://www.reddit.com/r/Filecoin/',
+      label: 'Reddit',
+    },
     slack: {
       href: 'https://filecoinproject.slack.com/ssb/redirect',
       label: 'Slack',
@@ -36,10 +40,22 @@ const FILECOIN_URLS = {
       href: 'https://t.me/filecoin',
       label: 'Telegram',
     },
+    telegramKorea: {
+      href: 'https://t.me/filecoinkor',
+      label: 'Telegram Korea',
+    },
     twitter: {
       href: 'https://twitter.com/filecoin',
-      label: 'X',
+      label: 'X (Twitter)',
       handle: '@filecoin',
+    },
+    weChat: {
+      href: 'https://filecointldr.io/filecoin-wechat',
+      label: 'WeChat',
+    },
+    youTube: {
+      href: 'https://www.youtube.com/@FilecoinProject',
+      label: 'YouTube',
     },
   },
 } as const
