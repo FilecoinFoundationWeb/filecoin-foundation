@@ -15,11 +15,11 @@ export function MetricCard({
     <Tag className="flex h-full max-w-sm flex-col gap-8 text-center">
       <div className="space-y-2">
         <h3 className="text-5xl text-white">{title}</h3>
-        <p className="text-xl text-[var(--color-text-subheading)]">
+        <p className="text-xl text-[var(--color-subheading-text)]">
           {subTitle}
         </p>
       </div>
-      <p className="flex-1 text-[var(--color-text-paragraph)]">{description}</p>
+      <p className="flex-1 text-[var(--color-paragraph-text)]">{description}</p>
     </Tag>
   )
 }

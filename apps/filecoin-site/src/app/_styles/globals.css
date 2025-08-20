@@ -52,7 +52,7 @@
 }
 
 @utility icon-button {
-  @apply rounded-full border border-[var(--color-border-icon-button)] text-[var(--color-text-base)] hover:border-[var(--color-border-icon-button-hover)] hover:bg-[var(--color-bg-icon-button-hover)] focus:bg-[var(--color-bg-icon-button-hover)];
+  @apply rounded-full border border-[var(--color-icon-button-border)] text-[var(--color-text-base)] hover:border-[var(--color-icon-button-border-hover)] hover:bg-[var(--color-icon-button-background-hover)] focus:bg-[var(--color-icon-button-background-hover)];
 
   .share-article-list & {
     @apply scale-70;
@@ -61,73 +61,72 @@
 
 /* SECTION VARIANT COLORS */
 .light-section {
+  /* General colors */
   --color-text-base: theme('colors.zinc.950');
-
-  --color-text-subheading: theme('colors.zinc.600');
-  --color-text-heading-muted: theme('colors.zinc.600');
-
-  --color-text-paragraph-subtle: theme('colors.zinc.500');
-  --color-text-paragraph: theme('colors.zinc.600');
-  --color-text-paragraph-strong: theme('colors.zinc.800');
-
-  --color-text-cta-link: theme('colors.zinc.600');
-
-  --color-text-navigation-link: theme('colors.zinc.600');
-  --color-text-navigation-link-active: theme('colors.zinc.950');
-  --color-text-navigation-link-mobile-active: theme('colors.brand.900');
-  --color-bg-navigation-link-hover: theme('colors.zinc.700 / 5%');
-
-  --color-border: theme('colors.zinc.950 / 15%');
+  --color-border-base: theme('colors.zinc.950 / 15%');
   --color-border-muted: theme('colors.zinc.950 / 10%');
 
-  --color-logo: theme('colors.zinc.400');
-  --color-logo-hover: theme('colors.zinc.500');
+  /* Component specific colors */
+  --color-subheading-text: theme('colors.zinc.600');
+  --color-subheading-text-muted: theme('colors.zinc.600');
+
+  --color-paragraph-text: theme('colors.zinc.600');
+  --color-paragraph-text-subtle: theme('colors.zinc.500');
+  --color-paragraph-text-strong: theme('colors.zinc.800');
+
+  --color-cta-link-text: theme('colors.zinc.600');
+
+  --color-navigation-link-text: theme('colors.zinc.600');
+  --color-navigation-link-text-active: theme('colors.zinc.950');
+  --color-bg-navigation-link-hover: theme('colors.zinc.700 / 5%');
+
+  --color-logo-item: theme('colors.zinc.400');
+  --color-logo-item-hover: theme('colors.zinc.500');
 
   --color-card-heading-hover: theme('colors.brand.800');
-  --color-bg-card-hover: theme('colors.zinc.50');
+  --color-card-background-hover: theme('colors.zinc.50');
 
-  --color-border-icon-button: theme('colors.zinc.300');
-  --color-border-icon-button-hover: theme('colors.zinc.400');
-  --color-bg-icon-button-hover: theme('colors.zinc.100');
+  --color-icon-button-border: theme('colors.zinc.300');
+  --color-icon-button-border-hover: theme('colors.zinc.400');
+  --color-icon-button-background-hover: theme('colors.zinc.100');
 
-  --color-navigation-menu-panel: theme('colors.zinc.100');
+  --color-navigation-menu-panel-background: theme('colors.zinc.100');
   --color-navigation-menu-panel-border: theme('colors.zinc.300');
-  --color-navigation-menu-panel-external-icon: theme('colors.zinc.700');
+  --color-navigation-menu-panel-icon: theme('colors.zinc.700');
 }
 
 .dark-section {
   --color-text-base: theme('colors.zinc.50');
 
-  --color-text-subheading: theme('colors.zinc.50');
-  --color-text-heading-muted: theme('colors.zinc.200');
+  --color-subheading-text: theme('colors.zinc.50');
+  --color-subheading-text-muted: theme('colors.zinc.200');
 
-  --color-text-paragraph-subtle: theme('colors.zinc.500');
-  --color-text-paragraph: theme('colors.zinc.400');
-  --color-text-paragraph-strong: theme('colors.zinc.200');
+  --color-paragraph-text-subtle: theme('colors.zinc.500');
+  --color-paragraph-text: theme('colors.zinc.400');
+  --color-paragraph-text-strong: theme('colors.zinc.200');
 
-  --color-text-cta-link: theme('colors.zinc.300');
+  --color-cta-link-text: theme('colors.zinc.300');
 
-  --color-text-navigation-link: theme('colors.zinc.300');
-  --color-text-navigation-link-active: theme('colors.zinc.50');
-  --color-text-navigation-link-mobile-active: theme('colors.brand.100');
+  --color-navigation-link-text: theme('colors.zinc.300');
+  --color-navigation-link-text-active: theme('colors.zinc.50');
   --color-bg-navigation-link-hover: theme('colors.zinc.200 / 10%');
 
-  --color-border: theme('colors.zinc.50 / 20%');
+  --color-border-base: theme('colors.zinc.50 / 20%');
   --color-border-muted: theme('colors.zinc.50 / 10%');
 
-  --color-logo: theme('colors.zinc.400');
-  --color-logo-hover: theme('colors.zinc.50');
+  --color-logo-item: theme('colors.zinc.400');
+  --color-logo-item-hover: theme('colors.zinc.50');
 
   --color-card-heading-hover: theme('colors.brand.500');
-  --color-bg-card-hover: theme('colors.zinc.800');
+  --color-card-background-hover: theme('colors.zinc.800');
 
-  --color-border-icon-button: theme('colors.zinc.600');
-  --color-border-icon-button-hover: theme('colors.zinc.500');
-  --color-bg-icon-button-hover: theme('colors.zinc.700');
+  --color-icon-button-border: theme('colors.zinc.600');
+  --color-icon-button-border-hover: theme('colors.zinc.500');
+  --color-icon-button-background-hover: theme('colors.zinc.700');
 
-  --color-navigation-menu-panel: theme('colors.zinc.800');
+  --color-navigation-menu-panel-background: theme('colors.zinc.800');
   --color-navigation-menu-panel-border: theme('colors.zinc.600');
-  --color-navigation-menu-panel-external-icon: theme('colors.zinc.300');
+  --color-navigation-menu-panel-icon: theme('colors.zinc.300');
 }
 
 @layer components {
@@ -324,7 +323,7 @@
 
   /* CARD */
   .card-image {
-    @apply border border-[var(--color-border)];
+    @apply border border-[var(--color-border-base)];
   }
 
   /* COPY TO CLIPBOARD */
@@ -334,7 +333,7 @@
 
   /* CTALINK */
   .cta-link {
-    @apply font-semibold text-[var(--color-text-cta-link)];
+    @apply font-semibold text-[var(--color-cta-link-text)];
   }
 
   /* FORM */
@@ -447,7 +446,7 @@
   }
 
   .logo-section-scroll-bar::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-border);
+    background-color: var(--color-border-base);
   }
 
   /* NAVIGATION MENU   */
@@ -456,11 +455,11 @@
   }
 
   .navigation-menu-link-description {
-    @apply text-[var(--color-text-paragraph)];
+    @apply text-[var(--color-paragraph-text)];
   }
 
   .navigation-menu-link-external-icon {
-    @apply text-[var(--color-navigation-menu-panel-external-icon)];
+    @apply text-[var(--color-navigation-menu-panel-icon)];
   }
 
   /* NOTIFICATION DIALOG */

@@ -24,15 +24,15 @@ export type SimpleCardData = {
 
 const interactiveStyles = {
   direct:
-    'focus-within:bg-[var(--color-bg-card-hover)] hover:bg-[var(--color-bg-card-hover)]',
+    'focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)]',
   delagated:
-    'group-focus-within:bg-[var(--color-bg-card-hover)] group-hover:bg-[var(--color-bg-card-hover)]',
+    'group-focus-within:bg-[var(--color-card-background-hover)] group-hover:bg-[var(--color-card-background-hover)]',
 }
 
 const borderStyles = {
   none: 'border-none',
-  all: 'border border-[var(--color-border)]',
-  'only-top': 'border-t border-[var(--color-border)]',
+  all: 'border border-[var(--color-border-base)]',
+  'only-top': 'border-t border-[var(--color-border-base)]',
 }
 
 export function SimpleCard({
@@ -77,7 +77,7 @@ export function SimpleCard({
               {title}
             </Heading>
           </span>
-          <p className="text-[var(--color-text-paragraph)]">{description}</p>
+          <p className="text-[var(--color-paragraph-text)]">{description}</p>
         </div>
         {cta && (
           <CTALink

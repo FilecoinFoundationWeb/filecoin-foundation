@@ -18,7 +18,7 @@ export function LogoSection({ logos, title, tag = 'h3' }: LogoSectionProps) {
     >
       {title && (
         <Tag
-          className="text-xl text-[var(--color-text-subheading)]"
+          className="text-xl text-[var(--color-subheading-text)]"
           id="logo-section-title"
         >
           {title}
