@@ -14,6 +14,7 @@ import FilecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import FilecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import FilecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
 import HomepageGradient from '@/assets/graphics/homepage-gradient.svg'
+import IPFSIllustration from '@/assets/graphics/IPFS-illustration.webp'
 import imageFallback from '@/assets/graphics/image-fallback.webp'
 import planetsShadow from '@/assets/graphics/planets-shadow.svg'
 import ServerBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
@@ -23,6 +24,10 @@ export const graphicsData = {
   homepageGradient: {
     data: HomepageGradient,
     alt: 'Gradient background for homepage',
+  },
+  homepageIPFSIllustration: {
+    data: IPFSIllustration,
+    alt: 'Illustration showing the IPFS cube logo in the center with Filecoin logos surrounding it.',
   },
   buildOnFilecoinHero: {
     data: DataCenterServerRow,

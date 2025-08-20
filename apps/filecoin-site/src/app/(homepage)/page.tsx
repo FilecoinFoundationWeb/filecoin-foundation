@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { BookIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -32,6 +34,7 @@ import { communityLinks } from './data/communityLinks'
 import { filecoinByTheNumbers } from './data/filecoinByTheNumbers'
 import { generateStructuredData } from './utils/generateStructuredData'
 
+import { SectionContentWrapper } from '@/_components/SectionContentWrapper'
 import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPost } from '@/blog/types/blogPostType'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
@@ -126,15 +129,25 @@ export default async function Home() {
       </PageSection>
 
       <PageSection paddingVariant="none" backgroundVariant="light">
-        <SectionContent
-          title="The incentive layer for IPFS"
-          description="Filecoin makes it easy for IPFS users to reliably store their data directly on the Filecoin network. The result is a decentralized, storage layer opening up an entirely new class of applications and use cases."
-          cta={
-            <Button href={FILECOIN_URLS.docs} variant="primary">
-              Learn more about IPFS
-            </Button>
-          }
-        />
+        <SectionContentWrapper>
+          <SectionContent
+            title="The missing incentive layer for IPFS"
+            description={[
+              'Filecoin adds incentivized, persistent storage to the InterPlanetary File System (IPFS), a peer-to-peer network for content-addressable data, creating a powerful, versatile, and long-term home for data. ',
+              'Filecoin makes it easy for IPFS users to reliably store their data directly on the Filecoin network. The result is a decentralized, storage layer opening up an entirely new class of applications and use cases.',
+            ]}
+            cta={
+              <Button href={FILECOIN_URLS.docs} variant="primary">
+                Learn more about IPFS
+              </Button>
+            }
+          />
+          <Image
+            src={graphicsData.homepageIPFSIllustration.data}
+            alt={graphicsData.homepageIPFSIllustration.alt}
+            className="h-72 min-w-80 object-contain"
+          />
+        </SectionContentWrapper>
       </PageSection>
 
       <PageSection backgroundVariant="light">
