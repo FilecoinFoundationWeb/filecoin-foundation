@@ -15,6 +15,10 @@ describe('Terms of Use Page', () => {
     })
   })
 
+  it(tests.links.prompt, () => {
+    tests.links.fn(PATHS.TERMS_OF_USE.path)
+  })
+
   it(tests.visualSnapshot.prompt, () => {
     tests.visualSnapshot.fn({
       path: PATHS.TERMS_OF_USE.path,
