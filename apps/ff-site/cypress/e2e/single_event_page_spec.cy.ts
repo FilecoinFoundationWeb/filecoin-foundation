@@ -29,4 +29,10 @@ describe('Random Event Page', () => {
       })
     })
   })
+
+  it(tests.links.prompt, () => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      tests.links.fn(path.join(PATHS.BLOG.path, slug))
+    })
+  })
 })
