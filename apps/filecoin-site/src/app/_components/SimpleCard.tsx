@@ -9,7 +9,7 @@ export type SimpleCardProps = {
   description: string
   as: 'li' | 'div'
   badge?: BadgeProps['children']
-  border?: keyof typeof borderStyles
+  border?: BorderKey
   cta?: {
     href: CTALinkProps['href']
     text: CTALinkProps['children']
@@ -22,17 +22,38 @@ export type SimpleCardData = {
   cta: NonNullable<SimpleCardProps['cta']>
 }
 
-const interactiveStyles = {
-  direct:
-    'focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)]',
-  delagated:
-    'group-focus-within:bg-[var(--color-card-background-hover)] group-hover:bg-[var(--color-card-background-hover)]',
+const borderStyles = {
+  all: 'border border-[var(--color-border-base)] rounded-2xl',
+  none: 'border-none',
+  'only-top': 'border-t border-[var(--color-border-base)]',
+} as const
+
+type BorderKey = keyof typeof borderStyles
+
+const interactiveStyles: Partial<Record<BorderKey, string>> = {
+  all: 'focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)]',
+  none: 'group-focus-within:bg-[var(--color-card-background-hover)] group-hover:bg-[var(--color-card-background-hover)]',
 }
 
-const borderStyles = {
-  none: 'border-none',
-  all: 'border border-[var(--color-border-base)]',
-  'only-top': 'border-t border-[var(--color-border-base)]',
+const cardLayoutStyles: Record<
+  BorderKey,
+  { inner: string; content: string; cta: string }
+> = {
+  all: {
+    inner: 'p-8',
+    content: 'mb-12',
+    cta: 'bottom-8 left-8',
+  },
+  none: {
+    inner: 'p-8',
+    content: 'mb-12',
+    cta: 'bottom-8 left-8',
+  },
+  'only-top': {
+    inner: 'pt-8 pb-6',
+    content: 'mb-6',
+    cta: 'bottom-0',
+  },
 }
 
 export function SimpleCard({
@@ -43,7 +64,7 @@ export function SimpleCard({
   badge,
   border = 'all',
 }: SimpleCardProps) {
-  const hasOnlyTopBorder = border === 'only-top'
+  const layout = cardLayoutStyles[border]
 
   return (
     <Tag
@@ -51,47 +72,45 @@ export function SimpleCard({
         'group h-full w-full',
         cta && 'relative',
         borderStyles[border],
-        border === 'all' && interactiveStyles.direct,
-        border === 'none' && interactiveStyles.delagated,
+        interactiveStyles[border],
       )}
     >
-      <div
-        className={clsx(
-          'flex flex-col gap-6',
-          hasOnlyTopBorder ? 'pt-8 pb-6' : 'p-6',
-        )}
-      >
+      <div className={clsx('flex flex-col gap-6', layout.inner)}>
         {badge && (
           <div className="flex">
             <Badge>{badge}</Badge>
           </div>
         )}
-        <div
-          className={clsx(
-            'flex flex-col gap-3',
-            hasOnlyTopBorder ? 'mb-6' : 'mb-12',
-          )}
-        >
-          <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
-            <Heading tag="h3" variant="card-heading">
-              {title}
-            </Heading>
-          </span>
-          <p className="text-[var(--color-paragraph-text)]">{description}</p>
-        </div>
+        <CardContent title={title} description={description} layout={layout} />
         {cta && (
           <CTALink
             inset
             href={cta.href}
-            textClassName={clsx(
-              'absolute',
-              hasOnlyTopBorder ? 'bottom-0' : 'bottom-6 left-6',
-            )}
+            textClassName={clsx('absolute', layout.cta)}
           >
             {cta.text}
           </CTALink>
         )}
       </div>
     </Tag>
+  )
+}
+
+function CardContent({
+  title,
+  description,
+  layout,
+}: Pick<SimpleCardProps, 'title' | 'description'> & {
+  layout: (typeof cardLayoutStyles)[BorderKey]
+}) {
+  return (
+    <div className={clsx('flex flex-col gap-3', layout.content)}>
+      <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
+        <Heading tag="h3" variant="card-heading">
+          {title}
+        </Heading>
+      </span>
+      <p className="text-[var(--color-text-paragraph)]">{description}</p>
+    </div>
   )
 }
