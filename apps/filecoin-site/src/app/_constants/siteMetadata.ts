@@ -11,17 +11,6 @@ const SEO = {
     "Preserve humanity's most important information on Filecoin, the decentralized storage network with verifiable integrity, global redundancy, and no centralized control. Build apps, store data securely, or become a storage provider today.",
 } as const
 
-const FILECOIN_FOUNDATION_URLS = {
-  events: 'https://fil.org/events',
-  grants: 'https://fil.org/grants',
-  security: 'https://fil.org/security',
-  ecosystemExplorer: 'https://fil.org/ecosystem-explorer',
-  emails: {
-    contact: 'hello@fil.org',
-    devgrants: 'devgrants@fil.org',
-  },
-} as const
-
 const FILECOIN_DOCS_BASE_URL = 'https://docs.filecoin.io/'
 
 const FILECOIN_DOCS_URLS = {
@@ -36,6 +25,17 @@ const FILECOIN_DOCS_URLS = {
   smartContractFundamentalsFVM: `${FILECOIN_DOCS_BASE_URL}smart-contracts/fundamentals/the-fvm`,
   storageProviderBlockRewards: `${FILECOIN_DOCS_BASE_URL}storage-providers/filecoin-economics/block-rewards#block-rewards`,
   storageProviderBlockRewardsImpact: `${FILECOIN_DOCS_BASE_URL}storage-providers/filecoin-economics/block-rewards#impact-of-storage-capacity-on-block-rewards`,
+} as const
+
+const FILECOIN_FOUNDATION_URLS = {
+  events: 'https://fil.org/events',
+  grants: 'https://fil.org/grants',
+  security: 'https://fil.org/security',
+  ecosystemExplorer: 'https://fil.org/ecosystem-explorer',
+  emails: {
+    contact: 'hello@fil.org',
+    devgrants: 'devgrants@fil.org',
+  },
 } as const
 
 const FILECOIN_URLS = {
