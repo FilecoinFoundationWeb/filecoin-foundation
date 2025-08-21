@@ -43,10 +43,7 @@ export function SimpleCardWithLogo({
   logo,
 }: SimpleCardWithLogoProps) {
   return (
-    <li
-      data-card-type="simple-with-logo"
-      className="group relative flex h-full flex-col rounded-xs border border-[var(--color-border-base)] sm:flex-row"
-    >
+    <li className="group relative flex h-full flex-col rounded-2xl border border-[var(--color-border-base)] sm:flex-row">
       <Logo logo={logo} title={title} />
 
       <Divider />
@@ -72,7 +69,7 @@ export function SimpleCardWithLogo({
 function Logo({ logo, title }: LogoProps) {
   return (
     <div
-      className="grid h-44 w-full flex-shrink-0 place-items-center sm:h-full sm:w-42"
+      className="grid h-44 w-full flex-shrink-0 place-items-center rounded-t-2xl sm:h-full sm:w-42 sm:rounded-t-none sm:rounded-l-2xl"
       style={{ backgroundColor: logo.bgColor }}
     >
       {logo.type === 'svg' ? (

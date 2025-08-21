@@ -345,19 +345,6 @@
     @apply icon-button;
   }
 
-  /* CTALINK */
-  .cta-link {
-    @apply font-semibold text-[var(--color-cta-link-text)];
-  }
-
-  [data-card-type='simple'] .cta-link {
-    @apply focus:rounded-2xl;
-  }
-
-  [data-card-type='simple-with-logo'] .cta-link {
-    @apply focus:rounded-sm;
-  }
-
   /* FORM */
   .form-text-input {
     @apply block w-full border-b py-3 placeholder:text-sm data-disabled:cursor-not-allowed;
@@ -531,6 +518,17 @@
   /* SHARE ARTICLE */
   .share-article-list {
     @apply gap-2;
+  }
+
+  /* SIMPLE CARD */
+  .cta-link {
+    @apply font-semibold text-[var(--color-cta-link-text)];
+  }
+
+  .simple-card-border-all .cta-link,
+  .simple-card-border-none .cta-link,
+  .simple-card-border-none ~ .cta-link {
+    @apply focus:rounded-2xl;
   }
 
   /* SOCIAL LINKS */

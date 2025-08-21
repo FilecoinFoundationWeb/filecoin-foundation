@@ -23,9 +23,10 @@ export type SimpleCardData = {
 }
 
 const borderStyles = {
-  all: 'border border-[var(--color-border-base)] rounded-2xl',
-  none: 'border-none',
-  'only-top': 'border-t border-[var(--color-border-base)]',
+  all: 'simple-card-border-all border border-[var(--color-border-base)] rounded-2xl',
+  none: 'simple-card-border-none border-none',
+  'only-top':
+    'simple-card-border-only-top border-t border-[var(--color-border-base)]',
 } as const
 
 type BorderKey = keyof typeof borderStyles
@@ -68,7 +69,6 @@ export function SimpleCard({
 
   return (
     <Tag
-      data-card-type="simple"
       className={clsx(
         'group h-full w-full',
         cta && 'relative',
