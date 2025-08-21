@@ -7,7 +7,9 @@
     "#*": "./src/*"
   },
   "exports": {
-    "./metadata": "./src/metadata/index.ts"
+    "./metadata": "./src/metadata/index.ts",
+    "./links": "./src/links/index.ts",
+    "./percy": "./src/percy/index.ts"
   },
   "scripts": {
     "lint": "eslint --fix ."
@@ -18,6 +20,7 @@
     "@filecoin-foundation/typescript-config": "0.0.0"
   },
   "peerDependencies": {
-    "cypress": "^14.5.4"
+    "cypress": "^14.5.4",
+    "@percy/cypress": "^3.1.6"
   }
 }

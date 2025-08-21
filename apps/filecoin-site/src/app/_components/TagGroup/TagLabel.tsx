@@ -4,7 +4,7 @@ export type TagProps = {
 
 export function TagLabel({ children }: TagProps) {
   return (
-    <span className="font-mono text-sm text-[var(--color-text-paragraph-strong)] capitalize">
+    <span className="font-mono text-sm text-[var(--color-paragraph-text-strong)] capitalize">
       {children}
     </span>
   )

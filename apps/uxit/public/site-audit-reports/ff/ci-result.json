@@ -1,8 +1,8 @@
 [
   {
     "path": "/",
-    "score": 0.97,
-    "performance": 0.98,
+    "score": 0.95,
+    "performance": 0.92,
     "accessibility": 1,
     "best-practices": 0.96,
     "seo": 0.92
@@ -17,70 +17,70 @@
   },
   {
     "path": "/blog",
-    "score": 0.93,
-    "performance": 0.78,
+    "score": 0.92,
+    "performance": 0.74,
     "accessibility": 0.94,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/blog/case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science",
-    "score": 0.99,
-    "performance": 0.98,
+    "path": "/blog/welcome-to-the-forest-with-chainsafe-s-filecoin",
+    "score": 0.98,
+    "performance": 0.95,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/digest",
-    "score": 0.99,
-    "performance": 0.98,
+    "score": 0.97,
+    "performance": 0.91,
     "accessibility": 1,
     "best-practices": 0.96,
     "seo": 1
   },
   {
-    "path": "/digest/from-participant-to-organizer-how-community-led-activities-drive-innovation-in-decentralized-systems",
-    "score": 0.97,
-    "performance": 0.86,
+    "path": "/digest/letter-from-the-guest-editor",
+    "score": 0.96,
+    "performance": 0.82,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/ecosystem-explorer",
-    "score": 0.94,
-    "performance": 0.98,
+    "score": 0.95,
+    "performance": 0.97,
     "accessibility": 0.94,
-    "best-practices": 0.93,
+    "best-practices": 0.96,
     "seo": 0.92
   },
   {
-    "path": "/ecosystem-explorer/democracys-library",
-    "score": 1,
+    "path": "/ecosystem-explorer/atlas-experiment-at-cern",
+    "score": 0.95,
     "performance": 0.99,
     "accessibility": 1,
-    "best-practices": 1,
+    "best-practices": 0.82,
     "seo": 1
   },
   {
     "path": "/employee-privacy-policy",
-    "score": 0.99,
-    "performance": 0.98,
+    "score": 0.94,
+    "performance": 0.96,
     "accessibility": 0.96,
-    "best-practices": 1,
+    "best-practices": 0.82,
     "seo": 1
   },
   {
     "path": "/events",
     "score": 0.98,
-    "performance": 0.98,
+    "performance": 0.97,
     "accessibility": 0.94,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/events/filecoin-orbit-playground-16-ai-and-data-storage-for-workforce",
+    "path": "/events/hackathon-browsers-3000",
     "score": 1,
     "performance": 0.99,
     "accessibility": 1,
@@ -97,16 +97,16 @@
   },
   {
     "path": "/filecoin-plus/allocators",
-    "score": 0.94,
-    "performance": 0.84,
-    "accessibility": 0.95,
+    "score": 0.96,
+    "performance": 0.86,
+    "accessibility": 1,
     "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/governance",
-    "score": 0.97,
-    "performance": 0.99,
+    "score": 0.96,
+    "performance": 0.95,
     "accessibility": 1,
     "best-practices": 0.96,
     "seo": 0.92
@@ -114,57 +114,65 @@
   {
     "path": "/governance/govhub",
     "score": 0.95,
-    "performance": 0.93,
+    "performance": 0.91,
     "accessibility": 1,
     "best-practices": 0.96,
     "seo": 0.92
   },
   {
     "path": "/grants",
-    "score": 0.96,
-    "performance": 0.97,
+    "score": 0.95,
+    "performance": 0.92,
     "accessibility": 1,
     "best-practices": 0.96,
     "seo": 0.92
   },
   {
     "path": "/orbit",
-    "score": 0.98,
-    "performance": 0.97,
-    "accessibility": 1,
+    "score": 0.96,
+    "performance": 0.92,
+    "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/privacy-policy",
-    "score": 0.99,
-    "performance": 0.99,
+    "score": 0.94,
+    "performance": 0.96,
     "accessibility": 0.96,
-    "best-practices": 1,
+    "best-practices": 0.82,
     "seo": 1
   },
   {
     "path": "/security",
     "score": 0.98,
-    "performance": 0.96,
+    "performance": 0.94,
     "accessibility": 1,
     "best-practices": 0.96,
     "seo": 1
   },
   {
-    "path": "/security/maturity-model",
-    "score": 0.99,
+    "path": "/security/bug-bounty/leaderboard",
+    "score": 1,
     "performance": 0.98,
     "accessibility": 1,
-    "best-practices": 0.96,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/security/coordinated-disclosure-policy",
+    "score": 0.99,
+    "performance": 0.96,
+    "accessibility": 1,
+    "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/terms-of-use",
-    "score": 0.99,
-    "performance": 0.99,
+    "score": 0.94,
+    "performance": 0.96,
     "accessibility": 0.96,
-    "best-practices": 1,
+    "best-practices": 0.82,
     "seo": 1
   }
 ]

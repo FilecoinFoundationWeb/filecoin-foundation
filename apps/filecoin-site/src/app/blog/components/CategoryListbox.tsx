@@ -36,7 +36,7 @@ export function CategoryListbox() {
         anchor="bottom start"
         className={clsx(
           backgroundVariants.light,
-          'focus:brand-outline mt-2 w-[var(--button-width)] space-y-2 border border-[var(--color-border)] p-2 shadow-lg',
+          'focus:brand-outline mt-2 w-[var(--button-width)] space-y-2 border border-[var(--color-border-base)] p-2 shadow-lg',
         )}
       >
         {blogCategories.map((category) => {
@@ -51,7 +51,7 @@ export function CategoryListbox() {
             >
               <div className="px-4 py-3 group-data-selected:bg-zinc-100">
                 <div className="flex items-center gap-4">
-                  <p className="font-medium text-[var(--color-text-paragraph)] group-data-focus:text-[var(--color-text-paragraph-strong)] group-data-selected:text-[var(--color-text-paragraph-strong)]">
+                  <p className="font-medium text-[var(--color-paragraph-text)] group-data-focus:text-[var(--color-paragraph-text-strong)] group-data-selected:text-[var(--color-paragraph-text-strong)]">
                     {displayName}
                   </p>
                 </div>

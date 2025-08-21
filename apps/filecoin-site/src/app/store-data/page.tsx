@@ -18,8 +18,10 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 
+import { StorageProviderCard } from './components/StorageProviderCard/StorageProviderCard'
 import { STORE_DATA_SEO } from './constants/seo'
 import { filecoinFeatures } from './data/filecoinFeatures'
+import { storageProviders } from './data/storageProviders'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function StoreData() {
@@ -83,7 +85,22 @@ export default function StoreData() {
         <SectionContent
           title="Store on Filecoin"
           description="Find the perfect storage solution for your data on Filecoin."
-        />
+        >
+          <CardGrid as="ul" variant="lgTwoXlThree">
+            {storageProviders.map(
+              ({ name, description, bestFor, keyFeatures, url }) => (
+                <StorageProviderCard
+                  key={name}
+                  name={name}
+                  description={description}
+                  bestFor={bestFor}
+                  keyFeatures={keyFeatures}
+                  url={url}
+                />
+              ),
+            )}
+          </CardGrid>
+        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="dark">

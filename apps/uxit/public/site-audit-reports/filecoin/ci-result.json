@@ -1,130 +1,90 @@
 [
   {
     "path": "/",
-    "score": 0.91,
-    "performance": 0.84,
-    "accessibility": 0.89,
+    "score": 0.97,
+    "performance": 0.87,
+    "accessibility": 1,
     "best-practices": 1,
-    "seo": 0.92
+    "seo": 1
   },
   {
     "path": "/blog/",
-    "score": 0.79,
-    "performance": 0.65,
-    "accessibility": 0.83,
+    "score": 0.85,
+    "performance": 0.68,
+    "accessibility": 0.96,
     "best-practices": 0.82,
-    "seo": 0.85
+    "seo": 0.92
   },
   {
-    "path": "/blog/interviews/",
-    "score": 0.75,
-    "performance": 0.7,
-    "accessibility": 0.79,
-    "best-practices": 0.82,
-    "seo": 0.69
-  },
-  {
-    "path": "/blog/posts/filecoin-collaborative-resource-and-risk-management/",
+    "path": "/blog/awards/",
     "score": 0.87,
-    "performance": 0.85,
-    "accessibility": 0.88,
+    "performance": 0.79,
+    "accessibility": 0.96,
+    "best-practices": 0.82,
+    "seo": 0.92
+  },
+  {
+    "path": "/blog/posts/filecoin-v16-network-upgrade-skyr/",
+    "score": 0.87,
+    "performance": 0.82,
+    "accessibility": 0.94,
     "best-practices": 0.82,
     "seo": 0.92
   },
   {
     "path": "/build/",
-    "score": 0.84,
+    "score": 0.9,
     "performance": 0.82,
-    "accessibility": 0.88,
+    "accessibility": 0.96,
     "best-practices": 0.82,
-    "seo": 0.85
-  },
-  {
-    "path": "/categories/",
-    "score": 0.81,
-    "performance": 1,
-    "accessibility": 0.55,
-    "best-practices": 0.86,
-    "seo": 0.82
-  },
-  {
-    "path": "/categories/filecoin-community/",
-    "score": 0.81,
-    "performance": 1,
-    "accessibility": 0.55,
-    "best-practices": 0.86,
-    "seo": 0.82
-  },
-  {
-    "path": "/discord/",
-    "score": 0.77,
-    "performance": 0.49,
-    "accessibility": 1,
-    "best-practices": 0.57,
     "seo": 1
   },
   {
     "path": "/provide/",
-    "score": 0.83,
-    "performance": 0.78,
-    "accessibility": 0.88,
+    "score": 0.88,
+    "performance": 0.82,
+    "accessibility": 0.96,
     "best-practices": 0.82,
-    "seo": 0.85
+    "seo": 0.92
   },
   {
     "path": "/store/",
-    "score": 0.84,
-    "performance": 0.74,
-    "accessibility": 0.88,
+    "score": 0.9,
+    "performance": 0.8,
+    "accessibility": 0.96,
     "best-practices": 0.82,
-    "seo": 0.92
-  },
-  {
-    "path": "/tags/",
-    "score": 0.81,
-    "performance": 1,
-    "accessibility": 0.55,
-    "best-practices": 0.86,
-    "seo": 0.82
+    "seo": 1
   },
   {
     "path": "/zh-cn/",
-    "score": 0.91,
-    "performance": 0.84,
-    "accessibility": 0.89,
+    "score": 0.97,
+    "performance": 0.88,
+    "accessibility": 1,
     "best-practices": 1,
-    "seo": 0.92
+    "seo": 1
   },
   {
-    "path": "/zh-cn/blog/posts/filecoin-zk-snarks-filecoin/",
-    "score": 0.87,
+    "path": "/zh-cn/blog/awards/",
+    "score": 0.89,
+    "performance": 0.79,
+    "accessibility": 0.96,
+    "best-practices": 0.82,
+    "seo": 1
+  },
+  {
+    "path": "/zh-cn/blog/posts/slingshot-2.3/",
+    "score": 0.9,
     "performance": 0.84,
-    "accessibility": 0.88,
+    "accessibility": 0.96,
     "best-practices": 0.82,
-    "seo": 0.92
+    "seo": 1
   },
   {
-    "path": "/zh-cn/blog/updates/",
-    "score": 0.76,
-    "performance": 0.75,
-    "accessibility": 0.79,
+    "path": "/zh-cn/provide/",
+    "score": 0.9,
+    "performance": 0.82,
+    "accessibility": 0.96,
     "best-practices": 0.82,
-    "seo": 0.69
-  },
-  {
-    "path": "/zh-cn/categories/",
-    "score": 0.81,
-    "performance": 1,
-    "accessibility": 0.55,
-    "best-practices": 0.86,
-    "seo": 0.82
-  },
-  {
-    "path": "/zh-cn/categories/events/",
-    "score": 0.81,
-    "performance": 1,
-    "accessibility": 0.55,
-    "best-practices": 0.86,
-    "seo": 0.82
+    "seo": 1
   }
 ]

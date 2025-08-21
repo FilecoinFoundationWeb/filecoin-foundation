@@ -1,0 +1,90 @@
+[
+  {
+    "path": "/",
+    "score": 0.93,
+    "performance": 0.99,
+    "accessibility": 0.98,
+    "best-practices": 0.82,
+    "seo": 0.92
+  },
+  {
+    "path": "/blog",
+    "score": 0.95,
+    "performance": 0.99,
+    "accessibility": 1,
+    "best-practices": 0.82,
+    "seo": 1
+  },
+  {
+    "path": "/blog/fil-dev-summit-6-toronto-takeaways-and-next-steps",
+    "score": 0.95,
+    "performance": 1,
+    "accessibility": 0.98,
+    "best-practices": 0.82,
+    "seo": 1
+  },
+  {
+    "path": "/build-on-filecoin",
+    "score": 0.93,
+    "performance": 0.98,
+    "accessibility": 1,
+    "best-practices": 0.82,
+    "seo": 0.92
+  },
+  {
+    "path": "/case-studies",
+    "score": 0.94,
+    "performance": 1,
+    "accessibility": 1,
+    "best-practices": 0.82,
+    "seo": 0.92
+  },
+  {
+    "path": "/learn",
+    "score": 0.94,
+    "performance": 1,
+    "accessibility": 1,
+    "best-practices": 0.82,
+    "seo": 0.92
+  },
+  {
+    "path": "/privacy-policy",
+    "score": 0.96,
+    "performance": 1,
+    "accessibility": 1,
+    "best-practices": 0.82,
+    "seo": 1
+  },
+  {
+    "path": "/provide-storage",
+    "score": 0.93,
+    "performance": 0.99,
+    "accessibility": 1,
+    "best-practices": 0.82,
+    "seo": 0.92
+  },
+  {
+    "path": "/provide-storage/onboarding",
+    "score": 0.98,
+    "performance": 1,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 0.91
+  },
+  {
+    "path": "/store-data",
+    "score": 0.95,
+    "performance": 1,
+    "accessibility": 0.98,
+    "best-practices": 0.82,
+    "seo": 1
+  },
+  {
+    "path": "/terms-of-use",
+    "score": 0.96,
+    "performance": 1,
+    "accessibility": 1,
+    "best-practices": 0.82,
+    "seo": 1
+  }
+]

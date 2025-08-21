@@ -1,0 +1,106 @@
+[
+  {
+    "path": "/",
+    "score": 0.91,
+    "performance": 0.75,
+    "accessibility": 0.95,
+    "best-practices": 1,
+    "seo": 0.92
+  },
+  {
+    "path": "/about-us",
+    "score": 0.93,
+    "performance": 0.77,
+    "accessibility": 0.93,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/akave-cloud",
+    "score": 0.94,
+    "performance": 0.84,
+    "accessibility": 0.91,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/blog",
+    "score": 0.97,
+    "performance": 0.9,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/blog/akave-cloud-x-filecoin-empowering-verifiable-data-storage",
+    "score": 0.96,
+    "performance": 0.87,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/contact",
+    "score": 0.91,
+    "performance": 0.92,
+    "accessibility": 0.93,
+    "best-practices": 0.79,
+    "seo": 1
+  },
+  {
+    "path": "/knowledge-center",
+    "score": 0.9,
+    "performance": 0.73,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.92
+  },
+  {
+    "path": "/pricing",
+    "score": 0.92,
+    "performance": 0.75,
+    "accessibility": 0.92,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/privacy-policy",
+    "score": 0.93,
+    "performance": 0.85,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.92
+  },
+  {
+    "path": "/terms-of-service",
+    "score": 0.96,
+    "performance": 0.94,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.92
+  },
+  {
+    "path": "/use-cases",
+    "score": 0.92,
+    "performance": 0.79,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.92
+  },
+  {
+    "path": "/why-akave-cloud",
+    "score": 0.95,
+    "performance": 0.93,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.92
+  },
+  {
+    "path": "/workshop",
+    "score": 0.98,
+    "performance": 0.96,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 1
+  }
+]
