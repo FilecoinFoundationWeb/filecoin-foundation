@@ -140,7 +140,7 @@ export default async function Home() {
               'Filecoin makes it easy for IPFS users to reliably store their data directly on the Filecoin network. The result is a decentralized, storage layer opening up an entirely new class of applications and use cases.',
             ]}
             cta={
-              <Button href={FILECOIN_DOCS_URL} variant="primary">
+              <Button href="https://ipfs.tech/" variant="primary">
                 Learn more about IPFS
               </Button>
             }
@@ -163,8 +163,8 @@ export default async function Home() {
             <Button href={PATHS.STORE_DATA.path} variant="primary">
               Store data
             </Button>,
-            <Button href="https://github.com/filecoin-project" variant="ghost">
-              Learn more
+            <Button href={PATHS.LEARN.path} variant="ghost">
+              Learn more about Filecoin
             </Button>,
           ]}
         >

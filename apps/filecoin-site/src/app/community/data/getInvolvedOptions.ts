@@ -5,6 +5,8 @@ import {
   MapPinLineIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
 import type { LinkCardData } from '@/components/LinkCard'
 
 export const getInvolvedOptions: Array<LinkCardData> = [
@@ -12,7 +14,7 @@ export const getInvolvedOptions: Array<LinkCardData> = [
     title: 'Apply for a grant',
     description:
       'Secure funding to support your Filecoin-based project or research.',
-    href: 'https://fil.org/grants',
+    href: FILECOIN_FOUNDATION_URLS.grants,
     icon: CurrencyDollarIcon,
   },
   {
@@ -26,14 +28,14 @@ export const getInvolvedOptions: Array<LinkCardData> = [
     title: 'Become an Orbit ambassador',
     description:
       'Join the Orbit community to advocate for decentralized tech, support new builders, and grow the Filecoin movement globally.',
-    href: 'https://fil.org/orbit',
+    href: FILECOIN_FOUNDATION_URLS.orbit,
     icon: MegaphoneIcon,
   },
   {
     title: 'Attend community events',
     description:
       'Connect with builders, researchers, and advocates at hackathons, meetups, and summits around the world.',
-    href: 'https://fil.org/events',
+    href: FILECOIN_FOUNDATION_URLS.events,
     icon: MapPinLineIcon,
   },
 ]

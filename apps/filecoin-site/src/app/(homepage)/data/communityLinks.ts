@@ -5,7 +5,10 @@ import {
   SlackLogoIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import {
+  FILECOIN_FOUNDATION_URLS,
+  FILECOIN_URLS,
+} from '@/constants/siteMetadata'
 
 import type { LinkCardData } from '@/components/LinkCard'
 
@@ -17,7 +20,7 @@ export const communityLinks: Array<LinkCardData> = [
   },
   {
     title: 'Attend a Filecoin event',
-    href: 'https://fil.org/events',
+    href: FILECOIN_FOUNDATION_URLS.events,
     icon: MapPinIcon,
   },
   {
@@ -27,7 +30,7 @@ export const communityLinks: Array<LinkCardData> = [
   },
   {
     title: 'Become a Filecoin Orbit ambassador',
-    href: 'https://www.pldg.xyz/',
+    href: FILECOIN_FOUNDATION_URLS.orbit,
     icon: MegaphoneIcon,
   },
 ]

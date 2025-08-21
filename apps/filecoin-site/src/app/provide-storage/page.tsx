@@ -51,7 +51,10 @@ export default function ProvideStorage() {
             title="Power the world's largest decentralized storage network"
             description="Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity’s most important information."
             cta={[
-              <Button href="#todo" variant="primary">
+              <Button
+                href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
+                variant="primary"
+              >
                 Book a call with the onboarding team
               </Button>,
               <Button href={FILECOIN_URLS.github} variant="ghost">

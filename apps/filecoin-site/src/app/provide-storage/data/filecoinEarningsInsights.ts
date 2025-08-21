@@ -28,8 +28,8 @@ export const filecoinEarningsInsights: Array<SimpleCardData> = [
     description:
       'Historically, some storage providers have recouped their costs within 30 months, depending on uptime and operational efficiency.',
     cta: {
-      href: FILECOIN_DOCS_URLS.storageProviderBlockRewards,
-      text: 'Learn more',
+      href: FILECOIN_DOCS_URLS.storageProviderReturnOnInvestment,
+      text: CTA_TEXT,
     },
   },
 ]
