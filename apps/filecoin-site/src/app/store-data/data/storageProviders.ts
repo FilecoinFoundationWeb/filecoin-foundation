@@ -83,7 +83,7 @@ export const storageProviders = [
       'Client-side encryption',
       'Access control',
     ],
-    url: 'https://github.com/filecoin-project/singularity',
+    url: 'https://singularity.storage/',
     logo: SingularityMiniatureLogo,
   },
   {
