@@ -78,11 +78,7 @@ export function SimpleCardWithLogo({
         </div>
       </div>
 
-      <CTALink
-        inset
-        href={cta.href}
-        textClassName="absolute bottom-8 sm:left-50 left-8"
-      >
+      <CTALink inset href={cta.href} textClassName="bottom-8 sm:left-50 left-8">
         {cta.text}
       </CTALink>
     </li>

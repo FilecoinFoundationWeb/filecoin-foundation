@@ -37,7 +37,13 @@ export function CTALink({
         inset && 'absolute inset-0',
       )}
     >
-      <span className={clsx('flex items-center gap-2', textClassName)}>
+      <span
+        className={clsx(
+          'flex items-center gap-2',
+          inset && 'absolute',
+          textClassName,
+        )}
+      >
         {children}
         <Icon
           component={getIconComponent(isExternal, icon)}

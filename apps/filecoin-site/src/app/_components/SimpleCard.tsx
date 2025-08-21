@@ -76,11 +76,7 @@ export function SimpleCard({
         )}
         <CardContent title={title} description={description} layout={layout} />
         {cta && (
-          <CTALink
-            inset
-            href={cta.href}
-            textClassName={clsx('absolute', layout.cta)}
-          >
+          <CTALink inset href={cta.href} textClassName={layout.cta}>
             {cta.text}
           </CTALink>
         )}

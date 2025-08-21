@@ -26,7 +26,7 @@ export function IconCardWithCTA({ title, icon, cta }: IconCardWithCTAProps) {
         <CTALink
           inset
           href={cta.href}
-          textClassName="absolute bottom-6 md:left-6 left-28"
+          textClassName="bottom-6 md:left-6 left-28"
         >
           {cta.text}
         </CTALink>
