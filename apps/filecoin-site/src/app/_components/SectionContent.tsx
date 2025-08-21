@@ -5,21 +5,22 @@ import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
 import { Heading, type HeadingProps } from '@/components/Heading'
 
 type SectionContentDescriptionProps = {
-  description: string | string[]
+  description: string | Array<string>
+  descriptionColorBase?: boolean
 }
 
 type SectionContentProps = {
   title: HeadingProps['children']
-  description?: SectionContentDescriptionProps['description']
   children?: React.ReactNode
   cta?: ButtonRowProps['buttons']
   centerCTA?: ButtonRowProps['centered']
   centerTitle?: boolean
-}
+} & SectionContentDescriptionProps
 
 export function SectionContent({
   title,
   description,
+  descriptionColorBase,
   children,
   cta,
   centerCTA,
@@ -27,37 +28,53 @@ export function SectionContent({
 }: SectionContentProps) {
   return (
     <div
-      className="section-content"
+      className="section-content space-y-15"
       id={slugify(title.toString(), { lower: true })}
     >
-      <div className={clsx('max-w-3xl', centerTitle && 'mx-auto text-center')}>
+      <div
+        className={clsx(
+          'max-w-3xl space-y-15',
+          centerTitle && 'mx-auto text-center',
+        )}
+      >
         <Heading tag="h2" variant="section-heading">
           {title}
         </Heading>
-
-        {description && <SectionContentDescription description={description} />}
+        {description && (
+          <div className="space-y-6">
+            <SectionContentDescription
+              descriptionColorBase={descriptionColorBase}
+              description={description}
+            />
+          </div>
+        )}
       </div>
       {children && (
-        <div className="mt-15 flex flex-col gap-15 md:gap-30">{children}</div>
+        <div className="flex flex-col gap-15 md:gap-30">{children}</div>
       )}
-      {cta && (
-        <div className="mt-15">
-          <ButtonRow buttons={cta} centered={centerCTA} />
-        </div>
-      )}
+      {cta && <ButtonRow buttons={cta} centered={centerCTA} />}
     </div>
   )
 }
 
 function SectionContentDescription({
   description,
+  descriptionColorBase,
 }: SectionContentDescriptionProps) {
   const descriptionArray = Array.isArray(description)
     ? description
     : [description]
 
   return descriptionArray.map((item, index) => (
-    <p key={index} className="pt-6 text-2xl/8 text-pretty">
+    <p
+      key={index}
+      className={clsx(
+        'text-xl text-pretty',
+        descriptionColorBase
+          ? 'text-[var(--color-text-base)]'
+          : 'text-[var(--color-subheading-text-muted)]',
+      )}
+    >
       {item}
     </p>
   ))

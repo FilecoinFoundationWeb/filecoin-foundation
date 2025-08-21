@@ -134,6 +134,7 @@ export default async function Home() {
       <PageSection paddingVariant="none" backgroundVariant="light">
         <SectionContentWrapper>
           <SectionContent
+            descriptionColorBase
             title="The incentive layer for IPFS"
             description={[
               'Filecoin adds incentivized, persistent storage to the InterPlanetary File System (IPFS), a peer-to-peer network for content-addressable data, creating a powerful, versatile, and long-term home for data. ',
