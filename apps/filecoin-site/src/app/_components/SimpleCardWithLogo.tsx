@@ -37,8 +37,8 @@ const LOGO_SIZE = 60
 export function SimpleCardWithLogo({
   title,
   description,
-  cta,
   logo,
+  cta,
 }: SimpleCardWithLogoProps) {
   return (
     <li className="group focus-within:brand-outline relative flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--color-border-base)] sm:flex-row">
@@ -65,7 +65,7 @@ export function SimpleCardWithLogo({
         className="h-full border-t border-[var(--color-border-base)] sm:border-t-0 sm:border-r"
       />
 
-      <div className="group relative h-full w-full group-focus-within:bg-[var(--color-card-background-hover)] group-hover:bg-[var(--color-card-background-hover)]">
+      <div className="relative h-full w-full group-focus-within:bg-[var(--color-card-background-hover)] group-hover:bg-[var(--color-card-background-hover)]">
         <div className="flex flex-col gap-6 p-8">
           <div className="mb-12 flex flex-col gap-3">
             <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">

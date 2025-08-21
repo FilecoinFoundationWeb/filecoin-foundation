@@ -25,12 +25,12 @@ export type SimpleCardData = {
 type BorderKey = keyof typeof borderStyles
 
 const borderStyles = {
-  all: 'border border-[var(--color-border-base)] rounded-2xl',
+  all: 'rounded-2xl border border-[var(--color-border-base)]',
   'only-top': 'border-t border-[var(--color-border-base)]',
 } as const
 
 const interactiveStyles: Partial<Record<BorderKey, string>> = {
-  all: 'focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)] focus-within:brand-outline',
+  all: 'focus-within:brand-outline focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)]',
 }
 
 const cardLayoutStyles: Record<
