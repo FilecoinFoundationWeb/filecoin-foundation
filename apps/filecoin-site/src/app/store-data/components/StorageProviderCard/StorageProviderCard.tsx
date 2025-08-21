@@ -1,3 +1,5 @@
+import Image, { type StaticImageData } from 'next/image'
+
 import { Badge } from '@/components/Badge'
 import { CTALink } from '@/components/CTALink'
 import { Heading } from '@/components/Heading'
@@ -11,6 +13,7 @@ export type StorageProviderCardProps = {
   bestFor: Array<string>
   keyFeatures: Array<string>
   url: string
+  logo: StaticImageData
 }
 
 export function StorageProviderCard({
@@ -19,16 +22,20 @@ export function StorageProviderCard({
   bestFor,
   keyFeatures,
   url,
+  logo,
 }: StorageProviderCardProps) {
   return (
     <li>
       <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-8 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 pb-16">
         <div className="flex items-center gap-3">
-          {/* Placeholder for logo */}
-          <div
-            aria-hidden="true"
-            className="size-9 rounded-full bg-gradient-to-tr from-blue-950 to-blue-800"
+          <Image
+            src={logo}
+            alt={`${name}'s logo`}
+            width={40}
+            height={40}
+            className="rounded-full"
           />
+
           <Heading tag="h3" variant="card-heading">
             {name}
           </Heading>

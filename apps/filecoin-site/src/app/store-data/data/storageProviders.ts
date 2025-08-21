@@ -1,8 +1,15 @@
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 
+import AkaveMiniatureLogo from '@/assets/miniatures/akave-miniature.png'
+import CIDgravityMiniatureLogo from '@/assets/miniatures/cid-gravity-miniature.png'
+import LighthouseMiniatureLogo from '@/assets/miniatures/lighthouse-miniature.png'
+import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.png'
+import SingularityMiniatureLogo from '@/assets/miniatures/singularity-miniature.png'
+import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.png'
+
 export type StorageProvider = Pick<
   StorageProviderCardProps,
-  'name' | 'description' | 'keyFeatures' | 'url'
+  'name' | 'description' | 'keyFeatures' | 'url' | 'logo'
 > & {
   bestFor: Array<BestForType>
 }
@@ -29,6 +36,7 @@ export const storageProviders = [
       'Access control',
     ],
     url: 'https://www.akave.ai/',
+    logo: AkaveMiniatureLogo,
   },
   {
     name: 'CIDgravity',
@@ -40,6 +48,7 @@ export const storageProviders = [
       'Access control',
     ],
     url: 'https://www.cidgravity.com/',
+    logo: CIDgravityMiniatureLogo,
   },
   {
     name: 'Lighthouse',
@@ -51,6 +60,7 @@ export const storageProviders = [
       'Developer SDK/CLI',
     ],
     url: 'https://www.lighthouse.storage/',
+    logo: LighthouseMiniatureLogo,
   },
   {
     name: 'Storacha',
@@ -62,6 +72,7 @@ export const storageProviders = [
       'Access control',
     ],
     url: 'https://storacha.network/',
+    logo: StorachaMiniatureLogo,
   },
   {
     name: 'Singularity CLI',
@@ -73,6 +84,7 @@ export const storageProviders = [
       'Access control',
     ],
     url: 'https://github.com/filecoin-project/singularity',
+    logo: SingularityMiniatureLogo,
   },
   {
     name: 'Ramo',
@@ -84,5 +96,6 @@ export const storageProviders = [
       'Access control',
     ],
     url: 'https://use.ramo.computer/',
+    logo: RamoMiniatureLogo,
   },
 ] as const satisfies Array<StorageProvider>
