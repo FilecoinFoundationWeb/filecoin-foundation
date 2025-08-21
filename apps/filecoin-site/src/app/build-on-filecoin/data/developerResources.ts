@@ -5,10 +5,7 @@ import {
   PlugIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-import {
-  FILECOIN_DOCS_BASE_URL,
-  FILECOIN_DOCS_URLS,
-} from '@/constants/siteMetadata'
+import { FILECOIN_DOCS_URL, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
 import type { LinkCardData } from '@/components/LinkCard'
 
@@ -16,7 +13,7 @@ export const developerResources: Array<LinkCardData> = [
   {
     title: 'Documentation',
     description: 'Comprehensive guides and tutorials to build on Filecoin.',
-    href: FILECOIN_DOCS_BASE_URL,
+    href: FILECOIN_DOCS_URL,
     icon: BookIcon,
   },
   {

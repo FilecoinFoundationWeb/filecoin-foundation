@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { clsx } from 'clsx'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_DOCS_BASE_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -36,7 +36,7 @@ export default function Learn() {
             title="The authenticity layer of a more resilient internet"
             description="Filecoin is the world’s largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's most important information, keeping it free from centralized control."
             cta={
-              <Button href={FILECOIN_DOCS_BASE_URL} variant="primary">
+              <Button href={FILECOIN_DOCS_URL} variant="primary">
                 Explore documentation
               </Button>
             }
@@ -96,7 +96,7 @@ export default function Learn() {
           title="Learn about the Filecoin protocol"
           description="For technically curious people who want to go deeper into how Filecoin actually works."
           cta={
-            <Button href={FILECOIN_DOCS_BASE_URL} variant="primary">
+            <Button href={FILECOIN_DOCS_URL} variant="primary">
               Explore documentation
             </Button>
           }

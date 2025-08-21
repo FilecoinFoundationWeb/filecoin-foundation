@@ -1,7 +1,4 @@
-import {
-  FILECOIN_DOCS_BASE_URL,
-  FILECOIN_DOCS_URLS,
-} from '@/constants/siteMetadata'
+import { FILECOIN_DOCS_URL, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
 import type { SimpleCardData } from '@/components/SimpleCard'
 
@@ -58,7 +55,7 @@ export const learnAboutFilecoinProtocol: Array<SimpleCardData> = [
     description:
       'An incentive system that aims to increase the amount of useful data stored on the Filecoin network.',
     cta: {
-      href: `${FILECOIN_DOCS_BASE_URL}basics/how-storage-works/filecoin-plus`,
+      href: `${FILECOIN_DOCS_URL}basics/how-storage-works/filecoin-plus`,
       text: CTA_TEXT,
     },
   },

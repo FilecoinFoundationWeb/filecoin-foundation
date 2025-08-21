@@ -1,6 +1,6 @@
 import { PATHS } from './paths'
 import {
-  FILECOIN_DOCS_BASE_URL,
+  FILECOIN_DOCS_URL,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
 } from './siteMetadata'
@@ -45,7 +45,7 @@ const social: Array<NavItem> = [
 ]
 
 const resources: Array<NavItem> = [
-  { label: 'Docs', href: FILECOIN_DOCS_BASE_URL },
+  { label: 'Docs', href: FILECOIN_DOCS_URL },
   { label: 'GitHub', href: github },
   { label: 'Security', href: security },
   { label: 'Ecosystem Explorer', href: ecosystemExplorer },
@@ -89,7 +89,7 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Documentation',
             description: 'Official documentation for Filecoin',
-            href: FILECOIN_DOCS_BASE_URL,
+            href: FILECOIN_DOCS_URL,
           },
           {
             label: 'Cookbook',

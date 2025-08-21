@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_DOCS_BASE_URL } from '@/constants/siteMetadata'
+import { FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -48,7 +48,7 @@ export default function BuildOnFilecoin() {
           title="Build on Filecoin: open, scalable, verifiable storage"
           description="Filecoin is a programmable, permissionless network from the ground up with cryptographic verification and global redundancy. Integrate decentralized storage that scales with your needs and safeguards data integrity at every layer."
           cta={
-            <Button href={FILECOIN_DOCS_BASE_URL} variant="primary">
+            <Button href={FILECOIN_DOCS_URL} variant="primary">
               Explore documentation
             </Button>
           }
