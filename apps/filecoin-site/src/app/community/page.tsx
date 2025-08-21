@@ -134,7 +134,7 @@ export default function BuildOnFilecoin() {
             </Button>
           }
         />
-
+        <div className="py-20" />
         <SectionImage {...graphicsData.buildOnFilecoinSection} />
       </PageSection>
     </>

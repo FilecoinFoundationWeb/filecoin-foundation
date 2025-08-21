@@ -35,7 +35,7 @@ export default async function Blog() {
         overlayVariant="dark"
         src={featuredPost.image?.url || graphicsData.fallback.data.src}
       >
-        <PageSection backgroundVariant="transparentDark">
+        <PageSection paddingVariant="wide" backgroundVariant="transparentDark">
           <PageHeader
             kicker="Latest updates"
             title={featuredPost.title}
@@ -52,7 +52,7 @@ export default async function Blog() {
         </PageSection>
       </BackgroundImage>
 
-      <PageSection backgroundVariant="light">
+      <PageSection backgroundVariant="light" paddingVariant="compact">
         <Suspense>
           <BlogPostList posts={sortedPosts} />
         </Suspense>

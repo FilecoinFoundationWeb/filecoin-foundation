@@ -21,7 +21,9 @@ export function NavigationMenuPanel({ items }: NavigationMenuPanelProps) {
             }}
           >
             {item.links.map((link) => (
-              <NavigationMenuLink key={link.href} {...link} />
+              <li key={link.href}>
+                <NavigationMenuLink {...link} />
+              </li>
             ))}
           </ul>
         </div>

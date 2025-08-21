@@ -76,7 +76,7 @@ export default function BuildOnFilecoin() {
             ]}
           />
         </SectionContent>
-
+        <div className="py-20" />
         <SectionImage {...graphicsData.buildOnFilecoinSection} />
       </PageSection>
 
@@ -129,7 +129,7 @@ export default function BuildOnFilecoin() {
           title="Tutorials and guides"
           description="Learn the basics to start building with Filecoin."
         >
-          <CardGrid as="ul" variant="mdTwoWide">
+          <CardGrid as="ul" variant="lgThree">
             {tutorialsAndGuides.map(
               ({ title, description, cta, difficulty }) => (
                 <SimpleCard

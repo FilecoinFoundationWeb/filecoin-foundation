@@ -94,6 +94,7 @@
   --color-navigation-menu-panel-background: theme('colors.zinc.100');
   --color-navigation-menu-panel-border: theme('colors.zinc.300');
   --color-navigation-menu-panel-icon: theme('colors.zinc.700');
+  --color-navigation-menu-link-background-hover: theme('colors.zinc.50');
 
   --color-announcement-background: theme('colors.zinc.100');
   --color-announcement-background-hover: theme('colors.zinc.200');
@@ -135,6 +136,7 @@
   --color-navigation-menu-panel-background: theme('colors.zinc.800');
   --color-navigation-menu-panel-border: theme('colors.zinc.600');
   --color-navigation-menu-panel-icon: theme('colors.zinc.300');
+  --color-navigation-menu-link-background-hover: theme('colors.zinc.700');
 
   --color-announcement-background: theme('colors.zinc.900');
   --color-announcement-background-hover: theme('colors.zinc.800');
@@ -465,6 +467,11 @@
   }
 
   /* NAVIGATION MENU   */
+
+  .navigation-menu-link {
+    @apply hover:bg-[var(--color-navigation-menu-link-background-hover)] focus:bg-[var(--color-navigation-menu-link-background-hover)];
+  }
+
   .navigation-menu-link-label {
     @apply font-medium text-[var(--color-text-base)];
   }
