@@ -15,7 +15,7 @@ type SectionContentProps = {
   cta?: ButtonRowProps['buttons']
   centerCTA?: ButtonRowProps['centered']
   centerTitle?: boolean
-} & SectionContentDescriptionProps
+} & Partial<SectionContentDescriptionProps>
 
 export function SectionContent({
   title,
