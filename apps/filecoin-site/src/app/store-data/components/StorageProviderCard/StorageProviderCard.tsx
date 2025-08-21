@@ -26,7 +26,7 @@ export function StorageProviderCard({
 }: StorageProviderCardProps) {
   return (
     <li>
-      <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-8 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 pb-16">
+      <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-8 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 pb-16 focus-within:bg-zinc-50 hover:bg-zinc-50">
         <div className="flex items-center gap-3">
           <Image
             src={logo}
