@@ -14,9 +14,11 @@ describe('Projects Index Page', () => {
     })
   })
 
+  it(tests.links.prompt, () => {
+    tests.links.fn(PATHS.PROJECTS.path)
+  })
+
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn({
-      path: PATHS.PROJECTS.path,
-    })
+    tests.visualSnapshot.fn(PATHS.PROJECTS.path)
   })
 })
