@@ -8,9 +8,9 @@ type NavigationMenuPanelProps = {
 
 export function NavigationMenuPanel({ items }: NavigationMenuPanelProps) {
   return (
-    <div className="flex gap-4 divide-x divide-[var(--color-border-base)]">
+    <div className="flex divide-x divide-[var(--color-border-base)]">
       {items.map((item) => (
-        <div key={item.title}>
+        <div key={item.title} className="px-4">
           <p className="mb-2 px-4 text-sm text-[var(--color-paragraph-text)]">
             {item.title}
           </p>

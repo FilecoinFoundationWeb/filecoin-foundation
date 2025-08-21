@@ -49,7 +49,7 @@ export function DesktopNavigation({
                 backgroundVariants[desktopBackgroundVariant],
               )}
             >
-              <div className="rounded-xl border border-[var(--color-navigation-menu-panel-border)] bg-[var(--color-navigation-menu-panel-background)] px-4 py-6">
+              <div className="rounded-xl border border-[var(--color-navigation-menu-panel-border)] bg-[var(--color-navigation-menu-panel-background)] py-6">
                 <NavigationMenuPanel items={item.items} />
               </div>
             </NavigationMenu>
