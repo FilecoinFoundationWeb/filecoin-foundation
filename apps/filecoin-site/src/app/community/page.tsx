@@ -134,8 +134,9 @@ export default function BuildOnFilecoin() {
             </Button>
           }
         />
-
-        <SectionImage {...graphicsData.buildOnFilecoinSection} />
+        <div className="mt-40">
+          <SectionImage {...graphicsData.buildOnFilecoinSection} />
+        </div>
       </PageSection>
     </>
   )

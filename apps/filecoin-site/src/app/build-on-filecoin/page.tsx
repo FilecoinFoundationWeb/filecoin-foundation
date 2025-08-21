@@ -77,7 +77,9 @@ export default function BuildOnFilecoin() {
           />
         </SectionContent>
 
-        <SectionImage {...graphicsData.buildOnFilecoinSection} />
+        <div className="mt-40">
+          <SectionImage {...graphicsData.buildOnFilecoinSection} />
+        </div>
       </PageSection>
 
       <PageSection backgroundVariant="dark">
@@ -129,7 +131,7 @@ export default function BuildOnFilecoin() {
           title="Tutorials and guides"
           description="Learn the basics to start building with Filecoin."
         >
-          <CardGrid as="ul" variant="mdTwoWide">
+          <CardGrid as="ul" variant="lgThree">
             {tutorialsAndGuides.map(
               ({ title, description, cta, difficulty }) => (
                 <SimpleCard

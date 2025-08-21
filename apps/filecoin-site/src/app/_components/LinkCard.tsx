@@ -44,7 +44,7 @@ export function LinkCard({
       <IconBadge component={icon.component} size="sm" variant={icon.variant} />
 
       <div className={clsx(description && 'space-y-5')}>
-        <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
+        <span className="block group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
           <Heading tag={headingTag} variant="card-heading">
             {title}
           </Heading>

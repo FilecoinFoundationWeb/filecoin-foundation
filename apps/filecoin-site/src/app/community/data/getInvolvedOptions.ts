@@ -1,8 +1,8 @@
 import {
-  CurrencyDollarIcon,
   ClockCounterClockwiseIcon,
-  MegaphoneIcon,
+  CurrencyDollarIcon,
   MapPinLineIcon,
+  MegaphoneIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -21,7 +21,7 @@ export const getInvolvedOptions: Array<LinkCardData> = [
     title: 'Explore Retroactive Public Goods Funding',
     description:
       'Get rewarded for impactful, open-source contributions that advance the Filecoin ecosystem.',
-    href: 'https://fil-propgf.questbook.app',
+    href: 'https://www.fil-retropgf.io/',
     icon: ClockCounterClockwiseIcon,
   },
   {

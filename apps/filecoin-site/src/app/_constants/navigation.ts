@@ -155,12 +155,12 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Network Status',
             description: 'The status of the Filecoin networks',
-            href: '/',
+            href: 'https://status.filecoin.io/',
           },
           {
             label: 'Network Health',
             description: 'Filecoin chain activity and performance',
-            href: '/',
+            href: 'https://dashboard.starboard.ventures/',
           },
         ],
       },
