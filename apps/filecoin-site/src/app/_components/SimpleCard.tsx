@@ -31,7 +31,7 @@ const borderStyles = {
 } as const
 
 const interactiveStyles: Partial<Record<BorderKey, string>> = {
-  all: 'focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)]',
+  all: 'focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)] focus-within:brand-outline',
 }
 
 const cardLayoutStyles: Record<
@@ -63,7 +63,7 @@ export function SimpleCard({
   return (
     <Tag
       className={clsx(
-        'group h-full w-full',
+        'group h-full w-full overflow-hidden',
         cta && 'relative',
         borderStyles[border],
         interactiveStyles[border],
