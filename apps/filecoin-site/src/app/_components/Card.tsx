@@ -15,7 +15,7 @@ export function Card({ as: Tag, title, description, icon }: CardProps) {
     <Tag className="flex flex-col gap-6">
       {icon && <IconBadge component={icon} size="md" />}
 
-      <div className="space-y-3">
+      <div className="space-y-2">
         <Heading tag="h3" variant="card-heading">
           {title}
         </Heading>

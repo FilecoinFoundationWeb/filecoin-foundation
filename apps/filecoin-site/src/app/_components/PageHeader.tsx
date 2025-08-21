@@ -30,7 +30,7 @@ export function PageHeader({
       >
         {kicker && <Kicker size="md">{kicker}</Kicker>}
 
-        <Heading tag="h1" variant="section-heading">
+        <Heading tag="h1" variant="page-heading">
           {title}
         </Heading>
 

@@ -52,6 +52,7 @@ export default function Learn() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
+          descriptionColorBase
           title="What is Filecoin?"
           description={[
             "Filecoin is a decentralized alternative to today's storage solutions, offering a better foundation for humanity's most important information.",
