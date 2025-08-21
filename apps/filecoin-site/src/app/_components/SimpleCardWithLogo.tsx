@@ -41,9 +41,9 @@ export function SimpleCardWithLogo({
   logo,
 }: SimpleCardWithLogoProps) {
   return (
-    <li className="group relative flex h-full flex-col rounded-2xl border border-[var(--color-border-base)] sm:flex-row">
+    <li className="group focus-within:brand-outline relative flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--color-border-base)] sm:flex-row">
       <div
-        className="grid h-44 w-full flex-shrink-0 place-items-center rounded-t-2xl sm:h-full sm:w-42 sm:rounded-t-none sm:rounded-l-2xl"
+        className="grid h-44 w-full flex-shrink-0 place-items-center sm:h-full sm:w-42"
         style={{ backgroundColor: logo.bgColor }}
       >
         {logo.type === 'svg' ? (
