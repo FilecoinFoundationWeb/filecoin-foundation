@@ -1,3 +1,10 @@
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/Carousel'
 import { type HeadingProps } from '@/components/Heading'
 
 import { type LogoItemProps, LogoItem } from './LogoItem'
@@ -24,19 +31,20 @@ export function LogoSection({ logos, title, tag = 'h3' }: LogoSectionProps) {
           {title}
         </Tag>
       )}
-      <div
-        className="logo-section-scroll-bar w-full overflow-x-auto"
-        style={{
-          scrollbarWidth: 'thin',
-          scrollbarColor: 'var(--color-border-muted) transparent',
-        }}
-      >
-        <ul className="flex min-w-max items-center gap-15 py-2 md:gap-20">
+
+      <Carousel>
+        <CarouselContent>
           {logos.map((logoItem, index) => (
-            <LogoItem key={`logo-${index}`} {...logoItem} />
+            <CarouselItem key={index}>
+              <div className="grid h-full place-items-center p-0.5">
+                <LogoItem {...logoItem} />
+              </div>
+            </CarouselItem>
           ))}
-        </ul>
-      </div>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
     </section>
   )
 }
