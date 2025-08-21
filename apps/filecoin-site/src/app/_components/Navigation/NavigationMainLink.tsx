@@ -22,13 +22,13 @@ const MOBILE_TOUCH_TARGET: TouchTarget = {
 export const baseStyle = 'focus:brand-outline font-medium'
 
 export const desktopStyle = clsx(
-  'rounded text-[var(--color-text-navigation-link)] hover:bg-[var(--color-bg-navigation-link-hover)] focus:bg-[var(--color-bg-navigation-link-hover)] aria-[current=true]:text-[var(--color-text-navigation-link-active)]',
+  'rounded text-[var(--color-navigation-link-text)] hover:bg-[var(--color-bg-navigation-link-hover)] focus:bg-[var(--color-bg-navigation-link-hover)] aria-[current=true]:text-[var(--color-navigation-link-text-active)]',
   DESKTOP_TOUCH_TARGET.touchAreaPadding,
   DESKTOP_TOUCH_TARGET.touchAreaOffset,
 )
 
 const mobileStyle = clsx(
-  'text-[var(--color-text-base)] aria-[current=true]:text-[var(--color-text-navigation-link-mobile-active)]',
+  'text-[var(--color-text-base)] aria-[current=true]:text-[var(--color-navigation-link-text-active)]',
   MOBILE_TOUCH_TARGET.touchAreaPadding,
   MOBILE_TOUCH_TARGET.touchAreaOffset,
 )

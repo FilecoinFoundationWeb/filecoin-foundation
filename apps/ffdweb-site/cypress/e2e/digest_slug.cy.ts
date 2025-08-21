@@ -26,4 +26,16 @@ describe('Digest Slug Page', () => {
       })
     })
   })
+
+  it(tests.links.prompt, () => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      tests.links.fn(`${PATHS.DIGEST.path}/${slug}`)
+    })
+  })
+
+  it(tests.visualSnapshot.prompt, () => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      tests.visualSnapshot.fn(`${PATHS.DIGEST.path}/${slug}`)
+    })
+  })
 })

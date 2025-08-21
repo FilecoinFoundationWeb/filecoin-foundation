@@ -51,7 +51,7 @@ export function LinkCard({
         </span>
 
         {description && (
-          <p className="text-[var(--color-text-paragraph)]">{description}</p>
+          <p className="text-[var(--color-paragraph-text)]">{description}</p>
         )}
       </div>
 

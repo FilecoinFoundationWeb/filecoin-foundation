@@ -31,7 +31,7 @@ const COLUMN_STYLE_CONFIG: Record<
   disadvantage: {
     borderColor: 'border-zinc-950/5',
     dividerColor: 'divide-zinc-950/5',
-    textColor: 'text-[var(--color-text-paragraph)]',
+    textColor: 'text-[var(--color-paragraph-text)]',
     backgroundColor: 'bg-zinc-50',
   },
 }

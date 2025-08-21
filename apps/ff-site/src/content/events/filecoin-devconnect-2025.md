@@ -13,6 +13,8 @@ location:
   region: south-america
 start-date: 2025-11-13
 end-date: 2025-11-22
+image:
+  src: /assets/images/fil_ba-1-.webp
 program:
   events:
     - title: FIL Dev Summit 7 @ DevConnect

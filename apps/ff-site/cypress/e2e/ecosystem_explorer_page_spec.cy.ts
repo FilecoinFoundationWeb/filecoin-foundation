@@ -2,7 +2,6 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { tests } from '@/cypress/support'
-import { verifyLinks } from '@/cypress/support/verifyLinksUtil'
 import type { PageFrontmatterSeo } from '@/cypress/tasks/getPageFrontmatterSeo'
 import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
 
@@ -22,13 +21,12 @@ describe('Ecosystem Explorer Page', () => {
     )
   })
 
-  it('should check links', () => {
-    verifyLinks(path)
+  it(tests.links.prompt, () => {
+    tests.links.fn(path)
   })
 
-  it('should match visual snapshot', () => {
-    cy.visit(path)
-    cy.percySnapshot()
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path)
   })
 })
 
@@ -46,5 +44,13 @@ describe.skip('Ecosystem Explorer Project Form Page', () => {
         })
       },
     )
+  })
+
+  it(tests.links.prompt, () => {
+    tests.links.fn(path)
+  })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path)
   })
 })

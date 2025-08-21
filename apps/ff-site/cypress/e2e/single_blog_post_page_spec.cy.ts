@@ -27,4 +27,16 @@ describe('Random Blog Post', () => {
       })
     })
   })
+
+  it(tests.links.prompt, () => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      tests.links.fn(path.join(PATHS.BLOG.path, slug))
+    })
+  })
+
+  it(tests.visualSnapshot.prompt, () => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      tests.visualSnapshot.fn(path.join(PATHS.BLOG.path, slug))
+    })
+  })
 })
