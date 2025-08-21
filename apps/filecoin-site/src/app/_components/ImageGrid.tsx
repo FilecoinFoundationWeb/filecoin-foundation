@@ -12,12 +12,12 @@ type ImageGridProps = {
 const variants = {
   oneMdThree: {
     gridStyle:
-      'gap-1 grid-cols-1 md:grid-cols-3 md:grid-rows-[300px] auto-rows-[192px]',
+      'auto-rows-[192px] grid-cols-1 gap-1 md:auto-rows-[300px] md:grid-cols-3',
     getCellStyle: () => '',
   },
   oneMdThreeCollage: {
     gridStyle:
-      'gap-1 grid-cols-1 md:grid-cols-3 md:auto-rows-[300px] auto-rows-[192px]',
+      'auto-rows-[192px] grid-cols-1 gap-1 md:auto-rows-[300px] md:grid-cols-3',
     getCellStyle: (i: number) =>
       clsx(
         'h-full w-full',
