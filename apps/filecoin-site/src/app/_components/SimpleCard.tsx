@@ -22,18 +22,16 @@ export type SimpleCardData = {
   cta: NonNullable<SimpleCardProps['cta']>
 }
 
+type BorderKey = keyof typeof borderStyles
+
 const borderStyles = {
   all: 'simple-card-border-all border border-[var(--color-border-base)] rounded-2xl',
-  none: 'simple-card-border-none border-none',
   'only-top':
     'simple-card-border-only-top border-t border-[var(--color-border-base)]',
 } as const
 
-type BorderKey = keyof typeof borderStyles
-
 const interactiveStyles: Partial<Record<BorderKey, string>> = {
   all: 'focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)]',
-  none: 'group-focus-within:bg-[var(--color-card-background-hover)] group-hover:bg-[var(--color-card-background-hover)]',
 }
 
 const cardLayoutStyles: Record<
@@ -41,11 +39,6 @@ const cardLayoutStyles: Record<
   { inner: string; content: string; cta: string }
 > = {
   all: {
-    inner: 'p-8',
-    content: 'mb-12',
-    cta: 'bottom-8 left-8',
-  },
-  none: {
     inner: 'p-8',
     content: 'mb-12',
     cta: 'bottom-8 left-8',
