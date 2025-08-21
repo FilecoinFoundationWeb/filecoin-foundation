@@ -5,18 +5,17 @@ import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
 import { Heading, type HeadingProps } from '@/components/Heading'
 
 type SectionContentDescriptionProps = {
-  description: string | string[]
+  description: string | Array<string>
+  descriptionColorBase?: boolean
 }
 
 type SectionContentProps = {
   title: HeadingProps['children']
-  description?: SectionContentDescriptionProps['description']
-  descriptionColorBase?: boolean
   children?: React.ReactNode
   cta?: ButtonRowProps['buttons']
   centerCTA?: ButtonRowProps['centered']
   centerTitle?: boolean
-}
+} & SectionContentDescriptionProps
 
 export function SectionContent({
   title,
@@ -41,18 +40,14 @@ export function SectionContent({
         <Heading tag="h2" variant="section-heading">
           {title}
         </Heading>
-        <div
-          className={clsx(
-            'space-y-6',
-            descriptionColorBase
-              ? 'text-[var(--color-text-base)]'
-              : 'text-[var(--color-subheading-text-muted)]',
-          )}
-        >
-          {description && (
-            <SectionContentDescription description={description} />
-          )}
-        </div>
+        {description && (
+          <div className="space-y-6">
+            <SectionContentDescription
+              descriptionColorBase={descriptionColorBase}
+              description={description}
+            />
+          </div>
+        )}
       </div>
       {children && (
         <div className="flex flex-col gap-15 md:gap-30">{children}</div>
@@ -64,13 +59,22 @@ export function SectionContent({
 
 function SectionContentDescription({
   description,
+  descriptionColorBase,
 }: SectionContentDescriptionProps) {
   const descriptionArray = Array.isArray(description)
     ? description
     : [description]
 
   return descriptionArray.map((item, index) => (
-    <p key={index} className="text-xl text-pretty">
+    <p
+      key={index}
+      className={clsx(
+        'text-xl text-pretty',
+        descriptionColorBase
+          ? 'text-[var(--color-text-base)]'
+          : 'text-[var(--color-subheading-text-muted)]',
+      )}
+    >
       {item}
     </p>
   ))
