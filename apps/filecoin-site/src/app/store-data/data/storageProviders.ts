@@ -74,4 +74,15 @@ export const storageProviders = [
     ],
     url: 'https://github.com/filecoin-project/singularity',
   },
+  {
+    name: 'Ramo',
+    description: 'Embrace the future of decentralized storage',
+    bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
+    keyFeatures: [
+      'S3-compatible API',
+      'Client-side encryption',
+      'Access control',
+    ],
+    url: 'https://use.ramo.computer/',
+  },
 ] as const satisfies Array<StorageProvider>
