@@ -1,4 +1,4 @@
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_DOCS_URL, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
 import type { SimpleCardData } from '@/components/SimpleCard'
 
@@ -10,7 +10,7 @@ export const learnAboutFilecoinProtocol: Array<SimpleCardData> = [
     description:
       'Files are retrieved via content identifiers (CIDs) instead of location-based URLs prone to deterioration.',
     cta: {
-      href: `${FILECOIN_URLS.docs}basics/the-blockchain/proofs#proof-of-replication-porep`,
+      href: FILECOIN_DOCS_URLS.basicsBlockhainPoRep,
       text: CTA_TEXT,
     },
   },
@@ -19,7 +19,7 @@ export const learnAboutFilecoinProtocol: Array<SimpleCardData> = [
     description:
       'Clients make programmable deals with independent storage providers in a global marketplace.',
     cta: {
-      href: `${FILECOIN_URLS.docs}basics/the-blockchain/proofs#proof-of-spacetime-post`,
+      href: FILECOIN_DOCS_URLS.basicsBlockhainPoSt,
       text: CTA_TEXT,
     },
   },
@@ -37,7 +37,7 @@ export const learnAboutFilecoinProtocol: Array<SimpleCardData> = [
     description:
       'The native token aligns economic incentives and rewards useful storage over time.',
     cta: {
-      href: `${FILECOIN_URLS.docs}smart-contracts/fundamentals/the-fvm`,
+      href: FILECOIN_DOCS_URLS.smartContractFundamentalsFVM,
       text: CTA_TEXT,
     },
   },
@@ -46,7 +46,7 @@ export const learnAboutFilecoinProtocol: Array<SimpleCardData> = [
     description:
       'The smart-contract layer that lets developers build logic, automation, and apps on top of Filecoin storage.',
     cta: {
-      href: `${FILECOIN_URLS.docs}smart-contracts/fundamentals/the-fvm`,
+      href: FILECOIN_DOCS_URLS.smartContractFundamentalsFVM,
       text: CTA_TEXT,
     },
   },
@@ -55,7 +55,7 @@ export const learnAboutFilecoinProtocol: Array<SimpleCardData> = [
     description:
       'An incentive system that aims to increase the amount of useful data stored on the Filecoin network.',
     cta: {
-      href: `${FILECOIN_URLS.docs}basics/how-storage-works/filecoin-plus`,
+      href: `${FILECOIN_DOCS_URL}basics/how-storage-works/filecoin-plus`,
       text: CTA_TEXT,
     },
   },
