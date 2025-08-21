@@ -66,7 +66,7 @@ export function StorageProviderCard({
         </StorageProviderCardSection>
 
         <CTALink inset href={url} textClassName="bottom-8 left-8">
-          Learn more about {name}
+          {`Learn more about ${name}`}
         </CTALink>
       </article>
     </li>
