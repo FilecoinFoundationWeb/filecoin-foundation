@@ -76,11 +76,7 @@ export function SimpleCard({
         )}
         <CardContent title={title} description={description} layout={layout} />
         {cta && (
-          <CTALink
-            inset
-            href={cta.href}
-            textClassName={clsx('absolute', layout.cta)}
-          >
+          <CTALink inset href={cta.href} textClassName={layout.cta}>
             {cta.text}
           </CTALink>
         )}
@@ -103,7 +99,7 @@ function CardContent({
           {title}
         </Heading>
       </span>
-      <p className="text-[var(--color-text-paragraph)]">{description}</p>
+      <p className="text-[var(--color-paragraph-text)]">{description}</p>
     </div>
   )
 }

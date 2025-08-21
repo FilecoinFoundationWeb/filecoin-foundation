@@ -1,8 +1,15 @@
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 
+import AkaveMiniatureLogo from '@/assets/miniatures/akave-miniature.png'
+import CIDgravityMiniatureLogo from '@/assets/miniatures/cid-gravity-miniature.png'
+import LighthouseMiniatureLogo from '@/assets/miniatures/lighthouse-miniature.png'
+import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.png'
+import SingularityMiniatureLogo from '@/assets/miniatures/singularity-miniature.png'
+import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.png'
+
 export type StorageProvider = Pick<
   StorageProviderCardProps,
-  'name' | 'description' | 'keyFeatures' | 'url'
+  'name' | 'description' | 'keyFeatures' | 'url' | 'logo'
 > & {
   bestFor: Array<BestForType>
 }
@@ -19,16 +26,16 @@ type BestForType =
 
 export const storageProviders = [
   {
-    name: 'Akave',
-    description:
-      'Enterprise-grade, hot storage designed for AI, data-intensive workloads, and on-chain data lakes.',
-    bestFor: ['Enterprises', 'AI/ML developers'],
+    name: 'Storacha',
+    description: 'High-speed hot storage for fast data retrieval.',
+    bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
     keyFeatures: [
       'S3-compatible API',
       'Client-side encryption',
       'Access control',
     ],
-    url: 'https://www.akave.ai/',
+    url: 'https://storacha.network/',
+    logo: StorachaMiniatureLogo,
   },
   {
     name: 'CIDgravity',
@@ -40,6 +47,20 @@ export const storageProviders = [
       'Access control',
     ],
     url: 'https://www.cidgravity.com/',
+    logo: CIDgravityMiniatureLogo,
+  },
+  {
+    name: 'Akave Cloud',
+    description:
+      'Enterprise-grade, hot storage designed for AI, data-intensive workloads, and on-chain data lakes.',
+    bestFor: ['Enterprises', 'AI/ML developers'],
+    keyFeatures: [
+      'S3-compatible API',
+      'Client-side encryption',
+      'Access control',
+    ],
+    url: 'https://www.akave.ai/',
+    logo: AkaveMiniatureLogo,
   },
   {
     name: 'Lighthouse',
@@ -51,17 +72,19 @@ export const storageProviders = [
       'Developer SDK/CLI',
     ],
     url: 'https://www.lighthouse.storage/',
+    logo: LighthouseMiniatureLogo,
   },
   {
-    name: 'Storacha',
-    description: 'High-speed hot storage for fast data retrieval.',
+    name: 'Ramo',
+    description: 'Embrace the future of decentralized storage',
     bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
     keyFeatures: [
       'S3-compatible API',
       'Client-side encryption',
       'Access control',
     ],
-    url: 'https://storacha.network/',
+    url: 'https://use.ramo.computer/',
+    logo: RamoMiniatureLogo,
   },
   {
     name: 'Singularity CLI',
@@ -72,6 +95,7 @@ export const storageProviders = [
       'Client-side encryption',
       'Access control',
     ],
-    url: 'https://github.com/filecoin-project/singularity',
+    url: 'https://singularity.storage/',
+    logo: SingularityMiniatureLogo,
   },
 ] as const satisfies Array<StorageProvider>

@@ -88,7 +88,7 @@ export default function StoreData() {
         >
           <CardGrid as="ul" variant="lgTwoXlThree">
             {storageProviders.map(
-              ({ name, description, bestFor, keyFeatures, url }) => (
+              ({ name, description, bestFor, keyFeatures, url, logo }) => (
                 <StorageProviderCard
                   key={name}
                   name={name}
@@ -96,6 +96,7 @@ export default function StoreData() {
                   bestFor={bestFor}
                   keyFeatures={keyFeatures}
                   url={url}
+                  logo={logo}
                 />
               ),
             )}
