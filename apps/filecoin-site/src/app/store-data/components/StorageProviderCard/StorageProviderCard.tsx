@@ -41,7 +41,7 @@ export function StorageProviderCard({
           </Heading>
         </div>
 
-        <p className="text-[var(--color-text-paragraph)]" title={description}>
+        <p className="text-[var(--color-paragraph-text)]" title={description}>
           {description}
         </p>
 

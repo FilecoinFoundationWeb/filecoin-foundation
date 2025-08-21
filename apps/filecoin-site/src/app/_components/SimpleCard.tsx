@@ -99,7 +99,7 @@ function CardContent({
           {title}
         </Heading>
       </span>
-      <p className="text-[var(--color-text-paragraph)]">{description}</p>
+      <p className="text-[var(--color-paragraph-text)]">{description}</p>
     </div>
   )
 }
