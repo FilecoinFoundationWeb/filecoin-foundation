@@ -19,7 +19,8 @@ export type ExpandedNavItem = {
 
 const { social: socialLinks, github, securityBugBounty } = FILECOIN_URLS
 
-const { security, ecosystemExplorer, grants, events } = FILECOIN_FOUNDATION_URLS
+const { security, ecosystemExplorer, grants, events, orbit, governance } =
+  FILECOIN_FOUNDATION_URLS
 
 const social: Array<NavItem> = [
   {
@@ -62,7 +63,7 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'What is Filecoin?',
             description: 'Understand what Filecoin is and how it works',
-            href: 'https://docs.filecoin.io/basics/what-is-filecoin',
+            href: PATHS.LEARN.path,
           },
           {
             label: 'Case Studies',
@@ -84,7 +85,7 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Build on Filecoin',
             description: 'Start building apps on the Filecoin network',
-            href: '/',
+            href: PATHS.BUILD_ON_FILECOIN.path,
           },
           {
             label: 'Documentation',
@@ -174,7 +175,7 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Community Hub',
             description: 'Explore ways to contribute to the ecosystem',
-            href: '/',
+            href: PATHS.COMMUNITY.path,
           },
           {
             label: 'Events',
@@ -184,12 +185,12 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Orbit',
             description: 'Become a Filecoin Orbit ambassador',
-            href: '/',
+            href: orbit,
           },
           {
             label: 'FIPs & Governance',
             description: 'Propose, discuss, and shape future upgrades',
-            href: '/',
+            href: governance,
           },
         ],
       },

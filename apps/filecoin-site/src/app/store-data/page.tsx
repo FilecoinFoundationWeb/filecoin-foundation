@@ -65,7 +65,7 @@ export default function StoreData() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Future-proof your data infrastructure"
-          description="Filecoin is a powerful alternative to traditional cloud storage, leveraging global, independent data centers. The network ensures your data always remains secure and verifiable, so that you can store your data with confidence."
+          description="Filecoin is a powerful alternative to traditional cloud storage, leveraging global, independent data centers. The decentralized network infrastructure ensures your data always remains secure and verifiable, so that you can store your data with confidence."
         >
           <CardGrid as="ul" variant="smTwoLgThreeWider">
             {filecoinFeatures.map(({ title, description, icon }) => (

@@ -66,7 +66,7 @@ export default function BuildOnFilecoin() {
           <SplitSectionContent
             title="Verifiable onchain services with transparent storage, retrieval, and payments"
             description={[
-              'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pinning, retrieval, and payments are transparent, programmable, and interoperable by default. ,',
+              'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pinning, retrieval, and payments are transparent, programmable, and interoperable by default.',
               'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
             ]}
             cta={[
@@ -85,7 +85,7 @@ export default function BuildOnFilecoin() {
           title="A foundation for next-gen applications"
           description="From powering AI workflows to enabling cross-chain data bridges, Filecoin provides programmable, permissionless storage infrastructure."
         >
-          <CardGrid as="ul" variant="smTwoXlFourWide">
+          <CardGrid as="ul" variant="lgTwoXlThree">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}

@@ -1,7 +1,6 @@
 import {
   BridgeIcon,
   IntersectThreeIcon,
-  SparkleIcon,
   StackSimpleIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
@@ -13,21 +12,15 @@ type FilecoinFeature = {
 
 export const filecoinFeatures: FilecoinFeature[] = [
   {
-    title: 'AI data storage',
-    description:
-      "Store AI datasets with cryptographic integrity and global redundancy. Filecoin's programmable storage layer is designed for data-intensive and large-scale data storage.",
-    icon: SparkleIcon,
-  },
-  {
     title: 'Large archival storage',
     description:
-      'Archive large datasets, especially datasets that would be good for AI training.',
+      'Archive large datasets, like AI datasets, with cryptographic integrity and global redundancy.',
     icon: StackSimpleIcon,
   },
   {
     title: 'Cross-chain data bridges',
     description:
-      'Easily write data bridges that store data from other chains on Filecoin. With native interoperability, Filecoin keeps your data accessible and verifiable.',
+      'Easily write data bridges that store data from other chains on Filecoin.',
     icon: IntersectThreeIcon,
   },
   {
