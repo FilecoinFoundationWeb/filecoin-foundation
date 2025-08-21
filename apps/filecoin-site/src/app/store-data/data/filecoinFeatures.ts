@@ -14,15 +14,15 @@ export const filecoinFeatures: Array<CardData> = [
     icon: LockKeyIcon,
   },
   {
-    title: 'Compliance',
-    description:
-      'Meet enterprise and industry requirements with storage providers that adhere to leading standards, including SOC 2 compliance and Tier III data center certifications.',
-    icon: CertificateIcon,
-  },
-  {
     title: 'Scalable for big data',
     description:
       "Filecoin's decentralized infrastructure supports exabyte-scale datasets and long-term archival, with built-in redundancy and global distribution.",
     icon: TagIcon,
+  },
+  {
+    title: 'Outage proof resilience',
+    description:
+      'Data is distributed across independent data centers worldwide. If a data center goes offline, information remains available and verifiable.',
+    icon: CertificateIcon,
   },
 ]

@@ -1,4 +1,4 @@
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
 import type { SimpleCardData } from '@/components/SimpleCard'
 
@@ -15,7 +15,7 @@ export const filecoinTools: Array<FilecoinTool> = [
       'Deploy your first storage-backed smart contract quickly and securely.',
     difficulty: 'Beginner',
     cta: {
-      href: `${FILECOIN_URLS.docs}smart-contracts/fundamentals/erc-20-quickstart`,
+      href: FILECOIN_DOCS_URLS.smartContractFundamentalsErc20,
       text: CTA_TEXT,
     },
   },
@@ -34,7 +34,7 @@ export const filecoinTools: Array<FilecoinTool> = [
       'Deep-dive technical recipes for advanced architecture and FVM programming patterns.',
     difficulty: 'Advanced',
     cta: {
-      href: `${FILECOIN_URLS.docs}builder-cookbook/overview`,
+      href: FILECOIN_DOCS_URLS.builderCookbook,
       text: CTA_TEXT,
     },
   },

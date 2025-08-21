@@ -1,5 +1,9 @@
 import { PATHS } from './paths'
-import { FILECOIN_URLS } from './siteMetadata'
+import {
+  FILECOIN_DOCS_URL,
+  FILECOIN_FOUNDATION_URLS,
+  FILECOIN_URLS,
+} from './siteMetadata'
 
 export type NavItem = { label: string; href: string }
 
@@ -13,13 +17,10 @@ export type ExpandedNavItem = {
   }>
 }
 
-const {
-  social: socialLinks,
-  docs,
-  github,
-  security,
-  ecosystemExplorer,
-} = FILECOIN_URLS
+const { social: socialLinks, github, securityBugBounty } = FILECOIN_URLS
+
+const { security, ecosystemExplorer, grants, events, orbit, governance } =
+  FILECOIN_FOUNDATION_URLS
 
 const social: Array<NavItem> = [
   {
@@ -45,7 +46,7 @@ const social: Array<NavItem> = [
 ]
 
 const resources: Array<NavItem> = [
-  { label: 'Docs', href: docs },
+  { label: 'Docs', href: FILECOIN_DOCS_URL },
   { label: 'GitHub', href: github },
   { label: 'Security', href: security },
   { label: 'Ecosystem Explorer', href: ecosystemExplorer },
@@ -62,7 +63,7 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'What is Filecoin?',
             description: 'Understand what Filecoin is and how it works',
-            href: 'https://docs.filecoin.io/basics/what-is-filecoin',
+            href: PATHS.LEARN.path,
           },
           {
             label: 'Case Studies',
@@ -84,12 +85,12 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Build on Filecoin',
             description: 'Start building apps on the Filecoin network',
-            href: '/',
+            href: PATHS.BUILD_ON_FILECOIN.path,
           },
           {
             label: 'Documentation',
             description: 'Official documentation for Filecoin',
-            href: FILECOIN_URLS.docs,
+            href: FILECOIN_DOCS_URL,
           },
           {
             label: 'Cookbook',
@@ -109,12 +110,12 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Grants',
             description: 'Funding opportunities to build in the ecosystem',
-            href: FILECOIN_URLS.grants,
+            href: grants,
           },
           {
             label: 'Bug Bounty',
             description: 'Help find vulnerabilities and get rewarded',
-            href: FILECOIN_URLS.securityBugBounty,
+            href: securityBugBounty,
           },
         ],
       },
@@ -174,22 +175,22 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Community Hub',
             description: 'Explore ways to contribute to the ecosystem',
-            href: '/',
+            href: PATHS.COMMUNITY.path,
           },
           {
             label: 'Events',
             description: 'Join meetups, hackathons, and conferences',
-            href: FILECOIN_URLS.events,
+            href: events,
           },
           {
             label: 'Orbit',
             description: 'Become a Filecoin Orbit ambassador',
-            href: '/',
+            href: orbit,
           },
           {
             label: 'FIPs & Governance',
             description: 'Propose, discuss, and shape future upgrades',
-            href: '/',
+            href: governance,
           },
         ],
       },

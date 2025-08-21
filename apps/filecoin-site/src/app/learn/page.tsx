@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { clsx } from 'clsx'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -26,8 +26,6 @@ import { learnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
 import { resilientInternetCta } from './data/resilientInternetCta'
 import { whatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
 
-const WHAT_IS_FILECOIN_VIDEO_URL = 'https://www.youtube.com/embed/26ZdMAo23mM'
-
 export default function Learn() {
   return (
     <>
@@ -38,7 +36,7 @@ export default function Learn() {
             title="The authenticity layer of a more resilient internet"
             description="Filecoin is the world’s largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's most important information, keeping it free from centralized control."
             cta={
-              <Button href={FILECOIN_URLS.docs} variant="primary">
+              <Button href={FILECOIN_DOCS_URL} variant="primary">
                 Explore documentation
               </Button>
             }
@@ -56,11 +54,12 @@ export default function Learn() {
         <SectionContent
           title="What is Filecoin?"
           description={[
-            "Filecoin is the world's largest decentralized storage network, creating a decentralized, efficient, and robust foundation for humanity's most important information.",
-            "Today, a handful of corporations control most of the world's data, creating centralized gatekeepers that limit transparency and introduce single points of failure. Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, protected by cryptographic proofs.",
+            "Filecoin is a decentralized alternative to today's storage solutions, offering a better foundation for humanity's most important information.",
+            "A handful of corporations currently control most of the world's data. This centralized model creates gatekeepers, introduces single points of failures, and reduces transparency.",
+            'Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, protected by cryptographic proofs.',
           ]}
         >
-          <YouTubeVideoEmbed videoUrl={WHAT_IS_FILECOIN_VIDEO_URL} />
+          <YouTubeVideoEmbed videoUrl={FILECOIN_URLS.video.whatIsFilecoin} />
         </SectionContent>
       </PageSection>
 
@@ -68,7 +67,7 @@ export default function Learn() {
         <SectionContent
           centerCTA
           title="What is Filecoin used for?"
-          description="Filecoin is a better foundation for the next generation of the web. From everyday backups to advanced Web3 apps, Filecoin offers verifiable, decentralized storage at scale."
+          description="From archival backups to Web3 apps, Filecoin offers decentralized, secure, and verifiable storage at scale. "
           cta={[
             <Button href={PATHS.CASE_STUDIES.path} variant="primary">
               Explore case studies
@@ -98,7 +97,7 @@ export default function Learn() {
           title="Learn about the Filecoin protocol"
           description="For technically curious people who want to go deeper into how Filecoin actually works."
           cta={
-            <Button href={FILECOIN_URLS.docs} variant="primary">
+            <Button href={FILECOIN_DOCS_URL} variant="primary">
               Explore documentation
             </Button>
           }

@@ -1,3 +1,5 @@
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
 import type { SimpleCardData } from '@/components/SimpleCard'
 
 export const getInvolvedWithCommunity: Array<SimpleCardData> = [
@@ -5,7 +7,7 @@ export const getInvolvedWithCommunity: Array<SimpleCardData> = [
     title: 'Events & meetups',
     description: 'Attend upcoming hackathons, summits, and meetups.',
     cta: {
-      href: 'https://fil.org/events',
+      href: FILECOIN_FOUNDATION_URLS.events,
       text: 'Explore future events',
     },
   },
@@ -14,7 +16,7 @@ export const getInvolvedWithCommunity: Array<SimpleCardData> = [
     description:
       'Advocate for Filecoin, host events, and grow the ecosystem around the world.',
     cta: {
-      href: 'https://fil.org/orbit',
+      href: FILECOIN_FOUNDATION_URLS.orbit,
       text: 'Learn more about Orbit',
     },
   },
@@ -23,10 +25,8 @@ export const getInvolvedWithCommunity: Array<SimpleCardData> = [
     description:
       'Join recurring community calls to hear updates, meet contributors and start contributing.',
     cta: {
-      href: 'https://fil.org/orbit',
+      href: '#todo',
       text: 'Join community calls',
     },
   },
 ]
-
-// #todo: check links + grid

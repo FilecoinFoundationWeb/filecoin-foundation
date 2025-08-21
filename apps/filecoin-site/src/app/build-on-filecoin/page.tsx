@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -48,7 +48,7 @@ export default function BuildOnFilecoin() {
           title="Build on Filecoin: open, scalable, verifiable storage"
           description="Filecoin is a programmable, permissionless network from the ground up with cryptographic verification and global redundancy. Integrate decentralized storage that scales with your needs and safeguards data integrity at every layer."
           cta={
-            <Button href={FILECOIN_URLS.docs} variant="primary">
+            <Button href={FILECOIN_DOCS_URL} variant="primary">
               Explore documentation
             </Button>
           }
@@ -66,7 +66,7 @@ export default function BuildOnFilecoin() {
           <SplitSectionContent
             title="Verifiable onchain services with transparent storage, retrieval, and payments"
             description={[
-              'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pinning, retrieval, and payments are transparent, programmable, and interoperable by default. ,',
+              'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pinning, retrieval, and payments are transparent, programmable, and interoperable by default.',
               'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
             ]}
             cta={[
@@ -85,7 +85,7 @@ export default function BuildOnFilecoin() {
           title="A foundation for next-gen applications"
           description="From powering AI workflows to enabling cross-chain data bridges, Filecoin provides programmable, permissionless storage infrastructure."
         >
-          <CardGrid as="ul" variant="smTwoXlFourWide">
+          <CardGrid as="ul" variant="lgTwoXlThree">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}

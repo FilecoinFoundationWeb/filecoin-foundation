@@ -37,7 +37,6 @@ export function NewsletterForm() {
             type="submit"
             aria-label="Submit newsletter subscription"
           >
-            {/* #todo: Add gradient to icon */}
             <div className="text-brand-600 relative inline-block">
               <Icon component={ArrowRightIcon} size={20} />
             </div>
