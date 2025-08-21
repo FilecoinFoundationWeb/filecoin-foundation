@@ -26,17 +26,16 @@ type BestForType =
 
 export const storageProviders = [
   {
-    name: 'Akave',
-    description:
-      'Enterprise-grade, hot storage designed for AI, data-intensive workloads, and on-chain data lakes.',
-    bestFor: ['Enterprises', 'AI/ML developers'],
+    name: 'Storacha',
+    description: 'High-speed hot storage for fast data retrieval.',
+    bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
     keyFeatures: [
       'S3-compatible API',
       'Client-side encryption',
       'Access control',
     ],
-    url: 'https://www.akave.ai/',
-    logo: AkaveMiniatureLogo,
+    url: 'https://storacha.network/',
+    logo: StorachaMiniatureLogo,
   },
   {
     name: 'CIDgravity',
@@ -51,6 +50,19 @@ export const storageProviders = [
     logo: CIDgravityMiniatureLogo,
   },
   {
+    name: 'Akave Cloud',
+    description:
+      'Enterprise-grade, hot storage designed for AI, data-intensive workloads, and on-chain data lakes.',
+    bestFor: ['Enterprises', 'AI/ML developers'],
+    keyFeatures: [
+      'S3-compatible API',
+      'Client-side encryption',
+      'Access control',
+    ],
+    url: 'https://www.akave.ai/',
+    logo: AkaveMiniatureLogo,
+  },
+  {
     name: 'Lighthouse',
     description: 'Perpetual, long-term data storage.',
     bestFor: ['Enterprises', 'Developers', 'Personal Storage'],
@@ -63,16 +75,16 @@ export const storageProviders = [
     logo: LighthouseMiniatureLogo,
   },
   {
-    name: 'Storacha',
-    description: 'High-speed hot storage for fast data retrieval.',
+    name: 'Ramo',
+    description: 'Embrace the future of decentralized storage',
     bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
     keyFeatures: [
       'S3-compatible API',
       'Client-side encryption',
       'Access control',
     ],
-    url: 'https://storacha.network/',
-    logo: StorachaMiniatureLogo,
+    url: 'https://use.ramo.computer/',
+    logo: RamoMiniatureLogo,
   },
   {
     name: 'Singularity CLI',
@@ -85,17 +97,5 @@ export const storageProviders = [
     ],
     url: 'https://singularity.storage/',
     logo: SingularityMiniatureLogo,
-  },
-  {
-    name: 'Ramo',
-    description: 'Embrace the future of decentralized storage',
-    bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
-    keyFeatures: [
-      'S3-compatible API',
-      'Client-side encryption',
-      'Access control',
-    ],
-    url: 'https://use.ramo.computer/',
-    logo: RamoMiniatureLogo,
   },
 ] as const satisfies Array<StorageProvider>
