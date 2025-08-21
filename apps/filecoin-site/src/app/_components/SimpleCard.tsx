@@ -25,9 +25,8 @@ export type SimpleCardData = {
 type BorderKey = keyof typeof borderStyles
 
 const borderStyles = {
-  all: 'simple-card-border-all border border-[var(--color-border-base)] rounded-2xl',
-  'only-top':
-    'simple-card-border-only-top border-t border-[var(--color-border-base)]',
+  all: 'border border-[var(--color-border-base)] rounded-2xl',
+  'only-top': 'border-t border-[var(--color-border-base)]',
 } as const
 
 const interactiveStyles: Partial<Record<BorderKey, string>> = {
