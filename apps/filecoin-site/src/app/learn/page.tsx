@@ -54,8 +54,9 @@ export default function Learn() {
         <SectionContent
           title="What is Filecoin?"
           description={[
-            "Filecoin is the world's largest decentralized storage network, creating a decentralized, efficient, and robust foundation for humanity's most important information.",
-            "Today, a handful of corporations control most of the world's data, creating centralized gatekeepers that limit transparency and introduce single points of failure. Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, protected by cryptographic proofs.",
+            "Filecoin is a decentralized alternative to today's storage solutions, offering a better foundation for humanity's most important information.",
+            "A handful of corporations currently control most of the world's data. This centralized model creates gatekeepers, introduces single points of failures, and reduces transparency.",
+            'Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, protected by cryptographic proofs.',
           ]}
         >
           <YouTubeVideoEmbed videoUrl={FILECOIN_URLS.video.whatIsFilecoin} />
@@ -66,7 +67,7 @@ export default function Learn() {
         <SectionContent
           centerCTA
           title="What is Filecoin used for?"
-          description="Filecoin is a better foundation for the next generation of the web. From everyday backups to advanced Web3 apps, Filecoin offers verifiable, decentralized storage at scale."
+          description="From archival backups to Web3 apps, Filecoin offers decentralized, secure, and verifiable storage at scale. "
           cta={[
             <Button href={PATHS.CASE_STUDIES.path} variant="primary">
               Explore case studies

@@ -35,7 +35,7 @@ export default function CaseStudies() {
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Powering the preservation of critical datasets"
-            description="From scientific breakthroughs to cultural heritage, leading institutions trust Filecoin to securely and resiliently store their most valuable datasets."
+            description="From AI datasets to government archives, leading institutions trust Filecoin to securely and resiliently store their most valuable datasets."
             cta={
               <Button href={PATHS.STORE_DATA.path} variant="primary">
                 Explore datasets stored on Filecoin
@@ -69,7 +69,7 @@ export default function CaseStudies() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Preserve your most important data with Filecoin"
-          description="Join the organizations already protecting their most valuable datasets on Filecoin's secure, decentralized storage network."
+          description="Join the organizations already protecting their most valuable datasets on the Filecoin network."
           cta={
             <Button href={PATHS.STORE_DATA.path} variant="primary">
               Start storing on Filecoin

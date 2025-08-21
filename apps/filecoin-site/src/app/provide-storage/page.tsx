@@ -76,7 +76,7 @@ export default function ProvideStorage() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Optimize your storage potential"
-          description="The Filecoin Network rewards storage providers through a self-sustaining marketplace designed for long-term commitment and resilience."
+          description="The Filecoin network empowers storage providers through a sustainable, incentive-driven marketplace built for longevity and reliability."
         >
           <SectionImage {...graphicsData.provideStorageSection} />
 

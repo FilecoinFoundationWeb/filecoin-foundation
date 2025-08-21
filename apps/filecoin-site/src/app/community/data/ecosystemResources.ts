@@ -12,7 +12,7 @@ const CTA_TEXT = 'Visit website'
 export const ecosystemResources: Array<SimpleCardWithLogoProps> = [
   {
     title: 'Filecoin Foundation',
-    description: 'Network governance.',
+    description: 'Network governance, Filecoin Plus, and grants.',
     logo: {
       type: 'svg',
       src: FilecoinFoundationIconLogo,
@@ -79,7 +79,7 @@ export const ecosystemResources: Array<SimpleCardWithLogoProps> = [
   },
   {
     title: 'ANSA',
-    description: 'Applied research and investor relations.',
+    description: 'Applied research and ecosystem growth.',
     logo: {
       type: 'svg',
       src: ANSALogo,

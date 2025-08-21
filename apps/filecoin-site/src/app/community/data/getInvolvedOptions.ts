@@ -11,12 +11,12 @@ export const getInvolvedOptions: Array<LinkCardData> = [
   {
     title: 'Apply for a grant',
     description:
-      'Secure funding to support your Filecoin-based project or research through ecosystem grant programs.',
+      'Secure funding to support your Filecoin-based project or research.',
     href: 'https://fil.org/grants',
     icon: CurrencyDollarIcon,
   },
   {
-    title: 'Explore Retroactive Public Good Funding',
+    title: 'Explore Retroactive Public Goods Funding',
     description:
       'Get rewarded for impactful, open-source contributions that advance the Filecoin ecosystem.',
     href: 'https://fil-propgf.questbook.app',

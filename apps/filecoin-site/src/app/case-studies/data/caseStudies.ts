@@ -45,7 +45,7 @@ export const caseStudies: Array<SimpleCardWithLogoProps> = [
   {
     title: 'Flickr Foundation',
     description:
-      'Flickr Foundation is using Filecoin to help preserve millions of historical images in a decentralized, future-proof storage system.',
+      'Flickr Foundation is using Filecoin to help preserve thousands of historical images from cultural institutions like NASA and the U.S. National Archives.',
     cta: {
       href: 'https://www.flickr.org/',
       text: CTA_TEXT,
@@ -105,7 +105,7 @@ export const caseStudies: Array<SimpleCardWithLogoProps> = [
   {
     title: 'Smithsonian',
     description:
-      "The Smithsonian's National Museum of American History is working to upload nearly 300 digitized sound recordings from Alexander Graham Bell to the InterPlanetary File System (IPFS) and Filecoin.",
+      "The Smithsonian's National Musuem of American History is storing nearly 300 digitized sound records from Alexander Graham Bell on Filecoin.",
     cta: {
       href: 'https://www.si.edu/',
       text: CTA_TEXT,
@@ -133,7 +133,7 @@ export const caseStudies: Array<SimpleCardWithLogoProps> = [
   {
     title: 'Starling Labs',
     description:
-      'Starling Lab is developing technology to help establish and preserve the integrity of digital media, including archiving sensitive records on IPFS and Filecoin.',
+      'Starling Lab is developing technology to help establish and preserve the integrity of digital media, including archiving sensitive and vulnerable records on IPFS and Filecoin.',
     cta: {
       href: 'https://www.starlinglab.org/',
       text: CTA_TEXT,

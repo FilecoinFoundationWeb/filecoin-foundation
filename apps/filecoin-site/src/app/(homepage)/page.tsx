@@ -108,9 +108,9 @@ export default async function Home() {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        <SectionContent title="A decentralized, efficient, and robust foundation for humanity's most important information. ">
+        <SectionContent title="A decentralized, efficient, and robust foundation for humanity's most important information">
           <SplitSectionContent
-            title="A decentralized, efficient, and robust protocol."
+            title="A better foundation for the next generation of the web."
             description={[
               'A better foundation for the next generation of the web.',
               "Filecoin is reshaping how the world stores data. Today, a small handful of corporations control most of the world's data, creating centralized gatekeepers that introduce single points of failure and limit transparency.",
@@ -134,7 +134,7 @@ export default async function Home() {
       <PageSection paddingVariant="none" backgroundVariant="light">
         <SectionContentWrapper>
           <SectionContent
-            title="The missing incentive layer for IPFS"
+            title="The incentive layer for IPFS"
             description={[
               'Filecoin adds incentivized, persistent storage to the InterPlanetary File System (IPFS), a peer-to-peer network for content-addressable data, creating a powerful, versatile, and long-term home for data. ',
               'Filecoin makes it easy for IPFS users to reliably store their data directly on the Filecoin network. The result is a decentralized, storage layer opening up an entirely new class of applications and use cases.',
@@ -157,8 +157,8 @@ export default async function Home() {
         <SectionContent
           centerCTA
           centerTitle
-          title="How Filecoin storage compares to traditional cloud storage"
-          description="Compare decentralized storage against the traditional cloud storage."
+          title="How Filecoin storage stacks up"
+          description="How decentralized storage compares to traditional cloud storage"
           cta={[
             <Button href={PATHS.STORE_DATA.path} variant="primary">
               Store data
@@ -175,11 +175,8 @@ export default async function Home() {
       <PageSection backgroundVariant="dark">
         <SectionContent title="Open, scalable, and built for the future">
           <SplitSectionContent
-            title="A decentralized, verifiable storage layer that scales."
-            description={[
-              'Filecoin gives developers a decentralized, verifiable storage layer that scales effortlessly. Power  chain storage, dApps, data-heavy SaaS platforms, immutable archives, and beyond.',
-              'Accelerate development with open source tools, native IPFS integration, cross-chain data bridges, and FEVM for programmable smart contracts. Build without compromise, knowing you control your data, not centralized gatekeepers.',
-            ]}
+            title="A decentralized, verifiable storage layer that scales effortlessly."
+            description="Power chain storage, dApps, data-heavy SaaS platforms, immutable archives, and beyond. Accelerate development with open source tools, native IPFS integration, cross-chain data bridges, and FEVM for programmable smart contracts. Build without compromise, knowing you control your data, not centralized gatekeepers."
             cta={[
               <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="primary">
                 Start building

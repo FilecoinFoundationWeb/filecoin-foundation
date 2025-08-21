@@ -10,7 +10,7 @@ export const whatIsFilecoinUsedFor: Array<CardData> = [
   {
     title: 'Web3 apps & AI datasets',
     description:
-      'Powering the data layer for NFTs, video streaming, AI training datasets, and dApps.',
+      'Powering the data layer for NFTs, video streaming, AI training datasets, dApps, and more.',
     icon: LockKeyIcon,
   },
   {
@@ -21,13 +21,13 @@ export const whatIsFilecoinUsedFor: Array<CardData> = [
   {
     title: 'Cultural archives',
     description:
-      "Preserving humanity's most important knowledge and records for the long term.",
+      "Preserving humanity's collective memory, from community records to film and art collections, and government data, for the long-term.",
     icon: BatteryChargingVerticalIcon,
   },
   {
     title: 'Scientific datasets',
     description:
-      'Enabling resilient access to genomics, public research, and large-scale scientific data.',
+      'Enabling resilient access to public research and large-scale scientific data.',
     icon: BatteryChargingVerticalIcon,
   },
 ]
