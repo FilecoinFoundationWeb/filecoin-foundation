@@ -22,7 +22,7 @@ export function StorageProviderCard({
 }: StorageProviderCardProps) {
   return (
     <li>
-      <article className="flex h-full flex-col justify-between space-y-8 rounded-2xl border border-[var(--color-border)] p-8">
+      <article className="flex h-full flex-col justify-between space-y-8 rounded-2xl border border-[var(--color-border-muted)] p-8">
         <div className="space-y-8">
           <div className="flex items-center gap-3">
             {/* Placeholder for logo */}

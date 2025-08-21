@@ -345,7 +345,7 @@
     @apply icon-button;
   }
 
-  /* CTALINK */
+  /* CTA LINK */
   .cta-link {
     @apply font-semibold text-[var(--color-cta-link-text)];
   }

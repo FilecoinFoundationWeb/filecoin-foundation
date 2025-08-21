@@ -4,8 +4,8 @@ import Image, { type StaticImageData } from 'next/image'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
-import { CTALink } from './CTALink'
-import { SimpleCard, type SimpleCardProps } from './SimpleCard'
+import { CTALink, type CTALinkProps } from './CTALink'
+import { Heading } from './Heading'
 
 type HEXCodeType = `#${string}`
 
@@ -23,10 +23,13 @@ type SVGLogoProps = {
 }
 
 export type SimpleCardWithLogoProps = {
-  title: SimpleCardProps['title']
-  description: SimpleCardProps['description']
-  cta: NonNullable<SimpleCardProps['cta']>
+  title: string
+  description: string
   logo: ImageLogoProps | SVGLogoProps
+  cta: {
+    href: CTALinkProps['href']
+    text: CTALinkProps['children']
+  }
 }
 
 const LOGO_SIZE = 60
@@ -34,11 +37,11 @@ const LOGO_SIZE = 60
 export function SimpleCardWithLogo({
   title,
   description,
-  cta,
   logo,
+  cta,
 }: SimpleCardWithLogoProps) {
   return (
-    <li className="group relative flex h-full flex-col border border-[var(--color-border-base)] sm:flex-row">
+    <li className="group focus-within:brand-outline relative flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--color-border-base)] sm:flex-row">
       <div
         className="grid h-44 w-full flex-shrink-0 place-items-center sm:h-full sm:w-42"
         style={{ backgroundColor: logo.bgColor }}
@@ -62,17 +65,23 @@ export function SimpleCardWithLogo({
         className="h-full border-t border-[var(--color-border-base)] sm:border-t-0 sm:border-r"
       />
 
-      <SimpleCard
-        as="div"
-        border="none"
-        title={title}
-        description={description}
-      />
+      <div className="relative h-full w-full group-focus-within:bg-[var(--color-card-background-hover)] group-hover:bg-[var(--color-card-background-hover)]">
+        <div className="flex flex-col gap-6 p-8">
+          <div className="mb-12 flex flex-col gap-3">
+            <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
+              <Heading tag="h3" variant="card-heading">
+                {title}
+              </Heading>
+            </span>
+            <p className="text-[var(--color-text-paragraph)]">{description}</p>
+          </div>
+        </div>
+      </div>
 
       <CTALink
         inset
         href={cta.href}
-        textClassName="absolute bottom-6 sm:left-48 left-6"
+        textClassName="absolute bottom-8 sm:left-50 left-8"
       >
         {cta.text}
       </CTALink>
