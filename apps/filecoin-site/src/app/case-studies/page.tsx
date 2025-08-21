@@ -37,10 +37,7 @@ export default function CaseStudies() {
             title="Powering the preservation of critical datasets"
             description="From AI datasets to government archives, leading institutions trust Filecoin to securely and resiliently store their most valuable datasets."
             cta={
-              <Button
-                href={`${PATHS.STORE_DATA.path}#featured-datasets`}
-                variant="primary"
-              >
+              <Button href="#featured-datasets" variant="primary">
                 Explore datasets stored on Filecoin
               </Button>
             }
