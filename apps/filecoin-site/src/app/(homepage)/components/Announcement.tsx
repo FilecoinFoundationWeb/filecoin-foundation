@@ -19,10 +19,7 @@ export function Announcement({ children, href, centered }: AnnouncementProps) {
         aria-label={`${children} - Click to learn more`}
         className="group focus:brand-outline rounded-full"
       >
-        <aside
-          className="gap relative flex items-center rounded-full border border-[var(--color-announcement-border)] bg-[var(--color-announcement-background)] p-1 group-hover:bg-[var(--color-announcement-background-hover)] group-focus:bg-[var(--color-announcement-background-hover)]"
-          role="banner"
-        >
+        <aside className="gap relative flex items-center rounded-full border border-[var(--color-announcement-border)] bg-[var(--color-announcement-background)] p-1 group-hover:bg-[var(--color-announcement-background-hover)] group-focus:bg-[var(--color-announcement-background-hover)]">
           <span className="ml-4 text-sm font-medium sm:text-base">
             {children}
           </span>
