@@ -4,10 +4,9 @@ import { clsx } from 'clsx'
 
 import { useCarousel } from './Carousel'
 
-export function CarouselContent({
-  className,
-  ...props
-}: React.ComponentProps<'div'>) {
+type CarouselContentProps = React.ComponentProps<'div'>
+
+export function CarouselContent({ className, ...props }: CarouselContentProps) {
   const { carouselRef, orientation } = useCarousel()
 
   return (

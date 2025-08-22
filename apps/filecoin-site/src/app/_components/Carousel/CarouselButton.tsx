@@ -6,13 +6,15 @@ import { clsx } from 'clsx'
 
 import { useCarousel } from './Carousel'
 
+type CarouselButtonProps = React.ComponentProps<typeof Button> & {
+  direction: 'prev' | 'next'
+}
+
 export function CarouselButton({
   direction,
   className,
   ...props
-}: React.ComponentProps<typeof Button> & {
-  direction: 'prev' | 'next'
-}) {
+}: CarouselButtonProps) {
   const { orientation, scrollPrev, scrollNext, canScrollPrev, canScrollNext } =
     useCarousel()
 
