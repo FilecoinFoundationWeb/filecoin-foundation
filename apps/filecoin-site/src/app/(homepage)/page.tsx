@@ -83,8 +83,7 @@ export default async function Home() {
         </div>
       </Section>
 
-      <PageSection paddingVariant="none" backgroundVariant="dark">
-        <div className="py-12" />
+      <PageSection backgroundVariant="dark">
         <LogoSection
           title="Trusted by industry leaders"
           logos={trustedByLogos}

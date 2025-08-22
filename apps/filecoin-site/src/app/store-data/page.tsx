@@ -55,7 +55,7 @@ export default function StoreData() {
         />
       </div>
 
-      <PageSection paddingVariant="none" backgroundVariant="dark">
+      <PageSection paddingVariant="compact" backgroundVariant="dark">
         <LogoSection
           title="Trusted by industry leaders"
           logos={trustedByLogos}
@@ -87,8 +87,9 @@ export default function StoreData() {
           description="Find the perfect storage solution for your data on Filecoin."
         >
           <CardGrid as="ul" variant="lgTwoXlThree">
-            {storageProviders.map(
-              ({ name, description, bestFor, keyFeatures, url, logo }) => (
+            {storageProviders
+              .toSorted((a, b) => a.name.localeCompare(b.name))
+              .map(({ name, description, bestFor, keyFeatures, url, logo }) => (
                 <StorageProviderCard
                   key={name}
                   name={name}
@@ -98,8 +99,7 @@ export default function StoreData() {
                   url={url}
                   logo={logo}
                 />
-              ),
-            )}
+              ))}
           </CardGrid>
         </SectionContent>
       </PageSection>

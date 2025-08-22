@@ -1,7 +1,7 @@
 import {
   CertificateIcon,
-  TagIcon,
   LockKeyIcon,
+  ChartBarIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
 import type { CardData } from '@/components/Card'
@@ -14,15 +14,15 @@ export const filecoinFeatures: Array<CardData> = [
     icon: LockKeyIcon,
   },
   {
-    title: 'Scalable for big data',
-    description:
-      "Filecoin's decentralized infrastructure supports exabyte-scale datasets and long-term archival, with built-in redundancy and global distribution.",
-    icon: TagIcon,
-  },
-  {
     title: 'Outage proof resilience',
     description:
       'Data is distributed across independent data centers worldwide. If a data center goes offline, information remains available and verifiable.',
     icon: CertificateIcon,
+  },
+  {
+    title: 'Scalable for big data',
+    description:
+      "Filecoin's decentralized infrastructure supports exabyte-scale datasets and long-term archival, with built-in redundancy and global distribution.",
+    icon: ChartBarIcon,
   },
 ]
