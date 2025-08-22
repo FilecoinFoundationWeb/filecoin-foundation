@@ -11,7 +11,7 @@ import { type LogoItemProps, LogoItem } from './LogoItem'
 
 type LogoSectionProps = {
   headingTag: HeadingProps['tag']
-  title?: string
+  title: string
   logos: Array<LogoItemProps>
 }
 
@@ -21,16 +21,14 @@ export function LogoSection({ headingTag, title, logos }: LogoSectionProps) {
   return (
     <section
       className="logo-section flex flex-col items-center gap-15 md:gap-20"
-      aria-labelledby={title && 'logo-section-title'}
+      aria-labelledby="logo-section-title"
     >
-      {title && (
-        <Tag
-          className="text-lg text-[var(--color-subheading-text)]"
-          id="logo-section-title"
-        >
-          {title}
-        </Tag>
-      )}
+      <Tag
+        id="logo-section-title"
+        className="text-lg text-[var(--color-subheading-text)]"
+      >
+        {title}
+      </Tag>
 
       <Carousel>
         <CarouselContent>
