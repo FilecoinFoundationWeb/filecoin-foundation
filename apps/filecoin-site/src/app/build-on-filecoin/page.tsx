@@ -87,7 +87,8 @@ export default function BuildOnFilecoin() {
           title="A foundation for next-gen applications"
           description="From powering AI workflows to enabling cross-chain data bridges, Filecoin provides programmable, permissionless storage infrastructure."
         >
-          <CardGrid as="ul" variant="lgTwoXlThree">
+          {/* <CardGrid as="ul" variant="lgTwoXlThree"> */}
+          <div className="grid gap-15 sm:grid-cols-2 lg:grid-cols-3">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -97,7 +98,8 @@ export default function BuildOnFilecoin() {
                 icon={icon}
               />
             ))}
-          </CardGrid>
+          </div>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
 
@@ -112,7 +114,8 @@ export default function BuildOnFilecoin() {
             </Button>
           }
         >
-          <CardGrid as="ul" variant="lgTwo">
+          {/* <CardGrid as="ul" variant="lgTwo"> */}
+          <div className="grid gap-10 lg:grid-cols-2">
             {builtOnFilecoin.map(({ title, description, cta, logo }) => (
               <SimpleCardWithLogo
                 key={title}
@@ -122,7 +125,8 @@ export default function BuildOnFilecoin() {
                 logo={logo}
               />
             ))}
-          </CardGrid>
+          </div>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
 
@@ -131,7 +135,8 @@ export default function BuildOnFilecoin() {
           title="Tutorials and guides"
           description="Learn the basics to start building with Filecoin."
         >
-          <CardGrid as="ul" variant="lgThree">
+          {/* <CardGrid as="ul" variant="lgThree"> */}
+          <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-3">
             {tutorialsAndGuides.map(
               ({ title, description, cta, difficulty }) => (
                 <SimpleCard
@@ -144,14 +149,18 @@ export default function BuildOnFilecoin() {
                 />
               ),
             )}
-          </CardGrid>
+          </div>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="gray">
         <SectionContent title="Developer resources">
           <CardGridContainer width="6xl">
-            <CardGrid as="ul" variant="mdTwoWide">
+            {' '}
+            <div className="grid gap-8 md:grid-cols-2 md:gap-x-15">
+              {/* <CardGrid as="ul" variant="mdTwoWide"> */}
+
               {developerResources.map(({ title, description, href, icon }) => (
                 <LinkCard
                   key={title}
@@ -163,7 +172,8 @@ export default function BuildOnFilecoin() {
                   icon={{ component: icon }}
                 />
               ))}
-            </CardGrid>
+              {/* </CardGrid> */}
+            </div>
           </CardGridContainer>
         </SectionContent>
       </PageSection>
@@ -181,7 +191,8 @@ export default function BuildOnFilecoin() {
           </ImageGrid>
 
           <CardGridContainer width="6xl">
-            <CardGrid as="ul" variant="mdTwoWide">
+            {/* <CardGrid as="ul" variant="mdTwoWide"> */}
+            <div className="grid gap-8 md:grid-cols-2 md:gap-x-15">
               {getInvolvedOptions.map(({ title, description, href, icon }) => (
                 <LinkCard
                   key={title}
@@ -193,7 +204,8 @@ export default function BuildOnFilecoin() {
                   icon={{ component: icon, variant: 'filled' }}
                 />
               ))}
-            </CardGrid>
+            </div>
+            {/* </CardGrid> */}
           </CardGridContainer>
         </SectionContent>
       </PageSection>

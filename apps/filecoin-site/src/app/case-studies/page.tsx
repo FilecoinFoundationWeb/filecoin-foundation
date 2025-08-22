@@ -52,7 +52,8 @@ export default function CaseStudies() {
           title="Featured datasets"
           description="Explore some of the organizations using Filecoin to preserve their data."
         >
-          <CardGrid as="ul" variant="lgTwo">
+          {/* <CardGrid as="ul" variant="lgTwo"> */}
+          <div className="grid gap-10 lg:grid-cols-2">
             {caseStudies.map(({ title, description, cta, logo }) => (
               <SimpleCardWithLogo
                 key={title}
@@ -62,7 +63,8 @@ export default function CaseStudies() {
                 logo={logo}
               />
             ))}
-          </CardGrid>
+          </div>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
 

@@ -93,7 +93,8 @@ export default async function Home() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent centerTitle title="Filecoin by the numbers">
-          <CardGrid as="ul" variant="smThree">
+          {/* <CardGrid as="ul" variant="smThree"> */}
+          <div className="grid gap-15 md:grid-cols-3">
             {filecoinByTheNumbers.map(({ title, subTitle, description }) => (
               <MetricCard
                 key={title}
@@ -102,7 +103,8 @@ export default async function Home() {
                 description={description}
               />
             ))}
-          </CardGrid>
+          </div>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
 
@@ -201,7 +203,8 @@ export default async function Home() {
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
         >
-          <CardGrid as="ul" variant="smTwoXlThreeWidest">
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            {/* <CardGrid as="ul" variant="smTwoXlThreeWidest"> */}
             {featuredBlogPosts.map((post: BlogPost) => {
               const {
                 title,
@@ -231,7 +234,8 @@ export default async function Home() {
                 />
               )
             })}
-          </CardGrid>
+            {/* </CardGrid> */}
+          </div>
         </SectionContent>
       </PageSection>
 
@@ -240,8 +244,14 @@ export default async function Home() {
           title="Join a vibrant community"
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
-          <CardGridContainer width="4xl">
-            <CardGrid as="ul" variant="mdTwoWide">
+          <ImageGrid variant="oneMdThree">
+            {joinVibrantCommunityImages.map(({ data, alt }) => (
+              <Image key={alt} src={data} alt={alt} />
+            ))}
+          </ImageGrid>
+          <CardGridContainer width="6xl">
+            {/* <CardGrid as="ul" variant="mdTwoWide"> */}
+            <div className="grid gap-8 md:grid-cols-2 md:gap-x-15">
               {communityLinks.map(({ title, href, icon }) => (
                 <LinkCard
                   key={title}
@@ -252,13 +262,9 @@ export default async function Home() {
                   icon={{ component: icon, variant: 'filled' }}
                 />
               ))}
-            </CardGrid>
+              {/* </CardGrid> */}
+            </div>
           </CardGridContainer>
-          <ImageGrid variant="oneMdThree">
-            {joinVibrantCommunityImages.map(({ data, alt }) => (
-              <Image key={alt} src={data} alt={alt} />
-            ))}
-          </ImageGrid>
         </SectionContent>
       </PageSection>
     </>

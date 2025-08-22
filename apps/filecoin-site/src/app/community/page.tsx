@@ -61,19 +61,19 @@ export default function BuildOnFilecoin() {
           title="Get involved"
           description="Whether you want to contribute, connect or build, there’s a place for you in the Filecoin community."
         >
-          <CardGridContainer width="6xl">
-            <CardGrid as="ul" variant="smThree">
-              {getInvolvedWithCommunity.map(({ title, description, cta }) => (
-                <SimpleCard
-                  key={title}
-                  as="li"
-                  title={title}
-                  description={description}
-                  cta={cta}
-                />
-              ))}
-            </CardGrid>
-          </CardGridContainer>
+          {/* <CardGrid as="ul" variant="smThree"> */}
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            {getInvolvedWithCommunity.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                as="li"
+                title={title}
+                description={description}
+                cta={cta}
+              />
+            ))}
+          </div>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
 
@@ -88,7 +88,8 @@ export default function BuildOnFilecoin() {
               <Image key={alt} src={data} alt={alt} />
             ))}
           </ImageGrid>
-          <CardGrid as="ul" variant="smThree">
+          {/* <CardGrid as="ul" variant="smThree"> */}
+          <div className="grid gap-8 md:grid-cols-2 md:gap-x-15 lg:grid-cols-3">
             {socialMedia.map(({ title, description, href, icon }) => (
               <LinkCard
                 key={title}
@@ -100,7 +101,8 @@ export default function BuildOnFilecoin() {
                 icon={{ component: icon }}
               />
             ))}
-          </CardGrid>
+            {/* </CardGrid> */}
+          </div>
         </SectionContent>
       </PageSection>
 
@@ -109,7 +111,8 @@ export default function BuildOnFilecoin() {
           title="Ecosystem resources"
           description="Filecoin is open-source and community-driven. Explore groups advancing the protocol and building the tools that power its ecosystem."
         >
-          <CardGrid as="ul" variant="lgTwo">
+          {/* <CardGrid as="ul" variant="lgTwo"> */}
+          <div className="grid gap-10 lg:grid-cols-2">
             {ecosystemResources.map(({ title, description, cta, logo }) => (
               <SimpleCardWithLogo
                 key={title}
@@ -119,7 +122,8 @@ export default function BuildOnFilecoin() {
                 logo={logo}
               />
             ))}
-          </CardGrid>
+          </div>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
 

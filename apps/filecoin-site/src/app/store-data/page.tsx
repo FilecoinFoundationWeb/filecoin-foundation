@@ -67,7 +67,8 @@ export default function StoreData() {
           title="Future-proof your data infrastructure"
           description="Filecoin is a powerful alternative to traditional cloud storage, leveraging global, independent data centers. The decentralized network infrastructure ensures your data always remains secure and verifiable, so that you can store your data with confidence."
         >
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
+          {/* <CardGrid as="ul" variant="smTwoLgThreeWider"> */}
+          <ul className="grid gap-15 sm:grid-cols-2 lg:grid-cols-3">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -77,7 +78,8 @@ export default function StoreData() {
                 icon={icon}
               />
             ))}
-          </CardGrid>
+          </ul>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
 
@@ -86,7 +88,8 @@ export default function StoreData() {
           title="Store on Filecoin"
           description="Find the perfect storage solution for your data on Filecoin."
         >
-          <CardGrid as="ul" variant="lgTwoXlThree">
+          {/* <CardGrid as="ul" variant="lgTwoXlThree"> */}
+          <ul className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
             {storageProviders
               .toSorted((a, b) => a.name.localeCompare(b.name))
               .map(({ name, description, bestFor, keyFeatures, url, logo }) => (
@@ -100,7 +103,8 @@ export default function StoreData() {
                   logo={logo}
                 />
               ))}
-          </CardGrid>
+          </ul>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
 

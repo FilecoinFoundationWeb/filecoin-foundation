@@ -45,7 +45,8 @@ export function BlogPostList({ posts }: BlogPostListProps) {
     <div className="space-y-15">
       <BlogCategoryFilter />
 
-      <CardGrid as="ul" variant="mdTwo">
+      {/* <CardGrid as="ul" variant="mdTwo"> */}
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         {paginatedResults.map((post: BlogPost) => {
           const {
             title,
@@ -75,7 +76,8 @@ export function BlogPostList({ posts }: BlogPostListProps) {
             />
           )
         })}
-      </CardGrid>
+      </div>
+      {/* </CardGrid> */}
 
       <div className="mx-auto mt-20 max-w-2xl">
         {filteredEntries.length > 0 ? (

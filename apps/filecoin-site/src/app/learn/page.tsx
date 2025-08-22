@@ -78,7 +78,8 @@ export default function Learn() {
             </Button>,
           ]}
         >
-          <CardGrid as="ul" variant="smTwoXlFourWide">
+          {/* <CardGrid as="ul" variant="smTwoXlFourWide"> */}
+          <div className="grid gap-15 sm:grid-cols-2 xl:grid-cols-4">
             {whatIsFilecoinUsedFor.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -88,7 +89,8 @@ export default function Learn() {
                 icon={icon}
               />
             ))}
-          </CardGrid>
+          </div>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
 
@@ -103,7 +105,8 @@ export default function Learn() {
             </Button>
           }
         >
-          <CardGrid as="ul" variant="smThree">
+          {/* <CardGrid as="ul" variant="smThree"> */}
+          <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-3">
             {learnAboutFilecoinProtocol.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -113,7 +116,8 @@ export default function Learn() {
                 cta={cta}
               />
             ))}
-          </CardGrid>
+          </div>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
 
@@ -122,7 +126,8 @@ export default function Learn() {
           title="Be a part of a more resilient internet"
           description="Filecoin is more than storage; it's an innovative, open ecosystem built to preserve humanity's most important information."
         >
-          <CardGrid as="ul" variant="smThree">
+          {/* <CardGrid as="ul" variant="smThree"> */}
+          <div className="grid gap-8 md:gap-x-15 lg:grid-cols-3">
             {resilientInternetCta.map(({ title, href, icon }) => (
               <LinkCard
                 key={title}
@@ -133,7 +138,8 @@ export default function Learn() {
                 icon={{ component: icon, variant: 'filled' }}
               />
             ))}
-          </CardGrid>
+          </div>
+          {/* </CardGrid> */}
         </SectionContent>
       </PageSection>
     </>
