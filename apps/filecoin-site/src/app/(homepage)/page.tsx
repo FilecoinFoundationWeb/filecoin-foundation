@@ -244,6 +244,7 @@ export default async function Home() {
               <Image key={alt} src={data} alt={alt} />
             ))}
           </ImageGrid>
+
           <CardGridContainer width="6xl">
             <CardGrid as="ul" variant="mdTwo">
               {communityLinks.map(({ title, href, icon }) => (

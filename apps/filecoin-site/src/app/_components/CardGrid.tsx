@@ -13,9 +13,9 @@ const variants = {
   mdTwo: 'grid gap-8 md:grid-cols-2 md:gap-x-15',
   lgTwoWide: 'grid gap-10 lg:grid-cols-2',
   mdTwoWider: 'grid gap-15 md:grid-cols-2',
-  // mdTwoLgThree: 'grid gap-8 md:grid-cols-2 md:gap-x-15 lg:grid-cols-3',
+  mdTwoLgThree: 'grid gap-8 md:grid-cols-2 md:gap-x-15 lg:grid-cols-3',
   mdTwoLgThreeWide: 'grid gap-10 md:grid-cols-2 lg:grid-cols-3',
-  mdThreeWider: 'grid gap-15 md:grid-cols-3', // 1
+  mdThreeWider: 'grid gap-15 md:grid-cols-3',
 }
 
 export function CardGrid({ as: Tag, children, variant }: CardGridProps) {

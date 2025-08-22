@@ -86,6 +86,7 @@ export default function BuildOnFilecoin() {
               <Image key={alt} src={data} alt={alt} />
             ))}
           </ImageGrid>
+
           <CardGrid as="ul" variant="mdTwoLgThree">
             {socialMedia.map(({ title, description, href, icon }) => (
               <LinkCard
