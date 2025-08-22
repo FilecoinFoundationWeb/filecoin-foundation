@@ -33,7 +33,7 @@ export function SectionContent({
     >
       <div
         className={clsx(
-          'max-w-3xl space-y-15',
+          'max-w-3xl space-y-6',
           centerTitle && 'mx-auto text-center',
         )}
       >
