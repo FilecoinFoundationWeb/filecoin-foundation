@@ -8,8 +8,6 @@ import {
   useContext,
 } from 'react'
 
-import { Button } from '@headlessui/react'
-import { ArrowLeftIcon, ArrowRightIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
@@ -60,7 +58,7 @@ export function Carousel({
   const [carouselRef, api] = useEmblaCarousel(
     {
       ...opts,
-      axis: orientation === 'horizontal' ? 'x' : 'y',
+      axis: getCarouselAxis(orientation),
     },
     plugins,
   )
@@ -138,55 +136,6 @@ export function Carousel({
   )
 }
 
-export function CarouselPrevious({
-  className,
-
-  ...props
-}: React.ComponentProps<typeof Button>) {
-  const { orientation, scrollPrev, canScrollPrev } = useCarousel()
-
-  return (
-    <Button
-      data-slot="carousel-previous"
-      disabled={!canScrollPrev}
-      className={clsx(
-        'focus:brand-outline absolute grid size-12 cursor-pointer place-items-center rounded-full bg-zinc-800 hover:bg-zinc-700 focus:bg-zinc-700 lg:size-11',
-        orientation === 'horizontal'
-          ? 'top-1/2 left-0 -translate-y-1/2 md:-left-6'
-          : 'top-2 left-1/2 -translate-x-1/2 rotate-90 md:-top-10',
-        className,
-      )}
-      onClick={scrollPrev}
-      {...props}
-    >
-      <ArrowLeftIcon size={18} />
-      <span className="sr-only">Previous slide</span>
-    </Button>
-  )
-}
-
-export function CarouselNext({
-  className,
-  ...props
-}: React.ComponentProps<typeof Button>) {
-  const { orientation, scrollNext, canScrollNext } = useCarousel()
-
-  return (
-    <Button
-      data-slot="carousel-next"
-      disabled={!canScrollNext}
-      className={clsx(
-        'focus:brand-outline absolute grid size-12 cursor-pointer place-items-center rounded-full bg-zinc-800 hover:bg-zinc-700 focus:bg-zinc-700 lg:size-11',
-        orientation === 'horizontal'
-          ? 'top-1/2 right-0 -translate-y-1/2 md:-right-6'
-          : 'bottom-2 left-1/2 -translate-x-1/2 rotate-90 md:-bottom-10',
-        className,
-      )}
-      onClick={scrollNext}
-      {...props}
-    >
-      <ArrowRightIcon size={18} />
-      <span className="sr-only">Next slide</span>
-    </Button>
-  )
+function getCarouselAxis(orientation: 'horizontal' | 'vertical') {
+  return orientation === 'horizontal' ? 'x' : 'y'
 }
