@@ -6,17 +6,15 @@ export type TutorialsAndGuides = SimpleCardData & {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
 }
 
-const CTA_TEXT = 'Learn more'
-
 export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
   {
     title: 'Understand Filecoin basics',
     description:
-      'A quick intro to Filecoin’s role as a decentralized, verifiable storage network and why developers use it.',
+      "A quick intro to Filecoin's role as a decentralized, verifiable storage network and why developers use it.",
     difficulty: 'Beginner',
     cta: {
       href: FILECOIN_DOCS_URLS.basicsWhatIsFilecoin,
-      text: CTA_TEXT,
+      text: 'Read the Filecoin basics guide',
     },
   },
   {
@@ -26,7 +24,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
     difficulty: 'Beginner',
     cta: {
       href: 'https://github.com/FIL-Builders/fil-frame',
-      text: CTA_TEXT,
+      text: 'Follow the setup instructions',
     },
   },
   {
@@ -36,7 +34,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
     difficulty: 'Beginner',
     cta: {
       href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: CTA_TEXT,
+      text: 'Connect to the testnet',
     },
   },
   {
@@ -46,7 +44,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
     difficulty: 'Beginner',
     cta: {
       href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: CTA_TEXT,
+      text: 'Try storing your first file',
     },
   },
   {
@@ -56,7 +54,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
     difficulty: 'Intermediate',
     cta: {
       href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: CTA_TEXT,
+      text: 'See code examples',
     },
   },
   {
@@ -66,7 +64,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
     difficulty: 'Intermediate',
     cta: {
       href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: CTA_TEXT,
+      text: 'Deploy a sample contract',
     },
   },
   {
@@ -76,7 +74,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
     difficulty: 'Intermediate',
     cta: {
       href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: CTA_TEXT,
+      text: 'Start building a dApp',
     },
   },
   {
@@ -86,7 +84,7 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
     difficulty: 'Advanced',
     cta: {
       href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: CTA_TEXT,
+      text: 'Explore advanced examples',
     },
   },
 ]
