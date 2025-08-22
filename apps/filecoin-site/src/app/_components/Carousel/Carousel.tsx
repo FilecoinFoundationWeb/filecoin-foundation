@@ -13,6 +13,8 @@ import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react'
 
+import { useCarouselKeyboard } from './hooks/useCarouselKeyboard'
+
 export type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 type CarouselOptions = UseCarouselParameters[0]
@@ -79,7 +81,7 @@ export function Carousel({
     api?.scrollNext()
   }, [api])
 
-  const handleKeyDown = createKeyboardHandler(scrollPrev, scrollNext)
+  const handleKeyDown = useCarouselKeyboard(scrollPrev, scrollNext)
 
   useEffect(() => {
     if (!api || !setApi) return
@@ -126,16 +128,4 @@ export function Carousel({
 
 function getCarouselAxis(orientation: 'horizontal' | 'vertical') {
   return orientation === 'horizontal' ? 'x' : 'y'
-}
-
-function createKeyboardHandler(scrollPrev: () => void, scrollNext: () => void) {
-  return function handleKeyDown(event: React.KeyboardEvent<HTMLDivElement>) {
-    if (event.key === 'ArrowLeft') {
-      event.preventDefault()
-      scrollPrev()
-    } else if (event.key === 'ArrowRight') {
-      event.preventDefault()
-      scrollNext()
-    }
-  }
 }
