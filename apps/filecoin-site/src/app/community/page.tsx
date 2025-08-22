@@ -61,19 +61,17 @@ export default function BuildOnFilecoin() {
           title="Get involved"
           description="Whether you want to contribute, connect or build, there’s a place for you in the Filecoin community."
         >
-          <CardGridContainer width="6xl">
-            <CardGrid as="ul" variant="smThree">
-              {getInvolvedWithCommunity.map(({ title, description, cta }) => (
-                <SimpleCard
-                  key={title}
-                  as="li"
-                  title={title}
-                  description={description}
-                  cta={cta}
-                />
-              ))}
-            </CardGrid>
-          </CardGridContainer>
+          <CardGrid as="ul" variant="mdTwoLgThreeWide">
+            {getInvolvedWithCommunity.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                as="li"
+                title={title}
+                description={description}
+                cta={cta}
+              />
+            ))}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
@@ -88,7 +86,8 @@ export default function BuildOnFilecoin() {
               <Image key={alt} src={data} alt={alt} />
             ))}
           </ImageGrid>
-          <CardGrid as="ul" variant="smThree">
+
+          <CardGrid as="ul" variant="mdTwoLgThree">
             {socialMedia.map(({ title, description, href, icon }) => (
               <LinkCard
                 key={title}
@@ -109,7 +108,7 @@ export default function BuildOnFilecoin() {
           title="Ecosystem resources"
           description="Filecoin is open-source and community-driven. Explore groups advancing the protocol and building the tools that power its ecosystem."
         >
-          <CardGrid as="ul" variant="lgTwo">
+          <CardGrid as="ul" variant="lgTwoWide">
             {ecosystemResources.map(({ title, description, cta, logo }) => (
               <SimpleCardWithLogo
                 key={title}

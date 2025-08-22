@@ -83,7 +83,7 @@ export default function ProvideStorage() {
         >
           <SectionImage {...graphicsData.provideStorageSection} />
 
-          <CardGrid as="ul" variant="lgThree">
+          <CardGrid as="ul" variant="smTwoLgThreeWider">
             {filecoinEarningsInsights.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -128,7 +128,7 @@ export default function ProvideStorage() {
             title="Core infrastructure setup"
             description="Ensure your system can deliver high-performance, reliable storage."
           >
-            <CardGrid as="ul" variant="lgTwoWide">
+            <CardGrid as="ul" variant="mdTwoWider">
               {coreInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
                   <Heading tag="h4" variant="card-heading">
@@ -151,7 +151,7 @@ export default function ProvideStorage() {
             title="Specialized hardware"
             description="Filecoin's sealing and storage system require purpose-build hardware."
           >
-            <CardGrid as="ul" variant="lgTwoWide">
+            <CardGrid as="ul" variant="mdTwoWider">
               {specializedInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
                   <Heading tag="h4" variant="card-heading">

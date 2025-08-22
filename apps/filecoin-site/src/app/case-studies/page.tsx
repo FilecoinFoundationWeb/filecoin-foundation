@@ -52,7 +52,7 @@ export default function CaseStudies() {
           title="Featured datasets"
           description="Explore some of the organizations using Filecoin to preserve their data."
         >
-          <CardGrid as="ul" variant="lgTwo">
+          <CardGrid as="ul" variant="lgTwoWide">
             {caseStudies.map(({ title, description, cta, logo }) => (
               <SimpleCardWithLogo
                 key={title}

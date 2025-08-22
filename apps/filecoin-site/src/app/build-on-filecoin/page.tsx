@@ -87,7 +87,7 @@ export default function BuildOnFilecoin() {
           title="A foundation for next-gen applications"
           description="From powering AI workflows to enabling cross-chain data bridges, Filecoin provides programmable, permissionless storage infrastructure."
         >
-          <CardGrid as="ul" variant="lgTwoXlThree">
+          <CardGrid as="ul" variant="smTwoLgThreeWider">
             {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -112,7 +112,7 @@ export default function BuildOnFilecoin() {
             </Button>
           }
         >
-          <CardGrid as="ul" variant="lgTwo">
+          <CardGrid as="ul" variant="lgTwoWide">
             {builtOnFilecoin.map(({ title, description, cta, logo }) => (
               <SimpleCardWithLogo
                 key={title}
@@ -131,7 +131,7 @@ export default function BuildOnFilecoin() {
           title="Tutorials and guides"
           description="Learn the basics to start building with Filecoin."
         >
-          <CardGrid as="ul" variant="lgThree">
+          <CardGrid as="ul" variant="smTwoXlThreeWide">
             {tutorialsAndGuides.map(
               ({ title, description, cta, difficulty }) => (
                 <SimpleCard
@@ -151,7 +151,7 @@ export default function BuildOnFilecoin() {
       <PageSection backgroundVariant="gray">
         <SectionContent title="Developer resources">
           <CardGridContainer width="6xl">
-            <CardGrid as="ul" variant="mdTwoWide">
+            <CardGrid as="ul" variant="mdTwo">
               {developerResources.map(({ title, description, href, icon }) => (
                 <LinkCard
                   key={title}
@@ -181,7 +181,7 @@ export default function BuildOnFilecoin() {
           </ImageGrid>
 
           <CardGridContainer width="6xl">
-            <CardGrid as="ul" variant="mdTwoWide">
+            <CardGrid as="ul" variant="mdTwo">
               {getInvolvedOptions.map(({ title, description, href, icon }) => (
                 <LinkCard
                   key={title}

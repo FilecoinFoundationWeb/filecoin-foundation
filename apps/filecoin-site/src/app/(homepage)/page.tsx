@@ -93,7 +93,7 @@ export default async function Home() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent centerTitle title="Filecoin by the numbers">
-          <CardGrid as="ul" variant="smThree">
+          <CardGrid as="ul" variant="mdThreeWider">
             {filecoinByTheNumbers.map(({ title, subTitle, description }) => (
               <MetricCard
                 key={title}
@@ -111,7 +111,6 @@ export default async function Home() {
           <SplitSectionContent
             title="A better foundation for the next generation of the web."
             description={[
-              'A better foundation for the next generation of the web.',
               "Filecoin is reshaping how the world stores data. Today, a small handful of corporations control most of the world's data, creating centralized gatekeepers that introduce single points of failure and limit transparency.",
               'Filecoin offers a fundamentally different approach to data storage: distributing data across a decentralized, global network protected by cryptographic proofs, ensuring greater security and resilience.',
               'From cultural archives to scientific research, petabytes of data are already stored on Filecoin. The decentralized model empowers users with true autonomy over their information, building a foundation for a more open, resilient, and user-controlled web.',
@@ -201,7 +200,7 @@ export default async function Home() {
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
         >
-          <CardGrid as="ul" variant="smTwoXlThreeWidest">
+          <CardGrid as="ul" variant="mdTwoLgThreeWide">
             {featuredBlogPosts.map((post: BlogPost) => {
               const {
                 title,
@@ -240,8 +239,14 @@ export default async function Home() {
           title="Join a vibrant community"
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >
-          <CardGridContainer width="4xl">
-            <CardGrid as="ul" variant="mdTwoWide">
+          <ImageGrid variant="oneMdThree">
+            {joinVibrantCommunityImages.map(({ data, alt }) => (
+              <Image key={alt} src={data} alt={alt} />
+            ))}
+          </ImageGrid>
+
+          <CardGridContainer width="6xl">
+            <CardGrid as="ul" variant="mdTwo">
               {communityLinks.map(({ title, href, icon }) => (
                 <LinkCard
                   key={title}
@@ -254,11 +259,6 @@ export default async function Home() {
               ))}
             </CardGrid>
           </CardGridContainer>
-          <ImageGrid variant="oneMdThree">
-            {joinVibrantCommunityImages.map(({ data, alt }) => (
-              <Image key={alt} src={data} alt={alt} />
-            ))}
-          </ImageGrid>
         </SectionContent>
       </PageSection>
     </>

@@ -45,7 +45,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
     <div className="space-y-15">
       <BlogCategoryFilter />
 
-      <CardGrid as="ul" variant="mdTwo">
+      <CardGrid as="ul" variant="mdTwoLgThreeWide">
         {paginatedResults.map((post: BlogPost) => {
           const {
             title,
