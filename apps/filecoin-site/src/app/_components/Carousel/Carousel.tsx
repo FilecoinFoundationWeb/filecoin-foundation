@@ -79,18 +79,7 @@ export function Carousel({
     api?.scrollNext()
   }, [api])
 
-  const handleKeyDown = useCallback(
-    (event: React.KeyboardEvent<HTMLDivElement>) => {
-      if (event.key === 'ArrowLeft') {
-        event.preventDefault()
-        scrollPrev()
-      } else if (event.key === 'ArrowRight') {
-        event.preventDefault()
-        scrollNext()
-      }
-    },
-    [scrollPrev, scrollNext],
-  )
+  const handleKeyDown = createKeyboardHandler(scrollPrev, scrollNext)
 
   useEffect(() => {
     if (!api || !setApi) return
@@ -138,4 +127,16 @@ export function Carousel({
 
 function getCarouselAxis(orientation: 'horizontal' | 'vertical') {
   return orientation === 'horizontal' ? 'x' : 'y'
+}
+
+function createKeyboardHandler(scrollPrev: () => void, scrollNext: () => void) {
+  return function handleKeyDown(event: React.KeyboardEvent<HTMLDivElement>) {
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault()
+      scrollPrev()
+    } else if (event.key === 'ArrowRight') {
+      event.preventDefault()
+      scrollNext()
+    }
+  }
 }
