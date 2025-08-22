@@ -85,9 +85,9 @@ export default async function Home() {
 
       <PageSection backgroundVariant="dark">
         <LogoSection
+          headingTag="h2"
           title="Trusted by industry leaders"
           logos={trustedByLogos}
-          tag="h3"
         />
       </PageSection>
 

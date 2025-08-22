@@ -10,13 +10,13 @@ import { type HeadingProps } from '@/components/Heading'
 import { type LogoItemProps, LogoItem } from './LogoItem'
 
 type LogoSectionProps = {
-  logos: Array<LogoItemProps>
+  headingTag: HeadingProps['tag']
   title?: string
-  tag?: HeadingProps['tag']
+  logos: Array<LogoItemProps>
 }
 
-export function LogoSection({ logos, title, tag = 'h3' }: LogoSectionProps) {
-  const Tag = tag
+export function LogoSection({ headingTag, title, logos }: LogoSectionProps) {
+  const Tag = headingTag
 
   return (
     <section

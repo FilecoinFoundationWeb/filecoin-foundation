@@ -57,6 +57,7 @@ export default function StoreData() {
 
       <PageSection paddingVariant="compact" backgroundVariant="dark">
         <LogoSection
+          headingTag="h2"
           title="Trusted by industry leaders"
           logos={trustedByLogos}
         />

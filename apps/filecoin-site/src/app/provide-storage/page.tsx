@@ -70,8 +70,8 @@ export default function ProvideStorage() {
       <PageSection paddingVariant="none" backgroundVariant="dark">
         <div className="py-24" />
         <LogoSection
+          headingTag="h2"
           title="Join a global network of storage providers"
-          tag="h2"
           logos={storageProvidersLogos}
         />
       </PageSection>
