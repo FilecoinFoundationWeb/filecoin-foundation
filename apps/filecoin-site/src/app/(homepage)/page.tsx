@@ -93,8 +93,7 @@ export default async function Home() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent centerTitle title="Filecoin by the numbers">
-          {/* <CardGrid as="ul" variant="smThree"> */}
-          <div className="grid gap-15 md:grid-cols-3">
+          <CardGrid as="ul" variant="mdThreeWider">
             {filecoinByTheNumbers.map(({ title, subTitle, description }) => (
               <MetricCard
                 key={title}
@@ -103,8 +102,7 @@ export default async function Home() {
                 description={description}
               />
             ))}
-          </div>
-          {/* </CardGrid> */}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
@@ -202,8 +200,7 @@ export default async function Home() {
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
         >
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {/* <CardGrid as="ul" variant="smTwoXlThreeWidest"> */}
+          <CardGrid as="ul" variant="mdTwoLgThreeWide">
             {featuredBlogPosts.map((post: BlogPost) => {
               const {
                 title,
@@ -233,8 +230,7 @@ export default async function Home() {
                 />
               )
             })}
-            {/* </CardGrid> */}
-          </div>
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
@@ -249,8 +245,7 @@ export default async function Home() {
             ))}
           </ImageGrid>
           <CardGridContainer width="6xl">
-            {/* <CardGrid as="ul" variant="mdTwoWide"> */}
-            <div className="grid gap-8 md:grid-cols-2 md:gap-x-15">
+            <CardGrid as="ul" variant="mdTwo">
               {communityLinks.map(({ title, href, icon }) => (
                 <LinkCard
                   key={title}
@@ -261,8 +256,7 @@ export default async function Home() {
                   icon={{ component: icon, variant: 'filled' }}
                 />
               ))}
-              {/* </CardGrid> */}
-            </div>
+            </CardGrid>
           </CardGridContainer>
         </SectionContent>
       </PageSection>

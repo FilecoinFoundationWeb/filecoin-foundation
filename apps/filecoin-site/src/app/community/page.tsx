@@ -61,8 +61,7 @@ export default function BuildOnFilecoin() {
           title="Get involved"
           description="Whether you want to contribute, connect or build, there’s a place for you in the Filecoin community."
         >
-          {/* <CardGrid as="ul" variant="smThree"> */}
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <CardGrid as="ul" variant="mdTwoLgThreeWide">
             {getInvolvedWithCommunity.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -72,8 +71,7 @@ export default function BuildOnFilecoin() {
                 cta={cta}
               />
             ))}
-          </div>
-          {/* </CardGrid> */}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
@@ -88,8 +86,7 @@ export default function BuildOnFilecoin() {
               <Image key={alt} src={data} alt={alt} />
             ))}
           </ImageGrid>
-          {/* <CardGrid as="ul" variant="smThree"> */}
-          <div className="grid gap-8 md:grid-cols-2 md:gap-x-15 lg:grid-cols-3">
+          <CardGrid as="ul" variant="mdTwoLgThree">
             {socialMedia.map(({ title, description, href, icon }) => (
               <LinkCard
                 key={title}
@@ -101,8 +98,7 @@ export default function BuildOnFilecoin() {
                 icon={{ component: icon }}
               />
             ))}
-            {/* </CardGrid> */}
-          </div>
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
@@ -111,8 +107,7 @@ export default function BuildOnFilecoin() {
           title="Ecosystem resources"
           description="Filecoin is open-source and community-driven. Explore groups advancing the protocol and building the tools that power its ecosystem."
         >
-          {/* <CardGrid as="ul" variant="lgTwo"> */}
-          <div className="grid gap-10 lg:grid-cols-2">
+          <CardGrid as="ul" variant="lgTwoWide">
             {ecosystemResources.map(({ title, description, cta, logo }) => (
               <SimpleCardWithLogo
                 key={title}
@@ -122,8 +117,7 @@ export default function BuildOnFilecoin() {
                 logo={logo}
               />
             ))}
-          </div>
-          {/* </CardGrid> */}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 

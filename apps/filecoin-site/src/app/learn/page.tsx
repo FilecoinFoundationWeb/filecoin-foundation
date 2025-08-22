@@ -78,8 +78,7 @@ export default function Learn() {
             </Button>,
           ]}
         >
-          {/* <CardGrid as="ul" variant="smTwoXlFourWide"> */}
-          <div className="grid gap-15 sm:grid-cols-2 xl:grid-cols-4">
+          <CardGrid as="ul" variant="smTwoXlFourWider">
             {whatIsFilecoinUsedFor.map(({ title, description, icon }) => (
               <Card
                 key={title}
@@ -89,8 +88,7 @@ export default function Learn() {
                 icon={icon}
               />
             ))}
-          </div>
-          {/* </CardGrid> */}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
@@ -105,8 +103,7 @@ export default function Learn() {
             </Button>
           }
         >
-          {/* <CardGrid as="ul" variant="smThree"> */}
-          <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-3">
+          <CardGrid as="ul" variant="smTwoXlThreeWide">
             {learnAboutFilecoinProtocol.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -116,8 +113,7 @@ export default function Learn() {
                 cta={cta}
               />
             ))}
-          </div>
-          {/* </CardGrid> */}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 

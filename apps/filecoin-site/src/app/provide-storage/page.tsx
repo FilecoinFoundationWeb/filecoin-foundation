@@ -83,8 +83,7 @@ export default function ProvideStorage() {
         >
           <SectionImage {...graphicsData.provideStorageSection} />
 
-          {/* <CardGrid as="ul" variant="lgThree"> */}
-          <ul className="grid gap-15 sm:grid-cols-2 lg:grid-cols-3">
+          <CardGrid as="ul" variant="smTwoLgThreeWider">
             {filecoinEarningsInsights.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -95,8 +94,7 @@ export default function ProvideStorage() {
                 cta={cta}
               />
             ))}
-          </ul>
-          {/* </CardGrid> */}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
@@ -110,8 +108,7 @@ export default function ProvideStorage() {
             title="Reliable data center environment"
             description="Run your systems in a secure, high-uptime setting with:"
           >
-            {/* <CardGrid as="ul" variant="smTwoLgThreeWider"> */}
-            <ul className="grid gap-15 sm:grid-cols-2 lg:grid-cols-3">
+            <CardGrid as="ul" variant="smTwoLgThreeWider">
               {dataCenterRequirements.map(({ title, description, icon }) => (
                 <Card
                   key={title}
@@ -121,8 +118,7 @@ export default function ProvideStorage() {
                   icon={icon}
                 />
               ))}
-            </ul>
-            {/* </CardGrid> */}
+            </CardGrid>
           </SectionSubContent>
 
           <SectionDivider />
@@ -132,8 +128,7 @@ export default function ProvideStorage() {
             title="Core infrastructure setup"
             description="Ensure your system can deliver high-performance, reliable storage."
           >
-            {/* <CardGrid as="ul" variant="lgTwoWide"> */}
-            <ul className="grid gap-15 md:grid-cols-2">
+            <CardGrid as="ul" variant="mdTwoWider">
               {coreInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
                   <Heading tag="h4" variant="card-heading">
@@ -146,8 +141,7 @@ export default function ProvideStorage() {
                   </ul>
                 </li>
               ))}
-            </ul>
-            {/* </CardGrid> */}
+            </CardGrid>
           </SectionSubContent>
 
           <SectionDivider />
@@ -157,8 +151,7 @@ export default function ProvideStorage() {
             title="Specialized hardware"
             description="Filecoin's sealing and storage system require purpose-build hardware."
           >
-            {/* <CardGrid as="ul" variant="lgTwoWide"> */}
-            <ul className="grid gap-15 md:grid-cols-2">
+            <CardGrid as="ul" variant="mdTwoWider">
               {specializedInfrastructureSpecs.map(({ title, list }) => (
                 <li key={title} className="space-y-3">
                   <Heading tag="h4" variant="card-heading">
@@ -171,8 +164,7 @@ export default function ProvideStorage() {
                   </ul>
                 </li>
               ))}
-            </ul>
-            {/* </CardGrid> */}
+            </CardGrid>
           </SectionSubContent>
         </SectionContent>
       </PageSection>

@@ -7,18 +7,15 @@ type CardGridProps = {
 }
 
 const variants = {
-  mdTwo: 'gap-x-8 gap-y-15 md:grid-cols-2', // y
-  mdTwoWide: 'gap-x-15 gap-y-8 md:grid-cols-2', // y
-  lgTwo: 'gap-10 lg:grid-cols-2', // y
-  lgTwoXlThree: 'gap-6 sm:gap-10 lg:grid-cols-2 xl:grid-cols-3', // y
-  lgTwoWide: 'gap-15 lg:grid-cols-2', // y
-  lgThree: 'gap-8 lg:gap-15 lg:grid-cols-3', // y
-  smThree: 'gap-10 md:grid-cols-3', // y
-  // smTwoLgThreeTight: 'gap-x-8 gap-y-15 md:grid-cols-2 lg:grid-cols-3',
-  smTwoLgThree: 'gap-10 md:grid-cols-2 lg:grid-cols-3', // y
-  smTwoLgThreeWider: 'gap-12 md:grid-cols-2 md:gap-15 lg:grid-cols-3', // y
-  smTwoXlThreeWidest: 'gap-x-15 gap-y-20 md:grid-cols-2 xl:grid-cols-3', //y
-  smTwoXlFourWide: 'gap-15 md:grid-cols-2 xl:grid-cols-4', // y
+  smTwoXlThreeWide: 'grid gap-10 sm:grid-cols-2 xl:grid-cols-3',
+  smTwoXlFourWider: 'grid gap-15 sm:grid-cols-2 xl:grid-cols-4',
+  smTwoLgThreeWider: 'grid gap-15 sm:grid-cols-2 lg:grid-cols-3',
+  mdTwo: 'grid gap-8 md:grid-cols-2 md:gap-x-15',
+  lgTwoWide: 'grid gap-10 lg:grid-cols-2',
+  mdTwoWider: 'grid gap-15 md:grid-cols-2',
+  // mdTwoLgThree: 'grid gap-8 md:grid-cols-2 md:gap-x-15 lg:grid-cols-3',
+  mdTwoLgThreeWide: 'grid gap-10 md:grid-cols-2 lg:grid-cols-3',
+  mdThreeWider: 'grid gap-15 md:grid-cols-3', // 1
 }
 
 export function CardGrid({ as: Tag, children, variant }: CardGridProps) {
