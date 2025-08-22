@@ -6,6 +6,8 @@ import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
+import { createMetadata } from '@/utils/createMetadata'
+
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -80,3 +82,9 @@ export default function CaseStudies() {
     </>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: CASE_STUDIES_SEO.title },
+  description: CASE_STUDIES_SEO.description,
+  path: PATHS.CASE_STUDIES.path,
+})
