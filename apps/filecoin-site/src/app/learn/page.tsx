@@ -34,7 +34,7 @@ export default function Learn() {
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="The authenticity layer of a more resilient internet"
-            description="Filecoin is the world’s largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's most important information, keeping it free from centralized control."
+            description="Filecoin is the world's largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's most important information, keeping it free from centralized control."
             cta={
               <Button href={FILECOIN_DOCS_URL} variant="primary">
                 Explore documentation
@@ -44,6 +44,7 @@ export default function Learn() {
         </PageSection>
 
         <Image
+          priority
           src={graphicsData.earthAtNight.data}
           alt={graphicsData.earthAtNight.alt}
           className="absolute top-0 right-0 -z-10 h-[110vh] translate-x-1/3 rotate-[15deg] transform object-contain object-right-top sm:translate-x-0 sm:rotate-0"
@@ -122,8 +123,7 @@ export default function Learn() {
           title="Be a part of a more resilient internet"
           description="Filecoin is more than storage; it's an innovative, open ecosystem built to preserve humanity's most important information."
         >
-          {/* <CardGrid as="ul" variant="smThree"> */}
-          <div className="grid gap-8 md:gap-x-15 lg:grid-cols-3">
+          <CardGrid as="ul" variant="lgThree">
             {resilientInternetCta.map(({ title, href, icon }) => (
               <LinkCard
                 key={title}
@@ -134,8 +134,7 @@ export default function Learn() {
                 icon={{ component: icon, variant: 'filled' }}
               />
             ))}
-          </div>
-          {/* </CardGrid> */}
+          </CardGrid>
         </SectionContent>
       </PageSection>
     </>

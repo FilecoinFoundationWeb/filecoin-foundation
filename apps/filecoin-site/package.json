@@ -2,6 +2,15 @@
   "name": "filecoin-site",
   "version": "0.1.0",
   "private": true,
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11",
+    "not chrome < 85",
+    "not safari < 14",
+    "not firefox < 85"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "npm run generate-rss && next build",

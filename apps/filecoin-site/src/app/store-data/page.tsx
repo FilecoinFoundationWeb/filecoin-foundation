@@ -49,6 +49,7 @@ export default function StoreData() {
         </PageSection>
 
         <Image
+          priority
           src={graphicsData.starsSpinning.data}
           alt={graphicsData.starsSpinning.alt}
           className="absolute right-0 bottom-0 -z-10 h-full object-cover object-bottom-right"
@@ -57,6 +58,7 @@ export default function StoreData() {
 
       <PageSection paddingVariant="compact" backgroundVariant="dark">
         <LogoSection
+          headingTag="h2"
           title="Trusted by industry leaders"
           logos={trustedByLogos}
         />

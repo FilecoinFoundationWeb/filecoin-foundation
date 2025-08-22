@@ -2,16 +2,14 @@ import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
 import type { SimpleCardData } from '@/components/SimpleCard'
 
-const CTA_TEXT = 'Learn more'
-
-export const filecoinEarningsInsights: Array<SimpleCardData> = [
+export const filecoinEarningsInsights = [
   {
     title: 'Earn Filecoin and Fiat',
     description:
       "Providers are compensated for reliable storage via the network's reward system.",
     cta: {
       href: FILECOIN_DOCS_URLS.storageProviderBlockRewards,
-      text: CTA_TEXT,
+      text: 'See how rewards work',
     },
   },
   {
@@ -20,7 +18,7 @@ export const filecoinEarningsInsights: Array<SimpleCardData> = [
       "Growing your storage capacity unlocks greater block rewards, reflecting your increased contribution to the network's foundation.",
     cta: {
       href: FILECOIN_DOCS_URLS.storageProviderBlockRewardsImpact,
-      text: CTA_TEXT,
+      text: 'Learn how storage boosts rewards',
     },
   },
   {
@@ -29,7 +27,7 @@ export const filecoinEarningsInsights: Array<SimpleCardData> = [
       'Historically, some storage providers have recouped their costs within 30 months, depending on uptime and operational efficiency.',
     cta: {
       href: FILECOIN_DOCS_URLS.storageProviderReturnOnInvestment,
-      text: CTA_TEXT,
+      text: 'Understand provider ROI',
     },
   },
-]
+] as const satisfies Array<SimpleCardData>

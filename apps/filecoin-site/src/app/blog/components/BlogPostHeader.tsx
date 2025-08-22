@@ -40,6 +40,7 @@ export function BlogPostHeader({
           fill
           priority
           quality={100}
+          fetchPriority="high"
           src={image || graphicsData.fallback.data.src}
           alt=""
           className="object-cover"
