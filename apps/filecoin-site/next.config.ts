@@ -10,6 +10,9 @@ import {
 const nextConfig: NextConfig = {
   outputFileTracingIncludes,
   outputFileTracingExcludes,
+  images: {
+    qualities: [75, 85, 100],
+  },
   webpack: (config) => {
     config.module.rules.push(...webpackRules)
     return config
