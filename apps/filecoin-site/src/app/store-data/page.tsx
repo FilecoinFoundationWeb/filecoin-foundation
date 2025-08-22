@@ -86,8 +86,7 @@ export default function StoreData() {
           title="Store on Filecoin"
           description="Find the perfect storage solution for your data on Filecoin."
         >
-          {/* <CardGrid as="ul" variant="lgTwoXlThree"> */}
-          <ul className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+          <CardGrid as="ul" variant="mdTwoLgThreeWide">
             {storageProviders
               .toSorted((a, b) => a.name.localeCompare(b.name))
               .map(({ name, description, bestFor, keyFeatures, url, logo }) => (
@@ -101,8 +100,7 @@ export default function StoreData() {
                   logo={logo}
                 />
               ))}
-          </ul>
-          {/* </CardGrid> */}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
