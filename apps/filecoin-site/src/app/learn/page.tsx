@@ -44,6 +44,7 @@ export default function Learn() {
         </PageSection>
 
         <Image
+          priority
           src={graphicsData.earthAtNight.data}
           alt={graphicsData.earthAtNight.alt}
           className="absolute top-0 right-0 -z-10 h-[110vh] translate-x-1/3 rotate-[15deg] transform object-contain object-right-top sm:translate-x-0 sm:rotate-0"
