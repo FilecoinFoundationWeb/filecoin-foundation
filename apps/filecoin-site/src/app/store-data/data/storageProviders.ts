@@ -26,16 +26,17 @@ type BestForType =
 
 export const storageProviders = [
   {
-    name: 'Storacha',
-    description: 'High-speed hot storage for fast data retrieval.',
-    bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
+    name: 'Akave Cloud',
+    description:
+      'Enterprise-grade, hot storage designed for AI, data-intensive workloads, and on-chain data lakes.',
+    bestFor: ['Enterprises', 'AI/ML developers'],
     keyFeatures: [
       'S3-compatible API',
       'Client-side encryption',
       'Access control',
     ],
-    url: 'https://storacha.network/',
-    logo: StorachaMiniatureLogo,
+    url: 'https://www.akave.ai/',
+    logo: AkaveMiniatureLogo,
   },
   {
     name: 'CIDgravity',
@@ -48,19 +49,6 @@ export const storageProviders = [
     ],
     url: 'https://www.cidgravity.com/',
     logo: CIDgravityMiniatureLogo,
-  },
-  {
-    name: 'Akave Cloud',
-    description:
-      'Enterprise-grade, hot storage designed for AI, data-intensive workloads, and on-chain data lakes.',
-    bestFor: ['Enterprises', 'AI/ML developers'],
-    keyFeatures: [
-      'S3-compatible API',
-      'Client-side encryption',
-      'Access control',
-    ],
-    url: 'https://www.akave.ai/',
-    logo: AkaveMiniatureLogo,
   },
   {
     name: 'Lighthouse',
@@ -97,5 +85,17 @@ export const storageProviders = [
     ],
     url: 'https://singularity.storage/',
     logo: SingularityMiniatureLogo,
+  },
+  {
+    name: 'Storacha',
+    description: 'High-speed hot storage for fast data retrieval.',
+    bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
+    keyFeatures: [
+      'S3-compatible API',
+      'Client-side encryption',
+      'Access control',
+    ],
+    url: 'https://storacha.network/',
+    logo: StorachaMiniatureLogo,
   },
 ] as const satisfies Array<StorageProvider>
