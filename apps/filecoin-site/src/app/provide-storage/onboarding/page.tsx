@@ -1,8 +1,13 @@
+import { PATHS } from '@/constants/paths'
+
+import { createMetadata } from '@/utils/createMetadata'
+
 import { Heading } from '@/components/Heading'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
 import { ProvideStorageForm } from './components/ProvideStorageForm'
+import { PROVIDE_STORAGE_ONBOARDING_SEO } from './constants/seo'
 
 export default function ProvideStorageFormPage() {
   return (
@@ -26,3 +31,9 @@ export default function ProvideStorageFormPage() {
     </>
   )
 }
+
+export const metadata = createMetadata({
+  title: { absolute: PROVIDE_STORAGE_ONBOARDING_SEO.title },
+  description: PROVIDE_STORAGE_ONBOARDING_SEO.description,
+  path: PATHS.PROVIDE_STORAGE_ONBOARDING.path,
+})
