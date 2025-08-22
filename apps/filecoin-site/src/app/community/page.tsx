@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import clsx from 'clsx'
-// import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
 
@@ -54,7 +53,7 @@ export default function BuildOnFilecoin() {
           />
         </PageSection>
 
-        <graphicsData.communityHero.data className="absolute -top-[30vw] left-0 -z-10 w-[130vw]" />
+        <graphicsData.communityHero.data className="absolute -top-[25vw] left-[8vw] -z-10 w-[133vw]" />
       </div>
 
       <PageSection backgroundVariant="dark">

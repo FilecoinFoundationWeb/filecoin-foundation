@@ -1,5 +1,3 @@
-import clsx from 'clsx'
-
 import { Container } from '@/components/Container'
 import { Section, type SectionProps } from '@/components/Section'
 
@@ -25,7 +23,7 @@ export function PageSection({
   return (
     <Section backgroundVariant={backgroundVariant}>
       <Container>
-        <div className={clsx(paddingVariants[paddingVariant])}>{children}</div>
+        <div className={paddingVariants[paddingVariant]}>{children}</div>
       </Container>
     </Section>
   )
