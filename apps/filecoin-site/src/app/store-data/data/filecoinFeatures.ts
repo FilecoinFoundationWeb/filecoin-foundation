@@ -1,12 +1,12 @@
 import {
-  CertificateIcon,
-  LockKeyIcon,
   ChartBarIcon,
+  LockKeyIcon,
+  ShieldCheckIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
 import type { CardData } from '@/components/Card'
 
-export const filecoinFeatures: Array<CardData> = [
+export const filecoinFeatures = [
   {
     title: 'Data security',
     description:
@@ -17,7 +17,7 @@ export const filecoinFeatures: Array<CardData> = [
     title: 'Outage proof resilience',
     description:
       'Data is distributed across independent data centers worldwide. If a data center goes offline, information remains available and verifiable.',
-    icon: CertificateIcon,
+    icon: ShieldCheckIcon,
   },
   {
     title: 'Scalable for big data',
@@ -25,4 +25,4 @@ export const filecoinFeatures: Array<CardData> = [
       "Filecoin's decentralized infrastructure supports exabyte-scale datasets and long-term archival, with built-in redundancy and global distribution.",
     icon: ChartBarIcon,
   },
-]
+] as const satisfies Array<CardData>
