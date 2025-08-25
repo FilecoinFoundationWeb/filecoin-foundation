@@ -1,4 +1,3 @@
-import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
 import AethirLogo from '@/assets/logos/aethir-icon-logo.svg'
 import EasierDataInitiativeLogo from '@/assets/logos/easier-data-initiative-logo.png'
@@ -9,6 +8,8 @@ import SetiInstituteLogo from '@/assets/logos/seti-institute-logo.svg'
 import SmithsonianLogo from '@/assets/logos/smithsonian-icon-logo.png'
 import SolanaLogo from '@/assets/logos/solana-icon-logo.png'
 import StarlingLabLogo from '@/assets/logos/starling-lab-icon-logo.png'
+
+import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
 const CTA_TEXT = 'Read case study'
 

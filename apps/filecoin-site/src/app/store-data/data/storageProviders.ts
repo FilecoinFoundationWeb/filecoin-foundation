@@ -1,4 +1,3 @@
-import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 
 import AkaveMiniatureLogo from '@/assets/miniatures/akave-miniature.png'
 import CIDgravityMiniatureLogo from '@/assets/miniatures/cid-gravity-miniature.png'
@@ -6,6 +5,8 @@ import LighthouseMiniatureLogo from '@/assets/miniatures/lighthouse-miniature.pn
 import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.png'
 import SingularityMiniatureLogo from '@/assets/miniatures/singularity-miniature.png'
 import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.png'
+
+import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 
 export type StorageProvider = Pick<
   StorageProviderCardProps,

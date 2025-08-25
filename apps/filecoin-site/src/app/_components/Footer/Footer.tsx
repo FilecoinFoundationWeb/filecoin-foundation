@@ -3,6 +3,8 @@ import { Social } from '@filecoin-foundation/ui/Social'
 
 import { socialLinksWithIcons } from '@/constants/socialConfig'
 
+import Logo from '@/assets/logos/filecoin-logo-full.svg'
+
 import { Container } from '@/components/Container'
 import { Section } from '@/components/Section'
 import { SectionDivider } from '@/components/SectionDivider'
@@ -11,7 +13,6 @@ import { LegalSection } from './LegalSection'
 import { NavigationItems } from './NavigationItems'
 import { NewsletterForm } from './NewsletterForm'
 
-import Logo from '@/assets/logos/filecoin-logo-full.svg'
 
 export function Footer() {
   return (
