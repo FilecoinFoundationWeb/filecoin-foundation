@@ -1,5 +1,5 @@
 export const CASE_STUDIES_SEO = {
-  title: 'Case Studies | Filecoin Decentralized Storage Platform',
+  title: 'Filecoin Case Studies | Real-World Decentralized Storage Success',
   description:
-    'Discover how leading institutions like MIT, Smithsonian, Internet Archive, and others use Filecoin to preserve critical datasets. Learn about real-world applications of decentralized storage for scientific research, cultural heritage, and blockchain data.',
+    'Explore Filecoin case studies showcasing how organizations use decentralized storage for scalability, security, and innovation across industries.',
 } as const

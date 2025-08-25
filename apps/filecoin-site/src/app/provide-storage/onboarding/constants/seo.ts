@@ -1,6 +1,5 @@
 export const PROVIDE_STORAGE_ONBOARDING_SEO = {
-  title:
-    'Become a Filecoin Storage Provider | Earn Rewards in Decentralized Network',
+  title: 'Become a Filecoin Storage Provider | Onboarding Guide',
   description:
-    'Join the Filecoin network as a storage provider to power global decentralized infrastructure. Use your data center to earn FIL rewards, diversify revenue, and scale with demand while preserving vital data in a permissionless ecosystem.',
+    'Start your Filecoin journey—learn how to become a storage provider with step-by-step onboarding, support resources, and community guidance.',
 } as const
