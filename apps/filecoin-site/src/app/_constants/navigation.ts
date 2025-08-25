@@ -22,38 +22,9 @@ const { social: socialLinks, github, securityBugBounty } = FILECOIN_URLS
 
 const { events, governance, grants, orbit } = FILECOIN_FOUNDATION_URLS
 
-const social: Array<NavItem> = [
-  {
-    label: socialLinks.slack.label,
-    href: socialLinks.slack.href,
-  },
-  {
-    label: socialLinks.bluesky.label,
-    href: socialLinks.bluesky.href,
-  },
-  {
-    label: socialLinks.twitter.label,
-    href: socialLinks.twitter.href,
-  },
-  {
-    label: socialLinks.telegram.label,
-    href: socialLinks.telegram.href,
-  },
-  {
-    label: socialLinks.discord.label,
-    href: socialLinks.discord.href,
-  },
-]
-
-const resources: Array<NavItem> = [
-  { label: 'Documentation', href: FILECOIN_DOCS_URL },
-  { label: 'Cookbook', href: FILECOIN_DOCS_URLS.builderCookbook },
-  { label: 'GitHub', href: github },
-  { label: 'Grants', href: grants },
-  { label: 'Bug Bounty', href: securityBugBounty },
-  { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
-  { label: 'Network Status', href: 'https://status.filecoin.io/' },
-  { label: 'Network Health', href: 'https://dashboard.starboard.ventures/' },
+export const legalLinks: Array<NavItem> = [
+  { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
+  { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
 ]
 
 export const navigationBis: Array<NavItem | ExpandedNavItem> = [
@@ -212,13 +183,43 @@ const navigation: Array<NavItem> = [
   { label: PATHS.BLOG.label, href: PATHS.BLOG.path },
 ]
 
-export const legalLinks: Array<NavItem> = [
-  { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
-  { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
+const resources: Array<NavItem> = [
+  { label: 'Documentation', href: FILECOIN_DOCS_URL },
+  { label: 'Cookbook', href: FILECOIN_DOCS_URLS.builderCookbook },
+  { label: 'GitHub', href: github },
+  { label: 'Grants', href: grants },
+  { label: 'Bug Bounty', href: securityBugBounty },
+  { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
+  { label: 'Network Status', href: 'https://status.filecoin.io/' },
+  { label: 'Network Health', href: 'https://dashboard.starboard.ventures/' },
+]
+
+const social: Array<NavItem> = [
+  {
+    label: socialLinks.slack.label,
+    href: socialLinks.slack.href,
+  },
+  {
+    label: socialLinks.bluesky.label,
+    href: socialLinks.bluesky.href,
+  },
+  {
+    label: socialLinks.twitter.label,
+    href: socialLinks.twitter.href,
+  },
+  {
+    label: socialLinks.telegram.label,
+    href: socialLinks.telegram.href,
+  },
+  {
+    label: socialLinks.discord.label,
+    href: socialLinks.discord.href,
+  },
 ]
 
 export const footerNavigationItems: Array<FooterNavigationItem> = [
   { title: 'Navigation', items: navigation },
   { title: 'Resources', items: resources },
   { title: 'Reach out', items: social },
+  // { title: 'Community', items: communityLinks },
 ]
