@@ -1,7 +1,4 @@
-import {
-  createPathWithCustomLabel,
-  createPathConfig,
-} from '@/utils/createPathConfig'
+import { createPathConfig } from '@/utils/createPathConfig'
 
 export type StaticPath =
   | '/'
