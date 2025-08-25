@@ -14,23 +14,25 @@ export function Footer() {
   return (
     <Section as="footer" backgroundVariant="dark">
       <Container>
-        <div className="flex flex-col gap-15 pt-20 pb-15 lg:gap-10 xl:flex-row xl:gap-40">
-          <div className="self-start xl:self-auto">
-            <LogoLink
-              logo={Logo}
-              height={32}
-              color="text-[var(--color-text-base)]"
-            />
-          </div>
+        <div className="flex flex-col gap-20 pt-20 pb-15 xl:flex-row xl:justify-between xl:gap-40">
+          <div className="flex gap-10 xl:flex-1">
+            <div className="flex max-w-md flex-1 flex-col gap-15">
+              <LogoLink
+                logo={Logo}
+                height={32}
+                color="text-[var(--color-text-base)]"
+              />
 
+              <NewsletterForm />
+
+              <div className="flex gap-8">Social Links</div>
+            </div>
+          </div>
           <nav
             aria-label="Footer navigation"
-            className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4"
+            className="grid gap-10 sm:grid-cols-2 md:grid-cols-4"
           >
             <NavigationItems />
-            <div className="col-span-full sm:col-start-2 lg:col-span-8 lg:col-start-4">
-              <NewsletterForm />
-            </div>
           </nav>
         </div>
       </Container>
