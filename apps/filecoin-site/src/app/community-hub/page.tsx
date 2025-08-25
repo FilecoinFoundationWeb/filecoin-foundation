@@ -10,7 +10,6 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
-import { CardGridContainer } from '@/components/CardGridContainer'
 import { ImageGrid } from '@/components/ImageGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
