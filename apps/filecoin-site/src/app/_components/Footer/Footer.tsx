@@ -1,4 +1,7 @@
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
+import { Social } from '@filecoin-foundation/ui/Social'
+
+import { socialLinksWithIcons } from '@/constants/socialConfig'
 
 import { Container } from '@/components/Container'
 import { Section } from '@/components/Section'
@@ -22,10 +25,8 @@ export function Footer() {
                 height={32}
                 color="text-[var(--color-text-base)]"
               />
-
               <NewsletterForm />
-
-              <div className="flex gap-8">Social Links</div>
+              <Social linksWithIcons={socialLinksWithIcons} />
             </div>
           </div>
           <nav
