@@ -1,6 +1,7 @@
 import { PATHS, WHAT_IS_FILECOIN_PATH } from './paths'
 import {
   FILECOIN_DOCS_URL,
+  FILECOIN_DOCS_URLS,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
 } from './siteMetadata'
@@ -19,8 +20,7 @@ export type ExpandedNavItem = {
 
 const { social: socialLinks, github, securityBugBounty } = FILECOIN_URLS
 
-const { security, ecosystemExplorer, grants, events, orbit, governance } =
-  FILECOIN_FOUNDATION_URLS
+const { events, governance, grants, orbit } = FILECOIN_FOUNDATION_URLS
 
 const social: Array<NavItem> = [
   {
@@ -46,11 +46,14 @@ const social: Array<NavItem> = [
 ]
 
 const resources: Array<NavItem> = [
-  { label: 'Docs', href: FILECOIN_DOCS_URL },
+  { label: 'Documentation', href: FILECOIN_DOCS_URL },
+  { label: 'Cookbook', href: FILECOIN_DOCS_URLS.builderCookbook },
   { label: 'GitHub', href: github },
-  { label: 'Security', href: security },
-  { label: 'Ecosystem Explorer', href: ecosystemExplorer },
+  { label: 'Grants', href: grants },
+  { label: 'Bug Bounty', href: securityBugBounty },
   { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
+  { label: 'Network Status', href: 'https://status.filecoin.io/' },
+  { label: 'Network Health', href: 'https://dashboard.starboard.ventures/' },
 ]
 
 export const navigationBis: Array<NavItem | ExpandedNavItem> = [
