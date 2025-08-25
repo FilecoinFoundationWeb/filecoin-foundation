@@ -1,4 +1,4 @@
-import { PATHS, WHAT_IS_FILECOIN_PATH } from './paths'
+import { PATHS } from './paths'
 import {
   FILECOIN_DOCS_URL,
   FILECOIN_DOCS_URLS,
@@ -47,9 +47,9 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
         title: 'Understand Filecoin',
         links: [
           {
-            label: WHAT_IS_FILECOIN_PATH.label,
+            label: PATHS.LEARN.label,
             description: 'Understand what Filecoin is and how it works',
-            href: WHAT_IS_FILECOIN_PATH.path,
+            href: PATHS.LEARN.path,
           },
           {
             label: 'Case Studies',
@@ -186,7 +186,7 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
 ]
 
 const navigation: Array<NavItem> = [
-  { label: WHAT_IS_FILECOIN_PATH.label, href: WHAT_IS_FILECOIN_PATH.path },
+  { label: PATHS.LEARN.label, href: PATHS.LEARN.path },
   { label: PATHS.CASE_STUDIES.label, href: PATHS.CASE_STUDIES.path },
   { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
   { label: PATHS.PROVIDE_STORAGE.label, href: PATHS.PROVIDE_STORAGE.path },

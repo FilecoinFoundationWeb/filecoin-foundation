@@ -52,7 +52,3 @@ export const PATHS = {
 } as const
 
 export const BLOG_RSS_PATH = `${PATHS.BLOG.path}/rss.xml`
-export const WHAT_IS_FILECOIN_PATH = createPathWithCustomLabel(
-  'LEARN',
-  'What is Filecoin?',
-)
