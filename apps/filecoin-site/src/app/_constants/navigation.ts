@@ -1,4 +1,4 @@
-import { PATHS, WHAT_IS_FILECOIN_PATH } from './paths'
+import { PATHS } from './paths'
 import {
   FILECOIN_DOCS_URL,
   FILECOIN_DOCS_URLS,
@@ -29,6 +29,7 @@ const blockExplorersLinks: Array<NavItem> = [
 ]
 
 const communityLinks: Array<NavItem> = [
+  { label: PATHS.COMMUNITY_HUB.label, href: PATHS.COMMUNITY_HUB.path },
   { label: 'Events', href: events },
   { label: 'Orbit', href: orbit },
   { label: 'FIPs & Governance', href: governance },
@@ -47,9 +48,9 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
         title: 'Understand Filecoin',
         links: [
           {
-            label: WHAT_IS_FILECOIN_PATH.label,
+            label: PATHS.LEARN.label,
             description: 'Understand what Filecoin is and how it works',
-            href: WHAT_IS_FILECOIN_PATH.path,
+            href: PATHS.LEARN.path,
           },
           {
             label: 'Case Studies',
@@ -159,9 +160,9 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
         title: 'Get involved',
         links: [
           {
-            label: 'Community Hub',
+            label: PATHS.COMMUNITY_HUB.label,
             description: 'Explore ways to contribute to the ecosystem',
-            href: PATHS.COMMUNITY.path,
+            href: PATHS.COMMUNITY_HUB.path,
           },
           {
             label: 'Events',
@@ -186,12 +187,11 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
 ]
 
 const navigation: Array<NavItem> = [
-  { label: WHAT_IS_FILECOIN_PATH.label, href: WHAT_IS_FILECOIN_PATH.path },
+  { label: PATHS.LEARN.label, href: PATHS.LEARN.path },
   { label: PATHS.CASE_STUDIES.label, href: PATHS.CASE_STUDIES.path },
   { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
   { label: PATHS.PROVIDE_STORAGE.label, href: PATHS.PROVIDE_STORAGE.path },
   { label: PATHS.BUILD_ON_FILECOIN.label, href: PATHS.BUILD_ON_FILECOIN.path },
-  { label: 'Comunity Hub', href: PATHS.COMMUNITY.path },
   { label: PATHS.BLOG.label, href: PATHS.BLOG.path },
 ]
 

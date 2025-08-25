@@ -46,13 +46,3 @@ export function createPathConfig(
     label,
   } as const
 }
-
-export function createPathWithCustomLabel<T extends keyof typeof PATHS>(
-  pathKey: T,
-  customLabel: string,
-): PathWithCustomLabel {
-  return {
-    path: PATHS[pathKey].path,
-    label: customLabel,
-  }
-}

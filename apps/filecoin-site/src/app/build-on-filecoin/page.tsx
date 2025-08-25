@@ -25,7 +25,7 @@ import { SimpleCard } from '@/components/SimpleCard'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
-import { getInvolvedOptions } from '../community/data/getInvolvedOptions'
+import { getInvolvedOptions } from '../community-hub/data/getInvolvedOptions'
 
 import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
 import { builtOnFilecoin } from './data/builtOnFilecoin'

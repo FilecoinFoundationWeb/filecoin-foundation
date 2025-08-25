@@ -23,18 +23,18 @@ export function LogoItem({
   )
 
   return (
-    <li className="group flex items-center">
+    <>
       {href ? (
         <a
           href={href}
           aria-label={`Visit ${alt} website`}
-          className="focus:brand-outline"
+          className="focus:brand-outline group"
         >
           {logoElement}
         </a>
       ) : (
         logoElement
       )}
-    </li>
+    </>
   )
 }

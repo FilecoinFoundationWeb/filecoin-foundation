@@ -1,14 +1,11 @@
-import {
-  createPathWithCustomLabel,
-  createPathConfig,
-} from '@/utils/createPathConfig'
+import { createPathConfig } from '@/utils/createPathConfig'
 
 export type StaticPath =
   | '/'
   | '/blog'
   | '/build-on-filecoin'
   | '/case-studies'
-  | '/community'
+  | '/community-hub'
   | '/learn'
   | '/provide-storage'
   | '/provide-storage/onboarding'
@@ -37,7 +34,7 @@ export const PATHS = {
     'Build on Filecoin',
   ),
   CASE_STUDIES: createPathConfig('/case-studies', 'Case Studies'),
-  COMMUNITY: createPathConfig('/community', 'Community Hub'),
+  COMMUNITY_HUB: createPathConfig('/community-hub', 'Community Hub'),
   HOME: createPathConfig('/', 'Home'),
 
   LEARN: createPathConfig('/learn', 'Learn'),
@@ -52,7 +49,3 @@ export const PATHS = {
 } as const
 
 export const BLOG_RSS_PATH = `${PATHS.BLOG.path}/rss.xml`
-export const WHAT_IS_FILECOIN_PATH = createPathWithCustomLabel(
-  'LEARN',
-  'What is Filecoin?',
-)

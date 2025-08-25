@@ -1,14 +1,14 @@
-import { PATHS, WHAT_IS_FILECOIN_PATH } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 
 import type { SectionProps } from '../Section'
 
 export const NAV_LINKS = [
-  WHAT_IS_FILECOIN_PATH,
+  PATHS.LEARN,
   PATHS.CASE_STUDIES,
   PATHS.STORE_DATA,
   PATHS.PROVIDE_STORAGE,
   PATHS.BUILD_ON_FILECOIN,
-  PATHS.COMMUNITY,
+  PATHS.COMMUNITY_HUB,
   PATHS.BLOG,
 ] as const
 
