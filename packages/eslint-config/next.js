@@ -83,12 +83,12 @@ export const config = [
             },
             { pattern: '@/content/**', group: 'internal', position: 'before' },
             { pattern: '@/data/**', group: 'internal', position: 'before' },
+            { pattern: '@/assets/**', group: 'internal', position: 'before' },
             { pattern: '@/utils/**', group: 'internal', position: 'before' },
             { pattern: '@/schemas/**', group: 'internal', position: 'before' },
             { pattern: '@/actions/**', group: 'internal', position: 'before' },
             { pattern: '@/services/**', group: 'internal', position: 'before' },
             { pattern: '@/hooks/**', group: 'internal', position: 'before' },
-            { pattern: '@/assets/**', group: 'internal', position: 'before' },
             {
               pattern: '@/components/**',
               group: 'internal',
