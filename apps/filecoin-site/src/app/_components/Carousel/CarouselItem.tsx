@@ -4,13 +4,13 @@ import { clsx } from 'clsx'
 
 import { useCarousel } from './Carousel'
 
-type CarouselItemProps = React.ComponentProps<'div'>
+type CarouselItemProps = React.ComponentProps<'li'>
 
 export function CarouselItem({ className, ...props }: CarouselItemProps) {
   const { orientation } = useCarousel()
 
   return (
-    <div
+    <li
       role="group"
       aria-roledescription="slide"
       data-slot="carousel-item"
