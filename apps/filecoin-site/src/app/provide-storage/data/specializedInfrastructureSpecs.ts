@@ -3,7 +3,7 @@ type SpecializedInfrastructureSpec = {
   list: string[]
 }
 
-export const specializedInfrastructureSpecs: SpecializedInfrastructureSpec[] = [
+export const specializedInfrastructureSpecs = [
   {
     title: 'Sealing Node (GPU-enabled)',
     list: [
@@ -22,4 +22,4 @@ export const specializedInfrastructureSpecs: SpecializedInfrastructureSpec[] = [
       'NIC: 10 Gbit/s',
     ],
   },
-] as const
+] as const satisfies Array<SpecializedInfrastructureSpec>

@@ -7,7 +7,7 @@ import {
 
 import type { CardData } from '@/components/Card'
 
-export const whatIsFilecoinUsedFor: Array<CardData> = [
+export const whatIsFilecoinUsedFor = [
   {
     title: 'Web3 apps & AI datasets',
     description:
@@ -31,4 +31,4 @@ export const whatIsFilecoinUsedFor: Array<CardData> = [
       'Enabling resilient access to public research and large-scale scientific data.',
     icon: AtomIcon,
   },
-]
+] as const satisfies Array<CardData>

@@ -6,7 +6,7 @@ export type TutorialsAndGuides = SimpleCardData & {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
 }
 
-export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
+export const tutorialsAndGuides = [
   {
     title: 'Understand Filecoin basics',
     description:
@@ -87,4 +87,4 @@ export const tutorialsAndGuides: Array<TutorialsAndGuides> = [
       text: 'Explore advanced examples',
     },
   },
-]
+] as const satisfies Array<TutorialsAndGuides>

@@ -6,7 +6,7 @@ import filecoinOrbitCommunity from '@/assets/images/filecoin-orbit-community.web
 import keynoteSpeaker from '@/assets/images/keynote-speaker.webp'
 import speakersReceivingCertificates from '@/assets/images/speakers-receiving-certificates.webp'
 
-export const communityConnectionImages: Array<StaticImageProps> = [
+export const communityConnectionImages = [
   {
     data: keynoteSpeaker,
     alt: 'A man giving a keynote presentation on stage at a tech conference, with a projected newspaper slide and a colorful event banner in the background.',
@@ -27,4 +27,4 @@ export const communityConnectionImages: Array<StaticImageProps> = [
     data: speakersReceivingCertificates,
     alt: 'Five speakers standing on stage holding certificates of appreciation during a tech conference, with a “Speakers Appreciation” sign projected behind them.',
   },
-]
+] as const satisfies Array<StaticImageProps>

@@ -1,6 +1,6 @@
 import type { MetricCardProps } from '../components/MetricCard'
 
-export const filecoinByTheNumbers: Array<MetricCardProps> = [
+export const filecoinByTheNumbers = [
   {
     title: '3.12 EiB',
     subTitle: 'network storage capacity',
@@ -16,4 +16,4 @@ export const filecoinByTheNumbers: Array<MetricCardProps> = [
     subTitle: 'smart contracts',
     description: 'Deployed via the Filecoin Virtual Machine (FVM)',
   },
-]
+] as const satisfies Array<MetricCardProps>

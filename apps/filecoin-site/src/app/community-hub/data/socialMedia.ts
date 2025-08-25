@@ -23,7 +23,7 @@ const {
   telegramKorea,
 } = FILECOIN_URLS.social
 
-export const socialMedia: Array<LinkCardData> = [
+export const socialMedia = [
   {
     title: slack.label,
     description:
@@ -80,4 +80,4 @@ export const socialMedia: Array<LinkCardData> = [
     href: telegramKorea.href,
     icon: TelegramLogoIcon,
   },
-]
+] as const satisfies Array<LinkCardData>

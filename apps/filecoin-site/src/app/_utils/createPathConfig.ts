@@ -1,4 +1,4 @@
-import { CONTENT_ROOT, PATHS, type StaticPath } from '@/constants/paths'
+import { CONTENT_ROOT, type StaticPath } from '@/constants/paths'
 
 type PathConfigWithEntries = {
   path: StaticPath
@@ -7,11 +7,6 @@ type PathConfigWithEntries = {
 }
 
 type PathConfigWithoutEntries = {
-  path: StaticPath
-  label: string
-}
-
-type PathWithCustomLabel = {
   path: StaticPath
   label: string
 }

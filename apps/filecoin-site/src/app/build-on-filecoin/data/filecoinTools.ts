@@ -8,7 +8,7 @@ export type FilecoinTool = SimpleCardData & {
 
 const CTA_TEXT = 'View documentation'
 
-export const filecoinTools: Array<FilecoinTool> = [
+export const filecoinTools = [
   {
     title: 'ERC-20 Quickstart',
     description:
@@ -38,4 +38,4 @@ export const filecoinTools: Array<FilecoinTool> = [
       text: CTA_TEXT,
     },
   },
-]
+] as const satisfies Array<FilecoinTool>

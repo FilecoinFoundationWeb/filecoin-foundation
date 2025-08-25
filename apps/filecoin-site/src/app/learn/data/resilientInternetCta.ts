@@ -8,7 +8,7 @@ import { PATHS } from '@/constants/paths'
 
 import type { LinkCardData } from '@/components/LinkCard'
 
-export const resilientInternetCta: Array<LinkCardData> = [
+export const resilientInternetCta = [
   {
     title: 'Build on Filecoin',
     href: PATHS.BUILD_ON_FILECOIN.path,
@@ -24,4 +24,4 @@ export const resilientInternetCta: Array<LinkCardData> = [
     href: PATHS.PROVIDE_STORAGE.path,
     icon: DatabaseIcon,
   },
-]
+] as const satisfies Array<LinkCardData>

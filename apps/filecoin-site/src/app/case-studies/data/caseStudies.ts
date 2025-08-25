@@ -1,4 +1,3 @@
-
 import AethirLogo from '@/assets/logos/aethir-icon-logo.svg'
 import EasierDataInitiativeLogo from '@/assets/logos/easier-data-initiative-logo.png'
 import FlickrFoundationLogo from '@/assets/logos/flickr-foundation-icon-logo.svg'
@@ -13,7 +12,7 @@ import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
 const CTA_TEXT = 'Read case study'
 
-export const caseStudies: Array<SimpleCardWithLogoProps> = [
+export const caseStudies = [
   {
     title: 'Aethir',
     description:
@@ -106,7 +105,7 @@ export const caseStudies: Array<SimpleCardWithLogoProps> = [
   {
     title: 'Smithsonian',
     description:
-      "The Smithsonian's National Musuem of American History is storing nearly 300 digitized sound records from Alexander Graham Bell on Filecoin.",
+      "The Smithsonian's National Museum of American History is storing nearly 300 digitized sound records from Alexander Graham Bell on Filecoin.",
     cta: {
       href: 'https://www.si.edu/',
       text: CTA_TEXT,
@@ -145,4 +144,4 @@ export const caseStudies: Array<SimpleCardWithLogoProps> = [
       bgColor: '#FAF8F2',
     },
   },
-]
+] as const satisfies Array<SimpleCardWithLogoProps>
