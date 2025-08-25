@@ -22,6 +22,12 @@ const { social: socialLinks, github, securityBugBounty } = FILECOIN_URLS
 
 const { events, governance, grants, orbit } = FILECOIN_FOUNDATION_URLS
 
+const communityLinks: Array<NavItem> = [
+  { label: 'Events', href: events },
+  { label: 'Orbit', href: orbit },
+  { label: 'FIPs & Governance', href: governance },
+]
+
 export const legalLinks: Array<NavItem> = [
   { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
   { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
@@ -221,5 +227,5 @@ export const footerNavigationItems: Array<FooterNavigationItem> = [
   { title: 'Navigation', items: navigation },
   { title: 'Resources', items: resources },
   { title: 'Reach out', items: social },
-  // { title: 'Community', items: communityLinks },
+  { title: 'Community', items: communityLinks },
 ]
