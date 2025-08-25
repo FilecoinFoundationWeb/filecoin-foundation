@@ -28,7 +28,7 @@ import { ecosystemResources } from './data/ecosystemResources'
 import { getInvolvedWithCommunity } from './data/getInvolvedWithCommunity'
 import { socialMedia } from './data/socialMedia'
 
-export default function BuildOnFilecoin() {
+export default function CommunityHub() {
   return (
     <>
       <div
@@ -43,10 +43,7 @@ export default function BuildOnFilecoin() {
             title="Build, connect and grow with the Filecoin community"
             description="A global network of builders, researchers, advocates and creators is shaping the future of Filecoin. Plug into the community and start contributing in your own way."
             cta={
-              <Button
-                href={`${PATHS.COMMUNITY.path}#get-involved`}
-                variant="primary"
-              >
+              <Button href="#get-involved" variant="primary">
                 Explore how to get involved
               </Button>
             }
@@ -59,7 +56,7 @@ export default function BuildOnFilecoin() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Get involved"
-          description="Whether you want to contribute, connect or build, there’s a place for you in the Filecoin community."
+          description="Whether you want to contribute, connect or build, there's a place for you in the Filecoin community."
         >
           <CardGrid as="ul" variant="mdTwoLgThreeWide">
             {getInvolvedWithCommunity.map(({ title, description, cta }) => (
@@ -143,5 +140,5 @@ export default function BuildOnFilecoin() {
 export const metadata = createMetadata({
   title: { absolute: COMMUNITY_SEO.title },
   description: COMMUNITY_SEO.description,
-  path: PATHS.COMMUNITY.path,
+  path: PATHS.COMMUNITY_HUB.path,
 })

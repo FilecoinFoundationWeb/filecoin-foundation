@@ -29,6 +29,7 @@ const blockExplorersLinks: Array<NavItem> = [
 ]
 
 const communityLinks: Array<NavItem> = [
+  { label: PATHS.COMMUNITY_HUB.label, href: PATHS.COMMUNITY_HUB.path },
   { label: 'Events', href: events },
   { label: 'Orbit', href: orbit },
   { label: 'FIPs & Governance', href: governance },
@@ -159,9 +160,9 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
         title: 'Get involved',
         links: [
           {
-            label: 'Community Hub',
+            label: PATHS.COMMUNITY_HUB.label,
             description: 'Explore ways to contribute to the ecosystem',
-            href: PATHS.COMMUNITY.path,
+            href: PATHS.COMMUNITY_HUB.path,
           },
           {
             label: 'Events',
@@ -191,7 +192,6 @@ const navigation: Array<NavItem> = [
   { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
   { label: PATHS.PROVIDE_STORAGE.label, href: PATHS.PROVIDE_STORAGE.path },
   { label: PATHS.BUILD_ON_FILECOIN.label, href: PATHS.BUILD_ON_FILECOIN.path },
-  { label: 'Comunity Hub', href: PATHS.COMMUNITY.path },
   { label: PATHS.BLOG.label, href: PATHS.BLOG.path },
 ]
 
