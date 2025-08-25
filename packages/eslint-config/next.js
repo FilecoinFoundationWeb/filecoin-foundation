@@ -88,6 +88,7 @@ export const config = [
             { pattern: '@/actions/**', group: 'internal', position: 'before' },
             { pattern: '@/services/**', group: 'internal', position: 'before' },
             { pattern: '@/hooks/**', group: 'internal', position: 'before' },
+            { pattern: '@/assets/**', group: 'internal', position: 'before' },
             {
               pattern: '@/components/**',
               group: 'internal',

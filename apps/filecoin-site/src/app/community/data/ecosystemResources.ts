@@ -1,4 +1,3 @@
-import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
 import ANSALogo from '@/assets/logos/ansa-logo.svg'
 import FIDLLogo from '@/assets/logos/fidl-logo.png'
@@ -6,6 +5,8 @@ import FilBLogo from '@/assets/logos/fil-b-logo.png'
 import FilecoinFoundationIconLogo from '@/assets/logos/filecoin-foundation-icon-logo.svg'
 import FilOzLogo from '@/assets/logos/filoz-logo.svg'
 import PolarisLogo from '@/assets/logos/polaris-logo.png'
+
+import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
 const CTA_TEXT = 'Visit website'
 
