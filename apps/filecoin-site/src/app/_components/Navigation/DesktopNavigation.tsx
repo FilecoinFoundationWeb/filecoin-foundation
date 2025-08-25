@@ -11,6 +11,7 @@ import { backgroundVariants } from '@/components/Section'
 import type { SectionProps } from '../Section'
 
 import { variantMapping } from './constants'
+import { NavigationLanguageToggle } from './NavigationLanguageToggle'
 import {
   NavigationMainLink,
   baseStyle,
@@ -28,40 +29,40 @@ export function DesktopNavigation({
   const desktopBackgroundVariant = variantMapping[backgroundVariant]
 
   return (
-    <ul
-      aria-label="Main navigation menu"
-      className="hidden xl:flex xl:items-center xl:gap-9"
-    >
-      {navigationBis.map((item) => {
-        if ('items' in item) {
-          return (
-            <NavigationMenu
-              key={item.label}
-              as="li"
-              label={item.label}
-              labelClassName={clsx(
-                baseStyle,
-                desktopStyle,
-                'inline-flex items-center gap-2',
-              )}
-              panelClassName={clsx(
-                'rounded-xl',
-                backgroundVariants[desktopBackgroundVariant],
-              )}
-            >
-              <div className="rounded-xl border border-[var(--color-navigation-menu-panel-border)] bg-[var(--color-navigation-menu-panel-background)] py-6">
-                <NavigationMenuPanel items={item.items} />
-              </div>
-            </NavigationMenu>
-          )
-        }
+    <div className="hidden xl:flex xl:w-full xl:items-center xl:justify-between xl:gap-4">
+      <ul aria-label="Main navigation menu" className="flex items-center gap-9">
+        {navigationBis.map((item) => {
+          if ('items' in item) {
+            return (
+              <NavigationMenu
+                key={item.label}
+                as="li"
+                label={item.label}
+                labelClassName={clsx(
+                  baseStyle,
+                  desktopStyle,
+                  'inline-flex items-center gap-2',
+                )}
+                panelClassName={clsx(
+                  'rounded-xl',
+                  backgroundVariants[desktopBackgroundVariant],
+                )}
+              >
+                <div className="rounded-xl border border-[var(--color-navigation-menu-panel-border)] bg-[var(--color-navigation-menu-panel-background)] py-6">
+                  <NavigationMenuPanel items={item.items} />
+                </div>
+              </NavigationMenu>
+            )
+          }
 
-        return (
-          <li key={item.href}>
-            <NavigationMainLink on="desktop" {...item} />
-          </li>
-        )
-      })}
-    </ul>
+          return (
+            <li key={item.href}>
+              <NavigationMainLink on="desktop" {...item} />
+            </li>
+          )
+        })}
+      </ul>
+      <NavigationLanguageToggle />
+    </div>
   )
 }
