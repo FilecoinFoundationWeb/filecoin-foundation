@@ -81,7 +81,7 @@ export const navigationBis: Array<NavItem | ExpandedNavItem> = [
           {
             label: 'Cookbook',
             description: 'Recipes for building with Filecoin and the FVM',
-            href: '/',
+            href: FILECOIN_DOCS_URLS.builderCookbook,
           },
           {
             label: 'GitHub',

@@ -34,7 +34,6 @@ const FILECOIN_FOUNDATION_URLS = {
   grants: 'https://fil.org/grants',
   orbit: 'https://fil.org/orbit',
   security: 'https://fil.org/security',
-  securityBugBounty: 'https://fil.org/security/bug-bounty',
   ecosystemExplorer: 'https://fil.org/ecosystem-explorer',
   emails: {
     contact: 'hello@fil.org',
