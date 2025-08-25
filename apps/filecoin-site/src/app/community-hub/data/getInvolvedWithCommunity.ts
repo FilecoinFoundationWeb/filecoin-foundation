@@ -2,7 +2,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import type { SimpleCardData } from '@/components/SimpleCard'
 
-export const getInvolvedWithCommunity: Array<SimpleCardData> = [
+export const getInvolvedWithCommunity = [
   {
     title: 'Events & meetups',
     description: 'Attend upcoming hackathons, summits, and meetups.',
@@ -29,4 +29,4 @@ export const getInvolvedWithCommunity: Array<SimpleCardData> = [
       text: 'Join community calls',
     },
   },
-]
+] as const satisfies Array<SimpleCardData>

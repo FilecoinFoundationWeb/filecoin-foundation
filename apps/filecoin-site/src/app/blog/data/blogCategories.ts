@@ -9,7 +9,7 @@ type BlogCategory = {
   id: BlogCategoryKey
 }
 
-export const blogCategories: Array<BlogCategory> = [
+export const blogCategories = [
   {
     name: 'View All',
     id: DEFAULT_FILTER_ID,
@@ -30,4 +30,4 @@ export const blogCategories: Array<BlogCategory> = [
     name: 'Updates',
     id: 'updates',
   },
-]
+] as const satisfies Array<BlogCategory>

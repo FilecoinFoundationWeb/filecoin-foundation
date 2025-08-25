@@ -1,4 +1,3 @@
-
 import CIDgravityLogo from '@/assets/logos/cidgravity-logo.svg'
 import DCENTLogo from '@/assets/logos/dcent-logo.svg'
 import FutureTechHoldingsLogo from '@/assets/logos/future-tech-holdings-logo.svg'
@@ -8,7 +7,7 @@ import SwanChainLogo from '@/assets/logos/swan-chain-logo.svg'
 
 import { type LogoItemProps } from '@/components/LogoSection/LogoItem'
 
-export const storageProvidersLogos: Array<LogoItemProps> = [
+export const storageProvidersLogos = [
   {
     logo: CIDgravityLogo,
     alt: 'CIDgravity Logo',
@@ -43,4 +42,4 @@ export const storageProvidersLogos: Array<LogoItemProps> = [
     href: 'https://swanchain.io/',
     size: 40,
   },
-]
+] as const satisfies Array<LogoItemProps>

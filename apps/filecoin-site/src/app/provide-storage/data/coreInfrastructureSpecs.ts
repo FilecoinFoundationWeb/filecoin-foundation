@@ -3,7 +3,7 @@ type CoreInfrastructureSpec = {
   list: string[]
 }
 
-export const coreInfrastructureSpecs: CoreInfrastructureSpec[] = [
+export const coreInfrastructureSpecs = [
   {
     title: 'Networking',
     list: [
@@ -20,4 +20,4 @@ export const coreInfrastructureSpecs: CoreInfrastructureSpec[] = [
       'NIC: 10 Gbit/s',
     ],
   },
-] as const
+] as const satisfies Array<CoreInfrastructureSpec>

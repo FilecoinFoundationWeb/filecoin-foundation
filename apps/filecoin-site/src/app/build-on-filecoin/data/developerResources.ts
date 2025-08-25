@@ -9,7 +9,7 @@ import { FILECOIN_DOCS_URL, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
 import type { LinkCardData } from '@/components/LinkCard'
 
-export const developerResources: Array<LinkCardData> = [
+export const developerResources = [
   {
     title: 'Documentation',
     description: 'Comprehensive guides and tutorials to build on Filecoin.',
@@ -37,4 +37,4 @@ export const developerResources: Array<LinkCardData> = [
     href: FILECOIN_DOCS_URLS.smartContractDevelopingFilecoinSol,
     icon: BracketsCurlyIcon,
   },
-]
+] as const satisfies Array<LinkCardData>

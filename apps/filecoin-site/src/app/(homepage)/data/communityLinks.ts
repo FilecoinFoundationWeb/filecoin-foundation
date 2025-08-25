@@ -12,7 +12,7 @@ import {
 
 import type { LinkCardData } from '@/components/LinkCard'
 
-export const communityLinks: Array<LinkCardData> = [
+export const communityLinks = [
   {
     title: 'Chat on Slack',
     href: FILECOIN_URLS.social.slack.href,
@@ -33,4 +33,4 @@ export const communityLinks: Array<LinkCardData> = [
     href: FILECOIN_FOUNDATION_URLS.orbit,
     icon: MegaphoneIcon,
   },
-]
+] as const satisfies Array<LinkCardData>

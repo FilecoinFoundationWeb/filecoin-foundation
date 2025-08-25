@@ -1,4 +1,3 @@
-
 import GLIFLogo from '@/assets/logos/glif-logo.svg'
 import LighthouseLogo from '@/assets/logos/lighthouse-logo.svg'
 
@@ -6,7 +5,7 @@ import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
 const CTA_TEXT = 'Visit website'
 
-export const builtOnFilecoin: Array<SimpleCardWithLogoProps> = [
+export const builtOnFilecoin = [
   {
     title: 'Lighthouse',
     description:
@@ -37,4 +36,4 @@ export const builtOnFilecoin: Array<SimpleCardWithLogoProps> = [
       text: CTA_TEXT,
     },
   },
-]
+] as const satisfies Array<SimpleCardWithLogoProps>

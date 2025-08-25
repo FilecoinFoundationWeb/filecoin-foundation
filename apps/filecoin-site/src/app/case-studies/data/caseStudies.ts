@@ -12,7 +12,7 @@ import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
 const CTA_TEXT = 'Read case study'
 
-export const caseStudies: Array<SimpleCardWithLogoProps> = [
+export const caseStudies = [
   {
     title: 'Aethir',
     description:
@@ -144,4 +144,4 @@ export const caseStudies: Array<SimpleCardWithLogoProps> = [
       bgColor: '#FAF8F2',
     },
   },
-]
+] as const satisfies Array<SimpleCardWithLogoProps>

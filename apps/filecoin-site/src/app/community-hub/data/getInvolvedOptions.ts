@@ -9,7 +9,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import type { LinkCardData } from '@/components/LinkCard'
 
-export const getInvolvedOptions: Array<LinkCardData> = [
+export const getInvolvedOptions = [
   {
     title: 'Apply for a grant',
     description:
@@ -38,4 +38,4 @@ export const getInvolvedOptions: Array<LinkCardData> = [
     href: FILECOIN_FOUNDATION_URLS.events,
     icon: MapPinLineIcon,
   },
-]
+] as const satisfies Array<LinkCardData>

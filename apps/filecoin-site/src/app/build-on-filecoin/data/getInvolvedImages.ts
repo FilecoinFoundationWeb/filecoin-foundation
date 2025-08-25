@@ -4,7 +4,7 @@ import conferencePresentation from '@/assets/images/conference-presentation.webp
 import groupCollaboration from '@/assets/images/group-collaboration.webp'
 import pairProgramming from '@/assets/images/pair-programming.webp'
 
-export const getInvolvedImages: Array<StaticImageProps> = [
+export const getInvolvedImages = [
   {
     data: pairProgramming,
     alt: 'Two people working closely on a laptop at a table, discussing code with a notebook and drink nearby.',
@@ -19,4 +19,4 @@ export const getInvolvedImages: Array<StaticImageProps> = [
     data: conferencePresentation,
     alt: 'Audience seated in a dark room watching a presentation on a large screen at a tech conference.',
   },
-]
+] as const satisfies Array<StaticImageProps>

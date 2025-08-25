@@ -1,4 +1,3 @@
-
 import ANSALogo from '@/assets/logos/ansa-logo.svg'
 import FIDLLogo from '@/assets/logos/fidl-logo.png'
 import FilBLogo from '@/assets/logos/fil-b-logo.png'
@@ -10,7 +9,7 @@ import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
 const CTA_TEXT = 'Visit website'
 
-export const ecosystemResources: Array<SimpleCardWithLogoProps> = [
+export const ecosystemResources = [
   {
     title: 'Filecoin Foundation',
     description: 'Network governance, Filecoin Plus, and grants.',
@@ -92,4 +91,4 @@ export const ecosystemResources: Array<SimpleCardWithLogoProps> = [
       text: CTA_TEXT,
     },
   },
-]
+] as const satisfies Array<SimpleCardWithLogoProps>
