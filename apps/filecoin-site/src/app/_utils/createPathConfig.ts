@@ -1,4 +1,4 @@
-import { CONTENT_ROOT, type StaticPath } from '@/constants/paths'
+import { CONTENT_ROOT, PATHS, type StaticPath } from '@/constants/paths'
 
 type PathConfigWithEntries = {
   path: StaticPath
@@ -7,6 +7,11 @@ type PathConfigWithEntries = {
 }
 
 type PathConfigWithoutEntries = {
+  path: StaticPath
+  label: string
+}
+
+type PathWithCustomLabel = {
   path: StaticPath
   label: string
 }
@@ -40,4 +45,14 @@ export function createPathConfig(
     path,
     label,
   } as const
+}
+
+export function createPathWithCustomLabel<T extends keyof typeof PATHS>(
+  pathKey: T,
+  customLabel: string,
+): PathWithCustomLabel {
+  return {
+    path: PATHS[pathKey].path,
+    label: customLabel,
+  }
 }

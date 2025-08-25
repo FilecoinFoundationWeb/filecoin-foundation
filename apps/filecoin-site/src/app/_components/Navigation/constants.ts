@@ -1,13 +1,14 @@
-import { PATHS } from '@/constants/paths'
+import { PATHS, WHAT_IS_FILECOIN_PATH } from '@/constants/paths'
 
 import type { SectionProps } from '../Section'
 
-// This is still used by the mobile navigation, will be deleted once everthing uses navigationBis
 export const NAV_LINKS = [
-  PATHS.BUILD_ON_FILECOIN,
+  WHAT_IS_FILECOIN_PATH,
+  PATHS.CASE_STUDIES,
   PATHS.STORE_DATA,
   PATHS.PROVIDE_STORAGE,
-  PATHS.LEARN,
+  PATHS.BUILD_ON_FILECOIN,
+  PATHS.COMMUNITY,
   PATHS.BLOG,
 ] as const
 
