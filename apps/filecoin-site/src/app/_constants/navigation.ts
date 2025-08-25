@@ -18,8 +18,7 @@ export type ExpandedNavItem = {
   }>
 }
 
-const { social: socialLinks, github, securityBugBounty } = FILECOIN_URLS
-
+const { github, securityBugBounty } = FILECOIN_URLS
 const { events, governance, grants, orbit } = FILECOIN_FOUNDATION_URLS
 
 const blockExplorersLinks: Array<NavItem> = [
@@ -207,33 +206,9 @@ const resources: Array<NavItem> = [
   { label: 'Network Health', href: 'https://dashboard.starboard.ventures/' },
 ]
 
-const social: Array<NavItem> = [
-  {
-    label: socialLinks.slack.label,
-    href: socialLinks.slack.href,
-  },
-  {
-    label: socialLinks.bluesky.label,
-    href: socialLinks.bluesky.href,
-  },
-  {
-    label: socialLinks.twitter.label,
-    href: socialLinks.twitter.href,
-  },
-  {
-    label: socialLinks.telegram.label,
-    href: socialLinks.telegram.href,
-  },
-  {
-    label: socialLinks.discord.label,
-    href: socialLinks.discord.href,
-  },
-]
-
 export const footerNavigationItems: Array<FooterNavigationItem> = [
   { title: 'Navigation', items: navigation },
   { title: 'Resources', items: resources },
-  { title: 'Reach out', items: social },
   { title: 'Block Explorers', items: blockExplorersLinks },
   { title: 'Community', items: communityLinks },
 ]
