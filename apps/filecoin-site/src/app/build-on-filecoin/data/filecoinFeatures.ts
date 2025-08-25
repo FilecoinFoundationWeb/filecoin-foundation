@@ -1,21 +1,17 @@
 import {
-  BridgeIcon,
   IntersectThreeIcon,
-  StackSimpleIcon,
+  StackIcon,
+  SquaresFourIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-type FilecoinFeature = {
-  title: string
-  description: string
-  icon: typeof IntersectThreeIcon
-}
+import type { CardData } from '@/components/Card'
 
-export const filecoinFeatures: FilecoinFeature[] = [
+export const filecoinFeatures = [
   {
     title: 'Large archival storage',
     description:
       'Archive large datasets, like AI datasets, with cryptographic integrity and global redundancy.',
-    icon: StackSimpleIcon,
+    icon: StackIcon,
   },
   {
     title: 'Cross-chain data bridges',
@@ -27,6 +23,6 @@ export const filecoinFeatures: FilecoinFeature[] = [
     title: 'Storage-enabled dApps',
     description:
       'Build decentralized, resilient applications with permissionless storage and FVM-powered smart contracts.',
-    icon: BridgeIcon,
+    icon: SquaresFourIcon,
   },
-]
+] as const satisfies Array<CardData>
