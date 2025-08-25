@@ -22,6 +22,13 @@ const { social: socialLinks, github, securityBugBounty } = FILECOIN_URLS
 
 const { events, governance, grants, orbit } = FILECOIN_FOUNDATION_URLS
 
+const blockExplorersLinks: Array<NavItem> = [
+  { label: 'Beryx', href: 'https://beryx.io/' },
+  { label: 'Blockscout (FEVM)', href: 'https://www.blockscout.com/' },
+  { label: 'Filfox', href: 'https://filfox.info/' },
+  { label: 'Filscan', href: 'https://filscan.io/en/' },
+]
+
 const communityLinks: Array<NavItem> = [
   { label: 'Events', href: events },
   { label: 'Orbit', href: orbit },
@@ -227,5 +234,6 @@ export const footerNavigationItems: Array<FooterNavigationItem> = [
   { title: 'Navigation', items: navigation },
   { title: 'Resources', items: resources },
   { title: 'Reach out', items: social },
+  { title: 'Block Explorers', items: blockExplorersLinks },
   { title: 'Community', items: communityLinks },
 ]
