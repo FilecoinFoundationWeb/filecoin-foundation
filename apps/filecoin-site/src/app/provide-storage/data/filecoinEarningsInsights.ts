@@ -4,7 +4,7 @@ import type { SimpleCardData } from '@/components/SimpleCard'
 
 export const filecoinEarningsInsights = [
   {
-    title: 'Earn Filecoin and Fiat',
+    title: 'Earn FIL and Fiat',
     description:
       "Providers are compensated for reliable storage via the network's reward system.",
     cta: {
