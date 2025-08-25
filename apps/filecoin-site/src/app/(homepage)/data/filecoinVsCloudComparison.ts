@@ -1,6 +1,7 @@
+import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
+
 import type { ColumnPropsData } from '../components/ComparisonTable/Column'
 
-import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
 
 type ComparisonProvider = 'filecoin' | 'traditional-cloud'
 

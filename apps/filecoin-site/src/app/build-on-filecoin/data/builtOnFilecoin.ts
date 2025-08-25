@@ -1,7 +1,8 @@
-import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
 import GLIFLogo from '@/assets/logos/glif-logo.svg'
 import LighthouseLogo from '@/assets/logos/lighthouse-logo.svg'
+
+import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
 const CTA_TEXT = 'Visit website'
 
