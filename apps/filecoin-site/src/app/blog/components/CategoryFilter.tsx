@@ -5,7 +5,7 @@ import { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter/constant
 import { blogCategories } from '../data/blogCategories'
 import { useCategoryState } from '../hooks/useCategoryState'
 
-export function CategoryTabs() {
+export function CategoryFilter() {
   const [selectedCategory, setSelectedCategory] = useCategoryState()
 
   return (
