@@ -1,7 +1,5 @@
 import clsx from 'clsx'
 
-import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -19,14 +17,10 @@ import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { CASE_STUDIES_SEO } from './constants/seo'
 import { caseStudies } from './data/caseStudies'
-import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function CaseStudies() {
   return (
     <>
-      <StructuredDataScript
-        structuredData={generateStructuredData(CASE_STUDIES_SEO)}
-      />
       <div
         className={clsx(
           'relative isolate overflow-x-clip',

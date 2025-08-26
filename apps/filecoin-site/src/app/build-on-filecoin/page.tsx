@@ -34,6 +34,7 @@ import { filecoinFeatures } from './data/filecoinFeatures'
 import { getInvolvedImages } from './data/getInvolvedImages'
 import { tutorialsAndGuides } from './data/tutorialsAndGuides'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getBadgeVariant } from './utils/getBadgeVariant'
 
 export default function BuildOnFilecoin() {
   return (
@@ -61,12 +62,12 @@ export default function BuildOnFilecoin() {
         </div>
       </Section>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection backgroundVariant="dark" paddingVariant="topOnly">
         <SectionContent title="Announcing Filecoin Onchain Cloud">
           <SplitSectionContent
             title="Verifiable onchain services with transparent storage, retrieval, and payments"
             description={[
-              'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pinning, retrieval, and payments are transparent, programmable, and interoperable by default.',
+              'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pining, retrieval, and payments are transparent, programmable, and interoperable by default.',
               'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
             ]}
             cta={[
@@ -77,7 +78,7 @@ export default function BuildOnFilecoin() {
           />
         </SectionContent>
 
-        <div className="mt-40">
+        <div className="mt-15 md:mt-20">
           <SectionImage {...graphicsData.buildOnFilecoinSection} />
         </div>
       </PageSection>
@@ -136,11 +137,14 @@ export default function BuildOnFilecoin() {
               ({ title, description, cta, difficulty }) => (
                 <SimpleCard
                   key={title}
-                  badge={difficulty}
                   as="li"
                   title={title}
                   description={description}
                   cta={cta}
+                  badge={{
+                    text: difficulty,
+                    variant: getBadgeVariant(difficulty),
+                  }}
                 />
               ),
             )}

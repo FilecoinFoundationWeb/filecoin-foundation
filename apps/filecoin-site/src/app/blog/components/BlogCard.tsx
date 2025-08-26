@@ -46,7 +46,7 @@ export function BlogCard({
       >
         <CardImage image={image || graphicsData.fallback} />
 
-        <div className="flex flex-col gap-4 py-4">
+        <div className="flex flex-col gap-4 py-5">
           <TagGroup tags={tags} />
           <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
             <Heading tag="h2" variant="card-heading">
@@ -62,7 +62,7 @@ export function BlogCard({
         <Link
           href={`${PATHS.BLOG.path}/${slug}` as Route}
           aria-label={`Read more about ${title}`}
-          className="focus:brand-outline absolute inset-0 z-10"
+          className="focus:brand-outline absolute inset-0 z-10 rounded-t-2xl"
         />
       </article>
     </li>

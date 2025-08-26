@@ -83,14 +83,13 @@ export default function CommunityHub() {
             ))}
           </ImageGrid>
 
-          <CardGrid as="ul" variant="mdTwoLgThree">
-            {socialMedia.map(({ title, description, href, icon }) => (
+          <CardGrid as="ul" variant="mdTwoLgThreeXlFour">
+            {socialMedia.map(({ title, href, icon }) => (
               <LinkCard
                 key={title}
                 as="li"
                 title={title}
                 headingTag="h3"
-                description={description}
                 href={href}
                 icon={{ component: icon }}
               />
