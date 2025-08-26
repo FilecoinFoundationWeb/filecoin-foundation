@@ -8,10 +8,12 @@ category: interviews
 image:
   src: /assets/images/081425-qa-umd.webp
 seo:
-  description: "In this Q&A, Taylor Oshan, Project Lead at EASIER Data Initiative,
+  description:
+    "In this Q&A, Taylor Oshan, Project Lead at EASIER Data Initiative,
     shares more about how decentralized infrastructure is unlocking new
-    possibilities for open science. "
+    possibilities for open science."
 ---
+
 Our world runs on maps. Every time you check a walking distance, order a ride, or even track a storm, you’re relying on geospatial data. And this reliance is only deepening: from [upticks in natural disaster responses](https://www.worldwildlife.org/stories/is-climate-change-increasing-the-risk-of-disasters) fueled by climate change to the [rising popularity](https://www.fastcompany.com/91381492/instagram-launches-map-feature) of social apps that map friends’ whereabouts. As our world leans more heavily on location-based services, the infrastructure behind this data has never been more critical. But how can we ensure that this information is always accessible, accurate, and trustworthy? 
 
 That’s the challenge the [Decentralized Geospatial Collaborative](https://decentralizedgeo.org/) (DGC) is tackling. A collaboration between EASIER Data Initiative at the University of Maryland, [Astral](https://www.astral.global/), and the Blockchain Domain Working Group within the [Open Geospatial Consortium](https://www.ogc.org/), DCG is reimagining how our geospatial data is stored, shared, and verified. They’re conducting research and developing open source software with the goal of creating a more resilient geospatial data ecosystem leveraging decentralized technologies. 
