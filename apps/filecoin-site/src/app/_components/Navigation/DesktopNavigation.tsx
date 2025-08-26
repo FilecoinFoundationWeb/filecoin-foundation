@@ -1,59 +1,34 @@
 'use client'
 
-import { clsx } from 'clsx'
-
-import { NavigationMenu } from '@filecoin-foundation/ui/NavigationMenu'
-
 import { navigationBis } from '@/constants/navigation'
-
-import { backgroundVariants } from '@/components/Section'
 
 import type { SectionProps } from '../Section'
 
-import { variantMapping } from './constants'
 import { NavigationLanguageToggle } from './NavigationLanguageToggle'
-import { NavigationMainLink, desktopStyle } from './NavigationMainLink'
-import { NavigationMenuPanel } from './NavigationMenuPanel'
+import { NavigationMainLink } from './NavigationMainLink'
+import { NavigationMenu } from './NavigationMenu'
 
 export type MobileNavigationProps = {
   backgroundVariant: SectionProps['backgroundVariant']
 }
 
-const roundedStyle = 'rounded-xl'
-
 export function DesktopNavigation({
   backgroundVariant,
 }: MobileNavigationProps) {
-  const desktopBackgroundVariant = variantMapping[backgroundVariant]
-
   return (
     <div className="hidden xl:flex xl:w-full xl:items-center xl:justify-between xl:gap-4">
       <ul aria-label="Main navigation menu" className="flex items-center gap-9">
         {navigationBis.map((item) => {
           if ('items' in item) {
+            const { label, items } = item
+
             return (
               <NavigationMenu
-                key={item.label}
-                as="li"
-                label={item.label}
-                labelClassName={clsx(
-                  desktopStyle,
-                  'inline-flex items-center gap-2',
-                )}
-                panelClassName={clsx(
-                  roundedStyle,
-                  backgroundVariants[desktopBackgroundVariant],
-                )}
-              >
-                <div
-                  className={clsx(
-                    roundedStyle,
-                    'border border-[var(--color-navigation-menu-panel-border)] bg-[var(--color-navigation-menu-panel-background)] py-6',
-                  )}
-                >
-                  <NavigationMenuPanel items={item.items} />
-                </div>
-              </NavigationMenu>
+                key={label}
+                backgroundVariant={backgroundVariant}
+                label={label}
+                items={items}
+              />
             )
           }
 
