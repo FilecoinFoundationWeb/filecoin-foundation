@@ -38,13 +38,6 @@ export function MobileNavigation() {
         >
           <div className="flex items-center justify-between">
             <HomeLogoIconLink onNavigate={closePanel} />
-            <button
-              onClick={() => {
-                throw new Error('Sentry Test Error')
-              }}
-            >
-              Sentry Test Error
-            </button>
             <IconButton
               icon={XIcon}
               label="Close mobile navigation"
