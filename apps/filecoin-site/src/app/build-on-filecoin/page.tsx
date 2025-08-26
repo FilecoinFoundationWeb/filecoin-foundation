@@ -13,6 +13,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
+import { GradientContainer } from '@/components/GradientContainer'
 import { ImageGrid } from '@/components/ImageGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -35,6 +36,7 @@ import { tutorialsAndGuides } from './data/tutorialsAndGuides'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBadgeVariant } from './utils/getBadgeVariant'
 
+
 export default function BuildOnFilecoin() {
   return (
     <>
@@ -43,7 +45,9 @@ export default function BuildOnFilecoin() {
       />
 
       <Navigation backgroundVariant="dark" />
-      <div className="dark-section relative overflow-x-clip overflow-y-visible bg-zinc-950 pb-40 sm:pb-80">
+      <GradientContainer className="pb-40 sm:pb-80">
+        <graphicsData.buildOnFilecoinGradient.data className="absolute bottom-10 left-1/2 w-[150vw] -translate-x-1/2 transform overflow-visible 2xl:w-[2400px]" />
+
         <PageSection backgroundVariant="dark">
           <PageHeader
             title="Build on Filecoin: open, scalable, verifiable storage"
@@ -55,8 +59,7 @@ export default function BuildOnFilecoin() {
             }
           />
         </PageSection>
-        <graphicsData.buildOnFilecoinGradient.data className="absolute bottom-10 left-1/2 w-[150vw] -translate-x-1/2 transform overflow-visible 2xl:w-[2400px]" />
-      </div>
+      </GradientContainer>
 
       <PageSection backgroundVariant="dark" paddingVariant="topOnly">
         <SectionContent title="Announcing Filecoin Onchain Cloud">
