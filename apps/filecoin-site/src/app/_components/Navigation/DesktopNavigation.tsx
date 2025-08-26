@@ -12,16 +12,14 @@ import type { SectionProps } from '../Section'
 
 import { variantMapping } from './constants'
 import { NavigationLanguageToggle } from './NavigationLanguageToggle'
-import {
-  NavigationMainLink,
-  baseStyle,
-  desktopStyle,
-} from './NavigationMainLink'
+import { NavigationMainLink, desktopStyle } from './NavigationMainLink'
 import { NavigationMenuPanel } from './NavigationMenuPanel'
 
 export type MobileNavigationProps = {
   backgroundVariant: SectionProps['backgroundVariant']
 }
+
+const roundedStyle = 'rounded-xl'
 
 export function DesktopNavigation({
   backgroundVariant,
@@ -39,16 +37,20 @@ export function DesktopNavigation({
                 as="li"
                 label={item.label}
                 labelClassName={clsx(
-                  baseStyle,
                   desktopStyle,
                   'inline-flex items-center gap-2',
                 )}
                 panelClassName={clsx(
-                  'rounded-xl',
+                  roundedStyle,
                   backgroundVariants[desktopBackgroundVariant],
                 )}
               >
-                <div className="rounded-xl border border-[var(--color-navigation-menu-panel-border)] bg-[var(--color-navigation-menu-panel-background)] py-6">
+                <div
+                  className={clsx(
+                    roundedStyle,
+                    'border border-[var(--color-navigation-menu-panel-border)] bg-[var(--color-navigation-menu-panel-background)] py-6',
+                  )}
+                >
                   <NavigationMenuPanel items={item.items} />
                 </div>
               </NavigationMenu>
