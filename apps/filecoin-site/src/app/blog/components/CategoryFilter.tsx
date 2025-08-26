@@ -1,5 +1,7 @@
 'use client'
 
+import * as Sentry from '@sentry/nextjs'
+
 import { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter/constants'
 
 import { blogCategories } from '../data/blogCategories'
@@ -27,7 +29,12 @@ export function CategoryFilter() {
                 ? 'View all blog posts'
                 : `Filter by ${name}`
             }
-            onClick={() => setSelectedCategory(id)}
+            onClick={() => {
+              setSelectedCategory(id)
+              Sentry.captureException(
+                new Error('Test error from CategoryFilter'),
+              )
+            }}
           >
             {name}
           </button>
