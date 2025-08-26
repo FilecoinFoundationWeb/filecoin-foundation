@@ -61,7 +61,7 @@ export default function BuildOnFilecoin() {
         </div>
       </Section>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection backgroundVariant="dark" paddingVariant="topOnly">
         <SectionContent title="Announcing Filecoin Onchain Cloud">
           <SplitSectionContent
             title="Verifiable onchain services with transparent storage, retrieval, and payments"
@@ -77,7 +77,7 @@ export default function BuildOnFilecoin() {
           />
         </SectionContent>
 
-        <div className="mt-40">
+        <div className="mt-15 md:mt-20">
           <SectionImage {...graphicsData.buildOnFilecoinSection} />
         </div>
       </PageSection>

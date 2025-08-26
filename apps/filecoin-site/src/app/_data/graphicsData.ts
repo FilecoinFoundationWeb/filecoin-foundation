@@ -7,7 +7,7 @@ import communityGradient from '@/assets/graphics/community-gradient.svg'
 import dataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import digitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
 import earthAtNight from '@/assets/graphics/earth-at-night.png'
-import earthFromSpaceAtNight from '@/assets/graphics/earth-from-space-at-night.webp'
+// import earthFromSpaceAtNight from '@/assets/graphics/earth-from-space-at-night.webp'
 import filecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import filecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import filecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
@@ -17,6 +17,7 @@ import IPFSIllustration from '@/assets/graphics/IPFS-illustration.webp'
 import planetsShadow from '@/assets/graphics/planets-shadow.svg'
 import rocketLaunch from '@/assets/graphics/rocket-launch.webp'
 import serverBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
+import spiralGalaxyStarsSpace from '@/assets/graphics/spiral-galaxy-stars-space.webp'
 import starsSpinning from '@/assets/graphics/stars-spinning.webp'
 
 export const graphicsData = {
@@ -28,9 +29,13 @@ export const graphicsData = {
     data: dataCenterServerRow,
     alt: 'Row of black server towers with glowing blue Filecoin logos in a dark data center.',
   },
+  // buildOnFilecoinSection: {
+  //   data: earthFromSpaceAtNight,
+  //   alt: 'Satellite view of Earth at night with illuminated cities and glowing networks of lights.',
+  // },
   buildOnFilecoinSection: {
-    data: earthFromSpaceAtNight,
-    alt: 'Satellite view of Earth at night with illuminated cities and glowing networks of lights.',
+    data: spiralGalaxyStarsSpace,
+    alt: 'A detailed view of a spiral galaxy with bright stars, glowing nebulae, and swirling blue and golden star fields in deep space.',
   },
   caseStudies: {
     data: caseStudiesGradient,
