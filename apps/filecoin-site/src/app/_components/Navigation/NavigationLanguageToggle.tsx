@@ -3,7 +3,6 @@
 import { useState } from 'react'
 
 import { Button } from '@headlessui/react'
-import { clsx } from 'clsx'
 
 import { desktopStyle } from './NavigationMainLink'
 
@@ -23,7 +22,7 @@ export function NavigationLanguageToggle() {
           type="button"
           aria-label={ariaLabel}
           aria-current={locale === key}
-          className={clsx(desktopStyle, 'focus:brand-outline')}
+          className={desktopStyle}
           onClick={() => setLocale(key)}
         >
           {label}

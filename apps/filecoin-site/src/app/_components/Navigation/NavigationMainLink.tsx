@@ -14,13 +14,15 @@ const TOUCH_TARGET: TouchTarget = {
   touchAreaOffset: '-mx-5',
 }
 
-export const baseStyle = 'focus:brand-outline font-medium'
+const baseStyle = 'focus:brand-outline font-medium'
 
 export const desktopStyle = clsx(
+  baseStyle,
   'rounded-sm px-2.5 py-1.5 text-[var(--color-navigation-link-text)] hover:bg-[var(--color-navigation-link-background-active)] focus:bg-[var(--color-navigation-link-background-active)] aria-[current=true]:bg-[var(--color-navigation-link-background-active)]',
 )
 
 const mobileStyle = clsx(
+  baseStyle,
   'text-[var(--color-text-base)]',
   TOUCH_TARGET.touchAreaPadding,
   TOUCH_TARGET.touchAreaOffset,
@@ -49,7 +51,6 @@ export function NavigationMainLink({
       aria-current={isActive}
       className={clsx(
         'inline-block',
-        baseStyle,
         on === 'desktop' && desktopStyle,
         on === 'mobile' && mobileStyle,
       )}
