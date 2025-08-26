@@ -26,6 +26,7 @@ export function createNextConfig({
     {
       images: {
         remotePatterns: imageRemotePatterns,
+        qualities: [75, 85, 100],
       },
       experimental: {
         typedRoutes: true,
