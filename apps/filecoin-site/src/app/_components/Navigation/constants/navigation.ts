@@ -8,7 +8,7 @@ import {
   FILECOIN_URLS,
 } from '@/constants/siteMetadata'
 
-type NavItem = { label: string; href: string | Route }
+export type NavItem = { label: string; href: string | Route }
 type InternalNavItem = { label: string; href: Route }
 type ExpandedNavItem = NavItem & { description: string }
 
