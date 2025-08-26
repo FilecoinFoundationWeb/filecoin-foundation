@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        app: [ff-site, ffdweb-site]
+        app: [ff-site, ffdweb-site, filecoin-site]
     defaults:
       run:
         working-directory: apps/${{ matrix.app }}
