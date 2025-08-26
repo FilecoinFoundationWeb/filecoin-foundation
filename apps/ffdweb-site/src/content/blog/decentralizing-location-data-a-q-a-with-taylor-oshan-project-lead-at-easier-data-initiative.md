@@ -20,27 +20,27 @@ Through three core focus areas — peer-to-peer data management, proof-of-locati
 
 In this Q&A, we sit down with **[Taylor Oshan](https://x.com/TaylorOshan)**, **Project Lead at EASIER Data Initiative**, to learn more about the vision behind DGC, the technology powering their work, and how decentralized infrastructure is unlocking new possibilities for open science. 
 
-1. Can you tell us a little about the mission behind DecentralizedGeo? What inspired this initiative?
+**Can you tell us a little about the mission behind DecentralizedGeo? What inspired this initiative?**
 
 The idea was to create an open and collaborative community to develop the broader ecosystem to support a decentralized geospatial web– that’s the nexus between decentralized web (DWeb) technologies and geospatial web technologies. The two communities are largely non-overlapping, but we found that several decentralized web projects were exploring geospatial elements, and we believe the decentralized web has many benefits for the geospatial community. So it’s a place to bring the two together, reduce effort duplication, build consensus, and share what we have been working on– hopefully bringing on board additional users and contributors to the ecosystem.
 
-1. One of the tools you’ve built is the [Web3 Geospatial Dashboard](https://github.com/DecentralizedGeo/web3-geo-dashboard?tab=readme-ov-file). What does it do, and how can others use it?
+**One of the tools you’ve built is the [Web3 Geospatial Dashboard](https://github.com/DecentralizedGeo/web3-geo-dashboard?tab=readme-ov-file). What does it do, and how can others use it?**
 
 On the surface, the dashboard is a visualization tool for exploring geospatial datasets. However, the more unique contribution is that it is built to display datasets that have been enriched with metadata from the geospatial dimension (STAC or Spatial-Temporal Asset Catalog) and the DWeb dimension (IPFS CID, Filecoin storage deal ID). This allows the data to be queried based on geographic area and for the display of retrieval options from traditional endpoints (S3 buckets), directly from IPFS, or the Filecoin storage network. Wherever possible, we built in options to streamline retrieval, and the dashboard was designed so that different datasets could be loaded in and explored. We also developed a Chrome extension to allow users to pin data to IPFS directly through the dashboard after they retrieve it, allowing them to help support the network and contribute towards the maintenance and dissemination of geospatial data. The dashboard provides the first example of how to interweave the geospatial web and decentralized technologies, demonstrating the advantages and potential of each in an interactive and visual manner. Users can explore the data we have prepared, load their own, or explore the underlying technologies and concepts.
 
-1. What unique advantages do technologies like IPFS and Filecoin offer for this work? Why did you choose Filecoin decentralized storage for these projects?
+**What unique advantages do technologies like IPFS and Filecoin offer for this work? Why did you choose Filecoin decentralized storage for these projects?**
 
 Many geospatial data sets are collected using tax dollars and are considered public goods that are vital for important collective decision-making and research. Therefore, there is a natural need to ensure that these resources remain open and available. Having alternative storage layers, especially those supported by decentralized infrastructure, ensures that this type of data does not have a single point of failure if critical infrastructure goes down, and remains tamper-resistant in the case that a bad-faith actor tries to alter the data. 
 
-1. What were some of the biggest technical challenges in building decentralized geospatial tools?
+**What were some of the biggest technical challenges in building decentralized geospatial tools?**
 
 We’ve come across a few challenges and important lessons. First, there is already some really great geospatial web technology out there, so it’s important to complement that where possible instead of trying to reinvent the wheel. Another challenge lies in the sheer diversity and volume of geospatial data. We always try to develop protocols in the most general way that we can in order to accommodate as many use cases and types of data, and we have had to be creative to scale our data pipelines to grapple with the large amounts of geospatial data worthy of preservation. Finally, there is a human component that makes it challenging to decentralize systems that are already centralized. When storage and stewardship are controlled by a few entities, it may not be straightforward to incorporate decentralized infrastructure or management.
 
-1. What role do you see decentralized infrastructure playing in the future of open science?
+**What role do you see decentralized infrastructure playing in the future of open science?**
 
 There is potentially a really important role for decentralized infrastructure in open science. There seems to be a growing need to preserve not only the raw data used for research and science, but also for tracking the provenance of the scientific process –– data processing, analysis, and interpretation –– in order to ensure the quality and authenticity of contributions over time. It’s not clear that a centralized system could provide the flexibility and level of integrity, provenance, and trust that decentralized technology can.
 
-1. What’s next for EASIER Data Initiative’s work on decentralized data infrastructure?
+**What’s next for EASIER Data Initiative’s work on decentralized data infrastructure?**
 
 We have recently been focusing on how to design protocols and systems to make geospatial information interoperable on the decentralized web and provide more certainty about the provenance and reliability in a manner that can be tracked over time. There is a growing need to prove the location of people, events, or goods in an automated and trusted way, especially in the context of the rising agent economy. Towards this, we recently released the [Location Protocol](https://easierdata.org/updates/2025/2025-05-19-location-protocol-spec) and built a reference implementation, using the Ethereum attestation service. The really neat thing is that this essentially turns individual claims about location into rows of a decentralized geospatial database that can be openly contributed to and queried. We are currently working with project partners to build demonstrative applications and have plans to build a suite of tools around this technology to simplify the process of creating compliant geospatial information, querying it, and visualizing it.
 
