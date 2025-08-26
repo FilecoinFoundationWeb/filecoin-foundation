@@ -209,4 +209,5 @@ export const metadata = createMetadata({
   title: { absolute: BUILD_ON_FILECOIN_SEO.title },
   description: BUILD_ON_FILECOIN_SEO.description,
   path: PATHS.BUILD_ON_FILECOIN.path,
+  image: graphicsData.buildOnFilecoinSection.data.src,
 })

@@ -49,7 +49,7 @@ export default function CommunityHub() {
           />
         </PageSection>
 
-        <graphicsData.communityHero.data className="absolute -top-[25vw] left-[8vw] -z-10 w-[133vw]" />
+        <graphicsData.communityHubGradient.data className="absolute -top-[25vw] left-[8vw] -z-10 w-[133vw]" />
       </div>
 
       <PageSection backgroundVariant="dark">
@@ -128,7 +128,7 @@ export default function CommunityHub() {
           }
         />
         <div className="mt-40">
-          <SectionImage {...graphicsData.buildOnFilecoinSection} />
+          <SectionImage {...graphicsData.spiralGalaxyStarsSpace} />
         </div>
       </PageSection>
     </>

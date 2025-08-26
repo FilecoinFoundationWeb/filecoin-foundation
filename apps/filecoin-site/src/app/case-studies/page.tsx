@@ -40,7 +40,7 @@ export default function CaseStudies() {
           />
         </PageSection>
 
-        <graphicsData.caseStudies.data className="absolute -top-[840px] right-0 -z-10 hidden w-[600px] overflow-visible sm:block" />
+        <graphicsData.caseStudiesGradient.data className="absolute -top-[840px] right-0 -z-10 hidden w-[600px] overflow-visible sm:block" />
       </div>
 
       <PageSection paddingVariant="topOnly" backgroundVariant="dark">

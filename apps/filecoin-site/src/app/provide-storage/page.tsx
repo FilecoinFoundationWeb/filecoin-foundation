@@ -81,7 +81,7 @@ export default function ProvideStorage() {
           title="Optimize your storage potential"
           description="The Filecoin network empowers storage providers through a sustainable, incentive-driven marketplace built for longevity and reliability."
         >
-          <SectionImage {...graphicsData.provideStorageSection} />
+          <SectionImage {...graphicsData.serverBladeChassis} />
 
           <CardGrid as="ul" variant="smTwoLgThreeWider">
             {filecoinEarningsInsights.map(({ title, description, cta }) => (
@@ -170,7 +170,7 @@ export default function ProvideStorage() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <SectionImage {...graphicsData.provideStorageSection2} />
+        <SectionImage {...graphicsData.filecoinStorageDevice} />
 
         <SectionContent
           title="Empower a more open and resilient web"
@@ -193,4 +193,5 @@ export const metadata = createMetadata({
   title: { absolute: PROVIDE_STORAGE_SEO.title },
   description: PROVIDE_STORAGE_SEO.description,
   path: PATHS.PROVIDE_STORAGE.path,
+  image: graphicsData.filecoinStorageDevice.data.src,
 })
