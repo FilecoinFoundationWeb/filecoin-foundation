@@ -34,6 +34,7 @@ import { filecoinFeatures } from './data/filecoinFeatures'
 import { getInvolvedImages } from './data/getInvolvedImages'
 import { tutorialsAndGuides } from './data/tutorialsAndGuides'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getBadgeVariant } from './utils/getBadgeVariant'
 
 export default function BuildOnFilecoin() {
   return (
@@ -136,11 +137,14 @@ export default function BuildOnFilecoin() {
               ({ title, description, cta, difficulty }) => (
                 <SimpleCard
                   key={title}
-                  badge={difficulty}
                   as="li"
                   title={title}
                   description={description}
                   cta={cta}
+                  badge={{
+                    text: difficulty,
+                    variant: getBadgeVariant(difficulty),
+                  }}
                 />
               ),
             )}

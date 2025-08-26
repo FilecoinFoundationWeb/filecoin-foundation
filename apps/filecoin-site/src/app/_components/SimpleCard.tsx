@@ -8,7 +8,10 @@ export type SimpleCardProps = {
   title: string
   description: string
   as: 'li' | 'div'
-  badge?: BadgeProps['children']
+  badge: {
+    text: BadgeProps['children']
+    variant: BadgeProps['variant']
+  }
   border?: BorderKey
   cta?: {
     href: CTALinkProps['href']
@@ -71,7 +74,7 @@ export function SimpleCard({
       <div className={clsx('flex flex-col gap-6', layout.inner)}>
         {badge && (
           <div className="flex">
-            <Badge>{badge}</Badge>
+            <Badge variant={badge.variant}>{badge.text}</Badge>
           </div>
         )}
         <CardContent title={title} description={description} layout={layout} />
