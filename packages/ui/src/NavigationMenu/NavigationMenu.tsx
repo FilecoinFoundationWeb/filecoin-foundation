@@ -12,6 +12,7 @@ type PopOverProps = {
   panelClassName?: string
   as: React.ElementType
   children: React.ReactElement
+  isCurrent?: boolean
 }
 
 const SPACE_BETWEEN_PANEL_AND_BUTTON = 24
@@ -22,6 +23,7 @@ export function NavigationMenu({
   label,
   labelClassName,
   panelClassName,
+  isCurrent,
   children,
 }: PopOverProps) {
   return (
@@ -29,6 +31,7 @@ export function NavigationMenu({
       <PopoverButton
         aria-label={`${label} (opens a navigation menu)`}
         className={clsx('group', labelClassName)}
+        {...(isCurrent && { 'aria-current': 'true' })}
       >
         <span>{label}</span>
         <span className="transition-transform group-data-open:rotate-180">
