@@ -11,12 +11,13 @@ import { Social } from '@filecoin-foundation/ui/Social'
 import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
+import FooterDecorationLeft from '@/assets/graphics/footer-decoration-left.svg'
+import FooterDecorationRight from '@/assets/graphics/footer-decoration-right.svg'
+
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
 import { Logo } from '@/components/Logo'
 
-import FooterDecorationLeft from '@/assets/graphics/footer-decoration-left.svg'
-import FooterDecorationRight from '@/assets/graphics/footer-decoration-right.svg'
 
 type FooterSectionProps = {
   title: string
