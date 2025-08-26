@@ -77,9 +77,8 @@
 
   --color-cta-link-text: theme('colors.zinc.600');
 
-  --color-navigation-link-text: theme('colors.zinc.600');
-  --color-navigation-link-text-active: theme('colors.zinc.950');
-  --color-bg-navigation-link-hover: theme('colors.zinc.700 / 5%');
+  --color-navigation-link-text: theme('colors.zinc.900');
+  --color-navigation-link-background-active: theme('colors.zinc.100');
 
   --color-logo-item: theme('colors.zinc.400');
   --color-logo-item-hover: theme('colors.zinc.500');
@@ -119,9 +118,8 @@
 
   --color-cta-link-text: theme('colors.zinc.300');
 
-  --color-navigation-link-text: theme('colors.zinc.300');
-  --color-navigation-link-text-active: theme('colors.zinc.50');
-  --color-bg-navigation-link-hover: theme('colors.zinc.200 / 10%');
+  --color-navigation-link-text: theme('colors.zinc.50');
+  --color-navigation-link-background-active: theme('colors.zinc.800');
 
   --color-logo-item: theme('colors.zinc.400');
   --color-logo-item-hover: theme('colors.zinc.50');
