@@ -25,11 +25,10 @@ import { ecosystemResources } from './data/ecosystemResources'
 import { getInvolvedWithCommunity } from './data/getInvolvedWithCommunity'
 import { socialMedia } from './data/socialMedia'
 
-
 export default function CommunityHub() {
   return (
     <>
-      <GradientContainer overflowY="clip">
+      <GradientContainer overlay clipY>
         <graphicsData.communityHero.data className="absolute top-0 -right-[75vw] -z-20 w-[200vw] overflow-visible sm:-top-[30vw] md:-top-[50vw] lg:-top-[5vw] lg:-right-[20vw] lg:w-[90vw] 2xl:top-0 2xl:-right-[10vw] 2xl:w-[50vw]" />
 
         <Navigation backgroundVariant="transparentDark" />

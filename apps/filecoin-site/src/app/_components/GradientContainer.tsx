@@ -3,13 +3,15 @@ import { clsx } from 'clsx'
 import { backgroundVariants } from '@/components/Section'
 
 type GradientContainerProps = React.ComponentProps<'div'> & {
-  overflowY?: 'visible' | 'clip'
+  clipY?: boolean
+  overlay?: boolean
 }
 
 export function GradientContainer({
   children,
   className,
-  overflowY = 'visible',
+  clipY,
+  overlay,
   ...rest
 }: GradientContainerProps) {
   return (
@@ -18,14 +20,13 @@ export function GradientContainer({
       className={clsx(
         backgroundVariants.dark,
         'relative isolate overflow-x-clip',
-        overflowY === 'visible' && 'overflow-y-visible',
-        overflowY === 'clip' && 'overflow-y-clip',
+        clipY ? 'overflow-y-clip' : 'overflow-y-visible',
         className,
       )}
     >
       {children}
-      {overflowY === 'clip' && (
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent from-60% to-zinc-950" />
+      {overlay && (
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent from-50% to-zinc-950" />
       )}
     </div>
   )
