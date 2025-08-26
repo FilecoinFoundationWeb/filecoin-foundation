@@ -18,7 +18,6 @@ import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { Section } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
 import { SimpleCard } from '@/components/SimpleCard'
@@ -44,23 +43,20 @@ export default function BuildOnFilecoin() {
       />
 
       <Navigation backgroundVariant="dark" />
-      <PageSection backgroundVariant="dark">
-        <PageHeader
-          title="Build on Filecoin: open, scalable, verifiable storage"
-          description="Filecoin is a programmable, permissionless network from the ground up with cryptographic verification and global redundancy. Integrate decentralized storage that scales with your needs and safeguards data integrity at every layer."
-          cta={
-            <Button href={FILECOIN_DOCS_URL} variant="primary">
-              Explore documentation
-            </Button>
-          }
-        />
-      </PageSection>
-
-      <Section backgroundVariant="dark">
-        <div className="h-[480px] overflow-x-clip overflow-y-visible">
-          <graphicsData.buildOnFilecoinGradient.data className="relative -top-[100%] w-[200%] -translate-x-1/4 transform overflow-visible" />
-        </div>
-      </Section>
+      <div className="dark-section relative overflow-x-clip overflow-y-visible bg-zinc-950 pb-40 sm:pb-80">
+        <PageSection backgroundVariant="dark">
+          <PageHeader
+            title="Build on Filecoin: open, scalable, verifiable storage"
+            description="Filecoin is a programmable, permissionless network from the ground up with cryptographic verification and global redundancy. Integrate decentralized storage that scales with your needs and safeguards data integrity at every layer."
+            cta={
+              <Button href={FILECOIN_DOCS_URL} variant="primary">
+                Explore documentation
+              </Button>
+            }
+          />
+        </PageSection>
+        <graphicsData.buildOnFilecoinGradient.data className="absolute bottom-10 left-1/2 w-[150vw] -translate-x-1/2 transform overflow-visible 2xl:w-[2400px]" />
+      </div>
 
       <PageSection backgroundVariant="dark" paddingVariant="topOnly">
         <SectionContent title="Announcing Filecoin Onchain Cloud">
