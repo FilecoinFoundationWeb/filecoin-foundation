@@ -340,7 +340,7 @@
 
   /* CARD */
   .card-image {
-    @apply border border-[var(--color-border-base)];
+    @apply rounded-2xl border border-zinc-200;
   }
 
   /* COPY TO CLIPBOARD */
