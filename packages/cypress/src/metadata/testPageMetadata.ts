@@ -5,6 +5,10 @@ export type TestMetaDataOptions = {
   title: string
   description: string
   baseUrl: string
+  excludeMetadata?: {
+    og?: ['image']
+    twitter?: ['image']
+  }
 }
 
 export function testPageMetaData({
@@ -12,11 +16,11 @@ export function testPageMetaData({
   title,
   description,
   baseUrl,
+  excludeMetadata,
 }: TestMetaDataOptions) {
   const canonicalUrl = path === '/' ? baseUrl : `${baseUrl}${path}`
 
   cy.visit(path)
-
   // Title is not inside <head> element in DOM traversal context (it's a special case)
   cy.title().should('eq', title)
 
@@ -27,6 +31,7 @@ export function testPageMetaData({
       'content',
       description,
     )
+
     cy.get('link[rel="canonical"]').should('have.attr', 'href', canonicalUrl)
 
     // Open Graph metadata
@@ -39,7 +44,9 @@ export function testPageMetaData({
         'content',
         description,
       )
-      expect($els.filter('[property="og:image"]')).to.have.attr('content')
+      if (!excludeMetadata?.og?.includes('image')) {
+        expect($els.filter('[property="og:image"]')).to.have.attr('content')
+      }
     })
 
     // Twitter metadata
@@ -52,7 +59,9 @@ export function testPageMetaData({
         'content',
         description,
       )
-      expect($els.filter('[name="twitter:image"]')).to.have.attr('content')
+      if (!excludeMetadata?.twitter?.includes('image')) {
+        expect($els.filter('[name="twitter:image"]')).to.have.attr('content')
+      }
     })
   })
 }
