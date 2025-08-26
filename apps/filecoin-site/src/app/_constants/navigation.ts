@@ -1,3 +1,5 @@
+import type { Route } from 'next'
+
 import { PATHS } from './paths'
 import {
   FILECOIN_DOCS_URL,
@@ -6,7 +8,7 @@ import {
   FILECOIN_URLS,
 } from './siteMetadata'
 
-export type NavItem = { label: string; href: string }
+export type NavItem = { label: string; href: Route }
 
 type FooterNavigationItem = { title: string; items: Array<NavItem> }
 

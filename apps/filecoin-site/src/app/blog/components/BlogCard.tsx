@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+import type { Route } from 'next'
+
 import {
   CardImage,
   type CardImageProps,
@@ -58,7 +60,7 @@ export function BlogCard({
         </div>
 
         <Link
-          href={`${PATHS.BLOG.path}/${slug}`}
+          href={`${PATHS.BLOG.path}/${slug}` as Route}
           aria-label={`Read more about ${title}`}
           className="focus:brand-outline absolute inset-0 z-10"
         />
