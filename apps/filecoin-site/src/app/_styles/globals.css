@@ -467,7 +467,6 @@
   }
 
   /* NAVIGATION MENU   */
-
   .navigation-menu-link {
     @apply hover:bg-[var(--color-navigation-menu-link-background-hover)] focus:bg-[var(--color-navigation-menu-link-background-hover)];
   }
