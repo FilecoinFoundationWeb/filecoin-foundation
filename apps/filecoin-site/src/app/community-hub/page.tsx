@@ -1,7 +1,5 @@
 import Image from 'next/image'
 
-import clsx from 'clsx'
-
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -10,12 +8,12 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
+import { GradientContainer } from '@/components/GradientContainer'
 import { ImageGrid } from '@/components/ImageGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { backgroundVariants } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
 import { SimpleCard } from '@/components/SimpleCard'
@@ -27,15 +25,13 @@ import { ecosystemResources } from './data/ecosystemResources'
 import { getInvolvedWithCommunity } from './data/getInvolvedWithCommunity'
 import { socialMedia } from './data/socialMedia'
 
+
 export default function CommunityHub() {
   return (
     <>
-      <div
-        className={clsx(
-          'relative isolate overflow-clip',
-          backgroundVariants.dark,
-        )}
-      >
+      <GradientContainer overflowY="clip">
+        <graphicsData.communityHero.data className="absolute top-0 -right-[75vw] -z-20 w-[200vw] overflow-visible sm:-top-[30vw] md:-top-[50vw] lg:-top-[5vw] lg:-right-[20vw] lg:w-[90vw] 2xl:top-0 2xl:-right-[10vw] 2xl:w-[50vw]" />
+
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
@@ -48,9 +44,7 @@ export default function CommunityHub() {
             }
           />
         </PageSection>
-
-        <graphicsData.communityHero.data className="absolute -top-[25vw] left-[8vw] -z-10 w-[133vw]" />
-      </div>
+      </GradientContainer>
 
       <PageSection backgroundVariant="dark">
         <SectionContent
