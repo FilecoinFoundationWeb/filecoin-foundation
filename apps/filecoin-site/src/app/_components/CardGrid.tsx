@@ -13,6 +13,8 @@ const variants = {
   mdTwo: 'grid gap-8 md:grid-cols-2 md:gap-x-15',
   mdTwoWider: 'grid gap-15 md:grid-cols-2',
   mdTwoLgThree: 'grid gap-8 md:grid-cols-2 md:gap-x-15 lg:grid-cols-3',
+  mdTwoLgThreeXlFour:
+    'grid gap-8 md:grid-cols-2 md:gap-x-15 lg:grid-cols-3 xl:grid-cols-4',
   mdTwoLgThreeWide: 'grid gap-10 md:grid-cols-2 lg:grid-cols-3',
   mdThreeWider: 'grid gap-15 md:grid-cols-3',
   lgTwoWide: 'grid gap-10 lg:grid-cols-2',
