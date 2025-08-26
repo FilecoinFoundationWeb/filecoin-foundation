@@ -4,12 +4,15 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { tests } from '@/cypress/support'
 import { PRIVACY_POLICY_SEO } from '@/privacy-policy/constants/seo'
 
+const { path } = PATHS.PRIVACY_POLICY
+const { title, description } = PRIVACY_POLICY_SEO
+
 describe('Privacy Policy Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
-      path: PATHS.PRIVACY_POLICY.path,
-      title: PRIVACY_POLICY_SEO.title,
-      description: PRIVACY_POLICY_SEO.description,
+      path,
+      title,
+      description,
       baseUrl: BASE_URL,
       excludeMetadata: {
         og: ['image'],
@@ -19,10 +22,10 @@ describe('Privacy Policy Page', () => {
   })
 
   it(tests.links.prompt, () => {
-    tests.links.fn(PATHS.PRIVACY_POLICY.path)
+    tests.links.fn(path)
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn(PATHS.PRIVACY_POLICY.path)
+    tests.visualSnapshot.fn(path)
   })
 })

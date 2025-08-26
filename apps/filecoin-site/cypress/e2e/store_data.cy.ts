@@ -4,12 +4,15 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { tests } from '@/cypress/support'
 import { STORE_DATA_SEO } from '@/store-data/constants/seo'
 
+const { path } = PATHS.STORE_DATA
+const { title, description } = STORE_DATA_SEO
+
 describe('Store Data Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
-      path: PATHS.STORE_DATA.path,
-      title: STORE_DATA_SEO.title,
-      description: STORE_DATA_SEO.description,
+      path,
+      title,
+      description,
       baseUrl: BASE_URL,
       excludeMetadata: {
         og: ['image'],
@@ -19,10 +22,10 @@ describe('Store Data Page', () => {
   })
 
   it(tests.links.prompt, () => {
-    tests.links.fn(PATHS.STORE_DATA.path)
+    tests.links.fn(path)
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn(PATHS.STORE_DATA.path)
+    tests.visualSnapshot.fn(path)
   })
 })

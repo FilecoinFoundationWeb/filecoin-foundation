@@ -4,12 +4,15 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { tests } from '@/cypress/support'
 import { LEARN_SEO } from '@/learn/constants/seo'
 
+const { path } = PATHS.LEARN
+const { title, description } = LEARN_SEO
+
 describe('Learn Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
-      path: PATHS.LEARN.path,
-      title: LEARN_SEO.title,
-      description: LEARN_SEO.description,
+      path,
+      title,
+      description,
       baseUrl: BASE_URL,
       excludeMetadata: {
         og: ['image'],
@@ -19,10 +22,10 @@ describe('Learn Page', () => {
   })
 
   it(tests.links.prompt, () => {
-    tests.links.fn(PATHS.LEARN.path)
+    tests.links.fn(path)
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn(PATHS.LEARN.path)
+    tests.visualSnapshot.fn(path)
   })
 })

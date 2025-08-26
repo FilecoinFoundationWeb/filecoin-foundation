@@ -4,12 +4,15 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { CASE_STUDIES_SEO } from '@/case-studies/constants/seo'
 import { tests } from '@/cypress/support'
 
+const { path } = PATHS.CASE_STUDIES
+const { title, description } = CASE_STUDIES_SEO
+
 describe('Case Studies Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
-      path: PATHS.CASE_STUDIES.path,
-      title: CASE_STUDIES_SEO.title,
-      description: CASE_STUDIES_SEO.description,
+      path,
+      title,
+      description,
       baseUrl: BASE_URL,
       excludeMetadata: {
         og: ['image'],
@@ -19,10 +22,10 @@ describe('Case Studies Page', () => {
   })
 
   it(tests.links.prompt, () => {
-    tests.links.fn(PATHS.CASE_STUDIES.path)
+    tests.links.fn(path)
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn(PATHS.CASE_STUDIES.path)
+    tests.visualSnapshot.fn(path)
   })
 })

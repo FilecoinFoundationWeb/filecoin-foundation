@@ -4,12 +4,15 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { BLOG_SEO } from '@/blog/constants/seo'
 import { tests } from '@/cypress/support'
 
+const { path } = PATHS.BLOG
+const { title, description } = BLOG_SEO
+
 describe('Blog Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
-      path: PATHS.BLOG.path,
-      title: BLOG_SEO.title,
-      description: BLOG_SEO.description,
+      path,
+      title,
+      description,
       baseUrl: BASE_URL,
       excludeMetadata: {
         og: ['image'],
@@ -19,10 +22,10 @@ describe('Blog Page', () => {
   })
 
   it(tests.links.prompt, () => {
-    tests.links.fn(PATHS.BLOG.path)
+    tests.links.fn(path)
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn(PATHS.BLOG.path)
+    tests.visualSnapshot.fn(path)
   })
 })
