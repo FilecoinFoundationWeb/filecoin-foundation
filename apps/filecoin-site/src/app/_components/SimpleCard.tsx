@@ -8,7 +8,7 @@ export type SimpleCardProps = {
   title: string
   description: string
   as: 'li' | 'div'
-  badge: {
+  badge?: {
     text: BadgeProps['children']
     variant: BadgeProps['variant']
   }
