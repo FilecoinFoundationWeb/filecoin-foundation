@@ -14,12 +14,7 @@ export function NavigationMenuPanel({ items }: NavigationMenuPanelProps) {
           <p className="mb-2 px-4 text-sm text-[var(--color-paragraph-text)]">
             {item.title}
           </p>
-          <ul
-            className="grid gap-4"
-            style={{
-              gridTemplateColumns: `repeat(${Math.floor(item.links.length / 2)}, minmax(0, 1fr))`,
-            }}
-          >
+          <ul className="grid grid-flow-col grid-rows-2 gap-4 py-2">
             {item.links.map((link) => (
               <li key={link.href}>
                 <NavigationMenuLink {...link} />
