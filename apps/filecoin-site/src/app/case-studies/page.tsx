@@ -1,5 +1,3 @@
-import clsx from 'clsx'
-
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -8,10 +6,10 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
+import { GradientContainer } from '@/components/GradientContainer'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { backgroundVariants } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
@@ -21,12 +19,9 @@ import { caseStudies } from './data/caseStudies'
 export default function CaseStudies() {
   return (
     <>
-      <div
-        className={clsx(
-          'relative isolate overflow-x-clip',
-          backgroundVariants.dark,
-        )}
-      >
+      <GradientContainer>
+        <graphicsData.caseStudies.data className="absolute -top-[40vw] -right-[25vw] -z-10 hidden overflow-visible md:-top-[45vw] md:right-0 md:block md:w-[50vw] lg:-top-[50vw] lg:w-[45vw] xl:w-[40vw] 2xl:w-[33vw]" />
+
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
@@ -39,9 +34,7 @@ export default function CaseStudies() {
             }
           />
         </PageSection>
-
-        <graphicsData.caseStudies.data className="absolute -top-[840px] right-0 -z-10 hidden w-[600px] overflow-visible sm:block" />
-      </div>
+      </GradientContainer>
 
       <PageSection paddingVariant="topOnly" backgroundVariant="dark">
         <SectionContent
