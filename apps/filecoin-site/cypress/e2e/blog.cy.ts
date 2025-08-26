@@ -14,10 +14,6 @@ describe('Blog Page', () => {
       title,
       description,
       baseUrl: BASE_URL,
-      excludeMetadata: {
-        og: ['image'],
-        twitter: ['image'],
-      },
     })
   })
 

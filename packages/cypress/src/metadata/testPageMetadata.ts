@@ -5,10 +5,6 @@ export type TestMetaDataOptions = {
   title: string
   description: string
   baseUrl: string
-  excludeMetadata?: {
-    og?: ['image']
-    twitter?: ['image']
-  }
 }
 
 export function testPageMetaData({
@@ -16,7 +12,6 @@ export function testPageMetaData({
   title,
   description,
   baseUrl,
-  excludeMetadata,
 }: TestMetaDataOptions) {
   const canonicalUrl = path === '/' ? baseUrl : `${baseUrl}${path}`
 
@@ -44,9 +39,7 @@ export function testPageMetaData({
         'content',
         description,
       )
-      if (!excludeMetadata?.og?.includes('image')) {
-        expect($els.filter('[property="og:image"]')).to.have.attr('content')
-      }
+      expect($els.filter('[property="og:image"]')).to.have.attr('content')
     })
 
     // Twitter metadata
@@ -59,9 +52,7 @@ export function testPageMetaData({
         'content',
         description,
       )
-      if (!excludeMetadata?.twitter?.includes('image')) {
-        expect($els.filter('[name="twitter:image"]')).to.have.attr('content')
-      }
+      expect($els.filter('[name="twitter:image"]')).to.have.attr('content')
     })
   })
 }
