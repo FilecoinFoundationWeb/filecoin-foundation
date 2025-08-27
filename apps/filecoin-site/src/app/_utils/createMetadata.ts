@@ -5,7 +5,7 @@ import {
 
 import { FILECOIN_URLS, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
-// import { graphicsData } from '@/data/graphicsData'
+import { graphicsData } from '@/data/graphicsData'
 
 export type MetadataParams = Omit<
   SharedMetadataParams,
@@ -15,7 +15,7 @@ export type MetadataParams = Omit<
 export function createMetadata(args: MetadataParams) {
   return sharedCreateMetadata({
     ...args,
-    fallbackImage: '', // #todo: add image
+    fallbackImage: graphicsData.fallback.data.src,
     orgName: ORGANIZATION_NAME,
     orgHandle: FILECOIN_URLS.social.twitter.handle,
   })

@@ -29,7 +29,7 @@ export default function CommunityHub() {
   return (
     <>
       <GradientContainer overlay clipY>
-        <graphicsData.communityHero.data className="absolute top-0 -right-[75vw] -z-20 w-[200vw] overflow-visible sm:-top-[30vw] md:-top-[50vw] lg:-top-[5vw] lg:-right-[20vw] lg:w-[90vw] 2xl:top-0 2xl:-right-[10vw] 2xl:w-[50vw]" />
+        <graphicsData.communityHubGradient.data className="absolute top-0 -right-[75vw] -z-20 w-[200vw] overflow-visible sm:-top-[30vw] md:-top-[50vw] lg:-top-[5vw] lg:-right-[20vw] lg:w-[90vw] 2xl:top-0 2xl:-right-[10vw] 2xl:w-[50vw]" />
 
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
@@ -121,7 +121,7 @@ export default function CommunityHub() {
           }
         />
         <div className="mt-40">
-          <SectionImage {...graphicsData.buildOnFilecoinSection} />
+          <SectionImage {...graphicsData.spiralGalaxyStarsSpace} />
         </div>
       </PageSection>
     </>

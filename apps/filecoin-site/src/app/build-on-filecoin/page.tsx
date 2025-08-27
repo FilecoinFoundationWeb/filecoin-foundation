@@ -78,7 +78,7 @@ export default function BuildOnFilecoin() {
         </SectionContent>
 
         <div className="mt-15 md:mt-20">
-          <SectionImage {...graphicsData.buildOnFilecoinSection} />
+          <SectionImage {...graphicsData.spiralGalaxyStarsSpace} />
         </div>
       </PageSection>
 
@@ -208,4 +208,5 @@ export const metadata = createMetadata({
   title: { absolute: BUILD_ON_FILECOIN_SEO.title },
   description: BUILD_ON_FILECOIN_SEO.description,
   path: PATHS.BUILD_ON_FILECOIN.path,
+  image: graphicsData.spiralGalaxyStarsSpace.data.src,
 })

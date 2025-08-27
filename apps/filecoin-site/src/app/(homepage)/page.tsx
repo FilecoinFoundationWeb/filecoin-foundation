@@ -124,7 +124,7 @@ export default async function Home() {
             ]}
           />
 
-          <SectionImage {...graphicsData.learnLibrarySection} />
+          <SectionImage {...graphicsData.classicLibraryInterior} />
         </SectionContent>
       </PageSection>
 
@@ -144,8 +144,8 @@ export default async function Home() {
             }
           />
           <Image
-            src={graphicsData.homepageIPFSIllustration.data}
-            alt={graphicsData.homepageIPFSIllustration.alt}
+            src={graphicsData.IPFSIllustration.data}
+            alt={graphicsData.IPFSIllustration.alt}
             className="h-72 min-w-80 object-contain"
           />
         </SectionContentWrapper>
@@ -268,5 +268,5 @@ export const metadata = createMetadata({
   title: { absolute: SEO.title },
   description: SEO.description,
   path: PATHS.HOME.path,
-  image: '', // #todo: add image
+  image: graphicsData.classicLibraryInterior.data.src,
 })
