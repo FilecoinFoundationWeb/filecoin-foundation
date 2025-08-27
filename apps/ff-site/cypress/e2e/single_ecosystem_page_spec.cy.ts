@@ -1,12 +1,12 @@
 import path from 'path'
 
+import { tests } from '@filecoin-foundation/cypress/support'
 import { getMetaTitleWithSuffix } from '@filecoin-foundation/cypress/utils'
 import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
-import { tests } from '@/cypress/support'
 import { METADATA_TITLE_SUFFIX } from '@/ecosystem-explorer/constants/metadata'
 
 const CONTENT_FOLDER = PATHS.ECOSYSTEM_EXPLORER.entriesPath

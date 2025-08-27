@@ -1,9 +1,8 @@
+import { tests } from '@filecoin-foundation/cypress/support'
 import type { PageFrontmatterSeo } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
-
-import { tests } from '@/cypress/support'
 
 const { contentPath, path } = PATHS.ABOUT
 

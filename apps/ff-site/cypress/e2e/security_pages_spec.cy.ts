@@ -1,10 +1,9 @@
+import { tests } from '@filecoin-foundation/cypress/support'
 import { getMetaTitleTemplate } from '@filecoin-foundation/cypress/utils'
 import type { PageFrontmatterSeo } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ROOT_METADATA } from '@/constants/siteMetadata'
-
-import { tests } from '@/cypress/support'
 
 describe('Security - Main Page', () => {
   const { contentPath, path } = PATHS.SECURITY
