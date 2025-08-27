@@ -1,5 +1,7 @@
 'use client'
 
+import { clsx } from 'clsx'
+
 import { type ExpandedNavItem } from '@/constants/navigation'
 
 import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
@@ -12,13 +14,25 @@ type NavigationMenuPanelProps = {
   items: ExpandedNavItem['items']
 }
 
+const roundedStyle = 'rounded-xl'
+
 export function NavigationMenuPanel({ items }: NavigationMenuPanelProps) {
   const backgroundVariant = useBackgroundVariant()
   const desktopBackgroundVariant = variantMapping[backgroundVariant]
 
   return (
-    <div className={backgroundVariants[desktopBackgroundVariant]}>
-      <div className="rounded-xl border border-[var(--color-navigation-menu-panel-border)] bg-[var(--color-navigation-menu-panel-background)] py-6">
+    <div
+      className={clsx(
+        roundedStyle,
+        backgroundVariants[desktopBackgroundVariant],
+      )}
+    >
+      <div
+        className={clsx(
+          roundedStyle,
+          'border border-[var(--color-navigation-menu-panel-border)] bg-[var(--color-navigation-menu-panel-background)] py-6',
+        )}
+      >
         <div className="flex divide-x divide-[var(--color-border-base)]">
           {items.map((item) => (
             <div key={item.title} className="px-4">
