@@ -1,8 +1,9 @@
+import { tests } from '@filecoin-foundation/cypress/support'
+
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { ABOUT_SEO } from '@/about/constants/seo'
-import { tests } from '@/cypress/support'
 
 describe('About Page', () => {
   it(tests.metadata.prompt, () => {

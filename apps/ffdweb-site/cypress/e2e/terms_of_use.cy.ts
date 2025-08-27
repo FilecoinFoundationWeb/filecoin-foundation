@@ -1,15 +1,21 @@
-import { PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
+import { tests } from '@filecoin-foundation/cypress/support'
+import { getMetaTitleTemplate } from '@filecoin-foundation/cypress/utils'
 
-import { tests } from '@/cypress/support'
-import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
+import { PATHS } from '@/constants/paths'
+import { BASE_URL, ROOT_METADATA } from '@/constants/siteMetadata'
+
 import { TERMS_OF_USE_SEO } from '@/terms-of-use/constants/seo'
 
 describe('Terms of Use Page', () => {
   it(tests.metadata.prompt, () => {
+    const metaTitleTemplate = getMetaTitleTemplate({
+      title: TERMS_OF_USE_SEO.title,
+      rootMetadata: ROOT_METADATA,
+    })
+
     tests.metadata.fn({
       path: PATHS.TERMS_OF_USE.path,
-      title: getMetaTitleTemplate(TERMS_OF_USE_SEO.title),
+      title: metaTitleTemplate,
       description: TERMS_OF_USE_SEO.description,
       baseUrl: BASE_URL,
     })
