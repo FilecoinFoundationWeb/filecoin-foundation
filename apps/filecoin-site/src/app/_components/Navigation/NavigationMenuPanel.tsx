@@ -10,7 +10,7 @@ import { backgroundVariants } from '@/components/Section'
 import { variantMapping } from './constants'
 import { NavigationMenuLink } from './NavigationMenuLink'
 
-const roundedStyle = 'rounded-xl'
+const roundedStyle = 'rounded-2xl'
 
 export function NavigationMenuPanel({
   items,
