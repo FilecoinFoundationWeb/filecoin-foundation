@@ -4,11 +4,11 @@ import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
 
-import { MarkdownImage, MarkdownLink } from '@filecoin-foundation/ui/Markdown'
-
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
+import { MarkdownImage } from '@filecoin-foundation/ui/Markdown'
 
 import { graphicsData } from '@/data/graphicsData'
+
+import { MarkdownLink } from '@/components/MarkdownLink'
 
 type PluggableList = Parameters<typeof ReactMarkdown>[0]['rehypePlugins']
 
@@ -18,8 +18,10 @@ export type MarkdownContentProps = {
 }
 
 const markdownComponents: Components = {
-  img: (props) => <MarkdownImage {...props} fallbackImage={graphicsData.imageFallback} />,
-  a: (props) => <MarkdownLink {...props} baseDomain={BASE_DOMAIN} />,
+  img: (props) => (
+    <MarkdownImage {...props} fallbackImage={graphicsData.imageFallback} />
+  ),
+  a: (props) => <MarkdownLink {...props} />,
 }
 
 export function MarkdownContent({
