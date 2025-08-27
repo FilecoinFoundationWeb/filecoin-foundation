@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 
 import type { PageFrontmatterSeo } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
-import { MARKDOWN_EXTENSION } from '../constants/markdownExtension'
+import { MARKDOWN_EXTENSION } from '@filecoin-foundation/utils/constants/fileExtensions'
 
 export async function getPageFrontmatterSeo(contentPath: string) {
   const file = await fs.readFile(contentPath + MARKDOWN_EXTENSION, 'utf8')

@@ -10,6 +10,7 @@
     "./metadata": "./src/metadata/index.ts",
     "./links": "./src/links/index.ts",
     "./percy": "./src/percy/index.ts",
+    "./support": "./src/support/index.ts",
     "./tasks": "./src/tasks/index.ts",
     "./utils": "./src/utils/index.ts"
   },

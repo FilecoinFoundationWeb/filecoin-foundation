@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 
 import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
-import { MARKDOWN_EXTENSION } from '../constants/markdownExtension'
+import { MARKDOWN_EXTENSION } from '@filecoin-foundation/utils/constants/fileExtensions'
 
 export async function getEntryFrontmatter(path: string) {
   const file = await fs.readFile(path + MARKDOWN_EXTENSION, 'utf8')
