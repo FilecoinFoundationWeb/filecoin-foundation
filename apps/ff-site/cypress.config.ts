@@ -1,8 +1,10 @@
 import { defineConfig } from 'cypress'
 
-import { getEntryFrontmatter } from './cypress/tasks/getEntryFrontmatter'
-import { getPageFrontmatterSeo } from './cypress/tasks/getPageFrontmatterSeo'
-import { getRandomSlug } from './cypress/tasks/getRandomSlug'
+import {
+  getEntryFrontmatter,
+  getPageFrontmatterSeo,
+  getRandomSlug,
+} from '@filecoin-foundation/cypress/tasks'
 
 export default defineConfig({
   e2e: {
@@ -11,9 +13,9 @@ export default defineConfig({
     supportFile: false,
     setupNodeEvents(on) {
       on('task', {
+        getEntryFrontmatter,
         getPageFrontmatterSeo,
         getRandomSlug,
-        getEntryFrontmatter,
       })
     },
   },

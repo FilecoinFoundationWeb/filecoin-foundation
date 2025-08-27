@@ -1,11 +1,12 @@
 import path from 'path'
 
+import { getMetaTitleWithSuffix } from '@filecoin-foundation/cypress/utils'
+import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
+
 import { PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
+import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 import { tests } from '@/cypress/support'
-import type { GenericEntryFrontmatter } from '@/cypress/tasks/getEntryFrontmatter'
-import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 import { METADATA_TITLE_SUFFIX } from '@/ecosystem-explorer/constants/metadata'
 
 const CONTENT_FOLDER = PATHS.ECOSYSTEM_EXPLORER.entriesPath
@@ -18,7 +19,10 @@ describe('Random Ecosystem Project', () => {
         path.join(CONTENT_FOLDER, slug),
       ).then(({ title, seo }) => {
         const metaTitle = seo.title || title + METADATA_TITLE_SUFFIX
-        const metaTitleWithSuffix = getMetaTitleWithSuffix(metaTitle)
+        const metaTitleWithSuffix = getMetaTitleWithSuffix({
+          title: metaTitle,
+          organizationName: ORGANIZATION_NAME,
+        })
 
         tests.metadata.fn({
           path: path.join(PATHS.ECOSYSTEM_EXPLORER.path, slug),
