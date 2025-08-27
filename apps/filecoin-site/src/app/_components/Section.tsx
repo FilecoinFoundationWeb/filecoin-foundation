@@ -2,7 +2,7 @@ import { clsx } from 'clsx'
 
 import { BackgroundVariantContextProvider } from './BackgroundVariantContext'
 
-type BackgroundVariant = keyof typeof backgroundVariants
+export type BackgroundVariant = keyof typeof backgroundVariants
 
 export type SectionProps = {
   backgroundVariant: BackgroundVariant

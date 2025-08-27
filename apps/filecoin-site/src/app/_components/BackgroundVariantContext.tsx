@@ -2,10 +2,9 @@
 
 import { createContext, use } from 'react'
 
-import type { SectionProps } from './Section'
+import type { BackgroundVariant } from './Section'
 
-const BackgroundVariantContext =
-  createContext<SectionProps['backgroundVariant']>('transparent')
+const BackgroundVariantContext = createContext<BackgroundVariant>('transparent')
 
 export function useBackgroundVariant() {
   const backgroundVariant = use(BackgroundVariantContext)
@@ -21,7 +20,7 @@ export function useBackgroundVariant() {
 
 type BackgroundVariantContextProviderProps = {
   children: React.ReactNode
-  value: SectionProps['backgroundVariant']
+  value: BackgroundVariant
 }
 
 export function BackgroundVariantContextProvider({
