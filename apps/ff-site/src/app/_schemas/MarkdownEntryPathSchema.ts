@@ -1,10 +1,8 @@
 import { z } from 'zod'
 
-import {
-  WORKSPACE_ROOT,
-  CONTENT_ROOT,
-  MARKDOWN_EXTENSION,
-} from '@/constants/paths'
+import { MARKDOWN_EXTENSION } from '@filecoin-foundation/utils/constants/fileExtensions'
+
+import { CONTENT_ROOT, WORKSPACE_ROOT } from '@/constants/paths'
 
 export const MarkdownEntryPathSchema = z.string().refine(isValidMarkdownPath, {
   error: 'Invalid markdown file path format',
