@@ -15,8 +15,8 @@ export function Navigation({ backgroundVariant }: NavigationProps) {
       <Container>
         <nav className="flex items-center justify-between py-8 lg:gap-24 xl:justify-start">
           <HomeLogoIconLink />
-          <MobileNavigation backgroundVariant={backgroundVariant} />
-          <DesktopNavigation backgroundVariant={backgroundVariant} />
+          <MobileNavigation />
+          <DesktopNavigation />
         </nav>
       </Container>
     </Section>
