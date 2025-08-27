@@ -7,6 +7,7 @@ import SetiInstituteLogo from '@/assets/logos/seti-institute-logo.svg'
 import SmithsonianLogo from '@/assets/logos/smithsonian-icon-logo.png'
 import SolanaLogo from '@/assets/logos/solana-icon-logo.png'
 import StarlingLabLogo from '@/assets/logos/starling-lab-icon-logo.png'
+import VictorChangLogo from '@/assets/logos/victor-chang-icon-logo.svg'
 
 import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
@@ -142,6 +143,21 @@ export const caseStudies = [
       type: 'image',
       src: StarlingLabLogo,
       bgColor: '#FAF8F2',
+    },
+  },
+  {
+    title: 'Victor Chang Cardiac Research Institute',
+    description:
+      'The Victor Chang Cardiac Research Institute uses Filecoin to securely store and preserve over 125 TiB of vital cardiac research data.',
+    cta: {
+      href: 'https://www.victorchang.edu.au/',
+      text: CTA_TEXT,
+    },
+    logo: {
+      type: 'svg',
+      src: VictorChangLogo,
+      bgColor: '#ffffff',
+      color: '#000000',
     },
   },
 ] as const satisfies Array<SimpleCardWithLogoProps>

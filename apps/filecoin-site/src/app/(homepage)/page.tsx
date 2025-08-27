@@ -18,6 +18,7 @@ import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { Container } from '@/components/Container'
+import { GradientContainer } from '@/components/GradientContainer'
 import { ImageGrid } from '@/components/ImageGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
@@ -53,35 +54,33 @@ export default async function Home() {
       <StructuredDataScript structuredData={generateStructuredData(SEO)} />
 
       <Navigation backgroundVariant="dark" />
-      <Section backgroundVariant="dark">
-        <Container>
-          <div className="space-y-15 pt-24 pb-24 md:pt-32">
-            {/* todo look into when we need space-y-15 */}
-            <Announcement centered href={PATHS.BLOG.path}>
-              Announcing Filecoin Onchain Cloud
-            </Announcement>
-            <PageHeader
-              centered
-              title="Preserve humanity's most important information"
-              description="Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control."
-              cta={[
-                <Button href={PATHS.STORE_DATA.path} variant="primary">
-                  Store data
-                </Button>,
-                <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
-                  Start building
-                </Button>,
-              ]}
-            />
-          </div>
-        </Container>
-      </Section>
+      <GradientContainer className="pb-40 sm:pb-96 2xl:pb-[25vw]">
+        <graphicsData.homepageGradient.data className="absolute -bottom-[10vw] left-1/2 w-[400vw] -translate-x-1/2 transform overflow-visible sm:bottom-0 md:w-[250vw] lg:w-[200vw] 2xl:-bottom-[1vw]" />
 
-      <Section backgroundVariant="dark">
-        <div className="overflow-x-clip overflow-y-visible">
-          <graphicsData.homepageGradient.data className="w-[200%] -translate-x-1/3 transform overflow-visible" />
-        </div>
-      </Section>
+        <Section backgroundVariant="dark">
+          <Container>
+            <div className="space-y-15 pt-24 pb-24 md:pt-32">
+              {/* todo look into when we need space-y-15 */}
+              <Announcement centered href={PATHS.BLOG.path}>
+                Announcing Filecoin Onchain Cloud
+              </Announcement>
+              <PageHeader
+                centered
+                title="Preserve humanity's most important information"
+                description="Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control."
+                cta={[
+                  <Button href={PATHS.STORE_DATA.path} variant="primary">
+                    Store data
+                  </Button>,
+                  <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
+                    Start building
+                  </Button>,
+                ]}
+              />
+            </div>
+          </Container>
+        </Section>
+      </GradientContainer>
 
       <PageSection backgroundVariant="dark">
         <LogoSection
@@ -125,7 +124,7 @@ export default async function Home() {
             ]}
           />
 
-          <SectionImage {...graphicsData.learnLibrarySection} />
+          <SectionImage {...graphicsData.classicLibraryInterior} />
         </SectionContent>
       </PageSection>
 
@@ -145,8 +144,8 @@ export default async function Home() {
             }
           />
           <Image
-            src={graphicsData.homepageIPFSIllustration.data}
-            alt={graphicsData.homepageIPFSIllustration.alt}
+            src={graphicsData.IPFSIllustration.data}
+            alt={graphicsData.IPFSIllustration.alt}
             className="h-72 min-w-80 object-contain"
           />
         </SectionContentWrapper>
@@ -269,5 +268,5 @@ export const metadata = createMetadata({
   title: { absolute: SEO.title },
   description: SEO.description,
   path: PATHS.HOME.path,
-  image: '', // #todo: add image
+  image: graphicsData.classicLibraryInterior.data.src,
 })

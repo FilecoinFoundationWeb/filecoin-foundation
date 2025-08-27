@@ -1,10 +1,24 @@
+import clsx from 'clsx'
+
 export type BadgeProps = {
+  variant?: keyof typeof variantClasses
   children: string
 }
 
-export function Badge({ children }: BadgeProps) {
+const variantClasses = {
+  primary: 'text-brand-950 border-brand-600',
+  secondary: 'text-amber-950 border-amber-600',
+  tertiary: 'text-red-950 border-red-600',
+} as const
+
+export function Badge({ children, variant = 'primary' }: BadgeProps) {
   return (
-    <span className="text-brand-950 bg-brand-50 border-brand-100 inline-block rounded-full border px-4 py-1 text-sm font-medium capitalize">
+    <span
+      className={clsx(
+        'inline-block rounded-full border px-4 py-1 text-sm font-medium capitalize',
+        variantClasses[variant],
+      )}
+    >
       {children}
     </span>
   )
