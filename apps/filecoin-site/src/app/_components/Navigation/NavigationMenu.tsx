@@ -6,9 +6,8 @@ import { NavigationMenu as SharedNavigationMenu } from '@filecoin-foundation/ui/
 
 import type { ExpandedNavItem } from '@/constants/navigation'
 
+import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
 import { backgroundVariants } from '@/components/Section'
-
-import type { SectionProps } from '../Section'
 
 import { variantMapping } from './constants'
 import { desktopStyle } from './NavigationMainLink'
@@ -17,18 +16,13 @@ import { useIsNavigationMenuActive } from './useIsNavigationMenuActive'
 
 const roundedStyle = 'rounded-xl'
 
-type MobileNavigationProps = {
-  backgroundVariant: SectionProps['backgroundVariant']
-} & ExpandedNavItem
+type MobileNavigationProps = ExpandedNavItem
 
-export function NavigationMenu({
-  label,
-  items,
-  backgroundVariant,
-}: MobileNavigationProps) {
-  const desktopBackgroundVariant = variantMapping[backgroundVariant]
-
+export function NavigationMenu({ label, items }: MobileNavigationProps) {
+  const backgroundVariant = useBackgroundVariant()
   const isActive = useIsNavigationMenuActive(items)
+
+  const desktopBackgroundVariant = variantMapping[backgroundVariant]
 
   return (
     <SharedNavigationMenu
