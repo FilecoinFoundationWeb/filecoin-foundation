@@ -78,7 +78,7 @@ export function ProvideStorageForm() {
 
         <ControlledFormCheckbox<ProvideStorageFormData>
           name="communicationOptIn"
-          label="I agree to receive other communications from Filecoin Foundation. You may unsubscribe from these communications at any time."
+          label="I agree to receive other communications from Protocol Labs and Filecoin Foundation. You may unsubscribe from these communications at any time."
         />
       </div>
 

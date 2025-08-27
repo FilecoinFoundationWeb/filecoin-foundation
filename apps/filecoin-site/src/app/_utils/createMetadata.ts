@@ -7,8 +7,6 @@ import { FILECOIN_URLS, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
-// import { graphicsData } from '@/data/graphicsData'
-
 export type MetadataParams = Omit<
   SharedMetadataParams,
   'fallbackImage' | 'orgName' | 'orgHandle'

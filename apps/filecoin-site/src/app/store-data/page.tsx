@@ -125,4 +125,5 @@ export const metadata = createMetadata({
   title: { absolute: STORE_DATA_SEO.title },
   description: STORE_DATA_SEO.description,
   path: PATHS.STORE_DATA.path,
+  image: graphicsData.digitalMediaConversionSetup.data.src,
 })
