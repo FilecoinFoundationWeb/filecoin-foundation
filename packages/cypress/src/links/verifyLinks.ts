@@ -35,6 +35,6 @@ function isClientOrServerError(status: number) {
   )
 }
 
-function getErrorMessage(response: Cypress.Response<any>) {
+function getErrorMessage(response: Cypress.Response<unknown>) {
   return `Status code: ${response.status} (${response.statusText})`
 }
