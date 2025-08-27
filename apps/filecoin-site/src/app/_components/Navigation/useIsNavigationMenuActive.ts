@@ -2,10 +2,12 @@ import { usePathname } from 'next/navigation'
 
 import { isInternalLink } from '@filecoin-foundation/utils/linkUtils'
 
-import type { ExpandedNavItem } from '@/constants/navigation'
+import type { LabelledExpandedNavItems } from '@/constants/navigation'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-export function useIsNavigationMenuActive(items: ExpandedNavItem['items']) {
+export function useIsNavigationMenuActive(
+  items: LabelledExpandedNavItems['items'],
+) {
   const pathname = usePathname()
 
   const links = items.flatMap((item) => item.links).map((item) => item.href)
