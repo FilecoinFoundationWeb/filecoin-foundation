@@ -1,5 +1,3 @@
-import clsx from 'clsx'
-
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
@@ -12,12 +10,12 @@ import { createMetadata } from '@/utils/createMetadata'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
+import { GradientContainer } from '@/components/GradientContainer'
 import { Heading } from '@/components/Heading'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { backgroundVariants } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
@@ -39,12 +37,7 @@ export default function ProvideStorage() {
         structuredData={generateStructuredData(PROVIDE_STORAGE_SEO)}
       />
 
-      <div
-        className={clsx(
-          'relative isolate overflow-x-clip',
-          backgroundVariants.dark,
-        )}
-      >
+      <GradientContainer className="lg:pb-20">
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
@@ -64,8 +57,8 @@ export default function ProvideStorage() {
           />
         </PageSection>
 
-        <graphicsData.planetsShadow.data className="-z-10 w-[125vw] -translate-x-1/12 transform overflow-visible py-4 sm:mx-auto sm:w-4/5 sm:py-16 lg:absolute lg:top-[20%] lg:-right-1/5 lg:mx-0 lg:w-[760px] lg:py-0 2xl:w-[860px]" />
-      </div>
+        <graphicsData.planetsShadow.data className="relative -left-[12vw] -z-10 w-[125vw] transform overflow-visible sm:left-0 sm:mx-auto sm:w-4/5 lg:absolute lg:top-[12vw] lg:-right-[20vw] lg:left-auto lg:mx-0 lg:w-[55vw] lg:py-0 2xl:top-[2vw] 2xl:-right-[25vw] 2xl:w-[50vw]" />
+      </GradientContainer>
 
       <PageSection paddingVariant="none" backgroundVariant="dark">
         <div className="py-24" />
@@ -81,7 +74,7 @@ export default function ProvideStorage() {
           title="Optimize your storage potential"
           description="The Filecoin network empowers storage providers through a sustainable, incentive-driven marketplace built for longevity and reliability."
         >
-          <SectionImage {...graphicsData.provideStorageSection} />
+          <SectionImage {...graphicsData.serverBladeChassis} />
 
           <CardGrid as="ul" variant="smTwoLgThreeWider">
             {filecoinEarningsInsights.map(({ title, description, cta }) => (
@@ -170,7 +163,7 @@ export default function ProvideStorage() {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <SectionImage {...graphicsData.provideStorageSection2} />
+        <SectionImage {...graphicsData.filecoinStorageDevice} />
 
         <SectionContent
           title="Empower a more open and resilient web"
@@ -193,4 +186,5 @@ export const metadata = createMetadata({
   title: { absolute: PROVIDE_STORAGE_SEO.title },
   description: PROVIDE_STORAGE_SEO.description,
   path: PATHS.PROVIDE_STORAGE.path,
+  image: graphicsData.filecoinStorageDevice.data.src,
 })
