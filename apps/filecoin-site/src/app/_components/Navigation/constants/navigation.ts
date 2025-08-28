@@ -81,18 +81,28 @@ const networkMonitoringItems: Array<ExpandedNavItem> = [
   },
 ]
 
+const developerResourcesItems: Array<ExpandedNavItem> = [
+  {
+    label: 'Documentation',
+    description: 'Official documentation for Filecoin',
+    href: FILECOIN_DOCS_URL,
+  },
+  {
+    label: 'Cookbook',
+    description: 'Recipes for building with Filecoin and the FVM',
+    href: FILECOIN_DOCS_URLS.builderCookbook,
+  },
+  {
+    label: FILECOIN_URLS.github.label,
+    description: "Explore Filecoin's open-source repositories",
+    href: FILECOIN_URLS.github.href,
+  },
+]
+
 const resourceItems: Array<NavItem> = [
-  { label: 'Documentation', href: FILECOIN_DOCS_URL },
-  { label: 'Cookbook', href: FILECOIN_DOCS_URLS.builderCookbook },
-  { label: FILECOIN_URLS.github.label, href: FILECOIN_URLS.github.href },
-  {
-    label: FILECOIN_FOUNDATION_URLS.grants.label,
-    href: FILECOIN_FOUNDATION_URLS.grants.href,
-  },
-  {
-    label: FILECOIN_URLS.securityBugBounty.label,
-    href: FILECOIN_URLS.securityBugBounty.href,
-  },
+  ...developerResourcesItems.map(({ label, href }) => ({ label, href })),
+  FILECOIN_FOUNDATION_URLS.grants,
+  FILECOIN_URLS.securityBugBounty,
   { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
   ...networkMonitoringItems.map(({ label, href }) => ({ label, href })),
 ]
@@ -148,21 +158,7 @@ export const headerNavigation: Array<
             description: 'Start building apps on the Filecoin network',
             href: PATHS.BUILD_ON_FILECOIN.path,
           },
-          {
-            label: 'Documentation',
-            description: 'Official documentation for Filecoin',
-            href: FILECOIN_DOCS_URL,
-          },
-          {
-            label: 'Cookbook',
-            description: 'Recipes for building with Filecoin and the FVM',
-            href: FILECOIN_DOCS_URLS.builderCookbook,
-          },
-          {
-            label: FILECOIN_URLS.github.label,
-            description: "Explore Filecoin's open-source repositories",
-            href: FILECOIN_URLS.github.href,
-          },
+          ...developerResourcesItems,
         ],
       },
       {
