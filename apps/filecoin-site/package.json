@@ -12,15 +12,18 @@
     "not firefox < 85"
   ],
   "scripts": {
-    "dev": "next dev",
     "build": "npm run generate-rss && next build",
-    "start": "next start",
+    "dev": "next dev",
+    "generate-rss": "tsx scripts/generateRSS.ts",
     "lint": "next lint --fix",
-    "generate-rss": "tsx scripts/generateRSS.ts"
+    "start": "next start",
+    "test:cypress": "cypress run",
+    "test:cypress:open": "cypress open"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
     "@phosphor-icons/react": "^2.1.10",
+    "cypress": "^15.0.0",
     "embla-carousel-react": "^8.6.0",
     "@sentry/nextjs": "^10.5.0",
     "feed": "^5.1.0",

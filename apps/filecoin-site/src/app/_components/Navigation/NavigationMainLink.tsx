@@ -9,28 +9,23 @@ import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetTy
 
 import type { PathValues } from '@/constants/paths'
 
-const DESKTOP_TOUCH_TARGET: TouchTarget = {
-  touchAreaPadding: 'p-3',
-  touchAreaOffset: '-mx-3',
-}
-
-const MOBILE_TOUCH_TARGET: TouchTarget = {
+const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'px-5 py-6',
   touchAreaOffset: '-mx-5',
 }
 
-export const baseStyle = 'focus:brand-outline font-medium'
+const baseStyle = 'focus:brand-outline font-medium'
 
 export const desktopStyle = clsx(
-  'rounded text-[var(--color-navigation-link-text)] hover:bg-[var(--color-bg-navigation-link-hover)] focus:bg-[var(--color-bg-navigation-link-hover)] aria-[current=true]:text-[var(--color-navigation-link-text-active)]',
-  DESKTOP_TOUCH_TARGET.touchAreaPadding,
-  DESKTOP_TOUCH_TARGET.touchAreaOffset,
+  baseStyle,
+  'rounded-sm px-2.5 py-1.5 text-[var(--color-navigation-link-text)] hover:bg-[var(--color-navigation-link-background-active)] focus:bg-[var(--color-navigation-link-background-active)] aria-[current=true]:bg-[var(--color-navigation-link-background-active)]',
 )
 
 const mobileStyle = clsx(
-  'text-[var(--color-text-base)] aria-[current=true]:text-[var(--color-navigation-link-text-active)]',
-  MOBILE_TOUCH_TARGET.touchAreaPadding,
-  MOBILE_TOUCH_TARGET.touchAreaOffset,
+  baseStyle,
+  'text-[var(--color-text-base)]',
+  TOUCH_TARGET.touchAreaPadding,
+  TOUCH_TARGET.touchAreaOffset,
 )
 
 type NavigationLinkProps = {
@@ -56,7 +51,6 @@ export function NavigationMainLink({
       aria-current={isActive}
       className={clsx(
         'inline-block',
-        baseStyle,
         on === 'desktop' && desktopStyle,
         on === 'mobile' && mobileStyle,
       )}

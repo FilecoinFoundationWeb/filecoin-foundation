@@ -1,7 +1,8 @@
+import { tests } from '@filecoin-foundation/cypress/support'
+
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { tests } from '@/cypress/support'
 import { LEARNING_RESOURCES_SEO } from '@/learning-resources/constants/seo'
 
 describe('Learning Resources Page', () => {

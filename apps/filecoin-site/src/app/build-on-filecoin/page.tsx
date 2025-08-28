@@ -3,7 +3,10 @@ import Image from 'next/image'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
+import {
+  FILECOIN_DOCS_URL,
+  FILECOIN_FOUNDATION_URLS,
+} from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -35,7 +38,6 @@ import { getInvolvedImages } from './data/getInvolvedImages'
 import { tutorialsAndGuides } from './data/tutorialsAndGuides'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBadgeVariant } from './utils/getBadgeVariant'
-
 
 export default function BuildOnFilecoin() {
   return (
@@ -107,7 +109,10 @@ export default function BuildOnFilecoin() {
           title="Built on Filecoin"
           description="Discover tools and applications powered by Filecoin."
           cta={
-            <Button href="https://fil.org/ecosystem-explorer" variant="primary">
+            <Button
+              href={FILECOIN_FOUNDATION_URLS.ecosystemExplorer.href}
+              variant="primary"
+            >
               Visit ecosystem explorer
             </Button>
           }

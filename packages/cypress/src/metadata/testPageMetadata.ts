@@ -16,7 +16,6 @@ export function testPageMetaData({
   const canonicalUrl = path === '/' ? baseUrl : `${baseUrl}${path}`
 
   cy.visit(path)
-
   // Title is not inside <head> element in DOM traversal context (it's a special case)
   cy.title().should('eq', title)
 
@@ -27,6 +26,7 @@ export function testPageMetaData({
       'content',
       description,
     )
+
     cy.get('link[rel="canonical"]').should('have.attr', 'href', canonicalUrl)
 
     // Open Graph metadata

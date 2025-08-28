@@ -8,19 +8,17 @@ import { clsx } from 'clsx'
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 
-import { type SectionProps, backgroundVariants } from '@/components/Section'
+import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
+import { backgroundVariants } from '@/components/Section'
 
-import { NAV_LINKS, variantMapping } from './constants'
+import { internalNavigationItems } from './constants/navigation'
+import { variantMapping } from './constants/variantMapping'
 import { HomeLogoIconLink } from './HomeLogoIconLink'
 import { NavigationMainLink } from './NavigationMainLink'
 
-export type MobileNavigationProps = {
-  backgroundVariant: SectionProps['backgroundVariant']
-}
-
-export function MobileNavigation({ backgroundVariant }: MobileNavigationProps) {
+export function MobileNavigation() {
   const [open, setOpen] = useState(false)
-
+  const backgroundVariant = useBackgroundVariant()
   const mobileBackgroundVariant = variantMapping[backgroundVariant]
 
   return (
@@ -50,11 +48,11 @@ export function MobileNavigation({ backgroundVariant }: MobileNavigationProps) {
             aria-label="Navigation options"
             className="flex flex-col divide-y divide-[var(--color-border-base)]"
           >
-            {NAV_LINKS.map(({ path, label }) => (
-              <li key={path}>
+            {internalNavigationItems.map(({ href, label }) => (
+              <li key={href}>
                 <NavigationMainLink
                   on="mobile"
-                  href={path}
+                  href={href}
                   label={label}
                   onNavigate={closePanel}
                 />

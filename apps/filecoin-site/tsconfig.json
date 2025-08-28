@@ -9,6 +9,7 @@
       "@/assets/*": ["./public/assets/*"],
       "@/components/*": ["./src/app/_components/*"],
       "@/constants/*": ["./src/app/_constants/*"],
+      "@/cypress/*": ["cypress/*"],
       "@/data/*": ["./src/app/_data/*"],
       "@/hooks/*": ["./src/app/_hooks/*"],
       "@/styles/*": ["./src/app/_styles/*"],

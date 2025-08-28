@@ -5,8 +5,8 @@
     "paths": {
       "@/*": ["src/app/*"],
       "@/constants/*": ["src/app/_constants/*"],
-      "@/utils/*": ["src/app/_utils/*"],
-      "@/cypress/*": ["cypress/*"]
+      "@/cypress/*": ["cypress/*"],
+      "@/utils/*": ["src/app/_utils/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"]

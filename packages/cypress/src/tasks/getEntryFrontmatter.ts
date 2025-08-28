@@ -2,15 +2,9 @@ import fs from 'fs/promises'
 
 import matter from 'gray-matter'
 
-import { MARKDOWN_EXTENSION } from '../../src/app/_constants/paths'
+import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
-export type GenericEntryFrontmatter = {
-  title: string
-  seo: {
-    title?: string
-    description: string
-  }
-}
+import { MARKDOWN_EXTENSION } from '@filecoin-foundation/utils/constants/fileExtensions'
 
 export async function getEntryFrontmatter(path: string) {
   const file = await fs.readFile(path + MARKDOWN_EXTENSION, 'utf8')
