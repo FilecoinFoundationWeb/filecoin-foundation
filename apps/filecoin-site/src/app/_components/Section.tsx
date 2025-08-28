@@ -1,6 +1,8 @@
 import { clsx } from 'clsx'
 
-type BackgroundVariant = keyof typeof backgroundVariants
+import { BackgroundVariantContextProvider } from './BackgroundVariantContext'
+
+export type BackgroundVariant = keyof typeof backgroundVariants
 
 export type SectionProps = {
   backgroundVariant: BackgroundVariant
@@ -18,17 +20,19 @@ export const backgroundVariants = {
 
 export function Section({
   children,
-  backgroundVariant = 'transparent',
+  backgroundVariant,
   as: Tag = 'section',
 }: SectionProps) {
   return (
-    <Tag
-      className={clsx(
-        'text-[var(--color-text-base)]',
-        backgroundVariants[backgroundVariant],
-      )}
-    >
-      {children}
-    </Tag>
+    <BackgroundVariantContextProvider value={backgroundVariant}>
+      <Tag
+        className={clsx(
+          'text-[var(--color-text-base)]',
+          backgroundVariants[backgroundVariant],
+        )}
+      >
+        {children}
+      </Tag>
+    </BackgroundVariantContextProvider>
   )
 }
