@@ -11,7 +11,8 @@ import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
 import { backgroundVariants } from '@/components/Section'
 
-import { NAV_LINKS, variantMapping } from './constants'
+import { internalNavigationItems } from './constants/navigation'
+import { variantMapping } from './constants/variantMapping'
 import { HomeLogoIconLink } from './HomeLogoIconLink'
 import { NavigationMainLink } from './NavigationMainLink'
 
@@ -48,11 +49,11 @@ export function MobileNavigation() {
             aria-label="Navigation options"
             className="flex flex-col divide-y divide-[var(--color-border-base)]"
           >
-            {NAV_LINKS.map(({ path, label }) => (
-              <li key={path}>
+            {internalNavigationItems.map(({ href, label }) => (
+              <li key={href}>
                 <NavigationMainLink
                   on="mobile"
-                  href={path}
+                  href={href}
                   label={label}
                   onNavigate={closePanel}
                 />

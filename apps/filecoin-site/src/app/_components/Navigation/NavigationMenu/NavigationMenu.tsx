@@ -4,15 +4,13 @@ import { clsx } from 'clsx'
 
 import { NavigationMenu as SharedNavigationMenu } from '@filecoin-foundation/ui/NavigationMenu'
 
-import type { ExpandedNavItem } from '@/constants/navigation'
+import type { LabelledExpandedNavItems } from '../constants/navigation'
+import { useIsNavigationMenuActive } from '../hooks/useIsNavigationMenuActive'
+import { desktopStyle } from '../NavigationMainLink'
 
-import { desktopStyle } from './NavigationMainLink'
 import { NavigationMenuPanel } from './NavigationMenuPanel'
-import { useIsNavigationMenuActive } from './useIsNavigationMenuActive'
 
-type MobileNavigationProps = ExpandedNavItem
-
-export function NavigationMenu({ label, items }: MobileNavigationProps) {
+export function NavigationMenu({ label, items }: LabelledExpandedNavItems) {
   const isActive = useIsNavigationMenuActive(items)
 
   return (

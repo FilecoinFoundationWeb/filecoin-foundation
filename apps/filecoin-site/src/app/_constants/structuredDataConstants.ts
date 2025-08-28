@@ -65,7 +65,7 @@ export const FILECOIN_ORGANIZATION_SCHEMA: Organization = {
   name: ORGANIZATION_NAME,
   url: BASE_URL,
   sameAs: [
-    FILECOIN_URLS.github,
+    FILECOIN_URLS.github.href,
     FILECOIN_URLS.social.twitter.href,
     FILECOIN_URLS.social.bluesky.href,
     FILECOIN_URLS.social.telegram.href,

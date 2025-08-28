@@ -50,7 +50,7 @@ export default function ProvideStorage() {
               >
                 Book a call with the onboarding team
               </Button>,
-              <Button href={FILECOIN_URLS.github} variant="ghost">
+              <Button href={FILECOIN_URLS.github.href} variant="ghost">
                 Explore documentation
               </Button>,
             ]}
