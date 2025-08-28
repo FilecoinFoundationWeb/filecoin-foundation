@@ -5,10 +5,10 @@ type VariantMapping = Record<
   'light' | 'dark'
 >
 
-export const variantMapping: VariantMapping = {
+export const variantMapping = {
   light: 'light',
   gray: 'light',
   transparent: 'light',
   dark: 'dark',
   transparentDark: 'dark',
-}
+} satisfies VariantMapping
