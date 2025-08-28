@@ -10,7 +10,7 @@ import {
   FILECOIN_URLS,
 } from '@/constants/siteMetadata'
 
-import { keepNavItem } from '../utils/keepNavItem'
+import { pickNavItem } from '../utils/pickNavItem'
 
 type NavItem = { label: string; href: BaseLinkProps['href'] }
 type InternalNavItem = { label: string; href: Route }
@@ -193,19 +193,19 @@ export const footerNavigationItems: Array<FooterNavigationItem> = [
   {
     title: 'Resources',
     items: [
-      ...developerResourcesItems.map(keepNavItem),
-      ...contributeItems.map(keepNavItem),
+      ...developerResourcesItems.map(pickNavItem),
+      ...contributeItems.map(pickNavItem),
       { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
-      ...networkMonitoringItems.map(keepNavItem),
+      ...networkMonitoringItems.map(pickNavItem),
     ],
   },
   {
     title: 'Block Explorers',
-    items: blockExplorerItems.map(keepNavItem),
+    items: blockExplorerItems.map(pickNavItem),
   },
   {
     title: 'Community',
-    items: communityItems.map(keepNavItem),
+    items: communityItems.map(pickNavItem),
   },
 ]
 
