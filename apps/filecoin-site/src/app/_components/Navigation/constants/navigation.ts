@@ -99,7 +99,7 @@ export const headerNavigation: Array<NavItem | LabelledExpandedNavItems> = [
             href: PATHS.LEARN.path,
           },
           {
-            label: 'Case Studies',
+            label: PATHS.CASE_STUDIES.label,
             description: 'See how others are using Filecoin in the real world',
             href: PATHS.CASE_STUDIES.path,
           },
@@ -116,7 +116,7 @@ export const headerNavigation: Array<NavItem | LabelledExpandedNavItems> = [
         title: 'Explore',
         links: [
           {
-            label: 'Build on Filecoin',
+            label: PATHS.BUILD_ON_FILECOIN.label,
             description: 'Start building apps on the Filecoin network',
             href: PATHS.BUILD_ON_FILECOIN.path,
           },
