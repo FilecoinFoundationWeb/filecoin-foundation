@@ -7,11 +7,11 @@ import { clsx } from 'clsx'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
 type PopOverProps = {
-  label: string
-  labelClassName?: string
   as: React.ElementType
+  label: string
   children: React.ReactElement
   isCurrent?: boolean
+  labelClassName?: string
 }
 
 const SPACE_BETWEEN_PANEL_AND_BUTTON = 24
@@ -20,9 +20,9 @@ const SPACE_BETWEEN_PANEL_AND_VIEWPORT = 8
 export function NavigationMenu({
   as,
   label,
-  labelClassName,
-  isCurrent,
   children,
+  isCurrent,
+  labelClassName,
 }: PopOverProps) {
   return (
     <Popover as={as}>

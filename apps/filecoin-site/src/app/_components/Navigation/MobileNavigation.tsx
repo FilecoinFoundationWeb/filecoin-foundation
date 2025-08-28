@@ -19,7 +19,6 @@ import { NavigationMainLink } from './NavigationMainLink'
 export function MobileNavigation() {
   const [open, setOpen] = useState(false)
   const backgroundVariant = useBackgroundVariant()
-
   const mobileBackgroundVariant = variantMapping[backgroundVariant]
 
   return (
