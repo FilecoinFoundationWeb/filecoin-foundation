@@ -19,6 +19,7 @@ const funnelSans = localFont({
   display: 'swap',
   variable: '--font-funnel-sans',
   fallback: ['Arial', 'Helvetica', 'sans-serif'],
+  preload: false,
 })
 
 const aspekta = localFont({
@@ -26,6 +27,7 @@ const aspekta = localFont({
   display: 'swap',
   variable: '--font-aspekta',
   fallback: ['Arial', 'Helvetica', 'sans-serif'],
+  preload: false,
 })
 
 export function SiteLayout({ children }: SiteLayoutProps) {
