@@ -99,10 +99,22 @@ const developerResourcesItems: Array<ExpandedNavItem> = [
   },
 ]
 
+const contributeItems: Array<ExpandedNavItem> = [
+  {
+    label: FILECOIN_FOUNDATION_URLS.grants.label,
+    description: 'Funding opportunities to build in the ecosystem',
+    href: FILECOIN_FOUNDATION_URLS.grants.href,
+  },
+  {
+    label: FILECOIN_URLS.securityBugBounty.label,
+    description: 'Help find vulnerabilities and get rewarded',
+    href: FILECOIN_URLS.securityBugBounty.href,
+  },
+]
+
 const resourceItems: Array<NavItem> = [
   ...developerResourcesItems.map(({ label, href }) => ({ label, href })),
-  FILECOIN_FOUNDATION_URLS.grants,
-  FILECOIN_URLS.securityBugBounty,
+  ...contributeItems.map(({ label, href }) => ({ label, href })),
   { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
   ...networkMonitoringItems.map(({ label, href }) => ({ label, href })),
 ]
@@ -161,21 +173,7 @@ export const headerNavigation: Array<
           ...developerResourcesItems,
         ],
       },
-      {
-        title: 'Contribute',
-        links: [
-          {
-            label: FILECOIN_FOUNDATION_URLS.grants.label,
-            description: 'Funding opportunities to build in the ecosystem',
-            href: FILECOIN_FOUNDATION_URLS.grants.href,
-          },
-          {
-            label: FILECOIN_URLS.securityBugBounty.label,
-            description: 'Help find vulnerabilities and get rewarded',
-            href: FILECOIN_URLS.securityBugBounty.href,
-          },
-        ],
-      },
+      { title: 'Contribute', links: contributeItems },
     ],
   },
   {
