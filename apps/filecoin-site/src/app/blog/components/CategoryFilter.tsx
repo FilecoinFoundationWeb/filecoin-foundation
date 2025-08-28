@@ -27,9 +27,7 @@ export function CategoryFilter() {
                 ? 'View all blog posts'
                 : `Filter by ${name}`
             }
-            onClick={() => {
-              setSelectedCategory(id)
-            }}
+            onClick={() => setSelectedCategory(id)}
           >
             {name}
           </button>
