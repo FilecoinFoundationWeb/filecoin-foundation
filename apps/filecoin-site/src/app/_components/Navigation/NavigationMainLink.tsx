@@ -4,6 +4,7 @@ import Link, { type LinkProps } from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { clsx } from 'clsx'
+import type { Route } from 'next'
 
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
@@ -31,7 +32,7 @@ const mobileStyle = clsx(
 type NavigationLinkProps = {
   on: 'mobile' | 'desktop'
   label: string
-  href: LinkProps<PathValues>['href']
+  href: Route
   onNavigate?: LinkProps<PathValues>['onNavigate']
 }
 
