@@ -4,11 +4,14 @@ import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
 
-import { MarkdownImage } from '@filecoin-foundation/ui/Markdown'
+import {
+  MarkdownImage,
+  MarkdownLink as SharedMarkdownLink,
+} from '@filecoin-foundation/ui/Markdown'
+
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
-
-import { MarkdownLink } from '@/components/MarkdownLink'
 
 type PluggableList = Parameters<typeof ReactMarkdown>[0]['rehypePlugins']
 
@@ -17,12 +20,12 @@ export type MarkdownContentProps = {
   addTableOfContents?: boolean
 }
 
-const markdownComponents: Components = {
+const markdownComponents = {
   img: (props) => (
     <MarkdownImage {...props} fallbackImage={graphicsData.imageFallback} />
   ),
-  a: (props) => <MarkdownLink {...props} />,
-}
+  a: (props) => <SharedMarkdownLink {...props} baseDomain={BASE_DOMAIN} />,
+} as const satisfies Components
 
 export function MarkdownContent({
   children,
@@ -60,6 +63,8 @@ export function MarkdownContent({
     </div>
   )
 }
+
+MarkdownContent.Link = markdownComponents.a
 
 function addTableOfContentsHeader(nodeTree: HtmlElementNode) {
   const headerNode = {

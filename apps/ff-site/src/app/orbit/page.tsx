@@ -21,7 +21,7 @@ import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
-import { MarkdownLink } from '@/components/MarkdownLink'
+import { MarkdownContent } from '@/components/MarkdownContent'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -175,9 +175,9 @@ export default async function Orbit(props: Props) {
             <p>
               If you’re looking for the Filecoin Orbit 2021 virtual conference
               celebrating the first year of Filecoin Mainnet, the{' '}
-              <MarkdownLink href="https://www.youtube.com/playlist?list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz">
+              <MarkdownContent.Link href="https://www.youtube.com/playlist?list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz">
                 event recordings are on YouTube
-              </MarkdownLink>
+              </MarkdownContent.Link>
               .
             </p>
           </div>
@@ -191,13 +191,13 @@ export default async function Orbit(props: Props) {
               </li>
               <li>
                 Complete the{' '}
-                <MarkdownLink
+                <MarkdownContent.Link
                   href={
                     FILECOIN_FOUNDATION_URLS.orbit.ambassadorsApplicationForm
                   }
                 >
                   application form
-                </MarkdownLink>
+                </MarkdownContent.Link>
                 . After submitting, your application will undergo review. Keep
                 an eye on your email for updates on the status of your
                 application and next steps. This may take up to two weeks.
