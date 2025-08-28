@@ -47,6 +47,11 @@ const blockExplorerItems: Array<ExpandedNavItem> = [
 
 const communityItems: Array<ExpandedNavItem> = [
   {
+    label: PATHS.COMMUNITY_HUB.label,
+    description: 'Explore ways to contribute to the ecosystem',
+    href: PATHS.COMMUNITY_HUB.path,
+  },
+  {
     label: FILECOIN_FOUNDATION_URLS.events.label,
     description: 'Join meetups, hackathons, and conferences',
     href: FILECOIN_FOUNDATION_URLS.events.href,
@@ -213,12 +218,9 @@ export const footerNavigationItems: Array<FooterNavigationItem> = [
   },
   {
     title: 'Community',
-    items: [
-      { label: PATHS.COMMUNITY_HUB.label, href: PATHS.COMMUNITY_HUB.path },
-      ...communityItems.map(({ label, href }) => ({
-        label,
-        href,
-      })),
-    ],
+    items: communityItems.map(({ label, href }) => ({
+      label,
+      href,
+    })),
   },
 ]
