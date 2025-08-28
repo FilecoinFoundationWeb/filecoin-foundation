@@ -4,9 +4,10 @@ import { clsx } from 'clsx'
 
 import { NavigationMenu as SharedNavigationMenu } from '@filecoin-foundation/ui/NavigationMenu'
 
-import { desktopStyle } from './NavigationMainLink'
+import { desktopStyle } from '../NavigationMainLink'
+import { useIsNavigationMenuActive } from '../useIsNavigationMenuActive'
+
 import { NavigationMenuPanel } from './NavigationMenuPanel'
-import { useIsNavigationMenuActive } from './useIsNavigationMenuActive'
 
 import type { LabelledExpandedNavItems } from '@/_components/Navigation/constants/navigation'
 

@@ -2,7 +2,7 @@
 
 import { NavigationLanguageToggle } from './NavigationLanguageToggle'
 import { NavigationMainLink } from './NavigationMainLink'
-import { NavigationMenu } from './NavigationMenu'
+import { NavigationMenu } from './NavigationMenu/NavigationMenu'
 
 import { headerNavigation } from '@/_components/Navigation/constants/navigation'
 

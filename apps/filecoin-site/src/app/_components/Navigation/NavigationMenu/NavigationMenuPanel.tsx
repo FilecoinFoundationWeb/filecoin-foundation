@@ -5,7 +5,8 @@ import { clsx } from 'clsx'
 import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
 import { backgroundVariants } from '@/components/Section'
 
-import { variantMapping } from './constants/variantMapping'
+import { variantMapping } from '../constants/variantMapping'
+
 import { NavigationMenuLink } from './NavigationMenuLink'
 
 import { type LabelledExpandedNavItems } from '@/_components/Navigation/constants/navigation'
