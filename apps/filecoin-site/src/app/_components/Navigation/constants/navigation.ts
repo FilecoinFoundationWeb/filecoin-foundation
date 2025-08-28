@@ -44,19 +44,19 @@ const blockExplorerItems: Array<ExpandedNavItem> = [
 
 const communityItems: Array<ExpandedNavItem> = [
   {
-    label: 'Events',
+    label: FILECOIN_FOUNDATION_URLS.events.label,
     description: 'Join meetups, hackathons, and conferences',
-    href: FILECOIN_FOUNDATION_URLS.events,
+    href: FILECOIN_FOUNDATION_URLS.events.href,
   },
   {
-    label: 'Orbit',
+    label: FILECOIN_FOUNDATION_URLS.orbit.label,
     description: 'Become a Filecoin Orbit ambassador',
-    href: FILECOIN_FOUNDATION_URLS.orbit,
+    href: FILECOIN_FOUNDATION_URLS.orbit.href,
   },
   {
     label: 'FIPs & Governance',
     description: 'Propose, discuss, and shape future upgrades',
-    href: FILECOIN_FOUNDATION_URLS.governance,
+    href: FILECOIN_FOUNDATION_URLS.governance.href,
   },
 ]
 
@@ -64,7 +64,10 @@ const resourceItems: Array<NavItem> = [
   { label: 'Documentation', href: FILECOIN_DOCS_URL },
   { label: 'Cookbook', href: FILECOIN_DOCS_URLS.builderCookbook },
   { label: FILECOIN_URLS.github.label, href: FILECOIN_URLS.github.href },
-  { label: 'Grants', href: FILECOIN_FOUNDATION_URLS.grants },
+  {
+    label: FILECOIN_FOUNDATION_URLS.grants.label,
+    href: FILECOIN_FOUNDATION_URLS.grants.href,
+  },
   {
     label: FILECOIN_URLS.securityBugBounty.label,
     href: FILECOIN_URLS.securityBugBounty.href,
@@ -144,9 +147,9 @@ export const headerNavigation: Array<NavItem | LabelledExpandedNavItems> = [
         title: 'Contribute',
         links: [
           {
-            label: 'Grants',
+            label: FILECOIN_FOUNDATION_URLS.grants.label,
             description: 'Funding opportunities to build in the ecosystem',
-            href: FILECOIN_FOUNDATION_URLS.grants,
+            href: FILECOIN_FOUNDATION_URLS.grants.href,
           },
           {
             label: FILECOIN_URLS.securityBugBounty.label,

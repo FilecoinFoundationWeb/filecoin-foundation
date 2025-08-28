@@ -29,12 +29,26 @@ const FILECOIN_DOCS_URLS = {
 } as const
 
 const FILECOIN_FOUNDATION_URLS = {
-  events: 'https://fil.org/events',
-  governance: 'https://fil.org/governance',
-  grants: 'https://fil.org/grants',
-  orbit: 'https://fil.org/orbit',
-  security: 'https://fil.org/security',
-  ecosystemExplorer: 'https://fil.org/ecosystem-explorer',
+  ecosystemExplorer: {
+    href: 'https://fil.org/ecosystem-explorer',
+    label: 'Ecosystem Explorer',
+  },
+  events: {
+    href: 'https://fil.org/events',
+    label: 'Events',
+  },
+  governance: {
+    href: 'https://fil.org/governance',
+    label: 'Governance',
+  },
+  grants: {
+    href: 'https://fil.org/grants',
+    label: 'Grants',
+  },
+  orbit: {
+    href: 'https://fil.org/orbit',
+    label: 'Orbit',
+  },
   emails: {
     contact: 'hello@fil.org',
     devgrants: 'devgrants@fil.org',
