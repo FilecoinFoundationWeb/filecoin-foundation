@@ -1,22 +1,13 @@
-import type { NextConfig } from 'next'
+import { createNextConfig } from '@filecoin-foundation/next-config'
 
-import {
-  outputFileTracingExcludes,
-  outputFileTracingIncludes,
-  webpackRules,
-} from '@filecoin-foundation/next-config'
+import { redirects as rawRedirects } from './redirects.js'
 
-// To replace with createNextConfig once Sentry is set up
-const nextConfig: NextConfig = {
-  outputFileTracingIncludes,
-  outputFileTracingExcludes,
-  images: {
-    qualities: [75, 85, 100],
+/** @type {import('next').NextConfig} */
+export default createNextConfig({
+  imageRemotePatterns: [],
+  redirects: async () => rawRedirects,
+  sentry: {
+    project: 'filecoin-site',
+    authTokenEnvVar: 'SENTRY_AUTH_TOKEN_FILECOIN_SITE',
   },
-  webpack: (config) => {
-    config.module.rules.push(...webpackRules)
-    return config
-  },
-}
-
-export default nextConfig
+})
