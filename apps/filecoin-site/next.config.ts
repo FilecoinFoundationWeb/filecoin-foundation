@@ -3,6 +3,7 @@ import type { NextConfig } from 'next'
 import {
   outputFileTracingExcludes,
   outputFileTracingIncludes,
+  outputFileTracingRoot,
   webpackRules,
 } from '@filecoin-foundation/next-config'
 
@@ -10,6 +11,7 @@ import {
 const nextConfig: NextConfig = {
   outputFileTracingIncludes,
   outputFileTracingExcludes,
+  outputFileTracingRoot,
   images: {
     qualities: [75, 85, 100],
   },

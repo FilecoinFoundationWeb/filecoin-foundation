@@ -21,3 +21,7 @@ export const outputFileTracingExcludes = {
     'scripts/**',
   ],
 }
+
+// This represents the root of the monorepo relative to each apps/**/next.config.ts
+/** @type {NextConfig['outputFileTracingRoot']} */
+export const outputFileTracingRoot = '../../'
