@@ -13,7 +13,6 @@ import { LegalSection } from './LegalSection'
 import { NavigationItems } from './NavigationItems'
 import { NewsletterForm } from './NewsletterForm'
 
-
 export function Footer() {
   return (
     <Section as="footer" backgroundVariant="dark">
