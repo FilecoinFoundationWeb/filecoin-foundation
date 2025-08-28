@@ -3,6 +3,7 @@
 import { useState } from 'react'
 
 import { Button } from '@headlessui/react'
+import { clsx } from 'clsx'
 
 import { desktopStyle } from './NavigationMainLink'
 
@@ -15,14 +16,14 @@ export function NavigationLanguageToggle() {
   const [locale, setLocale] = useState<'en' | 'zh'>('en')
 
   return (
-    <div className="flex items-center gap-6 font-medium">
+    <div className="flex items-center gap-4 font-medium">
       {languages.map(({ key, label, ariaLabel }) => (
         <Button
           key={key}
           type="button"
           aria-label={ariaLabel}
           aria-current={locale === key}
-          className={desktopStyle}
+          className={clsx(desktopStyle, 'cursor-pointer')}
           onClick={() => setLocale(key)}
         >
           {label}
