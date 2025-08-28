@@ -37,6 +37,7 @@ jobs:
           cache: "npm"
 
       - name: Install Dependencies
+        working-directory: .
         run: npm install --prefer-offline || npm install --prefer-offline
 
       - name: Build Project
