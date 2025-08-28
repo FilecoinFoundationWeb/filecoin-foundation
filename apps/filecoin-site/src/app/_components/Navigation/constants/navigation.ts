@@ -63,7 +63,7 @@ const communityItems: Array<ExpandedNavItem> = [
 const resourceItems: Array<NavItem> = [
   { label: 'Documentation', href: FILECOIN_DOCS_URL },
   { label: 'Cookbook', href: FILECOIN_DOCS_URLS.builderCookbook },
-  { label: 'GitHub', href: FILECOIN_URLS.github },
+  { label: FILECOIN_URLS.github.label, href: FILECOIN_URLS.github.href },
   { label: 'Grants', href: FILECOIN_FOUNDATION_URLS.grants },
   { label: 'Bug Bounty', href: FILECOIN_URLS.securityBugBounty },
   { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
@@ -131,9 +131,9 @@ export const headerNavigation: Array<NavItem | LabelledExpandedNavItems> = [
             href: FILECOIN_DOCS_URLS.builderCookbook,
           },
           {
-            label: 'GitHub',
+            label: FILECOIN_URLS.github.label,
             description: "Explore Filecoin's open-source repositories",
-            href: FILECOIN_URLS.github,
+            href: FILECOIN_URLS.github.href,
           },
         ],
       },

@@ -42,7 +42,10 @@ const FILECOIN_FOUNDATION_URLS = {
 } as const
 
 const FILECOIN_URLS = {
-  github: 'https://github.com/filecoin-project',
+  github: {
+    href: 'https://github.com/filecoin-project',
+    label: 'GitHub',
+  },
   securityBugBounty: 'https://immunefi.com/bug-bounty/filecoin/',
   social: {
     bluesky: {
