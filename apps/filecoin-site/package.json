@@ -18,7 +18,8 @@
     "lint": "next lint --fix",
     "start": "next start",
     "test:cypress": "cypress run",
-    "test:cypress:open": "cypress open"
+    "test:cypress:open": "cypress open",
+    "test:cypress:percy": "percy exec -- cypress run"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
@@ -39,6 +40,9 @@
     "@filecoin-foundation/typescript-config": "0.0.0",
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
+    "@filecoin-foundation/next-config": "0.0.0",
+    "@percy/cli": "^1.31.1",
+    "@percy/cypress": "^3.1.6",
     "@phosphor-icons/react": "^2.1.10",
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.1.12",
@@ -46,6 +50,7 @@
     "@types/react": "19.1.11",
     "@types/react-dom": "19.1.7",
     "tailwindcss": "^4.1.12",
+    "tsx": "^4.20.5",
     "typescript": "^5.9.2"
   }
 }

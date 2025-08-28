@@ -1,0 +1,9 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "env": ["PERCY_TOKEN_FILECOIN_SITE", "SENTRY_AUTH_TOKEN_FILECOIN_SITE"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    }
+  }
+}
