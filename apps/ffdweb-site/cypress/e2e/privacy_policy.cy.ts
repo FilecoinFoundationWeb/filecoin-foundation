@@ -1,17 +1,14 @@
 import { tests } from '@filecoin-foundation/cypress/support'
-import { getMetaTitleTemplate } from '@filecoin-foundation/cypress/utils'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL, ROOT_METADATA } from '@/constants/siteMetadata'
+import { BASE_URL } from '@/constants/siteMetadata'
 
+import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
 import { PRIVACY_POLICY_SEO } from '@/privacy-policy/constants/seo'
 
 describe('Privacy Policy Page', () => {
   it(tests.metadata.prompt, () => {
-    const metaTitleTemplate = getMetaTitleTemplate({
-      title: PRIVACY_POLICY_SEO.title,
-      rootMetadata: ROOT_METADATA,
-    })
+    const metaTitleTemplate = getMetaTitleTemplate(PRIVACY_POLICY_SEO.title)
 
     tests.metadata.fn({
       path: PATHS.PRIVACY_POLICY.path,

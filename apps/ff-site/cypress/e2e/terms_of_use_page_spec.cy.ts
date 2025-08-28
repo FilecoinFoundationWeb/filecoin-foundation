@@ -1,9 +1,10 @@
 import { tests } from '@filecoin-foundation/cypress/support'
-import { getMetaTitleTemplate } from '@filecoin-foundation/cypress/utils'
 import type { PageFrontmatterSeo } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL, ROOT_METADATA } from '@/constants/siteMetadata'
+import { BASE_URL } from '@/constants/siteMetadata'
+
+import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
 
 const { contentPath, path } = PATHS.TERMS_OF_USE
 
@@ -11,10 +12,7 @@ describe('Terms of Use Page', () => {
   it(tests.metadata.prompt, () => {
     cy.task<PageFrontmatterSeo>('getPageFrontmatterSeo', contentPath).then(
       (seo) => {
-        const metaTitleTemplate = getMetaTitleTemplate({
-          title: seo.title,
-          rootMetadata: ROOT_METADATA,
-        })
+        const metaTitleTemplate = getMetaTitleTemplate(seo.title)
 
         tests.metadata.fn({
           path,

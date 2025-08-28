@@ -1,11 +1,12 @@
 import path from 'path'
 
 import { tests } from '@filecoin-foundation/cypress/support'
-import { getMetaTitleWithSuffix } from '@filecoin-foundation/cypress/utils'
 import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
+import { BASE_URL } from '@/constants/siteMetadata'
+
+import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
 const CONTENT_FOLDER = PATHS.BLOG.entriesPath
 
@@ -18,10 +19,7 @@ describe('Random Blog Post', () => {
       ).then(({ title, seo }) => {
         const seoTitle = seo.title || title
 
-        const metaTitleWithSuffix = getMetaTitleWithSuffix({
-          title: seoTitle,
-          organizationName: ORGANIZATION_NAME,
-        })
+        const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
         tests.metadata.fn({
           path: path.join(PATHS.BLOG.path, slug),

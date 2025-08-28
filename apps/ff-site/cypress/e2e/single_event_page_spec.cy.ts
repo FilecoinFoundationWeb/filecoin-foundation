@@ -1,12 +1,12 @@
 import path from 'path'
 
 import { tests } from '@filecoin-foundation/cypress/support'
-import { getMetaTitleWithSuffix } from '@filecoin-foundation/cypress/utils'
 import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
+import { BASE_URL } from '@/constants/siteMetadata'
 
+import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 import { METADATA_TITLE_SUFFIX } from '@/events/constants/metadata'
 
 const CONTENT_FOLDER = PATHS.EVENTS.entriesPath
@@ -19,10 +19,7 @@ describe('Random Event Page', () => {
         path.join(CONTENT_FOLDER, slug),
       ).then(({ title, seo }) => {
         const metaTitle = seo.title || title + METADATA_TITLE_SUFFIX
-        const metaTitleWithSuffix = getMetaTitleWithSuffix({
-          title: metaTitle,
-          organizationName: ORGANIZATION_NAME,
-        })
+        const metaTitleWithSuffix = getMetaTitleWithSuffix(metaTitle)
 
         tests.metadata.fn({
           path: path.join(PATHS.EVENTS.path, slug),
