@@ -37,7 +37,6 @@ export type PathValues =
 export const WORKSPACE_ROOT = 'apps/ff-site'
 export const CONTENT_ROOT = 'src/content'
 export const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
-export const MARKDOWN_EXTENSION = '.md'
 
 export const PATHS = {
   ABOUT: createPathConfig('/about', 'About'),

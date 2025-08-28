@@ -14,7 +14,6 @@ export type StaticPath =
   | '/terms-of-use'
 
 export const CONTENT_ROOT = 'src/content'
-export const MARKDOWN_EXTENSION = '.md'
 
 type ContentCollectionName = 'blog'
 

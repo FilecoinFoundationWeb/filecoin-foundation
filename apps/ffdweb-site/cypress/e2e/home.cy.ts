@@ -1,14 +1,17 @@
-import { PATHS } from '@/constants/paths'
-import { SEO, BASE_URL } from '@/constants/siteMetadata'
+import { tests } from '@filecoin-foundation/cypress/support'
 
-import { tests } from '@/cypress/support'
+import { PATHS } from '@/constants/paths'
+import { BASE_URL, SEO } from '@/constants/siteMetadata'
+
 import { getMetaTitleTemplate } from '@/cypress/utils/getMetaTitleTemplate'
 
 describe('Home Page', () => {
   it(tests.metadata.prompt, () => {
+    const metaTitleWithSuffix = getMetaTitleTemplate(SEO.title)
+
     tests.metadata.fn({
       path: PATHS.HOME.path,
-      title: getMetaTitleTemplate(SEO.title),
+      title: metaTitleWithSuffix,
       description: SEO.description,
       baseUrl: BASE_URL,
     })

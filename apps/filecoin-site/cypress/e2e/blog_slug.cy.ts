@@ -1,10 +1,11 @@
 import path from 'path'
 
+import { tests } from '@filecoin-foundation/cypress/support'
+import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
+
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { tests } from '@/cypress/support'
-import type { GenericEntryFrontmatter } from '@/cypress/tasks/getEntryFrontmatter'
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
 const { entriesPath: CONTENT_FOLDER, path: BLOG_PATH } = PATHS.BLOG
@@ -17,10 +18,11 @@ describe('Blog Slug Page', () => {
         path.join(CONTENT_FOLDER, slug),
       ).then(({ title, seo }) => {
         const seoTitle = seo.title || title
+        const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
         tests.metadata.fn({
           path: `${BLOG_PATH}/${slug}`,
-          title: getMetaTitleWithSuffix(seoTitle),
+          title: metaTitleWithSuffix,
           description: seo.description,
           baseUrl: BASE_URL,
         })
