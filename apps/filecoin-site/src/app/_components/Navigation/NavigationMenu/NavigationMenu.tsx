@@ -5,7 +5,7 @@ import { clsx } from 'clsx'
 import { NavigationMenu as SharedNavigationMenu } from '@filecoin-foundation/ui/NavigationMenu'
 
 import { desktopStyle } from '../NavigationMainLink'
-import { useIsNavigationMenuActive } from '../useIsNavigationMenuActive'
+import { useIsNavigationMenuActive } from '../hooks/useIsNavigationMenuActive'
 
 import { NavigationMenuPanel } from './NavigationMenuPanel'
 

@@ -10,9 +10,7 @@ export function useIsNavigationMenuActive(
   items: LabelledExpandedNavItems['items'],
 ) {
   const pathname = usePathname()
-
   const links = items.flatMap((item) => item.links).map((item) => item.href)
-
   const internalLinks = links.filter((item) => {
     return isInternalLink(item, BASE_DOMAIN)
   })
