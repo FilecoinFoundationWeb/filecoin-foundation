@@ -13,8 +13,7 @@ type InternalNavItem = { label: string; href: Route }
 type ExpandedNavItem = NavItem & { description: string }
 
 type FooterNavigationItem = { title: string; items: Array<NavItem> }
-
-export type LabelledExpandedNavItems = {
+export type NavigationMenuItem = {
   label: string
   items: Array<{
     title: string
@@ -112,7 +111,7 @@ const contributeItems: Array<ExpandedNavItem> = [
   },
 ]
 
-export const internalNavigationItems: Array<InternalNavItem> = [
+const internalNavigationItems: Array<InternalNavItem> = [
   { label: PATHS.LEARN.label, href: PATHS.LEARN.path },
   { label: PATHS.CASE_STUDIES.label, href: PATHS.CASE_STUDIES.path },
   { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
@@ -122,13 +121,10 @@ export const internalNavigationItems: Array<InternalNavItem> = [
   { label: PATHS.BLOG.label, href: PATHS.BLOG.path },
 ]
 
-export const legalLinks: Array<InternalNavItem> = [
-  { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
-  { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
-]
+export const mobileNavigationItems = internalNavigationItems
 
-export const headerNavigation: Array<
-  InternalNavItem | LabelledExpandedNavItems
+export const headerNavigationItems: Array<
+  InternalNavItem | NavigationMenuItem
 > = [
   {
     label: PATHS.LEARN.label,
@@ -213,4 +209,9 @@ export const footerNavigationItems: Array<FooterNavigationItem> = [
       href,
     })),
   },
+]
+
+export const footerLegalItems: Array<InternalNavItem> = [
+  { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
+  { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
 ]
