@@ -68,6 +68,19 @@ const communityItems: Array<ExpandedNavItem> = [
   },
 ]
 
+const networkMonitoringItems: Array<ExpandedNavItem> = [
+  {
+    label: 'Network Status',
+    description: 'The status of the Filecoin networks',
+    href: 'https://status.filecoin.io/',
+  },
+  {
+    label: 'Network Health',
+    description: 'Filecoin chain activity and performance',
+    href: 'https://dashboard.starboard.ventures/',
+  },
+]
+
 const resourceItems: Array<NavItem> = [
   { label: 'Documentation', href: FILECOIN_DOCS_URL },
   { label: 'Cookbook', href: FILECOIN_DOCS_URLS.builderCookbook },
@@ -81,8 +94,7 @@ const resourceItems: Array<NavItem> = [
     href: FILECOIN_URLS.securityBugBounty.href,
   },
   { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
-  { label: 'Network Status', href: 'https://status.filecoin.io/' },
-  { label: 'Network Health', href: 'https://dashboard.starboard.ventures/' },
+  ...networkMonitoringItems.map(({ label, href }) => ({ label, href })),
 ]
 
 export const internalNavigationItems: Array<InternalNavItem> = [
@@ -173,25 +185,8 @@ export const headerNavigation: Array<
   {
     label: 'Network',
     items: [
-      {
-        title: 'Block Explorers',
-        links: blockExplorerItems,
-      },
-      {
-        title: 'Network Monitoring',
-        links: [
-          {
-            label: 'Network Status',
-            description: 'The status of the Filecoin networks',
-            href: 'https://status.filecoin.io/',
-          },
-          {
-            label: 'Network Health',
-            description: 'Filecoin chain activity and performance',
-            href: 'https://dashboard.starboard.ventures/',
-          },
-        ],
-      },
+      { title: 'Block Explorers', links: blockExplorerItems },
+      { title: 'Network Monitoring', links: networkMonitoringItems },
     ],
   },
   {
