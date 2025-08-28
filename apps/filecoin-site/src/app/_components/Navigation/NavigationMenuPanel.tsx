@@ -2,7 +2,6 @@
 
 import { clsx } from 'clsx'
 
-
 import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
 import { backgroundVariants } from '@/components/Section'
 
