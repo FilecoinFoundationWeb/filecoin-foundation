@@ -5,6 +5,7 @@ import {
   createSentryConfig,
   outputFileTracingIncludes,
   outputFileTracingExcludes,
+  outputFileTracingRoot,
   webpackRules as baseWebpackRules,
 } from '@filecoin-foundation/next-config'
 
@@ -32,6 +33,7 @@ export function createNextConfig({
       },
       outputFileTracingIncludes,
       outputFileTracingExcludes,
+      outputFileTracingRoot,
       webpack: (config) => {
         config.module.rules.push(...baseWebpackRules, ...extraWebpackRules)
         return config
