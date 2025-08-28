@@ -1,2 +1,2 @@
-export { MarkdownImage } from './MarkdownImage'
-export { MarkdownLink } from './MarkdownLink' 
+export * from './MarkdownImage'
+export * from './MarkdownLink'
