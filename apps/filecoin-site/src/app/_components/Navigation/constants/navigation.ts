@@ -97,7 +97,9 @@ export const legalLinks: Array<InternalNavItem> = [
   { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
 ]
 
-export const headerNavigation: Array<NavItem | LabelledExpandedNavItems> = [
+export const headerNavigation: Array<
+  InternalNavItem | LabelledExpandedNavItems
+> = [
   {
     label: PATHS.LEARN.label,
     items: [
