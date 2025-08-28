@@ -2,7 +2,7 @@ import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import { footerNavigationItems } from '@/_components/Navigation/constants/navigation'
+import { footerNavigationItems } from '../Navigation/constants/navigation'
 
 export function NavigationItems() {
   return (

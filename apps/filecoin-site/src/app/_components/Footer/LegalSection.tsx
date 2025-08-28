@@ -2,8 +2,7 @@ import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextL
 
 import FilecoinFoundationLogo from '@/assets/logos/filecoin-foundation-logo.svg'
 
-import { legalLinks } from '@/_components/Navigation/constants/navigation'
-
+import { legalLinks } from '../Navigation/constants/navigation'
 
 export function LegalSection() {
   return (
