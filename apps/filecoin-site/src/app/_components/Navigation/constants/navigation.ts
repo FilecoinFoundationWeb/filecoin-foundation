@@ -65,7 +65,10 @@ const resourceItems: Array<NavItem> = [
   { label: 'Cookbook', href: FILECOIN_DOCS_URLS.builderCookbook },
   { label: FILECOIN_URLS.github.label, href: FILECOIN_URLS.github.href },
   { label: 'Grants', href: FILECOIN_FOUNDATION_URLS.grants },
-  { label: 'Bug Bounty', href: FILECOIN_URLS.securityBugBounty },
+  {
+    label: FILECOIN_URLS.securityBugBounty.label,
+    href: FILECOIN_URLS.securityBugBounty.href,
+  },
   { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
   { label: 'Network Status', href: 'https://status.filecoin.io/' },
   { label: 'Network Health', href: 'https://dashboard.starboard.ventures/' },
@@ -146,9 +149,9 @@ export const headerNavigation: Array<NavItem | LabelledExpandedNavItems> = [
             href: FILECOIN_FOUNDATION_URLS.grants,
           },
           {
-            label: 'Bug Bounty',
+            label: FILECOIN_URLS.securityBugBounty.label,
             description: 'Help find vulnerabilities and get rewarded',
-            href: FILECOIN_URLS.securityBugBounty,
+            href: FILECOIN_URLS.securityBugBounty.href,
           },
         ],
       },

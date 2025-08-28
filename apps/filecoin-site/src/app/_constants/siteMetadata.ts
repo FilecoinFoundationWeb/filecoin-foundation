@@ -46,7 +46,10 @@ const FILECOIN_URLS = {
     href: 'https://github.com/filecoin-project',
     label: 'GitHub',
   },
-  securityBugBounty: 'https://immunefi.com/bug-bounty/filecoin/',
+  securityBugBounty: {
+    href: 'https://immunefi.com/bug-bounty/filecoin/',
+    label: 'Bug Bounty',
+  },
   social: {
     bluesky: {
       href: 'https://bsky.app/profile/filecoin.io',
