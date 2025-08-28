@@ -28,9 +28,7 @@ export function createNextConfig({
       images: {
         remotePatterns: imageRemotePatterns,
       },
-      experimental: {
-        typedRoutes: true,
-      },
+      typedRoutes: true,
       outputFileTracingIncludes,
       outputFileTracingExcludes,
       outputFileTracingRoot,
