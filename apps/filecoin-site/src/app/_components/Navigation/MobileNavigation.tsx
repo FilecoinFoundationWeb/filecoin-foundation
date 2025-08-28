@@ -11,11 +11,10 @@ import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
 import { backgroundVariants } from '@/components/Section'
 
+import { internalNavigationItems } from './constants/navigation'
 import { variantMapping } from './constants/variantMapping'
 import { HomeLogoIconLink } from './HomeLogoIconLink'
 import { NavigationMainLink } from './NavigationMainLink'
-
-import { internalNavigationItems } from '@/_components/Navigation/constants/navigation'
 
 export function MobileNavigation() {
   const [open, setOpen] = useState(false)

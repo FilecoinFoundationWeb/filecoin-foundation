@@ -1,10 +1,9 @@
 'use client'
 
+import { headerNavigation } from './constants/navigation'
 import { NavigationLanguageToggle } from './NavigationLanguageToggle'
 import { NavigationMainLink } from './NavigationMainLink'
 import { NavigationMenu } from './NavigationMenu/NavigationMenu'
-
-import { headerNavigation } from '@/_components/Navigation/constants/navigation'
 
 export function DesktopNavigation() {
   return (

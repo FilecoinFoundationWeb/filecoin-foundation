@@ -4,7 +4,7 @@ import { isInternalLink } from '@filecoin-foundation/utils/linkUtils'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import type { LabelledExpandedNavItems } from '@/_components/Navigation/constants/navigation'
+import type { LabelledExpandedNavItems } from '../constants/navigation'
 
 export function useIsNavigationMenuActive(
   items: LabelledExpandedNavItems['items'],

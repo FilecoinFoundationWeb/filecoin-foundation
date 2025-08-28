@@ -5,11 +5,10 @@ import { clsx } from 'clsx'
 import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
 import { backgroundVariants } from '@/components/Section'
 
+import { type LabelledExpandedNavItems } from '../constants/navigation'
 import { variantMapping } from '../constants/variantMapping'
 
 import { NavigationMenuLink } from './NavigationMenuLink'
-
-import { type LabelledExpandedNavItems } from '@/_components/Navigation/constants/navigation'
 
 const roundedStyle = 'rounded-2xl'
 
