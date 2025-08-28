@@ -16,6 +16,8 @@ export type StorageProviderCardProps = {
   logo: StaticImageData
 }
 
+const LOGO_SIZE = 40
+
 export function StorageProviderCard({
   name,
   description,
@@ -29,11 +31,12 @@ export function StorageProviderCard({
       <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-8 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 pb-16 focus-within:bg-zinc-50 hover:bg-zinc-50">
         <div className="flex items-center gap-3">
           <Image
-            src={logo}
+            src={logo.src}
             alt={`${name}'s logo`}
-            width={40}
-            height={40}
-            className="rounded-full"
+            width={LOGO_SIZE}
+            height={LOGO_SIZE}
+            sizes={`${LOGO_SIZE}px`}
+            className="w-auto rounded-full"
           />
 
           <Heading tag="h3" variant="card-heading">
