@@ -1,10 +1,11 @@
 import path from 'path'
 
+import { tests } from '@filecoin-foundation/cypress/support'
+import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
+
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { tests } from '@/cypress/support'
-import type { GenericEntryFrontmatter } from '@/cypress/tasks/getEntryFrontmatter'
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 import { METADATA_TITLE_SUFFIX } from '@/ecosystem-explorer/constants/metadata'
 

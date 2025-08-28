@@ -1,8 +1,9 @@
+import { tests } from '@filecoin-foundation/cypress/support'
+
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { CASE_STUDIES_SEO } from '@/case-studies/constants/seo'
-import { tests } from '@/cypress/support'
 
 const { path } = PATHS.CASE_STUDIES
 const { title, description } = CASE_STUDIES_SEO

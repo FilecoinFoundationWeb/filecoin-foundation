@@ -1,7 +1,9 @@
 import { defineConfig } from 'cypress'
 
-import { getEntryFrontmatter } from './cypress/tasks/getEntryFrontmatter'
-import { getRandomSlug } from './cypress/tasks/getRandomSlug'
+import {
+  getEntryFrontmatter,
+  getRandomSlug,
+} from '@filecoin-foundation/cypress/tasks'
 
 export default defineConfig({
   e2e: {

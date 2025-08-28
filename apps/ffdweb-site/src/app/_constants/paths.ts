@@ -2,7 +2,6 @@ import { createPathConfig } from '@/utils/createPathConfig'
 
 export const WORKSPACE_ROOT = 'apps/ffdweb-site'
 export const CONTENT_ROOT = 'src/content'
-export const MARKDOWN_EXTENSION = '.md'
 
 export type StaticPath =
   | '/'

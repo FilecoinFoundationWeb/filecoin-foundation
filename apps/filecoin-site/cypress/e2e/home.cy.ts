@@ -1,7 +1,7 @@
+import { tests } from '@filecoin-foundation/cypress/support'
+
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, SEO } from '@/constants/siteMetadata'
-
-import { tests } from '@/cypress/support'
 
 const { path } = PATHS.HOME
 const { title, description } = SEO
