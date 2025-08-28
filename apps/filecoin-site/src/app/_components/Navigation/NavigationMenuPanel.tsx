@@ -7,7 +7,7 @@ import { type LabelledExpandedNavItems } from '@/constants/navigation'
 import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
 import { backgroundVariants } from '@/components/Section'
 
-import { variantMapping } from './constants'
+import { variantMapping } from './constants/variantMapping'
 import { NavigationMenuLink } from './NavigationMenuLink'
 
 const roundedStyle = 'rounded-2xl'

@@ -13,7 +13,7 @@ import { internalNavigationItems } from '@/constants/navigation'
 import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
 import { backgroundVariants } from '@/components/Section'
 
-import { variantMapping } from './constants'
+import { variantMapping } from './constants/variantMapping'
 import { HomeLogoIconLink } from './HomeLogoIconLink'
 import { NavigationMainLink } from './NavigationMainLink'
 

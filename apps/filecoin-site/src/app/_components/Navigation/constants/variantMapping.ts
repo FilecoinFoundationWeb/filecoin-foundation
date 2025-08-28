@@ -1,4 +1,4 @@
-import type { SectionProps } from '../Section'
+import type { SectionProps } from '../../Section'
 
 type VariantMapping = Record<
   SectionProps['backgroundVariant'],
