@@ -2,8 +2,9 @@ import { usePathname } from 'next/navigation'
 
 import { isInternalLink } from '@filecoin-foundation/utils/linkUtils'
 
-import type { LabelledExpandedNavItems } from '@/constants/navigation'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
+import type { LabelledExpandedNavItems } from '@/_components/Navigation/constants/navigation'
 
 export function useIsNavigationMenuActive(
   items: LabelledExpandedNavItems['items'],

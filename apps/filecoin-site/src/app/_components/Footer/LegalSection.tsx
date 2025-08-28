@@ -1,8 +1,9 @@
 import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 
-import { legalLinks } from '@/constants/navigation'
-
 import FilecoinFoundationLogo from '@/assets/logos/filecoin-foundation-logo.svg'
+
+import { legalLinks } from '@/_components/Navigation/constants/navigation'
+
 
 export function LegalSection() {
   return (
