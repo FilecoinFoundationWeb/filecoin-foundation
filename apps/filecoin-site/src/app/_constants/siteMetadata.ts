@@ -12,7 +12,6 @@ const SEO = {
 } as const
 
 const FILECOIN_DOCS_URL = 'https://docs.filecoin.io/'
-
 const FILECOIN_DOCS_URLS = {
   basicsBlockhainPoRep: `${FILECOIN_DOCS_URL}basics/the-blockchain/proofs#proof-of-replication-porep`,
   basicsBlockhainPoSt: `${FILECOIN_DOCS_URL}basics/the-blockchain/proofs#proof-of-spacetime-post`,
@@ -28,26 +27,31 @@ const FILECOIN_DOCS_URLS = {
   storageProviderBlockRewardsImpact: `${FILECOIN_DOCS_URL}storage-providers/filecoin-economics/block-rewards#impact-of-storage-capacity-on-block-rewards`,
 } as const
 
+const FILECOIN_FOUNDATION_URL = 'https://fil.org'
 const FILECOIN_FOUNDATION_URLS = {
   ecosystemExplorer: {
-    href: 'https://fil.org/ecosystem-explorer',
+    href: `${FILECOIN_FOUNDATION_URL}/ecosystem-explorer`,
     label: 'Ecosystem Explorer',
   },
   events: {
-    href: 'https://fil.org/events',
+    href: `${FILECOIN_FOUNDATION_URL}/events`,
     label: 'Events',
   },
   governance: {
-    href: 'https://fil.org/governance',
+    href: `${FILECOIN_FOUNDATION_URL}/governance`,
     label: 'Governance',
   },
   grants: {
-    href: 'https://fil.org/grants',
+    href: `${FILECOIN_FOUNDATION_URL}/grants`,
     label: 'Grants',
   },
   orbit: {
-    href: 'https://fil.org/orbit',
+    href: `${FILECOIN_FOUNDATION_URL}/orbit`,
     label: 'Orbit',
+  },
+  privacyPolicy: {
+    href: `${FILECOIN_FOUNDATION_URL}/privacy-policy`,
+    label: 'Privacy Policy',
   },
   emails: {
     contact: 'hello@fil.org',
@@ -121,6 +125,7 @@ export {
   BASE_URL,
   FILECOIN_DOCS_URL,
   FILECOIN_DOCS_URLS,
+  FILECOIN_FOUNDATION_URL,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
   ORGANIZATION_NAME,
