@@ -13,17 +13,9 @@ type SiteLayoutProps = {
   children: React.ReactNode
 }
 
+// funnelSans also has an italic version in the same directory. We don't use italics as of now so it's not imported here.
 const funnelSans = localFont({
-  src: [
-    {
-      path: '../_fonts/Funnel_Sans/FunnelSans[wght].woff2',
-      style: 'normal',
-    },
-    {
-      path: '../_fonts/Funnel_Sans/FunnelSans-Italic[wght].woff2',
-      style: 'italic',
-    },
-  ],
+  src: '../_fonts/Funnel_Sans/FunnelSans[wght].woff2',
   display: 'swap',
   variable: '--font-funnel-sans',
   fallback: ['Arial', 'Helvetica', 'sans-serif'],
