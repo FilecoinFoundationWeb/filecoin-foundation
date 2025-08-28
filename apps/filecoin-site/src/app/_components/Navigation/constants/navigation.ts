@@ -1,10 +1,10 @@
-import { PATHS } from '../../../_constants/paths'
+import { PATHS } from '@/constants/paths'
 import {
   FILECOIN_DOCS_URL,
   FILECOIN_DOCS_URLS,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
-} from '../../../_constants/siteMetadata'
+} from '@/constants/siteMetadata'
 
 type NavItem = { label: string; href: string }
 type ExpandedNavItem = NavItem & { description: string }
