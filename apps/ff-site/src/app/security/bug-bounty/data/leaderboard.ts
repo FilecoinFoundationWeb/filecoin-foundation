@@ -90,6 +90,11 @@ export const leaderboardData = [
     profileLink: null,
   },
   {
+    reporter: 'quasar',
+    points: 40,
+    profileLink: "https://x.com/quasar249",
+  },
+  {
     reporter: 'Swapnil Kothawade',
     points: 25,
     profileLink: 'https://www.linkedin.com/in/swapnil-kothawade-813854a7/',
@@ -107,6 +112,11 @@ export const leaderboardData = [
   {
     reporter: 'Nishant Das',
     points: 34,
+    profileLink: null,
+  },
+  {
+    reporter: 'Simeo',
+    points: 15,
     profileLink: null,
   },
   {
@@ -129,7 +139,7 @@ export const leaderboardData = [
     points: 10,
     profileLink: null,
   },
-  { 
+  {
     reporter: 'Patrick Ventuzelo',
     points: 8,
     profileLink: null,
