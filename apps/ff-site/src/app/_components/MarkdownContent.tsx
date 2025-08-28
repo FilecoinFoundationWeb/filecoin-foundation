@@ -4,10 +4,7 @@ import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
 
-import {
-  MarkdownImage,
-  MarkdownLink as SharedMarkdownLink,
-} from '@filecoin-foundation/ui/Markdown'
+import { MarkdownImage, MarkdownLink } from '@filecoin-foundation/ui/Markdown'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
@@ -24,7 +21,7 @@ const markdownComponents = {
   img: (props) => (
     <MarkdownImage {...props} fallbackImage={graphicsData.imageFallback} />
   ),
-  a: (props) => <SharedMarkdownLink {...props} baseDomain={BASE_DOMAIN} />,
+  a: (props) => <MarkdownLink {...props} baseDomain={BASE_DOMAIN} />,
 } as const satisfies Components
 
 export function MarkdownContent({

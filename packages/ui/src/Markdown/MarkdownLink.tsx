@@ -5,7 +5,7 @@ import { clsx } from 'clsx'
 
 import { SmartTextLink } from '../TextLink/SmartTextLink'
 
-export type MarkdownLinkProps = ComponentPropsWithoutRef<'a'> & {
+type MarkdownLinkProps = ComponentPropsWithoutRef<'a'> & {
   baseDomain: string
 }
 
