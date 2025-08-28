@@ -7,11 +7,11 @@ import { clsx } from 'clsx'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
 type PopOverProps = {
-  label: string
-  labelClassName?: string
-  panelClassName?: string
   as: React.ElementType
+  label: string
   children: React.ReactElement
+  isCurrent?: boolean
+  labelClassName?: string
 }
 
 const SPACE_BETWEEN_PANEL_AND_BUTTON = 24
@@ -20,15 +20,16 @@ const SPACE_BETWEEN_PANEL_AND_VIEWPORT = 8
 export function NavigationMenu({
   as,
   label,
-  labelClassName,
-  panelClassName,
   children,
+  isCurrent,
+  labelClassName,
 }: PopOverProps) {
   return (
     <Popover as={as}>
       <PopoverButton
         aria-label={`${label} (opens a navigation menu)`}
         className={clsx('group', labelClassName)}
+        {...(isCurrent && { 'aria-current': 'true' })}
       >
         <span>{label}</span>
         <span className="transition-transform group-data-open:rotate-180">
@@ -46,7 +47,7 @@ export function NavigationMenu({
       >
         {(props) => (
           <div
-            className={clsx('navigation-menu-panel', panelClassName)}
+            className="navigation-menu-panel"
             onClick={(e) => {
               e.stopPropagation()
               props.close()

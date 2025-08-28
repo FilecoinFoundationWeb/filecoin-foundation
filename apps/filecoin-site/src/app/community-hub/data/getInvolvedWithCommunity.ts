@@ -7,7 +7,7 @@ export const getInvolvedWithCommunity = [
     title: 'Events & meetups',
     description: 'Attend upcoming hackathons, summits, and meetups.',
     cta: {
-      href: FILECOIN_FOUNDATION_URLS.events,
+      href: FILECOIN_FOUNDATION_URLS.events.href,
       text: 'Explore future events',
     },
   },
@@ -16,7 +16,7 @@ export const getInvolvedWithCommunity = [
     description:
       'Advocate for Filecoin, host events, and grow the ecosystem around the world.',
     cta: {
-      href: FILECOIN_FOUNDATION_URLS.orbit,
+      href: FILECOIN_FOUNDATION_URLS.orbit.href,
       text: 'Learn more about Orbit',
     },
   },
