@@ -112,13 +112,6 @@ const contributeItems: Array<ExpandedNavItem> = [
   },
 ]
 
-const resourceItems: Array<NavItem> = [
-  ...developerResourcesItems.map(({ label, href }) => ({ label, href })),
-  ...contributeItems.map(({ label, href }) => ({ label, href })),
-  { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
-  ...networkMonitoringItems.map(({ label, href }) => ({ label, href })),
-]
-
 export const internalNavigationItems: Array<InternalNavItem> = [
   { label: PATHS.LEARN.label, href: PATHS.LEARN.path },
   { label: PATHS.CASE_STUDIES.label, href: PATHS.CASE_STUDIES.path },
@@ -197,7 +190,15 @@ export const footerNavigationItems: Array<FooterNavigationItem> = [
       ({ href }) => href !== PATHS.COMMUNITY_HUB.path,
     ),
   },
-  { title: 'Resources', items: resourceItems },
+  {
+    title: 'Resources',
+    items: [
+      ...developerResourcesItems.map(({ label, href }) => ({ label, href })),
+      ...contributeItems.map(({ label, href }) => ({ label, href })),
+      { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
+      ...networkMonitoringItems.map(({ label, href }) => ({ label, href })),
+    ],
+  },
   {
     title: 'Block Explorers',
     items: blockExplorerItems.map(({ label, href }) => ({
