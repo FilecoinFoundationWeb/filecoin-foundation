@@ -1,16 +1,14 @@
 'use client'
 
-import { type LinkProps } from 'next/link'
+import Link, { type LinkProps } from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { clsx } from 'clsx'
+import type { Route } from 'next'
 
-import type { BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
-import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
 import type { PathValues } from '@/constants/paths'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'px-5 py-6',
@@ -34,7 +32,7 @@ const mobileStyle = clsx(
 type NavigationLinkProps = {
   on: 'mobile' | 'desktop'
   label: string
-  href: BaseLinkProps['href']
+  href: Route
   onNavigate?: LinkProps<PathValues>['onNavigate']
 }
 
@@ -48,9 +46,8 @@ export function NavigationMainLink({
   const isActive = pathname.startsWith(href.toString())
 
   return (
-    <SmartTextLink
+    <Link
       href={href}
-      baseDomain={BASE_DOMAIN}
       aria-label={`Go to ${label} page`}
       aria-current={isActive}
       className={clsx(
@@ -61,6 +58,6 @@ export function NavigationMainLink({
       {...rest}
     >
       {label}
-    </SmartTextLink>
+    </Link>
   )
 }
