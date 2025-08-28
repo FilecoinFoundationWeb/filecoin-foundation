@@ -14,7 +14,7 @@ export const getInvolvedOptions = [
     title: 'Apply for a grant',
     description:
       'Secure funding to support your Filecoin-based project or research.',
-    href: FILECOIN_FOUNDATION_URLS.grants,
+    href: FILECOIN_FOUNDATION_URLS.grants.href,
     icon: CurrencyDollarIcon,
   },
   {
@@ -28,14 +28,14 @@ export const getInvolvedOptions = [
     title: 'Become an Orbit ambassador',
     description:
       'Join the Orbit community to advocate for decentralized tech, support new builders, and grow the Filecoin movement globally.',
-    href: FILECOIN_FOUNDATION_URLS.orbit,
+    href: FILECOIN_FOUNDATION_URLS.orbit.href,
     icon: MegaphoneIcon,
   },
   {
     title: 'Attend community events',
     description:
       'Connect with builders, researchers, and advocates at hackathons, meetups, and summits around the world.',
-    href: FILECOIN_FOUNDATION_URLS.events,
+    href: FILECOIN_FOUNDATION_URLS.events.href,
     icon: MapPinLineIcon,
   },
 ] as const satisfies Array<LinkCardData>

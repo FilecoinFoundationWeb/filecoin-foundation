@@ -12,7 +12,6 @@ const SEO = {
 } as const
 
 const FILECOIN_DOCS_URL = 'https://docs.filecoin.io/'
-
 const FILECOIN_DOCS_URLS = {
   basicsBlockhainPoRep: `${FILECOIN_DOCS_URL}basics/the-blockchain/proofs#proof-of-replication-porep`,
   basicsBlockhainPoSt: `${FILECOIN_DOCS_URL}basics/the-blockchain/proofs#proof-of-spacetime-post`,
@@ -28,13 +27,32 @@ const FILECOIN_DOCS_URLS = {
   storageProviderBlockRewardsImpact: `${FILECOIN_DOCS_URL}storage-providers/filecoin-economics/block-rewards#impact-of-storage-capacity-on-block-rewards`,
 } as const
 
+const FILECOIN_FOUNDATION_URL = 'https://fil.org'
 const FILECOIN_FOUNDATION_URLS = {
-  events: 'https://fil.org/events',
-  governance: 'https://fil.org/governance',
-  grants: 'https://fil.org/grants',
-  orbit: 'https://fil.org/orbit',
-  security: 'https://fil.org/security',
-  ecosystemExplorer: 'https://fil.org/ecosystem-explorer',
+  ecosystemExplorer: {
+    href: `${FILECOIN_FOUNDATION_URL}/ecosystem-explorer`,
+    label: 'Ecosystem Explorer',
+  },
+  events: {
+    href: `${FILECOIN_FOUNDATION_URL}/events`,
+    label: 'Events',
+  },
+  governance: {
+    href: `${FILECOIN_FOUNDATION_URL}/governance`,
+    label: 'Governance',
+  },
+  grants: {
+    href: `${FILECOIN_FOUNDATION_URL}/grants`,
+    label: 'Grants',
+  },
+  orbit: {
+    href: `${FILECOIN_FOUNDATION_URL}/orbit`,
+    label: 'Orbit',
+  },
+  privacyPolicy: {
+    href: `${FILECOIN_FOUNDATION_URL}/privacy-policy`,
+    label: 'Privacy Policy',
+  },
   emails: {
     contact: 'hello@fil.org',
     devgrants: 'devgrants@fil.org',
@@ -42,8 +60,14 @@ const FILECOIN_FOUNDATION_URLS = {
 } as const
 
 const FILECOIN_URLS = {
-  github: 'https://github.com/filecoin-project',
-  securityBugBounty: 'https://immunefi.com/bug-bounty/filecoin/',
+  github: {
+    href: 'https://github.com/filecoin-project',
+    label: 'GitHub',
+  },
+  securityBugBounty: {
+    href: 'https://immunefi.com/bug-bounty/filecoin/',
+    label: 'Bug Bounty',
+  },
   social: {
     bluesky: {
       href: 'https://bsky.app/profile/filecoin.io',
@@ -101,6 +125,7 @@ export {
   BASE_URL,
   FILECOIN_DOCS_URL,
   FILECOIN_DOCS_URLS,
+  FILECOIN_FOUNDATION_URL,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
   ORGANIZATION_NAME,

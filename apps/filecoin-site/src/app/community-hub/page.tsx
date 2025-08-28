@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -115,7 +116,10 @@ export default function CommunityHub() {
           title="Explore the ecosystem"
           description="Visit Filecoin Foundation's Ecosystem Explorer to discover Filecoin projects, get inspired by what others are building, and find your place in the Filecoin ecosystem."
           cta={
-            <Button href="https://fil.org/ecosystem-explorer" variant="primary">
+            <Button
+              href={FILECOIN_FOUNDATION_URLS.ecosystemExplorer.href}
+              variant="primary"
+            >
               Visit ecosystem explorer
             </Button>
           }
