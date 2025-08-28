@@ -1,5 +1,3 @@
-import { Suspense } from 'react'
-
 import localFont from 'next/font/local'
 
 import { clsx } from 'clsx'
@@ -45,9 +43,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
       className={clsx(aspekta.variable, funnelSans.variable, 'antialiased')}
     >
       <head>
-        <Suspense>
-          <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
-        </Suspense>
+        <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
       </head>
       <body className="bg-white font-sans tracking-tight">
         <main>{children}</main>

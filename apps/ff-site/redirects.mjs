@@ -207,6 +207,11 @@ export const redirects = [
       '/blog/bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle',
     permanent: true,
   },
+  {
+    source: '/ecosystem-explorer/stfil',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
 
   // EVENTS REDIRECTS
   {
