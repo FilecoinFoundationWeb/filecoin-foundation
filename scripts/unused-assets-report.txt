@@ -2,33 +2,22 @@ UNUSED ASSETS REPORT
 ===================
 
 ff-site:
-  public/assets/images/solmedia.png
-  public/assets/images/sarah-thiam-headshot.webp
-  public/assets/images/og-image.png
-  public/assets/images/murmurationlabs.png
-  public/assets/images/molly-mckinlay-headshot.webp
-  public/assets/images/masa-senshi-kikuch-headshot.webp
-  public/assets/images/marta-belcher-headshot.webp
-  public/assets/images/filozlogo.svg
-  public/assets/images/filfi_logo_white.png
-  public/assets/images/fil-euro-summer-webp.webp
-  public/assets/images/datalatte.png
-  public/assets/images/danny-obrien-headshot.webp
-  public/assets/images/builtdifferent.png
-  public/assets/images/banyan_logo_white.png
-  public/assets/images/65974a4a0cea1eb2d9c5b69b_genrait-logo.png
-  Total: 15
-
-ffdweb-site:
-  public/assets/images/favicon.ico
+  public/assets/images/devsummit7_social2-squooshed.webp
   Total: 1
 
-filecoin-site:
+ffdweb-site:
   Total: 0
+
+filecoin-site:
+  public/assets/images/FilecoinNewsHeader.webp
+  public/assets/graphics/earth-globe.webp
+  public/assets/graphics/earth-from-space-at-night.webp
+  public/assets/graphics/diagram.webp
+  Total: 4
 
 uxit:
   Total: 0
 
-Total unused: 16
-Total deleted: 16
-Generated: 2025-08-11T14:13:16.423Z
+Total unused: 5
+Total deleted: 5
+Generated: 2025-09-01T02:43:36.068Z
