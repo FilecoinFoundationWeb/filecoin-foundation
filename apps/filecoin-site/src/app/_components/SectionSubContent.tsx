@@ -23,7 +23,7 @@ export function SectionSubContent({
       <div className="max-w-2xl">
         <Heading
           tag={headingTag}
-          className="text-xl font-medium tracking-tighter md:text-3xl/10"
+          className="text-xl font-medium md:text-3xl/10"
         >
           {title}
         </Heading>
