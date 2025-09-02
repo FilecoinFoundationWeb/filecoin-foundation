@@ -16,7 +16,7 @@ export type HeadingProps<T extends HeadingTag = HeadingTag> =
   | (BaseHeadingProps<T> & { className: string; variant?: never })
 
 const variants = {
-  'card-heading': 'text-xl font-medium',
+  'card-heading': 'text-xl/7 font-medium',
   'section-heading': 'text-3xl/10 font-medium sm:text-5xl/15',
   'page-heading': 'text-4xl/12 font-medium sm:text-6xl/18',
 } as const

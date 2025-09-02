@@ -1,23 +1,15 @@
-import { clsx } from 'clsx'
-
 export type KickerProps = {
   children: string | Array<string>
-  size?: keyof typeof sizeStyles
 }
 
-const sizeStyles = {
-  sm: 'text-sm',
-  md: 'text-base',
-}
+const style = 'font-mono'
 
-export function Kicker({ children, size = 'md' }: KickerProps) {
-  const combinedClassName = clsx('font-mono', sizeStyles[size])
-
+export function Kicker({ children }: KickerProps) {
   if (Array.isArray(children)) {
     return (
       <div className="flex flex-wrap gap-4">
         {children.map((kicker, index) => (
-          <span key={index} className={combinedClassName}>
+          <span key={index} className={style}>
             {kicker}
           </span>
         ))}
@@ -25,5 +17,5 @@ export function Kicker({ children, size = 'md' }: KickerProps) {
     )
   }
 
-  return <span className={combinedClassName}>{children}</span>
+  return <span className={style}>{children}</span>
 }

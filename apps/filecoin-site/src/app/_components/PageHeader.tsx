@@ -28,14 +28,14 @@ export function PageHeader({
           centered && 'mx-auto text-center',
         )}
       >
-        {kicker && <Kicker size="md">{kicker}</Kicker>}
+        {kicker && <Kicker>{kicker}</Kicker>}
 
         <Heading tag="h1" variant="page-heading">
           {title}
         </Heading>
 
         {description && (
-          <p className="tracking-tighter text-pretty text-[var(--color-paragraph-text)] md:text-xl">
+          <p className="tracking-tighter text-pretty text-[var(--color-paragraph-text)] md:text-xl/7">
             {description}
           </p>
         )}
