@@ -1,5 +1,8 @@
 // @ts-check
-import { outputFileTracingExcludes } from '@filecoin-foundation/next-config'
+import {
+  outputFileTracingExcludes,
+  outputFileTracingRoot,
+} from '@filecoin-foundation/next-config'
 
 const webpackRules = [
   {
@@ -14,6 +17,7 @@ const outputFileTracingIncludes = {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingRoot,
   outputFileTracingIncludes,
   outputFileTracingExcludes,
   webpack: (config) => {

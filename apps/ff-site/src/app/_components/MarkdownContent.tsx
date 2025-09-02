@@ -17,10 +17,12 @@ export type MarkdownContentProps = {
   addTableOfContents?: boolean
 }
 
-const markdownComponents: Components = {
-  img: (props) => <MarkdownImage {...props} fallbackImage={graphicsData.imageFallback} />,
+const markdownComponents = {
+  img: (props) => (
+    <MarkdownImage {...props} fallbackImage={graphicsData.imageFallback} />
+  ),
   a: (props) => <MarkdownLink {...props} baseDomain={BASE_DOMAIN} />,
-}
+} as const satisfies Components
 
 export function MarkdownContent({
   children,
@@ -58,6 +60,8 @@ export function MarkdownContent({
     </div>
   )
 }
+
+MarkdownContent.Link = markdownComponents.a
 
 function addTableOfContentsHeader(nodeTree: HtmlElementNode) {
   const headerNode = {

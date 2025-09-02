@@ -5,6 +5,7 @@ import {
   createSentryConfig,
   outputFileTracingIncludes,
   outputFileTracingExcludes,
+  outputFileTracingRoot,
   webpackRules as baseWebpackRules,
 } from '@filecoin-foundation/next-config'
 
@@ -28,11 +29,10 @@ export function createNextConfig({
         remotePatterns: imageRemotePatterns,
         qualities: [75, 85, 100],
       },
-      experimental: {
-        typedRoutes: true,
-      },
+      typedRoutes: true,
       outputFileTracingIncludes,
       outputFileTracingExcludes,
+      outputFileTracingRoot,
       webpack: (config) => {
         config.module.rules.push(...baseWebpackRules, ...extraWebpackRules)
         return config

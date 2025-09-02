@@ -10,4 +10,7 @@ export default createNextConfig({
     project: 'filecoin-site',
     authTokenEnvVar: 'SENTRY_AUTH_TOKEN_FILECOIN_SITE',
   },
+  images: {
+    qualities: [75, 80, 100],
+  },
 })

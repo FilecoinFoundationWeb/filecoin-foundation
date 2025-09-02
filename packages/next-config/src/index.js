@@ -1,7 +1,4 @@
-export { createNextConfig } from './createNextConfig.js'
-export { createSentryConfig } from './createSentryConfig.js'
-export {
-  outputFileTracingIncludes,
-  outputFileTracingExcludes,
-} from './tracing.js'
-export { webpackRules } from './webpackRules.js'
+export * from './createNextConfig.js'
+export * from './createSentryConfig.js'
+export * from './tracing.js'
+export * from './webpackRules.js'
