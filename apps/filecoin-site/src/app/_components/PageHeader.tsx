@@ -42,7 +42,7 @@ export function PageHeader({
       </div>
 
       {cta && (
-        <div className="mt-10">
+        <div className="mt-15">
           <ButtonRow buttons={cta} centered={centered} />
         </div>
       )}
