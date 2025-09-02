@@ -1,6 +1,6 @@
 import { createNextConfig } from '@filecoin-foundation/next-config'
 
-import { redirects as rawRedirects } from './redirects.js'
+import { redirects as rawRedirects } from './redirects'
 
 /** @type {import('next').NextConfig} */
 export default createNextConfig({
