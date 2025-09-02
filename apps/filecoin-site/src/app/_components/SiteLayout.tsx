@@ -1,4 +1,5 @@
 import localFont from 'next/font/local'
+import Script from 'next/script'
 
 import { clsx } from 'clsx'
 
@@ -38,6 +39,13 @@ export function SiteLayout({ children }: SiteLayoutProps) {
     >
       <head>
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
+        <Script id="transifex-settings" strategy="beforeInteractive">
+          {`window.liveSettings = { api_key: "48f96b4371a44981981a6b4a096a7906" }`}
+        </Script>
+        <Script
+          src="//cdn.transifex.com/live.js"
+          strategy="beforeInteractive"
+        />
       </head>
       <body className="bg-white font-sans tracking-tight">
         <main>{children}</main>
