@@ -1,7 +1,5 @@
 import type { Route } from 'next'
 
-import type { BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
-
 import { PATHS } from '@/constants/paths'
 import {
   FILECOIN_DOCS_URL,
@@ -10,7 +8,7 @@ import {
   FILECOIN_URLS,
 } from '@/constants/siteMetadata'
 
-export type NavItem = { label: string; href: BaseLinkProps['href'] }
+export type NavItem = { label: string; href: string | Route }
 type InternalNavItem = { label: string; href: Route }
 type ExpandedNavItem = NavItem & { description: string }
 
