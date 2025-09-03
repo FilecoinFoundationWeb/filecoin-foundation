@@ -48,7 +48,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
           }`}
         </Script>
         <Script
-          src="//cdn.transifex.com/live.js"
+          src="https://cdn.transifex.com/live.js"
           strategy="beforeInteractive"
         />
       </head>
