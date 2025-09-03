@@ -12,7 +12,6 @@ type YouTubeVideoEmbedProps = {
 }
 
 const YOUTUBE_EMBED_BASE_URL = 'https://www.youtube.com/embed/'
-const REMOVE_MORE_VIDEOS_SUGGESTIONS = 'rel=0'
 
 export function YouTubeVideo({
   embedUrl,
@@ -49,7 +48,6 @@ export function YouTubeVideo({
         title={title}
         activatedClass="lyt-activated"
         iframeClass="h-full w-full cursor-pointer"
-        params={REMOVE_MORE_VIDEOS_SUGGESTIONS}
         playerClass="sr-only"
         webp={true}
         wrapperClass="aspect-video opacity-50 [&:has(iframe)]:opacity-100 cursor-pointer overflow-hidden bg-cover focus:brand-outline"
