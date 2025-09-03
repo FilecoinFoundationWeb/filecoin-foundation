@@ -18,7 +18,7 @@ const LANGUAGE_CONFIG = {
   zh_CN: { label: '中文', name: 'Chinese' },
 } as const
 
-const DEFAULT_LANGUAGE = 'en'
+const DEFAULT_LANGUAGE: keyof typeof LANGUAGE_CONFIG = 'en'
 
 function getDefaultLanguages() {
   return Object.entries(LANGUAGE_CONFIG).map(
