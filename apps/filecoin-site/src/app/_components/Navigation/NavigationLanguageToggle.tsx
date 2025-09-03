@@ -1,19 +1,14 @@
 'use client'
 
-import { useState } from 'react'
-
 import { Button } from '@headlessui/react'
 import { clsx } from 'clsx'
 
+import { useTransifexLive } from './hooks/useTransifexLive'
 import { desktopStyle } from './NavigationMainLink'
 
-const languages = [
-  { key: 'en', label: 'EN', ariaLabel: 'Switch to English' },
-  { key: 'zh', label: '中文', ariaLabel: 'Switch to Chinese' },
-] as const
-
 export function NavigationLanguageToggle() {
-  const [locale, setLocale] = useState<'en' | 'zh'>('en')
+  const { languages, locale, isTransifexReady, handleLanguageChange } =
+    useTransifexLive()
 
   return (
     <div className="flex items-center gap-4 font-medium">
@@ -22,9 +17,10 @@ export function NavigationLanguageToggle() {
           key={key}
           type="button"
           aria-label={ariaLabel}
-          aria-current={locale === key}
+          aria-pressed={locale === key}
           className={clsx(desktopStyle, 'cursor-pointer')}
-          onClick={() => setLocale(key)}
+          disabled={!isTransifexReady}
+          onClick={() => handleLanguageChange(key)}
         >
           {label}
         </Button>
