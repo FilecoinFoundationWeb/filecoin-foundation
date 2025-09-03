@@ -19,7 +19,7 @@ import { PageSection } from '@/components/PageSection'
 import { backgroundVariants } from '@/components/Section'
 import { SectionContent } from '@/components/SectionContent'
 import { SimpleCard } from '@/components/SimpleCard'
-import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbeded'
+import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbed'
 
 import { LEARN_SEO } from './constants/seo'
 import { learnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
