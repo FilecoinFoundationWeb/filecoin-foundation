@@ -11,6 +11,8 @@ type LanguageConfig = {
   name: string
 }
 
+type SupportedLanguageCode = keyof typeof LANGUAGE_CONFIG
+
 type UseTransifexLiveReturn = {
   languages: Array<Language>
   locale: string
@@ -23,7 +25,7 @@ const LANGUAGE_CONFIG = {
   zh_CN: { label: '中文', name: 'Chinese' },
 } as const satisfies Record<string, LanguageConfig>
 
-const DEFAULT_LANGUAGE: keyof typeof LANGUAGE_CONFIG = 'en'
+const DEFAULT_LANGUAGE: SupportedLanguageCode = 'en'
 
 export function useTransifexLive(): UseTransifexLiveReturn {
   const [languages, setLanguages] = useState<Array<Language>>(
@@ -59,12 +61,9 @@ export function useTransifexLive(): UseTransifexLiveReturn {
     transifex.onFetchLanguages((availableLanguages) => {
       const formattedLanguages = availableLanguages.map((lang) => ({
         key: lang.code,
-        label:
-          LANGUAGE_CONFIG[lang.code as keyof typeof LANGUAGE_CONFIG]?.label ||
-          lang.name,
+        label: getLanguageConfig(lang.code)?.label || lang.name,
         ariaLabel: `Switch to ${
-          LANGUAGE_CONFIG[lang.code as keyof typeof LANGUAGE_CONFIG]?.name ||
-          lang.name
+          getLanguageConfig(lang.code)?.name || lang.name
         }`,
       }))
       setLanguages(formattedLanguages)
@@ -100,4 +99,10 @@ function getDefaultLanguages() {
       ariaLabel: `Switch to ${languageConfig.name}`,
     }),
   )
+}
+
+function getLanguageConfig(code: string) {
+  return code in LANGUAGE_CONFIG
+    ? LANGUAGE_CONFIG[code as SupportedLanguageCode]
+    : null
 }
