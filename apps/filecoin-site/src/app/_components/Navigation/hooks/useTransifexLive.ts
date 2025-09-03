@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 
-// Type definitions
 declare global {
   interface Window {
     Transifex?: {
@@ -24,44 +23,47 @@ type Language = {
 }
 
 type UseTransifexLiveReturn = {
-  languages: Language[]
+  languages: Array<Language>
   locale: string
   isTransifexReady: boolean
   handleLanguageChange: (newLocale: string) => void
 }
-
-const DEFAULT_LANGUAGE = 'en'
 
 const LANGUAGE_CONFIG = {
   en: { label: 'EN', name: 'English' },
   zh_CN: { label: '中文', name: 'Chinese' },
 } as const
 
-const getDefaultLanguages = (): Language[] =>
-  Object.entries(LANGUAGE_CONFIG).map(([key, { label, name }]) => ({
-    key,
-    label,
-    ariaLabel: `Switch to ${name}`,
-  }))
+const DEFAULT_LANGUAGE = 'en'
+
+function getDefaultLanguages() {
+  return Object.entries(LANGUAGE_CONFIG).map(
+    ([languageCode, languageConfig]) => ({
+      key: languageCode,
+      label: languageConfig.label,
+      ariaLabel: `Switch to ${languageConfig.name}`,
+    }),
+  )
+}
 
 export function useTransifexLive(): UseTransifexLiveReturn {
-  const [languages, setLanguages] = useState<Language[]>(getDefaultLanguages())
+  const [languages, setLanguages] = useState<Array<Language>>(
+    getDefaultLanguages(),
+  )
 
   const [locale, setLocale] = useState<string>(DEFAULT_LANGUAGE)
   const [isTransifexReady, setIsTransifexReady] = useState(false)
 
-  const transifex = window.Transifex?.live
-
   useEffect(() => {
-    const waitForTransifex = () => {
-      if (transifex) {
+    function waitForTransifex() {
+      if (window.Transifex?.live) {
         setupTransifex()
       } else {
         setTimeout(waitForTransifex, 100)
       }
     }
 
-    const setupTransifex = () => {
+    function setupTransifex() {
       const transifex = window.Transifex!.live
 
       transifex.onFetchLanguages((availableLanguages) => {
@@ -84,13 +86,13 @@ export function useTransifexLive(): UseTransifexLiveReturn {
     }
 
     waitForTransifex()
-  }, [transifex])
+  }, [])
 
-  const handleLanguageChange = (newLocale: string) => {
-    if (!isTransifexReady || !transifex) return
+  function handleLanguageChange(newLocale: string) {
+    if (!isTransifexReady || !window.Transifex?.live) return
 
     setLocale(newLocale)
-    transifex.translateTo(newLocale, true)
+    window.Transifex.live.translateTo(newLocale, true)
   }
 
   return {
