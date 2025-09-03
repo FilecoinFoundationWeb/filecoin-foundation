@@ -72,7 +72,10 @@ export function useTransifexLive(): UseTransifexLiveReturn {
           label:
             LANGUAGE_CONFIG[lang.code as keyof typeof LANGUAGE_CONFIG]?.label ||
             lang.name,
-          ariaLabel: `Switch to ${lang.name}`,
+          ariaLabel: `Switch to ${
+            LANGUAGE_CONFIG[lang.code as keyof typeof LANGUAGE_CONFIG]?.name ||
+            lang.name
+          }`,
         }))
         setLanguages(formattedLanguages)
 
