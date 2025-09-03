@@ -24,15 +24,13 @@ declare global {
 
 const labelMapping: Record<string, string> = {
   en: 'EN',
-  zh: '中文',
-  'zh-CN': '中文',
-  zh_cn: '中文',
+  zh_CN: '中文',
 }
 
 export function NavigationLanguageToggle() {
   const [languages, setLanguages] = useState([
     { key: 'en', label: 'EN', ariaLabel: 'Switch to English' },
-    { key: 'zh', label: '中文', ariaLabel: 'Switch to Chinese' },
+    { key: 'zh_CN', label: '中文', ariaLabel: 'Switch to Chinese' },
   ])
   const [locale, setLocale] = useState<string>('en')
   const [isTransifexReady, setIsTransifexReady] = useState(false)
