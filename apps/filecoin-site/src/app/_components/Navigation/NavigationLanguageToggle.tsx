@@ -17,7 +17,7 @@ export function NavigationLanguageToggle() {
           key={key}
           type="button"
           aria-label={ariaLabel}
-          aria-current={locale === key}
+          aria-pressed={locale === key}
           className={clsx(desktopStyle, 'cursor-pointer')}
           disabled={!isTransifexReady}
           onClick={() => handleLanguageChange(key)}
