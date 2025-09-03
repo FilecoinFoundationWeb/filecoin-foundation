@@ -1,4 +1,4 @@
-name: Label-based Workflows
+name: Label PR Workflow
 
 on:
   pull_request:
@@ -40,10 +40,10 @@ jobs:
           gh pr edit ${{ github.event.pull_request.number }} --remove-label "size/S" "size/M" "size/L" 2>/dev/null || true
 
           # Add appropriate size label
-          if [ $CHANGED_FILES -le 25 ]; then
+          if [ $CHANGED_FILES -le 15 ]; then
             echo "📏 Adding 'size/S' label ($CHANGED_FILES files changed)"
             gh pr edit ${{ github.event.pull_request.number }} --add-label "size/S"
-          elif [ $CHANGED_FILES -le 100 ]; then
+          elif [ $CHANGED_FILES -le 50 ]; then
             echo "📏 Adding 'size/M' label ($CHANGED_FILES files changed)"
             gh pr edit ${{ github.event.pull_request.number }} --add-label "size/M"
           else
