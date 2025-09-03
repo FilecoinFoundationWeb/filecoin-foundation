@@ -20,16 +20,6 @@ const LANGUAGE_CONFIG = {
 
 const DEFAULT_LANGUAGE: keyof typeof LANGUAGE_CONFIG = 'en'
 
-function getDefaultLanguages() {
-  return Object.entries(LANGUAGE_CONFIG).map(
-    ([languageCode, languageConfig]) => ({
-      key: languageCode,
-      label: languageConfig.label,
-      ariaLabel: `Switch to ${languageConfig.name}`,
-    }),
-  )
-}
-
 export function useTransifexLive(): UseTransifexLiveReturn {
   const [languages, setLanguages] = useState<Array<Language>>(
     getDefaultLanguages(),
@@ -94,4 +84,14 @@ export function useTransifexLive(): UseTransifexLiveReturn {
     isTransifexReady,
     handleLanguageChange,
   }
+}
+
+function getDefaultLanguages() {
+  return Object.entries(LANGUAGE_CONFIG).map(
+    ([languageCode, languageConfig]) => ({
+      key: languageCode,
+      label: languageConfig.label,
+      ariaLabel: `Switch to ${languageConfig.name}`,
+    }),
+  )
 }
