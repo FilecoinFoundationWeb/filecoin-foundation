@@ -22,13 +22,11 @@ declare global {
   }
 }
 
-const languages = [
-  { key: 'en', label: 'EN', ariaLabel: 'Switch to English' },
-  { key: 'zh', label: '中文', ariaLabel: 'Switch to Chinese' },
-] as const
-
 export function NavigationLanguageToggle() {
-  const [locale, setLocale] = useState<'en' | 'zh'>('en')
+  const [languages, setLanguages] = useState<
+    Array<{ key: string; label: string; ariaLabel: string }>
+  >([])
+  const [locale, setLocale] = useState<string>('en')
   const [isTransifexReady, setIsTransifexReady] = useState(false)
 
   useEffect(() => {
@@ -41,28 +39,20 @@ export function NavigationLanguageToggle() {
     }
 
     const initializeTransifex = () => {
-      window.Transifex!.live.onFetchLanguages(() => {
-        let initialLang: 'en' | 'zh' = 'en'
+      window.Transifex!.live.onFetchLanguages((availableLanguages) => {
+        console.log('Available languages from Transifex:', availableLanguages)
 
-        const selectedLang = window.Transifex!.live.getSelectedLanguageCode()
+        const mappedLanguages = availableLanguages.map((lang) => ({
+          key: lang.code,
+          label: lang.name,
+          ariaLabel: `Switch to ${lang.name}`,
+        }))
 
-        if (selectedLang === 'zh' || selectedLang === 'zh-CN') {
-          initialLang = 'zh'
-        } else if (selectedLang === 'en') {
-          initialLang = 'en'
-        } else {
-          const browserLang =
-            navigator.language || navigator.languages?.[0] || 'en'
-          if (browserLang.startsWith('zh')) {
-            initialLang = 'zh'
-          }
-        }
+        setLanguages(mappedLanguages)
 
+        const sourceLang = window.Transifex!.live.getSourceLanguage()
+        const initialLang = sourceLang?.code || 'en'
         setLocale(initialLang)
-
-        if (initialLang === 'zh') {
-          window.Transifex!.live.translateTo('zh', true)
-        }
       })
 
       window.Transifex!.live.onReady(() => {
@@ -70,30 +60,29 @@ export function NavigationLanguageToggle() {
       })
 
       window.Transifex!.live.onTranslatePage((languageCode) => {
-        if (
-          languageCode === 'en' ||
-          languageCode === 'zh' ||
-          languageCode === 'zh-CN'
-        ) {
-          const mappedLang = languageCode.startsWith('zh') ? 'zh' : 'en'
-          setLocale(mappedLang as 'en' | 'zh')
-        }
+        setLocale(languageCode)
       })
     }
 
     checkTransifex()
   }, [])
 
-  function handleLanguageChange(newLocale: 'en' | 'zh') {
+  function handleLanguageChange(newLocale: string) {
     if (!isTransifexReady || !window.Transifex?.live) {
       return
     }
 
-    const transifexLangCode = newLocale === 'zh' ? 'zh' : 'en'
-
     setLocale(newLocale)
+    window.Transifex.live.translateTo(newLocale, true)
+  }
 
-    window.Transifex.live.translateTo(transifexLangCode, true)
+  if (languages.length === 0) {
+    return (
+      <div className="flex items-center gap-6 font-medium">
+        <div className="h-6 w-8 animate-pulse rounded bg-gray-200"></div>
+        <div className="h-6 w-8 animate-pulse rounded bg-gray-200"></div>
+      </div>
+    )
   }
 
   return (
