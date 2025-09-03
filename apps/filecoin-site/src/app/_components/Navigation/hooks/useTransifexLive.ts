@@ -50,16 +50,17 @@ export function useTransifexLive(): UseTransifexLiveReturn {
   const [languages, setLanguages] = useState<Array<Language>>(
     getDefaultLanguages(),
   )
-
   const [locale, setLocale] = useState<string>(DEFAULT_LANGUAGE)
   const [isTransifexReady, setIsTransifexReady] = useState(false)
 
   useEffect(() => {
+    let timeoutId: number | null = null
+
     function waitForTransifex() {
       if (window.Transifex?.live) {
         setupTransifex()
       } else {
-        setTimeout(waitForTransifex, 100)
+        timeoutId = window.setTimeout(waitForTransifex, 100)
       }
     }
 
@@ -84,11 +85,16 @@ export function useTransifexLive(): UseTransifexLiveReturn {
       })
 
       transifex.onReady(() => setIsTransifexReady(true))
-
       transifex.onTranslatePage((languageCode) => setLocale(languageCode))
     }
 
     waitForTransifex()
+
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId)
+      }
+    }
   }, [])
 
   function handleLanguageChange(newLocale: string) {
