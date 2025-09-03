@@ -30,39 +30,65 @@ const languages = [
 export function NavigationLanguageToggle() {
   const [locale, setLocale] = useState<'en' | 'zh'>('en')
   const [isTransifexReady, setIsTransifexReady] = useState(false)
-
   useEffect(() => {
-    console.log('Transifex available:', !!window.Transifex?.live)
-    if (window.Transifex?.live) {
-      window.Transifex.live.onReady(() => {
-        setIsTransifexReady(true)
+    const checkTransifex = () => {
+      if (window.Transifex?.live) {
+        initializeTransifex()
+      } else {
+        setTimeout(checkTransifex, 100)
+      }
+    }
 
-        const currentLang = window.Transifex!.live.getSelectedLanguageCode()
+    const initializeTransifex = () => {
+      window.Transifex!.live.onFetchLanguages(() => {
+        let initialLang: 'en' | 'zh' = 'en'
 
-        const htmlLang = document.documentElement.lang
+        const selectedLang = window.Transifex!.live.getSelectedLanguageCode()
 
-        let actualLang: 'en' | 'zh' = 'en'
-        if (currentLang === 'zh' || htmlLang === 'zh' || htmlLang === 'zh-CN') {
-          actualLang = 'zh'
+        if (selectedLang === 'zh' || selectedLang === 'zh-CN') {
+          initialLang = 'zh'
+        } else if (selectedLang === 'en') {
+          initialLang = 'en'
+        } else {
+          const browserLang =
+            navigator.language || navigator.languages?.[0] || 'en'
+          if (browserLang.startsWith('zh')) {
+            initialLang = 'zh'
+          }
         }
 
-        setLocale(actualLang)
+        setLocale(initialLang)
       })
 
-      window.Transifex.live.onTranslatePage((languageCode) => {
-        if (languageCode === 'en' || languageCode === 'zh') {
-          setLocale(languageCode as 'en' | 'zh')
+      window.Transifex!.live.onReady(() => {
+        setIsTransifexReady(true)
+      })
+
+      window.Transifex!.live.onTranslatePage((languageCode) => {
+        if (
+          languageCode === 'en' ||
+          languageCode === 'zh' ||
+          languageCode === 'zh-CN'
+        ) {
+          const mappedLang = languageCode.startsWith('zh') ? 'zh' : 'en'
+          setLocale(mappedLang as 'en' | 'zh')
         }
       })
     }
+
+    checkTransifex()
   }, [])
 
   function handleLanguageChange(newLocale: 'en' | 'zh') {
+    if (!isTransifexReady || !window.Transifex?.live) {
+      return
+    }
+
+    const transifexLangCode = newLocale === 'zh' ? 'zh' : 'en'
+
     setLocale(newLocale)
 
-    if (isTransifexReady && window.Transifex?.live) {
-      window.Transifex.live.translateTo(newLocale, true)
-    }
+    window.Transifex.live.translateTo(transifexLangCode, true)
   }
 
   return (

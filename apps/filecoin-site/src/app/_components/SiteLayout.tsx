@@ -42,7 +42,9 @@ export function SiteLayout({ children }: SiteLayoutProps) {
         <Script id="transifex-settings" strategy="beforeInteractive">
           {`window.liveSettings = {
             api_key: "48f96b4371a44981981a6b4a096a7906",
-            picker: "do not place a picker"
+            detectlang: true,
+            picker: "do not place a picker",
+            reload_on_language_picker: true
           }`}
         </Script>
         <Script
