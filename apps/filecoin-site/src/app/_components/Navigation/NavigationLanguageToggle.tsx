@@ -35,13 +35,18 @@ export function NavigationLanguageToggle() {
     console.log('Transifex available:', !!window.Transifex?.live)
     if (window.Transifex?.live) {
       window.Transifex.live.onReady(() => {
-        console.log('Transifex Live ready!')
         setIsTransifexReady(true)
 
         const currentLang = window.Transifex!.live.getSelectedLanguageCode()
-        if (currentLang && (currentLang === 'en' || currentLang === 'zh')) {
-          setLocale(currentLang as 'en' | 'zh')
+
+        const htmlLang = document.documentElement.lang
+
+        let actualLang: 'en' | 'zh' = 'en'
+        if (currentLang === 'zh' || htmlLang === 'zh' || htmlLang === 'zh-CN') {
+          actualLang = 'zh'
         }
+
+        setLocale(actualLang)
       })
 
       window.Transifex.live.onTranslatePage((languageCode) => {
