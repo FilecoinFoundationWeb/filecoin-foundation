@@ -6,6 +6,11 @@ type Language = {
   ariaLabel: string
 }
 
+type LanguageConfig = {
+  label: string
+  name: string
+}
+
 type UseTransifexLiveReturn = {
   languages: Array<Language>
   locale: string
@@ -16,7 +21,7 @@ type UseTransifexLiveReturn = {
 const LANGUAGE_CONFIG = {
   en: { label: 'EN', name: 'English' },
   zh_CN: { label: '中文', name: 'Chinese' },
-} as const
+} as const satisfies Record<string, LanguageConfig>
 
 const DEFAULT_LANGUAGE: keyof typeof LANGUAGE_CONFIG = 'en'
 
