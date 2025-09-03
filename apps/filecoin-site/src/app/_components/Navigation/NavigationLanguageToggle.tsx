@@ -50,11 +50,11 @@ export function NavigationLanguageToggle() {
     }
   }, [])
 
-  const handleLanguageChange = (newLocale: 'en' | 'zh') => {
+  function handleLanguageChange(newLocale: 'en' | 'zh') {
+    setLocale(newLocale)
+
     if (isTransifexReady && window.Transifex?.live) {
       window.Transifex.live.translateTo(newLocale, true)
-    } else {
-      setLocale(newLocale)
     }
   }
 
@@ -67,6 +67,7 @@ export function NavigationLanguageToggle() {
           aria-label={ariaLabel}
           aria-current={locale === key}
           className={desktopStyle}
+          disabled={!isTransifexReady}
           onClick={() => handleLanguageChange(key)}
         >
           {label}
