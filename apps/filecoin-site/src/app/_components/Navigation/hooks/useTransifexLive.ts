@@ -34,17 +34,17 @@ export function useTransifexLive() {
   useEffect(() => {
     if (!transifex) return
 
-    transifex.onFetchLanguages(() => {
-      const sourceLang = transifex.getSourceLanguage()
-      setLanguageState((prev) => ({ ...prev, locale: sourceLang.code }))
-    })
-
     transifex.onReady(() => {
       setLanguageState((prev) => ({ ...prev, isTransifexReady: true }))
     })
 
     transifex.onTranslatePage((languageCode) => {
-      setLanguageState((prev) => ({ ...prev, locale: languageCode }))
+      const config = LANGUAGE_CONFIG.find((lang) => lang.key === languageCode)
+
+      setLanguageState((prev) => ({
+        ...prev,
+        locale: config?.key || prev.locale,
+      }))
     })
   }, [transifex, pathname])
 
