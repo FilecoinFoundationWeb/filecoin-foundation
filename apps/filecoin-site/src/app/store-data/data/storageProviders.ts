@@ -1,4 +1,3 @@
-
 import AkaveMiniatureLogo from '@/assets/miniatures/akave-miniature.png'
 import CIDgravityMiniatureLogo from '@/assets/miniatures/cid-gravity-miniature.png'
 import LighthouseMiniatureLogo from '@/assets/miniatures/lighthouse-miniature.png'
@@ -17,19 +16,17 @@ export type StorageProvider = Pick<
 
 type BestForType =
   | 'AI/ML developers'
+  | 'Archival storage'
   | 'Advanced technical users'
-  | 'DePIN'
+  | 'Creators'
   | 'Developers'
   | 'Enterprises'
-  | 'Personal Storage'
-  | 'SaaS'
-  | 'Web3'
+  | 'NFT projects'
 
 export const storageProviders = [
   {
     name: 'Akave Cloud',
-    description:
-      'Enterprise-grade, hot storage designed for AI, data-intensive workloads, and on-chain data lakes.',
+    description: 'Enterprise-grade hot storage for AI & data lakes.',
     bestFor: ['Enterprises', 'AI/ML developers'],
     keyFeatures: [
       'S3-compatible API',
@@ -42,11 +39,11 @@ export const storageProviders = [
   {
     name: 'CIDgravity',
     description: 'Simple decentralized storage backend for Nextcloud.',
-    bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
+    bestFor: ['Developers'],
     keyFeatures: [
-      'S3-compatible API',
-      'Client-side encryption',
-      'Access control',
+      'Nextcloud integration',
+      'File sync and share',
+      'REST API for programmatic access',
     ],
     url: 'https://www.cidgravity.com/',
     logo: CIDgravityMiniatureLogo,
@@ -54,7 +51,7 @@ export const storageProviders = [
   {
     name: 'Lighthouse',
     description: 'Perpetual, long-term data storage.',
-    bestFor: ['Enterprises', 'Developers', 'Personal Storage'],
+    bestFor: ['Developers', 'NFT projects', 'Creators'],
     keyFeatures: [
       '"Pay once, store forever" pricing mode',
       'Simple web app',
@@ -65,13 +62,9 @@ export const storageProviders = [
   },
   {
     name: 'Ramo',
-    description: 'Embrace the future of decentralized storage',
-    bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
-    keyFeatures: [
-      'S3-compatible API',
-      'Client-side encryption',
-      'Access control',
-    ],
+    description: 'An open-access decentralized cloud network.',
+    bestFor: ['Developers', 'Archival storage'],
+    keyFeatures: ['S3-compatible API', 'Developer SDK/CLI'],
     url: 'https://use.ramo.computer/',
     logo: RamoMiniatureLogo,
   },
@@ -80,9 +73,9 @@ export const storageProviders = [
     description: 'Directly manage the full deal-making lifecycle on Filecoin.',
     bestFor: ['Advanced technical users'],
     keyFeatures: [
-      'S3-compatible API',
-      'Client-side encryption',
-      'Access control',
+      'Prepare and upload files using the CLI',
+      'Retrieve files with Lassie',
+      'Direct negotiation with storage providers',
     ],
     url: 'https://singularity.storage/',
     logo: SingularityMiniatureLogo,
@@ -90,11 +83,11 @@ export const storageProviders = [
   {
     name: 'Storacha',
     description: 'High-speed hot storage for fast data retrieval.',
-    bestFor: ['Enterprises', 'AI/ML developers', 'DePIN', 'SaaS', 'Web3'],
+    bestFor: ['Developers'],
     keyFeatures: [
-      'S3-compatible API',
-      'Client-side encryption',
-      'Access control',
+      'Fast access to data',
+      'Tightly integrated with IPFS',
+      'Optimized for content delivery and streaming',
     ],
     url: 'https://storacha.network/',
     logo: StorachaMiniatureLogo,
