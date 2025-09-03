@@ -53,7 +53,8 @@ export function useTransifexLive(): UseTransifexLiveReturn {
   }, [])
 
   function setupTransifex() {
-    const transifex = window.Transifex!.live
+    if (!window.Transifex?.live) return
+    const transifex = window.Transifex.live
 
     transifex.onFetchLanguages((availableLanguages) => {
       const formattedLanguages = availableLanguages.map((lang) => ({
