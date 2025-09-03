@@ -1,5 +1,4 @@
 import localFont from 'next/font/local'
-import Script from 'next/script'
 
 import { clsx } from 'clsx'
 
@@ -9,6 +8,7 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { Footer } from '@/components/Footer/Footer'
+import { TransifexScript } from '@/components/TransifexScript'
 
 type SiteLayoutProps = {
   children: React.ReactNode
@@ -39,18 +39,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
     >
       <head>
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
-        <Script id="transifex-settings" strategy="beforeInteractive">
-          {`window.liveSettings = {
-            api_key: "48f96b4371a44981981a6b4a096a7906",
-            detectlang: true,
-            picker: "do not place a picker",
-            reload_on_language_picker: true
-          }`}
-        </Script>
-        <Script
-          src="https://cdn.transifex.com/live.js"
-          strategy="beforeInteractive"
-        />
+        <TransifexScript />
       </head>
       <body className="bg-white font-sans text-base/5.5">
         <main>{children}</main>
