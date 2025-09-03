@@ -52,7 +52,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
           strategy="beforeInteractive"
         />
       </head>
-      <body className="bg-white font-sans tracking-tight">
+      <body className="bg-white font-sans text-base/5.5">
         <main>{children}</main>
         <Footer />
 

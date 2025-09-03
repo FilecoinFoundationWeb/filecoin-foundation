@@ -14,7 +14,7 @@ export function NavigationItems() {
             {items.map(({ href, label }) => (
               <li
                 key={href}
-                className="text-sm text-[var(--color-paragraph-text)]"
+                className="text-sm/5 text-[var(--color-paragraph-text)]"
               >
                 <SmartTextLink href={href} baseDomain={BASE_DOMAIN}>
                   {label}

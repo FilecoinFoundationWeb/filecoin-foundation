@@ -5,7 +5,7 @@ import { clsx } from 'clsx'
 import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
 import { backgroundVariants } from '@/components/Section'
 
-import { type LabelledExpandedNavItems } from '../constants/navigation'
+import { type NavigationMenuItem } from '../constants/navigation'
 import { variantMapping } from '../constants/variantMapping'
 
 import { NavigationMenuLink } from './NavigationMenuLink'
@@ -14,7 +14,7 @@ const roundedStyle = 'rounded-2xl'
 
 export function NavigationMenuPanel({
   items,
-}: Pick<LabelledExpandedNavItems, 'items'>) {
+}: Pick<NavigationMenuItem, 'items'>) {
   const backgroundVariant = useBackgroundVariant()
   const desktopBackgroundVariant = variantMapping[backgroundVariant]
 
