@@ -75,15 +75,6 @@ export function NavigationLanguageToggle() {
     window.Transifex.live.translateTo(newLocale, true)
   }
 
-  if (languages.length === 0) {
-    return (
-      <div className="flex items-center gap-6 font-medium">
-        <div className="h-6 w-8 animate-pulse rounded bg-gray-200"></div>
-        <div className="h-6 w-8 animate-pulse rounded bg-gray-200"></div>
-      </div>
-    )
-  }
-
   return (
     <div className="flex items-center gap-6 font-medium">
       {languages.map(({ key, label, ariaLabel }) => (
