@@ -30,6 +30,7 @@ const languages = [
 export function NavigationLanguageToggle() {
   const [locale, setLocale] = useState<'en' | 'zh'>('en')
   const [isTransifexReady, setIsTransifexReady] = useState(false)
+
   useEffect(() => {
     const checkTransifex = () => {
       if (window.Transifex?.live) {
@@ -58,10 +59,26 @@ export function NavigationLanguageToggle() {
         }
 
         setLocale(initialLang)
+
+        if (initialLang === 'zh') {
+          console.log(' Triggering initial translation to Chinese...')
+          setTimeout(() => {
+            if (window.Transifex?.live) {
+              window.Transifex.live.translateTo('zh', true)
+            }
+          }, 500)
+        }
       })
 
       window.Transifex!.live.onReady(() => {
         setIsTransifexReady(true)
+
+        const browserLang =
+          navigator.language || navigator.languages?.[0] || 'en'
+        if (browserLang.startsWith('zh')) {
+          setLocale('zh')
+          window.Transifex!.live.translateTo('zh', true)
+        }
       })
 
       window.Transifex!.live.onTranslatePage((languageCode) => {
