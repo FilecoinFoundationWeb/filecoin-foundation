@@ -4,7 +4,9 @@ declare global {
   interface Window {
     Transifex?: {
       live: {
-        onFetchLanguages: (callback: (languages: any[]) => void) => void
+        onFetchLanguages: (
+          callback: (languages: Array<{ code: string; name: string }>) => void,
+        ) => void
         onTranslatePage: (callback: (languageCode: string) => void) => void
         translateTo: (languageCode: string, reload?: boolean) => void
         getSelectedLanguageCode: () => string
