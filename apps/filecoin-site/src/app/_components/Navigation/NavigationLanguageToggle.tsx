@@ -23,9 +23,10 @@ declare global {
 }
 
 export function NavigationLanguageToggle() {
-  const [languages, setLanguages] = useState<
-    Array<{ key: string; label: string; ariaLabel: string }>
-  >([])
+  const [languages, setLanguages] = useState([
+    { key: 'en', label: 'EN', ariaLabel: 'Switch to English' },
+    { key: 'zh', label: '中文', ariaLabel: 'Switch to Chinese' },
+  ])
   const [locale, setLocale] = useState<string>('en')
   const [isTransifexReady, setIsTransifexReady] = useState(false)
 
@@ -40,11 +41,9 @@ export function NavigationLanguageToggle() {
 
     const initializeTransifex = () => {
       window.Transifex!.live.onFetchLanguages((availableLanguages) => {
-        console.log('Available languages from Transifex:', availableLanguages)
-
         const mappedLanguages = availableLanguages.map((lang) => ({
           key: lang.code,
-          label: lang.name,
+          label: lang.code.toUpperCase(),
           ariaLabel: `Switch to ${lang.name}`,
         }))
 
