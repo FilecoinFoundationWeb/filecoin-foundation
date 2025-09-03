@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef, useCallback } from 'react'
 
-import { usePathname } from 'next/navigation'
+type Locale = 'en' | 'zh_CN'
 
 type Language = {
-  key: string
+  key: Locale
   label: string
   name: string
 }
@@ -15,21 +15,20 @@ const LANGUAGE_CONFIG = [
   { key: 'zh_CN', label: '中文', name: 'Chinese' },
 ] as const satisfies Array<Language>
 
-type State = {
+type LanguageState = {
   languages: Array<Language>
-  locale: string
+  locale: Locale
   isTransifexReady: boolean
 }
 
 export function useTransifexLive() {
-  const [languageState, setLanguageState] = useState<State>({
+  const [languageState, setLanguageState] = useState<LanguageState>({
     languages: LANGUAGE_CONFIG,
     locale: LANGUAGE_CONFIG[0].key,
     isTransifexReady: false,
   })
 
   const transifex = useWindowTransifex()
-  const pathname = usePathname()
 
   useEffect(() => {
     if (!transifex) return
@@ -46,11 +45,11 @@ export function useTransifexLive() {
         locale: config?.key || prev.locale,
       }))
     })
-  }, [transifex, pathname])
+  }, [transifex])
 
   return {
     ...languageState,
-    handleLanguageChange: (newLocale: string) => {
+    handleLanguageChange: (newLocale: Locale) => {
       if (!transifex) return
 
       setLanguageState((prev) => ({ ...prev, locale: newLocale }))
