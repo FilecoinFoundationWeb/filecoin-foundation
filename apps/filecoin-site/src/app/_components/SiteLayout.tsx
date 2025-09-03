@@ -40,7 +40,10 @@ export function SiteLayout({ children }: SiteLayoutProps) {
       <head>
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
         <Script id="transifex-settings" strategy="beforeInteractive">
-          {`window.liveSettings = { api_key: "48f96b4371a44981981a6b4a096a7906" }`}
+          {`window.liveSettings = {
+            api_key: "48f96b4371a44981981a6b4a096a7906",
+            picker: "do not place a picker"
+          }`}
         </Script>
         <Script
           src="//cdn.transifex.com/live.js"

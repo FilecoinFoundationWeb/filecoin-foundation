@@ -32,8 +32,10 @@ export function NavigationLanguageToggle() {
   const [isTransifexReady, setIsTransifexReady] = useState(false)
 
   useEffect(() => {
+    console.log('Transifex available:', !!window.Transifex?.live)
     if (window.Transifex?.live) {
       window.Transifex.live.onReady(() => {
+        console.log('Transifex Live ready!')
         setIsTransifexReady(true)
 
         const currentLang = window.Transifex!.live.getSelectedLanguageCode()
