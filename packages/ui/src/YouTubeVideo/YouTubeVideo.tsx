@@ -51,7 +51,11 @@ export function YouTubeVideo({
         playerClass="sr-only"
         webp={true}
         wrapperClass="aspect-video opacity-50 [&:has(iframe)]:opacity-100 cursor-pointer overflow-hidden bg-cover focus:brand-outline"
-        thumbnail={thumbnail_url}
+        style={{
+          backgroundImage: `url(${thumbnail_url})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}
       />
       {PlayButton && (
         <div
