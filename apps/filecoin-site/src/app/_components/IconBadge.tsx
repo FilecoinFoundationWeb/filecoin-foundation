@@ -7,7 +7,7 @@ const ICON_CONFIG = {
     iconSize: 20,
   },
   md: {
-    containerSize: 'size-[60px] min-w-[60px]',
+    containerSize: 'size-15 min-w-15',
     iconSize: 30,
   },
 } as const

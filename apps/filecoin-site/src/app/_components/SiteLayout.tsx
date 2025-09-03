@@ -39,7 +39,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
       <head>
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
       </head>
-      <body className="bg-white font-sans tracking-tight">
+      <body className="bg-white font-sans text-base/5.5">
         <main>{children}</main>
         <Footer />
 
