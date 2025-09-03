@@ -1,0 +1,67 @@
+name: Label-based Workflows
+
+on:
+  pull_request:
+    types: [synchronize, opened, reopened, edited, closed, labeled, unlabeled]
+
+env:
+  BASE_BRANCH: ${{ github.base_ref }}
+
+jobs:
+  label-stacked-prs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove stacked PR label for main branch PRs
+        uses: actions-ecosystem/action-remove-labels@v1
+        if: env.BASE_BRANCH == 'main'
+        with:
+          github_token: ${{ github.token }}
+          labels: stacked PR
+
+      - name: Add stacked PR label for non-main branch PRs
+        uses: actions-ecosystem/action-add-labels@v1
+        if: env.BASE_BRANCH != 'main'
+        with:
+          github_token: ${{ github.token }}
+          labels: stacked PR
+
+  label-by-size:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Calculate PR size and label
+        run: |
+          # Get the number of changed files
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | wc -l)
+
+          # Remove existing size labels
+          gh pr edit ${{ github.event.pull_request.number }} --remove-label "size/S" "size/M" "size/L" 2>/dev/null || true
+
+          # Add appropriate size label
+          if [ $CHANGED_FILES -le 25 ]; then
+            echo "📏 Adding 'size/S' label ($CHANGED_FILES files changed)"
+            gh pr edit ${{ github.event.pull_request.number }} --add-label "size/S"
+          elif [ $CHANGED_FILES -le 100 ]; then
+            echo "📏 Adding 'size/M' label ($CHANGED_FILES files changed)"
+            gh pr edit ${{ github.event.pull_request.number }} --add-label "size/M"
+          else
+            echo "📏 Adding 'size/L' label ($CHANGED_FILES files changed)"
+            gh pr edit ${{ github.event.pull_request.number }} --add-label "size/L"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+  cleanup-labels:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove temporary labels on PR close
+        uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          github_token: ${{ github.token }}
+          labels: |
+            size/S
+            size/M
+            size/L
