@@ -64,30 +64,6 @@ export function useTransifexLive(): UseTransifexLiveReturn {
       }
     }
 
-    function setupTransifex() {
-      const transifex = window.Transifex!.live
-
-      transifex.onFetchLanguages((availableLanguages) => {
-        const formattedLanguages = availableLanguages.map((lang) => ({
-          key: lang.code,
-          label:
-            LANGUAGE_CONFIG[lang.code as keyof typeof LANGUAGE_CONFIG]?.label ||
-            lang.name,
-          ariaLabel: `Switch to ${
-            LANGUAGE_CONFIG[lang.code as keyof typeof LANGUAGE_CONFIG]?.name ||
-            lang.name
-          }`,
-        }))
-        setLanguages(formattedLanguages)
-
-        const sourceLang = transifex.getSourceLanguage()
-        setLocale(sourceLang?.code || DEFAULT_LANGUAGE)
-      })
-
-      transifex.onReady(() => setIsTransifexReady(true))
-      transifex.onTranslatePage((languageCode) => setLocale(languageCode))
-    }
-
     waitForTransifex()
 
     return () => {
@@ -96,6 +72,30 @@ export function useTransifexLive(): UseTransifexLiveReturn {
       }
     }
   }, [])
+
+  function setupTransifex() {
+    const transifex = window.Transifex!.live
+
+    transifex.onFetchLanguages((availableLanguages) => {
+      const formattedLanguages = availableLanguages.map((lang) => ({
+        key: lang.code,
+        label:
+          LANGUAGE_CONFIG[lang.code as keyof typeof LANGUAGE_CONFIG]?.label ||
+          lang.name,
+        ariaLabel: `Switch to ${
+          LANGUAGE_CONFIG[lang.code as keyof typeof LANGUAGE_CONFIG]?.name ||
+          lang.name
+        }`,
+      }))
+      setLanguages(formattedLanguages)
+
+      const sourceLang = transifex.getSourceLanguage()
+      setLocale(sourceLang?.code || DEFAULT_LANGUAGE)
+    })
+
+    transifex.onReady(() => setIsTransifexReady(true))
+    transifex.onTranslatePage((languageCode) => setLocale(languageCode))
+  }
 
   function handleLanguageChange(newLocale: string) {
     if (!isTransifexReady || !window.Transifex?.live) return
