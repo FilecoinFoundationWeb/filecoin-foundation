@@ -1,3 +1,5 @@
+import type { Route } from 'next'
+
 import { PATHS } from '@/constants/paths'
 import {
   FILECOIN_DOCS_URL,
@@ -6,7 +8,8 @@ import {
   FILECOIN_URLS,
 } from '@/constants/siteMetadata'
 
-type NavItem = { label: string; href: string }
+type NavItem = { label: string; href: string | Route }
+type InternalNavItem = { label: string; href: Route }
 type ExpandedNavItem = NavItem & { description: string }
 
 type FooterNavigationItem = { title: string; items: Array<NavItem> }
@@ -77,7 +80,7 @@ const resourceItems: Array<NavItem> = [
   { label: 'Network Health', href: 'https://dashboard.starboard.ventures/' },
 ]
 
-export const internalNavigationItems: Array<NavItem> = [
+export const internalNavigationItems: Array<InternalNavItem> = [
   { label: PATHS.LEARN.label, href: PATHS.LEARN.path },
   { label: PATHS.CASE_STUDIES.label, href: PATHS.CASE_STUDIES.path },
   { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
@@ -87,12 +90,14 @@ export const internalNavigationItems: Array<NavItem> = [
   { label: PATHS.BLOG.label, href: PATHS.BLOG.path },
 ]
 
-export const legalLinks: Array<NavItem> = [
+export const legalLinks: Array<InternalNavItem> = [
   { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
   { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
 ]
 
-export const headerNavigation: Array<NavItem | LabelledExpandedNavItems> = [
+export const headerNavigation: Array<
+  InternalNavItem | LabelledExpandedNavItems
+> = [
   {
     label: PATHS.LEARN.label,
     items: [
