@@ -22,6 +22,13 @@ declare global {
   }
 }
 
+const labelMapping: Record<string, string> = {
+  en: 'EN',
+  zh: '中文',
+  'zh-CN': '中文',
+  zh_cn: '中文',
+}
+
 export function NavigationLanguageToggle() {
   const [languages, setLanguages] = useState([
     { key: 'en', label: 'EN', ariaLabel: 'Switch to English' },
@@ -41,9 +48,10 @@ export function NavigationLanguageToggle() {
 
     const initializeTransifex = () => {
       window.Transifex!.live.onFetchLanguages((availableLanguages) => {
+        console.log('availableLanguages', availableLanguages)
         const mappedLanguages = availableLanguages.map((lang) => ({
           key: lang.code,
-          label: lang.code.toUpperCase(),
+          label: labelMapping[lang.code] || lang.name,
           ariaLabel: `Switch to ${lang.name}`,
         }))
 
