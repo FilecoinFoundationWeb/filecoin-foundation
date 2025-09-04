@@ -12,12 +12,12 @@ export function NavigationLanguageToggle() {
 
   return (
     <div className="flex items-center gap-4 font-medium">
-      {languages.map(({ key, label, ariaLabel }) => (
+      {languages.map(({ key, label }) => (
         <Button
           key={key}
           type="button"
-          aria-label={ariaLabel}
-          aria-pressed={locale === key}
+          aria-label={`Switch to ${label}`}
+          aria-current={locale === key}
           className={clsx(desktopStyle, 'cursor-pointer')}
           disabled={!isTransifexReady}
           onClick={() => handleLanguageChange(key)}
