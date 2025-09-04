@@ -10,7 +10,7 @@ image:
 category: wallets-identity-authentication
 tech:
   - filecoin
-description: Founded in 2019, OneKey is a leading open-source hardware & app wallet, backed by YZi Labs (formerly Binance Labs) and Coinbase Ventures.
+description: OneKey Wallet is a hardware and app wallet supporting the Filecoin network since January, 2023, where users can store $FIL.
 website: https://onekey.so/
 year-joined: 2023
 repo: https://github.com/OneKeyHQ
@@ -18,7 +18,7 @@ repo: https://github.com/OneKeyHQ
 twitter: https://x.com/OneKeyHQ
 seo:
   title: OneKey
-  description: Founded in 2019, OneKey is a leading open-source hardware & app wallet, backed by YZi Labs (formerly Binance Labs) and Coinbase Ventures.
+  description: OneKey Wallet is a hardware and app wallet supporting the Filecoin network since January, 2023, where users can store $FIL.
 ---
 
-OneKey Wallet including both hardware wallet and app wallet has supported Filecoin network since 2023 Jan. Users get to access the network through us and store $FIL in their hardware wallet as a long-term investment. OneKey has helped build and expand the ecosystem around Filecoin, and wish to be listed on the official Filcoin website.
+OneKey Wallet is a hardware and app wallet supporting the Filecoin network since January, 2023, where users can store $FIL.
