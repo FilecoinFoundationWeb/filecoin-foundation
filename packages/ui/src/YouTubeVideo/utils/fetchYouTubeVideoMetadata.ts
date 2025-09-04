@@ -1,4 +1,4 @@
-import { YouTubeVideoMetadataSchema } from './schemas/YouTubeVideoMetadataSchema'
+import { YouTubeVideoMetadataSchema } from '../schema/YouTubeVideoMetadataSchema'
 
 export async function fetchYouTubeVideoMetadata(videoId: string) {
   return fetch(
