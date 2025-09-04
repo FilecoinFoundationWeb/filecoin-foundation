@@ -22,7 +22,7 @@ seo:
 ## Ecosystem
 
 - Messari’s [State of Filecoin Q2 2025 report is out](https://messari.io/report/state-of-filecoin-q2-2025). Read it for a detailed overview of the network, including increased network utilization rates, new daily storage deals rising, PDP launch, and more. 
-- **[Join the Filecoin Onchain Cloud Alpha Cohort.](https://app.akindo.io/wave-hacks/1PRjgGzKaTqXaQBBl)** Filecoin Onchain Cloud is a new framework of on-chain and composable cloud services by enabling a growing set of reusable services built on top of the Filecoin storage layer. Its on-chain substrate, Filecoin on-chain payment, warm storage, SLAs, and standardized & CDN retrieval interfaces let any team ship a service with the ease of deploying a smart contract.
+- [Join the Filecoin Onchain Cloud Alpha Cohort](https://app.akindo.io/wave-hacks/1PRjgGzKaTqXaQBBl). Filecoin Onchain Cloud is a new framework of on-chain and composable cloud services by enabling a growing set of reusable services built on top of the Filecoin storage layer. Its on-chain substrate, Filecoin on-chain payment, warm storage, SLAs, and standardized & CDN retrieval interfaces let any team ship a service with the ease of deploying a smart contract.
 - [PL Genesis: Modular Worlds Hackathon winners have been announced](https://x.com/PL__Genesis/status/1946309533900689653)! Thanks for submitting your projects to the “Hack The Sovereign Data Layer with Filecoin” challenge.
 
 ## Network Operations
@@ -32,7 +32,7 @@ seo:
 NV27 Upgrade Planning is in progress. Seven items are in scope:
 
 - [FIP-0105](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0105.md): Adds BLS12-381 precompiles — faster signature verification, stronger Ethereum compatibility, and new use cases.
-- Cleanup of [FIP-0103](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0103.md),[0106](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0106.md), [0101](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0101.md) — removing deprecated methods.
+- Cleanup of [FIP-0103](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0103.md), [0106](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0106.md), [0101](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0101.md) — removing deprecated methods.
 - FIP-[0077](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0077.md): implements a deposit requirement to reduce the risk of spam attacks. 
 - FRC-[0108](https://github.com/filecoin-project/FIPs/blob/master/FRCs/frc-0108.md): Standardized F3 snapshots.
 - FRC-[0109](https://github.com/filecoin-project/FIPs/pull/1180): Smart contract notifications for Direct Data Onboarding.
