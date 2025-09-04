@@ -25,7 +25,7 @@ export function SplitSectionContent({
       <div className="col-span-6 lg:col-span-2 lg:pr-8">
         <Heading
           tag="h3"
-          className="font-sans text-xl text-[var(--color-subheading-text-muted)] md:text-2xl"
+          className="font-sans text-2xl/8.5 text-[var(--color-subheading-text-muted)]"
         >
           {title}
         </Heading>
@@ -34,7 +34,7 @@ export function SplitSectionContent({
       <div className={clsx('col-span-6 flex flex-col lg:col-span-4', gap)}>
         <div className="space-y-6">
           {descriptionArray.map((item, index) => (
-            <p key={index} className="text-lg text-pretty md:text-xl">
+            <p key={index} className="text-xl/7 text-pretty">
               {item}
             </p>
           ))}

@@ -4,6 +4,7 @@ import Link, { type LinkProps } from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { clsx } from 'clsx'
+import type { Route } from 'next'
 
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
@@ -18,12 +19,12 @@ const baseStyle = 'focus:brand-outline font-medium'
 
 export const desktopStyle = clsx(
   baseStyle,
-  'rounded-sm px-2.5 py-1.5 text-[var(--color-navigation-link-text)] hover:bg-[var(--color-navigation-link-background-active)] focus:bg-[var(--color-navigation-link-background-active)] aria-[current=true]:bg-[var(--color-navigation-link-background-active)]',
+  'rounded-sm px-2.5 py-1.5 font-semibold text-[var(--color-navigation-link-text)] hover:bg-[var(--color-navigation-link-background-active)] focus:bg-[var(--color-navigation-link-background-active)] aria-[current=true]:bg-[var(--color-navigation-link-background-active)]',
 )
 
 const mobileStyle = clsx(
   baseStyle,
-  'text-[var(--color-text-base)]',
+  'font-medium text-[var(--color-text-base)]',
   TOUCH_TARGET.touchAreaPadding,
   TOUCH_TARGET.touchAreaOffset,
 )
@@ -31,7 +32,7 @@ const mobileStyle = clsx(
 type NavigationLinkProps = {
   on: 'mobile' | 'desktop'
   label: string
-  href: LinkProps<PathValues>['href']
+  href: Route
   onNavigate?: LinkProps<PathValues>['onNavigate']
 }
 

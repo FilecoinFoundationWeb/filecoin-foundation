@@ -16,12 +16,10 @@ const sharedGridStyle =
 
 const variants = {
   oneMdThree: {
-    getGridStyle: () => sharedGridStyle,
     getCellStyle: () => undefined,
     getImageSizes: () => buildImageSizeProp({ startSize: '100vw', md: '33vw' }),
   },
   oneMdThreeCollage: {
-    getGridStyle: () => sharedGridStyle,
     getCellStyle: (i: number) => {
       return clsx(
         i === 0 && 'md:col-span-2 md:row-span-2',
@@ -42,7 +40,7 @@ export function ImageGrid({ children, variant }: ImageGridProps) {
   const variantConfig = variants[variant]
 
   return (
-    <div className={clsx('grid', variantConfig.getGridStyle())}>
+    <div className={clsx('grid', sharedGridStyle)}>
       {React.Children.map(children, (child, i) => {
         return (
           <div

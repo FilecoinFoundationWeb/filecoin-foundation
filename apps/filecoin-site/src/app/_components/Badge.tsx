@@ -15,7 +15,7 @@ export function Badge({ children, variant = 'primary' }: BadgeProps) {
   return (
     <span
       className={clsx(
-        'inline-block rounded-full border px-4 py-1 text-sm font-medium capitalize',
+        'inline-block rounded-full border px-4 py-1 text-sm/5 font-medium capitalize',
         variantClasses[variant],
       )}
     >

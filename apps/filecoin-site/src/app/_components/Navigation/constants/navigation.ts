@@ -1,3 +1,5 @@
+import type { Route } from 'next'
+
 import { PATHS } from '@/constants/paths'
 import {
   FILECOIN_DOCS_URL,
@@ -6,12 +8,14 @@ import {
   FILECOIN_URLS,
 } from '@/constants/siteMetadata'
 
-type NavItem = { label: string; href: string }
-type ExpandedNavItem = NavItem & { description: string }
+import { pickNavItem } from '../utils/pickNavItem'
+
+export type NavItem = { label: string; href: string | Route }
+type InternalNavItem = { label: string; href: Route }
+export type ExpandedNavItem = NavItem & { description: string }
 
 type FooterNavigationItem = { title: string; items: Array<NavItem> }
-
-export type LabelledExpandedNavItems = {
+export type NavigationMenuItem = {
   label: string
   items: Array<{
     title: string
@@ -44,6 +48,11 @@ const blockExplorerItems: Array<ExpandedNavItem> = [
 
 const communityItems: Array<ExpandedNavItem> = [
   {
+    label: PATHS.COMMUNITY_HUB.label,
+    description: 'Explore ways to contribute to the ecosystem',
+    href: PATHS.COMMUNITY_HUB.path,
+  },
+  {
     label: FILECOIN_FOUNDATION_URLS.events.label,
     description: 'Join meetups, hackathons, and conferences',
     href: FILECOIN_FOUNDATION_URLS.events.href,
@@ -60,24 +69,51 @@ const communityItems: Array<ExpandedNavItem> = [
   },
 ]
 
-const resourceItems: Array<NavItem> = [
-  { label: 'Documentation', href: FILECOIN_DOCS_URL },
-  { label: 'Cookbook', href: FILECOIN_DOCS_URLS.builderCookbook },
-  { label: FILECOIN_URLS.github.label, href: FILECOIN_URLS.github.href },
+const networkMonitoringItems: Array<ExpandedNavItem> = [
+  {
+    label: 'Network Status',
+    description: 'The status of the Filecoin networks',
+    href: 'https://status.filecoin.io/',
+  },
+  {
+    label: 'Network Health',
+    description: 'Filecoin chain activity and performance',
+    href: 'https://dashboard.starboard.ventures/',
+  },
+]
+
+const developerResourcesItems: Array<ExpandedNavItem> = [
+  {
+    label: 'Documentation',
+    description: 'Official documentation for Filecoin',
+    href: FILECOIN_DOCS_URL,
+  },
+  {
+    label: 'Cookbook',
+    description: 'Recipes for building with Filecoin and the FVM',
+    href: FILECOIN_DOCS_URLS.builderCookbook,
+  },
+  {
+    label: FILECOIN_URLS.github.label,
+    description: "Explore Filecoin's open-source repositories",
+    href: FILECOIN_URLS.github.href,
+  },
+]
+
+const contributeItems: Array<ExpandedNavItem> = [
   {
     label: FILECOIN_FOUNDATION_URLS.grants.label,
+    description: 'Funding opportunities to build in the ecosystem',
     href: FILECOIN_FOUNDATION_URLS.grants.href,
   },
   {
     label: FILECOIN_URLS.securityBugBounty.label,
+    description: 'Help find vulnerabilities and get rewarded',
     href: FILECOIN_URLS.securityBugBounty.href,
   },
-  { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
-  { label: 'Network Status', href: 'https://status.filecoin.io/' },
-  { label: 'Network Health', href: 'https://dashboard.starboard.ventures/' },
 ]
 
-export const internalNavigationItems: Array<NavItem> = [
+const internalNavigationItems: Array<InternalNavItem> = [
   { label: PATHS.LEARN.label, href: PATHS.LEARN.path },
   { label: PATHS.CASE_STUDIES.label, href: PATHS.CASE_STUDIES.path },
   { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
@@ -87,12 +123,11 @@ export const internalNavigationItems: Array<NavItem> = [
   { label: PATHS.BLOG.label, href: PATHS.BLOG.path },
 ]
 
-export const legalLinks: Array<NavItem> = [
-  { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
-  { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
-]
+export const mobileNavigationItems = internalNavigationItems
 
-export const headerNavigation: Array<NavItem | LabelledExpandedNavItems> = [
+export const headerNavigationItems: Array<
+  InternalNavItem | NavigationMenuItem
+> = [
   {
     label: PATHS.LEARN.label,
     items: [
@@ -126,62 +161,17 @@ export const headerNavigation: Array<NavItem | LabelledExpandedNavItems> = [
             description: 'Start building apps on the Filecoin network',
             href: PATHS.BUILD_ON_FILECOIN.path,
           },
-          {
-            label: 'Documentation',
-            description: 'Official documentation for Filecoin',
-            href: FILECOIN_DOCS_URL,
-          },
-          {
-            label: 'Cookbook',
-            description: 'Recipes for building with Filecoin and the FVM',
-            href: FILECOIN_DOCS_URLS.builderCookbook,
-          },
-          {
-            label: FILECOIN_URLS.github.label,
-            description: "Explore Filecoin's open-source repositories",
-            href: FILECOIN_URLS.github.href,
-          },
+          ...developerResourcesItems,
         ],
       },
-      {
-        title: 'Contribute',
-        links: [
-          {
-            label: FILECOIN_FOUNDATION_URLS.grants.label,
-            description: 'Funding opportunities to build in the ecosystem',
-            href: FILECOIN_FOUNDATION_URLS.grants.href,
-          },
-          {
-            label: FILECOIN_URLS.securityBugBounty.label,
-            description: 'Help find vulnerabilities and get rewarded',
-            href: FILECOIN_URLS.securityBugBounty.href,
-          },
-        ],
-      },
+      { title: 'Contribute', links: contributeItems },
     ],
   },
   {
     label: 'Network',
     items: [
-      {
-        title: 'Block Explorers',
-        links: blockExplorerItems,
-      },
-      {
-        title: 'Network Monitoring',
-        links: [
-          {
-            label: 'Network Status',
-            description: 'The status of the Filecoin networks',
-            href: 'https://status.filecoin.io/',
-          },
-          {
-            label: 'Network Health',
-            description: 'Filecoin chain activity and performance',
-            href: 'https://dashboard.starboard.ventures/',
-          },
-        ],
-      },
+      { title: 'Block Explorers', links: blockExplorerItems },
+      { title: 'Network Monitoring', links: networkMonitoringItems },
     ],
   },
   {
@@ -198,22 +188,26 @@ export const footerNavigationItems: Array<FooterNavigationItem> = [
       ({ href }) => href !== PATHS.COMMUNITY_HUB.path,
     ),
   },
-  { title: 'Resources', items: resourceItems },
+  {
+    title: 'Resources',
+    items: [
+      ...developerResourcesItems.map(pickNavItem),
+      ...contributeItems.map(pickNavItem),
+      { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
+      ...networkMonitoringItems.map(pickNavItem),
+    ],
+  },
   {
     title: 'Block Explorers',
-    items: blockExplorerItems.map(({ label, href }) => ({
-      label,
-      href,
-    })),
+    items: blockExplorerItems.map(pickNavItem),
   },
   {
     title: 'Community',
-    items: [
-      { label: PATHS.COMMUNITY_HUB.label, href: PATHS.COMMUNITY_HUB.path },
-      ...communityItems.map(({ label, href }) => ({
-        label,
-        href,
-      })),
-    ],
+    items: communityItems.map(pickNavItem),
   },
+]
+
+export const footerLegalItems: Array<InternalNavItem> = [
+  { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
+  { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
 ]

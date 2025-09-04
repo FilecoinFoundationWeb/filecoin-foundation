@@ -69,7 +69,7 @@ function SectionContentDescription({
     <p
       key={index}
       className={clsx(
-        'text-xl text-pretty',
+        'text-2xl/8.5 text-pretty',
         descriptionColorBase
           ? 'text-[var(--color-text-base)]'
           : 'text-[var(--color-subheading-text-muted)]',

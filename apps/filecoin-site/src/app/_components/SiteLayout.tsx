@@ -8,6 +8,7 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { Footer } from '@/components/Footer/Footer'
+import { TransifexScript } from '@/components/TransifexScript'
 
 type SiteLayoutProps = {
   children: React.ReactNode
@@ -38,8 +39,9 @@ export function SiteLayout({ children }: SiteLayoutProps) {
     >
       <head>
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
+        <TransifexScript />
       </head>
-      <body className="bg-white font-sans tracking-tight">
+      <body className="bg-white font-sans text-base/5.5">
         <main>{children}</main>
         <Footer />
 

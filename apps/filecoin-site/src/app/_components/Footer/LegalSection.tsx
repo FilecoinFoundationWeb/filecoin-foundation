@@ -4,7 +4,7 @@ import { FILECOIN_FOUNDATION_URL } from '@/constants/siteMetadata'
 
 import FilecoinFoundationLogo from '@/assets/logos/filecoin-foundation-logo.svg'
 
-import { legalLinks } from '../Navigation/constants/navigation'
+import { footerLegalItems } from '../Navigation/constants/navigation'
 export function LegalSection() {
   return (
     <div className="flex flex-col-reverse items-center justify-between gap-8 py-16 sm:flex-row md:gap-16">
@@ -22,7 +22,7 @@ export function LegalSection() {
       </a>
 
       <ul className="order-1 flex items-center gap-10 text-sm text-[var(--color-paragraph-text)] md:gap-16">
-        {legalLinks.map(({ href, label }) => (
+        {footerLegalItems.map(({ href, label }) => (
           <li key={href}>
             <InternalTextLink href={href}>{label}</InternalTextLink>
           </li>
