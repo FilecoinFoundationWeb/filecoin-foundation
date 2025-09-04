@@ -43,10 +43,15 @@ jobs:
           CHANGED_FILES=$(echo $PR_STATS | jq '.files')
           CHANGED_LINES=$(echo $PR_STATS | jq '.additions + .deletions')
 
-          # Remove existing size labels
-          gh pr edit ${{ github.event.pull_request.number }} --remove-label "size/S" "size/M" "size/L" 2>/dev/null || true
+          # Remove existing size labels more reliably
+          gh pr edit ${{ github.event.pull_request.number }} --remove-label "size/S" 2>/dev/null || true
+          gh pr edit ${{ github.event.pull_request.number }} --remove-label "size/M" 2>/dev/null || true
+          gh pr edit ${{ github.event.pull_request.number }} --remove-label "size/L" 2>/dev/null || true
 
-          # Add appropriate size label based on industry standards
+          # Wait a moment for the removal to process
+          sleep 1
+
+          # Then add the new label
           if [ $CHANGED_FILES -le 3 ] && [ $CHANGED_LINES -lt 50 ]; then
             echo "📏 Adding 'size/S' label ($CHANGED_FILES files, $CHANGED_LINES lines changed)"
             gh pr edit ${{ github.event.pull_request.number }} --add-label "size/S"
