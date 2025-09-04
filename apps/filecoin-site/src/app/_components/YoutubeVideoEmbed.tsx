@@ -25,12 +25,15 @@ export function YouTubeVideoEmbed({ videoUrl }: YouTubeVideoEmbedProps) {
 
 function PlayButton() {
   return (
-    <div className="flex items-center space-x-2 rounded-full bg-zinc-800 px-6 py-4 text-[var(--color-logo-item)] opacity-100">
+    <button
+      className="focus:brand-outline flex items-center space-x-2 rounded-full bg-zinc-800 px-6 py-4 text-[var(--color-logo-item)]"
+      aria-label="Play video: See how it works"
+    >
       <Icon component={PlayCircleIcon} color="inherit" size={20} />
       <span className="text-base text-[var(--color-text-base)]">
         See how it works
       </span>
-    </div>
+    </button>
   )
 }
 
