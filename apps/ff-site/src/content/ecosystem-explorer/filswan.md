@@ -20,4 +20,5 @@ seo:
     storage, computing, and AI-driven marketing tools for scalable, secure, and
     compliant business growth.
 ---
+
 Filswan, also known as Swan Network, is a platform that bridges Web3 infrastructure with AI and cloud services, offering tools for decentralized storage, computing, and AI-driven marketing. Its core products include Swan IPFS Storage for decentralized file storage, Swan Provider for users to contribute compute or storage resources in exchange for rewards, and AI-powered applications like Future Citizen for social engagement and Xpress for automated responses on X/Twitter. With support for blockchain integration, private cloud deployment, and managed AI pipelines, Filswan enables businesses and developers to leverage both decentralized technologies and advanced AI solutions while maintaining control, compliance, and scalability.
