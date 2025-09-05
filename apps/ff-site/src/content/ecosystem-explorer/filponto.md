@@ -19,4 +19,5 @@ seo:
     infrastructure, integration help, and grants advisory, strengthening the
     network’s backbone and collaborations.
 ---
+
 FilPonto is a public-goods initiative dedicated to supporting the Filecoin ecosystem by providing public infrastructure, integration assistance, and grants advisory services. It helps build and maintain Filecoin’s technical backbone while easing integration for ecosystem partners looking to work with the network.
