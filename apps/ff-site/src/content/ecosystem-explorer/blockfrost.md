@@ -19,4 +19,5 @@ seo:
     IPFS, and Filecoin via APIs, webhooks, and SDKs with fast, reliable, and
     open-source infrastructure.
 ---
+
 Blockfrost is a developer-focused platform that provides instant API access to the Cardano blockchain and decentralized storage networks like IPFS and Filecoin. Designed to simplify blockchain interaction, it offers over 100 endpoints, real-time webhooks, and premium transaction submission with rollback protection. With global high-speed nodes and in-memory databases, Blockfrost ensures reliable uptime and fast, scalable performance. The platform is fully open-source, supports multiple programming languages through SDKs, and prioritizes developer adoption by handling infrastructure so teams can focus on building decentralized applications.
