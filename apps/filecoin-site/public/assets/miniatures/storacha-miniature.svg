@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" fill="none">
-  <rect width="40" height="40" y=".117" fill="#E91315" rx="20"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <rect width="39" height="39" y="0.29%" fill="#E91315" rx="50%"/>
   <mask id="a" width="22" height="24" x="7" y="8" maskUnits="userSpaceOnUse" style="mask-type:luminance">
     <path fill="#fff" d="M7.179 8H28.82v24H7.179V8Z"/>
   </mask>

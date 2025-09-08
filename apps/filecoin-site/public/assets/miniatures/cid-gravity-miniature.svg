@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" fill="none">
-  <rect width="40" height="40" x=".333" y=".117" fill="url(#a)" rx="20"/>
-  <rect width="40" height="40" x=".333" y=".117" fill="#09295F" rx="20"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 41" fill="none">
+  <rect width="39" height="40" x="0.83%" y="0.29%" fill="url(#a)" rx="50%"/>
+  <rect width="39" height="40" x="0.83%" y="0.29%" fill="#09295F" rx="50%"/>
   <g clip-path="url(#b)">
     <path stroke="#fff" stroke-miterlimit="1" stroke-width=".846" d="m28.22 24.879-7.884 4.511M20.336 11.346l7.885 4.511M12.45 15.857l7.885-4.511M20.335 29.627l-7.885-4.67v-9.34l7.885 4.67v9.34ZM20.336 29.39l7.885-4.59v-9.183l-7.885 4.591v9.183Z"/>
     <path stroke="#fff" stroke-miterlimit="1" stroke-width=".846" d="m28.22 15.873-7.885-4.535-7.885 4.535 7.885 4.517 7.885-4.517Z"/>
