@@ -1,9 +1,9 @@
-import AkaveMiniatureLogo from '@/assets/miniatures/akave-miniature.png'
-import CIDgravityMiniatureLogo from '@/assets/miniatures/cid-gravity-miniature.png'
-import LighthouseMiniatureLogo from '@/assets/miniatures/lighthouse-miniature.png'
-import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.png'
-import SingularityMiniatureLogo from '@/assets/miniatures/singularity-miniature.png'
-import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.png'
+import AkaveMiniatureLogo from '@/assets/miniatures/akave-miniature.svg'
+import CIDgravityMiniatureLogo from '@/assets/miniatures/cid-gravity-miniature.svg'
+import LighthouseMiniatureLogo from '@/assets/miniatures/lighthouse-miniature.svg'
+import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.svg'
+import SingularityMiniatureLogo from '@/assets/miniatures/singularity-miniature.svg'
+import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.svg'
 
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 
