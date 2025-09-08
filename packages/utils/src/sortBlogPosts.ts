@@ -19,7 +19,7 @@ function sortPostsByDate<Entry extends WithPublishedOn>(
   posts: Array<Entry>,
   sortBy: DateSortOrder,
 ) {
-  return posts.toSorted((a, b) => {
+  return posts.slice().sort((a, b) => {
     const dateA = a.publishedOn
     const dateB = b.publishedOn
 
