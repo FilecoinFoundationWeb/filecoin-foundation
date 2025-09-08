@@ -63,7 +63,8 @@
     "./TextLink/*": "./src/TextLink/*.tsx",
     "./Tooltip/*": "./src/Tooltip/*.tsx",
     "./Pagination": "./src/Pagination/index.ts",
-    "./StructuredDataScript": "./src/StructuredDataScript.tsx"
+    "./StructuredDataScript": "./src/StructuredDataScript.tsx",
+    "./YouTubeVideo": "./src/YouTubeVideo/index.ts"
   },
   "scripts": {
     "lint": "eslint --fix .",
