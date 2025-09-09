@@ -10,45 +10,65 @@ on:
       - "apps/**"
     branches: [main]
 
+permissions:
+  contents: read
+
+concurrency:
+  group: site-e2e-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   cypress-run:
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
-        app: [ff-site, ffdweb-site, filecoin-site]
+        include:
+          - app: ff-site
+            ready_path: /blog
+            percy_token: PERCY_TOKEN_FF_SITE
+          - app: ffdweb-site
+            ready_path: /blog
+            percy_token: PERCY_TOKEN_FFDWEB_SITE
+          - app: filecoin-site
+            ready_path: /blog
+            percy_token: PERCY_TOKEN_FILECOIN_SITE
     defaults:
       run:
         working-directory: apps/${{ matrix.app }}
 
     env:
       AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
-      PERCY_TOKEN: ${{ matrix.app == 'ff-site' && secrets.PERCY_TOKEN_FF_SITE || secrets.PERCY_TOKEN_FFDWEB_SITE || '' }}
+      BASE_URL: "http://localhost:3000"
       ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
+      PERCY_TOKEN: ${{ secrets[matrix.percy_token] }}
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 20
           cache: "npm"
 
       - name: Install Dependencies
         working-directory: .
-        run: npm install --prefer-offline || npm install --prefer-offline
+        run: npm ci --prefer-offline
 
       - name: Build Project
         working-directory: .
         run: npx turbo run build --filter="./apps/${{ matrix.app }}"
 
-      - name: Start Server
+      - name: Start server (prod) on :3000
         run: |
           npm start &
           echo "Waiting for server to start..."
-          npx wait-on http://localhost:3000
+          npx wait-on $BASE_URL${{ matrix.ready_path }}
+          # tiny settle to let hydration/ISR finish
+          sleep 2
 
       - name: Determine Test Type
         id: test-type
@@ -61,16 +81,23 @@ jobs:
             COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
           fi
 
-          if [[ "$BRANCH_NAME" == cms/* ]] || [[ "$COMMIT_MESSAGE" == *"[skip percy]"* ]]; then
+          if [[ "$BRANCH_NAME" == cms/* ]] || [[ "$BRANCH_NAME" == ecosystem-submission/* ]] || [[ "$COMMIT_MESSAGE" == *"[skip percy]"* ]]; then
             echo "skip_percy=true" >> $GITHUB_OUTPUT
           else
             echo "skip_percy=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Run Cypress Tests without Percy
+      - name: Run Cypress only (skip Percy)
         if: steps.test-type.outputs.skip_percy == 'true'
-        run: npm run test:cypress
+        env:
+          CYPRESS_BASE_URL: ${{ env.BASE_URL }}
+        run: npx cypress run --browser chrome
 
-      - name: Run Cypress Tests with Percy
+      - name: Run Cypress + Percy
         if: steps.test-type.outputs.skip_percy == 'false'
-        run: npm run test:cypress:percy
+        env:
+          CYPRESS_BASE_URL: ${{ env.BASE_URL }}
+          PERCY_TOKEN: ${{ secrets[matrix.percy_token] }}
+          PERCY_BRANCH: ${{ github.head_ref || github.ref_name }}
+          PERCY_BASE_BRANCH: ${{ github.base_ref || 'main' }}
+        run: npx percy exec -- npx cypress run --browser chrome
