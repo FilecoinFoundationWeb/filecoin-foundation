@@ -1,4 +1,6 @@
-import Image, { type StaticImageData } from 'next/image'
+import type { ComponentType, SVGProps } from 'react'
+
+import { Icon } from '@filecoin-foundation/ui/Icon'
 
 import { Badge } from '@/components/Badge'
 import { CTALink } from '@/components/CTALink'
@@ -13,10 +15,8 @@ export type StorageProviderCardProps = {
   bestFor: Array<string>
   keyFeatures: Array<string>
   url: string
-  logo: StaticImageData
+  logo: ComponentType<SVGProps<SVGSVGElement>>
 }
-
-const LOGO_SIZE = 40
 
 export function StorageProviderCard({
   name,
@@ -30,14 +30,7 @@ export function StorageProviderCard({
     <li>
       <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-8 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 pb-16 focus-within:bg-zinc-50 hover:bg-zinc-50">
         <div className="flex items-center gap-3">
-          <Image
-            src={logo.src}
-            alt={`${name}'s logo`}
-            width={LOGO_SIZE}
-            height={LOGO_SIZE}
-            sizes={`${LOGO_SIZE}px`}
-            className="w-auto rounded-full"
-          />
+          <Icon component={logo} size={40} />
 
           <Heading tag="h3" variant="card-heading">
             {name}
