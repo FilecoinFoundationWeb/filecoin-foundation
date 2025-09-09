@@ -55,7 +55,7 @@ In FY’24, we’re continuing to fund projects that drive the ecosystem forward
 
 ## FIL-RetroPGF-1
 
-Several Filecoin Grant projects were nominated in [FIL-RetroPGF](https://www.fil-retropgf.io/projects?search=), a retroactive Public Goods funding program, including [Portrait](/ecosystem-explorer/portrait), Storswift, IPLD Prolly Trees, and [Fileverse](/ecosystem-explorer/fileverse). A badgeholder voting process determined the allocation of funds. If you want to know more, here is a [deep dive](https://medium.com/cryptoeconlab/a-deepdive-into-fil-retropgf-1-results-7e5a0bcdba08) into the results.
+Several Filecoin Grant projects were nominated in [FIL-RetroPGF](https://www.fil-retropgf.io), a retroactive Public Goods funding program, including [Portrait](/ecosystem-explorer/portrait), Storswift, IPLD Prolly Trees, and [Fileverse](/ecosystem-explorer/fileverse). A badgeholder voting process determined the allocation of funds. If you want to know more, here is a [deep dive](https://medium.com/cryptoeconlab/a-deepdive-into-fil-retropgf-1-results-7e5a0bcdba08) into the results.
 
 ## Q3 Focus Areas and Outlook
 

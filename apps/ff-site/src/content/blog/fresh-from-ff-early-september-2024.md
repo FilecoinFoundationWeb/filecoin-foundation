@@ -34,7 +34,7 @@ Filecoin Foundation is excited to launch the [Developer Grants Updates series](/
 ### Governance
 
 - Filecoin core developers and Implementation teams have agreed to align around pre-scheduled network upgrades. You can find the proposed [2025 upgrade cycle](https://github.com/filecoin-project/core-devs/discussions/177) in the Core Devs GitHub repository.
-- NV24 will be the final upgrade of 2024, with the calibnet upgrade landing on September 26, and the main upgrade arriving on October 30. Visit [Metropolis](https://metropolis.vote/dashboard/c/8wfuwz2ahp) to help name it!
+- NV24 will be the final upgrade of 2024, with the calibnet upgrade landing on September 26, and the main upgrade arriving on October 30.
 - [FIP0081: Introduce Lower Bound for Sector Initial Pledge](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0081.md) is in Last Call until September 4, 2024.
 - Watch the [video walkthrough on Metropolis](https://youtu.be/k1Qj7JclNTo?feature=shared) and learn how it facilitates temperature checks and community polling for FIPs (Filecoin Improvement Proposals) and early-stage ideas with Lucky Nwachukwu, Project Manager of Governance at Filecoin Foundation.
 
