@@ -1,0 +1,79 @@
+name: Label PR Workflow
+
+on:
+  pull_request:
+    types: [synchronize, opened, reopened, closed]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  label-stacked-prs:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Remove stacked PR label for main branch PRs
+        uses: actions-ecosystem/action-remove-labels@v1
+        if: github.base_ref == 'main'
+        with:
+          github_token: ${{ github.token }}
+          labels: stacked PR
+
+      - name: Add stacked PR label for non-main branch PRs
+        uses: actions-ecosystem/action-add-labels@v1
+        if: github.base_ref != 'main'
+        with:
+          github_token: ${{ github.token }}
+          labels: stacked PR
+
+  label-by-size:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.base_ref == 'main'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
+
+      - name: Calculate PR size and label
+        run: |
+          # Get PR stats using GitHub API
+          PR_STATS=$(gh pr view ${{ github.event.pull_request.number }} --json files --jq '.files | {files: length, additions: map(.additions) | add, deletions: map(.deletions) | add}')
+          CHANGED_FILES=$(echo $PR_STATS | jq '.files')
+          CHANGED_LINES=$(echo $PR_STATS | jq '.additions + .deletions')
+
+          # Remove existing size labels more reliably
+          gh pr edit ${{ github.event.pull_request.number }} --remove-label "size/S" 2>/dev/null || true
+          gh pr edit ${{ github.event.pull_request.number }} --remove-label "size/M" 2>/dev/null || true
+          gh pr edit ${{ github.event.pull_request.number }} --remove-label "size/L" 2>/dev/null || true
+
+          # Wait a moment for the removal to process
+          sleep 1
+
+          # Then add the new label
+          if [ $CHANGED_FILES -le 3 ] && [ $CHANGED_LINES -lt 50 ]; then
+            echo "📏 Adding 'size/S' label ($CHANGED_FILES files, $CHANGED_LINES lines changed)"
+            gh pr edit ${{ github.event.pull_request.number }} --add-label "size/S"
+          elif [ $CHANGED_FILES -le 8 ] && [ $CHANGED_LINES -le 200 ]; then
+            echo "📏 Adding 'size/M' label ($CHANGED_FILES files, $CHANGED_LINES lines changed)"
+            gh pr edit ${{ github.event.pull_request.number }} --add-label "size/M"
+          else
+            echo "📏 Adding 'size/L' label ($CHANGED_FILES files, $CHANGED_LINES lines changed)"
+            gh pr edit ${{ github.event.pull_request.number }} --add-label "size/L"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+  cleanup-labels:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove temporary labels on PR close
+        uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          github_token: ${{ github.token }}
+          labels: |
+            size/S
+            size/M
+            size/L
