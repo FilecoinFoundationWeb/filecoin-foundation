@@ -11,14 +11,13 @@ description: The Filecoin Virtual Machine enables smart contracts on Filecoin,
 website: https://fvm.filecoin.io/
 tech:
   - filecoin
-featured-content: ""
 twitter: https://x.com/Filecoin
 seo:
   title: Filecoin Virtual Machine (FVM) – Smart Contracts & Developer Tools
-  description: "Build on Filecoin with FVM: deploy smart contracts, dataDAOs,
-    decentralized compute, and Layer 2 apps while unlocking the potential of an
-    open data economy."
+  description: "Build on Filecoin with FVM: deploy smart contracts, dataDAOs, decentralized compute, and Layer 2 apps — unlocking the open data economy."
 ---
-The FVM unlocks boundless possibilities, ranging from dataDAOs, to perpetual storage, to financial services for storage providers (e.g. collateral lending, liquid staking, insurance protocols), to [decentralized compute](https://bacalhau.org/) and Layer 2 networks (such as reputation systems, and incentive-aligned [content delivery networks](https://strn.network/), and more.
 
-Bring your project to FVM and build alongside a large cohort of builders, with supporting business and technical resources, to deploy the first batch of value-generating applications to the Filecoin mainnet!
+The FVM unlocks boundless possibilities: from dataDAOs and perpetual storage, to financial services for storage providers (e.g. collateral lending, liquid staking, insurance protocols).
+It also enables [decentralized compute](https://bacalhau.org/), Layer 2 networks (such as reputation systems), and incentive-aligned [content delivery networks](https://strn.network/).
+
+Join a growing cohort of builders on FVM. With technical and business support available, you can deploy value-generating applications to the Filecoin mainnet today.
