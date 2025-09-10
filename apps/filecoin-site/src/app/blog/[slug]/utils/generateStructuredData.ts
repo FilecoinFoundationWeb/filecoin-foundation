@@ -1,16 +1,16 @@
 import { PATHS } from '@/constants/paths'
 
-import type { BlogPost } from '@/blog/types/blogPostType'
+import type { BlogPostTinaCMS } from '@/blog/types/blogPostType'
 import { generateBlogPostStructuredData } from '@/blog/utils/generateBlogPostStructuredData'
 
-export function generateStructuredData(data: BlogPost) {
-  const { title, excerpt, image, publishedOn } = data
+export function generateStructuredData(data: BlogPostTinaCMS) {
+  const { title, excerpt, image, date } = data
   return generateBlogPostStructuredData({
     path: `${PATHS.BLOG.path}/${data.slug}`,
     headline: title,
     description: excerpt,
-    image: image ? image.url : undefined,
-    datePublished: publishedOn,
-    dateModified: publishedOn,
+    image: image?.url || undefined,
+    datePublished: new Date(date),
+    dateModified: new Date(date),
   })
 }

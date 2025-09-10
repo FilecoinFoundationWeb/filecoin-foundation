@@ -2,9 +2,19 @@ import { defineConfig } from 'tinacms'
 
 import { blogFields } from './schema/blog'
 
+// Your hosting provider likely exposes this as an environment variable
+const branch =
+  process.env.GITHUB_BRANCH ||
+  process.env.VERCEL_GIT_COMMIT_REF ||
+  process.env.HEAD ||
+  'main'
+
 export default defineConfig({
-  branch: 'main',
+  branch,
+
+  // Get this from tina.io
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+  // Get this from tina.io
   token: process.env.TINA_TOKEN,
 
   build: {
@@ -17,17 +27,18 @@ export default defineConfig({
       publicFolder: 'public',
     },
   },
+  // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
   schema: {
     collections: [
       {
         name: 'post',
         label: 'Posts',
         path: 'content/posts',
-        format: 'md',
-        ui: {
-          router: ({ document }) => `/blog/${document._sys.filename}`,
-        },
         fields: blogFields('post'),
+        ui: {
+          // This is an DEMO router. You can remove this to fit your site
+          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
+        },
       },
     ],
   },

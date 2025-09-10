@@ -13,6 +13,7 @@
       "@/data/*": ["./src/app/_data/*"],
       "@/hooks/*": ["./src/app/_hooks/*"],
       "@/styles/*": ["./src/app/_styles/*"],
+      "@/tina/*": ["./tina/*"],
       "@/utils/*": ["./src/app/_utils/*"]
     },
     "plugins": [{ "name": "next" }]

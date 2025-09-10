@@ -88,8 +88,8 @@ export function blogFields(collection = 'post'): Array<TinaField> {
     },
     {
       type: 'datetime',
-      name: 'published_on',
-      label: 'Published On',
+      name: 'date',
+      label: 'Date',
       required: true,
       ui: {
         dateFormat: 'YYYY-MM-DD',
@@ -149,21 +149,92 @@ export function blogFields(collection = 'post'): Array<TinaField> {
       description: 'Any alternative urls that should redirect to this post',
       list: true,
     },
+  ]
+}
+export function blogIndexFields(collection = 'post') {
+  return [
     {
-      type: 'object',
-      name: 'seo',
-      label: 'SEO',
+      type: 'rich-text',
+      name: 'body',
+      label: 'Body of Document',
+      description: 'This is the markdown body',
+      isBody: true,
+    },
+    {
+      type: 'string',
+      name: 'title',
+      label: 'title',
+      isTitle: true,
       required: true,
-      fields: [
-        {
-          type: 'string',
-          name: 'description',
-          label: 'Meta Description',
-          description:
-            'A brief description of the post for search engines (150-160 characters recommended)',
-          required: true,
-        },
-      ],
+    },
+    {
+      type: 'string',
+      name: 'description',
+      label: 'description',
+      required: true,
+    },
+    {
+      type: 'image',
+      name: 'share_image',
+      label: 'share_image',
+      required: false,
+    },
+    {
+      type: 'string',
+      name: 'main_feature_small_header',
+      label: 'Main Article Header',
+      required: true,
+    },
+    {
+      name: 'main_feature',
+      label: 'Main Article',
+      required: true,
+      type: 'reference',
+      collections: [collection],
+    },
+    {
+      type: 'string',
+      name: 'main_feature_cta',
+      label: 'Main Article CTA',
+      required: true,
+    },
+    {
+      type: 'string',
+      name: 'features',
+      label: 'Featured Articles',
+      list: true,
+    },
+    {
+      type: 'string',
+      name: 'view_article_cta',
+      label: 'View Article CTA',
+    },
+    {
+      type: 'string',
+      name: 'categories_labels',
+      label: 'Categories Labels',
+      list: true,
+    },
+    {
+      type: 'string',
+      name: 'categories_values',
+      label: 'Categories Values',
+      list: true,
+    },
+    {
+      type: 'string',
+      name: 'rss_cta',
+      label: 'RSS CTA',
+    },
+    {
+      type: 'string',
+      name: 'related_articles_label',
+      label: 'Related Articles Label',
+    },
+    {
+      type: 'string',
+      name: 'view_all_label',
+      label: 'View All Label',
     },
   ]
 }

@@ -43,7 +43,7 @@ export function NavigationMainLink({
   ...rest
 }: NavigationLinkProps) {
   const pathname = usePathname()
-  const isActive = pathname.startsWith(href.toString())
+  const isActive = pathname?.startsWith(href.toString()) ?? false
 
   return (
     <Link
