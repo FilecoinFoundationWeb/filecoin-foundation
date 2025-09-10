@@ -14,18 +14,18 @@ import { graphicsData } from '@/data/graphicsData'
 import { Heading } from '@/components/Heading'
 import { TagGroup } from '@/components/TagGroup/TagGroup'
 
-import type { BlogPost } from '../types/blogPostType'
+import type { BlogPostTinaCMS } from '../types/blogPostType'
 
 import { PostMetadata } from './PostMetadata'
 
 export type BlogCardProps = {
-  title: BlogPost['title']
-  slug: BlogPost['slug']
-  tags: BlogPost['categories']
-  description: BlogPost['excerpt']
+  title: BlogPostTinaCMS['title']
+  slug: BlogPostTinaCMS['slug']
+  tags: BlogPostTinaCMS['categories']
+  description: BlogPostTinaCMS['excerpt']
   image?: CardImageProps
-  author?: BlogPost['author']
-  date: BlogPost['publishedOn']
+  author?: BlogPostTinaCMS['author']
+  date: BlogPostTinaCMS['date']
 }
 
 export function BlogCard({
