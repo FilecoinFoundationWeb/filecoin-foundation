@@ -4,10 +4,8 @@ import type { Post } from '@/tina/__generated__/types'
 
 export type BlogPost = Awaited<ReturnType<typeof getBlogPostData>>
 
-export type BlogPostTinaCMS = Post & {
+export type BlogPostTinaCMS = Omit<Post, '_values' | '_sys'> & {
   slug: string
-  seo: {
-    title: string
-    description: string
-  }
+  publishedOn: Date
+  shareImage: Post['share_image']
 }

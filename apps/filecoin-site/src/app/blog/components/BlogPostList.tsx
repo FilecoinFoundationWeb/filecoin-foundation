@@ -47,7 +47,15 @@ export function BlogPostList({ posts }: BlogPostListProps) {
 
       <CardGrid as="ul" variant="mdTwoLgThreeWide">
         {paginatedResults.map((post: BlogPostTinaCMS) => {
-          const { title, slug, excerpt, categories, image, author, date } = post
+          const {
+            title,
+            slug,
+            excerpt,
+            categories,
+            image,
+            author,
+            publishedOn,
+          } = post
 
           return (
             <BlogCard
@@ -56,7 +64,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
               slug={slug}
               description={excerpt}
               author={author}
-              date={date}
+              date={publishedOn}
               tags={categories}
               image={
                 image?.url

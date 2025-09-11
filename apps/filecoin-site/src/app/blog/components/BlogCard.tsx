@@ -25,7 +25,7 @@ export type BlogCardProps = {
   description: BlogPostTinaCMS['excerpt']
   image?: CardImageProps
   author?: BlogPostTinaCMS['author']
-  date: BlogPostTinaCMS['date']
+  date: BlogPostTinaCMS['publishedOn']
 }
 
 export function BlogCard({

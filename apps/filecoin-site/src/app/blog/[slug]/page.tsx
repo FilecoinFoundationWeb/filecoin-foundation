@@ -1,3 +1,4 @@
+import { tinaField } from 'tinacms/dist/react'
 import { TinaMarkdown } from 'tinacms/dist/rich-text'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -26,7 +27,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
   const post = await getBlogPostDataWithTina(slug)
 
-  const { image, categories, author, date, title, body } = post
+  const { image, categories, author, publishedOn, title, body } = post
 
   return (
     <>
@@ -38,14 +39,17 @@ export default async function BlogPost({ params }: BlogPostProps) {
             image={image}
             categories={categories}
             author={author}
-            date={date}
+            date={publishedOn}
             title={title}
             slug={slug}
           />
 
           <BlogPostContainer>
             <div className="prose">
-              <TinaMarkdown content={body} />
+              <TinaMarkdown
+                content={body}
+                components={tinaField(post, 'body')}
+              />
             </div>
           </BlogPostContainer>
         </div>
@@ -56,11 +60,11 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
 export async function generateMetadata(props: BlogPostProps) {
   const { slug } = await props.params
-  const { image, seo } = await getBlogPostDataWithTina(slug)
+  const { image, seo, title } = await getBlogPostDataWithTina(slug)
 
   return createMetadata({
     path: `${PATHS.BLOG.path}/${slug}`,
-    title: { absolute: `${seo.title} | ${ORGANIZATION_NAME}` },
+    title: { absolute: `${title} | ${ORGANIZATION_NAME}` },
     description: seo.description,
     image: image?.url || undefined,
     openGraph: { type: 'article' },
