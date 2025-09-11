@@ -11,14 +11,14 @@ export function filterAndSortScheduleDays(
 
   const daysWithEventsSortedByTime = daysWithEvents.map((day) => ({
     ...day,
-    events: day.events.toSorted((a, b) => {
+    events: day.events.slice().sort((a, b) => {
       const timeA = createUTCDateFromTime(a.startTime)
       const timeB = createUTCDateFromTime(b.startTime)
       return compareAsc(timeA, timeB)
     }),
   }))
 
-  const sortedDays = daysWithEventsSortedByTime.toSorted((a, b) => {
+  const sortedDays = daysWithEventsSortedByTime.slice().sort((a, b) => {
     return compareAsc(a.date, b.date)
   })
 
