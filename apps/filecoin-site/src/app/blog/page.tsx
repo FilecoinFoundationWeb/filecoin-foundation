@@ -1,6 +1,7 @@
 import { Suspense } from 'react'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 
@@ -21,6 +22,7 @@ import { getBlogPostsDataWithTina } from './utils/getBlogPostDataWithTina'
 
 export default async function Blog() {
   const posts = await getBlogPostsDataWithTina()
+  const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = posts[0]
 
   return (
@@ -52,7 +54,7 @@ export default async function Blog() {
 
       <PageSection backgroundVariant="light" paddingVariant="compact">
         <Suspense>
-          <BlogPostList posts={posts} />
+          <BlogPostList posts={sortedPosts} />
         </Suspense>
       </PageSection>
     </>
