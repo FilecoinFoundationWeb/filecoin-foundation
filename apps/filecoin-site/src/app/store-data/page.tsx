@@ -90,7 +90,8 @@ export default function StoreData() {
         >
           <CardGrid as="ul" variant="mdTwoLgThreeWide">
             {storageProviders
-              .toSorted((a, b) => a.name.localeCompare(b.name))
+              .slice()
+              .sort((a, b) => a.name.localeCompare(b.name))
               .map(({ name, description, bestFor, keyFeatures, url, logo }) => (
                 <StorageProviderCard
                   key={name}
