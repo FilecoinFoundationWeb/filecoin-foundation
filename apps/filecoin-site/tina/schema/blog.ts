@@ -153,7 +153,6 @@ export function blogFields(collection = 'post'): Array<TinaField> {
       type: 'object',
       name: 'seo',
       label: 'SEO',
-      description: 'Search engine optimization settings',
       required: true,
       fields: [
         {
