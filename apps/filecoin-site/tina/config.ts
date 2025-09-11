@@ -3,7 +3,7 @@ import { defineConfig } from 'tinacms'
 import { blogFields } from './schema/blog'
 
 export default defineConfig({
-  branch: process.env.VERCEL_GIT_COMMIT_REF || 'main',
+  branch: 'bp/filecoin-tina-cms',
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
   token: process.env.TINA_TOKEN,
   build: {
