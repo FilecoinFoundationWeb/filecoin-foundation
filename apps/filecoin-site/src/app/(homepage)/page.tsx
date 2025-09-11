@@ -218,7 +218,7 @@ export default async function Home() {
                   title={title}
                   description={excerpt}
                   author={author}
-                  date={publishedOn}
+                  date={publishedOn.toISOString()}
                   tags={categories}
                   image={
                     image && {
