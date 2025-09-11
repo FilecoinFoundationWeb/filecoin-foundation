@@ -5,6 +5,7 @@
       "env": [
         "PERCY_TOKEN_FILECOIN_SITE",
         "SENTRY_AUTH_TOKEN_FILECOIN_SITE",
+        "NEXT_PUBLIC_TINA_CLIENT_ID",
         "TINA_TOKEN"
       ],
       "outputs": [".next/**", "!.next/cache/**"]
