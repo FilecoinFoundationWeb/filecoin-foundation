@@ -10,19 +10,19 @@ import { graphicsData } from '@/data/graphicsData'
 import { Heading } from '@/components/Heading'
 import { SectionDivider } from '@/components/SectionDivider'
 
-import type { BlogPost } from '../types/blogPostType'
+import type { BlogPostTinaCMS } from '../types/blogPostType'
 
 import { BlogPostContainer } from './BlogPostContainer'
 import { Categories } from './Categories'
 import { PostMetadata } from './PostMetadata'
 
 type BlogPostHeaderProps = {
-  image?: string
-  categories: BlogPost['categories']
-  title: BlogPost['title']
-  slug: string
-  author?: BlogPost['author']
-  date: BlogPost['publishedOn']
+  image?: BlogPostTinaCMS['image']
+  categories: BlogPostTinaCMS['categories']
+  title: BlogPostTinaCMS['title']
+  slug: BlogPostTinaCMS['slug']
+  author?: BlogPostTinaCMS['author']
+  date: BlogPostTinaCMS['date']
 }
 
 export function BlogPostHeader({
@@ -41,7 +41,7 @@ export function BlogPostHeader({
           priority
           quality={100}
           fetchPriority="high"
-          src={image || graphicsData.fallback.data.src}
+          src={image?.url || graphicsData.fallback.data.src}
           alt=""
           className="object-cover"
           sizes="100vw"

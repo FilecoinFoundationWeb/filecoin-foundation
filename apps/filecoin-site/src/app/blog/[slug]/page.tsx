@@ -1,3 +1,5 @@
+import { TinaMarkdown } from 'tinacms/dist/rich-text'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
@@ -6,13 +8,12 @@ import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { MarkdownContent } from '@/components/MarkdownContent'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { Section } from '@/components/Section'
 
 import { BlogPostContainer } from '../components/BlogPostContainer'
 import { BlogPostHeader } from '../components/BlogPostHeader'
-import { getBlogPostData } from '../utils/getBlogPostData'
+import { getBlogPostDataWithTina } from '../utils/getBlogPostDataWithTina'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -23,26 +24,29 @@ type BlogPostProps = {
 export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params
 
-  const data = await getBlogPostData(slug)
-  const { image, categories, author, publishedOn, title, content } = data
+  const post = await getBlogPostDataWithTina(slug)
+
+  const { image, categories, author, date, title, body } = post
 
   return (
     <>
-      <StructuredDataScript structuredData={generateStructuredData(data)} />
+      <StructuredDataScript structuredData={generateStructuredData(post)} />
       <Navigation backgroundVariant="light" />
       <Section backgroundVariant="light">
         <div className="space-y-8 pb-30">
           <BlogPostHeader
-            image={image?.url}
+            image={image}
             categories={categories}
             author={author}
-            date={publishedOn}
+            date={date}
             title={title}
             slug={slug}
           />
 
           <BlogPostContainer>
-            <MarkdownContent>{content}</MarkdownContent>
+            <div className="prose">
+              <TinaMarkdown content={body} />
+            </div>
           </BlogPostContainer>
         </div>
       </Section>
@@ -52,13 +56,13 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
 export async function generateMetadata(props: BlogPostProps) {
   const { slug } = await props.params
-  const { image, seo } = await getBlogPostData(slug)
+  const { image, seo } = await getBlogPostDataWithTina(slug)
 
   return createMetadata({
     path: `${PATHS.BLOG.path}/${slug}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME}` },
     description: seo.description,
-    image: image?.url,
+    image: image?.url || undefined,
     openGraph: { type: 'article' },
   })
 }
