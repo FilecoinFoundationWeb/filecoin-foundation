@@ -6,7 +6,7 @@ import type { BlogPostTinaCMS } from '../types/blogPostType'
 
 type PostMetadataProps = {
   author?: BlogPostTinaCMS['author']
-  date: BlogPostTinaCMS['date']
+  date: BlogPostTinaCMS['publishedOn']
 }
 
 export function PostMetadata({ author, date }: PostMetadataProps) {

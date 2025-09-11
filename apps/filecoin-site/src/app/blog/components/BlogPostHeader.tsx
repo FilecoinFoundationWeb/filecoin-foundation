@@ -22,7 +22,7 @@ type BlogPostHeaderProps = {
   title: BlogPostTinaCMS['title']
   slug: BlogPostTinaCMS['slug']
   author?: BlogPostTinaCMS['author']
-  date: BlogPostTinaCMS['date']
+  date: BlogPostTinaCMS['publishedOn']
 }
 
 export function BlogPostHeader({

@@ -11,8 +11,9 @@ export async function getBlogPostsDataWithTina() {
     .map((post) => ({
       ...post,
       slug: post._sys.filename.replace('.md', ''),
+      publishedOn: new Date(post.published_on),
+      shareImage: post.share_image,
       seo: {
-        title: post.title,
         description: post.excerpt,
       },
     })) ?? []) as Array<BlogPostTinaCMS>
@@ -26,8 +27,9 @@ export async function getBlogPostDataWithTina(slug: string) {
   return {
     ...result.data.post,
     slug: result.data.post._sys.filename.replace('.md', ''),
+    publishedOn: new Date(result.data.post.published_on),
+    shareImage: result.data.post.share_image,
     seo: {
-      title: result.data.post.title,
       description: result.data.post.excerpt,
     },
   } as BlogPostTinaCMS
