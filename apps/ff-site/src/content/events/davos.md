@@ -155,7 +155,6 @@ schedule:
           start-time: 14:50:00.000Z
           end-time: 15:20:00.000Z
           location: Promenade 89, 7270 Davos, Switzerland
-          url: https://emtech2024.com/
         - tag: Registration Needed
           title: Marta Belcher at Future House
           description: "Fixing the System: How Decentralization Can Upgrade the Internet"

@@ -7,7 +7,6 @@ category: supported-sponsored
 location:
   primary: San Francisco, CA
   region: north-america
-external-link: https://foresight.org/vision-weekends-2022/
 start-date: 2022-12-02
 end-date: 2022-12-04
 image:
