@@ -12,7 +12,7 @@
     "not firefox < 85"
   ],
   "scripts": {
-    "build": "npm run generate-rss && next build",
+    "build": "tinacms build && npm run generate-rss && next build",
     "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
     "generate-rss": "tsx scripts/generateRSS.ts",
     "lint": "next lint --fix",
