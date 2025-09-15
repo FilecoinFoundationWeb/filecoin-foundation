@@ -19,8 +19,11 @@ concurrency:
 
 jobs:
   cypress-run:
-    if: github.event.pull_request.draft == false
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.draft == false }}
     runs-on: ubuntu-latest
+    concurrency:
+      group: site-e2e-${{ github.workflow }}-${{ github.ref }}-${{ matrix.app }}
+      cancel-in-progress: true
     strategy:
       fail-fast: false
       matrix:
@@ -42,7 +45,7 @@ jobs:
       AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
       BASE_URL: "http://localhost:3000"
       ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
-      PERCY_TOKEN: ${{ secrets[matrix.percy_token] }}
+      NEXT_TELEMETRY_DISABLED: 1
 
     steps:
       - name: Check out code
