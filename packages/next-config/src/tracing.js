@@ -27,7 +27,7 @@ export const outputFileTracingExcludes = {
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-const monorepoRoot = path.resolve(__dirname, '../../')
+const monorepoRoot = path.resolve(__dirname, '../../../')
 
 // This represents the root of the monorepo relative to each apps/**/next.config.ts
 /** @type {NextConfig['outputFileTracingRoot']} */
