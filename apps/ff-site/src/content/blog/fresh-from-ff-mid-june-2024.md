@@ -37,7 +37,7 @@ seo:
 
 ### Governance
 
-- We want your input! For the first time, the Filecoin community can suggest names and vote on the code name for nv23 [using Metropolis](https://poll.fil.org/dashboard). All Filecoin upgrades are assigned code names, and each upgrade is assigned a unique code name that reflects the change's significance and scope.
+- We want your input! For the first time, the Filecoin community can suggest names and vote on the code name for nv23 [using Metropolis (now Fil Poll)](https://poll.fil.org/dashboard). All Filecoin upgrades are assigned code names, and each upgrade is assigned a unique code name that reflects the change's significance and scope.
 - Share your technical expertise by joining a community governance working group! As the network welcomes new builders and wider adoption, the Foundation launched three community groups: the Storage Provider Working Group (SPWG), the Developer Working Group (DevWG), and the Data Clients Working Group (DCWG).
   - [The SPWG](https://filecoinproject.slack.com/archives/C02GQUMFQVA) holds weekly calls to discuss the latest developments for Filecoin Storage Providers.
   - [The DevWG](https://github.com/filecoin-project/DeveloperWG) is a space to connect with developers, community members, researchers, and others interested in the development of new tools, technologies, and use cases that leverage the Filecoin protocol.

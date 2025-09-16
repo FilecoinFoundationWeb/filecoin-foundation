@@ -1,5 +1,5 @@
 ---
-title: "Empowering Governance: The Launch of Metropolis to the Filecoin Community"
+title: "Empowering Governance: The Launch of Metropolis (now Fil Poll) to the Filecoin Community"
 created-on: 2024-05-13T16:47:45.110000Z
 updated-on: 2024-05-13T16:47:45.128000Z
 published-on: 2024-05-13T16:47:45.139000Z
@@ -15,7 +15,7 @@ seo:
     community. Learn more.
 ---
 
-Introducing Metropolis, a temperature check tool for early-stage Filecoin Improvement Proposals.
+Introducing Metropolis (now Fil Poll), a temperature check tool for early-stage Filecoin Improvement Proposals.
 
 Filecoin Foundation is pleased to announce the launch of Metropolis, a temperature check and crowdsource polling tool, built in collaboration with Canvas Technologies. Metropolis was created as a fork of the open-source Pol.is tool, which has been used to support digital democracy efforts in countries around the world.
 
@@ -45,6 +45,6 @@ We call on the Filecoin community to utilize the benefits of this tool. There ar
 
 We are also working to identify helpful ways to utilize the data generated from Metropolis to enhance the FIPs process.
 
-Try out the [Metropolis governance tool](https://poll.fil.org/dashboard) and let us know what you think. We encourage community members to explore potential use cases for Metropolis and share their feedback with the Filecoin Foundation Governance Team. The best way to provide feedback is to join our monthly Community Governance Calls - [register for upcoming calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto).
+Try out the [Metropolis (now Fil Poll) governance tool](https://poll.fil.org/dashboard) and let us know what you think. We encourage community members to explore potential use cases for Metropolis and share their feedback with the Filecoin Foundation Governance Team. The best way to provide feedback is to join our monthly Community Governance Calls - [register for upcoming calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto).
 
 To have an initial deep-dive into how Metropolis works, watch the [Metropolis demo video](https://github.com/filecoin-project/FIPs/tree/master/Community%20Governance%20Calls) from our Community Governance Calls.
