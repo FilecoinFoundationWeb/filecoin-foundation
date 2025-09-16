@@ -29,6 +29,6 @@ function extractAllocatorUrls(
 }
 
 function isValidAllocatorFile(file: AllocatorFileMetaDataBase) {
-  const allocatorFilePattern = /^\d{3,4}\.json$/
+  const allocatorFilePattern = /^rec[A-Za-z0-9]+\.json$/
   return allocatorFilePattern.test(file.name)
 }
