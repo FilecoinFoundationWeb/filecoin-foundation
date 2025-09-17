@@ -54,11 +54,6 @@ export const allocatorsTableColumnsData = [
     cell: (info) => info.getValue(),
     filterFn: 'includesString',
   }),
-  // columnHelper.accessor('location', {
-  //   header: 'Region',
-  //   cell: (info) => info.getValue(),
-  //   filterFn: 'includesString',
-  // }),
   columnHelper.accessor('availableDatacap', {
     header: 'Remaining Datacap',
     cell: (info) => formatDatacap(info.getValue()),
