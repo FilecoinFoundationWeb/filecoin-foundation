@@ -1,29 +1,24 @@
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { Social } from '@filecoin-foundation/ui/Social'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
-import { CARET_RIGHT } from '@/constants/cardCTAIcons'
-import { PATHS } from '@/constants/paths'
+import { DIGEST_PATHS, PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { Card } from '@/components/Card'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
-import { PageSection } from '@/components/PageSection'
+import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
 import { DIGEST_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getDigestArticlesData } from './utils/getDigestArticleData'
+import { getAllIssues } from './utils/getIssueData'
 
 export default async function Digest() {
-  const articles = await getDigestArticlesData()
-
+  const issues = await getAllIssues()
   return (
     <PageLayout gap="large">
       <StructuredDataScript
@@ -35,46 +30,19 @@ export default async function Digest() {
         image={graphicsData.digest}
       />
 
-      <PageSection
-        kicker="Issue 1 | May 2024"
-        title="DWeb Digest: Inaugural Edition"
-      >
-        <CardGrid as="section" cols="smTwo">
-          {articles.map((article) => {
-            const { title, image, slug, articleNumber, description, authors } =
-              article
-
-            return (
-              <Card
-                key={slug}
-                as="article"
-                avatars={authors}
-                description={{ text: description, isClamped: true }}
-                tags={[{ text: `Article ${articleNumber}` }]}
-                cta={{
-                  href: `${PATHS.DIGEST.path}/${slug}`,
-                  text: 'Read Article',
-                  icon: CARET_RIGHT,
-                }}
-                image={{
-                  ...(image || graphicsData.imageFallback.data),
-                  alt: image?.alt || '',
-                  sizes: buildImageSizeProp({
-                    startSize: '100vw',
-                    sm: '340px',
-                    md: '470px',
-                    lg: '480px',
-                  }),
-                }}
-                title={{
-                  text: title,
-                }}
-              />
-            )
-          })}
-        </CardGrid>
-      </PageSection>
-
+      {issues.map((issue) => (
+        <PageSectionWithImage
+          key={issue.number}
+          kicker={issue.kicker}
+          title={issue.title}
+          image={graphicsData.dWebDigestCover}
+          description={issue.description}
+          cta={{
+            href: `${PATHS.DIGEST.path}/${DIGEST_PATHS.issue(issue.number)}`,
+            children: `Read Issue ${issue.number}`,
+          }}
+        />
+      ))}
       <CTASection
         kicker="Social Media"
         title="Follow us and join the conversation."

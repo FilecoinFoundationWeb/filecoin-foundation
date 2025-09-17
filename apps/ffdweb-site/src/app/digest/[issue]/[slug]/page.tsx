@@ -5,7 +5,7 @@ import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
-import { PATHS } from '@/constants/paths'
+import { DIGEST_PATHS, PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -17,7 +17,7 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import {
   getDigestArticleData,
   getDigestArticlesData,
-} from '../utils/getDigestArticleData'
+} from '../../utils/getDigestArticleData'
 
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -62,7 +62,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
         <ShareArticle
           sectionTitle="Share Article"
           articleTitle={title}
-          path={`${PATHS.DIGEST.path}/${slug}`}
+          path={`${PATHS.DIGEST.path}/${DIGEST_PATHS.article(issueNumber, slug)}`}
           baseUrl={BASE_URL}
         />
       </ArticleLayout>
@@ -77,10 +77,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: DigestArticleProps) {
   const { slug } = await props.params
-  const { image, seo } = await getDigestArticleData(slug)
+  const { image, seo, issueNumber } = await getDigestArticleData(slug)
 
   return createMetadata({
-    path: `${PATHS.DIGEST.path}/${slug}`,
+    path: `${PATHS.DIGEST.path}/${DIGEST_PATHS.article(issueNumber, slug)}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,

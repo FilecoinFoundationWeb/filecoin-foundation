@@ -40,3 +40,9 @@ export const PATHS = {
   }),
   TERMS_OF_USE: createPathConfig('/terms-of-use', 'Terms of Use'),
 } as const
+
+export const DIGEST_PATHS = {
+  issue: (issueNumber: string) => `/issue-${issueNumber}`,
+  article: (issueNumber: string, slug: string) =>
+    `/issue-${issueNumber}/${slug}`,
+} as const
