@@ -1,9 +1,10 @@
 import { Octokit } from '@octokit/rest'
+import { z } from 'zod'
 
 import {
-  AllocatorFileListMetaDataBaseSchema,
+  AllocatorFileMetaDataBaseSchema,
   type AllocatorFileMetaDataBase,
-} from '../schemas/AllocatorSchema'
+} from '../schemas/AllocatorFileSchema'
 
 const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
 
@@ -19,7 +20,7 @@ async function getAllocatorList() {
     path: 'Allocators',
   })
 
-  return AllocatorFileListMetaDataBaseSchema.parse(allocatorsData)
+  return z.array(AllocatorFileMetaDataBaseSchema).parse(allocatorsData)
 }
 
 function extractAllocatorUrls(

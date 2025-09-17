@@ -8,7 +8,7 @@ import { ListboxButton } from '@filecoin-foundation/ui/Listbox/ListboxButton'
 import { ListboxOption } from '@filecoin-foundation/ui/Listbox/ListboxOption'
 import { ListboxOptions } from '@filecoin-foundation/ui/Listbox/ListboxOptions'
 
-import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorWithDatacapSchema'
 
 export type TableSortOption = {
   id: SortDirection

@@ -5,7 +5,7 @@ import { Icon } from '@filecoin-foundation/ui/Icon'
 
 import { PopoverHeader } from '@/components/Table/PopoverHeader'
 
-import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorWithDatacapSchema'
 import { formatDatacap } from '../utils/formatDatacap'
 
 const columnHelper = createColumnHelper<AllocatorWithDatacap>()
@@ -54,11 +54,11 @@ export const allocatorsTableColumnsData = [
     cell: (info) => info.getValue(),
     filterFn: 'includesString',
   }),
-  columnHelper.accessor('location', {
-    header: 'Region',
-    cell: (info) => info.getValue(),
-    filterFn: 'includesString',
-  }),
+  // columnHelper.accessor('location', {
+  //   header: 'Region',
+  //   cell: (info) => info.getValue(),
+  //   filterFn: 'includesString',
+  // }),
   columnHelper.accessor('availableDatacap', {
     header: 'Remaining Datacap',
     cell: (info) => formatDatacap(info.getValue()),
