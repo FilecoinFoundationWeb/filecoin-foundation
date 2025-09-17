@@ -21,23 +21,18 @@ type LanguageState = {
   isTransifexReady: boolean
 }
 
-export function useTransifexLive() {
-  const [languageState, setLanguageState] = useState<LanguageState>({
-    languages: LANGUAGE_CONFIG,
-    locale: LANGUAGE_CONFIG[0].key,
-    isTransifexReady: false,
-  })
+const TRANSIFEX_LOCAL_STORAGE_KEY = 'txlive:selectedlang'
 
+export function useTransifexLive() {
+  const [languageState, setLanguageState] = useState(getInitialState)
   const transifex = useWindowTransifex()
 
   useEffect(() => {
-    if (!transifex) return
-
-    transifex.onReady(() => {
+    transifex?.onReady(() => {
       setLanguageState((prev) => ({ ...prev, isTransifexReady: true }))
     })
 
-    transifex.onTranslatePage((languageCode) => {
+    transifex?.onTranslatePage((languageCode) => {
       const config = LANGUAGE_CONFIG.find((lang) => lang.key === languageCode)
 
       setLanguageState((prev) => ({
@@ -47,13 +42,14 @@ export function useTransifexLive() {
     })
   }, [transifex])
 
+  useEffect(() => {
+    transifex?.translateTo(transifex?.getSelectedLanguageCode(), true)
+  }, [transifex])
+
   return {
     ...languageState,
     handleLanguageChange: (newLocale: Locale) => {
-      if (!transifex) return
-
-      setLanguageState((prev) => ({ ...prev, locale: newLocale }))
-      transifex.translateTo(newLocale, true)
+      transifex?.translateTo(newLocale, true)
     },
   }
 }
@@ -82,4 +78,28 @@ function useWindowTransifex() {
   }, [waitForTransifex])
 
   return transifex
+}
+
+function getInitialState() {
+  const languageState: LanguageState = {
+    languages: LANGUAGE_CONFIG,
+    locale: LANGUAGE_CONFIG[0].key,
+    isTransifexReady: false,
+  }
+
+  if (typeof window === 'undefined') {
+    return languageState
+  }
+
+  try {
+    const storedLocale = localStorage.getItem(TRANSIFEX_LOCAL_STORAGE_KEY)
+    const config = LANGUAGE_CONFIG.find((lang) => lang.key === storedLocale)
+
+    return {
+      ...languageState,
+      locale: config?.key || LANGUAGE_CONFIG[0].key,
+    }
+  } catch {
+    return languageState
+  }
 }
