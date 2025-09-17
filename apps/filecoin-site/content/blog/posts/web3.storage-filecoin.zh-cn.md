@@ -33,7 +33,7 @@ Web3.Storage有以下两大组成部分：
 
 ## **如何运行？**
 
-在后台，发送至Web3.Storage的内容被持久地[存储](https://web3.storage/)在Filecoin的存储提供者网络上，且在IPFS上冗余托管。因此，Filecoin和IPFS携手给内容、数据和应用程序带来了[_内容可寻址性_](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/)和 [_持久性_](https://filecoin.io/blog/posts/ipfs-filecoin-and-content-persistence/)*两大特性。*内容可寻址性* 生成基于内容本身（CIDs）的不可篡改链接，确保在不留下可追踪篡改记录的情况下，信息无法被更改、编辑或破坏。*持久性\_ 保证通过该服务存储的数据将保持完整可用-由Filecoin强大的[经济模型](https://filecoin.io/blog/posts/introducing-the-filecoin-economy/)和存储数据完整性的可验证证明支撑。
+在后台，发送至Web3.Storage的内容被持久地[存储](https://web3.storage/)在Filecoin的存储提供者网络上，且在IPFS上冗余托管。因此，Filecoin和IPFS携手给内容、数据和应用程序带来了[_内容可寻址性_](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/)和 [_持久性_](https://filecoin.io/blog/posts/ipfs-filecoin-and-content-persistence/)*两大特性。_内容可寻址性_ 生成基于内容本身（CIDs）的不可篡改链接，确保在不留下可追踪篡改记录的情况下，信息无法被更改、编辑或破坏。*持久性\_ 保证通过该服务存储的数据将保持完整可用-由Filecoin强大的[经济模型](https://filecoin.io/blog/posts/introducing-the-filecoin-economy/)和存储数据完整性的可验证证明支撑。
 
 ![](/uploads/image-5.webp)
 

@@ -48,15 +48,15 @@ SP参与存储与检索交易的能力与其运作能力同样重要。存储与
 
 主网上线以来，Filecoin Network面向用户的[存储力](https://filecoin.io/blog/filecoin-guide-to-storage-mining/#storage-power)稳步提升。SP数量已达3,876，其中头部SP提供了147.65 PiB存储空间。目前网络总存储力超过[15.6](https://dashboard.starboard.ventures/storage) EiB。
 
-![](/uploads/image6.webp)_过去一年Filecoin的存储力增长情况 （来源：_ [_https://filscan.io/statistics/power_](https://filscan.io/statistics/power "https://filscan.io/statistics/power")_）_
+![](/uploads/image6.webp)*过去一年Filecoin的存储力增长情况 （来源：* [*https://filscan.io/statistics/power*](https://filscan.io/statistics/power "https://filscan.io/statistics/power")*）*
 
 网络存储的信息量也有相应提升，现有[36.95 PiB](https://dashboard.starboard.ventures/deals)在用存储分布于1,623,282笔活跃交易。[Filecoin+](https://www.youtube.com/watch?v=-kxNpRiEd_c)交易的信息存储量尤为突出，达到16.1 PiB，接近总量的半数。（Filecoin+是社区治理项目，当认证客户通过交易存储真实数据，SP会收到倍数奖励。）
 
-![](/uploads/image4.webp)_2021年7月以来Filecoin Network成功存储交易数量增长情况 （来源： Protocol Labs）_
+![](/uploads/image4.webp)*2021年7月以来Filecoin Network成功存储交易数量增长情况 （来源： Protocol Labs）*
 
 这样的成绩离不开全球各地大大小小存储提供者的活跃表现。
 
-![](/uploads/image3.webp)_全球Filecoin SP分布集中区域（来源：Protocol Labs）_
+![](/uploads/image3.webp)*全球Filecoin SP分布集中区域（来源：Protocol Labs）*
 
 ## 存储提供者的规模
 
@@ -94,7 +94,7 @@ SnapDeals的出现，以及Filecoin市场中Filecoin+交易的增加表明网络
 
 目前这个生态已汇集规模各异的SP，能够充分满足客户需求。
 
-![](/uploads/image5.webp)_SP生态存储力一览，以PiB为单位（来源：Protocol Labs）_
+![](/uploads/image5.webp)*SP生态存储力一览，以PiB为单位（来源：Protocol Labs）*
 
 随着[Project Gravity](https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/)的出现，能处理海量数据集的存储力会面临需求增长。Project Gravity是一个裂变项目，为Filecoin Network吸收此类新用户的社区成员将获得奖励。
 
@@ -108,11 +108,11 @@ SP拥有分布式大规模生态圈，为参与者打造了稳健的工具，软
 
 Filecoin Green的开源主页也是提高能源使用透明度的工具，它通过SP的专属标识了解各个SP的能源使用情况，还可以整合全网数据。
 
-![](/uploads/image2.webp)_Filecoin Green主页总结的年初至今月度能源总消耗量（来源:_ [_https://filecoin.energy_](https://filecoin.energy "https://filecoin.energy")_）_
+![](/uploads/image2.webp)*Filecoin Green主页总结的年初至今月度能源总消耗量（来源:* [*https://filecoin.energy*](https://filecoin.energy "https://filecoin.energy")*）*
 
 - [**PiKNiK**](https://www.piknik.com/): 简化了提供存储的流程，为不具备技术背景的SP提供架设启动全套解决方案。PiKNiK刚刚发布了企业级SP加速器([ESPA](https://www.web3espa.io/))计划，协助企业级SP顺利加入网络。
-- _如有兴趣加入线上训练营与同业交流，获取资源和训练模块并与行业领袖对话，_
-  [_现在注册_](https://www.eventbrite.com/e/filecoin-storage-provider-bootcamp-by-espa-tickets-273917022187) _2022年3月2日ESPA线上活动。_
+- *如有兴趣加入线上训练营与同业交流，获取资源和训练模块并与行业领袖对话，*
+  [*现在注册*](https://www.eventbrite.com/e/filecoin-storage-provider-bootcamp-by-espa-tickets-273917022187) *2022年3月2日ESPA线上活动。*
 
 - [**CIDGravity**](https://www.cidgravity.com/): 一款由Filecoin社区开发，轻巧且安全的工具，为SP提供定价与客户管理方案，设置方便快速，操作界面简洁。
 - [**Bitbot**](https://github.com/textileio/bidbot): 一款SP可选用的增值应用，能够处理存储拍卖相关内容。

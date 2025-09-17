@@ -36,7 +36,7 @@ Filecoin生态正快速发展，诸如Lotus的生态工具也在不断进化，�
 
 我们发现的问题是，检索网络的新能力离不开稳健的存储提供者基础，而目前，Lotus上的存储提供者会在工作中*避开*他们认为不稳定和不可盈利的功能。以长远的眼光看，其做法有积极作用，能推动Lotus实施计划进化，满足存储提供者需求。如果网络参与者选择绕过特定功能，说明软件本身应该为用户提供更高的灵活性和模块性。
 
-基于上述观察，我们意识到Lotus的 _单体二进制_ 阻碍了Lotus上存储提供者的灵活稳健地运营，并提出了解决这一问题的几个方向。
+基于上述观察，我们意识到Lotus的 *单体二进制* 阻碍了Lotus上存储提供者的灵活稳健地运营，并提出了解决这一问题的几个方向。
 
 ![](/uploads/pl_lotus1.webp)
 
@@ -66,9 +66,9 @@ Filecoin生态正快速发展，诸如Lotus的生态工具也在不断进化，�
 
 ![](/uploads/pl_lotus2.webp)
 
-[_lotus miners的其他职责_](https://github.com/protocol/web3-dev-team/blob/main/proposals/lotus-miner-runtime-segregation.md#context)
+[*lotus miners的其他职责*](https://github.com/protocol/web3-dev-team/blob/main/proposals/lotus-miner-runtime-segregation.md#context)
 
-通过这一初步分类，迈向模块化存储提供者架构的第一步就是解决单体架构暴露出的劣势：_将Lotus miner进程分割为1)Lotus市场进程和 2)Lotus存储提供者进程。_
+通过这一初步分类，迈向模块化存储提供者架构的第一步就是解决单体架构暴露出的劣势：*将Lotus miner进程分割为1)Lotus市场进程和 2)Lotus存储提供者进程。*
 
 区隔市场和挖矿后，Lotus节点架构对存储提供者来说功能将更明确，存储提供者可根据自身能力和盈利偏好承担相应任务。
 

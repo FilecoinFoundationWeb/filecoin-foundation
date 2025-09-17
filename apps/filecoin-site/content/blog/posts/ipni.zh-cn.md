@@ -36,7 +36,7 @@ IPNI通过处理*Advertisements*来建立索引。通告结构允许*存储提�
 
 ## 挑战
 
-为像[web3.storage](http://web3.storage/)或[nft.storage](http://nft.storage/)这样的大型存储提供者建立完整的索引很困难。它会消耗大量的时间和计算资源。例如，在编写[cid.contact](http://cid.contact/)时，-少数IPNI部署之一- 有大约 _1.3 万亿个_ CID的索引。从头开始重建这样的索引需要几周时间和一个全天候运行的强大服务器。
+为像[web3.storage](http://web3.storage/)或[nft.storage](http://nft.storage/)这样的大型存储提供者建立完整的索引很困难。它会消耗大量的时间和计算资源。例如，在编写[cid.contact](http://cid.contact/)时，-少数IPNI部署之一- 有大约 *1.3 万亿个* CID的索引。从头开始重建这样的索引需要几周时间和一个全天候运行的强大服务器。
 
 当下，如果存储提供者想横向扩展该怎么办？一个典型的方法是添加一个具有新libp2p身份的新节点，也许是不同的传输协议，并从该处开始提供相同的数据。但是，IPNI如何知道A提供者的所有数据现在也可以在B提供者获得呢？为一个新身份重新公告所有CID是极其低效的实现方式！而**扩展存储提供者**是最好的答案。
 
@@ -100,7 +100,7 @@ IPNI通过处理*Advertisements*来建立索引。通告结构允许*存储提�
 
 一旦该通告被处理-Max的新提供者信息将被返回到任何CID的所有查询中。从API的角度来看，扩展存储提供者的结果与常规提供者的记录无法区分。
 
-_有扩展存储提供者的通告也必须以一种特殊的方式签署，这是由_[_说明书_](https://github.com/ipni/specs/blob/main/IPNI.md#extendedprovider)\_定义。
+*有扩展存储提供者的通告也必须以一种特殊的方式签署，这是由*[*说明书*](https://github.com/ipni/specs/blob/main/IPNI.md#extendedprovider)\_定义。
 
 ## Go SDK示例
 

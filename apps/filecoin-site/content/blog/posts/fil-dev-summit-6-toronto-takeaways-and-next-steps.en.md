@@ -57,7 +57,7 @@ The client success track focused on the practical challenges and strategies for 
 - Firsthand onboarding experiences (like those with data.gov and Eastore.xyz) reveal both friction points and opportunities for improvement, underscoring the importance of “dogfooding” and open feedback.
 - Continuous iteration of onramps and documentation is necessary to reduce barriers for new clients and to scale demand effectively.
 
-#### Next Steps:
+#### Next Steps
 
 - Continue hands-on testing of onramps using open datasets to surface and address onboarding challenges.
 - Record and report onramp usage data onchain to improve transparency and measure progress.
@@ -133,7 +133,7 @@ In parallel, the Filecoin Plus (Fil+) program was examined through the lens of g
 - Advance Fil+ allocator design: Support development of new allocator models (market tracking, on-chain only, round robin, onramps) and explore simpler, KYC-enabled proof-of-payment approaches.
 - Enhance data accessibility and usability: Build a clearer directory of storage providers and create better guides to help users navigate and extract insights from existing dashboards.
 
-### Join us for FDS 7 in Buenos Aires!
+### Join us for FDS 7 in Buenos Aires
 
 Join us for FIL Dev Summit 7 in Buenos Aires, Argentina ahead of DevConnect! 
 

@@ -47,7 +47,7 @@ Filecoin社区成员已经对这些新能力可以建造的项目充满期待。
 
 想象一下，任何人都可以写一个新的智能合约，它能自动签订新的存储交易提议，来在网络中维持某个数据集的特定副本数据等级。你可以设定数据的自动存储副本数量，来确保自己数据的弹性。
 
-通过这个智能合约，你也可以只在Filecoin上存储一次数据，然后让一个不依赖于信任的actor复制和发送*n* 次到多个存储地点。你甚至可以创建一个该数据集必须遵守的用户自定义协议规则，如指定存储区域和地点、网络响应延迟值甚至是价格。这些都可以在FVM虚拟机的智能合约工作流里搭建。
+通过这个智能合约，你也可以只在Filecoin上存储一次数据，然后让一个不依赖于信任的actor复制和发送_n_ 次到多个存储地点。你甚至可以创建一个该数据集必须遵守的用户自定义协议规则，如指定存储区域和地点、网络响应延迟值甚至是价格。这些都可以在FVM虚拟机的智能合约工作流里搭建。
 
 #### **更智能的存储市场**
 
@@ -87,6 +87,6 @@ FVM虚拟机是在WASM核心上搭建的，而参考SDK库是用Rust编写的。
 
 如果你很希望搭建某个用例或工具，可以加入[FVM虚拟机早期建设者](https://fvm.filecoin.io/foundry)计划。你可以与生态系统里的其他杰出的建设者协作，如Zondax、Bloxico、Polyphene、Venus团队和Glif。最新的一期计划在9月开启。
 
-你还可以申请专注于FVM虚拟机基础设施和工具项目的[FVM RFP资助计划](https://github.com/filecoin-project/devgrants/blob/master/rfps/fvm-open-tools-infra.md)。目前已经有一些团队提交了项目提议，如搭建高层级的Rust SDK库、汇编脚本（AssemblyScript）和TinyGo的SDK库，以及一个名为FilHack的“FVM虚拟机版Hardhat开发环境”。不过，我们还需要更多FVM虚拟机工具和基础设施项目提议。例如，可以做一个Open Zeppelin程序库，或为*ata wallets*提出一些新想法。
+你还可以申请专注于FVM虚拟机基础设施和工具项目的[FVM RFP资助计划](https://github.com/filecoin-project/devgrants/blob/master/rfps/fvm-open-tools-infra.md)。目前已经有一些团队提交了项目提议，如搭建高层级的Rust SDK库、汇编脚本（AssemblyScript）和TinyGo的SDK库，以及一个名为FilHack的“FVM虚拟机版Hardhat开发环境”。不过，我们还需要更多FVM虚拟机工具和基础设施项目提议。例如，可以做一个Open Zeppelin程序库，或为_ata wallets_提出一些新想法。
 
 如果你想先了解FVM虚拟机，可以观看该项目的[视频讲解](https://www.youtube.com/watch?v=Vw9syGiG31c&t=10s)。

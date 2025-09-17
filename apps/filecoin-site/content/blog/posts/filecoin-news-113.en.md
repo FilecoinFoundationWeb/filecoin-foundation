@@ -26,8 +26,9 @@ Network v26 completes the rollout of [FIP-0100](https://github.com/filecoin-proj
 
 The good news? Aggregation brings major gas savings. With the batch balancer removed, batching PreCommits and aggregating ProveCommits can cut costs by 2–4x per sector. SPs already making the switch are seeing real results.
 
-📚 [Learn more on the FilOz blog
-](https://medium.com/@filoz/the-power-of-aggregation-real-savings-for-storage-providers-87f62aa9b018)💬 Questions? Drop into #fil-help on [Filecoin Slack](http://filecoin.io/slack).
+📚 [Learn more on the FilOz blog](https://medium.com/@filoz/the-power-of-aggregation-real-savings-for-storage-providers-87f62aa9b018)
+
+💬 Questions? Drop into #fil-help on [Filecoin Slack](http://filecoin.io/slack).
 
 ## 🌎 Community Updates 🌎
 

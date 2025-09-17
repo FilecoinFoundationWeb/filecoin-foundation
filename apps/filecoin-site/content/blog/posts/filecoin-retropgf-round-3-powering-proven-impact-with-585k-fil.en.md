@@ -66,4 +66,4 @@ Update 2: We're excited to announce we're strengthening our partnership with Dri
 
 Interested in getting involved? We're still actively seeking additional donors interested in contributing amounts greater than 5,000 FIL to further amplify this round's impact. Get a say in the round’s goals and impactful funding efforts. Contact us at [ops@fil-retropgf.io](mailto:ops@fil-retropgf.io) today!
 
-Ready to apply? Follow[ @FILRetroPGF](https://twitter.com/FILRetroPGF) on X and join our [Telegram group](https://t.me/+haan_QdnllYyZmE1) for the latest updates. The countdown to our biggest funding round yet has begun.
+Ready to apply? Follow[@FILRetroPGF](https://twitter.com/FILRetroPGF) on X and join our [Telegram group](https://t.me/+haan_QdnllYyZmE1) for the latest updates. The countdown to our biggest funding round yet has begun.

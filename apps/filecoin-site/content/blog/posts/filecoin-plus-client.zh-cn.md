@@ -45,7 +45,7 @@ Root key holders、公证人、用户和存储提供者通过DataCap的分配和
 
 此外，被高频取回的有用数据则会产生更多收入。虽然更高的取回频率会带来一些责任，但它们会被协议价格所抵消。
 
-在Filecoin Plus项目里，存储提供者会看到其对验证区块的质量调整倍数（quality adjusted power，QAP）有１０倍增长，相对于封装　*未验证*　的交易提议来说，会更有可能赚取区块回报。由于用户在项目里已经被验证，那么涉及的风险会更低。
+在Filecoin Plus项目里，存储提供者会看到其对验证区块的质量调整倍数（quality adjusted power，QAP）有１０倍增长，相对于封装　_未验证_　的交易提议来说，会更有可能赚取区块回报。由于用户在项目里已经被验证，那么涉及的风险会更低。
 
 根据交易提议的体积，有不同的接收DataCap的方式。在[verify.glif.io](https://verify.glif.io/ "Verify yourself, get verified storage")上有一个近乎实时的流程，让人们通过GitHub来验证（因此必须有一个 [GitHub](https://github.com "GitHub") 账号）。得到许可就会提供32 GiB的DataCap，这对刚熟悉Filecoin的用户或想测试达成交易提议的新人存储提供者来说都是很有用的。
 
