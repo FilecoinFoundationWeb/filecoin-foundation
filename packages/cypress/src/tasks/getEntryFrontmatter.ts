@@ -6,9 +6,11 @@ import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/g
 
 import { MARKDOWN_EXTENSION } from '@filecoin-foundation/utils/constants/fileExtensions'
 
-export async function getEntryFrontmatter(path: string) {
+export async function getEntryFrontmatter<T = GenericEntryFrontmatter>(
+  path: string,
+): Promise<T> {
   const file = await fs.readFile(path + MARKDOWN_EXTENSION, 'utf8')
   const { data } = matter(file)
 
-  return data as GenericEntryFrontmatter
+  return data as T
 }
