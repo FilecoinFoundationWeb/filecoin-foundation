@@ -2,7 +2,11 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "env": ["PERCY_TOKEN_FILECOIN_SITE", "SENTRY_AUTH_TOKEN_FILECOIN_SITE"],
+      "env": [
+        "PERCY_TOKEN_FILECOIN_SITE",
+        "SENTRY_AUTH_TOKEN_FILECOIN_SITE",
+        "TINA_TOKEN"
+      ],
       "outputs": [".next/**", "!.next/cache/**"]
     }
   }

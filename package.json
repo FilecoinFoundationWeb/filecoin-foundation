@@ -5,7 +5,7 @@
     "apps/*",
     "packages/*"
   ],
-  "packageManager": "npm@10.9.2",
+  "packageManager": "npm@11.6.0",
   "scripts": {
     "lint:md": "markdownlint-cli2 \"apps/**/*.md\" \"!**/node_modules/**\" --config .markdownlint.jsonc",
     "check:versions": "syncpack list-mismatches",
