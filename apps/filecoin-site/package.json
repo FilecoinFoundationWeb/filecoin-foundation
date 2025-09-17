@@ -24,9 +24,9 @@
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
     "@phosphor-icons/react": "^2.1.10",
+    "@sentry/nextjs": "^10.10.0",
     "cypress": "^15.1.0",
     "embla-carousel-react": "^8.6.0",
-    "@sentry/nextjs": "^10.10.0",
     "feed": "^5.1.0",
     "next": "^15.5.2",
     "nuqs": "^2.6.0",
@@ -38,10 +38,10 @@
   },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
+    "@filecoin-foundation/next-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
-    "@filecoin-foundation/next-config": "0.0.0",
     "@percy/cli": "^1.31.1",
     "@percy/cypress": "^3.1.6",
     "@phosphor-icons/react": "^2.1.10",
