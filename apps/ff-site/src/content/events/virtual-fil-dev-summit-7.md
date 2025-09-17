@@ -41,7 +41,12 @@ program:
     - title: "Filecoin Onchain Capabilities "
       start-date: 2025-10-09
       location: Virtual
-      description: ""
+      description: Learn how the Filecoin network is expanding its capabilities to
+        bring programmable, verifiable, and content-addressable services
+        onchain. Participate in workshops to be among the first to build with
+        early services, such as verifiable data ownership records, auditable
+        service delivery, and programmable onchain payments, to help shape the
+        Filecoin Onchain Cloud.
       external-link: https://events.zoom.us/ev/AqlQpbuJ_rxk_SUKcZ8_yHWV0RIjo4Y2Z4lI5QYpaz_uwNK38ikG~AnKGnxGBk2m1zd1NuYJADtpPFJUoxTwCJ4hHHAenUtJq18UIbsESZfjLAA
     - title: Network Economics
       start-date: 2025-10-14
