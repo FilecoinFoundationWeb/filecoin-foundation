@@ -48,9 +48,12 @@ const HistorySchema = z.object({
 // Once these values are cleaned, we can simplify "audit" to be `z.array(ApplicationAuditSchema)`
 const ApplicationSchema = z.object({
   audit: z.array(
-    z.string().trim().refine(ApplicationAuditSchema.safeParse, {
-      message: 'Invalid application audit type',
-    }),
+    z
+      .string()
+      .trim()
+      .refine((value) => ApplicationAuditSchema.safeParse(value).success, {
+        message: 'Invalid application audit type',
+      }),
   ),
   distribution: z.array(z.string()),
   tranche_schedule: z.string().nullable(),
