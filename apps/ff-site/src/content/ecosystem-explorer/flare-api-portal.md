@@ -9,7 +9,6 @@ category: developer-tools
 description: The API Portal from Flare Labs serving the Flare Networks community
   with Web3 APIs from all of Flare's chains, explorers, connected chains, and
   more.
-website: https://api-portal.flare.network
 tech:
   - filecoin
 twitter: https://twitter.com/APIPortal
@@ -28,7 +27,6 @@ The API Portal from Flare Labs serving the Flare Networks community with Web3 AP
 Currently available:
 
 - [Free public APIs](https://docs.flare.network/dev/reference/network-config/#connected-networks)
-- [API Portal](https://api-portal.flare.network/apis)
 - [Google Cloud Marketplace](https://console.cloud.google.com/marketplace/product/flare-public/api-portal-flare-network)
 - [DockerHub with readily available container images](https://hub.docker.com/u/flarefoundation)
 

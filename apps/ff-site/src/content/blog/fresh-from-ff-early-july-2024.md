@@ -37,7 +37,7 @@ seo:
 
 ### Governance
 
-- Engage in and contribute to the [development of FIPs](https://github.com/filecoin-project/FIPs/discussions) by participating in FF's monthly [community governance calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto) and by exploring [Metropolis](https://metropolis.vote/dashboard), a nonbinding sentiment check tool for the Filecoin community.
+- Engage in and contribute to the [development of FIPs](https://github.com/filecoin-project/FIPs/discussions) by participating in FF's monthly [community governance calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto) and by exploring [Metropolis (now Fil Poll)](https://poll.fil.org), a nonbinding sentiment check tool for the Filecoin community.
 
 ### Fil Plus
 
@@ -47,7 +47,6 @@ seo:
 
 - Join developers, builders, and engaged community members who want to contribute to the evolution of the core protocol and Filecoin network at [FIL Dev Summit](https://www.fildev.io/FDS-4).
 - Build with us at FIL Brussels across three days of programming in decentralized AI, DePIN, and compute.
-
   - July 8: FIL Fest, in partnership with CoinDesk Studios. Hear it here first! Catch the latest breakthroughs from reps from leading ecosystem projects in the Filecoin ecosystem as they build an in-demand open data economy.
   - July 9: Cloud & Compute Day. Explore Web3’s hottest sector, DePIN, and learn about the possibilities unlocked by decentralized storage and compute-over-data advancements as DePIN creates scalable alternatives to centralized systems. Register for the [Infra 3.0 DePIN Deep Dive](https://lu.ma/cgi2nejb) to explore the latest topics and research in the realm of DePIN, decentralized cloud services, multi-party computation, decentralized RPC, and more.
   - July 10: AI and Data Economy Day. Join us as we explore why data is destined to become one of the world’s largest asset classes and how decentralized data networks like Filecoin underpin the value of data — from AI agents to data marketplaces to use case-specific LLMs.
