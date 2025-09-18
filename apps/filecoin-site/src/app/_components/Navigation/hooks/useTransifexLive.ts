@@ -1,108 +1,105 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef, useCallback } from 'react'
+
+type Locale = 'en' | 'zh_CN'
 
 type Language = {
-  key: string
-  label: string
-  ariaLabel: string
-}
-
-type LanguageConfig = {
+  key: Locale
   label: string
   name: string
 }
 
-type SupportedLanguageCode = keyof typeof LANGUAGE_CONFIG
+type TransifexLive = NonNullable<Window['Transifex']>['live']
 
-type UseTransifexLiveReturn = {
+const LANGUAGE_CONFIG = [
+  { key: 'en', label: 'EN', name: 'English' },
+  { key: 'zh_CN', label: '中文', name: 'Chinese' },
+] as const satisfies Array<Language>
+
+type LanguageState = {
   languages: Array<Language>
-  locale: string
+  locale: Locale
   isTransifexReady: boolean
-  handleLanguageChange: (newLocale: string) => void
 }
 
-const LANGUAGE_CONFIG = {
-  en: { label: 'EN', name: 'English' },
-  zh_CN: { label: '中文', name: 'Chinese' },
-} as const satisfies Record<string, LanguageConfig>
+const TRANSIFEX_LOCAL_STORAGE_KEY = 'txlive:selectedlang'
 
-const DEFAULT_LANGUAGE: SupportedLanguageCode = 'en'
-
-export function useTransifexLive(): UseTransifexLiveReturn {
-  const [languages, setLanguages] = useState<Array<Language>>(
-    getDefaultLanguages(),
-  )
-  const [locale, setLocale] = useState<string>(DEFAULT_LANGUAGE)
-  const [isTransifexReady, setIsTransifexReady] = useState(false)
+export function useTransifexLive() {
+  const [languageState, setLanguageState] = useState(getInitialState)
+  const transifex = useWindowTransifex()
 
   useEffect(() => {
-    let timeoutId: number | null = null
+    transifex?.onReady(() => {
+      setLanguageState((prev) => ({ ...prev, isTransifexReady: true }))
+    })
 
-    function waitForTransifex() {
-      if (window.Transifex?.live) {
-        setupTransifex()
-      } else {
-        timeoutId = window.setTimeout(waitForTransifex, 100)
-      }
-    }
+    transifex?.onTranslatePage((languageCode) => {
+      const config = LANGUAGE_CONFIG.find((lang) => lang.key === languageCode)
 
-    waitForTransifex()
+      setLanguageState((prev) => ({
+        ...prev,
+        locale: config?.key || prev.locale,
+      }))
+    })
+  }, [transifex])
 
-    return () => {
-      if (timeoutId) {
-        clearTimeout(timeoutId)
-      }
+  useEffect(() => {
+    transifex?.translateTo(transifex?.getSelectedLanguageCode(), true)
+  }, [transifex])
+
+  return {
+    ...languageState,
+    handleLanguageChange: (newLocale: Locale) => {
+      transifex?.translateTo(newLocale, true)
+    },
+  }
+}
+
+function useWindowTransifex() {
+  const [transifex, setTransifex] = useState<TransifexLive | undefined>()
+  const timeoutRef = useRef<number | null>(null)
+
+  const waitForTransifex = useCallback(() => {
+    if (window.Transifex?.live) {
+      setTransifex(window.Transifex.live)
+    } else {
+      timeoutRef.current = window.setTimeout(waitForTransifex, 250)
     }
   }, [])
 
-  function setupTransifex() {
-    if (!window.Transifex?.live) return
-    const transifex = window.Transifex.live
+  useEffect(() => {
+    waitForTransifex()
 
-    transifex.onFetchLanguages((availableLanguages) => {
-      const formattedLanguages = availableLanguages.map((lang) => ({
-        key: lang.code,
-        label: getLanguageConfig(lang.code)?.label || lang.name,
-        ariaLabel: `Switch to ${
-          getLanguageConfig(lang.code)?.name || lang.name
-        }`,
-      }))
-      setLanguages(formattedLanguages)
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+        timeoutRef.current = null
+      }
+    }
+  }, [waitForTransifex])
 
-      const sourceLang = transifex.getSourceLanguage()
-      setLocale(sourceLang?.code || DEFAULT_LANGUAGE)
-    })
-
-    transifex.onReady(() => setIsTransifexReady(true))
-    transifex.onTranslatePage((languageCode) => setLocale(languageCode))
-  }
-
-  function handleLanguageChange(newLocale: string) {
-    if (!isTransifexReady || !window.Transifex?.live) return
-
-    setLocale(newLocale)
-    window.Transifex.live.translateTo(newLocale, true)
-  }
-
-  return {
-    languages,
-    locale,
-    isTransifexReady,
-    handleLanguageChange,
-  }
+  return transifex
 }
 
-function getDefaultLanguages() {
-  return Object.entries(LANGUAGE_CONFIG).map(
-    ([languageCode, languageConfig]) => ({
-      key: languageCode,
-      label: languageConfig.label,
-      ariaLabel: `Switch to ${languageConfig.name}`,
-    }),
-  )
-}
+function getInitialState() {
+  const languageState: LanguageState = {
+    languages: LANGUAGE_CONFIG,
+    locale: LANGUAGE_CONFIG[0].key,
+    isTransifexReady: false,
+  }
 
-function getLanguageConfig(code: string) {
-  return code in LANGUAGE_CONFIG
-    ? LANGUAGE_CONFIG[code as SupportedLanguageCode]
-    : null
+  if (typeof window === 'undefined') {
+    return languageState
+  }
+
+  try {
+    const storedLocale = localStorage.getItem(TRANSIFEX_LOCAL_STORAGE_KEY)
+    const config = LANGUAGE_CONFIG.find((lang) => lang.key === storedLocale)
+
+    return {
+      ...languageState,
+      locale: config?.key || LANGUAGE_CONFIG[0].key,
+    }
+  } catch {
+    return languageState
+  }
 }
