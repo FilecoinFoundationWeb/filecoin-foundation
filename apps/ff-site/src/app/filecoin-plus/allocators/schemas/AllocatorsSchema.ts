@@ -33,7 +33,7 @@ const AuditSchema = z.object({
   ended: OptionalIsoDateSchema,
   dc_allocated: OptionalIsoDateSchema,
   outcome: AuditOutcomeSchema.or(z.literal('')),
-  datacap_amount: z.coerce.number(),
+  datacap_amount: z.coerce.number().nonnegative(),
 })
 
 const HistorySchema = z.object({
