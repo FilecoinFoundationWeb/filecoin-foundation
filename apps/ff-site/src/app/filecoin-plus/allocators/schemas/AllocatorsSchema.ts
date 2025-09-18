@@ -28,7 +28,10 @@ const GitHubHandleSchema = z
     message: 'Invalid GitHub username format',
   })
 
-const OptionalIsoDateSchema = z.iso.datetime().or(z.literal(''))
+const NullableDateTimeSchema = z
+  .string()
+  .transform((val) => (val.trim() ? val : null))
+  .pipe(z.iso.datetime().nullable())
 
 const FilecoinAddressSchema = z.string().regex(/^f[a-zA-Z0-9]+$/, {
   message: 'Invalid Filecoin address',
@@ -36,8 +39,8 @@ const FilecoinAddressSchema = z.string().regex(/^f[a-zA-Z0-9]+$/, {
 
 const AuditSchema = z.object({
   started: z.iso.datetime(),
-  ended: OptionalIsoDateSchema,
-  dc_allocated: OptionalIsoDateSchema,
+  ended: NullableDateTimeSchema,
+  dc_allocated: NullableDateTimeSchema,
   outcome: AuditOutcomeSchema.or(z.literal('')),
   datacap_amount: z.coerce.number().nonnegative(),
 })
@@ -46,12 +49,13 @@ const HistorySchema = z.object({
   'Application Submitted': z.iso.datetime(),
   'KYC Submitted': z.iso.datetime(),
   Approved: z.iso.datetime(),
-  Declined: OptionalIsoDateSchema,
-  'DC Allocated': OptionalIsoDateSchema,
+  Declined: NullableDateTimeSchema,
+  'DC Allocated': NullableDateTimeSchema,
 })
 
 // Some "audit" values contain leading/trailing spaces in the Allocator repo: https://github.com/filecoin-project/Allocator-Registry/tree/main/Allocators
 // Once these values are cleaned, we can simplify "audit" to be `z.array(ApplicationAuditSchema)`
+// When this is merged, we can simplify: https://github.com/filecoin-project/Allocator-Registry/pull/1142
 const ApplicationSchema = z.object({
   audit: z.preprocess((val) => {
     if (!Array.isArray(val)) return val
