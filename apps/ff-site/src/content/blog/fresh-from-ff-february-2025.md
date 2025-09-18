@@ -21,7 +21,6 @@ seo:
 ## Ecosystem
 
 - On January 27, FF hosted the first of twelve APAC [AMAs](https://x.com/MetaEraHK/status/1883862065183703313). The session focused on APAC Builder Opportunities in collaboration with MetaEra, drawing 24,000+ listeners to the X Space. 
-
   - The session shared important updates on gas changes and the context for ongoing developments. 
   - It also featured presentations from organizations including [Secured Finance](/ecosystem-explorer/secured-finance), FiL-B, [Titan Network](/ecosystem-explorer/titan-network), Zetablock, and Storswift, which shared perspectives on opportunities in the data marketplace, AI agents, stablecoins, and cross-chain collaboration.
   - Read the recap for the [first-ever APAC SP AMA on fil.org](/blog/apac-ama-recap-november-2024). The inaugural APAC Ask Me Anything (AMA), held on November 21, brought together more than 70 participants, including many Storage Providers (SPs), for a deep dive into the Filecoin ecosystem. The session addressed a series of critical questions spanning governance, market integration, and project development.
@@ -30,7 +29,7 @@ seo:
 
 ### Governance
 
-- The Governance team shipped [V2 of FilPoll](https://poll.fil.org/dashboard), a hybrid tool comprising a temperature check tool, FIPs tracking, and community polling. The tool will support improved community participation in governance. 
+- The Governance team shipped [V2 of FilPoll](https://poll.fil.org), a hybrid tool comprising a temperature check tool, FIPs tracking, and community polling. The tool will support improved community participation in governance. 
 
 ### Fil Plus
 
