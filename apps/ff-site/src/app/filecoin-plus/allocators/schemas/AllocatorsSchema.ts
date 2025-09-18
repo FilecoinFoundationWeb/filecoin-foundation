@@ -33,9 +33,11 @@ const NullableDateTimeSchema = z
   .transform((val) => (val.trim() ? val : null))
   .pipe(z.iso.datetime().nullable())
 
-const FilecoinAddressSchema = z.string().regex(/^f[a-zA-Z0-9]+$/, {
-  message: 'Invalid Filecoin address',
-})
+const FilecoinAddressSchema = z
+  .string()
+  .regex(/^f(0\d+|[123][a-z2-7]+|4\d+f[a-z0-9]+)$/, {
+    message: 'Invalid Filecoin address',
+  })
 
 const AuditSchema = z.object({
   started: z.iso.datetime(),
