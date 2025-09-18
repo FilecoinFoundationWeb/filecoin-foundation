@@ -22,6 +22,8 @@ const ApplicationAuditSchema = z.enum([
 
 export const MetapathwayTypeSchema = z.enum(['MDMA', 'RKH', 'AMA', 'ORMA'])
 
+const ToolingSchema = z.enum(['smart_contract_allocator'])
+
 const GitHubHandleSchema = z
   .string()
   .regex(/^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$/, {
@@ -66,8 +68,8 @@ const ApplicationSchema = z.object({
   distribution: z.array(z.string()),
   tranche_schedule: z.string().nullable(),
   required_sps: z.string().nullable(),
-  required_replicas: z.coerce.number().nullable(),
-  tooling: z.array(z.string()).optional(),
+  required_replicas: z.coerce.number().nonnegative().nullable(),
+  tooling: z.array(ToolingSchema).optional(),
   github_handles: z.array(GitHubHandleSchema),
   allocation_bookkeeping: z.url(),
   client_contract_address: FilecoinAddressSchema.or(z.literal('')),
