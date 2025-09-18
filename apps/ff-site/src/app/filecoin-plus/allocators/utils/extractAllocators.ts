@@ -1,7 +1,5 @@
-import {
-  type AllocatorFileMetaData,
-  AllocatorSchema,
-} from '../schemas/AllocatorSchema'
+import { type AllocatorFileMetaData } from '../schemas/AllocatorFileSchema'
+import { AllocatorSchema } from '../schemas/AllocatorsSchema'
 
 export function extractAllocators(
   allocatorFileMetaData: Array<AllocatorFileMetaData | null>,
