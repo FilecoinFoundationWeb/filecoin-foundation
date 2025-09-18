@@ -22,6 +22,12 @@ const ApplicationAuditSchema = z.enum([
 
 export const MetapathwayTypeSchema = z.enum(['MDMA', 'RKH', 'AMA', 'ORMA'])
 
+const GitHubHandleSchema = z
+  .string()
+  .regex(/^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$/, {
+    message: 'Invalid GitHub username format',
+  })
+
 const OptionalIsoDateSchema = z.iso.datetime().or(z.literal(''))
 
 const FilecoinAddressSchema = z.string().regex(/^f[a-zA-Z0-9]+$/, {
@@ -56,7 +62,7 @@ const ApplicationSchema = z.object({
   required_sps: z.string().nullable(),
   required_replicas: z.coerce.number().nullable(),
   tooling: z.array(z.string()).optional(),
-  github_handles: z.array(z.string()),
+  github_handles: z.array(GitHubHandleSchema),
   allocation_bookkeeping: z.url(),
   client_contract_address: FilecoinAddressSchema.or(z.literal('')),
 })
