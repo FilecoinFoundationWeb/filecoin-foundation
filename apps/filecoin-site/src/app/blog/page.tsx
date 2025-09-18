@@ -18,17 +18,17 @@ import { PageSection } from '@/components/PageSection'
 import { BlogPostList } from './components/BlogPostList'
 import { BLOG_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getBlogPostsData } from './utils/getBlogPostData'
+import { getBlogPostsDataWithTina } from './utils/getBlogPostDataWithTina'
 
 export default async function Blog() {
-  const posts = await getBlogPostsData()
+  const posts = await getBlogPostsDataWithTina()
   const sortedPosts = sortPostsByDateDesc(posts)
-  const featuredPost = sortedPosts[0]
+  const featuredPost = posts[0]
 
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(BLOG_SEO, sortedPosts)}
+        structuredData={generateStructuredData(BLOG_SEO, posts)}
       />
       <Navigation backgroundVariant="light" />
       <BackgroundImage
