@@ -45,12 +45,12 @@ export const graphicsData = {
     data: digitalMediaConversionSetup,
     alt: 'Collection of digital and analog media formats including VHS tapes, cassettes, CDs, USB drive, film reels, and photographs.',
   },
-  earthBlueEdge: {
-    data: earthBlueEdge,
-    alt: "View of Earth's curved horizon from space, with a soft blue atmospheric glow.",
-  },
   earthAtNight: {
     data: earthAtNight,
+    alt: 'Earth at night from space, showing city lights and the curve of the planet.',
+  },
+  earthBlueEdge: {
+    data: earthBlueEdge,
     alt: 'Earth’s thin blue atmosphere viewed from space against the blackness of space.',
   },
   fallback: {
