@@ -195,7 +195,7 @@ In 2024, FF announced 8 collaborations with prominent AI organizations, undersco
 
 [Decentralized AI Society (DAIS)](https://dais.global/): With FF as a founding member, DAIS [launched](https://www.coindesk.com/policy/2024/09/18/decentralized-ai-society-launched-to-fight-tech-giants-who-own-the-regulators) to promote the development of an open, decentralized, and secure internet in the age of artificial intelligence.
 
-[KiteAI](https://kiteai.tech/): As a foundational AI layer unlocking access to AI assets, [KiteAI is working with FF](https://medium.com/@KiteAI/kite-ai-and-filecoin-foundation-collaborate-to-redefine-ai-data-management-b4fdfc62b82a) to enhance data management for AI training. KiteAI will archive AI training datasets on Filecoin and integrate IPFS as part of its provenance layer.
+KiteAI: As a foundational AI layer unlocking access to AI assets, [KiteAI is working with FF](https://medium.com/@KiteAI/kite-ai-and-filecoin-foundation-collaborate-to-redefine-ai-data-management-b4fdfc62b82a) to enhance data management for AI training. KiteAI will archive AI training datasets on Filecoin and integrate IPFS as part of its provenance layer.
 
 [Nuklai](/ecosystem-explorer/nuklai): Nuklai is a collaborative data marketplace and infrastructure provider for data ecosystems which integrated Filecoin to make its metadata publicly accessible.
 
