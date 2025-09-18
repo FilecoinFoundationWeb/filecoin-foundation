@@ -47,14 +47,10 @@ const HistorySchema = z.object({
 // Some "audit" values contain leading/trailing spaces in the Allocator repo: https://github.com/filecoin-project/Allocator-Registry/tree/main/Allocators
 // Once these values are cleaned, we can simplify "audit" to be `z.array(ApplicationAuditSchema)`
 const ApplicationSchema = z.object({
-  audit: z.array(
-    z
-      .string()
-      .trim()
-      .refine((value) => ApplicationAuditSchema.safeParse(value).success, {
-        message: 'Invalid application audit type',
-      }),
-  ),
+  audit: z.preprocess((val) => {
+    if (!Array.isArray(val)) return val
+    return val.map((v) => (typeof v === 'string' ? v.trim() : v))
+  }, z.array(ApplicationAuditSchema)),
   distribution: z.array(z.string()),
   tranche_schedule: z.string().nullable(),
   required_sps: z.string().nullable(),
