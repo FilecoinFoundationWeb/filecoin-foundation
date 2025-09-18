@@ -34,7 +34,9 @@ export function SelectFilter({
     name: defaultOptionLabel,
   } as const
 
-  const allOptions = [defaultOption, ...options]
+  const sortedOptions = options.toSorted((a, b) => a.name.localeCompare(b.name))
+
+  const allOptions = [defaultOption, ...sortedOptions]
 
   const selectedOption =
     allOptions.find((option) => option.id === currentFilterId) || defaultOption
