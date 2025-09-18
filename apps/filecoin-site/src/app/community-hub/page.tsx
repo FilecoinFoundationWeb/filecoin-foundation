@@ -125,7 +125,7 @@ export default function CommunityHub() {
           }
         />
         <div className="mt-40">
-          <SectionImage {...graphicsData.spiralGalaxyStarsSpace} />
+          <SectionImage {...graphicsData.earthAtNight} />
         </div>
       </PageSection>
     </>
