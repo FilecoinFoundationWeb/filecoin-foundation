@@ -6,7 +6,8 @@ import classicLibraryInterior from '@/assets/graphics/classic-library-interior.w
 import communityHubGradient from '@/assets/graphics/community-gradient.svg'
 import dataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import digitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
-import earthAtNight from '@/assets/graphics/earth-at-night.png'
+import earthAtNight from '@/assets/graphics/earth-at-night.webp'
+import earthBlueEdge from '@/assets/graphics/earth-blue-edge.webp'
 import filecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import filecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import filecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
@@ -46,7 +47,11 @@ export const graphicsData = {
   },
   earthAtNight: {
     data: earthAtNight,
-    alt: "View of Earth's curved horizon from space, with a soft blue atmospheric glow.",
+    alt: 'Earth at night from space, showing city lights and the curve of the planet.',
+  },
+  earthBlueEdge: {
+    data: earthBlueEdge,
+    alt: 'Earth’s thin blue atmosphere viewed from space against the blackness of space.',
   },
   fallback: {
     data: imageFallback,
