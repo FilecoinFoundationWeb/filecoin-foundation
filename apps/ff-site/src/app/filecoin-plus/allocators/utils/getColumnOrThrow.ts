@@ -1,6 +1,6 @@
 import type { Table } from '@tanstack/react-table'
 
-import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorWithDatacapSchema'
 
 export function getColumnOrThrow(
   table: Table<AllocatorWithDatacap>,

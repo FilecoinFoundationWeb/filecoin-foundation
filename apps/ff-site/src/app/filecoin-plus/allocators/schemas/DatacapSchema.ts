@@ -15,7 +15,7 @@ const APIDatacapAllowanceHistorySchema = z.object({
   createMessageTimestamp: z.number(),
 })
 
-const APIDatacapSchema = z.object({
+export const APIDatacapSchema = z.object({
   id: z.number(),
   addressId: z.string(),
   address: z.string(),
@@ -36,12 +36,6 @@ const APIDatacapSchema = z.object({
   allowanceArray: z.array(APIDatacapAllowanceHistorySchema),
   auditStatus: z.string().nullable(),
   remainingDatacap: z.string(),
-})
-
-export const InternalDatacapSchema = APIDatacapSchema.pick({
-  address: true,
-  remainingDatacap: true,
-  allowance: true,
 })
 
 export const GetDatacapStatsResponseSchema = z.object({
