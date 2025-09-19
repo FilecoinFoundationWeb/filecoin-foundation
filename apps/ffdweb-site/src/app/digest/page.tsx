@@ -19,6 +19,7 @@ import { getAllIssues } from './utils/getIssueData'
 
 export default async function Digest() {
   const issues = await getAllIssues()
+
   return (
     <PageLayout gap="large">
       <StructuredDataScript
@@ -30,16 +31,16 @@ export default async function Digest() {
         image={graphicsData.digest}
       />
 
-      {issues.map((issue) => (
+      {issues.map(({ number, kicker, title, description }) => (
         <PageSectionWithImage
-          key={issue.number}
-          kicker={issue.kicker}
-          title={issue.title}
+          key={number}
+          kicker={kicker}
+          title={title}
           image={graphicsData.dWebDigestCover}
-          description={issue.description}
+          description={description}
           cta={{
-            href: `${PATHS.DIGEST.path}/${DIGEST_PATHS.issue(issue.number)}`,
-            children: `Read Issue ${issue.number}`,
+            href: `${PATHS.DIGEST.path}/${DIGEST_PATHS.issue(number)}`,
+            children: `Read Issue ${number}`,
           }}
         />
       ))}
