@@ -16,9 +16,10 @@ import { Card } from '@/components/Card'
 import { PageSection } from '@/components/PageSection'
 
 import { DIGEST_SEO } from '../constants/seo'
-import { digestIssues } from '../data/issues'
 import { generateStructuredData } from '../utils/generateStructuredData'
 import { getDigestArticlesData } from '../utils/getDigestArticleData'
+
+import { getDigestIssueFromSlug } from './utils/getDigestIssueFromSlug'
 
 type DigestIssueParams = SlugParams & {
   issue: string
@@ -30,8 +31,7 @@ type DigestIssueProps = {
 
 export default async function DigestIssue(props: DigestIssueProps) {
   const { issue: issueSlug } = await props.params
-  const issueNumber = issueSlug.replace('issue-', '')
-  const digestIssue = digestIssues.find((issue) => issue.number === issueNumber)
+  const digestIssue = getDigestIssueFromSlug(issueSlug)
 
   if (!digestIssue) {
     notFound()
@@ -39,7 +39,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
 
   const allArticles = await getDigestArticlesData()
   const articles = allArticles.filter(
-    (article) => article.issueNumber === issueNumber,
+    (article) => article.issueNumber === digestIssue.number,
   )
 
   return (

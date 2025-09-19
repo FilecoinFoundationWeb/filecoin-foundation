@@ -16,11 +16,11 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
-import { digestIssues } from '../../data/issues'
 import {
   getDigestArticleData,
   getDigestArticlesData,
 } from '../../utils/getDigestArticleData'
+import { getDigestIssueFromSlug } from '../utils/getDigestIssueFromSlug'
 
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -34,11 +34,8 @@ type DigestArticleProps = {
 }
 
 export default async function DigestArticle(props: DigestArticleProps) {
-  const { issue: issueSlug, slug } = await props.params
-  const digestIssueNumber = issueSlug.replace('issue-', '')
-  const digestIssue = digestIssues.find(
-    (issue) => digestIssueNumber === issue.number,
-  )
+  const { issue: digestIssueSlug, slug } = await props.params
+  const digestIssue = getDigestIssueFromSlug(digestIssueSlug)
 
   if (!digestIssue) {
     notFound()
@@ -47,7 +44,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
   const data = await getDigestArticleData(slug)
   const { title, issueNumber, articleNumber, image, authors, content } = data
 
-  if (issueNumber !== digestIssueNumber) {
+  if (issueNumber !== digestIssue.number) {
     notFound()
   }
 
