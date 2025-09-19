@@ -8,7 +8,7 @@ import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
-import { DIGEST_PATHS, PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -31,9 +31,9 @@ type DigestIssueProps = {
 export default async function DigestIssue(props: DigestIssueProps) {
   const { issue: issueSlug } = await props.params
   const issueNumber = issueSlug.replace('issue-', '')
-  const issueData = digestIssues.find((issue) => issue.number === issueNumber)
+  const digestIssue = digestIssues.find((issue) => issue.number === issueNumber)
 
-  if (!issueData) {
+  if (!digestIssue) {
     notFound()
   }
 
@@ -49,8 +49,8 @@ export default async function DigestIssue(props: DigestIssueProps) {
       />
 
       <PageSection
-        kicker={`Issue ${issueNumber} | ${formatDate(issueData.date, 'MMM yyyy')}`}
-        title={`DWeb Digest: ${issueData.title}`}
+        kicker={`Issue ${digestIssue.number} | ${formatDate(digestIssue.date, 'MMM yyyy')}`}
+        title={`DWeb Digest: ${digestIssue.title}`}
       >
         <CardGrid as="section" cols="smTwo">
           {articles.map((article) => {
@@ -72,7 +72,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
                 description={{ text: description, isClamped: true }}
                 tags={[{ text: `Article ${articleNumber}` }]}
                 cta={{
-                  href: `${PATHS.DIGEST.path}/${DIGEST_PATHS.article(issueNumber, slug)}`,
+                  href: PATHS.DIGEST.article(issueNumber, slug),
                   text: 'Read Article',
                   icon: CARET_RIGHT,
                 }}

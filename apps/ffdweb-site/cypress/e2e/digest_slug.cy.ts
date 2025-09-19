@@ -3,7 +3,7 @@ import path from 'path'
 import { tests } from '@filecoin-foundation/cypress/support'
 import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
-import { DIGEST_PATHS, PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
@@ -23,7 +23,7 @@ describe('Digest Slug Page', () => {
           const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
           tests.metadata.fn({
-            path: `${PATHS.DIGEST.path}${DIGEST_PATHS.article(issueNumber, slug)}`,
+            path: PATHS.DIGEST.article(issueNumber, slug),
             title: metaTitleWithSuffix,
             description: seo.description,
             baseUrl: BASE_URL,
@@ -36,9 +36,7 @@ describe('Digest Slug Page', () => {
   it(tests.links.prompt, () => {
     cy.task<DigestArticleResult>('getRandomDigestArticle', CONTENT_FOLDER).then(
       ({ slug, issueNumber }) => {
-        tests.links.fn(
-          `${PATHS.DIGEST.path}${DIGEST_PATHS.article(issueNumber, slug)}`,
-        )
+        tests.links.fn(PATHS.DIGEST.article(issueNumber, slug))
       },
     )
   })
@@ -46,9 +44,7 @@ describe('Digest Slug Page', () => {
   it(tests.visualSnapshot.prompt, () => {
     cy.task<DigestArticleResult>('getRandomDigestArticle', CONTENT_FOLDER).then(
       ({ slug, issueNumber }) => {
-        tests.visualSnapshot.fn(
-          `${PATHS.DIGEST.path}${DIGEST_PATHS.article(issueNumber, slug)}`,
-        )
+        tests.visualSnapshot.fn(PATHS.DIGEST.article(issueNumber, slug))
       },
     )
   })

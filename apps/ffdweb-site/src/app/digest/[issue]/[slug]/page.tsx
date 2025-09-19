@@ -5,7 +5,7 @@ import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
-import { DIGEST_PATHS, PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -62,7 +62,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
         <ShareArticle
           sectionTitle="Share Article"
           articleTitle={title}
-          path={`${PATHS.DIGEST.path}/${DIGEST_PATHS.article(issueNumber, slug)}`}
+          path={PATHS.DIGEST.article(issueNumber, slug)}
           baseUrl={BASE_URL}
         />
       </ArticleLayout>
@@ -80,7 +80,7 @@ export async function generateMetadata(props: DigestArticleProps) {
   const { image, seo, issueNumber } = await getDigestArticleData(slug)
 
   return createMetadata({
-    path: `${PATHS.DIGEST.path}/${DIGEST_PATHS.article(issueNumber, slug)}`,
+    path: PATHS.DIGEST.article(issueNumber, slug),
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,

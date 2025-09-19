@@ -3,7 +3,7 @@ import { Social } from '@filecoin-foundation/ui/Social'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
-import { DIGEST_PATHS, PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -40,7 +40,7 @@ export default async function Digest() {
           description={description}
           layout={Number(number) % 2 === 1 ? 'regular' : 'reversed'}
           cta={{
-            href: `${PATHS.DIGEST.path}/${DIGEST_PATHS.issue(number)}`,
+            href: PATHS.DIGEST.issue(number),
             children: `Read Issue ${number}`,
           }}
         />
