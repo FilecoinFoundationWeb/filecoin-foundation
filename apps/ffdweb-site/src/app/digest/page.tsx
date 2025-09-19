@@ -1,6 +1,7 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { Social } from '@filecoin-foundation/ui/Social'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 import { DIGEST_PATHS, PATHS } from '@/constants/paths'
 
@@ -14,28 +15,27 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
 import { DIGEST_SEO } from './constants/seo'
+import { digestIssues } from './data/issues'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getAllIssues } from './utils/getIssueData'
 
 export default async function Digest() {
-  const issues = await getAllIssues()
-
   return (
     <PageLayout gap="large">
       <StructuredDataScript
         structuredData={generateStructuredData(DIGEST_SEO)}
       />
+
       <PageHeader
         kicker="DWeb Digest"
         title="A Publication Exploring DWeb Ideas and Principles"
         image={graphicsData.digest}
       />
 
-      {issues.map(({ number, kicker, title, description }) => (
+      {digestIssues.map(({ number, date, title, description }) => (
         <PageSectionWithImage
           key={number}
-          kicker={kicker}
-          title={title}
+          kicker={`Issue ${number} | ${formatDate(date, 'MMM yyyy')}`}
+          title={`DWeb Digest: ${title}`}
           image={graphicsData.dWebDigestCover}
           description={description}
           cta={{
@@ -44,6 +44,7 @@ export default async function Digest() {
           }}
         />
       ))}
+
       <CTASection
         kicker="Social Media"
         title="Follow us and join the conversation."
