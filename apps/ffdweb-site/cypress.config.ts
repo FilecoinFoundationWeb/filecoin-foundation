@@ -5,6 +5,8 @@ import {
   getRandomSlug,
 } from '@filecoin-foundation/cypress/tasks'
 
+import { getRandomDigestArticle } from './cypress/utils/getRandomDigestArticle'
+
 export default defineConfig({
   e2e: {
     baseUrl: 'http://localhost:3000',
@@ -13,6 +15,7 @@ export default defineConfig({
     setupNodeEvents(on) {
       on('task', {
         getRandomSlug,
+        getRandomDigestArticle,
         getEntryFrontmatter,
       })
     },

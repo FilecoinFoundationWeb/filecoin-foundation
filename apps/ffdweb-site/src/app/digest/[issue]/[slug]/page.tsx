@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
@@ -17,20 +19,34 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import {
   getDigestArticleData,
   getDigestArticlesData,
-} from '../utils/getDigestArticleData'
+} from '../../utils/getDigestArticleData'
+import { getDigestIssueFromSlug } from '../utils/getDigestIssueFromSlug'
 
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
 
+type DigestArticleParams = SlugParams & {
+  issue: string
+}
+
 type DigestArticleProps = {
-  params: Promise<SlugParams>
+  params: Promise<DigestArticleParams>
 }
 
 export default async function DigestArticle(props: DigestArticleProps) {
-  const { slug } = await props.params
-  const data = await getDigestArticleData(slug)
+  const { issue: digestIssueSlug, slug } = await props.params
+  const digestIssue = getDigestIssueFromSlug(digestIssueSlug)
 
+  if (!digestIssue) {
+    notFound()
+  }
+
+  const data = await getDigestArticleData(slug)
   const { title, issueNumber, articleNumber, image, authors, content } = data
+
+  if (issueNumber !== digestIssue.number) {
+    notFound()
+  }
 
   const atLeastOneAuthorHasBio = authors.some((author) => author.bio)
 
@@ -62,7 +78,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
         <ShareArticle
           sectionTitle="Share Article"
           articleTitle={title}
-          path={`${PATHS.DIGEST.path}/${slug}`}
+          path={PATHS.DIGEST.article(issueNumber, slug)}
           baseUrl={BASE_URL}
         />
       </ArticleLayout>
@@ -77,10 +93,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: DigestArticleProps) {
   const { slug } = await props.params
-  const { image, seo } = await getDigestArticleData(slug)
+  const { image, seo, issueNumber } = await getDigestArticleData(slug)
 
   return createMetadata({
-    path: `${PATHS.DIGEST.path}/${slug}`,
+    path: PATHS.DIGEST.article(issueNumber, slug),
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,

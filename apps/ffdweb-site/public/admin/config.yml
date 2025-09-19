@@ -158,7 +158,7 @@ collections:
       - name: "issue-number"
         label: "Issue Number"
         widget: "select"
-        options: ["1"]
+        options: ["1", "2"]
         default: "1"
       - name: "article-number"
         label: "Article Number"
