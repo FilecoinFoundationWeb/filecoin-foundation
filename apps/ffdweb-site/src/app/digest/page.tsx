@@ -38,6 +38,7 @@ export default async function Digest() {
           title={`DWeb Digest: ${title}`}
           image={graphicsData.dWebDigestCover}
           description={description}
+          layout={Number(number) % 2 === 1 ? 'regular' : 'reversed'}
           cta={{
             href: `${PATHS.DIGEST.path}/${DIGEST_PATHS.issue(number)}`,
             children: `Read Issue ${number}`,
