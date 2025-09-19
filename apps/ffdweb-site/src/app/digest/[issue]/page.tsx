@@ -1,7 +1,10 @@
+import { notFound } from 'next/navigation'
+
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
@@ -13,33 +16,31 @@ import { Card } from '@/components/Card'
 import { PageSection } from '@/components/PageSection'
 
 import { DIGEST_SEO } from '../constants/seo'
+import { digestIssues } from '../data/issues'
 import { generateStructuredData } from '../utils/generateStructuredData'
 import { getDigestArticlesData } from '../utils/getDigestArticleData'
-import { getIssueData } from '../utils/getIssueData'
+
+type DigestIssueParams = SlugParams & {
+  issue: string
+}
 
 type DigestIssueProps = {
-  params: Promise<SlugParams>
+  params: Promise<DigestIssueParams>
 }
 
 export default async function DigestIssue(props: DigestIssueProps) {
   const { issue: issueSlug } = await props.params
+  const issueNumber = issueSlug.replace('issue-', '')
+  const issueData = digestIssues.find((issue) => issue.number === issueNumber)
 
-  const issueNumber = issueSlug?.replace('issue-', '') || '1'
-
-  const issueData = getIssueData(issueNumber)
+  if (!issueData) {
+    notFound()
+  }
 
   const allArticles = await getDigestArticlesData()
   const articles = allArticles.filter(
     (article) => article.issueNumber === issueNumber,
   )
-
-  if ('error' in issueData) {
-    return (
-      <PageLayout gap="large">
-        <div>{issueData.error}</div>
-      </PageLayout>
-    )
-  }
 
   return (
     <PageLayout gap="large">
@@ -47,7 +48,10 @@ export default async function DigestIssue(props: DigestIssueProps) {
         structuredData={generateStructuredData(DIGEST_SEO)}
       />
 
-      <PageSection kicker={issueData.kicker} title={issueData.title}>
+      <PageSection
+        kicker={`Issue ${issueNumber} | ${formatDate(issueData.date, 'MMM yyyy')}`}
+        title={`DWeb Digest: ${issueData.title}`}
+      >
         <CardGrid as="section" cols="smTwo">
           {articles.map((article) => {
             const {
