@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
@@ -14,6 +16,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
+import { digestIssues } from '../../data/issues'
 import {
   getDigestArticleData,
   getDigestArticlesData,
@@ -22,15 +25,31 @@ import {
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
 
+type DigestArticleParams = SlugParams & {
+  issue: string
+}
+
 type DigestArticleProps = {
-  params: Promise<SlugParams>
+  params: Promise<DigestArticleParams>
 }
 
 export default async function DigestArticle(props: DigestArticleProps) {
-  const { slug } = await props.params
-  const data = await getDigestArticleData(slug)
+  const { issue: issueSlug, slug } = await props.params
+  const digestIssueNumber = issueSlug.replace('issue-', '')
+  const digestIssue = digestIssues.find(
+    (issue) => digestIssueNumber === issue.number,
+  )
 
+  if (!digestIssue) {
+    notFound()
+  }
+
+  const data = await getDigestArticleData(slug)
   const { title, issueNumber, articleNumber, image, authors, content } = data
+
+  if (issueNumber !== digestIssueNumber) {
+    notFound()
+  }
 
   const atLeastOneAuthorHasBio = authors.some((author) => author.bio)
 
