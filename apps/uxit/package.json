@@ -14,7 +14,7 @@
     "@unlighthouse/cli": "^0.17.2",
     "@unlighthouse/core": "^0.17.1",
     "next": "^15.5.3",
-    "puppeteer": "^24.21.0",
+    "puppeteer": "^24.22.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.13"
@@ -22,7 +22,7 @@
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
-    "@types/node": "^24.5.1",
+    "@types/node": "^24.5.2",
     "@types/react": "19.1.13",
     "@types/react-dom": "19.1.9",
     "postcss": "^8.5.6",
