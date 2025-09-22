@@ -20,17 +20,24 @@ export async function getBlogPostsDataWithTina() {
 }
 
 export async function getBlogPostDataWithTina(slug: string) {
-  const result = await tinaClient.queries.post({
-    relativePath: `${slug}.{en,zh-cn}.md`,
-  })
+  const allPosts = await tinaClient.queries.postConnection()
+  const targetPost = allPosts.data.postConnection.edges?.find((edge) => {
+    const filename = edge?.node?._sys.filename || ''
+    const cleanSlug = filename.replace(/\.(en|zh-cn)?\.md$/, '')
+    return cleanSlug === slug
+  })?.node
+
+  if (!targetPost) {
+    throw new Error(`Post with slug "${slug}" not found`)
+  }
 
   return {
-    ...result.data.post,
-    slug: result.data.post._sys.filename.replace(/\.(en|zh-cn)?\.md$/, ''),
-    publishedOn: new Date(result.data.post.date),
-    shareImage: result.data.post.share_image,
+    ...targetPost,
+    slug: targetPost._sys.filename.replace(/\.(en|zh-cn)?\.md$/, ''),
+    publishedOn: new Date(targetPost.date),
+    shareImage: targetPost.share_image,
     seo: {
-      description: result.data.post.excerpt,
+      description: targetPost.excerpt,
     },
   } as BlogPostTinaCMS
 }

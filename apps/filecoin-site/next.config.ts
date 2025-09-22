@@ -4,7 +4,12 @@ import { redirects as rawRedirects } from './redirects'
 
 /** @type {import('next').NextConfig} */
 export default createNextConfig({
-  imageRemotePatterns: [],
+  imageRemotePatterns: [
+    {
+      protocol: 'https',
+      hostname: 'assets.tina.io',
+    },
+  ],
   redirects: async () => rawRedirects,
   sentry: {
     project: 'filecoin-site',
