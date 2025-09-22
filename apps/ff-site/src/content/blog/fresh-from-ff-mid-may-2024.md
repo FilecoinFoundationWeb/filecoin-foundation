@@ -4,25 +4,22 @@ created-on: 2024-05-15T17:23:49.358000Z
 updated-on: 2024-05-15T17:23:49.368000Z
 published-on: 2024-05-15T17:23:49.377000Z
 category: news
-description: "Check out the latest updates about what Filecoin Foundation has
-  been up to."
+description: "Check out the latest updates about what Filecoin Foundation has been up to."
 image:
   src: /assets/images/0215-ff-6-.png
 seo:
-  description:
-    Discover the latest updates and news from Filecoin Foundation in mid-May
-    1.    Key highlights.
+  description: Discover the latest updates and news from Filecoin Foundation in mid-May
 ---
 
 _Check out the latest updates about what Filecoin Foundation has been up to._
 
 ## Mid-May Highlights
 
-🏛️Filecoin Foundation is pleased to announce [the launch of Metropolis (now Fil Poll)](/blog/empowering-governance-the-launch-of-metropolis-to-the-filecoin-community), a temperature check and crowdsource polling tool to enhance the network governance process, built in collaboration with Canvas Technologies. Metropolis was created as a fork of the open-source Pol.is tool, which has been used to support digital democracy efforts in countries around the world.
+🏛️ Filecoin Foundation is pleased to announce [the launch of Metropolis (now Fil Poll)](/blog/empowering-governance-the-launch-of-metropolis-to-the-filecoin-community), a temperature check and crowdsource polling tool to enhance the network governance process, built in collaboration with Canvas Technologies. Metropolis was created as a fork of the open-source Pol.is tool, which has been used to support digital democracy efforts in countries around the world.
 
-🏰Thanks for joining us on the Orbit Europe Tour! Over the past few weeks, more than 600 builders attended Filecoin Orbit events in Barcelona, Madrid, Lisbon, Warsaw, Katowice, and Munich. Thanks to our Ambassador hosts Adrien Berthou, Ainhoa Aldave, Martyna Jeute, Diogo Almeida, and Timo Lee. For more information on upcoming Orbit events and how to get involved, visit the [Filecoin Orbit](https://hub.fil.org/orbit) hub.
+🏰 Thanks for joining us on the Orbit Europe Tour! Over the past few weeks, more than 600 builders attended Filecoin Orbit events in Barcelona, Madrid, Lisbon, Warsaw, Katowice, and Munich. Thanks to our Ambassador hosts Adrien Berthou, Ainhoa Aldave, Martyna Jeute, Diogo Almeida, and Timo Lee. For more information on upcoming Orbit events and how to get involved, visit the [Filecoin Orbit](https://hub.fil.org/orbit) hub.
 
-🌵[See you at Consensus](https://hub.fil.org/consensus-24), May 29-31, in Austin, Texas! Find Filecoin Foundation and Filecoin ecosystem teams at events throughout the week and at Booth 1254 on the Consensus show floor, where you can use our code FilecoinC24 for 25% off your Consensus ticket.
+🌵 [See you at Consensus](https://hub.fil.org/consensus-24), May 29-31, in Austin, Texas! Find Filecoin Foundation and Filecoin ecosystem teams at events throughout the week and at Booth 1254 on the Consensus show floor, where you can use our code FilecoinC24 for 25% off your Consensus ticket.
 
 ### Ecosystem
 
