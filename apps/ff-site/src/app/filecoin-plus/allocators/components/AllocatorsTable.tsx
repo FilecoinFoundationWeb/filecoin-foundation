@@ -6,7 +6,7 @@ import { Table } from '@/components/Table/Table'
 import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
-import { type AllocatorWithDatacap } from '../schemas/AllocatorSchema'
+import { type AllocatorWithDatacap } from '../schemas/AllocatorWithDatacapSchema'
 
 type AllocatorsTableProps = {
   headerGroups: Array<HeaderGroup<AllocatorWithDatacap>>

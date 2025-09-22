@@ -17,7 +17,7 @@ import { FilterContainer } from '@/components/FilterContainer'
 
 import { NAME_COLUMN_SORT_CONFIG } from '../constants/sorting'
 import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
-import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorWithDatacapSchema'
 
 import { AllocatorsTable } from './AllocatorsTable'
 import { AllocatorsTableFilters } from './AllocatorsTableFilters'
