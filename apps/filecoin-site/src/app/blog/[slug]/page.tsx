@@ -7,6 +7,8 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -65,8 +67,8 @@ export async function generateMetadata(props: BlogPostProps) {
   return createMetadata({
     path: `${PATHS.BLOG.path}/${slug}`,
     title: { absolute: `${title} | ${ORGANIZATION_NAME}` },
-    description: seo.description,
-    image: image?.url || undefined,
+    description: seo?.description || '',
+    image: image?.url || graphicsData.fallback.data.src,
     openGraph: { type: 'article' },
   })
 }
