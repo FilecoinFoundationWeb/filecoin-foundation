@@ -15,9 +15,9 @@ image:
   alt: ""
   url: /uploads/blog-filecoin-news.webp
 main_feature_inverted: false
-related_article_1: content/blog/posts/filecoin-news-18.md
-related_article_2: content/blog/posts/filecoin-news-17.md
-related_article_3: content/blog/posts/filecoin-news-16.md
+related_article_1: content/blog/posts/filecoin-news-18.en.md
+related_article_2: content/blog/posts/filecoin-news-17.en.md
+related_article_3: content/blog/posts/filecoin-news-16.en.md
 share_image: /uploads/blog-filecoin-news.webp
 title:
   "Filecoin News 19: Filecoin v13 'Hyperdrive', Baseline Sustainability, Chainsafe,

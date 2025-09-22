@@ -14,9 +14,9 @@ image:
   alt: ""
   url: /uploads/blog-filecoin-news.webp
 main_feature_inverted: false
-related_article_1: content/blog/posts/filecoin-news-42.md
-related_article_2: content/blog/posts/filecoin-news-41.md
-related_article_3: content/blog/posts/filecoin-news-43.md
+related_article_1: content/blog/posts/filecoin-news-42.en.md
+related_article_2: content/blog/posts/filecoin-news-41.en.md
+related_article_3: content/blog/posts/filecoin-news-43.en.md
 share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 45
 ---
