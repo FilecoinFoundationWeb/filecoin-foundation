@@ -11,6 +11,7 @@ declare global {
         getSourceLanguage: () => { code: string; name: string }
         getLanguageName: (code: string) => string
         onReady: (callback: () => void) => void
+        translateNode: (node: HTMLElement) => void
       }
     }
   }
