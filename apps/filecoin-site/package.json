@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "build": "npm run generate-rss && next build",
-    "dev": "next dev",
+    "dev": "tinacms dev -c \"next dev\"",
     "generate-rss": "tsx scripts/generateRSS.ts",
     "lint": "next lint --fix",
     "start": "next start",

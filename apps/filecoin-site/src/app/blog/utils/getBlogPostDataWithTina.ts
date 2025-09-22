@@ -26,7 +26,7 @@ export async function getBlogPostDataWithTina(slug: string) {
 
   return {
     ...result.data.post,
-    slug: result.data.post._sys.filename.replace('.md', ''),
+    slug: result.data.post._sys.filename.replace(/\.(en|zh-cn)?\.md$/, ''),
     publishedOn: new Date(result.data.post.date),
     shareImage: result.data.post.share_image,
     seo: {

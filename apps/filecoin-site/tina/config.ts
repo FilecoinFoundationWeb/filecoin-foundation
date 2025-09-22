@@ -3,7 +3,7 @@ import { defineConfig } from 'tinacms'
 import { blogFields } from './schema/blog'
 
 export default defineConfig({
-  branch: 'main',
+  branch: 'bp/filecoin-tina-cms',
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
   token: process.env.TINA_TOKEN,
 
@@ -24,9 +24,6 @@ export default defineConfig({
         label: 'Posts',
         path: 'content/blog/posts',
         format: 'md',
-        match: {
-          include: '**/*.md',
-        },
         ui: {
           router: ({ document }) => `/blog/${document._sys.filename}`,
         },
