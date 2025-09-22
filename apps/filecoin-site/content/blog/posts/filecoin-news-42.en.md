@@ -14,7 +14,7 @@ image:
   alt: ""
   url: /uploads/blog-filecoin-news.webp
 main_feature_inverted: false
-related_article_1: content/blog/posts/filecoin-news-40.md
+related_article_1: content/blog/posts/filecoin-news-40.en.md
 related_article_2: content/blog/posts/filecoin-news-39.en.md
 related_article_3: content/blog/posts/filecoin-news-38.en.md
 share_image: /uploads/blog-filecoin-news.webp
