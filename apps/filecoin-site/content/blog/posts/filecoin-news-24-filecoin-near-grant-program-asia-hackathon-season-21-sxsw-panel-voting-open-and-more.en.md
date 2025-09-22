@@ -17,7 +17,7 @@ image:
   alt: ""
   url: /uploads/blog-filecoin-news.webp
 main_feature_inverted: false
-related_article_1: content/blog/posts/filecoin-news-23.md
+related_article_1: content/blog/posts/filecoin-news-23.en.md
 related_article_2: content/blog/posts/filecoin-news-20.en.md
 related_article_3: content/blog/posts/filecoin-news-19.en.md
 share_image: /uploads/blog-filecoin-news.webp
@@ -112,9 +112,9 @@ Read about these details and find out more updates in this [**blogpost**](https:
 
 Consensus is at the heart blockchain networks but its scalability remains an Achilles' heel. To celebrate the launch of Protocol Labs’ [**ConsensusLab**](https://research.protocol.ai/blog/2021/consensuslab-supercharging-our-consensus-research/) and establish a collaboration network, [**ConsensusDay 21**](https://research.protocol.ai/sites/consensusday21/) will be a one-day virtual workshop on consensus research and related topics. Follow the link to learn more and submit your contribution by September 8.
 
-Important Dates:  
-Submission Deadline: 09/08/21  
-Acceptance Notification: 09/22/21  
+Important Dates:
+Submission Deadline: 09/08/21
+Acceptance Notification: 09/22/21
 Workshop date: 10/06/21
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>

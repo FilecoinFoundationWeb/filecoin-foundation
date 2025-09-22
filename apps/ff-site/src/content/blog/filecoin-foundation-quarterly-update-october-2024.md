@@ -105,7 +105,7 @@ Filecoin storage provider Holon is building modular micro-data centers, which us
 
 ![](/assets/images/blog-metropolis.webp)
 
-#### Introducing Metropolis
+#### Introducing Metropolis (now Fil Poll)
 
 FF [debuted Metropolis](/blog/empowering-governance-the-launch-of-metropolis-to-the-filecoin-community), a temperature check and crowdsource polling tool to enhance the network governance process, built in collaboration with Canvas Technologies. Metropolis was created as a fork of the open-source Pol.is tool, which has been used to support digital democracy efforts in countries around the world. With Metropolis, community members can more easily share their opinions on Filecoin Improvement Proposals (FIPs) by signaling their overall feelings toward the proposal, using “positive” or “negative” descriptors. The goal is to provide temperature checks to give FIP authors and Core Devs an earlier indication of overall community preference for certain proposals, which will help governance steward resources as needed for proposals and ideas.
 
