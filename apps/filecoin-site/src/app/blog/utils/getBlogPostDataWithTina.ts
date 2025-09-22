@@ -10,8 +10,8 @@ export async function getBlogPostsDataWithTina() {
     .filter((post): post is NonNullable<typeof post> => post !== null)
     .map((post) => ({
       ...post,
-      slug: post._sys.filename.replace('.md', ''),
-      publishedOn: new Date(post.published_on),
+      slug: post._sys.filename.replace(/\.(en|zh-cn)\.md$/, ''),
+      publishedOn: new Date(post.date),
       shareImage: post.share_image,
       seo: {
         description: post.excerpt,
@@ -21,13 +21,13 @@ export async function getBlogPostsDataWithTina() {
 
 export async function getBlogPostDataWithTina(slug: string) {
   const result = await tinaClient.queries.post({
-    relativePath: `${slug}.md`,
+    relativePath: `${slug}.{en,zh-cn}.md`,
   })
 
   return {
     ...result.data.post,
     slug: result.data.post._sys.filename.replace('.md', ''),
-    publishedOn: new Date(result.data.post.published_on),
+    publishedOn: new Date(result.data.post.date),
     shareImage: result.data.post.share_image,
     seo: {
       description: result.data.post.excerpt,

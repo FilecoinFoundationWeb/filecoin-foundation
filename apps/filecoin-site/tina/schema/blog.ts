@@ -21,7 +21,7 @@ export function blogFields(collection = 'post'): Array<TinaField> {
       label: 'Blog Content',
       description: 'This is the markdown body',
       isBody: true,
-      required: true,
+      required: false,
       templates: [
         {
           name: 'youtube',
@@ -88,8 +88,8 @@ export function blogFields(collection = 'post'): Array<TinaField> {
     },
     {
       type: 'datetime',
-      name: 'published_on',
-      label: 'Published On',
+      name: 'date',
+      label: 'Date',
       required: true,
       ui: {
         dateFormat: 'YYYY-MM-DD',
@@ -153,7 +153,7 @@ export function blogFields(collection = 'post'): Array<TinaField> {
       type: 'object',
       name: 'seo',
       label: 'SEO',
-      required: true,
+      required: false,
       fields: [
         {
           type: 'string',
@@ -161,7 +161,7 @@ export function blogFields(collection = 'post'): Array<TinaField> {
           label: 'Meta Description',
           description:
             'A brief description of the post for search engines (150-160 characters recommended)',
-          required: true,
+          required: false,
         },
       ],
     },
