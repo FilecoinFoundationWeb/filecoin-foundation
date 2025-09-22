@@ -46,7 +46,7 @@ export function useTransifexLive() {
 
   useEffect(() => {
     transifex?.translateNode(document.body)
-  }, [transifex])
+  }, [transifex, languageState.locale])
 
   return {
     ...languageState,
