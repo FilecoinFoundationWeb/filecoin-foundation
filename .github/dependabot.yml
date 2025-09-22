@@ -1,6 +1,5 @@
 # Please see the documentation for all configuration options:
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-# test
 
 version: 2
 updates:
@@ -14,6 +13,9 @@ updates:
         patterns:
           - "*"
     versioning-strategy: increase
+    commit-message:
+      prefix: "[DEPENDABOT][SHARED] Weekly npm updates"
+      include: "scope"
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -24,3 +26,6 @@ updates:
       actions:
         patterns:
           - "*"
+    commit-message:
+      prefix: "[DEPENDABOT][SHARED] Weekly GitHub Actions updates"
+      include: "scope"
