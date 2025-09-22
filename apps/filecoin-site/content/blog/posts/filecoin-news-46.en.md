@@ -12,9 +12,9 @@ image:
   alt: ""
   url: /uploads/blog-filecoin-news.webp
 main_feature_inverted: false
-related_article_1: content/blog/posts/filecoin-news-42.md
-related_article_2: content/blog/posts/filecoin-news-41.md
-related_article_3: content/blog/posts/filecoin-news-43.md
+related_article_1: content/blog/posts/filecoin-news-42.en.md
+related_article_2: content/blog/posts/filecoin-news-41.en.md
+related_article_3: content/blog/posts/filecoin-news-43.en.md
 share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 46
 ---
@@ -47,7 +47,7 @@ The Protocol Labs Engineering and Research Workgroup met for its June 2022 All H
 
 ### The Filecoin Roadmap at FIL-Austin 22
 
-The first major IRL meetup of the Filecoin community happened in Austin on June 8th. At the event, Molly McKinlay shared what’s next for the network after a 500% YoY growth in data onboarding.  
+The first major IRL meetup of the Filecoin community happened in Austin on June 8th. At the event, Molly McKinlay shared what’s next for the network after a 500% YoY growth in data onboarding.
 Let her walk you through the roadmap and recent improvements to Filecoin storage and retrieval on this [recording](https://www.youtube.com/watch?v=u-aJexVe2qg) of her presentation.
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
