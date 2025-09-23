@@ -1,4 +1,3 @@
-import { tinaField } from 'tinacms/dist/react'
 import { TinaMarkdown } from 'tinacms/dist/rich-text'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -48,10 +47,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
           <BlogPostContainer>
             <div className="prose">
-              <TinaMarkdown
-                content={body}
-                components={tinaField(post, 'body')}
-              />
+              <TinaMarkdown content={body} />
             </div>
           </BlogPostContainer>
         </div>
