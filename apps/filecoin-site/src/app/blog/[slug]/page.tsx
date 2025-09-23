@@ -1,70 +1,16 @@
-import { TinaMarkdown } from 'tinacms/dist/rich-text'
+import PostView from './components/PostView'
 
-import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
-
-import { PATHS } from '@/constants/paths'
-import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
-
-import { graphicsData } from '@/data/graphicsData'
-
-import { createMetadata } from '@/utils/createMetadata'
-
-import { Navigation } from '@/components/Navigation/Navigation'
-import { Section } from '@/components/Section'
-
-import { BlogPostContainer } from '../components/BlogPostContainer'
-import { BlogPostHeader } from '../components/BlogPostHeader'
-import { getBlogPostDataFromTina } from '../utils/getBlogPostDataFromTina'
-
-import { generateStructuredData } from './utils/generateStructuredData'
+import client from '@/tina/__generated__/client'
 
 type BlogPostProps = {
-  params: Promise<SlugParams>
+  params: Promise<{ slug: string }>
 }
 
 export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params
-
-  const post = await getBlogPostDataFromTina(slug)
-
-  const { image, categories, author, publishedOn, title, body } = post
-
-  return (
-    <>
-      <StructuredDataScript structuredData={generateStructuredData(post)} />
-      <Navigation backgroundVariant="light" />
-      <Section backgroundVariant="light">
-        <div className="space-y-8 pb-30">
-          <BlogPostHeader
-            image={image}
-            categories={categories}
-            author={author}
-            date={publishedOn}
-            title={title}
-            slug={slug}
-          />
-
-          <BlogPostContainer>
-            <div className="prose">
-              <TinaMarkdown content={body} />
-            </div>
-          </BlogPostContainer>
-        </div>
-      </Section>
-    </>
-  )
-}
-
-export async function generateMetadata(props: BlogPostProps) {
-  const { slug } = await props.params
-  const { image, seo, title } = await getBlogPostDataFromTina(slug)
-
-  return createMetadata({
-    path: `${PATHS.BLOG.path}/${slug}`,
-    title: { absolute: `${title} | ${ORGANIZATION_NAME}` },
-    description: seo?.description || '',
-    image: image?.url || graphicsData.fallback.data.src,
-    openGraph: { type: 'article' },
+  const result = await client.queries.post({
+    relativePath: `${slug}.md`,
   })
+
+  return <PostView {...result} />
 }

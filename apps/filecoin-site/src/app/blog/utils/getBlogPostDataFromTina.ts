@@ -8,34 +8,6 @@ export async function getBlogPostsDataFromTina(): Promise<BlogPostTinaCMS[]> {
   return posts.map(transformPost)
 }
 
-export async function getBlogPostDataFromTina(
-  slug: string,
-): Promise<BlogPostTinaCMS> {
-  const posts = await getAllPostsFromTina()
-  const targetPost = posts.find(
-    (post) => cleanSlug(post._sys.filename) === slug,
-  )
-  if (!targetPost) throw new Error(`Post with slug "${slug}" not found`)
-
-  return transformPost(targetPost as Post)
-}
-
-function cleanSlug(filename: string) {
-  return filename.replace(/\.(en|zh-cn)?\.md$/, '')
-}
-
-function transformPost(post: Post): BlogPostTinaCMS {
-  return {
-    ...post,
-    slug: cleanSlug(post._sys.filename),
-    publishedOn: new Date(post.date),
-    shareImage: post.share_image ?? undefined,
-    seo: {
-      description: post.excerpt,
-    },
-  }
-}
-
 async function getAllPostsFromTina(): Promise<Post[]> {
   const { data } = await tinaClient.queries.postConnection()
 
@@ -45,4 +17,20 @@ async function getAllPostsFromTina(): Promise<Post[]> {
     const n = edge?.node
     return n && n.__typename === 'Post' ? [n as Post] : []
   })
+}
+
+function cleanSlug(filename: string) {
+  return filename.replace(/\.(en|zh-cn)?\.md$/, '')
+}
+
+export function transformPost(post: Post): BlogPostTinaCMS {
+  return {
+    ...post,
+    slug: cleanSlug(post._sys.filename),
+    publishedOn: new Date(post.date),
+    shareImage: post.share_image ?? undefined,
+    seo: {
+      description: post.excerpt,
+    },
+  }
 }
