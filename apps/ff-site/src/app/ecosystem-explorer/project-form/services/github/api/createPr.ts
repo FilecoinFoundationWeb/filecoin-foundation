@@ -8,12 +8,16 @@ const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
 
 type CreatePRParams = {
   title: string
+  body: string
+  reviewers: string[]
   branchName: string
   commitSha: string
 }
 
 export async function createPR({
   title,
+  body,
+  reviewers,
   branchName,
   commitSha,
 }: CreatePRParams) {
@@ -25,6 +29,8 @@ export async function createPR({
     head: branchName,
     base: repoConfig.baseBranch,
     title,
+    body,
+    reviewers,
   })
   return newPullRequest
 }
