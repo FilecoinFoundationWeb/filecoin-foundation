@@ -7,6 +7,12 @@ backend:
   branch: main
   repo: FilecoinFoundationWeb/filecoin-foundation
   base_url: https://decap-proxy.filecoin-foundation.workers.dev/
+  commit_messages:
+    create: "[DECAP CMS][FF] Create {{collection}} '{{slug}}'"
+    update: "[DECAP CMS][FF] Update {{collection}} '{{slug}}'"
+    delete: "[DECAP CMS][FF] Delete {{collection}} '{{slug}}'"
+    uploadMedia: "[DECAP CMS][FF] Upload media '{{path}}'"
+    deleteMedia: "[DECAP CMS][FF] Delete media '{{path}}'"
 
 publish_mode: editorial_workflow
 media_folder: "apps/ff-site/public/assets/images"
