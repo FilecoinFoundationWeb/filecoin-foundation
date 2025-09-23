@@ -1,10 +1,10 @@
 export const ignoredClientErrors = [
-  'Error: Uncaught exception in worker',
-  'Hydration failed',
-  'TypeError:*',
-  'ReferenceError:*',
-  'SyntaxError:*',
-  'NotFoundError:*',
-]
+  /uncaught exception in worker/i,
+  /hydration failed/i,
+  /^TypeError:/,
+  /^ReferenceError:/,
+  /^SyntaxError:/,
+  /^NotFoundError:/,
+] satisfies Array<RegExp | string>
 
 export const ignoredServerErrors = []
