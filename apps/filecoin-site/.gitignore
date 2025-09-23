@@ -46,5 +46,3 @@ rss.xml
 # sentry Config File
 .env.sentry-build-plugin
 
-node_modules
-.env
