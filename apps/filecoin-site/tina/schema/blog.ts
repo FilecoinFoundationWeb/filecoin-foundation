@@ -21,7 +21,7 @@ export function blogFields(collection = 'post'): Array<TinaField> {
       label: 'Blog Content',
       description: 'This is the markdown body',
       isBody: true,
-      required: false,
+      required: true,
       templates: [
         {
           name: 'youtube',

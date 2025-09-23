@@ -15,7 +15,7 @@ import { Section } from '@/components/Section'
 
 import { BlogPostContainer } from '../components/BlogPostContainer'
 import { BlogPostHeader } from '../components/BlogPostHeader'
-import { getBlogPostDataWithTina } from '../utils/getBlogPostDataWithTina'
+import { getBlogPostDataFromTina } from '../utils/getBlogPostDataFromTina'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -26,7 +26,7 @@ type BlogPostProps = {
 export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params
 
-  const post = await getBlogPostDataWithTina(slug)
+  const post = await getBlogPostDataFromTina(slug)
 
   const { image, categories, author, publishedOn, title, body } = post
 
@@ -58,7 +58,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
 export async function generateMetadata(props: BlogPostProps) {
   const { slug } = await props.params
-  const { image, seo, title } = await getBlogPostDataWithTina(slug)
+  const { image, seo, title } = await getBlogPostDataFromTina(slug)
 
   return createMetadata({
     path: `${PATHS.BLOG.path}/${slug}`,
