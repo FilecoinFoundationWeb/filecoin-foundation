@@ -29,8 +29,16 @@ export async function submitProjectToGithub({
   message,
 }: SubmitProjectToGitHubParams) {
   const todayISO = getTodayISO()
-  const branchName = `ecosystem-submission/${slug}-${todayISO}`
+  const branchName = `ff/create-new-ecosystem-explorer-entry/${slug}-${todayISO}`
   const formattedMessage = `${message}: ${slug}`
+  const reviewers = ['matthendrian', 'charlymartin']
+  const body = `
+  ## 📝 Description
+  
+  This is an automated pull request to create a new **Ecosystem Explorer** entry for \`${slug}\`.
+  
+  Please review and merge.
+  `
 
   const [markdownBlob, logoBlob] = await Promise.all([
     createBlob(markdown.template, 'utf-8'),
@@ -57,6 +65,8 @@ export async function submitProjectToGithub({
 
   const newPullRequest = await createPR({
     title: formattedMessage,
+    body,
+    reviewers,
     commitSha: newCommit.sha,
     branchName,
   })

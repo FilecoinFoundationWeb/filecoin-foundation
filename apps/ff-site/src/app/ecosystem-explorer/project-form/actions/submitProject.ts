@@ -39,7 +39,7 @@ export async function submitProject({
 
   const pullRequest = await submitProjectToGithub({
     slug,
-    message: 'New Ecosystem Project',
+    message: '[SUBMISSION][FF] Create Ecosystem Explorer entry',
     markdown: {
       template: markdownTemplate,
       path: `${WORKSPACE_ROOT}/${PATHS.ECOSYSTEM_EXPLORER.entriesPath}/${slug}.md`,
