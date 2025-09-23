@@ -17,8 +17,6 @@ export async function getBlogPostDataFromTina(
   )
   if (!targetPost) throw new Error(`Post with slug "${slug}" not found`)
 
-  const post = transformPost(targetPost as Post)
-  console.log({ post })
   return transformPost(targetPost as Post)
 }
 
