@@ -8,7 +8,11 @@ import {
   APPROVED_STATUS_VALUE,
 } from '../constants/airtableOrbitEventsConfig'
 
-const airtable = new Airtable({ apiKey: process.env.AIRTABLE_READ_ONLY_TOKEN })
+const airtable = new Airtable({
+  apiKey: process.env.AIRTABLE_READ_ONLY_TOKEN,
+  requestTimeout: 3_000,
+  noRetryIfRateLimited: true,
+})
 
 const { BASE_ID, EVENTS_TABLE_ID, FIELDS } = AIRTABLE_ORBIT_EVENTS_CONFIG
 const { TITLE, CITY, START_DATE, REGISTRATION_LINK } = FIELDS
@@ -22,6 +26,7 @@ const airtableRecordSchema = z.object({
 
 export async function fetchAndParseAirtableEvents() {
   const rawAirtableRecords = await fetchAirtableRecords()
+
   const validatedRecords = validateRawRecords(rawAirtableRecords)
   const humanReadableRecords = getHumanReadableRecords(validatedRecords)
 
@@ -39,9 +44,9 @@ function fetchAirtableRecords() {
       fields: Object.values(FIELDS),
       returnFieldsByFieldId: true,
       filterByFormula: `AND(
-      {${FIELDS.STATUS}} = '${APPROVED_STATUS_VALUE}',
-      IS_AFTER({${FIELDS.START_DATE}}, '${todayISO}')
-    )`,
+        {${FIELDS.STATUS}} = '${APPROVED_STATUS_VALUE}',
+        IS_AFTER({${FIELDS.START_DATE}}, '${todayISO}')
+      )`,
       sort: [
         {
           field: FIELDS.START_DATE,
