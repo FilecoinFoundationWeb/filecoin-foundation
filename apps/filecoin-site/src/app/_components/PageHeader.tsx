@@ -21,7 +21,7 @@ export function PageHeader({
     <header>
       <div
         className={clsx(
-          'flex max-w-3xl flex-col gap-6 text-balance',
+          'flex max-w-3xl flex-col gap-6',
           centered && 'mx-auto text-center',
         )}
       >
