@@ -14,8 +14,8 @@ published-on: 2025-08-29T15:51:00.000Z
 category: hosted
 location:
   primary: Virtual
-start-date: 2025-10-07
-end-date: 2025-10-23
+start-date: 2025-10-16
+end-date: 2025-10-17
 external-link: https://events.zoom.us/ev/AqlQpbuJ_rxk_SUKcZ8_yHWV0RIjo4Y2Z4lI5QYpaz_uwNK38ikG~AnKGnxGBk2m1zd1NuYJADtpPFJUoxTwCJ4hHHAenUtJq18UIbsESZfjLAA
 image:
   src: /assets/images/devsummit7_virtual_square.png
