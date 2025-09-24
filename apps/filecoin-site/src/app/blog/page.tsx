@@ -31,7 +31,7 @@ export default async function Blog() {
 
       <Navigation backgroundVariant="light" />
 
-      <PageSection backgroundVariant="light">
+      <PageSection backgroundVariant="light" paddingVariant="medium">
         <BlogPageHeader
           title={featuredPost.title}
           description={featuredPost.excerpt}
