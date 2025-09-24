@@ -9,9 +9,13 @@ import {
 } from '../constants/airtableOrbitEventsConfig'
 import { AirtableRecordSchema } from '../schema/AirtableRecordSchema'
 
+const DEFAULT_REQUEST_TIMEOUT_MS = 3_000
+
 const airtable = new Airtable({
   apiKey: process.env.AIRTABLE_READ_ONLY_TOKEN,
-  requestTimeout: 3_000,
+  requestTimeout: process.env.AIRTABLE_REQUEST_TIMEOUT_MS
+    ? Number(process.env.AIRTABLE_REQUEST_TIMEOUT_MS)
+    : DEFAULT_REQUEST_TIMEOUT_MS,
   noRetryIfRateLimited: true,
 })
 

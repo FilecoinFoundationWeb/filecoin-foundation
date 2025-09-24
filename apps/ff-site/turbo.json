@@ -11,7 +11,8 @@
         "NEWSLETTER_SUBSCRIPTION_API_URL",
         "NEWSLETTER_SUBSCRIPTION_PUBLICATION_ID",
         "PERCY_TOKEN_FF_SITE",
-        "SENTRY_AUTH_TOKEN_FF_SITE"
+        "SENTRY_AUTH_TOKEN_FF_SITE",
+        "AIRTABLE_REQUEST_TIMEOUT_MS"
       ],
       "outputs": [
         ".next/**",
