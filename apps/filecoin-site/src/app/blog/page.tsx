@@ -9,12 +9,10 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BackgroundImage } from '@/components/BackgroundImage'
-import { Button } from '@/components/Button'
 import { Navigation } from '@/components/Navigation/Navigation'
-import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
+import { BlogPageHeader } from './components/BlogPageHeader'
 import { BlogPostList } from './components/BlogPostList'
 import { BLOG_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -30,27 +28,20 @@ export default async function Blog() {
       <StructuredDataScript
         structuredData={generateStructuredData(BLOG_SEO, sortedPosts)}
       />
+
       <Navigation backgroundVariant="light" />
-      <BackgroundImage
-        overlayVariant="dark"
-        src={featuredPost.image?.url || graphicsData.fallback.data.src}
-      >
-        <PageSection paddingVariant="wide" backgroundVariant="transparentDark">
-          <PageHeader
-            kicker="Latest updates"
-            title={featuredPost.title}
-            description={featuredPost.excerpt}
-            cta={
-              <Button
-                variant="primary"
-                href={`${PATHS.BLOG.path}/${featuredPost.slug}`}
-              >
-                Read full article
-              </Button>
-            }
-          />
-        </PageSection>
-      </BackgroundImage>
+
+      <PageSection backgroundVariant="light">
+        <BlogPageHeader
+          title={featuredPost.title}
+          description={featuredPost.excerpt}
+          slug={featuredPost.slug}
+          image={{
+            src: featuredPost.image?.url || graphicsData.fallback.data.src,
+            alt: '',
+          }}
+        />
+      </PageSection>
 
       <PageSection backgroundVariant="light" paddingVariant="compact">
         <Suspense>
