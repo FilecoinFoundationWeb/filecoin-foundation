@@ -24,12 +24,14 @@ export function BlogPageHeader({
     <header className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <div className="flex flex-col justify-between gap-10">
         <div className="flex flex-col gap-6">
-          {/* todo */}
-          <span className="font-mono text-zinc-600">Latest updates</span>
+          <span className="font-mono text-[var(--color-paragraph-text)]">
+            Latest updates
+          </span>
+
           <Heading tag="h1" variant="section-heading">
             {title}
           </Heading>
-          {/* todo */}
+
           <p className="text-pretty text-[var(--color-paragraph-text)] md:text-xl/7">
             {description}
           </p>
