@@ -11,25 +11,20 @@ category: dapp
 tech:
   - filecoin
   - ipfs
-description: GuaridOS is a decentralized privacy suite combining secure email, storage, and identity with Filecoin/IPFS integration.
+description: GuaridOS is a decentralized privacy suite. It combines secure email, storage, and identity management with Filecoin and IPFS integration.
 website: https://guaridos.me/
 year-joined: 2025
 repo: https://github.com/GuaridOS-HQ
-
 twitter: https://x.com/guaridosme
 seo:
-  title: GuaridOS
-  description: GuaridOS is a decentralized privacy suite combining secure email, storage, and identity with Filecoin/IPFS integration.
+  description: GuaridOS is a decentralized privacy suite. It combines secure email, storage, and identity management with Filecoin and IPFS integration.
 ---
 
 GuaridOS integrates Filecoin decentralized storage as the backbone of its privacy suite:
 
-Secure Email & Identity – Encrypted mail and user identity metadata are stored on Filecoin, ensuring immutability and censorship-resistance.
+- **Secure Email & Identity** – Stores encrypted mail and user identity metadata on Filecoin, ensuring immutability and censorship resistance.
+- **Private File Vaults** – Keeps user files and attachments as content-addressed deals on Filecoin, guaranteeing verifiable, tamper-proof backups.
+- **Redundant & Auditable** – Relies on Filecoin’s proof-of-replication and proof-of-space-time to provide auditable evidence that data remains intact over time.
+- **Interoperability** – Combines IPFS for fast retrieval with Filecoin for long-term, verifiable persistence.
 
-Private File Vaults – User files and attachments are stored as content-addressed deals on Filecoin, guaranteeing verifiable, tamper-proof backups.
-
-Redundant & Auditable – Filecoin’s proof-of-replication and proof-of-space-time provide auditable evidence that data remains intact over time.
-
-Interoperability – Combined with IPFS for fast retrieval, while Filecoin handles the long-term, verifiable persistence.
-
-By anchoring GuaridOS core data on Filecoin, we deliver end-to-end privacy, long-term durability, and trustless verification for every email and file stored.
+By anchoring its core data on Filecoin, GuaridOS delivers end-to-end privacy, long-term durability, and trustless verification for every email and file stored.
