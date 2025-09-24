@@ -1,11 +1,16 @@
-import { getBlogPostData } from '../utils/getBlogPostData'
+import type { TinaMarkdownContent } from 'tinacms/dist/rich-text'
 
-import type { Post } from '@/tina/__generated__/types'
-
-export type BlogPost = Awaited<ReturnType<typeof getBlogPostData>>
-
-export type BlogPostTinaCMS = Omit<Post, '_values' | '_sys'> & {
-  slug: string
+export type BlogPost = {
+  title: string
+  excerpt: string
+  date: Date
   publishedOn: Date
-  shareImage: Post['share_image']
+  slug: string
+  categories: string[]
+  author?: string
+  image?: { url: string; alt?: string }
+  shareImage?: string
+  seo?: { title?: string; description?: string }
+  content?: string
+  body?: TinaMarkdownContent
 }

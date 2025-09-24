@@ -14,6 +14,7 @@ export type StaticPath =
   | '/terms-of-use'
 
 export const CONTENT_ROOT = 'src/content'
+export const BLOG_DIRECTORY_PATH = 'content/blog/posts'
 
 type ContentCollectionName = 'blog'
 

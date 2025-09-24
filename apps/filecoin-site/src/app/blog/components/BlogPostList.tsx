@@ -10,14 +10,14 @@ import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { CardGrid } from '@/components/CardGrid'
 
 import { useCategoryState } from '../hooks/useCategoryState'
-import type { BlogPostTinaCMS } from '../types/blogPostType'
+import type { BlogPost } from '../types/blogPostType'
 import { postMatchesCategory } from '../utils/postMatchesCategory'
 
 import { BlogCard } from './BlogCard'
 import { BlogCategoryFilter } from './BlogCategoryFilter'
 
 type BlogPostListProps = {
-  posts: Array<BlogPostTinaCMS>
+  posts: Array<BlogPost>
 }
 
 const BLOG_POSTS_PER_PAGE = 6
@@ -25,7 +25,7 @@ const PAGINATION_INDEX_MAX_RANGE = 6
 
 export function BlogPostList({ posts }: BlogPostListProps) {
   const clientSearchParams = useSearchParams()
-  const searchParams = Object.fromEntries(clientSearchParams?.entries() ?? [])
+  const searchParams = Object.fromEntries(clientSearchParams.entries())
 
   const [selectedCategory] = useCategoryState()
 
@@ -46,7 +46,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
       <BlogCategoryFilter />
 
       <CardGrid as="ul" variant="mdTwoLgThreeWide">
-        {paginatedResults.map((post: BlogPostTinaCMS) => {
+        {paginatedResults.map((post: BlogPost) => {
           const {
             title,
             slug,

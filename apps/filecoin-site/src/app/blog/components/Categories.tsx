@@ -1,9 +1,9 @@
 import { Badge } from '@/components/Badge'
 
-import type { BlogPostTinaCMS } from '../types/blogPostType'
+import type { BlogPost } from '../types/blogPostType'
 
 export type CategoriesProps = {
-  categories: BlogPostTinaCMS['categories']
+  categories: BlogPost['categories']
 }
 
 export function Categories({ categories }: CategoriesProps) {

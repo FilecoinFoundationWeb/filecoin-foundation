@@ -18,10 +18,10 @@ import { PageSection } from '@/components/PageSection'
 import { BlogPostList } from './components/BlogPostList'
 import { BLOG_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getBlogPostsDataFromTina } from './utils/getBlogPostDataFromTina'
+import { getBlogPostsData } from './utils/getBlogPostData'
 
 export default async function Blog() {
-  const posts = await getBlogPostsDataFromTina()
+  const posts = await getBlogPostsData()
   const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = sortedPosts[0]
 

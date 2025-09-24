@@ -10,19 +10,19 @@ import { graphicsData } from '@/data/graphicsData'
 import { Heading } from '@/components/Heading'
 import { SectionDivider } from '@/components/SectionDivider'
 
-import type { BlogPostTinaCMS } from '../types/blogPostType'
+import type { BlogPost } from '../types/blogPostType'
 
 import { BlogPostContainer } from './BlogPostContainer'
 import { Categories } from './Categories'
 import { PostMetadata } from './PostMetadata'
 
 type BlogPostHeaderProps = {
-  image?: BlogPostTinaCMS['image']
-  categories: BlogPostTinaCMS['categories']
-  title: BlogPostTinaCMS['title']
-  slug: BlogPostTinaCMS['slug']
-  author?: BlogPostTinaCMS['author']
-  date: BlogPostTinaCMS['publishedOn']
+  image?: BlogPost['image']
+  categories: BlogPost['categories']
+  title: BlogPost['title']
+  slug: BlogPost['slug']
+  author?: BlogPost['author']
+  date: BlogPost['publishedOn']
 }
 
 export function BlogPostHeader({
