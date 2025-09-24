@@ -57,29 +57,27 @@ export default async function Home() {
       <GradientContainer className="pb-40 sm:pb-96 2xl:pb-[25vw]">
         <graphicsData.homepageGradient.data className="absolute -bottom-[10vw] left-1/2 w-[400vw] -translate-x-1/2 transform overflow-visible sm:bottom-0 md:w-[250vw] lg:w-[200vw] 2xl:-bottom-[1vw]" />
 
-        <Section backgroundVariant="dark">
-          <Container>
-            <div className="space-y-15 pt-24 pb-24 md:pt-32">
-              {/* todo look into when we need space-y-15 */}
-              <Announcement centered href={PATHS.BLOG.path}>
-                Announcing Filecoin Onchain Cloud
-              </Announcement>
-              <PageHeader
-                centered
-                title="Preserve humanity's most important information"
-                description="Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control."
-                cta={[
-                  <Button href={PATHS.STORE_DATA.path} variant="primary">
-                    Store data
-                  </Button>,
-                  <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
-                    Start building
-                  </Button>,
-                ]}
-              />
-            </div>
-          </Container>
-        </Section>
+        <PageSection backgroundVariant="dark" paddingVariant="none">
+          <div className="space-y-15 pt-24 pb-24 md:pt-32">
+            {/* todo look into when we need space-y-15 */}
+            <Announcement centered href={PATHS.BLOG.path}>
+              Announcing Filecoin Onchain Cloud
+            </Announcement>
+            <PageHeader
+              centered
+              title="Preserve humanity's most important information"
+              description="Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control."
+              cta={[
+                <Button href={PATHS.STORE_DATA.path} variant="primary">
+                  Store data
+                </Button>,
+                <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
+                  Start building
+                </Button>,
+              ]}
+            />
+          </div>
+        </PageSection>
       </GradientContainer>
 
       <PageSection backgroundVariant="dark">
