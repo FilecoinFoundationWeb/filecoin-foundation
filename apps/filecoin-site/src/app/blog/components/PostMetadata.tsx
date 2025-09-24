@@ -2,11 +2,11 @@ import clsx from 'clsx'
 
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
-import type { BlogPostTinaCMS } from '../types/blogPostType'
+import type { BlogPost } from '../types/blogPostType'
 
 type PostMetadataProps = {
-  author?: BlogPostTinaCMS['author']
-  date: BlogPostTinaCMS['publishedOn']
+  author?: BlogPost['author']
+  date: BlogPost['publishedOn']
 }
 
 export function PostMetadata({ author, date }: PostMetadataProps) {
