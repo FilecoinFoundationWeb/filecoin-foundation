@@ -9,7 +9,7 @@ export function generateStructuredData(data: BlogPost) {
     path: `${PATHS.BLOG.path}/${data.slug}`,
     headline: title,
     description: excerpt,
-    image: image?.url || undefined,
+    image: image?.url,
     datePublished: publishedOn,
     dateModified: publishedOn,
   })

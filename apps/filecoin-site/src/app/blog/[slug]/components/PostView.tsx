@@ -10,7 +10,7 @@ import { BlogPostHeader } from '../../components/BlogPostHeader'
 import { generateStructuredData } from '../utils/generateStructuredData'
 
 import { transformBlogPostData } from '@/blog/utils/getBlogPostData'
-import type { Post, PostQuery } from '@/tina/__generated__/types'
+import type { PostQuery } from '@/tina/__generated__/types'
 
 type PostViewProps = {
   data: PostQuery
@@ -22,7 +22,7 @@ type PostViewProps = {
 
 export default function PostView(props: PostViewProps) {
   const { data } = useTina(props)
-  const post = transformBlogPostData(data.post as Post)
+  const post = transformBlogPostData(data.post)
 
   return (
     <>
@@ -40,7 +40,7 @@ export default function PostView(props: PostViewProps) {
 
         <BlogPostContainer>
           <div className="prose">
-            {post.body && <TinaMarkdown content={post.body} />}
+            <TinaMarkdown content={post.content} />
           </div>
         </BlogPostContainer>
       </div>

@@ -12,9 +12,10 @@ type BlogPostProps = {
 
 export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params
-  const relativePath = slug.endsWith('.en') ? `${slug}.md` : `${slug}.en.md`
+
+  const slugWithEnLocaleAndExtension = `${slug}.en.md`
   const result = await client.queries.post({
-    relativePath,
+    relativePath: slugWithEnLocaleAndExtension,
   })
 
   return (

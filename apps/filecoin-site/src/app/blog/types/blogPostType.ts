@@ -1,11 +1,10 @@
-import type { TinaMarkdownContent } from 'tinacms/dist/rich-text'
+import { TinaMarkdownContent } from 'tinacms/dist/rich-text'
 
 import type { AllowedCategory } from '../schemas/BlogPostFrontmatterSchema'
 
 export type BlogPost = {
   title: string
   excerpt: string
-  date: Date
   publishedOn: Date
   slug: string
   categories: AllowedCategory[]
@@ -13,6 +12,5 @@ export type BlogPost = {
   image?: { url: string; alt?: string }
   shareImage?: string
   seo?: { title?: string; description?: string }
-  content?: string
-  body?: TinaMarkdownContent
+  content: string | TinaMarkdownContent
 }
