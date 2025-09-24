@@ -212,6 +212,31 @@ export const redirects = [
     destination: '/ecosystem-explorer',
     permanent: true,
   },
+  {
+    source: '/ecosystem-explorer/catalyst',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/cooperdb',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/e-ipfs',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/elastic',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/encryption-pinner',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
 
   // EVENTS REDIRECTS
   {
