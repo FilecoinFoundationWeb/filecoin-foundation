@@ -7,6 +7,7 @@ import {
   AIRTABLE_ORBIT_EVENTS_CONFIG,
   APPROVED_STATUS_VALUE,
 } from '../constants/airtableOrbitEventsConfig'
+import { AirtableRecordSchema } from '../schema/AirtableRecordSchema'
 
 const airtable = new Airtable({
   apiKey: process.env.AIRTABLE_READ_ONLY_TOKEN,
@@ -16,13 +17,6 @@ const airtable = new Airtable({
 
 const { BASE_ID, EVENTS_TABLE_ID, FIELDS } = AIRTABLE_ORBIT_EVENTS_CONFIG
 const { TITLE, CITY, START_DATE, REGISTRATION_LINK } = FIELDS
-
-const airtableRecordSchema = z.object({
-  [TITLE]: z.string(),
-  [CITY]: z.string(),
-  [START_DATE]: z.coerce.date(),
-  [REGISTRATION_LINK]: z.url().optional(),
-})
 
 export async function fetchAndParseAirtableEvents() {
   const rawAirtableRecords = await fetchAirtableRecords()
@@ -59,7 +53,7 @@ function fetchAirtableRecords() {
 
 function validateRawRecords(rawRecords: Records<FieldSet>) {
   const cleanRecords = rawRecords.map((record) => record.fields)
-  return z.array(airtableRecordSchema).parse(cleanRecords)
+  return z.array(AirtableRecordSchema).parse(cleanRecords)
 }
 
 function getHumanReadableRecords(
