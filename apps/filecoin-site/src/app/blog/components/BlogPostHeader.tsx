@@ -1,6 +1,7 @@
 import Image, { type ImageProps } from 'next/image'
 
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
@@ -63,7 +64,7 @@ export function BlogPostHeader({
           src={image.src}
           alt={image.alt}
           className="rounded-2xl object-cover"
-          sizes="100vw"
+          sizes={buildImageSizeProp({ startSize: '100vw', md: '768px' })}
         />
       </div>
     </header>

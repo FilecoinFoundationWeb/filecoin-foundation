@@ -1,5 +1,7 @@
 import Image, { type ImageProps } from 'next/image'
 
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+
 import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
@@ -52,7 +54,7 @@ export function BlogPageHeader({
           priority
           className="rounded-2xl"
           quality={100}
-          sizes="100vw"
+          sizes={buildImageSizeProp({ startSize: '100vw', md: '768px' })}
           src={image.src}
           alt={image.alt}
         />
