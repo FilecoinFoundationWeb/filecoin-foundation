@@ -3,7 +3,6 @@ aliases:
   - /blog/filecoin-proof-system/
 author: ""
 categories:
-  - Filecoin-Features
   - updates
 cover_feature: false
 date: "2020-02-18T05:00:00Z"

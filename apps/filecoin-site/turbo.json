@@ -5,7 +5,8 @@
       "env": [
         "PERCY_TOKEN_FILECOIN_SITE",
         "SENTRY_AUTH_TOKEN_FILECOIN_SITE",
-        "TINA_TOKEN"
+        "TINA_TOKEN",
+        "VERCEL_GIT_COMMIT_REF"
       ],
       "outputs": [".next/**", "!.next/cache/**"]
     }

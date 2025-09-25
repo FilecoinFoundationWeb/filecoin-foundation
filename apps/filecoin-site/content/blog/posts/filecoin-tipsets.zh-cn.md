@@ -3,7 +3,7 @@ aliases:
   - /zh-cn/blog/tipsets-family-based-approach-to-consensus
 author: ""
 categories:
-  - Filecoin-Features
+  - updates
 cover_feature: false
 date: "2020-01-13T05:00:00Z"
 dim_image: false
@@ -38,7 +38,7 @@ _template: blog_detail_ch
 
 孤块是有效的区块但是不影响链的长度和稳定性。其他的区块链，例如以太坊，会奖励挖到这些区块的矿工，这些区块称为“叔块”。矿工在挖矿过程中即使这些块未被包括在最终的链中，矿工也会获得奖励。这有助于消除矿工由于网络延迟而面临的潜在不利因素并且不鼓励网络的中心化，单个矿工或者连接不佳的矿工也可以获得补偿。
 
-[![uncle blocks](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-2.jpg)](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-2.jpg)叔块，不像比特币是使用最长的链，Filecoin的共识是寻找最大化利用权重最大的链的算法。  
+[![uncle blocks](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-2.jpg)](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-2.jpg)叔块，不像比特币是使用最长的链，Filecoin的共识是寻找最大化利用权重最大的链的算法。
 (来源于 [https://vas3k.com/blog/ethereum/#scroll240](https://vas3k.com/blog/ethereum/#scroll240 "https://vas3k.com/blog/ethereum/#scroll240"))
 
 随着2015年《比特币中的安全高速交易处理》(Sompolinsky, Zohar)的发布，区块链的思想不再是链本身，而是有向无环图（DAGs）。用此方式来看，就不再是简单的查看最长的链，而是查看拥有最大权重的DAG（或GHOST - Greedy Heaviest-Observed SubTree 贪婪最重可观察子树协议），它拥有最多的区块。Filecoin就是这样一种协议，使用区块总数以及贡献的存储算力来决定选择哪条链。
@@ -57,12 +57,12 @@ Filecoin中的区块按纪元（epoch）排序，每个新的区块都引用上�
 
 最后一个tipset(第三张表）拥有总权重为3（一个祖块、一个父块、一个子块）
 
-![](/uploads/3rd-tipset-in-epoch-2.webp)  
+![](/uploads/3rd-tipset-in-epoch-2.webp)
 The final chart offers a comprehensive view of this chain, where the top 1st tipset in epoch 2 wins, although this is not confirmed until the next epoch.
 
 最后的表提供了该链的全面视角，在纪元2里第一个tipset赢了, 尽管到下一个纪元才会被确认。
 
-![](/uploads/all-tipsets.webp)  
+![](/uploads/all-tipsets.webp)
 与以太坊一样，该系统通过确保不浪费任何工作量来激励协作并从总体来提高链上的吞吐量。此外，由于tipset要求严格，所有的块都必须来自相同的父块，并且在相同的高度被开采，因此在分叉的情况下，该链可以实现“_快速收敛_”。
 
 **最终，Filecoin会赋予提供更多存储算力的区块以权重，因为它的核心是存储网络。随着时间的流逝，矿工会聚集在权重最大的链上来创造价值**，而权重小的链将成为孤块。

@@ -17,8 +17,11 @@ export async function getBlogPostsData() {
     directoryPath: BLOG_DIRECTORY_PATH,
     zodSchema: BlogPostFrontmatterSchema,
   })
+  const englishPosts = allPosts.filter((post) => {
+    return post.slug.includes('.en')
+  })
 
-  return allPosts.map(transformBlogPostData)
+  return englishPosts.map(transformBlogPostData)
 }
 
 function getBlogPostMarkdownData(slug: string) {
@@ -34,6 +37,7 @@ function transformBlogPostData(
 ) {
   return {
     ...post,
+    publishedOn: post.date,
     seo: {
       title: post.seo?.title || post.title,
       description: post.seo?.description || post.excerpt,
