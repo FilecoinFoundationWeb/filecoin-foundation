@@ -20,8 +20,8 @@ export function createPathConfig(
 export function createPathConfig(
   path: StaticPath,
   label: string,
-  options?: { entriesPath?: string },
-): PathConfigWithEntries | PathConfig {
+  options?: { entriesPath: string },
+): PathConfig | PathConfigWithEntries {
   if (options?.entriesPath) {
     return {
       path,
@@ -33,5 +33,5 @@ export function createPathConfig(
   return {
     path,
     label,
-  } as const
+  }
 }
