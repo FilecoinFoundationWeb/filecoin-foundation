@@ -1,5 +1,5 @@
 ---
-title: "Virtual FIL Dev Summit 7 "
+title: "Virtual FIL Dev Summit 7"
 description: Join the Virtual FIL Dev Summit Kickoff Sessions to dive deep on
   new improvements and proposals across the Filecoin community! These 2-3 hour
   virtual sessions will spotlight new opportunities, learnings, and ideas across
@@ -19,11 +19,6 @@ end-date: 2025-10-17
 external-link: https://events.zoom.us/ev/AqlQpbuJ_rxk_SUKcZ8_yHWV0RIjo4Y2Z4lI5QYpaz_uwNK38ikG~AnKGnxGBk2m1zd1NuYJADtpPFJUoxTwCJ4hHHAenUtJq18UIbsESZfjLAA
 image:
   src: /assets/images/devsummit7_virtual_main.png
-program:
-  title: ""
-  events: []
-schedule:
-  title: ""
 seo:
   description: Join the Virtual FIL Dev Summit this October! A month-long series
     of sessions uniting developers, builders, and storage providers to shape the
