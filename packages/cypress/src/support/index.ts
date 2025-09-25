@@ -9,9 +9,6 @@ import { testVisualSnapshot } from '@filecoin-foundation/cypress/percy'
 Cypress.on('uncaught:exception', (err) => {
   if (
     err.message.includes('Hydration failed') ||
-    err.message.includes(
-      'Hydration failed because the initial UI does not match',
-    ) ||
     err.message.includes('Minified React error #418') ||
     err.message.includes('Minified React error #423') ||
     err.message.includes('Unknown root exit status')
