@@ -7,21 +7,24 @@ import {
   AIRTABLE_ORBIT_EVENTS_CONFIG,
   APPROVED_STATUS_VALUE,
 } from '../constants/airtableOrbitEventsConfig'
+import { AirtableRecordSchema } from '../schema/AirtableRecordSchema'
 
-const airtable = new Airtable({ apiKey: process.env.AIRTABLE_READ_ONLY_TOKEN })
+const DEFAULT_REQUEST_TIMEOUT_MS = 3_000
+
+const airtable = new Airtable({
+  apiKey: process.env.AIRTABLE_READ_ONLY_TOKEN,
+  requestTimeout: process.env.AIRTABLE_REQUEST_TIMEOUT_MS
+    ? Number(process.env.AIRTABLE_REQUEST_TIMEOUT_MS)
+    : DEFAULT_REQUEST_TIMEOUT_MS,
+  noRetryIfRateLimited: true,
+})
 
 const { BASE_ID, EVENTS_TABLE_ID, FIELDS } = AIRTABLE_ORBIT_EVENTS_CONFIG
 const { TITLE, CITY, START_DATE, REGISTRATION_LINK } = FIELDS
 
-const airtableRecordSchema = z.object({
-  [TITLE]: z.string(),
-  [CITY]: z.string(),
-  [START_DATE]: z.coerce.date(),
-  [REGISTRATION_LINK]: z.url().optional(),
-})
-
 export async function fetchAndParseAirtableEvents() {
   const rawAirtableRecords = await fetchAirtableRecords()
+
   const validatedRecords = validateRawRecords(rawAirtableRecords)
   const humanReadableRecords = getHumanReadableRecords(validatedRecords)
 
@@ -39,9 +42,9 @@ function fetchAirtableRecords() {
       fields: Object.values(FIELDS),
       returnFieldsByFieldId: true,
       filterByFormula: `AND(
-      {${FIELDS.STATUS}} = '${APPROVED_STATUS_VALUE}',
-      IS_AFTER({${FIELDS.START_DATE}}, '${todayISO}')
-    )`,
+        {${FIELDS.STATUS}} = '${APPROVED_STATUS_VALUE}',
+        IS_AFTER({${FIELDS.START_DATE}}, '${todayISO}')
+      )`,
       sort: [
         {
           field: FIELDS.START_DATE,
@@ -54,7 +57,7 @@ function fetchAirtableRecords() {
 
 function validateRawRecords(rawRecords: Records<FieldSet>) {
   const cleanRecords = rawRecords.map((record) => record.fields)
-  return z.array(airtableRecordSchema).parse(cleanRecords)
+  return z.array(AirtableRecordSchema).parse(cleanRecords)
 }
 
 function getHumanReadableRecords(
