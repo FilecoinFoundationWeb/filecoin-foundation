@@ -15,11 +15,6 @@ export type StaticPath =
 
 export const CONTENT_ROOT = 'content'
 
-export const CONTENT_PATHS = {
-  BLOG_POSTS: `${CONTENT_ROOT}/blog/posts`,
-  UPLOADS: `${CONTENT_ROOT}/uploads`,
-} as const
-
 type ContentCollectionName = 'blog'
 
 type DynamicPath = {
@@ -31,7 +26,7 @@ export type PathValues = StaticPath | DynamicPathValues
 
 export const PATHS = {
   BLOG: createPathConfig('/blog', 'Blog', {
-    entriesPath: CONTENT_PATHS.BLOG_POSTS,
+    entriesPath: `${CONTENT_ROOT}/blog/posts`,
   }),
   BUILD_ON_FILECOIN: createPathConfig(
     '/build-on-filecoin',

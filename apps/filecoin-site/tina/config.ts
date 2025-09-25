@@ -1,6 +1,6 @@
 import { defineConfig } from 'tinacms'
 
-import { CONTENT_PATHS } from '@/constants/paths'
+import { PATHS, CONTENT_ROOT } from '@/constants/paths'
 
 import { blogFields } from './schema/blog'
 
@@ -15,7 +15,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: CONTENT_PATHS.UPLOADS,
+      mediaRoot: `${CONTENT_ROOT}/uploads`,
       publicFolder: 'public',
     },
   },
@@ -24,7 +24,7 @@ export default defineConfig({
       {
         name: 'post',
         label: 'Posts',
-        path: CONTENT_PATHS.BLOG_POSTS,
+        path: PATHS.BLOG.entriesPath,
         format: 'md',
         fields: blogFields('post'),
       },
