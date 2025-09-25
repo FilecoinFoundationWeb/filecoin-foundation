@@ -2,7 +2,7 @@
 aliases: []
 author: ""
 categories:
-  - Filecoin-Features
+  - updates
 cover_feature: false
 date: "2020-06-08T04:00:00Z"
 dim_image: false

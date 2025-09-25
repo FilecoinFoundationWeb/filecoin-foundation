@@ -7,7 +7,6 @@ export const BLOG_CATEGORY_VALUES = [
   'events',
   'interviews',
   'awards',
-  'Filecoin-Features',
 ] as const
 
 export const AllowedCategoriesSchema = z.enum(BLOG_CATEGORY_VALUES)

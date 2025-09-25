@@ -1,20 +1,18 @@
-import { CONTENT_ROOT, type StaticPath } from '@/constants/paths'
+import { CONTENT_PATH, type StaticPath } from '@/constants/paths'
 
-type PathConfigWithEntries = {
+type BasePathConfig = {
   path: StaticPath
   label: string
-  entriesPath: string
 }
 
-type PathConfigWithoutEntries = {
-  path: StaticPath
-  label: string
+type PathConfigWithEntries = BasePathConfig & {
+  entriesPath: string
 }
 
 export function createPathConfig(
   path: StaticPath,
   label: string,
-): PathConfigWithoutEntries
+): BasePathConfig
 
 export function createPathConfig(
   path: StaticPath,
@@ -26,14 +24,14 @@ export function createPathConfig(
   path: StaticPath,
   label: string,
   options?: { hasEntries?: boolean },
-): PathConfigWithEntries | PathConfigWithoutEntries {
+): PathConfigWithEntries | BasePathConfig {
   const hasEntries = options?.hasEntries ?? false
 
   if (hasEntries) {
     return {
       path,
       label,
-      entriesPath: `${CONTENT_ROOT}${path}`,
+      entriesPath: CONTENT_PATH,
     }
   }
   return {

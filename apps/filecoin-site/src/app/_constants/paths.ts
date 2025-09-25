@@ -13,8 +13,8 @@ export type StaticPath =
   | '/privacy-policy'
   | '/terms-of-use'
 
-export const CONTENT_ROOT = 'src/content'
-export const BLOG_DIRECTORY_PATH = 'content/blog/posts'
+export const CONTENT_ROOT = 'content'
+export const CONTENT_PATH = `${CONTENT_ROOT}/blog/posts`
 
 type ContentCollectionName = 'blog'
 
@@ -49,3 +49,8 @@ export const PATHS = {
 } as const
 
 export const BLOG_RSS_PATH = `${PATHS.BLOG.path}/rss.xml`
+
+export const TINA_PATHS = {
+  MEDIA_ROOT: `${CONTENT_ROOT}/uploads`,
+  COLLECTION_POST_PATH: `${CONTENT_ROOT}/blog/posts`,
+}

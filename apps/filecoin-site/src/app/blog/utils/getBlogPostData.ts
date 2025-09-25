@@ -1,9 +1,11 @@
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
 import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 
-import { BLOG_DIRECTORY_PATH } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 
 import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
+
+const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesPath
 
 export async function getBlogPostData(slug: string) {
   const data = await getBlogPostMarkdownData(slug)
