@@ -9,10 +9,10 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { Heading } from '@/components/Heading'
 import { SectionDivider } from '@/components/SectionDivider'
 
-import type { BlogPost } from '../types/blogPostType'
 
-import { Categories } from './Categories'
-import { PostMetadata } from './PostMetadata'
+import { Categories } from '../../components/Categories'
+import { PostMetadata } from '../../components/PostMetadata'
+import type { BlogPost } from '../../types/blogPostType'
 
 type BlogPostHeaderProps = {
   categories: BlogPost['categories']

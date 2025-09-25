@@ -12,9 +12,9 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
-import { BlogPostHeader } from '../components/BlogPostHeader'
 import { getBlogPostData } from '../utils/getBlogPostData'
 
+import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
