@@ -19,7 +19,7 @@ import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
 export default async function Blog() {
-  const posts = await getBlogPostsData()
+  const posts = await getBlogPostsData('en')
   const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = sortedPosts[0]
 

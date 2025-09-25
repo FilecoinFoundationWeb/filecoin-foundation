@@ -24,7 +24,7 @@ type BlogPostProps = {
 export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params
 
-  const data = await getBlogPostData(slug)
+  const data = await getBlogPostData(slug, 'en')
   const { image, categories, author, publishedOn, title, content } = data
 
   return (
@@ -54,7 +54,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
 export async function generateMetadata(props: BlogPostProps) {
   const { slug } = await props.params
-  const { image, seo, excerpt } = await getBlogPostData(slug)
+  const { image, seo, excerpt } = await getBlogPostData(slug, 'en')
 
   return createMetadata({
     path: `${PATHS.BLOG.path}/${slug}`,
