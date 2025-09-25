@@ -14,7 +14,11 @@ export type StaticPath =
   | '/terms-of-use'
 
 export const CONTENT_ROOT = 'content'
-export const CONTENT_PATH = `${CONTENT_ROOT}/blog/posts`
+
+export const CONTENT_PATHS = {
+  BLOG_POSTS: `${CONTENT_ROOT}/blog/posts`,
+  UPLOADS: `${CONTENT_ROOT}/uploads`,
+} as const
 
 type ContentCollectionName = 'blog'
 
@@ -27,7 +31,7 @@ export type PathValues = StaticPath | DynamicPathValues
 
 export const PATHS = {
   BLOG: createPathConfig('/blog', 'Blog', {
-    hasEntries: true,
+    entriesPath: CONTENT_PATHS.BLOG_POSTS,
   }),
   BUILD_ON_FILECOIN: createPathConfig(
     '/build-on-filecoin',
@@ -49,8 +53,3 @@ export const PATHS = {
 } as const
 
 export const BLOG_RSS_PATH = `${PATHS.BLOG.path}/rss.xml`
-
-export const TINA_PATHS = {
-  MEDIA_ROOT: `${CONTENT_ROOT}/uploads`,
-  COLLECTION_POST_PATH: `${CONTENT_ROOT}/blog/posts`,
-}
