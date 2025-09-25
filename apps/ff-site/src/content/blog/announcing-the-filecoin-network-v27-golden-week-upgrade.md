@@ -53,7 +53,7 @@ Filecoin previously introduced Direct Data Onboarding as part of [FIP-0076](http
 
 ### [FRC-0108 Enhances the Filecoin Snapshot Format](https://github.com/filecoin-project/FIPs/blob/master/FRCs/frc-0108.md#frc-0108-filecoin-snapshot-format)
 
-FRC-0108 expands the Filecoin snapshot format to include F3 finality certificates. Snapshots are compressed copies of Filecoin's current state that new nodes can download to quickly sync instead of processing the entire blockchain history from the beginning. Previously, nodes needed to get the F3 finality certificate chain from peers outside of the snapshot, which could take hours.  Now the F3 state is bundled with the snapshot, both reducing the time and bandwidth required for new nodes to join the network with fast finality. F3-augmented snapshot download URLs can be found [here](https://github.com/ChainSafe/forest/issues/5627).
+FRC-0108 expands the Filecoin snapshot format to include F3 finality certificates. Snapshots are compressed copies of Filecoin's current state that new nodes can download to quickly sync instead of processing the entire blockchain history from the beginning. Previously, nodes needed to get the F3 finality certificate chain from peers outside of the snapshot, which could take hours.  Now the F3 state is bundled with the snapshot, both reducing the time and bandwidth required for new nodes to join the network with fast finality. F3-augmented snapshot download URLs can be found in the GitHub issue tracker, issue [#5627](https://github.com/ChainSafe/forest/issues/5627).
 
 ## Why It Matters
 
