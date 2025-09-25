@@ -4,16 +4,17 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { Navigation } from '@/components/Navigation/Navigation'
-import { Section } from '@/components/Section'
+import { PageSection } from '@/components/PageSection'
 
-import { BlogPostContainer } from '../components/BlogPostContainer'
-import { BlogPostHeader } from '../components/BlogPostHeader'
 import { getBlogPostData } from '../utils/getBlogPostData'
 
+import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
@@ -30,22 +31,23 @@ export default async function BlogPost({ params }: BlogPostProps) {
     <>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <Navigation backgroundVariant="light" />
-      <Section backgroundVariant="light">
-        <div className="space-y-8 pb-30">
+      <PageSection backgroundVariant="light" paddingVariant="medium">
+        <div className="mx-auto max-w-3xl">
           <BlogPostHeader
-            image={image?.url}
+            title={title}
             categories={categories}
             author={author}
             date={publishedOn}
-            title={title}
             slug={slug}
+            image={{
+              src: image?.url || graphicsData.fallback.data.src,
+              alt: '',
+            }}
           />
 
-          <BlogPostContainer>
-            <MarkdownContent>{content}</MarkdownContent>
-          </BlogPostContainer>
+          <MarkdownContent>{content}</MarkdownContent>
         </div>
-      </Section>
+      </PageSection>
     </>
   )
 }
