@@ -1,10 +1,8 @@
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { Social } from '@filecoin-foundation/ui/Social'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
-import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -12,68 +10,41 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { Card } from '@/components/Card'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
-import { PageSection } from '@/components/PageSection'
+import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
 import { DIGEST_SEO } from './constants/seo'
+import { digestIssues } from './data/issues'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getDigestArticlesData } from './utils/getDigestArticleData'
 
 export default async function Digest() {
-  const articles = await getDigestArticlesData()
-
   return (
     <PageLayout gap="large">
       <StructuredDataScript
         structuredData={generateStructuredData(DIGEST_SEO)}
       />
+
       <PageHeader
         kicker="DWeb Digest"
         title="A Publication Exploring DWeb Ideas and Principles"
         image={graphicsData.digest}
       />
 
-      <PageSection
-        kicker="Issue 1 | May 2024"
-        title="DWeb Digest: Inaugural Edition"
-      >
-        <CardGrid as="section" cols="smTwo">
-          {articles.map((article) => {
-            const { title, image, slug, articleNumber, description, authors } =
-              article
-
-            return (
-              <Card
-                key={slug}
-                as="article"
-                avatars={authors}
-                description={{ text: description, isClamped: true }}
-                tags={[{ text: `Article ${articleNumber}` }]}
-                cta={{
-                  href: `${PATHS.DIGEST.path}/${slug}`,
-                  text: 'Read Article',
-                  icon: CARET_RIGHT,
-                }}
-                image={{
-                  ...(image || graphicsData.imageFallback.data),
-                  alt: image?.alt || '',
-                  sizes: buildImageSizeProp({
-                    startSize: '100vw',
-                    sm: '340px',
-                    md: '470px',
-                    lg: '480px',
-                  }),
-                }}
-                title={{
-                  text: title,
-                }}
-              />
-            )
-          })}
-        </CardGrid>
-      </PageSection>
+      {digestIssues.map(({ number, date, title, description }) => (
+        <PageSectionWithImage
+          key={number}
+          kicker={`Issue ${number} | ${formatDate(date, 'MMM yyyy')}`}
+          title={`DWeb Digest: ${title}`}
+          image={graphicsData.dWebDigestCover}
+          description={description}
+          layout={Number(number) % 2 === 1 ? 'regular' : 'reversed'}
+          cta={{
+            href: PATHS.DIGEST.issue(number),
+            children: `Read Issue ${number}`,
+          }}
+        />
+      ))}
 
       <CTASection
         kicker="Social Media"

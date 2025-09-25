@@ -27,7 +27,12 @@ export const PATHS = {
   HOME: createPathConfig('/', 'Home'),
   ABOUT: createPathConfig('/about', 'About'),
   BLOG: createPathConfig('/blog', 'Blog', { hasEntries: true }),
-  DIGEST: createPathConfig('/digest', 'Digest', { hasEntries: true }),
+  DIGEST: {
+    ...createPathConfig('/digest', 'Digest', { hasEntries: true }),
+    issue: (issueNumber: string) => `/digest/issue-${issueNumber}` as const,
+    article: (issueNumber: string, slug: string) =>
+      `/digest/issue-${issueNumber}/${slug}` as const,
+  },
   FAQS: createPathConfig('/faqs', 'FAQs'),
   LEARNING_RESOURCES: createPathConfig(
     '/learning-resources',
