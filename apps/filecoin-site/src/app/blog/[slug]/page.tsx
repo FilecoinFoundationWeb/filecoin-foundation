@@ -52,12 +52,12 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
 export async function generateMetadata(props: BlogPostProps) {
   const { slug } = await props.params
-  const { image, seo } = await getBlogPostData(slug)
+  const { image, seo, excerpt } = await getBlogPostData(slug)
 
   return createMetadata({
     path: `${PATHS.BLOG.path}/${slug}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME}` },
-    description: seo.description,
+    description: seo?.description || excerpt,
     image: image?.url,
     openGraph: { type: 'article' },
   })

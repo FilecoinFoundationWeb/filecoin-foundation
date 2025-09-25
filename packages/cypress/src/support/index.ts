@@ -8,6 +8,7 @@ import { testVisualSnapshot } from '@filecoin-foundation/cypress/percy'
 // TODO: Revisit when Cypress fixes this known issue: https://github.com/cypress-io/cypress/issues/27204
 Cypress.on('uncaught:exception', (err) => {
   if (
+    err.message.includes('Hydration failed') ||
     err.message.includes(
       'Hydration failed because the initial UI does not match',
     ) ||

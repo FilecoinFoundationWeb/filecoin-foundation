@@ -8,22 +8,26 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
+type BlogPostFrontmatter = GenericEntryFrontmatter & {
+  excerpt: string
+}
+
 const { entriesPath: CONTENT_FOLDER, path: BLOG_PATH } = PATHS.BLOG
 
 describe('Blog Slug Page', () => {
   it(tests.metadata.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      cy.task<GenericEntryFrontmatter>(
+      cy.task<BlogPostFrontmatter>(
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
-      ).then(({ title, seo }) => {
-        const seoTitle = seo.title || title
+      ).then(({ title, seo, excerpt }) => {
+        const seoTitle = seo?.title || title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
         tests.metadata.fn({
           path: `${BLOG_PATH}/${slug}`,
           title: metaTitleWithSuffix,
-          description: seo.description,
+          description: seo?.description || excerpt,
           baseUrl: BASE_URL,
         })
       })
