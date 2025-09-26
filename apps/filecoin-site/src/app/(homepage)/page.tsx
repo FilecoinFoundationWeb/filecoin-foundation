@@ -43,7 +43,7 @@ import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 export default async function Home() {
   const featuredBlogPosts = getFeaturedBlogPosts({
-    posts: await getBlogPostsData(),
+    posts: await getBlogPostsData('en'),
     limit: 3,
   })
 
