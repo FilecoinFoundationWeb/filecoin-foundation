@@ -24,7 +24,7 @@ type BestForType =
   | 'Enterprises'
   | 'NFT projects'
 
-export const storageProviders = [
+export const filecoinStorageProviders = [
   {
     featured: false,
     name: 'Akave Cloud',
@@ -100,3 +100,7 @@ export const storageProviders = [
     logo: StorachaMiniatureLogo,
   },
 ] as const satisfies Array<StorageProvider>
+
+// export const otherStorageProviders = [
+//   {},
+// ] as const satisfies Array<StorageProvider>

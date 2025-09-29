@@ -4,6 +4,7 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 
 import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
@@ -18,14 +19,15 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SectionSubContent } from '@/components/SectionSubContent'
 
 import { StorageProviderCard } from './components/StorageProviderCard/StorageProviderCard'
 import { STORE_DATA_SEO } from './constants/seo'
-import { storageProviders } from './data/storageProviders'
+import { filecoinStorageProviders } from './data/storageProviders'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const featuredStorageProvider = findOrThrow(
-  storageProviders,
+  filecoinStorageProviders,
   (provider) => provider.featured,
 )
 
@@ -70,37 +72,92 @@ export default function StoreData() {
 
           <SectionDivider />
 
-          <CardGrid as="ul" variant="mdTwoLgThreeWide">
-            {storageProviders
-              .slice()
-              .filter((provider) => !provider.featured)
-              .sort((a, b) => a.name.localeCompare(b.name))
-              .map(
-                ({
-                  featured,
-                  name,
-                  description,
-                  bestFor,
-                  keyFeatures,
-                  url,
-                  logo,
-                }) => (
-                  <StorageProviderCard
-                    key={name}
-                    as="li"
-                    {...{
-                      featured,
-                      name,
-                      description,
-                      bestFor,
-                      keyFeatures,
-                      url,
-                      logo,
-                    }}
-                  />
-                ),
-              )}
-          </CardGrid>
+          <SectionSubContent
+            headingTag="h3"
+            title="Filecoin-aligned solutions"
+            description="Top storage solutions shaping the growth of the Filecoin network"
+          >
+            <CardGrid as="ul" variant="mdTwoLgThreeWide">
+              {filecoinStorageProviders
+                .slice()
+                .filter((provider) => !provider.featured)
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map(
+                  ({
+                    featured,
+                    name,
+                    description,
+                    bestFor,
+                    keyFeatures,
+                    url,
+                    logo,
+                  }) => (
+                    <StorageProviderCard
+                      key={name}
+                      as="li"
+                      {...{
+                        featured,
+                        name,
+                        description,
+                        bestFor,
+                        keyFeatures,
+                        url,
+                        logo,
+                      }}
+                    />
+                  ),
+                )}
+            </CardGrid>
+          </SectionSubContent>
+
+          <SectionDivider />
+
+          <SectionSubContent
+            centerCTA
+            headingTag="h3"
+            title="Other Filecoin-powered storage solutions"
+            description="Additional services offering diverse ways to store with Filecoin"
+            cta={
+              <Button
+                href={`${FILECOIN_FOUNDATION_URLS.ecosystemExplorer.href}?category=data-storage-management`}
+                variant="primary"
+              >
+                Explore other filecoin-powered storage solutions
+              </Button>
+            }
+          >
+            <CardGrid as="ul" variant="mdTwoLgThreeWide">
+              {filecoinStorageProviders
+                .slice()
+                .filter((provider) => !provider.featured)
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map(
+                  ({
+                    featured,
+                    name,
+                    description,
+                    bestFor,
+                    keyFeatures,
+                    url,
+                    logo,
+                  }) => (
+                    <StorageProviderCard
+                      key={name}
+                      as="li"
+                      {...{
+                        featured,
+                        name,
+                        description,
+                        bestFor,
+                        keyFeatures,
+                        url,
+                        logo,
+                      }}
+                    />
+                  ),
+                )}
+            </CardGrid>
+          </SectionSubContent>
         </SectionContent>
       </PageSection>
 
