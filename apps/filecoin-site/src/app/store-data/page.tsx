@@ -10,7 +10,6 @@ import { trustedByLogos } from '@/data/trustedByLogos'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -20,7 +19,6 @@ import { SectionContent } from '@/components/SectionContent'
 
 import { StorageProviderCard } from './components/StorageProviderCard/StorageProviderCard'
 import { STORE_DATA_SEO } from './constants/seo'
-import { filecoinFeatures } from './data/filecoinFeatures'
 import { storageProviders } from './data/storageProviders'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -62,25 +60,6 @@ export default function StoreData() {
           title="Trusted by industry leaders"
           logos={trustedByLogos}
         />
-      </PageSection>
-
-      <PageSection backgroundVariant="dark">
-        <SectionContent
-          title="Future-proof your data infrastructure"
-          description="Filecoin is a powerful alternative to traditional cloud storage, leveraging global, independent data centers. The decentralized network infrastructure ensures your data always remains secure and verifiable, so that you can store your data with confidence."
-        >
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
-            {filecoinFeatures.map(({ title, description, icon }) => (
-              <Card
-                key={title}
-                as="li"
-                title={title}
-                description={description}
-                icon={icon}
-              />
-            ))}
-          </CardGrid>
-        </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="light">
