@@ -25,7 +25,7 @@ const FEED = new Feed({
 async function generateRSS() {
   console.log('Starting RSS feed generation...')
 
-  const posts = await getBlogPostsData()
+  const posts = await getBlogPostsData('en')
   console.log(`Found ${posts.length} blog posts`)
 
   posts.forEach((post) => {

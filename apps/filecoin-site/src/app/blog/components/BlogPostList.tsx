@@ -20,7 +20,7 @@ type BlogPostListProps = {
   posts: Array<BlogPost>
 }
 
-const BLOG_POSTS_PER_PAGE = 6
+const BLOG_POSTS_PER_PAGE = 12
 const PAGINATION_INDEX_MAX_RANGE = 6
 
 export function BlogPostList({ posts }: BlogPostListProps) {
