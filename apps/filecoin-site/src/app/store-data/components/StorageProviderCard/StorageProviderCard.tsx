@@ -11,6 +11,7 @@ import { StorageProviderCardSection } from './StorageProviderCardSection'
 
 export type StorageProviderCardProps = {
   as: 'li' | 'div'
+  featured: boolean
   name: string
   description: string
   bestFor: Array<string>
@@ -21,6 +22,7 @@ export type StorageProviderCardProps = {
 
 export function StorageProviderCard({
   as: Tag,
+  featured,
   name,
   description,
   bestFor,
@@ -31,6 +33,12 @@ export function StorageProviderCard({
   return (
     <Tag>
       <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-8 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 pb-16 focus-within:bg-zinc-50 hover:bg-zinc-50">
+        {featured && (
+          <span className="absolute top-4 right-4">
+            <Badge variant="solid">Featured</Badge>
+          </span>
+        )}
+
         <div className="flex items-center gap-3">
           <Icon component={logo} size={40} />
 

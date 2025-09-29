@@ -75,18 +75,31 @@ export default function StoreData() {
               .slice()
               .filter((provider) => !provider.featured)
               .sort((a, b) => a.name.localeCompare(b.name))
-              .map(({ name, description, bestFor, keyFeatures, url, logo }) => (
-                <StorageProviderCard
-                  key={name}
-                  as="li"
-                  name={name}
-                  description={description}
-                  bestFor={bestFor}
-                  keyFeatures={keyFeatures}
-                  url={url}
-                  logo={logo}
-                />
-              ))}
+              .map(
+                ({
+                  featured,
+                  name,
+                  description,
+                  bestFor,
+                  keyFeatures,
+                  url,
+                  logo,
+                }) => (
+                  <StorageProviderCard
+                    key={name}
+                    as="li"
+                    {...{
+                      featured,
+                      name,
+                      description,
+                      bestFor,
+                      keyFeatures,
+                      url,
+                      logo,
+                    }}
+                  />
+                ),
+              )}
           </CardGrid>
         </SectionContent>
       </PageSection>

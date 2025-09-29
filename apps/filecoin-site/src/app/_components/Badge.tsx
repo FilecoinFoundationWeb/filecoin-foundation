@@ -9,6 +9,7 @@ const variantClasses = {
   primary: 'text-brand-950 border-brand-600',
   secondary: 'text-amber-950 border-amber-600',
   tertiary: 'text-red-950 border-red-600',
+  solid: 'text-white bg-brand-700',
 } as const
 
 export function Badge({ children, variant = 'primary' }: BadgeProps) {
