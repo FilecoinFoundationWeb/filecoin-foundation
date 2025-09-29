@@ -9,6 +9,8 @@ import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { Footer } from '@/components/Footer/Footer'
 
+import { DEFAULT_LOCALE, type Locale } from '@/i18n/locales'
+
 // funnelSans also has an italic version in the same directory. We don't use italics as of now so it's not imported here.
 const funnelSans = localFont({
   src: '../_fonts/Funnel_Sans/FunnelSans[wght].woff2',
@@ -28,10 +30,13 @@ const aspekta = localFont({
 
 type SiteLayoutProps = {
   children: React.ReactNode
-  locale: string
+  locale?: Locale
 }
 
-export function SiteLayout({ children, locale }: SiteLayoutProps) {
+export function SiteLayout({
+  children,
+  locale = DEFAULT_LOCALE,
+}: SiteLayoutProps) {
   return (
     <html
       lang={locale}
