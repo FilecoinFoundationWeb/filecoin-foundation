@@ -12,19 +12,21 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
+import type { Locale } from '@/i18n/locales'
+
 import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
 import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
-  params: Promise<SlugParams>
+  params: Promise<{ slug: string; locale: Locale }>
 }
 
 export default async function BlogPost({ params }: BlogPostProps) {
-  const { slug } = await params
+  const { slug, locale } = await params
 
-  const data = await getBlogPostData(slug, 'en')
+  const data = await getBlogPostData(slug, locale)
   const { image, categories, author, publishedOn, title, content } = data
 
   return (

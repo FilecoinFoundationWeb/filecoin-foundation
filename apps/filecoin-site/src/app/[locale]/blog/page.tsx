@@ -12,14 +12,22 @@ import { createMetadata } from '@/utils/createMetadata'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
+import type { Locale } from '@/i18n/locales'
+
 import { BlogPageHeader } from './components/BlogPageHeader'
 import { BlogPostList } from './components/BlogPostList'
 import { BLOG_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
-export default async function Blog() {
-  const posts = await getBlogPostsData('en')
+type BlogProps = {
+  params: Promise<{ locale: Locale }>
+}
+
+export default async function Blog({ params }: BlogProps) {
+  const { locale } = await params
+
+  const posts = await getBlogPostsData(locale)
   const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = sortedPosts[0]
 

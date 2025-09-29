@@ -28,6 +28,8 @@ import { SectionContentWrapper } from '@/components/SectionContentWrapper'
 import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
+import type { Locale } from '@/i18n/locales'
+
 import { BlogCard } from '../blog/components/BlogCard'
 import type { BlogPost } from '../blog/types/blogPostType'
 import { getBlogPostsData } from '../blog/utils/getBlogPostData'
@@ -40,9 +42,15 @@ import { filecoinByTheNumbers } from './data/filecoinByTheNumbers'
 import { joinVibrantCommunityImages } from './data/joinVibrantCommunityImages'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-export default async function Home() {
+type BlogProps = {
+  params: Promise<{ locale: Locale }>
+}
+
+export default async function Home({ params }: BlogProps) {
+  const { locale } = await params
+
   const featuredBlogPosts = getFeaturedBlogPosts({
-    posts: await getBlogPostsData('en'),
+    posts: await getBlogPostsData(locale),
     limit: 3,
   })
 
