@@ -33,18 +33,20 @@ export function StorageProviderCard({
   return (
     <Tag>
       <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-8 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 pb-16 focus-within:bg-zinc-50 hover:bg-zinc-50">
-        {featured && (
-          <span className="absolute top-4 right-4">
-            <Badge variant="solid">Featured</Badge>
-          </span>
-        )}
+        <div className="flex flex-col justify-between gap-10 sm:flex-row sm:items-center">
+          {featured && (
+            <span className="sm:order-2 sm:flex-row">
+              <Badge variant="solid">Featured</Badge>
+            </span>
+          )}
 
-        <div className="flex items-center gap-3">
-          <Icon component={logo} size={40} />
+          <div className="flex items-center gap-3">
+            <Icon component={logo} size={40} />
 
-          <Heading tag="h3" variant="card-heading">
-            {name}
-          </Heading>
+            <Heading tag="h3" variant="card-heading">
+              {name}
+            </Heading>
+          </div>
         </div>
 
         <p className="text-[var(--color-paragraph-text)]" title={description}>

@@ -9,9 +9,8 @@ import type { StorageProviderCardProps } from '../components/StorageProviderCard
 
 export type StorageProvider = Pick<
   StorageProviderCardProps,
-  'name' | 'description' | 'keyFeatures' | 'url' | 'logo'
+  'featured' | 'name' | 'description' | 'keyFeatures' | 'url' | 'logo'
 > & {
-  featured: boolean
   bestFor: Array<BestForType>
 }
 

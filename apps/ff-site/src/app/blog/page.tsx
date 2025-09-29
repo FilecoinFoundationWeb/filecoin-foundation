@@ -35,10 +35,10 @@ export default async function Blog() {
 
   return (
     <PageLayout>
-      x
       <StructuredDataScript
         structuredData={generateStructuredData(posts, seo)}
       />
+
       <PageHeader
         sectionDividerTitle="Featured"
         title={featuredPost.title}
