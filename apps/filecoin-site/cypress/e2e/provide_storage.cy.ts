@@ -3,7 +3,7 @@ import { tests } from '@filecoin-foundation/cypress/support'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { PROVIDE_STORAGE_SEO } from '@/provide-storage/constants/seo'
+import { PROVIDE_STORAGE_SEO } from '@/[locale]/provide-storage/constants/seo'
 
 const { path } = PATHS.PROVIDE_STORAGE
 const { title, description } = PROVIDE_STORAGE_SEO
