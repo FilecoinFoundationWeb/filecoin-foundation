@@ -13,7 +13,7 @@ type Languages = Record<Locale, { label: string; name: string }>
 
 export const LANGUAGES: Languages = {
   en: { label: 'EN', name: 'English' },
-  zh_CN: { label: '中文', name: 'Chinese' },
+  ['zh-cn']: { label: '中文', name: 'Chinese' },
 }
 
 export function NavigationLanguageToggle() {
