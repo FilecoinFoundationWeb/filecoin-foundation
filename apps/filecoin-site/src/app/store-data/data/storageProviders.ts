@@ -11,6 +11,7 @@ export type StorageProvider = Pick<
   StorageProviderCardProps,
   'name' | 'description' | 'keyFeatures' | 'url' | 'logo'
 > & {
+  featured: boolean
   bestFor: Array<BestForType>
 }
 
@@ -25,6 +26,7 @@ type BestForType =
 
 export const storageProviders = [
   {
+    featured: false,
     name: 'Akave Cloud',
     description: 'Enterprise-grade hot storage for AI & data lakes.',
     bestFor: ['Enterprises', 'AI/ML developers'],
@@ -37,6 +39,7 @@ export const storageProviders = [
     logo: AkaveMiniatureLogo,
   },
   {
+    featured: false,
     name: 'CIDgravity',
     description: 'Simple decentralized storage backend for Nextcloud.',
     bestFor: ['Developers'],
@@ -49,6 +52,7 @@ export const storageProviders = [
     logo: CIDgravityMiniatureLogo,
   },
   {
+    featured: false,
     name: 'Lighthouse',
     description: 'Perpetual, long-term data storage.',
     bestFor: ['Developers', 'NFT projects', 'Creators'],
@@ -61,6 +65,7 @@ export const storageProviders = [
     logo: LighthouseMiniatureLogo,
   },
   {
+    featured: false,
     name: 'Ramo',
     description: 'An open-access decentralized cloud network.',
     bestFor: ['Developers', 'Archival storage'],
@@ -69,6 +74,7 @@ export const storageProviders = [
     logo: RamoMiniatureLogo,
   },
   {
+    featured: false,
     name: 'Singularity CLI',
     description: 'Directly manage the full deal-making lifecycle on Filecoin.',
     bestFor: ['Advanced technical users'],
@@ -81,6 +87,7 @@ export const storageProviders = [
     logo: SingularityMiniatureLogo,
   },
   {
+    featured: true,
     name: 'Storacha',
     description: 'High-speed hot storage for fast data retrieval.',
     bestFor: ['Developers'],
