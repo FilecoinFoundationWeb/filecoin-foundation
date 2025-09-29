@@ -35,14 +35,6 @@ export default function StoreData() {
           <PageHeader
             title="Decentralized, secure storage for data that matters"
             description="A dynamic and powerful distributed storage network for your data."
-            cta={
-              <Button
-                href={`${PATHS.STORE_DATA.path}#store-on-filecoin`}
-                variant="primary"
-              >
-                Explore storage solutions
-              </Button>
-            }
           />
         </PageSection>
 
