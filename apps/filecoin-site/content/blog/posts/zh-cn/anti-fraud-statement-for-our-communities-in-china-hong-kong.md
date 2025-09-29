@@ -1,0 +1,40 @@
+---
+aliases:
+  - /zh-cn/blog/关于中国大陆及香港地区社区防范欺诈的声明
+  - /zh-cn/blog/china-antifraud
+author: ""
+categories:
+  - updates
+cover_feature: false
+date: "2018-12-10T08:00:00Z"
+dim_image: false
+double_column_inverted: false
+double_column_mode: false
+excerpt: >-
+  社区请注意：Protocol
+  Labs、IPFS和Filecoin团队为包括中国大陆和香港地区在内的世界各地社区开展的活动感到兴奋。在过去的一年里，我们开心地收到了来自中国大陆和香港地区社区志愿者的开源贡献，也高兴地看到许多关于我们项目的教育活动、网络讲座、见面会、讨论文章和其他社区活动。
+image:
+  alt: 关于中国大陆及香港地区社区防范欺诈的声明
+  url: /uploads/communities-main-header.webp
+main_feature: false
+main_feature_inverted: false
+related_article_1: ""
+related_article_2: ""
+related_article_3: ""
+share_image: /uploads/mining-community-call-english-social.webp
+title: 关于中国大陆及香港地区社区防范欺诈的声明
+_template: blog_detail_ch
+---
+
+**社区请注意**：Protocol Labs、IPFS和Filecoin团队为包括中国大陆和香港地区在内的世界各地社区开展的活动感到兴奋。在过去的一年里，我们开心地收到了来自中国大陆和香港地区社区志愿者的开源贡献，也高兴地看到许多关于我们项目的教育活动、网络讲座、见面会、讨论文章和其他社区活动。
+
+然而，我们被提醒，一些未获认可的个人和团体虚假地宣称参与到了Filecoin “测试网” 的矿工测试工作。**我们特此直接提醒我们在中国大陆和香港的社区成员：这些说法并不属实。**我们尚无Filecoin测试网安排，而且也没有与任何矿工合作。任何与Filecoin测试网相关的信息和动态更新，都会发布在Filecoin的官方[博客](https://filecoin.io/blog/)。
+
+此外，Protocol Labs、IPFS和Filecoin团队目前没有与任何中国大陆或香港地区的合作者签署过任何形式的合作伙伴、赞助、合资或者背书协议。到目前为止，Protocol Labs、IPFS和Filecoin团队也没有与任何中国大陆和香港地区的社区成员、矿工、矿机制造商、交易所、钱包、软件开发者、技术引领者或技术传道者形成合作伙伴关系。**任何人如声称在上述领域与我们团队有商业或者官方合作关系，我们强烈建议远离这些人士。**
+
+我们有时确实会和一些开源社区的志愿者进行联系，但是这些联系都不是正式的合作关系。任何及所有关于未来合作伙伴、关联单位、赞助、合资、背书协议，或者Filecoin测试网的信息和公告，都将发布在Filecoin的官方[博客](https://filecoin.io/blog/)。**我们不会背书在其他媒体或者社交渠道上发布的关于Protocol Labs、IPFS或者Filecoin的任何信息。请只关注我们的官方网站和博客** [**Protocol Labs**](https://protocol.ai/blog/)**、**[**IPFS**](https://blog.ipfs.tech/) **、**[**Filecoin**](https://filecoin.io/blog/) **，获得关于各个项目的信息。**
+
+感谢大家不断的支持。
+
+Protocol Labs
+Filecoin团队
