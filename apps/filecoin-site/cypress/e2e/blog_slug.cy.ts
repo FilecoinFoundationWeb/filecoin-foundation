@@ -13,13 +13,14 @@ type BlogPostFrontmatter = GenericEntryFrontmatter & {
 }
 
 const { entriesPath: CONTENT_FOLDER, path: BLOG_PATH } = PATHS.BLOG
+const ENGLISH_CONTENT_FOLDER = path.join(CONTENT_FOLDER, 'en')
 
 describe('Blog Slug Page', () => {
   it(tests.metadata.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+    cy.task<string>('getRandomSlug', ENGLISH_CONTENT_FOLDER).then((slug) => {
       cy.task<BlogPostFrontmatter>(
         'getEntryFrontmatter',
-        path.join(CONTENT_FOLDER, slug),
+        `${ENGLISH_CONTENT_FOLDER}/${slug}`,
       ).then(({ title, seo, excerpt }) => {
         const seoTitle = seo?.title || title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
@@ -35,13 +36,13 @@ describe('Blog Slug Page', () => {
   })
 
   it(tests.links.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+    cy.task<string>('getRandomSlug', ENGLISH_CONTENT_FOLDER).then((slug) => {
       tests.links.fn(`${BLOG_PATH}/${slug}`)
     })
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+    cy.task<string>('getRandomSlug', ENGLISH_CONTENT_FOLDER).then((slug) => {
       tests.visualSnapshot.fn(`${BLOG_PATH}/${slug}`)
     })
   })
