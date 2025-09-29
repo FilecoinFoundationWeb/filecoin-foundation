@@ -1,73 +1,66 @@
 ---
 aliases:
-  - /zh-cn/blog/可信配置环节顺利完成
-  - /zh-cn/blog/trusted-setup-complete
+  - /zh-cn/blog/trusted-setup-update
+  - /zh-cn/blog/更新-可信配置
 author: ""
 categories:
   - updates
-date: "2020-08-28T06:00:00Z"
+cover_feature: false
+date: "2020-06-11T04:00:00Z"
 dim_image: false
 double_column_inverted: false
 double_column_mode: false
 excerpt: >-
-  去年年底，我们圆满地完成了可信配置环节的第一阶段，也就是“Powers of
-  Tau”。今年7月我们完成了可信配置的第二阶段——为主网将要使用的6个逻辑电路生成安全参数。现在，我们可信配置的两个阶段都可以使用Filecoin主网的最终参数了！感谢所有参与的人！
+  去年年底，我们成功地完成了可信配置的第一阶段，也就是“powers of
+  tau”。自年底以来，我们的团队一直在为可信配置的第二阶段做准备。想要了解更多关于第二阶段的信息以及您可以帮助做出哪些贡献，请继续阅读！
+  如果您之前没有注册过但想参与的话，请填写此表!
 image:
-  alt: 环节
+  alt: Trusted setup ceremony
   url: /uploads/trusted-setup-update-main-header.webp
+main_feature: false
 main_feature_inverted: false
 related_article_1: ""
 related_article_2: ""
 related_article_3: ""
 share_image: /uploads/trusted-setup-update-english-social.webp
-title: 可信配置环节顺利完成
+title: 更新：可信配置
 _template: blog_detail_ch
 ---
 
-去年年底，我们圆满地完成了可信配置环节的第一阶段，也就是“Powers of Tau”。今年7月我们完成了可信配置的第二阶段——为主网将要使用的6个逻辑电路生成安全参数。现在，我们可信配置的两个阶段都可以使用Filecoin主网的最终参数了！感谢所有参与的人！
+去年年底，我们成功地完成了可信配置的第一阶段，也就是“powers of tau”。自年底以来，我们的团队一直在为可信配置的第二阶段做准备。想要了解更多关于第二阶段的信息以及您可以帮助做出哪些贡献，请继续阅读！
 
-### 回顾第一阶段
+**如果您之前没有注册过但想参与的话，请填写**[**此表**](https://forms.gle/XxLgsHmxdPjb7jJa9)**!**
 
-简要回顾一下，可信配置环节分为两个阶段。第一阶段，也称为“Powers of Tau”环节，适用于[Groth16 zk-SNARKs](https://eprint.iacr.org/2016/260.pdf)可证明的所有计算以及最大的计算量。由SNARK证明的计算用被称为逻辑电路的模型来表示。电路内计算的基本单位称为约束。约束的数量代表计算的大小。在我们的环节中，我们为任何不超过1.3亿个约束的Groth 16电路生成参数。
+## 第一阶段回顾
 
-在两个多月的时间里，来自世界各地的[贡献者](https://github.com/arielgabizon/perpetualpowersoftau#ceremony-progress)参与了生成用于Filecoin证明的安全可验证参数。我们再一次对所有参与和帮助可信配置第一阶段顺利完成的人们表示衷心地感谢！
+​简单提醒一下，可信配置环节分为两个阶段进行。第一阶段，也被称为“powers of tau”环节，适用于给定大小以下的所有[Groth16 zk-SNARKs](https://eprint.iacr.org/2016/260.pdf)。在我们的环节里，我们生成了BLS 381曲线上高达1亿大小的逻辑线路——目前BLS 381曲线上最大的线路！​在大约两个月的时间里来自时间各地的参与者贡献了自己的资源，参与生成安全参数以及以供所有人验证的公共证明。特別感謝參加第一階段的[個人和團隊](https://github.com/arielgabizon/perpetualpowersoftau#ceremony-progress)-沒有您的支持我們無法進入下一階段。​​
 
-![Participants](https://filecoin.io/vintage/images/blog/trusted-setup-participants.jpg)
+## 第二阶段
 
-### 回顾第二阶段
+随着临近主网启动，我们团队一直在为可信配置的下一阶段做准备。与第一阶段不同，第二阶段生成特定线路的参数。这意味着在第二阶段中，时空证明(PoST)和复制证明(PoReP)的参数都将特定于将要确定下来的的哈希算法、结构和扇区大小。这也意味着当我们将来对证明结构进行更新时，我们还需进行一次可信配置的第二阶段以生成新的安全参数集来与我们升级后的证明一起使用。
 
-6月中旬，我们开始了可信配置环节的第二阶段——该阶段主要为将要用于主网的6条逻辑电路生成安全参数。与第一阶段类似，第二阶段的输出只要链上其中一方是诚实的，其输出结果就是可信的。同样，来自世界各地的参与者参与了为Filecoin的证明生成安全可验证参数。对于第二阶段的参与者，感谢您对Filecoin临近主网中的关键部分作出的支持。
+对于我们的线路，我们将使用一种相对较新的哈希算法[Poseidon](https://eprint.iacr.org/2019/458.pdf)，该算法可以大大减少我们需要对线路所做的约束。此外，我们将使用Poseidon为**32GB**和**64GB**扇区的以下算法生成参数： _SDR PoRep_ Windowed PoST \* Winning PoST​
 
-| Participants                  |                              |
-| ----------------------------- | ---------------------------- |
-| Aztec / Ariel Gazibon         | Sigma Prime / Mehdi Zerouali |
-| Secbit                        | IPFSMain / Neo               |
-| Filecoin-vietnam.com          | DecentralTech                |
-| Filecoin / Whyrusleeping      | Filecoin / Nemo              |
-| BoringWang                    | Benjamin H                   |
-| Supranational                 | Coinsummer / Cobo / K        |
-| Hashquark / Allen             | Factor8 Solutions / Patrick  |
-| Filecoin / DrPeterVanNostrand | Finality Labs / Keyvan       |
-| Justin Drake                  | Filecoin / Porcuquine        |
-| Consensys / Joseph Chow       | Grandhelmsmen                |
-| DianCun                       | IPFSForce                    |
-| Ocean / Alex Corseru          | Troels Henriksen / Athas     |
-| Vulcanize / A. F. Dudley      | Kikakkz                      |
-| Filecoin / Magik              | Filecoin / Dignifiedquire    |
-| Zcash / Benjamin Winston      | JP Aumussen                  |
-| James Hanson                  | Angelov                      |
-| Consensys / Alexander Wade    |                              |
+## 我想成为志愿者。我需要做什么？
 
-### 环节中的这些输出是可信的吗？
+​如果您没有参与过，您只需填写[此表](https://forms.gle/XxLgsHmxdPjb7jJa9)！通过注册，您可以将您的详细信息添加到Filecoin团队在可信配置环节第二阶段之前可能联系的志愿者列表。鉴于环节的各种要求和各阶段的窗口期，也有可能一部分志愿者没有被我们联系加入。我们将在6月29日起开放第二阶段可信配置环节的社区参与。
 
-对于两个阶段来说，如果转录的部分是可验证的那输出结果就是可信的，可以相信 **_至少_** 有一位参与者没有泄露其贡献的随机性。因此，对于这两个阶段，我们都尝试聚集了各种不同类型的参与者——来自Filecoin生态内部的贡献者、相互竞争的矿工以及Web3社区外部的团队和个人。在此过程中，我们旨在降低串通风险并提高每个逻辑电路至少有一个贡献者是可信的可能性，从而保证输出的参数完整性。
+与我们第一阶段的流程类似，Filecoin团队将发出一个链接来安排参与环节的日程。在您的测试窗口期之前，您会收到有关需要下载的软件的详细说明以及进行环节的逐步说明。在实际的环节中，参与环节涉及下载多个文件、运行程序（将会提供说明）以及为下一个参与者上传输出。
 
-要验证我们主网逻辑电路的参数是否与参与者的输出相同，您可以按照[此处](https://github.com/filecoin-project/phase2-attestations/tree/a5f58bc31efbfdcd93f0207efe475c62a50ae13c/b288702#phase-2-validation)的说明操作.
+如果您希望与下一个阶段的流程保持同步更新，您可以加入[Slack](https://join.slack.com/t/filecoinproject/shared_invite/zt-dj58b7fq-weyaTEvjHoYF_ENkQHR6Ig)上的 **#fil-trustedsetup** 频道 ——我们将在那与参与者进行协调。​
 
-### 下一步发展
+## 参与需要多长时间？我需要什么样的计算机？
 
-对于主网，不需要任何其他操作——Filecoin的证明部分随时可以使用！
+以下概述了环节第二阶段的部分内容以及所需的时间： _首先，您将下载环节中前一个参与者的输出文件（约60GB）。_ 接下来，您需要将数据在指定的软件上运行。 \_请注意，计算时间是取决于您计算机的规格。我们下面的样本计算时间和规格仅供参考
 
-但是，Filecoin团队已经在考虑未来升级我们的证明以提高协议的性能和可用性。当升级进行时，我们将开始可信配置第二阶段的迭代以为新的逻辑电路生成安全参数。
+| 证明               | Ram要求 | 要求   | 预计完成时间 |
+| ------------------ | ------- | ------ | ------------ |
+| SDR PoRep 32GB     | 250GiB  | 150GiB | 36 hrs       |
+| SDR PoRep 64GB     | 250GiB  | 150GiB | 36 hrs       |
+| Windowed Post 32GB | 250GiB  | 150GiB | 36 hrs       |
+| Windowed Post 64GB | 250GiB  | 150GiB | 36 hrs       |
+| Winning Post 32GB  | 8GiB    | 0.5GiB | 10-15 min.   |
+| Winning Post 64GB  | 8GiB    | 0.5GiB | 10-15 min.   |
 
-如果您想加入参与者列表，请填写[此表](https://forms.gle/oJaT1v1Kyge4FiK6A)和加入我们[Slack channel](https://filecoin.io/slack)的#fil-trustedsetup频道以跟踪最新动态。
+- 最后，您需要上传处理后的数据（约40GB）。
+- 我们这边的验证节点将会检查您提交的内容是否有效并确保下一位参与者可以从经过您验证的贡献开始。​**还有其他问题？**​欢迎随时通过[聊天室](https://github.com/filecoin-project/community)
