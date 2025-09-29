@@ -1,11 +1,11 @@
 'use client'
 
-import { useState } from 'react'
-
 import { Button } from '@headlessui/react'
 import { clsx } from 'clsx'
+import { useLocale } from 'next-intl'
 
-import { LOCALES, DEFAULT_LOCALE, type Locale } from '@/i18n/locales'
+import { LOCALES, type Locale } from '@/i18n/locales'
+import { useRouter, usePathname } from '@/i18n/navigation'
 
 import { desktopStyle } from './NavigationMainLink'
 
@@ -17,7 +17,9 @@ export const LANGUAGES: Languages = {
 }
 
 export function NavigationLanguageToggle() {
-  const [selectedLocale, setSelectedLocale] = useState<Locale>(DEFAULT_LOCALE)
+  const currentLocale = useLocale()
+  const router = useRouter()
+  const pathname = usePathname()
 
   return (
     <div className="flex items-center gap-4 font-medium">
@@ -29,9 +31,12 @@ export function NavigationLanguageToggle() {
             key={locale}
             type="button"
             aria-label={`Switch site language to ${name}`}
-            aria-current={selectedLocale === locale}
+            aria-current={currentLocale === locale}
             className={clsx(desktopStyle, 'cursor-pointer')}
-            onClick={() => setSelectedLocale(locale)}
+            onClick={() => {
+              // setSelectedLocale(locale)
+              router.replace(pathname, { locale })
+            }}
           >
             {label}
           </Button>

@@ -1,9 +1,13 @@
+import createNextIntlPlugin from 'next-intl/plugin'
+
 import { createNextConfig } from '@filecoin-foundation/next-config'
 
 import { redirects as rawRedirects } from './redirects'
 
+const withNextIntl = createNextIntlPlugin()
+
 /** @type {import('next').NextConfig} */
-export default createNextConfig({
+const nextConfig = createNextConfig({
   imageRemotePatterns: [],
   redirects: async () => rawRedirects,
   sentry: {
@@ -11,3 +15,5 @@ export default createNextConfig({
     authTokenEnvVar: 'SENTRY_AUTH_TOKEN_FILECOIN_SITE',
   },
 })
+
+export default withNextIntl(nextConfig)
