@@ -12,7 +12,7 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
-import { getBlogPostData } from '../utils/getBlogPostData'
+import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
 import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -50,6 +50,11 @@ export default async function BlogPost({ params }: BlogPostProps) {
       </PageSection>
     </>
   )
+}
+
+export async function generateStaticParams() {
+  const entries = await getBlogPostsData('en')
+  return entries.map(({ slug }) => ({ slug }))
 }
 
 export async function generateMetadata(props: BlogPostProps) {
