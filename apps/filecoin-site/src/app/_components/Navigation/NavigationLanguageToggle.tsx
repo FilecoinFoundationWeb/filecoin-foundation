@@ -5,33 +5,33 @@ import { useState } from 'react'
 import { Button } from '@headlessui/react'
 import { clsx } from 'clsx'
 
+import { LOCALES, DEFAULT_LOCALE, type Locale } from '@/i18n/locales'
+
 import { desktopStyle } from './NavigationMainLink'
 
-const LANGUAGES = [
-  { key: 'en', label: 'EN', name: 'English' },
-  { key: 'zh_CN', label: '中文', name: 'Chinese' },
-] as const
+type Languages = Record<Locale, { label: string; name: string }>
 
-type Language = (typeof LANGUAGES)[number]
+export const LANGUAGES: Languages = {
+  en: { label: 'EN', name: 'English' },
+  zh_CN: { label: '中文', name: 'Chinese' },
+}
 
 export function NavigationLanguageToggle() {
-  const [selectedLanguage, setSelectedLanguage] = useState<Language>(
-    LANGUAGES[0],
-  )
+  const [selectedLocale, setSelectedLocale] = useState<Locale>(DEFAULT_LOCALE)
 
   return (
     <div className="flex items-center gap-4 font-medium">
-      {LANGUAGES.map((language) => {
-        const { key, label, name } = language
+      {LOCALES.map((locale) => {
+        const { label, name } = LANGUAGES[locale]
 
         return (
           <Button
-            key={key}
+            key={locale}
             type="button"
             aria-label={`Switch site language to ${name}`}
-            aria-current={selectedLanguage.key === key}
+            aria-current={selectedLocale === locale}
             className={clsx(desktopStyle, 'cursor-pointer')}
-            onClick={() => setSelectedLanguage(language)}
+            onClick={() => setSelectedLocale(locale)}
           >
             {label}
           </Button>

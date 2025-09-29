@@ -95,6 +95,7 @@ export const config = [
               position: 'before',
             },
             { pattern: '@/styles/**', group: 'internal', position: 'before' },
+            { pattern: '@/i18n/**', group: 'internal', position: 'before' },
             {
               pattern: '*.+(css|scss|sass|less)',
               group: 'index',
