@@ -10,6 +10,7 @@ import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'
 
 export type StorageProviderCardProps = {
+  as: 'li' | 'div'
   name: string
   description: string
   bestFor: Array<string>
@@ -19,6 +20,7 @@ export type StorageProviderCardProps = {
 }
 
 export function StorageProviderCard({
+  as: Tag,
   name,
   description,
   bestFor,
@@ -27,7 +29,7 @@ export function StorageProviderCard({
   logo,
 }: StorageProviderCardProps) {
   return (
-    <li>
+    <Tag>
       <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-8 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 pb-16 focus-within:bg-zinc-50 hover:bg-zinc-50">
         <div className="flex items-center gap-3">
           <Icon component={logo} size={40} />
@@ -65,6 +67,6 @@ export function StorageProviderCard({
           {`Learn more about ${name}`}
         </CTALink>
       </article>
-    </li>
+    </Tag>
   )
 }

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 
 import { PATHS } from '@/constants/paths'
 
@@ -16,11 +17,17 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
+import { SectionDivider } from '@/components/SectionDivider'
 
 import { StorageProviderCard } from './components/StorageProviderCard/StorageProviderCard'
 import { STORE_DATA_SEO } from './constants/seo'
 import { storageProviders } from './data/storageProviders'
 import { generateStructuredData } from './utils/generateStructuredData'
+
+const featuredStorageProvider = findOrThrow(
+  storageProviders,
+  (provider) => provider.featured,
+)
 
 export default function StoreData() {
   return (
@@ -59,13 +66,19 @@ export default function StoreData() {
           title="Store on Filecoin"
           description="Find the perfect storage solution for your data on Filecoin."
         >
+          <StorageProviderCard as="div" {...featuredStorageProvider} />
+
+          <SectionDivider />
+
           <CardGrid as="ul" variant="mdTwoLgThreeWide">
             {storageProviders
               .slice()
+              .filter((provider) => !provider.featured)
               .sort((a, b) => a.name.localeCompare(b.name))
               .map(({ name, description, bestFor, keyFeatures, url, logo }) => (
                 <StorageProviderCard
                   key={name}
+                  as="li"
                   name={name}
                   description={description}
                   bestFor={bestFor}
