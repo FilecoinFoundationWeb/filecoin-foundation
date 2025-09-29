@@ -125,39 +125,7 @@ export default function StoreData() {
                 Explore other filecoin-powered storage solutions
               </Button>
             }
-          >
-            <CardGrid as="ul" variant="mdTwoLgThreeWide">
-              {filecoinStorageProviders
-                .slice()
-                .filter((provider) => !provider.featured)
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map(
-                  ({
-                    featured,
-                    name,
-                    description,
-                    bestFor,
-                    keyFeatures,
-                    url,
-                    logo,
-                  }) => (
-                    <StorageProviderCard
-                      key={name}
-                      as="li"
-                      {...{
-                        featured,
-                        name,
-                        description,
-                        bestFor,
-                        keyFeatures,
-                        url,
-                        logo,
-                      }}
-                    />
-                  ),
-                )}
-            </CardGrid>
-          </SectionSubContent>
+          />
         </SectionContent>
       </PageSection>
 
