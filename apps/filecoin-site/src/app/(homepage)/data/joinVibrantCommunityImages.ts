@@ -1,8 +1,8 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
-import codeOnScreen from '@/assets/images/code-on-screen.webp'
 import conference from '@/assets/images/conference.webp'
-import microphone from '@/assets/images/microphone.webp'
+import panelDiscussion from '@/assets/images/panel-discussion-speaker-with-microphone.webp'
+import techPresentation from '@/assets/images/tech-presentation-audience-raising-hands.webp'
 
 export const joinVibrantCommunityImages = [
   {
@@ -11,12 +11,12 @@ export const joinVibrantCommunityImages = [
   },
 
   {
-    data: microphone,
-    alt: 'A close-up of a microphone on a stand with a blurred audience in the background, suggesting a public speaking or performance setting.',
+    data: panelDiscussion,
+    alt: 'A man speaks into a microphone during a discussion panel, smiling while other participants listen attentively beside him.',
   },
 
   {
-    data: codeOnScreen,
-    alt: 'A laptop screen displaying code written in Go language, showing a struct definition and functions for managing funds.',
+    data: techPresentation,
+    alt: 'A woman gives a presentation to a seated audience, several participants raising their hands to ask questions in a modern meeting room.',
   },
 ] as const satisfies Array<StaticImageProps>
