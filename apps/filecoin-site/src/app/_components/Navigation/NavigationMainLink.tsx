@@ -1,14 +1,16 @@
 'use client'
 
-import Link, { type LinkProps } from 'next/link'
+import type { ComponentProps } from 'react'
+
 import { usePathname } from 'next/navigation'
 
 import { clsx } from 'clsx'
-import type { Route } from 'next'
 
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
-import type { PathValues } from '@/constants/paths'
+import { Link } from '@/i18n/navigation'
+
+type LinkProps = ComponentProps<typeof Link>
 
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'px-5 py-6',
@@ -32,8 +34,8 @@ const mobileStyle = clsx(
 type NavigationLinkProps = {
   on: 'mobile' | 'desktop'
   label: string
-  href: Route
-  onNavigate?: LinkProps<PathValues>['onNavigate']
+  href: string
+  onNavigate?: LinkProps['onNavigate']
 }
 
 export function NavigationMainLink({

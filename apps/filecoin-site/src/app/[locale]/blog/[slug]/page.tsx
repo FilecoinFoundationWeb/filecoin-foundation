@@ -1,5 +1,4 @@
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'

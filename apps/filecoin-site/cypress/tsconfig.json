@@ -4,7 +4,6 @@
     "baseUrl": "..",
     "paths": {
       "@/*": ["src/app/*"],
-      "@/blog/*": ["src/app/blog/*"],
       "@/build-on-filecoin/*": ["src/app/build-on-filecoin/*"],
       "@/case-studies/*": ["src/app/case-studies/*"],
       "@/community-hub/*": ["src/app/community-hub/*"],

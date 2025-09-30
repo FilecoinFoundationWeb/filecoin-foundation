@@ -6,7 +6,7 @@ import { Feed } from 'feed'
 import { BLOG_RSS_PATH, PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { getBlogPostsData } from '../src/app/[locale]/blog/utils/getBlogPostData'
 
 const BLOG_BASE_URL = `${BASE_URL}${PATHS.BLOG.path}`
 
