@@ -10,6 +10,8 @@ import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'
 
 export type StorageProviderCardProps = {
+  as: 'li' | 'div'
+  featured: boolean
   name: string
   description: string
   bestFor: Array<string>
@@ -19,6 +21,8 @@ export type StorageProviderCardProps = {
 }
 
 export function StorageProviderCard({
+  as: Tag,
+  featured,
   name,
   description,
   bestFor,
@@ -27,14 +31,22 @@ export function StorageProviderCard({
   logo,
 }: StorageProviderCardProps) {
   return (
-    <li>
+    <Tag>
       <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-8 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 pb-16 focus-within:bg-zinc-50 hover:bg-zinc-50">
-        <div className="flex items-center gap-3">
-          <Icon component={logo} size={40} />
+        <div className="flex flex-col justify-between gap-10 sm:flex-row sm:items-center">
+          {featured && (
+            <span className="sm:order-2 sm:flex-row">
+              <Badge variant="solid">Featured</Badge>
+            </span>
+          )}
 
-          <Heading tag="h3" variant="card-heading">
-            {name}
-          </Heading>
+          <div className="flex items-center gap-3">
+            <Icon component={logo} size={40} />
+
+            <Heading tag="h3" variant="card-heading">
+              {name}
+            </Heading>
+          </div>
         </div>
 
         <p className="text-[var(--color-paragraph-text)]" title={description}>
@@ -65,6 +77,6 @@ export function StorageProviderCard({
           {`Learn more about ${name}`}
         </CTALink>
       </article>
-    </li>
+    </Tag>
   )
 }
