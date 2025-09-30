@@ -5,26 +5,26 @@ import { PATHS } from '@/constants/paths'
 
 import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
-const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesPath
+type Locale = 'en' | 'zh-CN'
 
-export async function getBlogPostData(slug: string) {
-  const data = await getBlogPostMarkdownData(slug)
+export async function getBlogPostData(slug: string, locale: Locale) {
+  const data = await getBlogPostMarkdownData(slug, locale)
   return transformBlogPostData(data)
 }
 
-export async function getBlogPostsData() {
+export async function getBlogPostsData(locale: Locale) {
   const allPosts = await getAllMarkdownData({
-    directoryPath: BLOG_DIRECTORY_PATH,
+    directoryPath: getDirectoryPathForLocale(locale),
     zodSchema: BlogPostFrontmatterSchema,
   })
 
   return allPosts.map(transformBlogPostData)
 }
 
-function getBlogPostMarkdownData(slug: string) {
+function getBlogPostMarkdownData(slug: string, locale: Locale) {
   return getMarkdownData({
     slug,
-    directoryPath: BLOG_DIRECTORY_PATH,
+    directoryPath: getDirectoryPathForLocale(locale),
     zodSchema: BlogPostFrontmatterSchema,
   })
 }
@@ -34,9 +34,14 @@ function transformBlogPostData(
 ) {
   return {
     ...post,
+    publishedOn: post.date,
     seo: {
       title: post.seo?.title || post.title,
       description: post.seo?.description || post.excerpt,
     },
   }
+}
+
+function getDirectoryPathForLocale(locale: Locale) {
+  return PATHS.BLOG.entriesPath + `/${locale}`
 }

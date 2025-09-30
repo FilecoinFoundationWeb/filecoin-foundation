@@ -4,10 +4,77 @@ export function blogFields(collection = 'post'): Array<TinaField> {
   return [
     {
       type: 'string',
+      name: 'aliases',
+      label: 'Alias',
+      description: 'Any alternative urls that should redirect to this post',
+      list: true,
+    },
+    {
+      type: 'string',
       name: 'title',
       label: 'Title',
       isTitle: true,
       required: true,
+    },
+    {
+      type: 'string',
+      name: 'excerpt',
+      label: 'Excerpt',
+      description:
+        'A ~160 char summary of the post, this is used for the social metadata',
+      required: true,
+    },
+    {
+      type: 'image',
+      name: 'share_image',
+      label: 'Social Image',
+      required: false,
+    },
+    {
+      type: 'object',
+      name: 'image',
+      label: 'Header Image',
+      required: false,
+      fields: [
+        {
+          type: 'image',
+          name: 'url',
+          label: 'url',
+        },
+        {
+          type: 'string',
+          name: 'alt',
+          label: 'alt',
+        },
+      ],
+    },
+    {
+      type: 'string',
+      name: 'author',
+      label: 'Author',
+    },
+    {
+      type: 'datetime',
+      name: 'date',
+      label: 'Date',
+      required: true,
+      ui: {
+        dateFormat: 'YYYY-MM-DD',
+        timeFormat: 'HH:mm',
+      },
+    },
+    {
+      type: 'string',
+      name: 'categories',
+      label: 'Categories',
+      options: ['updates', 'interviews', 'awards', 'events'],
+      list: true,
+      required: true,
+    },
+    {
+      type: 'boolean',
+      name: 'main_feature_inverted',
+      label: 'Main Feature - Inverted Mode',
     },
     {
       type: 'boolean',
@@ -50,66 +117,6 @@ export function blogFields(collection = 'post'): Array<TinaField> {
       ],
     },
     {
-      type: 'string',
-      name: 'excerpt',
-      label: 'Excerpt',
-      description:
-        'A ~160 char summary of the post, this is used for the social metadata',
-      required: true,
-    },
-    {
-      type: 'image',
-      name: 'share_image',
-      label: 'Social Image',
-      required: false,
-    },
-    {
-      type: 'object',
-      name: 'image',
-      label: 'Header Image',
-      required: false,
-      fields: [
-        {
-          type: 'image',
-          name: 'url',
-          label: 'url',
-        },
-        {
-          type: 'string',
-          name: 'alt',
-          label: 'alt',
-        },
-      ],
-    },
-    {
-      type: 'string',
-      name: 'author',
-      label: 'Author',
-    },
-    {
-      type: 'datetime',
-      name: 'published_on',
-      label: 'Published On',
-      required: true,
-      ui: {
-        dateFormat: 'YYYY-MM-DD',
-        timeFormat: 'HH:mm',
-      },
-    },
-    {
-      type: 'string',
-      name: 'categories',
-      label: 'Categories',
-      options: ['updates', 'interviews', 'awards', 'events'],
-      list: true,
-      required: true,
-    },
-    {
-      type: 'boolean',
-      name: 'main_feature_inverted',
-      label: 'Main Feature - Inverted Mode',
-    },
-    {
       type: 'boolean',
       name: 'double_column_mode',
       label: 'Double Column Mode',
@@ -143,17 +150,10 @@ export function blogFields(collection = 'post'): Array<TinaField> {
       collections: [collection],
     },
     {
-      type: 'string',
-      name: 'aliases',
-      label: 'Alias',
-      description: 'Any alternative urls that should redirect to this post',
-      list: true,
-    },
-    {
       type: 'object',
       name: 'seo',
       label: 'SEO',
-      required: true,
+      required: false,
       fields: [
         {
           type: 'string',
@@ -161,7 +161,7 @@ export function blogFields(collection = 'post'): Array<TinaField> {
           label: 'Meta Description',
           description:
             'A brief description of the post for search engines (150-160 characters recommended)',
-          required: true,
+          required: false,
         },
       ],
     },

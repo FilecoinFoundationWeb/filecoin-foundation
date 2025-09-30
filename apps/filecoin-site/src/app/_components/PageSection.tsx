@@ -10,6 +10,7 @@ type PageSectionProps = {
 const paddingVariants = {
   default: 'py-24 md:py-32',
   wide: 'py-28 md:py-40',
+  medium: 'py-12 md:py-20',
   compact: 'pt-10 pb-28 md:pb-32',
   none: 'py-0',
   topOnly: 'pt-24 md:pt-32 pb-0',

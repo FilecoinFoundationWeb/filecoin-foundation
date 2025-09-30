@@ -1,13 +1,11 @@
 import { clsx } from 'clsx'
 
 import { Heading, type HeadingProps } from '@/components/Heading'
-import { Kicker, type KickerProps } from '@/components/Kicker'
 
 import { ButtonRow, type ButtonRowProps } from './ButtonRow'
 
 type PageHeaderProps = {
   title: HeadingProps['children']
-  kicker?: KickerProps['children']
   description?: string
   centered?: boolean
   cta?: ButtonRowProps['buttons']
@@ -15,7 +13,6 @@ type PageHeaderProps = {
 
 export function PageHeader({
   title,
-  kicker,
   description,
   centered,
   cta,
@@ -24,12 +21,10 @@ export function PageHeader({
     <header>
       <div
         className={clsx(
-          'flex max-w-3xl flex-col gap-6 text-balance',
+          'flex max-w-3xl flex-col gap-6',
           centered && 'mx-auto text-center',
         )}
       >
-        {kicker && <Kicker>{kicker}</Kicker>}
-
         <Heading tag="h1" variant="page-heading">
           {title}
         </Heading>

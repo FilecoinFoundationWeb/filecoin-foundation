@@ -19,7 +19,7 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
   const rehypePlugins = [rehypeRaw, rehypeSlug]
 
   return (
-    <div className="prose">
+    <div className="prose sm:prose-lg md:prose-xl">
       <ReactMarkdown
         rehypePlugins={rehypePlugins}
         remarkPlugins={[remarkGfm]}

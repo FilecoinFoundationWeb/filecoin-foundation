@@ -4,16 +4,17 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { Navigation } from '@/components/Navigation/Navigation'
-import { Section } from '@/components/Section'
+import { PageSection } from '@/components/PageSection'
 
-import { BlogPostContainer } from '../components/BlogPostContainer'
-import { BlogPostHeader } from '../components/BlogPostHeader'
-import { getBlogPostData } from '../utils/getBlogPostData'
+import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
+import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
@@ -23,41 +24,47 @@ type BlogPostProps = {
 export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params
 
-  const data = await getBlogPostData(slug)
+  const data = await getBlogPostData(slug, 'en')
   const { image, categories, author, publishedOn, title, content } = data
 
   return (
     <>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <Navigation backgroundVariant="light" />
-      <Section backgroundVariant="light">
-        <div className="space-y-8 pb-30">
+      <PageSection backgroundVariant="light" paddingVariant="medium">
+        <div className="mx-auto max-w-3xl">
           <BlogPostHeader
-            image={image?.url}
+            title={title}
             categories={categories}
             author={author}
             date={publishedOn}
-            title={title}
             slug={slug}
+            image={{
+              src: image?.url || graphicsData.fallback.data.src,
+              alt: '',
+            }}
           />
 
-          <BlogPostContainer>
-            <MarkdownContent>{content}</MarkdownContent>
-          </BlogPostContainer>
+          <MarkdownContent>{content}</MarkdownContent>
         </div>
-      </Section>
+      </PageSection>
     </>
   )
 }
 
+export async function generateStaticParams() {
+  const entries = await getBlogPostsData('en')
+  return entries.map(({ slug }) => ({ slug }))
+}
+
 export async function generateMetadata(props: BlogPostProps) {
   const { slug } = await props.params
-  const { image, seo } = await getBlogPostData(slug)
+  const { image, seo, excerpt } = await getBlogPostData(slug, 'en')
 
   return createMetadata({
     path: `${PATHS.BLOG.path}/${slug}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME}` },
-    description: seo.description,
+    description: seo?.description || excerpt,
     image: image?.url,
     openGraph: { type: 'article' },
   })

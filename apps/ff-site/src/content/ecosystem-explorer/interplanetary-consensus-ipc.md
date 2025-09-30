@@ -5,6 +5,8 @@ updated-on: 2025-05-14T20:24:00.000Z
 published-on: 2025-05-14T20:24:00.000Z
 email: encrypted::U2FsdGVkX1/LTWc8XEQOWp2clMtK7lN3M3gbI/yDOb60u5RbKJDcxagLG6H5ZyXg
 full-name: encrypted::U2FsdGVkX1+UXKlpPEmK7oFxK9a02ZKxgcw1AmSGJZ4=
+image:
+  src: /assets/images/ipclogo.webp
 category: developer-tools
 description: Interplanetary Consensus (IPC) is a framework that enables
   on-demand horizontal scalability of networks.
