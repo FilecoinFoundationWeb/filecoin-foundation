@@ -1,3 +1,4 @@
+import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { Social } from '@filecoin-foundation/ui/Social'
 
 import { socialLinksWithIcons } from '@/constants/socialConfig'
@@ -5,9 +6,10 @@ import { socialLinksWithIcons } from '@/constants/socialConfig'
 import Logo from '@/assets/logos/filecoin-logo-full.svg'
 
 import { Container } from '@/components/Container'
-import { LogoLink } from '@/components/LogoLink'
 import { Section } from '@/components/Section'
 import { SectionDivider } from '@/components/SectionDivider'
+
+import { Link } from '@/i18n/navigation'
 
 import { LegalSection } from './LegalSection'
 import { NavigationItems } from './NavigationItems'
@@ -24,6 +26,7 @@ export function Footer() {
                 logo={Logo}
                 height={32}
                 color="text-[var(--color-text-base)]"
+                LinkComponent={Link}
               />
               <NewsletterForm />
               <Social linksWithIcons={socialLinksWithIcons} />
