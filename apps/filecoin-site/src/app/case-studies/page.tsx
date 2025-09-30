@@ -21,17 +21,11 @@ export default function CaseStudies() {
     <>
       <GradientContainer>
         <graphicsData.caseStudiesGradient.data className="absolute -top-[40vw] -right-[25vw] -z-10 hidden overflow-visible md:-top-[45vw] md:right-0 md:block md:w-[50vw] lg:-top-[50vw] lg:w-[45vw] xl:w-[40vw] 2xl:w-[33vw]" />
-
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Powering the preservation of critical datasets"
             description="From AI datasets to government archives, leading institutions trust Filecoin to securely and resiliently store their most valuable datasets."
-            cta={
-              <Button href="#featured-datasets" variant="primary">
-                Explore datasets stored on Filecoin
-              </Button>
-            }
           />
         </PageSection>
       </GradientContainer>
