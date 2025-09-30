@@ -22,6 +22,7 @@ import { SimpleCard } from '@/components/SimpleCard'
 import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbed'
 
 import { LEARN_SEO } from './constants/seo'
+import { filecoinFeatures } from './data/filecoinFeatures'
 import { learnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
 import { resilientInternetCta } from './data/resilientInternetCta'
 import { whatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
@@ -70,17 +71,39 @@ export default function Learn() {
           centerCTA
           title="What is Filecoin used for?"
           description="From archival backups to Web3 apps, Filecoin offers decentralized, secure, and verifiable storage at scale. "
-          cta={[
+          cta={
             <Button href={PATHS.CASE_STUDIES.path} variant="primary">
               Explore case studies
-            </Button>,
-            <Button href={PATHS.STORE_DATA.path} variant="ghost">
-              Store data
-            </Button>,
-          ]}
+            </Button>
+          }
         >
           <CardGrid as="ul" variant="smTwoXlFourWider">
             {whatIsFilecoinUsedFor.map(({ title, description, icon }) => (
+              <Card
+                key={title}
+                as="li"
+                title={title}
+                description={description}
+                icon={icon}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="dark">
+        <SectionContent
+          centerCTA
+          title="Future-proof your data infrastructure"
+          description="Filecoin is a powerful alternative to traditional cloud storage, leveraging global, independent data centers. The decentralized network infrastructure ensures your data always remains secure and verifiable, so that you can store your data with confidence."
+          cta={
+            <Button href={PATHS.STORE_DATA.path} variant="ghost">
+              Store data
+            </Button>
+          }
+        >
+          <CardGrid as="ul" variant="smTwoLgThreeWider">
+            {filecoinFeatures.map(({ title, description, icon }) => (
               <Card
                 key={title}
                 as="li"
