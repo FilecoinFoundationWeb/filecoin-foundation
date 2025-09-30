@@ -48,7 +48,7 @@ Filecoin、IPFS、Ethereum等生态具备解决上述问题的基础条件，但
 
 ## **数据经济**
 
-当下，数据网络经济运营模式并不完善。个别公司形成了垄断攫取暴利，与此同时，大量数据未被使用，潜力未能释放，究其原因是世界数据经济不够*开放。*
+当下，数据网络经济运营模式并不完善。个别公司形成了垄断攫取暴利，与此同时，大量数据未被使用，潜力未能释放，究其原因是世界数据经济不够_开放。_
 
 不妨将Filecoin视作云存储界的Airbnb。目前，新兴数据中心和数据解决方案无法与云存储市场的大玩家抗衡。Airbnb能让个人与酒店集团争夺市场，同理，Filecoin[赋能个人、小型和新兴企业](https://filecoin.io/blog/posts/more-than-storage-business-opportunities-on-filecoin/)，利用Zettabytes规模的闲置存储对抗数据垄断。
 
