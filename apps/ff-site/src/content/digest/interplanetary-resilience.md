@@ -35,7 +35,7 @@ The [lunar economy](https://www.nasa.gov/humans-in-space/growing-the-lunar-econo
 
 As is renewed activity from the public sector (e.g. the Artemis mission).
 
-In recognition of this, the government has been pushing heavily towards open modular systems at all layers of the [stack](https://arstechnica.com/space/2024/03/the-us-government-seems-serious-about-developing-a-lunar-economy/). This is a stark departure from expensive, proprietary, long-term vendor contracts of old: a change [now enshrined in law](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title10-section4401&num=0&edition=prelim).
+In recognition of this, the government has been pushing heavily towards open modular systems at all layers of the [stack](https://arstechnica.com/space/2024/03/the-us-government-seems-serious-about-developing-a-lunar-economy/). This is a stark departure from expensive, proprietary, long-term vendor contracts of old: a change now enshrined in law.
 
 This is critical as the industry is _legally_ mandated to work towards open and interoperable standards –– which naturally dovetails with the technologies that have been developed in the broader Web3 community. If we want to help shape the direction of this industry, we need to be a part of the conversation.
 
