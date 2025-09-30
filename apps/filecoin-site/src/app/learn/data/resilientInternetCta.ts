@@ -1,6 +1,7 @@
 import {
-  CodeSimpleIcon,
   ArchiveIcon,
+  ChatsCircleIcon,
+  CodeSimpleIcon,
   DatabaseIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
@@ -23,5 +24,10 @@ export const resilientInternetCta = [
     title: 'Become a storage provider',
     href: PATHS.PROVIDE_STORAGE.path,
     icon: DatabaseIcon,
+  },
+  {
+    title: 'Join the community',
+    href: PATHS.COMMUNITY_HUB.path,
+    icon: ChatsCircleIcon,
   },
 ] as const satisfies Array<LinkCardData>
