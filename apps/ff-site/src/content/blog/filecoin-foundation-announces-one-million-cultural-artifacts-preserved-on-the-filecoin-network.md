@@ -16,7 +16,7 @@ seo:
 
 Filecoin Foundation (FF) today announced a new wave of cultural and scientific datasets that are now being preserved on the Filecoin network, contributed by organizations including the Digital Public Library of America (DPLA), Earth Species Project (ESP), Internet Archive, Oceanic Whispers with RadicalXChange, Prelinger Archives, and Rohingya Project, bringing the total number of culturally significant digital artifacts stored on Filecoin to more than one million. 
 
-Previously, in January, FF [announced ](/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage)more than 500,000 culturally significant digital artifacts preserved, including recent datasets from Flickr Foundation, MIT Open Learning, Smithsonian Institute, and others. 
+Previously, in January, FF [announced](/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage)more than 500,000 culturally significant digital artifacts preserved, including recent datasets from Flickr Foundation, MIT Open Learning, Smithsonian Institute, and others. 
 
 Data powers progress across fields from AI to education and research, yet most data remains vulnerable because of the single points of failure created by centralized infrastructure. The recent [Google Cloud outage](https://www.engadget.com/big-tech/google-cloud-outages-spotify-discord-snapchat-and-more-were-down-for-hours-193156868.html), which disrupted Google, Spotify, Discord, and Cloudflare for hours, is just one example of how a single point of failure can cut off millions from essential services.
 
