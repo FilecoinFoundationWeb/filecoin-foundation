@@ -1,6 +1,7 @@
-import { LogoLink, type LogoLinkProps } from '@filecoin-foundation/ui/LogoLink'
-
 import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
+
+import { LogoLink, type LogoLinkProps } from '@/components/LogoLink'
+
 
 type HomeLogoLinkProps = Pick<LogoLinkProps, 'onNavigate'>
 

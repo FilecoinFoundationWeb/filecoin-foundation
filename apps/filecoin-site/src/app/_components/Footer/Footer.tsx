@@ -1,4 +1,3 @@
-import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { Social } from '@filecoin-foundation/ui/Social'
 
 import { socialLinksWithIcons } from '@/constants/socialConfig'
@@ -6,6 +5,7 @@ import { socialLinksWithIcons } from '@/constants/socialConfig'
 import Logo from '@/assets/logos/filecoin-logo-full.svg'
 
 import { Container } from '@/components/Container'
+import { LogoLink } from '@/components/LogoLink'
 import { Section } from '@/components/Section'
 import { SectionDivider } from '@/components/SectionDivider'
 

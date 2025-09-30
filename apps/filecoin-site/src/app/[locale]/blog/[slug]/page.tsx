@@ -54,13 +54,18 @@ export default async function BlogPost({ params }: BlogPostProps) {
 }
 
 export async function generateStaticParams() {
-  const entries = await getBlogPostsData('en')
-  return entries.map(({ slug }) => ({ slug }))
+  const enEntries = await getBlogPostsData('en')
+  const zhEntries = await getBlogPostsData('zh-cn')
+
+  return [
+    ...enEntries.map(({ slug }) => ({ slug, locale: 'en' })),
+    ...zhEntries.map(({ slug }) => ({ slug, locale: 'zh-cn' })),
+  ]
 }
 
 export async function generateMetadata(props: BlogPostProps) {
-  const { slug } = await props.params
-  const { image, seo, excerpt } = await getBlogPostData(slug, 'en')
+  const { slug, locale } = await props.params
+  const { image, seo, excerpt } = await getBlogPostData(slug, locale)
 
   return createMetadata({
     path: `${PATHS.BLOG.path}/${slug}`,
