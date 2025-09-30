@@ -146,7 +146,7 @@ export default function Learn() {
           title="Be a part of a more resilient internet"
           description="Filecoin is more than storage; it's an innovative, open ecosystem built to preserve humanity's most important information."
         >
-          <CardGrid as="ul" variant="lgThree">
+          <CardGrid as="ul" variant="mdTwo">
             {resilientInternetCta.map(({ title, href, icon }) => (
               <LinkCard
                 key={title}
