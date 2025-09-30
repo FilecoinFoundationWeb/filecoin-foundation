@@ -4,7 +4,11 @@ import { useSearchParams } from 'next/navigation'
 
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
-import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import { Search, useSearch } from '@filecoin-foundation/ui/Search'
+import {
+  PAGE_KEY,
+  SEARCH_KEY,
+} from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { CardGrid } from '@/components/CardGrid'
@@ -29,8 +33,14 @@ export function BlogPostList({ posts }: BlogPostListProps) {
 
   const [selectedCategory] = useCategoryState()
 
-  const { filteredEntries } = useFilter({
+  const { searchResults } = useSearch({
+    searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: posts,
+    searchBy: ['title', 'excerpt'],
+  })
+
+  const { filteredEntries } = useFilter({
+    entries: searchResults,
     filterQuery: selectedCategory,
     filterFn: postMatchesCategory,
   })
@@ -43,6 +53,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
 
   return (
     <div className="space-y-15">
+      <Search />
       <BlogCategoryFilter />
 
       <CardGrid as="ul" variant="mdTwoLgThreeWide">

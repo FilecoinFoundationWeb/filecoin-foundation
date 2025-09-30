@@ -11,6 +11,6 @@ export function useCategoryState() {
     URL_SEARCH_PARAM,
     parseAsStringLiteral([...BLOG_CATEGORY_VALUES, DEFAULT_FILTER_ID])
       .withDefault(DEFAULT_FILTER_ID)
-      .withOptions({ shallow: false }),
+      .withOptions({ shallow: true }),
   )
 }
