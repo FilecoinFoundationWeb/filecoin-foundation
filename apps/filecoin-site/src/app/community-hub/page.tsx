@@ -31,17 +31,11 @@ export default function CommunityHub() {
     <>
       <GradientContainer overlay clipY>
         <graphicsData.communityHubGradient.data className="absolute top-0 -right-[75vw] -z-20 w-[200vw] overflow-visible sm:-top-[30vw] md:-top-[50vw] lg:-top-[5vw] lg:-right-[20vw] lg:w-[90vw] 2xl:top-0 2xl:-right-[10vw] 2xl:w-[50vw]" />
-
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Build, connect and grow with the Filecoin community"
             description="A global network of builders, researchers, advocates and creators is shaping the future of Filecoin. Plug into the community and start contributing in your own way."
-            cta={
-              <Button href="#get-involved" variant="primary">
-                Explore how to get involved
-              </Button>
-            }
           />
         </PageSection>
       </GradientContainer>
