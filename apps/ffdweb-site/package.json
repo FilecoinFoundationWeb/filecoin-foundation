@@ -8,7 +8,7 @@
     "prebuild": "tsx scripts/convertYamlToJson.ts",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --fix .",
+    "lint": "eslint src --fix",
     "test:cypress": "cypress run",
     "test:cypress:open": "cypress open",
     "test:cypress:percy": "percy exec -- cypress run"

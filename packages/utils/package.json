@@ -37,7 +37,7 @@
     "./types/*": "./src/types/*.ts"
   },
   "scripts": {
-    "lint": "eslint --fix ."
+    "lint": "eslint src --fix"
   },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",

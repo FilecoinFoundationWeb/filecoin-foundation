@@ -15,7 +15,7 @@
     "build": "npm run generate-rss && next build",
     "dev": "next dev",
     "generate-rss": "tsx scripts/generateRSS.ts",
-    "lint": "eslint --fix .",
+    "lint": "eslint src --fix",
     "start": "next start",
     "test:cypress": "cypress run",
     "test:cypress:open": "cypress open",
