@@ -162,7 +162,7 @@ export default async function Home() {
             </Button>,
           ]}
         >
-          <div className="m-auto w-full max-w-sm md:max-w-3xl">
+          <div className="m-auto w-full max-w-sm md:max-w-4xl">
             <ComparisonTable />
           </div>
         </SectionContent>
