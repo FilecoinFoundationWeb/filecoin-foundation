@@ -3,6 +3,8 @@ import { type LocalButtonProps } from '@filecoin-foundation/utils/types/buttonTy
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
+import { Link } from '@/i18n/navigation'
+
 const variantClasses = {
   primary: 'button--primary',
   ghost: 'button--ghost',
@@ -16,6 +18,7 @@ export function Button({ children, variant, ...props }: ButtonProps) {
     <SharedButton
       variants={{ options: variantClasses, selected: variant }}
       baseDomain={BASE_DOMAIN}
+      LinkComponent={Link}
       {...props}
     >
       {children}
