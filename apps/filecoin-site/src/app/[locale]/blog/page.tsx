@@ -13,6 +13,7 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
 import type { Locale } from '@/i18n/locales'
+import { routing } from '@/i18n/routing'
 
 import { BlogPageHeader } from './components/BlogPageHeader'
 import { BlogPostList } from './components/BlogPostList'
@@ -58,6 +59,10 @@ export default async function Blog({ params }: BlogProps) {
       </PageSection>
     </>
   )
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }))
 }
 
 export const metadata = createMetadata({
