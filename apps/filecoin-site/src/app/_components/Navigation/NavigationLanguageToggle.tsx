@@ -35,7 +35,6 @@ export function NavigationLanguageToggle() {
             aria-current={currentLocale === locale}
             className={clsx(desktopStyle, 'cursor-pointer')}
             onClick={() => {
-              // setSelectedLocale(locale)
               router.replace(pathname, { locale })
             }}
           >
