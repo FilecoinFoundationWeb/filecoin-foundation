@@ -28,7 +28,7 @@ import { SectionContentWrapper } from '@/components/SectionContentWrapper'
 import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
-import type { Locale } from '@/i18n/locales'
+import type { LocaleParams } from '@/i18n/types'
 
 import { BlogCard } from '../blog/components/BlogCard'
 import type { BlogPost } from '../blog/types/blogPostType'
@@ -43,7 +43,7 @@ import { joinVibrantCommunityImages } from './data/joinVibrantCommunityImages'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogProps = {
-  params: Promise<{ locale: Locale }>
+  params: Promise<LocaleParams>
 }
 
 export default async function Home({ params }: BlogProps) {

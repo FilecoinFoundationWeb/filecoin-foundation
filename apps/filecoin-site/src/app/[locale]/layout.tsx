@@ -9,6 +9,7 @@ import { ROOT_METADATA } from '@/constants/siteMetadata'
 import { SiteLayout } from '@/components/SiteLayout'
 
 import { routing } from '@/i18n/routing'
+import type { LocaleParams } from '@/i18n/types'
 
 import '@/styles/globals.css'
 
@@ -16,7 +17,7 @@ export const metadata = ROOT_METADATA
 
 type RootLayoutProps = {
   children: React.ReactNode
-  params: Promise<{ locale: string }>
+  params: Promise<LocaleParams>
 }
 
 export default async function RootLayout({
