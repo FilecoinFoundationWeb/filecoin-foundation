@@ -1,6 +1,4 @@
-import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
-
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
+import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
 import { footerNavigationItems } from '../Navigation/constants/navigation'
 
@@ -16,9 +14,7 @@ export function NavigationItems() {
                 key={href}
                 className="text-sm/5 text-[var(--color-paragraph-text)]"
               >
-                <SmartTextLink href={href} baseDomain={BASE_DOMAIN}>
-                  {label}
-                </SmartTextLink>
+                <SmartTextLink href={href}>{label}</SmartTextLink>
               </li>
             ))}
           </ul>

@@ -1,12 +1,12 @@
-import type { ComponentProps } from 'react'
+import type { ComponentProps, ComponentType } from 'react'
 
 import { clsx } from 'clsx'
 import Link from 'next/link'
 
-type LinkProps = ComponentProps<typeof Link>
+type LinkProps = Omit<ComponentProps<typeof Link>, 'locale'>
 
-type InternalTextLinkProps = LinkProps & {
-  LinkComponent?: React.ComponentType<Omit<LinkProps, 'locale'>>
+export type InternalTextLinkProps = LinkProps & {
+  LinkComponent?: ComponentType<LinkProps>
 }
 
 export function InternalTextLink({
