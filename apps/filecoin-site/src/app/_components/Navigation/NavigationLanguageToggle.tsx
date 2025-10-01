@@ -4,8 +4,9 @@ import { Button } from '@headlessui/react'
 import { clsx } from 'clsx'
 import { useLocale } from 'next-intl'
 
-import { LOCALES, type Locale } from '@/i18n/locales'
+import { type Locale } from '@/i18n/locales'
 import { useRouter, usePathname } from '@/i18n/navigation'
+import { routing } from '@/i18n/routing'
 
 import { desktopStyle } from './NavigationMainLink'
 
@@ -23,7 +24,7 @@ export function NavigationLanguageToggle() {
 
   return (
     <div className="flex items-center gap-4 font-medium">
-      {LOCALES.map((locale) => {
+      {routing.locales.map((locale) => {
         const { label, name } = LANGUAGES[locale]
 
         return (

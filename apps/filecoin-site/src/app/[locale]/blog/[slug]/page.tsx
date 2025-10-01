@@ -14,6 +14,7 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
 import type { Locale } from '@/i18n/locales'
+import { routing } from '@/i18n/routing'
 
 import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
@@ -59,13 +60,16 @@ export default async function BlogPost({ params }: BlogPostProps) {
 }
 
 export async function generateStaticParams() {
-  const enEntries = await getBlogPostsData('en')
-  const zhEntries = await getBlogPostsData('zh-cn')
+  const locales = routing.locales
 
-  return [
-    ...enEntries.map(({ slug }) => ({ slug, locale: 'en' })),
-    ...zhEntries.map(({ slug }) => ({ slug, locale: 'zh-cn' })),
-  ]
+  const entriesByLocale = await Promise.all(locales.map(getBlogPostsData))
+
+  const params = entriesByLocale.flatMap((entries, index) => {
+    const locale = locales[index]
+    return entries.map(({ slug }) => ({ slug, locale }))
+  })
+
+  return params
 }
 
 export async function generateMetadata(props: BlogPostProps) {
