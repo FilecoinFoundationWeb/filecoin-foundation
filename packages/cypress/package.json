@@ -23,7 +23,7 @@
     "@filecoin-foundation/typescript-config": "0.0.0"
   },
   "peerDependencies": {
-    "cypress": "^15.2.0",
+    "cypress": "^15.3.0",
     "@percy/cypress": "^3.1.6"
   }
 }
