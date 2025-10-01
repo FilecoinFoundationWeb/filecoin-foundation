@@ -2,22 +2,27 @@ UNUSED ASSETS REPORT
 ===================
 
 ff-site:
-  public/assets/images/devsummit7_social2-squooshed.webp
-  Total: 1
+  public/assets/images/logo-1.webp
+  public/assets/images/devsummit7_virtual_square.png
+  public/assets/images/cdid-protocol-logo.png
+  Total: 3
 
 ffdweb-site:
   Total: 0
 
 filecoin-site:
-  public/assets/images/FilecoinNewsHeader.webp
-  public/assets/graphics/earth-globe.webp
-  public/assets/graphics/earth-from-space-at-night.webp
-  public/assets/graphics/diagram.webp
-  Total: 4
+  public/assets/images/screenshot-2025-06-24_08_55_25.png
+  public/assets/images/screenshot-2025-06-24_08_55_05.png
+  public/assets/images/screenshot-2025-06-24_08_54_51.png
+  public/assets/images/screenshot-2025-06-24_08_54_26.png
+  public/assets/images/DevSummit6_Social_Header.webp
+  public/assets/images/170366980-78f835fb-8168-4914-9a75-d62b1a157133.webp
+  public/assets/images/042425-PDP_BlogHeader.webp
+  Total: 7
 
 uxit:
   Total: 0
 
-Total unused: 5
-Total deleted: 5
-Generated: 2025-09-01T02:43:36.068Z
+Total unused: 10
+Total deleted: 10
+Generated: 2025-10-01T02:40:07.348Z
