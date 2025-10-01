@@ -4,9 +4,9 @@ import { Button } from '@headlessui/react'
 import { clsx } from 'clsx'
 import { useLocale } from 'next-intl'
 
-import { type Locale } from '@/i18n/locales'
 import { useRouter, usePathname } from '@/i18n/navigation'
 import { routing } from '@/i18n/routing'
+import { type Locale } from '@/i18n/types'
 
 import { desktopStyle } from './NavigationMainLink'
 

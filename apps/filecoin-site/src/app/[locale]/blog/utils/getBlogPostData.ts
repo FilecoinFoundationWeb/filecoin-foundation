@@ -3,7 +3,7 @@ import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 
 import { PATHS } from '@/constants/paths'
 
-import type { Locale } from '@/i18n/locales'
+import type { Locale } from '@/i18n/types'
 
 import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 

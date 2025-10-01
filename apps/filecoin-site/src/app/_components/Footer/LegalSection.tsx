@@ -1,6 +1,5 @@
 import type { Route } from 'next'
 
-
 import { FILECOIN_FOUNDATION_URL } from '@/constants/siteMetadata'
 
 import FilecoinFoundationLogo from '@/assets/logos/filecoin-foundation-logo.svg'
