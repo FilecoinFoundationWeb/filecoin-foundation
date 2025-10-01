@@ -8,16 +8,16 @@
     "prebuild": "tsx scripts/convertYamlToJson.ts",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix",
+    "lint": "eslint --fix .",
     "test:cypress": "cypress run",
     "test:cypress:open": "cypress open",
     "test:cypress:percy": "percy exec -- cypress run"
   },
   "dependencies": {
     "@filecoin-foundation/hooks": "0.0.0",
+    "@filecoin-foundation/next-config": "0.0.0",
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
-    "@filecoin-foundation/next-config": "0.0.0",
     "@headlessui/react": "^2.2.9",
     "@headlessui/tailwindcss": "^0.2.2",
     "@phosphor-icons/react": "^2.1.10",
@@ -42,6 +42,7 @@
     "zod": "^4.1.11"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "@filecoin-foundation/cypress": "0.0.0",
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
@@ -53,6 +54,8 @@
     "@types/react": "19.1.15",
     "@types/react-dom": "19.1.9",
     "cypress": "^15.3.0",
+    "eslint": "^9.36.0",
+    "eslint-config-next": "^15.5.4",
     "frontmatter-markdown-loader": "^3.7.0",
     "postcss": "^8.5.6",
     "tsx": "^4.20.6",
