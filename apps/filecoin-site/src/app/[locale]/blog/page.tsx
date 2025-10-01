@@ -1,7 +1,5 @@
 import { Suspense } from 'react'
 
-import { setRequestLocale } from 'next-intl/server'
-
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
@@ -29,9 +27,6 @@ type BlogProps = {
 
 export default async function Blog({ params }: BlogProps) {
   const { locale } = await params
-
-  // Enable static rendering
-  setRequestLocale(locale)
 
   const posts = await getBlogPostsData(locale)
   const sortedPosts = sortPostsByDateDesc(posts)
@@ -64,10 +59,6 @@ export default async function Blog({ params }: BlogProps) {
       </PageSection>
     </>
   )
-}
-
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }))
 }
 
 export const metadata = createMetadata({

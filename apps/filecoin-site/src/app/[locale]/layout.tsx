@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
+import { setRequestLocale } from 'next-intl/server'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 import { ROOT_METADATA } from '@/constants/siteMetadata'
@@ -28,6 +29,9 @@ export default async function RootLayout({
     notFound()
   }
 
+  // Enable static rendering
+  setRequestLocale(locale)
+
   return (
     <NextIntlClientProvider>
       <NuqsAdapter>
@@ -35,4 +39,8 @@ export default async function RootLayout({
       </NuqsAdapter>
     </NextIntlClientProvider>
   )
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }))
 }
