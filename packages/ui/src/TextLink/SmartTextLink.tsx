@@ -1,12 +1,22 @@
+import type { AnchorHTMLAttributes } from 'react'
+
 import type { Route } from 'next'
 
-import { type BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 
 import { ExternalTextLink } from './ExternalTextLink'
 import { InternalTextLink } from './InternalTextLink'
 
-export function SmartTextLink({ href, baseDomain, ...rest }: BaseLinkProps) {
+type SmartTextLinkProps = {
+  href: string
+  baseDomain: string
+} & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>
+
+export function SmartTextLink({
+  href,
+  baseDomain,
+  ...rest
+}: SmartTextLinkProps) {
   const isExternal = isExternalLink(href, baseDomain)
 
   return isExternal ? (

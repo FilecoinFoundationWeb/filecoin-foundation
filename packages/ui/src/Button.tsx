@@ -21,7 +21,7 @@ export type ButtonProps<Variants extends VariantClasses> = {
   icon?: IconProps['component']
   href?: BaseLinkProps['href']
   baseDomain: string
-  LinkComponent?: ComponentType<BaseLinkProps>
+  LinkComponent?: ComponentType<Omit<BaseLinkProps, 'LinkComponent'>>
 } & React.ComponentPropsWithoutRef<'button'>
 
 type ButtonInnerProps = Pick<
