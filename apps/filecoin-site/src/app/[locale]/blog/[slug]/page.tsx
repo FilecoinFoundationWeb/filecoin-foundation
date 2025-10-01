@@ -1,3 +1,5 @@
+import { setRequestLocale } from 'next-intl/server'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
@@ -24,6 +26,9 @@ type BlogPostProps = {
 
 export default async function BlogPost({ params }: BlogPostProps) {
   const { slug, locale } = await params
+
+  // Enable static rendering
+  setRequestLocale(locale)
 
   const data = await getBlogPostData(slug, locale)
   const { image, categories, author, publishedOn, title, content } = data
