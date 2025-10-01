@@ -55,7 +55,7 @@ export function Column({
     >
       <div
         className={clsx(
-          'w-full border-b py-8 text-2xl font-medium',
+          'w-full border-b py-6 text-2xl font-medium',
           styles.borderColor,
         )}
       >
