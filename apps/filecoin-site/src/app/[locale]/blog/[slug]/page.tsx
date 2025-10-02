@@ -17,7 +17,6 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
-
 import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
 import { BlogPostHeader } from './components/BlogPostHeader'
@@ -30,7 +29,6 @@ type BlogPostProps = {
 export default async function BlogPost({ params }: BlogPostProps) {
   const { slug, locale } = await params
 
-  // Enable static rendering
   setRequestLocale(locale)
 
   const data = await getBlogPostData(slug, locale)

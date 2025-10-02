@@ -30,7 +30,6 @@ export default async function RootLayout({
     notFound()
   }
 
-  // Enable static rendering
   setRequestLocale(locale)
 
   return (
