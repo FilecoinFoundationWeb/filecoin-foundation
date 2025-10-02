@@ -3,7 +3,7 @@ import { tests } from '@filecoin-foundation/cypress/support'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { BUILD_ON_FILECOIN_SEO } from '@/[locale]/build-on-filecoin/constants/seo'
+import { BUILD_ON_FILECOIN_SEO } from '@/build-on-filecoin/constants/seo'
 
 const { path } = PATHS.BUILD_ON_FILECOIN
 const { title, description } = BUILD_ON_FILECOIN_SEO

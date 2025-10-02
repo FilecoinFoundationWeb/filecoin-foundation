@@ -3,7 +3,6 @@ import { setRequestLocale } from 'next-intl/server'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import type { SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
-
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
@@ -22,7 +21,6 @@ import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
 import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
-
 
 type BlogPostProps = {
   params: Promise<SlugParams & LocaleParams>

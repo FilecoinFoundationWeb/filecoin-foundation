@@ -3,7 +3,7 @@ import { tests } from '@filecoin-foundation/cypress/support'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { TERMS_OF_USE_SEO } from '@/[locale]/terms-of-use/constants/seo'
+import { TERMS_OF_USE_SEO } from '@/terms-of-use/constants/seo'
 
 const { path } = PATHS.TERMS_OF_USE
 const { title, description } = TERMS_OF_USE_SEO

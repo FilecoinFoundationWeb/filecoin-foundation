@@ -3,7 +3,7 @@ import { tests } from '@filecoin-foundation/cypress/support'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { LEARN_SEO } from '@/[locale]/learn/constants/seo'
+import { LEARN_SEO } from '@/learn/constants/seo'
 
 const { path } = PATHS.LEARN
 const { title, description } = LEARN_SEO

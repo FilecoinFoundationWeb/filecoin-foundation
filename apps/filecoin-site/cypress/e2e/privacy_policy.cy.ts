@@ -3,7 +3,7 @@ import { tests } from '@filecoin-foundation/cypress/support'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { PRIVACY_POLICY_SEO } from '@/[locale]/privacy-policy/constants/seo'
+import { PRIVACY_POLICY_SEO } from '@/privacy-policy/constants/seo'
 
 const { path } = PATHS.PRIVACY_POLICY
 const { title, description } = PRIVACY_POLICY_SEO

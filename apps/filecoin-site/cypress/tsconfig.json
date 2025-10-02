@@ -3,18 +3,9 @@
   "compilerOptions": {
     "baseUrl": "..",
     "paths": {
-      "@/*": ["src/app/*"],
-      "@/build-on-filecoin/*": ["src/app/build-on-filecoin/*"],
-      "@/case-studies/*": ["src/app/case-studies/*"],
-      "@/community-hub/*": ["src/app/community-hub/*"],
+      "@/*": ["src/app/[locale]/*"],
       "@/constants/*": ["src/app/_constants/*"],
       "@/cypress/*": ["cypress/*"],
-      "@/learn/*": ["src/app/learn/*"],
-      "@/onboarding/*": ["src/app/provide-storage/onboarding/*"],
-      "@/privacy-policy/*": ["src/app/privacy-policy/*"],
-      "@/provide-storage/*": ["src/app/provide-storage/*"],
-      "@/store-data/*": ["src/app/store-data/*"],
-      "@/terms-of-service/*": ["src/app/terms-of-service/*"],
       "@/utils/*": ["src/app/_utils/*"]
     }
   },

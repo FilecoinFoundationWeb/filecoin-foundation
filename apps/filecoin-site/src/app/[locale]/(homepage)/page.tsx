@@ -30,10 +30,6 @@ import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import type { LocaleParams } from '@/i18n/types'
 
-import { BlogCard } from '../blog/components/BlogCard'
-import type { BlogPost } from '../blog/types/blogPostType'
-import { getBlogPostsData } from '../blog/utils/getBlogPostData'
-
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { MetricCard } from './components/MetricCard'
 import { TranslatedPageHeader } from './components/TranslatedPageHeader'
@@ -41,6 +37,10 @@ import { communityLinks } from './data/communityLinks'
 import { filecoinByTheNumbers } from './data/filecoinByTheNumbers'
 import { joinVibrantCommunityImages } from './data/joinVibrantCommunityImages'
 import { generateStructuredData } from './utils/generateStructuredData'
+
+import { BlogCard } from '@/blog/components/BlogCard'
+import type { BlogPost } from '@/blog/types/blogPostType'
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 type BlogProps = {
   params: Promise<LocaleParams>

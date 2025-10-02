@@ -1,12 +1,11 @@
-
 import {
   SmartTextLink as SharedSmartTextLink,
   type SmartTextLinkProps as SharedSmartTextLinkProps,
 } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 
-import { Link } from '@/i18n/navigation'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import { BASE_DOMAIN } from '@/_constants/siteMetadata'
+import { Link } from '@/i18n/navigation'
 
 type SmartTextLinkProps = Omit<
   SharedSmartTextLinkProps,

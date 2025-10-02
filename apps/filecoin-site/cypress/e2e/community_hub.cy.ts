@@ -3,7 +3,7 @@ import { tests } from '@filecoin-foundation/cypress/support'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { COMMUNITY_SEO } from '@/[locale]/community-hub/constants/seo'
+import { COMMUNITY_SEO } from '@/community-hub/constants/seo'
 
 const { path } = PATHS.COMMUNITY_HUB
 const { title, description } = COMMUNITY_SEO
