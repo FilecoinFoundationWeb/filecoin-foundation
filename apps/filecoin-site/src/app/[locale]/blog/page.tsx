@@ -1,5 +1,7 @@
 import { Suspense } from 'react'
 
+import type { LocaleParams } from '@/i18n/types'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
@@ -12,7 +14,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
-import type { LocaleParams } from '@/i18n/types'
 
 import { BlogPageHeader } from './components/BlogPageHeader'
 import { BlogPostList } from './components/BlogPostList'

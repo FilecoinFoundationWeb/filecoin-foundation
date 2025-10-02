@@ -1,3 +1,5 @@
+import { Link } from '@/i18n/navigation'
+
 import {
   SmartTextLink as SharedSmartTextLink,
   type SmartTextLinkProps as SharedSmartTextLinkProps,
@@ -5,7 +7,6 @@ import {
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import { Link } from '@/i18n/navigation'
 
 type SmartTextLinkProps = Omit<
   SharedSmartTextLinkProps,

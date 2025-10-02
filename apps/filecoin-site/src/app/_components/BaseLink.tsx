@@ -1,3 +1,5 @@
+import { Link } from '@/i18n/navigation'
+
 import {
   BaseLink as SharedBaseLink,
   type BaseLinkProps as SharedBaseLinkProps,
@@ -5,7 +7,6 @@ import {
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import { Link } from '@/i18n/navigation'
 
 export type BaseLinkProps = Omit<
   SharedBaseLinkProps,

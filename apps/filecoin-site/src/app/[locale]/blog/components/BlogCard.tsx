@@ -1,3 +1,5 @@
+import { Link } from '@/i18n/navigation'
+
 import {
   CardImage,
   type CardImageProps,
@@ -10,7 +12,6 @@ import { graphicsData } from '@/data/graphicsData'
 import { Heading } from '@/components/Heading'
 import { TagGroup } from '@/components/TagGroup/TagGroup'
 
-import { Link } from '@/i18n/navigation'
 
 import type { BlogPost } from '../types/blogPostType'
 

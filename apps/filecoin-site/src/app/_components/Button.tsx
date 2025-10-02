@@ -1,9 +1,10 @@
+import { Link } from '@/i18n/navigation'
+
 import { Button as SharedButton } from '@filecoin-foundation/ui/Button'
 import { type LocalButtonProps } from '@filecoin-foundation/utils/types/buttonTypes'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import { Link } from '@/i18n/navigation'
 
 const variantClasses = {
   primary: 'button--primary',

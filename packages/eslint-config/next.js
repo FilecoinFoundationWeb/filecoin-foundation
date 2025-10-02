@@ -70,6 +70,7 @@ export const config = [
             { pattern: '{fs,path}', group: 'builtin', position: 'before' },
             { pattern: 'react', group: 'external', position: 'before' },
             { pattern: 'next/**', group: 'external', position: 'before' },
+            { pattern: '@/i18n/**', group: 'external', position: 'before' },
             {
               pattern: '@filecoin-foundation/**',
               group: 'external',
@@ -95,7 +96,6 @@ export const config = [
               position: 'before',
             },
             { pattern: '@/styles/**', group: 'internal', position: 'before' },
-            { pattern: '@/i18n/**', group: 'internal', position: 'before' },
             {
               pattern: '*.+(css|scss|sass|less)',
               group: 'index',

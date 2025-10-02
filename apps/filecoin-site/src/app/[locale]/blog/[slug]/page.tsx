@@ -1,3 +1,6 @@
+import { routing } from '@/i18n/routing'
+import type { LocaleParams } from '@/i18n/types'
+
 import { setRequestLocale } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -14,8 +17,6 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
-import { routing } from '@/i18n/routing'
-import type { LocaleParams } from '@/i18n/types'
 
 import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 

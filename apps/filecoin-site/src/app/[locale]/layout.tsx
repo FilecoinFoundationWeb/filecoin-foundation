@@ -1,5 +1,8 @@
 import { notFound } from 'next/navigation'
 
+import { routing } from '@/i18n/routing'
+import type { UnsanitizedLocaleParams } from '@/i18n/types'
+
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
@@ -8,8 +11,6 @@ import { ROOT_METADATA } from '@/constants/siteMetadata'
 
 import { SiteLayout } from '@/components/SiteLayout'
 
-import { routing } from '@/i18n/routing'
-import type { UnsanitizedLocaleParams } from '@/i18n/types'
 
 import '@/styles/globals.css'
 

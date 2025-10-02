@@ -1,5 +1,8 @@
 import localFont from 'next/font/local'
 
+import { DEFAULT_LOCALE } from '@/i18n/locales'
+import type { Locale } from '@/i18n/types'
+
 import { clsx } from 'clsx'
 
 import { BreakpointDebugger } from '@filecoin-foundation/ui/BreakpointDebugger'
@@ -9,8 +12,6 @@ import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { Footer } from '@/components/Footer/Footer'
 
-import { DEFAULT_LOCALE } from '@/i18n/locales'
-import type { Locale } from '@/i18n/types'
 
 // funnelSans also has an italic version in the same directory. We don't use italics as of now so it's not imported here.
 const funnelSans = localFont({

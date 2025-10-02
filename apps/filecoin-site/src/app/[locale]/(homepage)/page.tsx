@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import type { LocaleParams } from '@/i18n/types'
+
 import { BookIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -27,8 +29,6 @@ import { SectionContent } from '@/components/SectionContent'
 import { SectionContentWrapper } from '@/components/SectionContentWrapper'
 import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
-
-import type { LocaleParams } from '@/i18n/types'
 
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { MetricCard } from './components/MetricCard'

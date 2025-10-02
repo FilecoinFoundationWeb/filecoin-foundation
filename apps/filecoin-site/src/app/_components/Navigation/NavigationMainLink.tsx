@@ -4,11 +4,12 @@ import type { ComponentProps } from 'react'
 
 import { usePathname } from 'next/navigation'
 
+import { Link } from '@/i18n/navigation'
+
 import { clsx } from 'clsx'
 
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
-import { Link } from '@/i18n/navigation'
 
 type LinkProps = ComponentProps<typeof Link>
 

@@ -1,10 +1,11 @@
+import { Link } from '@/i18n/navigation'
+
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
 import { BLOG_RSS_PATH } from '@/constants/paths'
 
 import RSSFeedIcon from '@/assets/logos/rss.svg'
 
-import { Link } from '@/i18n/navigation'
 
 export function RSSFeed() {
   return (

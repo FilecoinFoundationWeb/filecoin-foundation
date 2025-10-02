@@ -1,9 +1,10 @@
+import { Link } from '@/i18n/navigation'
+
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
-import { Link } from '@/i18n/navigation'
 
 export type AnnouncementProps = {
   centered?: boolean

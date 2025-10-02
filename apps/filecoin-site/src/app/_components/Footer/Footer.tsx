@@ -1,3 +1,5 @@
+import { Link } from '@/i18n/navigation'
+
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { Social } from '@filecoin-foundation/ui/Social'
 
@@ -9,7 +11,6 @@ import { Container } from '@/components/Container'
 import { Section } from '@/components/Section'
 import { SectionDivider } from '@/components/SectionDivider'
 
-import { Link } from '@/i18n/navigation'
 
 import { LegalSection } from './LegalSection'
 import { NavigationItems } from './NavigationItems'
