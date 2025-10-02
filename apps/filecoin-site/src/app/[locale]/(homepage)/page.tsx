@@ -31,8 +31,8 @@ import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
+import { HeroSection } from './components/HeroSection'
 import { MetricCard } from './components/MetricCard'
-import { TranslatedPageHeader } from './components/TranslatedPageHeader'
 import { communityLinks } from './data/communityLinks'
 import { filecoinByTheNumbers } from './data/filecoinByTheNumbers'
 import { joinVibrantCommunityImages } from './data/joinVibrantCommunityImages'
@@ -61,8 +61,7 @@ export default async function Home({ params }: BlogProps) {
       <Navigation backgroundVariant="dark" />
       <GradientContainer className="pb-40 sm:pb-96 2xl:pb-[25vw]">
         <graphicsData.homepageGradient.data className="absolute -bottom-[10vw] left-1/2 w-[400vw] -translate-x-1/2 transform overflow-visible sm:bottom-0 md:w-[250vw] lg:w-[200vw] 2xl:-bottom-[1vw]" />
-
-        <TranslatedPageHeader />
+        <HeroSection />
       </GradientContainer>
 
       <PageSection backgroundVariant="dark">

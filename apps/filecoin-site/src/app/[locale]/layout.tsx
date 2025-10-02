@@ -11,7 +11,6 @@ import { ROOT_METADATA } from '@/constants/siteMetadata'
 
 import { SiteLayout } from '@/components/SiteLayout'
 
-
 import '@/styles/globals.css'
 
 export const metadata = ROOT_METADATA

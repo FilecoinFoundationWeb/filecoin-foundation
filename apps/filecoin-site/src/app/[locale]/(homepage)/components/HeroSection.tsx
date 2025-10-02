@@ -8,7 +8,7 @@ import { PageSection } from '@/components/PageSection'
 
 import { Announcement } from './Announcement'
 
-export function TranslatedPageHeader() {
+export function HeroSection() {
   const t = useTranslations('home.hero')
 
   return (
