@@ -17,7 +17,7 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import {
   getDigestArticleData,
   getDigestArticlesData,
-} from '../utils/getDigestArticleData'
+} from '../../utils/getDigestArticleData'
 
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
