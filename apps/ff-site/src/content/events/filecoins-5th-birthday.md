@@ -27,7 +27,6 @@ program:
       start-date: 2025-10-15
       location: Virtual
       external-link: https://luma.com/rc3wh2zf
-      description: ""
     - title: Filecoin’s 5th Birthday Dinner, Hosted by Polaris
       location: New York City
       start-date: 2025-10-15
@@ -42,7 +41,8 @@ schedule:
           location: Virtual | YouTube and X
           start-time: 11:00:00.000Z
           end-time: 11:30:00.000Z
-          description: "Tune in for a special birthday celebration premiere joined by
+          description:
+            "Tune in for a special birthday celebration premiere joined by
             community contributors and ecosystem OGs. Featuring a fireside chat
             with Filecoin inventor Juan Benet, and a preview of something new
             hitting the network with FilOz CEO Molly Mackinlay. "
@@ -53,7 +53,6 @@ schedule:
         - title: APAC - Filecoin Kumospace Hangout
           tag: Kumospace
           start-time: 09:00:00.000Z
-          end-time: ""
           location: Kumospace
     - date: 2025-10-16
       events:
@@ -75,7 +74,8 @@ schedule:
     - date: 2025-10-17
       events:
         - title: Virtual FIL Dev Summit
-          description: Join the Virtual FIL Dev Summit Kickoff Sessions to dive deep on
+          description:
+            Join the Virtual FIL Dev Summit Kickoff Sessions to dive deep on
             new improvements and proposals across the Filecoin community! These
             2-3 hour virtual sessions will spotlight new opportunities,
             learnings, and ideas across the Filecoin community to make Filecoin
