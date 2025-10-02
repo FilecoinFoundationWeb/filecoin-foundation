@@ -42,6 +42,6 @@ The latest additions to the Filecoin network capture a broad spectrum of human e
 
 These organizations are working with [Filecoin Foundation for the Decentralized Web](https://ffdweb.org/) (FFDW), Filecoin Foundation’s sister non-profit, which advances the decentralized web through education, research, and development.
 
-“Our mission is to preserve humanity’s most important information,” said Marta Belcher, President and Chair of Filecoin Foundation and FFDW. “Collaborating with leading institutions allows us to use decentralized storage to ensure that these important datasets remain accessible into the future.”
+> “Our mission is to preserve humanity’s most important information,” said Marta Belcher, President and Chair of Filecoin Foundation and FFDW. “Collaborating with leading institutions allows us to use decentralized storage to ensure that these important datasets remain accessible into the future.”
 
 The addition of these datasets demonstrates how decentralized technologies like Filecoin are transforming digital preservation and access, ensuring that cultural and scientific resources endure with authenticity, integrity, and resilience.
