@@ -93,7 +93,7 @@ speakers:
     - name: Juan Benet
       company: Filecoin and IPFS
       image:
-        src: /assets/images/juan-benet.headshot.pl.jpg
+        src: /assets/images/juan-benet.headshot.pl.webp
       title: Inventor
     - name: Molly Mackinlay
       company: FilOz
