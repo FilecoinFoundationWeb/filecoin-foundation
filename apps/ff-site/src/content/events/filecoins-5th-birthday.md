@@ -1,5 +1,8 @@
 ---
-title: "Filecoin's 5th Birthday! "
+title: "Filecoin's 5th Birthday!"
+description: Join us as Filecoin turns 5! Celebrate the network’s journey with
+  community events, virtual sessions, and global gatherings honoring five years
+  of innovation and growth.
 created-on: 2025-10-01T17:21:00.000Z
 updated-on: 2025-10-01T17:21:00.000Z
 published-on: 2025-10-01T17:21:00.000Z
@@ -8,10 +11,9 @@ location:
   primary: Virtual
 start-date: 2025-10-15
 end-date: 2025-10-15
-external-link: https://luma.com/rc3wh2zf
 image:
   src: /assets/images/events_filecoin5.webp
-luma-calendar-link: https://luma.com/filecoin
+luma-calendar-link: https://luma.com/rc3wh2zf
 program:
   kicker: Join the Birthday Celebrations
   title: Featured Events
@@ -32,8 +34,12 @@ schedule:
         - tag: Virtual
           title: Filecoin's 5th Birthday
           location: Virtual
+          start-time: 11:00:00.000Z
+          end-time: 11:30:00.000Z
         - title: North America, Europe & LATAM - Filecoin Kumospace Hangout
           tag: Kumospace
+          start-time: 14:00:00.000Z
+          location: Kumospace
     - date: 2025-10-16
       events:
         - tag: Kumospace
@@ -59,7 +65,8 @@ schedule:
     - date: 2025-10-17
       events:
         - title: Virtual FIL Dev Summit
-          description: Join the Virtual FIL Dev Summit Kickoff Sessions to dive deep on
+          description:
+            Join the Virtual FIL Dev Summit Kickoff Sessions to dive deep on
             new improvements and proposals across the Filecoin community! These
             2-3 hour virtual sessions will spotlight new opportunities,
             learnings, and ideas across the Filecoin community to make Filecoin
