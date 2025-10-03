@@ -1,0 +1,13 @@
+{
+  "home": {
+    "hero": {
+      "headline": "Preserve humanity's most important information",
+      "description": "Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control.",
+      "announcement": "Announcing Filecoin Onchain Cloud",
+      "cta": {
+        "main": "Store data",
+        "secondary": "Start building"
+      }
+    }
+  }
+}

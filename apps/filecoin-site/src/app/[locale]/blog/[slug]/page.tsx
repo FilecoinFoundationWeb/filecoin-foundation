@@ -1,5 +1,10 @@
+import { routing } from '@/i18n/routing'
+import type { LocaleParams } from '@/i18n/types'
+
+import { setRequestLocale } from 'next-intl/server'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
+import type { SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
@@ -18,13 +23,15 @@ import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
-  params: Promise<SlugParams>
+  params: Promise<SlugParams & LocaleParams>
 }
 
 export default async function BlogPost({ params }: BlogPostProps) {
-  const { slug } = await params
+  const { slug, locale } = await params
 
-  const data = await getBlogPostData(slug, 'en')
+  setRequestLocale(locale)
+
+  const data = await getBlogPostData(slug, locale)
   const { image, categories, author, publishedOn, title, content } = data
 
   return (
@@ -53,13 +60,21 @@ export default async function BlogPost({ params }: BlogPostProps) {
 }
 
 export async function generateStaticParams() {
-  const entries = await getBlogPostsData('en')
-  return entries.map(({ slug }) => ({ slug }))
+  const locales = routing.locales
+
+  const entriesByLocale = await Promise.all(locales.map(getBlogPostsData))
+
+  const params = entriesByLocale.flatMap((entries, index) => {
+    const locale = locales[index]
+    return entries.map(({ slug }) => ({ slug, locale }))
+  })
+
+  return params
 }
 
 export async function generateMetadata(props: BlogPostProps) {
-  const { slug } = await props.params
-  const { image, seo, excerpt } = await getBlogPostData(slug, 'en')
+  const { slug, locale } = await props.params
+  const { image, seo, excerpt } = await getBlogPostData(slug, locale)
 
   return createMetadata({
     path: `${PATHS.BLOG.path}/${slug}`,

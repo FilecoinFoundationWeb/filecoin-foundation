@@ -1,3 +1,5 @@
+import type { ComponentType } from 'react'
+
 import { ArrowUpRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
@@ -19,6 +21,7 @@ export type ButtonProps<Variants extends VariantClasses> = {
   icon?: IconProps['component']
   href?: BaseLinkProps['href']
   baseDomain: string
+  LinkComponent?: ComponentType<Omit<BaseLinkProps, 'LinkComponent'>>
 } & React.ComponentPropsWithoutRef<'button'>
 
 type ButtonInnerProps = Pick<
@@ -36,6 +39,7 @@ export function Button<Variants extends VariantClasses>({
   disabled,
   href,
   baseDomain,
+  LinkComponent = BaseLink,
   ...rest
 }: ButtonProps<Variants>) {
   const variant = variants.options[variants.selected || 'primary']
@@ -56,14 +60,14 @@ export function Button<Variants extends VariantClasses>({
   }
 
   return (
-    <BaseLink className={className} href={href} baseDomain={baseDomain}>
+    <LinkComponent className={className} href={href} baseDomain={baseDomain}>
       <ButtonInner
         isExternalLink={isExternalLink(href, baseDomain)}
         icon={icon}
       >
         {children}
       </ButtonInner>
-    </BaseLink>
+    </LinkComponent>
   )
 }
 
