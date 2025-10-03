@@ -27,6 +27,7 @@ The latest additions to the Filecoin network capture a broad spectrum of human e
 - **Earth Species Project** has uploaded its BEANS-Zero benchmark dataset to the Filecoin network to ensure global, resilient access. The dataset plays a crucial role in training ESP’s new foundation model, NatureLM-audio, the first audio-language foundation model specifically designed for animal sounds and tailored to fully leverage the potential of bioacoustics data. ESP demonstrates the critical role decentralized storage can play in supporting open science. 
 
 - **Oceanic Whispers by CROSSLUCID and developed in part with RadicalXChange** isan experimental data trust that combines environmental science, AI-generated narration, and haptic art. Data from Marine Protected Areas (MPAs) is stored on Filecoin and transformed into interactive experiences. A partial common ownership model helps ensure value flows back to contributing scientists, communities, and ecosystems.
+
 - **Prelinger Archives** is a collection of tens of thousands of archival films relating to U.S. cultural history, the evolution of the American landscape, everyday life, social history, and much more. Many of Rick Prelinger's own films, like Panorama Ephemera (2004) and his 35mm-film Lost Landscapes series, are also preserved on the Filecoin network.
 
 - **Rohingya Project** is a community-led initiative preserving the collective identity and cultural memory of stateless Rohingya communities. An archive of the culture and history of the Rohingya people is now preserved on Filecoin. 
