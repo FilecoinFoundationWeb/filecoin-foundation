@@ -5,9 +5,7 @@ created-on: 2025-09-30T12:41:00.000Z
 updated-on: 2025-09-30T12:41:00.000Z
 published-on: 2025-09-30T12:41:00.000Z
 category: news
-description: >
-  Filecoin Network Leverages Decentralized Infrastructure to Strengthen Cultural
-  Memory
+description: Filecoin network leverages decentralized infrastructure to strengthen cultural memory.
 seo:
   description:
     Filecoin Foundation (FF) today announced a new wave of cultural and
