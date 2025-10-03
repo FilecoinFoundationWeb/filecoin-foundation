@@ -1,5 +1,5 @@
 ---
-title: "Filecoin's 5th Birthday! "
+title: "Filecoin's 5th Birthday!"
 description: "Five years ago, Filecoin launched with a bold mission: to create a
   decentralized, efficient, and resilient foundation for humanity’s information.
   Since then, we’ve grown into a thriving global ecosystem that built the
@@ -7,7 +7,7 @@ description: "Five years ago, Filecoin launched with a bold mission: to create a
   how far we’ve come together — and to the even bigger possibilities ahead.
   Expect reflections on the past and look-aheads to the future, reunions with
   familiar faces, and opportunities to meet new community members. Happy
-  Birthday, Filecoin! 📂5️⃣"
+  Birthday, Filecoin!"
 created-on: 2025-10-01T17:21:00.000Z
 updated-on: 2025-10-01T17:21:00.000Z
 published-on: 2025-10-01T17:21:00.000Z
@@ -43,17 +43,19 @@ schedule:
           location: Virtual | YouTube and X
           start-time: 11:00:00.000Z
           end-time: 11:30:00.000Z
-          description: "Tune in for a special birthday celebration premiere joined by
+          description:
+            "Tune in for a special birthday celebration premiere joined by
             community contributors and ecosystem OGs. Featuring a fireside chat
             with Filecoin inventor Juan Benet, and a preview of something new
-            hitting the network with FilOz CEO Molly Mackinlay. "
-        - title: "Filecoin Kumospace Hangout: North America, LATAM, Europe & Africa "
+            hitting the network with FilOz CEO Molly Mackinlay."
+        - title: "Filecoin Kumospace Hangout: North America, LATAM, Europe & Africa"
           tag: Kumospace
           start-time: 11:30:00.000Z
           location: Kumospace
-          description: "​We’re opening a virtual hangout space for the global community to
+          description:
+            "​We’re opening a virtual hangout space for the global community to
             mark the milestone together. Come connect with friends, swap
-            stories, and chat about the next five years and beyond! "
+            stories, and chat about the next five years and beyond!"
         - title: PL Dinner to Celebrate 5 Years of Filecoin
           location: New York, NY
           start-time: 19:00:00.000Z
@@ -80,13 +82,15 @@ schedule:
           tag: Virtual
         - tag: Kumospace
           title: "Filecoin Kumospace Hangout: APAC"
-          description: "​We’re opening a virtual hangout space for the global community to
+          description:
+            "​We’re opening a virtual hangout space for the global community to
             mark the milestone together. Come connect with friends, swap
-            stories, and chat about the next five years and beyond! "
+            stories, and chat about the next five years and beyond!"
     - date: 2025-10-17
       events:
         - title: Virtual FIL Dev Summit
-          description: Join the Virtual FIL Dev Summit Kickoff Sessions to dive deep on
+          description:
+            Join the Virtual FIL Dev Summit Kickoff Sessions to dive deep on
             new improvements and proposals across the Filecoin community! These
             2-3 hour virtual sessions will spotlight new opportunities,
             learnings, and ideas across the Filecoin community to make Filecoin
