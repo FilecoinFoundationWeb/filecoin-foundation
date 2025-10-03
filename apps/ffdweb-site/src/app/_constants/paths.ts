@@ -26,17 +26,26 @@ export type PathValues = StaticPath | DynamicPathValues
 export const PATHS = {
   HOME: createPathConfig('/', 'Home'),
   ABOUT: createPathConfig('/about', 'About'),
-  BLOG: createPathConfig('/blog', 'Blog', { hasEntries: true }),
-  DIGEST: createPathConfig('/digest', 'Digest', { hasEntries: true }),
+  BLOG: createPathConfig('/blog', 'Blog', {
+    entriesPath: `${CONTENT_ROOT}/blog`,
+  }),
+  DIGEST: {
+    ...createPathConfig('/digest', 'Digest'),
+    articlesPath: `${CONTENT_ROOT}/digest-articles`,
+    issuePath: `${CONTENT_ROOT}/digest-issues`,
+    issueUrl: (issueNumber: string) => `/digest/issue-${issueNumber}` as const,
+    articleUrl: (issueNumber: string, slug: string) =>
+      `/digest/issue-${issueNumber}/${slug}` as const,
+  },
   FAQS: createPathConfig('/faqs', 'FAQs'),
   LEARNING_RESOURCES: createPathConfig(
     '/learning-resources',
     'Learning Resources',
-    { hasEntries: true },
+    { entriesPath: `${CONTENT_ROOT}/learning-resources` },
   ),
   PRIVACY_POLICY: createPathConfig('/privacy-policy', 'Privacy Policy'),
   PROJECTS: createPathConfig('/projects', 'Projects', {
-    hasEntries: true,
+    entriesPath: `${CONTENT_ROOT}/projects`,
   }),
   TERMS_OF_USE: createPathConfig('/terms-of-use', 'Terms of Use'),
 } as const
