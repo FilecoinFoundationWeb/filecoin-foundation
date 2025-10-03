@@ -1,10 +1,13 @@
-import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
+import type { Route } from 'next'
 
 import { FILECOIN_FOUNDATION_URL } from '@/constants/siteMetadata'
 
 import FilecoinFoundationLogo from '@/assets/logos/filecoin-foundation-logo.svg'
 
+import { InternalTextLink } from '@/components/TextLink/InternalTextLink'
+
 import { footerLegalItems } from '../Navigation/constants/navigation'
+
 export function LegalSection() {
   return (
     <div className="flex flex-col-reverse items-center justify-between gap-8 py-16 sm:flex-row md:gap-16">
@@ -24,7 +27,7 @@ export function LegalSection() {
       <ul className="order-1 flex items-center gap-10 text-sm text-[var(--color-paragraph-text)] md:gap-16">
         {footerLegalItems.map(({ href, label }) => (
           <li key={href}>
-            <InternalTextLink href={href}>{label}</InternalTextLink>
+            <InternalTextLink href={href as Route}>{label}</InternalTextLink>
           </li>
         ))}
       </ul>

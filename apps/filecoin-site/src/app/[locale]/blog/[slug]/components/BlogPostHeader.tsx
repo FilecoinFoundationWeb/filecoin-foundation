@@ -9,7 +9,6 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { Heading } from '@/components/Heading'
 import { SectionDivider } from '@/components/SectionDivider'
 
-
 import { Categories } from '../../components/Categories'
 import { PostMetadata } from '../../components/PostMetadata'
 import type { BlogPost } from '../../types/blogPostType'

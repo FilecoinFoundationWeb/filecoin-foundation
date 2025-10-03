@@ -21,7 +21,7 @@
     "./useEntryView/types": "./src/useEntryView/types/index.ts"
   },
   "scripts": {
-    "lint": "eslint --fix ."
+    "lint": "eslint src --fix"
   },
   "devDependencies": {
     "typescript": "^5.9.2",

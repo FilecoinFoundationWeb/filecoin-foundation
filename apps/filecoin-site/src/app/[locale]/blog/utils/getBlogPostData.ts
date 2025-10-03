@@ -1,11 +1,12 @@
+import type { Locale } from '@/i18n/types'
+
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
 import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 
 import { PATHS } from '@/constants/paths'
 
-import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
-type Locale = 'en' | 'zh-CN'
+import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
 export async function getBlogPostData(slug: string, locale: Locale) {
   const data = await getBlogPostMarkdownData(slug, locale)
