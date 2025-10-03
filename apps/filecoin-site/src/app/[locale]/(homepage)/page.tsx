@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import type { LocaleParams } from '@/i18n/types'
+
 import { BookIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -22,15 +24,14 @@ import { ImageGrid } from '@/components/ImageGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { Navigation } from '@/components/Navigation/Navigation'
-import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionContentWrapper } from '@/components/SectionContentWrapper'
 import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
-import { Announcement } from './components/Announcement'
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
+import { HeroSection } from './components/HeroSection'
 import { MetricCard } from './components/MetricCard'
 import { communityLinks } from './data/communityLinks'
 import { filecoinByTheNumbers } from './data/filecoinByTheNumbers'
@@ -41,9 +42,15 @@ import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPost } from '@/blog/types/blogPostType'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
-export default async function Home() {
+type BlogProps = {
+  params: Promise<LocaleParams>
+}
+
+export default async function Home({ params }: BlogProps) {
+  const { locale } = await params
+
   const featuredBlogPosts = getFeaturedBlogPosts({
-    posts: await getBlogPostsData('en'),
+    posts: await getBlogPostsData(locale),
     limit: 3,
   })
 
@@ -54,28 +61,7 @@ export default async function Home() {
       <Navigation backgroundVariant="dark" />
       <GradientContainer className="pb-40 sm:pb-96 2xl:pb-[25vw]">
         <graphicsData.homepageGradient.data className="absolute -bottom-[10vw] left-1/2 w-[400vw] -translate-x-1/2 transform overflow-visible sm:bottom-0 md:w-[250vw] lg:w-[200vw] 2xl:-bottom-[1vw]" />
-
-        <PageSection backgroundVariant="dark" paddingVariant="none">
-          <div className="space-y-15 pt-24 pb-24 md:pt-32">
-            {/* todo look into when we need space-y-15 */}
-            <Announcement centered href={PATHS.BLOG.path}>
-              Announcing Filecoin Onchain Cloud
-            </Announcement>
-            <PageHeader
-              centered
-              title="Preserve humanity's most important information"
-              description="Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control."
-              cta={[
-                <Button href={PATHS.STORE_DATA.path} variant="primary">
-                  Store data
-                </Button>,
-                <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
-                  Start building
-                </Button>,
-              ]}
-            />
-          </div>
-        </PageSection>
+        <HeroSection />
       </GradientContainer>
 
       <PageSection backgroundVariant="dark">

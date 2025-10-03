@@ -1,5 +1,7 @@
 import { Suspense } from 'react'
 
+import type { LocaleParams } from '@/i18n/types'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
@@ -12,14 +14,22 @@ import { createMetadata } from '@/utils/createMetadata'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 
+
 import { BlogPageHeader } from './components/BlogPageHeader'
 import { BlogPostList } from './components/BlogPostList'
 import { BLOG_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
-export default async function Blog() {
-  const posts = await getBlogPostsData('en')
+
+type BlogProps = {
+  params: Promise<LocaleParams>
+}
+
+export default async function Blog({ params }: BlogProps) {
+  const { locale } = await params
+
+  const posts = await getBlogPostsData(locale)
   const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = sortedPosts[0]
 

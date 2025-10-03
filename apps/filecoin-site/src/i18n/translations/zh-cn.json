@@ -1,0 +1,13 @@
+{
+  "home": {
+    "hero": {
+      "headline": "保存人类最重要的信息",
+      "description": "Filecoin 是全球最大的去中心化存储网络，旨在确保数据可验证，并摆脱中心化控制",
+      "announcement": "宣布 Filecoin 链上云",
+      "cta": {
+        "main": "存储数据",
+        "secondary": "开始构建"
+      }
+    }
+  }
+}

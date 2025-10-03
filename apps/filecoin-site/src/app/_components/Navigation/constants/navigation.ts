@@ -1,5 +1,3 @@
-import type { Route } from 'next'
-
 import { PATHS } from '@/constants/paths'
 import {
   FILECOIN_DOCS_URL,
@@ -10,8 +8,8 @@ import {
 
 import { pickNavItem } from '../utils/pickNavItem'
 
-export type NavItem = { label: string; href: string | Route }
-type InternalNavItem = { label: string; href: Route }
+export type NavItem = { label: string; href: string }
+type InternalNavItem = { label: string; href: string }
 export type ExpandedNavItem = NavItem & { description: string }
 
 type FooterNavigationItem = { title: string; items: Array<NavItem> }

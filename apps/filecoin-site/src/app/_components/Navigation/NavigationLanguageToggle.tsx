@@ -1,37 +1,43 @@
 'use client'
 
-import { useState } from 'react'
+import { useRouter, usePathname } from '@/i18n/navigation'
+import { routing } from '@/i18n/routing'
+import { type Locale } from '@/i18n/types'
 
 import { Button } from '@headlessui/react'
 import { clsx } from 'clsx'
+import { useLocale } from 'next-intl'
+
 
 import { desktopStyle } from './NavigationMainLink'
 
-const LANGUAGES = [
-  { key: 'en', label: 'EN', name: 'English' },
-  { key: 'zh_CN', label: '中文', name: 'Chinese' },
-] as const
+type Languages = Record<Locale, { label: string; name: string }>
 
-type Language = (typeof LANGUAGES)[number]
+export const LANGUAGES: Languages = {
+  en: { label: 'EN', name: 'English' },
+  ['zh-cn']: { label: '中文', name: 'Chinese' },
+}
 
 export function NavigationLanguageToggle() {
-  const [selectedLanguage, setSelectedLanguage] = useState<Language>(
-    LANGUAGES[0],
-  )
+  const currentLocale = useLocale()
+  const router = useRouter()
+  const pathname = usePathname()
 
   return (
     <div className="flex items-center gap-4 font-medium">
-      {LANGUAGES.map((language) => {
-        const { key, label, name } = language
+      {routing.locales.map((locale) => {
+        const { label, name } = LANGUAGES[locale]
 
         return (
           <Button
-            key={key}
+            key={locale}
             type="button"
             aria-label={`Switch site language to ${name}`}
-            aria-current={selectedLanguage.key === key}
+            aria-current={currentLocale === locale}
             className={clsx(desktopStyle, 'cursor-pointer')}
-            onClick={() => setSelectedLanguage(language)}
+            onClick={() => {
+              router.replace(pathname, { locale })
+            }}
           >
             {label}
           </Button>

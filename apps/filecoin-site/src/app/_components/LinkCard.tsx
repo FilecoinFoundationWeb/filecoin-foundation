@@ -1,8 +1,6 @@
 import clsx from 'clsx'
 
-import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
-
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
+import { BaseLink } from '@/components/BaseLink'
 
 import { Heading, type HeadingProps } from './Heading'
 import { IconBadge, type IconBadgeProps } from './IconBadge'
@@ -57,7 +55,6 @@ export function LinkCard({
 
       <BaseLink
         href={href}
-        baseDomain={BASE_DOMAIN}
         className="focus:brand-outline absolute inset-0"
         aria-label={`Read more about ${title}`}
       />

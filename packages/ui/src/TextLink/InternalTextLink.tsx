@@ -1,23 +1,23 @@
-import type { ComponentProps } from 'react'
-
-import type { Route } from 'next'
+import type { ComponentProps, ComponentType } from 'react'
 
 import { clsx } from 'clsx'
 import Link from 'next/link'
 
+type LinkProps = Omit<ComponentProps<typeof Link>, 'locale'>
 
-type InternalTextLinkProps = Omit<ComponentProps<typeof Link>, 'href'> & {
-  href: Route
+export type InternalTextLinkProps = LinkProps & {
+  LinkComponent?: ComponentType<LinkProps>
 }
 
 export function InternalTextLink({
   className,
   children,
+  LinkComponent = Link,
   ...rest
 }: InternalTextLinkProps) {
   return (
-    <Link className={clsx('text-link', className)} {...rest}>
+    <LinkComponent className={clsx('text-link', className)} {...rest}>
       {children}
-    </Link>
+    </LinkComponent>
   )
 }

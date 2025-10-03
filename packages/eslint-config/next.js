@@ -70,6 +70,7 @@ export const config = [
             { pattern: '{fs,path}', group: 'builtin', position: 'before' },
             { pattern: 'react', group: 'external', position: 'before' },
             { pattern: 'next/**', group: 'external', position: 'before' },
+            { pattern: '@/i18n/**', group: 'external', position: 'before' },
             {
               pattern: '@filecoin-foundation/**',
               group: 'external',

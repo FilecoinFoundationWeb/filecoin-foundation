@@ -67,7 +67,7 @@
     "./YouTubeVideo": "./src/YouTubeVideo/index.ts"
   },
   "scripts": {
-    "lint": "eslint --fix .",
+    "lint": "eslint src --fix",
     "test": "jest"
   },
   "devDependencies": {

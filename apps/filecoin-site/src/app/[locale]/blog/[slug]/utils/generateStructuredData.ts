@@ -1,7 +1,7 @@
 import { PATHS } from '@/constants/paths'
 
-import type { BlogPost } from '@/blog/types/blogPostType'
-import { generateBlogPostStructuredData } from '@/blog/utils/generateBlogPostStructuredData'
+import type { BlogPost } from '../../types/blogPostType'
+import { generateBlogPostStructuredData } from '../../utils/generateBlogPostStructuredData'
 
 export function generateStructuredData(data: BlogPost) {
   const { title, excerpt, image, publishedOn } = data

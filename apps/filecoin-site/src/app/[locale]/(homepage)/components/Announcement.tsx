@@ -1,15 +1,15 @@
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
-import type { Route } from 'next'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
+
 
 export type AnnouncementProps = {
   centered?: boolean
   children: string
-  href: Route
+  href: string
 }
 
 export function Announcement({ children, href, centered }: AnnouncementProps) {

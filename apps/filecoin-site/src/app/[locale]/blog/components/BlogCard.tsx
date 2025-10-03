@@ -1,6 +1,4 @@
-import Link from 'next/link'
-
-import type { Route } from 'next'
+import { Link } from '@/i18n/navigation'
 
 import {
   CardImage,
@@ -14,9 +12,11 @@ import { graphicsData } from '@/data/graphicsData'
 import { Heading } from '@/components/Heading'
 import { TagGroup } from '@/components/TagGroup/TagGroup'
 
+
 import type { BlogPost } from '../types/blogPostType'
 
 import { PostMetadata } from './PostMetadata'
+
 
 export type BlogCardProps = {
   title: BlogPost['title']
@@ -60,7 +60,7 @@ export function BlogCard({
         </div>
 
         <Link
-          href={`${PATHS.BLOG.path}/${slug}` as Route}
+          href={`${PATHS.BLOG.path}/${slug}`}
           aria-label={`Read more about ${title}`}
           className="focus:brand-outline absolute inset-0 z-10 rounded-t-2xl"
         />
