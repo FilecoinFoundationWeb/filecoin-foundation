@@ -1,4 +1,3 @@
-// apps/ffdweb-site/src/app/digest/schemas/DigestIssueFrontmatterSchema.ts
 import { z } from 'zod'
 
 import { DynamicBaseDataSchema } from '@filecoin-foundation/utils/schemas/DynamicDataBaseSchema'

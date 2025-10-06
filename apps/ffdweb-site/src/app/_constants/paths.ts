@@ -31,8 +31,8 @@ export const PATHS = {
   }),
   DIGEST: {
     ...createPathConfig('/digest', 'Digest'),
-    articlesPath: `${CONTENT_ROOT}/digest-articles`,
-    issuePath: `${CONTENT_ROOT}/digest-issues`,
+    articlesPath: `${CONTENT_ROOT}/digest/articles`,
+    issuePath: `${CONTENT_ROOT}/digest/issues`,
     issueUrl: (issueNumber: string) => `/digest/issue-${issueNumber}` as const,
     articleUrl: (issueNumber: string, slug: string) =>
       `/digest/issue-${issueNumber}/${slug}` as const,
