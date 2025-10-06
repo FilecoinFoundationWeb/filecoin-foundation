@@ -148,7 +148,7 @@ collections:
 
   - name: "digest_issues"
     label: "Digest Issues"
-    folder: "apps/ffdweb-site/src/content/digest-issues/"
+    folder: "apps/ffdweb-site/src/content/digest/issues"
     preview_path: "digest/{{issue-number}}"
     label_singular: "Digest Issue"
     create: true
@@ -158,7 +158,8 @@ collections:
       - name: "issue-number"
         label: "Issue Number"
         widget: "number"
-        min: 1
+        widget: "select"
+        options: ["1", "2"]
       - name: "title"
         label: "Issue Title"
         widget: "string"
@@ -201,7 +202,7 @@ collections:
 
   - name: "digest_articles"
     label: "Digest Articles"
-    folder: "apps/ffdweb-site/src/content/digest-articles/"
+    folder: "apps/ffdweb-site/src/content/digest/articles"
     preview_path: "digest/{{issue-number}}/{{slug}}"
     label_singular: "Digest Article"
     create: true
