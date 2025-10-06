@@ -9,7 +9,7 @@ description: With PDP, the Filecoin network extends its capabilities to
   effectively serve a wider set of storage use cases, moving into the next era
   of Filecoin as a multi-service network for composable cloud services.
 image:
-  src: /assets/uploads/042425-pdp_blogheader.webp
+  src: /assets/images/042425-pdp_blogheader.webp
 seo:
   description: "Today, Filecoin unlocks a new level of utility –– building on a
     foundation of decentralized, verifiable storage at planetary scale with a
