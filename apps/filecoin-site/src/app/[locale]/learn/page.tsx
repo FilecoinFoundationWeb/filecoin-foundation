@@ -70,21 +70,21 @@ export default function Learn() {
         <SectionContent
           centerCTA
           title="What is Filecoin used for?"
-          description="From archival backups to Web3 apps, Filecoin offers decentralized, secure, and verifiable storage at scale. "
+          description="From archival backups to Web3 and AI apps, Filecoin offers decentralized, secure, and verifiable storage at scale."
           cta={
             <Button href={PATHS.CASE_STUDIES.path} variant="primary">
-              Explore case studies
+              Explore real-world case studies
             </Button>
           }
         >
-          <CardGrid as="ul" variant="smTwoXlFourWider">
-            {whatIsFilecoinUsedFor.map(({ title, description, icon }) => (
+          <CardGrid as="ul" variant="mdTwoWider">
+            {whatIsFilecoinUsedFor.map(({ title, description, image }) => (
               <Card
                 key={title}
                 as="li"
                 title={title}
                 description={description}
-                icon={icon}
+                image={image}
               />
             ))}
           </CardGrid>
