@@ -25,6 +25,18 @@ program:
         community members are coming together to solve hard problems and ship
         solutions that will define Filecoin’s future.
       external-link: https://www.fildev.io/FDS-7
+    - title: DePIN Day
+      start-date: 2025-11-18
+      end-date: 2025-11-18
+      location: ArtLab
+      external-link: https://luma.com/depin-day-ba
+      description: ​​We’re bringing together the builders, thinkers and investors
+        driving the future of decentralized infrastructure.  ​​Expect a curated
+        lineup of visionary founders, protocol teams and ecosystem leaders
+        sharing cutting-edge use cases and insights across decentralized
+        wireless, sensors, energy, compute, and storage. But that’s not all.
+        Something big is coming soon from the Filecoin ecosystem. What if you
+        could own, verify, and program your cloud? Hear it first at DePIN Day.
 seo:
   description: Join Filecoin at DevConnect in Argentina! Explore ecosystem
     updates, connect with the community, and discover how you can help build the
