@@ -59,9 +59,10 @@ schedule:
           tag: Kumospace
           start-time: 11:30:00.000Z
           location: Kumospace
-          description: ​We’re opening a virtual hangout space for the global community to
-            mark the milestone together. Come connect with friends, swap
-            stories, and chat about the next five years and beyond!
+          description: ​We’re opening a virtual hangout space starting at 11:30 a.m. EST
+            for the global community to mark the milestone together. Come
+            connect with friends, swap stories, and chat about the next five
+            years and beyond!
         - title: PL Dinner to Celebrate 5 Years of Filecoin
           location: New York, NY
           start-time: 19:00:00.000Z
@@ -91,10 +92,11 @@ schedule:
           tag: Virtual
         - tag: Kumospace
           title: "Filecoin Kumospace Hangout: APAC"
-          description: ​We’re opening a virtual hangout space for the global community to
-            mark the milestone together. Come connect with friends, swap
-            stories, and chat about the next five years and beyond!
-          start-time: 01:00:00.000Z
+          description: ​We’re opening a virtual hangout space at 9:30 a.m. SGT for the
+            global community to mark the milestone together. Come connect with
+            friends, swap stories, and chat about the next five years and
+            beyond!
+          start-time: 09:30:00.000Z
           location: Kumospace
     - date: 2025-10-17
       events:
