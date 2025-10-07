@@ -94,7 +94,7 @@ schedule:
           description: ​We’re opening a virtual hangout space for the global community to
             mark the milestone together. Come connect with friends, swap
             stories, and chat about the next five years and beyond!
-          start-time: 01:00:00.000Z
+          start-time: 09:30:00.000Z
           location: Kumospace
     - date: 2025-10-17
       events:
