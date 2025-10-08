@@ -20,7 +20,6 @@ end-date: 2025-11-18
 external-link: https://luma.com/depin-day-ba
 image:
   src: /assets/images/depin-day.webp
-luma-calendar-link: https://luma.com/depin-day-ba
 seo:
   title: "DePIN Day Buenos Aires"
   description: Join DePIN Day to explore the future of decentralized
