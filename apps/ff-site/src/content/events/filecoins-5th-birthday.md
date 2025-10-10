@@ -40,6 +40,16 @@ program:
       description: ​Join us on October 15 at 7 p.m. EST for a very special PL Dinner,
         as we celebrate 5 years of Filecoin mainnet! Stay tuned for more details
         coming soon!
+    - start-date: 2025-10-15
+      title: Filecoin's 5th Birthday Celebration In India
+      external-link: https://luma.com/97h6g3gp
+      location: Nagpur, Maharashtra
+      description: Join us for a special one-day event commemorating the 5th birthday
+        of Filecoin, the decentralized storage layer for Web3. This isn't just a
+        celebration, it's a deep dive into the technology, the ecosystem, and
+        the future of verifiable data in India.  ​Whether you're a developer or
+        just Web3-curious, come connect with the leading minds shaping the
+        future of decentralized storage.
 schedule:
   kicker: Celebrate Together
   title: Birthday Celebration Schedule
