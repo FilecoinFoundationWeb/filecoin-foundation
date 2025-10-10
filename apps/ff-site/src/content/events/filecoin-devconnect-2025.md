@@ -37,6 +37,16 @@ program:
         wireless, sensors, energy, compute, and storage. But that’s not all.
         Something big is coming soon from the Filecoin ecosystem. What if you
         could own, verify, and program your cloud? Hear it first at DePIN Day.
+    - title: Code n' Corgi Buenos Aires
+      start-date: 2025-11-19
+      location: Buenos, Aires
+      external-link: https://luma.com/u89v5ebs
+      description: ​​​Filecoin ​Code n' Corgi is an energetic, developer-driven series
+        designed for Web3 innovators, founders, and builders in the Filecoin
+        decentralized storage ecosystem. It’s the perfect launchpad to kickstart
+        your web3 journey and take it to new heights. Join us for hands-on
+        workshops, engaging activities, and meaningful connections that spark
+        collaboration and drive innovation.
 seo:
   description: Join Filecoin at DevConnect in Argentina! Explore ecosystem
     updates, connect with the community, and discover how you can help build the
