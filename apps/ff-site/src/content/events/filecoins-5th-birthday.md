@@ -137,6 +137,74 @@ speakers:
       image:
         src: /assets/images/molly-mackinlay-headshot.webp
       title: CEO
+    - name: Marta Belcher
+      title: President and Chair
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/marta-belcher-2025-headshot-color.jpg
+    - name: Jennifer Wang
+      title: COO
+      company: FilOz
+      image:
+        src: /assets/images/beauty_1725668108217.jpg
+    - name: Danny O'Brien
+      title: Senior Fellow
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/danny-obrien.webp
+    - name: Meredith Pallante
+      title: Chief Experience Officer
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/meredith-pallante-davos.webp
+    - name: Jonathan Victor
+      title: Co-founder
+      company: Ansa Research
+      image:
+        src: /assets/images/jonathan-victor-headshot.webp
+    - name: Jonathan Schwartz
+      title: "Founder and CEO "
+      company: GLIF
+      linkedin: ""
+      image:
+        src: /assets/images/jonathan-schwartz-glif.webp
+    - name: Megan Klimen
+      title: Founding Officer
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/megan-klimen-davos.webp
+    - name: Clara Tsao
+      title: Founding Officer
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/clara-tsao-davos.webp
+    - name: HQ Han
+      title: Co-founder
+      company: Ansa Research
+      image:
+        src: /assets/images/20w2w-hqhan.webp
+    - name: Sarah Thiam
+      title: Founder and CEO
+      image:
+        src: /assets/images/uzt5zm_z_400x400.jpg
+      company: FIL-B
+    - name: Dietrich Ayala
+      title: Advisor
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/avatar.jpg.320x320px.jpg
+    - name: Colin Evran
+      title: Venture Partner
+      company: PLVS
+      image:
+        src: /assets/images/_122330227_colinevran.jpg.webp
+    - name: Hannah Howard
+      title: CTO
+      company: Storacha
+      image:
+        src: /assets/images/hannahhoward-headshot.webp
+  kicker: Featuring
+  title: Featuring
 seo:
   description: Join us as Filecoin turns 5! Celebrate the network’s journey with
     community events, virtual sessions, and global gatherings honoring five
