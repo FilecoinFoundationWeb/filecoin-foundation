@@ -28,8 +28,8 @@ program:
       location: Virtual
       external-link: https://luma.com/rc3wh2zf
       end-date: 2025-10-16
-      description: On October 15 at 11 a.m. EST, tune in for a special birthday
-        celebration premiere joined by community contributors and ecosystem OGs.
+      description: Tune in at 11 a.m. EST for a special birthday video premiere on X
+        and YouTube live, joined by community contributors and ecosystem OGs.
         Featuring a fireside chat with Filecoin inventor Juan Benet, and a
         preview of something new hitting the network with FilOz CEO Molly
         Mackinlay.
@@ -61,10 +61,11 @@ schedule:
           location: Virtual | YouTube and X
           start-time: 11:00:00.000Z
           end-time: 11:30:00.000Z
-          description: Tune in at 11 a.m. EST for a special birthday celebration premiere
-            joined by community contributors and ecosystem OGs. Featuring a
-            fireside chat with Filecoin inventor Juan Benet, and a preview of
-            something new hitting the network with FilOz CEO Molly Mackinlay.
+          description: Tune in at 11 a.m. EST for a special birthday video premiere on X
+            and YouTube live, joined by community contributors and ecosystem
+            OGs. Featuring a fireside chat with Filecoin inventor Juan Benet,
+            and a preview of something new hitting the network with FilOz CEO
+            Molly Mackinlay.
         - title: "Filecoin Kumospace Hangout: North America, LATAM, Europe & Africa"
           tag: Kumospace
           start-time: 11:30:00.000Z
