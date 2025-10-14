@@ -5,10 +5,12 @@ created-on: 2025-09-30T12:41:00.000Z
 updated-on: 2025-09-30T12:41:00.000Z
 published-on: 2025-09-30T12:41:00.000Z
 category: news
-description: Filecoin network leverages decentralized infrastructure to strengthen cultural memory.
+description: Filecoin network leverages decentralized infrastructure to
+  strengthen cultural memory.
+image:
+  src: /assets/images/093025-dataset-announcement-ii-1-.webp
 seo:
-  description:
-    Filecoin Foundation (FF) today announced a new wave of cultural and
+  description: Filecoin Foundation (FF) today announced a new wave of cultural and
     scientific datasets that are now being preserved on the Filecoin network.
 ---
 
