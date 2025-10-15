@@ -157,7 +157,7 @@ Ready to take back the cloud? Join the waitlist at [filecoin.cloud](https://www.
 ## Get Involved
 
 - Get started with [Filecoin Pin](https://docs.filecoin.io/builder-cookbook/filecoin-pin) and bring onchain verifiable persistence to your IPFS workflows
-- Help celebrate [Filecoin's 5th birthday](http://fil.org/events/filecoins-5th-birthday)
+- Help celebrate [Filecoin's 5th birthday](/events/filecoins-5th-birthday)
 - Learn more at [Virtual FIL Dev Summit 7](https://www.fildev.io/FDS-7), happening October 16 and 17
 - Join us for the Filecoin Onchain Cloud Launch at [DePIN Day, co-hosted by Fluence and Filecoin Foundation](https://luma.com/depin-day-ba), on November 18in Buenos Aires, Argentina, alongside Devconnect
 - Join the waitlist at [Filecoin.cloud](https://www.filecoin.cloud/)
