@@ -16,7 +16,7 @@ October 15 marks five years since the launch of Filecoin mainnet. Since then, Fi
 
 Since Liftoff, Filecoin has been on a mission to bring fully verifiable, incentive-aligned, and decentralized storage to the world. The InterPlanetary File System (IPFS) is the open protocol used by a massive community of over half a million developers who use decentralized content IDs (CIDs) for everything from ENS websites to NFTs to trustless onchain agents and beyond. From day one, Filecoin was designed as an open incentive layer for anyone to persist their IPFS content-addressed data across a global network of cryptographically audited storage providers. 
 
-Today, we’re building on Filecoin’s onchain cryptographic proofs, smart contract programmability, and the community of global Filecoin storage providers to finally make that vision a reality. As we celebrate this milestone, we’re looking back at what the ecosystem has built, introducing Filecoin Pin — a new tool and demo for IPFS builders — and sharing the first look at what’s next for the network: the FilecoinOnchain Cloud. 
+Today, we’re building on Filecoin’s onchain cryptographic proofs, smart contract programmability, and the community of global Filecoin storage providers to finally make that vision a reality. As we celebrate this milestone, we’re looking back at what the ecosystem has built, introducing Filecoin Pin — a new tool and demo for IPFS builders — and sharing the first look at what’s next for the network: the Filecoin Onchain Cloud. 
 
 ## Five Years of Filecoin
 
@@ -72,7 +72,7 @@ _Molly Mackinlay, CEO, FilOz_
 
 A decentralized, verifiable, and programmable data layer for the world. 
 
-> We're talking about truly rights-respecting computing infrastructure, which I think is critical for the future of our civilization
+> We're talking about truly rights-respecting computing infrastructure, which I think is critical for the future of our civilization.
 
 _Juan Benet, Inventor, Filecoin and IPFS_
 
