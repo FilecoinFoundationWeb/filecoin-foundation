@@ -4,13 +4,16 @@ created-on: 2025-09-25T13:30:00.000Z
 updated-on: 2025-09-25T13:30:00.000Z
 published-on: 2025-09-25T13:30:00.000Z
 category: ecosystem
-description: "The Filecoin network successfully completed the Golden Week
-  upgrade (Network v27) on September 24 at epoch 5348280, delivering protocol
-  cleanups and enhancements."
+description: The Filecoin network successfully completed the Golden Week upgrade
+  (Network v27) on September 24 at epoch 5348280, delivering protocol cleanups
+  and enhancements.
+image:
+  src: /assets/images/nv27.webp
 seo:
-  description: "The Filecoin network successfully completed the Golden Week
-    upgrade (Network v27) on September 24 at epoch 5348280, delivering protocol
-    cleanups and enhancements."
+  description:
+    The Filecoin network successfully completed the Golden Week upgrade
+    (Network v27) on September 24 at epoch 5348280, delivering protocol cleanups
+    and enhancements.
 ---
 
 The Filecoin network successfully completed the Golden Week upgrade (Network v27) at epoch 5348280 on September 24, 2025 at 23:00 UTC. This upgrade delivered protocol cleanups and enhancements, including cryptographic precompiles for the Filecoin Ethereum Virtual Machine (FEVM), smart contract notifications for Direct Data Onboarding, Fast Finality on Filecoin (F3)-compatible snapshot formatting, and a new deposit requirement for storage provider (SP) creation. All Filecoin implementations — Lotus, Forest, Venus, Curio, and Boost — shipped releases to ensure network compatibility ahead of activation.
@@ -67,4 +70,4 @@ We want to thank all client implementers, researchers, storage providers, and co
 
 - For deeper tracking of this network upgrade: [Community GitHub Discussion](https://github.com/filecoin-project/community/discussions/74#discussioncomment-14214805)
 
-- To help shape the future of Filecoin governance:[Governance Poll](https://poll.fil.org/dashboard/c/8n7hhjebkb)
+- To help shape the future of Filecoin governance: [Governance Poll](https://poll.fil.org/dashboard/c/8n7hhjebkb)
