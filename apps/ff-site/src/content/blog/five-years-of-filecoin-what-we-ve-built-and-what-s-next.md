@@ -114,6 +114,8 @@ Want to build out your own ERC-8004 trustless agent? → Use the [Filecoin Pin C
 
 The original vision of a decentralized storage stack where content addressing and verifiable persistence work seamlessly together is no longer a promise. It's ready for you to build on.
 
+Ready to build? Explore demos and implementation details in the [technical getting started guide](https://medium.com/@filoz/announcing-filecoin-pin-new-developer-tools-for-ipfs-pinning-onchain-99b914b90e28) and the [YouTube playlist of Filecoin Pin demos](https://www.youtube.com/playlist?list=PL_0VrY55uV181dWs7RfIpx0ZAUZeNMjE1).
+
 ## What’s Next: Filecoin Onchain Cloud
 
 Filecoin Pin, as the very first developer toolkit offered by Filecoin Onchain Cloud, is the first demo of something much bigger. Over the past five years, Filecoin has grown into the world’s largest decentralized storage network, and now, the building blocks are in place for a Cambrian explosion of onchain services - starting with storage and retrieval. 
