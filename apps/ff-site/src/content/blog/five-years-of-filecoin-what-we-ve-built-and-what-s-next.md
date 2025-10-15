@@ -12,7 +12,7 @@ seo:
   description: Introducing Filecoin Pin and a Preview of the Filecoin Onchain Cloud.
 ---
 
-October 15 marks five years since the launch of Filecoin mainnet. Since then, Filecoin has grown into the world’s largest decentralized storage network, supporting exbibytes of capacity, thousands of active storage deals, and a thriving community of developers, storage providers, and clients. Together, we’ve unlocked new frontiers for Filecoin, from [scaling chain bandwidth 10-25x in 2021](https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-10-25x-increase-in-storage-onboarding/), to launching smart contract programmability in 2023.
+October 15 marks five years since the launch of Filecoin mainnet. Since then, Filecoin has grown into the world’s largest decentralized storage network, supporting exbibytes of capacity, thousands of active storage deals, and a thriving community of developers, storage providers, and clients. Together, we’ve unlocked new frontiers for Filecoin, from [scaling chain bandwidth](https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-10-25x-increase-in-storage-onboarding/) 10-25x in 2021, to launching smart contract programmability in 2023.
 
 Since Liftoff, Filecoin has been on a mission to bring fully verifiable, incentive-aligned, and decentralized storage to the world. The InterPlanetary File System (IPFS) is the open protocol used by a massive community of over half a million developers who use decentralized content IDs (CIDs) for everything from ENS websites to NFTs to trustless onchain agents and beyond. From day one, Filecoin was designed as an open incentive layer for anyone to persist their IPFS content-addressed data across a global network of cryptographically audited storage providers. 
 
@@ -76,7 +76,7 @@ A decentralized, verifiable, and programmable data layer for the world. 
 
 _Juan Benet, Inventor, Filecoin and IPFS_
 
-Hear more reflections from the community in the [5th Filecoin birthday celebration video](https://youtu.be/Yjm8RgqRyS0). 
+Hear more reflections from the community in the 5th Filecoin birthday [celebration video](https://youtu.be/Yjm8RgqRyS0). 
 
 ## Introducing Filecoin Pin: The Missing Piece, Finally Here
 
@@ -152,7 +152,7 @@ When you can verify what happens to your data, you truly own it in tangible ways
 
 In November, we're releasing the first capabilities of Filecoin Onchain Cloud. This platform marks a major expansion of the network and serves as an entry point for a new generation of builders, advancing Filecoin’s mission to preserve humanity’s information.
 
-Ready to take back the cloud? **Join the waitlist at [Filecoin.cloud](https://www.filecoin.cloud/).**
+Ready to take back the cloud? Join the waitlist at [filecoin.cloud](https://www.filecoin.cloud/).
 
 ## Get Involved
 
