@@ -10,7 +10,8 @@ description: The Filecoin network successfully completed the Golden Week upgrade
 image:
   src: /assets/images/nv27.webp
 seo:
-  description: The Filecoin network successfully completed the Golden Week upgrade
+  description:
+    The Filecoin network successfully completed the Golden Week upgrade
     (Network v27) on September 24 at epoch 5348280, delivering protocol cleanups
     and enhancements.
 ---
@@ -69,4 +70,4 @@ We want to thank all client implementers, researchers, storage providers, and co
 
 - For deeper tracking of this network upgrade: [Community GitHub Discussion](https://github.com/filecoin-project/community/discussions/74#discussioncomment-14214805)
 
-- To help shape the future of Filecoin governance:[Governance Poll](https://poll.fil.org/dashboard/c/8n7hhjebkb)
+- To help shape the future of Filecoin governance: [Governance Poll](https://poll.fil.org/dashboard/c/8n7hhjebkb)
