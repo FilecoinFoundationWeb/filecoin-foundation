@@ -10,7 +10,8 @@ description: Filecoin network leverages decentralized infrastructure to
 image:
   src: /assets/images/093025-dataset-announcement-ii-1-.webp
 seo:
-  description: Filecoin Foundation (FF) today announced a new wave of cultural and
+  description:
+    Filecoin Foundation (FF) today announced a new wave of cultural and
     scientific datasets that are now being preserved on the Filecoin network.
 ---
 
