@@ -38,14 +38,16 @@ program:
       location: New York City
       start-date: 2025-10-15
       external-link: https://luma.com/skr9ed25
-      description: ​Join us on October 15 at 7 p.m. EST for a very special PL Dinner,
+      description:
+        ​Join us on October 15 at 7 p.m. EST for a very special PL Dinner,
         as we celebrate 5 years of Filecoin mainnet! Stay tuned for more details
         coming soon!
     - start-date: 2025-10-15
       title: Filecoin's 5th Birthday Celebration In India
       external-link: https://luma.com/97h6g3gp
       location: Nagpur, Maharashtra
-      description: ​Join us for a special one-day event commemorating the 5th birthday
+      description:
+        ​Join us for a special one-day event commemorating the 5th birthday
         of Filecoin. This isn't just a celebration; it's a deep dive into the
         technology, the ecosystem, and the future of verifiable data in India.
         Kick-off and challenge reveal at 11 a.m. IST!
@@ -60,7 +62,8 @@ schedule:
           location: Virtual | YouTube and X
           start-time: 11:00:00.000Z
           end-time: 11:30:00.000Z
-          description: Tune in at 11 a.m. EST for a special birthday video premiere on X
+          description:
+            Tune in at 11 a.m. EST for a special birthday video premiere on X
             and YouTube live, joined by community contributors and ecosystem
             OGs. Featuring a fireside chat with Filecoin inventor Juan Benet,
             and a preview of something new hitting the network with FilOz CEO
@@ -83,12 +86,15 @@ schedule:
           end-time: 22:00:00.000Z
           url: https://luma.com/skr9ed25
           tag: IRL
-          description: ​Join us on October 15 at 7 p.m. EST for a very special PL Dinner,
+          description:
+            ​Join us on October 15 at 7 p.m. EST for a very special PL Dinner,
             as we celebrate 5 years of Filecoin mainnet! Stay tuned for more
             details coming soon!
         - tag: IRL
           title: Filecoin Orbit India Mini-Hackathon
-          description: ​Join us for a special one-day event commemorating the 5th birthday
+          location: Nagpur, Maharashtra
+          description:
+            ​Join us for a special one-day event commemorating the 5th birthday
             of Filecoin. This isn't just a celebration; it's a deep dive into
             the technology, the ecosystem, and the future of verifiable data in
             India. Kick-off and challenge reveal at 11 a.m. IST!
@@ -98,7 +104,8 @@ schedule:
       events:
         - tag: Virtual
           title: Mandarin-Captioned 5th Birthday Celebration
-          description: Tune in at 9 a.m. SGT for the Mandarin-captioned birthday video
+          description:
+            Tune in at 9 a.m. SGT for the Mandarin-captioned birthday video
             premiere on X live, joined by community contributors and ecosystem
             OGs. Featuring a fireside chat with Filecoin inventor Juan Benet,
             and a preview of something new hitting the network with FilOz CEO
@@ -108,7 +115,8 @@ schedule:
           location: Virtual | X
         - tag: Kumospace
           title: "Filecoin Kumospace Hangout: APAC"
-          description: ​We’re opening a virtual hangout space at 9:30 a.m. SGT for the
+          description:
+            ​We’re opening a virtual hangout space at 9:30 a.m. SGT for the
             global community to mark the milestone together. Come connect with
             friends, swap stories, and chat about the next five years and
             beyond!
@@ -133,7 +141,8 @@ schedule:
     - date: 2025-10-17
       events:
         - title: Virtual FIL Dev Summit
-          description: Join the Virtual FIL Dev Summit Kickoff Sessions to dive deep on
+          description:
+            Join the Virtual FIL Dev Summit Kickoff Sessions to dive deep on
             new improvements and proposals across the Filecoin community! These
             2-3 hour virtual sessions will spotlight new opportunities,
             learnings, and ideas across the Filecoin community to make Filecoin
