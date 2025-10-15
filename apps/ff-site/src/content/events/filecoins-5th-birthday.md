@@ -202,11 +202,11 @@ speakers:
       title: Founder and CEO
       company: GLIF
       image:
-        src: /assets/images/6brpu6s__400x400.jpg
+        src: /assets/images/6brpu6s__400x400.webp
     - name: Sarah Thiam
       title: Founder and CEO
       image:
-        src: /assets/images/uzt5zm_z_400x400.jpg
+        src: /assets/images/uzt5zm_z_400x400.webp
       company: FIL-B
     - name: HQ Han
       title: Co-founder
@@ -222,7 +222,7 @@ speakers:
       title: Advisor
       company: Filecoin Foundation
       image:
-        src: /assets/images/avatar.jpg.320x320px.jpg
+        src: /assets/images/avatar.jpg.320x320px.webp
     - name: Meredith Pallante
       title: Chief Experience Officer
       company: Filecoin Foundation
