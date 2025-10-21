@@ -17,6 +17,11 @@ export function useUrlHash() {
 
   const [hash, setHash] = useState(getHashFromWindow)
 
+  function onHashChange(event: NewHashEvent) {
+    const newHash = getHashFromEvent(event)
+    setHash(newHash)
+  }
+
   useEffect(() => {
     if (windowIsAvailable()) {
       window.addEventListener('hashchange', onHashChange)
@@ -44,11 +49,6 @@ export function useUrlHash() {
     if (sectionHash === hash) {
       clearHash()
     }
-  }
-
-  function onHashChange(event: NewHashEvent) {
-    const newHash = getHashFromEvent(event)
-    setHash(newHash)
   }
 
   function isSectionActive(sectionId: string) {
