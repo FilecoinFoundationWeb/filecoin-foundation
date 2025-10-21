@@ -9,7 +9,7 @@ description: Welcome to the inaugural edition of the Filecoin Ecosystem Metrics
   Roundup, a monthly series designed to align our community around the metrics
   that matter most for sustainable ecosystem growth.
 image:
-  src: /assets/uploads/170366980-78f835fb-8168-4914-9a75-d62b1a157133.webp
+  src: /assets/images/170366980-78f835fb-8168-4914-9a75-d62b1a157133.webp
 seo:
   description:
     Welcome to the inaugural edition of the Filecoin Ecosystem Metrics
