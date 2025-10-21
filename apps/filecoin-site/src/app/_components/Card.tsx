@@ -4,13 +4,28 @@ import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageTyp
 import { Heading } from './Heading'
 import { IconBadge, type IconBadgeProps } from './IconBadge'
 
-type CardProps = {
+type BaseCardProps = {
   as: 'li' | 'article' | 'div'
   title: string
   description: string
-  image?: StaticImageProps
-  icon?: IconBadgeProps['component']
 }
+
+type CardWithIcon = BaseCardProps & {
+  icon: IconBadgeProps['component']
+  image?: never
+}
+
+type CardWithImage = BaseCardProps & {
+  image: StaticImageProps
+  icon?: never
+}
+
+type CardWithText = BaseCardProps & {
+  icon?: never
+  image?: never
+}
+
+type CardProps = CardWithIcon | CardWithImage | CardWithText
 
 export type CardData = Pick<
   CardProps,
