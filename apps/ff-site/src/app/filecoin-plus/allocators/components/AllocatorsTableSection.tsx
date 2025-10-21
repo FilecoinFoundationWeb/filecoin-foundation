@@ -6,24 +6,23 @@ import { AllocatorsTableWithFilters } from './AllocatorsTableWithFilters'
 import { NoDataAvailableMessage } from './NoDataAvailableMessage'
 
 export async function AllocatorsTableSection() {
-  try {
-    const allocatorsWithDatacap = await getAllocatorsWithDatacap()
+  const { data: allocatorsWithDatacap, error } =
+    await getAllocatorsWithDatacap()
 
-    if (!allocatorsWithDatacap.length) {
-      return <NoDataAvailableMessage />
-    }
-
-    return <AllocatorsTableWithFilters data={allocatorsWithDatacap} />
-  } catch (error) {
+  if (error) {
     const message = 'Error fetching or validating allocators'
-
     console.error({ message, error })
 
     Sentry.captureException(error, {
       tags: { component: AllocatorsTableSection.name },
       extra: { message },
     })
-
     return <NoDataAvailableMessage />
   }
+
+  if (!allocatorsWithDatacap || !allocatorsWithDatacap.length) {
+    return <NoDataAvailableMessage />
+  }
+
+  return <AllocatorsTableWithFilters data={allocatorsWithDatacap} />
 }
