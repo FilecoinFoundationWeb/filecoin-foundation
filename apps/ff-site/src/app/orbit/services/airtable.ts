@@ -22,6 +22,10 @@ const airtable = new Airtable({
 const { BASE_ID, EVENTS_TABLE_ID, FIELDS } = AIRTABLE_ORBIT_EVENTS_CONFIG
 const { TITLE, CITY, START_DATE, REGISTRATION_LINK } = FIELDS
 
+export type SanitizedOrbitEvents = NonNullable<
+  Awaited<ReturnType<typeof fetchAndParseAirtableEvents>>['data']
+>
+
 export async function fetchAndParseAirtableEvents() {
   try {
     const rawAirtableRecords = await fetchAirtableRecords()

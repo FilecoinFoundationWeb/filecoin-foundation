@@ -18,7 +18,10 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'
 
-import { fetchAndParseAirtableEvents } from '../services/airtable'
+import {
+  fetchAndParseAirtableEvents,
+  type SanitizedOrbitEvents,
+} from '../services/airtable'
 
 import { DEFAULT_CTA_TEXT } from '@/events/constants/constants'
 
@@ -51,7 +54,7 @@ export async function OrbitEventsSection({
 }
 
 type OrbitEventsProps = {
-  events: Awaited<ReturnType<typeof fetchAndParseAirtableEvents>>['data']
+  events: SanitizedOrbitEvents
   searchParams: QueryParams
 }
 
