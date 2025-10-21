@@ -32,7 +32,7 @@ export async function fetchAndParseAirtableEvents() {
     return { data: humanReadableRecords, error: null }
   } catch (error) {
     console.error('Error fetching and parsing Airtable events:', error)
-    throw { data: null, error }
+    return { data: null, error }
   }
 }
 
