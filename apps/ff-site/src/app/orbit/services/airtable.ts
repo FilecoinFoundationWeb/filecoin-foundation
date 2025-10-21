@@ -23,12 +23,17 @@ const { BASE_ID, EVENTS_TABLE_ID, FIELDS } = AIRTABLE_ORBIT_EVENTS_CONFIG
 const { TITLE, CITY, START_DATE, REGISTRATION_LINK } = FIELDS
 
 export async function fetchAndParseAirtableEvents() {
-  const rawAirtableRecords = await fetchAirtableRecords()
+  try {
+    const rawAirtableRecords = await fetchAirtableRecords()
 
-  const validatedRecords = validateRawRecords(rawAirtableRecords)
-  const humanReadableRecords = getHumanReadableRecords(validatedRecords)
+    const validatedRecords = validateRawRecords(rawAirtableRecords)
+    const humanReadableRecords = getHumanReadableRecords(validatedRecords)
 
-  return humanReadableRecords
+    return { data: humanReadableRecords, error: null }
+  } catch (error) {
+    console.error('Error fetching and parsing Airtable events:', error)
+    throw { data: null, error }
+  }
 }
 
 function fetchAirtableRecords() {

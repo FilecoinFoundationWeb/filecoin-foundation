@@ -1,5 +1,4 @@
 import * as Sentry from '@sentry/nextjs'
-import { ZodError } from 'zod'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
@@ -12,7 +11,6 @@ import {
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
-import { logZodError } from '@filecoin-foundation/utils/zodUtils'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
@@ -31,20 +29,10 @@ type OrbitEventsSectionProps = {
 export async function OrbitEventsSection({
   searchParams,
 }: OrbitEventsSectionProps) {
-  try {
-    const events = await fetchAndParseAirtableEvents()
+  const { data: events, error } = await fetchAndParseAirtableEvents()
 
-    if (events.length === 0) {
-      return <p>There are currently no upcoming events.</p>
-    }
-
-    return <OrbitEvents events={events} searchParams={searchParams} />
-  } catch (error) {
+  if (error) {
     Sentry.captureException(error)
-
-    if (error instanceof ZodError) {
-      logZodError(error, { location: 'Orbit Events' })
-    }
 
     return (
       <div className="max-w-readable flex">
@@ -54,10 +42,16 @@ export async function OrbitEventsSection({
       </div>
     )
   }
+
+  if (!events || events.length === 0) {
+    return <p>There are currently no upcoming events.</p>
+  }
+
+  return <OrbitEvents events={events} searchParams={searchParams} />
 }
 
 type OrbitEventsProps = {
-  events: Awaited<ReturnType<typeof fetchAndParseAirtableEvents>>
+  events: Awaited<ReturnType<typeof fetchAndParseAirtableEvents>>['data']
   searchParams: QueryParams
 }
 
