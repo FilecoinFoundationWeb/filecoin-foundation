@@ -1,5 +1,5 @@
 ---
-title: "Filecoin's 5th Birthday!"
+title: Filecoin's 5th Birthday!
 description: "Five years ago, Filecoin launched with a bold mission: to create a
   decentralized, efficient, and resilient foundation for humanity’s information.
   Since then, we’ve grown into a thriving global ecosystem that built the
@@ -28,10 +28,35 @@ program:
       location: Virtual
       external-link: https://luma.com/rc3wh2zf
       end-date: 2025-10-16
+      description: Tune in for a special birthday video premiere live on X and
+        YouTube, joined by community contributors and ecosystem OGs. Featuring a
+        fireside chat with Juan Benet, and a preview of something new hitting
+        the network with FilOz CEO Molly Mackinlay. English video dropping at 11
+        a.m. ET on Oct. 15 and Mandarin-captioned video dropping at 9 a.m. SGT
+        on Oct. 16.
     - title: PL Dinner to Celebrate 5 Years of Filecoin
       location: New York City
       start-date: 2025-10-15
       external-link: https://luma.com/skr9ed25
+      description: ​Join us on October 15 at 7 p.m. EST for a very special PL Dinner,
+        as we celebrate 5 years of Filecoin mainnet! Stay tuned for more details
+        coming soon!
+    - start-date: 2025-10-15
+      title: Filecoin's 5th Birthday Celebration In India
+      external-link: https://luma.com/97h6g3gp
+      location: Nagpur, Maharashtra
+      description: ​Join us for a special one-day event commemorating the 5th birthday
+        of Filecoin. This isn't just a celebration; it's a deep dive into the
+        technology, the ecosystem, and the future of verifiable data in India.
+        Kick-off and challenge reveal at 11 a.m. IST!
+    - title: Filecoin's 5th Birthday Celebration in Seattle, Washington
+      start-date: 2025-10-15
+      location: Seattle, Wa
+      description: Join us for an invite-only celebration marking five years of the
+        Filecoin network! Connect with local builders, contributors, and friends
+        as we toast to the community driving decentralized storage forward.
+        Invite-only — please reach out to @momack2 on Telegram for an
+        invitation.
 schedule:
   kicker: Celebrate Together
   title: Birthday Celebration Schedule
@@ -43,27 +68,61 @@ schedule:
           location: Virtual | YouTube and X
           start-time: 11:00:00.000Z
           end-time: 11:30:00.000Z
-          description:
-            "Tune in for a special birthday celebration premiere joined by
-            community contributors and ecosystem OGs. Featuring a fireside chat
-            with Filecoin inventor Juan Benet, and a preview of something new
-            hitting the network with FilOz CEO Molly Mackinlay."
+          description: Tune in at 11 a.m. EST for a special birthday video premiere on X
+            and YouTube live, joined by community contributors and ecosystem
+            OGs. Featuring a fireside chat with Filecoin inventor Juan Benet,
+            and a preview of something new hitting the network with FilOz CEO
+            Molly Mackinlay.
         - title: "Filecoin Kumospace Hangout: North America, LATAM, Europe & Africa"
           tag: Kumospace
           start-time: 11:30:00.000Z
           location: Kumospace
-          description:
-            "​We’re opening a virtual hangout space for the global community to
-            mark the milestone together. Come connect with friends, swap
-            stories, and chat about the next five years and beyond!"
+          description: >-
+            ​We’re opening a virtual hangout space starting at 11:30 a.m. EST
+            for the global community to mark the milestone together. Come
+            connect with friends, swap stories, and chat about the next five
+            years and beyond!
+
+
+            At 11:45 a.m. ET on Oct. 15, the FilOz team will give a first-look demo of Filecoin Pin!
         - title: PL Dinner to Celebrate 5 Years of Filecoin
           location: New York, NY
           start-time: 19:00:00.000Z
           end-time: 22:00:00.000Z
           url: https://luma.com/skr9ed25
           tag: IRL
+          description: ​Join us on October 15 at 7 p.m. EST for a very special PL Dinner,
+            as we celebrate 5 years of Filecoin mainnet! Stay tuned for more
+            details coming soon!
+        - tag: IRL
+          title: Filecoin Orbit India Mini-Hackathon
+          location: Nagpur, Maharashtra
+          description: ​Join us for a special one-day event commemorating the 5th birthday
+            of Filecoin. This isn't just a celebration; it's a deep dive into
+            the technology, the ecosystem, and the future of verifiable data in
+            India. Kick-off and challenge reveal at 11 a.m. IST!
+          start-time: 11:00:00.000Z
+          end-time: 17:00:00.000Z
     - date: 2025-10-16
       events:
+        - tag: Virtual
+          title: Mandarin-Captioned 5th Birthday Celebration
+          description: Tune in at 9 a.m. SGT for the Mandarin-captioned birthday video
+            premiere on X live, joined by community contributors and ecosystem
+            OGs. Featuring a fireside chat with Filecoin inventor Juan Benet,
+            and a preview of something new hitting the network with FilOz CEO
+            Molly Mackinlay.
+          start-time: 09:00:00.000Z
+          end-time: 09:35:00.000Z
+          location: Virtual | X
+        - tag: Kumospace
+          title: "Filecoin Kumospace Hangout: APAC"
+          description: ​We’re opening a virtual hangout space at 9:30 a.m. SGT for the
+            global community to mark the milestone together. Come connect with
+            friends, swap stories, and chat about the next five years and
+            beyond!
+          start-time: 09:30:00.000Z
+          location: Kumospace
         - title: Virtual FIL Dev Summit
           url: https://www.fildev.io/FDS-7
           location: Virtual
@@ -80,19 +139,10 @@ schedule:
           start-time: 11:00:00.000Z
           end-time: 15:00:00.000Z
           tag: Virtual
-        - tag: Kumospace
-          title: "Filecoin Kumospace Hangout: APAC"
-          description:
-            "​We’re opening a virtual hangout space for the global community to
-            mark the milestone together. Come connect with friends, swap
-            stories, and chat about the next five years and beyond!"
-          start-time: 01:00:00.000Z
-          location: Kumospace
     - date: 2025-10-17
       events:
         - title: Virtual FIL Dev Summit
-          description:
-            Join the Virtual FIL Dev Summit Kickoff Sessions to dive deep on
+          description: Join the Virtual FIL Dev Summit Kickoff Sessions to dive deep on
             new improvements and proposals across the Filecoin community! These
             2-3 hour virtual sessions will spotlight new opportunities,
             learnings, and ideas across the Filecoin community to make Filecoin
@@ -118,6 +168,73 @@ speakers:
       image:
         src: /assets/images/molly-mackinlay-headshot.webp
       title: CEO
+    - name: Marta Belcher
+      title: President and Chair
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/marta-belcher-2025-headshot-color.webp
+    - name: Jennifer Wang
+      title: COO
+      company: FilOz
+      image:
+        src: /assets/images/beauty_1725668108217.webp
+    - name: Danny O'Brien
+      title: Senior Fellow
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/danny-obrien.webp
+    - name: Hannah Howard
+      title: CTO
+      company: Storacha
+      image:
+        src: /assets/images/hannahhoward-headshot.webp
+    - name: Clara Tsao
+      title: Founding Officer
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/clara-tsao-davos.webp
+    - name: Jonathan Victor
+      title: Co-founder
+      company: Ansa Research
+      image:
+        src: /assets/images/jonathan-victor-headshot.webp
+    - name: Jonathan Schwartz
+      title: Founder and CEO
+      company: GLIF
+      image:
+        src: /assets/images/6brpu6s__400x400.webp
+    - name: Sarah Thiam
+      title: Founder and CEO
+      image:
+        src: /assets/images/uzt5zm_z_400x400.webp
+      company: FIL-B
+    - name: HQ Han
+      title: Co-founder
+      company: Ansa Research
+      image:
+        src: /assets/images/20w2w-hqhan.webp
+    - name: Colin Evran
+      title: Venture Partner
+      company: PLVS
+      image:
+        src: /assets/images/_122330227_colinevran.jpg.webp
+    - name: Dietrich Ayala
+      title: Advisor
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/avatar.jpg.320x320px.webp
+    - name: Meredith Pallante
+      title: Chief Experience Officer
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/meredith-pallante-davos.webp
+    - name: Megan Klimen
+      title: Founding Officer
+      company: Filecoin Foundation
+      image:
+        src: /assets/images/megan-klimen-davos.webp
+  kicker: Featuring
+  title: Featuring
 seo:
   description: Join us as Filecoin turns 5! Celebrate the network’s journey with
     community events, virtual sessions, and global gatherings honoring five
