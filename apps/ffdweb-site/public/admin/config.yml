@@ -149,7 +149,7 @@ collections:
   - name: "digest_issues"
     label: "Digest Issues"
     folder: "apps/ffdweb-site/src/content/digest/issues"
-    preview_path: "digest/{{issue-number}}"
+    preview_path: "digest/issue-{{issue-number}}"
     label_singular: "Digest Issue"
     create: true
     extension: "md"
@@ -159,6 +159,7 @@ collections:
         label: "Issue Number"
         widget: "select"
         options: ["1", "2"]
+        default: "1"
       - name: "title"
         label: "Issue Title"
         widget: "string"
@@ -166,6 +167,9 @@ collections:
       - name: "description"
         label: "Issue Description"
         widget: "text"
+      - *created_on
+      - *updated_on
+      - *published_on
       - name: "guest-editor"
         label: "Guest Editor"
         widget: "object"
@@ -178,7 +182,6 @@ collections:
             label: "Title"
             widget: "string"
             hint: "e.g., 'Co-Founder, Ansa Research'"
-      - *published_on
       - name: "articles"
         label: "Articles"
         widget: "list"
@@ -202,7 +205,7 @@ collections:
   - name: "digest_articles"
     label: "Digest Articles"
     folder: "apps/ffdweb-site/src/content/digest/articles"
-    preview_path: "digest/{{issue-number}}/{{slug}}"
+    preview_path: "digest/issue-{{issue-number}}/{{slug}}"
     label_singular: "Digest Article"
     create: true
     extension: "md"
@@ -221,6 +224,7 @@ collections:
         search_fields: ["issue-number", "title"]
         value_field: "issue-number"
         display_fields: ["issue-number"]
+        required: false
       - name: "article-number"
         label: "Article Number"
         widget: "number"

@@ -8,11 +8,10 @@ const GuestEditorSchema = z.object({
 })
 
 const DigestIssueFields = {
-  'issue-number': z.number(),
+  'issue-number': z.string(),
   title: z.string(),
-  description: z.array(z.string()),
+  description: z.string(),
   'guest-editor': GuestEditorSchema.optional(),
-  'published-on': z.string(),
   articles: z.array(z.string()),
 }
 

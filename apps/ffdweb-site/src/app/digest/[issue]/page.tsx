@@ -30,17 +30,17 @@ type DigestIssueProps = {
 
 export default async function DigestIssue(props: DigestIssueProps) {
   const { issue: issueSlug } = await props.params
-  const IssueNumber = issueSlug.replace('issue-', '')
+  const issueNumber = issueSlug.replace('issue-', '')
 
-  const digestIssue = await getDigestIssueData(IssueNumber)
+  const digestIssue = await getDigestIssueData(issueNumber)
 
   if (!digestIssue) {
     notFound()
   }
 
   const allArticles = await getDigestArticlesData()
-  const articles = allArticles.filter(
-    (article) => article.issueNumber === digestIssue.issueNumber.toString(),
+  const articles = allArticles.filter((article) =>
+    digestIssue.articles.includes(article.title),
   )
 
   const { kicker, title } = digestIssue

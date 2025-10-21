@@ -24,7 +24,7 @@ export async function getAllDigestIssuesData() {
 
 function getDigestIssueMarkdownData(issueNumber: string) {
   return getMarkdownData({
-    slug: `issue-${issueNumber}`,
+    slug: issueNumber,
     directoryPath: DIGEST_ISSUES_DIRECTORY_PATH,
     zodSchema: DigestIssueFrontmatterSchema,
   })

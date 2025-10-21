@@ -40,7 +40,7 @@ export default async function Digest() {
           description={description}
           layout={Number(issueNumber) % 2 === 1 ? 'regular' : 'reversed'}
           cta={{
-            href: PATHS.DIGEST.issueUrl(issueNumber.toString()),
+            href: PATHS.DIGEST.issueUrl(issueNumber),
             children: `Read Issue ${issueNumber}`,
           }}
         />
