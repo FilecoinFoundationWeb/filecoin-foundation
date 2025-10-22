@@ -13,13 +13,13 @@ export async function getAllDigestArticlesWithIssueContext({
   const digestIssue = await getDigestIssueData(issueNumber)
 
   const articles = await Promise.all(
-    digestIssue.articles.map(async (articleData, index) => {
+    digestIssue.articles.map(async (articleSlug, index) => {
       try {
-        const article = await getDigestArticleData(articleData.title)
+        const article = await getDigestArticleData(articleSlug)
         return {
           ...article,
           issueNumber: digestIssue.issueNumber,
-          articleNumber: articleData.articleNumber ?? index + 1,
+          articleNumber: index + 1,
         }
       } catch {
         return null
@@ -32,7 +32,7 @@ export async function getAllDigestArticlesWithIssueContext({
 
 type getDigestArticleWithIssueContextProps = {
   issueNumber: DigestIssueFrontmatter['issue-number']
-  articleSlug: DigestIssueFrontmatter['articles'][number]['title']
+  articleSlug: DigestIssueFrontmatter['articles'][number]
 }
 
 export async function getDigestArticleWithIssueContext({
@@ -41,19 +41,20 @@ export async function getDigestArticleWithIssueContext({
 }: getDigestArticleWithIssueContextProps) {
   const digestIssue = await getDigestIssueData(issueNumber)
 
-  const articleData = digestIssue?.articles.find(
-    (article) => article.title === articleSlug,
+  const articleIndex = digestIssue?.articles.findIndex(
+    (article) => article === articleSlug,
   )
 
-  if (!articleData) {
+  if (articleIndex === -1) {
     throw new Error(`Article ${articleSlug} not found in issue ${issueNumber}`)
   }
 
-  const article = await getDigestArticleData(articleData.title)
+  const articleData = digestIssue.articles[articleIndex]
+  const article = await getDigestArticleData(articleData)
 
   return {
     ...article,
     issueNumber: digestIssue.issueNumber,
-    articleNumber: articleData.articleNumber ?? 0,
+    articleNumber: articleIndex + 1,
   }
 }
