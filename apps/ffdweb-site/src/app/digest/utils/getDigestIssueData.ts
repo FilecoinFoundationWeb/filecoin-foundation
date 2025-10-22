@@ -6,7 +6,7 @@ import { PATHS } from '@/constants/paths'
 
 import { DigestIssueFrontmatterSchema } from '../schemas/DigestIssueFrontmatterSchema'
 
-const DIGEST_ISSUES_DIRECTORY_PATH = PATHS.DIGEST.issuePath
+const DIGEST_ISSUES_DIRECTORY_PATH = PATHS.DIGEST.issuePath as string
 
 export async function getDigestIssueData(issueNumber: number) {
   const data = await getDigestIssueMarkdownData(issueNumber)
