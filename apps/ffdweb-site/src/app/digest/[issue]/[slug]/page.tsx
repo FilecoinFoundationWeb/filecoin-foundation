@@ -14,10 +14,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
-import {
-  getDigestArticlesData,
-  getDigestArticleData,
-} from '../../utils/getDigestArticleData'
+import { getDigestArticlesData } from '../../utils/getDigestArticleData'
 import { getDigestArticleWithIssueContext } from '../../utils/getDigestArticlesWithIssueContext'
 
 import { AuthorBio } from './components/AuthorBio'
@@ -84,11 +81,17 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
-  const { slug } = await props.params
-  const { image, seo } = await getDigestArticleData(slug)
+  const { issue, slug: articleSlug } = await props.params
+
+  const issueSlug = parseInt(issue.replace('issue-', ''))
+
+  const { image, seo, issueNumber } = await getDigestArticleWithIssueContext({
+    issueNumber: issueSlug,
+    articleSlug,
+  })
 
   return createMetadata({
-    path: `${PATHS.DIGEST.path}/${slug}`,
+    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}` as const,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,

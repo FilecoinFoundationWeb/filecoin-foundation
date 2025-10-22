@@ -8,20 +8,25 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
-const CONTENT_FOLDER = PATHS.DIGEST.articlesPath
+const CONTENT_FOLDER = PATHS.DIGEST
 
 describe('Digest Slug Page', () => {
   it(tests.metadata.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+    cy.task<{ issueNumber: string; articleSlug: string }>(
+      'getRandomDigestArticleSlug',
+      CONTENT_FOLDER.issuePath,
+    ).then(({ issueNumber, articleSlug }) => {
       cy.task<GenericEntryFrontmatter>(
         'getEntryFrontmatter',
-        path.join(CONTENT_FOLDER, slug),
+        path.join(CONTENT_FOLDER.articlesPath, articleSlug),
       ).then(({ title, seo }) => {
         const seoTitle = seo.title || title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
+        const articlePath = `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}`
+
         tests.metadata.fn({
-          path: `${PATHS.DIGEST.path}/${slug}`,
+          path: articlePath,
           title: metaTitleWithSuffix,
           description: seo.description,
           baseUrl: BASE_URL,
@@ -31,14 +36,22 @@ describe('Digest Slug Page', () => {
   })
 
   it(tests.links.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.links.fn(`${PATHS.DIGEST.path}/${slug}`)
+    cy.task<{ issueNumber: string; articleSlug: string }>(
+      'getRandomDigestArticleSlug',
+      CONTENT_FOLDER.issuePath,
+    ).then(({ issueNumber, articleSlug }) => {
+      tests.links.fn(`${PATHS.DIGEST.issueUrl({ issueNumber })}/${articleSlug}`)
     })
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(`${PATHS.DIGEST.path}/${slug}`)
+    cy.task<{ issueNumber: string; articleSlug: string }>(
+      'getRandomDigestArticleSlug',
+      CONTENT_FOLDER.issuePath,
+    ).then(({ issueNumber, articleSlug }) => {
+      tests.visualSnapshot.fn(
+        `${PATHS.DIGEST.issueUrl({ issueNumber })}/${articleSlug}`,
+      )
     })
   })
 })
