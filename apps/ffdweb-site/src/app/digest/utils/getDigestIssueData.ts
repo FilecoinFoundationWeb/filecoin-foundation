@@ -8,7 +8,7 @@ import { DigestIssueFrontmatterSchema } from '../schemas/DigestIssueFrontmatterS
 
 const DIGEST_ISSUES_DIRECTORY_PATH = PATHS.DIGEST.issuePath
 
-export async function getDigestIssueData(issueNumber: string) {
+export async function getDigestIssueData(issueNumber: number) {
   const data = await getDigestIssueMarkdownData(issueNumber)
   return transformDigestIssueData(data)
 }
@@ -22,9 +22,9 @@ export async function getAllDigestIssuesData() {
   return allIssues.map(transformDigestIssueData)
 }
 
-function getDigestIssueMarkdownData(issueNumber: string) {
+function getDigestIssueMarkdownData(issueNumber: number) {
   return getMarkdownData({
-    slug: issueNumber,
+    slug: issueNumber.toString(),
     directoryPath: DIGEST_ISSUES_DIRECTORY_PATH,
     zodSchema: DigestIssueFrontmatterSchema,
   })
@@ -35,6 +35,7 @@ function transformDigestIssueData(
 ) {
   return {
     ...issue,
+    issueNumber: issue.issueNumber.toString(),
     kicker: `Issue ${issue.issueNumber} - ${formatDate(issue.publishedOn, 'MMM yyyy')}`,
     seo: {
       ...issue.seo,
