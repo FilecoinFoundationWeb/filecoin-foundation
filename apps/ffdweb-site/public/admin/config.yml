@@ -185,19 +185,17 @@ collections:
       - name: "articles"
         label: "Articles"
         widget: "list"
-        fields:
-          - name: "title"
-            label: "Article Title"
-            widget: "relation"
-            collection: "digest_articles"
-            search_fields: ["title"]
-            value_field: "{{slug}}"
-            display_fields: ["title"]
-          - name: "article-number"
-            label: "Article Number"
-            widget: "number"
-            default: 1
-            hint: "Set the article number manually"
+        field:
+          {
+            name: "title",
+            label: "Article Title",
+            widget: "relation",
+            collection: "digest_articles",
+            search_fields: ["title"],
+            value_field: "{{slug}}",
+            display_fields: ["title"],
+          }
+        hint: "Articles will be automatically numbered in the order they are added."
       - *meta_config_with_title_fallback
 
   - name: "digest_articles"
