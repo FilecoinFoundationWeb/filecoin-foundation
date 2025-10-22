@@ -73,7 +73,10 @@ export default async function DigestIssue(props: DigestIssueProps) {
                   { text: `Issue ${issueNumber}` },
                 ]}
                 cta={{
-                  href: PATHS.DIGEST.articleUrl(issueNumber.toString(), slug),
+                  href: PATHS.DIGEST.articleUrl({
+                    issueNumber: issueNumber.toString(),
+                    articleSlug: slug,
+                  }),
                   text: 'Read Article',
                   icon: CARET_RIGHT,
                 }}
