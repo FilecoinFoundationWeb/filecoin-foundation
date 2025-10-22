@@ -29,7 +29,7 @@ type DigestIssueProps = {
 
 export default async function DigestIssue(props: DigestIssueProps) {
   const { issue: issueSlug } = await props.params
-  const issueNumber = issueSlug.replace('issue-', '')
+  const issueNumber = parseInt(issueSlug.replace('issue-', ''))
 
   const digestIssue = await getDigestIssueData(issueNumber)
 

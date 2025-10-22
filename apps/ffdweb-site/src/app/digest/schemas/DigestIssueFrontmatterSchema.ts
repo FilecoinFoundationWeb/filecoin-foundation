@@ -8,7 +8,7 @@ const GuestEditorSchema = z.object({
 })
 
 const DigestIssueFields = {
-  'issue-number': z.string(),
+  'issue-number': z.number(),
   title: z.string(),
   description: z.string(),
   'guest-editor': GuestEditorSchema.optional(),

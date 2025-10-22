@@ -30,7 +30,7 @@ type DigestArticleProps = {
 export default async function DigestArticle(props: DigestArticleProps) {
   const { issue: issueSlug, slug: articleSlug } = await props.params
 
-  const digestIssueNumber = issueSlug.replace('issue-', '')
+  const digestIssueNumber = parseInt(issueSlug.replace('issue-', ''))
 
   const data = await getDigestArticleWithIssueContext({
     issueNumber: digestIssueNumber,
