@@ -12,7 +12,12 @@ const DigestIssueFields = {
   title: z.string(),
   description: z.string(),
   'guest-editor': GuestEditorSchema.optional(),
-  articles: z.array(z.string()),
+  articles: z.array(
+    z.object({
+      title: z.string(),
+      'article-number': z.number(),
+    }),
+  ),
 }
 
 export const DigestIssueFrontmatterSchema = z.strictObject({

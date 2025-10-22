@@ -4,7 +4,7 @@ import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 
 import { PATHS } from '@/constants/paths'
 
-import { DigestIssueFrontmatterSchema } from '../../schemas/DigestIssueFrontmatterSchema'
+import { DigestIssueFrontmatterSchema } from '../schemas/DigestIssueFrontmatterSchema'
 
 const DIGEST_ISSUES_DIRECTORY_PATH = PATHS.DIGEST.issuePath
 
