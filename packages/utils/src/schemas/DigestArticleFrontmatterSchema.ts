@@ -4,8 +4,8 @@ import { DynamicBaseDataSchema } from './DynamicDataBaseSchema'
 import { ImagePropsSchema } from './ImagePropsSchema'
 const DigestArticleFrontmatterFields = {
   title: z.string(),
-  'issue-number': z.string(),
-  'article-number': z.number(),
+  'issue-number': z.string().optional(),
+  'article-number': z.number().optional(),
   authors: z.array(
     z.object({
       'first-name': z.string(),

@@ -13,9 +13,9 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
-import { getAllDigestIssuesData } from './[issue]/data/getDigestIssueData'
 import { DIGEST_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getAllDigestIssuesData } from './utils/getDigestIssueData'
 export default async function Digest() {
   const digestIssues = await getAllDigestIssuesData()
 

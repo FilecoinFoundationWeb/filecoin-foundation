@@ -16,9 +16,8 @@ import { PageSection } from '@/components/PageSection'
 
 import { DIGEST_SEO } from '../constants/seo'
 import { generateStructuredData } from '../utils/generateStructuredData'
-import { getDigestArticlesData } from '../utils/getDigestArticleData'
-
-import { getDigestIssueData } from './data/getDigestIssueData'
+import { getAllDigestArticlesWithIssueContext } from '../utils/getDigestArticlesWithIssueContext'
+import { getDigestIssueData } from '../utils/getDigestIssueData'
 
 type DigestIssueParams = SlugParams & {
   issue: string
@@ -38,10 +37,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
     notFound()
   }
 
-  const allArticles = await getDigestArticlesData()
-  const articles = allArticles.filter((article) =>
-    digestIssue.articles.includes(article.title),
-  )
+  const articles = await getAllDigestArticlesWithIssueContext({ issueNumber })
 
   const { kicker, title } = digestIssue
 
@@ -54,6 +50,8 @@ export default async function DigestIssue(props: DigestIssueProps) {
       <PageSection kicker={kicker} title={title}>
         <CardGrid as="section" cols="smTwo">
           {articles.map((article) => {
+            if (!article) return null
+
             const {
               title,
               image,
@@ -70,7 +68,10 @@ export default async function DigestIssue(props: DigestIssueProps) {
                 as="article"
                 avatars={authors}
                 description={{ text: description, isClamped: true }}
-                tags={[{ text: `Article ${articleNumber}` }]}
+                tags={[
+                  { text: `Article ${articleNumber}` },
+                  { text: `Issue ${issueNumber}` },
+                ]}
                 cta={{
                   href: PATHS.DIGEST.articleUrl(issueNumber.toString(), slug),
                   text: 'Read Article',

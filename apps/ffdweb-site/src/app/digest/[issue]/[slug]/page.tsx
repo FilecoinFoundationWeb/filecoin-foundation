@@ -3,7 +3,7 @@ import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
+import { type DigestIssueParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
@@ -15,22 +15,30 @@ import { createMetadata } from '@/utils/createMetadata'
 import { MarkdownContent } from '@/components/MarkdownContent'
 
 import {
-  getDigestArticleData,
   getDigestArticlesData,
+  getDigestArticleData,
 } from '../../utils/getDigestArticleData'
+import { getDigestArticleWithIssueContext } from '../../utils/getDigestArticlesWithIssueContext'
 
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type DigestArticleProps = {
-  params: Promise<SlugParams>
+  params: Promise<DigestIssueParams>
 }
 
 export default async function DigestArticle(props: DigestArticleProps) {
-  const { slug } = await props.params
-  const data = await getDigestArticleData(slug)
+  const { issue: issueSlug, slug: articleSlug } = await props.params
 
-  const { title, issueNumber, articleNumber, image, authors, content } = data
+  const digestIssueNumber = issueSlug.replace('issue-', '')
+
+  const data = await getDigestArticleWithIssueContext({
+    issueNumber: digestIssueNumber,
+    articleSlug,
+  })
+
+  const { title, issueNumber, articleNumber, image, authors, content, slug } =
+    data
 
   const atLeastOneAuthorHasBio = authors.some((author) => author.bio)
 
