@@ -19,7 +19,9 @@ export async function getAllDigestIssuesData() {
     zodSchema: DigestIssueFrontmatterSchema,
   })
 
-  return allIssues.map(transformDigestIssueData)
+  return allIssues
+    .map(transformDigestIssueData)
+    .sort((a, b) => Number(b.issueNumber) - Number(a.issueNumber))
 }
 
 function getDigestIssueMarkdownData(issueNumber: number) {

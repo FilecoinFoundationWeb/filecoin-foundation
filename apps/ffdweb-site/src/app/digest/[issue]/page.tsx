@@ -4,12 +4,15 @@ import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
+import type { DigestIssueParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
+import { ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
 
 import { Card } from '@/components/Card'
 import { PageSection } from '@/components/PageSection'
@@ -17,19 +20,18 @@ import { PageSection } from '@/components/PageSection'
 import { DIGEST_SEO } from '../constants/seo'
 import { generateStructuredData } from '../utils/generateStructuredData'
 import { getAllDigestArticlesWithIssueContext } from '../utils/getDigestArticlesWithIssueContext'
-import { getDigestIssueData } from '../utils/getDigestIssueData'
-
-type DigestIssueParams = SlugParams & {
-  issue: string
-}
+import {
+  getAllDigestIssuesData,
+  getDigestIssueData,
+} from '../utils/getDigestIssueData'
+import { parseDigestIssueParams } from '../utils/parseDigestParams'
 
 type DigestIssueProps = {
   params: Promise<DigestIssueParams>
 }
 
 export default async function DigestIssue(props: DigestIssueProps) {
-  const { issue: issueSlug } = await props.params
-  const issueNumber = parseInt(issueSlug.replace('issue-', ''))
+  const { issueNumber } = await parseDigestIssueParams(props.params)
 
   const digestIssue = await getDigestIssueData(issueNumber)
 
@@ -49,7 +51,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
 
       <PageSection kicker={kicker} title={title}>
         <CardGrid as="section" cols="smTwo">
-          {articles.map((article) => {
+          {articles.map((article, index) => {
             if (!article) return null
 
             const {
@@ -83,6 +85,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
                 image={{
                   ...(image || graphicsData.imageFallback.data),
                   alt: image?.alt || '',
+                  priority: index < 4,
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
                     sm: '340px',
@@ -100,4 +103,27 @@ export default async function DigestIssue(props: DigestIssueProps) {
       </PageSection>
     </PageLayout>
   )
+}
+
+export async function generateStaticParams() {
+  const allIssues = await getAllDigestIssuesData()
+  return allIssues.map(({ issueNumber }) => ({
+    issue: `issue-${issueNumber}`,
+  }))
+}
+
+export async function generateMetadata(props: DigestIssueProps) {
+  const { issueNumber } = await parseDigestIssueParams(props.params)
+
+  const digestIssue = await getDigestIssueData(issueNumber)
+
+  const { seo, image } = digestIssue
+
+  return createMetadata({
+    path: `${PATHS.DIGEST.issueUrl({ issueNumber: issueNumber.toString() })}`,
+    title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
+    description: seo.description,
+    image: image?.src || graphicsData.digest.data.src,
+    openGraph: { type: 'website' },
+  })
 }
