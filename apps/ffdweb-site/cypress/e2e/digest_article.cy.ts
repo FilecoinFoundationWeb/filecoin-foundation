@@ -10,7 +10,7 @@ import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
 const CONTENT_FOLDER = PATHS.DIGEST
 
-describe('Digest Slug Page', () => {
+describe('Digest Article Page', () => {
   it(tests.metadata.prompt, () => {
     cy.task<{ issueNumber: string; articleSlug: string }>(
       'getRandomDigestArticleSlug',
