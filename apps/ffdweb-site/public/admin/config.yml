@@ -157,9 +157,9 @@ collections:
     fields:
       - name: "issue-number"
         label: "Issue Number"
-        widget: "select"
-        options: [1, 2]
-        default: 1
+        widget: "number"
+        min: 1
+        max: 2
       - name: "title"
         label: "Issue Title"
         widget: "string"
@@ -196,6 +196,7 @@ collections:
             display_fields: ["title"],
           }
         hint: "Articles will be automatically numbered in the order they are added."
+      - *image_config
       - *meta_config_with_title_fallback
 
   - name: "digest_articles"
