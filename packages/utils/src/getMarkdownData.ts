@@ -5,10 +5,10 @@ import matter from 'gray-matter'
 import { ZodError, ZodObject, type ZodRawShape } from 'zod'
 
 import {
+  checkPathExists,
   getFilePath,
   handleFileNotFound,
   readFileContents,
-  checkPathExists,
 } from './fileUtils'
 import { logZodError } from './zodUtils'
 
