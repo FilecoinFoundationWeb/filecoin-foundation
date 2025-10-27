@@ -32,7 +32,9 @@ export const PATHS = {
     '/build-on-filecoin',
     'Build on Filecoin',
   ),
-  CASE_STUDIES: createPathConfig('/case-studies', 'Case Studies'),
+  CASE_STUDIES: createPathConfig('/case-studies', 'Case Studies', {
+    entriesPath: `${CONTENT_ROOT}/case-studies`,
+  }),
   COMMUNITY_HUB: createPathConfig('/community-hub', 'Community Hub'),
   HOME: createPathConfig('/', 'Home'),
 

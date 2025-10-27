@@ -15,7 +15,7 @@ type ImageLogoProps = {
   bgColor: HEXCodeType
 }
 
-type SVGLogoProps = {
+export type SVGLogoProps = {
   type: 'svg'
   src: IconProps['component']
   bgColor: HEXCodeType
