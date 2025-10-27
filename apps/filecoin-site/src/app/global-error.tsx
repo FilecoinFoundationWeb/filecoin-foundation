@@ -26,7 +26,10 @@ export default function GlobalError({ error }: GlobalErrorProps) {
       error={error}
       Layout={SiteLayout}
       cta={
-        <Button href={FILECOIN_FOUNDATION_URLS.techSupportEmail.href}>
+        <Button
+          variant="primary"
+          href={FILECOIN_FOUNDATION_URLS.techSupportEmail.href}
+        >
           {FILECOIN_FOUNDATION_URLS.techSupportEmail.label}
         </Button>
       }

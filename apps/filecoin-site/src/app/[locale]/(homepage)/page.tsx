@@ -17,7 +17,6 @@ import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-
 import { Button } from '@/components/Button'
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { GradientContainer } from '@/components/GradientContainer'
@@ -182,7 +181,11 @@ export default async function Home({ params }: BlogProps) {
           centerCTA
           title="Latest news"
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
-          cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
+          cta={
+            <Button variant="primary" href={PATHS.BLOG.path}>
+              View all articles
+            </Button>
+          }
         >
           <CardGrid as="ul" variant="mdTwoLgThreeWide">
             {featuredBlogPosts.map((post: BlogPost) => {
