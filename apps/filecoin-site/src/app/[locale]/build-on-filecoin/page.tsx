@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 
 import { PATHS } from '@/constants/paths'
 import {
@@ -12,9 +13,9 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
-import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { GradientContainer } from '@/components/GradientContainer'
 import { ImageGrid } from '@/components/ImageGrid'

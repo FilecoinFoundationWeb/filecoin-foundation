@@ -1,11 +1,13 @@
+import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+
 import { Button } from '@/components/Button'
-import { CardGrid } from '@/components/CardGrid'
 import { GradientContainer } from '@/components/GradientContainer'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'

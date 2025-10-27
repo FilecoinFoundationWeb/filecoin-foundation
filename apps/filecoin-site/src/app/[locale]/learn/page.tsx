@@ -2,6 +2,8 @@ import Image from 'next/image'
 
 import { clsx } from 'clsx'
 
+import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
 
@@ -9,9 +11,9 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
-import { CardGrid } from '@/components/CardGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'

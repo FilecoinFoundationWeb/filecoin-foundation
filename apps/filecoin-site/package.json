@@ -43,6 +43,7 @@
     "@filecoin-foundation/next-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
     "@filecoin-foundation/ui": "0.0.0",
+    "@filecoin-foundation/ui-filecoin": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
     "@percy/cli": "^1.31.4",
     "@percy/cypress": "^3.1.6",
