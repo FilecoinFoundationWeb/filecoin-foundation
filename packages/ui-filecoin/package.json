@@ -7,7 +7,8 @@
     "#*": "./src/*"
   },
   "exports": {
-    "./CardGrid": "./src/CardGrid.tsx"
+    "./CardGrid": "./src/CardGrid.tsx",
+    "./styles": "./src/styles/globals.css"
   },
   "scripts": {
     "lint": "eslint src --fix",
