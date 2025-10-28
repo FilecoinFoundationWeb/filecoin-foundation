@@ -1,12 +1,13 @@
-'use client'
-
-import { createContext, use } from 'react'
+import { use } from 'react'
 
 import { clsx } from 'clsx'
 
-import { backgroundVariants } from './backgroundVariants'
+import {
+  BackgroundVariantContext,
+  BackgroundVariantProvider,
+} from './BackgroundVariantProvider'
 
-type BackgroundVariant = keyof typeof backgroundVariants
+export type BackgroundVariant = keyof typeof backgroundVariants
 
 export type SectionProps = {
   backgroundVariant: BackgroundVariant
@@ -14,7 +15,13 @@ export type SectionProps = {
   children: React.ReactNode
 }
 
-const BackgroundVariantContext = createContext<BackgroundVariant>('transparent')
+export const backgroundVariants = {
+  dark: 'dark-section bg-zinc-950',
+  gray: 'light-section bg-gray-200',
+  light: 'light-section bg-white',
+  transparent: 'light-section bg-transparent',
+  transparentDark: 'dark-section bg-transparent',
+} as const
 
 export function Section({
   children,
@@ -22,7 +29,7 @@ export function Section({
   as: Tag = 'section',
 }: SectionProps) {
   return (
-    <BackgroundVariantContext value={backgroundVariant}>
+    <BackgroundVariantProvider value={backgroundVariant}>
       <Tag
         className={clsx(
           'text-[var(--color-text-base)]',
@@ -31,7 +38,7 @@ export function Section({
       >
         {children}
       </Tag>
-    </BackgroundVariantContext>
+    </BackgroundVariantProvider>
   )
 }
 
