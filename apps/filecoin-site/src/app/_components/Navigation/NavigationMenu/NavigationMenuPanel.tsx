@@ -2,8 +2,7 @@
 
 import { clsx } from 'clsx'
 
-import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
-import { backgroundVariants } from '@/components/Section'
+import { backgroundVariants, useBackgroundVariant } from '@/components/Section'
 
 import { type NavigationMenuItem } from '../constants/navigation'
 import { variantMapping } from '../constants/variantMapping'
