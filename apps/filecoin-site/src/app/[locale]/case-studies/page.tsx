@@ -1,4 +1,5 @@
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
 import { PATHS } from '@/constants/paths'
@@ -10,7 +11,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { Button } from '@/components/Button'
 import { GradientContainer } from '@/components/GradientContainer'
 import { Navigation } from '@/components/Navigation/Navigation'
-import { PageHeader } from '@/components/PageHeader'
 import { SectionContent } from '@/components/SectionContent'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
