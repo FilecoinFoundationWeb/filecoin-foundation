@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { clsx } from 'clsx'
 
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
-import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section'
+import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/backgroundVariants'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
@@ -11,7 +11,6 @@ import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'

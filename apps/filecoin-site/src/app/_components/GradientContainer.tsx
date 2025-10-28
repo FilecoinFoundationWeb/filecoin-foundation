@@ -1,6 +1,6 @@
 import { clsx } from 'clsx'
 
-import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section'
+import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/backgroundVariants'
 
 type GradientContainerProps = React.ComponentProps<'div'> & {
   clipY?: boolean
