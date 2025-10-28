@@ -1,11 +1,7 @@
 import { clsx } from 'clsx'
 
-import {
-  Heading,
-  type HeadingProps,
-} from '@filecoin-foundation/ui-filecoin/Heading'
-
 import { ButtonRow, type ButtonRowProps } from './ButtonRow'
+import { Heading, type HeadingProps } from './Heading'
 
 type PageHeaderProps = {
   title: HeadingProps['children']
