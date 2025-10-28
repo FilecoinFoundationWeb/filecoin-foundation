@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
 import { PATHS } from '@/constants/paths'
 import {
@@ -13,7 +14,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGridContainer } from '@/components/CardGridContainer'
@@ -22,7 +22,6 @@ import { ImageGrid } from '@/components/ImageGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
-import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
 import { SimpleCard } from '@/components/SimpleCard'
