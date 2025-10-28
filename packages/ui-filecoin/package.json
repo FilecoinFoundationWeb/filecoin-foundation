@@ -9,10 +9,12 @@
   "exports": {
     "./styles": "./src/styles/globals.css",
     "./Button": "./src/Button.tsx",
+    "./Card": "./src/Card.tsx",
     "./CardGrid": "./src/CardGrid.tsx",
     "./Container": "./src/Container.tsx",
     "./Heading": "./src/Heading.tsx",
     "./PageSection": "./src/PageSection.tsx",
+    "./IconBadge": "./src/IconBadge.tsx",
     "./Section": "./src/Section/Section.tsx",
     "./Section/backgroundVariants": "./src/Section/backgroundVariants.ts"
   },
