@@ -1,13 +1,9 @@
-import { type HeadingProps } from '#/Heading'
+import { type HeadingProps } from '../Heading'
 
 import { Carousel } from './Carousel/Carousel'
 import { CarouselContent } from './Carousel/CarouselContent'
 import { CarouselItem } from './Carousel/CarouselItem'
-import {
-  CarouselNext,
-  CarouselPrevious,
-} from './Carousel/CarouselNavigation'
-
+import { CarouselNext, CarouselPrevious } from './Carousel/CarouselNavigation'
 import { type LogoItemProps, LogoItem } from './LogoItem'
 
 type LogoSectionProps = {
