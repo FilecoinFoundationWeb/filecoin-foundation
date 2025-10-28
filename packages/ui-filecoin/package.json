@@ -16,6 +16,7 @@
     "./Heading": "./src/Heading.tsx",
     "./PageHeader": "./src/PageHeader.tsx",
     "./PageSection": "./src/PageSection.tsx",
+    "./SectionContent": "./src/SectionContent.tsx",
     "./IconBadge": "./src/IconBadge.tsx",
     "./LogoSection": "./src/LogoSection/LogoSection.tsx",
     "./LogoSection/LogoItem": "./src/LogoSection/LogoItem.tsx",
