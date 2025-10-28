@@ -1,8 +1,9 @@
+import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
+
 import { PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { Heading } from '@/components/Heading'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageSection } from '@/components/PageSection'
 

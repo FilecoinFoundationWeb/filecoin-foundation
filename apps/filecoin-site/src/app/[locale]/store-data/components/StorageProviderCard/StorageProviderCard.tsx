@@ -1,10 +1,10 @@
 import type { ComponentType, SVGProps } from 'react'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 
 import { Badge } from '@/components/Badge'
 import { CTALink } from '@/components/CTALink'
-import { Heading } from '@/components/Heading'
 
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'

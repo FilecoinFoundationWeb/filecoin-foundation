@@ -1,3 +1,5 @@
+import { type HeadingProps } from '@filecoin-foundation/ui-filecoin/Heading'
+
 import { Carousel } from '@/components/Carousel/Carousel'
 import { CarouselContent } from '@/components/Carousel/CarouselContent'
 import { CarouselItem } from '@/components/Carousel/CarouselItem'
@@ -5,7 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/Carousel/CarouselNavigation'
-import { type HeadingProps } from '@/components/Heading'
 
 import { type LogoItemProps, LogoItem } from './LogoItem'
 

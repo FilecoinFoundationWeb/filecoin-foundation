@@ -1,8 +1,12 @@
 import clsx from 'clsx'
 
+import {
+  Heading,
+  type HeadingProps,
+} from '@filecoin-foundation/ui-filecoin/Heading'
+
 import { BaseLink } from '@/components/BaseLink'
 
-import { Heading, type HeadingProps } from './Heading'
 import { IconBadge, type IconBadgeProps } from './IconBadge'
 
 type LinkCardProps = {
