@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -9,14 +10,12 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-
 import { Button } from '@/components/Button'
 import { GradientContainer } from '@/components/GradientContainer'
 import { ImageGrid } from '@/components/ImageGrid'
 import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
-import { PageSection } from '@/components/PageSection'
 import { SectionContent } from '@/components/SectionContent'
 import { SectionImage } from '@/components/SectionImage'
 import { SimpleCard } from '@/components/SimpleCard'

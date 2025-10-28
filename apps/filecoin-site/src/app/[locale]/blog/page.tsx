@@ -3,6 +3,7 @@ import { Suspense } from 'react'
 import type { LocaleParams } from '@/i18n/types'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'
@@ -12,15 +13,12 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
-import { PageSection } from '@/components/PageSection'
-
 
 import { BlogPageHeader } from './components/BlogPageHeader'
 import { BlogPostList } from './components/BlogPostList'
 import { BLOG_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
-
 
 type BlogProps = {
   params: Promise<LocaleParams>

@@ -1,10 +1,11 @@
 import { useTranslations } from 'next-intl'
 
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
+
 import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader'
-import { PageSection } from '@/components/PageSection'
 
 import { Announcement } from './Announcement'
 

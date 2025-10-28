@@ -2,15 +2,14 @@ import { Link } from '@/i18n/navigation'
 
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { Social } from '@filecoin-foundation/ui/Social'
+import { Container } from '@filecoin-foundation/ui-filecoin/Container'
 import { Section } from '@filecoin-foundation/ui-filecoin/Section'
 
 import { socialLinksWithIcons } from '@/constants/socialConfig'
 
 import Logo from '@/assets/logos/filecoin-logo-full.svg'
 
-import { Container } from '@/components/Container'
 import { SectionDivider } from '@/components/SectionDivider'
-
 
 import { LegalSection } from './LegalSection'
 import { NavigationItems } from './NavigationItems'
