@@ -1,13 +1,12 @@
-import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
-
 import type { LocaleParams } from '@/i18n/types'
+
+import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
 
 import { Button } from '@/components/Button'
 import { GradientContainer } from '@/components/GradientContainer'
