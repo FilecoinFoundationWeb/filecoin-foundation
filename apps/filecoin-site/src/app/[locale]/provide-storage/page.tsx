@@ -2,6 +2,7 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { Card } from '@filecoin-foundation/ui-filecoin/Card'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
+import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
 import { PATHS } from '@/constants/paths'
@@ -13,7 +14,6 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { Button } from '@/components/Button'
 import { GradientContainer } from '@/components/GradientContainer'
-import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { PageHeader } from '@/components/PageHeader'
 import { SectionContent } from '@/components/SectionContent'
