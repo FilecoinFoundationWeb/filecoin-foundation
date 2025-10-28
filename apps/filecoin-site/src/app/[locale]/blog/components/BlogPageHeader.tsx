@@ -1,11 +1,11 @@
 import Image, { type ImageProps } from 'next/image'
 
+import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
 import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
-import { Heading } from '@/components/Heading'
 
 import type { BlogPost } from '../types/blogPostType'
 

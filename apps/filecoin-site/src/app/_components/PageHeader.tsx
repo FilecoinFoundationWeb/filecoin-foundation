@@ -1,6 +1,9 @@
 import { clsx } from 'clsx'
 
-import { Heading, type HeadingProps } from '@/components/Heading'
+import {
+  Heading,
+  type HeadingProps,
+} from '@filecoin-foundation/ui-filecoin/Heading'
 
 import { ButtonRow, type ButtonRowProps } from './ButtonRow'
 
