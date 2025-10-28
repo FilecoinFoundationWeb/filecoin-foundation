@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
+@import './announcement.css';
 @import './button.css';
 @import './card-image.css';
 @import './logo-section.css';
