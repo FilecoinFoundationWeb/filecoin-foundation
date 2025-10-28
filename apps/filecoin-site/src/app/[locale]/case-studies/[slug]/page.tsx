@@ -54,7 +54,7 @@ export async function generateMetadata(props: CaseStudyArticleProps) {
   return createMetadata({
     path: `${PATHS.CASE_STUDIES.path}/${slug}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME}` },
-    description: seo.description,
+    description: seo.description || '',
     image: image?.url,
     openGraph: { type: 'article' },
   })
