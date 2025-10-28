@@ -1,5 +1,5 @@
 import { Container } from './Container'
-import { Section, type SectionProps } from './Section'
+import { Section, type SectionProps } from './Section/Section'
 
 type PageSectionProps = {
   backgroundVariant: SectionProps['backgroundVariant']

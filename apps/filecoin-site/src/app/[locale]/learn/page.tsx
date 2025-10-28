@@ -4,7 +4,7 @@ import { clsx } from 'clsx'
 
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
-import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section'
+import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/backgroundVariants'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
