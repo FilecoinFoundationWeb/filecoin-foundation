@@ -16,6 +16,7 @@
     "./PageSection": "./src/PageSection.tsx",
     "./IconBadge": "./src/IconBadge.tsx",
     "./LogoSection": "./src/LogoSection/LogoSection.tsx",
+    "./LogoSection/LogoItem": "./src/LogoSection/LogoItem.tsx",
     "./Section": "./src/Section/Section.tsx",
     "./Section/backgroundVariants": "./src/Section/backgroundVariants.ts"
   },
