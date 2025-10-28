@@ -4,19 +4,17 @@ import {
   CardImage,
   type CardImageProps,
 } from '@filecoin-foundation/ui/Card/CardImage'
+import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { Heading } from '@/components/Heading'
 import { TagGroup } from '@/components/TagGroup/TagGroup'
-
 
 import type { BlogPost } from '../types/blogPostType'
 
 import { PostMetadata } from './PostMetadata'
-
 
 export type BlogCardProps = {
   title: BlogPost['title']

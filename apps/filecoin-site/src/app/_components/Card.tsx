@@ -1,7 +1,7 @@
 import { CardImage } from '@filecoin-foundation/ui/Card/CardImage'
+import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
-import { Heading } from './Heading'
 import { IconBadge, type IconBadgeProps } from './IconBadge'
 
 type BaseCardProps = {
