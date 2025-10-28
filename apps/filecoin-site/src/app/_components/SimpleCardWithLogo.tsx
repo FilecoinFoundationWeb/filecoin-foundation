@@ -7,9 +7,9 @@ import { Icon } from '@filecoin-foundation/ui/Icon'
 import { CTALink, type CTALinkProps } from './CTALink'
 import { Heading } from './Heading'
 
-type HEXCodeType = `#${string}`
+export type HEXCodeType = `#${string}`
 
-type ImageLogoProps = {
+export type ImageLogoProps = {
   type: 'image'
   src: StaticImageData
   bgColor: HEXCodeType

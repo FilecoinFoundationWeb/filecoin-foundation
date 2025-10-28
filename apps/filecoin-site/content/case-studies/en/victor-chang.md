@@ -6,9 +6,6 @@ introDescription: "As they work towards finding a cure for heart disease, The Vi
 challenge: "Medical detection instruments are generating larger datasets, with one SyncroPatch machine generating 20,000 data points per day. The Institute needs to manage terabytes of data weekly while maintaining research data integrity for published papers and sharing data with third parties for verification."
 solution: "Distributed Storage Solutions (DSS) provides the Institute with a managed Filecoin storage service, enabling them to store 125+ TiBs of cardiac research data including raw datasets from published papers and encrypted backups of their SyncroPatch machine data."
 results: "The Institute now stores data at a fraction of the cost of centralized cloud storage (saving $1,500+ monthly), with strong data integrity guarantees through cryptographic proofs and unique content identifiers, ensuring research data remains accurate and reliable for published papers."
-logo:
-  bgColor: "#ffffff"
-  color: "#000000"
 image:
   url: ""
 featured: true
