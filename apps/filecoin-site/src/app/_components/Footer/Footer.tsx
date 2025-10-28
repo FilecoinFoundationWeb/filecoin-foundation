@@ -2,13 +2,13 @@ import { Link } from '@/i18n/navigation'
 
 import { LogoLink } from '@filecoin-foundation/ui/LogoLink'
 import { Social } from '@filecoin-foundation/ui/Social'
+import { Section } from '@filecoin-foundation/ui-filecoin/Section'
 
 import { socialLinksWithIcons } from '@/constants/socialConfig'
 
 import Logo from '@/assets/logos/filecoin-logo-full.svg'
 
 import { Container } from '@/components/Container'
-import { Section } from '@/components/Section'
 import { SectionDivider } from '@/components/SectionDivider'
 
 

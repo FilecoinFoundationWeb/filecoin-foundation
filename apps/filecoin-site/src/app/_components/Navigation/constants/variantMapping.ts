@@ -1,4 +1,4 @@
-import type { SectionProps } from '@/components/Section'
+import type { SectionProps } from '@filecoin-foundation/ui-filecoin/Section'
 
 type VariantMapping = Record<
   SectionProps['backgroundVariant'],
