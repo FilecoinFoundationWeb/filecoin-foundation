@@ -10,6 +10,7 @@
     "./Button": "./src/Button.tsx",
     "./CardGrid": "./src/CardGrid.tsx",
     "./Heading": "./src/Heading.tsx",
+    "./Section": "./src/Section.tsx",
     "./styles": "./src/styles/globals.css"
   },
   "scripts": {
