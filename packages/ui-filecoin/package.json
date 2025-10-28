@@ -9,6 +9,7 @@
   "exports": {
     "./Button": "./src/Button.tsx",
     "./CardGrid": "./src/CardGrid.tsx",
+    "./Heading": "./src/Heading.tsx",
     "./styles": "./src/styles/globals.css"
   },
   "scripts": {
