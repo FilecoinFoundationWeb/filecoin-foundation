@@ -2,13 +2,9 @@ import React from 'react'
 
 import { clsx } from 'clsx'
 
-import type { Button } from './Button'
-
 export type ButtonRowProps = {
   centered?: boolean
-  buttons:
-    | React.ReactElement<typeof Button>
-    | Array<React.ReactElement<typeof Button>>
+  buttons: React.ReactElement | Array<React.ReactElement>
 }
 
 export function ButtonRow({ buttons, centered }: ButtonRowProps) {
