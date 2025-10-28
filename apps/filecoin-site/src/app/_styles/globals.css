@@ -145,11 +145,6 @@
 }
 
 @layer components {
-  /* CARD */
-  .card-image {
-    @apply rounded-2xl border border-[var(--color-border-base)];
-  }
-
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
     @apply icon-button;
