@@ -1,5 +1,6 @@
+import { Section, type SectionProps } from '@filecoin-foundation/ui-filecoin/Section'
+
 import { Container } from '@/components/Container'
-import { Section, type SectionProps } from '@/components/Section'
 
 type PageSectionProps = {
   backgroundVariant: SectionProps['backgroundVariant']

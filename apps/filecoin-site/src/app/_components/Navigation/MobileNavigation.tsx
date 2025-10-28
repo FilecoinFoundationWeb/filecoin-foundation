@@ -7,9 +7,7 @@ import { clsx } from 'clsx'
 
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
-
-import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
-import { backgroundVariants } from '@/components/Section'
+import { useBackgroundVariant, backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section'
 
 import { mobileNavigationItems } from './constants/navigation'
 import { variantMapping } from './constants/variantMapping'
