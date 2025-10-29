@@ -1,18 +1,19 @@
 'use client'
 
-import type { Button } from '@headlessui/react'
-
+import { useCarousel } from './Carousel'
 import { CarouselButton } from './CarouselButton'
 
-type CarouselNavigationProps = React.ComponentProps<typeof Button>
+export function ConditionalCarouselNavigation() {
+  const { canScrollPrev, canScrollNext } = useCarousel()
 
-export function CarouselPrevious({
-  className,
-  ...props
-}: CarouselNavigationProps) {
-  return <CarouselButton direction="prev" className={className} {...props} />
-}
+  if (!canScrollPrev && !canScrollNext) {
+    return null
+  }
 
-export function CarouselNext({ className, ...props }: CarouselNavigationProps) {
-  return <CarouselButton direction="next" className={className} {...props} />
+  return (
+    <>
+      {canScrollPrev && <CarouselButton direction="prev" />}
+      {canScrollNext && <CarouselButton direction="next" />}
+    </>
+  )
 }
