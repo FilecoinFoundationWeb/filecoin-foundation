@@ -8,6 +8,7 @@
   },
   "exports": {
     "./styles": "./src/styles/globals.css",
+    "./BaseLink": "./src/BaseLink.tsx",
     "./Button": "./src/Button.tsx",
     "./ButtonRow": "./src/ButtonRow.tsx",
     "./Card": "./src/Card.tsx",
@@ -20,7 +21,8 @@
     "./IconBadge": "./src/IconBadge.tsx",
     "./LogoSection": "./src/LogoSection/LogoSection.tsx",
     "./LogoSection/LogoItem": "./src/LogoSection/LogoItem.tsx",
-    "./Section": "./src/Section/Section.tsx"
+    "./Section": "./src/Section/Section.tsx",
+    "./TextLink/*": "./src/TextLink/*.tsx"
   },
   "scripts": {
     "lint": "eslint src --fix",

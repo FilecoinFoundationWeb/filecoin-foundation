@@ -1,4 +1,4 @@
-import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink'
+import { ExternalTextLink } from '@filecoin-foundation/ui-filecoin/TextLink/ExternalTextLink'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
