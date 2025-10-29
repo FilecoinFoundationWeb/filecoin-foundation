@@ -5,12 +5,13 @@ import clsx from 'clsx'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 
 import { Badge, type BadgeProps } from './Badge'
+import { type CTALinkProps } from './CTALink'
 
-type LinkComponentProps = {
-  href: string
-  inset: boolean
-  textClassName?: string
-  children: string
+type CTALinkComponentProps = {
+  href: CTALinkProps['href']
+  inset: CTALinkProps['inset']
+  textClassName: CTALinkProps['textClassName']
+  children: CTALinkProps['children']
 }
 
 export type SimpleCardProps = {
@@ -18,21 +19,30 @@ export type SimpleCardProps = {
   description: string
   as: 'li' | 'div'
   badge?: {
-    text: BadgeProps['children']
     variant: BadgeProps['variant']
+    text: BadgeProps['children']
   }
   border?: BorderKey
   cta?: {
-    href: LinkComponentProps['href']
-    text: LinkComponentProps['children']
+    href: CTALinkComponentProps['href']
+    text: CTALinkComponentProps['children']
   }
-  LinkComponent: ComponentType<LinkComponentProps>
+  CTALinkComponent: ComponentType<CTALinkComponentProps>
 }
 
 export type SimpleCardData = {
   title: SimpleCardProps['title']
   description: SimpleCardProps['description']
   cta: NonNullable<SimpleCardProps['cta']>
+}
+
+type CardLayoutStyles = Record<
+  BorderKey,
+  { inner: string; content: string; cta: string }
+>
+
+type CardContentProps = Pick<SimpleCardProps, 'title' | 'description'> & {
+  layout: CardLayoutStyles[BorderKey]
 }
 
 type BorderKey = keyof typeof borderStyles
@@ -46,10 +56,7 @@ const interactiveStyles: Partial<Record<BorderKey, string>> = {
   all: 'focus-within:brand-outline focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)]',
 }
 
-const cardLayoutStyles: Record<
-  BorderKey,
-  { inner: string; content: string; cta: string }
-> = {
+const cardLayoutStyles: CardLayoutStyles = {
   all: {
     inner: 'p-8',
     content: 'mb-12',
@@ -69,7 +76,7 @@ export function SimpleCard({
   cta,
   badge,
   border = 'all',
-  LinkComponent,
+  CTALinkComponent,
 }: SimpleCardProps) {
   const layout = cardLayoutStyles[border]
 
@@ -90,22 +97,16 @@ export function SimpleCard({
         )}
         <CardContent title={title} description={description} layout={layout} />
         {cta && (
-          <LinkComponent inset href={cta.href} textClassName={layout.cta}>
+          <CTALinkComponent inset href={cta.href} textClassName={layout.cta}>
             {cta.text}
-          </LinkComponent>
+          </CTALinkComponent>
         )}
       </div>
     </Tag>
   )
 }
 
-function CardContent({
-  title,
-  description,
-  layout,
-}: Pick<SimpleCardProps, 'title' | 'description'> & {
-  layout: (typeof cardLayoutStyles)[BorderKey]
-}) {
+function CardContent({ title, description, layout }: CardContentProps) {
   return (
     <div className={clsx('flex flex-col gap-3', layout.content)}>
       <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">

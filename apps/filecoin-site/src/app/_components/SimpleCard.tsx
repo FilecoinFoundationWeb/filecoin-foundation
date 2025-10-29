@@ -7,8 +7,8 @@ import { CTALink } from '@/components/CTALink'
 
 export { type SimpleCardData } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
-export type SimpleCardProps = Omit<SharedSimpleCardProps, 'LinkComponent'>
+export type SimpleCardProps = Omit<SharedSimpleCardProps, 'CTALinkComponent'>
 
 export function SimpleCard(props: SimpleCardProps) {
-  return <SharedSimpleCard LinkComponent={CTALink} {...props} />
+  return <SharedSimpleCard {...props} CTALinkComponent={CTALink} />
 }
