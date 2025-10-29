@@ -4,10 +4,12 @@ import {
   Heading,
   type HeadingProps,
 } from '@filecoin-foundation/ui-filecoin/Heading'
-import { IconBadge, type IconBadgeProps } from '@filecoin-foundation/ui-filecoin/IconBadge'
+import {
+  IconBadge,
+  type IconBadgeProps,
+} from '@filecoin-foundation/ui-filecoin/IconBadge'
 
 import { BaseLink } from '@/components/BaseLink'
-
 
 type LinkCardProps = {
   as: 'li' | 'article' | 'div'

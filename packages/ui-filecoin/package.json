@@ -8,6 +8,7 @@
   },
   "exports": {
     "./styles": "./src/styles/globals.css",
+    "./BaseLink": "./src/BaseLink.tsx",
     "./Button": "./src/Button.tsx",
     "./ButtonRow": "./src/ButtonRow.tsx",
     "./Card": "./src/Card.tsx",
