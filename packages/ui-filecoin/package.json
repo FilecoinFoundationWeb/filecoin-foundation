@@ -18,6 +18,7 @@
     "./Heading": "./src/Heading.tsx",
     "./HomeLogoLink": "./src/HomeLogoLink.tsx",
     "./Icon": "./src/Icon.tsx",
+    "./LinkCard": "./src/LinkCard.tsx",
     "./PageHeader": "./src/PageHeader.tsx",
     "./PageSection": "./src/PageSection.tsx",
     "./SectionContent": "./src/SectionContent.tsx",
