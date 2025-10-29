@@ -20,7 +20,6 @@
     "./PageSection": "./src/PageSection.tsx",
     "./SectionContent": "./src/SectionContent.tsx",
     "./IconBadge": "./src/IconBadge.tsx",
-    "./LogoLink": "./src/LogoLink.tsx",
     "./LogoSection": "./src/LogoSection/LogoSection.tsx",
     "./LogoSection/LogoItem": "./src/LogoSection/LogoItem.tsx",
     "./Section": "./src/Section/Section.tsx",
