@@ -5,15 +5,16 @@ import { CarouselButton } from './CarouselButton'
 
 export function ConditionalCarouselNavigation() {
   const { canScrollPrev, canScrollNext } = useCarousel()
+  const hasAnyScroll = canScrollPrev || canScrollNext
 
-  if (!canScrollPrev && !canScrollNext) {
+  if (!hasAnyScroll) {
     return null
   }
 
   return (
     <>
-      {canScrollPrev && <CarouselButton direction="prev" />}
-      {canScrollNext && <CarouselButton direction="next" />}
+      <CarouselButton direction="prev" disabled={!canScrollPrev} />
+      <CarouselButton direction="next" disabled={!canScrollNext} />
     </>
   )
 }
