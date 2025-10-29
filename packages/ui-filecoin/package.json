@@ -24,6 +24,7 @@
     "./PageHeader": "./src/PageHeader.tsx",
     "./PageSection": "./src/PageSection.tsx",
     "./SectionContent": "./src/SectionContent.tsx",
+    "./SimpleCard": "./src/SimpleCard.tsx",
     "./IconBadge": "./src/IconBadge.tsx",
     "./LogoSection": "./src/LogoSection/LogoSection.tsx",
     "./LogoSection/LogoItem": "./src/LogoSection/LogoItem.tsx",
