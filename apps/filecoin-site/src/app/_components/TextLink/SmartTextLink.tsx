@@ -9,7 +9,7 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 type SmartTextLinkProps = Omit<
   SharedSmartTextLinkProps,
-  'baseDomain' | 'LinkComponent'
+  'baseDomain' | 'InternalLinkComponent'
 >
 
 export function SmartTextLink(props: SmartTextLinkProps) {

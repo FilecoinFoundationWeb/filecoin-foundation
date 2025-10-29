@@ -5,7 +5,10 @@ import {
   type InternalTextLinkProps as SharedInternalTextLinkProps,
 } from '@filecoin-foundation/ui-filecoin/TextLink/InternalTextLink'
 
-type InternalTextLinkProps = Omit<SharedInternalTextLinkProps, 'LinkComponent'>
+type InternalTextLinkProps = Omit<
+  SharedInternalTextLinkProps,
+  'InternalLinkComponent'
+>
 
 export function InternalTextLink(props: InternalTextLinkProps) {
   return <SharedInternalTextLink {...props} InternalLinkComponent={Link} />
