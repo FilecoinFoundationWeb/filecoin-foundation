@@ -8,6 +8,7 @@
   },
   "exports": {
     "./styles": "./src/styles/globals.css",
+    "./Announcement": "./src/Announcement.tsx",
     "./BaseLink": "./src/BaseLink.tsx",
     "./Button": "./src/Button.tsx",
     "./ButtonRow": "./src/ButtonRow.tsx",

@@ -38,12 +38,6 @@
   --color-navigation-menu-panel-border: theme('colors.zinc.300');
   --color-navigation-menu-panel-icon: theme('colors.zinc.600');
   --color-navigation-menu-link-background-hover: theme('colors.zinc.200');
-
-  --color-announcement-background: theme('colors.zinc.100');
-  --color-announcement-background-hover: theme('colors.zinc.200');
-  --color-announcement-border: theme('colors.zinc.200');
-  --color-announcement-icon: theme('colors.zinc.700');
-  --color-announcement-icon-background: theme('colors.zinc.200');
 }
 
 .dark-section {
@@ -62,13 +56,6 @@
   --color-navigation-menu-panel-border: theme('colors.zinc.600');
   --color-navigation-menu-panel-icon: theme('colors.zinc.300');
   --color-navigation-menu-link-background-hover: theme('colors.zinc.700');
-
-  --color-announcement-background: theme('colors.zinc.900');
-  --color-announcement-background-hover: theme('colors.zinc.800');
-  --color-announcement-border: theme('colors.zinc.800');
-  --color-announcement-icon: theme('colors.zinc.200');
-  --color-announcement-icon-background: theme('colors.zinc.800');
-  --color-announcement-icon-background-hover: theme('colors.zinc.700');
 }
 
 @layer components {
