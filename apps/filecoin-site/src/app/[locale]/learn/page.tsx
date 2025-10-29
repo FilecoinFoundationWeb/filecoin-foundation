@@ -6,7 +6,7 @@ import { Card } from '@filecoin-foundation/ui-filecoin/Card'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
-import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/backgroundVariants'
+import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
 import { PATHS } from '@/constants/paths'

@@ -9,7 +9,7 @@ import { clsx } from 'clsx'
 
 import { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter/constants'
 import { Icon } from '@filecoin-foundation/ui/Icon'
-import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/backgroundVariants'
+import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section'
 
 import { blogCategories, type BlogCategoryKey } from '../data/blogCategories'
 import { useCategoryState } from '../hooks/useCategoryState'
