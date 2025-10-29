@@ -23,7 +23,6 @@ export function Announcement({
       <BaseLink
         baseDomain={baseDomain}
         href={href}
-        aria-label={`${children} - Click to learn more`}
         className="group focus:brand-outline rounded-full"
       >
         <div className="gap relative flex items-center rounded-full border border-[var(--color-announcement-border)] bg-[var(--color-announcement-background)] p-1 group-hover:bg-[var(--color-announcement-background-hover)] group-focus:bg-[var(--color-announcement-background-hover)]">
