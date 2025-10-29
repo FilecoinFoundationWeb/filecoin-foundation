@@ -1,14 +1,16 @@
 import { Link } from '@/i18n/navigation'
 
-import { LogoLink, type LogoLinkProps } from '@filecoin-foundation/ui/LogoLink'
+import {
+  HomeLogoLink,
+  type HomeLogoLinkProps,
+} from '@filecoin-foundation/ui-filecoin/HomeLogoLink'
 
 import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
 
+type HomeLogoIconLinkProps = Pick<HomeLogoLinkProps, 'onNavigate'>
 
-type HomeLogoLinkProps = Pick<LogoLinkProps, 'onNavigate'>
-
-export function HomeLogoIconLink(props: HomeLogoLinkProps) {
+export function HomeLogoIconLink(props: HomeLogoIconLinkProps) {
   return (
-    <LogoLink logo={IconLogo} height={40} LinkComponent={Link} {...props} />
+    <HomeLogoLink logo={IconLogo} height={40} LinkComponent={Link} {...props} />
   )
 }
