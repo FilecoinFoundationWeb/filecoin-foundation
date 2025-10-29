@@ -1,7 +1,4 @@
-@import 'tailwindcss';
-
 @layer components {
-  /* BUTTON */
   .button {
     @apply rounded-full border-2 px-6 py-4 text-base font-medium;
 
