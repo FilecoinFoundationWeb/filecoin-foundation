@@ -29,6 +29,7 @@ type CarouselContextProps = {
   scrollNext: () => void
   canScrollPrev: boolean
   canScrollNext: boolean
+  hasAnyScroll: boolean
 } & CarouselProps
 
 const CarouselContext = createContext<CarouselContextProps | null>(null)
@@ -64,6 +65,8 @@ export function Carousel({
     useCarouselState(api, setApi)
   const handleKeyDown = useCarouselKeyboard(scrollPrev, scrollNext)
 
+  const hasAnyScroll = canScrollPrev || canScrollNext
+
   return (
     <CarouselContext.Provider
       value={{
@@ -75,6 +78,7 @@ export function Carousel({
         scrollNext,
         canScrollPrev,
         canScrollNext,
+        hasAnyScroll,
       }}
     >
       <div
