@@ -4,7 +4,7 @@ import Link, { type LinkProps } from 'next/link'
 
 import { isInternalLink } from '@filecoin-foundation/utils/linkUtils'
 
-type GenericLink = ComponentType<LinkProps>
+type GenericLink = ComponentType<Omit<LinkProps<unknown>, 'locale'>>
 
 export type BaseLinkProps = {
   href: string
@@ -22,7 +22,12 @@ export function BaseLink({
   const isMailto = href.startsWith('mailto:')
 
   if (isInternal) {
-    return <InternalLinkComponent href={href as LinkProps['href']} {...rest} />
+    return (
+      <InternalLinkComponent
+        href={href as LinkProps<unknown>['href']}
+        {...rest}
+      />
+    )
   }
 
   if (isMailto) {
