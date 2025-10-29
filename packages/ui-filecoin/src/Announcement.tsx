@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
+import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 
 import { BaseLink } from './BaseLink'
 
