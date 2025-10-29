@@ -7,8 +7,8 @@ import { IconBadge, type IconBadgeProps } from './IconBadge'
 
 type LinkComponentProps = {
   href: string
-  className?: string
-  'aria-label'?: string
+  className: string
+  'aria-label': string
 }
 
 export type LinkCardProps = {
