@@ -8,7 +8,7 @@ import { CaretDownIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
 import { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter/constants'
-import { Icon } from '@filecoin-foundation/ui/Icon'
+import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section'
 
 import { blogCategories, type BlogCategoryKey } from '../data/blogCategories'
