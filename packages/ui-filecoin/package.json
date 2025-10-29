@@ -15,6 +15,7 @@
     "./Card": "./src/Card.tsx",
     "./CardGrid": "./src/CardGrid.tsx",
     "./Container": "./src/Container.tsx",
+    "./CTALink": "./src/CTALink.tsx",
     "./Heading": "./src/Heading.tsx",
     "./HomeLogoLink": "./src/HomeLogoLink.tsx",
     "./Icon": "./src/Icon.tsx",

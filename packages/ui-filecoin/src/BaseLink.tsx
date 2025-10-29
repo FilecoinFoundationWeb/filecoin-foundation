@@ -1,10 +1,10 @@
-import type { AnchorHTMLAttributes, ComponentProps, ComponentType } from 'react'
+import type { AnchorHTMLAttributes, ComponentType } from 'react'
 
-import Link from 'next/link'
+import Link, { type LinkProps } from 'next/link'
 
 import { isInternalLink } from '@filecoin-foundation/utils/linkUtils'
 
-type GenericLink = ComponentType<ComponentProps<typeof Link>>
+type GenericLink = ComponentType<LinkProps>
 
 export type BaseLinkProps = {
   href: string
@@ -22,12 +22,7 @@ export function BaseLink({
   const isMailto = href.startsWith('mailto:')
 
   if (isInternal) {
-    return (
-      <InternalLinkComponent
-        href={href as ComponentProps<typeof Link>['href']}
-        {...rest}
-      />
-    )
+    return <InternalLinkComponent href={href as LinkProps['href']} {...rest} />
   }
 
   if (isMailto) {
