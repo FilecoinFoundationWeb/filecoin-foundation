@@ -24,8 +24,6 @@
 :root,
 .light-section {
   /* Component specific colors */
-  --color-cta-link-text: theme('colors.zinc.600');
-
   --color-navigation-link-text: theme('colors.zinc.900');
   --color-navigation-link-background-active: theme('colors.zinc.100');
 
@@ -50,8 +48,6 @@
 
 .dark-section {
   /* Component specific colors */
-  --color-cta-link-text: theme('colors.zinc.300');
-
   --color-navigation-link-text: theme('colors.zinc.50');
   --color-navigation-link-background-active: theme('colors.zinc.800');
 
@@ -255,19 +251,6 @@
   /* SLIDE OVER */
   .slide-over-panel {
     @apply bg-white;
-  }
-
-  /* TEXT LINKS */
-  .text-link {
-    @apply focus:brand-outline no-underline hover:underline;
-
-    .light-section & {
-      @apply text-brand-800;
-    }
-
-    .dark-section & {
-      @apply text-zinc-400;
-    }
   }
 
   /* TOOLTIP */
