@@ -1,33 +1,27 @@
-import type { ComponentType } from 'react'
-
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
 
-type GenericLinkProps = {
-  href: string
-  children: React.ReactNode
-  'aria-label'?: string
-  className?: string
-}
+import { BaseLink } from './BaseLink'
 
 export type AnnouncementProps = {
+  baseDomain: string
   centered?: boolean
-  children: string
   href: string
-  LinkComponent: ComponentType<GenericLinkProps>
+  children: string
 }
 
 export function Announcement({
-  children,
-  href,
+  baseDomain,
   centered,
-  LinkComponent,
+  href,
+  children,
 }: AnnouncementProps) {
   return (
     <div className={clsx('group flex', centered && 'justify-center')}>
-      <LinkComponent
+      <BaseLink
+        baseDomain={baseDomain}
         href={href}
         aria-label={`${children} - Click to learn more`}
         className="group focus:brand-outline rounded-full"
@@ -40,7 +34,7 @@ export function Announcement({
             <Icon component={ArrowRightIcon} size={16} />
           </span>
         </aside>
-      </LinkComponent>
+      </BaseLink>
     </div>
   )
 }
