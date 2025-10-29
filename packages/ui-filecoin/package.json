@@ -14,6 +14,7 @@
     "./CardGrid": "./src/CardGrid.tsx",
     "./Container": "./src/Container.tsx",
     "./Heading": "./src/Heading.tsx",
+    "./LinkCard": "./src/LinkCard.tsx",
     "./PageHeader": "./src/PageHeader.tsx",
     "./PageSection": "./src/PageSection.tsx",
     "./SectionContent": "./src/SectionContent.tsx",
