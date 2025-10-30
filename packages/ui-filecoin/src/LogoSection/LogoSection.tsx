@@ -30,7 +30,7 @@ export function LogoSection({ headingTag, title, logos }: LogoSectionProps) {
       <Carousel>
         <CarouselContent>
           {logos.map((logoItem, index) => (
-            <CarouselItem key={index}>
+            <CarouselItem key={index} range={logos.length}>
               <div className="grid h-full place-items-center p-0.5">
                 <LogoItem {...logoItem} />
               </div>
