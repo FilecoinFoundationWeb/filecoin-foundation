@@ -4,9 +4,9 @@ import { useCarousel } from './Carousel'
 import { CarouselButton } from './CarouselButton'
 
 export function ConditionalCarouselNavigation() {
-  const { canScrollPrev, canScrollNext, hasAnyScroll } = useCarousel()
+  const { canScrollPrev, canScrollNext } = useCarousel()
 
-  if (!hasAnyScroll) {
+  if (!canScrollPrev && !canScrollNext) {
     return null
   }
 

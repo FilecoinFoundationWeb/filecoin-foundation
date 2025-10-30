@@ -7,15 +7,12 @@ import { useCarousel } from './Carousel'
 type CarouselContentProps = React.ComponentProps<'ul'>
 
 export function CarouselContent({ className, ...props }: CarouselContentProps) {
-  const { carouselRef, hasAnyScroll } = useCarousel()
+  const { carouselRef } = useCarousel()
 
   return (
     <div
       ref={carouselRef}
-      className={clsx(
-        'overflow-hidden',
-        !hasAnyScroll && 'pointer-events-none',
-      )}
+      className="overflow-hidden"
       data-slot="carousel-content"
     >
       <ul className={clsx('flex justify-between', className)} {...props} />
