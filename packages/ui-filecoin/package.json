@@ -21,6 +21,7 @@
     "./HomeLogoLink": "./src/HomeLogoLink.tsx",
     "./Icon": "./src/Icon.tsx",
     "./LinkCard": "./src/LinkCard.tsx",
+    "./Navigation/*": "./src/Navigation/*.tsx",
     "./PageHeader": "./src/PageHeader.tsx",
     "./PageSection": "./src/PageSection.tsx",
     "./SectionContent": "./src/SectionContent.tsx",
@@ -49,6 +50,7 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tailwindcss": "^4.1.14",
-    "embla-carousel-react": "^8.6.0"
+    "embla-carousel-react": "^8.6.0",
+    "next": "^15.5.6"
   }
 }

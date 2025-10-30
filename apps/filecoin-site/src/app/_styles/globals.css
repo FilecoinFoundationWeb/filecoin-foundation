@@ -23,10 +23,6 @@
 /* SECTION VARIANT COLORS */
 :root,
 .light-section {
-  /* Component specific colors */
-  --color-navigation-link-text: theme('colors.zinc.900');
-  --color-navigation-link-background-active: theme('colors.zinc.100');
-
   --color-card-heading-hover: theme('colors.brand.800');
   --color-card-background-hover: theme('colors.zinc.50');
 
@@ -41,10 +37,6 @@
 }
 
 .dark-section {
-  /* Component specific colors */
-  --color-navigation-link-text: theme('colors.zinc.50');
-  --color-navigation-link-background-active: theme('colors.zinc.800');
-
   --color-card-heading-hover: theme('colors.brand.500');
   --color-card-background-hover: theme('colors.zinc.800');
 
