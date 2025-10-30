@@ -1,11 +1,11 @@
+import { type LogoItemProps } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoItem'
+
 import CIDgravityLogo from '@/assets/logos/cidgravity-logo.svg'
 import DCENTLogo from '@/assets/logos/dcent-logo.svg'
 import FutureTechHoldingsLogo from '@/assets/logos/future-tech-holdings-logo.svg'
 import NDLABSLogo from '@/assets/logos/ndlabs-logo.svg'
 import RRMGlobalLogo from '@/assets/logos/rrm-global-logo.svg'
 import SwanChainLogo from '@/assets/logos/swan-chain-logo.svg'
-
-import { type LogoItemProps } from '@/components/LogoSection/LogoItem'
 
 export const storageProvidersLogos = [
   {

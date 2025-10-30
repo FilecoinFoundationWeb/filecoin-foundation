@@ -1,5 +1,5 @@
-import { Container } from '@/components/Container'
-import { Section, type SectionProps } from '@/components/Section'
+import { Container } from './Container'
+import { Section, type SectionProps } from './Section/Section'
 
 type PageSectionProps = {
   backgroundVariant: SectionProps['backgroundVariant']

@@ -4,7 +4,7 @@ import {
   SquaresFourIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-import type { CardData } from '@/components/Card'
+import type { CardData } from '@filecoin-foundation/ui-filecoin/Card'
 
 export const filecoinFeatures = [
   {

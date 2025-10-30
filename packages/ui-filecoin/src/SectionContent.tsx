@@ -1,12 +1,8 @@
 import clsx from 'clsx'
 import slugify from 'slugify'
 
-import {
-  Heading,
-  type HeadingProps,
-} from '@filecoin-foundation/ui-filecoin/Heading'
-
-import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
+import { ButtonRow, type ButtonRowProps } from './ButtonRow'
+import { Heading, type HeadingProps } from './Heading'
 
 type SectionContentDescriptionProps = {
   description: string | Array<string>

@@ -1,6 +1,9 @@
 import type { LocaleParams } from '@/i18n/types'
 
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
+import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
 import { PATHS } from '@/constants/paths'
 
@@ -11,9 +14,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { Button } from '@/components/Button'
 import { GradientContainer } from '@/components/GradientContainer'
 import { Navigation } from '@/components/Navigation/Navigation'
-import { PageHeader } from '@/components/PageHeader'
-import { PageSection } from '@/components/PageSection'
-import { SectionContent } from '@/components/SectionContent'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { CASE_STUDIES_SEO } from './constants/seo'

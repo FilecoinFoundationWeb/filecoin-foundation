@@ -2,6 +2,10 @@ import Image from 'next/image'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection'
+import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
+import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 
 import { PATHS } from '@/constants/paths'
@@ -12,13 +16,8 @@ import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-
 import { Button } from '@/components/Button'
-import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { Navigation } from '@/components/Navigation/Navigation'
-import { PageHeader } from '@/components/PageHeader'
-import { PageSection } from '@/components/PageSection'
-import { SectionContent } from '@/components/SectionContent'
 import { SectionDivider } from '@/components/SectionDivider'
 import { SectionSubContent } from '@/components/SectionSubContent'
 

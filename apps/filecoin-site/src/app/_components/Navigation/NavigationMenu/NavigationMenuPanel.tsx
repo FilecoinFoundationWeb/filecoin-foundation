@@ -2,8 +2,10 @@
 
 import { clsx } from 'clsx'
 
-import { useBackgroundVariant } from '@/components/BackgroundVariantContext'
-import { backgroundVariants } from '@/components/Section'
+import {
+  useBackgroundVariant,
+  backgroundVariants,
+} from '@filecoin-foundation/ui-filecoin/Section'
 
 import { type NavigationMenuItem } from '../constants/navigation'
 import { variantMapping } from '../constants/variantMapping'

@@ -1,9 +1,9 @@
+import { ButtonRow, type ButtonRowProps } from '@filecoin-foundation/ui-filecoin/ButtonRow'
 import {
   Heading,
   type HeadingProps,
 } from '@filecoin-foundation/ui-filecoin/Heading'
 
-import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
 
 type SectionSubContentProps = {
   headingTag: HeadingProps['tag']

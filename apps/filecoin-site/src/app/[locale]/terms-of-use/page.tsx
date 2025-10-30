@@ -1,12 +1,12 @@
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
 import { PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
-import { PageHeader } from '@/components/PageHeader'
-import { PageSection } from '@/components/PageSection'
 
 import { TERMS_OF_USE_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
