@@ -1,13 +1,13 @@
 import { useTranslations } from 'next-intl'
 
+import { Announcement } from '@filecoin-foundation/ui-filecoin/Announcement'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
 import { PATHS } from '@/constants/paths'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { Button } from '@/components/Button'
-
-import { Announcement } from './Announcement'
 
 export function HeroSection() {
   const t = useTranslations('home.hero')
@@ -16,9 +16,10 @@ export function HeroSection() {
     <PageSection backgroundVariant="dark" paddingVariant="none">
       <div className="space-y-15 pt-24 pb-24 md:pt-32">
         {/* todo look into when we need space-y-15 */}
-        <Announcement centered href={PATHS.BLOG.path}>
+        <Announcement centered baseDomain={BASE_DOMAIN} href={PATHS.BLOG.path}>
           {t('announcement')}
         </Announcement>
+
         <PageHeader
           centered
           title={t('headline')}

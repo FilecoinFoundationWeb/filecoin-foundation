@@ -8,19 +8,25 @@
   },
   "exports": {
     "./styles": "./src/styles/globals.css",
+    "./Announcement": "./src/Announcement.tsx",
+    "./BaseLink": "./src/BaseLink.tsx",
     "./Button": "./src/Button.tsx",
     "./ButtonRow": "./src/ButtonRow.tsx",
     "./Card": "./src/Card.tsx",
     "./CardGrid": "./src/CardGrid.tsx",
     "./Container": "./src/Container.tsx",
     "./Heading": "./src/Heading.tsx",
+    "./HomeLogoLink": "./src/HomeLogoLink.tsx",
+    "./Icon": "./src/Icon.tsx",
+    "./LinkCard": "./src/LinkCard.tsx",
     "./PageHeader": "./src/PageHeader.tsx",
     "./PageSection": "./src/PageSection.tsx",
     "./SectionContent": "./src/SectionContent.tsx",
     "./IconBadge": "./src/IconBadge.tsx",
     "./LogoSection": "./src/LogoSection/LogoSection.tsx",
     "./LogoSection/LogoItem": "./src/LogoSection/LogoItem.tsx",
-    "./Section": "./src/Section/Section.tsx"
+    "./Section": "./src/Section/Section.tsx",
+    "./TextLink/*": "./src/TextLink/*.tsx"
   },
   "scripts": {
     "lint": "eslint src --fix",

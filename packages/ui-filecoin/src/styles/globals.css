@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
+@import './announcement.css';
 @import './button.css';
 @import './card-image.css';
 @import './logo-section.css';
@@ -58,6 +59,9 @@
   --color-paragraph-text: theme('colors.zinc.600');
   --color-paragraph-text-subtle: theme('colors.zinc.500');
   --color-paragraph-text-strong: theme('colors.zinc.800');
+
+  --color-card-heading-hover: theme('colors.brand.800');
+  --color-card-background-hover: theme('colors.zinc.50');
 }
 
 .dark-section {
@@ -73,4 +77,7 @@
   --color-paragraph-text-subtle: theme('colors.zinc.500');
   --color-paragraph-text: theme('colors.zinc.400');
   --color-paragraph-text-strong: theme('colors.zinc.200');
+
+  --color-card-heading-hover: theme('colors.brand.500');
+  --color-card-background-hover: theme('colors.zinc.800');
 }
