@@ -2,10 +2,10 @@ import type { ComponentType, SVGProps } from 'react'
 
 import Image, { type StaticImageData } from 'next/image'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
+import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
+import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 
 import { CTALink, type CTALinkProps } from './CTALink'
-import { Heading } from './Heading'
 
 type HEXCodeType = `#${string}`
 

@@ -1,9 +1,10 @@
+import type { CardData } from '@filecoin-foundation/ui-filecoin/Card'
+
 import archiveRoom from '@/assets/images/archive-room.webp'
 import computerMontherboardCircuit from '@/assets/images/computer-motherboard-circuit.webp'
 import historicLibrary from '@/assets/images/historic-library.webp'
 import testTubes from '@/assets/images/test-tubes.webp'
 
-import type { CardData } from '@/components/Card'
 
 export const whatIsFilecoinUsedFor = [
   {

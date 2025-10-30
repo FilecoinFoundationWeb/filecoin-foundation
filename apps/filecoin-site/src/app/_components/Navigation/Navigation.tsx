@@ -1,5 +1,8 @@
-import { Container } from '@/components/Container'
-import { Section, type SectionProps } from '@/components/Section'
+import { Container } from '@filecoin-foundation/ui-filecoin/Container'
+import {
+  Section,
+  type SectionProps,
+} from '@filecoin-foundation/ui-filecoin/Section'
 
 import { DesktopNavigation } from './DesktopNavigation'
 import { HomeLogoIconLink } from './HomeLogoIconLink'

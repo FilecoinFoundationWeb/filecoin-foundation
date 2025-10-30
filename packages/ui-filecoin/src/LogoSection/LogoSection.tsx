@@ -1,12 +1,9 @@
-import { Carousel } from '@/components/Carousel/Carousel'
-import { CarouselContent } from '@/components/Carousel/CarouselContent'
-import { CarouselItem } from '@/components/Carousel/CarouselItem'
-import {
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/Carousel/CarouselNavigation'
-import { type HeadingProps } from '@/components/Heading'
+import { type HeadingProps } from '../Heading'
 
+import { Carousel } from './Carousel/Carousel'
+import { CarouselContent } from './Carousel/CarouselContent'
+import { CarouselItem } from './Carousel/CarouselItem'
+import { CarouselNext, CarouselPrevious } from './Carousel/CarouselNavigation'
 import { type LogoItemProps, LogoItem } from './LogoItem'
 
 type LogoSectionProps = {

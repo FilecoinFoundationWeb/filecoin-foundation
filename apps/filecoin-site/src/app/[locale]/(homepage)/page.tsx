@@ -5,6 +5,10 @@ import type { LocaleParams } from '@/i18n/types'
 import { BookIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
+import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
@@ -17,15 +21,11 @@ import { trustedByLogos } from '@/data/trustedByLogos'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Button } from '@/components/Button'
-import { CardGrid } from '@/components/CardGrid'
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { GradientContainer } from '@/components/GradientContainer'
 import { ImageGrid } from '@/components/ImageGrid'
 import { LinkCard } from '@/components/LinkCard'
-import { LogoSection } from '@/components/LogoSection/LogoSection'
 import { Navigation } from '@/components/Navigation/Navigation'
-import { PageSection } from '@/components/PageSection'
-import { SectionContent } from '@/components/SectionContent'
 import { SectionContentWrapper } from '@/components/SectionContentWrapper'
 import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
@@ -181,7 +181,11 @@ export default async function Home({ params }: BlogProps) {
           centerCTA
           title="Latest news"
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
-          cta={<Button href={PATHS.BLOG.path}>View all articles</Button>}
+          cta={
+            <Button variant="primary" href={PATHS.BLOG.path}>
+              View all articles
+            </Button>
+          }
         >
           <CardGrid as="ul" variant="mdTwoLgThreeWide">
             {featuredBlogPosts.map((post: BlogPost) => {

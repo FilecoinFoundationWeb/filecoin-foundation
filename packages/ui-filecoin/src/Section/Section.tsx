@@ -1,6 +1,11 @@
+import { use } from 'react'
+
 import { clsx } from 'clsx'
 
-import { BackgroundVariantContextProvider } from './BackgroundVariantContext'
+import {
+  BackgroundVariantContext,
+  BackgroundVariantProvider,
+} from './BackgroundVariantProvider'
 
 export type BackgroundVariant = keyof typeof backgroundVariants
 
@@ -24,7 +29,7 @@ export function Section({
   as: Tag = 'section',
 }: SectionProps) {
   return (
-    <BackgroundVariantContextProvider value={backgroundVariant}>
+    <BackgroundVariantProvider value={backgroundVariant}>
       <Tag
         className={clsx(
           'text-[var(--color-text-base)]',
@@ -33,6 +38,18 @@ export function Section({
       >
         {children}
       </Tag>
-    </BackgroundVariantContextProvider>
+    </BackgroundVariantProvider>
   )
+}
+
+export function useBackgroundVariant() {
+  const backgroundVariant = use(BackgroundVariantContext)
+
+  if (!backgroundVariant) {
+    throw new Error(
+      'useBackgroundVariant must be used within a BackgroundVariantContext',
+    )
+  }
+
+  return backgroundVariant
 }

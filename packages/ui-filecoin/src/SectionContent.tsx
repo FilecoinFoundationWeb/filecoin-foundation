@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 import slugify from 'slugify'
 
-import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
-import { Heading, type HeadingProps } from '@/components/Heading'
+import { ButtonRow, type ButtonRowProps } from './ButtonRow'
+import { Heading, type HeadingProps } from './Heading'
 
 type SectionContentDescriptionProps = {
   description: string | Array<string>

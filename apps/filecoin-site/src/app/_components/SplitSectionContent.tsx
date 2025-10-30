@@ -1,7 +1,8 @@
 import { clsx } from 'clsx'
 
-import { ButtonRow, type ButtonRowProps } from '@/components/ButtonRow'
-import { Heading } from '@/components/Heading'
+import { ButtonRow, type ButtonRowProps } from '@filecoin-foundation/ui-filecoin/ButtonRow'
+import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
+
 
 type SideBySideContentProps = {
   title: string

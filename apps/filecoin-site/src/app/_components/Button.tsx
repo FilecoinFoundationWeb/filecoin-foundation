@@ -1,27 +1,20 @@
 import { Link } from '@/i18n/navigation'
 
-import { Button as SharedButton } from '@filecoin-foundation/ui/Button'
-import { type LocalButtonProps } from '@filecoin-foundation/utils/types/buttonTypes'
+import {
+  Button as SharedButton,
+  type ButtonProps as SharedButtonProps,
+} from '@filecoin-foundation/ui-filecoin/Button'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
+export type ButtonProps = Omit<
+  SharedButtonProps,
+  'baseDomain' | 'LinkComponent'
+>
 
-const variantClasses = {
-  primary: 'button--primary',
-  ghost: 'button--ghost',
-  tertiary: 'button--tertiary',
-} as const
-
-export type ButtonProps = LocalButtonProps<typeof variantClasses>
-
-export function Button({ children, variant, ...props }: ButtonProps) {
+export function Button({ children, ...props }: ButtonProps) {
   return (
-    <SharedButton
-      variants={{ options: variantClasses, selected: variant }}
-      baseDomain={BASE_DOMAIN}
-      LinkComponent={Link}
-      {...props}
-    >
+    <SharedButton baseDomain={BASE_DOMAIN} LinkComponent={Link} {...props}>
       {children}
     </SharedButton>
   )

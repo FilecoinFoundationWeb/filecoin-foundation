@@ -1,3 +1,4 @@
+import { type LogoItemProps } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoItem'
 
 import AethirLogo from '@/assets/logos/aethir-logo.svg'
 import FlickrFoundationLogo from '@/assets/logos/flickr-foundation-logo.svg'
@@ -8,8 +9,6 @@ import SmithsonianLogo from '@/assets/logos/smithsonian-logo.svg'
 import SolanaLogo from '@/assets/logos/solana-logo.svg'
 import StarlingLabLogo from '@/assets/logos/starling-lab-logo.svg'
 import VictorChanLogo from '@/assets/logos/victor-chang-logo.svg'
-
-import { type LogoItemProps } from '@/components/LogoSection/LogoItem'
 
 export const trustedByLogos: Array<LogoItemProps> = [
   {

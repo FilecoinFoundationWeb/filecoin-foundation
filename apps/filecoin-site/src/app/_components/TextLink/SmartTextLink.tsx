@@ -3,14 +3,13 @@ import { Link } from '@/i18n/navigation'
 import {
   SmartTextLink as SharedSmartTextLink,
   type SmartTextLinkProps as SharedSmartTextLinkProps,
-} from '@filecoin-foundation/ui/TextLink/SmartTextLink'
+} from '@filecoin-foundation/ui-filecoin/TextLink/SmartTextLink'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-
 type SmartTextLinkProps = Omit<
   SharedSmartTextLinkProps,
-  'baseDomain' | 'LinkComponent'
+  'baseDomain' | 'InternalLinkComponent'
 >
 
 export function SmartTextLink(props: SmartTextLinkProps) {
@@ -18,7 +17,7 @@ export function SmartTextLink(props: SmartTextLinkProps) {
     <SharedSmartTextLink
       {...props}
       baseDomain={BASE_DOMAIN}
-      LinkComponent={Link}
+      InternalLinkComponent={Link}
     />
   )
 }

@@ -1,8 +1,9 @@
 import clsx from 'clsx'
 
+import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
+
 import { Badge, type BadgeProps } from '@/components/Badge'
 import { CTALink, type CTALinkProps } from '@/components/CTALink'
-import { Heading } from '@/components/Heading'
 
 export type SimpleCardProps = {
   title: string
