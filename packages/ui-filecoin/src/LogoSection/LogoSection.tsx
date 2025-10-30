@@ -3,7 +3,7 @@ import { type HeadingProps } from '../Heading'
 import { Carousel } from './Carousel/Carousel'
 import { CarouselContent } from './Carousel/CarouselContent'
 import { CarouselItem } from './Carousel/CarouselItem'
-import { CarouselNext, CarouselPrevious } from './Carousel/CarouselNavigation'
+import { ConditionalCarouselNavigation } from './Carousel/CarouselNavigation'
 import { type LogoItemProps, LogoItem } from './LogoItem'
 
 type LogoSectionProps = {
@@ -30,15 +30,14 @@ export function LogoSection({ headingTag, title, logos }: LogoSectionProps) {
       <Carousel>
         <CarouselContent>
           {logos.map((logoItem, index) => (
-            <CarouselItem key={index}>
+            <CarouselItem key={index} range={logos.length}>
               <div className="grid h-full place-items-center p-0.5">
                 <LogoItem {...logoItem} />
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <ConditionalCarouselNavigation />
       </Carousel>
     </section>
   )
