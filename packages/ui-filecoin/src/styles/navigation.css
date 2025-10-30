@@ -1,0 +1,10 @@
+:root,
+.light-section {
+  --color-navigation-link-text: theme('colors.zinc.900');
+  --color-navigation-link-background-active: theme('colors.zinc.100');
+}
+
+.dark-section {
+  --color-navigation-link-text: theme('colors.zinc.50');
+  --color-navigation-link-background-active: theme('colors.zinc.800');
+}
