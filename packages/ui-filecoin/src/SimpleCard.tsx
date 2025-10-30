@@ -1,6 +1,6 @@
 import type { ComponentType } from 'react'
 
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 

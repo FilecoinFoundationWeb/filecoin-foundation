@@ -1,9 +1,8 @@
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
-
 import { BaseLink } from './BaseLink'
+import { Icon } from './Icon'
 
 export type AnnouncementProps = {
   baseDomain: string

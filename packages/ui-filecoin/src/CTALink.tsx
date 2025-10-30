@@ -3,12 +3,12 @@ import {
   CaretRightIcon,
   ArrowUpRightIcon,
 } from '@phosphor-icons/react/dist/ssr'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 
 import { BaseLink, type BaseLinkProps } from './BaseLink'
+import { Icon } from './Icon'
 
 export type CTALinkProps = {
   children: string

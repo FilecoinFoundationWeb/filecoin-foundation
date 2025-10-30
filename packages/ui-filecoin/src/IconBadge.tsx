@@ -1,5 +1,5 @@
 import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 const ICON_CONFIG = {
   sm: {
