@@ -23,5 +23,10 @@
   },
   "dependencies": {
     "zod": "^4.1.12"
+  },
+  "overrides": {
+    "next-plausible": {
+      "next": "^16.0.1"
+    }
   }
 }
