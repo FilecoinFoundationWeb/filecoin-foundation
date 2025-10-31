@@ -46,12 +46,12 @@
   },
   "peerDependencies": {
     "@filecoin-foundation/ui": "0.0.0",
+    "@phosphor-icons/react": "^2.1.10",
     "camelcase-keys": "^9.1.3",
     "date-fns": "^4.1.0",
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",
     "next": "16.0.1",
-    "@phosphor-icons/react": "^2.1.10",
     "schema-dts": "^1.1.5",
     "slugify": "^1.6.6",
     "zod": "^4.1.12"
