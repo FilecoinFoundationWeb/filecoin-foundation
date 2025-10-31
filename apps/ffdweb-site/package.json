@@ -6,7 +6,7 @@
     "predev": "tsx scripts/convertYamlToJson.ts",
     "dev": "next dev",
     "prebuild": "tsx scripts/convertYamlToJson.ts",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint src --fix",
     "test:cypress": "cypress run",
