@@ -31,15 +31,14 @@ export type NavigationLinkProps = {
   on: 'mobile' | 'desktop'
   label: string
   href: string
-  onNavigate?: GenericLinkProps['onNavigate']
   InternalLinkComponent?: GenericLinkType
-}
+} & GenericLinkProps
 
 export function NavigationMainLink({
   href,
   label,
   on,
-  InternalLinkComponent = Link,
+  InternalLinkComponent = Link as GenericLinkType,
   ...rest
 }: NavigationLinkProps) {
   const pathname = usePathname()

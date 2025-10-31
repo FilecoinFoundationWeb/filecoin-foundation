@@ -15,7 +15,7 @@ export function InternalLink({
   label,
   href,
   description,
-  InternalLinkComponent = Link,
+  InternalLinkComponent = Link as GenericLinkType,
   ...rest
 }: InternalLinkProps) {
   return (
