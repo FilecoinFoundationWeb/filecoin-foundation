@@ -27,7 +27,7 @@ export function NavigationMenuLink<Variants extends VariantClasses>({
   description,
   baseDomain,
   variants,
-  InternalLinkComponent = Link,
+  InternalLinkComponent = Link as GenericLinkType,
   ...rest
 }: NavigationMenuLinkProps<Variants>) {
   const variant = variants.options[variants.selected || 'internal']
@@ -45,6 +45,6 @@ export function NavigationMenuLink<Variants extends VariantClasses>({
   return isExternal ? (
     <ExternalLink {...props} />
   ) : (
-    <InternalLink InternalLinkComponent={InternalLinkComponent} {...props} />
+    <InternalLink {...props} InternalLinkComponent={InternalLinkComponent} />
   )
 }
