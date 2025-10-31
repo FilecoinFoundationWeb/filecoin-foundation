@@ -10,7 +10,7 @@ export type InternalTextLinkProps = GenericLinkProps & {
 export function InternalTextLink({
   className,
   children,
-  InternalLinkComponent = Link,
+  InternalLinkComponent = Link as GenericLinkType,
   ...rest
 }: InternalTextLinkProps) {
   return (
