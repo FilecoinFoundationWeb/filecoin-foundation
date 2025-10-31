@@ -1,22 +1,25 @@
 'use client'
 
+import { type ComponentType } from 'react'
+
 import { clsx } from 'clsx'
 
-import {
-  useBackgroundVariant,
-  backgroundVariants,
-} from '@filecoin-foundation/ui-filecoin/Section'
+import { backgroundVariants, useBackgroundVariant } from '../Section/Section'
 
-import { type NavigationMenuItem } from '../constants/navigation'
-import { variantMapping } from '../constants/variantMapping'
-
-import { NavigationMenuLink } from './NavigationMenuLink'
+import { variantMapping } from './constants'
+import { type ExpandedNavItem, type NavigationMenuItem } from './types'
 
 const roundedStyle = 'rounded-2xl'
 
+type NavigationMenuPanelProps = {
+  items: NavigationMenuItem['items']
+  NavigationMenuLinkComponent: ComponentType<ExpandedNavItem>
+}
+
 export function NavigationMenuPanel({
   items,
-}: Pick<NavigationMenuItem, 'items'>) {
+  NavigationMenuLinkComponent,
+}: NavigationMenuPanelProps) {
   const backgroundVariant = useBackgroundVariant()
   const desktopBackgroundVariant = variantMapping[backgroundVariant]
 
@@ -47,7 +50,7 @@ export function NavigationMenuPanel({
               >
                 {item.links.map((link) => (
                   <li key={link.href}>
-                    <NavigationMenuLink {...link} />
+                    <NavigationMenuLinkComponent {...link} />
                   </li>
                 ))}
               </ul>

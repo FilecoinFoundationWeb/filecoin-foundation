@@ -1,7 +1,7 @@
-import {
-  NavigationMenuLink as SharedNavigationMenuLink,
-  type LocalNavigationMenuLinkProps,
-} from '@filecoin-foundation/ui/NavigationMenu'
+import { Link } from '@/i18n/navigation'
+
+import { NavigationMenuLink as SharedNavigationMenuLink } from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMenuLink'
+import type { LocalNavigationMenuLinkProps } from '@filecoin-foundation/ui-filecoin/Navigation/types'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
@@ -16,6 +16,7 @@ export function NavigationMenuLink(
     <SharedNavigationMenuLink
       baseDomain={BASE_DOMAIN}
       variants={{ options: variants, selected: props.variant }}
+      InternalLinkComponent={Link}
       {...props}
     />
   )
