@@ -1,6 +1,6 @@
 import type { ComponentType } from 'react'
 
-import { clsx } from 'clsx'
+import { cva, type VariantProps } from 'class-variance-authority'
 
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 
@@ -14,6 +14,8 @@ type CTALinkComponentProps = {
   children: CTALinkProps['children']
 }
 
+export type CardOuterVariants = VariantProps<typeof cardOuter>
+
 export type SimpleCardProps = {
   title: string
   description: string
@@ -22,7 +24,7 @@ export type SimpleCardProps = {
     variant: BadgeProps['variant']
     text: BadgeProps['children']
   }
-  border?: BorderKey
+  border?: CardOuterVariants['border']
   cta?: {
     href: CTALinkComponentProps['href']
     text: CTALinkComponentProps['children']
@@ -36,38 +38,63 @@ export type SimpleCardData = {
   cta: NonNullable<SimpleCardProps['cta']>
 }
 
-type CardLayoutStyles = Record<
-  BorderKey,
-  { inner: string; content: string; cta: string }
->
-
 type CardContentProps = Pick<SimpleCardProps, 'title' | 'description'> & {
-  layout: CardLayoutStyles[BorderKey]
+  border: CardOuterVariants['border']
 }
 
-type BorderKey = keyof typeof borderStyles
-
-const borderStyles = {
-  all: 'rounded-2xl border border-[var(--color-border-base)]',
-  'only-top': 'border-t border-[var(--color-border-base)]',
-} as const
-
-const interactiveStyles: Partial<Record<BorderKey, string>> = {
-  all: 'focus-within:brand-outline focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)]',
-}
-
-const cardLayoutStyles: CardLayoutStyles = {
-  all: {
-    inner: 'p-8',
-    content: 'mb-12',
-    cta: 'bottom-8 left-8',
+const cardOuter = cva(['group h-full w-full overflow-hidden'], {
+  variants: {
+    border: {
+      all: 'rounded-2xl border border-[var(--color-border-base)]',
+      'only-top': 'border-t border-[var(--color-border-base)]',
+    },
+    interactive: {
+      true: 'focus-within:brand-outline focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)] relative',
+      false: null,
+    },
   },
-  'only-top': {
-    inner: 'pt-8 pb-6',
-    content: 'mb-6',
-    cta: 'bottom-0',
+  defaultVariants: {
+    border: 'all',
+    interactive: false,
   },
-}
+})
+
+const cardInner = cva('flex flex-col gap-6', {
+  variants: {
+    border: {
+      all: 'p-8',
+      'only-top': 'pt-8 pb-6',
+    },
+  },
+  defaultVariants: {
+    border: 'all',
+  },
+})
+
+const cardContent = cva('flex flex-col gap-3', {
+  variants: {
+    border: {
+      all: 'mb-12',
+      'only-top': 'mb-6',
+    },
+  },
+  defaultVariants: {
+    border: 'all',
+  },
+})
+
+const ctaPosition = cva('', {
+  variants: {
+    border: {
+      all: 'bottom-8 left-8',
+      'only-top': 'bottom-0',
+      none: 'bottom-0',
+    },
+  },
+  defaultVariants: {
+    border: 'all',
+  },
+})
 
 export function SimpleCard({
   as: Tag,
@@ -78,26 +105,26 @@ export function SimpleCard({
   border = 'all',
   CTALinkComponent,
 }: SimpleCardProps) {
-  const layout = cardLayoutStyles[border]
-
   return (
     <Tag
-      className={clsx(
-        'group h-full w-full overflow-hidden',
-        cta && 'relative',
-        borderStyles[border],
-        interactiveStyles[border],
-      )}
+      className={cardOuter({
+        border,
+        interactive: Boolean(cta),
+      })}
     >
-      <div className={clsx('flex flex-col gap-6', layout.inner)}>
+      <div className={cardInner({ border })}>
         {badge && (
           <div className="flex">
             <Badge variant={badge.variant}>{badge.text}</Badge>
           </div>
         )}
-        <CardContent title={title} description={description} layout={layout} />
+        <CardContent title={title} description={description} border={border} />
         {cta && (
-          <CTALinkComponent inset href={cta.href} textClassName={layout.cta}>
+          <CTALinkComponent
+            inset
+            href={cta.href}
+            textClassName={ctaPosition({ border })}
+          >
             {cta.text}
           </CTALinkComponent>
         )}
@@ -106,9 +133,9 @@ export function SimpleCard({
   )
 }
 
-function CardContent({ title, description, layout }: CardContentProps) {
+export function CardContent({ title, description, border }: CardContentProps) {
   return (
-    <div className={clsx('flex flex-col gap-3', layout.content)}>
+    <div className={cardContent({ border })}>
       <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
         <Heading tag="h3" variant="card-heading">
           {title}
