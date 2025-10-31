@@ -1,0 +1,27 @@
+{
+  "filter": ".",
+  "indent": "  ",
+  "sortAz": [
+    "contributors",
+    "dependencies",
+    "devDependencies",
+    "keywords",
+    "peerDependencies",
+    "resolutions",
+    "scripts"
+  ],
+  "sortFirst": [
+    "name",
+    "description",
+    "version",
+    "author"
+  ],
+  "versionGroups": [
+    {
+      "label": "Ignore npm overrides field",
+      "dependencies": ["**"],
+      "dependencyTypes": ["overrides"],
+      "isIgnored": true
+    }
+  ]
+}
