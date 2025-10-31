@@ -8,9 +8,9 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
-const CONTENT_FOLDER = PATHS.DIGEST.entriesPath
+const CONTENT_FOLDER = PATHS.DIGEST.issuePath
 
-describe('Digest Slug Page', () => {
+describe('Digest Issue Page', () => {
   it(tests.metadata.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
       cy.task<GenericEntryFrontmatter>(
@@ -21,7 +21,7 @@ describe('Digest Slug Page', () => {
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
         tests.metadata.fn({
-          path: `${PATHS.DIGEST.path}/${slug}`,
+          path: `${PATHS.DIGEST.issueUrl({ issueNumber: slug })}`,
           title: metaTitleWithSuffix,
           description: seo.description,
           baseUrl: BASE_URL,
@@ -32,13 +32,13 @@ describe('Digest Slug Page', () => {
 
   it(tests.links.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.links.fn(`${PATHS.DIGEST.path}/${slug}`)
+      tests.links.fn(`${PATHS.DIGEST.issueUrl({ issueNumber: slug })}`)
     })
   })
 
   it(tests.visualSnapshot.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(`${PATHS.DIGEST.path}/${slug}`)
+      tests.visualSnapshot.fn(`${PATHS.DIGEST.issueUrl({ issueNumber: slug })}`)
     })
   })
 })

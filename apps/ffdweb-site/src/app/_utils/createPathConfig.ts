@@ -1,42 +1,30 @@
-import { CONTENT_ROOT, type StaticPath } from '@/constants/paths'
+import { type StaticPath } from '@/constants/paths'
 
-interface PathConfigWithEntries {
+type PathConfig = {
   path: StaticPath
   label: string
+}
+
+type PathConfigWithEntry = PathConfig & {
   entriesPath: string
 }
 
-interface PathConfigWithoutEntries {
-  path: StaticPath
-  label: string
-}
-
-// Function overloads
-export function createPathConfig(
-  path: StaticPath,
-  label: string,
-): PathConfigWithoutEntries
+export function createPathConfig(path: StaticPath, label: string): PathConfig
 
 export function createPathConfig(
   path: StaticPath,
   label: string,
-  cmsConfig: { hasEntries: true },
-): PathConfigWithEntries
+  options: { entriesPath: string },
+): PathConfigWithEntry
 
 export function createPathConfig(
   path: StaticPath,
   label: string,
-  cmsConfig?: { hasEntries?: boolean },
-): PathConfigWithEntries | PathConfigWithoutEntries {
-  const { hasEntries } = cmsConfig || {}
-
-  if (hasEntries) {
-    return {
-      path,
-      label,
-      entriesPath: `${CONTENT_ROOT}${path}`,
-    } as const
+  options?: { entriesPath: string },
+): PathConfigWithEntry | PathConfig {
+  if (options?.entriesPath) {
+    return { path, label, entriesPath: options.entriesPath }
   }
 
-  return { path, label } as const
+  return { path, label }
 }
