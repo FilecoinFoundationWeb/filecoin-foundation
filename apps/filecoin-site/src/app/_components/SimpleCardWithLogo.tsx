@@ -7,15 +7,15 @@ import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 
 import { CTALink, type CTALinkProps } from './CTALink'
 
-type HEXCodeType = `#${string}`
+export type HEXCodeType = `#${string}`
 
-type ImageLogoProps = {
+export type ImageLogoProps = {
   type: 'image'
   src: StaticImageData
   bgColor: HEXCodeType
 }
 
-type SVGLogoProps = {
+export type SVGLogoProps = {
   type: 'svg'
   src: ComponentType<SVGProps<SVGSVGElement>>
   bgColor: HEXCodeType
