@@ -29,3 +29,4 @@ updates:
     commit-message:
       prefix: "[DEPENDABOT][SHARED] Weekly GitHub Actions updates"
       include: "scope"
+
