@@ -7,13 +7,13 @@ import { clsx } from 'clsx'
 
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
-import { variantMapping } from '@filecoin-foundation/ui-filecoin/Navigation/constants'
 import {
   useBackgroundVariant,
   backgroundVariants,
 } from '@filecoin-foundation/ui-filecoin/Section'
 
 import { mobileNavigationItems } from './constants/navigation'
+import { variantMapping } from './constants/variantMapping'
 import { HomeLogoIconLink } from './HomeLogoIconLink'
 import { NavigationMainLink } from './NavigationMainLink'
 
