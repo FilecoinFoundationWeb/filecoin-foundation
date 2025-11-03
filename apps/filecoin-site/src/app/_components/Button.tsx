@@ -1,11 +1,11 @@
-import { Link } from '@/i18n/navigation'
-
 import {
   Button as SharedButton,
   type ButtonProps as SharedButtonProps,
 } from '@filecoin-foundation/ui-filecoin/Button'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
+import { InternalLink } from '@/components/InternalLink'
 
 export type ButtonProps = Omit<
   SharedButtonProps,
@@ -14,7 +14,11 @@ export type ButtonProps = Omit<
 
 export function Button({ children, ...props }: ButtonProps) {
   return (
-    <SharedButton baseDomain={BASE_DOMAIN} LinkComponent={Link} {...props}>
+    <SharedButton
+      baseDomain={BASE_DOMAIN}
+      LinkComponent={InternalLink}
+      {...props}
+    >
       {children}
     </SharedButton>
   )
