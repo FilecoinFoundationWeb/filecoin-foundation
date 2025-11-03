@@ -1,6 +1,6 @@
 import type { ComponentType } from 'react'
 
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { Heading, type HeadingProps } from './Heading'
 import { IconBadge, type IconBadgeProps } from './IconBadge'

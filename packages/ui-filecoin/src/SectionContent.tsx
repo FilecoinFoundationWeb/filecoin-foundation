@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 import slugify from 'slugify'
 
 import { ButtonRow, type ButtonRowProps } from './ButtonRow'

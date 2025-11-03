@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 import { type CarouselApi } from '../Carousel'
 
@@ -36,10 +36,12 @@ export function useCarouselState(
 
     api.on('reInit', handleSelect)
     api.on('select', handleSelect)
+    api.on('resize', handleSelect)
 
     return () => {
       api?.off('reInit', handleSelect)
       api?.off('select', handleSelect)
+      api?.off('resize', handleSelect)
     }
   }, [api, onSelect])
 
