@@ -7,14 +7,7 @@ import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { Badge, type BadgeProps } from './Badge'
 import { type CTALinkProps } from './CTALink'
 
-type CTALinkComponentProps = {
-  href: CTALinkProps['href']
-  inset: CTALinkProps['inset']
-  textClassName: CTALinkProps['textClassName']
-  children: CTALinkProps['children']
-}
-
-export type CardOuterVariants = VariantProps<typeof cardOuter>
+type borderVariants = 'all' | 'only-top'
 
 export type SimpleCardProps = {
   title: string
@@ -24,7 +17,7 @@ export type SimpleCardProps = {
     variant: BadgeProps['variant']
     text: BadgeProps['children']
   }
-  border?: CardOuterVariants['border']
+  border?: borderVariants
   cta?: {
     href: CTALinkComponentProps['href']
     text: CTALinkComponentProps['children']
@@ -38,26 +31,37 @@ export type SimpleCardData = {
   cta: NonNullable<SimpleCardProps['cta']>
 }
 
-type CardContentProps = Pick<SimpleCardProps, 'title' | 'description'> & {
-  border: CardOuterVariants['border']
+type CardContentProps = Pick<
+  SimpleCardProps,
+  'title' | 'description' | 'border'
+>
+
+type CTALinkComponentProps = {
+  href: CTALinkProps['href']
+  inset: CTALinkProps['inset']
+  textClassName: CTALinkProps['textClassName']
+  children: CTALinkProps['children']
 }
 
-const cardOuter = cva(['group h-full w-full overflow-hidden'], {
-  variants: {
-    border: {
-      all: 'rounded-2xl border border-[var(--color-border-base)]',
-      'only-top': 'border-t border-[var(--color-border-base)]',
+const cardOuter = cva(
+  'group h-full w-full overflow-hidden border-(--color-border-base)',
+  {
+    variants: {
+      border: {
+        all: 'rounded-2xl border',
+        'only-top': 'border-t',
+      },
+      hasCta: {
+        true: 'focus-within:brand-outline focus-within:bg-(--color-card-background-hover) hover:bg-(--color-card-background-hover) relative',
+        false: null,
+      },
     },
-    interactive: {
-      true: 'focus-within:brand-outline focus-within:bg-[var(--color-card-background-hover)] hover:bg-[var(--color-card-background-hover)] relative',
-      false: null,
+    defaultVariants: {
+      border: 'all',
+      hasCta: false,
     },
   },
-  defaultVariants: {
-    border: 'all',
-    interactive: false,
-  },
-})
+)
 
 const cardInner = cva('flex flex-col gap-6', {
   variants: {
@@ -83,7 +87,7 @@ const cardContent = cva('flex flex-col gap-3', {
   },
 })
 
-const ctaPosition = cva('', {
+const ctaLinkComponent = cva('', {
   variants: {
     border: {
       all: 'bottom-8 left-8',
@@ -109,7 +113,7 @@ export function SimpleCard({
     <Tag
       className={cardOuter({
         border,
-        interactive: Boolean(cta),
+        hasCta: Boolean(cta),
       })}
     >
       <div className={cardInner({ border })}>
@@ -118,12 +122,14 @@ export function SimpleCard({
             <Badge variant={badge.variant}>{badge.text}</Badge>
           </div>
         )}
+
         <CardContent title={title} description={description} border={border} />
+
         {cta && (
           <CTALinkComponent
             inset
             href={cta.href}
-            textClassName={ctaPosition({ border })}
+            textClassName={ctaLinkComponent({ border })}
           >
             {cta.text}
           </CTALinkComponent>
@@ -136,12 +142,12 @@ export function SimpleCard({
 export function CardContent({ title, description, border }: CardContentProps) {
   return (
     <div className={cardContent({ border })}>
-      <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
+      <span className="group-focus-within:text-(--color-card-heading-hover) group-hover:text-(--color-card-heading-hover)">
         <Heading tag="h3" variant="card-heading">
           {title}
         </Heading>
       </span>
-      <p className="text-[var(--color-paragraph-text)]">{description}</p>
+      <p className="text-(--color-paragraph-text)">{description}</p>
     </div>
   )
 }
