@@ -1,9 +1,9 @@
 import type { ComponentType, SVGProps } from 'react'
 
+import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 
-import { Badge } from '@/components/Badge'
 import { CTALink } from '@/components/CTALink'
 
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'

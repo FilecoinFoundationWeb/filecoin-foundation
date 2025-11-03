@@ -7,7 +7,7 @@ import { useCarousel } from './Carousel'
 type CarouselContentProps = React.ComponentProps<'ul'>
 
 export function CarouselContent({ className, ...props }: CarouselContentProps) {
-  const { carouselRef, orientation } = useCarousel()
+  const { carouselRef } = useCarousel()
 
   return (
     <div
@@ -15,14 +15,7 @@ export function CarouselContent({ className, ...props }: CarouselContentProps) {
       className="overflow-hidden"
       data-slot="carousel-content"
     >
-      <ul
-        className={clsx(
-          'flex',
-          orientation === 'horizontal' ? '-ml-4' : '-mt-4 flex-col',
-          className,
-        )}
-        {...props}
-      />
+      <ul className={clsx('flex justify-between', className)} {...props} />
     </div>
   )
 }

@@ -8,6 +8,10 @@
 }
 
 @layer components {
+  .cta-link {
+    @apply font-semibold text-[var(--color-cta-link-text)];
+  }
+
   .text-link {
     @apply focus:brand-outline no-underline hover:underline;
 

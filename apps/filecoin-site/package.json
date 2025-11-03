@@ -12,7 +12,7 @@
     "not firefox < 85"
   ],
   "scripts": {
-    "build": "npm run generate-rss && next build",
+    "build": "npm run generate-rss && next build --webpack",
     "dev": "next dev",
     "generate-rss": "tsx scripts/generateRSS.ts",
     "lint": "eslint src --fix",
@@ -28,7 +28,7 @@
     "cypress": "^15.5.0",
     "embla-carousel-react": "^8.6.0",
     "feed": "^5.1.0",
-    "next": "^15.5.6",
+    "next": "16.0.1",
     "next-intl": "^4.3.12",
     "nuqs": "^2.7.2",
     "postcss": "^8.5.6",

@@ -4,6 +4,7 @@
 @import './button.css';
 @import './card-image.css';
 @import './logo-section.css';
+@import './text-link.css';
 
 @theme {
   --color-brand-50: oklch(0.98 0.0157 216.67); /* #EDFBFF */

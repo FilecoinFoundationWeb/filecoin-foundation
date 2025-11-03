@@ -22,6 +22,17 @@
     "turbo": "^2.5.8"
   },
   "dependencies": {
-    "zod": "^4.1.12"
+    "zod": "^4.1.12",
+    "next": "16.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "overrides": {
+    "next-intl": {
+      "next": "$next"
+    },
+    "next-plausible": {
+      "next": "$next"
+    }
   }
 }
