@@ -1,9 +1,4 @@
-import type { SectionProps } from '../../Section/Section'
-
-type VariantMapping = Record<
-  SectionProps['backgroundVariant'],
-  'light' | 'dark'
->
+import type { VariantMapping } from '../types'
 
 export const variantMapping = {
   light: 'light',

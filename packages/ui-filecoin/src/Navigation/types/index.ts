@@ -1,3 +1,4 @@
+import type { SectionProps } from '../../Section/Section'
 import type {
   VariantClasses,
   NavigationMenuLinkProps as SharedNavigationMenuLinkProps,
@@ -35,3 +36,8 @@ export type NavigationMenuItem = {
     links: Array<ExpandedNavItem>
   }>
 }
+
+export type VariantMapping = Record<
+  SectionProps['backgroundVariant'],
+  'light' | 'dark'
+>
