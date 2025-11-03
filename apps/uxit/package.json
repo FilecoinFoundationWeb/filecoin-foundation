@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint src --fix",
     "unlighthouse": "tsx ./scripts/generateSiteAuditReports.ts"
@@ -13,7 +13,7 @@
     "@filecoin-foundation/ui": "0.0.0",
     "@unlighthouse/cli": "^0.17.4",
     "@unlighthouse/core": "^0.17.1",
-    "next": "16.0.1",
+    "next": "^15.5.6",
     "puppeteer": "^24.25.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
