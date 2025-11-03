@@ -2,7 +2,9 @@ import { routing } from '@/i18n/routing'
 
 import createMiddleware from 'next-intl/middleware'
 
-export default createMiddleware(routing)
+const intlMiddleware = createMiddleware(routing)
+
+export default intlMiddleware
 
 export const config = {
   // Match all pathnames except for
