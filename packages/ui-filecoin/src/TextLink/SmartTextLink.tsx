@@ -1,4 +1,6 @@
-import type { AnchorHTMLAttributes } from 'react'
+import type { AnchorHTMLAttributes, ComponentProps, ComponentType } from 'react'
+
+import type { Route } from 'next'
 
 import Link from 'next/link'
 
@@ -6,18 +8,19 @@ import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 
 import { ExternalTextLink } from './ExternalTextLink'
 import { InternalTextLink } from './InternalTextLink'
-import { type GenericLinkType } from './types'
+
+type GenericLink = Omit<ComponentProps<typeof Link>, 'locale'>
 
 export type SmartTextLinkProps = {
   href: string
   baseDomain: string
-  InternalLinkComponent?: GenericLinkType
+  InternalLinkComponent?: ComponentType<GenericLink>
 } & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>
 
 export function SmartTextLink({
   href,
   baseDomain,
-  InternalLinkComponent = Link as GenericLinkType,
+  InternalLinkComponent = Link,
   ...rest
 }: SmartTextLinkProps) {
   const isExternal = isExternalLink(href, baseDomain)
@@ -27,7 +30,7 @@ export function SmartTextLink({
   ) : (
     <InternalTextLink
       InternalLinkComponent={InternalLinkComponent}
-      href={href}
+      href={href as Route}
       {...rest}
     />
   )

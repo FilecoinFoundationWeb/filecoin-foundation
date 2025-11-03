@@ -2,14 +2,13 @@
 
 import { clsx } from 'clsx'
 
-import { NavigationMenu as SharedNavigationMenu } from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMenu'
-import { NavigationMenuPanel } from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMenuPanel'
+import { NavigationMenu as SharedNavigationMenu } from '@filecoin-foundation/ui/NavigationMenu'
 
 import type { NavigationMenuItem } from '../constants/navigation'
 import { useIsNavigationMenuActive } from '../hooks/useIsNavigationMenuActive'
 import { desktopStyle } from '../NavigationMainLink'
 
-import { NavigationMenuLink } from './NavigationMenuLink'
+import { NavigationMenuPanel } from './NavigationMenuPanel'
 
 export function NavigationMenu({ label, items }: NavigationMenuItem) {
   const isActive = useIsNavigationMenuActive(items)
@@ -22,10 +21,7 @@ export function NavigationMenu({ label, items }: NavigationMenuItem) {
       isCurrent={isActive}
       labelClassName={clsx(desktopStyle, 'inline-flex items-center gap-2')}
     >
-      <NavigationMenuPanel
-        items={items}
-        NavigationMenuLinkComponent={NavigationMenuLink}
-      />
+      <NavigationMenuPanel items={items} />
     </SharedNavigationMenu>
   )
 }
