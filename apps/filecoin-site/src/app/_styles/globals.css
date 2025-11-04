@@ -4,14 +4,6 @@
 @source '../../../../../node_modules/@filecoin-foundation/ui';
 @source '../../../../../node_modules/@filecoin-foundation/ui-filecoin';
 
-@plugin '@tailwindcss/typography';
-
-@utility brand-outline {
-  outline: 2px solid var(--color-brand-600);
-  outline-offset: 0px;
-  border-color: transparent;
-}
-
 @layer components {
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
