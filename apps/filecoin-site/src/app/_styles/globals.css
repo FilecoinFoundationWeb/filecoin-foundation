@@ -184,11 +184,6 @@
     @apply icon-button;
   }
 
-  /* SLIDE OVER */
-  .slide-over-panel {
-    @apply bg-white;
-  }
-
   /* TOOLTIP */
   .tooltip {
     @apply rounded-xl border border-zinc-200 bg-white shadow-sm;

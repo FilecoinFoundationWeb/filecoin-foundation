@@ -7,6 +7,7 @@
 @import './logo-section.css';
 @import './navigation.css';
 @import './text-link.css';
+@import './slide-over.css';
 
 @theme {
   --color-brand-50: oklch(0.98 0.0157 216.67); /* #EDFBFF */
