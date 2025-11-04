@@ -12,18 +12,6 @@
   border-color: transparent;
 }
 
-/* SECTION VARIANT COLORS */
-:root,
-.light-section {
-  --color-card-heading-hover: theme('colors.brand.800');
-  --color-card-background-hover: theme('colors.zinc.50');
-}
-
-.dark-section {
-  --color-card-heading-hover: theme('colors.brand.500');
-  --color-card-background-hover: theme('colors.zinc.800');
-}
-
 @layer components {
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
