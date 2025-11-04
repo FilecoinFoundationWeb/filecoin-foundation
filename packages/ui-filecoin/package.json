@@ -27,6 +27,7 @@
     "./Navigation/*": "./src/Navigation/*.tsx",
     "./Navigation/constants": "./src/Navigation/constants/index.ts",
     "./Navigation/types": "./src/Navigation/types/index.ts",
+    "./Markdown/*": "./src/Markdown/*.tsx",
     "./PageHeader": "./src/PageHeader.tsx",
     "./PageSection": "./src/PageSection.tsx",
     "./SectionContent": "./src/SectionContent.tsx",
