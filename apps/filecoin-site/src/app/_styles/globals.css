@@ -4,26 +4,6 @@
 @source '../../../../../node_modules/@filecoin-foundation/ui';
 @source '../../../../../node_modules/@filecoin-foundation/ui-filecoin';
 
-@plugin '@tailwindcss/typography';
-
-@utility brand-outline {
-  outline: 2px solid var(--color-brand-600);
-  outline-offset: 0px;
-  border-color: transparent;
-}
-
-/* SECTION VARIANT COLORS */
-:root,
-.light-section {
-  --color-card-heading-hover: theme('colors.brand.800');
-  --color-card-background-hover: theme('colors.zinc.50');
-}
-
-.dark-section {
-  --color-card-heading-hover: theme('colors.brand.500');
-  --color-card-background-hover: theme('colors.zinc.800');
-}
-
 @layer components {
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
@@ -182,11 +162,6 @@
   /* SOCIAL LINKS */
   .social-link {
     @apply icon-button;
-  }
-
-  /* SLIDE OVER */
-  .slide-over-panel {
-    @apply bg-white;
   }
 
   /* TOOLTIP */

@@ -6,7 +6,10 @@
 @import './icon-button.css';
 @import './logo-section.css';
 @import './navigation.css';
+@import './slide-over.css';
 @import './text-link.css';
+
+@plugin '@tailwindcss/typography';
 
 @theme {
   --color-brand-50: oklch(0.98 0.0157 216.67); /* #EDFBFF */
@@ -45,6 +48,12 @@
 @theme inline {
   --font-sans: var(--font-funnel-sans);
   --font-heading: var(--font-aspekta);
+}
+
+@utility brand-outline {
+  outline: 2px solid var(--color-brand-600);
+  outline-offset: 0px;
+  border-color: transparent;
 }
 
 /* SECTION VARIANT COLORS */

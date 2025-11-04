@@ -37,6 +37,7 @@
     "./LogoSection": "./src/LogoSection/LogoSection.tsx",
     "./LogoSection/LogoItem": "./src/LogoSection/LogoItem.tsx",
     "./Section": "./src/Section/Section.tsx",
+    "./SlideOver": "./src/SlideOver.tsx",
     "./TextLink/*": "./src/TextLink/*.tsx"
   },
   "scripts": {
