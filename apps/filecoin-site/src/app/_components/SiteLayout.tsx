@@ -5,13 +5,12 @@ import type { Locale } from '@/i18n/types'
 
 import { clsx } from 'clsx'
 
-import { BreakpointDebugger } from '@filecoin-foundation/ui/BreakpointDebugger'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { BreakpointDebugger } from '@filecoin-foundation/ui-filecoin/BreakpointDebugger'
 
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { Footer } from '@/components/Footer/Footer'
-
 
 // funnelSans also has an italic version in the same directory. We don't use italics as of now so it's not imported here.
 const funnelSans = localFont({
