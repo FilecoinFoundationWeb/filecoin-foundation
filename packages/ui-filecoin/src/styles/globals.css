@@ -6,8 +6,8 @@
 @import './icon-button.css';
 @import './logo-section.css';
 @import './navigation.css';
-@import './text-link.css';
 @import './slide-over.css';
+@import './text-link.css';
 
 @plugin '@tailwindcss/typography';
 
