@@ -12,32 +12,16 @@
   border-color: transparent;
 }
 
-@utility icon-button {
-  @apply rounded-full border border-[var(--color-icon-button-border)] text-[var(--color-text-base)] hover:border-[var(--color-icon-button-border-hover)] hover:bg-[var(--color-icon-button-background-hover)] focus:bg-[var(--color-icon-button-background-hover)];
-
-  .share-article-list & {
-    @apply scale-70;
-  }
-}
-
 /* SECTION VARIANT COLORS */
 :root,
 .light-section {
   --color-card-heading-hover: theme('colors.brand.800');
   --color-card-background-hover: theme('colors.zinc.50');
-
-  --color-icon-button-border: theme('colors.zinc.300');
-  --color-icon-button-border-hover: theme('colors.zinc.400');
-  --color-icon-button-background-hover: theme('colors.zinc.100');
 }
 
 .dark-section {
   --color-card-heading-hover: theme('colors.brand.500');
   --color-card-background-hover: theme('colors.zinc.800');
-
-  --color-icon-button-border: theme('colors.zinc.600');
-  --color-icon-button-border-hover: theme('colors.zinc.500');
-  --color-icon-button-background-hover: theme('colors.zinc.700');
 }
 
 @layer components {
@@ -188,6 +172,11 @@
   /* SHARE ARTICLE */
   .share-article-list {
     @apply gap-2;
+
+    & .copy-to-clipboard-button,
+    .social-link {
+      @apply scale-70;
+    }
   }
 
   /* SOCIAL LINKS */

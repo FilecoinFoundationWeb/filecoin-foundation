@@ -5,8 +5,8 @@ import { useState } from 'react'
 import { ListIcon, XIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
-import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
+import { IconButton } from '@filecoin-foundation/ui-filecoin/IconButton'
 import { variantMapping } from '@filecoin-foundation/ui-filecoin/Navigation/constants'
 import {
   useBackgroundVariant,
