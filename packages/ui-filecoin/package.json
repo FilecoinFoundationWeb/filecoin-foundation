@@ -23,6 +23,7 @@
     "./Heading": "./src/Heading.tsx",
     "./HomeLogoLink": "./src/HomeLogoLink.tsx",
     "./Icon": "./src/Icon.tsx",
+    "./IconButton": "./src/IconButton.tsx",
     "./LinkCard": "./src/LinkCard.tsx",
     "./Navigation/*": "./src/Navigation/*.tsx",
     "./Navigation/constants": "./src/Navigation/constants/index.ts",
