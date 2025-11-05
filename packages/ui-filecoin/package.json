@@ -39,7 +39,8 @@
     "./LogoSection/LogoItem": "./src/LogoSection/LogoItem.tsx",
     "./Section": "./src/Section/Section.tsx",
     "./SlideOver": "./src/SlideOver.tsx",
-    "./TextLink/*": "./src/TextLink/*.tsx"
+    "./TextLink/*": "./src/TextLink/*.tsx",
+    "./TextLink/types": "./src/TextLink/types/index.ts"
   },
   "scripts": {
     "lint": "eslint src --fix",

@@ -1,6 +1,6 @@
 import type { ComponentType } from 'react'
 
-import { cva, type VariantProps } from 'class-variance-authority'
+import { cva } from 'class-variance-authority'
 
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 
