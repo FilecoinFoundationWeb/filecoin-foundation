@@ -35,6 +35,58 @@ schedule:
           end-time: 13:00:00.000Z
           location: ArtLab
           url: https://luma.com/depin-day-ba
+        - title: Filecoin Onchain Cloud on CoinDesk Live
+          start-time: 13:00:00.000Z
+          end-time: 14:00:00.000Z
+          location: ArtLab
+        - title: Opening Remarks
+          speakers:
+            - name: Tom Trowbridge
+              company: Fluence
+          start-time: 13:00:00.000Z
+          end-time: 13:02:00.000Z
+          location: ArtLab
+        - title: Introducing Filecoin Onchain Cloud
+          start-time: 13:02:00.000Z
+          end-time: 13:04:00.000Z
+          location: ArtLab
+        - title: The Onchain Cloud Vision
+          speakers:
+            - name: Molly Mackinlay
+              company: FilOZ
+          start-time: 13:04:00.000Z
+          end-time: 13:15:00.000Z
+          location: ArtLab
+        - title: "Filecoin Onchain Cloud Stack Architecture "
+          speakers:
+            - name: Jennifer Wang
+              company: FilOz
+          start-time: 13:15:00.000Z
+          end-time: 13:25:00.000Z
+          location: ArtLab
+        - title: FOC Alpha Builders Showcase
+          start-time: 13:42:00.000Z
+          end-time: 13:47:00.000Z
+          speakers: []
+          location: ArtLab
+        - title: "Collaborator Spotlight: Akave"
+          start-time: 13:50:00.000Z
+          end-time: 13:53:00.000Z
+          speakers:
+            - name: Stefaan Vervaet
+              company: Akave
+          location: ArtLab
+        - title: What's Next for Filecoin and How to Get Involved
+          start-time: 13:57:00.000Z
+          end-time: 14:01:00.000Z
+          speakers:
+            - name: Marta Belcher
+              company: Filecoin Foundation
+          location: ArtLab
+        - title: Closing Remarks
+          start-time: 14:01:00.000Z
+          end-time: 14:02:00.000Z
+          location: ArtLab
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
