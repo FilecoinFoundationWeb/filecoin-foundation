@@ -35,6 +35,21 @@ schedule:
           end-time: 13:00:00.000Z
           location: ArtLab
           url: https://luma.com/depin-day-ba
+        - title: Filecoin Onchain Cloud on CoinDesk Live
+          start-time: 13:00:00.000Z
+          end-time: 14:00:00.000Z
+          location: ArtLab
+        - title: Opening Remarks
+          speakers:
+            - name: Tom Trowbridge
+              company: Fluence
+          start-time: 13:00:00.000Z
+          end-time: 13:02:00.000Z
+          location: ArtLab
+        - title: Introducing Filecoin Onchain Cloud
+          start-time: 13:02:00.000Z
+          end-time: 13:04:00.000Z
+          location: ArtLab
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
