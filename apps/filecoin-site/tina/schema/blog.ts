@@ -67,7 +67,7 @@ export function blogFields(collection = 'post'): Array<TinaField> {
       type: 'string',
       name: 'categories',
       label: 'Categories',
-      options: ['updates', 'interviews', 'awards', 'events'],
+      options: ['updates', 'interviews', 'awards', 'events', 'FOC'],
       list: true,
       required: true,
     },

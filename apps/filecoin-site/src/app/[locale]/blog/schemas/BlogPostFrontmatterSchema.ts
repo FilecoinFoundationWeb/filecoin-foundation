@@ -7,6 +7,7 @@ export const BLOG_CATEGORY_VALUES = [
   'events',
   'interviews',
   'awards',
+  'FOC',
 ] as const
 
 export const AllowedCategoriesSchema = z.enum(BLOG_CATEGORY_VALUES)
