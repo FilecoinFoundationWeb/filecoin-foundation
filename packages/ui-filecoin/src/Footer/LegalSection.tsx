@@ -1,8 +1,14 @@
 import type { ComponentType, SVGProps } from 'react'
 
 import { BaseLink } from '../BaseLink'
-import type { LinkItemProps } from '../Navigation/types'
-import { InternalTextLink } from '../TextLink/InternalTextLink'
+import {
+  InternalTextLink,
+  type InternalTextLinkProps,
+} from '../TextLink/InternalTextLink'
+
+type LegalLinkItem = Pick<InternalTextLinkProps, 'href'> & {
+  label: string
+}
 
 type CreatorProps = {
   companyName: string
@@ -15,7 +21,7 @@ type LegalSectionProps = {
   creators: Array<CreatorProps>
 
   leadingText?: string
-  legalItems?: Array<LinkItemProps>
+  legalItems?: Array<LegalLinkItem>
 }
 
 export function LegalSection({
