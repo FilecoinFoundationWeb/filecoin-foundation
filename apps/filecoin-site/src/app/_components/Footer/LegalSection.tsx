@@ -16,13 +16,7 @@ export function LegalSection() {
         {
           companyName: 'Filecoin Foundation',
           websiteUrl: FILECOIN_FOUNDATION_URL,
-          logo: (
-            <FilecoinFoundationLogo
-              height={24}
-              aria-hidden="true"
-              focusable="false"
-            />
-          ),
+          LogoComponent: FilecoinFoundationLogo,
         },
       ]}
     />

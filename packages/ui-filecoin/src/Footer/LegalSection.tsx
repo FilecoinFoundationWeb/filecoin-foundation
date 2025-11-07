@@ -1,3 +1,5 @@
+import type { ComponentType, SVGProps } from 'react'
+
 import { BaseLink } from '../BaseLink'
 import type { LinkItemProps } from '../Navigation/types'
 import { InternalTextLink } from '../TextLink/InternalTextLink'
@@ -5,7 +7,7 @@ import { InternalTextLink } from '../TextLink/InternalTextLink'
 type CreatorProps = {
   companyName: string
   websiteUrl: string
-  logo: React.ReactNode
+  LogoComponent: ComponentType<SVGProps<SVGSVGElement>>
 }
 
 type LegalSectionProps = {
@@ -28,7 +30,7 @@ export function LegalSection({
         <span className="text-xs text-white">{leadingText}</span>
 
         <div className="flex items-center gap-6">
-          {creators.map(({ companyName, websiteUrl, logo }) => (
+          {creators.map(({ companyName, websiteUrl, LogoComponent }) => (
             <BaseLink
               key={companyName}
               href={websiteUrl}
@@ -36,7 +38,7 @@ export function LegalSection({
               className="focus:brand-outline text-xs text-(--color-paragraph-text) hover:text-white"
               aria-label={`${companyName} – Visit website`}
             >
-              {logo}
+              <LogoComponent height={24} aria-hidden="true" focusable="false" />
             </BaseLink>
           ))}
         </div>
