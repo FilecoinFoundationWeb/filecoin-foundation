@@ -14,6 +14,7 @@ seo:
     to match that innovation with governance systems that are just as
     forward-looking.
 ---
+
 On October 15, the Filecoin network [celebrated five years since mainnet launch](https://www.youtube.com/watch?v=Yjm8RgqRyS0), followed by two days of **FIL Dev Summit Virtual,** a gathering of developers, builders, and engaged community members focused on advancing the core protocol and shaping the future of the Filecoin network. 
 
 During FDS-7 Virtual, Filecoin Foundation’s governance team shared a deep dive into network governance: where it started, where it’s headed, and what comes next. This blog post recaps that presentation and sets the stage for continued conversations at **[FIL Dev Summit 7 @ DevConnect](https://luma.com/lql41ipv)** happening in Buenos Aires from **November 13–15, 2025**.
@@ -28,7 +29,7 @@ But as the Filecoin network has grown, so too have the demands on its governance
 
 ## The Limits of Technical-First Governance
 
-What began as a primarily technical protocol is now a full-fledged decentralized economy that must respond to macroeconomic trends; support a growing ecosystem of builders, clients, and services; and govern public goods funding at scale.
+What began as a primarily technical protocol is now a full -fledged decentralized economy that must respond to macroeconomic trends; support a growing ecosystem of builders, clients, and services; and govern public goods funding at scale.
 
 This evolution has exposed limitations in our current governance model. We’ve seen an increasing number of proposals that go beyond protocol mechanics like changes to incentive structures, funding for shared infrastructure, or ecosystem-wide coordination.
 
@@ -38,31 +39,29 @@ And while other blockchain protocols rely on mining-based governance or validato
 
 Over the past several months, we have been in a listening phase: gathering community feedback, interviewing stakeholders, and researching models from other decentralized protocols. This process has helped FF’s governance team develop a clearer understanding of where improvements can be made and where opportunities lie:
 
-* **Ambiguity around roles and responsibilities is hindering effective decision-making;** establishing clear guidance will ensure confidence and accountability. 
-* **Some stakeholders have voiced concerns about transparency and inclusion,** underscoring the need to strengthen trust by ensuring their perspectives are meaningfully reflected in the governance process.
-* **FIP prioritization and recognition** **for completed work** should be made more consistent and visible.
-* **The FIP lifecycle** would benefit from clearer structure and communication.
-* **Many contributors are managing heavy workloads**, leaving limited time for reviewing and prioritizing proposals.
+- **Ambiguity around roles and responsibilities is hindering effective decision-making;** establishing clear guidance will ensure confidence and accountability. 
+- **Some stakeholders have voiced concerns about transparency and inclusion,** underscoring the need to strengthen trust by ensuring their perspectives are meaningfully reflected in the governance process.
+- **FIP prioritization and recognition** **for completed work** should be made more consistent and visible.
+- **The FIP lifecycle** would benefit from clearer structure and communication.
+- **Many contributors are managing heavy workloads**, leaving limited time for reviewing and prioritizing proposals.
 
-A clear theme has emerged: governance roles need clearer expectations, stronger guidelines, and better tools. Based on a survey FF conducted in APAC, we found that nearly 60% of the ecosystem isn't actively participating in governance today, but 43% of those want Filecoin governance to remain flexible and experimental. This input is guiding our next steps as we work toward a more effective, inclusive, and transparent governance framework. Watch the[ full ‘Current State Assessment’ from FDS-7 Virtual here](https://youtu.be/ipAkEFlolD0?si=hM2oWw0nZiBy0KRw&t=581).
+A clear theme has emerged: governance roles need clearer expectations, stronger guidelines, and better tools. Based on a survey FF conducted in APAC, we found that nearly 60% of the ecosystem isn't actively participating in governance today, but 43% of those want Filecoin governance to remain flexible and experimental. This input is guiding our next steps as we work toward a more effective, inclusive, and transparent governance framework. Watch the [full ‘Current State Assessment’ from FDS-7 Virtual here](https://youtu.be/ipAkEFlolD0?si=hM2oWw0nZiBy0KRw&t=581).
 
-## **Introducing the Constellation Program**
+## Introducing the Constellation Program
 
 To meet this moment, FF’s governance team launched the **Constellation Program**, a structured, community-driven initiative to reform and modernize Filecoin governance.
 
 Constellation is built on the idea that good governance doesn’t emerge by accident. It’s a deliberate, iterative process that must be designed, tested, and aligned with the needs of the ecosystem. The program includes three phases:
 
-* **Phase 1 - Discovery:** Mapping pain points, identifying key stakeholders, and studying governance models from other decentralized protocols. 
-* **Phase 2 - Operating Model Design:** Defining how governance will function, including the scope of what’s being governed, the decision-making methodology, and the roles of participating stakeholders. 
-* **Phase 3 - Implementation Planning:** Starting at **FIL Dev Summit 7**, we’ll co-develop a roadmap and identify the tools and resources that best reflect the needs of the Filecoin community.
+- **Phase 1 - Discovery:** Mapping pain points, identifying key stakeholders, and studying governance models from other decentralized protocols. 
+- **Phase 2 - Operating Model Design:** Defining how governance will function, including the scope of what’s being governed, the decision-making methodology, and the roles of participating stakeholders. 
+- **Phase 3 - Implementation Planning:** Starting at **FIL Dev Summit 7**, we’ll co-develop a roadmap and identify the tools and resources that best reflect the needs of the Filecoin community.
 
 ## The Three Pillars of Filecoin Governance
 
 After completing the discovery phase, the governance team has moved into Phase 2, which centers on operating model design. As part of that, we're introducing a three-pillar governance framework that captures the full scope of what is being governed. Picture the governance framework as the architecture of a resilient building. Each pillar is a vital structural element—all working together to support the entire system. The roof represents the values and vision, while the foundation comprises the institutions, processes, and rules that feed into overall stability.
 
 ![](/assets/images/blog_constellation_pillars.webp)
-
-
 
 **Economic Governance:** Focused on funding, incentives, and sustainability, spanning storage and retrieval economics to the use of the network’s treasury. This includes support for public goods funding (PGF) that doesn’t fit neatly into commercial models, like shared developer tools and infrastructure.
 
@@ -76,7 +75,6 @@ This work will culminate in **hands-on working sessions at [FIL Dev Summit 7](ht
 
 ![](/assets/images/blog_constellation_blocks.webp)
 
-
 For each of these dimensions, we will workshop how to tailor a decision-making methodology to  the Filecoin network’s needs. For more details on the questions we’ll explore in Argentina, [check out this clip](https://youtu.be/ipAkEFlolD0?si=1bfVSbgoZMR1KhAx&t=1320) for a preview of the planned activities at FDS-7. [Tune in here](https://www.youtube.com/watch?v=ipAkEFlolD0&t=772s) to explore our benchmarking of decision-making and weighted voting approaches and dig deeper into FF’s research on voting models. 
 
 ## Help Us Build the Future of Governance
@@ -87,8 +85,8 @@ The Filecoin ecosystem is entering a new era. As we prepare for major technical 
 
 If you care about Filecoin’s mission and future, now is the time to get involved.
 
-* Join upcoming governance discussions on [GitHub](https://github.com/filecoin-project/FIPs/discussions) 
+- Join upcoming governance discussions on [GitHub](https://github.com/filecoin-project/FIPs/discussions) 
 
-* Attend [FIL Dev Summit 7 @ DevConnect](https://luma.com/lql41ipv) in Buenos Aires from November 13 - 15 
+- Attend [FIL Dev Summit 7 @ DevConnect](https://luma.com/lql41ipv) in Buenos Aires from November 13 - 15 
 
-* Share feedback on the Constellation Program at [governance@fil.org](mailto:governance@fil.org)
+- Share feedback on the Constellation Program at [governance@fil.org](mailto:governance@fil.org)
