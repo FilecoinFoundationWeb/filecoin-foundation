@@ -62,6 +62,10 @@ schedule:
           speakers:
             - name: Jennifer Wang
               company: FilOz
+            - name: Miro Bajitoš
+              company: Space Meridian
+            - name: James Bluett
+              company: FilOz
           start-time: 13:15:00.000Z
           end-time: 13:25:00.000Z
           location: ArtLab
