@@ -27,7 +27,6 @@ schedule:
     - date: 2025-11-18
       events:
         - title: Doors Open
-          speakers: []
           start-time: 10:00:00.000Z
           location: ArtLab
         - title: "DePIN Day Content "
@@ -67,7 +66,6 @@ schedule:
         - title: FOC Alpha Builders Showcase
           start-time: 13:42:00.000Z
           end-time: 13:47:00.000Z
-          speakers: []
           location: ArtLab
         - title: "Collaborator Spotlight: Akave"
           start-time: 13:50:00.000Z
