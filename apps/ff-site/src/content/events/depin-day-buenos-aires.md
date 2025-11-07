@@ -53,6 +53,8 @@ schedule:
           speakers:
             - name: Molly Mackinlay
               company: FilOZ
+            - name: Armita Jalooli
+              company: Messari
           start-time: 13:04:00.000Z
           end-time: 13:15:00.000Z
           location: ArtLab
