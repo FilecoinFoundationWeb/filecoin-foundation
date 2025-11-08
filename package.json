@@ -24,5 +24,6 @@
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "zod": "^4.1.12"
-  }
+  },
+  "version": "0.0.1"
 }
