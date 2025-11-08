@@ -1,8 +1,7 @@
 import { clsx } from 'clsx'
 import Link from 'next/link'
 
-import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
-
+import { isExternalLink } from '../../utils/linkUtils'
 import type { GenericLinkType } from '../TextLink/types'
 
 import { ExternalLink } from './components/ExternalLink'

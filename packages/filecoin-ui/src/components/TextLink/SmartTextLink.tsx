@@ -2,7 +2,7 @@ import type { AnchorHTMLAttributes } from 'react'
 
 import Link from 'next/link'
 
-import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
+import { isExternalLink } from '../../utils/linkUtils'
 
 import { ExternalTextLink } from './ExternalTextLink'
 import { InternalTextLink } from './InternalTextLink'

@@ -2,8 +2,7 @@ import type { ComponentProps } from 'react'
 
 import { ArrowUpRightIcon } from '@phosphor-icons/react'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
-
+import { Icon } from '../../Icon'
 import type { LinkItemProps } from '../types'
 
 import { LinkDescription } from './LinkDescription'

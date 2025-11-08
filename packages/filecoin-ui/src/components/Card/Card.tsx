@@ -1,9 +1,8 @@
 import type { StaticImageProps } from '../../types/imageType'
-
-import { CardImage } from './CardImage'
-
 import { Heading } from '../Heading'
 import { IconBadge, type IconBadgeProps } from '../IconBadge'
+
+import { CardImage } from './CardImage'
 
 type BaseCardProps = {
   as: 'li' | 'article' | 'div'
