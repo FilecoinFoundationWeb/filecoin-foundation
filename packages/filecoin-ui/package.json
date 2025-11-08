@@ -1,6 +1,6 @@
 {
   "name": "@filecoin-foundation/filecoin-ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Filecoin branded UI components for the Filecoin ecosystem created by Filecoin Foundation",
   "private": false,
   "type": "module",
@@ -184,7 +184,7 @@
     }
   },
   "scripts": {
-    "build": "tsc && mkdir -p dist/styles && cp src/styles/globals.css dist/styles/globals.css",
+    "build": "tsc && mkdir -p dist/styles && cp src/styles/*.css dist/styles/",
     "prepublishOnly": "npm run build",
     "lint": "eslint src --fix",
     "test": "echo \"No tests yet\""
