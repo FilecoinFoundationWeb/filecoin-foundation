@@ -1,0 +1,229 @@
+{
+  "name": "@filecoin-foundation/filecoin-ui",
+  "version": "0.1.0",
+  "description": "Filecoin branded UI components for the Filecoin ecosystem created by Filecoin Foundation",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    "./Announcement": {
+      "types": "./dist/components/Announcement.d.ts",
+      "default": "./dist/components/Announcement.js"
+    },
+    "./Badge": {
+      "types": "./dist/components/Badge.d.ts",
+      "default": "./dist/components/Badge.js"
+    },
+    "./BaseLink": {
+      "types": "./dist/components/BaseLink.d.ts",
+      "default": "./dist/components/BaseLink.js"
+    },
+    "./BreakpointDebugger": {
+      "types": "./dist/components/BreakpointDebugger.d.ts",
+      "default": "./dist/components/BreakpointDebugger.js"
+    },
+    "./Button": {
+      "types": "./dist/components/Button.d.ts",
+      "default": "./dist/components/Button.js"
+    },
+    "./ButtonRow": {
+      "types": "./dist/components/ButtonRow.d.ts",
+      "default": "./dist/components/ButtonRow.js"
+    },
+    "./CTALink": {
+      "types": "./dist/components/CTALink.d.ts",
+      "default": "./dist/components/CTALink.js"
+    },
+    "./Card": {
+      "types": "./dist/components/Card.d.ts",
+      "default": "./dist/components/Card.js"
+    },
+    "./CardGrid": {
+      "types": "./dist/components/CardGrid.d.ts",
+      "default": "./dist/components/CardGrid.js"
+    },
+    "./Container": {
+      "types": "./dist/components/Container.d.ts",
+      "default": "./dist/components/Container.js"
+    },
+    "./Heading": {
+      "types": "./dist/components/Heading.d.ts",
+      "default": "./dist/components/Heading.js"
+    },
+    "./HomeLogoLink": {
+      "types": "./dist/components/HomeLogoLink.d.ts",
+      "default": "./dist/components/HomeLogoLink.js"
+    },
+    "./Icon": {
+      "types": "./dist/components/Icon.d.ts",
+      "default": "./dist/components/Icon.js"
+    },
+    "./IconBadge": {
+      "types": "./dist/components/IconBadge.d.ts",
+      "default": "./dist/components/IconBadge.js"
+    },
+    "./IconButton": {
+      "types": "./dist/components/IconButton.d.ts",
+      "default": "./dist/components/IconButton.js"
+    },
+    "./LinkCard": {
+      "types": "./dist/components/LinkCard.d.ts",
+      "default": "./dist/components/LinkCard.js"
+    },
+    "./PageHeader": {
+      "types": "./dist/components/PageHeader.d.ts",
+      "default": "./dist/components/PageHeader.js"
+    },
+    "./PageSection": {
+      "types": "./dist/components/PageSection.d.ts",
+      "default": "./dist/components/PageSection.js"
+    },
+    "./SimpleCard": {
+      "types": "./dist/components/SimpleCard.d.ts",
+      "default": "./dist/components/SimpleCard.js"
+    },
+    "./SlideOver": {
+      "types": "./dist/components/SlideOver.d.ts",
+      "default": "./dist/components/SlideOver.js"
+    },
+    "./SectionContent": {
+      "types": "./dist/components/SectionContent.d.ts",
+      "default": "./dist/components/SectionContent.js"
+    },
+    "./LogoSection/LogoSection": {
+      "types": "./dist/components/LogoSection/LogoSection.d.ts",
+      "default": "./dist/components/LogoSection/LogoSection.js"
+    },
+    "./LogoSection/LogoItem": {
+      "types": "./dist/components/LogoSection/LogoItem.d.ts",
+      "default": "./dist/components/LogoSection/LogoItem.js"
+    },
+    "./Markdown/MarkdownContent": {
+      "types": "./dist/components/Markdown/MarkdownContent.d.ts",
+      "default": "./dist/components/Markdown/MarkdownContent.js"
+    },
+    "./Markdown/MarkdownLink": {
+      "types": "./dist/components/Markdown/MarkdownLink.d.ts",
+      "default": "./dist/components/Markdown/MarkdownLink.js"
+    },
+    "./Markdown/MarkdownPage": {
+      "types": "./dist/components/Markdown/MarkdownPage.d.ts",
+      "default": "./dist/components/Markdown/MarkdownPage.js"
+    },
+    "./Navigation/NavigationMainLink": {
+      "types": "./dist/components/Navigation/NavigationMainLink.d.ts",
+      "default": "./dist/components/Navigation/NavigationMainLink.js"
+    },
+    "./Navigation/NavigationMenu": {
+      "types": "./dist/components/Navigation/NavigationMenu.d.ts",
+      "default": "./dist/components/Navigation/NavigationMenu.js"
+    },
+    "./Navigation/NavigationMenuLink": {
+      "types": "./dist/components/Navigation/NavigationMenuLink.d.ts",
+      "default": "./dist/components/Navigation/NavigationMenuLink.js"
+    },
+    "./Navigation/NavigationMenuPanel": {
+      "types": "./dist/components/Navigation/NavigationMenuPanel.d.ts",
+      "default": "./dist/components/Navigation/NavigationMenuPanel.js"
+    },
+    "./Navigation/constants": {
+      "types": "./dist/components/Navigation/constants/index.d.ts",
+      "default": "./dist/components/Navigation/constants/index.js"
+    },
+    "./Navigation/types": {
+      "types": "./dist/components/Navigation/types/index.d.ts",
+      "default": "./dist/components/Navigation/types/index.js"
+    },
+    "./Section/Section": {
+      "types": "./dist/components/Section/Section.d.ts",
+      "default": "./dist/components/Section/Section.js"
+    },
+    "./TextLink/ExternalTextLink": {
+      "types": "./dist/components/TextLink/ExternalTextLink.d.ts",
+      "default": "./dist/components/TextLink/ExternalTextLink.js"
+    },
+    "./TextLink/InternalTextLink": {
+      "types": "./dist/components/TextLink/InternalTextLink.d.ts",
+      "default": "./dist/components/TextLink/InternalTextLink.js"
+    },
+    "./TextLink/SmartTextLink": {
+      "types": "./dist/components/TextLink/SmartTextLink.d.ts",
+      "default": "./dist/components/TextLink/SmartTextLink.js"
+    },
+    "./TextLink/types": {
+      "types": "./dist/components/TextLink/types/index.d.ts",
+      "default": "./dist/components/TextLink/types/index.js"
+    },
+    "./constants/tailwindConstants": {
+      "types": "./dist/constants/tailwindConstants.d.ts",
+      "default": "./dist/constants/tailwindConstants.js"
+    },
+    "./types/tailwindTypes": {
+      "types": "./dist/types/tailwindTypes.d.ts",
+      "default": "./dist/types/tailwindTypes.js"
+    },
+    "./utils/buildImageSizeProp": {
+      "types": "./dist/utils/buildImageSizeProp.d.ts",
+      "default": "./dist/utils/buildImageSizeProp.js"
+    },
+    "./utils/linkUtils": {
+      "types": "./dist/utils/linkUtils.d.ts",
+      "default": "./dist/utils/linkUtils.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint src --fix",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "filecoin",
+    "react",
+    "components",
+    "ui",
+    "tailwind"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FilecoinFoundationWeb/filecoin-foundation.git",
+    "directory": "packages/filecoin-ui"
+  },
+  "author": "Filecoin Foundation",
+  "license": "MIT",
+  "devDependencies": {
+    "@filecoin-foundation/eslint-config": "0.0.0",
+    "@filecoin-foundation/typescript-config": "0.0.0",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@phosphor-icons/react": "^2.0.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.0.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-markdown": "^9.0.0",
+    "rehype-raw": "^7.0.0",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.0",
+    "slugify": "^1.6.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "next": {
+      "optional": false
+    },
+    "tailwindcss": {
+      "optional": false
+    }
+  }
+}
