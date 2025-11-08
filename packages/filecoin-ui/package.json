@@ -165,6 +165,7 @@
       "types": "./dist/constants/tailwindConstants.d.ts",
       "default": "./dist/constants/tailwindConstants.js"
     },
+    "./styles": "./dist/styles/globals.css",
     "./types/imageType": {
       "types": "./dist/types/imageType.d.ts",
       "default": "./dist/types/imageType.js"
@@ -183,7 +184,7 @@
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && mkdir -p dist/styles && cp src/styles/globals.css dist/styles/globals.css",
     "prepublishOnly": "npm run build",
     "lint": "eslint src --fix",
     "test": "echo \"No tests yet\""
