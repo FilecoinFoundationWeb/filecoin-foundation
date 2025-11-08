@@ -38,8 +38,12 @@
       "default": "./dist/components/CTALink.js"
     },
     "./Card": {
-      "types": "./dist/components/Card.d.ts",
-      "default": "./dist/components/Card.js"
+      "types": "./dist/components/Card/Card.d.ts",
+      "default": "./dist/components/Card/Card.js"
+    },
+    "./Card/CardImage": {
+      "types": "./dist/components/Card/CardImage.d.ts",
+      "default": "./dist/components/Card/CardImage.js"
     },
     "./CardGrid": {
       "types": "./dist/components/CardGrid.d.ts",
@@ -160,6 +164,10 @@
     "./constants/tailwindConstants": {
       "types": "./dist/constants/tailwindConstants.d.ts",
       "default": "./dist/constants/tailwindConstants.js"
+    },
+    "./types/imageType": {
+      "types": "./dist/types/imageType.d.ts",
+      "default": "./dist/types/imageType.js"
     },
     "./types/tailwindTypes": {
       "types": "./dist/types/tailwindTypes.d.ts",
