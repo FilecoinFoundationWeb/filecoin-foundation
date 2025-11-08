@@ -53,12 +53,18 @@ schedule:
           speakers:
             - name: Molly Mackinlay
               company: FilOZ
+            - name: Armita Jalooli
+              company: Messari
           start-time: 13:04:00.000Z
           end-time: 13:15:00.000Z
           location: ArtLab
         - title: "Filecoin Onchain Cloud Stack Architecture "
           speakers:
             - name: Jennifer Wang
+              company: FilOz
+            - name: Miro Bajitoš
+              company: Space Meridian
+            - name: James Bluett
               company: FilOz
           start-time: 13:15:00.000Z
           end-time: 13:25:00.000Z
