@@ -212,6 +212,7 @@
   "peerDependencies": {
     "@headlessui/react": "^2.2.9",
     "@phosphor-icons/react": "^2.1.10",
+    "@tailwindcss/typography": "^0.5.16",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
