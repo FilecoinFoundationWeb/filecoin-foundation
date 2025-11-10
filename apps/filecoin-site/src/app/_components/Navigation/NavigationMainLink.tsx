@@ -18,5 +18,6 @@ type NavigationLinkProps = Omit<
 >
 
 export function NavigationMainLink(props: NavigationLinkProps) {
+  // @ts-expect-error: Types of property 'href' are incompatible: string vs RouteImpl | UrlObject
   return <SharedNavigationMainLink InternalLinkComponent={Link} {...props} />
 }

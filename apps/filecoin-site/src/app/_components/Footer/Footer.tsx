@@ -26,6 +26,7 @@ export function Footer() {
                 logo={Logo}
                 height={32}
                 color="text-[var(--color-text-base)]"
+                // @ts-expect-error: Types of property 'prefetch' are incompatible between next-intl Link and Next.js Link
                 LinkComponent={Link}
               />
               <NewsletterForm />

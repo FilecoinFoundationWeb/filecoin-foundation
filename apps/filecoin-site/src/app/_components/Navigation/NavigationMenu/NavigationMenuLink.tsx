@@ -16,6 +16,7 @@ export function NavigationMenuLink(
     <SharedNavigationMenuLink
       baseDomain={BASE_DOMAIN}
       variants={{ options: variants, selected: props.variant }}
+      // @ts-expect-error: Types of property 'href' are incompatible: string vs RouteImpl | UrlObject
       InternalLinkComponent={Link}
       {...props}
     />
