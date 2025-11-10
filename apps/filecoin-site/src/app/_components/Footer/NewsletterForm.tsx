@@ -5,7 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { useForm } from 'react-hook-form'
 
-import { Icon } from '@filecoin-foundation/filecoin-ui/Icon'
+import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 import {
   NewsletterFormSchema,
   type NewsletterFormData,

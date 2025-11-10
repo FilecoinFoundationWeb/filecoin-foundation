@@ -1,4 +1,4 @@
-import { Badge } from '@filecoin-foundation/filecoin-ui/Badge'
+import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
 
 import type { AllowedCategory } from '../types/categoriesType'
 

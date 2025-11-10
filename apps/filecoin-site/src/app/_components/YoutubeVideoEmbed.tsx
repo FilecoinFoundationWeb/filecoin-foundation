@@ -2,8 +2,8 @@
 
 import { PlayCircleIcon } from '@phosphor-icons/react'
 
-import { Icon } from '@filecoin-foundation/filecoin-ui/Icon'
 import { YouTubeVideo } from '@filecoin-foundation/ui/YouTubeVideo'
+import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 
 type PlaceholderProps = {
   text: string

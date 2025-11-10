@@ -2,12 +2,12 @@ import Image from 'next/image'
 
 import { clsx } from 'clsx'
 
-import { Card } from '@filecoin-foundation/filecoin-ui/Card'
-import { CardGrid } from '@filecoin-foundation/filecoin-ui/CardGrid'
-import { PageHeader } from '@filecoin-foundation/filecoin-ui/PageHeader'
-import { PageSection } from '@filecoin-foundation/filecoin-ui/PageSection'
-import { backgroundVariants } from '@filecoin-foundation/filecoin-ui/Section/Section'
-import { SectionContent } from '@filecoin-foundation/filecoin-ui/SectionContent'
+import { Card } from '@filecoin-foundation/ui-filecoin/Card'
+import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
+import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/Section'
+import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'

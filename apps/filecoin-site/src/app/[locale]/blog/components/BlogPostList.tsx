@@ -2,10 +2,10 @@
 
 import { useSearchParams } from 'next/navigation'
 
-import { CardGrid } from '@filecoin-foundation/filecoin-ui/CardGrid'
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
+import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import {
   PAGE_KEY,
   SEARCH_KEY,
