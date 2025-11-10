@@ -8,16 +8,15 @@
   },
   "exports": {
     ".": "./src/index.js",
-    "./createNextConfig": "./src/createNextConfig.ts",
-    "./createSentryConfig": "./src/createSentryConfig.ts",
+    "./createNextConfig": "./src/createNextConfig.js",
+    "./createSentryConfig": "./src/createSentryConfig.js",
     "./tracing": "./src/tracing.js",
     "./webpackRules": "./src/webpackRules.js"
   },
   "peerDependencies": {
+    "@sentry/nextjs": "^10.20.0",
+    "@svgr/webpack": "^8.1.0",
+    "frontmatter-markdown-loader": "^3.7.0",
     "next": "^15.5.6"
-  },
-  "devDependencies": {
-    "@filecoin-foundation/eslint-config": "0.0.0",
-    "@filecoin-foundation/typescript-config": "0.0.0"
   }
 }
