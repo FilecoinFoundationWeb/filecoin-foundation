@@ -5,6 +5,7 @@ import {
   InternalTextLink,
   type InternalTextLinkProps,
 } from '../TextLink/InternalTextLink'
+import { type GenericLinkType } from '../TextLink/types'
 
 type LegalLinkItem = Pick<InternalTextLinkProps, 'href'> & {
   label: string
@@ -19,9 +20,9 @@ type CreatorProps = {
 type LegalSectionProps = {
   baseDomain: string
   creators: Array<CreatorProps>
-
   leadingText?: string
   legalItems?: Array<LegalLinkItem>
+  InternalLinkComponent?: GenericLinkType
 }
 
 export function LegalSection({
@@ -29,6 +30,7 @@ export function LegalSection({
   leadingText = 'Created by',
   creators,
   legalItems,
+  InternalLinkComponent,
 }: LegalSectionProps) {
   return (
     <div className="flex flex-col-reverse items-center justify-between gap-8 py-16 sm:flex-row md:gap-16">
@@ -54,7 +56,12 @@ export function LegalSection({
         <ul className="order-1 flex items-center gap-10 text-sm text-(--color-paragraph-text) md:gap-16">
           {legalItems.map(({ href, label }) => (
             <li key={href}>
-              <InternalTextLink href={href}>{label}</InternalTextLink>
+              <InternalTextLink
+                href={href}
+                InternalLinkComponent={InternalLinkComponent}
+              >
+                {label}
+              </InternalTextLink>
             </li>
           ))}
         </ul>
