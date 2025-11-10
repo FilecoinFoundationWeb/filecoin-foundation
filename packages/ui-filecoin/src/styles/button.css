@@ -1,6 +1,9 @@
 @layer components {
   .button {
-    @apply rounded-full border-2 px-6 py-4 text-base font-medium;
+    &.button--primary,
+    &.button--ghost {
+      @apply rounded-full border-2 px-6 py-4;
+    }
 
     &.button--primary {
       @apply relative border-transparent;
@@ -28,6 +31,7 @@
             linear-gradient(var(--color-white)) content-box,
             linear-gradient(var(--color-white));
           mask-composite: exclude;
+          -webkit-mask-composite: xor; /* Safari < 15.4 */
         }
 
         &:focus {

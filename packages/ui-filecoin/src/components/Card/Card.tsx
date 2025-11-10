@@ -1,3 +1,5 @@
+import { clsx } from 'clsx'
+
 import type { StaticImageProps } from '../../types/imageType'
 import { Heading } from '../Heading'
 import { IconBadge, type IconBadgeProps } from '../IconBadge'
@@ -8,6 +10,7 @@ type BaseCardProps = {
   as: 'li' | 'article' | 'div'
   title: string
   description: string
+  isCentered?: boolean
 }
 
 type CardWithIcon = BaseCardProps & {
@@ -32,9 +35,21 @@ export type CardData = Pick<
   'title' | 'description' | 'icon' | 'image'
 >
 
-export function Card({ as: Tag, title, description, icon, image }: CardProps) {
+export function Card({
+  as: Tag,
+  title,
+  description,
+  icon,
+  image,
+  isCentered = false,
+}: CardProps) {
   return (
-    <Tag className="flex flex-col gap-6">
+    <Tag
+      className={clsx(
+        'flex flex-col gap-6',
+        isCentered && 'items-center text-center',
+      )}
+    >
       {icon && <IconBadge component={icon} size="md" />}
       {image && <CardImage image={image} />}
 
