@@ -2,10 +2,9 @@ import type { ComponentType } from 'react'
 
 import { cva } from 'class-variance-authority'
 
-import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
-
 import { Badge, type BadgeProps } from './Badge'
 import { type CTALinkProps } from './CTALink'
+import { Heading } from './Heading'
 
 type borderVariants = 'all' | 'only-top'
 

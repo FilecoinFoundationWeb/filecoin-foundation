@@ -1,8 +1,0 @@
-{
-  "extends": "@filecoin-foundation/typescript-config/base.json",
-  "compilerOptions": {
-    "jsx": "react-jsx"
-  },
-  "include": ["src", "tsconfig.json"],
-  "exclude": ["node_modules"]
-}

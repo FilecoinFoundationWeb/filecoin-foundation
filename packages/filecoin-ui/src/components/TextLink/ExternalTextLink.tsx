@@ -1,7 +1,7 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
+import { Icon } from '../Icon'
 
 export type ExternalTextLinkProps =
   React.AnchorHTMLAttributes<HTMLAnchorElement> & {
@@ -22,7 +22,7 @@ export function ExternalTextLink({
     >
       {children}
       <span className="ml-1 inline-flex self-center">
-        <Icon component={ArrowUpRightIcon} size={16} color="subtle" />
+        <Icon component={ArrowUpRightIcon} size={16} />
       </span>
     </a>
   )

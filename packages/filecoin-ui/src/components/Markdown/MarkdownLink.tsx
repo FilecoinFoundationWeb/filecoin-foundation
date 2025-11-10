@@ -1,6 +1,5 @@
 import type { ComponentPropsWithoutRef } from 'react'
 
-import * as Sentry from '@sentry/nextjs'
 import { clsx } from 'clsx'
 
 import { SmartTextLink } from '../TextLink/SmartTextLink'
@@ -20,7 +19,14 @@ export function MarkdownLink({
     const errorMessage = `Invalid markdown: link is missing href attribute for text "${children}"`
 
     console.error(errorMessage)
-    Sentry.captureException(new Error(errorMessage))
+
+    // Optional Sentry integration - only if user has it installed
+    if (typeof window !== 'undefined' && 'Sentry' in window) {
+      const Sentry = (
+        window as { Sentry?: { captureException: (error: Error) => void } }
+      ).Sentry
+      Sentry?.captureException(new Error(errorMessage))
+    }
 
     return <>{children}</>
   }

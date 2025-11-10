@@ -2,7 +2,7 @@ import type { AnchorHTMLAttributes, ComponentType } from 'react'
 
 import Link, { type LinkProps } from 'next/link'
 
-import { isInternalLink } from '@filecoin-foundation/utils/linkUtils'
+import { isInternalLink } from '../utils/linkUtils'
 
 type GenericLink = ComponentType<Omit<LinkProps<unknown>, 'locale'>>
 

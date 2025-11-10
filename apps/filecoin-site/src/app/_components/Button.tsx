@@ -3,7 +3,7 @@ import { Link } from '@/i18n/navigation'
 import {
   Button as SharedButton,
   type ButtonProps as SharedButtonProps,
-} from '@filecoin-foundation/ui-filecoin/Button'
+} from '@filecoin-foundation/filecoin-ui/Button'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

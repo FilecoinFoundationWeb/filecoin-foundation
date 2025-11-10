@@ -1,7 +1,7 @@
 import Image, { type ImageProps } from 'next/image'
 
-import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
-import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils/buildImageSizeProp'
+import { Heading } from '@filecoin-foundation/filecoin-ui/Heading'
+import { buildImageSizeProp } from '@filecoin-foundation/filecoin-ui/utils/buildImageSizeProp'
 
 import { PATHS } from '@/constants/paths'
 

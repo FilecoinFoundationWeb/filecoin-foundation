@@ -5,7 +5,7 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
+import { isExternalLink } from '../utils/linkUtils'
 
 import { BaseLink, type BaseLinkProps } from './BaseLink'
 import { Icon } from './Icon'

@@ -3,7 +3,7 @@ import { Link } from '@/i18n/navigation'
 import {
   CTALink as SharedCTALink,
   type CTALinkProps as SharedCTALinkProps,
-} from '@filecoin-foundation/ui-filecoin/CTALink'
+} from '@filecoin-foundation/filecoin-ui/CTALink'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

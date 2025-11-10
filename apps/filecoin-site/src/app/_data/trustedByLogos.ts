@@ -1,4 +1,4 @@
-import { type LogoItemProps } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoItem'
+import { type LogoItemProps } from '@filecoin-foundation/filecoin-ui/LogoSection/LogoItem'
 
 import AethirLogo from '@/assets/logos/aethir-logo.svg'
 import FlickrFoundationLogo from '@/assets/logos/flickr-foundation-logo.svg'

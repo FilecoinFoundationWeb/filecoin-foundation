@@ -3,7 +3,7 @@ import { Link } from '@/i18n/navigation'
 import {
   HomeLogoLink,
   type HomeLogoLinkProps,
-} from '@filecoin-foundation/ui-filecoin/HomeLogoLink'
+} from '@filecoin-foundation/filecoin-ui/HomeLogoLink'
 
 import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
 

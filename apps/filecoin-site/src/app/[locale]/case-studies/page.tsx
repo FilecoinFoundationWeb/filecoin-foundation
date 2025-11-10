@@ -1,7 +1,7 @@
-import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
-import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
-import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
-import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
+import { CardGrid } from '@filecoin-foundation/filecoin-ui/CardGrid'
+import { PageHeader } from '@filecoin-foundation/filecoin-ui/PageHeader'
+import { PageSection } from '@filecoin-foundation/filecoin-ui/PageSection'
+import { SectionContent } from '@filecoin-foundation/filecoin-ui/SectionContent'
 
 import { PATHS } from '@/constants/paths'
 

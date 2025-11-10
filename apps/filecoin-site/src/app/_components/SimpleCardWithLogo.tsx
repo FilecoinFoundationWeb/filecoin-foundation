@@ -2,8 +2,8 @@ import type { ComponentType, SVGProps } from 'react'
 
 import Image, { type StaticImageData } from 'next/image'
 
-import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
-import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
+import { Heading } from '@filecoin-foundation/filecoin-ui/Heading'
+import { Icon } from '@filecoin-foundation/filecoin-ui/Icon'
 
 import { CTALink, type CTALinkProps } from './CTALink'
 

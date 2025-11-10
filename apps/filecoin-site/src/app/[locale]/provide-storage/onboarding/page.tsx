@@ -1,5 +1,5 @@
-import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
-import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
+import { Heading } from '@filecoin-foundation/filecoin-ui/Heading'
+import { PageSection } from '@filecoin-foundation/filecoin-ui/PageSection'
 
 import { PATHS } from '@/constants/paths'
 

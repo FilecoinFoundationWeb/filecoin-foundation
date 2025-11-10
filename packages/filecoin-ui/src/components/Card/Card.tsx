@@ -1,8 +1,8 @@
-import { CardImage } from '@filecoin-foundation/ui/Card/CardImage'
-import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
+import type { StaticImageProps } from '../../types/imageType'
+import { Heading } from '../Heading'
+import { IconBadge, type IconBadgeProps } from '../IconBadge'
 
-import { Heading } from './Heading'
-import { IconBadge, type IconBadgeProps } from './IconBadge'
+import { CardImage } from './CardImage'
 
 type BaseCardProps = {
   as: 'li' | 'article' | 'div'

@@ -3,13 +3,10 @@ import type { ComponentType } from 'react'
 import { ArrowUpRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import {
-  Icon as IconComponent,
-  type IconProps,
-} from '@filecoin-foundation/ui/Icon'
-import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
+import { isExternalLink } from '../utils/linkUtils'
 
 import { BaseLink, type BaseLinkProps } from './BaseLink'
+import { Icon as IconComponent, type IconProps } from './Icon'
 
 export type ButtonProps = {
   baseDomain: string

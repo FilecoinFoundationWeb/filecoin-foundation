@@ -1,10 +1,10 @@
 import { Link } from '@/i18n/navigation'
 
+import { Heading } from '@filecoin-foundation/filecoin-ui/Heading'
 import {
   CardImage,
   type CardImageProps,
 } from '@filecoin-foundation/ui/Card/CardImage'
-import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 
 import { PATHS } from '@/constants/paths'
 

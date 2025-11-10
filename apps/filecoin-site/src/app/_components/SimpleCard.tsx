@@ -1,11 +1,11 @@
 import {
   SimpleCard as SharedSimpleCard,
   type SimpleCardProps as SharedSimpleCardProps,
-} from '@filecoin-foundation/ui-filecoin/SimpleCard'
+} from '@filecoin-foundation/filecoin-ui/SimpleCard'
 
 import { CTALink } from '@/components/CTALink'
 
-export { type SimpleCardData } from '@filecoin-foundation/ui-filecoin/SimpleCard'
+export { type SimpleCardData } from '@filecoin-foundation/filecoin-ui/SimpleCard'
 
 export type SimpleCardProps = Omit<SharedSimpleCardProps, 'CTALinkComponent'>
 
