@@ -1,5 +1,0 @@
-@layer components {
-  .card-image {
-    @apply rounded-2xl border border-[var(--color-border-base)];
-  }
-}
