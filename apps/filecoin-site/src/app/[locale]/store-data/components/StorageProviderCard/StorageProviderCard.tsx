@@ -1,8 +1,8 @@
 import type { ComponentType, SVGProps } from 'react'
 
-import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
-import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
-import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
+import { Badge } from '@filecoin-foundation/filecoin-ui/Badge'
+import { Heading } from '@filecoin-foundation/filecoin-ui/Heading'
+import { Icon } from '@filecoin-foundation/filecoin-ui/Icon'
 
 import { CTALink } from '@/components/CTALink'
 

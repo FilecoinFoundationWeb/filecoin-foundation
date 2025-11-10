@@ -1,6 +1,6 @@
 import { CheckIcon } from '@phosphor-icons/react/dist/ssr'
 
-import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
+import { Icon } from '@filecoin-foundation/filecoin-ui/Icon'
 
 export type StorageProviderCardKeyFeatureProps = {
   feature: string

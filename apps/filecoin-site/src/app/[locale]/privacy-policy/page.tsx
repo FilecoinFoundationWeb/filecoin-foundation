@@ -1,6 +1,6 @@
+import { PageHeader } from '@filecoin-foundation/filecoin-ui/PageHeader'
+import { PageSection } from '@filecoin-foundation/filecoin-ui/PageSection'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
-import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
 import { PATHS } from '@/constants/paths'
 

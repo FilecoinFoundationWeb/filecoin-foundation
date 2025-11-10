@@ -5,8 +5,8 @@ import type { Locale } from '@/i18n/types'
 
 import { clsx } from 'clsx'
 
+import { BreakpointDebugger } from '@filecoin-foundation/filecoin-ui/BreakpointDebugger'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { BreakpointDebugger } from '@filecoin-foundation/ui-filecoin/BreakpointDebugger'
 
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 

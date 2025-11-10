@@ -1,8 +1,8 @@
 @import 'tailwindcss';
-@import '@filecoin-foundation/ui-filecoin/styles';
+@import '@filecoin-foundation/filecoin-ui/styles';
 
 @source '../../../../../node_modules/@filecoin-foundation/ui';
-@source '../../../../../node_modules/@filecoin-foundation/ui-filecoin';
+@source '../../../../../node_modules/@filecoin-foundation/filecoin-ui';
 
 @layer components {
   /* COPY TO CLIPBOARD */

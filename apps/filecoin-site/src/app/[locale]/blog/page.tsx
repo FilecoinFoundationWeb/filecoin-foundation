@@ -2,8 +2,8 @@ import { Suspense } from 'react'
 
 import type { LocaleParams } from '@/i18n/types'
 
+import { PageSection } from '@filecoin-foundation/filecoin-ui/PageSection'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'

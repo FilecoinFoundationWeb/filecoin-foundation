@@ -4,7 +4,7 @@ import {
   ShieldCheckIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-import type { CardData } from '@filecoin-foundation/ui-filecoin/Card'
+import type { CardData } from '@filecoin-foundation/filecoin-ui/Card'
 
 export const filecoinFeatures = [
   {
