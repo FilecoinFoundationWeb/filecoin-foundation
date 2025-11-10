@@ -1,6 +1,6 @@
 import { Link } from '@/i18n/navigation'
 
-import { Icon } from '@filecoin-foundation/filecoin-ui/Icon'
+import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 
 import { BLOG_RSS_PATH } from '@/constants/paths'
 

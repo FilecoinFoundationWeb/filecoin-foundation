@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
-import { Card } from '@filecoin-foundation/filecoin-ui/Card'
-import { CardGrid } from '@filecoin-foundation/filecoin-ui/CardGrid'
-import { PageHeader } from '@filecoin-foundation/filecoin-ui/PageHeader'
-import { PageSection } from '@filecoin-foundation/filecoin-ui/PageSection'
-import { SectionContent } from '@filecoin-foundation/filecoin-ui/SectionContent'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { Card } from '@filecoin-foundation/ui-filecoin/Card'
+import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
+import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
 import { PATHS } from '@/constants/paths'
 import {

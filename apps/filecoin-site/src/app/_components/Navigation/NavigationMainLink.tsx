@@ -5,12 +5,12 @@ import { Link } from '@/i18n/navigation'
 import {
   NavigationMainLink as SharedNavigationMainLink,
   type NavigationLinkProps as SharedNavigationLinkProps,
-} from '@filecoin-foundation/filecoin-ui/Navigation/NavigationMainLink'
+} from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMainLink'
 
 export {
   desktopStyle,
   mobileStyle,
-} from '@filecoin-foundation/filecoin-ui/Navigation/NavigationMainLink'
+} from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMainLink'
 
 type NavigationLinkProps = Omit<
   SharedNavigationLinkProps,

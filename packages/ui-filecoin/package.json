@@ -199,7 +199,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FilecoinFoundationWeb/filecoin-foundation.git",
-    "directory": "packages/filecoin-ui"
+    "directory": "packages/ui-filecoin"
   },
   "author": "Filecoin Foundation",
   "license": "MIT",

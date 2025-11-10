@@ -1,4 +1,4 @@
-import { type LogoItemProps } from '@filecoin-foundation/filecoin-ui/LogoSection/LogoItem'
+import { type LogoItemProps } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoItem'
 
 import CIDgravityLogo from '@/assets/logos/cidgravity-logo.svg'
 import DCENTLogo from '@/assets/logos/dcent-logo.svg'

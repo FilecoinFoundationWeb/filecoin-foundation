@@ -1,4 +1,4 @@
-import { Heading } from '@filecoin-foundation/filecoin-ui/Heading'
+import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 
 type StorageProviderCardSectionProps = {
   title: string
