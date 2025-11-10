@@ -3,8 +3,8 @@ import type { LocaleParams } from '@/i18n/types'
 
 import { setRequestLocale } from 'next-intl/server'
 
-import { PageSection } from '@filecoin-foundation/filecoin-ui/PageSection'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import type { SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'

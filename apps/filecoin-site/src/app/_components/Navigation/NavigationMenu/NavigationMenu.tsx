@@ -2,8 +2,8 @@
 
 import { clsx } from 'clsx'
 
-import { NavigationMenu as SharedNavigationMenu } from '@filecoin-foundation/filecoin-ui/Navigation/NavigationMenu'
-import { NavigationMenuPanel } from '@filecoin-foundation/filecoin-ui/Navigation/NavigationMenuPanel'
+import { NavigationMenu as SharedNavigationMenu } from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMenu'
+import { NavigationMenuPanel } from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMenuPanel'
 
 import type { NavigationMenuItem } from '../constants/navigation'
 import { useIsNavigationMenuActive } from '../hooks/useIsNavigationMenuActive'

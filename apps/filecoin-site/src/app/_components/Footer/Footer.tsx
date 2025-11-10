@@ -1,9 +1,9 @@
 import { Link } from '@/i18n/navigation'
 
-import { Container } from '@filecoin-foundation/filecoin-ui/Container'
-import { HomeLogoLink } from '@filecoin-foundation/filecoin-ui/HomeLogoLink'
-import { Section } from '@filecoin-foundation/filecoin-ui/Section/Section'
 import { Social } from '@filecoin-foundation/ui/Social'
+import { Container } from '@filecoin-foundation/ui-filecoin/Container'
+import { HomeLogoLink } from '@filecoin-foundation/ui-filecoin/HomeLogoLink'
+import { Section } from '@filecoin-foundation/ui-filecoin/Section/Section'
 
 import { socialLinksWithIcons } from '@/constants/socialConfig'
 
@@ -26,6 +26,7 @@ export function Footer() {
                 logo={Logo}
                 height={32}
                 color="text-[var(--color-text-base)]"
+                // @ts-expect-error: Types of property 'prefetch' are incompatible between next-intl Link and Next.js Link
                 LinkComponent={Link}
               />
               <NewsletterForm />

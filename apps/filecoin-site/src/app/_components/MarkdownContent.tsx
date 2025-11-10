@@ -1,7 +1,7 @@
 import {
   MarkdownContent as SharedMarkdownContent,
   type MarkdownContentProps as SharedMarkdownContentProps,
-} from '@filecoin-foundation/filecoin-ui/Markdown/MarkdownContent'
+} from '@filecoin-foundation/ui-filecoin/Markdown/MarkdownContent'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

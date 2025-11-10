@@ -1,4 +1,4 @@
-import type { CardData } from '@filecoin-foundation/filecoin-ui/Card'
+import type { CardData } from '@filecoin-foundation/ui-filecoin/Card'
 
 import archiveRoom from '@/assets/images/archive-room.webp'
 import computerMontherboardCircuit from '@/assets/images/computer-motherboard-circuit.webp'

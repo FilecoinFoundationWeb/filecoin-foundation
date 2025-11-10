@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl'
 
-import { Announcement } from '@filecoin-foundation/filecoin-ui/Announcement'
-import { PageHeader } from '@filecoin-foundation/filecoin-ui/PageHeader'
-import { PageSection } from '@filecoin-foundation/filecoin-ui/PageSection'
+import { Announcement } from '@filecoin-foundation/ui-filecoin/Announcement'
+import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'

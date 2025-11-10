@@ -5,13 +5,13 @@ import { useState } from 'react'
 import { ListIcon, XIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
-import { IconButton } from '@filecoin-foundation/filecoin-ui/IconButton'
-import { variantMapping } from '@filecoin-foundation/filecoin-ui/Navigation/constants'
+import { IconButton } from '@filecoin-foundation/ui-filecoin/IconButton'
+import { variantMapping } from '@filecoin-foundation/ui-filecoin/Navigation/constants'
 import {
   useBackgroundVariant,
   backgroundVariants,
-} from '@filecoin-foundation/filecoin-ui/Section/Section'
-import { SlideOver } from '@filecoin-foundation/filecoin-ui/SlideOver'
+} from '@filecoin-foundation/ui-filecoin/Section/Section'
+import { SlideOver } from '@filecoin-foundation/ui-filecoin/SlideOver'
 
 import { mobileNavigationItems } from './constants/navigation'
 import { HomeLogoIconLink } from './HomeLogoIconLink'

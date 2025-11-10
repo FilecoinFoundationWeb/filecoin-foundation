@@ -1,8 +1,8 @@
-import { Container } from '@filecoin-foundation/filecoin-ui/Container'
+import { Container } from '@filecoin-foundation/ui-filecoin/Container'
 import {
   Section,
   type SectionProps,
-} from '@filecoin-foundation/filecoin-ui/Section/Section'
+} from '@filecoin-foundation/ui-filecoin/Section/Section'
 
 import { DesktopNavigation } from './DesktopNavigation'
 import { HomeLogoIconLink } from './HomeLogoIconLink'

@@ -1,11 +1,11 @@
 import {
   ButtonRow,
   type ButtonRowProps,
-} from '@filecoin-foundation/filecoin-ui/ButtonRow'
+} from '@filecoin-foundation/ui-filecoin/ButtonRow'
 import {
   Heading,
   type HeadingProps,
-} from '@filecoin-foundation/filecoin-ui/Heading'
+} from '@filecoin-foundation/ui-filecoin/Heading'
 
 type SectionSubContentProps = {
   headingTag: HeadingProps['tag']

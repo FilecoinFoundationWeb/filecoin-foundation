@@ -3,7 +3,7 @@ import { Link } from '@/i18n/navigation'
 import {
   SmartTextLink as SharedSmartTextLink,
   type SmartTextLinkProps as SharedSmartTextLinkProps,
-} from '@filecoin-foundation/filecoin-ui/TextLink/SmartTextLink'
+} from '@filecoin-foundation/ui-filecoin/TextLink/SmartTextLink'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
@@ -17,6 +17,7 @@ export function SmartTextLink(props: SmartTextLinkProps) {
     <SharedSmartTextLink
       {...props}
       baseDomain={BASE_DOMAIN}
+      // @ts-expect-error: Types of property 'href' are incompatible: string vs RouteImpl | UrlObject
       InternalLinkComponent={Link}
     />
   )
