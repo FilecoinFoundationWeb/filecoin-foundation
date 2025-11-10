@@ -1,7 +1,7 @@
 import { Card } from '@filecoin-foundation/filecoin-ui/Card'
 import { CardGrid } from '@filecoin-foundation/filecoin-ui/CardGrid'
 import { Heading } from '@filecoin-foundation/filecoin-ui/Heading'
-import { LogoSection } from '@filecoin-foundation/filecoin-ui/LogoSection'
+import { LogoSection } from '@filecoin-foundation/filecoin-ui/LogoSection/LogoSection'
 import { PageHeader } from '@filecoin-foundation/filecoin-ui/PageHeader'
 import { PageSection } from '@filecoin-foundation/filecoin-ui/PageSection'
 import { SectionContent } from '@filecoin-foundation/filecoin-ui/SectionContent'
