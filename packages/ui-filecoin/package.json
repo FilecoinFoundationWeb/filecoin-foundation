@@ -9,6 +9,10 @@
     "README.md"
   ],
   "exports": {
+    "./Alert": {
+      "types": "./dist/components/Alert.d.ts",
+      "default": "./dist/components/Alert.js"
+    },
     "./Announcement": {
       "types": "./dist/components/Announcement.d.ts",
       "default": "./dist/components/Announcement.js"
