@@ -1,8 +1,11 @@
 import { clsx } from 'clsx'
 
+import { Icon, type IconProps } from './Icon'
+
 export type BadgeProps = {
   variant?: keyof typeof variantClasses
   children: string
+  icon?: IconProps['component']
 }
 
 const variantClasses = {
@@ -12,14 +15,15 @@ const variantClasses = {
   solid: 'text-white bg-brand-700 border-brand-700',
 } as const
 
-export function Badge({ children, variant = 'primary' }: BadgeProps) {
+export function Badge({ children, variant = 'primary', icon }: BadgeProps) {
   return (
     <span
       className={clsx(
-        'inline-block rounded-full border px-4 py-1 text-sm/5 font-medium capitalize',
+        'flex items-center gap-1 rounded-full border px-4 py-1 text-sm/5 font-medium capitalize',
         variantClasses[variant],
       )}
     >
+      {icon && <Icon component={icon} size={16} />}
       {children}
     </span>
   )
