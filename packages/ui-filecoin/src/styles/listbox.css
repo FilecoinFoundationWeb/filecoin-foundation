@@ -1,0 +1,28 @@
+:root,
+.light-section {
+  --color-lisbox-button-text: var(
+    --color-navigation-link-textt,
+    var(--color-zinc-950)
+  );
+  --color-listbox-button-background: var(
+    --color-navigation-link-background-active,
+    var(--color-zinc-100)
+  );
+  --color-listbox-border: var(--color-zinc-200);
+  --color-listbox-option-background: var(--color-zinc-100);
+  --color-listbox-option-background-hover: var(--color-zinc-200);
+}
+
+.dark-section {
+  --color-lisbox-button-text: var(
+    --color-navigation-link-text,
+    var(--color-zinc-50)
+  );
+  --color-listbox-button-background: var(
+    --color-navigation-link-background-active,
+    var(--color-zinc-800)
+  );
+  --color-listbox-border: var(--color-zinc-700);
+  --color-listbox-option-background: var(--color-zinc-900);
+  --color-listbox-option-background-hover: var(--color-zinc-800);
+}
