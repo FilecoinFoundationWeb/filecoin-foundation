@@ -121,6 +121,10 @@
       "types": "./dist/components/Table/TanstackTable.d.ts",
       "default": "./dist/components/Table/TanstackTable.js"
     },
+    "./Listbox": {
+      "types": "./dist/components/Listbox.d.ts",
+      "default": "./dist/components/Listbox.js"
+    },
     "./LogoSection/LogoSection": {
       "types": "./dist/components/LogoSection/LogoSection.d.ts",
       "default": "./dist/components/LogoSection/LogoSection.js"
