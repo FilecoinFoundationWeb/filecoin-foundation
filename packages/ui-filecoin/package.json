@@ -113,6 +113,10 @@
       "types": "./dist/components/SectionContent.d.ts",
       "default": "./dist/components/SectionContent.js"
     },
+    "./LoadingContainer": {
+      "types": "./dist/components/LoadingContainer.d.ts",
+      "default": "./dist/components/LoadingContainer.js"
+    },
     "./LogoSection/LogoSection": {
       "types": "./dist/components/LogoSection/LogoSection.d.ts",
       "default": "./dist/components/LogoSection/LogoSection.js"
