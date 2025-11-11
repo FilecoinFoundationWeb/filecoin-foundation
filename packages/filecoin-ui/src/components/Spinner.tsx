@@ -1,22 +1,27 @@
 import { SpinnerIcon } from '@phosphor-icons/react/dist/ssr'
 
-import { Icon } from './Icon'
+import { Icon, type IconProps } from './Icon'
 
 type SpinnerProps = {
-  text?: string
-  size?: number
-}
+  size?: IconProps['size']
+  weight?: IconProps['weight']
+} & (
+  | { message: string; ariaLabel?: string }
+  | { message?: never; ariaLabel: string }
+)
 
-export default function Spinner({ text, size = 20 }: SpinnerProps) {
+export function Spinner({ message, ariaLabel, size = 20 }: SpinnerProps) {
+  const accessibleLabel = ariaLabel || message
+
   return (
     <div className="flex flex-col items-center gap-2" role="status">
       <span
-        className="text-brand-700 flex-shrink-0 animate-spin"
-        aria-labelledby="spinner-text"
+        className="text-brand-700 shrink-0 animate-spin"
+        aria-label={accessibleLabel}
       >
-        <Icon component={SpinnerIcon} size={size} color="inherit" />
+        <Icon component={SpinnerIcon} size={size} />
       </span>
-      {text && <p id="spinner-text">{text}</p>}
+      {message && <p>{message}</p>}
     </div>
   )
 }
