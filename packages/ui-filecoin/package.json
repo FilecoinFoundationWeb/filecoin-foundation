@@ -101,6 +101,10 @@
       "types": "./dist/components/SlideOver.d.ts",
       "default": "./dist/components/SlideOver.js"
     },
+    "./Spinner": {
+      "types": "./dist/components/Spinner.d.ts",
+      "default": "./dist/components/Spinner.js"
+    },
     "./SectionContent": {
       "types": "./dist/components/SectionContent.d.ts",
       "default": "./dist/components/SectionContent.js"
