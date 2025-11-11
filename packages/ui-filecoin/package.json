@@ -85,6 +85,10 @@
       "types": "./dist/components/IconButton.d.ts",
       "default": "./dist/components/IconButton.js"
     },
+    "./InfoCard": {
+      "types": "./dist/components/InfoCard.d.ts",
+      "default": "./dist/components/InfoCard.js"
+    },
     "./LinkCard": {
       "types": "./dist/components/LinkCard.d.ts",
       "default": "./dist/components/LinkCard.js"
