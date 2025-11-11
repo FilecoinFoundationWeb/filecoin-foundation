@@ -105,6 +105,34 @@
       "types": "./dist/components/SectionContent.d.ts",
       "default": "./dist/components/SectionContent.js"
     },
+    "./Table": {
+      "types": "./dist/components/Table.d.ts",
+      "default": "./dist/components/Table.js"
+    },
+    "./Table/CompactAddress": {
+      "types": "./dist/components/Table/CompactAddress.d.ts",
+      "default": "./dist/components/Table/CompactAddress.js"
+    },
+    "./Table/ID": {
+      "types": "./dist/components/Table/ID.d.ts",
+      "default": "./dist/components/Table/ID.js"
+    },
+    "./Table/PeerID": {
+      "types": "./dist/components/Table/PeerID.d.ts",
+      "default": "./dist/components/Table/PeerID.js"
+    },
+    "./Table/SoftwareVersion": {
+      "types": "./dist/components/Table/SoftwareVersion.d.ts",
+      "default": "./dist/components/Table/SoftwareVersion.js"
+    },
+    "./Table/StatusBadge": {
+      "types": "./dist/components/Table/StatusBadge.d.ts",
+      "default": "./dist/components/Table/StatusBadge.js"
+    },
+    "./Table/TanstackTable": {
+      "types": "./dist/components/Table/TanstackTable.d.ts",
+      "default": "./dist/components/Table/TanstackTable.js"
+    },
     "./LogoSection/LogoSection": {
       "types": "./dist/components/LogoSection/LogoSection.d.ts",
       "default": "./dist/components/LogoSection/LogoSection.js"
@@ -211,6 +239,11 @@
   },
   "author": "Filecoin Foundation",
   "license": "MIT",
+  "dependencies": {
+    "@tanstack/react-table": "^8.21.3",
+    "clsx": "^2.1.1",
+    "viem": "^2.38.6"
+  },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
@@ -222,7 +255,6 @@
     "@phosphor-icons/react": "^2.1.10",
     "@tailwindcss/typography": "^0.5.19",
     "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
     "next": "^15.5.6",
     "react": "^19.2.0",
