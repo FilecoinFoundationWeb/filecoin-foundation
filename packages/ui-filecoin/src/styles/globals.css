@@ -7,6 +7,7 @@
 @import './logo-section.css';
 @import './navigation.css';
 @import './slide-over.css';
+@import './table.css';
 @import './text-link.css';
 
 @plugin '@tailwindcss/typography';
