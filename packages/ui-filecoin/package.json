@@ -165,6 +165,10 @@
       "types": "./dist/components/Navigation/types/index.d.ts",
       "default": "./dist/components/Navigation/types/index.js"
     },
+    "./Navigation/hooks/*": {
+      "types": "./dist/components/Navigation/hooks/*.d.ts",
+      "default": "./dist/components/Navigation/hooks/*.js"
+    },
     "./PageHeader": {
       "types": "./dist/components/PageHeader.d.ts",
       "default": "./dist/components/PageHeader.js"
