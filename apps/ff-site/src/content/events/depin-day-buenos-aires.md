@@ -99,6 +99,12 @@ speakers:
       image:
         src: /assets/images/1670490998296.webp
       linkedin: https://www.linkedin.com/in/tom-trowbridge-12623/
+    - name: Juan Benet
+      company: Protocol Labs
+      title: Founder & CEO
+      linkedin: https://www.linkedin.com/in/jbenetcs/
+      image:
+        src: /assets/images/1516955240728.webp
     - name: Marco De Rossi
       title: Head of AI
       company: MetaMask
