@@ -105,6 +105,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/jbenetcs/
       image:
         src: /assets/images/1516955240728.webp
+    - name: Marta Belcher
+      company: FF
+      title: President & Chair
+      linkedin: https://www.linkedin.com/in/martabelcher/
+      image:
+        src: /assets/images/marta-belcher-2025-headshot-color.webp
     - name: Marco De Rossi
       title: Head of AI
       company: MetaMask
