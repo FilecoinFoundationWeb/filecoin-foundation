@@ -44,7 +44,7 @@
     "@filecoin-foundation/next-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
     "@filecoin-foundation/ui": "0.0.0",
-    "@filecoin-foundation/ui-filecoin": "0.1.3",
+    "@filecoin-foundation/ui-filecoin": "0.1.4",
     "@filecoin-foundation/utils": "0.0.0",
     "@next/eslint-plugin-next": "^15.5.6",
     "@svgr/webpack": "^8.1.0",
