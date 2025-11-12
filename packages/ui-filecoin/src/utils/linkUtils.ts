@@ -11,6 +11,15 @@ export function isExternalLink(href: string, baseDomain: string): boolean {
   return !isInternalLink(href, baseDomain)
 }
 
+export function isValidUrl(url: string) {
+  try {
+    new URL(url)
+    return true
+  } catch {
+    return false
+  }
+}
+
 function getDomainRegex(baseDomain: string): RegExp {
   return new RegExp(`^(https?://)?(www\\.)?${baseDomain}`)
 }
