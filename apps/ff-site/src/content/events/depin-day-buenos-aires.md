@@ -170,6 +170,12 @@ speakers:
       image:
         src: /assets/images/66d74e4db714067e4cabed3f_image-6.webp
       linkedin: https://www.linkedin.com/in/james-bluett-31a75a235/
+    - name: Rod Vagg
+      title: Software Engineer
+      company: FilOz
+      linkedin: https://www.linkedin.com/in/rvagg/
+      image:
+        src: /assets/images/1687336501122.webp
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
