@@ -23,21 +23,15 @@ const networkOptions = [
   },
 ] satisfies Array<NetworkOption>
 
-type NetworkSelectorProps = {
-  options?: Array<NetworkOption>
-}
-
-export function NetworkSelector({
-  options = networkOptions,
-}: NetworkSelectorProps) {
+export function NetworkSelector() {
   const { network, setNetwork } = useNetwork()
 
   const selectedOption =
-    options.find((option) => option.id === network) || options[0]
+    networkOptions.find((option) => option.id === network) || networkOptions[0]
 
   return (
     <Listbox
-      options={options}
+      options={networkOptions}
       selected={selectedOption}
       setSelected={(selected) => setNetwork(selected.id)}
       Icon={GlobeIcon}
