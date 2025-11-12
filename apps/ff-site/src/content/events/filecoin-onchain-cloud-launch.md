@@ -1,6 +1,7 @@
 ---
 title: Filecoin Onchain Cloud Launch
-description: "Filecoin Onchain Cloud envisions a world where every layer of
+description: "On November 18, join us at 11 AM for the launch of Filecoin
+  Onchain Cloud. Filecoin Onchain Cloud envisions a world where every layer of
   cloud infrastructure — storage, compute, retrieval, access control, and beyond
   — is open, verifiable, and interoperable. It’s the foundation for a
   decentralized, developer-owned cloud built for the next era of data, AI, and
