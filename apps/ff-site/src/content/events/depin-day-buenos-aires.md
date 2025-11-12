@@ -134,6 +134,12 @@ speakers:
       company: Storacha
       image:
         src: /assets/images/alexander-sly-storacha.webp
+    - name: Stefaan Vervaet
+      title: CEO
+      company: Akave
+      linkedin: https://www.linkedin.com/in/stefaan-vervaet/
+      image:
+        src: /assets/images/1545691189584.webp
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
