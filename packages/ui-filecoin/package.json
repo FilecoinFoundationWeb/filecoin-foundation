@@ -89,6 +89,10 @@
       "types": "./dist/components/LinkCard.d.ts",
       "default": "./dist/components/LinkCard.js"
     },
+    "./LoadingStateCard": {
+      "types": "./dist/components/LoadingStateCard.d.ts",
+      "default": "./dist/components/LoadingStateCard.js"
+    },
     "./PageHeader": {
       "types": "./dist/components/PageHeader.d.ts",
       "default": "./dist/components/PageHeader.js"
@@ -113,9 +117,9 @@
       "types": "./dist/components/SectionContent.d.ts",
       "default": "./dist/components/SectionContent.js"
     },
-    "./LoadingContainer": {
-      "types": "./dist/components/LoadingContainer.d.ts",
-      "default": "./dist/components/LoadingContainer.js"
+    "./StateCard": {
+      "types": "./dist/components/StateCard.d.ts",
+      "default": "./dist/components/StateCard.js"
     },
     "./LogoSection/LogoSection": {
       "types": "./dist/components/LogoSection/LogoSection.d.ts",
