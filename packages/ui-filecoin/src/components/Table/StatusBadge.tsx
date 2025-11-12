@@ -14,7 +14,7 @@ export function StatusBadge({ status }: StatusBadgeProps) {
           'size-2.5 rounded-full border-2',
           isActive
             ? 'bg-brand-600 border-brand-400'
-            : 'bg-zinc-500 border-zinc-300',
+            : 'border-zinc-300 bg-zinc-500',
         )}
         aria-hidden="true"
       />
@@ -25,7 +25,7 @@ export function StatusBadge({ status }: StatusBadgeProps) {
           isActive ? 'text-brand-950' : 'text-zinc-600',
         )}
       >
-        {status === 'active' ? 'Active' : 'Inactive'}
+        {isActive ? 'Active' : 'Inactive'}
       </p>
     </div>
   )
