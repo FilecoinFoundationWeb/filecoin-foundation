@@ -152,6 +152,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/jiayingw703/?originalSubdomain=ca
       image:
         src: /assets/images/1745403328875.webp
+    - name: Nicola Greco
+      company: FilOz
+      linkedin: https://www.linkedin.com/in/nicolagreco/
+      image:
+        src: /assets/images/1605526794028.webp
+      title: " "
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
