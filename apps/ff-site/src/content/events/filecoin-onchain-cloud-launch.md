@@ -1,11 +1,6 @@
 ---
 title: Filecoin Onchain Cloud Launch
-description: "On November 18, join us at 11 AM for the launch of Filecoin
-  Onchain Cloud. Filecoin Onchain Cloud envisions a world where every layer of
-  cloud infrastructure — storage, compute, retrieval, access control, and beyond
-  — is open, verifiable, and interoperable. It’s the foundation for a
-  decentralized, developer-owned cloud built for the next era of data, AI, and
-  applications. "
+description: "On November 18 at 11 AM, join us for the launch of Filecoin Onchain Cloud — a vision for a world where every layer of cloud infrastructure, from storage and compute to retrieval and access control, is open, verifiable, and interoperable. It is the foundation of a decentralized, developer-owned cloud built for the next era of data, AI, and applications."
 created-on: 2025-11-12T18:14:00.000Z
 updated-on: 2025-11-12T18:14:00.000Z
 published-on: 2025-11-12T18:14:00.000Z
@@ -17,20 +12,18 @@ image:
   src: /assets/images/slide-16_9-1.webp
 luma-calendar-link: https://luma.com/oppketav
 program:
-  kicker: Join us to open the Cloud
+  kicker: Join us to open the cloud
   events:
-    - title: "Livestream  "
+    - title: "Livestream"
       start-date: 2025-11-18
-      location: "Filecoin X "
-      description: "Tune in to the livesteam on X (Twitter). "
+      location: "Filecoin X"
+      description: "Tune in to the livestream on X (Twitter)."
       external-link: https://x.com/Filecoin?s=20
-    - title: De:pin Day Buenos Aires
+    - title: "DePIN Day Buenos Aires"
       start-date: 2025-11-18
       external-link: https://luma.com/depin-day-ba
-      description: Join us in Buenos Aires for an ecosystem watch party at De:pin Day
+      description: "Join us in Buenos Aires for an ecosystem watch party at DePIN Day."
       location: "Artlab: Roseti 93, C1427 Cdad. Autónoma de Buenos Aires, Argentina"
-schedule:
-  kicker: ""
 seo:
-  description: "November 18, join us to open the cloud. "
+  description: "Join the global launch of Filecoin Onchain Cloud on November 18 — the open, verifiable, decentralized cloud for the next era of data, AI, and applications."
 ---
