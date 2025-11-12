@@ -129,6 +129,11 @@ speakers:
       linkedin: https://www.linkedin.com/in/sarahthiam/
       image:
         src: /assets/images/1728467665082.webp
+    - name: Alexander Sly
+      title: Head of Ecosystem
+      company: Storacha
+      image:
+        src: /assets/images/alexander-sly-storacha.webp
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
