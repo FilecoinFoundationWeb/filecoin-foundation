@@ -93,11 +93,12 @@ schedule:
           location: ArtLab
 speakers:
   speakers_list:
-    - name: Test
-      title: Test
-      company: Test
+    - name: Tom Trowbridge
+      title: Co-Founder
+      company: Fluence Labs
       image:
-        src: /assets/images/marta-belcher-2025-headshot-color.webp
+        src: /assets/images/1670490998296.webp
+      linkedin: https://www.linkedin.com/in/tom-trowbridge-12623/
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
