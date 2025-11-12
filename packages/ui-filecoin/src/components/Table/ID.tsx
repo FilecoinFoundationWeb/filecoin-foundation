@@ -1,15 +1,22 @@
+import { clsx } from 'clsx'
+
 type IDProps = {
   number: number
 }
 
 export function ID({ number }: IDProps) {
-  if (number < 0) {
-    console.warn('ID component received a negative number:', number)
-  }
+  const isValidId = number >= 0
 
   return (
-    <span className="text-sm border px-2 py-1 border-zinc-200 text-zinc-950 rounded-lg">
-      {`#${number}`}
+    <span
+      className={clsx(
+        'rounded-lg border px-2 py-1 text-sm',
+        isValidId
+          ? 'border-zinc-200 text-zinc-950'
+          : 'border-red-200 text-red-500',
+      )}
+    >
+      {isValidId ? `#${number}` : 'Invalid ID'}
     </span>
   )
 }
