@@ -15,6 +15,7 @@ location:
 start-date: 2025-11-18
 image:
   src: /assets/images/slide-16_9-1.webp
+luma-calendar-link: https://luma.com/oppketav
 program:
   kicker: Join us to open the Cloud
   events:
