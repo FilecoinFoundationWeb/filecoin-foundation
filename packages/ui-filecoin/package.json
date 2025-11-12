@@ -141,6 +141,10 @@
       "types": "./dist/components/Markdown/MarkdownPage.d.ts",
       "default": "./dist/components/Markdown/MarkdownPage.js"
     },
+    "./Navigation/MobileNavigation": {
+      "types": "./dist/components/Navigation/MobileNavigation.d.ts",
+      "default": "./dist/components/Navigation/MobileNavigation.js"
+    },
     "./Navigation/NavigationMainLink": {
       "types": "./dist/components/Navigation/NavigationMainLink.d.ts",
       "default": "./dist/components/Navigation/NavigationMainLink.js"
@@ -164,6 +168,10 @@
     "./Navigation/types": {
       "types": "./dist/components/Navigation/types/index.d.ts",
       "default": "./dist/components/Navigation/types/index.js"
+    },
+    "./Navigation/hooks/*": {
+      "types": "./dist/components/Navigation/hooks/*.d.ts",
+      "default": "./dist/components/Navigation/hooks/*.js"
     },
     "./PageHeader": {
       "types": "./dist/components/PageHeader.d.ts",

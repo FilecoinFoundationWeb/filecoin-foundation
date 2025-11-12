@@ -25,7 +25,7 @@ export type LocalNavigationMenuLinkProps<Variants extends VariantClasses> =
     variant?: keyof Variants
   }
 
-type NavItem = { label: string; href: string }
+export type NavItem = { label: string; href: string }
 
 export type ExpandedNavItem = NavItem & { description: string }
 

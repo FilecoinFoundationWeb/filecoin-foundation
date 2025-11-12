@@ -16,6 +16,7 @@ export const config = [
     rules: {
       'turbo/no-undeclared-env-vars': 'warn',
       eqeqeq: 'warn',
+      'react/prop-types': 'off',
     },
   },
   {

@@ -1,23 +1,39 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, type ComponentType } from 'react'
 
 import { ListIcon, XIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
-import { IconButton } from '@filecoin-foundation/ui-filecoin/IconButton'
-import { variantMapping } from '@filecoin-foundation/ui-filecoin/Navigation/constants'
-import {
-  useBackgroundVariant,
-  backgroundVariants,
-} from '@filecoin-foundation/ui-filecoin/Section/Section'
-import { SlideOver } from '@filecoin-foundation/ui-filecoin/SlideOver'
+import { IconButton } from '../IconButton'
+import { useBackgroundVariant, backgroundVariants } from '../Section/Section'
+import { SlideOver } from '../SlideOver'
 
-import { mobileNavigationItems } from './constants/navigation'
-import { HomeLogoIconLink } from './HomeLogoIconLink'
-import { NavigationMainLink } from './NavigationMainLink'
+import { variantMapping } from './constants'
+import type { NavItem } from './types'
 
-export function MobileNavigation() {
+type NavigationMainLinkProps = {
+  on: 'mobile'
+  label: string
+  href: string
+  onNavigate?: () => void
+}
+
+type HomeLogoIconLinkProps = {
+  onNavigate?: () => void
+}
+
+export type MobileNavigationProps = {
+  items: Array<NavItem>
+  NavigationMainLinkComponent: ComponentType<NavigationMainLinkProps>
+  HomeLogoIconLinkComponent: ComponentType<HomeLogoIconLinkProps>
+}
+
+export function MobileNavigation({
+  items,
+  NavigationMainLinkComponent,
+  HomeLogoIconLinkComponent,
+}: MobileNavigationProps) {
   const [open, setOpen] = useState(false)
   const backgroundVariant = useBackgroundVariant()
   const mobileBackgroundVariant = variantMapping[backgroundVariant]
@@ -38,7 +54,7 @@ export function MobileNavigation() {
           )}
         >
           <div className="flex items-center justify-between">
-            <HomeLogoIconLink onNavigate={closePanel} />
+            <HomeLogoIconLinkComponent onNavigate={closePanel} />
             <IconButton
               icon={XIcon}
               label="Close mobile navigation"
@@ -47,11 +63,11 @@ export function MobileNavigation() {
           </div>
           <ul
             aria-label="Navigation options"
-            className="flex flex-col divide-y divide-[var(--color-border-base)]"
+            className="flex flex-col divide-y divide-(--color-border-base)"
           >
-            {mobileNavigationItems.map(({ href, label }) => (
+            {items.map(({ href, label }) => (
               <li key={href}>
-                <NavigationMainLink
+                <NavigationMainLinkComponent
                   on="mobile"
                   href={href}
                   label={label}
