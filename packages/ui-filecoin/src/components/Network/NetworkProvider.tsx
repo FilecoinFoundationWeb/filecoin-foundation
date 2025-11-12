@@ -1,6 +1,8 @@
 'use client'
 
-import { createContext, type ReactNode, use, useState } from 'react'
+import { createContext, type ReactNode, use } from 'react'
+
+import { useLocalStorage } from 'usehooks-ts'
 
 import type { ChainId } from './types'
 
@@ -19,7 +21,10 @@ const NetworkContext = createContext<NetworkContextValue>({
 type NetworkProviderProps = Readonly<{ children: ReactNode }>
 
 export function NetworkProvider({ children }: NetworkProviderProps) {
-  const [network, setNetwork] = useState<ChainId>(defaultNetwork)
+  const [network, setNetwork] = useLocalStorage<ChainId>(
+    'network-id',
+    defaultNetwork,
+  )
 
   return (
     <NetworkContext value={{ network, setNetwork }}>{children}</NetworkContext>
