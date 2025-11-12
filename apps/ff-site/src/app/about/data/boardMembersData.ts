@@ -2,7 +2,7 @@ import type { MemberData } from '@/types/memberType'
 
 import JoeLandon from '@/assets/headshots/Joe_Landon.png'
 import KristinSmith from '@/assets/headshots/Kristin_Smith.png'
-import MartaBelcher from '@/assets/headshots/Marta_Belcher.png'
+import MartaBelcher from '@/assets/headshots/Marta_Belcher.webp'
 import PhilipRosedale from '@/assets/headshots/Philip_Rosedale.png'
 import SheilaWarren from '@/assets/headshots/Sheila_Warren.png'
 
