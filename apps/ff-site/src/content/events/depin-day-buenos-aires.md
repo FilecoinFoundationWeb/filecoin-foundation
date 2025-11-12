@@ -176,6 +176,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/rvagg/
       image:
         src: /assets/images/1687336501122.webp
+    - name: Tim Fong
+      company: FilOz
+      linkedin: https://www.linkedin.com/in/timfong888/
+      title: Product Manager- Protocol Lead at Filecoin
+      image:
+        src: /assets/images/1553381322360.webp
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
