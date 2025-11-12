@@ -1,7 +1,7 @@
 :root,
 .light-section {
-  --color-lisbox-button-text: var(
-    --color-navigation-link-textt,
+  --color-listbox-button-text: var(
+    --color-navigation-link-text,
     var(--color-zinc-950)
   );
   --color-listbox-button-background: var(
@@ -14,7 +14,7 @@
 }
 
 .dark-section {
-  --color-lisbox-button-text: var(
+  --color-listbox-button-text: var(
     --color-navigation-link-text,
     var(--color-zinc-50)
   );

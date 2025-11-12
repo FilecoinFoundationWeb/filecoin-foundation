@@ -19,7 +19,7 @@ type Option = {
   label: string
 }
 
-type LisboxProps<T extends Option> = {
+type ListboxProps<T extends Option> = {
   Icon: IconType
   options: Array<T>
   selected: T
@@ -31,13 +31,13 @@ export function Listbox<T extends Option>({
   selected,
   setSelected,
   Icon: IconComponent,
-}: LisboxProps<T>) {
+}: ListboxProps<T>) {
   const backgroundVariant = useBackgroundVariant()
   const desktopBackgroundVariant = variantMapping[backgroundVariant]
 
   return (
     <HeadlessListbox value={selected} onChange={setSelected}>
-      <ListboxButton className="data-focus:brand-outline focus:brand-outline focus-visible:brand-outline relative block min-w-42 rounded-lg border border-(--color-listbox-border) bg-transparent p-3 text-left font-semibold text-(--color-lisbox-button-text) data-focus:bg-(--color-listbox-button-background)">
+      <ListboxButton className="data-focus:brand-outline focus:brand-outline focus-visible:brand-outline relative block min-w-42 rounded-lg border border-(--color-listbox-border) bg-transparent p-3 text-left font-semibold text-(--color-listbox-button-text) data-focus:bg-(--color-listbox-button-background)">
         <span className="flex items-center gap-2">
           <Icon component={IconComponent} size={20} />
           {selected.label}
@@ -61,7 +61,7 @@ export function Listbox<T extends Option>({
             value={option}
             className="group flex cursor-default items-center gap-2 rounded-md px-4 py-3 select-none data-focus:bg-(--color-listbox-option-background-hover)! data-selected:bg-(--color-listbox-option-background)"
           >
-            <div className="font-semibold text-(--color-lisbox-button-text)">
+            <div className="font-semibold text-(--color-listbox-button-text)">
               {option.label}
             </div>
           </ListboxOption>
