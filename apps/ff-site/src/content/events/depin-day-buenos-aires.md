@@ -99,6 +99,12 @@ speakers:
       image:
         src: /assets/images/1670490998296.webp
       linkedin: https://www.linkedin.com/in/tom-trowbridge-12623/
+    - name: Marco De Rossi
+      title: Head of AI
+      company: MetaMask
+      linkedin: https://www.linkedin.com/in/marcoderossi/
+      image:
+        src: /assets/images/marco-de-rossi-metamask-1-.webp
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
