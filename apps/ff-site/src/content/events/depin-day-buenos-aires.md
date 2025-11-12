@@ -140,6 +140,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/stefaan-vervaet/
       image:
         src: /assets/images/1545691189584.webp
+    - name: Jennifer Wang
+      title: Co-founder and COO
+      company: FilOz
+      linkedin: https://www.linkedin.com/in/jiayingw703/?originalSubdomain=ca
+      image:
+        src: /assets/images/1745403328875.webp
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
