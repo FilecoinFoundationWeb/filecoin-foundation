@@ -2,14 +2,14 @@
 
 import { createContext, type ReactNode, use, useState } from 'react'
 
-import type { Network } from './types'
+import type { ChainId } from './types'
 
 type NetworkContextValue = {
-  network: Network
-  setNetwork: (network: Network) => void
+  network: ChainId
+  setNetwork: (network: ChainId) => void
 }
 
-export const defaultNetwork: Network = 'calibration'
+export const defaultNetwork: ChainId = 314159
 
 const NetworkContext = createContext<NetworkContextValue>({
   network: defaultNetwork,
@@ -19,7 +19,7 @@ const NetworkContext = createContext<NetworkContextValue>({
 type NetworkProviderProps = Readonly<{ children: ReactNode }>
 
 export function NetworkProvider({ children }: NetworkProviderProps) {
-  const [network, setNetwork] = useState<Network>(defaultNetwork)
+  const [network, setNetwork] = useState<ChainId>(defaultNetwork)
 
   return (
     <NetworkContext value={{ network, setNetwork }}>{children}</NetworkContext>
@@ -27,11 +27,5 @@ export function NetworkProvider({ children }: NetworkProviderProps) {
 }
 
 export function useNetwork() {
-  const context = use(NetworkContext)
-
-  if (!context) {
-    throw new Error('useNetwork must be used within a NetworkProvider')
-  }
-
-  return context
+  return use(NetworkContext)
 }

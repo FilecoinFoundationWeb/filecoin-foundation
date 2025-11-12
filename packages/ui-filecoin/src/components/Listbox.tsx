@@ -15,7 +15,7 @@ import { variantMapping } from './Navigation/constants'
 import { backgroundVariants, useBackgroundVariant } from './Section/Section'
 
 type Option = {
-  id: string
+  id: string | number
   label: string
 }
 

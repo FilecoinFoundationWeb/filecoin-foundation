@@ -4,24 +4,14 @@ import { GlobeIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { Listbox } from '../Listbox'
 
+import { NETWORK_CONFIG } from './config'
 import { useNetwork } from './NetworkProvider'
-import type { Network } from './types'
+import type { ChainId } from './types'
 
-type NetworkOption = {
-  id: Network
-  label: string
-}
-
-const networkOptions = [
-  {
-    id: 'calibration',
-    label: 'Calibration',
-  },
-  {
-    id: 'mainnet',
-    label: 'Mainnet',
-  },
-] satisfies Array<NetworkOption>
+const networkOptions = Object.entries(NETWORK_CONFIG).map(([id, { name }]) => ({
+  id: Number(id) as ChainId,
+  label: name,
+}))
 
 export function NetworkSelector() {
   const { network, setNetwork } = useNetwork()
