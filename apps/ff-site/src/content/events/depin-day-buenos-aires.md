@@ -158,6 +158,12 @@ speakers:
       image:
         src: /assets/images/1605526794028.webp
       title: " "
+    - name: Molly Mackinlay
+      company: FilOz
+      title: CEO
+      linkedin: https://www.linkedin.com/in/mollymackinlay/
+      image:
+        src: /assets/images/1571900126220.webp
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
