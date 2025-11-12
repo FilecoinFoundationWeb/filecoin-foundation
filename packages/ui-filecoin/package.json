@@ -113,9 +113,9 @@
       "types": "./dist/components/Table/SoftwareVersion.d.ts",
       "default": "./dist/components/Table/SoftwareVersion.js"
     },
-    "./Table/StatusBadge": {
-      "types": "./dist/components/Table/StatusBadge.d.ts",
-      "default": "./dist/components/Table/StatusBadge.js"
+    "./Table/ActiveStatus": {
+      "types": "./dist/components/Table/ActiveStatus.d.ts",
+      "default": "./dist/components/Table/ActiveStatus.js"
     },
     "./Table/TanstackTable": {
       "types": "./dist/components/Table/TanstackTable.d.ts",

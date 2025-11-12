@@ -4,7 +4,7 @@ type StatusBadgeProps = {
   status: 'active' | 'inactive'
 }
 
-export function StatusBadge({ status }: StatusBadgeProps) {
+export function ActiveStatus({ status }: StatusBadgeProps) {
   const isActive = status === 'active'
 
   return (
