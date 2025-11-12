@@ -24,6 +24,5 @@
   "overrides": {
     "dompurify": "^3.3.0",
     "jsonpath-plus": "^10.3.0"
-  },
-  "version": "0.0.2"
+  }
 }
