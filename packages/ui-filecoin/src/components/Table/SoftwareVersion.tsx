@@ -6,7 +6,13 @@ type SoftwareVersionProps = {
 }
 
 export function SoftwareVersion({ info, githubUrl }: SoftwareVersionProps) {
-  const { version, network, commit, date } = parseVersionString(info)
+  const match = parseVersionString(info)
+
+  if (!match) {
+    return <p>The software version could not be parsed.</p>
+  }
+
+  const { version, network, commit, date } = match
 
   return (
     <div className="space-y-0.5 text-sm text-gray-600">
@@ -29,12 +35,7 @@ function parseVersionString(input: string) {
   const match = input.match(regex)
 
   if (!match) {
-    return {
-      version: undefined,
-      network: undefined,
-      commit: undefined,
-      date: undefined,
-    }
+    return
   }
 
   return {
