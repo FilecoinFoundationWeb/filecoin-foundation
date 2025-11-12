@@ -20,12 +20,17 @@ export function Navigation({ backgroundVariant }: NavigationProps) {
       <Container>
         <nav className="flex items-center justify-between py-8 lg:gap-24 xl:justify-start">
           <HomeLogoIconLink />
-          <MobileNavigation
-            items={mobileNavigationItems}
-            NavigationMainLinkComponent={NavigationMainLink}
-            HomeLogoIconLinkComponent={HomeLogoIconLink}
-          />
-          <DesktopNavigation />
+
+          <div className="block xl:hidden">
+            <MobileNavigation
+              items={mobileNavigationItems}
+              NavigationMainLinkComponent={NavigationMainLink}
+              HomeLogoIconLinkComponent={HomeLogoIconLink}
+            />
+          </div>
+          <div className="hidden xl:block xl:flex-1">
+            <DesktopNavigation />
+          </div>
         </nav>
       </Container>
     </Section>
