@@ -3,7 +3,9 @@
 import { createContext, type ReactNode, use } from 'react'
 
 import { useLocalStorage } from 'usehooks-ts'
+import { useChainId } from 'wagmi'
 
+import { defaultChainId, NETWORK_CONFIG } from './config'
 import type { ChainId } from './types'
 
 type NetworkContextValue = {
@@ -11,10 +13,8 @@ type NetworkContextValue = {
   setNetwork: (network: ChainId) => void
 }
 
-export const defaultNetwork: ChainId = 314159
-
 const NetworkContext = createContext<NetworkContextValue>({
-  network: defaultNetwork,
+  network: defaultChainId,
   setNetwork: () => {},
 })
 
@@ -23,8 +23,20 @@ type NetworkProviderProps = Readonly<{ children: ReactNode }>
 export function NetworkProvider({ children }: NetworkProviderProps) {
   const [network, setNetwork] = useLocalStorage<ChainId>(
     'network-id',
-    defaultNetwork,
+    defaultChainId,
   )
+
+  const chainId = useChainId()
+
+  if (chainId !== network) {
+    const chainIsSupported = Object.keys(NETWORK_CONFIG).includes(
+      chainId.toString(),
+    )
+
+    if (chainIsSupported) {
+      setNetwork(chainId as ChainId)
+    }
+  }
 
   return (
     <NetworkContext value={{ network, setNetwork }}>{children}</NetworkContext>

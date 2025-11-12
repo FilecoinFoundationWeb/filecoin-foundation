@@ -1,3 +1,7 @@
-import type { NETWORK_CONFIG } from '../config'
+export type ChainId = 314 | 314159
 
-export type ChainId = keyof typeof NETWORK_CONFIG
+export type NetworkConfig = {
+  name: string
+  rpc: string
+  explorer: string
+}

@@ -1,3 +1,5 @@
+import { type ChainId, type NetworkConfig } from '../types'
+
 export const NETWORK_CONFIG = {
   314: {
     name: 'Mainnet',
@@ -9,4 +11,6 @@ export const NETWORK_CONFIG = {
     rpc: 'https://api.calibration.node.glif.io/rpc/v1',
     explorer: 'https://calibration.filfox.info',
   },
-} as const
+} as const satisfies Record<ChainId, NetworkConfig>
+
+export const defaultChainId: ChainId = 314159
