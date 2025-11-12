@@ -19,7 +19,7 @@ export function EmptyStateCard({
 }: EmptyStateCardProps) {
   return (
     <StateCard variant="outlined">
-      <div className="flex flex-col items-center justify-center gap-8 px-6 py-1">
+      <div className="flex w-full flex-col items-center justify-center gap-8">
         <span className="bg-brand-50 border-brand-100 text-brand-500 grid size-15 place-items-center rounded-full border">
           <Icon component={icon} size={30} />
         </span>

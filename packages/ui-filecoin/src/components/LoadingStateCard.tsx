@@ -5,10 +5,12 @@ type LoadingStateCardProps = {
   message: string
 }
 
-export function LoadingStateCard({ message }: LoadingStateCardProps) {
+export function LoadingStateCard({
+  message = 'Loading...',
+}: LoadingStateCardProps) {
   return (
     <StateCard variant="solid">
-      <div className="flex min-h-60 items-center justify-center p-5">
+      <div className="flex min-h-60 w-full items-center justify-center">
         <Spinner message={message} />
       </div>
     </StateCard>
