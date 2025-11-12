@@ -117,6 +117,10 @@
       "types": "./dist/components/Table/ActiveStatus.d.ts",
       "default": "./dist/components/Table/ActiveStatus.js"
     },
+    "./Table/YesNoStatus": {
+      "types": "./dist/components/Table/YesNoStatus.d.ts",
+      "default": "./dist/components/Table/YesNoStatus.js"
+    },
     "./Table/TanstackTable": {
       "types": "./dist/components/Table/TanstackTable.d.ts",
       "default": "./dist/components/Table/TanstackTable.js"
