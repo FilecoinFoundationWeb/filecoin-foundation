@@ -6,6 +6,10 @@ import { BookIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+import {
+  InfoCard,
+  InfoCardLink,
+} from '@filecoin-foundation/ui-filecoin/InfoCard'
 import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoSection'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
@@ -14,6 +18,7 @@ import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlog
 import { PATHS } from '@/constants/paths'
 import { SEO } from '@/constants/siteMetadata'
 import { FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
@@ -42,6 +47,7 @@ import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPost } from '@/blog/types/blogPostType'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
+
 type BlogProps = {
   params: Promise<LocaleParams>
 }
@@ -63,6 +69,16 @@ export default async function Home({ params }: BlogProps) {
         <graphicsData.homepageGradient.data className="absolute -bottom-[10vw] left-1/2 w-[400vw] -translate-x-1/2 transform overflow-visible sm:bottom-0 md:w-[250vw] lg:w-[200vw] 2xl:-bottom-[1vw]" />
         <HeroSection />
       </GradientContainer>
+
+      <InfoCard label="Contract Name" text="1.7K" icon={BookIcon} />
+      <InfoCardLink
+        label="Contract Name"
+        href="https://example.com"
+        ariaLabel="View Contract Name on explorer"
+        baseDomain={BASE_DOMAIN}
+      >
+        test
+      </InfoCardLink>
 
       <PageSection backgroundVariant="dark">
         <LogoSection
