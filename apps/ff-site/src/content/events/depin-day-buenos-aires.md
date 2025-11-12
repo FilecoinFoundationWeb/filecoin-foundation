@@ -91,6 +91,13 @@ schedule:
           start-time: 14:01:00.000Z
           end-time: 14:02:00.000Z
           location: ArtLab
+speakers:
+  speakers_list:
+    - name: Test
+      title: Test
+      company: Test
+      image:
+        src: /assets/images/marta-belcher-2025-headshot-color.webp
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
