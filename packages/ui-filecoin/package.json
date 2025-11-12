@@ -181,6 +181,14 @@
       "types": "./dist/components/PageSection.d.ts",
       "default": "./dist/components/PageSection.js"
     },
+    "./RefreshButton": {
+      "types": "./dist/components/RefreshButton.d.ts",
+      "default": "./dist/components/RefreshButton.js"
+    },
+    "./RefreshOverlay": {
+      "types": "./dist/components/RefreshOverlay.d.ts",
+      "default": "./dist/components/RefreshOverlay.js"
+    },
     "./Section/Section": {
       "types": "./dist/components/Section/Section.d.ts",
       "default": "./dist/components/Section/Section.js"
