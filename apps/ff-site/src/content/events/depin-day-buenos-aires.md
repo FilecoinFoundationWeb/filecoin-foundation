@@ -105,6 +105,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/marcoderossi/
       image:
         src: /assets/images/marco-de-rossi-metamask-1-.webp
+    - name: Eunice Giarta
+      title: Co-Founder and GM
+      company: Monad Foundation
+      linkedin: https://www.linkedin.com/in/eunicegiarta/
+      image:
+        src: /assets/images/1648161259450.webp
 seo:
   title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
