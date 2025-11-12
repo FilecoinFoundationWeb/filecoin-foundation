@@ -1,11 +1,14 @@
+import type { ComponentProps } from 'react'
+
 import { ArrowClockwiseIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 
-type RefreshButtonProps = {
-  onClick: () => void
-  disabled: boolean
+type RefreshButtonProps = Pick<
+  ComponentProps<typeof Button>,
+  'onClick' | 'disabled'
+> & {
   baseDomain: string
 }
 
