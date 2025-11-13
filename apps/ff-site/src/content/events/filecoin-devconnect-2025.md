@@ -81,8 +81,35 @@ schedule:
           location: Parque de Innovación
           url: https://luma.com/bnbuenoaires
     - date: 2025-11-19
+      events:
+        - title: Timothy Fong @ Devconnect
+          description: "From Testnets to Mainstream: Building Scalable App Infrastructure"
+          start-time: 16:10:00.000Z
+          end-time: 16:50:00.000Z
+          location: HIT Polo
+          url: https://luma.com/adoptcon25
     - date: 2025-11-20
+      events:
+        - title: Clara Tsao @ DIA Infra Gardens V8 Devconnect Buenos Aires
+          description: RWA Tokenization in the Real World
+          start-time: 14:00:00.000Z
+          end-time: 19:00:00.000Z
+          location: Casa Cavia
+          url: https://luma.com/InfraGardens-BuenosAires
+        - title: Sarah Thiam @ Pragma Buenos Aires
+          description: Filecoin Onchain Cloud workshop
+          location: Mansión FUNTIME
+          url: https://luma.com/pragma-buenosaires
+          start-time: 09:00:00.000Z
+          end-time: 17:45:00.000Z
     - date: 2025-11-21
+      events:
+        - title: Molly Mackinlay @ Trustless Agent Day
+          description: "DePIN for AI: How Agents are Reshaping the Demand for Services"
+          start-time: 10:00:00.000Z
+          end-time: 16:00:00.000Z
+          location: La Rural
+          url: https://devconnect.org/calendar?event=trustlessagentsday
 seo:
   description: Join Filecoin at DevConnect in Argentina! Explore ecosystem
     updates, connect with the community, and discover how you can help build the
