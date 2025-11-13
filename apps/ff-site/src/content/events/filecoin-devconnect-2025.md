@@ -67,6 +67,13 @@ schedule:
           start-time: 09:00:00.000Z
           end-time: 19:00:00.000Z
     - date: 2025-11-17
+      events:
+        - title: Molly Mackinlay @ Agents Day
+          description: "The DeAI Stack: Building Trust & the Foundational Layers for Agents"
+          start-time: 13:40:00.000Z
+          end-time: 14:20:00.000Z
+          location: Innovation Lab
+          url: https://luma.com/agentsday-argentina
     - date: 2025-11-19
     - date: 2025-11-20
     - date: 2025-11-21
