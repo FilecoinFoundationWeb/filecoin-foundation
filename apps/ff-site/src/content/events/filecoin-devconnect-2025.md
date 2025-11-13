@@ -74,6 +74,12 @@ schedule:
           end-time: 14:20:00.000Z
           location: Innovation Lab
           url: https://luma.com/agentsday-argentina
+        - title: Jennifer Wang @ Builder Nights BA
+          description: "Scaling Trust: The Future of Custody, Infra, and Cross-Chain Infra"
+          start-time: 19:00:00.000Z
+          end-time: 19:30:00.000Z
+          location: Parque de Innovación
+          url: https://luma.com/bnbuenoaires
     - date: 2025-11-19
     - date: 2025-11-20
     - date: 2025-11-21
