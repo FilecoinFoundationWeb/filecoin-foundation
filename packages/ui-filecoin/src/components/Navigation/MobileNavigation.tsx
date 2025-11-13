@@ -39,7 +39,7 @@ export function MobileNavigation({
   const mobileBackgroundVariant = variantMapping[backgroundVariant]
 
   return (
-    <div className="xl:hidden">
+    <div>
       <IconButton
         icon={ListIcon}
         label="Open mobile navigation"
