@@ -60,7 +60,12 @@ schedule:
           start-time: 11:20:00.000Z
           end-time: 11:40:00.000Z
     - date: 2025-11-16
-      events: []
+      events:
+        - title: "Kurt Opsahl @ Ethereum Cypherpunk Congress #2"
+          location: DESEO Club
+          url: https://luma.com/u2sw5kpv
+          start-time: 09:00:00.000Z
+          end-time: 19:00:00.000Z
     - date: 2025-11-17
     - date: 2025-11-19
     - date: 2025-11-20
