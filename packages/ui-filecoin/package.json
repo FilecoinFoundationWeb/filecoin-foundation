@@ -209,6 +209,10 @@
       "types": "./dist/components/Network/NetworkSelector.d.ts",
       "default": "./dist/components/Network/NetworkSelector.js"
     },
+    "./Network/config": {
+      "types": "./dist/components/Network/config/index.d.ts",
+      "default": "./dist/components/Network/config/index.js"
+    },
     "./Network/types": {
       "types": "./dist/components/Network/types/index.d.ts",
       "default": "./dist/components/Network/types/index.js"
@@ -301,7 +305,8 @@
     "@tanstack/react-table": "^8.21.3",
     "clsx": "^2.1.1",
     "usehooks-ts": "^3.1.1",
-    "viem": "^2.38.6"
+    "viem": "^2.38.6",
+    "wagmi": "^2.19.3"
   },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
@@ -320,8 +325,7 @@
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.0",
     "slugify": "^1.6.6",
-    "tailwindcss": "^4.1.14",
-    "wagmi": "^2.19.3"
+    "tailwindcss": "^4.1.14"
   },
   "peerDependenciesMeta": {
     "react": {
