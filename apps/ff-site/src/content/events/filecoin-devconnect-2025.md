@@ -82,7 +82,7 @@ schedule:
           url: https://luma.com/bnbuenoaires
     - date: 2025-11-19
       events:
-        - title: Timothy Fong @ Devconnect
+        - title: Timothy Fong @ AdoptionCon
           description: "From Testnets to Mainstream: Building Scalable App Infrastructure"
           start-time: 16:10:00.000Z
           end-time: 16:50:00.000Z
@@ -90,7 +90,7 @@ schedule:
           url: https://luma.com/adoptcon25
     - date: 2025-11-20
       events:
-        - title: Clara Tsao @ DIA Infra Gardens V8 Devconnect Buenos Aires
+        - title: Clara Tsao @ DIA Infra Gardens V8
           description: RWA Tokenization in the Real World
           start-time: 14:00:00.000Z
           end-time: 19:00:00.000Z
