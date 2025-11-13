@@ -22,14 +22,14 @@ image:
   src: /assets/images/depin-day.webp
 schedule:
   kicker: Join Us
-  title: "DePIN Day Schedule "
+  title: "DePIN Day Schedule"
   days:
     - date: 2025-11-18
       events:
         - title: Doors Open
           start-time: 10:00:00.000Z
           location: ArtLab
-        - title: "DePIN Day Content "
+        - title: "DePIN Day Content"
           start-time: 11:00:00.000Z
           end-time: 13:00:00.000Z
           location: ArtLab
@@ -52,13 +52,13 @@ schedule:
         - title: The Onchain Cloud Vision
           speakers:
             - name: Molly Mackinlay
-              company: FilOZ
+              company: FilOz
             - name: Armita Jalooli
               company: Messari
           start-time: 13:04:00.000Z
           end-time: 13:15:00.000Z
           location: ArtLab
-        - title: "Filecoin Onchain Cloud Stack Architecture "
+        - title: "Filecoin Onchain Cloud Stack Architecture"
           speakers:
             - name: Jennifer Wang
               company: FilOz
@@ -110,7 +110,7 @@ speakers:
       title: President & Chair
       linkedin: https://www.linkedin.com/in/martabelcher/
       image:
-        src: /assets/images/marta-belcher-2025-headshot-color.webp
+        src: /assets/images/headshots/Marta_Belcher.webp
     - name: Marco De Rossi
       title: Head of AI
       company: MetaMask
@@ -140,7 +140,7 @@ speakers:
       company: FIL-B
       linkedin: https://www.linkedin.com/in/sarahthiam/
       image:
-        src: /assets/images/1728467665082.webp
+        src: /assets/images/headshots/Sarah_Thiam.webp
     - name: Alexander Sly
       title: Head of Ecosystem
       company: Storacha
@@ -151,7 +151,7 @@ speakers:
       company: Akave
       linkedin: https://www.linkedin.com/in/stefaan-vervaet/
       image:
-        src: /assets/images/1545691189584.webp
+        src: /assets/images/stefaan-vervaet-headshot.webp
     - name: Jennifer Wang
       title: Co-founder and COO
       company: FilOz
@@ -163,13 +163,13 @@ speakers:
       linkedin: https://www.linkedin.com/in/nicolagreco/
       image:
         src: /assets/images/1605526794028.webp
-      title: " "
+      title: "-"
     - name: Molly Mackinlay
       company: FilOz
       title: CEO
       linkedin: https://www.linkedin.com/in/mollymackinlay/
       image:
-        src: /assets/images/1571900126220.webp
+        src: /assets/images/headshots/Molly_Mackinlay.webp
     - name: James Bluett
       company: FilOz
       title: Technical Community Engineer
@@ -185,11 +185,10 @@ speakers:
     - name: Tim Fong
       company: FilOz
       linkedin: https://www.linkedin.com/in/timfong888/
-      title: Product Manager- Protocol Lead at Filecoin
+      title: Product Manager, Protocol Lead at Filecoin
       image:
         src: /assets/images/1553381322360.webp
 seo:
-  title: DePIN Day Buenos Aires
   description: Join DePIN Day to explore the future of decentralized
     infrastructure. Connect with top builders, investors, and protocol teams,
     and hear major news from the Filecoin ecosystem on what’s next for DePIN.
