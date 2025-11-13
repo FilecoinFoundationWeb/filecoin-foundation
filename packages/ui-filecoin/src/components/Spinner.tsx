@@ -10,11 +10,11 @@ type SpinnerProps = {
   | { message?: never; ariaLabel: string }
 )
 
-export function Spinner({ message, ariaLabel, size = 20 }: SpinnerProps) {
+export function Spinner({ message, ariaLabel, size = 52 }: SpinnerProps) {
   const accessibleLabel = ariaLabel || message
 
   return (
-    <div className="flex flex-col items-center gap-2" role="status">
+    <div className="flex flex-col items-center gap-8" role="status">
       <span
         className="text-brand-700 shrink-0 animate-spin"
         aria-label={accessibleLabel}

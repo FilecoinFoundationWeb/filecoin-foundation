@@ -33,13 +33,13 @@ export function NavigationMenuPanel({
       <div
         className={clsx(
           roundedStyle,
-          'border border-[var(--color-navigation-menu-panel-border)] bg-[var(--color-navigation-menu-panel-background)] py-6',
+          'border border-(--color-navigation-menu-panel-border) bg-(--color-navigation-menu-panel-background) py-6',
         )}
       >
-        <div className="flex divide-x divide-[var(--color-border-base)]">
+        <div className="flex divide-x divide-(--color-border-base)">
           {items.map((item) => (
             <div key={item.title} className="px-4">
-              <p className="mb-2 px-4 text-sm text-[var(--color-paragraph-text)]">
+              <p className="mb-2 px-4 text-sm text-(--color-paragraph-text)">
                 {item.title}
               </p>
               <ul

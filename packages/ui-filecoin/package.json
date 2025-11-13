@@ -1,6 +1,6 @@
 {
   "name": "@filecoin-foundation/ui-filecoin",
-  "version": "0.1.1",
+  "version": "0.1.7",
   "description": "Filecoin branded UI components for the Filecoin ecosystem created by Filecoin Foundation",
   "private": false,
   "type": "module",
@@ -37,10 +37,6 @@
       "types": "./dist/components/ButtonRow.d.ts",
       "default": "./dist/components/ButtonRow.js"
     },
-    "./CTALink": {
-      "types": "./dist/components/CTALink.d.ts",
-      "default": "./dist/components/CTALink.js"
-    },
     "./Card": {
       "types": "./dist/components/Card/Card.d.ts",
       "default": "./dist/components/Card/Card.js"
@@ -56,6 +52,10 @@
     "./Container": {
       "types": "./dist/components/Container.d.ts",
       "default": "./dist/components/Container.js"
+    },
+    "./CTALink": {
+      "types": "./dist/components/CTALink.d.ts",
+      "default": "./dist/components/CTALink.js"
     },
     "./EmptyStateCard": {
       "types": "./dist/components/EmptyStateCard.d.ts",
@@ -93,29 +93,45 @@
       "types": "./dist/components/LinkCard.d.ts",
       "default": "./dist/components/LinkCard.js"
     },
-    "./PageHeader": {
-      "types": "./dist/components/PageHeader.d.ts",
-      "default": "./dist/components/PageHeader.js"
+    "./LoadingStateCard": {
+      "types": "./dist/components/LoadingStateCard.d.ts",
+      "default": "./dist/components/LoadingStateCard.js"
     },
-    "./PageSection": {
-      "types": "./dist/components/PageSection.d.ts",
-      "default": "./dist/components/PageSection.js"
+    "./Table": {
+      "types": "./dist/components/Table.d.ts",
+      "default": "./dist/components/Table.js"
     },
-    "./SimpleCard": {
-      "types": "./dist/components/SimpleCard.d.ts",
-      "default": "./dist/components/SimpleCard.js"
+    "./Table/CompactAddress": {
+      "types": "./dist/components/Table/CompactAddress.d.ts",
+      "default": "./dist/components/Table/CompactAddress.js"
     },
-    "./SlideOver": {
-      "types": "./dist/components/SlideOver.d.ts",
-      "default": "./dist/components/SlideOver.js"
+    "./Table/ID": {
+      "types": "./dist/components/Table/ID.d.ts",
+      "default": "./dist/components/Table/ID.js"
     },
-    "./Spinner": {
-      "types": "./dist/components/Spinner.d.ts",
-      "default": "./dist/components/Spinner.js"
+    "./Table/PeerID": {
+      "types": "./dist/components/Table/PeerID.d.ts",
+      "default": "./dist/components/Table/PeerID.js"
     },
-    "./SectionContent": {
-      "types": "./dist/components/SectionContent.d.ts",
-      "default": "./dist/components/SectionContent.js"
+    "./Table/SoftwareVersion": {
+      "types": "./dist/components/Table/SoftwareVersion.d.ts",
+      "default": "./dist/components/Table/SoftwareVersion.js"
+    },
+    "./Table/ActiveStatus": {
+      "types": "./dist/components/Table/ActiveStatus.d.ts",
+      "default": "./dist/components/Table/ActiveStatus.js"
+    },
+    "./Table/YesNoStatus": {
+      "types": "./dist/components/Table/YesNoStatus.d.ts",
+      "default": "./dist/components/Table/YesNoStatus.js"
+    },
+    "./Table/TanstackTable": {
+      "types": "./dist/components/Table/TanstackTable.d.ts",
+      "default": "./dist/components/Table/TanstackTable.js"
+    },
+    "./Listbox": {
+      "types": "./dist/components/Listbox.d.ts",
+      "default": "./dist/components/Listbox.js"
     },
     "./LogoSection/LogoSection": {
       "types": "./dist/components/LogoSection/LogoSection.d.ts",
@@ -136,6 +152,10 @@
     "./Markdown/MarkdownPage": {
       "types": "./dist/components/Markdown/MarkdownPage.d.ts",
       "default": "./dist/components/Markdown/MarkdownPage.js"
+    },
+    "./Navigation/MobileNavigation": {
+      "types": "./dist/components/Navigation/MobileNavigation.d.ts",
+      "default": "./dist/components/Navigation/MobileNavigation.js"
     },
     "./Navigation/NavigationMainLink": {
       "types": "./dist/components/Navigation/NavigationMainLink.d.ts",
@@ -161,9 +181,61 @@
       "types": "./dist/components/Navigation/types/index.d.ts",
       "default": "./dist/components/Navigation/types/index.js"
     },
+    "./Navigation/hooks/*": {
+      "types": "./dist/components/Navigation/hooks/*.d.ts",
+      "default": "./dist/components/Navigation/hooks/*.js"
+    },
+    "./PageHeader": {
+      "types": "./dist/components/PageHeader.d.ts",
+      "default": "./dist/components/PageHeader.js"
+    },
+    "./PageSection": {
+      "types": "./dist/components/PageSection.d.ts",
+      "default": "./dist/components/PageSection.js"
+    },
+    "./RefreshButton": {
+      "types": "./dist/components/RefreshButton.d.ts",
+      "default": "./dist/components/RefreshButton.js"
+    },
+    "./RefreshOverlay": {
+      "types": "./dist/components/RefreshOverlay.d.ts",
+      "default": "./dist/components/RefreshOverlay.js"
+    },
+    "./Network/NetworkProvider": {
+      "types": "./dist/components/Network/NetworkProvider.d.ts",
+      "default": "./dist/components/Network/NetworkProvider.js"
+    },
+    "./Network/NetworkSelector": {
+      "types": "./dist/components/Network/NetworkSelector.d.ts",
+      "default": "./dist/components/Network/NetworkSelector.js"
+    },
+    "./Network/types": {
+      "types": "./dist/components/Network/types/index.d.ts",
+      "default": "./dist/components/Network/types/index.js"
+    },
     "./Section/Section": {
       "types": "./dist/components/Section/Section.d.ts",
       "default": "./dist/components/Section/Section.js"
+    },
+    "./SectionContent": {
+      "types": "./dist/components/SectionContent.d.ts",
+      "default": "./dist/components/SectionContent.js"
+    },
+    "./SimpleCard": {
+      "types": "./dist/components/SimpleCard.d.ts",
+      "default": "./dist/components/SimpleCard.js"
+    },
+    "./SlideOver": {
+      "types": "./dist/components/SlideOver.d.ts",
+      "default": "./dist/components/SlideOver.js"
+    },
+    "./Spinner": {
+      "types": "./dist/components/Spinner.d.ts",
+      "default": "./dist/components/Spinner.js"
+    },
+    "./StateCard": {
+      "types": "./dist/components/StateCard.d.ts",
+      "default": "./dist/components/StateCard.js"
     },
     "./TextLink/ExternalTextLink": {
       "types": "./dist/components/TextLink/ExternalTextLink.d.ts",
@@ -223,6 +295,14 @@
   },
   "author": "Filecoin Foundation",
   "license": "MIT",
+  "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@phosphor-icons/react": "^2.1.10",
+    "@tanstack/react-table": "^8.21.3",
+    "clsx": "^2.1.1",
+    "usehooks-ts": "^3.1.1",
+    "viem": "^2.38.6"
+  },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
@@ -230,11 +310,8 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@headlessui/react": "^2.2.9",
-    "@phosphor-icons/react": "^2.1.10",
     "@tailwindcss/typography": "^0.5.19",
     "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
     "next": "^15.5.6",
     "react": "^19.2.0",
@@ -243,7 +320,8 @@
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.0",
     "slugify": "^1.6.6",
-    "tailwindcss": "^4.1.14"
+    "tailwindcss": "^4.1.14",
+    "wagmi": "^2.19.3"
   },
   "peerDependenciesMeta": {
     "react": {

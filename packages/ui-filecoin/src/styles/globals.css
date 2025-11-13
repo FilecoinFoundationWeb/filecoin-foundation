@@ -4,9 +4,11 @@
 @import './button.css';
 @import './card-image.css';
 @import './icon-button.css';
+@import './listbox.css';
 @import './logo-section.css';
 @import './navigation.css';
 @import './slide-over.css';
+@import './table.css';
 @import './text-link.css';
 
 @plugin '@tailwindcss/typography';

@@ -25,11 +25,11 @@ program:
         community members are coming together to solve hard problems and ship
         solutions that will define Filecoin’s future.
       external-link: https://www.fildev.io/FDS-7
-    - title: DePIN Day
+    - title: DePIN Day Buenos Aires, Cohosted by Fluence and Filecoin Foundation
       start-date: 2025-11-18
       end-date: 2025-11-18
       location: ArtLab
-      external-link: https://luma.com/depin-day-ba
+      external-link: https://fil.org/events/depin-day-buenos-aires
       description: ​​We’re bringing together the builders, thinkers and investors
         driving the future of decentralized infrastructure.  ​​Expect a curated
         lineup of visionary founders, protocol teams and ecosystem leaders

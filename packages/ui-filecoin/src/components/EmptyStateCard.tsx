@@ -1,5 +1,6 @@
 import { Heading, type HeadingProps } from './Heading'
 import { Icon, type IconProps } from './Icon'
+import { StateCard } from './StateCard'
 
 export type EmptyStateCardProps = {
   icon: IconProps['component']
@@ -17,19 +18,21 @@ export function EmptyStateCard({
   children,
 }: EmptyStateCardProps) {
   return (
-    <div className="flex flex-col items-center gap-8 rounded-xl border border-dashed border-zinc-400 px-6 py-15">
-      <span className="bg-brand-50 border-brand-100 text-brand-500 grid size-15 place-items-center rounded-full border">
-        <Icon component={icon} size={30} />
-      </span>
+    <StateCard variant="outlined">
+      <div className="flex w-full flex-col items-center justify-center gap-8">
+        <span className="bg-brand-50 border-brand-100 text-brand-500 grid size-15 place-items-center rounded-full border">
+          <Icon component={icon} size={30} />
+        </span>
 
-      <div className="space-y-4 text-center">
-        <Heading tag={titleTag} variant="card-heading">
-          {title}
-        </Heading>
-        <p className="text-(--color-paragraph-text)">{description}</p>
+        <div className="space-y-4 text-center">
+          <Heading tag={titleTag} variant="card-heading">
+            {title}
+          </Heading>
+          <p className="text-(--color-paragraph-text)">{description}</p>
+        </div>
+
+        {children}
       </div>
-
-      {children}
-    </div>
+    </StateCard>
   )
 }
