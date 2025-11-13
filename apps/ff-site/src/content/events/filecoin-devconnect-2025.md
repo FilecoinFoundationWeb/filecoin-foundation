@@ -47,6 +47,24 @@ program:
         your web3 journey and take it to new heights. Join us for hands-on
         workshops, engaging activities, and meaningful connections that spark
         collaboration and drive innovation.
+schedule:
+  kicker: Don't miss out
+  title: Speaking Engagements
+  days:
+    - date: 2025-11-15
+      events:
+        - title: Clara Tsao @ sub0 symbiosis — Polkadot flagship conference
+          description: "Filecoin Onchain Cloud: Data Sovereignty for Web3 Builders"
+          url: https://luma.com/Sub0Symbiosis
+          location: Bubble Studios
+          start-time: 11:20:00.000Z
+          end-time: 11:40:00.000Z
+    - date: 2025-11-16
+      events: []
+    - date: 2025-11-17
+    - date: 2025-11-19
+    - date: 2025-11-20
+    - date: 2025-11-21
 seo:
   description: Join Filecoin at DevConnect in Argentina! Explore ecosystem
     updates, connect with the community, and discover how you can help build the
