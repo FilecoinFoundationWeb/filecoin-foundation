@@ -1,7 +1,3 @@
-export type ChainId = 314 | 314159
+import type { supportedChains } from '../config'
 
-export type NetworkConfig = {
-  name: string
-  rpc: string
-  explorer: string
-}
+export type ChainId = (typeof supportedChains)[number]['id']
