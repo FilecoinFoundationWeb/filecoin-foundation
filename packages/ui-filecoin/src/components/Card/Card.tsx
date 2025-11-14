@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react'
+
 import { clsx } from 'clsx'
 
 import type { StaticImageProps } from '../../types/imageType'
@@ -9,7 +11,7 @@ import { CardImage } from './CardImage'
 type BaseCardProps = {
   as: 'li' | 'article' | 'div'
   title: string
-  description: string
+  description: ReactNode
   isCentered?: boolean
 }
 
@@ -58,9 +60,7 @@ export function Card({
           {title}
         </Heading>
 
-        <p className="text-xl/7 text-[var(--color-paragraph-text)]">
-          {description}
-        </p>
+        <p className="text-xl/7 text-(--color-paragraph-text)">{description}</p>
       </div>
     </Tag>
   )
