@@ -105,7 +105,7 @@ speakers:
       image:
         src: /assets/images/armita-jalooli-messari.webp
     - name: Eunice Giarta
-      title: Co-Founder and GM
+      title: Co-Founder & GM
       company: Monad Foundation
       linkedin: https://www.linkedin.com/in/eunicegiarta/
       image:
@@ -123,7 +123,7 @@ speakers:
         src: /assets/images/james-bluett-filoz.webp
       linkedin: https://www.linkedin.com/in/james-bluett-31a75a235/
     - name: Jennifer Wang
-      title: Co-founder and COO
+      title: Co-Founder & COO
       company: FilOz
       linkedin: https://www.linkedin.com/in/jiayingw703/?originalSubdomain=ca
       image:
@@ -146,11 +146,11 @@ speakers:
       image:
         src: /assets/images/marco-de-rossi-metamask.webp
     - name: Marta Belcher
-      company: FF
+      company: Filecoin Foundation
       title: President & Chair
       linkedin: https://www.linkedin.com/in/martabelcher/
       image:
-        src: /assets/images/marta-belcher-filecoin-foundation.webp
+        src: /assets/headshots/Marta_Belcher.webp
     - name: Miroslav Bajtoš
       company: Space Meridian
       title: Founder & CTO
@@ -162,7 +162,7 @@ speakers:
       title: CEO
       linkedin: https://www.linkedin.com/in/mollymackinlay/
       image:
-        src: /assets/images/molly-mackinlay-filoz.webp
+        src: /assets/images/molly-mackinlay-headshot.webp
     - name: Nicola Greco
       company: FilOz
       linkedin: https://www.linkedin.com/in/nicolagreco/
