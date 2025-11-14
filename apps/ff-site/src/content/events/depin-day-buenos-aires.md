@@ -62,7 +62,7 @@ schedule:
           speakers:
             - name: Jennifer Wang
               company: FilOz
-            - name: Miro Bajitoš
+            - name: Miroslav Bajtoš
               company: Space Meridian
             - name: James Bluett
               company: FilOz
@@ -93,131 +93,130 @@ schedule:
           location: ArtLab
 speakers:
   speakers_list:
-    - name: Tom Trowbridge
-      title: Co-Founder
-      company: Fluence Labs
+    - name: Alexander Sly
+      title: Head of Ecosystem
+      company: Storacha
       image:
-        src: /assets/images/tom-trowbridge-fluence.webp
-      linkedin: https://www.linkedin.com/in/tom-trowbridge-12623/
-    - name: Juan Benet
-      company: Protocol Labs
-      title: Founder & CEO
-      linkedin: https://www.linkedin.com/in/jbenetcs/
-      image:
-        src: /assets/images/juan-benet-protocol-labs.webp
-    - name: Marta Belcher
-      company: FF
-      title: President & Chair
-      linkedin: https://www.linkedin.com/in/martabelcher/
-      image:
-        src: /assets/images/marta-belcher-filecoin-foundation.webp
-    - name: Marco De Rossi
-      title: Head of AI
-      company: MetaMask
-      linkedin: https://www.linkedin.com/in/marcoderossi/
-      image:
-        src: /assets/images/marco-de-rossi-metamask.webp
-    - name: Eunice Giarta
-      title: Co-Founder and GM
-      company: Monad Foundation
-      linkedin: https://www.linkedin.com/in/eunicegiarta/
-      image:
-        src: /assets/images/eunice-giarta-monad-foundation.webp
-    - name: Simon Schmid
-      title: Developer Relations Lead
-      company: ENS Labs
-      linkedin: https://www.linkedin.com/in/schmidsi/
-      image:
-        src: /assets/images/simon-schmid-ens-labs.webp
+        src: /assets/images/alexander-sly-storacha.webp
     - name: Armita Jalooli
       title: Research Manager
       company: Messari
       linkedin: https://www.linkedin.com/in/armitajalooli/?originalSubdomain=ca
       image:
         src: /assets/images/armita-jalooli-messari.webp
-    - name: Sarah Thiam
-      title: Founder & CEO
-      company: FIL-B
-      linkedin: https://www.linkedin.com/in/sarahthiam/
+    - name: Eunice Giarta
+      title: Co-Founder and GM
+      company: Monad Foundation
+      linkedin: https://www.linkedin.com/in/eunicegiarta/
       image:
-        src: /assets/images/sarah-thiam-fil-b.webp
-    - name: Alexander Sly
-      title: Head of Ecosystem
-      company: Storacha
-      image:
-        src: /assets/images/alexander-sly-storacha.webp
-    - name: Stefaan Vervaet
-      title: CEO
-      company: Akave
-      linkedin: https://www.linkedin.com/in/stefaan-vervaet/
-      image:
-        src: /assets/images/stefaan-vervaet-akave.webp
-    - name: Jennifer Wang
-      title: Co-founder and COO
-      company: FilOz
-      linkedin: https://www.linkedin.com/in/jiayingw703/?originalSubdomain=ca
-      image:
-        src: /assets/images/jennifer-wang-filoz.webp
-    - name: Nicola Greco
-      company: FilOz
-      linkedin: https://www.linkedin.com/in/nicolagreco/
-      image:
-        src: /assets/images/nicola-g-filoz.webp
-      title: Research Scientist
-    - name: Molly Mackinlay
-      company: FilOz
-      title: CEO
-      linkedin: https://www.linkedin.com/in/mollymackinlay/
-      image:
-        src: /assets/images/molly-mackinlay-filoz.webp
+        src: /assets/images/eunice-giarta-monad-foundation.webp
+    - image:
+        src: /assets/images/guil-machado-axlabs.webp
+      name: Guil Machado
+      linkedin: https://www.linkedin.com/in/guisperbmachado/
+      title: Developer
+      company: AxLabs
     - name: James Bluett
       company: FilOz
       title: Technical Community Engineer
       image:
         src: /assets/images/james-bluett-filoz.webp
       linkedin: https://www.linkedin.com/in/james-bluett-31a75a235/
-    - name: Rod Vagg
-      title: Software Engineer
+    - name: Jennifer Wang
+      title: Co-founder and COO
       company: FilOz
-      linkedin: https://www.linkedin.com/in/rvagg/
+      linkedin: https://www.linkedin.com/in/jiayingw703/?originalSubdomain=ca
       image:
-        src: /assets/images/rod-vagg-filoz.webp
-    - name: Tim Fong
-      company: FilOz
-      linkedin: https://www.linkedin.com/in/timfong888/
-      title: Product Manager, Protocol Lead at Filecoin
+        src: /assets/images/jennifer-wang-filoz.webp
+    - name: Juan Benet
+      company: Protocol Labs
+      title: Founder & CEO
+      linkedin: https://www.linkedin.com/in/jbenetcs/
       image:
-        src: /assets/images/tim-fong-filoz.webp
+        src: /assets/images/juan-benet-protocol-labs.webp
+    - name: Kartikay Tiwari
+      image:
+        src: /assets/images/kartikay-tiwari-filosign.webp
+      company: Filosign
+      title: "-"
+    - name: Marco De Rossi
+      title: Head of AI
+      company: MetaMask
+      linkedin: https://www.linkedin.com/in/marcoderossi/
+      image:
+        src: /assets/images/marco-de-rossi-metamask.webp
+    - name: Marta Belcher
+      company: FF
+      title: President & Chair
+      linkedin: https://www.linkedin.com/in/martabelcher/
+      image:
+        src: /assets/images/marta-belcher-filecoin-foundation.webp
     - name: Miroslav Bajtoš
       company: Space Meridian
       title: Founder & CTO
       linkedin: https://www.linkedin.com/in/bajtos/?originalSubdomain=cz
       image:
         src: /assets/images/miroslav-bajtos-space-meridian.webp
-    - name: Kartikay Tiwari
+    - name: Molly Mackinlay
+      company: FilOz
+      title: CEO
+      linkedin: https://www.linkedin.com/in/mollymackinlay/
       image:
-        src: /assets/images/kartikay-tiwari-filosign.webp
-      company: Filosign
-      linkedin: "-"
-      title: "-"
-    - image:
-        src: /assets/images/guil-machado-axlabs.webp
-      name: Guil Machado
-      linkedin: https://www.linkedin.com/in/guisperbmachado/
-      title: "-"
-      company: "-"
-    - image:
-        src: /assets/images/shubham-rasal-groundline.webp
-      name: Shubham Rasal
-      linkedin: https://www.linkedin.com/in/shubhamrasal/?originalSubdomain=in
-      company: Groundline
+        src: /assets/images/molly-mackinlay-filoz.webp
+    - name: Nicola Greco
+      company: FilOz
+      linkedin: https://www.linkedin.com/in/nicolagreco/
+      image:
+        src: /assets/images/nicola-g-filoz.webp
+      title: Research Scientist
+    - name: Rod Vagg
       title: Software Engineer
+      company: FilOz
+      linkedin: https://www.linkedin.com/in/rvagg/
+      image:
+        src: /assets/images/rod-vagg-filoz.webp
+    - name: Sarah Thiam
+      title: Founder & CEO
+      company: FIL-B
+      linkedin: https://www.linkedin.com/in/sarahthiam/
+      image:
+        src: /assets/images/sarah-thiam-fil-b.webp
     - name: Shashank Trivedi
       image:
         src: /assets/images/shashank-trivedi-eastore.webp
       company: Eastore
       title: Ideator
       linkedin: https://www.linkedin.com/in/shashanktrivedi7/
+    - image:
+        src: /assets/images/shubham-rasal-groundline.webp
+      name: Shubham Rasal
+      linkedin: https://www.linkedin.com/in/shubhamrasal/?originalSubdomain=in
+      company: Groundline
+      title: Software Engineer
+    - name: Simon Schmid
+      title: Developer Relations Lead
+      company: ENS Labs
+      linkedin: https://www.linkedin.com/in/schmidsi/
+      image:
+        src: /assets/images/simon-schmid-ens-labs.webp
+    - name: Stefaan Vervaet
+      title: CEO
+      company: Akave
+      linkedin: https://www.linkedin.com/in/stefaan-vervaet/
+      image:
+        src: /assets/images/stefaan-vervaet-akave.webp
+    - name: Tim Fong
+      company: FilOz
+      linkedin: https://www.linkedin.com/in/timfong888/
+      title: Product Manager, Protocol Lead at Filecoin
+      image:
+        src: /assets/images/tim-fong-filoz.webp
+    - name: Tom Trowbridge
+      title: Co-Founder
+      company: Fluence Labs
+      image:
+        src: /assets/images/tom-trowbridge-fluence.webp
+      linkedin: https://www.linkedin.com/in/tom-trowbridge-12623/
 seo:
   description: Join DePIN Day to explore the future of decentralized
     infrastructure. Connect with top builders, investors, and protocol teams,
