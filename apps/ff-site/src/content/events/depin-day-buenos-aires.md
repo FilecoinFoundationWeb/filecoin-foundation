@@ -188,6 +188,12 @@ speakers:
       title: Product Manager, Protocol Lead at Filecoin
       image:
         src: /assets/images/tim-fong-filoz.webp
+    - name: Miroslav Bajtoš
+      company: Space Meridian
+      title: Founder & CTO
+      linkedin: https://www.linkedin.com/in/bajtos/?originalSubdomain=cz
+      image:
+        src: /assets/images/miroslav-bajtos-space-meridian.webp
 seo:
   description: Join DePIN Day to explore the future of decentralized
     infrastructure. Connect with top builders, investors, and protocol teams,
