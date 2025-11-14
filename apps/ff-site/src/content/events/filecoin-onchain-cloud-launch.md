@@ -133,12 +133,130 @@ schedule:
           location: Hybrid
 speakers:
   speakers_list:
+    - name: Alexander Sly
+      title: Head of Ecosystem
+      company: Storacha
+      image:
+        src: /assets/images/alexander-sly-storacha.webp
+    - name: Armita Jalooli
+      title: Research Manager
+      company: Messari
+      linkedin: https://www.linkedin.com/in/armitajalooli/?originalSubdomain=ca
+      image:
+        src: /assets/images/armita-jalooli-messari.webp
+    - name: Eunice Giarta
+      title: Co-Founder & GM
+      company: Monad Foundation
+      linkedin: https://www.linkedin.com/in/eunicegiarta/
+      image:
+        src: /assets/images/eunice-giarta-monad-foundation.webp
+    - image:
+        src: /assets/images/guil-machado-axlabs.webp
+      name: Guil Machado
+      linkedin: https://www.linkedin.com/in/guisperbmachado/
+      title: Developer
+      company: AxLabs
+    - name: James Bluett
+      company: FilOz
+      title: Technical Community Engineer
+      image:
+        src: /assets/images/james-bluett-filoz.webp
+      linkedin: https://www.linkedin.com/in/james-bluett-31a75a235/
+    - name: Jennifer Wang
+      title: Co-Founder & COO
+      company: FilOz
+      linkedin: https://www.linkedin.com/in/jiayingw703/?originalSubdomain=ca
+      image:
+        src: /assets/images/jennifer-wang-filoz.webp
+    - name: Juan Benet
+      company: Protocol Labs
+      title: Founder & CEO
+      linkedin: https://www.linkedin.com/in/jbenetcs/
+      image:
+        src: /assets/images/juan-benet-protocol-labs.webp
+    - name: Kartikay Tiwari
+      image:
+        src: /assets/images/kartikay-tiwari-filosign.webp
+      company: Filosign
+      title: "-"
+    - name: Marco De Rossi
+      title: Head of AI
+      company: MetaMask
+      linkedin: https://www.linkedin.com/in/marcoderossi/
+      image:
+        src: /assets/images/marco-de-rossi-metamask.webp
+    - name: Marta Belcher
+      company: Filecoin Foundation
+      title: President & Chair
+      linkedin: https://www.linkedin.com/in/martabelcher/
+      image:
+        src: /assets/headshots/Marta_Belcher.webp
+    - name: Miroslav Bajtoš
+      company: Space Meridian
+      title: Founder & CTO
+      linkedin: https://www.linkedin.com/in/bajtos/?originalSubdomain=cz
+      image:
+        src: /assets/images/miroslav-bajtos-space-meridian.webp
+    - name: Molly Mackinlay
+      company: FilOz
+      title: CEO
+      linkedin: https://www.linkedin.com/in/mollymackinlay/
+      image:
+        src: /assets/images/molly-mackinlay-headshot.webp
+    - name: Nicola Greco
+      company: FilOz
+      linkedin: https://www.linkedin.com/in/nicolagreco/
+      image:
+        src: /assets/images/nicola-g-filoz.webp
+      title: Research Scientist
+    - name: Rod Vagg
+      title: Software Engineer
+      company: FilOz
+      linkedin: https://www.linkedin.com/in/rvagg/
+      image:
+        src: /assets/images/rod-vagg-filoz.webp
+    - name: Sarah Thiam
+      title: Founder & CEO
+      company: FIL-B
+      linkedin: https://www.linkedin.com/in/sarahthiam/
+      image:
+        src: /assets/images/sarah-thiam-fil-b.webp
+    - name: Shashank Trivedi
+      image:
+        src: /assets/images/shashank-trivedi-eastore.webp
+      company: Eastore
+      title: Ideator
+      linkedin: https://www.linkedin.com/in/shashanktrivedi7/
+    - image:
+        src: /assets/images/shubham-rasal-groundline.webp
+      name: Shubham Rasal
+      linkedin: https://www.linkedin.com/in/shubhamrasal/?originalSubdomain=in
+      company: Groundline
+      title: Software Engineer
+    - name: Simon Schmid
+      title: Developer Relations Lead
+      company: ENS Labs
+      linkedin: https://www.linkedin.com/in/schmidsi/
+      image:
+        src: /assets/images/simon-schmid-ens-labs.webp
+    - name: Stefaan Vervaet
+      title: CEO
+      company: Akave
+      linkedin: https://www.linkedin.com/in/stefaan-vervaet/
+      image:
+        src: /assets/images/stefaan-vervaet-akave.webp
+    - name: Tim Fong
+      company: FilOz
+      linkedin: https://www.linkedin.com/in/timfong888/
+      title: Product Manager, Protocol Lead at Filecoin
+      image:
+        src: /assets/images/tim-fong-filoz.webp
     - name: Tom Trowbridge
-      company: Fluence Labs
       title: Co-Founder
-      linkedin: https://www.linkedin.com/in/tom-trowbridge-12623/
+      company: Fluence Labs
       image:
         src: /assets/images/tom-trowbridge-fluence.webp
+      linkedin: https://www.linkedin.com/in/tom-trowbridge-12623/
 seo:
   description: Join the global launch of Filecoin Onchain Cloud on November 18 —
     the open, verifiable, decentralized cloud for the next era of data, AI, and
