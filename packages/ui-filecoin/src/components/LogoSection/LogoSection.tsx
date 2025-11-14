@@ -17,12 +17,12 @@ export function LogoSection({ headingTag, title, logos }: LogoSectionProps) {
 
   return (
     <section
-      className="logo-section flex flex-col items-center gap-15 md:gap-20"
+      className="logo-section flex flex-col items-center gap-10"
       aria-labelledby="logo-section-title"
     >
       <Tag
         id="logo-section-title"
-        className="text-lg text-[var(--color-subheading-text)]"
+        className="text-lg text-(--color-subheading-text)"
       >
         {title}
       </Tag>
