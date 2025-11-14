@@ -1,27 +1,29 @@
+import { WarningIcon } from '@phosphor-icons/react/dist/ssr'
+
 import { Heading, type HeadingProps } from './Heading'
 import { Icon, type IconProps } from './Icon'
 import { StateCard } from './StateCard'
 
-export type EmptyStateCardProps = {
-  icon: IconProps['component']
+export type EmptyErrorCardProps = {
+  IconComponent?: IconProps['component']
   title: HeadingProps['children']
   titleTag: HeadingProps['tag']
   description: string
   children?: React.ReactNode
 }
 
-export function EmptyStateCard({
-  icon,
+export function ErrorStateCard({
+  IconComponent = WarningIcon,
   title,
   titleTag,
   description,
   children,
-}: EmptyStateCardProps) {
+}: EmptyErrorCardProps) {
   return (
-    <StateCard border="dashed">
+    <StateCard border="solid">
       <div className="flex w-full flex-col items-center justify-center gap-8">
-        <span className="bg-brand-50 border-brand-100 text-brand-500 grid size-15 place-items-center rounded-full border">
-          <Icon component={icon} size={30} />
+        <span className="grid size-15 place-items-center rounded-full border border-red-200 bg-red-100 text-red-500">
+          <Icon component={IconComponent} size={30} />
         </span>
 
         <div className="space-y-4 text-center">

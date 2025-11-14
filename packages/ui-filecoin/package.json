@@ -1,6 +1,6 @@
 {
   "name": "@filecoin-foundation/ui-filecoin",
-  "version": "0.1.10",
+  "version": "0.1.12",
   "description": "Filecoin branded UI components for the Filecoin ecosystem created by Filecoin Foundation",
   "private": false,
   "type": "module",
@@ -60,6 +60,10 @@
     "./EmptyStateCard": {
       "types": "./dist/components/EmptyStateCard.d.ts",
       "default": "./dist/components/EmptyStateCard.js"
+    },
+    "./ErrorStateCard": {
+      "types": "./dist/components/ErrorStateCard.d.ts",
+      "default": "./dist/components/ErrorStateCard.js"
     },
     "./Footer/LegalSection": {
       "types": "./dist/components/Footer/LegalSection.d.ts",
