@@ -140,7 +140,7 @@ speakers:
       company: FIL-B
       linkedin: https://www.linkedin.com/in/sarahthiam/
       image:
-        src: /assets/images/headshots/Sarah_Thiam.webp
+        src: /assets/images/sarah-thiam-fil-b.webp
     - name: Alexander Sly
       title: Head of Ecosystem
       company: Storacha
@@ -151,7 +151,7 @@ speakers:
       company: Akave
       linkedin: https://www.linkedin.com/in/stefaan-vervaet/
       image:
-        src: /assets/images/stefaan-vervaet-headshot.webp
+        src: /assets/images/stefaan-vervaet-akave.webp
     - name: Jennifer Wang
       title: Co-founder and COO
       company: FilOz
