@@ -61,7 +61,7 @@ schedule:
               company: FilOz
             - name: Rod Vagg
               company: FilOZ
-            - name: Miroslav Bajitoš
+            - name: Miroslav Bajtoš
               company: Space Meridian
             - name: James Bluett
               company: FilOz
