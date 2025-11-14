@@ -157,13 +157,13 @@ speakers:
       company: FilOz
       linkedin: https://www.linkedin.com/in/jiayingw703/?originalSubdomain=ca
       image:
-        src: /assets/images/1745403328875.webp
+        src: /assets/images/jennifer-wang-filoz.webp
     - name: Nicola Greco
       company: FilOz
       linkedin: https://www.linkedin.com/in/nicolagreco/
       image:
-        src: /assets/images/1605526794028.webp
-      title: "-"
+        src: /assets/images/nicola-g-filoz.webp
+      title: Research Scientist
     - name: Molly Mackinlay
       company: FilOz
       title: CEO
