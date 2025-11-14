@@ -61,6 +61,10 @@
       "types": "./dist/components/EmptyStateCard.d.ts",
       "default": "./dist/components/EmptyStateCard.js"
     },
+    "./ErrorStateCard": {
+      "types": "./dist/components/ErrorStateCard.d.ts",
+      "default": "./dist/components/ErrorStateCard.js"
+    },
     "./Footer/LegalSection": {
       "types": "./dist/components/Footer/LegalSection.d.ts",
       "default": "./dist/components/Footer/LegalSection.js"
