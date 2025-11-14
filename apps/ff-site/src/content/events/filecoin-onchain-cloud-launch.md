@@ -131,6 +131,14 @@ schedule:
               company: "Fluence "
           start-time: 14:00:00.000Z
           location: Hybrid
+speakers:
+  speakers_list:
+    - name: Tom Trowbridge
+      company: Fluence Labs
+      title: Co-Founder
+      linkedin: https://www.linkedin.com/in/tom-trowbridge-12623/
+      image:
+        src: /assets/images/tom-trowbridge-fluence.webp
 seo:
   description: Join the global launch of Filecoin Onchain Cloud on November 18 —
     the open, verifiable, decentralized cloud for the next era of data, AI, and
