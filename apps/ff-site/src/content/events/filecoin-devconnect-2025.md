@@ -30,7 +30,8 @@ program:
       end-date: 2025-11-18
       location: ArtLab
       external-link: https://fil.org/events/depin-day-buenos-aires
-      description: ​​We’re bringing together the builders, thinkers and investors
+      description:
+        ​​We’re bringing together the builders, thinkers and investors
         driving the future of decentralized infrastructure.  ​​Expect a curated
         lineup of visionary founders, protocol teams and ecosystem leaders
         sharing cutting-edge use cases and insights across decentralized
@@ -39,9 +40,10 @@ program:
         could own, verify, and program your cloud? Hear it first at DePIN Day.
     - title: Code n' Corgi Buenos Aires
       start-date: 2025-11-19
-      location: Buenos, Aires
+      location: Buenos Aires
       external-link: https://luma.com/u89v5ebs
-      description: ​​​Filecoin ​Code n' Corgi is an energetic, developer-driven series
+      description:
+        ​​​Filecoin ​Code n' Corgi is an energetic, developer-driven series
         designed for Web3 innovators, founders, and builders in the Filecoin
         decentralized storage ecosystem. It’s the perfect launchpad to kickstart
         your web3 journey and take it to new heights. Join us for hands-on
