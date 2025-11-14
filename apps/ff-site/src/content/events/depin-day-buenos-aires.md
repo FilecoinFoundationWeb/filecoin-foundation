@@ -110,19 +110,19 @@ speakers:
       title: President & Chair
       linkedin: https://www.linkedin.com/in/martabelcher/
       image:
-        src: /assets/images/headshots/Marta_Belcher.webp
+        src: /assets/images/marta-belcher-filecoin-foundation.webp
     - name: Marco De Rossi
       title: Head of AI
       company: MetaMask
       linkedin: https://www.linkedin.com/in/marcoderossi/
       image:
-        src: /assets/images/marco-de-rossi-metamask-1-.webp
+        src: /assets/images/marco-de-rossi-metamask.webp
     - name: Eunice Giarta
       title: Co-Founder and GM
       company: Monad Foundation
       linkedin: https://www.linkedin.com/in/eunicegiarta/
       image:
-        src: /assets/images/1648161259450.webp
+        src: /assets/images/eunice-giarta-monad-foundation.webp
     - name: Simon Schmid
       title: Developer Relations Lead
       company: ENS Labs
