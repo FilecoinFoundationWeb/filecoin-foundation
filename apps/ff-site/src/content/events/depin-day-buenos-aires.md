@@ -212,6 +212,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/shubhamrasal/?originalSubdomain=in
       company: Groundline
       title: Software Engineer
+    - name: Shashank Trivedi
+      image:
+        src: /assets/images/shashank-trivedi-eastore.webp
+      company: Eastore
+      title: Ideator
+      linkedin: https://www.linkedin.com/in/shashanktrivedi7/
 seo:
   description: Join DePIN Day to explore the future of decentralized
     infrastructure. Connect with top builders, investors, and protocol teams,
