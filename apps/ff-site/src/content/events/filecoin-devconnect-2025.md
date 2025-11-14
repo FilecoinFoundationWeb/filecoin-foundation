@@ -30,8 +30,7 @@ program:
       end-date: 2025-11-18
       location: ArtLab
       external-link: https://fil.org/events/depin-day-buenos-aires
-      description:
-        ​​We’re bringing together the builders, thinkers and investors
+      description: ​​We’re bringing together the builders, thinkers and investors
         driving the future of decentralized infrastructure.  ​​Expect a curated
         lineup of visionary founders, protocol teams and ecosystem leaders
         sharing cutting-edge use cases and insights across decentralized
@@ -42,8 +41,7 @@ program:
       start-date: 2025-11-19
       location: Buenos Aires
       external-link: https://luma.com/u89v5ebs
-      description:
-        ​​​Filecoin ​Code n' Corgi is an energetic, developer-driven series
+      description: ​​​Filecoin ​Code n' Corgi is an energetic, developer-driven series
         designed for Web3 innovators, founders, and builders in the Filecoin
         decentralized storage ecosystem. It’s the perfect launchpad to kickstart
         your web3 journey and take it to new heights. Join us for hands-on
@@ -77,7 +75,8 @@ schedule:
           location: Innovation Lab
           url: https://luma.com/agentsday-argentina
         - title: Jennifer Wang @ Builder Nights BA
-          description: "Scaling Trust: The Future of Custody, Infra, and Cross-Chain Infra"
+          description: "Scaling Trust: The Future of Custody, Payments, and Cross-Chain
+            Infra"
           start-time: 19:00:00.000Z
           end-time: 19:30:00.000Z
           location: Parque de Innovación
