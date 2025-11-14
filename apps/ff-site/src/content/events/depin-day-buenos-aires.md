@@ -169,25 +169,25 @@ speakers:
       title: CEO
       linkedin: https://www.linkedin.com/in/mollymackinlay/
       image:
-        src: /assets/images/headshots/Molly_Mackinlay.webp
+        src: /assets/images/molly-mackinlay-filoz.webp
     - name: James Bluett
       company: FilOz
       title: Technical Community Engineer
       image:
-        src: /assets/images/66d74e4db714067e4cabed3f_image-6.webp
+        src: /assets/images/james-bluett-filoz.webp
       linkedin: https://www.linkedin.com/in/james-bluett-31a75a235/
     - name: Rod Vagg
       title: Software Engineer
       company: FilOz
       linkedin: https://www.linkedin.com/in/rvagg/
       image:
-        src: /assets/images/1687336501122.webp
+        src: /assets/images/rod-vagg-filoz.webp
     - name: Tim Fong
       company: FilOz
       linkedin: https://www.linkedin.com/in/timfong888/
       title: Product Manager, Protocol Lead at Filecoin
       image:
-        src: /assets/images/1553381322360.webp
+        src: /assets/images/tim-fong-filoz.webp
 seo:
   description: Join DePIN Day to explore the future of decentralized
     infrastructure. Connect with top builders, investors, and protocol teams,
