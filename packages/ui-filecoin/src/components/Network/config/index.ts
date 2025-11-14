@@ -1,6 +1,8 @@
 import { filecoin, filecoinCalibration } from 'wagmi/chains'
 
-export const supportedChains = [filecoinCalibration, filecoin]
-export const supportedChainIds = supportedChains.map((chain) => chain.id)
+const mainnet = { ...filecoin, name: 'Mainnet' } as const
+const calibration = { ...filecoinCalibration, name: 'Calibration' } as const
 
+export const supportedChains = [calibration, mainnet]
+export const supportedChainIds = supportedChains.map((chain) => chain.id)
 export const defaultChain = supportedChains[0]
