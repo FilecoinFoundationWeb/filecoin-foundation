@@ -43,7 +43,7 @@ schedule:
         - title: Introducing Filecoin Onchain Cloud
           speakers:
             - name: Juan Benet
-              company: "Protocol Labs "
+              company: Protocol Labs
           start-time: 13:02:00.000Z
           location: Hybrid
         - title: The Onchain Cloud Vision
@@ -60,7 +60,7 @@ schedule:
             - name: Jennifer Wang
               company: FilOz
             - name: Rod Vagg
-              company: FilOZ
+              company: FiloZ
             - name: Miroslav Bajtoš
               company: Space Meridian
             - name: James Bluett
@@ -81,7 +81,7 @@ schedule:
           location: Hybrid
         - title: "Collaborator Spotlight: Ethereum Trustless Agents"
           speakers:
-            - name: Marco de Rossi
+            - name: Marco De Rossi
               company: Metamask
           start-time: 13:37:00.000Z
           location: Hybrid
@@ -128,7 +128,7 @@ schedule:
             - name: Marta Belcher
               company: Filecoin Foundation
             - name: Tom Trowbridge
-              company: "Fluence "
+              company: Fluence
           start-time: 14:00:00.000Z
           location: Hybrid
 speakers:
