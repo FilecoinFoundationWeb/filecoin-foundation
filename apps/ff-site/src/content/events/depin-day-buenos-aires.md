@@ -194,6 +194,24 @@ speakers:
       linkedin: https://www.linkedin.com/in/bajtos/?originalSubdomain=cz
       image:
         src: /assets/images/miroslav-bajtos-space-meridian.webp
+    - name: Kartikay Tiwari
+      image:
+        src: /assets/images/kartikay-tiwari-filosign.webp
+      company: Filosign
+      linkedin: "-"
+      title: "-"
+    - image:
+        src: /assets/images/guil-machado-axlabs.webp
+      name: Guil Machado
+      linkedin: https://www.linkedin.com/in/guisperbmachado/
+      title: "-"
+      company: "-"
+    - image:
+        src: /assets/images/shubham-rasal-groundline.webp
+      name: Shubham Rasal
+      linkedin: https://www.linkedin.com/in/shubhamrasal/?originalSubdomain=in
+      company: Groundline
+      title: Software Engineer
 seo:
   description: Join DePIN Day to explore the future of decentralized
     infrastructure. Connect with top builders, investors, and protocol teams,
