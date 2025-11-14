@@ -28,6 +28,96 @@ program:
       external-link: https://luma.com/depin-day-ba
       description: Join us in Buenos Aires for an ecosystem watch party at DePIN Day.
       location: "Artlab: Roseti 93, C1427 Cdad. Autónoma de Buenos Aires, Argentina"
+schedule:
+  kicker: Join Us
+  title: CoinDesk Live Schedule
+  days:
+    - date: 2025-11-18
+      events:
+        - title: Opening Remarks
+          speakers:
+            - name: Tom Trowbridge
+              company: Fluence
+          start-time: 13:00:00.000Z
+        - title: Introducing Filecoin Onchain Cloud
+          speakers:
+            - name: Juan Benet
+              company: "Protocol Labs "
+          start-time: 13:02:00.000Z
+        - title: The Onchain Cloud Vision
+          speakers:
+            - name: Molly Mackinlay
+              company: FilOz
+          moderators:
+            - name: Armita Jalooli
+              company: Messari
+          start-time: 13:07:00.000Z
+        - title: Filecoin Onchain Cloud Stack Architecture
+          speakers:
+            - name: Jennifer Wang
+              company: FilOz
+            - name: Rod Vagg
+              company: FilOZ
+            - name: Miroslav Bajitoš
+              company: Space Meridian
+            - name: James Bluett
+              company: FilOz
+          start-time: 13:18:00.000Z
+        - title: "Collaborator Spotlight: ENS"
+          speakers:
+            - name: Simon Schmid
+              company: ENS Labs
+          start-time: 13:29:00.000Z
+        - title: Real-World Use Cases for Filecoin Onchain Cloud
+          speakers:
+            - name: Tim Fong
+              company: FilOz
+          start-time: 13:33:00.000Z
+        - title: "Collaborator Spotlight: Ethereum Trustless Agents"
+          speakers:
+            - name: Marco de Rossi
+              company: Metamask
+          start-time: 13:37:00.000Z
+        - title: FOC Alpha Builders Showcase
+          speakers:
+            - name: Sarah Thiam
+              company: Fil-B
+            - name: Kartikay Tiwari
+              company: Filosign
+            - name: Guil Machado
+              company: AxLabs
+            - name: Shubham Rasal
+              company: Groundline
+            - name: Shashank Trivedi
+              company: Eastore
+          start-time: 13:41:00.000Z
+        - title: "Collaborator Spotlight: Storacha"
+          speakers:
+            - name: Alexander Sly
+              company: Storacha
+          start-time: 13:47:00.000Z
+        - title: "Collaborator Spotlight: Akave"
+          speakers:
+            - name: Stefaan Vervaet
+              company: Akave
+          start-time: 13:50:00.000Z
+        - title: "Collaborator Spotlight: Monad"
+          speakers:
+            - name: Eunice Giarta
+              company: Monad Foundation
+          start-time: 13:52:00.000Z
+        - title: What's Next for Filecoin and How to Get Involved
+          speakers:
+            - name: Marta Belcher
+              company: Filecoin Foundation
+          start-time: 13:56:00.000Z
+        - title: Closing Remarks
+          speakers:
+            - name: Marta Belcher
+              company: Filecoin Foundation
+            - name: Tom Trowbridge
+              company: "Fluence "
+          start-time: 14:00:00.000Z
 seo:
   description: Join the global launch of Filecoin Onchain Cloud on November 18 —
     the open, verifiable, decentralized cloud for the next era of data, AI, and
