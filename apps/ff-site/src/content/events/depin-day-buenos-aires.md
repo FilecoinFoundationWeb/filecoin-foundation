@@ -22,14 +22,14 @@ image:
   src: /assets/images/depin-day.webp
 schedule:
   kicker: Join Us
-  title: "DePIN Day Schedule"
+  title: DePIN Day Schedule
   days:
     - date: 2025-11-18
       events:
         - title: Doors Open
           start-time: 10:00:00.000Z
           location: ArtLab
-        - title: "DePIN Day Content"
+        - title: DePIN Day Content
           start-time: 11:00:00.000Z
           end-time: 13:00:00.000Z
           location: ArtLab
@@ -58,7 +58,7 @@ schedule:
           start-time: 13:04:00.000Z
           end-time: 13:15:00.000Z
           location: ArtLab
-        - title: "Filecoin Onchain Cloud Stack Architecture"
+        - title: Filecoin Onchain Cloud Stack Architecture
           speakers:
             - name: Jennifer Wang
               company: FilOz
@@ -97,14 +97,14 @@ speakers:
       title: Co-Founder
       company: Fluence Labs
       image:
-        src: /assets/images/1670490998296.webp
+        src: /assets/images/tom-trowbridge-fluence.webp
       linkedin: https://www.linkedin.com/in/tom-trowbridge-12623/
     - name: Juan Benet
       company: Protocol Labs
       title: Founder & CEO
       linkedin: https://www.linkedin.com/in/jbenetcs/
       image:
-        src: /assets/images/1516955240728.webp
+        src: /assets/images/juan-benet-protocol-labs.webp
     - name: Marta Belcher
       company: FF
       title: President & Chair
