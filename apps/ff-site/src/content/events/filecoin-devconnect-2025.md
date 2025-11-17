@@ -74,6 +74,20 @@ schedule:
           end-time: 14:20:00.000Z
           location: Innovation Lab
           url: https://luma.com/agentsday-argentina
+          moderators:
+            - name: Adam Wozney
+              company: Akash Network
+          speakers:
+            - name: Nader Dabit
+              company: EigenCloud
+            - name: Molly Mackinlay
+              company: FilOz and Protocol Labs
+            - name: Shaw Walters
+              company: Eliza Labs
+            - name: Aytunc Yildizli
+              company: OG Labs
+            - name: Marko Stokić
+              company: Oasis
         - title: Jennifer Wang @ Builder Nights BA
           description: "Scaling Trust: The Future of Custody, Payments, and Cross-Chain
             Infra"
