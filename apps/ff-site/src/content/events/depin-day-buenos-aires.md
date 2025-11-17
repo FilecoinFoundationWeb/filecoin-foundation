@@ -49,6 +49,9 @@ schedule:
           start-time: 13:02:00.000Z
           end-time: 13:04:00.000Z
           location: ArtLab
+          speakers:
+            - name: Juan Benet
+              company: Protocol Labs
         - title: The Onchain Cloud Vision
           speakers:
             - name: Molly Mackinlay
