@@ -1,23 +1,21 @@
 'use client'
 
-import { Link } from '@/i18n/navigation'
-
 import {
   NavigationMainLink as SharedNavigationMainLink,
   type NavigationLinkProps as SharedNavigationLinkProps,
 } from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMainLink'
+
+import { SmartTextLink } from '../TextLink/SmartTextLink'
 
 export {
   desktopStyle,
   mobileStyle,
 } from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMainLink'
 
-type NavigationLinkProps = Omit<
-  SharedNavigationLinkProps,
-  'InternalLinkComponent'
->
+type NavigationLinkProps = Omit<SharedNavigationLinkProps, 'SmartLinkComponent'>
 
 export function NavigationMainLink(props: NavigationLinkProps) {
-  // @ts-expect-error: Types of property 'href' are incompatible: string vs RouteImpl | UrlObject
-  return <SharedNavigationMainLink InternalLinkComponent={Link} {...props} />
+  return (
+    <SharedNavigationMainLink SmartLinkComponent={SmartTextLink} {...props} />
+  )
 }
