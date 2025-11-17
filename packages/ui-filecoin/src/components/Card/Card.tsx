@@ -1,40 +1,54 @@
-import type { ReactNode } from 'react'
+import type { ComponentType, ReactNode } from 'react'
 
 import { clsx } from 'clsx'
 
 import type { StaticImageProps } from '../../types/imageType'
+import type { CTALinkProps } from '../CTALink'
 import { Heading } from '../Heading'
 import { IconBadge, type IconBadgeProps } from '../IconBadge'
 
 import { CardImage } from './CardImage'
 
-type BaseCardProps = {
+type CTALinkComponentProps = Pick<
+  CTALinkProps,
+  'href' | 'inset' | 'textClassName' | 'children'
+>
+
+type CTAConfig = {
+  href: CTALinkProps['href']
+  text: CTALinkProps['children']
+}
+
+type CardBaseProps = {
   as: 'li' | 'article' | 'div'
   title: string
   description: ReactNode
   isCentered?: boolean
+  cta?: CTAConfig
+  CTALinkComponent: ComponentType<CTALinkComponentProps>
 }
 
-type CardWithIcon = BaseCardProps & {
+type IconVariant = {
   icon: IconBadgeProps['component']
   image?: never
 }
 
-type CardWithImage = BaseCardProps & {
+type ImageVariant = {
   image: StaticImageProps
   icon?: never
 }
 
-type CardWithText = BaseCardProps & {
+type TextVariant = {
   icon?: never
   image?: never
 }
 
-type CardProps = CardWithIcon | CardWithImage | CardWithText
+export type CardProps = CardBaseProps &
+  (IconVariant | ImageVariant | TextVariant)
 
 export type CardData = Pick<
   CardProps,
-  'title' | 'description' | 'icon' | 'image'
+  'title' | 'description' | 'icon' | 'image' | 'cta'
 >
 
 export function Card({
@@ -44,23 +58,39 @@ export function Card({
   icon,
   image,
   isCentered = false,
+  cta,
+  CTALinkComponent,
 }: CardProps) {
   return (
     <Tag
       className={clsx(
-        'flex flex-col gap-6',
+        'relative flex flex-col gap-6',
         isCentered && 'items-center text-center',
       )}
     >
       {icon && <IconBadge component={icon} size="md" />}
       {image && <CardImage image={image} />}
 
-      <div className="space-y-2">
-        <Heading tag="h3" variant="card-heading">
-          {title}
-        </Heading>
+      <div className="space-y-12">
+        <div className="space-y-2">
+          <Heading tag="h3" variant="card-heading">
+            {title}
+          </Heading>
 
-        <p className="text-xl/7 text-(--color-paragraph-text)">{description}</p>
+          <p className="text-xl/7 text-(--color-paragraph-text)">
+            {description}
+          </p>
+        </div>
+
+        {cta && (
+          <CTALinkComponent
+            inset
+            href={cta.href}
+            textClassName="absolute bottom-0 left-0"
+          >
+            {cta.text}
+          </CTALinkComponent>
+        )}
       </div>
     </Tag>
   )

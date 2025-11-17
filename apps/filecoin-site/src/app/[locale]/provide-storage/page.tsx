@@ -1,5 +1,4 @@
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { Card } from '@filecoin-foundation/ui-filecoin/Card'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoSection'
@@ -15,6 +14,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Button } from '@/components/Button'
+import { Card } from '@/components/Card'
 import { GradientContainer } from '@/components/GradientContainer'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SectionDivider } from '@/components/SectionDivider'
