@@ -14,14 +14,15 @@ import { Icon } from './Icon'
 import { variantMapping } from './Navigation/constants'
 import { backgroundVariants, useBackgroundVariant } from './Section/Section'
 
-type Option = {
+export type Option = {
   id: string | number
   label: string
+  disabled?: boolean
 }
 
 type ListboxProps<T extends Option> = {
   Icon: IconType
-  options: Array<T>
+  options: ReadonlyArray<T>
   selected: T
   setSelected: (option: T) => void
 }
@@ -37,7 +38,7 @@ export function Listbox<T extends Option>({
 
   return (
     <HeadlessListbox value={selected} onChange={setSelected}>
-      <ListboxButton className="data-focus:brand-outline focus:brand-outline focus-visible:brand-outline relative block w-full min-w-40 rounded-lg border border-(--color-listbox-border) bg-transparent p-3 text-left font-semibold text-(--color-listbox-button-text) data-focus:bg-(--color-listbox-button-background)">
+      <ListboxButton className="data-focus:brand-outline focus:brand-outline focus-visible:brand-outline relative block w-full rounded-lg border border-(--color-listbox-border) bg-transparent p-3 pr-11 text-left font-semibold text-(--color-listbox-button-text) data-focus:bg-(--color-listbox-button-background)">
         <span className="flex items-center gap-2">
           <Icon component={IconComponent} size={20} />
           {selected.label}
@@ -59,7 +60,8 @@ export function Listbox<T extends Option>({
           <ListboxOption
             key={option.label}
             value={option}
-            className="group flex cursor-default items-center gap-2 rounded-md px-4 py-3 select-none data-focus:bg-(--color-listbox-option-background-hover)! data-selected:bg-(--color-listbox-option-background)"
+            disabled={option.disabled}
+            className="group flex cursor-default items-center gap-2 rounded-md px-4 py-3 select-none data-disabled:cursor-not-allowed data-disabled:opacity-60 data-focus:bg-(--color-listbox-option-background-hover)! data-selected:bg-(--color-listbox-option-background)"
           >
             <div className="font-semibold text-(--color-listbox-button-text)">
               {option.label}
