@@ -1,10 +1,11 @@
 'use client'
 
+import type { ComponentType } from 'react'
+
 import { clsx } from 'clsx'
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import type { GenericLinkProps, GenericLinkType } from '../TextLink/types'
+import type { GenericLinkProps } from '../TextLink/types'
 
 import type { TouchTarget } from './types'
 
@@ -27,25 +28,32 @@ export const mobileStyle = clsx(
   TOUCH_TARGET.touchAreaOffset,
 )
 
+type SmartLinkProps = {
+  href: string
+  ['aria-label']: GenericLinkProps['aria-label']
+  ['aria-current']: GenericLinkProps['aria-current']
+  className: GenericLinkProps['className']
+  children: GenericLinkProps['children']
+}
+
 export type NavigationLinkProps = {
   on: 'mobile' | 'desktop'
   label: string
   href: string
-  InternalLinkComponent?: GenericLinkType
-} & GenericLinkProps
+  SmartLinkComponent: ComponentType<SmartLinkProps>
+}
 
 export function NavigationMainLink({
   href,
   label,
   on,
-  InternalLinkComponent = Link as GenericLinkType,
-  ...rest
+  SmartLinkComponent,
 }: NavigationLinkProps) {
   const pathname = usePathname()
   const isActive = pathname.startsWith(href.toString())
 
   return (
-    <InternalLinkComponent
+    <SmartLinkComponent
       href={href}
       aria-label={`Go to ${label} page`}
       aria-current={isActive}
@@ -54,9 +62,8 @@ export function NavigationMainLink({
         on === 'desktop' && desktopStyle,
         on === 'mobile' && mobileStyle,
       )}
-      {...rest}
     >
       {label}
-    </InternalLinkComponent>
+    </SmartLinkComponent>
   )
 }
