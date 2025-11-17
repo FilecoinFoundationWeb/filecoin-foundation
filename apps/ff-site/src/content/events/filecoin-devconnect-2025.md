@@ -95,6 +95,20 @@ schedule:
           end-time: 19:30:00.000Z
           location: Parque de Innovación
           url: https://luma.com/bnbuenoaires
+          speakers:
+            - name: Jennifer Wang
+              company: FilOz
+            - name: Pablo Valles
+              company: Ledger
+            - name: Harry Papacharissiou
+              company: Chainlink Labs
+            - name: Sam Elfarra
+              company: Tron DAO
+            - name: Declan Fox
+              company: Linea
+          moderators:
+            - name: Francesco Andreoli
+              company: CSI
     - date: 2025-11-19
       events:
         - title: Timothy Fong @ AdoptionCon
