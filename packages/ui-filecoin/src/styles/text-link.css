@@ -20,7 +20,7 @@
     }
 
     .dark-section & {
-      @apply text-brand-600;
+      @apply text-zinc-400;
     }
   }
 }
