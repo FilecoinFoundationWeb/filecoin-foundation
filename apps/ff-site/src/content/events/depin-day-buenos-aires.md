@@ -80,18 +80,21 @@ schedule:
           speakers:
             - name: Simon Schmid
               company: ENS Labs
+          location: ArtLab
         - start-time: 13:30:00.000Z
           end-time: 13:33:00.000Z
           title: Emerging Use Cases for Filecoin Onchain Cloud
           speakers:
             - name: Tim Fong
               company: FilOz
+          location: ArtLab
         - title: "Collaborator Spotlight: Ethereum Trustless Agents"
           start-time: 13:33:00.000Z
           end-time: 13:37:00.000Z
           speakers:
             - name: Marco de Rossi
               company: MetaMask
+          location: ArtLab
         - title: Alpha Builders Showcase
           start-time: 13:37:00.000Z
           end-time: 13:43:00.000Z
@@ -106,7 +109,14 @@ schedule:
               company: Groundline
             - name: Shashank Trivedi
               company: Eastore
-        - {}
+          location: ArtLab
+        - start-time: 13:43:00.000Z
+          end-time: 13:46:00.000Z
+          title: "Collaborator Spotlight: Akave"
+          speakers:
+            - name: Stefaan Vervaet
+              company: Akave
+          location: ArtLab
         - {}
         - {}
         - {}
