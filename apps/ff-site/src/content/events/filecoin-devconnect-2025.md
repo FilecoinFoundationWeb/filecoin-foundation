@@ -125,6 +125,18 @@ schedule:
           end-time: 19:00:00.000Z
           location: Casa Cavia
           url: https://luma.com/InfraGardens-BuenosAires
+          speakers:
+            - name: Clara Tsao
+              company: Filecoin Foundation
+            - name: Jay Jog
+              company: Sei Labs
+            - name: Chunda McCain
+              company: Paxos Labs
+            - name: Kevin Li
+              company: Goldsky
+          moderators:
+            - name: Francisco Rodrigues
+              company: CoinDesk
         - title: Sarah Thiam @ Pragma Buenos Aires
           description: Filecoin Onchain Cloud workshop
           location: Mansión FUNTIME
