@@ -58,19 +58,21 @@ schedule:
               company: FilOz
             - name: Armita Jalooli
               company: Messari
-          start-time: 13:04:00.000Z
-          end-time: 13:15:00.000Z
+          start-time: 13:05:00.000Z
+          end-time: 13:16:00.000Z
           location: ArtLab
-        - title: Filecoin Onchain Cloud Stack Architecture
+        - title: "Verifiable Foundation, Unstoppable Future: The Stack Unveiled"
           speakers:
             - name: Jennifer Wang
               company: FilOz
-            - name: Miroslav Bajtoš
-              company: Space Meridian
+            - name: Rod Vagg
+              company: FilOz
             - name: James Bluett
               company: FilOz
-          start-time: 13:15:00.000Z
-          end-time: 13:25:00.000Z
+            - name: Miroslav Bajtoš
+              company: Space Meridian
+          start-time: 13:16:00.000Z
+          end-time: 13:27:00.000Z
           location: ArtLab
         - title: FOC Alpha Builders Showcase
           start-time: 13:42:00.000Z
