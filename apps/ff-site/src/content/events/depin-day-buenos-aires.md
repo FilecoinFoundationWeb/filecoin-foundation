@@ -43,11 +43,11 @@ schedule:
             - name: Tom Trowbridge
               company: Fluence
           start-time: 13:00:00.000Z
-          end-time: 13:02:00.000Z
+          end-time: 13:03:00.000Z
           location: ArtLab
         - title: Introducing Filecoin Onchain Cloud
-          start-time: 13:02:00.000Z
-          end-time: 13:04:00.000Z
+          start-time: 13:03:00.000Z
+          end-time: 13:05:00.000Z
           location: ArtLab
           speakers:
             - name: Juan Benet
