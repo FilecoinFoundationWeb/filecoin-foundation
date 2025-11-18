@@ -225,12 +225,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/mollymackinlay/
       image:
         src: /assets/images/molly-mackinlay-headshot.webp
-    - name: Nicola Greco
-      company: FilOz
-      linkedin: https://www.linkedin.com/in/nicolagreco/
+    - name: Paul Bramas
+      company: KYVE
+      linkedin: https://www.linkedin.com/in/paul-bramas-2977b785/?originalSubdomain=de
       image:
         src: /assets/images/nicola-g-filoz.webp
-      title: Research Scientist
+      title: Head of Ecosystem
     - name: Rod Vagg
       title: Software Engineer
       company: FilOz
