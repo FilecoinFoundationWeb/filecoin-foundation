@@ -80,28 +80,38 @@ schedule:
           speakers:
             - name: Simon Schmid
               company: ENS Labs
-        - title: FOC Alpha Builders Showcase
-          start-time: 13:42:00.000Z
-          end-time: 13:47:00.000Z
-          location: ArtLab
-        - title: "Collaborator Spotlight: Akave"
-          start-time: 13:50:00.000Z
-          end-time: 13:53:00.000Z
+        - start-time: 13:30:00.000Z
+          end-time: 13:33:00.000Z
+          title: Emerging Use Cases for Filecoin Onchain Cloud
           speakers:
-            - name: Stefaan Vervaet
-              company: Akave
-          location: ArtLab
-        - title: What's Next for Filecoin and How to Get Involved
-          start-time: 13:57:00.000Z
-          end-time: 14:01:00.000Z
+            - name: Tim Fong
+              company: FilOz
+        - title: "Collaborator Spotlight: Ethereum Trustless Agents"
+          start-time: 13:33:00.000Z
+          end-time: 13:37:00.000Z
           speakers:
-            - name: Marta Belcher
-              company: Filecoin Foundation
-          location: ArtLab
-        - title: Closing Remarks
-          start-time: 14:01:00.000Z
-          end-time: 14:02:00.000Z
-          location: ArtLab
+            - name: Marco de Rossi
+              company: MetaMask
+        - title: Alpha Builders Showcase
+          start-time: 13:37:00.000Z
+          end-time: 13:43:00.000Z
+          speakers:
+            - name: Sarah Thiam
+              company: Fil-B
+            - name: Kartikay Tiwari
+              company: FiloSign
+            - name: Guil Machado
+              company: Cha-Ching
+            - name: Shubham Rasal
+              company: Groundline
+            - name: Shashank Trivedi
+              company: Eastore
+        - {}
+        - {}
+        - {}
+        - {}
+        - {}
+        - {}
 speakers:
   speakers_list:
     - name: Alexander Sly
