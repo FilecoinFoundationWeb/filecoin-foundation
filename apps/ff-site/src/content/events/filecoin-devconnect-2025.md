@@ -74,6 +74,20 @@ schedule:
           end-time: 14:20:00.000Z
           location: Innovation Lab
           url: https://luma.com/agentsday-argentina
+          moderators:
+            - name: Adam Wozney
+              company: Akash Network
+          speakers:
+            - name: Nader Dabit
+              company: EigenCloud
+            - name: Molly Mackinlay
+              company: FilOz and Protocol Labs
+            - name: Shaw Walters
+              company: Eliza Labs
+            - name: Aytunc Yildizli
+              company: OG Labs
+            - name: Marko Stokić
+              company: Oasis
         - title: Jennifer Wang @ Builder Nights BA
           description: "Scaling Trust: The Future of Custody, Payments, and Cross-Chain
             Infra"
@@ -81,6 +95,20 @@ schedule:
           end-time: 19:30:00.000Z
           location: Parque de Innovación
           url: https://luma.com/bnbuenoaires
+          speakers:
+            - name: Jennifer Wang
+              company: FilOz
+            - name: Pablo Valles
+              company: Ledger
+            - name: Harry Papacharissiou
+              company: Chainlink Labs
+            - name: Sam Elfarra
+              company: Tron DAO
+            - name: Declan Fox
+              company: Linea
+          moderators:
+            - name: Francesco Andreoli
+              company: CSI
     - date: 2025-11-19
       events:
         - title: Timothy Fong @ AdoptionCon
@@ -97,6 +125,18 @@ schedule:
           end-time: 19:00:00.000Z
           location: Casa Cavia
           url: https://luma.com/InfraGardens-BuenosAires
+          speakers:
+            - name: Clara Tsao
+              company: Filecoin Foundation
+            - name: Jay Jog
+              company: Sei Labs
+            - name: Chunda McCain
+              company: Paxos Labs
+            - name: Kevin Li
+              company: Goldsky
+          moderators:
+            - name: Francisco Rodrigues
+              company: CoinDesk
         - title: Sarah Thiam @ Pragma Buenos Aires
           description: Filecoin Onchain Cloud workshop
           location: Mansión FUNTIME
