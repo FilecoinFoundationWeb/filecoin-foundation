@@ -17,6 +17,7 @@ type CTALinkComponentProps = Pick<
 type CTAConfig = {
   href: CTALinkProps['href']
   text: CTALinkProps['children']
+  CTALinkComponent: ComponentType<CTALinkComponentProps>
 }
 
 type CardBaseProps = {
@@ -25,7 +26,6 @@ type CardBaseProps = {
   description: ReactNode
   isCentered?: boolean
   cta?: CTAConfig
-  CTALinkComponent: ComponentType<CTALinkComponentProps>
 }
 
 type IconVariant = {
@@ -59,7 +59,6 @@ export function Card({
   image,
   isCentered = false,
   cta,
-  CTALinkComponent,
 }: CardProps) {
   return (
     <Tag
@@ -83,13 +82,13 @@ export function Card({
         </div>
 
         {cta && (
-          <CTALinkComponent
+          <cta.CTALinkComponent
             inset
             href={cta.href}
             textClassName="absolute bottom-0 left-0"
           >
             {cta.text}
-          </CTALinkComponent>
+          </cta.CTALinkComponent>
         )}
       </div>
     </Tag>

@@ -5,10 +5,20 @@ import {
 
 import { CTALink } from '@/components/CTALink'
 
-export type CardProps = Omit<SharedCardProps, 'CTALinkComponent'>
+type CardProps = Omit<SharedCardProps, 'cta'> & {
+  cta?: Pick<NonNullable<SharedCardProps['cta']>, 'href' | 'text'>
+}
 
 export function Card(props: CardProps) {
-  return (
-    <SharedCard {...(props as SharedCardProps)} CTALinkComponent={CTALink} />
-  )
+  const { cta, ...rest } = props
+
+  const cardProps = {
+    ...rest,
+    cta: cta && {
+      ...cta,
+      CTALinkComponent: CTALink,
+    },
+  } as SharedCardProps
+
+  return <SharedCard {...cardProps} />
 }
