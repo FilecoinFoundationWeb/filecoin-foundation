@@ -20,9 +20,9 @@ program:
   events:
     - title: Livestream
       start-date: 2025-11-18
-      location: Filecoin X
-      description: Tune in to the livestream on X (Twitter).
-      external-link: https://x.com/Filecoin?s=20
+      location: YouTube
+      description: "Tune in to the live stream! "
+      external-link: https://www.youtube.com/live/7iDcHlg1hIw?si=nfszRIWUazkBFG9u
     - title: DePIN Day Buenos Aires
       start-date: 2025-11-18
       external-link: https://luma.com/depin-day-ba
