@@ -74,6 +74,12 @@ schedule:
           start-time: 13:16:00.000Z
           end-time: 13:27:00.000Z
           location: ArtLab
+        - start-time: 13:27:00.000Z
+          end-time: 13:30:00.000Z
+          title: "Collaborator Spotlight: ENS"
+          speakers:
+            - name: Simon Schmid
+              company: ENS Labs
         - title: FOC Alpha Builders Showcase
           start-time: 13:42:00.000Z
           end-time: 13:47:00.000Z
