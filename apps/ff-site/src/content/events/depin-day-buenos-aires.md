@@ -225,12 +225,6 @@ speakers:
       linkedin: https://www.linkedin.com/in/mollymackinlay/
       image:
         src: /assets/images/molly-mackinlay-headshot.webp
-    - name: Paul Bramas
-      company: KYVE
-      linkedin: https://www.linkedin.com/in/paul-bramas-2977b785/?originalSubdomain=de
-      image:
-        src: /assets/images/nicola-g-filoz.webp
-      title: Head of Ecosystem
     - name: Rod Vagg
       title: Software Engineer
       company: FilOz
