@@ -3,6 +3,7 @@
 import { createContext, useContext } from 'react'
 
 import { clsx } from 'clsx'
+import AutoScroll from 'embla-carousel-auto-scroll'
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react'
@@ -13,12 +14,11 @@ import { useCarouselState } from './hooks/useCarouselState'
 export type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 type CarouselOptions = UseCarouselParameters[0]
-type CarouselPlugin = UseCarouselParameters[1]
 
 type CarouselProps = {
   opts?: CarouselOptions
-  plugins?: CarouselPlugin
   orientation?: 'horizontal' | 'vertical'
+  autoPlay?: boolean
   setApi?: (api: CarouselApi) => void
 }
 
@@ -29,6 +29,7 @@ type CarouselContextProps = {
   scrollNext: () => void
   canScrollPrev: boolean
   canScrollNext: boolean
+  autoPlay: boolean
 } & CarouselProps
 
 const CarouselContext = createContext<CarouselContextProps | null>(null)
@@ -47,17 +48,25 @@ export function Carousel({
   orientation = 'horizontal',
   opts,
   setApi,
-  plugins,
+  autoPlay = false,
   className,
   children,
   ...props
 }: React.ComponentProps<'div'> & CarouselProps) {
+  const autoPlayPlugin = AutoScroll({
+    stopOnMouseEnter: true,
+    stopOnInteraction: false,
+    startDelay: 100,
+    speed: 1.5,
+  })
+
   const [carouselRef, api] = useEmblaCarousel(
     {
       ...opts,
       axis: getCarouselAxis(orientation),
+      loop: autoPlay ? true : opts?.loop,
     },
-    plugins,
+    [...(autoPlay ? [autoPlayPlugin] : [])],
   )
 
   const { canScrollPrev, canScrollNext, scrollPrev, scrollNext } =
@@ -75,10 +84,11 @@ export function Carousel({
         scrollNext,
         canScrollPrev,
         canScrollNext,
+        autoPlay,
       }}
     >
       <div
-        className={clsx('relative px-12', className)}
+        className={clsx('relative px-10', className)}
         role="region"
         aria-roledescription="carousel"
         data-slot="carousel"

@@ -1,6 +1,6 @@
 {
   "name": "@filecoin-foundation/ui-filecoin",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "Filecoin branded UI components for the Filecoin ecosystem created by Filecoin Foundation",
   "private": false,
   "type": "module",
@@ -308,6 +308,8 @@
     "@phosphor-icons/react": "^2.1.10",
     "@tanstack/react-table": "^8.21.3",
     "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
+    "embla-carousel-auto-scroll": "^8.6.0",
     "usehooks-ts": "^3.1.1",
     "viem": "^2.38.6",
     "wagmi": "^2.19.3"
@@ -321,7 +323,6 @@
   "peerDependencies": {
     "@tailwindcss/typography": "^0.5.19",
     "class-variance-authority": "^0.7.1",
-    "embla-carousel-react": "^8.6.0",
     "next": "^15.5.6",
     "react": "^19.2.0",
     "react-markdown": "^10.1.0",

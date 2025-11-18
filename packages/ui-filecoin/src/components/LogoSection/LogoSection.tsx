@@ -10,9 +10,15 @@ type LogoSectionProps = {
   headingTag: HeadingProps['tag']
   title: string
   logos: Array<LogoItemProps>
+  autoPlay?: boolean
 }
 
-export function LogoSection({ headingTag, title, logos }: LogoSectionProps) {
+export function LogoSection({
+  headingTag,
+  title,
+  logos,
+  autoPlay,
+}: LogoSectionProps) {
   const Tag = headingTag
 
   return (
@@ -27,7 +33,7 @@ export function LogoSection({ headingTag, title, logos }: LogoSectionProps) {
         {title}
       </Tag>
 
-      <Carousel>
+      <Carousel autoPlay={autoPlay}>
         <CarouselContent>
           {logos.map((logoItem, index) => (
             <CarouselItem key={index} range={logos.length}>
