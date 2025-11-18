@@ -117,11 +117,42 @@ schedule:
             - name: Stefaan Vervaet
               company: Akave
           location: ArtLab
-        - {}
-        - {}
-        - {}
-        - {}
-        - {}
+        - title: "Collaborator Spotlight: Storacha"
+          start-time: 13:46:00.000Z
+          end-time: 13:48:00.000Z
+          speakers:
+            - name: Alexander Sly
+              company: Storacha
+          location: ArtLab
+        - tag: ""
+          start-time: 13:48:00.000Z
+          end-time: 13:51:00.000Z
+          location: ArtLab
+          speakers:
+            - name: Paul Bramas
+              company: KYVE
+          title: "Collaborator Spotlight: KYVE"
+        - title: "Collaborator Spotlight: Monad"
+          start-time: 13:51:00.000Z
+          end-time: 13:54:00.000Z
+          location: ArtLab
+          speakers:
+            - name: Eunice Giarta
+              company: Monad Foundation
+        - title: What's Next for Filecoin and How to Get Involved
+          start-time: 13:54:00.000Z
+          end-time: 13:59:00.000Z
+          location: ArtLab
+          speakers:
+            - name: Marta Belcher
+              company: FF
+        - title: Closing Remarks
+          start-time: 13:59:00.000Z
+          end-time: 14:00:00.000Z
+          location: ArtLab
+          speakers:
+            - name: Tom Trowbridge
+              company: Fluence
 speakers:
   speakers_list:
     - name: Alexander Sly
