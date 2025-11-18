@@ -58,42 +58,101 @@ schedule:
               company: FilOz
             - name: Armita Jalooli
               company: Messari
-          start-time: 13:04:00.000Z
-          end-time: 13:15:00.000Z
+          start-time: 13:05:00.000Z
+          end-time: 13:16:00.000Z
           location: ArtLab
-        - title: Filecoin Onchain Cloud Stack Architecture
+        - title: "Verifiable Foundation, Unstoppable Future: The Stack Unveiled"
           speakers:
             - name: Jennifer Wang
               company: FilOz
-            - name: Miroslav Bajtoš
-              company: Space Meridian
+            - name: Rod Vagg
+              company: FilOz
             - name: James Bluett
               company: FilOz
-          start-time: 13:15:00.000Z
-          end-time: 13:25:00.000Z
+            - name: Miroslav Bajtoš
+              company: Space Meridian
+          start-time: 13:16:00.000Z
+          end-time: 13:27:00.000Z
           location: ArtLab
-        - title: FOC Alpha Builders Showcase
-          start-time: 13:42:00.000Z
-          end-time: 13:47:00.000Z
+        - start-time: 13:27:00.000Z
+          end-time: 13:30:00.000Z
+          title: "Collaborator Spotlight: ENS"
+          speakers:
+            - name: Simon Schmid
+              company: ENS Labs
           location: ArtLab
-        - title: "Collaborator Spotlight: Akave"
-          start-time: 13:50:00.000Z
-          end-time: 13:53:00.000Z
+        - start-time: 13:30:00.000Z
+          end-time: 13:33:00.000Z
+          title: Emerging Use Cases for Filecoin Onchain Cloud
+          speakers:
+            - name: Tim Fong
+              company: FilOz
+          location: ArtLab
+        - title: "Collaborator Spotlight: Ethereum Trustless Agents"
+          start-time: 13:33:00.000Z
+          end-time: 13:37:00.000Z
+          speakers:
+            - name: Marco de Rossi
+              company: MetaMask
+          location: ArtLab
+        - title: Alpha Builders Showcase
+          start-time: 13:37:00.000Z
+          end-time: 13:43:00.000Z
+          speakers:
+            - name: Sarah Thiam
+              company: Fil-B
+            - name: Kartikay Tiwari
+              company: FiloSign
+            - name: Guil Machado
+              company: Cha-Ching
+            - name: Shubham Rasal
+              company: Groundline
+            - name: Shashank Trivedi
+              company: Eastore
+          location: ArtLab
+        - start-time: 13:43:00.000Z
+          end-time: 13:46:00.000Z
+          title: "Collaborator Spotlight: Akave"
           speakers:
             - name: Stefaan Vervaet
               company: Akave
           location: ArtLab
+        - title: "Collaborator Spotlight: Storacha"
+          start-time: 13:46:00.000Z
+          end-time: 13:48:00.000Z
+          speakers:
+            - name: Alexander Sly
+              company: Storacha
+          location: ArtLab
+        - tag: ""
+          start-time: 13:48:00.000Z
+          end-time: 13:51:00.000Z
+          location: ArtLab
+          speakers:
+            - name: Paul Bramas
+              company: KYVE
+          title: "Collaborator Spotlight: KYVE"
+        - title: "Collaborator Spotlight: Monad"
+          start-time: 13:51:00.000Z
+          end-time: 13:54:00.000Z
+          location: ArtLab
+          speakers:
+            - name: Eunice Giarta
+              company: Monad Foundation
         - title: What's Next for Filecoin and How to Get Involved
-          start-time: 13:57:00.000Z
-          end-time: 14:01:00.000Z
+          start-time: 13:54:00.000Z
+          end-time: 13:59:00.000Z
+          location: ArtLab
           speakers:
             - name: Marta Belcher
-              company: Filecoin Foundation
-          location: ArtLab
+              company: FF
         - title: Closing Remarks
-          start-time: 14:01:00.000Z
-          end-time: 14:02:00.000Z
+          start-time: 13:59:00.000Z
+          end-time: 14:00:00.000Z
           location: ArtLab
+          speakers:
+            - name: Tom Trowbridge
+              company: Fluence
 speakers:
   speakers_list:
     - name: Alexander Sly
@@ -166,12 +225,6 @@ speakers:
       linkedin: https://www.linkedin.com/in/mollymackinlay/
       image:
         src: /assets/images/molly-mackinlay-headshot.webp
-    - name: Nicola Greco
-      company: FilOz
-      linkedin: https://www.linkedin.com/in/nicolagreco/
-      image:
-        src: /assets/images/nicola-g-filoz.webp
-      title: Research Scientist
     - name: Rod Vagg
       title: Software Engineer
       company: FilOz
