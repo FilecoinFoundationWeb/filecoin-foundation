@@ -13,7 +13,7 @@
     "prepare": "test \"$CI\" = \"true\" || husky"
   },
   "devDependencies": {
-    "glob": "^11.0.3",
+    "glob": "^11.1.0",
     "husky": "^9.1.7",
     "markdownlint-cli2": "^0.18.0",
     "prettier": "^3.6.2",
