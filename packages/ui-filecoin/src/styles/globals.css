@@ -11,6 +11,7 @@
 @import './state-card.css';
 @import './table.css';
 @import './text-link.css';
+@import './text-input.css';
 
 @plugin '@tailwindcss/typography';
 
