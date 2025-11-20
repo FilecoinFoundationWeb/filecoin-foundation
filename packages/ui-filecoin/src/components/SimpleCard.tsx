@@ -30,7 +30,7 @@ export type SimpleCardData = {
   cta: NonNullable<SimpleCardProps['cta']>
 }
 
-type CardContentProps = Pick<
+export type CardContentProps = Pick<
   SimpleCardProps,
   'title' | 'description' | 'border'
 >
