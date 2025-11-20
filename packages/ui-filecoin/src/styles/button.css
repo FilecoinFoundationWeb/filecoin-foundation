@@ -144,18 +144,18 @@
 
         & .button-arrow-icon,
         & .button-custom-icon {
-          @apply text-zinc-600;
+          @apply text-zinc-500;
         }
 
         &:not(:disabled) {
           &:hover,
           &:focus {
             @apply text-zinc-950;
-          }
 
-          .button-arrow-icon,
-          .button-custom-icon {
-            @apply text-zinc-950;
+            .button-arrow-icon,
+            .button-custom-icon {
+              @apply text-zinc-800;
+            }
           }
         }
 
@@ -174,18 +174,18 @@
 
         & .button-arrow-icon,
         & .button-custom-icon {
-          @apply text-zinc-300;
+          @apply text-zinc-400;
         }
 
         &:not(:disabled) {
           &:hover,
           &:focus {
             @apply text-zinc-50;
-          }
 
-          .button-arrow-icon,
-          .button-custom-icon {
-            @apply text-zinc-50;
+            .button-arrow-icon,
+            .button-custom-icon {
+              @apply text-zinc-300;
+            }
           }
         }
 
@@ -194,7 +194,7 @@
 
           .button-arrow-icon,
           .button-custom-icon {
-            @apply text-zinc-600;
+            @apply text-zinc-500;
           }
         }
       }
