@@ -38,12 +38,7 @@ export function Button({
   LinkComponent = BaseLink,
   ...rest
 }: ButtonProps) {
-  className = clsx(
-    'button inline-flex items-center justify-center gap-2 text-base font-medium transition-all hover:no-underline',
-    disabled ? 'cursor-not-allowed' : 'cursor-pointer',
-    variantClasses[variant],
-    className,
-  )
+  className = clsx('button', variantClasses[variant], className)
 
   if (typeof href === 'undefined' || disabled) {
     return (

@@ -1,5 +1,11 @@
 @layer components {
   .button {
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 text-base font-medium transition-all hover:no-underline;
+
+    &:disabled {
+      @apply cursor-not-allowed;
+    }
+
     &.button--primary,
     &.button--ghost {
       @apply rounded-full border-2 px-6 py-4;
