@@ -31,18 +31,6 @@
   --color-brand-error: var(--color-red-500);
   --color-brand-error-dark: var(--color-red-300);
 
-  --gradient-brand-dark: linear-gradient(
-    90deg,
-    var(--color-brand-500),
-    var(--color-brand-700)
-  );
-
-  --gradient-brand-light: linear-gradient(
-    90deg,
-    var(--color-brand-300),
-    var(--color-brand-500)
-  );
-
   --spacing-readable: 60ch;
 
   --tracking-tight: -1%;
