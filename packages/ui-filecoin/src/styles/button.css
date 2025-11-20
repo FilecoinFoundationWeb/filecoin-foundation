@@ -3,84 +3,70 @@
     &.button--primary,
     &.button--ghost {
       @apply rounded-full border-2 px-6 py-4;
+
+      &:focus {
+        @apply outline-2 outline-offset-0;
+      }
     }
 
     &.button--primary {
-      @apply border-transparent;
+      @apply border-brand-700;
 
       &:not(:disabled) {
-        @apply border-brand-700 transition-colors;
-
         &:hover,
         &:focus {
           @apply border-brand-500;
+
+          & .button-custom-icon {
+            @apply text-brand-500;
+          }
         }
 
         &:focus {
-          @apply outline-brand-400 outline outline-offset-0 transition-none;
+          @apply outline-brand-400;
+        }
+
+        & .button-custom-icon {
+          @apply text-brand-700;
         }
       }
 
       .light-section & {
         @apply text-zinc-950;
 
-        & .button-arrow-icon {
-          @apply text-zinc-600;
-        }
-
-        & .button-custom-icon {
-          @apply text-blue-600;
-        }
-
-        &:hover .button-custom-icon,
-        &:focus .button-custom-icon {
-          @apply text-blue-400;
-        }
-
         &:disabled {
           @apply border-zinc-300 bg-zinc-100 text-zinc-400;
+        }
+
+        & .button-arrow-icon {
+          @apply text-zinc-600;
         }
       }
 
       .dark-section & {
         @apply text-zinc-50;
 
-        & .button-arrow-icon {
-          @apply text-zinc-300;
-        }
-
-        & .button-custom-icon {
-          @apply text-blue-500;
-        }
-
-        &:hover .button-custom-icon,
-        &:focus .button-custom-icon {
-          @apply text-blue-300;
-        }
-
         &:disabled {
           @apply border-zinc-500 bg-zinc-800 text-zinc-500;
+        }
+
+        & .button-arrow-icon {
+          @apply text-zinc-300;
         }
       }
     }
 
     &.button--ghost {
-      @apply border-zinc-100;
-
-      &:hover {
-        @apply bg-zinc-200 transition-colors;
-      }
-
-      &:focus {
-        @apply outline-2 outline-offset-0 outline-zinc-400;
-      }
-
       .light-section & {
-        @apply bg-zinc-100 text-zinc-950;
+        @apply border-zinc-100 bg-zinc-100 text-zinc-950;
 
         &:not(:disabled):hover,
-        &:focus {
+        &:not(:disabled):focus {
           @apply border-zinc-200 bg-zinc-200;
+        }
+
+        &:not(:disabled):focus {
+          @apply outline-zinc-400;
         }
 
         &:disabled {
@@ -90,26 +76,46 @@
         & .button-arrow-icon {
           @apply text-zinc-500;
         }
+
+        & .button-custom-icon {
+          @apply text-zinc-500;
+        }
+
+        &:not(:disabled):hover .button-custom-icon,
+        &:not(:disabled):focus .button-custom-icon {
+          @apply text-zinc-800;
+        }
       }
 
       .dark-section & {
         @apply border-zinc-800 bg-zinc-800 text-zinc-50;
 
         &:not(:disabled):hover,
-        &:focus {
+        &:not(:disabled):focus {
           @apply border-zinc-600 bg-zinc-600;
+        }
+
+        &:not(:disabled):focus {
+          @apply outline-zinc-400;
         }
 
         &:disabled {
           @apply bg-zinc-800 text-zinc-500;
         }
+
+        & .button-custom-icon {
+          @apply text-zinc-400;
+        }
+
+        &:not(:disabled):hover .button-custom-icon,
+        &:not(:disabled):focus .button-custom-icon {
+          @apply text-zinc-300;
+        }
       }
     }
 
     &.button--tertiary {
-      @apply border-transparent;
-
-      &:focus {
+      &:not(:disabled):focus {
         @apply underline underline-offset-8 outline-none;
       }
 
@@ -128,8 +134,8 @@
           }
         }
 
-        &:focus {
-          @apply decoration-brand-600;
+        &:not(:disabled):focus {
+          @apply decoration-brand-600 underline underline-offset-8 outline-none;
         }
 
         &:disabled {
@@ -160,8 +166,8 @@
           }
         }
 
-        &:focus {
-          @apply decoration-brand-300;
+        &:not(:disabled):focus {
+          @apply decoration-brand-300 underline underline-offset-8 outline-none;
         }
 
         &:disabled {
