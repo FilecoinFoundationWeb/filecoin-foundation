@@ -34,7 +34,7 @@ export function SearchInput({ value, onChange, disabled }: SearchInputProps) {
         </div>
         {value && (
           <Button
-            className="focus:brand-outline absolute top-1 right-1 flex size-10 cursor-pointer items-center justify-center rounded-sm text-(--search-input-icon-color) hover:text-(--seach-input-clear-icon-color-hover)"
+            className="focus:brand-outline absolute top-1 right-1 flex size-10 cursor-pointer items-center justify-center rounded-sm text-(--search-input-icon-color) hover:text-(--search-input-clear-icon-color-hover)"
             aria-label="Clear search input"
             onClick={() => {
               onChange('')
