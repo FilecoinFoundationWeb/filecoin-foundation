@@ -6,36 +6,18 @@
     }
 
     &.button--primary {
-      @apply relative border-transparent;
+      @apply border-transparent;
 
       &:not(:disabled) {
-        &::before {
-          background: var(--gradient-brand-dark) border-box;
-        }
+        @apply border-brand-700 transition-colors;
 
-        &::after {
-          @apply opacity-0 transition-opacity duration-200;
-          background: var(--gradient-brand-light) border-box;
-        }
-
-        &:hover::after,
-        &:focus::after {
-          @apply opacity-100;
-        }
-
-        &::before,
-        &::after {
-          @apply absolute -inset-0.5 rounded-full border-2 border-transparent;
-          content: '';
-          mask:
-            linear-gradient(var(--color-white)) content-box,
-            linear-gradient(var(--color-white));
-          mask-composite: exclude;
-          -webkit-mask-composite: xor; /* Safari < 15.4 */
+        &:hover,
+        &:focus {
+          @apply border-brand-500;
         }
 
         &:focus {
-          @apply outline-brand-400 outline-2 outline-offset-0 transition-none;
+          @apply outline-brand-400 outline outline-offset-0 transition-none;
         }
       }
 
