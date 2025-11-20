@@ -109,6 +109,10 @@
     &.button--tertiary {
       @apply border-transparent;
 
+      &:focus {
+        @apply underline underline-offset-8 outline-none;
+      }
+
       .light-section & {
         @apply text-zinc-600;
 
@@ -125,7 +129,7 @@
         }
 
         &:focus {
-          @apply decoration-brand-600 underline underline-offset-8 outline-none;
+          @apply decoration-brand-600;
         }
 
         &:disabled {
@@ -157,7 +161,7 @@
         }
 
         &:focus {
-          @apply brand-outline;
+          @apply decoration-brand-300;
         }
 
         &:disabled {
