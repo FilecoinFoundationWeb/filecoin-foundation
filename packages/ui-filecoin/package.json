@@ -245,6 +245,10 @@
       "types": "./dist/components/StateCard.d.ts",
       "default": "./dist/components/StateCard.js"
     },
+    "./SearchInput": {
+      "types": "./dist/components/SearchInput.d.ts",
+      "default": "./dist/components/SearchInput.js"
+    },
     "./TextLink/ExternalTextLink": {
       "types": "./dist/components/TextLink/ExternalTextLink.d.ts",
       "default": "./dist/components/TextLink/ExternalTextLink.js"
