@@ -12,6 +12,10 @@
     &.button--primary {
       @apply border-brand-700;
 
+      & .button-custom-icon {
+        @apply text-brand-700;
+      }
+
       &:not(:disabled) {
         &:hover,
         &:focus {
@@ -25,33 +29,37 @@
         &:focus {
           @apply outline-brand-400;
         }
-
-        & .button-custom-icon {
-          @apply text-brand-700;
-        }
       }
 
       .light-section & {
         @apply text-zinc-950;
 
-        &:disabled {
-          @apply border-zinc-300 bg-zinc-100 text-zinc-400;
+        & .button-arrow-icon {
+          @apply text-zinc-500;
         }
 
-        & .button-arrow-icon {
-          @apply text-zinc-600;
+        &:disabled {
+          @apply border-zinc-300 bg-zinc-100 text-zinc-400;
+
+          .button-custom-icon {
+            @apply text-zinc-300;
+          }
         }
       }
 
       .dark-section & {
         @apply text-zinc-50;
 
-        &:disabled {
-          @apply border-zinc-500 bg-zinc-800 text-zinc-500;
-        }
-
         & .button-arrow-icon {
           @apply text-zinc-300;
+        }
+
+        &:disabled {
+          @apply border-zinc-500 bg-zinc-800 text-zinc-500;
+
+          .button-custom-icon {
+            @apply text-zinc-600;
+          }
         }
       }
     }
@@ -60,67 +68,78 @@
       .light-section & {
         @apply border-zinc-100 bg-zinc-100 text-zinc-950;
 
-        &:not(:disabled):hover,
-        &:not(:disabled):focus {
-          @apply border-zinc-200 bg-zinc-200;
-        }
-
-        &:not(:disabled):focus {
-          @apply outline-zinc-400;
-        }
-
-        &:disabled {
-          @apply text-zinc-400;
-        }
-
         & .button-arrow-icon {
           @apply text-zinc-500;
         }
 
-        & .button-custom-icon {
-          @apply text-zinc-500;
+        &:not(:disabled) {
+          &:hover,
+          &:focus {
+            @apply border-zinc-200 bg-zinc-200;
+          }
+
+          &:focus {
+            @apply outline-zinc-400;
+          }
         }
 
-        &:not(:disabled):hover .button-custom-icon,
-        &:not(:disabled):focus .button-custom-icon {
-          @apply text-zinc-800;
+        &:disabled {
+          @apply text-zinc-400;
+
+          .button-arrow-icon {
+            @apply text-zinc-400;
+          }
+
+          .button-custom-icon {
+            @apply text-zinc-300;
+          }
         }
       }
 
       .dark-section & {
         @apply border-zinc-800 bg-zinc-800 text-zinc-50;
 
-        &:not(:disabled):hover,
-        &:not(:disabled):focus {
-          @apply border-zinc-600 bg-zinc-600;
-        }
-
-        &:not(:disabled):focus {
-          @apply outline-zinc-400;
-        }
-
-        &:disabled {
-          @apply bg-zinc-800 text-zinc-500;
-        }
-
         & .button-custom-icon {
           @apply text-zinc-400;
         }
 
-        &:not(:disabled):hover .button-custom-icon,
-        &:not(:disabled):focus .button-custom-icon {
-          @apply text-zinc-300;
+        &:not(:disabled) {
+          &:hover,
+          &:focus {
+            @apply border-zinc-600 bg-zinc-600;
+          }
+
+          &:focus {
+            @apply outline-zinc-400;
+          }
+        }
+
+        &:disabled {
+          @apply text-zinc-500;
+
+          .button-arrow-icon {
+            @apply text-zinc-500;
+          }
+
+          .button-custom-icon {
+            @apply text-zinc-600;
+          }
         }
       }
     }
 
     &.button--tertiary {
       &:not(:disabled):focus {
-        @apply underline underline-offset-8 outline-none;
+        @apply decoration-brand-400 underline underline-offset-8 outline-none;
       }
 
       .light-section & {
         @apply text-zinc-600;
+
+        & .button-arrow-icon,
+        & .button-custom-icon {
+          @apply text-zinc-600;
+        }
 
         &:not(:disabled) {
           &:hover,
@@ -128,58 +147,49 @@
             @apply text-zinc-950;
           }
 
-          &:hover .button-custom-icon,
-          &:focus .button-custom-icon {
-            @apply text-zinc-800;
+          .button-arrow-icon,
+          .button-custom-icon {
+            @apply text-zinc-950;
           }
-        }
-
-        &:not(:disabled):focus {
-          @apply decoration-brand-600 underline underline-offset-8 outline-none;
         }
 
         &:disabled {
           @apply text-zinc-400;
-        }
 
-        & .button-arrow-icon {
-          @apply text-zinc-600;
-        }
-
-        & .button-custom-icon {
-          @apply text-zinc-500;
+          .button-arrow-icon,
+          .button-custom-icon {
+            @apply text-zinc-300;
+          }
         }
       }
 
       .dark-section & {
         @apply text-zinc-300;
 
+        & .button-arrow-icon,
+        & .button-custom-icon {
+          @apply text-zinc-300;
+        }
+
         &:not(:disabled) {
           &:hover,
           &:focus {
-            @apply bg-zinc-900 text-zinc-50;
+            @apply text-zinc-50;
           }
 
-          &:hover .button-custom-icon,
-          &:focus .button-custom-icon {
-            @apply text-zinc-300;
+          .button-arrow-icon,
+          .button-custom-icon {
+            @apply text-zinc-50;
           }
-        }
-
-        &:not(:disabled):focus {
-          @apply decoration-brand-300 underline underline-offset-8 outline-none;
         }
 
         &:disabled {
           @apply text-zinc-500;
-        }
 
-        & .button-arrow-icon {
-          @apply text-zinc-300;
-        }
-
-        & .button-custom-icon {
-          @apply text-zinc-400;
+          .button-arrow-icon,
+          .button-custom-icon {
+            @apply text-zinc-600;
+          }
         }
       }
     }
