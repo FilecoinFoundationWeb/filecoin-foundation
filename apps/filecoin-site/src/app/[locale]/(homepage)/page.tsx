@@ -6,7 +6,7 @@ import { BookIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
-import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection'
+import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoSection'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'

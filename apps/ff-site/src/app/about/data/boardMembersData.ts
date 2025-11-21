@@ -2,7 +2,7 @@ import type { MemberData } from '@/types/memberType'
 
 import JoeLandon from '@/assets/headshots/Joe_Landon.png'
 import KristinSmith from '@/assets/headshots/Kristin_Smith.png'
-import MartaBelcher from '@/assets/headshots/Marta_Belcher.png'
+import MartaBelcher from '@/assets/headshots/Marta_Belcher.webp'
 import PhilipRosedale from '@/assets/headshots/Philip_Rosedale.png'
 import SheilaWarren from '@/assets/headshots/Sheila_Warren.png'
 
@@ -14,10 +14,10 @@ export const boardMembersData: Array<MemberData> = [
     image: MartaBelcher,
   },
   {
-    name: 'Sheila Warren',
-    title: 'CEO, Project Liberty Institute',
-    linkedin: 'https://www.linkedin.com/in/sheilawarren/',
-    image: SheilaWarren,
+    name: 'Joe Landon',
+    title: 'Co-Founder & President, Rendezvous Robotics',
+    linkedin: 'https://www.linkedin.com/in/joelandon/',
+    image: JoeLandon,
   },
   {
     name: 'Kristin Smith',
@@ -32,9 +32,9 @@ export const boardMembersData: Array<MemberData> = [
     image: PhilipRosedale,
   },
   {
-    name: 'Joe Landon',
-    title: 'Co-Founder & President, Rendezvous Robotics',
-    linkedin: 'https://www.linkedin.com/in/joelandon/',
-    image: JoeLandon,
+    name: 'Sheila Warren',
+    title: 'CEO, Project Liberty Institute',
+    linkedin: 'https://www.linkedin.com/in/sheilawarren/',
+    image: SheilaWarren,
   },
 ]

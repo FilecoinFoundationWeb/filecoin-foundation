@@ -13,23 +13,17 @@
     "prepare": "test \"$CI\" = \"true\" || husky"
   },
   "devDependencies": {
-    "glob": "^11.0.3",
+    "glob": "^11.1.0",
     "husky": "^9.1.7",
     "markdownlint-cli2": "^0.18.0",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "syncpack": "^13.0.4",
-    "turbo": "^2.6.0"
-  },
-  "dependencies": {
-    "zod": "^4.1.12",
-    "next": "16.0.1",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "turbo": "^2.5.8"
   },
   "overrides": {
-    "next-plausible": {
-      "next": "$next"
-    }
-  }
+    "dompurify": "^3.3.0",
+    "jsonpath-plus": "^10.3.0"
+  },
+  "version": "0.0.1"
 }

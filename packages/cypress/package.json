@@ -18,12 +18,14 @@
     "lint": "eslint src --fix"
   },
   "devDependencies": {
-    "typescript": "^5.9.3",
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0"
   },
   "peerDependencies": {
+    "@filecoin-foundation/utils": "0.0.0",
+    "@percy/cypress": "^3.1.6",
     "cypress": "^15.5.0",
-    "@percy/cypress": "^3.1.6"
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3"
   }
 }

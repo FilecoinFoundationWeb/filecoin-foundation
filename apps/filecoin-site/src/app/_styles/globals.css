@@ -4,60 +4,6 @@
 @source '../../../../../node_modules/@filecoin-foundation/ui';
 @source '../../../../../node_modules/@filecoin-foundation/ui-filecoin';
 
-@plugin '@tailwindcss/typography';
-
-@utility brand-outline {
-  outline: 2px solid var(--color-brand-600);
-  outline-offset: 0px;
-  border-color: transparent;
-}
-
-@utility icon-button {
-  @apply rounded-full border border-[var(--color-icon-button-border)] text-[var(--color-text-base)] hover:border-[var(--color-icon-button-border-hover)] hover:bg-[var(--color-icon-button-background-hover)] focus:bg-[var(--color-icon-button-background-hover)];
-
-  .share-article-list & {
-    @apply scale-70;
-  }
-}
-
-/* SECTION VARIANT COLORS */
-:root,
-.light-section {
-  /* Component specific colors */
-  --color-navigation-link-text: theme('colors.zinc.900');
-  --color-navigation-link-background-active: theme('colors.zinc.100');
-
-  --color-card-heading-hover: theme('colors.brand.800');
-  --color-card-background-hover: theme('colors.zinc.50');
-
-  --color-icon-button-border: theme('colors.zinc.300');
-  --color-icon-button-border-hover: theme('colors.zinc.400');
-  --color-icon-button-background-hover: theme('colors.zinc.100');
-
-  --color-navigation-menu-panel-background: theme('colors.zinc.100');
-  --color-navigation-menu-panel-border: theme('colors.zinc.300');
-  --color-navigation-menu-panel-icon: theme('colors.zinc.600');
-  --color-navigation-menu-link-background-hover: theme('colors.zinc.200');
-}
-
-.dark-section {
-  /* Component specific colors */
-  --color-navigation-link-text: theme('colors.zinc.50');
-  --color-navigation-link-background-active: theme('colors.zinc.800');
-
-  --color-card-heading-hover: theme('colors.brand.500');
-  --color-card-background-hover: theme('colors.zinc.800');
-
-  --color-icon-button-border: theme('colors.zinc.600');
-  --color-icon-button-border-hover: theme('colors.zinc.500');
-  --color-icon-button-background-hover: theme('colors.zinc.700');
-
-  --color-navigation-menu-panel-background: theme('colors.zinc.800');
-  --color-navigation-menu-panel-border: theme('colors.zinc.600');
-  --color-navigation-menu-panel-icon: theme('colors.zinc.300');
-  --color-navigation-menu-link-background-hover: theme('colors.zinc.700');
-}
-
 @layer components {
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
@@ -159,23 +105,6 @@
     }
   }
 
-  /* NAVIGATION MENU   */
-  .navigation-menu-link {
-    @apply hover:bg-[var(--color-navigation-menu-link-background-hover)] focus:bg-[var(--color-navigation-menu-link-background-hover)];
-  }
-
-  .navigation-menu-link-label {
-    @apply font-medium text-[var(--color-text-base)];
-  }
-
-  .navigation-menu-link-description {
-    @apply text-[var(--color-paragraph-text)];
-  }
-
-  .navigation-menu-link-external-icon {
-    @apply text-[var(--color-navigation-menu-panel-icon)];
-  }
-
   /* NOTIFICATION DIALOG */
   .notification {
     @apply rounded-lg border border-zinc-200 bg-zinc-50 text-zinc-950;
@@ -223,16 +152,16 @@
   /* SHARE ARTICLE */
   .share-article-list {
     @apply gap-2;
+
+    & .copy-to-clipboard-button,
+    .social-link {
+      @apply scale-70;
+    }
   }
 
   /* SOCIAL LINKS */
   .social-link {
     @apply icon-button;
-  }
-
-  /* SLIDE OVER */
-  .slide-over-panel {
-    @apply bg-white;
   }
 
   /* TOOLTIP */

@@ -11,5 +11,6 @@ type InternalTextLinkProps = Omit<
 >
 
 export function InternalTextLink(props: InternalTextLinkProps) {
+  // @ts-expect-error: Types of property 'href' are incompatible: string vs RouteImpl | UrlObject
   return <SharedInternalTextLink {...props} InternalLinkComponent={Link} />
 }

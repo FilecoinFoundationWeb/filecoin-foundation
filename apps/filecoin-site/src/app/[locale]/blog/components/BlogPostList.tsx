@@ -12,7 +12,6 @@ import {
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
-
 import { SectionDivider } from '@/components/SectionDivider'
 
 import { useCategoryState } from '../hooks/useCategoryState'

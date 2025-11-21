@@ -1,0 +1,47 @@
+import type { ReactNode } from 'react'
+
+import { clsx } from 'clsx'
+
+import { ButtonRow, type ButtonRowProps } from './ButtonRow'
+import { Heading, type HeadingProps } from './Heading'
+
+type PageHeaderProps = {
+  title: HeadingProps['children']
+  description?: ReactNode
+  centered?: boolean
+  cta?: ButtonRowProps['buttons']
+}
+
+export function PageHeader({
+  title,
+  description,
+  centered,
+  cta,
+}: PageHeaderProps) {
+  return (
+    <header>
+      <div
+        className={clsx(
+          'flex max-w-3xl flex-col gap-6',
+          centered && 'mx-auto text-center',
+        )}
+      >
+        <Heading tag="h1" variant="page-heading">
+          {title}
+        </Heading>
+
+        {description && (
+          <p className="text-pretty text-(--color-paragraph-text) md:text-xl/7">
+            {description}
+          </p>
+        )}
+      </div>
+
+      {cta && (
+        <div className="mt-15">
+          <ButtonRow buttons={cta} centered={centered} />
+        </div>
+      )}
+    </header>
+  )
+}

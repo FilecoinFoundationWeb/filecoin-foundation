@@ -7,7 +7,7 @@ import { NavigationMenu } from './NavigationMenu/NavigationMenu'
 
 export function DesktopNavigation() {
   return (
-    <div className="hidden xl:flex xl:w-full xl:items-center xl:justify-between xl:gap-4">
+    <div className="flex w-full items-center justify-between gap-4">
       <ul aria-label="Main navigation menu" className="flex items-center gap-6">
         {headerNavigationItems.map((item) => {
           if ('items' in item) {

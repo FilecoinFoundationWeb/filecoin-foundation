@@ -17,6 +17,7 @@ export function SmartTextLink(props: SmartTextLinkProps) {
     <SharedSmartTextLink
       {...props}
       baseDomain={BASE_DOMAIN}
+      // @ts-expect-error: Types of property 'href' are incompatible: string vs RouteImpl | UrlObject
       InternalLinkComponent={Link}
     />
   )

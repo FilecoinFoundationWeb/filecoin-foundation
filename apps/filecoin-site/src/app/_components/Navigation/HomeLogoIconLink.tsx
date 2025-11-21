@@ -1,3 +1,5 @@
+'use client'
+
 import { Link } from '@/i18n/navigation'
 
 import {
@@ -11,6 +13,12 @@ type HomeLogoIconLinkProps = Pick<HomeLogoLinkProps, 'onNavigate'>
 
 export function HomeLogoIconLink(props: HomeLogoIconLinkProps) {
   return (
-    <HomeLogoLink logo={IconLogo} height={40} LinkComponent={Link} {...props} />
+    <HomeLogoLink
+      logo={IconLogo}
+      height={40}
+      // @ts-expect-error: Types of property 'prefetch' are incompatible between next-intl Link and Next.js Link
+      LinkComponent={Link}
+      {...props}
+    />
   )
 }
