@@ -10,9 +10,13 @@
     "lint:md": "markdownlint-cli2 \"apps/**/*.md\" \"!**/node_modules/**\" --config .markdownlint.jsonc",
     "check:versions": "syncpack list-mismatches",
     "fix:versions": "syncpack fix-mismatches",
-    "prepare": "test \"$CI\" = \"true\" || husky"
+    "prepare": "test \"$CI\" = \"true\" || husky",
+    "changeset": "changeset add",
+    "version": "changeset version",
+    "publish": "changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.7",
     "glob": "^11.1.0",
     "husky": "^9.1.7",
     "markdownlint-cli2": "^0.18.0",
