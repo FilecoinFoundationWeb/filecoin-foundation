@@ -285,6 +285,10 @@
     "./utils/linkUtils": {
       "types": "./dist/utils/linkUtils.d.ts",
       "default": "./dist/utils/linkUtils.js"
+    },
+    "./utils/dateUtils": {
+      "types": "./dist/utils/dateUtils.d.ts",
+      "default": "./dist/utils/dateUtils.js"
     }
   },
   "scripts": {
