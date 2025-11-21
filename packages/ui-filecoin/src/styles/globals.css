@@ -3,8 +3,17 @@
 @import './announcement.css';
 @import './button.css';
 @import './card-image.css';
+@import './icon-button.css';
+@import './listbox.css';
 @import './logo-section.css';
+@import './navigation.css';
+@import './slide-over.css';
+@import './state-card.css';
+@import './table.css';
 @import './text-link.css';
+@import './text-input.css';
+
+@plugin '@tailwindcss/typography';
 
 @theme {
   --color-brand-50: oklch(0.98 0.0157 216.67); /* #EDFBFF */
@@ -23,18 +32,6 @@
   --color-brand-error: var(--color-red-500);
   --color-brand-error-dark: var(--color-red-300);
 
-  --gradient-brand-dark: linear-gradient(
-    90deg,
-    var(--color-brand-500),
-    var(--color-brand-700)
-  );
-
-  --gradient-brand-light: linear-gradient(
-    90deg,
-    var(--color-brand-300),
-    var(--color-brand-500)
-  );
-
   --spacing-readable: 60ch;
 
   --tracking-tight: -1%;
@@ -43,6 +40,12 @@
 @theme inline {
   --font-sans: var(--font-funnel-sans);
   --font-heading: var(--font-aspekta);
+}
+
+@utility brand-outline {
+  outline: 2px solid var(--color-brand-600);
+  outline-offset: 0px;
+  border-color: transparent;
 }
 
 /* SECTION VARIANT COLORS */

@@ -5,7 +5,6 @@ import computerMontherboardCircuit from '@/assets/images/computer-motherboard-ci
 import historicLibrary from '@/assets/images/historic-library.webp'
 import testTubes from '@/assets/images/test-tubes.webp'
 
-
 export const whatIsFilecoinUsedFor = [
   {
     title: 'Web3 apps & AI datasets',
