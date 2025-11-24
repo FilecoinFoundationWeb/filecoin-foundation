@@ -40,4 +40,4 @@ These scholars represent the forefront of research into emerging blockchain tech
 
 Join us for the IAS Virtual Kickoff *(original link no longer available)* on September 26, 2023 at 8:30 AM PT to learn more about the topics they’ll be exploring as part of the IAS program! 
 
-Be sure to [subscribe](https://www.blockchainlawsg.org/) to the Center’s mailing list to stay up-to-date on their work
+Be sure to [subscribe](https://www.usfca.edu/law/engaged-learning/center-law-tech-social-good/) to the Center’s mailing list to stay up-to-date on their work

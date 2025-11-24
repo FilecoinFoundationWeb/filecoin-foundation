@@ -22,11 +22,11 @@ The Filecoin network successfully completed the Golden Week upgrade (Network v27
 
 The Golden Week upgrade deprecates old methods, introduces BLS precompiles, and enables smarter integrations through notifications and snapshots. This ensures that the Filecoin protocol is leaner, more secure, and easier to build on.
 
-### [FIP-0105 Introduces BLS12-381 Precompiles for FEVM (EIP-2537)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0105.md)
+### [FIP-0105 Introduces BLS12-381 Precompiles for FEVM (EIP-2537)](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0105.md)
 
 FIP-0105 introduces BLS12-381 precompiles for the FEVM in alignment with Ethereum’s [EIP-2537](https://eips.ethereum.org/EIPS/eip-2537#abstract). EIP-2537 adds precompiled contracts for BLS12–381 curve operations to Ethereum, which enables efficient BLS signature verification. Previously, these operations were slow or incompatible with Filecoin; now this upgrade builds them directly into the network. BLS signatures are widely used in blockchain applications including rollups, identity systems, and consensus mechanisms, which brings Filecoin closer to full compatibility with Ethereum and makes it easier for developers to port their applications.
 
-### [FIP-0077 Adds A Cost Opportunity for New Storage Providers](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0077.md)
+### [FIP-0077 Adds A Cost Opportunity for New Storage Providers](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0077.md)
 
 This proposal introduces a financial deposit requirement for prospective storage providers on the Filecoin network. Before the upgrade, the near-zero cost of creating a miner actor enabled bad actors to spam the network by creating thousands of fake miner actors causing congestion and increasing the cost of state migrations for everyone.
 
@@ -34,15 +34,15 @@ To remedy this, this improvement requires new SPs to deposit approximate 4 FIL (
 
 ## Protocol Maintenance 
 
-### [FIP-0103 Removes the ExtendSectorExpiration Method from the SP Actor](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0103.md)
+### [FIP-0103 Removes the ExtendSectorExpiration Method from the SP Actor](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0103.md)
 
 To reduce the protocol's technical debt, FIP-0103 removes an old, outdated function called **_ExtendSectorExpiration_** from Filecoin's code that allowed storage providers to extend how long they commit to storing data. The function became redundant when a newer, better version called **_ExtendSectorExpiration2_** was introduced, which achieves the same function as the original, plus additional features for handling verified data. The change simplifies Filecoin's codebase, reduces maintenance work, and eliminates potential sources of bugs through having only one method to do the same thing.
 
-### [FIP-0106 Removes the ProveReplicaUpdates Method From the SP Actor](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0106.md)
+### [FIP-0106 Removes the ProveReplicaUpdates Method From the SP Actor](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0106.md)
 
 FIP-0106 removes another outdated function from Filecoin's code called **_ProveReplicaUpdates_** that allowed storage providers to update their sealed storage sectors with new data without having to completely re-seal them (called Snap Deals). Similar to FIP-0103, a newer and better version called **_ProveReplicaUpdates3_** was introduced that achieved the same functionality more efficiently and flexibly. Storage providers will continue to have full Snap Deals functionality through the newer, improved method.
 
-### [FIP-0101 Removes the ProveCommitAggregate Method from the SP Actor](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0101.md)
+### [FIP-0101 Removes the ProveCommitAggregate Method from the SP Actor](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0101.md)
 
 FIP-0101 removes the deprecated **_ProveCommitAggregate_** method, a batch processing function that occurs when storage providers commit to storing data using aggregate proofs, in favor of a newer method called **_ProveCommitSectors3_** that was previously introduced. Storage providers retain all the same functionality through the newer, more efficient method. This ensures that the Filecoin protocol is easier to maintain while preserving the full set of commit capabilities for storage providers.
 
@@ -50,9 +50,9 @@ FIP-0101 removes the deprecated **_ProveCommitAggregate_** method, a batch proce
 
 The upgrade introduces new notifications that allow smart contracts to respond instantly to data storage events, starting the foundation for trustless data marketplaces and applications.
 
-### [FIP-0109 Enables Smart Contract Notifications for Direct Data Onboarding (DDO)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0109.md)
+### [FIP-0109 Enables Smart Contract Notifications for Direct Data Onboarding (DDO)](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0109.md)
 
-Filecoin previously introduced Direct Data Onboarding as part of [FIP-0076](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0076.md) with a notification system that alerts relevant parties when new data gets stored on the network. However, only Filecoin's built-in storage marketplace could receive these notifications about new data being stored. This upgrade generalizes that capability, allowing any smart contract or application to subscribe to notifications. By opening this up, the network is building a path for new data-driven applications on Filecoin, such as custom marketplaces, data DAOs, and data verification services, advancing Filecoin toward becoming a comprehensive marketplace of storage services.  Work to [expose the Sector Status Method to smart contracts](https://github.com/filecoin-project/FIPs/discussions/1108) to support self-contained smart contract storage markets based on Proof of Data Replication will follow.
+Filecoin previously introduced Direct Data Onboarding as part of [FIP-0076](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0076.md) with a notification system that alerts relevant parties when new data gets stored on the network. However, only Filecoin's built-in storage marketplace could receive these notifications about new data being stored. This upgrade generalizes that capability, allowing any smart contract or application to subscribe to notifications. By opening this up, the network is building a path for new data-driven applications on Filecoin, such as custom marketplaces, data DAOs, and data verification services, advancing Filecoin toward becoming a comprehensive marketplace of storage services.  Work to [expose the Sector Status Method to smart contracts](https://github.com/filecoin-project/FIPs/tree/master/discussions/1108) to support self-contained smart contract storage markets based on Proof of Data Replication will follow.
 
 ### [FRC-0108 Enhances the Filecoin Snapshot Format](https://github.com/filecoin-project/FIPs/blob/master/FRCs/frc-0108.md#frc-0108-filecoin-snapshot-format)
 

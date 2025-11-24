@@ -28,7 +28,7 @@ seo:
 ### Governance
 
 - Filecoin Foundation led the Governance & Community track at FDS-6, exploring new ways to scale community capability, participation, and alignment through faster decision-making tools, metrics, and an iterative improvement process, capped off by a major milestone with a test of [vote.fil.org](http://vote.fil.org) during the summit. 
-- Join the Filecoin governance discussion! To get involved, visit the [Governance GitHub](https://github.com/filecoin-project/FIPs) and join the conversation in the [#fil-gov Slack channel.](https://filecoinproject.slack.com/archives/C0535S9TUUF) These spaces are an open forum for Filecoin community members to come together and discuss important issues and initiatives related to the governance of the Filecoin Network. The FIP pipeline as of June 1, 2025 includes:  
+- Join the Filecoin governance discussion! To get involved, visit the [Governance GitHub](https://github.com/filecoin-project/FIPs) and join the conversation in the [#fil-gov Slack channel.](https://filecoin.io/slack) These spaces are an open forum for Filecoin community members to come together and discuss important issues and initiatives related to the governance of the Filecoin Network. The FIP pipeline as of June 1, 2025 includes:  
 - 7 Discussions in motion
 - 6 FIPs marked Accepted
 - 2 new FIPs entering the pipeline 
@@ -37,7 +37,7 @@ seo:
 
 - All organizations, existing and new, who wish to serve as Allocators in the Fil+ program must submit an updated application for 2025 at [https://apply.allocator.tech/](https://apply.allocator.tech/).
 - [FIL Dev Summit Update: An In-Depth Look at Recent Filecoin Plus Enhancements.](/blog/fil-dev-summit-update-an-in-depth-look-at-recent-filecoin-plus-enhancements) With FDS in the books, check out some recent enhancements to the Filecoin Plus (Fil+) program that are crucial for fostering a robust, transparent, and effective community. 
-- The [May 27 Allocator Call](https://youtu.be/EVXJP7yZivY?feature=shared) is available on YouTube. If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar.](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles)
+- The [May 27 Allocator Call](https://youtu.be/EVXJP7yZivY?feature=shared) is available on YouTube. If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar.](https://lu.ma/filecoin)
 
 ## Comms, Marketing, & Events
 

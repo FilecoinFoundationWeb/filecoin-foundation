@@ -27,4 +27,4 @@ In the coming months, the Council will be building out platforms for policy enga
 - The Decentralized Web Policy Summit (April 2022): An in-person event in Washington, DC featuring Web3 thought leaders set to discuss the decentralized web's potential in policy areas.
 - 1st Annual Decentralized Web Policy Forum (August 2022): An invite-only gathering in Jackson Hole bringing together key policymakers, dweb stakeholders, and members of the press. The Summit will tackle broader policy issues related to the emerging decentralized web.
 
-Stay tuned for additional details on DFC initiatives. The Decentralized Future Council can be found on the web at [decentralizedfuturecouncil.org](http://www.decentralizedfuturecouncil.org/) and on Twitter @dfuturecouncil.
+Stay tuned for additional details on DFC initiatives. The Decentralized Future Council can be found on the web at [decentralizedfuturecouncil.org](https://www.decentralizedfuturecouncil.org/) and on Twitter @dfuturecouncil.
