@@ -314,7 +314,6 @@
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@phosphor-icons/react": "^2.1.10",
-    "@tanstack/react-table": "^8.21.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
@@ -336,6 +335,7 @@
   },
   "peerDependencies": {
     "@tailwindcss/typography": "^0.5.19",
+    "@tanstack/react-table": "^8.21.3",
     "next": "^15.5.6",
     "react": "^19.2.0",
     "tailwindcss": "^4.1.14"
