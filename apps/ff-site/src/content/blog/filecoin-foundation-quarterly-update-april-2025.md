@@ -69,9 +69,9 @@ Filecoin builders are shaping the future of AI and other emerging technologies a
 
 FF’s Developer Grants Updates bring news and highlights from the FF Developer Grants team. [The second issue](/blog/developer-grants-updates-february-2025), published in February, explores how FF continues to support new, impactful projects and introduce program updates to empower more developers in the Filecoin ecosystem. A few proposals that we recently funded include:
 
-- [Eastore](https://github.com/filecoin-project/devgrants/issues/1770): An onchain way of storing small files on Filecoin, as an alternative to traditional centralized file storage protocols. 
-- [UCAN development support](https://github.com/filecoin-project/devgrants/issues/1776): A project supporting the development of multiple User Controlled Authorization Network (UCAN) functionalities, including v1 JS UCAN implementation, debugger, and other developer tooling and resources for ecosystem projects using UCANs. 
-- [IPNI Reverse Index](https://github.com/filecoin-project/devgrants/issues/1781): This project will help assess the quality of Filecoin retrieval services and drive improvements. 
+- [Eastore](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1770): An onchain way of storing small files on Filecoin, as an alternative to traditional centralized file storage protocols. 
+- [UCAN development support](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1776): A project supporting the development of multiple User Controlled Authorization Network (UCAN) functionalities, including v1 JS UCAN implementation, debugger, and other developer tooling and resources for ecosystem projects using UCANs. 
+- [IPNI Reverse Index](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1781): This project will help assess the quality of Filecoin retrieval services and drive improvements. 
 
 For a more comprehensive look at developer projects we have funded in the past, check out Filecoin Foundation’s [2024 Annual Report](/blog/filecoin-foundation-2024-annual-report). 
 
@@ -111,7 +111,7 @@ Fast Finality in Filecoin (F3) will speed up finality on the network by up to 45
 
 #### Milestone: 100 Filecoin Improvement Proposals
 
-The Filecoin community has reached a milestone — 100 Filecoin Improvement Proposals have been considered to date. Through the Filecoin Improvement Proposal (FIP) process, FF aims to facilitate a decentralized, innovative, and transparent system to support community decision-making and collective ownership of the Filecoin technology. However you choose to participate in Filecoin governance, we hope you will get involved. By joining ongoing governance discussions, reviewing FIPs, and staying connected with the latest developments through the [fil-gov Slack channel](https://filecoinproject.slack.com/archives/C0535S9TUUF) you're helping shape the future of the Filecoin network.
+The Filecoin community has reached a milestone — 100 Filecoin Improvement Proposals have been considered to date. Through the Filecoin Improvement Proposal (FIP) process, FF aims to facilitate a decentralized, innovative, and transparent system to support community decision-making and collective ownership of the Filecoin technology. However you choose to participate in Filecoin governance, we hope you will get involved. By joining ongoing governance discussions, reviewing FIPs, and staying connected with the latest developments through the [fil-gov Slack channel](https://filecoin.io/slack) you're helping shape the future of the Filecoin network.
 
 ### Filecoin Plus: Scaling Utilization of the Filecoin Network 
 
