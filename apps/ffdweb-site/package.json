@@ -41,7 +41,7 @@
     "schema-dts": "^1.1.5",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.20.6",
-    "zod": "^4.1.12"
+    "zod": "^4.1.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
@@ -50,12 +50,12 @@
     "@filecoin-foundation/typescript-config": "0.0.0",
     "@next/eslint-plugin-next": "^15.5.6",
     "@percy/cli": "^1.31.4",
-    "@percy/cypress": "^3.1.6",
+    "@percy/cypress": "^3.1.7",
     "@svgr/webpack": "^8.1.0",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22",
-    "@types/react": "19.2.2",
-    "@types/react-dom": "19.2.2",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
     "cypress": "^15.5.0",
     "eslint": "^9.38.0",
     "eslint-config-prettier": "^10.1.8",
