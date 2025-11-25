@@ -1,0 +1,51 @@
+name: Analyze Changeset for @filecoin-foundation/ui-filecoin
+description: Analyzes code changes to determine the appropriate version bump (major/minor/patch) and generate a changeset summary
+
+query: |
+  Changeset help for @filecoin-foundation/ui-filecoin
+  
+  Changes:
+  {{changes}}
+  
+  Current version: {{current_version}}
+  Breaking changes? {{breaking}}
+  New features? {{new_features}}
+  Bug fixes? {{bug_fixes}}
+  
+  → What bump? (major/minor/patch)
+  → What summary?
+
+arguments:
+  - name: changes
+    description: Describe or paste the git diff showing what changed
+    type: text
+    default: ""
+  
+  - name: current_version
+    description: Current version of the package
+    type: text
+    default: ""
+  
+  - name: breaking
+    description: Does this include breaking changes?
+    type: enum
+    values:
+      - "Yes"
+      - "No"
+    default: "No"
+  
+  - name: new_features
+    description: Does this include new features?
+    type: enum
+    values:
+      - "Yes"
+      - "No"
+    default: "No"
+  
+  - name: bug_fixes
+    description: Does this include bug fixes?
+    type: enum
+    values:
+      - "Yes"
+      - "No"
+    default: "No"

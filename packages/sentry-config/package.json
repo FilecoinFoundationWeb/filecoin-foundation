@@ -8,5 +8,8 @@
   },
   "exports": {
     ".": "./src/index.ts"
+  },
+  "peerDependencies": {
+    "@sentry/nextjs": "^10.27.0"
   }
 }

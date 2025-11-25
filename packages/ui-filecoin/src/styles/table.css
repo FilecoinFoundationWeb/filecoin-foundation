@@ -4,3 +4,9 @@
   --color-table-background: var(--color-zinc-100);
   --color-table-border: var(--color-zinc-200);
 }
+
+tr[data-slot='table-row'] {
+  tbody & {
+    @apply hover:bg-table-background;
+  }
+}

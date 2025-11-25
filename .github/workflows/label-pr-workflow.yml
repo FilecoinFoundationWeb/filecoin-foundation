@@ -32,7 +32,7 @@ jobs:
     if: github.event.pull_request.head.repo.full_name == github.repository && github.base_ref == 'main'
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 2
 
