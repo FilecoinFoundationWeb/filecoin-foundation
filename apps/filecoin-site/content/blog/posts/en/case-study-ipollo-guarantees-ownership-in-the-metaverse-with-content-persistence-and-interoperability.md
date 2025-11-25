@@ -85,7 +85,7 @@ iPollo’ data consists mainly of NFTs that can be minted for avatars, spaces, a
 
 ## Solution: Filecoin and NDLabs
 
-[NDLabs](https://www.ndlabs.io/) is a software development studio that helps businesses find the right technology solutions for their products. Thanks to its experience in building solutions for NFTs and the metaverse, the studio was able to assist iPollo in making the right infrastructure decisions for its platform.
+[NDLabs](https://www.ndlabs.io/#/) is a software development studio that helps businesses find the right technology solutions for their products. Thanks to its experience in building solutions for NFTs and the metaverse, the studio was able to assist iPollo in making the right infrastructure decisions for its platform.
 
 By working with NDLabs, the iPollo team was able to deploy its platform for testnet using Filecoin for decentralized storage. The team has even integrated partner solutions into its ecosystem since then. These include AI-generated avatars, wallets, and voice systems. Altogether, iPollo has stored over 4 PiB in files on Filecoin during this phase of development.
 
