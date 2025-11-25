@@ -1,3 +1,4 @@
+import { formatDateTime } from '../../utils/dateUtils'
 import { ExternalTextLink } from '../TextLink/ExternalTextLink'
 
 type SoftwareVersionProps = {
@@ -13,6 +14,7 @@ export function SoftwareVersion({ info, githubUrl }: SoftwareVersionProps) {
   }
 
   const { version, network, commit, date } = match
+  const formattedDate = date ? formatDateTime(date) : null
 
   return (
     <div className="space-y-0.5 text-sm text-gray-600">
@@ -25,7 +27,7 @@ export function SoftwareVersion({ info, githubUrl }: SoftwareVersionProps) {
           </ExternalTextLink>
         </p>
       )}
-      {date && <p>{date}</p>}
+      {formattedDate && <p>{formattedDate}</p>}
     </div>
   )
 }

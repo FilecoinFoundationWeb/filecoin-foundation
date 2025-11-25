@@ -10,7 +10,7 @@
         ".env.production",
         ".env"
       ],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "dev": {
       "persistent": true,
