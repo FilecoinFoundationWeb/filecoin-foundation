@@ -1,8 +1,9 @@
 'use client'
 
+import { NavigationMainLink } from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMainLink'
+
 import { headerNavigationItems } from './constants/navigation'
 import { NavigationLanguageToggle } from './NavigationLanguageToggle'
-import { NavigationMainLink } from './NavigationMainLink'
 import { NavigationMenu } from './NavigationMenu/NavigationMenu'
 
 export function DesktopNavigation() {

@@ -5,9 +5,10 @@ import {
   PlugIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
+import type { LinkCardData } from '@filecoin-foundation/ui-filecoin/LinkCard'
+
 import { FILECOIN_DOCS_URL, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
-import type { LinkCardData } from '@/components/LinkCard'
 
 export const developerResources = [
   {

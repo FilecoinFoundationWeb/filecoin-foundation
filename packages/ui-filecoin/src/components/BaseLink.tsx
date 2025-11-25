@@ -1,33 +1,20 @@
-import type { AnchorHTMLAttributes, ComponentType } from 'react'
+import type { AnchorHTMLAttributes } from 'react'
 
-import Link, { type LinkProps } from 'next/link'
-
+import { getUIConfig } from '../config/ui-config'
 import { isInternalLink } from '../utils/linkUtils'
-
-type GenericLink = ComponentType<Omit<LinkProps<unknown>, 'locale'>>
 
 export type BaseLinkProps = {
   href: string
-  baseDomain: string
-  InternalLinkComponent?: GenericLink
-} & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>
+} & AnchorHTMLAttributes<HTMLAnchorElement>
 
-export function BaseLink({
-  href,
-  baseDomain,
-  InternalLinkComponent = Link,
-  ...rest
-}: BaseLinkProps) {
+export function BaseLink({ href, ...rest }: BaseLinkProps) {
+  const { baseDomain, Link } = getUIConfig()
+
   const isInternal = isInternalLink(href, baseDomain)
   const isMailto = href.startsWith('mailto:')
 
   if (isInternal) {
-    return (
-      <InternalLinkComponent
-        href={href as LinkProps<unknown>['href']}
-        {...rest}
-      />
-    )
+    return <Link href={href} {...rest} />
   }
 
   if (isMailto) {

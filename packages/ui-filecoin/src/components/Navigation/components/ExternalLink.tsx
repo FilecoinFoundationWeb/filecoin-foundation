@@ -3,12 +3,14 @@ import type { ComponentProps } from 'react'
 import { ArrowUpRightIcon } from '@phosphor-icons/react'
 
 import { Icon } from '../../Icon'
-import type { LinkItemProps } from '../types'
 
 import { LinkDescription } from './LinkDescription'
 import { LinkLabel } from './LinkLabel'
 
-type ExternalLinkProps = ComponentProps<'a'> & LinkItemProps
+export type ExternalLinkProps = {
+  label: string
+  description?: string
+} & ComponentProps<'a'>
 
 export function ExternalLink({
   label,

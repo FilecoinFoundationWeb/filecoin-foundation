@@ -1,8 +1,8 @@
 import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
+import { CTALink } from '@filecoin-foundation/ui-filecoin/CTALink'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui-filecoin/Icon'
 
-import { CTALink } from '@/components/CTALink'
 
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'

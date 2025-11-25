@@ -11,17 +11,8 @@ export type TouchTarget = {
   touchAreaPadding: string
 }
 
-export type LinkItemProps = {
-  href: string
-  label: string
-  description?: string
-}
-
 export type LocalNavigationMenuLinkProps<Variants extends VariantClasses> =
-  Omit<
-    SharedNavigationMenuLinkProps<Variants>,
-    'variants' | 'baseDomain' | 'InternalLinkComponent'
-  > & {
+  Omit<SharedNavigationMenuLinkProps<Variants>, 'variants'> & {
     variant?: keyof Variants
   }
 

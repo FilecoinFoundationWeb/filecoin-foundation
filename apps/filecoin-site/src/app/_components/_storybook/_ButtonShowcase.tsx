@@ -2,10 +2,10 @@
 
 import { BookOpenIcon } from '@phosphor-icons/react'
 
+import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
-import { Button } from '@/components/Button'
 
 export function ButtonShowcase() {
   return (

@@ -1,32 +1,29 @@
-import type { ComponentType, ComponentProps } from 'react'
+import type { ComponentProps, ComponentType } from 'react'
 
-import Link from 'next/link'
-
-type LinkProps = ComponentProps<typeof Link>
+import { getUIConfig, type UIConfig } from '../config/ui-config'
 
 export type HomeLogoLinkProps = {
   logo: ComponentType<React.SVGProps<SVGSVGElement>>
-  onNavigate?: LinkProps['onNavigate']
   color?: `text-${string}`
-  LinkComponent?: ComponentType<Omit<LinkProps, 'locale'>>
-} & Pick<React.SVGProps<SVGSVGElement>, 'height'>
+  height: number
+} & ComponentProps<UIConfig['Link']>
 
 export function HomeLogoLink({
   logo: Logo,
-  onNavigate,
-  LinkComponent = Link,
   color,
-  ...svgProps
+  height,
+  ...rest
 }: HomeLogoLinkProps) {
+  const { Link } = getUIConfig()
   return (
-    <LinkComponent
+    <Link
+      href="/"
       className="focus:brand-outline inline-block"
-      href={'/' as LinkProps['href']}
       aria-label="Go to homepage"
-      onNavigate={onNavigate}
+      {...rest}
     >
-      <Logo {...svgProps} className={color} />
+      <Logo className={color} height={height} />
       <span className="sr-only">Home</span>
-    </LinkComponent>
+    </Link>
   )
 }

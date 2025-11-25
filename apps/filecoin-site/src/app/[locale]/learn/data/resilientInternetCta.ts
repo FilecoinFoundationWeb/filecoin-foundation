@@ -5,9 +5,10 @@ import {
   DatabaseIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
+import type { LinkCardData } from '@filecoin-foundation/ui-filecoin/LinkCard'
+
 import { PATHS } from '@/constants/paths'
 
-import type { LinkCardData } from '@/components/LinkCard'
 
 export const resilientInternetCta = [
   {

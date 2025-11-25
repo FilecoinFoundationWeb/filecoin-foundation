@@ -261,10 +261,6 @@
       "types": "./dist/components/TextLink/SmartTextLink.d.ts",
       "default": "./dist/components/TextLink/SmartTextLink.js"
     },
-    "./TextLink/types": {
-      "types": "./dist/components/TextLink/types/index.d.ts",
-      "default": "./dist/components/TextLink/types/index.js"
-    },
     "./constants/tailwindConstants": {
       "types": "./dist/constants/tailwindConstants.d.ts",
       "default": "./dist/constants/tailwindConstants.js"
@@ -289,6 +285,10 @@
     "./utils/dateUtils": {
       "types": "./dist/utils/dateUtils.d.ts",
       "default": "./dist/utils/dateUtils.js"
+    },
+    "./config/ui-config": {
+      "types": "./dist/config/ui-config.d.ts",
+      "default": "./dist/config/ui-config.js"
     }
   },
   "scripts": {

@@ -1,25 +1,22 @@
-import Link from 'next/link'
+import type { ComponentProps } from 'react'
 
-import type { GenericLinkProps, GenericLinkType } from '../../TextLink/types'
-import type { LinkItemProps } from '../types'
+import { getUIConfig, type UIConfig } from '../../../config/ui-config'
 
 import { LinkDescription } from './LinkDescription'
 import { LinkLabel } from './LinkLabel'
 
-type InternalLinkProps = GenericLinkProps &
-  LinkItemProps & {
-    InternalLinkComponent?: GenericLinkType
-  }
+export type InternalLinkProps = ComponentProps<UIConfig['Link']>
 
 export function InternalLink({
   label,
   href,
   description,
-  InternalLinkComponent = Link as GenericLinkType,
   ...rest
 }: InternalLinkProps) {
+  const { Link } = getUIConfig()
+
   return (
-    <InternalLinkComponent href={href} {...rest}>
+    <Link href={href} {...rest}>
       <LinkLabel>{label}</LinkLabel>
 
       {description && (
@@ -27,6 +24,6 @@ export function InternalLink({
           <LinkDescription>{description}</LinkDescription>
         </div>
       )}
-    </InternalLinkComponent>
+    </Link>
   )
 }

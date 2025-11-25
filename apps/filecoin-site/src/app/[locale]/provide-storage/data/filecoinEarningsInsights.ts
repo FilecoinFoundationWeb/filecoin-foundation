@@ -1,6 +1,7 @@
+import type { SimpleCardData } from '@filecoin-foundation/ui-filecoin/SimpleCard'
+
 import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
-import type { SimpleCardData } from '@/components/SimpleCard'
 
 export const filecoinEarningsInsights = [
   {

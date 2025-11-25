@@ -8,8 +8,7 @@ import { Button } from '@headlessui/react'
 import { clsx } from 'clsx'
 import { useLocale } from 'next-intl'
 
-
-import { desktopStyle } from './NavigationMainLink'
+import { desktopStyle } from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMainLink'
 
 type Languages = Record<Locale, { label: string; name: string }>
 

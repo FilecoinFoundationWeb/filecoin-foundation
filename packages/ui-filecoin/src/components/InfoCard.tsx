@@ -1,6 +1,8 @@
 import { cva } from 'class-variance-authority'
 
-import { BaseLink } from './BaseLink'
+import { getUIConfig } from '../config/ui-config'
+
+import { BaseLink, type BaseLinkProps } from './BaseLink'
 import { Icon, type IconProps } from './Icon'
 
 const cardVariants = cva(
@@ -25,13 +27,11 @@ type InfoCardBaseProps = {
 
 type InfoCardWithoutLink = InfoCardBaseProps & {
   href?: undefined
-  baseDomain?: undefined
   ariaLabel?: undefined
 }
 
 type InfoCardWithLink = InfoCardBaseProps & {
-  href: string
-  baseDomain: string
+  href: BaseLinkProps['href']
   ariaLabel: string
 }
 
@@ -42,9 +42,9 @@ export function InfoCard({
   text,
   icon,
   href,
-  baseDomain,
   ariaLabel,
 }: InfoCardProps) {
+  const { baseDomain } = getUIConfig()
   const hasLink = href && baseDomain && ariaLabel
 
   return (
@@ -60,7 +60,6 @@ export function InfoCard({
         {hasLink ? (
           <BaseLink
             href={href}
-            baseDomain={baseDomain}
             aria-label={ariaLabel}
             className="after:absolute after:inset-0 focus:outline-none"
           >

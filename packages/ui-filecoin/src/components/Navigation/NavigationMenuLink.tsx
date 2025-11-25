@@ -1,34 +1,32 @@
 import { clsx } from 'clsx'
-import Link from 'next/link'
 
+import { getUIConfig } from '../../config/ui-config'
 import { isExternalLink } from '../../utils/linkUtils'
-import type { GenericLinkType } from '../TextLink/types'
 
-import { ExternalLink } from './components/ExternalLink'
-import { InternalLink } from './components/InternalLink'
-import type { LinkItemProps } from './types'
+import { ExternalLink, type ExternalLinkProps } from './components/ExternalLink'
+import { InternalLink, type InternalLinkProps } from './components/InternalLink'
 
 export type VariantClasses = {
   internal: string
   [key: string]: string
 }
 
-export type NavigationMenuLinkProps<Variants extends VariantClasses> =
-  LinkItemProps & {
-    variants: { options: Variants; selected?: keyof Variants }
-    baseDomain: string
-    InternalLinkComponent?: GenericLinkType
-  }
+export type NavigationMenuLinkProps<Variants extends VariantClasses> = (
+  | InternalLinkProps
+  | ExternalLinkProps
+) & {
+  variants: { options: Variants; selected?: keyof Variants }
+}
 
 export function NavigationMenuLink<Variants extends VariantClasses>({
   href,
   label,
   description,
-  baseDomain,
   variants,
-  InternalLinkComponent = Link as GenericLinkType,
   ...rest
 }: NavigationMenuLinkProps<Variants>) {
+  const { baseDomain } = getUIConfig()
+
   const variant = variants.options[variants.selected || 'internal']
   const isExternal = isExternalLink(href, baseDomain)
 
@@ -41,9 +39,5 @@ export function NavigationMenuLink<Variants extends VariantClasses>({
     ...rest,
   }
 
-  return isExternal ? (
-    <ExternalLink {...props} />
-  ) : (
-    <InternalLink {...props} InternalLinkComponent={InternalLinkComponent} />
-  )
+  return isExternal ? <ExternalLink {...props} /> : <InternalLink {...props} />
 }
