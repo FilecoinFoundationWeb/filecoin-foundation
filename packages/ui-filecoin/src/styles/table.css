@@ -3,7 +3,6 @@
   --color-table-foreground-muted: var(--color-zinc-600);
   --color-table-background: var(--color-zinc-100);
   --color-table-border: var(--color-zinc-200);
-  /* --spacing-table-cell-height: var(--spacing-14); */
 }
 
 tr[data-slot='table-row'] {
