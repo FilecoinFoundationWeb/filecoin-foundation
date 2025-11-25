@@ -21,7 +21,7 @@ export function ExternalLink({
     <a {...rest} rel="noopener noreferrer" target="_blank">
       <div className="group inline-flex items-center gap-1">
         <LinkLabel>{label}</LinkLabel>
-        <span className="navigation-menu-link-external-icon">
+        <span className="text-(--color-navigation-menu-panel-icon)">
           <Icon component={ArrowUpRightIcon} size={20} />
         </span>
       </div>

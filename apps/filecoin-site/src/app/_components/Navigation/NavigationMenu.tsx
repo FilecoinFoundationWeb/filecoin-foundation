@@ -9,7 +9,7 @@ import { NavigationMenuPanel } from '@filecoin-foundation/ui-filecoin/Navigation
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import type { NavigationMenuItem } from '../constants/navigation'
+import type { NavigationMenuItem } from './constants/navigation'
 
 export function NavigationMenu({ label, items }: NavigationMenuItem) {
   const isActive = useIsNavigationMenuActive({ items, baseDomain: BASE_DOMAIN })

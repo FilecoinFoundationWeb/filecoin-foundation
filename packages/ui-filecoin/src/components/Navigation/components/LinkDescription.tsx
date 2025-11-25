@@ -3,5 +3,5 @@ type LinkDescriptionProps = {
 }
 
 export function LinkDescription({ children }: LinkDescriptionProps) {
-  return <p className="navigation-menu-link-description">{children}</p>
+  return <p className="text-(--color-paragraph-text)">{children}</p>
 }
