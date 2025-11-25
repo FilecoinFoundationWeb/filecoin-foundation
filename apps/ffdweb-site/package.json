@@ -55,7 +55,7 @@
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22",
     "@types/react": "19.2.7",
-    "@types/react-dom": "19.2.2",
+    "@types/react-dom": "19.2.3",
     "cypress": "^15.5.0",
     "eslint": "^9.38.0",
     "eslint-config-prettier": "^10.1.8",

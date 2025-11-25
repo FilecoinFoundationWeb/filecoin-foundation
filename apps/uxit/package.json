@@ -24,7 +24,7 @@
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^22",
     "@types/react": "19.2.7",
-    "@types/react-dom": "19.2.2",
+    "@types/react-dom": "19.2.3",
     "@unlighthouse/cli": "^0.17.4",
     "@unlighthouse/core": "^0.17.1",
     "eslint": "^9.38.0",
