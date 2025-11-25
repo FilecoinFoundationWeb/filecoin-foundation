@@ -6,7 +6,7 @@ export function Table({ className, ...props }: React.ComponentProps<'table'>) {
   return (
     <div
       data-slot="table-container"
-      className="relative w-full overflow-x-auto border border-table-border rounded-xl"
+      className="border-table-border relative w-full overflow-x-auto rounded-xl border"
     >
       <table
         data-slot="table"
@@ -28,7 +28,7 @@ function TableHeader({ className, ...props }: React.ComponentProps<'thead'>) {
     <thead
       data-slot="table-header"
       className={clsx(
-        '[&_tr]:border-b text-table-foreground-muted text-sm font-medium bg-table-background/20',
+        'text-table-foreground-muted bg-table-background/20 text-sm font-medium [&_tr]:border-b',
         className,
       )}
       {...props}
@@ -41,7 +41,7 @@ function TableBody({ className, ...props }: React.ComponentProps<'tbody'>) {
     <tbody
       data-slot="table-body"
       className={clsx(
-        '[&_tr:last-child]:border-0 text-table-foreground text-base font-normal',
+        'text-table-foreground text-base font-normal [&_tr:last-child]:border-0',
         className,
       )}
       {...props}
@@ -54,7 +54,7 @@ function TableRow({ className, ...props }: React.ComponentProps<'tr'>) {
     <tr
       data-slot="table-row"
       className={clsx(
-        'hover:bg-table-background data-[state=selected]:bg-table-background border-b transition-colors border-table-border h-14',
+        'data-[state=selected]:bg-table-background border-table-border h-14 border-b transition-colors',
         className,
       )}
       {...props}
