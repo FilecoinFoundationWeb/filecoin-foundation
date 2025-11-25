@@ -25,7 +25,7 @@ Exploring the benefits of decentralization, Episode 2 offers examples of how dif
 
 **[Episode 3: "Data and User Control"](https://www.youtube.com/watch?v=Tab_vJ6NNGw)**
 
-In today’s Web2 world, corporations control the majority of user data online. In Episode 3 of _Exploring the Decentralized Web_, experts including Sandra Ro of the Global Blockchain Business Council _(original link no longer available)_, Sheila Warren of the [World Economic Forum](https://www.weforum.org/), Mike Masnick of [Techdirt](https://www.techdirt.com/), and Carson Farmer of [Textile](https://linktr.ee/recalllabs)examine users’ ability to control data and information on the decentralized web, and why this transition is critical for the long-term preservation of information.
+In today's Web2 world, corporations control the majority of user data online. In Episode 3 of _Exploring the Decentralized Web_, experts including Sandra Ro of the Global Blockchain Business Council _(original link no longer available)_, Sheila Warren of the [World Economic Forum](https://www.weforum.org/), Mike Masnick of [Techdirt](https://www.techdirt.com/), and Carson Farmer of [Textile](https://linktr.ee/recalllabs) examine users' ability to control data and information on the decentralized web, and why this transition is critical for the long-term preservation of information.
 
 **[Episode 4: "Digital Identity"](https://www.youtube.com/watch?v=jm8y56KMkIw&t=16s)**
 
