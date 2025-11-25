@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.3.0
+
+### Minor Changes
+
+- e87ba66: Add sorting functionality to TanstackTable headers
+
 ## 0.2.1
 
 ### Patch Changes
