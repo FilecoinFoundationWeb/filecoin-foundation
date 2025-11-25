@@ -1,3 +1,5 @@
+import '../config-initializer' // Just import to run initialization
+
 import localFont from 'next/font/local'
 
 import { DEFAULT_LOCALE } from '@/i18n/locales'
