@@ -1,9 +1,7 @@
-import type { ComponentType, SVGProps } from 'react'
-
 import Image, { type StaticImageData } from 'next/image'
 
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
-import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
+import { Icon, type IconProps } from '@filecoin-foundation/ui-filecoin/Icon'
 
 import { CTALink, type CTALinkProps } from './CTALink'
 
@@ -17,7 +15,7 @@ type ImageLogoProps = {
 
 type SVGLogoProps = {
   type: 'svg'
-  src: ComponentType<SVGProps<SVGSVGElement>>
+  src: IconProps['component']
   bgColor: HEXCodeType
   color: HEXCodeType
 }
@@ -43,7 +41,7 @@ export function SimpleCardWithLogo({
   return (
     <li className="group focus-within:brand-outline relative flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--color-border-base)] sm:flex-row">
       <div
-        className="grid h-44 w-full flex-shrink-0 place-items-center sm:h-full sm:w-42"
+        className="grid h-44 w-full shrink-0 place-items-center sm:h-full sm:w-42"
         style={{ backgroundColor: logo.bgColor }}
       >
         {logo.type === 'svg' ? (
@@ -62,18 +60,18 @@ export function SimpleCardWithLogo({
 
       <hr
         aria-hidden="true"
-        className="h-full border-t border-[var(--color-border-base)] sm:border-t-0 sm:border-r"
+        className="h-full border-t border-(--color-border-base) sm:border-t-0 sm:border-r"
       />
 
-      <div className="relative h-full w-full group-focus-within:bg-[var(--color-card-background-hover)] group-hover:bg-[var(--color-card-background-hover)]">
+      <div className="relative h-full w-full group-focus-within:bg-(--color-card-background-hover) group-hover:bg-(--color-card-background-hover)">
         <div className="flex flex-col gap-6 p-8">
           <div className="mb-12 flex flex-col gap-3">
-            <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
+            <span className="group-focus-within:text-(--color-card-heading-hover) group-hover:text-(--color-card-heading-hover)">
               <Heading tag="h3" variant="card-heading">
                 {title}
               </Heading>
             </span>
-            <p className="text-[var(--color-paragraph-text)]">{description}</p>
+            <p className="text-(--color-paragraph-text)">{description}</p>
           </div>
         </div>
       </div>
