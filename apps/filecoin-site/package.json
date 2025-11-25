@@ -27,7 +27,7 @@
     "@filecoin-foundation/utils": "0.0.0",
     "@hookform/resolvers": "^5.2.2",
     "@phosphor-icons/react": "^2.1.10",
-    "@sentry/nextjs": "^10.20.0",
+    "@sentry/nextjs": "^10.27.0",
     "fast-glob": "^3.3.3",
     "feed": "^5.1.0",
     "gray-matter": "^4.0.3",
