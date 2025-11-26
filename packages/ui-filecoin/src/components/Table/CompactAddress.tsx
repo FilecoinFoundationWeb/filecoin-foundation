@@ -23,9 +23,9 @@ export function CompactAddress({ address, explorerUrl }: CompactAddressProps) {
       href={`${explorerUrl}/${address}`}
       aria-label={`View address ${address} on Block Explorer`}
       title={address}
-      className="whitespace-nowrap"
+      className="font-medium whitespace-nowrap"
     >
-      <span className="font-medium">{truncateAddress(address)}</span>
+      {truncateAddress(address)}
     </ExternalTextLink>
   )
 }

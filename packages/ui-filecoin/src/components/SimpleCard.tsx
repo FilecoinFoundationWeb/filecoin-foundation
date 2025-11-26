@@ -76,7 +76,7 @@ const cardContent = cva('flex flex-col gap-3', {
   },
 })
 
-const ctaLinkComponent = cva('', {
+const ctaLink = cva('', {
   variants: {
     border: {
       all: 'bottom-8 left-8',
@@ -114,11 +114,7 @@ export function SimpleCard({
         <CardContent title={title} description={description} border={border} />
 
         {cta && (
-          <CTALink
-            inset
-            href={cta.href}
-            textClassName={ctaLinkComponent({ border })}
-          >
+          <CTALink inset href={cta.href} textClassName={ctaLink({ border })}>
             {cta.text}
           </CTALink>
         )}

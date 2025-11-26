@@ -1,4 +1,4 @@
-import type { ComponentProps } from 'react'
+import type { AnchorHTMLAttributes } from 'react'
 
 import { ArrowUpRightIcon } from '@phosphor-icons/react'
 
@@ -8,9 +8,10 @@ import { LinkDescription } from './LinkDescription'
 import { LinkLabel } from './LinkLabel'
 
 export type ExternalLinkProps = {
+  href: string
   label: string
   description?: string
-} & ComponentProps<'a'>
+} & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'label' | 'children'>
 
 export function ExternalLink({
   label,
@@ -25,6 +26,7 @@ export function ExternalLink({
           <Icon component={ArrowUpRightIcon} size={20} />
         </span>
       </div>
+
       {description && (
         <div className="mt-1">
           <LinkDescription>{description}</LinkDescription>

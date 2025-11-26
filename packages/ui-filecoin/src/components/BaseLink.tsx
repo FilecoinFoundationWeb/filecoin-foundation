@@ -1,11 +1,13 @@
-import type { AnchorHTMLAttributes } from 'react'
+import type { AnchorHTMLAttributes, ComponentProps } from 'react'
 
-import { getUIConfig } from '../config/ui-config'
+import { getUIConfig, type UIConfig } from '../config/ui-config'
 import { isInternalLink } from '../utils/linkUtils'
 
-export type BaseLinkProps = {
-  href: string
-} & AnchorHTMLAttributes<HTMLAnchorElement>
+export type BaseLinkProps =
+  | ComponentProps<UIConfig['Link']>
+  | ({
+      href: string
+    } & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>)
 
 export function BaseLink({ href, ...rest }: BaseLinkProps) {
   const { baseDomain, Link } = getUIConfig()

@@ -15,6 +15,7 @@ export function HomeLogoLink({
   ...rest
 }: HomeLogoLinkProps) {
   const { Link } = getUIConfig()
+
   return (
     <Link
       href="/"

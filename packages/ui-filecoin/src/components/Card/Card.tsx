@@ -1,31 +1,23 @@
-import type { ComponentType, ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import { clsx } from 'clsx'
 
 import type { StaticImageProps } from '../../types/imageType'
-import type { CTALinkProps } from '../CTALink'
+import { CTALink, type CTALinkProps } from '../CTALink'
 import { Heading } from '../Heading'
 import { IconBadge, type IconBadgeProps } from '../IconBadge'
 
 import { CardImage } from './CardImage'
-
-type CTALinkComponentProps = Pick<
-  CTALinkProps,
-  'href' | 'inset' | 'textClassName' | 'children'
->
-
-type CTAConfig = {
-  href: CTALinkProps['href']
-  text: CTALinkProps['children']
-  CTALinkComponent: ComponentType<CTALinkComponentProps>
-}
 
 type CardBaseProps = {
   as: 'li' | 'article' | 'div'
   title: string
   description: ReactNode
   isCentered?: boolean
-  cta?: CTAConfig
+  cta?: {
+    href: CTALinkProps['href']
+    text: CTALinkProps['children']
+  }
 }
 
 type IconVariant = {
@@ -82,13 +74,13 @@ export function Card({
         </div>
 
         {cta && (
-          <cta.CTALinkComponent
+          <CTALink
             inset
             href={cta.href}
             textClassName="absolute bottom-0 left-0"
           >
             {cta.text}
-          </cta.CTALinkComponent>
+          </CTALink>
         )}
       </div>
     </Tag>
