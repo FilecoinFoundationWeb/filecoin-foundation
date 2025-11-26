@@ -6,7 +6,7 @@ import {
 } from '@filecoin-foundation/ui-filecoin/Button'
 import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 
-export type RefreshButtonProps = Omit<ButtonProps, 'variant'>
+export type RefreshButtonProps = Omit<ButtonProps, 'variant' | 'children'>
 
 export function RefreshButton({ ...props }: RefreshButtonProps) {
   return (
