@@ -1,10 +1,13 @@
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { Button } from '@filecoin-foundation/ui-filecoin/Button'
+import { Card } from '@filecoin-foundation/ui-filecoin/Card'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoSection'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
+import { SimpleCard } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
@@ -13,14 +16,13 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
+
 import { GradientContainer } from '@/components/GradientContainer'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
-import { SimpleCard } from '@/components/SimpleCard'
+
 
 import { PROVIDE_STORAGE_SEO } from './constants/seo'
 import { coreInfrastructureSpecs } from './data/coreInfrastructureSpecs'

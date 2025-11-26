@@ -3,24 +3,18 @@ import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
 
-import { type BaseLinkProps } from '../BaseLink'
-
 import { MarkdownLink } from './MarkdownLink'
 
 export type MarkdownContentProps = {
   children: Parameters<typeof ReactMarkdown>[0]['children']
-  baseDomain: BaseLinkProps['baseDomain']
 }
 
-export function MarkdownContent({
-  children,
-  baseDomain,
-}: MarkdownContentProps) {
+export function MarkdownContent({ children }: MarkdownContentProps) {
   const rehypePlugins = [rehypeRaw, rehypeSlug]
 
   const markdownComponents: Components = {
     a: ({ href, ...props }) => (
-      <MarkdownLink href={href as string} baseDomain={baseDomain} {...props} />
+      <MarkdownLink href={href as string} {...props} />
     ),
   }
 

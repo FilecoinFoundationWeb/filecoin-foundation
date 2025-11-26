@@ -1,7 +1,5 @@
 'use client'
 
-import { Link } from '@/i18n/navigation'
-
 import {
   HomeLogoLink,
   type HomeLogoLinkProps,
@@ -9,16 +7,8 @@ import {
 
 import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
 
-type HomeLogoIconLinkProps = Pick<HomeLogoLinkProps, 'onNavigate'>
+type HomeLogoIconLinkProps = Omit<HomeLogoLinkProps, 'logo' | 'height'>
 
 export function HomeLogoIconLink(props: HomeLogoIconLinkProps) {
-  return (
-    <HomeLogoLink
-      logo={IconLogo}
-      height={40}
-      // @ts-expect-error: Types of property 'prefetch' are incompatible between next-intl Link and Next.js Link
-      LinkComponent={Link}
-      {...props}
-    />
-  )
+  return <HomeLogoLink logo={IconLogo} height={40} {...props} />
 }

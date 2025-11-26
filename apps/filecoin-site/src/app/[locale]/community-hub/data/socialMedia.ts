@@ -8,9 +8,10 @@ import {
   YoutubeLogoIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
+import type { LinkCardData } from '@filecoin-foundation/ui-filecoin/LinkCard'
+
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
-import type { LinkCardData } from '@/components/LinkCard'
 
 const {
   slack,

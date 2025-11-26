@@ -5,6 +5,7 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
+import { getUIConfig } from '../config/ui-config'
 import { isExternalLink } from '../utils/linkUtils'
 
 import { BaseLink, type BaseLinkProps } from './BaseLink'
@@ -16,8 +17,6 @@ export type CTALinkProps = {
   inset?: boolean
   textClassName?: string
   href: BaseLinkProps['href']
-  baseDomain: BaseLinkProps['baseDomain']
-  InternalLinkComponent: BaseLinkProps['InternalLinkComponent']
 }
 
 export function CTALink({
@@ -26,16 +25,13 @@ export function CTALink({
   icon,
   inset,
   textClassName,
-  baseDomain,
-  InternalLinkComponent,
 }: CTALinkProps) {
+  const { baseDomain } = getUIConfig()
   const isExternal = isExternalLink(href, baseDomain)
 
   return (
     <BaseLink
       href={href}
-      baseDomain={baseDomain}
-      InternalLinkComponent={InternalLinkComponent}
       className={clsx(
         'cta-link focus:brand-outline inline-flex items-center gap-1.5 hover:underline',
         inset && 'absolute inset-0',

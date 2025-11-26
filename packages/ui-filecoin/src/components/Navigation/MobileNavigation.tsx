@@ -10,14 +10,8 @@ import { useBackgroundVariant, backgroundVariants } from '../Section/Section'
 import { SlideOver } from '../SlideOver'
 
 import { variantMapping } from './constants'
+import { NavigationMainLink } from './NavigationMainLink'
 import type { NavItem } from './types'
-
-type NavigationMainLinkProps = {
-  on: 'mobile'
-  label: string
-  href: string
-  onNavigate?: () => void
-}
 
 type HomeLogoIconLinkProps = {
   onNavigate?: () => void
@@ -25,13 +19,11 @@ type HomeLogoIconLinkProps = {
 
 export type MobileNavigationProps = {
   items: Array<NavItem>
-  NavigationMainLinkComponent: ComponentType<NavigationMainLinkProps>
   HomeLogoIconLinkComponent: ComponentType<HomeLogoIconLinkProps>
 }
 
 export function MobileNavigation({
   items,
-  NavigationMainLinkComponent,
   HomeLogoIconLinkComponent,
 }: MobileNavigationProps) {
   const [open, setOpen] = useState(false)
@@ -67,7 +59,7 @@ export function MobileNavigation({
           >
             {items.map(({ href, label }) => (
               <li key={href}>
-                <NavigationMainLinkComponent
+                <NavigationMainLink
                   on="mobile"
                   href={href}
                   label={label}

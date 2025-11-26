@@ -1,9 +1,7 @@
-import type { ComponentType } from 'react'
-
 import { cva } from 'class-variance-authority'
 
 import { Badge, type BadgeProps } from './Badge'
-import { type CTALinkProps } from './CTALink'
+import { CTALink, type CTALinkProps } from './CTALink'
 import { Heading } from './Heading'
 
 type borderVariants = 'all' | 'only-top'
@@ -18,10 +16,9 @@ export type SimpleCardProps = {
   }
   border?: borderVariants
   cta?: {
-    href: CTALinkComponentProps['href']
-    text: CTALinkComponentProps['children']
+    href: CTALinkProps['href']
+    text: CTALinkProps['children']
   }
-  CTALinkComponent: ComponentType<CTALinkComponentProps>
 }
 
 export type SimpleCardData = {
@@ -34,13 +31,6 @@ export type CardContentProps = Pick<
   SimpleCardProps,
   'title' | 'description' | 'border'
 >
-
-type CTALinkComponentProps = {
-  href: CTALinkProps['href']
-  inset: CTALinkProps['inset']
-  textClassName: CTALinkProps['textClassName']
-  children: CTALinkProps['children']
-}
 
 const cardOuter = cva(
   'group h-full w-full overflow-hidden border-(--color-border-base)',
@@ -86,7 +76,7 @@ const cardContent = cva('flex flex-col gap-3', {
   },
 })
 
-const ctaLinkComponent = cva('', {
+const ctaLink = cva('', {
   variants: {
     border: {
       all: 'bottom-8 left-8',
@@ -106,7 +96,6 @@ export function SimpleCard({
   cta,
   badge,
   border = 'all',
-  CTALinkComponent,
 }: SimpleCardProps) {
   return (
     <Tag
@@ -125,13 +114,9 @@ export function SimpleCard({
         <CardContent title={title} description={description} border={border} />
 
         {cta && (
-          <CTALinkComponent
-            inset
-            href={cta.href}
-            textClassName={ctaLinkComponent({ border })}
-          >
+          <CTALink inset href={cta.href} textClassName={ctaLink({ border })}>
             {cta.text}
-          </CTALinkComponent>
+          </CTALink>
         )}
       </div>
     </Tag>

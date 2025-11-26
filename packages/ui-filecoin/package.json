@@ -261,10 +261,6 @@
       "types": "./dist/components/TextLink/SmartTextLink.d.ts",
       "default": "./dist/components/TextLink/SmartTextLink.js"
     },
-    "./TextLink/types": {
-      "types": "./dist/components/TextLink/types/index.d.ts",
-      "default": "./dist/components/TextLink/types/index.js"
-    },
     "./constants/tailwindConstants": {
       "types": "./dist/constants/tailwindConstants.d.ts",
       "default": "./dist/constants/tailwindConstants.js"
@@ -278,6 +274,10 @@
       "types": "./dist/types/tailwindTypes.d.ts",
       "default": "./dist/types/tailwindTypes.js"
     },
+    "./types/touchTarget": {
+      "types": "./dist/types/touchTarget.d.ts",
+      "default": "./dist/types/touchTarget.js"
+    },
     "./utils/buildImageSizeProp": {
       "types": "./dist/utils/buildImageSizeProp.d.ts",
       "default": "./dist/utils/buildImageSizeProp.js"
@@ -289,13 +289,17 @@
     "./utils/dateUtils": {
       "types": "./dist/utils/dateUtils.d.ts",
       "default": "./dist/utils/dateUtils.js"
+    },
+    "./config/ui-config": {
+      "types": "./dist/config/ui-config.d.ts",
+      "default": "./dist/config/ui-config.js"
     }
   },
   "scripts": {
     "build": "tsc && mkdir -p dist/styles && cp src/styles/*.css dist/styles/",
     "prepublishOnly": "npm run build",
     "lint": "eslint src --fix",
-    "test": "echo \"No tests yet\""
+    "test": "jest"
   },
   "keywords": [
     "filecoin",
@@ -330,7 +334,12 @@
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^29.5.0",
     "@types/react": "19.2.7",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "ts-jest": "^29.1.0",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {

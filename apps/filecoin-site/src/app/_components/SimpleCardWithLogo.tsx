@@ -1,9 +1,11 @@
 import Image, { type StaticImageData } from 'next/image'
 
+import {
+  CTALink,
+  type CTALinkProps,
+} from '@filecoin-foundation/ui-filecoin/CTALink'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui-filecoin/Icon'
-
-import { CTALink, type CTALinkProps } from './CTALink'
 
 type HEXCodeType = `#${string}`
 

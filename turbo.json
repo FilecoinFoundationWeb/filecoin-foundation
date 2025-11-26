@@ -30,6 +30,10 @@
     "lint": {
       "cache": true,
       "inputs": ["$TURBO_DEFAULT$"]
+    },
+    "test": {
+      "cache": true,
+      "inputs": ["$TURBO_DEFAULT$"]
     }
   }
 }

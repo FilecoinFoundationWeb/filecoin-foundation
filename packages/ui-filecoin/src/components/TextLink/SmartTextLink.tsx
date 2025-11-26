@@ -1,34 +1,25 @@
-import type { AnchorHTMLAttributes } from 'react'
-
-import Link from 'next/link'
-
+import { getUIConfig } from '../../config/ui-config'
 import { isExternalLink } from '../../utils/linkUtils'
 
-import { ExternalTextLink } from './ExternalTextLink'
-import { InternalTextLink } from './InternalTextLink'
-import { type GenericLinkType } from './types'
+import {
+  ExternalTextLink,
+  type ExternalTextLinkProps,
+} from './ExternalTextLink'
+import {
+  InternalTextLink,
+  type InternalTextLinkProps,
+} from './InternalTextLink'
 
-export type SmartTextLinkProps = {
-  href: string
-  baseDomain: string
-  InternalLinkComponent?: GenericLinkType
-} & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>
+export type SmartTextLinkProps = ExternalTextLinkProps | InternalTextLinkProps
 
-export function SmartTextLink({
-  href,
-  baseDomain,
-  InternalLinkComponent = Link as GenericLinkType,
-  ...rest
-}: SmartTextLinkProps) {
+export function SmartTextLink({ href, ...rest }: SmartTextLinkProps) {
+  const { baseDomain } = getUIConfig()
+
   const isExternal = isExternalLink(href, baseDomain)
 
   return isExternal ? (
     <ExternalTextLink href={href} {...rest} />
   ) : (
-    <InternalTextLink
-      InternalLinkComponent={InternalLinkComponent}
-      href={href}
-      {...rest}
-    />
+    <InternalTextLink href={href} {...rest} />
   )
 }
