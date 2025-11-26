@@ -26,6 +26,7 @@ export function Navigation({ backgroundVariant }: NavigationProps) {
               HomeLogoIconLinkComponent={HomeLogoIconLink}
             />
           </div>
+
           <div className="hidden xl:block xl:flex-1">
             <DesktopNavigation />
           </div>

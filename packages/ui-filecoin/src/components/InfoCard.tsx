@@ -1,7 +1,5 @@
 import { cva } from 'class-variance-authority'
 
-import { getUIConfig } from '../config/ui-config'
-
 import { BaseLink, type BaseLinkProps } from './BaseLink'
 import { Icon, type IconProps } from './Icon'
 
@@ -44,8 +42,7 @@ export function InfoCard({
   href,
   ariaLabel,
 }: InfoCardProps) {
-  const { baseDomain } = getUIConfig()
-  const hasLink = href && baseDomain && ariaLabel
+  const hasLink = href && ariaLabel
 
   return (
     <div className={cardVariants({ interactive: Boolean(hasLink) })}>

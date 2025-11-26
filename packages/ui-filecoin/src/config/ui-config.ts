@@ -1,7 +1,8 @@
 import type { ComponentType } from 'react'
 
 export type MinimalLinkProps = {
-  href: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  href: any
   children?: React.ReactNode
   className?: string
   locale?: string

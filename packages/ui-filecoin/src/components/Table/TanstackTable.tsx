@@ -35,6 +35,7 @@ export function TanstackTable<TData>({ table }: TanstackTableProps<TData>) {
                     <button
                       onClick={header.column.getToggleSortingHandler()}
                       className="focus:brand-outline flex h-12 w-full cursor-pointer items-center gap-2 hover:underline"
+                      aria-label={`Sort by ${header.column.columnDef.header}`}
                     >
                       <span>
                         {flexRender(
