@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.3.1
+
+### Patch Changes
+
+- a9648aa: Add UI config in ui-filecoin
+
 ## 0.3.0
 
 ### Minor Changes
