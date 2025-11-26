@@ -3,12 +3,11 @@
 import { clsx } from 'clsx'
 import { usePathname } from 'next/navigation'
 
+import type { TouchTarget } from '../../types/touchTarget'
 import {
   SmartTextLink,
   type SmartTextLinkProps,
 } from '../TextLink/SmartTextLink'
-
-import type { TouchTarget } from './types'
 
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'px-5 py-6',

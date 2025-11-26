@@ -6,12 +6,13 @@ import { clsx } from 'clsx'
 
 import { Icon } from '../Icon'
 
+import { desktopStyle } from './NavigationMainLink'
+
 type PopOverProps = {
   as: React.ElementType
   label: string
   children: React.ReactElement
   isCurrent?: boolean
-  labelClassName?: string
 }
 
 const SPACE_BETWEEN_PANEL_AND_BUTTON = 24
@@ -22,13 +23,12 @@ export function NavigationMenu({
   label,
   children,
   isCurrent,
-  labelClassName,
 }: PopOverProps) {
   return (
     <Popover as={as}>
       <PopoverButton
         aria-label={`${label} (opens a navigation menu)`}
-        className={clsx('group', labelClassName)}
+        className={clsx(desktopStyle, 'inline-flex items-center gap-2')}
         {...(isCurrent && { 'aria-current': 'true' })}
       >
         <span>{label}</span>
