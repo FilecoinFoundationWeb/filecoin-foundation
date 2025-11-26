@@ -7,6 +7,8 @@ import {
 
 import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
 
-export function HomeLogoIconLink(props: HomeLogoLinkProps) {
+type HomeLogoIconLinkProps = Omit<HomeLogoLinkProps, 'logo' | 'height'>
+
+export function HomeLogoIconLink(props: HomeLogoIconLinkProps) {
   return <HomeLogoLink logo={IconLogo} height={40} {...props} />
 }

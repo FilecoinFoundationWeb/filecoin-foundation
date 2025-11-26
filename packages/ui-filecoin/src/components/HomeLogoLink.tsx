@@ -6,7 +6,7 @@ export type HomeLogoLinkProps = {
   logo: ComponentType<React.SVGProps<SVGSVGElement>>
   color?: `text-${string}`
   height: number
-} & ComponentProps<UIConfig['Link']>
+} & Omit<ComponentProps<UIConfig['Link']>, 'href'>
 
 export function HomeLogoLink({
   logo: Logo,

@@ -13,7 +13,9 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
   const rehypePlugins = [rehypeRaw, rehypeSlug]
 
   const markdownComponents: Components = {
-    a: ({ href, ...props }) => <MarkdownLink href={href} {...props} />,
+    a: ({ href, ...props }) => (
+      <MarkdownLink href={href as string} {...props} />
+    ),
   }
 
   return (

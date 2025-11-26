@@ -1,6 +1,20 @@
+import type { ComponentType } from 'react'
+
+export type MinimalLinkProps = {
+  href: string
+  children?: React.ReactNode
+  className?: string
+  locale?: string
+  replace?: boolean
+  scroll?: boolean
+  prefetch?: boolean | 'auto' | null
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
+  onNavigate?: (event: { preventDefault: () => void }) => void
+} & Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>
+
 export type UIConfig = {
   baseDomain: string
-  Link: any
+  Link: ComponentType<MinimalLinkProps>
 }
 
 let uiConfig: UIConfig | undefined

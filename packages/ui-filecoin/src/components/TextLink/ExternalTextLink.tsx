@@ -7,8 +7,7 @@ import { Icon } from '../Icon'
 
 export type ExternalTextLinkProps = {
   href: string
-  children: string
-} & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'children'>
+} & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>
 
 export function ExternalTextLink({
   className,

@@ -5,7 +5,10 @@ import { getUIConfig, type UIConfig } from '../../../config/ui-config'
 import { LinkDescription } from './LinkDescription'
 import { LinkLabel } from './LinkLabel'
 
-export type InternalLinkProps = ComponentProps<UIConfig['Link']>
+export type InternalLinkProps = {
+  label: string
+  description?: string
+} & ComponentProps<UIConfig['Link']>
 
 export function InternalLink({
   label,
