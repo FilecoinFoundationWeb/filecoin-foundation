@@ -1,5 +1,3 @@
-// import type { ComponentProps, ComponentType } from 'react'
-
 export type UIConfig = {
   baseDomain: string
   Link: any
@@ -8,13 +6,20 @@ export type UIConfig = {
 let uiConfig: UIConfig | undefined
 
 export function setUIConfig(config: UIConfig) {
+  if (uiConfig) {
+    console.warn('UIConfig already initialized')
+  }
   uiConfig = config
 }
 
 export function getUIConfig() {
   if (!uiConfig) {
-    throw new Error('UI config has not been set')
+    throw new Error('UIConfig not initialized')
   }
 
   return uiConfig
+}
+
+export function resetUIConfig() {
+  uiConfig = undefined
 }
