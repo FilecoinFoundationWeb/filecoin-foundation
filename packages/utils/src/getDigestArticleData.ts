@@ -20,7 +20,7 @@ export async function getDigestArticlesData(directoryPath: string) {
 
   return allArticles
     .map(transformDigestArticleData)
-    .sort((a, b) => a.articleNumber - b.articleNumber)
+    .sort((a, b) => (a.articleNumber ?? 0) - (b.articleNumber ?? 0))
 }
 
 function getDigestMarkdownData(slug: string, directoryPath: string) {
