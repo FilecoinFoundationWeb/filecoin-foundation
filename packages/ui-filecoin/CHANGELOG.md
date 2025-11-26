@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.4.0
+
+### Minor Changes
+
+- d3be96e: Refactors several UI components in the @filecoin-foundation/ui-filecoin package to improve type safety and simplify component logic.
+
 ## 0.3.1
 
 ### Patch Changes
