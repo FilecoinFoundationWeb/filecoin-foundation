@@ -229,6 +229,10 @@
       "types": "./dist/components/SectionContent.d.ts",
       "default": "./dist/components/SectionContent.js"
     },
+    "./Search": {
+      "types": "./dist/components/Search/index.d.ts",
+      "default": "./dist/components/Search/index.js"
+    },
     "./SimpleCard": {
       "types": "./dist/components/SimpleCard.d.ts",
       "default": "./dist/components/SimpleCard.js"
@@ -320,8 +324,8 @@
     "@phosphor-icons/react": "^2.1.10",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "embla-carousel-react": "^8.6.0",
     "embla-carousel-auto-scroll": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "react-markdown": "^10.1.0",
     "rehype-raw": "^7.0.0",
     "rehype-slug": "^6.0.0",
@@ -346,6 +350,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "@tanstack/react-table": "^8.21.3",
     "next": "^15.5.6",
+    "nuqs": "^2.8.1",
     "react": "^19.2.0",
     "tailwindcss": "^4.1.14"
   }
