@@ -26,5 +26,7 @@ export function NavigationMenuLink({
     ...rest,
   }
 
-  return isExternal ? <ExternalLink {...props} /> : <InternalLink {...props} />
+  const Link = isExternal ? ExternalLink : InternalLink
+
+  return <Link {...props} />
 }
