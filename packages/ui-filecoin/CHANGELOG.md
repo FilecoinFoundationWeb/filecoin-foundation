@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.4.1
+
+### Patch Changes
+
+- bc892f8: This PR refactors the `NavigationMainLink` component to properly differentiate between external and internal links, ensuring consistent link behavior across the navigation system. Previously, `NavigationMainLink` used `SmartTextLink` for all links, while `NavigationMenuLink` already had logic to distinguish between external and internal links.
+
 ## 0.4.0
 
 ### Minor Changes
