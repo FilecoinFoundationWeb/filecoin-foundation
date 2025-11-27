@@ -6,10 +6,9 @@ import { usePathname } from 'next/navigation'
 import { getUIConfig } from '../../config/ui-config'
 import type { TouchTarget } from '../../types/touchTarget'
 import { isExternalLink } from '../../utils/linkUtils'
-import { type SmartTextLinkProps } from '../TextLink/SmartTextLink'
 
-import { ExternalLink } from './components/ExternalLink'
-import { InternalLink } from './components/InternalLink'
+import { ExternalLink, type ExternalLinkProps } from './components/ExternalLink'
+import { InternalLink, type InternalLinkProps } from './components/InternalLink'
 
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'px-5 py-6',
@@ -32,8 +31,7 @@ export const mobileStyle = clsx(
 
 export type NavigationLinkProps = {
   on: 'mobile' | 'desktop'
-  label: string
-} & SmartTextLinkProps
+} & (InternalLinkProps | ExternalLinkProps)
 
 export function NavigationMainLink({
   href,
