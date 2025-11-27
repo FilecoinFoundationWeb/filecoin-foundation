@@ -39,17 +39,17 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
   - [Web3Mine](https://www.web3mine.io/provide) is helping SPs build a viable, performant cloud storage business with Web3 tech for operations looking to further monetize storage capacity while simplifying Filecoin orchestration.
 
 - Porter Stowell presented on the Filecoin network's incentive model, the role of storage providers, and the opportunities for developers at [FIL Dev Summit](https://fildev.io/FDS-3).
-- Join the [\#global-storage-provider-community](https://filecoinproject.slack.com/archives/C02GQUMFQVA) channel on Slack for more of the latest updates.
+- Join the [\#global-storage-provider-community](https://filecoin.io/slack) channel on Slack for more of the latest updates.
 
 ## Network Operations
 
 ### Governance
 
 - The timeline for nv22 Dragon has been updated and is now slated for April 2. There are four FIPs in scope for this upgrade:
-  - [FIP0063](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0063.md) - Switching to a new Drand Mainnet Network
-  - [FIP0074](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0074.md) - Remove cron-based automatic deal settlement
-  - [FIP0076](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0076.md) - Direct Data Onboarding
-  - [FIP0083](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0083.md) - Ecosystem Tooling: Add Built-in Actor Events in Verified Registry, Miner & Market Actors
+  - [FIP0063](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0063.md) - Switching to a new Drand Mainnet Network
+  - [FIP0074](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0074.md) - Remove cron-based automatic deal settlement
+  - [FIP0076](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0076.md) - Direct Data Onboarding
+  - [FIP0083](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0083.md) - Ecosystem Tooling: Add Built-in Actor Events in Verified Registry, Miner & Market Actors
 
 ### Fil Plus
 

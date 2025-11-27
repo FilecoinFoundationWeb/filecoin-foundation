@@ -18,11 +18,11 @@ seo:
     network. Your input matters.
 ---
 
-[Filecoin Improvement Proposals (FIPs)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0001.md) are the primary way that Filecoin community members can submit, discuss, and approve changes to the Filecoin protocol.
+[Filecoin Improvement Proposals (FIPs)](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0001.md) are the primary way that Filecoin community members can submit, discuss, and approve changes to the Filecoin protocol.
 
 ## About FIP-0014
 
-The community is currently considering [FIP-0014](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0014.md), which would allow miners to extend any V1 proof sector’s lifetime to a maximum of 540 days. Extending such sectors was previously disabled in the network version 7 upgrade (November 2020) due to a security concern with these proofs; v1.1 proofs were introduced to fix this security concern. This causes problems for miners who sealed v1 proof sectors in the early days of the network with a 180-day lifetime and must now reseal those sectors if they want to keep their power. To reseal, they would have to incur the computation cost of sealing again, spend more in collateral for the same amount of raw-byte power, and pay more in gas costs.
+The community is currently considering [FIP-0014](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0014.md), which would allow miners to extend any V1 proof sector’s lifetime to a maximum of 540 days. Extending such sectors was previously disabled in the network version 7 upgrade (November 2020) due to a security concern with these proofs; v1.1 proofs were introduced to fix this security concern. This causes problems for miners who sealed v1 proof sectors in the early days of the network with a 180-day lifetime and must now reseal those sectors if they want to keep their power. To reseal, they would have to incur the computation cost of sealing again, spend more in collateral for the same amount of raw-byte power, and pay more in gas costs.
 
 There are security concerns, however, if the lifetime of v1 sectors is allowed to be extended beyond 540 days. There is also a cryptoeconomic aspect to the decision; a report on the impact of accepting versus rejecting this FIP from [BlockScience's GitHub profile](https://github.com/BlockScience) can be found in [this issue comment on the Filecoin FIPs repository](https://github.com/filecoin-project/FIPs/issues/56#issuecomment-804841505). The report includes a summary of the background context, when these sectors will be expiring, and what the projected impact of their expiration would be on the storage power and sector collateral.
 

@@ -30,7 +30,7 @@ Building and maintaining infrastructure can be resource-intensive. IaaS provider
 
 ## Sealing-as-a-Service
 
-Sealing is an important but nuanced process in the Filecoin ecosystem. However, you can use specialized services like [Aligned](https://aligned.co/) to handle the technicalities of sealing, allowing you to focus on storage and retrieval.
+Sealing is an important but nuanced process in the Filecoin ecosystem. However, you can use specialized services like [Aligned](https://www.aligned.co/) to handle the technicalities of sealing, allowing you to focus on storage and retrieval.
 
 ## Software-as-a-Service
 
@@ -42,7 +42,7 @@ The Filecoin Client Explorer _(original link no longer available)_ offers insigh
 
 ## Partnerships and Alliances
 
-Filecoin Foundation collaborates with industry leaders, including [AMD](https://www.amd.com/en/technologies/blockchain), [EY](https://blockchain.ey.com/), and [Seagate](https://www.seagate.com/products/storage/data-storage-systems/leasing/), to support the growth of decentralized storage. And being a part of coalitions such as the [Decentralized Storage Alliance](https://dsalliance.io/) amplifies the Foundation's connection to experts from top software, hardware, and infrastructure providers, while building a clear path toward enterprise adoption of decentralized storage.
+Filecoin Foundation collaborates with industry leaders, including [AMD](https://www.amd.com/en/technologies/blockchain), [EY](https://blockchain.ey.com/), and [Seagate](https://www.seagate.com/products/storage/data-storage-systems/leasing/), to support the growth of decentralized storage. And being a part of coalitions such as the [Decentralized Storage Alliance](https://www.dsalliance.io/) amplifies the Foundation's connection to experts from top software, hardware, and infrastructure providers, while building a clear path toward enterprise adoption of decentralized storage.
 
 ## Join us at FIL Vegas (Oct. 3-5)
 
@@ -56,6 +56,6 @@ Don’t miss these speakers and sessions:
 - Responsible AI for Enterprise Success with **Chris Hackney, AI Guardian**
 - Data Solutions for Disaster Recovery and AI Innovation with **Andromeda Huang, Power Meta Corporation**
 
-Check out the full [speaker lineup and agenda](/events/fil-vegas). Still need to register? Secure your spot for [FIL Vegas](https://fil-vegas.io/register/) now.
+Check out the full [speaker lineup and agenda](/events/fil-vegas). Still need to register? Secure your spot for [FIL Vegas](https://lu.ma/fil-vegas) now.
 
 _P.S. A version of this content was featured in the latest edition of The Upload, Filecoin Foundation’s newsletter for big ideas and news about the Filecoin ecosystem and the decentralized web. Sign up to receive: [upload.fil.org](https://upload.fil.org)._

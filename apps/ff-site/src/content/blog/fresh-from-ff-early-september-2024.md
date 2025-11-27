@@ -35,13 +35,13 @@ Filecoin Foundation is excited to launch the [Developer Grants Updates series](/
 
 - Filecoin core developers and Implementation teams have agreed to align around pre-scheduled network upgrades. You can find the proposed [2025 upgrade cycle](https://github.com/filecoin-project/core-devs/discussions/177) in the Core Devs GitHub repository.
 - NV24 will be the final upgrade of 2024, with the calibnet upgrade landing on September 26, and the main upgrade arriving on October 30. Visit [Metropolis (now Fil Poll)](https://poll.fil.org) to help name it!
-- [FIP0081: Introduce Lower Bound for Sector Initial Pledge](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0081.md) is in Last Call until September 4, 2024.
+- [FIP0081: Introduce Lower Bound for Sector Initial Pledge](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0081.md) is in Last Call until September 4, 2024.
 - Watch the [video walkthrough on Metropolis (now Fil Poll)](https://youtu.be/k1Qj7JclNTo?feature=shared) and learn how it facilitates temperature checks and community polling for FIPs (Filecoin Improvement Proposals) and early-stage ideas with Lucky Nwachukwu, Project Manager of Governance at Filecoin Foundation.
 
 ### Fil Plus
 
 - The Fil Plus team is improving the process by which organizations request and receive an audit of DataCap distributions. Currently, requests for DataCap are batched and processed together. To better aid the community, the team is working to reduce this timeline to less than two weeks from the initial request to new DataCap being made available.
-- The [August 20 Allocator Call is available on YouTube](https://youtu.be/XQlyGV4N_y8?feature=shared). If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles).
+- The [August 20 Allocator Call is available on YouTube](https://youtu.be/XQlyGV4N_y8?feature=shared). If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar](https://lu.ma/filecoin).
 
 ### Comms, Marketing, & Events
 

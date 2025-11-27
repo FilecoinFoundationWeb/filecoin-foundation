@@ -29,7 +29,7 @@ Five additional prizes, ranging from $5,000 USD to $50,000 USD, go to winning pr
 
 **4th Prize** ($15,000): [GoMint](https://drive.google.com/file/d/1afzN6WyQUtHHpqsKF7BBgc2SU89PqHHB/view?usp=sharing), to expand GoMint’s NFT marketplace to include Filecoin-hosted NFTs, so that creators can choose an NFT standard implementation that suits their needs.
 
-**5th Prize** ($10,000): [Taskbar](https://github.com/victorholo/devgrants/blob/master/rfp-proposals/rfp-proposal-taskbar.md), to build a decentralized storage solution enabling intermediate use of the Hedera File Service for temporary storage, with transfer of the transcript file into permanence on IPFS with Filecoin. Leveraging [web3.storage](https://web3.storage/), this project supports the preservation of metadata into a Hedera smart contract to facilitate auditing.
+**5th Prize** ($10,000): [Taskbar](https://github.com/victorholo/devgrants/blob/master/rfp-proposals/rfp-proposal-taskbar.md), to build a decentralized storage solution enabling intermediate use of the Hedera File Service for temporary storage, with transfer of the transcript file into permanence on IPFS with Filecoin. Leveraging [web3.storage](https://storacha.network/), this project supports the preservation of metadata into a Hedera smart contract to facilitate auditing.
 
 ## Why the Hedera x Filecoin Grants Program Was Created
 
