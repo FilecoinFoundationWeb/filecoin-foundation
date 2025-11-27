@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.5.0
+
+### Minor Changes
+
+- b1ad495: Introduces a reusable `Search` component and `useSearch` hook in `ui-filecoin`
+
 ## 0.4.1
 
 ### Patch Changes
