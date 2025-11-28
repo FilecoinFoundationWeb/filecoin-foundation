@@ -2,13 +2,15 @@
 
 import { useState } from 'react'
 
-import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
-import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
-import Checkbox from '@filecoin-foundation/ui-filecoin/Checkbox'
-import Input from '@filecoin-foundation/ui-filecoin/Input'
-import { SearchInput } from '@filecoin-foundation/ui-filecoin/SearchInput'
-import { FilterButton } from '@filecoin-foundation/ui-filecoin/FilterButton'
 import { FunnelSimpleIcon } from '@phosphor-icons/react/dist/ssr'
+
+import Checkbox from '@filecoin-foundation/ui-filecoin/Checkbox'
+import { FilterButton } from '@filecoin-foundation/ui-filecoin/FilterButton'
+import Input from '@filecoin-foundation/ui-filecoin/Input'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
+import { SearchInput } from '@filecoin-foundation/ui-filecoin/SearchInput'
+import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
+
 
 export function FormShowcase() {
   const [checked, setChecked] = useState(false)

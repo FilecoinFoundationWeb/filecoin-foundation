@@ -29,7 +29,6 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { SectionContentWrapper } from '@/components/SectionContentWrapper'
 import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
-import { FormShowcase } from '@/components/_storybook/_FormShowcase'
 
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { HeroSection } from './components/HeroSection'
@@ -72,8 +71,6 @@ export default async function Home({ params }: BlogProps) {
           logos={trustedByLogos}
         />
       </PageSection>
-
-      <FormShowcase />
 
       <PageSection backgroundVariant="dark">
         <SectionContent centerTitle title="Filecoin by the numbers">
