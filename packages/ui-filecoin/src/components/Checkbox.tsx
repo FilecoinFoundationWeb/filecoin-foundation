@@ -17,7 +17,7 @@ const TOUCH_TARGET: TouchTarget = {
   touchAreaOffset: '-m-3.5',
 }
 
-export default function Checkbox(props: CheckboxProps) {
+export function Checkbox(props: CheckboxProps) {
   return (
     <HeadlessCheckbox
       {...props}
