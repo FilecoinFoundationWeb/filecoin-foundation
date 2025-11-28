@@ -57,6 +57,10 @@
       "types": "./dist/components/CTALink.d.ts",
       "default": "./dist/components/CTALink.js"
     },
+    "./Checkbox": {
+      "types": "./dist/components/Checkbox.d.ts",
+      "default": "./dist/components/Checkbox.js"
+    },
     "./EmptyStateCard": {
       "types": "./dist/components/EmptyStateCard.d.ts",
       "default": "./dist/components/EmptyStateCard.js"
@@ -68,6 +72,10 @@
     "./Footer/LegalSection": {
       "types": "./dist/components/Footer/LegalSection.d.ts",
       "default": "./dist/components/Footer/LegalSection.js"
+    },
+    "./FilterButton": {
+      "types": "./dist/components/FilterButton.d.ts",
+      "default": "./dist/components/FilterButton.js"
     },
     "./Heading": {
       "types": "./dist/components/Heading.d.ts",
@@ -92,6 +100,10 @@
     "./InfoCard": {
       "types": "./dist/components/InfoCard.d.ts",
       "default": "./dist/components/InfoCard.js"
+    },
+    "./Input": {
+      "types": "./dist/components/Input.d.ts",
+      "default": "./dist/components/Input.js"
     },
     "./LinkCard": {
       "types": "./dist/components/LinkCard.d.ts",
