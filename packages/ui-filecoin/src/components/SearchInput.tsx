@@ -22,7 +22,7 @@ export function SearchInput({ value, onChange, disabled }: SearchInputProps) {
       <div className="relative">
         <Input
           ref={inputRef}
-          className="focus:brand-outline peer block w-full rounded-lg border border-(--search-input-border-color) px-12 py-3 [&::-webkit-search-cancel-button]:appearance-none"
+          className="focus:brand-outline peer block w-full rounded-lg border border-(--input-border-color) px-12 py-3 placeholder:text-(--input-placeholder-color) [&::-webkit-search-cancel-button]:appearance-none"
           placeholder="Search"
           type="search"
           value={value}

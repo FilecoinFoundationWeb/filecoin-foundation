@@ -32,7 +32,7 @@ export function SoftwareVersion({ info, githubUrl }: SoftwareVersionProps) {
   )
 }
 
-function parseVersionString(input: string) {
+export function parseVersionString(input: string) {
   const regex = /^(\d+\.\d+\.\d+)\+([a-z]+)\+(git_[a-f0-9]+)_(.+)$/
   const match = input.match(regex)
 
