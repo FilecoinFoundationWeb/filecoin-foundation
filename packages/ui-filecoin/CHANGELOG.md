@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.5.1
+
+### Patch Changes
+
+- 0547e7e: Add form components
+
 ## 0.5.0
 
 ### Minor Changes
