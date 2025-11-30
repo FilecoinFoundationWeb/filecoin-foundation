@@ -31,27 +31,27 @@
     "fast-glob": "^3.3.3",
     "feed": "^5.1.0",
     "gray-matter": "^4.0.3",
-    "next": "^15.5.6",
-    "next-intl": "^4.3.12",
+    "next": "^16.0.6",
+    "next-intl": "^4.5.6",
     "nuqs": "^2.8.1",
     "postcss": "^8.5.6",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-hook-form": "^7.65.0",
-    "react-lite-youtube-embed": "^3.3.2",
-    "swr": "^2.3.6",
-    "tinacms": "^2.9.0"
+    "react-hook-form": "^7.67.0",
+    "react-lite-youtube-embed": "^3.3.3",
+    "swr": "^2.3.7",
+    "tinacms": "^2.10.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/next-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
-    "@next/eslint-plugin-next": "^15.5.6",
+    "@next/eslint-plugin-next": "^16.0.6",
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.1.14",
-    "@tinacms/cli": "^1.11.0",
-    "@types/node": "^22",
+    "@tinacms/cli": "^1.12.5",
+    "@types/node": "^24",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "cypress": "^15.5.0",
@@ -64,8 +64,8 @@
     "eslint-plugin-turbo": "^2.5.8",
     "globals": "^16.4.0",
     "tailwindcss": "^4.1.14",
-    "tsx": "^4.20.6",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.1"
+    "typescript-eslint": "^8.48.0"
   }
 }
