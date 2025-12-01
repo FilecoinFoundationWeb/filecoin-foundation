@@ -14,6 +14,10 @@ const variantClasses = {
     wrapper: 'text-brand-950 border-brand-600',
     icon: 'text-brand-600',
   },
+  primaryLight: {
+    wrapper: 'text-white border-brand-600',
+    icon: 'text-brand-600',
+  },
   secondary: {
     wrapper: 'text-amber-950 border-amber-600',
     icon: 'text-amber-600',

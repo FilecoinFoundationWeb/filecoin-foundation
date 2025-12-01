@@ -2,11 +2,12 @@
 title: "Victor Chang Cardiac Research Institute"
 cardDescription: "The Victor Chang Cardiac Research Institute uses Filecoin to securely store and preserve over 125 TiB of vital cardiac research data."
 pageDescription: "World-class heart research protected by the world's largest decentralized storage network. As they work towards finding a cure for heart disease, The Victor Chang Cardiac Research Institute is utilizing Filecoin to safeguard and share research data."
-challenge: "Medical detection instruments are generating larger datasets, with one SyncroPatch machine generating 20,000 data points per day. The Institute needs to manage terabytes of data weekly while maintaining research data integrity for published papers and sharing data with third parties for verification."
-solution: "Distributed Storage Solutions (DSS) provides the Institute with a managed Filecoin storage service, enabling them to store 125+ TiBs of cardiac research data including raw datasets from published papers and encrypted backups of their SyncroPatch machine data."
-results: "The Institute now stores data at a fraction of the cost of centralized cloud storage (saving $1,500+ monthly), with strong data integrity guarantees through cryptographic proofs and unique content identifiers, ensuring research data remains accurate and reliable for published papers."
+challenge: "A highly scalable data storage solution that provides data integrity, data resiliency and cost savings."
+solution: "Store the Institute’s data with an independent Filecoin Storage Provider, Distributed Storage Solutions, on the world’s largest decentralized storage network."
+results: "The Institute is storing 125+ TiBs of cardiac research data with Filecoin, including raw datasets from published papers consisting of thousands of images of cells & encrypted backups of their [SyncroPatch](https://www.nanion.de/products/syncropatch-384/) machine, a laboratory technique for studying currents in living cells."
 image:
-  src: ""
+  src: "/assets/images/victor-chang.webp"
+  alt: "Facade of the Victor Chang Cardiac Research Institute building, featuring an orange tiled wall with the institute’s name and a stylized silhouette logo."
 featured: true
 seo:
   title: "Victor Chang Cardiac Research Institute Case Study - Filecoin for Medical Research Data"
