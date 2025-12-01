@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.5.3
+
+### Patch Changes
+
+- adcd0b6: export FilterButtonProps and enable prop spreading
+
 ## 0.5.2
 
 ### Patch Changes
