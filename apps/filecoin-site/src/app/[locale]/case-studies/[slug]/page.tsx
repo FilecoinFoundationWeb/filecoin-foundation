@@ -25,13 +25,13 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
   setRequestLocale(locale)
 
   const data = await getCaseStudyData(slug, locale)
-  const { title, headerDescription, content } = data
+  const { title, pageDescription, content } = data
 
   return (
     <>
       <Navigation backgroundVariant="dark" />
       <PageSection backgroundVariant="dark">
-        <PageHeader title={title} description={headerDescription} />
+        <PageHeader title={title} description={pageDescription} />
       </PageSection>
       <PageSection backgroundVariant="light" paddingVariant="medium">
         <div className="mx-auto max-w-3xl">
@@ -55,7 +55,7 @@ export async function generateMetadata(props: CaseStudyArticleProps) {
     path: `${PATHS.CASE_STUDIES.path}/${slug}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME}` },
     description: seo.description || '',
-    image: image?.url,
+    image: image?.src,
     openGraph: { type: 'article' },
   })
 }

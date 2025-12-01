@@ -5,14 +5,13 @@ import { SeoMetadataWithOptionalTitleSchema } from '@filecoin-foundation/utils/s
 export const CaseStudyFrontmatterSchema = z.strictObject({
   title: z.string(),
   cardDescription: z.string(),
-  headerDescription: z.string().optional(),
-  introDescription: z.string().optional(),
+  pageDescription: z.string().optional(),
   challenge: z.string().optional(),
   solution: z.string().optional(),
   results: z.string().optional(),
   image: z
     .object({
-      url: z.string(),
+      src: z.string(),
       alt: z.string().optional(),
     })
     .optional(),
