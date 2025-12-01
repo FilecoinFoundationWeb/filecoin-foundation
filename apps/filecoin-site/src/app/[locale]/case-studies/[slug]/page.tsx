@@ -2,6 +2,9 @@ import type { LocaleParams } from '@/i18n/types'
 
 import { setRequestLocale } from 'next-intl/server'
 
+import { MarkdownContent } from '@filecoin-foundation/ui-filecoin/Markdown/MarkdownContent'
+import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
+import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -9,10 +12,7 @@ import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { MarkdownContent } from '@/components/MarkdownContent'
 import { Navigation } from '@/components/Navigation/Navigation'
-import { PageHeader } from '@/components/PageHeader'
-import { PageSection } from '@/components/PageSection'
 
 import { getCaseStudyData, getCaseStudiesData } from '../utils/getCaseStudyData'
 

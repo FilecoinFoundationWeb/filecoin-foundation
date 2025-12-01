@@ -1,5 +1,6 @@
 import type { LocaleParams } from '@/i18n/types'
 
+import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
@@ -11,7 +12,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { Button } from '@/components/Button'
 import { GradientContainer } from '@/components/GradientContainer'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
