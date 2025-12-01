@@ -4,7 +4,6 @@ import { clsx } from 'clsx'
 
 import { backgroundVariants, useBackgroundVariant } from '../Section/Section'
 
-import { variantMapping } from './constants'
 import { NavigationMenuLink } from './NavigationMenuLink'
 import { type NavigationMenuItem } from './types'
 
@@ -15,16 +14,10 @@ type NavigationMenuPanelProps = {
 }
 
 export function NavigationMenuPanel({ items }: NavigationMenuPanelProps) {
-  const backgroundVariant = useBackgroundVariant()
-  const desktopBackgroundVariant = variantMapping[backgroundVariant]
+  const { binaryVariant } = useBackgroundVariant()
 
   return (
-    <div
-      className={clsx(
-        roundedStyle,
-        backgroundVariants[desktopBackgroundVariant],
-      )}
-    >
+    <div className={clsx(roundedStyle, backgroundVariants[binaryVariant])}>
       <div
         className={clsx(
           roundedStyle,

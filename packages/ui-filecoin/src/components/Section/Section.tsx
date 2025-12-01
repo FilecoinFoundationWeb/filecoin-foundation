@@ -32,7 +32,7 @@ export function Section({
     <BackgroundVariantProvider value={backgroundVariant}>
       <Tag
         className={clsx(
-          'text-[var(--color-text-base)]',
+          'text-(--color-text-base)',
           backgroundVariants[backgroundVariant],
         )}
       >
@@ -45,11 +45,20 @@ export function Section({
 export function useBackgroundVariant() {
   const backgroundVariant = use(BackgroundVariantContext)
 
-  if (!backgroundVariant) {
-    throw new Error(
-      'useBackgroundVariant must be used within a BackgroundVariantContext',
-    )
-  }
+  const isDark =
+    backgroundVariant === 'dark' || backgroundVariant === 'transparentDark'
 
-  return backgroundVariant
+  const isLight =
+    backgroundVariant === 'light' ||
+    backgroundVariant === 'gray' ||
+    backgroundVariant === 'transparent'
+
+  const binaryVariant = isDark ? 'dark' : 'light'
+
+  return {
+    variant: backgroundVariant,
+    binaryVariant,
+    isDark,
+    isLight,
+  } as const
 }

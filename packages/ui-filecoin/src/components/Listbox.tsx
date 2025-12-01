@@ -11,7 +11,6 @@ import { CaretDownIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Icon } from './Icon'
-import { variantMapping } from './Navigation/constants'
 import { backgroundVariants, useBackgroundVariant } from './Section/Section'
 
 export type Option = {
@@ -33,8 +32,7 @@ export function Listbox<T extends Option>({
   setSelected,
   Icon: IconComponent,
 }: ListboxProps<T>) {
-  const backgroundVariant = useBackgroundVariant()
-  const desktopBackgroundVariant = variantMapping[backgroundVariant]
+  const { binaryVariant } = useBackgroundVariant()
 
   return (
     <HeadlessListbox value={selected} onChange={setSelected}>
@@ -52,7 +50,7 @@ export function Listbox<T extends Option>({
         transition
         anchor="bottom start"
         className={clsx(
-          backgroundVariants[desktopBackgroundVariant],
+          backgroundVariants[binaryVariant],
           'w-(--button-width) space-y-2 rounded-lg border border-(--color-listbox-border) p-2 shadow-xs transition duration-100 ease-in [--anchor-gap:--spacing(2)] focus:outline-none data-leave:data-closed:opacity-0',
         )}
       >
