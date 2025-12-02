@@ -94,8 +94,15 @@ export function getLogoData(slug: string) {
     throw new Error(`Logo config not found for ${slug}`)
   }
 
+  if (logoConfig.type === 'image') {
+    return {
+      ...logoConfig,
+      src: logoConfig.asset,
+    } satisfies ImageLogoProps
+  }
+
   return {
     ...logoConfig,
     src: logoConfig.asset,
-  }
+  } satisfies SVGLogoProps
 }
