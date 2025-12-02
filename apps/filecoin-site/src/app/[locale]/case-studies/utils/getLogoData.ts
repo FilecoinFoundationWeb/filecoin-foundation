@@ -15,66 +15,87 @@ import type {
   SVGLogoProps,
 } from '@/components/SimpleCardWithLogo'
 
-type getLogoConfigProps = {
-  asset: SVGLogoProps['src'] | ImageLogoProps['src']
-  defaultBgColor?: HEXCodeType
-  defaultColor?: HEXCodeType
+type SVGLogoConfig = {
+  type: 'svg'
+  asset: SVGLogoProps['src']
+  bgColor: HEXCodeType
+  color: HEXCodeType
 }
 
-export function getLogoConfig(slug: string): getLogoConfigProps {
-  const LOGO_CONFIG: Record<string, getLogoConfigProps> = {
-    'victor-chang': { asset: VictorChangLogo, defaultBgColor: '#ffffff' },
-    aethir: {
-      asset: AethirLogo,
-      defaultBgColor: '#111111',
-      defaultColor: '#D7FE51',
-    },
-    'easier-data-initiative': {
-      asset: EasierDataInitiativeLogo,
-      defaultBgColor: '#ffffff',
-    },
-    'flickr-foundation': {
-      asset: FlickrFoundationLogo,
-      defaultBgColor: '#ffffff',
-    },
-    'internet-archive': {
-      asset: InternetArchiveLogo,
-      defaultBgColor: '#ffffff',
-    },
-    'mit-open-learning': {
-      asset: MITOpenLearningLogo,
-      defaultBgColor: '#ffffff',
-    },
-    'seti-institute': { asset: SetiInstituteLogo, defaultBgColor: '#ffffff' },
-    smithsonian: { asset: SmithsonianLogo, defaultBgColor: '#ffffff' },
-    solana: { asset: SolanaLogo, defaultBgColor: '#000000' },
-    'starling-labs': { asset: StarlingLabLogo, defaultBgColor: '#ffffff' },
-  }
-
-  const config = LOGO_CONFIG[slug]
-  if (!config) {
-    throw new Error(`No logo configuration found for case study: ${slug}`)
-  }
-
-  return config
+type ImageLogoConfig = {
+  type: 'image'
+  asset: ImageLogoProps['src']
+  bgColor: HEXCodeType
 }
 
-export function getLogoData(slug: string): SVGLogoProps | ImageLogoProps {
-  const logoConfig = getLogoConfig(slug)
-  const logoSrc = logoConfig.asset
+const LOGO_CONFIG: Record<string, ImageLogoConfig | SVGLogoConfig> = {
+  'victor-chang': {
+    type: 'svg',
+    asset: VictorChangLogo,
+    bgColor: '#ffffff',
+    color: '#000000',
+  },
+  aethir: {
+    type: 'svg',
+    asset: AethirLogo,
+    bgColor: '#111111',
+    color: '#D7FE51',
+  },
+  'easier-data-initiative': {
+    type: 'image',
+    asset: EasierDataInitiativeLogo,
+    bgColor: '#ffffff',
+  },
+  'flickr-foundation': {
+    type: 'svg',
+    asset: FlickrFoundationLogo,
+    bgColor: '#EDEDED',
+    color: '#FF0084',
+  },
+  'internet-archive': {
+    type: 'svg',
+    asset: InternetArchiveLogo,
+    bgColor: '#222222',
+    color: '#ffffff',
+  },
+  'mit-open-learning': {
+    type: 'svg',
+    asset: MITOpenLearningLogo,
+    bgColor: '#325B6B',
+    color: '#ffffff',
+  },
+  'seti-institute': {
+    type: 'svg',
+    asset: SetiInstituteLogo,
+    bgColor: '#000000',
+    color: '#ffffff',
+  },
+  smithsonian: {
+    type: 'image',
+    asset: SmithsonianLogo,
+    bgColor: '#ffffff',
+  },
+  solana: {
+    type: 'image',
+    asset: SolanaLogo,
+    bgColor: '#000000',
+  },
+  'starling-labs': {
+    type: 'image',
+    asset: StarlingLabLogo,
+    bgColor: '#ffffff',
+  },
+}
 
-  const isImage = typeof logoSrc === 'object'
+export function getLogoData(slug: string) {
+  const logoConfig = LOGO_CONFIG[slug]
 
-  return isImage
-    ? {
-        type: 'image' as const,
-        src: logoSrc as ImageLogoProps['src'],
-        bgColor: logoConfig.defaultBgColor || '#ffffff',
-      }
-    : {
-        type: 'svg' as const,
-        src: logoSrc as SVGLogoProps['src'],
-        bgColor: logoConfig.defaultBgColor || '#ffffff',
-        color: logoConfig.defaultColor || '#000000',
-      }
+  if (!logoConfig) {
+    throw new Error(`Logo config not found for ${slug}`)
+  }
+
+  return {
+    ...logoConfig,
+    src: logoConfig.asset,
+  }
 }

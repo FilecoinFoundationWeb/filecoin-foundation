@@ -39,7 +39,7 @@ function transformCaseStudyData(
     logo,
     seo: {
       title: caseStudy.seo?.title || caseStudy.title,
-      description: caseStudy.seo?.description || caseStudy.headerDescription,
+      description: caseStudy.seo?.description || caseStudy.pageDescription,
     },
   }
 }
