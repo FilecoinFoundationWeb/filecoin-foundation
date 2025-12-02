@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.5.4
+
+### Patch Changes
+
+- 70529f4: Refactor the useBackground hook to return a richer object with computed properties
+
 ## 0.5.3
 
 ### Patch Changes
