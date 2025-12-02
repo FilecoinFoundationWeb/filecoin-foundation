@@ -1,0 +1,16 @@
+:root,
+.light-section {
+  --input-border-color: var(--color-zinc-200);
+  --input-placeholder-color: var(--color-zinc-600);
+
+  --search-input-icon-color: var(--color-zinc-500);
+  --search-input-clear-icon-color-hover: var(--color-zinc-700);
+}
+
+.dark-section {
+  --input-border-color: var(--color-zinc-700);
+  --input-placeholder-color: var(--color-zinc-400);
+
+  --search-input-icon-color: var(--color-zinc-400);
+  --search-input-clear-icon-color-hover: var(--color-zinc-200);
+}

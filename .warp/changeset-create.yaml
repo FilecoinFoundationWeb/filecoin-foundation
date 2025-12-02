@@ -1,0 +1,24 @@
+name: Create Changeset
+description: Runs npm run changeset with the bump type and summary already determined from analysis
+
+query: |
+  Now that you have figured out the bump and summary, please run npm run changeset and use the answers.
+  
+  Package: @filecoin-foundation/ui-filecoin
+  Bump type: {{bump_type}}
+  Summary: {{summary}}
+
+arguments:
+  - name: bump_type
+    description: Version bump type
+    type: enum
+    values:
+      - "major"
+      - "minor"
+      - "patch"
+    default: "patch"
+  
+  - name: summary
+    description: Changeset summary describing the changes
+    type: text
+    default: ""

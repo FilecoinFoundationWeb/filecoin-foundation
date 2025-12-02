@@ -1,12 +1,14 @@
 'use client'
 
 import { clsx } from 'clsx'
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import type { GenericLinkProps, GenericLinkType } from '../TextLink/types'
+import { getUIConfig } from '../../config/ui-config'
+import type { TouchTarget } from '../../types/touchTarget'
+import { isExternalLink } from '../../utils/linkUtils'
 
-import type { TouchTarget } from './types'
+import { ExternalLink, type ExternalLinkProps } from './components/ExternalLink'
+import { InternalLink, type InternalLinkProps } from './components/InternalLink'
 
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'px-5 py-6',
@@ -29,34 +31,34 @@ export const mobileStyle = clsx(
 
 export type NavigationLinkProps = {
   on: 'mobile' | 'desktop'
-  label: string
-  href: string
-  InternalLinkComponent?: GenericLinkType
-} & GenericLinkProps
+} & (InternalLinkProps | ExternalLinkProps)
 
 export function NavigationMainLink({
   href,
   label,
   on,
-  InternalLinkComponent = Link as GenericLinkType,
   ...rest
 }: NavigationLinkProps) {
   const pathname = usePathname()
   const isActive = pathname.startsWith(href.toString())
 
-  return (
-    <InternalLinkComponent
-      href={href}
-      aria-label={`Go to ${label} page`}
-      aria-current={isActive}
-      className={clsx(
-        'inline-block',
-        on === 'desktop' && desktopStyle,
-        on === 'mobile' && mobileStyle,
-      )}
-      {...rest}
-    >
-      {label}
-    </InternalLinkComponent>
-  )
+  const { baseDomain } = getUIConfig()
+  const isExternal = isExternalLink(href, baseDomain)
+
+  const props = {
+    href,
+    label,
+    'aria-label': `Go to ${label} page`,
+    'aria-current': isActive,
+    className: clsx(
+      'inline-block',
+      on === 'desktop' && desktopStyle,
+      on === 'mobile' && mobileStyle,
+    ),
+    ...rest,
+  }
+
+  const Link = isExternal ? ExternalLink : InternalLink
+
+  return <Link {...props} />
 }

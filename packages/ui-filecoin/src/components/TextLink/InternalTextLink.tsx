@@ -1,21 +1,21 @@
+import type { ComponentProps } from 'react'
+
 import { clsx } from 'clsx'
-import Link from 'next/link'
 
-import { type GenericLinkType, type GenericLinkProps } from './types'
+import { getUIConfig, type UIConfig } from '../../config/ui-config'
 
-export type InternalTextLinkProps = GenericLinkProps & {
-  InternalLinkComponent?: GenericLinkType
-}
+export type InternalTextLinkProps = ComponentProps<UIConfig['Link']>
 
 export function InternalTextLink({
   className,
   children,
-  InternalLinkComponent = Link as GenericLinkType,
   ...rest
 }: InternalTextLinkProps) {
+  const { Link } = getUIConfig()
+
   return (
-    <InternalLinkComponent className={clsx('text-link', className)} {...rest}>
+    <Link className={clsx('text-link', className)} {...rest}>
       {children}
-    </InternalLinkComponent>
+    </Link>
   )
 }

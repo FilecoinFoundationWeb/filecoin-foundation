@@ -1,4 +1,4 @@
-import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
+import { SmartTextLink } from '@filecoin-foundation/ui-filecoin/TextLink/SmartTextLink'
 
 import { footerNavigationItems } from '../Navigation/constants/navigation'
 

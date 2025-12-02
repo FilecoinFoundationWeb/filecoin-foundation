@@ -29,7 +29,7 @@ export const storageProvidersLogos = [
   {
     logo: NDLABSLogo,
     alt: 'ND LABS Logo',
-    href: 'https://www.ndlabs.io/',
+    href: 'https://www.ndlabs.io/#/',
   },
   {
     logo: RRMGlobalLogo,

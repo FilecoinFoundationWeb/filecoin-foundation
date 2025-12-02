@@ -4,12 +4,13 @@ import { useSearchParams } from 'next/navigation'
 
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
-import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import {
-  PAGE_KEY,
-  SEARCH_KEY,
-} from '@filecoin-foundation/utils/constants/urlParamsConstants'
+  Search,
+  useSearch,
+  normalizeSearchParams,
+} from '@filecoin-foundation/ui-filecoin/Search'
+import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { SectionDivider } from '@/components/SectionDivider'
@@ -36,7 +37,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
   const [selectedCategory] = useCategoryState()
 
   const { searchResults } = useSearch({
-    searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
+    searchQuery: normalizeSearchParams(searchParams),
     entries: posts,
     searchBy: ['title', 'excerpt'],
   })

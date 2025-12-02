@@ -2,12 +2,15 @@ import Image from 'next/image'
 
 import { clsx } from 'clsx'
 
+import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Card } from '@filecoin-foundation/ui-filecoin/Card'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+import { LinkCard } from '@filecoin-foundation/ui-filecoin/LinkCard'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/Section'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
+import { SimpleCard } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
@@ -16,10 +19,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { Button } from '@/components/Button'
-import { LinkCard } from '@/components/LinkCard'
 import { Navigation } from '@/components/Navigation/Navigation'
-import { SimpleCard } from '@/components/SimpleCard'
 import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbed'
 
 import { LEARN_SEO } from './constants/seo'
@@ -49,7 +49,7 @@ export default function Learn() {
           priority
           src={graphicsData.earthBlueEdge.data}
           alt={graphicsData.earthBlueEdge.alt}
-          className="absolute top-0 right-0 -z-10 h-[110vh] w-auto translate-x-1/3 rotate-[15deg] transform object-contain object-right-top sm:translate-x-0 sm:rotate-0"
+          className="absolute top-0 right-0 -z-10 h-[110vh] w-auto translate-x-1/3 rotate-15 transform object-contain object-top-right sm:translate-x-0 sm:rotate-0"
         />
       </div>
 

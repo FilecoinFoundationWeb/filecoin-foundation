@@ -1,3 +1,4 @@
+import { formatDateTime } from '../../utils/dateUtils'
 import { ExternalTextLink } from '../TextLink/ExternalTextLink'
 
 type SoftwareVersionProps = {
@@ -13,6 +14,7 @@ export function SoftwareVersion({ info, githubUrl }: SoftwareVersionProps) {
   }
 
   const { version, network, commit, date } = match
+  const formattedDate = date ? formatDateTime(date) : null
 
   return (
     <div className="space-y-0.5 text-sm text-gray-600">
@@ -25,12 +27,12 @@ export function SoftwareVersion({ info, githubUrl }: SoftwareVersionProps) {
           </ExternalTextLink>
         </p>
       )}
-      {date && <p>{date}</p>}
+      {formattedDate && <p>{formattedDate}</p>}
     </div>
   )
 }
 
-function parseVersionString(input: string) {
+export function parseVersionString(input: string) {
   const regex = /^(\d+\.\d+\.\d+)\+([a-z]+)\+(git_[a-f0-9]+)_(.+)$/
   const match = input.match(regex)
 

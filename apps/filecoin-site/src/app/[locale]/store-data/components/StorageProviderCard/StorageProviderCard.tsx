@@ -1,10 +1,8 @@
-import type { ComponentType, SVGProps } from 'react'
-
 import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
+import { CTALink } from '@filecoin-foundation/ui-filecoin/CTALink'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
-import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
+import { Icon, type IconProps } from '@filecoin-foundation/ui-filecoin/Icon'
 
-import { CTALink } from '@/components/CTALink'
 
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'
@@ -17,7 +15,7 @@ export type StorageProviderCardProps = {
   bestFor: Array<string>
   keyFeatures: Array<string>
   url: string
-  logo: ComponentType<SVGProps<SVGSVGElement>>
+  logo: IconProps['component']
 }
 
 export function StorageProviderCard({
@@ -49,7 +47,7 @@ export function StorageProviderCard({
           </div>
         </div>
 
-        <p className="text-[var(--color-paragraph-text)]" title={description}>
+        <p className="text-(--color-paragraph-text)" title={description}>
           {description}
         </p>
 

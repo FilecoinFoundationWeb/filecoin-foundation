@@ -1,14 +1,17 @@
-import type { ComponentProps } from 'react'
+import type { AnchorHTMLAttributes } from 'react'
 
 import { ArrowUpRightIcon } from '@phosphor-icons/react'
 
 import { Icon } from '../../Icon'
-import type { LinkItemProps } from '../types'
 
 import { LinkDescription } from './LinkDescription'
 import { LinkLabel } from './LinkLabel'
 
-type ExternalLinkProps = ComponentProps<'a'> & LinkItemProps
+export type ExternalLinkProps = {
+  href: string
+  label: string
+  description?: string
+} & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'label' | 'children'>
 
 export function ExternalLink({
   label,
@@ -19,10 +22,11 @@ export function ExternalLink({
     <a {...rest} rel="noopener noreferrer" target="_blank">
       <div className="group inline-flex items-center gap-1">
         <LinkLabel>{label}</LinkLabel>
-        <span className="navigation-menu-link-external-icon">
+        <span className="text-(--color-navigation-menu-panel-icon)">
           <Icon component={ArrowUpRightIcon} size={20} />
         </span>
       </div>
+
       {description && (
         <div className="mt-1">
           <LinkDescription>{description}</LinkDescription>

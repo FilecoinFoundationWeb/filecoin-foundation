@@ -1,16 +1,13 @@
-import type { ComponentType } from 'react'
-
 import { ArrowUpRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
+import { getUIConfig } from '../config/ui-config'
 import { isExternalLink } from '../utils/linkUtils'
 
 import { BaseLink, type BaseLinkProps } from './BaseLink'
 import { Icon as IconComponent, type IconProps } from './Icon'
 
 export type ButtonProps = {
-  baseDomain: string
-  LinkComponent?: ComponentType<Omit<BaseLinkProps, 'LinkComponent'>>
   variant: keyof typeof variantClasses
   icon?: IconProps['component']
   href?: BaseLinkProps['href']
@@ -34,16 +31,9 @@ export function Button({
   children,
   disabled,
   href,
-  baseDomain,
-  LinkComponent = BaseLink,
   ...rest
 }: ButtonProps) {
-  className = clsx(
-    'button inline-flex items-center justify-center gap-2 text-base font-medium hover:no-underline',
-    disabled ? 'cursor-not-allowed' : 'cursor-pointer',
-    variantClasses[variant],
-    className,
-  )
+  className = clsx('button', variantClasses[variant], className)
 
   if (typeof href === 'undefined' || disabled) {
     return (
@@ -53,15 +43,17 @@ export function Button({
     )
   }
 
+  const { baseDomain } = getUIConfig()
+
   return (
-    <LinkComponent className={className} href={href} baseDomain={baseDomain}>
+    <BaseLink className={className} href={href}>
       <ButtonInner
         isExternalLink={isExternalLink(href, baseDomain)}
         icon={icon}
       >
         {children}
       </ButtonInner>
-    </LinkComponent>
+    </BaseLink>
   )
 }
 

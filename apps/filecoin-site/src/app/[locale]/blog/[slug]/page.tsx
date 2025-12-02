@@ -4,6 +4,7 @@ import type { LocaleParams } from '@/i18n/types'
 import { setRequestLocale } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { MarkdownContent } from '@filecoin-foundation/ui-filecoin/Markdown/MarkdownContent'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import type { SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
@@ -14,7 +15,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { MarkdownContent } from '@/components/MarkdownContent'
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'

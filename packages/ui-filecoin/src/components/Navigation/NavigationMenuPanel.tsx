@@ -1,35 +1,23 @@
 'use client'
 
-import { type ComponentType } from 'react'
-
 import { clsx } from 'clsx'
 
-import { backgroundVariants, useBackgroundVariant } from '../Section/Section'
+import { backgroundVariants, useBackground } from '../Section/Section'
 
-import { variantMapping } from './constants'
-import { type ExpandedNavItem, type NavigationMenuItem } from './types'
+import { NavigationMenuLink } from './NavigationMenuLink'
+import { type NavigationMenuItem } from './types'
 
 const roundedStyle = 'rounded-2xl'
 
 type NavigationMenuPanelProps = {
   items: NavigationMenuItem['items']
-  NavigationMenuLinkComponent: ComponentType<ExpandedNavItem>
 }
 
-export function NavigationMenuPanel({
-  items,
-  NavigationMenuLinkComponent,
-}: NavigationMenuPanelProps) {
-  const backgroundVariant = useBackgroundVariant()
-  const desktopBackgroundVariant = variantMapping[backgroundVariant]
+export function NavigationMenuPanel({ items }: NavigationMenuPanelProps) {
+  const { theme } = useBackground()
 
   return (
-    <div
-      className={clsx(
-        roundedStyle,
-        backgroundVariants[desktopBackgroundVariant],
-      )}
-    >
+    <div className={clsx(roundedStyle, backgroundVariants[theme])}>
       <div
         className={clsx(
           roundedStyle,
@@ -50,7 +38,7 @@ export function NavigationMenuPanel({
               >
                 {item.links.map((link) => (
                   <li key={link.href}>
-                    <NavigationMenuLinkComponent {...link} />
+                    <NavigationMenuLink {...link} />
                   </li>
                 ))}
               </ul>

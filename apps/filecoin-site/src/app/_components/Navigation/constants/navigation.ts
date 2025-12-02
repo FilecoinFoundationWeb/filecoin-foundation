@@ -1,3 +1,9 @@
+import type {
+  ExpandedNavItem,
+  NavItem,
+  NavigationMenuItem,
+} from '@filecoin-foundation/ui-filecoin/Navigation/types'
+
 import { PATHS } from '@/constants/paths'
 import {
   FILECOIN_DOCS_URL,
@@ -8,18 +14,8 @@ import {
 
 import { pickNavItem } from '../utils/pickNavItem'
 
-export type NavItem = { label: string; href: string }
-type InternalNavItem = { label: string; href: string }
-export type ExpandedNavItem = NavItem & { description: string }
 
 type FooterNavigationItem = { title: string; items: Array<NavItem> }
-export type NavigationMenuItem = {
-  label: string
-  items: Array<{
-    title: string
-    links: Array<ExpandedNavItem>
-  }>
-}
 
 const blockExplorerItems: Array<ExpandedNavItem> = [
   {
@@ -111,7 +107,7 @@ const contributeItems: Array<ExpandedNavItem> = [
   },
 ]
 
-const internalNavigationItems: Array<InternalNavItem> = [
+const internalNavigationItems: Array<NavItem> = [
   { label: PATHS.LEARN.label, href: PATHS.LEARN.path },
   { label: PATHS.CASE_STUDIES.label, href: PATHS.CASE_STUDIES.path },
   { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
@@ -123,9 +119,7 @@ const internalNavigationItems: Array<InternalNavItem> = [
 
 export const mobileNavigationItems = internalNavigationItems
 
-export const headerNavigationItems: Array<
-  InternalNavItem | NavigationMenuItem
-> = [
+export const headerNavigationItems: Array<NavItem | NavigationMenuItem> = [
   {
     label: PATHS.LEARN.label,
     items: [
@@ -205,7 +199,7 @@ export const footerNavigationItems: Array<FooterNavigationItem> = [
   },
 ]
 
-export const footerLegalItems: Array<InternalNavItem> = [
+export const footerLegalItems: Array<NavItem> = [
   { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
   { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
 ]

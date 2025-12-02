@@ -18,7 +18,7 @@ export function EmptyStateCard({
   children,
 }: EmptyStateCardProps) {
   return (
-    <StateCard variant="outlined">
+    <StateCard border="dashed">
       <div className="flex w-full flex-col items-center justify-center gap-8">
         <span className="bg-brand-50 border-brand-100 text-brand-500 grid size-15 place-items-center rounded-full border">
           <Icon component={icon} size={30} />

@@ -2,26 +2,34 @@
 
 import { GlobeIcon } from '@phosphor-icons/react/dist/ssr'
 
-import { Listbox } from '../Listbox'
+import { Listbox, type Option } from '../Listbox'
 
-import { NETWORK_CONFIG } from './config'
+import { supportedChains } from './config'
 import { useNetwork } from './NetworkProvider'
 import type { ChainId } from './types'
 
-const networkOptions = Object.entries(NETWORK_CONFIG).map(([id, { name }]) => ({
-  id: Number(id) as ChainId,
-  label: name,
+const networkOptions = supportedChains.map((chain) => ({
+  id: chain.id,
+  label: chain.name,
 }))
 
-export function NetworkSelector() {
+type ChainIdOption = { id: ChainId } & Omit<Option, 'id'>
+
+export type NetworkSelectorProps = {
+  options?: ReadonlyArray<ChainIdOption>
+}
+
+export function NetworkSelector({
+  options = networkOptions,
+}: NetworkSelectorProps) {
   const { network, setNetwork } = useNetwork()
 
   const selectedOption =
-    networkOptions.find((option) => option.id === network) || networkOptions[0]
+    options.find((option) => option.id === network) || networkOptions[0]
 
   return (
     <Listbox
-      options={networkOptions}
+      options={options}
       selected={selectedOption}
       setSelected={(selected) => setNetwork(selected.id)}
       Icon={GlobeIcon}

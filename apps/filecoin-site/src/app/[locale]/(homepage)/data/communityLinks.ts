@@ -5,12 +5,13 @@ import {
   SlackLogoIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
+import type { LinkCardData } from '@filecoin-foundation/ui-filecoin/LinkCard'
+
 import {
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
 } from '@/constants/siteMetadata'
 
-import type { LinkCardData } from '@/components/LinkCard'
 
 export const communityLinks = [
   {

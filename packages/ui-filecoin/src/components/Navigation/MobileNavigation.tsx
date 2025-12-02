@@ -6,18 +6,11 @@ import { ListIcon, XIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
 import { IconButton } from '../IconButton'
-import { useBackgroundVariant, backgroundVariants } from '../Section/Section'
+import { useBackground, backgroundVariants } from '../Section/Section'
 import { SlideOver } from '../SlideOver'
 
-import { variantMapping } from './constants'
+import { NavigationMainLink } from './NavigationMainLink'
 import type { NavItem } from './types'
-
-type NavigationMainLinkProps = {
-  on: 'mobile'
-  label: string
-  href: string
-  onNavigate?: () => void
-}
 
 type HomeLogoIconLinkProps = {
   onNavigate?: () => void
@@ -25,18 +18,15 @@ type HomeLogoIconLinkProps = {
 
 export type MobileNavigationProps = {
   items: Array<NavItem>
-  NavigationMainLinkComponent: ComponentType<NavigationMainLinkProps>
   HomeLogoIconLinkComponent: ComponentType<HomeLogoIconLinkProps>
 }
 
 export function MobileNavigation({
   items,
-  NavigationMainLinkComponent,
   HomeLogoIconLinkComponent,
 }: MobileNavigationProps) {
   const [open, setOpen] = useState(false)
-  const backgroundVariant = useBackgroundVariant()
-  const mobileBackgroundVariant = variantMapping[backgroundVariant]
+  const { theme } = useBackground()
 
   return (
     <div>
@@ -50,7 +40,7 @@ export function MobileNavigation({
         <div
           className={clsx(
             'flex h-full flex-col gap-12 px-6 py-8',
-            backgroundVariants[mobileBackgroundVariant],
+            backgroundVariants[theme],
           )}
         >
           <div className="flex items-center justify-between">
@@ -67,7 +57,7 @@ export function MobileNavigation({
           >
             {items.map(({ href, label }) => (
               <li key={href}>
-                <NavigationMainLinkComponent
+                <NavigationMainLink
                   on="mobile"
                   href={href}
                   label={label}

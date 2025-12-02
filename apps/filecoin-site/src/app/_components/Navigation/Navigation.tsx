@@ -8,7 +8,6 @@ import {
 import { mobileNavigationItems } from './constants/navigation'
 import { DesktopNavigation } from './DesktopNavigation'
 import { HomeLogoIconLink } from './HomeLogoIconLink'
-import { NavigationMainLink } from './NavigationMainLink'
 
 type NavigationProps = {
   backgroundVariant: SectionProps['backgroundVariant']
@@ -24,10 +23,10 @@ export function Navigation({ backgroundVariant }: NavigationProps) {
           <div className="block xl:hidden">
             <MobileNavigation
               items={mobileNavigationItems}
-              NavigationMainLinkComponent={NavigationMainLink}
               HomeLogoIconLinkComponent={HomeLogoIconLink}
             />
           </div>
+
           <div className="hidden xl:block xl:flex-1">
             <DesktopNavigation />
           </div>

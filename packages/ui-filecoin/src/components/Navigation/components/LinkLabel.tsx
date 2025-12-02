@@ -3,5 +3,5 @@ type LinkLabelProps = {
 }
 
 export function LinkLabel({ children }: LinkLabelProps) {
-  return <p className="navigation-menu-link-label">{children}</p>
+  return <p className="font-medium text-(--color-text-base)">{children}</p>
 }

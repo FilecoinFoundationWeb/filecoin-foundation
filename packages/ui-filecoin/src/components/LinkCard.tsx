@@ -1,27 +1,19 @@
-import type { ComponentType } from 'react'
-
 import { clsx } from 'clsx'
 
+import { BaseLink, type BaseLinkProps } from './BaseLink'
 import { Heading, type HeadingProps } from './Heading'
 import { IconBadge, type IconBadgeProps } from './IconBadge'
-
-type LinkComponentProps = {
-  href: string
-  className: string
-  'aria-label': string
-}
 
 export type LinkCardProps = {
   as: 'li' | 'article' | 'div'
   title: string
   headingTag: HeadingProps['tag']
   description?: string
-  href: string
+  href: BaseLinkProps['href']
   icon: {
     component: IconBadgeProps['component']
     variant?: IconBadgeProps['variant']
   }
-  BaseLinkComponent: ComponentType<LinkComponentProps>
 }
 
 export type LinkCardData = Pick<
@@ -38,7 +30,6 @@ export function LinkCard({
   description,
   href,
   icon,
-  BaseLinkComponent,
 }: LinkCardProps) {
   return (
     <Tag
@@ -61,7 +52,7 @@ export function LinkCard({
         )}
       </div>
 
-      <BaseLinkComponent
+      <BaseLink
         href={href}
         className="focus:brand-outline absolute inset-0"
         aria-label={`Read more about ${title}`}

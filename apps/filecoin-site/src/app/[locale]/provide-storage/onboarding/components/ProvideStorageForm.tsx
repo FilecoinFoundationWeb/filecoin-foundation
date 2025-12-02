@@ -7,8 +7,7 @@ import { ControlledForm } from '@filecoin-foundation/ui/Form'
 import { ControlledFormCheckbox } from '@filecoin-foundation/ui/FormCheckbox'
 import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
 import { ControlledFormTextarea } from '@filecoin-foundation/ui/FormTextarea'
-
-import { Button } from '@/components/Button'
+import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 
 import {
   ProvideStorageFormSchema,

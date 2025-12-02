@@ -7,9 +7,9 @@ import Error from 'next/error'
 import * as Sentry from '@sentry/nextjs'
 
 import { GlobalError as AppGlobalError } from '@filecoin-foundation/ui/GlobalError'
+import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { FILECOIN_FOUNDATION_URLS } from '@filecoin-foundation/utils/constants/appMetadata'
 
-import { Button } from '@/components/Button'
 import { SiteLayout } from '@/components/SiteLayout'
 
 type GlobalErrorProps = {

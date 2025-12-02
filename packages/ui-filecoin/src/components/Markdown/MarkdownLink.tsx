@@ -1,17 +1,15 @@
-import type { ComponentPropsWithoutRef } from 'react'
-
 import { clsx } from 'clsx'
 
-import { SmartTextLink } from '../TextLink/SmartTextLink'
+import {
+  SmartTextLink,
+  type SmartTextLinkProps,
+} from '../TextLink/SmartTextLink'
 
-type MarkdownLinkProps = ComponentPropsWithoutRef<'a'> & {
-  baseDomain: string
-}
+type MarkdownLinkProps = SmartTextLinkProps
 
 export function MarkdownLink({
   href,
   children,
-  baseDomain,
   className,
   ...props
 }: MarkdownLinkProps) {
@@ -34,7 +32,6 @@ export function MarkdownLink({
   return (
     <SmartTextLink
       href={href}
-      baseDomain={baseDomain}
       className={clsx('not-prose', className)}
       {...props}
     >

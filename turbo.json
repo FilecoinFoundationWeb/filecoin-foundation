@@ -10,7 +10,7 @@
         ".env.production",
         ".env"
       ],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "dev": {
       "persistent": true,
@@ -28,6 +28,10 @@
       "persistent": true
     },
     "lint": {
+      "cache": true,
+      "inputs": ["$TURBO_DEFAULT$"]
+    },
+    "test": {
       "cache": true,
       "inputs": ["$TURBO_DEFAULT$"]
     }

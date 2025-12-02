@@ -10,24 +10,30 @@ type LogoSectionProps = {
   headingTag: HeadingProps['tag']
   title: string
   logos: Array<LogoItemProps>
+  autoPlay?: boolean
 }
 
-export function LogoSection({ headingTag, title, logos }: LogoSectionProps) {
+export function LogoSection({
+  headingTag,
+  title,
+  logos,
+  autoPlay,
+}: LogoSectionProps) {
   const Tag = headingTag
 
   return (
     <section
-      className="logo-section flex flex-col items-center gap-15 md:gap-20"
+      className="logo-section flex flex-col items-center gap-10"
       aria-labelledby="logo-section-title"
     >
       <Tag
         id="logo-section-title"
-        className="text-lg text-[var(--color-subheading-text)]"
+        className="text-lg text-(--color-subheading-text)"
       >
         {title}
       </Tag>
 
-      <Carousel>
+      <Carousel autoPlay={autoPlay}>
         <CarouselContent>
           {logos.map((logoItem, index) => (
             <CarouselItem key={index} range={logos.length}>
