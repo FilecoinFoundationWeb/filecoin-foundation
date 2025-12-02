@@ -6,7 +6,7 @@ import { ListIcon, XIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
 import { IconButton } from '../IconButton'
-import { useBackgroundVariant, backgroundVariants } from '../Section/Section'
+import { useBackground, backgroundVariants } from '../Section/Section'
 import { SlideOver } from '../SlideOver'
 
 import { NavigationMainLink } from './NavigationMainLink'
@@ -26,7 +26,7 @@ export function MobileNavigation({
   HomeLogoIconLinkComponent,
 }: MobileNavigationProps) {
   const [open, setOpen] = useState(false)
-  const { binaryVariant } = useBackgroundVariant()
+  const { theme } = useBackground()
 
   return (
     <div>
@@ -40,7 +40,7 @@ export function MobileNavigation({
         <div
           className={clsx(
             'flex h-full flex-col gap-12 px-6 py-8',
-            backgroundVariants[binaryVariant],
+            backgroundVariants[theme],
           )}
         >
           <div className="flex items-center justify-between">

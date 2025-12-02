@@ -42,22 +42,18 @@ export function Section({
   )
 }
 
-export function useBackgroundVariant() {
+export function useBackground() {
   const backgroundVariant = use(BackgroundVariantContext)
 
   const isDark =
     backgroundVariant === 'dark' || backgroundVariant === 'transparentDark'
+  const isLight = !isDark
 
-  const isLight =
-    backgroundVariant === 'light' ||
-    backgroundVariant === 'gray' ||
-    backgroundVariant === 'transparent'
-
-  const binaryVariant = isDark ? 'dark' : 'light'
+  const theme = isDark ? 'dark' : 'light'
 
   return {
-    variant: backgroundVariant,
-    binaryVariant,
+    background: backgroundVariant,
+    theme,
     isDark,
     isLight,
   } as const
