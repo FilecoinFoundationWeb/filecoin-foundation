@@ -26,7 +26,7 @@ export function GradientContainer({
     >
       {children}
       {overlay && (
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent from-50% to-zinc-950" />
+        <div className="absolute inset-0 -z-10 bg-linear-to-b from-transparent from-50% to-zinc-950" />
       )}
     </div>
   )
