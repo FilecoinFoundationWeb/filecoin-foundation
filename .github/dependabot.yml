@@ -8,6 +8,10 @@ updates:
     schedule:
       interval: "weekly"
       day: "sunday"
+    ignore:
+      - dependency-name: "next"
+      - dependency-name: "@next/eslint-plugin-next"
+      - dependency-name: "@types/node"
     groups:
       dependencies:
         patterns:
