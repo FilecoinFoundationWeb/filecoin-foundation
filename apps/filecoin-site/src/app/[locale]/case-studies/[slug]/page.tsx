@@ -26,7 +26,7 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
   const { slug, locale } = await props.params
   setRequestLocale(locale)
 
-  const data = await getCaseStudyData(slug, locale)
+  // TODO: Add all case studies and make challenge, solution, and results required
   const {
     title,
     pageDescription,
@@ -35,22 +35,7 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
     challenge,
     solution,
     results,
-  } = data
-
-  const sections = [
-    {
-      title: 'Challenge',
-      description: challenge,
-    },
-    {
-      title: 'Solution',
-      description: solution,
-    },
-    {
-      title: 'Results',
-      description: results,
-    },
-  ]
+  } = await getCaseStudyData(slug, locale)
 
   return (
     <>
@@ -67,14 +52,10 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
       </PageSection>
 
       <PageSection backgroundVariant="dark" paddingVariant="compact">
-        <ul className="grid grid-cols-1 gap-15 md:grid-cols-3">
-          {sections.map((section) => (
-            <TextCard
-              key={section.title}
-              title={section.title}
-              description={section.description}
-            />
-          ))}
+        <ul className="grid grid-cols-1 gap-15 md:grid-cols-2 lg:grid-cols-3">
+          <TextCard title="Challenge" description={challenge} />
+          <TextCard title="Solution" description={solution} />
+          <TextCard title="Results" description={results} />
         </ul>
       </PageSection>
 
