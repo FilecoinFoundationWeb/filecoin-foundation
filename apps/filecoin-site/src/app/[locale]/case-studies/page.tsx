@@ -1,3 +1,5 @@
+import type { LocaleParams } from '@/i18n/types'
+
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
@@ -15,9 +17,17 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { CASE_STUDIES_SEO } from './constants/seo'
-import { caseStudies } from './data/caseStudies'
+import { getCaseStudiesData } from './utils/getCaseStudyData'
 
-export default function CaseStudies() {
+type CaseStudiesProps = {
+  params: Promise<LocaleParams>
+}
+
+export default async function CaseStudies({ params }: CaseStudiesProps) {
+  const { locale } = await params
+
+  const caseStudiesData = await getCaseStudiesData(locale)
+
   return (
     <>
       <GradientContainer>
@@ -37,13 +47,16 @@ export default function CaseStudies() {
           description="Explore some of the organizations using Filecoin to preserve their data."
         >
           <CardGrid as="ul" variant="lgTwoWide">
-            {caseStudies.map(({ title, description, cta, logo }) => (
+            {caseStudiesData.map(({ title, cardDescription, logo, slug }) => (
               <SimpleCardWithLogo
                 key={title}
                 title={title}
-                description={description}
-                cta={cta}
+                description={cardDescription}
                 logo={logo}
+                cta={{
+                  href: `${PATHS.CASE_STUDIES.path}/${slug}`,
+                  text: 'Read case study',
+                }}
               />
             ))}
           </CardGrid>

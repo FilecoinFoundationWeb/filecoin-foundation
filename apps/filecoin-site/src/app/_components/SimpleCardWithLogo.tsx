@@ -7,15 +7,15 @@ import {
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui-filecoin/Icon'
 
-type HEXCodeType = `#${string}`
+export type HEXCodeType = `#${string}`
 
-type ImageLogoProps = {
+export type ImageLogoProps = {
   type: 'image'
   src: StaticImageData
   bgColor: HEXCodeType
 }
 
-type SVGLogoProps = {
+export type SVGLogoProps = {
   type: 'svg'
   src: IconProps['component']
   bgColor: HEXCodeType
