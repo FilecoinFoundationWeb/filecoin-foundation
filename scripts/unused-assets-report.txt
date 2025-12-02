@@ -2,27 +2,31 @@ UNUSED ASSETS REPORT
 ===================
 
 ff-site:
-  public/assets/images/logo-1.webp
-  public/assets/images/devsummit7_virtual_square.png
-  public/assets/images/cdid-protocol-logo.png
-  Total: 3
+  public/assets/images/slide-16_9-1.webp
+  public/assets/images/marta-belcher-filecoin-foundation.webp
+  public/assets/images/marco-de-rossi-metamask-1-.webp
+  public/assets/images/66d74e4db714067e4cabed3f_image-6.webp
+  public/assets/images/1745403328875.webp
+  public/assets/images/1728467665082.webp
+  public/assets/images/1687336501122.webp
+  public/assets/images/1670490998296.webp
+  public/assets/images/1648161259450.webp
+  public/assets/images/1605526794028.webp
+  public/assets/images/1571900126220.webp
+  public/assets/images/1553381322360.webp
+  public/assets/images/1545691189584.webp
+  public/assets/images/1516955240728.webp
+  Total: 14
 
 ffdweb-site:
   Total: 0
 
 filecoin-site:
-  public/assets/images/screenshot-2025-06-24_08_55_25.png
-  public/assets/images/screenshot-2025-06-24_08_55_05.png
-  public/assets/images/screenshot-2025-06-24_08_54_51.png
-  public/assets/images/screenshot-2025-06-24_08_54_26.png
-  public/assets/images/DevSummit6_Social_Header.webp
-  public/assets/images/170366980-78f835fb-8168-4914-9a75-d62b1a157133.webp
-  public/assets/images/042425-PDP_BlogHeader.webp
-  Total: 7
+  Total: 0
 
 uxit:
   Total: 0
 
-Total unused: 10
-Total deleted: 10
-Generated: 2025-10-01T02:40:07.348Z
+Total unused: 14
+Total deleted: 14
+Generated: 2025-12-01T02:54:37.196Z
