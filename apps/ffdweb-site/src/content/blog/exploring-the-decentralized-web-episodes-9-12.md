@@ -23,19 +23,19 @@ Episodes 9–12 cover how Web3 re-establishes the internet as an inclusive commu
 
 Episode 9 looks at the evolution of the advertising model and its relationship with media. “Can we make a system that works without all the middlemen, so you don’t have to host things on iTunes, or Amazon, or Spotify to be able to be discovered and to be able to be paid?” asked Brewster Kahle, Founder of Internet Archive. The answer, when it comes to Web3, is yes!
 
-Learn how advertising models will change when the web is decentralized, from experts including James Young of [Abridged](https://abridged.io/), Tara Tan of IDEO Colab Ventures, Brewster Kahle of [Internet Archive](https://archive.org/), Doug Petkanics of [Livepeer](https://livepeer.org/), Mariano Conti (formerly) of [MakerDAO](https://makerdao.com/en/), and Andrew Hill of [Textile](https://www.textile.io/).
+Learn how advertising models will change when the web is decentralized, from experts including James Young of [Abridged](https://abridged.io/), Tara Tan of IDEO Colab Ventures, Brewster Kahle of [Internet Archive](https://archive.org/), Doug Petkanics of [Livepeer](https://www.livepeer.org/), Mariano Conti (formerly) of [MakerDAO](https://makerdao.com/en/), and Andrew Hill of [Textile](https://linktr.ee/recalllabs).
 
 **[Episode 10: "Communities and Coordination"](https://www.youtube.com/watch?v=kLHOV_1vlNY)**
 
 In episode 10, experts dive into the history of community governance and decision making, the importance of stakeholder engagement, and DAOs as an alternative governance structure to traditional corporations.
 
-Explore step-by-step how DAOs work and what a future built on networks of DAOs could look like with guests Scott Gralnick of [Lago Frame](https://lagoframe.com/) and [Portis](https://www.portis.io/), Jonathan Dotan of [Starling](https://www.starlinglab.org/), Mariano Conti (formerly) of [MakerDAO](https://makerdao.com/en/), Clara Tsao of Filecoin Foundation for the Decentralized Web, James Young of[Abridged](https://abridged.io/), and more
+Explore step-by-step how DAOs work and what a future built on networks of DAOs could look like with guests Scott Gralnick of [Lago Frame](https://lagoframe.com/) and Portis, Jonathan Dotan of [Starling](https://www.starlinglab.org/), Mariano Conti (formerly) of [MakerDAO](https://makerdao.com/en/), Clara Tsao of Filecoin Foundation for the Decentralized Web, James Young of[Abridged](https://abridged.io/), and more
 
 **[Episode 11: "Digital Creator Economy"](https://www.youtube.com/watch?v=W3weRLlFJQo)**
 
 We are in the midst of the transition from, Web2 — which focused on publishing your own work––to Web3, which focuses on monetizing that work. This episode addresses the shift in thinking from scarcity of access to scarcity of ownership in art and the rise of NFTs, as Matt Condon of Digitally Rare positions it “It’s the ‘seeing’ that creates value. It’s not ‘I want to own this so nobody sees it,’ it’s ‘I want to own this because everyone has seen it.’”
 
-Learn how the decentralized web allows us to build new spaces and leverage existing web2 platforms to create new community spaces with experts Matt Stephenson of [Planck](https://planckdata.com/), Scott Gralnick of [Lago Frame](https://lagoframe.com/) and [Portis](https://www.portis.io/), Maria Paula Fernandez of jpg.space, Carson Farmer of [Textile](https://www.textile.io/), Matt Condon of [Digitally Rare](https://anchor.fm/digitallyrare), Jimmy Lee of the Application Resource Group, Tara Tan of IDEO Colab Ventures, and Matt Lockyer of Satori.
+Learn how the decentralized web allows us to build new spaces and leverage existing web2 platforms to create new community spaces with experts Matt Stephenson of [Planck](https://www.planckdata.com/), Scott Gralnick of [Lago Frame](https://lagoframe.com/) and Portis, Maria Paula Fernandez of jpg.space, Carson Farmer of [Textile](https://linktr.ee/recalllabs), Matt Condon of [Digitally Rare](https://creators.spotify.com/pod/profile/digitallyrare/), Jimmy Lee of the Application Resource Group, Tara Tan of IDEO Colab Ventures, and Matt Lockyer of Satori.
 
 **[Episode 12: "Emerging Web"](https://www.youtube.com/watch?v=sSaR7iCF86s)**
 
@@ -43,7 +43,7 @@ Learn how the decentralized web allows us to build new spaces and leverage exist
 
 Web3 enables a new iteration of the internet that fixes problems that emerged in earlier eras. In this last episode experts talk about how this next generation of the web benefits content providers, consumers, and platforms alike. As digital rights activist Raney Reitman puts it: “The decentralized web, if we get it right, is going to offer an alternative version of the internet that isn’t driven by advertising and isn’t driven by surveillance.”
 
-Learn more about how to get involved with Web3 from experts Sarah Friend, artist and software engineer, Matt Condon of [Digitally Rare](https://anchor.fm/digitallyrare), Rainey Reitman, digital rights activist, Mike Masnick of [Techdirt](https://www.techdirt.com/), Simona Pop of [Status](https://status.im/get/), Doug Petkanics of [Livepeer](https://livepeer.org/), Mariano Conti (formerly) of [MakerDAO](https://makerdao.com/en/), Clara Tsao of Filecoin Foundation for the Decentralized Web, Jimmy Lee of the Application Resource Group, and Wendy Hanamura from [Internet Archive](https://archive.org/).
+Learn more about how to get involved with Web3 from experts Sarah Friend, artist and software engineer, Matt Condon of [Digitally Rare](https://creators.spotify.com/pod/profile/digitallyrare/), Rainey Reitman, digital rights activist, Mike Masnick of [Techdirt](https://www.techdirt.com/), Simona Pop of [Status](https://status.app/), Doug Petkanics of [Livepeer](https://www.livepeer.org/), Mariano Conti (formerly) of [MakerDAO](https://makerdao.com/en/), Clara Tsao of Filecoin Foundation for the Decentralized Web, Jimmy Lee of the Application Resource Group, and Wendy Hanamura from [Internet Archive](https://archive.org/).
 
 _Exploring the Decentralized Web_ is a 12-part documentary series hosted on FFDW’s [YouTube](https://www.youtube.com/channel/UCbj3Hck5cwKURkZKHjg_MKQ) channel. Make sure to subscribe to the channel to receive notifications for future content!
 

@@ -9,7 +9,7 @@ description: Promote blockchain technology’s potential to benefit all members 
   on, and building community support for blockchain technologies. A “train the
   trainer” blockchain education program for community college professors and CA
   government staff.
-website: https://www.blockchainlawsg.org/
+website: https://www.usfca.edu/law/engaged-learning/center-law-tech-social-good/
 active-partnership: true
 image:
   src: /assets/images/usf-logo.webp

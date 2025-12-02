@@ -31,16 +31,16 @@ seo:
 
 NV27 Upgrade Planning is in progress. Seven items are in scope:
 
-- [FIP-0105](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0105.md): Adds BLS12-381 precompiles — faster signature verification, stronger Ethereum compatibility, and new use cases.
-- Cleanup of [FIP-0103](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0103.md), [0106](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0106.md), [0101](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0101.md) — removing deprecated methods.
-- FIP-[0077](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0077.md): implements a deposit requirement to reduce the risk of spam attacks. 
+- [FIP-0105](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0105.md): Adds BLS12-381 precompiles — faster signature verification, stronger Ethereum compatibility, and new use cases.
+- Cleanup of [FIP-0103](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0103.md), [0106](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0106.md), [0101](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0101.md) — removing deprecated methods.
+- FIP-[0077](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0077.md): implements a deposit requirement to reduce the risk of spam attacks. 
 - FRC-[0108](https://github.com/filecoin-project/FIPs/blob/master/FRCs/frc-0108.md): Standardized F3 snapshots.
 - FRC-[0109](https://github.com/filecoin-project/FIPs/pull/1180): Smart contract notifications for Direct Data Onboarding.
 
 ### Fil Plus 
 
 - New Filecoin Plus allocator pathways have been added. Over the past eight weeks, the Governance Team has received more than 140 applications for DataCap allocator pathways, with 75% approved — resulting in over 450 PiB of DataCap distributed. Most applications are pursuing manual diligence pathways, focusing on both public open and private enterprise datasets. A new meta allocator pathway is also in development to support ecosystem teams building onboarding tools for enterprise clients.
-- The [August 19 Allocator Governance Call](https://www.youtube.com/watch?v=8ECscTHagas) is available on YouTube. If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar.](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles)
+- The [August 19 Allocator Governance Call](https://www.youtube.com/watch?v=8ECscTHagas) is available on YouTube. If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar.](https://lu.ma/filecoin)
 
 ## Comms, Marketing, & Events
 

@@ -16,7 +16,7 @@ keywords: >-
   World Economic Forum, Decentralized Autonomous Organization, DAO, open-source
   smart contracts
 link: >-
-  https://www.blockchainlawsg.org/post/from-davos-to-daovos-blockchain-s-breakthrough-at-the-world-economic-forum
+  https://www.usfca.edu/law/engaged-learning/center-law-tech-social-good/post/from-davos-to-daovos-blockchain-s-breakthrough-at-the-world-economic-forum
 seo:
   description: "Explore how DAOs made waves at Davos 2023, as the World Economic Forum embraces blockchain technology to revolutionize governance through decentralized autonomous organizations."
 ---

@@ -69,7 +69,7 @@ FIP Editors are asked to determine the FIP type as soon as the FIP PR is accepte
 
 ## Community Engagement
 
-The FIP0001v2 initiative has been a community-driven project and to this end, all improvements proposed were developed in close consultation with a wide range of stakeholders within the Filecoin ecosystem. Community members are always encouraged to weigh in, ask questions, make suggestions, and generally participate in this process to refine our governance procedures. More information related to community feedback regarding this initiative can be found in the [FIP0001v2 community discussion thread](https://github.com/filecoin-project/FIPs/discussions/799).
+The FIP0001v2 initiative has been a community-driven project and to this end, all improvements proposed were developed in close consultation with a wide range of stakeholders within the Filecoin ecosystem. Community members are always encouraged to weigh in, ask questions, make suggestions, and generally participate in this process to refine our governance procedures. More information related to community feedback regarding this initiative can be found in the [FIP0001v2 community discussion thread](https://github.com/filecoin-project/FIPs/tree/master/discussions/799).
 
 ## Conclusion
 

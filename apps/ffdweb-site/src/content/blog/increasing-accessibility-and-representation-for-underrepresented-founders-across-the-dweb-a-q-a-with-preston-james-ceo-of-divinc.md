@@ -29,7 +29,7 @@ Understanding these barriers to access led to the start of DivInc in 2016, born 
 
 Entrepreneurship is the core of a strong economy and is a key component of wealth building. For our ecosystem to inherently exclude a large demographic within our population, we are shortchanging and stretching ourselves in terms of economic development, growth, and wealth building. 
 
-The racial wealth gap has grown dramatically over the last several decades. The wealth gap between white families and black families according to [Rand](https://www.rand.org/blog/rand-review/2023/05/what-would-it-take-to-close-americas-black-white-wealth-gap.html), is somewhere between eight and nine times. Similarly, the racial wealth gap between Hispanics, Latinos, and white families is equally extreme. Entrepreneurship is a key component of wealth building but it is also a key component of income generation. 
+The racial wealth gap has grown dramatically over the last several decades. The wealth gap between white families and black families according to [Rand](https://www.rand.org/pubs/articles/2023/what-would-it-take-to-close-americas-black-white-wealth-gap.html), is somewhere between eight and nine times. Similarly, the racial wealth gap between Hispanics, Latinos, and white families is equally extreme. Entrepreneurship is a key component of wealth building but it is also a key component of income generation.
 
 **Why did DivInc add the DWeb as another layer on top of the successful accelerators that DivInc has already hosted?**
 
@@ -41,4 +41,4 @@ There’s already bias against people of color and women in terms of getting acc
 
 At FFDW, our mission is to help educate society about the decentralized web and how its solutions can aid in preserving humanity’s most important information. We look forward to continuing to support DivInc as it helps bring diverse perspectives to the Web3 ecosystem. 
 
-_To learn more about the Fall 2023 DWeb for Social Impact Accelerator supported by FFDW, visit [divinc.org/apply](http://www.divinc.org/apply)._
+_To learn more about the Fall 2023 DWeb for Social Impact Accelerator supported by FFDW, visit [divinc.org](https://divinc.org/) (Link no longer available)._
