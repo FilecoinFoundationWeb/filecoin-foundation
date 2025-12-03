@@ -3,6 +3,7 @@ import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageTyp
 import buildOnFilecoinGradient from '@/assets/graphics/build-gradient.svg'
 import caseStudiesGradient from '@/assets/graphics/case-studies-gradient.svg'
 import classicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
+import colorfulNebula from '@/assets/graphics/colorful-nebula.webp'
 import communityHubGradient from '@/assets/graphics/community-gradient.svg'
 import dataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import digitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
@@ -32,6 +33,10 @@ export const graphicsData = {
   classicLibraryInterior: {
     data: classicLibraryInterior,
     alt: 'Interior of a grand historic library with high vaulted wooden ceiling, rows of tall bookshelves, and marble busts lining the hall.',
+  },
+  colorfulNebula: {
+    data: colorfulNebula,
+    alt: 'A vibrant, colorful nebula in deep space, glowing with shades of purple, pink, green, and gold against a dark star-filled background.',
   },
   communityHubGradient: {
     data: communityHubGradient,
