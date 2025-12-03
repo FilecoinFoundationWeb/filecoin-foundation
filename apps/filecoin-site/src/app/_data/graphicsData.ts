@@ -1,5 +1,6 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
+import astronautHelmet from '@/assets/graphics/astronaut-helmet.webp'
 import buildOnFilecoinGradient from '@/assets/graphics/build-gradient.svg'
 import caseStudiesGradient from '@/assets/graphics/case-studies-gradient.svg'
 import classicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
@@ -23,6 +24,10 @@ import spiralGalaxyStarsSpace from '@/assets/graphics/spiral-galaxy-stars-space.
 import starsSpinning from '@/assets/graphics/stars-spinning.webp'
 
 export const graphicsData = {
+  astronautHelmet: {
+    data: astronautHelmet,
+    alt: 'Close-up of an astronaut’s helmet during a spacewalk, with the reflection showing Earth and parts of the spacecraft.',
+  },
   buildOnFilecoinGradient: {
     data: buildOnFilecoinGradient,
     alt: '',

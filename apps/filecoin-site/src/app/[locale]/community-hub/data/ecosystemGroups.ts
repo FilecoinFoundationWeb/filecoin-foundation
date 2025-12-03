@@ -11,7 +11,7 @@ import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
 const CTA_TEXT = 'Visit website'
 
-export const ecosystemResources = [
+export const ecosystemGroups = [
   {
     title: 'Filecoin Foundation',
     description: 'Network governance, Filecoin Plus, and grants.',
