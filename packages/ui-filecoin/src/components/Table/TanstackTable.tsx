@@ -39,7 +39,11 @@ export function TanstackTable<TData>({ table }: TanstackTableProps<TData>) {
                   {canSort ? (
                     <button
                       onClick={header.column.getToggleSortingHandler()}
-                      className="focus:brand-outline flex h-12 w-full cursor-pointer items-center gap-2 hover:underline"
+                      className={clsx(
+                        'flex cursor-pointer items-center gap-2 rounded-sm py-1.5 pr-1.5 pl-2.5 font-semibold',
+                        'focus:brand-outline hover:bg-(--color-head-button-background) focus:bg-(--color-head-button-background)',
+                        'aria-[sort=ascending]:bg-(--color-head-button-background) aria-[sort=descending]:bg-(--color-head-button-background)',
+                      )}
                       aria-label={`Sort by ${columnName}`}
                       aria-sort={getAriaSort(sortState)}
                     >
@@ -47,10 +51,10 @@ export function TanstackTable<TData>({ table }: TanstackTableProps<TData>) {
                       <span
                         className={clsx(
                           'shrink-0',
-                          sortState ? 'text-brand-700' : 'text-zinc-500/85',
+                          sortState ? 'text-brand-700' : 'text-zinc-500/90',
                         )}
                       >
-                        <Icon component={getSortIcon(sortState)} size={18} />
+                        <Icon component={getSortIcon(sortState)} size={20} />
                       </span>
                     </button>
                   ) : (
