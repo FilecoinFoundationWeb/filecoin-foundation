@@ -3,7 +3,7 @@ title: Letter from the Guest Editor
 created-on: 2024-08-27T10:15:00.000Z
 updated-on: 2024-08-27T10:15:00.000Z
 published-on: 2024-08-27T10:15:00.000Z
-issue-number: "1"
+issue-number: 1
 article-number: 1
 authors:
   - first-name: Jonathan
