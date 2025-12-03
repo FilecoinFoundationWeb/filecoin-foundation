@@ -47,10 +47,10 @@ export function TanstackTable<TData>({ table }: TanstackTableProps<TData>) {
                       <span
                         className={clsx(
                           'shrink-0',
-                          sortState && 'text-brand-700',
+                          sortState ? 'text-brand-700' : 'text-zinc-500/85',
                         )}
                       >
-                        <Icon component={getSortIcon(sortState)} size={20} />
+                        <Icon component={getSortIcon(sortState)} size={18} />
                       </span>
                     </button>
                   ) : (
