@@ -3,13 +3,17 @@ import { z } from 'zod'
 import { DynamicBaseDataSchema } from '@filecoin-foundation/utils/schemas/DynamicDataBaseSchema'
 import { ImagePropsSchema } from '@filecoin-foundation/utils/schemas/ImagePropsSchema'
 
+export const IssueNumberField = z
+  .number()
+  .transform((number) => number.toString())
+
 const GuestEditorSchema = z.object({
   'full-name': z.string(),
   title: z.string(),
 })
 
 const DigestIssueFields = {
-  'issue-number': z.number(),
+  'issue-number': IssueNumberField,
   title: z.string(),
   description: z.string(),
   'guest-editor': GuestEditorSchema.optional(),

@@ -1,4 +1,4 @@
-import type { DigestIssueFrontmatter } from '../schemas/DigestIssueFrontmatterSchema'
+import type { DigestIssueFrontmatter } from '@filecoin-foundation/utils/schemas/DigestIssueFrontmatterSchema'
 
 import { getDigestArticleData } from './getDigestArticleData'
 import { getDigestIssueData } from './getDigestIssueData'

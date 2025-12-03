@@ -23,5 +23,5 @@ export async function parseDigestArticleParams(
 }
 
 function parseIssueNumberFromSlug(issue: string) {
-  return parseInt(issue.replace('issue-', ''))
+  return issue.replace('issue-', '')
 }

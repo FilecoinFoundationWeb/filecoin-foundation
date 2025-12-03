@@ -23,11 +23,11 @@ type DynamicPath = {
 export type DynamicPathValues = DynamicPath[keyof DynamicPath]
 export type PathValues = StaticPath | DynamicPathValues
 
-type issueUrlProps = {
+type IssueUrlProps = {
   issueNumber: string
 }
-type articleUrlProps = {
-  issueNumber: string
+
+type ArticleUrlProps = IssueUrlProps & {
   articleSlug: string
 }
 
@@ -41,10 +41,10 @@ export const PATHS = {
     ...createPathConfig('/digest', 'Digest'),
     articlesPath: `${CONTENT_ROOT}/digest/articles`,
     issuePath: `${CONTENT_ROOT}/digest/issues`,
-    issueUrl: ({ issueNumber }: issueUrlProps) =>
-      `/digest/issue-${issueNumber}` as const,
-    articleUrl: ({ issueNumber, articleSlug }: articleUrlProps) =>
-      `/digest/issue-${issueNumber}/${articleSlug}` as const,
+    issueUrl: ({ issueNumber }: IssueUrlProps) =>
+      `/digest/issue-${issueNumber}`,
+    articleUrl: ({ issueNumber, articleSlug }: ArticleUrlProps) =>
+      `/digest/issue-${issueNumber}/${articleSlug}`,
   },
   FAQS: createPathConfig('/faqs', 'FAQs'),
   LEARNING_RESOURCES: createPathConfig(

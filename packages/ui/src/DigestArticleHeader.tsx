@@ -24,6 +24,7 @@ export function DigestArticleHeader({
 }: DigestArticleProps) {
   return (
     <ArticleHeader image={image}>
+      {/* TODO: make required */}
       {issueNumber && articleNumber && (
         <TagGroup
           tags={[

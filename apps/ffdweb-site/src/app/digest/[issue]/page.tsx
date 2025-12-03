@@ -76,7 +76,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
                 ]}
                 cta={{
                   href: PATHS.DIGEST.articleUrl({
-                    issueNumber: issueNumber.toString(),
+                    issueNumber,
                     articleSlug: slug,
                   }),
                   text: 'Read Article',
@@ -120,7 +120,7 @@ export async function generateMetadata(props: DigestIssueProps) {
   const { seo, image } = digestIssue
 
   return createMetadata({
-    path: `${PATHS.DIGEST.issueUrl({ issueNumber: issueNumber.toString() })}`,
+    path: `${PATHS.DIGEST.issueUrl({ issueNumber })}` as `/${string}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,

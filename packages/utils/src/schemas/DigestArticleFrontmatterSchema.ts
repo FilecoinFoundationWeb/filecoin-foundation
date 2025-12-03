@@ -1,11 +1,13 @@
 import { z } from 'zod'
 
+import { IssueNumberField } from './DigestIssueFrontmatterSchema'
 import { DynamicBaseDataSchema } from './DynamicDataBaseSchema'
 import { ImagePropsSchema } from './ImagePropsSchema'
+
 const DigestArticleFrontmatterFields = {
   title: z.string(),
-  'issue-number': z.string().optional(),
-  'article-number': z.number().optional(),
+  'issue-number': IssueNumberField.optional(), // TODO: make required
+  'article-number': z.number().optional(), // TODO: make required
   authors: z.array(
     z.object({
       'first-name': z.string(),

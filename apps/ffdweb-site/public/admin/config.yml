@@ -148,7 +148,7 @@ collections:
 
   - name: "digest_issues"
     label: "Digest Issues"
-    folder: "apps/ffdweb-site/src/content/digest/issues"
+    folder: "apps/ffdweb-site/src/content/digest/issues/"
     preview_path: "digest/issue-{{issue-number}}"
     label_singular: "Digest Issue"
     create: true
@@ -159,7 +159,6 @@ collections:
         label: "Issue Number"
         widget: "number"
         min: 1
-        max: 2
       - name: "title"
         label: "Issue Title"
         widget: "string"
@@ -179,7 +178,7 @@ collections:
             label: "Full Name"
             widget: "string"
           - name: "title"
-            label: "Title"
+            label: "Job Title and Company"
             widget: "string"
             hint: "e.g., 'Co-Founder, Ansa Research'"
       - name: "articles"
@@ -201,7 +200,7 @@ collections:
 
   - name: "digest_articles"
     label: "Digest Articles"
-    folder: "apps/ffdweb-site/src/content/digest/articles"
+    folder: "apps/ffdweb-site/src/content/digest/articles/"
     preview_path: "digest/issue-{{issue-number}}/{{slug}}"
     label_singular: "Digest Article"
     create: true
