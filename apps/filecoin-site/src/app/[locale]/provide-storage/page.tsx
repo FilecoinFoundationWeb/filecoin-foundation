@@ -19,8 +19,8 @@ import { createMetadata } from '@/utils/createMetadata'
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import { PROVIDE_STORAGE_SEO } from './constants/seo'
-import { dataCenterRequirements } from './data/dataCenterRequirements'
 import { gettingStartedWithPDP } from './data/gettingStartedWithPDP'
+import { scalingOperations } from './data/scalingOperations'
 import { storageProvidersLogos } from './data/storageProvidersLogos'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -120,7 +120,7 @@ export default function ProvideStorage() {
           ]}
         >
           <CardGrid as="ul" variant="smTwoXlFourWider">
-            {dataCenterRequirements.map(({ title, description, icon }) => (
+            {scalingOperations.map(({ title, description, icon }) => (
               <Card
                 key={title}
                 as="li"
