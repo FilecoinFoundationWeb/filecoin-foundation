@@ -46,12 +46,15 @@ export default function Learn() {
           />
         </PageSection>
 
-        <Image
-          priority
-          src={graphicsData.solarEclipse.data}
-          alt={graphicsData.solarEclipse.alt}
-          className="absolute right-0 bottom-0 -z-10 h-full object-cover"
-        />
+        <div className="absolute right-0 bottom-0 -z-10 h-[80vh] w-[80vw] xl:origin-bottom-right">
+          <Image
+            fill
+            priority
+            src={graphicsData.solarEclipse.data}
+            alt={graphicsData.solarEclipse.alt}
+            className="object-cover"
+          />
+        </div>
       </div>
 
       <PageSection backgroundVariant="dark">
