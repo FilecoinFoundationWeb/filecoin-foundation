@@ -6,7 +6,7 @@ published-on: 2025-11-22T08:49:10.127Z
 email: encrypted::U2FsdGVkX19e0fgEwZTBfOEz218XAYetUIrDl4LO9NkBaxmXEAeS7MlAT6qXM/J3
 full-name: encrypted::U2FsdGVkX18cJUyGb3HU1Gmce03D2O6heKP1kItOHzY=
 image:
-  src: /assets/images/fildos.webp
+  src: /assets/images/fildos-logo.webp
 category: ai-productivity-utilities
 tech:
   - filecoin
