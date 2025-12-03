@@ -85,7 +85,7 @@ export async function generateStaticParams() {
   const allArticles = await Promise.all(
     allIssues.map(async (issue) => {
       const articles = await getAllDigestArticlesWithIssueContext({
-        issueNumber: Number(issue.issueNumber),
+        issueNumber: issue.issueNumber,
       })
       return articles.map((article) => ({
         issue: `issue-${issue.issueNumber}`,
@@ -106,7 +106,7 @@ export async function generateMetadata(props: DigestArticleProps) {
   })
 
   return createMetadata({
-    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}`,
+    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}` as `/${string}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,

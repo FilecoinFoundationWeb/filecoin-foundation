@@ -20,7 +20,7 @@ export async function getRandomDigestArticleSlug(contentFolder: string) {
 
   const issueNumber = randomIssueFile.replace(MARKDOWN_EXTENSION, '')
 
-  const digestIssue = await getDigestIssueData(parseInt(issueNumber))
+  const digestIssue = await getDigestIssueData(issueNumber)
 
   if (!digestIssue || !digestIssue.articles.length) {
     throw new Error(`No articles found in issue ${issueNumber}`)

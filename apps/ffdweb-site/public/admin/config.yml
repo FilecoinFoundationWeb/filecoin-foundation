@@ -193,6 +193,7 @@ collections:
             search_fields: ["title"],
             value_field: "{{slug}}",
             display_fields: ["title"],
+            filter: { field: "issue-number", value: "{{issue-number}}" },
           }
         hint: "Articles will be automatically numbered in the order they are added."
       - *image_config
