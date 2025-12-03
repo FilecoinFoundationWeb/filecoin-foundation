@@ -45,6 +45,38 @@ const data: Person[] = [
     status: 'Complicated',
     progress: 10,
   },
+  {
+    firstName: 'sally',
+    lastName: 'smith',
+    age: 30,
+    visits: 20,
+    status: 'Single',
+    progress: 10,
+  },
+  {
+    firstName: 'joe',
+    lastName: 'bloggs',
+    age: 20,
+    visits: 20,
+    status: 'Single',
+    progress: 10,
+  },
+  {
+    firstName: 'joe',
+    lastName: 'bloggs',
+    age: 20,
+    visits: 20,
+    status: 'Single',
+    progress: 10,
+  },
+  {
+    firstName: 'joe',
+    lastName: 'bloggs',
+    age: 20,
+    visits: 20,
+    status: 'Single',
+    progress: 10,
+  },
 ]
 
 const columnHelper = createColumnHelper<Person>()
@@ -84,7 +116,7 @@ export function TableShowcase() {
 
   return (
     <PageSection backgroundVariant="light">
-      <SectionContent centerTitle title="Button Styles Showcase">
+      <SectionContent centerTitle title="Table Style Showcase">
         <TanstackTable table={table} />
       </SectionContent>
     </PageSection>
