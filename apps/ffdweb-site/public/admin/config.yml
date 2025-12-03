@@ -81,7 +81,7 @@ image_config: &image_config
   widget: "object"
   required: false
   collapsed: true
-  hint: Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.
+  hint: "Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback."
   fields:
     - name: "src"
       label: "URL"
@@ -146,10 +146,63 @@ collections:
       - *body_config
       - *meta_config_with_title_fallback
 
+  - name: "digest_issues"
+    label: "Digest Issues"
+    folder: "apps/ffdweb-site/src/content/digest/issues/"
+    preview_path: "digest/issue-{{issue-number}}"
+    label_singular: "Digest Issue"
+    create: true
+    extension: "md"
+    slug: "{{issue-number}}"
+    fields:
+      - name: "issue-number"
+        label: "Issue Number"
+        widget: "number"
+        min: 1
+      - name: "title"
+        label: "Issue Title"
+        widget: "string"
+        hint: "e.g., 'The Inaugural Edition: All Systems Go'"
+      - name: "description"
+        label: "Issue Description"
+        widget: "text"
+      - *created_on
+      - *updated_on
+      - *published_on
+      - name: "guest-editor"
+        label: "Guest Editor"
+        widget: "object"
+        required: false
+        fields:
+          - name: "full-name"
+            label: "Full Name"
+            widget: "string"
+          - name: "title"
+            label: "Job Title and Company"
+            widget: "string"
+            hint: "e.g., 'Co-Founder, Ansa Research'"
+      - name: "articles"
+        label: "Articles"
+        widget: "list"
+        field:
+          {
+            name: "title",
+            label: "Article Title",
+            widget: "relation",
+            collection: "digest_articles",
+            search_fields: ["title"],
+            value_field: "{{slug}}",
+            display_fields: ["title"],
+            filter: { field: "issue-number", value: "{{issue-number}}" },
+          }
+        hint: "Articles will be automatically numbered in the order they are added."
+      - *image_config
+      - *meta_config_with_title_fallback
+
   - name: "digest_articles"
     label: "Digest Articles"
-    folder: "apps/ffdweb-site/src/content/digest/"
-    preview_path: "digest/{{slug}}"
+    folder: "apps/ffdweb-site/src/content/digest/articles/"
+    preview_path: "digest/issue-{{issue-number}}/{{slug}}"
     label_singular: "Digest Article"
     create: true
     extension: "md"
@@ -163,9 +216,12 @@ collections:
       - *published_on
       - name: "issue-number"
         label: "Issue Number"
-        widget: "select"
-        options: ["1"]
-        default: "1"
+        widget: "relation"
+        collection: "digest_issues"
+        search_fields: ["issue-number", "title"]
+        value_field: "issue-number"
+        display_fields: ["issue-number"]
+        required: false
       - name: "article-number"
         label: "Article Number"
         widget: "number"

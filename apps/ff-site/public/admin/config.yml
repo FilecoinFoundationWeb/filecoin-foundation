@@ -432,9 +432,8 @@ collections:
       - *published_on
       - name: "issue-number"
         label: "Issue Number"
-        widget: "select"
-        options: ["1"]
-        default: "1"
+        widget: number
+        min: 1
       - name: "article-number"
         label: "Article Number"
         widget: "number"

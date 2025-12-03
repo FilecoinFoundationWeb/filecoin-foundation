@@ -3,7 +3,7 @@ title: "Storage is Just the Start: Three Focus Areas for the Filecoin Network in
 created-on: 2024-09-03T10:19:00.000Z
 updated-on: 2024-09-03T10:19:00.000Z
 published-on: 2024-09-03T10:19:00.000Z
-issue-number: "1"
+issue-number: 1
 article-number: 2
 authors:
   - first-name: Molly
