@@ -5,9 +5,6 @@ import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
-import { PATHS } from '@/constants/paths'
-
-
 export function HeroSection() {
   const t = useTranslations('home.hero')
 
@@ -15,7 +12,7 @@ export function HeroSection() {
     <PageSection backgroundVariant="dark" paddingVariant="none">
       <div className="space-y-15 pt-24 pb-24 md:pt-32">
         {/* todo look into when we need space-y-15 */}
-        <Announcement centered href={PATHS.BLOG.path}>
+        <Announcement centered href="/blog">
           {t('announcement')}
         </Announcement>
 
@@ -24,10 +21,10 @@ export function HeroSection() {
           title={t('headline')}
           description={t('description')}
           cta={[
-            <Button href={PATHS.STORE_DATA.path} variant="primary">
+            <Button href="/store-data" variant="primary">
               {t('cta.main')}
             </Button>,
-            <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="ghost">
+            <Button href="/build-on-filecoin" variant="ghost">
               {t('cta.secondary')}
             </Button>,
           ]}

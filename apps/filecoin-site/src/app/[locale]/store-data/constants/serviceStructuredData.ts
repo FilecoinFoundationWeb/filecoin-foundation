@@ -1,4 +1,3 @@
-import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
@@ -8,7 +7,7 @@ export const SERVICE_STRUCTURED_DATA: ServiceDetails = {
   serviceType: 'Decentralized data storage',
   provider: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
   areaServed: 'Global',
-  termsOfService: `${BASE_URL}/${PATHS.TERMS_OF_USE.path}`,
+  termsOfService: `${BASE_URL}/terms-of-use`,
   serviceOutput: 'Tamper-evident, verifiable data storage',
   offers: {
     '@type': 'Offer',
@@ -16,6 +15,6 @@ export const SERVICE_STRUCTURED_DATA: ServiceDetails = {
       '@type': 'PriceSpecification',
       priceCurrency: 'FIL',
     },
-    url: `${BASE_URL}${PATHS.STORE_DATA.path}`,
+    url: `${BASE_URL}/store-data`,
   },
 }

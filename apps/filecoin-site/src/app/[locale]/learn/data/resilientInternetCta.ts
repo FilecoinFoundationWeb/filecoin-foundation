@@ -7,28 +7,25 @@ import {
 
 import type { LinkCardData } from '@filecoin-foundation/ui-filecoin/LinkCard'
 
-import { PATHS } from '@/constants/paths'
-
-
 export const resilientInternetCta = [
   {
     title: 'Build on Filecoin',
-    href: PATHS.BUILD_ON_FILECOIN.path,
+    href: '/build-on-filecoin',
     icon: CodeSimpleIcon,
   },
   {
     title: 'Store your data',
-    href: PATHS.STORE_DATA.path,
+    href: '/store-data',
     icon: ArchiveIcon,
   },
   {
     title: 'Become a storage provider',
-    href: PATHS.PROVIDE_STORAGE.path,
+    href: '/provide-storage',
     icon: DatabaseIcon,
   },
   {
     title: 'Join the community',
-    href: PATHS.COMMUNITY_HUB.path,
+    href: '/community-hub',
     icon: ChatsCircleIcon,
   },
 ] as const satisfies Array<LinkCardData>

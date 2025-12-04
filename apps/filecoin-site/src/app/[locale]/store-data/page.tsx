@@ -9,7 +9,6 @@ import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 
-import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -147,6 +146,6 @@ export default function StoreData() {
 export const metadata = createMetadata({
   title: { absolute: STORE_DATA_SEO.title },
   description: STORE_DATA_SEO.description,
-  path: PATHS.STORE_DATA.path,
+  path: '/store-data',
   image: graphicsData.digitalMediaConversionSetup.data.src,
 })

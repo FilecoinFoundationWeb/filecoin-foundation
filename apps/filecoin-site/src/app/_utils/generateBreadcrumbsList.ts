@@ -1,12 +1,14 @@
 import type { BreadcrumbList, ListItem } from 'schema-dts'
 
-import { PATHS, type PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 type GenerateBreadcrumbListProps = {
   path: string
   title: string
-  parentPaths?: Array<{ path: PathValues; title: string }>
+  parentPaths?: Array<{
+    path: __next_route_internal_types__.DynamicRoutes
+    title: string
+  }>
 }
 
 export function generateBreadcrumbList({
@@ -21,7 +23,7 @@ export function generateBreadcrumbList({
     item: BASE_URL,
   }
 
-  if (path === PATHS.HOME.path) {
+  if (path === '/') {
     return { '@type': 'BreadcrumbList', itemListElement: [HOME_ITEM] }
   }
 

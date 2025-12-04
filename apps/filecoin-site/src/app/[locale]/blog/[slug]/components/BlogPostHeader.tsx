@@ -4,7 +4,6 @@ import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils/buildImageSizeProp'
 
-import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { SectionDivider } from '@/components/SectionDivider'
@@ -47,7 +46,7 @@ export function BlogPostHeader({
           <div className="flex flex-col justify-between gap-15 md:flex-row md:gap-4">
             <ShareArticle
               articleTitle={title}
-              path={`${PATHS.BLOG.path}/${slug}`}
+              path={`/blog/${slug}`}
               baseUrl={BASE_URL}
             />
           </div>

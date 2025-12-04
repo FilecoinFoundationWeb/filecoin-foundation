@@ -1,8 +1,7 @@
 import { defineConfig } from 'tinacms'
 
-import { PATHS } from '@/constants/paths'
-
 import { blogFields } from './schema/blog'
+import { ENTRIES_PATHS } from '@/constants/paths'
 
 export default defineConfig({
   branch: process.env.VERCEL_GIT_COMMIT_REF || '',
@@ -24,7 +23,7 @@ export default defineConfig({
       {
         name: 'post',
         label: 'Posts',
-        path: PATHS.BLOG.entriesPath,
+        path: ENTRIES_PATHS['/blog'],
         format: 'md',
         fields: blogFields('post'),
       },

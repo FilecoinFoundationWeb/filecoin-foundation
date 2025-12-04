@@ -1,4 +1,3 @@
-import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
@@ -12,9 +11,9 @@ export const SERVICE_STRUCTURED_DATA: ServiceDetails = {
     '@type': 'Audience',
     audienceType: 'Data centers, infrastructure operators',
   },
-  termsOfService: `${BASE_URL}/${PATHS.TERMS_OF_USE.path}`,
+  termsOfService: `${BASE_URL}/terms-of-use`,
   offers: {
     '@type': 'Offer',
-    url: `${BASE_URL}${PATHS.PROVIDE_STORAGE.path}`,
+    url: `${BASE_URL}/provide-storage`,
   },
 }

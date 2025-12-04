@@ -13,7 +13,6 @@ import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
-import { PATHS } from '@/constants/paths'
 import { SEO } from '@/constants/siteMetadata'
 import { FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
 
@@ -97,10 +96,10 @@ export default async function Home({ params }: BlogProps) {
               'From cultural archives to scientific research, petabytes of data are already stored on Filecoin. The decentralized model empowers users with true autonomy over their information, building a foundation for a more open, resilient, and user-controlled web.',
             ]}
             cta={[
-              <Button href={PATHS.STORE_DATA.path} variant="primary">
+              <Button href="/store-data" variant="primary">
                 Store data
               </Button>,
-              <Button href={PATHS.PROVIDE_STORAGE.path} variant="ghost">
+              <Button href="/provide-storage" variant="ghost">
                 Become a storage provider
               </Button>,
             ]}
@@ -140,10 +139,10 @@ export default async function Home({ params }: BlogProps) {
           title="How Filecoin storage stacks up"
           description="How decentralized storage compares to traditional cloud storage"
           cta={[
-            <Button href={PATHS.STORE_DATA.path} variant="primary">
+            <Button href="/store-data" variant="primary">
               Store data
             </Button>,
-            <Button href={PATHS.LEARN.path} variant="ghost">
+            <Button href="/learn" variant="ghost">
               Learn more about Filecoin
             </Button>,
           ]}
@@ -160,7 +159,7 @@ export default async function Home({ params }: BlogProps) {
             title="A decentralized, verifiable storage layer that scales effortlessly."
             description="Power chain storage, dApps, data-heavy SaaS platforms, immutable archives, and beyond. Accelerate development with open source tools, native IPFS integration, cross-chain data bridges, and FEVM for programmable smart contracts. Build without compromise, knowing you control your data, not centralized gatekeepers."
             cta={[
-              <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="primary">
+              <Button href="/build-on-filecoin" variant="primary">
                 Start building
               </Button>,
               <Button
@@ -182,7 +181,7 @@ export default async function Home({ params }: BlogProps) {
           title="Latest news"
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={
-            <Button variant="primary" href={PATHS.BLOG.path}>
+            <Button variant="primary" href="/blog">
               View all articles
             </Button>
           }
@@ -255,6 +254,6 @@ export default async function Home({ params }: BlogProps) {
 export const metadata = createMetadata({
   title: { absolute: SEO.title },
   description: SEO.description,
-  path: PATHS.HOME.path,
+  path: '/',
   image: graphicsData.classicLibraryInterior.data.src,
 })

@@ -17,16 +17,17 @@ import {
 
 import type { PageType } from '@/utils/generatePageStructuredData'
 
-import { PATHS, type StaticPath } from './paths'
-
 export const STRUCTURED_DATA_IDS = {
   ORGANIZATION: `${BASE_URL}/#org`,
   WEBSITE: `${BASE_URL}/#website`,
-  BLOG: `${BASE_URL}${PATHS.BLOG.path}#blog`,
-  getServiceId: (path: StaticPath) => `${BASE_URL}${path}#service`,
+  BLOG: `${BASE_URL}/blog#blog`,
+  getServiceId: (path: __next_route_internal_types__.DynamicRoutes) =>
+    `${BASE_URL}${path}#service`,
   getBlogPostId: (path: string) => `${BASE_URL}${path}#post`,
-  getPageId: (path: StaticPath, type: PageType) =>
-    `${BASE_URL}${path}#${type === 'CollectionPage' ? 'page' : 'webpage'}`,
+  getPageId: (
+    path: __next_route_internal_types__.DynamicRoutes,
+    type: PageType,
+  ) => `${BASE_URL}${path}#${type === 'CollectionPage' ? 'page' : 'webpage'}`,
 } as const
 
 const CONTACT_POINTS: Array<ContactPoint> = [

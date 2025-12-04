@@ -2,8 +2,6 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
-import { PATHS } from '@/constants/paths'
-
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -28,5 +26,5 @@ export default function PrivacyPolicy() {
 export const metadata = createMetadata({
   title: { absolute: PRIVACY_POLICY_SEO.title },
   description: PRIVACY_POLICY_SEO.description,
-  path: PATHS.PRIVACY_POLICY.path,
+  path: '/privacy-policy',
 })

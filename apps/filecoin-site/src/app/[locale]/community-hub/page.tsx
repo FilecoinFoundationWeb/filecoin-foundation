@@ -8,7 +8,6 @@ import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { SimpleCard } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
-import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -130,5 +129,5 @@ export default function CommunityHub() {
 export const metadata = createMetadata({
   title: { absolute: COMMUNITY_SEO.title },
   description: COMMUNITY_SEO.description,
-  path: PATHS.COMMUNITY_HUB.path,
+  path: '/community-hub',
 })

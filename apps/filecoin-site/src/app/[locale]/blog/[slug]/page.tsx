@@ -8,7 +8,6 @@ import { MarkdownContent } from '@filecoin-foundation/ui-filecoin/Markdown/Markd
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import type { SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
-import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -77,7 +76,7 @@ export async function generateMetadata(props: BlogPostProps) {
   const { image, seo, excerpt } = await getBlogPostData(slug, locale)
 
   return createMetadata({
-    path: `${PATHS.BLOG.path}/${slug}`,
+    path: `/blog/${slug}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME}` },
     description: seo?.description || excerpt,
     image: image?.url,

@@ -1,8 +1,6 @@
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
-import { PATHS } from '@/constants/paths'
-
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -34,5 +32,5 @@ export default function ProvideStorageFormPage() {
 export const metadata = createMetadata({
   title: { absolute: PROVIDE_STORAGE_ONBOARDING_SEO.title },
   description: PROVIDE_STORAGE_ONBOARDING_SEO.description,
-  path: PATHS.PROVIDE_STORAGE_ONBOARDING.path,
+  path: '/provide-storage/onboarding',
 })

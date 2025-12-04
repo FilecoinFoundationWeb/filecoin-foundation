@@ -12,7 +12,6 @@ import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/Sec
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { SimpleCard } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
-import { PATHS } from '@/constants/paths'
 import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -73,7 +72,7 @@ export default function Learn() {
           title="What is Filecoin used for?"
           description="From archival backups to Web3 and AI apps, Filecoin offers decentralized, secure, and verifiable storage at scale."
           cta={
-            <Button href={PATHS.CASE_STUDIES.path} variant="primary">
+            <Button href="/case-studies" variant="primary">
               Explore real-world case studies
             </Button>
           }
@@ -98,7 +97,7 @@ export default function Learn() {
           title="Future-proof your data infrastructure"
           description="Filecoin is a powerful alternative to traditional cloud storage, leveraging global, independent data centers. The decentralized network infrastructure ensures your data always remains secure and verifiable, so that you can store your data with confidence."
           cta={
-            <Button href={PATHS.STORE_DATA.path} variant="ghost">
+            <Button href="/store-data" variant="ghost">
               Store data
             </Button>
           }
@@ -168,5 +167,5 @@ export default function Learn() {
 export const metadata = createMetadata({
   title: { absolute: LEARN_SEO.title },
   description: LEARN_SEO.description,
-  path: PATHS.LEARN.path,
+  path: '/learn',
 })

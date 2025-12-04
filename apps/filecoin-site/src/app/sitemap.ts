@@ -1,11 +1,22 @@
 import { generateSitemap } from '@filecoin-foundation/utils/generateSitemap'
 
-import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 export default function sitemap() {
   return generateSitemap({
-    paths: PATHS,
+    paths: [
+      '/',
+      '/blog',
+      '/build-on-filecoin',
+      '/case-studies',
+      '/community-hub',
+      '/learn',
+      '/store-data',
+      '/privacy-policy',
+      '/provide-storage',
+      '/provide-storage/onboarding',
+      '/terms-of-use',
+    ],
     baseUrl: BASE_URL,
   })
 }

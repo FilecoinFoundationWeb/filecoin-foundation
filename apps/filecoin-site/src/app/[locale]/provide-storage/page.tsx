@@ -9,20 +9,17 @@ import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { SimpleCard } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
-import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-
 import { GradientContainer } from '@/components/GradientContainer'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SectionDivider } from '@/components/SectionDivider'
 import { SectionImage } from '@/components/SectionImage'
 import { SectionSubContent } from '@/components/SectionSubContent'
-
 
 import { PROVIDE_STORAGE_SEO } from './constants/seo'
 import { coreInfrastructureSpecs } from './data/coreInfrastructureSpecs'
@@ -46,10 +43,7 @@ export default function ProvideStorage() {
             title="Power the world's largest decentralized storage network"
             description="Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity’s most important information."
             cta={[
-              <Button
-                href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
-                variant="primary"
-              >
+              <Button href="/provide-storage/onboarding" variant="primary">
                 Book a call with the onboarding team
               </Button>,
               <Button href={FILECOIN_URLS.github.href} variant="ghost">
@@ -171,10 +165,7 @@ export default function ProvideStorage() {
           title="Empower a more open and resilient web"
           description="Contribute to a decentralized physical infrastructure network (DePIN), protect critical data without relying on centralized tech giants, and unlock new revenue streams — all while helping build a more open, resilient, and censorship-resistant internet."
           cta={
-            <Button
-              href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
-              variant="primary"
-            >
+            <Button href="/provide-storage/onboarding" variant="primary">
               Book a call with the onboarding team
             </Button>
           }
@@ -187,6 +178,6 @@ export default function ProvideStorage() {
 export const metadata = createMetadata({
   title: { absolute: PROVIDE_STORAGE_SEO.title },
   description: PROVIDE_STORAGE_SEO.description,
-  path: PATHS.PROVIDE_STORAGE.path,
+  path: '/provide-storage',
   image: graphicsData.filecoinStorageDevice.data.src,
 })

@@ -4,9 +4,6 @@ import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils/buildImageSizeProp'
 
-import { PATHS } from '@/constants/paths'
-
-
 import type { BlogPost } from '../types/blogPostType'
 
 type BlogPageHeaderProps = {
@@ -41,7 +38,7 @@ export function BlogPageHeader({
 
         <Button
           variant="primary"
-          href={`${PATHS.BLOG.path}/${slug}`}
+          href={`/blog/${slug}`}
           className="w-full lg:w-fit"
         >
           Read full article
