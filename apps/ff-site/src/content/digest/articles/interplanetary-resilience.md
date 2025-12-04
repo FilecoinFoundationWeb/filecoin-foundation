@@ -4,7 +4,6 @@ created-on: 2024-08-27T14:37:00.000Z
 updated-on: 2024-08-27T14:37:00.000Z
 published-on: 2024-08-27T14:37:00.000Z
 issue-number: 1
-article-number: 4
 authors:
   - first-name: Dietrich
     last-name: Ayala

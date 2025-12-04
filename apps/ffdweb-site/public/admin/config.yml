@@ -154,11 +154,15 @@ collections:
     create: true
     extension: "md"
     slug: "{{issue-number}}"
+    summary: "Issue {{issue-number}} - {{title}}"
+    sortable_fields: ["issue-number", "title"]
+    sort: "issue-number"
     fields:
       - name: "issue-number"
         label: "Issue Number"
         widget: "number"
         min: 1
+        required: true
       - name: "title"
         label: "Issue Title"
         widget: "string"
@@ -192,10 +196,9 @@ collections:
             collection: "digest_articles",
             search_fields: ["title"],
             value_field: "{{slug}}",
-            display_fields: ["title"],
-            filter: { field: "issue-number", value: "{{issue-number}}" },
+            display_fields: ["Issue number {{issue-number}}:", "title"],
           }
-        hint: "Articles will be automatically numbered in the order they are added."
+        hint: "Articles will be automatically numbered in the order they are added. Make sure that the article issue number matches the digest issue number."
       - *image_config
       - *meta_config_with_title_fallback
 
@@ -207,6 +210,9 @@ collections:
     create: true
     extension: "md"
     slug: "{{slug}}"
+    summary: "Issue {{issue-number}} - {{title}}"
+    sortable_fields: ["issue-number", "title"]
+    sort: "issue-number"
     fields:
       - name: "title"
         label: "Title"
@@ -216,26 +222,23 @@ collections:
       - *published_on
       - name: "issue-number"
         label: "Issue Number"
-        widget: "relation"
-        collection: "digest_issues"
-        search_fields: ["issue-number", "title"]
-        value_field: "issue-number"
-        display_fields: ["issue-number"]
-        required: false
-      - name: "article-number"
-        label: "Article Number"
         widget: "number"
         min: 1
+        required: true
+        hint: "⚠️ Adding an issue number here does NOT automatically assign this article to the issue. You must manually add this article to the digest issue's articles list in order to be published."
       - name: "authors"
         label: "Authors"
         widget: "list"
+        required: true
         fields:
           - name: "first-name"
             label: "First Name"
             widget: "string"
+            required: true
           - name: "last-name"
             label: "Last Name"
             widget: "string"
+            required: true
           - name: "image"
             label: "Image"
             widget: "object"
@@ -256,6 +259,7 @@ collections:
           - name: "company"
             label: "Company Name"
             widget: "string"
+            required: true
       - *body_config
       - *image_config
       - *meta_config_with_title_fallback

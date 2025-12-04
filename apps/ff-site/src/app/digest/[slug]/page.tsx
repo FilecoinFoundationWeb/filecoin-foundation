@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
@@ -15,9 +17,11 @@ import { createMetadata } from '@/utils/createMetadata'
 import { MarkdownContent } from '@/components/MarkdownContent'
 
 import {
-  getDigestArticleData,
   getDigestArticlesData,
+  getDigestArticleData,
 } from '../utils/getDigestArticleData'
+import { getDigestArticleWithIssueContext } from '../utils/getDigestArticleDataWithIssueContext'
+import { getAllDigestIssuesData } from '../utils/getDigestIssueData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -27,13 +31,23 @@ type DigestArticleProps = {
 
 export default async function DigestArticle(props: DigestArticleProps) {
   const { slug } = await props.params
-  const data = await getDigestArticleData(slug)
 
-  const { title, issueNumber, articleNumber, image, authors, content } = data
+  const digestIssue = await getAllDigestIssuesData()
+
+  const article = await getDigestArticleWithIssueContext({
+    articleSlug: slug,
+    articleIssueNumber: digestIssue[0].issueNumber,
+  })
+
+  if (!article) {
+    notFound()
+  }
+
+  const { title, issueNumber, articleNumber, image, authors, content } = article
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={generateStructuredData(data)} />
+      <StructuredDataScript structuredData={generateStructuredData(article)} />
       <ArticleLayout>
         <DigestArticleHeader
           title={title}

@@ -51,9 +51,13 @@ export const PATHS = {
     '/security/coordinated-disclosure-policy',
     'Coordinated Disclosure Policy',
   ),
-  DIGEST: createPathConfig('/digest', 'Digest', {
-    hasEntries: true,
-  }),
+  DIGEST: {
+    ...createPathConfig('/digest', 'Digest', {
+      hasEntries: true,
+    }),
+    articlesPath: `${CONTENT_ROOT}/digest/articles`,
+    issuePath: `${CONTENT_ROOT}/digest/issues`,
+  },
   ECOSYSTEM_EXPLORER: createPathConfig(
     '/ecosystem-explorer',
     'Ecosystem Explorer',

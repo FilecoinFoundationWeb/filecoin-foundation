@@ -22,12 +22,17 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getDigestArticlesData } from './utils/getDigestArticleData'
+import { getAllDigestArticlesWithIssueContext } from './utils/getDigestArticleDataWithIssueContext'
+import { getAllDigestIssuesData } from './utils/getDigestIssueData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
 export default async function Digest() {
-  const articles = await getDigestArticlesData()
+  const digestIssues = await getAllDigestIssuesData()
+
+  const articles = await getAllDigestArticlesWithIssueContext({
+    digestIssue: digestIssues[0],
+  })
 
   return (
     <PageLayout>

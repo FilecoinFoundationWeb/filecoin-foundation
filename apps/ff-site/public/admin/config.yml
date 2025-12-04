@@ -415,14 +415,75 @@ collections:
       - *body_config
       - *meta_config_with_title_fallback
 
+  - name: "digest_issues"
+    label: "Digest Issues"
+    folder: "apps/ff-site/src/content/digest/issues/"
+    preview_path: "digest"
+    label_singular: "Digest Issue"
+    create: true
+    extension: "md"
+    slug: "{{issue-number}}"
+    summary: "Issue {{issue-number}} - {{title}}"
+    sortable_fields: ["issue-number", "title"]
+    sort: "issue-number"
+    fields:
+      - name: "issue-number"
+        label: "Issue Number"
+        widget: "number"
+        min: 1
+        required: true
+      - name: "title"
+        label: "Issue Title"
+        widget: "string"
+        hint: "e.g., 'The Inaugural Edition: All Systems Go'"
+      - name: "description"
+        label: "Issue Description"
+        widget: "text"
+      - *created_on
+      - *updated_on
+      - *published_on
+      - name: "guest-editor"
+        label: "Guest Editor"
+        widget: "object"
+        required: false
+        fields:
+          - name: "full-name"
+            label: "Full Name"
+            widget: "string"
+            required: false
+          - name: "title"
+            label: "Job Title and Company"
+            widget: "string"
+            hint: "e.g., 'Co-Founder, Ansa Research'"
+            required: false
+      - name: "articles"
+        label: "Articles"
+        widget: "list"
+        field:
+          {
+            name: "title",
+            label: "Article Title",
+            widget: "relation",
+            collection: "digest_articles",
+            search_fields: ["title"],
+            value_field: "{{slug}}",
+            display_fields: ["Issue number {{issue-number}}:", "title"],
+          }
+        hint: "Articles will be automatically numbered in the order they are added. Make sure that the article issue number matches the digest issue number."
+      - *image_config
+      - *meta_config_with_title_fallback
+
   - name: "digest_articles"
     label: "Digest Articles"
-    folder: "apps/ff-site/src/content/digest/"
+    folder: "apps/ff-site/src/content/digest/articles"
     preview_path: "digest/{{slug}}"
     label_singular: "Digest Article"
     create: true
     extension: "md"
     slug: "{{slug}}"
+    summary: "Issue {{issue-number}} - {{title}}"
+    sortable_fields: ["issue-number", "title"]
+    sort: "issue-number"
     fields:
       - name: "title"
         label: "Title"
@@ -434,20 +495,22 @@ collections:
         label: "Issue Number"
         widget: number
         min: 1
-      - name: "article-number"
-        label: "Article Number"
-        widget: "number"
-        min: 1
+        required: true
+        hint: "⚠️ Adding an issue number here does NOT automatically assign this article to the issue. You must manually add this article to the digest issue's articles list in order to be published."
       - name: "authors"
         label: "Authors"
         widget: "list"
+        required: true
+        hint: "At least one author is required. Articles without authors will fail validation and cannot be published."
         fields:
           - name: "first-name"
             label: "First Name"
             widget: "string"
+            required: true
           - name: "last-name"
             label: "Last Name"
             widget: "string"
+            required: true
           - name: "image"
             label: "Image"
             widget: "object"
@@ -468,6 +531,7 @@ collections:
           - name: "company"
             label: "Company Name"
             widget: "string"
+            required: true
       - *body_config
       - *image_config
       - *meta_config_with_title_fallback

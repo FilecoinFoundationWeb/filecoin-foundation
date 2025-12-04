@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
@@ -30,22 +32,27 @@ type DigestArticleProps = {
 }
 
 export default async function DigestArticle(props: DigestArticleProps) {
-  const { issueNumber: issueSlug, articleSlug } =
-    await parseDigestArticleParams(props.params)
+  const { articleIssueNumber, articleSlug } = await parseDigestArticleParams(
+    props.params,
+  )
 
-  const data = await getDigestArticleWithIssueContext({
-    issueNumber: issueSlug,
+  const article = await getDigestArticleWithIssueContext({
     articleSlug,
+    articleIssueNumber,
   })
 
+  if (!article) {
+    notFound()
+  }
+
   const { title, issueNumber, articleNumber, image, authors, content, slug } =
-    data
+    article
 
   const atLeastOneAuthorHasBio = authors.some((author) => author.bio)
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={generateStructuredData(data)} />
+      <StructuredDataScript structuredData={generateStructuredData(article)} />
       <ArticleLayout>
         <DigestArticleHeader
           title={title}
@@ -57,17 +64,14 @@ export default async function DigestArticle(props: DigestArticleProps) {
             alt: '',
           }}
         />
-
         {content && <MarkdownContent>{content}</MarkdownContent>}
-
         {atLeastOneAuthorHasBio && (
           <aside className="flex flex-col gap-5 sm:w-2/3">
             {authors.map((author) => (
               <AuthorBio key={author.firstName} author={author} />
             ))}
           </aside>
-        )}
-
+        )}{' '}
         <ShareArticle
           sectionTitle="Share Article"
           articleTitle={title}
@@ -85,7 +89,7 @@ export async function generateStaticParams() {
   const allArticles = await Promise.all(
     allIssues.map(async (issue) => {
       const articles = await getAllDigestArticlesWithIssueContext({
-        issueNumber: issue.issueNumber,
+        digestIssue: issue,
       })
       return articles.map((article) => ({
         issue: `issue-${issue.issueNumber}`,
@@ -97,19 +101,24 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
-  const { issueNumber: issueSlug, articleSlug } =
-    await parseDigestArticleParams(props.params)
+  const { articleSlug, articleIssueNumber } = await parseDigestArticleParams(
+    props.params,
+  )
 
-  const { image, seo, issueNumber } = await getDigestArticleWithIssueContext({
-    issueNumber: issueSlug,
+  const article = await getDigestArticleWithIssueContext({
     articleSlug,
+    articleIssueNumber,
   })
 
-  return createMetadata({
-    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}` as `/${string}`,
-    title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
-    description: seo.description,
-    image: image?.src || graphicsData.digest.data.src,
-    openGraph: { type: 'article' },
-  })
+  if (article) {
+    const { image, seo, issueNumber } = article
+
+    return createMetadata({
+      path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}` as `/${string}`,
+      title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
+      description: seo.description,
+      image: image?.src || graphicsData.digest.data.src,
+      openGraph: { type: 'article' },
+    })
+  }
 }
