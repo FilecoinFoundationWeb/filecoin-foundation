@@ -44,8 +44,8 @@ export default async function Digest() {
       />
 
       <PageSection
-        kicker="Issue 1 - Sep 2024"
-        title="The Inaugural Edition: All Systems Go"
+        kicker={digestIssues[0].kicker}
+        title={digestIssues[0].title}
         description={[
           'Featuring Guest Editor Jonathan Victor, Co-Founder, Ansa Research',
           'Published in September 2024, the inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and sustainable data centers. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future.',
