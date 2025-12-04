@@ -1,30 +1,26 @@
 import type { SimpleCardData } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
-import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
-
 export type NetworkUpgrades = SimpleCardData & {
   difficulty: 'Current upgrade' | 'Upcoming upgrade'
 }
 
-// TODO: Add actual data
 export const networkUpgrades = [
   {
-    title: 'Lorem ipsum',
+    title: 'NV27 Golden Week',
     description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+      'This upgrade delivered protocol cleanups and enhancements, including cryptographic precompiles for the Filecoin Ethereum Virtual Machine (FEVM), smart contract notifications for Direct Data Onboarding, Fast Finality on Filecoin (F3)-compatible snapshot formatting, and a new deposit requirement for storage provider (SP) creation.',
     difficulty: 'Current upgrade',
     cta: {
-      href: FILECOIN_DOCS_URLS.basicsWhatIsFilecoin,
+      href: 'https://fil.org/blog/announcing-the-filecoin-network-v27-golden-week-upgrade',
       text: 'Learn more',
     },
   },
   {
-    title: 'Lorem ipsum',
-    description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+    title: 'NV28 Upcoming',
+    description: '',
     difficulty: 'Upcoming upgrade',
     cta: {
-      href: 'https://github.com/FIL-Builders/fil-frame',
+      href: 'https://github.com/filecoin-project/core-devs/discussions/205',
       text: 'Learn more',
     },
   },

@@ -12,10 +12,7 @@ import { SimpleCard } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
-import {
-  FILECOIN_DOCS_URLS,
-  FILECOIN_FOUNDATION_URLS,
-} from '@/constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -109,7 +106,7 @@ export default async function CommunityHub({ params }: BlogProps) {
           Connect, collaborate, and grow with the ecosystem."
           cta={
             <Button
-              href={FILECOIN_FOUNDATION_URLS.ecosystemExplorer.href}
+              href={FILECOIN_FOUNDATION_URLS.events.href}
               variant="primary"
             >
               Explore upcoming events
@@ -142,19 +139,18 @@ export default async function CommunityHub({ params }: BlogProps) {
           centerCTA
           title="Network upgrades"
           description="Filecoin is governed through an open, community-driven process where technical decisions are discussed in public and implemented through regular upgrades that keep the network secure and evolving."
-          // TODO: Add actual links
           cta={[
             <Button
-              href={FILECOIN_DOCS_URLS.basicsHowStorageWorks}
+              href="https://github.com/filecoin-project/FIPs/discussions"
               variant="primary"
             >
               Check proposals
             </Button>,
             <Button
-              href={FILECOIN_DOCS_URLS.basicsHowStorageWorks}
+              href={FILECOIN_FOUNDATION_URLS.governance.href}
               variant="ghost"
             >
-              Learn more about the governance
+              Learn more about governance
             </Button>,
           ]}
         >
