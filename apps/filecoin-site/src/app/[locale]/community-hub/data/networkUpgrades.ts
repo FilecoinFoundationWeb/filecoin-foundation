@@ -1,6 +1,9 @@
-import type { SimpleCardData } from '@filecoin-foundation/ui-filecoin/SimpleCard'
+import nv27GoldenWeekImage from '@/assets/images/filecoin-governance-nv27-upgrade.webp'
+import nv28GoldenWeekImage from '@/assets/images/filecoin-governance-nv28-upgrade.webp'
 
-export type NetworkUpgrades = SimpleCardData & {
+import type { SimpleCardWithImageProps } from '@/components/SimpleCardWithImage'
+
+export type NetworkUpgrades = SimpleCardWithImageProps & {
   difficulty: 'Current upgrade' | 'Upcoming upgrade'
 }
 
@@ -14,14 +17,23 @@ export const networkUpgrades = [
       href: 'https://fil.org/blog/announcing-the-filecoin-network-v27-golden-week-upgrade',
       text: 'Learn more',
     },
+    image: {
+      src: nv27GoldenWeekImage,
+      alt: 'Filecoin Network Upgrade announcement for nv27 Golden Week, with gold-texture background artwork.',
+    },
   },
   {
     title: 'NV28 Upcoming',
-    description: '',
+    description:
+      "NV28 is expected to deliver continued protocol improvements and ecosystem enhancements, focusing on core network operations, developer experience, and storage provider functionality while supporting Filecoin's broader roadmap for scalability and security.",
     difficulty: 'Upcoming upgrade',
     cta: {
       href: 'https://github.com/filecoin-project/core-devs/discussions/205',
       text: 'Learn more',
+    },
+    image: {
+      src: nv28GoldenWeekImage,
+      alt: 'Filecoin Network Upgrade announcement for nv28, with cosmic background artwork.',
     },
   },
 ] as const satisfies Array<NetworkUpgrades>

@@ -82,6 +82,7 @@
   --color-paragraph-text: theme('colors.zinc.400');
   --color-paragraph-text-strong: theme('colors.zinc.200');
 
-  --color-card-heading-hover: theme('colors.brand.500');
+  --color-card-background: theme('colors.zinc.900');
   --color-card-background-hover: theme('colors.zinc.800');
+  --color-card-heading-hover: theme('colors.brand.500');
 }
