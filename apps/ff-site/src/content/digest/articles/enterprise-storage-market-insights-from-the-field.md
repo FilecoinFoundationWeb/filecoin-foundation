@@ -3,7 +3,6 @@ title: Enterprise Storage Market Insights From the Field
 created-on: 2024-08-27T16:05:00.000Z
 updated-on: 2024-08-27T16:05:00.000Z
 published-on: 2024-08-27T16:05:00.000Z
-issue-number: 1
 authors:
   - first-name: Mara
     last-name: McMahon

@@ -32,11 +32,11 @@ type DigestArticleProps = {
 export default async function DigestArticle(props: DigestArticleProps) {
   const { slug } = await props.params
 
-  const digestIssue = await getAllDigestIssuesData()
+  const digestIssues = await getAllDigestIssuesData()
 
   const article = await getDigestArticleWithIssueContext({
     articleSlug: slug,
-    articleIssueNumber: digestIssue[0].issueNumber,
+    digestIssue: digestIssues[0],
   })
 
   if (!article) {

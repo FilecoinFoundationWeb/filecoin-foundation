@@ -24,7 +24,10 @@ import {
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-import { getAllDigestIssuesData } from '@/digest/utils/getDigestIssueData'
+import {
+  getAllDigestIssuesData,
+  getDigestIssueData,
+} from '@/digest/utils/getDigestIssueData'
 import { parseDigestArticleParams } from '@/digest/utils/parseDigestParams'
 
 type DigestArticleProps = {
@@ -36,9 +39,11 @@ export default async function DigestArticle(props: DigestArticleProps) {
     props.params,
   )
 
+  const digestIssue = await getDigestIssueData(articleIssueNumber)
+
   const article = await getDigestArticleWithIssueContext({
     articleSlug,
-    articleIssueNumber,
+    digestIssue,
   })
 
   if (!article) {
@@ -105,9 +110,11 @@ export async function generateMetadata(props: DigestArticleProps) {
     props.params,
   )
 
+  const digestIssue = await getDigestIssueData(articleIssueNumber)
+
   const article = await getDigestArticleWithIssueContext({
     articleSlug,
-    articleIssueNumber,
+    digestIssue,
   })
 
   if (article) {

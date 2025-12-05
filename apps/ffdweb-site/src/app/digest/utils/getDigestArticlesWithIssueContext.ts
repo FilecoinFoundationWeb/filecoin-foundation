@@ -9,23 +9,21 @@ import {
 
 import { PATHS } from '@/constants/paths'
 
-const DIGEST_ISSUES_DIRECTORY_PATH = PATHS.DIGEST.issuePath
 const DIGEST_ARTICLES_DIRECTORY_PATH = PATHS.DIGEST.articlesPath
 
 type getDigestArticleWithIssueContextProps = Omit<
   sharedGetDigestArticleWithIssueContextProps,
-  'articleDirectoryPath' | 'issueDirectoryPath'
+  'articleDirectoryPath'
 >
 
 export async function getDigestArticleWithIssueContext({
   articleSlug,
-  articleIssueNumber,
+  digestIssue,
 }: getDigestArticleWithIssueContextProps) {
   return sharedGetDigestArticleWithIssueContext({
     articleSlug,
-    articleIssueNumber,
+    digestIssue,
     articleDirectoryPath: DIGEST_ARTICLES_DIRECTORY_PATH,
-    issueDirectoryPath: DIGEST_ISSUES_DIRECTORY_PATH,
   })
 }
 
