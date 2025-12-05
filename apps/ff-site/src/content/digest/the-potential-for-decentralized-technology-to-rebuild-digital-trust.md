@@ -3,7 +3,7 @@ title: The Potential for Decentralized Technology To Rebuild Digital Trust
 created-on: 2024-08-27T14:00:00.000Z
 updated-on: 2024-08-27T14:00:00.000Z
 published-on: 2024-08-27T14:00:00.000Z
-issue-number: "1"
+issue-number: 1
 article-number: 3
 authors:
   - first-name: Sofia
