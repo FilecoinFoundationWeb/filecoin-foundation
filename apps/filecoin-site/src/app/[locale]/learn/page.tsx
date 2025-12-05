@@ -20,10 +20,11 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
+import { SplitSectionContent } from '@/components/SplitSectionContent'
 import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbed'
 
 import { LEARN_SEO } from './constants/seo'
-import { filecoinFeatures } from './data/filecoinFeatures'
+import { howFilecoinWorks } from './data/howFilecoinWorks'
 import { learnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
 import { resilientInternetCta } from './data/resilientInternetCta'
 import { whatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
@@ -45,24 +46,31 @@ export default function Learn() {
           />
         </PageSection>
 
-        <Image
-          priority
-          src={graphicsData.earthBlueEdge.data}
-          alt={graphicsData.earthBlueEdge.alt}
-          className="absolute top-0 right-0 -z-10 h-[110vh] w-auto translate-x-1/3 rotate-15 transform object-contain object-top-right sm:translate-x-0 sm:rotate-0"
-        />
+        <div className="absolute right-0 bottom-0 -z-10 h-[80vh] w-[80vw] xl:origin-bottom-right">
+          <Image
+            fill
+            priority
+            src={graphicsData.solarEclipse.data}
+            alt={graphicsData.solarEclipse.alt}
+            className="object-cover"
+          />
+        </div>
       </div>
 
       <PageSection backgroundVariant="dark">
         <SectionContent
+          centerCTA
           descriptionColorBase
           title="What is Filecoin?"
-          description={[
-            "Filecoin is a decentralized alternative to today's storage solutions, offering a better foundation for humanity's most important information.",
-            "A handful of corporations currently control most of the world's data. This centralized model creates gatekeepers, introduces single points of failures, and reduces transparency.",
-            'Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, protected by cryptographic proofs.',
-          ]}
         >
+          <SplitSectionContent
+            title="A decentralized alternative to today’s storage solutions."
+            description={[
+              'Filecoin is a decentralized alternative to today’s storage solutions, offering a better foundation for humanity’s information.',
+              'A handful of corporations currently control most of the world’s data. This centralized model creates gatekeepers, introduces single points of failures, and reduces transparency.',
+              'Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, protected by cryptographic proofs.',
+            ]}
+          />
           <YouTubeVideoEmbed videoUrl={FILECOIN_URLS.video.whatIsFilecoin} />
         </SectionContent>
       </PageSection>
@@ -92,19 +100,19 @@ export default function Learn() {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection backgroundVariant="gray">
         <SectionContent
           centerCTA
-          title="Future-proof your data infrastructure"
-          description="Filecoin is a powerful alternative to traditional cloud storage, leveraging global, independent data centers. The decentralized network infrastructure ensures your data always remains secure and verifiable, so that you can store your data with confidence."
+          title="How Filecoin works?"
+          description="Filecoin is powered by a global network of independent storage providers. Through a decentralized protocol, they keep your data secure, verifiable, and accessible, eliminating single points of failure and building resilience, transparency, and trust."
           cta={
-            <Button href={PATHS.STORE_DATA.path} variant="ghost">
-              Store data
+            <Button href={PATHS.STORE_DATA.path} variant="primary">
+              Start storing on Filecoin
             </Button>
           }
         >
           <CardGrid as="ul" variant="smTwoLgThreeWider">
-            {filecoinFeatures.map(({ title, description, icon }) => (
+            {howFilecoinWorks.map(({ title, description, icon }) => (
               <Card
                 key={title}
                 as="li"
@@ -117,7 +125,7 @@ export default function Learn() {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="gray">
+      <PageSection backgroundVariant="light">
         <SectionContent
           centerCTA
           title="Learn about the Filecoin protocol"
