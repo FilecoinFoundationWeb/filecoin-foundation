@@ -17,15 +17,15 @@ import {
 
 import type { PageType } from '@/utils/generatePageStructuredData'
 
-import { PATHS, type StaticPath } from './paths'
+import { PATHS, type NextRouteWithoutLocale } from './paths'
 
 export const STRUCTURED_DATA_IDS = {
   ORGANIZATION: `${BASE_URL}/#org`,
   WEBSITE: `${BASE_URL}/#website`,
   BLOG: `${BASE_URL}${PATHS.BLOG.path}#blog`,
-  getServiceId: (path: StaticPath) => `${BASE_URL}${path}#service`,
+  getServiceId: (path: NextRouteWithoutLocale) => `${BASE_URL}${path}#service`,
   getBlogPostId: (path: string) => `${BASE_URL}${path}#post`,
-  getPageId: (path: StaticPath, type: PageType) =>
+  getPageId: (path: NextRouteWithoutLocale, type: PageType) =>
     `${BASE_URL}${path}#${type === 'CollectionPage' ? 'page' : 'webpage'}`,
 } as const
 

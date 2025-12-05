@@ -3,14 +3,13 @@ import type { Blog, ItemList, ListItem } from 'schema-dts'
 import type { BlogPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 
-import type { PathValues } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
 import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
 
 type GenerateBlogStructuredDataProps = {
-  path: PathValues
   name: string
   items?: Array<{
     url: string
@@ -19,7 +18,6 @@ type GenerateBlogStructuredDataProps = {
 }
 
 export function generateBlogStructuredData({
-  path,
   name,
   items = [],
 }: GenerateBlogStructuredDataProps): BlogPageGraph {
@@ -27,7 +25,7 @@ export function generateBlogStructuredData({
     '@type': 'Blog',
     '@id': STRUCTURED_DATA_IDS.BLOG,
     name,
-    url: `${BASE_URL}${path}`,
+    url: `${BASE_URL}${PATHS.BLOG.path}`,
     publisher: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
   }
 
@@ -47,7 +45,7 @@ export function generateBlogStructuredData({
   const graph: BlogPageGraph['@graph'] = [
     blog,
     ...(itemList ? [itemList] : []),
-    generateBreadcrumbList({ path, title: 'Blog' }),
+    generateBreadcrumbList({ path: PATHS.BLOG.path, title: PATHS.BLOG.label }),
   ]
 
   return {
