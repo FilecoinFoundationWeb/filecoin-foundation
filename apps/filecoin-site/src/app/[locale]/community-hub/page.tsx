@@ -157,7 +157,7 @@ export default async function CommunityHub({ params }: BlogProps) {
         >
           <CardGrid as="ul" variant="lgTwoWide">
             {networkUpgrades.map(
-              ({ title, description, cta, difficulty, image }) => (
+              ({ title, description, cta, label, image }) => (
                 <SimpleCardWithImage
                   key={title}
                   title={title}
@@ -165,11 +165,9 @@ export default async function CommunityHub({ params }: BlogProps) {
                   cta={cta}
                   image={image}
                   badge={{
-                    text: difficulty,
+                    text: label,
                     variant:
-                      difficulty === 'Current upgrade'
-                        ? 'primary'
-                        : 'secondary',
+                      label === 'Current upgrade' ? 'primary' : 'secondary',
                   }}
                 />
               ),
