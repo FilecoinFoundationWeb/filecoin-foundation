@@ -45,7 +45,7 @@ export function generateBlogStructuredData({
   const graph: BlogPageGraph['@graph'] = [
     blog,
     ...(itemList ? [itemList] : []),
-    generateBreadcrumbList({ path: PATHS.BLOG.path, title: 'Blog' }),
+    generateBreadcrumbList({ path: PATHS.BLOG.path, title: PATHS.BLOG.label }),
   ]
 
   return {
