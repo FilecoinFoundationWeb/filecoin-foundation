@@ -5,11 +5,11 @@ type RemoveLocalePrefix<Routes extends string> =
       : Rest
     : never
 
-type NextRoutes =
-  RemoveLocalePrefix<__next_route_internal_types__.DynamicRoutes>
+type NextRoute = __next_route_internal_types__.DynamicRoutes
+export type NextRouteWithoutLocale = RemoveLocalePrefix<NextRoute>
 
 type PathConfig = {
-  path: NextRoutes
+  path: NextRouteWithoutLocale
   label: string
   entriesPath?: string
 }

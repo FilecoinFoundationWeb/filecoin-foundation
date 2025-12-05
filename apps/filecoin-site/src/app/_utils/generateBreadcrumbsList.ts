@@ -1,13 +1,13 @@
-import type { Route } from 'next'
 import type { BreadcrumbList, ListItem } from 'schema-dts'
 
+import type { NextRouteWithoutLocale } from '@/constants/paths'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 type GenerateBreadcrumbListProps = {
   path: string
   title: string
-  parentPaths?: Array<{ path: Route; title: string }>
+  parentPaths?: Array<{ path: NextRouteWithoutLocale; title: string }>
 }
 
 export function generateBreadcrumbList({
