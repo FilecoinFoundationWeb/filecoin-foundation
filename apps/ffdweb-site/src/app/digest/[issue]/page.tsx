@@ -1,5 +1,3 @@
-import { notFound } from 'next/navigation'
-
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -35,11 +33,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
 
   const digestIssue = await getDigestIssueData(issueNumber)
 
-  if (!digestIssue) {
-    notFound()
-  }
-
-  const articles = await getAllDigestArticlesWithIssueContext({ issueNumber })
+  const articles = await getAllDigestArticlesWithIssueContext({ digestIssue })
 
   const { kicker, title } = digestIssue
 

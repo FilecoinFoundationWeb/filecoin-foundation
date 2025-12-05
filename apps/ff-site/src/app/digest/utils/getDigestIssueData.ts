@@ -6,6 +6,7 @@ import {
 import { PATHS } from '@/constants/paths'
 
 export async function getDigestIssueData(slug: string) {
+  console.log('slug', slug)
   return sharedGetDigestIssueData(slug, PATHS.DIGEST.issuePath)
 }
 

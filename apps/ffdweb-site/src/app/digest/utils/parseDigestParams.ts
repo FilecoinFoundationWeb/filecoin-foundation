@@ -17,7 +17,7 @@ export async function parseDigestArticleParams(
   const resolvedParams = await params
   const issueNumber = parseIssueNumberFromSlug(resolvedParams.issue)
   return {
-    issueNumber,
+    articleIssueNumber: issueNumber,
     articleSlug: resolvedParams.slug,
   }
 }

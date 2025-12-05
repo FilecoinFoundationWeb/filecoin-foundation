@@ -20,6 +20,8 @@
     "./getCategoryLabel": "./src/getCategoryLabel.ts",
     "./getCMSFieldOptionsAndValidIds": "./src/getCMSFieldOptionsAndValidIds.ts",
     "./getDigestArticleData": "./src/getDigestArticleData.ts",
+    "./getDigestArticleDataWithIssueContext": "./src/getDigestArticleDataWithIssueContext.ts",
+    "./getDigestIssueData": "./src/getDigestIssueData.ts",
     "./getFeaturedBlogPosts": "./src/getFeaturedBlogPosts.ts",
     "./getFeaturedEntry": "./src/getFeaturedEntry.ts",
     "./getMarkdownData": "./src/getMarkdownData.ts",

@@ -4,7 +4,6 @@ created-on: 2024-08-28T08:31:00.000Z
 updated-on: 2024-08-28T08:31:00.000Z
 published-on: 2024-08-28T08:31:00.000Z
 issue-number: 1
-article-number: 7
 authors:
   - first-name: Heath
     last-name: Behncke

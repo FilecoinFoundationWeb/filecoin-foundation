@@ -18,9 +18,7 @@ export async function getDigestArticlesData(directoryPath: string) {
     zodSchema: DigestArticleFrontmatterSchema,
   })
 
-  return allArticles
-    .map(transformDigestArticleData)
-    .sort((a, b) => (a.articleNumber ?? 0) - (b.articleNumber ?? 0)) // TODO: Revert to  .sort((a, b) => a.articleNumber - b.articleNumber)
+  return allArticles.map(transformDigestArticleData)
 }
 
 function getDigestMarkdownData(slug: string, directoryPath: string) {

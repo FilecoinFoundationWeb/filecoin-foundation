@@ -5,7 +5,6 @@ created-on: 2024-09-03T10:32:00.000Z
 updated-on: 2024-09-03T10:32:00.000Z
 published-on: 2024-09-03T10:32:00.000Z
 issue-number: 1
-article-number: 6
 authors:
   - first-name: Irma
     last-name: Jiang
