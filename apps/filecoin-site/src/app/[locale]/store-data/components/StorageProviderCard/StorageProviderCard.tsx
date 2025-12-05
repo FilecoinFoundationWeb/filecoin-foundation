@@ -1,17 +1,18 @@
 import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
-import { CTALink } from '@filecoin-foundation/ui-filecoin/CTALink'
+import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui-filecoin/Icon'
 
-
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'
+import { StorageProviderCardText } from './StorageProviderCardText'
 
 export type StorageProviderCardProps = {
   as: 'li' | 'div'
-  featured: boolean
   name: string
   description: string
+  labels: Array<string>
+  price: number
   bestFor: Array<string>
   keyFeatures: Array<string>
   url: string
@@ -20,9 +21,10 @@ export type StorageProviderCardProps = {
 
 export function StorageProviderCard({
   as: Tag,
-  featured,
   name,
   description,
+  labels,
+  price,
   bestFor,
   keyFeatures,
   url,
@@ -30,14 +32,8 @@ export function StorageProviderCard({
 }: StorageProviderCardProps) {
   return (
     <Tag>
-      <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-8 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 pb-16 focus-within:bg-zinc-50 hover:bg-zinc-50">
-        <div className="flex flex-col justify-between gap-10 sm:flex-row sm:items-center">
-          {featured && (
-            <span className="sm:order-2 sm:flex-row">
-              <Badge variant="solid">Featured</Badge>
-            </span>
-          )}
-
+      <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-10 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 focus-within:bg-zinc-50 hover:bg-zinc-50">
+        <div className="space-y-8">
           <div className="flex items-center gap-3">
             <Icon component={logo} size={40} />
 
@@ -45,35 +41,41 @@ export function StorageProviderCard({
               {name}
             </Heading>
           </div>
+
+          <p className="text-(--color-paragraph-text)" title={description}>
+            {description}
+          </p>
+          <ul className="flex flex-wrap gap-2.5">
+            {labels.map((label) => (
+              <li key={label}>
+                <Badge>{label}</Badge>
+              </li>
+            ))}
+          </ul>
+          <StorageProviderCardSection title="Price">
+            <StorageProviderCardText>
+              <span className="text-2xl font-medium">{price}$</span> / month
+            </StorageProviderCardText>
+          </StorageProviderCardSection>
+          <StorageProviderCardSection title="Best For">
+            <StorageProviderCardText>
+              {bestFor.join(', ')}
+            </StorageProviderCardText>
+          </StorageProviderCardSection>
+          <StorageProviderCardSection title="Key Features">
+            <ul className="space-y-2.5">
+              {keyFeatures.map((feature) => (
+                <li key={feature}>
+                  <StorageProviderCardKeyFeature feature={feature} />
+                </li>
+              ))}
+            </ul>
+          </StorageProviderCardSection>
         </div>
 
-        <p className="text-(--color-paragraph-text)" title={description}>
-          {description}
-        </p>
-
-        <StorageProviderCardSection title="Best For">
-          <ul className="flex flex-wrap gap-2.5">
-            {bestFor.map((text) => (
-              <li key={text}>
-                <Badge>{text}</Badge>
-              </li>
-            ))}
-          </ul>
-        </StorageProviderCardSection>
-
-        <StorageProviderCardSection title="Key Features">
-          <ul className="space-y-2.5">
-            {keyFeatures.map((feature) => (
-              <li key={feature}>
-                <StorageProviderCardKeyFeature feature={feature} />
-              </li>
-            ))}
-          </ul>
-        </StorageProviderCardSection>
-
-        <CTALink inset href={url} textClassName="bottom-8 left-8">
-          {`Learn more about ${name}`}
-        </CTALink>
+        <Button href={url} variant="ghost">
+          {`Store with ${name}`}
+        </Button>
       </article>
     </Tag>
   )

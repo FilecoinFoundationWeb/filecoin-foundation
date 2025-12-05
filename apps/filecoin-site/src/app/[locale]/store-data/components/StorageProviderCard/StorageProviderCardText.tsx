@@ -1,0 +1,11 @@
+import type { ReactNode } from 'react'
+
+export type StorageProviderCardTextProps = {
+  children: ReactNode
+}
+
+export function StorageProviderCardText({
+  children,
+}: StorageProviderCardTextProps) {
+  return <span className="text-sm text-zinc-950">{children}</span>
+}
