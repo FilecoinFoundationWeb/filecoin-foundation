@@ -7,7 +7,7 @@ import {
 
 import type { CardData } from '@filecoin-foundation/ui-filecoin/Card'
 
-export const dataCenterRequirements = [
+export const scalingOperations = [
   {
     title: 'Dedicated sealing hardware (CPU/GPU)',
     description:
