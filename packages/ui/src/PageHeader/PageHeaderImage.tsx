@@ -7,10 +7,10 @@ import type {
   StaticImageProps,
 } from '@filecoin-foundation/utils/types/imageType'
 
-export type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
-  objectFit?: ImageObjectFit
-  padding?: boolean
-}
+export type PageHeaderImageProps = (StaticImageProps | ImageProps) &
+  ImageObjectFit & {
+    padding?: boolean
+  }
 
 export function PageHeaderImage(image: PageHeaderImageProps) {
   const isStaticImage = 'data' in image

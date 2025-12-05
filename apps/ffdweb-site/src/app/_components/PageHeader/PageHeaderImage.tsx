@@ -8,9 +8,7 @@ import type {
   StaticImageProps,
 } from '@filecoin-foundation/utils/types/imageType'
 
-type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
-  objectFit?: ImageObjectFit
-}
+type PageHeaderImageProps = (StaticImageProps | ImageProps) & ImageObjectFit
 
 export function PageHeaderImage(image: PageHeaderImageProps) {
   const isStaticImage = 'data' in image
@@ -22,8 +20,8 @@ export function PageHeaderImage(image: PageHeaderImageProps) {
     sizes: buildImageSizeProp({ startSize: '390px' }),
     className: clsx(
       'page-header-image',
-      image.objectFit?.objectFit === 'cover' && 'object-cover',
-      image.objectFit?.objectFit === 'contain' && 'object-contain',
+      image?.objectFit === 'cover' && 'object-cover',
+      image?.objectFit === 'contain' && 'object-contain',
     ),
   }
 

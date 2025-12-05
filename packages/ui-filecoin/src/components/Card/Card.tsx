@@ -2,12 +2,11 @@ import type { ReactNode } from 'react'
 
 import { clsx } from 'clsx'
 
-import type { StaticImageProps } from '../../types/imageType'
 import { CTALink, type CTALinkProps } from '../CTALink'
 import { Heading } from '../Heading'
 import { IconBadge, type IconBadgeProps } from '../IconBadge'
 
-import { CardImage } from './CardImage'
+import { CardImage, type CardImageProps } from './CardImage'
 
 type CardBaseProps = {
   as: 'li' | 'article' | 'div'
@@ -26,7 +25,7 @@ type IconVariant = {
 }
 
 type ImageVariant = {
-  image: StaticImageProps
+  image: CardImageProps
   icon?: never
 }
 
@@ -60,7 +59,7 @@ export function Card({
       )}
     >
       {icon && <IconBadge component={icon} size="md" />}
-      {image && <CardImage image={image} />}
+      {image && <CardImage image={{ objectFit: 'cover', ...image }} />}
 
       <div className="space-y-12">
         <div className="space-y-2">

@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.5.5
+
+### Patch Changes
+
+- 5cc5835: This PR improves type safety and flexibility for image and page header components across the codebase.
+
 ## 0.5.4
 
 ### Patch Changes
