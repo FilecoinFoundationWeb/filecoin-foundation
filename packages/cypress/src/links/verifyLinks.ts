@@ -1,7 +1,7 @@
 const REQUEST_DENIED_STATUS_CODE = 999
 const CLIENT_ERROR_THRESHOLD = 400
 
-export function verifyLinks(path: string) {
+export function verifyLinks(path: string, excludedLinks?: string[]) {
   cy.visit(path)
 
   cy.get('a').each(($link) => {
@@ -11,8 +11,11 @@ export function verifyLinks(path: string) {
 
     const linkUrl = new URL(href, window.location.origin)
     const isExternalLink = linkUrl.origin !== window.location.origin
+    const isExcluded = excludedLinks?.some((excludedLink) =>
+      href.includes(excludedLink),
+    )
 
-    if (isExternalLink) {
+    if (isExternalLink && !isExcluded) {
       verifyExternalLink(href)
     }
   })
