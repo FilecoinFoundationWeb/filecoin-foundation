@@ -21,6 +21,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { ImageGrid } from '@/components/ImageGrid'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SectionImage } from '@/components/SectionImage'
+import { SimpleCardWithImage } from '@/components/SimpleCardWithImage'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { COMMUNITY_SEO } from './constants/seo'
@@ -65,7 +66,7 @@ export default async function CommunityHub({ params }: BlogProps) {
         />
 
         <PageSection backgroundVariant="transparentDark">
-          <CardGrid as="ul" variant="mdTwoLgThreeWide">
+          <CardGrid as="ul" variant="mdOneLgThree">
             {getInvolvedWithCommunity.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
@@ -155,20 +156,24 @@ export default async function CommunityHub({ params }: BlogProps) {
           ]}
         >
           <CardGrid as="ul" variant="lgTwoWide">
-            {networkUpgrades.map(({ title, description, cta, difficulty }) => (
-              <SimpleCard
-                key={title}
-                as="li"
-                title={title}
-                description={description}
-                cta={cta}
-                badge={{
-                  text: difficulty,
-                  variant:
-                    difficulty === 'Current upgrade' ? 'primary' : 'secondary',
-                }}
-              />
-            ))}
+            {networkUpgrades.map(
+              ({ title, description, cta, difficulty, image }) => (
+                <SimpleCardWithImage
+                  key={title}
+                  title={title}
+                  description={description}
+                  cta={cta}
+                  image={image}
+                  badge={{
+                    text: difficulty,
+                    variant:
+                      difficulty === 'Current upgrade'
+                        ? 'primary'
+                        : 'secondary',
+                  }}
+                />
+              ),
+            )}
           </CardGrid>
         </SectionContent>
       </PageSection>
