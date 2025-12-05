@@ -13,7 +13,6 @@ export function generateStructuredData(
   sortedPosts: Array<BlogPost>,
 ): BlogPageGraph {
   return generateBlogStructuredData({
-    path: PATHS.BLOG.path,
     name: seo.title,
     items: sortedPosts.map((post) => ({
       url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
