@@ -217,15 +217,83 @@ export const redirects = [
 
   // DIGEST ARTICLE REDIRECTS
   {
+    source: '/digest/creating-human-records-that-stand-the-test-of-time',
+    destination:
+      '/digest/issue-1/creating-human-records-that-stand-the-test-of-time',
+    permanent: true,
+  },
+  {
+    source: '/digest/decentralization-and-data-flows',
+    destination: '/digest/issue-1/decentralization-and-data-flows',
+    permanent: true,
+  },
+  {
+    source: '/digest/decentralization-in-all-the-things',
+    destination: '/digest/issue-1/decentralization-in-all-the-things',
+    permanent: true,
+  },
+  {
     source: '/digest/editor%E2%80%99s-letter',
-    destination: '/digest/editors-letter',
+    destination: '/digest/issue-1/editors-letter',
+    permanent: true,
+  },
+  {
+    source: '/digest/editors-letter',
+    destination: '/digest/issue-1/editors-letter',
     permanent: true,
   },
   {
     source:
       '/digest/free-software%E2%80%99s-paradox-losing-while-winning-and-the-need-for-decentralization',
     destination:
+      '/digest/issue-1/free-softwares-paradox-losing-while-winning-and-the-need-for-decentralization',
+    permanent: true,
+  },
+  {
+    source:
       '/digest/free-softwares-paradox-losing-while-winning-and-the-need-for-decentralization',
+    destination:
+      '/digest/issue-1/free-softwares-paradox-losing-while-winning-and-the-need-for-decentralization',
+    permanent: true,
+  },
+  {
+    source: '/digest/navigating-crypto-policy-around-the-globe',
+    destination: '/digest/issue-1/navigating-crypto-policy-around-the-globe',
+    permanent: true,
+  },
+  {
+    source: '/digest/recognizing-code-as-speech-is-vital',
+    destination: '/digest/issue-1/recognizing-code-as-speech-is-vital',
+    permanent: true,
+  },
+  {
+    source:
+      '/digest/reviving-internet-decentralization-without-relying-on-the-b-word',
+    destination:
+      '/digest/issue-1/reviving-internet-decentralization-without-relying-on-the-b-word',
+    permanent: true,
+  },
+  {
+    source: '/digest/terminal-values-cognitive-liberty',
+    destination: '/digest/issue-1/terminal-values-cognitive-liberty',
+    permanent: true,
+  },
+  {
+    source:
+      '/digest/the-debate-over-dweb-vs-web3-the-decentralized-elephant-in-the-room',
+    destination:
+      '/digest/issue-1/the-debate-over-dweb-vs-web3-the-decentralized-elephant-in-the-room',
+    permanent: true,
+  },
+  {
+    source: '/digest/twiddler-configurability-for-me-but-not-for-thee',
+    destination:
+      '/digest/issue-1/twiddler-configurability-for-me-but-not-for-thee',
+    permanent: true,
+  },
+  {
+    source: '/digest/why-we-need-to-fight-for-our-privacy',
+    destination: '/digest/issue-1/why-we-need-to-fight-for-our-privacy',
     permanent: true,
   },
 ]

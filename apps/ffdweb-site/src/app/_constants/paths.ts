@@ -23,20 +23,38 @@ type DynamicPath = {
 export type DynamicPathValues = DynamicPath[keyof DynamicPath]
 export type PathValues = StaticPath | DynamicPathValues
 
+type IssueUrlProps = {
+  issueNumber: string
+}
+
+type ArticleUrlProps = IssueUrlProps & {
+  articleSlug: string
+}
+
 export const PATHS = {
   HOME: createPathConfig('/', 'Home'),
   ABOUT: createPathConfig('/about', 'About'),
-  BLOG: createPathConfig('/blog', 'Blog', { hasEntries: true }),
-  DIGEST: createPathConfig('/digest', 'Digest', { hasEntries: true }),
+  BLOG: createPathConfig('/blog', 'Blog', {
+    entriesPath: `${CONTENT_ROOT}/blog`,
+  }),
+  DIGEST: {
+    ...createPathConfig('/digest', 'Digest'),
+    articlesPath: `${CONTENT_ROOT}/digest/articles`,
+    issuePath: `${CONTENT_ROOT}/digest/issues`,
+    issueUrl: ({ issueNumber }: IssueUrlProps) =>
+      `/digest/issue-${issueNumber}`,
+    articleUrl: ({ issueNumber, articleSlug }: ArticleUrlProps) =>
+      `/digest/issue-${issueNumber}/${articleSlug}`,
+  },
   FAQS: createPathConfig('/faqs', 'FAQs'),
   LEARNING_RESOURCES: createPathConfig(
     '/learning-resources',
     'Learning Resources',
-    { hasEntries: true },
+    { entriesPath: `${CONTENT_ROOT}/learning-resources` },
   ),
   PRIVACY_POLICY: createPathConfig('/privacy-policy', 'Privacy Policy'),
   PROJECTS: createPathConfig('/projects', 'Projects', {
-    hasEntries: true,
+    entriesPath: `${CONTENT_ROOT}/projects`,
   }),
   TERMS_OF_USE: createPathConfig('/terms-of-use', 'Terms of Use'),
 } as const
