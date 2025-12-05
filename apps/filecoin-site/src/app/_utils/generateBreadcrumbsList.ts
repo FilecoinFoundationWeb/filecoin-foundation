@@ -14,7 +14,7 @@ export function generateBreadcrumbList({
   path,
   title,
   parentPaths = [],
-}: GenerateBreadcrumbListProps): BreadcrumbList {
+}: GenerateBreadcrumbListProps): BreadcrumbList | null {
   const HOME_ITEM: ListItem = {
     '@type': 'ListItem',
     position: 1,
@@ -23,7 +23,7 @@ export function generateBreadcrumbList({
   }
 
   if (path === PATHS.HOME.path) {
-    return { '@type': 'BreadcrumbList', itemListElement: [HOME_ITEM] }
+    return null
   }
 
   const items: Array<ListItem> = [
