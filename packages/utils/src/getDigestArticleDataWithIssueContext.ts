@@ -1,6 +1,5 @@
 import { getDigestArticleData } from './getDigestArticleData'
-import { getDigestIssueData } from './getDigestIssueData'
-import type { DigestArticleData, DigestIssueData } from './types/digestType'
+import type { DigestIssueData } from './types/digestType'
 
 export type getAllDigestArticlesWithIssueContextProps = {
   digestIssue: DigestIssueData
@@ -11,56 +10,34 @@ export async function getAllDigestArticlesWithIssueContext({
   digestIssue,
   articleDirectoryPath,
 }: getAllDigestArticlesWithIssueContextProps) {
-  const articles = await Promise.all(
+  return await Promise.all(
     digestIssue.articles.map(async (articleSlug, index) => {
-      try {
-        const article = await getDigestArticleData(
-          articleSlug,
-          articleDirectoryPath,
-        )
-        if (article.issueNumber !== digestIssue.issueNumber) {
-          return null
-        }
-        return {
-          ...article,
-          articleNumber: index + 1,
-        }
-      } catch {
-        return null
+      const article = await getDigestArticleData(
+        articleSlug,
+        articleDirectoryPath,
+      )
+
+      return {
+        ...article,
+        issueNumber: digestIssue.issueNumber,
+        articleNumber: index + 1,
       }
     }),
-  ).then((results) =>
-    results.filter(
-      (article): article is NonNullable<typeof article> => article !== null,
-    ),
   )
-
-  return articles
 }
 
 export type getDigestArticleWithIssueContextProps = {
   articleSlug: string
-  articleIssueNumber: DigestArticleData['issueNumber']
+  digestIssue: DigestIssueData
   articleDirectoryPath: string
-  issueDirectoryPath: string
 }
 
 export async function getDigestArticleWithIssueContext({
   articleSlug,
-  articleIssueNumber,
+  digestIssue,
   articleDirectoryPath,
-  issueDirectoryPath,
 }: getDigestArticleWithIssueContextProps) {
   const article = await getDigestArticleData(articleSlug, articleDirectoryPath)
-
-  if (!article) {
-    return null
-  }
-
-  const digestIssue = await getDigestIssueData(
-    articleIssueNumber,
-    issueDirectoryPath,
-  )
 
   const articleIndex = digestIssue.articles.findIndex(
     (article) => article === articleSlug,
@@ -68,6 +45,7 @@ export async function getDigestArticleWithIssueContext({
 
   return {
     ...article,
+    issueNumber: digestIssue.issueNumber,
     articleNumber: articleIndex + 1,
   }
 }
