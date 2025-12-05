@@ -4,6 +4,7 @@ import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -30,8 +31,13 @@ const { header, seo } = PageFrontmatterSchema.parse(attributes)
 export default async function Digest() {
   const digestIssues = await getAllDigestIssuesData()
 
+  const firstDigestIssue = findOrThrow(
+    digestIssues,
+    (issue) => issue.issueNumber === '1',
+  )
+
   const articles = await getAllDigestArticlesWithIssueContext({
-    digestIssue: digestIssues[0],
+    digestIssue: firstDigestIssue,
   })
 
   return (
@@ -44,8 +50,8 @@ export default async function Digest() {
       />
 
       <PageSection
-        kicker={digestIssues[0].kicker}
-        title={digestIssues[0].title}
+        kicker={firstDigestIssue.kicker}
+        title={firstDigestIssue.title}
         description={[
           'Featuring Guest Editor Jonathan Victor, Co-Founder, Ansa Research',
           'Published in September 2024, the inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and sustainable data centers. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future.',
