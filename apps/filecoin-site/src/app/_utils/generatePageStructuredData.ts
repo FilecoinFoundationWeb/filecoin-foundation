@@ -1,10 +1,10 @@
+import type { Route } from 'next'
 import type { WebPage } from 'schema-dts'
 
 import type { WebPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 import type { StructuredDataParams } from '@filecoin-foundation/utils/types/structuredDataParams'
 
-import { type StaticPath } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import {
   STRUCTURED_DATA_IDS,
@@ -16,7 +16,7 @@ import { generateBreadcrumbList } from './generateBreadcrumbsList'
 export type PageType = 'WebPage' | 'CollectionPage'
 
 type GenerateWebPageStructuredDataProps = StructuredDataParams & {
-  path: StaticPath
+  path: Route
   pageType: PageType
   about?: Array<{ '@type': 'Thing'; name: string }>
 }
