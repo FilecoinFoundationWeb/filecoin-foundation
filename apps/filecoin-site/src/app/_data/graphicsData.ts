@@ -1,9 +1,9 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
+import astronautHelmet from '@/assets/graphics/astronaut-helmet.webp'
 import buildOnFilecoinGradient from '@/assets/graphics/build-gradient.svg'
 import caseStudiesGradient from '@/assets/graphics/case-studies-gradient.svg'
 import classicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
-import communityHubGradient from '@/assets/graphics/community-gradient.svg'
 import dataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import digitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
 import earthAtNight from '@/assets/graphics/earth-at-night.webp'
@@ -22,6 +22,10 @@ import spiralGalaxyStarsSpace from '@/assets/graphics/spiral-galaxy-stars-space.
 import starsSpinning from '@/assets/graphics/stars-spinning.webp'
 
 export const graphicsData = {
+  astronautHelmet: {
+    data: astronautHelmet,
+    alt: 'Close-up of an astronaut’s helmet during a spacewalk, with the reflection showing Earth and parts of the spacecraft.',
+  },
   buildOnFilecoinGradient: {
     data: buildOnFilecoinGradient,
     alt: '',
@@ -33,10 +37,6 @@ export const graphicsData = {
   classicLibraryInterior: {
     data: classicLibraryInterior,
     alt: 'Interior of a grand historic library with high vaulted wooden ceiling, rows of tall bookshelves, and marble busts lining the hall.',
-  },
-  communityHubGradient: {
-    data: communityHubGradient,
-    alt: '',
   },
   dataCenterServerRow: {
     data: dataCenterServerRow,

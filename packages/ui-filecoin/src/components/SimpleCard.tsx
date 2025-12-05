@@ -33,7 +33,7 @@ export type CardContentProps = Pick<
 >
 
 const cardOuter = cva(
-  'group h-full w-full overflow-hidden border-(--color-border-base)',
+  'group h-full w-full overflow-hidden border-(--color-border-base) bg-(--color-card-background)',
   {
     variants: {
       border: {
