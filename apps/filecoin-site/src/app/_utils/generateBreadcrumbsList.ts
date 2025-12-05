@@ -5,7 +5,7 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 type GenerateBreadcrumbListProps = {
-  path: string
+  path: NextRouteWithoutLocale
   title: string
   parentPaths?: Array<{ path: NextRouteWithoutLocale; title: string }>
 }
@@ -14,7 +14,7 @@ export function generateBreadcrumbList({
   path,
   title,
   parentPaths = [],
-}: GenerateBreadcrumbListProps): BreadcrumbList | null {
+}: GenerateBreadcrumbListProps): BreadcrumbList {
   const HOME_ITEM: ListItem = {
     '@type': 'ListItem',
     position: 1,
@@ -23,7 +23,7 @@ export function generateBreadcrumbList({
   }
 
   if (path === PATHS.HOME.path) {
-    return null
+    return { '@type': 'BreadcrumbList', itemListElement: [HOME_ITEM] }
   }
 
   const items: Array<ListItem> = [
