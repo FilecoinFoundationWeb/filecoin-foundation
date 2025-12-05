@@ -17,6 +17,7 @@ import IPFSIllustration from '@/assets/graphics/IPFS-illustration.webp'
 import planetsShadow from '@/assets/graphics/planets-shadow.svg'
 import rocketLaunch from '@/assets/graphics/rocket-launch.webp'
 import serverBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
+import solarEclipse from '@/assets/graphics/solar-eclipse.webp'
 import spiralGalaxyStarsSpace from '@/assets/graphics/spiral-galaxy-stars-space.webp'
 import starsSpinning from '@/assets/graphics/stars-spinning.webp'
 
@@ -88,6 +89,10 @@ export const graphicsData = {
   serverBladeChassis: {
     data: serverBladeChassis,
     alt: 'Front view of a server blade chassis with multiple slots, each marked with glowing Filecoin logos.',
+  },
+  solarEclipse: {
+    data: solarEclipse,
+    alt: 'Solar eclipse with the sun forming a bright diamond ring behind the moon.',
   },
   spiralGalaxyStarsSpace: {
     data: spiralGalaxyStarsSpace,
