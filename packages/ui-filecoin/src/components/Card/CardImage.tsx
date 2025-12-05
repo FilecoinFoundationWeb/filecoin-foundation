@@ -4,13 +4,13 @@ import Image, { type ImageProps } from 'next/image'
 import type { ImageObjectFit, StaticImageProps } from '../../types/imageType'
 import { buildImageSizeProp } from '../../utils/buildImageSizeProp'
 
-export type CardImageProps = (StaticImageProps | ImageProps) & {
-  objectFit?: ImageObjectFit
+export type CardImageProps = {
   padding?: boolean
   priority?: boolean
   sizes?: string
   aspectRatio?: 'square' | 'video'
-}
+} & ImageObjectFit &
+  (StaticImageProps | ImageProps)
 
 type ImageComponentProps = {
   image: CardImageProps
