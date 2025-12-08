@@ -71,40 +71,6 @@
     }
   }
 
-  /* LISTBOX BUTTON */
-  .listbox-button {
-    @apply relative w-full cursor-pointer border bg-white px-6 py-4 text-left;
-
-    &::before {
-      background: var(--color-zinc-200) border-box;
-    }
-
-    &::after {
-      @apply opacity-0 transition-opacity duration-100;
-      background: var(--gradient-brand-light) border-box;
-    }
-
-    &:hover::after,
-    &:focus::after,
-    &[data-open]::after {
-      @apply opacity-100;
-    }
-
-    &::before,
-    &::after {
-      @apply absolute -inset-0.5 border-2 border-transparent;
-      content: '';
-      mask:
-        linear-gradient(var(--color-white)) content-box,
-        linear-gradient(var(--color-white));
-      mask-composite: exclude;
-    }
-
-    &:focus {
-      @apply focus:outline-none;
-    }
-  }
-
   /* NOTIFICATION DIALOG */
   .notification {
     @apply rounded-lg border border-zinc-200 bg-zinc-50 text-zinc-950;
