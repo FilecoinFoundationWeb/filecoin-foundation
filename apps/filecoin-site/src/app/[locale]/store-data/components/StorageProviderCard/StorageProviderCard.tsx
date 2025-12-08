@@ -48,7 +48,11 @@ export function StorageProviderCard({
             {description}
           </p>
 
-          <StorageProviderFeatures list={labels} Component={Badge} />
+          <StorageProviderFeatures
+            direction="row"
+            list={labels}
+            Component={Badge}
+          />
 
           <StorageProviderCardSection title="Price">
             <StorageProviderPricePerMonth>{cents}</StorageProviderPricePerMonth>
@@ -60,6 +64,7 @@ export function StorageProviderCard({
           </StorageProviderCardSection>
           <StorageProviderCardSection title="Key Features">
             <StorageProviderFeatures
+              direction="column"
               list={keyFeatures}
               Component={StorageProviderCardKeyFeature}
             />
