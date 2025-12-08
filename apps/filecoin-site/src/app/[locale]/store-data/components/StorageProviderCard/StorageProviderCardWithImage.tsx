@@ -41,61 +41,60 @@ export function StorageProviderCardWithImage({
           fill
           src={image.src}
           alt={image.alt}
-          className="rounded-2xl object-cover"
+          className="aspect-video rounded-t-lg object-cover lg:rounded-lg"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
-      <div className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-10 overflow-hidden p-8 focus-within:bg-zinc-50 hover:bg-zinc-50">
-        <div className="flex flex-col justify-between gap-10">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Icon component={logo} size={40} />
 
-              <Heading tag="h3" variant="card-heading">
-                {name}
-              </Heading>
-            </div>
+      <div className="focus-within:brand-outline relative flex h-full flex-col justify-between gap-10 overflow-hidden p-8 focus-within:bg-zinc-50 hover:bg-zinc-50">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Icon component={logo} size={40} />
 
-            <span className="sm:order-2 sm:flex-row">
-              <Badge variant="solid">Featured</Badge>
-            </span>
+            <Heading tag="h3" variant="card-heading">
+              {name}
+            </Heading>
           </div>
-          <div className="grid grid-cols-2 gap-8 space-y-8">
-            <div className="flex flex-col gap-8">
-              <p className="text-(--color-paragraph-text)" title={description}>
-                {description}
-              </p>
-              <ul className="flex flex-wrap gap-2.5">
-                {labels.map((label) => (
-                  <li key={label}>
-                    <Badge>{label}</Badge>
+
+          <span className="sm:order-2 sm:flex-row">
+            <Badge variant="solid">Featured</Badge>
+          </span>
+        </div>
+        <div className="grid gap-8 md:grid-cols-2">
+          <div className="flex flex-col gap-8">
+            <p className="text-(--color-paragraph-text)" title={description}>
+              {description}
+            </p>
+            <ul className="flex flex-wrap gap-2.5">
+              {labels.map((label) => (
+                <li key={label}>
+                  <Badge>{label}</Badge>
+                </li>
+              ))}
+            </ul>
+
+            <StorageProviderCardSection title="Price">
+              <StoragePricePerMonth cents={cents} />
+            </StorageProviderCardSection>
+          </div>
+          <div className="flex flex-col gap-8">
+            <StorageProviderCardSection title="Best For">
+              <StorageProviderCardText>
+                {bestFor.join(', ')}
+              </StorageProviderCardText>
+            </StorageProviderCardSection>
+            <StorageProviderCardSection title="Key Features">
+              <ul className="space-y-2.5">
+                {keyFeatures.map((feature) => (
+                  <li key={feature}>
+                    <StorageProviderCardKeyFeature feature={feature} />
                   </li>
                 ))}
               </ul>
-
-              <StorageProviderCardSection title="Price">
-                <StoragePricePerMonth cents={cents} />
-              </StorageProviderCardSection>
-            </div>
-            <div className="flex flex-col gap-8">
-              <StorageProviderCardSection title="Best For">
-                <StorageProviderCardText>
-                  {bestFor.join(', ')}
-                </StorageProviderCardText>
-              </StorageProviderCardSection>
-              <StorageProviderCardSection title="Key Features">
-                <ul className="space-y-2.5">
-                  {keyFeatures.map((feature) => (
-                    <li key={feature}>
-                      <StorageProviderCardKeyFeature feature={feature} />
-                    </li>
-                  ))}
-                </ul>
-              </StorageProviderCardSection>
-            </div>
+            </StorageProviderCardSection>
           </div>
         </div>
-        <div className="flex justify-start">
+        <div className="flex flex-col md:flex-row md:justify-start">
           <Button href={url} variant="ghost">
             {`Store with ${name}`}
           </Button>

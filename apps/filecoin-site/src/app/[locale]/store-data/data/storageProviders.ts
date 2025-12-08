@@ -9,7 +9,7 @@ import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.svg'
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 import type { StorageProviderCardWithImageProps } from '../components/StorageProviderCard/StorageProviderCardWithImage'
 
-export type StorageProviderWithImage = Pick<
+type FeaturedStorageProvider = Pick<
   StorageProviderCardWithImageProps,
   | 'name'
   | 'description'
@@ -22,7 +22,8 @@ export type StorageProviderWithImage = Pick<
 > & {
   bestFor: Array<BestForType>
 }
-export type StorageProvider = Pick<
+
+type StorageProvider = Pick<
   StorageProviderCardProps,
   'name' | 'description' | 'labels' | 'cents' | 'keyFeatures' | 'url' | 'logo'
 > & {
@@ -110,7 +111,7 @@ export const filecoinStorageProviders = [
 
 export const featuredFilecoinStorageProvider = {
   image: {
-    src: Storacha.src,
+    ...Storacha,
     alt: 'Storacha',
   },
   name: 'Storacha',
@@ -126,4 +127,4 @@ export const featuredFilecoinStorageProvider = {
   ],
   url: 'https://storacha.network/',
   logo: StorachaMiniatureLogo,
-} as const satisfies StorageProviderWithImage
+} as const satisfies FeaturedStorageProvider
