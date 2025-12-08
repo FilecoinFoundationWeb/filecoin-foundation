@@ -7,6 +7,7 @@ import { StoragePricePerMonth } from './StoragePricePerMonth'
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'
 import { StorageProviderCardText } from './StorageProviderCardText'
+import { StorageProviderFeatures } from './StorageProviderFeatures'
 
 export type StorageProviderCardProps = {
   as: 'li' | 'div'
@@ -46,13 +47,9 @@ export function StorageProviderCard({
           <p className="text-(--color-paragraph-text)" title={description}>
             {description}
           </p>
-          <ul className="flex flex-wrap gap-2.5">
-            {labels.map((label) => (
-              <li key={label}>
-                <Badge>{label}</Badge>
-              </li>
-            ))}
-          </ul>
+
+          <StorageProviderFeatures list={labels} Component={Badge} />
+
           <StorageProviderCardSection title="Price">
             <StoragePricePerMonth cents={cents} />
           </StorageProviderCardSection>
@@ -62,13 +59,10 @@ export function StorageProviderCard({
             </StorageProviderCardText>
           </StorageProviderCardSection>
           <StorageProviderCardSection title="Key Features">
-            <ul className="space-y-2.5">
-              {keyFeatures.map((feature) => (
-                <li key={feature}>
-                  <StorageProviderCardKeyFeature feature={feature} />
-                </li>
-              ))}
-            </ul>
+            <StorageProviderFeatures
+              list={keyFeatures}
+              Component={StorageProviderCardKeyFeature}
+            />
           </StorageProviderCardSection>
         </div>
 
