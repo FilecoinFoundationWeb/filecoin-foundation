@@ -78,33 +78,13 @@ export default function StoreData() {
             {filecoinStorageProviders
               .slice()
               .sort((a, b) => a.name.localeCompare(b.name))
-              .map(
-                ({
-                  name,
-                  description,
-                  labels,
-                  cents,
-                  bestFor,
-                  keyFeatures,
-                  url,
-                  logo,
-                }) => (
-                  <StorageProviderCard
-                    key={name}
-                    as="li"
-                    {...{
-                      name,
-                      description,
-                      labels,
-                      cents,
-                      bestFor,
-                      keyFeatures,
-                      url,
-                      logo,
-                    }}
-                  />
-                ),
-              )}
+              .map((provider) => (
+                <StorageProviderCard
+                  key={provider.name}
+                  as="li"
+                  {...provider}
+                />
+              ))}
           </CardGrid>
         </SectionContent>
       </PageSection>
