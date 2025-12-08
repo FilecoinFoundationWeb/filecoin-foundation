@@ -4,7 +4,7 @@ import type { ServicePageGraph } from '@filecoin-foundation/ui/StructuredDataScr
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 import type { StructuredDataParams } from '@filecoin-foundation/utils/types/structuredDataParams'
 
-import type { StaticPath } from '@/constants/paths'
+import type { NextRouteWithoutLocale } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
@@ -21,7 +21,7 @@ export type ServiceDetails = {
 }
 
 type ServiceProps = StructuredDataParams & {
-  path: StaticPath
+  path: NextRouteWithoutLocale
   service: ServiceDetails
 }
 

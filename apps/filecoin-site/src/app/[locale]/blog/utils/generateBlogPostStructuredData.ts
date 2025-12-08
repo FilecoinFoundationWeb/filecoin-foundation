@@ -3,14 +3,14 @@ import type { BlogPosting } from 'schema-dts'
 import type { BlogPostPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 
-import { PATHS } from '@/constants/paths'
+import { PATHS, type NextRouteWithoutLocale } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
 import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
 
 type GenerateBlogPostStructuredDataProps = {
-  path: string
+  path: NextRouteWithoutLocale
   headline: string
   description: BlogPosting['description']
   datePublished: Date
