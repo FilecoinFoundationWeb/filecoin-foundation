@@ -2,11 +2,13 @@ import { formatPrice } from '../../utils/formatPrice'
 
 import { StorageProviderCardText } from './StorageProviderCardText'
 
-export type StoragePricePerMonthProps = {
-  cents: number
+export type StorageProviderPricePerMonthProps = {
+  children: number
 }
 
-export function StoragePricePerMonth({ cents }: StoragePricePerMonthProps) {
+export function StorageProviderPricePerMonth({
+  children: cents,
+}: StorageProviderPricePerMonthProps) {
   if (cents < 0) {
     throw new Error('Price per month cannot be negative')
   }
