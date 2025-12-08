@@ -1,0 +1,19 @@
+import { formatPrice } from '../../utils/formatPrice'
+
+import { StorageProviderCardText } from './StorageProviderCardText'
+
+export type StoragePricePerMonthProps = {
+  cents: number
+}
+
+export function StoragePricePerMonth({ cents }: StoragePricePerMonthProps) {
+  if (cents < 0) {
+    throw new Error('Price per month cannot be negative')
+  }
+
+  return (
+    <StorageProviderCardText>
+      <span className="text-2xl font-medium">{formatPrice(cents)}</span> / month
+    </StorageProviderCardText>
+  )
+}

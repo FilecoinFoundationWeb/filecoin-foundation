@@ -6,6 +6,7 @@ import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui-filecoin/Icon'
 
+import { StoragePricePerMonth } from './StoragePricePerMonth'
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'
 import { StorageProviderCardText } from './StorageProviderCardText'
@@ -15,7 +16,7 @@ export type StorageProviderCardWithImageProps = {
   name: string
   description: string
   labels: Array<string>
-  price: number
+  cents: number
   bestFor: Array<string>
   keyFeatures: Array<string>
   url: string
@@ -27,14 +28,14 @@ export function StorageProviderCardWithImage({
   name,
   description,
   labels,
-  price,
+  cents,
   bestFor,
   keyFeatures,
   url,
   logo,
 }: StorageProviderCardWithImageProps) {
   return (
-    <article className="grid grid-cols-1 rounded-2xl border border-[var(--color-border-muted)] lg:grid-cols-2">
+    <article className="grid grid-cols-1 rounded-2xl border border-(--color-border-muted) lg:grid-cols-2">
       <div className="relative aspect-video h-full w-full">
         <Image
           fill
@@ -73,9 +74,7 @@ export function StorageProviderCardWithImage({
               </ul>
 
               <StorageProviderCardSection title="Price">
-                <StorageProviderCardText>
-                  <span className="text-2xl font-medium">{price}$</span> / month
-                </StorageProviderCardText>
+                <StoragePricePerMonth cents={cents} />
               </StorageProviderCardSection>
             </div>
             <div className="flex flex-col gap-8">

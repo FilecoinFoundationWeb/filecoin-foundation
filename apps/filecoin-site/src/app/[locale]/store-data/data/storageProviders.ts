@@ -14,7 +14,7 @@ export type StorageProviderWithImage = Pick<
   | 'name'
   | 'description'
   | 'labels'
-  | 'price'
+  | 'cents'
   | 'keyFeatures'
   | 'url'
   | 'logo'
@@ -24,7 +24,7 @@ export type StorageProviderWithImage = Pick<
 }
 export type StorageProvider = Pick<
   StorageProviderCardProps,
-  'name' | 'description' | 'labels' | 'price' | 'keyFeatures' | 'url' | 'logo'
+  'name' | 'description' | 'labels' | 'cents' | 'keyFeatures' | 'url' | 'logo'
 > & {
   bestFor: Array<BestForType>
 }
@@ -44,7 +44,7 @@ export const filecoinStorageProviders = [
     name: 'Akave Cloud',
     description: 'Enterprise-grade hot storage for AI & data lakes.',
     labels: ['Drag and drop', 'S3-compatible'],
-    price: 100,
+    cents: 10_000,
     bestFor: ['Enterprises', 'AI/ML developers'],
     keyFeatures: [
       'S3-compatible API',
@@ -58,7 +58,7 @@ export const filecoinStorageProviders = [
     name: 'CIDgravity',
     description: 'Simple decentralized storage backend for Nextcloud.',
     labels: ['Drag and drop'],
-    price: 100,
+    cents: 10_000,
     bestFor: ['Developers'],
     keyFeatures: [
       'Nextcloud integration',
@@ -72,7 +72,7 @@ export const filecoinStorageProviders = [
     name: 'Lighthouse',
     description: 'Perpetual, long-term data storage.',
     labels: ['Archival', 'Drag and drop'],
-    price: 100,
+    cents: 10_000,
     bestFor: ['Developers', 'NFT projects', 'Creators'],
     keyFeatures: [
       '"Pay once, store forever" pricing mode',
@@ -86,7 +86,7 @@ export const filecoinStorageProviders = [
     name: 'Ramo',
     description: 'An open-access decentralized cloud network.',
     labels: ['S3-compatible'],
-    price: 100,
+    cents: 10_000,
     bestFor: ['Developers'],
     keyFeatures: ['S3-compatible API', 'Developer SDK/CLI'],
     url: 'https://use.ramo.computer/',
@@ -96,7 +96,7 @@ export const filecoinStorageProviders = [
     name: 'Singularity CLI',
     description: 'Directly manage the full deal-making lifecycle on Filecoin.',
     labels: ['Archival'],
-    price: 100,
+    cents: 10_000,
     bestFor: ['Advanced technical users'],
     keyFeatures: [
       'Prepare and upload files using the CLI',
@@ -116,7 +116,7 @@ export const featuredFilecoinStorageProvider = {
   name: 'Storacha',
   description: 'High-speed hot storage for fast data retrieval.',
   labels: ['Drag and drop'],
-  price: 100,
+  cents: 10_000,
   bestFor: ['Developers'],
   keyFeatures: [
     'Fast access to data',
@@ -127,7 +127,3 @@ export const featuredFilecoinStorageProvider = {
   url: 'https://storacha.network/',
   logo: StorachaMiniatureLogo,
 } as const satisfies StorageProviderWithImage
-
-// export const otherStorageProviders = [
-//   {},
-// ] as const satisfies Array<StorageProvider>

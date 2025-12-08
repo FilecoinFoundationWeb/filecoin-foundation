@@ -3,6 +3,7 @@ import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui-filecoin/Icon'
 
+import { StoragePricePerMonth } from './StoragePricePerMonth'
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'
 import { StorageProviderCardText } from './StorageProviderCardText'
@@ -12,7 +13,7 @@ export type StorageProviderCardProps = {
   name: string
   description: string
   labels: Array<string>
-  price: number
+  cents: number
   bestFor: Array<string>
   keyFeatures: Array<string>
   url: string
@@ -24,7 +25,7 @@ export function StorageProviderCard({
   name,
   description,
   labels,
-  price,
+  cents,
   bestFor,
   keyFeatures,
   url,
@@ -53,9 +54,7 @@ export function StorageProviderCard({
             ))}
           </ul>
           <StorageProviderCardSection title="Price">
-            <StorageProviderCardText>
-              <span className="text-2xl font-medium">{price}$</span> / month
-            </StorageProviderCardText>
+            <StoragePricePerMonth cents={cents} />
           </StorageProviderCardSection>
           <StorageProviderCardSection title="Best For">
             <StorageProviderCardText>
