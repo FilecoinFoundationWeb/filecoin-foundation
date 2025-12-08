@@ -2,17 +2,19 @@ import { CheckIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 
-export type StorageProviderCardKeyFeatureProps = {
-  feature: string
+import { StorageProviderCardText } from './StorageProviderCardText'
+
+type StorageProviderCardKeyFeatureProps = {
+  children: string
 }
 
 export function StorageProviderCardKeyFeature({
-  feature,
+  children,
 }: StorageProviderCardKeyFeatureProps) {
   return (
-    <div className="flex items-center gap-2.5">
+    <div className="flex w-full items-center gap-2.5">
       <Icon component={CheckIcon} color="success" size={16} />
-      <span className="text-sm text-zinc-950">{feature}</span>
+      <StorageProviderCardText>{children}</StorageProviderCardText>
     </div>
   )
 }

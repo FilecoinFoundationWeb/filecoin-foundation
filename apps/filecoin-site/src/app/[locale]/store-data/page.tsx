@@ -7,7 +7,6 @@ import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoSe
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
-import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -18,18 +17,15 @@ import { trustedByLogos } from '@/data/trustedByLogos'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
-import { SectionDivider } from '@/components/SectionDivider'
-import { SectionSubContent } from '@/components/SectionSubContent'
 
 import { StorageProviderCard } from './components/StorageProviderCard/StorageProviderCard'
+import { StorageProviderCardWithImage } from './components/StorageProviderCard/StorageProviderCardWithImage'
 import { STORE_DATA_SEO } from './constants/seo'
-import { filecoinStorageProviders } from './data/storageProviders'
-import { generateStructuredData } from './utils/generateStructuredData'
-
-const featuredStorageProvider = findOrThrow(
+import {
   filecoinStorageProviders,
-  (provider) => provider.featured,
-)
+  featuredFilecoinStorageProvider,
+} from './data/storageProviders'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function StoreData() {
   return (
@@ -43,7 +39,7 @@ export default function StoreData() {
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Decentralized, secure storage for data that matters"
-            description="A dynamic and powerful distributed storage network for your data."
+            description="Filecoin is a dynamic, decentralized storage network that keeps your data secure, verifiable, and always under your control — powering solutions from enterprise platforms to simple onramps."
           />
         </PageSection>
 
@@ -67,65 +63,29 @@ export default function StoreData() {
         <SectionContent
           title="Store on Filecoin"
           description="Find the perfect storage solution for your data on Filecoin."
+          cta={
+            <Button
+              href={`${FILECOIN_FOUNDATION_URLS.ecosystemExplorer.href}?category=data-storage-management`}
+              variant="primary"
+            >
+              See Filecoin-powered solutions
+            </Button>
+          }
         >
-          <StorageProviderCard as="div" {...featuredStorageProvider} />
+          <StorageProviderCardWithImage {...featuredFilecoinStorageProvider} />
 
-          <SectionDivider />
-
-          <SectionSubContent
-            headingTag="h3"
-            title="Filecoin-aligned solutions"
-            description="Top storage solutions shaping the growth of the Filecoin network"
-          >
-            <CardGrid as="ul" variant="mdTwoLgThreeWide">
-              {filecoinStorageProviders
-                .slice()
-                .filter((provider) => !provider.featured)
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map(
-                  ({
-                    featured,
-                    name,
-                    description,
-                    bestFor,
-                    keyFeatures,
-                    url,
-                    logo,
-                  }) => (
-                    <StorageProviderCard
-                      key={name}
-                      as="li"
-                      {...{
-                        featured,
-                        name,
-                        description,
-                        bestFor,
-                        keyFeatures,
-                        url,
-                        logo,
-                      }}
-                    />
-                  ),
-                )}
-            </CardGrid>
-          </SectionSubContent>
-
-          <SectionDivider />
-
-          <SectionSubContent
-            centerCTA
-            headingTag="h3"
-            title="Other Filecoin-powered storage solutions"
-            description="Additional services offering diverse ways to store with Filecoin"
-            cta={
-              <Button
-                href={`${FILECOIN_FOUNDATION_URLS.ecosystemExplorer.href}?category=data-storage-management`}
-                variant="primary"
-              >
-                Explore other filecoin-powered storage solutions
-              </Button>
-            }
-          />
+          <CardGrid as="ul" variant="mdTwoLgThreeWide">
+            {filecoinStorageProviders
+              .slice()
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((provider) => (
+                <StorageProviderCard
+                  key={provider.name}
+                  as="li"
+                  {...provider}
+                />
+              ))}
+          </CardGrid>
         </SectionContent>
       </PageSection>
 
