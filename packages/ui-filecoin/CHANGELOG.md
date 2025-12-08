@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.5.6
+
+### Patch Changes
+
+- 6871d92: Misc fixes in `TanstackTable` and `listbox-button` class
+
 ## 0.5.5
 
 ### Patch Changes
