@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import type { ReactElement } from 'react'
 
 import { clsx } from 'clsx'
 
@@ -7,7 +7,7 @@ import { Heading, type HeadingProps } from './Heading'
 
 type PageHeaderProps = {
   title: HeadingProps['children']
-  description?: ReactNode
+  description?: string | ReactElement
   centered?: boolean
   cta?: ButtonRowProps['buttons']
 }
@@ -30,11 +30,7 @@ export function PageHeader({
           {title}
         </Heading>
 
-        {description && (
-          <p className="text-pretty text-(--color-paragraph-text) md:text-xl/7">
-            {description}
-          </p>
-        )}
+        {renderDescription(description)}
       </div>
 
       {cta && (
@@ -44,4 +40,18 @@ export function PageHeader({
       )}
     </header>
   )
+}
+
+function renderDescription(description: PageHeaderProps['description']) {
+  if (!description) return null
+
+  if (typeof description === 'string') {
+    return (
+      <p className="text-pretty text-(--color-paragraph-text) md:text-xl/7">
+        {description}
+      </p>
+    )
+  }
+
+  return description
 }

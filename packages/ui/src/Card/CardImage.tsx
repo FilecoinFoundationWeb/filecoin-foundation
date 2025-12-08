@@ -7,15 +7,15 @@ import type {
   StaticImageProps,
 } from '@filecoin-foundation/utils/types/imageType'
 
-export type CardImageProps = (StaticImageProps | ImageProps) & {
-  objectFit?: ImageObjectFit
-  padding?: boolean
-  priority?: boolean
-  sizes?: string
-  aspectRatio?: 'square' | 'video'
-}
+export type CardImageProps = (StaticImageProps | ImageProps) &
+  ImageObjectFit & {
+    padding?: boolean
+    priority?: boolean
+    sizes?: string
+    aspectRatio?: 'square' | 'video'
+  }
 
-type ImageComponentProps = {
+export type ImageComponentProps = {
   image: CardImageProps
 }
 

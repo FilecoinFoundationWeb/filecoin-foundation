@@ -5,7 +5,11 @@ import {
   CaretCircleUpIcon,
   CaretCircleDownIcon,
 } from '@phosphor-icons/react'
-import { flexRender, type Table as TableType } from '@tanstack/react-table'
+import {
+  flexRender,
+  type SortDirection,
+  type Table as TableType,
+} from '@tanstack/react-table'
 import { clsx } from 'clsx'
 
 import { Icon } from '../Icon'
@@ -25,6 +29,7 @@ export function TanstackTable<TData>({ table }: TanstackTableProps<TData>) {
             {headerGroup.headers.map((header) => {
               const canSort = header.column.getCanSort()
               const sortState = header.column.getIsSorted()
+              const columnName = header.column.columnDef.header
 
               return (
                 <Table.Head
@@ -34,29 +39,26 @@ export function TanstackTable<TData>({ table }: TanstackTableProps<TData>) {
                   {canSort ? (
                     <button
                       onClick={header.column.getToggleSortingHandler()}
-                      className="focus:brand-outline flex h-12 w-full cursor-pointer items-center gap-2 hover:underline"
-                      aria-label={`Sort by ${header.column.columnDef.header}`}
+                      className={clsx(
+                        'flex cursor-pointer items-center gap-2 rounded-sm py-1.5 pr-1.5 pl-2.5 font-semibold',
+                        'focus:brand-outline hover:bg-(--color-head-button-background) focus:bg-(--color-head-button-background)',
+                        'aria-[sort=ascending]:bg-(--color-head-button-background) aria-[sort=descending]:bg-(--color-head-button-background)',
+                      )}
+                      aria-label={`Sort by ${columnName}`}
+                      aria-sort={getAriaSort(sortState)}
                     >
-                      <span>
-                        {flexRender(
-                          header.column.columnDef.header,
-                          header.getContext(),
-                        )}
-                      </span>
+                      <span>{flexRender(columnName, header.getContext())}</span>
                       <span
                         className={clsx(
                           'shrink-0',
-                          sortState && 'text-brand-700',
+                          sortState ? 'text-brand-700' : 'text-zinc-500/90',
                         )}
                       >
                         <Icon component={getSortIcon(sortState)} size={20} />
                       </span>
                     </button>
                   ) : (
-                    flexRender(
-                      header.column.columnDef.header,
-                      header.getContext(),
-                    )
+                    flexRender(columnName, header.getContext())
                   )}
                 </Table.Head>
               )
@@ -82,8 +84,14 @@ export function TanstackTable<TData>({ table }: TanstackTableProps<TData>) {
   )
 }
 
-function getSortIcon(sortState: false | 'asc' | 'desc') {
+function getSortIcon(sortState: SortDirection | false) {
   if (sortState === 'asc') return CaretCircleUpIcon
   if (sortState === 'desc') return CaretCircleDownIcon
   return CaretCircleUpDownIcon
+}
+
+function getAriaSort(sortState: SortDirection | false) {
+  if (sortState === 'asc') return 'ascending'
+  if (sortState === 'desc') return 'descending'
+  return 'none'
 }
