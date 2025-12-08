@@ -62,7 +62,7 @@ export default async function CommunityHub({ params }: BlogProps) {
           priority
           src={graphicsData.astronautHelmet.data}
           alt={graphicsData.astronautHelmet.alt}
-          className="absolute right-0 bottom-0 -z-10 h-full object-cover object-bottom-right"
+          className="absolute right-0 bottom-0 -z-10 h-full object-cover"
         />
 
         <PageSection backgroundVariant="transparentDark">
