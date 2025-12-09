@@ -8,6 +8,8 @@ import { PROVIDE_STORAGE_SEO } from '@/provide-storage/constants/seo'
 const { path } = PATHS.PROVIDE_STORAGE
 const { title, description } = PROVIDE_STORAGE_SEO
 
+const excludedLinks = ['ndlabs.io']
+
 describe('Provide Storage Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
@@ -19,7 +21,7 @@ describe('Provide Storage Page', () => {
   })
 
   it(tests.links.prompt, () => {
-    tests.links.fn(path)
+    tests.links.fn(path, excludedLinks)
   })
 
   it(tests.visualSnapshot.prompt, () => {

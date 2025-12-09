@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.5.7
+
+### Patch Changes
+
+- 1bb531f: Refactors PageHeader component to apply consistent strong text styling to descriptions
+
 ## 0.5.6
 
 ### Patch Changes
