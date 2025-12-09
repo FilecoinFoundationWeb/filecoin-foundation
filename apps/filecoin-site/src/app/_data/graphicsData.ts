@@ -12,9 +12,9 @@ import earthBlueEdge from '@/assets/graphics/earth-blue-edge.webp'
 import filecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import filecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import filecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
-import homepageGradient from '@/assets/graphics/homepage-gradient.svg'
 import imageFallback from '@/assets/graphics/image-fallback.webp'
 import IPFSIllustration from '@/assets/graphics/IPFS-illustration.webp'
+import nasaHubbleSpaceTelescope from '@/assets/graphics/nasa-hubble-space-telescope.webp'
 import planetsShadow from '@/assets/graphics/planets-shadow.svg'
 import rocketLaunch from '@/assets/graphics/rocket-launch.webp'
 import serverBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
@@ -75,13 +75,13 @@ export const graphicsData = {
     data: filecoinStorageDevice,
     alt: 'Black storage device with Filecoin logo and glowing green indicator lights.',
   },
-  homepageGradient: {
-    data: homepageGradient,
-    alt: '',
-  },
   IPFSIllustration: {
     data: IPFSIllustration,
     alt: 'Illustration showing the IPFS cube logo in the center with Filecoin logos surrounding it.',
+  },
+  nasaHubbleSpaceTelescope: {
+    data: nasaHubbleSpaceTelescope,
+    alt: 'Image of the NASA Hubble Space Telescope in space, showing the telescope and the stars.',
   },
   planetsShadow: {
     data: planetsShadow,

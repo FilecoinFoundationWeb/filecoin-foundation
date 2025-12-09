@@ -13,9 +13,9 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
+import { PageHeader } from '../components/PageHeader'
 import { getCaseStudyData, getCaseStudiesData } from '../utils/getCaseStudyData'
 
-import { PageHeader } from './components/PageHeader'
 import { TextCard } from './components/TextCard'
 
 type CaseStudyArticleProps = {
@@ -44,6 +44,7 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
         <PageHeader
           title={title}
           description={pageDescription}
+          label="Case Study"
           image={{
             src: image?.src || '',
             alt: image?.alt || '',
