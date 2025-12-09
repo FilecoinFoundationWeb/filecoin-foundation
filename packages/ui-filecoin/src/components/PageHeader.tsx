@@ -45,13 +45,11 @@ export function PageHeader({
 function renderDescription(description: PageHeaderProps['description']) {
   if (!description) return null
 
+  const style = 'text-balance text-(--color-paragraph-text-strong) md:text-xl/7'
+
   if (typeof description === 'string') {
-    return (
-      <p className="text-pretty text-(--color-paragraph-text) md:text-xl/7">
-        {description}
-      </p>
-    )
+    return <p className={style}>{description}</p>
   }
 
-  return description
+  return <span className={style}>{description}</span>
 }
