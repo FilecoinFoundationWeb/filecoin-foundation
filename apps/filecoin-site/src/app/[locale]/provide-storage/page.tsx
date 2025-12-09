@@ -31,8 +31,8 @@ export default function ProvideStorage() {
         structuredData={generateStructuredData(PROVIDE_STORAGE_SEO)}
       />
 
-      <Navigation backgroundVariant="dark" />
       <div className="relative isolate">
+        <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Power the world's largest decentralized storage network"
@@ -50,13 +50,13 @@ export default function ProvideStorage() {
             ]}
           />
         </PageSection>
-
         <Image
           priority
           src={graphicsData.colorfulNebula.data}
           alt={graphicsData.colorfulNebula.alt}
-          className="absolute right-0 bottom-0 -z-10 h-full object-cover"
+          className="absolute right-0 bottom-0 -z-20 h-full object-cover"
         />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-64 bg-linear-to-b from-transparent via-transparent via-50% to-zinc-950/80" />
 
         <PageSection paddingVariant="none" backgroundVariant="transparentDark">
           <div className="py-24" />
