@@ -11,6 +11,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { Navigation } from '@/components/Navigation/Navigation'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { PageHeader } from './components/PageHeader'
@@ -28,13 +29,13 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
 
   return (
     <>
+      <Navigation backgroundVariant="dark" />
       <PageSection backgroundVariant="dark">
         <PageHeader
           title="Powering the preservation of critical datasets"
           description="From AI datasets to government archives, leading institutions trust Filecoin to securely and resiliently store their most valuable datasets."
           image={{
             src: graphicsData.nasaHubbleSpaceTelescope.data.src,
-
             alt: graphicsData.nasaHubbleSpaceTelescope.alt,
           }}
         />

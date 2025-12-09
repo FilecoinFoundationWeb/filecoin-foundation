@@ -2,13 +2,13 @@ import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageTyp
 
 import astronautHelmet from '@/assets/graphics/astronaut-helmet.webp'
 import buildOnFilecoinGradient from '@/assets/graphics/build-gradient.svg'
-import caseStudiesGradient from '@/assets/graphics/case-studies-gradient.svg'
 import classicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
 import colorfulNebula from '@/assets/graphics/colorful-nebula.webp'
 import dataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import digitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
 import earthAtNight from '@/assets/graphics/earth-at-night.webp'
 import earthBlueEdge from '@/assets/graphics/earth-blue-edge.webp'
+import earthFromDeepSpace from '@/assets/graphics/earth-from-deep-space.webp'
 import filecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import filecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import filecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
@@ -31,10 +31,7 @@ export const graphicsData = {
     data: buildOnFilecoinGradient,
     alt: '',
   },
-  caseStudiesGradient: {
-    data: caseStudiesGradient,
-    alt: '',
-  },
+
   classicLibraryInterior: {
     data: classicLibraryInterior,
     alt: 'Interior of a grand historic library with high vaulted wooden ceiling, rows of tall bookshelves, and marble busts lining the hall.',
@@ -58,6 +55,10 @@ export const graphicsData = {
   earthBlueEdge: {
     data: earthBlueEdge,
     alt: 'Earth’s thin blue atmosphere viewed from space against the blackness of space.',
+  },
+  earthFromDeepSpace: {
+    data: earthFromDeepSpace,
+    alt: 'Earth from deep space, showing the planet and the stars.',
   },
   fallback: {
     data: imageFallback,

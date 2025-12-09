@@ -7,12 +7,11 @@ import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
 import { PATHS } from '@/constants/paths'
 
-
 export function HeroSection() {
   const t = useTranslations('home.hero')
 
   return (
-    <PageSection backgroundVariant="dark" paddingVariant="none">
+    <PageSection backgroundVariant="transparentDark" paddingVariant="none">
       <div className="space-y-15 pt-24 pb-24 md:pt-32">
         {/* todo look into when we need space-y-15 */}
         <Announcement centered href={PATHS.BLOG.path}>
