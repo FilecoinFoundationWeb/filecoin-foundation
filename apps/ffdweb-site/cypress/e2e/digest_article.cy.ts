@@ -8,25 +8,20 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
-const CONTENT_FOLDER = PATHS.DIGEST
+const CONTENT_FOLDER = PATHS.DIGEST.articlesPath
 
-describe('Digest Article Page', () => {
+describe('Random Digest Article', () => {
   it(tests.metadata.prompt, () => {
-    cy.task<{ issueNumber: string; articleSlug: string }>(
-      'getRandomDigestArticleSlug',
-      CONTENT_FOLDER.issuePath,
-    ).then(({ issueNumber, articleSlug }) => {
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
       cy.task<GenericEntryFrontmatter>(
         'getEntryFrontmatter',
-        path.join(CONTENT_FOLDER.articlesPath, articleSlug),
+        path.join(CONTENT_FOLDER, slug),
       ).then(({ title, seo }) => {
         const seoTitle = seo.title || title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
-        const articlePath = `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}`
-
         tests.metadata.fn({
-          path: articlePath,
+          path: path.join(PATHS.DIGEST.path, slug),
           title: metaTitleWithSuffix,
           description: seo.description,
           baseUrl: BASE_URL,
@@ -36,22 +31,14 @@ describe('Digest Article Page', () => {
   })
 
   it(tests.links.prompt, () => {
-    cy.task<{ issueNumber: string; articleSlug: string }>(
-      'getRandomDigestArticleSlug',
-      CONTENT_FOLDER.issuePath,
-    ).then(({ issueNumber, articleSlug }) => {
-      tests.links.fn(`${PATHS.DIGEST.issueUrl({ issueNumber })}/${articleSlug}`)
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      tests.links.fn(path.join(PATHS.DIGEST.path, slug))
     })
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<{ issueNumber: string; articleSlug: string }>(
-      'getRandomDigestArticleSlug',
-      CONTENT_FOLDER.issuePath,
-    ).then(({ issueNumber, articleSlug }) => {
-      tests.visualSnapshot.fn(
-        `${PATHS.DIGEST.issueUrl({ issueNumber })}/${articleSlug}`,
-      )
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      tests.visualSnapshot.fn(path.join(PATHS.DIGEST.path, slug))
     })
   })
 })
