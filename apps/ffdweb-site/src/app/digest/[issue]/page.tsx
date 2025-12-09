@@ -19,10 +19,10 @@ import { PageSection } from '@/components/PageSection'
 
 import { DIGEST_SEO } from '../constants/seo'
 import { generateStructuredData } from '../utils/generateStructuredData'
-import { getAllDigestArticlesWithIssueContext } from '../utils/getDigestArticlesWithIssueContext'
+import { getDigestArticlesWithIssueContext } from '../utils/getDigestArticlesWithIssueContext'
 import {
-  getAllDigestIssuesData,
   getDigestIssueData,
+  getAllDigestIssuesData,
 } from '../utils/getDigestIssueData'
 import { parseDigestIssueParams } from '../utils/parseDigestParams'
 
@@ -39,7 +39,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
     notFound()
   }
 
-  const articles = await getAllDigestArticlesWithIssueContext({ issueNumber })
+  const articles = await getDigestArticlesWithIssueContext(issueNumber)
 
   const { kicker, title } = digestIssue
 

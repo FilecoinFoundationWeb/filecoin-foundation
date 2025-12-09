@@ -3,6 +3,8 @@ title: Creating Human Records that Stand the Test of Time
 created-on: 2023-10-16T17:14:41.944Z
 updated-on: 2023-10-16T17:14:41.951Z
 published-on: 2023-10-16T17:14:41.958Z
+issue-number: 1
+article-number: 3
 image:
   src: /assets/images/DWD-Illustration-03.png
 authors:

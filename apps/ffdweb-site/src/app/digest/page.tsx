@@ -15,9 +15,19 @@ import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
 import { DIGEST_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getDigestArticlesData } from './utils/getDigestArticleData'
 import { getAllDigestIssuesData } from './utils/getDigestIssueData'
+
 export default async function Digest() {
-  const digestIssues = await getAllDigestIssuesData()
+  const allIssues = await getAllDigestIssuesData()
+  const allArticles = await getDigestArticlesData()
+
+  const issueNumbersThatHaveArticles = new Set(
+    allArticles.map((article) => article.issueNumber),
+  )
+  const digestIssues = allIssues.filter((issue) =>
+    issueNumbersThatHaveArticles.has(issue.issueNumber),
+  )
 
   return (
     <PageLayout gap="large">

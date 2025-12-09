@@ -3,6 +3,8 @@ title: Reviving Internet Decentralization Without Relying on the "B word"!
 created-on: 2023-10-18T18:47:09.114Z
 updated-on: 2023-10-18T18:47:09.121Z
 published-on: 2023-10-18T18:47:09.130Z
+issue-number: 1
+article-number: 9
 image:
   src: /assets/images/DWD-Illustration-09.png
 authors:

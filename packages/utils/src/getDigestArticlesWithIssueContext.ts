@@ -1,0 +1,15 @@
+import { getDigestArticlesData } from './getDigestArticleData'
+
+type getDigestArticlesWithIssueContextProps = {
+  issueNumber: string
+  directoryPath: string
+}
+
+export async function getDigestArticlesWithIssueContext({
+  issueNumber,
+  directoryPath,
+}: getDigestArticlesWithIssueContextProps) {
+  const allArticles = await getDigestArticlesData(directoryPath)
+
+  return allArticles.filter((article) => article.issueNumber === issueNumber)
+}

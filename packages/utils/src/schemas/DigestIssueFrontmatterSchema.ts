@@ -17,7 +17,6 @@ const DigestIssueFields = {
   title: z.string(),
   description: z.string(),
   'guest-editor': GuestEditorSchema.optional(),
-  articles: z.array(z.string()),
   image: ImagePropsSchema.optional(),
 }
 
