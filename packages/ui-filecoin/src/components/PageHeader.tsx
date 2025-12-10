@@ -5,7 +5,7 @@ import { clsx } from 'clsx'
 import { ButtonRow, type ButtonRowProps } from './ButtonRow'
 import { Heading, type HeadingProps } from './Heading'
 
-type PageHeaderProps = {
+export type PageHeaderProps = {
   title: HeadingProps['children']
   description?: string | ReactElement
   centered?: boolean

@@ -1,7 +1,6 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import astronautHelmet from '@/assets/graphics/astronaut-helmet.webp'
-import caseStudiesGradient from '@/assets/graphics/case-studies-gradient.svg'
 import classicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
 import colorfulNebula from '@/assets/graphics/colorful-nebula.webp'
 import cupolaEarthView from '@/assets/graphics/cupola-earth-view.webp'
@@ -9,12 +8,13 @@ import dataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import digitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
 import earthAtNight from '@/assets/graphics/earth-at-night.webp'
 import earthBlueEdge from '@/assets/graphics/earth-blue-edge.webp'
+import earthFromDeepSpace from '@/assets/graphics/earth-from-deep-space.webp'
 import filecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import filecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import filecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
-import homepageGradient from '@/assets/graphics/homepage-gradient.svg'
 import imageFallback from '@/assets/graphics/image-fallback.webp'
 import IPFSIllustration from '@/assets/graphics/IPFS-illustration.webp'
+import nasaHubbleSpaceTelescope from '@/assets/graphics/nasa-hubble-space-telescope.webp'
 import planetsShadow from '@/assets/graphics/planets-shadow.svg'
 import rocketLaunch from '@/assets/graphics/rocket-launch.webp'
 import serverBladeChassis from '@/assets/graphics/server-blade-chassis.webp'
@@ -26,10 +26,6 @@ export const graphicsData = {
   astronautHelmet: {
     data: astronautHelmet,
     alt: 'Close-up of an astronaut’s helmet during a spacewalk, with the reflection showing Earth and parts of the spacecraft.',
-  },
-  caseStudiesGradient: {
-    data: caseStudiesGradient,
-    alt: '',
   },
   classicLibraryInterior: {
     data: classicLibraryInterior,
@@ -59,6 +55,10 @@ export const graphicsData = {
     data: earthBlueEdge,
     alt: 'Earth’s thin blue atmosphere viewed from space against the blackness of space.',
   },
+  earthFromDeepSpace: {
+    data: earthFromDeepSpace,
+    alt: 'Earth from deep space, showing the planet and the stars.',
+  },
   fallback: {
     data: imageFallback,
     alt: 'Image coming soon',
@@ -75,13 +75,13 @@ export const graphicsData = {
     data: filecoinStorageDevice,
     alt: 'Black storage device with Filecoin logo and glowing green indicator lights.',
   },
-  homepageGradient: {
-    data: homepageGradient,
-    alt: '',
-  },
   IPFSIllustration: {
     data: IPFSIllustration,
     alt: 'Illustration showing the IPFS cube logo in the center with Filecoin logos surrounding it.',
+  },
+  nasaHubbleSpaceTelescope: {
+    data: nasaHubbleSpaceTelescope,
+    alt: 'Image of the NASA Hubble Space Telescope in space, showing the telescope and the stars.',
   },
   planetsShadow: {
     data: planetsShadow,

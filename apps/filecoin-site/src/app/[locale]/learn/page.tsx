@@ -19,6 +19,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { GradientOverlay } from '@/components/GradientOverlay'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbed'
@@ -55,6 +56,7 @@ export default function Learn() {
             className="object-cover"
           />
         </div>
+        <GradientOverlay />
       </div>
 
       <PageSection backgroundVariant="dark">
