@@ -95,11 +95,11 @@ export default async function Home({ params }: BlogProps) {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        <SectionContent title="A decentralized, efficient, and robust foundation for humanity's most important information">
+        <SectionContent title="Filecoin is reshaping how the world stores data">
           <SplitSectionContent
             title="A better foundation for the next generation of the web."
             description={[
-              "Filecoin is reshaping how the world stores data. Today, a small handful of corporations control most of the world's data, creating centralized gatekeepers that introduce single points of failure and limit transparency.",
+              "Today, a small handful of corporations control most of the world's data, creating centralized gatekeepers that introduce single points of failure and limit transparency.",
               'Filecoin offers a fundamentally different approach to data storage: distributing data across a decentralized, global network protected by cryptographic proofs, ensuring greater security and resilience.',
               'From cultural archives to scientific research, petabytes of data are already stored on Filecoin. The decentralized model empowers users with true autonomy over their information, building a foundation for a more open, resilient, and user-controlled web.',
             ]}
