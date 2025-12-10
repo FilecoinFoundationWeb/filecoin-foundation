@@ -2,7 +2,6 @@ import type { LocaleParams } from '@/i18n/types'
 
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
-import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
@@ -12,10 +11,10 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { GradientContainer } from '@/components/GradientContainer'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
+import { PageHeader } from './components/PageHeader'
 import { CASE_STUDIES_SEO } from './constants/seo'
 import { getCaseStudiesData } from './utils/getCaseStudyData'
 
@@ -30,16 +29,17 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
 
   return (
     <>
-      <GradientContainer>
-        <graphicsData.caseStudiesGradient.data className="absolute -top-[40vw] -right-[25vw] -z-10 hidden overflow-visible md:-top-[45vw] md:right-0 md:block md:w-[50vw] lg:-top-[50vw] lg:w-[45vw] xl:w-[40vw] 2xl:w-[33vw]" />
-        <Navigation backgroundVariant="transparentDark" />
-        <PageSection backgroundVariant="transparentDark">
-          <PageHeader
-            title="Powering the preservation of critical datasets"
-            description="From AI datasets to government archives, leading institutions trust Filecoin to securely and resiliently store their most valuable datasets."
-          />
-        </PageSection>
-      </GradientContainer>
+      <Navigation backgroundVariant="dark" />
+      <PageSection backgroundVariant="dark">
+        <PageHeader
+          title="Powering the preservation of critical datasets"
+          description="From AI datasets to government archives, leading institutions trust Filecoin to securely and resiliently store their most valuable datasets."
+          image={{
+            src: graphicsData.nasaHubbleSpaceTelescope.data.src,
+            alt: graphicsData.nasaHubbleSpaceTelescope.alt,
+          }}
+        />
+      </PageSection>
 
       <PageSection paddingVariant="topOnly" backgroundVariant="dark">
         <SectionContent

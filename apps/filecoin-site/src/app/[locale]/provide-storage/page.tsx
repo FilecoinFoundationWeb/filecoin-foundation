@@ -16,6 +16,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { GradientOverlay } from '@/components/GradientOverlay'
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import { PROVIDE_STORAGE_SEO } from './constants/seo'
@@ -56,7 +57,7 @@ export default function ProvideStorage() {
           alt={graphicsData.colorfulNebula.alt}
           className="absolute right-0 bottom-0 -z-20 h-full object-cover"
         />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-64 bg-linear-to-b from-transparent via-transparent via-50% to-zinc-950/80" />
+        <GradientOverlay />
 
         <PageSection paddingVariant="none" backgroundVariant="transparentDark">
           <div className="py-24" />
