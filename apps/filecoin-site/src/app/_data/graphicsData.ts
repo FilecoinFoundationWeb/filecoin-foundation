@@ -1,10 +1,10 @@
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import astronautHelmet from '@/assets/graphics/astronaut-helmet.webp'
-import buildOnFilecoinGradient from '@/assets/graphics/build-gradient.svg'
 import caseStudiesGradient from '@/assets/graphics/case-studies-gradient.svg'
 import classicLibraryInterior from '@/assets/graphics/classic-library-interior.webp'
 import colorfulNebula from '@/assets/graphics/colorful-nebula.webp'
+import cupolaEarthView from '@/assets/graphics/cupola-earth-view.webp'
 import dataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import digitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
 import earthAtNight from '@/assets/graphics/earth-at-night.webp'
@@ -27,10 +27,6 @@ export const graphicsData = {
     data: astronautHelmet,
     alt: 'Close-up of an astronaut’s helmet during a spacewalk, with the reflection showing Earth and parts of the spacecraft.',
   },
-  buildOnFilecoinGradient: {
-    data: buildOnFilecoinGradient,
-    alt: '',
-  },
   caseStudiesGradient: {
     data: caseStudiesGradient,
     alt: '',
@@ -42,6 +38,10 @@ export const graphicsData = {
   colorfulNebula: {
     data: colorfulNebula,
     alt: 'A vibrant, colorful nebula in deep space, glowing with shades of purple, pink, green, and gold against a dark star-filled background.',
+  },
+  cupolaEarthView: {
+    data: cupolaEarthView,
+    alt: 'View of the Earth from the cupola of the International Space Station, showing the planet and the stars.',
   },
   dataCenterServerRow: {
     data: dataCenterServerRow,

@@ -1,12 +1,14 @@
 import Image from 'next/image'
 
+import { clsx } from 'clsx'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
-import { Card } from '@filecoin-foundation/ui-filecoin/Card'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { LinkCard } from '@filecoin-foundation/ui-filecoin/LinkCard'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
+import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/Section'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { SimpleCard } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
@@ -20,12 +22,9 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-
 import { CardGridContainer } from '@/components/CardGridContainer'
-import { GradientContainer } from '@/components/GradientContainer'
 import { ImageGrid } from '@/components/ImageGrid'
 import { Navigation } from '@/components/Navigation/Navigation'
-import { SectionImage } from '@/components/SectionImage'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
@@ -34,7 +33,6 @@ import { getInvolvedOptions } from '../community-hub/data/getInvolvedOptions'
 import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
 import { builtOnFilecoin } from './data/builtOnFilecoin'
 import { developerResources } from './data/developerResources'
-import { filecoinFeatures } from './data/filecoinFeatures'
 import { getInvolvedImages } from './data/getInvolvedImages'
 import { tutorialsAndGuides } from './data/tutorialsAndGuides'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -47,11 +45,9 @@ export default function BuildOnFilecoin() {
         structuredData={generateStructuredData(BUILD_ON_FILECOIN_SEO)}
       />
 
-      <Navigation backgroundVariant="dark" />
-      <GradientContainer className="pb-40 sm:pb-80">
-        <graphicsData.buildOnFilecoinGradient.data className="absolute bottom-10 left-1/2 w-[150vw] -translate-x-1/2 transform overflow-visible 2xl:w-[2400px]" />
-
-        <PageSection backgroundVariant="dark">
+      <div className={clsx('relative isolate', backgroundVariants.dark)}>
+        <Navigation backgroundVariant="transparentDark" />
+        <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Build on Filecoin: open, scalable, verifiable storage"
             description="Filecoin is a programmable, permissionless network from the ground up with cryptographic verification and global redundancy. Integrate decentralized storage that scales with your needs and safeguards data integrity at every layer."
@@ -62,47 +58,51 @@ export default function BuildOnFilecoin() {
             }
           />
         </PageSection>
-      </GradientContainer>
 
-      <PageSection backgroundVariant="dark" paddingVariant="topOnly">
-        <SectionContent title="Announcing Filecoin Onchain Cloud">
-          <SplitSectionContent
-            title="Verifiable onchain services with transparent storage, retrieval, and payments"
-            description={[
-              'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pining, retrieval, and payments are transparent, programmable, and interoperable by default.',
-              'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
-            ]}
-            cta={[
-              <Button href="#todo" variant="primary">
-                Get started with Filecoin Onchain Cloud
-              </Button>,
-            ]}
+        <div className="absolute top-50 right-0 -z-10 h-[50vh] w-[50vw]">
+          <Image
+            fill
+            priority
+            src={graphicsData.cupolaEarthView.data}
+            alt={graphicsData.cupolaEarthView.alt}
+            className="object-contain"
           />
-        </SectionContent>
-
-        <div className="mt-15 md:mt-20">
-          <SectionImage {...graphicsData.spiralGalaxyStarsSpace} />
         </div>
-      </PageSection>
+        {/* <Image
+          priority
+          src={graphicsData.cupolaEarthView.data}
+          alt={graphicsData.cupolaEarthView.alt}
+          width={1000}
+          height={1000}
+          className="absolute top-30 right-0 -z-10 object-cover"
+        /> */}
+        {/* <div className="absolute top-60 right-0 hidden h-[60vh] w-[50vw] lg:block">
+          <Image
+            fill
+            priority
+            src={graphicsData.cupolaEarthView.data}
+            alt={graphicsData.cupolaEarthView.alt}
+            className="-z-10 h-full w-full object-contain"
+          />
+        </div> */}
 
-      <PageSection backgroundVariant="dark">
-        <SectionContent
-          title="A foundation for next-gen applications"
-          description="From powering AI workflows to enabling cross-chain data bridges, Filecoin provides programmable, permissionless storage infrastructure."
-        >
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
-            {filecoinFeatures.map(({ title, description, icon }) => (
-              <Card
-                key={title}
-                as="li"
-                title={title}
-                description={description}
-                icon={icon}
-              />
-            ))}
-          </CardGrid>
-        </SectionContent>
-      </PageSection>
+        <PageSection backgroundVariant="transparentDark">
+          <SectionContent title="Announcing Filecoin Onchain Cloud">
+            <SplitSectionContent
+              title="Verifiable onchain services with transparent storage, retrieval, and payments"
+              description={[
+                'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pining, retrieval, and payments are transparent, programmable, and interoperable by default.',
+                'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
+              ]}
+              cta={[
+                <Button href="#todo" variant="primary">
+                  Get started with Filecoin Onchain Cloud
+                </Button>,
+              ]}
+            />
+          </SectionContent>
+        </PageSection>
+      </div>
 
       <PageSection paddingVariant="topOnly" backgroundVariant="light">
         <SectionContent
