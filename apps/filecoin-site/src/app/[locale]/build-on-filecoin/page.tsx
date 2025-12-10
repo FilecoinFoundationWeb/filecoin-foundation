@@ -59,7 +59,7 @@ export default function BuildOnFilecoin() {
           />
         </PageSection>
 
-        <div className="absolute top-30 right-0 hidden h-[60vh] w-[50vw] lg:block">
+        <div className="absolute top-70 right-0 hidden h-[60vh] w-[50vw] lg:block">
           <Image
             fill
             priority
