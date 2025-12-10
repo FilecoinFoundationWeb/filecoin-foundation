@@ -57,8 +57,6 @@
   --color-border-muted: theme('colors.zinc.950 / 10%');
 
   /* Component specific colors */
-  --color-heading-text: theme('colors.zinc.600');
-
   --color-subheading-text: theme('colors.zinc.600');
   --color-subheading-text-muted: theme('colors.zinc.600');
 
@@ -77,8 +75,6 @@
   --color-border-muted: theme('colors.zinc.50 / 10%');
 
   /* Component specific colors */
-  --color-heading-text: theme('colors.zinc.100');
-
   --color-subheading-text: theme('colors.zinc.50');
   --color-subheading-text-muted: theme('colors.zinc.200');
 
