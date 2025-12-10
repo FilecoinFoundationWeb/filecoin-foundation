@@ -59,32 +59,15 @@ export default function BuildOnFilecoin() {
           />
         </PageSection>
 
-        <div className="absolute top-50 right-0 -z-10 h-[50vh] w-[50vw]">
+        <div className="absolute top-30 right-0 hidden h-[60vh] w-[50vw] lg:block">
           <Image
             fill
             priority
             src={graphicsData.cupolaEarthView.data}
             alt={graphicsData.cupolaEarthView.alt}
-            className="object-contain"
+            className="-z-10 object-contain"
           />
         </div>
-        {/* <Image
-          priority
-          src={graphicsData.cupolaEarthView.data}
-          alt={graphicsData.cupolaEarthView.alt}
-          width={1000}
-          height={1000}
-          className="absolute top-30 right-0 -z-10 object-cover"
-        /> */}
-        {/* <div className="absolute top-60 right-0 hidden h-[60vh] w-[50vw] lg:block">
-          <Image
-            fill
-            priority
-            src={graphicsData.cupolaEarthView.data}
-            alt={graphicsData.cupolaEarthView.alt}
-            className="-z-10 h-full w-full object-contain"
-          />
-        </div> */}
 
         <PageSection backgroundVariant="transparentDark">
           <SectionContent title="Announcing Filecoin Onchain Cloud">
