@@ -2,7 +2,6 @@ import type { SimpleCardData } from '@filecoin-foundation/ui-filecoin/SimpleCard
 
 import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
-
 export type TutorialsAndGuides = SimpleCardData & {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
 }
