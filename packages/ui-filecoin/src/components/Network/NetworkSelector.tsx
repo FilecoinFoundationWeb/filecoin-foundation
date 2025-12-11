@@ -5,8 +5,8 @@ import { GlobeIcon } from '@phosphor-icons/react/dist/ssr'
 import { Listbox, type Option } from '../Listbox'
 
 import { supportedChains } from './config'
-import { useNetwork } from './NetworkProvider'
 import type { ChainId } from './types'
+import { useNetwork } from './useNetwork'
 
 const networkOptions = supportedChains.map((chain) => ({
   id: chain.id,
@@ -22,7 +22,7 @@ export type NetworkSelectorProps = {
 export function NetworkSelector({
   options = networkOptions,
 }: NetworkSelectorProps) {
-  const { network, setNetwork } = useNetwork()
+  const [network, setNetwork] = useNetwork()
 
   const selectedOption =
     options.find((option) => option.id === network) || networkOptions[0]
