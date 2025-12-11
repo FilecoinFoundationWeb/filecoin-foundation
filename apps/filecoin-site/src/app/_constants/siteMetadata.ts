@@ -13,18 +13,15 @@ const SEO = {
 
 const FILECOIN_DOCS_URL = 'https://docs.filecoin.io/'
 const FILECOIN_DOCS_URLS = {
-  basicsBlockhainPoRep: `${FILECOIN_DOCS_URL}basics/the-blockchain/proofs#proof-of-replication-porep`,
-  basicsBlockhainPoSt: `${FILECOIN_DOCS_URL}basics/the-blockchain/proofs#proof-of-spacetime-post`,
-  basicsHowStorageWorks: `${FILECOIN_DOCS_URL}basics/how-storage-works/filecoin-plus`,
   basicsWhatIsFilecoin: `${FILECOIN_DOCS_URL}basics/what-is-filecoin`,
   builderCookbook: `${FILECOIN_DOCS_URL}builder-cookbook/overview`,
+  cryptoEconomics: `${FILECOIN_DOCS_URL}basics/what-is-filecoin/crypto-economics`,
+  filecoinVirtualMachine: `${FILECOIN_DOCS_URL}smart-contracts/fundamentals/the-fvm`,
   networksMainnetRCPs: `${FILECOIN_DOCS_URL}networks/mainnet/rpcs`,
+  proofs: `${FILECOIN_DOCS_URL}basics/the-blockchain/proofs`,
   smartContractDevelopingFilecoinSol: `${FILECOIN_DOCS_URL}smart-contracts/developing-contracts/filecoin.sol`,
   smartContractFundamentalsErc20: `${FILECOIN_DOCS_URL}smart-contracts/fundamentals/erc-20-quickstart`,
-  smartContractFundamentalsFVM: `${FILECOIN_DOCS_URL}smart-contracts/fundamentals/the-fvm`,
-  storageProviderReturnOnInvestment: `${FILECOIN_DOCS_URL}storage-providers/filecoin-deals/return-on-investment`,
-  storageProviderBlockRewards: `${FILECOIN_DOCS_URL}storage-providers/filecoin-economics/block-rewards#block-rewards`,
-  storageProviderBlockRewardsImpact: `${FILECOIN_DOCS_URL}storage-providers/filecoin-economics/block-rewards#impact-of-storage-capacity-on-block-rewards`,
+  storageModel: `${FILECOIN_DOCS_URL}basics/what-is-filecoin/storage-model`,
 } as const
 
 const FILECOIN_FOUNDATION_URL = 'https://fil.org'
