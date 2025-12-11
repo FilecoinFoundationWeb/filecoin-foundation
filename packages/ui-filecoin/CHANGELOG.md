@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.5.8
+
+### Patch Changes
+
+- 6757cb1: Migrate network selection to URL query params
+
 ## 0.5.7
 
 ### Patch Changes
