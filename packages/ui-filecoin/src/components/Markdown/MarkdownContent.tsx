@@ -16,6 +16,14 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
     a: ({ href, ...props }) => (
       <MarkdownLink href={href as string} {...props} />
     ),
+    img: ({ src, alt, ...props }) => (
+      <img
+        src={src as string}
+        alt={alt as string}
+        className="rounded-lg"
+        {...props}
+      />
+    ),
   }
 
   return (

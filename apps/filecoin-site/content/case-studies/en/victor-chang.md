@@ -56,13 +56,13 @@ Filecoin also employs content addressing through unique content identifiers (CID
 
 ### Scalability
 
-Decentralized storage systems like Filecoin are highly scalable, allowing the Institute to easily expand storage capacity as their research data grows. Instead of relying on expensive centralized storage solutions that require substantial upfront investments, decentralized storage can offer a more cost-effective approach. It eliminates the need for maintaining and upgrading expensive storage infrastructure, as the storage resources are distributed across multiple nodes.
-
-Another important aspect of the technology is that it relies on an engaged community of Storage Providers like DSS to ensure VCCRI data is stored redundantly around the globe, eliminating the risk of a single point of failure.
+Decentralized storage systems like Filecoin are highly scalable, allowing the Institute to easily expand storage capacity as their research data grows. Instead of relying on expensive centralized storage solutions that require substantial upfront investments, decentralized storage can offer a more cost-effective approach. It eliminates the need for maintaining and upgrading expensive storage infrastructure, as the storage resources are distributed across multiple nodes Another important aspect of the technology is that it relies on an engaged community of Storage Providers like DSS to ensure VCCRI data is stored redundantly around the globe, eliminating the risk of a single point of failure.
 
 ### Cost-Effectiveness
 
-The costs of storing large data sets for years on end is a major challenge for all companies but especially for a non-for-profit like the VCCRI. The current data the Institutes has on Filecoin would cost approximately $1,500+ per month to store on a public cloud, not including operations and data transfer fees. Thanks to the network incentives on which Filecoin is based, organizations like the Victor Chang Cardiac Research Institute are able to store data at a fraction of the cost of centralized cloud storage services.
+The costs of storing large data sets for years on end is a major challenge for all companies but especially for a non-for-profit like the VCCRI. The current data the Institutes has on Filecoin would cost approximately $1,500+ per month to store on a public cloud, not including operations and data transfer fees. **Thanks to the network incentives on which Filecoin is based, organizations like the Victor Chang Cardiac Research Institute are able to store data at a fraction of the cost of centralized cloud storage services.**
+
+![Researchers working in a modern laboratory; a man in a suit reviews a document with a scientist in a lab coat while other lab technicians work in the background.](/assets/images/lab-team.webp)
 
 > "Filecoin helps us overcome our challenges by providing data storage at a cost effective rate and ensuring data integrity. This will allow data from key research projects to be stored for perpetuity, and to be shared with collaborators from around the world."
 >
@@ -84,7 +84,7 @@ The Victor Chang Cardiac Research Institute is renowned for the quality of its s
 
 The team at the Institute is working urgently to discover better ways of understanding, diagnosing, treating, and preventing the onset of heart disease and is committed to ensuring its research breakthroughs are translated into advances in clinical care.
 
-For more information about The Victor Chang Cardiac Research Institute, please visit [https://www.victorchang.edu.au/](https://www.victorchang.edu.au/).
+For more information about The Victor Chang Cardiac Research Institute, please visit [https://www.victorchang.edu.au/](https://www.victorchang.edu.au).
 
 ### Support Heart Research
 
