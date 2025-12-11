@@ -217,9 +217,9 @@
       "types": "./dist/components/RefreshOverlay.d.ts",
       "default": "./dist/components/RefreshOverlay.js"
     },
-    "./Network/NetworkProvider": {
-      "types": "./dist/components/Network/NetworkProvider.d.ts",
-      "default": "./dist/components/Network/NetworkProvider.js"
+    "./Network/useNetwork": {
+      "types": "./dist/components/Network/useNetwork.d.ts",
+      "default": "./dist/components/Network/useNetwork.js"
     },
     "./Network/NetworkSelector": {
       "types": "./dist/components/Network/NetworkSelector.d.ts",
