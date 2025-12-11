@@ -4,7 +4,7 @@ import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 import { DigestIssueFrontmatterSchema } from '@filecoin-foundation/utils/schemas/DigestIssueFrontmatterSchema'
 
 export async function getDigestIssueData(
-  issueNumber: string,
+  issueNumber: number,
   directoryPath: string,
 ) {
   const data = await getDigestIssueMarkdownData(issueNumber, directoryPath)
@@ -19,14 +19,17 @@ export async function getAllDigestIssuesData(directoryPath: string) {
 
   const issues = allIssues
     .map(transformDigestIssueData)
-    .sort((a, b) => Number(b.issueNumber) - Number(a.issueNumber))
+    .sort((a, b) => b.issueNumber - a.issueNumber)
 
   return issues
 }
 
-function getDigestIssueMarkdownData(slug: string, directoryPath: string) {
+function getDigestIssueMarkdownData(
+  issueNumber: number,
+  directoryPath: string,
+) {
   return getMarkdownData({
-    slug,
+    slug: issueNumber.toString(),
     directoryPath,
     zodSchema: DigestIssueFrontmatterSchema,
   })

@@ -18,6 +18,7 @@ import { generateStructuredData } from './utils/generateStructuredData'
 import { getDigestArticleData } from '@/digest/utils/getDigestArticleData'
 import { getDigestArticlesWithIssueContext } from '@/digest/utils/getDigestArticlesWithIssueContext'
 import { getAllDigestIssuesData } from '@/digest/utils/getDigestIssueData'
+import { buildIssueSlug } from '@/digest/utils/parseDigestParams'
 
 type DigestArticleProps = {
   params: Promise<DigestArticleParams>
@@ -78,7 +79,7 @@ export async function generateStaticParams() {
         issue.issueNumber,
       )
       return issueArticles.map((article) => ({
-        issue: `issue-${article.issueNumber}`,
+        issue: buildIssueSlug(article.issueNumber),
         slug: article.slug,
       }))
     }),

@@ -1,13 +1,12 @@
-import type { DigestIssueParams } from '@filecoin-foundation/utils/types/paramsTypes'
+const ISSUE_NUMBER_PREFIX = 'issue-'
 
-export async function parseDigestIssueParams(
-  params: Promise<DigestIssueParams>,
-) {
-  const resolvedParams = await params
-  const issueNumber = parseIssueNumberFromSlug(resolvedParams.issue)
-  return { issueNumber }
+export function parseIssueSlug(issue: string) {
+  if (!issue.startsWith(ISSUE_NUMBER_PREFIX)) {
+    throw new Error(`Invalid issue slug: ${issue}`)
+  }
+  return Number(issue.replace(ISSUE_NUMBER_PREFIX, ''))
 }
 
-function parseIssueNumberFromSlug(issue: string) {
-  return issue.replace('issue-', '')
+export function buildIssueSlug(issueNumber: string | number) {
+  return `${ISSUE_NUMBER_PREFIX}${issueNumber}`
 }

@@ -33,6 +33,7 @@
     "./sortBlogPosts": "./src/sortBlogPosts.ts",
     "./toggleArraySelection": "./src/toggleArraySelection.ts",
     "./urlUtils": "./src/urlUtils.ts",
+    "./validateUniqueArticleNumbers": "./src/validateUniqueArticleNumbers.ts",
     "./zodUtils": "./src/zodUtils.ts",
     "./constants/*": "./src/constants/*.ts",
     "./schemas/*": "./src/schemas/*.ts",

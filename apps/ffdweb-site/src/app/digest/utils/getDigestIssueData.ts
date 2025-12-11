@@ -7,7 +7,7 @@ import { PATHS } from '@/constants/paths'
 
 const DIGEST_ISSUES_DIRECTORY_PATH = PATHS.DIGEST.issuePath
 
-export async function getDigestIssueData(issueNumber: string) {
+export async function getDigestIssueData(issueNumber: number) {
   return sharedGetDigestIssueData(issueNumber, DIGEST_ISSUES_DIRECTORY_PATH)
 }
 

@@ -1,5 +1,7 @@
 import { createPathConfig } from '@/utils/createPathConfig'
 
+import { buildIssueSlug } from '@/digest/utils/parseDigestParams'
+
 export const WORKSPACE_ROOT = 'apps/ffdweb-site'
 export const CONTENT_ROOT = 'src/content'
 
@@ -24,7 +26,7 @@ export type DynamicPathValues = DynamicPath[keyof DynamicPath]
 export type PathValues = StaticPath | DynamicPathValues
 
 type IssueUrlProps = {
-  issueNumber: string
+  issueNumber: number
 }
 
 type ArticleUrlProps = IssueUrlProps & {
@@ -42,9 +44,9 @@ export const PATHS = {
     articlesPath: `${CONTENT_ROOT}/digest/articles`,
     issuePath: `${CONTENT_ROOT}/digest/issues`,
     issueUrl: ({ issueNumber }: IssueUrlProps) =>
-      `/digest/issue-${issueNumber}`,
+      `/digest/${buildIssueSlug(issueNumber)}`,
     articleUrl: ({ issueNumber, articleSlug }: ArticleUrlProps) =>
-      `/digest/issue-${issueNumber}/${articleSlug}`,
+      `/digest/${buildIssueSlug(issueNumber)}/${articleSlug}`,
   },
   FAQS: createPathConfig('/faqs', 'FAQs'),
   LEARNING_RESOURCES: createPathConfig(

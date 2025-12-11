@@ -1,13 +1,12 @@
 import { z } from 'zod'
 
-import { IssueNumberField } from './DigestIssueFrontmatterSchema'
 import { DynamicBaseDataSchema } from './DynamicDataBaseSchema'
 import { ImagePropsSchema } from './ImagePropsSchema'
 
 const DigestArticleFrontmatterFields = {
   title: z.string(),
-  'issue-number': IssueNumberField,
-  'article-number': z.number(),
+  'issue-number': z.number().int().positive(),
+  'article-number': z.number().int().positive(),
   authors: z
     .array(
       z.object({

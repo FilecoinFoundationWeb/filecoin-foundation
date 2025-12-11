@@ -1,7 +1,7 @@
 import { getDigestArticlesData } from './getDigestArticleData'
 
 type getDigestArticlesWithIssueContextProps = {
-  issueNumber: string
+  issueNumber: number
   directoryPath: string
 }
 

@@ -3,6 +3,7 @@ import removeMarkdown from 'remove-markdown'
 import { getAllMarkdownData } from './getAllMarkdownData'
 import { getMarkdownData } from './getMarkdownData'
 import { DigestArticleFrontmatterSchema } from './schemas/DigestArticleFrontmatterSchema'
+import { validateUniqueArticleNumbers } from './validateUniqueArticleNumbers'
 
 export async function getDigestArticleData(
   slug: string,
@@ -18,9 +19,13 @@ export async function getDigestArticlesData(directoryPath: string) {
     zodSchema: DigestArticleFrontmatterSchema,
   })
 
-  return allArticles
+  const transformedArticles = allArticles
     .map(transformDigestArticleData)
     .sort((a, b) => a.articleNumber - b.articleNumber)
+
+  validateUniqueArticleNumbers(transformedArticles)
+
+  return transformedArticles
 }
 
 function getDigestMarkdownData(slug: string, directoryPath: string) {

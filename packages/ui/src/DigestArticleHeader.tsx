@@ -8,7 +8,7 @@ import {
 } from './Avatar/AvatarGroupExpanded'
 
 type DigestArticleProps = {
-  issueNumber?: string
+  issueNumber?: number
   articleNumber?: number
   title: string
   authors: AvatarGroupExpandedProps['authors']
