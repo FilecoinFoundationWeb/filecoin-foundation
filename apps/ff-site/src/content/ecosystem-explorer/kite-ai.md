@@ -6,7 +6,7 @@ published-on: 2024-12-17T23:37:27.951Z
 email: encrypted::U2FsdGVkX18EkDTeVWH/IsFwGsh+vdtIGnBnM9X1FezhoHWGYyqiAZiZ/OqJ/HO8
 full-name: encrypted::U2FsdGVkX19YfihgsJSELxzIF1XltYIRSKkNZ+ljYQk=
 image:
-  src: /assets/images/kite-ai.png
+  src: /assets/images/kite-ai-logo.svg
 category: developer-tools
 tech:
   - filecoin

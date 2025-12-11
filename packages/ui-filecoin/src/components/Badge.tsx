@@ -11,12 +11,9 @@ export type BadgeProps = {
 
 const variantClasses = {
   primary: {
-    wrapper: 'text-brand-950 border-brand-600',
-    icon: 'text-brand-600',
-  },
-  primaryLight: {
-    wrapper: 'text-white border-brand-600',
-    icon: 'text-brand-600',
+    wrapper:
+      'border-brand-600 in-[.light-section]:text-brand-950 in-[.dark-section]:text-zinc-50',
+    icon: 'in-[.light-section]:text-brand-950 in-[.dark-section]:text-zinc-50',
   },
   secondary: {
     wrapper: 'text-amber-950 border-amber-600',

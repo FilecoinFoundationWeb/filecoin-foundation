@@ -23,7 +23,7 @@ import { trustedByLogos } from '@/data/trustedByLogos'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { CardGridContainer } from '@/components/CardGridContainer'
-import { GradientContainer } from '@/components/GradientContainer'
+import { GradientOverlay } from '@/components/GradientOverlay'
 import { ImageGrid } from '@/components/ImageGrid'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SectionContentWrapper } from '@/components/SectionContentWrapper'
@@ -58,11 +58,18 @@ export default async function Home({ params }: BlogProps) {
     <>
       <StructuredDataScript structuredData={generateStructuredData(SEO)} />
 
-      <Navigation backgroundVariant="dark" />
-      <GradientContainer className="pb-40 sm:pb-96 2xl:pb-[25vw]">
-        <graphicsData.homepageGradient.data className="absolute -bottom-[10vw] left-1/2 w-[400vw] -translate-x-1/2 transform overflow-visible sm:bottom-0 md:w-[250vw] lg:w-[200vw] 2xl:-bottom-[1vw]" />
+      <div className="relative isolate min-h-screen">
+        <Navigation backgroundVariant="transparentDark" />
         <HeroSection />
-      </GradientContainer>
+        <Image
+          fill
+          priority
+          src={graphicsData.earthFromDeepSpace.data}
+          alt={graphicsData.earthFromDeepSpace.alt}
+          className="absolute bottom-0 -z-10 h-full object-cover object-top"
+        />
+        <GradientOverlay />
+      </div>
 
       <PageSection backgroundVariant="dark">
         <LogoSection
@@ -88,11 +95,11 @@ export default async function Home({ params }: BlogProps) {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        <SectionContent title="A decentralized, efficient, and robust foundation for humanity's most important information">
+        <SectionContent title="Filecoin is reshaping how the world stores data">
           <SplitSectionContent
             title="A better foundation for the next generation of the web."
             description={[
-              "Filecoin is reshaping how the world stores data. Today, a small handful of corporations control most of the world's data, creating centralized gatekeepers that introduce single points of failure and limit transparency.",
+              "Today, a small handful of corporations control most of the world's data, creating centralized gatekeepers that introduce single points of failure and limit transparency.",
               'Filecoin offers a fundamentally different approach to data storage: distributing data across a decentralized, global network protected by cryptographic proofs, ensuring greater security and resilience.',
               'From cultural archives to scientific research, petabytes of data are already stored on Filecoin. The decentralized model empowers users with true autonomy over their information, building a foundation for a more open, resilient, and user-controlled web.',
             ]}
