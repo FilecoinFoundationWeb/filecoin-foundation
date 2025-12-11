@@ -78,7 +78,7 @@ export default function BuildOnFilecoin() {
                 'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
               ]}
               cta={[
-                <Button href="#todo" variant="primary">
+                <Button href="https://filecoin.cloud/" variant="primary">
                   Get started with Filecoin Onchain Cloud
                 </Button>,
               ]}
