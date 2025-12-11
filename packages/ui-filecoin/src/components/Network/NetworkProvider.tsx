@@ -2,10 +2,11 @@
 
 import { createContext, type ReactNode, use } from 'react'
 
-import { useLocalStorage } from 'usehooks-ts'
+import { useQueryState } from 'nuqs'
 
-import { defaultChain } from './config'
+import { CHAIN_PARAM_KEY, defaultChain } from './config'
 import type { ChainId } from './types'
+import { parseAsChainId } from './utils'
 
 type NetworkContextValue = {
   network: ChainId
@@ -17,12 +18,19 @@ const NetworkContext = createContext<NetworkContextValue>({
   setNetwork: () => {},
 })
 
-type NetworkProviderProps = Readonly<{ children: ReactNode }>
+type NetworkProviderProps = Readonly<{ children: ReactNode }> & {
+  paramKey?: string
+}
 
-export function NetworkProvider({ children }: NetworkProviderProps) {
-  const [network, setNetwork] = useLocalStorage<ChainId>(
-    'network-id',
-    defaultChain.id,
+export function NetworkProvider({
+  children,
+  paramKey = CHAIN_PARAM_KEY,
+}: NetworkProviderProps) {
+  const [network, setNetwork] = useQueryState(
+    paramKey,
+    parseAsChainId
+      .withDefault(defaultChain.id)
+      .withOptions({ clearOnDefault: false }),
   )
 
   return (
