@@ -9,6 +9,8 @@ import {
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink'
 import type { CardData } from '@filecoin-foundation/ui-filecoin/Card'
 
+import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
+
 export const howFilecoinWorks = [
   {
     title: 'Storage deals',
@@ -27,11 +29,11 @@ export const howFilecoinWorks = [
     description: (
       <>
         Filecoin uses two proofs to ensure data integrity:{' '}
-        <ExternalTextLink href="https://docs.filecoin.io/basics/the-blockchain/proofs#proof-of-replication-porep">
+        <ExternalTextLink href={FILECOIN_DOCS_URLS.proofsPoRep}>
           Proof of Replication
         </ExternalTextLink>
         , which verifies a provider has stored a unique copy of the data, and{' '}
-        <ExternalTextLink href="https://docs.filecoin.io/basics/the-blockchain/proofs#proof-of-spacetime-post">
+        <ExternalTextLink href={FILECOIN_DOCS_URLS.proofsPoSt}>
           Proof of Spacetime
         </ExternalTextLink>
         , which confirms data is continuously stored over time. Providers who
@@ -58,7 +60,7 @@ export const howFilecoinWorks = [
   {
     title: 'Built for scale',
     description:
-      'Filecoin’s infrastructure is designed for exabyte-scale datasets and long-term archival. With built-in redundancy and global distribution, it meets the needs of everything from personal storage to cultural archives and large-scale scientific datasets.',
+      "Filecoin's infrastructure is designed for exabyte-scale datasets and long-term archival. With built-in redundancy and global distribution, it meets the needs of everything from personal storage to cultural archives and large-scale scientific datasets.",
     icon: StackIcon,
   },
   {
@@ -66,10 +68,12 @@ export const howFilecoinWorks = [
     description: (
       <>
         The{' '}
-        <ExternalTextLink href="https://docs.filecoin.io/basics/what-is-filecoin/crypto-economics#native-currency">
+        <ExternalTextLink
+          href={FILECOIN_DOCS_URLS.cryptoEconomicsNativeCurrency}
+        >
           Filecoin token (FIL)
         </ExternalTextLink>
-        underpins the network’s economy. Clients pay in FIL to store and
+        underpins the network's economy. Clients pay in FIL to store and
         retrieve data, while providers earn FIL by offering reliable services
         and locking collateral that keeps the system honest and secure.
       </>

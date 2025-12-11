@@ -69,7 +69,7 @@ export default function Learn() {
             title="A decentralized alternative to today's storage solutions."
             description={[
               "Filecoin is a decentralized alternative to today's storage solutions, offering a better foundation for humanity's information.",
-              "A handful of corporations currently control most of the world's data. This centralized model creates gatekeepers, introduces single points of failures, and reduces transparency.',",
+              "A handful of corporations currently control most of the world's data. This centralized model creates gatekeepers, introduces single points of failures, and reduces transparency.",
               'Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, protected by cryptographic proofs.',
             ]}
           />
@@ -106,7 +106,7 @@ export default function Learn() {
         <SectionContent
           centerCTA
           title="What makes Filecoin unique"
-          description="Filecoin’s distributed design delivers verifiable storage, removes single points of failure, and creates a resilient, transparent storage foundation."
+          description="Filecoin's distributed design delivers verifiable storage, removes single points of failure, and creates a resilient, transparent storage foundation."
           cta={
             <Button href={PATHS.STORE_DATA.path} variant="primary">
               Start storing on Filecoin
