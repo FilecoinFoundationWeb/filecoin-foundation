@@ -38,7 +38,7 @@ export default function Learn() {
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="The authenticity layer of a more resilient internet"
-            description="Filecoin is the world's largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's most important information, keeping it free from centralized control."
+            description="Filecoin is the world's largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's information, keeping it free from centralized control."
             cta={
               <Button href={FILECOIN_DOCS_URL} variant="primary">
                 Explore documentation
@@ -66,10 +66,10 @@ export default function Learn() {
           title="What is Filecoin?"
         >
           <SplitSectionContent
-            title="A decentralized alternative to today’s storage solutions."
+            title="A decentralized alternative to today's storage solutions."
             description={[
-              'Filecoin is a decentralized alternative to today’s storage solutions, offering a better foundation for humanity’s information.',
-              'A handful of corporations currently control most of the world’s data. This centralized model creates gatekeepers, introduces single points of failures, and reduces transparency.',
+              "Filecoin is a decentralized alternative to today's storage solutions, offering a better foundation for humanity's information.",
+              "A handful of corporations currently control most of the world's data. This centralized model creates gatekeepers, introduces single points of failures, and reduces transparency.',",
               'Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, protected by cryptographic proofs.',
             ]}
           />
@@ -155,7 +155,7 @@ export default function Learn() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           title="Be a part of a more resilient internet"
-          description="Filecoin is more than storage; it's an innovative, open ecosystem built to preserve humanity's most important information."
+          description="Filecoin is more than storage; it's an innovative, open ecosystem built to preserve humanity's information."
         >
           <CardGrid as="ul" variant="mdTwo">
             {resilientInternetCta.map(({ title, href, icon }) => (

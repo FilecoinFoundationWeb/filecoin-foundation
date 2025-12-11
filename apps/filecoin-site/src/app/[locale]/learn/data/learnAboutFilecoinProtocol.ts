@@ -2,14 +2,13 @@ import type { SimpleCardData } from '@filecoin-foundation/ui-filecoin/SimpleCard
 
 import { FILECOIN_DOCS_URL, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
-
 export const learnAboutFilecoinProtocol = [
   {
     title: 'Content addressing',
     description:
       'Files are retrieved via content identifiers (CIDs) instead of location-based URLs prone to deterioration.',
     cta: {
-      href: FILECOIN_DOCS_URLS.basicsBlockhainPoRep,
+      href: 'https://docs.ipfs.tech/concepts/content-addressing/',
       text: 'See how content addressing works',
     },
   },
@@ -18,7 +17,7 @@ export const learnAboutFilecoinProtocol = [
     description:
       'Clients make programmable deals with independent storage providers in a global marketplace.',
     cta: {
-      href: FILECOIN_DOCS_URLS.basicsBlockhainPoSt,
+      href: FILECOIN_DOCS_URLS.storageModel,
       text: 'Learn about storage deals',
     },
   },
@@ -27,7 +26,7 @@ export const learnAboutFilecoinProtocol = [
     description:
       'Providers must cryptographically prove they are storing data.',
     cta: {
-      href: `#`,
+      href: FILECOIN_DOCS_URLS.proofs,
       text: 'Understand Filecoin proofs',
     },
   },
@@ -36,7 +35,7 @@ export const learnAboutFilecoinProtocol = [
     description:
       'The native token aligns economic incentives and rewards useful storage over time.',
     cta: {
-      href: FILECOIN_DOCS_URLS.smartContractFundamentalsFVM,
+      href: FILECOIN_DOCS_URLS.cryptoEconomics,
       text: 'Explore FIL token economics',
     },
   },
@@ -45,7 +44,7 @@ export const learnAboutFilecoinProtocol = [
     description:
       'The smart-contract layer that lets developers build logic, automation, and apps on top of Filecoin storage.',
     cta: {
-      href: FILECOIN_DOCS_URLS.smartContractFundamentalsFVM,
+      href: FILECOIN_DOCS_URLS.filecoinVirtualMachine,
       text: 'Discover the FVM',
     },
   },
