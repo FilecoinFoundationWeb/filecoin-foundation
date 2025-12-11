@@ -8,7 +8,7 @@ category: leasing
 tech:
   - filecoin
 image:
-  src: /assets/images/6607329439c3fa2c2d0c7b18_hashmix.png
+  src: /assets/images/hash-mix-logo.svg
 website: https://fvm.hashmix.org/
 twitter: https://twitter.com/HashMixOfficial
 year-joined: 2020

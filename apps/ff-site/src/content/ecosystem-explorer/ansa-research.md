@@ -6,7 +6,7 @@ published-on: 2025-05-14T20:00:00.000Z
 email: encrypted::U2FsdGVkX1/ZN1QrU2B038lIQI0YZ8dwwBNWtgB+fVIqL7zY5sPXXehRlSWls1Ln
 full-name: encrypted::U2FsdGVkX1965HjVMqaaerdw2+sUInj7ujZ1KoIV4Fk=
 image:
-  src: /assets/images/ansalogo.webp
+  src: /assets/images/ansa-research-logo.svg
 category: network-tools
 description: Ansa Research is a research firm focused on distributed
   infrastructure. We cover digital networks aiming to rebuild how internet
