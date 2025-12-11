@@ -105,8 +105,8 @@ export default function Learn() {
       <PageSection backgroundVariant="gray">
         <SectionContent
           centerCTA
-          title="How Filecoin works?"
-          description="Filecoin is powered by a global network of independent storage providers. Through a decentralized protocol, they keep your data secure, verifiable, and accessible, eliminating single points of failure and building resilience, transparency, and trust."
+          title="What makes Filecoin unique"
+          description="Filecoin’s distributed design delivers verifiable storage, removes single points of failure, and creates a resilient, transparent storage foundation."
           cta={
             <Button href={PATHS.STORE_DATA.path} variant="primary">
               Start storing on Filecoin
