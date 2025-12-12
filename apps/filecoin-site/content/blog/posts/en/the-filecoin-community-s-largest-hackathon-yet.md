@@ -43,7 +43,7 @@ The hackathon featured a robust agenda of talks and workshops from the Protocol 
 
 There was an impressive caliber of [project submissions](https://ethglobal.com/showcase?events=spacewarp) from the hackathon, showing strong developer interest in FEVM which include use cases such as [Data DAOs](https://filecoin.io/blog/posts/the-future-of-datadaos/), undercollateralized loans, decentralized computation over data and tooling such as data indexing and data access control. Congratulations to all finalists and prize winners!
 
-## **Filecoin prize winners**
+## Filecoin prize winners
 
 FVM Spaceships (Grand Prize)
 
@@ -69,7 +69,7 @@ FVM Docking Modules (Cross-chain)
 - [FogMeta Data Rebuilder](https://ethglobal.com/showcase/fogmeta-data-rebuilder-8em0i)
 - [FNS Lookup](https://ethglobal.com/showcase/fns-lookup-integrated-fns-in-filfox-explorer-7v9jy)
 
-## **ETHGlobal finalists**
+## ETHGlobal finalists
 
 - [Cosmic Chicken](https://ethglobal.com/showcase/cosmic-chicken-206em)
 - [ZKaggle](https://ethglobal.com/showcase/zkaggle-70g3b)
@@ -84,6 +84,6 @@ FVM Docking Modules (Cross-chain)
 - [Eclipse - Data DAOs Simplified](https://ethglobal.com/showcase/eclipse-data-daos-simplified-2o8fc)
 - [FilSwap](https://ethglobal.com/showcase/filswap-8hn40)
 
-## **Keep Building**
+## Keep Building
 
 The building doesn’t stop with this hackathon! Hackers are all invited and strongly encouraged to continue building with FEVM, leading up to its launch to the Filecoin main network on March 14th. As part of the [Space Warp FEVM launch program](https://spacewarp.fvm.dev/), various resources have been dedicated to supporting the success of these projects, including [FVM Microgrants](https://github.com/filecoin-project/devgrants/issues/new?assignees=mishmosh&labels=type%3Amicrogrant&template=microgrant.md&title=Next+Step+Microgrant%3A+%3CYour+Title+Here%3E), [Impact Evaluator rewards program](https://network-goods.notion.site/Impact-Evaluators-Builders-Leaderboard-602ea6755b5642e1ad6f9da59a47fa62), technical and business mentoring and more. All builders can find out more and participate by signing up [here](https://spacewarp.fvm.dev/).

@@ -68,6 +68,6 @@ Filecoin太空竞赛在今天的大部分演讲中都被提及，最终在 "我�
 
 - **下午6:40（太平洋夏令时）:** 加入ConsenSys Codefi的Corbin Page、Ren CTO Loong Wang和Aave CEO Stani Kulechov的行列，与他们一同探索Filecoin和DeFi的精彩潜力。
 
-## **[查看所有议程](https://liftoff.filecoin.io/)**
+## [查看所有议程](https://liftoff.filecoin.io/)
 
 明天见!

@@ -27,7 +27,7 @@ _template: blog_detail_ch
 
 <img src="/uploads/aa9da583-59a2-44cc-a131-7913efbd460b.webp" style="width:18%;margin-left:0%">
 
-## **Filecoin Launchpad加速营**
+## Filecoin Launchpad加速营
 
 来自11个国家的33位创始人参加了为期12周的沉浸式计划，将IPFS、Filecoin和以太坊社区连接起来。点击Filecoin博客了解更多关于创建者及其初创公司的信息。
 

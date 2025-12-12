@@ -55,6 +55,6 @@ _template: blog_detail_ch
 - **下午2:20 (太平洋夏令时):** 互利共赢：政府对Web3的支持。
 - **下午2:55 (太平洋夏令时):** 与来自整个生态的Web3领导者一起“认识Filecoin基金会”作为启动周的结尾。
 
-## **[查看所有议程](https://liftoff.filecoin.io/)**
+## [查看所有议程](https://liftoff.filecoin.io/)
 
 明天见!

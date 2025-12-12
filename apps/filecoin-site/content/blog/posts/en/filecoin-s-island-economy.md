@@ -28,7 +28,7 @@ The Filecoin island economy displays the same division of nature that isolated i
 
 The real beauty is how elegant the complexity is: everything connects into one extensive ecosystem working for change. Filecoin’s economy is more like island life than you think.
 
-## **The Island Analogy**
+## The Island Analogy
 
 Several parts of the internet have referred to Filecoin's system as an island economy, referring to how a village on an island separated from the rest of the world works. From an anthropological standpoint, it's somewhat accurate.
 
@@ -40,7 +40,7 @@ Filecoin's economy starts with the understanding that value drives innovation. F
 
 The blockchain enforces ownership and offers a method for exploration and innovation within the space. Innovators are rewarded when they produce efficient, effective systems for dealing with the blockchain. This reward comes in both FIL tokens and a service that can be sold to clients who want to leverage decentralized storage for their applications.
 
-## **Stakeholders in the Filecoin Island Economy**
+## Stakeholders in the Filecoin Island Economy
 
 The interconnectedness between stakeholders in Filecoin's economy helps create a stable, self-sustaining system, just like an island isolated from the rest of the world. Stakeholders must each perform their role to ensure the health and longevity of the system. These stakeholders fall into one of five categories:
 
@@ -58,7 +58,7 @@ The interconnectedness between stakeholders in Filecoin's economy helps create a
 
 The value within the island economy circulates to each of these individual groups via the FIL tokens.
 
-## **A Better System Than What Exists**
+## A Better System Than What Exists
 
 Islands can be idyllic, but it would be a mistake to think of them as completely isolated from the rest of the world. Sure, they're surrounded by oceans and are cut off from land trade routes, but they are also part of a global economy.
 
@@ -66,7 +66,7 @@ The same can be said of Filecoin. All of the stakeholders come together to gener
 
 Prospective clients interface with current clients, becoming exposed to the idea of joining the island economy. Developers provide easy-access services abstracting the nuts and bolts of interfacing with Filecoin's systems. A client could rely on an intermediary to help them deal with the complexities of content IDs and data retrieval from the redundant storage providers.
 
-## **What Goes Around Comes Back Around**
+## What Goes Around Comes Back Around
 
 Blockchain came to prominence in 2008 with the creation of Bitcoin, but the idea of having a decentralized financial system goes further back into the past. One of the first recorded implementations of a decentralized financial system comes from an island in the Pacific called Yap.
 

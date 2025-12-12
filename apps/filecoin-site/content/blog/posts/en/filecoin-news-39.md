@@ -57,7 +57,7 @@ The [FilSwan](https://t.co/qtLh8FJdgu) marketplace for Fielcoin Storage Provider
 
 <a href="https://medium.com/cryptosatellite/cryptosat-and-protocol-labs-collaborate-to-take-cryptography-to-space-e5d78e89cdfe"><img src="/uploads/satellite.webp" style="width:40%;margin-left:0%"></a>
 
-## **Cryptography is Going to Space with Protocol Labs and Cryptostat**
+## Cryptography is Going to Space with Protocol Labs and Cryptostat
 
 Stanford PhDs at Cryptostat are in collaboration with the community to launch a new time-based cryptographic primitive known as the Verifiable Delay Function (VFD) powered by unique satellite properties. The technology is based on Bernardo David and Carsten Baum’s work and will experiment with how the physical properties of communication with satellites can benefit time-based cryptographic primitive designs, and provide lower bounds on the delay guaranteed by such constructions. Read the official [announcement](https://medium.com/cryptosatellite/cryptosat-and-protocol-labs-collaborate-to-take-cryptography-to-space-e5d78e89cdfe).
 
@@ -71,25 +71,25 @@ The ongoing 2022 ETHernals online hackathon is happening until March 27th. As a 
 
 <a href="https://twitter.com/Filecoin"><img src="/uploads/twitterspaces.webp" style="width:40%;margin-left:0%"></a>
 
-## **Building a Career in Web3 Twitter Space**
+## Building a Career in Web3 Twitter Space
 
 Join cryptographers, developers, project managers and more from Protocol Labs, the Filecoin ecosystem, and other amazing web3 projects on Wednesday, March 30th at 12:00pm ET for a session about building your career in Web3. Stay tuned on the [Filecoin twitter](https://twitter.com/Filecoin) for the live event.
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLScNVB9IFo58k3fY3pEDnF4eHybye-9MywIAFmTcsJZjvC4HwA/viewform?usp=pp_url"><img src="/uploads/faber.webp" style="width:40%;margin-left:0%"></a>
 
-## **Faber Filecoin Accelerator**
+## Faber Filecoin Accelerator
 
 Applications for the [Faber Filecoin Accelerator](https://filecoin.faber.vc) are open until March 31st. Join the fully-remote, 12-week program to work with entrepreneurs and engineers solving the hardest problems in getting new Web3 infrastructure and applications off the ground. [Apply now](https://docs.google.com/forms/d/e/1FAIpQLScNVB9IFo58k3fY3pEDnF4eHybye-9MywIAFmTcsJZjvC4HwA/viewform?usp=pp_url)!
 
 <a href="https://live.bilibili.com/h5/21892643?visit_id=7n8oep2u8gk0"><img src="/uploads/wechatimg5.webp" style="width:40%;margin-left:0%"></a>
 
-## **The Situation and Outlook of Distributed Storage in Web3.0**
+## The Situation and Outlook of Distributed Storage in Web3.0
 
 Wanxiang Blockchain Labs is hosting an online panel at 7:00 pm GMT+8, March 31st. Join guests Vivian Meng from Cabin VC, Sofia Yan from Numbers Protocol, Taosheng Shi from Ken Labs and host Longfei along with others from the Filecoin ecosystem. Tune in to watch a [livestream](https://live.bilibili.com/h5/21892643?visit_id=7n8oep2u8gk0) of the event in Mandarin.
 
 <a href="https://t.me/filaustin"><img src="/uploads/foundation.webp" style="width:40%;margin-left:0%"></a>
 
-## **FIL Austin hosted by the Filecoin Foundation**
+## FIL Austin hosted by the Filecoin Foundation
 
 Join the Filecoin Foundation on June 8th in Austin, TX for FIL Austin, an in-person summit for the Filecoin Community. Join as builders, developers, and partners from across the ecosystem gather for workshops, panels, and networking devoted to building and expanding the Filecoin network. More details will be released soon. Subscribe to the FF email list or join the FIL Austin [Telegram group](https://t.me/filaustin) for updates. See you there!
 

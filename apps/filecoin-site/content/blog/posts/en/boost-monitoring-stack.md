@@ -24,7 +24,7 @@ Boost is a tool for Storage Providers to manage data onboarding and retrieval on
 
 Boost exposes libp2p interfaces for making storage and retrieval deals, a web interface for managing storage deals, and a GraphQL interface for accessing and updating real-time deal information.
 
-## **Monitor your Boost processes with out of the box tooling and dashboards**
+## Monitor your Boost processes with out of the box tooling and dashboards
 
 Since the initial release of [Boost](https://boost.filecoin.io/) in mid June 2022, we have seen a big increase in the number of storage providers migrating to use Boost to manage storage deals. With the introduction of new ecosystem projects and programs, there is a high demand for additional storage and retrieval options from Filecoin. Based on feedback from the ecosystem, we have added booster-http and booster-bitswap, which enables storage providers to directly serve content to retrieval clients over additional data transfer protocols.
 

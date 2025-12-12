@@ -24,9 +24,9 @@ title: "Filecoin Frontier Accelerator Demo Day: DeFi & Consumer Tech "
 
 On April 23, the Filecoin Frontier Accelerator II powered by LongHash Ventures, hosted a demo day to showcase the 11 teams that completed the 3-month accelerator program. During the program, the teams received hands-on venture support, world-class mentorship, dedicated resources from the Filecoin community, and a $20,000 grant to continue building on the Filecoin network. This post profiles the startups building DeFi and consumer tech solutions with or on Filecoin’s technology: **Atomica, Ownership Labs, Sinso Technology**, and **Vera AI.**
 
-## **DeFi**
+## DeFi
 
-### **Atomica**
+### Atomica
 
 _The cross-chain risk liquidity protocol to accelerate mass adoption of Web3 economies._
 
@@ -49,9 +49,9 @@ Atomica solves for:
 
 Learn more and contact the team at [https://atomica.org/](https://atomica.org/ "https://atomica.org/").
 
-## **Consumer Tech**
+## Consumer Tech
 
-### **Ownership Labs**
+### Ownership Labs
 
 _An open data marketplace for trading the computing rights of private data._
 
@@ -74,7 +74,7 @@ Ownership Labs solves for:
 
 Learn more and contact the team at [https://github.com/ownership-labs](https://github.com/ownership-labs "https://github.com/ownership-labs").
 
-### **Sinso Technology**
+### Sinso Technology
 
 _Democratizing access to critical medical services in China._
 
@@ -94,7 +94,7 @@ Sinso solves for:
 - _Personal data security concerns — Patient health data needs to be protected and the Sinso dapp provides secure and private storage solutions._
 - _Data ownership and monetization —_ The Sinso dapp uses NFTs to enable patients to monetize their data for research, and for doctors to monetize their treatments.
 
-### **Vera AI**
+### Vera AI
 
 _Privacy preserving decentralized identity and decentralized applications._
 

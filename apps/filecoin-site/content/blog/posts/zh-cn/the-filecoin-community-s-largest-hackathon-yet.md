@@ -37,7 +37,7 @@ FEVM[增量交付计划](https://github.com/filecoin-project/ref-fvm/issues/692)
 
 本次黑客松的[项目提交](https://ethglobal.com/showcase?events=spacewarp)令人印象深刻，展现了开发人员对FEVM的强烈兴趣，其中包括[数据DAO](https://filecoin.io/blog/posts/the-future-of-datadaos/)、质押不足的借贷模型、数据的分布式计算以及数据索引和数据访问控制等使用案例。祝贺所有入围者和获奖者！
 
-## **Filecoin获奖者**
+## Filecoin获奖者
 
 FVM Spaceships（大奖）
 
@@ -63,7 +63,7 @@ FVM对接模块（跨链）
 - [FogMeta Data Rebuilder](https://ethglobal.com/showcase/fogmeta-data-rebuilder-8em0i)
 - [FNS Lookup](https://ethglobal.com/showcase/fns-lookup-integrated-fns-in-filfox-explorer-7v9jy)
 
-## **ETHGlobal入围者**
+## ETHGlobal入围者
 
 - [Cosmic Chicken](https://ethglobal.com/showcase/cosmic-chicken-206em)
 - [ZKaggle](https://ethglobal.com/showcase/zkaggle-70g3b)
@@ -78,6 +78,6 @@ FVM对接模块（跨链）
 - [Eclipse - Data DAOs Simplified](https://ethglobal.com/showcase/eclipse-data-daos-simplified-2o8fc)
 - [FilSwap](https://ethglobal.com/showcase/filswap-8hn40)
 
-## **持续构建**
+## 持续构建
 
 本次黑客松的构建并没有因为活动结束而停止！所有黑客都被邀请并强烈鼓励继续使用FEVM进行构建，直到3月14日在Filecoin主网络上推出FEVM。作为[Space Warp FEVM 启动计划](https://spacewarp.fvm.dev/)的一部分，各类资源一直在支持这些项目，包括[FVM小额赠款](https://github.com/filecoin-project/devgrants/issues/new?assignees=mishmosh&labels=type%3Amicrogrant&template=microgrant.md&title=Next+Step+Microgrant%3A+%3CYour+Title+Here%3E)、[Impact Evaluator奖励计划](https://network-goods.notion.site/Impact-Evaluators-Builders-Leaderboard-602ea6755b5642e1ad6f9da59a47fa62)、技术和业务指导等。建设者可以在[此处](https://spacewarp.fvm.dev/)注册来了解更多信息并参与。

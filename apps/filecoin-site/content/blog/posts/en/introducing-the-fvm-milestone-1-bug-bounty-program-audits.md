@@ -31,7 +31,7 @@ Since this is a completely new codebase, one of our main areas of focus right no
 
 Apart from incentivizing bug hunters through this program, a first-pass internal audit has been conducted by members from across the Filecoin contributor team and we have initiated audits by external security experts. Several hardening efforts are also underway.
 
-## **What’s in scope for FVM M1 Bug Bounties**
+## What’s in scope for FVM M1 Bug Bounties
 
 1. [Reference FVM](https://github.com/filecoin-project/ref-fvm) (ref-fvm)
 
@@ -57,7 +57,7 @@ Apart from incentivizing bug hunters through this program, a first-pass internal
    - An executable spec written in Go is available at [filecoin-project/specs-actors](https://github.com/filecoin-project/specs-actors), these power the Filecoin network pre-FVM.
    - Note that auditing actors normally requires Filecoin domain expertise.
 
-## **Rewards and What’s Out-of-Scope**
+## Rewards and What’s Out-of-Scope
 
 The FVM team would like to get as much help as possible in reviewing the code from the community prior to shipping M1. However there are certain known areas whose hardening is in progress. To that end, they’ve made a list of **_Exclusions to Scope including Known Issues_** [listed here on GitHub](https://github.com/filecoin-project/ref-fvm/issues/428) that will be regularly updated. These areas are only eligible for bounties once they’re checked off this list.
 
@@ -65,17 +65,17 @@ Rewards for reporting FVM M1 bugs are the same as regular [bug bounty rewards](h
 
 Bugs in Filecoin client implementations (Lotus, Venus, Forest, Fuhon) and the Filecoin Proofs libraries fall under the regular [Filecoin Security Program scope](https://security.filecoin.io/bug-bounty/#scope) and rewards. Finally, previous Filecoin audits can be found in the [audits section in the Filecoin Specs](https://spec.filecoin.io/appendix/audit_reports/).
 
-## **Testing Tools**
+## Testing Tools
 
 Based on the [Filecoin test vectors](https://github.com/filecoin-project/test-vectors/) which support interoperability testing across node implementations, the [FVM test vectors](https://github.com/filecoin-project/fvm-test-vectors) specifically target the FVM and exercise its entirety. A community developer team is also working on an [integration test framework](https://github.com/filecoin-project/devgrants/issues/492) to test FVM correctness. Various components of the FVM will also be fuzzed.
 
-## **Reporting Bugs**
+## Reporting Bugs
 
 To report vulnerabilities, please contact security@filecoin.io to be eligible for bounties. You can use the [confidential reporting guidelines listed here](https://security.filecoin.io/#vulnerability-reporting). Alternatively, the FVM Bug Bounty program is posted on Gitcoin [here](https://gitcoin.co/issue/filecoin-project/community/504/100028707) and on ImmuneFi [here](https://immunefi.com/).
 
 Please **do not** file a public issue or discuss the vulnerability in public places like Slack, Twitter, etc. or it will not be eligible for rewards.
 
-## **Looking Ahead**
+## Looking Ahead
 
 Until the end of May we hope our existing developer community and new external developers will help discover a wide range of potential vulnerabilities in FVM M1, in advance of later milestones to add user-programmability and EVM-compatibility in FVM M2.
 

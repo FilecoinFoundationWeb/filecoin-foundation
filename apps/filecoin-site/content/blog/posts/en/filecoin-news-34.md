@@ -27,7 +27,7 @@ title: Filecoin News 34
 
 <a href="https://filecoin.io/blog/posts/filecoin-in-2021-looking-back-at-a-year-of-exponential-growth/"><img src="/uploads/fil-blog-2022-01-05-review-v3.webp" style="width:40%;margin-left:0%"></a>
 
-## **Filecoin 2021 in Review**
+## Filecoin 2021 in Review
 
 In 2021, the Filecoin network surpassed a combined storage capacity of 14+ EiB with the help of 3,600+ storage providers from around the globe. The community also welcomed over 400 new applications built by the community of 7,000 FIlecoin developers. All that in little more than a year since mainnet launch. Aside from the growth of the ecosystem, Filecoin is now an essential component of over 400 new applications that rely on the network for persistent storage needs. Some of these collaborators include Chainlink, OpenSea, Zcash, The Internet Archive, and more. Read [this report](https://filecoin.io/blog/posts/filecoin-in-2021-looking-back-at-a-year-of-exponential-growth/) to take a look at Filecoin’s extraordinary growth in 2021.
 

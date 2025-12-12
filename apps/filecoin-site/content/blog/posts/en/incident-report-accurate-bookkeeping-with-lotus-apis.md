@@ -31,13 +31,13 @@ On March 18th, 2021, it was reported that there was a “double-spend” due to 
 
 The Lotus team has investigated the report thoroughly and have **found no issues with the Filecoin network or the RPC API code**. There is no double-spend on the blockchain itself, and no bug in the API code. The exchange in question has already reverted the incorrect transaction in their bookkeeping system (there was no loss of funds), and is reviewing their deposit processing logic to correct their API usage.
 
-## **What Happened**
+## What Happened
 
 - **Issue Report.** Earlier today, the Lotus team received a report that an exchange was incorrectly using the Lotus APIs for evaluating transfers/deposits in the Filecoin Network. This incorrect API usage was discovered when a user reported that their account was incorrectly credited twice for a deposit in the exchange’s bookkeeping system. This has since been reverted in the exchange’s bookkeeping - there was no duplication on the chain itself.
 - **API Confusion.** The core of the issue was the improper usage of Lotus’ chain state inspection API, which behaved differently than expected when handling multiple similar messages. Misinterpreting the output of the Lotus API can cause a bookkeeping system to count both the original and a replacement message with the same senders and recipients. So far, we are only aware of one exchange affected by this issue.
 - **False reports make headlines**: Inaccurate statements around “double spends” on the network were propagated in social media channels, and made their way into article headlines. Many of these claims have been investigated and determined to be false. The team found no issues with the Filecoin network or the RPC API code. After learning the facts, many groups and media institutions are correcting their coverage.
 
-## **Actions Being Taken**
+## Actions Being Taken
 
 - **Exchange affected.** The exchange in question caught this API misuse and has taken immediate action to halt deposits, withdrawals, and transfers. They have reverted the incorrect transaction in question (so no funds were lost in this incident), and are correcting their use of lotus APIs to match the recommended use.
 - **Isolated instance.** Other exchanges have been alerted and are reviewing their code to make sure they are not affected. Many of these reviews have already completed -- to our knowledge, at this time, no other exchange has misused this API in this way.
@@ -45,7 +45,7 @@ The Lotus team has investigated the report thoroughly and have **found no issues
 - **Community & Media Teams.** A few organizations are working together to reach out to publications & clarify the details and facts of the alleged incident, and to help dispel misinformation.
 - **Community Teams**. Community members are creating materials to help others report problems accurately and thoughtfully to avoid accidentally spreading misinformation.
 
-## **Technical Details**
+## Technical Details
 
 - **Same messages.** The Lotus team understands that the problem arose from two messages sharing the same sender/receiver details and the same nonce, but with _different_ gas parameters — being included in the same tipset. Two similar messages like this are a common form of message replacement to change the gas fees associated with a message. Such a situation is safely and correctly handled by the Filecoin network, and does not lead to two transfers being made: one of the two messages is executed, the other is ignored.
 - **Incorrect use of API.** However, based on how one inspects the chain, this can present the appearance that the transfer is processed twice. Specifically, this exchange was using an inaccurate way of processing the chain state - calling `ChainGetBlockMessages` on every block in a tipset, and then calling `StateGetReceipt` on each of these messages.

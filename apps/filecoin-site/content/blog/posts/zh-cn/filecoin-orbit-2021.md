@@ -123,7 +123,7 @@ Filecoin同好们在中国成都以线上加线下的方式相聚，探讨检索
 
 [Chukwuemeka Enoch M.](https://twitter.com/Divine_Vessel)在尼日利亚拉各斯组织了Filcoin主网上线周年庆典，为西非的Filecoin社区提供了交流平台。
 
-### **🇳🇬 Filecoin Orbit Event 2021，瓦里**
+### 🇳🇬 Filecoin Orbit Event 2021，瓦里
 
 2021年10月23日，谷歌开发者小组GDG Warri与Filecoin社区联合在尼日利亚瓦里举办了Filecoin主网周年庆典，有三十人参与了此次线下活动，刷新参与人数记录。活动组织者[Charles Freeborn](https://twitter.com/charliecodes)为来宾们介绍了IPFS和Filecoin。
 
@@ -193,7 +193,7 @@ Filecoin同好们在中国成都以线上加线下的方式相聚，探讨检索
 
 Web3 Metaverse在肯尼亚内罗比举办了一场活动，来自Celo和Binance的嘉宾与参与者围炉夜话，探讨IPFS和Filecoin网络的互通性。
 
-### 🇳🇬 Filecoin Orbit Event 2021，瓦里
+### 🇳🇬 Filecoin Orbit Event 2021 at Stanbic IBTC Bank，瓦里
 
 位于尼日利亚瓦里的Stanbic IBTC银行在埃夫伦-沙比利路上的Skysense Hub举办了Filecoin主网一周年庆祝活动。Charles Freeborn是发言嘉宾之一。
 

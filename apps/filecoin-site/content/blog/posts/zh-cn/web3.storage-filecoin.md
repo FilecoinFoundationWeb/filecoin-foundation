@@ -31,7 +31,7 @@ Web3.Storage有以下两大组成部分：
 
 以下是组成部分简介：
 
-## **如何运行？**
+## 如何运行？
 
 在后台，发送至Web3.Storage的内容被持久地[存储](https://web3.storage/)在Filecoin的存储提供者网络上，且在IPFS上冗余托管。因此，Filecoin和IPFS携手给内容、数据和应用程序带来了[_内容可寻址性_](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/)和 [_持久性_](https://filecoin.io/blog/posts/ipfs-filecoin-and-content-persistence/)*两大特性。_内容可寻址性_ 生成基于内容本身（CIDs）的不可篡改链接，确保在不留下可追踪篡改记录的情况下，信息无法被更改、编辑或破坏。*持久性\_ 保证通过该服务存储的数据将保持完整可用-由Filecoin强大的[经济模型](https://filecoin.io/blog/posts/introducing-the-filecoin-economy/)和存储数据完整性的可验证证明支撑。
 
@@ -39,7 +39,7 @@ Web3.Storage有以下两大组成部分：
 
 更具体地说，发送至Web3.Storage的数据被立即固定在Protocol Labs 托管的三个地理分布节点的IPFS集群上。它们由此排队存储在Filecoin网络中。在此队列里，它与Filecoin交易中的其他数据打包，然后被存储在至少五个地理分布的存储提供者中。同时它还会被其他IPFS托管服务如Pinata托管，以获得额外的冗余度和可用性！
 
-## **如何交互？**
+## 如何交互？
 
 至此，你最大的疑惑，是不是如何真正使用Web3.Storage？很简单！Web3.Storage有公开的HTTP端点，你可以通过web UI或者Javascript客户端库来存储数据。
 
@@ -59,7 +59,7 @@ _查询API的输出示例_
 
 数据被存储后应当如何检索？给定的数据在IPFS和Filecoin网络中的持久性意味着数据可以通过多种方式访问-例如IPFS网关、个人IPFS节点、Web3.Storage本身或者Filecoin检索。多种选择的存在也为应用程序带来了灵活性，且无论采用何种检索方式，任何人都可通过其独特的CID请求给定数据！点击 Web3.Storage相关文件，了解更多不同检索项。
 
-## **自由存储的设计**
+## 自由存储的设计
 
 此刻，你一定在想这项服务怎么可能免费？虽然运行Web3.Storage需要运行一些基础设施，但Protocol Labs可以免费为用户提供服务，因为Filecoin的存储提供者不向Web3.Storage收取存储用户数据的费用。这是由于[Filecoin Plus](https://docs.filecoin.io/store/filecoin-plus/)机制的经济性造成，当Filecoin存储提供者存储用户数据时，该机制会给予丰厚奖励。
 
@@ -73,7 +73,7 @@ Filecoin存储提供者将其硬盘容量贡献投入到Filecoin网络，并因�
 
 ![](/uploads/web3-storage-fil-plus-gif-1.gif)
 
-## **Web3.Storage的下阶段部署**
+## Web3.Storage的下阶段部署
 
 我们欣喜于推出Web3.Storage并与大家一起迭代，致力于打造出可以同Filecoin和IPFS完美融合的易使用界面。目前，产品路线图中未来计划上线的功能还包括支持DAG（不仅仅是文件），完全的文档化HTTP API，支持[IPFS托管服务API](https://ipfs.github.io/pinning-services-api-spec/)，限定范围的认证令牌和基于网络钱包的认证等。若你有想在web3存储中看到的功能，请在我们的[GitHub repo](https://github.com/web3-storage/web3.storage)中提出你的宝贵建议！
 

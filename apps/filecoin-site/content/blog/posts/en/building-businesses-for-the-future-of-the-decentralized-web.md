@@ -30,7 +30,7 @@ _Outlier Ventures CEO & Founder Jamie Burke and Protocol Labs Ecosystem Lead Col
 
 [Outlier Ventures](https://outlierventures.io/) and Protocol Labs are collaborating on a multi-year vision to grow the Web3 ecosystem through the lens of decentralized storage. The effort is starting with Filecoin Base Camp Accelerator, a three-month program by Outlier Ventures to nurture and grow early-stage projects from concept to business model. [Learn about Filecoin Base Camp Accelerator and apply.](https://outlierventures.io/base-camp/filecoin-base-camp/)
 
-## **Data Businesses of the Web2 Past and the Web3 Future**
+## Data Businesses of the Web2 Past and the Web3 Future
 
 _“Filecoin is a movement to create a decentralized, efficient, and robust foundation for humanity’s information.” - Colin Evran_
 
@@ -44,7 +44,7 @@ Today’s data storage industry is hampered by more than just storage capacity:
 
 Ecosystems like Filecoin, IPFS, and Ethereum have the right primitives to address all of these problems, but the game will be won or lost based on the applications and businesses that people build on these protocols. Programs like Outlier Ventures’ Filecoin Base Camp Accelerator are critical to mobilizing the capital that is out there to find, nurture, and launch these businesses.
 
-## **The Data Economy**
+## The Data Economy
 
 Today, the data network economy is not functioning in an optimal manner. There is too much value capture by too few companies that operate as unchallenged monopolies. There is also too much data going unused. Its potential is not being realized, which is a consequence of the world’s data economy not being _open._
 
@@ -52,7 +52,7 @@ One way to think of Filecoin is as the Airbnb of cloud storage. Currently, new d
 
 Fundamentally, this changes the paradigm of the global data storage industry. Businesses can now provide differentiated services to compete with each other and with industry veterans, creating an economy where the market sets pricing instead of a corporate pricing team.
 
-## **Web3 Data Storage Use Cases**
+## Web3 Data Storage Use Cases
 
 _“You can’t qualify as a Web3 startup if you aren’t already looking at how you handle the storage of data.” - Jamie Burke, Outlier Ventures_
 
@@ -67,7 +67,7 @@ Filecoin and IPFS are general purpose platforms, so the range of use cases are w
 
 Driving all of these use cases forward is an extraordinary developer ecosystem. Through hackathons, the FIlecoin ecosystem witnessed 10,000 developers engaged in the last two months alone. Grant programs are funding thousands of companies. And accelerators such as Filecoin Base Camp with mentors like Outlier Ventures are playing a crucial role in helping those ideas become real businesses. All of this is supported by impressive funding; $50 million is earmarked for the Filecoin ecosystem by VCs.
 
-## **Unknown Use Cases of the Future**
+## Unknown Use Cases of the Future
 
 Some of the creative business cases are those that are difficult to see or predict right now. Two previously-impossible use cases that are beginning to emerge are the _financialization of data_ and _compute._
 
@@ -81,6 +81,6 @@ Technologies like IPFS and Filecoin provide the opportunity to shift the primiti
 
 Today, the main way data is consumed is in the context of compute. A complete decentralized cloud, therefore, must be both storage and compute. The compute power of the Filecoin stacks comes from modularization. Individual cloud providers on the Filecoin network can specialize in specific services (think video transcoding, large data genomics, machine learning, etc.). Rather than “one size fits all” storage solutions, the ecosystem can have different layers of the stack that can be composed into needed storage services.
 
-## **The Filecoin Base Camp Accelerator by Outlier Ventures**
+## The Filecoin Base Camp Accelerator by Outlier Ventures
 
 The FIlecoin Base Camp Accelerator is a three-month remote program focused on accelerating the growth of early-stage projects, ideas, and concepts focused on the Filecoin, IPFS, and libp2p networks. Up to $250,000 is available for projects that are part of Base Camp. Applications are open at [outlierventures.io/base-camp](https://outlierventures.io/base-camp/filecoin-base-camp/).

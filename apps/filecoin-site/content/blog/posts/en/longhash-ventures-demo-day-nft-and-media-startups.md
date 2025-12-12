@@ -25,9 +25,9 @@ _template: blog_detail
 
 On April 23, the Filecoin Frontier Accelerator II powered by LongHash Ventures, hosted a demo day to showcase the 11 teams that completed the 3-month accelerator program. During the program, the teams received hands-on venture support, world-class mentorship, dedicated resources from the Filecoin community, and a $20,000 grant to continue building on the Filecoin network. This post profiles the startups building applications for non-fungible tokens (NFTs) and media solutions with Filecoin’s technology: **Curio, Flame, Huddle 01, Myel, NonEntropy Tech, Numbers Protocol,** and **OP Games**.
 
-## **NFT Startups**
+## NFT Startups
 
-### **Curio**
+### Curio
 
 _Empowering brands to monetize their intellectual property in the entertainment industry with a marketplace for tokenized digital collectibles._
 
@@ -49,7 +49,7 @@ Curio solves for:
 
 One of their largest client use cases to date has included the _American Gods_ television show, and they are currently partnered with graphic novel brands _Concrete Park_ and _Heavy Metal_. The team is in discussions with Universal Music Group for opportunities around Metallica, Paul McCartney, and Grateful Dead partnerships, and with the _007_ movie franchise.
 
-### **Flame**
+### Flame
 
 _A decentralized NFT minting solution catered to the mass market creators._
 
@@ -69,7 +69,7 @@ Flame solves for:
 - _Creators lack control_ — Flame allows creators to have more control over revenue and profit-sharing for their work.
 - _Content can be lost or changed_ — Flame stores creator content in a decentralized way with Filecoin so that it isn’t modified, destroyed, or removed.
 
-### **NonEntropy Tech**
+### NonEntropy Tech
 
 _An on-chain education platform that incentivizes content creation and learner usage._
 
@@ -90,7 +90,7 @@ NonEntropy solves for:
 - _Weak incentives to drive content creation_ — tokenomics incentivize high quality educational content creation.
 - _Limitation on ownership & exchange of content_ — NFTs establish data ownership and continued value capture from content creation.
 
-### **Numbers Protocol**
+### Numbers Protocol
 
 _Creating an authentic media network and turning digital creations into assets._
 
@@ -113,7 +113,7 @@ Every day, 2.5M images are stolen, amounting to 600B in damages. Numbers Protoco
 
 Learn more and contact the team at [https://numbersprotocol.io/](https://numbersprotocol.io/ "https://numbersprotocol.io/")
 
-### **OP Games**
+### OP Games
 
 _A suite of tools that enables multiplayer competitions in single player games._
 
@@ -137,9 +137,9 @@ OP Games solves for:
 
 Learn more and contact the team at [https://outplay.games/](https://outplay.games/ "https://outplay.games/")
 
-## **Media Startups**
+## Media Startups
 
-### **Huddle 01**
+### Huddle 01
 
 _Revolutionizing video conferences for remote learning using blockchain and Web3 technology._
 
@@ -163,7 +163,7 @@ Huddle 01 solves for:
 
 Learn more and contact the team at [https://beta.huddle01.com/](https://beta.huddle01.com/ "https://beta.huddle01.com/")
 
-### **Myel**
+### Myel
 
 _A community-powered content delivery network._
 

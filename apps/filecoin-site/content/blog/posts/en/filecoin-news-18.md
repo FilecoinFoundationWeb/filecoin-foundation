@@ -104,7 +104,7 @@ Many of these innovative applications leveraging Chainlink’s DONs and Filecoin
 
 <a href="https://www.youtube.com/watch?v=QC90YKBSCt4&list=PLGi5rSYpKqxYUuhE1-fVAUD05KGBLWz"><img src="/uploads/curio-symbol.webp" style="width:20%;margin-left:0%"></a>
 
-## **Curio raises $7M to Expand Growth**
+## Curio raises $7M to Expand Growth
 
 [**Curio**](https://c212.net/c/link/?t=0&l=en&o=3162398-1&h=1059209547&u=https%3A%2F%2Foncurio.com%2F&a=Curio), the premier NFT platform for the entertainment industry, that graduated from Longhash’s Filecoin Frontier Accelerator announced it has raised $7M from top tier global investors. The company has successfully launched multiple licensed auctions, drops, products, and new partnerships. We are extremely excited for Curio and the other accelerator teams that are gaining significant traction. To learn more about Curio, [**watch their presentation from Demo Day.**](https://www.youtube.com/watch?v=QC90YKBSCt4&list=PLGi5rSYpKqxYUuhE1-fVAUD05KGBLWz-4&index=3)
 

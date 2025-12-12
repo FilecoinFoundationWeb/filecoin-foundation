@@ -56,7 +56,7 @@ Filecoin和Hedera的合作带来了一个真正的去中心化NFT体验。Fileco
 
 Filecoin和Hedera为如下两个方向的开发者提供20万美元的奖励金：
 
-### **Hedera的去中心化存储SDK和演示应用**
+### Hedera的去中心化存储SDK和演示应用
 
 我们希望让使用Filecoin和Hedera Token Service (HTS)的建设者能够轻松地将这两者整合至其应用程序中。这笔奖金将被授予一个可无缝整合现有Filecoin和Hedera工具链的SDK，它应当实现不可伪造的代币化，并允许在Filecoin网络上存储与HTS代币相关的较大文件（如数字艺术、音乐、JSON元数据等）。Filecoin存储可以通过工具或服务访问，诸如[Estuary](https://estuary.tech/)、 [Fleek Space Daemon](https://github.com/FleekHQ/space-daemon)、[NFT.storage](https://nft.storage/)或 [Textile Powergate.](https://github.com/textileio/powergate/)。
 
@@ -69,7 +69,7 @@ Filecoin和Hedera为如下两个方向的开发者提供20万美元的奖励金�
 
 **_[奖励金: 75,000美元\]_**
 
-### **真实世界的应用**
+### 真实世界的应用
 
 此项奖励金将授予同时运用[Hedera Token Service (HTS)](http://hedera.com/token-service)和Filecoin去中心化存储的现实世界应用提案。开发者可以随心所欲地发挥想象—对应用或用例的类型并没有严格要求，但必须同时运用Hedera HTS和Filecoin。Filecoin存储可通过工具或服务访问，诸如[Estuary](https://estuary.tech/)、[Fleek Space Daemon](https://github.com/FleekHQ/space-daemon)、[NFT.storage](https://nft.storage/)或 [Textile Powergate.](https://github.com/textileio/powergate/)。
 
