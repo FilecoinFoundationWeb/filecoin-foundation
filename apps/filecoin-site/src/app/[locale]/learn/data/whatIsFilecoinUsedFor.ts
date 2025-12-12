@@ -1,7 +1,7 @@
 import type { CardData } from '@filecoin-foundation/ui-filecoin/Card'
 
 import archiveRoom from '@/assets/images/archive-room.webp'
-import computerMontherboardCircuit from '@/assets/images/computer-motherboard-circuit.webp'
+import computerMotherboardCircuit from '@/assets/images/computer-motherboard-circuit.webp'
 import historicLibrary from '@/assets/images/historic-library.webp'
 import testTubes from '@/assets/images/test-tubes.webp'
 
@@ -12,7 +12,7 @@ export const whatIsFilecoinUsedFor = [
       'Powering the data layer for NFTs, video streaming, AI training datasets, and dApps.',
 
     image: {
-      data: computerMontherboardCircuit,
+      data: computerMotherboardCircuit,
       alt: 'Close-up view of a computer motherboard showing chips and circuits',
     },
   },
