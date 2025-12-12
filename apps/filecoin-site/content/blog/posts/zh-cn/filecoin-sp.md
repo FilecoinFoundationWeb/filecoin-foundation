@@ -37,7 +37,7 @@ title: 为什么要成为Filecoin存储提供者？
 
 与此同时，数据的产出并没有放缓步伐。根据IDC [预测](https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf) ，从2020年到2025年数据生成量会增加三倍，到达125 zettabytes。这些数据的80%会由那些当前正依赖云服务来满足82%需求的企业产出。要是设想这些数据的大部分会逐步迁移到去中心化运作者手里并不是天荒夜谈，毕竟这样的迁移有很多好处。很多数据甚至可能在Web3原生的环境里产生。
 
-### 加入Filecoin社区
+## 加入Filecoin社区
 
 随着存储需求的增加，以及企业对Web3原生方案的优点更为热衷，选择去中心化路径的个体存储提供者可切入的市场变得更加宽广。服务提供者加入Filecoin并拥抱从云存储到分布式存储转型，能获得切实的优势：
 
@@ -51,7 +51,7 @@ title: 为什么要成为Filecoin存储提供者？
 
 除了这些优势外，Filecoin还在扩展存储以外的用例。如[Filecoin虚拟机](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) 的开发向这个网络中引入了智能合约能力。随着网络演化，存储提供者会继续担当基础性角色。
 
-### 如何成为存储提供者
+## 如何成为存储提供者
 
 如果你有意成为存储提供者，可以通过以下资源探索：
 
@@ -62,9 +62,9 @@ title: 为什么要成为Filecoin存储提供者？
 - [为Filecoin存储提供者设计的视频列表](https://youtube.com/playlist?list=PL_0VrY55uV1_Z83vRQq5DsSI20X1YWO4q)
 - ProtoSchool “Filecoin上验证存储”[教程](https://proto.school/verifying-storage-on-filecoin)
 - 教程:
-  - [成为存储提供者教程](https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/)
-  - [深入探索存储提供者生态](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/)
-  - [Filecoin's Island Economy](https://filecoin.io/blog/posts/filecoin-s-island-economy/)
+- [成为存储提供者教程](https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/)
+- [深入探索存储提供者生态](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/)
+- [Filecoin's Island Economy](https://filecoin.io/blog/posts/filecoin-s-island-economy/)
 
 记得跟社区保持联系:
 

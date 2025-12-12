@@ -32,7 +32,7 @@ ConsenSys的产品工具为[上百万](https://consensys.net/about/)用户提供
 
 这是一个值得纪念的历史时刻。我们有机会建立新的技术基础设施，改变下一代网络的信任和权力定义，把数据自治、分布式验证和防篡改的数据系统作为网络和应用开发的前沿和中心。ConsenSys和协议实验室将共同帮助世界开启Web3的应用层。
 
-### 欢迎ConsenSys推出的一系列Filecoin网络工具
+## 欢迎ConsenSys推出的一系列Filecoin网络工具
 
 通过此次合作，ConsenSys将在其全套工具的基础上为促进Filecoin网络的使用提供新的功能。这些工具将进一步提高以太坊、IPFS和Filecoin各自的创建者、开发者和终端用户社区的融合度。
 

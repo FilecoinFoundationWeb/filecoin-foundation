@@ -36,7 +36,7 @@ For these data integrity checks to provide storage users the assurance they desi
 
 A proof system is a cryptographic protocol that participants – generally miners – use to validate the storage services. Filecoin’s proof system solves a previously intractable problem for decentralized storage: How can miners _prove_ that they are really storing the data they say they are through time and that they are dedicating unique physical space? To understand this, we need to take a look at how Filecoin implements decentralized storage and what makes its proof system unique.
 
-### How Filecoin implements decentralized storage
+## How Filecoin implements decentralized storage
 
 In a centralized storage service, we place our trust in well-known companies or entities that guarantee the integrity and security of their systems. This third-party entity is key to maintaining confidence in the network. For example, when we use Amazon S3 for cloud storage, we aren’t really trusting the _network of data servers_ that Amazon employs. Rather, we trust _Amazon_ to guarantee that the network works as promised – that the data we store with Amazon will be secure and available according to the company’s service level agreements.
 
@@ -50,7 +50,7 @@ But while other blockchains rely on consensus algorithms that require miners to 
 
 That means the Filecoin blockchain itself verifies the acts of storage performed by miners. This is how Filecoin builds trust into the protocol layer of its decentralized network. At its core, Filecoin’s consensus algorithm is powered by two proof mechanisms that together make data storage publicly verifiable on the Filecoin blockchain: _Proof-of-Replication_ and _Proof-of-Spacetime_.
 
-### Proof-of-Replication and Proof-of-Spacetime
+## Proof-of-Replication and Proof-of-Spacetime
 
 To verify storage on Filecoin’s decentralized network, you need to prove two things. First, you need to prove that the right set of data is stored in a given storage space. Second, you need to prove that the same set of data has been stored continuously over a given period of time.
 
@@ -66,6 +66,6 @@ Taken together, PoRep and PoSt make up Filecoin’s unique proof system, a combi
 
 In addition to its proof system, the Filecoin network also relies on game-theoretic incentives to discourage malicious or negligent activity. All miners that agree to store data on the Filecoin network must provide collateral in the form of Filecoin at the time of agreement. Any storage miner that fails a PoSt check is penalized, and portions of this collateral are lost whenever a penalty is applied. After too many penalties, all the collateral is lost, and a miner is prevented from offering storage again to clients. You can read more about some of these cryptoeconomic mechanisms [here](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/).
 
-### Conclusion
+## Conclusion
 
 Designed with novel cryptography, consensus protocols, and game-theoretic incentives, the Filecoin protocol provides a decentralized storage network and marketplace that clients and miners can use with confidence. At the heart of it all is Filecoin’s unique approach to storage verification. You can read more about verifying storage on Filecoin in our latest [ProtoSchool tutorial](https://proto.school/#/verifying-storage-on-filecoin).

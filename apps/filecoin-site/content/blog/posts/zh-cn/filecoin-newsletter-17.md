@@ -31,13 +31,13 @@ _template: blog_detail_ch
 
 <a href="https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii"><img src="/uploads/accelerator-rocket-purple.webp" style="width:18%;margin-left:0%"></a>
 
-### Filecoin Launchpad 第二期加速营– 5月9日前申请
+## Filecoin Launchpad 第二期加速营– 5月9日前申请
 
 Tachyon的Filecoin Launchpad Accelerator是一个全天候、全远程的运营项目，旨在帮助初创企业为分布式和去中心化的网络建立更开放、可互操作和可编程的工具、基础设施和应用程序。通过该计划，Tachyon支持在[**IPFS**](https://ipfs.tech/)、[**Filecoin**](https://filecoin.io/)和 [**Ethereum**](https://ethereum.org/)社区的基础上，用工具、中间件和应用程序建立和连接的项目。下一批项目将于2021年6月至8月开展，为来自全球的20个团队提供资金、指导、福利以及围绕商业和区块链具体问题的编程，最终将在9月份启动演示日和项目后筹款支持。申请现已开放，并在美国东部时间5月9日午夜截止。[**马上申请**](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii)！
 
 <a href="https://www.youtube.com/watch?v=-lwttk-HsoQ&list=PL_0VrY55uV1-l8s_5YrhN1eLX-tEtW9ku"><img src="/uploads/accelerator-frontier-igloo-purple.webp" style="width:20%;margin-left:0%"></a>
 
-### Filecoin Frontier Accelerator 演示日回顾, 4月23日
+## Filecoin Frontier Accelerator 演示日回顾, 4月23日
 
 4月23日，Longhash Ventures、Fenbushi Capital和Filecoin共同举办了Filecoin Frontier Accelerator演示日活动，展示了11个建立Filecoin生态系统的关键组件和用例的Web 3.0项目，此次活动标志着这些项目从Filecoin Frontier Accelerator顺利毕业。Filecoin Frontier Accelerator是一个严格的风险建设计划，它提供了生态系统领导人指导、战略引导和对市场执行的实际支持。
 
@@ -45,7 +45,7 @@ Tachyon的Filecoin Launchpad Accelerator是一个全天候、全远程的运营�
 
 <img src="/uploads/metamask.webp" style="width:35%;margin-left:0%">
 
-### MetaMask + Filecoin 开发者预览
+## MetaMask + Filecoin 开发者预览
 
 MetaMask的这个版本是一个特殊的开发者版本，它通过即将推出的MetaMask Snaps可扩展系统原型，对Filecoin提供基本支持。我们提供此版本是为了让Filecoin的开发者可以开始创建使用Filecoin的Web3网站。
 
@@ -53,7 +53,7 @@ MetaMask的这个版本是一个特殊的开发者版本，它通过即将推出
 
 <img src="/uploads/hackathon-tools-filcoin-ipfs.webp" style="width:25%;margin-left:0%"></a>
 
-### IPFS & Filecoin 3月份开发进展
+## IPFS & Filecoin 3月份开发进展
 
 在过去的两个月中，Protocol Labs参加了五场基于IPFS和Filecoin的不同黑客松活动，受众范围从大学建设者到游戏设计师，再到区块链黑客松。
 
@@ -63,7 +63,7 @@ Chainlink的春季黑客松活动在3月初启动，本月中旬结束。紧接�
 
 <a href="https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/"><img src="/uploads/fil-blog-nft-storage-1.webp" style="width:40%;margin-left:0%"></a>
 
-### NFT.Storage简介：为NFT提供免费去中心化存储
+## NFT.Storage简介：为NFT提供免费去中心化存储
 
 我们很高兴向大家介绍[**NFT.Storage**](https://nft.storage/)，这是一项由Protocol Labs和Pinata支持的专项用于NFT数据存储的服务。NFT.Storage允许开发展者通过内容寻址和去中心区存储来保护NFT资产和相关元数据-以确保所有的NFT遵循最佳实践，保持长期可访问性。
 
@@ -71,7 +71,7 @@ NFT.Storage让开发者可以轻松、安全、免费地将NFT数据存储在去
 
 <a href="https://medium.com/videocoin/the-first-videonft-on-videocoin-filecoin-live-demo-91a305509b34"><img src="/uploads/videocoin-logo.webp" style="width:20%;margin-left:0%"></a>
 
-### Video NFTs with Filecoin & VideoCoin – 现场演示
+## Video NFTs with Filecoin & VideoCoin – 现场演示
 
 上个月，我们宣布**VideoCoin**正将其去中心化视频处理网络与Filecoin整合，以打造第一个专门用于创建和交易NFT的平台。在此现场演示中，你将确切地了解到本次整合如何运作，包括如何创建和存储视频NFT及其所有权证明，预览NFT平台和用户界面，以及如何检索所有权证明并证明其可行性。[**点此**](https://medium.com/videocoin/the-first-videonft-on-videocoin-filecoin-live-demo-91a305509b34)现在观看。
 
@@ -79,7 +79,7 @@ NFT.Storage让开发者可以轻松、安全、免费地将NFT数据存储在去
 
 <a href="https://filecoinfoundation.medium.com/join-us-for-filecoin-plus-day-a06b9c4acf85"><img src="/uploads/filecoin-plus-logo.webp" style="width:20%;margin-left:0%"></a>
 
-### 加入Filecoin Plus Day
+## 加入Filecoin Plus Day
 
 Filecoin Plus旨在激励Filecoin network中的有效存储，请加入我们在5月11日星期二下午2点（UTC时间）的Filecoin Plus Day，来更好地了解Filecoin Plus的基本原理。本活动对整个Filecoin社区开放，是为任何有兴趣了解作为客户或公证人加入该计划的人和有兴趣了解该计划经济学知识的人量身打造的活动。
 
@@ -87,7 +87,7 @@ Filecoin Plus旨在激励Filecoin network中的有效存储，请加入我们在
 
 <a href="https://filecoin.io/blog/posts/filecoin-network-v12/"><img src="/uploads/filecoin-12-bug.webp" style="width:22.5%;margin-left:0%"></a>
 
-### 网络升级v12
+## 网络升级v12
 
 2021年4月29日，Filecoin网络升级至第12版。本次升级引入了[**第4版**](https://github.com/filecoin-project/specs-actors/releases/tag/v4.0.0)的[**specs-actors implementation**](https://github.com/filecoin-project/specs-actors)，这是一套明确了Filecoin协议规则的内置actors。新版本specs-actors的设计初衷是通过更好的性能来加速区块验证的时间。欲知更多关于此次升级、背后动机和性能更新的信息，请查看我们近期的[**博文**](https://filecoin.io/blog/posts/filecoin-network-v12/)。
 
@@ -95,7 +95,7 @@ Filecoin Plus旨在激励Filecoin network中的有效存储，请加入我们在
 
 <a href="https://www.meetup.com/Filecoin-San-Francisco/events/276433306/"><img src="/uploads/meetup-1.webp" style="width:40%;margin-left:0%"></a>
 
-### 加入五月社区线上见面会，关注NFT
+## 加入五月社区线上见面会，关注NFT
 
 加入Filecoin社区并参加5月18日的社区聚会，本次聚会完全专注于所有的NFT，包括来自VideoCoin、Fleek等更多人的演讲！Filecoin社区聚会是结识Filecoin生态中工具和项目缔造者的好机会。如果错过了四月聚会，[**观看回放**](https://youtu.be/zjtsnqNjIfo)了解详情，并确保[**注册**](https://www.meetup.com/Filecoin-San-Francisco/events/276433306/)参加下次聚会！
 
@@ -103,7 +103,7 @@ Filecoin Plus旨在激励Filecoin network中的有效存储，请加入我们在
 
 <a href="https://aave.com/"><img src="/uploads/aave.webp" style="width:25%;margin-left:0%"></a>
 
-### Filecoin的借贷功能如今可在以太坊通过[**Aave**](https://aave.com/)实现
+## Filecoin的借贷功能如今可在以太坊通过[**Aave**](https://aave.com/)实现
 
 运作模式：安装一个像[**MetaMask**](https://metamask.io/)的Ethereum钱包，存入像DAI/USDC这样的稳定币作为抵押品，再提取renFIL至上限。然后前往**DeFi Bridge** 将renFIL转换为原生的Filecoin，以运行更多的存储矿工！
 
@@ -111,7 +111,7 @@ Filecoin Plus旨在激励Filecoin network中的有效存储，请加入我们在
 
 <a href="https://proto.school/"><img src="/uploads/prot-logo-symbol-color.webp" style="width:20%;margin-left:0%"></a>
 
-### ProtoSchool的互动教程
+## ProtoSchool的互动教程
 
 有兴趣进一步了解Filecoin、IPLD或libp2p吗？观摩[ProtoSchool的自我指导互动教程](https://proto.school/)，了解去中心化的网络概念、协议和工具。选择你的主题，并以适合你的形式跟踪你的进展。在你的网络浏览器中完成JavaScript代码挑战，或者坚持使用我们基于文本或者更多选择的教程，以获得无代码的体验。
 

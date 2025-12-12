@@ -25,7 +25,7 @@ _template: blog_detail_ch
 
 本文将重新介绍其中的一些演讲和圆桌讨论，以帮助您可以快速地在Filecoin上进行存储和创建。您可以在此处查看Filecoin活动（包括已经举办的和未来将要举办）的全部记录。
 
-### [精品课程: Powergate简介](https://www.youtube.com/watch?v=synHYG4AnJk&feature=youtu.be)
+## [精品课程: Powergate简介](https://www.youtube.com/watch?v=synHYG4AnJk&feature=youtu.be)
 
 [Textile](http://textile.io/)的联合创始人兼CEO [Andrew Hill](https://www.linkedin.com/in/andrewxhill/)主持了本次课程。Textile为开发者提供了可以更快、更轻松地在IPFS和Filecoin上创建分布式应用程序的工具。在精品课程中，Andrew讨论了如何使用[Textile Powergate](https://docs.textile.io/powergate/)，该库管理了跨Filecoin和IPFS网络的存储和检索。
 
@@ -35,7 +35,7 @@ _template: blog_detail_ch
 
 Textile还有[Buckets](https://docs.textile.io/buckets/)，这是一种具有Filecoin功能的类似S3的云存储解决方案。您可以在[此处](https://www.youtube.com/watch?v=Id4SRT9_2CM&list=PL_0VrY55uV19nu6orLLCaGCGocsjvpiGZ&index=5)观看Textile简介的Buckets精品课程。
 
-#### 使用Powergate的好处
+### 使用Powergate的好处
 
 - 确保存储在Filecoin上的数据可在IPFS网络上轻松访问和快速检索。
 - 处理长期存储交易管理，包括自动续订和修复。
@@ -43,7 +43,7 @@ Textile还有[Buckets](https://docs.textile.io/buckets/)，这是一种具有Fil
 - 管理一个或多个用户的Filecoin钱包地址。
 - 可一键配置、连接和部署Powergate、Lotus和IPFS。
 
-#### Andrew 使用Powergate的几个小技巧
+### Andrew 使用Powergate的几个小技巧
 
 1. **从Localnet开始**。您可以在5分钟内开始使用Filecoin测试您的想法。无需FIL即可在一分钟内进行没有网络问题的端到端交易。
 
@@ -51,7 +51,7 @@ Textile还有[Buckets](https://docs.textile.io/buckets/)，这是一种具有Fil
 
 3. **从小处着手**。离开Localnet并开始在实时的网络上进行交易后，请注意不要在第一时间就进行全部交易，可以先选择进行部分GiB开始进行交易、检查生命周期，然后继续进行更大的交易。
 
-### [精品课程: 为Filecoin存储准备大量的数据](https://www.youtube.com/watch?v=q2-HuBCBWo4&feature=youtu.be)
+## [精品课程: 为Filecoin存储准备大量的数据](https://www.youtube.com/watch?v=q2-HuBCBWo4&feature=youtu.be)
 
 [Rod Vagg](https://www.linkedin.com/in/rvagg/)、[Mikeal Rogers](https://www.linkedin.com/in/mikealrogers/)和[Chris Hafey](https://www.linkedin.com/in/chafey/)是协议实验室的[IPLD](https://docs.ipld.io/)团队成员，他们与Slingshot参与者进行了交流，探讨了如何将大型数据集存储到Filecoin上。IPLD是[Filecoin的重要组成部分](https://docs.filecoin.io/project/related-projects/#ipld)，有助于跨内容寻址网络的数据结构进行互操作。
 
@@ -59,7 +59,7 @@ Rod首先给出了IPLD的基本入门知识，即“具有IPLD的内容寻址数
 
 Chris和Mikael的演讲《使用Dumbo Drop为Filecoin存储大量数据集做准备》介绍了Filecoin Dumbo Drop项目的一般方法、体系结构和经验教训。 Dumbo Drop的目标是在短时间内为Filecoin处理大量开放数据。到目前为止，该项目已经处理了超过3PB的数据。
 
-#### 通过他们的课程可以了解
+### 通过他们的课程可以了解
 
 1. AWS在这种规模程度上不是100％可靠的-会发生随机故障！
 
@@ -69,7 +69,7 @@ Chris和Mikael的演讲《使用Dumbo Drop为Filecoin存储大量数据集做准
 
 4. 计算很便宜，但存储昂贵。
 
-#### 为Filecoin使用者提供几个小技巧
+### 为Filecoin使用者提供几个小技巧
 
 1. **Rod** ：“了解数据原语，了解IPLD的基础知识以及在Merkle DAG数据结构中蕴藏的巨大潜力。”
 
@@ -77,7 +77,7 @@ Chris和Mikael的演讲《使用Dumbo Drop为Filecoin存储大量数据集做准
 
 3. **Mikael** ：“您可以存储的不仅仅是文件：)”
 
-### [我们如何创建了：Filecoin上的包管理器托管](https://www.youtube.com/watch?v=ZoD0HvBM-bo&feature=youtu.be)
+## [我们如何创建了：Filecoin上的包管理器托管](https://www.youtube.com/watch?v=ZoD0HvBM-bo&feature=youtu.be)
 
 OB1的联合创始人兼CEO[Brian Hoffman](https://www.linkedin.com/in/brianchoffman/)讨论了他们团队的5MB项目，该项目用于存储和检索Filecoin上的包管理器托管。2015年OB1起初由一个当时在工作小团队在空闲时间里成立。他们看到了去中心化交易在比特币社区获得了热情的支持，因而决定接受风险投资来建立公司并招募开发团队将OpenBazaar打造成可以彻底改变电子商务现状的项目。
 
@@ -91,7 +91,7 @@ Brain还向我们介绍了5MB的系统架构，该系统架构使用了Textile P
 
 - **阶段3**：存档和检索。其中数据buckets通过Powergate接入Filecoin，并可以通过UI（IPFS GUI的修正版本）进行访问。
 
-#### Brian在Filecoin上进行创建的三个主要原因
+### Brian在Filecoin上进行创建的三个主要原因
 
 1. **可持续的数据生态系统**：我们需要一种可以使可靠的大规模数据集以可持续的方式激励数据存储基础架构的方法。
 
@@ -99,7 +99,7 @@ Brain还向我们介绍了5MB的系统架构，该系统架构使用了Textile P
 
 3. **IPFS已有良好的信誉**：我们使用IPFS已有多年，并且了解其优缺点。该技术是切实有效的，我们对Filecoin感到兴奋。
 
-### [我们是如何创建Slate的](https://www.youtube.com/watch?v=XofZP6YEkhg)
+## [我们是如何创建Slate的](https://www.youtube.com/watch?v=XofZP6YEkhg)
 
 Slate是一种存储应用程序和Filecoin网络用户端，可让您通过界面或API存储图像、音频、视频和数据。Slate联合创始人之一[Jim Lee](https://twitter.com/wwwjim?lang=en)讨论了什么是Slate、它从简单的Filecoin用户端发展到强大的媒体共享产品的演变过程以及未来。他希望分享早期在Filecoin上创建应用程序的经验教训和见解。
 
@@ -109,7 +109,7 @@ Jim在介绍开发和创新过程的背景同时也介绍了目前应用程序�
 
 Jim还展示了Slate的基础知识（例如，上传到浏览器的基本文件是如何工作的），并展示了Slate等应用程序的潜在使用场景，演示了如何使用Slate创建简单的应用程序来存储数据。他还使用Powergate和Slate组件创建了一个非常简单的可以发送和接收Filecoin的应用程序。
 
-### [圆桌：通向万能之路](https://www.youtube.com/watch?v=MXmH5JjtGFk&feature=youtu.be)
+## [圆桌：通向万能之路](https://www.youtube.com/watch?v=MXmH5JjtGFk&feature=youtu.be)
 
 在Filecoin上存储数据的项目正在加入Web3生态。尽管Web3尚处于起步阶段，但许多人认为它与当今的Web相比提供了固有的优势，现在是实践并获取先发优势的好时机。 Slingshot也举办了Web3生态的专家圆桌会议，他们讨论了如何考虑用户采纳以及如何扩展Web3产品的市场。
 
@@ -119,7 +119,7 @@ Web3是软件开发领域的一次改革，应用程序正在从基于中心化�
 
 Web3生态已经走了很长一段路，在这个领域有许多有潜力的项目。我们圆桌参与者从为技术着想而创建很酷的技术转化到为用户创建实用的产品，鼓励潜在的开发者开始注重从市场的角度出发进行思考。
 
-#### 圆桌参与者的一些见解
+### 圆桌参与者的一些见解
 
 **Gabriel Anderson:** “我们处于Web3生命周期的早期，现在一些应用程序开始萌发，并且我们看到了一些真正创新的早期用例。例如，不管您是否知道，每个人都有数字资产，并且在继承数字资产方面存在一定的问题。一家公司正在为人们传承其数字资产创造无缝体验。还有一个为视频转录服务的整个市场，通过极高性价比解决了延迟问题。”
 
@@ -127,6 +127,6 @@ Web3生态已经走了很长一段路，在这个领域有许多有潜力的项�
 
 **Shi Khai:** “作为开发者，我们需要专注于建立将与我们一直在一起的真正用户和社区。寻找能够为您提供真实反馈的真正用户社区，而不是仅仅因为是新事物而觉得很酷的人。”
 
----
+## 
 
 感谢所有参与Slingshot活动的演讲者和参与者！当我们进入比赛第一阶段的最后一周时，我们很高兴看到团队开始利用他们从这些赛事中学到的知识。我们期待看到更多的开发者在Filecoin上进行存储和创建。

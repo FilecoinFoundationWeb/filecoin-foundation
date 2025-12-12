@@ -27,7 +27,7 @@ Amazon, Google, Microsoft, iCloud and DropBox — those are the names of the maj
 
 That’s why each of the above companies earns a significant amount of their annual revenue from their centralized cloud storage businesses today, with Amazon being the most dominant player in the space by far.
 
-### How Much Money is in Web2 Cloud Storage?
+## How Much Money is in Web2 Cloud Storage
 
 [One research study estimates](https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf) that 49% of data storage will be in the cloud by 2025. The same study suggests that the global datasphere will increase in size from 33 million terabytes (TB) in 2018 to over 175 million TB by 2025. Just to put into perspective how much 175 million TB really is, it would take 1.8 billion years to download that amount of data with a connection speed of 25 MB per second.
 
@@ -37,7 +37,7 @@ That explains how a company like Amazon made over [$45 billion in revenue](https
 
 Amazon’s cloud storage business is so valuable to the company that when Jeff Bezos announced he was stepping down last year, the man responsible for building AWS into the giant it is today was named as his replacement: Andy Jassy.
 
-### Major Revenue Growth Means Major Capital and Overhead Expenses
+## Major Revenue Growth Means Major Capital and Overhead Expenses
 
 Web2 centralized cloud storage services are not cheap to launch or grow. After all, offering fast and secure centralized storage to users means building huge physical data centers that can house the servers, networking, and cooling equipment necessary to accommodate the storage needs of some of the world’s largest companies.
 
@@ -51,7 +51,7 @@ It’s estimated [that Amazon’s monthly costs](https://mvdirona.com/jrh/TalksA
 
 While it’s estimated that cloud storage services can save businesses [between 10% and 20%](https://assets.kpmg/content/dam/kpmg/pdf/2015/11/cloud-economics.pdf) of their infrastructure costs, reliance on a centralized service has its financial drawbacks. That’s not even considering the expense required to continue scaling these businesses at a modern pace. Amazon spent over $116 million to buy 90 acres of land in northern Virginia in 2019 and committed to building three new data centers on the property that are going to cost the company [more than $200 million to build](https://www.datacenterdynamics.com/en/news/amazon-aims-fast-track-three-data-centers-northern-virginia/).
 
-### The Cost of Web2 Centralized Data Storage to Developers, Businesses, and Individuals
+## The Cost of Web2 Centralized Data Storage to Developers, Businesses, and Individuals
 
 _Egress bandwidth_ refers to the minimum and maximum upload speed available on a wide area network. If you’re not benefiting from edge computing, which is computing done at or near a data center or source for the sake of lowering transmission costs, the price of transferring data could be out of reach for startups, developers, and individuals.
 
@@ -61,13 +61,13 @@ It’s estimated that Amazon, Google Cloud Perform, and Microsoft Azure [waste 3
 
 Amazon has more than [70,000 different price points](https://awsinsider.net/articles/2017/11/20/rightscale-aws-overpay-6-billion.aspx) for customers based on their individual needs, discounts, or eligible value add services. Difficulty in standardizing pricing, delivery, or storage often means developers and small businesses get crushed by the very services they depend on when their fees skyrocket.
 
-### Filecoin Solves the Problems Web2 Centralized Storage Cannot
+## Filecoin Solves the Problems Web2 Centralized Storage Cannot
 
 Filecoin uses storage space provided by the crowd in order to offer users and businesses cloud storage services in a decentralized format. Decentralization means no need to spend capital building out huge data centers that can ultimately burn out due to environmental elements, power demands, or sheer cost.
 
 What’s more, scaling data storage costs don’t have to scale in lockstep with the volume of data being transferred at any given moment or the amount of data being stored in perpetuity. This is in contrast to centralized storage, which has more linear pressures of scale.
 
-### Allowing Users to Monetize, Democratize, and Utilize Storage
+## Allowing Users to Monetize, Democratize, and Utilize Storage
 
 Thanks to decentralization, the costs of storing and transferring data can actually go down as time goes on because the network can choose the cheapest route for transferring data. Ultimately, what all this means is that businesses, developers, and individual users alike can store their data at a fraction of the cost of using a major web2 centralized storage solution.
 
@@ -75,7 +75,7 @@ All of the above benefits are evident within a web3 decentralized solution like 
 
 Publicly- traded companies like Amazon, Microsoft, Google, and DropBox certainly have a vested interest in increasing the value of their stock prices and the shareholder value that is often tied to it. However, that doesn’t mean they are interested in decentralizing every facet of their business models in order to benefit the masses and lower the cost of storing, transmitting, and securing data.
 
-### Growing Web3 Storage
+## Growing Web3 Storage
 
 Today’s cloud storage ecosystem has provided tremendous growth and scale for the world’s businesses, and has allowed individuals to store their personal information more confidently. With such rampant growth over the last decade, however, the cracks of centralized storage are beginning to show.
 

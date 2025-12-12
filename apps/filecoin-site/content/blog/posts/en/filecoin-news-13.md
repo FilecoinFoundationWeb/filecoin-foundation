@@ -30,7 +30,7 @@ _template: blog_detail
 
 <img src="/uploads/aa9da583-59a2-44cc-a131-7913efbd460b.webp" style="width:18%;margin-left:0%">
 
-### **Filecoin Launchpad Accelerator**
+## **Filecoin Launchpad Accelerator**
 
 33 founders from 11 countries participated in an immersive twelve-week program bridging the IPFS, Filecoin and Ethereum communities. Learn more about the builders and their startups over on the Filecoin blog.
 
@@ -40,7 +40,7 @@ _template: blog_detail
 
 <img src="/uploads/c2f9cdfc-a335-4ab1-b0fe-adbe819004ed.webp" style="width:40%;margin-left:0%">
 
-### NFT Hackathon: March 19-21
+## NFT Hackathon: March 19-21
 
 NFTHack is bringing together a virtual collective of passionate creatives and engineers for a weekend NFT hackathon and summit powered by ETHGlobal on March 19-21. The event is a great opportunity to explore this exciting new space. There will be challenges from Zora, Rarible, Ethereum, Filecoin, IPFS, and more! Prizes include limited edition NFTs, exclusive experiences, and over $10k. [**Learn more and register here**](https://nft.ethglobal.co/).
 
@@ -48,7 +48,7 @@ NFTHack is bringing together a virtual collective of passionate creatives and en
 
 <img src="/uploads/248952c2-a22e-4425-805c-6d556b5f5df7.webp" style="width:20%;margin-left:0%">
 
-### The Space Beta is Here
+## The Space Beta is Here
 
 Space is an open-source, user-controlled, encrypted file storage and sharing platform built on the open and decentralized web. The Fleek team has announced the launch of Beta for Space, which features an app for personal and distributed file storage and sharing on IPFS & Filecoin. This release is an example of how developers can leverage **Web 3.0 protocols** to create platforms where users, not the app itself, have exclusive control over their accounts and storage.
 
@@ -56,7 +56,7 @@ Space is an open-source, user-controlled, encrypted file storage and sharing pla
 
 <img src="/uploads/49082bd0-a1b4-49a5-91e5-db9ce189f068.webp" style="width:20%;margin-left:0%">
 
-### An Update on Forest from the ChainSafe Team
+## An Update on Forest from the ChainSafe Team
 
 We're excited to announce that Forest, the Rust implementation of Filecoin, is now interoperable with the Filecoin mainnet! In order to reach this milestone, we first focused on updating to Actors v2 and passing all the [**interoperability test vectors**](https://github.com/filecoin-project/test-vectors). Once we had that, in order to uncover any remaining consensus discrepancies, we attempted to sync with mainnet and fixed any issues that came up. At this point, we have had a node staying in sync with the Filecoin network for several weeks without any issues.
 
@@ -73,7 +73,7 @@ Note that the integration of v3 actors was already completed in [**1.4.2**](http
 
 <img src="/uploads/4e34038d-eafa-416e-bd7a-a46b629ede54.webp" style="width:40%;margin-left:0%;margin-top:2em">
 
-### Filscan.io has been updated
+## Filscan.io has been updated
 
 [**Filscan.io**](http://filscan.io/) now has increased speed, UI improvements, and visual analytics, including: 24hr Base Fee Variations, FIL Distribution, sector ratios, lucky values, and details about transaction lists. [**Check it out!**](https://filscan.io/#/home)
 
@@ -85,7 +85,7 @@ Filecoin community meetups are an opportunity to meet the people behind the many
 
 <img src="/uploads/33a29e46-4fc2-44a3-916f-b51988547a3b.webp" style="width:18%;margin-left:0%">
 
-### DI2F Workshop at IFIP Networking 2021: Decentralizing the Internet with IPFS and Filecoin
+## DI2F Workshop at IFIP Networking 2021: Decentralizing the Internet with IPFS and Filecoin
 
 The first DI2F workshop, taking place at a premier networking conference, will bring together attendees from academia, industry, and the Filecoin and IPFS ecosystems, as well as the broader decentralized internet communities. The workshop welcomes work-in-progress papers, as well as position statements and project demos. A capstone competition will give attendees the chance to build on top of IPFS and Filecoin, and win prizes. The call for papers, demos, and competition projects is open until **March 19th**. To learn more and submit, check out the [**Call for Contributions on the IFIP Networking 2021 website**](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin.html).
 

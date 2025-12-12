@@ -19,13 +19,13 @@ related_article_2: >-
 
 Inspired by Optimism, FIL-RetroPGF is a pioneering retroactive impact funding initiative tailored to the unique needs of the Filecoin community. [Round 1](https://fil-retropgf.io/) has already made waves, successfully distributing over 200,000 FIL to 95 diverse projects. As we prepare for FIL-RetroPGF-2, set to launch in Fall 2024, our excitement grows as we work to refine and enhance the program, recognizing the remarkable contributions of hundreds of builders in the coming months.
 
-### 💪 Celebrating Our Funders
+## 💪 Celebrating Our Funders
 
 FIL-RetroPGF would not be possible without the generous support of our funders. In the inaugural round, contributors such as Titan Network, [web3mine/Ramo](https://www.ramo.io), [Filecoin Foundation](https://fil.org/), and [Protocol Labs](https://protocol.ai/) played a pivotal role, collectively enabling the distribution of nearly $1 million USD to 95 public goods projects within the Filecoin ecosystem.
 
 As we look ahead to FIL-RetroPGF-2, we invite more donors to join this impactful initiative. By becoming a funder, you have the opportunity to make a lasting contribution, influence the direction of the Filecoin ecosystem, and amplify the incentives driving the growth of Filecoin public goods. To explore how you can get involved and learn about our sponsorship packages, please reach out to us at [ops@fil-retropgf.io](mailto:ops@fil-retropgf.io).
 
-### 🔄 Round 2: Stronger, Faster, Better
+## 🔄 Round 2: Stronger, Faster, Better
 
 We are thrilled to announce that Round 2, launching in Fall 2024, will be an even more robust, efficient, and user-friendly experience.
 
@@ -33,7 +33,7 @@ We are thrilled to announce that Round 2, launching in Fall 2024, will be an eve
 - Faster: The application process, badgeholder voting, and distribution timeline will be streamlined for greater efficiency.
 - Better: User experience improvements, informed by feedback from badgeholders, applicants, and funders, will enhance communication through our dedicated Telegram channel, and funding will be seamlessly streamed via [Drips on FVM](https://drips.network/). For a detailed overview of the upcoming changes, we invite you to review the insights from Round 1.
 
-### 🏅 Spotlight on High-Impact Projects
+## 🏅 Spotlight on High-Impact Projects
 
 The second round will continue to support a broad array of categories, as seen in Round 1:
 

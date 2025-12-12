@@ -25,7 +25,7 @@ title: Filecoin News 58
 
 <a href="https://filecoin.io/blog/posts/the-fvm-imaginarium-magmo-brings-state-channels-to-the-filecoin-virtual-machine/"><img src="/uploads/filecoin_blog_header__fvm_imaginarium__magmo.webp" style="width:40%;margin-left:0%"></a>
 
-### Introducing the FVM Imaginarium
+## Introducing the FVM Imaginarium
 
 The launch of the Filecoin Virtual Machine (FVM) is quickly approaching, but there are already amazing projects in development. The FVM Imaginarium Campaign is putting the spotlight on the teams who are building incredible use cases and introducing new opportunities and concepts on FVM. The first highlighted is Magmo, a development studio and research team who is working on porting State Channels to the FVM. [Check out the feature!](https://filecoin.io/blog/posts/the-fvm-imaginarium-magmo-brings-state-channels-to-the-filecoin-virtual-machine/)
 
@@ -33,23 +33,23 @@ The launch of the Filecoin Virtual Machine (FVM) is quickly approaching, but the
 
 <img src="/uploads/coindesk.webp" style="width:40%;margin-left:0%">
 
-### Coindesk Predicts the Future of Filecoin
+## Coindesk Predicts the Future of Filecoin
 
 According to Coindesk’s 2023 Predictions, Filecoin will become a “fully fledged layer 1 protocol in its own right, paving the way for the world’s largest decentralized data economy.” With the launch of the Filecoin Virtual Machine coming in spring 2023, builders will be able to create a new wave of use cases for the Web3 space.
 
 <a href="https://ethglobal.com/events/spacewarp"><img src="/uploads/spacewarp-logo.webp" style="width:40%;margin-left:0%"></a>
 
-### ICYMI: Announcing Space Warp
+## ICYMI: Announcing Space Warp
 
 The [Space Warp](https://spacewarp.fvm.dev/) program was launched to inspire developers to build with the new FEVM and unlock its vast potential in shaping the future of the data economy. Across grants, hackathon and more support programs for builders, the initiative aims to accelerate the development of new value-adding apps on the Filecoin network in preparation for FEVM mainnet launch in 2023. The first FVM Space Warp Hackathon with ETHGlobal begins on January 18! For more information, visit the [FVM Space Warp Hackathon](https://ethglobal.com/events/spacewarp) event page.
 
-### Fleek Closes 2022 With Huge Announcements
+## Fleek Closes 2022 With Huge Announcements
 
 Fleek met the end of the year with several achievements. The team completed a $25M Series A led by Polychain and key backers in the decentralized storage ecosystem. In addition, the Fleek Network was announced to patch in content delivery, something that was originally missing in the Web3 infrastructure stack. The team also revealed a new Web3 development platform - protocol agnostic, non-custodial, and open-source.
 
 <a href="https://hhueol4i6vp.typeform.com/to/b1VDj6sU?typeform-source=tableland.xyz"><img src="/uploads/filecoin.webp" style="width:35%;margin-left:0%"></a>
 
-### Introducing Filecoin Chair
+## Introducing Filecoin Chair
 
 In collaboration with Tableland, the Filecoin Chair is an initiative that provides supplemental support and funding for teams building joint use cases between Tableland and Filecoin. Teams interested in building novel concepts that combine Filecoin’s leading decentralized storage tools with Tableland’s permissionless relational database can [apply for the Filecoin Chair position](https://hhueol4i6vp.typeform.com/to/b1VDj6sU?typeform-source=tableland.xyz) in Pilot Program 3, kicking off on January 23.
 
@@ -57,7 +57,7 @@ In collaboration with Tableland, the Filecoin Chair is an initiative that provid
 
 <img src="/uploads/fvm.webp" style="width:40%;margin-left:0%">
 
-### Request for Startups - FVM Edition
+## Request for Startups - FVM Edition
 
 The Filecoin Virtual Machine will unlock endless possibilities for innovation on the Filecoin network, and teams are already beginning to build incredible use cases. For those interested in building but aren’t sure where to start, the FVM dev team has created a Request for Startups page that details 24 ideas for systems, apps, and building blocks that are ready to be developed!
 
@@ -65,29 +65,29 @@ The Filecoin Virtual Machine will unlock endless possibilities for innovation on
 
 <img src="/uploads/spaces.webp" style="width:40%;margin-left:0%">
 
-### Twitter Spaces: FVM Frames
+## Twitter Spaces: FVM Frames
 
 The FVM unlocks boundless opportunities. Hear the TL;DR on the new Twitter Spaces series, #FVM Frames with Jonathan Victor, leading up to the FVM mainnet launch in Spring 2023. Engage, excite, and explore with the Filecoin community on each AMA episode starting this week, January 11th at 1pm ET. Then join us bi-weekly for the latest news, use cases, funding initiatives and more. We are counting on you to capture these opportunities and turn these ideas into reality! Send in your questions anytime on Twitter using #FVM or email events@protocol.ai and we look forward to seeing you there!
 
 <a href="https://ethglobal.com/events/spacewarp"><img src="/uploads/spacewarp.webp" style="width:40%;margin-left:0%"></a>
 
-### The FVM Space Warp Hackathon
+## The FVM Space Warp Hackathon
 
 Interested in building on top of FVM? The FVM Space Warp Hackathon with ETHGlobal is approaching fast! Be among the first to build on the Filecoin Virtual Machine and have the opportunity to win a piece of the $100,000 prize pool. Week 1 begins on January 18! For more information, visit the [FVM Space Warp Hackathon](https://ethglobal.com/events/spacewarp) event page and apply to hack.
 
-### Filecoin Green Virtual Meetup
+## Filecoin Green Virtual Meetup
 
 A green, sustainable web3 ecosystem is the future. Come plug into the latest developments in making Filecoin greener and using Filecoin to drive sustainability in the legacy economy! Join us this month for a special edition carbon offset roundtable on Tuesday, January 24 at 1pm ET. Send in questions ahead of time to events@protocol.ai and the Filecoin Green team will answer them at the meetup!
 
 <img src="/uploads/estuary.webp" style="width:40%;margin-left:0%">
 
-### Apply to Attend the First-Ever Estuary Party
+## Apply to Attend the First-Ever Estuary Party
 
 The community is invited to apply for an exclusive party celebrating the success of Estuary, the “easiest way to put and get your data from Filecoin.” The party takes place at CLIO, Toronto on January 24, and applications to attend the invite-only event are open until January 17. Those who are accepted will receive confirmation within 48 hours.
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
 
-### ✊ Get Involved
+## ✊ Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

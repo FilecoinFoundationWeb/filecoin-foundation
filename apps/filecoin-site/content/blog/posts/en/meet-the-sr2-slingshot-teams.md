@@ -29,7 +29,7 @@ We’re about a week into the Space Race 2 Slingshot competition, and it is off 
 
 This week, we talked to four teams to learn more about their work, how they got involved with Slingshot and why they’re building on Filecoin.
 
-### Team: Fin-File
+## Team: Fin-File
 
 ![fin-file](https://filecoin.io/vintage/images/blog/fin-file.png =40%x)
 
@@ -45,7 +45,7 @@ This week, we talked to four teams to learn more about their work, how they got 
 
 **What resources have you found useful on your Slingshot journey so far?** The [Master Classes](https://www.youtube.com/watch?v=Id4SRT9_2CM&feature=youtu.be&ab_channel=Filecoin) hosted by Andrew Hill and team have solved my team’s specific difficulties and put us on the right path.
 
-### Team: Yolo
+## Team: Yolo
 
 ![yolo](https://filecoin.io/vintage/images/blog/yolo.png =30%x)
 
@@ -59,7 +59,7 @@ This week, we talked to four teams to learn more about their work, how they got 
 
 **Why did you join Slingshot?** We believe that Filecoin is the unicorn in the next wave of Web3, and we must join in the ecosystem to be involved in the future.
 
-### Team: Scavenger Hunt
+## Team: Scavenger Hunt
 
 ![Scavenger Hunt](https://filecoin.io/vintage/images/blog/scavenger-hunt.png =30%x)
 
@@ -75,7 +75,7 @@ Initially, I’ve stored a version of the “simple English” Wikipedia built f
 
 I’m primarily participating in Slingshot for the experience and for the community. I think the people interested in trying out Slingshot apps will like and understand the game.
 
-### Team: [Decentralized Docker Hub](https://github.com/viraja1/decentralized_docker_hub)
+## Team: [Decentralized Docker Hub](https://github.com/viraja1/decentralized_docker_hub)
 
 ![Decentralized Docker Hub](https://filecoin.io/vintage/images/blog/decentralized-docker-hub.png =30%x)
 
@@ -89,7 +89,7 @@ I believe that we need an alternative to centralized Docker registries. Relying 
 
 **Have you found helpful advice within the Slingshot community?** The online sessions and community have been very useful. I’ve found the Textile team to be particularly helpful. The discussions in the Slack groups (e.g., #slingshot, #powergate-users, #buckets-users) have provided answers to any question I’ve encountered.
 
-### Participate in Slingshot
+## Participate in Slingshot
 
 SR2 Slingshot is a community competition that rewards the storage of real, valuable, and usable data on the Filecoin network. We’re especially inspired by the projects that are storing large, culturally or scientifically valuable datasets on Filecoin. And the more data you onboard, the more FIL you earn!
 

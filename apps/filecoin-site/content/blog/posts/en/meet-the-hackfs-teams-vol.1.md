@@ -43,7 +43,7 @@ This week, we talked to:
 
 Our goal is to have a full working prototype of the platform by the end of July. We’re building a subscription-based crowdfunding platform, similar to Patreon, where the earlier you sign on as a backer the more benefits there are down the line. And what we’re building is offline-first and built using the Circle Universal Basic Currency protocol. The idea is that every user starts with their own universal basic income (UBI) currency and through trusted connections they’ll be able to pay each other and pay other businesses. We’re growing basic income from the bottom up without depending on a central government. And in this model we’ll rely on Filecoin to back up our data.
 
-### Team: Pygate
+## Team: Pygate
 
 ![Pygate Diagram](https://filecoin.io/vintage/images/blog/hfs-pygate.png)
 
@@ -57,7 +57,7 @@ Each project is intended to serve as a stand-alone component that can be used in
 
 **Team origin:** Peter has been thinking about ways to build on Filecoin since before HackFS launched. He wanted to build his first apps on Filecoin using Python, and when he realized there was not yet Python tooling available \[currently there’s Go, C++, Rust, and Javascript\], his first step was to build a pygate gRPC client for Powergate. Peter notes, “I began scoping out a larger vision, broken into phases. I joined HackFS the weekend before kickoff, posted this idea in the HackFS Slack channels, and within 36 hours had built a team, joining forces with two experienced Python developers Lenoard and Antreas, along with a blockchain expert, Art, and a smart contracts expert, Chinonso. Collectively, the team is working to bring Python tooling to Pythonistas to open up the Filecoin network to new audiences. By quickly putting together a qualified team, we’ve been able to get much further hacking on this project than I would have on my own.”
 
-### Team: Unchained Index
+## Team: Unchained Index
 
 ![TrueBlocks](https://filecoin.io/vintage/images/blog/hfs-trueblocks.png)
 
@@ -75,7 +75,7 @@ Once we have that index we can look directly at the history of an account in ful
 
 Thomas says: “I’ve been working in tech for a long time. I was there when we shifted from no web to the web back in the 90s. So I’ve seen a paradigm shift or two in my lifetime. And I jumped right into the full paradigm shift of Web3.”
 
-### Team: Padlock
+## Team: Padlock
 
 ![Padlock](https://filecoin.io/vintage/images/blog/hfs-padlock.jpg)
 

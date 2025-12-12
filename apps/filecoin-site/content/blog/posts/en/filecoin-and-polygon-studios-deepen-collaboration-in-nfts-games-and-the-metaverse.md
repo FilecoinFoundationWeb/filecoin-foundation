@@ -30,7 +30,7 @@ Originally conceived as a secure Layer 2 solution to address pain points like hi
 
 Similarly, a growing number of projects in the play-to-earn (P2E) and NFT space have also chosen to use IPFS for [content addressing](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) and Filecoin for [provable and decentralized storage](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/) to store metadata with rich media such as videos.
 
-### **Combining Filecoin’s durability and Polygon’s scalability opens new use cases for developers**
+## **Combining Filecoin’s durability and Polygon’s scalability opens new use cases for developers**
 
 In August 2021, we [announced](https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/) that Polygon would offer free storage costs for projects looking to build on the [Filecoin-Polygon bridge](https://eth.storage/docs#ethereum--polygon-bridge-to-filecoin) developed by the [Textile](https://www.textile.io/) team. The bridge enables developers and Polygon application users to easily store data from any Polygon address on the IPFS network without any new signups, secrets, or API keys.
 
@@ -57,7 +57,7 @@ Notable projects from the hackathon included [Blockspace](https://airtable.com/a
 </div>
 </div>
 
-### **$5,000 grants for eligible Polygon projects integrating IPFS and Filecoin**
+## **$5,000 grants for eligible Polygon projects integrating IPFS and Filecoin**
 
 Projects in the Polygon ecosystem that are integrating with IPFS and Filecoin (and services like NFT.storage, Estuary, Web3.storage, Filecoin-Polygon Bridge) are eligible for a $5,000 grant.
 
@@ -65,19 +65,24 @@ Eligible projects can apply [here](https://github.com/filecoin-project/devgrants
 
 Grant-funded projects will also have the opportunity to join future acceleration programs, and connect to technical, product, and other potential resources of support from both ecosystems.
 
-### **Upcoming NFT Hackathons**
+## **Upcoming NFT Hackathons**
 
 In addition, here are some upcoming NFT hackathons related to this exciting collaboration to code away:
 
 1. [ETHDenver](https://www.ethdenver.com/)
+
    - The biggest ETH conference is happening IRL in Denver and virtually with participants from across the globe. Submissions to all tracks qualify for Filecoin and IPFS bounties worth $25k (among several other prizes)!
    - Dates:
      - IRL: 11 - 20 Feb, 2022
      - Virtual: 11 Feb - 21 Mar, 2022
+
 2. [ETHernals by Devfolio](https://ethernals.devfolio.co/):
+
    - Participants to this Ethereum-based hackathon can win prizes by building around DAOs, NFTs, DeFi, etc., using their _buidl_ powers. Bounties worth $50k are up for grabs at this event.
    - Dates: 25 Feb - 27 Mar, 2022
+
 3. Kenlabs Metaverse Hackathon:
+
    - An 8-week hackathon focused on the metaverse! Build projects on IPFS to answer challenges and compete for the $50k prize pool.
    - Dates: 1 - 20 Apr, 2022
 

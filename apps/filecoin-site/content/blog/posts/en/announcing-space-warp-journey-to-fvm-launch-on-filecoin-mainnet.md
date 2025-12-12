@@ -26,7 +26,7 @@ Programmability, or the ability to deploy custom smart contracts, is being launc
 
 As the Filecoin EVM runtime ("FEVM") was being built, early builders were able to try out incremental weekly feature releases on the bleeding-edge [Wallaby testnet](https://github.com/filecoin-project/testnet-wallaby). Now it is nearing feature-completeness and the [final Carbonado release of FEVM](https://github.com/filecoin-project/ref-fvm/issues/692) will be ready soon. This release coming later in December will kick off the new **Hyperspace** **testnet**, a long-running stable testnet for FVM developers that will become the main developer-focused testnet for Filecoin going forward.
 
-### Introducing the Space Warp Program
+## Introducing the Space Warp Program
 
 To inspire developers to try out the new FEVM and unlock its vast potential, today the [**Space Warp**](https://spacewarp.fvm.dev/) program is launching. It aims to help the builder community accelerate the development of new value-adding apps on the Filecoin network in preparation for FEVM mainnet launch in February.
 
@@ -58,7 +58,7 @@ Join us for the jam-packed **Space Warp** program for builders:
 
 Sign up for updates at [**spacewarp.fvm.dev**](https://spacewarp.fvm.dev) and we’ll keep you informed about upcoming events and more FVM-focused opportunities to be announced over the coming weeks.
 
-### Read more about the FVM: Leverage the data economy
+## Read more about the FVM: Leverage the data economy
 
 The Filecoin Network’s version of the EVM is especially exciting because it will enable developers to **harness the power of the** **trillion dollar data economy** by building token-driven products and services around the Filecoin network, the largest open access data storage network on the planet.
 
@@ -70,7 +70,7 @@ Filecoin also has a unique [island economy](https://filecoin.io/blog/posts/filec
 
 Learn more about what the FVM makes possible from this [recent FIL Lisbon talk](https://www.youtube.com/watch?v=EqLlyJ13DLY) or via the [FVM docs, tutorials and resources portal](http://spacewarp.fvm.dev/#resources).
 
-### FVM and Filecoin Roadmap
+## FVM and Filecoin Roadmap
 
 Later next year after the FEVM’s launch on mainnet, a **WebAssembly FVM runtime** will also be added, with more VMs possible in the future. Developers will then be able to also write custom smart contracts in Rust, AssemblyScript, Go and compile them to Wasm bytecode, and potentially other privacy-preserving programming languages for zk-SNARKs like [Lurk](https://filecoin.io/blog/posts/introducing-lurk-a-programming-language-for-recursive-zk-snarks/).
 

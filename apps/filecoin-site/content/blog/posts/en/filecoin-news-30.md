@@ -29,13 +29,13 @@ title:
 
 <a href="https://spec.filecoin.io/intro/filecoin_vm/"><img src="/uploads/fil-blog-2021-11-02-fvm.webp" style="width:40%;margin-left:0%"></a>
 
-### Announcing the Filecoin Virtual Machine (FVM)
+## Announcing the Filecoin Virtual Machine (FVM)
 
 The goal of the Filecoin Virtual Machine is to enable users to deploy their own smart contracts on the Filecoin blockchain,” FVM brings general programmability and compatibility with Ethereum Virtual Machine smart contracts to the Filecoin blockchain. Attendees of Filecoin Orbit were among the first in the world to learn about FVM, its vision, the thousands of opportunities that it will unlock, its implementation roadmap, and how to [join the action](https://spec.filecoin.io/intro/filecoin_vm/).
 
 <a href="https://www.youtube.com/playlist?list=PL_0VrY55uV18i8gXWcuVLK3J60cetDP6E"><img src="/uploads/orbit-filecoin-green-2.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin Green
+## Filecoin Green
 
 How can Filecoin storage providers lead the way in building a verifiably environmentally sustainable blockchain? Key stakeholders within the Filecoin ecosystem including Juan Benet, [Filecoin Green](https://medium.com/energy-web-insights/protocol-labs-and-energy-web-complete-first-showcase-of-an-open-source-solution-to-decarbonize-1a8c22ac02f5) project lead [Alan Ransil, PhD](https://twitter.com/rransil), [](https://www.ou.nl/)[Radboud University](https://www.ru.nl/english/) Associate Professor of Computer Science [Harald Vranken](https://scholar.google.com/citations?user=J3ZE7nEAAAAJ&hl=en), and many others explored this question, and [revealed a path for environmental sustainability in Filecoin](https://youtube.com/playlist?list=PL_0VrY55uV18i8gXWcuVLK3J60cetDP6E).
 
@@ -45,13 +45,13 @@ We are planning events, grants and other support to enable Filecoin to become ve
 
 <a href="https://research.protocol.ai/blog/2021/cryptocomputelab-announces-proofs-release-version-10.0.0.0/"><img src="/uploads/unnamed-3.webp" style="width:40%;margin-left:0%"></a>
 
-### CryptoComputeLab announces proofs release version 10.0.0.0
+## CryptoComputeLab announces proofs release version 10.0.0.0
 
 [CryptoComputeLab](https://github.com/protocol/cryptocomputelab) is very proud to release [Proofs v10.0.0](https://github.com/filecoin-project/rust-fil-proofs/blob/master/CHANGELOG.md#1000---2021-09-30)! A lot has changed under the hood in this release, but ultimately, it comes down to additional GPU support options and better performance during proving. The far less visible highlights include consolidating a number of our internal dependencies which started life as forks from other projects back to the upstream sources. This kind of tooling update is beneficial for several reasons, including gaining optimizations from the upstream sources as our code diverged over time, and also making future updates (e.g. Halo2 work) more realistic. [Read all about the release](https://research.protocol.ai/blog/2021/cryptocomputelab-announces-proofs-release-version-10.0.0.0/).
 
 <a href="https://filecoin.io/blog/posts/filecoin-becomes-official-storage-collaborator-for-flow-blockchain/"><img src="/uploads/dapper-labs-flow-filecoin_hu38b5a7ba412f393c99af82bdfc52efda_86283_2000x0_resize_q90_linear.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin becomes official storage layer for Flow Blockchain
+## Filecoin becomes official storage layer for Flow Blockchain
 
 Filecoin is now the official storage layer of Flow blockchain, empowering platforms, developers and users alike as the Flow metaverse becomes more open, robust, and decentralized. This integration of technologies will accelerate end-to-end ownership of NFTs, along with the media assets associated with them, establishing decentralized storage of data on Flow. [Read more about the announcement](https://filecoin.io/blog/posts/filecoin-becomes-official-storage-collaborator-for-flow-blockchain/).
 
@@ -59,7 +59,7 @@ Filecoin is now the official storage layer of Flow blockchain, empowering platfo
 
 <a href="https://www.youtube.com/watch?v=GMlSGtHb-hU"><img src="/uploads/ipld-in-wasm-for-techies.webp" style="width:40%;margin-left:0%"></a>
 
-### IPLD in WASM
+## IPLD in WASM
 
 Underneath IPFS is a system known as IPLD that deals with all the heavy lifting that IPFS does to store data on-chain and create hash-links which we see as content IDs (CIDs). At its most basic form, Interplanetary Linked Data (IPLD) is the data layer that IPFS is built on top of. It creates a series of links to data but also allows users to create those links themselves through simple data structures that can be stored on IPFS.
 
@@ -69,7 +69,7 @@ During Filecoin Orbit, Steven Allen gave a walkthrough of IPLD and WASM, and how
 
 <img src="/uploads/screen-shot-2021-11-02-at-2-07-00-pm.webp" style="width:40%;margin-left:0%">
 
-### Filecoin Auctions with Textile
+## Filecoin Auctions with Textile
 
 Textile's Filecoin Deal Auctions will award 250FIL in prizes to Storage Providers with the highest reputation over two weeks, starting next week. Storage providers can take part in deal auctions by running a lightweight client called [bidbot](https://github.com/textileio/bidbot). To date, over 200TiB have been won and stored by storage providers using the system.
 
@@ -77,19 +77,19 @@ Textile's Filecoin Deal Auctions will award 250FIL in prizes to Storage Provider
 
 <a href="https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-defi/"><img src="/uploads/fil-blog-2021-10-29-filecoin-launchpad-accelerator-ii.webp" style="width:40%;margin-left:0%"></a>
 
-### FLAII: DeFi
+## FLAII: DeFi
 
 On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. Part of the Demo Day included presentations from 5 DeFi projects. Hedgey Finance is a protocol for adding options markets to any token. Tamago Finance is a DeFi protocol that makes synthetic tokens for widespread distribution on Asian real-world markets. SmartFunds is a simple, automated, and compliant fund-management tool. Clam Islands powers the gamification of investments using Blockchain, NFTs, and Yield Farming. Boto is an online no-code platform that allows users to build bots to automate online tasks. Learn more about each of these [DeFi projects from Filecoin Launchpad II here.](https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-defi/)
 
 <a href="https://medium.com/chainsafe-systems/chainsafe-launches-forest-the-rust-filecoin-client-d94534f86bbe"><img src="/uploads/1_qn7ffyrcd-injxqdbiguew.webp" style="width:40%;margin-left:0%"></a>
 
-### Forest joins Filecoin Mainnet
+## Forest joins Filecoin Mainnet
 
 The Filecoin Rust client Forest, built by ChainSafe, has officially launched on mainnet in alpha! Bringing multi-client diversity to the Filecoin network. Thanks in part to closing out issues from the Sigma Prime audit & completion of several MVP features, we’re finally ready for devs to install, run, and test our client. How can you get involved? Run and test our software. Give us feedback on the ChainSafe [GitHub](https://github.com/ChainSafe/forest) and [Discord](https://discord.gg/CprJHjrWG6). And we will shortly release a product survey where you will get a chance to shape the future and vision of Forest. Stay tuned. [Read the official announcement](https://medium.com/chainsafe-systems/chainsafe-launches-forest-the-rust-filecoin-client-d94534f86bbe).
 
 <a href="https://prdpjz4zqoq.typeform.com/to/RxQSZ9dq?utm_source=twiiter"><img src="/uploads/screen-shot-2021-11-02-at-4-12-01-pm.webp" style="width:28%;margin-left:0%"></a>
 
-### Twitter Spaces - Polygon & Consensys
+## Twitter Spaces - Polygon & Consensys
 
 Applications are now open for the Filecoin Launchpad Accelerator III Powered by Tachyon.
 
@@ -101,29 +101,29 @@ Have questions about the accelerator? Get them answered at an Open House/AMA hos
 
 <a href="http://poap.xyz/"><img src="/uploads/header.webp" style="width:28%;margin-left:0%"></a>
 
-### NFT.NYC
+## NFT.NYC
 
 Happen to be in New York City for the leading annual NFT event? So is NFT.Storage! In collaboration with POAP, NFT.Storage and more have scattered POAPs throughout the city - [check out the website](https://poap.xyz) to learn how to participate.
 
 <img src="/uploads/web3jam_banner.webp" style="width:40%;margin-left:0%">
 
-### Web3 Jam with ETHGlobal
+## Web3 Jam with ETHGlobal
 
 Applications are now open for Web3 Jam! Join the ETHGlobal and Filecoin communities on November 12th as they bring together a virtual collective of passionate creatives, engineers, builders and more for a two-week long hackathon focused on decentralized media, Web3, and NFTs. Apply now for an opportunity to win up to $75,000+ in prizes, gain access to mentors in the Protocol Labs ecosystem, and kickstart your future Web3 project.
 
-### Buidl It
+## Buidl It
 
 BUIDL IT is India’s biggest Web 3.0/Blockchain hackathon designed to promote web3 development and talent in India. It is the perfect platform for you to jump ship from Web2 and start your Web3 journey and showcase your innovative ideas. Polygon is the leading Ethereum scaling solution - built for developers, by developers. Be it DeFi, Gaming, NFTs, or any other use case, Polygon allows you to build great UX, scale your Dapps and reach millions of users.
 
 <a href="https://fil.org/events/"><img src="/uploads/screen-shot-2021-11-02-at-4-19-59-pm.webp" style="width:40%;margin-left:0%"></a>
 
-### Hackathons Website
+## Hackathons Website
 
 Wondering where you can start building on the IPFS and Filecoin ecosystems? Visit [hackathons.filecoin.io](https://fil.org/events/) to learn about and register for current and upcoming hackathons - find the one that’s right for you!
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
 
-### ✊ Get Involved
+## ✊ Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

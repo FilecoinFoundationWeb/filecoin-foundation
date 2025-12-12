@@ -36,7 +36,7 @@ This article will walk through the most important parts of Files’ architecture
 2. How this gives you access to the **tools that let you encrypt any data you store**
 3. Finally, we will show how we leverage IPFS and Filecoin to make sure **your data will always be available to you**.
 
-### **Decentralized login**
+## **Decentralized login**
 
 When you visit a conventional web application for the first time, you generally need to sign up and then log in. You’ll then enter a login and password, then the platform’s backend will verify if the credentials match what you provided upon sign-up, and finally it will let you access your files.
 
@@ -56,7 +56,7 @@ At ChainSafe Files, to prevent the need to trust a third-party, we have built an
 
 In this section, we went through the login flow of Files and explained how we are using a decentralized authentication system. Thanks to this, **no single entity is storing user credentials, and you do not have to trust a single entity**, be it the backend of Files or a third-party platform. Now that we are convinced that no single entity is gatekeeping access to your Files, let’s see how we make sure that you are the only one able to read your content.
 
-### **Your files cannot be read by anyone but yourself**
+## **Your files cannot be read by anyone but yourself**
 
 When you log in to ChainSafe Files using two factors, under the hood, you reconstruct a public/private key pair that is **only known to you**. We will call it the master key in this article. This master key only lives in your browser. It is reconstructed every time you log in to Files and deleted again when you end your browser session. Let’s see how it is used in practice and walk through what happens when you upload a document on Files.
 
@@ -68,7 +68,7 @@ Back to our cat image, remember what we said earlier: what happens in your brows
 
 As you can see, we’ve built Files with a privacy-by-design approach. We’ve made it as hard as we can to prevent someone from impersonating you when you log in, while not having to trust a single third-party — not even ChainSafe. Additionally, **thanks to powerful encryption, no one but you can read the content of your files**.
 
-### **Your files can be accessed even if the Files interface and infrastructure is down**
+## **Your files can be accessed even if the Files interface and infrastructure is down**
 
 One very important aspect of building an open and decentralized platform is data retrieval. It sounds awesome that no one but you can log in to the platform and read your files, but what if the platform is down, or worse censoring you? This is where the decentralized storage network of IPFS and Filecoin come into play. While there are high chances that readers of this article already know about IPFS and Filecoin, [here is a link to learn more about them](https://docs.filecoin.io/basics/how-storage-works/filecoin-and-ipfs/).
 
@@ -80,7 +80,7 @@ This way, you can retrieve your files without using the Files user interface. No
 
 While it doesn’t cost anything to retrieve a file from IPFS, nodes that are a part of the network have no incentive to store files. Therefore, it can be said that there is no guarantee that your files will always be available when you need them. This is where Filecoin will help. Filecoin is an incentive layer on top of IPFS. In simple words, it means you can pay specific nodes to make sure they will keep your file around. This guarantee is enforced by the Filecoin protocol so that you can be sure to be able to access your files when you want. Unlike IPFS though, it is not free to retrieve your files. **ChainSafe Files is therefore using IPFS** as a caching layer, to be able to show your files right away when you need them, but **we also store them using Filecoin for long-term storage, and redundancy**.
 
-### **Placing users at the center, with a privacy preserving mindset**
+## **Placing users at the center, with a privacy preserving mindset**
 
 Summing it up, you are the only one able to log in to the Files user interface to retrieve your master key. Any file you upload is encrypted and is only readable by yourself. Your files are stored on a decentralized network that lets you access them even if the ChainSafe Files infrastructure isn’t available anymore. Is there anything more one could wish? The answer is yes!
 
@@ -90,11 +90,11 @@ Users of a platform leave a lot of metadata behind, which can tell a lot about t
 
 We at ChainSafe Files take data privacy very seriously and aim at providing the best experience on the Files platform while protecting our users from such threats. **We are not in the data collection business and we will make sure that user usage information is not shared with third parties and never sold**.
 
-### **We are conducting user interviews!**
+## **We are conducting user interviews!**
 
 Help shape the future of Files by scheduling a user interview with our product manager Colin Schwarz. The user interviews are short 15 minute calls that aim to gleam insights into your usage of our product and how we can better serve you! Join our [Files Task Force Telegram group chat](https://t.me/joinchat/mhd6CPFR45gyYmUx) or [schedule a call](https://calendly.com/colinschwarz/chainsafe-files-chat) today.
 
-### **Get involved**
+## **Get involved**
 
 To help us make Files better, we rely on user feedback and we would love to hear your thoughts. What do you like about Files? Is there anything annoying you? What feature would you like to see in the future? Tell us what you think in our [Files power user Telegram group](https://t.me/joinchat/mhd6CPFR45gyYmUx), or on [GitHub](https://github.com/ChainSafe/ui-monorepo/tree/dev/packages/files-ui), [Twitter](https://twitter.com/ChainSafeth), [Discord](https://discord.gg/CprJHjrWG6).
 

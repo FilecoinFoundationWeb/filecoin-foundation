@@ -30,23 +30,23 @@ We’re happy to announce go-filecoin 0.2.2. go-filecoin is the Go implementatio
 
 This release is heavy on behind-the-scenes upgrades, including support for filesystem repo migrations and storage disputes, a better message pool, proofs improvements, and bumps to libp2p and go-libp2p-kad-dht versions for more reliable relays and DHTs. User-facing improvements such as new commands and options, better status messages, and lots of bugfixes are also included. Get pumped!
 
-### Install and Setup
+## Install and Setup
 
-#### ⌛ Chain syncing status
+### ⌛ Chain syncing status
 
 When a filecoin node is first created, it must download and verify the chain. We call this “chain syncing”. While initial commands (such as tapping the faucet or dashboard streaming) can be run immediately, any other commands (such as mining commands) will return errors until chain syncing is complete. Currently, this can take several hours.
 
 To clarify, we’ve added [wiki updates](https://github.com/filecoin-project/go-filecoin/wiki/Getting-Started#wait-for-chain-sync), better status messages, and cleaner console output for chain syncing. In future releases, we’ll also address the underlying problem of slow chain syncing.
 
-#### 💠 Sector storage configuration
+### 💠 Sector storage configuration
 
 Where would you like the filecoin node to store client data? You can now choose! There are two ways to specify the location of the sector storage directory: the `sectorbase.rootdir` config entry, or the `--sectordir` option to `go-filecoin init`.
 
 If you don’t specify a location, data is stored in `$HOME/.filecoin_sectors` by default. More details are in the [wiki](https://github.com/filecoin-project/go-filecoin/wiki/Mining-Filecoin#advanced-options).
 
-### Features
+## Features
 
-#### 🍄 Upgradeable repo
+### 🍄 Upgradeable repo
 
 In addition to sealed client data, Filecoin nodes also store other data on-disk such as configuration data, blockchain blocks, deal state, and encryption keys. As development progresses, we need a way to safely change the type and schema of this data. In this release, we include an accepted [design](https://docs.google.com/document/d/1THzh1mrNCKYbdk1zP72xV8pfr1yQBe2n3ptrSAYyVI8/) for filesystem repo migrations, and an initial layout for the migration tool. This paves the way for filecoin nodes to seamlessly update when running in production.
 
@@ -54,11 +54,11 @@ For more information, check out the help text:
 
     tools/migration/go-filecoin-migrate --help
 
-#### 💎 Storage payments
+### 💎 Storage payments
 
 This release includes work towards storage protocol dispute resolution. Payment channels can now contain conditions that will query another actor before a voucher is redeemed. Payment channels can also be canceled by the payer. This will trigger an early close if the target of the channel does not redeem a payment. These features can be used together with piece inclusion proofs (coming soon) to enforce proof of storage when storage clients pay storage miners.
 
-#### 🐛 New debugging commands
+### 🐛 New debugging commands
 
 Three new commands (`inspect`, `protocol`, and `bitswap`) are now available for your debugging and exploring adventures:
 
@@ -68,53 +68,53 @@ Three new commands (`inspect`, `protocol`, and `bitswap`) are now available for 
 
 For more details, run any command followed by the `--help` flag.
 
-### Performance and Reliability
+## Performance and Reliability
 
-#### 🙌 Upgrade libp2p to 0.0.16
+### 🙌 Upgrade libp2p to 0.0.16
 
 libp2p recently landed a bunch of improvements to relay functionality, addressing heavy resource usage in some production relay nodes. We’ve upgraded to [go-libp2p](https://github.com/libp2p/go-libp2p) 0.0.16 to enjoy the same fixes in filecoin.
 
-#### 🌳 Upgrade go-libp2p-kad-dht to 0.0.8
+### 🌳 Upgrade go-libp2p-kad-dht to 0.0.8
 
 After the 0.2.1 release, we found a bug in the dht ([#2753](https://github.com/filecoin-project/go-filecoin/issues/2753)) that caused some nodes to panic. This was fixed by bumping the [go-libp2p-kad-dht](https://github.com/libp2p/go-libp2p-kad-dht) version from 0.0.4 to 0.0.8 ([#2754](https://github.com/filecoin-project/go-filecoin/pull/2754)).
 
-#### 📬 Better message validation
+### 📬 Better message validation
 
 We’ve taken several steps to harden the message pool. The pool now rejects messages that will obviously fail processing due to problems like invalid signature, insufficient funds, no gas, or non-existent actor. It also tracks nonces to ensure that messages are correctly sequenced, and that no account has too many messages in the pool. Finally, the pool now limits the total messages it will accept.
 
-#### 🔗 Proofs integration
+### 🔗 Proofs integration
 
 Behind the scenes, much groundwork has been laid for more flexible and powerful storage proofs. This release includes more efficient memory utilization when writing large pieces to a sector. It also includes initial support for piece inclusion proofs, [multiple sector sizes](https://github.com/filecoin-project/go-filecoin/issues/2530), and [variable proof lengths](https://github.com/filecoin-project/go-filecoin/pull/2607).
 
-#### 🔮 Proofs performance
+### 🔮 Proofs performance
 
 Over in `rust-fil-proofs`, progress is accelerating on more complete and efficient implementations. This includes switching to [mmap for more efficient merkle trees](https://github.com/filecoin-project/rust-fil-proofs/pull/529), [abstractions over the hasher](https://github.com/filecoin-project/rust-fil-proofs/pull/543), [limiting parallelism when generating groth proofs](https://github.com/filecoin-project/rust-fil-proofs/pull/582), and [calculating](https://github.com/filecoin-project/rust-fil-proofs/pull/621) and [aggregating](https://github.com/filecoin-project/rust-fil-proofs/pull/605) challenges across partitions.
 
-### Refactors and Endeavors
+## Refactors and Endeavors
 
-#### 🏁 FAST (Filecoin Automation & System Toolkit)
+### 🏁 FAST (Filecoin Automation & System Toolkit)
 
 We have significantly improved the FAST testing system for Filecoin since the last release. FAST now automatically includes relevant log data and messages from testing nodes in the event of a test failure. FAST also has an all-new localnet tool to quickly and easily set up local Filecoin node clusters for testing and experimentation. See [the localnet readme](https://github.com/filecoin-project/devgrants/blob/master/README.md) for details.
 
-#### 👾 Go modules
+### 👾 Go modules
 
 With Go 1.11’s preliminary support for versioned modules, we have switched to [Go modules](https://github.com/golang/go/wiki/Modules) for dependency management. This allows for easier dependency management and faster updates when dealing with updates from upstream dependencies.
 
-#### 😍 Design documents
+### 😍 Design documents
 
 We regularly write [design docs](https://github.com/filecoin-project/designdocs/blob/master/designdocs.md) before coding begins on important features or components. These short documents are useful in capturing knowledge, formalizing our thinking, and sharing design intent. Going forward, you can find new design docs in the [designdocs](https://github.com/filecoin-project/designdocs/) repo.
 
-### Version notice
+## Version notice
 
 go-filecoin 0.2.1 was released on May 8, 2019 and included most of the changes above. Shortly after, maintenance release 0.2.2 was created to address a bug in the dht ([#2753](https://github.com/filecoin-project/go-filecoin/issues/2753)) that caused some filecoin nodes to panic.
 
 As a reminder, only the latest version of go-filecoin will connect to the user devnet until model for change work is complete. Users must be running go-filecoin 0.2.2 to connect to the user devnet.
 
-### Changelog
+## Changelog
 
 A full list of [all 177 PRs in this release](https://github.com/search?q=is%3Apr+merged%3A2019-03-26..2019-05-10+repo%3Afilecoin-project%2Fgo-filecoin+repo%3Afilecoin-project%2Frust-fil-proofs+repo%3Afilecoin-project%2Fspecs&type=Issues), including many bugfixes not listed here, can be found on GitHub.
 
-### Contributors
+## Contributors
 
 ❤️ Huge thank you to everyone that made this release possible! By alphabetical order, here are all the humans who contributed to this release via the `go-filecoin`, `rust-fil-proofs`, and `specs` repos:
 
@@ -269,7 +269,7 @@ A full list of [all 177 PRs in this release](https://github.com/search?q=is%3Apr
 - [@zixuanzh](https://github.com/zixuanzh) (4 comments)
 - [@zjoooooo](https://github.com/zjoooooo) (1 issue, 1 comment)
 
-### 🙌🏽 Want to contribute?
+## 🙌🏽 Want to contribute
 
 Would you like to contribute to the Filecoin project and don’t know how? Here are a few places you can get started:
 
@@ -277,6 +277,6 @@ Would you like to contribute to the Filecoin project and don’t know how? Here 
 - Look for issues with the `good-first-issue` label in [go-filecoin](https://github.com/filecoin-project/go-filecoin/issues?q=is%3Aissue+is%3Aopen+label%3A "good+first+issue") and [rust-fil-proofs](https://github.com/filecoin-project/rust-fil-proofs/issues?q=is%3Aissue+is%3Aopen+label%3A "good+first+issue")
 - Join the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat), introduce yourself in #\_fil-lobby, and let us know where you would like to contribute
 
-### ⁉️ Do you have questions?
+## ⁉️ Do you have questions
 
 The best place to ask your questions about go-filecoin, how it works, and what you can do with it is at [discuss.filecoin.io](https://discuss.filecoin.io/). We are also available at the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat).

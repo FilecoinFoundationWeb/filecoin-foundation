@@ -25,7 +25,7 @@ _template: blog_detail_ch
 
 最近[Electric Coin](https://electriccoin.co/ "Electric Coin Co.") (ECC) [宣布](https://electriccoin.co/blog/ethereum-zcash-filecoin-collab/)[Protocol Labs](https://protocol.ai "Protocol Labs")、[Filecoin基金会](https://fil.org/ "Filecoin Foundation")、[以太坊基金会](https://ethereum.org/en/foundation/ "Ethereum Foundation")和ECC公司会协作探索研究和开发[Halo](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/) ——　这是一个无需可信设置阶段的递归零知识证明解决方案。
 
-### 基础知识：零知识，递归证明以及Halo
+## 基础知识：零知识，递归证明以及Halo
 
 _零知识（Zero knowledge）_ 是密码学的一个分支，主打在无需看到底层数据的情况下验证答案的方法。
 
@@ -39,7 +39,7 @@ _零知识（Zero knowledge）_ 是密码学的一个分支，主打在无需看
 
 Halo是ECC公司的一项递归证明研究，最初在２０１９年作为区块链网络上设立递归证明（无需可信设置这个复杂和成本高昂的过程）的解决方案提出的。Halo 2是递归证明研究的下一个迭代品。
 
-### Halo 2实战: Filecoin
+## Halo 2实战: Filecoin
 
 或许很多人不知道，Filecoin网络是世界上最大规模的部署零知识证明网络。[零知识是Filecoin网络的基础](https://filecoin.io/blog/posts/zero-knowledge-and-the-filecoin-network/)，在网络的测试链首次发布时就已经发挥作用并提供了关键的可扩展解决方案。
 

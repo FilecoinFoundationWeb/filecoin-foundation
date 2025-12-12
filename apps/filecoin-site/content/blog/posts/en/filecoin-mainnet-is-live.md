@@ -40,7 +40,7 @@ Special thanks to:
 
 The Filecoin network has now entered a quiet post-launch monitoring period to ensure the network is operating smoothly. During this time, we’ll be tracking network performance closely while we prepare for Filecoin Liftoff Week. So far, the network is stable and community members are reporting successful operations. 🎉
 
-### Get Ready for Filecoin Liftoff Week
+## Get Ready for Filecoin Liftoff Week
 
 Next week, it’s time to celebrate! Join us for [Filecoin Liftoff Week](https://liftoff.filecoin.io/), an action-packed series of talks, workshops, and panels curated by the community to celebrate the Filecoin mainnet launch and explore the network’s future. The event takes place October 19-23, 2020.
 
@@ -48,7 +48,7 @@ Whether you’re a Filecoin expert or just getting started, Liftoff is a great o
 
 [![Filecoin Liftoff Schedule](https://filecoin.io/vintage/images/blog/mainnet-liftoff-schedule.jpg)](https://liftoff.filecoin.io/)
 
-### Share Your Story (#FilecoinLiftoff)
+## Share Your Story (#FilecoinLiftoff)
 
 Building Filecoin has been an epic quest. In preparation for Monday, we’d love to hear **your** Filecoin stories – from the beginning of your journey with the Filecoin Project to today’s historic milestone, **Mainnet Liftoff**. Over the past 3 years, this community has confronted many novel challenges – from designing a cryptographically secure proofs system that can efficiently and scalably prove useful storage ([SDR](https://spec.filecoin.io/#algorithms__sdr__stacked-depth-robust-graphs)); to building and fine-tuning new systems like [drand](http://drand.love/) – a new distributed randomness beacon network to ensure Filecoin has a secure and resilient source of randomness; to forming new connections and collaborations at events like [DataTerraNemo](https://dtn.is/), [Devcon5](https://archive.devcon.org/devcon-5/details/), [Web3 Summit](https://web3summit.com/), [Filecoin Ignite](https://hub.fil.org/events/), [IPFS Ecology Industry Summit](https://play.yunxi.tv/livestream/flash?id=e1eecab932304450b9e332502dbbf490#/) & more; to building an amazing community of miners, clients, and builders throughout [Space Race](https://filecoin.io/blog/welcome-to-space-race/). We have so many great memories to share – and we want to hear yours!
 

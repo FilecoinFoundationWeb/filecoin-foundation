@@ -26,7 +26,7 @@ title:
 
 Dapper Labs, the team behind CryptoKitties, Dapper Wallet, and the highly successful NBA Top Shot has built a formidable ecosystem in the NFT and gaming space. Flow blockchain was conceived by the team and designed for extensive scaling without the use of sharding techniques, to preserve the full power of composability, providing fast and low-cost transactions that lend themselves well for dapps aiming to target the larger mainstream audience, starting with the entertainment world such as music, sports, gaming, art, fashion and more.
 
-### The intersection of Filecoin and Flow creates greater decentralisation and asset integrity
+## The intersection of Filecoin and Flow creates greater decentralisation and asset integrity
 
 NFT creators building on the Flow blockchain can create immutable NFT metadata with rich media (including videos), using IPFS [content addressing](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) and [provable and decentralized storage with Filecoin](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/). [NFT.Storage](https://nft.storage/), backed by Protocol Labs and Pinata, makes it easy to protect NFT assets and associated metadata, ensuring that all NFTs follow best practices to stay accessible long-term.
 
@@ -58,7 +58,7 @@ A Flow developer has written [a great tutorial](https://medium.com/@qq976739120/
 
 To jumpstart the collaboration, there will be grants available for the Flow ecosystem, starting with the Next Step Microgrant Program.
 
-### Next Step Grants of $5,000 each to eligible Flow projects integrating IPFS/Filecoin solutions
+## Next Step Grants of $5,000 each to eligible Flow projects integrating IPFS/Filecoin solutions
 
 Any project actively integrating with IPFS, Filecoin, or related services like Pinata or NFT.Storage can qualify for the grant, subject to five simple criteria. Review the grant criteria and apply [here](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)! Applications are reviewed on a rolling basis, so early submissions are encouraged.
 
@@ -66,7 +66,7 @@ Grant-funded projects will also have the opportunity to join future acceleration
 
 In addition, stay tuned for information about a Filecoin x Flow hackathon related to this exciting collaboration!
 
-#### Additional Resources
+### Additional Resources
 
 - [How to Create an NFT with Flow and NFT.Storage](https://medium.com/@qq976739120/how-to-create-an-nft-with-flow-and-nft-storage-1ccce45797b0)
 - [Free Storage with NFT.Storage](https://nft.storage/)
