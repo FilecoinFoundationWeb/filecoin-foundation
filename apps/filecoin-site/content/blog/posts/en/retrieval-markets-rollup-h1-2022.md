@@ -22,8 +22,6 @@ title: Retrieval Markets Rollup H1 2022
 _template: blog_detail
 ---
 
-##
-
 **TL;DR:** The Retrieval Markets Working Group (RMWG) has been hard at work in 2022! This report gives a summary of its progress in the first half of 2022, and some insights into what to expect in H2 2022.
 
 **Reading time:** Grab a cup of coffee and enjoy this rollup for 10 mins!
