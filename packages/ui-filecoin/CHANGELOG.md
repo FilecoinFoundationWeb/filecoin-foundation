@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.5.9
+
+### Patch Changes
+
+- ffc4ad8: Refactor and review PageSection spacings
+
 ## 0.5.8
 
 ### Patch Changes
