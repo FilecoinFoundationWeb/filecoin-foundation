@@ -6,7 +6,6 @@ import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils/build
 
 import { PATHS } from '@/constants/paths'
 
-
 import type { BlogPost } from '../types/blogPostType'
 
 type BlogPageHeaderProps = {
@@ -26,7 +25,7 @@ export function BlogPageHeader({
     <header className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <div className="flex flex-col justify-between gap-10">
         <div className="flex flex-col gap-6">
-          <span className="font-mono text-[var(--color-paragraph-text)]">
+          <span className="font-mono text-(--color-paragraph-text)">
             Latest updates
           </span>
 
@@ -34,7 +33,7 @@ export function BlogPageHeader({
             {title}
           </Heading>
 
-          <p className="text-pretty text-[var(--color-paragraph-text)] md:text-xl/7">
+          <p className="text-pretty text-(--color-paragraph-text) md:text-xl/7">
             {description}
           </p>
         </div>
@@ -48,7 +47,7 @@ export function BlogPageHeader({
         </Button>
       </div>
 
-      <div className="relative aspect-[3/2]">
+      <div className="relative aspect-3/2">
         <Image
           fill
           priority
