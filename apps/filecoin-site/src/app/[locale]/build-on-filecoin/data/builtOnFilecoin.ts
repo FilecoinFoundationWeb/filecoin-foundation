@@ -1,5 +1,7 @@
 import GLIFLogo from '@/assets/logos/glif-logo.svg'
+import Huddle01Logo from '@/assets/logos/huddle-01-logo.svg'
 import LighthouseLogo from '@/assets/logos/lighthouse-logo.svg'
+import RecallLogo from '@/assets/logos/recall-logo.svg'
 
 import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
@@ -14,7 +16,6 @@ export const builtOnFilecoin = [
       type: 'svg',
       src: LighthouseLogo,
       bgColor: '#643FBB',
-      color: '#fff',
     },
     cta: {
       href: 'https://www.lighthouse.storage/',
@@ -29,10 +30,37 @@ export const builtOnFilecoin = [
       type: 'svg',
       src: GLIFLogo,
       bgColor: '#141B35',
-      color: '#fff',
     },
     cta: {
       href: 'https://www.glif.io/',
+      text: CTA_TEXT,
+    },
+  },
+  {
+    title: 'Recall',
+    description:
+      'Recall lets AI agents prove their intelligence, compete for rewards and reputation, and surface top performers across specialized skills.',
+    logo: {
+      type: 'svg',
+      src: RecallLogo,
+      bgColor: '#020202',
+    },
+    cta: {
+      href: 'https://recall.network/',
+      text: CTA_TEXT,
+    },
+  },
+  {
+    title: 'Huddle01',
+    description:
+      'Built on Filecoin, Huddle01 is a decentralized, real-time communication network with live audio and video software development kit for the web and mobile.',
+    logo: {
+      type: 'svg',
+      src: Huddle01Logo,
+      bgColor: '#246BFD',
+    },
+    cta: {
+      href: 'https://huddle01.com/',
       text: CTA_TEXT,
     },
   },

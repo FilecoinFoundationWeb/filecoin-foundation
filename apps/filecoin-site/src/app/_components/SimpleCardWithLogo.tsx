@@ -19,7 +19,7 @@ export type SVGLogoProps = {
   type: 'svg'
   src: IconProps['component']
   bgColor: HEXCodeType
-  color: HEXCodeType
+  color?: HEXCodeType
 }
 
 export type SimpleCardWithLogoProps = {
