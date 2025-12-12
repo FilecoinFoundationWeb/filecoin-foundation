@@ -220,7 +220,7 @@ Currently, the dataset is being successfully onboarded to the network. The proje
 
 <p>&nbsp</p>
 
-## ![](/uploads/starling.webp)
+![](/uploads/starling.webp)
 
 <h5 style="font-size: 18px; line-height: 24px; margin-top: 21px; margin-bottom: 0px;">Starling</h5>
 

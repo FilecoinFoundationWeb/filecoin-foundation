@@ -41,7 +41,7 @@ Our third place winners are the team behind the [Filecoin Research Repository](h
 
 ### Filecoin Pricing Mechanism
 
-### ![Filecoin Pricing Mechanism](https://filecoin.io/vintage/images/blog/filecoin-pricing-mechanism.jpg)
+![Filecoin Pricing Mechanism](https://filecoin.io/vintage/images/blog/filecoin-pricing-mechanism.jpg)
 
 A critical concern in the use of the Filecoin network as a repository for research data is the friction involved in selecting and negotiating with suitable storage miners to custody one’s data. The winners of our second-place prize are the team behind the [Filecoin Pricing Mechanism](https://github.com/harnen/FilecoinPricingMechanism) (FPM), which automates this process.
 
