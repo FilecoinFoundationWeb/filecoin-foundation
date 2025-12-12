@@ -38,7 +38,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
     <>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <Navigation backgroundVariant="light" />
-      <PageSection backgroundVariant="light" paddingVariant="medium">
+      <PageSection backgroundVariant="light" paddingVariant="topCompact">
         <div className="mx-auto max-w-3xl">
           <BlogPostHeader
             title={title}

@@ -58,7 +58,7 @@ export default async function Home({ params }: BlogProps) {
     <>
       <StructuredDataScript structuredData={generateStructuredData(SEO)} />
 
-      <div className="relative isolate min-h-screen">
+      <div className="relative isolate">
         <Navigation backgroundVariant="transparentDark" />
         <HeroSection />
         <Image
@@ -71,7 +71,7 @@ export default async function Home({ params }: BlogProps) {
         <GradientOverlay />
       </div>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection backgroundVariant="dark" paddingVariant="none">
         <LogoSection
           headingTag="h2"
           title="Trusted by industry leaders"
@@ -179,6 +179,7 @@ export default async function Home({ params }: BlogProps) {
               </Button>,
             ]}
           />
+
           <SectionImage {...graphicsData.rocketLaunch} />
         </SectionContent>
       </PageSection>

@@ -8,12 +8,11 @@ type PageSectionProps = {
 }
 
 const paddingVariants = {
-  default: 'py-24 md:py-32',
-  wide: 'py-28 md:py-40',
-  medium: 'py-12 md:py-20',
-  compact: 'pt-10 pb-28 md:pb-32',
+  default: 'py-25 md:py-30',
+  bottomNone: 'pt-25 md:pt-30 pb-0',
+  topNone: 'pt-0 pb-25 md:pb-30',
+  topCompact: 'pt-20 pb-25 md:pb-30',
   none: 'py-0',
-  topOnly: 'pt-24 md:pt-32 pb-0',
 }
 
 export function PageSection({

@@ -36,10 +36,9 @@ export default async function Blog({ params }: BlogProps) {
       <StructuredDataScript
         structuredData={generateStructuredData(BLOG_SEO, sortedPosts)}
       />
-
       <Navigation backgroundVariant="light" />
 
-      <PageSection backgroundVariant="light" paddingVariant="medium">
+      <PageSection backgroundVariant="light" paddingVariant="topCompact">
         <BlogPageHeader
           title={featuredPost.title}
           description={featuredPost.excerpt}
@@ -51,7 +50,7 @@ export default async function Blog({ params }: BlogProps) {
         />
       </PageSection>
 
-      <PageSection backgroundVariant="light" paddingVariant="compact">
+      <PageSection backgroundVariant="light" paddingVariant="topNone">
         <Suspense>
           <BlogPostList posts={sortedPosts} />
         </Suspense>

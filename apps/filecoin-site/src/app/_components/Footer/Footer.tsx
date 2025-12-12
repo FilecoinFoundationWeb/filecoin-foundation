@@ -17,7 +17,7 @@ export function Footer() {
   return (
     <Section as="footer" backgroundVariant="dark">
       <Container>
-        <div className="flex flex-col gap-20 pt-20 pb-15 xl:flex-row xl:justify-between xl:gap-40">
+        <div className="flex flex-col gap-20 pt-15 pb-15 md:pt-20 xl:flex-row xl:justify-between xl:gap-40">
           <div className="flex gap-10 xl:flex-1">
             <div className="flex max-w-md flex-1 flex-col gap-15">
               <HomeLogoLink

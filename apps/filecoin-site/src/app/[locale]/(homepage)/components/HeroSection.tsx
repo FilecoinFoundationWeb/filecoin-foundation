@@ -12,8 +12,7 @@ export function HeroSection() {
 
   return (
     <PageSection backgroundVariant="transparentDark" paddingVariant="none">
-      <div className="space-y-15 pt-24 pb-24 md:pt-32">
-        {/* todo look into when we need space-y-15 */}
+      <div className="space-y-15 py-25 md:py-30">
         <Announcement centered href={PATHS.BLOG.path}>
           {t('announcement')}
         </Announcement>

@@ -18,7 +18,7 @@ export default function TermsOfUse() {
         structuredData={generateStructuredData(TERMS_OF_USE_SEO)}
       />
       <Navigation backgroundVariant="light" />
-      <PageSection backgroundVariant="light">
+      <PageSection backgroundVariant="light" paddingVariant="topCompact">
         <PageHeader title="Terms of Use" />
       </PageSection>
     </>

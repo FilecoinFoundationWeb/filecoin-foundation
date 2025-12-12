@@ -8,7 +8,7 @@ export function BlogCategoryFilter() {
         <CategoryFilter />
       </div>
 
-      <div className="block min-w-48 lg:hidden">
+      <div className="block lg:hidden">
         <CategoryListbox />
       </div>
     </>

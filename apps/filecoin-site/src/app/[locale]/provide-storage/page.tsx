@@ -58,18 +58,17 @@ export default function ProvideStorage() {
           className="absolute right-0 bottom-0 -z-20 h-full object-cover"
         />
         <GradientOverlay />
-
-        <PageSection paddingVariant="none" backgroundVariant="transparentDark">
-          <div className="py-24" />
-          <LogoSection
-            headingTag="h2"
-            title="Join a global network of storage providers"
-            logos={storageProvidersLogos}
-          />
-        </PageSection>
       </div>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection backgroundVariant="dark" paddingVariant="topNone">
+        <LogoSection
+          headingTag="h2"
+          title="Join a global network of storage providers"
+          logos={storageProvidersLogos}
+        />
+      </PageSection>
+
+      <PageSection backgroundVariant="dark" paddingVariant="topNone">
         <SectionContent
           centerCTA
           title="Getting started with PDP storage"
