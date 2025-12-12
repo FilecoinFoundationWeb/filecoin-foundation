@@ -33,7 +33,7 @@ On August 18, ten finalists demonstrated their projects live in front of a panel
 
 ### Sailplane
 
-### ![Sailplane](https://filecoin.io/vintage/images/blog/hfs-sailplane-finale.jpg)
+![Sailplane](https://filecoin.io/vintage/images/blog/hfs-sailplane-finale.jpg)
 
 Sailplane is a peer-to-peer file storage service, similar to Dropbox, in a web app using IPFS and OrbitDB. It uses IPFS and a custom OrbitDB store for file metadata and other file management functionality. The front-end is built on React.js and has a custom browser-based user interface.
 

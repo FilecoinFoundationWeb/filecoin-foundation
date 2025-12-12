@@ -64,7 +64,7 @@ iPollo启动了带有500个节点的测试链，还通过NDLabs在Filecoin上存
 
 ### 该平台的技术栈有四个层
 
-### ![](/uploads/architecture.webp)
+![](/uploads/architecture.webp)
 
 <img src="/uploads/architecture.webp">
 
