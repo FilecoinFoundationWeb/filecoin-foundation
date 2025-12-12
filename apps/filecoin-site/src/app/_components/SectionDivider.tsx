@@ -1,3 +1,3 @@
 export function SectionDivider() {
-  return <hr className="border-[var(--color-border-base)]" />
+  return <hr className="border-(--color-border-base)" />
 }

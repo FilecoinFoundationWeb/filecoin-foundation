@@ -59,7 +59,7 @@ export default function Learn() {
         <GradientOverlay />
       </div>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection backgroundVariant="dark" paddingVariant="topNone">
         <SectionContent
           centerCTA
           descriptionColorBase

@@ -34,7 +34,7 @@ export function BlogPageHeader({
             {title}
           </Heading>
 
-          <p className="text-pretty text-[var(--color-paragraph-text)] md:text-xl/7">
+          <p className="text-pretty text-(--color-paragraph-text) md:text-xl/7">
             {description}
           </p>
         </div>
@@ -48,7 +48,7 @@ export function BlogPageHeader({
         </Button>
       </div>
 
-      <div className="relative aspect-[3/2]">
+      <div className="relative aspect-3/2">
         <Image
           fill
           priority

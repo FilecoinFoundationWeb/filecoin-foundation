@@ -40,6 +40,7 @@ export function SectionContent({
         <Heading tag="h2" variant="section-heading">
           {title}
         </Heading>
+
         {description && (
           <div className="space-y-6">
             <SectionContentDescription
@@ -49,9 +50,11 @@ export function SectionContent({
           </div>
         )}
       </div>
+
       {children && (
         <div className="flex flex-col gap-15 md:gap-30">{children}</div>
       )}
+
       {cta && <ButtonRow buttons={cta} centered={centerCTA} />}
     </div>
   )
@@ -71,8 +74,8 @@ function SectionContentDescription({
       className={clsx(
         'text-2xl/8.5 text-pretty',
         descriptionColorBase
-          ? 'text-[var(--color-text-base)]'
-          : 'text-[var(--color-subheading-text-muted)]',
+          ? 'text-(--color-text-base'
+          : 'text-(--color-subheading-text-muted)',
       )}
     >
       {item}
