@@ -5,11 +5,13 @@ This directory contains custom Warp prompts for the team. These prompts help aut
 ## Available Prompts
 
 ### 1. Analyze Changeset for @filecoin-foundation/ui-filecoin
+
 **File:** `changeset-analyze.yaml`
 
 Analyzes code changes to determine the appropriate version bump and generate a changeset summary.
 
 **Arguments:**
+
 - `changes` - Describe or paste the git diff
 - `current_version` - Current version of the package
 - `breaking` - Yes/No for breaking changes
@@ -17,11 +19,13 @@ Analyzes code changes to determine the appropriate version bump and generate a c
 - `bug_fixes` - Yes/No for bug fixes
 
 ### 2. Create Changeset
+
 **File:** `changeset-create.yaml`
 
 Runs `npm run changeset` with the bump type and summary already determined from analysis.
 
 **Arguments:**
+
 - `bump_type` - major/minor/patch
 - `summary` - Changeset summary text
 
@@ -30,6 +34,7 @@ Runs `npm run changeset` with the bump type and summary already determined from 
 Since Warp doesn't currently support automatic import from version control, each team member needs to manually add these prompts to their Warp Drive:
 
 ### Option 1: Manual Creation (Recommended)
+
 1. Open Warp Drive (CMD+D or click the Warp Drive icon)
 2. Click the + button and select "Prompt"
 3. Copy the fields from the YAML files above:
@@ -41,6 +46,7 @@ Since Warp doesn't currently support automatic import from version control, each
 5. Repeat for each prompt
 
 ### Option 2: Export/Import (if available)
+
 1. One team member creates all prompts in Warp Drive
 2. Export them using Warp Drive's export feature
 3. Share the exported files with the team
@@ -49,6 +55,7 @@ Since Warp doesn't currently support automatic import from version control, each
 ## Usage
 
 Once installed, you can access these prompts:
+
 - Via Command Palette (CMD+P) - search for the prompt name
 - Via Command Search (CTRL+R) - type "prompts:"
 - From Warp Drive directly
