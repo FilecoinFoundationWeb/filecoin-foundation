@@ -72,7 +72,6 @@ This applies to each of Filecoin’s core stakeholders, including:
 
 1. **Mining Rewards**. All mining rewards undergo [some form of vesting](https://spec.filecoin.io/#section-systems.filecoin_mining.miner_collaterals.block-reward-collateral) to encourage long term network alignment. For example, 75% of block rewards earned by miners vest linearly over 180 days while 25% are made immediately available to improve miner cash flow and profitability. Of course, all earned rewards are subject to slashing throughout the lifetime of a sector as described below. Unreliable storage reduces the utility of the network and hence block rewards earned by these sectors will be slashed and burned.
 2. **SAFT Investors**. All SAFT holders received their FIL subject to 6 month, 1 year, 2 year, and 3 year linear vesting terms beginning at network launch. The majority of SAFT tokens purchased are vesting linearly over 3 years:
-
    - 58% of SAFT tokens vest linearly over 3 Years
    - 5% of SAFTs tokens vest linearly over 2 Years
    - 15% of SAFTs tokens vest linearly over 1 Years
@@ -113,7 +112,7 @@ The economic mechanisms embedded in the Filecoin protocol ensure that network ac
 
 Making Web3 mainstream requires the efforts of all ecosystem participants. The incentives of the Filecoin protocol have to balance the interests of all stakeholders, storage clients, miners, developers, token holders, and ecosystem partners. A thriving economy benefits everyone in the network and aligns the long-term incentives of all participants. And most importantly, the future of Filecoin lies in the hands of all its community.
 
-## 
+---
 
 ## _Addendum: Mechanical Definitions of Circulating Supply_
 
