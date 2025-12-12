@@ -3,6 +3,7 @@ import {
   CoinsIcon,
   HandshakeIcon,
   ShieldCheckIcon,
+  KeyIcon,
   StackIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
@@ -22,7 +23,7 @@ export const howFilecoinWorks = [
     title: 'Cryptographic proofs',
     description:
       'After the client sends the data, the provider must regularly generate blockchain-verified cryptographic proofs so clients can confirm their data is stored as promised.',
-    icon: CloudArrowDownIcon,
+    icon: KeyIcon,
   },
   {
     title: 'Verifiable security',

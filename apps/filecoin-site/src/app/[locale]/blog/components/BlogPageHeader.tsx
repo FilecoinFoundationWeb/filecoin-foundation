@@ -1,5 +1,6 @@
 import Image, { type ImageProps } from 'next/image'
 
+import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils/buildImageSizeProp'
@@ -25,9 +26,9 @@ export function BlogPageHeader({
     <header className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <div className="flex flex-col justify-between gap-10">
         <div className="flex flex-col gap-6">
-          <span className="font-mono text-(--color-paragraph-text)">
-            Latest updates
-          </span>
+          <div className="flex">
+            <Badge variant="primary">Latest updates</Badge>
+          </div>
 
           <Heading tag="h1" variant="section-heading">
             {title}
@@ -39,7 +40,7 @@ export function BlogPageHeader({
         </div>
 
         <Button
-          variant="primary"
+          variant="ghost"
           href={`${PATHS.BLOG.path}/${slug}`}
           className="w-full lg:w-fit"
         >
