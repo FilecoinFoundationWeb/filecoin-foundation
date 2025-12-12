@@ -28,7 +28,7 @@ When building an application that manages and transfers real value, secure UX an
 
 Naturally, Flask does not offer the same API or UX stability guarantees as the main MetaMask applications do, so beware that it is intended for developers only, and **participation is at the users’ own risk. This laboratory is unsupervised.**
 
-### Snapping into Innovation
+## Snapping into Innovation
 
 Snaps is the first feature to be released through Flask.
 
@@ -47,13 +47,13 @@ Communication occurs via JSON-RPC requests and responses. In this way, Snaps can
 
 To learn more about how to use Snaps, read the technical documentation [here](https://docs.metamask.io/guide/snaps.html).
 
-### A Snap for Filecoin
+## A Snap for Filecoin
 
 Making the most of these new capabilities, Protocol Labs has partnered with Chainsafe to develop a snap for MetaMask Flask. Once installed, the snap will add a Filecoin integration to the wallet with an accompanying frontend. Here, users can view their Filecoin accounts and balances, send FIL transactions, and create cryptographically signed messages with their Filecoin keys. This provides a more convenient way for them to interact with the Filecoin protocol where it all happens directly from the MetaMask browser integration.
 
 Be sure to check out Erik Marks’s [demo](https://youtu.be/14uEYdgyEr8) to learn more about how to set up the Filecoin Snap on MetaMask Flask.
 
-### In Summary
+## In Summary
 
 Flask is the environment where MetaMask works to ensure features and APIs are stable, maintainable, and safe for all users. Snaps is a way to give Web3 developers the opportunity to do more with MetaMask products, and create completely new kinds of dapps. Any developer can create a Snap, and in the future, users will get to decide which Snaps they want to use and integrate into their wallet.
 

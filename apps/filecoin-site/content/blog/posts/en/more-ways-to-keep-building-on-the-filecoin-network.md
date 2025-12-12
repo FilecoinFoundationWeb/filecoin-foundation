@@ -30,7 +30,7 @@ To maintain this momentum, we’re teaming up with other Web3 leaders to create 
 
 Keep reading to learn more about how you can participate in two new programs designed to foster the next generation of the web: Filecoin Launchpad Accelerator and Filecoin APOLLO.
 
-### [Filecoin Launchpad Accelerator](https://tachyon.xyz/)
+## [Filecoin Launchpad Accelerator](https://tachyon.xyz/)
 
 ![Filecoin Launchpad Accelerator](https://filecoin.io/vintage/images/blog/ignite-launchpad.jpg)
 
@@ -42,7 +42,7 @@ Launchpad culminates in a Demo Day, and teams will be offered post-program fundr
 
 This cohort will be focused on startups building more open, interoperable, and programmable tools, infrastructure, and applications for the distributed web through IPFS and Filecoin. There’s still time to get involved – applications close August 28th! If you have any questions, you can join the [#fil-ignite-launchpad](https://app.slack.com/client/TEHTVS1L6/C0192P674KY) channel on the [Filecoin Slack](https://filecoin.io/slack).
 
-### [Filecoin APOLLO](https://gitcoin.co/hackathon/filecoin/onboard)
+## [Filecoin APOLLO](https://gitcoin.co/hackathon/filecoin/onboard)
 
 ![Filecoin Launchpad Accelerator](https://filecoin.io/vintage/images/blog/ignite-apollo.jpg)
 

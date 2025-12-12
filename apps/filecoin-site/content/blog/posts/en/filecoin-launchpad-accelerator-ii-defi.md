@@ -26,7 +26,7 @@ _template: blog_detail
 
 On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the DeFi projects that emerged from the accelerator and presented during Demo Day. The entire Demo Day is available [here](https://www.youtube.com/watch?v=UWuaSP6YuJ4).
 
-### Hedgey Finance
+## Hedgey Finance
 
 _Hedgey Finance is a protocol for adding options markets to any token._
 
@@ -48,7 +48,7 @@ Hedgey's dashboard makes it easy to see the available put and calls (options) on
 
 Discover more about Hedgey Finance and learn about what they do and their offerings here: [https://hedgey.finance](https://hedgey.finance/)
 
-### Tamago Finance
+## Tamago Finance
 
 _A DeFi protocol that makes synthetic tokens for widespread distribution on Asian real-world markets._
 
@@ -66,7 +66,7 @@ Tamago Finance seeks to make the Asian market more accessible through its protoc
 
 Tamago Finance is a unique take on offering traders worldwide the chance to participate in emerging markets. Using their tokens as investment capital, anyone could get access to such burgeoning markets as Singapore and Indonesia without having to register trading accounts there. Conversely, companies there can benefit from investment from the West without setting up their own businesses on exchanges there.
 
-### SmartFunds
+## SmartFunds
 
 _SmartFunds is a simple, automated, and compliant fund-management tool._
 
@@ -90,7 +90,7 @@ SmartFunds registered the first compliant US hedge fund that doesn't have a huma
 
 If you're interested in what SmartFunds is doing and want to get some more information, you can find them here: [https://www.smartfunds.xyz/](https://www.smartfunds.xyz/ "https://www.smartfunds.xyz/")
 
-### Clam Island
+## Clam Island
 
 Gamification of investments using Blockchain, NFTs, and Yield Farming.
 
@@ -108,7 +108,7 @@ Using gamification, Clam Island hopes to make investing fun, easy and enjoyable 
 
 Clam Island is a unique approach to gaming that incorporates NFTs and tries to make investment more approachable. There are several other blockchain-based games in the works, but Clam Island's value proposition rests with creating a sustainable financial ecosystem that's fully immersive for the player.
 
-### Boto
+## Boto
 
 Boto is an online no-code platform that allows users to build bots to automate online tasks.
 

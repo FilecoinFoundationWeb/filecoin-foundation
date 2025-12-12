@@ -32,7 +32,7 @@ As you may have seen in our [recent update](https://filecoin.io/blog/update-2019
 
 **If you already know you’d like to participate in the ceremony, you can fill out** [**this form**](https://forms.gle/sHVYrqMZ8u4Dg1vW7) **directly. Otherwise, read on for more details.**
 
-### What exactly is a trusted setup ceremony and why do we need it?
+## What exactly is a trusted setup ceremony and why do we need it
 
 Filecoin mining is based on cryptographic proofs called Proof-of-Replication and Proof-of-Spacetime. We use [zkSNARKS](https://z.cash/technology/zksnarks/) to reduce the size of these on-chain proofs. zkSNARKS require a set of [public parameters](https://electriccoin.co/blog/snark-parameters/) that are known to all parties in the system. These parameters must be generated securely in order for the corresponding zkSNARKS to be secure and to protect the integrity of the Filecoin network.
 
@@ -44,28 +44,30 @@ The trusted setup ceremony is conducted in two phases:
 
 **Phase 2.** The second phase is highly specific to Filecoin circuits, and will generate parameters that will be used only by the Filecoin project.
 
-### I want to volunteer. What do I need to do?
+## I want to volunteer. What do I need to do
 
 For now, all we need is for you to fill out this [form](https://forms.gle/sHVYrqMZ8u4Dg1vW7)! By signing up, you’ll be adding your details to a list of volunteers. Before each of the two phases of the trusted setup ceremony, members of the Filecoin team **may** reach out to ask you to participate in that phase of the setup. Given the specifics of the ceremony and the windows for the phases, it is possible that a volunteer may not be called upon to assist. We will be starting the first phase of the trusted setup ceremony **November 15** - so we will begin reaching out to volunteers to participate starting **November 1**.
 
 If contacted by the Filecoin team, you will receive a link to sign up for a calendar slot to participate in the ceremony. Prior to your window, you’ll receive more detailed instructions for the software you need to download and step-by-step instructions for what you’ll need to do during your portion of the ceremony.
 
-### How long will participating take? What sort of computer do I need?
+## How long will participating take? What sort of computer do I need
 
 We are still finalizing details for Phase 2 of the ceremony. Here is an overview of what will happen during your portion of the Phase 1 ceremony:
 
 1. First, you will download the latest verified version of the data (\~60 GB).
 2. Next, you will run the specified software on the data. _Note: Compute time is variable depending on your machine’s hardware specs. For reference, we’re including our sample hardware and computation time:_
+
    - RAM: 16GB
    - Processor: AMD Ryzen 1950X (32 thread, 3.5ghz)
    - Number of cores: 16
    - Compute time: 180 min
+
 3. Lastly, you will upload the processed data (\~40 GB).
 4. On our side, a verifying node will then check that your submission is valid and ensure the next participant starts with your newly verified contribution.
 
 Our target is for contributors to be able to run their portion of the ceremony within 24 hours for a standard laptop and within 10 hours for more powerful machines. We’re actively working to see if we can reduce the time for participation - we’ll keep volunteers posted as we make progress!
 
-### Aren’t there other projects that have done trusted setups? Why do we need to do this again?
+## Aren’t there other projects that have done trusted setups? Why do we need to do this again
 
 We use zkSNARKs ([Groth’s 2016 zkSNARK](https://eprint.iacr.org/2016/260.pdf)) that require a new Phase 2 ceremony for each new application. Phase 1 (Powers of Tau) parameters can be reused, but only if the new application is bounded by the same circuit size as the old application and uses the same elliptic curve.
 

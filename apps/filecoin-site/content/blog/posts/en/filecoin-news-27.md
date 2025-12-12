@@ -29,7 +29,7 @@ title:
 
 <a href="https://www.mona.gallery/"><img src="/uploads/create.webp" style="width:40%;margin-left:0%"></a>
 
-### MoNA Launch
+## MoNA Launch
 
 Just announced, the [**MoNA Gallery**](https://www.mona.gallery/) is live! MoNA is bringing together creators, collectors, and investors to build the world of NFT art. Design your gallery and [**submit it to MoNA**](https://airtable.com/shrctUmm0fdr2gEtP) to launch your collection to the world. [**Visit to explore 3D spaces**](https://www.mona.gallery/) of top NFT collectors like Taylor WTF, Dario, KidNimbus, and more.
 
@@ -37,13 +37,13 @@ Just announced, the [**MoNA Gallery**](https://www.mona.gallery/) is live! MoNA 
 
 <a href="https://filecoin.io/blog/posts/decentralized-storage-estuary-web3.storage-and-nft.storage/"><img src="/uploads/decentralized-storage_hu560acc3b2bf52f5c764723e70a83f8f7_318054_1500x0_resize_q90_linear.webp" style="width:40%;margin-left:0%"></a>
 
-### Decentralized Storage: Estuary, Web3.Storage, and NFT.Storage
+## Decentralized Storage: Estuary, Web3.Storage, and NFT.Storage
 
 Estuary, Web3.Storage, and NFT.Storage are all gateway systems that act as intermediaries to accept data to store onto IPFS, allow for the collection of CIDs, and provide a way for users to create contracts to store their data on the Filecoin chain. Which is best for your needs? [**Find out how each solution is designed for a particular purpose and a particular audience.**](https://filecoin.io/blog/posts/decentralized-storage-estuary-web3.storage-and-nft.storage/)
 
 <img src="/uploads/using-filecoin-ipfs-1_huead5e06741560944f57049d5aa67a724_366938_1500x0_resize_q90_linear.webp" style="width:40%;margin-left:0%">
 
-### Using Filecoin with IPFS
+## Using Filecoin with IPFS
 
 Filecoin is a decentralized network that allows for storing data accessible from virtually anywhere. The other side of this equation is IPFS, web3’s file system for handling storage and retrieval of data across the web for developers. IPFS and Filecoin are complementary systems, and the ecosystem has developed tools like Textile and Estuary to help them work together.
 
@@ -51,11 +51,11 @@ Filecoin is a decentralized network that allows for storing data accessible from
 
 <a href="https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/"><img src="/uploads/data-gravity-filecoin-sales-referral-program-1_huf4a9f1f6cc990112aa05a3b527ec0cb7_1611845_1500x0_resize_q90_linear.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin Project Gravity, a Sales Referral Program
+## Filecoin Project Gravity, a Sales Referral Program
 
 A limited-time referral fee program has launched and is offering awards for community storage providers who can bring large datasets onto the Filecoin network. Invite your customers and help create the data gravity pull. [**Find out more about how you can participate, and what awards are available!**](https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/)
 
-### Storage Provider Fall Public Meeting
+## Storage Provider Fall Public Meeting
 
 Last month, the first Storage Provider Public Meeting was held by Filecoin Foundation. From this meeting, Filecoin discussed:
 
@@ -66,7 +66,7 @@ You can watch the presentation on the [Filecoin Foundation Youtube channel.](htt
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
 
-### NerpaNet Deprecation Announcement
+## NerpaNet Deprecation Announcement
 
 After thoughtful review regarding the usage and ongoing issues with nerpanet, the decision has been made to spin the nerpanet down. Stay tuned for a full doc explaining the decision, but see below for [**highlights**](https://github.com/filecoin-project/community/discussions/74):
 
@@ -77,11 +77,11 @@ That said, these problems and your community involvement have pointed to a new a
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
 
-### Messari Mainnet
+## Messari Mainnet
 
 Tuning in for Messari Mainnet 2021? Yesterday, Protocol Labs’ Head of Product Pooja Shah and Ecosystem Lead Colin Evran took to the stage to talk about NFTs and Proof of Work, respectively. Tomorrow, Wednesday, tune in for Juan Benet’s keynote speech at 9:30am ET.
 
-### Asia Hackathon Season
+## Asia Hackathon Season
 
 **Asia Hackathon Season** is still going strong! **Registration for the Mars event**, co-hosted by [**Polygon**](https://polygon.technology/), is open until October 3rd, and is open to all builders and developers looking to disrupt the current data storage realm by creating inventive solutions utilizing the Filecoin and IPFS frameworks.
 
@@ -89,25 +89,25 @@ The Mercury event, co-hosted by Flow, also kicked off with an opening ceremony o
 
 <a href="https://share.hsforms.com/1sOOp2P0hRJuuzhLG-BS4RQ3orpu/"><img src="/uploads/screen-shot-2021-09-15-at-1-38-51-pm.webp" style="width:40%;margin-left:0%"></a>
 
-### FLAII Demo Day - September 28
+## FLAII Demo Day - September 28
 
 Filecoin Launchpad Demo Day is right around the corner! On September 28th, 20 companies from around the world will present the applications and projects they’ve been building as part of the most recent accelerator cohort powered by Tachyon. Tune in to hear from the companies — [**register here**](https://share.hsforms.com/1sOOp2P0hRJuuzhLG-BS4RQ3orpu).
 
 <a href="https://research.protocol.ai/blog/2021/consensusday-becomes-consensusdays-21/"><img src="/uploads/consensusday-card.webp" style="width:40%;margin-left:0%"></a>
 
-### ConsensusDays Update
+## ConsensusDays Update
 
 ConsensusDays 2021 is a two-day workshop focused on research, workshops, and presentations all around the idea of consensus, hosted by the Protocol Labs Research team. Originally a one-day event, the number of stellar submissions has extended the event to two days. [**Register here**](https://research.protocol.ai/blog/2021/consensusday-becomes-consensusdays-21/) and join the Protocol Labs Research team and broader community.
 
 <a href="https://chain.link/hackathon"><img src="/uploads/screen-shot-2021-09-21-at-4-17-03-pm.webp" style="width:40%;margin-left:0%"></a>
 
-### Chainlink Hackathon
+## Chainlink Hackathon
 
 Inviting NFT and blockchain developers of all experience levels to [**apply to collaborate with fellow hackers**](https://chain.link/hackathon), learn from top developers, and compete for $300K+ in prizes! Get the chance to build the next generation of hybrid smart contracts alongside developers, creators, artists, and industry-leading mentors from across the blockchain ecosystem.
 
 <img src="/uploads/poster-16.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin Orbit
+## Filecoin Orbit
 
 Believe it or not, it’s been a year since Filecoin mainnet launch, and there’s a lot planned to celebrate one year in orbit. Stay tuned for more details coming soon!
 
@@ -115,7 +115,7 @@ Believe it or not, it’s been a year since Filecoin mainnet launch, and there�
 
 <a href="https://drand.love/blog/2021/09/14/the-value-of-drand/"><img src="/uploads/drand.webp" style="width:40%;margin-left:0%"></a>
 
-### The Value of Drand
+## The Value of Drand
 
 Drand is a distributed randomness beacon supported by Protocol Labs that provides increased security for its users. Drand provides publicly-available randomness for any third-party applications and services to use. Behind drand is the “League of Entropy” (LoE) — an independent consortium committed to providing bias-resistance and publicly verifiable randomness to the larger tech ecosystem.
 
@@ -123,7 +123,7 @@ We asked the League of Entropy members: “What’s the value of drand for you, 
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
 
-### ✊ Get Involved
+## ✊ Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

@@ -28,7 +28,7 @@ _template: blog_detail
 
 Recently [Electric Coin Co.](https://electriccoin.co/ "Electric Coin Co.") (ECC) [announced](https://electriccoin.co/blog/ethereum-zcash-filecoin-collab/) that [Protocol Labs](https://protocol.ai "Protocol Labs"), the [Filecoin Foundation](https://fil.org/ "Filecoin Foundation"), the [Ethereum Foundation](https://ethereum.org/en/foundation/ "Ethereum Foundation"), and ECC would be collaborating to explore research and development of [Halo](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/) — a solution to zero knowledge recursive proofs without requiring a trusted setup.
 
-### Quick primer on zero knowledge, recursive proofs, and Halo
+## Quick primer on zero knowledge, recursive proofs, and Halo
 
 _Zero knowledge_ is a branch of cryptography focused on methods of verifying solutions (“answers”) without needing to see the underlying data.
 
@@ -42,7 +42,7 @@ Should a future transaction wish to verify information, a naive solution would b
 
 Halo is ECC’s recursive proof research, initially presented in 2019 as a solution to setting up recursive proofs on blockchain networks without running a trusted setup (a complex and costly process). Halo 2 is the next iteration of recursive proof research.
 
-### Halo 2 in Action: Filecoin
+## Halo 2 in Action: Filecoin
 
 Perhaps not obvious to many, the Filecoin network is the largest deployed zero knowledge network in the world. [Zero knowledge is fundamental to the Filecoin network](https://filecoin.io/blog/posts/zero-knowledge-and-the-filecoin-network/), providing critical scalability solutions that have been in play since the network first launched on testnet.
 

@@ -36,13 +36,13 @@ The power of retroactive dependency funding is in amplifying the impact of innov
 
 This approach magnifies the impact of this funding round, ensuring that resources flow to all contributors who make our decentralized systems work.
 
-### Case Study
+## Case Study
 
 A great example of the dependency graph is action can be seen with the project [Ethers.js](https://www.drips.network/app/projects/github/ethers-io/ethers.js?exact) - one of the most popular Ethereum-focused javascript libraries. From the funds the project receives from various sources who rely on their work, they have chosen to split 40% to their own dependencies. Some of those dependencies in turn have chosen to split up to 60% of their funds creating impact for many more projects and individuals far beyond the initial project. 
 
 ![](/uploads/photo_2025-01-23_00-50-33.webp)
 
-### How to Split
+## How to Split
 
 As a recipient of funds from this round we encourage you to take inspiration from the dependency graph and use this opportunity to amplify your impact.
 

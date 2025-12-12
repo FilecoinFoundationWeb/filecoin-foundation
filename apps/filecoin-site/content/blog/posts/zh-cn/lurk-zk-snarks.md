@@ -22,7 +22,7 @@ _template: blog_detail_ch
 
 我们很高兴宣布，[Lurk编程语言](http://github.com/lurk-lang)的程序库（repository）现向公众开放。Lurk是为递归zk-SNARKs（简洁非交互式零知识证明) 设计的编程语言，能够为SNARKs证明、区块链共识、Filecoin虚拟机、去中心化应用、IPFS和IPLD的数据整合等领域带来新机会。
 
-### 概览
+## 概览
 
 Lurk是[Lisp](<https://en.wikipedia.org/wiki/Lisp_(programming_language)>)语言的一个静态方言（衍生版本），受到了Scheme和Common Lisp这两种方言的影响。它与大多数编程语言的主要区别是，Lurk程序设计的正确运行结果可以直接用zk-SNARKs来证明。这样的证明结果是相对小体积的，能快速验证，并只揭示证明中明确可以公开的信息。
 
@@ -44,13 +44,13 @@ Lurk当前支持多种后端证明系统，如[Groth16](https://eprint.iacr.org/
 - 高级功能（如作为计算所需的公开输入，带有证明）
 - 轻易与[IPFS](https://ipfs.tech/) 和[IPLD](http://ipld.io/)整合的可内容寻址数据。
 
-### Lurk和Filecoin
+## Lurk和Filecoin
 
 Lurk能以多种方式支持Filecoin协议的发展。例如，Lurk与[Filecoin虚拟机(FVM)](http://fvm.filecoin.io/)的整合能让Lurk程序和应用在Filecoin区块链上验证。这会让Filecoin智能合约（actors）深入接触到针对应用程序的原生零知识可验证计算能力。Filecoin的actors智能合约能够为针对Filecoin网络里数据展开的长期Lurk任务提供协商、组织和激励机制。此外，对来自多个来源的公开和隐私数据的混合证明需求，它都能满足。这包括Filecoin扇区、隐私存储或链自身的数据。
 
 长期来说，Lurk会改进Filecoin里的[层级化共识（Hierarchical Consensus）](https://github.com/protocol/ConsensusLab/blob/main/docs/b1.pdf)。层级化共识是区块链网络平行扩容方案，能够增加吞吐量和灵活性。在这种共识里，一些用户能够启动具有独立状态和共识算法的子网络，同时还能与系统中的其他子网络无缝互动。子网络通过周期性向主链提交自身状态的证明，实质是利用了主链的安全性。这确保了最新的全局共识，并能向层级里的其他子网络传播信息。在当前的层级化共识版本中，子网络证明的验证，需要对该子网络状态的完全访问权。而Lurk可以完全移除对它的依赖，这是通过为子网络状态变更提供可验证证明的方式来实现的，从而提高系统的可扩展性和灵活性。
 
-### Lurk生态的其他重要合作伙伴
+## Lurk生态的其他重要合作伙伴
 
 Lurk生态包括了由[协议实验室](http://protocol.ai/)和[Filecoin基金会](http://fil.org/)支持的研究人员和研发团队。
 
@@ -64,7 +64,7 @@ Yatima正与Lurk合作，实现任意编译时间计算任务的零知识证明�
 
 有这支杰出的研究人员和工程师团队，以及蓬勃发展的贡献者生态，我们对Lurk的未来很乐观。
 
-### 未来规划
+## 未来规划
 
 在接下来几个月，我们会推出一个Lurk网站和博客，它会为读者带来对Lurk的更深入的技术分析和历史背景。要保持关注，请在推特上留意[@Filecoin](https://twitter.com/filecoin)和[@ProtoResearch](https://twitter.com/ProtoResearch) 。
 

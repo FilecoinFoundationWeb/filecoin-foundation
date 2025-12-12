@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 以下是Q&A的摘要。我们期待在未来几周内举办更多类似的活动! 同时，请关注[Filecoin社区 Slack](https://filecoin.io/slack)。 你也可以在[微信 (Filecoin-Official)](https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF)和[Twitter](https://twitter.com/Filecoin)上找到我们。
 
-### 问答摘要
+## 问答摘要
 
 大部分问题和答案都是直接引用的，有的问题和答案是为了可读性而编辑的。
 

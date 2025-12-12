@@ -38,7 +38,7 @@ Specifically, today we’re announcing:
 
 Let’s dive in!
 
-### Why multiple implementations?
+## Why multiple implementations
 
 As we’ve mentioned [elsewhere](https://filecoin.io/blog/update-2019-q2-q3/#3-roadmap-update), building a blockchain is like building a software rocket. We are working to ensure that our protocol and software implementations are secure – we have an internal protocol security team and are performing internal implementation security audits, external security audits, and more. But no matter how hard we work to protect the system and individual nodes, there is always the chance that an implementation bug might rear its head and result in adverse consequences for the network.
 
@@ -48,7 +48,7 @@ Multiple implementations offer other benefits, such as the ability to increase e
 
 Because multiple implementations are so valuable for network security, resilience, and community engagement, we have made it a goal to launch Filecoin (in March 2020) with 2+ interoperable protocol implementations. As of today, we have several Filecoin implementations in progress – **go-filecoin**, **lotus**, and others that will be formally announced soon. We are looking for even more talented teams to build Filecoin implementations. If interested, please apply for our [grant](https://github.com/filecoin-project/devgrants/issues/43) to build an additional implementation by following the instructions [here](http://filecoin.io/grants)!
 
-### Tell me more about **lotus**
+## Tell me more about **lotus**
 
 [**lotus**](https://github.com/filecoin-project/lotus) is a minimal, experimental implementation of the [Filecoin protocol specification](https://github.com/filecoin-project/specs/), and is written in Go. The codebase is not yet feature-complete, but several core Filecoin protocol features have already been implemented, including:
 
@@ -66,7 +66,7 @@ A few very important notes:
 - We plan to launch the Filecoin main network with **go-filecoin**, **lotus**, and 1+ additional implementation in March 2020.
 - The **lotus** devnet and the **go-filecoin** alphanet are not _currently_ the same network. They will continue to be different networks until **go-filecoin** and **lotus** nodes can interoperate. This interop will happen before we launch in March 2020, but exact date is still TBD.
 
-### Getting started with **lotus**
+## Getting started with **lotus**
 
 We encourage miners, clients, and developers to start experimenting with **lotus** today! We hope that your engagement and participation will help strengthen the security of the **lotus** codebase and network in advance of our December 11, 2019 testnet launch.
 
@@ -85,7 +85,7 @@ Through any and all of these steps, we hope you will help us out by reporting an
 - #fil-help channel on [community chat](https://github.com/filecoin-project/community#chat) (make sure to mention that you need help with **lotus** specifically)
 - [GitHub issues on the **lotus** repo](https://github.com/filecoin-project/lotus/issues)
 
-### Many Thanks
+## Many Thanks
 
 As always, many thanks for your continued support of the Filecoin project. We are excited to continue working with you to build a robust, decentralized, and efficient foundation for humanity’s information.
 

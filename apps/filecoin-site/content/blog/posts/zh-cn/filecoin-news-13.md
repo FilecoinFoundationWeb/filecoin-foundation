@@ -27,7 +27,7 @@ _template: blog_detail_ch
 
 <img src="/uploads/aa9da583-59a2-44cc-a131-7913efbd460b.webp" style="width:18%;margin-left:0%">
 
-### **Filecoin Launchpad加速营**
+## **Filecoin Launchpad加速营**
 
 来自11个国家的33位创始人参加了为期12周的沉浸式计划，将IPFS、Filecoin和以太坊社区连接起来。点击Filecoin博客了解更多关于创建者及其初创公司的信息。
 
@@ -37,7 +37,7 @@ _template: blog_detail_ch
 
 <img src="/uploads/c2f9cdfc-a335-4ab1-b0fe-adbe819004ed.webp" style="width:40%;margin-left:0%">
 
-### NFT黑客马拉松：3月19日至21日
+## NFT黑客马拉松：3月19日至21日
 
 NFTHack将于3月19日至21日在ETHGlobal的支持下召集一群充满激情的创意人员和工程师，举行周末NFT黑客马拉松和峰会。该活动是探索令人兴奋的新事物的绝佳机会。将有来自Zora、Rarible、以太坊、Filecoin、IPFS等的挑战!奖品包括限量版NFT、独家体验和超过1万美元的奖励。[**点击了解更多并注册参与**]（https://nft.ethglobal.co/）。
 
@@ -45,7 +45,7 @@ NFTHack将于3月19日至21日在ETHGlobal的支持下召集一群充满激情�
 
 <img src="/uploads/248952c2-a22e-4425-805c-6d556b5f5df7.webp" style="width:20%;margin-left:0%">
 
-### Space的beta测试版来了
+## Space的beta测试版来了
 
 Space 是一个基于开放和分布式网络上开源的、可以由用户控制、加密的文件存储和共享平台。Fleek团队宣布推出Space的Beta版，其特点是在IPFS与Filecoin上提供个人和分布式文件存储和共享的应用。这个版本是开发者如何利用 **Web 3.0协议** 创建平台的一个例子，在这个平台上，用户而不是应用本身，可以对他们的账户和存储享有专属控制权。
 
@@ -53,7 +53,7 @@ Space 是一个基于开放和分布式网络上开源的、可以由用户控�
 
 <img src="/uploads/49082bd0-a1b4-49a5-91e5-db9ce189f068.webp" style="width:20%;margin-left:0%">
 
-### ChainSafe团队关于Forest的最新情况
+## ChainSafe团队关于Forest的最新情况
 
 我们很高兴地宣布，Filecoin的Rust实现Forest现在可以与Filecoin主网进行互操作了！为了达到这个里程碑，我们首先专注于更新到Actors v2，并通过了所有的[**互操作性测试向量**](https://github.com/filecoin-project/test-vectors)。在准备好这些以后，为了发现任何可能存在的共识差异，我们开始尝试与主网进行同步，并修复了可能出现的问题。在这一点上，我们已经有一个节点与Filecoin网络保持同步数周了，并且没有出现任何问题。
 
@@ -70,7 +70,7 @@ Lotus v1.5.0是引入了Filecoin网络的第五次升级的一个强制性版本
 
 <img src="/uploads/4e34038d-eafa-416e-bd7a-a46b629ede54.webp" style="width:40%;margin-left:0%;margin-top:2em">
 
-### Filscan.io & Filwallet.co 已更新
+## Filscan.io & Filwallet.co 已更新
 
 [**Filscan.io**](http://filscan.io/)现在提高了速度、改进了用户界面并进行了可视化分析，包括：24小时的Base Fee变化，FIL分布，扇区比率，幸运值，以及交易列表的细节。[**点击此处查看Filscan**](https://filscan.io/#/home)。
 
@@ -84,7 +84,7 @@ Filecoin社区见面会是一个认识Filecoin生态中许多工具和项目背�
 
 <img src="/uploads/33a29e46-4fc2-44a3-916f-b51988547a3b.webp" style="width:18%;margin-left:0%">
 
-### DI2F研讨会在IFIP Networking 2021举行：利用IPFS和Filecoin实现互联网的去中心化
+## DI2F研讨会在IFIP Networking 2021举行：利用IPFS和Filecoin实现互联网的去中心化
 
 第一届DI2F研讨会将在首要的网络会议上举行，来自学术界、工业界、Filecoin和IPFS生态以及更广泛的分布式网络社区的与会者将齐聚一堂。研讨会欢迎正在进行中的论文以及立场声明和项目演示的参与。其中巅峰竞赛部分将为与会者提供在IPFS和Filecoin基础上进行开发的机会，并可以赢得奖金。论文、演示和竞赛项目的征集截止到**3月19日**。要了解更多信息并提交注册材料，请查看[**IFIP Networking 2021网站上的投稿征集**](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin.html)。
 

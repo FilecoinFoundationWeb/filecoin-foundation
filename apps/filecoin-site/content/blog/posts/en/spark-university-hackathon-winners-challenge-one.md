@@ -27,9 +27,9 @@ In June, we shared the news that Filecoin was participating as a challenge partn
 
 > _Build a system for storing, retrieving, and verifying scientific or other research data on Filecoin. Filecoin will store treasure troves of critically important public data, such as encyclopedias, open access scientific papers, Creative Commons data sets, historical documents, and literature. In this challenge, you will explore those possibilities for storing, using, and distributing public data. You may wish to take advantage of Filecoin’s data integrity & verification capabilities, or reference the Starling Storage project for inspiration._
 
-### Third Place
+## Third Place
 
-#### Filecoin Research Repository
+### Filecoin Research Repository
 
 ![Filecoin Research Repository](https://filecoin.io/vintage/images/blog/filecoin-research-repository.jpg)
 
@@ -37,11 +37,11 @@ Our third place winners are the team behind the [Filecoin Research Repository](h
 
 [Watch the demo.](https://youtu.be/8cWbiYLk1kM)
 
-### Second Place
+## Second Place
 
-#### Filecoin Pricing Mechanism
+### Filecoin Pricing Mechanism
 
-#### ![Filecoin Pricing Mechanism](https://filecoin.io/vintage/images/blog/filecoin-pricing-mechanism.jpg)
+### ![Filecoin Pricing Mechanism](https://filecoin.io/vintage/images/blog/filecoin-pricing-mechanism.jpg)
 
 A critical concern in the use of the Filecoin network as a repository for research data is the friction involved in selecting and negotiating with suitable storage miners to custody one’s data. The winners of our second-place prize are the team behind the [Filecoin Pricing Mechanism](https://github.com/harnen/FilecoinPricingMechanism) (FPM), which automates this process.
 
@@ -51,9 +51,9 @@ The solution to the auction is computed off-chain; any node is capable of comput
 
 [Watch the demo.](https://youtu.be/hM1afoJ4KCI)
 
-### First Place
+## First Place
 
-#### DeepVerse
+### DeepVerse
 
 ![Filecoin Pricing Mechanism](https://filecoin.io/vintage/images/blog/deepverse.jpg)
 

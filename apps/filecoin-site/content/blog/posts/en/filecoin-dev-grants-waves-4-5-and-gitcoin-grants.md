@@ -30,11 +30,11 @@ As the Filecoin Ecosystem continues to grow, more projects are being developed t
 
 In addition to the recent launch of [Fil+](https://github.com/filecoin-project/filecoin-plus-client-onboarding) to maximize incentives for storing useful data on Filecoin, and Phase 2 of the ongoing [Slingshot](https://slingshot.filecoin.io/) storage competition, [Filecoin Dev Grant](https://filecoin.io/grants) projects are also paving the way for interesting use cases and tooling for the protocol. Over the past year, the Dev Grant program has awarded about 40 projects to date, out of 140 total proposals submitted by the community.
 
-### Outlook for Wave 6
+## Outlook for Wave 6
 
 Have an interesting idea for a storage application, developer tool or experimental project idea? **Grant proposals for Wave 6 are due Jan 15th** at 23:59 PDT for priority consideration. Apply at [filecoin.io/grants](https://filecoin.io/grants) by making a PR to the dev grants repo. For questions, reach out to us in [Filecoin Slack](https://filecoin.io/slack) in the [#fil-devgrants](https://filecoinproject.slack.com/archives/C01G57K6FUY) channel or contact [devgrants@filecoin.org](mailto:devgrants@filecoin.org).
 
-### Liftoff Miner Tooling RFPs + Apollo Storage Dapps on Gitcoin
+## Liftoff Miner Tooling RFPs + Apollo Storage Dapps on Gitcoin
 
 We’re deeply grateful to the Filecoin mining community for their participation in the network and for making both the SpaceRace testnet competition and [Filecoin mainnet launch](https://liftoff.filecoin.io/) highly successful. As the protocol and network evolve, our hope is to see miner experience improve alongside a robust, diverse mining community fortifying the storage market and future retrieval market. This can be complemented by a spectrum of far-reaching storage clients.
 
@@ -49,11 +49,11 @@ We have already approved some exciting projects including [Lotus Farcaster](http
 
 If you are interested in supporting or building tools to further Filecoin mining and storage dapps, the Liftoff and Apollo Grants will be **open for contributions and new proposals until January 15th**. Proposals can be made either via the [Filecoin dev grants repo](https://github.com/filecoin-project/devgrants) or via the [Gitcoin Grants - Create a Grant](https://gitcoin.co/grants/new) link.
 
-### Wave 4 & 5 Grant Recipient Projects
+## Wave 4 & 5 Grant Recipient Projects
 
 We are grateful to have received a large number of proposals for Wave 4 and 5 of the Filecoin Dev Grant program - reflecting a broad range of ideas and an incredibly talented and diverse community. While we cannot accept all proposals, we are thrilled to announce the following projects that have been selected and encourage all developers to apply to Wave 6.
 
-#### Wave 4
+### Wave 4
 
 We received 29 proposals in response to our [Wave 4 RFPs](https://github.com/filecoin-project/devgrants/tree/master?tab=readme-ov-file#requests-for-proposals-rfps) as well as on open topics and selected 10 recipient teams. These range from Filecoin integration with popular existing developer tools for IPFS like OrbitDB, to support for Filecoin addresses in ENS and DIDs, early support for cross-chain integration with Ethereum, as well as Filecoin proof library optimizations and interesting data platform integrations for social media data, video and legislative government archives. The list of projects include:
 
@@ -69,7 +69,7 @@ We received 29 proposals in response to our [Wave 4 RFPs](https://github.com/fil
 - [Social Media Archiving Application](https://github.com/filecoin-project/devgrants/blob/244f74704a87908e833da14ff5baa8f6c28df4d7/open-grant-proposals/open-proposal-social-media-archiving-web-app.md)
 - [Snarks as a Service Platform for Miners](https://github.com/filecoin-project/devgrants/blob/9d3fe63c360ff3dfb628de72ee8a4373ce3aca6e/rfp-proposals/SNARKs-as-a-Service.md)
 
-#### Wave 5
+### Wave 5
 
 Wave 5 and future Filecoin Dev Grants are now managed and funded by the newly formed [**Filecoin Foundation**](http://fil.org/) with continued technical advisory from Protocol Labs. The Foundation is an independent organization dedicated to cultivating the Filecoin ecosystem by supporting open source software and community initiatives.
 

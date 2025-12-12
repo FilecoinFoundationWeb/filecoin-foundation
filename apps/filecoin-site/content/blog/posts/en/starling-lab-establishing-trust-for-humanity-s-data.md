@@ -35,7 +35,7 @@ It is also clear how vulnerable digital documents remain in an age where trust i
 
 If you are interested in working with the Starling Lab to capture, store, verify and preserve valuable data sets should visit starlinglab.org/join to learn more about training, educational, and grant opportunities.
 
-### Online Disinformation
+## Online Disinformation
 
 **There is a tidal wave of digital information:** Anyone can capture media with a smartphone or camera, and limited tools exist to prevent individuals from altering captured data or attributing it incorrectly prior to them choosing to share it.
 
@@ -43,7 +43,7 @@ If you are interested in working with the Starling Lab to capture, store, verify
 
 **It’s difficult to verify data:** Current internet solutions do not offer an easy and comprehensive way for individuals to verify data integrity in a sustainable and trustworthy way at a global scale.
 
-### The Starling Lab
+## The Starling Lab
 
 In collaboration with the USC Shoah Foundation and Stanford University, Starling Lab is deploying technology and methods that make the decentralized internet a viable platform for social impact. The Starling Lab was conceived to address the need to:
 
@@ -65,7 +65,7 @@ Within _Store_, data is replicated onto decentralized storage nodes, such as IPF
 
 Within _Verify_, to deal with all the hashes generated during the capture and storage processes, the Starling Framework has a hash/certification management system that lets organizations engage multiple experts to verify footage.
 
-### Starling Lab in Action
+## Starling Lab in Action
 
 The Starling Framework for Data Integrity has already been deployed by the Starling Lab in three major case studies:
 

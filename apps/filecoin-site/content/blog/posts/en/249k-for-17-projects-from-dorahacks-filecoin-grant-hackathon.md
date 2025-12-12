@@ -28,7 +28,7 @@ On July 18, the voting period closed for the 2021 DoraHacks Filecoin Grant Hacka
 
 You can check out all the applicants [here](https://dorahacks.io/grant/filecoin/), and watch the projects’ livestream presentations [here](https://www.youtube.com/channel/UCApW8piYNP4T10kgenp0Mjg/playlists).
 
-### DoraHacks First Place
+## DoraHacks First Place
 
 ## **Box**
 
@@ -54,7 +54,7 @@ Safient manages your crypto secrets securely and conveniently, helping you or yo
 
 Learn more: [Twitter](https://twitter.com/safientio) | [GitHub](https://github.com/safient)
 
-### DoraHacks Second Place
+## DoraHacks Second Place
 
 ## **Dweb Search**
 
@@ -108,7 +108,7 @@ Currently, no solution exists to notify storage providers about on-chain events,
 
 Learn more: [Website](http://twinquasar.io/)
 
-### DoraHacks Third Place
+## DoraHacks Third Place
 
 ## **EasyNFT**
 

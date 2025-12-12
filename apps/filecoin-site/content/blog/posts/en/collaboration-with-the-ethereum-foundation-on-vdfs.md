@@ -36,7 +36,7 @@ However, additional research is needed in order to design secure and efficient V
 
 It is clear that VDFs will be tremendously useful as cryptographic primitives. But much work remains to realize this potential in practice. Filecoin and Ethereum are both exploring the use of VDFs for their respective protocols. However, even beyond the applications to Filecoin, this is an investment towards building publicly-verifiable randomness and VDFs as novel tools in the arsenals of cryptographers and decentralization projects.
 
-### Notes on the collaboration
+## Notes on the collaboration
 
 Protocol Labs and the Ethereum Foundation are evaluating and co-funding grants for preliminary research into the viability of building optimized ASICs for running a VDF.
 

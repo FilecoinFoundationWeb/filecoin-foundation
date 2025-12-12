@@ -28,7 +28,7 @@ _template: blog_detail
 
 One of Filecoin’s most distinguishing features is its approach to verifiable storage. In a recent [blog post](https://filecoin.io/blog/filecoin-features-verifiable-storage/), we summarized how Filecoin implements decentralized storage with a combination of consensus mechanisms and cryptographic proofs that allow clients to trust that miners are storing their data as agreed.
 
-### Explore Filecoin concepts on ProtoSchool
+## Explore Filecoin concepts on ProtoSchool
 
 Today we’re excited to announce ProtoSchool’s first-ever Filecoin tutorial, [**Verifying Storage on Filecoin**](https://proto.school/#/verifying-storage-on-filecoin). It offers a beginner-friendly, code-free look at Filecoin’s proof system, exploring how Proof of Replication (PoRep), Proof of Storage (PoSt), and zkSNARKs make it possible to trust peers in an incentivized, decentralized storage system.
 
@@ -40,7 +40,7 @@ If you haven’t yet done so, we encourage you to check out our [Decentralized D
 
 For other content relevant to Filecoin, you can check out our [Anatomy of a CID](https://proto.school/#/anatomy-of-a-cid) tutorial, which explores the structure of CIDs (Content Identifiers) as defined by the Multiformats project. These unique labels are used to point to data stored on distributed information systems including IPFS, IPLD, libp2p, and Filecoin.
 
-### New to ProtoSchool?
+## New to ProtoSchool
 
 ProtoSchool’s [self-guided tutorials](https://proto.school/#/tutorials) are designed to introduce you to DWeb concepts, protocols, and tools. Complete JavaScript code challenges right in your web browser or stick to our text-based or multiple-choice tutorials for a code-free experience, with content ranging from from IPFS to Multiformats and now Filecoin.
 

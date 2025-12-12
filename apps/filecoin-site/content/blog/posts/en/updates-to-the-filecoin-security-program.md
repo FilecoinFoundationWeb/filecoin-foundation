@@ -33,13 +33,13 @@ Building a strong Security Culture in the Filecoin project has been one of our c
 
 With Filecoin’s mainnet launch, **we are excited to announce the new** [**Filecoin Security website**](https://security.filecoin.io/), which includes a listing of all the work done so far, what is to come and the updated Bug Bounty Program!
 
-### Launching [security.filecoin.io](https://security.filecoin.io/)
+## Launching [security.filecoin.io](https://security.filecoin.io/)
 
 This site will serve as the central hub for the Filecoin Security Program. On it, you can find details about: **Security Audits**, **Bug Bounty Program**, **Responsible Disclosure Policy** and **Previously reported findings and mitigations.**
 
 You can disclose your findings in two ways: encrypting them with a PGP key and emailing us, or through Keybase. **Detailed instructions are available under “Vulnerability Reporting” on the** [**Filecoin Security**](https://security.filecoin.io/) **website**.
 
-### Security Audits
+## Security Audits
 
 We’ve been engaging with several reputable third party auditing specialists to ensure that the theory behind the protocol and its implementation delivers the intended value, enabling Filecoin to be a safe and secure network.
 
@@ -59,14 +59,14 @@ You might have stumbled upon previous launches of audit reports from these firms
 - [Filecoin Actors Security Audit](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-19-actors-audit) by ConsenSys Diligence
 - [**Update, now released!** Filecoin Bellman / BLS Signatures Audit](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-20-filecoin-bellman-and-bls-signatures) by NCC
 - To be released soon:
-  - Filecoin Lotus Implementation Security Audit by Least Authority
-  - Filecoin Lotus Implementation Security Audit by SigmaPrime, [**UPDATE, now released**](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-20-lotus-mainnet-ready-security-audit)
+- Filecoin Lotus Implementation Security Audit by Least Authority
+- Filecoin Lotus Implementation Security Audit by SigmaPrime, [**UPDATE, now released**](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-20-lotus-mainnet-ready-security-audit)
 
-### Responsible Disclosure Policy
+## Responsible Disclosure Policy
 
 Ensuring that the protocol continues to be secure for its users requires creating a platform in which findings can be reported, understood, patched, deployed, and users can be informed about updates in a timely manner. For this, we have established the [Filecoin Responsible Disclosure Policy](https://fil.org/security/coordinated-disclosure-policy)
 
-### Bug Bounty Program
+## Bug Bounty Program
 
 Filecoin aims to create a decentralized storage network for humanity’s most important information, so ensuring the network is secure and trustable is paramount to its success. Building a secure network goes beyond rigorous testing and auditing, and we believe that working together with the security community will result in a more secure and stable future for the Filecoin network. That is why we are launching the Filecoin Bug Bounty Program, through which anyone can submit security vulnerabilities found in the network, the core protocol, and its implementations, to be rewarded for their findings.
 
@@ -75,14 +75,14 @@ You can learn all about the [Filecoin Bug Bounty Program](https://security.filec
 - You will have a private channel to report your findings
 - As a bounty hunter, you are protected by a Safe Harbor Policy
 - ([**UPDATE Oct 23, reward ranges increased**](https://security.filecoin.io/bug-bounty/)) You can win rewards up to $100,000 based on the severity of the issue:
-  - Critical: up to $100,000
-  - High: up to $50,000
-  - Medium: up to $15,000
-  - Low: up to $2,500
-  - Note: up to $500
+- Critical: up to $100,000
+- High: up to $50,000
+- Medium: up to $15,000
+- Low: up to $2,500
+- Note: up to $500
 - There is no set end date on the program yet, but we are looking for ways to improve it, please watch this blog and the site for updates and send us your feedback at [security@filecoin.org](mailto:security@filecoin.org)
 
-### A special thanks to the participants of the Security Research Fellowship
+## A special thanks to the participants of the Security Research Fellowship
 
 Last announcement but definitely not the least! During the Space Race incentivized testnet competition, we worked with several members of the community through the Filecoin Security Research Fellowship Program to enhance the security of the network.
 

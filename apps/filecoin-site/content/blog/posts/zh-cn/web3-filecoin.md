@@ -27,7 +27,7 @@ _这是Protocol Labs创始人Juan Benet在EthCC 2021上的演讲概要，在_ [_
 
 Filecoin网络是面向生态的，它与Protocol Labs搭建模块化解决方案的倾向是一致的。因为它本来就是设计给其他人使用，所以Filecoin在Web3领域的其他栈、应用和生态里如鱼得水。自从其在2020年10月的启动开始，Filecoin已经增长到超过8 exbibytes的可用存储空间，有超过400个项目进入了这个生态。以太坊就是一个能持续证明其可协作性和共同利益的生态系统。
 
-### Filecoin + 以太坊
+## Filecoin + 以太坊
 
 **Filecoin和以太坊虚拟机（EVM）**
 
@@ -63,7 +63,7 @@ VideoCoin正搭建一个能可靠地创建、存储和交易基于视频的NFT�
 
 [NFT.storage](http://nft.storage/)是一个由Protocol Labs实验室和Pinata支持的服务，它专门为存储NFT数据而设计。NFT.Storage让开发者通过内容寻址和去中心化存储来保护其NFT资产和相关的元数据，确保所有的NFT遵循最佳实践以实现长期的可访问性。
 
-### 未来的用例
+## 未来的用例
 
 随着Filecoin和Ethereum生态系统的成长和重叠，会出现更多的新生用例和开发者机会。一些可以进行创新的用例包括：
 

@@ -24,7 +24,7 @@ _template: blog_detail_ch
 
 近期，Protocol Labs推出了首款网络索引器（Network Indexer），用于搜索存储提供商提供的内容可寻址数据，例如Filecoin和IPFS网络上的数据。存储提供商如今可以将其数据的内容ID([CID](https://docs.ipfs.tech/concepts/glossary/#cid))发布至网络索引器，客户端可以通过查询网络索引器来检索由这些CID所标识内容的具体位置。
 
-### 基础定义
+## 基础定义
 
 网络索引器（以下简称“索引器”）是将CID映射到数据拥有者记录（提供者数据记录）的系统，它是为处理Filecoin网络中的数据规模而打造，并可由IPFS网络用于定位数据。
 
@@ -32,15 +32,15 @@ _template: blog_detail_ch
 
 ![](/uploads/indexer_ecosys.webp)
 
-### 当前状态
+## 当前状态
 
 **如今网络索引器已开始大规模运行，每秒可以处理超过11000个查询，并已索引了30亿个CID。**随着越来越多的存储提供商索引更多内容，预计以上数字将持续增长。
 
-### 使用方法
+## 使用方法
 
 网络索引器托管在[cids .contact](http://cid.contact/)上，可以通过HTTP或libp2p向其API发送请求来访问。cid.contact索引器有一个轻量级的web界面，可以用来手动输入CID和查询索引器，它会向<span style="background-color: #eaeaea"> `cid.contact/cid/`</span>发出请求并显示结果。
 
-### 具体案例
+## 具体案例
 
 如下是通过cid.contact索引器查找内容的演示：
 
@@ -73,7 +73,7 @@ _template: blog_detail_ch
 
 若需通过多重哈希而非CID查找提供商信息，请使用[cid.contact/multihash/](https://cid.contact/)端点；若需查看索引器拥有数据的提供商列表，请查看[cid.contact/providers](http://cid.contact/providers)端点。
 
-### 用户能否自行运行网络索引器？
+## 用户能否自行运行网络索引器？
 
 没问题！用户可以自行运行网络索引器来索引个人内容。使用如下代码可以在大部分平台上构建索引器：
 [https://github.com/filecoin-project/storetheindex](https://github.com/filecoin-project/storetheindex "https://github.com/filecoin-project/storetheindex")。
@@ -83,7 +83,7 @@ _template: blog_detail_ch
 - [向索引器提供数据](https://github.com/filecoin-project/storetheindex/blob/main/doc/ingest.md#providing-data-to-a-network-indexer)
 - [创建索引提供程序](https://github.com/filecoin-project/storetheindex/blob/main/doc/creating-an-index-provider.md)
 
-### 未来计划
+## 未来计划
 
 随着[lotus最新版本](https://github.com/filecoin-project/lotus/releases)发布，存储提供商将很快对Filecoin的大部分内容进行索引，我们很期待看到通过星际网络索引启用内容发现后出现更多用例。
 

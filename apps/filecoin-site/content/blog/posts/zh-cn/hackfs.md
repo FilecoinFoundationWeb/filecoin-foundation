@@ -43,7 +43,7 @@ _欢迎来到第六期Filecoin社区亮点系列，该系列主要针对用户�
 
 我们的目标是在7月底之前能出一个完整的平台工作原型。我们正在创建一个类似Patreon的基于订阅的众筹平台，在该平台上，用户越早注册为赞助者就会获得越多的收益。首先我们创建的这个平台是离线优先且使用的是Circle Universal Basic Currency协议。我们的想法是每个用户都能以自己通用的基本收入货币（UBI）通过可信的联系可以相互支付或者向其他企业付款。在不依靠中心化治理机构的情况下，采用自下而上的方式增加基本收入。在此模型中，我们通过Filecoin来备份数据。
 
-### Pygate 团队
+## Pygate 团队
 
 ![Pygate Diagram](https://filecoin.io/vintage/images/blog/hfs-pygate.png)
 
@@ -57,7 +57,7 @@ _欢迎来到第六期Filecoin社区亮点系列，该系列主要针对用户�
 
 **团队起源：** 在HackFS发布之前，Peter就已经在思考基于Filecoin的解决方案。他想使用Python在Filecoin上创建他的第一个应用程序，当他意识到目前尚无可用的Python工具时（目前有Go, C++, Rust, 和Javascript），他第一步要做的是为Powergate构建pygate gRPC客户端。Peter说：“我开始设想更伟大的愿景，然后分阶段实施。我在黑客松开始前的一周加入HackFS，将这个想法发布在HackFS的Slack频道上，并在36小时内迅速组建了一个团队，其中有经验丰富的Python开发者Lenoard和Antreas以及区块链专家Art和智能合约专家Chinonso。团队将致力于将Python工具加入Pythonistas来为Filecoin网络带来新用户。通过快速组建一支高质量的团队，我们能比自己单独参赛获得更多的体验。”
 
-### Unchained Index团队
+## Unchained Index团队
 
 ![TrueBlocks](https://filecoin.io/vintage/images/blog/hfs-trueblocks.png)
 
@@ -75,7 +75,7 @@ _欢迎来到第六期Filecoin社区亮点系列，该系列主要针对用户�
 
 Thomas说：“长久以来我一直从事技术工作。90年代时候，我从无网络的时代跨越到有网络的时代，现在我看到了我人生的第二次跨越，跨越到Web 3.0的时代。”
 
-### Padlock团队
+## Padlock团队
 
 ![Padlock](https://filecoin.io/vintage/images/blog/hfs-padlock.jpg)
 

@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 随着Filecoin EVM ("FEVM")的打造，早期创建者可以在最新的\[Wallaby测试网(https://github.com/filecoin-project/testnet-wallaby)上尝试每周推出的新特性。现在，相关的特性接近完成，而[最终的FEVM虚拟机Carbonado更新](https://github.com/filecoin-project/ref-fvm/issues/692) 很快会就绪。这个在12月晚些时间推出的更新将启动新的**Hyperspace** **测试网**，它是为FVM虚拟机开发者准备的长期稳定运行的测试网。在未来的道路上，它是也最关注开发者需求的测试网。
 
-### Space Warp项目介绍
+## Space Warp项目介绍
 
 为了启发开发者们试用新的FEVM虚拟机并解锁其巨大潜能，如今我们启动了 [**Space Warp**](https://spacewarp.fvm.dev/)项目。它旨在帮助创建者社区加速开发赋能应用，目标是将这些应用部署在明年2月的FEVM主网启动后的网络上。
 
@@ -61,7 +61,7 @@ _template: blog_detail_ch
 
 请在[**spacewarp.fvm.dev**](https://spacewarp.fvm.dev)登记信息，我们将会让你收到相关的更新消息，这样你就能了解相关的活动，并获得未来数周将要公布的FVM虚拟机相关新闻机会。
 
-### 进一步了解FVM虚拟机：参与数据经济
+## 进一步了解FVM虚拟机：参与数据经济
 
 Filecoin网络的EVM版本尤为重要，因为它能让开发者通过搭建围绕Filecoin网络（地球上最大的开放存储网络）的token驱动产品和服务，来**参与** **万亿美元的数据经济**。
 
@@ -73,7 +73,7 @@ Filecoin还有个独特的[岛屿经济（island economy）](https://filecoin.io
 
 要想了解FVM虚拟机的潜能，可以观看[最近的FIL里斯本演讲](https://www.youtube.com/watch?v=EqLlyJ13DLY)，或通过[FVM文档、教程和资源入口](http://spacewarp.fvm.dev/#resources)学习。
 
-### FVM和Filecoin路线图
+## FVM和Filecoin路线图
 
 明年，待FEVM在主网部署后，还会增加一个**WebAssembly FVM虚拟机运行时**，未来还可能有更多的虚拟机选项。那样，开发者将可以使用Rust、AssemblyScript、Go等语言编写定制智能合约并编译成字节码，甚至可以使用其他能进行隐私保护的编程语言（如类型zk-SNARKs特性的[Lurk](https://filecoin.io/blog/posts/introducing-lurk-a-programming-language-for-recursive-zk-snarks/)。
 

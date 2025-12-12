@@ -20,18 +20,18 @@ related_article_1: >-
 
 During the [Filecoin Developer Summit](https://fildev.io/) in Iceland, Filecoin and IPFS retrieval was a topic of significant interest and excitement. The retrieval track, along with a number of related critical discussions, helped align the community on what’s needed for reliable Filecoin retrievals.
 
-### **Recap**
+## **Recap**
 
 There were two main focal points of conversation in the Filecoin Retrievals & Data Availability track. The first was the flywheel that’s developing for measuring and incentivizing retrievals - aiming to bring performant and reliable data retrieval to Filecoin. The second was a conversation about how to effectively structure data and transfer it efficiently across the network (transport protocols and data structuring).
 
-## How to measure and incentivize retrieval?
+## How to measure and incentivize retrieval
 
 {{< youtube id="tKTGSQ4-V3c" title="Retrieval Expectations" >}}
 
 <p><br>
 <br></p>
 
-### **Concrete retrieval SLAs**
+## **Concrete retrieval SLAs**
 
 The first goal was a clear understanding of what we need in retrieval. Multiple discussions described specific definitions of retrieval, which help to reduce uncertainty and allow for better retrieval measurement and optimization. In his talk Retrieval Requirements for Filecoin SPs, Jaun Benet defined retrieval types and shared his vision for how verified retrievals could be implemented on Filecoin.
 
@@ -41,7 +41,7 @@ The underlying costs of retrieval were also discussed in terms of bandwidth and 
 
 ![Retrieval SLAs reduce uncertainty and allow for better retrieval measurement and optimization](/uploads/0Retrievals.webp "Retrieval SLAs reduce uncertainty and allow for better retrieval measurement and optimization")
 
-### The Reputation WG
+## The Reputation WG
 
 One of the most developed portions of the Filecoin ecosystem is the data onboarding incentives built through Filecoin Plus, which help attract new clients and encourage growth of Filecoin tooling and applications. Caro Cai presented updates from the SP Reputation Working Group including the status of Retrieval Bot, a tool that measures the retrieval rate of the network.  
 
@@ -59,7 +59,7 @@ Overall, better metrics collection and sampling are needed to increase the relia
 
 ## The markets & data layer on Filecoin
 
-### Interface vs Internals
+## Interface vs Internals
 
 There was a healthy technical discussion in Iceland about what parts of the Filecoin data model should be part of an interface contract to users, and which parts reflect internals of the current system that should be abstracted in order to allow change. One important evolution in [progress is FRC 69](https://github.com/filecoin-project/FIPs/commit/18491e9bd81fff77f7e39ae23c1817416215760a#diff-480606545fa064b05ee47024c7852665ce6818fa8f7519a8dc50359d7936f353), defining an evolution of Piece CIDs in order to more precisely define stored data.
 
@@ -67,7 +67,7 @@ A point that remains a core area of debate is the role of IPLD in the filecoin d
 
 Watch: [User Data + Data Structures](https://youtu.be/_C3pWnEqt6Q), [CommPact](https://youtu.be/ndLKjXQ1awI), [Filecoin and Content Addressing](https://youtu.be/8yCk_PmZ8K8)
 
-### Driving demand
+## Driving demand
 
 The largest driver in the continued development of the Filecoin retrieval layer is client demand. The retrievability properties of data are a large factor in the overall price of storage. Today, a client’s specific retrieval requirements are negotiated with storage providers, and this leads to clear efficiencies both in automating those negotiations, providing stronger guarantees to both parties, and allowing automatic processes like data DAOs to also engage in the market.
 
@@ -75,7 +75,7 @@ In Iceland, discussions around current client tooling, including Saturn, Motion,
 
 Watch: [Saturn and SPs](https://www.youtube.com/watch?v=BkYQkPC8gqE&list=PL_0VrY55uV1_YBBxt5rCooKSpSK4twObN&index=12), [Motion and SPs](https://www.youtube.com/watch?v=x3Z8xwJwgGU&list=PL_0VrY55uV1_YBBxt5rCooKSpSK4twObN&index=13), [Singularity V2](https://www.youtube.com/watch?v=Abcmxjb7ET0)
 
-### Takeaways
+## Takeaways
 
 - We’re quickly approaching FIP consensus on defining retrievability.
 - Filecoin can better match the underlying costs of retrieval in its incentivization.

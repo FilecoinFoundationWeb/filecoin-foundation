@@ -15,7 +15,7 @@ dim_image: true
 
 Introducing FilOz, a new public goods design and development team in the Filecoin ecosystem! The FilOz team is dedicated to securing, upgrading, and expanding the Filecoin protocol and network with many other Filecoin-aligned teams. Check out the post below for a deep dive into the mission, priorities, roadmap, and more from the FilOz team.
 
-### What We Do
+## What We Do
 
 At [FilOz](http://filoz.org/), our mission is to secure, upgrade, and expand the utility and value created by the Filecoin network. We focus on shipping high-leverage protocol improvements, supporting network upgrades, maintaining critical open-source software like the Lotus client, and designing new protocol enhancements through Filecoin Improvement Proposals (FIPs). Our goal is to drive innovation, growth, and collaboration within the Filecoin community and make Filecoin better together. 
 
@@ -36,7 +36,7 @@ We do our work in deep partnership with many other public goods teams across the
 
 ![](/uploads/FilOz-WhatWeDo.webp)
 
-### Filecoin 2024 Priorities
+## Filecoin 2024 Priorities
 
 As discussed in the [2023 wrap up](https://filecoin.io/blog/posts/2023-expanding-from-a-storage-network-to-enabling-open-services-for-data-part-ii/), Filecoin’s trajectory in 2024 includes 4 main opportunities:
 
@@ -77,7 +77,7 @@ Thanks to recent upgrades, it’s now cheaper than ever to become a Filecoin sto
 
 The many improvements to storage onramps, retrieval SLAs, and Filecoins demonstrated storage robustness have started attracting large-scale paying storage customers to Filecoin. FilStor is actively supporting and routing paying enterprise customers to the optimal storage onramp - accelerating paid data storage on Filecoin!
 
-### FilOz 2024 Priorities
+## FilOz 2024 Priorities
 
 In the past 2 months, FilOz has been hard at work contributing to each Filecoin 2024 pillar as part of our public goods design and implementation work. Some of the projects we’re most excited about:
 
@@ -111,16 +111,16 @@ As with all our work, FilOz aims to enhance and accelerate the work of others - 
 If you align with these areas of focus in the Filecoin community - we’d love to partner with you to make them a reality! Get involved by:
 
 - Joining [Filecoin slack](http://filecoin.io/slack) and find us in:
-  - \#fil-protocol to brainstorm and design protocol improvements for/with Filecoin. 
-  - \#fil-lotus-dev to implement Filecoin improvements w/ us!
+- \#fil-protocol to brainstorm and design protocol improvements for/with Filecoin. 
+- \#fil-lotus-dev to implement Filecoin improvements w/ us!
 - Participate in or host a Protocol Office Day (deep-dive, Office Hour, or AMA)
-  - Subscribe to upcoming events [here](https://www.filoz.org/events)
-  - [Book office hours](https://www.filoz.org/#team) with our team members, click the 📅 links!
-  - Send collaboration or protocol office ideas to [po@filoz.org](mailto:po@filoz.org). 
+- Subscribe to upcoming events [here](https://www.filoz.org/events)
+- [Book office hours](https://www.filoz.org/#team) with our team members, click the 📅 links!
+- Send collaboration or protocol office ideas to [po@filoz.org](mailto:po@filoz.org). 
 - Join us for deep protocol discussions and workshops at [FDS in Brussels](https://www.fildev.io/).
 - Follow us on Twitter for the latest updates [@\_FilOz](https://x.com/_FilOz).
 
-### How to Engage with Us
+## How to Engage with Us
 
 Our partnerships and collaborations with Filecoin-aligned teams amplify our impact. As a small team of senior protocol devs and designers, our energy is best spent by joining forces with others and helping them land valuable improvements to Filecoin through working groups, collaborations, and design partnerships. Engage with us by dedicating time and resources to make Filecoin better - and harnessing our team’s expertise to support on design advice, FIP co-authorship, or code reviews to unblock the enhancements you bring to Filecoin.
 
@@ -134,7 +134,7 @@ We invite you to join us in our mission to improve the Filecoin network. Here’
 
 Let’s work together to make Filecoin better! For more information or to get involved, contact us at [contact@filoz.org](mailto:contact@filoz.org).
 
-### Funding FilOz
+## Funding FilOz
 
 FilOz has a generous starting grant from the Protocol Labs Filecoin Public Goods Fund to secure base funding for a small team for three years. Our goal is to achieve future growth and sustainability through public goods funding from Filecoin-aligned teams and sponsors, retro-PGF, project airdrops, and dedicated mission-aligned sponsorships.
 

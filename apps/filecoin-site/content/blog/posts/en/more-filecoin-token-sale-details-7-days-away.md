@@ -36,17 +36,17 @@ Today, we have a number of interesting announcements to make:
 - Advisor Sale
 - Video leak and CoinList investing video
 
-### Filecoin page opens on CoinList
+## Filecoin page opens on CoinList
 
 [The Filecoin page is now open on CoinList](https://coinlist.co/currencies/filecoin)! This page is the jumping off point for the Filecoin Token Sale. It includes an overview of the Network and the project, collects all the documents related to Filecoin and the token sale, and lists recent news articles. Once the token sale starts, investments will be made through this web page, and a graph of the sale progress will appear.
 
-### Two New Documents: Sale Economics and How to Invest
+## Two New Documents: Sale Economics and How to Invest
 
 We are also releasing two new documents today:
 
-### Filecoin Token Economics
+## Filecoin Token Economics
 
-### How to invest
+## How to invest
 
 - [Filecoin Token Economics](https://coinlist.co/static/media/Filecoin-Sale-Economics.0ae9a53f.pdf) - in-depth details of the token allocations, sale pricing, vesting, and release schedules. We also collected Frequently Asked Questions into a list at the end of the document. Definitely check it out as it is likely to answer many of your questions!
 - [How to Invest](https://coinlist.co/static/media/How-to-Invest.3b7eff88.pdf) - a walkthrough with instructions and screenshots on how to make the investment. This document includes CoinList screenshots, and comparisons of the various different payment methods.
@@ -64,7 +64,7 @@ There are two more documents that will be released soon:
 - **SAFT** - The Simple Agreement for Future Token is the investment instrument we are using in the Filecoin sale.
 - **PPM** - The Private Placement Memorandum is an important document that accompanies most private sales of securities. This is the legal document that outlines our offering, our risk disclosures, how the investment works, and so on.
 
-### Preparing for the Sale
+## Preparing for the Sale
 
 Reminder: the sale opens on **Monday, August 7th**. That is in 7 days! If you intend to participate, please start preparing for it as some preparation steps can require hours or even days to process. Here’s how you can start preparing today:
 
@@ -73,7 +73,7 @@ Reminder: the sale opens on **Monday, August 7th**. That is in 7 days! If you in
 3. **Prepare your funds** in an AngelList investor account or cryptocurrency wallet. See the How to Invest document for more details.
 4. **Read the** [**sale documents**](https://coinlist.co/currencies/filecoin) thoroughly, and email us with any questions at filecoin-sale@protocol.ai
 
-### Advisor Sale
+## Advisor Sale
 
 For the last few years, we have been working with a group of tremendously valuable strategic advisors; these are individuals and organizations who have helped to build the Filecoin network, who have made strong long-term commitments for the future, and/or who present very significant future opportunities for the network. They range across professions and backgrounds: highly technical researchers, leaders of crypto networks, leaders of related startup companies, well known and relevant investors, close friends, active supporters of the project, potential large scale users, partner companies, and so on.
 
@@ -83,7 +83,7 @@ Participants in our advisor sale are vesting a minimum of 1 year, and most chose
 
 The sale was a resounding success. We will discuss more details in an upcoming dedicated post. We did not announce the sale publicly and widely for a few reasons: (a) some unresolved legal questions, (b) security and avoiding attacks, (c) avoid giving more people the frustrating feeling of being left out of another active and ongoing sale, and (d) because we maintain much more open and frequent communication with our network of close advisors, with the people who are working with us to build this network.
 
-### Video Leak and CoinList Investing Video
+## Video Leak and CoinList Investing Video
 
 Never a dull moment!
 
@@ -96,7 +96,7 @@ Cedric posted the video late last Friday. We saw it and asked for it to be taken
 
 Anyway, aside from the unfortunate pre-empting of our announcements, we liked Cedric’s video very much, and we have asked him to re-cut a version with correct information. If he is able to, we will help him over the next couple of days. Either way, we will ensure there is a video going through the entire CoinList investment flow, so that everyone can quickly understand how it will all work.
 
-### More Updates
+## More Updates
 
 We look forward to sharing more news and updates during this coming week, including additional documents (the SAFT and PPM), some good news for people who wish to invest but do not meet accreditation status, and lots of exciting news for everyone. For the latest updates, please [sign up for our mailing list](http://filecoin.io/) and follow us on Twitter [@MineFilecoin](https://twitter.com/minefilecoin).
 

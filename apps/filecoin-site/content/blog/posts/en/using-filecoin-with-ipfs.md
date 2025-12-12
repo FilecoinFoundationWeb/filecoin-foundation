@@ -29,7 +29,7 @@ With web browsers slowly shifting towards using web3, the need for decentralized
 
 In this example, [Textile](https://textile.io "Textile") is used as a hosted intermediary to allow developers to pin content to IPFS through a standard API. Before we appreciate how these work along with each other, we need a little background as to what each does.
 
-### IPFS and Filecoin: A Match Made in (Blockchain) Heaven
+## IPFS and Filecoin: A Match Made in (Blockchain) Heaven
 
 [Filecoin](http://filecoin.io) is a decentralized network that allows for storing data accessible from virtually anywhere. Users can offer their available storage as nodes on the network and earn Filecoin as data is stored and retrieved on those nodes.
 
@@ -39,7 +39,7 @@ Old-school coders might remember using pointers to access variables in the C fam
 
 Instead of utilizing a file address on a local drive, you can refer to the CID address on the IPFS "drive." However, since browsers don't naturally understand IPFS, they need a way to "see" those CIDs as files. For that, there’s a tool called Textile.
 
-### Introducing Textile as a Persistent IPFS Data Store
+## Introducing Textile as a Persistent IPFS Data Store
 
 The issue that browsers have with IPFS files is that they aren't [persistent](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/). [Textile](https://www.textile.io/) offers a simple hosted solution that developers can add to any website or application. Textile accomplishes this by using "[Buckets](https://docs.textile.io/buckets/)" as a way to organize, index, and pin IPFS data, despite the IPFS protocol not being natively available in every mainstream browser.
 
@@ -59,7 +59,7 @@ Once a user of your application [sets up a libp2p key](https://docs.libp2p.io/co
 
 The more popular data is on the IPFS network, the faster it'll be retrieved. If the data your users are storing needs more verifiable proof that it will be stored for a long time, Textile Buckets supports a Filecoin API that allows you to make storage deals against a storage provider you already know in the Filecoin network. But what do you do if you don’t know any storage providers? [Estuary](https://estuary.tech) can provide an even simpler solution to get your data on to the Filecoin network.
 
-### A Two-Fold Storage System
+## A Two-Fold Storage System
 
 When data is added to a bucket with Textile, that data is pinned to IPFS and accessible but that data doesn't naturally enter the Filecoin chain. Data accessible through the IPFS gateway that Textile offers needs to work out a storage deal with a provider to be added to the Filecoin blockchain. To get that data pinned to the Filecoin network requires an intermediary like [Estuary](https://estuary.tech/) or [Textile’s Bidbot](https://github.com/textileio/bidbot).
 
@@ -71,6 +71,6 @@ Estuary also allows for the listing of data associated with a particular account
 
 {{< youtube id="2lwqUsGCTEQ" title="Browsers 3000: Using Filecoin" >}}
 
-### A New Paradigm for Web Storage
+## A New Paradigm for Web Storage
 
 IPFS and Filecoin are complementary systems, and the ecosystem has developed tools like Textile and Estuary to help them work together. With the increasing limitations for plugins, these tools are some of the best solutions for developing for web3 with current browsers. As time goes along and IPFS becomes more accessible, browsers will continue supporting native integration (see: [Opera](https://blogs.opera.com/tips-and-tricks/2021/02/opera-crypto-files-for-keeps-ipfs-unstoppable-domains/) and [Brave](https://brave.com/ipfs-support/)). As these integrations continue, Textile and Estuary give a simple workaround for using the systems alongside one another.

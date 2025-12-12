@@ -28,9 +28,9 @@ Now that the Spark University Hackathon has reached a conclusion, we’re shinin
 
 > _Build a system or app for the decentralized web that stores data on both IPFS and Filecoin, and demonstrates some convenience aspects of shared features between the two networks such as shared content identifiers (CID)._
 
-### Third Place
+## Third Place
 
-#### Kazan
+### Kazan
 
 ![Kazan](https://filecoin.io/vintage/images/blog/kazan.jpg)
 
@@ -40,9 +40,9 @@ While still a prototype, Kazan hopes to add many more features, including the ab
 
 [Watch the demo.](https://youtu.be/_VU1_Rd0Lc8)
 
-### Second Place
+## Second Place
 
-#### Box&Drop
+### Box&Drop
 
 ![Box&Drop](https://filecoin.io/vintage/images/blog/box-and-drop.jpg)
 
@@ -52,9 +52,9 @@ This offers a wide array of fun possibilities, from interactive quests and sites
 
 [Watch the demo.](https://www.youtube.com/watch?v=j4PkDYUxJwU)
 
-### First Place
+## First Place
 
-#### Código Hub
+### Código Hub
 
 ![Código Hub](https://filecoin.io/vintage/images/blog/codigo.jpg)
 

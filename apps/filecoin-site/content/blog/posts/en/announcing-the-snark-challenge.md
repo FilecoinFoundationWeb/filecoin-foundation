@@ -35,7 +35,7 @@ At Filecoin, we use zk-SNARKs in our on-chain Proofs-of-Replication and Proofs-o
 
 We believe that research in this field is important not only for Filecoin, but also for many other critical applications. zk-SNARKS have tremendous potential to scale blockchains and provide privacy in on-chain transactions. The SNARK Challenge is intended to help us speed up the generation of zk-SNARK proofs and ultimately move this field of research forward.
 
-### The Challenge
+## The Challenge
 
 The challenge will be broken up into two events that together span 3 months. $100K in prizes will be awarded throughout the event. Each event will have specific challenges aimed at advanced cryptographers and those with experience in high-performance computing.
 

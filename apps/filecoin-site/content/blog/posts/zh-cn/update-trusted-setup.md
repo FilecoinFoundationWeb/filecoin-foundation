@@ -51,16 +51,14 @@ _template: blog_detail_ch
 
 ## 参与需要多长时间？我需要什么样的计算机？
 
-以下概述了环节第二阶段的部分内容以及所需的时间： _首先，您将下载环节中前一个参与者的输出文件（约60GB）。_ 接下来，您需要将数据在指定的软件上运行。 \_请注意，计算时间是取决于您计算机的规格。我们下面的样本计算时间和规格仅供参考
-
-| 证明               | Ram要求 | 要求   | 预计完成时间 |
+以下概述了环节第二阶段的部分内容以及所需的时间： _首先，您将下载环节中前一个参与者的输出文件（约60GB）。_ 接下来，您需要将数据在指定的软件上运行。 \_请注意，计算时间是取决于您计算机的规格。我们下面的样本计算时间和规格仅供参考 | 证明 | Ram要求 | 要求 | 预计完成时间 |
 | ------------------ | ------- | ------ | ------------ |
-| SDR PoRep 32GB     | 250GiB  | 150GiB | 36 hrs       |
-| SDR PoRep 64GB     | 250GiB  | 150GiB | 36 hrs       |
-| Windowed Post 32GB | 250GiB  | 150GiB | 36 hrs       |
-| Windowed Post 64GB | 250GiB  | 150GiB | 36 hrs       |
-| Winning Post 32GB  | 8GiB    | 0.5GiB | 10-15 min.   |
-| Winning Post 64GB  | 8GiB    | 0.5GiB | 10-15 min.   |
+| SDR PoRep 32GB | 250GiB | 150GiB | 36 hrs |
+| SDR PoRep 64GB | 250GiB | 150GiB | 36 hrs |
+| Windowed Post 32GB | 250GiB | 150GiB | 36 hrs |
+| Windowed Post 64GB | 250GiB | 150GiB | 36 hrs |
+| Winning Post 32GB | 8GiB | 0.5GiB | 10-15 min. |
+| Winning Post 64GB | 8GiB | 0.5GiB | 10-15 min. |
 
 - 最后，您需要上传处理后的数据（约40GB）。
 - 我们这边的验证节点将会检查您提交的内容是否有效并确保下一位参与者可以从经过您验证的贡献开始。​**还有其他问题？**​欢迎随时通过[聊天室](https://github.com/filecoin-project/community)

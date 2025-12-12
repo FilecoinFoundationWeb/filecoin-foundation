@@ -28,15 +28,15 @@ Filecoin Green, in conjunction with the [Filecoin Foundation](https://fil.org/),
 
 The grants program is an expansion of the Filecoin Green mission that aims to measure the environmental impacts of Filecoin and verifiably drive them below zero, building infrastructure along the way that allows anyone to make transparent and substantive environmental claims.
 
-### What is Regenerative Finance (ReFi)?
+## What is Regenerative Finance (ReFi)
 
 Regenerative economics challenges the existing financial structure that has fueled our current climate crisis. Instead of building an economy based on extraction, ReFi shifts the focus to regeneration of the Earth and the goods and services it supplies. ReFi creates a paradigm shift from competition to collaboration through actors working to achieve a sustainable and natural system at the intersection of Web3 and climate action.
 
-### Why is it useful to store ReFi projects on chain/off chain using Filecoin?
+## Why is it useful to store ReFi projects on chain/off chain using Filecoin
 
 The benefits of decentralized storage are a natural fit for projects in ReFi. By diversifying where and who data is stored with and by having data replicated and stored with multiple storage providers, decentralized storage systems are in a better (and more cost effective) position to store humanity’s most important information such as [climate related](https://www.dclimate.net/) data. Key features of decentralized storage enable more transparency, agency, verifiability, resilience, and persistence when it comes to the datasets used to steward natural systems.
 
-### Filecoin Green Grants
+## Filecoin Green Grants
 
 We are interested in projects or companies that are working in the ReFi space including, but not limited to those working on reforestation, carbon credits, carbon negative solutions, and biodiversity monitoring and reporting.
 
@@ -48,7 +48,7 @@ Some previous Filecoin Green grantees include:
 
 With a wide variety of projects, we want to support you as we all work together to reduce our carbon footprint.
 
-### Guidelines
+## Guidelines
 
 Successful applications will leverage the Filecoin and [IPFS](https://ipfs.tech/) tech stack. All projects must be open-sourced, dual-licensed under MIT and APACHE2 licenses, and be self-managed.
 

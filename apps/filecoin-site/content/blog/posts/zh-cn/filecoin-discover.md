@@ -35,7 +35,7 @@ Filecoin团队一直致力于存储和保留这些有价值的数据集。我们
 
 Filecoin Discover项目激励各种规模的早期矿工存储有价值的数据来获得Filecoin奖励。在发布之时，我们收集了一组初始开源数据，但在接下来的几个月中，我们将不断向数据目录中添加更多的项目与数据集。
 
-### 如何在挖矿中使用Filecoin Discover？
+## 如何在挖矿中使用Filecoin Discover？
 
 正如WNYC播客《Note to Self》的前主持人Manoush Zomorodi[所说](https://www.forbes.com/sites/geristengel/2018/10/24/a-springboard-to-success-for-female-blockchain-founders/#b9f3aff43219)：“想想很多人同计算机一起工作，区块链要求你有集体精神。”在Filecoin网络上挖矿和存储数据的节点越多，节点的存储算力就越强大。因此，Discover项目是我们鼓励更多矿工在早期阶段加入网络的办法。我们构建Discover项目作为快速扩展Filecoin网络的一种方式。
 
@@ -47,13 +47,13 @@ Filecoin Discover store是PB级别公共数据的目录（还在不断的增长�
 - [Project Gutenberg](https://www.gutenberg.org/)
 - … 还会有更多!
 
-### 等等，就这么简单？我还需要了解什么？
+## 等等，就这么简单？我还需要了解什么？
 
 考虑到每个合约中的数据量以及我们打算存储的数据总量，与矿工共享此数据的性价比最高的方法是通过物理硬盘。我们的目的是以经济上可持续的方式来启动这一计划，因此我们已经按成本对这些材料进行了定价（包括通过优化运输方案来为批量订单提供折扣）。选择参与此项目的矿工将收到一整个包裹，其中包括预装有已验证数据的硬盘以及安装和维护说明。我们能为这些数据集提供的货源有限，但我们将竭尽全力去完成采购和分发的工作。
 
 更多详细信息，请参阅Filecoin Discover商店的FAQ section。此外，Filecoin团队还将设置一个Slack频道供矿工在参与此项目之前咨询相关问题。
 
-### 下一步是什么？
+## 下一步是什么？
 
 截至目前，Filecoin Discover 商店正在接受对我们现有材料的预订。预订订单将于5月底至6月初开始发货，但也有可能有所变动——有关更多详细信息，请加入我们的Slack频道!如果在订单发货前收到退款请求，则所有订单均可全额退款。
 

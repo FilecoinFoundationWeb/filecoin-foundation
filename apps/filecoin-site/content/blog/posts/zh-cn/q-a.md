@@ -26,11 +26,11 @@ _template: blog_detail_ch
 
 三月六号，本周五，我们会举办一场和Filecoin项目创始人胡安的线上Q&A问答。在一小时的时间里，胡安会在线上回答大家关于测试网，路线图和未来计划的问题。我们期待大家的参与!
 
-### Q&A的时间
+## Q&A的时间
 
 - **Q&A的时间定于北京时间三月六号早上十点到十一点**
 
-### 如何参与?
+## 如何参与
 
 - 请在[Filecoin Project Slack](https://join.slack.com/t/filecoinproject/shared_invite/zt-dj58b7fq-weyaTEvjHoYF_ENkQHR6Ig) 注册一个账号或者注册微信并关注Filecoin官方公众号. 可以在 [**这里**](https://filecoin.io/#community) 找到它们的邀请链接.
 - 请在北京时间三月六号早上十点之前加入Filecoin Slack的 **#fil-ama** 频道。

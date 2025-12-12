@@ -28,7 +28,7 @@ _Welcome to the ninth installment of the Filecoin Community Highlights series, a
 
 HackFS, a month-long hackathon co-hosted by Protocol Labs and ETH Global, is designed to showcase the power of Web3. In this final week of the hackathon, we talked to three more teams to learn about their work, what they’ve learned through HackFS, and why they’re building on Filecoin.
 
-### Team: [coeo](https://github.com/coeo)
+## Team: [coeo](https://github.com/coeo)
 
 ![coeo](https://filecoin.io/vintage/images/blog/hfs-coeo.png)
 
@@ -46,7 +46,7 @@ We plan to use [Semaphore](https://github.com/appliedzkp/semaphore) for anonymou
 
 **The future of Web3:** Web3 is a chance to experiment with new ways of organizing. With programmable money, smart contracts, and cryptography, we can route around the traditional gatekeepers and rent seekers and build communities that aren’t bound by geography or corporate/political control. It’s an integral part of a broad movement that seeks to regain autonomy from the hierarchical system in which we’re situated which commodifies, exploits, and extracts wealth from people. With Web 2.0 companies, we’re the product. With Web3, a new social consensus is the product.
 
-### Team: [IPFS.FPS](https://ipfs-fps.on.fleek.co/)
+## Team: [IPFS.FPS](https://ipfs-fps.on.fleek.co/)
 
 ![IPFS.FPS](https://filecoin.io/vintage/images/blog/hfs-ipfsfps-1.png)
 
@@ -72,7 +72,7 @@ We found this little feature called [ETH.link](http://eth.link/), which lets any
 
 When we started building our game, the first background music we used was kind of boring. We wanted to find something more interesting. So we went on to Audius and listened to different artists. And we found this one artist in Georgia called [ElectronWarbear](https://audius.co/ElectronWarbear). We reached out and said, “We like this song,” and we were able to put it in our game, with attribution.
 
-### Team: [Sailplane](https://cypsela.github.io/sailplane-web/#/)
+## Team: [Sailplane](https://cypsela.github.io/sailplane-web/#/)
 
 ![IPFS.FPS](https://filecoin.io/vintage/images/blog/hfs-sailplane.png)
 

@@ -25,7 +25,7 @@ _template: blog_detail_ch
 
 自从我们在2021年11月宣布[引入Filecoin虚拟机](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/)后，就一直处于忙碌状态。今天，我们很高兴地宣布三个消息。首先，我们在本周早前[开源了](https://github.com/filecoin-project/ref-fvm) FVM虚拟机参考实施方案(ref-fvm)。其次，我们发布了全新的[FVM虚拟机网站](https://fvm.filecoin.io/) 。最后，我们启动了[FVM虚拟机早期创建者计划](https://fvm.filecoin.io/foundry)来将处于前沿的成员带到FVM Foundry计划里。请继续阅读以了解更多信息。
 
-### **开源FVM虚拟机参考实施方案**
+## **开源FVM虚拟机参考实施方案**
 
 首先，我们开源了[ref-fvm](https://github.com/filecoin-project/ref-fvm)，这是Filecoin虚拟机的参考实施方案。
 
@@ -39,7 +39,7 @@ ref-fvm v0参考实施方案旨在成为可编程FVM虚拟机的一个基础。�
 
 当这些内置的actors角色被视为达到稳定状态后，Filecoin核心开发者会决定是否将其分开到一个单独的程序库里，提升其状态到"canonical actors"（范例actors角色），在所有的实施方案中作为通用的成果采用。
 
-### **搭建强大的FVM生态**
+## **搭建强大的FVM生态**
 
 这个揭示也标志着FVM虚拟机项目内部的大调整。
 
@@ -51,13 +51,13 @@ ref-fvm v0参考实施方案旨在成为可编程FVM虚拟机的一个基础。�
 
 如果你对WASM虚拟机、gas、IPLD, 及其他相关话题有建议或意见，或正思考用例并期待得到指引，可以在[fvm-specs程序库](https://github.com/filecoin-project/fvm-specs/)进行讨论，在[Filecoin Slack](https://filecoin.io/slack/)的 #fvm频道也可以。
 
-### **FVM网站发布**
+## **FVM网站发布**
 
 为了配合这个重要的发展阶段，我们刚发布了[fvm.filecoin.io](https://fvm.filecoin.io/)，这是Filecoin虚拟机项目的正式网站。大家可以从中了解FVM提供的潜能和机会和得到启发，了解路线图，并第一时间得到所有的开发者资源。
 
 ![https://fvm.filecoin.io/](/uploads/fvm-website.webp "https://fvm.filecoin.io/")
 
-### **FVM Foundry招募早期创建者**
+## **FVM Foundry招募早期创建者**
 
 我们也在发起[FVM Foundry和早期创建者计划](https://fvm.filecoin.io/foundry)。
 
@@ -71,7 +71,7 @@ Foundry的早期创建者计划周期是2022年4月到6月。我们预期FVM早�
 
 马上在[fvm.filecoin.io](https://fvm.filecoin.io/foundry)上申请吧。
 
-### **下一步如何走？**
+## **下一步如何走？**
 
 我们正积极通往[Milestone 1里程碑的路上](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/)，时间大约是2022年3月。
 
@@ -87,6 +87,6 @@ Milestone 1里程碑代表主网从目前内置的虚拟机到基于WASM语言�
 6. Forest、Venus和Fuhon将FVM虚拟机作为其执行相关的运行时（runtime）。
 7. 部署一条测试链，用来准备Milestone 1里程碑升级。
 
-### **致谢**
+## **致谢**
 
 Protocol Labs的FVM团队想公开感谢ChainSafe的Forest团队、Fission团队、ARG团队、Filecoin基金会、Alex Wade、以及Venus和Fuhon团队，以对他们在这个里程碑实现过程中的支持和配合致谢，还有Protocol Labs的很多人也在这段旅程的不同阶段与我们并肩工作。这只是一个开始！

@@ -25,11 +25,11 @@ _template: blog_detail_ch
 
 要理解这种可能性，重要的是理解Filecoin网络里存储提供者的经济模型。我们将先解读存储提供者应当熟悉的一些基本概念，这是他们成为Filecoin经济的活跃成员时必须知悉的。
 
-### FIL Token
+## FIL Token
 
 Filecoin的[_island economy_](https://filecoin.io/blog/posts/filecoin-s-island-economy/)经济模型包括5种不同领域参与者之间的互动：用户、开发者、token持有者、生态伙伴，以及存储提供者（对我们而言最重要）。这些互动需要使用FIL这种功能型token，存储提供者也不例外。因此，网络里发生的这些经济互动是由这个token计价的。这是赋予持有者使用网络权利的方式。
 
-### Filecoin存储提供者的收入与支出
+## Filecoin存储提供者的收入与支出
 
 存储提供者在Filecoin网络中有两种主要的收入来源：他们可向终端用户收取数据的存取费用，而且有机会得到FIL形式的区块奖励。
 
@@ -41,7 +41,7 @@ Filecoin的[_island economy_](https://filecoin.io/blog/posts/filecoin-s-island-e
 
 ![](/uploads/pl-_-the-economics-of-storage-providers.webp)
 
-### 质押品
+## 质押品
 
 质押品是另一个需要理解的经济概念。这实际上就是存储提供者需要锁定的FIL数量，以确保他们会善意行事，以及他们的动机与经济体的其他成员是相容的。如果他们无法履行其对网络的责任，那么他们的质押品就会被 _slashed_，即会损失一部分FIL.
 
@@ -53,13 +53,13 @@ Filecoin的[_island economy_](https://filecoin.io/blog/posts/filecoin-s-island-e
 - **作为质押品的区块奖励：** 在共识过程中提交一个区块后存储提供者能获得的FIL数量。这个数量的75%可以在6个月期间内解锁，如果一个扇区在到期日前被终结，那么就会受到 _slashing_ （没收质押品）的惩罚。
 - **存储提供者交易协议质押品：** 如果一个交易协议被终止，那么就会 _slashed_ （没收）一定数量的FIL。更高的质押品可能意味着对潜在客户的更高可靠性。
 
-### 准入门槛
+## 准入门槛
 
 Filecoin社区致力于让网络及其经济对所有参与者都是开放的。这首先就是从其非许可型的社的设计开始。潜在的准入门槛（如高额质押）是由纳入每一个存储提供者的总存储容量作为考虑因素来调节的。不过，有一些方面，如最小的硬件需求和架设节点所需的陡峭学习成本还是让很多潜在的存储提供者望而却步。
 
 社区已经用不同的方式去应对这些问题，这包括了关于优化小型和个人硬件设施的[教育材料](https://www.youtube.com/watch?v=LKMjCgo-fkA)。另外，参与到[ESPA的存储提供者Bootcamp](https://www.web3espa.io/?utm_source=PL&utm_medium=blog&utm_campaign=highlight) 也是学习成为存储提供者所需技能和准备的好方法。
 
-### 工具
+## 工具
 
 鉴于Filecoin网络在不断变化和扩展，像存储提供者成本、区块奖励数量和FIL的价格也在频繁变化。存储提供者社区可以依靠一系列重要工具来决定其是否适合参与到Filecoin经济里。
 
@@ -67,6 +67,6 @@ Filecoin社区致力于让网络及其经济对所有参与者都是开放的。
 
 新的[存储提供者网站](https://sp.filecoin.io/)也是潜在的存储提供者可以参考的优秀信息来源。在上面你可以找到信息量很大的视频、问答内容和收益计算器，以及如何与Filecoin专家建立联系的方式等！
 
-### 进一步的阅读材料
+## 进一步的阅读材料
 
 要学习更多Filecoin存储提供者的经济模型，可以查看其他重要的资源，如[设计Filecoin经济（Engineering Filecoin’s Economy）论文](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)，以及[Filecoin的加密经济学构造）（Filecoin’s Cryptoeconomic Constructions）](https://filecoin.io/blog/posts/filecoin-s-cryptoeconomic-constructions/)。此外，确保在[Slack](https://filecoin.io/slack)和[Twitter](https://twitter.com/FilecoinSP?s=20&t=Cied9srtVmuumV69dT7NSA)上加入社区。
