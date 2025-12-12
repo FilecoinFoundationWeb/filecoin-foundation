@@ -57,19 +57,24 @@ export function BlogPostList({ posts }: BlogPostListProps) {
   return (
     <div className="space-y-15">
       <div className="flex flex-col gap-10">
-        <div className="self-end">
-          <RSSFeed />
-        </div>
-
-        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
-          <div className="flex-1 lg:order-last lg:max-w-md">
+        <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-center lg:gap-10 xl:gap-20">
+          <div className="max-w flex-1">
             <Search />
           </div>
-          <div className="lg:order-first">
-            <BlogCategoryFilter />
+
+          <div className="flex items-baseline gap-5">
+            <div className="flex-1">
+              <BlogCategoryFilter />
+            </div>
+            <div className="block sm:hidden">
+              <RSSFeed />
+            </div>
+          </div>
+
+          <div className="hidden sm:block">
+            <RSSFeed />
           </div>
         </div>
-
         <SectionDivider />
       </div>
 

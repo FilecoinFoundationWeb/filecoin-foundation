@@ -12,7 +12,7 @@ type PostMetadataProps = {
 export function PostMetadata({ author, date }: PostMetadataProps) {
   const formattedDate = formatDate(date)
 
-  const baseStyles = 'font-mono text-sm text-[var(--color-paragraph-text)]'
+  const baseStyles = 'text-sm text-(--color-paragraph-text)'
 
   if (author) {
     return (
