@@ -3,6 +3,8 @@ title: "Terminal Values: Cognitive Liberty"
 created-on: 2023-09-15T17:01:01.677Z
 updated-on: 2023-09-15T17:01:01.686Z
 published-on: 2023-09-15T17:01:01.693Z
+issue-number: 1
+article-number: 2
 image:
   src: /assets/images/DWD-Illustration-02.png
 authors:

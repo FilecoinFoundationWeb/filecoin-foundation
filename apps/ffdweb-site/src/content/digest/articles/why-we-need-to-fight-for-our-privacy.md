@@ -3,6 +3,8 @@ title: Why We Need To Fight For Our Privacy
 created-on: 2023-10-18T18:48:49.064Z
 updated-on: 2023-10-18T18:48:49.074Z
 published-on: 2023-10-18T18:48:49.093Z
+issue-number: 1
+article-number: 10
 image:
   src: /assets/images/DWD-Illustration-10.png
 authors:
