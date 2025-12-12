@@ -71,7 +71,7 @@ The team has developed unique technologies that support the rendering of tens of
 
 ### The platform’s stack operates at four different layers
 
-### ![](/uploads/architecture.webp)
+![](/uploads/architecture.webp)
 
 <img src="/uploads/architecture.webp">
 

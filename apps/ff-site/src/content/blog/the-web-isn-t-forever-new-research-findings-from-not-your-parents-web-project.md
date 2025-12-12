@@ -21,7 +21,7 @@ The study examined 27.3 million archived URLs across 7 million unique hosts, spa
 
 In uncovering the alarming rate at which web content disappears, this study underscores the critical role that decentralized storage solutions like the InterPlanetary File System (IPFS) and Filecoin can play in the future of digital preservation. Decentralized technology allows web content to be safely and redundantly stored across a distributed network, reducing the risks of centralization, such as single points of failure and content takedowns –– ensuring our digital heritage remains accessible for future generations.
 
-### Key Findings from "Not Your Parents' Web" Project
+## Key Findings from "Not Your Parents' Web" Project
 
 The findings reveal a stark reality about the fleeting nature of most online content. The median lifespan of a web page is a mere 2.3 years.
 
@@ -29,7 +29,7 @@ Two factors indicate that reality might be even worse. First, the research didn�
 
 Recent data from [Pew Research Center](https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/) supports these findings, showing that 38% of web pages that existed in 2013 are no longer accessible today​. That report indicates that over the past decade, 25% of all web pages sampled from 2013 to 2023 have become inaccessible, with older content being particularly vulnerable to disappearance​.
 
-### Deep Links and Root URLs: A Tale of Two Lifespans
+## Deep Links and Root URLs: A Tale of Two Lifespans
 
 The "Not Your Parents' Web" project also sheds light on the varying lifespans of different types of URLs. Deep links –– URLs pointing to content deep within a website –– have a median lifespan of just 1.3 years, which means 50% disappear in less than 18 months. By contrast, root URLs, such as a website's homepage, show less fragility:
 
@@ -43,13 +43,13 @@ The implications of these findings are significant for the integrity and accessi
 
 The prevalence of broken links, as highlighted by studies from Pew and Harvard Law School and the New York Times, not only undermines trust in digital archives but also jeopardizes historical accuracy, transparency, and the public’s ability to access reliable information. This issue reinforces the need for resilient solutions, like decentralized storage, to safeguard knowledge in the digital age.
 
-### The Enduring Early Web and the Reality of Digital Decay
+## The Enduring Early Web and the Reality of Digital Decay
 
 Interestingly, while the modern web is marked by rapid turnover, early web pages have shown remarkable resilience. Nearly **half of all URLs archived between 1996 and 2000** were still active in 2023, serving as [digital relics](https://x.com/internetarchive/status/1838985759446941922) of the internet’s formative years. However, despite these pockets of longevity, the broader picture remains one of decay. The average half-life of a URL is just two years, meaning that half of all web pages disappear within that time frame.
 
 This digital decay is not confined to old content; even more recent pages from 2021 show a significant rate of disappearance, with one in five becoming inaccessible within just two years.
 
-### The State of the Web in 2023
+## The State of the Web in 2023
 
 As part of the "Not Your Parents' Web" project, a fresh web crawl was conducted in 2023 to determine the current status of the sampled URLs. The results are sobering:
 
@@ -63,7 +63,7 @@ For users, this means encountering broken links, missing content, and gaps in th
 
 Pew Research’s examination of broken links in various online spaces supports this narrative, revealing that **54% of Wikipedia pages** contain at least one link that points to a page that no longer exists, further highlighting the scope of digital decay​.
 
-### Why This Matters
+## Why This Matters
 
 The findings from the "Not Your Parents' Web" project offer critical insights into the lifecycle of web pages and raise important questions about the preservation of digital heritage. As the internet continues to evolve, much of its history is at risk of disappearing. Without the work of archiving projects, the early web — and even more recent digital content — would likely be lost forever.
 

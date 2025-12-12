@@ -34,7 +34,7 @@ With the launch of Filecoin’s mainnet, Ethereum developers now have access to 
 
 This is a moment in history that is particularly poignant. We have an opportunity to build the new technological infrastructure that can change the nature of trust and power for the next generation of the web, one that will put data autonomy, decentralized verification, and tamper-proof data systems front and center for web and app development. Together, ConsenSys and Protocol Labs will help the world build the enabling layers of Web3.
 
-### Welcoming the ConsenSys Suite of Tools for the Filecoin Network
+## Welcoming the ConsenSys Suite of Tools for the Filecoin Network
 
 Through this collaboration, ConsenSys will build on its full suite of tools to offer new functionalities that facilitate the use of the Filecoin network. These tools will further increase the convergence of Ethereum, IPFS, and Filecoin’s respective communities of builders, developers, and end users.
 

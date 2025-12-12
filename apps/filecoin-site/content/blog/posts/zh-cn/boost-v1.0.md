@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 那么，Boost有什么不一样？
 
-### 新版的存储交易提议协商协议
+## 新版的存储交易提议协商协议
 
 Boost引入了[v1.2.0 Storage Deal Proposal Protocol（存储交易提议协商协议，SDPP）](https://boost.filecoin.io/boost-architecture/libp2p-protocols#propose-storage-deal-protocol) ，让存储用户能指定用哪种传输类型来发送自己的数据。之前的v1.1.0版协议只支持Graphsync，这是如今Filecoin上默认的（也是唯一的）数据传输协议。与v1.2.0 SDPP协议一起发布的，还有对HTTP、[libp2p-http](https://github.com/libp2p/go-libp2p-http)和 Graphsync数据传输的支持，让存储客户端有更多选项来满足自己特定的需求。Boost仍然保留了对v1.1.0版协议的支持，因此存储提供者在升级后，依然可以与现有的v1.1.0版客户端达成存储交易提议。
 
@@ -34,7 +34,7 @@ Boost引入了[v1.2.0 Storage Deal Proposal Protocol（存储交易提议协商�
 
 如[Estuary](https://estuary.tech/)这样的存储用户，如果想继续使用libp2p来以流的方式传输数据，可以利用libp2p-http协议，它提供了能够传输数据的最小化libp2p协议。Estuary和[filclient](https://github.com/application-research/filclient)库已经升级来支持新的SDPP协议了，并附带了自动回退到v1.1.0版的功能。
 
-### 为什么存储提供者应该升级？
+## 为什么存储提供者应该升级？
 
 除了新的SDPP协议和数据传输协议外，Boost还在内部重构了存储交易的管理机制，重点改进了幂等性、弹性和可视性。目前，只有v1.2.0版的存储交易提议会通过Boost内部的新型交易提议状态机来处理，而所有的v1.1.0版交易提议会依赖传统的go-fil-markets代码库（我们正慢慢将其从Boost里面移除）。
 
@@ -52,7 +52,7 @@ Boost引入了[v1.2.0 Storage Deal Proposal Protocol（存储交易提议协商�
 
 [CID gravity](https://www.cidgravity.com/) 早就进行升级来匹配Boost了，我们期待与这个团队的进一步合作，来提供更多的参数，以提升存储交易提议制定过程的可扩展控制。
 
-### Boost有什么未来计划？
+## Boost有什么未来计划？
 
 这些更新仅仅是个开始。我们已经启动了Boost的[可扩展性](https://github.com/filecoin-project/boost/discussions/555)研究，来满足存储提供者对存储和检索数据的大规模需求。我们也在研究提供一个独立的http服务来让检索完整的CAR文件变得更容易，此外还有一个[doctor command](https://github.com/filecoin-project/boost/issues/582)来帮助存储提供者更高效在自己的系统里查错。
 

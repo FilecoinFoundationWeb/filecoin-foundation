@@ -39,13 +39,13 @@ Reallocating excess storage capacity to run Filecoin nodes turns your once laten
 
 Ready to hear more? Keep reading to understand how to get started.
 
-### How to Join the Filecoin Testnet
+## How to Join the Filecoin Testnet
 
 To join the upcoming Filecoin testnet, you’ll need appropriate hardware and to install and set up the [lotus](https://github.com/filecoin-project/lotus/blob/master/README.md) implementation. For more information about installation and setup, please see [the lotus docs](https://lotus.filecoin.io/).
 
 Next, you’ll need to pledge filecoin tokens as collateral to set up your miner. “Pledge collateral” is an initial amount of filecoin that is required to join the network as a storage miner. A miner must also deposit more “deal collateral” over time as it enters each additional storage deal with clients. Collateral is deployed on the network to ensure miners behave appropriately, and it is denominated in FIL tokens. Details about collateral will be finalized in the [Filecoin spec](https://filecoin-project.github.io/specs/#pledge-collateral) over the coming weeks. During testnet, you can retrieve test filecoin from our network [faucet](https://faucet.testnet.filecoin.io/) to use as collateral to start mining. Test filecoin do not have any value – the official filecoin tokens will not be released until mainnet launch.
 
-### Protocol Labs’ Standard Hardware Testing Configuration
+## Protocol Labs’ Standard Hardware Testing Configuration
 
 **_(please read carefully)_**
 
@@ -61,7 +61,7 @@ Sector sizes and minimum pledged storage required to mine blocks are two very im
 
 Below is the configuration we have tested for sealing 32GiB sectors on lotus. The configuration is based on the steps required in the Filecoin mining process. **We made specific trade-offs related to computational power in our standard testing configuration (i.e., we allocate resources for GPUs instead of more CPU power). It is possible to mine on testnet with other configurations, but since we haven’t tested all of them, we will not cover their viability or performance in this post.**
 
-### Storage
+## Storage
 
 Filecoin rewards miners for the storage they provide to the network. **Miners should be able to use most commodity HDDs, SSDs, or other types of disks to provide bulk storage to the network**, and it is to the miner’s advantage to architect a system that allows for scaling addition of harddrives.
 
@@ -71,7 +71,7 @@ Currently in our testing configuration, a commodity harddrive provided sufficien
 
 ![Storage](https://filecoin.io/vintage/images/blog/dark-servers-center-room-with-computers-storage-systems_117023-894.jpg)
 
-### Proof-of-Replication
+## Proof-of-Replication
 
 We’re testing with a powerful CPU (with at least 8 cores) to replicate client data during _Proof-of-Replication_ (“PoRep”). A powerful CPU allows a miner to process data faster and generate PoReps more quickly to gain power on the network.
 
@@ -87,7 +87,7 @@ For more information about how the Proof-of-Replication process relates to minin
 
 [![PoRep](https://filecoin.io/vintage/images/blog/porepgraphicv2-watermark.png)](https://filecoin.io/vintage/images/blog/porepgraphicv2-watermark.png)
 
-### Proof-of-Spacetime
+## Proof-of-Spacetime
 
 Our test configuration accounts for storage overhead – we currently estimate overhead as 2x pledged storage, but this could change for mainnet. We’re currently running \~1.5TB in disk storage for sealed sectors, but we believe there are more efficient ways to configure sealed storage to reduce overhead. We’re also testing with fast and parallelized disk access to sealed sectors for generating tickets to potentially win election tickets for block rewards in _Election Proof-of-Spacetime_(“ElectionPoSt”).
 
@@ -101,7 +101,7 @@ For more information about how the ElectionPoSt process relates to mining hardwa
 
 [![ePoSt](https://filecoin.io/vintage/images/blog/testnet-mining-epost-watermark.png)](https://filecoin.io/vintage/images/blog/testnet-mining-epost-watermark.png)
 
-### Filecoin Mining is NOT Proof-of-Work GPU Mining
+## Filecoin Mining is NOT Proof-of-Work GPU Mining
 
 **Remember, Filecoin mining is based on storage power consensus:** having **more power on the network** (proven storage) is directly related to winning more block rewards. **The amount of a miner’s power on the network is linear with respect to the amount of storage the miner puts on the network, not the amount of GPUs it runs. By comparison, in _Proof-of-Work_ GPU mining, a miner must compete on GPU power to win block rewards. In Filecoin mining, a miner competes on storage power consensus and not GPU power. Miners use GPUs during ElectionPoSt only if they have winning election tickets.** The best and cheapest way to gain power is by adding more useful storage to the Filecoin network.
 

@@ -24,7 +24,7 @@ _template: blog_detail_ch
 
 Dapper Labs是CryptoKitties、Dapper Wallet和高度成功的NBA Top Shot项目背后的团队，它已经在NFT和游戏领域建立了一个强大的生态。Flow区块链是该团队孵化的项目，它具备高度的可扩展性，而没有使用分片技术。这就保留了可组合性（composability）的好处，提供了快速和低成本的交易性能，为那些面向广大主流受众的dapps项目提供了极大的便捷。这些领域从娱乐产业开始，如音乐、运动、游戏、艺术品和时尚等。
 
-### Filecoin和Flow的集成创造了更高的去中心化程度和资产完整性
+## Filecoin和Flow的集成创造了更高的去中心化程度和资产完整性
 
 在Flow区块链上的NFT创作者可以创建带有富媒体特性（包括视频）的不可篡改的NFT元数据，这是利用了IPFS的[内容寻址](https://blog.ipfs.tech/)和[Filecoin的可证明及去中心化存储](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/)来实现的。得到Protocol Labs实验室和Pinata支持的[NFT.Storage](https://nft.storage/)能够很容易地保护NFT资产和相关的元数据，确保所有的NFT遵循保持长期可用的最佳实践。
 
@@ -56,7 +56,7 @@ Flow项目的开发者编写了[一份很棒的教程](https://medium.com/@qq976
 
 为了加快这项合作，我们也为Flow生态提供了资助计划，这从Next Step Microgrant小额资助开始。
 
-### 为每个整合IPFS/Filecoin解决方案的合格Flow项目提供5000美元的Next Step Grants资助
+## 为每个整合IPFS/Filecoin解决方案的合格Flow项目提供5000美元的Next Step Grants资助
 
 任何在积极整合IPFS、Filecoin或其他相关服务（如Pinata或NFT.Storage）的项目都可以申请该资助，前提是满足五个简单的条件。在[这里](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)可以查看申请条件和递交申请！我们会按照先来后到的顺序审核申请，所以请尽早提交。
 
@@ -64,7 +64,7 @@ Flow项目的开发者编写了[一份很棒的教程](https://medium.com/@qq976
 
 另外，请持续关注与这个激动人心的合作关系相关的Filecoin x Flow黑客松的更多信息！
 
-#### 更多资源
+### 更多资源
 
 - [如何使用Flow和NFT.Storage创建NFT](https://medium.com/@qq976739120/how-to-create-an-nft-with-flow-and-nft-storage-1ccce45797b0)
 - [NFT.Storage提供的免费存储](https://nft.storage/)

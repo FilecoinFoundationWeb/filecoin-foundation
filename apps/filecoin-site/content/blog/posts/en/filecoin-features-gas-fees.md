@@ -34,7 +34,7 @@ Moreover, executing messages consumes both computation and storage resources on 
 
 Gas can be thought of as the fuel of the Filecoin blockchain, just like fuel for cars. Before you embark on a road trip, you have to pay for the gasoline that will be consumed while driving the distance and powering the engine up and down hills. Similarly, message senders on Filecoin pay for the gas that “powers” or “fuels” the execution of messages on the Filecoin Blockchain.
 
-### How Filecoin uses Gas
+## How Filecoin uses Gas
 
 Gas was initially implemented on the Ethereum blockchain as a measure of computational and storage resources consumed by a message. This is where the phrase “GasUnit” originated. Historically in other blockchains, miners specify a GasFee in a unit of native currency and then pay the block producing miners a priority fee based on how much gas is consumed by the message.
 
@@ -46,7 +46,7 @@ Going back to our roadtrip analogy, think about gas like gas in your car and the
 
 On top of burning some fees to compensate the network, message senders include a priority fee for the block producing miners that is untethered to the amount of gas consumed by the message. This is called GasPremium and it can be arranged outside of the protocol too.
 
-### A practical guide to Gas
+## A practical guide to Gas
 
 To help readers better understand the gas fee mechanism, the following describes a list of relevant gas concepts for a message and their interactions. These fields can be set by the message senders but are currently automated in lotus and more tooling can be developed.
 
@@ -64,6 +64,6 @@ Message senders only need to specify a GasFeeCap and GasLimit for each message. 
 
 Currently, the default implementation is that miners select messages based on GasFeeCap/GasLimit to maximize their expected return given the GasLimit of a block. When the network is congested and BaseFee is high, miners can choose to underpack blocks, hence reducing total GasLimit, to bring down the BaseFee, but potentially at the expense of some GasPremium.
 
-### Future work
+## Future work
 
 Research and engineering teams are working to reduce resource consumption of different on-chain messages to reduce gas usage and improve network performance to increase capacity. However, there are currently some messages on Filecoin (like SubmitWindowedPoSt) that must be included into the chain within a relatively short window or otherwise a penalty is incurred. More work is being done to improve the economic structure and enable Quality of Service guarantee for these types of messages. The Filecoin Network as a collective of clients, miners, developers, partners, and token holders will continue to collaborate and evolve the network into better directions. Follow the [Filecoin Lotus docs](https://github.com/filecoin-project/lotus) and the [Filecoin Improvement Protocol](https://github.com/filecoin-project/FIPs) for future improvements.

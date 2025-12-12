@@ -28,7 +28,7 @@ Over the last two weeks, the Filecoin community has stored more than 170 TiB of 
 
 Collectively, we have seen teams create Dropbox-style storage apps, games, and UIs around a variety of datasets – scientific, cultural, entertainment, software, and more! Let’s dive into some of the most interesting datasets we’ve seen so far in this competition.
 
-### Team: [Smartcity](https://github.com/filecoin-project/slingshot/blob/master/participants/Smartcity%20Sensor-based%20network%20and%20data%20analysis%20system.md)
+## Team: [Smartcity](https://github.com/filecoin-project/slingshot/blob/master/participants/Smartcity%20Sensor-based%20network%20and%20data%20analysis%20system.md)
 
 **Dataset:** Optical fiber data
 
@@ -38,7 +38,7 @@ Smartcity is building a sensor-based network and data analysis system that uses 
 
 This data from optical fiber sensor networks is stored on Filecoin and IPFS. Deep learning models will be trained on this data and will eventually be used to analyze various signal types and perform pattern recognition to classify and predict events. The team has created a webpage to play sounds collected from these sensors, as well as a query interface to send these files from IPFS and Filecoin to remote web servers that perform the deep learning processing.
 
-### Team: [Zangshell](https://github.com/filecoin-project/slingshot/blob/master/participants/Zangshell%20virtual%20reality.md)
+## Team: [Zangshell](https://github.com/filecoin-project/slingshot/blob/master/participants/Zangshell%20virtual%20reality.md)
 
 **Dataset:** Virtual Reality Data
 
@@ -48,7 +48,7 @@ Zangshell is a virtual reality (VR) and augmented reality (AR) system that has c
 
 Zangshell users will be able to watch these VR/AR images or videos directly in their web browsers. They can zoom in or zoom out of a scene, and also view virtual reality scenes from different angles by using a PC mouse or gestures on a mobile screen.
 
-### Team: [Starry Sky in Yunnan](https://github.com/filecoin-project/slingshot/blob/9dc8e4ef3ef2b3cb841ee166506028aaf69d6e78/participants/hlmxy-filecoin.md)
+## Team: [Starry Sky in Yunnan](https://github.com/filecoin-project/slingshot/blob/9dc8e4ef3ef2b3cb841ee166506028aaf69d6e78/participants/hlmxy-filecoin.md)
 
 **Dataset:** Astronomical and meteorological data
 
@@ -58,7 +58,7 @@ The Starry Sky in Yunnan team is storing a repository of astronomical and weathe
 
 The team believes this data can be useful for future generations, and believes that Filecoin’s mission of storing humanity’s most important information makes the Filecoin storage network a good storage solution for this data. They plan on onboarding members of the University and other organizations dealing with astronomical and weather data as their first users.
 
-### Other Valuable Datasets
+## Other Valuable Datasets
 
 In addition to the datasets Slingshot teams are storing for their specific use cases, there are a multitude of [other important and publicly available datasets](https://github.com/filecoin-project/slingshot/blob/master/datasets.md) that Slingshot teams are encouraged to store. These datasets have the potential to provide critical medical, scientific and cultural information to users around the world. Some of these datasets include:
 

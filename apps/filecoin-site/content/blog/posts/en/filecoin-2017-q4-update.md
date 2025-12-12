@@ -33,7 +33,7 @@ Dear Filecoin supporters, miners, users, investors, and broader community,
 
 Since the completion of the token sale, we have been heads down turning Filecoin’s tremendous potential into reality – from implementing the core parts of the Filecoin protocol to growing our team with the best talent we can find. Below is an update from our team, as well as a set of specific “asks” for you, our community.
 
-### Table of contents
+## Table of contents
 
 1. Community Updates - an Overview
 2. Asks - How You Can Help
@@ -46,13 +46,13 @@ Since the completion of the token sale, we have been heads down turning Filecoin
 9. CoinList
 10. Clients & Miners
 
-### 1. Community Updates - an Overview
+## 1. Community Updates - an Overview
 
 These updates will keep the Filecoin Community up to date on the progress of the Filecoin project and its [supporting projects](https://protocol.ai/projects) (ie. [IPFS](https://ipfs.tech/), [libp2p](https://libp2p.io/), [the SAFT project](https://saftproject.com/), and others). We will also ask for your help. Keep an eye out for explicit “asks”, which highlight ways you can contribute to the success of Filecoin. We plan to broadcast these updates periodically – at least once a quarter, and in some cases more frequently. We will publish these to [our new blog](https://filecoin.io/blog), and send them by email to our partners, investors, prospective users & miners, and general subscribers.
 
 Finally, we strongly encourage an open line of communication, with any suggestions, ideas, questions, feedback, or other thoughts. Please use this [suggestion form](https://docs.google.com/forms/d/e/1FAIpQLSeMgVzmDramhx0UM7UtTOECd0rw5CTzhYrt5V3Hfrdor3Z1Iw/viewform?usp=sf_link) or email us at [team@filecoin.io](mailto:team@filecoin.io) with your comments. With thousands of people involved, we may take some time to respond, but we will read your note. This year, as our team’s capacity grows and we get closer to a testnet launch, we will open official community forums where the discussion can blossom broadly.
 
-### 2. Asks - How You Can Help
+## 2. Asks - How You Can Help
 
 We have a unique opportunity to leverage the collective knowledge, capabilities, and networks of our formidable community to accelerate the success of Filecoin. We will be asking for your help along several dimensions: research problems, development and testing, organization building, partnerships, recruiting, and more.
 
@@ -65,13 +65,13 @@ Here are some top priorities that our community can help us with in the short-te
 
 Asks like these are typical in updates to project supporters, though perhaps more typical in private communications. We choose to publish these broadly, as we believe everybody in our community can contribute tremendously to the success of Filecoin, and it is in our shared interest to do so. The success of Filecoin will benefit all our community – miners, clients, partners, users, researchers, investors, developers, and more. Naturally, we require more from groups who have made strong commitments – such as developers and investors – but we want everybody to feel invited and empowered to help!
 
-### 3. Launch of the Filecoin Blog
+## 3. Launch of the Filecoin Blog
 
 This update marks the launch of the new [Filecoin Blog](https://filecoin.io/blog/). We have cross-posted all Filecoin specific posts from the [Protocol Labs Blog](https://protocol.ai/blog/), which we had been using to publish Filecoin news. Henceforth, this will be the main channel for Filecoin announcements.
 
 We have lots of plans for this blog in 2018. Expect to see technical deep-dives, explainers, event announcements, periodic updates like this one, and more. If you would like to request certain kinds of posts, feel free to [send us suggestions](https://docs.google.com/forms/d/e/1FAIpQLSeMgVzmDramhx0UM7UtTOECd0rw5CTzhYrt5V3Hfrdor3Z1Iw/viewform?usp=sf_link).
 
-### 4. Growth and Adoption of IPFS
+## 4. Growth and Adoption of IPFS
 
 IPFS and Filecoin are complementary protocols: IPFS addresses and moves content, and Filecoin is the missing incentive structure. Continued development of IPFS provides an important support layer for the Filecoin Protocol and continued adoption of IPFS signals increasing market demand for a faster, safer, decentralized storage service.
 
@@ -79,19 +79,19 @@ Over the past few months the IPFS Community and the IPFS Network have made great
 
 IPFS continues to grow steadily, serve larger sets of users and more kinds of applications. But there is a lot more work to do to enable people and communities worldwide to control what data is stored on their machines and on their networks. The IPFS maintainers and the broader IPFS community are tackling that work with verve. Many IPFS developers eagerly await the arrival of Filecoin, which will enable large-scale decentralized storage for IPFS applications.
 
-### 5. Launch of the SAFT Project
+## 5. Launch of the SAFT Project
 
 Over the past year we’ve dedicated a significant amount of energy and resources to develop a framework for legally compliant token sales. While the Filecoin Sale was the first use of that framework, [we formally launched the SAFT Project](https://protocol.ai/blog/announcing-saft-project/) in October - a collaboration between Protocol Labs, Cooley, and many other token creators, legal experts, and investors. Our goal is to approach legal protocol development the same way we approach software protocol development: with a thoughtful community, strong goals, and rigorous work. We hope our efforts will save creators much of the current headache, uncertainty, and cost associated with raising money for token networks.
 
 The reception and adoption has been tremendous. SAFTs have been used by token creators and investors to transact in dozens of token sales. It is estimated that close to or more than half a billion dollars has been transacted with SAFTs and [recent regulatory action](https://coincenter.org/entry/munchee-settlement-puts-the-utility-token-argument-to-the-test) is congruent with [the SAFT framework’s assessments](https://twitter.com/msantoriESQ/status/940283039489380354). To find out more visit the [SAFT Project Website](https://saftproject.com/) and [GitHub](https://github.com/saft-project), [CoinCenter](https://coincenter.org/entry/the-saft-is-a-reasonable-approach-to-securities-law-when-preselling-useful-network-tokens), [Forbes](https://www.forbes.com/sites/laurashin/2017/10/02/are-icos-for-utility-tokens-selling-securities-prominent-crypto-players-say-yes/#67eacfca34fa) and [The Economist](https://www.economist.com/news/finance-and-economics/21731157-they-raise-difficult-legal-questions-regulators-begin-tackle-craze).
 
-### 6. Growing the Team
+## 6. Growing the Team
 
 Ambitious projects like Filecoin succeed or fail depending on their teams. One of our top priorities – in the past, present, and future – is to [grow our team](https://protocol.ai/join/) with brilliant, masterful, hardworking people who share our vision and mission. Our recruiting is focused on strengthening the core engineering, research, and business development teams, as well as filling a few key operational roles.
 
 Our network is large thanks to you. We need your help sourcing as many excellent candidates for our open positions. As a distributed team, we hire anywhere in the world, and at various levels of experience (entry, senior, staff, etc). We look for people with unique perspectives and diverse backgrounds. If you – or someone you know – may be a good fit, please apply.
 
-### 7. Filecoin Engineering & Development
+## 7. Filecoin Engineering & Development
 
 We have been hard at work on implementing the Filecoin Protocol. Filecoin builds on the strong foundations laid by IPFS, libp2p, and Ethereum. This means a large number of very difficult pieces are already implemented, and we can focus on connecting these battle-tested components.
 
@@ -119,7 +119,7 @@ Here are some of the technical problems we are exploring:
 
 We invite anybody interested in any of these parts, both research and implementation, to contact us at [team@filecoin.io](mailto:team@filecoin.io), specially people with backgrounds in cryptography research or distributed systems implementation.
 
-#### 7.1. Blockchain Ecosystem R&D
+### 7.1. Blockchain Ecosystem R&D
 
 We continue to review and be inspired by the excellent work of other protocols and the academic community. In particular, we are paying close attention to many interesting developments, which may improve Filecoin. Here are some examples:
 
@@ -131,17 +131,17 @@ We continue to review and be inspired by the excellent work of other protocols a
 - Of course, we continue to leverage the improvements made by our teams and communities in the [**IPFS**](https://ipfs.tech/)**,** [**libp2p**](https://libp2p.io/)**,** [**IPLD**](https://ipld.io/)**, and** [**multiformats**](https://multiformats.io/) **projects**. These are also leveraged by other blockchain projects, which will build a stronger, more robust, and interoperable Web 3.0.
 - [**STARKs**](https://www.youtube.com/watch?v=VUN35BC11Qw) **and** [**Bulletproofs**](https://eprint.iacr.org/2017/1066.pdf): it is a great time for verifiable computation. STARKs and Bulletproofs are two transparent non-interactive zero-knowledge proof systems, which Filecoin may use for some of its proof algorithms. We are exploring tradeoffs and constructions.
 
-#### 7.2. Open Problems and RFPs
+### 7.2. Open Problems and RFPs
 
 Early in 2018, we will launch listings of open problems and a Request-for-Proposal (RFP) program to inspire and support work. The Open Problem listing will give us a venue to draw attention to important directions for improvements – for Filecoin and blockchains in general. The RFPs will allow us to motivate and reward people who help us solve those problems and implement their solutions. Keep an eye out for announcements!
 
-### 8. Investor SAFTs and Warnings
+## 8. Investor SAFTs and Warnings
 
 In October, all investor SAFTs were sent out by email. We heard some of these emails were caught in spam filters, so to avoid issues we will be re-sending them again soon. We have also added a cryptographic signature to the SAFTs that verifies its validity, so the new version you will receive will be the definitive one. For more information on how to treat SAFTs and how tokens will be issued, please read the [sale completion post](https://filecoin.io/blog/sale-completed) or email us at [sale@filecoin.io](mailto:sale@filecoin.io).
 
 **Investor caution:** during and after the Filecoin token sale we’ve seen several attempts to defraud investors from actors claiming to be selling Filecoin SAFTs or tokens. Similarly, we’ve seen unscrupulous exchanges listing Filecoin and Filecoin derivatives. Remember that the Filecoin token **will not** be live until network launch, and any exchange that lists Filecoin or IPFS tokens is likely fraudulent. We strongly recommend not trusting any exchange or entity who claims to be buying, selling, or trading Filecoin tokens or derivatives. We will announce here when the Filecoin Network and token go live, until then we strongly recommend staying away from such actors and exchanges.
 
-### 9. CoinList
+## 9. CoinList
 
 We originally launched [CoinList](https://coinlist.co/) to make token-based fundraising [easy and legally compliant](https://www.forbes.com/sites/laurashin/2017/05/18/want-to-hold-an-ico-coinlist-makes-it-easy-and-legal/#b642fca7ce5e). The platform innovated on many fronts. It developed new legal frameworks by introducing the [SAFT](https://saftproject.com/) instrument for the first time. It raised the bar for legal compliance. It introduced new payment options, accepting ETH, BTC, ZEC, and USD simultaneously. It incorporated security improvements, such as an IPFS-hosted HD Wallet verification tool. And it improved the investor experience through a modern user interface and structured email support.
 
@@ -149,7 +149,7 @@ The [Filecoin sale](https://protocol.ai/blog/filecoin-sale-completed/) proved th
 
 During the transition, Filecoin SAFTs were temporarily removed from the CoinList platform, and will be added back in early 2018. For more information on CoinList, please visit [coinlist.co](https://coinlist.co/).
 
-### 10. Clients and Miners
+## 10. Clients and Miners
 
 Finally, the Filecoin Network is off to a very strong start. Tens of thousands of very enthusiastic early storage users and miners have already signed up for our [early user](https://docs.google.com/forms/d/e/1FAIpQLSdCOjMenUU7WtT54zeAivCS2nnaWYQIgaXh0eRdIdpi6Pwkew/viewform) and [early miner](https://docs.google.com/forms/d/e/1FAIpQLSfdFpWhJj8OIGA2iXrT3bnLgVK9bgR_1iLMPdAcXLxr_1d-pw/viewform?c=0&w=1) programs. Currently we’re meeting with a small but wide-ranging subset of them, gathering insights to inform our design of onboarding experiences, market incentives, and more. Please spread the word on these forms – if you or someone you know are interested in becoming storage users or miners, notifying us sooner will help us plan with you.
 

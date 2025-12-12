@@ -28,7 +28,7 @@ Last month the [Filecoin Storage Provider Mentorship Grants Program](https://fil
 
 The initial promotion of 10 hours of free consulting to the first 10 qualified SPs was almost immediately filled. As high demand for the program continues, we want SPs of all shapes and sizes to find a solution that works for them.
 
-### Consulting Package Options
+## Consulting Package Options
 
 There are now three options SPs can choose from when working with Factor8 Solutions:
 

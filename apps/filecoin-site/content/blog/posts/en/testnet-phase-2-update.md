@@ -45,15 +45,15 @@ Our current, optimistic plan places Testnet Phase 2 launch the week of February 
 
 **One other note:** We recognize that many Filecoin community members are located in regions affected by the novel coronavirus outbreak and might have limited access to participate in the testnet until late February. First, we send our love and support to these community members. Please stay safe! Second, we guarantee that **we will not launch Testnet Phase 2 before February 24, 2020.** We’ll post here when we have our Testnet Phase 2 launch date.
 
-### Upcoming Milestones
+## Upcoming Milestones
 
 Based on the above, rough timing for our upcoming milestones is:
 
 - Testnet phase 1: December 11, 2019 - February 21, 2020
 - Testnet phase 2: February 24 - April 24, 2020
 - Mainnet launch window: April 27 - May 29, 2020
-  - This 1 month window is intended to cover unforeseen circumstances (such as critical security vulnerabilities that need to be addressed, etc) that might delay launch
-  - We **plan** to launch at the beginning of this launch window
+- This 1 month window is intended to cover unforeseen circumstances (such as critical security vulnerabilities that need to be addressed, etc) that might delay launch
+- We **plan** to launch at the beginning of this launch window
 
 As always, these dates are best estimates, and could potentially shift. We are providing this more granular view into our roadmap because our community has overwhelmingly requested more frequent, “best estimate” updates, even if they may end up changing. We are doing our best to provide accurate timing information, but please understand that this information is not static – it will change.
 

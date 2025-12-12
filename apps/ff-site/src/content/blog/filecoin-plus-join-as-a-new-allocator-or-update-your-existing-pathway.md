@@ -23,7 +23,7 @@ Round 6 introduces an updated application form to streamline diligence standards
 
 Whether you’re a new organization eager to contribute to Filecoin’s decentralized storage network or an existing Allocator looking to strengthen your role, now is the time to act. This blog post is the first of several updates, with more guides and videos coming soon to support your journey. Here’s what you need to know to get started or stay active in Round 6.
 
-## **For New Organizations: Join the Fil+ Program**
+## For New Organizations: Join the Fil+ Program
 
 Round 6 is a chance for new organizations to become Fil+ Allocators, distributing DataCap to drive useful data storage on the Filecoin network. The updated application form simplifies onboarding, especially for [manual pathways](https://www.fidl.tech/news/manual-pathway-metaallocator), thanks to improved tooling and staffing. Here’s how to get started:
 
@@ -38,7 +38,7 @@ Before you start, make sure you created a github bookkeeping repository and have
 
 Apply early to leverage Fil+ community resources and Governance Team feedback via the [Allocator-Registry](https://apply.allocator.tech/dashboard) to ensure a smooth start.
 
-## **For Existing Allocators: Resubmit to Stay Active**
+## For Existing Allocators: Resubmit to Stay Active
 
 For current Allocators, Round 6 is your opportunity to update your pathway information to align with enhanced diligence standards, ensuring seamless refresh audits, and continued DataCap allocation.
 

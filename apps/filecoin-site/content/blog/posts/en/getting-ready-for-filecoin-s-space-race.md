@@ -33,19 +33,19 @@ As we enter the home stretch into Filecoin’s mainnet launch, [Lotus](https://l
 
 In the path to mainnet launch, our next big milestone is the launch of the [Filecoin Testnet Incentives Program](https://filecoin.io/blog/announcing-testnet-incentives/) - nicknamed the _Filecoin Space Race_. This collaborative competition is intended to stress-test the network, encourage participation all over the world, and help miners get ready to run the world’s biggest decentralized storage network. In this 3-week competition, miners will compete to onboard as much storage capacity as possible to the network. The top 100 miners globally, as well as the top 50 miners from each continent, will earn Filecoin rewards based on how much storage they and the network achieve during the competition period. In addition to rewarding competition winners, Filecoin tokens from Space Race are intended to help miners onboard their storage capacity quickly on the Filecoin mainnet, and additional optimizations are in the works to make this an even smoother onboarding process. For a reminder on the rules and eligibility requirements, see our [announcement blog post](https://filecoin.io/blog/announcing-testnet-incentives/).
 
-### New Block Reward Incentive
+## New Block Reward Incentive
 
 In addition to onboarding storage capacity - an important part of validating the Filecoin network works as intended to _create a decentralized, efficient, and robust foundation for humanity’s information_ is testing the actual mining of blocks in the Filecoin blockchain. Once the main network launches, this will be one of the main ways that miners are rewarded for operating the network. Therefore, to ensure the testnet incentives competition closely mimics the dynamics of the mainnet, we’re excited to announce an **additional prize of 100K FIL** to be split proportionally among the 20 largest block reward winners. This additional reward pool will abide by the same [rules and requirements](https://filecoin.io/blog/announcing-testnet-incentives/#rules) as the storage race, and have its own leaderboard.
 
 Please join the **#space-race** channel on [Filecoin slack](https://filecoin.io/slack) for the latest updates!
 
-### Filecoin Bug Bounty Program
+## Filecoin Bug Bounty Program
 
 Running a testnet incentives program is a critical step ahead of mainnet launch to identify and fix any bugs or critical security issues before the mainnet is live. Therefore, we **strongly encourage** Space Race participants to use this testnet to evaluate and report any potential attacks, issues, or bugs they may find in the Filecoin protocol or reference implementation. **Please stress test the network, try to break things, and report any issues you encounter!**
 
 To help with that, we’ll be rewarding participants through our new [**Filecoin bug bounty program**](https://bounty.filecoin.io/) to earn Filecoin for helping improve the network. If you’re interested in finding and squashing bugs, and getting rewarded for it, check it out! We’ll also be announcing additional targets and bounties on the [bug bounty website](https://bounty.filecoin.io/) ahead of the Space Race competition.
 
-### New Incentives Calibration Period
+## New Incentives Calibration Period
 
 We’ve been planning for a July 20th launch for our testnet incentives program, but have heard a [strong request from the community](https://filecoinproject.slack.com/archives/CPFTWMY7N/p1594401718461200) to create a window for competition participants to try out their mining setups with the latest features and real competition conditions - including the leaderboard(s), storage and retrieval deal evaluation system, and updated economic parameters. Many improvements have landed in the last few weeks, and both miners and developers want to ensure they’re well tested ahead of the competition.
 
@@ -62,7 +62,7 @@ The Space Race will also feature a number of events for participants:
 - Opportunities for participating teams to present their setups
 - And more!
 
-### Roadmap Update
+## Roadmap Update
 
 While we’re excited to give the mining community (and the development team) more time to make the most of this competition, we cannot compress the time between the Space Race and Filecoin’s Mainnet Launch. This is a critical window for critical bugfixing, operational setup time, and final parameter optimizations following the testnet incentives program. Therefore, we’re updating our mainnet launch window to **August 31st - September 21st** to reflect this additional calibration period.
 

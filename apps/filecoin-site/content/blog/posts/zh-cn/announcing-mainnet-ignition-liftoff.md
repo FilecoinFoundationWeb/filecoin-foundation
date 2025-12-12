@@ -32,7 +32,7 @@ _template: blog_detail_ch
 
 ![数据仪表板上的325PiB](https://filecoin.io/vintage/images/blog/ignition-stats-dashboard.jpg)
 
-### 过渡到主网点火
+## 过渡到主网点火
 
 今天，当我们进入主网点火阶段并已经为Filecoin主网启动做好准备之际，很高兴能够与大家分享[Filecoin启动的阶段与时间表](https://app.instagantt.com/shared/s/1152992274307505/latest)。启动区块链是复杂而漫长的过程，像许多其他网络（如[波卡](https://polkadot.network/launch-roadmap/)、[NEAR](https://near.org/blog/mainnet-roadmap/)等等）一样，Filecoin采用分段式方法来启动主网，在阶段性的时间内将不同群体和社区加入到网络中直至主网启动。
 
@@ -48,13 +48,13 @@ _template: blog_detail_ch
 
 主网点火阶段也是巩固Filecoin社区参与网络改进以及进行决策的良好时机。存储矿工、社区领袖、开发者、用户和生态伙伴都可以通过开放的[Filecoin Improvement Process](https://github.com/filecoin-project/FIPs)参与增强网络，并通过在[每两周举行一次的核心开发会议](https://github.com/filecoin-project/core-devs)的实施方案交叉讨论进行升级，以及通过[矿工间的共识](https://spec.filecoin.io/#algorithms__expected_consensus)批准新的变更。Filecoin具有完整的功能，但我们希望社区可以在主网启动之后也通过进行不断更新软件来继续发展和改进Filecoin网络。
 
-### 过渡到主网
+## 过渡到主网
 
 在过去的一个月中，整个Filecoin生态完全专注于太空竞赛-我们的多赛道测试网奖励比赛。这是Filecoin项目对网络进行调整和升级来为主网启动做准备的关键阶段——整个生态通过大规模的实时压力测试来积累有价值的知识和运营经验。在整场太空竞赛中，超过500名矿工在 Orbital Burn 中落地了超过325PiB的存储，其中有265个用户应用程序在[Slingshot](https://slingshot.filecoin.io/)中进行了超过40,000次存储和检索交易，并共同对网络的功能、安全性和弹性进行了全面的测试。
 
 我们很高兴能够基于太空竞赛的坚实基础来启动Filecoin网络。大家投入了大量的工作（人力和机器！）来增加存储容量，来使得Filecoin网络更安全并且更分布式。早期矿工投入了大量资金来查找漏洞、积累运营知识以及为网络投入大量封装和存储硬件奠定基础。太空竞赛测试网将继续运行，并在接下来的3周内通过协议升级和状态转换逐步进入主网，而不是从头开始进行设置（这样会失去所有存储容量）。在主网启动后，我们仍然需要进行一些改进和状态转换的工作，但是我们会将其构建在链的升级中而不是硬性重置。如果您是矿工并想加入 Filecoin网络，[第二轮太空竞赛: Orbital Burn](https://filecoin.io/blog/space-race-2/)是您现在开始的最佳途径！
 
-### 主网启动倒计时
+## 主网启动倒计时
 
 我们所有努力的顶峰即将到来。Filecoin主网将在epoch 148888正式开启! 我们预期将在10月15日左右到达这个epoch，然后我们将开始一段时间的监控和解决问题来保证过渡后网络的正常运行（与预期相符）。几天之后，我们将举行**Filecoin主网启动：10月19日至10月23日为期一周的Filecoin启动活动。🚀**
 
@@ -66,7 +66,7 @@ _template: blog_detail_ch
 
 计划围绕Filecoin启动新产品，应用程序或服务？主网启动期是突显加入网络的优秀项目的好时机！考虑在启动期间的会议或聚会上发布，或者举办自己的发布活动！如果我们可以帮助宣传您的活动或分享您的故事，请联系我们[contact@filecoin.io](mailto:contact@filecoin.io)。
 
-### 展望启动后的未来
+## 展望启动后的未来
 
 就像任何火箭发射一样，升空仅仅是个开始。火箭的最大动压是离开地面之后，而不是之前。同样，作为社区我们最大的挑战是之后我们致力于升级协议，支持要求更高的用例，以及在实现中添加新的功能。为了抵御主网上线之后的压力，我们必须仔细规划升级的路径，动态响应问题，并组成一个多元化的社区，共同定义Filecoin网络的精神，文化和未来。我们有一个坚固的发射台，现在由我们来决定如何在星空中前进。✨
 

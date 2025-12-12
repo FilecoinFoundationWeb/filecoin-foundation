@@ -59,6 +59,6 @@ Filecoin的启动激发区块链开发者对Web3和Web2之间的关系产生了�
 - **下午4:55 太平洋夏令时:** Viraj Anchan——“Filecoin Plus: 激励Filecoin上的有用存储”。
 - **下午5:15 太平洋夏令时:** 斯坦福大学区块链研究中心的Jonathan Dotan——“从存储到正义”。了解如何用Filecoin独特的加密证明机制来建立我们对敏感数字记录的信任，例如侵犯人权、战争和种族灭绝的证据记录。
 
-## **[查看所有议程](https://liftoff.filecoin.io/)**
+## [查看所有议程](https://liftoff.filecoin.io/)
 
 明天见!

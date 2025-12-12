@@ -35,7 +35,7 @@ When Filecoin was announced in 2017, the plan was to create a decentralized stor
 
 ![Proofs diagram](https://filecoin.io/vintage/images/blog/filecoin-proof-system-diagram.jpg)
 
-### The Story of these Proofs
+## The Story of these Proofs
 
 PL’s Juan Benet explored the history of Filecoin’s proof construction in a [**recent interview on the Zero Knowledge podcast**](https://www.zeroknowledge.fm/106). The following are excerpts from that interview:
 

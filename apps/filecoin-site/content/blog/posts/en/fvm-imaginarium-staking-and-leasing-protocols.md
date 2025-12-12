@@ -26,19 +26,19 @@ _template: blog_detail
 
 _The launch of FVM on March 14, 2023 revolutionized the existing Filecoin ecosystem, unleashing the full potential of the open data economy. Below is a highlight of the projects that are building DeFi lending protocols on top of the Filecoin Virtual Machine._
 
-## **Background and Context**
+## Background and Context
 
 Being a Filecoin Storage Provider requires dedication, time and effort. On top of purchasing hardware, running a full-stack datacenter, having technical expertise and sourcing clients to store data, **Storage Providers must also pledge FIL as collateral to prove they will act in good faith and that their incentives are aligned with the rest of the Filecoin economy participants.** The more storage capacity or data an SP plans to onboard to the Network, the more FIL is required by the protocol to secure that capacity or data. Ultimately, SPs are rewarded for their contributions of storing humanity’s most valuable information through the form of block rewards and storage contract deals (learn more about the SP value proposition [here](https://www.youtube.com/watch?v=MlhZlKgzSI8)).
 
 As the Filecoin Network has grown over the last 2.5 years, so has the demand for storage collateral that accompanies higher volumes of network throughput (i.e., more capacity and data onboarded). Early in 2022, programs were established to help Storage Providers access FIL for storage collateral, including collaborations between the Filecoin ecosystem and [DARMA Capital](https://www.google.com/search?q=DARMA+Capital+Filecoin&oq=DARMA+Capital+Filecoin&aqs=chrome..69i57j0i390l4j69i65l2.5473j1j7&sourceid=chrome&ie=UTF-8#ip=1), [Anchorage](https://www.anchorage.com/insights/filecoin-lending-with-anchorage-digital/), [CoinList](https://coinlist.co/fil-lending), [PalladiumX](https://www.palladiumx.finance/home), and more. These programs have been extremely successful in helping Storage Providers grow the Filecoin Network and we are grateful to each of those partners– to date, Filecoin SPs have locked \~140M FIL in pledge collateral.
 
-## **Staking Protocols on Other Networks**
+## Staking Protocols on Other Networks
 
 Staking is still in its early days for web3. Some protocols that extensively utilize staking today to lock up tokens for their respective protocols include Cardano, Ethereum, Solana, and Polkadot. In other networks, staking provides an opportunity for validators on those networks to prove that they are good actors, as well as verify transactions on the Network. Let’s look at Ethereum as an example: validators are required to stake 32 ETH (today’s equivalent of \~$50K USD). When validators would like to participate in the Network, but do not have enough tokens to stake, other participants in the Network are allowed to stake their tokens with that validator through interfaces (e.g. Lido, Rocketpool) and ultimately contribute to the validator’s staked funds.
 
 In the Filecoin Network, this works differently. Instead of validators, Storage Providers, or datacenters that are onboarding data capacity to store humanity’s most valuable information, are receiving the leased tokens.
 
-## **Introducing Staking and Leasing on FVM**
+## Introducing Staking and Leasing on FVM
 
 FVM allows developers to build new applications utilizing smart contracts and capitalizing on user programmability being available on the Filecoin blockchain, unlocking innovative ways to help Storage Providers access FIL for collateral. Specifically, FIL token holders will soon be able to contribute their own FIL to grow Storage Provider operations via specifically-designed smart-contract based protocols. These protocols will have their own set of criteria – likely consisting of on-chain data – for selecting Storage Providers to lease FIL to. The ability to more efficiently connect Filecoin Token Holders with Storage Providers could accelerate growth of data onboarded to the Network. Each of the upcoming protocols being built on the FVM to specifically enable leasing FIL to Storage Providers features different approaches. To learn more about the specific projects, please see the list below:
 

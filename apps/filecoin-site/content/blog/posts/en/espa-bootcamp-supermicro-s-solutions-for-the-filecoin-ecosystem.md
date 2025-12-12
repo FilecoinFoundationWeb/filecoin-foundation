@@ -29,7 +29,7 @@ The Enterprise Storage Provider Accelerator program is designed to help startups
 
 [Supermicro](https://www.supermicro.com/en) started developing application-optimized server building blocks in 1993 and has evolved into a global provider of fully-integrated rack solutions. Now, the company has taken on the task of facilitating the transition from Web 2.0 to Web3 with solutions that acknowledge the hardware needs of decentralized protocols.
 
-### Solutions
+## Solutions
 
 The building blocks of Web3 infrastructure need to be appropriate in size. To this end, Supermicro offers key products for Storage Providers (SPs) to choose from:
 
@@ -40,7 +40,7 @@ The building blocks of Web3 infrastructure need to be appropriate in size. To th
 
 These hardware products are optimized for enterprise-grade storage on the Filecoin network. They take into account factors that range from raw performance requirements and cost-effectiveness to environmental impact. More so, Supermicro has worked with the Filecoin community and ESPA to develop solutions that are tailored to each phase of the Sealing process.
 
-### What’s Next
+## What’s Next
 
 Aside from its continued collaboration with ESPA and the Filecoin community, Supermicro plans to continue serving the Filecoin SP community with solutions that are easier to adopt at an enterprise level. It will optimize for the latest CPUs and GPUs and expand its product suite to support the latest Web3 workloads.
 

@@ -27,11 +27,11 @@ Becoming a Storage Provider on the Filecoin Network is a way to participate in t
 
 To understand how this is possible it’s important to understand the economics of the Filecoin Network for SPs. We’ll go through a few of the basic concepts SPs should be familiar with as they become active members in the Filecoin economy.
 
-### FIL Token
+## FIL Token
 
 Filecoin’s [_island economy_](https://filecoin.io/blog/posts/filecoin-s-island-economy/) consists of the interactions between five different sectors: clients, developers, token holders, ecosystem partners, and most important to us, SPs. All of these transact with each other using the FIL utility token and SPs are no exception. Therefore, all of the economic operations they participate in within the network are denominated in the token. It’s what gives holders the right to use the network.
 
-### Filecoin Storage Providers’ P&L
+## Filecoin Storage Providers’ P&L
 
 SPs have two main sources of revenue in the Filecoin Network: they earn fees charged to end users for the storage and retrieval of data and they have a chance to receive block rewards in FIL.
 
@@ -43,7 +43,7 @@ In terms of costs, SPs have many factors to consider: purchasing and maintaining
 
 ![](/uploads/pl-_-the-economics-of-storage-providers.webp)
 
-### Collateral
+## Collateral
 
 Another economic concept to understand is collateral. This is simply the amount of FIL that SPs have to stake in order to guarantee that they will act in good faith and that their incentives are aligned with the rest of the economy. If they fail to meet their responsibilities to the network their collateral is _slashed_, meaning that they lose a portion of the FIL.
 
@@ -55,13 +55,13 @@ There are three types of collateral:
 - **Block reward as collateral:** The amount of FIL SPs receive for proposing a block in the consensus process. Seventy-five percent of this amount can vest over a period of six months and is subject to _slashing_ if a Sector is terminated before its expiration.
 - **SP deal collateral:** The amount of FIL that is _slashed_ if a deal is terminated. Higher collaterals can indicate higher reliability to potential clients.
 
-### Barriers to Entry
+## Barriers to Entry
 
 The Filecoin community works hard to make the network and its economy accessible to any participant, starting with the fact that the network is designed to be permissionless. Potential barriers to entry such as high collaterals are mitigated by factoring each SPs total storage capacity into their calculation. However, some aspects like minimum hardware requirements and the steep learning curve of setting up a node are still hard problems to tackle for aspiring SPs.
 
 The community has addressed these issues in different ways, including [educational material](https://www.youtube.com/watch?v=LKMjCgo-fkA) on optimizing small and individual hardware setups. Participating in [ESPA’s Storage Provider Bootcamp](https://www.web3espa.io/?utm_source=PL&utm_medium=blog&utm_campaign=highlight) is also a great way to take the steps necessary to become an SP.
 
-### Tools
+## Tools
 
 Since the Filecoin Network is in constant flux and expansion, metrics such as SP costs, block reward amount, and the price of FIL change frequently. The SP community counts on a set of important tools that can help to determine how participating in the Filecoin economy may or may not work for them.
 
@@ -69,6 +69,6 @@ Websites such as [Filfox](https://filfox.info/en) are an important source of inf
 
 Another great resource for potential Storage Providers is the new [SP website](https://sp.filecoin.io/), where you can find some informational videos, FAQs, an ROI calculator, connect with a Filecoin expert and much more!
 
-### Further Reading
+## Further Reading
 
 To learn more about the economics of being a Filecoin SP check out other important resources such as the paper on [Engineering Filecoin’s Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf) and a guide to [Filecoin’s Cryptoeconomic Constructions](https://filecoin.io/blog/posts/filecoin-s-cryptoeconomic-constructions/). Also, be sure to join the community on [Slack](https://filecoin.io/slack) and [Twitter](https://twitter.com/FilecoinSP?s=20&t=Cied9srtVmuumV69dT7NSA).

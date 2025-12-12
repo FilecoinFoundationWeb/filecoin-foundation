@@ -38,7 +38,7 @@ We wanted to give you a thorough update covering the following:
 - a few frequent issues we’ve noticed and how to address them
 - and our plans for resuming the sale
 
-### Sale Open and CoinList Service Interruptions
+## Sale Open and CoinList Service Interruptions
 
 The sale opened at 12:00 PDT. Immediately, CoinList experienced massive load, in terms of pageviews, users watching live, and transaction volume.
 
@@ -52,16 +52,16 @@ We are very happy to report that, to our knowledge and as we expected, the CoinL
 
 **Important Note:** during the service outage, the front-end webpages got out of sync with the back-end and the graph may have shown weird and innaccurate behavior. We replaced the real-time update feed as fast as we could, with a static account of the amount raised. Due to the rush to fix the graph, there was a double counting mistake made and the page briefly showed “250M+ raised”, which we corrected after a few minutes to correctly show “150M+ raised”, which was our known lower bound at the time.
 
-### CoinList Customer Support
+## CoinList Customer Support
 
-#### We have been handling these types of minor issues through customer support
+### We have been handling these types of minor issues through customer support
 
 - **Investors sent too much money, or accidentally paid twice.** Some investors paying with crypto tokens ended up paying too much, either to ensure transactions were done correctly or because of simple mistakes. We are in touch with a few, but if you think this happened to you, let us know. We will confirm with you within 1 week and process such requests and refunds after the sale. Thankfully blockchains are fully publicly auditable (yay decentralized tech!), so it’s quite easy for us to refer to that record.
 - **Investors sent too little money.** Some investors had the opposite problem: they thought they sent enough but they ended up sending short amounts. Some of these were drastic underfunding – less than 10% of the proposed investment. Others were due to wallets subtracting network fees from payment amounts, so the final amount confirmed with us came up short by the network fee. We previously warned about this. Please check each of your purchases in the Purchase Dashboard, to figure out whether this happened to you, and so you can complete the investment. Reach out if you need help.
 - **USD transaction confirmations**. During service interruptions, a few USD transactions failed to mark as cleared. This would manifest itself as the purchase showing up as still “Awaiting Confirmation”. We have identified these transactions and will count them as confirmed correctly, as we have exact timestamps on when the confirmation should have happened. These should be fixed automatically, but if this problem persists for you, please reach out to filecoin-sale@protocol.ai.
 - **Incorrect vesting choices**. A couple of investors emailed to report they failed to pick their vesting choice using the vesting slider. Please refer to the “How to Invest” document, as it shows the vesting slider.
 
-### Crediting Transactions for the Service Interruptions
+## Crediting Transactions for the Service Interruptions
 
 As we mentioned previously, we feel it is important to credit investors for such a service outage. Therefore, we have decided to give the First Hour Averaging price to transactions that cleared between 13:00:00 - 13:16:00 PDT as well.
 
@@ -69,7 +69,7 @@ Note that, since this is an outage we want to credit and since most investors co
 
 This avoids counting the later transactions in the average and raising the price for everyone, something many people would be unhappy about. We believe this is fair to both investors who did manage to make their investments land by 13:00:00 despite the interruptions, and that it is also fair for those few affected by the interruption. Affected investors you will receive an email notice within 1 week, and your purchase dashboard and SAFT will be updated at the end of the sale.
 
-### Resuming the Sale - Sat, Aug 12 at 11:00am PDT
+## Resuming the Sale - Sat, Aug 12 at 11:00am PDT
 
 Everybody is excited and anxious to resume the sale. We have received dozens of emails asking us to reopen the sale so they can participate. We estimate many more people are waiting. We wanted to do this as fast as we could, while addressing the minor issues described before, and after we finished all verifications. We are happy that we can do that now. We set the time for **Sat, Aug 12 at 11:00am PDT** to give many hours of notice.
 
@@ -77,7 +77,7 @@ If there are any future outages, **we will give a 2+ hour notice before we resum
 
 **Warning**: there have been even more scams. Beware of websites and fake Twitter accounts impersonating us. We are doing what we can to take these down as fast as we can, but they do exist and we expect more will happen before our sale concludes. Hopefully they will stop after we stop. :)
 
-### Thanks
+## Thanks
 
 Again, thank you for all the amazing support so far, for your patience with the new platform, and for all the cheers of encouragement. We look forward to the journey ahead, as we build Filecoin together. We are tremendously proud to have you backing us, and we hope to make you equally proud with our future work.
 

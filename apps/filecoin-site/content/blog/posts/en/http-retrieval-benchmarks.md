@@ -26,11 +26,11 @@ Boost has recently released a feature which enables storage providers to serve H
 
 We have performed load testing on booster-http and are sharing out results in hopes that these findings can help storage providers better understand how HTTP retrievals with Boost might work on their own setup. Anyone can download our [load testing tools](https://github.com/filecoin-project/retrieval-load-testing) and run their own load testing.
 
-### Environment
+## Environment
 
 For this HTTP load testing effort, we tested on filcollins, which is our team’s production grade petabyte scale storage provider. Below you will find the hardware details for filcollins, which includes 4 instances - 2 cpu instances and 2 gpu instances.
 
-## **CPU Instance Type**
+## CPU Instance Type
 
 **CPU**
 
@@ -66,7 +66,7 @@ model name: Intel® Xeon® Gold 6242 CPU @ 2.80GHz
 
 3 x 900 GB HDDs running as a striped array, designated for scratch area
 
-### Load Testing Process
+## Load Testing Process
 
 In terms of process to setup the HTTP benchmark testing, we created an artificial limit on the outbound connection to simulate the 10GBit and 1GBit connections. On both, we also setup an artificial one way latency of 40ms. We simulated downloads using a load testing framework called K6.
 
@@ -80,7 +80,7 @@ These protocols were tested in 2 main modes: full-fetch and range requests.
 - full-fetch refers to full [Filecoin piece](https://spec.filecoin.io/systems/filecoin_files/piece/) retrievals.
 - range requests refers to retrieving a specific range of content within the full Filecoin piece. For this load testing exercise, we tested across multiple ranges - 1 MiB, 10 MiB, and 100 MiB.
 
-### Results
+## Results
 
 **Full piece retrievals**
 

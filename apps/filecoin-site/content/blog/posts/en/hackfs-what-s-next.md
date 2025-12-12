@@ -30,7 +30,7 @@ The amazing array of projects created within the month-long hackathon covered al
 
 In addition to the 10 finalists who demoed their projects in the HackFS Finale, Protocol Labs (PL) awarded eight projects special HackFS prizes. We checked in with several of these PL prize-winning teams to learn what’s next for them. We’ll keep tracking the progress of these teams and others now that the hackathon is over and several hackers are becoming more involved participants in the Web3 and Filecoin ecosystems.
 
-### Team: Cadbury
+## Team: Cadbury
 
 - **PL Prize:** Winner of the Audio track
 - **Team Members:** Susmit Lavania and Ayush Ranjan
@@ -49,7 +49,7 @@ The team spent the first two weeks of the hackathon researching the mechanics of
 
 The Cadbury team’s next step is to expand the network. They’re working to scale the existing infrastructure of Cadbury with their protocol so that they can host larger meetings. The upcoming protocol will decentralize signaling servers and selective forwarding units for performance and scalability and they’re working on a corresponding whitepaper. They plan to hire and they’re also applying to the Filecoin Launchpad Accelerator and other hackathons to continue to build.
 
-### Team: Kotal
+## Team: Kotal
 
 - **PL Prize:** Winner of the Devtools track
 - **Team Member:** Mostafa Farghaly
@@ -62,7 +62,7 @@ Kotal, which means “blocks” in Arabic, is an open-source, cloud-agnostic blo
 
 After taking home PL’s Devtools Stack price from HackFS, Farghaly says he’s hoping to find a company or foundation to further fund this work. He also applied for several grants, including a [Gitcoin](https://gitcoin.co/grants/) grant and also to the Filecoin Launchpad Accelerator. “My ultimate goal is to build a tool that’s open-source, that’s free and that lowers the barriers to entry. And I’m building using Filecoin and Ethereum.”
 
-### Team: Secured Finance
+## Team: Secured Finance
 
 - **PL Prize:** Winner of the DeFi track
 - **Team Members:** Bakhtiiar Muzakparov, Senshi Masa, Bach Adylbekov, and Denis Davydov
@@ -75,7 +75,7 @@ Over the month of HackFS, they built a protocol for scalable, flexible, decentra
 
 Building trust with users is critical to Secured Finance, since they’re dealing with institutional-scale financial transactions. They plan to keep testing and refining their collateral management protocol so that they can guarantee that counterparty risk and market risks are fully covered by their innovative automatic margin call system. By the end of this year, the team plans to create Filecoin and Ethereum loan, FX, and swap markets. “Secured Finance will be the first major player to bridge gaps between traditional finance and crypto ecosystem by creating yield curves where we can derive various solutions such as hedging currency risks with forward FX, attractive investment ideas with higher yield in Filecoin than fiat currencies,” Muzakparov said, adding that the team applied for the [Filecoin Launchpad Accelerator](https://tachyon.xyz/), and are exploring the Filecoin grants program to help create healthy markets. “HackFS was a great sprint to turn a seed idea into a solid prototype with extremely talented teammates.”
 
-### Upcoming programs for developers
+## Upcoming programs for developers
 
 HackFS teams and others looking to further their projects built for the Filecoin ecosystem can check out some of our other programs for developers:
 
