@@ -71,8 +71,8 @@ function SectionContentDescription({
       className={clsx(
         'text-2xl/8.5 text-pretty',
         descriptionColorBase
-          ? 'text-[var(--color-text-base)]'
-          : 'text-[var(--color-subheading-text-muted)]',
+          ? 'text-(--color-text-base]'
+          : 'text-(--color-subheading-text-muted)',
       )}
     >
       {item}
