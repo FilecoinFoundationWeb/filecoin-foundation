@@ -28,13 +28,11 @@ _template: blog_detail
 ## 0. Table of Contents
 
 1. Filecoin Development Update
-
    1. Demos of go-filecoin
    2. Codebase opening up
 
 2. Filecoin Research Update
 3. Filecoin Project Roadmap
-
    1. Optimistic Timeline
    2. Where are we
    3. Upcoming Milestones
@@ -271,9 +269,9 @@ We are making some changes to our blog and our updates. In our [last update](htt
 
 ## 8. Cautionary Notes
 
-### Miner Caution: We have noticed a number of companies making and selling "Filecoin Mining Machines" or "Filecoin Mining Hardware". Please note: we have not released official specifications for mining hardware yet, so these systems may turn out to be suboptimal or unnecessarily complex. Once we have a clear idea of optimal constructions for Network Launch, we will publish concrete specifications of system requirements, trade-offs to consider, and hardware recommendations. We recommend holding off on buying Filecoin-specific hardware until we publish those specifications
+Miner Caution: We have noticed a number of companies making and selling "Filecoin Mining Machines" or "Filecoin Mining Hardware". Please note: we have not released official specifications for mining hardware yet, so these systems may turn out to be suboptimal or unnecessarily complex. Once we have a clear idea of optimal constructions for Network Launch, we will publish concrete specifications of system requirements, trade-offs to consider, and hardware recommendations. We recommend holding off on buying Filecoin-specific hardware until we publish those specifications
 
-#### _What is holding back mining hardware specifications?_ We aim to have as broad compatibility and as minimal system requirements as we can. We want existing storage systems to be able to be near-optimal Filecoin miners with minimal modification (ideally zero). Recent improvements to core components like _Proof-of-Replication_ (which currently require SNARKs) have drastically reduced overheads and improved tradeoffs for such systems, and we may have more improvements like that in the short term
+_What is holding back mining hardware specifications?_ We aim to have as broad compatibility and as minimal system requirements as we can. We want existing storage systems to be able to be near-optimal Filecoin miners with minimal modification (ideally zero). Recent improvements to core components like _Proof-of-Replication_ (which currently require SNARKs) have drastically reduced overheads and improved tradeoffs for such systems, and we may have more improvements like that in the short term
 
 **Investor Caution**: During and after the Filecoin token sale we’ve heard reports of attempts to defraud investors from actors claiming to be selling Filecoin SAFTs or tokens. Similarly, we’ve seen unscrupulous exchanges claiming to list Filecoin and Filecoin derivatives. Remember that the Filecoin token will not be live until network launch, and all the transfer restrictions and other terms of the SAFT still apply. Therefore, any exchange or seller that lists or offers Filecoin, IPFS tokens or related derivatives is likely fraudulent. We will announce [in our official blog](https://filecoin.io/blog) when the Filecoin Network and token go live. Until then we **strongly** recommend staying away from any exchange or entity who claims to be buying, selling, or trading Filecoin tokens or derivatives.
 
