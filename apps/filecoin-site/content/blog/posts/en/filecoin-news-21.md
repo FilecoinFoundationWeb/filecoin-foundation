@@ -74,7 +74,7 @@ Recently, the Filecoin community hosted the [**Retrieval Market Builders Mini-Su
 
 <a href="https://filecoin-community.typeform.com/to/yTMkOLg8"><img src="/uploads/survey-icon.webp" style="width:20%;margin-left:0%"></a>
 
-## **Mining Energy Questionnaire**
+## Mining Energy Questionnaire
 
 Calling all Filecoin miners - we are still looking for community members to complete the [Filecoin Mining Energy Questionnaire](https://filecoin-community.typeform.com/to/yTMkOLg8). Help us improve ecosystem initiatives and community support by participating in this [short survey](https://filecoin-community.typeform.com/to/yTMkOLg8) - we’d be very grateful for your input. Thank you for your ongoing work to strengthen the community.
 

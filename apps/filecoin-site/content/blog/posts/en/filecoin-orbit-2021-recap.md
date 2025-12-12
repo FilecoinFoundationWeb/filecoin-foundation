@@ -122,7 +122,7 @@ Filecoin enthusiasts gathered virtually and in person in Chengdu, China for talk
 
 In Lagos Nigeria, [Chukwuemeka Enoch M.](https://twitter.com/Divine_Vessel) hosted a Filecoin Mainnet Anniversary celebration bringing together the West African Filecoin community.
 
-### **🇳🇬 Filecoin Orbit Event 2021, Warri NG**
+### 🇳🇬 Filecoin Orbit Event 2021, Warri NG
 
 In Warri Nigeria, the GDG Warri community collaborated with the Filecoin community to host a Filecoin Mainnet Anniversary on Saturday October 23, 2021. It was an onsite event with a record attendance of thirty people featuring an introduction to IPFS and Filecoin by the host [Charles Freeborn](https://twitter.com/charliecodes).
 

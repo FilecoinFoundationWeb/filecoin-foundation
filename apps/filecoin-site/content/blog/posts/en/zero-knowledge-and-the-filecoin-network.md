@@ -24,7 +24,7 @@ _template: blog_detail
 
 Recently, the Protocol Labs Research team published the [zk-SNARKs for the World site](https://research.protocol.ai/sites/snarks/). The site is a look at the work that has been done on implementing zero knowledge cryptography on the Filecoin network. The effort, which has been underway for three years, has resulted in Filecoin as the largest deployed zk-SNARK network to date, generating 6-7 million zk proofs per day. (Catching up with zero knowledge and Filecoin’s storage verification process? Check out the [‘Verifying Storage on Filecoin’ tutorial](https://proto.school/verifying-storage-on-filecoin) from Protoschool).
 
-## **The Value of zk-SNARKs to the Filecoin Network**
+## The Value of zk-SNARKs to the Filecoin Network
 
 In order for a storage provider on the Filecoin network to continue to provide service to clients (and earn block rewards in the process), they must regularly prove they are continuing to store the data on-chain they have promised to. Framing them in the relationship of a zero knowledge proof, these storage providers become the _provers._
 
@@ -38,7 +38,7 @@ For the _Filecoin network_, zk-SNARKs improve network-wide scalability and effic
 
 For _storage providers_, zk-SNARKs reduce the amount of data they need to transfer for them to prove their storage, reducing the costs associated with operating their services to the network.
 
-## **zk-SNARKs in Action**
+## zk-SNARKs in Action
 
 For storage to be verified on Filecoin, two proofs are involved: _Proof of Replication (PoRep)_ and _Proof of Spacetime (PoSt)._ In PoRep, a storage provider proves that they are storing a unique copy of a piece of data or information. PoRep happens just once, when the initial storage deal between client and provider happens and the data is first stored by the miner. Each PoRep that goes on-chain includes 10 individual SNARKs, which together prove that the process was done correctly through probabilistic challenges.
 
@@ -46,7 +46,7 @@ PoSt, on the other hand, serves to prove that the storage provider _continues_ t
 
 The result of an on-chain interaction in which the _prover_ and _verifier_ agree that data has been stored and maintained in an appropriate manner is a _proof._ As mentioned above, without a solution to make these proofs small and efficient, they would take up a tremendous amount of the network’s bandwidth and deliver high operational costs to both storage providers and miners. By using zk-SNARKs to generate the proofs, however, the resulting proofs are small and the verification process is extremely fast (and thus, cheap). For example, proofs that typically would require hundreds of kilobytes to verify can instead be compressed to just 192 bytes with zk-SNARKs. As mentioned above, each PoRep includes 10 SNARKs, meaning 1920 bytes in each (10\*192 bytes).
 
-## **The Past (and Future) of zk on Filecoin**
+## The Past (and Future) of zk on Filecoin
 
 The Filecoin network’s use of zk-SNARKs has been live on mainnet since the launch in October.
 

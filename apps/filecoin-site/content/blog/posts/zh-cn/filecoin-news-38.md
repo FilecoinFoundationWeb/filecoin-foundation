@@ -37,7 +37,7 @@ Filecoin社区很高兴宣布最新上线的Filecoin Green专属[网站](https:/
 
 <a href="https://hedera.com/users/hashaxis"><img src="/uploads/hashaxis.webp" style="width:40%;margin-left:0%"></a>
 
-## **Hedera介绍使用Filecoin来存储NFTs的HashAxis项目**
+## Hedera介绍使用Filecoin来存储NFTs的HashAxis项目
 
 [HashAxis](https://hashaxis.com)是一个在Hedera上搭建的新NFT市场。它提供了一个可扩展的、效价比高的方式，来铸造、管理和交易NFT. 它使用Hedera Token Service服务来在NFT里嵌入原生的原子性交换及版税功能，同时依靠Filecoin和IPFS作为其内容和元数据的去中心化存储层。在这个项目的[官方网站](https://hedera.com/users/hashaxis)上，可以了解这个新工具及其通过[Estuary](https://estuary.tech/)来利用这个网络的方式。
 

@@ -30,7 +30,7 @@ _template: blog_detail
 
 <img src="/uploads/aa9da583-59a2-44cc-a131-7913efbd460b.webp" style="width:18%;margin-left:0%">
 
-## **Filecoin Launchpad Accelerator**
+## Filecoin Launchpad Accelerator
 
 33 founders from 11 countries participated in an immersive twelve-week program bridging the IPFS, Filecoin and Ethereum communities. Learn more about the builders and their startups over on the Filecoin blog.
 

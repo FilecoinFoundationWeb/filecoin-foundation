@@ -109,7 +109,7 @@ _0xEssential offers users a platform to bring their own NFTs to play, compete, a
 
 {{< youtube id="R-wER0bQPRM" title="0xEssential" >}}
 
-### **Wh**What is 0xEssential
+### What is 0xEssential
 
 Web3 gamers today aren’t able to easily play between platforms. 0xEssential is building a platform where gamers’ NFTs can have functionality regardless of which platform they come from. 0xEssential is building a place where NFTs can offer an alternative revenue stream to their creators.
 

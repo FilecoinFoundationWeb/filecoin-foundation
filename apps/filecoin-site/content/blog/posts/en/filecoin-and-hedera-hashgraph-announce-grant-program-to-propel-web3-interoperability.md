@@ -57,7 +57,7 @@ Many new interactions, applications, and business models can emerge at the inter
 
 Filecoin and Hedera are awarding $200,000 in developer grants along two tracks:
 
-### **Decentralized Storage SDK for Hedera & Demo Application**
+### Decentralized Storage SDK for Hedera & Demo Application
 
 We want to make it easy for builders using Filecoin and Hedera Token Service (HTS) to integrate the two into their applications. This grant will be awarded for an SDK that seamlessly integrates existing Filecoin and Hedera toolchains. It should enable non-fungible tokenization and allow storage of larger files associated with Hedera Token Service tokens (such as digital art, music, JSON metadata, etc.) on the Filecoin network. Filecoin storage may be accessed via tooling or services such as [Estuary](https://estuary.tech/), [Fleek Space Daemon](https://github.com/FleekHQ/space-daemon), [NFT.storage](https://nft.storage/), or [Textile Powergate.](https://github.com/textileio/powergate/)
 
@@ -70,7 +70,7 @@ The accompanying demo application must use this SDK to build an open source end-
 
 **_Prize: $75,000_**
 
-### **Real-world Applications**
+### Real-world Applications
 
 These grants will be awarded to proposals for real-world applications that utilize both [Hedera Token Service (HTS)](http://hedera.com/token-service) and Filecoin decentralized storage. Developers can be as creative as they’d like — there are no strict requirements as to the type of application or use case, but it must utilize both Hedera HTS and Filecoin. Filecoin storage may be accessed via tooling or services such as [Estuary](https://estuary.tech/), [Fleek Space Daemon](https://github.com/FleekHQ/space-daemon), [NFT.storage](https://nft.storage/), or [Textile Powergate.](https://github.com/textileio/powergate/)
 

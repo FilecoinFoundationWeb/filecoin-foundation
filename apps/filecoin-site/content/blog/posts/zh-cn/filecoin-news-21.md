@@ -75,7 +75,7 @@ Filecoin基金会发起了Filecoin 存储提供者工作组(MWG)，这是一个�
 
 <a href="https://filecoin-community.typeform.com/to/yTMkOLg8"><img src="/uploads/survey-icon.webp" style="width:20%;margin-left:0%"></a>
 
-## **Mining 能源调查问卷**
+## Mining 能源调查问卷
 
 所有的Filecoin miners：我们还在寻找社区成员去完成这份 [Filecoin Mining能源调查问卷](https://filecoin-community.typeform.com/to/yTMkOLg8)。参与这项 [简短调查](https://filecoin-community.typeform.com/to/yTMkOLg8)能够帮我们提升生态系统活动和社区支持。我们会感激你的意见，感谢你对社区提升的持续努力。
 

@@ -28,7 +28,7 @@ Polygon最初是以安全的Layer 2解决方案问世，用于解决热门区块
 
 同样地，越来越多play-to-earn (P2E)和NFT空间的项目也选择使用IPFS进行[内容寻址](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/)和Filecoin进行[可证明和分布式存储](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/)来存储包含了类似视频等媒体的元数据。
 
-## **Filecoin持久性和Polygon可扩展性珠联璧合，为开发人员开拓新用例**
+## Filecoin持久性和Polygon可扩展性珠联璧合，为开发人员开拓新用例
 
 2021年8月，我们[宣布](https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/) Polygon将为希望建立在[Textile](https://www.textile.io/)团队开发的[Filecoin-Polygon bridge](https://eth.storage/docs ethereum——polygon-bridge-to-filecoin)上的项目提供免费存储费用。该桥梁使开发人员和Polygon应用程序用户能够轻松地从IPFS网络上的任何Polygon地址存储数据，而无需任何新注册、隐私或API密钥。
 
@@ -55,7 +55,7 @@ Filecoin和Polygon还联袂打造了[Mars黑客松](https://filecoin.io/blog/pos
 </div>
 </div>
 
-## **5,000美元奖励金，用于集成基于IPFS和Filecoin的优秀Polygon项目**
+## 5,000美元奖励金，用于集成基于IPFS和Filecoin的优秀Polygon项目
 
 Polygon生态中与IPFS和Filecoin（以及NFT.storage、Estuary、Web3.storage、Filecoin-Polygon Bridge等服务）集成的项目将有资格获得5000美元的奖励金。
 
@@ -63,7 +63,7 @@ Polygon生态中与IPFS和Filecoin（以及NFT.storage、Estuary、Web3.storage�
 
 获得奖励金的项目还将有机会加入未来的加速计划，并接触到来自两个生态中的技术、产品以及其他潜在支持资源。
 
-## **更多NFT黑客松，敬请期待**
+## 更多NFT黑客松，敬请期待
 
 敬请期待如下与本合作相关的NFT黑客松活动：
 

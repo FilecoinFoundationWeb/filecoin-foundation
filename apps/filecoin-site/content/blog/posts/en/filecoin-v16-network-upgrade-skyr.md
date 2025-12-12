@@ -31,7 +31,7 @@ This upgrade represents the most dramatic transformation of the Filecoin network
 
 The Skyr upgrade is the first of two steps on the path to fully enabling on-chain user programmability on Filecoin, bringing with it the possibility for a boundless number of new use cases and features to be implemented on the already robust network. This upgrade means that the core logic of the Filecoin network - implemented in the [built-in actors](https://github.com/filecoin-project/builtin-actors) - is now running atop the FVM M1 (milestone 1) code. And with the next step, users will be able to deploy custom logic to the network, making Filecoin both a storage _and_ computation layer.
 
-## **What’s in this upgrade?**
+## What’s in this upgrade?
 
 The Skyr upgrade delivered three FVM-related [Filecoin Improvement Proposals (FIPs)](https://github.com/filecoin-project/FIPs) to the network — FIP [0030](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0030.md), [0031](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0031.md), and [0032](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0032.md). These FIPs collectively bring us to the first milestone of [the FVM roadmap](https://fvm.filecoin.io/#roadmap-4). At the point of the upgrade, the network atomically switched to using the new WASM-based FVM for chain validation - the specification for which is found [here](https://github.com/filecoin-project/fvm-specs). Currently all clients have adopted the reference FVM implementation ([ref-fvm](https://github.com/filecoin-project/ref-fvm)), which uses [Wasmtime](https://wasmtime.dev/) as its Wasm runtime.
 
@@ -43,7 +43,7 @@ Another significant change resulting from the Skyr upgrade is a reworking of the
 
 In addition, the Skyr upgrade also hardened other aspects of the Filecoin protocol. These changes included a new, more secure, version of the [SnarkPack proof aggregation tool](https://research.protocol.ai/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/), [a migration away from non-UTF-8 strings in chain state](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0027.md), and [a fix to an off-by-one](https://github.com/filecoin-project/lotus/issues/2170) in Filecoin’s use of [Distributed Randomness](https://drand.love/). A complete list of changes may be found [here](https://status.filecoin.io/).
 
-## **Testing & Auditing**
+## Testing & Auditing
 
 Given the scope of changes in this upgrade, it was necessary to subject it to an extensive testing process. The FVM itself was tested by making it fully backwards-compatible with network versions 14 and 15. This allowed users to run experimental FVM-based canary nodes and report any observed issues. Various kinks were identified and ironed out through this process —so a big thank you to everyone who participated and contributed! [Test vectors](https://github.com/filecoin-project/test-vectors) were also extracted from Filecoin mainnet itself, and used to validate the correctness of the FVM.
 
@@ -55,7 +55,7 @@ In addition to the testing efforts described above, the code itself was subject 
 
 A more formal seven-week audit was conducted by independent contractor [Alex Wade](https://twitter.com/wadeAlexC). This audit covered the entire scope of the FVM M1, and the [audit dashboard can be found here](https://hackmd.io/Z-1BA6MXR3qBluxixvupBw). Potential security risks and minor issues were unearthed (and able to be resolved) thanks to this audit, giving an overall high confidence in the correctness of the changes.
 
-## **What’s next?**
+## What’s next?
 
 The FVM core team is now fully focused and committed to working on Milestone 2.1 of the FVM: FEVM - which brings EVM smart contract deployments to the Filecoin network. This much anticipated milestone is possible thanks to the hypervisor-inspired, polyglot design of the FVM.
 
@@ -67,6 +67,6 @@ Filecoin Virtual Machine native development will also continue in parallel, with
 
 The next phase of the FVM will also be supported by a dedicated FVM Testnet. Called Wallaby, this testnet will be run by dedicated storage providers and enable test transactions and market deals, smoothing the development path on FVM.
 
-## **Acknowledgements**
+## Acknowledgements
 
 As is evident from this post, a lot of teams worked tirelessly to design, build, audit, test, and deploy the Skyr network upgrade. These include development and testing efforts from teams at [ChainSafe](https://chainsafe.io/), [IPFS Force](https://twitter.com/force_ipfs), [Polyphene](https://polyphene.io/), and [Protocol Labs EngRes](https://www.notion.so/pl-strflt/PL-EngRes-Public-b5086aea86ed4f81bc7d0721c6935e1e); user (large scale) testing from the [SPX group](https://github.com/filecoin-project/lotus/discussions?discussions_q=label%3ASPX), the 1475 development team, and [StorSwift](https://storswift.com/) (among others); everyone that participated in the bug bounties hosted on [Immunefi](https://immunefi.com/) and [Gitcoin](https://gitcoin.co/); [Alex Wade’s](https://twitter.com/wadeAlexC) auditing efforts; key ecosystem tooling and stakeholder support from [Zondax](https://zondax.ch/); and the tireless coordination & planning work of the [Filecoin Foundation](https://fil.org/);. Thanks to all of these individuals and teams, and to the countless passionate members of the community who were part of this milestone in multiple other ways. We hope you’re as excited to unlock full user programmability on Filecoin as we are and will continue on this journey with us!

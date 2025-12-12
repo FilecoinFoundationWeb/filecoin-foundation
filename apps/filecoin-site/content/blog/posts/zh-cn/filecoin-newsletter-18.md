@@ -102,7 +102,7 @@ Chainlink的去中心化预言机网络(DONs)及Filecoin的去中心化存储协
 
 <a href="https://www.youtube.com/watch?v=QC90YKBSCt4&list=PLGi5rSYpKqxYUuhE1-fVAUD05KGBLWz"><img src="/uploads/curio-symbol.webp" style="width:20%;margin-left:0%"></a>
 
-## **Curio融资700万美元以支持增长**
+## Curio融资700万美元以支持增长
 
 [**Curio**](https://c212.net/c/link/?t=0&l=en&o=3162398-1&h=1059209547&u=https%3A%2F%2Foncurio.com%2F&a=Curio)是娱乐产业的首选NFT（非同质代币）平台。它已从Longhash的Filecoin Frontier 加速营中毕业。Curio宣布其从全球顶级的投资者手中筹集了700万美元资金。该公司已发起了多次持牌的拍卖、限时在线销售、产品和新的合作伙伴关系。我们为Curio及其他正产生巨大吸引力的加速营团队感到兴奋。要了解更多关于Curio的内容，[**请观看其在演示日上的展示。**](https://www.youtube.com/watch?v=QC90YKBSCt4&list=PLGi5rSYpKqxYUuhE1-fVAUD05KGBLWz-4&index=3)
 
