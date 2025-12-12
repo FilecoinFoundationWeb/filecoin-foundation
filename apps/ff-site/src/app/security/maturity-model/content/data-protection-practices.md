@@ -3,9 +3,9 @@ title: Data Protection Practices
 order: 6
 ---
 
-## 1. Data Privacy Compliance
+#### 1. Data Privacy Compliance
 
-### 1.1 Compliance with Privacy Laws
+##### 1.1 Compliance with Privacy Laws
 
 - There is an understanding of privacy laws required by the organization or project
 - There is a need to adhere to specific privacy laws within a region or customer base
@@ -13,7 +13,7 @@ order: 6
 - Level 2: Are compliance processes more comprehensive, covering a wider range of laws and regulations, and regularly reviewed?
 - Level 3: Is there an advanced, proactive system for privacy compliance, including regular audits and updates to address new regulations and global standards?
 
-#### 1.2 Data Minimization and Retention
+##### 1.2 Data Minimization and Retention
 
 - There is a need to handle or control data in a structured way
 - There is a capability to apply retention policies against data

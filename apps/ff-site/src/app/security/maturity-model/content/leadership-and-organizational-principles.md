@@ -3,16 +3,16 @@ title: Leadership and Organizational Principles
 order: 1
 ---
 
-## 1. Vision and Security Culture
+#### 1. Vision and Security Culture
 
-### 1.1 Culture Building
+##### 1.1 Culture Building
 
 - A team or individual is available to drive the security program
 - Level 1: Is there an initial awareness and understanding of security culture within the organization?
 - Level 2: Are structured programs in place for promoting and reinforcing a strong security culture?
 - Level 3: Is there a pervasive, deeply ingrained security culture, actively supported and enhanced by all team members?
 
-#### 1.2 Vision Communication
+##### 1.2 Vision Communication
 
 - A formal reference for security vision or mission statement exists for the organization/project
 - Organizational or project goals are clearly defined

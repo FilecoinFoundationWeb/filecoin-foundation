@@ -3,9 +3,9 @@ title: Identity and Access Management
 order: 4
 ---
 
-## 1. Access Control Mechanisms
+#### 1. Access Control Mechanisms
 
-### 1.1 User Authentication and Authorization
+##### 1.1 User Authentication and Authorization
 
 - You have a method of tracking users or identities within your org or project by alias or identity
 - You have a method of integrating authentication mechanisms into your technical and business or project workflows
@@ -13,7 +13,7 @@ order: 4
 - Level 2: Are there more advanced, multi-factor authentication systems in place, catering to the decentralized and pseudonymous nature of users, while ensuring secure access control?
 - Level 3: Is there a sophisticated, dynamic authentication and authorization system that adapts to user roles and contexts, integrating decentralized identity solutions where applicable?
 
-#### 1.2 Privilege Management
+##### 1.2 Privilege Management
 
 - You have identified roles for each person in the project or org
 - There is some separation of roles / permissions for identities

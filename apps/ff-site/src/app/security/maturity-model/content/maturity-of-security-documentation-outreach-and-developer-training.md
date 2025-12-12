@@ -3,9 +3,9 @@ title: Maturity of Security Documentation, Outreach, and Developer Training
 order: 8
 ---
 
-## 1. Documentation Standards and Accessibility
+#### 1. Documentation Standards and Accessibility
 
-### 1.1 Development of Documentation
+##### 1.1 Development of Documentation
 
 - You have created some type of documentation around your development process
 - You have a development process that can be described as structured
@@ -13,7 +13,7 @@ order: 8
 - Level 2: Are documentation practices more comprehensive and detailed, covering a wide range of security topics relevant to the organization?
 - Level 3: Is there a sophisticated, dynamic documentation system, regularly updated with the latest security information and best practices?
 
-#### 1.2 Accessibility and Clarity
+##### 1.2 Accessibility and Clarity
 
 - Your documentation is available in an accessible location to your developers or stakeholders
 - Level 1: Is the security documentation easily accessible to relevant stakeholders, and written in a clear, understandable manner?

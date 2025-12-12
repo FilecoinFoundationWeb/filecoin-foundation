@@ -3,9 +3,9 @@ title: Asset Management
 order: 5
 ---
 
-## 1. Digital Asset Identification
+#### 1. Digital Asset Identification
 
-### 1.1 Asset Cataloging
+##### 1.1 Asset Cataloging
 
 - There is a basic understanding of business assets
 - There is some mechanism of tracking at least one of these business assets
@@ -13,7 +13,7 @@ order: 5
 - Level 2: Are cataloging processes more refined, with comprehensive documentation of digital assets, including those in decentralized environments?
 - Level 3: Is there an advanced, automated system for asset cataloging, continuously updated and integrated with other asset management systems?
 
-#### 1.2 Asset Classification
+##### 1.2 Asset Classification
 
 - Assets can be divided by intent, responsibility, and purpose
 - Level 1: Are digital assets classified into basic categories based on their type or purpose?

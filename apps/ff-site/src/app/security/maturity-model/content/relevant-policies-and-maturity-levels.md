@@ -3,16 +3,16 @@ title: Relevant Policies and Maturity Levels
 order: 2
 ---
 
-## 1. Decentralization Governance
+#### 1. Decentralization Governance
 
-### 1.1 Culture Building
+##### 1.1 Culture Building
 
 - You’ve adopted a set of standards that are aligned with organizational or project goals
 - Level 1: Are there initial policies established to govern decentralization aspects of the project?
 - Level 2: Are these policies regularly reviewed and enforced with clear mechanisms and accountability?
 - Level 3: Is there a comprehensive, dynamic approach to policy creation and enforcement, regularly updated to reflect evolving decentralization challenges?
 
-#### 1.2 Community Involvement
+##### 1.2 Community Involvement
 
 - You have initiated relationships or communication with the greater ecosystem or community
 - Level 1: Is there basic involvement of the community in the governance process?
