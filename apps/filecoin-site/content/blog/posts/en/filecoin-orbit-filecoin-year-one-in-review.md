@@ -222,7 +222,7 @@ Currently, the dataset is being successfully onboarded to the network. The proje
 
 ![](/uploads/starling.webp)
 
-<h5 style="font-size: 18px; line-height: 24px; margin-top: 21px; margin-bottom: 0px;">Starling</h5>
+<h3 style="font-size: 18px; line-height: 24px; margin-top: 21px; margin-bottom: 0px;">Starling</h3>
 
 In June 2021, Starling Lab, a collaboration between Shoah Foundation, the largest genocide archive in the world, and Stanford University [was announced](https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/). Starling Lab is dedicated to using decentralized tools to advance human rights.
 
