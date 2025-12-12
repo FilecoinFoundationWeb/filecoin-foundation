@@ -31,7 +31,7 @@ _template: blog_detail
 
 Today is a big day for the Filecoin project. Six months ago, we launched the first phase of the [Filecoin testnet](https://filecoin.io/blog/filecoin-testnet-is-live/). Since then, we have been bug fixing, conducting protocol reviews, making critical protocol and product improvements, performing optimizations, and working towards running networks with multiple interoperable nodes. Now, we are ready to launch Testnet Phase 2!
 
-### What’s in this release?
+## What’s in this release
 
 Testnet Phase 2 is the last major milestone before mainnet launch. Here’s a look at what it offers. The Testnet Phase 2 release includes:
 
@@ -59,7 +59,7 @@ The Testnet Phase 2 release includes implementations that are nearly feature-com
 
 If you’re a developer who is interested in building on the Filecoin network, we’d love to hear from you! Please reach out to us at [filecoin-collab@protocol.ai](mailto:filecoin-collab@protocol.ai).
 
-### Have Questions?
+### Have Questions
 
 **Join us for our Testnet Phase 2 AMA with Juan Benet.** Join us **Monday, May 18, at 7 PM PST**, for a live Q&A with Juan Benet, founder of the Filecoin Project. For one hour, Juan and several Filecoin developers will be online to answer any questions you might have about Testnet Phase 2 and our path to mainnet.
 

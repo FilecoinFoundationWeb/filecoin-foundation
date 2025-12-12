@@ -25,7 +25,7 @@ title: Filecoin News 48
 
 <a href="https://filecoin.io/blog/posts/snarkpack-v2-a-new-version-of-filecoin-s-proof-aggregator/"><img src="/uploads/181394788-a04113a5-3d11-4588-8cd2-43a3c46e9047-1.webp" style="width:40%;margin-left:0%"></a>
 
-### SnarkPack v2: A New Version of Filecoin’s Proof Aggregator
+## SnarkPack v2: A New Version of Filecoin’s Proof Aggregator
 
 In the recent [Filecoin Network Upgrade](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/), a new version of the SnarkPack proof aggregation library was released. SnarkPack is a cryptographic protocol to aggregate and verify multiple proofs at the same time in an efficient manner. The Filecoin protocol uses the SnarkPack library on the [Proofs-of-Replication](https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/) that makes those promises possible on the Filecoin network. [Learn more](https://filecoin.io/blog/posts/snarkpack-v2-a-new-version-of-filecoin-s-proof-aggregator/) about the improvements in the v2 implementation.
 
@@ -75,7 +75,7 @@ Hola! Spanish-speaking builders should check out the new Filecoin doc translatio
 
 <a href="https://filecoin.io/blog/posts/how-does-the-network-indexer-work/"><img src="/uploads/indexer.webp" style="width:40%;margin-left:0%"></a>
 
-### How Does the Network Indexer Work?
+### How Does the Network Indexer Work
 
 Filecoin stores a great deal of data, but without proper indexing, clients can’t perform efficient retrieval. Earlier this year, Protocol Labs launched the first production Network Indexer to enable searching for content-addressable data available from storage providers. To improve Filecoin content discoverability, Indexer nodes are developed to store mappings of CID multi-hashes to content provider records. Found out how it works on the [Filecoin blog](https://filecoin.io/blog/posts/how-does-the-network-indexer-work/).
 

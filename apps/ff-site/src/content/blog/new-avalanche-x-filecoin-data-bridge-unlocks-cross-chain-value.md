@@ -45,7 +45,7 @@ This collaboration underscores these pioneering ecosystems’ commitment to buil
 
 To see the project in action, [check out](https://github.com/FIL-Builders/dataBridgeDemo) the demo and Github library.
 
-### About Filecoin
+## About Filecoin
 
 Filecoin is a peer-to-peer network to store files, with built-in economic incentives to ensure files are stored reliably over time. It’s designed to create a decentralized, efficient, and robust foundation for humanity’s information.
 

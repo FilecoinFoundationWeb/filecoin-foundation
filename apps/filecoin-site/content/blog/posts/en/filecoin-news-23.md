@@ -30,7 +30,7 @@ title: "Filecoin News 23: Hedera, Filecoin Base Camp, Juan at EthCC, and More"
 
 <a href="https://filecoin.io/blog/posts/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/"><img src="/uploads/fil-news-hedera.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin and Hedera Hashgraph Announce Grant Program to Propel Web3 Interoperability
+## Filecoin and Hedera Hashgraph Announce Grant Program to Propel Web3 Interoperability
 
 Today, Filecoin and [**Hedera Hashgraph**](https://hedera.com/) are announcing a joint effort to advance the interoperability of Web3. Starting with a USD $200,000 grants program and an initial demo implementation for NFT use cases, the long-term vision is a full range of distributed ledger solutions, including distributed consensus, storage, and smart data applications, that combine the strengths of both networks.
 

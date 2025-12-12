@@ -25,7 +25,7 @@ title: Filecoin News 47
 
 <a href="https://www.eventbrite.com/e/sustainable-blockchain-summit-tickets-336114797407?discount=SBSNEWS"><img src="/uploads/sustainable-blockchain.webp" style="width:40%;margin-left:0%"></a>
 
-### Sustainable Blockchain Summit ‘22 - exclusive discount code just for Filecoin News subscribers
+## Sustainable Blockchain Summit ‘22 - exclusive discount code just for Filecoin News subscribers
 
 The [Sustainable Blockchain Summit](http://sbs.tech) is coming to Paris **_this week_** on the heels of EthCC on July 22-23rd. Join [Filecoin Green](https://green.filecoin.io), Solana, Gitcoin, Cambridge Centre for Alternative Finance and more for a summit dedicated to bringing blockchain into a more sustainable alignment with the natural world. The event includes two full days of talks, workshops, and deep dives featuring the top thought leaders in sustainability and web3. Join 350+ attendees from across the world ranging from enterprise software companies to startups, policymakers, NGOs and open source contributors; all interested in developing and building greener blockchain solutions. Please visit the event website for the full schedule and [reserve your spot now](http://www.eventbrite.com/e/336114797407/?discount=SBSNEWS), plus use the exclusive discount code ‘SBSNEWS’ for 40% off your purchase.
 

@@ -28,7 +28,7 @@ The first to launch were [block explorer projects](https://filecoin.io/blog/post
 
 Following the cohort’s graduation, 20+ teams have been accepted into accelerator programs, with FVM-focused cohorts run by [GraphPaperCapital](https://www.graphpapercapital.xyz/), [LongHash](https://www.longhash.vc/), [Outlier Ventures](https://outlierventures.io/). To learn more about each of these projects, check out the list below. 
 
-### [Creds Protocol](https://creds-protocol-documentation.vercel.app/) - Enabling zero-knowledge identity solutions on-chain
+## [Creds Protocol](https://creds-protocol-documentation.vercel.app/) - Enabling zero-knowledge identity solutions on-chain
 
 Creds Protocol is a decentralized identity and verification protocol that leverages zero-knowledge proofs to provide a privacy-preserving solution. The protocol allows users to prove their identity and other attributes without revealing any sensitive information to third parties. Creds Protocol can create verifiable credentials (cred) that represent the right to access content via FVM, which can be used for pay-per-view use cases and more. Based on Creds Prototcol, Creds badge is a non-transferable token (SBT) that represents a verifiable claim. 
 

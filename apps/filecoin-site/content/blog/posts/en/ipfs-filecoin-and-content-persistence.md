@@ -32,7 +32,7 @@ This isn’t how it should be. Content on the public Web should be available to 
 
 The solution is a decentralized storage stack that addresses the issues of addressing and persistence to enable a more complete and resilient internet experience for all users. Together, IPFS and Filecoin provide these assurances for the Web and its users.
 
-### IPFS for Content Addressing
+## IPFS for Content Addressing
 
 Broadly speaking, today’s web browsing operates through what is known as _location addressing._ Location addressing retrieves online information from specific locations on the web ─ i.e. from behind URLs. However, this has its obvious downsides. Location addressing is centralized; whoever controls that location controls the content. And anything behind a location-addressed URL can be changed. The language of an article, the colors of a digital artwork, or the properties of a recorded identity. Location-addressed URLs are exploitable.
 

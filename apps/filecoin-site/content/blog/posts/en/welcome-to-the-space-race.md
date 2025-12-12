@@ -28,7 +28,7 @@ Now, it’s time to start your engines. 🚀 Lotus is in code-freeze for the com
 
 Let the countdown begin! ⏱
 
-### The Competition
+## The Competition
 
 Space Race is a collaborative competition intended to stress-test the network, encourage participation all over the world, and help miners get ready to run the world’s biggest decentralized storage network. In this 3-week competition, miners are competing to onboard as much storage capacity as possible to the network. The top 100 miners globally, as well as the top 50 miners from each continent, will earn Filecoin rewards based on how much storage they and the network achieve during the competition period.
 
@@ -61,7 +61,7 @@ We’ve evolved our faucet logic significantly during the calibration period to 
 - To receive testnet FIL from the faucet, miners must authenticate with a GitHub account **over 48 hours old**.
 - Miners can receive a one-time grant of 100 testnet FIL to any address.
 - Once a participant has an active miner actor, they can return to the faucet for additional requests of testnet FIL **once per 24 hours**. The first of these requests will return 1,000 testnet FIL, and subsequent requests will return 200 testnet FIL. To receive these top-ups, enter your miner ID into the faucet and funds will be sent to the worker address.
-  - This is separate from the one-time grant - so miners can request both the one-time grant and miner actor grant within the first 24 hours.
+- This is separate from the one-time grant - so miners can request both the one-time grant and miner actor grant within the first 24 hours.
 - In addition, for miners able to seal data at high-velocity, we have a faucet bot that will **send reimbursements for initial pledge** to miner addresses in real time - allowing speedy miners to continue sealing quickly. (Note that this mechanism will only exist for the Space Race, not mainnet.)
 
 Filecoin is a community-built network, and a healthy economy is built through collaboration, not abuse. This is a good first exercise in collaboration ahead of Mainnet launch. 🤝
@@ -81,9 +81,9 @@ Please join us for the **Space Race Opening Ceremony** on Wednesday, August 26th
 The Space Race will also feature a number of events for participants:
 
 - **Weekly workshops** on Tuesdays at 6PM (PST) | Wednesdays at 9AM (CST) | 1am (UTC)
-  - 8 / 25: Filecoin Mining Workshop #1 - How to troubleshoot common issues
-  - 9 / 01: Filecoin Mining Workshop #2 - Improvements and new features
-  - 9 / 08: Filecoin Mining Workshop #3 - Getting ready for Mainnet
+- 8 / 25: Filecoin Mining Workshop #1 - How to troubleshoot common issues
+- 9 / 01: Filecoin Mining Workshop #2 - Improvements and new features
+- 9 / 08: Filecoin Mining Workshop #3 - Getting ready for Mainnet
 - **Live AMAs with the Filecoin team** on Wednesdays at 6PM (PST) | Thursdays at 9AM (CST) | 1am (UTC)
 - **Miner Show and Tell** on Thursdays at 6PM (PST) | Thursdays at 9am (CST) | 1am (UTC)
 - **Space Race Report** on Fridays at 5pm (PST) | Saturdays at 8am (CST) | 12am (UTC)

@@ -33,20 +33,27 @@ Filecoin虚拟机（FVM）正通过几个里程碑的阶段加入到Filecoin的�
 
 除了通过这个项目激励漏洞赏金猎手外，首次通过的内部审计方案已由Filecoin贡献团队的成员执行，我们还启动了由外部安全专家进行的审计。其他几个强化方案也在进行中。
 
-### **FVM M1漏洞赏金的范围**
+## **FVM M1漏洞赏金的范围**
 
 1. [FVM参考架构](https://github.com/filecoin-project/ref-fvm) (ref-fvm)
+
    - Filecoin VM的参考实施方案 ([规格](https://github.com/filecoin-project/fvm-project)).
    - 它以Rust语言书写，旨在通过FFI整合到非Rust客户端，或直接整合到Rust客户端。
+
 2. [Lotus - FVM参考架构整合](https://github.com/filecoin-project/lotus/pull/8293)
+
    - 通过FFI将FVM参考架构整合到Lotus客户端。
    - 以Go语言书写。
    - (这个Pull Request链接只是访问代码基础的入口，但范围并不局限于此。请查看在master分支及其他分支下的Pull Request）
+
 3. [Lotus - Filecoin FFI](https://github.com/filecoin-project/filecoin-ffi/pull/217)
+
    - FFI胶水代码。
    - 以Go和Rust语言书写。
    - （如上，该Pull Request链接只是入口，但相关范围并不局限于此）
+
 4. [内建Actors](https://github.com/filecoin-project/canonical-actors)
+
    - 以Rust语言书写并用Wasm编译的内建actors正被所有Filecoin客户端使用。
    - 可以参考为actors写的[actors规格](https://spec.filecoin.io/systems/filecoin_vm/actor/) 和[测试向量](https://github.com/filecoin-project/specs-actors/tree/master/test-vectors) 。
    - 一个以Go语言书写的可执行规格可在[filecoin-project/specs-actors](https://github.com/filecoin-project/specs-actors)找到，它们它们在FVM时代之前支撑了Filecoin网络。

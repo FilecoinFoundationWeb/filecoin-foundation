@@ -23,13 +23,13 @@ title: "Filecoin Launchpad Accelerator II: NFTs"
 
 On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the NFTs projects that emerged from the accelerator and presented during Demo Day. The entire Demo Day is available [here](https://www.youtube.com/watch?v=UWuaSP6YuJ4).
 
-### Nftfy
+## Nftfy
 
 _Nftfy offers fractional ownership for the most valuable NFTs in the world._
 
 {{< youtube id="PbMJka8jK4Q" title="Nftfy" >}}
 
-#### **What is Nftfy?**
+### **What is Nftfy?**
 
 Nftfy offers "shares" in valuable NFT's, allowing smaller stakeholders to have partial ownership of a lucrativeNFT that might be too expensive for any of them to own outright.
 

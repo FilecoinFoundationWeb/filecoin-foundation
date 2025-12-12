@@ -30,7 +30,7 @@ The Filecoin network has made phenomenal progress over the last few months:
 
 ![325 PiB on Stats Dashboard](https://filecoin.io/vintage/images/blog/ignition-stats-dashboard.jpg)
 
-### Transition to Mainnet Ignition
+## Transition to Mainnet Ignition
 
 Today, we’re excited to share an update on [Filecoin’s launch phases and schedule](https://app.instagantt.com/shared/s/1152992274307505/latest) as we enter our Mainnet Ignition phase and get ready for Filecoin Mainnet Liftoff. Launching a blockchain is an involved and lengthy process. Like many other networks (including [Polkadot](https://polkadot.network/launch-roadmap/), [NEAR](https://near.org/blog/mainnet-roadmap/), and others), Filecoin is taking a phased approach to launching mainnet, with different groups and communities onboarding onto the network over a period of time, leading up to Mainnet Liftoff.
 

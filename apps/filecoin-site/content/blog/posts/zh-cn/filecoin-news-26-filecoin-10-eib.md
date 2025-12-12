@@ -31,7 +31,7 @@ _template: blog_detail_ch
 
 <img src="/uploads/10eib-graphic.webp" style="width:40%;margin-left:0%">
 
-### Filecoin Network网络存储容量超过10 EiB
+## Filecoin Network网络存储容量超过10 EiB
 
 在主网发布后的11个月，Filecoin网络正迎来一个重大里程碑。截至上周，全球的Filecoin存储提供者总共往Filecoin网络投入了超过10 EiB的去中心化存储容量。 10EiB相当于190倍的互联网存档内容，45,000个维基百科网站，以及相当于6,850,000年的视频会议记录。这是Filecoin社区的重大成果。
 

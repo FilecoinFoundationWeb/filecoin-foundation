@@ -24,9 +24,9 @@ _template: blog_detail
 
 **Welcome to the twelfth issue of Filecoin News! If you’d like to chat with us about anything you see here, please visit the** [**Filecoin Slack**](http://filecoin.io/slack)**.**
 
-### **BUILD**
+## **BUILD**
 
-#### **⚡️ Fenbushi Ecosystem Fund**
+### **⚡️ Fenbushi Ecosystem Fund**
 
 In collaboration with Protocol Labs, Fenbushi Capital has announced a $15+ million USD investment fund. The mission of the fund is to drive the growth of the IPFS and Filecoin ecosystems. Fenbushi is planning to raise $15-20 million USD and has committed to raising and deploying all capital in FIL rather than in stablecoins or other crypto assets. Fenbushi has committed $1 million USD to the fund alongside other limited partners. Fenbushi anticipates three primary sources for locating target investment deals; the Slingshot Program, LongHash Filecoin Frontier Accelerator, and the Chinese community. For more information on the fund, please see this [post](https://filecoin.io/blog/posts/the-fenbushi-ecosystem-fund-for-filecoin-development/).
 

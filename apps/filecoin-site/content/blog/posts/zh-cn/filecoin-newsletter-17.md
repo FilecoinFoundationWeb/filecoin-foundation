@@ -31,7 +31,7 @@ _template: blog_detail_ch
 
 <a href="https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii"><img src="/uploads/accelerator-rocket-purple.webp" style="width:18%;margin-left:0%"></a>
 
-### Filecoin Launchpad 第二期加速营– 5月9日前申请
+## Filecoin Launchpad 第二期加速营– 5月9日前申请
 
 Tachyon的Filecoin Launchpad Accelerator是一个全天候、全远程的运营项目，旨在帮助初创企业为分布式和去中心化的网络建立更开放、可互操作和可编程的工具、基础设施和应用程序。通过该计划，Tachyon支持在[**IPFS**](https://ipfs.tech/)、[**Filecoin**](https://filecoin.io/)和 [**Ethereum**](https://ethereum.org/)社区的基础上，用工具、中间件和应用程序建立和连接的项目。下一批项目将于2021年6月至8月开展，为来自全球的20个团队提供资金、指导、福利以及围绕商业和区块链具体问题的编程，最终将在9月份启动演示日和项目后筹款支持。申请现已开放，并在美国东部时间5月9日午夜截止。[**马上申请**](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii)！
 

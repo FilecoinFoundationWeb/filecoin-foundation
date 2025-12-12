@@ -25,7 +25,7 @@ title: Filecoin News 50
 
 <a href="https://filecoin.io/blog/posts/zondax-brings-filecoin-to-ledger-live/"><img src="/uploads/fil-blog-2022-08-24.webp" style="width:35%;margin-left:0%"></a>
 
-### Zondax Brings Filecoin to Ledger Live
+## Zondax Brings Filecoin to Ledger Live
 
 Filecoin is now available on [Ledger Live](https://www.ledger.com/ledger-live). Clients, Storage Providers, and other network participants can send and receive FIL directly from Ledger devices while their private keys remain secure and are never exposed to third parties. This new feature has been implemented thanks to a close collaboration between Protocol Labs and [Zondax](https://zondax.ch/), a software development team that has built over 45 solutions for the Ledger hardware wallet. [Learn more](https://filecoin.io/blog/posts/zondax-brings-filecoin-to-ledger-live/) about keeping FIL in cold storage.
 

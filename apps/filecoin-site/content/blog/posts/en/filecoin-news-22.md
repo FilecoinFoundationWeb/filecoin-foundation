@@ -28,7 +28,7 @@ title: "Filecoin News 22: Techstars Accelerator, Filecoin Base Camp, HackFS, and
 
 <a href="https://www.techstars.com/newsroom/techstars-collaborates-with-filecoin-to-launch-accelerator-program"><img src="/uploads/techstars.webp" style="width:40%;margin-left:0%"></a>
 
-### Announcing the Filecoin Techstars Accelerator
+## Announcing the Filecoin Techstars Accelerator
 
 In collaboration with [**Techstars**](http://www.techstars.com/), we are excited to announce the [**Filecoin Techstars Accelerator**](https://www.techstars.com/newsroom/techstars-collaborates-with-filecoin-to-launch-accelerator-program). The program targets founders and devs from both Web2 and Web3 as they build decentralized applications for data curation, digital asset management, infrastructure and tools, DeFi, data storage, caching, and archival services. The Accelerator will accept applications from mid-September through the end of November 2021. Ten selected startups will participate in a hybrid virtual/in-person accelerator program from March through June 2022. Over the course of three months, founders will receive funding, benefit from curated workshops and educational sessions, and gain access to Techstars’ renowned network of investors, founders, and mentors. [**Learn more about the Accelerator**](https://www.techstars.com/newsroom/techstars-collaborates-with-filecoin-to-launch-accelerator-program).
 
@@ -118,7 +118,7 @@ We’re also chipping away at Storage/Retrieval Markets, State Migration, implem
 
 Are you curious about the existing applications, clients, protocol implementations, capitals, accelerators, etc in the Filecoin ecosystem? If yes, check out the new [**Filecoin Ecosystem Grid**](https://github.com/filecoin-project/community/discussions/194#discussioncomment-995694) to find all collaborators! If you know of any other projects and parties building in the Filecoin ecosystem that are not included in the grid yet, leave a comment in the [**Filecoin Ecosystem Collective**](https://github.com/filecoin-project/community/discussions/195).
 
-### Looking to attend events hosted by the Filecoin community?
+### Looking to attend events hosted by the Filecoin community
 
 To keep track of events (meetups, hackathons, etc.) hosted by the Filecoin community and/or Protocol Labs, add this [**Google Calendar**](https://calendar.google.com/calendar/b/6?cid=ZmlsZWNvaW4ub3JnX2o3bW1ldjI0ZzgwcmVsbzU2cHFtMWVsMWUwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) to your calendar.
 

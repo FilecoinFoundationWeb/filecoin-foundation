@@ -18,13 +18,13 @@ dim_image: true
 
 In the rapidly evolving landscape of decentralized storage, [DeStor](https://destor.com/) is introducing groundbreaking advancements and new partnerships that strengthen its commitment to delivering robust, decentralized cloud solutions. Built on the Filecoin Network, [DeStor’s S3 Cloud platform](https://destor.com/products/s3-cloud) combines the reliability and scalability of Filecoin with a user-friendly, S3-compatible interface. As DeStor continues to enhance this platform, it is welcoming notable partners that align with the vision of transforming data storage.
 
-#### DeStor S3 Cloud Solutions: Featuring DCENT
+## DeStor S3 Cloud Solutions: Featuring DCENT
 
 At the heart of this expansion lies the launch of DeStor’s S3 Cloud Solutions, a significant step forward in providing secure, scalable, and decentralized cloud storage. Leveraging the Filecoin Network, this S3-compatible solution ensures seamless integration with existing workflows, offering the familiarity of traditional cloud interfaces combined with the unparalleled security and efficiency that decentralized technology on Filecoin provides.
 
 This launch features a [strategic collaboration with DCENT](https://destor.com/resources/blog/destor-launches-s3-cloud-solutions-in-partnership-with-dcent), a leader in decentralized technologies. The integration with [DCENT](https://dcent.nl/) ensures that DeStor’s S3 Cloud Solution, powered by Filecoin, is not only robust and reliable but also aligned with the highest standards of data sovereignty and security. Together, these advancements are setting new benchmarks in the decentralized cloud storage industry, enabling businesses to manage and secure their data like never before.
 
-#### Welcoming Future Tech Holdings to the DeStor S3 Cloud Family
+### Welcoming Future Tech Holdings to the DeStor S3 Cloud Family
 
 Destor’s commitment to fostering a diverse and innovative ecosystem is reflected in its [partnership with Future Tech Holdings](https://destor.com/resources/blog/welcoming-future-tech-holdings-to-the-destor-s3-cloud-family). As a forward-thinking company dedicated to pioneering technological advancements, [Future Tech Holdings](https://destor.com/destor-directory-future-tech-holdings) recognizes the transformative potential of decentralized storage on the Filecoin Network.
 

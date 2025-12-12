@@ -26,7 +26,7 @@ Boost has recently released a feature which enables storage providers to serve H
 
 We have performed load testing on booster-http and are sharing out results in hopes that these findings can help storage providers better understand how HTTP retrievals with Boost might work on their own setup. Anyone can download our [load testing tools](https://github.com/filecoin-project/retrieval-load-testing) and run their own load testing.
 
-### Environment
+## Environment
 
 For this HTTP load testing effort, we tested on filcollins, which is our team’s production grade petabyte scale storage provider. Below you will find the hardware details for filcollins, which includes 4 instances - 2 cpu instances and 2 gpu instances.
 

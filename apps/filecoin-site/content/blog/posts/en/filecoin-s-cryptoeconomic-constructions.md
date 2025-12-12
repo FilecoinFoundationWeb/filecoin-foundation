@@ -38,7 +38,7 @@ Today, we’re pleased to provide an overview of the cryptoeconomic structures t
 
 ![](/uploads/cyptoeconomic-chart.webp)
 
-### An overview of Filecoin’s economy
+## An overview of Filecoin’s economy
 
 There are five main actors in the Filecoin economy:
 

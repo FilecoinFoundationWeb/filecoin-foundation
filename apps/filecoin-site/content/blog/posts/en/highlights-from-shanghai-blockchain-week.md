@@ -29,7 +29,7 @@ From October 23 - 28, 2020, we joined our community in China for Shanghai Intern
 
 <br>
 
-### October 23 - 25, Hackathon @ Wanxiang Blockchain Labs
+## October 23 - 25, Hackathon @ Wanxiang Blockchain Labs
 
 The Filecoin challenge at the Wanxiang Blockchain Labs hackathon encouraged developers to build interesting dapps and critical tools for the Filecoin ecosystem with a prize pool of $10,000! The hackathon attracted21 teams with 120+ hackers in total over the three days.
 

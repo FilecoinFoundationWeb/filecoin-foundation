@@ -27,7 +27,7 @@ _Summary of a talk given by Protocol Labs Founder Juan Benet at EthCC 2021 — s
 
 The Filecoin network is ecosystem oriented, aligning with Protocol Labs’ tendency to build modular solutions. Designed to be used by others, Filecoin has found a natural fit with other stacks, applications, and ecosystems within Web3. Since its launch in October 2020, Filecoin has grown to over 8 exbibytes of available storage with 400+ new projects entering the space. One ecosystem that continues to prove collaborative and mutually beneficial is Ethereum.
 
-### Filecoin + Ethereum
+## Filecoin + Ethereum
 
 **Filecoin & the EVM**
 

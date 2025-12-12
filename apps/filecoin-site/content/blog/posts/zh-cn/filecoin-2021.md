@@ -33,7 +33,7 @@ _template: blog_detail_ch
 
 不过，数字并不能反映全貌。这一年的非凡增长也给Filecoin生态系统带来了重要的进展，其中一些重要的里程碑如下：
 
-### 研究与开发
+## 研究与开发
 
 在去年，Filecoin协议和网络有了很大的进展，这包括了五次主网升级的协调和执行，12次的[Filecoin改进提议](https://github.com/filecoin-project/FIPs) (FIPs)的整合，以及将两个额外的Filecoin协议实施方案(Venus and Forest)带到了主网，与Lotus客户端并行存在。其中的亮点包括了时空证明（Proofs of SpaceTime）的链下验证，为聚合证明（proof aggregations）提供的SnarkPack，还包含承诺容量扇区（Committed Capacity sectors）的简易升级机制，以容纳真实世界的数据（预计2月份会在主网上线！）。
 

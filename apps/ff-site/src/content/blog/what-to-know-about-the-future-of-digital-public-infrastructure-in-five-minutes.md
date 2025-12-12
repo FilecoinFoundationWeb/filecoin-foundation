@@ -20,7 +20,7 @@ _The Decentralists, a twitter space series hosted by Filecoin Foundation speaks 
 
 Filecoin Foundation Senior Fellow [Danny O’Brien](https://twitter.com/mala) spoke with [Ethan Zuckerman](https://twitter.com/EthanZ), a professor at the University of Massachusetts at Amherst, about the future of digital public infrastructure and how communities can govern their own digital spaces. [Watch the full conversation on Twitter](https://twitter.com/FilFoundation/status/1629225134308433922?s=20), and check out the highlights below:
 
-### The Importance of Community Involvement in Shaping Digital Spaces
+## The Importance of Community Involvement in Shaping Digital Spaces
 
 Zuckerman shared an anecdote about his former doctoral student Nate Matthias, who worked closely with Reddit communities to understand their needs and aspirations. "What Nathan ended up doing was working very hard with communities on Reddit to have them run their own experiments and essentially think through what it would mean for their community to be successful." This approach, he argued, could lead to more effective and inclusive digital spaces.
 

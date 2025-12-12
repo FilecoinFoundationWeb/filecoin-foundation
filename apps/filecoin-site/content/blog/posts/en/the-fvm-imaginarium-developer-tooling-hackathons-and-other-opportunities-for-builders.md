@@ -32,7 +32,7 @@ If you are passionate about leveraging the capabilities of a decentralized stora
 
 In this blogpost, you’ll find an overview of developer tools that will help you get started on your journey building with FVM.
 
-### Getting Started with FVM: Starter Kits for Developers
+## Getting Started with FVM: Starter Kits for Developers
 
 ## Starter Kits 101
 

@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 本文基于7月份Juan Benet、Vitalik Buterin和Balaji Srinivasan在HackFS上关于去中心化社交媒体圆桌讨论的相关内容总结。[观看完整讨论](https://www.youtube.com/watch?v=DTxE9KV3YrE)。
 
-### 去中心化社交媒体背后理念
+## 去中心化社交媒体背后理念
 
 在人类发展的早期阶段，人类已开始寻找可以表达想法的地方。古希腊和罗马等文明建立了集会场所，以供博学之人讨论其对于真相的认知并得出结论与共识。
 

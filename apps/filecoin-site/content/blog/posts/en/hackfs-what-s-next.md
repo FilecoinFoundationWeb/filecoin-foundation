@@ -30,7 +30,7 @@ The amazing array of projects created within the month-long hackathon covered al
 
 In addition to the 10 finalists who demoed their projects in the HackFS Finale, Protocol Labs (PL) awarded eight projects special HackFS prizes. We checked in with several of these PL prize-winning teams to learn what’s next for them. We’ll keep tracking the progress of these teams and others now that the hackathon is over and several hackers are becoming more involved participants in the Web3 and Filecoin ecosystems.
 
-### Team: Cadbury
+## Team: Cadbury
 
 - **PL Prize:** Winner of the Audio track
 - **Team Members:** Susmit Lavania and Ayush Ranjan

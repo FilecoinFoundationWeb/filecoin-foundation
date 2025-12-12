@@ -27,7 +27,7 @@ _Updated December 18th, 2019_
 
 We are thrilled to have received many Dev Grant proposals from community members in Wave 1 reflecting a wide range of project ideas using Filecoin. We appreciate all proposals and hope to see more applications from enthusiastic developer teams in the future.
 
-### Wave 1: Community Projects
+## Wave 1: Community Projects
 
 For our first round of Dev Grants, we asked for proposals in the following categories: open-source community Block Explorers, Reputation Systems, Storage Helper Libraries, Community Meetups, and an RSA Vector Commitments library, as well as a general Open Dev Grant submission category.
 

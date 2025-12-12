@@ -22,7 +22,7 @@ _template: blog_detail_ch
 
 最近的[Filecoin 网络v16 Skyr升级](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/)发布了SnarkPack证明聚合库的一个新版本。这个版本并没有引入任何新功能，不过对密码学协议本身进行了强化。这篇文章详细讲述了对SnarkPack库进行检视的原因、其中发现的问题，以及如何解决这些问题并整合到Filecoin网络里。
 
-### SnarkPack是什么？
+## SnarkPack是什么？
 
 Filecoin协议的核心是一系列密码学证明，这被称为[复制证明即Proofs-of-Replication](https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/) (PoReps). 这些复制证明实现了Filecoin网络的核心承诺：去中心化、**可验证的**存储。
 

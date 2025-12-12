@@ -25,7 +25,7 @@ title: "Filecoin News 28: Filecoin Orbit, Proofs v10.0.0, Halo 2, and More"
 
 <a href="https://orbit.filecoin.io/"><img src="/uploads/orbit-announcement-twitter.webp" style="width:70%;margin-left:0%"></a>
 
-### Almost one short year ago, the Filecoin mainnet went live
+## Almost one short year ago, the Filecoin mainnet went live
 
 On October 21-22, the Filecoin community is coming together to celebrate with Filecoin Orbit. Join to hear panels, talks, workshops, and demos from across the ecosystem as people review what has been built in the last year, and what lies ahead. And get an early lead on the activities starting on October 18th with community-organized events.
 

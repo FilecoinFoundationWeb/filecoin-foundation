@@ -25,9 +25,9 @@ _template: blog_detail
 
 Last week was packed with talks, demos, workshops, and more for Filecoin Liftoff Week. We know a lot happened, so we wanted to take a minute to summarize the week’s highlights, most important announcements, and where you can find more information.
 
-### Announcements
+## Announcements
 
-#### 🤝Filecoin & ConsenSys Partnership
+### 🤝Filecoin & ConsenSys Partnership
 
 Last week, we announced Protocol Labs’ expanded collaboration with ConsenSys, one of the most trusted software engineering leaders in the Ethereum space. The new collaboration between ConsenSys Labs and Protocol Labs is bringing together the Filecoin and Ethereum ecosystems to drive the next generation of the web. Already, the collaboration has announced Filecoin Storage and Filecoin Defi Bridge from ConsenSys Codefi, [MetaMask’s Snaps](https://github.com/MetaMask/metamask-snaps-beta/wiki), [Infura’s Filecoin Network API](http://infura.io/), Secondary Retrieval Mining research with ConsenSys R&D, and this past summer’s Tachyon Launchpad Accelerator.
 

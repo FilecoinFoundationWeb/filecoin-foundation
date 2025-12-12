@@ -30,11 +30,11 @@ Plus, each [Virtual FDS Kickoff Session recording](https://www.youtube.com/playl
 
 Let’s dive into key takeaways and next steps:
 
-### The Filecoin State of the Union: Navigating Growth & Market Shifts
+## The Filecoin State of the Union: Navigating Growth & Market Shifts
 
 The State of the Union track opened FDS-6 with a wide-lens view of Filecoin’s current progress, ecosystem health, and long-term priorities. Speakers highlighted recent protocol upgrades, growth in onchain activity, and the expanding range of use cases—from AI to programmable services to DePIN. The track also addressed ongoing challenges and participants came away with a clear sense of Filecoin’s momentum, the priorities for the coming year, and actionable ways to contribute to the network’s continued evolution.
 
-#### Takeaways
+### Takeaways
 
 - Market Opportunities. Track leads opened the summit by grounding attendees in shared goals. Opportunities in Archival, Compute, AI, and Filecoin Web Services (FWS) sparked collaborative prioritization discussions.
 - Onchain metrics are a compass. Deep dives into onchain activity emphasized the importance of visibility, incentives, and friction reduction to unlock additional growth.

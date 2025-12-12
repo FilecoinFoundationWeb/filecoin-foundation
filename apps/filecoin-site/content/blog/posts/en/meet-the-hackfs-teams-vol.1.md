@@ -43,7 +43,7 @@ This week, we talked to:
 
 Our goal is to have a full working prototype of the platform by the end of July. We’re building a subscription-based crowdfunding platform, similar to Patreon, where the earlier you sign on as a backer the more benefits there are down the line. And what we’re building is offline-first and built using the Circle Universal Basic Currency protocol. The idea is that every user starts with their own universal basic income (UBI) currency and through trusted connections they’ll be able to pay each other and pay other businesses. We’re growing basic income from the bottom up without depending on a central government. And in this model we’ll rely on Filecoin to back up our data.
 
-### Team: Pygate
+## Team: Pygate
 
 ![Pygate Diagram](https://filecoin.io/vintage/images/blog/hfs-pygate.png)
 

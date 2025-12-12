@@ -25,7 +25,7 @@ title: Filecoin News 41
 
 <a href="https://filecoin.io/blog/posts/announcing-fil-singapore-summit/"><img src="/uploads/162950357-a07d89d7-1472-40d2-8588-79e7f150fb61.webp" style="width:40%;margin-left:0%"></a>
 
-### Announcing FIL-Singapore Summit
+## Announcing FIL-Singapore Summit
 
 Over a thousand Web3 enthusiasts will be joining members of the Filecoin community for FIL-Singapore Summit, happening from August 16th-19th. The event will be a celebration of all the amazing progress in the ecosystem and a look ahead to the exciting future of the network. You can expect to hear from world-class speakers, join side events and meetups, and participate in challenging hackathons. [Sign up](https://docs.google.com/forms/d/e/1FAIpQLSdtEtC0oAYdGDqw0csPyeIY3NgT1qm0YmZkX_wNY794HpiVUQ/viewform) now to host your own workshop or meetup at the event and read more on the Filecoin [blog](https://filecoin.io/blog/posts/announcing-fil-singapore-summit/).
 

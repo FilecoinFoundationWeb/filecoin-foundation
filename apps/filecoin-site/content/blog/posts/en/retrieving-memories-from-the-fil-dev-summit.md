@@ -20,11 +20,11 @@ related_article_1: >-
 
 During the [Filecoin Developer Summit](https://fildev.io/) in Iceland, Filecoin and IPFS retrieval was a topic of significant interest and excitement. The retrieval track, along with a number of related critical discussions, helped align the community on what’s needed for reliable Filecoin retrievals.
 
-### **Recap**
+## **Recap**
 
 There were two main focal points of conversation in the Filecoin Retrievals & Data Availability track. The first was the flywheel that’s developing for measuring and incentivizing retrievals - aiming to bring performant and reliable data retrieval to Filecoin. The second was a conversation about how to effectively structure data and transfer it efficiently across the network (transport protocols and data structuring).
 
-## How to measure and incentivize retrieval?
+## How to measure and incentivize retrieval
 
 {{< youtube id="tKTGSQ4-V3c" title="Retrieval Expectations" >}}
 

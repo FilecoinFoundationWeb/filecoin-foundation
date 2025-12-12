@@ -26,13 +26,13 @@ Key improvements include: 
 
 Keep reading for more details on what these improvements mean for the network.
 
-#### FIP0100 [Simplifies Filecoin's Economic Model](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0100.md)
+## FIP0100 [Simplifies Filecoin's Economic Model](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0100.md)
 
 FIP0100 addresses three interconnected challenges in the Filecoin protocol. First, it eliminates the Batch Balancer fee, which historically introduced variability and unpredictability to onboarding costs. In place of the Batch Balancer, this FIP introduces a new daily fee structure that provides more predictable and proportional economic incentives to storage providers, including reduced onboarding gas usage by up to 30% and more predictable expense models. And lastly, it removes outdated technical limits on batch sizing, which removes limitations on network growth. 
 
 Together, these changes create a more efficient onboarding process and ensure sustainable economics that align incentives for both the network and its participants. Read this [excellent summary](https://github.com/filecoin-project/FIPs/discussions/1105#discussioncomment-12647755) for more info.
 
-#### [Support for EIP-1153 (Transient Storage)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0097.md)
+### [Support for EIP-1153 (Transient Storage)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0097.md)
 
 Support for [EIP-1153](https://link.mail.beehiiv.com/ss/c/u001.WQITBXa8BlDy8iQveXaZRPKYlw94MOpPtJNVpYNLPOBW_i_EG87bFLKyU1Famzdv-HFAakHzNXeXgYxSevMYmQDIbhFNm9-1LF0YT3U5A7EbtADSJvHsJdQccVQ32VSh/4f9/l-VVsNIaQmS1yIhDl75j8A/h6/h001.jXkhAMQETW1SNF_GqI-zLS-2bvosVfyGSUMZL7frMbs) on the [Filecoin Ethereum Virtual Machine](https://fvm.filecoin.io) (FEVM) enables compatibility with Ethereum standards — simplifying the process to port contracts from Ethereum to Filecoin. 
 

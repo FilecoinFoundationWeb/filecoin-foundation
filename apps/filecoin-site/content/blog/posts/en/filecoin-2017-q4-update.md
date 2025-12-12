@@ -33,7 +33,7 @@ Dear Filecoin supporters, miners, users, investors, and broader community,
 
 Since the completion of the token sale, we have been heads down turning Filecoin’s tremendous potential into reality – from implementing the core parts of the Filecoin protocol to growing our team with the best talent we can find. Below is an update from our team, as well as a set of specific “asks” for you, our community.
 
-### Table of contents
+## Table of contents
 
 1. Community Updates - an Overview
 2. Asks - How You Can Help

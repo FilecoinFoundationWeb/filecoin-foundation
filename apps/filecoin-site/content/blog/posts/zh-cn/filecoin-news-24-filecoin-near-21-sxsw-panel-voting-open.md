@@ -31,7 +31,7 @@ _template: blog_detail_ch
 
 <a href="https://filecoin.io/blog/posts/filecoin-launches-collaboration-with-near-to-accelerate-the-growth-of-the-web3-stack/"><img src="/uploads/filecoin-near.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin携手NEAR助力Web3发展
+## Filecoin携手NEAR助力Web3发展
 
 2021年7月，Textile推出Filecoin-NEAR bridge，为NEAR上的智能合约提供简单且无需许可的存储迈出第一步——这是一个分片layer 1区块链协议，用于构建用户友好的去中心化应用。这种新颖的存储桥为NEAR应用程序、智能合约或NFT创造了一种无缝的方式，以集成基于Filecoin的任何形式的数据存储。此外，为提高利用率，使用该桥在Filecoin上的存储目前和未来都将免费提供。
 

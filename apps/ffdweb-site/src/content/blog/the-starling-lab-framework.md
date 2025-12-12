@@ -16,7 +16,7 @@ The internet and related technologies have brought about a new structure to the 
 
 Our digital age has brought about, in a matter of decades, a way of interacting and recording our experiences that has fundamentally shifted our world on a global scale. The influence that the world wide web, social media, and AI now have on our values, beliefs, and politics has become a powerful and important global issue. Starling Lab's work aims to have a positive impact by developing technology and methodology to [authenticate and protect digital records](https://youtu.be/crEf3A12kLs?t=86).
 
-### Capture, Store, Verify
+## Capture, Store, Verify
 
 ![Capture, Store, Verify](/assets/images/081123-starling-2.png)
 

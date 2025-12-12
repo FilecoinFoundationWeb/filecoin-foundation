@@ -23,7 +23,7 @@ title: Filecoin News 63
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
 
-### **FVM is live on Mainnet!**
+## **FVM is live on Mainnet!**
 
 On March 14th, the [Filecoin Virtual Machine (FVM)](http://fvm.dev/) officially launched on Filecoin mainnet! Now the network supports smart contracts and user programmability via the FVM, unlocking the enormous potential of an open data economy. This launch is a landmark milestone in Filecoin’s larger roadmap, which aims to bring open access and public verifiability to the three key arms of the data economy (storage, compute and content-delivery). Read all about the major upgrade, the ecosystem partners that are committed to supporting and integrating the FVM, and more in the [announcement blog post](https://filecoin.io/blog/posts/fvm-is-live-on-mainnet/).
 

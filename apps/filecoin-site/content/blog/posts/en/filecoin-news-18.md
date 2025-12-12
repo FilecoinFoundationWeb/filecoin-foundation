@@ -28,7 +28,7 @@ title:
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
 
-### Register now for Web3 Weekend, May 28-30
+## Register now for Web3 Weekend, May 28-30
 
 **Web3 Weekend**, sponsored by Protocol Labs, Audius, and the Ethereum Foundation, will bring together a virtual collective of passionate creatives and engineers for a weekend of exploring and building on Web3. During the hackathon, you'll have the support of a huge community of experts, mentors, creators, sponsors, and other community members who want to help you design and build the future of the web, with $25k+ available in various prizes.
 

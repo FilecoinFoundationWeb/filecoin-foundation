@@ -31,7 +31,7 @@ _template: blog_detail_ch
 
 除了最近推出的[Fil+](https://github.com/filecoin-project/filecoin-plus-client-onboarding)用来最大限度地激励在Filecoin上存储有用的数据，以及正在进行的[Slingshot](https://slingshot.filecoin.io/)存储竞赛的第二阶段，[Filecoin 开发者资助](https://filecoin.io/grants)计划也在为协议的各种使用场景和工具铺平道路。在过去的一年里，在社区提交的140个提案中，开发者资助计划迄今已颁发给大约40个项目。
 
-### 展望第六批开发者资助项目
+## 展望第六批开发者资助项目
 
 您有有趣的存储应用、开发者工具或试验项目想法吗？**第六批可优先考虑的Filecoin开发者资助和Gitcoin提案申请将于1月15日太平洋时间23:59分截止**。请在[filecoin.io/grants](https://filecoin.io/grants)通过向dev grants repo提交PR来申请。如有问题，请在[Filecoin Slack](https://filecoin.io/slack)中的[#fil-devgrants](https://filecoinproject.slack.com/archives/C01G57K6FUY)频道中联系我们，或联系[devgrants@filecoin.org](mailto:devgrants@filecoin.org)。
 

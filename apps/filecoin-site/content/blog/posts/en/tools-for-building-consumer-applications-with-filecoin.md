@@ -27,7 +27,7 @@ There are many services and tools now that streamline the development process by
 
 Every use case will require a different solution. Let’s take a look at some of the ones builders are currently using.
 
-### Storing Standard Application or NFT Data via APIs
+## Storing Standard Application or NFT Data via APIs
 
 These services offer simple, developer-friendly APIs for Filecoin storage. They combine IPFS for fast retrieval with Filecoin for on-chain guarantees.
 

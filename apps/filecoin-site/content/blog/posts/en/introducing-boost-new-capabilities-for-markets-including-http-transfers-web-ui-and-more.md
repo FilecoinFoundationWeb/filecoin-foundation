@@ -27,7 +27,7 @@ We’re excited to announce the release of Boost! A new, standalone replacement 
 
 So, what is Boost and what new features will it have? Boost is a tool for Storage Providers to manage data storage and retrievals on Filecoin. It replaces the go-fil-markets package in Lotus with a standalone binary that runs alongside a Lotus daemon and Lotus miner. Boost exposes libp2p interfaces for making storage and retrieval deals, a web interface for managing storage deals, and a graphql interface for accessing and updating real time deal information.
 
-### Expanded storage deal capabilities
+## Expanded storage deal capabilities
 
 While Boost will be fully backwards compatible, we’re also introducing a new protocol for storage deals that includes support for specifying how you’d like the data to be transferred. Boost will be shipping with support for 2 new transfer protocols including HTTP and HTTP over libp2p. For users that have been making offline deals and transferring CAR files via services like S3, you’ll now be able to make a deal with Storage Providers running Boost and specify the url of your file directly, and Boost will retrieve it automatically!
 

@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 在9月28日，20支团队参加了Tachyon运营的Filecoin Launchpad Accelerator负责举办的演示日。该加速器是一个为期6周的项目，旨在培育新生的Web3公司。下面是从该加速器成长并参与过演示日展示的DeFi项目。整个演示日的视频可以在 [这里](https://www.youtube.com/watch?v=UWuaSP6YuJ4)观看。
 
-### Hedgey Finance
+## Hedgey Finance
 
 _Hedgey Finance是一个能为任何token增加期权市场的协议。_
 

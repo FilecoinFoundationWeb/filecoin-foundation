@@ -29,7 +29,7 @@ Hedera公共网络是为大批量的使用而设计的一种快速、低成本�
 
 Filecoin和Hedera曾在多个项目中有过技术合作经历。Hedera高效的DLT功能和Filecoin强大且灵活的大规模存储层相结合，为验证交易及其基础数据的来源、所有权和有效性带来了更多可能。
 
-### 为Hedera NFT提供去中心化存储
+## 为Hedera NFT提供去中心化存储
 
 Hedera改进提案10 ([HIP-10](https://github.com/hashgraph/hedera-improvement-proposal/blob/master/HIP/hip-10.md))为NFT元数据提供了一个生态系统标准。为加强此新功能，Filecoin (尤其是[NFT.storage](http://nft.storage/) 服务)能分散存储包含这些NFT性能和多媒体或本地化数据的JSON模式。
 

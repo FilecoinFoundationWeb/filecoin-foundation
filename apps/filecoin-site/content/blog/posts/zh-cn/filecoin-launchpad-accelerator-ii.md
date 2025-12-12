@@ -25,13 +25,13 @@ _template: blog_detail_ch
 
 9月28日，总计20个团队参加了由Tachyon运营、由Filecoin Launchpad加速器主办的演示日。该加速器是一个为期6周的课程，致力于孵化年轻的Web3公司。以下是在加速器中出现并在路演期间展示的基础设施和开发工具的项目概述。[在此](https://www.youtube.com/watch?v=UWuaSP6YuJ4)观看完整路演。
 
-### CID Gravity
+## CID Gravity
 
 _Nftfy为世界上最有价值的NFT提供部分所有权。_
 
 {{< youtube id="s6A6v7qeK-c" title="CID Gravity" >}}
 
-#### **何为CID重力？**
+### **何为CID重力？**
 
 随着未来几十年世界对数字存储的需求量急剧增加，Filecoin为日常用户打造了可行的产品。然而要达到企业级用户的需求和期望，任重且道远。如今，CID Gravity正在构建一个能够让Filecoin达到企业级水平的系统。
 

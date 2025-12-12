@@ -27,7 +27,7 @@ title: Filecoin News 42
 
 <a href="https://filecoin.io/blog/posts/building-worlds-not-walls-with-mona/"><img src="/uploads/mona-blog-header.webp" style="width:40%;margin-left:0%"></a>
 
-### Building Worlds, Not Walls, With Mona
+## Building Worlds, Not Walls, With Mona
 
 [Mona](https://www.mona.gallery/) is a metaverse world-building platform built for creators by creators. It offers incredible resolution and unparalleled performance for truly visionary Web3 experiences. More than 3,000 creators are already using the platform to design and mint online spaces, launch immersive exhibitions, host electrifying concerts, and more. [Read more](https://filecoin.io/blog/posts/building-worlds-not-walls-with-mona/) to find out how Mona builds these incredible experiences and stores them on Filecoin and IPFS via NFT.Storage.
 

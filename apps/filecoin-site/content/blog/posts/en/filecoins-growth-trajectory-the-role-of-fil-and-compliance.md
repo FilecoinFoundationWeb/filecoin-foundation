@@ -16,7 +16,7 @@ image:
 
 When the Filecoin network began to grow, [Filecoin Plus (Fil+)](https://filplus.storage/) was introduced as an optional layer distinct from the core protocol, providing community members an alternative pathway for data onboarding, while incentivizing storage providers who help onboard client’s data into the network. Today the program offers different pathways and tools to help onboard data to the network. As data continues to be onboarded through Fil+, the program focuses on ensuring deal distribution and retrievability compliance in the deal-making process to enhance the network's integrity and efficacy.
 
-### Why Fil+ Requires Compliance
+## Why Fil+ Requires Compliance
 
 Incentive-compliance frameworks are essential to define rules of engagement in a peer-to-peer decentralized network such as Filecoin. As the network grows, automation and objective tools to measure compliance and identify risks of incentive abuse become necessary. On Filecoin, we can expect many forms of deal-making. The lack of mechanisms to address centralization risk such as storing data in a single region or with a few storage providers (SPs) can lead to similar challenges that we see in Web2 storage systems. As a social trust layer, Fil+ uses an incentive-compliance mechanism where data clients are incentivized through DataCap (DC) to ensure that data is stored in a distributed manner and has more recently implemented compliance with retrieval of open datasets.
 

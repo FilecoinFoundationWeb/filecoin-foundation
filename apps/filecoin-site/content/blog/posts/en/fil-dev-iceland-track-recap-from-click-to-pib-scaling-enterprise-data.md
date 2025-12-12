@@ -25,7 +25,7 @@ Ecosystem members leading the growth in enterprise data onboarding to Filecoin s
 <p><br>
 <br></p>
 
-### Background
+## Background
 
 From Click to PiB: Scaling Enterprise Data brought together teams bringing Filecoin to enterprise customers to share learnings, opportunities, challenges and insights in scaling enterprise data on Filecoin. With deep industry experience and first-hand customer feedback from the field, sessions covered topics across the product stack. Sessions addressed the need for and potential solutions for data deletion on Filecoin. Other speakers addressed their journey in data preparation and deal-making, and the impact tools like [Singularity](https://singularity.storage/) and [Spade](https://github.com/ribasushi/spade) have had on data-onboarding velocity.
 

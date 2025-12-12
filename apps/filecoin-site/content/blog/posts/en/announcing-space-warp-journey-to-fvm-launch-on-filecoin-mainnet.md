@@ -26,7 +26,7 @@ Programmability, or the ability to deploy custom smart contracts, is being launc
 
 As the Filecoin EVM runtime ("FEVM") was being built, early builders were able to try out incremental weekly feature releases on the bleeding-edge [Wallaby testnet](https://github.com/filecoin-project/testnet-wallaby). Now it is nearing feature-completeness and the [final Carbonado release of FEVM](https://github.com/filecoin-project/ref-fvm/issues/692) will be ready soon. This release coming later in December will kick off the new **Hyperspace** **testnet**, a long-running stable testnet for FVM developers that will become the main developer-focused testnet for Filecoin going forward.
 
-### Introducing the Space Warp Program
+## Introducing the Space Warp Program
 
 To inspire developers to try out the new FEVM and unlock its vast potential, today the [**Space Warp**](https://spacewarp.fvm.dev/) program is launching. It aims to help the builder community accelerate the development of new value-adding apps on the Filecoin network in preparation for FEVM mainnet launch in February.
 

@@ -31,7 +31,7 @@ _template: blog_detail_ch
 
 <a href="https://green.filecoin.io/"><img src="/uploads/filecoingreen.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin Green网站已经上线
+## Filecoin Green网站已经上线
 
 Filecoin社区很高兴宣布最新上线的Filecoin Green专属[网站](https://green.filecoin.io/)。 它旨在测量Filecoin带来的环境影响，并以可验证的方式将这些影响降至零以下。在这个过程中，会搭建基础设施，让每个人能够作出透明的、实质性的环境保护主张。这个新的网站，持续发布消息，如博客文章、事件公告及开发进展，以及结合其他工具如[Purchases Repo](https://github.com/redransil/filecoin-renewables-purchases)来让Filecoin达到碳中和目标的相关信息。请保持关注Filecoin Green的官方[Twitter](https://twitter.com/filecoingreen) 账户吧。
 

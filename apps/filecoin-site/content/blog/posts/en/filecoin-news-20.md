@@ -28,7 +28,7 @@ title: "Filecoin News 20: HackMoney, Web3 Weekend, Starling Lab, and More"
 
 <a href="https://defi.ethglobal.co"><img src="/uploads/hack-money-header.webp" style="width:40%;margin-left:0%"></a>
 
-### **HackMoney starts this Friday, June 18!**
+## **HackMoney starts this Friday, June 18!**
 
 Join over 1,000 likeminded engineers, designers, and creators at [HackMoney](https://defi.ethglobal.co), a 3-week long hackathon dedicated to building the future of finance running from June 18th through July 9th. The event will be an opportunity to focus on building a new product/protocol for the hackathon, learning at the summits and workshops, and gain valuable feedback from ecosystem professionals along the way. To support innovation and exploration to this end, Protocol Labs is offering a prize for exceptional projects - a first prize of $4k FIL, and $2k FIL for two runners up.
 

@@ -25,7 +25,7 @@ The Filecoin ecosystem has an expansive set of tools that are designed to provid
 
 For Storage Providers, analytics and data aggregation are important resources. They allow SPs to make important decisions around their competitive position in the data storage marketplace, and gauge current client preferences as well as check in on gas fees and the overall status of the network.
 
-### Common Metrics
+## Common Metrics
 
 While there are many resources available that provide specific information, there are common metrics that exist across the board. Let’s take a look at what some of these standard metrics mean:
 

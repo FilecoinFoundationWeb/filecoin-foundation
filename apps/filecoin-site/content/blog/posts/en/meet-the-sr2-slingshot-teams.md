@@ -29,7 +29,7 @@ We’re about a week into the Space Race 2 Slingshot competition, and it is off 
 
 This week, we talked to four teams to learn more about their work, how they got involved with Slingshot and why they’re building on Filecoin.
 
-### Team: Fin-File
+## Team: Fin-File
 
 ![fin-file](https://filecoin.io/vintage/images/blog/fin-file.png =40%x)
 

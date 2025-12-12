@@ -27,7 +27,7 @@ In addition to Filecoin’s thoughtful incentive structure that rewards quality,
 
 The Filecoin Mainnet Liftoff was a highly anticipated launch - and a giant leap forward for the web3 ecosystem. Filecoin brings a verifiable storage layer to the decentralized web, adding an important storage incentive structure to the InterPlanetary stack used by many web3 projects (including IPFS, libp2p, IPLD, and Multiformats). As with any launch moment, it’s easy to forget where things began - and the immense progress and innovation required to go from “that’s impossible” to “it’s live!” Let’s take a brief trip back to \~7 years ago, when the ideas for Filecoin first formed…
 
-### In the Beginning
+## In the Beginning
 
 Back in 2014 when Filecoin was first envisioned - “web3” was still in its infancy. Vitalik Buterin had just put out the [Ethereum whitepaper](https://ethereum.org/en/whitepaper/) and “blockchain” was just starting to gather a significant following. When Gavin Wood published “[Dapps: What Web 3.0 Looks Like](https://gavwood.com/dappsweb3.html)”, he proposed 4 components of this next-generation web: “static content publication, dynamic messages, trustless transactions and an integrated user-interface.” This set the stage for new projects to come meet these needs.
 

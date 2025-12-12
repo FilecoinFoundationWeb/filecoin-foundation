@@ -27,7 +27,7 @@ Amazon, Google, Microsoft, iCloud and DropBox — those are the names of the maj
 
 That’s why each of the above companies earns a significant amount of their annual revenue from their centralized cloud storage businesses today, with Amazon being the most dominant player in the space by far.
 
-### How Much Money is in Web2 Cloud Storage?
+## How Much Money is in Web2 Cloud Storage
 
 [One research study estimates](https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf) that 49% of data storage will be in the cloud by 2025. The same study suggests that the global datasphere will increase in size from 33 million terabytes (TB) in 2018 to over 175 million TB by 2025. Just to put into perspective how much 175 million TB really is, it would take 1.8 billion years to download that amount of data with a connection speed of 25 MB per second.
 

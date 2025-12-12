@@ -33,7 +33,7 @@ title:
 
 <a href="https://filecoin.io/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/"><img src="/uploads/dora-winners.webp" style="width:40%;margin-left:0%"></a>
 
-### 17 Winning Projects from DoraHack’s Filecoin Grant Hackathon
+## 17 Winning Projects from DoraHack’s Filecoin Grant Hackathon
 
 Last month the voting period closed for the 2021 DoraHacks Filecoin Grant Hackathon. Lasting from May 1 to mid-July, the Round 1 Filecoin Grants distributed $249,000 USD among the winning projects across first, second, and third place. Catch up with the winning projects to learn more about the projects building the future of the Filecoin network in [this blog post](https://filecoin.io/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/). You can also check out all of the applicants and watch the projects’ presentations on the [DoraHacks Youtube channel](https://www.youtube.com/channel/UCApW8piYNP4T10kgenp0Mjg/playlists).
 

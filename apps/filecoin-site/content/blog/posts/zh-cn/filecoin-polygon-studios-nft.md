@@ -28,7 +28,7 @@ Polygon最初是以安全的Layer 2解决方案问世，用于解决热门区块
 
 同样地，越来越多play-to-earn (P2E)和NFT空间的项目也选择使用IPFS进行[内容寻址](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/)和Filecoin进行[可证明和分布式存储](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/)来存储包含了类似视频等媒体的元数据。
 
-### **Filecoin持久性和Polygon可扩展性珠联璧合，为开发人员开拓新用例**
+## **Filecoin持久性和Polygon可扩展性珠联璧合，为开发人员开拓新用例**
 
 2021年8月，我们[宣布](https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/) Polygon将为希望建立在[Textile](https://www.textile.io/)团队开发的[Filecoin-Polygon bridge](https://eth.storage/docs ethereum——polygon-bridge-to-filecoin)上的项目提供免费存储费用。该桥梁使开发人员和Polygon应用程序用户能够轻松地从IPFS网络上的任何Polygon地址存储数据，而无需任何新注册、隐私或API密钥。
 
@@ -68,15 +68,18 @@ Polygon生态中与IPFS和Filecoin（以及NFT.storage、Estuary、Web3.storage�
 敬请期待如下与本合作相关的NFT黑客松活动：
 
 1. [ETHDenver](https://www.ethdenver.com/)
+
    - 正在丹佛的IRL举行的规模最大的ETH会议，与会者来自全球各地。提交给所有赛道的申请将有资格获得价值25,000美元的Filecoin和IPFS奖金（以及其他奖项）！
    - 日期
      - IRL（线下）：2022年2月11日至20日
      - 线上：2022年2月11日至3月21日
 
 2. [ETHernals by Devfolio](https://ethernals.devfolio.co/):
+
    - 本次基于以太坊的黑客松参与者可以通过使用*buidl*能力围绕DAO、NFT和DeFi等进行构建来赢取高达5万美元的奖金。
    - 日期：2022年2月25日至3月27日
 
 3. Kenlabs Metaverse Hackathon:
+
    - 聚焦于元宇宙的八周黑客松！来挑战吧，在IPFS上创建项目来争夺5万美元的奖金。
    - 日期：2022年4月1日至20日

@@ -29,7 +29,7 @@ MetaMask Flask是一片崭新的试验场，聚集Wallet最前沿最新鲜的功
 
 因此，Flask不具备MetaMask所拥有的API和UX稳定性。我们再次强调，Flask的目标受众是开发者。**参与风险由用户自行承担。本试验场不提供监督指导。**
 
-### Snaps为创新提速
+## Snaps为创新提速
 
 Snaps是通过Flask上线的第一个功能。
 

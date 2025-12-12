@@ -25,7 +25,7 @@ title: Filecoin News 40
 
 <a href="https://filecoin.io/blog/posts/fvm-milestone-0.5-is-complete/"><img src="/uploads/fvm-update_hud60c027a439008dcf3bf42e8849e5d71_735992_2000x0_resize_q90_linear_2.webp" style="width:40%;margin-left:0%"></a>
 
-### FVM Milestone 0.5 Complete
+## FVM Milestone 0.5 Complete
 
 The FVM and implementation team has announced the completion of [FVM Milestone 0.5](https://fvm.filecoin.io/#roadmap-4)! Now all node operators can run their own FVM nodes using the v7 built-in actor to sync with the Filecoin Mainnet! For more details, please read the [announcement blog](https://filecoin.io/blog/posts/fvm-milestone-0.5-is-complete/).
 

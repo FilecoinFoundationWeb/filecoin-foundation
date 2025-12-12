@@ -26,7 +26,7 @@ A solution to this problem is 180Protocol, a modular software protocol offering 
 
 180Protocol offers a modular toolkit enabling customizable solutions and the strategic adoption of decentralized technologies. With 180Protocol’s technology, users can unlock market intelligence via sensitive data on which the future of enterprise can be built. For example, decentralized B2B or B2C marketplaces can leverage these enhanced insights enabling more opportunity and greater value potential for the benefit of all.
 
-### **The 180Protocol Story**
+## **The 180Protocol Story**
 
 The project was spun out of University of Cambridge, a lead investor in the team, as a fintech business. Having operated as a Fintech for 2 years, 180Protocol was designed to solve the problems encountered, specifically the challenge of obtaining sensitive client data. Since then, the project’s [GitHub](https://github.com/180Protocol) has seen steady engagement since launch with many clones from its repo on a weekly basis.
 

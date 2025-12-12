@@ -25,7 +25,7 @@ title: Filecoin News 33
 
 <a href="https://medium.com/@filecoingreen/introducing-the-filecoin-energy-dashboard-46d2cbe14d39"><img src="/uploads/144449134-38e41c06-9fb8-4b02-9f96-20f0c571cd67.webp" style="width:40%;margin-left:0%"></a>
 
-### Introducing the Filecoin Energy Dashboard
+## Introducing the Filecoin Energy Dashboard
 
 There’s been a lot of talk around the environmental impact of Proof-of-Work blockchains and too little about the important solutions Web3 can bring to the table. Filecoin Green is excited to launch an open-source [dashboard](https://filecoin.energy/) that tracks the energy consumption of its storage providers. The tool gives them, and potentially miners from other networks, a decentralized way to purchase Renewable Energy Certificates and store them in [Filrep](https://filrep.io/?columns=energy&order=desc&sortBy=energy).
 

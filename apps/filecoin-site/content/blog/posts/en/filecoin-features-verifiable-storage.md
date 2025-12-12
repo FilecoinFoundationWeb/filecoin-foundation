@@ -36,7 +36,7 @@ For these data integrity checks to provide storage users the assurance they desi
 
 A proof system is a cryptographic protocol that participants – generally miners – use to validate the storage services. Filecoin’s proof system solves a previously intractable problem for decentralized storage: How can miners _prove_ that they are really storing the data they say they are through time and that they are dedicating unique physical space? To understand this, we need to take a look at how Filecoin implements decentralized storage and what makes its proof system unique.
 
-### How Filecoin implements decentralized storage
+## How Filecoin implements decentralized storage
 
 In a centralized storage service, we place our trust in well-known companies or entities that guarantee the integrity and security of their systems. This third-party entity is key to maintaining confidence in the network. For example, when we use Amazon S3 for cloud storage, we aren’t really trusting the _network of data servers_ that Amazon employs. Rather, we trust _Amazon_ to guarantee that the network works as promised – that the data we store with Amazon will be secure and available according to the company’s service level agreements.
 

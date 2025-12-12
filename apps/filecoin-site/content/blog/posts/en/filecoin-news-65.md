@@ -27,7 +27,7 @@ draft: false
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
 
-### **Network v19 Lightening and nv20 Thunder**
+## **Network v19 Lightening and nv20 Thunder**
 
 In light of the recent degraded chain quality on mainnet, [an expedited nv19 upgrade has been proposed](https://github.com/filecoin-project/core-devs/discussions/123#discussioncomment-5642909) to roll out the market cron mitigation [FIP0060](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0060.md) that will improve block validation times, and hopefully further improve the degraded chain quality currently. We need the community’s support to ensure an expedited but smooth network upgrade, please see below for the key changes and important dates:
 

@@ -33,7 +33,7 @@ _template: blog_detail_ch
 
 <a href="https://filecoin.io/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/"><img src="/uploads/dora-winners.webp" style="width:40%;margin-left:0%"></a>
 
-### DoraHack’s Filecoin Grant黑客松的17个获奖项目
+## DoraHack’s Filecoin Grant黑客松的17个获奖项目
 
 上个月，2021年DoraHacks Filecoin Grant黑客松的投票环节拉下帷幕。该比赛自5月1日持续进行至7月中旬，在获奖项目前三甲中共发放了24.9万美元。阅读[此篇博文](https://filecoin.io/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/)了解获奖项目情况，还可以了解他们将如何构建Filecoin网络未来。关注[DoraHacks Youtube频道](https://www.youtube.com/channel/UCApW8piYNP4T10kgenp0Mjg/playlists)，可查看所有申请者(https://dorahacks.io/grant/filecoin/)并观看项目演示。
 

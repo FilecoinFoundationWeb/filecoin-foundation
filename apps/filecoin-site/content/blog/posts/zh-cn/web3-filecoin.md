@@ -27,7 +27,7 @@ _这是Protocol Labs创始人Juan Benet在EthCC 2021上的演讲概要，在_ [_
 
 Filecoin网络是面向生态的，它与Protocol Labs搭建模块化解决方案的倾向是一致的。因为它本来就是设计给其他人使用，所以Filecoin在Web3领域的其他栈、应用和生态里如鱼得水。自从其在2020年10月的启动开始，Filecoin已经增长到超过8 exbibytes的可用存储空间，有超过400个项目进入了这个生态。以太坊就是一个能持续证明其可协作性和共同利益的生态系统。
 
-### Filecoin + 以太坊
+## Filecoin + 以太坊
 
 **Filecoin和以太坊虚拟机（EVM）**
 

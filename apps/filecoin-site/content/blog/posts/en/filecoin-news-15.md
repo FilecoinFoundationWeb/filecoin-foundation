@@ -31,7 +31,7 @@ _template: blog_detail
 
 <img src="/uploads/metamask.webp" style="width:30%;margin-left:0%">
 
-### **Developer Preview: Filecoin in MetaMask**
+## **Developer Preview: Filecoin in MetaMask**
 
 This build of MetaMask is a special developer release that contains early support for Filecoin, based on the upcoming MetaMask Snaps extensibility system. MetaMask is making this special developer build available so that Filecoin developers can start building Web3 sites based on Filecoin.
 

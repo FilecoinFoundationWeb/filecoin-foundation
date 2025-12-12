@@ -28,7 +28,7 @@ title: "Filecoin News 26: Filecoin Network capacity surpasses 10 EiB, and more!"
 
 <img src="/uploads/10eib-graphic.webp" style="width:40%;margin-left:0%">
 
-### The Filecoin Network Surpasses 10 EiB of Storage Capacity
+## The Filecoin Network Surpasses 10 EiB of Storage Capacity
 
 Eleven months after mainnet launch, the Filecoin network is celebrating a major milestone. As of last week, the global community of Filecoin storage providers has dedicated over 10 exbibytes (EiB) of decentralized storage capacity to the Filecoin network. 10EiB is equivalent to 190 Internet Archives, 45,000 Wikipedias, and 6,850,000 years worth of video calls! This is a tremendous achievement for the Filecoin community.
 

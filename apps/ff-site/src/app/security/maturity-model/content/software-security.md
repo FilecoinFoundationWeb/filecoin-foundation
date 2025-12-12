@@ -3,9 +3,9 @@ title: Software Security
 order: 7
 ---
 
-#### 1. Decentralized Application Security
+## 1. Decentralized Application Security
 
-##### 1.1 Security Best Practices for DApps
+### 1.1 Security Best Practices for DApps
 
 - Security is considered formally for the contracts being developed for the application
 - Security is considered for DApp front ends if they exist
@@ -14,7 +14,7 @@ order: 7
 - Level 2: Are these best practices more comprehensive, regularly updated, and aligned with emerging security trends in the decentralized space?
 - Level 3: Is there an advanced set of best practices, widely recognized and adhered to, with proactive measures to anticipate and address future security challenges in DApp development?
 
-##### 1.2 Smart Contract Security
+#### 1.2 Smart Contract Security
 
 - Contracts are reviewed for security in some way
 - Audits have been conducted or are planned for the contracts associated with the project or team

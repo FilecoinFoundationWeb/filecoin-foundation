@@ -29,7 +29,7 @@ _template: blog_detail
 
 Today marks an important milestone for the Filecoin project: the launch of the Filecoin testnet ([on schedule](https://filecoin.io/blog/update-2019-q2-q3/#1-launches-testnet-on-dec-11-mainnet-in-2020-q1))! After significant research, design, and development, the Filecoin protocol is ready for live network testing. We’re thrilled to share it with you.
 
-### What is the Filecoin testnet?
+## What is the Filecoin testnet
 
 The Filecoin testnet is a live test network for interoperable implementations of the Filecoin protocol. It is also a period of significant testing, benchmarking, and optimizations. The purpose of the testnet is to evaluate Filecoin at meaningful scale before we launch mainnet and to fix any issues that may arise. The network is and always will be open for anyone to access and join without restriction, and the Filecoin Project codebase is free and open-source. Anyone can install the software, connect to the network, and explore Filecoin.
 
@@ -73,7 +73,7 @@ If you haven’t already, now is a perfect time to join the Filecoin community. 
 - [Chat](https://github.com/filecoin-project/community#chat) (Slack or Matrix)
 - [Discourse discussion forum](https://discuss.filecoin.io/)
 - [GitHub](https://github.com/filecoin-project/)
-  - [Lotus issues on GitHub](https://github.com/filecoin-project/lotus/issues)
+- [Lotus issues on GitHub](https://github.com/filecoin-project/lotus/issues)
 
 ### Participate in our testnet AMA
 

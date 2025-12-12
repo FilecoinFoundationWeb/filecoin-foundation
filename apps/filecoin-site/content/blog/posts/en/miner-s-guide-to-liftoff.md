@@ -31,7 +31,7 @@ In the past 4 weeks since the end of SR1, we’ve seen huge improvements in netw
 
 ![Space Race 1 dashboard](https://filecoin.io/vintage/images/blog/SP2-dashboard.jpg)
 
-### Orbital Burn Rewards
+## Orbital Burn Rewards
 
 The rewards for SR2: Orbital Burn were designed to emulate real-world network conditions by tracking the sectors stored, pledge collateral committed, and block and gas fees collected throughout the competition. To collect their rewards, miners who participated in SR1 and SR2 simply need to continue operating their miners through the mainnet transition on October 15th. As of the mainnet epoch:
 

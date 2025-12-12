@@ -28,7 +28,7 @@ On July 18, the voting period closed for the 2021 DoraHacks Filecoin Grant Hacka
 
 You can check out all the applicants [here](https://dorahacks.io/grant/filecoin/), and watch the projects’ livestream presentations [here](https://www.youtube.com/channel/UCApW8piYNP4T10kgenp0Mjg/playlists).
 
-### DoraHacks First Place
+## DoraHacks First Place
 
 ## **Box**
 

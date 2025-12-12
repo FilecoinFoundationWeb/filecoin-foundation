@@ -25,7 +25,7 @@ _template: blog_detail_ch
 
 要理解这种可能性，重要的是理解Filecoin网络里存储提供者的经济模型。我们将先解读存储提供者应当熟悉的一些基本概念，这是他们成为Filecoin经济的活跃成员时必须知悉的。
 
-### FIL Token
+## FIL Token
 
 Filecoin的[_island economy_](https://filecoin.io/blog/posts/filecoin-s-island-economy/)经济模型包括5种不同领域参与者之间的互动：用户、开发者、token持有者、生态伙伴，以及存储提供者（对我们而言最重要）。这些互动需要使用FIL这种功能型token，存储提供者也不例外。因此，网络里发生的这些经济互动是由这个token计价的。这是赋予持有者使用网络权利的方式。
 

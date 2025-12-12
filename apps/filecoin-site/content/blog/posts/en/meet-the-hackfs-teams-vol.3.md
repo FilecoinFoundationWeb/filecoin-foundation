@@ -28,7 +28,7 @@ _Welcome to the ninth installment of the Filecoin Community Highlights series, a
 
 HackFS, a month-long hackathon co-hosted by Protocol Labs and ETH Global, is designed to showcase the power of Web3. In this final week of the hackathon, we talked to three more teams to learn about their work, what they’ve learned through HackFS, and why they’re building on Filecoin.
 
-### Team: [coeo](https://github.com/coeo)
+## Team: [coeo](https://github.com/coeo)
 
 ![coeo](https://filecoin.io/vintage/images/blog/hfs-coeo.png)
 

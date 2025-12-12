@@ -24,7 +24,7 @@ _template: blog_detail
 
 We are excited to announce that the [Lurk programming language](http://github.com/lurk-lang) repositories are now open to the public. Lurk is a Turing-complete programming language for recursive zk-SNARKs (zero knowledge Succinct Non-interactive ARguments of Knowledge) that will enable new possibilities for SNARK proofs, blockchain consensus, the Filecoin Virtual Machine (FVM), decentralized apps, data integration with IPFS and IPLD, and more.
 
-### Overview
+## Overview
 
 Lurk is a statically scoped dialect of [Lisp](<https://en.wikipedia.org/wiki/Lisp_(programming_language)>), influenced by Scheme and Common Lisp. Its distinguishing feature relative to most programming languages is that correct execution of Lurk programs can be directly proved using zk-SNARKs. The resulting proofs are relatively small, can be verified quickly, and they reveal only the information explicitly contained in the statement to be proved.
 

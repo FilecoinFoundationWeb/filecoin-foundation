@@ -25,7 +25,7 @@ title: Filecoin News 59
 
 <a href="https://filecoin.io/blog/posts/filecoin-2022-review-enabling-the-world-s-largest-decentralized-open-data-economy/"><img src="/uploads/filecoin_2022_recap_header.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin 2022 Review
+## Filecoin 2022 Review
 
 2022 was a tumultuous year for Web3 and the world more broadly. Yet, in spite of challenging times, the Filecoin community had a year with many bright spots, where the community came together to build and where the importance of the mission and vision of the project was reinforced. Revisit [key highlights in the Filecoin growth story](https://filecoin.io/blog/posts/filecoin-2022-review-enabling-the-world-s-largest-decentralized-open-data-economy/) and get a glimpse at what’s to come in 2023!
 

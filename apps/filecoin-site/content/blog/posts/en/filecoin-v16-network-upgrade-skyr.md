@@ -31,7 +31,7 @@ This upgrade represents the most dramatic transformation of the Filecoin network
 
 The Skyr upgrade is the first of two steps on the path to fully enabling on-chain user programmability on Filecoin, bringing with it the possibility for a boundless number of new use cases and features to be implemented on the already robust network. This upgrade means that the core logic of the Filecoin network - implemented in the [built-in actors](https://github.com/filecoin-project/builtin-actors) - is now running atop the FVM M1 (milestone 1) code. And with the next step, users will be able to deploy custom logic to the network, making Filecoin both a storage _and_ computation layer.
 
-### **What’s in this upgrade?**
+## **What’s in this upgrade?**
 
 The Skyr upgrade delivered three FVM-related [Filecoin Improvement Proposals (FIPs)](https://github.com/filecoin-project/FIPs) to the network — FIP [0030](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0030.md), [0031](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0031.md), and [0032](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0032.md). These FIPs collectively bring us to the first milestone of [the FVM roadmap](https://fvm.filecoin.io/#roadmap-4). At the point of the upgrade, the network atomically switched to using the new WASM-based FVM for chain validation - the specification for which is found [here](https://github.com/filecoin-project/fvm-specs). Currently all clients have adopted the reference FVM implementation ([ref-fvm](https://github.com/filecoin-project/ref-fvm)), which uses [Wasmtime](https://wasmtime.dev/) as its Wasm runtime.
 

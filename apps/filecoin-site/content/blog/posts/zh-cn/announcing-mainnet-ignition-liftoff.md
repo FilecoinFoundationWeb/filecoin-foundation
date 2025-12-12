@@ -32,7 +32,7 @@ _template: blog_detail_ch
 
 ![数据仪表板上的325PiB](https://filecoin.io/vintage/images/blog/ignition-stats-dashboard.jpg)
 
-### 过渡到主网点火
+## 过渡到主网点火
 
 今天，当我们进入主网点火阶段并已经为Filecoin主网启动做好准备之际，很高兴能够与大家分享[Filecoin启动的阶段与时间表](https://app.instagantt.com/shared/s/1152992274307505/latest)。启动区块链是复杂而漫长的过程，像许多其他网络（如[波卡](https://polkadot.network/launch-roadmap/)、[NEAR](https://near.org/blog/mainnet-roadmap/)等等）一样，Filecoin采用分段式方法来启动主网，在阶段性的时间内将不同群体和社区加入到网络中直至主网启动。
 

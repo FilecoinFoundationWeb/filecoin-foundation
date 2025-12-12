@@ -12,7 +12,7 @@ dim_image: true
 
 我们非常高兴宣布推出[Curio Storage](https://curiostorage.org/)，这是由Lotus-Miner和Boost团队共同研发的新产品！Curio旨在成为Lotus-Miner的卓越替代品，在系统冗余、简易型、可扩展性和整体性能方面都有显著改善。有了Curio，数据中心成为Filecoin存储提供者(SP)变得前所未有的简单，Curio能够以最短的操作时间提供可靠的SP存储证明和封装。
 
-### 为何选择Curio?
+## 为何选择Curio
 
 1.冗余一切:Curio通过多个守护进程、worker类型和数据库节点提供强大的冗余功能，所有这些都可以无缝协调，消除单点故障。种设计确保了存储操作的最长正常运行时间和可靠性。
 

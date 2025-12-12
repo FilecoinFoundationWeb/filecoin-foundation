@@ -29,9 +29,9 @@ After a month of workshops, talks, AMAs, and heads-down building, 134 teams subm
 
 On August 18, ten finalists demonstrated their projects live in front of a panel of judges: Protocol Labs Founder and CEO Juan Benet, IPFS Project Lead Molly Mackinlay, Filecoin Product Lead Pooja Shah, and Ethereum Foundation’s Ken Ng. You can watch the [full session](https://www.youtube.com/watch?v=GibA0t0z_9w) and read more for a recap of the submissions from the 10 finalist teams.
 
-### Applications Category
+## Applications Category
 
-#### Sailplane
+### Sailplane
 
 #### ![Sailplane](https://filecoin.io/vintage/images/blog/hfs-sailplane-finale.jpg)
 

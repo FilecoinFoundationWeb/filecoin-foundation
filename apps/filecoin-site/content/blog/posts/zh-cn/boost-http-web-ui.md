@@ -25,7 +25,7 @@ _template: blog_detail_ch
 
 那么，什么是Boost？它会有什么新功能？Boost是存储提供商在Filecoin上管理数据存储和检索的工具。它用一个独立的二进制文件取代了Lotus中的go-fil-market包，与Lotus daemon和Lotus miner一起运行。Boost公开了用于进行存储和检索交易的libp2p接口，用于管理存储交易的web接口以及用于访问和更新实时交易信息的graphql接口。
 
-### 扩展存储交易能力
+## 扩展存储交易能力
 
 虽然Boost将完全向后兼容，但也将引入一种新的存储协议，其中包括对指定数据传输方式的支持。Boost将支持两个新的传输协议，包括HTTP和libp2p上的HTTP。对于那些通过像S3这样的服务进行离线交易和传输CAR文件的用户来说，现在可以与运行Boost的存储提供商进行交易，并直接指定文件的URL，Boost将自动检索！
 

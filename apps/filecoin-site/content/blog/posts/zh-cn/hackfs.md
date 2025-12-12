@@ -43,7 +43,7 @@ _欢迎来到第六期Filecoin社区亮点系列，该系列主要针对用户�
 
 我们的目标是在7月底之前能出一个完整的平台工作原型。我们正在创建一个类似Patreon的基于订阅的众筹平台，在该平台上，用户越早注册为赞助者就会获得越多的收益。首先我们创建的这个平台是离线优先且使用的是Circle Universal Basic Currency协议。我们的想法是每个用户都能以自己通用的基本收入货币（UBI）通过可信的联系可以相互支付或者向其他企业付款。在不依靠中心化治理机构的情况下，采用自下而上的方式增加基本收入。在此模型中，我们通过Filecoin来备份数据。
 
-### Pygate 团队
+## Pygate 团队
 
 ![Pygate Diagram](https://filecoin.io/vintage/images/blog/hfs-pygate.png)
 

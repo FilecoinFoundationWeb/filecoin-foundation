@@ -30,7 +30,7 @@ _template: blog_detail
 
 Today, we are excited to announce two additional implementations of the Filecoin protocol: [**forest**](https://github.com/ChainSafe/forest) – being implemented in Rust by ChainSafe, and [**fuhon**](https://github.com/filecoin-project/cpp-filecoin) – being implemented in C++ by Soramitsu. These implementations are in active development, and are now fully open for anyone to use or contribute to. Check them out on GitHub!
 
-### The importance of multiple implementations
+## The importance of multiple implementations
 
 As we first mentioned in [this blog post](https://filecoin.io/blog/announcing-lotus/), launching the Filecoin network with multiple implementations is a key part of our network security strategy. Having multiple software implementations that interoperate on the same network reduces the risk that a significant bug in _one_ implementation rears its head and takes down the entire network.
 

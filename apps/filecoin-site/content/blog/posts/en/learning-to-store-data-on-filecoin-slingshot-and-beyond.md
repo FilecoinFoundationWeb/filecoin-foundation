@@ -28,7 +28,7 @@ Over the last three weeks, members of the Filecoin community have participated i
 
 In this post, we’re recapping some of these talks and panels to help you get a running start to store and build on Filecoin.
 
-### [Master Class: Intro to Powergate](https://www.youtube.com/watch?v=synHYG4AnJk&feature=youtu.be)
+## [Master Class: Intro to Powergate](https://www.youtube.com/watch?v=synHYG4AnJk&feature=youtu.be)
 
 [Andrew Hill](https://www.linkedin.com/in/andrewxhill/), co-founder and CEO of [Textile](http://textile.io/), led this session. Textile makes tools to make it faster and easier for developers to build decentralized apps on IPFS and Filecoin. In this Master Class, Andrew discussed how to get started with and use [Textile Powergate](https://docs.textile.io/powergate/), a library that manages storage and retrieval across the Filecoin and IPFS networks.
 
@@ -38,7 +38,7 @@ More generally, Powergate is one of the simplest ways to store on Filecoin, hand
 
 Textile also makes [Buckets](https://docs.textile.io/buckets/), an S3-like cloud storage solution with Filecoin features. You can watch Textile’s Intro to Buckets Master Class [here](https://www.youtube.com/watch?v=Id4SRT9_2CM&list=PL_0VrY55uV19nu6orLLCaGCGocsjvpiGZ&index=5).
 
-#### The Benefits of Using Powergate
+### The Benefits of Using Powergate
 
 - Ensure data stored on Filecoin is available on the IPFS network easily for fast retrieval.
 - Handle long-term storage deal management, including automated renew and repair.
@@ -116,9 +116,7 @@ The Web3 ecosystem has come a long way, with many promising projects in the spac
 **Gabriel Anderson:** “We’re early in the Web3 lifecycle, but now some of the applications are starting to take off, and we are seeing some really innovative early use cases. For example, whether you know it or not, everyone has digital assets, and there is an issue with inheriting that. One company is creating a seamless experience for people to pass on their digital assets. There’s also a whole market for video transcription services that has solved the latency issue at a fraction of a price.”
 
 **Colin Evran:** “We shouldn’t discount how powerful the early adopter ethos is in the Web3 space. The kind of innovation catalyzed by these early adopters working in the same space is incredible.”
+**Shi Khai:** "As developers, we need to focus on building true users and communities who will stay with us. Look for communities of true users who will give you true feedback, versus just people who think it's cool right now because it's new."
 
-**Shi Khai:** “As developers, we need to focus on building true users and communities who will stay with us. Look for communities of true users who will give you true feedback, versus just people who think it’s cool right now because it’s new.”
-
----
-
+Thank you to all the speakers and participants for these Slingshot events!
 Thank you to all the speakers and participants for these Slingshot events! As we head into the final week of Phase 1 of the competition, we’re excited to see how teams are using what they’ve learned from these events. And we look forward to seeing more generations of developers storing and building on Filecoin.

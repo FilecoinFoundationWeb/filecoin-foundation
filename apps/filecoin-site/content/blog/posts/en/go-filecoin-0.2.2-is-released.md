@@ -30,9 +30,9 @@ We’re happy to announce go-filecoin 0.2.2. go-filecoin is the Go implementatio
 
 This release is heavy on behind-the-scenes upgrades, including support for filesystem repo migrations and storage disputes, a better message pool, proofs improvements, and bumps to libp2p and go-libp2p-kad-dht versions for more reliable relays and DHTs. User-facing improvements such as new commands and options, better status messages, and lots of bugfixes are also included. Get pumped!
 
-### Install and Setup
+## Install and Setup
 
-#### ⌛ Chain syncing status
+### ⌛ Chain syncing status
 
 When a filecoin node is first created, it must download and verify the chain. We call this “chain syncing”. While initial commands (such as tapping the faucet or dashboard streaming) can be run immediately, any other commands (such as mining commands) will return errors until chain syncing is complete. Currently, this can take several hours.
 
@@ -269,7 +269,7 @@ A full list of [all 177 PRs in this release](https://github.com/search?q=is%3Apr
 - [@zixuanzh](https://github.com/zixuanzh) (4 comments)
 - [@zjoooooo](https://github.com/zjoooooo) (1 issue, 1 comment)
 
-### 🙌🏽 Want to contribute?
+### 🙌🏽 Want to contribute
 
 Would you like to contribute to the Filecoin project and don’t know how? Here are a few places you can get started:
 
@@ -277,6 +277,6 @@ Would you like to contribute to the Filecoin project and don’t know how? Here 
 - Look for issues with the `good-first-issue` label in [go-filecoin](https://github.com/filecoin-project/go-filecoin/issues?q=is%3Aissue+is%3Aopen+label%3A "good+first+issue") and [rust-fil-proofs](https://github.com/filecoin-project/rust-fil-proofs/issues?q=is%3Aissue+is%3Aopen+label%3A "good+first+issue")
 - Join the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat), introduce yourself in #\_fil-lobby, and let us know where you would like to contribute
 
-### ⁉️ Do you have questions?
+### ⁉️ Do you have questions
 
 The best place to ask your questions about go-filecoin, how it works, and what you can do with it is at [discuss.filecoin.io](https://discuss.filecoin.io/). We are also available at the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat).

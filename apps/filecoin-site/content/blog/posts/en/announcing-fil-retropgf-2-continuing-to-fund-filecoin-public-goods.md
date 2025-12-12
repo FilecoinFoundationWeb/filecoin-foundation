@@ -19,7 +19,7 @@ related_article_2: >-
 
 Inspired by Optimism, FIL-RetroPGF is a pioneering retroactive impact funding initiative tailored to the unique needs of the Filecoin community. [Round 1](https://fil-retropgf.io/) has already made waves, successfully distributing over 200,000 FIL to 95 diverse projects. As we prepare for FIL-RetroPGF-2, set to launch in Fall 2024, our excitement grows as we work to refine and enhance the program, recognizing the remarkable contributions of hundreds of builders in the coming months.
 
-### 💪 Celebrating Our Funders
+## 💪 Celebrating Our Funders
 
 FIL-RetroPGF would not be possible without the generous support of our funders. In the inaugural round, contributors such as Titan Network, [web3mine/Ramo](https://www.ramo.io), [Filecoin Foundation](https://fil.org/), and [Protocol Labs](https://protocol.ai/) played a pivotal role, collectively enabling the distribution of nearly $1 million USD to 95 public goods projects within the Filecoin ecosystem.
 

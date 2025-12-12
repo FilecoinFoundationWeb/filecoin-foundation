@@ -34,11 +34,11 @@ With this update, we once again extend an invitation to security researchers, de
 
 Please make sure to use responsible disclosure and security best practices to minimize impact to the network, and to qualify for rewards.
 
-### Updated Scope
+## Updated Scope
 
 ![](/uploads/fvm-bug-bounty-table.webp)
 
-#### Notes
+### Notes
 
 - Criteria and the wording for this table might be refined in the next 5-7 working days.
 - Responsible disclosures for issues not explicitly listed in the table will still be reviewed and matched up against the severity classification based on their impact.

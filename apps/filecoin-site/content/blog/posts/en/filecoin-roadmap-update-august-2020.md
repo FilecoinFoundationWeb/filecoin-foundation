@@ -24,7 +24,7 @@ _template: blog_detail
 
 Our August 2020 roadmap update covers progress made since the last roadmap update - with a special celebration of today’s launch of the Filecoin Space Race, our incentivized testnet competition. The last two months have seen amazing progress across the project - here are some highlights:
 
-### Space Race
+## Space Race
 
 💸 **Space Race**. Earlier today, we launched [the Filecoin Space Race](https://filecoin.io/blog/welcome-to-space-race), our 3 week collaborative competition intended to stress-test the network, encourage participation all over the world, and provide miners with an opportunity to test-drive Filecoin in advance of the mainnet launch. This is a huge milestone for the Filecoin project - marking our last major update before mainnet launch and the culmination of months of hard work to bring the Filecoin protocol and the Lotus implementation into “mainnet-ready” condition. We expect to continue to make many improvements throughout the competition as miners stress-test the network and help discover issues.
 

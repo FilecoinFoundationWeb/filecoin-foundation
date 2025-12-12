@@ -28,7 +28,7 @@ The Filecoin island economy displays the same division of nature that isolated i
 
 The real beauty is how elegant the complexity is: everything connects into one extensive ecosystem working for change. Filecoin’s economy is more like island life than you think.
 
-### **The Island Analogy**
+## **The Island Analogy**
 
 Several parts of the internet have referred to Filecoin's system as an island economy, referring to how a village on an island separated from the rest of the world works. From an anthropological standpoint, it's somewhat accurate.
 
@@ -47,9 +47,13 @@ The interconnectedness between stakeholders in Filecoin's economy helps create a
 - **Clients:** These are the people who interact with the system, validate the existence of applications, pay for storage on the blockchain or tokens to hold onto, and explore the use-cases that the economy offers.
 - **Storage Providers:** These individuals provide storage to clients, but they also improve and test the protocol and buy and sell tokens. They're responsible for ensuring that the system remains efficient.
 - **Developers:** Without a way for clients to interface with the storage that Filecoin provides, there would be no reason for the protocol to exist. Developers provide context, giving clients a way to interface with the back-end of the blockchain seamlessly.
+
   They improve and test the protocol and receive funding to ensure the protocol remains robust. This investment also creates new products that validate the protocol and provide a more accessible way for clients to interact with the internal system.
+
 - **Token Holders:** These are the individuals who buy and sell tokens with all other ecosystem members. They are the backbone of the economy and ensure that value keeps circulating. Since everyone within the ecosystem needs these tokens to perform actions on the chain, there's always a ready market.
+
   The price fluctuates based on demand, so the better that the rest of the stakeholders are at their job, the more benefit these individuals receive. It's important to note that token holders typically fall into one of the other groups described here — so it's in their best interest to ensure that they do their job well.
+
 - **Ecosystem Partners:** Ecosystem partners are the investors that spend money to develop solutions that keep Filecoin at the forefront of global decentralized storage. They fund and support developers, and buy and sell tokens on the open market, just like other users. They usually only fund projects that have a practical application, however, since they want to boost the platform's usability.
 
 The value within the island economy circulates to each of these individual groups via the FIL tokens.

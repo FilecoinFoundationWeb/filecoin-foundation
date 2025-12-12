@@ -33,13 +33,13 @@ The FVM will enable you to deploy your own smart contracts (or _actors_, as they
 
 Think of storage and retrieval functionality as being Filecoin’s Layer 0 architecture. The ability to perform on-chain computation is now bringing Layer 1 capabilities to the Filecoin stack.
 
-### New Filecoin Use Cases
+## New Filecoin Use Cases
 
 So what does this mean? Why does this matter? What possibilities will it unlock? The FVM can be used for the creation of a new class of web3 dApps, many of which will have the potential to become 10x improvements to the network’s functionality and beyond.
 
 Members of the Filecoin community are already excited about what can be built with these new capabilities. Some ideas that are being discussed in the community are:
 
-#### **Tokenized datasets and Data DAOs**
+### **Tokenized datasets and Data DAOs**
 
 Imagine kickstarting the dataset economy where you could capture and represent the value of those datasets to society. You could even exchange those data tokens between peers and request computation services on that data such as validation, joins, analysis, feature detection and extraction moving into machine learning.
 
@@ -69,13 +69,13 @@ There are many more use cases to unlock with FVM. The only limit is developer im
 
 If you have a great use case idea/suggestion, join the discussion on the FVM forum [here](https://github.com/filecoin-project/community/discussions/categories/developers)!
 
-### How Will This Be Possible?
+### How Will This Be Possible
 
 The FVM is built on a WASM core with the reference SDK built in Rust. There are several amazing builders in our community working on other SDKs for FVM like an AssemblyScript SDK and an experimental TinyGo SDK.
 
 EVM-compatibility out of the box for the FVM is also [in the works](https://github.com/filecoin-project/ref-fvm/issues/692). This means that any use cases currently on EVM can port over and take advantage of the Filecoin storage layer. Likewise, developers can use their current Solidity skills as well as the Ethereum ecosystem tooling like Hardhat or wallets to develop for FVM.
 
-### What Does The Roadmap Look Like?
+### What Does The Roadmap Look Like
 
 User-defined smart contracts have always been part of the Filecoin development roadmap.
 

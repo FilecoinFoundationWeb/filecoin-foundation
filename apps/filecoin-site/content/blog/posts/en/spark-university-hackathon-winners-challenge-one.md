@@ -27,9 +27,9 @@ In June, we shared the news that Filecoin was participating as a challenge partn
 
 > _Build a system for storing, retrieving, and verifying scientific or other research data on Filecoin. Filecoin will store treasure troves of critically important public data, such as encyclopedias, open access scientific papers, Creative Commons data sets, historical documents, and literature. In this challenge, you will explore those possibilities for storing, using, and distributing public data. You may wish to take advantage of Filecoin’s data integrity & verification capabilities, or reference the Starling Storage project for inspiration._
 
-### Third Place
+## Third Place
 
-#### Filecoin Research Repository
+### Filecoin Research Repository
 
 ![Filecoin Research Repository](https://filecoin.io/vintage/images/blog/filecoin-research-repository.jpg)
 

@@ -28,7 +28,7 @@ _template: blog_detail
 
 Recently [Electric Coin Co.](https://electriccoin.co/ "Electric Coin Co.") (ECC) [announced](https://electriccoin.co/blog/ethereum-zcash-filecoin-collab/) that [Protocol Labs](https://protocol.ai "Protocol Labs"), the [Filecoin Foundation](https://fil.org/ "Filecoin Foundation"), the [Ethereum Foundation](https://ethereum.org/en/foundation/ "Ethereum Foundation"), and ECC would be collaborating to explore research and development of [Halo](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/) — a solution to zero knowledge recursive proofs without requiring a trusted setup.
 
-### Quick primer on zero knowledge, recursive proofs, and Halo
+## Quick primer on zero knowledge, recursive proofs, and Halo
 
 _Zero knowledge_ is a branch of cryptography focused on methods of verifying solutions (“answers”) without needing to see the underlying data.
 

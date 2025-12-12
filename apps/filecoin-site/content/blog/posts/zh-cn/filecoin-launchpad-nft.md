@@ -25,13 +25,13 @@ _template: blog_detail_ch
 
 9月28日，总计20个团队参加了由Tachyon运营、由Filecoin Launchpad加速器主办的路演。该加速器是一个为期6周的课程，致力于孵化年轻的Web3公司。以下是在加速器中出现并在路演期间展示的NFT项目概述。[在此](https://www.youtube.com/watch?v=UWuaSP6YuJ4)观看完整路演。
 
-### Nftfy
+## Nftfy
 
 _Nftfy为世界上最有价值的NFT提供部分所有权。_
 
 {{< youtube id="PbMJka8jK4Q" title="Nftfy" >}}
 
-#### **何为Nftfy?**
+### **何为Nftfy?**
 
 Nftfy提供珍贵的NFT“股份”，利润丰厚的NFT通常过于昂贵而很难被直接拿下，Nftfy的存在让较小的利益相关者可以获得其部分所有权。
 

@@ -22,9 +22,9 @@ _template: blog_detail_ch
 
 **欢迎来到第12期Filecoin新闻!如果您想就新闻中的相关内容联系我们，请至**[**Filecoin Slack**](http://filecoin.io/slack)。
 
-### **创建**
+## **创建**
 
-#### **⚡️分布式生态基金**
+### **⚡️分布式生态基金**
 
 分布式资本与协议实验室合作宣布成立1500多万美元的投资基金。该基金的使命是推动IPFS和Filecoin生态的发展。分布式计划筹集1500-2000万美元，并承诺将所有筹资和投资都以FIL的形式，而不是稳定币或其他加密资产。分布式已与其他有限合伙人一起向基金投入了100万美元。分布式预计目标投资交易主要有三个来源：Slingshot项目、LongHash Filecoin Frontier 加速营和中国社区。有关该基金的更多信息，请参见[Blog](https://filecoin.io/blog/posts/the-fenbushi-ecosystem-fund-for-filecoin-development/)。
 

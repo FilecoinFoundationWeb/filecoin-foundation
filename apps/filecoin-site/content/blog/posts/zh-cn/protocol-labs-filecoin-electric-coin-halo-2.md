@@ -25,7 +25,7 @@ _template: blog_detail_ch
 
 最近[Electric Coin](https://electriccoin.co/ "Electric Coin Co.") (ECC) [宣布](https://electriccoin.co/blog/ethereum-zcash-filecoin-collab/)[Protocol Labs](https://protocol.ai "Protocol Labs")、[Filecoin基金会](https://fil.org/ "Filecoin Foundation")、[以太坊基金会](https://ethereum.org/en/foundation/ "Ethereum Foundation")和ECC公司会协作探索研究和开发[Halo](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/) ——　这是一个无需可信设置阶段的递归零知识证明解决方案。
 
-### 基础知识：零知识，递归证明以及Halo
+## 基础知识：零知识，递归证明以及Halo
 
 _零知识（Zero knowledge）_ 是密码学的一个分支，主打在无需看到底层数据的情况下验证答案的方法。
 

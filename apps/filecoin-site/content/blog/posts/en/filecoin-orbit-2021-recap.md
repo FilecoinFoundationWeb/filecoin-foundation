@@ -34,9 +34,9 @@ _template: blog_detail
 
 The week was packed with enlightening and informative events, check out the recap below and [head over to the Filecoin Orbit YouTube playlist](https://www.youtube.com/playlist?list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz) for a full list of talks.
 
-### Announcements
+## Announcements
 
-#### 💻 Filecoin Virtual Machine
+### 💻 Filecoin Virtual Machine
 
 Announcing [the Filecoin Virtual Machine (FVM)](https://www.youtube.com/watch?v=Vw9syGiG31c&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=3)!
 

@@ -36,7 +36,7 @@ Today, we have a number of interesting announcements to make:
 - Advisor Sale
 - Video leak and CoinList investing video
 
-### Filecoin page opens on CoinList
+## Filecoin page opens on CoinList
 
 [The Filecoin page is now open on CoinList](https://coinlist.co/currencies/filecoin)! This page is the jumping off point for the Filecoin Token Sale. It includes an overview of the Network and the project, collects all the documents related to Filecoin and the token sale, and lists recent news articles. Once the token sale starts, investments will be made through this web page, and a graph of the sale progress will appear.
 

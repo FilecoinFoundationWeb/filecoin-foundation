@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>创建</b></h3>
 
-### 参与Web3周末见面会（Web3 Weekend，5月28-30日）
+## 参与Web3周末见面会（Web3 Weekend，5月28-30日）
 
 **Web3周末**是由Protocol Labs, Audius和以太坊基金会赞助的，它将会以线上见面的形式，聚集一批热情的创意人士和工程师，从而打造一个旨在探索及开发Web3应用的周末。在这个黑客松期间，你可以获得一个庞大社区的专家、导师、创造者、赞助商及其他有意助你设计和打造未来网络的社区成员。活动提供了25000美元以上的多种形式的奖项
 

@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 <img src="/uploads/metamask.webp" style="width:30%;margin-left:0%">
 
-### **开发者预览版：Filecoin加入MetaMask**
+## **开发者预览版：Filecoin加入MetaMask**
 
 这一版本的MetaMask专为开发者发布，基于即将上线的MetaMask Snaps可扩展性系统，包含对Filecoin的初步支持。MetaMask针对开发者推出的这一特别版，为Filecoin开发者基于Filecoin创建Web3网站创造了条件。只需访问登陆页，按提示操作即可开始创建！
 

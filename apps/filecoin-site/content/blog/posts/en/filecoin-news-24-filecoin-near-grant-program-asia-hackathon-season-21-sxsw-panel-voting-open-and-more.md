@@ -32,7 +32,7 @@ title:
 
 <a href="https://filecoin.io/blog/posts/filecoin-launches-collaboration-with-near-to-accelerate-the-growth-of-the-web3-stack/"><img src="/uploads/filecoin-near.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin Launches Collaboration with NEAR to Accelerate the Growth of the Web3 Stack
+## Filecoin Launches Collaboration with NEAR to Accelerate the Growth of the Web3 Stack
 
 In July 2021, Textile launched the Filecoin-NEAR bridge, taking the first step to provide simple, permissionless storage for smart contracts on NEAR — a sharded layer 1 blockchain protocol for building user-friendly decentralized applications. The first of its kind storage bridge creates a seamless way for NEAR applications, smart contracts, or NFTs to integrate Filecoin-based storage of any form of data. In addition, to encourage utilisation of the bridge, storage costs on Filecoin via the bridge will be provided free.
 

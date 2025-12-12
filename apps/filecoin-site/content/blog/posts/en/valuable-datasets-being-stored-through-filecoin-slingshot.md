@@ -28,7 +28,7 @@ Over the last two weeks, the Filecoin community has stored more than 170 TiB of 
 
 Collectively, we have seen teams create Dropbox-style storage apps, games, and UIs around a variety of datasets – scientific, cultural, entertainment, software, and more! Let’s dive into some of the most interesting datasets we’ve seen so far in this competition.
 
-### Team: [Smartcity](https://github.com/filecoin-project/slingshot/blob/master/participants/Smartcity%20Sensor-based%20network%20and%20data%20analysis%20system.md)
+## Team: [Smartcity](https://github.com/filecoin-project/slingshot/blob/master/participants/Smartcity%20Sensor-based%20network%20and%20data%20analysis%20system.md)
 
 **Dataset:** Optical fiber data
 

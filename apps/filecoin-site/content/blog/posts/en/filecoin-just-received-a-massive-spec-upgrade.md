@@ -31,7 +31,7 @@ If you haven’t visited the Filecoin Spec site recently, head over to: [https:/
 
 The Spec website went through several “design → implement → deploy” rounds, in order to integrate all the features essential to create a great platform for Filecoin developers, implementers, researchers and ecosystem developers. Additionally, we reduced the complexity required to update the spec content, applied structured dependency management, added features to ensure consistency throughout the spec, added support for new tools, and much more!
 
-### New Filecoin specification contribution workflows
+## New Filecoin specification contribution workflows
 
 Updating the spec content is now a much simpler and more enjoyable experience that involves “single-touch” edits in markdown files. The backend mechanics take care of the rest, updating the Table of Contents (ToC) and document structure automatically! You can find all the simple instructions needed in order to contribute in the spec’s repo [README file](https://github.com/filecoin-project/specs/blob/master/README.md).
 
@@ -92,7 +92,7 @@ After several testing rounds and two impressive Space Race competitions, the pro
 
 In most cases, FIPs will require updates to the protocol specification and therefore one of the streams of our ongoing efforts include seamless integration of the Filecoin Spec with the FIP process.
 
-### What’s Next?
+### What’s Next
 
 We are also integrating spec versioning to create a Time Machine of the specification itself such that you can view back in time what the spec was prior to a protocol update. Last but certainly not least, we are integrating tools to pull data from remote sources through an API proxy. This will enable the seamless integration with FIPs but will also allow us to extend the dashboard to include the status of “Conformance Tests”.
 

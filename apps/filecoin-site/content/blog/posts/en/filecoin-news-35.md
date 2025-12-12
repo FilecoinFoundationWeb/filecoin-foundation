@@ -27,7 +27,7 @@ title: Filecoin News 35
 
 <a href="https://largedata.filecoin.io"><img src="/uploads/screen-shot-2022-02-01-at-3-37-00-pm.webp" style="width:40%;margin-left:0%"></a>
 
-### **Filecoin for Large Datasets Website Launch**
+## **Filecoin for Large Datasets Website Launch**
 
 Decentralized storage provides drastic improvements in terms of robustness and efficiency when compared to traditional cloud storage, leading organizations such as the Shoah Foundation to trust Filecoin with its large data needs. The Filecoin community is excited to introduce a dedicated [website](https://largedata.filecoin.io) for these services as a cheaper Web3 alternative to its Web 2 predecessors with more than 15+ EiB available in storage power. [Read more](https://filecoin.io/blog/posts/filecoin-for-large-data/) on Filecoin’s solutions for large data sets and find out how you can earn a referral bounty with Project Gravity II.
 

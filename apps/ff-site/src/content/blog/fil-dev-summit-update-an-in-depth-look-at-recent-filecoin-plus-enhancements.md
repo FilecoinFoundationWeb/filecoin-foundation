@@ -15,7 +15,7 @@ seo:
 
 As we prepare for the upcoming Fil Dev Summit, we're providing a view of recent enhancements to the Filecoin Plus (Fil+) program. These improvements are crucial for fostering a robust, transparent, and effective community, and they'll set the stage for our collaborative workshops at FDS-6.
 
-### Advanced Metrics and Enhanced Transparency
+## Advanced Metrics and Enhanced Transparency
 
 Our flagship analytics platform, [datacapstats.io](http://datacapstats.io), has undergone substantial improvements. Allocators and Storage Providers (SPs) now have unprecedented transparency:
 

@@ -31,7 +31,7 @@ _template: blog_detail_ch
 
 <a href="https://spec.filecoin.io/intro/filecoin_vm/"><img src="/uploads/fil-blog-2021-11-02-fvm.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin虚拟机（FVM）官宣
+## Filecoin虚拟机（FVM）官宣
 
 Filecoin虚拟机的目标是让用户能够在Filecoin区块链上配置个人智能合约。FVM使Filecoin区块链拥有与Ethereum虚拟机智能合约通用的可编程性和兼容性。Filecoin Orbit的与会者是世界上首批了解FVM、FVM愿景、FVM将解锁的数千个机会、FVM的实施路线图以及如何[加入FVM] 的人(https://spec.filecoin.io /intro/filecoin_vm/)。
 

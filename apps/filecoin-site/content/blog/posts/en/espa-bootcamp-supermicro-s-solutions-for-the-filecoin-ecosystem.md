@@ -29,7 +29,7 @@ The Enterprise Storage Provider Accelerator program is designed to help startups
 
 [Supermicro](https://www.supermicro.com/en) started developing application-optimized server building blocks in 1993 and has evolved into a global provider of fully-integrated rack solutions. Now, the company has taken on the task of facilitating the transition from Web 2.0 to Web3 with solutions that acknowledge the hardware needs of decentralized protocols.
 
-### Solutions
+## Solutions
 
 The building blocks of Web3 infrastructure need to be appropriate in size. To this end, Supermicro offers key products for Storage Providers (SPs) to choose from:
 

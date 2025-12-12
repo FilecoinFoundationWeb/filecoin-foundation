@@ -29,7 +29,7 @@ title:
 
 <a href="https://gitcoin.co/hackathon/gr9/?org=protocol"><img src="/uploads/GR9.webp" style="width:30%;margin-left:0%"></a>
 
-### Gitcoin GR9 Hackathon: March 10-31
+## Gitcoin GR9 Hackathon: March 10-31
 
 Are you working on a project in the Filecoin ecosystem? If so, the GR9 Hackathon is a great opportunity for you to explore new features and potentially get funded for your work. Protocol Labs and its ecosystem collaborators Textile and Fleek are participating in Gitcoin’s GR9 Hackathon with a total of $63k in FIL bounties available for projects built on top of IPFS and Filecoin. Explore building dapps with Fleek’s new Space SDK, Textile’s Threads, Buckets, and new Powergate Miner Index, showcase your integrations with IPFS, or try out a Filecoin tutorial. [**Check it out!**](https://gitcoin.co/hackathon/gr9/?org=protocol)
 

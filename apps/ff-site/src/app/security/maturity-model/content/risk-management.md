@@ -3,9 +3,9 @@ title: Risk Management
 order: 3
 ---
 
-#### 1. Risk Assessment and Prioritization
+## 1. Risk Assessment and Prioritization
 
-##### 1.1 Risk Identification
+### 1.1 Risk Identification
 
 - You’ve identified security risks within the organization
 - You are actively considering risk in business decisions
@@ -13,7 +13,7 @@ order: 3
 - Level 2: Is the risk register regularly updated with identified risks using systematic methods and tools?
 - Level 3: Is there a comprehensive, proactive approach for risk identification, with an advanced, constantly updated risk register incorporating community and stakeholder feedback?
 
-##### 1.2 Risk Prioritization
+#### 1.2 Risk Prioritization
 
 - You’ve measured your risks and are tracking them in a central location
 - You have a risk register and method of classification of risks

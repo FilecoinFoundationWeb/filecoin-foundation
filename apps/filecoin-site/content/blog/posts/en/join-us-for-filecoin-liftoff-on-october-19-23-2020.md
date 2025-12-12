@@ -26,13 +26,13 @@ _template: blog_detail
 
 The Filecoin Network is now LIVE! This marks the culmination of years of innovation and hard work, and we thank everyone who dedicated their time, ideas, and expertise to make Filecoin a reality. To read more about this milestone, check our blog post on the launch [here](https://filecoin.io/blog/mainnet-liftoff/).
 
-### Join us for Filecoin Liftoff
+## Join us for Filecoin Liftoff
 
 Next week, let’s celebrate Filecoin’s launch together at [**Filecoin Liftoff**](https://liftoff.filecoin.io/)**: a series of talks, panels, and workshops curated by the web3 community to chart the network’s future**. Registration is free, but required for attendance; we highly encourage you to register and attend as many sessions as you can.
 
 Filecoin Liftoff will be held from October 19-23. Each day will have a different focus, from building on Filecoin to the future of the network, with amazing sessions, speakers, and announcements planned throughout the week.
 
-#### October 19th - All Systems Go
+### October 19th - All Systems Go
 
 Join Juan Benet, Dan Boneh, Olaf Carson-Wee, and Marta Belcher to learn about why Filecoin’s launch is a pivotal moment for the decentralized web.
 

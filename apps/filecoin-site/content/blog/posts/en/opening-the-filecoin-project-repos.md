@@ -29,7 +29,7 @@ Today, we are excited to open several repos on GitHub, and invite everybody to j
 
 Please note: Filecoin is in heavy development. Code is changing drastically day to day. At this stage, the repos, devnets, and other resources are **for development**. This release is aimed for developers, researchers, and community members who want to help _make_ Filecoin. Miners and users who seek to _use_ Filecoin will want to wait for a future release (likely, [the testnet milestone](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.b17ldb17wszo)). Read our [Getting Started Guide](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/) to find out more.
 
-### What is in this release?
+## What is in this release
 
 A few hours ago, we opened up the [Filecoin Project repos on GitHub](https://github.com/filecoin-project), development networks ([the user and nightly devnets](https://github.com/filecoin-project/go-filecoin/wiki/Devnets)), chat channels ([Slack](https://join.slack.com/t/filecoinproject/shared_invite/enQtNTUwNTI1Mzk5MDYwLTI2MmMxNzNjYjhlYWM3YjQxM2E4MThmM2ZhY2JkYWIxNGVjMGVmNTg3Y2VhZjQ3OGM5ZTc1OGFmZGZhMzZmMTI), [Matrix](https://riot.im/app/#/group/+filecoin:matrix.org), [IRC coming soon](https://github.com/filecoin-project/community/issues/4)), [discussion forum](https://discuss.filecoin.io/), and [project management tools](https://app.zenhub.com/workspace/o/filecoin-project/go-filecoin/). Here’s what this means:
 

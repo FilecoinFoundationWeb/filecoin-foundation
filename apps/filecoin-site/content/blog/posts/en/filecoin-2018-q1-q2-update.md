@@ -25,16 +25,20 @@ title: Filecoin 2018 Q1 & Q2 update
 _template: blog_detail
 ---
 
-### 0. Table of Contents
+## 0. Table of Contents
 
 1. Filecoin Development Update
+
    1. Demos of go-filecoin
    2. Codebase opening up
+
 2. Filecoin Research Update
 3. Filecoin Project Roadmap
+
    1. Optimistic Timeline
    2. Where are we
    3. Upcoming Milestones
+
 4. Filecoin Public Talks & Media
 5. libp2p update for Filecoin
 6. IPFS update for Filecoin
@@ -150,74 +154,74 @@ In rough terms, this is a high-level view of where we are. (These phases are not
 Our coming milestones are as follows:
 
 - **go-filecoin demos published (2018 Q3)**
-  - As part of this update we are publishing a set of demos demonstrating features of **go-filecoin**.
+- As part of this update we are publishing a set of demos demonstrating features of **go-filecoin**.
 - **go-filecoin collaborator & contributor preview (ETA: 2018 Q4)**
-  - We will be inviting a number of collaborators & contributors to our codebases before opening them up. You can [register your interest in this form](https://goo.gl/forms/LHWWjW6mzFkUXbB42).
-  - The main goals of this are to improve documentation, take preliminary questions, and make general preparations for a public release.
-  - This will also help us transfer knowledge to a broader set of contributors who can help us with the upcoming onslaught of questions, issues, and PRs.
+- We will be inviting a number of collaborators & contributors to our codebases before opening them up. You can [register your interest in this form](https://goo.gl/forms/LHWWjW6mzFkUXbB42).
+- The main goals of this are to improve documentation, take preliminary questions, and make general preparations for a public release.
+- This will also help us transfer knowledge to a broader set of contributors who can help us with the upcoming onslaught of questions, issues, and PRs.
 - **Opening up the go-filecoin codebase (ETA: 2018 Q4/2019 Q1)**
-  - We will be opening the github repositories hosting the go-filecoin implementation and related tools.
-  - This will be a major point of involvement for the community at large, and we strongly encourage the participation of developers interested in developing Filecoin or in building applications on it.
-  - In the short term, this will likely slow our implementation pace, as our team will face open source maintainer duties and spend time responding to questions from our broader developer community learning the codebase.
-  - In the long run, this will speed up our implementation pace, as the amount of people who can contribute will increase.
+- We will be opening the github repositories hosting the go-filecoin implementation and related tools.
+- This will be a major point of involvement for the community at large, and we strongly encourage the participation of developers interested in developing Filecoin or in building applications on it.
+- In the short term, this will likely slow our implementation pace, as our team will face open source maintainer duties and spend time responding to questions from our broader developer community learning the codebase.
+- In the long run, this will speed up our implementation pace, as the amount of people who can contribute will increase.
 - **Launching the first public Filecoin testnet (ETA: 2018 Q4/2019 Q1)**
-  - We are getting much closer to launching the first public Filecoin testnet.
-  - This will be a testnet of **go-filecoin** nodes, and will gradually scale up – starting with 100s of nodes, and ramping up orders of magnitude to 1,000s, 10,000s, and so on.
-  - We will run our testnet in conditions as close to real as we can, so we will be pushing lots of data to testnet miners.
-  - We will help onboard miners & clients signed up on our forms ([miner form](https://docs.google.com/forms/d/e/1FAIpQLSfdFpWhJj8OIGA2iXrT3bnLgVK9bgR_1iLMPdAcXLxr_1d-pw/viewform), [early user form](https://docs.google.com/forms/d/e/1FAIpQLSdCOjMenUU7WtT54zeAivCS2nnaWYQIgaXh0eRdIdpi6Pwkew/viewform)). If you have already completed the form, stay tuned!
+- We are getting much closer to launching the first public Filecoin testnet.
+- This will be a testnet of **go-filecoin** nodes, and will gradually scale up – starting with 100s of nodes, and ramping up orders of magnitude to 1,000s, 10,000s, and so on.
+- We will run our testnet in conditions as close to real as we can, so we will be pushing lots of data to testnet miners.
+- We will help onboard miners & clients signed up on our forms ([miner form](https://docs.google.com/forms/d/e/1FAIpQLSfdFpWhJj8OIGA2iXrT3bnLgVK9bgR_1iLMPdAcXLxr_1d-pw/viewform), [early user form](https://docs.google.com/forms/d/e/1FAIpQLSdCOjMenUU7WtT54zeAivCS2nnaWYQIgaXh0eRdIdpi6Pwkew/viewform)). If you have already completed the form, stay tuned!
 - **Testing with sets of large scale miners (10 PB+) (ETA: 2019 Q1)**
-  - We are getting close to running our first tests with very large scale miners.
-  - We will be selecting from miners [signed up on our form](https://docs.google.com/forms/d/e/1FAIpQLSfdFpWhJj8OIGA2iXrT3bnLgVK9bgR_1iLMPdAcXLxr_1d-pw/viewform).
+- We are getting close to running our first tests with very large scale miners.
+- We will be selecting from miners [signed up on our form](https://docs.google.com/forms/d/e/1FAIpQLSfdFpWhJj8OIGA2iXrT3bnLgVK9bgR_1iLMPdAcXLxr_1d-pw/viewform).
 - **go-filecoin v1.0.0 feature freeze (ETA: 2019 Q1/Q2)**
-  - Before launch we will reach a feature freeze for the **go-filecoin** codebase, after which only bug fixes and polish before launch.
-  - This enables reviews, audits, and preparations for launch.
+- Before launch we will reach a feature freeze for the **go-filecoin** codebase, after which only bug fixes and polish before launch.
+- This enables reviews, audits, and preparations for launch.
 - **Security Review & Audit (ETA: 2019 Q1/Q2)**
-  - Before we can launch, we need to conduct full security reviews and external audits of our codebases.
-  - This is a critical step for secure software crypto-systems.
-  - If you are interested in reviewing & auditing our code, get in touch.
+- Before we can launch, we need to conduct full security reviews and external audits of our codebases.
+- This is a critical step for secure software crypto-systems.
+- If you are interested in reviewing & auditing our code, get in touch.
 - **Launching the Filecoin mainnet (ETA: 2019 Q2/Q3)**
-  - Once we are certain we are safe to launch, we will set a target launch date.
+- Once we are certain we are safe to launch, we will set a target launch date.
 - **Scaling the network (2019+)**
-  - Once launched, we will work closely with miners seeking to onboard.
-  - We will work on technology improvements to enable scaling, including solutions to general blockchain scaling problems (off chain, sharding, partition tolerance).
+- Once launched, we will work closely with miners seeking to onboard.
+- We will work on technology improvements to enable scaling, including solutions to general blockchain scaling problems (off chain, sharding, partition tolerance).
 - **Growing the utility of the network (2019+)**
-  - Once launched, we will work closely with clients seeking to use Filecoin.
-  - We will work on integrations and supporting applications to enable broader uses of Filecoin.
+- Once launched, we will work closely with clients seeking to use Filecoin.
+- We will work on integrations and supporting applications to enable broader uses of Filecoin.
 - **Improving the Network (2019+)**
-  - We are already researching significant improvements to Filecoin and to blockchains in general.
-  - We will continue improving the network, through a standard open source improvement proposal process.
+- We are already researching significant improvements to Filecoin and to blockchains in general.
+- We will continue improving the network, through a standard open source improvement proposal process.
 - **Forming the Filecoin Foundation (2019+)**
-  - Form and boot up the Filecoin Foundation, to safeguard the network, drive governance, and more.
-  - Foundations are critical institutions in blockchain networks, and we have big hopes for ours. If you are interested in working with us on governance questions, driving future research and usage of Filecoin, and public storage utilities, please reach out.
+- Form and boot up the Filecoin Foundation, to safeguard the network, drive governance, and more.
+- Foundations are critical institutions in blockchain networks, and we have big hopes for ours. If you are interested in working with us on governance questions, driving future research and usage of Filecoin, and public storage utilities, please reach out.
 - **And more.**
-  - We have many more plans, but we are focused on the milestones listed above now.
+- We have many more plans, but we are focused on the milestones listed above now.
 
 ### 4. Filecoin Public Talks & Media
 
 We have stayed mostly out of the public sphere this year, as we have been focused on building. We gave a few public talks, and visited a few research groups. Our activity will remain similarly constrained until the lead-up to the launch of the network.
 
 - **Public Talks** _video linked if available_
-  - 2018-01: Filecoin: protocol overview, the important results, and new open problems (Juan Benet, BPASE 2018)
-  - 2018-01: Proof of Replication using Depth Robust Graphs (Ben Fisch, BPASE 2018)
-  - 2018-03: [Filecoin: a robust foundation for human knowledge](https://www.youtube.com/watch?v=6h2WNxEV8q4) (Juan Benet, Blockstack Berlin 2018)
-  - 2018-04: [Filecoin and the Rise of Open Services](https://www.youtube.com/watch?v=IfLIoOr4p0A) (Juan Benet, MIT Bitcoin Club 2018)
-  - 2018-06: [Good SNARKs are here needed](https://www.youtube.com/watch?v=QII1xq9J7NY) (Nicola Greco, Zcon0)
-  - 2018-07: Filecoin as a user of libp2p (Juan Benet, libp2p dev meetings)
-  - _Want us to speak at your conference?_ [_Let us know here._](https://goo.gl/forms/xQQRSnWibbC6DTt22)
+- 2018-01: Filecoin: protocol overview, the important results, and new open problems (Juan Benet, BPASE 2018)
+- 2018-01: Proof of Replication using Depth Robust Graphs (Ben Fisch, BPASE 2018)
+- 2018-03: [Filecoin: a robust foundation for human knowledge](https://www.youtube.com/watch?v=6h2WNxEV8q4) (Juan Benet, Blockstack Berlin 2018)
+- 2018-04: [Filecoin and the Rise of Open Services](https://www.youtube.com/watch?v=IfLIoOr4p0A) (Juan Benet, MIT Bitcoin Club 2018)
+- 2018-06: [Good SNARKs are here needed](https://www.youtube.com/watch?v=QII1xq9J7NY) (Nicola Greco, Zcon0)
+- 2018-07: Filecoin as a user of libp2p (Juan Benet, libp2p dev meetings)
+- _Want us to speak at your conference?_ [_Let us know here._](https://goo.gl/forms/xQQRSnWibbC6DTt22)
 - **University, Research Group, & Community Visits** _chronologically_
-  - [Security Lab](https://seclab.stanford.edu/) @ Stanford CS
-  - [Decentralized Information Group](http://dig.csail.mit.edu/) @ MIT CSAIL ([visit](https://www.csail.mit.edu/event/help-us-decentralize-web-overview-ipfs-libp2p-ipld-and-filecoin))
-  - Cryptoeconomics Lab @ MIT Sloan
-  - [Digital Currency Initiative](https://dci.mit.edu/) @ MIT Media Lab
-  - [FilecoinClub Beijing Community Meetup](https://www.youtube.com/watch?v=95p5fJ6_wLY)
-  - [CS294-144](https://berkeley-blockchain.github.io/cs294-144-s18/) @ UC Berkeley
-  - University College London (UCL)
-  - Stanford Graduate School of Business (GSB)
-  - Harvard Business School (HBS)
-  - [IMDEA Software Institute](https://software.imdea.org/)
-  - [Center for Blockchain Research](https://cbr.stanford.edu/) @ Stanford CS
-  - Filecoin Demo @ Decentralized Web Summit 2018
-  - _Want us to visit & speak with your lab?_ [_Let us know here._](https://goo.gl/forms/BJHIg6r5nJGF5sQ72)
+- [Security Lab](https://seclab.stanford.edu/) @ Stanford CS
+- [Decentralized Information Group](http://dig.csail.mit.edu/) @ MIT CSAIL ([visit](https://www.csail.mit.edu/event/help-us-decentralize-web-overview-ipfs-libp2p-ipld-and-filecoin))
+- Cryptoeconomics Lab @ MIT Sloan
+- [Digital Currency Initiative](https://dci.mit.edu/) @ MIT Media Lab
+- [FilecoinClub Beijing Community Meetup](https://www.youtube.com/watch?v=95p5fJ6_wLY)
+- [CS294-144](https://berkeley-blockchain.github.io/cs294-144-s18/) @ UC Berkeley
+- University College London (UCL)
+- Stanford Graduate School of Business (GSB)
+- Harvard Business School (HBS)
+- [IMDEA Software Institute](https://software.imdea.org/)
+- [Center for Blockchain Research](https://cbr.stanford.edu/) @ Stanford CS
+- Filecoin Demo @ Decentralized Web Summit 2018
+- _Want us to visit & speak with your lab?_ [_Let us know here._](https://goo.gl/forms/BJHIg6r5nJGF5sQ72)
 
 ### 5. libp2p update for Filecoin
 
@@ -240,21 +244,21 @@ Filecoin is built on top of and depends heavily on [IPFS](https://ipfs.tech/), a
 - **Browser support for IPFS.** IPFS protocol handlers (eg `ipfs://`) have been added to Brave and Firefox Nightly. This kind of support from major players makes decentralized technologies much more likely to reach mainstream users.
 - **Lots of Releases.** go-ipfs has had [3 releases](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md): [v0.4.15](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0415-2018-05-09), [v0.4.16](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0416-rc3-2018-07-09), [v0.4.17](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0417-2018-07-27). js-ipfs has had [19 releases](https://github.com/ipfs/js-ipfs/releases), including: [v0.28.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.28.0), [v0.29.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.29.0), [v0.30.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.30.0), [v0.31.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.31.0). Check out the links for summaries of what’s new and the full changelogs!
 - **Some recent IPFS User Highlights.**
-  - [DTube - decentralized video platform](https://d.tube/)
-  - [JanusVR viewer for Decentraland (content from ipfs)](https://www.youtube.com/watch?v=841vXBopH68)
-  - [Textile Photos - a digital wallet for your photos, end-to-end encrypted](https://www.textile.photos/)
-  - Paratii - distributed curation protocol and streaming engine
-  - [Peergos - end-to-end encrypted, p2p file storage and sharing](https://peergos.org/)
+- [DTube - decentralized video platform](https://d.tube/)
+- [JanusVR viewer for Decentraland (content from ipfs)](https://www.youtube.com/watch?v=841vXBopH68)
+- [Textile Photos - a digital wallet for your photos, end-to-end encrypted](https://www.textile.photos/)
+- Paratii - distributed curation protocol and streaming engine
+- [Peergos - end-to-end encrypted, p2p file storage and sharing](https://peergos.org/)
 
 - **Community Talks, Articles, Tutorials**
-  - _Article_: [Textile: Adding the next million peers to IPFS](https://medium.com/textileio/adding-the-next-million-peers-to-ipfs-76d356352d14)
-  - _Article_: [Decentralized code distribution for the future of open source](https://medium.com/textileio/decentralized-code-distribution-for-the-future-of-open-source-2dc58f1153b2)
-  - _Talk_: [Real serverless with CRDTs and IPFS (scalarconf)](https://www.youtube.com/watch?v=EscG2aytq10)
-  - _Talks_: IPFS Lightning Talks at DWeb Summit
-  - _Tutorial_: [Building an interplanetary ĐApp from scratch](https://medium.com/textileio/building-an-interplanetary-%C4%91app-from-scratch-51f9b8be5a74)
-  - _Tutorial_: [IPFS Cluster Peer Installer for EC2](https://medium.com/textileio/tutorial-series-setting-up-an-ipfs-peer-4056e6c69612)
-  - _Tutorial_: [Code a simple P2P blockchain in Go](https://medium.com/@mycoralhealth/code-a-simple-p2p-blockchain-in-go-46662601f417)
-  - _Tutorial_: [From Zero to Interplanetary Hero (browser-based ĐApps with IPFS)](https://medium.freecodecamp.org/from-zero-to-interplanetary-hero-7e62f7d4427)
+- _Article_: [Textile: Adding the next million peers to IPFS](https://medium.com/textileio/adding-the-next-million-peers-to-ipfs-76d356352d14)
+- _Article_: [Decentralized code distribution for the future of open source](https://medium.com/textileio/decentralized-code-distribution-for-the-future-of-open-source-2dc58f1153b2)
+- _Talk_: [Real serverless with CRDTs and IPFS (scalarconf)](https://www.youtube.com/watch?v=EscG2aytq10)
+- _Talks_: IPFS Lightning Talks at DWeb Summit
+- _Tutorial_: [Building an interplanetary ĐApp from scratch](https://medium.com/textileio/building-an-interplanetary-%C4%91app-from-scratch-51f9b8be5a74)
+- _Tutorial_: [IPFS Cluster Peer Installer for EC2](https://medium.com/textileio/tutorial-series-setting-up-an-ipfs-peer-4056e6c69612)
+- _Tutorial_: [Code a simple P2P blockchain in Go](https://medium.com/@mycoralhealth/code-a-simple-p2p-blockchain-in-go-46662601f417)
+- _Tutorial_: [From Zero to Interplanetary Hero (browser-based ĐApps with IPFS)](https://medium.freecodecamp.org/from-zero-to-interplanetary-hero-7e62f7d4427)
 
 ### 7. Changes to the blog and to our updates
 

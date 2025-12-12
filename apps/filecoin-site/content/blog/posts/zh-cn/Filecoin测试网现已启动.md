@@ -22,7 +22,7 @@ title: Filecoin测试网现已启动
 
 今天是Filecoin具有里程碑意义的一天，我们的Filecoin测试网([准时](https://filecoin.io/blog/update-2019-q2-q3/#1-launches-testnet-on-dec-11-mainnet-in-2020-q1))上线了！经过了大量的研究，设计和开发，Filecoin协议已经为网络测试做好准备。我们非常激动地和大家分享这个消息！
 
-### **什么是Filecoin测试网？**
+## **什么是Filecoin测试网？**
 
 Filecoin测试网是一个用于实现Filecoin协议完整功能的测试网络。这也是一个用来测试和优化的阶段。测试网的目的是在主网上线之前在一定规模下衡量Filecoin并且修复出现的问题。测试网一直以来都是开放给所有人来接入和访问的，Filecoin代码库一直是免费并且开源的。任何人都可以安装软件来接入网络并浏览Filecoin。
 

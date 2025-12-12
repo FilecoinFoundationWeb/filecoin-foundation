@@ -25,7 +25,7 @@ _template: blog_detail
 
 One of Filecoin’s launch goals [has always been](https://filecoin.io/blog/announcing-lotus/#why-multiple-implementations) to have multiple independent protocol implementations to help secure the network at launch. In this post, we’ll detail the recent progress and next steps for each of the four major implementations: [Forest](https://github.com/ChainSafe/forest), built by Chainsafe; [Fuhon](https://github.com/filecoin-project/cpp-filecoin), developed by Soramitsu; [Venus (previously known as go-filecoin)](https://github.com/filecoin-project/venus), stewarded by IPFSForce; and [Lotus](https://github.com/filecoin-project/lotus), created by Protocol Labs.
 
-### Forest
+## Forest
 
 [Forest](https://github.com/ChainSafe/forest) is a Rust Filecoin implementation developed by ChainSafe. The project is currently focusing on two main goals, the primary of which is syncing and interoperability with mainnet. The team aims to achieve this in stages, first enabling a direct import of the chain, then progressing to syncing the chain over the network. As a secondary goal, the team is working toward full-node functionality.
 

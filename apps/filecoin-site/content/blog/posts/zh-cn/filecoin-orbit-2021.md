@@ -35,9 +35,9 @@ _template: blog_detail_ch
 
 期间举办了很多富有启发性且信息量大的活动，查看以下回顾并[前往Filecoin Orbit YouTube 播放列表](https://www.youtube.com/playlist?list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz) 获取完整的会谈清单。
 
-### 公告
+## 公告
 
-#### 💻 Filecoin 虚拟机
+### 💻 Filecoin 虚拟机
 
 发布[Filecoin虚拟机(FVM)](https://www.youtube.com/watch?v=Vw9syGiG31c&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=3)！
 

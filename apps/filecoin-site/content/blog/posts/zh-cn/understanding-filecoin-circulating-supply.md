@@ -23,7 +23,7 @@ title: "了解Filecoin流通供应机制 "
 
 本文旨在解读Filecoin代币是如何进入流通供应的，并提供更多关于各种利益相关者如何参与其经济的见解、阐明人们应该如何对待和思考Filecoin代币经济。本可配合阅读[Filecoin经济](/2020-engineering-filecoins-economy-en.pdf)论文和[Filecoin 技术规范](https://spec.filecoin.io/#)中概述的详细机制。
 
-### Filecoin 生态
+## Filecoin 生态
 
 Filecoin生态中不断增长的动力是所有Filecoin利益相关者的使用场景、工具和基础设施。 自2020年10月15日[发布Filecoin主网](https://filecoin.io/blog/posts/the-journey-to-filecoin-mainnet-liftoff/)以来，该网络目前已经完成了许多重要的里程碑。
 
@@ -77,6 +77,7 @@ Filecoin经济的首要目标是通过矿工、开发者、研究者、用户和
 
 1. **挖矿奖励**。所有挖矿奖励都要经过[不同形式的释放](https://spec.filecoin.io/#section-systems.filecoin_mining.miner_collaterals.block-reward-collateral)，以鼓励长期的网络调整。例如，矿工赚取的75%区块奖励在180天内线性释放，而25%的奖励会立即提供给矿工，以改善矿工现金流和盈利能力。当然，如下所述在整个区块的生命周期内，所有赚取的奖励都会不断减少。不可靠的存储会降低网络的实用性，因此这些扇区赚取的区块奖励将被削减和烧毁。
 2. **SAFT投资者**。所有SAFT持有者收到的FIL均受6个月、1年、2年和3年线性锁定条款的限制，从网络启动开始。大多数购买的SAFT代币在3年内线性释放。
+
    - 58%的SAFT代币在3年内线性释放。
    - 5%的SAFT代币在2年内线性释放。
    - 15%的SAFT代币在1年内线性释放。

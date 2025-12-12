@@ -29,7 +29,7 @@ title:
 
 <a href="https://spec.filecoin.io/intro/filecoin_vm/"><img src="/uploads/fil-blog-2021-11-02-fvm.webp" style="width:40%;margin-left:0%"></a>
 
-### Announcing the Filecoin Virtual Machine (FVM)
+## Announcing the Filecoin Virtual Machine (FVM)
 
 The goal of the Filecoin Virtual Machine is to enable users to deploy their own smart contracts on the Filecoin blockchain,” FVM brings general programmability and compatibility with Ethereum Virtual Machine smart contracts to the Filecoin blockchain. Attendees of Filecoin Orbit were among the first in the world to learn about FVM, its vision, the thousands of opportunities that it will unlock, its implementation roadmap, and how to [join the action](https://spec.filecoin.io/intro/filecoin_vm/).
 

@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 今天，我们很高兴地宣布，Filecoin协议已上线另外两个实现：[**forest**](https://github.com/ChainSafe/forest/)(由ChainSafe在Rust上实现)和**fuhon**(由Soramitsu在C++上实现)。这些实现正在积极地开发中，现已完全开放供大家使用。请于GitHub上查看！
 
-### 上线不同实现的重要性
+## 上线不同实现的重要性
 
 正如我们在[这篇博客文章](https://filecoin.io/blog/announcing-lotus/)里首次提到的那样，上线多种实现的Filecoin网络是我们实现网络安全策略的关键部分。可在同一网络进行互操作的多个实现可减少*一个*实现出现重大错误和破坏整个网络的风险。
 

@@ -23,7 +23,7 @@ title: Filecoin News 52
 
 <a href="https://www.coindesk.com/tech/2022/09/26/filesharing-crypto-project-filecoin-reports-strong-fundamental-growth-ahead-of-fvm-launch/"><img src="/uploads/coindesk-1.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin’s Growth Ahead of the FVM Launch
+## Filecoin’s Growth Ahead of the FVM Launch
 
 Over 20,000 individual users are now storing more than 50 million data objects on Filecoin, all supported by a 20% month-over-month increase in Storage Providers. This significant growth comes right before the network adds new compute over data capabilities. The Filecoin Virtual Machine will allow 7,000 new developers to build decentralized applications directly on Filecoin that can leverage all the data stored on the network. Read more on [CoinDesk](https://www.coindesk.com/tech/2022/09/26/filesharing-crypto-project-filecoin-reports-strong-fundamental-growth-ahead-of-fvm-launch/).
 

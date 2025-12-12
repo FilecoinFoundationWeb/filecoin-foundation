@@ -25,7 +25,7 @@ title: Filecoin News 36
 
 <a href="https://filecoin.io/blog/posts/filecoin-and-polygon-studios-deepen-collaboration-in-nfts-games-and-the-metaverse/"><img src="/uploads/153975496-cfc4b645-16df-4f64-ade0-ca8892b15a3b_hu1b15077720d77b4776146c36a7d8d42b_297018_2000x0_resize_q90_linear_2.webp" style="width:40%;margin-left:0%"></a>
 
-### **Filecoin and Polygon Studios Deepen Collaboration in NFTs, Games, and the Metaverse**
+## **Filecoin and Polygon Studios Deepen Collaboration in NFTs, Games, and the Metaverse**
 
 As two of the most important solutions for Web3 games and NFTs, Filecoin and Polygon are continuing [a collaborative effort](https://filecoin.io/blog/posts/filecoin-and-polygon-studios-deepen-collaboration-in-nfts-games-and-the-metaverse/) to drive the growth of projects in the space. The two ecosystems are supporting game developers and NFT projects with a series of tutorials, grants, and hackathons for builders in the Polygon network looking to leverage IPFS and Filecoin for decentralized storage. [Learn more on the Filecoin blog](https://filecoin.io/blog/posts/filecoin-and-polygon-studios-deepen-collaboration-in-nfts-games-and-the-metaverse/)!
 

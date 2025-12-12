@@ -25,7 +25,7 @@ title: Filecoin News 60
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
 
-### **The countdown to FVM Event is here!**
+## **The countdown to FVM Event is here!**
 
 Join the Filecoin community to learn about the possibilities unlocked by FVM and meet the pioneers building on FVM at this can’t miss event! The Countdown to FVM is a one-day event leading up to the launch of Filecoin’s Virtual Machine on mainnet in March 2023. This jam-packed event will feature exclusive FVM content, builders showcase, happy hour, and so much more!
 

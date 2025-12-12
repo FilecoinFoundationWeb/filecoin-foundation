@@ -26,7 +26,7 @@ _template: blog_detail
 
 This blog post aims to unpack how Filecoin tokens enter circulating supply, provide more insights on how various stakeholders take part in its economy, and shed light on how one should approach and think about Filecoin token economics. This post should be paired by reading the paper on [Filecoin’s Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf) and the detailed mechanisms outlined in the [Filecoin Spec](https://spec.filecoin.io/#).
 
-### The Filecoin Ecosystem
+## The Filecoin Ecosystem
 
 The growing momentum in the Filecoin ecosystem is a primary driver of use cases, tooling, and infrastructure for all Filecoin stakeholders. Since the [release of Filecoin’s mainnet](https://filecoin.io/blog/journey-to-liftoff/) on October 15th, 2020, the network has now surpassed a number of important milestones:
 
@@ -72,10 +72,12 @@ This applies to each of Filecoin’s core stakeholders, including:
 
 1. **Mining Rewards**. All mining rewards undergo [some form of vesting](https://spec.filecoin.io/#section-systems.filecoin_mining.miner_collaterals.block-reward-collateral) to encourage long term network alignment. For example, 75% of block rewards earned by miners vest linearly over 180 days while 25% are made immediately available to improve miner cash flow and profitability. Of course, all earned rewards are subject to slashing throughout the lifetime of a sector as described below. Unreliable storage reduces the utility of the network and hence block rewards earned by these sectors will be slashed and burned.
 2. **SAFT Investors**. All SAFT holders received their FIL subject to 6 month, 1 year, 2 year, and 3 year linear vesting terms beginning at network launch. The majority of SAFT tokens purchased are vesting linearly over 3 years:
+
    - 58% of SAFT tokens vest linearly over 3 Years
    - 5% of SAFTs tokens vest linearly over 2 Years
    - 15% of SAFTs tokens vest linearly over 1 Years
    - 22% of SAFTs tokens vest linearly over 6 Months
+
 3. **Filecoin Foundation**. The Filecoin Foundation’s 100M FIL vest linearly over 6 years, beginning at network launch.
 4. **Protocol Labs**. Protocol Labs’s 300M FIL vest linearly over 6 years, beginning at network launch. When Protocol Labs encourages ecosystem development through grants with important collaborators, those also typically vest over 6 years
 
@@ -110,8 +112,6 @@ As of today, Filecoin daily token consumption has climbed as high as 180k FIL pe
 The economic mechanisms embedded in the Filecoin protocol ensure that network activities and stakeholders are fully aligned with the long-term health of the network. Mechanisms such as variable minting based on network growth, vesting structures, token consumption, collateral requirements and more align participant incentives and motivations with the long-term success of the network.
 
 Making Web3 mainstream requires the efforts of all ecosystem participants. The incentives of the Filecoin protocol have to balance the interests of all stakeholders, storage clients, miners, developers, token holders, and ecosystem partners. A thriving economy benefits everyone in the network and aligns the long-term incentives of all participants. And most importantly, the future of Filecoin lies in the hands of all its community.
-
----
 
 ### _Addendum: Mechanical Definitions of Circulating Supply_
 

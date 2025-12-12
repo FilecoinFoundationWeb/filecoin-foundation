@@ -22,7 +22,7 @@ _template: blog_detail_ch
 
 我们很高兴宣布，[Lurk编程语言](http://github.com/lurk-lang)的程序库（repository）现向公众开放。Lurk是为递归zk-SNARKs（简洁非交互式零知识证明) 设计的编程语言，能够为SNARKs证明、区块链共识、Filecoin虚拟机、去中心化应用、IPFS和IPLD的数据整合等领域带来新机会。
 
-### 概览
+## 概览
 
 Lurk是[Lisp](<https://en.wikipedia.org/wiki/Lisp_(programming_language)>)语言的一个静态方言（衍生版本），受到了Scheme和Common Lisp这两种方言的影响。它与大多数编程语言的主要区别是，Lurk程序设计的正确运行结果可以直接用zk-SNARKs来证明。这样的证明结果是相对小体积的，能快速验证，并只揭示证明中明确可以公开的信息。
 

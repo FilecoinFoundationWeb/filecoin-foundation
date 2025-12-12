@@ -33,7 +33,7 @@ We innovated on a large number of fronts: structure, legal, payments, materials,
 
 This sale was a wild ride for us, and likely for you too. We pulled things off mostly smoothly, but there were some issues and lots of lessons learned. We may write some reflections on these in the future, to share insights with the broader community, especially those considering running a token sale.
 
-### Final Figures
+## Final Figures
 
 The final amount we raised – with crypto assets valued as the investments were made – is $205.8M. This figure includes the $52M from the advisor sale. We raised $135M during the first hour of the public sale. During the sale, thanks to fluctuation in ETH and BTC price, the value of all the raised assets reached $253M on Sep 2, and $233M at time of close on Sep 7. Hopefully this clarifies the various numbers reported around the web.
 

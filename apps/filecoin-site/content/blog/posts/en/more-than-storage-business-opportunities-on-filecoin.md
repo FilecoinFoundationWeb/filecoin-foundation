@@ -24,7 +24,7 @@ _template: blog_detail
 
 _The following is a summary of a talk given by ZX Zhang at the Web3 Summit in May 2021 - see the full talk_ [_here_](https://www.youtube.com/watch?v=Yx1rtKcayuY#t=1h00m52s)_._
 
-### The Airbnb of Cloud Services
+## The Airbnb of Cloud Services
 
 There are more similarities than you might think between Filecoin and Airbnb. Just as Airbnb hosts offer up their homes to travelers, Filecoin miners offer up their storage capacity to data clients. In both models, resources are spent to provide a useful service to ecosystem participants in exchange for compensation.
 

@@ -27,7 +27,7 @@ title: Filecoin News 31
 
 <a href="https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/"><img src="/uploads/unnamed-1-1.webp" style="width:40%;margin-left:0%"></a>
 
-### Dive into the Filecoin Virtual Machine
+## Dive into the Filecoin Virtual Machine
 
 Announced during Filecoin Orbit 2021, the Filecoin Virtual Machine (FVM) marks the next evolution of the Filecoin Network, bringing together decentralized storage and powerful computation. The FVM allows smart contracts (called ‘actors’ in the Filecoin ecosystem) to endow the data stored on the network with more utility and power. Based on WASM, the FVM is built to be multi-VM, starting with EVM compatibility — ensuring Filecoin’s storage solutions can scale to the growing, interoperable needs of Web3. [Dive into the FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/).
 

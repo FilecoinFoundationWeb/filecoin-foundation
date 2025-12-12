@@ -29,11 +29,11 @@ In this post, we offer an updated guide to Filecoin storage mining, and discuss 
 
 **Please note that Filecoin is still being refined. New insights from the experimentation afforded by the testnet are actively being incorporated into the ultimate specification. Consequently, vital network parameters are still subject to change before the mainnet launch. We strongly encourage miners to buy hardware at small scale for testing, experimentation, and benchmarking before investing significant capital.**
 
-### Participating in the Filecoin network
+## Participating in the Filecoin network
 
 At the present time, there are two primary roles a node can play in the Filecoin network: storage and retrieval. We anticipate that miners will seek to specialize in particular roles.
 
-#### Storage market
+### Storage market
 
 In the Filecoin network, nodes have the ability to contract with clients, offering to store their data for an agreed-upon period of time in exchange for filecoin.
 

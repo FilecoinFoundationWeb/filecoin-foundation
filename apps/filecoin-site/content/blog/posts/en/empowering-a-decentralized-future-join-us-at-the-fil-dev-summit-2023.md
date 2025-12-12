@@ -19,7 +19,7 @@ The Filecoin community is thrilled to announce the [FIL Dev Summit](https://fild
 
 The FIL Dev Summit isn't just about improving technology; it's about people and communities coming together to shape the future of decentralized storage. It's about protocol developers sharing insights with smart contract builders, and storage providers collaborating with governance-focused token holders. By gathering developers from diverse backgrounds, the summit sets the foundation for a more efficient, secure, and dynamic Filecoin ecosystem. This event will focus on driving ecosystem progress, with a robust emphasis on collaborative synergy, a well-defined strategic outlook, and boundless opportunity for innovation.
 
-### An Immersive Experience at FIL Dev Summit: What to Expect
+## An Immersive Experience at FIL Dev Summit: What to Expect
 
 The summit is more than just a meetup—it's a place for meaningful and impactful conversations that help push Filecoin forward. Discussions at the summit will cover a wide range of topics, from protocol scalability and network improvements to the intricacies of data onboarding and governance structures. These conversations serve to share and refine improvements - where participants can gain insights from diverse perspectives, challenge assumptions, and collectively arrive at innovative solutions to the challenges faced by the Filecoin ecosystem.
 

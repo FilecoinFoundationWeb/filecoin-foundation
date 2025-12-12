@@ -27,7 +27,7 @@ Becoming a Storage Provider on the Filecoin Network is a way to participate in t
 
 To understand how this is possible it’s important to understand the economics of the Filecoin Network for SPs. We’ll go through a few of the basic concepts SPs should be familiar with as they become active members in the Filecoin economy.
 
-### FIL Token
+## FIL Token
 
 Filecoin’s [_island economy_](https://filecoin.io/blog/posts/filecoin-s-island-economy/) consists of the interactions between five different sectors: clients, developers, token holders, ecosystem partners, and most important to us, SPs. All of these transact with each other using the FIL utility token and SPs are no exception. Therefore, all of the economic operations they participate in within the network are denominated in the token. It’s what gives holders the right to use the network.
 

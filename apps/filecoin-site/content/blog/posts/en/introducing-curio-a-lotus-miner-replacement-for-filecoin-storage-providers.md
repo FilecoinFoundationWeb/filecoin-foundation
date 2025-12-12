@@ -17,7 +17,7 @@ dim_image: true
 
 We are thrilled to announce the launch of [Curio Storage](https://curiostorage.org/), a new venture born from the combined expertise of the Lotus-Miner and Boost teams! Curio is designed to be a superior replacement for the Lotus-Miner, offering significant improvements in system redundancy, simplicity, scalability, and overall performance. It's never been easier for a data center to be a Filecoin Storage Provider (SP) than with Curio, which takes care of the responsibilities of reliable SP storage proving & sealing with minimal operations time.
 
-### Why choose Curio?
+## Why choose Curio
 
 1. Redundant Everything: Curio offers robust redundancy with multiple daemons, worker types, and database nodes, all coordinating seamlessly to eliminate single points of failure. This design ensures maximum uptime and reliability for your storage operations.
 2. Simplicity: Curio simplifies your workflow by consolidating all functions into a single binary, removing the need for separate -miner and -worker binaries. The system leverages Yugabyte for database management, but after installation and scaling, no further operational work is needed.
@@ -48,7 +48,7 @@ Step 2: On your Lotus-Miner machine (regardless of network: dev, calibration, ma
 curio guided-setup
 ```
 
-### How does Curio work?
+### How does Curio work
 
 At the core of Curio is the Yugabyte database cluster housing the harmony_task table. Every piece of processing work starts as a “discovery” that a task is needed. Attempts to add will have some task-specific unique index to invalidate secondary additions. Then greedy nodes race to claim the task. Nodes incapable of the work are disqualified while those with undesirable characteristics get delayed. Ultimately, the winner of that bidding round tries the work. 
 

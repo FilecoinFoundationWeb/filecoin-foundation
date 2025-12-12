@@ -30,7 +30,7 @@ _“It ain’t pretty in the sense that it’s nice and neat, and many people ha
 
 [![Report Download](https://filecoin.io/vintage/images/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
 
-### Global Cloud Storage
+## Global Cloud Storage
 
 The datasphere will grow to 175 zettabytes by 2025, according to [IDC estimates](https://www.seagate.com/our-story/). A stack of enough 10-terabyte hard drives to store all that data would literally reach the moon (1 zettabyte equals 1 trillion gigabytes).
 

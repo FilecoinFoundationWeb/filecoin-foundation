@@ -27,7 +27,7 @@ title: Filecoin News 44
 
 <a href="https://filecoin.io/blog/posts/funding-opportunity-for-public-goods-in-the-filecoin-ipfs-ecosystem/"><img src="/uploads/story1.webp" style="width:40%;margin-left:0%"></a>
 
-### Funding Opportunity for Public Goods in the Filecoin and IPFS Ecosystem
+## Funding Opportunity for Public Goods in the Filecoin and IPFS Ecosystem
 
 The Protocol Labs community participates in the next Gitcoin Grants Matching Round, happening June 8th-23rd, to help fund public and network goods in the greater Protocol Labs (IPFS / Filecoin) ecosystem using Quadratic Funding. Submissions are possible for one more week and voting starts tomorrow, Wednesday June 8th. Learn more about it on the [Filecoin blog](https://filecoin.io/blog/posts/funding-opportunity-for-public-goods-in-the-filecoin-ipfs-ecosystem/).
 

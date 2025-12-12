@@ -22,7 +22,7 @@ The recent fifth edition of  [Filecoin Developer Summit (FDS) in Bangkok](https
 - Filecoin Storage Primitives, Apps, L2s & Service Interop
 - Dev Upgrade
 
-### Filecoin Challenges, Opportunities & Next Steps
+## Filecoin Challenges, Opportunities & Next Steps
 
 [This opening keynote by Founder, Juan Benet,](https://youtu.be/UHptI5C4jDU?feature=shared) provided a candid and thorough assessment of the current state of the Filecoin ecosystem, celebrating its progress while addressing areas where further improvement is needed. One of the central topics was the importance of improving metrics systems to provide better visibility into economic value flows and enhancing the storage and retrieval lifecycle. The discussion also identified four priority user service classes—Web2 large storage, Web2 object storage, Web3 object storage, and Web3 chain storage—highlighting their significance in meeting diverse user needs.
 

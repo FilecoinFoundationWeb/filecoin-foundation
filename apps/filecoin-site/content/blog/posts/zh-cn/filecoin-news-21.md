@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>创建</b></h3>
 
-### 第8批开发者资助计划
+## 第8批开发者资助计划
 
 在６月30日　23:59分之前，第8批开发者资助计划仍在[**接受申请**](https://github.com/filecoin-project/devgrants#-how-to-apply) 。你可以在截止期之前提交申请书以获得更早的评审，从而贡献到致力于扩展Web3和Filecoin生态的创新项目中。上一期的活动（Wave 7 Dev Grants）已经完成评审和颁奖了！查看 [**这篇博客文章**](https://filecoinfoundation.medium.com/introducing-the-wave-7-developer-grant-recipients-e302c44c35f6) 以了解该轮奖项的获奖项目以及其如何贡献到Filecoin的生态系统中。
 

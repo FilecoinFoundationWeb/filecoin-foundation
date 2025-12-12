@@ -30,7 +30,7 @@ This most recent milestone, FVM M0.5, adds support to the [Fuhon](https://github
 
 Furthermore, Core Devs have scheduled the upcoming M1 milestone for deployment in the next [network upgrade (v16), codenamed Skyr](https://github.com/filecoin-project/community/discussions/74?sort=new#discussioncomment-2392151). This version upgrades the network to _exclusively_ use the FVM and [the Rust-based built-in actors](https://github.com/filecoin-project/builtin-actors). Check out the [roadmap here](https://github.com/filecoin-project/lotus/discussions/8347).
 
-### How to use the FVM on mainnet today
+## How to use the FVM on mainnet today
 
 Enterprising node operators are invited to use the FVM via any of the following implementations:
 

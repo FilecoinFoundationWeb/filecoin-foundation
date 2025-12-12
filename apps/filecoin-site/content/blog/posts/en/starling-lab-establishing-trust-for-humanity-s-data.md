@@ -35,7 +35,7 @@ It is also clear how vulnerable digital documents remain in an age where trust i
 
 If you are interested in working with the Starling Lab to capture, store, verify and preserve valuable data sets should visit starlinglab.org/join to learn more about training, educational, and grant opportunities.
 
-### Online Disinformation
+## Online Disinformation
 
 **There is a tidal wave of digital information:** Anyone can capture media with a smartphone or camera, and limited tools exist to prevent individuals from altering captured data or attributing it incorrectly prior to them choosing to share it.
 

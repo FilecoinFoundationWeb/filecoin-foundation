@@ -27,7 +27,7 @@ _template: blog_detail
 
 Today we wrapped up day 2 at Filecoin Liftoff Week. We heard from mining experts across the Web3 ecosystem, including solo Filecoin miner Benjamin Hoesjbo, Node Factory CEO Belma Gutlic, IPFSMain Co-founder Neo Ge, Chainsafe lead engineer Elizabeth Binks, and many many more. Here are some highlights from today’s “Mine on Filecoin” agenda, and a snapshot of what’s in store for tomorrow.
 
-### 👥 Filecoin is for miners of all sizes
+## 👥 Filecoin is for miners of all sizes
 
 Throughout the day, we heard from individual miners, small mining teams, and large corporate-structured mining companies. All agreed on the same general idea: that Filecoin mining worked for their setup, no matter its size. In the miner spotlights that kicked off today’s events, [Eric Tu of ChainSafe](https://www.youtube.com/watch?v=e6mnR6o3u1Q&t=2h59m37s) talked about the BigChungus project and his mission to prove that small-scale mining is feasible. Later, Filecoin miner Benjamin Hoesjbo showed off his solo miner rig, explaining how he even connected it to his floor heating for maximum efficiency. When asked how he was able to win Space Race, Core Architect of 6Block Lee White explained how he had divided his large mining rig into smaller clusters. Smaller clusters allowed 6Block engineers to more precisely fix issues, and overall still led to 6Block’s success.
 

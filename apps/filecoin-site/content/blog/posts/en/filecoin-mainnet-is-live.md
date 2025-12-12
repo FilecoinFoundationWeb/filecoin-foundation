@@ -40,7 +40,7 @@ Special thanks to:
 
 The Filecoin network has now entered a quiet post-launch monitoring period to ensure the network is operating smoothly. During this time, we’ll be tracking network performance closely while we prepare for Filecoin Liftoff Week. So far, the network is stable and community members are reporting successful operations. 🎉
 
-### Get Ready for Filecoin Liftoff Week
+## Get Ready for Filecoin Liftoff Week
 
 Next week, it’s time to celebrate! Join us for [Filecoin Liftoff Week](https://liftoff.filecoin.io/), an action-packed series of talks, workshops, and panels curated by the community to celebrate the Filecoin mainnet launch and explore the network’s future. The event takes place October 19-23, 2020.
 

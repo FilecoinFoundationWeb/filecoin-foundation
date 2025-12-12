@@ -36,7 +36,7 @@ This article will walk through the most important parts of Files’ architecture
 2. How this gives you access to the **tools that let you encrypt any data you store**
 3. Finally, we will show how we leverage IPFS and Filecoin to make sure **your data will always be available to you**.
 
-### **Decentralized login**
+## **Decentralized login**
 
 When you visit a conventional web application for the first time, you generally need to sign up and then log in. You’ll then enter a login and password, then the platform’s backend will verify if the credentials match what you provided upon sign-up, and finally it will let you access your files.
 

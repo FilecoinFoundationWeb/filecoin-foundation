@@ -25,7 +25,7 @@ title: Filecoin News 43
 
 <a href="https://fundingthecommons.io/"><img src="/uploads/funding-the-commons.webp" style="width:40%;margin-left:0%"></a>
 
-### Funding the Commons is Coming to NYC
+## Funding the Commons is Coming to NYC
 
 Public goods are a cornerstone of building open networks and the future of the web. Funding public goods is an ongoing opportunity, and one in which many across the Web 2.0 and Web3 space are involved. In November 2021 and March 2022, Protocol Labs hosted Funding the Commons events to bring these builders and thought leaders together to map the future of public goods. This June, Funding the Commons is back IRL in NYC! Join the community June 24-25 on the heels of NFT.NYC. Early bird tickets are available — [scoop them up now](https://fundingthecommons.io/)..
 
@@ -57,7 +57,7 @@ Protocol Labs is hosting a Gitcoin Grants Matching Round from June 8 to June 23 
 
 <a href="https://medium.com/allthingsweb-blog/how-we-think-about-the-metaverse-374085b9e90"><img src="/uploads/metaverse.webp" style="width:35%;margin-left:0%"></a>
 
-### What is the Metaverse… to Protocol Labs?
+### What is the Metaverse… to Protocol Labs
 
 Jonas Jetschni and HQ Han from Protocol Labs break down how they think of the ‘metaverse’ — where it’s going, what it means to “arrive”, and how to get there. The metaverse, they believe, “will consist of interconnected spaces in which humans interact with a sense of presence, and will enjoy experiences and applications.” The best way to get there is to understand the “layers” that make up the entire metaverse, and where critical solutions like Filecoin and IPFS fit in. Dive in and join Jonas and HQ on their musings of the metaverse: [How We Think About the Metaverse](https://medium.com/allthingsweb-blog/how-we-think-about-the-metaverse-374085b9e90).
 

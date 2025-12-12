@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 <a href="https://defi.ethglobal.co"><img src="/uploads/hack-money-header.webp" style="width:40%;margin-left:0%"></a>
 
-### **HackMoney将在6月18日本周五启动！**
+## **HackMoney将在6月18日本周五启动！**
 
 [HackMoney](https://defi.ethglobal.co)将于6月18日至7月9日举办，是为期三周、旨在建设金融未来的黑客松活动。赶快来加入这个汇集了1000多名志同道合的工程师、设计师和创造者的精彩活动吧！该活动将会是一个打造黑客松新产品/协议、通过峰会和研讨会探索学习以及在此过程中获得生态专业人士指导的好机会。为支持为此而进行的创新和探索，Protocol Labs将为杰出的项目提供奖金-一等奖4,000美元，二等奖2,000美元。
 

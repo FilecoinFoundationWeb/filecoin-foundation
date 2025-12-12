@@ -25,7 +25,7 @@ _template: blog_detail_ch
 
 本文将重新介绍其中的一些演讲和圆桌讨论，以帮助您可以快速地在Filecoin上进行存储和创建。您可以在此处查看Filecoin活动（包括已经举办的和未来将要举办）的全部记录。
 
-### [精品课程: Powergate简介](https://www.youtube.com/watch?v=synHYG4AnJk&feature=youtu.be)
+## [精品课程: Powergate简介](https://www.youtube.com/watch?v=synHYG4AnJk&feature=youtu.be)
 
 [Textile](http://textile.io/)的联合创始人兼CEO [Andrew Hill](https://www.linkedin.com/in/andrewxhill/)主持了本次课程。Textile为开发者提供了可以更快、更轻松地在IPFS和Filecoin上创建分布式应用程序的工具。在精品课程中，Andrew讨论了如何使用[Textile Powergate](https://docs.textile.io/powergate/)，该库管理了跨Filecoin和IPFS网络的存储和检索。
 
@@ -35,7 +35,7 @@ _template: blog_detail_ch
 
 Textile还有[Buckets](https://docs.textile.io/buckets/)，这是一种具有Filecoin功能的类似S3的云存储解决方案。您可以在[此处](https://www.youtube.com/watch?v=Id4SRT9_2CM&list=PL_0VrY55uV19nu6orLLCaGCGocsjvpiGZ&index=5)观看Textile简介的Buckets精品课程。
 
-#### 使用Powergate的好处
+### 使用Powergate的好处
 
 - 确保存储在Filecoin上的数据可在IPFS网络上轻松访问和快速检索。
 - 处理长期存储交易管理，包括自动续订和修复。
@@ -125,8 +125,6 @@ Web3生态已经走了很长一段路，在这个领域有许多有潜力的项�
 
 **Colin Evran:** “我们不应该忽视早鸟精神在Web3中的强大作用。这些在同一个领域工作的早鸟们所催化的那种创新氛围是令人难以置信的。”
 
-**Shi Khai:** “作为开发者，我们需要专注于建立将与我们一直在一起的真正用户和社区。寻找能够为您提供真实反馈的真正用户社区，而不是仅仅因为是新事物而觉得很酷的人。”
+**Shi Khai:** "作为开发者，我们需要专注于建立将与我们一直在一起的真正用户和社区。寻找能够为您提供真实反馈的真正用户社区，而不是仅仅因为是新事物而觉得很酷的人。"
 
----
-
-感谢所有参与Slingshot活动的演讲者和参与者！当我们进入比赛第一阶段的最后一周时，我们很高兴看到团队开始利用他们从这些赛事中学到的知识。我们期待看到更多的开发者在Filecoin上进行存储和创建。
+感谢所有参与Slingshot活动的演讲者和参与者！

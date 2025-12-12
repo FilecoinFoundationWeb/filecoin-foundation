@@ -38,7 +38,7 @@ We wanted to give you a thorough update covering the following:
 - a few frequent issues we’ve noticed and how to address them
 - and our plans for resuming the sale
 
-### Sale Open and CoinList Service Interruptions
+## Sale Open and CoinList Service Interruptions
 
 The sale opened at 12:00 PDT. Immediately, CoinList experienced massive load, in terms of pageviews, users watching live, and transaction volume.
 

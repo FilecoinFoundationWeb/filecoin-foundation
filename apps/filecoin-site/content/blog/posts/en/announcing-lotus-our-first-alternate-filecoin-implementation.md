@@ -38,7 +38,7 @@ Specifically, today we’re announcing:
 
 Let’s dive in!
 
-### Why multiple implementations?
+## Why multiple implementations
 
 As we’ve mentioned [elsewhere](https://filecoin.io/blog/update-2019-q2-q3/#3-roadmap-update), building a blockchain is like building a software rocket. We are working to ensure that our protocol and software implementations are secure – we have an internal protocol security team and are performing internal implementation security audits, external security audits, and more. But no matter how hard we work to protect the system and individual nodes, there is always the chance that an implementation bug might rear its head and result in adverse consequences for the network.
 

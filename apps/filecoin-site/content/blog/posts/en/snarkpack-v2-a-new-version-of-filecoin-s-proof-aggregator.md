@@ -25,7 +25,7 @@ _template: blog_detail
 
 In the recent [Filecoin Network v16 Skyr Upgrade](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/), a new version of the SnarkPack proof aggregation library was released. This version did not introduce any new functionality, but instead hardened the cryptographic protocol itself. This post details what motivated the examination of the SnarkPack library, the issues we discovered, and how they were resolved and shipped into the Filecoin Network.
 
-### What is SnarkPack?
+## What is SnarkPack
 
 At the heart of the Filecoin protocol are a collection of cryptographic proofs, called [Proofs-of-Replication](https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/) (PoReps). These PoReps make possible the central promise of the Filecoin network: decentralized, **verifiable** storage.
 

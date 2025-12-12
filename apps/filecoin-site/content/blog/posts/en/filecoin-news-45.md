@@ -27,7 +27,7 @@ title: Filecoin News 45
 
 <a href="https://filecoin.io/blog/posts/brave-browser-adds-filecoin-to-wallet//"><img src="/uploads/brave.webp" style="width:40%;margin-left:0%"></a>
 
-### Brave Browser Adds Filecoin to Wallet
+## Brave Browser Adds Filecoin to Wallet
 
 The Filecoin ecosystem is excited to announce that with today’s release of [Brave browser 1.40](https://brave.com/1.40-release/), the wallet feature now supports FIL, the token for Filecoin, the storage layer of Web3. [Brave](http://brave.com/)’s 56+ million users can now use FIL natively in the browser’s wallet, easing access and usage of Filecoin. [Download Brave](https://brave.com/download/) and check it out for yourself and learn more about the integration on the [Filecoin blog](https://filecoin.io/blog/posts/brave-browser-adds-filecoin-to-wallet/).
 

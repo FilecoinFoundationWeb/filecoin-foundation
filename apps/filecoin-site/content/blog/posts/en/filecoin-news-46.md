@@ -25,7 +25,7 @@ title: Filecoin News 46
 
 <a href="https://fvm.filecoin.io/"><img src="/uploads/fvm.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin Network v16 Skyr
+## Filecoin Network v16 Skyr
 
 The v16 network upgrade, codenamed Skyr, happened today, Wednesday, July 6th at 1400 UTC! This upgrade transitioned the Filecoin network to running its core logic on the Wasm-based [Filecoin Virtual Machine](https://fvm.filecoin.io/). This upgrade represents the most dramatic transformation of the Filecoin network since its inception nearly two years ago, and is the first step towards unlocking user programmability on Filecoin. Stay tuned for more updates on the upgrade on the [Filecoin Twitter](https://twitter.com/Filecoin) and [Filecoin blog](http://filecoin.io/blog) later this week.
 

@@ -25,7 +25,7 @@ title: Filecoin News 32
 
 <a href="https://github.com/filecoin-project/devgrants/issues/new?assignees=&labels=&template=open-grant-application.md&title="><img src="/uploads/grants.webp" style="width:40%;margin-left:0%"></a>
 
-### Wave 12 Dev Grants - last day to apply
+## Wave 12 Dev Grants - last day to apply
 
 Do you have an idea for pushing the Filecoin ecosystem forward? Grants of over $5000 are available to support novel ideas that advance the Filecoin ecosystem, bring significant new usage, or directly advance the Filecoin mission statement. Wave 12 proposal submissions are due today, November 30th, 2021 at 23:59 PDT for priority consideration. [Learn more about open grants](https://github.com/filecoin-project/devgrants/tree/master?tab=readme-ov-file#open-grant) and [apply](https://github.com/filecoin-project/devgrants/issues/new?assignees=&labels=&template=open-grant-application.md&title=).
 

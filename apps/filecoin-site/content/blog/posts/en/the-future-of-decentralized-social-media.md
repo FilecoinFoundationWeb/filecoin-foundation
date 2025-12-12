@@ -26,7 +26,7 @@ _template: blog_detail
 
 This article is based on a panel discussion at HackFS in July on Decentralized Social Media featuring Juan Benet, Vitalik Buterin, and Balaji Srinivasan. [Watch the full discussion](https://www.youtube.com/watch?v=DTxE9KV3YrE).
 
-### The Idea Behind Decentralized Social Media
+## The Idea Behind Decentralized Social Media
 
 In the early stages of human development, humans looked for places to voice ideas. Civilizations such as ancient Greece and Rome built meeting places where learned minds could discuss their versions of truth and come to conclusions and consensus.
 

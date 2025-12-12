@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 <h2 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>欢迎来到Filecoin News特辑！</b></h2>
 
-### Filecoin Orbit活动
+## Filecoin Orbit活动
 
 2020年10月15日，备受期待的Filecoin主网上线了，从那时起Filecoin网络已经运行一整年了。真的难以置信！在这一年间，Filecoin有了很多显著的进展，巩固了其作为去中心化web3技术栈重要组成部位的地位。
 

@@ -39,7 +39,7 @@ Reallocating excess storage capacity to run Filecoin nodes turns your once laten
 
 Ready to hear more? Keep reading to understand how to get started.
 
-### How to Join the Filecoin Testnet
+## How to Join the Filecoin Testnet
 
 To join the upcoming Filecoin testnet, you’ll need appropriate hardware and to install and set up the [lotus](https://github.com/filecoin-project/lotus/blob/master/README.md) implementation. For more information about installation and setup, please see [the lotus docs](https://lotus.filecoin.io/).
 

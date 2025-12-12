@@ -36,7 +36,7 @@ Filecoin Ecosystem lead Colin Evran walks us through the tremendous amount of wo
 
 <a href="https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii"><img src="/uploads/accelerator-rocket-purple.webp" style="width:18%;margin-left:0%"></a>
 
-### Filecoin Launchpad Accelerator II
+## Filecoin Launchpad Accelerator II
 
 Tachyon’s Filecoin Launchpad Accelerator is a full-time, fully remote program designed to help startups build more open, interoperable, and programmable tools, infrastructure, and applications for the distributed and decentralized web. Via the program, Tachyon supports projects that build on and bridge the [IPFS](https://ipfs.tech/), [Filecoin](https://filecoin.io/), and [Ethereum](https://ethereum.org/) communities with tools, middleware, and applications. The next cohort will run from June through August 2021, providing 20 teams from around the globe with funding, mentorship, benefits, and programming around business and blockchain-specific issues, culminating in a Demo Day and post-program fundraising support kicking off in September. Applications are now open, and close at midnight EST on May 9. [Apply now](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii).
 

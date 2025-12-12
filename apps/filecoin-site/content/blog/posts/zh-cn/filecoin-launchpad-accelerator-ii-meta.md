@@ -25,13 +25,13 @@ _template: blog_detail_ch
 
 在9月28日，20支团队参与了由Filecoin Launchpad Accelerator加速器（Tachyon运营）举办的演示日。这个为期六周的加速器项目由Tachyon运营，旨在培育新生的Web3公司。下面是从该加速器中呈现并在演示日展示过的游戏、社交和元宇宙项目的概览。演示日完整视频可以 [在这里查看](https://www.youtube.com/watch?v=XAu2Ydc-DcY&list=PL_0VrY55uV18I3tacudE5eXrEs-CZrcmd)。
 
-### MoNA Gallery
+## MoNA Gallery
 
 _一个为高端3D艺术品展示和鉴赏的元宇宙社区。_
 
 {{< youtube id="GHxr5g3T6n4" title="The MoNA Gallery" >}}
 
-#### MoNA Gallery是什么？
+### MoNA Gallery是什么？
 
 当今，人们越来越多的时间花在虚拟世界上了。这些世界依赖于3D艺术家，随着元宇宙的成型，越来越多的人才正进入Web3领域。然而，现在的Web3基础设施及其去中心化技术的带宽局限性，让艺术家不得不在作品的质量上让步。MoNA Gallery相信艺术家不应如此妥协，并正打造解决方案。
 

@@ -37,7 +37,7 @@ _template: blog_detail_ch
 8. [加入团队](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#8-%E5%8A%A0%E5%85%A5%E5%9B%A2%E9%98%9F)
 9. [结束时的思考](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#%E7%BB%93%E6%9D%9F%E6%97%B6%E7%9A%84%E6%80%9D%E8%80%83)
 
-### 1. 设置 Filecoin 节点并连接到 devnet
+## 1. 设置 Filecoin 节点并连接到 devnet
 
 到目前为止，任何人都可以设置 Filecoin 节点并连接到 devnet。这是探索当前命令行界面和 Filecoin 去中心化存储市场的最佳方法。
 
@@ -87,9 +87,9 @@ Filecoin 研究团队已经发布了[更新的路线图](https://github.com/file
 来加入讨论吧! 你可以参与我们在 Filecoin 聊天上的研究和开发对话，在讨论论坛上请求帮助解决安装问题，并访问我们的[社区 repo](https://github.com/filecoin-project/community) 以获得关于会议、电话和其他社区资源的信息！
 
 - **聊天渠道:** 我们使用跨越多个平台的聊天渠道。作为一个分布式社区，这些渠道是我们主要的交流通信场所。在聊天上发帖之前，请阅读[行为准则](https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md)。
-  - _Matrix:_ [Filecoin 社区](https://riot.im/app/#/group/+filecoin:matrix.org) (包含到所有桥接通道的链接)
-  - _Slack:_ [在这里](https://join.slack.com/t/filecoinproject/shared_invite/enQtNTUwNTI1Mzk5MDYwLTI2MmMxNzNjYjhlYWM3YjQxM2E4MThmM2ZhY2JkYWIxNGVjMGVmNTg3Y2VhZjQ3OGM5ZTc1OGFmZGZhMzZmMTI)创建一个帐户
-  - _IRC:_ [即将来临](https://github.com/filecoin-project/community/issues/4)
+- _Matrix:_ [Filecoin 社区](https://riot.im/app/#/group/+filecoin:matrix.org) (包含到所有桥接通道的链接)
+- _Slack:_ [在这里](https://join.slack.com/t/filecoinproject/shared_invite/enQtNTUwNTI1Mzk5MDYwLTI2MmMxNzNjYjhlYWM3YjQxM2E4MThmM2ZhY2JkYWIxNGVjMGVmNTg3Y2VhZjQ3OGM5ZTc1OGFmZGZhMzZmMTI)创建一个帐户
+- _IRC:_ [即将来临](https://github.com/filecoin-project/community/issues/4)
 - [**讨论论坛**](https://discuss.filecoin.io/):我们使用论坛来回答更长期存在的问题。如果有疑问，你可以随时在这里发帖。
 
 ### 7. 在 Filecoin 之上构建

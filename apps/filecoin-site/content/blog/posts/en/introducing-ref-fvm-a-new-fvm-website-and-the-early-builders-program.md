@@ -24,7 +24,7 @@ _template: blog_detail
 
 We’ve been busy since we [introduced the Filecoin Virtual Machine](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) back in November 2021. Today, we are thrilled to bring you three announcements. First, we [open sourced the repo](https://github.com/filecoin-project/ref-fvm) for the FVM reference implementation (ref-fvm) earlier this week. Second, we have launched a brand new [FVM website](https://fvm.filecoin.io/). And finally, we’re kicking off the [FVM Early Builders program](https://fvm.filecoin.io/foundry) to onboard the pioneering members to the FVM Foundry. Continue reading to find out more.
 
-### **Open sourcing the reference FVM implementation**
+## **Open sourcing the reference FVM implementation**
 
 To begin, we have open sourced [ref-fvm](https://github.com/filecoin-project/ref-fvm), the reference Filecoin Virtual Machine implementation.
 

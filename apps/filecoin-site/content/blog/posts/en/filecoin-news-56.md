@@ -23,7 +23,7 @@ title: Filecoin News 56
 
 <a href="https://tldr.filecoin.io/"><img src="/uploads/tldr.webp" style="width:40%;margin-left:0%"></a>
 
-### Introducing Filecoin TL;DR
+## Introducing Filecoin TL;DR
 
 It’s hard to keep up with all the exciting things happening in the Filecoin community, so let’s make it easier for you. If you’re a FIL holder and would like to stay up to date without getting too deep into all the technical stuff, check out Filecoin TL;DR. It aims to simplify Filecoin ecosystem news. Get official updates on project development, staking, and the FIL token on the new [TL;DR website](https://tldr.filecoin.io/) and follow along on [Twitter](https://twitter.com/FilecoinTLDR).
 
@@ -49,7 +49,7 @@ Where is Filecoin going in the short-term and long-term future? Filecoin and IPF
 
 <a href="https://www.youtube.com/watch?v=ro9kFPX0Tk0"><img src="/uploads/podcast-juanbenet.webp" style="width:35%;margin-left:0%"></a>
 
-### Is Crypto Good for the World?
+### Is Crypto Good for the World
 
 Juan Benet and the Filecoin community thinks so. This is always a timely question, especially when the distinctions between different sectors of the space need to be emphasized. Juan joined Bankless’s David Hoffman to discuss topics like DeFi vs CeFi, positive externalities, and all the ways in which builders in web3 can make crypto good for the world with decentralized infrastructure and cryptographic primitives. [Tune in](https://www.youtube.com/watch?v=ro9kFPX0Tk0) on the Green Pill Podcast.
 

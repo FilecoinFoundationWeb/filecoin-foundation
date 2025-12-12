@@ -25,7 +25,7 @@ _template: blog_detail_ch
 
 自从我们在2021年11月宣布[引入Filecoin虚拟机](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/)后，就一直处于忙碌状态。今天，我们很高兴地宣布三个消息。首先，我们在本周早前[开源了](https://github.com/filecoin-project/ref-fvm) FVM虚拟机参考实施方案(ref-fvm)。其次，我们发布了全新的[FVM虚拟机网站](https://fvm.filecoin.io/) 。最后，我们启动了[FVM虚拟机早期创建者计划](https://fvm.filecoin.io/foundry)来将处于前沿的成员带到FVM Foundry计划里。请继续阅读以了解更多信息。
 
-### **开源FVM虚拟机参考实施方案**
+## **开源FVM虚拟机参考实施方案**
 
 首先，我们开源了[ref-fvm](https://github.com/filecoin-project/ref-fvm)，这是Filecoin虚拟机的参考实施方案。
 

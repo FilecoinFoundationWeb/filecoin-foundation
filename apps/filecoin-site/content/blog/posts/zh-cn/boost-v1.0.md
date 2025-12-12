@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 那么，Boost有什么不一样？
 
-### 新版的存储交易提议协商协议
+## 新版的存储交易提议协商协议
 
 Boost引入了[v1.2.0 Storage Deal Proposal Protocol（存储交易提议协商协议，SDPP）](https://boost.filecoin.io/boost-architecture/libp2p-protocols#propose-storage-deal-protocol) ，让存储用户能指定用哪种传输类型来发送自己的数据。之前的v1.1.0版协议只支持Graphsync，这是如今Filecoin上默认的（也是唯一的）数据传输协议。与v1.2.0 SDPP协议一起发布的，还有对HTTP、[libp2p-http](https://github.com/libp2p/go-libp2p-http)和 Graphsync数据传输的支持，让存储客户端有更多选项来满足自己特定的需求。Boost仍然保留了对v1.1.0版协议的支持，因此存储提供者在升级后，依然可以与现有的v1.1.0版客户端达成存储交易提议。
 

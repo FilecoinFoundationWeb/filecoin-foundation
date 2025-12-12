@@ -25,7 +25,7 @@ title: Filecoin News 37
 
 <a href="https://filecoin.io/blog/posts/vivid-labs-using-filecoin-to-preserve-advanced-multimedia-nfts/"><img src="/uploads/ecosystem-highlight-vivid-labs-2_hufcd2de2efd2d1a79fe665606f79c87f8_719437_2000x0_resize_q90_linear.webp" style="width:40%;margin-left:0%"></a>
 
-### **Vivid Labs: Using Filecoin to Preserve Advanced Multimedia NFTs**
+## **Vivid Labs: Using Filecoin to Preserve Advanced Multimedia NFTs**
 
 Vivid Labs doesn’t see NFTs as just digital collectibles but as next-generation media objects that create better content experiences. The project, which started as the VideoCoin Network, pivoted to NFTs 18 months ago as it realized their potential for more complex media types like video. Now, Vivid Labs enables creators to develop rich multimedia experiences through features like [NFT+](https://medium.com/vivid-labs/introducing-nft-71767a8d3644) on the VIVID platform. It encrypts all media via an on-chain ClearKey DRM and uses Filecoin’s decentralized storage to ensure the security and preservation of the NFT. Learn more about Vivid Labs on the Filecoin [blog](https://filecoin.io/blog/posts/vivid-labs-using-filecoin-to-preserve-advanced-multimedia-nfts/).
 

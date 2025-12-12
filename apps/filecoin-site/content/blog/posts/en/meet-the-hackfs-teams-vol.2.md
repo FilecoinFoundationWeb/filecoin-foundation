@@ -28,7 +28,7 @@ _Welcome to the seventh installment of the Filecoin Community Highlights series,
 
 Last week we [highlighted](https://filecoin.io/blog/hackfs-teams-vol-1/) OMO Earth, Pygate, Unchained Index, and Padlock – four bootstrapping teams taking part in [HackFS](https://hackfs.com/), a month-long hackathon co-hosted by Protocol Labs and [ETH Global](https://ethglobal.co/), designed to showcase the power of Web3. This week, we talked to three more teams to learn more about their work, how they got involved with HackFS and why they’re building on Filecoin.
 
-### Team: [Kazan](https://github.com/samikshan/kazan)
+## Team: [Kazan](https://github.com/samikshan/kazan)
 
 ![Kazan](https://filecoin.io/vintage/images/blog/hfs-kazan.png)
 

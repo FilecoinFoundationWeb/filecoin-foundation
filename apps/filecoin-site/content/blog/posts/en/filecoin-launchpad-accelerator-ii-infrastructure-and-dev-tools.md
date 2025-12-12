@@ -24,13 +24,13 @@ title: "Filecoin Launchpad Accelerator II: Infrastructure and Dev Tools"
 
 On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the infrastructure and dev tools projects that emerged from the accelerator and presented during Demo Day. The entire Demo Day is available [here](https://www.youtube.com/watch?v=UWuaSP6YuJ4).
 
-### CID Gravity
+## CID Gravity
 
 _CID Gravity is helping create a layer of trust between Filecoin stakeholders, de-risking their data and incentivizing storage providers._
 
 {{< youtube id="s6A6v7qeK-c" title="CID Gravity" >}}
 
-#### **What is CID Gravity?**
+### **What is CID Gravity?**
 
 With the vast amount of digital storage needed for the world in the coming decades, Filecoin provides a viable product for everyday users. Still, more work can be done to meet the demands and expectations of enterprise-level users. CID Gravity is building a system to bring Filecoin to the level of enterprise-ready.
 

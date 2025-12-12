@@ -28,7 +28,7 @@ _This is the latest installment in our series highlighting unique features of th
 
 This month, the League of Entropy, a consortium of organizations committed to providing a publicly verifiable, unbiasable source of randomness as a foundational internet service, is upgrading to a production grade service that will serve as an off-chain source of randomness for Filecoin. Drand can provide a reliable and unbiasable source of randomness for many blockchain systems and applications in the future. This post explores the history and value of drand and what it means for the future of the internet.
 
-### Why is randomness important?
+## Why is randomness important
 
 Random systems generate results that have a [uniform distribution of probability](https://en.wikipedia.org/wiki/Discrete_uniform_distribution) and are [stochastically independent](<https://en.wikipedia.org/wiki/Independence_(probability_theory)>) from each other. We encounter randomness with every dice roll and coin toss: When you flip a fair coin, both heads and tails have equal or uniform probabilities (uniform distribution) and you can’t predict the outcome of any individual coin toss on the basis of past results (stochastic independence).
 
@@ -42,7 +42,7 @@ The quality of randomness is measured by its unpredictability, a property of ran
 
 Good randomness that is high-entropy, bias-resistant, and publicly verifiable is hard to find. For years there was no service available that could produce that kind of randomness at scale. But a new project has emerged that is up to the task. It’s called drand (short for distributed randomness) and it’s what Filecoin uses as its randomness source.
 
-### What is drand?
+### What is drand
 
 [Drand](https://github.com/drand/drand) is what’s called a randomness beacon, a service that provides publicly-accessible randomness for use by third parties. While randomness beacons have been around for a while, what makes drand unique is that it generates randomness by combining contributions from a network of independently-run servers. That means drand incorporates the strength, security, and resilience of distributed networks into the process of randomness generation. **In more ways than one, that makes drand an industry first for randomness-as-a-service.**
 

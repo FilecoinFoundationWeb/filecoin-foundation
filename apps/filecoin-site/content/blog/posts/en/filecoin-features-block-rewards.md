@@ -29,7 +29,7 @@ Most blockchains reward block-producing miners with cryptocurrency tokens for su
 
 But Filecoin’s block reward system is unique, both in the way it determines who wins block rewards and in the incentives it applies to the process of earning them. This improves the usefulness of the Filecoin network for both miners and clients and ensures its long-term health. Let’s see how.
 
-### For the miner: earning block rewards through useful work
+## For the miner: earning block rewards through useful work
 
 Storage power is the engine of the Filecoin blockchain. Miners gain storage power by dedicating hard drive space to the Filecoin network through a process called “sealing.” Sealing partitions storage space into sectors that are committed to storing data on Filecoin. The more storage sectors a miner adds to the network, the more client data they are able to store, and the more Filecoin they are eligible to earn.
 

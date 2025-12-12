@@ -35,7 +35,7 @@ Filecoin团队一直致力于存储和保留这些有价值的数据集。我们
 
 Filecoin Discover项目激励各种规模的早期矿工存储有价值的数据来获得Filecoin奖励。在发布之时，我们收集了一组初始开源数据，但在接下来的几个月中，我们将不断向数据目录中添加更多的项目与数据集。
 
-### 如何在挖矿中使用Filecoin Discover？
+## 如何在挖矿中使用Filecoin Discover？
 
 正如WNYC播客《Note to Self》的前主持人Manoush Zomorodi[所说](https://www.forbes.com/sites/geristengel/2018/10/24/a-springboard-to-success-for-female-blockchain-founders/#b9f3aff43219)：“想想很多人同计算机一起工作，区块链要求你有集体精神。”在Filecoin网络上挖矿和存储数据的节点越多，节点的存储算力就越强大。因此，Discover项目是我们鼓励更多矿工在早期阶段加入网络的办法。我们构建Discover项目作为快速扩展Filecoin网络的一种方式。
 

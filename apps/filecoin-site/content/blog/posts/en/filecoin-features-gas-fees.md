@@ -34,7 +34,7 @@ Moreover, executing messages consumes both computation and storage resources on 
 
 Gas can be thought of as the fuel of the Filecoin blockchain, just like fuel for cars. Before you embark on a road trip, you have to pay for the gasoline that will be consumed while driving the distance and powering the engine up and down hills. Similarly, message senders on Filecoin pay for the gas that “powers” or “fuels” the execution of messages on the Filecoin Blockchain.
 
-### How Filecoin uses Gas
+## How Filecoin uses Gas
 
 Gas was initially implemented on the Ethereum blockchain as a measure of computational and storage resources consumed by a message. This is where the phrase “GasUnit” originated. Historically in other blockchains, miners specify a GasFee in a unit of native currency and then pay the block producing miners a priority fee based on how much gas is consumed by the message.
 

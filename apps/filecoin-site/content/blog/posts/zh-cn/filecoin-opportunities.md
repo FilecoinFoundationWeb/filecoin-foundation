@@ -22,7 +22,7 @@ _template: blog_detail_ch
 
 _以下是2021年5月ZX Zhang在Web3 Summit上演讲的概要-完整发言在_ [_这里_](https://www.youtube.com/watch?v=Yx1rtKcayuY#t=1h00m52s)_._
 
-### 云服务界的Airbnb
+## 云服务界的Airbnb
 
 Filecoin和Airbnb其实有不少共同点。Airbnb屋主为旅客提供自己的房屋，Filecoin存储提供者为用户提供自己的存储容量。二者的商业模型都是将资源变成生态参与者需要的实用服务，并以此获取报酬。
 

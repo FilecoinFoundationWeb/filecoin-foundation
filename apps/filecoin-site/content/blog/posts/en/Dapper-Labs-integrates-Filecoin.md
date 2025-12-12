@@ -26,7 +26,7 @@ title:
 
 Dapper Labs, the team behind CryptoKitties, Dapper Wallet, and the highly successful NBA Top Shot has built a formidable ecosystem in the NFT and gaming space. Flow blockchain was conceived by the team and designed for extensive scaling without the use of sharding techniques, to preserve the full power of composability, providing fast and low-cost transactions that lend themselves well for dapps aiming to target the larger mainstream audience, starting with the entertainment world such as music, sports, gaming, art, fashion and more.
 
-### The intersection of Filecoin and Flow creates greater decentralisation and asset integrity
+## The intersection of Filecoin and Flow creates greater decentralisation and asset integrity
 
 NFT creators building on the Flow blockchain can create immutable NFT metadata with rich media (including videos), using IPFS [content addressing](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) and [provable and decentralized storage with Filecoin](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/). [NFT.Storage](https://nft.storage/), backed by Protocol Labs and Pinata, makes it easy to protect NFT assets and associated metadata, ensuring that all NFTs follow best practices to stay accessible long-term.
 

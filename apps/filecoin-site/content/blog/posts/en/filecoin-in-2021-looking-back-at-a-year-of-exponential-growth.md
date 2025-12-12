@@ -31,7 +31,7 @@ The Filecoin network surpassed a combined storage capacity of 14+ EiB with the h
 
 Numbers don’t tell the full story, though! This year’s extraordinary growth also brought important developments across the Filecoin ecosystem. Some major milestones were:
 
-### Research and Engineering
+## Research and Engineering
 
 Over the past year, the Filecoin protocol and network made significant leaps forward, including the execution of five coordinated network upgrades, shipping 12 [Filecoin Improvement Proposals](https://github.com/filecoin-project/FIPs) (FIPs), and bringing two additional Filecoin protocol implementations to mainnet (Venus and Forest) to join Lotus! Highlights include allowing for off-chain verification of Proofs of SpaceTime, SnarkPack for proof aggregations, and designing a mechanism for the easy upgrade of Committed Capacity sectors to include real-world data (scheduled to launch on mainnet in February!).
 

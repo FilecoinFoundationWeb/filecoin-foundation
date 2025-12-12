@@ -29,7 +29,7 @@ title:
 
 <a href="https://www.mona.gallery/"><img src="/uploads/create.webp" style="width:40%;margin-left:0%"></a>
 
-### MoNA Launch
+## MoNA Launch
 
 Just announced, the [**MoNA Gallery**](https://www.mona.gallery/) is live! MoNA is bringing together creators, collectors, and investors to build the world of NFT art. Design your gallery and [**submit it to MoNA**](https://airtable.com/shrctUmm0fdr2gEtP) to launch your collection to the world. [**Visit to explore 3D spaces**](https://www.mona.gallery/) of top NFT collectors like Taylor WTF, Dario, KidNimbus, and more.
 

@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 **若您想参与这个环节，请直接填写**[**此表**](https://docs.google.com/forms/d/e/1FAIpQLSfYrehYIExQJbNLv-m_xsCXGDZM-rHhsBT5xWYy6cHANyBJxw/viewform)**，也可以阅读下面的内容了解更多关于此环节的信息。**
 
-### 什么是可信设置环节？我们为什么需要这样一个环节？
+## 什么是可信设置环节？我们为什么需要这样一个环节？
 
 Filecoin的挖矿是基于复制证明和时空证明机制。我们使用[zkSNARKS](https://z.cash/technology/zksnarks/)来减小链上证明的计算大小。zkSNARKS需要设置一组在系统内所有参与方都知道的[公共参数](https://electriccoin.co/blog/snark-parameters/)，为了能保证zkSNARKS和Filecoin网络的完整性，这些公共参数必须安全地生成。
 
@@ -53,10 +53,12 @@ Zcash在2017年的“Powers of Tau”可信设置环节采用了安全生成SNAR
 
 1. 首先，您将下载最新验证版本的数据（约60GB）。
 2. 然后，您将在数据上运行特定的软件 。_注意：计算时间是不定的，这取决于您电脑的硬件规格，以下是我们示例计算时间和规格，仅供参考：_
+
    - RAM: 16GB
    - 处理器: AMD Ryzen 1950X (32 thread, 3.5ghz)
    - CPU核数: 16
    - 计算时间: 180 分钟
+
 3. 最后，您需要上传处理后的数据（约40 GB）。
 4. 我们的验证节点将检查您提交的内容是否有效并确保下一位参与者可以基于您的贡献开始计算。
 

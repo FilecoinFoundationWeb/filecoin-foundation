@@ -29,7 +29,7 @@ With web browsers slowly shifting towards using web3, the need for decentralized
 
 In this example, [Textile](https://textile.io "Textile") is used as a hosted intermediary to allow developers to pin content to IPFS through a standard API. Before we appreciate how these work along with each other, we need a little background as to what each does.
 
-### IPFS and Filecoin: A Match Made in (Blockchain) Heaven
+## IPFS and Filecoin: A Match Made in (Blockchain) Heaven
 
 [Filecoin](http://filecoin.io) is a decentralized network that allows for storing data accessible from virtually anywhere. Users can offer their available storage as nodes on the network and earn Filecoin as data is stored and retrieved on those nodes.
 

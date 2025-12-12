@@ -21,7 +21,7 @@ The study examined 27.3 million archived URLs across 7 million unique hosts, spa
 
 In uncovering the alarming rate at which web content disappears, this study underscores the critical role that decentralized storage solutions like the InterPlanetary File System (IPFS) and Filecoin can play in the future of digital preservation. Decentralized technology allows web content to be safely and redundantly stored across a distributed network, reducing the risks of centralization, such as single points of failure and content takedowns –– ensuring our digital heritage remains accessible for future generations.
 
-### Key Findings from "Not Your Parents' Web" Project
+## Key Findings from "Not Your Parents' Web" Project
 
 The findings reveal a stark reality about the fleeting nature of most online content. The median lifespan of a web page is a mere 2.3 years.
 

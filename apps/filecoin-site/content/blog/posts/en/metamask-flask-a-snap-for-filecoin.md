@@ -28,7 +28,7 @@ When building an application that manages and transfers real value, secure UX an
 
 Naturally, Flask does not offer the same API or UX stability guarantees as the main MetaMask applications do, so beware that it is intended for developers only, and **participation is at the users’ own risk. This laboratory is unsupervised.**
 
-### Snapping into Innovation
+## Snapping into Innovation
 
 Snaps is the first feature to be released through Flask.
 

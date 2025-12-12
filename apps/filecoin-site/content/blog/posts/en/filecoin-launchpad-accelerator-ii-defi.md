@@ -26,7 +26,7 @@ _template: blog_detail
 
 On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the DeFi projects that emerged from the accelerator and presented during Demo Day. The entire Demo Day is available [here](https://www.youtube.com/watch?v=UWuaSP6YuJ4).
 
-### Hedgey Finance
+## Hedgey Finance
 
 _Hedgey Finance is a protocol for adding options markets to any token._
 

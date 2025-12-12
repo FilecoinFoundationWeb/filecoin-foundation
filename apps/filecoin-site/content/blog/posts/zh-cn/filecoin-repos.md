@@ -28,7 +28,7 @@ _template: blog_detail_ch
 
 请注意:Filecoin正在大量开发中。代码每天都在发生着巨大的变化。目前阶段，repos、devnets和其他资源全部用于开发。本发布面向愿意帮助开发Filecoin的开发者、研究者和社区成员。寻求使用Filecoin的矿工和用户应等待未来的发布(可能是[testnet里程碑](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.b17ldb17wszo))。请阅读我们的[入门指南](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/)了解详情。
 
-### 本发布包括什么内容？
+## 本发布包括什么内容？
 
 几个小时前，我们在GitHub上发布了[Filecoin项目repos](https://github.com/filecoin-project)、开发网络([用户和每日构建的devnets](https://github.com/filecoin-project/go-filecoin/wiki/Devnets))、聊天频道([Slack](https://join.slack.com/t/filecoinproject/shared_invite/enQtNTUwNTI1Mzk5MDYwLTI2MmMxNzNjYjhlYWM3YjQxM2E4MThmM2ZhY2JkYWIxNGVjMGVmNTg3Y2VhZjQ3OGM5ZTc1OGFmZGZhMzZmMTI)、[Matrix](https://riot.im/app/#/group/+filecoin:matrix.org)、[IRC即将发布](https://github.com/filecoin-project/community/issues/4))、[论坛](https://discuss.filecoin.io/)和[项目管理工具](https://app.zenhub.com/workspace/o/filecoin-project/go-filecoin/)。这说明：
 

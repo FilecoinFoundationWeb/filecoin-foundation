@@ -28,7 +28,7 @@ People [spend](https://datareportal.com/reports/digital-2022-time-spent-with-con
 
 Stretching across NFT art, play-to-earn games, online world-building, distributed communities, and other virtual environments, leisure and work are finding common ground in the digital sphere. This increasing digitization of life is bound to grow at an unprecedented rate, especially given the strong online foundation already established by Web 2.0 in our daily lives.
 
-### **Mscape.io Addresses the Need for a Metaverse Landscape**
+## **Mscape.io Addresses the Need for a Metaverse Landscape**
 
 Just as Web 2.0 required significant investments in infrastructure, Web3 will require new models for, and investment in, decentralized data storage and transmission. Filecoin and IPFS are the leading solutions for this. They stand to play a major role in the development, growth, and maintenance of the metaverse. Today, over 300 [projects](https://ecosystem.ipfs.tech/?results=70&display-type=list) ranging from application developers to technology providers rely on IPFS to store data in a decentralized, resilient, and efficient manner.
 

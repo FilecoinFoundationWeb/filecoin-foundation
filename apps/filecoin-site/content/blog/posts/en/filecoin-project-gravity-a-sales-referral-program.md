@@ -22,7 +22,7 @@ _template: blog_detail
 
 **Today, Protocol Labs is announcing a temporary referral fee program to community members who bring large datasets onto the Filecoin network. Invite your customers and help create the data gravity pull!**
 
-### **Data gravity is real**
+## **Data gravity is real**
 
 Earth’s acceleration of gravity is \~9.81m/s^2, or in other words, an object falling freely will accelerate by about 9.81 meters per second every single second. In a similar way, the larger the datasets, the faster other and smaller data sets will gravitate towards it, also referred to as data gravity. So help us make data gravity work and bring your customer’s large datasets to the Filecoin network and get a referral fee paid!
 

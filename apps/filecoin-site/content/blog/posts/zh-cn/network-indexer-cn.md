@@ -24,7 +24,7 @@ _template: blog_detail_ch
 
 近期，Protocol Labs推出了首款网络索引器（Network Indexer），用于搜索存储提供商提供的内容可寻址数据，例如Filecoin和IPFS网络上的数据。存储提供商如今可以将其数据的内容ID([CID](https://docs.ipfs.tech/concepts/glossary/#cid))发布至网络索引器，客户端可以通过查询网络索引器来检索由这些CID所标识内容的具体位置。
 
-### 基础定义
+## 基础定义
 
 网络索引器（以下简称“索引器”）是将CID映射到数据拥有者记录（提供者数据记录）的系统，它是为处理Filecoin网络中的数据规模而打造，并可由IPFS网络用于定位数据。
 

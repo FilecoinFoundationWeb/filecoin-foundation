@@ -25,7 +25,7 @@ _template: blog_detail_ch
 
 [_HackFS 2021_](https://ethglobal.com/showcase "HackFS 2021") 是一场为期三周的线上黑客松活动，专注于构建去中心化和无信任的数字世界。以下是来自[_Textile_](https://textile.io "Textile") 的[_Carson Farmer_](https://twitter.com/carsonfarmer?lang=en "Carson Farmer")对Filecoin Bridge的探索。在此观看[_完整记录_](https://www.youtube.com/watch?v=aV8-v-kHZfY&list=PLXzKMXK2aHh5iq_crvYF76EmPsZgcgLki&index=5 "Textile: Introduction to the Filecoin Bridge")
 
-### 链上或链下：如何选择？
+## 链上或链下：如何选择？
 
 如今，在互联网上做任何事都需要考虑存储。过去，托管公司会向客户提供存储空间，客户将被托管的数据发布至互联网以供他人访问，这便需要支付费用。
 

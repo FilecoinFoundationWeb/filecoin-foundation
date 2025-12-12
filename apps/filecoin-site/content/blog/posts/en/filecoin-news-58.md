@@ -25,7 +25,7 @@ title: Filecoin News 58
 
 <a href="https://filecoin.io/blog/posts/the-fvm-imaginarium-magmo-brings-state-channels-to-the-filecoin-virtual-machine/"><img src="/uploads/filecoin_blog_header__fvm_imaginarium__magmo.webp" style="width:40%;margin-left:0%"></a>
 
-### Introducing the FVM Imaginarium
+## Introducing the FVM Imaginarium
 
 The launch of the Filecoin Virtual Machine (FVM) is quickly approaching, but there are already amazing projects in development. The FVM Imaginarium Campaign is putting the spotlight on the teams who are building incredible use cases and introducing new opportunities and concepts on FVM. The first highlighted is Magmo, a development studio and research team who is working on porting State Channels to the FVM. [Check out the feature!](https://filecoin.io/blog/posts/the-fvm-imaginarium-magmo-brings-state-channels-to-the-filecoin-virtual-machine/)
 

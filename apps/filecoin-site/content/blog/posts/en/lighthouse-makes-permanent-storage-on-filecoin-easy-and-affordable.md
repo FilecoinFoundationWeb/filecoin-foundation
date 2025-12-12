@@ -23,7 +23,7 @@ _template: blog_detail
 
 [Lighthouse](http://lighthouse.storage/) is a facilitator of permanent file storage on the Filecoin Network where users only pay once and their files are stored forever. Traditionally, users need to keep track and pay for their files after a fixed amount of time. Lighthouse manages this for them by moving from a rent-based cost model to a permanent ownership model. This is important for storing NFT metadata and data on Web3 which have a risk of disappearing if the maintainer stops paying for the user’s file.
 
-### How it Works
+## How it Works
 
 The protocol works with a smart contract-based endowment pool whose job is to pay for the users' files in perpetuity. When a user pays for a file, a part of that amount goes directly to Storage Provider deals in the Filecoin Network while the remaining buffer amount goes back to the endowment pool.
 

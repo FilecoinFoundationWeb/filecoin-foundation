@@ -25,7 +25,7 @@ title: Filecoin News 53
 
 <a href="https://22.labweek.io/"><img src="/uploads/labweek22.webp" style="width:40%;margin-left:0%"></a>
 
-### LabWeek22 Registration Now Open
+## LabWeek22 Registration Now Open
 
 Come join the PLN community for the first-ever decentralized conference. LabWeek22 will take place in Lisbon, Portugal, from October 24th to November 4th. The event will be an opportunity for network teams to collaborate on a variety of exciting topics, including decentralized storage, compute over data, Filecoin Virtual Machine, public goods funding, DeSci, cryptoeconomics, gaming and the metaverse, and much more! Think of LabWeek22 as a “choose your own adventure” conference, where you can create your own track and meet with a range of web3 builders and others in the Protocol Labs community. The entire schedule is on the [LabWeek22 site](http://labweek.io) and more events are being added every day. [Register now](https://22.labweek.io)!
 

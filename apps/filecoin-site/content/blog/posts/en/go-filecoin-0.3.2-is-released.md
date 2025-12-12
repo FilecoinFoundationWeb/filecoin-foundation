@@ -27,9 +27,9 @@ _template: blog_detail
 
 We’re happy to announce go-filecoin 0.3.2. This release is a big step towards completing the filecoin storage protocol. It includes many changes to the miner actor builtin smart contract that will allow the network to securely account for verifiable storage power once fault handling is in place. Many less visible but high impact code and testing improvements ship with this release. 0.3.2 also includes a big UX improvement with the new and improved `go-filecoin deals` command for user friendly management of storage deals. Getting paid as a storage miner is now as simple as a single CLI call.
 
-### Features
+## Features
 
-#### 🏇 Storage protocol nearing completeness
+### 🏇 Storage protocol nearing completeness
 
 Our number one goal is a network securely powered by verifiable storage. In order for this to work we need to penalize cheating miners who do not prove their storage on time. This release includes most of the groundwork needed, including fundamental data structures and encoding work for tracking sets of sectors, improved power tracking in the miner actor built-in smart contract, and charging fees for late storage proof (PoSt) submissions.
 
@@ -63,14 +63,14 @@ A full list of [all 207 PRs in this release](https://github.com/search?p=2&q=is%
 
 ### CLI diff
 
-| go-filecoin command | change       |
+| go-filecoin command | change |
 | ------------------- | ------------ |
-| deals list          | added        |
-| deals redeem        | added        |
-| deals show          | added        |
-| miner pledge        | removed      |
-| mining status       | added        |
-| show block          | args changed |
+| deals list | added |
+| deals redeem | added |
+| deals show | added |
+| miner pledge | removed |
+| mining status | added |
+| show block | args changed |
 
 ### Contributors
 
@@ -153,7 +153,7 @@ A full list of [all 207 PRs in this release](https://github.com/search?p=2&q=is%
 - [@ZenGround0](https://github.com/ZenGround0) (9 commits, 9 PRs, 23 issues, 37 comments)
 - [@zixuanzh](https://github.com/zixuanzh) (1 PR)
 
-### 🙌🏽 Want to contribute?
+### 🙌🏽 Want to contribute
 
 Would you like to contribute to the Filecoin project and don’t know how? Here are a few places you can get started:
 
@@ -162,6 +162,6 @@ Would you like to contribute to the Filecoin project and don’t know how? Here 
 - Join the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat), introduce yourself in #\_fil-lobby, and let us know where you would like to contribute
 - Join the [user devnet](https://github.com/filecoin-project/go-filecoin/wiki/Getting-Started)
 
-### ⁉️ Do you have questions?
+### ⁉️ Do you have questions
 
 The best place to ask your questions about go-filecoin, how it works, and what you can do with it is at [discuss.filecoin.io](https://discuss.filecoin.io/). We are also available at the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat).

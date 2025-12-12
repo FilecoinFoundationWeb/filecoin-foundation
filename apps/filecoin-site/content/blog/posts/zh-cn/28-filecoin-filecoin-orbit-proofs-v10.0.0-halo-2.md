@@ -31,7 +31,7 @@ _template: blog_detail_ch
 
 <a href="https://orbit.filecoin.io/"><img src="/uploads/orbit-announcement-twitter.webp" style="width:70%;margin-left:0%"></a>
 
-### Filecoin主网已正式上线一周年
+## Filecoin主网已正式上线一周年
 
 10月21日至22日，Filecoin社区将携手Filecoin Orbit共同庆祝主网上线一周年。加入本次活动，听取来自整个生态系统的小组讨论、会谈、研讨会和演示，回顾过去一年的建设成果以及未来展望，并提前获悉自10月18日起社区组织的各项活动。
 

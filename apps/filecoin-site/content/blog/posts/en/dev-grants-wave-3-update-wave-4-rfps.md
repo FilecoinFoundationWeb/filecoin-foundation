@@ -48,7 +48,7 @@ Thanks to all teams that applied! Proposals not funded in Wave 3 will be re-cons
 
 There is also an exciting 30-day [**HackFS virtual hackthon**](https://filecoin.io/blog/announcing-filecoin-ignite-and-hackfs/) coming up on July 6th where you can noodle on new Filecoin experiments with other dapp developers and receive technical advice and support. [_Apply for HackFS_](https://hackfs.com/) to participate!
 
-### PB-scale miner testing RFP update
+## PB-scale miner testing RFP update
 
 We received 48 proposals in Wave 3 for PB-scale miner testing RFP. Because proofs will continue to evolve, for this grant we have decided to focus on understanding the performance and tradeoffs of different **storage layer options** better. We will be reaching out to select teams who described interesting storage layer technology in their proposals soon.
 

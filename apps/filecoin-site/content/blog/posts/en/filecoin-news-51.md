@@ -25,7 +25,7 @@ title: Filecoin News 51
 
 <a href="https://www.youtube.com/watch?v=Z6T4AiOpxJU"><img src="/uploads/filecoin-fip-0036.webp" style="width:40%;margin-left:0%"></a>
 
-### FIP-0036
+## FIP-0036
 
 FIPs are standards specifying potential new features or processes for Filecoin. Among other features, the upcoming FIP-0036 would introduce a sector duration multiplier for long-term sector commitments. The community recently hosted an AMA to further discuss the details of the proposal. Watch a [full recording](https://www.youtube.com/watch?v=Z6T4AiOpxJU) of the session to learn more.
 

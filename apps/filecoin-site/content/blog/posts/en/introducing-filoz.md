@@ -15,7 +15,7 @@ dim_image: true
 
 Introducing FilOz, a new public goods design and development team in the Filecoin ecosystem! The FilOz team is dedicated to securing, upgrading, and expanding the Filecoin protocol and network with many other Filecoin-aligned teams. Check out the post below for a deep dive into the mission, priorities, roadmap, and more from the FilOz team.
 
-### What We Do
+## What We Do
 
 At [FilOz](http://filoz.org/), our mission is to secure, upgrade, and expand the utility and value created by the Filecoin network. We focus on shipping high-leverage protocol improvements, supporting network upgrades, maintaining critical open-source software like the Lotus client, and designing new protocol enhancements through Filecoin Improvement Proposals (FIPs). Our goal is to drive innovation, growth, and collaboration within the Filecoin community and make Filecoin better together. 
 
@@ -111,12 +111,12 @@ As with all our work, FilOz aims to enhance and accelerate the work of others - 
 If you align with these areas of focus in the Filecoin community - we’d love to partner with you to make them a reality! Get involved by:
 
 - Joining [Filecoin slack](http://filecoin.io/slack) and find us in:
-  - \#fil-protocol to brainstorm and design protocol improvements for/with Filecoin. 
-  - \#fil-lotus-dev to implement Filecoin improvements w/ us!
+- \#fil-protocol to brainstorm and design protocol improvements for/with Filecoin. 
+- \#fil-lotus-dev to implement Filecoin improvements w/ us!
 - Participate in or host a Protocol Office Day (deep-dive, Office Hour, or AMA)
-  - Subscribe to upcoming events [here](https://www.filoz.org/events)
-  - [Book office hours](https://www.filoz.org/#team) with our team members, click the 📅 links!
-  - Send collaboration or protocol office ideas to [po@filoz.org](mailto:po@filoz.org). 
+- Subscribe to upcoming events [here](https://www.filoz.org/events)
+- [Book office hours](https://www.filoz.org/#team) with our team members, click the 📅 links!
+- Send collaboration or protocol office ideas to [po@filoz.org](mailto:po@filoz.org). 
 - Join us for deep protocol discussions and workshops at [FDS in Brussels](https://www.fildev.io/).
 - Follow us on Twitter for the latest updates [@\_FilOz](https://x.com/_FilOz).
 

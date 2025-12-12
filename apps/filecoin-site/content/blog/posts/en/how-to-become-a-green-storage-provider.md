@@ -27,7 +27,7 @@ Of course, all these efforts have to start with Storage Providers (SPs). The SP 
 
 Luckily, the cryptographic primitives used in the Filecoin Network can also be applied to these operations to measure and, ultimately, make them more sustainable in verifiable ways. Let's take a look at how SPs can become greener with the tools, resources, and programs made available by Filecoin Green.
 
-### What Defines a Green SP?
+## What Defines a Green SP
 
 Green SPs are those that align with the decarbonization goals proposed by the [Filecoin Green Pledge](https://filecoin-green.gitbook.io/filecoin-green-documentation/readme-1/filecoin-green/filecoin-green-pledge). Adhering to the Pledge means that Storage Providers are committed to:
 
@@ -61,7 +61,7 @@ After following these practices, an SP will be able to begin making Sustainabili
 - **Silver:** match their energy consumption to renewable energy (EACs) on a quarterly basis and match hardware embodied emissions to high-quality carbon credits such as removals or offsets.
 - **Gold:** match every unit of electricity consumed with either onsite renewable energy generation or PPAs and green certificates, and match hardware embodied emissions to high-quality carbon credits such as removals or offsets.
 
-### Why Become a Green SP?
+### Why Become a Green SP
 
 SPs who qualify for either of these tiers can potentially benefit from different programs. Filecoin Green is actively working with SPs to better define incentives that can support the efforts of decarbonizing the network.
 

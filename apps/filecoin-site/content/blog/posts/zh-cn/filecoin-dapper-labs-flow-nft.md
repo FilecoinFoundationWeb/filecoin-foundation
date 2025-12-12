@@ -24,7 +24,7 @@ _template: blog_detail_ch
 
 Dapper Labs是CryptoKitties、Dapper Wallet和高度成功的NBA Top Shot项目背后的团队，它已经在NFT和游戏领域建立了一个强大的生态。Flow区块链是该团队孵化的项目，它具备高度的可扩展性，而没有使用分片技术。这就保留了可组合性（composability）的好处，提供了快速和低成本的交易性能，为那些面向广大主流受众的dapps项目提供了极大的便捷。这些领域从娱乐产业开始，如音乐、运动、游戏、艺术品和时尚等。
 
-### Filecoin和Flow的集成创造了更高的去中心化程度和资产完整性
+## Filecoin和Flow的集成创造了更高的去中心化程度和资产完整性
 
 在Flow区块链上的NFT创作者可以创建带有富媒体特性（包括视频）的不可篡改的NFT元数据，这是利用了IPFS的[内容寻址](https://blog.ipfs.tech/)和[Filecoin的可证明及去中心化存储](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/)来实现的。得到Protocol Labs实验室和Pinata支持的[NFT.Storage](https://nft.storage/)能够很容易地保护NFT资产和相关的元数据，确保所有的NFT遵循保持长期可用的最佳实践。
 

@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 <a href="https://gitcoin.co/hackathon/gr9/?org=protocol"><img src="/uploads/GR9.webp" style="width:30%;margin-left:0%"></a>
 
-### Gitcoin GR9 黑客松: 3月10日至31日
+## Gitcoin GR9 黑客松: 3月10日至31日
 
 您是否正在Filecoin生态中创建项目？如果是的话，GR9黑客马拉松是一个很好的让您探索新的功能并有可能获得开发资助的机会。协议实验室及其生态合作伙伴Textile和Fleek正在参与Gitcoin举办的GR9黑客马拉松，共有6.3万美元的FIL奖励颁给在IPFS和Filecoin上创建的项目。探索使用Fleek新的Space SDK、Textile的Threads、Buckets和新的Powergate Miner Index创建的dapp，展示您与IPFS的集成，或者尝试Filecoin教程。[**快来看看！**](https://gitcoin.co/hackathon/gr9/?org=protocol)
 

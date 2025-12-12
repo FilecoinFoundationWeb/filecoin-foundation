@@ -22,7 +22,7 @@ _template: blog_detail_ch
 
 Filgram已正式推出！通过此工具，您将能够对存储提供者（SP）业务开展营销方面的优化升级。在[此处](http://filgram.filmine.io/)注册即可获取存储提供者ID并可分享更多关于您业务的相关信息。
 
-### 为何要开发Filgram
+## 为何要开发Filgram
 
 显而易见，存储提供者必须进行存储交易。然而，有时候会比较棘手，因为需要在进行存储交易或追寻线索之间取得平衡，同时还要确保运行最新的Filecoin软件或完善最新的硬件配置。Filecoin社区了解到存储提供者的这一难点，于是将[Filgram](http://filgram.filmine.io/)创建为与[AltLabs](https://altlabs.dev/)合作的存储提供者发现工具。
 

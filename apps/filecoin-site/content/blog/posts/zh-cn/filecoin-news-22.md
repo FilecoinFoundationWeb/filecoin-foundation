@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 <a href="https://www.techstars.com/newsroom/techstars-collaborates-with-filecoin-to-launch-accelerator-program"><img src="/uploads/techstars.webp" style="width:40%;margin-left:0%"></a>
 
-### 推出Filecoin Techstars加速器
+## 推出Filecoin Techstars加速器
 
 通过与[**Techstars**](http://www.techstars.com/)的协作，我们很高兴宣布[**Filecoin Techstars加速器**](https://www.techstars.com/newsroom/techstars-collaborates-with-filecoin-to-launch-accelerator-program)，这个项目面向来自Web3和Web3的创始人和开发者们，他们正在为数据收集、数字资产管理、基础设施和工具、DeFi、数据存储、缓存、存档服务等开发去中心化应用。这个加速器项目会从2021年9月中期到2021年11月期间接受申请。十个被选中的初创团队会在2022年3月到６月期间参加线上结合线下的加速器项目。在３个月期间，创始人们会得到资助，从各种workshop和教育环节中受益，并接触到Techstars知名的投资者、创始人及导师网络。[**在这里了解该加速器的更多事宜**](https://www.techstars.com/newsroom/techstars-collaborates-with-filecoin-to-launch-accelerator-program)。
 

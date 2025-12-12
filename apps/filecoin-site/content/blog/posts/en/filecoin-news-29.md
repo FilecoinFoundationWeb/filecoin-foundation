@@ -25,7 +25,7 @@ title: "Filecoin News 29: Join the 1-year celebration of Filecoin Mainnet"
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Welcome to a special edition of Filecoin News!</b></h3>
 
-### Filecoin Orbit Events
+## Filecoin Orbit Events
 
 It’s hard to believe, but the Filecoin network has been in orbit for a year already, following the highly anticipated Filecoin Mainnet Liftoff on October 15th, 2020. In the year since, significant achievements have been made with Filecoin cementing its place as an integral component of the decentralized web3 stack!
 

@@ -30,7 +30,7 @@ title:
 
 <a href="https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-3-10x-increase-in-storage-onboarding/"><img src="/uploads/fil-blog-wormhole.webp" style="width:40%;margin-left:0%"></a>
 
-### Filecoin v13 ‘HyperDrive’ Network Upgrade Unlocks 10-25x Increase in Storage Onboarding
+## Filecoin v13 ‘HyperDrive’ Network Upgrade Unlocks 10-25x Increase in Storage Onboarding
 
 The [**Filecoin v13 ‘HyperDrive’ Network upgrade**](https://github.com/filecoin-project/community/discussions/74#discussioncomment-707228) that will be implemented in just a few weeks will unlock a 10-25x<sup>1</sup> increase in storage onboarding rate due to innovations in Filecoin Proofs system!
 

@@ -28,7 +28,7 @@ title:
 
 <h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
 
-### Wave 8 Dev Grants
+## Wave 8 Dev Grants
 
 Proposals for Wave 8 Dev Grants are [**being accepted**](https://github.com/filecoin-project/devgrants#-how-to-apply) until June 30th at 23:59 PDT. Submit your project proposal by the deadline for early consideration, and contribute to the innovative programs expanding Web3 and the Filecoin ecosystem. Wave 7 Dev Grants have been reviewed and awarded! Check out [**this blog post**](https://filecoinfoundation.medium.com/introducing-the-wave-7-developer-grant-recipients-e302c44c35f6) to learn more about some of the projects that were selected in this round and how they’re enhancing the Filecoin ecosystem.
 

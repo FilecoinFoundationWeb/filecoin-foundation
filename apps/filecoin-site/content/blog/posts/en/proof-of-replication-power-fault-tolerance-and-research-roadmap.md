@@ -33,13 +33,13 @@ Once we have built an efficient addressing and distribution protocol, it’s cle
 
 In the spirit of open source, we’re posting this blog post with a short roadmap and two technical reports on some of those subproblems. The following documents illustrate our progress to date in developing solutions. We will expand and improve upon them over time.
 
-### [Research Roadmap for 2017](https://filecoin.io/vintage/research-roadmap-2017.pdf)
+## [Research Roadmap for 2017](https://filecoin.io/vintage/research-roadmap-2017.pdf)
 
 This document opens with a description of how far Filecoin has come and then describes the results that have been presented this year. We consider the core of the Filecoin protocol design to be stable, though we are open to improvements on some of its pieces.
 
 The remainder of the Research Roadmap is a list of known future work and remaining open problems to be tackled in the remainder of 2017: finishing these papers, implementing Filecoin, making progress on outlined future work, and searching for solutions to a set of open problems.
 
-#### Research Roadmap 2017
+### Research Roadmap 2017
 
 ### [Proof of Replication](https://filecoin.io/vintage/proof-of-replication.pdf)
 

@@ -30,7 +30,7 @@ To maintain this momentum, we’re teaming up with other Web3 leaders to create 
 
 Keep reading to learn more about how you can participate in two new programs designed to foster the next generation of the web: Filecoin Launchpad Accelerator and Filecoin APOLLO.
 
-### [Filecoin Launchpad Accelerator](https://tachyon.xyz/)
+## [Filecoin Launchpad Accelerator](https://tachyon.xyz/)
 
 ![Filecoin Launchpad Accelerator](https://filecoin.io/vintage/images/blog/ignite-launchpad.jpg)
 

@@ -24,7 +24,7 @@ Filecoin Green与[Filecoin Foundation](https://fil.org/)联合宣布了一个令
 
 这个资助计划旨在扩展Filecoin Green的使命，即衡量Filecoin对自然环境的影响，并以可验证的方式将这影响减少到零。在任务过程中所搭建的基础设施，会让所有人都能作出透明的、实质性的环境影响主张。
 
-### 什么是可再生金融（Regenerative Finance，ReFi）？
+## 什么是可再生金融（Regenerative Finance，ReFi）？
 
 ReFi对现有的金融体系架构提出了挑战，后者对我们当前的环境危机有推波助澜的作用。ReFi不会将经济构建在滥用自然资源的基础上，而是将焦点转移到地球及其各类资源的再生上。ReFi所创建的范式，通过一些人的行动，在Web3和气候行动的交界点，致力于实现可持续及自然的环境，从而将竞争转变成协作关系。
 

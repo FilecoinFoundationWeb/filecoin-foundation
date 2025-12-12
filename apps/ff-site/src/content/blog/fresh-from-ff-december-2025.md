@@ -16,7 +16,7 @@ seo:
 
 **FIL Dev Summit 7 brought builders, researchers, and ecosystem leaders in Buenos Aires to chart the network's path forward.** The Filecoin community came together in person to build on the discussions from its [virtual, online-only companion event in October](https://fil.org/events/virtual-fil-dev-summit-7), tackle technical challenges, and facilitate cross-team coordination to drive the network's next phase of evolution. Get the recap. 
 
-### Ecosystem
+## Ecosystem
 
 - Filecoin Onchain Cloud is live on testnet, with mainnet support expected in early 2026. Over [100 early builders](https://app.akindo.io/wave-hacks/1PRjgGzKaTqXaQBBl?tab=overview) have been experimenting with Filecoin Onchain Cloud for the last three months, building new dApps, tools, and communities with onchain, verifiable storage and services. Demos, workshops, and developer walkthroughs are [available on YouTube](https://youtube.com/playlist?list=PL_0VrY55uV181dWs7RfIpx0ZAUZeNMjE1&si=PxWegrh7jcexyrXB), where developers can l build applications with onchain control over data, payments, and logic on [filecoin.cloud](http://filecoin.cloud).
 - [Introducing Synapse SDK](https://docs.filecoin.cloud/getting-started). Filecoin Synapse SDKis a simple, easy-to-use Javascript SDK for builders to access Filecoin Onchain Cloud flagship services to power new dApps and smart contracts.It lets developers upload, retrieve, and pay for storage using simple, high-level APIs. 

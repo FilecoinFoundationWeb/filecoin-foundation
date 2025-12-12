@@ -30,7 +30,7 @@ The Hedera public network is a fast, low-cost, and eco-friendly distributed ledg
 
 Filecoin and Hedera have a history of technical collaboration among various projects. Hedera brings highly efficient DLT capabilities, while Filecoin offers a robust, flexible large-scale storage layer. Combining both networks provides new possibilities to verify the provenance, ownership, and validity of both transactions and their underlying data.
 
-### Providing Decentralized Storage to Hedera NFTs
+## Providing Decentralized Storage to Hedera NFTs
 
 Hedera Improvement Proposal 10 ([HIP-10](https://github.com/hashgraph/hedera-improvement-proposal/blob/master/HIP/hip-10.md)) offers an ecosystem standard for NFT metadata. To bolster this new functionality, Filecoin (specifically, the [NFT.storage](http://nft.storage/) service) enables decentralized storage of the JSON schema containing those NFT properties and multimedia or localization data.
 

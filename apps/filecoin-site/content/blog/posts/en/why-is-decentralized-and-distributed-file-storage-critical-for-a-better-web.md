@@ -32,7 +32,7 @@ In the span of less than three decades the web has become one of the greatest ac
 
 The web need not be structured this way. Emerging new technologies are allowing us to improve the web’s underlying protocols by addressing content by what it is rather than addressing it by where it is. This makes the web a much safer and robust place, where we’re far less reliant on any one particular entity to give us the data we request. Now instead of relying on expensive businesses to store and transmit humanity’s trove of knowledge we can distribute data across a vast network of peers who are paid to store each other’s data.
 
-### Decentralized Storage makes the web robust and resilient
+## Decentralized Storage makes the web robust and resilient
 
 Today, information on the internet is addressed by **location**: a particular piece of content has a URL — a Universal Resource _Locator_ — that involves the IP Address of a web server that hosts the content at a specific location. For example, to go to a URL like facebook.com/mypicture.jpg, we resolve the domain name (facebook.com) into an IP Address (eg 31.13.70.36) and look up the picture there. The URL is saying “go to 31.13.70.36 and request the content at the path “/mypicture.jpg”. The URL always points to that location. If the same picture was hosted on another site, or even your own computer, you would still have to connect to that IP Address and download the content.
 
