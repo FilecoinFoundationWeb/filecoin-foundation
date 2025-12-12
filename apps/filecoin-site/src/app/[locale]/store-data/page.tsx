@@ -51,7 +51,7 @@ export default function StoreData() {
         />
       </div>
 
-      <PageSection paddingVariant="compact" backgroundVariant="dark">
+      <PageSection backgroundVariant="dark" paddingVariant="topNone">
         <LogoSection
           headingTag="h2"
           title="Trusted by industry leaders"

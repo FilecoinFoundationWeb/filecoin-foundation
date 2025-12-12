@@ -41,7 +41,7 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
         />
       </PageSection>
 
-      <PageSection paddingVariant="topOnly" backgroundVariant="dark">
+      <PageSection paddingVariant="topNone" backgroundVariant="dark">
         <SectionContent
           title="Featured datasets"
           description="Explore some of the organizations using Filecoin to preserve their data."
@@ -63,7 +63,7 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection backgroundVariant="dark" paddingVariant="topNone">
         <SectionContent
           title="Preserve your most important data with Filecoin"
           description="Join the organizations already protecting their most valuable datasets on the Filecoin network."
@@ -72,7 +72,7 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
               Start storing on Filecoin
             </Button>
           }
-        ></SectionContent>
+        />
       </PageSection>
     </>
   )

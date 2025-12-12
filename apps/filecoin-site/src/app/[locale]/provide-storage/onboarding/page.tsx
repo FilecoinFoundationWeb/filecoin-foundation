@@ -14,12 +14,12 @@ export default function ProvideStorageFormPage() {
   return (
     <>
       <Navigation backgroundVariant="light" />
-      <PageSection backgroundVariant="light">
+      <PageSection backgroundVariant="light" paddingVariant="topCompact">
         <div className="max-w-4xl">
           <Heading tag="h2" variant="section-heading">
             Thanks for your interest in becoming a Filecoin storage provider.
           </Heading>
-          <p className="pt-6 pb-25 text-xl/7 text-pretty text-[var(--color-paragraph-text)]">
+          <p className="pt-6 pb-25 text-xl/7 text-pretty text-(--color-paragraph-text)">
             Please fill out this form below, and a member of the onboarding team
             will reach out to guide you through next steps.
           </p>

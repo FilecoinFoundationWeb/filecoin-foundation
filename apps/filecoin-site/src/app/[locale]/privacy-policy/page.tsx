@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
         structuredData={generateStructuredData(PRIVACY_POLICY_SEO)}
       />
       <Navigation backgroundVariant="light" />
-      <PageSection backgroundVariant="light">
+      <PageSection backgroundVariant="light" paddingVariant="topCompact">
         <PageHeader title="Privacy Policy" />
       </PageSection>
     </>

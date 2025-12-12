@@ -65,7 +65,10 @@ export default async function CommunityHub({ params }: BlogProps) {
           className="absolute right-0 bottom-0 -z-10 h-full object-cover"
         />
 
-        <PageSection backgroundVariant="transparentDark">
+        <PageSection
+          backgroundVariant="transparentDark"
+          paddingVariant="topNone"
+        >
           <CardGrid as="ul" variant="mdOneLgThree">
             {getInvolvedWithCommunity.map(({ title, description, cta }) => (
               <SimpleCard
@@ -234,7 +237,8 @@ export default async function CommunityHub({ params }: BlogProps) {
             </Button>
           }
         />
-        <div className="mt-40">
+
+        <div className="mt-15">
           <SectionImage {...graphicsData.earthAtNight} />
         </div>
       </PageSection>

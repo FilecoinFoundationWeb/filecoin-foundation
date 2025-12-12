@@ -34,7 +34,7 @@ export function SectionSubContent({
           {title}
         </Heading>
         {description && (
-          <p className="pt-6 text-xl/7 text-pretty text-[var(--color-paragraph-text)]">
+          <p className="pt-6 text-xl/7 text-pretty text-(--color-paragraph-text)">
             {description}
           </p>
         )}

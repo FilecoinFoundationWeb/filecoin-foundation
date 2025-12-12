@@ -59,7 +59,7 @@ export default function BuildOnFilecoin() {
           />
         </PageSection>
 
-        <div className="absolute top-70 right-0 hidden h-[60vh] w-[50vw] lg:block">
+        <div className="absolute top-30 right-0 hidden h-[60vh] w-[50vw] lg:block">
           <Image
             fill
             priority
@@ -69,7 +69,10 @@ export default function BuildOnFilecoin() {
           />
         </div>
 
-        <PageSection backgroundVariant="transparentDark">
+        <PageSection
+          backgroundVariant="transparentDark"
+          paddingVariant="topNone"
+        >
           <SectionContent title="Announcing Filecoin Onchain Cloud">
             <SplitSectionContent
               title="Verifiable onchain services with transparent storage, retrieval, and payments"
@@ -87,7 +90,7 @@ export default function BuildOnFilecoin() {
         </PageSection>
       </div>
 
-      <PageSection paddingVariant="topOnly" backgroundVariant="light">
+      <PageSection backgroundVariant="light" paddingVariant="bottomNone">
         <SectionContent
           centerCTA
           title="Built on Filecoin"

@@ -52,7 +52,7 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
         />
       </PageSection>
 
-      <PageSection backgroundVariant="dark" paddingVariant="compact">
+      <PageSection backgroundVariant="dark" paddingVariant="topNone">
         <ul className="grid grid-cols-1 gap-15 md:grid-cols-2 lg:grid-cols-3">
           <TextCard title="Challenge" description={challenge} />
           <TextCard title="Solution" description={solution} />
@@ -60,7 +60,7 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
         </ul>
       </PageSection>
 
-      <PageSection backgroundVariant="light" paddingVariant="medium">
+      <PageSection backgroundVariant="light">
         <div className="mx-auto max-w-3xl">
           <BaseMarkdownContent>{content}</BaseMarkdownContent>
         </div>
