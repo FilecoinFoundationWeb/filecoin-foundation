@@ -90,9 +90,9 @@ Full details for how to compete in the Replication Game are available on [GitHub
 Come join the discussion! You can participate in our research and development conversations on Filecoin chat, ask for help troubleshooting installation problems on the discussion forums, and visit our [community repo](https://github.com/filecoin-project/community) for information about meetups, calls, and other community resources!
 
 - **Chat channels:** We use channels bridged across several platforms. As a distributed community, these channels are where the vast majority of our communications take place. Please read our [code of conduct](https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md) before posting on chat.
-  - _Matrix:_ [Filecoin community](https://riot.im/app/#/group/+filecoin:matrix.org) (which contains links to all bridged channels)
-  - _Slack:_ Create an account [here](https://join.slack.com/t/filecoinproject/shared_invite/enQtNTUwNTI1Mzk5MDYwLTI2MmMxNzNjYjhlYWM3YjQxM2E4MThmM2ZhY2JkYWIxNGVjMGVmNTg3Y2VhZjQ3OGM5ZTc1OGFmZGZhMzZmMTI)
-  - _IRC:_ [Coming soon](https://github.com/filecoin-project/community/issues/4)
+- _Matrix:_ [Filecoin community](https://riot.im/app/#/group/+filecoin:matrix.org) (which contains links to all bridged channels)
+- _Slack:_ Create an account [here](https://join.slack.com/t/filecoinproject/shared_invite/enQtNTUwNTI1Mzk5MDYwLTI2MmMxNzNjYjhlYWM3YjQxM2E4MThmM2ZhY2JkYWIxNGVjMGVmNTg3Y2VhZjQ3OGM5ZTc1OGFmZGZhMzZmMTI)
+- _IRC:_ [Coming soon](https://github.com/filecoin-project/community/issues/4)
 - [**Discussion forum**](https://discuss.filecoin.io/): We use the forums for more long-lived questions. When in doubt, you can always post here.
 
 ## 7. Build on top of Filecoin

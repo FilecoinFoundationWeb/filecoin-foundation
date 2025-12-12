@@ -29,31 +29,31 @@ title:
 
 [![](/uploads/GR9.webp)](https://gitcoin.co/hackathon/gr9/?org=protocol)
 
-### Gitcoin GR9 Hackathon: March 10-31
+## Gitcoin GR9 Hackathon: March 10-31
 
 Are you working on a project in the Filecoin ecosystem? If so, the GR9 Hackathon is a great opportunity for you to explore new features and potentially get funded for your work. Protocol Labs and its ecosystem collaborators Textile and Fleek are participating in Gitcoin’s GR9 Hackathon with a total of $63k in FIL bounties available for projects built on top of IPFS and Filecoin. Explore building dapps with Fleek’s new Space SDK, Textile’s Threads, Buckets, and new Powergate Miner Index, showcase your integrations with IPFS, or try out a Filecoin tutorial. [**Check it out!**](https://gitcoin.co/hackathon/gr9/?org=protocol)
 
 [![](/uploads/chainlink.webp)](https://chainlinkcommunity.typeform.com/to/bR4tT3cg)
 
-### Chainlink Hackathon: March 15-April 11
+## Chainlink Hackathon: March 15-April 11
 
 Build the next generation of smart contracts at the Spring 2021 Chainlink Hackathon, brought to you by Filecoin, IPFS, and many other incredible ecosystem collaborators! By participating in the competition, you will have the opportunity to build and showcase any innovative DeFi, NFT, Gaming, or universally connected dApp you can imagine using the industry's leading oracle network. Prizes include over $135k in bounties, and your project will be judged by the best in the blockchain industry. [**Ready to join? Register now.**](https://chainlinkcommunity.typeform.com/to/bR4tT3cg)
 
 [![](/uploads/c2f9cdfc-a335-4ab1-b0fe-adbe819004ed.webp)](https://chainlinkcommunity.typeform.com/to/bR4tT3cg)
 
-### NFT Hackathon: March 19-21
+## NFT Hackathon: March 19-21
 
 NFTHack is bringing together a virtual collective of passionate creatives and engineers for a weekend NFT hackathon and summit from March 19-21, powered by ETHGlobal. The event is a great opportunity to explore this exciting new space. There will be challenges from Zora, Rarible, Ethereum, Filecoin, IPFS, and more! Prizes include limited edition NFTs, exclusive experiences, and over $10k. [**Learn more and register here**](https://nft.ethglobal.co/).
 
 ## Store
 
-### Fleek Introduces Automatic Archiving
+## Fleek Introduces Automatic Archiving
 
 Fleek has announced that they are enabling automatic archiving on Filecoin for all sites and storage created on [**Fleek**](https://fleek.co/). This feature means Fleek users benefit from another degree of decentralization and permanence for anything they build with the protocol. Fleek’s support of Filecoin archiving means users who have websites or storage that run on IPFS with Fleek will now benefit from an automatic backup of all information on Filecoin. The v1 of Filecoin archiving on Fleek is just the beginning! Fleek continues to be a market leader in progressive decentralization for Web3, and we’re excited to support the team’s mission through IPFS and now Filecoin. [**Try Fleek**](https://app.fleek.co/) and benefit from Filecoin archiving at no cost to users. [**Read more about the integration in our recent blog post.**](https://filecoin.io/blog/posts/the-next-phase-of-fleek-with-filecoin/)
 
 [![](/uploads/textile-logo-symbol.webp)](https://textile.io/)
 
-### An Update from the Textile Team
+## An Update from the Textile Team
 
 For those who don’t know, [**Textile**](https://textile.io/) is a suite of tools and APIs to help you build on IPFS and Filecoin — our projects include [**Powergate**](https://github.com/textileio/powergate), [**Buckets**](https://github.com/textileio/textile), and [**Threads**](https://github.com/textileio/go-threads). We’ve got some awesome progress updates and ongoing projects to share, so ICYMI — last week we released Miner Index V1, and [**buckets**](https://github.com/textileio/go-buckets) have been split into their own repo, where we will now extend with a pinning API. Additionally, we are partnering with [**Protocol Labs**](https://protocol.ai/) to give away [**$25,000**](https://github.com/protocol/grants/blob/main/hackathons/gitcoin-gr9-hackathon/all-bounties.md) in grants to projects building on [**Textile's APIs**](https://docs.textile.io/) and open-source tools.
 
@@ -67,13 +67,13 @@ Taopaipai, a leading photography service in China, [**announced they will use IP
 
 [![](/uploads/filscout.webp)](http://filscout.com/)
 
-### Filscout
+## Filscout
 
 Looking for a convenient way to quickly find Filecoin network chain data and analytics? Look no further, [**filscout.com**](http://filscout.com/) has you covered. Filscout is a Filecoin Network browser developed by the IPFSUnion team. Filscout has released its first version of the browser page, but is always looking for suggestions and ways to improve it. If you are interested in chatting with the team about how to make Filscout better, please contact them at **tech@ipfsunion.cn**.
 
 [![](/uploads/storage-deals.webp)](https://filecoin.io/blog/posts/how-storage-and-retrieval-deals-work-on-filecoin/)
 
-### How storage and retrieval deals work on Filecoin
+## How storage and retrieval deals work on Filecoin
 
 The Filecoin network achieves economies of scale by allowing anyone to participate as a storage provider. Currently the network is made up of [**hundreds of storage providers**](https://spacegap.github.io/) spread across the globe. Content addressing and cryptographic storage proofs verify that data is being stored correctly and securely over time on miners’ hardware, which creates a robust and reliable service.
 
@@ -91,7 +91,7 @@ On March 12th, the [**Filecoin China Community Forum**](https://github.com/filec
 
 ## Learn
 
-### Free Retrieval via IPFS
+## Free Retrieval via IPFS
 
 Interested in learning about free retrieval via IPFS? Check out this demo by Protocol Labs researcher Alan Shaw, as he walks through a proof-of-concept showing a Lotus miner making deal data available over bitswap to IPFS.
 
@@ -99,13 +99,13 @@ Interested in learning about free retrieval via IPFS? Check out this demo by Pro
 
 [![](/uploads/blockhash-podcast.webp)](https://podcasts.apple.com/us/podcast/blockhash-exploring-the-blockchain/id1241712666)
 
-### Blockhash Podcast: Exploring the Blockchain with Jonathan Victor
+## Blockhash Podcast: Exploring the Blockchain with Jonathan Victor
 
 Earlier this week, Brandon Zemp, host of Blockhash: Exploring the Blockchain, featured Jonathan Victor, Protocol Labs Product Manager, on his podcast. Blockhash is a podcast all about the exciting world of blockchain technology, summed up in short and sweet interviews for those who want to learn about the space, but don’t have the time for research. [**Tune in to the episode with Jonathan to learn about all things Protocol Labs, Filecoin, IPFS, web3, and beyond!**](https://podcasts.apple.com/us/podcast/blockhash-exploring-the-blockchain/id1241712666)
 
 [![](/uploads/33a29e46-4fc2-44a3-916f-b51988547a3b.webp)](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin.html)
 
-### DI2F Workshop at IFIP Networking 2021: Decentralizing the Internet with IPFS and Filecoin
+## DI2F Workshop at IFIP Networking 2021: Decentralizing the Internet with IPFS and Filecoin
 
 The first DI2F workshop, taking place at a premier networking conference, will bring together attendees from academia, industry, and the Filecoin and IPFS ecosystems, as well as the broader decentralized internet communities. The workshop welcomes work-in-progress papers, as well as position statements and project demos. A capstone competition will give attendees the chance to build on top of IPFS and Filecoin, and win prizes. The call for papers, demos, and competition projects is open until **March 19th**. To learn more and submit, check out the [**Call for Contributions on the IFIP Networking 2021 website**](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin.html).
 

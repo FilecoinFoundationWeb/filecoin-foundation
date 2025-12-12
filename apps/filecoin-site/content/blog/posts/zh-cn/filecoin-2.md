@@ -51,8 +51,8 @@ _template: blog_detail_ch
 - 由ConsenSys Diligence提供的[Filecoin Actors Security Audit](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-19-actors-audit)
 - 由NCC提供的[**最近发布更新的** Filecoin Bellman / BLS Signatures Audit](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-20-filecoin-bellman-and-bls-signatures)
 - 即将发布:
-  - 由Least Authority提供的Filecoin Lotus Implementation Security Audit
-  - 由SigmaPrime提供的Filecoin Lotus Implementation Security Audit , [**最近发布更新**](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-20-lotus-mainnet-ready-security-audit)
+- 由Least Authority提供的Filecoin Lotus Implementation Security Audit
+- 由SigmaPrime提供的Filecoin Lotus Implementation Security Audit , [**最近发布更新**](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-20-lotus-mainnet-ready-security-audit)
 
 ## 负责任的披露
 
@@ -67,11 +67,11 @@ Filecoin旨在为人类最重要的信息创建一个分布式的存储网络，
 - 您将有一个私密频道来报告您的发现
 - 作为漏洞赏金参与者，您收到安全港政策保护
 - ([**10月23日更新，奖励范围增加**](https://security.filecoin.io/bug-bounty/))根据漏洞的严重程度，您可以赢得最高10万美金的奖励：
-  - 重大风险: 最高$100,000
-  - 高级风险: 最高$50,000
-  - 中级风险: 最高$15,000
-  - 低级风险: 最高$2,500
-  - 提示: 最高$500
+- 重大风险: 最高$100,000
+- 高级风险: 最高$50,000
+- 中级风险: 最高$15,000
+- 低级风险: 最高$2,500
+- 提示: 最高$500
 - 该计划还没有确切的结束日期，但我们正在寻找改进的方法，请关注博客和网站的更新，并将您的反馈意见发送到[security@filecoin.org](mailto:security@filecoin.org)。
 
 ## 特别感谢安全研究小组的参与

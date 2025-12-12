@@ -59,8 +59,8 @@ You might have stumbled upon previous launches of audit reports from these firms
 - [Filecoin Actors Security Audit](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-19-actors-audit) by ConsenSys Diligence
 - [**Update, now released!** Filecoin Bellman / BLS Signatures Audit](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-20-filecoin-bellman-and-bls-signatures) by NCC
 - To be released soon:
-  - Filecoin Lotus Implementation Security Audit by Least Authority
-  - Filecoin Lotus Implementation Security Audit by SigmaPrime, [**UPDATE, now released**](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-20-lotus-mainnet-ready-security-audit)
+- Filecoin Lotus Implementation Security Audit by Least Authority
+- Filecoin Lotus Implementation Security Audit by SigmaPrime, [**UPDATE, now released**](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-20-lotus-mainnet-ready-security-audit)
 
 ## Responsible Disclosure Policy
 
@@ -75,11 +75,11 @@ You can learn all about the [Filecoin Bug Bounty Program](https://security.filec
 - You will have a private channel to report your findings
 - As a bounty hunter, you are protected by a Safe Harbor Policy
 - ([**UPDATE Oct 23, reward ranges increased**](https://security.filecoin.io/bug-bounty/)) You can win rewards up to $100,000 based on the severity of the issue:
-  - Critical: up to $100,000
-  - High: up to $50,000
-  - Medium: up to $15,000
-  - Low: up to $2,500
-  - Note: up to $500
+- Critical: up to $100,000
+- High: up to $50,000
+- Medium: up to $15,000
+- Low: up to $2,500
+- Note: up to $500
 - There is no set end date on the program yet, but we are looking for ways to improve it, please watch this blog and the site for updates and send us your feedback at [security@filecoin.org](mailto:security@filecoin.org)
 
 ## A special thanks to the participants of the Security Research Fellowship

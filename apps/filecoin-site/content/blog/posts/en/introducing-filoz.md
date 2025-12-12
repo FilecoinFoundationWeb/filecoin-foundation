@@ -111,12 +111,12 @@ As with all our work, FilOz aims to enhance and accelerate the work of others - 
 If you align with these areas of focus in the Filecoin community - we’d love to partner with you to make them a reality! Get involved by:
 
 - Joining [Filecoin slack](http://filecoin.io/slack) and find us in:
-  - \#fil-protocol to brainstorm and design protocol improvements for/with Filecoin. 
-  - \#fil-lotus-dev to implement Filecoin improvements w/ us!
+- \#fil-protocol to brainstorm and design protocol improvements for/with Filecoin. 
+- \#fil-lotus-dev to implement Filecoin improvements w/ us!
 - Participate in or host a Protocol Office Day (deep-dive, Office Hour, or AMA)
-  - Subscribe to upcoming events [here](https://www.filoz.org/events)
-  - [Book office hours](https://www.filoz.org/#team) with our team members, click the 📅 links!
-  - Send collaboration or protocol office ideas to [po@filoz.org](mailto:po@filoz.org). 
+- Subscribe to upcoming events [here](https://www.filoz.org/events)
+- [Book office hours](https://www.filoz.org/#team) with our team members, click the 📅 links!
+- Send collaboration or protocol office ideas to [po@filoz.org](mailto:po@filoz.org). 
 - Join us for deep protocol discussions and workshops at [FDS in Brussels](https://www.fildev.io/).
 - Follow us on Twitter for the latest updates [@\_FilOz](https://x.com/_FilOz).
 

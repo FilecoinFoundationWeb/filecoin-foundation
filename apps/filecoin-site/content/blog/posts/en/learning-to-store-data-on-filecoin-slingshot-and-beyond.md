@@ -119,6 +119,6 @@ The Web3 ecosystem has come a long way, with many promising projects in the spac
 
 **Shi Khai:** “As developers, we need to focus on building true users and communities who will stay with us. Look for communities of true users who will give you true feedback, versus just people who think it’s cool right now because it’s new.”
 
----
+## 
 
 Thank you to all the speakers and participants for these Slingshot events! As we head into the final week of Phase 1 of the competition, we’re excited to see how teams are using what they’ve learned from these events. And we look forward to seeing more generations of developers storing and building on Filecoin.

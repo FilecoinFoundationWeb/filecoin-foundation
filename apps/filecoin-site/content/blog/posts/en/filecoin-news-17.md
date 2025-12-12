@@ -30,7 +30,7 @@ title:
 
 [![](/uploads/accelerator-rocket-purple.webp)](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii)
 
-### Filecoin Launchpad Accelerator II - apply by May 9
+## Filecoin Launchpad Accelerator II - apply by May 9
 
 Tachyon’s Filecoin Launchpad Accelerator is a full-time, fully remote program designed to help startups build more open, interoperable, and programmable tools, infrastructure, and applications for the distributed and decentralized web. Via the program, Tachyon supports projects that build on and bridge the [**IPFS**](https://ipfs.tech/), [**Filecoin**](https://filecoin.io/), and [**Ethereum**](https://ethereum.org/) communities with tools, middleware, and applications. The next cohort will run from June through August 2021, providing 20 teams from around the globe with funding, mentorship, benefits, and programming around business and blockchain-specific issues, culminating in a Demo Day and post-program fundraising support kicking off in September. Applications are now open, and close at midnight EST on May 9. [**Apply now**](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii).
 
@@ -44,7 +44,7 @@ They received a $20,000 grant at the beginning of the Accelerator, and selected 
 
 ![](/uploads/metamask.webp)
 
-### MetaMask + Filecoin Developer Preview
+## MetaMask + Filecoin Developer Preview
 
 This build of MetaMask is a special developer release that contains basic support for Filecoin via a prototype of the upcoming MetaMask Snaps extensibility system. We are making this distribution available so that Filecoin developers can start building Web3 sites that use Filecoin.
 
@@ -52,7 +52,7 @@ Although the Filecoin Snap is pre-installed in this build, the final product wil
 
 ![](/uploads/hackathon-tools-filcoin-ipfs.webp)
 
-### Building on IPFS & Filecoin in March
+## Building on IPFS & Filecoin in March
 
 In the past two months Protocol Labs participated in five different hackathons events, ranging in audience from university builders, to game designers, to blockchain hackers, all building on IPFS and Filecoin.
 
@@ -62,7 +62,7 @@ Chainlink’s spring hackathon, which kicked off earlier in March, wrapped up mi
 
 [![](/uploads/fil-blog-nft-storage-1.webp)](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/)
 
-### Introducing NFT.Storage: Free Decentralized Storage for NFTs
+## Introducing NFT.Storage: Free Decentralized Storage for NFTs
 
 We are excited to introduce [**NFT.Storage**](https://nft.storage/), a service backed by Protocol Labs and Pinata specifically for storing NFT data. NFT.Storage allows developers to protect their NFT assets and associated metadata through content addressing and decentralized storage – ensuring that all NFTs follow best practices to stay accessible long-term.
 
@@ -70,7 +70,7 @@ NFT.Storage lets developers store NFT data on decentralized networks easily, sec
 
 [![](/uploads/videocoin-logo.webp)](https://medium.com/videocoin/the-first-videonft-on-videocoin-filecoin-live-demo-91a305509b34)
 
-### Video NFTs with Filecoin & VideoCoin - Live Demo
+## Video NFTs with Filecoin & VideoCoin - Live Demo
 
 Last month, we announced that **VideoCoin** is integrating its decentralized video processing network with Filecoin to build the first platform specifically designed for creating and trading Video NFTs. In this live demo, you will learn exactly how the integration works, including how to create and store a Video NFT along with its Proof of Ownership, a preview of the NFT platform and UI, and how to retrieve the Proof of Ownership and prove that it works. [**Watch now.**](https://medium.com/videocoin/the-first-videonft-on-videocoin-filecoin-live-demo-91a305509b34)
 
@@ -78,7 +78,7 @@ Last month, we announced that **VideoCoin** is integrating its decentralized vid
 
 [![](/uploads/filecoin-plus-logo.webp)](https://filecoinfoundation.medium.com/join-us-for-filecoin-plus-day-a06b9c4acf85)
 
-### Join us for Filecoin Plus Day
+## Join us for Filecoin Plus Day
 
 Join us Tuesday, May 11 at 2pm UTC for Filecoin Plus Day to learn about the fundamentals of Filecoin Plus, a program designed to incentivize useful storage on the Filecoin network. This event is open to the entire Filecoin community and intended for anyone interested in learning more about participating in the program as a client or a notary, and those interested in learning more about the economics of the program.
 
@@ -86,7 +86,7 @@ Over the course of three hours, we’ll hear from the project architects, Fileco
 
 [![](/uploads/filecoin-12-bug.webp)](https://filecoin.io/blog/posts/filecoin-network-v12/)
 
-### Network Upgrade v12
+## Network Upgrade v12
 
 On April 29th, 2021, the Filecoin network upgraded to version 12. The upgrade introduced [**version 4**](https://github.com/filecoin-project/specs-actors/releases/tag/v4.0.0) of the [**specs-actors implementation**](https://github.com/filecoin-project/specs-actors), the set of built-in actors that specify the rules of the Filecoin protocol. The new version of specs-actors was designed to be significantly more performant, thus speeding up block validation times. To learn more about the upgrade, the motivation behind it, and performance updates, check out our most recent [**blog post**](https://filecoin.io/blog/posts/filecoin-network-v12/).
 
@@ -94,7 +94,7 @@ On April 29th, 2021, the Filecoin network upgraded to version 12. The upgrade in
 
 [![](/uploads/meetup-1.webp)](https://www.meetup.com/Filecoin-San-Francisco/events/276433306/)
 
-### Join us for the May Meetup, focused on NFTs
+## Join us for the May Meetup, focused on NFTs
 
 On May 18th, join the Filecoin community for the May community meetup which is entirely focused on all things NFTs featuring presentations from VideoCoin, Fleek, and more! Filecoin meetups are an opportunity to meet the people behind the many tools and projects being built in the Filecoin ecosystem. In case you missed the April meetup, [**catch up on the recording**](https://youtu.be/zjtsnqNjIfo) and be sure to [**register**](https://www.meetup.com/Filecoin-San-Francisco/events/276433306/) for the next one!
 
@@ -102,7 +102,7 @@ On May 18th, join the Filecoin community for the May community meetup which is e
 
 [![](/uploads/aave.webp)](https://aave.com/)
 
-### Filecoin borrowing and lending is now available through [**Aave on Ethereum**](https://aave.com/)
+## Filecoin borrowing and lending is now available through [**Aave on Ethereum**](https://aave.com/)
 
 Here’s how it works: just install an Ethereum wallet like [**MetaMask**](https://metamask.io/), deposit a stablecoin like DAI/USDC as collateral, and then withdraw renFIL up to the cap. Then head over to the DeFi Bridge to convert renFIL to native Filecoin to run more Storage Miners!
 
@@ -110,7 +110,7 @@ For step-by-step instructions, check [**this Twitter thread**](https://twitter.c
 
 [![](/uploads/prot-logo-symbol-color.webp)](https://proto.school/)
 
-### ProtoSchool’s Interactive Tutorials
+## ProtoSchool’s Interactive Tutorials
 
 Interested in learning more about Filecoin, IPLD, or libp2p? Check out [ProtoSchool’s self-guided interactive tutorials](https://proto.school/), designed to introduce you to decentralized web concepts, protocols, and tools. Select your topic and track your progress as you go, in a format that's right for you. Complete JavaScript code challenges right in your web browser, or stick to our text-based or multiple-choice tutorials for a code-free experience.
 

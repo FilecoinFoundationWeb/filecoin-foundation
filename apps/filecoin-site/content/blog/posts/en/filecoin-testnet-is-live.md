@@ -73,7 +73,7 @@ If you haven’t already, now is a perfect time to join the Filecoin community. 
 - [Chat](https://github.com/filecoin-project/community#chat) (Slack or Matrix)
 - [Discourse discussion forum](https://discuss.filecoin.io/)
 - [GitHub](https://github.com/filecoin-project/)
-  - [Lotus issues on GitHub](https://github.com/filecoin-project/lotus/issues)
+- [Lotus issues on GitHub](https://github.com/filecoin-project/lotus/issues)
 
 ## Participate in our testnet AMA
 
