@@ -128,3 +128,36 @@ export const featuredFilecoinStorageProvider = {
   url: 'https://storacha.network/',
   logo: StorachaMiniatureLogo,
 } as const satisfies FeaturedStorageProvider
+
+export const otherFilecoinPoweredSolutions = [
+  {
+    name: 'Lorem Ipsum 1',
+    description: 'Lorem ipsum dolor sit amet.',
+    labels: ['Drag and drop'],
+    cents: 300,
+    bestFor: ['Developers'],
+    keyFeatures: ['Fast access to data', 'Tightly integrated with IPFS'],
+    url: 'https://www.example.com/',
+    logo: AkaveMiniatureLogo,
+  },
+  {
+    name: 'Lorem Ipsum 2',
+    description: 'Lorem ipsum dolor sit amet.',
+    labels: ['Drag and drop'],
+    cents: 400,
+    bestFor: ['Developers'],
+    keyFeatures: ['Fast access to data', 'Tightly integrated with IPFS'],
+    url: 'https://www.example.com/',
+    logo: AkaveMiniatureLogo,
+  },
+  {
+    name: 'Lorem Ipsum 3',
+    description: 'Lorem ipsum dolor sit amet.',
+    labels: ['Drag and drop'],
+    cents: 500,
+    bestFor: ['Developers'],
+    keyFeatures: ['Fast access to data', 'Tightly integrated with IPFS'],
+    url: 'https://www.example.com/',
+    logo: AkaveMiniatureLogo,
+  },
+] as const satisfies Array<StorageProvider>
