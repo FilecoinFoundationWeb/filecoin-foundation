@@ -16,7 +16,10 @@ import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { PageHeader } from './components/PageHeader'
 import { CASE_STUDIES_SEO } from './constants/seo'
-import { getCaseStudiesData } from './utils/getCaseStudyData'
+import {
+  getNonFeaturedCaseStudiesData,
+  getFeaturedCaseStudiesData,
+} from './utils/getCaseStudyData'
 
 type CaseStudiesProps = {
   params: Promise<LocaleParams>
@@ -25,7 +28,8 @@ type CaseStudiesProps = {
 export default async function CaseStudies({ params }: CaseStudiesProps) {
   const { locale } = await params
 
-  const caseStudiesData = await getCaseStudiesData(locale)
+  const featuredCaseStudiesData = await getFeaturedCaseStudiesData(locale)
+  const caseStudiesData = await getNonFeaturedCaseStudiesData(locale)
 
   return (
     <>
@@ -44,8 +48,32 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
 
       <PageSection paddingVariant="topNone" backgroundVariant="dark">
         <SectionContent
-          title="Featured datasets"
-          description="Explore some of the organizations using Filecoin to preserve their data."
+          title="Organizations preserving their data on Filecoin"
+          description="Read full case studies of some of the organizations using Filecoin to preserve their data."
+        >
+          <CardGrid as="ul" variant="lgTwoWide">
+            {featuredCaseStudiesData.map(
+              ({ title, cardDescription, logo, slug }) => (
+                <SimpleCardWithLogo
+                  key={title}
+                  title={title}
+                  description={cardDescription}
+                  logo={logo}
+                  cta={{
+                    href: `${PATHS.CASE_STUDIES.path}/${slug}`,
+                    text: 'Read case study',
+                  }}
+                />
+              ),
+            )}
+          </CardGrid>
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="light">
+        <SectionContent
+          title="More datasets (case studies coming soon)"
+          description="Discover additional teams leveraging Filecoin for data preservation. Full case studies are coming soon."
         >
           <CardGrid as="ul" variant="lgTwoWide">
             {caseStudiesData.map(({ title, cardDescription, logo, slug }) => (
@@ -64,7 +92,7 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="dark" paddingVariant="topNone">
+      <PageSection backgroundVariant="dark">
         <SectionContent
           title="Preserve your most important data with Filecoin"
           description="Join the organizations already protecting their most valuable datasets on the Filecoin network."
