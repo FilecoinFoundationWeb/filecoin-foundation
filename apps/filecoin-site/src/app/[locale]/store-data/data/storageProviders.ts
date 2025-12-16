@@ -6,7 +6,6 @@ import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.svg'
 import SingularityMiniatureLogo from '@/assets/miniatures/singularity-miniature.svg'
 import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.svg'
 
-
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 import type { StorageProviderCardWithImageProps } from '../components/StorageProviderCard/StorageProviderCardWithImage'
 
@@ -141,7 +140,7 @@ export const otherFilecoinPoweredSolutions = [
     bestFor: ['Developers'],
     keyFeatures: ['Lorem ipsum A', 'Lorem ipsum B'],
     url: '#',
-    logo: AkaveMiniatureLogo,
+    logo: PlaceholderLogo,
   },
   {
     name: 'Ipsum Storage B',
