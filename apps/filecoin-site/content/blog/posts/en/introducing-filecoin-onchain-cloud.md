@@ -153,7 +153,7 @@ The first storage services built on Filecoin Onchain Cloud are coming online acr
 
 ### Filecoin Onchain Cloud Alpha Builder Cohort
 
-Over [100 early builders ](https://app.akindo.io/wave-hacks/1PRjgGzKaTqXaQBBl?tab=overview)have been experimenting with Filecoin Onchain Cloud for the last three months, building new dApps, tools, and communities with onchain, verifiable storage and services. A look at the top projects:
+Over [100 early builders](https://app.akindo.io/wave-hacks/1PRjgGzKaTqXaQBBl?tab=overview)have been experimenting with Filecoin Onchain Cloud for the last three months, building new dApps, tools, and communities with onchain, verifiable storage and services. A look at the top projects:
 
 - **[Eastore](https://www.eastore.xyz/):** A chain-agnostic, decentralized drive that gives users private, client-side encrypted storage and data ownership through Filecoin Onchain Cloud.
 - **[Filosign](https://app.filosign.xyz):** A decentralized, onchain alternative to DocuSign that gives enterprises cryptographic, verifiable e-signatures stored immutably on Filecoin.

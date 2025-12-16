@@ -17,13 +17,13 @@ Over the last four years, institutions have explored the Filecoin ecosystem, dra
 
 This is how we started Akave: the journey began with direct requests from real users eager to make the leap to decentralized storage without sacrificing the tools and processes they already trusted. By focusing on drop-in compatibility and intuitive migration, Akave Cloud was purpose-built to allow institutions and DePIN projects to seamlessly bridge the gap between traditional and decentralized storage, empowering them to unlock all the benefits of Filecoin and next-generation data sovereignty, right from day one.
 
-### S3-Compatible Object Storage: Drop-in Simplicity, Decentralized Power
+## S3-Compatible Object Storage: Drop-in Simplicity, Decentralized Power
 
 Akave Cloud is designed as a fully [S3-compatible object storage layer](https://akave.com/why-akave-cloud)—allowing businesses, AI/ML teams, and DePIN projects to migrate at their own pace, without new software or complex integration while maintaining the benefits of onchain verifiability. Through familiar S3 APIs, organizations can manage, migrate, and access data using the same tools they know from Web2 clouds, while gaining all the advantages of Filecoin-backed decentralization. This compatibility means instant onboarding; data lakes, model artifacts, and analytics pipelines all just work and immutable CIDs are tracked for each data object.
 
 Also, all storage actions (uploads, reads, access permissions) are immutably logged onchain, providing auditability and compliance. Akave’s multi-tier storage, combining a high-speed hot tier and cost-efficient Filecoin-based archiving, enables both immediate access and cryptographically-proven durability. Data is encrypted, erasure-coded, and distributed with advanced redundancy, ensuring up to 11x9s durability.
 
-### Why Are DePIN and Institutions Migrating?
+## Why Are DePIN and Institutions Migrating?
 
 While large enterprises have historically moved cautiously and slowly, the IoT DePIN (Decentralized Physical Infrastructure Network) sector, typically powered by edge devices or robotics, has rapidly driven demand for verifiable, blockchain-powered storage. Even DePIN projects, born in Web3, have enterprise-grade needs. Their de facto storage layers are still AWS, GCP and MSFT cloud.
 
@@ -36,13 +36,13 @@ Feedback from DePIN projects and institutions repeatedly identifies four must-ha
 
 Akave Cloud was engineered specifically around these pain points. By delivering programmable access control, zoning, and onchain verifiability, all behind an S3-compatible interface, Akave removes the last mile of enterprise migration friction.
 
-### Evolving With Filecoin: Archival and PDP-Powered Warm Storage
+## Evolving With Filecoin: Archival and PDP-Powered Warm Storage
 
 Akave Cloud’s foundation has been Filecoin’s Proof-of-Replication (PoRep), cryptographically proving archives are truly stored and making it the premier choice for regulated backups, tamper-proof retention, and disaster recovery.
 
 Now, with the introduction of Proof of Data Possession (PDP), Akave’s goal is to enable “warm” data use cases as well for files that require instant access and regular modification but still need proof of availability and integrity. PDP lets storage providers cryptographically prove, on-demand, that your hot data is immediately available. This unlocks new possibilities for AI training, dApp hosting, and any workload demanding verifiable, low-latency reads, all within Akave’s decentralized S3-compatible framework.
 
-### Use Cases with Verifiable Data Storage
+## Use Cases with Verifiable Data Storage
 
 - AI Infrastructure: Secure model training pipelines and guarantee the provenance of datasets, with persistent, auditable storage to build trust and scalability.
 - Regulated Industries: Guarantee compliance and data sovereignty by implementing granular, blockchain-based access controls and immutable audit trails.
@@ -50,7 +50,7 @@ Now, with the introduction of Proof of Data Possession (PDP), Akave’s goal is 
 - DePIN Builders: Deliver robust, verifiable storage for decentralized infrastructure projects, supporting data sales, aggregation, and onchain compliance.
 - Data Lakes & Analytics: Ingest and analyze data within a decentralized backend, enjoying automated governance, flexible access control, and long-term durability.
 
-### The Road Ahead: Onboarding the Next Wave
+## The Road Ahead: Onboarding the Next Wave
 
 Akave Cloud is already empowering data-driven organizations to benefit from:
 
