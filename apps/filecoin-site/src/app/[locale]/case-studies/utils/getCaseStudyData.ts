@@ -47,3 +47,12 @@ function transformCaseStudyData(
 function getDirectoryPathForLocale(locale: string) {
   return PATHS.CASE_STUDIES.entriesPath + `/${locale}`
 }
+
+export async function getCaseStudiesByFeaturedStatus(locale: string) {
+  const allCaseStudies = await getCaseStudiesData(locale)
+
+  return {
+    featured: allCaseStudies.filter((item) => item.featured),
+    upcoming: allCaseStudies.filter((item) => !item.featured),
+  }
+}
