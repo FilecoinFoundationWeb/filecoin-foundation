@@ -40,7 +40,7 @@ export function PageHeader({
         </Heading>
 
         {description && (
-          <span className={clsx(descriptionStyle, 'text-balance md:text-xl/7')}>
+          <span className={descriptionStyle}>
             {typeof description === 'string' ? (
               <p>{description}</p>
             ) : (
