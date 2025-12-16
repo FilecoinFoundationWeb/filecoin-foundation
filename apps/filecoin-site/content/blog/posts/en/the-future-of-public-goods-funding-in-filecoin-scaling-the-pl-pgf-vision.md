@@ -7,7 +7,8 @@ excerpt: >-
 share_image: /uploads/FIL-ProPGF.webp
 image:
   url: /uploads/FIL-ProPGF.webp
-author: "Sejal Rekhan, Josh Daniels, with input from Molly Mackinlay and Tom Mellon"
+# todo: add back to author field: with input from Molly Mackinlay and Tom Mellon
+author: "Sejal Rekhan & Josh Daniels"
 date: 2025-09-14T22:00:00.000Z
 categories:
   - updates
@@ -20,6 +21,8 @@ related_article_2: >-
 related_article_3: >-
   content/blog/posts/filecoin-retropgf-round-3-powering-proven-impact-with-585k-fil.en.md
 ---
+
+_With input from Molly Mackinlay and Tom Mellon._
 
 Public goods have always been the invisible scaffolding of open-source networks. From storage provider-client implementations to protocol research, documentation, and developer tooling - much of what keeps blockchains running is non-excludable and non-rivalrous. This makes it difficult to sustain through traditional market incentives, often leaving critical contributions underfunded or invisible.
 
