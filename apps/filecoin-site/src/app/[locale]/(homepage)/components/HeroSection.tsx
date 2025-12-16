@@ -21,6 +21,7 @@ export function HeroSection() {
           centered
           title={t('headline')}
           description={t('description')}
+          variant="highContrast"
           cta={[
             <Button href={PATHS.STORE_DATA.path} variant="primary">
               {t('cta.main')}
