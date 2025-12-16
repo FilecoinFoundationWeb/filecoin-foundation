@@ -5,6 +5,8 @@ updated-on: 2025-12-10T22:18:00.000Z
 published-on: 2025-12-10T22:18:00.000Z
 email: encrypted::U2FsdGVkX18PaBGiAfMDYyORe7pK6kYBk/vfBgbEzw8=
 full-name: encrypted::U2FsdGVkX1/Gpp/vV0LNmHSGUiVvYZUmaX/Dr5jcX80=
+image:
+  src: /assets/images/akave-cloud-logo.webp
 category: storage-provider
 description: Offers Filecoin Warm Storage and serves as a storage onramp for
   organizations with verifiable data needs.
