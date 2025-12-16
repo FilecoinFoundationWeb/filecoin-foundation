@@ -19,7 +19,6 @@ export const ecosystemGroups = [
       type: 'svg',
       src: FilecoinFoundationIconLogo,
       bgColor: '#08072E',
-      color: '#fff',
     },
     cta: {
       href: FILECOIN_FOUNDATION_URL,
@@ -33,7 +32,6 @@ export const ecosystemGroups = [
       type: 'svg',
       src: FilOzLogo,
       bgColor: '#0090FF',
-      color: '#F7F7F7',
     },
     cta: {
       href: 'https://www.filoz.org/',
@@ -86,7 +84,6 @@ export const ecosystemGroups = [
       type: 'svg',
       src: ANSALogo,
       bgColor: '#F5F4F2',
-      color: '#000',
     },
     cta: {
       href: 'https://ansaresearch.ai/',
