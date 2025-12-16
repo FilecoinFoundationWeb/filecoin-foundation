@@ -73,7 +73,7 @@
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
-    "@testing-library/react": "^16.3.0",
+    "@testing-library/react": "^16.3.1",
     "jest": "^30.2.0"
   },
   "peerDependencies": {

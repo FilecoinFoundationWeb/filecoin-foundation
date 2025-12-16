@@ -12,12 +12,12 @@
   "dependencies": {
     "@filecoin-foundation/ui": "0.0.0",
     "next": "^15.5.7",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
-    "tailwindcss": "^4.1.14"
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
-    "@eslint/js": "^9.36.0",
+    "@eslint/js": "^9.39.2",
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
     "@next/eslint-plugin-next": "^15.5.6",
@@ -27,18 +27,18 @@
     "@types/react-dom": "19.2.3",
     "@unlighthouse/cli": "^0.17.4",
     "@unlighthouse/core": "^0.17.1",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-only-warn": "^1.1.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.0",
-    "eslint-plugin-turbo": "^2.5.8",
+    "eslint-plugin-turbo": "^2.6.3",
     "globals": "^16.4.0",
     "postcss": "^8.5.6",
-    "puppeteer": "^24.25.0",
-    "tsx": "^4.20.6",
+    "puppeteer": "^24.33.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.1"
+    "typescript-eslint": "^8.50.0"
   }
 }
