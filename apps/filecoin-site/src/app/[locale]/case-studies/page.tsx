@@ -32,6 +32,7 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
       <Navigation backgroundVariant="dark" />
       <PageSection backgroundVariant="dark">
         <PageHeader
+          variant="highContrast"
           title="Powering the preservation of critical datasets"
           description="From AI datasets to government archives, leading institutions trust Filecoin to securely and resiliently store their most valuable datasets."
           image={{

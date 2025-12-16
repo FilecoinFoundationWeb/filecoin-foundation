@@ -10,6 +10,7 @@ export type PageHeaderProps = {
   description?: string | ReactElement
   centered?: boolean
   cta?: ButtonRowProps['buttons']
+  variant?: 'default' | 'highContrast'
 }
 
 export function PageHeader({
@@ -17,7 +18,15 @@ export function PageHeader({
   description,
   centered,
   cta,
+  variant = 'default',
 }: PageHeaderProps) {
+  const descriptionStyle = clsx(
+    'text-balance md:text-xl/7',
+    variant === 'highContrast'
+      ? 'text-(--color-paragraph-text-strong)'
+      : 'text-(--color-paragraph-text)',
+  )
+
   return (
     <header>
       <div
@@ -30,7 +39,15 @@ export function PageHeader({
           {title}
         </Heading>
 
-        {renderDescription(description)}
+        {description && (
+          <span className={clsx(descriptionStyle, 'text-balance md:text-xl/7')}>
+            {typeof description === 'string' ? (
+              <p>{description}</p>
+            ) : (
+              <span>{description}</span>
+            )}
+          </span>
+        )}
       </div>
 
       {cta && (
@@ -40,16 +57,4 @@ export function PageHeader({
       )}
     </header>
   )
-}
-
-function renderDescription(description: PageHeaderProps['description']) {
-  if (!description) return null
-
-  const style = 'text-balance text-(--color-text-strong) md:text-xl/7'
-
-  if (typeof description === 'string') {
-    return <p className={style}>{description}</p>
-  }
-
-  return <span className={style}>{description}</span>
 }

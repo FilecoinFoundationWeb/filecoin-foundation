@@ -37,6 +37,7 @@ export default function Learn() {
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
+            variant="highContrast"
             title="The authenticity layer of a more resilient internet"
             description="Filecoin is the world's largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's information, keeping it free from centralized control."
             cta={
