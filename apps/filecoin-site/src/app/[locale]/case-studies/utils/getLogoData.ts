@@ -23,52 +23,52 @@ const LOGO_CONFIG: Record<string, ImageLogoConfig | SVGLogoConfig> = {
   aethir: {
     type: 'svg',
     asset: AethirLogo,
-    bgColor: '#111111',
+    bgColor: '#111',
   },
   'easier-data-initiative': {
     type: 'image',
     asset: EasierDataInitiativeLogo,
-    bgColor: '#ffffff',
+    bgColor: '#fff',
   },
   'flickr-foundation': {
     type: 'svg',
     asset: FlickrFoundationLogo,
-    bgColor: '#EDEDED',
+    bgColor: '#ededed',
   },
   'internet-archive': {
     type: 'svg',
     asset: InternetArchiveLogo,
-    bgColor: '#222222',
+    bgColor: '#222',
   },
   'mit-open-learning': {
     type: 'svg',
     asset: MITOpenLearningLogo,
-    bgColor: '#325B6B',
+    bgColor: '#325b6b',
   },
   'seti-institute': {
     type: 'svg',
     asset: SetiInstituteLogo,
-    bgColor: '#000000',
+    bgColor: '#000',
   },
   smithsonian: {
     type: 'image',
     asset: SmithsonianLogo,
-    bgColor: '#ffffff',
+    bgColor: '#000',
   },
   solana: {
     type: 'image',
     asset: SolanaLogo,
-    bgColor: '#000000',
+    bgColor: '#000',
   },
   'starling-lab': {
     type: 'image',
     asset: StarlingLabLogo,
-    bgColor: '#ffffff',
+    bgColor: '#fff',
   },
   'victor-chang': {
     type: 'svg',
     asset: VictorChangLogo,
-    bgColor: '#ffffff',
+    bgColor: '#fff',
   },
 }
 

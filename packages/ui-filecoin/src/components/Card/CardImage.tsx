@@ -1,60 +1,40 @@
 import { clsx } from 'clsx'
 import Image, { type ImageProps } from 'next/image'
 
-import type { ImageObjectFit, StaticImageProps } from '../../types/imageType'
+import type { StaticImageProps } from '../../types/imageType'
 import { buildImageSizeProp } from '../../utils/buildImageSizeProp'
 
 export type CardImageProps = {
-  padding?: boolean
   priority?: boolean
   sizes?: string
-  aspectRatio?: 'square' | 'video'
-} & ImageObjectFit &
-  (StaticImageProps | ImageProps)
+} & (StaticImageProps | ImageProps)
 
-type ImageComponentProps = {
-  image: CardImageProps
-}
-
-export function CardImage({ image }: ImageComponentProps) {
-  const isStaticImage = 'data' in image
-  const ASPECT_RATIO =
-    image.aspectRatio === 'square' ? 'aspect-square' : 'aspect-video'
+export function CardImage({ alt, priority, sizes, ...props }: CardImageProps) {
+  const isStaticImage = 'data' in props
 
   const commonProps = {
-    alt: image.alt,
-    priority: image.priority,
+    alt,
+    priority,
     quality: 100,
-    sizes:
-      image.sizes || buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
-    className: clsx(
-      'card-image',
-      image.objectFit === 'cover' && 'object-cover',
-      image.objectFit === 'contain' && 'object-contain',
-      image.padding && 'card-image-spacing',
-    ),
+    sizes: sizes || buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
   }
 
   if (isStaticImage) {
+    const { data, ...restProps } = props
+
     return (
       <Image
+        {...restProps}
         {...commonProps}
-        className={clsx(commonProps.className, ASPECT_RATIO)}
-        src={image.data}
-        alt={commonProps.alt}
+        className="card-image aspect-video"
+        src={data}
       />
     )
   }
 
   return (
-    <div className={clsx('relative', ASPECT_RATIO)}>
-      <Image
-        fill
-        {...commonProps}
-        className={clsx(commonProps.className, 'h-full w-full')}
-        src={image.src}
-        alt={commonProps.alt}
-      />
+    <div className="relative aspect-video">
+      <Image {...props} {...commonProps} fill className="card-image" />
     </div>
   )
 }

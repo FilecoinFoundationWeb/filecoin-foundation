@@ -30,12 +30,12 @@ export function PageHeader({
       </div>
 
       {image && image.src && (
-        <div className="relative aspect-video w-full">
+        <div className="relative aspect-video">
           <Image
             fill
             src={image.src}
             alt={image.alt || ''}
-            className="rounded-xl object-cover"
+            className="rounded-2xl object-cover"
           />
         </div>
       )}
