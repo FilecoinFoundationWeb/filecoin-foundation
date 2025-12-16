@@ -9,6 +9,7 @@ image:
   src: "/assets/images/victor-chang.webp"
   alt: "Facade of the Victor Chang Cardiac Research Institute building, featuring an orange tiled wall with the institute’s name and a stylized silhouette logo."
 featured: true
+website: https://www.victorchang.edu.au/
 seo:
   title: "Victor Chang Cardiac Research Institute Case Study - Filecoin for Medical Research Data"
   description: "Learn how the Victor Chang Cardiac Research Institute uses Filecoin to store 125+ TiB of cardiac research data with cryptographic integrity guarantees."

@@ -93,6 +93,7 @@ export default function BuildOnFilecoin() {
       <PageSection backgroundVariant="light" paddingVariant="bottomNone">
         <SectionContent
           centerCTA
+          centerTitle
           title="Built on Filecoin"
           description="Discover tools and applications powered by Filecoin."
           cta={
