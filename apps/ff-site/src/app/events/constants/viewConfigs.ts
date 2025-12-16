@@ -3,9 +3,9 @@ import type { EntryViewConfig } from '@filecoin-foundation/hooks/useEntryView/ty
 import { type Event } from '../types/eventType'
 
 import {
-  sortEventsDesc,
-  getUpcomingEvents,
   getPastEvents,
+  getUpcomingEvents,
+  sortEventsDesc,
 } from '@/events/utils/sortEvents'
 
 export const eventsViewConfigs = [
@@ -25,3 +25,15 @@ export const eventsViewConfigs = [
     filterOrSortFn: getPastEvents,
   },
 ] as const satisfies ReadonlyArray<EntryViewConfig<Event>>
+
+export function getDefaultViewConfig(events: Array<Event>) {
+  const upcomingEvents = getUpcomingEvents(events)
+  return upcomingEvents.length === 0
+    ? eventsViewConfigs.find((config) => config.id === 'all-events')!
+    : eventsViewConfigs[0]
+}
+
+export function getDefaultViewOption(events: Array<Event>) {
+  const config = getDefaultViewConfig(events)
+  return { id: config.id, name: config.name }
+}
