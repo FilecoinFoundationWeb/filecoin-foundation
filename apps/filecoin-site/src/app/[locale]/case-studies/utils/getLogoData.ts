@@ -10,36 +10,18 @@ import StarlingLabLogo from '@/assets/logos/starling-lab-icon-logo.png'
 import VictorChangLogo from '@/assets/logos/victor-chang-icon-logo.svg'
 
 import type {
-  HEXCodeType,
   ImageLogoProps,
   SVGLogoProps,
 } from '@/components/SimpleCardWithLogo'
 
-type SVGLogoConfig = {
-  type: 'svg'
-  asset: SVGLogoProps['src']
-  bgColor: HEXCodeType
-  color: HEXCodeType
-}
-
-type ImageLogoConfig = {
-  type: 'image'
-  asset: ImageLogoProps['src']
-  bgColor: HEXCodeType
-}
+type SVGLogoConfig = Omit<SVGLogoProps, 'src'> & { asset: SVGLogoProps['src'] }
+type ImageLogoConfig = Omit<ImageLogoProps, 'src'> & { asset: ImageLogoProps['src'] }
 
 const LOGO_CONFIG: Record<string, ImageLogoConfig | SVGLogoConfig> = {
-  'victor-chang': {
-    type: 'svg',
-    asset: VictorChangLogo,
-    bgColor: '#ffffff',
-    color: '#000000',
-  },
   aethir: {
     type: 'svg',
     asset: AethirLogo,
     bgColor: '#111111',
-    color: '#D7FE51',
   },
   'easier-data-initiative': {
     type: 'image',
@@ -50,25 +32,21 @@ const LOGO_CONFIG: Record<string, ImageLogoConfig | SVGLogoConfig> = {
     type: 'svg',
     asset: FlickrFoundationLogo,
     bgColor: '#EDEDED',
-    color: '#FF0084',
   },
   'internet-archive': {
     type: 'svg',
     asset: InternetArchiveLogo,
     bgColor: '#222222',
-    color: '#ffffff',
   },
   'mit-open-learning': {
     type: 'svg',
     asset: MITOpenLearningLogo,
     bgColor: '#325B6B',
-    color: '#ffffff',
   },
   'seti-institute': {
     type: 'svg',
     asset: SetiInstituteLogo,
     bgColor: '#000000',
-    color: '#ffffff',
   },
   smithsonian: {
     type: 'image',
@@ -83,6 +61,11 @@ const LOGO_CONFIG: Record<string, ImageLogoConfig | SVGLogoConfig> = {
   'starling-labs': {
     type: 'image',
     asset: StarlingLabLogo,
+    bgColor: '#ffffff',
+  },
+  'victor-chang': {
+    type: 'svg',
+    asset: VictorChangLogo,
     bgColor: '#ffffff',
   },
 }

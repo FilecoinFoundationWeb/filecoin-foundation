@@ -6,10 +6,11 @@ import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.svg'
 import SingularityMiniatureLogo from '@/assets/miniatures/singularity-miniature.svg'
 import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.svg'
 
-import PlaceholderLogo from './placeholder-logo-to-be-deleted.svg'
 
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 import type { StorageProviderCardWithImageProps } from '../components/StorageProviderCard/StorageProviderCardWithImage'
+
+import PlaceholderLogo from './placeholder-logo-to-be-deleted.svg'
 
 type FeaturedStorageProvider = Pick<
   StorageProviderCardWithImageProps,
