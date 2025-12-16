@@ -1,3 +1,4 @@
-export function capitalize(string: string) {
-  return string.charAt(0).toUpperCase() + string.slice(1)
+export function capitalize(str: string) {
+  const trimmed = str.trim()
+  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1).toLowerCase()
 }
