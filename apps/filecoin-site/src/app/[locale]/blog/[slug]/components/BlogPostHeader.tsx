@@ -2,7 +2,7 @@ import Image, { type ImageProps } from 'next/image'
 
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
-import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils/buildImageSizeProp'
+import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'

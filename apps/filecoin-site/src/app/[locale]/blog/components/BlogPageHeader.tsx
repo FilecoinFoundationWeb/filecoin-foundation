@@ -3,7 +3,7 @@ import Image, { type ImageProps } from 'next/image'
 import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
-import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils/buildImageSizeProp'
+import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils'
 
 import { PATHS } from '@/constants/paths'
 

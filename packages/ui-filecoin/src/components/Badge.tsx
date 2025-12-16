@@ -1,5 +1,7 @@
 import { clsx } from 'clsx'
 
+import { capitalize as capitalizeFn } from '../utils'
+
 import { Icon, type IconProps } from './Icon'
 
 export type BadgeProps = {
@@ -42,7 +44,6 @@ export function Badge({
       className={clsx(
         'flex items-center gap-1 rounded-full border px-4 py-1 text-sm/5 font-medium',
         styles.wrapper,
-        capitalize && 'capitalize',
       )}
     >
       {icon && (
@@ -50,7 +51,7 @@ export function Badge({
           <Icon component={icon} size={16} />
         </span>
       )}
-      {children}
+      {capitalize ? capitalizeFn(children) : children}
     </span>
   )
 }
