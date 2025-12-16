@@ -13,7 +13,7 @@ export function HeroSection() {
   return (
     <PageSection backgroundVariant="transparentDark" paddingVariant="none">
       <div className="space-y-15 py-25 md:py-30">
-        <Announcement centered href={PATHS.BLOG.path}>
+        <Announcement centered href="https://filecoin.cloud/">
           {t('announcement')}
         </Announcement>
 
