@@ -48,11 +48,11 @@ export function BlogPageHeader({
         </Button>
       </div>
 
-      <div className="relative aspect-3/2">
+      <div className="relative aspect-video">
         <Image
           fill
           priority
-          className="card-image object-cover"
+          className="card-image"
           quality={100}
           sizes={buildImageSizeProp({ startSize: '100vw', md: '768px' })}
           src={image.src}

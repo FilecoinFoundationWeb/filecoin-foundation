@@ -59,7 +59,7 @@ export function Card({
       )}
     >
       {icon && <IconBadge component={icon} size="md" />}
-      {image && <CardImage image={{ objectFit: 'cover', ...image }} />}
+      {image && <CardImage {...image} />}
 
       <div className="space-y-12">
         <div className="space-y-2">

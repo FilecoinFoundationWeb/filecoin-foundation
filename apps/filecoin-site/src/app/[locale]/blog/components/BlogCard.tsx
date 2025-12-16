@@ -42,9 +42,7 @@ export function BlogCard({
         title={title}
         className="group relative h-full"
       >
-        <CardImage
-          image={{ objectFit: 'cover', ...(image || graphicsData.fallback) }}
-        />
+        <CardImage {...(image || graphicsData.fallback)} />
 
         <div className="flex flex-col gap-4 py-5">
           <TagGroup tags={tags} />
