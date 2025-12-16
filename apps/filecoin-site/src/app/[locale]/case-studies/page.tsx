@@ -74,15 +74,15 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
         >
           <CardGrid as="ul" variant="lgTwoWide">
             {upcomingCaseStudies.map(
-              ({ title, cardDescription, logo, slug }) => (
+              ({ title, cardDescription, logo, website }) => (
                 <SimpleCardWithLogo
                   key={title}
                   title={title}
                   description={cardDescription}
                   logo={logo}
                   cta={{
-                    href: `${PATHS.CASE_STUDIES.path}/${slug}`,
-                    text: 'Read case study',
+                    href: website,
+                    text: 'Visit website',
                   }}
                 />
               ),
