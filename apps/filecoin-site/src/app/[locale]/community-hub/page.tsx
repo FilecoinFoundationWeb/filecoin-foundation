@@ -53,6 +53,7 @@ export default async function CommunityHub({ params }: BlogProps) {
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
+            variant="highContrast"
             title="Build, connect and grow with the Filecoin community"
             description="A global network of builders, researchers, advocates and creators is shaping the future of Filecoin. Plug into the community and start contributing in your own way."
           />
