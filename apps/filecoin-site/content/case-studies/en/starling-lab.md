@@ -6,7 +6,7 @@ challenge: "Data integrity in the digital age is undermined by manipulation, mis
 solution: "The Starling Framework for Data Integrity uses cryptography, blockchain, and decentralized storage to create an end-to-end trust pipeline—Capture, Store, Verify—that keeps digital information provable, traceable, and tamper-resistant."
 results: "Starling Lab is proving the real-world impact of decentralized technology to restore digital trust, with its framework now adopted by major media outlets, universities, and nonprofits to preserve authentic records and safeguard truth for future generations."
 # image:
-# src: "/assets/images/starling-lab.webp"
+# src: "#todo add image"
 # alt: ""
 featured: true
 website: https://www.starlinglab.org/
@@ -27,13 +27,13 @@ The Starling Lab—co-founded by the USC Shoah Foundation and Stanford Universit
 
 ## Solution
 
-Starling Lab’s solution is articulated through a three-phase framework: Capture → Store → Verify, combined with a broader design principle of "Authenticity-by-Design". From the blog:
+Starling Lab’s solution is articulated through a three-phase framework: Capture → Store → Verify, combined with a broader design principle of "Authenticity-by-Design". From the [FFDW blog](https://ffdweb.org/blog/the-starling-lab-framework):
 
-- **Capture**: At the moment of creation or ingestion of digital content—photos, video, audio, websites—metadata is collected: timestamps, GPS coordinates, device metadata. Creators are empowered to control what provenance data is released (respecting privacy). Example: Project "Dokaz” "n Ukraine captured data for legal submission with chain-of-custody metadata.
-- **Store**: Once captured, assets (and their metadata) are stored on decentralized, content-addressed networks (e.g., IPFS, the Filecoin network, etc.). Starling Lab uses its "Integri"y Pipeline”: encryption, attestations (authsign certificates), automated metadata processing, and anchoring to distributed storage for redundancy & long-term availability.
-- **Verify**: The provenance and authenticity of assets are made auditable via human and machine workflows: expert attestations, registration of content IDs on blockchains, consumption tools that allow users to inspect trust signals. Audiences can evaluate trustworthiness of digital content themselves. https://ffdweb.org/blog/the-starling-lab-framework
+- **Capture**: At the moment of creation or ingestion of digital content—photos, video, audio, websites—metadata is collected: timestamps, GPS coordinates, device metadata. Creators are empowered to control what provenance data is released (respecting privacy). Example: Project "Dokaz" in Ukraine captured data for legal submission with chain-of-custody metadata.
+- **Store**: Once captured, assets (and their metadata) are stored on decentralized, content-addressed networks (e.g., IPFS, the Filecoin network, etc.). Starling Lab uses its "Integrity Pipeline": encryption, attestations (authsign certificates), automated metadata processing, and anchoring to distributed storage for redundancy & long-term availability.
+- **Verify**: The provenance and authenticity of assets are made auditable via human and machine workflows: expert attestations, registration of content IDs on blockchains, consumption tools that allow users to inspect trust signals. Audiences can evaluate trustworthiness of digital content themselves.
 
-Additionally, Starling Lab embraces an "Authent"city by Design” philosophy: embedding verifiable markers of provenance, ensuring persistence (via decentralised systems), verifiability, accountability, and respecting privacy from the start.
+Additionally, Starling Lab embraces an "Authentcity by Design" philosophy: embedding verifiable markers of provenance, ensuring persistence (via decentralised systems), verifiability, accountability, and respecting privacy from the start.
 
 ## Results
 
