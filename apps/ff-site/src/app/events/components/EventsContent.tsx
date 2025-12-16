@@ -108,7 +108,7 @@ export default function EventsContent({
         />
         <FilterContainer.MobileFiltersAndResults
           searchComponent={<Search />}
-          sortComponent={<EventSort />}
+          sortComponent={<EventSort defaultOption={defaultSortOption} />}
           filterComponents={[
             <CategoryFilter
               key="category"
