@@ -29,13 +29,13 @@ export function PageHeader({
         <SharedPageHeader {...pageHeaderProps} />
       </div>
 
-      {image && (
-        <div className="relative aspect-video w-full object-cover">
+      {image && image.src && (
+        <div className="relative aspect-video w-full">
           <Image
             fill
             src={image.src}
             alt={image.alt || ''}
-            className="rounded-xl"
+            className="rounded-xl object-cover"
           />
         </div>
       )}

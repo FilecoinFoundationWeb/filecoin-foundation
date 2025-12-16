@@ -15,7 +15,9 @@ import type {
 } from '@/components/SimpleCardWithLogo'
 
 type SVGLogoConfig = Omit<SVGLogoProps, 'src'> & { asset: SVGLogoProps['src'] }
-type ImageLogoConfig = Omit<ImageLogoProps, 'src'> & { asset: ImageLogoProps['src'] }
+type ImageLogoConfig = Omit<ImageLogoProps, 'src'> & {
+  asset: ImageLogoProps['src']
+}
 
 const LOGO_CONFIG: Record<string, ImageLogoConfig | SVGLogoConfig> = {
   aethir: {
@@ -58,7 +60,7 @@ const LOGO_CONFIG: Record<string, ImageLogoConfig | SVGLogoConfig> = {
     asset: SolanaLogo,
     bgColor: '#000000',
   },
-  'starling-labs': {
+  'starling-lab': {
     type: 'image',
     asset: StarlingLabLogo,
     bgColor: '#ffffff',
