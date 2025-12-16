@@ -16,10 +16,7 @@ import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { PageHeader } from './components/PageHeader'
 import { CASE_STUDIES_SEO } from './constants/seo'
-import {
-  getNonFeaturedCaseStudiesData,
-  getFeaturedCaseStudiesData,
-} from './utils/getCaseStudyData'
+import { getCaseStudiesByFeaturedStatus } from './utils/getCaseStudyData'
 
 type CaseStudiesProps = {
   params: Promise<LocaleParams>
@@ -28,8 +25,8 @@ type CaseStudiesProps = {
 export default async function CaseStudies({ params }: CaseStudiesProps) {
   const { locale } = await params
 
-  const featuredCaseStudiesData = await getFeaturedCaseStudiesData(locale)
-  const caseStudiesData = await getNonFeaturedCaseStudiesData(locale)
+  const { featured: featuredCaseStudies, upcoming: upcomingCaseStudies } =
+    await getCaseStudiesByFeaturedStatus(locale)
 
   return (
     <>
@@ -52,7 +49,7 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
           description="Read full case studies of some of the organizations using Filecoin to preserve their data."
         >
           <CardGrid as="ul" variant="lgTwoWide">
-            {featuredCaseStudiesData.map(
+            {featuredCaseStudies.map(
               ({ title, cardDescription, logo, slug }) => (
                 <SimpleCardWithLogo
                   key={title}
@@ -76,18 +73,20 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
           description="Discover additional teams leveraging Filecoin for data preservation. Full case studies are coming soon."
         >
           <CardGrid as="ul" variant="lgTwoWide">
-            {caseStudiesData.map(({ title, cardDescription, logo, slug }) => (
-              <SimpleCardWithLogo
-                key={title}
-                title={title}
-                description={cardDescription}
-                logo={logo}
-                cta={{
-                  href: `${PATHS.CASE_STUDIES.path}/${slug}`,
-                  text: 'Read case study',
-                }}
-              />
-            ))}
+            {upcomingCaseStudies.map(
+              ({ title, cardDescription, logo, slug }) => (
+                <SimpleCardWithLogo
+                  key={title}
+                  title={title}
+                  description={cardDescription}
+                  logo={logo}
+                  cta={{
+                    href: `${PATHS.CASE_STUDIES.path}/${slug}`,
+                    text: 'Read case study',
+                  }}
+                />
+              ),
+            )}
           </CardGrid>
         </SectionContent>
       </PageSection>

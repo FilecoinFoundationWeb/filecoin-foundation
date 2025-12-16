@@ -12,16 +12,6 @@ export async function getCaseStudyData(slug: string, locale: string) {
   return transformCaseStudyData(data)
 }
 
-export async function getFeaturedCaseStudiesData(locale: string) {
-  const allCaseStudies = await getCaseStudiesData(locale)
-  return allCaseStudies.filter((item) => item.featured)
-}
-
-export async function getNonFeaturedCaseStudiesData(locale: string) {
-  const allCaseStudies = await getCaseStudiesData(locale)
-  return allCaseStudies.filter((item) => !item.featured)
-}
-
 export async function getCaseStudiesData(locale: string) {
   const allCaseStudies = await getAllMarkdownData({
     zodSchema: CaseStudyFrontmatterSchema,
@@ -56,4 +46,13 @@ function transformCaseStudyData(
 
 function getDirectoryPathForLocale(locale: string) {
   return PATHS.CASE_STUDIES.entriesPath + `/${locale}`
+}
+
+export async function getCaseStudiesByFeaturedStatus(locale: string) {
+  const allCaseStudies = await getCaseStudiesData(locale)
+
+  return {
+    featured: allCaseStudies.filter((item) => item.featured),
+    upcoming: allCaseStudies.filter((item) => !item.featured),
+  }
 }
