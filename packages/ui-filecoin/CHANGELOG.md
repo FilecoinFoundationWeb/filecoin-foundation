@@ -1,5 +1,12 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.5.9
+
+### Patch Changes
+
+- ffc4ad8: Refactor and review PageSection spacings
+- 65979ec: Add highContrast variant to PageHeader
+
 ## 0.5.8
 
 ### Patch Changes
