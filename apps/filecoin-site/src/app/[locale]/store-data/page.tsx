@@ -61,6 +61,7 @@ export default function StoreData() {
 
       <PageSection backgroundVariant="light">
         <SectionContent
+          centerCTA
           title="Store on Filecoin"
           description="Find the perfect storage solution for your data on Filecoin."
         />
