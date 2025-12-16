@@ -2,7 +2,6 @@ import Image from 'next/image'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
-import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoSection'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
@@ -18,12 +17,13 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
-import { StorageProviderCard } from './components/StorageProviderCard/StorageProviderCard'
 import { StorageProviderCardWithImage } from './components/StorageProviderCard/StorageProviderCardWithImage'
+import { StorageProviderSection } from './components/StorageProviderSection'
 import { STORE_DATA_SEO } from './constants/seo'
 import {
   filecoinStorageProviders,
   featuredFilecoinStorageProvider,
+  otherFilecoinPoweredSolutions,
 } from './data/storageProviders'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -63,30 +63,29 @@ export default function StoreData() {
         <SectionContent
           title="Store on Filecoin"
           description="Find the perfect storage solution for your data on Filecoin."
-          cta={
-            <Button
-              href={`${FILECOIN_FOUNDATION_URLS.ecosystemExplorer.href}?category=data-storage-management`}
-              variant="primary"
-            >
-              See Filecoin-powered solutions
-            </Button>
-          }
-        >
+        />
+
+        <div className="mt-20 flex flex-col gap-20">
           <StorageProviderCardWithImage {...featuredFilecoinStorageProvider} />
 
-          <CardGrid as="ul" variant="mdTwoLgThreeWide">
-            {filecoinStorageProviders
-              .slice()
-              .sort((a, b) => a.name.localeCompare(b.name))
-              .map((provider) => (
-                <StorageProviderCard
-                  key={provider.name}
-                  as="li"
-                  {...provider}
-                />
-              ))}
-          </CardGrid>
-        </SectionContent>
+          <StorageProviderSection
+            title="Selected storage solutions"
+            providers={filecoinStorageProviders}
+          />
+
+          <StorageProviderSection
+            title="Other Filecoin-powered solutions"
+            providers={otherFilecoinPoweredSolutions}
+          />
+
+          <Button
+            href={`${FILECOIN_FOUNDATION_URLS.ecosystemExplorer.href}?category=data-storage-management`}
+            variant="primary"
+            className="self-center"
+          >
+            See more Filecoin-powered solutions
+          </Button>
+        </div>
       </PageSection>
 
       <PageSection backgroundVariant="dark">
