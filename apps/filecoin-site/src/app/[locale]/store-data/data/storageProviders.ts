@@ -6,6 +6,8 @@ import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.svg'
 import SingularityMiniatureLogo from '@/assets/miniatures/singularity-miniature.svg'
 import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.svg'
 
+import PlaceholderLogo from './placeholder-logo-to-be-deleted.svg'
+
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 import type { StorageProviderCardWithImageProps } from '../components/StorageProviderCard/StorageProviderCardWithImage'
 
@@ -131,33 +133,33 @@ export const featuredFilecoinStorageProvider = {
 
 export const otherFilecoinPoweredSolutions = [
   {
-    name: 'Lorem Ipsum 1',
+    name: 'Ipsum Storage A',
     description: 'Lorem ipsum dolor sit amet.',
-    labels: ['Drag and drop'],
+    labels: ['Lorem ipsum'],
     cents: 300,
     bestFor: ['Developers'],
-    keyFeatures: ['Fast access to data', 'Tightly integrated with IPFS'],
-    url: 'https://www.example.com/',
+    keyFeatures: ['Lorem ipsum A', 'Lorem ipsum B'],
+    url: '#',
     logo: AkaveMiniatureLogo,
   },
   {
-    name: 'Lorem Ipsum 2',
+    name: 'Ipsum Storage B',
     description: 'Lorem ipsum dolor sit amet.',
-    labels: ['Drag and drop'],
-    cents: 400,
+    labels: ['Lorem ipsum'],
+    cents: 300,
     bestFor: ['Developers'],
-    keyFeatures: ['Fast access to data', 'Tightly integrated with IPFS'],
-    url: 'https://www.example.com/',
-    logo: AkaveMiniatureLogo,
+    keyFeatures: ['Lorem ipsum A', 'Lorem ipsum B'],
+    url: '#',
+    logo: PlaceholderLogo,
   },
   {
-    name: 'Lorem Ipsum 3',
+    name: 'Ipsum Storage C',
     description: 'Lorem ipsum dolor sit amet.',
-    labels: ['Drag and drop'],
-    cents: 500,
+    labels: ['Lorem ipsum'],
+    cents: 300,
     bestFor: ['Developers'],
-    keyFeatures: ['Fast access to data', 'Tightly integrated with IPFS'],
-    url: 'https://www.example.com/',
-    logo: AkaveMiniatureLogo,
+    keyFeatures: ['Lorem ipsum A', 'Lorem ipsum B'],
+    url: '#',
+    logo: PlaceholderLogo,
   },
 ] as const satisfies Array<StorageProvider>
