@@ -52,7 +52,7 @@ export function BlogPageHeader({
         <Image
           fill
           priority
-          className="rounded-2xl"
+          className="card-image object-cover"
           quality={100}
           sizes={buildImageSizeProp({ startSize: '100vw', md: '768px' })}
           src={image.src}
