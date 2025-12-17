@@ -67,12 +67,12 @@ Filecoin和Hedera为如下两个方向的开发者提供20万美元的奖励金�
 3．与Filecoin上的NFT相关的[JSON元数据模式](https://github.com/hashgraph/hedera-improvement-proposal/blob/master/HIP/hip-10.md)；
 4．接受HBAR和FIL（最低限度）用于支付NFT。
 
-**_[奖励金: 75,000美元\]_**
+_奖励金: 75,000美元_
 
 ### 真实世界的应用
 
 此项奖励金将授予同时运用[Hedera Token Service (HTS)](http://hedera.com/token-service)和Filecoin去中心化存储的现实世界应用提案。开发者可以随心所欲地发挥想象—对应用或用例的类型并没有严格要求，但必须同时运用Hedera HTS和Filecoin。Filecoin存储可通过工具或服务访问，诸如[Estuary](https://estuary.tech/)、[Fleek Space Daemon](https://github.com/FleekHQ/space-daemon)、[NFT.storage](https://nft.storage/)或 [Textile Powergate.](https://github.com/textileio/powergate/)。
 
-**_[一等奖：50,000美元；二等奖：40,000美元；三等奖：20,000美元；四等奖： 10,000美元；五等奖：5,000美元；\]_**
+_一等奖：50,000美元；二等奖：40,000美元；三等奖：20,000美元；四等奖： 10,000美元；五等奖：5,000美元；_
 
 请通过[Filecoin奖励计划](https://github.com/filecoin-project/devgrants/tree/master)申请。为获得优先考虑，请于2021年8月30日前提交提案。

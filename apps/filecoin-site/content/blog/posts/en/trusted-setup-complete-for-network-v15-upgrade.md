@@ -48,13 +48,13 @@ For **EmptySectorUpdate - Poseidon**:
 
 ![](/uploads/untitled-5.webp)
 
-**Attestations page that holds more information about the entire process and all the participants is linked** [**here**](https://github.com/filecoin-project/phase2-attestations/tree/trusted-setup-2/ts2)**.**
+**Attestations page that holds more information about the entire process and all the participants is linked [here](https://github.com/filecoin-project/phase2-attestations/tree/trusted-setup-2/ts2).**
 
 ## Community and participants feedback: 🎉
 
-<a href=""><img src="/uploads/untitled.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/untitled.webp)](https://github.com/filecoin-project/phase2-attestations/tree/trusted-setup-2/ts2)
 
-<a href=""><img src="/uploads/untitled-2.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/untitled-2.webp)](https://github.com/filecoin-project/phase2-attestations/tree/trusted-setup-2/ts2)
 
 ## How do I trust the output of these ceremonies?
 

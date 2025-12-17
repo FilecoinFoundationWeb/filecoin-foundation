@@ -55,4 +55,4 @@ Tomorrow, October 23, is day 5 of Liftoff Week. It’s our last day of the event
 - **2:20pm PDT:** “Better Connected: Government Support for Web3.”
 - **2:55pm PDT:** Round out Liftoff Week with “Meet the Filecoin Foundation” with Web3 leaders from across the ecosystem.
 
-## [**See the Full Agenda**](https://liftoff.filecoin.io/)
+## [See the Full Agenda](https://liftoff.filecoin.io/)

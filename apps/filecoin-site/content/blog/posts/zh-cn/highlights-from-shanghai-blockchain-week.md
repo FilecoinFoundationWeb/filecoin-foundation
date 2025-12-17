@@ -46,7 +46,8 @@ Filecoin生态中的专家们也进行了多场讨论。来自分布式资本的
 <source src="/vintage/videos/blockchainweek-open.mp4" type="video/mp4">
 您的浏览器不支持播放此版本的视频。
 </video>
-<p style="font-size:small;font-style:italic;text-align:center">2020年上海区块链国际周。10月26日，Filecoin开放日。</p>
+
+2020年上海区块链国际周。10月26日，Filecoin开放日。
 
 ## 10月27日至28日，位于上海外滩W酒店的区块链峰会
 
@@ -64,7 +65,7 @@ Filecoin从根本上改变了存储提供者的商业场景和成本结构。现
 
 演讲最后胡安提供了四点建议： 1）将有价值的数据带入网络。 2）在Filecoin上创建新的应用程序。 3）进行长远考虑。 4）要有韧性。
 
-[_观看整个演讲视频 (101:45)_](https://www.bilibili.com/video/BV16D4y197Wh?zw)_._
+_[观看整个演讲视频 (101:45)](https://www.bilibili.com/video/BV16D4y197Wh?zw)._
 
 ### 圆桌讨论：Filecoin创始人胡安、以太坊创始人Vitalik Buterin、波卡创始人Gavin Wood
 
@@ -84,6 +85,6 @@ _Vitalik Buterin:_ 面向未来的方法实际上可以归结是Layer 2解决方
 
 _Juan Benet:_ 解决这个问题重要的是还要有一个强大的开发者社区，并通过强有力的治理原则来专注于升级和面向未来。需要制定良好的标准流程来创建社区真正想要的改进。我同意Vitalik的观点，即随着时间的流逝，底层结构趋于稳定。但是，一步步分解过程很重要，现在Layer 1上发生了很多变动，我们必须通过进一步分解复杂的东西并归结到简单的事物才能真正创造出可经时间考验的东西。
 
-[_观看整个演讲视频 (01:10)_](https://www.bilibili.com/video/BV1xZ4y1L72L?zw)_._
+_[观看整个演讲视频 (01:10)](https://www.bilibili.com/video/BV1xZ4y1L72L?zw)._
 
-<p style="text-align:center">感谢上海区块链周在中国为Filecon与广大社区里的创建者、矿工、粉丝和企业家提供共同庆祝的机会！</p>
+感谢上海区块链周在中国为Filecon与广大社区里的创建者、矿工、粉丝和企业家提供共同庆祝的机会

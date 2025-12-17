@@ -22,11 +22,11 @@ _template: blog_detail
 
 Filgram has officially launched! This new tool will enable you to optimize marketing for your Storage Provider enterprise. Sign up [here](http://filgram.filmine.io/) to claim your miner ID(s) and share more information about your SP operation.
 
-## Why was Filgram developed
+## Why Filgram was developed
 
 Storage Providers must make storage deals, and that’s a simple fact. Sometimes, however, it’s tricky to balance making storage deals or chasing down leads while also ensuring that you’re running the latest Filecoin software or you’re refining your latest hardware configurations. The Filecoin community knows that Storage Providers have a lot to deal with, which is why [Filgram](http://filgram.filmine.io/) was created as a Storage Provider Discovery Tool in partnership with [AltLabs](https://altlabs.dev/).
 
-## What is Filgram
+## What Filgram is
 
 Filgram is a tool that is built for and powered by Storage Providers. If anyone decides that they want to store data or find an SP on the Filecoin Network, they can head to [filgram.filmine.io](http://filgram.filmine.io/) to find a Storage Provider that fits both their needs and their data’s needs.
 

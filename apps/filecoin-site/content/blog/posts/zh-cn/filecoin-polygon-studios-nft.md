@@ -18,7 +18,7 @@ related_article_1: ""
 related_article_2: ""
 related_article_3: ""
 share_image: /uploads/153975496-cfc4b645-16df-4f64-ade0-ca8892b15a3b.webp
-title: "Filecoin携手Polygon Studios深化NFT、游戏以及元宇宙相关合作 "
+title: "Filecoin携手Polygon Studios深化NFT、游戏以及元宇宙相关合作"
 _template: blog_detail_ch
 ---
 
@@ -36,24 +36,21 @@ Filecoin和Polygon还联袂打造了[Mars黑客松](https://filecoin.io/blog/pos
 
 本次黑客松中值得关注的项目包括：[Blockspace](https://airtable.com/appPrImBw9ntRgY88/tblCwc1GeUbvwVrmU/viwsPcyqiucf24e1j/reckvUASFD2LclsGY?blocks=hide)，不同于Google Drive此类传统云服务供应商，这是一个建立在IPFS上的分布式文件存储和共享平台；以及[Slick](https://airtable.com/appPrImBw9ntRgY88/tblCwc1GeUbvwVrmU/viwsPcyqiucf24e1j/recKvMw34LuRJuY3T?blocks=hide)，一个替代Patreon的去中心化项目。
 
-<div class="feature-blocks">
-<div>
-<div><img src="/uploads/nft-storage-logo.svg" alt="NFT.Storage" /></div>
-<p>Use <a href="https://nft.storage" target="_blank">NFT.Storage</a> to rapidly mint Filecoin-backed NFTs</p>
-</div>
-<div>
-<div><img src="/uploads/polygon-logo.svg" alt="polygon" /></div>
-<p>Use <a href="https://eth.storage/docs/#ethereum--polygon-bridge-to-filecoin" target="_blank">Filecoin-Polygon-Bridge</a> to store data using existing polygon infrastructure</p>
-</div>
-<div>
-<div><img src="/uploads/web3-storage-logo.svg" alt="Web3.Storage" /></div>
-<p>Use <a href="https://web3.storage" target="_blank">Web3.Storage</a> to easily store game assets on Filecoin</p>
-</div>
-<div>
-<div><img src="/uploads/estuary-logo.svg" alt="Estuary" /></div>
-<p>Use <a href="https://estuary.tech" target="_blank">Estuary</a> to store assets at metaverse scale on Filecoin</p>
-</div>
-</div>
+![NFT.Storage](/uploads/nft-storage-logo.svg)
+
+Use [NFT.Storage](https://nft.storage) to rapidly mint Filecoin-backed NFTs
+
+![polygon](/uploads/polygon-logo.svg)
+
+Use [Filecoin-Polygon-Bridge](https://eth.storage/docs/#ethereum--polygon-bridge-to-filecoin) to store data using existing polygon infrastructure
+
+![Web3.Storage](/uploads/web3-storage-logo.svg)
+
+Use [Web3.Storage](https://web3.storage) to easily store game assets on Filecoin
+
+![Estuary](/uploads/estuary-logo.svg)
+
+Use [Estuary](https://estuary.tech) to store assets at metaverse scale on Filecoin
 
 ## 5,000美元奖励金，用于集成基于IPFS和Filecoin的优秀Polygon项目
 
@@ -68,18 +65,15 @@ Polygon生态中与IPFS和Filecoin（以及NFT.storage、Estuary、Web3.storage�
 敬请期待如下与本合作相关的NFT黑客松活动：
 
 1. [ETHDenver](https://www.ethdenver.com/)
-
    - 正在丹佛的IRL举行的规模最大的ETH会议，与会者来自全球各地。提交给所有赛道的申请将有资格获得价值25,000美元的Filecoin和IPFS奖金（以及其他奖项）！
    - 日期
      - IRL（线下）：2022年2月11日至20日
      - 线上：2022年2月11日至3月21日
 
 2. [ETHernals by Devfolio](https://ethernals.devfolio.co/):
-
    - 本次基于以太坊的黑客松参与者可以通过使用*buidl*能力围绕DAO、NFT和DeFi等进行构建来赢取高达5万美元的奖金。
    - 日期：2022年2月25日至3月27日
 
 3. Kenlabs Metaverse Hackathon:
-
    - 聚焦于元宇宙的八周黑客松！来挑战吧，在IPFS上创建项目来争夺5万美元的奖金。
    - 日期：2022年4月1日至20日

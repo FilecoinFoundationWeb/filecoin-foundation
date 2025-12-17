@@ -52,17 +52,12 @@ Overall, it’s been really awesome to see what some of our 17 contributors are 
 
 And the response for the community has been amazing too! Here’s a look at some love we’re receiving on Twitter.
 
-<div style="width:100%">
-  <img style="box-sizing:border-box;display:block;width:44%;margin-left:3%;border:2px solid black;float:left" src="/vintage/images/blog/community-slate-post1.jpg">
+![Slate](/vintage/images/blog/community-slate-post1.jpg)
 
-  <img style="box-sizing:border-box;display:block;width:44%;margin-left:6%;border:2px solid black;float:left" src="/vintage/images/blog/community-slate-post2.jpg">
+![Slate](/vintage/images/blog/community-slate-post2.jpg)
 
-  <img style="box-sizing:border-box;display:block;width:44%;margin-left:3%;border:2px solid black;float:left;clear:both;margin-top:1em;" src="/vintage/images/blog/community-slate-post3.jpg">
-
-  <img style="box-sizing:border-box;display:block;width:44%;margin-left:6%;border:2px solid black;float:left;margin-top:1em;" src="/vintage/images/blog/community-slate-post4.jpg">
-
-  <div style="clear:both">
-</div>
+![Slate](/vintage/images/blog/community-slate-post3.jpg)
+![Slate](/vintage/images/blog/community-slate-post4.jpg)
 
 **_Incredible. Tell us more about what’s next for Slate!_**
 

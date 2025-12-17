@@ -39,7 +39,7 @@ Storage providers publish data to indexers, for clients to be able to find. A cl
 
 ## How To Use A Network Indexer
 
-A network indexer is hosted at [cid.contact](http://cid.contact/) and can be accessed by sending requests to its API via HTTP or libp2p. The cid.contact indexer has a lightweight web interface that can be used to manually enter a CID and query the indexer. This makes a request to <span style="background-color: #eaeaea"> `cid.contact/cid/`</span> and displays the results.
+A network indexer is hosted at [cid.contact](http://cid.contact/) and can be accessed by sending requests to its API via HTTP or libp2p. The cid.contact indexer has a lightweight web interface that can be used to manually enter a CID and query the indexer. This makes a request to `cid.contact/cid/` and displays the results.
 
 ## Real World Example
 
@@ -55,25 +55,29 @@ This same query can be performed directly using this URL to query by CID: [https
 
 This returns the provider information as JSON:
 
+```json
+{
+  "MultihashResults": [
     {
-      "MultihashResults": [
+      "Multihash": "EiDVNlzli2ONH3OslRv1Q0BRCKUCsERWs3RbthTVu6Xptg==",
+      "ProviderResults": [
         {
-          "Multihash": "EiDVNlzli2ONH3OslRv1Q0BRCKUCsERWs3RbthTVu6Xptg==",
-          "ProviderResults": [
-            {
-              "ContextID": "AXESIBD01Ud5R2aNm17hy5POqaKeNmIzfSNMhnAGzhvNCfK/",
-              "Metadata": "kBKjaFBpZWNlQ0lE2CpYKAABgeIDkiAg1bFuob1/knnbN6PTonjf6wUGeB/qc2hJb4oriOwRjTNsVmVyaWZpZWREZWFs9W1GYXN0UmV0cmlldmFs9Q==",
-              "Provider": {
-                "ID": "12D3KooWDMJSprsuxhjJVnuQQcyibc5GxanUUxpDzHU74rhknqkU",
-                "Addrs": ["/ip4/89.20.96.58/tcp/24001"]
-              }
-            }]
-        }]
+          "ContextID": "AXESIBD01Ud5R2aNm17hy5POqaKeNmIzfSNMhnAGzhvNCfK/",
+          "Metadata": "kBKjaFBpZWNlQ0lE2CpYKAABgeIDkiAg1bFuob1/knnbN6PTonjf6wUGeB/qc2hJb4oriOwRjTNsVmVyaWZpZWREZWFs9W1GYXN0UmV0cmlldmFs9Q==",
+          "Provider": {
+            "ID": "12D3KooWDMJSprsuxhjJVnuQQcyibc5GxanUUxpDzHU74rhknqkU",
+            "Addrs": ["/ip4/89.20.96.58/tcp/24001"]
+          }
+        }
+      ]
     }
+  ]
+}
+```
 
-This result also shows the CID is available from the provider with ID <span style="background-color: #eaeaea"> 12D3KooWBwUERBhJPtZ7hg5N3q1DesvJ67xx9RLdSaStBz9Y6Ny8</span> and is reachable at the address <span style="background-color: #eaeaea"> /dns4/yablufc.ddns.net/tcp/4567</span>. The metadata field contains data that the provider uses to locate and deliver the content to a client.
+This result also shows the CID is available from the provider with ID `12D3KooWBwUERBhJPtZ7hg5N3q1DesvJ67xx9RLdSaStBz9Y6Ny8` and is reachable at the address `/dns4/yablufc.ddns.net/tcp/4567`. The metadata field contains data that the provider uses to locate and deliver the content to a client.
 
-Indexer query results may contain multiple provider records for a CID if the content identified by that CID is available by multiple providers. Batch querying is also available to lookup a number of CIDs in a single request. This is why the response contains an array of <span style="background-color: #eaeaea"> MultihashResults</span> ... to support querying for multiple CIDs.
+Indexer query results may contain multiple provider records for a CID if the content identified by that CID is available by multiple providers. Batch querying is also available to lookup a number of CIDs in a single request. This is why the response contains an array of `MultihashResults` to support querying for multiple CIDs.
 
 To look up provider information by multihash, instead of CID, use the [cid.contact/multihash/](https://cid.contact/) endpoint. To see a list of providers that the indexer has data from see the [cid.contact/providers](http://cid.contact/providers) endpoint.
 

@@ -22,13 +22,13 @@ title: "More than just Storage: Business Opportunities on Filecoin"
 _template: blog_detail
 ---
 
-_The following is a summary of a talk given by ZX Zhang at the Web3 Summit in May 2021 - see the full talk_ [_here_](https://www.youtube.com/watch?v=Yx1rtKcayuY#t=1h00m52s)_._
+_The following is a summary of a talk given by ZX Zhang at the Web3 Summit in May 2021 - see the full talk [here](https://www.youtube.com/watch?v=Yx1rtKcayuY#t=1h00m52s)._
 
 ## The Airbnb of Cloud Services
 
 There are more similarities than you might think between Filecoin and Airbnb. Just as Airbnb hosts offer up their homes to travelers, Filecoin miners offer up their storage capacity to data clients. In both models, resources are spent to provide a useful service to ecosystem participants in exchange for compensation.
 
-<img src="/uploads/chart.webp" alt="The Airbnb of Cloud Services">
+![The Airbnb of Cloud Services](/uploads/chart.webp)
 
 Airbnb’s economic model, however, directs the value generated mostly to shareholders rather than the hosts who are actually providing the day-to-day value (their homes). Within a Web3 economy like Filecoin, different business models emerge for both Web2 and Web3 that make clear the path towards mainstream adoption.
 
@@ -88,4 +88,4 @@ When thinking about the business applications of the Filecoin network beyond sto
 2. Immense opportunities exist in building layer 2 protocols, platforms, and products on top of Filecoin.
 3. Business models are key, and there are many areas that the community can (and should!) explore.
 
-_To ask any questions about business models on Filecoin and the evolution of the Filecoin ecosystem, reach out to_ [_@zixuanzh_](https://twitter.com/zixuanzh?lang=en) _on Twitter._
+_To ask any questions about business models on Filecoin and the evolution of the Filecoin ecosystem, reach out to [@zixuanzh](https://twitter.com/zixuanzh?lang=en) on Twitter._

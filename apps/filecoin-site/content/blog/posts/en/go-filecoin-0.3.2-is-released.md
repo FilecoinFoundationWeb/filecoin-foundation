@@ -49,7 +49,7 @@ This release drives home previous work on repo migrations. The `go-filecoin-migr
 
 ## Refactors and Endeavors
 
-### 📈Major testing improvements
+### 📈 Major testing improvements
 
 Testing is the silent champion of reliability and development speed. This release includes [tons of](https://github.com/filecoin-project/go-filecoin/pull/2972) [behind](https://github.com/filecoin-project/go-filecoin/pull/2700) [the scenes](https://github.com/filecoin-project/go-filecoin/pull/2990) [work](https://github.com/filecoin-project/go-filecoin/pull/2919) improving the quality of existing unit and integration tests as well as adding new tests to existing code. Continued improvements to the [FAST](https://github.com/filecoin-project/go-filecoin/tree/master/tools/fast) framework promise to further accelerate integration testing and devnet deployments.
 
@@ -63,14 +63,14 @@ A full list of [all 207 PRs in this release](https://github.com/search?p=2&q=is%
 
 ## CLI diff
 
-| go-filecoin command | change |
+| go-filecoin command | change       |
 | ------------------- | ------------ |
-| deals list | added |
-| deals redeem | added |
-| deals show | added |
-| miner pledge | removed |
-| mining status | added |
-| show block | args changed |
+| deals list          | added        |
+| deals redeem        | added        |
+| deals show          | added        |
+| miner pledge        | removed      |
+| mining status       | added        |
+| show block          | args changed |
 
 ## Contributors
 
@@ -153,7 +153,7 @@ A full list of [all 207 PRs in this release](https://github.com/search?p=2&q=is%
 - [@ZenGround0](https://github.com/ZenGround0) (9 commits, 9 PRs, 23 issues, 37 comments)
 - [@zixuanzh](https://github.com/zixuanzh) (1 PR)
 
-## 🙌🏽 Want to contribute
+## 🙌🏽 Contribute
 
 Would you like to contribute to the Filecoin project and don’t know how? Here are a few places you can get started:
 
@@ -162,6 +162,6 @@ Would you like to contribute to the Filecoin project and don’t know how? Here 
 - Join the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat), introduce yourself in #\_fil-lobby, and let us know where you would like to contribute
 - Join the [user devnet](https://github.com/filecoin-project/go-filecoin/wiki/Getting-Started)
 
-## ⁉️ Do you have questions
+## ⁉️ Questions
 
 The best place to ask your questions about go-filecoin, how it works, and what you can do with it is at [discuss.filecoin.io](https://discuss.filecoin.io/). We are also available at the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat).

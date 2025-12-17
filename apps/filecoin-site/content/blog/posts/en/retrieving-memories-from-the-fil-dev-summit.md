@@ -28,9 +28,6 @@ There were two main focal points of conversation in the Filecoin Retrievals & Da
 
 {{< youtube id="tKTGSQ4-V3c" title="Retrieval Expectations" >}}
 
-<p><br>
-<br></p>
-
 ## Concrete retrieval SLAs
 
 The first goal was a clear understanding of what we need in retrieval. Multiple discussions described specific definitions of retrieval, which help to reduce uncertainty and allow for better retrieval measurement and optimization. In his talk Retrieval Requirements for Filecoin SPs, Jaun Benet defined retrieval types and shared his vision for how verified retrievals could be implemented on Filecoin.

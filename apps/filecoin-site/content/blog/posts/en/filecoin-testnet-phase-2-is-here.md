@@ -59,7 +59,7 @@ The Testnet Phase 2 release includes implementations that are nearly feature-com
 
 If you’re a developer who is interested in building on the Filecoin network, we’d love to hear from you! Please reach out to us at [filecoin-collab@protocol.ai](mailto:filecoin-collab@protocol.ai).
 
-## Have Questions
+## Questions
 
 **Join us for our Testnet Phase 2 AMA with Juan Benet.** Join us **Monday, May 18, at 7 PM PST**, for a live Q&A with Juan Benet, founder of the Filecoin Project. For one hour, Juan and several Filecoin developers will be online to answer any questions you might have about Testnet Phase 2 and our path to mainnet.
 

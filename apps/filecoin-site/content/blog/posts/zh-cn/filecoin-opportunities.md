@@ -26,7 +26,7 @@ _以下是2021年5月ZX Zhang在Web3 Summit上演讲的概要-完整发言在_ [
 
 Filecoin和Airbnb其实有不少共同点。Airbnb屋主为旅客提供自己的房屋，Filecoin存储提供者为用户提供自己的存储容量。二者的商业模型都是将资源变成生态参与者需要的实用服务，并以此获取报酬。
 
-<img src="/uploads/chart.webp">
+![](/uploads/chart.webp)
 
 不过，在Airbnb的经济模式下，虽然屋主一直在创造价值（通过他们的房屋），但股东收获了最多价值。在Filecoin这样的Web3经济中，则有多种适合Web2和Web3的商业模式，为主流化指明了道路。
 

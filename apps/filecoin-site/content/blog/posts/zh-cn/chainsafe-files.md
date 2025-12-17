@@ -23,7 +23,7 @@ title: ChainSafe Files：构建保护隐私的云存储
 _template: blog_detail_ch
 ---
 
-_这是一篇来自_ [_ChainSafe_](https://chainsafe.io/)_的文章。_
+_这是一篇来自 [ChainSafe](https://chainsafe.io/)的文章。_
 
 _ChainSafe Files能够提供高度保护隐私、高度安全的云存储，让用户对其数据享有完整的主权。我们的产品利用IPFS和Filecoin来为用户提供分布式存储和区块链技术的所有好处。Files项目抽离了这些系统的复杂性，从而提供一个简单、对用户友好的体验。这样，用户可以轻松地使用我们的数据存储解决方案，并得到相较于传统云存储选项更具备隐私性、更具弹性以及更去中心化的好处。_ [_马上体验_](https://files.chainsafe.io/)_！_
 

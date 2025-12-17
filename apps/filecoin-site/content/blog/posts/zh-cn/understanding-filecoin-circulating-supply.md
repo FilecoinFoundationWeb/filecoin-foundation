@@ -57,15 +57,13 @@ Filecoin经济的首要目标是通过矿工、开发者、研究者、用户和
 
 因此，从挖矿中获得的有效代币的铸造权掌握在社区手中，并落在图1中两条线之间的任意地方。图2提供了一个网络需要增长多少才能达到最大铸币量的示例。虽然社区可能会一起更新网络的基准，但达到基准需要所有利益相关者、研究者、矿工、开发者、代币持有者、生态合作伙伴和存储用户之间的竞争与合作。
 
-<figure style="width:90%;margin-left:5%;font-size:smaller;font-style:italic;text-align:center;">
-  <img src="/vintage/images/blog/filecoin-circulating-supply-minting.png">
-  <figcaption>图1: 存储挖矿的最小和最大铸币量。</figcaption>
-</figure>
+![图1: 存储挖矿的最小和最大铸币量。](/vintage/images/blog/filecoin-circulating-supply-minting.png)
 
-<figure style="width:90%;margin-left:5%;font-size:smaller;font-style:italic;text-align:center;">
-  <img src="/vintage/images/blog/filecoin-circulating-supply-baseline.png">
-  <figcaption>图2: 对数刻度上的最大基准铸造线对应的网络存储基准。</figcaption>
-</figure>
+_图1: 存储挖矿的最小和最大铸币量。_
+
+![图2: 对数刻度上的最大基准铸造线对应的网络存储基准。](/vintage/images/blog/filecoin-circulating-supply-baseline.png)
+
+_图2: 对数刻度上的最大基准铸造线对应的网络存储基准。_
 
 您可以在Filecoin技术规范中查看更多内容。
 
@@ -77,12 +75,10 @@ Filecoin经济的首要目标是通过矿工、开发者、研究者、用户和
 
 1. **挖矿奖励**。所有挖矿奖励都要经过[不同形式的释放](https://spec.filecoin.io/#section-systems.filecoin_mining.miner_collaterals.block-reward-collateral)，以鼓励长期的网络调整。例如，矿工赚取的75%区块奖励在180天内线性释放，而25%的奖励会立即提供给矿工，以改善矿工现金流和盈利能力。当然，如下所述在整个区块的生命周期内，所有赚取的奖励都会不断减少。不可靠的存储会降低网络的实用性，因此这些扇区赚取的区块奖励将被削减和烧毁。
 2. **SAFT投资者**。所有SAFT持有者收到的FIL均受6个月、1年、2年和3年线性锁定条款的限制，从网络启动开始。大多数购买的SAFT代币在3年内线性释放。
-
    - 58%的SAFT代币在3年内线性释放。
    - 5%的SAFT代币在2年内线性释放。
    - 15%的SAFT代币在1年内线性释放。
    - 22%的SAFT代币在6个月内线性释放。
-
 3. **Filecoin基金会**。Filecoin基金会的1亿枚FIL从网络启动开始在6年内线性释放。
 4. **协议实验室**。协议实验室的3亿枚 FIL从网络启动开始在6年内线性释放。当协议实验室通过与重要合作者的资助鼓励生态发展时，这些资助通常也会在6年内释放。
 
@@ -118,8 +114,7 @@ Filecoin协议中含有的经济机制确保网络活动和利益相关者与网
 
 让Web3成为主流需要所有生态参与者的努力。Filecoin协议的激励措施必须平衡所有利益相关者、存储用户、矿工、开发者、代币持有者和生态合作伙伴的利益。繁荣的经济有利于网络中的每一个人，并使所有参与者的长期激励机制保持一致。而最重要的是，Filecoin的未来掌握在其社区的手中。
 
-<br>
-<hr>
+---
 
 ## _附录：流通供应机制定义_
 

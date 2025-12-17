@@ -49,7 +49,7 @@ These tools also provide simple, developer-friendly interfaces for storing and r
 
 These tools offer more detailed control of Filecoin deals and data, but still offer abstractions for key aspects.
 
-[**Powergate**](https://docs.filecoin.io/build/powergate/#how-to-use-powergate): Powergate is built by [Textile](https://linktr.ee/textileio) for developers who want an easier interface and better performance from Filecoin, but prefer to manage their own nodes. It exposes higher-level APIs for developers that simplify interaction with IPFS and Filecoin nodes, and offers advanced storage configuration options like replication factor, deal renewals, and Storage Provider selector.
+**[Powergate](https://docs.filecoin.io/build/powergate/#how-to-use-powergate):** Powergate is built by [Textile](https://linktr.ee/textileio) for developers who want an easier interface and better performance from Filecoin, but prefer to manage their own nodes. It exposes higher-level APIs for developers that simplify interaction with IPFS and Filecoin nodes, and offers advanced storage configuration options like replication factor, deal renewals, and Storage Provider selector.
 
 **Bridges**: Also built by Textile, this project is being developed as a permissionless bridge between Filecoin and important Layer 1 and Layer 2 networks such as Ethereum, NEAR, and Polygon. This will allow the network’s technology and native token to be on Filecoin.
 

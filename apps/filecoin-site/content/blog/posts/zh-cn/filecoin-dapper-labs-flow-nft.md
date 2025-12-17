@@ -30,29 +30,22 @@ Dapper Labs是CryptoKitties、Dapper Wallet和高度成功的NBA Top Shot项目�
 
 Flow项目的开发者编写了[一份很棒的教程](https://medium.com/@qq976739120/how-to-create-an-nft-with-flow-and-nft-storage-1ccce45797b0)，展示了如何用存储在IPFS和Filecoin上的元数据来铸造Flow NFT.
 
-<div style="margin-top: 4em; margin-right: 8em; margin-bottom: 4em; margin-left: 8em; padding: 2em; background-color:#f2f2f2;">
+![Eternal Header](/uploads/eternal-header.webp)
 
-<img style="margin-top: 0; margin-left: 0; width: 100%" src="/uploads/eternal-header.webp">
+### 特别关注Eternal.gg: 一个使用IPFS和Filecoin的Flow项目例子
 
-<h4 style="margin-bottom: 2em; text-align:center; font-size: 1.25em; line-height: 1.3">特别关注Eternal.gg:<br>一个使用IPFS和Filecoin的Flow项目例子</h4>
+**Eternal.gg使用了IPFS技术，在其所铸造的视频NFT和相关元数据之间创建无法篡改的链接，目前正将其内容备份到Filecoin上。**
 
-<p style="font-size: 1em; line-height: 1.3"><b>Eternal.gg使用了IPFS技术，在其所铸造的视频NFT和相关元数据之间创建无法篡改的链接，目前正将其内容备份到Filecoin上。</b></p>
+- IPFS能够通过内容自身的指纹来引用这些内容。通过将这个引用方式植入链上NFT的元数据里，就可以在Flow区块链上的token和视频NFT之间创建不可篡改的链接。
+- 通过**NFT.Storage**，内容可以使用IPFS进行pin固化操作，并在Filecoin的分布式存储提供者网络上存储。Filecoin上的存储提供者提交密码学证明，来说明内容的完整性以及可用性。
 
-<ul>
+在前期的3个月内，Eternal团队为Twitch上的20个顶级创作者铸造和售卖了**超过60,000个精彩时刻的内容。**
 
-<li style="font-size: 1em; line-height: 1.3">IPFS能够通过内容自身的指纹来引用这些内容。通过将这个引用方式植入链上NFT的元数据里，就可以在Flow区块链上的token和视频NFT之间创建不可篡改的链接。</li>
+![Eternal NFT Examples Strip](/uploads/eternal-nft-examples-strip.gif)
 
-<li style="font-size: 1em; line-height: 1.3">通过<b>NFT.Storage</b>，内容可以使用IPFS进行pin固化操作，并在Filecoin的分布式存储提供者网络上存储。Filecoin上的存储提供者提交密码学证明，来说明内容的完整性以及可用性。</li>
+**关于Eternal.gg**
 
-</ul>
-
-<p style="font-size: 1em; line-height: 1.3">在前期的3个月内，Eternal团队为Twitch上的20个顶级创作者铸造和售卖了<b>超过60,000个精彩时刻的内容。</b></p>
-
-<img style="margin-left: 0; width: 100%" src="/uploads/eternal-nft-examples-strip.gif">
-
-<p style="font-size: 1em; line-height: 1.35; color: #595959"><em><b>关于Eternal.gg</b><br> _Eternal.gg是一个让流媒体创作者和电子竞技玩家将其精彩的流媒体时刻变现的平台。社区成员可以购买这些精彩的时刻，并与其他粉丝交易，从而活跃粉丝的体验，强化创作者和粉丝之间的关系。Eternal选在Flow区块链上发布，是因为其低廉的gas费用和高吞吐量。_ </em></p>
-
-</div>
+_Eternal.gg是一个让流媒体创作者和电子竞技玩家将其精彩的流媒体时刻变现的平台。社区成员可以购买这些精彩的时刻，并与其他粉丝交易，从而活跃粉丝的体验，强化创作者和粉丝之间的关系。Eternal选在Flow区块链上发布，是因为其低廉的gas费用和高吞吐量。_
 
 为了加快这项合作，我们也为Flow生态提供了资助计划，这从Next Step Microgrant小额资助开始。
 

@@ -101,7 +101,7 @@ Read more about pygate [on the Filecoin blog](https://filecoin.io/blog/hackfs-te
 
 In addition to the 10 finalists, each HackFS sponsor awarded prizes to teams that used their technology in novel ways. Protocol Labs recognized 8 projects as winners of the Protocol Labs HackFS prizes.
 
-🎉Congratulations to:
+🎉 Congratulations to:
 
 - Secured Finance, winners of the **DeFi track**
 - Kotal, winners of the **Devtools track**

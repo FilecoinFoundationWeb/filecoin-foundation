@@ -47,33 +47,33 @@ As discussed in the [2023 wrap up](https://filecoin.io/blog/posts/2023-expanding
 
 In just the past quarter - the Filecoin ecosystem has already made huge strides against each pillar.
 
-1\. Bringing DePIN, Compute, Storage, and AI networks to Filecoin through L2s and deep integrations
+### 1. Bringing DePIN, Compute, Storage, and AI networks to Filecoin through L2s and deep integrations
 
 [Fluence](https://fluence.network/) launched as the first Filecoin compute L2 in March, and [Basin](https://basin.textile.io/) recently announced its plans to be the first data L2 - helping onboard DePIN, compute, and AI networks onto Filecoin storage! Other compute & storage L2s in the works include Storacha, Akave, Lilypad, CoopHive, and more.
 
 The new F3 fast finality system brings much deeper cross-chain interop to the Filecoin ecosystem, allowing other networks to seamlessly bridge and harness Filecoin storage proofs in real-time using Axelar or other trustless bridging solutions. F3 is on track towards soft launch in Q3 and full activation in Oct/Nov.
 
-2\. Making Filecoin the fundamental storage layer for web3
+### 2. Making Filecoin the fundamental storage layer for web3
 
 [Solana announced its integration with Filecoin](https://news.bitcoin.com/solana-integrates-filecoin-to-enhance-historic-data-accessibility/) storage in Q1, and many more web3 networks are turning to Filecoin for robust, long-term, decentralized storage thanks to onramps like [Basin](http://basin.textile.io/) (DePIN), [Akave](http://akave.ai/) (Compute), [web3.storage](http://web3.storage/) (social, media, & gaming), [Lighthouse](http://lighthouse.storage/) (permanent storage), and many others!
 
-F3 will also unlock trustless integration pathways for any EVM-compatible network to integrate fully programmable storage and backup of their chainstate using Filecoin. They can even pay in their own ERC20 token, which is swapped to pay for long-term storage in FIL! A [prototype data onramp using Filecoin bridges](https://docs.google.com/document/d/1vjSUCF3JNEE1dFNs-SGLwQcXJR0pg0q3FzQwvlW7nvc/edit) is creating exemplar building blocks for cross-chain Filecoin storage applications to reuse and experiment with by the end of June. 
+F3 will also unlock trustless integration pathways for any EVM-compatible network to integrate fully programmable storage and backup of their chainstate using Filecoin. They can even pay in their own ERC20 token, which is swapped to pay for long-term storage in FIL! A [prototype data onramp using Filecoin bridges](https://docs.google.com/document/d/1vjSUCF3JNEE1dFNs-SGLwQcXJR0pg0q3FzQwvlW7nvc/edit) is creating exemplar building blocks for cross-chain Filecoin storage applications to reuse and experiment with by the end of June.
 
-3\. Upgrading Filecoin with support for hot data and fast retrievals
+### 3. Upgrading Filecoin with support for hot data and fast retrievals
 
-Thanks to the [Spark retrieval checker](https://github.com/filecoin-station/spark) - Fil+ Storage Providers have continued improving real-time data retrievability - with the top 5 SPs all now achieving over 90% retrieval success rates! 
+Thanks to the [Spark retrieval checker](https://github.com/filecoin-station/spark) - Fil+ Storage Providers have continued improving real-time data retrievability - with the top 5 SPs all now achieving over 90% retrieval success rates!
 
 Filecoin L2 data onramps like [Basin](http://basin.textile.io/), [Akave](http://akave.ai/), and [Storacha](http://web3.storage/) are all focused on the key pain-point of hot, fast storage on Filecoin - offering efficient caching, aggregation, and developer interfaces for web3 clients. All 3 of these networks are targeting Q3 testnets - unlocking even hotter storage interfaces for users!
 
-Hot storage is also coming to Filecoin L1 via a new proof type - Proof of Data Possession (PDP) - which offers a lightweight data accessibility proof without the need for sealing and unsealing sectors. This creates space for a new class of storage providers focused on providing hot storage and retrievals, able to serve storage onramps like Basin, Akave, Storacha and others the fast retrievals their users need! 
+Hot storage is also coming to Filecoin L1 via a new proof type - Proof of Data Possession (PDP) - which offers a lightweight data accessibility proof without the need for sealing and unsealing sectors. This creates space for a new class of storage providers focused on providing hot storage and retrievals, able to serve storage onramps like Basin, Akave, Storacha and others the fast retrievals their users need!
 
 The plan is to experiment with the new PDP SP interface (as lightweight as possible) in smart contracts first to understand how onramps will leverage PDP for paid services and L2 incentives, and then solidify as a FIP in Q3.
 
-4\. Expanding the Filecoin economy and community
+### 4. Expanding the Filecoin economy and community
 
-The Filecoin economy continues growing on FVM. In Q1 - new DEXs like SushiSwap and Uniswap came to Filecoin L1  via Oku trade - bringing increased cross-chain swaps, while FIL leasing platforms like [Glif](https://www.glif.io/en) reached new all-time-high participation rates.
+The Filecoin economy continues growing on FVM. In Q1 - new DEXs like SushiSwap and Uniswap came to Filecoin L1 via Oku trade - bringing increased cross-chain swaps, while FIL leasing platforms like [Glif](https://www.glif.io/en) reached new all-time-high participation rates.
 
-Thanks to recent upgrades, it’s now cheaper than ever to become a Filecoin storage provider. New Sealing-as-a-Service providers like Ramo (Web3Mine) allow any laptop to join the Filecoin network, while proof types like NI-PoRep and PDP are massively lowering the cost to add capacity and data to Filecoin. New SP software like Curio and customized proving schedules also reduce the human overhead and complexity of operating a storage provider.
+Thanks to recent upgrades, it's now cheaper than ever to become a Filecoin storage provider. New Sealing-as-a-Service providers like Ramo (Web3Mine) allow any laptop to join the Filecoin network, while proof types like NI-PoRep and PDP are massively lowering the cost to add capacity and data to Filecoin. New SP software like Curio and customized proving schedules also reduce the human overhead and complexity of operating a storage provider.
 
 The many improvements to storage onramps, retrieval SLAs, and Filecoins demonstrated storage robustness have started attracting large-scale paying storage customers to Filecoin. FilStor is actively supporting and routing paying enterprise customers to the optimal storage onramp - accelerating paid data storage on Filecoin!
 
@@ -111,12 +111,12 @@ As with all our work, FilOz aims to enhance and accelerate the work of others - 
 If you align with these areas of focus in the Filecoin community - we’d love to partner with you to make them a reality! Get involved by:
 
 - Joining [Filecoin slack](http://filecoin.io/slack) and find us in:
-- \#fil-protocol to brainstorm and design protocol improvements for/with Filecoin. 
-- \#fil-lotus-dev to implement Filecoin improvements w/ us!
+  - \#fil-protocol to brainstorm and design protocol improvements for/with Filecoin. 
+  - \#fil-lotus-dev to implement Filecoin improvements w/ us!
 - Participate in or host a Protocol Office Day (deep-dive, Office Hour, or AMA)
-- Subscribe to upcoming events [here](https://www.filoz.org/events)
-- [Book office hours](https://www.filoz.org/#team) with our team members, click the 📅 links!
-- Send collaboration or protocol office ideas to [po@filoz.org](mailto:po@filoz.org). 
+  - Subscribe to upcoming events [here](https://www.filoz.org/events)
+  - [Book office hours](https://www.filoz.org/#team) with our team members, click the 📅 links!
+  - Send collaboration or protocol office ideas to [po@filoz.org](mailto:po@filoz.org). 
 - Join us for deep protocol discussions and workshops at [FDS in Brussels](https://www.fildev.io/).
 - Follow us on Twitter for the latest updates [@\_FilOz](https://x.com/_FilOz).
 

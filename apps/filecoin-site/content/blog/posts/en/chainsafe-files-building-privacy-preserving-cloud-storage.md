@@ -22,9 +22,9 @@ title: ChainSafe Files — Building Privacy-preserving Cloud Storage
 _template: blog_detail
 ---
 
-_This is a guest post from_ [_ChainSafe_](https://chainsafe.io/)_._
+_This is a guest post from [ChainSafe](https://chainsafe.io/)._
 
-_ChainSafe Files provides highly private, highly secure cloud storage that allows users to maintain full sovereignty over their data. Our product leverages IPFS and Filecoin to give users all the benefits of distributed storage and blockchain technology. Files abstracts away the complexities of these systems to deliver a simple, user-friendly experience. In this way, users can enjoy easy access to our data storage solution that is more private, more resilient, and more decentralized than traditional cloud storage options._ [_Try it today_](https://files.chainsafe.io/)_!_
+_ChainSafe Files provides highly private, highly secure cloud storage that allows users to maintain full sovereignty over their data. Our product leverages IPFS and Filecoin to give users all the benefits of distributed storage and blockchain technology. Files abstracts away the complexities of these systems to deliver a simple, user-friendly experience. In this way, users can enjoy easy access to our data storage solution that is more private, more resilient, and more decentralized than traditional cloud storage options. [Try it today](https://files.chainsafe.io/)!_
 
 [ChainSafe Files](https://files.chainsafe.io/) is an online platform to store, view, and share files. Although it might look like it, it isn’t your typical cloud storage platform. ChainSafe Files was built and designed with **user freedom and data privacy** top of mind.
 
@@ -76,7 +76,7 @@ In a nutshell, IPFS is a network of computers (called nodes) that store files. A
 
 ![ChainSafe Files file info](/uploads/file-info.webp)
 
-This way, you can retrieve your files without using the Files user interface. Now, as explained before, those files are encrypted, and you would need to decrypt them if you want to read them. [**We have created a simple cli tool**](https://github.com/ChainSafe/files-cli) **to download and decrypt your files from IPFS without using the Files interface**.
+This way, you can retrieve your files without using the Files user interface. Now, as explained before, those files are encrypted, and you would need to decrypt them if you want to read them. **[We have created a simple cli tool](https://github.com/ChainSafe/files-cli) to download and decrypt your files from IPFS without using the Files interface**.
 
 While it doesn’t cost anything to retrieve a file from IPFS, nodes that are a part of the network have no incentive to store files. Therefore, it can be said that there is no guarantee that your files will always be available when you need them. This is where Filecoin will help. Filecoin is an incentive layer on top of IPFS. In simple words, it means you can pay specific nodes to make sure they will keep your file around. This guarantee is enforced by the Filecoin protocol so that you can be sure to be able to access your files when you want. Unlike IPFS though, it is not free to retrieve your files. **ChainSafe Files is therefore using IPFS** as a caching layer, to be able to show your files right away when you need them, but **we also store them using Filecoin for long-term storage, and redundancy**.
 

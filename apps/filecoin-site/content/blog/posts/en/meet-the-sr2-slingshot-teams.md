@@ -31,7 +31,7 @@ This week, we talked to four teams to learn more about their work, how they got 
 
 ## Team: Fin-File
 
-![fin-file](https://filecoin.io/vintage/images/blog/fin-file.png =40%x)
+![Fin-File](/vintage/images/blog/fin-file.png)
 
 **Team Members:** @John_Mc and and @Daniel Kurzweil
 
@@ -47,7 +47,7 @@ This week, we talked to four teams to learn more about their work, how they got 
 
 ## Team: Yolo
 
-![yolo](https://filecoin.io/vintage/images/blog/yolo.png =30%x)
+![Yolo](/vintage/images/blog/yolo.png)
 
 **Team member:** @Max
 
@@ -77,7 +77,7 @@ I’m primarily participating in Slingshot for the experience and for the commun
 
 ## Team: [Decentralized Docker Hub](https://github.com/viraja1/decentralized_docker_hub)
 
-![Decentralized Docker Hub](https://filecoin.io/vintage/images/blog/decentralized-docker-hub.png =30%x)
+![Decentralized Docker Hub](/vintage/images/blog/decentralized-docker-hub.png)
 
 **Team member:** @viraj
 

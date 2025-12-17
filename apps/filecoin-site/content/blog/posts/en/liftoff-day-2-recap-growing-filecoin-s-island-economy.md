@@ -60,4 +60,4 @@ Tomorrow, October 21, is day 3 of Liftoff Week, during which we’ll be focusing
 - **5:30pm PDT:** Fleek CEO Harrison Hines and developer Samuele Agostinelli will give a tech-focused talk and workshop to dive into the technology behind Space, use-cases, and getting started with the Space Daemon.
 - **6:40pm PDT:** Join Corbin Page of ConsenSys Codefi, Ren CTO Loong Wang, and Aave CEO Stani Kulechov as they explore the exciting potential for Filecoin and DeFi.
 
-## [**See the Full Agenda**](https://liftoff.filecoin.io/)
+[See the full agenda](https://liftoff.filecoin.io/)

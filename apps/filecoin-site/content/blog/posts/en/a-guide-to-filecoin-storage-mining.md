@@ -91,7 +91,7 @@ There are at least three other implementations currently undergoing active devel
 
 ## Hardware considerations
 
-### Participants in the Filecoin network will need to ensure that their systems are sufficiently equipped for the role they are intended to fill
+Participants in the Filecoin network will need to ensure that their systems are sufficiently equipped for the role they are intended to fill
 
 ### Running the Lotus client without mining
 
@@ -105,7 +105,7 @@ Filecoin storage mining is _not_ proof-of-work mining – sealing storage is the
 
 #### Example mining machines and benchmarks
 
-##### The optimal system composition will depend largely on a storage miner’s operating model, include capital expenditure and operating cost; as such, Protocol Labs is unable to give any concrete recommendations. We have, however, published some of our own designs, including outlines for machines that are presently suitable for [testing and small-scale mining](https://pcpartpicker.com/user/tperson/saved/H2BskL)
+The optimal system composition will depend largely on a storage miner’s operating model, include capital expenditure and operating cost; as such, Protocol Labs is unable to give any concrete recommendations. We have, however, published some of our own designs, including outlines for machines that are presently suitable for [testing and small-scale mining](https://pcpartpicker.com/user/tperson/saved/H2BskL)
 
 We expect storage miners to tailor their configurations to their own needs; it is possible to mine on the testnet with alternative configurations, and we expect that many of these configurations will surpass the efficiency of our own builds. We encourage experimentation, and would ask interested community members to share their own benchmark scores [on GitHub](https://github.com/filecoin-project/benchmarks).
 

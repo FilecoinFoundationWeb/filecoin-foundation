@@ -37,7 +37,7 @@ NFT.Storage让开发者在分布式网络上存储NFT数据，使其过程变得
 2. **可证明存储**：NFT.Storage通过Filecoin实现长期分布式数据存储——对接存储交易和检索交易从而长期保存NFT数据。Filecoin利用密码学证明提供持久协议层来保障NFT数据的持久性和耐用性。
 3. **弹性检索**：利用IPFS和Filecoin存储的数据可轻松获取，只需用浏览器打开[任意公共IPFS端口](https://ipfs.github.io/public-gateway-checker/)。
 
-<a href="https://nft.storage/" target="_blank"><img src="/uploads/screen-shot-2021-04-29-at-1-51-42-pm.webp"></a>
+[![](/uploads/screen-shot-2021-04-29-at-1-51-42-pm.webp)](https://nft.storage/)
 
 ## 下一步计划
 

@@ -21,7 +21,7 @@ title: Using Filecoin with IPFS
 _template: blog_detail
 ---
 
-[_Browsers 3000_](https://fil.org/events/hackathon-browsers-3000) _is a five-week hackathon by Protocol Labs focused on decentralized solutions being built for the future of the Web3 browser. Below is a summary of a discussion by_ [_Jimmy "Cake" Lee_](https://twitter.com/wwwjim) _about how to implement Textile’s libraries or Estuary to utilize Filecoin through a standard web browser._ [_View the full talk here_](https://www.youtube.com/watch?v=2lwqUsGCTEQ&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP&index=4)_._
+_[Browsers 3000](https://fil.org/events/hackathon-browsers-3000) is a five-week hackathon by Protocol Labs focused on decentralized solutions being built for the future of the Web3 browser. Below is a summary of a discussion by [Jimmy "Cake" Lee](https://twitter.com/wwwjim) about how to implement Textile’s libraries or Estuary to utilize Filecoin through a standard web browser. [View the full talk here](https://www.youtube.com/watch?v=2lwqUsGCTEQ&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP&index=4)._
 
 With web browsers slowly shifting towards using web3, the need for decentralized file storage becomes increasingly more apparent. However, browser plugins are becoming more limited, as does access to distributed storage protocols like [IPFS](https://ipfs.tech "IPFS"). Standard web browsers aren't always able to utilize IPFS natively. As a result, there needs to be an intermediary to help developers who intend to develop apps with these storage systems.
 

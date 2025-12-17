@@ -34,7 +34,7 @@ Slingshot是Filecoin的[Ignite系列](https://hub.fil.org/events/)活动的一�
 
 以下是截至9月25日周五20:00（UTC时间），也就是竞赛开始两天的情况。
 
-<img src="/vintage/images/blog/slingshot-week-one-stats.png" width="100%">
+![](/vintage/images/blog/slingshot-week-one-stats.png)
 
 **回顾一周**
 

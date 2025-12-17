@@ -28,11 +28,9 @@ _欢迎来到第七期Filecoin社区亮点系列，该系列主要针对用户�
 
 ## [Kazan](https://github.com/samikshan/kazan)团队
 
-<div style="text-align:center">
-    <image src="/vintage/images/blog/hfs-kazan.png" alt="Kazan">
-</div>
+![Kazan](/vintage/images/blog/hfs-kazan.png)
 
-> "如果我弹奏吉他，有人可以加入打鼓，还可以来和声，这种合作是可以一直进行下去的并且有无限可能。我的愿景是能够加入其他的艺术家，比如制作专辑的艺术家和制作音乐视频的艺术家。" – <span style="font-style: normal">Samikshan Bairagya</span>
+> 如果我弹奏吉他，有人可以加入打鼓，还可以来和声，这种合作是可以一直进行下去的并且有无限可能。我的愿景是能够加入其他的艺术家，比如制作专辑的艺术家和制作音乐视频的艺术家。– Samikshan Bairagya
 
 **团队成员:** Samikshan Bairagya
 
@@ -62,21 +60,20 @@ Kazan是一款可以让音乐家发现新曲目并且可以重新发布以最大
 
 ## EduVault团队
 
-<div style="text-align:center">
-    <image src="/vintage/images/blog/hfs-eduvault.png" alt="EduVault">
-</div>
+![EduVault](/vintage/images/blog/hfs-eduvault.png)
 
-**团队成员:** Jacob Cohen-Rosenthal、Aqeel Mohammad、Monica Kumaran和Brian Schwartz
+**团队成员：** Jacob Cohen-Rosenthal、Aqeel Mohammad、Monica Kumaran 和 Brian Schwartz
 
-**EduVault背后的灵感：** 我们的前提是人工智能可以成为指导个人教育的绝佳工具。但是要做到这一点，人工智能需要知道你所有的信息，目前在世界上，这需要一个公司、一个平台要对你的数据了解的非常透彻才可以。
+**EduVault 背后的灵感：**  
+我们的前提是，人工智能可以成为指导个人教育的绝佳工具。但要实现这一点，人工智能必须掌握关于你的完整信息——而在当今世界，这通常意味着某一家公司或平台需要对你的数据有非常全面的了解。
 
-如今，我们使用的许多在线平台，包括EdTech，都收集了大量有关我们的数据，并将这些数据出售给别人。EduVault本质上为数字学习数据创建了一个私有云，因此学生可以调整课程计划以满足他们的需求，而无需向第三方或广告商提供信息。如果用户愿意，也可以出售这些数据，或者将其匿名化然后出售给有推荐功能的广告商。但重点是，默认情况下用户无需分享数据。
+如今，我们使用的许多在线平台（包括 EdTech 平台）都会收集大量关于我们的数据，并将这些数据出售给第三方。EduVault 的核心理念是为数字化学习数据创建一个私有云，使学生能够根据自身需求调整学习路径，而无需向第三方或广告商提供个人信息。
 
-最终，借助EduVault，用户可以在应用程序间随时保存数据，并在教育应用程序间同步信息。这种互操作性可以解锁功能强大的使用场景，并创造出更好的学习体验。
+如果用户愿意，也可以选择出售这些数据，或者将其匿名化后出售给具备推荐能力的广告商。但关键在于：**默认情况下，用户无需共享任何数据。**
 
-<div style="text-align:center">
-    <image src="/vintage/images/blog/hfs-eduvault-mvp.png" alt="Eduvault MVP">
-</div>
+最终，借助 EduVault，用户可以在不同应用之间随时保存数据，并在各类教育应用中同步信息。这种互操作性能够解锁强大的使用场景，并创造更优质的学习体验。
+
+![EduVault MVP](/vintage/images/blog/hfs-eduvault-mvp.png)
 
 到目前为止，构建私有云非常困难。 想要拥有自己的数据需要两个要素：访问控制和可用性。通过对数据进行加密可实现访问控制。可用性意味着没有人可以删除用户的数据。例如，您可以在加密您的数据库然后将其存储在中心化云存储服务上，但此服务可能某天会限制您的访问。
 

@@ -28,20 +28,6 @@ title: Filecoin 2019 Q2 & Q3 Update
 _template: blog_detail_ch
 ---
 
-目录
-
-1. [上线：12月11日测试网上线，2020年第一季度主网上线](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#1-%E4%B8%8A%E7%BA%BF-12%E6%9C%8811%E6%97%A5%E6%B5%8B%E8%AF%95%E7%BD%91%E4%B8%8A%E7%BA%BF-2020%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%BA%A6%E4%B8%BB%E7%BD%91%E4%B8%8A%E7%BA%BF)
-2. [TL; DR：2019年的亮点](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#2-tldr-2019%E5%B9%B4%E7%9A%84%E4%BA%AE%E7%82%B9)
-3. [路线图更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#3-%E8%B7%AF%E7%BA%BF%E5%9B%BE%E6%9B%B4%E6%96%B0)
-4. [开发更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#4-%E5%BC%80%E5%8F%91%E6%9B%B4%E6%96%B0)
-5. [研究更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#5-%E7%A0%94%E7%A9%B6%E6%9B%B4%E6%96%B0)
-6. [社区更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#6-%E7%A4%BE%E5%8C%BA%E6%9B%B4%E6%96%B0)
-7. [政策方面更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#7-%E6%94%BF%E7%AD%96%E6%96%B9%E9%9D%A2%E6%9B%B4%E6%96%B0)
-8. [公共演讲和媒体宣传](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#8-%E5%85%AC%E5%85%B1%E6%BC%94%E8%AE%B2%E5%92%8C%E5%AA%92%E4%BD%93%E5%AE%A3%E4%BC%A0)
-9. [libp2p 对 Filecoin 的更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#9-libp2p-%E5%AF%B9-filecoin-%E7%9A%84%E6%9B%B4%E6%96%B0)
-10. [IPFS 对 Filecoin 的更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#10-ipfs-%E5%AF%B9-filecoin-%E7%9A%84%E6%9B%B4%E6%96%B0)
-11. [注意事项](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#11-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
-
 ## 1. 上线: 12月11日测试网上线, 2020年第一季度主网上线
 
 此次更新中最重要的新闻是，我们的网络即将上线。我们推迟了之前定的上线时间，但是-正如你之后将读到的 - 我们在各个方面都取得了巨大进步！我们现在已有足够准备，可以决定以下上线时间了：
@@ -97,14 +83,22 @@ _template: blog_detail_ch
 - 将于**2019年12月11日**启动测试网
 - 主网启动日期尚未宣布，但是我们预计将在测试网启动之后的1-2个季度，即2020年第一季度发布确切的启动日期
 
-我们已对里程碑进行了如下调整： | --- | --- | --- |
-| 里程碑 | 旧的预期完成时间 | 新的预期完成时间 |
-| 启动长期运行的 alphanet: | 无 | 2019年9月25日 |
-| 启动第一个 Filecoin 测试网: | 2019 第二季度 | 2019年12月11日 |
-| 使用大量矿机进行测试: | 2019 第二季度 | 2019 第四季度 |
-| 安全审查和审核: | 2019 第二和三季度 | 2019 第四季度 |
-| go-filecoin v1.0.0功能冻结: | 2019 第二和三季度 | 2020 第一季度 |
-| 启动 Filecoin 主网: | 2019 第三和四季度 | 2020 第一季度 | 2019年10月，我们将在我们的博客上发布开发路线图的链接。本文档将包含测试网和主网启动相关的剩余的工作量，以便社区可以跟进我们在实现这些目标方面的进展。如上所述，我们还根据这些新的里程碑的预计更新了[路线图文档](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit)。
+我们已对里程碑进行了如下调整:
+
+<!-- markdownlint-disable MD060 -->
+
+| 里程碑                      | 旧的预期完成时间  | 新的预期完成时间 |
+| --------------------------- | ----------------- | ---------------- |
+| 启动长期运行的 alphanet:    | 无                | 2019年9月25日    |
+| 启动第一个 Filecoin 测试网: | 2019 第二季度     | 2019年12月11日   |
+| 使用大量矿机进行测试:       | 2019 第二季度     | 2019 第四季度    |
+| 安全审查和审核:             | 2019 第二和三季度 | 2019 第四季度    |
+| go-filecoin v1.0.0功能冻结: | 2019 第二和三季度 | 2020 第一季度    |
+| 启动 Filecoin 主网:         | 2019 第三和四季度 | 2020 第一季度    |
+
+<!-- markdownlint-enable MD060 -->
+
+2019年10月，我们将在我们的博客上发布开发路线图的链接。本文档将包含测试网和主网启动相关的剩余的工作量，以便社区可以跟进我们在实现这些目标方面的进展。如上所述，我们还根据这些新的里程碑的预计更新了[路线图文档](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit)。
 
 请记住我们所有的预计和时间表都是相对乐观的，并且可能会发生变化。我们旨在在博客上发布有关我们进度的更新。到目前为止，掌握项目活动的最佳方法是直接关注我们的 GitHub 代码库。
 
@@ -118,7 +112,7 @@ _template: blog_detail_ch
 
 - **🏇 存储市场协议的实现。** 我们要求矿工定期提交PoSt证明，以确保他们一直在正确存储客户的数据。如果发现他们有过错 - 即如果他们没有及时提交所需的信息 - 他们将受到处罚。故障处理和罚款对于确保Filecoin系统的可验证存储至关重要。我们已对延迟或不正确的PoSt提交（存储市场协议的重要部分）实施了故障处理和处罚措施。
 - **🤝 交易争议解决。** 我们使用支付渠道来让（存储和检索）客户向（存储和检索）矿工进行支付。如果存储矿工在某项存储交易中发生故障，则客户可以提出“索赔”，称该交易已被破坏。如果协议发现交易确实中断，则支付渠道将被取消，矿工的一部分资金将被削减。这种纠纷解决机制使用片段包含证明来显示特定数据是否存储在矿机上。我们实行了交易纠纷解决方案，并能够使用片段包含证明（PIPs）来取消付款渠道（有关PIPs的更多信息，请参见文章 4.2 部分 [**rust-fil-proofs** 更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#42-%E5%BC%80%E5%8F%91%E6%9B%B4%E6%96%B0--rust-fil-proofs)）。
-- **🔗 _时空证明_的部署。** 我们已将_时空证明_（PoSt）证明过程部署到 **go-filecoin** 代码库中。矿工现在定期计算获得可继续存储的证明，并将这些证明发布到链上。一旦完成PoSt构建，部署最终的PoSt将非常简单。
+- **🔗 _时空证明_的部署。** 我们已将_时空证明_(PoSt)证明过程部署到 **go-filecoin** 代码库中。矿工现在定期计算获得可继续存储的证明,并将这些证明发布到链上。一旦完成PoSt构建,部署最终的PoSt将非常简单。
 - **🌳 网络升级。** 为了给将长期运行的 alphanet 和测试网做准备，我们一直在为顺利的网络升级奠定基础。一些实现该目标的工作包括实现能够命名网络，让节点检查网络名称以及显示协议版本的功能。
 - **🍄 数据存储迁移。** 除了保密的客户端数据外，Filecoin 节点还在磁盘上存储其他数据，例如配置，区块，交易状态和加密密钥。随着开发的进行，我们需要一种方法来安全地更改此数据的类型和架构。我们已经设计并实现了文件系统存储库迁移，以便节点在生产环境中运行时可以无缝更新。
 - **⌛ 更快的区块链同步。** 更快的区块链同步是 Filecoin 的重要软件 UX 功能。如果没有优化的区块链同步软件，则可能需要几天的时间才能检索仅1个月历史的区块链。我们的团队朝着这个目标取得了重大进展，通过 [Graphsync](https://github.com/ipfs/go-graphsync) 的IPLD DAG遍历协议实现了更快的区块链同步。
@@ -140,11 +134,11 @@ _template: blog_detail_ch
 ## 5. 研究更新
 
 - **🎪 预期共识建设的改善。** 在过去的几个月中，我们对预期共识（Expected Consensus, EC）进行了彻底的安全性分析，从而导致了结构的重大改进和独立[规范](https://github.com/filecoin-project/consensus/tree/master/specs)。在测试网期间，我们将调整与网络相关的不同EC参数。此外：
-- 我们创建了[仿真模拟](https://github.com/filecoin-project/consensus/tree/master/code/other-sims)，以确认预期共识EC在各种针对区块链质量和收敛性方面的模型中的对抗能力。
-- 在进行最终性分析时，我们的计算表明，要达到 Filecoin 的最终性水平，类似于推荐的比特币的 6 区块（1 小时）确认时间，用户只需等待 2 分钟，这是一个巨大的进步。
-- 我们指定了分叉选择规则[加权功能](https://github.com/filecoin-project/consensus/issues/71)，最终参数在测试网中确定。
-- EC 相对于传统的权益证明共识协议，已经提高了安全性，特别是通过限制无权益攻击的对抗能力以及增强了对远程攻击的抵抗力。相关文章即将上线。
-- **💻 _复制证明_ 优化.** 我们一直在为_复制证明（PoRep）_ 构造探索四类优化，并且在所有这些方面都取得了长足的进步：（1）使用GPU改善SNARK的证明时间和效率，（2）通过批量验证（ZEXE）减少SNARK的证明大小，（3）通过许多工程优化来减少复制时间和内存消耗，以及（4）通过构造级别的优化来减少证明的大小（例如，混合和摊销的Merkle树）。我们通过这些优化已经接近完成，并计划在未来1-2个月内完成PoRep的最终构建。
+  - 我们创建了[仿真模拟](https://github.com/filecoin-project/consensus/tree/master/code/other-sims)，以确认预期共识EC在各种针对区块链质量和收敛性方面的模型中的对抗能力。
+  - 在进行最终性分析时，我们的计算表明，要达到 Filecoin 的最终性水平，类似于推荐的比特币的 6 区块（1 小时）确认时间，用户只需等待 2 分钟，这是一个巨大的进步。
+  - 我们指定了分叉选择规则[加权功能](https://github.com/filecoin-project/consensus/issues/71)，最终参数在测试网中确定。
+  - EC 相对于传统的权益证明共识协议，已经提高了安全性，特别是通过限制无权益攻击的对抗能力以及增强了对远程攻击的抵抗力。相关文章即将上线。
+- **💻 复制证明 优化.** 我们一直在为复制证明（PoRep） 构造探索四类优化，并且在所有这些方面都取得了长足的进步：（1）使用GPU改善SNARK的证明时间和效率，（2）通过批量验证（ZEXE）减少SNARK的证明大小，（3）通过许多工程优化来减少复制时间和内存消耗，以及（4）通过构造级别的优化来减少证明的大小（例如，混合和摊销的Merkle树）。我们通过这些优化已经接近完成，并计划在未来1-2个月内完成PoRep的最终构建。
 - **🔮 _时空证明_ 构造。** 我们已经完善了我们选择的*时空证明（PoSt）*结构，称为有理（rational） PoSt。我们目前正在执行安全性分析，以确保我们的有理 PoSt 结构符合系统的安全性要求。
 - **🌌 论文和演讲。** 请参阅文章下面的[公开演讲和媒体](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#8-%E5%85%AC%E5%85%B1%E6%BC%94%E8%AE%B2%E5%92%8C%E5%AA%92%E4%BD%93%E5%AE%A3%E4%BC%A0)。
 
@@ -161,10 +155,10 @@ _template: blog_detail_ch
 - **🚢 Filecoin Shipyard。** [Filecoin Shipyard](https://github.com/filecoin-shipyard) GitHub 组织包含有助于发展 Filecoin 生态系统的项目。如果有任何对 Shipyard 应有哪些特色的想法，直接在我们的论坛上发帖，主持人将为你进行设置！
 - **❤️ Filecoin开发津贴。** 我们最近启动了 [Filecoin 开发津贴计划](https://filecoin.io/grants/)！每个季度，我们将向提交有助于开发Filecoin生态系统的工作提案的团体/个人提供津贴。我们已经确定了项目提案的范围和开放津贴的类别。我们的下一个津贴截止日期是9月30日！[请立即申请](https://github.com/filecoin-project/devgrants#-how-to-apply)！
 - **🤝 合作:** 我们非常高兴能够支持一些正在进行的合作。
-- **和以太坊基金会的VDF研究。** 正如我们在[此博客文章](https://filecoin.io/blog/collaboration-on-vdfs/)中宣布的那样，我们正在与以太坊基金会合作，共同研究VDF的硬件加速研究。尽管我们目前在Filecoin对安全性要求高的应用程序中均未使用VDF，但我们将来可能会使用。为了我们和整个行业，我们希望确保VDF易于理解和安全。
-- **Coinlist SNARK 挑战赛。** 正如我们在[这里](https://filecoin.io/blog/announcing-the-snark-challenge/)宣布的那样，我们很荣幸赞助最近结束的Coinlist SNARK挑战赛。挑战赛的总冠军使Groth16 SNARK证明者的速度提高了3.6倍，并已将其解决方案开源（[在此](https://github.com/CodaProtocol/gpu-groth16-prover-3x)处可见）。
-- **斯坦福区块链中心。** 我们很荣幸能成为[斯坦福区块链中心](https://cbr.stanford.edu/sbc19/)的持续合作伙伴，包括作为今年初举行的斯坦福区块链会议的赞助商。
-- 我们已迫不及待能够通过Filecoin Research，Filecoin开发津贴计划和Filecoin Shipyard开始更多的合作！
+  - **和以太坊基金会的VDF研究。** 正如我们在[此博客文章](https://filecoin.io/blog/collaboration-on-vdfs/)中宣布的那样，我们正在与以太坊基金会合作，共同研究VDF的硬件加速研究。尽管我们目前在Filecoin对安全性要求高的应用程序中均未使用VDF，但我们将来可能会使用。为了我们和整个行业，我们希望确保VDF易于理解和安全。
+  - **Coinlist SNARK 挑战赛。** 正如我们在[这里](https://filecoin.io/blog/announcing-the-snark-challenge/)宣布的那样，我们很荣幸赞助最近结束的Coinlist SNARK挑战赛。挑战赛的总冠军使Groth16 SNARK证明者的速度提高了3.6倍，并已将其解决方案开源（[在此](https://github.com/CodaProtocol/gpu-groth16-prover-3x)处可见）。
+  - **斯坦福区块链中心。** 我们很荣幸能成为[斯坦福区块链中心](https://cbr.stanford.edu/sbc19/)的持续合作伙伴，包括作为今年初举行的斯坦福区块链会议的赞助商。
+  - 我们已迫不及待能够通过Filecoin Research，Filecoin开发津贴计划和Filecoin Shipyard开始更多的合作！
 
 ## 7. 政策方面更新
 
@@ -174,18 +168,18 @@ _template: blog_detail_ch
 ## 8. 公共演讲和媒体宣传
 
 - **讲座:** _视频/帖子已链接（如果有）_
-- 2019-02-03. [VDFs and Filecoin](https://www.youtube.com/watch?v=GZZ2G9bPXsM&list=PLaM7G4Llrb7y075mVXGmSABDP9Nb_PsBq) (Jeromy Johnson)
-- 2019-02-09. [Consensus Day 1 Talks](https://www.youtube.com/playlist?list=PLhuBigpl7lqtG6LgQ0FiiR4Pbrph9nocn) (Juan Benet, Henri Stern, Brian Vohaska, Evan Miyazono)
-- 2019-02-12. Filecoin: Open Problems Building Storage-based Consensus Systems (Henri Stern)
-- 2019-07-11. Verifiable Resource Commitments and Hybrid Models for Consensus (Henri Stern)
-- 2019-07-19. [zkSNARKs and the beauty of math](https://www.zeroknowledge.fm/86) (Ariel Gabizon)
-- 2019-08-21. Building Web3 (Juan Benet)
+  - 2019-02-03. [VDFs and Filecoin](https://www.youtube.com/watch?v=GZZ2G9bPXsM&list=PLaM7G4Llrb7y075mVXGmSABDP9Nb_PsBq) (Jeromy Johnson)
+  - 2019-02-09. [Consensus Day 1 Talks](https://www.youtube.com/playlist?list=PLhuBigpl7lqtG6LgQ0FiiR4Pbrph9nocn) (Juan Benet, Henri Stern, Brian Vohaska, Evan Miyazono)
+  - 2019-02-12. Filecoin: Open Problems Building Storage-based Consensus Systems (Henri Stern)
+  - 2019-07-11. Verifiable Resource Commitments and Hybrid Models for Consensus (Henri Stern)
+  - 2019-07-19. [zkSNARKs and the beauty of math](https://www.zeroknowledge.fm/86) (Ariel Gabizon)
+  - 2019-08-21. Building Web3 (Juan Benet)
 - **研究论文:** 在过去的几个月中，我们团队的成员发表并展示了以下论文：
-- Gabizon, A. (2019). AuroraLight: Improved prover efficiency and SRS size in a Sonic-like system. Retrieved from [https://eprint.iacr.org/2019/601.pdf](https://eprint.iacr.org/2019/601.pdf "https://eprint.iacr.org/2019/601.pdf").
-- Gabizon, Ariel, Zachary J Williamson, and Oana Ciobotaru. (2019). “PLONK: Permutations over Lagrange-Bases for Oecumenical Noninteractive Arguments of Knowledge.” Retrieved from [https://eprint.iacr.org/2019/953.pdf](https://eprint.iacr.org/2019/953.pdf "https://eprint.iacr.org/2019/953.pdf").
-- Goldfeder, S., & Nizzardo, L. (2019). Composing hash functions for mining. IEEE Security and Privacy on the Blockchain (IEEE S&B). Stockholm, Sweden.
-- Olivier, B., Kolad, B., Gailly, N., Liochon, N. (2019). Handel: Practical Multi-Signature Aggregation for Large Byzantine Committees. Retrieved from [https://arxiv.org/abs/1906.05132](https://arxiv.org/abs/1906.05132 "https://arxiv.org/abs/1906.05132").
-- Ransil, Alan, and Chhi’mèd Künzang. 2019. “A Dual-Process Approach for Automated Knowledge Creation.” In Metascience 2019, \[poster\]. Stanford, CA, USA.
+  - Gabizon, A. (2019). AuroraLight: Improved prover efficiency and SRS size in a Sonic-like system. Retrieved from [https://eprint.iacr.org/2019/601.pdf](https://eprint.iacr.org/2019/601.pdf "https://eprint.iacr.org/2019/601.pdf").
+  - Gabizon, Ariel, Zachary J Williamson, and Oana Ciobotaru. (2019). “PLONK: Permutations over Lagrange-Bases for Oecumenical Noninteractive Arguments of Knowledge.” Retrieved from [https://eprint.iacr.org/2019/953.pdf](https://eprint.iacr.org/2019/953.pdf "https://eprint.iacr.org/2019/953.pdf").
+  - Goldfeder, S., & Nizzardo, L. (2019). Composing hash functions for mining. IEEE Security and Privacy on the Blockchain (IEEE S&B). Stockholm, Sweden.
+  - Olivier, B., Kolad, B., Gailly, N., Liochon, N. (2019). Handel: Practical Multi-Signature Aggregation for Large Byzantine Committees. Retrieved from [https://arxiv.org/abs/1906.05132](https://arxiv.org/abs/1906.05132 "https://arxiv.org/abs/1906.05132").
+  - Ransil, Alan, and Chhi’mèd Künzang. 2019. “A Dual-Process Approach for Automated Knowledge Creation.” In Metascience 2019, \[poster\]. Stanford, CA, USA.
 
 ## 9. libp2p 对 Filecoin 的更新
 
@@ -209,42 +203,42 @@ Filecoin 建立在IPFS的基础之上，并且在很大程度上依赖于 [IPFS]
 - **举行了第一届IPFS训练营。** 来自 22 个国家/地区的 160 名社区成员于 6 月在巴塞罗那举行了有史以来的首次 IPFS 训练营。内容包括对 IPFS 堆栈重要组成部分的[深入探讨](https://blog.ipfs.tech/2019-08-12-great-calamity-circumvention-assembly-at-ipfs-camp/)和发布会，IPFS 社区中项目的[演讲](https://blog.ipfs.tech/2019-07-22-ipfs-camp-content-first-batch/)，以及向参与者传授 IPFS 工作原理的[讲习班和课程](https://blog.ipfs.tech/2019-09-18-ipfs-camp-course-videos/)。查看[摘要](https://blog.ipfs.tech/2019-07-08-ipfs-camp-recap/)，了解更多信息或去 [YouTube 上观看记录](https://www.youtube.com/channel/UCdjsUXJ3QawK4O5L1kqqsew/featured)！
 - **创建了 ProtoSchool。** [ProtoSchool](https://blog.ipfs.tech/63-ipfs-weekly-25/) 是一个教育计划，通过在线教程和本地分会活动向网络上的用户教授去中心化的网络协议和工具。到目前为止，全球有20多个 ProtoSchool 分会以及一个越来越多的研讨会和工具库。
 - **🛳 生态系统中大量版本上线。**
-- 查看链接以获取新功能摘要和完整的变更日志!
-- **go-ipfs** 有 [4 个版本上线](https://github.com/ipfs/go-ipfs/releases) 包括 [v0.4.19](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.19)、 [v0.4.20](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.20)、 [v0.4.21](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.21)、 和 [v0.4.22](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.22).
-- Go-ipfs 还通过其定期的六周的间隔和广泛的测试来[改进其发布过程](https://blog.ipfs.tech/2019-08-14-ipfs-release-process/) 以确保我们根据需要提供更高保真度的功能和更快的补丁程序。
-- **js-ipfs** 有 [13 个版本](https://github.com/ipfs/js-ipfs/releases), 包括: [v0.35.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.35.0)、 [v0.36.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.36.0)、 [v0.37.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.37.0)。
-- **ipfs-cluster** 有 [4个版本](https://github.com/ipfs/ipfs-cluster/releases/), 包括: [v0.9.0](https://github.com/ipfs/ipfs-cluster/releases/tag/v0.9.0)、 [v0.10.0](https://github.com/ipfs/ipfs-cluster/releases/tag/v0.10.0)、 [v0.11.0](https://github.com/ipfs/ipfs-cluster/releases/tag/v0.11.0)。
-- **ipfs-companion** 有 [28 个版本](https://github.com/ipfs-shipyard/ipfs-companion/releases), 包括: [v2.8.0](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.8.0)、 [v2.8.1](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.8.1)、 [v2.8.2](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.8.2)、 [v2.8.3](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.8.3)、 和 [v2.8.4](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.8.4)。
-- **ipfs-desktop** 有 [7 个版本](https://github.com/ipfs-shipyard/ipfs-desktop/releases), 包括: [v0.7.0](https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.7.0)、 [v0.8.0](https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.8.0)、 [v0.9.0](https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.9.0)。
+  - 查看链接以获取新功能摘要和完整的变更日志!
+  - **go-ipfs** 有 [4 个版本上线](https://github.com/ipfs/go-ipfs/releases) 包括 [v0.4.19](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.19)、 [v0.4.20](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.20)、 [v0.4.21](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.21)、 和 [v0.4.22](https://github.com/ipfs/go-ipfs/releases/tag/v0.4.22).
+  - Go-ipfs 还通过其定期的六周的间隔和广泛的测试来[改进其发布过程](https://blog.ipfs.tech/2019-08-14-ipfs-release-process/) 以确保我们根据需要提供更高保真度的功能和更快的补丁程序。
+  - **js-ipfs** 有 [13 个版本](https://github.com/ipfs/js-ipfs/releases), 包括: [v0.35.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.35.0)、 [v0.36.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.36.0)、 [v0.37.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.37.0)。
+  - **ipfs-cluster** 有 [4个版本](https://github.com/ipfs/ipfs-cluster/releases/), 包括: [v0.9.0](https://github.com/ipfs/ipfs-cluster/releases/tag/v0.9.0)、 [v0.10.0](https://github.com/ipfs/ipfs-cluster/releases/tag/v0.10.0)、 [v0.11.0](https://github.com/ipfs/ipfs-cluster/releases/tag/v0.11.0)。
+  - **ipfs-companion** 有 [28 个版本](https://github.com/ipfs-shipyard/ipfs-companion/releases), 包括: [v2.8.0](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.8.0)、 [v2.8.1](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.8.1)、 [v2.8.2](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.8.2)、 [v2.8.3](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.8.3)、 和 [v2.8.4](https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.8.4)。
+  - **ipfs-desktop** 有 [7 个版本](https://github.com/ipfs-shipyard/ipfs-desktop/releases), 包括: [v0.7.0](https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.7.0)、 [v0.8.0](https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.8.0)、 [v0.9.0](https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.9.0)。
 - **✨ 很棒的功能亮点。**
-- **go-ipfs** 可以进行文件流传输以有效地处理大文件；对bitswap，pubsub，datastore和DHT的性能/可靠性方面的巨大改进；更好的连接管理和内存分配； TLS1.3和OpenSSL支持；和默认情况下以base32编码的v1 CID。还有对CoreAPI的相当重要的重构。
-- **js-ipfs** 大大加快了DAG节点和向IPFS添加了内容的速度（1.5倍！）；委托对等和内容路由； HAMT对MFS的支持； mDNS发现更新；更快的流多路复用； Pubsub消息签名；捆束大小减少50％； DAG HTTP API端点，默认情况下递归DNS链接查找； v1 CID的base32编码。再加上全新的构造函数！
-- 程序包管理工作组发布了许多实验和演示，以调查使用IPFS进行程序包管理的机会和痛点，包括：npm-on-ipfs，apt-on-ipfs和ipfs-npm-republish-以及一些[社区原型和项目](https://github.com/ipfs/package-managers/tree/master/package-managers)。
-- Ipfs-cluster 的 CRDT 共识层取代了 RAFT 实现
-- [Go-graphsync](https://github.com/ipfs/go-graphsync) 是一种新的内容同步协议，可以更快地访问大型目录（如深度嵌套的区块链）中的文件
-- 全新改进的 [IPFS WebUI](https://github.com/ipfs-shipyard/ipfs-webui#ipfs-web-ui) 允许您连接到特定的另一方，查看针脚，移除针脚，添加新针脚，导航到任何 /ipfs/ QmHash 或 /ipns/domain.com 路径，并以前所未有的方式探索 IPFS 世界。
-- 查看[更多](https://ipfs.tech/blog/)!
+  - **go-ipfs** 可以进行文件流传输以有效地处理大文件；对bitswap，pubsub，datastore和DHT的性能/可靠性方面的巨大改进；更好的连接管理和内存分配； TLS1.3和OpenSSL支持；和默认情况下以base32编码的v1 CID。还有对CoreAPI的相当重要的重构。
+  - **js-ipfs** 大大加快了DAG节点和向IPFS添加了内容的速度（1.5倍！）；委托对等和内容路由； HAMT对MFS的支持； mDNS发现更新；更快的流多路复用； Pubsub消息签名；捆束大小减少50％； DAG HTTP API端点，默认情况下递归DNS链接查找； v1 CID的base32编码。再加上全新的构造函数！
+  - 程序包管理工作组发布了许多实验和演示，以调查使用IPFS进行程序包管理的机会和痛点，包括：npm-on-ipfs，apt-on-ipfs和ipfs-npm-republish-以及一些[社区原型和项目](https://github.com/ipfs/package-managers/tree/master/package-managers)。
+  - Ipfs-cluster 的 CRDT 共识层取代了 RAFT 实现
+  - [Go-graphsync](https://github.com/ipfs/go-graphsync) 是一种新的内容同步协议，可以更快地访问大型目录（如深度嵌套的区块链）中的文件
+  - 全新改进的 [IPFS WebUI](https://github.com/ipfs-shipyard/ipfs-webui#ipfs-web-ui) 允许您连接到特定的另一方，查看针脚，移除针脚，添加新针脚，导航到任何 /ipfs/ QmHash 或 /ipns/domain.com 路径，并以前所未有的方式探索 IPFS 世界。
+  - 查看[更多](https://ipfs.tech/blog/)!
 - **🛠 几个很棒的新工具。**
-- [IPFS-deploy](https://github.com/ipfs-shipyard/ipfs-deploy) - 轻松将静态网站部署到 IPFS
-- [IPFS-cohost](https://github.com/olizilla/ipfs-cohost#ipfs-cohost-) - 用于共同托管发布到 IPFS 的网站的工具
-- [Peerpad.net](http://peerpad.net/) - 基于 IPFS 和 peer-base 的协作编辑器！
+  - [IPFS-deploy](https://github.com/ipfs-shipyard/ipfs-deploy) - 轻松将静态网站部署到 IPFS
+  - [IPFS-cohost](https://github.com/olizilla/ipfs-cohost#ipfs-cohost-) - 用于共同托管发布到 IPFS 的网站的工具
+  - [Peerpad.net](http://peerpad.net/) - 基于 IPFS 和 peer-base 的协作编辑器！
 - **🌟 最近的IPFS用户亮点**
-- [Microsoft ION](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Toward-scalable-decentralized-identifier-systems/ba-p/560168) - 在比特币和 IPFS 上运行的基于 Sidetree 的 DID 网络
-- [Subdomain-based Cloudflare Gateway](https://blog.cloudflare.com/continuing-to-improve-our-ipfs-gateway/) - 为 dapps 提供了一个安全的场所，以保持用户数据的不变性
-- [Radicle](https://radicle.xyz/) - 用于代码协作的点对点堆栈
-- [IPSE](https://ipse.io/) - IPFS 网络的搜索引擎
-- [Matters.news](https://matters.news/) - 分布式新闻平台（中文）
-- [Tupelo](https://medium.com/@tobowers/under-the-hood-tupelo-uses-ipld-libp2p-and-it-also-makes-use-of-bitswap-2d8007ba664c) - 基于 IPFS 和 IPLD 构建的 DLT
-- [Peergos](https://peergos.org/) - 私有的端到端加密文件存储平台
+  - [Microsoft ION](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Toward-scalable-decentralized-identifier-systems/ba-p/560168) - 在比特币和 IPFS 上运行的基于 Sidetree 的 DID 网络
+  - [Subdomain-based Cloudflare Gateway](https://blog.cloudflare.com/continuing-to-improve-our-ipfs-gateway/) - 为 dapps 提供了一个安全的场所，以保持用户数据的不变性
+  - [Radicle](https://radicle.xyz/) - 用于代码协作的点对点堆栈
+  - [IPSE](https://ipse.io/) - IPFS 网络的搜索引擎
+  - [Matters.news](https://matters.news/) - 分布式新闻平台（中文）
+  - [Tupelo](https://medium.com/@tobowers/under-the-hood-tupelo-uses-ipld-libp2p-and-it-also-makes-use-of-bitswap-2d8007ba664c) - 基于 IPFS 和 IPLD 构建的 DLT
+  - [Peergos](https://peergos.org/) - 私有的端到端加密文件存储平台
 - **🤝 社区讲座，文章，教程。**
-- [如何使用 IPFS + ENS 托管 Dapp 并通过 EthDNS 访问它](https://medium.com/the-ethereum-name-service/how-to-host-your-dapp-with-ipfs-ens-and-access-it-via-ethdns-c96046059d87) - Ethereum Name Service
-- [持续改进我们的 IPFS 网关](https://blog.cloudflare.com/continuing-to-improve-our-ipfs-gateway/) - Cloudflare
-- [IPFS 对等节点如何在分布式 Web 上彼此识别](https://medium.com/@carsonfarmer/how-ipfs-peer-nodes-identify-each-other-on-the-distributed-web-8b5b6476aa5e) - Textile
-- [我们为 IPFS 集群制作了一个面板，希望大家试用](https://medium.com/towardsblockchain/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908) - Towards Blockchain
-- [使网络能够脱机工作](https://www.youtube.com/watch?list=PLuhRWgmPaHtRdiy0HKNy4UZ4dKVUVL_KG&time_continue=7&v=VllPpxVNH5k) - by Molly Mackinlay
-- [Azure 中的 IPFS](https://learn.microsoft.com/en-us/answers/questions/381556/integrate-azure-blockchain-workbench-with-ipfs) - Block Talk
-- [IPFS 手动教程](https://www.youtube.com/watch?v=KIEq2FyMczs) - Polycode
-- Merkle 树如何赋能去中心化网站！ - by Tara Vancil
+  - [如何使用 IPFS + ENS 托管 Dapp 并通过 EthDNS 访问它](https://medium.com/the-ethereum-name-service/how-to-host-your-dapp-with-ipfs-ens-and-access-it-via-ethdns-c96046059d87) - Ethereum Name Service
+  - [持续改进我们的 IPFS 网关](https://blog.cloudflare.com/continuing-to-improve-our-ipfs-gateway/) - Cloudflare
+  - [IPFS 对等节点如何在分布式 Web 上彼此识别](https://medium.com/@carsonfarmer/how-ipfs-peer-nodes-identify-each-other-on-the-distributed-web-8b5b6476aa5e) - Textile
+  - [我们为 IPFS 集群制作了一个面板，希望大家试用](https://medium.com/towardsblockchain/we-made-a-dashboard-for-ipfs-clusters-and-now-we-want-you-to-check-it-out-a87234629908) - Towards Blockchain
+  - [使网络能够脱机工作](https://www.youtube.com/watch?list=PLuhRWgmPaHtRdiy0HKNy4UZ4dKVUVL_KG&time_continue=7&v=VllPpxVNH5k) - by Molly Mackinlay
+  - [Azure 中的 IPFS](https://learn.microsoft.com/en-us/answers/questions/381556/integrate-azure-blockchain-workbench-with-ipfs) - Block Talk
+  - [IPFS 手动教程](https://www.youtube.com/watch?v=KIEq2FyMczs) - Polycode
+  - Merkle 树如何赋能去中心化网站！ - by Tara Vancil
 
 ## 11. 注意事项
 

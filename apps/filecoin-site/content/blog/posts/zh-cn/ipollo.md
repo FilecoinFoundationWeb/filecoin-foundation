@@ -66,7 +66,7 @@ iPollo启动了带有500个节点的测试链，还通过NDLabs在Filecoin上存
 
 ![](/uploads/architecture.webp)
 
-<img src="/uploads/architecture.webp">
+![](/uploads/architecture.webp)
 
 问题：内容所有权
 

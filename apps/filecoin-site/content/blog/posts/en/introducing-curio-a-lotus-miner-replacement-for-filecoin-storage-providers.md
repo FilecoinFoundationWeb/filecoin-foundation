@@ -48,7 +48,7 @@ Step 2: On your Lotus-Miner machine (regardless of network: dev, calibration, ma
 curio guided-setup
 ```
 
-## How does Curio work
+## How Curio works
 
 At the core of Curio is the Yugabyte database cluster housing the harmony_task table. Every piece of processing work starts as a “discovery” that a task is needed. Attempts to add will have some task-specific unique index to invalidate secondary additions. Then greedy nodes race to claim the task. Nodes incapable of the work are disqualified while those with undesirable characteristics get delayed. Ultimately, the winner of that bidding round tries the work. 
 

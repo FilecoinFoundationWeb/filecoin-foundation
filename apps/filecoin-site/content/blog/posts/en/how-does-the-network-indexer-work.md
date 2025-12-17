@@ -37,7 +37,7 @@ In the post, we will look into how Indexer components interact with each other, 
 
 ## Indexer Interactions
 
-### So, how do these two user types interact with Indexer
+### How do these two user types interact with Indexer
 
 First, a storage deal is made and data is stored by a storage provider. The storage provider will announce that new content is available by publishing the CID of the advertisement record over gossip pubsub, generally relayed by mainnet nodes. Alternatively, it can be sent directly to Indexer via HTTP. Indexer nodes can also relay to each other.
 

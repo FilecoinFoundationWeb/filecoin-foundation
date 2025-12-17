@@ -76,7 +76,6 @@ This applies to each of Filecoin’s core stakeholders, including:
    - 5% of SAFTs tokens vest linearly over 2 Years
    - 15% of SAFTs tokens vest linearly over 1 Years
    - 22% of SAFTs tokens vest linearly over 6 Months
-
 3. **Filecoin Foundation**. The Filecoin Foundation’s 100M FIL vest linearly over 6 years, beginning at network launch.
 4. **Protocol Labs**. Protocol Labs’s 300M FIL vest linearly over 6 years, beginning at network launch. When Protocol Labs encourages ecosystem development through grants with important collaborators, those also typically vest over 6 years
 
@@ -114,7 +113,7 @@ Making Web3 mainstream requires the efforts of all ecosystem participants. The i
 
 ---
 
-## _Addendum: Mechanical Definitions of Circulating Supply_
+## Addendum: Mechanical Definitions of Circulating Supply
 
 The blog post above details some of the mechanisms to model circulating supply. This addendum outlines two different mechanical calculations of circulating supply used in PL’s APIs.
 

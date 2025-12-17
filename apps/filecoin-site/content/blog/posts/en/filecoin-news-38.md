@@ -23,13 +23,13 @@ title: Filecoin News 38
 
 ## Announcements
 
-<a href="https://green.filecoin.io/" aria-label="Go to Filecoin Green's website"><img src="/uploads/filecoingreen.webp" style="width:40%;margin-left:0%" alt=""></a>
+[![](/uploads/filecoingreen.webp)](https://green.filecoin.io/)
 
 ### The Filecoin Green Website is Live
 
 The Filecoin community is happy to introduce the new dedicated [website](https://green.filecoin.io/) for Filecoin Green. Filecoin Green aims to measure the environmental impacts of Filecoin and verifiably drive them below zero, building infrastructure along the way that allows anyone to make transparent and substantive environmental claims. The new website will keep you updated with blog posts and events as well as the latest developments towards the goal of making Filecoin carbon neutral with other tools such as the [Purchases Repo](https://github.com/redransil/filecoin-renewables-purchases). Stay in the loop and follow Filecoin Green on its official [Twitter](https://twitter.com/filecoingreen) account.
 
-<a href="https://hedera.com/users/hashaxis" aria-label="Go to Hashaxis' website"><img src="/uploads/hashaxis.webp" style="width:40%;margin-left:0%" alt=""></a>
+[![](/uploads/hashaxis.webp)](https://hedera.com/users/hashaxis)
 
 ### Hedera Introduces HashAxis Using Filecoin to Store NFTs
 
@@ -37,19 +37,19 @@ The Filecoin community is happy to introduce the new dedicated [website](https:/
 
 ## Community
 
-<a href="https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/" aria-label="Read 'A Deep Dive into the Storage Provider Ecosystem'  post"><img src="/uploads/a-deep-dive-into-the-storage-provider-ecosystem_hu5c8687c64948c597d44162d7e4a6775d_1678699_2000x0_resize_q90_linear_2.webp" style="width:40%;margin-left:0%" alt=""></a>
+[![](/uploads/a-deep-dive-into-the-storage-provider-ecosystem_hu5c8687c64948c597d44162d7e4a6775d_1678699_2000x0_resize_q90_linear_2.webp)](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/)
 
 ### A Deep Dive into the Storage Provider Ecosystem
 
 The Filecoin Network is supported by an expanding ecosystem of Storage Providers who currently provide over 15 EiB in committed capacity. Spreading across the globe, it consists of small and individual setups as well as large and enterprise-focused participants. If you’d like to learn more about this community and all the tools to get you started as a storage provider, be sure to check out an [in-depth exploration](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/) on the Filecoin blog.
 
-<a href="https://filecoin.io/blog/posts/cdns-and-the-filecoin-retrieval-market/" aria-label="Read 'CDNs and the Filecoin Retrieval Market' post"><img src="/uploads/filecoin-retrieval-market.webp" style="width:40%;margin-left:0%" alt=""></a>
+[![](/uploads/filecoin-retrieval-market.webp)](https://filecoin.io/blog/posts/cdns-and-the-filecoin-retrieval-market/)
 
 ### Myel, CDNs, and the Filecoin Retrieval Market
 
 Content Delivery Networks are an essential part of providing internet users with better access to content. However, they have serious limitations in terms of security, costs, and geographical reach. A new generation of CDNs is resorting to Filecoin to provide more efficient and decentralized alternatives to these services. [Read more](https://filecoin.io/blog/posts/cdns-and-the-filecoin-retrieval-market/) on what projects like Myel are doing to allow anyone to easily set up a point-of-presence (POP) for decentralized CDNs.
 
-<a href="https://twitter.com/nftport_xyz/status/1503405455489617929" aria-label="View Tweet from NFTPort"><img src="/uploads/nftport.webp" style="width:40%;margin-left:0%" alt=""></a>
+[![](/uploads/nftport.webp)](https://twitter.com/nftport_xyz/status/1503405455489617929)
 
 ### NFTPort’s Growth on Filecoin and IPFS
 
@@ -61,13 +61,13 @@ Developers are turning to [NFTPort](https://www.nftport.xyz/) as their go-to sol
 
 ## Events
 
-<a href="https://twitter.com/Filecoin/status/1503513475997478913" aria-label="View Tweet from Filecoin"><img src="/uploads/fn2m9vhx0agj2uw.webp" style="width:40%;margin-left:0%" alt=""></a>
+[![](/uploads/fn2m9vhx0agj2uw.webp)](https://twitter.com/Filecoin/status/1503513475997478913)
 
 ### SXSW Filecoin Community Recap
 
 And that’s a wrap on the Filecoin community events at SXSW! Over five days, we hosted two NFT House events, one Sustainable Blockchain Summit, and two Web3 Hacker House days. Thank you to the hundreds of people who came out to support the Filecoin, IPFS, and NFT.Storage ecosystems, and also to the amazing speakers who all made this week a major success. Stay tuned for a full SXSW recap on the [Filecoin twitter handle](https://twitter.com/Filecoin).
 
-<a href="https://twitter.com/Filecoin" aria-label="Go to Filecoin's Twitter page"><img src="/uploads/twitterspaces.webp" style="width:40%;margin-left:0%" alt=""></a>
+[![](/uploads/twitterspaces.webp)](https://twitter.com/Filecoin)
 
 ### Building a Career in Web3 Twitter Space
 
@@ -77,21 +77,21 @@ Join cryptographers, developers, project managers and more from Protocol Labs, t
 
 Join the Filecoin Foundation on June 8th in Austin, TX for FIL Austin, an in-person summit for the Filecoin Community. This one-day, two-track event at the Coppertank Events Center will convene the Filecoin ecosystem in real life. Join as builders, developers, and partners from across the ecosystem gather for workshops, panels, and networking devoted to building and expanding the Filecoin network. FIL Austin will be hosted in the heart of the city the day before CoinDesk’s Consensus – the crypto industry’s annual “big tent” event. More details will be released soon. Subscribe to the FF email list or join the FIL Austin [Telegram group](https://t.me/filaustin) for updates. See you there!
 
-<h2 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Hackathons</b></h2>
+## Hackathons
 
-<img src="/uploads/screen-shot-2022-03-15-at-5-45-53-pm.webp" style="width:40%;margin-left:0%" alt="">
+![](/uploads/screen-shot-2022-03-15-at-5-45-53-pm.webp)
 
 ### BuildQuest: Metaverse and Gaming Hackathon
 
 BuildQuest is almost over. The 12-day game jam and metaverse hackathon started on March 4th and allowed participants to receive mentorship and support from the best companies and mentors in the space. They also had a shot at winning one of over $100k in prizes available.
 
-<a href="https://www.ethdenver.com/" aria-label="Go to ETHDenver's website"><img src="/uploads/eth.webp" style="width:40%;margin-left:0%" alt=""></a>
+[![](/uploads/eth.webp)](https://www.ethdenver.com/)
 
 ### ETHDenver Virtual Hackathon
 
 ETHDenver IRL saw some incredible building on IPFS & Filecoin with 50 submissions! However hacking is still ongoing and bounties worth $12500 are still up for grabs! There’s still three weeks to refine and submit your project to the virtual prize pool by Mar 20th. [Details here!](https://www.ethdenver.com/) If you have questions or want to learn more, join us in the IPFS/Filecoin channel on [SPORKDAO discord](https://discord.com/invite/sporkdao) server.
 
-<a href="https://ethernals.devfolio.co/" aria-label="Go to ETHernals' website"><img src="/uploads/fmnnc3uakaqtu-b.webp" style="width:40%;margin-left:0%" alt=""></a>
+[![](/uploads/fmnnc3uakaqtu-b.webp)](https://ethernals.devfolio.co/)
 
 ### ETHernals Hackathon
 

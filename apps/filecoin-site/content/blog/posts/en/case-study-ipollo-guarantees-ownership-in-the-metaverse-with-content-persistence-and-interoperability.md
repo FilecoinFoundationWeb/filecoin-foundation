@@ -33,13 +33,9 @@ _template: blog_detail
 
 Metaverse infrastructure, edge computing.
 
----
-
 ### Use case
 
 Storage for large scale 3D rendering including NFT metadata for avatars, spaces, and user-generated content.
-
----
 
 ### Challenges
 
@@ -49,19 +45,13 @@ Storing 3D data on a system that provides true content ownership via:
 - Interoperability
 - Large storage space
 
----
-
 ### Solution
 
 Store the network’s 3D content on a decentralized storage solution that offloads storage needs from its platform and enables easy updating of metadata while leaving on-chain data unchanged.
 
----
-
 ### Results
 
 iPollo launched testnet with over 500 nodes and stored over 4 PiB of files on Filecoin via NDLabs.
-
----
 
 ## Overview
 
@@ -72,8 +62,6 @@ The team has developed unique technologies that support the rendering of tens of
 ### The platform’s stack operates at four different layers
 
 ![](/uploads/architecture.webp)
-
-<img src="/uploads/architecture.webp">
 
 Problem: Content Ownership
 

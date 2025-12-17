@@ -269,7 +269,7 @@ A full list of [all 177 PRs in this release](https://github.com/search?q=is%3Apr
 - [@zixuanzh](https://github.com/zixuanzh) (4 comments)
 - [@zjoooooo](https://github.com/zjoooooo) (1 issue, 1 comment)
 
-## 🙌🏽 Want to contribute
+## 🙌🏽 Contribute
 
 Would you like to contribute to the Filecoin project and don’t know how? Here are a few places you can get started:
 
@@ -277,6 +277,6 @@ Would you like to contribute to the Filecoin project and don’t know how? Here 
 - Look for issues with the `good-first-issue` label in [go-filecoin](https://github.com/filecoin-project/go-filecoin/issues?q=is%3Aissue+is%3Aopen+label%3A "good+first+issue") and [rust-fil-proofs](https://github.com/filecoin-project/rust-fil-proofs/issues?q=is%3Aissue+is%3Aopen+label%3A "good+first+issue")
 - Join the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat), introduce yourself in #\_fil-lobby, and let us know where you would like to contribute
 
-## ⁉️ Do you have questions
+## ⁉️ Questions
 
 The best place to ask your questions about go-filecoin, how it works, and what you can do with it is at [discuss.filecoin.io](https://discuss.filecoin.io/). We are also available at the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat).

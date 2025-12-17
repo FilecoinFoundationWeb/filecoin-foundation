@@ -56,4 +56,4 @@ _template: blog_detail_ch
 
 另外，更重要的是，我们一直寻找新想法来帮助我们推进研究。若您有兴趣做为合作者、研究者或开发者与我们一起从事SNARK研究，请联系[team@filecoin.io](mailto:team@filecoin.io)。
 
-## [注册参与SNARK挑战赛 »](https://coinlist.co/build/coda)
+[注册参与SNARK挑战赛 »](https://coinlist.co/build/coda)

@@ -25,27 +25,9 @@ title: Filecoin 2018 Q1 & Q2 update
 _template: blog_detail
 ---
 
-## 0. Table of Contents
-
-1. Filecoin Development Update
-   1. Demos of go-filecoin
-   2. Codebase opening up
-
-2. Filecoin Research Update
-3. Filecoin Project Roadmap
-   1. Optimistic Timeline
-   2. Where are we
-   3. Upcoming Milestones
-
-4. Filecoin Public Talks & Media
-5. libp2p update for Filecoin
-6. IPFS update for Filecoin
-7. Changes to the blog and to our updates
-8. Cautionary Notes
-
 ## 1. Filecoin Development Update
 
-Let’s not bury the lede. The most exciting thing going on right now in the Filecoin Project is building the first protocol implementation: **go-filecoin**. We have been hard at work on this for many months, and are thrilled to have reached a point where:
+Let’s not bury the lead. The most exciting thing going on right now in the Filecoin Project is building the first protocol implementation: **go-filecoin**. We have been hard at work on this for many months, and are thrilled to have reached a point where:
 
 - (1) the blockchain data structures are implemented (structured as [IPLD](https://ipld.io/))
 - (2) the nodes can establish secure connections to each other ([libp2p](https://libp2p.io/))
@@ -79,7 +61,7 @@ This demo introduces tools that are used in other demos. It boots up a local tes
 
 ### Demo 2: Network Vis & Block Explorer
 
-#### In this demo, we can see a real-time visualization of all the activity in a local test network and its nodes, and a block explorer. We see the following actions
+In this demo, we can see a real-time visualization of all the activity in a local test network and its nodes, and a block explorer. We see the following actions
 
 - blocks being mined, propagated, and added to the chain
 - the network achieving consensus
@@ -269,7 +251,7 @@ We are making some changes to our blog and our updates. In our [last update](htt
 
 ## 8. Cautionary Notes
 
-Miner Caution: We have noticed a number of companies making and selling "Filecoin Mining Machines" or "Filecoin Mining Hardware". Please note: we have not released official specifications for mining hardware yet, so these systems may turn out to be suboptimal or unnecessarily complex. Once we have a clear idea of optimal constructions for Network Launch, we will publish concrete specifications of system requirements, trade-offs to consider, and hardware recommendations. We recommend holding off on buying Filecoin-specific hardware until we publish those specifications
+**Miner Caution:** We have noticed a number of companies making and selling "Filecoin Mining Machines" or "Filecoin Mining Hardware". Please note: we have not released official specifications for mining hardware yet, so these systems may turn out to be suboptimal or unnecessarily complex. Once we have a clear idea of optimal constructions for Network Launch, we will publish concrete specifications of system requirements, trade-offs to consider, and hardware recommendations. We recommend holding off on buying Filecoin-specific hardware until we publish those specifications
 
 _What is holding back mining hardware specifications?_ We aim to have as broad compatibility and as minimal system requirements as we can. We want existing storage systems to be able to be near-optimal Filecoin miners with minimal modification (ideally zero). Recent improvements to core components like _Proof-of-Replication_ (which currently require SNARKs) have drastically reduced overheads and improved tradeoffs for such systems, and we may have more improvements like that in the short term
 
