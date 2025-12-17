@@ -24,9 +24,7 @@ _template: blog_detail
 
 The Filecoin ecosystem is excited to announce that with today’s release of [Brave browser 1.40](http://brave.com/download), the wallet feature now supports FIL, the token for Filecoin, the storage layer of Web3. [Brave](http://brave.com/)’s 56+ million users can now use FIL natively in the browser’s wallet, easing access and usage of Filecoin.
 
-<div style="max-width:320px; margin:auto;">
-<img alt="Filecoin x Brave Wallet UI" src="/uploads/fil-brave.webp" />
-</div>
+![Filecoin x Brave Wallet UI](/uploads/fil-brave.webp)
 
 Brave added the native wallet to the browser in late 2021 with support for EVM compatible blockchains and L2s, with an open source license to enable community participation in the development. Filecoin support means users can create and manage FIL wallet accounts, and send and receive Filecoin directly in the browser. The feature also works with the Ledger hardware wallet, with the ability to import FIL accounts from the device.
 

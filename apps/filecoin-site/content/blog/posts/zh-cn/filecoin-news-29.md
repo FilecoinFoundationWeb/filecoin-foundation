@@ -27,8 +27,6 @@ _template: blog_detail_ch
 
 ![](/uploads/filecoin-news-29.webp)
 
-<h2 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>欢迎来到Filecoin News特辑！</b></h2>
-
 ## Filecoin Orbit活动
 
 2020年10月15日，备受期待的Filecoin主网上线了，从那时起Filecoin网络已经运行一整年了。真的难以置信！在这一年间，Filecoin有了很多显著的进展，巩固了其作为去中心化web3技术栈重要组成部位的地位。
@@ -39,15 +37,13 @@ _template: blog_detail_ch
 
 <a href="https://orbit.filecoin.io/">马上注册</a>并在推特上关注标签<a href="https://twitter.com/search?q=%23FilecoinOrbit&src=typeahead_click">#FilecoinOrbit</a>!
 
-<br>
-
 ## 🗓 每日的Orbit活动
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>10月19日周二</b></h3>
+### 10月19日周二
+
+#### Filecoin主网周年云峰会
 
 <a href="https://mp.weixin.qq.com/s/1Ft1z6MBI5bAt3ic2XUDZA"><img src="/uploads/filecoin-mainnet-anniversary-cloud-summit.webp" style="width:40%;margin-left:0%"></a>
-
-## Filecoin主网周年云峰会
 
 5:00 PM PDT
 
@@ -55,11 +51,11 @@ _template: blog_detail_ch
 
 <a href="https://mp.weixin.qq.com/s/1Ft1z6MBI5bAt3ic2XUDZA/">马上注册！ ↗</a>
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>10月20日周三～10月22日周五</b></h3>
+### 10月20日周三～10月22日周五
+
+#### 「 矩阵存储 X 雅典娜云池 」- 存储为本，回归初心，再筑辉煌 暨庆祝主网上线1⃣️周年活动
 
 <a href="https://mp.weixin.qq.com/s/8ulDhvgQrgRQIqIY8UBd_w"><img src="/uploads/unnamed-2.webp" style="width:40%;margin-left:0%"></a>
-
-## 「 矩阵存储 X 雅典娜云池 」- 存储为本，回归初心，再筑辉煌 暨庆祝主网上线1⃣️周年活动
 
 「 知识传递 」
 
@@ -81,11 +77,11 @@ _template: blog_detail_ch
 
 <a href="https://mp.weixin.qq.com/s/1Ft1z6MBI5bAt3ic2XUDZA/">马上注册！ ↗</a>
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>10月20日周三</b></h3>
+### 10月20日周三
+
+#### Filecoin一周年纪念
 
 <a href="https://ipfsjapan.org/filecoin-1th-anniversary/"><img src="/uploads/filecoin1st.webp" style="width:40%;margin-left:0%"></a>
-
-## Filecoin一周年纪念
 
 4:00 AM PDT
 
@@ -93,9 +89,9 @@ _template: blog_detail_ch
 
 <a href="https://ipfsjapan.org/filecoin-1th-anniversary/">马上注册！ ↗</a>
 
-<a href="https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407"><img src="/uploads/orbit-lounge-dc.webp" style="width:40%;margin-left:0%"></a>
+#### DC金融科技周Filecoin Orbit Lounge
 
-## DC金融科技周Filecoin Orbit Lounge
+<a href="https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407"><img src="/uploads/orbit-lounge-dc.webp" style="width:40%;margin-left:0%"></a>
 
 6:30 AM PDT
 
@@ -103,9 +99,9 @@ _template: blog_detail_ch
 
 <a href="https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407">马上注册！ ↗</a>
 
-<a href="https://airtable.com/shrF17ZAW1c50lQlm"><img src="/uploads/building-filecoin-yield.webp" style="width:40%;margin-left:0%"></a>
+#### 建造Filecoin收益率曲线
 
-## 建造Filecoin收益率曲线
+<a href="https://airtable.com/shrF17ZAW1c50lQlm"><img src="/uploads/building-filecoin-yield.webp" style="width:40%;margin-left:0%"></a>
 
 8:00 AM PDT
 
@@ -113,7 +109,7 @@ _template: blog_detail_ch
 
 <a href="https://airtable.com/shrF17ZAW1c50lQlm">马上注册！ ↗</a>
 
-## Filecoin Orbit社区活动：东欧和东南欧
+#### Filecoin Orbit社区活动：东欧和东南欧
 
 8:00 AM PDT
 
@@ -121,7 +117,7 @@ _template: blog_detail_ch
 
 <a href="https://orbit.filecoin.io/"><img src="/uploads/day-2_-enter-the-metaverse-anniversary-of-filecoin-mainnet-launch.webp" style="width:40%;margin-left:0%"></a>
 
-## 加入元宇宙－Filecoin主网上线周年庆祝
+#### 加入元宇宙－Filecoin主网上线周年庆祝
 
 12:00 PM PDT
 
@@ -129,19 +125,19 @@ _template: blog_detail_ch
 
 <a href="https://orbit.filecoin.io/">马上注册！ ↗</a>
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>10月21日周四</b></h3>
+### 10月21日周四
 
-## 欢迎来到Filecoin：Orbit
+#### 欢迎来到Filecoin：Orbit
 
 10:00 AM PDT
 
-<b>欢迎来到Filecoin：Orbit，这是一个为期两天的虚拟会议，用于庆祝首年的精彩旅程。Filecoin的开发者和用户生态系统有了很大的增长，而去中心化存储的新用例也在吸引主流关注和采用。社区很高兴能分享它们在建设的东西以及生态系统未来的发展方向的相关信息。</b>
+**欢迎来到Filecoin：Orbit，这是一个为期两天的虚拟会议，用于庆祝首年的精彩旅程。Filecoin的开发者和用户生态系统有了很大的增长，而去中心化存储的新用例也在吸引主流关注和采用。社区很高兴能分享它们在建设的东西以及生态系统未来的发展方向的相关信息。**
 
 <a href="https://orbit.filecoin.io/">马上注册！ ↗</a>
 
-<a href="https://orbit.filecoin.io/"><img src="/uploads/unpacking-decentralized.webp" style="width:40%;margin-left:0%"></a>
+#### BAF：解构去中心化存储
 
-## BAF：解构去中心化存储
+<a href="https://orbit.filecoin.io/"><img src="/uploads/unpacking-decentralized.webp" style="width:40%;margin-left:0%"></a>
 
 4:00 PM PDT
 
@@ -149,9 +145,9 @@ _template: blog_detail_ch
 
 <a href="https://orbit.filecoin.io/">马上注册！ ↗</a>
 
-<a href="https://orbit.filecoin.io/"><img src="/uploads/filecoin-what-it-is.webp" style="width:40%;margin-left:0%"></a>
+#### Filecoin是什么，如何利用
 
-## Filecoin是什么，如何利用
+<a href="https://orbit.filecoin.io/"><img src="/uploads/filecoin-what-it-is.webp" style="width:40%;margin-left:0%"></a>
 
 6:00 PM PDT
 
@@ -159,11 +155,11 @@ _template: blog_detail_ch
 
 <a href="https://orbit.filecoin.io/">马上注册！ ↗</a>
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>10月22日周五</b></h3>
+### 10月22日周五
+
+#### Filecoin生日快乐
 
 <a href="https://www.eventbrite.it/e/biglietti-happy-birthday-filecoin-179504782637"><img src="/uploads/happy-birthday-filecoin.webp" style="width:40%;margin-left:0%"></a>
-
-## Filecoin生日快乐
 
 1:45 AM PDT
 
@@ -171,7 +167,7 @@ _template: blog_detail_ch
 
 <a href="https://www.eventbrite.it/e/biglietti-happy-birthday-filecoin-179504782637">马上注册！ ↗</a>
 
-## Filecoin阿姆斯特丹见面会2021
+#### Filecoin阿姆斯特丹见面会2021
 
 2:00 AM PDT
 
@@ -179,7 +175,7 @@ _template: blog_detail_ch
 
 <a href="https://www.meetup.com/Munich-IPFS-User-Group/events/281442935//"><img src="/uploads/october-ipfs-filecoin-orbit-meetup.webp" style="width:40%;margin-left:0%"></a>
 
-## 十月IPFS + Filecoin Orbit见面会
+#### 十月IPFS + Filecoin Orbit见面会
 
 5:30 AM PDT
 
@@ -187,21 +183,21 @@ _template: blog_detail_ch
 
 <a href="https://www.meetup.com/Munich-IPFS-User-Group/events/281442935/">马上注册！ ↗</a>
 
-<a href="https://orbit.filecoin.io/"><img src="/uploads/welcome-to-filecoin_-orbit.webp" style="width:40%;margin-left:0%"></a>
+#### 欢迎来到Filecoin Orbit的第2天
 
-## 欢迎来到Filecoin Orbit的第2天
+<a href="https://orbit.filecoin.io/"><img src="/uploads/welcome-to-filecoin_-orbit.webp" style="width:40%;margin-left:0%"></a>
 
 10:00 AM PDT
 
-<b>欢迎回到Filecoin: Orbit，这是一个为期两天的线上会议，旨在庆祝Filecoin主网上线的一周年。</b>
+**欢迎回到Filecoin: Orbit，这是一个为期两天的线上会议，旨在庆祝Filecoin主网上线的一周年。**
 
 <a href="https://orbit.filecoin.io/">马上注册！ ↗</a>
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>10月23日周六</b></h3>
+### 10月23日周六
+
+#### Web3 Metaverse Traverse
 
 <a href="https://www.eventbrite.com/e/traverse-the-filecoin-orbit-tickets-189575855487"><img src="/uploads/web3-metaverse-traverse-filecoin-orbit.webp" style="width:40%;margin-left:0%"></a>
-
-## Web3 Metaverse Traverse
 
 2:00 AM PDT
 
@@ -209,17 +205,15 @@ _template: blog_detail_ch
 
 <a href="https://www.eventbrite.com/e/traverse-the-filecoin-orbit-tickets-189575855487/">马上注册！ ↗</a>
 
-<a href="https://gdg.community.dev/events/details/google-gdg-warri-presents-filecoin-orbit-events-2021-warri-nigeria/"><img src="/uploads/filecoin-orbit-event-2021-warri.webp" style="width:40%;margin-left:0%"></a>
+#### Filecoin Orbit Event 2021 Warri
 
-## Filecoin Orbit Event 2021 Warri
+<a href="https://gdg.community.dev/events/details/google-gdg-warri-presents-filecoin-orbit-events-2021-warri-nigeria/"><img src="/uploads/filecoin-orbit-event-2021-warri.webp" style="width:40%;margin-left:0%"></a>
 
 3:00 AM PDT
 
 加入Filecoin非洲社区，庆祝Filecoin主网上线的一周年。
 
 <a href="https://gdg.community.dev/events/details/google-gdg-warri-presents-filecoin-orbit-events-2021-warri-nigeria/">马上注册！ ↗</a>
-
-<h2 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h2>
 
 ## ✊ 快来参与
 

@@ -41,8 +41,6 @@ Filecoin的启动激发区块链开发者对Web3和Web2之间的关系产生了�
 
 今天一天开发者们都在讨论他们正在创建和使用的工具，以快速跟踪Filecoin生态的发展。Joe Lubi提到了MetaMask Snaps，其推出了一个可将其他协议与MetaMask连接的API的最新功能。MetaMask团队计划很快推出[Filecoin Snap](https://www.youtube.com/watch?v=kaI41Rz7Fhw&feature=youtu.be&t=3345)。Lubin还提到Codefi Activate的Filecoin存储Web应用程序和API，可使在Filecoin网络上寻求存储的价格更为简单和透明。 Infura高级工程师Tim Myers介绍了[Infura的Filecoin系统](http://infura.io/)API，可使开发者们更轻松地加入网络。 Jordan Ellis使用Web3API给观众们做了演示。 Artefactual Systems的Peter Vangarderen谈到了[Pygate](https://pygate.tech/)以及还有更多内容。总体而言，越来越明确的是：开发者将发现越来越多可让他们在Filecoin上进行创建的工具和支持。
 
-<div style="text-align: center;">🚀🚀🚀</div>
-
 ## 加入主网启动周
 
 本周是Filecoin启动周，将有为期五天的讲座、小组讨论、研讨会、演示和社区活动。 10月19日至23日，当我们庆祝Filecoin启动之际，来自Web3生态的各个领导者发表了自己的观点以及为未来的持续发展作出了计划。[注册并加入我们！](https://liftoff.filecoin.io/)

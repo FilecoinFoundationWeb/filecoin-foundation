@@ -32,29 +32,24 @@ NFT creators building on the Flow blockchain can create immutable NFT metadata w
 
 A Flow developer has written [a great tutorial](https://medium.com/@qq976739120/how-to-create-an-nft-with-flow-and-nft-storage-1ccce45797b0) on how to get started minting Flow NFTs with metadata hosted on IPFS and Filecoin.
 
-<div style="margin-top: 4em; margin-right: 10%; margin-bottom: 4em; margin-left: 10%; padding: 2em; background-color:#f2f2f2;">
+![](/uploads/eternal-header.webp)
 
-<img style="margin-top: 0; margin-left: 0; width: 100%" src="/uploads/eternal-header.webp">
+### Spotlight on Eternal.gg
 
-<h4 style="margin-bottom: 2em; text-align:center; font-size: 1.25em; line-height: 1.3">Spotlight on Eternal.gg:<br>An example of a project on Flow using IPFS and Filecoin</h4>
+An example of a project on Flow using IPFS and Filecoin
 
-<p style="font-size: 1em; line-height: 1.3"><b>Eternal.gg has been using IPFS to create immutable links between their minted video NFTs and the associated metadata, and is in the process of backing up their content to Filecoin.</b></p>
+**Eternal.gg has been using IPFS to create immutable links between their minted video NFTs and the associated metadata, and is in the process of backing up their content to Filecoin.**
 
-<ul>
+- IPFS allows content to be referenced based on a fingerprint of the content itself. By embedding this reference inside the metadata of an NFT on-chain, an immutable link can be made between a token on the Flow blockchain and the video NFT itself.
 
-<li style="font-size: 1em; line-height: 1.3">IPFS allows content to be referenced based on a fingerprint of the content itself. By embedding this reference inside the metadata of an NFT on-chain, an immutable link can be made between a token on the Flow blockchain and the video NFT itself.</li>
+- Using **NFT.Storage**, the content can be pinned via IPFS and stored across a distributed network of storage providers on Filecoin. Storage providers on Filecoin submit cryptographic proofs to show that content is still intact and being made available.
 
-<li style="font-size: 1em; line-height: 1.3">Using <b>NFT.Storage</b>, the content can be pinned via IPFS and stored across a distributed network of storage providers on Filecoin. Storage providers on Filecoin submit cryptographic proofs to show that content is still intact and being made available.</li>
+In their first 3 months, the Eternal team has minted and sold **more than 60,000 moments** for more than 20 top creators on Twitch.
 
-</ul>
+![](/uploads/eternal-nft-examples-strip.gif)
 
-<p style="font-size: 1em; line-height: 1.3">In their first 3 months, the Eternal team has minted and sold <b>more than 60,000 moments</b> for more than 20 top creators on Twitch.</p>
-
-<img style="margin-left: 0; width: 100%" src="/uploads/eternal-nft-examples-strip.gif">
-
-<p style="font-size: 1em; line-height: 1.35; color: #595959"><em><b>About Eternal.gg</b><br> _Eternal.gg is a platform enabling streamers and esports players to monetize their epic livestream moments. Community members can purchase packs of moments, and trade moments with other fans to help both energize the fan experience, and strengthen the relationship between creators and their fans. Eternal elected to launch on the Flow blockchain due to its low gas costs and high throughput._ </em></p>
-
-</div>
+- **About Eternal.gg**  
+  _Eternal.gg is a platform enabling streamers and esports players to monetize their epic livestream moments. Community members can purchase packs of moments, and trade moments with other fans to help both energize the fan experience and strengthen the relationship between creators and their fans. Eternal elected to launch on the Flow blockchain due to its low gas costs and high throughput._
 
 To jumpstart the collaboration, there will be grants available for the Flow ecosystem, starting with the Next Step Microgrant Program.
 
@@ -66,7 +61,7 @@ Grant-funded projects will also have the opportunity to join future acceleration
 
 In addition, stay tuned for information about a Filecoin x Flow hackathon related to this exciting collaboration!
 
-### Additional Resources
+## Additional Resources
 
 - [How to Create an NFT with Flow and NFT.Storage](https://medium.com/@qq976739120/how-to-create-an-nft-with-flow-and-nft-storage-1ccce45797b0)
 - [Free Storage with NFT.Storage](https://nft.storage/)

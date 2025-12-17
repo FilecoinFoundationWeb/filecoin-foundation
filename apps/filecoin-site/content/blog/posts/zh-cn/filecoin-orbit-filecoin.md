@@ -40,19 +40,15 @@ Filecoin主网在2020年10月15日上线后，启动了分布式存储的新纪�
 
 请继续阅读Filecoin生态在第一年的精彩成绩！
 
-<p>&nbsp</p>
-
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">研究 & 开发</h2>
+## 研究 & 开发
 
 在过去一年，Filecoin协议和网络有了重大的进展，这包括了超过8次协调网络升级，整合了13次Filecoin改进提议（FIPs），并在主网上实施了两个实现（Venus和Forest）。
 
 自从主网启动后，Filecoin在存储提供者的稳健性、易用性、链的容量和带宽等方面做出了重大的升级，将每日的容量增加速率提升了一倍。
 
-<p> </p>
-
 ![](/uploads/hyperdrive-1.webp)
 
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">Hyperdrive升级</h2>
+## Hyperdrive升级
 
 在2021年6月，仅仅是在主网发布后的8个月,Filecoin v13 ‘HyperDrive’ 网络升级在存储增加能力上就带来了10-25倍的提升。Filecoin作为首个主要的L1层链就实现了显著的链带宽增长。从那以后，每日存储容量增长率翻倍到超过60PiB/日，预计到2021年末网络容量会达到 \~20EiB .
 
@@ -60,9 +56,7 @@ Filecoin主网在2020年10月15日上线后，启动了分布式存储的新纪�
 
 从2020年12月到2021年4月，CryptoNetLab和CyptoComputeLab设计和实施了[SnarkPack](https://research.protocol.ai/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/)，这是一个通过聚合来扩展SNARK证明的新型策略，带来了可扩展性的提升，并缓和了网络堵塞的问题。 SnarkPack在[改进提议FIP13](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0013.md)里实施，为Filecoin网络带来了10-25倍的链容量扩展。
 
-<p>&nbsp</p>
-
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">检索市场（Retrieval Markets）</h2>
+## 检索市场（Retrieval Markets）
 
 检索市场是Filecoin之上搭建的最激动人心的平台之一，因为它以去中心化方式提供了类似CDN网络的体验，在上面人们可以一起提供为终端用户提供带宽和地理位置。
 
@@ -72,13 +66,11 @@ Filecoin主网在2020年10月15日上线后，启动了分布式存储的新纪�
 
 现在，有几个团队正搭建检索市场解决方案的不同实现方法。你可以每两周在[检索市场演示日——Retrieval Markets Demo Days](https://docs.google.com/document/d/1IrNbBm2_P79Xi2fXFj9YUfQ0PjWjreGdPYFjFntD1QM/edit#heading=h.akao8aspby4f)查看他们的进展。
 
-<p>&nbsp</p>
-
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">Filecoin实现方案</h2>
+## Filecoin实现方案
 
 ![](/uploads/lotus-2.webp)
 
-<h3 style="font-size: 26px; line-height: 30px; margin-top: 0;">Lotus</h3>
+### Lotus
 
 Lotus是Filecoin的首个替代实现方案，[它在2019年发布](https://filecoin.io/blog/posts/announcing-lotus-our-first-alternate-filecoin-implementation/)，差不多早于主网上线一年时间。在去年，[Filecoin Lotus实现方案](https://github.com/filecoin-project/lotus)有了明显的改进。
 
@@ -88,17 +80,13 @@ Lotus是Filecoin的首个替代实现方案，[它在2019年发布](https://file
 
 Lotus还支持了20多个FIP改进提议所带来的8个网络升级、实现方案和规格工作，最近还有加速的三周发布周期。
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">Forest</h3>
+### Forest
 
 [Forest](https://github.com/ChainSafe/forest)是由[ChainSafe](https://medium.com/chainsafe-systems)推出的Rust Filecoin实现方案，在今年也有很多的改进。现在，它已提供完整的兼容性，并与Filecoin主网的最新版本同步。该团队计划在10月末发布和分享这个实现方案。
 
 这个带有最小可用功能的版本的功能包括信息池、状态管理器、链、钱包命令行功能、Prometheus指标和JSONRPC服务器。在Sigma Prime审计阶段存在的漏洞现在也已经修复。
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">Venus</h3>
+### Venus
 
 在去年10月主网上线前，IPFSForce团队负责了go-filecoin实现方案的维护和开发，将其重命名为[Venus](https://filecoin.io/blog/posts/welcome-venus-to-the-filecoin-mainnet/)项目。
 
@@ -110,9 +98,7 @@ Lotus还支持了20多个FIP改进提议所带来的8个网络升级、实现方
 
 现在，为了鼓励更多的存储提供者采用Venus，有以下的计划正在进行：为分布式存储池设计的分享奖励机制提议，一个更强大的存储池市场，以及Venus Master计划。
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">Fuhon</h3>
+### Fuhon
 
 2020年1月，[由Soramitsu提供的Filecoin C++实现方案](https://filecoin.io/blog/posts/announcing-filecoin-implementations-in-rust-and-c/) 正式公开。从那时候开始，Fuhon这个项目完成了节点开发（包含测试），现正进行节点API开发、市场整合、存储提供者整合以及节点互操作性测试。该团队在原生的cpp-actors开发上取得了明显的进展，不过actors还未进入生产就绪的阶段。
 
@@ -120,7 +106,7 @@ Lotus还支持了20多个FIP改进提议所带来的8个网络升级、实现方
 
 ![](/uploads/snarks.webp)
 
-<h3 style="font-size: 26px; line-height: 30px;">证明提升 & zk-SNARKs世界网站</h3>
+### 证明提升 & zk-SNARKs世界网站
 
 非互动零知识证明（Non-interactive zero-knowledge proofs，zk-SNARKs）是一种密码学技术，它能让证明者说服验证者自己知道某项信息，而无需揭露这项信息的内容。
 
@@ -130,9 +116,7 @@ Lotus还支持了20多个FIP改进提议所带来的8个网络升级、实现方
 
 总的来说，代码基础的重构是为了更好的模块化和可读性，并增加了ARM64和Apple M等架构的支持，以及增加了API用于证明聚合（proof aggregation）。zk-SNARK生成的效率提升了超过80%.
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">可验证延迟函数（VDF）</h3>
+### 可验证延迟函数（VDF）
 
 Protocol Labs、Ethereum基金会、Filecoin基金会、Electric Coin公司(ECC)和Supranational开展了一项协作计划，其目标是提供一个高效和符合成本效益的计算VDF(可验证延迟函数Verifiable Delay Function）。这涉及到快速评估（顺序计算）和证明（并行计算）。
 
@@ -146,7 +130,7 @@ Protocol Labs Cryptosat正协作探索一种“太空VDF”的可能性。一种
 
 ![](/uploads/drand.webp)
 
-<h3 style="font-size: 26px; line-height: 30px;">Drand</h3>
+### Drand
 
 [Drand](https://drand.love/)是[Filecoin的领导人选举](https://filecoin.io/blog/posts/filecoin-features-distributed-randomness-leader-elections/)使用的分布式随机信标，它在今年早期[庆祝了其一周年](https://drand.love/blog/2021/08/10/drand-celebrates-one-year-as-a-randomness-service/)，并完成了100万轮无间断的服务。
 
@@ -158,17 +142,13 @@ LoE目前正在扩张，寻求新成员的加入。如果你准备好贡献到�
 
 Drand很快会支持更高频率的随机信标，与现有的30秒信标并行运作。这个升级能让drand被更广泛的web3和web2用例利用。
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">ConsensusLab & ConsensusDays</h3>
+### ConsensusLab & ConsensusDays
 
 [ConsensusLab](https://research.protocol.ai/groups/consensuslab/)是最新的Protocol Labs研究小组，它在2021年7月成立，旨在成为推动可扩展去中心化共识机制认知的协作中心。它的当前目标是Filecoin下一代的共识机制。
 
 它的启动活动[ConsensusDays 21](https://research.protocol.ai/sites/consensusday21/)包括了24场演讲，有共识和相关领域的前沿研究人员参与，这为未来的大规模协作奠定了基础。
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">产品用例</h3>
+### 产品用例
 
 自从Filecoin启动后，开发者工具有了很大的进步，而很多新的用例也可以利用Filecoin提供的密码学验证、稳健和分布式存储的独特价值。
 
@@ -178,7 +158,7 @@ Drand很快会支持更高频率的随机信标，与现有的30秒信标并行�
 
 ![](/uploads/nft-storage.webp)
 
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">NFT.Storage</h4>
+#### NFT.Storage
 
 [NFT.Storage](https://nft.storage/) [在2021年4月启动](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/)，它以免费的简单服务提供了链下NFT元数据存储功能。上传到NFT.Storage的HTTP endpoint的数据在Filecoin上持久化了，并在公开的IPFS网络可以访问。
 
@@ -186,43 +166,33 @@ Drand很快会支持更高频率的随机信标，与现有的30秒信标并行�
 
 自从发布开始，该产品得到了飞速的发展，已经有了5500名用户，以及600万个NFT被存储到Filecoin上。这些NFT有一些是来自这个领域里的最大规模的市场和铸造服务，包括了OpenSea、OneOf、 Makersplace、Jigstack和Curio等。
 
-<p>&nbsp</p>
-
 ![](/uploads/web3-storage.webp)
 
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">Web3.Storage</h4>
+#### Web3.Storage
 
 [Web3.Storage](https://web3.storage) [在2021年8月启动](https://filecoin.io/blog/posts/introducing-web3-storage/)，它为开发者提供了简单的界面，用于从IPFS和Filecoin上存取数据。这是一个免费的服务，它提供了熟悉的存储接口（包括JS客户端库和HTTP API），是开发者上传数据到Filecoin的最简单方式。它在背后承担了与去中心化存储直接互动的复杂性。
 
 从启动开始，Web3.Storage项目快速增长到2000多名用户和500万笔上传。这样，新进入web3领域的开发者正亲身体验内容寻址和无需信任的存储方式，是如何带来更轻量的后端基础设施、更去中心化结构和更小的用户锁定效应，而有经验的web3开发者则可以快速将IPFS和Filecoin与其现有生产级别的dapps结合。
 
-<p>&nbsp</p>
-
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">Textile</h4>
+#### Textile
 
 Textile公司一直推出各种工具，让开发者更快更容易在IPFS和Filecoin上搭建去中心化应用。它在Ethereum、[Polygon](https://polygon.technology/)和[NEAR](https://near.org/)上发起了无需许可的[Filecoin存储桥](https://eth.storage/docs/)。它还推出了一个Filecoin交易提议拍卖试验项目（Deal Auctions pilot），让客户高效地向网络上传输大量的数据集。这个项目当前每天达到2TiB的能力，每周增长\~25%．从10月1日起，这个实验项目的活跃Filecoin交易提议达到了205TB.
 
 ![](/uploads/estuary-1.webp)
 
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">Estuary</h4>
+### Estuary
 
 在3月，[Estuary](https://estuary.tech)发起，从那时候开始已[成长为一个可靠的可扩展接入Filecoin网络解决方案](https://filecoin.io/blog/posts/taking-a-look-at-estuary/)。 Estuary节点有自己的libp2p技术栈和完整的IPFS及Filecoin特性，能帮助任何人达成多种Filecoin存储交易提议。Estuary已经成功达成了23,000笔存储交易提议，存储了超过150 TiB大小的文件，与Filecoin生态的很多公司和组织合作过，并与全球100多个存储提供者进行了数据存储。
 
-<p>&nbsp</p>
+#### Web2用例
 
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">Web2用例</h4>
-
-<p>&nbsp</p>
-
-<h5 style="font-size: 18px; line-height: 24px; margin-top: 21px; margin-bottom: 0px;">互联网存档</h5>
+##### 互联网存档
 
 [互联网存档项目（Internet Archive）](https://archive.org/)是一个数字博物馆，其使命是提供对所有知识的访问。在2021年4月，[互联网存档项目宣布与Protocol Labs合作](https://blog.archive.org/2021/04/01/filecoin-foundation-grants-50000-fil-to-the-internet-archive/) ，将其数字资源传送到这个去中心化网络里。在7月，基金会开始了最初的概念验证项目，。将2016年的web存档数据集（约200TiB大小）上传到Filecoin。
 
 现在，这些数据集已经成功上传到网络上。该项目计划在年底前完成，还有更多的互联网存档数据集等待上传到Filecoin上。
 
-<p>&nbsp</p>
-
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">Slate项目</h4>
+#### Slate项目
 
 Slate在2020年9月发起，最初是一个情绪收集板（moodboarding）网站，后来经历了几次转型，成为了一个一站式的平台，用于保存用户的书签、文件，并与这些内容进行互动。现有的一些存储选项虽然可以增强用户的记忆，但却没用心改善存取记录的能力。
 
@@ -230,9 +200,7 @@ Slate将自动化保存、功能强大的查找功能和快速的组织能力结
 
 Slate的用户数已经达到了14000名，存储的文件已经达到了81000个，这些数字还在增长中。它为用户提供了一个消费级和相仿于web2的体验，让用户使用IPFS和Filecoin存储并享受相关的好处。
 
-<p>&nbsp</p>
-
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">生态系统</h2>
+## 生态系统
 
 分布式网络的长期增长只能通过培育和赋能广泛的利益相关者来达成，需要将他们与IPFS、Filecoin、libp2p和其他项目的成功联系起来。与主要的伙伴的互动，对展示新用例、连接到其他web3生态和web2用户都是非常重要的。
 
@@ -242,7 +210,7 @@ Slate的用户数已经达到了14000名，存储的文件已经达到了81000�
 
 ![](/uploads/hackathons.webp)
 
-<h3 style="font-size: 26px; line-height: 30px;">黑客松</h3>
+### 黑客松
 
 自从其在7月举办的首次[HackFS](https://filecoin.io/blog/posts/hackfs-what-s-next/)活动后，[Filecoin和IPFS黑客松项目](https://fil.org/events)触及和链接了全球的１万多名开发者和企业家。
 
@@ -252,9 +220,7 @@ Slate的用户数已经达到了14000名，存储的文件已经达到了81000�
 
 过去活动的参与者已经成功筹集到数百万美元的投资，他们在黑客松上提交的题目也摇身一变，成为下一代的web3重大项目。我们欢迎下一代的建造者参加未来的黑客松活动。请点击[hackathons.filecoin.io](http://hackathons.filecoin.io)以了解更多，并注册到我们的邮件列表里。
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">Web3协作</h3>
+### Web3协作
 
 Filecoin持续在成长，作为web3领域实际上的存储层被应用。开发者持续在这个协议提供的可能性上探索和拓展机会。
 
@@ -266,9 +232,7 @@ Filecoin持续在成长，作为web3领域实际上的存储层被应用。开�
 
 在2021年9月，Filecoin作为web3技术栈的基础和关键驱动被加入到[Web3索引网站](https://web3index.org/)，而Filecoin流动性也在持续进步。
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">生态的新初创企业</h3>
+### 生态的新初创企业
 
 在去年，约有50家初创企业从我们的合作伙伴提供的加速器项目毕业。它们的创始人有很多都在Filecoin生态活动的期间参与了黑客松活动或得到了赞助。在我们的生态中实在有太多令人惊叹的创始人，Filecoin很高兴支持他们。
 
@@ -282,9 +246,7 @@ Filecoin也在[与Outlier Ventures合作](https://outlierventures.io/outlier-ven
 
 Techstars Filecoin加速器是一项激动人心的协作，旨在推动新的初创企业成长。现在，正在建设web3未来的公司可以申请加入该计划。
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">存储提供者</h3>
+### 存储提供者
 
 从一开始，Filecoin网络就以远超于最初预计的速率增加存储空间，很快在4月达到了最大的 [基准线（baseline）](https://medium.com/block-science/sustainability-goal-achieved-filecoin-network-crosses-baseline-target-cec13a3ed8f) 铸造水平（minting level）。从那开始，网络的能力日益强大起来。
 
@@ -298,19 +260,15 @@ Techstars Filecoin加速器是一项激动人心的协作，旨在推动新的�
 
 在8月，我们创建了一个新的Filecoin [赏金计划](https://github.com/filecoin-project/community/tree/master/storage-provider-bounty-program)用于支持该项努力。从那起，外部的专家一直在参与带来最佳实践标准。我们持续欢迎在[公告板](https://github.com/filecoin-project/community/projects)上发表新想法和需求。
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">应用研究组(ARG)</h3>
+### 应用研究组(ARG)
 
 在2月，应用研究组（The Application Research Group） (ARG) 开始使用Filecoin、IPFS、libp2p和IPLD进行原型实验。现在，应用研究组已经创建了一个[开源框架](https://github.com/application-research/origin)，主要以开箱即用的方式建造与IPFS兼容的网站，以及与知名的生态合作伙伴（如Textile）推出的开发者案例 ，还有一些高保真的原型（如离线的Filecoin+Ledger钱包。
 
 在3月，应用研究组创建了[Estuary](https://estuary.tech)，旨在帮助改善[达成Filecoin存储交易](https://filecoin.io/blog/posts/taking-a-look-at-estuary/)的体验。在不久的将来，时间范围内的网络运营者可能也会运行[Estuary节点](https://github.com/application-research/estuary)，并最大限度为更多有意义的数据达成Filecoin存储交易提议。
 
-<p>&nbsp</p>
-
 ![](/uploads/ahs.webp)
 
-<h3 style="font-size: 26px; line-height: 30px;">在亚洲的扩展</h3>
+### 在亚洲的扩展
 
 亚洲是Filecoin/IPFS生态的重要扩展领域，在主网上线后的第一年，该地区的几个重要国家就已经带来了持续的增长。今年也出现了几个重要的项目是专注于该地区的。
 
@@ -321,7 +279,7 @@ Techstars Filecoin加速器是一项激动人心的协作，旨在推动新的�
 另一个值得注意的计划则是存储提供者的地理位置分散到其他国家，并在亚洲范围内建设战略性的关系，如[NFTStar](https://www.prnewswire.com/news-releases/the9-limited-polygon-and-protocol-labs-announced-ecosystem-collaboration-on-nftstar-and-gamefi-play-to-earn-projects-301383501.html)等。
 ![](/uploads/brave-1.webp)
 
-<h3 style="font-size: 26px; line-height: 30px;">浏览器</h3>
+### 浏览器
 
 将旧的web网络带到web3的转型中是一个艰巨的任务，不过浏览器产品正带来相关进展。
 
@@ -333,9 +291,7 @@ Techstars Filecoin加速器是一项激动人心的协作，旨在推动新的�
 
 夏天的结束伴随了[Browsers 3000](https://fil.org/events/#past-events/)活动，这是一个为期6周的黑客松，它将web3领域正为web平台带来改变的人们带到了一起。 [Browsers 3000 summit](https://www.youtube.com/playlist?list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP) 活动上，有13个项目分享了它们对web的愿景，大奖得主为[NetSepio](https://devpost.com/software/netsepio)，这是一个分布式的网络恶意软件、钓鱼软件和其他危险因素的汇报和通知系统。
 
-<p>&nbsp</p>
-
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">展望FilecoinOrbit的第二年</h2>
+## 展望FilecoinOrbit的第二年
 
 得益于社区的贡献，Filecoin网络在头一年就取得了重大的进步。
 

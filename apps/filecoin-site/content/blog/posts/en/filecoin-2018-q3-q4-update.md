@@ -31,19 +31,6 @@ title: >-
 _template: blog_detail
 ---
 
-Table of Contents
-
-1. [Opening up development and research repos](https://filecoin.io/blog/update-2018-q3-q4/#1-opening-up-development-and-research-repos)
-2. [Project Roadmap Update](https://filecoin.io/blog/update-2018-q3-q4/#2-filecoin-project-roadmap-update)
-3. [Development Update](https://filecoin.io/blog/update-2018-q3-q4/#3-filecoin-development-update)
-4. [Research Update](https://filecoin.io/blog/update-2018-q3-q4/#4-filecoin-research-update)
-5. [Community Update](https://filecoin.io/blog/update-2018-q3-q4/#5-filecoin-community-update)
-6. [Legal Update](https://filecoin.io/blog/update-2018-q3-q4/#6-filecoin-legal-update)
-7. [Filecoin Public Talks & Media](https://filecoin.io/blog/update-2018-q3-q4/#7-filecoin-public-talks-media)
-8. [libp2p update for Filecoin](https://filecoin.io/blog/update-2018-q3-q4/#8-libp2p-update-for-filecoin)
-9. [IPFS update for Filecoin](https://filecoin.io/blog/update-2018-q3-q4/#9-ipfs-update-for-filecoin)
-10. [Cautionary Notes](https://filecoin.io/blog/update-2018-q3-q4/#10-cautionary-notes)
-
 ## 1. Opening up development and research repos
 
 Good news! After many months building things privately, we are ready to open up a number of codebases and community forums. This is right on schedule as predicted in our [Project Roadmap](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn) and [last update](https://filecoin.io/blog/update-2018-q1-q2/). Read our [announcement blog post](https://filecoin.io/blog/opening-filecoin-project-repos/) for more.
@@ -66,13 +53,17 @@ Beyond that, our team has been hard at work in the following areas:
 - **Ancillary product development.** There are a couple dozen ancillary products and tools that need to exist around the Filecoin network: things like chain explorers, network stats visualizers, integrations, and so on.
 - **Designing protocol improvements.** There are multiple areas of the filecoin protocol that have improved significantly – in particular chain scalability, performance of proofs, and consensus security.
 
-As we make progress, our visibility and estimates grow clearer. To that end, we have adjusted the upcoming milestones as follows: | Milestone | Old ETA | New ETA |
+As we make progress, our visibility and estimates grow clearer. To that end, we have adjusted the upcoming milestones as follows:
+
+| Milestone                                    | Old ETA | New ETA |
 | -------------------------------------------- | ------- | ------- |
-| Launching the first public Filecoin testnet: | Q1 | Q2 |
-| Testing with sets of large scale miners: | Q1 | Q2 |
-| go-filecoin v1.0.0 feature freeze: | Q1/Q2 | Q2/Q3 |
-| Security Review & Audit: | Q1/Q2 | Q2/Q3 |
-| Launching the Filecoin mainnet: | Q2/Q3 | Q3/Q4 | We have updated [the Roadmap document](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn) accordingly. Please recall that all our estimates and timelines are **optimistic** and subject to change. We want to keep the community updated, and give a rough indication of where we are, what’s next, and when we currently (if optimistically) expect to achieve our next milestones.
+| Launching the first public Filecoin testnet: | Q1      | Q2      |
+| Testing with sets of large scale miners:     | Q1      | Q2      |
+| go-filecoin v1.0.0 feature freeze:           | Q1/Q2   | Q2/Q3   |
+| Security Review & Audit:                     | Q1/Q2   | Q2/Q3   |
+| Launching the Filecoin mainnet:              | Q2/Q3   | Q3/Q4   |
+
+We have updated [the Roadmap document](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn) accordingly. Please recall that all our estimates and timelines are **optimistic** and subject to change. We want to keep the community updated, and give a rough indication of where we are, what's next, and when we currently (if optimistically) expect to achieve our next milestones.
 
 ## 3. Filecoin Development Update
 
@@ -217,25 +208,24 @@ Filecoin is built on top of and depends heavily on [libp2p](https://libp2p.io/),
 - Status.im is [experimenting with libp2p](https://www.google.com/url?q=https://our.status.im/status-town-hall-27-february-4-2019/&sa=D&ust=1550102719765000&usg=AFQjCNEGZaoOv8TGCLavbn2FK9Hxo91JEQ) and made [nim-libp2p](https://github.com/status-im/nim-libp2p)
 - **Talks and media**
 - **libp2p Dev Meetings - 2018-07-12 to 13**
-
   - [Introduction to rust-libp2p](https://www.youtube.com/watch?v=HqSXFlCwgMY&index=3&list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW&t=0s) (Pierre Krieger)
   - [QUIC in libp2p](https://www.youtube.com/watch?v=4FvMed5iCb4&index=4&list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW&t=0s) (Marten Seeman)
   - [The life of a libp2p connection](https://www.youtube.com/watch?v=zcWHamr5m_k&index=5&list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW&t=0s) (Jacob Heun)
   - [Ethereum Sharding requirements for P2P](https://www.youtube.com/watch?v=27Uv8pRmIaY&index=6&list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW&t=0s) (Kevin MHC)
   - [go-libp2p-gorpc: simple RPC on top of libp2p](https://www.youtube.com/watch?v=hyT91vdeZBk&index=7&list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW&t=0s) (Hector Sanjuan)
   - [Sharing data in OpenBazaar with PubSub](https://www.youtube.com/watch?v=_OVsFoK-Cr8&index=8&list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW) (Chris Pacia)
-- **LabDay 1 - 2018-08-03**
 
+- **LabDay 1 - 2018-08-03**
   - [Libp2p in OpenBazaar](https://www.youtube.com/watch?v=RZbPSTIhhnk&index=5&list=PLhuBigpl7lqvIymGaM7A_VT4CYZW3R_4Q&t=0s) (Chris Pacia)
   - [The libp2p Project](https://www.youtube.com/watch?v=LahR7BlN8MI&index=7&list=PLhuBigpl7lqvIymGaM7A_VT4CYZW3R_4Q&t=0s) (Mike Goelzer)
   - [Polkadot & Parity Substrate built on rust-libp2p](https://www.youtube.com/watch?v=mRlLSByFxCQ&index=8&list=PLhuBigpl7lqvIymGaM7A_VT4CYZW3R_4Q&t=0s) (Björn Wagner)
   - [Paratii: P2P Video Publishing](https://www.youtube.com/watch?v=QKFOWdOTrpo&index=4&list=PLhuBigpl7lqvIymGaM7A_VT4CYZW3R_4Q&t=0s) (Felipe Sant Ana)
-- **Web3Summit - 2018-10-22 to 24**
 
+- **Web3Summit - 2018-10-22 to 24**
   - [libp2p, a modular P2P networking stack](https://www.youtube.com/watch?v=xqVmEzsin3Y) (Mike Goelzer)
   - [Implement a payment channel with libp2p](https://www.youtube.com/watch?v=t2qCmwUlY2Q) (Lucas Vogelsang)
-- **Other**
 
+- **Other**
   - 2018-09-18. [How to Leverage libp2p for Blockchain Applications](https://www.infoq.com/presentations/blockchain-libp2p) (Chris Pacia, Open Bazaar, InfoQ)
   - And [more](https://libp2p.io/media/).
 

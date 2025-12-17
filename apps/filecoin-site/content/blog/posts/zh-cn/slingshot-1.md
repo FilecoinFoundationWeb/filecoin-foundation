@@ -25,9 +25,7 @@ title: 回顾Slingshot第一阶段
 
 Slingshot竞赛的第一阶段历时四周，在2020年10月28日（上周三）的闭幕式上达到高潮。本文回顾了闭幕式和第一阶段竞赛的情况。您也可以通过观看以下视频了解闭幕式：
 
-<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/qheNJZ1DClM' frameborder='0' allowfullscreen></iframe></div>
-</div>
+[▶️ 查看视频（YouTube）](https://www.youtube.com/watch?v=qheNJZ1DClM)
 
 ## 庆祝第一阶段圆满结束
 
@@ -35,10 +33,9 @@ Slingshot竞赛的第一阶段历时四周，在2020年10月28日（上周三）
 
 为了庆祝主网顺利启动，社区发起了[Filecoin 主网启动周](https://liftoff.filecoin.io/)，聚集了超过80位圆桌讨论者来谈论涵盖从技术细节和发展过程到当前和未来的应用等所有与Filecoin相关的话题。您可以在[此处](https://liftoff.filecoin.io/#mainTrack)查看所有环节！
 
-<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
-<img src=/vintage/images/blog/slingshot-p1-achieve.jpg alt="第一阶段成就">
-<p>第一阶段成就</p>
-</div>
+![第一阶段成就](/vintage/images/blog/slingshot-p1-achieve.jpg)
+
+_第一阶段成就_
 
 在这令人兴奋的主题下，Slingshot的第一阶段让人们关注到了越来越多有价值的数据存储到Filecoin网络上。通过超过52万笔交易存储了超过650TiB的数据。这些交易是由19个国家的100多个项目进行的! 由于他们的努力，这些参赛者在奖励池中获得了59,850枚FIL奖励。
 
@@ -59,10 +56,9 @@ Slingshot竞赛的第一阶段历时四周，在2020年10月28日（上周三）
 
 这些团队在短时间内完成了大量的工作。点击[此处](https://youtu.be/qheNJZ1DClM?t=556)查看所有的演示!
 
-<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
-<img src=/vintage/images/blog/slingshot-p1-ipfsnewbund.jpg alt="ipfsNewBund团队展示其界面">
-<p>ipfsNewBund团队展示其界面</p>
-</div>
+![ipfsNewBund 团队展示其界面](/vintage/images/blog/slingshot-p1-ipfsnewbund.jpg)
+
+_ipfsNewBund 团队展示其界面_
 
 ## 颁奖仪式
 
@@ -82,10 +78,9 @@ Slingshot竞赛的第一阶段历时四周，在2020年10月28日（上周三）
 4. Filecoin.Netdisk
 5. matin-cloud-pan
 
-<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
-<img src=/vintage/images/blog/slingshot-p1-topprojects.jpg alt="存储竞赛中的头部项目">
-<p>存储竞赛中的头部项目</p>
-</div>
+![ipfsNewBund 团队展示其界面](/vintage/images/blog/slingshot-p1-ipfsnewbund.jpg)
+
+_ipfsNewBund 团队展示其界面_
 
 Chainsafe联合创始人兼CTO、Slingshot大赛社区评审员Greg Markou为社区奖项颁奖。获奖团队是:
 
@@ -102,10 +97,9 @@ Chainsafe联合创始人兼CTO、Slingshot大赛社区评审员Greg Markou为社
   - Anwen Web3 Content Community
   - diceSolo
 
-<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
-<img src=/vintage/images/blog/slingshot-p1-ui.jpg alt="为精彩的用户界面颁奖">
-<p>为精彩的用户界面颁奖</p>
-</div>
+![为精彩的用户界面颁奖](/vintage/images/blog/slingshot-p1-ui.jpg)
+
+_为精彩的用户界面颁奖_
 
 祝贺所有获奖团队，你们的项目取得了巨大的成就！
 
@@ -113,10 +107,9 @@ Chainsafe联合创始人兼CTO、Slingshot大赛社区评审员Greg Markou为社
 
 随后Pooja为大家预告了第二阶段的内容。第二阶段于UTC时间2020年10月21日18时正式启动。我们将于2020年11月9日公布最终确定的规则和奖励，并于2020年11月11日开放本阶段竞赛的正式报名。
 
-<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
-<img src=/vintage/images/blog/slingshot-p1-p2-guidance.jpg alt="第二阶段提前指导">
-<p>第二阶段提前指导</p>
-</div>
+![第二阶段提前指导](/vintage/images/blog/slingshot-p1-p2-guidance.jpg)
+
+_第二阶段提前指导_
 
 对于希望在此之前参与第二阶段的团队，Pooja提供了一些指导：
 
@@ -129,10 +122,9 @@ Chainsafe联合创始人兼CTO、Slingshot大赛社区评审员Greg Markou为社
 
 最后，协议实验室的CEO胡安为第一阶段的工作圆满地画上了句号，他提出了一些关于Slingshot的想法，以及他希望看到竞赛引领的新方向。Filecoin项目仍处于早期阶段，有很多机会可以创造有价值的使用场景、集成等来不断改善项目的方向。您可以在此处查看他的演讲。
 
-<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
-<img src=/vintage/images/blog/slingshot-p1-p2-forward.jpg alt="期待第二阶段的精彩表现">
-<p>期待第二阶段的精彩表现</p>
-</div>
+![期待第二阶段的精彩表现](/vintage/images/blog/slingshot-p1-p2-forward.jpg)
+
+_期待第二阶段的精彩表现_
 
 再次祝贺所有参加第一阶段的团队。如果您对第二阶段感兴趣，请继续关注11月9日[此处](https://slingshot.filecoin.io/)公布的细节（如果你还没有参与的话，请加入[Filecoin Slack](https://filecoin.io/slack)的#slingshot和#slingshot-announcements频道）。
 

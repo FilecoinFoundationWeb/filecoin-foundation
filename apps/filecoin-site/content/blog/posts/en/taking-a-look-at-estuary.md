@@ -24,7 +24,7 @@ _template: blog_detail
 
 _Estuary is open-source software allowing simple sending of public data to the Filecoin network to be retrieved from anywhere._
 
-<h3 style="margin:2em 0 0 0;">What's Estuary?</h3>
+## What's Estuary?
 
 Estuary is a way to send a lot of publicly-licensed data to the Filecoin network so that it can be retrieved for public good. An open-source project conceptualized by Protocol Labs’ Application Research Group (ARG), it makes Filecoin storage as easy as uploading a file. New users are not required to have a technical background or an understanding of the underlying technology to use Filecoin.
 
@@ -36,7 +36,7 @@ Estuary nodes provide the capability to pin CIDs to IPFS following the IPFS pinn
 
 Each Estuary node addresses large scale data transfer and retrieval with a simple solution in which no additional infrastructure is needed by users outside of reliable hardware.
 
-<h3 style="margin:2em 0 0 0;">Background</h3>
+## Background
 
 The Application Research Group saw a need for an open-source, end-to-end stack that demonstrated how Filecoin worked end-to-end at the application layer. Providing an example for the Filecoin ecosystem was seen as important, so developers new to Filecoin could have a working solution to utilize.
 
@@ -50,7 +50,7 @@ To provide a high level of redundancy and guarantee, the deal algorithm will con
 
 A Filecoin storage deal receipt is provided with duration, storage provider information, information about which providers are preserving the data, and how to access or retrieve the data.
 
-<h3 style="margin:2em 0 0 0;">Estuary vs Cloud Storage</h3>
+## Estuary vs Cloud Storage
 
 Traditional cloud storage stores information around the world in data centers. This system is designed with some servers at these data centers acting as master control servers, and some others are just purely for storage. These servers are all linked together and, depending upon storage requirements, usage is billed accordingly. Trust is required in whether the company operates the data center transparently and honestly with how data is handled.
 
@@ -62,11 +62,11 @@ One of the major differences between Filecoin and traditional cloud storage is t
 
 Furthermore, all of the mechanics of these features are completely open source, something that may not be true with a traditional cloud storage provider. There are thousands of providers in the Filecon ecosystem today and more participants are onboarding every year.
 
-<h3 style="margin:2em 0 0 0;">Collaborations</h3>
+## Collaborations
 
 Estuary is open-source software and anyone can take anything anytime. Some existing ecosystem collaborators include [Textile](https://www.textile.io/) ([Miner Index](https://docs.textile.io/filecoin/miner-index/)), Fission (Filecoin integration for paying your own deals), QRI and many others in the overall Filecoin storage provider community. Individual contributors are also growing fast, and currently there are more than ten open-source repositories.
 
-<h3 style="margin:2em 0 1em 0;">Getting Started</h3>
+## Getting Started
 
 {{< youtube id="AHAMHbpioGw" title="Estuary: Getting Started" >}}
 
@@ -80,17 +80,17 @@ Estuary also runs its own analysis of the Filecoin network along with performanc
 
 Currently, all of the data that is currently uploaded via HTTP or CURL hits an Estuary node in North America but we hope to see more locations very soon.
 
-<h3 style="margin:2em 0 0 0;">Documentation</h3>
+## Documentation
 
 Estuary offers robust, complete documentation at [docs.estuary.tech](https://github.com/application-research/estuary "Estuary documentation"). The documentation site offers sample code that can be live edited. If you have already generated an API key, you can even plug that into the sample code to see how it works with every API method that a hosted Estuary node provides..
 
 You can access nearly all of Estuary’s website features through the API. Estuary’s documentation site will continue to grow with the needs of the community. If you have comments or questions, please use the feedback form on the documentation.
 
-<h3 style="margin:2em 0 0 0;">Considerations</h3>
+## Considerations
 
 The ARG’s Estuary node is designed to store data that is publicly licensed and must meet a certain level of quality determined by the ARG. The node could potentially be used for private data but any encryption of data has to be done by the user, as Estuary itself is not responsible for performing any encryption.
 
-<h3 style="margin:2em 0 0 0;">Conclusion</h3>
+## Conclusion
 
 The Filecoin network is a breakthrough in decentralized storage network infrastructure and protocols. There are many storage solutions on the internet but few are as advanced as Filecoin with regards to decentralization and transparency.
 

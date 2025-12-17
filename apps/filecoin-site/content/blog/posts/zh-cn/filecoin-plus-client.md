@@ -29,17 +29,17 @@ _Filecoin Plus在Filecoin网络上增加了一层社交信任，以鼓励有用�
 
 为了最大化Filecoin可以支持的有用存储数量，[Filecoin Plus](https://filplus.fil.org/ "Filecoin Plus") 作为一个社交信任层被提出来。用户可以使用一个新型的资源DataCap(数据配额)来与特定的存储提供者达成交易提议，这些存储提供者则有强大的激励因素来存储这些数据，因为这会在未来增加他们的区块奖励分成份额。
 
-<h3 style="margin:2em 0 0 0;">核心机制</h3>
+## 核心机制
 
 Root key holders、公证人、用户和存储提供者通过DataCap的分配和花费来互动。公证人（Notaries）通过社区治理申请，并与Root key holders互动以获取DataCap分配，然后就可以分配给用户。这些用户就可以在与存储提供者达成的交易提议中应用这些DataCap了。
 
-<h3 style="margin:2em 0 0 0;">DataCap</h3>
+## DataCap
 
 这是Filecoin网络里的一种资源，它从公证人手上流转到可信的用户。除了FIL外，这些用户根据协议价格来使用DataCap来达成存储交易提议。DataCap是一个“一次性积分”，即它一旦使用就会被消耗掉。
 
 这时，DataCap无法在用户地址之间互转。在网络上，存储提供者可以通过提供由DataCap达成的交易提议来获得额外的奖励。
 
-<h3 style="margin:2em 0 0 0;">存储提供者的激励机制</h3>
+## 存储提供者的激励机制
 
 存储提供者根据其在网络上提供的存储空间赚取回报，而封装扇区的数量和质量都会影响存储提供者的收入。除了那些区块奖励外，以交易提议价格的形式赚取的额外收入是来自为用户实际存储的数据。
 
@@ -57,7 +57,7 @@ Root key holders、公证人、用户和存储提供者通过DataCap的分配和
 
 这个群组里有一定数量的此类申请已经获批，正在分配交易提议，总共有大约20个在申请流程中。
 
-<h3 style="margin:2em 0 0 0;">存储提供者外联计划</h3>
+## 存储提供者外联计划
 
 作为一名存储提供者，你能如何寻找已验证用户？我们提供了一个存储提供者表格（Storage Provider Table），你可以在里面添加自己的联系信息、服务位置和其他细节，让用户用于与其他存储提供者对比。这在 [Filecoin Plus Registry](https://plus.fil.org/ "Filecoin Plus Registry")上展示，用户就是在这里开始验证的。
 
@@ -65,7 +65,7 @@ Root key holders、公证人、用户和存储提供者通过DataCap的分配和
 
 存储提供者可以在[Filecoin Slack](https://filecoin.slack.com "Filecoin Slack")频道里进行市场营销和外联： [#fil-plus](https://filecoinproject.slack.com/archives/C01DLAPKDGX) 和 [#fil-deal-market](https://filecoinproject.slack.com/archives/C01KCAAURAN)。这些频道受众面广且较为活跃，里面还有不同类型的公告、问题、人们正开发的工具，以及主动寻找存储提供者的用户。
 
-<h3 style="margin:2em 0 0 0;">即将来到的改进</h3>
+## 即将来到的改进
 
 持续提升和增加市场营销和商业拓展机会，以及为已验证用户和存储提供者达成更好的交易提议，都是很重要的。
 
@@ -75,7 +75,7 @@ Root key holders、公证人、用户和存储提供者通过DataCap的分配和
 
 {{< youtube id="0dBH_VeZr5s?t=149" title="Filecoin Plus: 存储提供者如何与已验证用户互动" >}}
 
-<h3 style="margin:2em 0 0 0;">更多参与</h3>
+## 更多参与
 
 [加入Filecoin Plus社区](https://github.com/filecoin-project/filecoin-plus-client-onboarding "Filecoin Plus onboarding")可以通过参与GitHub issues和讨论的方式来实现。里面有不同的Client Onboarding repo和Filecoin Plus项目repo库。具体来说，你可以每隔两周参与治理会议。[Filecoin Plus治理库](https://github.com/filecoin-project/notary-governance/ "Filecoin Plus Governance")包含了宣告下一次会议的issue，以及未来的所有会议日历。之前提到的Slack频道可能是社区帮助回答各种问题的最佳位置。
 

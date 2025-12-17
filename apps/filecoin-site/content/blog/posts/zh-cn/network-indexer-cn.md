@@ -38,7 +38,7 @@ _template: blog_detail_ch
 
 ## 使用方法
 
-网络索引器托管在[cids .contact](http://cid.contact/)上，可以通过HTTP或libp2p向其API发送请求来访问。cid.contact索引器有一个轻量级的web界面，可以用来手动输入CID和查询索引器，它会向<span style="background-color: #eaeaea"> `cid.contact/cid/`</span>发出请求并显示结果。
+网络索引器托管在[cids .contact](http://cid.contact/)上，可以通过HTTP或libp2p向其API发送请求来访问。cid.contact索引器有一个轻量级的web界面，可以用来手动输入CID和查询索引器，它会向 `cid.contact/cid/` 发出请求并显示结果。
 
 ## 具体案例
 
@@ -47,9 +47,9 @@ _template: blog_detail_ch
 第一步，浏览Slingshot Recovery页面，查看由存储提供商f08403存储的国家癌症研究所数据。[点击此处](https://slingshot.filecoin.io/)。
 
 第二步，导航至其中一个交易ID，例如[34999166](https://filecoin.tools/3499166)。  
-第三步，点击payload CID<span style="background-color: #eaeaea"> uAXASID5qXOLVLSg17P3C9tchE5BzxD4H2iAzwG6cJZL6bcAs</span>进入[cid.contact](https://cid.contact/)搜索框。
+第三步，点击payload CID `uAXASID5qXOLVLSg17P3C9tchE5BzxD4H2iAzwG6cJZL6bcAs` 进入[cid.contact](https://cid.contact/)搜索框。
 
-至此，索引器会给出响应，表明该CID在ID为<span style="background-color: #eaeaea"> 12D3KooWBwUERBhJPtZ7hg5N3q1DesvJ67xx9RLdSaStBz9Y6Ny8</span>的存储提供商处被找到，地址为/dns4/yablufc.ddns.net/tcp/4567。如此便可以继续检索数据！在[w3rc github repo](https://github.com/ipfs-shipyard/w3rc)中可以找到一个示例检索客户端。
+至此，索引器会给出响应，表明该CID在ID为 `12D3KooWBwUERBhJPtZ7hg5N3q1DesvJ67xx9RLdSaStBz9Y6Ny8` 的存储提供商处被找到，地址为 `/dns4/yablufc.ddns.net/tcp/4567`。如此便可以继续检索数据！在[w3rc github repo](https://github.com/ipfs-shipyard/w3rc)中可以找到一个示例检索客户端。
 
 此检索结果会将提供者信息转回JSON格式：
 
@@ -67,9 +67,9 @@ _template: blog_detail_ch
         }]
     }
 
-该结果还显示CID可以从ID 为<span style="background-color: #eaeaea"> 12D3KooWBwUERBhJPtZ7hg5N3q1DesvJ67xx9RLdSaStBz9Y6Ny8</span>的提供商处获得，并可通过地址<span style="background-color: #eaeaea"> /dns4/yablufc.ddns.net/tcp/4567</span>进行访问。元数据字段包含提供者用来定位内容并将其交付给客户端的数据。
+该结果还显示CID可以从ID 为 `12D3KooWBwUERBhJPtZ7hg5N3q1DesvJ67xx9RLdSaStBz9Y6Ny8` 的提供商处获得，并可通过地址 `/dns4/yablufc.ddns.net/tcp/4567` 进行访问。元数据字段包含提供者用来定位内容并将其交付给客户端的数据。
 
-若CID标识的内容可由多个提供者使用，则索引器查询结果可能包含多个提供者记录。批量查询还可用于在单个请求中查找多个CID。这就是响应包含一个<span style="background-color: #eaeaea"> MultihashResults</span> ...数组的原因，其目的是为支持查询多个CID。
+若CID标识的内容可由多个提供者使用，则索引器查询结果可能包含多个提供者记录。批量查询还可用于在单个请求中查找多个CID。这就是响应包含一个`MultihashResults` 数组的原因，其目的是为支持查询多个CID。
 
 若需通过多重哈希而非CID查找提供商信息，请使用[cid.contact/multihash/](https://cid.contact/)端点；若需查看索引器拥有数据的提供商列表，请查看[cid.contact/providers](http://cid.contact/providers)端点。
 

@@ -70,19 +70,16 @@ Grant-funded projects will also have the opportunity to join future acceleration
 In addition, here are some upcoming NFT hackathons related to this exciting collaboration to code away:
 
 1. [ETHDenver](https://www.ethdenver.com/)
-
    - The biggest ETH conference is happening IRL in Denver and virtually with participants from across the globe. Submissions to all tracks qualify for Filecoin and IPFS bounties worth $25k (among several other prizes)!
    - Dates:
      - IRL: 11 - 20 Feb, 2022
      - Virtual: 11 Feb - 21 Mar, 2022
 
-2. [ETHernals by Devfolio](https://ethernals.devfolio.co/):
-
+2. [ETHernals by Devfolio](https://ethernals.devfolio.co/)
    - Participants to this Ethereum-based hackathon can win prizes by building around DAOs, NFTs, DeFi, etc., using their _buidl_ powers. Bounties worth $50k are up for grabs at this event.
    - Dates: 25 Feb - 27 Mar, 2022
 
-3. Kenlabs Metaverse Hackathon:
-
+3. Kenlabs Metaverse Hackathon
    - An 8-week hackathon focused on the metaverse! Build projects on IPFS to answer challenges and compete for the $50k prize pool.
    - Dates: 1 - 20 Apr, 2022
 

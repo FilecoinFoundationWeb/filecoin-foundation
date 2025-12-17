@@ -34,24 +34,20 @@ Apart from incentivizing bug hunters through this program, a first-pass internal
 ## What’s in scope for FVM M1 Bug Bounties
 
 1. [Reference FVM](https://github.com/filecoin-project/ref-fvm) (ref-fvm)
-
    - Reference implementation of the Filecoin VM ([specs](https://github.com/filecoin-project/fvm-project)).
    - Written in Rust and intended to be integrated via FFI into non-Rust clients, or directly into Rust clients.
 
 2. [Lotus - Reference FVM integration](https://github.com/filecoin-project/lotus/pull/8293)
-
    - Integration of the Ref FVM into Lotus via FFI.
    - Written in Go.
    - (The PR listed is merely an entry point into the codebase, but the scope is not limited to it. Please review what's on master and other pending PRs.)
 
 3. [Lotus - Filecoin FFI](https://github.com/filecoin-project/filecoin-ffi/pull/217)
-
    - The FFI glue code.
    - Written in Go and Rust.
    - (As above, the PR linked is merely an entry point, but the scope is not limited to it.)
 
 4. [Built-in Actors](https://github.com/filecoin-project/canonical-actors)
-
    - Written in Rust, Wasm-compiled built-in actors are used by all Filecoin clients.
    - An [actors spec](https://spec.filecoin.io/systems/filecoin_vm/actor/) and [test vectors](https://github.com/filecoin-project/specs-actors/tree/master/test-vectors) for actors are available for reference.
    - An executable spec written in Go is available at [filecoin-project/specs-actors](https://github.com/filecoin-project/specs-actors), these power the Filecoin network pre-FVM.

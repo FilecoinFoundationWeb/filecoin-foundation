@@ -28,17 +28,17 @@ As a blockchain network, Filecoin provides a robust and decentralized platform t
 
 In order to maximize the amount of useful storage that Filecoin can support, [Filecoin Plus](https://fil.org/filplus/ "Filecoin Plus") was introduced to offer a layer of social trust. Clients use a novel resource, _DataCap_, to make deals with storage providers who are greatly incentivized to store their data as it increases their share of block rewards over time.
 
-<h3 style="margin:2em 0 0 0;">Core mechanism</h3>
+## Core mechanism
 
 Root key holders, notaries, clients, and storage providers interact through the allocation and spending of DataCap. Notaries apply through community governance and work with the root key holders to get a grant of DataCap, which they can then allocate out to clients. Those clients are then able to deploy DataCap to the storage providers in deals.
 
-<h3 style="margin:2em 0 0 0;">DataCap</h3>
+## DataCap
 
 This is a resource within the Filecoin network that goes from notaries to trustworthy clients. These clients are using DataCap to make storage deals (in addition to FIL) based on the deal price. DataCap is a “single-use credit,” meaning it is consumed as it is used.
 
 DataCap cannot be transferred between client addresses at this time: it only flows from notaries to specific client addresses. Storage providers can earn extra rewards on the network by serving deals made with DataCap.
 
-<h3 style="margin:2em 0 0 0;">Storage provider incentives</h3>
+## Storage provider incentives
 
 Storage providers earn rewards based on the storage they make available to the network — both the quantity and the quality of the sealed sectors offered can have an impact on a storage providers’ return. In addition to those block rewards, additional revenue in the form of deal price is earned from actually storing data for clients.
 
@@ -56,7 +56,7 @@ Finally, for very large deals in the PiB scale of allocations, applications are 
 
 There are a number of these applications in this group that have been approved and are currently allocating deals, with about 20 total that are in the application process overall.
 
-<h3 style="margin:2em 0 0 0;">Storage provider outreach</h3>
+## Storage provider outreach
 
 As a storage provider, how do you find verified clients? There is a Storage Provider Table where you can add your contact info, locations served, and other details for clients to find and compare with other storage providers. This lives on the [Filecoin Plus Registry](https://plus.fil.org/ "Filecoin Plus Registry"), which is where a client goes to get verified to begin with.
 
@@ -64,7 +64,7 @@ Getting added to the Storage Provider Table requires simply editing and submitti
 
 There are also [Filecoin Slack](https://filecoin.slack.com "Filecoin Slack") channels where storage providers can perform marketing and outreach: [#fil-plus](https://filecoinproject.slack.com/archives/C01DLAPKDGX) and [#fil-deal-market](https://filecoinproject.slack.com/archives/C01KCAAURAN). These channels have wide audience bases with high community engagement with various types of announcements, questions, tools that people are developing, and clients reaching out specifically asking to be connected with storage providers.
 
-<h3 style="margin:2em 0 0 0;">Upcoming improvements</h3>
+## Upcoming improvements
 
 It is important to continue improving and increasing marketing and business development opportunities, and better deal brokering for verified clients and storage providers.
 
@@ -74,7 +74,7 @@ Stay tuned for this and other improvements to the Filecoin Plus program.
 
 {{< youtube id="0dBH_VeZr5s?t=149" title="Filecoin Plus: How Storage Providers Can Engage with Verified Clients" >}}
 
-<h3 style="margin:2em 0 0 0;">Next steps</h3>
+## Next steps
 
 [Join the Filecoin Plus community](https://github.com/filecoin-project/filecoin-plus-client-onboarding "Filecoin Plus onboarding") by participating in issues and discussions on GitHub. There are various client onboarding repos and Filecoin Plus project repos. In particular, you can join the governance calls that occur every two weeks. The [Filecoin Plus Governance repo](https://github.com/filecoin-project/notary-governance/ "Filecoin Plus Governance") contains the issue announcing the next call as well as a calendar of all calls going forward. The Slack channels mentioned previously are probably the best places where the community can help answer any questions.
 

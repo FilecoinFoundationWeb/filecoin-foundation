@@ -30,7 +30,7 @@ You can check out all the applicants [here](https://dorahacks.io/grant/filecoin/
 
 ## DoraHacks First Place
 
-## Box
+### Box
 
 Box bridges the gap between the Web3 stack and mainstream JavaScript developers.
 
@@ -38,7 +38,7 @@ There are currently two ways to interact with Web3 storage solutions: 1) through
 
 Learn more: [Website](https://fx.land/) | [Twitter](https://twitter.com/functionland) | [GitHub](https://github.com/functionland)
 
-## Open Science (Opscientia)
+### Open Science (Opscientia)
 
 Opscientia is a framework for hosting large neuroscience datasets on IPFS.
 
@@ -46,7 +46,7 @@ Neuroimaging data is being generated more quickly than institutional infrastruct
 
 Learn more: [GitHub](https://github.com/opscientia)
 
-## Safient
+### Safient
 
 Safient manages your crypto secrets securely and conveniently, helping you or your beneficiaries claim crypto assets in times of need without intermediaries.
 
@@ -56,13 +56,13 @@ Learn more: [Twitter](https://twitter.com/safientio) | [GitHub](https://github.c
 
 ## DoraHacks Second Place
 
-## Dweb Search
+### Dweb Search
 
 Dweb Search is an open-source, decentralized search engine for IPFS and Filecoin.
 
 The internet needs better decentralized collaboration protocols and incentive mechanisms to protect it from being consumed by tech giants. With Dweb Search, users can add metadata themselves and retrieve search engine snapshots, so everyone can rehost a search engine. Core to this solution is IPFS and Filecoin, which help store much of this critical data.
 
-## Filplus.info
+### Filplus.info
 
 Filplus.info is the first visual dashboard for Filecoin Plus.
 
@@ -70,7 +70,7 @@ Filplus.info is the first visual dashboard for Filecoin Plus.
 
 Learn more: [Twitter](https://twitter.com/filedrive1?lang=en)
 
-## Filscan
+### Filscan
 
 Filscan is a Filecoin data analysis center, providing the ecosystem with data services and a data intelligence platform.
 
@@ -78,13 +78,13 @@ Filscan, as a Filecoin blockchain browser, provides real-time data storage statu
 
 Learn more: [Website](https://filscan.io/)
 
-## Time Rose
+### Time Rose
 
 Time Rose is building the indexing layer of the dataverse.
 
 Time Rose is a bridge between the content providers and the content consumers within the dataverse. It indexes on-chain data and off-chain data (NFT storage, IPFS pinners, Filecoin storage providers, Web2 data providers, etc.).
 
-## Photos
+### Photos
 
 "Photos" is an open-source, backend agnostic gallery application as an alternative for Google and Apple Photos, written in React Native.
 
@@ -92,7 +92,7 @@ In June, Google stopped its free service of Google Photos. For users, this marks
 
 Learn more: [Website](https://fx.land/) | [Twitter](https://twitter.com/functionland) | [GitHub](https://github.com/functionland/photos)
 
-## NFT.storage
+### NFT.storage
 
 NFT.storage provides free, secure, and content-addressed storage for the world’s NFTs.
 
@@ -100,7 +100,7 @@ NFT.Storage is a service backed by Protocol Labs and Pinata specifically for sto
 
 Learn more: [Website](http://nft.storage/) | [GitHub](https://github.com/feliciss/nft.storage)
 
-## SlackBot by Twin Quasar
+### SlackBot by Twin Quasar
 
 SlackBot is an AI-powered Slack bot that will notify storage providers based on predictions and on-chain events.
 
@@ -110,27 +110,27 @@ Learn more: [Website](http://twinquasar.io/)
 
 ## DoraHacks Third Place
 
-## EasyNFT
+### EasyNFT
 
 EasyNFT lets developers easily access IPFS to store their creations in an easy and secure way through simple code interfaces. Learn more: [https://github.com/MatrixStorageTech2021/easynft](https://github.com/MatrixStorageTech2021/easynft "https://github.com/MatrixStorageTech2021/easynft").
 
-## Banksy Finance
+### Banksy Finance
 
 Banksy Finance is the first AI-driven, pool-based NFT lending platform with plans to lead a revolution in the NFT market.
 
-## DeFIL
+### DeFIL
 
 DeFIL is a decentralized finance platform invented for Filecoin, allowing storage providers and retail investors to participate in more composable and permissionless financial applications within the Filecoin ecosystem.
 
-## Five Token
+### Five Token
 
 FiveToken provides professional transaction services for Filecoin storage providers, and bridges the Filecoin ecosystem to the rest of Web3 with reliable ID management. Learn more: [https://fivetoken.co/](https://fivetoken.co/ "https://fivetoken.co/").
 
-## IPFSpace
+### IPFSpace
 
 IPFSpace is a decentralized storage platform based on IPFS. It uses MetaMask to make data storage easier, more reliable, and highly scalable. Learn more: [project demo](https://www.youtube.com/watch?v=F79vfzXCGag).
 
-## Touchain
+### Touchain
 
 Touchain is a fully aggregated, one-stop NFT creative trading platform that links the physical and digital worlds together to create a Web3 lifestyle.
 

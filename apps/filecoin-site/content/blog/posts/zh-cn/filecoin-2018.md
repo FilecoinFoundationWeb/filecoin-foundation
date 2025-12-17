@@ -23,26 +23,6 @@ title: Filecoin 2018 第一、二季度更新
 _template: blog_detail_ch
 ---
 
-## 0. 目录
-
-1. Filecoin 开发进展
-
-   1. go-filecoin 演示
-   2. 代码库开放
-
-2. Filecoin 研究进展
-3. Filecoin 项目路线图
-
-   1. 乐观版时间线
-   2. 目前状态
-   3. 未来里程碑
-
-4. Filecoin 公开讲座和媒体发布
-5. 与filecoin相关的libp2p更新
-6. 与filecoin相关的IPFS更新
-7. 博客和报道的更新
-8. 提请注意和声明
-
 ## 1. Filecoin 开发进展
 
 开宗明义: 到目前为止，Filecoin项目中最令人兴奋的事情是构建了第一个协议的实施: go-Filecoin。几个月来，我们一直为此而努力，以下成果的取得让我们感到非常高兴:
@@ -129,7 +109,7 @@ Filecoin研究小组的工作重点在于以下几个方面。这只是一个简
 
 ## 3. Filecoin 项目路线图
 
-### 随着这次更新，我们将发布一个更详细的项目路线图和一个粗略的、较乐观的时间表。我们计划在[本文档](https://docs.qq.com/doc/DVlRhV0pRbm1NWHVU)中持续更新这份路线图
+随着这次更新，我们将发布一个更详细的项目路线图和一个粗略的、较乐观的时间表。我们计划在[本文档](https://docs.qq.com/doc/DVlRhV0pRbm1NWHVU)中持续更新这份路线图
 
 ### 3.1 路线图/较乐观的时间表
 
@@ -146,74 +126,74 @@ Filecoin研究小组的工作重点在于以下几个方面。这只是一个简
 即将到来的里程碑如下：
 
 - **发布go-filecoin的演示（2018年第三季度）**
-- 作为此次更新的一部分，我们发布一系列演示视频，演示go-filecoin关键特点。
+  - 作为此次更新的一部分，我们发布一系列演示视频，演示go-filecoin关键特点。
 - **go-filecoin 合作者、贡献者预览 （预计2018年第四季度）**
-- 在我们公开Filecoin的代码库之前，我们将邀请一些合作者和项目贡献者预览这些代码；如感兴趣，[可以在此注册](https://goo.gl/forms/LHWWjW6mzFkUXbB42)。
-- 预览的主要目标是改善文字记录，提出并解读初步问题，并为代码库发布做好准备。
-- 预览将有助于我们将知识传递给更多的贡献者，他们可以帮助我们一起应答大量的疑问、处理各种问题，并做好公关推广。
+  - 在我们公开Filecoin的代码库之前，我们将邀请一些合作者和项目贡献者预览这些代码；如感兴趣，[可以在此注册](https://goo.gl/forms/LHWWjW6mzFkUXbB42)。
+  - 预览的主要目标是改善文字记录，提出并解读初步问题，并为代码库发布做好准备。
+  - 预览将有助于我们将知识传递给更多的贡献者，他们可以帮助我们一起应答大量的疑问、处理各种问题，并做好公关推广。
 - **公开go-filecoin的代码库 （预计2018年第四季度/2019年第一季度）**
-- 我们将开放go-filecoin 实现和相关工具代码的GitHub库
-- 这将是社区参与的重要时间点，我们大力鼓励对Filecoin开发以及对相应应用开发有兴趣的开发者积极参与。
-- 从短期来看，代码的公开有可能放慢我们的开发进度，因为我们的团队将面临着开源维护者的责任，还需要花费时间回答广大开发者在学习代码过程中出现的问题。
-- 从长远来看，这将增加代码贡献者的人数，从而推动我们的开发进度。
+  - 我们将开放go-filecoin 实现和相关工具代码的GitHub库
+  - 这将是社区参与的重要时间点，我们大力鼓励对Filecoin开发以及对相应应用开发有兴趣的开发者积极参与。
+  - 从短期来看，代码的公开有可能放慢我们的开发进度，因为我们的团队将面临着开源维护者的责任，还需要花费时间回答广大开发者在学习代码过程中出现的问题。
+  - 从长远来看，这将增加代码贡献者的人数，从而推动我们的开发进度。
 - **上线首个公开的Filecoin测试网络（预计2018年第四季度/2019年第一季度）**
-- 距离我们发布第一个公开的Filecoin测试网络的时间越来越近了。
-- 这将是 **go-filecoin** 节点的测试网络，并将逐渐形成规模-将从上百个节点开始，节点数量将逐步提升到数千个、数万个，以及更多。
-- 我们将在尽可能接近真实的情况下运行测试网络，将为测试网络的矿工输送大规模的数据。
-- 我们将帮助填写过表格（[矿工表格](https://docs.google.com/forms/d/e/1FAIpQLSfdFpWhJj8OIGA2iXrT3bnLgVK9bgR_1iLMPdAcXLxr_1d-pw/viewform)、[早起用户表格](https://docs.google.com/forms/d/e/1FAIpQLSdCOjMenUU7WtT54zeAivCS2nnaWYQIgaXh0eRdIdpi6Pwkew/viewform)）的矿工和客户适职。如果你已经填写了表格，请静候佳音。
+  - 距离我们发布第一个公开的Filecoin测试网络的时间越来越近了。
+  - 这将是 **go-filecoin** 节点的测试网络，并将逐渐形成规模-将从上百个节点开始，节点数量将逐步提升到数千个、数万个，以及更多。
+  - 我们将在尽可能接近真实的情况下运行测试网络，将为测试网络的矿工输送大规模的数据。
+  - 我们将帮助填写过表格（[矿工表格](https://docs.google.com/forms/d/e/1FAIpQLSfdFpWhJj8OIGA2iXrT3bnLgVK9bgR_1iLMPdAcXLxr_1d-pw/viewform)、[早起用户表格](https://docs.google.com/forms/d/e/1FAIpQLSdCOjMenUU7WtT54zeAivCS2nnaWYQIgaXh0eRdIdpi6Pwkew/viewform)）的矿工和客户适职。如果你已经填写了表格，请静候佳音。
 - **矿工测试（10PB+）（预计2019年第一季度）**
-- 我们很快将进行针对大型矿工的首次测试。
-- 我们将从[已经注册的矿工](https://docs.google.com/forms/d/e/1FAIpQLSfdFpWhJj8OIGA2iXrT3bnLgVK9bgR_1iLMPdAcXLxr_1d-pw/viewform)中选择测试对象。
+  - 我们很快将进行针对大型矿工的首次测试。
+  - 我们将从[已经注册的矿工](https://docs.google.com/forms/d/e/1FAIpQLSfdFpWhJj8OIGA2iXrT3bnLgVK9bgR_1iLMPdAcXLxr_1d-pw/viewform)中选择测试对象。
 - **go-filecoin 1.0.0 版本的功能锁定 （预计2019年第一季度/第二季度）**
-- 在正式发布之前，我们将锁定 **go-filecoin** 的功能。此后，直到发布之前，只会进行漏洞修复和代码优化。
-- 在这期间，我们将展开代码检查和审计，为上线做好各方面准备。
+  - 在正式发布之前，我们将锁定 **go-filecoin** 的功能。此后，直到发布之前，只会进行漏洞修复和代码优化。
+  - 在这期间，我们将展开代码检查和审计，为上线做好各方面准备。
 - **安全检查和审核（预计2019年第一/二季度）**
-- 在我们正式发布之前，我们需要对我们的代码库进行全面的安全检查，并进行外部审计。
-- 这对于软件的加密系统安全，是至关重要的一步。
-- 如果你有兴趣检查并审计我们的代币，请联系我们。
+  - 在我们正式发布之前，我们需要对我们的代码库进行全面的安全检查，并进行外部审计。
+  - 这对于软件的加密系统安全，是至关重要的一步。
+  - 如果你有兴趣检查并审计我们的代币，请联系我们。
 - **Filecoin主网上线（预计2019年第二/三季度）**
-- 一旦我们确认可以安全上线，将设定一个主网上线日期
+  - 一旦我们确认可以安全上线，将设定一个主网上线日期
 - **主网的扩容（2019年以后）**
-- 一旦主网上线，我们将与期望加入的矿工密切合作
-- 我们将完善技术，实现扩容，其中包括解决普遍性的区块链扩容问题（链下、分片、以及分区容差问题等）
+  - 一旦主网上线，我们将与期望加入的矿工密切合作
+  - 我们将完善技术，实现扩容，其中包括解决普遍性的区块链扩容问题（链下、分片、以及分区容差问题等）
 - **增加网络的使用率（2019年以后）**
-- 一旦主网上线，我们将与希望使用Filecoin的客户紧密合作。
-- 我们将整合和支持各类应用，以促进Filecoin更为广泛的使用。
+  - 一旦主网上线，我们将与希望使用Filecoin的客户紧密合作。
+  - 我们将整合和支持各类应用，以促进Filecoin更为广泛的使用。
 - **网络优化（2019年以后）**
-- 我们已经在研究，寻求显著优化Filecoin以及一般性区块链网络的方法。
-- 我们将通过标准的开源优化提议过程，持续优化Filecoin网络。
+  - 我们已经在研究，寻求显著优化Filecoin以及一般性区块链网络的方法。
+  - 我们将通过标准的开源优化提议过程，持续优化Filecoin网络。
 - **建立Filecoin基金会（2019年以后）**
-- 建立并开启Filecoin基金会，来保证Filecoin网络安全和治理等。
-- 基金会对于区块链网络是至关重要的机构，我们对自己的基金会有很高的期望。如果你有兴趣与我们一起探讨关于治理、推动Filecoin 在未来的研究和使用、公共存储设备等相关问题，请联系我们。
+  - 建立并开启Filecoin基金会，来保证Filecoin网络安全和治理等。
+  - 基金会对于区块链网络是至关重要的机构，我们对自己的基金会有很高的期望。如果你有兴趣与我们一起探讨关于治理、推动Filecoin 在未来的研究和使用、公共存储设备等相关问题，请联系我们。
 - **更多**
-- 我们还有很多其他的计划，但我们首先将关注点集中在以上列出的这些里程碑事件上。
+  - 我们还有很多其他的计划，但我们首先将关注点集中在以上列出的这些里程碑事件上。
 
 ## 4. Filecoin 公开讲座和媒体发布
 
 ### 在过去的一年里，我们基本上离开了公众的视野，转而集中精力进行代码开发；我们只进行了一些公开演讲，拜访了一些研究团队。接下来，这些活动也将保持目前规模，直到主网正式上线
 
 - **公开演讲** _有些提供了视频链接_
-- 2018-01: Filecoin: protocol overview, the important results, and new open problems (Juan Benet, BPASE 2018)
-- 2018-01: Proof of Replication using Depth Robust Graphs (Ben Fisch, BPASE 2018)
-- 2018-03: [Filecoin: a robust foundation for human knowledge](https://www.youtube.com/watch?v=6h2WNxEV8q4) (Juan Benet, Blockstack Berlin 2018)
-- 2018-04: [Filecoin and the Rise of Open Services](https://www.youtube.com/watch?v=IfLIoOr4p0A) (Juan Benet, MIT Bitcoin Club 2018)
-- 2018-06: [Good SNARKs are here needed](https://www.youtube.com/watch?v=QII1xq9J7NY) (Nicola Greco, Zcon0)
-- 2018-07: Filecoin as a user of libp2p (Juan Benet, libp2p dev meetings)
-- _如邀请我们在相关会议发表演讲，_[请联系](https://goo.gl/forms/xQQRSnWibbC6DTt22)
+  - 2018-01: Filecoin: protocol overview, the important results, and new open problems (Juan Benet, BPASE 2018)
+  - 2018-01: Proof of Replication using Depth Robust Graphs (Ben Fisch, BPASE 2018)
+  - 2018-03: [Filecoin: a robust foundation for human knowledge](https://www.youtube.com/watch?v=6h2WNxEV8q4) (Juan Benet, Blockstack Berlin 2018)
+  - 2018-04: [Filecoin and the Rise of Open Services](https://www.youtube.com/watch?v=IfLIoOr4p0A) (Juan Benet, MIT Bitcoin Club 2018)
+  - 2018-06: [Good SNARKs are here needed](https://www.youtube.com/watch?v=QII1xq9J7NY) (Nicola Greco, Zcon0)
+  - 2018-07: Filecoin as a user of libp2p (Juan Benet, libp2p dev meetings)
+  - _如邀请我们在相关会议发表演讲，_[请联系](https://goo.gl/forms/xQQRSnWibbC6DTt22)
 - **大学、研究团队和社区活动** _按时间顺序_
-- [Security Lab](https://seclab.stanford.edu/) @ Stanford CS
-- [Decentralized Information Group](http://dig.csail.mit.edu/) @ MIT CSAIL ([visit](https://www.csail.mit.edu/event/help-us-decentralize-web-overview-ipfs-libp2p-ipld-and-filecoin))
-- Cryptoeconomics Lab @ MIT Sloan
-- [Digital Currency Initiative](https://dci.mit.edu/) @ MIT Media Lab
-- [FilecoinClub Beijing Community Meetup](https://www.youtube.com/watch?v=95p5fJ6_wLY)
-- [CS294-144](https://berkeley-blockchain.github.io/cs294-144-s18/) @ UC Berkeley
-- University College London (UCL)
-- Stanford Graduate School of Business (GSB)
-- Harvard Business School (HBS)
-- [IMDEA Software Institute](https://software.imdea.org/)
-- [Center for Blockchain Research](https://cbr.stanford.edu/) @ Stanford CS
-- Filecoin Demo @ Decentralized Web Summit 2018
-- _希望Filecoin 团队拜访贵实验室进行交流？_ [_请告知我们_](https://goo.gl/forms/BJHIg6r5nJGF5sQ72)
+  - [Security Lab](https://seclab.stanford.edu/) @ Stanford CS
+  - [Decentralized Information Group](http://dig.csail.mit.edu/) @ MIT CSAIL ([visit](https://www.csail.mit.edu/event/help-us-decentralize-web-overview-ipfs-libp2p-ipld-and-filecoin))
+  - Cryptoeconomics Lab @ MIT Sloan
+  - [Digital Currency Initiative](https://dci.mit.edu/) @ MIT Media Lab
+  - [FilecoinClub Beijing Community Meetup](https://www.youtube.com/watch?v=95p5fJ6_wLY)
+  - [CS294-144](https://berkeley-blockchain.github.io/cs294-144-s18/) @ UC Berkeley
+  - University College London (UCL)
+  - Stanford Graduate School of Business (GSB)
+  - Harvard Business School (HBS)
+  - [IMDEA Software Institute](https://software.imdea.org/)
+  - [Center for Blockchain Research](https://cbr.stanford.edu/) @ Stanford CS
+  - Filecoin Demo @ Decentralized Web Summit 2018
+  - _希望Filecoin 团队拜访贵实验室进行交流？_ [_请告知我们_](https://goo.gl/forms/BJHIg6r5nJGF5sQ72)
 
 ## 5. 与Filecoin相关的libp2p更新
 
@@ -229,27 +209,27 @@ libp2p 也是协议实验室主导的项目之一，Filecoin 构建于 [libp2p](
 
 ## 6. 与Filecoin相关的IPFS更新
 
-### [IPFS](https://ipfs.tech/) 也是协议实验室主导的项目之一，Filecoin 构建于 IPFS之上，并在很大程度上依赖于IPFS 。许多IPFS的用户也希望成为Filecoin的用户。因此，IPFS 的性能和用例会极大有益于Filecoin。以下，我们简要提供一些IPFS与Filecoin相关的更新信息
+[IPFS](https://ipfs.tech/) 也是协议实验室主导的项目之一，Filecoin 构建于 IPFS之上，并在很大程度上依赖于IPFS 。许多IPFS的用户也希望成为Filecoin的用户。因此，IPFS 的性能和用例会极大有益于Filecoin。以下，我们简要提供一些IPFS与Filecoin相关的更新信息
 
 - **什么是IPFS？:** 一个内容寻址的超媒体分发协议。[查看这个网站](https://ipfs.tech/)了解更多。
 - **IPFS对浏览器的支持：** IPFS具有强大的浏览器支持，能够完全通过[js-ipfs](https://js.ipfs.tech/)和[ipfs-companion](https://github.com/ipfs-shipyard/ipfs-companion)在浏览器中工作。这让编写使用Filecoin的网页应用程序变得非常容易。
 - **浏览器对IPFS的支持：** IPFS协议处理程序（如ipfs://）已被添加到Brave和Firefox Nightly中。这些来自主流企业的支持，将使去中心化技术更有可能被主流用户接触到。
 - **大量更新发布：** go-ipfs 已经发布了[三个版本](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md): [v0.4.15](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0415-2018-05-09)、 [v0.4.16](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0416-rc3-2018-07-09)、 [v0.4.17](https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0417-2018-07-27)；而js-ipfs已经发布了[19个版本](https://github.com/ipfs/js-ipfs/releases)，包括: [v0.28.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.28.0)、 [v0.29.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.29.0)、 [v0.30.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.30.0)、 [v0.31.0](https://github.com/ipfs/js-ipfs/releases/tag/v0.31.0)。 可以查看这些链接，里面有关于新功能摘要和更新日志的全部内容。
 - **IPFS明星项目：**
-- [DTube - decentralized video platform](https://d.tube/)
-- [JanusVR viewer for Decentraland (content from ipfs)](https://www.youtube.com/watch?v=841vXBopH68)
-- [Textile Photos - a digital wallet for your photos, end-to-end encrypted](https://www.textile.photos/)
-- Paratii - distributed curation protocol and streaming engine
-- [Peergos - end-to-end encrypted, p2p file storage and sharing](https://peergos.org/)
+  - [DTube - decentralized video platform](https://d.tube/)
+  - [JanusVR viewer for Decentraland (content from ipfs)](https://www.youtube.com/watch?v=841vXBopH68)
+  - [Textile Photos - a digital wallet for your photos, end-to-end encrypted](https://www.textile.photos/)
+  - Paratii - distributed curation protocol and streaming engine
+  - [Peergos - end-to-end encrypted, p2p file storage and sharing](https://peergos.org/)
 - **社区讲座、文章和教程：**
-- _文章_: [Textile: Adding the next million peers to IPFS](https://medium.com/textileio/adding-the-next-million-peers-to-ipfs-76d356352d14)
-- _文章_: [Decentralized code distribution for the future of open source](https://medium.com/textileio/decentralized-code-distribution-for-the-future-of-open-source-2dc58f1153b2)
-- _讲座_: [Real serverless with CRDTs and IPFS (scalarconf)](https://www.youtube.com/watch?v=EscG2aytq10)
-- _讲座_: IPFS Lightning Talks at DWeb Summit
-- _教程_: [Building an interplanetary ĐApp from scratch](https://medium.com/textileio/building-an-interplanetary-%C4%91app-from-scratch-51f9b8be5a74)
-- _教程_: [IPFS Cluster Peer Installer for EC2](https://medium.com/textileio/tutorial-series-setting-up-an-ipfs-peer-4056e6c69612)
-- _教程_: [Code a simple P2P blockchain in Go](https://medium.com/@mycoralhealth/code-a-simple-p2p-blockchain-in-go-46662601f417)
-- _教程_: [From Zero to Interplanetary Hero (browser-based ĐApps with IPFS)](https://medium.freecodecamp.org/from-zero-to-interplanetary-hero-7e62f7d4427)
+  - _文章_: [Textile: Adding the next million peers to IPFS](https://medium.com/textileio/adding-the-next-million-peers-to-ipfs-76d356352d14)
+  - _文章_: [Decentralized code distribution for the future of open source](https://medium.com/textileio/decentralized-code-distribution-for-the-future-of-open-source-2dc58f1153b2)
+  - _讲座_: [Real serverless with CRDTs and IPFS (scalarconf)](https://www.youtube.com/watch?v=EscG2aytq10)
+  - _讲座_: IPFS Lightning Talks at DWeb Summit
+  - _教程_: [Building an interplanetary ĐApp from scratch](https://medium.com/textileio/building-an-interplanetary-%C4%91app-from-scratch-51f9b8be5a74)
+  - _教程_: [IPFS Cluster Peer Installer for EC2](https://medium.com/textileio/tutorial-series-setting-up-an-ipfs-peer-4056e6c69612)
+  - _教程_: [Code a simple P2P blockchain in Go](https://medium.com/@mycoralhealth/code-a-simple-p2p-blockchain-in-go-46662601f417)
+  - _教程_: [From Zero to Interplanetary Hero (browser-based ĐApps with IPFS)](https://medium.freecodecamp.org/from-zero-to-interplanetary-hero-7e62f7d4427)
 
 ## 7. 博客和更新的变动
 
