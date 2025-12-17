@@ -1,0 +1,24 @@
+import type { CollectionPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
+import type { StructuredDataParams } from '@filecoin-foundation/utils/types/structuredDataParams'
+
+import { PATHS } from '@/constants/paths'
+
+import type { CaseStudy } from '../types/caseStudyType'
+
+import { generateCaseStudyStructuredData } from './generateCaseStudyStructuredData'
+
+export function generateStructuredData(
+  seo: StructuredDataParams,
+  sortedPosts: Array<CaseStudy>,
+): CollectionPageGraph {
+  return generateCaseStudyStructuredData({
+    name: seo.title,
+    description: seo.description,
+    items: sortedPosts.map((post) => ({
+      path: `${PATHS.CASE_STUDIES.path}/${post.slug}`,
+      headline: post.title,
+      description: post.pageDescription,
+      image: post.image?.src,
+    })),
+  })
+}
