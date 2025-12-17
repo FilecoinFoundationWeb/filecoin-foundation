@@ -13,6 +13,7 @@ description: Resiliently stores chain data across a decentralized network of
 website: https://www.kyve.network/
 tech:
   - filecoin
+repo: https://github.com/KYVENetwork
 seo:
   title: KYVE Network | Decentralized, Resilient Chain Data Storage
   description: KYVE Network securely and resiliently stores chain data across a
