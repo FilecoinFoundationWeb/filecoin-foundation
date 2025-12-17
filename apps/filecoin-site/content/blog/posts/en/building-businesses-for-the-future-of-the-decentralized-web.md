@@ -32,7 +32,9 @@ _Outlier Ventures CEO & Founder Jamie Burke and Protocol Labs Ecosystem Lead Col
 
 ## Data Businesses of the Web2 Past and the Web3 Future
 
-> Filecoin is a movement to create a decentralized, efficient, and robust foundation for humanity’s information. - Colin Evran
+> "Filecoin is a movement to create a decentralized, efficient, and robust foundation for humanity’s information."
+>
+> — Colin Evran
 
 This vision presents a massive business opportunity. In the next four years, the [amount of data produced globally will triple to about 175 zettabytes](https://www.forbes.com/sites/tomcoughlin/2018/11/27/175-zettabytes-by-2025/). Today’s data storage infrastructure is only capable of maintaining 5% of that anticipated data.
 
@@ -54,7 +56,9 @@ Fundamentally, this changes the paradigm of the global data storage industry. Bu
 
 ## Web3 Data Storage Use Cases
 
-> You can’t qualify as a Web3 startup if you aren’t already looking at how you handle the storage of data. - Jamie Burke, Outlier Ventures
+> "You can’t qualify as a Web3 startup if you aren’t already looking at how you handle the storage of data."
+>
+> — Jamie Burke, Outlier Ventures
 
 Filecoin and IPFS are general purpose platforms, so the range of use cases are wide:
 
@@ -83,4 +87,4 @@ Today, the main way data is consumed is in the context of compute. A complete de
 
 ## The Filecoin Base Camp Accelerator by Outlier Ventures
 
-The FIlecoin Base Camp Accelerator is a three-month remote program focused on accelerating the growth of early-stage projects, ideas, and concepts focused on the Filecoin, IPFS, and libp2p networks. Up to $250,000 is available for projects that are part of Base Camp. Applications are open at [outlierventures.io/base-camp](https://outlierventures.io/base-camp/filecoin-base-camp/).
+The Filecoin Base Camp Accelerator is a three-month remote program focused on accelerating the growth of early-stage projects, ideas, and concepts focused on the Filecoin, IPFS, and libp2p networks. Up to $250,000 is available for projects that are part of Base Camp. Applications are open at [outlierventures.io/base-camp](https://outlierventures.io/base-camp/filecoin-base-camp/).

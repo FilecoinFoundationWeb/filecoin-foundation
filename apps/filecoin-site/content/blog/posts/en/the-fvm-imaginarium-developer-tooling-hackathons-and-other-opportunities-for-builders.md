@@ -60,19 +60,19 @@ Block Explorers provide essential real-time and historical information about the
 
 Beryx, Filfox and Starboard provide contract verification as a feature, allowing users to verify the authenticity and integrity of smart contracts deployed on the Filecoin blockchain by ensuring that its source code has actually generated the bytecode deployed on-chain.
 
-## Beryx Explorer
+### Beryx Explorer
 
 [Beryx Explorer](https://beryx.zondax.ch/) by the Zondax team is a comprehensive tool to easily extract data about the Filecoin network in a ‘ready to add to your code’ format from the Filecoin network and interact with custom smart contracts. Check out the [Beryx Client tool for JS](https://www.npmjs.com/package/@zondax/beryx) to use in your project. Verify your smart contract via Beryx [here](https://beryx.zondax.ch/contract_verifier).
 
-## Filfox
+### Filfox
 
 [Filfox](https://filfox.info/en) is another comprehensive explorer with information about Filecoin Network including messages, transactions, tipsets, mempool, etc. The Filfox [contract verifier](https://filfox.info/en/contract) allows you to pick the compiler version and the License type when you verify your contract.
 
-## Starboard
+### Starboard
 
 [Starboard](https://fvm.starboard.ventures/explorer) had various analytics products to give you an insight into the Filecoin Network, including the Block explorer. Use the [Spacescope API](https://spacescope.io/) to get statistics about the Filecoin Network and build data driven applications and dapps for Filecoin Economy participants i.e. Storage providers, clients etc. The Starboard Ventures FVM dashboard recently released their [Contract Verification Tool](https://fvm.starboard.ventures/explorer/verifier/) as well. It allows you to pick the License type too.
 
-## Glif
+### Glif
 
 [Glif](https://www.glif.io) is your go-to tooling option for all information on Filecoin Lotus nodes. The strives to give depth, when it comes to metrics about the network. Check out the [Glif API](https://api.node.glif.io/) for your project.
 
@@ -84,27 +84,27 @@ For more information, check out [this deep dive into all the available Filecoin 
 
 Cross chain solutions make it possible to build a variety of cross chain projects including cross chain swaps, NFT bridging, cross chain lending, and more. Two key actions required when building a dApp are moving tokens from one chain to another and message passing. Regardless of the blockchain your dApp uses, you can utilize its native tokens along with the client contract deal-making kit to create Filecoin Storage deals directly from your dApp This allows you to seamlessly integrate Filecoin functionality into your dApp thus reducing the need to involve a separate storage platform to access data for your dApp.
 
-## Celer
+### Celer
 
 [Celer](https://celer.network/) is a blockchain interoperability protocol enabling a one-click user experience accessing tokens, DeFi, GameFi, NFTs, governance, and more across multiple chains.Two kind of bridging experiences are available on Celer: Liquidity Pool based model, bridging that is based by deep liquidity pools using USDC, USDT and Ethereum and the other model pegged token model where a wrapped FIL is created on the Ethereum blockchain. NFT Bridging is made possible by the NFT bridging framework. Check out the [cBridge documentation](https://cbridge-docs.celer.network/) for all of these and the [GitHub for smart contract examples](https://github.com/celer-network/sgn-v2-contracts) to get started.
 
-## Axelar
+### Axelar
 
 [Axelar](https://axelar.network/) delivers secure cross-chain communication for Web3, enabling you to build Interchain dApps that grow beyond a single chain. The Axelar Filecoin integration Axelar is truly decentralized and fully permissionless, and it is built on a proof-of-stake model. They enable cross chain solutions possible by passing messages between chains using a simple payload. Check out the [Axelar documentation](https://docs.axelar.dev/resources/testnet) to start building cross chain projects on FVM Hyperspace testnet.
 
-## Oracle support with Tellor
+### Oracle support with Tellor
 
 [Tellor](https://tellor.io/) is a generic oracle that works for any data at any frequency. If you’re building DeFi apps, you can get the price feeds info from the Tellor oracle, and for any other type of apps, real world data is available too. Check out the contract references [here](https://docs.tellor.io/tellor/the-basics/contracts-reference#filecoin-fvm).
 
-## wFIL
+### wFIL
 
 ​​wFIL is created by depositing FIL into a smart contract that mints an equivalent amount of wFIL on the Ethereum (or another) blockchain. This wFIL can then be used in Ethereum or other DeFi protocols, such as decentralized exchanges, lending and borrowing platforms, and yield farming applications. wFIL support is available via Glif, cBridge and will be available on Axelar soon!
 
-## DEX
+### DEX
 
 We will be announcing a DEX from the community in the coming weeks! Follow the [#fil-builders](https://filecoinproject.slack.com/archives/CRK2LKYHW) channel on [Filecoin Slack](https://filecoin.io/slack) for more information.
 
-## Hackathons, Accelerators & More
+### Hackathons, Accelerators & More
 
 ![](/uploads/fvm-banner-dapp-radar-landing.webp)
 

@@ -62,9 +62,9 @@ title: 为什么要成为Filecoin存储提供者？
 - [为Filecoin存储提供者设计的视频列表](https://youtube.com/playlist?list=PL_0VrY55uV1_Z83vRQq5DsSI20X1YWO4q)
 - ProtoSchool “Filecoin上验证存储”[教程](https://proto.school/verifying-storage-on-filecoin)
 - 教程:
-- [成为存储提供者教程](https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/)
-- [深入探索存储提供者生态](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/)
-- [Filecoin's Island Economy](https://filecoin.io/blog/posts/filecoin-s-island-economy/)
+  - [成为存储提供者教程](https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/)
+  - [深入探索存储提供者生态](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/)
+  - [Filecoin's Island Economy](https://filecoin.io/blog/posts/filecoin-s-island-economy/)
 
 记得跟社区保持联系:
 

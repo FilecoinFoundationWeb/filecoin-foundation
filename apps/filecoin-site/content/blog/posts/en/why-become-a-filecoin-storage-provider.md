@@ -64,9 +64,9 @@ If you’re interested in becoming a Filecoin Storage Provider, learn more by ex
 - A [playlist](https://youtube.com/playlist?list=PL_0VrY55uV1_Z83vRQq5DsSI20X1YWO4q) dedicated to Filecoin Storage Providers
 - ProtoSchool's Verifying Storage on Filecoin [course](https://proto.school/verifying-storage-on-filecoin)
 - Guides:
-- [A Guide to Filecoin Storage Mining](https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/)
-- [A Deep Dive into the Storage Provider Ecosystem](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/)
-- [Filecoin's Island Economy](https://filecoin.io/blog/posts/filecoin-s-island-economy/)
+  - [A Guide to Filecoin Storage Mining](https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/)
+  - [A Deep Dive into the Storage Provider Ecosystem](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/)
+  - [Filecoin's Island Economy](https://filecoin.io/blog/posts/filecoin-s-island-economy/)
 
 Be sure to also get in touch with the community:
 

@@ -30,7 +30,9 @@ Yesterday we wrapped up Day 1 at Filecoin Liftoff Week. We heard from Filecoin f
 
 In his opening keynote, Founder and CEO of Protocol Labs Juan Benet asked everyone to first take a step back and think about what our lives are like now. He divided civilization into pre-computing and post-computing eras, and emphasized that very few of our actions today are done without Internet assistance. He asked the audience to consider how even the most mundane actions we perform today online are superpowers when compared to the capabilities of the pre-computing era. We are giving computers more privileged access to our daily lives, our daily communications, and our relationships. Juan wrapped all of this up in the statement that we don’t know where the world will be in 80 years, and it is prudent of us to solve the issues with the Internet today in order to best set ourselves up for whatever the future may hold.
 
-> “Filecoin’s mission is to create a decentralized, efficient, and robust foundation for humanity’s information.”
+> "Filecoin’s mission is to create a decentralized, efficient, and robust foundation for humanity’s information."
+>
+> — Juan Benet
 
 Juan closed off by encouraging the Filecoin community to take ownership of the network and take it to the next level.
 

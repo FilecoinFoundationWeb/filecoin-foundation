@@ -24,9 +24,9 @@ title: Introducing the Filecoin Economy
 _template: blog_detail
 ---
 
-_“It ain’t pretty in the sense that it’s nice and neat, and many people have tried to get rid of creative solutions that are complex, but society is complex, people are complex. And for us to have simple solutions to complex problems: not a good idea.”_
-
-> _–_ [_Elinor Ostrom_](https://www.youtube.com/watch?v=Qr5Q3VvpI7w&feature=youtu.be&t=80)_, awarded the 2009 Nobel Memorial Prize in Economic Sciences for her “analysis of economic governance, especially the commons”_
+> It ain’t pretty in the sense that it’s nice and neat, and many people have tried to get rid of creative solutions that are complex, but society is complex, people are complex. And for us to have simple solutions to complex problems: not a good idea."
+>
+> — [Elinor Ostrom](https://www.youtube.com/watch?v=Qr5Q3VvpI7w&feature=youtu.be&t=80), awarded the 2009 Nobel Memorial Prize in Economic Sciences for her "analysis of economic governance, especially the commons"
 
 [![Report Download](https://filecoin.io/vintage/images/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
 

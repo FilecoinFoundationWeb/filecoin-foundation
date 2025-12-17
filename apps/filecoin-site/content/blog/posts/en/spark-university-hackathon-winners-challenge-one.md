@@ -25,7 +25,7 @@ _template: blog_detail
 
 In June, we shared the news that Filecoin was participating as a challenge partner in the [Spark University Hackathon](https://filecoin.io/blog/spark-university-hackathon/), an eight-week online competition focused on the development of novel blockchain solutions. The hackathon ran from June to August, and we are excited to announce the winners of the first of two Filecoin-focused challenges we sponsored. The challenge had the following prompt:
 
-> _Build a system for storing, retrieving, and verifying scientific or other research data on Filecoin. Filecoin will store treasure troves of critically important public data, such as encyclopedias, open access scientific papers, Creative Commons data sets, historical documents, and literature. In this challenge, you will explore those possibilities for storing, using, and distributing public data. You may wish to take advantage of Filecoin’s data integrity & verification capabilities, or reference the Starling Storage project for inspiration._
+_Build a system for storing, retrieving, and verifying scientific or other research data on Filecoin. Filecoin will store treasure troves of critically important public data, such as encyclopedias, open access scientific papers, Creative Commons data sets, historical documents, and literature. In this challenge, you will explore those possibilities for storing, using, and distributing public data. You may wish to take advantage of Filecoin’s data integrity & verification capabilities, or reference the Starling Storage project for inspiration._
 
 ## Third Place
 

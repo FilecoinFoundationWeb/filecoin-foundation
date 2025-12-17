@@ -32,7 +32,9 @@ Last week we [highlighted](https://filecoin.io/blog/hackfs-teams-vol-1/) OMO Ear
 
 ![Kazan](https://filecoin.io/vintage/images/blog/hfs-kazan.png)
 
-> _“If I play guitar and put out a track, someone else can add drums, and another person can add vocals, and the collaboration goes on and on. The possibilities are endless.” – Samikshan Bairagya_
+> "If I play guitar and put out a track, someone else can add drums, and another person can add vocals, and the collaboration goes on and on. The possibilities are endless."
+>
+> — Samikshan Bairagya
 
 **Team member:** Samikshan Bairagya
 
