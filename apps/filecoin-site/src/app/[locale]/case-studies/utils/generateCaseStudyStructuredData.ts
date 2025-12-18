@@ -3,7 +3,7 @@ import type { CollectionPage, ItemList, ListItem } from 'schema-dts'
 import type { CollectionPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 
-import { PATHS } from '@/constants/paths'
+import { PATHS, type NextRouteWithoutLocale } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
@@ -13,7 +13,7 @@ type GenerateCaseStudyStructuredDataProps = {
   name: string
   description: string
   items?: Array<{
-    path: string
+    path: NextRouteWithoutLocale
     headline: string
     description?: string
     image?: string

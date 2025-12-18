@@ -10,9 +10,15 @@ import type {
   ItemList,
   BlogPosting,
   CollectionPage,
+  Article,
 } from 'schema-dts'
 
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
+
+export type ArticleGraph = {
+  '@context': typeof SCHEMA_CONTEXT_URL
+  '@graph': Array<Article | BreadcrumbList>
+}
 
 export type BlogPageGraph = {
   '@context': typeof SCHEMA_CONTEXT_URL
@@ -46,6 +52,7 @@ export type WebPageGraph = {
 
 type StructuredDataScriptProps = {
   structuredData:
+    | ArticleGraph
     | BlogPageGraph
     | BlogPostPageGraph
     | CollectionPageGraph
