@@ -3,7 +3,7 @@ import Image, { type ImageProps } from 'next/image'
 import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
-import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils/buildImageSizeProp'
+import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils'
 
 import { PATHS } from '@/constants/paths'
 
@@ -48,11 +48,11 @@ export function BlogPageHeader({
         </Button>
       </div>
 
-      <div className="relative aspect-3/2">
+      <div className="relative aspect-video">
         <Image
           fill
           priority
-          className="rounded-2xl"
+          className="card-image"
           quality={100}
           sizes={buildImageSizeProp({ startSize: '100vw', md: '768px' })}
           src={image.src}

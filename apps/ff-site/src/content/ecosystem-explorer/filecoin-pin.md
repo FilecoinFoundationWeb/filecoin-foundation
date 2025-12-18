@@ -5,6 +5,8 @@ updated-on: 2025-12-10T22:16:00.000Z
 published-on: 2025-12-10T22:16:00.000Z
 email: encrypted::U2FsdGVkX1+Fj8UrOoRC1Nlyp9eMyvFBVpMm0214uR4=
 full-name: encrypted::U2FsdGVkX1/8bUToKwrf6ICC/KAONOhY/W7er1COZjw=
+image:
+  src: /assets/images/filecoin-pin-logo.webp
 category: storage-provider
 description: Makes Interplanetary File System (IPFS) content easy to persist,
   keep online, and verify — simple tools, familiar workflows.

@@ -1,5 +1,12 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.5.10
+
+### Patch Changes
+
+- 590001d: Add new capitalize util function and refactor export
+- f963e9f: Refactor CardImage and types
+
 ## 0.5.9
 
 ### Patch Changes

@@ -3,7 +3,7 @@ import { Link } from '@/i18n/navigation'
 import {
   CardImage,
   type CardImageProps,
-} from '@filecoin-foundation/ui/Card/CardImage'
+} from '@filecoin-foundation/ui-filecoin/Card/CardImage'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 
 import { PATHS } from '@/constants/paths'
@@ -42,17 +42,17 @@ export function BlogCard({
         title={title}
         className="group relative h-full"
       >
-        <CardImage image={image || graphicsData.fallback} />
+        <CardImage {...(image || graphicsData.fallback)} />
 
         <div className="flex flex-col gap-4 py-5">
           <TagGroup tags={tags} />
-          <span className="group-focus-within:text-[var(--color-card-heading-hover)] group-hover:text-[var(--color-card-heading-hover)]">
+          <span className="group-focus-within:text-(--color-card-heading-hover) group-hover:text-(--color-card-heading-hover)">
             <Heading tag="h2" variant="card-heading">
               {title}
             </Heading>
           </span>
 
-          <p className="text-[var(--color-paragraph-text)]">{description}</p>
+          <p className="text-(--color-paragraph-text)">{description}</p>
 
           <PostMetadata author={author} date={date} />
         </div>
