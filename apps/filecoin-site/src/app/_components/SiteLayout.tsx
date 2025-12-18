@@ -49,7 +49,7 @@ export function SiteLayout({
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
       </head>
       <body className="bg-white font-sans text-base/5.5">
-        <main>{children}</main>
+        <main className="overflow-x-hidden">{children}</main>
         <Footer />
 
         {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
