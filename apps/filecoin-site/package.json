@@ -40,7 +40,7 @@
     "react-hook-form": "^7.65.0",
     "react-lite-youtube-embed": "^3.3.2",
     "swr": "^2.3.6",
-    "tinacms": "^2.9.0"
+    "tinacms": "^3.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
