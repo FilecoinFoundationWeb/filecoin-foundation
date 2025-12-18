@@ -5,7 +5,7 @@ import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
-import { FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
+import { FILECOIN_CLOUD_URL, FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -44,7 +44,7 @@ export function HeroSection() {
               'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
             ]}
             cta={[
-              <Button href="https://filecoin.cloud/" variant="primary">
+              <Button href={FILECOIN_CLOUD_URL} variant="primary">
                 Get started with Filecoin Onchain Cloud
               </Button>,
             ]}
