@@ -4,7 +4,7 @@ import type { ImageProps } from 'next/image'
 
 import { clsx } from 'clsx'
 
-import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils/buildImageSizeProp'
+import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils'
 
 type ImageGridProps = {
   children: Array<React.ReactElement<ImageProps>>

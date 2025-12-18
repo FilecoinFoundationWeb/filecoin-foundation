@@ -10,80 +10,65 @@ import StarlingLabLogo from '@/assets/logos/starling-lab-icon-logo.png'
 import VictorChangLogo from '@/assets/logos/victor-chang-icon-logo.svg'
 
 import type {
-  HEXCodeType,
   ImageLogoProps,
   SVGLogoProps,
 } from '@/components/SimpleCardWithLogo'
 
-type SVGLogoConfig = {
-  type: 'svg'
-  asset: SVGLogoProps['src']
-  bgColor: HEXCodeType
-  color: HEXCodeType
-}
-
-type ImageLogoConfig = {
-  type: 'image'
+type SVGLogoConfig = Omit<SVGLogoProps, 'src'> & { asset: SVGLogoProps['src'] }
+type ImageLogoConfig = Omit<ImageLogoProps, 'src'> & {
   asset: ImageLogoProps['src']
-  bgColor: HEXCodeType
 }
 
 const LOGO_CONFIG: Record<string, ImageLogoConfig | SVGLogoConfig> = {
-  'victor-chang': {
-    type: 'svg',
-    asset: VictorChangLogo,
-    bgColor: '#ffffff',
-    color: '#000000',
-  },
   aethir: {
     type: 'svg',
     asset: AethirLogo,
-    bgColor: '#111111',
-    color: '#D7FE51',
+    bgColor: '#111',
   },
   'easier-data-initiative': {
     type: 'image',
     asset: EasierDataInitiativeLogo,
-    bgColor: '#ffffff',
+    bgColor: '#fff',
   },
   'flickr-foundation': {
     type: 'svg',
     asset: FlickrFoundationLogo,
-    bgColor: '#EDEDED',
-    color: '#FF0084',
+    bgColor: '#ededed',
   },
   'internet-archive': {
     type: 'svg',
     asset: InternetArchiveLogo,
-    bgColor: '#222222',
-    color: '#ffffff',
+    bgColor: '#222',
   },
   'mit-open-learning': {
     type: 'svg',
     asset: MITOpenLearningLogo,
-    bgColor: '#325B6B',
-    color: '#ffffff',
+    bgColor: '#325b6b',
   },
   'seti-institute': {
     type: 'svg',
     asset: SetiInstituteLogo,
-    bgColor: '#000000',
-    color: '#ffffff',
+    bgColor: '#000',
   },
   smithsonian: {
     type: 'image',
     asset: SmithsonianLogo,
-    bgColor: '#ffffff',
+    bgColor: '#000',
   },
   solana: {
     type: 'image',
     asset: SolanaLogo,
-    bgColor: '#000000',
+    bgColor: '#000',
   },
-  'starling-labs': {
+  'starling-lab': {
     type: 'image',
     asset: StarlingLabLogo,
-    bgColor: '#ffffff',
+    bgColor: '#fff',
+  },
+  'victor-chang': {
+    type: 'svg',
+    asset: VictorChangLogo,
+    bgColor: '#fff',
   },
 }
 

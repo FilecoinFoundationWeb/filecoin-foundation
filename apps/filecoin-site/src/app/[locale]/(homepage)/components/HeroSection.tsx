@@ -13,7 +13,7 @@ export function HeroSection() {
   return (
     <PageSection backgroundVariant="transparentDark" paddingVariant="none">
       <div className="space-y-15 py-25 md:py-30">
-        <Announcement centered href={PATHS.BLOG.path}>
+        <Announcement centered href="https://filecoin.cloud/">
           {t('announcement')}
         </Announcement>
 
@@ -21,6 +21,7 @@ export function HeroSection() {
           centered
           title={t('headline')}
           description={t('description')}
+          variant="highContrast"
           cta={[
             <Button href={PATHS.STORE_DATA.path} variant="primary">
               {t('cta.main')}

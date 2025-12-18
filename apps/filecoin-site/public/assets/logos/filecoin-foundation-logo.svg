@@ -1,11 +1,11 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  fill="currentColor"
+  fill="#fff"
   width="100%"
   height="100%"
   viewBox="0 0 147 41"
 >
-  <g fill="currentColor" clip-path="url(#a)">
+  <g fill="#fff" clip-path="url(#a)">
     <path d="M39.161 21.712V7.756h9.978v2.258h-7.347v3.743h6.62v2.258h-6.62v5.697h-2.63Z"/>
 
     <path

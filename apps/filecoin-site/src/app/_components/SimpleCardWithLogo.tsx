@@ -19,7 +19,6 @@ export type SVGLogoProps = {
   type: 'svg'
   src: IconProps['component']
   bgColor: HEXCodeType
-  color?: HEXCodeType
 }
 
 export type SimpleCardWithLogoProps = {
@@ -47,7 +46,7 @@ export function SimpleCardWithLogo({
         style={{ backgroundColor: logo.bgColor }}
       >
         {logo.type === 'svg' ? (
-          <span style={{ color: logo.color }}>
+          <span className="text-white">
             <Icon component={logo.src} size={LOGO_SIZE} />
           </span>
         ) : (
