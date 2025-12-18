@@ -26,7 +26,7 @@ export function Footer() {
                 color="text-[var(--color-text-base)]"
               />
               <NewsletterForm />
-              <Social linksWithIcons={socialLinksWithIcons} />
+              <Social linksWithIcons={socialLinksWithIcons} size={22} />
             </div>
           </div>
           <nav
