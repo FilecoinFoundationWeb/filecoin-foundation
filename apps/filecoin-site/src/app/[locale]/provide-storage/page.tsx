@@ -32,8 +32,17 @@ export default function ProvideStorage() {
         structuredData={generateStructuredData(PROVIDE_STORAGE_SEO)}
       />
 
+      <Navigation backgroundVariant="dark" />
+
       <div className="relative isolate">
-        <Navigation backgroundVariant="transparentDark" />
+        <Image
+          priority
+          src={graphicsData.colorfulNebula.data}
+          alt={graphicsData.colorfulNebula.alt}
+          className="absolute top-0 left-0 -z-20 h-full w-[200vw] object-cover object-top lg:w-full"
+        />
+        <GradientOverlay variant="dual" />
+
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             title="Power the world's largest decentralized storage network"
@@ -50,25 +59,18 @@ export default function ProvideStorage() {
               </Button>,
             ]}
           />
+
+          <div className="mt-40">
+            <LogoSection
+              headingTag="h2"
+              title="Join a global network of storage providers"
+              logos={storageProvidersLogos}
+            />
+          </div>
         </PageSection>
-        <Image
-          priority
-          src={graphicsData.colorfulNebula.data}
-          alt={graphicsData.colorfulNebula.alt}
-          className="absolute right-0 bottom-0 -z-20 h-full object-cover"
-        />
-        <GradientOverlay />
       </div>
 
-      <PageSection backgroundVariant="dark" paddingVariant="topNone">
-        <LogoSection
-          headingTag="h2"
-          title="Join a global network of storage providers"
-          logos={storageProvidersLogos}
-        />
-      </PageSection>
-
-      <PageSection backgroundVariant="dark" paddingVariant="topNone">
+      <PageSection backgroundVariant="dark" paddingVariant="topCompact">
         <SectionContent
           centerCTA
           title="Getting started with PDP storage"
