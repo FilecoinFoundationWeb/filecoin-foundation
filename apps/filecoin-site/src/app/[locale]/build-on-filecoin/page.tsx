@@ -39,6 +39,7 @@ export default function BuildOnFilecoin() {
       />
 
       <Navigation backgroundVariant="dark" />
+
       <HeroSection />
 
       <PageSection backgroundVariant="light" paddingVariant="bottomNone">
