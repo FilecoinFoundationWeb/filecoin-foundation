@@ -40,7 +40,7 @@ export function HeroSection() {
           <SplitSectionContent
             title="Verifiable onchain services with transparent storage, retrieval, and payments"
             description={[
-              'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pining, retrieval, and payments are transparent, programmable, and interoperable by default.',
+              'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pinning, retrieval, and payments are transparent, programmable, and interoperable by default.',
               'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
             ]}
             cta={[
