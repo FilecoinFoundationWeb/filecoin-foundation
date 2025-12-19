@@ -19,23 +19,22 @@ seo:
     Filecoin Cloud. Simple tools, familiar workflows, and reliable decentralized
     storage powered by Filecoin.
 ---
+
 Filecoin Pin is a fully decentralized persistence layer for IPFS content using the global network of Filecoin storage providers with cryptographic guarantees.When you use Filecoin Pin, your IPFS files gain:
 
-* **Verifiable persistence**
+- **Verifiable persistence**
+  - Storage providers must cryptographically prove daily that they continue to store and serve your data
 
-   - Storage providers must cryptographically prove daily that they continue to store and serve your data
-* **Economic incentives**
+- **Economic incentives**
+  - You only pay when storage proofs are successfully delivered and verified onchain
 
-   - You only pay when storage proofs are successfully delivered and verified onchain
-* **Decentralized infrastructure**
+- **Decentralized infrastructure**
+  - Your data can be stored across a global network of independent storage providers
 
-   - Your data can be stored across a global network of independent storage providers
-* **Sovereign data**
+- **Sovereign data**
+  - Choose your providers, audit storage proofs and payments onchain, with no dependency on a single company
 
-   - Choose your providers, audit storage proofs and payments onchain, with no dependency on a single company
-* **Seamless IPFS integration**
-
-   - Continue using standard IPFS Mainnet tooling like Kubo, Helia, and IPFS HTTP Gateways while gaining Filecoin's persistence guarantees
-
+- **Seamless IPFS integration**
+  - Continue using standard IPFS Mainnet tooling like Kubo, Helia, and IPFS HTTP Gateways while gaining Filecoin's persistence guarantees
 
 Filecoin Pin is designed for developers building on IPFS who need trustless, economically-incentivized persistence for their content. Whether you're building dApps, workflows, websites, AI agents, or other applications, Filecoin Pin provides the missing persistence layer for IPFS.
