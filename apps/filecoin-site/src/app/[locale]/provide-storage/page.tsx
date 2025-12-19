@@ -10,7 +10,7 @@ import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_URLS, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -73,19 +73,15 @@ export default function ProvideStorage() {
           centerCTA
           title="Getting started with PDP storage"
           description="Running a warm storage node using Proof of Data Possession (PDP) is the easiest way to begin offering Filecoin storage — no expensive hardware or long-term collateral required."
-          // todo: add correct links to cta buttons
           cta={[
             <Button
-              href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
+              href={FILECOIN_DOCS_URLS.installAndRunPDP}
               variant="primary"
             >
               Become a PDP storage provider
             </Button>,
 
-            <Button
-              href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
-              variant="ghost"
-            >
+            <Button href={FILECOIN_DOCS_URLS.pdp} variant="ghost">
               Learn more about PDP Storage
             </Button>,
           ]}
@@ -109,12 +105,8 @@ export default function ProvideStorage() {
           centerCTA
           title="Scaling your storage operations"
           description="If you're already running a warm storage node and want to expand, Filecoin supports enterprise-grade proofs like Proof of Replication (PoRep) and Proof of Spacetime (PoSt) — enabling high-capacity, production-scale storage operations. Scaling involves:"
-          // todo: add correct links to cta buttons
           cta={[
-            <Button
-              href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
-              variant="primary"
-            >
+            <Button href={FILECOIN_DOCS_URLS.lotusComponents} variant="primary">
               Learn more about the requirements
             </Button>,
           ]}

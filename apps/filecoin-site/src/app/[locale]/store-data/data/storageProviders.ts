@@ -9,6 +9,8 @@ import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.svg'
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 import type { StorageProviderCardWithImageProps } from '../components/StorageProviderCard/StorageProviderCardWithImage'
 
+import PlaceholderLogo from './placeholder-logo-to-be-deleted.svg'
+
 type FeaturedStorageProvider = Pick<
   StorageProviderCardWithImageProps,
   | 'name'
@@ -128,3 +130,36 @@ export const featuredFilecoinStorageProvider = {
   url: 'https://storacha.network/',
   logo: StorachaMiniatureLogo,
 } as const satisfies FeaturedStorageProvider
+
+export const otherFilecoinPoweredSolutions = [
+  {
+    name: 'Ipsum Storage A',
+    description: 'Lorem ipsum dolor sit amet.',
+    labels: ['Lorem ipsum'],
+    cents: 300,
+    bestFor: ['Developers'],
+    keyFeatures: ['Lorem ipsum A', 'Lorem ipsum B'],
+    url: '#',
+    logo: PlaceholderLogo,
+  },
+  {
+    name: 'Ipsum Storage B',
+    description: 'Lorem ipsum dolor sit amet.',
+    labels: ['Lorem ipsum'],
+    cents: 300,
+    bestFor: ['Developers'],
+    keyFeatures: ['Lorem ipsum A', 'Lorem ipsum B'],
+    url: '#',
+    logo: PlaceholderLogo,
+  },
+  {
+    name: 'Ipsum Storage C',
+    description: 'Lorem ipsum dolor sit amet.',
+    labels: ['Lorem ipsum'],
+    cents: 300,
+    bestFor: ['Developers'],
+    keyFeatures: ['Lorem ipsum A', 'Lorem ipsum B'],
+    url: '#',
+    logo: PlaceholderLogo,
+  },
+] as const satisfies Array<StorageProvider>

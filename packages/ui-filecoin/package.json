@@ -1,6 +1,6 @@
 {
   "name": "@filecoin-foundation/ui-filecoin",
-  "version": "0.5.8",
+  "version": "0.5.10",
   "description": "Filecoin branded UI components for the Filecoin ecosystem created by Filecoin Foundation",
   "private": false,
   "type": "module",
@@ -294,17 +294,9 @@
       "types": "./dist/types/touchTarget.d.ts",
       "default": "./dist/types/touchTarget.js"
     },
-    "./utils/buildImageSizeProp": {
-      "types": "./dist/utils/buildImageSizeProp.d.ts",
-      "default": "./dist/utils/buildImageSizeProp.js"
-    },
-    "./utils/linkUtils": {
-      "types": "./dist/utils/linkUtils.d.ts",
-      "default": "./dist/utils/linkUtils.js"
-    },
-    "./utils/dateUtils": {
-      "types": "./dist/utils/dateUtils.d.ts",
-      "default": "./dist/utils/dateUtils.js"
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "default": "./dist/utils/index.js"
     },
     "./config/ui-config": {
       "types": "./dist/config/ui-config.d.ts",

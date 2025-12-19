@@ -17,6 +17,7 @@ export const CaseStudyFrontmatterSchema = z.strictObject({
     .optional(),
   featured: z.boolean().optional(),
   content: z.string().optional(),
+  website: z.string(),
   seo: SeoMetadataWithOptionalTitleSchema.optional(),
 })
 

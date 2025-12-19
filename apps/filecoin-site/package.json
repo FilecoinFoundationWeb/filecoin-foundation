@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@filecoin-foundation/ui": "0.0.0",
-    "@filecoin-foundation/ui-filecoin": "0.5.8",
+    "@filecoin-foundation/ui-filecoin": "0.5.10",
     "@filecoin-foundation/utils": "0.0.0",
     "@hookform/resolvers": "^5.2.2",
     "@phosphor-icons/react": "^2.1.10",

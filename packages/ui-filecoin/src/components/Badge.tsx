@@ -1,9 +1,10 @@
 import { clsx } from 'clsx'
 
+import { capitalize } from '../utils'
+
 import { Icon, type IconProps } from './Icon'
 
 export type BadgeProps = {
-  capitalize?: boolean
   icon?: IconProps['component']
   variant?: keyof typeof variantClasses
   children: string
@@ -29,12 +30,7 @@ const variantClasses = {
   },
 } as const
 
-export function Badge({
-  capitalize = true,
-  icon,
-  variant = 'primary',
-  children,
-}: BadgeProps) {
+export function Badge({ icon, variant = 'primary', children }: BadgeProps) {
   const styles = variantClasses[variant]
 
   return (
@@ -42,7 +38,6 @@ export function Badge({
       className={clsx(
         'flex items-center gap-1 rounded-full border px-4 py-1 text-sm/5 font-medium',
         styles.wrapper,
-        capitalize && 'capitalize',
       )}
     >
       {icon && (
@@ -50,7 +45,7 @@ export function Badge({
           <Icon component={icon} size={16} />
         </span>
       )}
-      {children}
+      {capitalize(children)}
     </span>
   )
 }

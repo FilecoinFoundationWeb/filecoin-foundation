@@ -9,6 +9,7 @@ image:
   src: "/assets/images/victor-chang.webp"
   alt: "Facade of the Victor Chang Cardiac Research Institute building, featuring an orange tiled wall with the institute’s name and a stylized silhouette logo."
 featured: true
+website: https://www.victorchang.edu.au/
 seo:
   title: "Victor Chang Cardiac Research Institute Case Study - Filecoin for Medical Research Data"
   description: "Learn how the Victor Chang Cardiac Research Institute uses Filecoin to store 125+ TiB of cardiac research data with cryptographic integrity guarantees."
@@ -64,7 +65,7 @@ The costs of storing large data sets for years on end is a major challenge for a
 
 ![Researchers working in a modern laboratory; a man in a suit reviews a document with a scientist in a lab coat while other lab technicians work in the background.](/assets/images/lab-team.webp)
 
-> "Filecoin helps us overcome our challenges by providing data storage at a cost effective rate and ensuring data integrity. This will allow data from key research projects to be stored for perpetuity, and to be shared with collaborators from around the world."
+> Filecoin helps us overcome our challenges by providing data storage at a cost effective rate and ensuring data integrity. This will allow data from key research projects to be stored for perpetuity, and to be shared with collaborators from around the world.
 >
 > — Victor Chang Cardiac Research Institute
 
@@ -74,7 +75,7 @@ Distributed Storage Solutions and the Filecoin Network have provided the Victor 
 
 Overall, The adoption of decentralized storage has revolutionized the Institute's data management practices, enabling them to store and manage their large datasets in a more efficient and secure manner than traditional cloud storage.
 
-> "Filecoin is making a huge difference to the way we store our world research data. It provides a unique service that not only allows data from our key research projects to be stored for perpetuity, it also ensures the integrity of our research data through the use of unique content identifiers. Given that many of our projects increasingly generate huge raw data sets, this is incredibly important for the Institute. It's also vital that we can easily and safely share open-data sets with like-minded researchers to advance heart disease research that will benefit patients the world over."
+> Filecoin is making a huge difference to the way we store our world research data. It provides a unique service that not only allows data from our key research projects to be stored for perpetuity, it also ensures the integrity of our research data through the use of unique content identifiers. Given that many of our projects increasingly generate huge raw data sets, this is incredibly important for the Institute. It's also vital that we can easily and safely share open-data sets with like-minded researchers to advance heart disease research that will benefit patients the world over.
 >
 > — Todd Ryman, IT Director at Victor Chang Cardiac Research Institute
 
