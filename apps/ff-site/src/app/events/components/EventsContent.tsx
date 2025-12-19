@@ -1,3 +1,5 @@
+import { useMemo } from 'react'
+
 import { MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { useEntryView } from '@filecoin-foundation/hooks/useEntryView'
@@ -36,7 +38,6 @@ import { DEFAULT_CTA_TEXT, FILTERS_CONFIG } from '../constants/constants'
 import {
   eventsViewConfigs,
   getDefaultViewConfig,
-  getDefaultViewOption,
 } from '../constants/viewConfigs'
 import type { Event } from '../types/eventType'
 import { entryMatchesLocationQuery } from '../utils/filterUtils'
@@ -54,7 +55,15 @@ export default function EventsContent({
   searchParams,
   events,
 }: EventsContentProps) {
-  const defaultSortOption = getDefaultViewOption(events)
+  const defaultViewConfig = useMemo(
+    () => getDefaultViewConfig(events),
+    [events],
+  )
+
+  const defaultSortOption = {
+    id: defaultViewConfig.id,
+    name: defaultViewConfig.name,
+  }
 
   const { searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
@@ -66,7 +75,7 @@ export default function EventsContent({
     query: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: eventsViewConfigs,
-    defaultConfig: getDefaultViewConfig(events),
+    defaultConfig: defaultViewConfig,
   })
 
   const { filteredEntries: filteredEventsByLocation } = useFilter({
