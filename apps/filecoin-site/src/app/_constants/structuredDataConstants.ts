@@ -25,6 +25,7 @@ export const STRUCTURED_DATA_IDS = {
   BLOG: `${BASE_URL}${PATHS.BLOG.path}#blog`,
   getServiceId: (path: NextRouteWithoutLocale) => `${BASE_URL}${path}#service`,
   getBlogPostId: (path: string) => `${BASE_URL}${path}#post`,
+  getCaseStudyId: (path: string) => `${BASE_URL}${path}#case-study`,
   getPageId: (path: NextRouteWithoutLocale, type: PageType) =>
     `${BASE_URL}${path}#${type === 'CollectionPage' ? 'page' : 'webpage'}`,
 } as const

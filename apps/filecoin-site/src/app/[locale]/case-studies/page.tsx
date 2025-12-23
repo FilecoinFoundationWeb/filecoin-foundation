@@ -1,5 +1,6 @@
 import type { LocaleParams } from '@/i18n/types'
 
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
@@ -16,6 +17,7 @@ import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { PageHeader } from './components/PageHeader'
 import { CASE_STUDIES_SEO } from './constants/seo'
+import { generateStructuredData } from './utils/generateStructuredData'
 import { getCaseStudiesByFeaturedStatus } from './utils/getCaseStudyData'
 
 type CaseStudiesProps = {
@@ -30,6 +32,12 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
 
   return (
     <>
+      <StructuredDataScript
+        structuredData={generateStructuredData(
+          CASE_STUDIES_SEO,
+          featuredCaseStudies,
+        )}
+      />
       <Navigation backgroundVariant="dark" />
       <PageSection backgroundVariant="dark">
         <PageHeader

@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import type { LocaleParams } from '@/i18n/types'
 
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { LinkCard } from '@filecoin-foundation/ui-filecoin/LinkCard'
@@ -13,6 +14,7 @@ import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlog
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -49,6 +51,8 @@ export default async function CommunityHub({ params }: BlogProps) {
 
   return (
     <>
+      <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
+
       <div className="relative isolate">
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
