@@ -14,10 +14,7 @@ export function ExternalTextLink({
   ...rest
 }: ExternalTextLinkProps) {
   return (
-    <a
-      className={clsx('text-link inline-block text-pretty', className)}
-      {...rest}
-    >
+    <a className={clsx('text-link text-pretty', className)} {...rest}>
       {children}
       <span className="ml-1 inline-flex self-center">
         <Icon component={ArrowUpRightIcon} size={16} color="subtle" />
