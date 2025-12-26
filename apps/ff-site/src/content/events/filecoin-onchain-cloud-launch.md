@@ -21,7 +21,7 @@ program:
     - title: Livestream
       start-date: 2025-11-18
       location: YouTube
-      description: "Tune in to the live stream! "
+      description: "Tune in to the live stream!"
       external-link: https://www.youtube.com/live/7iDcHlg1hIw?si=nfszRIWUazkBFG9u
     - title: DePIN Day Buenos Aires
       start-date: 2025-11-18
@@ -37,7 +37,7 @@ schedule:
         - title: Opening Remarks
           speakers:
             - name: Tom Trowbridge
-              company: Fluence
+              company: Fluence Labs
           start-time: 13:00:00.000Z
           location: Hybrid
         - title: Introducing Filecoin Onchain Cloud
@@ -60,7 +60,7 @@ schedule:
             - name: Jennifer Wang
               company: FilOz
             - name: Rod Vagg
-              company: FiloZ
+              company: FilOz
             - name: Miroslav Bajtoš
               company: Space Meridian
             - name: James Bluett
@@ -82,7 +82,7 @@ schedule:
         - title: "Collaborator Spotlight: Ethereum Trustless Agents"
           speakers:
             - name: Marco De Rossi
-              company: Metamask
+              company: MetaMask
           start-time: 13:37:00.000Z
           location: Hybrid
         - title: FOC Alpha Builders Showcase
@@ -90,7 +90,7 @@ schedule:
             - name: Sarah Thiam
               company: Fil-B
             - name: Kartikay Tiwari
-              company: Filosign
+              company: FiloSign
             - name: Guil Machado
               company: AxLabs
             - name: Shubham Rasal
@@ -177,7 +177,7 @@ speakers:
     - name: Kartikay Tiwari
       image:
         src: /assets/images/kartikay-tiwari-filosign.webp
-      company: Filosign
+      company: FiloSign
       title: "-"
     - name: Marco De Rossi
       title: Head of AI

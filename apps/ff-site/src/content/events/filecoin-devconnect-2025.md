@@ -25,12 +25,13 @@ program:
         community members are coming together to solve hard problems and ship
         solutions that will define Filecoin’s future.
       external-link: https://www.fildev.io/FDS-7
-    - title: DePIN Day Buenos Aires, Cohosted by Fluence and Filecoin Foundation
+    - title: DePIN Day Buenos Aires, Cohosted by Fluence Labs and Filecoin Foundation
       start-date: 2025-11-18
       end-date: 2025-11-18
       location: ArtLab
       external-link: https://fil.org/events/depin-day-buenos-aires
-      description: ​​We’re bringing together the builders, thinkers and investors
+      description:
+        ​​We’re bringing together the builders, thinkers and investors
         driving the future of decentralized infrastructure.  ​​Expect a curated
         lineup of visionary founders, protocol teams and ecosystem leaders
         sharing cutting-edge use cases and insights across decentralized
@@ -41,7 +42,8 @@ program:
       start-date: 2025-11-19
       location: Buenos Aires
       external-link: https://luma.com/u89v5ebs
-      description: ​​​Filecoin ​Code n' Corgi is an energetic, developer-driven series
+      description:
+        ​​​Filecoin ​Code n' Corgi is an energetic, developer-driven series
         designed for Web3 innovators, founders, and builders in the Filecoin
         decentralized storage ecosystem. It’s the perfect launchpad to kickstart
         your web3 journey and take it to new heights. Join us for hands-on
@@ -89,7 +91,8 @@ schedule:
             - name: Marko Stokić
               company: Oasis
         - title: Jennifer Wang @ Builder Nights BA
-          description: "Scaling Trust: The Future of Custody, Payments, and Cross-Chain
+          description:
+            "Scaling Trust: The Future of Custody, Payments, and Cross-Chain
             Infra"
           start-time: 19:00:00.000Z
           end-time: 19:30:00.000Z
