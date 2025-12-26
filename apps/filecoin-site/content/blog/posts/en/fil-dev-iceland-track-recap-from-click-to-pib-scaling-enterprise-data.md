@@ -22,9 +22,6 @@ Ecosystem members leading the growth in enterprise data onboarding to Filecoin s
 
 {{< youtube id="_5Kq-7Z0C8c" title="Large-scale institutional data onboarding to Filecoin at Internet Archive" >}}
 
-<p><br>
-<br></p>
-
 ## Background
 
 From Click to PiB: Scaling Enterprise Data brought together teams bringing Filecoin to enterprise customers to share learnings, opportunities, challenges and insights in scaling enterprise data on Filecoin. With deep industry experience and first-hand customer feedback from the field, sessions covered topics across the product stack. Sessions addressed the need for and potential solutions for data deletion on Filecoin. Other speakers addressed their journey in data preparation and deal-making, and the impact tools like [Singularity](https://singularity.storage/) and [Spade](https://github.com/ribasushi/spade) have had on data-onboarding velocity.
@@ -34,9 +31,6 @@ From Click to PiB: Scaling Enterprise Data brought together teams bringing Filec
 [Seal Storage](https://sealstorage.io/) spoke about the importance of durability and availability in data storage, common approaches in traditional cloud storage platforms, and potential solutions in Filecoin. Community members discussed their challenges using [Fil+](https://filplus.storage/) for enterprise deals, and brainstormed potential solutions to help accelerate enterprise data onboarding. They discussed the importance of an S3-like interface to clients, and the rich app ecosystem that can seamlessly interoperate with any S3-compatible storage target. Last but not least the attendees explored interoperability platforms to seamlessly move data between storage targets with different protocol support, for example SMB, NAS, and Filecoin.
 
 {{< youtube id="MFQ-P3nGZto" title="Designing for Durability and Availability in a Decentralized World" >}}
-
-<p><br>
-<br></p>
 
 ## Impact
 
@@ -49,9 +43,6 @@ The sessions resulted in several key learnings and next steps:
 5. Cryptographic verifiability is a key selling point of Filecoin, but it’s not easy to read WindowPoSt events from the chain. The Protocol Labs data onboarding team will assess the feasibility of a service to read WindowPoSt events from SPs.
 
 {{< youtube id="nNfpY1rgGCg" title="Web2 to Web3 Data Gateway: Seamless Interoperability Between Storage Protocols" >}}
-
-<p><br>
-<br></p>
 
 ## Conclusion
 
