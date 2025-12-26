@@ -14,8 +14,8 @@ website: https://pin.filecoin.cloud/
 tech:
   - filecoin
 seo:
-  title: Pin Filecoin Cloud | Simple, Reliable IPFS Pinning & Persistence
-  description: Easily persist, keep online, and verify your IPFS content with Pin
+  description:
+    Easily persist, keep online, and verify your IPFS content with Pin
     Filecoin Cloud. Simple tools, familiar workflows, and reliable decentralized
     storage powered by Filecoin.
 ---

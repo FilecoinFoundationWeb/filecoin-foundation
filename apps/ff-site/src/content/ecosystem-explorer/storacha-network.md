@@ -1,5 +1,5 @@
 ---
-title: Storacha Network
+title: Storacha
 created-on: 2024-09-11T12:24:00.000Z
 updated-on: 2024-09-11T12:24:00.000Z
 published-on: 2024-09-11T12:24:00.000Z
@@ -16,7 +16,6 @@ tech:
 twitter: https://x.com/storachanetwork
 video-url: https://www.youtube.com/embed/WLOdWD2bFOA
 seo:
-  title: "Storacha: Decentralized Hot Data Storage Built on Filecoin"
   description: Storacha is a blazing-fast, user-owned, and verifiable hot data
     storage and retrieval system built on the Filecoin network
 ---
