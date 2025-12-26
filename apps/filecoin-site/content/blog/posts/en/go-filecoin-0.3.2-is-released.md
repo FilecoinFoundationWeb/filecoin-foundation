@@ -63,14 +63,14 @@ A full list of [all 207 PRs in this release](https://github.com/search?p=2&q=is%
 
 ## CLI diff
 
-| go-filecoin command | change |
+| go-filecoin command | change       |
 | ------------------- | ------------ |
-| deals list | added |
-| deals redeem | added |
-| deals show | added |
-| miner pledge | removed |
-| mining status | added |
-| show block | args changed |
+| deals list          | added        |
+| deals redeem        | added        |
+| deals show          | added        |
+| miner pledge        | removed      |
+| mining status       | added        |
+| show block          | args changed |
 
 ## Contributors
 

@@ -34,18 +34,23 @@ The last two months have seen significant progress across the project. There is 
 
 Here are a few highlights:
 
-- 💾 **Testnet Highlights**
+### 💾 Testnet Highlights
+
 - **2️⃣ Testnet Phase 2.** We launched [Phase 2 of the Filecoin Testnet](https://filecoin.io/blog/filecoin-testnet-phase-2-is-here/) on May 14th — in accordance with the “Option 2” timing selected by core implementers & recommended by the community. This major milestone includes two interoperable Filecoin implementations ([**go-filecoin**](https://github.com/filecoin-project/go-filecoin) and [**lotus**](https://github.com/filecoin-project/lotus/)), implementations of WinningPoSt and WindowPoSt (the two flavors of Filecoin _Proofs-of-Spacetime_ we use in the protocol), and Drand (a distributed randomness beacon network) as an external source of randomness for consensus. Testnet Phase 2 also included large improvements to our actors and storage market implementations, and [refined cryptoeconomic structures](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/). For how to get started on the testnet, check out our [new documentation site](https://docs.filecoin.io/).
 - ✨**Filecoin Testnet Phase 2 reached 9PB.** The Phase 2 testnet reached 9PB of proved data within \~1 month, nearly 2x our previous high watermark. Last week, we reset our testnet to take advantage of the latest Lotus and Proofs optimizations. Since then, we’ve already seen over 6 PB of data onboarded with the network growing by 15 GB/sec, or around 1.2 PB/day. ![Testnet Stats](https://filecoin.io/vintage/images/blog/fil-testnet-stats.jpg)
 - **💸Incentivized testnet.** Earlier this month, we announced the rules and hardware recommendations for [incentivized testnet](https://filecoin.io/blog/announcing-testnet-incentives/), our 3 week collaborative competition intended to stress-test the network, encourage participation all over the world, and provide miners with an opportunity to test-drive Filecoin in advance of the mainnet launch. Miners will need to successfully complete real storage and retrieval deals and execute the full sector life cycle — creating committed capacity sectors, upgrading them to store real data, and terminating them — to be eligible for rewards. Join us for a Filecoin Live Q&A this Thursday at [filecoin.io/slack](https://filecoin.io/slack) to learn more.
-- 🧬 **Filecoin Implementation Highlights**
+
+### 🧬 **Filecoin Implementation Highlights**
+
 - **🏃‍♀️Performance and Reliability improvements.** A major focus for our work since starting Testnet Phase 2 has been hardening and making efficiency improvements to our core implementation subsystems. We fixed issues related to sealing that were reported shortly after we launched Testnet Phase 2. We also improved sync time significantly by [batching PoRep verifications](https://github.com/filecoin-project/specs-actors/pull/340), allowing them to be performed in parallel. Now, if sync is interrupted before reaching the target height, it [picks up where it left off](https://github.com/filecoin-project/lotus/pull/1705) instead of restarting from genesis. Thank you to the many community members who have participated in finding bugs and helping fix them - special thanks [@hayeah](https://github.com/hayeah) for the sync improvement!
 - **🔋Hardware specs & PoRep for Mainnet Launch.** Filecoin will use the **SDR _Proof-of-Replication algorithm_** for our testnet incentives competition and for mainnet launch. **Note:** Miners should expect Filecoin to regularly upgrade its proofs after launch. While the Filecoin team does not recommend any specific hardware configuration, we did [share some setups](https://filecoin.io/blog/announcing-testnet-incentives/#hardware) we’ve used for various types of testing. However, it is overwhelmingly likely that there are more efficient setups, and we strongly encourage miners to test and experiment to find the best combinations.
 - **⚖️ Filecoin’s cryptoeconomic constructions**. We made significant progress on defining and solidifying Filecoin’s cryptoeconomic constructions to ensure that the network can support the long-term needs of its clients and provide a solid foundation for Filecoin’s mainnet launch. While we’re still conducting extensive modeling and testing to finalize parameters, [this overview](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/) describes how the cryptoeconomic structure of Filecon will create a public blockchain powered by useful work, a reliable cloud storage service, and a thriving decentralized economy.
 - 🤝 **Offline data transfers.** For petabyte-scale datasets and larger, the most sensible solutions often involve shipping data on hard drives. Filecoin’s [offline data transfer feature](https://filecoin.io/blog/offline-data-transfer-for-large-scale-data/) allows users with very large datasets to complete the data transfer step offline (e.g. by shipping hard drives from the client to the storage miner), and have the storage and retrieval deals work as intended on-chain.
 - **💇‍♀️Proof efficiency and memory utilization improvements.** We’ve made changes to how we seal data that have significantly improved the memory usage and performance of sealing. Similarly, Neptune (our Rust implementation of the Poseidon hash function tuned for Filecoin) now allows us to build merkle trees on GPU. These performance improvements continue to make Filecoin more efficient and accessible to a wide community of miners.
 - **🔐 Phase 2 Trusted Setup.** Phase 2 of our Trusted Setup Ceremony has begun on the first set of circuits, with more participants joining over the coming weeks. In preparation, we significantly reduced the memory required for our “large circuits”, which will allow much smaller participant hardware for our Phase 2 Trusted Setup Ceremony. Community participation begins on June 29th, so come [sign up today](https://forms.gle/XxLgsHmxdPjb7jJa9) to participate.
-- 👨‍👩‍👧‍👦 **Ecosystem Highlights**
+
+### 👨‍👩‍👧‍👦 Ecosystem Highlights
+
 - **🔍 Filecoin Discover.** The purpose of [Filecoin Discover](https://filecoin.io/blog/intro-filecoin-discover/) is to help seed Filecoin as the home for humanity’s most important datasets and make it accessible to others. Datasets include: [ENCODE](https://www.encodeproject.org/), 1000 Genomes, [Project Gutenberg](https://www.gutenberg.org/), Berkeley’s Self Driving Data, and more. Since May 7th, Filecoin miners have signed up to store **dozens** of petabytes worth of important data.
 - 🥳 **Textile Powergate.** With a number of hackathons coming up, [Textile Powergate](https://docs.textile.io/powergate/) and [Buckets](https://docs.textile.io/hub/buckets/) are a great way to get started building on Filecoin. Last week’s tutorial explains how to create a Bucket and archive your data in the Filecoin network using Powergate under the hood. If you’d like to build an app on top of Powergate, you can also follow the JS client tutorial to learn more. Textile Hub, a collection of hosted IPFS, Filecoin, and ThreadsDB nodes that make it easy for developers to onboard on Textile, is also adding support for Filecoin in the next few weeks as well. Learn more about these great tools for developers in Textile’s recap from the IPFS Pinning Summit.
 - 🧠 **Storage Devs Show & Tell.** On June 23rd, members in the Filecoin community held our second Storage Developers’ “Show & Tell” call, where groups building in the Filecoin ecosystem got together, demoed their projects, and started cross-pollinating ideas. Presenting teams included [Fleek](https://fleek.co/), [Starling](https://starlingstorage.io/getting-started.html), and [Textile](https://textile.io/). It’s always awesome to see what these groups are building to make Filecoin easier to use!
@@ -70,16 +75,24 @@ Now, as we turn the corner towards mainnet launch, we’re excited to graduate [
 
 To that end, we’re offering a [Wave 4 DevGrant RFP](https://github.com/filecoin-project/devgrants/issues/140) for teams interested in taking on maintainership for **go-filecoin** going forward. **go-filecoin** is nearly feature-complete; taking it across the finish line for mainnet launch could create several future opportunities for teams that maintain the project. For example, if highly optimized to be a great product for miners, **go-filecoin** could become the implementation of choice for a large portion of the Filecoin community. Additionally, developing deep expertise in understanding and building Filecoin nodes can unlock other businesses, such as hosting nodes as a service and/or building second-layer products and solutions for the greater Filecoin ecosystem. **Please get in touch** [**via GitHub**](https://github.com/filecoin-project/devgrants/issues/140) **if you’re interested!**
 
-Each of the four implementations is getting closer to feature-complete for the Filecoin mainnet launch. Here’s a snapshot of their progress across the primary parts of the Filecoin protocol: | | lotus | go-filecoin | forest | fuhon |
-| ------------------ | ----- | ----------- | ------ | ----- |
-| 1. Node | ✅ | ✅ | ✅ | ✅ |
-| 2. Files & data | ✅ | 🔶 | 🔶 | ✅ |
-| 3. Virtual Machine | ✅ | ✅ | 🔶 | 🔶 |
-| 4. VM Actors | 🔶 | 🔶 | 🔶 | 🔶 |
-| 5. Blockchain | ✅ | ✅ | ✅ | ✅ |
-| 6. Token | ✅ | ✅ | ✅ | ✅ |
-| 7. Storage Mining | ✅ | 🔄 | 🔄 | 🔄 🔶 |
-| 8. Market | ✅ | ✅ | 🔄 | ✅ | _✅ :fully featured implementation | 🔄 :reuses components from another implementation | 🔶 :partial implementation_
+Each of the four implementations is getting closer to feature-complete for the Filecoin mainnet launch. Here’s a snapshot of their progress across the primary parts of the Filecoin protocol:
+
+<!-- markdownlint-disable MD060 -->
+
+|                 | lotus | go-filecoin | forest | fuhon |
+| --------------- | ----- | ----------- | ------ | ----- |
+| Node            | ✅    | ✅          | ✅     | ✅    |
+| Files & data    | ✅    | 🔶          | 🔶     | ✅    |
+| Virtual Machine | ✅    | ✅          | 🔶     | 🔶    |
+| VM Actors       | 🔶    | 🔶          | 🔶     | 🔶    |
+| Blockchain      | ✅    | ✅          | ✅     | ✅    |
+| Token           | ✅    | ✅          | ✅     | ✅    |
+| Storage Mining  | ✅    | 🔄          | 🔄     | 🔄 🔶 |
+| Market          | ✅    | ✅          | 🔄     | ✅    |
+
+<!-- markdownlint-enable MD060 -->
+
+_✅ fully featured implementation | 🔄 reuses components from another implementation | 🔶 partial implementation_
 
 **(2) Filecoin Ignite.** To help support the fast-growing Filecoin ecosystem, we’re excited to launch [Filecoin Ignite](https://hub.fil.org/events/) to bring the community together for a series of hackathons and learning events. We currently have 6 main events lined up including: [SpaceRace](https://filecoin.io/blog/announcing-testnet-incentives/), a world-wide competition for Filecoin Miners, and [HackFS](https://hackfs.com/), a 30 day virtual hackathon in collaboration with the ETHGlobal team starting on July 6th. We’re also participating in the [Spark University Hackathon](https://filecoin.io/blog/spark-university-hackathon/), an 8 week online competition bringing together developers from universities around the world to build on Filecoin.
 

@@ -36,25 +36,33 @@ _template: blog_detail_ch
 
 ## 回顾第二阶段
 
-6月中旬，我们开始了可信配置环节的第二阶段——该阶段主要为将要用于主网的6条逻辑电路生成安全参数。与第一阶段类似，第二阶段的输出只要链上其中一方是诚实的，其输出结果就是可信的。同样，来自世界各地的参与者参与了为Filecoin的证明生成安全可验证参数。对于第二阶段的参与者，感谢您对Filecoin临近主网中的关键部分作出的支持。 | Participants | |
+6月中旬，我们开始了可信配置环节的第二阶段——该阶段主要为将要用于主网的6条逻辑电路生成安全参数。与第一阶段类似，第二阶段的输出只要链上其中一方是诚实的，其输出结果就是可信的。同样，来自世界各地的参与者参与了为Filecoin的证明生成安全可验证参数。对于第二阶段的参与者，感谢您对Filecoin临近主网中的关键部分作出的支持。
+
+<!-- markdownlint-disable MD060 -->
+
+| Participants                  | Participants                 |
 | ----------------------------- | ---------------------------- |
-| Aztec / Ariel Gazibon | Sigma Prime / Mehdi Zerouali |
-| Secbit | IPFSMain / Neo |
-| Filecoin-vietnam.com | DecentralTech |
-| Filecoin / Whyrusleeping | Filecoin / Nemo |
-| BoringWang | Benjamin H |
-| Supranational | Coinsummer / Cobo / K |
-| Hashquark / Allen | Factor8 Solutions / Patrick |
-| Filecoin / DrPeterVanNostrand | Finality Labs / Keyvan |
-| Justin Drake | Filecoin / Porcuquine |
-| Consensys / Joseph Chow | Grandhelmsmen |
-| DianCun | IPFSForce |
-| Ocean / Alex Corseru | Troels Henriksen / Athas |
-| Vulcanize / A. F. Dudley | Kikakkz |
-| Filecoin / Magik | Filecoin / Dignifiedquire |
-| Zcash / Benjamin Winston | JP Aumussen |
-| James Hanson | Angelov |
-| Consensys / Alexander Wade | | ## 环节中的这些输出是可信的吗？
+| Aztec / Ariel Gazibon         | Sigma Prime / Mehdi Zerouali |
+| Secbit                        | IPFSMain / Neo               |
+| Filecoin-vietnam.com          | DecentralTech                |
+| Filecoin / Whyrusleeping      | Filecoin / Nemo              |
+| BoringWang                    | Benjamin H                   |
+| Supranational                 | Coinsummer / Cobo / K        |
+| Hashquark / Allen             | Factor8 Solutions / Patrick  |
+| Filecoin / DrPeterVanNostrand | Finality Labs / Keyvan       |
+| Justin Drake                  | Filecoin / Porcuquine        |
+| Consensys / Joseph Chow       | Grandhelmsmen                |
+| DianCun                       | IPFSForce                    |
+| Ocean / Alex Corseru          | Troels Henriksen / Athas     |
+| Vulcanize / A. F. Dudley      | Kikakkz                      |
+| Filecoin / Magik              | Filecoin / Dignifiedquire    |
+| Zcash / Benjamin Winston      | JP Aumussen                  |
+| James Hanson                  | Angelog                      |
+| Consensys / Alexander Wade    |                              |
+
+<!-- markdownlint-enable MD060 -->
+
+## 环节中的这些输出是可信的吗？
 
 对于两个阶段来说，如果转录的部分是可验证的那输出结果就是可信的，可以相信 **_至少_** 有一位参与者没有泄露其贡献的随机性。因此，对于这两个阶段，我们都尝试聚集了各种不同类型的参与者——来自Filecoin生态内部的贡献者、相互竞争的矿工以及Web3社区外部的团队和个人。在此过程中，我们旨在降低串通风险并提高每个逻辑电路至少有一个贡献者是可信的可能性，从而保证输出的参数完整性。
 

@@ -28,20 +28,6 @@ title: Filecoin 2019 Q2 & Q3 Update
 _template: blog_detail_ch
 ---
 
-目录
-
-1. [上线：12月11日测试网上线，2020年第一季度主网上线](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#1-%E4%B8%8A%E7%BA%BF-12%E6%9C%8811%E6%97%A5%E6%B5%8B%E8%AF%95%E7%BD%91%E4%B8%8A%E7%BA%BF-2020%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%BA%A6%E4%B8%BB%E7%BD%91%E4%B8%8A%E7%BA%BF)
-2. [TL; DR：2019年的亮点](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#2-tldr-2019%E5%B9%B4%E7%9A%84%E4%BA%AE%E7%82%B9)
-3. [路线图更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#3-%E8%B7%AF%E7%BA%BF%E5%9B%BE%E6%9B%B4%E6%96%B0)
-4. [开发更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#4-%E5%BC%80%E5%8F%91%E6%9B%B4%E6%96%B0)
-5. [研究更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#5-%E7%A0%94%E7%A9%B6%E6%9B%B4%E6%96%B0)
-6. [社区更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#6-%E7%A4%BE%E5%8C%BA%E6%9B%B4%E6%96%B0)
-7. [政策方面更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#7-%E6%94%BF%E7%AD%96%E6%96%B9%E9%9D%A2%E6%9B%B4%E6%96%B0)
-8. [公共演讲和媒体宣传](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#8-%E5%85%AC%E5%85%B1%E6%BC%94%E8%AE%B2%E5%92%8C%E5%AA%92%E4%BD%93%E5%AE%A3%E4%BC%A0)
-9. [libp2p 对 Filecoin 的更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#9-libp2p-%E5%AF%B9-filecoin-%E7%9A%84%E6%9B%B4%E6%96%B0)
-10. [IPFS 对 Filecoin 的更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#10-ipfs-%E5%AF%B9-filecoin-%E7%9A%84%E6%9B%B4%E6%96%B0)
-11. [注意事项](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#11-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
-
 ## 1. 上线: 12月11日测试网上线, 2020年第一季度主网上线
 
 此次更新中最重要的新闻是，我们的网络即将上线。我们推迟了之前定的上线时间，但是-正如你之后将读到的 - 我们在各个方面都取得了巨大进步！我们现在已有足够准备，可以决定以下上线时间了：
@@ -98,14 +84,19 @@ _template: blog_detail_ch
 - 主网启动日期尚未宣布，但是我们预计将在测试网启动之后的1-2个季度，即2020年第一季度发布确切的启动日期
 
 我们已对里程碑进行了如下调整:
-| --- | --- | --- |
-| 里程碑 | 旧的预期完成时间 | 新的预期完成时间 |
-| 启动长期运行的 alphanet: | 无 | 2019年9月25日 |
-| 启动第一个 Filecoin 测试网: | 2019 第二季度 | 2019年12月11日 |
-| 使用大量矿机进行测试: | 2019 第二季度 | 2019 第四季度 |
-| 安全审查和审核: | 2019 第二和三季度 | 2019 第四季度 |
-| go-filecoin v1.0.0功能冻结: | 2019 第二和三季度 | 2020 第一季度 |
-| 启动 Filecoin 主网: | 2019 第三和四季度 | 2020 第一季度 |
+
+<!-- markdownlint-disable MD060 -->
+
+| 里程碑                      | 旧的预期完成时间  | 新的预期完成时间 |
+| --------------------------- | ----------------- | ---------------- |
+| 启动长期运行的 alphanet:    | 无                | 2019年9月25日    |
+| 启动第一个 Filecoin 测试网: | 2019 第二季度     | 2019年12月11日   |
+| 使用大量矿机进行测试:       | 2019 第二季度     | 2019 第四季度    |
+| 安全审查和审核:             | 2019 第二和三季度 | 2019 第四季度    |
+| go-filecoin v1.0.0功能冻结: | 2019 第二和三季度 | 2020 第一季度    |
+| 启动 Filecoin 主网:         | 2019 第三和四季度 | 2020 第一季度    |
+
+<!-- markdownlint-enable MD060 -->
 
 2019年10月，我们将在我们的博客上发布开发路线图的链接。本文档将包含测试网和主网启动相关的剩余的工作量，以便社区可以跟进我们在实现这些目标方面的进展。如上所述，我们还根据这些新的里程碑的预计更新了[路线图文档](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit)。
 

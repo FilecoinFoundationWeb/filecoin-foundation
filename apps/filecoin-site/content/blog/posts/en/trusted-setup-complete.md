@@ -39,25 +39,29 @@ Over two months, participants from all over the world [contributed](https://gith
 
 ## Recap of Phase 2
 
-In mid-June, we began the second phase of our Trusted setup – where secure parameters were generated for the 6 circuits that will be used for mainnet. Like in Phase 1, the outputs of Phase 2 should be trustable so long as one party in the chain is honest. Again, participants from all over the world contributed their resources to participate in generating secure and verifiable parameters for Filecoin’s proofs. For everyone who participated in this second phase, we’d like to extend a sincere thanks for your support in this critical component of Filecoin’s path to mainnet! | Participants | |
+| In mid-June, we began the second phase of our Trusted setup – where secure parameters were generated for the 6 circuits that will be used for mainnet. Like in Phase 1, the outputs of Phase 2 should be trustable so long as one party in the chain is honest. Again, participants from all over the world contributed their resources to participate in generating secure and verifiable parameters for Filecoin’s proofs. For everyone who participated in this second phase, we’d like to extend a sincere thanks for your support in this critical component of Filecoin’s path to mainnet!
+
+| Participants                  |                              |
 | ----------------------------- | ---------------------------- |
-| Aztec / Ariel Gazibon | Sigma Prime / Mehdi Zerouali |
-| Secbit | IPFSMain / Neo |
-| Filecoin-vietnam.com | DecentralTech |
-| Filecoin / Whyrusleeping | Filecoin / Nemo |
-| BoringWang | Benjamin H |
-| Supranational | Coinsummer / Cobo / K |
-| Hashquark / Allen | Factor8 Solutions / Patrick |
-| Filecoin / DrPeterVanNostrand | Finality Labs / Keyvan |
-| Justin Drake | Filecoin / Porcuquine |
-| Consensys / Joseph Chow | Grandhelmsmen |
-| DianCun | IPFSForce |
-| Ocean / Alex Corseru | Troels Henriksen / Athas |
-| Vulcanize / A. F. Dudley | Kikakkz |
-| Filecoin / Magik | Filecoin / Dignifiedquire |
-| Zcash / Benjamin Winston | JP Aumussen |
-| James Hanson | Angelov |
-| Consensys / Alexander Wade | | ## How do I trust the output of these ceremonies
+| Aztec / Ariel Gazibon         | Sigma Prime / Mehdi Zerouali |
+| Secbit                        | IPFSMain / Neo               |
+| Filecoin-vietnam.com          | DecentralTech                |
+| Filecoin / Whyrusleeping      | Filecoin / Nemo              |
+| BoringWang                    | Benjamin H                   |
+| Supranational                 | Coinsummer / Cobo / K        |
+| Hashquark / Allen             | Factor8 Solutions / Patrick  |
+| Filecoin / DrPeterVanNostrand | Finality Labs / Keyvan       |
+| Justin Drake                  | Filecoin / Porcuquine        |
+| Consensys / Joseph Chow       | Grandhelmsmen                |
+| DianCun                       | IPFSForce                    |
+| Ocean / Alex Corseru          | Troels Henriksen / Athas     |
+| Vulcanize / A. F. Dudley      | Kikakkz                      |
+| Filecoin / Magik              | Filecoin / Dignifiedquire    |
+| Zcash / Benjamin Winston      | JP Aumussen                  |
+| James Hanson                  | Angelov                      |
+| Consensys / Alexander Wade    |                              |
+
+## How do I trust the output of these ceremonies
 
 For both phases the outputs can be trusted if the transcript is entirely verifiable, and you trust that **_at least_** one of the participants did not leak their contributed randomness in any way. As such, for both ceremonies we attempted to gather a diverse group of participants – both contributors from within the Filecoin ecosystem, miners with competing interests, as well as individuals and teams from outside in adjacent Web3 communities. In doing so, we aim to reduce the risk of collusion and increase the probability that at least one contributor per circuit would be deemed sufficiently trustable - thereby guaranteeing the integrity of the output parameters.
 
