@@ -41,7 +41,7 @@ schedule:
         - title: Opening Remarks
           speakers:
             - name: Tom Trowbridge
-              company: Fluence
+              company: Fluence Labs
           start-time: 13:00:00.000Z
           end-time: 13:03:00.000Z
           location: ArtLab
@@ -152,7 +152,7 @@ schedule:
           location: ArtLab
           speakers:
             - name: Tom Trowbridge
-              company: Fluence
+              company: Fluence Labs
 speakers:
   speakers_list:
     - name: Alexander Sly
@@ -199,7 +199,7 @@ speakers:
     - name: Kartikay Tiwari
       image:
         src: /assets/images/kartikay-tiwari-filosign.webp
-      company: Filosign
+      company: FiloSign
       title: "-"
     - name: Marco De Rossi
       title: Head of AI
