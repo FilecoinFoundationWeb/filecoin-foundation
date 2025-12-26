@@ -3,6 +3,8 @@ title: "The Debate Over DWeb vs. Web3 & The Decentralized Elephant in the Room"
 created-on: 2023-10-16T17:27:25.370Z
 updated-on: 2023-10-16T17:27:25.377Z
 published-on: 2023-10-16T17:27:25.385Z
+issue-number: 1
+article-number: 4
 image:
   src: /assets/images/DWD-Illustration-04.png
 authors:

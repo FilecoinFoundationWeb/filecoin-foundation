@@ -1,5 +1,3 @@
-import { notFound } from 'next/navigation'
-
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -19,29 +17,24 @@ import { PageSection } from '@/components/PageSection'
 
 import { DIGEST_SEO } from '../constants/seo'
 import { generateStructuredData } from '../utils/generateStructuredData'
-import { getAllDigestArticlesWithIssueContext } from '../utils/getDigestArticlesWithIssueContext'
+import { getDigestArticlesWithIssueContext } from '../utils/getDigestArticlesWithIssueContext'
 import {
-  getAllDigestIssuesData,
   getDigestIssueData,
+  getAllDigestIssuesData,
 } from '../utils/getDigestIssueData'
-import { parseDigestIssueParams } from '../utils/parseDigestParams'
+import { buildIssueSlug, parseIssueSlug } from '../utils/parseDigestParams'
 
 type DigestIssueProps = {
   params: Promise<DigestIssueParams>
 }
 
 export default async function DigestIssue(props: DigestIssueProps) {
-  const { issueNumber } = await parseDigestIssueParams(props.params)
+  const { issue } = await props.params
+  const issueNumber = parseIssueSlug(issue)
 
-  const digestIssue = await getDigestIssueData(issueNumber)
+  const { kicker, title } = await getDigestIssueData(issueNumber)
 
-  if (!digestIssue) {
-    notFound()
-  }
-
-  const articles = await getAllDigestArticlesWithIssueContext({ issueNumber })
-
-  const { kicker, title } = digestIssue
+  const articles = await getDigestArticlesWithIssueContext(issueNumber)
 
   return (
     <PageLayout gap="large">
@@ -108,12 +101,13 @@ export default async function DigestIssue(props: DigestIssueProps) {
 export async function generateStaticParams() {
   const allIssues = await getAllDigestIssuesData()
   return allIssues.map(({ issueNumber }) => ({
-    issue: `issue-${issueNumber}`,
+    issue: buildIssueSlug(issueNumber),
   }))
 }
 
 export async function generateMetadata(props: DigestIssueProps) {
-  const { issueNumber } = await parseDigestIssueParams(props.params)
+  const { issue } = await props.params
+  const issueNumber = parseIssueSlug(issue)
 
   const digestIssue = await getDigestIssueData(issueNumber)
 

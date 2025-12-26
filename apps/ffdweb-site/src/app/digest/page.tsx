@@ -15,9 +15,10 @@ import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
 import { DIGEST_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getAllDigestIssuesData } from './utils/getDigestIssueData'
+import { getDigestIssuesThatHaveArticles } from './utils/getDigestIssuesThatHaveArticles'
+
 export default async function Digest() {
-  const digestIssues = await getAllDigestIssuesData()
+  const digestIssues = await getDigestIssuesThatHaveArticles()
 
   return (
     <PageLayout gap="large">

@@ -3,6 +3,8 @@ title: Editor’s Letter
 created-on: 2023-09-06T17:57:51.502Z
 updated-on: 2023-09-06T17:57:51.625Z
 published-on: 2023-09-06T17:57:51.681Z
+issue-number: 1
+article-number: 1
 image:
   src: /assets/images/DWD-Illustration-01.png
 authors:
