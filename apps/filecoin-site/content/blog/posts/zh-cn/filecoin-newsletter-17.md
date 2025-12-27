@@ -53,7 +53,7 @@ MetaMask的这个版本是一个特殊的开发者版本，它通过即将推出
 
 <img src="/uploads/hackathon-tools-filcoin-ipfs.webp" style="width:25%;margin-left:0%"></a>
 
-## I PFS & Filecoin 3月份开发进展
+### I PFS & Filecoin 3月份开发进展
 
 在过去的两个月中，Protocol Labs参加了五场基于IPFS和Filecoin的不同黑客松活动，受众范围从大学建设者到游戏设计师，再到区块链黑客松。
 
