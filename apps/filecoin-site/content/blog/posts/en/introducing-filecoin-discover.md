@@ -36,7 +36,7 @@ Decentralizing these massive troves of data is the best way to do that is to ens
 
 The Filecoin Discover project incentivizes early miners of all sizes to store valuable data and in exchange earn additional Filecoin. For our launch, we’ve pulled together an initial set of open-source data - but over the coming months we’ll be continually adding more projects and datasets to our catalog.
 
-### How to Mine With Filecoin Discover
+## How to Mine With Filecoin Discover
 
 As Manoush Zomorodi, former host of the WNYC podcast Note to Self, [says](https://www.forbes.com/sites/geristengel/2018/10/24/a-springboard-to-success-for-female-blockchain-founders/#b9f3aff43219), “Blockchain requires a collective spirit. Think lots of people and computers working together.” The more nodes mining and storing data on the Filecoin network, the stronger it becomes. And so, Discover is our way to encourage more miners to join the network at this early stage. We built the Discover project as a way to quickly expand the Filecoin network.
 
@@ -48,13 +48,13 @@ Datasets include:
 - [Project Gutenberg](https://www.gutenberg.org/)
 - … and many more!
 
-### Wait, it’s That Easy? What Else do I Need to Know?
+## Wait, it’s That Easy? What Else do I Need to Know
 
 Given the volume of the data in each contract and the scale of data we aim to store in total, the most cost-effective way to share this data with miners is on physical hard drives. Our intent is to bootstrap this initiative in a financially sustainable way - therefore we’ve priced these materials at cost (including adding discounts for bulk orders where we can optimize our shipping methods). Miners that choose to participate in this program, will receive a package that includes a hard drive preloaded with verified data, as well as instructions for setup and maintenance. We have limited supplies for these datasets, and will attempt to source and distribute to the best of our ability.
 
 The Filecoin team will host a Slack channel (#fil-discover-support) in which miners can ask questions prior to participating in this program.
 
-### What happens next?
+## What happens next
 
 As of now, the Filecoin Discover store is accepting pre-orders for the materials we have on hand. Shipments are scheduled to start at the end of May to early June, but are subject to change - for more details please join our Slack channel! Full refunds will be available for any order if the request is received before the order has shipped.
 

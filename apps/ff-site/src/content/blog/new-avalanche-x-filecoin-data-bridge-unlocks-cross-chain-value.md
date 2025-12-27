@@ -45,15 +45,15 @@ This collaboration underscores these pioneering ecosystems’ commitment to buil
 
 To see the project in action, [check out](https://github.com/FIL-Builders/dataBridgeDemo) the demo and Github library.
 
-### About Filecoin
+## About Filecoin
 
 Filecoin is a peer-to-peer network to store files, with built-in economic incentives to ensure files are stored reliably over time. It’s designed to create a decentralized, efficient, and robust foundation for humanity’s information.
 
-### About Filecoin Foundation
+## About Filecoin Foundation
 
 Filecoin Foundation's mission is to preserve humanity's most important information, as well as to facilitate the open source governance of the Filecoin network, fund research and development projects for decentralized technologies, and support the growth of the Filecoin ecosystem and community.
 
-### About Avalanche
+## About Avalanche
 
 Avalanche is an ultra-fast, low-latency blockchain platform designed for builders who need high performance at scale. The network’s architecture allows for the creation of sovereign, efficient and fully interoperable public and private layer 1 (L1) blockchains which leverage the Avalanche Consensus Mechanism to achieve high throughput and near-instant transaction finality. The ease and speed of launching an L1, and the breadth of architectural customization choices, make Avalanche the perfect environment for a composable multi-chain future. 
 

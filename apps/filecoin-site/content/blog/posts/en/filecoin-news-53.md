@@ -21,7 +21,9 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 53
 ---
 
-![](/uploads/filecoin-news-53.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+![](/uploads/filecoin-news-53.webp)
+
+## Announcements
 
 <a href="https://22.labweek.io/"><img src="/uploads/labweek22.webp" style="width:40%;margin-left:0%"></a>
 
@@ -29,7 +31,7 @@ title: Filecoin News 53
 
 Come join the PLN community for the first-ever decentralized conference. LabWeek22 will take place in Lisbon, Portugal, from October 24th to November 4th. The event will be an opportunity for network teams to collaborate on a variety of exciting topics, including decentralized storage, compute over data, Filecoin Virtual Machine, public goods funding, DeSci, cryptoeconomics, gaming and the metaverse, and much more! Think of LabWeek22 as a “choose your own adventure” conference, where you can create your own track and meet with a range of web3 builders and others in the Protocol Labs community. The entire schedule is on the [LabWeek22 site](http://labweek.io) and more events are being added every day. [Register now](https://22.labweek.io)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://youtube.com/playlist?list=PL_0VrY55uV1-hCvLM5thswOJwZ3Iwfzg_"><img src="/uploads/ecosystem-wg.webp" style="width:40%;margin-left:0%"></a>
 
@@ -59,7 +61,7 @@ The community has built a place for Storage Providers to find funding opportunit
 
 Forest has been a major contributor to the upcoming FVM launch by providing Rust code for _actors_ (the FVM term for smart contracts). As ChainSafe’s Rust implementation of the Filecoin protocol, it will bring diversity and resilience to the network thanks to the language’s prioritization of memory safety and performance. Read through an update on Forest’s Q3 2022 progress on the [ChainSafe blog](https://blog.chainsafe.io/glow-of-the-canopy-3-sprucing-up-3e065f4fb038).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://github.com/filecoin-project/lotus/pull/9382"><img src="/uploads/lotus.webp" style="width:40%;margin-left:0%"></a>
 
@@ -67,7 +69,7 @@ Forest has been a major contributor to the upcoming FVM launch by providing Rust
 
 The Lotus community has built a new tool that lets you explore data on the Filecoin Network. While still a work-in-progress, you can already use it to see Storage Providers on the network and find out more information about their deal history and availability. The tool also allows you to click into files that are stored with the SP and open them in your browser. Check it out for yourself on [GitHub](https://github.com/filecoin-project/lotus/pull/9382) or watch a [demo](https://www.youtube.com/watch?v=V2c95KzN-oE) to learn how to use it.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://devcon.org/en/"><img src="/uploads/devcon-copy.webp" style="width:40%;margin-left:0%"></a>
 
@@ -101,9 +103,7 @@ Join the Filecoin community to celebrate the anniversary of the mainnet launch f
 
 We’re less than a month away from the exciting project presentations by the 9th cohort of the Filecoin Demo Day at LongHash X Accelerator. On November 9th, 10 “acceleratees” will present what they’ve worked on across verticals like Zero-knowledge DID, NFT tooling, data DAOs, and more. Don’t miss out and [sign up now](https://lu.ma/LHXC9DemoDay)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

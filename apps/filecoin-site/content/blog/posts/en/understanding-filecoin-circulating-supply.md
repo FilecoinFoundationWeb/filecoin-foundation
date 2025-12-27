@@ -26,7 +26,7 @@ _template: blog_detail
 
 This blog post aims to unpack how Filecoin tokens enter circulating supply, provide more insights on how various stakeholders take part in its economy, and shed light on how one should approach and think about Filecoin token economics. This post should be paired by reading the paper on [Filecoin’s Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf) and the detailed mechanisms outlined in the [Filecoin Spec](https://spec.filecoin.io/#).
 
-### The Filecoin Ecosystem
+## The Filecoin Ecosystem
 
 The growing momentum in the Filecoin ecosystem is a primary driver of use cases, tooling, and infrastructure for all Filecoin stakeholders. Since the [release of Filecoin’s mainnet](https://filecoin.io/blog/journey-to-liftoff/) on October 15th, 2020, the network has now surpassed a number of important milestones:
 
@@ -38,7 +38,7 @@ The growing momentum in the Filecoin ecosystem is a primary driver of use cases,
 
 For more, here’s a deep dive on the state of the [Filecoin Ecosystem](https://www.youtube.com/watch?v=FHqtIX4FPP4) from Liftoff Week or a recent [recap of the network](https://filecoin.io/blog/journey-to-liftoff/) from October 2020.
 
-### Filecoin as a Utility Token
+## Filecoin as a Utility Token
 
 Filecoin is a utility token that is meant to be used, giving token holders a right to use the network. One can think of Filecoin as an [Island Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf) where participants come together to produce valuable storage goods and services and export them to the world. On the network, one should expect to see storage providers with their own unique characteristics, smart contracts systems, lending services, a diverse set of use cases and many more. Each of these could become their own unique business. The utility of the network is reflected in the attractiveness of those goods and services that participants produce in the network.
 
@@ -46,7 +46,7 @@ The overarching goal for the whole economy, across miners, developers, researche
 
 ![Filecoin Participants](https://filecoin.io/vintage/images/blog/filecoin-circulating-supply-participants.png)
 
-### Token Minting: Aligning the Miner Minting Curve with Network Utility
+## Token Minting: Aligning the Miner Minting Curve with Network Utility
 
 As a utility token that aligns participants’ incentives with the long-term goal and vision of the network, Filecoin minting is aligned with the overall provable utility of the network. This means that the majority of Filecoin supply would only be minted if the network achieved some ambitious growth and utility targets.
 
@@ -64,7 +64,7 @@ _![](https://filecoin.io/vintage/images/blog/filecoin-circulating-supply-baselin
 
 More information can be found in the Filecoin spec.
 
-### Token Vesting: Aligning Stakeholders with Long-Term Behavior
+## Token Vesting: Aligning Stakeholders with Long-Term Behavior
 
 Another core principle and mechanism that incentivizes long-term alignment, steers participants away from short-term speculation, and encourages all stakeholders to work together to make the Filecoin network more useful in the long-term includes stakeholder vesting.
 
@@ -81,7 +81,7 @@ This applies to each of Filecoin’s core stakeholders, including:
 
 These long-term vesting schedules for token holders help ensure that participants have skin-in-the-game, and take long-term views with respect to their actions on the network.
 
-### Collateral and Slashing: Aligning Participants with Reliable Storage
+## Collateral and Slashing: Aligning Participants with Reliable Storage
 
 Blockchain networks like Filecoin incentivize good behavior with rewards and penalize bad behavior with penalties. The penalties – called **slashing** – come from collaterals participants must post, or potential rewards participants might have earned. Filecoin has many such mechanisms in order to incentivize high quality, reliable, long-term storage.
 
@@ -93,19 +93,19 @@ Naturally, the amount of Filecoin tokens that are locked in collateral and slash
 - The amount of tokens locked for deal collateral and payment is the result of a collective effort by all participants in making storage goods and services on Filecoin more attractive.
 - Collateral and all earned rewards by miners are subject to slashing throughout the lifetime of a sector. Unreliable storage reduces the utility of the network and hence block rewards earned by these sectors will be [slashed and burned](https://spec.filecoin.io/#section-systems.filecoin_mining.sector.sector-faults).
 
-### Filecoin Plus: Aligning Participants with Useful Storage
+## Filecoin Plus: Aligning Participants with Useful Storage
 
 Filecoin is a global marketplace enabled by blockchain technologies. Without a reliable way to algorithmically distinguish real useful data from generated randomness, the Filecoin Network innovatively and pragmatically introduced a layer of social trust on top of the technical layer, [Filecoin Plus](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0003.md). Filecoin Plus puts power in the hands of the storage clients as miners storing deals from these clients, who are notarized by a network of notaries, gain a 10x advantage in storage power and hence 10x their share of the network’s block reward.
 
 This mechanism incentivizes all participants to invest in business development, recruit useful data and use cases, and make Filecoin more useful. When a miner earns 10x the share of the block reward, they are also required to put up 10x the collateral with 10x the penalty to ensure that the incentives are aligned. This is also a big step forward in community governance and decentralized cryptoeconomics as operations and processes are being shaped by the community in [public](https://github.com/filecoin-project/notary-governance).
 
-### Network Transaction Fee: Aligning Token Supply with Network Usage
+## Network Transaction Fee: Aligning Token Supply with Network Usage
 
 As long as there is any action or utility on the network, Filecoin tokens will be [consumed](https://filecoin.io/blog/filecoin-features-gas-fees/) to compensate for the computation and storage resources on-chain messages consume. Similar to the rate of token minting for miners, the rate of token consumption is also in the hands of the community, as participants compete for on-chain resources.
 
 As of today, Filecoin daily token consumption has climbed as high as 180k FIL per day, which is a sign of a thriving economy.
 
-### Conclusion
+## Conclusion
 
 The economic mechanisms embedded in the Filecoin protocol ensure that network activities and stakeholders are fully aligned with the long-term health of the network. Mechanisms such as variable minting based on network growth, vesting structures, token consumption, collateral requirements and more align participant incentives and motivations with the long-term success of the network.
 
@@ -113,15 +113,15 @@ Making Web3 mainstream requires the efforts of all ecosystem participants. The i
 
 ---
 
-### _Addendum: Mechanical Definitions of Circulating Supply_
+## Addendum: Mechanical Definitions of Circulating Supply
 
 The blog post above details some of the mechanisms to model circulating supply. This addendum outlines two different mechanical calculations of circulating supply used in PL’s APIs.
 
-#### API #1: Filecoin Protocol Definition
+### API #1: Filecoin Protocol Definition
 
 The reference implementation of the Filecoin protocol ([Lotus](http://github.com/filecoin-project/lotus)) exposes an API call for the current network circulating supply: [StateCirculatingSupply](https://github.com/filecoin-project/lotus/blob/2d3b61675b93b977b299eae29945599c26f38cd2/api/api_full.go#L411). This API call returns the circulating supply as a result of subtracting total token outflows from total token inflows. Total token inflows include mining rewards, vested SAFT tokens, disbursed Mining Reserve, and vested tokens originally owned by the Filecoin Foundation and Protocol Labs. Total token outflows include tokens programmatically locked on chain or programmatically burned that are not transferable at the time of invocation. For example, collateral, locked block rewards, not-yet-vested tokens, etc are not included in this calculation. This API is used by a variety of community members, including various Filecoin block explorers.
 
-#### API #2: Used by Cryptocurrency Price and Market Capitalization Websites
+### API #2: Used by Cryptocurrency Price and Market Capitalization Websites
 
 Many cryptocurrency price and market capitalization tracking websites use their own specific definitions for circulating supply to keep comparisons across projects as standardized as possible. This sometimes diverges from the circulating supply definition used by a particular network. For example, websites like [CoinMarketCap](https://support.coinmarketcap.com/hc/en-us/articles/360043396252-Supply-Circulating-Total-Max-) and [CoinGecko](https://www.coingecko.com/en/glossary/circulating-supply) consider vested tokens by the project teams (e.g. Filecoin Foundation, Protocol Labs, and project team members) to be part of the circulating supply only when those tokens have moved from their original wallets.
 

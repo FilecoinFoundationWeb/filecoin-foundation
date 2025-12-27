@@ -23,7 +23,7 @@ _template: blog_detail
 
 [Lighthouse](http://lighthouse.storage/) is a facilitator of permanent file storage on the Filecoin Network where users only pay once and their files are stored forever. Traditionally, users need to keep track and pay for their files after a fixed amount of time. Lighthouse manages this for them by moving from a rent-based cost model to a permanent ownership model. This is important for storing NFT metadata and data on Web3 which have a risk of disappearing if the maintainer stops paying for the user’s file.
 
-### How it Works
+## How it Works
 
 The protocol works with a smart contract-based endowment pool whose job is to pay for the users' files in perpetuity. When a user pays for a file, a part of that amount goes directly to Storage Provider deals in the Filecoin Network while the remaining buffer amount goes back to the endowment pool.
 
@@ -31,7 +31,7 @@ All files stored on Filecoin through Lighthouse contribute the buffer amount to 
 
 Smart contracts of the Lighthouse protocol are deployed on EVM based chains like Polygon making transactions fast and cost-effective. This also makes the protocol compatible and composable with the most popular existing dapps. After users have stored their files on Lighthouse, they never have to worry about the particular files disappearing or getting lost.
 
-### Using Filecoin and IPFS
+## Using Filecoin and IPFS
 
 Lighthouse is built on top of Filecoin and IPFS with smart contracts on EVM-based chains like Ethereum, Polygon, and Optimism. Working with Filecoin has allowed Lighthouse to offer the users several advantages:
 
@@ -41,11 +41,11 @@ Lighthouse is built on top of Filecoin and IPFS with smart contracts on EVM-base
 - Potential expansions with the FVM (Filecoin Virtual Machine).
 - Growing usage every year.
 
-### Lighthouse’s Story
+## Lighthouse’s Story
 
 The project is developed by a team that has experience building decentralized infrastructure projects for the last two years and has been active in the community. It started as a Filecoin-Ethereum bridge in 2021 but later pivoted to the perpetual storage model seeing the demand of such model on IPFS. Since then, it has found [support](https://twitter.com/nanditmehra/status/1521112580554911746) from Long Hash Ventures, NGC Ventures, and Balaji Srinivasan, and others.
 
-### What’s Next
+## What’s Next
 
 The team has already released an Alpha which includes an SDK that allows developers to store files on Lighthouse on frontend frameworks like ReactJS and backend using NodeJS. Developers can also use CLI to interact with the Lighthouse protocol.
 
@@ -53,6 +53,6 @@ The team has already released an Alpha which includes an SDK that allows develop
 
 Finally, the Lighthouse validator node network is currently being built using Cosmos SDK and will be a layer 2 on Filecoin ensuring perpetual deal storage proofs, replications, and other storage configurations as asked by the users. The team aims to complete this by Q3 2022 at which point Lighthouse protocol will become completely trustless and anyone can join in to support and provide security to the network.
 
-### Stay in Touch
+## Stay in Touch
 
 To learn more about Lighthouse, visit the [official website](https://www.lighthouse.storage/), read through the [documentation](https://lighthouse-storage.gitbook.io/lighthouse/) or jump in on [GitHub](https://github.com/lighthouse-web3/). You can also join the community on [Discord](https://discord.com/invite/c4a4CGCdJG), [Twitter](https://twitter.com/LighthouseWeb3), [Telegram](https://t.me/lighthouseStorage), or [LinkedIn](https://www.linkedin.com/company/79071258/).

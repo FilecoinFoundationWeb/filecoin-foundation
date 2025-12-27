@@ -29,59 +29,59 @@ In this post, we offer an updated guide to Filecoin storage mining, and discuss 
 
 **Please note that Filecoin is still being refined. New insights from the experimentation afforded by the testnet are actively being incorporated into the ultimate specification. Consequently, vital network parameters are still subject to change before the mainnet launch. We strongly encourage miners to buy hardware at small scale for testing, experimentation, and benchmarking before investing significant capital.**
 
-### Participating in the Filecoin network
+## Participating in the Filecoin network
 
 At the present time, there are two primary roles a node can play in the Filecoin network: storage and retrieval. We anticipate that miners will seek to specialize in particular roles.
 
-#### Storage market
+### Storage market
 
 In the Filecoin network, nodes have the ability to contract with clients, offering to store their data for an agreed-upon period of time in exchange for filecoin.
 
 Nodes that supply storage to the Filecoin network are termed _storage miners_. These nodes are periodically granted the ability to extend the Filecoin blockchain with blocks of their own creation. When they create a new block, storage miners are rewarded with newly minted filecoin, and by the transaction fees they can levy on other nodes seeking to include messages in the block.
 
-#### Retrieval market
+### Retrieval market
 
 A node can additionally participate in retrieval contracts, supplying clients with a specified file in exchange for filecoin. This incentivizes well-placed nodes with high-throughput, high-bandwidth connections to participate in the network, promoting the widespread and rapid distribution of files – especially those that command high demand.
 
-#### Other roles
+### Other roles
 
 A number of other roles (for example “repair” nodes that facilitate network self-healing) are presently in development, but are not yet finalized or supported in any implementation. However, the network is fully functioning without these proposed improvements.
 
-### Storage mining explained
+## Storage mining explained
 
 The role of storage miners is to keep files on behalf of the Filecoin network. Storage miners must cryptographically prove that they are honoring their pledge to store these files – this is achieved via the mechanisms of _Proof-of-Replication_ (PoRep) and _Proof-of-Spacetime_ (PoSt). Pledging storage to the Filecoin network itself requires filecoin; these are used as collateral to ensure that storage miners uphold their contractual obligations.
 
-#### Storing data
+### Storing data
 
 In the Filecoin network, data is stored in fixed-size _sectors_. Generally, storage miners fill these sectors with data stored on behalf of clients, who contract storage miner services for a particular length of time via _deals_. However, storage miners are not forced into making deals; if a storage miner doesn’t find any of the available deal proposals appealing, they can alternatively make _capacity commitments_, filling sectors with arbitrary data. This allows them to provably demonstrate that they are reserving space on behalf of the network. If desired, sectors created to serve as capacity commitments can later be “upgraded” to provide the contracted storage for future deals.
 
-#### Proof-of-Replication
+### Proof-of-Replication
 
 Once a sector has been filled, PoRep sees storage miners _seal_ the sector – sealing is a computation-intensive process that results in a unique representation of the data (the original representation can subsequently be reconstructed by _unsealing_). Once data is sealed, storage miners: generate a proof; run a SNARK on the proof to compress it; and finally, submit the result of the compression to the blockchain as a certification of the storage commitment. Storage reserved for the network through this process is termed _pledged storage_.
 
-#### Proof-of-Spacetime
+### Proof-of-Spacetime
 
 After PoRep has been completed, storage miners must continuously prove that they are still storing the data they pledged to store. This is accomplished via PoSt, a procedure in which storage miners are issued a cryptographic challenge that can only be correctly answered by consulting a sealed sector directly. The storage miner must respond to this challenge within strict time limits; the computational difficulty of sealing ensures that storage miners must maintain ready access to and integrity of the sealed sector.
 
 In Filecoin, PoSt manifests in two distinct challenges: _WindowPoSt_ and _WinningPoSt_.
 
-##### WindowPoSt
+#### WindowPoSt
 
 _WindowPoSt_ is the mechanism by which the commitments made by storage miners are audited. It sees each 24-hour period broken down into a series of windows. Correspondingly, each storage miner’s set of pledged sectors is partitioned into subsets, one subset for each window. Within a given window, each storage miner must submit a PoSt for each sector in their respective subset. This requires ready access to each of the challenged sectors, and will result in a SNARK-compressed proof published to the blockchain as a message in a block. In this way, every sector of pledged storage is audited at least once in any 24-hour period, and a permanent, verifiable, and public record attesting to each storage miner’s continued commitment is kept.
 
 The Filecoin network expects constant availability of stored files. Failing to submit WindowPoSt for a sector will result in a _fault_, and the storage miner supplying the sector will be _slashed_ – that is, a portion of their collateral will be forfeited, and their storage power (see [Storage Power](https://filecoin.io/blog/filecoin-guide-to-storage-mining/#storage-power), below) will see a reduction. Storage miners will have a limited period of time to recover from faults before they are considered to have abandoned their storage commitment altogether. Should the need arise, storage miners will also have the ability to preemptively issue a _declared fault_, which will result in reduced penalties, but which still must be addressed within a reasonable timeframe.
 
-##### WinningPoSt
+#### WinningPoSt
 
 _WinningPoSt_ is the mechanism by which storage miners are rewarded for their contributions. In the Filecoin network, time is discretized into a series of epochs – the blockchain’s height corresponds to the number of elapsed epochs. At the beginning of each epoch, a small number of storage miners are _elected_ to mine new blocks (Filecoin utilizes [tipsets](https://filecoin.io/blog/tipsets-family-based-approach-to-consensus/), which permit multiple blocks to be mined at the same height). Each elected miner who successfully creates a block is granted filecoin, as well as the opportunity to charge other nodes fees to include messages in the block.
 
 A storage miner’s probability of being elected corresponds to their storage power. In a process similar to that underlying WindowPoSt, storage miners are tasked with submitting a compressed proof of storage for a specified sector before the epoch concludes. Storage miners who fail to complete WinningPoSt in the necessary window will forfeit the opportunity to mine a block, but will not otherwise incur penalties for their failure to do so.
 
-#### Storage power
+### Storage power
 
 A Filecoin storage miner’s _power_, which corresponds to the likelihood that a storage miner will be elected to mine a block, is roughly proportional to the amount of storage they have sealed on behalf of the network. To further incentivize the storage of “useful” data over simple capacity commitments, storage miners have the additional opportunity to compete for special deals offered by [_verified clients_](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/). Such clients are certified with respect to their intent to offer deals involving the storage of meaningful data, and the power a storage miner earns for these deals is augmented by a multiplier. The total amount of power a given storage miner has, after accounting for this multiplier, is known as _quality-adjusted_ power.
 
-### Filecoin implementations
+## Filecoin implementations
 
 The _Filecoin Distributed Storage Network_ is an open specification with numerous implementations.
 
@@ -89,27 +89,27 @@ At the time of writing, the most mature implementation, and the one that should 
 
 There are at least three other implementations currently undergoing active development. These include [go-filecoin](https://spec.filecoin.io/implementations/) (another Go-based implementation), [forest](https://github.com/ChainSafe/forest) (a Rust implementation developed by ChainSafe), and [fuhon](https://github.com/filecoin-project/cpp-filecoin) (a C++ implementation by Soramitsu).
 
-### Hardware considerations
+## Hardware considerations
 
-#### Participants in the Filecoin network will need to ensure that their systems are sufficiently equipped for the role they are intended to fill
+### Participants in the Filecoin network will need to ensure that their systems are sufficiently equipped for the role they are intended to fill
 
-#### Running the Lotus client without mining
+### Running the Lotus client without mining
 
 If you don’t wish to mine, but would still like to run the Lotus client for the purposes of keeping a wallet or interfacing with the network, a system with 2-4 CPU cores, 8GiB of RAM, and enough storage for the Filecoin blockchain should be sufficient (the current testnet chain grows at about 12GiB per week; improvements to reduce this storage requirement are ongoing).
 
-#### Storage mining
+### Storage mining
 
 It bears noting that in its current state, Filecoin storage mining necessitates fairly powerful hardware to meet the storage and proof requirements. These requirements are driven largely by the design constraints imposed by the PoRep and PoSt mechanisms, and the balance that needs to be struck between accessibility, computational feasibility, and cryptographic security.
 
 Filecoin storage mining is _not_ proof-of-work mining – sealing storage is the only way to gain power on the network – but fast and efficient hardware is required to compute the necessary proofs in an acceptable timeframe. Protocol Labs is currently working on ways to relax these requirements (for example, by introducing efficiencies into the proof mechanisms themselves, or by outsourcing SNARK computation to obviate the need for expensive GPUs). In the meantime, however, before making a large investment in hardware, prospective storage miners should carefully consider and experiment with the composition of their systems to ensure that they are capable of the performance required.
 
-##### Example mining machines and benchmarks
+#### Example mining machines and benchmarks
 
-###### The optimal system composition will depend largely on a storage miner’s operating model, include capital expenditure and operating cost; as such, Protocol Labs is unable to give any concrete recommendations. We have, however, published some of our own designs, including outlines for machines that are presently suitable for [testing and small-scale mining](https://pcpartpicker.com/user/tperson/saved/H2BskL)
+##### The optimal system composition will depend largely on a storage miner’s operating model, include capital expenditure and operating cost; as such, Protocol Labs is unable to give any concrete recommendations. We have, however, published some of our own designs, including outlines for machines that are presently suitable for [testing and small-scale mining](https://pcpartpicker.com/user/tperson/saved/H2BskL)
 
 We expect storage miners to tailor their configurations to their own needs; it is possible to mine on the testnet with alternative configurations, and we expect that many of these configurations will surpass the efficiency of our own builds. We encourage experimentation, and would ask interested community members to share their own benchmark scores [on GitHub](https://github.com/filecoin-project/benchmarks).
 
-##### General hardware concerns
+#### General hardware concerns
 
 While we cannot give concrete recommendations, we can offer some general guidelines.
 
@@ -129,7 +129,7 @@ While we cannot give concrete recommendations, we can offer some general guideli
 
 **Network**. If using distributed Lotus seal workers (see [Advanced mining considerations](https://filecoin.io/blog/filecoin-guide-to-storage-mining/#advanced-mining-considerations), below) high-performance networking is suggested (10GbE+ network cards and switches are recommended). High-performance networking is also suggested when using network-attached storage.
 
-#### Advanced mining considerations
+### Advanced mining considerations
 
 As previously discussed, Filecoin storage mining is dominated by concerns related to the PoRep and PoSt mechanisms. PoRep itself is comprised of several stages, and the Lotus implementation of Filecoin facilitates the delegation of these stages to different machines for maximum efficiency using [_seal workers_](https://lotus.filecoin.io/storage-providers/seal-workers/seal-workers/). Protocol Labs has developed an [example architecture](https://filecoin.io/vintage/mining-hardware-config-testnet-v3.pdf) designed to leverage these capabilities for large-scale mining. Here, we break down the different bottlenecks to consider when designing similar systems.
 
@@ -145,7 +145,7 @@ Protocol Labs has found it efficient to co-locate preCommit phase 2, commit phas
 
 PoSt is primarily GPU-bound, but can take advantage of a CPU with many cores to accelerate the process. WindowPoSt, for example, must currently take place within a 30-minute window; the difference between an 24-core CPU and an 8-core CPU could be the difference between clearing that window by a comfortable margin and just narrowly passing in time. WinningPoSt is a less intensive computation that must be completed in the much smaller window of a Filecoin epoch (currently 25 seconds).
 
-### Joining Testnet Phase 2
+## Joining Testnet Phase 2
 
 Our _testnet_ is the preliminary stage to the official launch of the Filecoin network – we’re currently in Testnet Phase 2, which is expected to run until the _mainnet_ launch in Q3 2020.
 
@@ -153,26 +153,26 @@ During the testnet phase, storage miners can retrieve filecoin from our [faucet]
 
 Please note that testnet filecoin do not have any value – official filecoin will only be available after the launch of the mainnet.
 
-### Accelerating the Filecoin ecosystem
+## Accelerating the Filecoin ecosystem
 
 As the launch of the mainnet approaches, a growing number of opportunities are becoming available for community members to get involved with Filecoin.
 
-#### SpaceRace
+### SpaceRace
 
 In preparation for the mainnet, Protocol Labs has recently announced an incentives program, [SpaceRace](https://filecoin.io/blog/announcing-testnet-incentives/), to stress-test the testnet. Participants will have the opportunity to compete for mainnet filecoin by onboarding as much storage as possible.
 
-#### HackFS
+### HackFS
 
 [HackFS](https://filecoin.io/blog/announcing-filecoin-ignite-and-hackfs/) is a 30-day virtual hackathon aimed at building the foundation of the decentralized web. Developers will build dapps, games, dev tools, DeFi integrations, and other hacks that utilize decentralized storage. HackFS will be hosted by [ETHGlobal](https://ethglobal.co/) and [Protocol Labs](https://protocol.ai/), and will have all the hackathon staples: workshops, mentorship, inspiring talks, AMAs, and prizes!
 
-#### Filecoin Discover
+### Filecoin Discover
 
 Filecoin Discover is a [recently announced](https://filecoin.io/blog/intro-filecoin-discover/) initiative to seed Filecoin with some of humanity’s most valuable cultural and scientific data. Individuals that buy in to the Discover program will receive one-year quality-adjusted storage deals, with Discover acting as the verified client.
 
-#### Filecoin dev grants
+### Filecoin dev grants
 
 We continue to promote the growth of the Filecoin ecosystem by sponsoring contributors via [Filecoin dev grants](https://filecoin.io/grants/). The Wave 4 grant proposal deadline was July 1st for priority consideration, but we will continue to evaluate proposals submitted after the deadline as capacity allows. Wave 5 proposals will be due October 1st.
 
-### Summary
+## Summary
 
 Blockchains are complicated pieces of software with a lot of moving pieces, and building a successful blockchain from scratch is a tremendous undertaking. Filecoin would not be where it is today without the support it has received from community members all over the world, and we cannot emphasize enough how grateful we are to everyone who has helped Filecoin get to this point! Once again, thank you for your continued support, involvement, and patience as we enter the final days before the mainnet comes online. We are extremely excited to be welcoming new community members into the fold – miners, developers, and users alike – and hope that this guide can serve as a jumping-off point for anyone looking to join us as we embark on the next steps of this awesome journey!

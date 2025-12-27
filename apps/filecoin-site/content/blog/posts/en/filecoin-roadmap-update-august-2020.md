@@ -24,7 +24,7 @@ _template: blog_detail
 
 Our August 2020 roadmap update covers progress made since the last roadmap update - with a special celebration of today’s launch of the Filecoin Space Race, our incentivized testnet competition. The last two months have seen amazing progress across the project - here are some highlights:
 
-### Space Race
+## Space Race
 
 💸 **Space Race**. Earlier today, we launched [the Filecoin Space Race](https://filecoin.io/blog/welcome-to-space-race), our 3 week collaborative competition intended to stress-test the network, encourage participation all over the world, and provide miners with an opportunity to test-drive Filecoin in advance of the mainnet launch. This is a huge milestone for the Filecoin project - marking our last major update before mainnet launch and the culmination of months of hard work to bring the Filecoin protocol and the Lotus implementation into “mainnet-ready” condition. We expect to continue to make many improvements throughout the competition as miners stress-test the network and help discover issues.
 
@@ -36,7 +36,7 @@ Our August 2020 roadmap update covers progress made since the last roadmap updat
 
 ![Storage stats that show Filecoin progress](https://filecoin.io/vintage/images/blog/update-storage-stats.jpg)
 
-### Mainnet Functionality
+## Mainnet Functionality
 
 💪 **Mainnet Functionality Hardening**. A major focus for our work has been hardening the lifecycle of storage and retrieval deals in the Filecoin blockchain - including the ability to upgrade committed space with real deals, store multiple deals in one sector, request [fast-retrieval](https://github.com/filecoin-project/lotus/pull/2323) from miners via an unsealed copy, and exchange filecoin for successful deals via payment channels (which saw huge improvements). We also introduced “real” gas costs to VM executions ⛽ - including one of the first implementations of [EIP1559](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md). See the [Lotus 0.5.0 release](https://github.com/filecoin-project/lotus/releases/tag/v0.5.0) for more details.
 
@@ -48,7 +48,7 @@ Our August 2020 roadmap update covers progress made since the last roadmap updat
 
 ⚖️ **Filecoin’s Cryptoeconomic Constructions**. We made large improvements to defining and solidifying Filecoin’s cryptoeconomic constructions - including updates to the live code in our latest devnets. As part of that, we created an in-depth explainer on how the Filecoin economy works, which we’ll be sharing with miners along with a _CryptoEcon Deep Dive_ during Space Race. We’re still conducting extensive modeling and testing to finalize parameters, and expect to make more changes for mainnet launch.
 
-### Ecosystem Highlights
+## Ecosystem Highlights
 
 👨‍👩‍👧‍👦 **Filecoin Ecosystem.** There are now over 70 meaningful organizations building on and collaborating with the Filecoin testnet. Here are just a few recent updates:
 
@@ -80,7 +80,7 @@ Our August 2020 roadmap update covers progress made since the last roadmap updat
 - **Filecoin Master Class**: On August 17th, we kicked off the Master Class series by demonstrating [how to use the Slate API](https://www.youtube.com/watch?v=Rknj2GqvJtg&t=6s) with Filecoin and IPFS. The second session in the Master Class series, Tuesday, September 1 at 9am pst, will cover how to use Fleek’s Space Daemon to build decentralized apps, including a live demo. [Register here](https://www.eventbrite.com/e/filecoin-master-class-registration-118042974715?ref=estw).
 - **China Community Events**: Colin and Keren presented in several blockchain community events in China including the [IPFS Ecology Industry Summit](https://play.yunxi.tv/livestream/flash?id=e1eecab932304450b9e332502dbbf490#/) in Hangzhou, [Greater Bay Area Blockchain Summit](https://mp.weixin.qq.com/s/7SbCX1JfOXTPfEiAHNJM2A) in Shenzhen. We shared a Filecoin sizzler of our rapidly growing ecosystem with exciting clips of Filecoin meetups. Colin showed us an update of recent community events and talked about the Filecoin Ignite program including Space Race, HackFS, Apollo project and many more! Keren shared an overview of the Filecoin project, recent achievements and different ways community members can join the Filecoin ecosystem. Ecosystem projects including Textile, Truffle, Fleek and Filecoin devgrant winning teams also presented their products and current progress at the stage.
 
-### Coming Soon: Mainnet Launch
+## Coming Soon: Mainnet Launch
 
 This is it! Our final remaining milestone is the **Filecoin mainnet launch** in mid-to-late September.
 

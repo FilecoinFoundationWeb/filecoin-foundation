@@ -21,7 +21,9 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 58
 ---
 
-![](/uploads/filecoin-news-58.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+![](/uploads/filecoin-news-58.webp)
+
+## Announcements
 
 <a href="https://filecoin.io/blog/posts/the-fvm-imaginarium-magmo-brings-state-channels-to-the-filecoin-virtual-machine/"><img src="/uploads/filecoin_blog_header__fvm_imaginarium__magmo.webp" style="width:40%;margin-left:0%"></a>
 
@@ -29,7 +31,7 @@ title: Filecoin News 58
 
 The launch of the Filecoin Virtual Machine (FVM) is quickly approaching, but there are already amazing projects in development. The FVM Imaginarium Campaign is putting the spotlight on the teams who are building incredible use cases and introducing new opportunities and concepts on FVM. The first highlighted is Magmo, a development studio and research team who is working on porting State Channels to the FVM. [Check out the feature!](https://filecoin.io/blog/posts/the-fvm-imaginarium-magmo-brings-state-channels-to-the-filecoin-virtual-machine/)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <img src="/uploads/coindesk.webp" style="width:40%;margin-left:0%">
 
@@ -53,7 +55,7 @@ Fleek met the end of the year with several achievements. The team completed a $2
 
 In collaboration with Tableland, the Filecoin Chair is an initiative that provides supplemental support and funding for teams building joint use cases between Tableland and Filecoin. Teams interested in building novel concepts that combine Filecoin’s leading decentralized storage tools with Tableland’s permissionless relational database can [apply for the Filecoin Chair position](https://hhueol4i6vp.typeform.com/to/b1VDj6sU?typeform-source=tableland.xyz) in Pilot Program 3, kicking off on January 23.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <img src="/uploads/fvm.webp" style="width:40%;margin-left:0%">
 
@@ -61,7 +63,7 @@ In collaboration with Tableland, the Filecoin Chair is an initiative that provid
 
 The Filecoin Virtual Machine will unlock endless possibilities for innovation on the Filecoin network, and teams are already beginning to build incredible use cases. For those interested in building but aren’t sure where to start, the FVM dev team has created a Request for Startups page that details 24 ideas for systems, apps, and building blocks that are ready to be developed!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <img src="/uploads/spaces.webp" style="width:40%;margin-left:0%">
 
@@ -85,9 +87,7 @@ A green, sustainable web3 ecosystem is the future. Come plug into the latest dev
 
 The community is invited to apply for an exclusive party celebrating the success of Estuary, the “easiest way to put and get your data from Filecoin.” The party takes place at CLIO, Toronto on January 24, and applications to attend the invite-only event are open until January 17. Those who are accepted will receive confirmation within 48 hours.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

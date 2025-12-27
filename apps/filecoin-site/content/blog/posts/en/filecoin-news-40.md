@@ -21,7 +21,9 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 40
 ---
 
-![](/uploads/filecoin-news-40.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+![](/uploads/filecoin-news-40.webp)
+
+## Announcements
 
 <a href="https://filecoin.io/blog/posts/fvm-milestone-0.5-is-complete/"><img src="/uploads/fvm-update_hud60c027a439008dcf3bf42e8849e5d71_735992_2000x0_resize_q90_linear_2.webp" style="width:40%;margin-left:0%"></a>
 
@@ -41,7 +43,7 @@ The [Filecoin VM Bug Bounty Program](https://fvm.filecoin.io/#fvm-bug-bounty-pro
 
 Protocol Labs recently launched the first production [Network Indexer](https://filecoin.io/blog/posts/introducing-the-network-indexer/) to enable searching for content-addressable data available from storage providers, such as those on the Filecoin and IPFS networks. Storage providers can now publish the content IDs ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)s) of their data to the Network Indexer, and clients can query the Network Indexer to learn where to retrieve the content identified by those CIDs. Learn how to use a network indexer and more in this [blog post](https://filecoin.io/blog/posts/introducing-the-network-indexer/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Implementations</b></h3>
+## Implementations
 
 <a href="https://github.com/filecoin-project/lotus/releases/tag/v1.15.1"><img src="/uploads/lotuswithtext.webp" style="width:40%;margin-left:0%"></a>
 
@@ -49,7 +51,7 @@ Protocol Labs recently launched the first production [Network Indexer](https://f
 
 [Lotus has released v1.15.1](https://github.com/filecoin-project/lotus/releases/tag/v1.15.1) which includes many Snap Deal improvements and bug fixes, **supports FVM 0.5** and allows storage providers to become an index provider to the content addressing network. See the [release notes](https://github.com/filecoin-project/lotus/releases/tag/v1.15.1) for more details! At this stage, we welcome lotus node operators to help find potential bugs in [ref-fvm](https://github.com/filecoin-project/ref-fvm) and [built-in actor](https://github.com/filecoin-project/builtin-actors) by running an FVM node on mainnet, please submit feedback [here](https://github.com/filecoin-project/lotus/discussions/8334). Stay up to date with all things Lotus by following [@lotus_web3](https://twitter.com/lotus_web3) on Twitter.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://filecoin.io/blog/posts/the-economics-of-storage-providers/"><img src="/uploads/the-economics-of-storage-providing_hu5f001c4504c1cf2d362fae7d52a9bd29_778733_2000x0_resize_q90_linear_2.webp" style="width:40%;margin-left:0%"></a>
 
@@ -75,7 +77,7 @@ Take a look at the [Filecoin Community Roadmap for Q2 2022](https://github.com/f
 
 Recently Tachyon and Protocol Labs hosted a Twitter Space AMA to discuss the Tachyon 6 Filecoin Launchpad Accelerator III’s kick off. The ongoing series “Build in Public” featured Gabriel Anderson and Brad Holden as well as startup founders from the previous cohort. Read this [thread](https://twitter.com/TachyonAccel/status/1511033209441726468?s=20&t=f1ydg-2VXozxIMy5USIuSA) to learn more about what’s next for Tachyon6 and its transition toward a Global Networked Startup Ecosystem DAO or listen to the [recording](https://twitter.com/i/spaces/1kvJpAjQqabxE?s=20).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filecoin.io/blog/posts/introducing-boost-new-capabilities-for-markets-including-http-transfers-web-ui-and-more/"><img src="/uploads/_hu63bb858b305d92dba5869f89b7fb87e0_1260610_79032e860a310fc5d90b37d86bb677da.webp" style="width:40%;margin-left:0%"></a>
 
@@ -83,7 +85,7 @@ Recently Tachyon and Protocol Labs hosted a Twitter Space AMA to discuss the Tac
 
 Boost is a tool for storage providers to manage data storage and retrievals on Filecoin. It replaces the go-fil-markets package in Lotus with a standalone binary that runs alongside a Lotus daemon and Lotus miner. The tool also exposes libp2p interfaces for making storage and retrieval deals, a web interface for managing storage deals, and a graphql interface for accessing and updating real time deal information. Learn more about Boost in this recent [blog post](https://filecoin.io/blog/posts/introducing-boost-new-capabilities-for-markets-including-http-transfers-web-ui-and-more/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://lu.ma/fil-emea"><img src="/uploads/screen-shot-2022-04-12-at-1-54-18-pm.webp" style="width:40%;margin-left:0%"></a>
 
@@ -109,9 +111,7 @@ Applications for the [Faber Filecoin Accelerator](https://filecoin.faber.vc) are
 
 The Hedera community is celebrating its first Solidity smart contract hackathon. H22 features prizes for the best use cases of Filecoin and IPFS for decentralized storage and projects who use the technology via NFT.storage, web3.storage, Estuary, Fleek, Textile also qualify. The event is underway until May 16th. [Join now](https://hedera22.devpost.com/)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

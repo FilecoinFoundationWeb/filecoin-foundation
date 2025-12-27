@@ -36,7 +36,7 @@ First and foremost, the response has been huge. Thousands of prospective miners 
 
 Second, we hear you loud and clear: you want many more details about Filecoin. Though it is not fully ready, today we are releasing the first public draft of the Filecoin Primer, a document that describes why Filecoin exists, how the technology works, what the network does, and so on. It includes important details about the Filecoin token economics. Note that this primer is a draft, and will soon be updated with more:
 
-### The Filecoin Primer
+## The Filecoin Primer
 
 Third, many people have asked us for more technical details and a deep dive into the protocol. We will soon release more of our research works in progress, a research roadmap, and perhaps we will give some detailed recorded talks about our works.
 

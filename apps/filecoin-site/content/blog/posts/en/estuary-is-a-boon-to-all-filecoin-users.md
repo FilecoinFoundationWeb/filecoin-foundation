@@ -25,7 +25,7 @@ It’s been over a year since the first commit to the Estuary [codebase](https:/
 
 Estuary is an open source decentralized data storage service built on key distributed web protocols such as Filecoin and IPFS. To ensure the durability of data, Estuary uses the Filecoin Network to store as many as six replicas on the network at any given time. The service keeps track of hundreds of Storage Providers from around the world who are willing to store public data from anyone. This makes storing data on Filecoin easier for users.
 
-### Why Use Estuary
+## Why Use Estuary
 
 A service such as Estuary is useful because running bare metal infrastructure for Filecoin requires a significant investment in time, hardware, and money. Organizations that are well funded may have more capital to deploy towards Filecoin infrastructure, but the resource-constrained developer or consumer does not.
 
@@ -33,7 +33,7 @@ To address this issue, Estuary does not cost the developer or consumer anything.
 
 As of May 2022, users of Estuary have added over six hundred million objects to the service. That number does not include what other network operators have stored in their own self-hosted Estuary service. In total, close to a petabyte of storage has been added to the Filecoin Network through the Estuary node. The team is proud that users from around the world have taken advantage of what Filecoin and IPFS have to offer.
 
-### What’s in the Estuary Pipeline
+## What’s in the Estuary Pipeline
 
 **SDKs and libraries**
 

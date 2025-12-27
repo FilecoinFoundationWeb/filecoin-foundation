@@ -27,7 +27,7 @@ _template: blog_detail_ch
 
 ![](/uploads/filecoin-news-26.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>公告</b></h3>
+## 公告
 
 <img src="/uploads/10eib-graphic.webp" style="width:40%;margin-left:0%">
 
@@ -37,11 +37,11 @@ _template: blog_detail_ch
 
 <a href="https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/"><img src="/uploads/dapper.webp" style="width:40%;margin-left:0%"></a>
 
-### Dapper Labs整合Filecoin以推动Flow区块链上的NFT和游戏元宇宙的未来
+### Dapper Labs整合Filecoin以推动Flow Flow区块链上的NFT和游戏元宇宙的未来
 
 [**Dapper Labs**](https://www.dapperlabs.com/)正整合Filecoin技术以引领端到端的NFT所有权，这包括了底层的媒体资源以及存储NFT数据的最佳实践。为了加速这项协作，将会为Flow生态系统提供一系列的资助计划，这会从Next Step Microgrant计划开始。任何积极地整合IPFS、Filecoin和相关服务（如Pinata或NFT.Storage）都可以申请这项资助，只要满足5个简单的条件。可以点击 [**这里**](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)查看条件及进行申请！要了解更多关于整合方案和资助计划的详情，请[**阅读这篇博客文章**](https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>存储</b></h3>
+## 存储
 
 <a href="http://tachyon.xyz/"><img src="/uploads/filecoin-launchpad.webp" style="width:40%;margin-left:0%"></a>
 
@@ -49,7 +49,7 @@ _template: blog_detail_ch
 
 由Tachyon支持的Filecoin Launchpad Accelerator II演示日现正开放注册。请保持关注，以抢先了解在DeFi、NFT、游戏、社交和元宇宙领域搭建公司的Web3创始人们推出的项目，以及他们的雄心壮志。 在9月21日（周二）11am ET加入我们！[**点击这里进行预约以保留参与席位**](http://tachyon.xyz/)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>工具</b></h3>
+## 工具
 
 <a href="https://filecoin.io/blog/posts/taking-a-look-at-estuary/"><img src="/uploads/estuary.webp" style="width:40%;margin-left:0%"></a>
 
@@ -63,7 +63,7 @@ Filecoin网络是一个突破性的去中心化存储网络基础设施及协议
 
 存储提供者是[**Filecoin**](https://filecoin.io/)的去中心化存储网络的核心。因此，[**BUIDL Labs**](https://buidllabs.io/)创建了 **DataStation**，这是一个专注于存储提供者信息的平台，旨在提供容易理解的数据，对存储提供者进行定性和定量分析。DataStation将能让用户根据其特定需要，为其提供更简单的选择存储提供者的方式。要了解更多这将如何造福用户以及DataStation的工作原理，可以读一下[**这篇博客文章**](https://medium.com/buidl-labs/datastation-enhancing-the-experience-of-decentralised-storage-on-filecoin-79e8807b854d)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>存储提供者</b></h3>
+## 存储提供者
 
 <a href="https://filecoin-community.typeform.com/to/yTMkOLg8"><img src="/uploads/lotus-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -82,13 +82,13 @@ Filecoin基金会发布了[**存储提供者悬赏公告板（Storage Provider B
 
 你可以在Filecoin项目的Github账号里查看[**Storage Provider Bounty Board panel**](https://github.com/filecoin-project/community/projects)，以查看赏金进展以及找到待解决问题。要了解更多，请阅读这篇[**博客文章**](https://filecoinfoundation.medium.com/introducing-the-storage-provider-bounty-board-b98eace44dd0)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>社区</b></h3>
+## 社区
 
 ### Filecoin社区活动赞助
 
 现在仍有时间申请[**Filecoin社区活动赞助**](https://filecoin-community.typeform.com/to/B9XpG9ep)！这个赞助计划包含了一系列的小额资助，以帮助补贴Filecoin主网发布一周年庆祝活动（10月18-22日期间）发生的社区活动组织费用。要申请这项赞助，请在9月10日11:59pm PT前填写[**这个表格**](https://filecoin-community.typeform.com/to/B9XpG9ep)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>活动</b></h3>
+## 活动
 
 ### 亚洲黑客松赛季2021公告
 
@@ -119,7 +119,7 @@ Filecoin基金会发布了[**存储提供者悬赏公告板（Storage Provider B
 
 记得[**登记参会者信息**](https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsyccmbsb/) 并添加到你的日程表上。到时见！
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>学习</b></h3>
+## 学习
 
 <a href="https://medium.com/encode-club/encode-filecoin-club-pinning-services-with-pinata-video-slides-72b2b37ff1bf"><img src="/uploads/encode-club-pinata.webp" style="width:40%;margin-left:0%"></a>
 
@@ -127,9 +127,7 @@ Filecoin基金会发布了[**存储提供者悬赏公告板（Storage Provider B
 
 上周，[**Encode Filecoin Club**](https://www.encode.club/filecoin-educate)邀请了Pinata的联合创始人及首席技术官Matt Ober来为学生和hacker们讲述如何使用Pinata的pinning服务。在这个一小时的课程里，Matt展示了往IPFS上pin数据及将其取回的过程。[**在这里查看完整的演示**](https://medium.com/encode-club/encode-filecoin-club-pinning-services-with-pinata-video-slides-72b2b37ff1bf)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ 快来参与
+## 快来参与
 
 前往[**Github上的Filecoin项目**](https://github.com/filecoin-project)并确保查看[**社区资源**](https://github.com/filecoin-project/community)。在[**Filecoin Slack**](http://filecoin.io/slack)频道提出问题，在[**社区论坛**](https://discuss.filecoin.io/) 讨论问题或新想法，在微信号 @Filecoin-Official 关注我们，或[**在推特@Filecoin**](https://twitter.com/Filecoin)上向我们提出你的想法。
 

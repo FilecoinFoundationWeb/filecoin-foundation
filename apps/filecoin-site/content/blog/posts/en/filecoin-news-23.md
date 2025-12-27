@@ -26,7 +26,7 @@ title: "Filecoin News 23: Hedera, Filecoin Base Camp, Juan at EthCC, and More"
 
 ![](/uploads/filecoin-news-23.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
+## Build
 
 <a href="https://filecoin.io/blog/posts/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/"><img src="/uploads/fil-news-hedera.webp" style="width:40%;margin-left:0%"></a>
 
@@ -64,7 +64,7 @@ In collaboration with [**Techstars**](http://www.techstars.com/), we are excited
 
 Outlier Ventures CEO Jamie Burke and Protocol Labs Ecosystem Lead Colin Evran sat down to talk about business opportunities for the future of Web3. They discussed existing and new business models that will be empowered by decentralized technology — and storage in particular — to supercharge the next phase of the global economy. [**Check out the highlights from the conversation**](https://filecoin.io/blog/posts/building-businesses-for-the-future-of-the-decentralized-web/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Store</b></h3>
+## Store
 
 <a href="https://github.com/filecoin-project/filecoin-plus-large-datasets"><img src="/uploads/fil-logo-filecoin-plus-symbol-color-dark.webp" style="width:20%;margin-left:0%"></a>
 
@@ -86,7 +86,7 @@ ChainSafe is proud to launch [**ChainSafe Storage**](https://storage.chainsafe.i
 
 Since mainnet launch in October 2020, over 2,700 storage providers are contributing over 8 exbibytes of storage to the network. Providing storage on Filecoin has become one of the most significant economic activities in Web3, with more than 86 million FILs mined, over 92 million FILs locked as collateral, and over 27 million FILs burned as network fees. Starboard Ventures broke down the economics of providing storage on the Filecoin network to take a deep look at the economic incentives behind such a strong and growing Web3 service.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Mine</b></h3>
+## Mine
 
 ### Synthetic PoRep
 
@@ -104,7 +104,7 @@ For more information, the protocol flow on Synthetic PoRep, and more read the [*
 
 Recently, the **Web 3.0 China Summit** in Chengdu, Sichuan Province gathered 5000 attendees with more than 60 industry experts sharing their knowledge and expertise. More than 70 Filecoin ecosystem service providers participated in the exhibition, including major mining companies, hardware manufacturers, ecosystem application upstream and downstream enterprises. Visit the **event website** for a look into the summit.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Learn</b></h3>
+## Learn
 
 <a href="https://fil.org/events/"><img src="/uploads/fil-news-browsers-hackathon.webp" style="width:40%;margin-left:0%"></a>
 
@@ -118,9 +118,7 @@ Recently, the **Web 3.0 China Summit** in Chengdu, Sichuan Province gathered 500
 
 In July, Encode Club announced the [**Encode Filecoin Club**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46), a nine-month program including a Filecoin education series, a Filecoin-dedicated hackathon and a follow-up accelerator. Filecoin Educate aims to teach students about blockchain through the lens of Filecoin, in attendance will be 125+ university blockchain societies and students globally. To join and learn more, please see the [**full event schedule**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## ✊ Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

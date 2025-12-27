@@ -24,7 +24,9 @@ share_image: /uploads/blog-filecoin-news.webp
 title: "Filecoin News 22: Techstars Accelerator, Filecoin Base Camp, HackFS, and More"
 ---
 
-![](/uploads/filecoin-news-22.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
+![](/uploads/filecoin-news-22.webp)
+
+## Build
 
 <a href="https://www.techstars.com/newsroom/techstars-collaborates-with-filecoin-to-launch-accelerator-program"><img src="/uploads/techstars.webp" style="width:40%;margin-left:0%"></a>
 
@@ -64,7 +66,7 @@ You can watch the full Browsers 3000 event so far [**here**](https://www.youtube
 
 Protocol Labs is sponsoring a HackerLink Grant via DoraHacks to fund open source developer projects via donation, so that these projects can develop further into a startup in the Filecoin ecosystem. DoraHacks is a decentralized global hacker community and hackathon organizer focusing on blockchain with the mission of connecting hackers around the world and helping them solve critical issues in different industries. DoraHacks has organized 100+ featured hackathons, stewarded the launch of 3,000+ projects and connected 300,000+ hackers from 40+ countries worldwide. Learn more about the fund, how to apply, and more in [**this recent blog post**](https://filecoin.io/blog/posts/filecoin-quadratic-funding-grant-round-1-at-dorahacks/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Store</b></h3>
+## Store
 
 <a href="https://www.bloomberg.com/news/videos/2021-07-09/bloomberg-quicktake-take-the-lead-full-show-07-08-2021-video"><img src="/uploads/starling-dotan.webp" style="width:40%;margin-left:0%"></a>
 
@@ -72,7 +74,7 @@ Protocol Labs is sponsoring a HackerLink Grant via DoraHacks to fund open source
 
 [**Starling Lab**](https://www.starlinglab.org/) founding director Jonathan Dotan recently [**spoke to Bloomberg TV**](https://www.bloomberg.com/news/videos/2021-07-09/bloomberg-quicktake-take-the-lead-full-show-07-08-2021-video) (timestamp 43:40) about the work the organization is doing in “using distributed ledger technology to advance human rights,” particularly in helping restore trust in sources of online information and news. One aspect of this work is in authenticating photographs—and determining whether they have been altered. Cryptographic elements embedded within cameras could verify photos were taken by the device as well as embed contextual metadata, making it difficult to manipulate the images.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Mine</b></h3>
+## Mine
 
 ### Baseline Minting Incentives, Blockscience x Filecoin
 
@@ -84,7 +86,7 @@ The Filecoin network recently crossed the Baseline Target Threshold. Filecoin bl
 
 Calling all Filecoin miners - we are looking for community members to complete the [Filecoin Mining Energy Questionnaire](https://filecoin-community.typeform.com/to/yTMkOLg8). Help us improve ecosystem initiatives and community support by participating in this [short survey](https://filecoin-community.typeform.com/to/yTMkOLg8) - we’d be very grateful for your input. Thank you for your ongoing work to strengthen the community.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Updates</b></h3>
+## Updates
 
 ### Textile unveils plans to bring native Filecoin storage to NEAR, ETH, Polygon, and others
 
@@ -110,7 +112,7 @@ Hello again from the Rust implementation team Forest! We are a part of the [**Ch
 
 We’re also chipping away at Storage/Retrieval Markets, State Migration, implementing metrics to measure our node performance, & updating our RPC’s and CLI. You can read all about it [**here**](https://medium.com/chainsafe-systems/forest-growth-d26998a3da61). If you want to get in touch with our Forest developers, don’t forget to drop into our [**Discord**](https://discord.gg/CprJHjrWG6) to ask questions. For more updates, make sure to follow ChainSafe’s [**Twitter**](https://twitter.com/ChainSafeth).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://github.com/filecoin-project/community/discussions/194#discussioncomment-995694"><img src="/uploads/thumbnail.webp" style="width:40%;margin-left:0%"></a>
 
@@ -118,11 +120,11 @@ We’re also chipping away at Storage/Retrieval Markets, State Migration, implem
 
 Are you curious about the existing applications, clients, protocol implementations, capitals, accelerators, etc in the Filecoin ecosystem? If yes, check out the new [**Filecoin Ecosystem Grid**](https://github.com/filecoin-project/community/discussions/194#discussioncomment-995694) to find all collaborators! If you know of any other projects and parties building in the Filecoin ecosystem that are not included in the grid yet, leave a comment in the [**Filecoin Ecosystem Collective**](https://github.com/filecoin-project/community/discussions/195).
 
-### Looking to attend events hosted by the Filecoin community?
+### Looking to attend events hosted by the Filecoin community
 
 To keep track of events (meetups, hackathons, etc.) hosted by the Filecoin community and/or Protocol Labs, add this [**Google Calendar**](https://calendar.google.com/calendar/b/6?cid=ZmlsZWNvaW4ub3JnX2o3bW1ldjI0ZzgwcmVsbzU2cHFtMWVsMWUwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) to your calendar.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">Learn</h3>
+## Learn
 
 <a href="https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46"><img src="/uploads/encode-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -130,7 +132,7 @@ To keep track of events (meetups, hackathons, etc.) hosted by the Filecoin commu
 
 In July, Encode Club announced the [**Encode Filecoin Club**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46), a nine-month program including a Filecoin education series, a Filecoin-dedicated hackathon and a follow-up accelerator. Filecoin Educate aims to teach students about blockchain through the lens of Filecoin, in attendance will be 125+ university blockchain societies and students globally. To join and learn more, please see the [**full event schedule**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46).
 
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

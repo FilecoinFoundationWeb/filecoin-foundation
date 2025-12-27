@@ -23,7 +23,7 @@ title: Filecoin News 31
 
 ![](/uploads/unnamed-4.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/"><img src="/uploads/unnamed-1-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -31,7 +31,7 @@ title: Filecoin News 31
 
 Announced during Filecoin Orbit 2021, the Filecoin Virtual Machine (FVM) marks the next evolution of the Filecoin Network, bringing together decentralized storage and powerful computation. The FVM allows smart contracts (called ‘actors’ in the Filecoin ecosystem) to endow the data stored on the network with more utility and power. Based on WASM, the FVM is built to be multi-VM, starting with EVM compatibility — ensuring Filecoin’s storage solutions can scale to the growing, interoperable needs of Web3. [Dive into the FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Storage Providers</b></h3>
+## Storage Providers
 
 <a href="http://www.web3espa.io/"><img src="/uploads/unnamed.webp" style="width:40%;margin-left:0%"></a>
 
@@ -41,7 +41,7 @@ The [Enterprise Storage Provider Accelerator (ESPA)](http://www.web3espa.io/) wi
 
 The first cohort is limited, with participants starting on January 10th, 2022. Submit your application by Friday, December 10, 2021! More information on qualifications and how to apply located here: [www.web3espa.io](http://www.web3espa.io).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="http://filecoin.io/slack"><img src="/uploads/7cf27b53-b32b-4766-8817-355b0a44ab22.webp" style="width:40%;margin-left:0%"></a>
 
@@ -65,7 +65,7 @@ On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launc
 
 The League of Entropy is expanding the drand network and is looking for credible organizations to partner with. Check [here](https://drand.love/partner-with-us/) for more details and get in touch!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://fundingthecommons.io"><img src="/uploads/unnamed-2.webp" style="width:40%;margin-left:0%"></a>
 
@@ -91,9 +91,7 @@ Web3 Jam is an ETHGlobal hackathon focused on building the foundation for the We
 
 Protocol Labs is proud to be participating in ChainSafe's 2nd annual virtual summit CSCON\[1\]! The virtual event will take place on Dec 1st-3rd, and includes speakers such as Juan Benet, Pooja Shah, and Jonathan Victor. The Filecoin community is looking forward to meeting the other makers and stewards in the Web3 space. [Register now](https://cscon.chainsafe.io/) to secure a spot at the event!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

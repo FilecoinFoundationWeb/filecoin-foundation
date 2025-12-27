@@ -19,7 +19,9 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 52
 ---
 
-![](/uploads/filecoin-news-52.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+![](/uploads/filecoin-news-52.webp)
+
+## Announcements
 
 <a href="https://www.coindesk.com/tech/2022/09/26/filesharing-crypto-project-filecoin-reports-strong-fundamental-growth-ahead-of-fvm-launch/"><img src="/uploads/coindesk-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -33,7 +35,7 @@ Over 20,000 individual users are now storing more than 50 million data objects o
 
 Filecoin Improvement Proposals (FIPs) are ways for the Filecoin community to come together to propose, debate, vote, and implement upgrades to the Filecoin network. The Filecoin community has been discussing [FIP0036](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0036.md) proposed by [CryptoEconLab](https://research.protocol.ai/groups/cryptoeconlab/). FIP0036 seeks to align network incentives to promote the “health, stability, and prosperity of the Filecoin network's economy and its participants.” FIP0036 opened for voting on September 14. The voting period ends on September 28 at 22:00 UTC.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://www.youtube.com/playlist?list=PL_0VrY55uV18fPg65PpnJQ0tGkIBMYx82"><img src="/uploads/ecosystem-wg.webp" style="width:40%;margin-left:0%"></a>
 
@@ -59,7 +61,7 @@ The Data DAO Hackathon ended on Sep 18th with the attendance of 149 teams and 71
 
 FilSwan held a themed side-event during the FIL-Singapore Summit on Sep 26th. Over 200 guests from the Filecoin Foundation, teams of the ecosystem, and investors joined Multichain Computing Networks at Cassia 3302 of Marina Bay Sands to discuss hot topics of web3 infrastructure, the achievements of the Data DAO Hackathon, and a round-table discussion on token incentives in web3 networks. Find out more on the [Filswan blog](https://medium.com/@filswan/filswan-to-hold-themed-side-events-during-fil-singapore-summit-be2660cc9b81).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filecoin.io/blog/posts/what-the-fvm-unlocks/"><img src="/uploads/image.webp" style="width:40%;margin-left:0%"></a>
 
@@ -67,7 +69,7 @@ FilSwan held a themed side-event during the FIL-Singapore Summit on Sep 26th. Ov
 
 The FVM can be used for the creation of a new class of web3 dApps, many of which will have the potential to become 10x improvements to the network’s functionality and beyond. Members of the Filecoin community are already excited about what can be built with these new capabilities. Find out how you can participate and start building some of these new use cases on the [Filecoin blog](https://filecoin.io/blog/posts/what-the-fvm-unlocks/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 ### Filecoin Green Virtual Meetup - October 4
 
@@ -95,7 +97,7 @@ Funding the Commons will be hosting a pop-up track on October 10th at the [Schel
 
 Join the Filecoin community to celebrate the anniversary of the mainnet launch from October 30th - November 4th at the LX Factory in Lisbon, Portugal. Hear from an unmatched speaker lineup that will dive into Filecoin and Web3, taking you through the Filecoin world of FVM, NFTs, the metaverse, and beyond. [Register now](https://fil-lisbon.io/register-now/)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Hackathons</b></h3>
+## Hackathons
 
 <a href="http://bogota.ethglobal.com"><img src="/uploads/eth-bogota.webp" style="width:40%;margin-left:0%"></a>
 
@@ -103,9 +105,7 @@ Join the Filecoin community to celebrate the anniversary of the mainnet launch f
 
 ETHBogota is happening October 7-9 with $20,000 in prizes available for IPFS and Filecoin builders. Learn more about the hackathon and how to register [here](https://ethglobal.com/auth?use_redirect=events/ethbogota/apply).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

@@ -21,7 +21,9 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 57
 ---
 
-![](/uploads/filecoin-news-57.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+![](/uploads/filecoin-news-57.webp)
+
+## Announcements
 
 <a href="https://spacewarp.fvm.dev/"><img src="/uploads/filecoin-blog-post_-spacewarp.webp" style="width:40%;margin-left:0%"></a>
 
@@ -29,7 +31,7 @@ title: Filecoin News 57
 
 The [Space Warp](https://spacewarp.fvm.dev/) program was launched to inspire developers to build with the new FEVM and unlock its vast potential in shaping the future of the data economy. Across grants, hackathon and more support programs for builders, the initiative aims to accelerate the development of new value-adding apps on the Filecoin network in preparation for FEVM mainnet launch in 2023. Check out [spacewarp.fvm.dev](http://spacewarp.fvm.dev) for an overview of opportunities and [submit an application](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md) for a chance to be awarded a FVM Microgrant (20 x $5k available) to build on or with FEVM. Applications will be awarded on a rolling basis and close January 19, 2023.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://filecoin.io/blog/posts/hacking-the-filecoin-ethereum-virtual-machine-fevm/"><img src="/uploads/hacking_the_filecoin_ethereum_virtual_machine_-fevm-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -73,7 +75,7 @@ The Storage Provider ecosystem made a great deal of progress during the last qua
 
 Web3 cloud storage is making an impact in the real world. Projects like Seal Storage are Filecoin Storage Providers who are working with academia and businesses to get around the chokehold of #Web2 hosting services. Hear from Alex Altman, COO of Seal Storage, about their latest partnership with the ATLAS experiment at CERN and why organizations are adopting decentralized storage. A full video recording of his talk at FIL Lisbon is available on [YouTube](https://www.youtube.com/watch?v=tRj94fJednY&list=PLp3zrT1ewY0kWhcrnEWz1r3r2k97TjPz2&index=9).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://www.youtube.com/watch?v=n5w9u6oihqQ"><img src="/uploads/filisbon-2.webp" style="width:40%;margin-left:0%"></a>
 
@@ -81,7 +83,7 @@ Web3 cloud storage is making an impact in the real world. Projects like Seal Sto
 
 Singularity is a new tool to make onboarding data onto Filecoin easier, even for Web2 organizations. It is aimed at abstracting away some of the complexities in Web3, so anyone can start utilizing decentralized storage today. Watch João Fiadeiro from the Outercore Client Growth team’s [talk](https://www.youtube.com/watch?v=n5w9u6oihqQ) at FIL Lisbon to learn more about the benefits of the tool made to handle large data.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://alliance.xyz/apply"><img src="/uploads/founder-deck-alliance.webp" style="width:40%;margin-left:0%"></a>
 
@@ -89,17 +91,13 @@ Singularity is a new tool to make onboarding data onto Filecoin easier, even for
 
 [Alliance](https://alliance.xyz/apply), a leading Web3 founder community and accelerator, will be running its next cohort in Q1/Q2 2023. Protocol Labs has collaborated with Alliance to support top founders at all stages. Alliance's reputation is well established as the premier community and DAO for founders, with a 1.5% acceptance rate. Accepted teams include 0x, Dydx, Paraswap, Dodo, Apwine, Set, Ribbon, StepN, and many more. The application deadline is on January 16th, 2023, and the cohort starts in March 2023. [Apply now.](https://alliance.xyz/apply)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#000000;border-bottom: 2px solid #808080;"><b>Happy Holidays & New Year to the Filecoin Community!</b></h3>
+### Happy Holidays & New Year to the Filecoin Community
 
 2022 has been a year of remarkable learning and growth. The resilience of the Filecoin Community has always been one of its greatest strengths. Cheers to all of the builders, founders, devs, storage providers and more that are on this journey together! Happy holidays and cheers to 2023 ✨
 
 <img src="/uploads/filecoin-holiday-twitter.webp" style="width:100%;margin-left:0%"></a>
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

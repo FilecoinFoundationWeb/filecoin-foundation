@@ -21,7 +21,7 @@ title: Filecoin News 43
 
 ![](/uploads/filecoin-news-43.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://fundingthecommons.io/"><img src="/uploads/funding-the-commons.webp" style="width:40%;margin-left:0%"></a>
 
@@ -37,7 +37,7 @@ Today, Tephra Labs’ first product, Radius, has launched. Their mission is to o
 
 In addition to the Filecoin grants, you can explore other Radius learning resources [here](https://bit.ly/radius-notion-home).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://filecoin.io/blog/posts/new-filecoin-storage-provider-mentorship-grants-fspm-available/"><img src="/uploads/provider-mentorship.webp" style="width:40%;margin-left:0%"></a>
 
@@ -57,11 +57,11 @@ Protocol Labs is hosting a Gitcoin Grants Matching Round from June 8 to June 23 
 
 <a href="https://medium.com/allthingsweb-blog/how-we-think-about-the-metaverse-374085b9e90"><img src="/uploads/metaverse.webp" style="width:35%;margin-left:0%"></a>
 
-### What is the Metaverse… to Protocol Labs?
+### What is the Metaverse… to Protocol Labs
 
 Jonas Jetschni and HQ Han from Protocol Labs break down how they think of the ‘metaverse’ — where it’s going, what it means to “arrive”, and how to get there. The metaverse, they believe, “will consist of interconnected spaces in which humans interact with a sense of presence, and will enjoy experiences and applications.” The best way to get there is to understand the “layers” that make up the entire metaverse, and where critical solutions like Filecoin and IPFS fit in. Dive in and join Jonas and HQ on their musings of the metaverse: [How We Think About the Metaverse](https://medium.com/allthingsweb-blog/how-we-think-about-the-metaverse-374085b9e90).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 ### Tools for Building the Metaverse
 
@@ -73,7 +73,7 @@ To build a secure and decentralized metaverse for the future, we must build on r
 
 The Filecoin Foundation (FF) and aerospace company Lockhead Martin are working together to bring IPFS to space. The collaboration is aimed at building out the underlying infrastructure of the rapidly-emerging space economy — the inevitable development of a private, independent economy away from earth. By minimizing the number of times that data has to be transmitted to Earth and returned to space, IPFS’s decentralized storage model will enable more efficient data transfer and communication. [Learn more about the collaboration](https://filecoinfoundation.medium.com/filecoin-foundation-and-lockheed-martin-bring-decentralized-storage-to-space-db9a15e66264).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://www.meetup.com/Filecoin-San-Francisco/events/286098198/"><img src="/uploads/ama.webp" style="width:40%;margin-left:0%"></a>
 
@@ -108,9 +108,7 @@ Protocol Labs and the Filecoin Foundation are proud sponsors of the Sustainable 
 
 Over a thousand Web3 enthusiasts will be joining members of the Filecoin community for FIL-Singapore Summit, happening from August 16th-19th. The event will be a celebration of all the amazing progress in the ecosystem and a look ahead to the exciting future of the network. You can expect to hear from world-class speakers, join side events and meetups, and participate in challenging hackathons. [Sign up](https://docs.google.com/forms/d/e/1FAIpQLSdtEtC0oAYdGDqw0csPyeIY3NgT1qm0YmZkX_wNY794HpiVUQ/viewform) now to host your own workshop or meetup at the event and read more on the Filecoin [blog](https://filecoin.io/blog/posts/announcing-fil-singapore-summit/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

@@ -8,7 +8,7 @@ date: "2021-10-15T04:00:00Z"
 dim_image: true
 double_column_inverted: false
 double_column_mode: false
-excerpt: " In 12 short months, the Filecoin network and its surrounding ecosystem have grown in strength to what it is today."
+excerpt: "In 12 short months, the Filecoin network and its surrounding ecosystem have grown in strength to what it is today."
 image:
   alt: "Filecoin Orbit: Filecoin Year One in Review"
   url: /uploads/filecoin-orbit.webp
@@ -38,19 +38,15 @@ It’s important to step back and celebrate the amazing progress made and look f
 
 Read on for highlighted Year One updates for all things Filecoin!
 
-<p>&nbsp</p>
-
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">Research & Engineering</h2>
+## Research & Engineering
 
 Over the past year, the Filecoin protocol and network made significant leaps forward — including executing more than eight coordinated network upgrades, shipping 13 Filecoin Improvement Proposals (FIPs), and bringing two additional Filecoin protocol implementations to mainnet (Venus and Forest)!
 
 Since mainnet launch, Filecoin has made significant upgrades to storage provider robustness and ease of use, chain capacity, and bandwidth — more than doubling daily capacity onboarding rate!
 
-<p> </p>
-
 ![](/uploads/hyperdrive-1.webp)
 
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">Hyperdrive Upgrade</h2>
+## Hyperdrive Upgrade
 
 In June 2021, the Filecoin v13 ‘HyperDrive’ Network upgrade unlocked a 10-25x increase in storage onboarding capacity — making Filecoin the first major L1 chain to deploy a significant chain bandwidth increase, just eight months after mainnet launch. Since then, daily storage capacity onboarding has doubled to >60PiB/day, putting it on track to reach \~20EiB by the end of 2021.
 
@@ -58,9 +54,7 @@ This upgrade was possible thanks to innovations in the Filecoin proofs system. S
 
 From December 2020 to April 2021, CryptoNetLab and CyptoComputeLab designed and implemented [SnarkPack](https://research.protocol.ai/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/), a novel strategy to scale SNARK proofs through aggregation, unlocking increased scalability, and relieving network congestion. SnarkPack landed in [FIP13](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0013.md), bringing a 10-25x improvement in overall chain capacity to the Filecoin network.
 
-<p>&nbsp</p>
-
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">Retrieval Markets</h2>
+## Retrieval Markets
 
 Retrieval Markets is one of the most exciting platforms being built on top of Filecoin as it offers CDN-like experience in a fully decentralized way where people can join to offer bandwidth and geographic location to their end users.
 
@@ -70,13 +64,11 @@ In April, the first Retrieval Market Builders Summit was held with the participa
 
 Currently, there are several teams building different implementations of Retrieval Market solutions, and you can see their progress every other week at the [Retrieval Markets Demo Days](https://docs.google.com/document/d/1IrNbBm2_P79Xi2fXFj9YUfQ0PjWjreGdPYFjFntD1QM/edit#heading=h.akao8aspby4f).
 
-<p>&nbsp</p>
-
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">Filecoin Implementations</h2>
+## Filecoin Implementations
 
 ![](/uploads/lotus-2.webp)
 
-<h3 style="font-size: 26px; line-height: 30px; margin-top: 0;">Lotus</h3>
+### Lotus
 
 Lotus was the first alternative implementation of Filecoin, [launched in 2019](https://filecoin.io/blog/posts/announcing-lotus-our-first-alternate-filecoin-implementation/), nearly a year before mainnet launch. Significant improvements have been made with the [Filecoin Lotus implementation](https://github.com/filecoin-project/lotus) in the past year.
 
@@ -86,17 +78,13 @@ There was also significant work to make Lotus more scalable for storage provider
 
 Lotus also supported all eight network upgrades, implementation, specification work for 20+ FIPs, and a newly accelerated three-week release schedule.
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">Forest</h3>
+### Forest
 
 [Forest](https://github.com/ChainSafe/forest), the Rust Filecoin implementation developed by [ChainSafe](https://medium.com/chainsafe-systems), also saw many improvements this year. It is now fully actors-compatible, and syncs with the latest version of the Filecoin mainnet network. The team plans to launch and share the implementation at the end of October.
 
 The set of functionalities for this MVP release include Message Pool, State Manager, Chain, and Wallet CLI functionality, Prometheus Metrics, and JSONRPC Server. Outstanding bugs from the Sigma Prime Audit are now remediated.
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">Venus</h3>
+### Venus
 
 Just before mainnet launch last October, the IPFSForce team took over maintenance and development of the go-filecoin implementation, renaming it [Venus](https://filecoin.io/blog/posts/welcome-venus-to-the-filecoin-mainnet/).
 
@@ -108,9 +96,7 @@ Over the summer, the Filecoin Storage Provider Incubation Program was launched i
 
 Currently, plans are in progress for a proposed sharing rewards design for the distributed storage pool, a more powerful market with storage pool, and the Venus Master program to encourage more storage providers to adopt Venus.
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">Fuhon</h3>
+### Fuhon
 
 At the start of last year, this [Filecoin C++ implementation by Soramitsu](https://filecoin.io/blog/posts/announcing-filecoin-implementations-in-rust-and-c/) was announced in January 2020. Fuhon has since finished with node development including testing, and is currently conducting node API, markets integration, miner integration, and nodes interoperability testing. The team has made considerable progress in native cpp-actors development, but actors are not yet in a production-ready state.
 
@@ -118,7 +104,7 @@ Overall, Fuhon has undergone considerable performance and stability improvements
 
 ![](/uploads/snarks.webp)
 
-<h3 style="font-size: 26px; line-height: 30px;">Proofs Improvements & zk-SNARKs for the World</h3>
+### Proofs Improvements & zk-SNARKs for the World
 
 Non-interactive zero-knowledge proofs (zk-SNARKs) are a cryptographic technique that allows a prover to convince verifiers that the prover knows some piece of information without revealing the information itself.
 
@@ -128,9 +114,7 @@ Recent updates include enabling storage providers to resume sealing after interr
 
 Overall, the codebase has been restructured for better modularity and readability, with added support for more architectures such as ARM64 and Apple M, and an added API for proof aggregation. zk-SNARK generation has been optimized by more than 80%.
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">VDF</h3>
+### VDF
 
 A collaboration between Protocol Labs, Ethereum Foundation, Filecoin Foundation, Electric Coin Company (ECC), and Supranational was launched. The goal is to produce an efficient and cost-effective computational VDF (Verifiable Delay Function). This will involve developing both fast evaluation, as in sequential computation, and proving, as in parallel computation.
 
@@ -144,7 +128,7 @@ In this model, delay is based on minimum communication time between satellites i
 
 ![](/uploads/drand.webp)
 
-<h3 style="font-size: 26px; line-height: 30px;">Drand</h3>
+### Drand
 
 [Drand](https://drand.love/), the distributed randomness beacon [used by Filecoin’s leader elections](https://filecoin.io/blog/posts/filecoin-features-distributed-randomness-leader-elections/), [celebrated its one-year anniversary](https://drand.love/blog/2021/08/10/drand-celebrates-one-year-as-a-randomness-service/) earlier this year, completing one million rounds of undisrupted service!
 
@@ -156,17 +140,13 @@ Drand is also being updated with a couple of new features in order to serve a wi
 
 Drand will soon also provide support for higher frequency randomness beacons, running in parallel to the current (original) 30-second beacon. This update will enable drand to be leveraged by a broader set of web2 and web3 use cases.
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">ConsensusLab & ConsensusDays</h3>
+### ConsensusLab & ConsensusDays
 
 [ConsensusLab](https://research.protocol.ai/groups/consensuslab/) is the newest Protocol Labs research group, launched in July 2021 to become a hub for the collaborative advancement of human knowledge on scalable decentralized consensus, with an immediate focus on the next generation of Filecoin consensus.
 
 Its launch event, [ConsensusDays 21](https://research.protocol.ai/sites/consensusday21/), included 24 talks and brought together some of the leading researchers in consensus and related topics, paving the way for future collaboration at scale.
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">Product Use Cases</h3>
+## Product Use Cases
 
 Since Filecoin launch, there has been tremendous growth and progress in developer tooling and new use cases able to leverage the unique values of cryptographically verifiable, robust, decentralized storage that Filecoin has to offer.
 
@@ -176,7 +156,7 @@ Around 10,000 developers are building on the IPFS and Filecoin stacks, with many
 
 ![](/uploads/nft-storage.webp)
 
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">NFT.Storage</h4>
+### NFT.Storage
 
 [NFT.Storage](https://nft.storage/) [launched in April 2021](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/), providing off-chain storage of NFT metadata and assets in a free, simple service. Data uploaded to NFT.Storage’s HTTP endpoint is persisted onto Filecoin and made available to the public IPFS network.
 
@@ -184,53 +164,41 @@ The service also provides users with properly formatted IPFS URIs to reference t
 
 The product has grown quickly since launch, and now has over 5.5K users and six million NFTs stored in Filecoin. These NFTs include those minted by some of the largest marketplaces and minting services in the space, including OpenSea, OneOf, Makersplace, Jigstack, Curio, and more.
 
-<p>&nbsp</p>
-
 ![](/uploads/web3-storage.webp)
 
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">Web3.Storage</h4>
+### Web3.Storage
 
 [Web3.Storage](https://web3.storage) [launched in August 2021](https://filecoin.io/blog/posts/introducing-web3-storage/) as a simple interface for developers to store data and retrieve data from IPFS and Filecoin. A free service with familiar storage interfaces (including a JS client library and HTTP API), it is one of the easiest ways for developers to upload data to Filecoin, handling much of the complexity of interacting directly with decentralized storage.
 
 With over two thousand users and five million uploads since launch, Web3.Storage is growing quickly. As a result, developers new to web3 are experiencing first-hand how content addressing and trustless storage enables lighter backend infrastructure, decentralization, and less lock-in, while experienced web3 developers are able to quickly integrate IPFS and Filecoin with their production dapps.
 
-<p>&nbsp</p>
-
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">Textile</h4>
+### Textile
 
 Textile, a company that is rolling out tools to make it faster and easier for developers to build decentralized apps on IPFS and Filecoin, launched permissionless [Filecoin storage bridges](https://eth.storage/docs/) on Ethereum, [Polygon](https://polygon.technology/), and [NEAR](https://near.org/). A Filecoin Deal Auctions pilot for clients to efficiently onboard massive datasets to the network was also rolled out with currently 2TiB per day and growing \~25% per week. As of October 1, the pilot has reached 205TB in active Filecoin deals.
 
 ![](/uploads/estuary-1.webp)
 
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">Estuary</h4>
+### Estuary
 
 The work for [Estuary](https://estuary.tech) kicked off in March and has [grown into a reliable, scalable solution](https://filecoin.io/blog/posts/taking-a-look-at-estuary/) for participating in the Filecoin network today. Estuary nodes have their own libp2p stack with full IPFS and Filecoin features to help anyone make Filecoin storage deals in a multitude of ways. Estuary has made over 23,000 successful storage deals, stored over 150 TiB of files, collaborates with many companies and groups within the Filecoin ecosystem, and stores data with over 100 storage providers from around the world.
 
-<p>&nbsp</p>
+### Web2 Use Cases
 
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">Web2 Use Cases</h4>
-
-<p>&nbsp</p>
-
-<h5 style="font-size: 18px; line-height: 24px; margin-top: 21px; margin-bottom: 0px;">Internet Archive</h5>
+#### Internet Archive
 
 [Internet Archive](https://archive.org/) is a digital library with the mission of providing universal access to all knowledge. In April 2021, [Internet Archive announced a collaboration with Protocol Labs](https://blog.archive.org/2021/04/01/filecoin-foundation-grants-50000-fil-to-the-internet-archive/) on bringing its digital resources to the decentralized web. In July, the foundation kicked off an initial proof of concept project, onboarding a 2016 web archive dataset (about 200TiB in size) to Filecoin.
 
 Currently, the dataset is being successfully onboarded to the network. The project is planned to complete before the end of year, with more Internet Archive datasets lined up to be stored on Filecoin.
 
-<p>&nbsp</p>
+![](/uploads/starling.webp)
 
-#### ![](/uploads/starling.webp)
-
-<h5 style="font-size: 18px; line-height: 24px; margin-top: 21px; margin-bottom: 0px;">Starling</h5>
+#### Starling
 
 In June 2021, Starling Lab, a collaboration between Shoah Foundation, the largest genocide archive in the world, and Stanford University [was announced](https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/). Starling Lab is dedicated to using decentralized tools to advance human rights.
 
 The first initiative is to create a decentralized web archive for Shoah Foundation's collection of 55,000 testimonials of genocide survivors from the Holocaust, the Armenian Genocide, and the Rohingya crisis, which represent a 4PiB dataset. The project is actively underway, with testimonials actively being uploaded to the Filecoin network.
 
-<p>&nbsp</p>
-
-<h4 style="font-size: 21px; line-height: 28px; margin-top: 21px;">Slate</h4>
+#### Slate
 
 Slate launched in September 2020, originally as a moodboarding site, but has undergone a number of transformations since then to become a one-stop platform to save and interact with users’ bookmarks and files. Existing storage options augment user memory, but do little to improve the ability to recall and retrieve things seen or saved.
 
@@ -238,9 +206,7 @@ Slate combines automatic saving, powerful search, and speedy organization to cre
 
 Slate is already at 14k users and 81k files stored and growing. It offers a consumer and web2 friendly outlet for users to experience IPFS and Filecoin storage, with all of the related benefits.
 
-<p>&nbsp</p>
-
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">Ecosystem</h2>
+## Ecosystem
 
 The long-term growth of the decentralized web can only happen through the cultivation and empowerment of a wide variety of stakeholders, aligning them with the success of IPFS, Filecoin and libp2p, and other projects. Engaging with major partners is vital to showcase new use cases, bridges to other web3 ecosystems, and bridges to web2 users.
 
@@ -250,7 +216,7 @@ Web3 storage providers can grow, prosper and expand geographically with the supp
 
 ![](/uploads/hackathons.webp)
 
-<h3 style="font-size: 26px; line-height: 30px;">Hackathons</h3>
+### Hackathons
 
 Since its first event [HackFS](https://filecoin.io/blog/posts/hackfs-what-s-next/), which took place in July, the [Filecoin and IPFS hackathon program](https://fil.org/events) has reached and connected more than 10,000 developers and entrepreneurs worldwide.
 
@@ -260,9 +226,7 @@ Through dedicated mentorship support, a whole range of high-quality educational 
 
 Participants of past events have gone on to raise millions of dollars in funding as they have grown hackathon submissions into the next generation of winning web3 ventures. We look forward to welcoming the next generation of builders at our upcoming hackathons. Visit [hackathons.filecoin.io](http://hackathons.filecoin.io) to learn more and sign up for our mailing list.
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">Web3 Collaborations</h3>
+### Web3 Collaborations
 
 Filecoin continues to grow and gain adoption as the de facto storage layer of web3, and developers continue to explore and expand upon all the possibilities of the protocol.
 
@@ -274,9 +238,7 @@ Chainlink, a blockchain oracle, is a key collaborator and [integrated with Filec
 
 Filecoin was added to the [Web3 Index](https://web3index.org/) in Sept 2021 as a fundamental and key driver of the web3 stack and new strides into Filecoin token liquidity continue to be made.
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">New Startups in the Ecosystem</h3>
+### New Startups in the Ecosystem
 
 Almost 50 startups have graduated from our partner’s accelerator programs over the past year and many of those founders have participated in hackathons or received grants as they progress through the Filecoin ecosystem. There are an incredible number of amazing founders in our ecosystem and Filecoin is excited to support them.
 
@@ -290,9 +252,7 @@ Filecoin is also [collaborating with Outlier Ventures](https://outlierventures.i
 
 Another exciting, ongoing collaboration to fuel new startups is the Techstars Filecoin Accelerator, which is currently accepting applications from companies building the future of web3.
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">Storage Providers</h3>
+### Storage Providers
 
 Straight out of the gate, the Filecoin network committed storage at a much faster rate than initially anticipated and very quickly in April achieved maximum [baseline](https://medium.com/block-science/sustainability-goal-achieved-filecoin-network-crosses-baseline-target-cec13a3ed8f) minting level. Since then the network has only gone from strength to strength.
 
@@ -306,19 +266,15 @@ In June, the storage provider community stepped up and came together to form a n
 
 In August, a new Filecoin [bounty board](https://github.com/filecoin-project/community/tree/master/storage-provider-bounty-program) was created to support that effort. Since then external experts have been participating in delivering new best practices. New ideas or requests are always welcome on the [board](https://github.com/filecoin-project/community/projects).
 
-<p>&nbsp</p>
-
-<h3 style="font-size: 26px; line-height: 30px;">Application Research Group (ARG)</h3>
+### Application Research Group (ARG)
 
 In February, The Application Research Group (ARG) started experimenting with prototypes using Filecoin, IPFS, libp2p, and IPLD. As of now, the ARG has created an [open-source framework](https://github.com/application-research/origin) for building websites compatible with IPFS out of the box, developer examples with well-known ecosystem partners like Textile, and high-fidelity prototypes such as an offline Filecoin+Ledger Wallet.
 
 In March, the ARG created [Estuary](https://estuary.tech) to help improve the experience around [making Filecoin storage deals](https://filecoin.io/blog/posts/taking-a-look-at-estuary/). In the near future, many network operators around the world may be running [Estuary nodes](https://github.com/application-research/estuary) and making Filecoin storage deals for as much meaningful public data as possible.
 
-<p>&nbsp</p>
-
 ![](/uploads/ahs.webp)
 
-<h3 style="font-size: 26px; line-height: 30px;">Asia Expansion</h3>
+### Asia Expansion
 
 Asia is a critical area for expansion of the Filecoin and IPFS ecosystems and growth in the region continued at pace in several key countries during the first year after launch. Several key initiatives that focus on the region launched this year.
 
@@ -330,7 +286,7 @@ Another notable initiative has been the promotion of geographical diversificatio
 
 ![](/uploads/brave-1.webp)
 
-<h3 style="font-size: 26px; line-height: 30px;">Browsers</h3>
+### Browsers
 
 Bringing the old web along in the transition to web3 is a gargantuan task, but progress is being made with browsers.
 
@@ -342,9 +298,7 @@ On the mobile front, support for IPFS in [Puma Browser](https://www.pumabrowser.
 
 Summer ended with [Browsers 3000](https://fil.org/events/#past-events/), a six-week hackathon which brought together a number of friends in the web3 space working to change the platform of the web itself. The [Browsers 3000 summit](https://www.youtube.com/playlist?list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP) hosted 13 projects to share their vision of the web, and the grand prize winner was [NetSepio](https://devpost.com/software/netsepio), a distributed reporting and notification system for malware, phishing, and other dangers online.
 
-<p>&nbsp</p>
-
-<h2 style="font-size: 34px; line-height: 38px; margin-bottom: 0;">Onward to Filecoin Orbit Year 2</h2>
+## Onward to Filecoin Orbit Year 2
 
 Thanks to contributions from across the community, the Filecoin network has made great strides in its first year.
 

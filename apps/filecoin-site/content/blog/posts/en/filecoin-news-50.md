@@ -21,7 +21,9 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 50
 ---
 
-![](/uploads/filecoin-news-50.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+![](/uploads/filecoin-news-50.webp)
+
+## Announcements
 
 <a href="https://filecoin.io/blog/posts/zondax-brings-filecoin-to-ledger-live/"><img src="/uploads/fil-blog-2022-08-24.webp" style="width:35%;margin-left:0%"></a>
 
@@ -29,7 +31,7 @@ title: Filecoin News 50
 
 Filecoin is now available on [Ledger Live](https://www.ledger.com/ledger-live). Clients, Storage Providers, and other network participants can send and receive FIL directly from Ledger devices while their private keys remain secure and are never exposed to third parties. This new feature has been implemented thanks to a close collaboration between Protocol Labs and [Zondax](https://zondax.ch/), a software development team that has built over 45 solutions for the Ledger hardware wallet. [Learn more](https://filecoin.io/blog/posts/zondax-brings-filecoin-to-ledger-live/) about keeping FIL in cold storage.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://www.youtube.com/watch?v=0sOz1ZS7vnc"><img src="/uploads/ecosystem-wg.webp" style="width:35%;margin-left:0%"></a>
 
@@ -67,7 +69,7 @@ Do web3 projects have a problem finding developers? Dietrich Ayala recently [tol
 
 Jonathan Victor joined the Future of NFT podcast to discuss bridging the gap between web2 and web3. The podcast is a great resource to learn more about NFTs and hear from experts in the field that break down the technology in the simplest way possible. [Tune in](https://anchor.fm/futureofnft/episodes/Bridging-Web-2-into-Web-3--IPFS--Filecoin--and-NFT-Storage-with-Jonathan-Victor-from-Protocol-Labs-e1mvjdh) to find out more about what [NFT.Storage](https://nft.storage/) is doing to make this transition from web2 to web3 happen and how it’s leveraging Filecoin and IPFS for the decentralized storage of NFT metadata.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="http://www.eventbrite.com/e/396630501507/?discount=FILNEWS20"><img src="/uploads/singapore-1.webp" style="width:35%;margin-left:0%"></a>
 
@@ -91,7 +93,7 @@ The Filecoin Green community will also be at DevCon with a LATAM-focused sustain
 
 Funding the Commons is back! We will be hosting a pop-up track Oct. 10th at the [Schelling Point event in Bogota](https://schellingpoint.gitcoin.co/), hosted by our friends at Gitcoin. This will be a community-focused event with a series of lighting talks, workshops and collaboration to push forward the funding of public goods in web3 and beyond. If you're interested in presenting a talk at the FTC track, reach out to [commons@protocol.ai](mailto:commons@protocol.ai). See previous Funding the Commons material [here](https://fundingthecommons.io/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Hackathons</b></h3>
+## Hackathons
 
 <a href="https://filecoin.us20.list-manage.com/track/click?u=0bc14cd7b6583be73cea72a5d&id=721ae3a8c6&e=e64b38a79e"><img src="/uploads/eth-online.webp" style="width:35%;margin-left:0%"></a>
 
@@ -125,9 +127,7 @@ For builders in China, this hackathon with three tracks, namely the Green Future
 
 <p style="color:red;">Submission deadline: Sep 16!</p>
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

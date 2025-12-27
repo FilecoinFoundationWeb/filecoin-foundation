@@ -27,13 +27,13 @@ Mona is a metaverse world-building platform that is changing that. Built for cre
 
 Users on Ethereum or Polygon (with Solana and Algorand coming soon) now have access to the first and only metaverse platform that empowers creators to mint and sell their worlds as NFTs to monetize their work. Mona’s mission is to create a metaverse that belongs to everyone, which is why anyone can create and sell in the Monaverse directly from their web browser. There are no land purchases required, no downloads, and no limits.
 
-### **Filecoin’s Role in the Monaverse**
+## Filecoin’s Role in the Monaverse
 
 All the data and 3D content for each Mona world are stored on Filecoin and IPFS via the NFT.Storage tool. The Mona team chose IPFS because they believe strongly that the metaverse must be open and decentralized in order to succeed. They also wanted to preserve the incredible virtual worlds built on the Mona platform for years to come, ensuring the creators that their work on Mona is never lost.
 
 _“Filecoin, IPFS, and NFT.Storage are, by far, the best decentralized solutions for storing and retrieving large file sizes,”_ said Mona Co-founder and CEO Justin Melillo. _“The AAA gaming-quality 3D Mona worlds contain large design files – that’s what makes them so engaging. Thanks to IPFS, we can offer this high-resolution experience while maintaining good performance.”_
 
-### **What’s Next for Mona**
+## What’s Next for Mona
 
 Mona is currently a pre-Series A startup based in the United States working on an ambitious and exciting roadmap that includes:
 

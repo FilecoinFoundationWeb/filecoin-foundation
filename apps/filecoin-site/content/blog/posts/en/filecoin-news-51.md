@@ -21,7 +21,9 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 51
 ---
 
-![](/uploads/filecoin-news-51.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+![](/uploads/filecoin-news-51.webp)
+
+## Announcements
 
 <a href="https://www.youtube.com/watch?v=Z6T4AiOpxJU"><img src="/uploads/filecoin-fip-0036.webp" style="width:40%;margin-left:0%"></a>
 
@@ -31,7 +33,7 @@ FIPs are standards specifying potential new features or processes for Filecoin. 
 
 Given the feedback and conversation that FIP0036 has generated, Filecoin governance stewards will be running a poll to determine community consensus. For more information, see the #fil-fips channel on Slack or view the [governance documentation](https://github.com/filecoin-project/FIPs/discussions/464).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://youtu.be/-WEHplQxFrY"><img src="/uploads/ecosystem-wg.webp" style="width:40%;margin-left:0%"></a>
 
@@ -69,7 +71,7 @@ If you’re participating in a hackathon soon, be sure to check out Dawn Kelly�
 
 Jonathan Victor, Head of NFTs at Filecoin, joined the [Bad Crypto Podcast & The Nifty Show](https://www.youtube.com/c/BadCryptoPodcast) to talk about observing the trends of NFTs by seeing the back end of storage. The episode jumps into Jonathan’s experience with NFTs and how storage works on IPFS and Filecoin. Watch the full episode [here](https://www.youtube.com/watch?v=e2kWxKB8ZWQ)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://www.seagate.com/products/storage/data-storage-systems/leasing/?utm_source=instagram&utm_medium=social_media&utm_campaign=2022-filecoin-leasing-program-launch&prodSrc=systems&use_case=blockchain&utm_use_case=blockchain&utm_product=systems"><img src="/uploads/seagate.webp" style="width:40%;margin-left:0%"></a>
 
@@ -77,7 +79,7 @@ Jonathan Victor, Head of NFTs at Filecoin, joined the [Bad Crypto Podcast & The 
 
 Filecoin Storage Providers now have flexible leasing options for Seagate’s Exos mass capacity storage systems. As storage needs for web3 applications increase, access to these solutions can help them scale their operations and minimize their slash rates. This service will be available in select countries, including France, Germany, Netherlands, and the UK. Learn more about the program on the Seagate [website](https://www.seagate.com/products/storage/data-storage-systems/leasing/?utm_source=instagram&utm_medium=social_media&utm_campaign=2022-filecoin-leasing-program-launch&prodSrc=systems&use_case=blockchain&utm_use_case=blockchain&utm_product=systems).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="http://www.eventbrite.com/e/396630501507/?discount=FILNEWS20"><img src="/uploads/singapore-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -107,7 +109,7 @@ Funding the Commons will be hosting a pop-up track on October 10th at the [Schel
 
 Join the Filecoin community to celebrate the anniversary of the mainnet launch from October 30th - November 4th at the LX Factory in Lisbon, Portugal. Hear from an unmatched speaker lineup that will dive into Filecoin and Web3, taking you through the Filecoin world of FVM, NFTs, the metaverse, and beyond. [Register now](https://fil-lisbon.io/register-now/)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Hackathons</b></h3>
+## Hackathons
 
 <a href="https://filecoin.us20.list-manage.com/track/click?u=0bc14cd7b6583be73cea72a5d&id=3bee4e61ce&e=e64b38a79e"><img src="/uploads/moralis-hackathon.webp" style="width:40%;margin-left:0%"></a>
 
@@ -123,11 +125,7 @@ Build real projects that solve real problems across 4 tracks: Metaverse & Gaming
 
 For builders in China, this hackathon with three tracks, namely the Green Future of low carbon and environmental protection brings an opportunity to win $10k from Protocol Labs!
 
-<p style="color:#FF0000";>Registrations close on September 16th</p>
-
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## ✊ Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

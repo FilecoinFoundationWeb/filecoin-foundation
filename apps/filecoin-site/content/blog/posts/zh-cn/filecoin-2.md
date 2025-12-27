@@ -25,13 +25,13 @@ _template: blog_detail_ch
 
 随着Filecoin主网启动，**我们很高兴宣布新的[Filecoin安全网站](https://security.filecoin.io)**，其中包括目前所做的所有工作列表、未来的工作安排以及最新的漏洞赏金计划!
 
-### 发布[security.filecoin.io](https://security.filecoin.io)
+## 发布[security.filecoin.io](https://security.filecoin.io)
 
 这个网站将作为Filecoin安全计划的中心枢纽。在这里您可以查看以下内容：**安全审计**、**漏洞赏金计划**、**负责任的披露政策**和**以往报告的调查结果和解决措施**。
 
 您可以通过两种方式披露您的发现：用PGP密钥加密后发邮件给我们，或者通过Keybase。**相关详细说明可在[Filecoin Security](https://security.filecoin.io/)网站的“漏洞报告”中获得。**
 
-### 安全审计
+## 安全审计
 
 我们一直在与一些知名的第三方审计专家合作，以确保协议背后的理论及其实施方案能够带来预期的价值，使Filecoin成为一个安全可靠的网络。
 
@@ -54,11 +54,11 @@ _template: blog_detail_ch
   - 由Least Authority提供的Filecoin Lotus Implementation Security Audit
   - 由SigmaPrime提供的Filecoin Lotus Implementation Security Audit , [**最近发布更新**](https://spec.filecoin.io/#section-appendix.audit_reports.2020-10-20-lotus-mainnet-ready-security-audit)
 
-### 负责任的披露
+## 负责任的披露
 
 要确保协议对用户持续安全性，就需要创建平台来报告、理解、修补、部署发现的问题，并及时告知用户更新情况。为此，我们制定了[Filecoin负责任披露政策](https://fil.org/security/coordinated-disclosure-policy)。
 
-### 漏洞赏金计划
+## 漏洞赏金计划
 
 Filecoin旨在为人类最重要的信息创建一个分布式的存储网络，因此确保网络的安全性和可信性是其成功的首要条件。创建安全的网络不仅仅是严格的测试和审计，我们相信与安全社区的合作将为Filecoin网络带来一个更加稳定的未来。这就是为什么我们要推出Filecoin漏洞赏金计划，通过该计划任何人都可以提交在网络、核心协议及其实施方案中发现的安全漏洞，并通过发现漏洞获得奖励。
 
@@ -74,7 +74,7 @@ Filecoin旨在为人类最重要的信息创建一个分布式的存储网络，
   - 提示: 最高$500
 - 该计划还没有确切的结束日期，但我们正在寻找改进的方法，请关注博客和网站的更新，并将您的反馈意见发送到[security@filecoin.org](mailto:security@filecoin.org)。
 
-### 特别感谢安全研究小组的参与
+## 特别感谢安全研究小组的参与
 
 最后，在太空竞赛测试网激励期间，我们通过Filecoin安全研究小组计划与社区成员们共同合作增强网络的安全性。
 

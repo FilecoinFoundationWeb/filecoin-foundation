@@ -19,7 +19,9 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 56
 ---
 
-![](/uploads/filecoin-news-56.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+![](/uploads/filecoin-news-56.webp)
+
+## Announcements
 
 <a href="https://tldr.filecoin.io/"><img src="/uploads/tldr.webp" style="width:40%;margin-left:0%"></a>
 
@@ -33,7 +35,7 @@ It’s hard to keep up with all the exciting things happening in the Filecoin co
 
 The upcoming Filecoin upgrade to network version 17, Shark 🦈, will bring a range of improvements and simplifications that set the stage for programmable storage: smart contracts that interact with storage deals and providers. This is currently expected to be the last upgrade before the February launch of the [FEVM (EVM runtime on FVM)](https://fvm.filecoin.io/) slated for [network version 18](https://github.com/filecoin-project/core-devs/discussions/115). Get the full list of FIPs that will be activated in version 17 in [this blog post](https://filecoin.io/blog/posts/filecoin-network-v17-shark-upgrade/) and hear more about them on the July 2022 [PL EngRes All Hands deep dive](https://www.youtube.com/watch?v=oQTPUE4MN_4&list=PLhuBigpl7lqtkWt7koiW6SvQKzT_O4bvY&index=13).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://tldr.filecoin.io/staking-your-fil/"><img src="/uploads/stake-tldr.webp" style="width:40%;margin-left:0%"></a>
 
@@ -49,7 +51,7 @@ Where is Filecoin going in the short-term and long-term future? Filecoin and IPF
 
 <a href="https://www.youtube.com/watch?v=ro9kFPX0Tk0"><img src="/uploads/podcast-juanbenet.webp" style="width:35%;margin-left:0%"></a>
 
-### Is Crypto Good for the World?
+### Is Crypto Good for the World
 
 Juan Benet and the Filecoin community thinks so. This is always a timely question, especially when the distinctions between different sectors of the space need to be emphasized. Juan joined Bankless’s David Hoffman to discuss topics like DeFi vs CeFi, positive externalities, and all the ways in which builders in web3 can make crypto good for the world with decentralized infrastructure and cryptographic primitives. [Tune in](https://www.youtube.com/watch?v=ro9kFPX0Tk0) on the Green Pill Podcast.
 
@@ -59,7 +61,7 @@ Juan Benet and the Filecoin community thinks so. This is always a timely questio
 
 The FEVM is the initial launch of Filecoin’s smart contract capabilities that are compatible with the Ethereum Virtual Machine. On November 18th, the community celebrated the first-ever FEVM hackathon to start getting builders familiarized with these new features. You can watch video recordings for the FEVM hackathon kick-off and finale on [ETHGlobal.tv](https://ethglobal.tv/). Finalist projects [included](https://twitter.com/momack28/status/1594444950732943360?s=20&t=XuiQ2j3p4RlnLJEoX-qtDQ) a deal factory for soulbound tokens provably stored on Filecoin.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://fvm.filecoin.io/"><img src="/uploads/fvm-header.webp" style="width:40%;margin-left:0%"></a>
 
@@ -67,7 +69,7 @@ The FEVM is the initial launch of Filecoin’s smart contract capabilities that 
 
 The Filecoin Wallaby testnet is now running FVM Topaz (r8) as the community continues to march on the roadmap for smart contract capabilities on the network. The release includes support for events and the full Ethereum JSON-RPC API. Read this short [thread](https://twitter.com/raulvk/status/1593356865571889155?s=20&t=HwrgnNE1f9ATKXTbddErIw) for more information on Topaz and the upcoming Sapphire release. You can also dig deeper into the ongoing FVM deployment in the Filecoin [blog](https://filecoin.io/blog/posts/what-the-fvm-unlocks/) and stay tuned for more updates on the FVM [website](https://fvm.filecoin.io/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://twitter.com/NKN_ORG/status/1594751825349050368?s=20&t=Osv6wRvaFoSd2hircrz10Q/"><img src="/uploads/nkn.webp" style="width:40%;margin-left:0%"></a>
 
@@ -87,9 +89,7 @@ The Filecoin community is headed to India for the FIL-Bangalore event organized 
 
 Right after FIL-Bangalore, the Filecoin community is sponsoring the first-ever [blockchain gaming conference](https://events.godwoken.com/) in Bengaluru organized by the Godwoken Blockchain. Join builders and ecosystem partners at The Den on December 5th and participate in workshops designed to educate developers on the advantages of blockchain technology for game development. [Apply for an invite](https://eiusgtz4fq6.typeform.com/to/iIA5f27F?typeform-source=events.godwoken.com) and get ready to build your first blockchain game.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

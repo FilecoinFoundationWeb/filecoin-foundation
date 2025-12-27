@@ -26,7 +26,7 @@ title:
 
 ![](/uploads/filecoin-news-17.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
+## Build
 
 <a href="https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii"><img src="/uploads/accelerator-rocket-purple.webp" style="width:18%;margin-left:0%"></a>
 
@@ -36,7 +36,7 @@ Tachyon’s Filecoin Launchpad Accelerator is a full-time, fully remote program 
 
 <a href="https://www.youtube.com/watch?v=-lwttk-HsoQ&list=PL_0VrY55uV1-l8s_5YrhN1eLX-tEtW9ku"><img src="/uploads/accelerator-frontier-igloo-purple.webp" style="width:20%;margin-left:0%"></a>
 
-### Filecoin Frontier Accelerator Demo Day, April 23
+## Filecoin Frontier Accelerator Demo Day, April 23
 
 On April 23rd, Longhash Ventures, Fenbushi Capital, and Filecoin hosted the Filecoin Frontier Accelerator Demo Day showcasing 11 Web 3.0 projects building key components and use cases of the Filecoin ecosystem. The event marked the graduation of these projects from Filecoin Frontier Accelerator, a rigorous venture-building program that offered mentorship from ecosystem leaders, strategic guidance, and hands-on support on go-to-market execution.
 
@@ -58,7 +58,7 @@ In the past two months Protocol Labs participated in five different hackathons e
 
 Chainlink’s spring hackathon, which kicked off earlier in March, wrapped up mid-month, followed closely by the start of Gamedev.js JAM 2021 where IPFS sponsored a special decentralized track. Cal Hacks’ hello:world event, a weekend-long endeavor, began the same day at Scaling Ethereum, an event hosted by ETHGlobal focused on developing robust infrastructure for the Ethereum blockchain. Rounding out the month was ASUC’s CivHacks event, another weekend-long university event with the goal of using technology to accomplish social good and civic outreach. Check out the IPFS blog for details on these events and for updates and announcements of future hackathons.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Store</b></h3>
+## Store
 
 <a href="https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/"><img src="/uploads/fil-blog-nft-storage-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -74,7 +74,7 @@ NFT.Storage lets developers store NFT data on decentralized networks easily, sec
 
 Last month, we announced that **VideoCoin** is integrating its decentralized video processing network with Filecoin to build the first platform specifically designed for creating and trading Video NFTs. In this live demo, you will learn exactly how the integration works, including how to create and store a Video NFT along with its Proof of Ownership, a preview of the NFT platform and UI, and how to retrieve the Proof of Ownership and prove that it works. [**Watch now.**](https://medium.com/videocoin/the-first-videonft-on-videocoin-filecoin-live-demo-91a305509b34)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Mine</b></h3>
+## Mine
 
 <a href="https://filecoinfoundation.medium.com/join-us-for-filecoin-plus-day-a06b9c4acf85"><img src="/uploads/filecoin-plus-logo.webp" style="width:20%;margin-left:0%"></a>
 
@@ -90,7 +90,7 @@ Over the course of three hours, we’ll hear from the project architects, Fileco
 
 On April 29th, 2021, the Filecoin network upgraded to version 12. The upgrade introduced [**version 4**](https://github.com/filecoin-project/specs-actors/releases/tag/v4.0.0) of the [**specs-actors implementation**](https://github.com/filecoin-project/specs-actors), the set of built-in actors that specify the rules of the Filecoin protocol. The new version of specs-actors was designed to be significantly more performant, thus speeding up block validation times. To learn more about the upgrade, the motivation behind it, and performance updates, check out our most recent [**blog post**](https://filecoin.io/blog/posts/filecoin-network-v12/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://www.meetup.com/Filecoin-San-Francisco/events/276433306/"><img src="/uploads/meetup-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -98,7 +98,7 @@ On April 29th, 2021, the Filecoin network upgraded to version 12. The upgrade in
 
 On May 18th, join the Filecoin community for the May community meetup which is entirely focused on all things NFTs featuring presentations from VideoCoin, Fleek, and more! Filecoin meetups are an opportunity to meet the people behind the many tools and projects being built in the Filecoin ecosystem. In case you missed the April meetup, [**catch up on the recording**](https://youtu.be/zjtsnqNjIfo) and be sure to [**register**](https://www.meetup.com/Filecoin-San-Francisco/events/276433306/) for the next one!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Learn</b></h3>
+## Learn
 
 <a href="https://aave.com/"><img src="/uploads/aave.webp" style="width:25%;margin-left:0%"></a>
 
@@ -114,7 +114,7 @@ For step-by-step instructions, check [**this Twitter thread**](https://twitter.c
 
 Interested in learning more about Filecoin, IPLD, or libp2p? Check out [ProtoSchool’s self-guided interactive tutorials](https://proto.school/), designed to introduce you to decentralized web concepts, protocols, and tools. Select your topic and track your progress as you go, in a format that's right for you. Complete JavaScript code challenges right in your web browser, or stick to our text-based or multiple-choice tutorials for a code-free experience.
 
-<h3 style="margin:2em 0 0 0">✊ Get involved!</h3>
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

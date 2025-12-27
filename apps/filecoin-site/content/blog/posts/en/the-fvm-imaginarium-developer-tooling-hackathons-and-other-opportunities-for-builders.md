@@ -32,9 +32,9 @@ If you are passionate about leveraging the capabilities of a decentralized stora
 
 In this blogpost, you’ll find an overview of developer tools that will help you get started on your journey building with FVM.
 
-### Getting Started with FVM: Starter Kits for Developers
+## Getting Started with FVM: Starter Kits for Developers
 
-## Starter Kits 101
+### Starter Kits 101
 
 Are you a developer looking to deploy your first smart contract with the FEVM (Filecoin Ethereum Virtual Machine aka the EVM compatible runtime on the FVM)? Look no further than the FVM Starter Kits! Getting started on the FVM is super easy with Hardhat and Foundry starter kits, that provide you with simple contract templates for storing data on Filecoin with Solidity. Plus, you will also find contract templates for interacting with the filecoin.sol library, which allows seamless interaction with the Filecoin protocol and its built-in system actors, all from your smart contract.
 
@@ -46,7 +46,7 @@ Check out the below starter kits and resources:
 
 For a more comprehensive list of resources to first build your dapp on Filecoin Hyperspace Testnet, check out the [FVM Hackathon Cheatsheet](https://github.com/filecoin-project/community/discussions/585). This is updated regularly and is an invaluable resource for hackers building on Filecoin for the first time!
 
-## Starter Kits 201
+### Starter Kits 201
 
 The Filecoin Ethereum Virtual Machine (FEVM) is a groundbreaking platform that allows developers to write logic directly on top of the metadata of storage deals. And, to help developers get started, we've created solution-based starter kits that provide a starting point for developers to build various solutions.
 
@@ -78,9 +78,9 @@ Beryx, Filfox and Starboard provide contract verification as a feature, allowing
 
 For more information, check out [this deep dive into all the available Filecoin Block Explorers](https://filecoin.io/blog/posts/the-fvm-imaginarium-block-explorers/) or the [official Block Explorers Docs](https://docs.filecoin.io/networks/mainnet/explorers/).
 
-### Key dApp Building Tools
+## Key dApp Building Tools
 
-## Cross Chain Building Blocks
+### Cross Chain Building Blocks
 
 Cross chain solutions make it possible to build a variety of cross chain projects including cross chain swaps, NFT bridging, cross chain lending, and more. Two key actions required when building a dApp are moving tokens from one chain to another and message passing. Regardless of the blockchain your dApp uses, you can utilize its native tokens along with the client contract deal-making kit to create Filecoin Storage deals directly from your dApp This allows you to seamlessly integrate Filecoin functionality into your dApp thus reducing the need to involve a separate storage platform to access data for your dApp.
 

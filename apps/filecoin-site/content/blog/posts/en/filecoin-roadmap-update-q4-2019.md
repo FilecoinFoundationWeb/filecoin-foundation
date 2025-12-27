@@ -33,7 +33,7 @@ We have updated our [public roadmap document](https://docs.google.com/document/d
 
 ![Roadmap phases](https://filecoin.io/vintage/images/blog/roadmap-phases-testnet.jpg)
 
-### What’s next
+## What’s next
 
 Looking ahead to mainnet launch, here are the critical path workstreams, their rough durations, and dependencies.
 
@@ -52,7 +52,7 @@ This is just a preview of some ecosystem initiatives. We will describe these pro
 
 **Mainnet launch.** Finally, we are budgeting a four-week window for mainnet launch and any necessary preparations. We aim to launch near the beginning of this window, but we have included a buffer in case unexpected circumstances arise.
 
-### Roadmap Tooling
+## Roadmap Tooling
 
 We recently assembled a public Gantt chart that allows us to share our critical path workstreams and updated timing information. The tool looks like this 👇and can be accessed at [this link](https://app.instagantt.com/shared/s/1152992274307505/latest).
 
@@ -60,7 +60,7 @@ We recently assembled a public Gantt chart that allows us to share our critical 
 
 The milestones we discussed in the previous section are in the Gantt chart. We will directly update [this tool](https://app.instagantt.com/shared/s/1152992274307505/latest) when we have updated timing information.
 
-### Upcoming Milestones
+## Upcoming Milestones
 
 Rough timing for our upcoming milestones are:
 

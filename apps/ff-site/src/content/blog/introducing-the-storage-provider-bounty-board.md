@@ -24,21 +24,21 @@ The goal of the Storage Provider Bounty Board is to:
 
 Visit the [Storage Provider Bounty Board panel](https://github.com/filecoin-project/community/tree/master/storage-provider-bounty-program) on the Filecoin Project Github, under the community repositories, to check bounty progress and find open issues.
 
-## **What is the Storage Provider Bounty system?**
+## What is the Storage Provider Bounty system?
 
 Bounties are a way to solve simple tasks like fixing minor bugs, adding test cases, updating or translating documentation, or building small, well-specified features. Bounties are priced based upon severity and urgency. Higher prioritized bounties would receive higher rewards. Prioritization and rewards are established by Filecoin Foundation and the Storage Provider Working Group.
 
 Bounties can be small or large, technical or nontechnical. Regardless of who you are, what skills you have, or your prior participation in the Filecoin network, there may be ways for you to participate in the Bounty Board. Harness your writing, coding, or foreign language skills and give it a go!
 
-## **Awarding System**
+## Awarding System
 
 Bounties are awarded for closing and/or fixing an issue. Bounties range from $50 to $5,000 (or equivalent FIL). Awards are determined based on the urgency and complexity of the task at hand. Rewards are determined by Filecoin Foundation and the Storage Provider Working Group.
 
-## **How to submit an open issue**
+## How to submit an open issue
 
 Open issues can be proposed by anyone in the Filecoin community. Filecoin Foundation provides templates to help you clearly and thoroughly describe your issue. [Propose an issue or explore contribution guidelines on GitHub](https://github.com/filecoin-project/community/tree/master/storage-provider-bounty-program#contributing-to-an-open-issue).
 
-## **Reward Distribution**
+## Reward Distribution
 
 In order to distribute rewards after closing the issue, contributors must submit a [Bounty Claim](https://github.com/filecoin-project/community/issues/new/choose) which will notify Filecoin Foundation team regarding their work and payment details.
 

@@ -24,7 +24,7 @@ _template: blog_detail
 
 We are excited to announce that the [Lurk programming language](http://github.com/lurk-lang) repositories are now open to the public. Lurk is a Turing-complete programming language for recursive zk-SNARKs (zero knowledge Succinct Non-interactive ARguments of Knowledge) that will enable new possibilities for SNARK proofs, blockchain consensus, the Filecoin Virtual Machine (FVM), decentralized apps, data integration with IPFS and IPLD, and more.
 
-### Overview
+## Overview
 
 Lurk is a statically scoped dialect of [Lisp](<https://en.wikipedia.org/wiki/Lisp_(programming_language)>), influenced by Scheme and Common Lisp. Its distinguishing feature relative to most programming languages is that correct execution of Lurk programs can be directly proved using zk-SNARKs. The resulting proofs are relatively small, can be verified quickly, and they reveal only the information explicitly contained in the statement to be proved.
 
@@ -46,13 +46,13 @@ Lurk currently supports multiple backend proving systems, specifically, [Groth16
 - Higher-order functions (e.g. functions as public inputs to computations, with proof)
 - Content-addressable data for natural integration with [IPFS](https://ipfs.tech/) and [IPLD](http://ipld.io/)
 
-### Lurk and Filecoin
+## Lurk and Filecoin
 
 Lurk could support the development of Filecoin protocols in multiple ways. Lurk integration with the [Filecoin Virtual Machine (FVM)](http://fvm.filecoin.io/), for example, would allow Lurk programs and applications to be verified on the Filecoin blockchain. This would provide Filecoin smart contracts (or actors) with first-class native access to application-specific zero-knowledge provable computation. Filecoin actors could be used to broker, orchestrate, and incentivise long-running Lurk jobs over data stored in the Filecoin network. Further, it would allow proofs that combine public and private data from multiple sources, including Filecoin sectors, private storage, or the chain itself.
 
 Over a longer timeframe, Lurk will enable improvements to [Hierarchical Consensus](https://github.com/protocol/ConsensusLab/blob/main/docs/b1.pdf) in Filecoin. Hierarchical Consensus is a framework to horizontally scale blockchain networks, increasing their throughput and flexibility. In hierarchical consensus, a subset of users can spawn new subnets with independent states and consensus algorithms, while maintaining the ability to seamlessly interact with any other subnet in the system. Subnets leverage the security of their parent chain by periodically committing proofs of the subnet’s state to the parent. This ensures up-to-date global consensus and propagates messages to other subnets in the hierarchy. In the current implementation of hierarchical consensus, the verification of subnet proofs requires full access to the state of that subnet. Lurk could completely remove this dependency by building self-verifiable proofs of the state changes performed in the subnet, which would improve the scalability and flexibility of the system.
 
-### Other Key Players in the Lurk Ecosystem
+## Other Key Players in the Lurk Ecosystem
 
 The Lurk ecosystem includes researchers and development teams supported by [Protocol Labs](http://protocol.ai/) and the [Filecoin Foundation](http://fil.org/).
 
@@ -66,7 +66,7 @@ Yatima is working with Lurk to allow for zero-knowledge verification of arbitrar
 
 With a talented team of researchers and engineers, and a growing ecosystem of contributors, we are excited about the future of Lurk.
 
-### More to come
+## More to come
 
 Over the next couple of months, we’ll be unveiling a Lurk website and blog, which will dive more deeply into the technical features of and historical background behind Lurk. To stay informed of these developments, be sure to follow [@Filecoin](https://twitter.com/filecoin) and [@ProtoResearch](https://twitter.com/ProtoResearch) on Twitter.
 

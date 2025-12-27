@@ -25,7 +25,7 @@ _template: blog_detail
 
 [_HackFS 2021_](https://ethglobal.com/showcase "HackFS 2021") _was a three-week virtual hackathon focused on building a digital world that is censorship-resistant, decentralized, and trustless. Below is an exploration of the Filecoin bridge as delivered by_ [_Carson Farmer_](https://twitter.com/carsonfarmer?lang=en "Carson Farmer") _of_ [_Textile_](https://textile.io "Textile") _— see the_ [_full recording_](https://www.youtube.com/watch?v=aV8-v-kHZfY&list=PLXzKMXK2aHh5iq_crvYF76EmPsZgcgLki&index=5 "Textile: Introduction to the Filecoin Bridge")_._
 
-### On-Chain or Off-Chain: What Kind of Storage?
+## On-Chain or Off-Chain: What Kind of Storage
 
 Anyone looking to do anything on the internet today needs to consider storage. In the past, a hosting company would provide storage to customers then charge them for presenting that hosted data to the internet so anyone else could access it.
 
@@ -45,7 +45,7 @@ Small or less popular files can utilize [pinning](https://docs.ipfs.tech/concept
 
 Filecoin's cryptoeconomic incentives allow for a more approachable way for storing smaller files or less in-demand content. It accomplishes this via batching: several files are collected together and uploaded to the file system as a batch. The batches are large enough to interest storage providers but still encompass smaller files that get their own content IDs.
 
-### What's a Bridge and What Does it Have to Do With Storage?
+## What's a Bridge and What Does it Have to Do With Storage
 
 Bridges are complex creations that take data from one blockchain and create a pathway, "the bridge," for use on another blockchain. The NEAR bridge utilizes NEAR’s blockchain technology and token to pay for transaction fees on the Filecoin network.
 
@@ -57,7 +57,7 @@ Other cross-chain bridges include [one to the Ethereum mainnet](https://filecoin
 - **Caching:** Normally, for batch uploads, there is a period of caching. This period allows users to access their files while they're still being uploaded to the Filecoin network. Caching also helps with speedy access to files, reducing the time taken to jump from one chain to another.
 - **Other Services:** Depending on how the bridge is built, it can even offer additional services such as content indexing and mapping.
 
-### The NEAR Bridge in Action
+## The NEAR Bridge in Action
 
 At HackFS, Carson [presented a demo](https://www.youtube.com/watch?v=aV8-v-kHZfY&list=PLXzKMXK2aHh5iq_crvYF76EmPsZgcgLki&index=5) of the [NEAR bridge](https://near.org/blog/filecoin-launches-collaboration-with-near-to-accelerate-the-growth-of-the-web3-stack/ "Filecoin Launches Collaboration with NEAR to Accelerate the Growth of the Web3 Stack") that showed off some impressive functionality. The bridge was run on the testnet but still showed a lot of promise for uploading files and interacting with on-chain wallets.
 
@@ -65,7 +65,7 @@ A live-coding session showed a barebones app that could connect to a wallet and 
 
 Seamless integration with web3 applications on the NEAR mainnet may soon be able to leverage the power of Filecoin's decentralized storage system. Other bridges could open up an even wider adoption of decentralized storage across users of different networks.
 
-### How Soon Can We See This In Action?
+## How Soon Can We See This In Action
 
 The HackFS demonstration shows that the basic premise works, but a few things still need to be worked out. The team is working on implementing other bridges, with cross-chain functionality being the overarching goal.
 

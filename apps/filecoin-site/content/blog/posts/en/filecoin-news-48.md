@@ -21,7 +21,9 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 48
 ---
 
-![](/uploads/filecoin-news-48.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+![](/uploads/filecoin-news-48.webp)
+
+## Announcements
 
 <a href="https://filecoin.io/blog/posts/snarkpack-v2-a-new-version-of-filecoin-s-proof-aggregator/"><img src="/uploads/181394788-a04113a5-3d11-4588-8cd2-43a3c46e9047-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -35,7 +37,7 @@ In the recent [Filecoin Network Upgrade](https://filecoin.io/blog/posts/filecoin
 
 As one of the most popular NFT marketplaces, Rarible has always made NFT content available through public IPFS nodes for its users to ensure that they’re always available on the decentralized web. The platform is now partnering with [NFT.Storage](https://nft.storage/) to make use of Filecoin’s permanent storage capabilities. All Rarible NFT content will now be preserved on both IPFS and Filecoin. Read the [announcement](https://blog.ipfs.tech/2022-07-21-rarible-and-nftstorage/) to find out more.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://www.youtube.com/watch?v=BCBYon1zJDM"><img src="/uploads/ecosystem-wg.webp" style="width:40%;margin-left:0%"></a>
 
@@ -71,15 +73,15 @@ Additionally, RSK hosted the first ever Web3 meetup in Port Harcourt, Nigeria, w
 
 Hola! Spanish-speaking builders should check out the new Filecoin doc translations. The community has put together overviews, guides, definitions, and additional resources that thoroughly explain the Filecoin Network and how it works to a wider audience.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filecoin.io/blog/posts/how-does-the-network-indexer-work/"><img src="/uploads/indexer.webp" style="width:40%;margin-left:0%"></a>
 
-### How Does the Network Indexer Work?
+### How Does the Network Indexer Work
 
 Filecoin stores a great deal of data, but without proper indexing, clients can’t perform efficient retrieval. Earlier this year, Protocol Labs launched the first production Network Indexer to enable searching for content-addressable data available from storage providers. To improve Filecoin content discoverability, Indexer nodes are developed to store mappings of CID multi-hashes to content provider records. Found out how it works on the [Filecoin blog](https://filecoin.io/blog/posts/how-does-the-network-indexer-work/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://www.buidl.asia/events/buidl-asia-2022-2"><img src="/uploads/buidl.webp" style="width:28%;margin-left:0%"></a>
 
@@ -87,7 +89,7 @@ Filecoin stores a great deal of data, but without proper indexing, clients can�
 
 Krypto Seoul is organizing the return of the [Buidl Asia](https://www.buidl.asia/) conference for this year after a long hiatus. Join developers, communities, and businesses across the globe to hear from speakers including Vitalik Buterin and Laura Shi, and catch an intro to Filecoin and IPFS presented by Longfei Wang. The event will also kick off the 2022 ETH Seoul Hackathon sponsored by Protocol Labs and Filecoin. [Register now](https://www.buidl.asia/events/buidl-asia-2022-2)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Hackathons</b></h3>
+## Hackathons
 
 <a href="https://fil.org/events/"><img src="/uploads/hackathons.webp" style="width:40%;margin-left:0%"></a>
 
@@ -96,9 +98,7 @@ Summer is soon coming to a close but there are still tons of summer hackathons t
 - Web3athon, a hyperlocal people-first hackathon happening from June 9th - September 15th.
 - The 2022 ETH Seoul Hackathon will be happening IRL from August 5th - 7th and then virtually from August 8th - 13th.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

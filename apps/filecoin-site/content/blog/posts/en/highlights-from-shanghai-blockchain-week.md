@@ -29,13 +29,13 @@ From October 23 - 28, 2020, we joined our community in China for Shanghai Intern
 
 <br>
 
-### October 23 - 25, Hackathon @ Wanxiang Blockchain Labs
+## October 23 - 25, Hackathon @ Wanxiang Blockchain Labs
 
 The Filecoin challenge at the Wanxiang Blockchain Labs hackathon encouraged developers to build interesting dapps and critical tools for the Filecoin ecosystem with a prize pool of $10,000! The hackathon attracted21 teams with 120+ hackers in total over the three days.
 
 Over the course of the hackathon, 6 projects added impressive Filecoin integrations! The $5000 award for the best Filecoin project went to **DeBund**, a project to store people’s biohealth information on the Filecoin network. The runner-up with a $3,000 award was **Ownership**, which facilitates open datasets on Filecoin for supply chain management and smart cities. In 3rd place with $1,000 was **Meetion**, a social networking platform. The remaining three projects split the remaining $1,000 award.
 
-### October 26, Filecoin Opening Day
+## October 26, Filecoin Opening Day
 
 On Filecoin opening day, over 200 attendees joined to learn about the Filecoin ecosystem, mainnet launch, ecosystem partnerships, and plans for the future. We invited the [devgrant](https://github.com/filecoin-project/devgrants) winning team, Coinsummer Lab, to share their project FileVault, which stores social media data on Filecoin. The Slingshot project, YOLO, which stores AI/ML training image data, also presented. Additionally, four top-ranking miner groups - IPFSMain, IPFSForce, 6block and IPFSUnion - recapped their Space Race experience and achievements.
 
@@ -49,11 +49,11 @@ There were also a number of talks from experts throughout the Filecoin ecosystem
 
 </p>
 
-### 10/27/20 - 10/28/20 Summit @ W the Bund Shanghai
+## 10/27/20 - 10/28/20 Summit @ W the Bund Shanghai
 
 During the final two days, we heard from Filecoin founder, Juan Benet, who presented a keynote speech and a panel with Vitalik Buterin and Gavin Wood.
 
-#### Keynote, Filecoin founder Juan Benet
+### Keynote, Filecoin founder Juan Benet
 
 In Juan’s keynote, he emphasized Filecoin’s mission “to create a decentralized, efficient, and robust foundation for humanity’s information.” In 2020, the amount of data we generate will be around 58 zettabytes, and that’s expected to increase by 3x in the next four years. And yet, we only store about 7% of the information that is generated today. Cloud storage simply cannot keep up with demand, and we are losing a tremendous amount of our societies’ data to these inefficiencies.
 
@@ -67,7 +67,7 @@ The talk ended with four pieces of advice for attendees. 1) Bring deeply valuabl
 
 [_Watch the full speech (101:45)_](https://www.bilibili.com/video/BV16D4y197Wh?zw)_._
 
-#### Panel: Filecoin founder Juan Benet, Ethereum founder Vitalik Buterin, Polkadot founder Gavin Wood
+### Panel: Filecoin founder Juan Benet, Ethereum founder Vitalik Buterin, Polkadot founder Gavin Wood
 
 _The panel began with each panelist answering questions about the topic(s) they think are most important right now in the blockchain technology ecosystem._
 

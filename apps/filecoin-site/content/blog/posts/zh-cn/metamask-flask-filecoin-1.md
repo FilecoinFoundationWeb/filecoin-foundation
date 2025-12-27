@@ -29,7 +29,7 @@ MetaMask Flask是一片崭新的试验场，聚集Wallet最前沿最新鲜的功
 
 因此，Flask不具备MetaMask所拥有的API和UX稳定性。我们再次强调，Flask的目标受众是开发者。**参与风险由用户自行承担。本试验场不提供监督指导。**
 
-### Snaps为创新提速
+## Snaps为创新提速
 
 Snaps是通过Flask上线的第一个功能。
 
@@ -48,13 +48,13 @@ Snaps的开发者资源仅受限于Snaps API，而 MetaMask团队会继续迭代
 
 更多Snaps使用方法可参阅[技术文件](https://docs.metamask.io/guide/snaps.html)。
 
-### Snaps让Filecoin更简单
+## Snaps让Filecoin更简单
 
 为最大化新功能的效用，Protocol Labs与Chainsafe合作为MetaMask Flask开发了snap。安装后，snap将为Wallet接入Filecoin集成并附加前端。用户可浏览Filecoin账户、查看余额、发送交易以及使用Filecoin秘钥创建加密签名消息。对用户来说，与Filecoin协议交互变得更加便利，可由MetaMask浏览器集成直接实现。
 
 想了解如何在MetaMask Flask中启用Filecoin Snap，可观看Erik Marks进行的[演示](https://youtu.be/14uEYdgyEr8)。
 
-### 总结
+## 总结
 
 在Flask环境中，MetaMask致力于为所有用户实现稳定、易于维护、安全的功能及API。Snaps让Web3开发者充分发掘MetaMask产品潜力，打造新型dapp。所有开发者都可以创建Snaps，今后，用户也可以自由选择需要的Snaps加入Wallet。
 

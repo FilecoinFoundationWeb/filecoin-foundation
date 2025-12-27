@@ -27,9 +27,7 @@ _template: blog_detail_ch
 
 如果您最近没有访问Filecoin Spec网站，请前往https://spec.filecoin.io/查看更新后的全新网站。
 
-<div style="text-align:center">
-<image width="90%" src="/vintage/images/blog/fil-spec-header.png" alt="header">
-</div>
+![Filecoin Spec Header](/vintage/images/blog/fil-spec-header.png)
 
 技术规范网站经历了几轮更新 "设计→实施→部署"，以整合所有必要的功能，为Filecoin开发者、实施者、研究者和生态开发者创建一个伟大的平台。此外，我们还降低了更新规范内容所需的复杂度、依赖应用结构化的软件包管理，增加了确保整个规范一致性的功能，增加了对新工具的支持等等。
 
@@ -58,9 +56,7 @@ _template: blog_detail_ch
 
 除了以上变更之外，网站还进行了其他改善！
 
-<div style="text-align:center">
-<image width="90%" src="/vintage/images/blog/fil-spec-facelift.png" alt="facelilft">
-</div>
+![Filecoin Spec Facelift](/vintage/images/blog/fil-spec-facelift.png)
 
 在内容方面，我们在更新协议的描述方面投入了巨大的精力。Filecoin是一个大型的项目。为了让我们的努力更有意义，假如将协议规范打印出来，**那将是一本约400页的教科书！**
 
@@ -70,35 +66,25 @@ Filecoin规范是基于实现不可知的，这意味着文档对使网络运行
 
 在我们3个月的改进技术规范项目历程中，有超过300个GitHub问题被打开，200多个PR被合并。
 
-<div style="text-align:center">
-<image width="90%" src="/vintage/images/blog/fil-spec-stats.png" alt="stats">
-</div>
+![Filecoin Spec Stats](/vintage/images/blog/fil-spec-stats.png)
 
 如今，该技术规范网站的更新率已达84%。为了跟踪我们自己的进展情况，以及网站和协议的“健康”状态，我们引入了三个工具：
 
 **1. 透明化的仪表盘** ，显示规范每个部分的状态，范围为 "不正确"、"WIP/草稿"、"可靠 "和 "稳定"。我们已经在规范markdown文件中集成了前端事项属性，以将数值无需任何额外的操作就能自动输入到仪表板中。另外值得注意的是，仪表板是由ToC自动生成和更新的，因此不需要编辑单独的文件来更新仪表盘。
 
-<div style="text-align:center">
-<image width="90%" src="/vintage/images/blog/fil-spec-legend.png" alt="legend">
-</div>
+![Filecoin Spec Legend](/vintage/images/blog/fil-spec-legend.png)
 
 **2. “审计完成度” 指标**作为仪表板的单独一栏，显示协议的具体组成部分是否已被审计。在有审计报告的情况下，将标明报告(或以前报告的清单)的链接及审计的日期。
 
-<div style="text-align:center">
-<image width="90%" src="/vintage/images/blog/fil-spec-dashboard2.png" alt="dashboard">
-</div>
+![Filecoin Spec Dashboard](/vintage/images/blog/fil-spec-dashboard2.png)
 
 **3. 稳定的进度条显示** ，用来总结整个规范的状态。
 
-<div style="text-align:center">
-<image width="90%" src="/vintage/images/blog/fil-spec-progressbar-85.png" alt="progressbar">
-</div>
+![Filecoin Spec Progressbar](/vintage/images/blog/fil-spec-progressbar-85.png)
 
 **4. 单独用来显示"实施方案状态 "的仪表板** ，包含所有不同版本Filecoin实施方案的状态信息：Lotus、Fuhon、Forest和go-filecoin。该仪表板集成了程序挂钩，可以从相应的资源库中无缝提取信息，并报告CI测试是成功/失败以及测试覆盖率。
 
-<div style="text-align:center">
-<image width="90%" src="/vintage/images/blog/fil-spec-implementations.png" alt="implementations">
-</div>
+![Filecoin Spec Implementations](/vintage/images/blog/fil-spec-implementations.png)
 
 ## FIP集成
 

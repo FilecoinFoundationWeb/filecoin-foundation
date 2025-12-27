@@ -77,7 +77,7 @@ Join cryptographers, developers, project managers and more from Protocol Labs, t
 
 Join the Filecoin Foundation on June 8th in Austin, TX for FIL Austin, an in-person summit for the Filecoin Community. This one-day, two-track event at the Coppertank Events Center will convene the Filecoin ecosystem in real life. Join as builders, developers, and partners from across the ecosystem gather for workshops, panels, and networking devoted to building and expanding the Filecoin network. FIL Austin will be hosted in the heart of the city the day before CoinDesk’s Consensus – the crypto industry’s annual “big tent” event. More details will be released soon. Subscribe to the FF email list or join the FIL Austin [Telegram group](https://t.me/filaustin) for updates. See you there!
 
-<h2 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Hackathons</b></h2>
+## Hackathons
 
 <img src="/uploads/screen-shot-2022-03-15-at-5-45-53-pm.webp" style="width:40%;margin-left:0%" alt="">
 

@@ -29,11 +29,11 @@ _template: blog_detail
 
 This Thursday, March 5, 2020, we will host a virtual Q&A session with Juan Benet, founder of the Filecoin Project. For one hour, Juan will be online to answer any questions you might have about our testnet, updated roadmap and future plans. We hope you can join us!
 
-### When is the Q&A?
+## When is the Q&A
 
 - **The Q&A session will occur on Thursday, March 5, 2020 from 6:00 - 7:00PM PST.**
 
-### How can I participate?
+## How can I participate
 
 - Please set up an account on the [Filecoin Project Slack](https://join.slack.com/t/filecoinproject/shared_invite/zt-dj58b7fq-weyaTEvjHoYF_ENkQHR6Ig) or WeChat. Invite links for both can be found [**here**](https://filecoin.io/#community).
 - Join the **#fil-ama** channel on the Filecoin Project Slack before 6:00PM PST on March 5, 2020.

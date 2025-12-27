@@ -26,7 +26,7 @@ This is the second blog of the Network Indexer blog post series. In this post, w
 
 Earlier this year, Protocol Labs launched the first production Network Indexer to enable searching for content-addressable data available from storage providers, such as those on the Filecoin and IPFS networks. We have now indexed 6B+ content IDs ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)s), with over 140 Storage Providers publishing their data to Indexer, and 4 production indexer nodes running with our partners. As Indexer nodes process more and more content across Filecoin and IPFS, clients can query the Indexer to learn where to retrieve the content identified by those CIDs.
 
-### Overview
+## Overview
 
 Filecoin stores a great deal of data, but without proper indexing, clients canâ€™t perform efficient retrieval. To improve Filecoin content discoverability, Indexer nodes are developed to store mappings of CID multi-hashes to content provider records. A client uses a CID or multihash to lookup a provider record, and then uses that provider record to retrieve data from a storage provider. In short, the indexer works like a specialized key-value store for the following two groups of users:
 
@@ -35,9 +35,9 @@ Filecoin stores a great deal of data, but without proper indexing, clients canâ€
 
 In the post, we will look into how Indexer components interact with each other, and how indexes are ingested, stored, and shared across network.
 
-### Indexer Interactions
+## Indexer Interactions
 
-#### So, how do these two user types interact with Indexer?
+### So, how do these two user types interact with Indexer
 
 First, a storage deal is made and data is stored by a storage provider. The storage provider will announce that new content is available by publishing the CID of the advertisement record over gossip pubsub, generally relayed by mainnet nodes. Alternatively, it can be sent directly to Indexer via HTTP. Indexer nodes can also relay to each other.
 
@@ -51,7 +51,7 @@ This diagram summarizes the different actors in indexer ecosystem, and how they 
 
 ![Indexer ecosystem actors](/uploads/indexer-ecosystem.webp)
 
-#### Index Ingestion
+### Index Ingestion
 
 Index ingestion consists of two parts:
 
@@ -68,7 +68,7 @@ The following diagram illustrates the structure of advertisements and multihash 
 
 ![Advertisement published contents](/uploads/index-ad-ipld-graph.webp)
 
-#### Data Storage
+### Data Storage
 
 In Indexer data store design, many multihashes map to relatively few provider records. A multihash is used to lookup the provider records describing where the content identified by that multihash is available. A provider ID and context ID are used to lookup a unique provider record.
 
@@ -80,7 +80,7 @@ This diagram shows the 2-level mapping design of indexer data store:
 
 ![The Indexer's 2-level data store mapping](/uploads/indexer-core-data.webp)
 
-#### Data Sharing
+### Data Sharing
 
 Additionally, Indexers can share various types of data with each other when configured to do so.
 
@@ -88,7 +88,7 @@ Additionally, Indexers can share various types of data with each other when conf
 - Indexers can re-publish HTTP announcements to other indexers.
 - Indexers can relay gossip pubsub announcements.
 
-### Resources
+## Resources
 
 If you are interested in participating in Indexer network or learning more about Indexers, you may find these resources helpful:
 

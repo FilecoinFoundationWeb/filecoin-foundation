@@ -23,15 +23,15 @@ title: Filecoin News 34
 
 ![](/uploads/filecoin-news-34.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://filecoin.io/blog/posts/filecoin-in-2021-looking-back-at-a-year-of-exponential-growth/"><img src="/uploads/fil-blog-2022-01-05-review-v3.webp" style="width:40%;margin-left:0%"></a>
 
-### **Filecoin 2021 in Review**
+### Filecoin 2021 in Review
 
 In 2021, the Filecoin network surpassed a combined storage capacity of 14+ EiB with the help of 3,600+ storage providers from around the globe. The community also welcomed over 400 new applications built by the community of 7,000 FIlecoin developers. All that in little more than a year since mainnet launch. Aside from the growth of the ecosystem, Filecoin is now an essential component of over 400 new applications that rely on the network for persistent storage needs. Some of these collaborators include Chainlink, OpenSea, Zcash, The Internet Archive, and more. Read [this report](https://filecoin.io/blog/posts/filecoin-in-2021-looking-back-at-a-year-of-exponential-growth/) to take a look at Filecoin’s extraordinary growth in 2021.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filecoin.io/blog/posts/metamask-flask-a-snap-for-filecoin/"><img src="/uploads/fil-blog-2022-xx-xx-metamask-flask-announcement_hu8a3a791cb96946ff51fa6071f7d8c9e8_603409_2000x0_resize_q90_linear.webp" style="width:40%;margin-left:0%"></a>
 
@@ -45,7 +45,7 @@ Our friends at MetaMask are launching a new playground for experimental function
 
 Always available data for your NFTs! Learn how to store off-chain NFT data in a decentralized manner using [ChainSafe Storage](https://storage.chainsafe.io/), built on the guarantees of IPFS and Filecoin. Read [ChainSafe’s newest blog](https://medium.com/chainsafe-systems/chainsafe-storage-a-step-by-step-tutorial-on-how-to-store-and-retrieve-nft-data-f70988983ca) to learn how.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Storage Providers</b></h3>
+## Storage Providers
 
 <a href="https://twitter.com/Filecoin/status/1481763710506987520"><img src="/uploads/twitterspaces.webp" style="width:40%;margin-left:0%"></a>
 
@@ -53,7 +53,7 @@ Always available data for your NFTs! Learn how to store off-chain NFT data in a 
 
 Join fellow storage providers for an open discussion on the economics of operating a filecoin storage system and learn more about the opportunity to build the next-gen service provider on top of the Filecoin network. Come with your questions and learn from some of Filecoin’s most experienced storage providers. [Tune in](https://twitter.com/Filecoin/status/1481763710506987520) on January 26th at 8am PT!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://podcasts.apple.com/us/podcast/civil-liberties-with-web3-with-jonathan-victor/id1462346183?i=1000545630628"><img src="/uploads/untoldstories.webp" style="width:40%;margin-left:0%"></a>
 
@@ -73,7 +73,7 @@ Our collaborators at Lit Protocol just [closed](https://venturebeat.com/2022/01/
 
 At the end of 2021, the Filecoin Foundation fielded a community survey asking about inspiration and challenges heading into 2022. FF boiled down the responses and results are in! Learn more about the results in [this graphic](https://www.reddit.com/r/filecoin/comments/s3bnr7/filecoin_community_survey_2021_results/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://www.meetup.com/Filecoin-New-York-City/events/283245481/"><img src="/uploads/filecoin-green.webp" style="width:40%;margin-left:0%"></a>
 
@@ -99,9 +99,7 @@ Everything Web3 is happening in Denver, CO from February 11-20. [ETHDenver](http
 
 Call for papers! Come and join some of the top researchers in the world at the [“Decentralized Internet, Networks, Protocols, and Systems” (DINPS) 2022](https://research.protocol.ai/sites/dinps/calls/) workshop taking place at [ICDCS 2022](https://icdcs2022.icdcs.org/) in Bologna, Italy! DINPS will bring together researchers and practitioners in the fields of decentralized systems, peer-to-peer networks, and edge computing. Submit your papers by March 5, 2022 to be under consideration!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

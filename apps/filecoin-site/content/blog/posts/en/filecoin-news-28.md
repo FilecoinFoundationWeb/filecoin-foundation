@@ -21,7 +21,7 @@ title: "Filecoin News 28: Filecoin Orbit, Proofs v10.0.0, Halo 2, and More"
 
 ![](/uploads/filecoin-news-28.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Introducing Filecoin Orbit</b></h3>
+## Introducing Filecoin Orbit
 
 <a href="https://orbit.filecoin.io/"><img src="/uploads/orbit-announcement-twitter.webp" style="width:70%;margin-left:0%"></a>
 
@@ -29,9 +29,9 @@ title: "Filecoin News 28: Filecoin Orbit, Proofs v10.0.0, Halo 2, and More"
 
 On October 21-22, the Filecoin community is coming together to celebrate with Filecoin Orbit. Join to hear panels, talks, workshops, and demos from across the ecosystem as people review what has been built in the last year, and what lies ahead. And get an early lead on the activities starting on October 18th with community-organized events.
 
-<h4><a href="https://orbit.filecoin.io/">Register Now! ↗</a></h4>
+<a href="https://orbit.filecoin.io/">Register Now! ↗</a>
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://github.com/filecoin-project/rust-fil-proofs"><img src="/uploads/research-logo-2.webp" style="width:40%;margin-left:0%"></a>
 
@@ -47,7 +47,7 @@ Miners are currently testing and reporting performance gains as well via Lotus v
 
 Recently [Electric Coin Co.](https://electriccoin.co/) (ECC) [announced](https://electriccoin.co/blog/ethereum-zcash-filecoin-collab/) that [Protocol Labs](https://protocol.ai/), the [Filecoin Foundation](https://fil.org/), the [Ethereum Foundation](https://ethereum.org/en/foundation/), and ECC would be collaborating to explore research and development of [Halo](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/) — a solution to zero knowledge recursive proofs without requiring a trusted setup. [Learn more about the collaboration](https://filecoin.io/blog/posts/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/"><img src="/uploads/chainlink-grant.webp" style="width:40%;margin-left:0%"></a>
 
@@ -61,15 +61,13 @@ If you’re interested in applying to the [Chainlink](https://chain.link/) and F
 
 All Lotus users, including node operators, storage providers and clients, are highly recommended to upgrade to the [lotus v1.11.3 feature release](https://github.com/filecoin-project/lotus/releases/tag/v1.11.3) that was made available last week. It includes many enhancements that result in performance improvements in different areas, including functionality to reject new deals if the staging deals area is full, command to list/remove expired sectors locally, and other [features, improvements, and bug fixes](https://github.com/filecoin-project/lotus/releases/tag/v1.11.3).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
-
 <a href="https://files.chainsafe.io/"><img src="/uploads/chainsafe-files.webp" style="width:40%;margin-left:0%"></a>
 
 ### ChainSafe Files
 
 [ChainSafe Files](https://files.chainsafe.io/) is an online platform to store, view, and share files. The product leverages IPFS and Filecoin to give users all the benefits of distributed storage and blockchain technology. [Learn](https://filecoin.io/blog/posts/chainsafe-files-building-privacy-preserving-cloud-storage/) how Chainsafe is revolutionizing what it means for users to have private access to their files while also leveraging decentralized storage, security, and persistence.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Storage Providers</b></h3>
+## Storage Providers
 
 <a href="https://files.chainsafe.io/"><img src="/uploads/minerx.webp" style="width:40%;margin-left:0%"></a>
 
@@ -79,7 +77,7 @@ The MinerX.2 Fellowship Program had an incredibly successful run and wrapped up 
 
 We’re really grateful for the productive engagement with the Fellows over the last months! Moving forward, MinerX.3 has officially kicked off, scoped specifically for testing upcoming releases for lotus, and we hope to continue engaging Fellows and members of the community interested in furthering the deal making experience in the new Enterprise Storage Providers WG (join us in [#enterprise-sp-wg](https://filecoinproject.slack.com/archives/C02GQUMFQVA)).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiljqOeM0TO2KcmmxyEtvb9pn08zIDg85exfodi48BoeCqsw/viewform"><img src="/uploads/miner-survey-graphic-v2-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -100,7 +98,7 @@ Currently, the core devs and the community are considering including the followi
 
 More network upgrade and implementation release details can be found at the repo under [Discussions](https://github.com/filecoin-project/community/discussions/74#discussioncomment-1398542).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="http://poap.xyz/"><img src="/uploads/nft-sticker.webp" style="width:28%;margin-left:0%"></a>
 
@@ -128,7 +126,7 @@ In mid-September, the Filecoin, IPFS, and Protocol Labs communities came togethe
 
 At the culmination of the event, three startups ([NetSepio](https://devpost.com/software/netsepio), [Blockforge](https://devpost.com/software/blockforge), and [IPFS WebGL Gaming](https://devpost.com/software/ipfs-webgl-gaming-platform)) were recipients of a total of $18,000 in prizes. You can [watch the full closing ceremony](https://www.youtube.com/watch?v=KL58k7dXj54&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP), including presentations of the winners and many other amazing projects that participated in the hackathon. Check out this new [blog post](https://blog.ipfs.tech/browsers-3000-hackathon-winners/) for a feature on the winning projects.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Learn</b></h3>
+## Learn
 
 <a href="https://filecoin.io/blog/posts/filecoin-s-island-economy/"><img src="/uploads/island-economy.webp" style="width:40%;margin-left:0%"></a>
 
@@ -136,9 +134,7 @@ At the culmination of the event, three startups ([NetSepio](https://devpost.com/
 
 If you’ve been around the Filecoin ecosystem for a bit, you’ve heard the term “Island Economy” thrown around. But what does it mean specifically, and why is it such a useful way to understand the economics of the Filecoin ecosystem? In a nutshell, an island economy is an economy within an isolated area (physical or virtual) in which you can survive, and thrive, without having to do all the work yourself. Pique your interest? [Learn more here](https://filecoin.io/blog/posts/filecoin-s-island-economy/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

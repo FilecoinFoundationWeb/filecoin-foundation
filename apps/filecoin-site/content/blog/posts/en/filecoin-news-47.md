@@ -21,7 +21,9 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 47
 ---
 
-![](/uploads/filecoin-news-47.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+![](/uploads/filecoin-news-47.webp)
+
+## Announcements
 
 <a href="https://www.eventbrite.com/e/sustainable-blockchain-summit-tickets-336114797407?discount=SBSNEWS"><img src="/uploads/sustainable-blockchain.webp" style="width:40%;margin-left:0%"></a>
 
@@ -39,7 +41,7 @@ In light of the ongoing COVID-19 disruption and continued travel restrictions ac
 
 The Filecoin v16 Skyr upgrade - the deployment of Milestone 1 of the Filecoin Virtual Machine to the Filecoin network was successfully completed on Wednesday, July 6th at 1400 UTC. This upgrade represents the most dramatic transformation of the Filecoin network since its inception nearly two years ago. The centerpiece of this upgrade was [the introduction of the Filecoin Virtual Machine (FVM)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0030.md), and the migration of chain execution to it. The Skyr upgrade is the first of two steps on the path to fully enabling on-chain user programmability on Filecoin, bringing with it the possibility for a boundless number of new use cases and features to be implemented on the already robust network. Learn more about the upgrade and what’s next in the [announcement post](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://filecoin.io/blog/posts/espa-bootcamp-supermicro-s-solutions-for-the-filecoin-ecosystem/"><img src="/uploads/espa-header.webp" style="width:40%;margin-left:0%"></a>
 
@@ -65,7 +67,7 @@ The Filecoin community is making space for new compute platforms to bring valuab
 
 Check out Messari’s latest [report](https://messari.io/article/state-of-filecoin-q2-2022?utm_source=twitter_messaricrypto&utm_medium=organic_social&utm_campaign=state_of_filecoin_q2) on Filecoin’s performance during Q2 of this year. Some of the findings were a 128% increase in active deals and 264% increase in protocol revenue QoQ. The community has also seen a lot of builders join in with a 32% growth in ecosystem projects. Read along to get the full details and dive deeper into Messari’s analysis of the Filecoin network.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://www.eventbrite.com/e/filecoin-meetup-tickets-343436286177"><img src="/uploads/filecoin-paris.webp" style="width:40%;margin-left:0%"></a>
 
@@ -79,7 +81,7 @@ Join the Filecoin community in Paris today, July 19th 2022 at 3:00 pm CEST, to l
 
 The Protocol Labs community is gathering IRL at EthCC in Paris for CryptoEconDay. Join in and hear from thought leaders such as Juan Benet, ZX Zhang, Thomas Mellan, Maria Silva, and Vik Kalghati as they discuss the latest on cryptoeconomics. Some of the topics to be covered include Compositional Game Theory for Blockchain Design, Models and FIPs, and MEV for NFTs.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filswan.medium.com/filswan-multi-chain-storage-ama-recap-4f7b92ab5483"><img src="/uploads/178079044-037dad2a-9220-45e7-8d3e-dfe9ab3b6b0b-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -87,7 +89,7 @@ The Protocol Labs community is gathering IRL at EthCC in Paris for CryptoEconDay
 
 Filgram is a tool built for and powered by storage providers that enables them to optimize marketing for their enterprise. On the other hand, it lets users compare and contrast Storage Providers on a wide range of facets such as location, storage power, number of deals made, and much more. Visit the [Filecoin blog](https://filecoin.io/blog/posts/introducing-filgram-the-newest-sp-discovery-tool/) to learn more about Filgram.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Hackathons</b></h3>
+## Hackathons
 
 <a href="https://fil.org/events/"><img src="/uploads/hackathons.webp" style="width:40%;margin-left:0%"></a>
 
@@ -96,9 +98,7 @@ Summer is here and there’s a lot to do for web3 developers and teams looking t
 - Register for Web3athon, a hyperlocal people-first hackathon happening from June 9th - September 15th.
 - Join ETHGlobal and the Protocol Labs community for the third annual HackFS from July 8th-23rd.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

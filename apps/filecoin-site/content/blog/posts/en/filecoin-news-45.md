@@ -23,7 +23,7 @@ title: Filecoin News 45
 
 ![](/uploads/filecoin-news-45.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://filecoin.io/blog/posts/brave-browser-adds-filecoin-to-wallet//"><img src="/uploads/brave.webp" style="width:40%;margin-left:0%"></a>
 
@@ -37,7 +37,7 @@ The Filecoin ecosystem is excited to announce that with today’s release of [Br
 
 Filecoin Green, in conjunction with the Filecoin Foundation, is launching a $1 million grants program in support of Regenerative Finance (ReFi) projects aiming to bring the economic system into a healthier alignment with the natural world. The grants program is an expansion of the Filecoin Green mission that aims to measure the environmental impacts of Filecoin and verifiably drive them below zero, building infrastructure along the way that allows anyone to make transparent and substantive environmental claims. [Read the full announcement](https://filecoin.io/blog/posts/filecoin-green-s-1-million-green-grants-program-will-support-climate-positive-regenerative-finance-refi-initiatives/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://www.youtube.com/watch?v=Uw4R5PyLPfI&list=PL_0VrY55uV18-DugtNhjS5_-taPz0hnAO&index=3"><img src="/uploads/allhands.webp" style="width:35%;margin-left:0%"></a>
 
@@ -67,7 +67,7 @@ The largest barrier to Web3 enterprise and broader adoption of blockchain techno
 
 TheFilecoin storage provider community is excited to announce the upcoming launch of a SP Newsletter, which will be specifically tailored to a storage provider audience! If you are a storage provider, have interest in becoming a storage provider, or simply would like to stay updated on storage provider news, please sign up with this [SP Newsletter Signup](https://bit.ly/spnewslettersignup) form.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://fundingthecommons.io"><img src="/uploads/funding-the-commons.webp" style="width:40%;margin-left:0%"></a>
 
@@ -112,9 +112,7 @@ Summer is here and there’s a lot to do for web3 developers and teams looking t
 
 Join ETHGlobal and the Protocol Labs community for the third annual HackFS from July 8th-23rd.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

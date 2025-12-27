@@ -25,7 +25,7 @@ title:
 
 ![](/uploads/filecoin-news-30.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://spec.filecoin.io/intro/filecoin_vm/"><img src="/uploads/fil-blog-2021-11-02-fvm.webp" style="width:40%;margin-left:0%"></a>
 
@@ -55,7 +55,7 @@ We are planning events, grants and other support to enable Filecoin to become ve
 
 Filecoin is now the official storage layer of Flow blockchain, empowering platforms, developers and users alike as the Flow metaverse becomes more open, robust, and decentralized. This integration of technologies will accelerate end-to-end ownership of NFTs, along with the media assets associated with them, establishing decentralized storage of data on Flow. [Read more about the announcement](https://filecoin.io/blog/posts/filecoin-becomes-official-storage-collaborator-for-flow-blockchain/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://www.youtube.com/watch?v=GMlSGtHb-hU"><img src="/uploads/ipld-in-wasm-for-techies.webp" style="width:40%;margin-left:0%"></a>
 
@@ -65,7 +65,7 @@ Underneath IPFS is a system known as IPLD that deals with all the heavy lifting 
 
 During Filecoin Orbit, Steven Allen gave a walkthrough of IPLD and WASM, and how they work together to power the newly-announced Filecoin Virtual Machine. [Watch here](https://www.youtube.com/watch?v=GMlSGtHb-hU).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Storage Providers</b></h3>
+### Storage Providers
 
 <img src="/uploads/screen-shot-2021-11-02-at-2-07-00-pm.webp" style="width:40%;margin-left:0%">
 
@@ -73,7 +73,7 @@ During Filecoin Orbit, Steven Allen gave a walkthrough of IPLD and WASM, and how
 
 Textile's Filecoin Deal Auctions will award 250FIL in prizes to Storage Providers with the highest reputation over two weeks, starting next week. Storage providers can take part in deal auctions by running a lightweight client called [bidbot](https://github.com/textileio/bidbot). To date, over 200TiB have been won and stored by storage providers using the system.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-defi/"><img src="/uploads/fil-blog-2021-10-29-filecoin-launchpad-accelerator-ii.webp" style="width:40%;margin-left:0%"></a>
 
@@ -97,7 +97,7 @@ If you are an ambitious team who wants to build a decentralized and transparent 
 
 Have questions about the accelerator? Get them answered at an Open House/AMA hosted by Tachyon this Friday, November 5th at 12:00 PM EST. [Set a reminder for the Open House/AMA](https://twitter.com/i/spaces/1nAKEYPkBlkKL).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="http://poap.xyz/"><img src="/uploads/header.webp" style="width:28%;margin-left:0%"></a>
 
@@ -121,9 +121,7 @@ BUIDL IT is India’s biggest Web 3.0/Blockchain hackathon designed to promote w
 
 Wondering where you can start building on the IPFS and Filecoin ecosystems? Visit [hackathons.filecoin.io](https://fil.org/events/) to learn about and register for current and upcoming hackathons - find the one that’s right for you!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

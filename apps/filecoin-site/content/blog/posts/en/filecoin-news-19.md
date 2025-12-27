@@ -26,7 +26,7 @@ title:
 
 ![](/uploads/unnamed.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Updates</b></h3>
+## Updates
 
 <a href="https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-3-10x-increase-in-storage-onboarding/"><img src="/uploads/fil-blog-wormhole.webp" style="width:40%;margin-left:0%"></a>
 
@@ -52,7 +52,7 @@ The phase shift and associated incentive transition together act as a Call to Ac
 
 Hello from the Rust implementation team Forest! We are a part of the [**ChainSafe**](http://chainsafe.io/) family and we have a [**new blog post**](https://medium.com/chainsafe-systems/back-into-the-forest-983a4344ffe9) on our Medium detailing our latest updates with the project. Sigma Prime has officially begun an audit of our code base, and we are inching ever closer to a fully productionized Forest and a multi-client reality on the Filecoin network. In the meantime, we have made many improvements to Forest, including better syncing, state migration, improved CLI, and metrics for measuring and analyzing our node performance. You can read all about it [**here**](https://medium.com/chainsafe-systems/back-into-the-forest-983a4344ffe9). If you want to get in touch with our Forest developers, don’t forget to drop into our [**Discord**](https://discord.gg/CprJHjrWG6) to ask questions. For more updates, make sure to follow ChainSafe’s [**Twitter**](https://twitter.com/ChainSafeth)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
+## Build
 
 <a href="https://filecoin.io/blog/posts/longhash-ventures-demo-day-defi-consumer-tech/"><img src="/uploads/04-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -60,7 +60,7 @@ Hello from the Rust implementation team Forest! We are a part of the [**ChainSaf
 
 On April 23, the **Filecoin Frontier Accelerator II powered by LongHash Ventures**, hosted a demo day to showcase the 11 teams that completed the 3-month accelerator program. During the program, the teams received hands-on venture support, world-class mentorship, dedicated resources from the Filecoin community, and a $20,000 grant to continue building on the Filecoin network. [**This post**](https://filecoin.io/blog/posts/longhash-ventures-demo-day-defi-consumer-tech/) profiles the startups building DeFi and consumer tech solutions with or on Filecoin’s technology: Atomica, Ownership Labs, Sinso Technology, and Vera AI.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Mine</b></h3>
+## Mine
 
 <a href="https://docs.google.com/document/d/1GPfPPq-aphlH5c_hNfm9OIbvJ9AlmEQE-im4QDe5aUg/edit?usp=sharing"><img src="/uploads/05.webp" style="width:45%;margin-left:0%"></a>
 
@@ -74,7 +74,7 @@ The [**Filecoin MinerX Fellowship Program**](https://filecoin.io/blog/posts/file
 
 Calling all Filecoin miners! Help us improve ecosystem initiatives and community support by participating in this [**short survey**](https://filecoin-community.typeform.com/to/yTMkOLg8) — we’d be very grateful for your input. Thank you for your ongoing work to strengthen the community.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Store</b></h3>
+## Store
 
 <a href="https://www.producthunt.com/posts/nft-storage"><img src="/uploads/07.webp" style="width:40%;margin-left:0%"></a>
 
@@ -88,7 +88,7 @@ Calling all Filecoin miners! Help us improve ecosystem initiatives and community
 
 Today Forbes released [**an article**](https://www.forbes.com/sites/lawrencewintermeyer/2021/06/01/are-movies-and-streaming-the-next-frontier-for-nfts/?sh=3f72413b2b13) on video NFTs explaining that movies and streaming might be the next frontier for NFTs. The post highlights a core challenge with legacy blockchains - they cannot store data, which is why VideoCoin has teamed up with Filecoin to solve that problem. Read more about solving blockchain’s storage challenge for film NFTs, decentralizing video on the blockchain, and more [**here**](https://www.forbes.com/sites/lawrencewintermeyer/2021/06/01/are-movies-and-streaming-the-next-frontier-for-nfts/?sh=3f72413b2b13)**.**
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsyccjblb/"><img src="/uploads/meetup-2021-teal.webp" style="width:40%;margin-left:0%"></a>
 
@@ -102,7 +102,7 @@ On June 8th, join the Filecoin community for the June meetup which will be dedic
 
 Since the [**Filecoin v13 ‘HyperDrive’ Network upgrade announcement**](https://github.com/filecoin-project/community/discussions/74#discussioncomment-707228), the Filecoin community has been curious about what this upgrade means for the network as a whole. Therefore, we invite you to join us for an [**AMA**](https://app.sli.do/event/ggm7xqpx) on June 8th at 6pm PT | June 9th, 9am CST | 1am UTC, to have your most commonly asked HyperDrive questions answered - be sure to [**tune in**](https://app.sli.do/event/ggm7xqpx) with your questions ready!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Learn</b></h3>
+## Learn
 
 <a href="https://research.protocol.ai/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/"><img src="/uploads/snark-lock-icon.webp" style="width:20%;margin-left:0%"></a>
 
@@ -110,7 +110,7 @@ Since the [**Filecoin v13 ‘HyperDrive’ Network upgrade announcement**](https
 
 Looking for a guided dive into the cryptographic techniques of SnarkPack? [**This post**](https://research.protocol.ai/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/) exposes the inner workings of SnarkPack, a practical scheme to aggregate Groth16 proofs, a derivation of the Inner Pairing Product work of [**Bünz et al.**](https://eprint.iacr.org/2019/1177), and its application to Filecoin. It explains Groth16 proofs, the inner product argument, and the difference between the original IPP [**paper**](https://eprint.iacr.org/2019/1177) and our modifications. This post ends by showing the performance of our scheme and the optimizations we made to attain that performance.
 
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

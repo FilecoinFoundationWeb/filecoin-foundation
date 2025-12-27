@@ -21,7 +21,7 @@ title: Filecoin News 33
 
 ![](/uploads/filecoin-news-33.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://medium.com/@filecoingreen/introducing-the-filecoin-energy-dashboard-46d2cbe14d39"><img src="/uploads/144449134-38e41c06-9fb8-4b02-9f96-20f0c571cd67.webp" style="width:40%;margin-left:0%"></a>
 
@@ -53,7 +53,7 @@ For the Filecoin network’s one-year anniversary, the community decided to test
 
 The Filecoin network recently announced [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=36), a new extension to the protocol that will unlock 99% of the network’s 12 EiB capacity for data storage that currently stands in Committed Capacity sectors. SnapDeals are a lightweight way of updating these sectors with client data as opposed to the high-latency process required in the current implementation. An external [audit](https://github.com/filecoin-project/rust-fil-proofs/blob/06d2078a2c6af0886cb843cef2cc3fd474c74be7/audits/protocollabs-report-20211210.pdf) for SnapDeals was recently conducted ahead of a Q1 2022 launch.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 ### Techstars Filecoin Accelerator
 
@@ -65,7 +65,7 @@ Submit your applications for the TechStars Filecoin Accelerator by December 22nd
 
 Last month, the Filecoin Foundation came together to host its first-ever Governance Summit, a three-day series of meetings, brainstorming sessions, and design sprints. The Summit was designed to give the Foundation team an opportunity to deeply understand, analyze, and propose improvements to the mechanisms and processes of community governance. In case you missed the summit, catch up with the [event recap](https://filecoinfoundation.medium.com/recapping-filecoin-foundations-2021-governance-summit-93eff743edce).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://twitter.com/Filecoin/status/1470478506777792516?s=20"><img src="/uploads/screen-shot-2021-12-14-at-4-37-09-pm.webp" style="width:40%;margin-left:0%"></a>
 
@@ -79,13 +79,11 @@ Join the [NFT.Storage](https://nft.storage/) team on Wednesday, December 15th, f
 
 On Friday, December 17th at 10am PST, join Molly Mackinlay, IPFS & Filecoin Lead at Protocol Labs and Isaac Kato, Managing Director of the new Filecoin Techstars Accelerator program to discuss upcoming product and business opportunities within the Filecoin ecosystem and get your questions answered about the upcoming Filecoin Techstars Accelerator program! [Register.](https://www.crowdcast.io/e/filecoin-ama-molly/register)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>'Tis The Season 🎄</b></h3>
+## 'Tis The Season 🎄
 
 <a href="filecoin.io"><img src="/uploads/145918865-fcaf2f34-b298-4cfd-9cd5-525a11cc09e9.webp" style="width:100%;margin-left:0%"></a>
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

@@ -25,7 +25,7 @@ title: 了解去中心化存储的不同产品：Estuary、Web3.storage和NFT.st
 _template: blog_detail_ch
 ---
 
-## **Filecoin和IPFS**
+## Filecoin和IPFS
 
 Filecoin是用于备份的去中心化存储体系，不过，存储在Filecoin区块链上的数据是哪里来的？其实，数据先是被添加到一个IPFS节点，让人们可以与存储服务提供者商议有关将信息存储在Filecoin上的事宜。
 
@@ -39,13 +39,13 @@ IPFS是一个分布式的系统，用于存储和访问文件、数据和应用�
 
 要了解Filecoin和IPFS的互动机制，可以从各类网关系统开始，如[**Estuary**](http://estuary.tech)**，** [**Web3.storage**](http://web3.storage)**，** 和[**NFT.storage**](http://nft.storage)**.**
 
-## **为什么有三种不同的存储产品？**
+## 为什么有三种不同的存储产品？
 
 实际上，这三种网关所做的事情是相似的。它们作为中介接收将要存储到IPFS系统上的数据，收集CID标识，并为用户创造合约提供渠道以让其存储数据到Filecoin链上。
 
 如果它们提供的功能是相同的，为什么我们需要三类产品呢？其实，每一种解决方案都是为特定目的和受众设计的。为了真正了解各自的功能，我们需要详细检视。
 
-### **Estuary**
+### Estuary
 
 [Estuary](http://estuary.tech)是一种让开发者自动化往IPFS网络和Filecoin网络上投入存储空间的方式。它是一个整合了Filecoin库的简单IPFS节点，让人们更容易使用与IPFS和Filecoin区块链互动所需的功能。Estuary专注于达成Filecoin网络上的大体量存储交易提议，同时又支持IPFS开发者所知晓的开发者体验。
 
@@ -61,7 +61,7 @@ Estuary使用IPFS pinning标准，因此切换到现有的其他解决方案是�
 
 [可以探索Estuary](https://estuary.tech/)或[了解更多](https://filecoin.io/blog/posts/taking-a-look-at-estuary/)。
 
-### **Web3.storage**
+### Web3.storage
 
 [Web3.storage](http://web3.storage)是另一类用于与IPFS网络和Filecoin区块链互动的网关类型。与Estuary类似，这个服务提供了在IPFS系统上存储数据的方式。它为用户提供了访问IPFS网络、存储数据和免费取回数据的方式。
 
@@ -75,7 +75,7 @@ IPFS与Estuary的整合需要一些准备措施，不过Web3.storage为用户提
 
 [访问web3.storage](http://web3.storage)或[了解更多](https://filecoin.io/blog/posts/introducing-web3-storage/)。
 
-### **NFT.storage**
+### NFT.storage
 
 虽然非同质代币（NFT）已经成为当前互联网的最热话题，但在网上存储NFT对用户来说还是挺麻烦的。[NFT.storage](http://nft.storage)是一个在IPFS网络上存储NFT的专用接口，它会自动将内容复制到Filecoin区块链上。
 
@@ -87,7 +87,7 @@ NFT.storage使用了Estuary和Web3.storage这类服务的很多存储细节特�
 
 [探索nft.storage](http://nft.storage)或[了解更多](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/)。
 
-## **如何选择？**
+## 如何选择？
 
 ![Estuary vs. Web3.storage vs. NFT.storage](/uploads/nftstorage-web3storage-estuary-comparison.webp)
 

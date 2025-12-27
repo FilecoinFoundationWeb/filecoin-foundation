@@ -33,6 +33,8 @@ title: Filecoin测试网奖励计划
 
 “区域”指的是六大洲，其中不包括南极洲。我们按照此[清单](https://unstats.un.org/unsd/methodology/m49/)来确定一个国家属于哪个洲。名列前茅的矿工们将瓜分以下总奖励池的奖励：
 
+<!-- markdownlint-disable MD060 -->
+
 | FIL奖励总量（全球奖励池） | 全球网络存储容量 |
 | ------------------------- | ---------------- |
 | 100k                      | 5PiB             |
@@ -50,6 +52,8 @@ title: Filecoin测试网奖励计划
 | 100k                      | 1PiB             |
 | 250k                      | 5PiB             |
 | 500k                      | 10PiB            |
+
+<!-- markdownlint-enable MD060 -->
 
 举例计算如下：
 

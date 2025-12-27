@@ -21,7 +21,7 @@ title: Filecoin News 46
 
 ![](/uploads/filecoin-news-46.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://fvm.filecoin.io/"><img src="/uploads/fvm.webp" style="width:40%;margin-left:0%"></a>
 
@@ -29,7 +29,7 @@ title: Filecoin News 46
 
 The v16 network upgrade, codenamed Skyr, happened today, Wednesday, July 6th at 1400 UTC! This upgrade transitioned the Filecoin network to running its core logic on the Wasm-based [Filecoin Virtual Machine](https://fvm.filecoin.io/). This upgrade represents the most dramatic transformation of the Filecoin network since its inception nearly two years ago, and is the first step towards unlocking user programmability on Filecoin. Stay tuned for more updates on the upgrade on the [Filecoin Twitter](https://twitter.com/Filecoin) and [Filecoin blog](http://filecoin.io/blog) later this week.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://filecoin.io/blog/posts/how-to-become-a-green-storage-provider/"><img src="/uploads/green-storage-provider.webp" style="width:35%;margin-left:0%"></a>
 
@@ -50,7 +50,7 @@ The Protocol Labs Engineering and Research Workgroup met for its June 2022 All H
 The first major IRL meetup of the Filecoin community happened in Austin on June 8th. At the event, Molly McKinlay shared what’s next for the network after a 500% YoY growth in data onboarding.
 Let her walk you through the roadmap and recent improvements to Filecoin storage and retrieval on this [recording](https://www.youtube.com/watch?v=u-aJexVe2qg) of her presentation.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <img src="/uploads/fil-toronto-1.webp" style="width:40%;margin-left:0%">
 
@@ -60,7 +60,7 @@ The FIL Toronto Summit, a collaborative three-day event collectively hosted by t
 
 <a href="https://www.meetup.com/orbit-community-program-nairobi-kenya/events/286614294/"><img src="/uploads/nft-data.webp" style="width:35%;margin-left:0%"></a>
 
-### NFT Data Storage Meetup in Nairobi
+### NFT Data Storage Meetup in Nairobi, Kenya
 
 On July 9th, the Filecoin community in Nairobi, Kenya will be getting together for an [NFT Data Storage Meetup](https://www.meetup.com/orbit-community-program-nairobi-kenya/events/286614294/). The event will be the second edition of Filecoin Orbit gatherings in the city and will aim to educate participants on current NFT storage mechanisms and how metadata is stored on IPFS. Don’t miss out on this learning opportunity and pick up some Filecoin swag while you’re at it. [Register now](https://www.meetup.com/orbit-community-program-nairobi-kenya/events/286614294/)!
 
@@ -82,7 +82,7 @@ Protocol Labs and the Filecoin Foundation are proud sponsors of the Sustainable 
 
 Over a thousand Web3 enthusiasts will be joining members of the Filecoin community for the FIL-Singapore Summit happening from August 16th-19th. The summit will gather the ecosystem to celebrate the amazing progress in the ecosystem and a look ahead to the exciting future of the network. You can expect to hear from world-class speakers, join side events and meetups, and participate in challenging hackathons. Grab your early bird tickets now or [sign up](https://docs.google.com/forms/d/e/1FAIpQLSdtEtC0oAYdGDqw0csPyeIY3NgT1qm0YmZkX_wNY794HpiVUQ/viewform) to host your own workshop or meetup at the event.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filecoin.io/blog/posts/make-lightning-fast-storage-deals-with-boost-v1.0/"><img src="/uploads/lightning-fast.webp" style="width:40%;margin-left:0%"></a>
 
@@ -96,7 +96,7 @@ Boost v1.0.0 has officially landed! Boost is a new, standalone replacement for t
 
 Lighthouse is a facilitator of permanent file storage on the Filecoin Network where users only pay once and their files are stored forever. Traditionally, users need to keep track and pay for their files after a fixed amount of time. Lighthouse manages this for them by moving from a rent-based cost model to a permanent ownership model. [Read along](https://filecoin.io/blog/posts/lighthouse-makes-permanent-storage-on-filecoin-easy-and-affordable/) to find out more about how it works and how it uses Filecoin and IPFS.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Hackathons</b></h3>
+## Hackathons
 
 <a href="https://fil.org/events/"><img src="/uploads/hackathons.webp" style="width:40%;margin-left:0%"></a>
 
@@ -107,9 +107,7 @@ Summer is here and there’s a lot to do for web3 developers and teams looking t
 - Collaborate with Web3 game developers around the world at [BlockJam](https://globalblockjam.com/) which kicked off on June 18th and will continue until July 10th.
 - Join ETHGlobal and the Protocol Labs community for the third annual HackFS from July 8th-23rd.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

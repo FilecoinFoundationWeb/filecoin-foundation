@@ -21,15 +21,17 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 54
 ---
 
-![](/uploads/fall-2022-stats-update.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+![](/uploads/fall-2022-stats-update.webp)
+
+## Announcements
 
 <img src="/uploads/radius-1.webp" style="width:40%;margin-left:0%">
 
-### Radius Fellowship: FVM
+## Radius Fellowship: FVM
 
 FVM promises to unlock a wave of inspiring new use cases in web3 by combining smart contracts with provable storage. Want to learn how to build on FVM? Apply today for the Radius Fellowship, a cohort-based engineering fellowship to train builders on FVM, make friends, and support you in applying for FVM grant funding. Taught by Protocol Labs’ former Head of Product Pooja Shah, and supported by Protocol Labs and the FVM core team.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://www.youtube.com/playlist?list=PL_0VrY55uV1-hCvLM5thswOJwZ3Iwfzg_"><img src="/uploads/fcoinq3.webp" style="width:40%;margin-left:0%"></a>
 
@@ -49,7 +51,7 @@ Protocol Labs’ mission is to drive breakthroughs in computing technology and p
 
 [**FilSwan**](https://filswan.com/homepage/) announced that [**multichain.storage**](https://multichain.storage/) (MCS), a cross-chain Filecoin storage gateway, has integrated [**Chainlink Price Feeds**](https://data.chain.link/) on the Polygon mainnet. MCS enables users to pay for Filecoin storage with stablecoins and backup their data on up to 5 Filecoin nodes. The addition of Chainlink Price Feeds will provide more accurate and time-sensitive market data on FIL/USD and USDC/USD pairs when swapping tokens for cross-chain storage. Find out more on the [**FilSwan blog**](https://filswan.medium.com/filswan-integrates-chainlink-price-feeds-to-help-secure-multi-chain-storage-payments-f0bdaac84233). FilSwan currently provides 10GB of free storage space for each user, so give the new integration a try!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://www.youtube.com/watch?v=10TVAH_bseY&t=4s"><img src="/uploads/shark.webp" style="width:40%;margin-left:0%"></a>
 
@@ -57,7 +59,7 @@ Protocol Labs’ mission is to drive breakthroughs in computing technology and p
 
 The new [**Filecoin Network Version 17**](https://github.com/filecoin-project/community/discussions/74?sort=top#discussioncomment-3825422) is another important upgrade that’s just around the corner. Codenamed ‘Shark’, it represents a step towards FVM-enabled smart contracts that will open the door to user-programmable storage markets. The Lotus team put together a high level overview of the update and took questions from the community in an AMA session on October 20th. [**Check out the recording**](https://www.youtube.com/watch?v=10TVAH_bseY&t=4s) with all the details.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 ### LabWeek22 is happening now
 
@@ -89,9 +91,7 @@ Join the Filecoin community to celebrate the anniversary of the mainnet launch f
 
 We’re less than a month away from the exciting project presentations by the 9th cohort of the Filecoin Demo Day at LongHashX Accelerator. On November 9th, 10 “acceleratees” will present what they’ve worked on across verticals like Zero-knowledge DID, NFT tooling, data DAOs, and more. Don’t miss out and [**sign up now**](https://lu.ma/LHXC9DemoDay)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

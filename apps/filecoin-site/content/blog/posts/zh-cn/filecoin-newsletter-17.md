@@ -27,7 +27,7 @@ _template: blog_detail_ch
 
 ![](/uploads/filecoin-news-17.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>创建</b></h3>
+## 创建
 
 <a href="https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii"><img src="/uploads/accelerator-rocket-purple.webp" style="width:18%;margin-left:0%"></a>
 
@@ -53,13 +53,13 @@ MetaMask的这个版本是一个特殊的开发者版本，它通过即将推出
 
 <img src="/uploads/hackathon-tools-filcoin-ipfs.webp" style="width:25%;margin-left:0%"></a>
 
-### IPFS & Filecoin 3月份开发进展
+### I PFS & Filecoin 3月份开发进展
 
 在过去的两个月中，Protocol Labs参加了五场基于IPFS和Filecoin的不同黑客松活动，受众范围从大学建设者到游戏设计师，再到区块链黑客松。
 
 Chainlink的春季黑客松活动在3月初启动，本月中旬结束。紧接着Gamedev.js JAM 2021启动，IPFS在其活动中赞助了一个特殊的去中心化轨道。Cal Hacks为期周末两天的 hello:world 活动也在Scaling Ethereum上同步启动，此活动由ETHGlobal举办，专注于为Ethereum区块链开发强大基础设施。本月度最后一个活动是同样为期周末两天的ASUC’s CivHacks大学活动，其目标是利用技术完善社会公益和公民宣传。欲知更多活动细节和未来黑客松活动的更新和公告，敬请查看IPFS博客。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>存储</b></h3>
+## 存储
 
 <a href="https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/"><img src="/uploads/fil-blog-nft-storage-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -75,7 +75,7 @@ NFT.Storage让开发者可以轻松、安全、免费地将NFT数据存储在去
 
 上个月，我们宣布**VideoCoin**正将其去中心化视频处理网络与Filecoin整合，以打造第一个专门用于创建和交易NFT的平台。在此现场演示中，你将确切地了解到本次整合如何运作，包括如何创建和存储视频NFT及其所有权证明，预览NFT平台和用户界面，以及如何检索所有权证明并证明其可行性。[**点此**](https://medium.com/videocoin/the-first-videonft-on-videocoin-filecoin-live-demo-91a305509b34)现在观看。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>挖矿</b></h3>
+## 挖矿
 
 <a href="https://filecoinfoundation.medium.com/join-us-for-filecoin-plus-day-a06b9c4acf85"><img src="/uploads/filecoin-plus-logo.webp" style="width:20%;margin-left:0%"></a>
 
@@ -91,7 +91,7 @@ Filecoin Plus旨在激励Filecoin network中的有效存储，请加入我们在
 
 2021年4月29日，Filecoin网络升级至第12版。本次升级引入了[**第4版**](https://github.com/filecoin-project/specs-actors/releases/tag/v4.0.0)的[**specs-actors implementation**](https://github.com/filecoin-project/specs-actors)，这是一套明确了Filecoin协议规则的内置actors。新版本specs-actors的设计初衷是通过更好的性能来加速区块验证的时间。欲知更多关于此次升级、背后动机和性能更新的信息，请查看我们近期的[**博文**](https://filecoin.io/blog/posts/filecoin-network-v12/)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>社区</b></h3>
+## 社区
 
 <a href="https://www.meetup.com/Filecoin-San-Francisco/events/276433306/"><img src="/uploads/meetup-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -99,7 +99,7 @@ Filecoin Plus旨在激励Filecoin network中的有效存储，请加入我们在
 
 加入Filecoin社区并参加5月18日的社区聚会，本次聚会完全专注于所有的NFT，包括来自VideoCoin、Fleek等更多人的演讲！Filecoin社区聚会是结识Filecoin生态中工具和项目缔造者的好机会。如果错过了四月聚会，[**观看回放**](https://youtu.be/zjtsnqNjIfo)了解详情，并确保[**注册**](https://www.meetup.com/Filecoin-San-Francisco/events/276433306/)参加下次聚会！
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>学习</b></h3>
+## 学习
 
 <a href="https://aave.com/"><img src="/uploads/aave.webp" style="width:25%;margin-left:0%"></a>
 
@@ -115,7 +115,7 @@ Filecoin Plus旨在激励Filecoin network中的有效存储，请加入我们在
 
 有兴趣进一步了解Filecoin、IPLD或libp2p吗？观摩[ProtoSchool的自我指导互动教程](https://proto.school/)，了解去中心化的网络概念、协议和工具。选择你的主题，并以适合你的形式跟踪你的进展。在你的网络浏览器中完成JavaScript代码挑战，或者坚持使用我们基于文本或者更多选择的教程，以获得无代码的体验。
 
-<h3 style="margin:2em 0 0 0">✊ 快来参与</h3>
+## ✊ 快来参与
 
 前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)，也别错过[**社区资源**](https://github.com/filecoin-project/community)。可以通过[**Filecoin Slack**](http://filecoin.io/slack)提问，[**社区论坛**](https://discuss.filecoin.io/)中讨论问题和新想法，或[**在Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们你的想法。
 

@@ -26,7 +26,7 @@ title:
 
 ![](/uploads/e9f6c627-4f26-8443-cd67-2771ac872469.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
+## Build
 
 ### Wave 8 Dev Grants
 
@@ -40,7 +40,7 @@ The IPFS and Filecoin communities are excited to announce the [**Browsers 3000 H
 
 It kicks off with a one day summit with speakers from your favorite browser makers and other projects building browser infrastructure for web3 and P2P technologies today, and will include workshops and presentations up until the show-and-tell demo and awards ceremony in September. [**Visit the Browsers 3000 website to learn more and sign up to be notified when registration opens!**](https://fil.org/events/)
 
-<h3 style="padding-top: 20px;">Filecoin Next Step Microgrants</h3>
+### Filecoin Next Step Microgrants
 
 [**Filecoin Next Step Microgrants**](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md) are now available to support taking the Next Step after building an initial prototype with Filecoin. They are offered with the understanding that decentralized technologies are a rapidly developing field with many unknowns. Next Step Microgrants seek to match the pace, breadth, and experimental nature of this work. These grants are intended for independent developers, small studios, non-profits, activists, researchers... and you! Next Step Microgrants are awarded in the amount of $5,000, paid in FIL tokens. The entire grant amount be used to support work related to integrating or improving Filecoin, such as developer time, hosting services, relevant hardware, etc. To learn more about the program qualifications, timelines, FAQ, and how to apply, [**read here**](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md).
 
@@ -50,7 +50,7 @@ It kicks off with a one day summit with speakers from your favorite browser make
 
 Join the Filecoin track at [**ETHOdyssey**](https://ethodyssey.devfolio.co/), a Global Ethereum hackathon that is part of the ETHIndia Online series. With more eyes on the ecosystem than ever before, this is an unparalleled opportunity to build the decentralized applications that the masses will use. A total of $25k in bounties are offered at this event and applications close in two days - [**learn more and apply**](https://ethodyssey.devfolio.co/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Store</b></h3>
+## Store
 
 <a href="https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/"><img src="/uploads/opensea.webp" style="width:40%;margin-left:0%"></a>
 
@@ -58,7 +58,7 @@ Join the Filecoin track at [**ETHOdyssey**](https://ethodyssey.devfolio.co/), a 
 
 [**OpenSea**](https://opensea.io/) recently [**launched**](https://opensea.io/blog/announcements/decentralizing-nft-metadata-on-opensea/) a feature to “freeze” NFT metadata, enabling NFT creators to properly decentralize their NFTs using IPFS and Filecoin. OpenSea is one of the largest NFT marketplaces in the web3 space, creating a market for millions of NFTs today. Using IPFS and Filecoin, NFT creators that use OpenSea can now create immutable NFT metadata using IPFS [**content addressing**](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) and [**provable and decentralized storage with Filecoin**](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/). [**Learn more.**](https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Mine</b></h3>
+## Mine
 
 <a href="https://filecoinfoundation.medium.com/supporting-the-community-the-filecoin-mining-working-group-4bd5f289cbea"><img src="/uploads/mining.webp" style="width:40%;margin-left:0%"></a>
 
@@ -74,11 +74,11 @@ Recently, the Filecoin community hosted the [**Retrieval Market Builders Mini-Su
 
 <a href="https://filecoin-community.typeform.com/to/yTMkOLg8"><img src="/uploads/survey-icon.webp" style="width:20%;margin-left:0%"></a>
 
-### **Mining Energy Questionnaire**
+### Mining Energy Questionnaire
 
 Calling all Filecoin miners - we are still looking for community members to complete the [Filecoin Mining Energy Questionnaire](https://filecoin-community.typeform.com/to/yTMkOLg8). Help us improve ecosystem initiatives and community support by participating in this [short survey](https://filecoin-community.typeform.com/to/yTMkOLg8) - we’d be very grateful for your input. Thank you for your ongoing work to strengthen the community.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Updates</b></h3>
+## Updates
 
 <img src="/uploads/lotus.webp" style="width:20%;margin-left:0%"></a>
 
@@ -125,7 +125,7 @@ In the deep dive session, ZX highlighted:
 
 [**Watch the full video**](https://www.youtube.com/watch?v=w_mXFtBA-98) to learn more about HyperDrive on the Filecoin YouTube channel.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://medium.com/@vanessalosic/b89e1ec4ee46"><img src="/uploads/encode.webp" style="width:40%;margin-left:0%"></a>
 
@@ -146,9 +146,7 @@ Tune in on July 13th at 4pm PT for a meetup focused on new Filecoin miner progra
 
 Make sure to [**RSVP**](https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsycckbrb/) - see you there!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

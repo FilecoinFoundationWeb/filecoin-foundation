@@ -24,7 +24,7 @@ title: "Filecoin News 26: Filecoin Network capacity surpasses 10 EiB, and more!"
 
 ![](/uploads/filecoin-news-26.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <img src="/uploads/10eib-graphic.webp" style="width:40%;margin-left:0%">
 
@@ -38,7 +38,7 @@ Eleven months after mainnet launch, the Filecoin network is celebrating a major 
 
 [**Dapper Labs**](https://www.dapperlabs.com/) is integrating with Filecoin to spearhead the end-to-end ownership of NFTs, including the underlying media assets, and to establish best practices for the storage of NFT data. To jumpstart the collaboration, there will be grants available for the Flow ecosystem, starting with the Next Step Microgrant Program. Any project actively integrating with IPFS, Filecoin, or related services like Pinata or NFT.Storage can qualify for the grant, subject to five simple criteria. Review the grant criteria and [**apply**](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)! For more information on the integration and grants program, please [**read this post**](https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Store</b></h3>
+## Store
 
 <a href="http://tachyon.xyz/"><img src="/uploads/filecoin-launchpad.webp" style="width:40%;margin-left:0%"></a>
 
@@ -46,7 +46,7 @@ Eleven months after mainnet launch, the Filecoin network is celebrating a major 
 
 Registrations are now open for Filecoin Launchpad Accelerator II Demo Day, powered by Tachyon. Tune in to get a first look at projects from some of the most ambitious web3 founders building companies in DeFi, NFTs, gaming, social, and in the Metaverse. Join us on Tuesday, September 21st at 11am ET, [**reserve your spot**](http://tachyon.xyz/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filecoin.io/blog/posts/taking-a-look-at-estuary/"><img src="/uploads/estuary.webp" style="width:40%;margin-left:0%"></a>
 
@@ -60,7 +60,7 @@ The Filecoin network is a breakthrough in decentralized storage network infrastr
 
 Storage providers are at the heart of [**Filecoin**](https://filecoin.io/)’s decentralized storage network, which is why [**BUIDL Labs**](https://buidllabs.io/) has created **DataStation**, a platform that focuses on storage providers’ information and aims to provide quantitative and qualitative data about storage providers in an easy to understand manner. DataStation will also provide users with a more simplified way to choose a Storage Provider according to their specific needs. Learn more about what is in it for the users and how DataStation works in [**this post**](https://medium.com/buidl-labs/datastation-enhancing-the-experience-of-decentralised-storage-on-filecoin-79e8807b854d).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Storage Providers</b></h3>
+## Storage Providers
 
 <a href="https://filecoin-community.typeform.com/to/yTMkOLg8"><img src="/uploads/lotus-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -79,13 +79,13 @@ The goal of the Storage Provider Bounty Board is to:
 
 Visit the [**Storage Provider Bounty Board panel**](https://github.com/filecoin-project/community/projects) on the Filecoin Project GitHub to check bounty progress and find open issues. To learn more about the board, read this [**blog post**](https://filecoinfoundation.medium.com/introducing-the-storage-provider-bounty-board-b98eace44dd0).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 ### Filecoin Community Event Grants
 
 There is still time left to apply for the [**Filecoin community event grants**](https://filecoin-community.typeform.com/to/B9XpG9ep)! This grants program will consist of a series of small grants to help cover costs incurred in organizing community events from October 18-22nd in celebration of the first anniversary of Filecoin Mainnet launch. To apply please complete [**this form**](https://filecoin-community.typeform.com/to/B9XpG9ep) by September 10th at 11:59pm PT.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 ### Announcing Asia Hackathon Season 2021
 
@@ -116,7 +116,7 @@ Join the Filecoin community for another exciting meetup focused on Storage Provi
 
 Be sure to [**RSVP**](https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsyccmbsb/) and add it to your calendar. See you there!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Learn</b></h3>
+## Learn
 
 <a href="https://medium.com/encode-club/encode-filecoin-club-pinning-services-with-pinata-video-slides-72b2b37ff1bf"><img src="/uploads/encode-club-pinata.webp" style="width:40%;margin-left:0%"></a>
 
@@ -124,9 +124,7 @@ Be sure to [**RSVP**](https://www.meetup.com/Filecoin-San-Francisco/events/dcqjf
 
 Last week, the [**Encode Filecoin Club**](https://www.encode.club/filecoin-educate) hosted Matt Ober, Co-Founder and CTO of Pinata for a session introducing students and hackers to pinning with Pinata. In the hour-long session, Matt demonstrated how to pin data to IPFS and then retrieve the content. [**Watch the full presentation**](https://medium.com/encode-club/encode-filecoin-club-pinning-services-with-pinata-video-slides-72b2b37ff1bf).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

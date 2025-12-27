@@ -23,7 +23,7 @@ title: Filecoin News 44
 
 ![](/uploads/filecoin-news-44.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://filecoin.io/blog/posts/funding-opportunity-for-public-goods-in-the-filecoin-ipfs-ecosystem/"><img src="/uploads/story1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -31,7 +31,7 @@ title: Filecoin News 44
 
 The Protocol Labs community participates in the next Gitcoin Grants Matching Round, happening June 8th-23rd, to help fund public and network goods in the greater Protocol Labs (IPFS / Filecoin) ecosystem using Quadratic Funding. Submissions are possible for one more week and voting starts tomorrow, Wednesday June 8th. Learn more about it on the [Filecoin blog](https://filecoin.io/blog/posts/funding-opportunity-for-public-goods-in-the-filecoin-ipfs-ecosystem/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://filecoin.io/blog/posts/a-public-goods-experiment-on-filecoin-retroactively-funding-impact-with-quadratic-voting/"><img src="/uploads/networkgoods.webp" style="width:40%;margin-left:0%"></a>
 
@@ -59,7 +59,7 @@ The Filecoin Foundation and co:rise have partnered to offer a software engineeri
 
 The Block Research was commissioned by W3BCLOUD on a primer covering decentralized storage. It covers Filecoin and IPFS’s role in establishing blockchain-enabled storage services as a new standard over the past decade. Learn more about the core technologies, economic systems, and ecosystem developments that define these protocols. The primer is available on [The Block](https://www.theblockcrypto.com/post/149172/decentralized-storage-a-primer-commissioned-by-w3bcloud).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filecoin.io/blog/posts/understanding-filecoin-data-aggregators-for-storage-providers/"><img src="/uploads/170366980-78f835fb-8168-4914-9a75-d62b1a157133_hucb442e6c1c91856b73a6a8f0b7cfb391_272760_2000x0_resize_q90_linear.webp" style="width:40%;margin-left:0%"></a>
 
@@ -67,7 +67,7 @@ The Block Research was commissioned by W3BCLOUD on a primer covering decentraliz
 
 The Filecoin ecosystem has an expansive set of tools that are designed to provide accurate information about the network and let participants be active in more effective ways. Many of these are independently developed and maintained by the community and serve the specific needs of different components of the Filecoin island economy. For Storage Providers, analytics and data aggregation are important resources. Find out how to make the best use of them on the Filecoin [blog](https://filecoin.io/blog/posts/understanding-filecoin-data-aggregators-for-storage-providers/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <img src="/uploads/foundation.webp" style="width:40%;margin-left:0%">
 
@@ -128,9 +128,7 @@ Summer is here and there’s a lot to do for brilliant developers and teams look
 - Collaborate with Web3 game developers around the world at [BlockJam](https://globalblockjam.com/) starting June 18th.
 - Be sure to apply to New York’s premier blockchain hackathon, [ETH New York](https://nyc.ethglobal.co/), from June 24th-26th.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

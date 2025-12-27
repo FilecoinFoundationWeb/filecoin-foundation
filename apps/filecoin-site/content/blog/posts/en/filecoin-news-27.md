@@ -25,7 +25,7 @@ title:
 
 ![](/uploads/filecoin-news-27.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://www.mona.gallery/"><img src="/uploads/create.webp" style="width:40%;margin-left:0%"></a>
 
@@ -33,7 +33,7 @@ title:
 
 Just announced, the [**MoNA Gallery**](https://www.mona.gallery/) is live! MoNA is bringing together creators, collectors, and investors to build the world of NFT art. Design your gallery and [**submit it to MoNA**](https://airtable.com/shrctUmm0fdr2gEtP) to launch your collection to the world. [**Visit to explore 3D spaces**](https://www.mona.gallery/) of top NFT collectors like Taylor WTF, Dario, KidNimbus, and more.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filecoin.io/blog/posts/decentralized-storage-estuary-web3.storage-and-nft.storage/"><img src="/uploads/decentralized-storage_hu560acc3b2bf52f5c764723e70a83f8f7_318054_1500x0_resize_q90_linear.webp" style="width:40%;margin-left:0%"></a>
 
@@ -47,7 +47,7 @@ Estuary, Web3.Storage, and NFT.Storage are all gateway systems that act as inter
 
 Filecoin is a decentralized network that allows for storing data accessible from virtually anywhere. The other side of this equation is IPFS, web3’s file system for handling storage and retrieval of data across the web for developers. IPFS and Filecoin are complementary systems, and the ecosystem has developed tools like Textile and Estuary to help them work together.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Storage Providers</b></h3>
+## Storage Providers
 
 <a href="https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/"><img src="/uploads/data-gravity-filecoin-sales-referral-program-1_huf4a9f1f6cc990112aa05a3b527ec0cb7_1611845_1500x0_resize_q90_linear.webp" style="width:40%;margin-left:0%"></a>
 
@@ -64,7 +64,7 @@ Last month, the first Storage Provider Public Meeting was held by Filecoin Found
 
 You can watch the presentation on the [Filecoin Foundation Youtube channel.](https://youtu.be/zGUIUVN75gA "Filecoin Foundation Youtube channel")
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 ### NerpaNet Deprecation Announcement
 
@@ -75,7 +75,7 @@ After thoughtful review regarding the usage and ongoing issues with nerpanet, th
 
 That said, these problems and your community involvement have pointed to a new approach for devnets. Next, the NetOps team at Protocol Labs is building new and easy-to-use tools for spinning up devnets, and will be releasing them along with a runbook to the community for your own use. If you have any requests or ideas, please chime in on [**this discussion**](https://github.com/filecoin-project/community/discussions/303)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 ### Messari Mainnet
 
@@ -111,7 +111,7 @@ Inviting NFT and blockchain developers of all experience levels to [**apply to c
 
 Believe it or not, it’s been a year since Filecoin mainnet launch, and there’s a lot planned to celebrate one year in orbit. Stay tuned for more details coming soon!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Learn</b></h3>
+## Learn
 
 <a href="https://drand.love/blog/2021/09/14/the-value-of-drand/"><img src="/uploads/drand.webp" style="width:40%;margin-left:0%"></a>
 
@@ -121,9 +121,7 @@ Drand is a distributed randomness beacon supported by Protocol Labs that provide
 
 We asked the League of Entropy members: “What’s the value of drand for you, and why do you support it?” Check out what they said! [**Learn more**](https://drand.love/blog/2021/09/14/the-value-of-drand/) about drand, the LoE, and the vision for verifiable randomness in Web3.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

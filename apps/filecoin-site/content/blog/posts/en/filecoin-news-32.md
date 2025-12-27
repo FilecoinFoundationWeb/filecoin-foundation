@@ -21,7 +21,7 @@ title: Filecoin News 32
 
 ![](/uploads/filecoin-news-32.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://github.com/filecoin-project/devgrants/issues/new?assignees=&labels=&template=open-grant-application.md&title="><img src="/uploads/grants.webp" style="width:40%;margin-left:0%"></a>
 
@@ -39,7 +39,7 @@ The Web3 Infrastructure section showcased the teams building the foundational to
 
 The Gaming and Metaverse portion of demo day showcased projects including: MoNA Gallery for 3D NFT display, HuddIn for NFT collaboration, Inflow Music for artist monetization, Blockbets Corp to help gamers earn, and 0x Essential for additional NFT functionality. [Check out the Metaverse projects here](https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-gaming-and-the-metaverse/)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Storage Providers</b></h3>
+## Storage Providers
 
 <a href="https://www.youtube.com/watch?v=zGUIUVN75gA"><img src="/uploads/filecoinfoundation.webp" style="width:40%;margin-left:0%"></a>
 
@@ -47,7 +47,7 @@ The Gaming and Metaverse portion of demo day showcased projects including: MoNA 
 
 On Wednesday, December 1, at 10 AM ET/ 7 AM PT, the Filecoin Foundation is hosting its second Storage Provider Public Meeting to update the community on news related to storage providers. Interested in storage provider updates on Filecoin projects, or latest updates relevant to storage providers? Please join us! Email Vanessa Sugiarto (vanessa@fil.org) for registration information. You can also watch the [recap of the last session](https://www.youtube.com/watch?v=zGUIUVN75gA).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://medium.com/vivid-labs/introducing-vivid-open-open-source-nft-marketplace-14aca6f0f4a8"><img src="/uploads/unnamed-1.webp" style="width:40%;margin-left:0%"></a>
 
@@ -67,7 +67,7 @@ The new Filecoin Ecosystem Accelerators Calendar is updated and live! [Subscribe
 
 The November Filecoin Community Meetup happened on November 16th. Catch up with the community and what’s been going on in the Filecoin ecosystem [here](https://www.youtube.com/watch?v=FghO20DdEgg) and stay tuned for more details on future meetups.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 ### BUIDL IT by Polygon
 
@@ -79,9 +79,7 @@ India’s biggest Web3 hackathon is underway! BUIDL IT, presented by Polygon, is
 
 Eager to stay on top of all the hackathon opportunities across the Protocol Labs ecosystem? [The Filecoin and IPFS Hackathon](https://fil.org/events/) portal is the best way to stay on top of past, current, and upcoming events.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

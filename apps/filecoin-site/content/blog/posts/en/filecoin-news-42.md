@@ -23,7 +23,7 @@ title: Filecoin News 42
 
 ![](/uploads/filecoin-news-42.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://filecoin.io/blog/posts/building-worlds-not-walls-with-mona/"><img src="/uploads/mona-blog-header.webp" style="width:40%;margin-left:0%"></a>
 
@@ -59,7 +59,7 @@ Last week the Filecoin community gathered for the FIL+ Notary Governance to disc
 
 One of the biggest challenges in Big Data today is how to process growing datasets efficiently and quickly while managing costs. A project codenamed Bacalhau is taking on this challenge to bring data processing to the nodes where it is stored on Filecoin and give researchers and data engineers the ability to publicly reproduce data pipelines. Learn more about the project on [GitHub](https://github.com/filecoin-project/bacalhau) and [reach out](https://forms.gle/roiz5spfKBtNUbXU6) to the team if you’re part of the scientific community and would like to provide feedback. You can also join the Bacalhau community’s Slack channels [#bacalhau](https://filecoinproject.slack.com/archives/C02RLM3JHUY) and [#bacalhau-scientific-community](https://filecoinproject.slack.com/archives/C03DXJNMMK2).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filecoin.io/blog/posts/tools-for-building-consumer-applications-with-filecoin/"><img src="/uploads/consumerapps.webp" style="width:40%;margin-left:0%"></a>
 
@@ -67,7 +67,7 @@ One of the biggest challenges in Big Data today is how to process growing datase
 
 You no longer need to have to know the nitty-gritty details of how to set up a Lotus node or make storage deals in order to build applications that take advantage of the Filecoin network. A growing number of tools are making it easy for teams and developers to build solutions that benefit consumers and give them access to decentralized storage. Explore which ones you can leverage to store standard application or NFT data via APIs or store large scale data for your own applications on the [Filecoin blog](https://filecoin.io/blog/posts/tools-for-building-consumer-applications-with-filecoin/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 ### A Chat About the Filecoin Network Indexer
 
@@ -101,9 +101,7 @@ Registration for FIL Austin is still open! On Wednesday, June 8th, the Filecoin 
 
 Over a thousand Web3 enthusiasts will be joining members of the Filecoin community for FIL-Singapore Summit, happening from August 16th-19th. The event will be a celebration of all the amazing progress in the ecosystem and a look ahead to the exciting future of the network. You can expect to hear from world-class speakers, join side events and meetups, and participate in challenging hackathons. [Sign up](https://docs.google.com/forms/d/e/1FAIpQLSdtEtC0oAYdGDqw0csPyeIY3NgT1qm0YmZkX_wNY794HpiVUQ/viewform) now to host your own workshop or meetup at the event and read more on the Filecoin [blog](https://filecoin.io/blog/posts/announcing-fil-singapore-summit/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

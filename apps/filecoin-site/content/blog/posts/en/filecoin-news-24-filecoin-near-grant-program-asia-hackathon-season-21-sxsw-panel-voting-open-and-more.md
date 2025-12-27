@@ -28,7 +28,7 @@ title:
 
 ![](/uploads/filecoin-news-24.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
+## Build
 
 <a href="https://filecoin.io/blog/posts/filecoin-launches-collaboration-with-near-to-accelerate-the-growth-of-the-web3-stack/"><img src="/uploads/filecoin-near.webp" style="width:40%;margin-left:0%"></a>
 
@@ -64,7 +64,7 @@ The 2021 Wanxiang Blockchain Week started last week and goes through September 1
 
 Wanxiang Blockchain Week also marks the kick-off of the multi-event Asia Hackathon Season. The series will identify, accelerate, and highlight the incredible development work being done in Asia with the Filecoin and IPFS stacks. About $500,000 in prizes and grants will be available to teams, startups, projects, and entrepreneurs taking part. [**Register your email**](https://filecoin-community.typeform.com/to/scRusMWz) to stay in the loop about the upcoming events in the series!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Store</b></h3>
+## Store
 
 <a href="https://web3.storage/"><img src="/uploads/web3-storage-card.webp" style="width:40%;margin-left:0%"></a>
 
@@ -78,7 +78,7 @@ Protocol Labs has launched [**Web3.Storage**](https://web3.storage/), a simple i
 
 The **ARG** at Protocol Labs has opened up more invites for [**Estuary**](https://estuary.tech/)’s Developer Preview. Estuary aims to be one of the most reliable ways to ensure data gets on to Filecoin with great default storage parameters and automatic verified storage deals. Estuary is an awesome tool for developers and people who want an intuitive interface to upload their public data to Filecoin. Check out [**this video**](https://youtu.be/AHAMHbpioGw) here for an introduction and join the ARG on Filecoin Slack if you need help.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Mine</b></h3>
+## Mine
 
 <a href="https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0018.md"><img src="/uploads/fil-sealing-graphic.webp" style="width:40%;margin-left:0%"></a>
 
@@ -90,7 +90,7 @@ This proposal describes a change to rebrand the existing ‘miner’ references 
 
 Filecoin auctions aim to drive better deal success, speed, and features through economics. Unlike the default deal-making flow on Filecoin, auctions bring miners to the deal stream and encourage them to compete, in real-time, for storage deals. In an emerging market like Filecoin, auctions make it easy for anyone who needs to store data to get great results.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Updates</b></h3>
+## Updates
 
 <a href="https://drand.love/blog/2021/08/10/drand-celebrates-one-year-as-a-randomness-service/"><img src="/uploads/drand-anniversary-card-2.webp" style="width:40%;margin-left:0%"></a>
 
@@ -117,7 +117,7 @@ Submission Deadline: 09/08/21
 Acceptance Notification: 09/22/21
 Workshop date: 10/06/21
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://panelpicker.sxsw.com/vote?search%5Bconference_id%5D=40"><img src="/uploads/sxsw-panel-picker.webp" style="width:40%;margin-left:0%"></a>
 
@@ -144,9 +144,7 @@ Voting is open for the 2022 SXSW panel picker! Check out the IPFS, Filecoin, and
 
 Thanks to all who joined the August Filecoin Community meetup focused on the Filecoin mining community. In this month’s episode, community members shared a new branding proposal for miners (FIP) and four miners spoke on best practices and their findings after deploying the latest Filecoin v13 HyperDrive upgrade. In case you missed it, [catch up on the recording](https://www.youtube.com/watch?v=OnQD8MnuaOI).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

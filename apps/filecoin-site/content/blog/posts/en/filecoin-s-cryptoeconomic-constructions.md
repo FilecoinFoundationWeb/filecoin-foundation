@@ -38,7 +38,7 @@ Today, we’re pleased to provide an overview of the cryptoeconomic structures t
 
 ![](/uploads/cyptoeconomic-chart.webp)
 
-### An overview of Filecoin’s economy
+## An overview of Filecoin’s economy
 
 There are five main actors in the Filecoin economy:
 
@@ -66,17 +66,17 @@ Most of Filecoin’s cryptoeconomic constructions are intended to ensure that st
 
 ## Cryptoeconomic Principles
 
-### Block reward basics
+## Block reward basics
 
 Filecoin storage miners receive block rewards based on their [**storage power**](https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/power/power_state.go). Storage power is a measurement of how much useful storage a Filecoin storage miner is providing to the network. At a high level, miners gain storage power by accepting clients’ files, publicly promising to store them for some duration, and repeatedly proving that they’re actually storing them over time.
 
 Economically, you can think of storage power like hash rate in a proof of work blockchain like Bitcoin. A miner receives block rewards in proportion to her storage power against the total storage power provided by all miners. For example, a miner maintaining 1 PiB of storage power against a total network size of 100 PiB would, on average, win one percent of block rewards over time.
 
-### Unique Filecoin innovations on block rewards
+## Unique Filecoin innovations on block rewards
 
 Filecoin needs to be a reliable and sustainable protocol over long timeframes. In a traditional proof-of-work blockchain, it doesn’t matter much if a given miner goes offline for a short time (or forever), since any miner can fungibly add new blocks to the chain. Filecoin miners also provide non-fungible useful services to their clients, so clients need strong guarantees that each storage miner will continue operating. Filecoin therefore includes many mechanisms to make great quality of service an economically rational choice for storage miners, and to encourage storage miners to promote the long-term health of the network.
 
-#### Network baselines
+### Network baselines
 
 Many blockchains reward tokens based on a simple exponential decay model. Under this model, block rewards are highest in the beginning, and miner participation is the lowest, so mining generates many tokens per unit of work early in the network’s life, then rapidly tails off.
 
@@ -84,7 +84,7 @@ Over many cryptoeconomic simulations, it became clear that the simple exponentia
 
 To encourage consistent storage onboarding and investment in long-term storage, not just rapid sealing, Filecoin introduces the concept of a [**network baseline**](https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/reward/reward_state.go). Instead of minting tokens based purely on elapsed time, block rewards instead scale up as total storage power on the network increases. This preserves the shape of the original exponential decay model, but softens it in the earliest days of the network. Once the network reaches a baseline, the cumulative block reward issued is identical to a simple exponential decay model, but at small network sizes, a portion of block rewards are deferred. The overall result is that Filecoin rewards to miners more closely match the utility they, and the network as a whole, provide to clients.
 
-#### Block rewards as collateral
+### Block rewards as collateral
 
 Storage miners add new data to the network in fixed amounts called **sectors**. When a storage miner adds a sector, she commits to storing it for a certain duration. This gives clients more certainty that stored data will be available for as long as it’s required.
 
@@ -96,15 +96,15 @@ If a miner goes offline for a day, she would lose a little from her locked funds
 
 Using block rewards to collateralize miners is another improvement gained from our cryptoeconomic simulations. Early models required miners to provide substantial up-front collateral for all their storage. However, this would have created a shortage of Filecoin around launch, when the total supply of tokens will be low and many miners will be attempting to join the network. By transferring some up-front costs to later block rewards, we were able to decrease the cost of entry for miners.
 
-### Aligning incentives for useful data storage
+## Aligning incentives for useful data storage
 
 Filecoin clients and storage miners operate in a dynamic system. At any given time, it’s unlikely that the demand for storage will exactly match supply. Early Filecoin constructions forced storage miners to choose between two bad options: waiting for client deals to arrive (meaning miners’ hardware would sit idle), or storing non-useful data in pursuit of block rewards (which decreases the network’s ability to store useful data). Filecoin introduces several mechanisms to ensure that miners who store client’s data are also maximizing the tokens they earn.
 
-#### Committed Capacity
+### Committed Capacity
 
 When a miner finds herself with no client data to store, she doesn’t have to let her hardware sit idle because of Filecoin’s [**committed capacity sectors**](https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go), proven but empty sectors demonstrating that the miner is ready to provide storage to clients. Committed capacity sectors verify that the miner has space available for client data, but can be upgraded to store client data at any time. This mechanism mitigates the miners’ need to choose between block rewards and client data – she can store committed capacity sectors right away to begin earning block rewards, then upgrade them at any time to store client data in exchange for deal fees.
 
-#### Verified Datasets
+### Verified Datasets
 
 Committed capacity sectors improve miners’ incentives to store client data, but they don’t solve the problem entirely. Storing real client files adds some operational overhead for storage miners. In certain circumstances – for example, if a miner values block rewards far more than deal fees – miners might still choose to ignore client data entirely and simply store their own self-generated data to increase their storage power as rapidly as possible in pursuit of block rewards. This would make Filecoin less useful and limit clients’ ability to store data on the network.
 
@@ -112,15 +112,15 @@ Filecoin addresses this issue by introducing the concept of [**verified data**](
 
 Verified data is data stored by **_verified clients_**, who in turn are certified by a decentralized network of **_verifiers_**. Verification is **not** intended to be scarce – it’s very easy to acquire for anyone with real data to store on Filecoin. Even though verifiers may allocate verified data permissively to make onboarding easier, the overall effect should be to dramatically increase the proportion of useful data stored on Filecoin.
 
-### Demand Drivers
+## Demand Drivers
 
 A decentralized storage network that lets anyone in the world store or retrieve files is an amazing tool. However, the Filecoin network is only useful to the world if there are applications built on top of it. The good news is that there are already many amazing applications already being built on Filecoin, with even more to come between now and mainnet launch.
 
-#### Reliability
+### Reliability
 
 Filecoin is set up from day one to store the world’s most important data reliably and efficiently. To enhance reliability, the protocol gives clients unlimited flexibility to store redundant copies of files with different miners, and to verify that unique copies are actually being stored. Unlike centralized cloud storage services, which back up data in ways clients can’t change or verify, Filecoin allows clients to easily express their own preferences for reliability and cost.
 
-#### Efficiency
+### Efficiency
 
 Filecoin’s offline data transfer mechanism is another example of the protocol’s support for diverse client needs. Many datasets are so large that transferring them over the internet is slow and expensive. For example, if you stored the 2.5 petabyte [Landsat 8 open source geoimaging dataset](https://www.usgs.gov/land-resources/nli/landsat/landsat-data-access?qt-science_support_page_related_con=0#qt-science_support_page_related_con) on a centralized cloud, transferring it over the internet would take [more than seven months](https://www.wolframalpha.com/input/?i=2.5+petabytes+divided+by+1+gigabit+per+second) on a dedicated gigabit line and [cost $125,000](https://www.wolframalpha.com/input/?i=USD+0.05+per+gigabyte+times+2.5+petabytes). Filecoin’s [offline deal protocol](https://github.com/filecoin-project/lotus/pull/1242) allows you to store your large data on hard drives, ship the drives to miners, and then continuously verify that the files are being safely stored.
 

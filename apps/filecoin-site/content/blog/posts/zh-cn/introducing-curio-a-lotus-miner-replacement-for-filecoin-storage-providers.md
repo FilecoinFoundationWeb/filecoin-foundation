@@ -12,7 +12,7 @@ dim_image: true
 
 我们非常高兴宣布推出[Curio Storage](https://curiostorage.org/)，这是由Lotus-Miner和Boost团队共同研发的新产品！Curio旨在成为Lotus-Miner的卓越替代品，在系统冗余、简易型、可扩展性和整体性能方面都有显著改善。有了Curio，数据中心成为Filecoin存储提供者(SP)变得前所未有的简单，Curio能够以最短的操作时间提供可靠的SP存储证明和封装。
 
-### 为何选择Curio?
+## 为何选择Curio
 
 1.冗余一切:Curio通过多个守护进程、worker类型和数据库节点提供强大的冗余功能，所有这些都可以无缝协调，消除单点故障。种设计确保了存储操作的最长正常运行时间和可靠性。
 
@@ -34,7 +34,7 @@ dim_image: true
 
 10.GUI:启动“GUI”层会启动一个基于网络的综合仪表盘，提供实时监控、详细状态和优化运行的工具——开箱即用，无需登录任何服务。
 
-### 欢迎您亲自体验
+## 欢迎您亲自体验
 
 Curio的“Lotus Miner V2”架构为SP带来了生活质量的显著改善，马上体验下吧！
 
@@ -52,7 +52,7 @@ make clean deps all
 curio guided-setup
 ```
 
-### Curio如何运作？
+## Curio如何运作？
 
 Curio的核心是容纳harmony_task表的Yugabyte数据库集群。每项处理工作都是从 “发现”需要某项任务开始。添加任务的尝试会有一些特定于任务的唯一索引，使二次添加无效。然后，贪婪的节点会争先恐后地申请任务。无法完成任务的节点会被取消资格，而那些具有不良特征的节点则会被延迟。最终，该轮竞标的获胜者会尝试这项工作。
 
@@ -64,6 +64,6 @@ Curio的核心是容纳harmony_task表的Yugabyte数据库集群。每项处理�
 
 ![enter image description here](/uploadshttps://filecoin.io/how-it-works%20%281%29.svg)
 
-### 了解更多
+## 了解更多
 
 欲知更多信息，或在Filecoin Slack上关注#fil-curio-dev ，以及在[#fil-curio-announcements](https://filecoinproject.slack.com/archives/C06V5B3B7CJ)上提问。

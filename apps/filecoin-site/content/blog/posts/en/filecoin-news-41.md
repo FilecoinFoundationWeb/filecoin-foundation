@@ -21,7 +21,7 @@ title: Filecoin News 41
 
 ![](/uploads/filecoin-news-41.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://filecoin.io/blog/posts/announcing-fil-singapore-summit/"><img src="/uploads/162950357-a07d89d7-1472-40d2-8588-79e7f150fb61.webp" style="width:40%;margin-left:0%"></a>
 
@@ -35,7 +35,7 @@ Over a thousand Web3 enthusiasts will be joining members of the Filecoin communi
 
 On April 18th, the Filecoin ecosystem launched the Filecoin Storage Provider Mentorship Grants (FSPM), a program where qualified grantees can receive subsidized expert SP operator consulting. This is the perfect opportunity for those interested in becoming an SP or nascent SPs looking to scale their current operations. As part of the FSPM kick-off, for a limited time only, 10 qualified applicants will receive 10 hours of fully subsidized consulting services. Find out more in this [blog](https://filecoin.io/blog/posts/announcing-filecoin-storage-provider-mentorship-grants-fspm/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://www.youtube.com/watch?v=e5VkjVuDG1U"><img src="/uploads/ericashow.webp" style="width:40%;margin-left:0%"></a>
 
@@ -61,7 +61,7 @@ A Filecoin in-person one day meetup for Storage Providers took place yesterday, 
 
 From the Filecoin Foundation and Protocol Labs, the Filecon Orbit Community Program is focused on building and evangelizing the future of decentralized storage technologies. In the inaugural newsletter from the Orbit Community Program, check out what program participants have been up to. Learn about the cohort of 13 “cadets” added to the program and the 7 meetups that happened across the globe in Q1. [More in the newsletter!](https://medium.com/orbit-community/filecoin-orbit-community-program-newsletter-1-a85030ac66de)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tools</b></h3>
+## Tools
 
 <a href="https://filecoin.io/blog/posts/introducing-lurk-a-programming-language-for-recursive-zk-snarks/"><img src="/uploads/164675419-d7e226dc-8790-4931-9687-23e985eb9777.webp" style="width:40%;margin-left:0%"></a>
 
@@ -69,7 +69,7 @@ From the Filecoin Foundation and Protocol Labs, the Filecon Orbit Community Prog
 
 The Lurk programming language’s [repositories](https://github.com/lurk-lang) are now open to the public. Lurk is a Turing-complete programming language for recursive zk-SNARKs (zero knowledge Succinct Non-interactive ARguments of Knowledge) that will enable new possibilities for SNARK proofs, blockchain consensus, the Filecoin Virtual Machine (FVM), decentralized apps, data integration with IPFS and IPLD, and more. [Read along](https://filecoin.io/blog/posts/introducing-lurk-a-programming-language-for-recursive-zk-snarks/) and learn more about how developers can leverage this new tool.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <a href="https://strn.network/"><img src="/uploads/filecoinsaturn.webp" style="width:40%;margin-left:0%"></a>
 
@@ -107,9 +107,7 @@ Registration for FIL Austin is still open! On Wednesday, June 8th, the Filecoin 
 
 The Hedera community is celebrating its first Solidity smart contract hackathon. H22 features prizes for the best use cases of Filecoin and IPFS for decentralized storage and projects who use the technology via NFT.storage, web3.storage, Estuary, Fleek, Textile also qualify. The event is underway until May 16th. [Join now](https://hedera22.devpost.com/)!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

@@ -26,7 +26,7 @@ title:
 
 ![](/uploads/filecoin-news-18.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
+## Build
 
 ### Register now for Web3 Weekend, May 28-30
 
@@ -48,7 +48,7 @@ On April 23, the **Filecoin Frontier Accelerator II powered by LongHash Ventures
 
 [**Check out this post**](https://filecoin.io/blog/posts/longhash-ventures-demo-day-nft-and-media-startups/) that profiles some of the innovative startups building applications for non-fungible tokens (NFTs) and media solutions with Filecoin’s technology: Curio, Flame, Huddle 01, Myel, NonEntropy Tech, Numbers Protocol, and OP Games.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Store</b></h3>
+## Store
 
 <a href="https://filecoin.io/blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/"><img src="/uploads/fil-blog-wolfram-shadows.webp" style="width:40%;margin-left:0%"></a>
 
@@ -72,7 +72,7 @@ WBL is integrating their distributed ledger technology platform with IPFS and Fi
 
 The project allows Ethereum developers to easily extend their IPFS storage with cryptographically verifiable and incentivized storage on Filecoin. Lighthouse greatly reduces the friction for Ethereum developers to interact with the Filecoin storage network by allowing them to store files on Filecoin by directly interacting with a Lighthouse smart contract deployed on Ethereum. This project was originally inspired by the [**Quasar project**](https://github.com/infinitescroll/quasar) that had been explored for Aragon and IPFS. To learn more about Lighthouse, how it works, and how to use it, [**read this article.**](https://nanditmehra123.medium.com/lighthouse-filecoin-ethereum-cross-chain-infra-project-66c041a1a1db)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Mine</b></h3>
+## Mine
 
 <a href="https://filecoinfoundation.medium.com/missed-the-first-filecoin-plus-day-weve-got-you-covered-638f9eba7abf"><img src="/uploads/filecoin-plus-logo.webp" style="width:20%;margin-left:0%"></a>
 
@@ -80,7 +80,7 @@ The project allows Ethereum developers to easily extend their IPFS storage with 
 
 [**The Filecoin Foundation**](https://fil.org/) and Protocol Labs hosted the first Filecoin Plus Day on May 11. Over the course of three hours, more than 100 participants — including project architects, Filecoin Plus users, cryptoecon experts, and miners — came together to talk about the program. These groups are working together to maximize the amount of useful storage on Filecoin by adding a layer of social trust to the network. Thank you to all who participated and joined us! We plan to host more Filecoin Plus Days in the coming months but in the meantime, [**catch up on what you missed at this first event.**](https://filecoinfoundation.medium.com/missed-the-first-filecoin-plus-day-weve-got-you-covered-638f9eba7abf)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Updates</b></h3>
+## Updates
 
 <a href="https://www.youtube.com/watch?v=cmrLfnqzflk"><img src="/uploads/lot-logo-symbol-color.webp" style="width:30%;margin-left:0%"></a>
 
@@ -92,7 +92,7 @@ The lotus team is now working on the [**next release**](https://github.com/filec
 
 In parallel to everything above, the Lotus team is working on rearchitecting the miner runtime. We are segregating the markets functionality so that it can run in a separate physical process from the storage/block mining. We believe this will improve robustness and resilience of miner deployments, and will unlock new heights of scalability on the storage and retrieval markets. Find out more in the [**project proposal**](https://github.com/protocol/web3-dev-team/blob/main/proposals/lotus-miner-runtime-segregation.md), as well as in [**this talk**](https://www.youtube.com/watch?v=cmrLfnqzflk).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://www.youtube.com/watch?v=eNq4UCADeZ4"><img src="/uploads/chainlink-filecoin-otlns.webp" style="width:40%;margin-left:0%"></a>
 
@@ -104,7 +104,7 @@ Many of these innovative applications leveraging Chainlink’s DONs and Filecoin
 
 <a href="https://www.youtube.com/watch?v=QC90YKBSCt4&list=PLGi5rSYpKqxYUuhE1-fVAUD05KGBLWz"><img src="/uploads/curio-symbol.webp" style="width:20%;margin-left:0%"></a>
 
-### **Curio raises $7M to Expand Growth**
+### Curio raises $7M to Expand Growth
 
 [**Curio**](https://c212.net/c/link/?t=0&l=en&o=3162398-1&h=1059209547&u=https%3A%2F%2Foncurio.com%2F&a=Curio), the premier NFT platform for the entertainment industry, that graduated from Longhash’s Filecoin Frontier Accelerator announced it has raised $7M from top tier global investors. The company has successfully launched multiple licensed auctions, drops, products, and new partnerships. We are extremely excited for Curio and the other accelerator teams that are gaining significant traction. To learn more about Curio, [**watch their presentation from Demo Day.**](https://www.youtube.com/watch?v=QC90YKBSCt4&list=PLGi5rSYpKqxYUuhE1-fVAUD05KGBLWz-4&index=3)
 
@@ -116,7 +116,7 @@ Here’s how it works: just install an Ethereum wallet like [**MetaMask**](https
 
 For step-by-step instructions, check [**this Twitter thread**](https://twitter.com/corbpage/status/1387422816992169985).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Learn</b></h3>
+## Learn
 
 <a href="https://research.protocol.ai/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/"><img src="/uploads/snark-lock-icon.webp" style="width:20%;margin-left:0%"></a>
 
@@ -130,7 +130,7 @@ Looking for a guided dive into the cryptographic techniques of SnarkPack? [**Thi
 
 Interested in learning more about Filecoin, IPLD, or libp2p? Check out [ProtoSchool’s self-guided interactive tutorials](https://proto.school/), designed to introduce you to decentralized web concepts, protocols, and tools. Select your topic and track your progress as you go, in a format that's right for you. Complete JavaScript code challenges right in your web browser, or stick to our text-based or multiple-choice tutorials for a code-free experience.
 
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

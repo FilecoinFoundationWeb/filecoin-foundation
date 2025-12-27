@@ -29,7 +29,7 @@ title:
 
 ![](/uploads/filecoin-news-25.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
+## Build
 
 <a href="https://filecoin.io/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/"><img src="/uploads/dora-winners.webp" style="width:40%;margin-left:0%"></a>
 
@@ -45,7 +45,7 @@ Filecoin is announcing a collaboration with [Polygon](https://polygon.technology
 
 To get started on the bridge deployment on Polygon, simply visit the instructions and documentation at [eth.storage](https://eth.storage/javascript/#eth--polygon). (All storage costs using the bridge are free!) To learn more about the collaboration, check out [this post](https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Store</b></h3>
+## Store
 
 <a href="https://medium.com/jigstack/the-decentralized-storage-of-jigstack-gallerys-nfts-is-cemented-via-a-filecoin-collaboration-136dbd825cd2""><img src="/uploads/jigstack.webp" style="width:40%;margin-left:0%"></a>
 
@@ -69,7 +69,7 @@ With the Mask browser extension, users will be able to choose to upload particul
 
 A shoutout from The New Stack about [Web3.Storage](http://web3.storage/) — recently launched to provide developers with free access (yes, indefinitely) to Filecoin’s storage solutions. Web3.storage provides redundancy and easy use, opening up the world of decentralized storage to even greater numbers of veteran and new Web3 developers alike. [Check out the New Stack overview](https://thenewstack.io/web3-storage-free-decentralized-storage-on-filecoin/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Storage Providers</b></h3>
+## Storage Providers
 
 <a href="https://filecoinfoundation.medium.com/filecoin-community-approves-change-to-storage-provider-terminology-2320839b153b"><img src="/uploads/fip.webp" style="width:40%;margin-left:0%"></a>
 
@@ -89,7 +89,7 @@ On August 20th, the [Filecoin community approved Filecoin Improvement Proposal 1
 
 [Proofs releases v9.0.0 and v9.0.1](https://github.com/filecoin-project/rust-fil-proofs/blob/master/CHANGELOG.md#901---2021-08-16) are live and tagged in the lotus v1.11.2rc series for testing! These releases switch the default bls381 library from pairing to blst, as it’s been audited and measured for better performance. Given that storage providers were largely using blst as an optional feature for some time, it made sense to make it the default. This release also switches our internal threadpool implementation from rayon to yastl for improved scheduling in our parallel workloads.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://filecoin-community.typeform.com/to/B9XpG9ep"><img src="/uploads/community-grants.webp" style="width:40%;margin-left:0%"></a>
 
@@ -109,31 +109,18 @@ On August 25th, [FiveToken](https://fivetoken.co/) (formerly Filwallet.ai) in co
 
 By completing the following steps, you will be eligible to win an NFT:
 
-<ul>
+- Download a FiveToken product (choose one of three):
+  - [FiveToken App](https://fivetoken.co/download) (Web3 cross-chain version for reliable ID storage and management)
+  - [FiveToken App](https://fivetoken.co/download) (storage provider version for Filecoin asset management)
+  - [FiveToken Chrome Extension](https://chrome.google.com/webstore/detail/filecoin-wallet/bpcblmpljpaghnefcaejpdakdbibmafm) (for website usage of the Web3 cross-chain version)
 
-<li>Download a FiveToken product (choose one of three):</li>
+- Create your FiveToken account and complete the beta test
 
-    <ul>
+- Once finished, fill out this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSd60FJKaVhv1IQzMS7vyS4rvZneCW3FinH6mhxdZdoZkSLDIg/viewform)
 
-      <li><a href="https://fivetoken.co/download>FiveToken App</a> (Web 3 cross-chain version for reliable ID storage and management)</li>
+- Share a snapshot of the final page of your test on your Twitter account and tag @fivetokenio
 
-      <li><a href="https://fivetoken.co/download>FiveToken App</a> (storage provider version for Filecoin asset management)</li>
-
-      <li><a href="https://chrome.google.com/webstore/detail/filecoin-wallet/bpcblmpljpaghnefcaejpdakdbibmafm">FiveToken Chrome Extension</a> (for website usage of Web 3 cross chain version)</li>
-
-    </ul>
-
-</li>
-
-<li>Create your FiveToken account and complete the beta test</li>
-
-<li>Once finished, fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSd60FJKaVhv1IQzMS7vyS4rvZneCW3FinH6mhxdZdoZkSLDIg/viewform">Google form</a></li>
-
-<li>Share the snapshot of the final page of your test on your twitter account and tag @fivetokenio</li>
-
-<li>Claim your NFT 貔貅 after our winner announcement</li>
-
-</ul>
+- Claim your NFT 貔貅 after our winner announcement
 
 <a href="https://panelpicker.sxsw.com/vote?search%5Bconference_id%5D=40"><img src="/uploads/korean.webp" style="width:35%;margin-left:0%"></a>
 
@@ -151,7 +138,7 @@ Filecoin channels in Korean language have launched on many popular social networ
 
 Stay tuned on the above channels for updates in Korean! 🇰🇷
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Learn</b></h3>
+## Learn
 
 <a href="https://medium.com/encode-club/encode-filecoin-club-intro-to-nfts-video-slides-ac754d569476"><img src="/uploads/encode-2.webp" style="width:40%;margin-left:0%"></a>
 
@@ -159,9 +146,7 @@ Stay tuned on the above channels for updates in Korean! 🇰🇷
 
 The [Encode Filecoin Club](https://www.encode.club/filecoin-educate) hosted Protocol Labs engineer and technical writer Yusef Napora for a session introducing students and hackers to NFTs. In the hour-long session, [Yusef covered NFT topics](https://medium.com/encode-club/encode-filecoin-club-intro-to-nfts-video-slides-ac754d569476) such as contracts, standards, and storage challenges. He also led the attendees through hands-on coding challenges on deploying and minting NFTs, and how to store them on [NFT.Storage](https://nft.storage/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

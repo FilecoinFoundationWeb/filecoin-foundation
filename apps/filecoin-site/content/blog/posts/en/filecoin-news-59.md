@@ -21,7 +21,7 @@ share_image: /uploads/blog-filecoin-news.webp
 title: Filecoin News 59
 ---
 
-![](/uploads/filecoin-news-59.webp)<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Announcements</b></h3>
+## Announcements
 
 <a href="https://filecoin.io/blog/posts/filecoin-2022-review-enabling-the-world-s-largest-decentralized-open-data-economy/"><img src="/uploads/filecoin_2022_recap_header.webp" style="width:40%;margin-left:0%"></a>
 
@@ -35,7 +35,7 @@ title: Filecoin News 59
 
 The Filecoin Virtual Machine was created to address Protocol Labs’ ambition of creating a truly decentralized internet, but what exactly is FVM? FVM combines the power of smart contracts and verifiable storage. Like smart contracts, FVM has the ability to self-execute a certain behavior, once the predetermined conditions are met. Unlike most other smart contracts, FVM has the additional ability to access verified proof of stored data, within the virtual machine’s native environment. [Learn more](https://filecoin.io/blog/posts/the-filecoin-virtual-machine-explained/) about FVM on the Filecoin Blog!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
 <a href="https://lomads.medium.com/lomads-partners-with-ipfs-filecoin-via-protocol-labs-40294ce84c87"><img src="/uploads/lomas.webp" style="width:40%;margin-left:0%"></a>
 
@@ -59,7 +59,7 @@ web3.storage plays a vital role in the solution by offering a decentralized and 
 
 Blockchain technology is changing how war crimes are documented. [Starling Lab](https://www.starlinglab.org/) is using Filecoin to store and archive this data, ensuring that no one can alter the information or force evidence to be thrown out on suspicion of tampering. [Politico](https://www.politico.com/newsletters/digital-future-daily/2023/01/17/ukraine-war-crimes-blockchain-00078170) spotlighted how Starling Lab is documenting war crimes in Ukraine, especially as more Ukrainians turn to social media to share digital evidence.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Events</b></h3>
+## Events
 
 <img src="/uploads/spaces.webp" style="width:40%;margin-left:0%">
 
@@ -97,9 +97,7 @@ The [Filecoin Hacker Base](https://twitter.com/FilFoundation/status/161791437497
 
 CryptoEconDay is returning for 2023, with conferences centered around economic research and presenting novel ideas to the crypto world. The first is being hosted during ETH Denver on March 1.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 
