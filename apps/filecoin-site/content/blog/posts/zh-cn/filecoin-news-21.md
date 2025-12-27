@@ -53,7 +53,7 @@ IPFS和Filecoin社区很高兴宣布[**Browsers 3000黑客松**](https://fil.org
 
 ## 存储
 
-<a href="https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/"><img src="/uploads/opensea.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/opensea.webp)](https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)
 
 ### OpenSea用IPFS和Filecoin存储NFT
 
