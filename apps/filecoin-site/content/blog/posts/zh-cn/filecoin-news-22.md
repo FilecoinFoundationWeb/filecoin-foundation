@@ -127,7 +127,7 @@ Rust实施方案团队Forest又来打招呼了！我们是 [**ChainSafe**](https
 
 ## 学习
 
-<a href="https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46"><img src="/uploads/encode-1.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/encode-1.webp)](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46)
 
 ### Filecoin Educate教育项目介绍
 
