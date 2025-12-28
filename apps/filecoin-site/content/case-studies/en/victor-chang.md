@@ -53,7 +53,7 @@ Filecoin also employs content addressing through unique content identifiers (CID
 
 > "Filecoin is the only data storage technology that can provide strong guarantees of data integrity through the use of cryptographic proofs & unique content identifiers which is vitally important for our research and published papers."
 >
-> Victor Chang Cardiac Research Institute
+> — Victor Chang Cardiac Research Institute
 
 ### Scalability
 
@@ -67,7 +67,7 @@ The costs of storing large data sets for years on end is a major challenge for a
 
 > "Filecoin helps us overcome our challenges by providing data storage at a cost effective rate and ensuring data integrity. This will allow data from key research projects to be stored for perpetuity, and to be shared with collaborators from around the world."
 >
-> Victor Chang Cardiac Research Institute
+> — Victor Chang Cardiac Research Institute
 
 ## Conclusion
 
@@ -77,7 +77,7 @@ Overall, The adoption of decentralized storage has revolutionized the Institute'
 
 > "Filecoin is making a huge difference to the way we store our world research data. It provides a unique service that not only allows data from our key research projects to be stored for perpetuity, it also ensures the integrity of our research data through the use of unique content identifiers. Given that many of our projects increasingly generate huge raw data sets, this is incredibly important for the Institute. It's also vital that we can easily and safely share open-data sets with like-minded researchers to advance heart disease research that will benefit patients the world over."
 >
-> Todd Ryman, IT Director at Victor Chang Cardiac Research Institute
+> — Todd Ryman, IT Director at Victor Chang Cardiac Research Institute
 
 ## Learn More About the Victor Chang Cardiac Research Institute
 
