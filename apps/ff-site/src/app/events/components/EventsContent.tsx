@@ -1,3 +1,5 @@
+import { useMemo } from 'react'
+
 import { MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { useEntryView } from '@filecoin-foundation/hooks/useEntryView'
@@ -33,7 +35,10 @@ import { LocationFilter } from '@/components/LocationFilter'
 
 import { EventSort } from '../components/EventSort'
 import { DEFAULT_CTA_TEXT, FILTERS_CONFIG } from '../constants/constants'
-import { eventsViewConfigs } from '../constants/viewConfigs'
+import {
+  eventsViewConfigs,
+  getDefaultViewConfig,
+} from '../constants/viewConfigs'
 import type { Event } from '../types/eventType'
 import { entryMatchesLocationQuery } from '../utils/filterUtils'
 import { getLocationListboxOptions } from '../utils/getLocationFilterOptions'
@@ -50,6 +55,16 @@ export default function EventsContent({
   searchParams,
   events,
 }: EventsContentProps) {
+  const defaultViewConfig = useMemo(
+    () => getDefaultViewConfig(events),
+    [events],
+  )
+
+  const defaultSortOption = {
+    id: defaultViewConfig.id,
+    name: defaultViewConfig.name,
+  }
+
   const { searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: events,
@@ -60,6 +75,7 @@ export default function EventsContent({
     query: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: eventsViewConfigs,
+    defaultConfig: defaultViewConfig,
   })
 
   const { filteredEntries: filteredEventsByLocation } = useFilter({
@@ -94,14 +110,14 @@ export default function EventsContent({
       <FilterContainer.MainWrapper>
         <FilterContainer.DesktopFilters
           searchComponent={<Search />}
-          sortComponent={<EventSort />}
+          sortComponent={<EventSort defaultOption={defaultSortOption} />}
           filterComponents={[
             <LocationFilter key="location" options={locationOptions} />,
           ]}
         />
         <FilterContainer.MobileFiltersAndResults
           searchComponent={<Search />}
-          sortComponent={<EventSort />}
+          sortComponent={<EventSort defaultOption={defaultSortOption} />}
           filterComponents={[
             <CategoryFilter
               key="category"
