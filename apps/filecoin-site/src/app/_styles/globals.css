@@ -4,6 +4,17 @@
 @source '../../../../../node_modules/@filecoin-foundation/ui';
 @source '../../../../../node_modules/@filecoin-foundation/ui-filecoin';
 
+@utility prose {
+  & blockquote {
+    @apply border-brand-600 border-l-2;
+    quotes: none;
+
+    & p:last-of-type {
+      @apply font-normal not-italic;
+    }
+  }
+}
+
 @layer components {
   /* COPY TO CLIPBOARD */
   .copy-to-clipboard-button {
