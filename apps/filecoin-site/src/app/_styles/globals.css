@@ -6,11 +6,11 @@
 
 @utility prose {
   & blockquote {
-    @apply border-brand-600 border-l-2 py-4 pl-15;
+    @apply border-brand-600 border-l-2;
     quotes: none;
 
-    & p:nth-of-type(2) {
-      @apply font-normal;
+    & p:last-of-type {
+      @apply font-normal not-italic;
     }
   }
 }
