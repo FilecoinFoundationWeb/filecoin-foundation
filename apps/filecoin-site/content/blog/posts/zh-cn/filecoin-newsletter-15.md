@@ -89,7 +89,7 @@ Filecoin社区刚刚结束了史上首个FILPoll，这个新功能可以就改�
 
 ![](/uploads/frontier.webp)
 
-## Filecoin in Frontier加速营Demo Day，4月23日
+### Filecoin in Frontier加速营Demo Day，4月23日
 
 跟随Filecoin、分布式资本和LongHash Ventures三大组织方一起加入Filecoin Frontier加速营Demo Day吧！看初创团队如何向全球的潜在投资者推荐项目。精彩绝伦的团队路演不容错过。
 
@@ -122,7 +122,7 @@ Minty，它可以在以太坊上创建基于IPFS存储的NFT。[研讨会](https
 
 {{< youtube id="WNukgBtlWeU" title="Protocol Labs Minty Fresh NFTs with IPFS" >}}
 
-## ✊ 加入我们
+## 加入我们
 
 前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)，也别错过[**社区资源**](https://github.com/filecoin-project/community)。可以通过 [**Filecoin Slack**](http://filecoin.io/slack)提问，在[**社区论坛**](https://discuss.filecoin.io/)讨论问题和新想法，或[**Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们你的想法。
 

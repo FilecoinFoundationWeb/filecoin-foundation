@@ -94,4 +94,4 @@ In addition, here are some upcoming NFT hackathons related to this exciting coll
    - An 8-week hackathon focused on the metaverse! Build projects on IPFS to answer challenges and compete for the $50k prize pool.
    - Dates: 1 - 20 Apr, 2022
 
-Stay up to date with [https://fil.org/events/](https://fil.org/events/) for more information and to explore the endless opportunities to build on the IPFS and Filecoin stack. To learn more about Polygon Studios, visit [https://polygonstudios.com/](https://polygonstudios.com/).
+Stay up to date with [fil.org/events](https://fil.org/events/) for more information and to explore the endless opportunities to build on the IPFS and Filecoin stack. To learn more about Polygon Studios, visit [polygonstudios.com](https://polygonstudios.com/).

@@ -145,7 +145,7 @@ Filecoin **存储拍卖**旨在通过经济手段实现更高的交易成功率�
 
 感谢昨天参加8月Filecoin社区聚会的所有小伙伴，本次活动专注于Filecoin存储提供社区。在本月活动中，社区成员提出了一项针对存储提供者的新品牌建议(FIP)，我们还听取了四位存储提供者在部署了最新的Filecoin v13 HyperDrive升级后的最佳实践和研究成果。若错过活动，可在此[回顾活动录音](https://www.youtube.com/watch?v=OnQD8MnuaOI)。
 
-## ✊ 加入我们
+## 加入我们
 
 前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)并确保查看 [**社区资源**](https://github.com/filecoin-project/community)。您可以在[**Filecoin Slack**](http://filecoin.io/slack)频道提问，还可以在[**社区论坛**](https://discuss.filecoin.io/)中讨论问题和新想法。您还可以关注我们的微信公众号@Filecoin-Official或者[**在Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们您的想法。
 [**Filecoin博客**](https://filecoin.io/blog/)和[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)对初学者来说也是重要的信息来源。

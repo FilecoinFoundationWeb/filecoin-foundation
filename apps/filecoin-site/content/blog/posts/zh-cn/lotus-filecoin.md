@@ -44,7 +44,7 @@ _template: blog_detail_ch
 
 由于多种实现对于网络安全性，弹性和社区参与非常重要，因此我们已定下目标，要在2020年3月Filecoin 主网上线时推出具有2种以上可交互操作的协议的实现。截止到今天，我们正在开发一系列 Filecoin 的实现 - **go-filecoin**，**lotus** 和其他即将正式推出的实现。我们正在寻找更多有才华的团队来构建 Filecoin 实现。如果有兴趣，请按照[此处](http://filecoin.io/grants)的说明申请我们的[津贴](https://github.com/filecoin-project/devgrants/issues/43)，以构建其他实现方案！
 
-## 更多关于 **lotus** 的信息
+## 更多关于 lotus 的信息
 
 [**Lotus**](https://github.com/filecoin-project/lotus) 是 [Filecoin 协议规范](https://github.com/filecoin-project/specs/)的最简且具有实验性的实现，用 Go 语言编写。该代码库尚未完成功能，但是已经实现了几个核心 Filecoin 协议功能，包括：
 

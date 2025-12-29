@@ -90,11 +90,11 @@ Filecoin社区见面会是一个认识Filecoin生态中许多工具和项目背�
 
 {{< youtube id="JQ5YwYgFCv0" title="Data DAOs - Olaf Carlson Wee" >}}
 
-## DeFi与Filecoin的未来
+### DeFi与Filecoin的未来
 
 Filecoin正在努力通过扩大应用程序可以处理的数据量，让DeFi投资变得更容易。健全的投资是基于数据的，但直到现在[**还无法在以太坊**](https://www.youtube.com/watch?v=JQ5YwYgFCv0)这样的分布式网络上存储大型数据集。DeFi投资者对市场的清晰洞察能力一直受到限制。但Filecoin允许在区块链原生的去中心化平台上分析大量数据。这为DeFi投资者提供了获取他们在这个新兴领域明智投资所需的洞察力的能力。[**点击此处观看视频**](https://www.youtube.com/watch?v=JQ5YwYgFCv0)。
 
-## ✊ 参与进来
+## 参与进来
 
 您可以前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)，并一定要查看 [**社区资源**](https://github.com/filecoin-project/community)。在 [**Filecoin Slack**](http://filecoin.io/slack)中提问，在 [**社区论坛**](https://discuss.filecoin.io/)中讨论问题或新想法，或 [**在 Twitter 上关注 @Filecoin**](https://twitter.com/Filecoin)，将您的想法发送给我们。
 

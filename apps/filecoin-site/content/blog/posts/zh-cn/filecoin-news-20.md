@@ -124,7 +124,7 @@ Slingshot 2.3阶段闭幕式于6月9日举行，此阶段是Slingshot竞赛至�
 
 Filecoin社区聚会是结识Filecoin生态中工具和项目缔造者的好机会。如果错过了六月线上见面会，[**观看录播了解详情**](https://www.youtube.com/watch?v=I_0OvK04BQA&list=PL_0VrY55uV1-8SUcSq3bYUJCVVxcY-7-X)，本次见面会将会有PowerLoom、Secured Finance和Curio的演讲。请务必在北京时间7月13日下午1点加入我们的下一次虚拟见面会— [**点击此处注册**](https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsycckbrb/)!
 
-## ✊ 加入我们
+## 加入我们
 
 前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)，也别错过 [**社区资源**](https://github.com/filecoin-project/community)。可以通过 [**Filecoin Slack**](http://filecoin.io/slack)提问，在[**社区论坛**](https://discuss.filecoin.io/)中讨论问题和新想法。您也可以关注我们的微信公众号@Filecoin-Official或者[**在Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们您的想法。
 我们[**Filecoin博客**](https://filecoin.io/blog/)和[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)也有丰富的基础内容。如果仍然没有解决问题，可以回复此邮箱，我们会帮您找到答案。

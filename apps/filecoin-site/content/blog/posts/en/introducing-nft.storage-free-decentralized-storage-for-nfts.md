@@ -26,7 +26,9 @@ NFT.Storage lets users store their NFT content and metadata seamlessly and secur
 
 Today we are excited to introduce [NFT.Storage](https://nft.storage/), a service backed by Protocol Labs and Pinata specifically for storing NFT data. NFT.Storage allows developers to protect their NFT assets and associated metadata through content addressing and decentralized storage -- ensuring that all NFTs follow best practices to stay accessible long-term.
 
-“NFTs are part of humanity’s cultural legacy - and designing their data for long-term accessibility is crucial. Content addressing and distributed storage networks ensure that digital artwork, [basketball cards](https://dappradar.com/blog/50-million-in-sales-makes-nba-top-shot-largest-nft-market), and [virtual real estate](https://decrypt.co/57092/biggest-ever-nft-sale-made-as-single-axie-land-goes-for-1-5-million) are guaranteed to stay secure and available long-term. NFT.storage makes it completely frictionless to mint NFTs following best practices through resilient persistence on IPFS and Filecoin” said [Mikeal Rogers](https://twitter.com/mikeal), Engineering Manager at Protocol Labs.
+> NFTs are part of humanity’s cultural legacy - and designing their data for long-term accessibility is crucial. Content addressing and distributed storage networks ensure that digital artwork, [basketball cards](https://dappradar.com/blog/50-million-in-sales-makes-nba-top-shot-largest-nft-market), and [virtual real estate](https://decrypt.co/57092/biggest-ever-nft-sale-made-as-single-axie-land-goes-for-1-5-million) are guaranteed to stay secure and available long-term. NFT.storage makes it completely frictionless to mint NFTs following best practices through resilient persistence on IPFS and Filecoin.
+>
+> — [Mikeal Rogers](https://twitter.com/mikeal), Engineering Manager at Protocol Labs
 
 ## What is NFT.Storage
 

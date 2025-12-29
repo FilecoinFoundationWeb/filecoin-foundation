@@ -36,7 +36,7 @@ Tachyon’s Filecoin Launchpad Accelerator is a full-time, fully remote program 
 
 [![](/uploads/accelerator-frontier-igloo-purple.webp)](https://www.youtube.com/watch?v=-lwttk-HsoQ&list=PL_0VrY55uV1-l8s_5YrhN1eLX-tEtW9ku)
 
-## Filecoin Frontier Accelerator Demo Day, April 23
+### Filecoin Frontier Accelerator Demo Day, April 23
 
 On April 23rd, Longhash Ventures, Fenbushi Capital, and Filecoin hosted the Filecoin Frontier Accelerator Demo Day showcasing 11 Web 3.0 projects building key components and use cases of the Filecoin ecosystem. The event marked the graduation of these projects from Filecoin Frontier Accelerator, a rigorous venture-building program that offered mentorship from ecosystem leaders, strategic guidance, and hands-on support on go-to-market execution.
 

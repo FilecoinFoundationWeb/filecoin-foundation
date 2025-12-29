@@ -13,14 +13,12 @@ double_column_mode: false
 excerpt: Filecoin Orbit加入：携手庆祝Filecoin主网上线一周年！
 image:
   alt: ""
-  url: >-
-    /uploads/blog-filecoin-news.webp
+  url: /uploads/blog-filecoin-news.webp
 main_feature_inverted: false
 related_article_1: ""
 related_article_2: ""
 related_article_3: ""
-share_image: >-
-  /uploads/blog-filecoin-news.webp
+share_image: /uploads/blog-filecoin-news.webp
 title: 第28期Filecoin资讯：Filecoin Orbit、Proofs v10.0.0、Halo 2以及更多前沿资讯
 _template: blog_detail_ch
 ---
@@ -113,6 +111,7 @@ MinerX.2奖学金项目在9月底正式结束，本次活动非常成功。在�
 点击此处了解更多关于赞助商、地理位置和奖品信息 👉 [poap.nyc](http://poap.xyz/)
 
 NFT.storage是本次寻宝活动的赞助商，将在时代广场中心的Edison宴会厅为大家提供这个美妙的POAP。
+
 [![](/uploads/chainlink-hack.webp)](https://research.protocol.ai/blog/2021/consensusday-becomes-consensusdays-21/)
 
 ### Chainlink黑客松
@@ -137,8 +136,8 @@ NFT.storage是本次寻宝活动的赞助商，将在时代广场中心的Edison
 
 在和Filecoin生态接触过后，会发现“海岛经济”一词时常出现，其确切含义是什么？它为何是理解Filecoin生态经济的有效方式？简而言之，海岛经济是指在一个孤立区域（物理或虚拟）内的经济体，用户可以在其中生存和发展，而不必事事亲力亲为。感兴趣吗？[点击此处了解更多](https://filecoin.io/blog/posts/filecoin-s-island-economy/)。
 
-## ✊ 加入我们
+## 加入我们
 
-前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)并查看 [**社区资源**](https://github.com/filecoin-project/community)。您可以在[**Filecoin Slack**](http://filecoin.io/slack)频道提问，还可以在[**社区论坛**](https://discuss.filecoin.io/)中讨论问题和新想法。您还可以关注我们的微信公众号@Filecoin-Official或者[**在Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们您的想法。
-[**Filecoin博客**](https://filecoin.io/blog/)和[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)对初学者来说也是重要的信息来源。
+前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)并查看 [**社区资源**](https://github.com/filecoin-project/community)。您可以在[**Filecoin Slack**](http://filecoin.io/slack)频道提问，还可以在[**社区论坛**](https://discuss.filecoin.io/)中讨论问题和新想法。您还可以关注我们的微信公众号@Filecoin-Official或者[**在Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们您的想法。  
+[**Filecoin博客**](https://filecoin.io/blog/)和[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)对初学者来说也是重要的信息来源。  
 在此 [**订阅**](https://mailchi.mp/filecoin.io/subscribe)，即可直接收到此类资讯。

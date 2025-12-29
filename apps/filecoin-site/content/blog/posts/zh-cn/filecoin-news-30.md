@@ -123,7 +123,7 @@ BUIDL IT是印度最大的web3.0 /区块链黑客松，旨在促进印度的Web3
 
 欲知从何处开始构建IPFS和Filecoin生态？请访问[hackathons.filecoin.io](https://fil.org/events/)了解并注册正在进行和即将到来的黑客松活动-祝您找到心之所向！
 
-## ✊ 加入我们
+## 加入我们
 
 前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)并查看 [**社区资源**](https://github.com/filecoin-project/community)。您可以在[**Filecoin Slack**](http://filecoin.io/slack)频道提问，还可以在[**社区论坛**](https://discuss.filecoin.io/)中讨论问题和新想法。您还可以关注我们的微信公众号@Filecoin-Official或者[**在Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们您的想法。
 [**Filecoin博客**](https://filecoin.io/blog/)和[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)对初学者来说也是重要的信息来源。

@@ -44,31 +44,24 @@ Fiat-Shamir变换是SnarkPark依赖的诸多密码学技术之一。非正式地
 
 在SnarkPack里，当聚合N个证明时，需要执行log2(N)个Fiat-Shamir变换，这就对应要执行log2(N)次哈希计算。每一个哈希计算都需要将证明者在证明过程中已经生成的所有元素作为输入项。用伪代码来表达的话，如下：
 
-<code>
+```python
+rand = H(...)
 
-<p style="padding-left: 50px; display=inline-block">rand = H(...)</p>
+# ... (other code)
 
-<p style="padding-left: 50px; display=inline-block">……</p>
 
-<p style="padding-left: 50px; display=inline-block">for i in 0…log2(n):</p>
-
-<p style="padding-left: 100px; display=inline-block">A &nbsp; &nbsp; &nbsp;<- generate_proof_step(i)</p>
-
-<p style="padding-left: 100px; display=inline-block">rand &nbsp; <- H(rand, A)</p>
-
-<p style="padding-left: 100px; display=inline-block">B &nbsp; &nbsp; &nbsp;<- generate_post_randomness_step(rand)</p>
-
-</code>
+for i in 0…log2(n):
+    A    <- generate_proof_step(i)
+    rand <- H(rand, A)
+    B    <- generate_post_randomness_step(rand)
+```
 
 这个流程完成后（即在log2(N)步后循环终止），就需要完成最后一次哈希计算，即最后一次的随机数计算。这个随机数就会输入到SnarkPack协议的其他部分。可以用伪代码简单表达：
 
-<code>
-
-<p style="padding-left: 50px;">KZG_proof(final_randomness, …)</p>
-
-<p style="padding-left: 50px;">final_randomness = H(B)</p>
-
-</code>
+```python
+KZG_proof(final_randomness, …)
+final_randomness = H(B)
+```
 
 ## 问题
 

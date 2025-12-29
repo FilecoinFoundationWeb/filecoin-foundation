@@ -128,7 +128,7 @@ Chainlink的去中心化预言机网络(DONs)及Filecoin的去中心化存储协
 
 想了解更多关于Filecoin、IPLD或libp2p的事宜吗？看一下 [ProtoSchool的自学互动教程](https://proto.school/)，它旨在让你了解去中心化网络的概念、协议和工具。以合适的方式，选择关心的主题并随时追踪自己的学习进度。可以在网页浏览器里完成JavaScript编程题目，或仅仅使用我们的文本或其他形式的教程，这样就可以不涉及代码了。
 
-## ✊ 来参与吧
+## 来参与吧
 
 浏览[**Github上的Filecoin项目**](https://github.com/filecoin-project) ，并确保看一下[**社区资源（community resources）**](https://github.com/filecoin-project/community)。在[**Filecoin的Slack频道**](http://filecoin.io/slack)可以提问，并在[**社区论坛**](https://discuss.filecoin.io/)上讨论问题或新的想法，或将你的想法发送到[**推特上的 @Filecoin**](https://twitter.com/Filecoin).
 

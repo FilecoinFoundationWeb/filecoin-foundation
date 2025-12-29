@@ -62,6 +62,6 @@ Curio的核心是容纳harmony_task表的Yugabyte数据库集群。每项处理�
 
 建立在任务框架之上的是我们熟悉的Lotus软件，用于管理PoST和封装。但是命令行很奇怪，一些特定于链的命令已经转移至`sptool`，这将是新的链专用用户界面。
 
-## 了解更多
+### 了解更多
 
 欲知更多信息，或在Filecoin Slack上关注#fil-curio-dev ，以及在[#fil-curio-announcements](https://filecoinproject.slack.com/archives/C06V5B3B7CJ)上提问。

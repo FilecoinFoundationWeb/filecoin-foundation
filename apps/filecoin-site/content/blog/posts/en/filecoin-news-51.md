@@ -125,7 +125,7 @@ Build real projects that solve real problems across 4 tracks: Metaverse & Gaming
 
 For builders in China, this hackathon with three tracks, namely the Green Future of low carbon and environmental protection brings an opportunity to win $10k from Protocol Labs!
 
-## ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

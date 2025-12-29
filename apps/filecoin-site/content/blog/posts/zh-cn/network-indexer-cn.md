@@ -53,19 +53,25 @@ _template: blog_detail_ch
 
 此检索结果会将提供者信息转回JSON格式：
 
+```json
+{
+  "MultihashResults": [
     {
-        "MultihashResults": [{
-            "Multihash": "EiA+alzi1S0oNez9wvbXIROQc8Q+B9ogM8BunCWS+m3ALA==",
-            "ProviderResults": [{
-                "ContextID": "AXESIM51QwYLyeGgLUIOT/Xyk1l+hfqSyj2EwN5wAH9Y3Z5n",
-                "Metadata": "gID8AaNoUGllY2VDSUTYKlgoAAGB4gOSICAmwARKsu6MUK4TuhQXqDkXViVlAnKxjUUCEVGRGt78EWxWZXJpZmllZERlYWz1bUZhc3RSZXRyaWV2YWz1",
-                "Provider": {
-                    "ID": "12D3KooWBwUERBhJPtZ7hg5N3q1DesvJ67xx9RLdSaStBz9Y6Ny8",
-                    "Addrs": ["/dns4/yablufc.ddns.net/tcp/4567"]
-                }
-            }]
-        }]
+      "Multihash": "EiA+alzi1S0oNez9wvbXIROQc8Q+B9ogM8BunCWS+m3ALA==",
+      "ProviderResults": [
+        {
+          "ContextID": "AXESIM51QwYLyeGgLUIOT/Xyk1l+hfqSyj2EwN5wAH9Y3Z5n",
+          "Metadata": "gID8AaNoUGllY2VDSUTYKlgoAAGB4gOSICAmwARKsu6MUK4TuhQXqDkXViVlAnKxjUUCEVGRGt78EWxWZXJpZmllZERlYWz1bUZhc3RSZXRyaWV2YWz1",
+          "Provider": {
+            "ID": "12D3KooWBwUERBhJPtZ7hg5N3q1DesvJ67xx9RLdSaStBz9Y6Ny8",
+            "Addrs": ["/dns4/yablufc.ddns.net/tcp/4567"]
+          }
+        }
+      ]
     }
+  ]
+}
+```
 
 该结果还显示CID可以从ID 为 `12D3KooWBwUERBhJPtZ7hg5N3q1DesvJ67xx9RLdSaStBz9Y6Ny8` 的提供商处获得，并可通过地址 `/dns4/yablufc.ddns.net/tcp/4567` 进行访问。元数据字段包含提供者用来定位内容并将其交付给客户端的数据。
 

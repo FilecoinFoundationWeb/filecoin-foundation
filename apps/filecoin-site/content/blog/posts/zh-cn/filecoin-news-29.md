@@ -215,7 +215,7 @@ _template: blog_detail_ch
 
 [马上注册！](https://gdg.community.dev/events/details/google-gdg-warri-presents-filecoin-orbit-events-2021-warri-nigeria/)
 
-## ✊ 快来参与
+## 快来参与
 
 前往[**Github上的Filecoin项目**](https://github.com/filecoin-project)并确保查看[**社区资源**](https://github.com/filecoin-project/community)。在[**Filecoin Slack**](http://filecoin.io/slack)频道提出问题，在[**社区论坛**](https://discuss.filecoin.io/) 讨论问题或新想法，在微信号 @Filecoin-Official 关注我们，或[**在推特@Filecoin**](https://twitter.com/Filecoin)上向我们提出你的想法。
 

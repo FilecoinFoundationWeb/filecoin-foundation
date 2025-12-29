@@ -133,7 +133,7 @@ Rust实施方案团队Forest又来打招呼了！我们是 [**ChainSafe**](https
 
 在7月，Encode Club公布了[**Encode Filecoin Club**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46) ，这是一个为期9个月的项目，包括了一项Filecoin教育系列、测量节点性能的实施指标、升级RPC远程过程调用及CLI命令行终端等问题上也有一些进展。你可以在一个Filecoin黑客松以及后续的加速器项目。Filecoin Educate旨在通过Filecoin的知识向学生教授区块链技术，会有全球125多个大学区块链协会及学生来参与。要加入及了解更多，请查看[**完整活动时间表**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46)。
 
-## ✊快来参与
+## 快来参与
 
 前往[**Github上的Filecoin项目**](https://github.com/filecoin-project)并确保查看[**社区资源**](https://github.com/filecoin-project/community)。在[**Filecoin Slack**](http://filecoin.io/slack)频道提出问题，在[**社区论坛**](https://discuss.filecoin.io/) 讨论问题或新想法，在微信号 @Filecoin-Official 关注我们，或[**在推特@Filecoin**](https://twitter.com/Filecoin)上向我们提出你的想法。
 

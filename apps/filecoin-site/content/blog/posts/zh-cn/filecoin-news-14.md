@@ -54,7 +54,7 @@ Fleek宣布，他们正在为所有在[**Fleek**](https://fleek.co/)上创建的
 
 对还未了解过Textile来说，[**Textile**](https://textile.io/)是一套帮助你在IPFS和Filecoin上进行创建的工具和API--我们的项目包括[**Powergate**](https://github.com/textileio/powergate)、[**Buckets**](https://github.com/textileio/textile)和[**Threads**](https://github.com/textileio/go-threads)。我们精彩的进度更新和正在进行的项目要分享，所以ICYMI - 上周我们发布了矿工指数V1，[**buckets**](https://github.com/textileio/go-buckets)已经被拆分到他们自己的repo中，我们现在将用pining API进行扩展。此外，我们还将与[**协议实验室**](https://protocol.ai/)合作，向基于[**Textile的API**](https://docs.textile.io/)和开源工具构建的项目进行[**$25,000**](https://github.com/protocol/grants/blob/main/hackathons/gitcoin-gr9-hackathon/all-bounties.md)的资助。
 
-## 领先的摄影服务平台在IPFS&Filecoin上存储数据
+### 领先的摄影服务平台在IPFS&Filecoin上存储数据
 
 身为全球领先的摄影O2O平台，庞大的存储需求一直困扰着淘拍拍，[**分布式存储IPFS/Filecoin就此进入了淘拍拍的视野**](https://mp.weixin.qq.com/s/uHU4dNuC96YTh0_BydpH5A)。“我们非常欣赏Filecoin网络独有的的隐私性和安全性，其次在Filecoin上进行存储很大程度上节约了存储的成本，我认为Filecoin存储是摄影业的福音。”- _淘拍拍创始人王冲兴奋地说道。_
 
@@ -104,7 +104,7 @@ Filecoin社区见面会是一个认识Filecoin生态中许多工具和项目背�
 
 第一次DI2F研讨会将在一个重要的网络会议上举行，来自学术界、工业界、Filecoin和IPFS生态以及更广泛的去中心化互联网社区的与会者将齐聚一堂。研讨会欢迎正在进行中的论文，演讲和项目演示来参与。巅峰竞赛将为与会者提供在IPFS和Filecoin基础上进行开发的机会，并赢得奖金。论文、演示和竞赛项目的征集截止到**3月19日**。要了解更多信息并提交，请查看[**IFIP Networking 2021网站上的投稿征集**](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin.html)。
 
-## ✊ 快来参与
+## 快来参与
 
 您可以前往 [**GitHub网站查看Filecoin项目**](https://github.com/filecoin-project)，并查阅 [**社区资源**](https://github.com/filecoin-project/community)。在 [**Filecoin Slack**](http://filecoin.io/slack)中提问，在 [**社区论坛**](https://discuss.filecoin.io/)中讨论问题或新想法，或者在 [**Twitter 上关注@Filecoin**](<[https://twitter.com/Filecoin](https://twitter.com/Filecoin)>)，将您的想法发送给我们。
 

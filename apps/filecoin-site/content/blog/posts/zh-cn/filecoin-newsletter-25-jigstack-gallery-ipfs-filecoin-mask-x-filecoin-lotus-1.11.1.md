@@ -113,13 +113,10 @@ By completing the following steps, you will be eligible to win an NFT:
   - [FiveToken App](https://fivetoken.co/download)（用于可靠 ID 存储和管理的 Web3 跨链版本）
   - [FiveToken App](https://fivetoken.co/download)（用于 Filecoin 资产管理的存储提供者版本）
   - [FiveToken Chrome Extension](https://chrome.google.com/webstore/detail/filecoin-wallet/bpcblmpljpaghnefcaejpdakdbibmafm)（用于网站使用的 Web3 跨链版本）
-
 - 创建您的 FiveToken 账户并完成测试
 
 - 测试完成后，请在此填写 [Google 表单](https://docs.google.com/forms/d/e/1FAIpQLSd60FJKaVhv1IQzMS7vyS4rvZneCW3FinH6mhxdZdoZkSLDIg/viewform)
-
 - 在您的 Twitter 账户上分享测试最终页面截图，并 @fivetokenio
-
 - 在我们公布获奖名单后领取您的 NFT 貔貅
 
 [![](/uploads/korean.webp)](https://panelpicker.sxsw.com/vote?search%5Bconference_id%5D=40)
@@ -146,7 +143,7 @@ Filecoin韩语频道已在很多热门社交网络和讨论组中推出。加入
 
 [Encode Filecoin俱乐部](https://www.encode.club/filecoin-educate)邀请了Protocol Labs工程师和技术作家Yusef Napora，向学生和黑客介绍NFT。在一小时的会议中，[Yusef就NFT主题发表演讲](https://medium.com/encode-club/encode-filecoin-club-intro-to-nfts-video-slides-ac754d569476)，诸如其相关合同、标准和存储难点。他还引导与会人员亲身体验了部署和创建NFT的编码挑战，以及如何在[NFT.Storage](https://nft.storage/)上存储NFT。
 
-## Get Involved
+## 加入我们
 
 前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)并查看 [**社区资源**](https://github.com/filecoin-project/community)。您可以在[**Filecoin Slack**](http://filecoin.io/slack)频道提问，还可以在[**社区论坛**](https://discuss.filecoin.io/)中讨论问题和新想法。您还可以关注我们的微信公众号@Filecoin-Official或者[**在Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们您的想法。
 [**Filecoin博客**](https://filecoin.io/blog/)和[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)对初学者来说也是重要的信息来源。

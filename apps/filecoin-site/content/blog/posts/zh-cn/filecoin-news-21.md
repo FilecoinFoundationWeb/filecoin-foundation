@@ -149,7 +149,7 @@ Encode Filecoin Club是一个与Encode Club俱乐部举办的为期９个月的�
 
 确保[**回复确认邀请（RSVP）**](https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsycckbrb/) ，期盼相见！
 
-## ✊ 一起参与
+## 一起参与
 
 跳转到[**Github上的Filecoin项目**](https://github.com/filecoin-project)并确保查看 [**社区资源（community resources）**](https://github.com/filecoin-project/community)。在[**Filecoin Slack频道**](http://filecoin.io/slack)提出问题，在 [**社区论坛（community forum）**](https://discuss.filecoin.io/)提出问题或新想法。可以关注我们的微信 @Filecoin-Official 或[**在推特 @Filecoin**](https://twitter.com/Filecoin)将你的想法发给我们。
 

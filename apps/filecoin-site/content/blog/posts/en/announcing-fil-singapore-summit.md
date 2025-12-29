@@ -26,8 +26,6 @@ _template: blog_detail
 
 In light of the ongoing COVID-19 disruption and continued travel restrictions across Asia Pacific, we are postponing FIL Singapore to late September to ensure we meet the event’s high expectations, which we share with our valued community. The event will now take place September 26-27, at the Marina Bay Sands in Singapore, ahead of TOKEN2049. We understand this change is disruptive for our community members who have made plans to attend the event. Thank you for your flexibility and support. We look forward to seeing you later this year!
 
-## 
-
 IPFS Force is thrilled to announce the FIL-Singapore Summit from August 16th-19th in Singapore.
 
 The event will be a celebration of all the amazing progress in the ecosystem and a look ahead to the exciting future of the network. The summit will bring together over a thousand Web3 community members and will be an opportunity to explore what’s next for the Filecoin ecosystem.

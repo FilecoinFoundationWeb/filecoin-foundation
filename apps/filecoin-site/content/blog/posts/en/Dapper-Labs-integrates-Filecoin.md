@@ -8,7 +8,7 @@ date: "2021-08-26T04:00:00Z"
 dim_image: true
 double_column_inverted: false
 double_column_mode: false
-excerpt: ""
+excerpt: Dapper Labs is integrating Filecoin to spearhead the end-to-end ownership of NFTs, including the underlying media assets, and to establish best practices for the storage of NFT data.
 image:
   alt: ""
   url: /uploads/dapper-blog-2.webp
@@ -34,11 +34,9 @@ A Flow developer has written [a great tutorial](https://medium.com/@qq976739120/
 
 ![](/uploads/eternal-header.webp)
 
-### Spotlight on Eternal.gg
+### Spotlight on Eternal.gg: An example of a project on Flow using IPFS and Filecoin
 
-An example of a project on Flow using IPFS and Filecoin
-
-**Eternal.gg has been using IPFS to create immutable links between their minted video NFTs and the associated metadata, and is in the process of backing up their content to Filecoin.**
+Eternal.gg has been using IPFS to create immutable links between their minted video NFTs and the associated metadata, and is in the process of backing up their content to Filecoin.
 
 - IPFS allows content to be referenced based on a fingerprint of the content itself. By embedding this reference inside the metadata of an NFT on-chain, an immutable link can be made between a token on the Flow blockchain and the video NFT itself.
 
@@ -48,8 +46,9 @@ In their first 3 months, the Eternal team has minted and sold **more than 60,000
 
 ![](/uploads/eternal-nft-examples-strip.gif)
 
-- **About Eternal.gg**  
-  _Eternal.gg is a platform enabling streamers and esports players to monetize their epic livestream moments. Community members can purchase packs of moments, and trade moments with other fans to help both energize the fan experience and strengthen the relationship between creators and their fans. Eternal elected to launch on the Flow blockchain due to its low gas costs and high throughput._
+**_About Eternal.gg_**
+
+_Eternal.gg is a platform enabling streamers and esports players to monetize their epic livestream moments. Community members can purchase packs of moments, and trade moments with other fans to help both energize the fan experience and strengthen the relationship between creators and their fans. Eternal elected to launch on the Flow blockchain due to its low gas costs and high throughput._
 
 To jumpstart the collaboration, there will be grants available for the Flow ecosystem, starting with the Next Step Microgrant Program.
 

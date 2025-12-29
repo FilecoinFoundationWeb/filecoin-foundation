@@ -107,7 +107,7 @@ ETHDenver IRL注意到有50个精彩的作品是在IPFS & Filecoin上搭建的�
 
 [START Hack](https://www.starthack.eu/) 培育深刻的企业家理解及推动职业生涯。今年，这个黑客松有价值3万瑞士法郎的奖池，有Konstantin Tkachuk关于IPFS和Filecoin及其在Web3未来角色的workshop，还有很多精彩内容！。
 
-## ✊ 快来参与
+## 快来参与
 
 前往[**Github上的Filecoin项目**](https://github.com/filecoin-project)并确保查看[**社区资源**](https://github.com/filecoin-project/community)。在[**Filecoin Slack**](http://filecoin.io/slack)频道提出问题，在[**社区论坛**](https://discuss.filecoin.io/) 讨论问题或新想法，在微信号 @Filecoin-Official 关注我们，或[**在推特@Filecoin**](https://twitter.com/Filecoin)上向我们提出你的想法。
 

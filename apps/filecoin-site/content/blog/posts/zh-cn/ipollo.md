@@ -66,8 +66,6 @@ iPollo启动了带有500个节点的测试链，还通过NDLabs在Filecoin上存
 
 ![](/uploads/architecture.webp)
 
-![](/uploads/architecture.webp)
-
 问题：内容所有权
 
 iPollo的数据主要由NFT构成，后者可以是为了化身、空间和其他用户生成内容创建的。这些在公开市场上都可以交易，因此该网络需要有一个存储系统，来确保用户的内容所有权在不同的游戏、平台和区块链上都是一致的。为了实现这点，它需要：

@@ -101,7 +101,7 @@ The ongoing 2022 ETHernals online hackathon is happening until March 27th. As a 
 
 [START Hack](https://www.starthack.eu/) fosters deep entrepreneurial understanding and supercharges careers. This year, the hackathon features an exciting prize pool of CHF 30,000, engaging workshops by Konstantin Tkachuk on IPFS and Filecoin and how they shape the future of Web3, and much more! Up for the challenge?
 
-## ✊ Get Involved
+## Get Involved
 
 Head over to the [Filecoin project on GitHub](https://github.com/filecoin-project) and be sure to take a look at the [community resources](https://github.com/filecoin-project/community). Ask questions in the [Filecoin Slack](http://filecoin.io/slack), discuss issues or new ideas in [the community forum](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [on Twitter by following @Filecoin](https://twitter.com/Filecoin).
 

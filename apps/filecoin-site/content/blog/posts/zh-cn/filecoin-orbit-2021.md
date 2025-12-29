@@ -105,7 +105,7 @@ Filecoin Orbit几周前宣布为更多人提供一个新机会，向Protocol Lab
 
 Dotan呼吁提高开源的多样性和普惠性，“鉴于开源技术开发生态的相关数据，我们必须采取保护性措施，实现真正的普惠性。”
 
-### 🧱黑客松
+### 🧱 黑客松
 
 去年共有30多场Filecoin和IPFS黑客松以及数十件优秀项目及应用问世。来自Protocol Labs的Lukas Bresser总结了[上一年度Hackathons高光时刻](https://www.youtube.com/watch?v=loNmFfCQmqc&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=16)并宣布推出[Filecoin Hackathons网站](https://fil.org/events/)，网站将持续更新Hackathons相关信息，发布未来活动计划！
 

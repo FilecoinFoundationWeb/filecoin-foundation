@@ -7,7 +7,7 @@ date: "2021-08-26T04:00:00Z"
 dim_image: false
 double_column_inverted: false
 double_column_mode: false
-excerpt: ""
+excerpt: Dapper Labs和Filecoin的合作引领了端对端的NFT所有权,这包括了底层的媒体资源及创立NFT数据的最佳实践。
 image:
   alt: ""
   url: /uploads/dapper-blog-2.webp
@@ -16,7 +16,7 @@ related_article_1: ""
 related_article_2: ""
 related_article_3: ""
 share_image: /uploads/dapper-blog-2.webp
-title: Filecoin与Dapper Labs展开合作，共同推动Flow区块链上的NFT和游戏元宇宙发展
+title: Filecoin与Dapper Labs展开合作,共同推动Flow区块链上的NFT和游戏元宇宙发展
 _template: blog_detail_ch
 ---
 
@@ -34,7 +34,7 @@ Flow项目的开发者编写了[一份很棒的教程](https://medium.com/@qq976
 
 ### 特别关注Eternal.gg: 一个使用IPFS和Filecoin的Flow项目例子
 
-**Eternal.gg使用了IPFS技术，在其所铸造的视频NFT和相关元数据之间创建无法篡改的链接，目前正将其内容备份到Filecoin上。**
+Eternal.gg使用了IPFS技术，在其所铸造的视频NFT和相关元数据之间创建无法篡改的链接，目前正将其内容备份到Filecoin上。
 
 - IPFS能够通过内容自身的指纹来引用这些内容。通过将这个引用方式植入链上NFT的元数据里，就可以在Flow区块链上的token和视频NFT之间创建不可篡改的链接。
 - 通过**NFT.Storage**，内容可以使用IPFS进行pin固化操作，并在Filecoin的分布式存储提供者网络上存储。Filecoin上的存储提供者提交密码学证明，来说明内容的完整性以及可用性。
@@ -43,7 +43,7 @@ Flow项目的开发者编写了[一份很棒的教程](https://medium.com/@qq976
 
 ![Eternal NFT Examples Strip](/uploads/eternal-nft-examples-strip.gif)
 
-**关于Eternal.gg**
+**_关于Eternal.gg_**
 
 _Eternal.gg是一个让流媒体创作者和电子竞技玩家将其精彩的流媒体时刻变现的平台。社区成员可以购买这些精彩的时刻，并与其他粉丝交易，从而活跃粉丝的体验，强化创作者和粉丝之间的关系。Eternal选在Flow区块链上发布，是因为其低廉的gas费用和高吞吐量。_
 
@@ -57,7 +57,7 @@ _Eternal.gg是一个让流媒体创作者和电子竞技玩家将其精彩的流
 
 另外，请持续关注与这个激动人心的合作关系相关的Filecoin x Flow黑客松的更多信息！
 
-### 更多资源
+## 更多资源
 
 - [如何使用Flow和NFT.Storage创建NFT](https://medium.com/@qq976739120/how-to-create-an-nft-with-flow-and-nft-storage-1ccce45797b0)
 - [NFT.Storage提供的免费存储](https://nft.storage/)

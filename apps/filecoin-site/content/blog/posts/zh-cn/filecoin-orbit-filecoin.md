@@ -48,15 +48,15 @@ Filecoin主网在2020年10月15日上线后，启动了分布式存储的新纪�
 
 ![](/uploads/hyperdrive-1.webp)
 
-## Hyperdrive升级
+### Hyperdrive升级
 
-在2021年6月，仅仅是在主网发布后的8个月,Filecoin v13 ‘HyperDrive’ 网络升级在存储增加能力上就带来了10-25倍的提升。Filecoin作为首个主要的L1层链就实现了显著的链带宽增长。从那以后，每日存储容量增长率翻倍到超过60PiB/日，预计到2021年末网络容量会达到 \~20EiB .
+在2021年6月，仅仅是在主网发布后的8个月,Filecoin v13 'HyperDrive' 网络升级在存储增加能力上就带来了10-25倍的提升。Filecoin作为首个主要的L1层链就实现了显著的链带宽增长。从那以后，每日存储容量增长率翻倍到超过60PiB/日，预计到2021年末网络容量会达到 \~20EiB .
 
 这个升级的完成得益于Filecoin证明系统的创新。从主网上线开始，Filecoin网络一直工作在最大的容量，这要归因于庞大的存储提供者需求，这让Filecoin最大的SNARK零知识证明系统（以处于生产状态中的系统为准），每日产出和验证超过500万次SNARKs证明。
 
 从2020年12月到2021年4月，CryptoNetLab和CyptoComputeLab设计和实施了[SnarkPack](https://research.protocol.ai/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/)，这是一个通过聚合来扩展SNARK证明的新型策略，带来了可扩展性的提升，并缓和了网络堵塞的问题。 SnarkPack在[改进提议FIP13](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0013.md)里实施，为Filecoin网络带来了10-25倍的链容量扩展。
 
-## 检索市场（Retrieval Markets）
+### 检索市场（Retrieval Markets）
 
 检索市场是Filecoin之上搭建的最激动人心的平台之一，因为它以去中心化方式提供了类似CDN网络的体验，在上面人们可以一起提供为终端用户提供带宽和地理位置。
 
@@ -66,11 +66,11 @@ Filecoin主网在2020年10月15日上线后，启动了分布式存储的新纪�
 
 现在，有几个团队正搭建检索市场解决方案的不同实现方法。你可以每两周在[检索市场演示日——Retrieval Markets Demo Days](https://docs.google.com/document/d/1IrNbBm2_P79Xi2fXFj9YUfQ0PjWjreGdPYFjFntD1QM/edit#heading=h.akao8aspby4f)查看他们的进展。
 
-## Filecoin实现方案
+### Filecoin实现方案
 
 ![](/uploads/lotus-2.webp)
 
-### Lotus
+#### Lotus
 
 Lotus是Filecoin的首个替代实现方案，[它在2019年发布](https://filecoin.io/blog/posts/announcing-lotus-our-first-alternate-filecoin-implementation/)，差不多早于主网上线一年时间。在去年，[Filecoin Lotus实现方案](https://github.com/filecoin-project/lotus)有了明显的改进。
 
@@ -80,13 +80,13 @@ Lotus是Filecoin的首个替代实现方案，[它在2019年发布](https://file
 
 Lotus还支持了20多个FIP改进提议所带来的8个网络升级、实现方案和规格工作，最近还有加速的三周发布周期。
 
-### Forest
+#### Forest
 
 [Forest](https://github.com/ChainSafe/forest)是由[ChainSafe](https://medium.com/chainsafe-systems)推出的Rust Filecoin实现方案，在今年也有很多的改进。现在，它已提供完整的兼容性，并与Filecoin主网的最新版本同步。该团队计划在10月末发布和分享这个实现方案。
 
 这个带有最小可用功能的版本的功能包括信息池、状态管理器、链、钱包命令行功能、Prometheus指标和JSONRPC服务器。在Sigma Prime审计阶段存在的漏洞现在也已经修复。
 
-### Venus
+#### Venus
 
 在去年10月主网上线前，IPFSForce团队负责了go-filecoin实现方案的维护和开发，将其重命名为[Venus](https://filecoin.io/blog/posts/welcome-venus-to-the-filecoin-mainnet/)项目。
 
@@ -98,15 +98,15 @@ Lotus还支持了20多个FIP改进提议所带来的8个网络升级、实现方
 
 现在，为了鼓励更多的存储提供者采用Venus，有以下的计划正在进行：为分布式存储池设计的分享奖励机制提议，一个更强大的存储池市场，以及Venus Master计划。
 
-### Fuhon
+#### Fuhon
 
 2020年1月，[由Soramitsu提供的Filecoin C++实现方案](https://filecoin.io/blog/posts/announcing-filecoin-implementations-in-rust-and-c/) 正式公开。从那时候开始，Fuhon这个项目完成了节点开发（包含测试），现正进行节点API开发、市场整合、存储提供者整合以及节点互操作性测试。该团队在原生的cpp-actors开发上取得了明显的进展，不过actors还未进入生产就绪的阶段。
 
 总的来说，Fuhon在去年有了显著的性能和可扩展性方面的提升，目前正处于最近的测试阶段。在Fuhon团队的帮助下，Cpp-libp2p被提升到生产就绪的级别。今年的主要目标则是让节点进入生产阶段，并吸吸引早期用户。
 
-![](/uploads/snarks.webp)
-
 ### 证明提升 & zk-SNARKs世界网站
+
+![](/uploads/snarks.webp)
 
 非互动零知识证明（Non-interactive zero-knowledge proofs，zk-SNARKs）是一种密码学技术，它能让证明者说服验证者自己知道某项信息，而无需揭露这项信息的内容。
 
@@ -124,19 +124,19 @@ Protocol Labs、Ethereum基金会、Filecoin基金会、Electric Coin公司(ECC)
 
 通用的ASIC证明和GPU优化有望改善通用证明（不止是VDF证明）的经济成本，在这些系统的改善幅度将达5-10倍。
 
-Protocol Labs Cryptosat正协作探索一种“太空VDF”的可能性。一种高层级的想法是利用光速作为通信延迟中“无法突破的速度限制”，正可能让我们实现更好的A<sub>max</sub>值（攻击者的最大优势）(，这会比基于计算机速度的算法和硬件优化所能带来的最大理论提升都要强。
+Protocol Labs Cryptosat正协作探索一种"太空VDF"的可能性。一种高层级的想法是利用光速作为通信延迟中"无法突破的速度限制"，正可能让我们实现更好的A<sub>max</sub>值（攻击者的最大优势）(，这会比基于计算机速度的算法和硬件优化所能带来的最大理论提升都要强。
 
 在这种模式中，延迟是根据可验证位置里的不同卫星之间的最小通讯时间算出来的。
 
-![](/uploads/drand.webp)
-
 ### Drand
+
+![](/uploads/drand.webp)
 
 [Drand](https://drand.love/)是[Filecoin的领导人选举](https://filecoin.io/blog/posts/filecoin-features-distributed-randomness-leader-elections/)使用的分布式随机信标，它在今年早期[庆祝了其一周年](https://drand.love/blog/2021/08/10/drand-celebrates-one-year-as-a-randomness-service/)，并完成了100万轮无间断的服务。
 
 Drand的背后是其合作伙伴网络[League of Entropy](https://blog.cloudflare.com/league-of-entropy/) (LoE)在支持。从Filecoin在去年10月启动开始，这个组织已经有了扩展，并增加了两名新成员：[ZenGo](http://zengo.com/)和[对抗量子账本（Quantum Resistant Ledger）](https://www.theqrl.org/) (QRL)。
 
-LoE目前正在扩张，寻求新成员的加入。如果你准备好贡献到“让drand成为基础性的互联网协议”的使命，[请与他们取得联系](mailto:leagueofentropy@googlegroups.com)。
+LoE目前正在扩张，寻求新成员的加入。如果你准备好贡献到"让drand成为基础性的互联网协议"的使命，[请与他们取得联系](mailto:leagueofentropy@googlegroups.com)。
 
 为了支持更广泛的应用，Drand正升级一些新的特性。时间锁加密（Time Lock Encryption）会有效地应对与最大可提取价值（Maximal Extractable Value）相关的威胁。这种威胁类似Ethereum上的MEV攻击或DeFI里的抢跑攻击（front running attacks）。
 
@@ -148,7 +148,7 @@ Drand很快会支持更高频率的随机信标，与现有的30秒信标并行�
 
 它的启动活动[ConsensusDays 21](https://research.protocol.ai/sites/consensusday21/)包括了24场演讲，有共识和相关领域的前沿研究人员参与，这为未来的大规模协作奠定了基础。
 
-### 产品用例
+## 产品用例
 
 自从Filecoin启动后，开发者工具有了很大的进步，而很多新的用例也可以利用Filecoin提供的密码学验证、稳健和分布式存储的独特价值。
 
@@ -158,7 +158,7 @@ Drand很快会支持更高频率的随机信标，与现有的30秒信标并行�
 
 ![](/uploads/nft-storage.webp)
 
-#### NFT.Storage
+### NFT.Storage
 
 [NFT.Storage](https://nft.storage/) [在2021年4月启动](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/)，它以免费的简单服务提供了链下NFT元数据存储功能。上传到NFT.Storage的HTTP endpoint的数据在Filecoin上持久化了，并在公开的IPFS网络可以访问。
 
@@ -168,13 +168,13 @@ Drand很快会支持更高频率的随机信标，与现有的30秒信标并行�
 
 ![](/uploads/web3-storage.webp)
 
-#### Web3.Storage
+### Web3.Storage
 
 [Web3.Storage](https://web3.storage) [在2021年8月启动](https://filecoin.io/blog/posts/introducing-web3-storage/)，它为开发者提供了简单的界面，用于从IPFS和Filecoin上存取数据。这是一个免费的服务，它提供了熟悉的存储接口（包括JS客户端库和HTTP API），是开发者上传数据到Filecoin的最简单方式。它在背后承担了与去中心化存储直接互动的复杂性。
 
 从启动开始，Web3.Storage项目快速增长到2000多名用户和500万笔上传。这样，新进入web3领域的开发者正亲身体验内容寻址和无需信任的存储方式，是如何带来更轻量的后端基础设施、更去中心化结构和更小的用户锁定效应，而有经验的web3开发者则可以快速将IPFS和Filecoin与其现有生产级别的dapps结合。
 
-#### Textile
+### Textile
 
 Textile公司一直推出各种工具，让开发者更快更容易在IPFS和Filecoin上搭建去中心化应用。它在Ethereum、[Polygon](https://polygon.technology/)和[NEAR](https://near.org/)上发起了无需许可的[Filecoin存储桥](https://eth.storage/docs/)。它还推出了一个Filecoin交易提议拍卖试验项目（Deal Auctions pilot），让客户高效地向网络上传输大量的数据集。这个项目当前每天达到2TiB的能力，每周增长\~25%．从10月1日起，这个实验项目的活跃Filecoin交易提议达到了205TB.
 
@@ -184,9 +184,9 @@ Textile公司一直推出各种工具，让开发者更快更容易在IPFS和Fil
 
 在3月，[Estuary](https://estuary.tech)发起，从那时候开始已[成长为一个可靠的可扩展接入Filecoin网络解决方案](https://filecoin.io/blog/posts/taking-a-look-at-estuary/)。 Estuary节点有自己的libp2p技术栈和完整的IPFS及Filecoin特性，能帮助任何人达成多种Filecoin存储交易提议。Estuary已经成功达成了23,000笔存储交易提议，存储了超过150 TiB大小的文件，与Filecoin生态的很多公司和组织合作过，并与全球100多个存储提供者进行了数据存储。
 
-#### Web2用例
+### Web2用例
 
-##### 互联网存档
+#### 互联网存档
 
 [互联网存档项目（Internet Archive）](https://archive.org/)是一个数字博物馆，其使命是提供对所有知识的访问。在2021年4月，[互联网存档项目宣布与Protocol Labs合作](https://blog.archive.org/2021/04/01/filecoin-foundation-grants-50000-fil-to-the-internet-archive/) ，将其数字资源传送到这个去中心化网络里。在7月，基金会开始了最初的概念验证项目，。将2016年的web存档数据集（约200TiB大小）上传到Filecoin。
 
@@ -250,7 +250,7 @@ Techstars Filecoin加速器是一项激动人心的协作，旨在推动新的�
 
 从一开始，Filecoin网络就以远超于最初预计的速率增加存储空间，很快在4月达到了最大的 [基准线（baseline）](https://medium.com/block-science/sustainability-goal-achieved-filecoin-network-crosses-baseline-target-cec13a3ed8f) 铸造水平（minting level）。从那开始，网络的能力日益强大起来。
 
-在7月，Filecoin社区同意批准了一个新的 [FIP提议](https://github.com/filecoin-project/FIPs/issues/127)，以将以往局限性较大的术语改成更合适的“存储提供者”。在下一阶段，将会有更多的Filecoin存储用户加入，这样的重构能够帮助向企业客户强调这个网络的实用性和价值。
+在7月，Filecoin社区同意批准了一个新的 [FIP提议](https://github.com/filecoin-project/FIPs/issues/127)，以将以往局限性较大的术语改成更合适的"存储提供者"。在下一阶段，将会有更多的Filecoin存储用户加入，这样的重构能够帮助向企业客户强调这个网络的实用性和价值。
 
 自从网络启动开始，全球上线的存储提供者数量有了惊人的增长。今天，有3,300个Filecoin系统在运行，每天还新增5到10个。
 
@@ -277,6 +277,7 @@ Techstars Filecoin加速器是一项激动人心的协作，旨在推动新的�
 为了扩展Filecoin在韩国和日本社区的影响力，在8月份，这两个国家里都开展了本地化语言推广和社区建设活动，还有相关的见面会以让这些社区了解Filecoin的更多知识。
 
 另一个值得注意的计划则是存储提供者的地理位置分散到其他国家，并在亚洲范围内建设战略性的关系，如[NFTStar](https://www.prnewswire.com/news-releases/the9-limited-polygon-and-protocol-labs-announced-ecosystem-collaboration-on-nftstar-and-gamefi-play-to-earn-projects-301383501.html)等。
+
 ![](/uploads/brave-1.webp)
 
 ### 浏览器

@@ -9,7 +9,7 @@ date: "2019-12-03T05:00:00Z"
 dim_image: false
 double_column_inverted: false
 double_column_mode: false
-excerpt: ""
+excerpt: Announcing the Wave 1 recipients of Filecoin Dev Grants and opening Wave 2 with new RFPs for Expected Consensus Visualization and Wallet development.
 image:
   alt: Filecoin Dev Grants
   url: /uploads/devgrants-wave2-main-header.webp

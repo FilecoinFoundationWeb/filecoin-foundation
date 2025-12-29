@@ -24,11 +24,11 @@ _template: blog_detail_ch
 
 ## 创建
 
-### ⚡️分布式生态基金
+### ⚡️ 分布式生态基金
 
 分布式资本与协议实验室合作宣布成立1500多万美元的投资基金。该基金的使命是推动IPFS和Filecoin生态的发展。分布式计划筹集1500-2000万美元，并承诺将所有筹资和投资都以FIL的形式，而不是稳定币或其他加密资产。分布式已与其他有限合伙人一起向基金投入了100万美元。分布式预计目标投资交易主要有三个来源：Slingshot项目、LongHash Filecoin Frontier 加速营和中国社区。有关该基金的更多信息，请参见[Blog](https://filecoin.io/blog/posts/the-fenbushi-ecosystem-fund-for-filecoin-development/)。
 
-### 🧑💻来自Textile的最新消息
+### 🧑💻 来自Textile的最新消息
 
 Textile在Filecoin上进行了许多创建您可能已经错过其中一些：Powergate V2发布会、[以创建一个Powergate v2演练视频的公开FIL赏金项目](https://gitcoin.co/issue/textileio/powergate/773/100024745)、[Filecoin的pinningAPI反馈](https://github.com/textileio/community/discussions/291)、[Filecoin矿工指数与市场的探索](https://github.com/textileio/community/discussions/292)，我们正在招聘人员帮助Filecoin构建生态，如果您有兴趣，点击[此处申请](https://textile.breezy.hr/)。
 
@@ -44,7 +44,7 @@ Textile在Filecoin上进行了许多创建您可能已经错过其中一些：Po
 
 Starling案例研究。灭绝种族罪的证词
 
-### 🗓 **Starling + Filecoin案例分析:78天**
+### 🗓 Starling + Filecoin案例分析:78天
 
 上周，Starling实验室发布了*可信图像档案馆*。该档案是路透社的摄影记者在2020年11月美国总统大选和2021年1月就职典礼之间的78天内拍摄的图片集。这些图像被上传并存储在Filecoin网络上，包括不可更改的元数据，如位置、时间和验证信息 —— 以确保记录始终存在，以防止篡改和虚假信息。要了解更多相关内容，您可点击[此处](https://www.starlinglab.org/78days/)访问该档案库。
 
@@ -60,7 +60,7 @@ OB1即将完成[Filehive](https://filehive.io/)的第一个版本，Filehive是�
 
 ## 挖矿
 
-### ⬆️开发升级
+### ⬆️ 开发升级
 
 Lotus发布了[v1.4.2](https://github.com/filecoin-project/lotus/releases/tag/v1.4.2)，这是一个可选的、但强烈推荐的版本，为Lotus矿工提升了交易体验和提供了新的功能和改进。点击[此处](https://github.com/filecoin-project/lotus/discussions/5595)查看更多相关细节以及在该链接中留下你的问题。另外，3月份还将进行一次网络升级，跟进未来的更新请见[网络公告](https://github.com/filecoin-project/community/discussions/74)和[lotus v1.5.0发布和升级时间表](https://github.com/filecoin-project/lotus/discussions/5617)。
 
@@ -76,7 +76,7 @@ Venus，原名go-filecoin，是以Golang语言创建的第一个Filecoin实现--
 
 想参与其中吗？我们鼓励所有开源贡献者与IPFSForce团队一起帮助构建[Venus](https://github.com/filecoin-project/venus)，让Filecoin变得更强大、更有弹性。
 
-### ➕Filecoin Plus
+### ➕ Filecoin Plus
 
 为了最大限度地提高Filecoin能够和将要支持的有用存储量，网络创新性地通过Filecoin Plus引入了一层社会信任。用户使用一种新的方式——DataCap与矿工进行交易，矿工存储数据的积极性大大提高，因为随着时间的推移，矿工的区块奖励份额会增加。
 
@@ -88,7 +88,7 @@ Filecoin MinerX 奖学金计划旨在让不同地方的多样化中小型Filecoi
 
 MinerX成员将在计划期间接受存储和检索交易，支持各种开发工作，确定网络的改进方向，与社区接触，并增加他们的网络足迹。如果您有兴趣了解更多关于MinerX计划的信息，请阅读[blog文章](https://filecoin.io/blog/posts/filecoin-minerx-fellowship-program/)。
 
-### 🔁了解Filecoin的流通供应
+### 🔁 了解Filecoin的流通供应
 
 Filecoin协议中嵌入的经济机制确保网络活动和利益相关者与网络的长期健康发展相匹配。基于网络增长的铸币变量、解锁方式、代币消耗、抵押品要求等机制使参与者的激励和动机与网络的长期成功相匹配。
 
@@ -96,7 +96,7 @@ Filecoin协议中嵌入的经济机制确保网络活动和利益相关者与网
 
 ## 社区
 
-### 🤝Filecoin社区见面计划
+### 🤝 Filecoin社区见面计划
 
 Filecoin社区见面会是一个认识Filecoin生态中许多工具和项目背后的团队的机会。如果您错过了2月份的见面会，请点击[此处查看记录](https://www.youtube.com/watch?v=fpGvQtUoHaw)，并在3月9日下午1点（太平洋时间）加入我们的下一次线上见面会--[点击此处注册](https://www.meetup.com/Filecoin-San-Francisco/events/276425691/)。此外，如果您有兴趣在3月的见面会上就您的项目做一个简短的演示，请[点击此处申请](https://docs.google.com/forms/d/e/1FAIpQLSc5Ol4Q_FpdnM61gQRQ10DLLrRAy8-j6YrfWUBEbcVVkNQ4mQ/viewform)。
 
@@ -106,7 +106,7 @@ Filecoin社区见面会是一个认识Filecoin生态中许多工具和项目背�
 
 第一次DI2F研讨会将在重要的网络会议上举行，届时来自学术界、工业界、Filecoin和IPFS生态以及更广泛的分布式网络社区的与会者将齐聚一堂。研讨会欢迎正在进行中的论文以及立场声明和项目演示参与进来。相关竞赛将为与会者提供在IPFS和Filecoin上发展的机会，并赢得奖金。论文、演示和竞赛项目的征集截止到**3月19日**。要了解更多信息和申请，请查看[IFIP Networking 2021网站的投稿征集活动](https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin.html)。
 
-### 💻在Proto学院的最新教程中探索Merkle DAGs
+### 💻 在Proto学院的最新教程中探索Merkle DAGs
 
 使用IPLD提供模式结构化的内容寻址的Merkle DAGs是Filecoin、IPFS、libp2p和其他分布式协议互操作性的关键。[Proto学院最新无代码教程](https://proto.school/merkle-dags)深入探讨了使Merkle DAGs成为分布式网络框架的特性，探索了该数据结构所带来的诸多好处，例如从可验证性到可分发性再到重复数据删除。点击此处探索Proto学院[Filecoin课程](https://proto.school/course/filecoin)中的新教程!
 

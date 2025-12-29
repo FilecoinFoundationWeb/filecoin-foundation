@@ -112,7 +112,7 @@ The first DI2F workshop, taking place at a premier networking conference, will b
 
 Content-addressed Merkle DAGs, structured using schemas provided by IPLD, are key to the interoperability of Filecoin, IPFS, libp2p, and other distributed protocols. [ProtoSchool’s latest code-free tutorial](https://proto.school/merkle-dags) takes a deep dive into the properties that make Merkle DAGs the backbone of the distributed web, exploring the many benefits that the data structure unlocks, from verifiability to distributability to deduplication. Explore the new tutorial in ProtoSchool’s [Filecoin course](https://proto.school/course/filecoin)!
 
-### Want to get involved
+## Get Involved
 
 Head over to the [Filecoin project on GitHub](https://github.com/filecoin-project) and be sure to take a look at the [community resources](https://github.com/filecoin-project/community). Ask questions in the [Filecoin Slack](http://filecoin.io/slack), discuss issues or new ideas in [the community forum](https://discuss.filecoin.io/), or send us your thoughts [on Twitter by following @Filecoin](https://twitter.com/Filecoin).
 

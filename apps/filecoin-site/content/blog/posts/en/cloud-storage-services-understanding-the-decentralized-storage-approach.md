@@ -99,7 +99,7 @@ As described in the [IPFS whitepaper](https://github.com/ipfs/papers/raw/master/
 
 This last sentence is important. It’s necessary to understand content-addressing for cloud storage in order to understand IPFS.
 
-_(For a more detailed explanation of how IPFS works, be sure to visit the [documentation](https://docs.ipfs.tech/concepts/how-ipfs-works/#content-addressing).)_
+_(For a more detailed explanation of how IPFS works, be sure to visit the [documentation](https://docs.ipfs.tech/concepts/how-ipfs-works/#content-addressing))._
 
 ### Content Addressing
 
@@ -115,9 +115,9 @@ Content addressing provides a number of benefits in terms of security, reliabili
 
 However, as [explained](https://docs.filecoin.io/developers/introduction/filecoin-and-ipfs/) in the Filecoin documentation, this isn’t enough for a decentralized cloud storage service:
 
-IPFS alone does not include a built-in mechanism to incentivize the storage of data for other people. This is the challenge Filecoin aims to solve. Filecoin is built on IPFS to create a distributed storage marketplace for long-term storage. Nodes with a large storage capacity can rent their storage to users and get paid for it.
+_IPFS alone does not include a built-in mechanism to incentivize the storage of data for other people. This is the challenge Filecoin aims to solve. Filecoin is built on IPFS to create a distributed storage marketplace for long-term storage. Nodes with a large storage capacity can rent their storage to users and get paid for it._
 
-The Filecoin network ensures that data is safely stored. However, the processes of storing, verifying, and unsealing (referred to as sealing, proving, and retrieving, respectively) are computationally expensive and can take time. This is especially relevant for the retrieval of data, which should happen as fast as possible. For this reason, Filecoin enables an additional retrieval market where dedicated nodes can help quickly deliver content from the network for payment by keeping unsealed, cached copies.
+_The Filecoin network ensures that data is safely stored. However, the processes of storing, verifying, and unsealing (referred to as sealing, proving, and retrieving, respectively) are computationally expensive and can take time. This is especially relevant for the retrieval of data, which should happen as fast as possible. For this reason, Filecoin enables an additional retrieval market where dedicated nodes can help quickly deliver content from the network for payment by keeping unsealed, cached copies._
 
 ## The Storage and Retrieval Markets for Cloud Storage
 

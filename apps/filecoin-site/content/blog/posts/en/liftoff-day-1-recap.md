@@ -26,7 +26,7 @@ _template: blog_detail
 
 Yesterday we wrapped up Day 1 at Filecoin Liftoff Week. We heard from Filecoin founder, Juan Benet, Polychain Capital founder Olaf Carlson-Wee, Stanford Professor Dan Boneh, outside general counsel Marta Belcher, and more. Here are some highlights from the day, as well as a snapshot of what’s in store for Day 2.
 
-## 🦸‍♂️The Internet has given us superpowers
+## 🦸‍♂️ The Internet has given us superpowers
 
 In his opening keynote, Founder and CEO of Protocol Labs Juan Benet asked everyone to first take a step back and think about what our lives are like now. He divided civilization into pre-computing and post-computing eras, and emphasized that very few of our actions today are done without Internet assistance. He asked the audience to consider how even the most mundane actions we perform today online are superpowers when compared to the capabilities of the pre-computing era. We are giving computers more privileged access to our daily lives, our daily communications, and our relationships. Juan wrapped all of this up in the statement that we don’t know where the world will be in 80 years, and it is prudent of us to solve the issues with the Internet today in order to best set ourselves up for whatever the future may hold.
 

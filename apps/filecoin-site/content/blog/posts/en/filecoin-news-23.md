@@ -118,7 +118,7 @@ Recently, the **Web 3.0 China Summit** in Chengdu, Sichuan Province gathered 500
 
 In July, Encode Club announced the [**Encode Filecoin Club**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46), a nine-month program including a Filecoin education series, a Filecoin-dedicated hackathon and a follow-up accelerator. Filecoin Educate aims to teach students about blockchain through the lens of Filecoin, in attendance will be 125+ university blockchain societies and students globally. To join and learn more, please see the [**full event schedule**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46).
 
-## ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

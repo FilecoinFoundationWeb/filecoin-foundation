@@ -125,7 +125,7 @@ Call for papers! Come and join some of the top researchers in the world at the [
 
 Take a look at Eat the Blocks’ quick but thorough [explanation](https://www.youtube.com/watch?v=Q8d6fYP6ab4) of the Filecoin network. The channel is a great place to start learning about Web3 infrastructure as well as building your own decentralized applications. While you’re there, don’t miss out on a similar [video](https://www.youtube.com/watch?v=k1EQC7tdh70) on the IPFS protocol.
 
-## ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

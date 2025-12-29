@@ -115,7 +115,7 @@ Filecoin Plus旨在激励Filecoin network中的有效存储，请加入我们在
 
 有兴趣进一步了解Filecoin、IPLD或libp2p吗？观摩[ProtoSchool的自我指导互动教程](https://proto.school/)，了解去中心化的网络概念、协议和工具。选择你的主题，并以适合你的形式跟踪你的进展。在你的网络浏览器中完成JavaScript代码挑战，或者坚持使用我们基于文本或者更多选择的教程，以获得无代码的体验。
 
-## ✊ 快来参与
+## 快来参与
 
 前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)，也别错过[**社区资源**](https://github.com/filecoin-project/community)。可以通过[**Filecoin Slack**](http://filecoin.io/slack)提问，[**社区论坛**](https://discuss.filecoin.io/)中讨论问题和新想法，或[**在Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们你的想法。
 
