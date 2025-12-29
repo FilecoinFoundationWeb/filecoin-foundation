@@ -9,12 +9,12 @@ import { generateCaseStudyStructuredData } from './generateCaseStudyStructuredDa
 
 export function generateStructuredData(
   seo: StructuredDataParams,
-  sortedPosts: Array<CaseStudy>,
+  sortedCaseStudies: Array<CaseStudy>,
 ): CollectionPageGraph {
   return generateCaseStudyStructuredData({
     name: seo.title,
     description: seo.description,
-    items: sortedPosts.map((post) => ({
+    items: sortedCaseStudies.map((post) => ({
       path: `${PATHS.CASE_STUDIES.path}/${post.slug}`,
       headline: post.title,
       description: post.pageDescription,
