@@ -19,7 +19,7 @@ Since 2010, [Michael Morisy](https://www.linkedin.com/in/morisy) and his team at
 
 MuckRock is a non-profit organization that enables journalists, researchers, activists, and others to request, analyze, and share government documents – making democracies more informed through information transparency. MuckRock’s award-winning work has brought stories to light about important topics, including government spending, surveillance, and public safety.
 
-[FFDW is working with MuckRock](/ffdw-and-muckrock-collaborate-to-bring-flagship-web-resource-to-the-decentralized-web/) to explore how decentralized technology can support MuckRock’s preservation, publication, and analysis efforts. MuckRock is currently integrating distributed systems like the Filecoin network and IPFS, into its [DocumentCloud](https://www.documentcloud.org/home) platform, enabling the entire network to resiliently preserve critical public interest documents for the long term.
+[FFDW is working with MuckRock](/blog/ffdw-and-muckrock-collaborate-to-bring-flagship-web-resource-to-the-decentralized-web) to explore how decentralized technology can support MuckRock's preservation, publication, and analysis efforts. MuckRock is currently integrating distributed systems like the Filecoin network and IPFS, into its [DocumentCloud](https://www.documentcloud.org/home) platform, enabling the entire network to resiliently preserve critical public interest documents for the long term.
 
 ## Building Trust with Transparency
 

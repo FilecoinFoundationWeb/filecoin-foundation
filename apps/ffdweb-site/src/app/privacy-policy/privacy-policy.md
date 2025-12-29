@@ -61,7 +61,7 @@ We do not sell personal information to third parties for monetary or other valua
 
 ## V. Cookies
 
-"Cookies" are small text files that allow websites to store and retrieve information about you from your computer system. We may serve cookies to track individual site usage for later aggregation. If you do not want information collected through the use of cookies, there is a procedure in most browser settings that allows you to automatically decline cookies, or be given the choice of declining or accepting the transfer to your computer of a particular cookie (or cookies) from a particular site. You may wish to refer to [allaboutcookies.org/manage-cookies](http://www.allaboutcookies.org/manage-cookies/index.html). If you reject cookies through your browser settings, you may still use our Services, but you may experience some inconvenience.
+"Cookies" are small text files that allow websites to store and retrieve information about you from your computer system. We may serve cookies to track individual site usage for later aggregation. If you do not want information collected through the use of cookies, there is a procedure in most browser settings that allows you to automatically decline cookies, or be given the choice of declining or accepting the transfer to your computer of a particular cookie (or cookies) from a particular site. You may wish to refer to [allaboutcookies.org/how-to-manage-cookies](https://allaboutcookies.org/how-to-manage-cookies). If you reject cookies through your browser settings, you may still use our Services, but you may experience some inconvenience.
 
 ## VI. Your Rights
 

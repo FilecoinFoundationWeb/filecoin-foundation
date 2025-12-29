@@ -13,11 +13,12 @@ location:
 start-date: 2026-01-19
 end-date: 2026-01-23
 program:
-  kicker: FIND US AROUND DAVOS
+  kicker: Find us around Davos
   title: Featured Events
   events:
     - title: With Honor Action Reception with Featured Co-Host America250
-      description: With Honor Action, in partnership with Filecoin Foundation, is
+      description:
+        With Honor Action, in partnership with Filecoin Foundation, is
         hosting the 5th Annual Reception for the bipartisan U.S. Congressional
         Delegation to the World Economic Forum. This invitation-only event will
         occur on Monday night. Space is limited, and attendance is by prior
@@ -25,9 +26,10 @@ program:
       start-date: 2026-01-19
       location: Davos, Switzerland
 speakers:
-  kicker: CONNECT WITH US
+  kicker: Connect with Us
   title: Meet the Team
-  description: Our experts are here to discuss Web3, decentralization, and policy
+  description:
+    Our experts are here to discuss Web3, decentralization, and policy
     innovation. Request a meeting at marketing@fil.org to explore opportunities.
   speakers_list:
     - name: Marta Belcher

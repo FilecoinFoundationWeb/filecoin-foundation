@@ -39,7 +39,7 @@ Eventually, the system will graduate to **Galaxy**, a mature governance framewor
 
 ## Introducing veFIL: Aligning Long-Term Incentives
 
-CEL [introduced a concept for **veFIL**](https://www.youtube.com/watch?v=aoDJgLNirmw), a vote-escrow token model inspired by veCRV from Curve Finance. veFIL is designed to empower long-term stakeholders by giving them rewards and time-weighted voting power in the governance of Filecoin’s public goods ecosystem.
+CEL [introduced a concept for veFIL](https://www.youtube.com/watch?v=aoDJgLNirmw), a vote-escrow token model inspired by veCRV from Curve Finance. veFIL is designed to empower long-term stakeholders by giving them rewards and time-weighted voting power in the governance of Filecoin’s public goods ecosystem.
 
 The premise is simple: FIL holders who commit their tokens for longer periods receive more voting power in ecosystem funding rounds. Participants can lock FIL for a specified time period, receiving veFIL in return, which they can use to vote on the allocation of funds to public goods programs, like RetroPGF and ProPGF.
 

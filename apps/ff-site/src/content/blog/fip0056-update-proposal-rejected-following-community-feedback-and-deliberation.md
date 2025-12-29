@@ -18,7 +18,7 @@ seo:
     Explore the details.
 ---
 
-Over the past several months, the Filecoin community has been actively deliberating [FIP0056](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0056.md). This FIP is the second iteration of a proposed Sector Duration Multiplier (SDM), which would deliver additional block rewards to storage providers who elect to commit storage resources to the network for a longer period of time.
+Over the past several months, the Filecoin community has been actively deliberating [FIP0056](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0056.md). This FIP is the second iteration of a proposed Sector Duration Multiplier (SDM), which would deliver additional block rewards to storage providers who elect to commit storage resources to the network for a longer period of time.
 
 Proponents have argued that such a policy makes network incentives more sustainable and long-term oriented, while opponents have argued that such a policy would increase collateral requirements and destabilize existing business development efforts.
 

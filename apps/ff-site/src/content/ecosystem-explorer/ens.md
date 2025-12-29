@@ -14,7 +14,6 @@ website: https://ens.domains/
 tech:
   - filecoin
 seo:
-  title: Store & Verify ENS Metadata | Decentralized, Tamper-Proof Domain Content
   description: Easily store and verify ENS metadata and content to keep
     decentralized domains live, verifiable, and tamper-proof—powered by
     Filecoin’s reliable, decentralized storage.

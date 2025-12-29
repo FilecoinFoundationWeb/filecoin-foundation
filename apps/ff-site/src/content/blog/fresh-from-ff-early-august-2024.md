@@ -16,7 +16,7 @@ seo:
 
 ## Early August Highlights
 
-🧇 The Nv23 Upgrade, codenamed "Waffle," is arriving on Mainnet on August 6. The upgrade was successfully deployed to the calibnet on July 11, and will feature 6 FIPs including [FIP0065](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0065.md), [FIP0079](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0079.md), [FIP0084](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0084.md), [FIP0085](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0085.md), [FIP0091](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0091.md), and [FIP0092](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0092.md). Stay tuned to the [Filecoin Governance X](https://x.com/fil_gov) account for the latest updates.
+🧇 The Nv23 Upgrade, codenamed "Waffle," is arriving on Mainnet on August 6. The upgrade was successfully deployed to the calibnet on July 11, and will feature 6 FIPs including [FIP0065](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0065.md), [FIP0079](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0079.md), [FIP0084](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0084.md), [FIP0085](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0085.md), [FIP0091](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0091.md), and [FIP0092](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0092.md). Stay tuned to the [Filecoin Governance X](https://x.com/fil_gov) account for the latest updates.
 
 🇹🇭 It's Official: The Filecoin community is heading to Bangkok. Dive into decentralized AI infrastructure, DePIN, and the evolving data economy at FIL Bangkok. Set in Thailand's vibrant capital and hosted by Filecoin Foundation, FIL Bangkok unites the Filecoin ecosystem and broader Web3 community for innovation and collaboration. [Reserve your spot](/events/fil-bangkok) now and keep an eye out for programming announcements.
 
@@ -32,14 +32,14 @@ Due to popular demand, the [Developer Working Group](https://github.com/filecoin
 
 ### Storage
 
-- Interested in the latest developments for Filecoin Storage Providers? Join the [#global-storage-provider-community](https://filecoinproject.slack.com/archives/C02GQUMFQVA) Slack channel to get involved in weekly SP discussions and stay informed on updates from across the Filecoin community.
+- Interested in the latest developments for Filecoin Storage Providers? Join the [#global-storage-provider-community](https://filecoin.io/slack) Slack channel to get involved in weekly SP discussions and stay informed on updates from across the Filecoin community.
 - Head of Community Porter Stowell joined the [Off-Chain Podcast](https://youtu.be/YCXgEG0Pva8?si=5bYkc2gIn2JhK0_U) to discuss some of the hottest topics in the ecosystem, including how Filecoin is tackling the ever-growing demand for data storage driven by AI advancements.
 
 ## Network Operations
 
 ### Governance
 
-- Join the community [governance conversation](/governance)! In the Filecoin ecosystem, governance refers to the rights, rules, processes, and norms that empower community members to collectively determine the development of the protocol. Anyone is welcome to participate through the monthly [Community Governance calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto), the [Fil-Gov Slack](https://filecoinproject.slack.com/archives/C0535S9TUUF) channel, [Metropolis (now Fil Poll)](/blog/empowering-governance-the-launch-of-metropolis-to-the-filecoin-community), or attending a [Filecoin event](/events).
+- Join the community [governance conversation](/governance)! In the Filecoin ecosystem, governance refers to the rights, rules, processes, and norms that empower community members to collectively determine the development of the protocol. Anyone is welcome to participate through the monthly [Community Governance calls](https://lu.ma/filecoin), the [Fil-Gov Slack](https://filecoin.io/slack) channel, [Metropolis (now Fil Poll)](/blog/empowering-governance-the-launch-of-metropolis-to-the-filecoin-community), or attending a [Filecoin event](/events).
 - [FIP0086: Fast Finality in Filecoin](https://x.com/fil_gov/status/1816907389200924988) is now in Last Call. This FIP proposes to significantly speed up the time it takes for Filecoin transactions to be considered final and irreversible, reducing transaction times from 7.5 hours to just a few seconds.
 
 ### Fil Plus

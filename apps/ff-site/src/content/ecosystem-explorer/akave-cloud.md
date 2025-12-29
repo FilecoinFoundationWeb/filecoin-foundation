@@ -14,7 +14,6 @@ website: https://akave.com/
 tech:
   - filecoin
 seo:
-  title: Akave | Filecoin Warm Storage & Verifiable Data Onramp
   description: Akave provides Filecoin Warm Storage and a trusted onramp for
     organizations with verifiable data needs, offering secure, scalable, and
     audit-ready storage solutions powered by Filecoin.

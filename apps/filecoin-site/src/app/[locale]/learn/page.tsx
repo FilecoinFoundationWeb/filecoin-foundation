@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import { clsx } from 'clsx'
 
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Card } from '@filecoin-foundation/ui-filecoin/Card'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
@@ -29,10 +30,14 @@ import { howFilecoinWorks } from './data/howFilecoinWorks'
 import { learnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
 import { resilientInternetCta } from './data/resilientInternetCta'
 import { whatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 export default function Learn() {
   return (
     <>
+      <StructuredDataScript
+        structuredData={generateStructuredData(LEARN_SEO)}
+      />
       <div className={clsx('relative isolate', backgroundVariants.dark)}>
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
