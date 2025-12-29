@@ -2,7 +2,7 @@ import { PATHS } from '@/constants/paths'
 
 import type { CaseStudy } from '../../types/caseStudyType'
 
-import { generateCaseStudyArticleStructuredData } from '@/case-studies/utils/generateCaseStudyArticleStructuredData'
+import { generateCaseStudyArticleStructuredData } from '../../utils/generateCaseStudyArticleStructuredData'
 
 export function generateStructuredData(data: CaseStudy) {
   const { title, pageDescription, image } = data
