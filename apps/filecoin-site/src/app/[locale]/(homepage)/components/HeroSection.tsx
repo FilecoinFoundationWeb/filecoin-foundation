@@ -6,6 +6,7 @@ import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
 import { PATHS } from '@/constants/paths'
+import { FILECOIN_CLOUD_URL } from '@/constants/siteMetadata'
 
 export function HeroSection() {
   const t = useTranslations('home.hero')
@@ -13,7 +14,7 @@ export function HeroSection() {
   return (
     <PageSection backgroundVariant="transparentDark" paddingVariant="none">
       <div className="space-y-15 py-25 md:py-30">
-        <Announcement centered href="https://filecoin.cloud/">
+        <Announcement centered href={FILECOIN_CLOUD_URL}>
           {t('announcement')}
         </Announcement>
 

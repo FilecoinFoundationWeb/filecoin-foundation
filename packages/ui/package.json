@@ -73,7 +73,7 @@
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
-    "@testing-library/react": "^16.3.0",
+    "@testing-library/react": "^16.3.1",
     "jest": "^30.2.0"
   },
   "peerDependencies": {
@@ -83,20 +83,20 @@
     "@phosphor-icons/react": "^2.1.10",
     "@radix-ui/react-popover": "^1.1.15",
     "@radix-ui/react-tooltip": "^1.2.8",
-    "@sentry/nextjs": "^10.27.0",
-    "@tailwindcss/postcss": "^4.1.14",
+    "@sentry/nextjs": "^10.32.1",
+    "@tailwindcss/postcss": "^4.1.18",
     "clsx": "^2.1.1",
     "next": "^15.5.7",
     "next-plausible": "^3.12.4",
-    "nuqs": "^2.8.1",
+    "nuqs": "^2.8.6",
     "postcss": "^8.5.6",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
-    "react-hook-form": "^7.65.0",
-    "react-lite-youtube-embed": "^3.3.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-hook-form": "^7.69.0",
+    "react-lite-youtube-embed": "^3.3.3",
     "schema-dts": "^1.1.5",
-    "swr": "^2.3.6",
-    "tailwindcss": "^4.1.14",
+    "swr": "^2.3.8",
+    "tailwindcss": "^4.1.18",
     "usehooks-ts": "^3.1.1"
   },
   "dependencies": {}

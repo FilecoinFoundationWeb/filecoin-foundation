@@ -31,7 +31,7 @@
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
     "next": "^15.5.7",
-    "nuqs": "^2.8.1",
-    "react": "^19.2.1"
+    "nuqs": "^2.8.6",
+    "react": "^19.2.3"
   }
 }

@@ -14,8 +14,13 @@ website: https://ens.domains/
 tech:
   - filecoin
 seo:
-  title: Store & Verify ENS Metadata | Decentralized, Tamper-Proof Domain Content
   description: Easily store and verify ENS metadata and content to keep
     decentralized domains live, verifiable, and tamper-proof—powered by
     Filecoin’s reliable, decentralized storage.
 ---
+
+The Ethereum Name Service (ENS) is a distributed, open, and extensible naming system based on the Ethereum blockchain.
+
+ENS maps human-readable names like 'alice.eth' to machine-readable identifiers such as Ethereum addresses, other cryptocurrency addresses, content hashes, metadata, and more. ENS also supports 'reverse resolution', making it possible to associate metadata such as primary names or interface descriptions with Ethereum addresses.
+
+ENS builders are storing and verifying ENS metadata, websites, and content records directly onchain using Filecoin Pin.

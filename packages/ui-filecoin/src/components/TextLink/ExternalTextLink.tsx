@@ -17,7 +17,7 @@ export function ExternalTextLink({
   return (
     <a
       {...rest}
-      className={clsx('text-link inline-block text-pretty', className)}
+      className={clsx('text-link text-pretty', className)}
       target="_blank"
       rel="noopener noreferrer"
     >
