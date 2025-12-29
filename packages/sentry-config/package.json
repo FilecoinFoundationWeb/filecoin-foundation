@@ -10,6 +10,6 @@
     ".": "./src/index.ts"
   },
   "peerDependencies": {
-    "@sentry/nextjs": "^10.27.0"
+    "@sentry/nextjs": "^10.32.1"
   }
 }
