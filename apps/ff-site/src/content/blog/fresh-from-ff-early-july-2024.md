@@ -37,7 +37,7 @@ seo:
 
 ### Governance
 
-- Engage in and contribute to the [development of FIPs](https://github.com/filecoin-project/FIPs/discussions) by participating in FF's monthly [community governance calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto) and by exploring [Metropolis (now Fil Poll)](https://poll.fil.org), a nonbinding sentiment check tool for the Filecoin community.
+- Engage in and contribute to the [development of FIPs](https://github.com/filecoin-project/FIPs/tree/master/discussions) by participating in FF's monthly [community governance calls](https://lu.ma/filecoin) and by exploring [Metropolis (now Fil Poll)](https://poll.fil.org), a nonbinding sentiment check tool for the Filecoin community.
 
 ### Fil Plus
 

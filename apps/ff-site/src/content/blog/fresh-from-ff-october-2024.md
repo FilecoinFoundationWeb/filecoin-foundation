@@ -43,7 +43,7 @@ seo:
 
 ### Fil Plus
 
-- [The September 17 Filecoin Plus Allocator Call is available on YouTube](https://youtu.be/kzjHlIiKFc4). If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles).
+- [The September 17 Filecoin Plus Allocator Call is available on YouTube](https://youtu.be/kzjHlIiKFc4). If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar](https://lu.ma/filecoin).
 
 ## Comms, Marketing, & Events
 

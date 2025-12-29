@@ -33,7 +33,7 @@ Human rights groups interested in working with organizations like FFDW and The S
 
 Co-founded by USC Shoah Foundation and Stanford University's Department of Electrical Engineering, The Starling Lab catalyzes innovation and education of cryptographic methods and decentralized web protocols to advance human rights. Its mission is to lead by example to show a path to deploy technology and methods that make the decentralized internet a viable platform for social impact. In its first case study, The Starling Lab and Reuters worked together to document the 2020 U.S. presidential transition with an array of new image authentication tools and decentralized web protocols. In the years ahead, The Lab will expand its applied research programs to pioneer digital documentation and education in addressing present-day mass atrocities, intolerance and hate-based violence, and unrest due to climate change.
 
-To learn more, visit [starlinglab.org](http://starlinglab.org/).
+To learn more, visit [starlinglab.org](https://www.starlinglab.org/).
 
 ## About The Starling Lab
 
@@ -45,4 +45,4 @@ Filecoin is a peer-to-peer network designed to store humanity's most important i
 
 ## About Protocol Labs
 
-Protocol Labs is an open-source research, development, and deployment laboratory. Our projects include [IPFS](https://ipfs.io/), [Filecoin](https://filecoin.io/), [libp2p](https://libp2p.io/), and many more. We aim to make human existence orders of magnitude better through technology. We are a fully distributed company. Our team of more than 100 members works remotely and in the open to improve the internet — humanity's most important technology — as we explore new advances in computing and related fields.
+Protocol Labs is an open-source research, development, and deployment laboratory. Our projects include [IPFS](https://about.ipfs.io/), [Filecoin](https://filecoin.io/), [libp2p](https://libp2p.io/), and many more. We aim to make human existence orders of magnitude better through technology. We are a fully distributed company. Our team of more than 100 members works remotely and in the open to improve the internet — humanity's most important technology — as we explore new advances in computing and related fields.

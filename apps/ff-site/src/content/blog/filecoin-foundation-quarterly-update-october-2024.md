@@ -101,7 +101,7 @@ Filecoin storage provider Holon is building modular micro-data centers, which us
 
 #### Two Defining Upgrades for a more Efficient, Flexible Filecoin Network
 
-[NV23, codenamed "Waffle"](/blog/announcing-the-filecoin-nv23-waffle-upgrade-enhancing-filecoins-efficiency-and-security), went live on Mainnet on August 6, bringing significant enhancements focused on simplified processes, optimized proof mechanisms, streamlined sector commitments, enhanced cryptographic support, and strengthened security. Several Filecoin Improvement Proposals (FIPs), such as [FIP0065](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0065.md), help the network operate more efficiently and lay the groundwork for more flexible data commitment methods. [NV22 codenamed "Dragon"](/blog/announcing-the-filecoin-nv22-dragon-upgrade-a-leap-forward-in-network-efficiency-and-flexibility) introduced a suite of improvements and changes aimed at enhancing the network's efficiency, reliability, and user experience.
+[NV23, codenamed "Waffle"](/blog/announcing-the-filecoin-nv23-waffle-upgrade-enhancing-filecoins-efficiency-and-security), went live on Mainnet on August 6, bringing significant enhancements focused on simplified processes, optimized proof mechanisms, streamlined sector commitments, enhanced cryptographic support, and strengthened security. Several Filecoin Improvement Proposals (FIPs), such as [FIP0065](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0065.md), help the network operate more efficiently and lay the groundwork for more flexible data commitment methods. [NV22 codenamed "Dragon"](/blog/announcing-the-filecoin-nv22-dragon-upgrade-a-leap-forward-in-network-efficiency-and-flexibility) introduced a suite of improvements and changes aimed at enhancing the network's efficiency, reliability, and user experience.
 
 ![](/assets/images/blog-metropolis.webp)
 
@@ -115,7 +115,7 @@ FF [debuted Metropolis](/blog/empowering-governance-the-launch-of-metropolis-to-
 
 As the network welcomes new builders and wider adoption, FF introduced three community groups: the Storage Provider Working Group (SPWG), the Developer Working Group (DevWG), and the Data Clients Working Group (DCWG).
 
-- [The SPWG](https://filecoinproject.slack.com/archives/C02GQUMFQVA) holds weekly calls to discuss the latest developments for Filecoin Storage Providers.
+- [The SPWG](https://filecoin.io/slack) holds weekly calls to discuss the latest developments for Filecoin Storage Providers.
 - [The DevWG](https://github.com/filecoin-project/DeveloperWG) is a space to connect with developers, community members, researchers, and others interested in the development of new tools, technologies, and use cases that leverage the Filecoin protocol.
 - [The DCWG](mailto:dataclients@fil.org) welcomes participants to share their data upload experiences, identify hurdles and solutions for uploading data, and discuss how the Filecoin ecosystem can support data onboarding.
 

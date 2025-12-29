@@ -23,7 +23,7 @@ During FDS-7 Virtual, Filecoin Foundation’s governance team shared a deep dive
 
 From the beginning, Filecoin governance has been rooted in a decentralized, proposal-driven process inspired by Ethereum, with **Filecoin Improvement Proposals (FIPs)** at the center of how the network evolves.
 
-FIPs have been the mechanism through which the network coordinates technical upgrades, helping define how the protocol evolves. Core developers review proposals for feasibility, ensuring they can be safely implemented before FIPs are implemented across a diverse set of node implementations. This process has powered milestones like the launch of the [Filecoin Virtual Machine](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0030.md) (FVM), new storage incentives, and countless technical improvements. 
+FIPs have been the mechanism through which the network coordinates technical upgrades, helping define how the protocol evolves. Core developers review proposals for feasibility, ensuring they can be safely implemented before FIPs are implemented across a diverse set of node implementations. This process has powered milestones like the launch of the [Filecoin Virtual Machine](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0030.md) (FVM), new storage incentives, and countless technical improvements. 
 
 But as the Filecoin network has grown, so too have the demands on its governance system.
 
@@ -85,7 +85,7 @@ The Filecoin ecosystem is entering a new era. As we prepare for major technical 
 
 If you care about Filecoin’s mission and future, now is the time to get involved.
 
-- Join upcoming governance discussions on [GitHub](https://github.com/filecoin-project/FIPs/discussions) 
+- Join upcoming governance discussions on [GitHub](https://github.com/filecoin-project/FIPs/tree/master/discussions) 
 
 - Attend [FIL Dev Summit 7 @ DevConnect](https://luma.com/lql41ipv) in Buenos Aires from November 13 - 15 
 
