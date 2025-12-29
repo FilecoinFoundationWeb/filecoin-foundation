@@ -18,7 +18,7 @@ export function generateStructuredData(
       path: `${PATHS.CASE_STUDIES.path}/${post.slug}`,
       headline: post.title,
       description: post.pageDescription,
-      image: post.image?.src,
+      image: post.image?.src, // #todo: Make image required
     })),
   })
 }

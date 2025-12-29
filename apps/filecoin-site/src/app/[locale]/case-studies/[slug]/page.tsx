@@ -28,7 +28,7 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
   const { slug, locale } = await props.params
   setRequestLocale(locale)
 
-  // TODO: Add all case studies and make challenge, solution, and results required
+  // #todo: Add all case studies and make challenge, solution, and results required
   const data = await getCaseStudyData(slug, locale)
 
   const {

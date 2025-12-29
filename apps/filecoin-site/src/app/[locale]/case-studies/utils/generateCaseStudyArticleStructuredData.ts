@@ -13,7 +13,7 @@ type GenerateCaseStudyArticleStructuredDataProps = {
   path: NextRouteWithoutLocale
   headline: string
   description: Article['description']
-  image?: Article['image']
+  image?: Article['image'] // #todo: Make image required
 }
 
 export function generateCaseStudyArticleStructuredData({
@@ -31,7 +31,7 @@ export function generateCaseStudyArticleStructuredData({
     author: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
     publisher: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
     mainEntityOfPage: { '@id': url },
-    ...(image && { image }),
+    ...(image && { image }), // #todo: Make image required
   }
 
   return {

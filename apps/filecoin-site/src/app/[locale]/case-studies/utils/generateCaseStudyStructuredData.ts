@@ -16,7 +16,7 @@ type GenerateCaseStudyStructuredDataProps = {
     path: NextRouteWithoutLocale
     headline: string
     description?: string
-    image?: string
+    image?: string // #todo: Make image required
   }>
 }
 
