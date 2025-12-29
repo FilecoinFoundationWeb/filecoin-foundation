@@ -14,11 +14,11 @@ export function generateStructuredData(
   return generateCaseStudyStructuredData({
     name: seo.title,
     description: seo.description,
-    items: sortedCaseStudies.map((post) => ({
-      path: `${PATHS.CASE_STUDIES.path}/${post.slug}`,
-      headline: post.title,
-      description: post.pageDescription,
-      image: post.image?.src, // #todo: Make image required
+    items: sortedCaseStudies.map(({ slug, title, pageDescription, image }) => ({
+      path: `${PATHS.CASE_STUDIES.path}/${slug}`,
+      headline: title,
+      description: pageDescription,
+      image: image?.src, // #todo: Make image required
     })),
   })
 }
