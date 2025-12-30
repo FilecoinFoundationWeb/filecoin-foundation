@@ -12,5 +12,5 @@ export async function getDigestIssuesThatHaveArticles() {
     allIssueNumbers.map((issueNumber) => getDigestIssueData(issueNumber)),
   )
 
-  return allIssues
+  return allIssues.sort((a, b) => b.issueNumber - a.issueNumber)
 }
