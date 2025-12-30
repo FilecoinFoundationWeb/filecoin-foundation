@@ -8,8 +8,8 @@ import {
 } from './Avatar/AvatarGroupExpanded'
 
 type DigestArticleProps = {
-  issueNumber?: number
-  articleNumber?: number
+  issueNumber: number
+  articleNumber: number
   title: string
   authors: AvatarGroupExpandedProps['authors']
   image: ImageProps
@@ -24,15 +24,13 @@ export function DigestArticleHeader({
 }: DigestArticleProps) {
   return (
     <ArticleHeader image={image}>
-      {/* TODO: make required */}
-      {issueNumber && articleNumber && (
-        <TagGroup
-          tags={[
-            { text: `Article ${articleNumber} ` },
-            { text: `Issue ${issueNumber}` },
-          ]}
-        />
-      )}
+      <TagGroup
+        tags={[
+          { text: `Article ${articleNumber}` },
+          { text: `Issue ${issueNumber}` },
+        ]}
+      />
+
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
       <AvatarGroupExpanded authors={authors} />
     </ArticleHeader>
