@@ -1,3 +1,5 @@
+import type { DigestIssueFrontmatter } from '@filecoin-foundation/utils/schemas/DigestIssueFrontmatterSchema'
+
 import { createPathConfig } from '@/utils/createPathConfig'
 
 import { buildIssueSlug } from '@/digest/utils/parseDigestParams'
@@ -26,7 +28,7 @@ export type DynamicPathValues = DynamicPath[keyof DynamicPath]
 export type PathValues = StaticPath | DynamicPathValues
 
 type IssueUrlProps = {
-  issueNumber: number
+  issueNumber: DigestIssueFrontmatter['issue-number']
 }
 
 type ArticleUrlProps = IssueUrlProps & {
