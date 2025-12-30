@@ -29,14 +29,14 @@ seo:
 ### Governance
 
 - There are updates to three Filecoin Improvement Proposals (FIPS), the primary mechanism by which the Filecoin community can submit, discuss, and approve changes relevant to the Filecoin network:
-- [FIP-0077](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0077.md), a proposal implementing a deposit requirement for creating new miner actors to prevent unnecessary miner ID creation and potential network spam attacks, is in Last Call.
-- FIP-[0082](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0082.md), a proposal to add functionality for submitting several sector update proofs (as a single Groth16 aggregate proof) using a single message, has been Accepted
-- FIP-[0101](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0101.md), a proposal to remove the ProveCommitAggregate method (Method 26) from the miner actor, has been Accepted.
+- [FIP-0077](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0077.md), a proposal implementing a deposit requirement for creating new miner actors to prevent unnecessary miner ID creation and potential network spam attacks, is in Last Call.
+- FIP-[0082](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0082.md), a proposal to add functionality for submitting several sector update proofs (as a single Groth16 aggregate proof) using a single message, has been Accepted
+- FIP-[0101](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0101.md), a proposal to remove the ProveCommitAggregate method (Method 26) from the miner actor, has been Accepted.
 
 ### Fil Plus 
 
 - [The Filecoin Plus (Fil+) Round 6 application period is live](/blog/filecoin-plus-join-as-a-new-allocator-or-update-your-existing-pathway), offering an opportunity for organizations to join the program or for existing allocators to refine their pathways. [Round 6 submissions are due July 11, 2025](/blog/filecoin-plus-join-as-a-new-allocator-or-update-your-existing-pathway).
-- The [June 24](https://www.youtube.com/watch?v=v6toHJvME-k) and [June 10](https://www.youtube.com/watch?v=ytSDr9xt_Qs) Allocator Governance Calls are available on YouTube. If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar.](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles)
+- The [June 24](https://www.youtube.com/watch?v=v6toHJvME-k) and [June 10](https://www.youtube.com/watch?v=ytSDr9xt_Qs) Allocator Governance Calls are available on YouTube. If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar.](https://lu.ma/filecoin)
 
 ## Comms, Marketing, & Events
 

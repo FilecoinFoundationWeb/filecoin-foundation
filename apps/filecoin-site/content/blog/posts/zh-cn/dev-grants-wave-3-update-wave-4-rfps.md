@@ -46,7 +46,7 @@ _template: blog_detail_ch
 
 令人兴奋的为期30天的 [HackFS线上黑客松](https://filecoin.io/zh-cn/blog/announcing-filecoin-ignite-and-hackfs/) 即将于7月6日开始，您可以在此与其他dapp开发者一起进行新的Filecoin试验、获得技术指导和支持。参与 _[申请 HackFS](https://hackfs.com/)_！
 
-#### PB级矿工测试提案更新
+## PB级矿工测试提案更新
 
 我们在第三批资助中收到了48份PB级矿工测试提案。由于证明继续改进，因此对于该项资助，我们决定专注于更好地理解不同**存储层选择**的性能和权衡。我们将从在他们提案里描述有趣的存储层技术的团队中选出一些团队来取得联系。
 

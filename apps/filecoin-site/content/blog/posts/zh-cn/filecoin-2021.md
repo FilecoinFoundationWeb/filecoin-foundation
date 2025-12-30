@@ -33,15 +33,15 @@ _template: blog_detail_ch
 
 不过，数字并不能反映全貌。这一年的非凡增长也给Filecoin生态系统带来了重要的进展，其中一些重要的里程碑如下：
 
-### 研究与开发
+## 研究与开发
 
 在去年，Filecoin协议和网络有了很大的进展，这包括了五次主网升级的协调和执行，12次的[Filecoin改进提议](https://github.com/filecoin-project/FIPs) (FIPs)的整合，以及将两个额外的Filecoin协议实施方案(Venus and Forest)带到了主网，与Lotus客户端并行存在。其中的亮点包括了时空证明（Proofs of SpaceTime）的链下验证，为聚合证明（proof aggregations）提供的SnarkPack，还包含承诺容量扇区（Committed Capacity sectors）的简易升级机制，以容纳真实世界的数据（预计2月份会在主网上线！）。
 
 从主网发布后，Filecoin进行了重要的升级，改善了存储提供者稳健性、易用性、链容量和带宽，将每天的新增存储容量速率翻了一倍多！
 
-### Filecoin实施方案
+## Filecoin实施方案
 
-#### Lotus
+### Lotus
 
 在主网发布后，作为Filecoin协议的参考实施方案以及主要的市场实施方案之一，Lotus发布了26个更新版本，支持了11次网络升级，并整合了18个Filecoin网络改进提议（FIPs）。2021年的新特性包括[市场运行时（runtime）架构（将存储提供者与市场节点分开）](https://lotus.filecoin.io/docs/storage-providers/split-markets-miners/)以及v1版本的API，对封装调度器（sealing scheduler）的改进，优化封装的流水线，以及更快/更好地达成存储和取回的交易提议（含有用户可配置的资源控制）。得益于这些改进以及其他努力，Lotus正为存储提供者奉上一个强大、易用的基础设施，让它们往Filecoin网络投入更多存储容量，为用户提供更稳健的存储服务，从而持续增加其能力。 可以查看 [lotus版本发布](https://github.com/filecoin-project/lotus/releases)的亮点了解更多信息！
 
@@ -57,7 +57,7 @@ _template: blog_detail_ch
 
 ### Hyperdrive升级
 
-2021年6月，Filecoin v13 ‘HyperDrive’ 网络升级解锁了10-25倍的新增存储容量，让Filecoin成为首个部署巨量链带宽升级的L1区块链，这仅仅是主网发布后的8个月而已。从那之后，每日的新增存储容量翻倍到60 PiB/日以上，让其通往2021年末超过20 EiB的快车道。
+2021年6月，Filecoin v13 'HyperDrive' 网络升级解锁了10-25倍的新增存储容量，让Filecoin成为首个部署巨量链带宽升级的L1区块链，这仅仅是主网发布后的8个月而已。从那之后，每日的新增存储容量翻倍到60 PiB/日以上，让其通往2021年末超过20 EiB的快车道。
 
 这个升级得益于Filecoin证明机制的创新。在主网发布早前，因为大量的存储提供者需求，Filecoin网络就已经工作在满载状态，让Filecoin成为最大的SNARK证明系统（处于生产状态中的），每日可生成并验证超过500万次SNARKs证明。
 
@@ -75,7 +75,7 @@ _template: blog_detail_ch
 
 在2021年4月上线的[NFT.Storage](https://nft.storage/) [launched in April 2021](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/)为链下存储NFT元数据及资源提供了免费的简易服务。通过HTTP服务上传到NFT.Storage的数据在Filecoin上存储并对公开的IPFS网络可用。该服务可免费试用，其最终愿景是去中心化方式提供永续的NFT数据，将此作为公益服务。
 
-该服务还为用户提供标准化格式的IPFS URIs链接，以让其在智能合约中引用元数据。这是关键的一步，可以确保他们的NFT真的可以永久引用底层的对应数据。它使用了使用形如 “ipfs://”格式的索引，而不是“http://”，后者毕竟是中心化的，如果服务关闭、域名解析服务中断或数据位置改变都能引起故障。
+该服务还为用户提供标准化格式的IPFS URIs链接，以让其在智能合约中引用元数据。这是关键的一步，可以确保他们的NFT真的可以永久引用底层的对应数据。它使用了使用形如 "ipfs://"格式的索引，而不是"http://"，后者毕竟是中心化的，如果服务关闭、域名解析服务中断或数据位置改变都能引起故障。
 
 自从发布后，这个产品很快成长起来，现在已经为16000多名用户上传了超过2100万份数据。这些NFTs有来自一些大型市场和铸造服务提供商的，如OpenSea、OneOf、NFTPort、 Makersplace、Jigstack和Curio等。
 
@@ -89,7 +89,7 @@ _template: blog_detail_ch
 
 该团队也开发了为存储提供者匹配可再生能源（如风能和太阳能）的能力。Filecoin Green与Filrep团队合作，[将能源购买情况整合](https://filrep.io/?columns=energy&order=desc&sortBy=energy)到信誉系统中，并用户Energy Web foundation基金会合作在其区块链上记录可再生能源购买情况 。这让存储客户不仅能看到其选择的存储提供者的能源消耗情况，还能验证为了存储这些文件所购买的可再生能源（精确到单个太阳能或风能发电站）！
 
-随着这些努力的进展，Filecoin Green已被社区认为是加密生态里的可验证持续性领导者。[Coindesk报道了](https://www.coindesk.com/tech/2021/12/02/filecoin-might-have-a-way-for-bitcoin-to-fight-its-energy-critics-if-miners-use-it/)这些策略可能让Filecoin和其他区块链变得更“绿色”。Energy Web foundation基金会的主管[发推文称](https://twitter.com/ja_morris/status/1436001899124166658?s=20) Filecoin是加密领域可持续性的领头羊。
+随着这些努力的进展，Filecoin Green已被社区认为是加密生态里的可验证持续性领导者。[Coindesk报道了](https://www.coindesk.com/tech/2021/12/02/filecoin-might-have-a-way-for-bitcoin-to-fight-its-energy-critics-if-miners-use-it/)这些策略可能让Filecoin和其他区块链变得更"绿色"。Energy Web foundation基金会的主管[发推文称](https://twitter.com/ja_morris/status/1436001899124166658?s=20) Filecoin是加密领域可持续性的领头羊。
 
 这个网络分享了其[可持续性策略](https://medium.com/@filecoingreen/introducing-the-filecoin-energy-dashboard-46d2cbe14d39)和[验证工作](https://medium.com/energy-web-insights/protocol-labs-and-energy-web-complete-first-showcase-of-an-open-source-solution-to-decarbonize-1a8c22ac02f5)，以及在 #fil-green频道建立了存储提供者和开发者社区。
 
@@ -113,7 +113,7 @@ Protocol Labs、以太坊基金会、Filecoin基金会、Electric Coin公司(ECC
 
 通用性的证明专用集成电路和GPU优化预计会改善通用证明的经济成本（不只是VDF证明），效率提升可达5到10倍。
 
-Protocol Labs和Cryptosat也在共同探索空间VDF的可能性。其中一个顶层的想法是将光速视为通讯延迟的“硬性速度上限”，这可能让Protocol Labs有机会实现比算法和硬件优化的理论上限更强的Amax（攻击者的最大优势），毕竟算法和硬件优化是基于计算能力的。
+Protocol Labs和Cryptosat也在共同探索空间VDF的可能性。其中一个顶层的想法是将光速视为通讯延迟的"硬性速度上限"，这可能让Protocol Labs有机会实现比算法和硬件优化的理论上限更强的Amax（攻击者的最大优势），毕竟算法和硬件优化是基于计算能力的。
 
 在这个模式下，延迟是基于可验证位置里的卫星之间的最短通讯时间。
 
@@ -125,7 +125,7 @@ Drand是由网络中的独立伙伴 [League of Entropy](https://blog.cloudflare.
 
 LoE联盟目前正在扩展，并寻找新成员加入使命。
 
-Drand也在升级新特性以服务更多的应用。Drand会部分签名的“unchained”随机生成方法，这让开发者能搭建支持时间锁加密（Time Lock Encryption）的客户端，并能减轻与MEV（以太坊上的）及抢跑攻击（front running attacks）相关的攻击压力。
+Drand也在升级新特性以服务更多的应用。Drand会部分签名的"unchained"随机生成方法，这让开发者能搭建支持时间锁加密（Time Lock Encryption）的客户端，并能减轻与MEV（以太坊上的）及抢跑攻击（front running attacks）相关的攻击压力。
 
 Drand将很快提供高频随机信标，与现有30秒随机信标并行运作。这将让Drand被更广泛的Web2和Web3用例采用。
 

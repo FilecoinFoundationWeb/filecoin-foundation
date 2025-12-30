@@ -34,7 +34,7 @@ _template: blog_detail_ch
 
 让我们开始介绍！
 
-### 为什么要有多个实现？
+## 为什么要有多个实现？
 
 正如我们在[其他地方提到的](https://filecoin.io/blog/update-2019-q2-q3/#3-roadmap-update)，构建一个区块链就像构建一个软件火箭。我们正努力确保我们的协议和软件实施的安全性 – 我们拥有内部的协议安全团队，并且正在执行内部实现的安全审核和外部安全审核等等。但是，无论我们为保护系统和各个节点付出多大的努力，始终都有可能某个实现的错误会出现并给网络带来非常不利的后果。
 
@@ -44,7 +44,7 @@ _template: blog_detail_ch
 
 由于多种实现对于网络安全性，弹性和社区参与非常重要，因此我们已定下目标，要在2020年3月Filecoin 主网上线时推出具有2种以上可交互操作的协议的实现。截止到今天，我们正在开发一系列 Filecoin 的实现 - **go-filecoin**，**lotus** 和其他即将正式推出的实现。我们正在寻找更多有才华的团队来构建 Filecoin 实现。如果有兴趣，请按照[此处](http://filecoin.io/grants)的说明申请我们的[津贴](https://github.com/filecoin-project/devgrants/issues/43)，以构建其他实现方案！
 
-### 更多关于 **lotus** 的信息
+## 更多关于 lotus 的信息
 
 [**Lotus**](https://github.com/filecoin-project/lotus) 是 [Filecoin 协议规范](https://github.com/filecoin-project/specs/)的最简且具有实验性的实现，用 Go 语言编写。该代码库尚未完成功能，但是已经实现了几个核心 Filecoin 协议功能，包括：
 
@@ -62,7 +62,7 @@ _template: blog_detail_ch
 - 我们计划在2020年3月启动具有 **go-filecoin**，**lotus**和至少一个其他实现的 Filecoin 主网络。
 - **lotus** 开发网和 go-filecoin alphanet 当前不是同一网络。在 **go-filecoin** 和 **lotus** 节点可以交互操作之前，它们将继续是不同的网络。此次交互操作将在我们于2020年3月主网启动之前进行，但确切日期仍待定。
 
-### **Lotus** 入门
+## Lotus 入门
 
 我们鼓励矿工，客户和开发者从今天开始尝试 **lotus**！我们希望您的参与将有助于我们在2019年12月11日启动测试网之前增强 **lotus** 代码库和网络的安全性。
 
@@ -81,7 +81,7 @@ _template: blog_detail_ch
 - [社区聊天](https://github.com/filecoin-project/community#chat)中的 ＃fil-help 频道（请务必提及您需要有关 **lotus** 的帮助）
 - [**lotus repo** 上的 GitHub issues](https://github.com/filecoin-project/lotus/issues)
 
-### 非常感谢
+## 非常感谢
 
 与往常一样，非常感谢您对 Filecoin 项目的持续支持。我们很高兴继续与您一起，为人类信息建立一个强大的，去中心化和高效的基础。
 

@@ -30,7 +30,7 @@ The Hedera public network is a fast, low-cost, and eco-friendly distributed ledg
 
 Filecoin and Hedera have a history of technical collaboration among various projects. Hedera brings highly efficient DLT capabilities, while Filecoin offers a robust, flexible large-scale storage layer. Combining both networks provides new possibilities to verify the provenance, ownership, and validity of both transactions and their underlying data.
 
-### Providing Decentralized Storage to Hedera NFTs
+## Providing Decentralized Storage to Hedera NFTs
 
 Hedera Improvement Proposal 10 ([HIP-10](https://github.com/hashgraph/hedera-improvement-proposal/blob/master/HIP/hip-10.md)) offers an ecosystem standard for NFT metadata. To bolster this new functionality, Filecoin (specifically, the [NFT.storage](http://nft.storage/) service) enables decentralized storage of the JSON schema containing those NFT properties and multimedia or localization data.
 
@@ -38,11 +38,11 @@ Combining Filecoin and Hedera delivers a truly decentralized NFT experience. Fil
 
 The open-source reference implementation and demo showcase how you can issue NFTs on Heder and store that data on Filecoin using the NFT.storage API: [https://github.com/hashgraph/hedera-hts-demo/](https://github.com/hashgraph/hedera-hts-demo/ "https://github.com/hashgraph/hedera-hts-demo/").
 
-### Starling Lab: Real-world utilization of Filecoin and Hedera
+## Starling Lab: Real-world utilization of Filecoin and Hedera
 
 [The Starling Framework for Data Integrity](https://hedera.com/users/starling) is a joint effort developed by the USC Shoah Foundation and Stanford University’s Department of Electrical Engineering. The initiative aims to create a set of tools and principles to be used across non-profit organizations, news outlets, and industry experts to solve challenges regarding the uncertainty of the media we see today and our enduring effort to preserve the truth. Starling leverages multiple decentralized technologies, including Filecoin and Hedera, to store and verify original media assets and their underlying metadata
 
-### More than Just Storage: Unbounded Web3 Potential with Filecoin
+## More than Just Storage: Unbounded Web3 Potential with Filecoin
 
 By introducing large-scale storage with periodic proofs and bringing storage closer to compute, Filecoin brings a unique building block to the Web3 ecosystem.
 
@@ -53,11 +53,11 @@ By introducing large-scale storage with periodic proofs and bringing storage clo
 
 Many new interactions, applications, and business models can emerge at the intersection of Filecoin and smart contract systems such as Hedera. You can find more information about [the business opportunities on Filecoin in this talk](https://www.youtube.com/watch?v=5CPUSPUGOZ0).
 
-### Grants for Filecoin + Hedera Application Development
+## Grants for Filecoin + Hedera Application Development
 
 Filecoin and Hedera are awarding $200,000 in developer grants along two tracks:
 
-#### **Decentralized Storage SDK for Hedera & Demo Application**
+### Decentralized Storage SDK for Hedera & Demo Application
 
 We want to make it easy for builders using Filecoin and Hedera Token Service (HTS) to integrate the two into their applications. This grant will be awarded for an SDK that seamlessly integrates existing Filecoin and Hedera toolchains. It should enable non-fungible tokenization and allow storage of larger files associated with Hedera Token Service tokens (such as digital art, music, JSON metadata, etc.) on the Filecoin network. Filecoin storage may be accessed via tooling or services such as [Estuary](https://estuary.tech/), [Fleek Space Daemon](https://github.com/FleekHQ/space-daemon), [NFT.storage](https://nft.storage/), or [Textile Powergate.](https://github.com/textileio/powergate/)
 
@@ -70,7 +70,7 @@ The accompanying demo application must use this SDK to build an open source end-
 
 **_Prize: $75,000_**
 
-#### **Real-world Applications**
+### Real-world Applications
 
 These grants will be awarded to proposals for real-world applications that utilize both [Hedera Token Service (HTS)](http://hedera.com/token-service) and Filecoin decentralized storage. Developers can be as creative as they’d like — there are no strict requirements as to the type of application or use case, but it must utilize both Hedera HTS and Filecoin. Filecoin storage may be accessed via tooling or services such as [Estuary](https://estuary.tech/), [Fleek Space Daemon](https://github.com/FleekHQ/space-daemon), [NFT.storage](https://nft.storage/), or [Textile Powergate.](https://github.com/textileio/powergate/)
 

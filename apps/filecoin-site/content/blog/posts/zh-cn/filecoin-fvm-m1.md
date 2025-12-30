@@ -33,7 +33,7 @@ Filecoin虚拟机（FVM）正通过几个里程碑的阶段加入到Filecoin的�
 
 除了通过这个项目激励漏洞赏金猎手外，首次通过的内部审计方案已由Filecoin贡献团队的成员执行，我们还启动了由外部安全专家进行的审计。其他几个强化方案也在进行中。
 
-### **FVM M1漏洞赏金的范围**
+## FVM M1漏洞赏金的范围
 
 1. [FVM参考架构](https://github.com/filecoin-project/ref-fvm) (ref-fvm)
    - Filecoin VM的参考实施方案 ([规格](https://github.com/filecoin-project/fvm-project)).
@@ -52,7 +52,7 @@ Filecoin虚拟机（FVM）正通过几个里程碑的阶段加入到Filecoin的�
    - 一个以Go语言书写的可执行规格可在[filecoin-project/specs-actors](https://github.com/filecoin-project/specs-actors)找到，它们它们在FVM时代之前支撑了Filecoin网络。
    - 注意，对actors进行审计通常需要有Filecoin领域的专业知识。
 
-### **奖励以及不在范围的内容**
+## 奖励以及不在范围的内容
 
 FVM团队想在M1里程碑到来之前，从社区找到最多的代码审计帮助。不过，有一些领域的加强已经在进行了。为此，他们维护了一个列表，上面列出了 **_应该排除掉的汇报内容（包括已知问题）_** [点击Github链接查看](https://github.com/filecoin-project/ref-fvm/issues/428)，这链接会持续更新。只有它们从列表中被剃除后，才能有资格得到赏金。
 
@@ -60,17 +60,17 @@ FVM团队想在M1里程碑到来之前，从社区找到最多的代码审计帮
 
 在Filecoin实施方案(Lotus, Venus, Forest, Fuhon)和Filecoin Proofs库里的漏洞在往常的[Filecoin Security Program scope](https://security.filecoin.io/bug-bounty/#scope)和奖励计划里涵盖了。最后，以前的Filecoin审计结果可以在[Filecoin Specs](https://spec.filecoin.io/appendix/audit_reports/)的审计一栏找到。
 
-### **测试工具**
+## 测试工具
 
 [Filecoin测试向量](https://github.com/filecoin-project/test-vectors/)支持不同节点实施方案之间的互操作测试，基于此，[FVM测试向量](https://github.com/filecoin-project/fvm-test-vectors) 特别针对FVM设计并涵盖全部功能。社区的一个开发团队也在设计[集成测试框架](https://github.com/filecoin-project/devgrants/issues/492) 来测试FVM正确性。FVM的不同组件会被进行模糊化测试。
 
-### **漏洞汇报**
+## 漏洞汇报
 
 如果要汇报漏洞，请联系security@filecoin.io，这样才有资格参与赏金计划。你可以查看[保密汇报准则](https://security.filecoin.io/#vulnerability-reporting)。另外，FVM漏洞赏金计划也在Gitcoin [上线](https://gitcoin.co/issue/filecoin-project/community/504/100028707)，还会在ImmuneFi上分享。
 
 请**不要**提交一个公开的问题单，或在Slack和Twitter等公共场所讨论漏洞，否则就没资格参与奖项。
 
-### **展望未来**
+## 展望未来
 
 希望在五月底之前，我们现有的开发者社区和新来的外部开发者，会帮助找到FVM M1里程碑的潜在漏洞，尽早在FVM M2里程碑加入用户可编程性和EVM兼容性之前提出来。
 

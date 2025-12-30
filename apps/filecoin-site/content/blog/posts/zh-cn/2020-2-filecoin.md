@@ -27,7 +27,7 @@ _template: blog_detail_ch
 
 在此篇博客文章中，我们将介绍测试网第一阶段上线以来的最新进展，以及更新有关测试网第二阶段和主网上线的路线图。请查看我们[2019年第四季度路线图更新](https://filecoin.io/blog/roadmap-update-2019-q4/)和[测试网第二阶段更新](https://filecoin.io/zh-cn/blog/roadmap-update-february-2020/) （按此顺序）来获取更多内容。
 
-### 我们目前的进展
+## 我们目前的进展
 
 提醒大家，我们于2019年12月11日启动了[测试网第一阶段](https://filecoin.io/blog/filecoin-testnet-is-live/)，截至本文撰写之时，测试网已经拥有**3.6PiB+** 的存储容量。尽管我们期望Filecoin主网会更加的重量级，但这是一个很好的开端，让我们继续成长！
 
@@ -55,7 +55,7 @@ _template: blog_detail_ch
   - **💾 更多矿工!** 本周我们看到一些挖矿团队在Filecoin主网启动之前的挖矿配置的视频和图片。请看下面的一些配置! ![Filecoin 社区挖矿平台](https://filecoin.io/vintage/images/blog/mining-rigs.jpg)
   - **👟 开发者资助。** 我们最近刚刚结束了[Filecoin开发者资助](https://filecoin.io/grants/)的第二批申请。非常感谢社区成员提出的富有创意的建议！我们将很快宣布资助的获得者。如果您错过了这一批，请不要担心，我们正在接受第三批申请，第三批在**2020年3月31日**截止。我们期待看到您的申请！
 
-### 测试网第二阶段：日期更新
+## 测试网第二阶段：日期更新
 
 提醒大家，我们接下来主要的里程是：
 

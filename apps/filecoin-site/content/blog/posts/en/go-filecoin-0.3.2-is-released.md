@@ -27,41 +27,41 @@ _template: blog_detail
 
 We’re happy to announce go-filecoin 0.3.2. This release is a big step towards completing the filecoin storage protocol. It includes many changes to the miner actor builtin smart contract that will allow the network to securely account for verifiable storage power once fault handling is in place. Many less visible but high impact code and testing improvements ship with this release. 0.3.2 also includes a big UX improvement with the new and improved `go-filecoin deals` command for user friendly management of storage deals. Getting paid as a storage miner is now as simple as a single CLI call.
 
-### Features
+## Features
 
-#### 🏇 Storage protocol nearing completeness
+### 🏇 Storage protocol nearing completeness
 
 Our number one goal is a network securely powered by verifiable storage. In order for this to work we need to penalize cheating miners who do not prove their storage on time. This release includes most of the groundwork needed, including fundamental data structures and encoding work for tracking sets of sectors, improved power tracking in the miner actor built-in smart contract, and charging fees for late storage proof (PoSt) submissions.
 
-#### 👪 Multiple sector sizes
+### 👪 Multiple sector sizes
 
 In order for the network to scale gracefully, different miners may choose from a variety of different sector sizes to put data in and prove over: smaller sectors for faster and more nimble storage; larger sectors for slower but efficient storage. This release includes all of the software updates we need to support multiple sector sizes in a single network; however, we plan to properly vet network conditions with much bigger sectors before enabling multiple sectors sizes in the user devnet. Expect 1 GiB sectors on the user devnet in the next release.
 
-#### 🤝 Deal management and payments
+### 🤝 Deal management and payments
 
 Both clients and miners can now easily inspect the fine details of all storage deals they have entered into using `go-filecoin deals list` and `go-filecoin deals show`. Miners can get paid for honoring a deal by running `go-filecoin deals redeem`. Additionally this release ships some improvements in payment channel safety for correct arbitration of deal disputes we want down the road.
 
-### Performance and Reliability
+## Performance and Reliability
 
-#### 🌳 Upgrade in place
+### 🌳 Upgrade in place
 
 This release drives home previous work on repo migrations. The `go-filecoin-migrate` tool (included in the go-filecoin source repo) is now complete. This release includes a proof of concept migration: upgrading on-disk chain metadata from JSON to the more compact CBOR. Landing this means we are confident that this major technical challenge is behind us, putting us one step closer to a reliable, persistent testnet.
 
-### Refactors and Endeavors
+## Refactors and Endeavors
 
-#### 📈Major testing improvements
+### 📈 Major testing improvements
 
 Testing is the silent champion of reliability and development speed. This release includes [tons of](https://github.com/filecoin-project/go-filecoin/pull/2972) [behind](https://github.com/filecoin-project/go-filecoin/pull/2700) [the scenes](https://github.com/filecoin-project/go-filecoin/pull/2990) [work](https://github.com/filecoin-project/go-filecoin/pull/2919) improving the quality of existing unit and integration tests as well as adding new tests to existing code. Continued improvements to the [FAST](https://github.com/filecoin-project/go-filecoin/tree/master/tools/fast) framework promise to further accelerate integration testing and devnet deployments.
 
-#### 💳 Tech debt paydown
+### 💳 Tech debt paydown
 
 This release is not playing around when it comes to paying off technical debt. Fundamental chain refactors include an [improved immutable tipset type](https://github.com/filecoin-project/go-filecoin/pull/2837) and tipset cache sharing are at the top of the list. A major refactor of the [message](https://github.com/filecoin-project/go-filecoin/pull/2798) [handling](https://github.com/filecoin-project/go-filecoin/pull/2796) [system](https://github.com/filecoin-project/go-filecoin/pull/2795) into inbox and outbox queues is also a notable improvement. Don’t forget about a consistent internal attoFIL token type, a sleek new miner deal acceptance codepath, sector builder reliability fixes… the list goes on. We are excited to be shipping higher quality software with each release so that we can move faster towards a robust mainnet.
 
-### Changelog
+## Changelog
 
 A full list of [all 207 PRs in this release](https://github.com/search?p=2&q=is%3Apr+merged%3A2019-05-09..2019-07-05+repo%3Afilecoin-project%2Fgo-filecoin+repo%3Afilecoin-project%2Frust-fil-proofs+repo%3Afilecoin-project%2Fspecs&type=Issues), including many bugfixes not listed here, can be found on GitHub.
 
-### CLI diff
+## CLI diff
 
 | go-filecoin command | change       |
 | ------------------- | ------------ |
@@ -72,7 +72,7 @@ A full list of [all 207 PRs in this release](https://github.com/search?p=2&q=is%
 | mining status       | added        |
 | show block          | args changed |
 
-### Contributors
+## Contributors
 
 ❤️ Huge thank you to everyone that made this release possible! By alphabetical order, here are all the humans who contributed to this release:
 
@@ -153,7 +153,7 @@ A full list of [all 207 PRs in this release](https://github.com/search?p=2&q=is%
 - [@ZenGround0](https://github.com/ZenGround0) (9 commits, 9 PRs, 23 issues, 37 comments)
 - [@zixuanzh](https://github.com/zixuanzh) (1 PR)
 
-### 🙌🏽 Want to contribute?
+## 🙌🏽 Contribute
 
 Would you like to contribute to the Filecoin project and don’t know how? Here are a few places you can get started:
 
@@ -162,6 +162,6 @@ Would you like to contribute to the Filecoin project and don’t know how? Here 
 - Join the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat), introduce yourself in #\_fil-lobby, and let us know where you would like to contribute
 - Join the [user devnet](https://github.com/filecoin-project/go-filecoin/wiki/Getting-Started)
 
-### ⁉️ Do you have questions?
+## ⁉️ Questions
 
 The best place to ask your questions about go-filecoin, how it works, and what you can do with it is at [discuss.filecoin.io](https://discuss.filecoin.io/). We are also available at the [community chat on Matrix/Slack](https://github.com/filecoin-project/community#chat).

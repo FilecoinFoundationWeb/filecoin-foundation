@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 今天，我们很高兴地宣布，Filecoin协议已上线另外两个实现：[**forest**](https://github.com/ChainSafe/forest/)(由ChainSafe在Rust上实现)和**fuhon**(由Soramitsu在C++上实现)。这些实现正在积极地开发中，现已完全开放供大家使用。请于GitHub上查看！
 
-### 上线不同实现的重要性
+## 上线不同实现的重要性
 
 正如我们在[这篇博客文章](https://filecoin.io/blog/announcing-lotus/)里首次提到的那样，上线多种实现的Filecoin网络是我们实现网络安全策略的关键部分。可在同一网络进行互操作的多个实现可减少*一个*实现出现重大错误和破坏整个网络的风险。
 
@@ -43,19 +43,19 @@ _template: blog_detail_ch
 - [**fuhon**](https://github.com/filecoin-project/cpp-filecoin) (written in C++)
 - [**forest**](https://github.com/ChainSafe/forest) (written in Rust)
 
-### 关于 ChainSafe and Soramitsu
+## 关于 ChainSafe and Soramitsu
 
 我们选择了ChainSafe和Soramitsu作为我们第一批实现上线资助的合作伙伴，因为这些团队与web 3的使命和价值保持了一致性，并在实施复杂的区块链实现方面具有深厚的经验，我们很高兴能有这些模范团队为Filecoin的生态作出贡献。
 
-### ChainSafe
+## ChainSafe
 
 [ChainSafe Systems](https://chainsafe.io/) 是一家正在为Web 3构建基础架构的区块链研发公司。ChainSafe成立于几年前，由在早期以太坊见面会上认识的开发者组成。从那时起，该团队就在致力于Ethereum, Ethereum Classic, Cosmos, Polkadot和现在Filecoin生态的构建。除了实现Filecoin的Rust版本实现外，ChainSafe还在构建以太坊2.0和Polkadot协议的实现。您可以在此处了解有关团队及其Filecoin Rust版本实现的更多信息。
 
-### Soramitsu
+## Soramitsu
 
 [Soramitsu](https://soramitsu.co.jp/) 是一家日本金融科技公司，具有创建区块链底层架构、支付系统和身份认证解决方案的专业经验与知识。Soramitsu团队在构建企业级金融技术系统方面具有丰富的经验，这种在构建复杂软件（尤其是区块链方面）上对稳健性和高质量的追求是非常重要的。除了Filecoin的C++版本实现实现之外，Soramitsu还在构建Polkadot的C++版本，并且是[libp2p的C++版本](https://github.com/soramitsu/libp2p)的主要维护者。
 
-### 加入合作
+## 加入合作
 
 随着Filecoin生态的发展，我们会不断寻找目标一致的合作伙伴。如果您想构建或查看我们的提案申请要求，请点击Filecoin DevGrants program！如果您想集思广益并了解其他的参与方式，请点击 [https://discuss.filecoin.io/](https://discuss.filecoin.io/ "https://discuss.filecoin.io/") 发布你的想法。
 

@@ -27,7 +27,7 @@ Wave 7 Dev Grants have been reviewed and awarded! Below we highlight some of the
 
 Proposals for Wave 8 Dev Grants are currently being accepted until June 30th at 23:59 PDT. Submit your project proposal by the deadline for early consideration, and contribute to the innovative programs expanding Web3 and the Filecoin ecosystem.
 
-[Read more](https://github.com/filecoin-project/devgrants/tree/master) about proposal guidelines and apply by making a PR to the dev grants repo. Wave 8 RFPs focus on tools and solutions to enhance the mining experience. We also accept open grant proposals where you can suggest your own Filecoin project idea. For questions, reach out to us in [Filecoin Slack](https://filecoin.io/slack) in the [#fil-devgrants](https://filecoinproject.slack.com/archives/C01G57K6FUY) channel or contact [devgrants@fil.org](mailto:devgrants@fil.org).
+[Read more](https://github.com/filecoin-project/devgrants/tree/master) about proposal guidelines and apply by making a PR to the dev grants repo. Wave 8 RFPs focus on tools and solutions to enhance the mining experience. We also accept open grant proposals where you can suggest your own Filecoin project idea. For questions, reach out to us in [Filecoin Slack](https://filecoin.io/slack) in the [#fil-devgrants](https://filecoin.io/slack) channel or contact [devgrants@fil.org](mailto:devgrants@fil.org).
 
 ## Wave 7 Highlights
 

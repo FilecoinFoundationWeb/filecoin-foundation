@@ -1,22 +1,15 @@
 import Image from 'next/image'
 
-import { clsx } from 'clsx'
-
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { LinkCard } from '@filecoin-foundation/ui-filecoin/LinkCard'
-import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
-import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/Section'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { SimpleCard } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
 import { PATHS } from '@/constants/paths'
-import {
-  FILECOIN_DOCS_URL,
-  FILECOIN_FOUNDATION_URLS,
-} from '@/constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -26,10 +19,10 @@ import { CardGridContainer } from '@/components/CardGridContainer'
 import { ImageGrid } from '@/components/ImageGrid'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
-import { SplitSectionContent } from '@/components/SplitSectionContent'
 
 import { getInvolvedOptions } from '../community-hub/data/getInvolvedOptions'
 
+import { HeroSection } from './components/HeroSection'
 import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
 import { builtOnFilecoin } from './data/builtOnFilecoin'
 import { developerResources } from './data/developerResources'
@@ -45,50 +38,9 @@ export default function BuildOnFilecoin() {
         structuredData={generateStructuredData(BUILD_ON_FILECOIN_SEO)}
       />
 
-      <div className={clsx('relative isolate', backgroundVariants.dark)}>
-        <Navigation backgroundVariant="transparentDark" />
-        <PageSection backgroundVariant="transparentDark">
-          <PageHeader
-            title="Build on Filecoin: open, scalable, verifiable storage"
-            description="Filecoin is a programmable, permissionless network from the ground up with cryptographic verification and global redundancy. Integrate decentralized storage that scales with your needs and safeguards data integrity at every layer."
-            cta={
-              <Button href={FILECOIN_DOCS_URL} variant="primary">
-                Explore documentation
-              </Button>
-            }
-          />
-        </PageSection>
+      <Navigation backgroundVariant="dark" />
 
-        <div className="absolute top-30 right-0 hidden h-[60vh] w-[50vw] lg:block">
-          <Image
-            fill
-            priority
-            src={graphicsData.cupolaEarthView.data}
-            alt={graphicsData.cupolaEarthView.alt}
-            className="-z-10 object-contain"
-          />
-        </div>
-
-        <PageSection
-          backgroundVariant="transparentDark"
-          paddingVariant="topNone"
-        >
-          <SectionContent title="Announcing Filecoin Onchain Cloud">
-            <SplitSectionContent
-              title="Verifiable onchain services with transparent storage, retrieval, and payments"
-              description={[
-                'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pining, retrieval, and payments are transparent, programmable, and interoperable by default.',
-                'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
-              ]}
-              cta={[
-                <Button href="https://filecoin.cloud/" variant="primary">
-                  Get started with Filecoin Onchain Cloud
-                </Button>,
-              ]}
-            />
-          </SectionContent>
-        </PageSection>
-      </div>
+      <HeroSection />
 
       <PageSection backgroundVariant="light" paddingVariant="bottomNone">
         <SectionContent

@@ -30,7 +30,7 @@ The Filecoin community successfully completed the task of generating secure para
 
 **Thank you** to everyone who contributed!
 
-## **Recap and Participants**
+## Recap and Participants
 
 We used a Trusted setup ceremony – a process where secure parameters were generated for the 4 circuits that will be used for mainnet. Outputs of this phase should be trustable so long as one party in the chain is honest.
 
@@ -48,21 +48,21 @@ For **EmptySectorUpdate - Poseidon**:
 
 ![](/uploads/untitled-5.webp)
 
-**Attestations page that holds more information about the entire process and all the participants is linked** [**here**](https://github.com/filecoin-project/phase2-attestations/tree/trusted-setup-2/ts2)**.**
+**Attestations page that holds more information about the entire process and all the participants is linked [here](https://github.com/filecoin-project/phase2-attestations/tree/trusted-setup-2/ts2).**
 
 ## Community and participants feedback: 🎉
 
-<a href=""><img src="/uploads/untitled.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/untitled.webp)](https://github.com/filecoin-project/phase2-attestations/tree/trusted-setup-2/ts2)
 
-<a href=""><img src="/uploads/untitled-2.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/untitled-2.webp)](https://github.com/filecoin-project/phase2-attestations/tree/trusted-setup-2/ts2)
 
-## **How do I trust the output of these ceremonies?**
+## How do I trust the output of these ceremonies?
 
 For the current run, outputs can be trusted if the transcript is entirely verifiable, and you trust that **_at least_** one of the participants did not leak their contributed randomness in any way.
 
 As such, for both ceremonies, we attempted to gather a diverse group of participants – both contributors from within the Filecoin ecosystem, miners with competing interests, as well as individuals and teams from outside in adjacent Web3 communities. In doing so, we aimed to reduce the risk of collusion and increase the probability that at least one contributor per circuit would be deemed sufficiently trustable - thereby guaranteeing the integrity of the output parameters.
 
-## **Next Steps**
+## Next Steps
 
 For mainnet upgrade to network V15, nothing more is required. ✅
 

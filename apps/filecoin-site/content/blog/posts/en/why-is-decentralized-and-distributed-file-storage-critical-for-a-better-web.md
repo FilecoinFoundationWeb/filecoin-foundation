@@ -32,7 +32,7 @@ In the span of less than three decades the web has become one of the greatest ac
 
 The web need not be structured this way. Emerging new technologies are allowing us to improve the web’s underlying protocols by addressing content by what it is rather than addressing it by where it is. This makes the web a much safer and robust place, where we’re far less reliant on any one particular entity to give us the data we request. Now instead of relying on expensive businesses to store and transmit humanity’s trove of knowledge we can distribute data across a vast network of peers who are paid to store each other’s data.
 
-### Decentralized Storage makes the web robust and resilient
+## Decentralized Storage makes the web robust and resilient
 
 Today, information on the internet is addressed by **location**: a particular piece of content has a URL — a Universal Resource _Locator_ — that involves the IP Address of a web server that hosts the content at a specific location. For example, to go to a URL like facebook.com/mypicture.jpg, we resolve the domain name (facebook.com) into an IP Address (eg 31.13.70.36) and look up the picture there. The URL is saying “go to 31.13.70.36 and request the content at the path “/mypicture.jpg”. The URL always points to that location. If the same picture was hosted on another site, or even your own computer, you would still have to connect to that IP Address and download the content.
 
@@ -48,7 +48,7 @@ IPFS, the InterPlanetary File System, is a protocol that lets us use those conte
 
 IPFS decentralizes the web by addressing information based on what it is, not where it is. This decentralized pattern lets web applications work in local networks disconnected from the original source, whether it is a chat room in an office that lost its uplink, a scientific paper hosted in a variety of libraries, Wikipedia in a remote village with poor connectivity, or a family’s chat messenger during a crisis. It strengthens our digital information, making the data resilient to failures in the underlying internet, securing it cryptographically, and giving it permanence through time. You or the people whom you’ve shared your data with can save copies of information and count on the same links for years. IPFS allows file storage on the web to be decentralized, but a second question remains: how can we create an open, competitive market for providing that storage?
 
-### Cloud Storage and the dangers of centralization
+## Cloud Storage and the dangers of centralization
 
 Since its inception cloud data storage has evolved to be functional, but leaves many economic and security concerns unaddressed. In order to understand why cloud storage is currently expensive and precarious it’s useful to examine its evolution over time.
 
@@ -64,7 +64,7 @@ Even more frustrating, there exists a significant amount of ‘latent’ (availa
 
 ![Filecoin: A blockchain-based storage network and cryptocurrency](https://filecoin.io/vintage/images/blog/coin-center/ipfs2.png)
 
-### Filecoin: Paying the network to store your data
+## Filecoin: Paying the network to store your data
 
 While IPFS lets us exchange data directly with our peers instead of relying on centralized hosts, Filecoin takes it a step further by giving us a way to pay each other for storing data. Filecoin is a decentralized file storage network and protocol token (‘token’ is used interchangeably with ‘[appcoin](https://coincenter.org/entry/what-are-appcoins)’ and ‘cryptocurrency’). Think of it like the AirBnB data storage. On the supply side — the mining side of the token — individuals and organizations with unused storage space can add their disks to the Filecoin Network and receive client orders. On the demand side — the clients — individuals and organizations hire the Filecoin Network to store their data, which gets routed to many different miners worldwide.
 
@@ -78,7 +78,7 @@ Users aren’t required to use Filecoin and IPFS together, but the two combined 
 
 ![New blockchain, new breakthroughs](https://filecoin.io/vintage/images/blog/coin-center/ipfs4.png)
 
-### Protecting Privacy and Decency on the Decentralized Web
+## Protecting Privacy and Decency on the Decentralized Web
 
 Storing private data on a network powered by IPFS and Filecoin means that parts of the data may be distributed across many computers operated by complete strangers; remarkably, however, this can be _better_ for privacy than existing cloud systems. Today, a large variety of cloud storage providers, big and small, store their users’ data entirely in the clear—unencrypted. Even some who have added _encryption-at-rest_, have done so by controlling their users’ encryption keys, instead of creating truly “oblivious” or “zero-knowledge” systems. This is a dangerous arrangement because it means that customer data can be stolen and leaked or sold by hackers or other attackers. Users (or the applications they use) should encrypt their data end-to-end before giving it to these cloud storage providers, whether centralized or not.
 
@@ -86,7 +86,7 @@ Distributing user data to a large array of storage computers who are not owned b
 
 ![A decentralized market for storage](https://filecoin.io/vintage/images/blog/coin-center/ipfs5.png)
 
-### Market Protocols: Harnessing networks and incentives to create better industries
+## Market Protocols: Harnessing networks and incentives to create better industries
 
 At Protocol Labs, we believe that Market Protocols——decentralized networks that are powered by protocol tokens—are the next wave of internet innovation. We believe these technologies have the potential to reshape how we organize commerce and transact value world-wide. This is partially because Market Protocols present a completely new dynamic between incentives, participants, and a network’s ability to create value. In the current model of internet innovation, when a company creates a network economy they capture the majority of the network’s value. Though millions of people participate in creating value on the network, those participants are likely not earning a stake in the network itself. The majority of long-term value is awarded to a small number of wealthy investors and early-shareholders. By contrast, Market Protocols are fueled by protocol tokens, which are a percentage of the network’s overall value. The compensation for participating in a Market Protocol is a stake in the network, which grows and shrinks with the value of that network.
 

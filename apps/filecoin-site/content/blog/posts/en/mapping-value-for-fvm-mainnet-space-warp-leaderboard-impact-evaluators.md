@@ -30,7 +30,7 @@ _template: blog_detail
 
 ![](/uploads/sw-leaderboard.gif)
 
-## **Overview**
+## Overview
 
 Leading up to the [Filecoin Virtual Machine](https://fvm.filecoin.io/)’s mainnet launch on March 14th, a series of Impact Evaluator rounds are empowering the community of FVM builders and experts to assess and reward the most valuable work and projects within the ecosystem. Seven rounds spread over 12+ weeks are allocating a $75k reward pool, and each round’s results populate the [FVM Builders Leaderboard](http://spacewarp.fvm.dev/#ie), showcasing leading projects to the ecosystem.
 
@@ -38,7 +38,7 @@ These rounds give builders, investors, and peer blockchain ecosystems a way to k
 
 The Builders Leaderboard, when coupled with the Impact Evaluators, creates a market map that provides a direct insight into where the community believes valuable projects are being built today. These systems are independent and will continue beyond Spacewarp through early FVM mainnet launch.
 
-## **Impact Evaluators for FVM**
+## Impact Evaluators for FVM
 
 Impact Evaluators are a class of funding mechanisms that are growing in priority for Protocol Labs, and they can be understood as systems or mechanisms for retrospectively measuring, evaluating, and rewarding valuable work towards specific objectives (learn more [here](https://www.youtube.com/watch?v=1soPQ31ZHkQ&t=510s)). This provides a system to reward and acknowledge the high uncertainty, high upside projects that may or may not be captured by other mechanisms (e.g. prospective grants).
 
@@ -50,11 +50,11 @@ This specific Impact Evaluator implementation is also designed to further incent
 
 ![](/uploads/space-warp-impact-evaluator-round-1.webp)
 
-## **Builders Leaderboards**
+## Builders Leaderboards
 
 Each round’s results are displayed on a public leaderboard rich with links to learn more about the projects and initiatives being built. Beyond being a valuable marketing opportunity for projects, the leaderboard also gives builders an early insight into the communities perceived value of their work. Because of the recurring cadence of the Impact Evaluator rounds and the structure of evaluating a project’s most recent work, the leaderboard serves as a signaling tool for the ongoing sentiment of the builders and of what they find most valuable.
 
-## **The Frontier of the Ecosystem Pulse Approach**
+## The Frontier of the Ecosystem Pulse Approach
 
 The FVM Builders Leaderboard and Impact Evaluator rounds are an early pilot for a powerful, decentralized capital allocation mechanism. These systems reward high-uncertainty, high-potential projects by providing the upside for early adopters to take on ambitious projects that will help define the space. With FVM’s mainnet launch, a watershed moment is occurring in the development of decentralized storage and, with it, a new model for launching early projects is emerging.
 

@@ -8,7 +8,7 @@ dim_image: false
 double_column_inverted: false
 double_column_mode: false
 excerpt: >-
-  以下课程视频和“教学大纲”涵盖了Filecoin网络的方方面面——从挖矿、存储到应用开发。这个资源是给所有有兴趣了解Filecoin的历史和发展以及如何利用网络进行挖矿、创建和存储的人们。
+  以下课程视频和"教学大纲"涵盖了Filecoin网络的方方面面——从挖矿、存储到应用开发。这个资源是给所有有兴趣了解Filecoin的历史和发展以及如何利用网络进行挖矿、创建和存储的人们。
 image:
   alt: ""
   url: >-
@@ -23,112 +23,132 @@ title: 学习更多关于Filecoin的知识，请从这里开始
 _template: blog_detail_ch
 ---
 
-我们在这里可以让您如回炉重造般快速了解所有关于Filecoin的事情。以下课程视频和“教学大纲”涵盖了Filecoin网络的方方面面——从挖矿、存储到应用开发。这个资源是给所有有兴趣了解Filecoin的历史和发展以及如何利用网络进行挖矿、创建和存储的人们。
+我们在这里可以让您如回炉重造般快速了解所有关于Filecoin的事情。以下课程视频和"教学大纲"涵盖了Filecoin网络的方方面面——从挖矿、存储到应用开发。这个资源是给所有有兴趣了解Filecoin的历史和发展以及如何利用网络进行挖矿、创建和存储的人们。
 
 ## Filecoin 基础
 
-<img src="/vintage/images/blog/zeroknowledge-interview-header.png" width="100%">
+![](/vintage/images/blog/zeroknowledge-interview-header.png)
 
-[**Filecoin项目历史**](https://www.zeroknowledge.fm/106) **与**[**Filecoin的胡：: Web 3.0的愿景**](https://www.youtube.com/watch?v=0a_EcR9ZgmM)
+### [Filecoin项目历史](https://www.zeroknowledge.fm/106) 与 [Filecoin的胡安: Web 3.0的愿景](https://www.youtube.com/watch?v=0a_EcR9ZgmM)
 
-<p>协议实验室创始人兼CEO 胡安与ZeroKnowledge团队、CoinDesk 团队一起讨论了Filecoin、IPFS和Web3的历史和未来。 这两篇采访提供了关于Filecoin项目成立以来如何发展及其发展方向的观点。</p>
+协议实验室创始人兼CEO 胡安与ZeroKnowledge团队、CoinDesk 团队一起讨论了Filecoin、IPFS和Web3的历史和未来。 这两篇采访提供了关于Filecoin项目成立以来如何发展及其发展方向的观点。
 
-      **时长:** 2小时
-      **补充资料:**  
-      - [Web3的创建 (2019)](https://www.youtube.com/watch?v=pJOG5Ql7ZD0)  
-      - [长期的信息结构| 胡安](https://www.youtube.com/watch?v=pn0G2rz1MzM)  
-      - [Web3与协议实验室简介](https://www.youtube.com/watch?v=d-iigN2WjvY)  
-      - [ProtoSchool: 分布式数据结构](https://proto.school/data-structures/)
+**时长:** 2小时
 
-[**Filecoin是如何运行的**](https://www.youtube.com/watch?v=P28aNAdZDi4)
+**补充资料:**
 
-<p>本次研讨会是对Filecoin如何运作进行概念性概述，包括项目任务的背景、规范系统概述、网络中的主要参与者以及Web3生态的概述。</p>
+- [Web3的创建 (2019)](https://www.youtube.com/watch?v=pJOG5Ql7ZD0)
+- [长期的信息结构| 胡安](https://www.youtube.com/watch?v=pn0G2rz1MzM)
+- [Web3与协议实验室简介](https://www.youtube.com/watch?v=d-iigN2WjvY)
+- [ProtoSchool: 分布式数据结构](https://proto.school/data-structures/)
 
-      **时长:** 2小时
-      **补充资料:**  
-      - 观看[3D Filecoin Explainer](https://filecoin.io/) (点击“Explore the Filecoin vision”)
+### [Filecoin是如何运行的](https://www.youtube.com/watch?v=P28aNAdZDi4)
 
-<img src="/vintage/images/blog/filecoin-mining-guide.png" width="100%">
+本次研讨会是对Filecoin如何运作进行概念性概述，包括项目任务的背景、规范系统概述、网络中的主要参与者以及Web3生态的概述。
 
-[**Filecoin挖矿简介**](https://filecoin.io/blog/filecoin-guide-to-storage-mining/)
+**时长:** 2小时
 
-<p>在本节课中，Filecoin 软件工程师 Łukasz Magiera 解释了如何在 Filecoin 网络上挖矿，讲解了包括存储扇区、存储证明和挖矿算力在内等关键概念。他对网络架构从高层次进行了概述，并介绍了如何设置挖矿节点。</p>
+**补充资料:**
 
-      **时长:** 1小时
-      **补充资料:**  
-      - [如何解决挖矿中出现的问题](https://www.youtube.com/watch?v=D9qdv_3yNbM)
+- 观看[3D Filecoin Explainer](https://filecoin.io/) (点击"Explore the Filecoin vision")
 
-[**Filecoin经济**](https://www.youtube.com/watch?v=fzGlen-LkKA)
+![](/vintage/images/blog/filecoin-mining-guide.png)
 
-<p>在本次Zoom演讲中，Filecoin团队谈到了最近的报告《缔造Filecoin经济》中提出的机制和模型，团队还讨论了社区提交的一些问题。</p>
+### [Filecoin挖矿简介](https://filecoin.io/blog/filecoin-guide-to-storage-mining/)
 
-      **时长:** 2小时
-      **补充资料:**  
-      - [简析Filecoin经济](https://filecoin.io/blog/introducing-the-filecoin-economy/)  
-      - [缔造Filecoin经济](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
+在本节课中，Filecoin 软件工程师 Łukasz Magiera 解释了如何在 Filecoin 网络上挖矿，讲解了包括存储扇区、存储证明和挖矿算力在内等关键概念。他对网络架构从高层次进行了概述，并介绍了如何设置挖矿节点。
+
+**时长:** 1小时
+
+**补充资料:**
+
+- [如何解决挖矿中出现的问题](https://www.youtube.com/watch?v=D9qdv_3yNbM)
+
+### [Filecoin经济](https://www.youtube.com/watch?v=fzGlen-LkKA)
+
+在本次Zoom演讲中，Filecoin团队谈到了最近的报告《缔造Filecoin经济》中提出的机制和模型，团队还讨论了社区提交的一些问题。
+
+**时长:** 2小时
+
+**补充资料:**
+
+- [简析Filecoin经济](https://filecoin.io/blog/introducing-the-filecoin-economy/)
+- [缔造Filecoin经济](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
 
 ## Filecoin生态
 
-<img src="/vintage/images/blog/filecoin-integrations-web3.jpg" width="100%">
+![](/vintage/images/blog/filecoin-integrations-web3.jpg)
 
-[**为Web3基础设施集成Filecoin**](https://www.youtube.com/watch?v=Q0oe6i7d1u4)
+### [为Web3基础设施集成Filecoin](https://www.youtube.com/watch?v=Q0oe6i7d1u4)
 
-<p>Filecoin提供了许多有前景的商业机会。本会议将探讨几个关键集成Filecoin资源的机会，以帮助其他希望集成Filecoin的企业。</p>
+Filecoin提供了许多有前景的商业机会。本会议将探讨几个关键集成Filecoin资源的机会，以帮助其他希望集成Filecoin的企业。
 
-      **时长:** 1小时
-      **补充资料:**  
-      - [IPFS文档: 永久性、持续性和固定性](https://docs.ipfs.tech/concepts/persistence/)  
-      - [什么是IPFS的Pinning服务?](https://link.medium.com/U9MHI6hz19) (Pinata explainer)  
-      - [Developing on Filecoin](https://www.youtube.com/watch?v=aGCpq0Xf-w8) (video)
+**时长:** 1小时
 
-[**通过Lotus实施方案连接到Filecoin 网络**](https://www.youtube.com/watch?v=3dkzLJuv1jc&list=PLXzKMXK2aHh43-aCLLuGnny7nhnsf49LO&index=14&t=0s)
+**补充资料:**
 
-<p>Lotus是Filecoin协议的实施方案，是您连接到Filecoin网络并与其他人进行互动的方法! 在这个互动研讨会中，我们将介绍Lotus的架构、演练安装Lotus和同步区块链并研究如何通过Lotus节点探索Filecoin的功能。</p>
+- [IPFS文档: 永久性、持续性和固定性](https://docs.ipfs.tech/concepts/persistence/)
+- [什么是IPFS的Pinning服务?](https://link.medium.com/U9MHI6hz19) (Pinata explainer)
+- [Developing on Filecoin](https://www.youtube.com/watch?v=aGCpq0Xf-w8) (video)
 
-      **时长:** 1小时
-      **补充资料:**  
-      - [Filecoin文档: lotus 和 go-ipfs 的互操作](https://docs.filecoin.io/build/examples/network-inspector/lotus-and-go-ipfs-interactions/)  
-      - [如何设置lotus和go-ipfs API用户端](https://docs.filecoin.io/developers/introduction/overview/)
+### [通过Lotus实施方案连接到Filecoin 网络](https://www.youtube.com/watch?v=3dkzLJuv1jc&list=PLXzKMXK2aHh43-aCLLuGnny7nhnsf49LO&index=14&t=0s)
 
-[**用于Filecoin网络的Textile工具**](https://www.youtube.com/watch?v=IZ8M9m9_uJY)
+Lotus是Filecoin协议的实施方案，是您连接到Filecoin网络并与其他人进行互动的方法! 在这个互动研讨会中，我们将介绍Lotus的架构、演练安装Lotus和同步区块链并研究如何通过Lotus节点探索Filecoin的功能。
 
-<p>Textile提供了一套开源工具，通过libp2p、IPFS和Filecoin提供分布式数据库、基于IPFS的存储、内容托管等。本次研讨会涵盖了如何使用 Textile 的 Thread、Buckets 和 Hub 工具为 Filecoin 网络创建应用程序（重点是 JavaScript）。该课程包括介绍 Textile 的工具组件、基本命令行 (CLI) 操作和 Textile 的 JavaScript用户。为了做好准备，我们鼓励您在开始之前安装一些东西。
+**时长:** 1小时
+
+**补充资料:**
+
+- [Filecoin文档: lotus 和 go-ipfs 的互操作](https://docs.filecoin.io/build/examples/network-inspector/lotus-and-go-ipfs-interactions/)
+- [如何设置lotus和go-ipfs API用户端](https://docs.filecoin.io/developers/introduction/overview/)
+
+### [用于Filecoin网络的Textile工具](https://www.youtube.com/watch?v=IZ8M9m9_uJY)
+
+Textile提供了一套开源工具，通过libp2p、IPFS和Filecoin提供分布式数据库、基于IPFS的存储、内容托管等。本次研讨会涵盖了如何使用 Textile 的 Thread、Buckets 和 Hub 工具为 Filecoin 网络创建应用程序（重点是 JavaScript）。该课程包括介绍 Textile 的工具组件、基本命令行 (CLI) 操作和 Textile 的 JavaScript用户。为了做好准备，我们鼓励您在开始之前安装一些东西。
 
 - 在您的电脑上[安装](https://docs.textile.io/hub/accounts/)Textile Hub命令行界面(CLI) (这样你就可以通过Hub CLI工具连接到Textile的Hub)。
-- 在您的电脑上[设置Node.js](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)。</p>
+- 在您的电脑上[设置Node.js](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)。
 
-      **时长:** 1小时20分钟
-      **补充资料:**  
-      - [Textile Bucket存档](https://docs.textile.io/buckets/archiving/)  
-      - 用于分布式独立用户数据的协议和事件源数据库
-      - [开发者教程: 简单的Pinning服务演示](https://www.youtube.com/watch?v=mQF0o2IFhVI)  
-      - [如何使用React、Textile Hub和MetaMask构建Meme市场](https://www.youtube.com/watch?v=UaTr0JSg4ZQ)
+**时长:** 1小时20分钟
 
-[**Textile Powergate简介**](https://www.youtube.com/watch?v=aiOTSkz_6aY)
+**补充资料:**
 
-<p>Textile的Powergate是一个API驱动的解决方案，用于在Filecoin和IPFS上部署多层存储。Filecoin上的持久性存储允许对数据进行丰富的存储配置，如复制因子、矿工选择、交易更新和修复。网络的可用存储是可配置的，并通过连接的IPFS节点或pinning网络提供。</p>
+- [Textile Bucket存档](https://docs.textile.io/buckets/archiving/)
+- 用于分布式独立用户数据的协议和事件源数据库
+- [开发者教程: 简单的Pinning服务演示](https://www.youtube.com/watch?v=mQF0o2IFhVI)
+- [如何使用React、Textile Hub和MetaMask构建Meme市场](https://www.youtube.com/watch?v=UaTr0JSg4ZQ)
 
-      **时长:** 35分钟
-      **补充资料:**  
-      - [Filecoin文档: Powergate](https://docs.textile.io/powergate/)  
-      - [Filecoin文档: 如何用Powergate创建简单的Pinning服务](https://docs.filecoin.io/developers/introduction/overview/#)
+### [Textile Powergate简介](https://www.youtube.com/watch?v=aiOTSkz_6aY)
 
-[**Slate**](https://www.youtube.com/watch?v=Rknj2GqvJtg)[**简介**](https://www.youtube.com/watch?v=FJjPMKRy8xQ)
+Textile的Powergate是一个API驱动的解决方案，用于在Filecoin和IPFS上部署多层存储。Filecoin上的持久性存储允许对数据进行丰富的存储配置，如复制因子、矿工选择、交易更新和修复。网络的可用存储是可配置的，并通过连接的IPFS节点或pinning网络提供。
 
-<p>Slate是一款由Jimmy Lee开发的可以让您通过图形界面或API来存储图片、音频、视频和数据的存储应用和Filecoin网络用户端，它创建在Textile的Powergate和Buckets上。本课程的第一部分高屋建瓴地展示了Slate的工作原理。第二部分向您展示如何使用Slate API在Filecoin上进行创建。</p>
+**时长:** 35分钟
 
-      **时长:** 2小时
-      **补充资料:**  
-      - [Slate GitHub Repo](https://github.com/filecoin-project/slate#readme)
+**补充资料:**
 
-[**使用Fleek的Space Daemon创建去中心化的应用程序**](https://www.youtube.com/watch?v=pWJ5fty-7mA)
+- [Filecoin文档: Powergate](https://docs.textile.io/powergate/)
+- [Filecoin文档: 如何用Powergate创建简单的Pinning服务](https://docs.filecoin.io/developers/introduction/overview/#)
 
-<p>Fleek的Space Daemon是一个建立在分布式网络上的开源文件存储、共享和协作平台。它是Dropbox或Google Drive等标准存储工具的私有、加密、p2p版本。本次会议由Web3前端开发者Samuele Agostinelli主持，他将讲解如何使用Space Daemon创建去中心化应用。</p>
+### [Slate简介](https://www.youtube.com/watch?v=Rknj2GqvJtg)
 
-      **时长:** 1小时
-      **补充资料:**  
-      - [Fleek文档](https://docs.fleek.co/)  
-      - [IPFS案例: Fleek](https://docs.ipfs.tech/case-studies/fleek/)
+Slate是一款由Jimmy Lee开发的可以让您通过图形界面或API来存储图片、音频、视频和数据的存储应用和Filecoin网络用户端，它创建在Textile的Powergate和Buckets上。本课程的第一部分高屋建瓴地展示了Slate的工作原理。第二部分向您展示如何使用Slate API在Filecoin上进行创建。
+
+**时长:** 2小时
+
+**补充资料:**
+
+- [Slate GitHub Repo](https://github.com/filecoin-project/slate#readme)
+
+### [使用Fleek的Space Daemon创建去中心化的应用程序](https://www.youtube.com/watch?v=pWJ5fty-7mA)
+
+Fleek的Space Daemon是一个建立在分布式网络上的开源文件存储、共享和协作平台。它是Dropbox或Google Drive等标准存储工具的私有、加密、p2p版本。本次会议由Web3前端开发者Samuele Agostinelli主持，他将讲解如何使用Space Daemon创建去中心化应用。
+
+**时长:** 1小时
+
+**补充资料:**
+
+- [Fleek文档](https://docs.fleek.co/)
+- [IPFS案例: Fleek](https://docs.ipfs.tech/case-studies/fleek/)
 
 ## 额外惊喜！Filecoin的功能特色
 

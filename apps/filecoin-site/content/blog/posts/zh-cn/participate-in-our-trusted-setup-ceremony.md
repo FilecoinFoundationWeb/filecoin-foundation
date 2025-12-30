@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 **若您想参与这个环节，请直接填写**[**此表**](https://docs.google.com/forms/d/e/1FAIpQLSfYrehYIExQJbNLv-m_xsCXGDZM-rHhsBT5xWYy6cHANyBJxw/viewform)**，也可以阅读下面的内容了解更多关于此环节的信息。**
 
-### 什么是可信设置环节？我们为什么需要这样一个环节？
+## 什么是可信设置环节？我们为什么需要这样一个环节？
 
 Filecoin的挖矿是基于复制证明和时空证明机制。我们使用[zkSNARKS](https://z.cash/technology/zksnarks/)来减小链上证明的计算大小。zkSNARKS需要设置一组在系统内所有参与方都知道的[公共参数](https://electriccoin.co/blog/snark-parameters/)，为了能保证zkSNARKS和Filecoin网络的完整性，这些公共参数必须安全地生成。
 
@@ -41,13 +41,13 @@ Zcash在2017年的“Powers of Tau”可信设置环节采用了安全生成SNAR
 
 **阶段 2：** 仅针对Filecoin的线路，将生成只有Filecoin可用的参数。
 
-### 如果我想参与，需要我做什么呢？
+## 如果我想参与，需要我做什么呢？
 
 目前，我们只需要您填写[此表](https://docs.google.com/forms/d/e/1FAIpQLSfYrehYIExQJbNLv-m_xsCXGDZM-rHhsBT5xWYy6cHANyBJxw/viewform)。通过注册，您的信息会被添加到志愿者列表中。在可信设置环节的每个阶段之前，Filecoin团队的成员会联系您参与设置。鉴于环节的特殊性和每个阶段的窗口，也有可能不需要志愿者的协助。我们将于**11月15日**开始可信设置环节的阶段一，因此我们将于**11月1日**开始联系志愿者参与。
 
 若您接到Filecoin团队的联系，您将收到一个用于注册参与此环节日程的链接，在进入您的窗口之前，您将收到有关需要下载的软件的详细说明和我们需要您在可信设置环节中需要执行的步骤说明。
 
-### 参与时间将持续多久？我需要什么规格的电脑？
+## 参与时间将持续多久？我需要什么规格的电脑？
 
 我们还在估算此环节阶段二的细节，因此下面概述了阶段一需要您参与的内容：
 

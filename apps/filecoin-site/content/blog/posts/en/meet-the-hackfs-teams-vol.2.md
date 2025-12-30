@@ -28,11 +28,13 @@ _Welcome to the seventh installment of the Filecoin Community Highlights series,
 
 Last week we [highlighted](https://filecoin.io/blog/hackfs-teams-vol-1/) OMO Earth, Pygate, Unchained Index, and Padlock – four bootstrapping teams taking part in [HackFS](https://hackfs.com/), a month-long hackathon co-hosted by Protocol Labs and [ETH Global](https://ethglobal.co/), designed to showcase the power of Web3. This week, we talked to three more teams to learn more about their work, how they got involved with HackFS and why they’re building on Filecoin.
 
-### Team: [Kazan](https://github.com/samikshan/kazan)
+## Team: [Kazan](https://github.com/samikshan/kazan)
 
 ![Kazan](https://filecoin.io/vintage/images/blog/hfs-kazan.png)
 
-> _“If I play guitar and put out a track, someone else can add drums, and another person can add vocals, and the collaboration goes on and on. The possibilities are endless.” – Samikshan Bairagya_
+> "If I play guitar and put out a track, someone else can add drums, and another person can add vocals, and the collaboration goes on and on. The possibilities are endless."
+>
+> — Samikshan Bairagya
 
 **Team member:** Samikshan Bairagya
 
@@ -58,7 +60,7 @@ Initially, we didn’t intend to build this exclusively for crypto payroll. But 
 
 **How we’re integrating Filecoin and IPFS:** To build this the right way, company data has to be private and secure. Current systems are prone to attacks and data leakage. We want to build a system where data is stored on IPFS and Filecoin rather than on centralized systems. And we plan to offer end-to-end encryption, so that only the people with keys can access their data. Our goal by the end of this month is to finalize the architecture and build out a proof of concept.
 
-### Team: [EduVault](https://github.com/eduvault)
+## Team: [EduVault](https://github.com/eduvault)
 
 ![EduVault](https://filecoin.io/vintage/images/blog/hfs-eduvault.png)
 

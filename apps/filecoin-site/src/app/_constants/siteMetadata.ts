@@ -30,6 +30,7 @@ const FILECOIN_DOCS_URLS = {
   storageModel: `${FILECOIN_DOCS_URL}basics/what-is-filecoin/storage-model`,
 } as const
 
+const FILECOIN_CLOUD_URL = 'https://filecoin.cloud'
 const FILECOIN_FOUNDATION_URL = 'https://fil.org'
 const FILECOIN_FOUNDATION_URLS = {
   ecosystemExplorer: {
@@ -131,6 +132,7 @@ export {
   FILECOIN_FOUNDATION_URL,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
+  FILECOIN_CLOUD_URL,
   ORGANIZATION_NAME,
   ROOT_METADATA,
   SEO,

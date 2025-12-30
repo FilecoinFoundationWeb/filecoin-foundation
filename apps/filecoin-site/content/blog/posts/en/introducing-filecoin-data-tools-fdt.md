@@ -21,7 +21,7 @@ The Engineering team within the Filecoin ecosystem has now positioned the [Filec
 
 This announcement represents the next logical progression towards helping our ecosystem companies offer a practical cloud DX/UX for developers around the world.
 
-### What is FDT?
+## What FDT is
 
 FDT (Filecoin Data Tools) is a set of compute and storage technologies built on top of the Filecoin Network. The Filecoin Network is a decentralized storage network with network revenue and incentivisation built in. We recognize that the cloud has a great developer experience, therefore it is an ambition of ours to achieve the benefits of cloud level DX alongside the transparent and open source incentivisation layers decentralized networks can provide.
 

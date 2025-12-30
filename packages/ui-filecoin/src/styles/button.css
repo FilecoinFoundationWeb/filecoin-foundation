@@ -38,7 +38,7 @@
       }
 
       .light-section & {
-        @apply text-zinc-950;
+        @apply bg-white text-zinc-950;
 
         & .button-arrow-icon {
           @apply text-zinc-500;
@@ -54,7 +54,7 @@
       }
 
       .dark-section & {
-        @apply text-zinc-50;
+        @apply bg-zinc-950 text-zinc-50;
 
         & .button-arrow-icon {
           @apply text-zinc-300;

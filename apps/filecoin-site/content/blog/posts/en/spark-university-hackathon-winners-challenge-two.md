@@ -26,11 +26,11 @@ _template: blog_detail
 
 Now that the Spark University Hackathon has reached a conclusion, we’re shining a spotlight on the winners of the two challenges that Filecoin [sponsored for the event](https://filecoin.io/blog/spark-university-hackathon)! Last week, we highlighted our [first set of winners](https://filecoin.io/blog/spark-challenge-one), whose work focused on applications of Filecoin in storing research and scientific data. In this post, we showcase the work of our second set of winners, whose projects addressed the following prompt:
 
-> _Build a system or app for the decentralized web that stores data on both IPFS and Filecoin, and demonstrates some convenience aspects of shared features between the two networks such as shared content identifiers (CID)._
+_Build a system or app for the decentralized web that stores data on both IPFS and Filecoin, and demonstrates some convenience aspects of shared features between the two networks such as shared content identifiers (CID)._
 
-### Third Place
+## Third Place
 
-#### Kazan
+### Kazan
 
 ![Kazan](https://filecoin.io/vintage/images/blog/kazan.jpg)
 
@@ -40,9 +40,9 @@ While still a prototype, Kazan hopes to add many more features, including the ab
 
 [Watch the demo.](https://youtu.be/_VU1_Rd0Lc8)
 
-### Second Place
+## Second Place
 
-#### Box&Drop
+### Box&Drop
 
 ![Box&Drop](https://filecoin.io/vintage/images/blog/box-and-drop.jpg)
 
@@ -52,9 +52,9 @@ This offers a wide array of fun possibilities, from interactive quests and sites
 
 [Watch the demo.](https://www.youtube.com/watch?v=j4PkDYUxJwU)
 
-### First Place
+## First Place
 
-#### Código Hub
+### Código Hub
 
 ![Código Hub](https://filecoin.io/vintage/images/blog/codigo.jpg)
 

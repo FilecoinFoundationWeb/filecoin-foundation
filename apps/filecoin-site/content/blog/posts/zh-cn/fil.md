@@ -25,13 +25,13 @@ IPFS Force很高兴宣布FIL-Singapore峰会将于8月16到19日在新加坡举�
 
 这场活动将会欢庆生态里的各个优秀项目，展望这个网络的精彩未来。这场峰会将有超过1000名Web3社区成员参与，大家有机会探索Filecoin生态的前景。
 
-### **FIL-Singapore峰会介绍**
+## FIL-Singapore峰会介绍
 
 FIL-Singapore是Filecoin的亚洲社区合作举办的为期四天的活动。它将包括一场Filecoin 峰会以及各类在这周内举办的独立活动，包括见面会、workshop、黑客松和欢乐时光。
 
 这是很好的机会，让大家与整个Filecoin生态的开发者、存储提供者、生态伙伴、投资人和用户建立联系。
 
-### **FIL-Singapore峰会的亮点**
+## FIL-Singapore峰会的亮点
 
 - Web3生态系统里的一流演讲嘉宾和创建者
 - 深度专家讲坛
@@ -39,7 +39,7 @@ FIL-Singapore是Filecoin的亚洲社区合作举办的为期四天的活动。�
 - 奖项高达10万美元的黑客松
 - 饮料、音乐、游戏和一些特别NFT空投
 
-### **征集建议**
+## 征集建议
 
 这个活动对所有的Web3生态创建者开放！我们邀请你在FIL-Singapore峰会这周组织自己的workshop、见面会和各种活动。
 

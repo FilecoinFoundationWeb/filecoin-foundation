@@ -23,9 +23,9 @@ title: "Filecoin News 29: Join the 1-year celebration of Filecoin Mainnet"
 
 ![](/uploads/filecoin-news-29.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Welcome to a special edition of Filecoin News!</b></h3>
+_Welcome to a special edition of Filecoin News!_
 
-### Filecoin Orbit Events
+## Filecoin Orbit Events
 
 It’s hard to believe, but the Filecoin network has been in orbit for a year already, following the highly anticipated Filecoin Mainnet Liftoff on October 15th, 2020. In the year since, significant achievements have been made with Filecoin cementing its place as an integral component of the decentralized web3 stack!
 
@@ -33,29 +33,27 @@ Help us celebrate this and other remarkable milestones from the past twelve mont
 
 The celebrations kicked off yesterday, with six events already taking place. This will continue throughout the week, concluding with a two-day virtual conference hosted by Protocol Labs featuring keynotes from Juan Benet, Brewster Kahle, Zooko, and more!
 
-<a href="https://orbit.filecoin.io/">Register Now</a> and Follow updates on Twitter with the hashtag <a href="https://twitter.com/search?q=%23FilecoinOrbit&src=typeahead_click">#FilecoinOrbit</a>!
+[Register now!](https://orbit.filecoin.io/) and follow updates on Twitter with the hashtag [#FilecoinOrbit](https://twitter.com/search?q=%23FilecoinOrbit&src=typeahead_click)!
 
-<br>
+## 🗓 Orbit Events by Day
 
-### 🗓 Orbit Events by Day
+### Tuesday, October 19
 
-<h4 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Tuesday, October 19</b></h4>
+[![](/uploads/filecoin-mainnet-anniversary-cloud-summit.webp)](https://mp.weixin.qq.com/s/1Ft1z6MBI5bAt3ic2XUDZA)
 
-<a href="https://mp.weixin.qq.com/s/1Ft1z6MBI5bAt3ic2XUDZA"><img src="/uploads/filecoin-mainnet-anniversary-cloud-summit.webp" style="width:40%;margin-left:0%"></a>
-
-### Filecoin Mainnet Anniversary Cloud Summit
+#### Filecoin Mainnet Anniversary Cloud Summit
 
 5:00 PM PDT
 
 Celebrate the first anniversary of Filecoin Mainnet together with friends at Protocol Labs, Dapper Labs, Polygon, Near and more. We’ll have discussions and panels focused on the progress with Filecoin storage (Filecoin Plus) and how Filecoin can empower the Web3 world.
 
-<a href="https://mp.weixin.qq.com/s/1Ft1z6MBI5bAt3ic2XUDZA/">Register Now! ↗</a>
+[Register Now!](https://mp.weixin.qq.com/s/1Ft1z6MBI5bAt3ic2XUDZA)
 
-<h4 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Wednesday, October 20 - Friday, October 22</b></h4>
+### Wednesday, October 20 - Friday, October 22
 
-<a href="https://mp.weixin.qq.com/s/8ulDhvgQrgRQIqIY8UBd_w"><img src="/uploads/unnamed-2.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/unnamed-2.webp)](https://mp.weixin.qq.com/s/8ulDhvgQrgRQIqIY8UBd_w)
 
-### 「 矩阵存储 X 雅典娜云池 」- 存储为本，回归初心，再筑辉煌 暨庆祝主网上线1⃣️周年活动
+#### 「 矩阵存储 X 雅典娜云池 」- 存储为本，回归初心，再筑辉煌 暨庆祝主网上线1⃣️周年活动
 
 「 知识传递 」
 
@@ -75,155 +73,151 @@ Celebrate the first anniversary of Filecoin Mainnet together with friends at Pro
 
 嘉宾合影留念
 
-<a href="https://mp.weixin.qq.com/s/1Ft1z6MBI5bAt3ic2XUDZA/">Register Now! ↗</a>
+[Register Now!](https://mp.weixin.qq.com/s/1Ft1z6MBI5bAt3ic2XUDZA)
 
-<h4 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Wednesday, October 20</b></h4>
+### Wednesday, October 20
 
-<a href="https://ipfsjapan.org/filecoin-1th-anniversary/"><img src="/uploads/filecoin1st.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/filecoin1st.webp)](https://ipfsjapan.org/filecoin-1th-anniversary/)
 
-### Filecoin 1st Anniversary
+#### Filecoin 1st Anniversary
 
 4:00 AM PDT
 
 In October, the first year since Filecoin's mainnet (official service) started, we will hold a special event for the first anniversary. This talk session invites companies that are filecoin storage providers in Japan and companies that are engaged in NFT business utilizing IPFS.
 
-<a href="https://ipfsjapan.org/filecoin-1th-anniversary/">Register Now! ↗</a>
+[Register Now!](https://ipfsjapan.org/filecoin-1th-anniversary/)
 
-<a href="https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407"><img src="/uploads/orbit-lounge-dc.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/orbit-lounge-dc.webp)](https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407)
 
-### Filecoin Orbit Lounge at DC Fintech Week
+#### Filecoin Orbit Lounge at DC Fintech Week
 
 6:30 AM PDT
 
 Join blockchain policy leaders and Filecoin Foundation for morning talks on the benefits of Filecoin for web3 storage and what a decentralized future means for tech policy.
 
-<a href="https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407">Register Now! ↗</a>
+[Register Now!](https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407)
 
-<a href="https://airtable.com/shrF17ZAW1c50lQlm"><img src="/uploads/building-filecoin-yield.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/building-filecoin-yield.webp)](https://airtable.com/shrF17ZAW1c50lQlm)
 
-### Building Filecoin Yield Curve
+#### Building Filecoin Yield Curve
 
 8:00 AM PDT
 
 Discover long-term investment opportunities in Filecoin and discuss building Filecoin yield curve with storage provider and ecosystem partners.
 
-<a href="https://airtable.com/shrF17ZAW1c50lQlm">Register Now! ↗</a>
+[Register Now!](https://airtable.com/shrF17ZAW1c50lQlm)
 
-<img src="/uploads/unnamed-1.webp" style="width:40%;margin-left:0%">
+![](/uploads/unnamed-1.webp)
 
-### Filecoin Orbit community event: East and Southeast Europe
+#### Filecoin Orbit community event: East and Southeast Europe
 
 8:00 AM PDT
 
 During the first Filecoin community event for East and Southeast Europe, we will celebrate the one year anniversary of the Filecoin Mainnet launch and explore what opportunities exist for European developers in the decentralised storage ecosystem, which tools are being built in order to advance its growth and what lies ahead for this community.
 
-Register Now! ↗
+[![](/uploads/day-2_-enter-the-metaverse-anniversary-of-filecoin-mainnet-launch.webp)](https://orbit.filecoin.io/)
 
-<a href="https://orbit.filecoin.io/"><img src="/uploads/day-2_-enter-the-metaverse-anniversary-of-filecoin-mainnet-launch.webp" style="width:40%;margin-left:0%"></a>
-
-### Enter the Metaverse - Anniversary of Filecoin Mainnet Launch
+#### Enter the Metaverse - Anniversary of Filecoin Mainnet Launch
 
 12:00 PM PDT
 
 Join a two-day event to celebrate the growth of the Filecoin community! The first day will consist of presentations and panelists from the North American community, and the second day will feature an online workshop.
 
-<a href="https://orbit.filecoin.io/">Register Now! ↗</a>
+[Register Now!](https://orbit.filecoin.io/)
 
-<h4 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Thursday, October 21</b></h4>
+### Thursday, October 21
 
-<img src="/uploads/unnamed-1.webp" style="width:40%;margin-left:0%">
+![](/uploads/unnamed-1.webp)
 
-### Welcome To Filecoin: Orbit
+#### Welcome To Filecoin: Orbit
 
 10:00 AM PDT
 
-<b>Welcome to Filecoin: Orbit, a two-day virtual conference celebrating the first year of an incredible journey. There has been massive growth throughout the Filecoin ecosystem of developers and users, and new use cases for decentralized storage are attracting major attention and adoption. The community is excited to share what they've been working on and where the ecosystem is headed next.</b>
+**Welcome to Filecoin: Orbit, a two-day virtual conference celebrating the first year of an incredible journey. There has been massive growth throughout the Filecoin ecosystem of developers and users, and new use cases for decentralized storage are attracting major attention and adoption. The community is excited to share what they've been working on and where the ecosystem is headed next.**
 
-<a href="https://orbit.filecoin.io/">Register Now! ↗</a>
+[Register Now!](https://orbit.filecoin.io/)
 
-<a href="https://orbit.filecoin.io/"><img src="/uploads/unpacking-decentralized.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/unpacking-decentralized.webp)](https://orbit.filecoin.io/)
 
-### BAF Presents Unpacking Decentralized Storage
+#### BAF Presents Unpacking Decentralized Storage
 
 4:00 PM PDT
 
 Join us to learn about the decentralized storage ecosystem and Filecoin. We'll go over how Filecoin turns storage into a commodity, how it lowers storage price, and how its decentralized storage network is designed to preserve humanity’s most important information.
 
-<a href="https://orbit.filecoin.io/">Register Now! ↗</a>
+[Register Now!](https://orbit.filecoin.io/)
 
-<a href="https://orbit.filecoin.io/"><img src="/uploads/filecoin-what-it-is.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/filecoin-what-it-is.webp)](https://orbit.filecoin.io/)
 
-### Filecoin: What It Is and How You Can Use it Today
+#### Filecoin: What It Is and How You Can Use it Today
 
 6:00 PM PDT
 
 Join us to learn about the decentralized storage ecosystem and Filecoin. We'll go over how Filecoin turns storage into a commodity, how it lowers storage price, and how its decentralized storage network is designed to preserve humanity’s most important information.
 
-<a href="https://orbit.filecoin.io/">Register Now! ↗</a>
+[Register Now!](https://orbit.filecoin.io/)
 
-<h4 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Friday, October 22</b></h4>
+### Friday, October 22
 
-<a href="https://www.eventbrite.it/e/biglietti-happy-birthday-filecoin-179504782637"><img src="/uploads/happy-birthday-filecoin.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/happy-birthday-filecoin.webp)](https://www.eventbrite.it/e/biglietti-happy-birthday-filecoin-179504782637)
 
-### Happy Birthday Filecoin
+#### Happy Birthday Filecoin
 
 1:45 AM PDT
 
 Meet up with Filecoin enthusiasts in Florence including Futurix Lab and Marvel Generation to celebrate one year of Filecoin mainnet and discuss what's next for Filecoin.
 
-<a href="https://www.eventbrite.it/e/biglietti-happy-birthday-filecoin-179504782637">Register Now! ↗</a>
+[Register Now!](https://www.eventbrite.it/e/biglietti-happy-birthday-filecoin-179504782637)
 
-### Filecoin Amsterdam Meetup 2021
+#### Filecoin Amsterdam Meetup 2021
 
 2:00 AM PDT
 
 Join the Filecoin Amsterdam Meetup for a celebration of Filecoin Orbit plus an opportunity to take part in a round table discussion on improving European Filecoin collaborations, followed by a dinner. There are limited spots left available, so please email mail@hiddehoogland.nl if you are interested in attending.
 
-<a href="https://www.meetup.com/Munich-IPFS-User-Group/events/281442935//"><img src="/uploads/october-ipfs-filecoin-orbit-meetup.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/october-ipfs-filecoin-orbit-meetup.webp)](https://www.meetup.com/Munich-IPFS-User-Group/events/281442935//)
 
-### October IPFS + Filecoin Orbit Meetup
+#### October IPFS + Filecoin Orbit Meetup
 
 5:30 AM PDT
 
 It’s been a long time since the last time we've met. There’s a bunch of researchers and developers working on super cool projects involving IPFS/IPLD and libp2p in town, so we thought it’s a good idea to schedule a meetup around the event. More importantly, it also has been a year since the Filecoin mainnet launch, where those technologies play a crucial part and there are several events being organised around the world, as well as virtually. It’s a great idea to have Munich as one of the meeting hubs! So let’s meet again in person. The exact location still needs to be determined, but it will be in the city center.
 
-<a href="https://www.meetup.com/Munich-IPFS-User-Group/events/281442935/">Register Now! ↗</a>
+[Register Now!](https://www.meetup.com/Munich-IPFS-User-Group/events/281442935/)
 
-<a href="https://orbit.filecoin.io/"><img src="/uploads/welcome-to-filecoin_-orbit.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/welcome-to-filecoin_-orbit.webp)](https://orbit.filecoin.io/)
 
-### Welcome to Day 2 of Filecoin Orbit
+#### Welcome to Day 2 of Filecoin Orbit
 
 10:00 AM PDT
 
-<b>Welcome back to Filecoin: Orbit, a two-day virtual conference celebrating one-year since Filecoin has been live on mainnet.</b>
+**Welcome back to Filecoin: Orbit, a two-day virtual conference celebrating one-year since Filecoin has been live on mainnet.**
 
-<a href="https://orbit.filecoin.io/">Register Now! ↗</a>
+[Register Now!](https://orbit.filecoin.io/)
 
-<h4 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Saturday, October 23</b></h4>
+### Saturday, October 23
 
-<a href="https://www.eventbrite.com/e/traverse-the-filecoin-orbit-tickets-189575855487"><img src="/uploads/web3-metaverse-traverse-filecoin-orbit.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/web3-metaverse-traverse-filecoin-orbit.webp)](https://www.eventbrite.com/e/traverse-the-filecoin-orbit-tickets-189575855487)
 
-### Web3 Metaverse Traverse
+#### Web3 Metaverse Traverse
 
 2:00 AM PDT
 
 Come meet, greet and eat as we explore the wild world of web3 and the opportunities that Filecoin and the underlying IPFS technologies offer. Plus a fireside chat with Binance and Celo on interoperability!
 
-<a href="https://www.eventbrite.com/e/traverse-the-filecoin-orbit-tickets-189575855487/">Register Now! ↗</a>
+[Register Now!](https://www.eventbrite.com/e/traverse-the-filecoin-orbit-tickets-189575855487)
 
-<a href="https://gdg.community.dev/events/details/google-gdg-warri-presents-filecoin-orbit-events-2021-warri-nigeria/"><img src="/uploads/filecoin-orbit-event-2021-warri.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/filecoin-orbit-event-2021-warri.webp)](https://gdg.community.dev/events/details/google-gdg-warri-presents-filecoin-orbit-events-2021-warri-nigeria/)
 
-### Filecoin Orbit Event 2021 Warri
+#### Filecoin Orbit Event 2021 Warri
 
 3:00 AM PDT
 
 Join the Filecoin Africa community in celebrating the one-year anniversary of Filecoin Mainnet Launch.
 
-<a href="https://gdg.community.dev/events/details/google-gdg-warri-presents-filecoin-orbit-events-2021-warri-nigeria/">Register Now! ↗</a>
+[Register Now!](https://gdg.community.dev/events/details/google-gdg-warri-presents-filecoin-orbit-events-2021-warri-nigeria/)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

@@ -25,7 +25,7 @@ title: "Cloud Storage Services: Understanding the Decentralized Storage Approach
 _template: blog_detail
 ---
 
-### In this post we take a look at how a decentralized approach to cloud storage is setting a new standard for the industry. We examine why decentralized cloud storage is needed, how it works, and its defining characteristics
+_In this post we take a look at how a decentralized approach to cloud storage is setting a new standard for the industry. We examine why decentralized cloud storage is needed, how it works, and its defining characteristics._
 
 To understand decentralized cloud storage it’s necessary to ask “what is cloud storage?” Cloud storage is one of the most popular and widely used methods of storing data. It offers users a way to store, share, and access their files from any place in the world.
 
@@ -35,7 +35,7 @@ Decentralized cloud storage is quickly becoming a go-to solution. This is especi
 
 By understanding how a decentralized cloud storage service operates and what advantages it offers over its centralized counterparts, developers can leverage these tools to create a more secure, reliable, and user-friendly online experience.
 
-## What is Decentralized Cloud Storage?
+## What is Decentralized Cloud Storage
 
 {{< youtube id="by9koo-A3CU" title="The Decentralized Cloud is Here with Olaf Carlson-Wee" >}}
 
@@ -49,7 +49,7 @@ On a decentralized peer-to-peer cloud storage network files are distributed acro
 
 Choosing this model over other cloud storage options combines the capabilities of both cloud computing and decentralized technologies to create a secure and reliable online file sharing system. This is an essential step towards building the infrastructure for a more decentralized web.
 
-## Why Is Decentralized Cloud Storage Necessary?
+## Why Is Decentralized Cloud Storage Necessary
 
 {{< youtube id="cZjX1ck_FbI" title="ESPA - Why Public Datasets are Stored on Filecoin" >}}
 
@@ -75,7 +75,7 @@ Having all the data stored in a handful of data centers means that, in the event
 
 Other hacks, such as DDoS attacks, are also a common problem for traditional cloud storage services where a single vulnerability can lead to millions of users being unable to access their data for extended periods of time.
 
-## How Does Decentralized Cloud Storage Work?
+## How Does Decentralized Cloud Storage Work
 
 {{< youtube id="tE4q_Vc8OjY" title="How Filecoin Works: Part 1" >}}
 
@@ -99,7 +99,7 @@ As described in the [IPFS whitepaper](https://github.com/ipfs/papers/raw/master/
 
 This last sentence is important. It’s necessary to understand content-addressing for cloud storage in order to understand IPFS.
 
-_(For a more detailed explanation of how IPFS works, be sure to visit the_ [_documentation_](https://docs.ipfs.tech/concepts/how-ipfs-works/#content-addressing)_.)_
+_(For a more detailed explanation of how IPFS works, be sure to visit the [documentation](https://docs.ipfs.tech/concepts/how-ipfs-works/#content-addressing))._
 
 ### Content Addressing
 
@@ -115,9 +115,9 @@ Content addressing provides a number of benefits in terms of security, reliabili
 
 However, as [explained](https://docs.filecoin.io/developers/introduction/filecoin-and-ipfs/) in the Filecoin documentation, this isn’t enough for a decentralized cloud storage service:
 
-_“IPFS alone does not include a built-in mechanism to incentivize the storage of data for other people. This is the challenge Filecoin aims to solve. Filecoin is built on IPFS to create a distributed storage marketplace for long-term storage. Nodes with a large storage capacity can rent their storage to users and get paid for it._
+_IPFS alone does not include a built-in mechanism to incentivize the storage of data for other people. This is the challenge Filecoin aims to solve. Filecoin is built on IPFS to create a distributed storage marketplace for long-term storage. Nodes with a large storage capacity can rent their storage to users and get paid for it._
 
-_The Filecoin network ensures that data is safely stored. However, the processes of storing, verifying, and unsealing (referred to as sealing, proving, and retrieving, respectively) are computationally expensive and can take time. This is especially relevant for the retrieval of data, which should happen as fast as possible. For this reason, Filecoin enables an additional retrieval market where dedicated nodes can help quickly deliver content from the network for payment by keeping unsealed, cached copies.”_
+_The Filecoin network ensures that data is safely stored. However, the processes of storing, verifying, and unsealing (referred to as sealing, proving, and retrieving, respectively) are computationally expensive and can take time. This is especially relevant for the retrieval of data, which should happen as fast as possible. For this reason, Filecoin enables an additional retrieval market where dedicated nodes can help quickly deliver content from the network for payment by keeping unsealed, cached copies._
 
 ## The Storage and Retrieval Markets for Cloud Storage
 

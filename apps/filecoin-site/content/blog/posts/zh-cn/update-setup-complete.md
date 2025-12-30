@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 去年年底，我们圆满地完成了可信配置环节的第一阶段，也就是“Powers of Tau”。今年7月我们完成了可信配置的第二阶段——为主网将要使用的6个逻辑电路生成安全参数。现在，我们可信配置的两个阶段都可以使用Filecoin主网的最终参数了！感谢所有参与的人！
 
-### 回顾第一阶段
+## 回顾第一阶段
 
 简要回顾一下，可信配置环节分为两个阶段。第一阶段，也称为“Powers of Tau”环节，适用于[Groth16 zk-SNARKs](https://eprint.iacr.org/2016/260.pdf)可证明的所有计算以及最大的计算量。由SNARK证明的计算用被称为逻辑电路的模型来表示。电路内计算的基本单位称为约束。约束的数量代表计算的大小。在我们的环节中，我们为任何不超过1.3亿个约束的Groth 16电路生成参数。
 
@@ -34,11 +34,13 @@ _template: blog_detail_ch
 
 ![Participants](https://filecoin.io/vintage/images/blog/trusted-setup-participants.jpg)
 
-### 回顾第二阶段
+## 回顾第二阶段
 
 6月中旬，我们开始了可信配置环节的第二阶段——该阶段主要为将要用于主网的6条逻辑电路生成安全参数。与第一阶段类似，第二阶段的输出只要链上其中一方是诚实的，其输出结果就是可信的。同样，来自世界各地的参与者参与了为Filecoin的证明生成安全可验证参数。对于第二阶段的参与者，感谢您对Filecoin临近主网中的关键部分作出的支持。
 
-| Participants                  |                              |
+<!-- markdownlint-disable MD060 -->
+
+| Participants                  | Participants                 |
 | ----------------------------- | ---------------------------- |
 | Aztec / Ariel Gazibon         | Sigma Prime / Mehdi Zerouali |
 | Secbit                        | IPFSMain / Neo               |
@@ -55,16 +57,18 @@ _template: blog_detail_ch
 | Vulcanize / A. F. Dudley      | Kikakkz                      |
 | Filecoin / Magik              | Filecoin / Dignifiedquire    |
 | Zcash / Benjamin Winston      | JP Aumussen                  |
-| James Hanson                  | Angelov                      |
+| James Hanson                  | Angelog                      |
 | Consensys / Alexander Wade    |                              |
 
-### 环节中的这些输出是可信的吗？
+<!-- markdownlint-enable MD060 -->
+
+## 环节中的这些输出是可信的吗？
 
 对于两个阶段来说，如果转录的部分是可验证的那输出结果就是可信的，可以相信 **_至少_** 有一位参与者没有泄露其贡献的随机性。因此，对于这两个阶段，我们都尝试聚集了各种不同类型的参与者——来自Filecoin生态内部的贡献者、相互竞争的矿工以及Web3社区外部的团队和个人。在此过程中，我们旨在降低串通风险并提高每个逻辑电路至少有一个贡献者是可信的可能性，从而保证输出的参数完整性。
 
 要验证我们主网逻辑电路的参数是否与参与者的输出相同，您可以按照[此处](https://github.com/filecoin-project/phase2-attestations/tree/a5f58bc31efbfdcd93f0207efe475c62a50ae13c/b288702#phase-2-validation)的说明操作.
 
-### 下一步发展
+## 下一步发展
 
 对于主网，不需要任何其他操作——Filecoin的证明部分随时可以使用！
 

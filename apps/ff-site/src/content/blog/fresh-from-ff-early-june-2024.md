@@ -26,7 +26,7 @@ seo:
 
 ### Storage
 
-- At Consensus, Head of Community Porter Stowell hosted a discussion and demo on AI agents specifically designed for the Filecoin ecosystem at [Theoriq’s AI Odyssey: Unlocking Web3’s Next Frontier](https://consensus2024.coindesk.com/agenda/event/-theoriqs-ai-odyssey-unlocking-web3s-next-frontier-344) and gave a lightning talk about Data as an Asset Class. Follow more of the latest discussions across the [storage provider community on Slack](https://filecoinproject.slack.com/archives/C02GQUMFQVA) and tune in to the monthly Network Growth 2.0 call for some of the developments happening across the ecosystem.
+- At Consensus, Head of Community Porter Stowell hosted a discussion and demo on AI agents specifically designed for the Filecoin ecosystem at [Theoriq’s AI Odyssey: Unlocking Web3’s Next Frontier](https://consensus2024.coindesk.com/agenda/event/-theoriqs-ai-odyssey-unlocking-web3s-next-frontier-344) and gave a lightning talk about Data as an Asset Class. Follow more of the latest discussions across the [storage provider community on Slack](https://filecoin.io/slack) and tune in to the monthly Network Growth 2.0 call for some of the developments happening across the ecosystem.
 - The Foundation hosted the Good Morning Filecoin Ecosystem networking breakfast at Consensus to unite experienced storage providers with newcomers in the Filecoin ecosystem, where attendees discussed advancements in the network and built connections with the community.
 
 ## Network Operations
@@ -34,7 +34,7 @@ seo:
 ### Governance
 
 - The FIP 0092 one-pager about a caller-specified proving deadline for NI-PoRep is [available on X](https://x.com/fil_gov/status/1795476606770643042). The FIP proposes allowing SPs to specify the window PoST proving deadline for sectors onboarded with NI-PoRep.
-- The monthly Community Governance call has been rescheduled to June 3. To stay up to date on meetings, join the [\#fil-gov](https://filecoinproject.slack.com/archives/C0535S9TUUF) Slack channel and [add the meeting calendar](https://calendar.google.com/calendar/u/0/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98@group.calendar.google.com&ctz=America/Toronto).
+- The monthly Community Governance call has been rescheduled to June 3. To stay up to date on meetings, join the [\#fil-gov](https://filecoin.io/slack) Slack channel and [add the meeting calendar](https://lu.ma/filecoin).
 
 ### Fil Plus
 

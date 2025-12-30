@@ -31,9 +31,7 @@ _template: blog_detail_ch
 
 ## Fin-File团队
 
-<div style="text-align:center">
-  <image width="40%" src="/vintage/images/blog/fin-file.png" alt="fin-file">
-</div>
+![Fin-File](/vintage/images/blog/fin-file.png)
 
 **团队成员：** @John_Mc和@Daniel Kurzweil
 
@@ -59,9 +57,7 @@ Andrew Hill和其团队的[精品课程](https://www.youtube.com/watch?v=Id4SRT9
 
 ## Yolo 团队
 
-<div style="text-align:center">
-  <image width="30%" src="/vintage/images/blog/yolo.png" alt="yolo">
-</div>
+![Yolo](/vintage/images/blog/yolo.png)
 
 **团队成员：** @Max
 
@@ -99,9 +95,7 @@ Yolo使用Filecoin和IPFS以分布式的方式存储图像数据集。这些数�
 
 ## [Decentralized Docker Hub](https://github.com/viraja1/decentralized_docker_hub) 团队
 
-<div style="text-align:center">
-  <image width="30%" src="/vintage/images/blog/decentralized-docker-hub.png" alt="Decentralized Docker Hub">
-</div>
+![Decentralized Docker Hub](/vintage/images/blog/decentralized-docker-hub.png)
 
 **团队成员：** @viraj
 

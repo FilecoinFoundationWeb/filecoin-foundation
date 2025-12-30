@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 在9月28日，20支团队参加了Tachyon运营的Filecoin Launchpad Accelerator负责举办的演示日。该加速器是一个为期6周的项目，旨在培育新生的Web3公司。下面是从该加速器成长并参与过演示日展示的DeFi项目。整个演示日的视频可以在 [这里](https://www.youtube.com/watch?v=UWuaSP6YuJ4)观看。
 
-### Hedgey Finance
+## Hedgey Finance
 
 _Hedgey Finance是一个能为任何token增加期权市场的协议。_
 
@@ -48,7 +48,7 @@ Hedgey的操作面板能让人方便看到任何市场上可用的期权put（�
 
 可以在这个链接发现与Hedgey Finance相关的更多知识，以及了解它们在做的事情以及所提供的服务：[https://hedgey.finance](https://hedgey.finance/)
 
-### Tamago Finance
+## Tamago Finance
 
 _一个为亚洲市场创造合成token的DeFi协议。_
 
@@ -64,7 +64,7 @@ Tamago Finance希望通过其协议更多触及亚洲市场。自从美国表达
 
 **为合成token增加稳定性：** Tamago Finance采用了一种混合模式以适应牛市和熊市。它通过稳定币及其原生代币的组合实现此目的。
 
-### SmartFunds
+## SmartFunds
 
 _SmartFunds是一个简单的自动化合规基金管理工具。_
 
@@ -88,7 +88,7 @@ SmartFunds注册了首个合规的美国对冲基金，它不需要人类管理�
 
 如果你对SmartFunds所做的事情有兴趣并想了解更多，可以查看： [https://www.smartfunds.xyz/](https://www.smartfunds.xyz/ "https://www.smartfunds.xyz/")
 
-### Clam Island
+## Clam Island
 
 使用区块链，NFT和Yield Farming将投资游戏化。
 
@@ -110,7 +110,7 @@ Clam Island是一个独特的游戏方案，它结合了NFT让投资更方便。
 
 如果你是一个游戏玩家，对能够帮你赚钱的区块链游戏有兴趣，你应该在这里查看Clam Island的信息：[](https://clamisland.fi/)[https://clamisland.fi](https://clamisland.fi "https://clamisland.fi")
 
-### Boto
+## Boto
 
 Boto是一个在线无代码平台，让用户搭建机器人以实现在线任务自动化。
 
