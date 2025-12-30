@@ -4,7 +4,18 @@ export function parseIssueSlug(issue: string) {
   if (!issue.startsWith(ISSUE_NUMBER_PREFIX)) {
     throw new Error(`Invalid issue slug: ${issue}`)
   }
-  return Number(issue.replace(ISSUE_NUMBER_PREFIX, ''))
+
+  const issueNumber = Number(issue.replace(ISSUE_NUMBER_PREFIX, ''))
+
+  if (
+    !Number.isFinite(issueNumber) ||
+    !Number.isInteger(issueNumber) ||
+    issueNumber <= 0
+  ) {
+    throw new Error(`Invalid issue slug: ${issue}`)
+  }
+
+  return issueNumber
 }
 
 export function buildIssueSlug(issueNumber: string | number) {
