@@ -27,7 +27,7 @@ Filecoin主网启动周圆满结束之际Filecoin团队与社区一起举办了�
 
 ## Q&A总结
 
-_<div style="text-align:center">大部分问题与回答为直接引用，部分为了可读性进行了再编辑。</div>_
+_大部分问题与回答为直接引用，部分为了可读性进行了再编辑。_
 
 **恭喜主网启动！开始在Filecoin上存储数据的最佳方式是什么？**
 
@@ -60,7 +60,5 @@ FIP-4修补程序或Lotus v1.1.0中引入的其他任何内容均未对出块作
 **我在哪里可以为Filecoin档案库提交数据集建议？**
 
 通过对[此Twitter](https://twitter.com/juanbenet/status/1319375340196646913)回复包含名称、大小和数据集链接来提交您的提案：
-
-<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">📣 Help us curate the <a href="https://twitter.com/hashtag/FilecoinArchives?src=hash&ref_src=twsrc%5Etfw">#FilecoinArchives</a>! 🏛💿<a href="https://twitter.com/internetarchive?ref_src=twsrc%5Etfw">@InternetArchive</a> & <a href="https://twitter.com/protocollabs?ref_src=twsrc%5Etfw">@ProtocolLabs</a> need your help to select precious IA collections and other open access datasets, to preserve & disseminate them widely on <a href="https://twitter.com/Filecoin?ref_src=twsrc%5Etfw">@Filecoin</a>!<br><br>Share your suggestions by replying here. Instructions below👇 <a href="https://t.co/Xufca7ilw8">pic.twitter.com/Xufca7ilw8</a></p>— Juan Benet (@juanbenet) <a href="https://twitter.com/juanbenet/status/1319375340196646913?ref_src=twsrc%5Etfw">October 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 可通过转发收藏至您收藏夹来投票支持他们！

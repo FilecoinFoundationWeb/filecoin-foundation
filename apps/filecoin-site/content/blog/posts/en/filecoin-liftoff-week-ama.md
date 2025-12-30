@@ -27,7 +27,7 @@ As a part of Filecoin Liftoff Week, the Filecoin team are hosting live AMAs with
 
 A summary of the Q&As are below. We look forward to hosting more sessions like in the coming weeks! In the meantime, stay tuned for updates on the [Filecoin Community Slack](https://filecoin.io/slack). You can also find us on [Wechat (Filecoin-Official)](https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF), and [Twitter](https://twitter.com/Filecoin).
 
-### Summarized Questions and Answers
+## Summarized Questions and Answers
 
 Most questions and answers are quoted directly, some are edited for readability.
 

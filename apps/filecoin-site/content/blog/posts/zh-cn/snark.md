@@ -34,7 +34,7 @@ _template: blog_detail_ch
 
 我们认为此项研究不仅对Filecoin更是对许多其他关键应用来说非常重要。zk-SNARKS具有扩展区块链并提供链上隐私的巨大潜力。此次SNARK挑战赛旨在帮助我们加快zk-SNARK证明验证速度并推动此项研究的前进。
 
-### 挑战赛
+## 挑战赛
 
 此次挑战赛分为两场赛事，历时3个月，在整个活动中，我们将颁发10万美金的奖励。赛事主要面向高级密码学者和那些在高性能计算上富有经验的工作者。
 
@@ -56,4 +56,4 @@ _template: blog_detail_ch
 
 另外，更重要的是，我们一直寻找新想法来帮助我们推进研究。若您有兴趣做为合作者、研究者或开发者与我们一起从事SNARK研究，请联系[team@filecoin.io](mailto:team@filecoin.io)。
 
-## [注册参与SNARK挑战赛 »](https://coinlist.co/build/coda)
+[注册参与SNARK挑战赛 »](https://coinlist.co/build/coda)

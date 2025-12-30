@@ -39,7 +39,7 @@ Innovations like IPFS’ Content Identifiers ([CIDs](https://proto.school/anatom
 
 Meanwhile, the production of data is not slowing down. IDC [projections](https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf) predicted a 3x increase in data generation from 2020 to 2025, for a total of 125 zettabytes. Eighty percent of this data will be produced by enterprises who currently rely on cloud services for 82% of their needs. The assumption that most of this data will migrate to decentralized operators over time is not far-fetched given their benefits. A lot of it might even be generated in Web3-native environments.
 
-### The Advantages of Joining the Filecoin Community
+## The Advantages of Joining the Filecoin Community
 
 As the need for storage continues to grow and enterprises warm up to the advantages of decentralized Web3-native solutions, the addressable market for the independent service providers who choose the decentralized route is becoming increasingly fertile. There are concrete advantages for service providers who join Filecoin and embrace the transition from cloud storage to decentralized storage:
 
@@ -53,7 +53,7 @@ As the need for storage continues to grow and enterprises warm up to the advanta
 
 On top of these advantages is the fact that Filecoin is expanding beyond storage use cases. Developments like the [Filecoin Virtual Machine](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) introduce smart contract capabilities to the network. As the network evolves, Storage Providers will continue to be the bedrock on which it’s built.
 
-### How to Become a Storage Provider
+## How to Become a Storage Provider
 
 If you’re interested in becoming a Filecoin Storage Provider, learn more by exploring these resources:
 

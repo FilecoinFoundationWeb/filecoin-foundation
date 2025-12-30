@@ -40,7 +40,7 @@ _template: blog_detail_ch
 
 说到共享社区，全天我们都在提起Web3社区的规模和协作。尽管本周的许多活动都与Filecoin的工具、应用程序和基础设施有关，但也让我们意识到共同协作十分重要。[LongHash风投](https://www.longhash.vc/)CEO Emma Cui、[Tachyon 加速器](https://tachyon.xyz/)的执行总监Gabriel Andreson和[Gitcoin](https://gitcoin.co/)的联合创始人Scott Moore在今天提到了他们共同合作的方式，并将Filecoin项目和团队也加入到他们的加速器计划中。以太坊联合创始人Joe Lubin说，“我们社区中许多人都开始觉得这些协议可以进行互操作。”只有彼此相互合作，我们才能成功地实现分布式网络的愿景。社区已支持我们达成如此多的成就，我们也将共同实现更多的伟大目标。正如胡安在其闭幕演讲上说的那样，Filecoin“站在巨人的肩膀上”。
 
-<div style="text-align: center;">🚀🚀🚀</div>
+🚀🚀🚀
 
 ## 收工了
 

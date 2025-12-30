@@ -28,9 +28,9 @@ title:
 
 ![](/uploads/filecoin-news-24.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
+## Build
 
-<a href="https://filecoin.io/blog/posts/filecoin-launches-collaboration-with-near-to-accelerate-the-growth-of-the-web3-stack/"><img src="/uploads/filecoin-near.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/filecoin-near.webp)](https://filecoin.io/blog/posts/filecoin-launches-collaboration-with-near-to-accelerate-the-growth-of-the-web3-stack/)
 
 ### Filecoin Launches Collaboration with NEAR to Accelerate the Growth of the Web3 Stack
 
@@ -38,25 +38,25 @@ In July 2021, Textile launched the Filecoin-NEAR bridge, taking the first step t
 
 Today, collaboration between the Filecoin ecosystem and the NEAR ecosystem deepens with the launch of a $300,000 joint grants program designed to support developers interested in exploring new opportunities at the intersection of these two protocols. Upon receiving a grant, projects will also gain access to the global collectives of both NEAR and Filecoin to support product development and user growth. [**Learn more**](https://filecoin.io/blog/posts/filecoin-launches-collaboration-with-near-to-accelerate-the-growth-of-the-web3-stack/).
 
-<a href="https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/"><img src="/uploads/chainlink-filecoin.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/chainlink-filecoin.webp)](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/)
 
 ### Announcing Chainlink-Filecoin Joint Grants for dApps Combining Decentralized Storage and Oracles
 
 [**Chainlink**](http://chain.link/) and [**Filecoin**](https://filecoin.io/) are launching a joint grant initiative to accelerate development of [**hybrid smart contracts**](https://blog.chain.link/hybrid-smart-contracts-explained/) that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application. Hybrid smart contacts leverage code running on the blockchain (on-chain) with data and computation from outside the blockchain (off-chain). By bringing together Filecoin and Chainlink, developers can build end-to-end decentralized applications that have cost-efficient and immutable storage capabilities along with a universal and secure connection to external resources. For more information, please [**read this recent blog post**](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/).
 
-<a href="https://filecoin.io/blog/posts/building-web3-filecoin-ethereum-better-together/"><img src="/uploads/juan-ethcc-talk.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/juan-ethcc-talk.webp)](https://filecoin.io/blog/posts/building-web3-filecoin-ethereum-better-together/)
 
 ### Building Web3: Filecoin + Ethereum Better Together
 
 As a modular, interoperable solution Filecoin has found a natural fit with other stacks, applications, and ecosystems within Web3. Since its launch in October 2020, Filecoin has grown to over 8 exbibytes of available storage with 400+ new projects entering the space. One ecosystem that continues to prove collaborative and mutually beneficial is Ethereum. Learn more about Filecoin + Ethereum and use cases for the future in this recap of [**Juan Benet’s talk**](https://filecoin.io/blog/posts/building-web3-filecoin-ethereum-better-together/) at EthCC 2021.
 
-<a href="https://www.youtube.com/watch?v=tdqIvaZ28ns"><img src="/uploads/hackfs.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/hackfs.webp)](https://www.youtube.com/watch?v=tdqIvaZ28ns)
 
 ### HackFS Builders Day Summit Recap
 
 [**IPFS & Filecoin Builder's Day Summit**](https://www.youtube.com/watch?v=tdqIvaZ28ns) was held on Friday, Aug 6th as part of the ongoing [**HackFS**](https://hackfs.com/) virtual hackathon with [**ETHGlobal**](https://ethglobal.co/) and Protocol Labs. Sessions for builders included Filecoin: What's Now Possible, Web3.Storage and NFT Storage, ARG/ estuary.tech, Introducing Palm Sidechain, Enabling Open Web for Consumer Apps, How to Make Large Updateable & Extensible NFTs Using IPFS & KSPEC, The LongHashX Web3 Accelerator, Grants Opportunities for Your IPFS & Filecoin Projects, and The Basecamp Program. [**Watch the full video**](https://www.youtube.com/watch?v=tdqIvaZ28ns).
 
-<a href="https://filecoin-community.typeform.com/to/scRusMWz"><img src="/uploads/asia-hackathon-card.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/asia-hackathon-card.webp)](https://filecoin-community.typeform.com/to/scRusMWz)
 
 ### Wanxiang Blockchain Week & Asia Hackathon Season
 
@@ -64,23 +64,23 @@ The 2021 Wanxiang Blockchain Week started last week and goes through September 1
 
 Wanxiang Blockchain Week also marks the kick-off of the multi-event Asia Hackathon Season. The series will identify, accelerate, and highlight the incredible development work being done in Asia with the Filecoin and IPFS stacks. About $500,000 in prizes and grants will be available to teams, startups, projects, and entrepreneurs taking part. [**Register your email**](https://filecoin-community.typeform.com/to/scRusMWz) to stay in the loop about the upcoming events in the series!
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Store</b></h3>
+## Store
 
-<a href="https://web3.storage/"><img src="/uploads/web3-storage-card.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/web3-storage-card.webp)](https://web3.storage/)
 
 ### Introducing Web3.Storage: A simple interface for Filecoin storage
 
 Protocol Labs has launched [**Web3.Storage**](https://web3.storage/), a simple interface for developers to store and retrieve data from Filecoin’s decentralized storage network! Web3.Storage 一 which will remain free indefinitely 一 gives developers an easy avenue to build applications with redundant, decentralized storage and secure, content addressed data. By handling a ton of the complexity of interacting directly with decentralized storage, it is one of the best ways to integrate with Filecoin storage for all developers, from Web3 newbies to IPFS veterans! [**Give it a spin**](https://web3.storage/).
 
-<a href="https://youtu.be/AHAMHbpioGw"><img src="/uploads/estuary-preview.webp" style="width:40%;margin-left:0%">
+[![](/uploads/estuary-preview.webp)](https://youtu.be/AHAMHbpioGw)
 
 ### Estuary Developer Preview
 
 The **ARG** at Protocol Labs has opened up more invites for [**Estuary**](https://estuary.tech/)’s Developer Preview. Estuary aims to be one of the most reliable ways to ensure data gets on to Filecoin with great default storage parameters and automatic verified storage deals. Estuary is an awesome tool for developers and people who want an intuitive interface to upload their public data to Filecoin. Check out [**this video**](https://youtu.be/AHAMHbpioGw) here for an introduction and join the ARG on Filecoin Slack if you need help.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Mine</b></h3>
+## Mine
 
-<a href="https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0018.md"><img src="/uploads/fil-sealing-graphic.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/fil-sealing-graphic.webp)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0018.md)
 
 ### New Miner Terminology Proposal
 
@@ -90,9 +90,9 @@ This proposal describes a change to rebrand the existing ‘miner’ references 
 
 Filecoin auctions aim to drive better deal success, speed, and features through economics. Unlike the default deal-making flow on Filecoin, auctions bring miners to the deal stream and encourage them to compete, in real-time, for storage deals. In an emerging market like Filecoin, auctions make it easy for anyone who needs to store data to get great results.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Updates</b></h3>
+## Updates
 
-<a href="https://drand.love/blog/2021/08/10/drand-celebrates-one-year-as-a-randomness-service/"><img src="/uploads/drand-anniversary-card-2.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/drand-anniversary-card-2.webp)](https://drand.love/blog/2021/08/10/drand-celebrates-one-year-as-a-randomness-service/)
 
 ### Drand One Year Anniversary
 
@@ -100,13 +100,13 @@ Filecoin auctions aim to drive better deal success, speed, and features through 
 
 Read about these details and find out more updates in this [**blogpost**](https://drand.love/blog/2021/08/10/drand-celebrates-one-year-as-a-randomness-service/).
 
-<a href="https://www.finextra.com/pressarticle/88753/crypto-startup-secured-finance-raises-4-million-in-seed-funding"><img src="/uploads/secured-finance-card.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/secured-finance-card.webp)](https://www.finextra.com/pressarticle/88753/crypto-startup-secured-finance-raises-4-million-in-seed-funding)
 
 ### Secured Finance Raises $4m in Funding
 
 [**Secured Finance**](https://twitter.com/financesecured?lang=en) is a platform for the conclusion of smart contract-based peer-to-peer fixed-rate loans, collateral management services, cross-currency swaps, and other types of interest-rate products. Last week, Secured Finance announced a $4m fundraising round. The raise was co-led by GSR Markets and Protocol Labs, with participation from FinTech Collective, HOF Capital, and Huobi Ventures. In February, Secured Finance completed the Filecoin Launchpad Accelerator by Tachyon, a 12-week immersive program bridging the IPFS, Filecoin and Ethereum communities. Watch Secured Finance’s Demo Day presentation\* and [**learn more about the fundraise**](https://www.finextra.com/pressarticle/88753/crypto-startup-secured-finance-raises-4-million-in-seed-funding).
 
-<a href="https://research.protocol.ai/sites/consensusday21/"><img src="/uploads/consensusday-card.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/consensusday-card.webp)](https://research.protocol.ai/sites/consensusday21/)
 
 ### ConsensusDay 21
 
@@ -117,9 +117,9 @@ Submission Deadline: 09/08/21
 Acceptance Notification: 09/22/21
 Workshop date: 10/06/21
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Community</b></h3>
+## Community
 
-<a href="https://panelpicker.sxsw.com/vote?search%5Bconference_id%5D=40"><img src="/uploads/sxsw-panel-picker.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/sxsw-panel-picker.webp)](https://panelpicker.sxsw.com/vote?search%5Bconference_id%5D=40)
 
 ### SXSW: 2022 Panel Voting is Open
 
@@ -138,15 +138,13 @@ Voting is open for the 2022 SXSW panel picker! Check out the IPFS, Filecoin, and
 - [**Accelerating Research With New Technology & Orgs**](https://panelpicker.sxsw.com/vote/116461)
 - [**Using Web3 Principles to Drive Decarbonisation**](https://panelpicker.sxsw.com/vote/117494)
 
-<a href="https://www.meetup.com/Filecoin-San-Francisco/"><img src="/uploads/meetup-2.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/meetup-2.webp)](https://www.meetup.com/Filecoin-San-Francisco/)
 
 ### August Filecoin Community Meetup
 
 Thanks to all who joined the August Filecoin Community meetup focused on the Filecoin mining community. In this month’s episode, community members shared a new branding proposal for miners (FIP) and four miners spoke on best practices and their findings after deploying the latest Filecoin v13 HyperDrive upgrade. In case you missed it, [catch up on the recording](https://www.youtube.com/watch?v=OnQD8MnuaOI).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 

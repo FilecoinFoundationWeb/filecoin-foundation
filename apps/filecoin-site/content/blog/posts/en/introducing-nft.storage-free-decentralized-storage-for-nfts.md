@@ -26,7 +26,9 @@ NFT.Storage lets users store their NFT content and metadata seamlessly and secur
 
 Today we are excited to introduce [NFT.Storage](https://nft.storage/), a service backed by Protocol Labs and Pinata specifically for storing NFT data. NFT.Storage allows developers to protect their NFT assets and associated metadata through content addressing and decentralized storage -- ensuring that all NFTs follow best practices to stay accessible long-term.
 
-“NFTs are part of humanity’s cultural legacy - and designing their data for long-term accessibility is crucial. Content addressing and distributed storage networks ensure that digital artwork, [basketball cards](https://dappradar.com/blog/50-million-in-sales-makes-nba-top-shot-largest-nft-market), and [virtual real estate](https://decrypt.co/57092/biggest-ever-nft-sale-made-as-single-axie-land-goes-for-1-5-million) are guaranteed to stay secure and available long-term. NFT.storage makes it completely frictionless to mint NFTs following best practices through resilient persistence on IPFS and Filecoin” said [Mikeal Rogers](https://twitter.com/mikeal), Engineering Manager at Protocol Labs.
+> NFTs are part of humanity’s cultural legacy - and designing their data for long-term accessibility is crucial. Content addressing and distributed storage networks ensure that digital artwork, [basketball cards](https://dappradar.com/blog/50-million-in-sales-makes-nba-top-shot-largest-nft-market), and [virtual real estate](https://decrypt.co/57092/biggest-ever-nft-sale-made-as-single-axie-land-goes-for-1-5-million) are guaranteed to stay secure and available long-term. NFT.storage makes it completely frictionless to mint NFTs following best practices through resilient persistence on IPFS and Filecoin.
+>
+> — [Mikeal Rogers](https://twitter.com/mikeal), Engineering Manager at Protocol Labs
 
 ## What is NFT.Storage
 
@@ -38,7 +40,7 @@ Here’s how it works:
 2. **Provable Storage**: NFT.Storage uses Filecoin for long-term decentralized data storage - brokering storage and retrieval deals to preserve NFT data long-term. Filecoin provides a permanence layer using cryptographic proofs to ensure the durability and persistence of the NFT data over time.
 3. **Resilient Retrieval**: This data stored via IPFS and Filecoin can be fetched directly in the browser via [any public IPFS gateway](https://ipfs.github.io/public-gateway-checker/).
 
-<a href="https://nft.storage/" target="_blank"><img src="/uploads/screen-shot-2021-04-29-at-1-51-42-pm.webp" alt="A diagram of how filecoin NFT storage works"></a>
+[![](/uploads/screen-shot-2021-04-29-at-1-51-42-pm.webp)](https://nft.storage/)
 
 ## What’s next?
 

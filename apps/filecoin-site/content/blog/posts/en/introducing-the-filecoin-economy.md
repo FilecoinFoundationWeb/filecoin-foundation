@@ -24,13 +24,13 @@ title: Introducing the Filecoin Economy
 _template: blog_detail
 ---
 
-_“It ain’t pretty in the sense that it’s nice and neat, and many people have tried to get rid of creative solutions that are complex, but society is complex, people are complex. And for us to have simple solutions to complex problems: not a good idea.”_
-
-> _–_ [_Elinor Ostrom_](https://www.youtube.com/watch?v=Qr5Q3VvpI7w&feature=youtu.be&t=80)_, awarded the 2009 Nobel Memorial Prize in Economic Sciences for her “analysis of economic governance, especially the commons”_
+> It ain’t pretty in the sense that it’s nice and neat, and many people have tried to get rid of creative solutions that are complex, but society is complex, people are complex. And for us to have simple solutions to complex problems: not a good idea."
+>
+> — [Elinor Ostrom](https://www.youtube.com/watch?v=Qr5Q3VvpI7w&feature=youtu.be&t=80), awarded the 2009 Nobel Memorial Prize in Economic Sciences for her "analysis of economic governance, especially the commons"
 
 [![Report Download](https://filecoin.io/vintage/images/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
 
-### Global Cloud Storage
+## Global Cloud Storage
 
 The datasphere will grow to 175 zettabytes by 2025, according to [IDC estimates](https://www.seagate.com/our-story/). A stack of enough 10-terabyte hard drives to store all that data would literally reach the moon (1 zettabyte equals 1 trillion gigabytes).
 
@@ -38,7 +38,7 @@ Today’s cloud storage solutions provide fast, highly scalable, and relatively 
 
 There are also relatively few freedoms when choosing a cloud storage provider. A few players with massive networks of data centers and brand recognition make competition very difficult for new entrants. Migrating data from one provider to another can be slow, laborious, and costly, and interoperability is not guaranteed. We envision a future where interfaces are standardized, and anyone can easily participate as a provider in a market for storage.
 
-### An Economy Enabled by Novel Cryptography
+## An Economy Enabled by Novel Cryptography
 
 Filecoin provides a blockchain-based marketplace that promises to revolutionize the global storage economy. The Filecoin marketplace delivers a totally new and secure way for anyone in the world to buy and sell storage. We’re excited to share an overview of how the storage economy works on the Filecoin Network.
 
@@ -54,7 +54,7 @@ Storage on the Filecoin network decouples hard drive space from many of the comm
 
 We think Filecoin’s unique storage marketplace represents the future of the storage economy.
 
-### What it Means to Participate in the Filecoin Economy
+## What it Means to Participate in the Filecoin Economy
 
 Filecoin’s mission is to create a decentralized, efficient, and robust foundation for humanity’s information. The economic design of the Filecoin network aims to align incentives and pragmatically reward useful and reliable storage with as few rules as possible. The many mechanisms and stimuli of the protocol are designed carefully with a single goal: If the participants in the network’s economy pursue their own self-interests, the network should grow and improve.
 
@@ -62,7 +62,7 @@ In the first iteration of the protocol, storage miners are the core service prov
 
 Given the permissionless nature of blockchain networks, it is common to see speculative and exploitative behaviors, where short-term selfish behavior causes harm to the network. A sustainable economy starts with a goal. To achieve that goal, it’s necessary to design a set of mechanisms or rules to incentivize, constrain, support, or penalize different activities. These mechanisms are created and parameterized to provide a robust foundation on which participants can build a thriving economy.
 
-### Introducing Filecoin Cryptoeconomics
+## Introducing Filecoin Cryptoeconomics
 
 The mechanisms of Filecoin’s cryptoeconomic structure and their implications are detailed in the report, “Engineering Filecoin’s Economy.”
 

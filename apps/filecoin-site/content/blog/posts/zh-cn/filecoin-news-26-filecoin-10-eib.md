@@ -27,45 +27,45 @@ _template: blog_detail_ch
 
 ![](/uploads/filecoin-news-26.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>公告</b></h3>
+## 公告
 
-<img src="/uploads/10eib-graphic.webp" style="width:40%;margin-left:0%">
+![](/uploads/10eib-graphic.webp)
 
 ### Filecoin Network网络存储容量超过10 EiB
 
 在主网发布后的11个月，Filecoin网络正迎来一个重大里程碑。截至上周，全球的Filecoin存储提供者总共往Filecoin网络投入了超过10 EiB的去中心化存储容量。 10EiB相当于190倍的互联网存档内容，45,000个维基百科网站，以及相当于6,850,000年的视频会议记录。这是Filecoin社区的重大成果。
 
-<a href="https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/"><img src="/uploads/dapper.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/dapper.webp)](https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/)
 
-### Dapper Labs整合Filecoin以推动Flow区块链上的NFT和游戏元宇宙的未来
+### Dapper Labs整合Filecoin以推动Flow Flow区块链上的NFT和游戏元宇宙的未来
 
 [**Dapper Labs**](https://www.dapperlabs.com/)正整合Filecoin技术以引领端到端的NFT所有权，这包括了底层的媒体资源以及存储NFT数据的最佳实践。为了加速这项协作，将会为Flow生态系统提供一系列的资助计划，这会从Next Step Microgrant计划开始。任何积极地整合IPFS、Filecoin和相关服务（如Pinata或NFT.Storage）都可以申请这项资助，只要满足5个简单的条件。可以点击 [**这里**](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)查看条件及进行申请！要了解更多关于整合方案和资助计划的详情，请[**阅读这篇博客文章**](https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>存储</b></h3>
+## 存储
 
-<a href="http://tachyon.xyz/"><img src="/uploads/filecoin-launchpad.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/filecoin-launchpad.webp)](http://tachyon.xyz/)
 
 ### Filecoin Launchpad Accelerator II演示日
 
 由Tachyon支持的Filecoin Launchpad Accelerator II演示日现正开放注册。请保持关注，以抢先了解在DeFi、NFT、游戏、社交和元宇宙领域搭建公司的Web3创始人们推出的项目，以及他们的雄心壮志。 在9月21日（周二）11am ET加入我们！[**点击这里进行预约以保留参与席位**](http://tachyon.xyz/)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>工具</b></h3>
+## 工具
 
-<a href="https://filecoin.io/blog/posts/taking-a-look-at-estuary/"><img src="/uploads/estuary.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/estuary.webp)](https://filecoin.io/blog/posts/taking-a-look-at-estuary/)
 
 ### 了解Estuary
 
 Filecoin网络是一个突破性的去中心化存储网络基础设施及协议。互联网上有很多存储解决方案，但很少能在去中心化及透明性上跟Filecoin相提并论。现在，通过Estuary这个自由使用的开源的技术栈，社区可以将公开的数据存储在Filecoin上。想了解更多吗？请阅读这篇指引入门的[**博客文章**](https://filecoin.io/blog/posts/taking-a-look-at-estuary/)。如果你有意贡献，请在[**推特上联系 @aresearchgroup**](https://twitter.com/aresearchgroup).
 
-<a href="https://medium.com/buidl-labs/datastation-enhancing-the-experience-of-decentralised-storage-on-filecoin-79e8807b854d"><img src="/uploads/datastation.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/datastation.webp)](https://medium.com/buidl-labs/datastation-enhancing-the-experience-of-decentralised-storage-on-filecoin-79e8807b854d)
 
 ### DataStation介绍
 
 存储提供者是[**Filecoin**](https://filecoin.io/)的去中心化存储网络的核心。因此，[**BUIDL Labs**](https://buidllabs.io/)创建了 **DataStation**，这是一个专注于存储提供者信息的平台，旨在提供容易理解的数据，对存储提供者进行定性和定量分析。DataStation将能让用户根据其特定需要，为其提供更简单的选择存储提供者的方式。要了解更多这将如何造福用户以及DataStation的工作原理，可以读一下[**这篇博客文章**](https://medium.com/buidl-labs/datastation-enhancing-the-experience-of-decentralised-storage-on-filecoin-79e8807b854d)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>存储提供者</b></h3>
+## 存储提供者
 
-<a href="https://filecoin-community.typeform.com/to/yTMkOLg8"><img src="/uploads/lotus-1.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/lotus-1.webp)](https://filecoin-community.typeform.com/to/yTMkOLg8)
 
 ### Lotus v.1.11.2
 
@@ -82,32 +82,32 @@ Filecoin基金会发布了[**存储提供者悬赏公告板（Storage Provider B
 
 你可以在Filecoin项目的Github账号里查看[**Storage Provider Bounty Board panel**](https://github.com/filecoin-project/community/projects)，以查看赏金进展以及找到待解决问题。要了解更多，请阅读这篇[**博客文章**](https://filecoinfoundation.medium.com/introducing-the-storage-provider-bounty-board-b98eace44dd0)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>社区</b></h3>
+## 社区
 
 ### Filecoin社区活动赞助
 
 现在仍有时间申请[**Filecoin社区活动赞助**](https://filecoin-community.typeform.com/to/B9XpG9ep)！这个赞助计划包含了一系列的小额资助，以帮助补贴Filecoin主网发布一周年庆祝活动（10月18-22日期间）发生的社区活动组织费用。要申请这项赞助，请在9月10日11:59pm PT前填写[**这个表格**](https://filecoin-community.typeform.com/to/B9XpG9ep)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>活动</b></h3>
+## 活动
 
 ### 亚洲黑客松赛季2021公告
 
 **亚洲黑客松赛季2021（Asia Hackathon Season 2021）**是一个为期数月的黑客松系列活动，它将发现、加速和重点展示Filecoin和IPFS技术栈在亚洲的重大进展。活动将有500,000美元的奖项，各个团队、初创企业、项目和企业家都有希望分一杯羹！
 亚洲黑客松赛季2021包括了这个秋天的几个环节：[**Saturn**](https://www.blockchainlabs.org/week2021/hackathon)，[**Jupiter**](https://tianchi.aliyun.com/specials/promotion/ipfs-hackathon)，**Mars** 以及Mercury. 更多的信息将会陆续发布。
 
-<a href="https://www.encode.club/filecoin-educate"><img src="/uploads/encode-logo-globe.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/encode-logo-globe.webp)](https://www.encode.club/filecoin-educate)
 
 ### Encode Filecoin Club举办的NFT Hack
 
 现在介绍NFT Hack活动，这是一个为期8周的NFT主题黑客松，由[**Encode Filecoin Club**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46?source=friends_link&sk=86510e90bb0fff50d7ee2a86a794fa0b)主办。这个活动在10月5日启动，持续到12月7日。优秀的团队最高可获价值3万美元奖项。 在黑客松活动后，一些项目将可以申请参加由Encode举办的为期10周的Filecoin加速器。[**在这里注册参与黑客松**](https://www.encode.club/filecoin-educate)，并记得在10月5日（周二）5:30pm GMT+1时参加NFT Hack启动会，可以点击[**这个链接参与**](https://www.eventbrite.co.uk/e/nft-hack-launch-tickets-169331201181?aff=ebdsoporgprofile)。
 
-<a href="https://research.protocol.ai/blog/2021/consensuslab-supercharging-our-consensus-research/"><img src="/uploads/consensusday-card.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/consensusday-card.webp)](https://research.protocol.ai/blog/2021/consensuslab-supercharging-our-consensus-research/)
 
 ### ConsensusDay 21 ——贡献者的最后召集
 
 共识机制是区块链网络的核心，而可扩展性仍是其阿喀琉斯之踵（弱点）。 为了庆祝Protocol Labs实验室的[**ConsensusLab**](https://research.protocol.ai/blog/2021/consensuslab-supercharging-our-consensus-research/)发起以及建立协作网络，Protocol Labs实验室研究团队正举办[**ConsensusDay 21**](https://research.protocol.ai/sites/consensusday21/)，这是一个为期一天的虚拟workshop，旨在探索共识研究及相关议题。[**在这里可以了解更多**](https://research.protocol.ai/sites/consensusday21/)，请于**9月8日**前提交你的贡献。
 
-<a href="https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsyccmbsb/"><img src="/uploads/meetup-2.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/meetup-2.webp)](https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsyccmbsb/)
 
 ### Filecoin社区线上见面会——9月
 
@@ -119,17 +119,15 @@ Filecoin基金会发布了[**存储提供者悬赏公告板（Storage Provider B
 
 记得[**登记参会者信息**](https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsyccmbsb/) 并添加到你的日程表上。到时见！
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>学习</b></h3>
+## 学习
 
-<a href="https://medium.com/encode-club/encode-filecoin-club-pinning-services-with-pinata-video-slides-72b2b37ff1bf"><img src="/uploads/encode-club-pinata.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/encode-club-pinata.webp)](https://medium.com/encode-club/encode-filecoin-club-pinning-services-with-pinata-video-slides-72b2b37ff1bf)
 
 ### Pinata提供的Pinning服务
 
 上周，[**Encode Filecoin Club**](https://www.encode.club/filecoin-educate)邀请了Pinata的联合创始人及首席技术官Matt Ober来为学生和hacker们讲述如何使用Pinata的pinning服务。在这个一小时的课程里，Matt展示了往IPFS上pin数据及将其取回的过程。[**在这里查看完整的演示**](https://medium.com/encode-club/encode-filecoin-club-pinning-services-with-pinata-video-slides-72b2b37ff1bf)。
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ 快来参与
+## 快来参与
 
 前往[**Github上的Filecoin项目**](https://github.com/filecoin-project)并确保查看[**社区资源**](https://github.com/filecoin-project/community)。在[**Filecoin Slack**](http://filecoin.io/slack)频道提出问题，在[**社区论坛**](https://discuss.filecoin.io/) 讨论问题或新想法，在微信号 @Filecoin-Official 关注我们，或[**在推特@Filecoin**](https://twitter.com/Filecoin)上向我们提出你的想法。
 

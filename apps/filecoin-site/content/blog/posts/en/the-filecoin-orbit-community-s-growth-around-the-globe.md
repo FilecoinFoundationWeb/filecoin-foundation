@@ -27,7 +27,7 @@ Launched in early 2022, the Filecoin Orbit Community Program is composed of volu
 
 Throughout this spring and summer, Filecoin Orbit ambassadors hosted over 20 events in 10 unique locations, with over 2,500 attendees — a 300% increase in attendees from Q1, 2022! This momentum would not be possible without the efforts of our volunteer ambassadors and the communities that they have worked so hard to build.
 
-### **Spotlights**
+## Spotlights
 
 **FIL Lagos Conference in Lagos, Nigeria: March 31 - April 2, 2022**
 
@@ -67,7 +67,7 @@ The [Filecoin Orbit Community Tanzania](https://twitter.com/OrbitTanzania1) held
 
 ![](/uploads/ffblog5-2.webp)
 
-### The Global Orbit Community
+## The Global Orbit Community
 
 The Filecoin Orbit Community Program has continued to grow into a cohesive group of volunteers spread across the entire globe. The program will continue to welcome ambassadors with a wide variety of skills and backgrounds as it continues to support decentralized storage infrastructure across the globe.
 

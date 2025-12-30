@@ -38,7 +38,7 @@ Filecoin主网于今日3:00pm(世界标准时间)正式启动！
 
 Filecoin网络现已进入启动后的监测期来保证网络的正常运行。在此期间，我们将密切跟踪网络性能并为Filecoin启动周(Filecoin Liftoff Week)作准备。截至目前，网络运行稳定，社区成员汇报了他们正成功运行。
 
-### 为Filecoin主网启动周做好准备
+## 为Filecoin主网启动周做好准备
 
 下周是我们的社区庆祝活动时间！欢迎加入[Filecoin启动周](https://liftoff.filecoin.io/)，社区策划了一系列具有吸引力的讲座、研讨会和专题讨论会，将于10月19日至23日期间举行，来庆祝Filecoin主网启动并探索网络的未来。
 
@@ -46,7 +46,7 @@ Filecoin网络现已进入启动后的监测期来保证网络的正常运行。
 
 [![Filecoin Liftoff Schedule](https://filecoin.io/vintage/images/blog/mainnet-liftoff-schedule.jpg)](https://liftoff.filecoin.io/)
 
-### 分享您的故事 (#FilecoinLiftoff)
+## 分享您的故事 (#FilecoinLiftoff)
 
 创建Filecoin的过程是伟大的。为了给周一做准备，我们想了解**您的**Filecoin故事——从您开始参与Filecoin项目到今天历史性的里程碑，**主网启动**的历程。在过去三年里，社区面临过许多挑战——从通过密码学设计一个既高效并可扩展地验证有效存储的安全的证明系统([SDR](https://spec.filecoin.io/#algorithms__sdr__stacked-depth-robust-graphs))；到建立和调整新系统，例如[drand](http://drand.love/)，一种新型分布式随机信标网络，以确保Filecoin具有安全和弹性的随机性来源；再到在例如[DataTerraNemo](https://dtn.is/)、[Devcon5](https://archive.devcon.org/devcon-5/details/)、[Web3峰会](https://web3summit.com/)、[Filecoin Ignite](https://hub.fil.org/events/)、[IPFS行业生态峰会](https://play.yunxi.tv/livestream/flash?id=e1eecab932304450b9e332502dbbf490#/)等等活动上形成的新的联系与协作；在整个 太空竞赛 过程中建立起令人惊叹的矿工、用户和开发者社区。我们有很多美好的回忆来分享——我们也想听听您的故事！
 

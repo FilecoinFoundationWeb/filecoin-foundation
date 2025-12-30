@@ -31,7 +31,7 @@ If you haven’t visited the Filecoin Spec site recently, head over to: [https:/
 
 The Spec website went through several “design → implement → deploy” rounds, in order to integrate all the features essential to create a great platform for Filecoin developers, implementers, researchers and ecosystem developers. Additionally, we reduced the complexity required to update the spec content, applied structured dependency management, added features to ensure consistency throughout the spec, added support for new tools, and much more!
 
-### New Filecoin specification contribution workflows
+## New Filecoin specification contribution workflows
 
 Updating the spec content is now a much simpler and more enjoyable experience that involves “single-touch” edits in markdown files. The backend mechanics take care of the rest, updating the Table of Contents (ToC) and document structure automatically! You can find all the simple instructions needed in order to contribute in the spec’s repo [README file](https://github.com/filecoin-project/specs/blob/master/README.md).
 
@@ -62,7 +62,7 @@ On the content front, we have put a huge amount of effort in updating the descri
 
 The Filecoin specification is implementation-agnostic, which means that the text provides a nice description of the algorithmics and protocol interactions that make the network operate, without going into implementation details. The specification provides all the required details that developers need in order to implement the Filecoin in any language. References to the Lotus implementation are provided only where needed.
 
-### Measuring Progress
+## Measuring Progress
 
 In our 3-month Spec Project journey there were more than 300 GitHub issues opened and more than 200 PRs merged.
 
@@ -86,13 +86,13 @@ Today the spec site is 84% up-to-date. In order to keep track of our own progres
 
 ![implementations](https://filecoin.io/vintage/images/blog/fil-spec-implementations.png)
 
-### FIP Integration
+## FIP Integration
 
 After several testing rounds and two impressive Space Race competitions, the protocol has now been fine-tuned and is ready for lift off! From now on, changes to the protocol will take place through [Filecoin Improvement Proposals (FIPs)](https://github.com/filecoin-project/fips). Suggested changes to the protocol have to go through a clearly specified process, detailed in the [FIP repository](https://github.com/filecoin-project/fips).
 
 In most cases, FIPs will require updates to the protocol specification and therefore one of the streams of our ongoing efforts include seamless integration of the Filecoin Spec with the FIP process.
 
-### What’s Next?
+## What’s Next
 
 We are also integrating spec versioning to create a Time Machine of the specification itself such that you can view back in time what the spec was prior to a protocol update. Last but certainly not least, we are integrating tools to pull data from remote sources through an API proxy. This will enable the seamless integration with FIPs but will also allow us to extend the dashboard to include the status of “Conformance Tests”.
 

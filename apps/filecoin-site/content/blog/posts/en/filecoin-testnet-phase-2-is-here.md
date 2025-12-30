@@ -31,7 +31,7 @@ _template: blog_detail
 
 Today is a big day for the Filecoin project. Six months ago, we launched the first phase of the [Filecoin testnet](https://filecoin.io/blog/filecoin-testnet-is-live/). Since then, we have been bug fixing, conducting protocol reviews, making critical protocol and product improvements, performing optimizations, and working towards running networks with multiple interoperable nodes. Now, we are ready to launch Testnet Phase 2!
 
-### What’s in this release?
+## What’s in this release
 
 Testnet Phase 2 is the last major milestone before mainnet launch. Here’s a look at what it offers. The Testnet Phase 2 release includes:
 
@@ -44,7 +44,7 @@ Testnet Phase 2 is the last major milestone before mainnet launch. Here’s a lo
 
 The Testnet Phase 2 release includes implementations that are nearly feature-complete. Over the next few weeks, we will complete feature development work on **go-filecoin** and **lotus**, upgrade our Proof-of-Replication (PoRep), and continue testing, bug fixes, and performance improvements. You should expect network upgrades and a couple more network resets as we work towards making sure Filecoin is ready for our mainnet launch in a few months.
 
-### How to participate in Testnet Phase 2
+## How to participate in Testnet Phase 2
 
 **Join the network!** Whether you are a storage miner, client, or developer, running a Filecoin implementation and joining the network is the best way to understand how Filecoin actually works and how it can support your use case. Visit the [Filecoin docs site](https://docs.filecoin.io/) for instructions on how to run **go-filecoin** or **lotus** to join Testnet Phase 2.
 
@@ -59,7 +59,7 @@ The Testnet Phase 2 release includes implementations that are nearly feature-com
 
 If you’re a developer who is interested in building on the Filecoin network, we’d love to hear from you! Please reach out to us at [filecoin-collab@protocol.ai](mailto:filecoin-collab@protocol.ai).
 
-### Have Questions?
+## Questions
 
 **Join us for our Testnet Phase 2 AMA with Juan Benet.** Join us **Monday, May 18, at 7 PM PST**, for a live Q&A with Juan Benet, founder of the Filecoin Project. For one hour, Juan and several Filecoin developers will be online to answer any questions you might have about Testnet Phase 2 and our path to mainnet.
 
@@ -74,7 +74,7 @@ Here’s how to participate:
 
 We hope to see you there!
 
-### Thanks
+## Thanks
 
 _Thank you_ to the thousands of Filecoin miners, developers, clients, and testers who have been patiently testing and improving Filecoin over these last few months. You have made invaluable contributions to improving the security and performance of the Filecoin network and protocol.
 

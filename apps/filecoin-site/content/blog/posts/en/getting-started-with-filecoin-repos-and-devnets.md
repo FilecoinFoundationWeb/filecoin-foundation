@@ -40,7 +40,7 @@ As we announced [here](https://filecoin.io/blog/opening-filecoin-project-repos/)
 8. [Join the team](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#8-join-the-team)
 9. [Closing thoughts](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#closing-thoughts)
 
-### 1. Set up a Filecoin node and connect to a devnet
+## 1. Set up a Filecoin node and connect to a devnet
 
 As of today, anyone can set up a Filecoin node and connect to a devnet. This is the best way to explore the current command-line interface and the Filecoin decentralized storage market.
 
@@ -57,13 +57,13 @@ On the devnets, you can store data as a storage client and also try how Filecoin
 
 You can visit the [go-filecoin repo Wiki](https://github.com/filecoin-project/go-filecoin/wiki) to see the full go-filecoin installation instructions and details on how to connect to a devnet.
 
-### 2. Visualize the network
+## 2. Visualize the network
 
 The network stats dashboard shows a high-level overview of **user devnet** activity. The dashboard aggregates self-reported information and displays total storage capacity on the network, network utilization rate, geographic distribution of nodes, tokens in circulation, and other useful information.
 
 If you _are_ connected to the user devnet, you can stream your node’s activity to this dashboard to see your own activity within the broader network. The full instructions for connecting to the devnet and streaming your node’s activity are on the [go-filecoin Wiki](https://github.com/filecoin-project/go-filecoin/wiki).
 
-### 3. Improve the Filecoin protocol specification
+## 3. Improve the Filecoin protocol specification
 
 The Filecoin protocol specification (“the spec”) can be found on GitHub in the [filecoin-project/specs](https://github.com/filecoin-project/specs) repo. It is very much an active work in progress, and is far from complete.
 
@@ -71,13 +71,13 @@ We would love comments, questions, and contributions to the spec. You can surfac
 
 We welcome PRs to the spec. This is one of the most valuable ways to contribute to building the Filecoin network. Improving the protocol specification makes it possible for multiple implementations of the protocol to be built to similar standards of scale and security. Though be warned: it is hard to contribute protocol specification writing without a deep understanding of how it is meant to work. Asking clarifying questions, reviewing and commenting on drafts, and fleshing out details are great ways to get started. Those who want to contribute by writing a section entirely from scratch will require deeper knowledge and close collaboration with out team. Come talk with us on chat (see the [Join the Community](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#6-join-the-community) section below)!
 
-### 4. Collaborate with us to solve open research problems
+## 4. Collaborate with us to solve open research problems
 
 The Filecoin research team has published both an [updated roadmap](https://github.com/filecoin-project/research#filecoin-research-endeavours) and a [list of open research problems](https://github.com/filecoin-project/research/blob/master/open-problems.md). You can collaborate with our team directly if you are interested in solving these problems. Reach out to us at [research@filecoin.org](mailto:research@filecoin.org).
 
 There are also a number of open RFPs for cryptographic and distributed systems available through the Protocol Labs RFP program. Check out the [full listing of RFPs](https://github.com/protocol/research-RFPs) and [how to apply for an RFP](https://github.com/protocol/research-grants/blob/master/FAQ.md) for more information.
 
-### 5. Compete in the Replication Game
+## 5. Compete in the Replication Game
 
 The Filecoin protocol uses Proofs-of-Replication (PoReps) to ensure that a storage miner is storing a client’s data correctly. As a result, PoReps are fundamental to the operation of the Filecoin protocol.
 
@@ -85,7 +85,7 @@ The Replication Game is a competition in which individuals compete to submit the
 
 Full details for how to compete in the Replication Game are available on [GitHub](https://github.com/filecoin-project/replication-game). You can also watch the [demo video](https://youtu.be/2NAKGL0ydiE) (embedded below) to see how to participate in the replication game and view the current leaderboard.
 
-### 6. Join the community
+## 6. Join the community
 
 Come join the discussion! You can participate in our research and development conversations on Filecoin chat, ask for help troubleshooting installation problems on the discussion forums, and visit our [community repo](https://github.com/filecoin-project/community) for information about meetups, calls, and other community resources!
 
@@ -95,11 +95,11 @@ Come join the discussion! You can participate in our research and development co
   - _IRC:_ [Coming soon](https://github.com/filecoin-project/community/issues/4)
 - [**Discussion forum**](https://discuss.filecoin.io/): We use the forums for more long-lived questions. When in doubt, you can always post here.
 
-### 7. Build on top of Filecoin
+## 7. Build on top of Filecoin
 
 We are interested in collaborating with application developers who want to build massively impactful applications on the decentralized web. If you are interested in exploring potential collaboration opportunities, you can post directly on the [forum](https://discuss.filecoin.io/). These are open by default. As a secondary option, you can email [filecoin-collab@protocol.ai](mailto:filecoin-collab@protocol.ai).
 
-### 8. Join the team
+## 8. Join the team
 
 The Filecoin team is _growing_.
 
@@ -107,7 +107,7 @@ Today, the Filecoin team is employed by Protocol Labs. PL is hiring across a var
 
 There are other organizations involved in developing Filecoin, and in time we will hear from more of them publicly. We also expect many new groups, companies, and teams to form around Filecoin. This is a great time for the pioneers to start exploring. Feel free to coordinate through the forums, and reach out if we can be helpful. In the future, we will host events to bring the community together and build a larger, more connected team.
 
-### Closing thoughts
+## Closing thoughts
 
 So there you have it! There are a number of ways that you can check out the Filecoin Project, what we have been up to for the past several months, and what we look forward to landing in 2019. Building the Filecoin decentralized storage market has been and continues to be extremely meaningful. We are glad to have you with us on this journey.
 

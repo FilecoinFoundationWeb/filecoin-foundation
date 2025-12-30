@@ -34,59 +34,57 @@ Today, we’re building on Filecoin’s onchain cryptographic proofs, smart cont
 
 Filecoin goes live with the mission to create a decentralized, efficient, and robust foundation for humanity’s information. 
 
-> The early Filecoin community, the OGs per se,... were after the pursuit of the truth and the best systems in a way that would protect humanity and the future of civilization. And today, I don’t think we’ve lost that element.
-
-_Jonathan Schwartz, CEO, GLIF_
+> "The early Filecoin community, the OGs per se,... were after the pursuit of the truth and the best systems in a way that would protect humanity and the future of civilization. And today, I don’t think we’ve lost that element."
+>
+> — Jonathan Schwartz, CEO, GLIF
 
 ### 2021 — Global Capacity
 
 Filecoin becomes the largest decentralized storage network in the world with exbibytes of storage capacity and thousands of independent storage provider systems across the globe. 
 
-> Very quickly, we reached multiple exabytes of storage capacity on the network, which was wild because just a few months before, we had been speculating about whether this would ever happen in the decades to come.
-
-_Marta Belcher, President, Filecoin Foundation_
+> "Very quickly, we reached multiple exabytes of storage capacity on the network, which was wild because just a few months before, we had been speculating about whether this would ever happen in the decades to come."
+>
+> — Marta Belcher, President, Filecoin Foundation
 
 ### 2022 — Large Data Onboarding
 
 Public datasets, institutional archives, and scientific and research data flow onto the network from Internet Archive, MuckRock, USC Shoah Foundation, and more. 
 
-> Last month, the Internet Archive demoed a page to me, and I thought, ‘There are no intermediaries here.’ This is just straight up coming from the storage providers on the network. Not only are we achieving what that plan was so many years ago, but it’s getting better
-
-_Danny O’Brien, Senior Fellow, Filecoin Foundation_
+> "Last month, the Internet Archive demoed a page to me, and I thought, ‘There are no intermediaries here.’ This is just straight up coming from the storage providers on the network. Not only are we achieving what that plan was so many years ago, but it’s getting better"
+>
+> — Danny O’Brien, Senior Fellow, Filecoin Foundation
 
 ### 2023 — Programmability
 
 The Filecoin Virtual Machine (FVM) brings smart contracts, composable data workflows, and Ethereum compatibility to the network. The network welcomes hundreds of projects, thousands of deployed contracts, and new use cases such as perpetual storage, capital markets, and data DAOs.
 
-> Having user programmability gives you a lot more flexibility in saying, ‘How do we just let a thousand flowers bloom?’
-
-_Jonathan Victor, Founder, Ansa Research_
+> "Having user programmability gives you a lot more flexibility in saying, ‘How do we just let a thousand flowers bloom?’"
+>
+> — Jonathan Victor, Founder, Ansa Research
 
 ### 2024 — New Frontiers
 
 IPFS deploys into space through a project between Filecoin Foundation and Lockheed Martin Space; the network supports emerging AI data needs; cross-ecosystem integrations expand the network; and storage onramps such as Storacha, Akave, CID Gravity, Lighthouse, and more come online or scale to serve hundreds of clients.
 
-> Nowadays, Filecoin is an end-to-end storage network. I think a lot of folks have missed it, but this network has become way more powerful than it used to be.
-
-_Hannah Howard, CEO, Storacha_
+> "Nowadays, Filecoin is an end-to-end storage network. I think a lot of folks have missed it, but this network has become way more powerful than it used to be."
+>
+> — Hannah Howard, CEO, Storacha
 
 ### 2025 — Filecoin Onchain Cloud
 
 The launch of cross-chain data bridges and Proof of Data Possession (PDP) enable verifiable warm storage proofs on Filecoin. Now, in 2025, the network is expanding into a verifiable, programmable, onchain cloud of services. 
 
-> Developers are looking for more than the centralized storage provided by Big Tech. They’re looking for open services they can build on with verifiable guarantees they can trust. That’s where Filecoin Onchain Cloud comes in.
-
-_Molly Mackinlay, CEO, FilOz_
+> "Developers are looking for more than the centralized storage provided by Big Tech. They’re looking for open services they can build on with verifiable guarantees they can trust. That’s where Filecoin Onchain Cloud comes in."
+>
+> — Molly Mackinlay, CEO, FilOz
 
 ### 2026 and Beyond
 
 A decentralized, verifiable, and programmable data layer for the world. 
 
-> We're talking about truly rights-respecting computing infrastructure, which I think is critical for the future of our civilization
-
-_Juan Benet, Inventor, Filecoin and IPFS_
-
-Hear more reflections from the community in the 5th Filecoin birthday [celebration video](https://youtu.be/Yjm8RgqRyS0). 
+> "We're talking about truly rights-respecting computing infrastructure, which I think is critical for the future of our civilization"
+>
+> — Juan Benet, Inventor, Filecoin and IPFS
 
 ## Introducing Filecoin Pin: The Missing Piece, Finally Here
 

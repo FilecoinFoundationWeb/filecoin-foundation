@@ -29,13 +29,13 @@ From February 21 through March 4, applications can be [submitted through the Git
 
 We invite individuals and organizations to submit an application, even if you are relatively new to the Filecoin Network! You can learn more in our [Governance GitHub Repo](https://github.com/filecoin-project/notary-governance/tree/main/notaries), our public [Slack channel](https://filecoin.io/slack), and our recorded [governance calls](https://www.youtube.com/playlist?list=PL_0VrY55uV1-cwaAU8lcChONxYQ_Bj9hx).
 
-## **About Filecoin Plus**
+## About Filecoin Plus
 
 Filecoin Plus is a pragmatic solution to the technically challenging problem of verifying that a particular set of data is useful in a permissionless, incentive-compatible, pseudonymous network, and presents a path for incentivizing using the network in productive ways.
 
 Today, the program is supported by over 20 active notaries, with representatives mostly operating in Asia, Europe, and North America. In this election cycle, we hope to expand our pool of notaries to other regions and look forward to receiving applications from participants across North & South America, Europe, Asia, Australia, and Africa. We also hope to increase the number of organizations and diversity of subject-matter expertise among our notary community.
 
-## **Other Ways to Get Involved**
+## Other Ways to Get Involved
 
 There are many ways to get involved with the Filecoin Plus program! You can [Join the Filecoin Plus community](https://github.com/filecoin-project/filecoin-plus-client-onboarding) by participating in issues and discussions on GitHub. There, you’ll find both client onboarding repos and Filecoin Plus project repos.
 

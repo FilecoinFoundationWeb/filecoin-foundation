@@ -25,41 +25,35 @@ title: Filecoin 2018 Q1 & Q2 update
 _template: blog_detail
 ---
 
-### 0. Table of Contents
+## 1. Filecoin Development Update
 
-1. Filecoin Development Update
-   1. Demos of go-filecoin
-   2. Codebase opening up
-2. Filecoin Research Update
-3. Filecoin Project Roadmap
-   1. Optimistic Timeline
-   2. Where are we
-   3. Upcoming Milestones
-4. Filecoin Public Talks & Media
-5. libp2p update for Filecoin
-6. IPFS update for Filecoin
-7. Changes to the blog and to our updates
-8. Cautionary Notes
+Let’s not bury the lead. The most exciting thing going on right now in the Filecoin Project is building the first protocol implementation: **go-filecoin**. We have been hard at work on this for many months, and are thrilled to have reached a point where:
 
-### 1. Filecoin Development Update
+1. The blockchain data structures are implemented (structured as [IPLD](https://ipld.io/))
 
-Let’s not bury the lede. The most exciting thing going on right now in the Filecoin Project is building the first protocol implementation: **go-filecoin**. We have been hard at work on this for many months, and are thrilled to have reached a point where:
+2. The nodes can establish secure connections to each other ([libp2p](https://libp2p.io/))
 
-- (1) the blockchain data structures are implemented (structured as [IPLD](https://ipld.io/))
-- (2) the nodes can establish secure connections to each other ([libp2p](https://libp2p.io/))
-- (3) message and block propagation work over [libp2p](https://libp2p.io/) pubsub
-- (4) miners can assemble blocks
-- (5) the nodes validate blocks & achieve consensus on the heaviest chain
-- (6) messages (transactions) invoke and execute actors (smart contracts, virtual machine)
-- (7) actor memory is scoped and isolated in the state tree (vm)
-- (8) accounts, payments, and token basics work
-- (9) the main features of the Storage Market are implemented (asks, bids, deals, storing files)
-- (10) clients can hire miners, store files, and retrieve them later (!)
-- (11) actors like Payment Channels work, though not complete
+3. Message and block propagation work over [libp2p](https://libp2p.io/) pubsub
+
+4. Miners can assemble blocks
+
+5. The nodes validate blocks & achieve consensus on the heaviest chain
+
+6. Messages (transactions) invoke and execute actors (smart contracts, virtual machine)
+
+7. Actor memory is scoped and isolated in the state tree (vm)
+
+8. Accounts, payments, and token basics work
+
+9. The main features of the Storage Market are implemented (asks, bids, deals, storing files)
+
+10. Clients can hire miners, store files, and retrieve them later (!)
+
+11. Actors like Payment Channels work, though not complete
 
 You can take a closer look at completion state of various parts of go-filecoin in [this working document](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit?usp=sharing).
 
-#### 1.1. Dev Update / Demos of go-filecoin
+### 1.1. Dev Update / Demos of go-filecoin
 
 Along with this update we are publishing 3 demos of go-filecoin in action. The demos are basic, but they show a lot of complex components working in the go-filecoin node. We get to see basic blockchain operations, such as blocks being mined, propagated through the network, and the chain coming to consensus on the best next block. We get to see the resulting blockchain data, including the state tree, the internal data storage for actors, wallet balances, wallet payment transactions, and more. We get to see the decentralized and verifiable Storage Market in action, with bids, asks, and deals storing files. In the future, we will make and release more demos of functionality.
 
@@ -73,11 +67,11 @@ This demo introduces tools that are used in other demos. It boots up a local tes
 - go-filecoin API and command line output of various commands
 - exploring blockchain data structures, market orders, wallet balances, etc
 
-  <iframe width="768" height="420" src="https://www.youtube.com/embed/pWj9AQNBjS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="768" height="420" src="https://www.youtube.com/embed/pWj9AQNBjS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Demo 2: Network Vis & Block Explorer
 
-##### In this demo, we can see a real-time visualization of all the activity in a local test network and its nodes, and a block explorer. We see the following actions
+In this demo, we can see a real-time visualization of all the activity in a local test network and its nodes, and a block explorer. We see the following actions
 
 - blocks being mined, propagated, and added to the chain
 - the network achieving consensus
@@ -86,7 +80,7 @@ This demo introduces tools that are used in other demos. It boots up a local tes
 - deals being made and files being transferred
 - internal data storage of actors
 
-  <iframe width="768" height="420" src="https://www.youtube.com/embed/clzivvkpKpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="768" height="420" src="https://www.youtube.com/embed/clzivvkpKpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Demo 3: Storage Market Basics
 
@@ -99,9 +93,9 @@ In this demo we walk through a set of storage market operations:
 - clients and miners making deals
 - other clients retrieving stored files
 
-  <iframe width="768" height="420" src="https://www.youtube.com/embed/nqwfAOvlUBM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="768" height="420" src="https://www.youtube.com/embed/nqwfAOvlUBM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### 1.2. Dev Update / Codebase opening up
+### 1.2. Dev Update / Codebase opening up
 
 **Private codebase so far.** We have been developing in a private codebase. This is not our typical way of working – almost all of our work is fully public from the first commit (see IPFS, libp2p, IPLD, and more). We made the hard choice of starting the codebase privately primarily to avoid distractions and to move quickly.
 
@@ -120,7 +114,7 @@ In this demo we walk through a set of storage market operations:
 - **OKRs.** We use Objectives and Key Results (OKRs) for scalable planning and measuring progress. Protocol Labs has been pioneering this in open source through IPFS, libp2p, and more. We have found them to be an excellent way to plan across working groups, with a great balance of group autonomy and cross-group coordination.
 - **Community Management.** We are preparing to meet the needs of a broad and vibrant community from the get-go.
 
-### 2. Filecoin Research Update
+## 2. Filecoin Research Update
 
 The Filecoin Research team has been focused on the following lines of work. We will give a succinct summary here, and dive in-depth in future posts.
 
@@ -131,21 +125,21 @@ The Filecoin Research team has been focused on the following lines of work. We w
 - **RFP Program**. Earlier this year, [Protocol Labs launched a $5M RFP Program](https://protocol.ai/blog/ann-research-rfp/) to accelerate research into open problems key to our protocols. The first RFPs sought performance improvements to components used in Filecoin. These are improvements, and not necessary for launch. Successes from this program could drastically improve performance characteristics, increase security, or simplify the protocol. All of these directions are very much worth pursuing.
 - **Addressing Other Problems.** Our team has also been working on a number of problems important for the future of Filecoin, though these are not as high priority as network launch so they are in the back burner. These include: (a) fully off-chain market orders, (b) chain compression using proofs, (c) user-defined file contracts, (d) scalable consensus, and more.
 
-### 3. Filecoin Project Roadmap
+## 3. Filecoin Project Roadmap
 
 With this update, we are publishing a more detailed project roadmap and a rough optimistic timeline, extending out to many milestones ahead. We plan to keep this roadmap updated in [this document](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/view).
 
-#### 3.1. Roadmap / Optimistic Timeline
+### 3.1. Roadmap / Optimistic Timeline
 
 **While we cannot commit to any exact dates on this timeline**, we want to give at least an indication of where we are, what’s next, and when next milestones will be reached. We hate giving dates that may turn out to be too optimistic or slip, but we hate the silence and keeping our community in the dark even more. So, against typical mainstream software & product development wisdom, we are publishing this optimistic roadmap with expected dates of targeted milestones, and we plan to revise it as we need. The pros: a much clearer and transparent planning approach, easier coordination across the community, and excitement as milestones get closer. The cons: timelines will certainly have to change – some things may come sooner or later than initially anticipated.
 
-#### 3.2. Roadmap / Where are we
+### 3.2. Roadmap / Where are we
 
 In rough terms, this is a high-level view of where we are. (These phases are not equally long)
 
 ![](https://filecoin.io/vintage/images/blog/filecoin-roadmap-at-impl.png)
 
-#### 3.3. Roadmap / Upcoming Milestones
+### 3.3. Roadmap / Upcoming Milestones
 
 Our coming milestones are as follows:
 
@@ -192,7 +186,7 @@ Our coming milestones are as follows:
 - **And more.**
   - We have many more plans, but we are focused on the milestones listed above now.
 
-### 4. Filecoin Public Talks & Media
+## 4. Filecoin Public Talks & Media
 
 We have stayed mostly out of the public sphere this year, as we have been focused on building. We gave a few public talks, and visited a few research groups. Our activity will remain similarly constrained until the lead-up to the launch of the network.
 
@@ -219,7 +213,7 @@ We have stayed mostly out of the public sphere this year, as we have been focuse
   - Filecoin Demo @ Decentralized Web Summit 2018
   - _Want us to visit & speak with your lab?_ [_Let us know here._](https://goo.gl/forms/BJHIg6r5nJGF5sQ72)
 
-### 5. libp2p update for Filecoin
+## 5. libp2p update for Filecoin
 
 Filecoin is built on top of and depends heavily on [libp2p](https://libp2p.io/), a project led by Protocol Labs as well. Therefore we include a compressed update from that project tuned for Filecoin.
 
@@ -231,7 +225,7 @@ Filecoin is built on top of and depends heavily on [libp2p](https://libp2p.io/),
 - **Polkadot chooses libp2p!** Polkadot recently adopted libp2p for its network stack. This is an important moment for libp2p, as it means another very significant blockchain and whole blockchain ecosystem will be sharing the stack. The Polkadot team recently shipped their PoC-2, and [wrote about it here](https://medium.com/polkadot-network/polkadot-poc-2-is-here-parachains-runtime-upgrades-and-libp2p-networking-7035bb141c25). It also gives strength to other proponents of using libp2p with other blockchains, like Ethereum.
 - **libp2p used for blockchain applications.** [Livepeer](https://livepeer.org/), [Keep Network](https://blog.keep.network/introduction-to-libp2p-57ce6527babe), Paratii, and of course, everybody using [IPFS](https://ipfs.tech/).
 
-### 6. IPFS update for Filecoin
+## 6. IPFS update for Filecoin
 
 Filecoin is built on top of and depends heavily on [IPFS](https://ipfs.tech/), a project led by Protocol Labs as well. Many users of IPFS aim to also become users of Filecoin, so IPFS capabilities and use cases greatly inform Filecoin. Therefore we include a compressed update from that project tuned for Filecoin.
 
@@ -256,26 +250,26 @@ Filecoin is built on top of and depends heavily on [IPFS](https://ipfs.tech/), a
   - _Tutorial_: [Code a simple P2P blockchain in Go](https://medium.com/@mycoralhealth/code-a-simple-p2p-blockchain-in-go-46662601f417)
   - _Tutorial_: [From Zero to Interplanetary Hero (browser-based ĐApps with IPFS)](https://medium.freecodecamp.org/from-zero-to-interplanetary-hero-7e62f7d4427)
 
-### 7. Changes to the blog and to our updates
+## 7. Changes to the blog and to our updates
 
 We are making some changes to our blog and our updates. In our [last update](https://filecoin.io/blog/update-2017-q4/), we planned to broadcast updates at least once a quarter. We are sorry to have missed that goal – we know this was frustrating for some in the community. Hence, this update is longer than usual, and we’re making the following changes:
 
-- (1) We plan to switch to a stream of smaller updates. This means our update cadence will no longer be quarterly.
-- (2) We will drop the requirement that our updates “speak for the whole project” and thus avoid blocking on review. Instead, in a more decentralized fashion, we intend for our working groups and individual team members to start publishing their own updates through the blog.
-- (3) We plan to post small articles about individual aspects of Filecoin. This will allow us to write in-depth about exciting features or components of the network.
-- (4) We plan to broaden the set of writers, which will showcase the many fantastic contributions and developments our new team members are making.
+1. We plan to switch to a stream of smaller updates. This means our update cadence will no longer be quarterly.
+2. We will drop the requirement that our updates "speak for the whole project" and thus avoid blocking on review. Instead, in a more decentralized fashion, we intend for our working groups and individual team members to start publishing their own updates through the blog.
+3. We plan to post small articles about individual aspects of Filecoin. This will allow us to write in-depth about exciting features or components of the network.
+4. We plan to broaden the set of writers, which will showcase the many fantastic contributions and developments our new team members are making.
 
-### 8. Cautionary Notes
+## 8. Cautionary Notes
 
-#### **Miner Caution:** We have noticed a number of companies making and selling “Filecoin Mining Machines” or “Filecoin Mining Hardware”. Please note: we have not released official specifications for mining hardware yet, so these systems may turn out to be suboptimal or unnecessarily complex. Once we have a clear idea of optimal constructions for Network Launch, we will publish concrete specifications of system requirements, trade-offs to consider, and hardware recommendations. We recommend holding off on buying Filecoin-specific hardware until we publish those specifications
+**Miner Caution:** We have noticed a number of companies making and selling "Filecoin Mining Machines" or "Filecoin Mining Hardware". Please note: we have not released official specifications for mining hardware yet, so these systems may turn out to be suboptimal or unnecessarily complex. Once we have a clear idea of optimal constructions for Network Launch, we will publish concrete specifications of system requirements, trade-offs to consider, and hardware recommendations. We recommend holding off on buying Filecoin-specific hardware until we publish those specifications
 
-##### _What is holding back mining hardware specifications?_ We aim to have as broad compatibility and as minimal system requirements as we can. We want existing storage systems to be able to be near-optimal Filecoin miners with minimal modification (ideally zero). Recent improvements to core components like _Proof-of-Replication_ (which currently require SNARKs) have drastically reduced overheads and improved tradeoffs for such systems, and we may have more improvements like that in the short term
+_What is holding back mining hardware specifications?_ We aim to have as broad compatibility and as minimal system requirements as we can. We want existing storage systems to be able to be near-optimal Filecoin miners with minimal modification (ideally zero). Recent improvements to core components like _Proof-of-Replication_ (which currently require SNARKs) have drastically reduced overheads and improved tradeoffs for such systems, and we may have more improvements like that in the short term
 
 **Investor Caution**: During and after the Filecoin token sale we’ve heard reports of attempts to defraud investors from actors claiming to be selling Filecoin SAFTs or tokens. Similarly, we’ve seen unscrupulous exchanges claiming to list Filecoin and Filecoin derivatives. Remember that the Filecoin token will not be live until network launch, and all the transfer restrictions and other terms of the SAFT still apply. Therefore, any exchange or seller that lists or offers Filecoin, IPFS tokens or related derivatives is likely fraudulent. We will announce [in our official blog](https://filecoin.io/blog) when the Filecoin Network and token go live. Until then we **strongly** recommend staying away from any exchange or entity who claims to be buying, selling, or trading Filecoin tokens or derivatives.
 
 **Legal disclaimer**: This update lays out our current plan for the project. The actual future may, and is likely to, play out differently as things continue to develop. You should not rely on any predictions made here.
 
-### Many Thanks
+## Many Thanks
 
 Thank you for all your support so far, and in the future! And thank you in advance for your referrals, ideas, and suggestions. Your help accelerates our progress.
 

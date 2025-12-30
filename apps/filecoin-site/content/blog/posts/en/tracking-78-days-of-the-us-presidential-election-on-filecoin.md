@@ -26,7 +26,7 @@ _template: blog_detail
 
 Today, the Starling Framework for Data Integrity released _A Photographic Archive of Trust._ The archive is a collection of images captured by Reuters’ photojournalists during the 78 days between the November 2020 US Presidential election and the January 2021 inauguration. The images are uploaded and stored on the Filecoin network, including immutable metadata like location, time, and verification - ensuring a record always exists to protect against tampering and disinformation.
 
-<p style="text-align:center"><a href="https://www.starlinglab.org/78days/">Visit the Archive</a></p>
+[Visit the Archive](https://www.starlinglab.org/78days/)
 
 ![](/uploads/election-on-filecoin.webp)
 

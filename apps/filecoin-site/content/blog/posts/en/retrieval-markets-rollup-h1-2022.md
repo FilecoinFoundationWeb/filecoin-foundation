@@ -22,8 +22,6 @@ title: Retrieval Markets Rollup H1 2022
 _template: blog_detail
 ---
 
-##
-
 **TL;DR:** The Retrieval Markets Working Group (RMWG) has been hard at work in 2022! This report gives a summary of its progress in the first half of 2022, and some insights into what to expect in H2 2022.
 
 **Reading time:** Grab a cup of coffee and enjoy this rollup for 10 mins!
@@ -64,7 +62,7 @@ More on these networks below.
 
 The cryptoeconomics of retrieval is a huge topic and one in which we have made incremental progress in H1 2022. Essentially, this workstream aims to answer the following question:
 
-`What incentivises a Retrieval Provider to join the Filecoin Network?`
+What incentives are there for a Retrieval Provider to join the Filecoin Network?
 
 #### The client pays directly for retrievals
 
@@ -81,7 +79,7 @@ This approach makes sense in many cases, in particular, server-to-server retriev
 - An L1 cache paying an L2 cache,
 - Potentially web3 browser retrievals (but this will require a paradigm shift from our current browser usage).
 
-This pay-directly approach also has some advantages over retrievals subsidised by a third party. Firstly, each retrieval is a local exchange between two entities: an RC and an RP. This means, by the end of the exchange, both parties have received what they want and there is no need for further arbitration or bookkeeping. Secondly, the financial cost of the transaction to the RC prevents grieving, Sybil or DDOS attacks from the RC towards the RP.
+This pay-directly approach also has some advantages over retrievals subsidized by a third party. Firstly, each retrieval is a local exchange between two entities: an RC and an RP. This means, by the end of the exchange, both parties have received what they want and there is no need for further arbitration or bookkeeping. Secondly, the financial cost of the transaction to the RC prevents grieving, Sybil or DDOS attacks from the RC towards the RP.
 
 #### The client doesn’t pay directly for retrievals
 

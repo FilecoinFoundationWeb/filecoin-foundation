@@ -22,7 +22,7 @@ title: "Decentralized Storage: Estuary, Web3.storage, and NFT.storage"
 _template: blog_detail
 ---
 
-## **Filecoin and IPFS**
+## Filecoin and IPFS
 
 Filecoin is a decentralized storage backup, but where does the data stored on the Filecoin blockchain come from? Data is first added to an IPFS node, allowing for negotiation with storage providers to store the information on Filecoin.
 
@@ -36,13 +36,13 @@ One can think of Filecoin as a rental system where a developer or user rents lon
 
 Understanding how Filecoin and IPFS work together, we can begin to appreciate gateway systems like [**Estuary**](http://estuary.tech)**,** [**Web3.storage**](http://web3.storage)**,** and [**NFT.storage**](http://nft.storage)**.**
 
-## **Why Three Different Storage Systems?**
+## Why Three Different Storage Systems?
 
 Effectively, these three gateways do similar things. They act as intermediaries to accept data to store onto the IPFS system, allow for the collection of CIDs, and provide a way for users to create contracts to store their data on the Filecoin chain.
 
 If they perform the same functions, why do we need three versions of the same thing? Each solution is designed for a particular purpose and a particular audience. To truly get a feel for what each of them does, we need to look at them in detail.
 
-### **Estuary**
+### Estuary
 
 [Estuary](http://estuary.tech) is a way for developers to automate their storage onto the IPFS network and the Filecoin network. It's a simple IPFS node that integrates a Filecoin library inside it to allow for easier access to the functions necessary to interact with IPFS and the Filecoin blockchain. Estuary is focused on making large volumes of storage deals to the Filecoin network, while supporting a developer experience that IPFS developers know.
 
@@ -58,7 +58,7 @@ Estuary uses the IPFS pinning standard so it is easy to switch from other existi
 
 [Explore Estuary](https://estuary.tech/) or [read more](https://filecoin.io/blog/posts/taking-a-look-at-estuary/) about it.
 
-### **Web3.storage**
+### Web3.storage
 
 [Web3.storage](http://web3.storage) is another iteration of the gateways used to interact with the IPFS network and Filecoin blockchain. Similar to Estuary, this service offers a way to store data on the IPFS system. It provides users a chance to access the IPFS network, store data, and retrieve that data for free.
 
@@ -72,7 +72,7 @@ You can access files directly through their CID and start streamlining your Java
 
 [Use web3.storage](http://web3.storage) or [read more](https://filecoin.io/blog/posts/introducing-web3-storage/) about it.
 
-### **NFT.storage**
+### NFT.storage
 
 Though non-fungible tokens (NFTs) have become some of the hottest properties on the internet today, storing NFTs online still takes a bit of work for many users. [NFT.storage](http://nft.storage) is a specialized interface for storing NFTs on the IPFS network that automatically duplicates to the Filecoin blockchain.
 
@@ -84,7 +84,7 @@ Several prominent NFT marketplaces already power their networks with IPFS and Fi
 
 [Explore nft.storage](http://nft.storage) or [read more](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/) about it.
 
-## **What Should I Be Using?**
+## What Should I Be Using?
 
 ![Estuary vs. Web3.storage vs. NFT.storage](/uploads/nftstorage-web3storage-estuary-comparison.webp)
 

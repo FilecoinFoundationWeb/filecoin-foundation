@@ -28,9 +28,7 @@ HackFS是协议实验室和ETH Global共同主办的为期一个月的黑客松�
 
 ## [coeo](https://github.com/coeo)团队
 
-<div style="text-align:center">
-    <image src="/vintage/images/blog/hfs-coeo.png" alt="coeo">
-</div>
+![coeo](/vintage/images/blog/hfs-coeo.png)
 
 **团队成员:** Yalda Mousavinia、Ola Kohut和Peter Phillips
 
@@ -50,9 +48,7 @@ coeo背后的想法十分简单：没有合适的沟通就无法制定决策和�
 
 ## [IPFS.FPS](https://ipfs-fps.on.fleek.co/)团队
 
-<div style="text-align:center">
-    <image src="/vintage/images/blog/hfs-ipfsfps-1.png" alt="IPFS.FPS">
-</div>
+![IPFS.FPS](/vintage/images/blog/hfs-ipfsfps-1.png)
 
 **团队成员:** Leon Do和Randy Daniel
 
@@ -62,10 +58,9 @@ coeo背后的想法十分简单：没有合适的沟通就无法制定决策和�
 
 目前我们在网站上使用[Fleek](https://fleek.co/)。我们在Unity上创建游戏，将其导出并保存在GitHub上。我们在GitHub账户上进行了标记，因此每当GitHub更新时，我们都对游戏进行更新。这就是基于IPFS创建的Fleek的用处，其次就是[不可拦截的域名](https://unstoppabledomains.com/)了。
 
-<div style="text-align:center">
-    <image src="/vintage/images/blog/hfs-ipfsfps-2.png" alt="IPFS.FPS">
-    <image src="/vintage/images/blog/hfs-ipfsfps-3.png" alt="IPFS.FPS">
-</div>
+![IPFS.FPS](/vintage/images/blog/hfs-ipfsfps-2.png)
+
+![IPFS.FPS](/vintage/images/blog/hfs-ipfsfps-3.png)
 
 我们的域名PFS.FPS.zil是访问我们站点最简便的方法。然后使用[Pinata](https://pinata.cloud/) 进行元标记。这是我们使用的一个小技巧——当您共享链接时，图片或屏幕截图会带有源数据来自Pinata的标注。
 
@@ -81,9 +76,7 @@ coeo背后的想法十分简单：没有合适的沟通就无法制定决策和�
 
 ## [Sailplane](https://cypsela.github.io/sailplane-web/#/)团队
 
-<div style="text-align:center">
-    <image src="/vintage/images/blog/hfs-sailplane.png" alt="IPFS.FPS">
-</div>
+![Sailplane](/vintage/images/blog/hfs-sailplane.png)
 
 **团队成员:** Steve Dakh、Anders “Tabcat” Bjerg
 

@@ -29,7 +29,7 @@ As a part of the Space Race events program, on September 9th the Filecoin team h
 
 A summary of the answers from our Q&A is below. We look forward to hosting more sessions like this as mainnet launch approaches! In the meantime, stay tuned for updates on the [Filecoin Community Slack](https://filecoin.io/slack). You can also find us on Wechat (Filecoin-Official), and [Twitter](https://twitter.com/Filecoin).
 
-### Summarized Questions and Answers
+## Summarized Questions and Answers
 
 _Most questions and answers are quoted directly, some are edited for readability._
 

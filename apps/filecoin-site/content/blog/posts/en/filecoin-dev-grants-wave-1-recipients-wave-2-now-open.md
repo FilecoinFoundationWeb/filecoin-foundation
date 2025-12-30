@@ -9,7 +9,7 @@ date: "2019-12-03T05:00:00Z"
 dim_image: false
 double_column_inverted: false
 double_column_mode: false
-excerpt: ""
+excerpt: Announcing the Wave 1 recipients of Filecoin Dev Grants and opening Wave 2 with new RFPs for Expected Consensus Visualization and Wallet development.
 image:
   alt: Filecoin Dev Grants
   url: /uploads/devgrants-wave2-main-header.webp
@@ -27,7 +27,7 @@ _Updated December 18th, 2019_
 
 We are thrilled to have received many Dev Grant proposals from community members in Wave 1 reflecting a wide range of project ideas using Filecoin. We appreciate all proposals and hope to see more applications from enthusiastic developer teams in the future.
 
-### Wave 1: Community Projects
+## Wave 1: Community Projects
 
 For our first round of Dev Grants, we asked for proposals in the following categories: open-source community Block Explorers, Reputation Systems, Storage Helper Libraries, Community Meetups, and an RSA Vector Commitments library, as well as a general Open Dev Grant submission category.
 
@@ -47,7 +47,7 @@ Proposals were chosen based on factors including their near-term value to the Fi
 
 Thank you to all the grant applicants who participated in Wave 1!
 
-### Wave 2: New RFPs
+## Wave 2: New RFPs
 
 Wave 2 is open!. Two new RFPs have been posted to the [Dev Grants GitHub repo](https://github.com/filecoin-project/devgrants/tree/master?tab=readme-ov-file#requests-for-proposals-rfps). This includes requests for an [Expected Consensus Visualization Tool](https://github.com/filecoin-project/devgrants/tree/master?tab=readme-ov-file#requests-for-proposals-rfps) as well as a broader [Wallet RFP](https://github.com/filecoin-project/devgrants/tree/master?tab=readme-ov-file#requests-for-proposals-rfps) with 2 tracks for 1) a Self-hosted Wallet and 2) Wallet Tools & Integrations.
 

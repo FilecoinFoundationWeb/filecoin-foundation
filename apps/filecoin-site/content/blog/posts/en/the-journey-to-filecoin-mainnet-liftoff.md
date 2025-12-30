@@ -21,13 +21,13 @@ title: The Journey to Filecoin Mainnet Liftoff
 _template: blog_detail
 ---
 
-After years of work, the Filecoin mainnet is officially live!🚀 As we shared last week - this Mainnet Liftoff transition is an awesome milestone for the whole community. There are now >100 useful applications and tools building on Filecoin, 600 TiB of storage deals putting Filecoin’s capacity to use, and nearly 7️⃣0️⃣0️⃣ PiB of storage capacity growing at over 500 TiB an hour!
+After years of work, the Filecoin mainnet is officially live! As we shared last week - this Mainnet Liftoff transition is an awesome milestone for the whole community. There are now >100 useful applications and tools building on Filecoin, 600 TiB of storage deals putting Filecoin’s capacity to use, and nearly 7️⃣0️⃣0️⃣ PiB of storage capacity growing at over 500 TiB an hour!
 
 In addition to Filecoin’s thoughtful incentive structure that rewards quality, long-term data storage - what sets Filecoin apart is the **amazing ecosystem** of projects integrating this decentralized storage layer. From the [ConsenSys suite of tools for the Filecoin Network](https://filecoin.io/blog/filecoin-ethereum-community/), to the [Filecoin Archives](https://twitter.com/juanbenet/status/1319375340196646913) curated with the Internet Archive, to the builders throughout the [IPFS community helping make Filecoin great](https://www.youtube.com/embed/FHqtIX4FPP4) - there’s an impressive community of heavy-hitters investing in Filecoin’s success. Thank you!
 
 The Filecoin Mainnet Liftoff was a highly anticipated launch - and a giant leap forward for the web3 ecosystem. Filecoin brings a verifiable storage layer to the decentralized web, adding an important storage incentive structure to the InterPlanetary stack used by many web3 projects (including IPFS, libp2p, IPLD, and Multiformats). As with any launch moment, it’s easy to forget where things began - and the immense progress and innovation required to go from “that’s impossible” to “it’s live!” Let’s take a brief trip back to \~7 years ago, when the ideas for Filecoin first formed…
 
-### In the Beginning
+## In the Beginning
 
 Back in 2014 when Filecoin was first envisioned - “web3” was still in its infancy. Vitalik Buterin had just put out the [Ethereum whitepaper](https://ethereum.org/en/whitepaper/) and “blockchain” was just starting to gather a significant following. When Gavin Wood published “[Dapps: What Web 3.0 Looks Like](https://gavwood.com/dappsweb3.html)”, he proposed 4 components of this next-generation web: “static content publication, dynamic messages, trustless transactions and an integrated user-interface.” This set the stage for new projects to come meet these needs.
 
@@ -37,7 +37,7 @@ It all began with a dream: what if we could use the tools from the p2p revolutio
 
 In many ways, this vision goes back to the very founding of the internet - the idea of a decentralized but interconnected network of sites and routers without single points of failure. In the early 2010’s, that original vision for the web had taken a back seat to the centralizing forces around dynamic, personalized content that harvested user data to serve targeted advertising. Instead of many small interconnected websites, there were behemoths like Google, Facebook, Twitter, and Amazon. At the [2016 Decentralized Web Summit](https://2016.decentralizedweb.net/), Vint Cerf (one of the inventors of the TCP/IP protocol), Tim Berners-Lee (creator of the World Wide Web), Juan Benet (creator of IPFS & Filecoin), and others, joined forces to “radically reinvent core technologies that underpin the web” ([Klint Finley, WIRED](https://www.wired.com/2016/06/inventors-internet-trying-build-truly-permanent-web/)). Filecoin, IPFS, libp2p, and similar protocols emerged as the new generation of tools to take back the internet and make it faster, safer, and more open.
 
-### Achieving Liftoff: All Systems Go
+## Achieving Liftoff: All Systems Go
 
 Filecoin’s audacious mission is to _create a decentralized, efficient, and robust foundation for humanity’s information_. Reaching liftoff, though but a step along that path, is a massive accomplishment that took years of hard work from a huge community.
 
@@ -49,7 +49,7 @@ Since then, we’ve learned a valuable lesson: crypto, p2p, and economic systems
 
 Over the past 3 years, we’ve formed a not-so-secret superpower – the amazing and thriving community working towards Filecoin’s success. The core 3 pillars of Filecoin’s strength are the **miners**, **builders**, and **storage clients** who power this marketplace.
 
-### Mine
+## Mine
 
 In addition to being the core operators of the Filecoin network, the mining community has been deeply engaged in the refinement and improvement of Filecoin implementations like [Lotus](https://github.com/filecoin-project/lotus) and [go-filecoin](https://github.com/filecoin-project/go-filecoin) since 2019. Miners have been core participants in the journey from the first Filecoin devnet launched in February 2019, to the fully-fledged lotus testnet in December 2019, to Calibration net and Space Race in August where we thoroughly stress-tested the network at scale. During this time, miners have submitted thousands of detailed issue reports, spent hours in slack and zoom chats debugging hard-to-reproduce issues, and submitted critical patches, features, and optimizations up-stream to benefit the entire mining community and ecosystem.
 
@@ -57,7 +57,7 @@ Miners have also become huge champions for each other and the network. Throughou
 
 Filecoin is a whole new type of blockchain mining. Beyond maintaining the consensus and state updates of a public blockchain, Filecoin miners are also network storage service providers who will be rewarded for their long-term quality of service to network clients. The cryptoeconomics of Filecoin rewards reliable and useful storage - creating the incentives for a strong and collaborative mining community to keep improving Filecoin and onboarding more storage applications and use cases for many years to come.
 
-### Build
+## Build
 
 The network of developers, entrepreneurs and builders are the heartbeat of the [Filecoin Ecosystem](https://www.youtube.com/watch?v=FHqtIX4FPP4&t=5s "An Overview of the Filecoin Ecosystem with Colin Evran"). The Filecoin ecosystem has over 90 meaningful collaborations across various applications, clients, developer tooling providers, infrastructure services and much much more. Over 250 new teams are entering the ecosystem through Filecoin Ignite to learn, build and launch applications on the network. The future of Filecoin and web3 are in the hands of these builders, and we’re very optimistic that the next wave of incredible applications and use cases will emerge from their creativity and hard work.
 
@@ -86,7 +86,7 @@ Finally, there are hundreds of new teams entering the ecosystem from hackathons 
 
 We truly believe the future of Web3 lies in the hands of these talented developers, entrepreneurs and builders, and we’re excited for the Filecoin community to support their efforts in transitioning Web3 towards mainstream adoption.
 
-### Store
+## Store
 
 Last, but not least, is the diverse community of Filecoin storage clients utilizing this decentralized storage network. Filecoin clients are storing some of humanity’s most important datasets on Filecoin, preserving this data – much of which would otherwise have been lost or too costly to keep – across a resilient and global storage network. Across several initiatives, programs, and partnerships, hundreds of individuals and organizations are now working to preserve important datasets on this new decentralized storage layer for the web.
 
@@ -104,14 +104,14 @@ Filecoin storage clients and developers have also built several tools to make da
 
 Ever since the beginning of this journey, we have been dreaming about solving important problems to ultimately create the foundation for humanity’s information going forward. The truly dedicated, resourceful, and inspired community of storage clients is helping us see this vision come to life. We are excited to continue working with you to build a new web together.
 
-### The Future of Filecoin
+## The Future of Filecoin
 
-Mainnet Liftoff is a huge milestone for the Filecoin project - but it’s just the beginning. We stand in the doorway of a new era for the dweb - one where any application, smart contract, or NFT can store and access it’s own data in a decentralized storage layer without any middleman. Filecoin unlocks never-before-possible applications – like a decentralized machine learning database that can fund its storage costs by charging pay-per-use model training fees, or a decentralized social media platform where upvoted videos increase their replication and therefore playback speed. The next innovative applications in web3 will take advantage of the new foundations laid by Filecoin, IPFS, and libp2p to build applications and networks we can’t even imagine yet. ✨
+Mainnet Liftoff is a huge milestone for the Filecoin project - but it’s just the beginning. We stand in the doorway of a new era for the dweb - one where any application, smart contract, or NFT can store and access it’s own data in a decentralized storage layer without any middleman. Filecoin unlocks never-before-possible applications – like a decentralized machine learning database that can fund its storage costs by charging pay-per-use model training fees, or a decentralized social media platform where upvoted videos increase their replication and therefore playback speed. The next innovative applications in web3 will take advantage of the new foundations laid by Filecoin, IPFS, and libp2p to build applications and networks we can’t even imagine yet.
 
 We’re still in the early days, but the Filecoin ecosystem already has huge momentum - and we will see the payoffs compound as the projects building on Filecoin grow and the network gains new capabilities. Already, the flywheel of innovation is turning to improve the Filecoin protocol - with 5 FIPs (Filecoin Improvement Proposals) landing since network launch to upgrade the network. For example, the Filecoin Plus program ([FIP-0003](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0003.md)) is designed to create a strong incentive for all miners to search out the world’s most important datasets and onboard them onto the network - ensuring Filecoin is a valuable, high-growth network for useful storage.
 
 These improvements are just the start to the growth and innovation backing the Filecoin network - with much more to come. The entire Filecoin community are now shared owners of the network and the value Filecoin creates for the world - so all miners, clients, developers, ecosystem partners, and token holders have a voice and responsibility to participate in the conversation. The future of Filecoin is really up to you.
 
-When we started, our aim was to build a Library of Alexandria for humanity’s most precious knowledge that could never be burned. Thanks to the global community of storage miners, accessible network tooling, and passionate storage clients - we’re so much closer to achieving that vision, and bringing into existence myriad new use cases as well. If you want to be part of that journey, please contribute your ideas to the [Filecoin Archives](https://twitter.com/juanbenet/status/1319375340196646913), a new project in collaboration with the Internet Archive to curate, preserve, and disseminate humanity’s most precious data on Filecoin. Together, we can ensure humanity’s most precious resource - our hard-won knowledge in every field from Science to History - is protected against disaster or attack, and able to benefit humanity for generations to come. 💪
+When we started, our aim was to build a Library of Alexandria for humanity’s most precious knowledge that could never be burned. Thanks to the global community of storage miners, accessible network tooling, and passionate storage clients - we’re so much closer to achieving that vision, and bringing into existence myriad new use cases as well. If you want to be part of that journey, please contribute your ideas to the [Filecoin Archives](https://twitter.com/juanbenet/status/1319375340196646913), a new project in collaboration with the Internet Archive to curate, preserve, and disseminate humanity’s most precious data on Filecoin. Together, we can ensure humanity’s most precious resource - our hard-won knowledge in every field from Science to History - is protected against disaster or attack, and able to benefit humanity for generations to come.
 
 Thank you to everyone - past, present, and future - who has contributed their talents, insights, hard work, and resources to making Filecoin’s mission _to create a decentralized, efficient, and robust foundation for humanity’s information_ a reality. We’re grateful to continue building this network, ecosystem, and community alongside you.🛠

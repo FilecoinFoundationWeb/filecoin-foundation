@@ -24,7 +24,7 @@ _template: blog_detail_ch
 
 今天，Starling数据完整性框架发布了 _可信图像档案_。 该档案是由路透社摄影记者拍摄的图片集，记录了美国总统大选从2020年11月到2021年1月之间的78天。这些照片将上传并保持在 Filecoin 网络，包括不可更改的元数据，如位置、时间、和验证信息，以确保真是记录长期存在，并无法被篡改来散布假消息。
 
-<p style="text-align:center"><a href="https://www.starlinglab.org/78days/">访问该档案</a></p>
+[访问该档案](https://www.starlinglab.org/78days/)
 
 ![](/uploads/election-on-filecoin.webp)
 

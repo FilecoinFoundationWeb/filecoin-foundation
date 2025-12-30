@@ -17,7 +17,7 @@ dim_image: true
 
 We are thrilled to announce the launch of [Curio Storage](https://curiostorage.org/), a new venture born from the combined expertise of the Lotus-Miner and Boost teams! Curio is designed to be a superior replacement for the Lotus-Miner, offering significant improvements in system redundancy, simplicity, scalability, and overall performance. It's never been easier for a data center to be a Filecoin Storage Provider (SP) than with Curio, which takes care of the responsibilities of reliable SP storage proving & sealing with minimal operations time.
 
-### Why choose Curio?
+## Why choose Curio
 
 1. Redundant Everything: Curio offers robust redundancy with multiple daemons, worker types, and database nodes, all coordinating seamlessly to eliminate single points of failure. This design ensures maximum uptime and reliability for your storage operations.
 2. Simplicity: Curio simplifies your workflow by consolidating all functions into a single binary, removing the need for separate -miner and -worker binaries. The system leverages Yugabyte for database management, but after installation and scaling, no further operational work is needed.
@@ -30,7 +30,7 @@ We are thrilled to announce the launch of [Curio Storage](https://curiostorage.o
 9. Task Recovery: In case of any issues, Curio retries tasks a sensible number of times and even shifts them to other available hardware if necessary, preventing losses from hardware failures.
 10. GUI: Starting the 'gui' layer launches a comprehensive web-based dashboard, providing real-time monitoring, detailed statuses, and tools to optimize your operations— this works out of the box without signing-in to any service.
 
-### Try Curio for yourself
+## Try Curio for yourself
 
 Curio’s “Lotus Miner V2” architecture brings substantial quality-of-life improvements for SPs, try Curio today!
 
@@ -48,7 +48,7 @@ Step 2: On your Lotus-Miner machine (regardless of network: dev, calibration, ma
 curio guided-setup
 ```
 
-### How does Curio work?
+## How Curio works
 
 At the core of Curio is the Yugabyte database cluster housing the harmony_task table. Every piece of processing work starts as a “discovery” that a task is needed. Attempts to add will have some task-specific unique index to invalidate secondary additions. Then greedy nodes race to claim the task. Nodes incapable of the work are disqualified while those with undesirable characteristics get delayed. Ultimately, the winner of that bidding round tries the work. 
 
@@ -60,6 +60,6 @@ Built upon the tasks framework is the familiar Lotus software managing PoSTs and
 
 ![](</uploads/how-it-works-(1).svg>)
 
-### Learn More
+## Learn More
 
 Follow along on Filecoin Slack’s  #fil-curio-dev  or ask questions at  [#fil-curio-announcements](https://filecoinproject.slack.com/archives/C06V5B3B7CJ).

@@ -31,24 +31,11 @@ title: >-
 _template: blog_detail
 ---
 
-Table of Contents
-
-1. [Opening up development and research repos](https://filecoin.io/blog/update-2018-q3-q4/#1-opening-up-development-and-research-repos)
-2. [Project Roadmap Update](https://filecoin.io/blog/update-2018-q3-q4/#2-filecoin-project-roadmap-update)
-3. [Development Update](https://filecoin.io/blog/update-2018-q3-q4/#3-filecoin-development-update)
-4. [Research Update](https://filecoin.io/blog/update-2018-q3-q4/#4-filecoin-research-update)
-5. [Community Update](https://filecoin.io/blog/update-2018-q3-q4/#5-filecoin-community-update)
-6. [Legal Update](https://filecoin.io/blog/update-2018-q3-q4/#6-filecoin-legal-update)
-7. [Filecoin Public Talks & Media](https://filecoin.io/blog/update-2018-q3-q4/#7-filecoin-public-talks-media)
-8. [libp2p update for Filecoin](https://filecoin.io/blog/update-2018-q3-q4/#8-libp2p-update-for-filecoin)
-9. [IPFS update for Filecoin](https://filecoin.io/blog/update-2018-q3-q4/#9-ipfs-update-for-filecoin)
-10. [Cautionary Notes](https://filecoin.io/blog/update-2018-q3-q4/#10-cautionary-notes)
-
-### 1. Opening up development and research repos
+## 1. Opening up development and research repos
 
 Good news! After many months building things privately, we are ready to open up a number of codebases and community forums. This is right on schedule as predicted in our [Project Roadmap](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn) and [last update](https://filecoin.io/blog/update-2018-q1-q2/). Read our [announcement blog post](https://filecoin.io/blog/opening-filecoin-project-repos/) for more.
 
-### 2. Filecoin Project Roadmap Update
+## 2. Filecoin Project Roadmap Update
 
 In our [last big update](https://filecoin.io/blog/update-2018-q1-q2/), we published a high-level [roadmap](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn), with upcoming optimistic milestones.
 
@@ -76,9 +63,9 @@ As we make progress, our visibility and estimates grow clearer. To that end, we 
 | Security Review & Audit:                     | Q1/Q2   | Q2/Q3   |
 | Launching the Filecoin mainnet:              | Q2/Q3   | Q3/Q4   |
 
-We have updated [the Roadmap document](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn) accordingly. Please recall that all our estimates and timelines are **optimistic** and subject to change. We want to keep the community updated, and give a rough indication of where we are, what’s next, and when we currently (if optimistically) expect to achieve our next milestones.
+We have updated [the Roadmap document](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn) accordingly. Please recall that all our estimates and timelines are **optimistic** and subject to change. We want to keep the community updated, and give a rough indication of where we are, what's next, and when we currently (if optimistically) expect to achieve our next milestones.
 
-### 3. Filecoin Development Update
+## 3. Filecoin Development Update
 
 This update, we are splitting the news into:
 
@@ -86,7 +73,7 @@ This update, we are splitting the news into:
 - **go-filecoin** - the first implementation of the Filecoin protocol
 - **rust-fil-proofs** - a portable implementation of Filecoin proof systems and other cryptographic components.
 
-#### 3.1. Dev Update / demos
+### 3.1. Dev Update / demos
 
 We are publishing 2 demos along with this update. The demos show a few of the ways you can get started with testing Filecoin proofs-of-replication (PoReps). PoReps make it possible to ensure that a Filecoin storage miner is storing their clients’ data correctly. They are crucial to the successful operation of the protocol. In the future, we will release more demos of features, go-filecoin installation, and how to use the newly opened devnets and related development tools, such as the network statistics dashboard.
 
@@ -107,26 +94,26 @@ In this demo, we describe the Replication Game and how to compete. We show how y
 - check the Replication Game leaderboard
 - filter Replication Game leaderboard using the same parameters used to generate your submission
 
-#### 3.2. Dev Update / [go-filecoin](https://github.com/filecoin-project/go-filecoin)
+### 3.2. Dev Update / [go-filecoin](https://github.com/filecoin-project/go-filecoin)
 
-- **✅Completion overview updated.** The [roadmap document](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit) has a section tracking [go-filecoin’s completion](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.j4zh21nd9r1o). We have updated this section with the latest state. Many components advanced from “still todo”, to “work in progress”, and to “mostly done”. We have also added and removed some components.
-- **⛽️Implemented gas for VM execution.** Filecoin actors (the “VM” programs on Filecoin) require a concept of gas to run, similar to Ethereum’s. This key functionality landed in go-filecoin in the last few months.
-- **💎Miner Payments and Payment Channels.** Miner payments are now implemented, with the use of payment channels. The latter ones are a key feature in making the Filecoin network operate faster (off chain protocols), and to scale to an acceptable performance (amount of chain storage per op). The mining cycle is close to complete.
-- **🕸Developer networks.** We have reached the point where persistent networks are useful for development, debugging, and testing. We are not close to the proper **“testnet”** stage, but we already have the need for several small networks our developers, early contributors, and prospective users can work with. Today, we are introducing **“devnets”**, smaller development networks for experimental usage. [Read more here](https://github.com/filecoin-project/go-filecoin/wiki/Devnets).
-- **🗃End-to-end Data Storage.** Storing data in **go-filecoin** is now working end-to-end. Miners (a) pledge storage with collateral, (b) make deals with clients, (c) receive clients’ data, (d) assemble the data into sectors, (e) seal the sectors with _Proof-of-Replication_, (f) gain storage power through sealed sectors, (g) mine on top of sealed sectors, (h) receive clients’ retrieval requests for data, (i) unseal sectors to retrieve clients’ data, (j) serve the data to clients, and (k) and get paid for doing so. From here, we will continue to improve storage performance and usability.
-- **🛠Turning prototype code into production code.** Early on, in building systems like go-filecoin, we need to move fast and prototype. We have now moved on to maturing the codebase with principled software engineering practices, clean and clear interfaces, separation of concerns into components, layered APIs, and more. This has been a significant endeavor, key for long-term maintainability, new contributor onboarding, building on go-filecoin, security, and a smoother developer experience.
-- **📄Documentation and Guides.** We created detailed documentation for [getting started with go-filecoin](https://github.com/filecoin-project/go-filecoin/wiki/Getting-Started), for [building the projects from source](https://github.com/filecoin-project/go-filecoin/#install-from-source), for [connecting to devnets](https://github.com/filecoin-project/go-filecoin/wiki/Devnets), for [storage mining](https://github.com/filecoin-project/go-filecoin/wiki/Mining-Filecoin), for [storing and retrieving data](https://github.com/filecoin-project/go-filecoin/wiki/Storing-on-Filecoin), for [the network dashboards](https://github.com/filecoin-project/go-filecoin/wiki/Dashboards), for [the block explorer](https://github.com/filecoin-project/go-filecoin/wiki/Block-Explorer), and for [troubleshooting issues](https://github.com/filecoin-project/go-filecoin/wiki/Troubleshooting-&-FAQ). We also wrote up [an overview of go-filecoin’s code](https://github.com/filecoin-project/go-filecoin/blob/master/CODEWALK.md).
-- **🎉Got ready for new contributors!** We structured our [contributing guidelines](https://github.com/filecoin-project/go-filecoin/blob/master/CONTRIBUTING.md), and documented our development processes. We made our [issue tracker](https://github.com/filecoin-project/go-filecoin/issues) approachable to newcomers, with lots of issues with [**help-wanted**](https://github.com/filecoin-project/go-filecoin/issues?q=is%3Aopen+is%3Aissue+label%3AE-help-wanted) or [**good-first-issue**](https://github.com/filecoin-project/go-filecoin/issues?q=is%3Aopen+is%3Aissue+label%3AE-good-first-issue) labels. We refactored and cleaned up APIs. We created **#fil-dev** and other developer [chat channels (on Slack/Riot/Matrix)](https://github.com/filecoin-project/go-filecoin#community). And we got our first pull-requests from outside the Filecoin team! 🎁
+- **✅ Completion overview updated.** The [roadmap document](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit) has a section tracking [go-filecoin’s completion](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.j4zh21nd9r1o). We have updated this section with the latest state. Many components advanced from “still todo”, to “work in progress”, and to “mostly done”. We have also added and removed some components.
+- **⛽️ Implemented gas for VM execution.** Filecoin actors (the “VM” programs on Filecoin) require a concept of gas to run, similar to Ethereum’s. This key functionality landed in go-filecoin in the last few months.
+- **💎 Miner Payments and Payment Channels.** Miner payments are now implemented, with the use of payment channels. The latter ones are a key feature in making the Filecoin network operate faster (off chain protocols), and to scale to an acceptable performance (amount of chain storage per op). The mining cycle is close to complete.
+- **🕸 Developer networks.** We have reached the point where persistent networks are useful for development, debugging, and testing. We are not close to the proper **“testnet”** stage, but we already have the need for several small networks our developers, early contributors, and prospective users can work with. Today, we are introducing **“devnets”**, smaller development networks for experimental usage. [Read more here](https://github.com/filecoin-project/go-filecoin/wiki/Devnets).
+- **🗃 End-to-end Data Storage.** Storing data in **go-filecoin** is now working end-to-end. Miners (a) pledge storage with collateral, (b) make deals with clients, (c) receive clients’ data, (d) assemble the data into sectors, (e) seal the sectors with _Proof-of-Replication_, (f) gain storage power through sealed sectors, (g) mine on top of sealed sectors, (h) receive clients’ retrieval requests for data, (i) unseal sectors to retrieve clients’ data, (j) serve the data to clients, and (k) and get paid for doing so. From here, we will continue to improve storage performance and usability.
+- **🛠 Turning prototype code into production code.** Early on, in building systems like go-filecoin, we need to move fast and prototype. We have now moved on to maturing the codebase with principled software engineering practices, clean and clear interfaces, separation of concerns into components, layered APIs, and more. This has been a significant endeavor, key for long-term maintainability, new contributor onboarding, building on go-filecoin, security, and a smoother developer experience.
+- **📄 Documentation and Guides.** We created detailed documentation for [getting started with go-filecoin](https://github.com/filecoin-project/go-filecoin/wiki/Getting-Started), for [building the projects from source](https://github.com/filecoin-project/go-filecoin/#install-from-source), for [connecting to devnets](https://github.com/filecoin-project/go-filecoin/wiki/Devnets), for [storage mining](https://github.com/filecoin-project/go-filecoin/wiki/Mining-Filecoin), for [storing and retrieving data](https://github.com/filecoin-project/go-filecoin/wiki/Storing-on-Filecoin), for [the network dashboards](https://github.com/filecoin-project/go-filecoin/wiki/Dashboards), for [the block explorer](https://github.com/filecoin-project/go-filecoin/wiki/Block-Explorer), and for [troubleshooting issues](https://github.com/filecoin-project/go-filecoin/wiki/Troubleshooting-&-FAQ). We also wrote up [an overview of go-filecoin’s code](https://github.com/filecoin-project/go-filecoin/blob/master/CODEWALK.md).
+- **🎉 Got ready for new contributors!** We structured our [contributing guidelines](https://github.com/filecoin-project/go-filecoin/blob/master/CONTRIBUTING.md), and documented our development processes. We made our [issue tracker](https://github.com/filecoin-project/go-filecoin/issues) approachable to newcomers, with lots of issues with [**help-wanted**](https://github.com/filecoin-project/go-filecoin/issues?q=is%3Aopen+is%3Aissue+label%3AE-help-wanted) or [**good-first-issue**](https://github.com/filecoin-project/go-filecoin/issues?q=is%3Aopen+is%3Aissue+label%3AE-good-first-issue) labels. We refactored and cleaned up APIs. We created **#fil-dev** and other developer [chat channels (on Slack/Riot/Matrix)](https://github.com/filecoin-project/go-filecoin#community). And we got our first pull-requests from outside the Filecoin team! 🎁
 
-#### 3.3 Dev Update / [rust-fil-proofs](https://github.com/filecoin-project/rust-fil-proofs)
+### 3.3 Dev Update / [rust-fil-proofs](https://github.com/filecoin-project/rust-fil-proofs)
 
-- **⚙️Portable fil-proofs effort.** Implementing [**_Proofs-of-Replication_**](https://github.com/filecoin-project/rust-fil-proofs/tree/master/storage-proofs-porep/src) (**PoReps**), [**_Proofs-of-Spacetime_**](https://github.com/filecoin-project/rust-fil-proofs/tree/master/storage-proofs-porep/src) (**PoSTs**), and other cryptographic constructions is a significant feat of engineering. In Q3, we decided to split this into a separate endeavor from **go-filecoin**, in order to (a) increase focus for each effort, (b) work closely with our cryptography researchers in “research-development” mode, and (c) produce an implementation-agnostic library. We decided to write it in Rust, which is a good fit to couple closely with other existing crypto libraries we need (eg Bellman), and to produce code and tooling that is usable to all implementations of the Filecoin Protocol and across a wide variety of systems and devices.
-- **🏃‍♀️DRGs, ZigZag-PoRep, and optimizing implementations.** The main task of the **rust-fil-proofs** effort is to implement practical and usable **PoReps** and **PoSTs**. To achieve this, we needed to implement brand new cryptographic constructions (fresh from [the research press](https://eprint.iacr.org/2018/702)), study and optimize the performance of each proof system, and produce tooling that **go-filecoin** now imports. We discuss the effort in more detail in [these research interviews](https://www.youtube.com/watch?v=Z5cHYItRIoY).
-- **⏱Reaching practical runtimes.** **PoRep** algorithms are meant to be arbitrarily tunable in speed. However, to greatly reduce the size of proofs on chain, we needed to employ constructions that enabled non-interactive and aggregated proofs – namely, verifiable computation systems. In our case, the latest **PoRep** algorithms use zkSNARKs, and are quite slow. In Q3, we implemented algorithms and got the [**Filecoin Proving Subsystem**](https://github.com/filecoin-project/rust-fil-proofs) working end-to-end. During Q4, we managed to speed up the runtime of **PoRep** replication by orders of magnitude! Sealing a 1GB sector took \~150hrs in Oct, and we optimized it to 50hrs in Nov, then 16hrs, then just under 1hr in Dec. 🎉 This is right in our acceptable zone, which is great.
-- **🔬Benchmark Tools.** We developed [benchmarking tools](https://github.com/filecoin-project/rust-fil-proofs#examples) for a number of proof algorithms and cryptographic components. These can be used to measure the real, practical performance of algorithms with some given operations. These tools are great to have, and can be seen in action in [this demo](https://youtu.be/-0GmwhWw05E).
-- 👾**The Replication Game.** Last but not least: we made improving replication algorithms into a game! Players in [the Replication Game](https://github.com/filecoin-project/replication-game) can compete to outperform the default implementation of _Proof-of-Replication_, by optimizing algorithms, running on better hardware, and so on. Think you can optimize better than the rest? Prove it by beating others in the leaderboard. This is a fun & rewarding way to participate in building Filecoin. Some results may even beat those generated by our current PoRep implementation. We can’t wait to see what you come up with! See how to make a submission to the Replication Game in [this demo](https://youtu.be/7r2pL53abSA).
+- **⚙️ Portable fil-proofs effort.** Implementing [**_Proofs-of-Replication_**](https://github.com/filecoin-project/rust-fil-proofs/tree/master/storage-proofs-porep/src) (**PoReps**), [**_Proofs-of-Spacetime_**](https://github.com/filecoin-project/rust-fil-proofs/tree/master/storage-proofs-porep/src) (**PoSTs**), and other cryptographic constructions is a significant feat of engineering. In Q3, we decided to split this into a separate endeavor from **go-filecoin**, in order to (a) increase focus for each effort, (b) work closely with our cryptography researchers in “research-development” mode, and (c) produce an implementation-agnostic library. We decided to write it in Rust, which is a good fit to couple closely with other existing crypto libraries we need (eg Bellman), and to produce code and tooling that is usable to all implementations of the Filecoin Protocol and across a wide variety of systems and devices.
+- **🏃‍♀️ DRGs, ZigZag-PoRep, and optimizing implementations.** The main task of the **rust-fil-proofs** effort is to implement practical and usable **PoReps** and **PoSTs**. To achieve this, we needed to implement brand new cryptographic constructions (fresh from [the research press](https://eprint.iacr.org/2018/702)), study and optimize the performance of each proof system, and produce tooling that **go-filecoin** now imports. We discuss the effort in more detail in [these research interviews](https://www.youtube.com/watch?v=Z5cHYItRIoY).
+- **⏱ Reaching practical runtimes.** **PoRep** algorithms are meant to be arbitrarily tunable in speed. However, to greatly reduce the size of proofs on chain, we needed to employ constructions that enabled non-interactive and aggregated proofs – namely, verifiable computation systems. In our case, the latest **PoRep** algorithms use zkSNARKs, and are quite slow. In Q3, we implemented algorithms and got the [**Filecoin Proving Subsystem**](https://github.com/filecoin-project/rust-fil-proofs) working end-to-end. During Q4, we managed to speed up the runtime of **PoRep** replication by orders of magnitude! Sealing a 1GB sector took \~150hrs in Oct, and we optimized it to 50hrs in Nov, then 16hrs, then just under 1hr in Dec. 🎉 This is right in our acceptable zone, which is great.
+- **🔬 Benchmark Tools.** We developed [benchmarking tools](https://github.com/filecoin-project/rust-fil-proofs#examples) for a number of proof algorithms and cryptographic components. These can be used to measure the real, practical performance of algorithms with some given operations. These tools are great to have, and can be seen in action in [this demo](https://youtu.be/-0GmwhWw05E).
+- **👾 The Replication Game.** Last but not least: we made improving replication algorithms into a game! Players in [the Replication Game](https://github.com/filecoin-project/replication-game) can compete to outperform the default implementation of _Proof-of-Replication_, by optimizing algorithms, running on better hardware, and so on. Think you can optimize better than the rest? Prove it by beating others in the leaderboard. This is a fun & rewarding way to participate in building Filecoin. Some results may even beat those generated by our current PoRep implementation. We can’t wait to see what you come up with! See how to make a submission to the Replication Game in [this demo](https://youtu.be/7r2pL53abSA).
 
-### 4. Filecoin Research Update
+## 4. Filecoin Research Update
 
 A lot of important improvements have happened in our research team.
 
@@ -145,7 +132,7 @@ A lot of important improvements have happened in our research team.
 
 **RFP: Single Secret Leader Election.** Over the last couple of years, an important problem has surfaced through our exploration of consensus protocols for Filecoin.. Its solution stands to improve random leader election based protocols, such as Filecoin and many other blockchains, particularly Proof-of-Stake systems. We have called this problem **Single Secret Leader Election (SSLE)**, and it involves electing at most one leader, in a fair, unpredictable, and secret way, from a weighted set of participants. We have posted a new Request For Proposals (**RFP**) to solve this problem: [**RFP-6 Single Secret Leader Election**](https://github.com/protocol/research-grants/blob/master/RFPs/rfp-006-SSLE.md). A solution to this problem would constitute a major breakthrough in cryptographic sortition schemes and greatly improve the security, performance, and simplicity of dozens of blockchain protocols, including Filecoin.
 
-### 5. Filecoin Community Update
+## 5. Filecoin Community Update
 
 We have been preparing to meet the needs of a broad and vibrant Filecoin community. Three examples of this include launching the Filecoin Private Preview, supporting Global Filecoin Meetups and collaborating with leading research, engineering, and blockchain organizations.
 
@@ -167,7 +154,7 @@ We have been preparing to meet the needs of a broad and vibrant Filecoin communi
   - **CarbonFive**. Carbon Five is one of Protocol Labs’ development partners. Carbon Five developers are working on Filecoin and participating directly in key working groups.
   - And many others
 
-### 6. Filecoin Legal Update
+## 6. Filecoin Legal Update
 
 **The Permissive License Stack**. Protocol Labs has developed and adopted a set of open source intellectual property commitments we call [the Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/). These commitments guarantee that the technology PL is building for Filecoin will be usable by the largest possible number of people and projects.
 
@@ -179,7 +166,7 @@ We also support [Coin Center](https://coincenter.org/), a nonprofit think tank i
 
 In September, the General Counsel of Protocol Labs testified alongside 100 other industry experts to [at a briefing](https://coincenter.org/entry/rep-davidson-hosts-a-roundtable-on-cryptocurrencies) hosted by two Congressmen who later introduced a strongly [pro-cryptocurrency bill](https://www.cnbc.com/2018/12/20/lawmakers-look-to-change-secs-72-year-old-securities-definition-to-exclude-cryptocurrencies.html).
 
-### 7. Filecoin Public Talks & Media
+## 7. Filecoin Public Talks & Media
 
 We elected to continue staying out of the public sphere in 2018 and focus on building. That said, our team and our broader Filecoin community gave a few public talks, published a few blog posts and visited a few research groups. Our activity will remain similarly constrained until the lead-up to the launch of the network.
 
@@ -202,7 +189,7 @@ We elected to continue staying out of the public sphere in 2018 and focus on bui
 
 Additionally, we ran a small conference on consensus protocols called [**ConsensusDay**](https://www.youtube.com/playlist?list=PLhuBigpl7lqtG6LgQ0FiiR4Pbrph9nocn). This is the first installment of what we expect to become a regular event. Consensus throughput is one of the major hurdles in blockchain scalability, and we will only realize the full potential of crypto networks if we can scale operations to match the needs of typical consumer-oriented applications. We need to move orders of magnitude beyond the 7-25 tx/s (that’s Bitcoin and Ethereum) to billions of transactions per second. We believe this improvement will come from a combination of off-chain scalability protocols, sharding, hierarchy, and new directions in consensus protocols. We hope that ConsensusDay can stimulate the field, and draw attention to important problems. All the talks from the first ConsensusDay can be [found here](https://www.youtube.com/playlist?list=PLhuBigpl7lqtG6LgQ0FiiR4Pbrph9nocn).
 
-### 8. libp2p update for Filecoin
+## 8. libp2p update for Filecoin
 
 Filecoin is built on top of and depends heavily on [libp2p](https://libp2p.io/), a project led by Protocol Labs as well. Therefore we include a compressed update from that project tuned for Filecoin.
 
@@ -239,7 +226,7 @@ Filecoin is built on top of and depends heavily on [libp2p](https://libp2p.io/),
     - 2018-09-18. [How to Leverage libp2p for Blockchain Applications](https://www.infoq.com/presentations/blockchain-libp2p) (Chris Pacia, Open Bazaar, InfoQ)
     - And [more](https://libp2p.io/media/).
 
-### 9. IPFS update for Filecoin
+## 9. IPFS update for Filecoin
 
 Filecoin is built on top of and depends heavily on [IPFS](https://ipfs.tech/), a project also led by Protocol Labs. Many users of IPFS aim to also become users of Filecoin, so IPFS capabilities and use cases greatly inform Filecoin. Therefore, we include a compressed update from that project tuned for Filecoin.
 
@@ -265,7 +252,6 @@ Filecoin is built on top of and depends heavily on [IPFS](https://ipfs.tech/), a
   - [Origin - decentralized, secure, and auditable messaging](https://blog.originprotocol.com/introducing-origin-messaging-decentralized-secure-and-auditable-13c16fe0f13e)
   - [Pinata - IPFS deployment and pinning service](https://www.pinata.cloud/)
   - [IPFSCloud - decentralized storage platform](https://ipfscloud.store/)
-
 - **Community talks, articles, tutorials.**
   - Tutorial: [Mozilla Hacks: Building Cooperation and Trust into the Web with IPFS](https://hacks.mozilla.org/2018/08/dweb-building-cooperation-and-trust-into-the-web-with-ipfs/)
   - Article: [Thailand used IPFS for blockchain-supported Electronic Voting System in primaries](https://www.nasdaq.com/article/thailand-uses-blockchain-supported-electronic-voting-system-in-primaries-cm1055512)
@@ -275,7 +261,7 @@ Filecoin is built on top of and depends heavily on [IPFS](https://ipfs.tech/), a
   - 2018-11-14. [Telecom Application Development Summit: Protocol Labs and IPFS Project Update](https://www.youtube.com/watch?v=M4W6rzTOtP4) (David Dias)
   - 2018-12-18. [OPO.js - NPM on IPFS](https://www.youtube.com/watch?v=umNL2VkIHe8) (Alex Potsides)
 
-### 10. Cautionary Notes
+## 10. Cautionary Notes
 
 - We are not announcing the testnet or the mainnet. Instead, we are inviting you to review and contribute to this open source work we believe is so important.
 - The three devnets are true development networks, and we make no guarantees about performance, stability, and security on the devnets. In fact, we can probably guarantee the opposite.
@@ -285,7 +271,7 @@ Filecoin is built on top of and depends heavily on [IPFS](https://ipfs.tech/), a
 - Nobody should invest in mining hardware based on any specs in the devnet, as these specs will likely change.
 - Beware of any potential scams anywhere based on claims contrary to the above. We have unfortunately heard of some potentially fraudulent activity in China and Hong Kong. Please review [the Anti-Fraud Statement](https://filecoin.io/blog/china-antifraud/), which strongly recommends avoiding anyone in China or Hong Kong claiming to be commercially or officially affiliated with the Filecoin project (or IPFS or Protocol Labs) at this time.
 
-### Many Thanks
+## Many Thanks
 
 Thank you for all your support so far, and in the future! And thank you in advance for your referrals, ideas, and suggestions. Your help accelerates our progress.
 

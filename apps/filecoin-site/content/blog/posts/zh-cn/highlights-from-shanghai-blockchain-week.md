@@ -30,13 +30,13 @@ _template: blog_detail_ch
 您的浏览器不支持播放此版本的视频。
 </video>
 
-### 10月23至25日，万向区块链实验室举办的黑客松活动
+## 10月23至25日，万向区块链实验室举办的黑客松活动
 
 在万向区块链实验室举办的黑客松活动里，Filecoin鼓励开发者参与挑战，为Filecoin生态创建有趣的dapp和关键工具，奖励可达1万美金！本场黑客松活动在三天里吸引了21个团队共120多名开发者参与。
 
 在本场黑客松活动中，有6支团队在Filecoin上进行了开发。**DeBund**团队获得了Filecoin最佳项目奖5000美金的奖励，该项目致力于将人类的生物健康信息存储在Filecoin网络上。获得3000美金奖励的亚军是**Ownership**团队，它为供应链管理和智慧城市的开放数据集提供了Filecoin的基础设施支持。社交网站平台**Meetion**排名第三，获得了1000美金的奖励，剩余其他3支团队共享了1000美金的奖励。
 
-### 10月26日，Filecoin开放日
+## 10月26日，Filecoin开放日
 
 在Filecoin开放日，有200多名参与者参加了此次活动来了解Filecoin的生态、主网启动、生态合作以及未来的计划。我们邀请了[开发者资助](https://github.com/filecoin-project/devgrants)的获得者Coinsummer Lab分享他们的项目FileVault，该项目将社交媒体数据存储在Filecoin上。Slingshot上的项目YOLO介绍了存储AI/ML训练图像数据。此外，4个顶级矿工团队——IPFSMain、 IPFSForce、6block和IPFSUnion回顾和分享了他们参与太空竞赛的经验与成就。
 
@@ -46,13 +46,14 @@ Filecoin生态中的专家们也进行了多场讨论。来自分布式资本的
 <source src="/vintage/videos/blockchainweek-open.mp4" type="video/mp4">
 您的浏览器不支持播放此版本的视频。
 </video>
-<p style="font-size:small;font-style:italic;text-align:center">2020年上海区块链国际周。10月26日，Filecoin开放日。</p>
 
-### 10月27日至28日，位于上海外滩W酒店的区块链峰会
+2020年上海区块链国际周。10月26日，Filecoin开放日。
+
+## 10月27日至28日，位于上海外滩W酒店的区块链峰会
 
 在国际周的最后两天，Filecoin创始人胡安与Vitalik Buterin、Gavin Wood在峰会上进行了主题演讲和圆桌讨论。
 
-#### Filecoin创始人胡安的主题演讲
+### Filecoin创始人胡安的主题演讲
 
 在胡安的主题演讲中，他强调了Filecoin的使命——“为人类信息社会打造分布式、高效且强大的基础”。到2020年，我们生成的数据量将约为58 ZB，预计在未来四年内将增长3倍。但是，我们只存储了目前生成数据的大约7％。云存储无法满足目前的需求，并且由于较为低效，我们正在失去大量的社会数据。
 
@@ -64,9 +65,9 @@ Filecoin从根本上改变了存储提供者的商业场景和成本结构。现
 
 演讲最后胡安提供了四点建议： 1）将有价值的数据带入网络。 2）在Filecoin上创建新的应用程序。 3）进行长远考虑。 4）要有韧性。
 
-[_观看整个演讲视频 (101:45)_](https://www.bilibili.com/video/BV16D4y197Wh?zw)_._
+_[观看整个演讲视频 (101:45)](https://www.bilibili.com/video/BV16D4y197Wh?zw)._
 
-#### 圆桌讨论：Filecoin创始人胡安、以太坊创始人Vitalik Buterin、波卡创始人Gavin Wood
+### 圆桌讨论：Filecoin创始人胡安、以太坊创始人Vitalik Buterin、波卡创始人Gavin Wood
 
 _首先由参与圆桌讨论的成员回答有关他们认为目前在区块链技术生态中最重要的问题。_
 
@@ -84,6 +85,6 @@ _Vitalik Buterin:_ 面向未来的方法实际上可以归结是Layer 2解决方
 
 _Juan Benet:_ 解决这个问题重要的是还要有一个强大的开发者社区，并通过强有力的治理原则来专注于升级和面向未来。需要制定良好的标准流程来创建社区真正想要的改进。我同意Vitalik的观点，即随着时间的流逝，底层结构趋于稳定。但是，一步步分解过程很重要，现在Layer 1上发生了很多变动，我们必须通过进一步分解复杂的东西并归结到简单的事物才能真正创造出可经时间考验的东西。
 
-[_观看整个演讲视频 (01:10)_](https://www.bilibili.com/video/BV1xZ4y1L72L?zw)_._
+_[观看整个演讲视频 (01:10)](https://www.bilibili.com/video/BV1xZ4y1L72L?zw)._
 
-<p style="text-align:center">感谢上海区块链周在中国为Filecon与广大社区里的创建者、矿工、粉丝和企业家提供共同庆祝的机会！</p>
+感谢上海区块链周在中国为Filecon与广大社区里的创建者、矿工、粉丝和企业家提供共同庆祝的机会

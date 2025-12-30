@@ -31,11 +31,11 @@ _template: blog_detail_ch
 
 除了最近推出的[Fil+](https://github.com/filecoin-project/filecoin-plus-client-onboarding)用来最大限度地激励在Filecoin上存储有用的数据，以及正在进行的[Slingshot](https://slingshot.filecoin.io/)存储竞赛的第二阶段，[Filecoin 开发者资助](https://filecoin.io/grants)计划也在为协议的各种使用场景和工具铺平道路。在过去的一年里，在社区提交的140个提案中，开发者资助计划迄今已颁发给大约40个项目。
 
-### 展望第六批开发者资助项目
+## 展望第六批开发者资助项目
 
 您有有趣的存储应用、开发者工具或试验项目想法吗？**第六批可优先考虑的Filecoin开发者资助和Gitcoin提案申请将于1月15日太平洋时间23:59分截止**。请在[filecoin.io/grants](https://filecoin.io/grants)通过向dev grants repo提交PR来申请。如有问题，请在[Filecoin Slack](https://filecoin.io/slack)中的[#fil-devgrants](https://filecoinproject.slack.com/archives/C01G57K6FUY)频道中联系我们，或联系[devgrants@filecoin.org](mailto:devgrants@filecoin.org)。
 
-### Gitcoin推出矿工工具提案申请 &plus; Gitcoin的Apollo存储Dapp
+## Gitcoin推出矿工工具提案申请 &plus; Gitcoin的Apollo存储Dapp
 
 我们十分感谢Filecoin矿工社区对网络的参与，并使太空竞赛和[Filecoin主网发布](https://liftoff.filecoin.io/)都取得了巨大的成功。随着协议和网络的发展，我们希望看到矿工的体验得到改善，同时也看到一个强大的、多样化的矿工社区加强存储市场和未来的检索市场，以及还有具有深远意义的存储用户。
 
@@ -51,11 +51,11 @@ _template: blog_detail_ch
 
 如果您有兴趣支持或创建工具以促进Filecoin挖矿和存储dapp，Liftoff和Apoll资助将在1月15日之前**开放接受新提案申请**。您的建议可以通过[Filecoin dev grants repo](https://github.com/filecoin-project/devgrants)或通过[Gitcoin Grants - Create a Grant](https://gitcoin.co/grants/new)进行。
 
-### 获得资助的第四批和第五批项目
+## 获得资助的第四批和第五批项目
 
 我们很感激收到了Filecoin开发者资助计划第四批和第五批的大量提案申请——它们反映了广泛的想法、富有才华的人们和多样化的社区。虽然我们无法接受所有的提案，但我们很高兴地宣布以下项目已被选中，并鼓励所有开发者申请参加第六批开发者资助。
 
-#### 第四批
+### 第四批
 
 我们收到了29份针对我们[第4批提案申请](https://github.com/filecoin-project/devgrants/tree/master?tab=readme-ov-file#requests-for-proposals-rfps)以及开放主题的提案，并选出了10个获得团队。这些项目的范围从Filecoin与IPFS现有流行的开发者工具（如OrbitDB）的集成、到对ENS和DID中Filecoin地址的支持、对与以太坊跨链集成的早期支持以及Filecoin证明库优化和有趣的数据平台集成，用于社交媒体数据、视频和立法政府档案等。项目列表包括：
 
@@ -71,7 +71,7 @@ _template: blog_detail_ch
 - [社交媒体存储应用](https://github.com/filecoin-project/devgrants/blob/244f74704a87908e833da14ff5baa8f6c28df4d7/open-grant-proposals/open-proposal-social-media-archiving-web-app.md)
 - [Snarks作为矿工的服务平台](https://github.com/filecoin-project/devgrants/blob/9d3fe63c360ff3dfb628de72ee8a4373ce3aca6e/rfp-proposals/SNARKs-as-a-Service.md)
 
-#### 第五批
+### 第五批
 
 第五批和未来的Filecoin开发者资助现在由新成立的[**Filecoin基金会**](http://fil.org)管理和资助，并由协议实验室继续提供技术咨询。基金会是一个独立的组织，致力于通过支持开源软件和社区倡议来发展Filecoin生态。
 

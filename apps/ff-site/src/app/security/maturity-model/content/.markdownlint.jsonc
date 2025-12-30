@@ -1,0 +1,5 @@
+{
+  "MD001": false, // Headings should increase one level at a time (h1 → h2 → h3), not skip levels (h1 → h3)
+  "MD013": false, // Lines should not exceed a certain length
+  "MD025": false, // Only one h1 (#) heading per document
+}

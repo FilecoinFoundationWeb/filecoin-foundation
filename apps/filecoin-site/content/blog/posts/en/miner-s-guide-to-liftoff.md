@@ -31,7 +31,7 @@ In the past 4 weeks since the end of SR1, we’ve seen huge improvements in netw
 
 ![Space Race 1 dashboard](https://filecoin.io/vintage/images/blog/SP2-dashboard.jpg)
 
-### Orbital Burn Rewards
+## Orbital Burn Rewards
 
 The rewards for SR2: Orbital Burn were designed to emulate real-world network conditions by tracking the sectors stored, pledge collateral committed, and block and gas fees collected throughout the competition. To collect their rewards, miners who participated in SR1 and SR2 simply need to continue operating their miners through the mainnet transition on October 15th. As of the mainnet epoch:
 
@@ -42,7 +42,7 @@ The rewards for SR2: Orbital Burn were designed to emulate real-world network co
 
 These awards recognize the immense contribution of miners big and small who helped stress-test and improve the network over the past few months. This has been a pivotal and highly productive period in the development of the Filecoin network. Thank you so much for making the Filecoin network and community stronger! 💪
 
-### Faucets & Reimbursement
+## Faucets & Reimbursement
 
 Over the Space Race period, we’ve run various testnet FIL faucets to reimburse miner onboarding and normal network operations. In preparation for mainnet, and to limit abuse and gaming, we’ve now retired our automatic fault reimbursement service and our pledge reimbursement service (nicknamed the PCR bot), which helped reimburse PreCommit & ProveCommit messages. As of mainnet - it will be up to miners to fund their own continued growth and take full responsibility for managing their miner’s available balance, owner, control and worker balance.
 
@@ -50,7 +50,7 @@ To help with this, we have executed a _one-time_ reimbursement for all miners wi
 
 [Space Race 2: Orbital Burn](https://filecoin.io/blog/space-race-2/#introducing-space-race-2) is concluding as we transition into mainnet, but the [Slingshot](http://slingshot.filecoin.io/) competition is still going strong! To specifically support miners participating in Slingshot to store valuable data on the network, we plan to continue running some small faucets like the PublishDeals and WindowPoSt reimbursement bots for a little while as the network stabilizes. If you’re interested in joining Slingshot as a client, you can apply [here](https://slingshot.filecoin.io/).
 
-### Liftoff FAQ
+## Liftoff FAQ
 
 **What time will the Filecoin Mainnet be launched?**
 

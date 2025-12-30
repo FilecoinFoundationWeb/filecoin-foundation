@@ -29,7 +29,7 @@ _template: blog_detail
 
 So, what’s different about Boost?
 
-### A new version of the Storage Deal Proposal Protocol
+## A new version of the Storage Deal Proposal Protocol
 
 Boost introduces the [v1.2.0 Storage Deal Proposal Protocol](https://boost.filecoin.io/boost-architecture/libp2p-protocols#propose-storage-deal-protocol) (SDPP) that enables Storage Clients to specify different transport types over which to transfer their data. The previous version of the protocol, v1.1.0, only had support for Graphsync, the default, and only, data transfer protocol on Filecoin today. Along with the v1.2.0 SDPP, Boost ships with support for HTTP, [libp2p-http](https://github.com/libp2p/go-libp2p-http), and Graphsync data transfer, giving storage clients more options to fit their particular needs. Boost still supports v1.1.0, so Storage Providers can upgrade today and still make deals with existing v1.1.0 clients.
 
@@ -37,7 +37,7 @@ For HTTP transfer, clients can host their CAR files on a public server and inclu
 
 Storage clients, such as [Estuary](https://estuary.tech/), that still want to stream data over libp2p can now leverage the libp2p-http protocol, which provides a minimal libp2p protocol for transferring data. Estuary and the [filclient](https://github.com/application-research/filclient) library have also already been updated to leverage the new SDPP protocol with automatic fallback to v1.1.0.
 
-### Why should Storage Providers upgrade?
+## Why should Storage Providers upgrade
 
 In addition to the new SDPP and data transfer protocols, Boost also includes an internal overhaul of how deals are managed, with an emphasis on idempotency, resiliency, and visibility. Only v1.2.0 deals currently go through the new deal state machine within Boost, while all v1.1.0 deals fallback to the legacy go-fil-markets code base, which we are slowly working to phase out within Boost.
 
@@ -55,7 +55,7 @@ As mentioned above, Estuary and Bidbot have already released backward-compatible
 
 [CID gravity](https://www.cidgravity.com/) has also been updated to work with Boost from day 1 and we’re looking forward to continuing our work with the team to expose additional parameters to help further improve the extensible control of deal making.
 
-### What’s next for Boost?
+## What’s next for Boost
 
 These updates are just the beginning. We’ve already begun work focused on the [scalability](https://github.com/filecoin-project/boost/discussions/555) of Boost to meet the large scale needs of Storage Providers for both storage and retrieval. We’re also looking at providing a standalone, http service to make retrieving full CAR files easier, as well as a [doctor command](https://github.com/filecoin-project/boost/issues/582) to help Storage Providers troubleshoot their systems more efficiently.
 

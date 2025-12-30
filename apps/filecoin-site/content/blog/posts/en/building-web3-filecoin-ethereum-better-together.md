@@ -27,7 +27,7 @@ _Summary of a talk given by Protocol Labs Founder Juan Benet at EthCC 2021 — s
 
 The Filecoin network is ecosystem oriented, aligning with Protocol Labs’ tendency to build modular solutions. Designed to be used by others, Filecoin has found a natural fit with other stacks, applications, and ecosystems within Web3. Since its launch in October 2020, Filecoin has grown to over 8 exbibytes of available storage with 400+ new projects entering the space. One ecosystem that continues to prove collaborative and mutually beneficial is Ethereum.
 
-### Filecoin + Ethereum
+## Filecoin + Ethereum
 
 **Filecoin & the EVM**
 
@@ -63,7 +63,7 @@ VideoCoin is building a solution to reliably create, store, and trade video-base
 
 [NFT.storage](http://nft.storage/) is a service backed by Protocol Labs and Pinata specifically for storing NFT data. NFT.Storage allows developers to protect their NFT assets and associated metadata through content addressing and decentralized storage – ensuring that all NFTs follow best practices to stay accessible long-term.
 
-### Use Cases for the Future
+## Use Cases for the Future
 
 As the Filecoin and Ethereum ecosystems grow and overlap more, emerging use cases and opportunities for developers will continue to emerge. Some of the use cases ripe for innovation are:
 

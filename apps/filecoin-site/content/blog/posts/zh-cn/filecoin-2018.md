@@ -23,23 +23,7 @@ title: Filecoin 2018 第一、二季度更新
 _template: blog_detail_ch
 ---
 
-### 0. 目录
-
-1. Filecoin 开发进展
-   1. go-filecoin 演示
-   2. 代码库开放
-2. Filecoin 研究进展
-3. Filecoin 项目路线图
-   1. 乐观版时间线
-   2. 目前状态
-   3. 未来里程碑
-4. Filecoin 公开讲座和媒体发布
-5. 与filecoin相关的libp2p更新
-6. 与filecoin相关的IPFS更新
-7. 博客和报道的更新
-8. 提请注意和声明
-
-### 1. Filecoin 开发进展
+## 1. Filecoin 开发进展
 
 开宗明义: 到目前为止，Filecoin项目中最令人兴奋的事情是构建了第一个协议的实施: go-Filecoin。几个月来，我们一直为此而努力，以下成果的取得让我们感到非常高兴:
 
@@ -57,13 +41,13 @@ _template: blog_detail_ch
 
 您可以在[这个工作文档](https://docs.qq.com/doc/DVlRhV0pRbm1NWHVU)中更仔细地查看go-filecoin各个部分的完成状态。
 
-#### 1.1 开发进度/go-filecoin 演示
+### 1.1 开发进度/go-filecoin 演示
 
 随着这次更新，我们也在此发布3个go-filecoin的演示。这些演示程序是很基础的，但它们显示了在go-filecoin节点中工作的许多复杂组件。从演示中，可以看到基本的区块链操作，例如区块的挖掘，通过网络传播，以及主链对最优的下一个区块达成共识；可以看到由此产生的区块链数据，包括状态树、参与者的内部数据存储、钱包余额、钱包支付事务等；还可以看到可运行的、去中心化的和可验证的存储市场，并执行了报价、请求和处理存储文件等操作。在未来，我们将制作和发布更多的功能演示视频。
 
 #### 演示1：go-filecoin 和测试网络模拟
 
-##### 该演示视频介绍了其他几个演示使用的工具，展示了如何设立一个本地测试网络，生成几个go-filecoin节点，在这些节点上随机运行指令，然后检查因此产生的区块链数据。具体展示如下
+该演示视频介绍了其他几个演示使用的工具，展示了如何设立一个本地测试网络，生成几个go-filecoin节点，在这些节点上随机运行指令，然后检查因此产生的区块链数据。具体展示如下
 
 - go-filecoin 命令行工具，以及filecoin节点运行情况
 - 设立一个本地测试网络调度工具，运行众多go-filecoin节点，并且发出许多随机行动
@@ -93,7 +77,7 @@ _template: blog_detail_ch
 - 客户和矿工达成交易
 - 其他客户检索已经存储的文件
 
-#### 1.2 开发进展 / 代码库开放情况
+### 1.2 开发进展 / 代码库开放情况
 
 **目前（Filecoin）仍然是非公开的代码库。** 我们一直在以非公开的方式开发（Filecoin的代码库）。这不是我们典型的工作方式——几乎我们所有的工作都是从第一次提交开始就完全公开的（如IPFS、LibP2P、IPLD等等）。关于决定不公开Filecoin的代码库，我们做出了艰难的选择，主要是为了避免分心和可以迅速行动。
 
@@ -112,7 +96,7 @@ _template: blog_detail_ch
 - **OKRs：** 我们使用“目标和关键结果”（Objective and Key Results）来进行规模化的规划，并评估进度。Protocol Labs一直通过IPFS、LibP2P和更多的方式，开创性地探索开源领域。我们发现，“目标和关键结果”是个跨工作组进行规划的好办法，可以在小组自治和跨小组协调之间取得很好的平衡。
 - **社区管理：**我们正在准备，以满足广泛的、充满活力的社区的各种需求。
 
-### 2. Filecoin 研究进展
+## 2. Filecoin 研究进展
 
 Filecoin研究小组的工作重点在于以下几个方面。这只是一个简要的概述，在今后的更新中我们将深入探讨。
 
@@ -123,21 +107,21 @@ Filecoin研究小组的工作重点在于以下几个方面。这只是一个简
 - **RFP项目：**今年早些时候，[协议实验室启动了500万美元的RFP项目](https://protocol.ai/blog/ann-research-rfp/)，以加快研究，解决与我们的协议相关的关键问题。第一个RFP项目寻求改进Filecoin组件的性能。这些都是改进，并不是最终发布所必需的。该项目的成功可以极大地改善性能特性，增加安全性，或简化协议。所有这些方向都非常值得研究。
 - **解决其它问题：**我们的团队也一直在致力于解决一些对Filecoin的未来非常重要的问题，尽管这些问题并不像网络发布那样优先。其中包括:（a）完全链下市场订单、（b）使用证明进行链的压缩、（c）用户定义的文件合同、（d）可扩展共识、等等。
 
-### 3. Filecoin 项目路线图
+## 3. Filecoin 项目路线图
 
-#### 随着这次更新，我们将发布一个更详细的项目路线图和一个粗略的、较乐观的时间表。我们计划在[本文档](https://docs.qq.com/doc/DVlRhV0pRbm1NWHVU)中持续更新这份路线图
+随着这次更新，我们将发布一个更详细的项目路线图和一个粗略的、较乐观的时间表。我们计划在[本文档](https://docs.qq.com/doc/DVlRhV0pRbm1NWHVU)中持续更新这份路线图
 
-#### 3.1 路线图/较乐观的时间表
+### 3.1 路线图/较乐观的时间表
 
 **在这个时间表里我们不能承诺任何具体的时间点，**但我们会对目前状态、下一步做什么，和下一个里程碑什么时间到达给出进程提示。我们不能对一些具体完成日期做出承诺，而日后被证明过于乐观或者食言，我们也不能什么都不公开，让我们的社区陷入未知状态。因此，我们发布这个乐观版的路线图。与典型的主流软件和产品开发理念不同，我们的目的是提供一些里程碑事件的预计日期，并有计划的根据需要修正这个时间表。这样做的好处是：规划方法更清晰和透明，更容易协调整个社区，让大家随着里程碑的临近而有心理准备。缺点是：时间表将不可避免的进行调整—有些事情会比最初预期的时间发生的更早或更晚。
 
-#### 3.2 路线图/目前状态
+### 3.2 路线图/目前状态
 
 总体来说，下面这张图显示了我们现在的开发进度状态（注：各个阶段并不一定等长）
 
 ![](https://filecoin.io/vintage/images/blog/filecoin%E9%A1%B9%E7%9B%AE%E8%B7%AF%E7%BA%BF%E5%9B%BE2018%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%BA%A6.png)
 
-#### 3.3. 路线图/未来里程碑事件
+### 3.3. 路线图/未来里程碑事件
 
 即将到来的里程碑如下：
 
@@ -184,9 +168,9 @@ Filecoin研究小组的工作重点在于以下几个方面。这只是一个简
 - **更多**
   - 我们还有很多其他的计划，但我们首先将关注点集中在以上列出的这些里程碑事件上。
 
-### 4. Filecoin 公开讲座和媒体发布
+## 4. Filecoin 公开讲座和媒体发布
 
-#### 在过去的一年里，我们基本上离开了公众的视野，转而集中精力进行代码开发；我们只进行了一些公开演讲，拜访了一些研究团队。接下来，这些活动也将保持目前规模，直到主网正式上线
+在过去的一年里，我们基本上离开了公众的视野，转而集中精力进行代码开发；我们只进行了一些公开演讲，拜访了一些研究团队。接下来，这些活动也将保持目前规模，直到主网正式上线
 
 - **公开演讲** _有些提供了视频链接_
   - 2018-01: Filecoin: protocol overview, the important results, and new open problems (Juan Benet, BPASE 2018)
@@ -211,7 +195,7 @@ Filecoin研究小组的工作重点在于以下几个方面。这只是一个简
   - Filecoin Demo @ Decentralized Web Summit 2018
   - _希望Filecoin 团队拜访贵实验室进行交流？_ [_请告知我们_](https://goo.gl/forms/BJHIg6r5nJGF5sQ72)
 
-### 5. 与Filecoin相关的libp2p更新
+## 5. 与Filecoin相关的libp2p更新
 
 libp2p 也是协议实验室主导的项目之一，Filecoin 构建于 [libp2p](https://libp2p.io/) 之上，并在很大程度上依赖于 libp2p 。以下我们简要提供一些该项目与Filecoin相关的更新信息：
 
@@ -223,9 +207,9 @@ libp2p 也是协议实验室主导的项目之一，Filecoin 构建于 [libp2p](
 - **Polkadot选择了libp2p！** Polkadot最近在其网络堆栈中采用了libp2p。对于libp2p来说，这是一个重要的时刻，因为这意味着另一个非常重要的区块链和整个区块链生态系统将共享这个堆栈。Polkadot团队最近发布了PoC-2，[这里是关于此次发布的介绍](https://medium.com/polkadot-network/polkadot-poc-2-is-here-parachains-runtime-upgrades-and-libp2p-networking-7035bb141c25)。这会极大鼓励其他支持者把libp2p 应用在其他区块链（如以太坊）中。
 - **在区块链应用程序上使用libp2p：** 包括 OpenBazaar, [Livepeer](https://livepeer.org/), [Keep Network](https://blog.keep.network/introduction-to-libp2p-57ce6527babe), Paratii在内，所有人都在使用[IPFS](https://ipfs.tech/)。
 
-### 6. 与Filecoin相关的IPFS更新
+## 6. 与Filecoin相关的IPFS更新
 
-#### [IPFS](https://ipfs.tech/) 也是协议实验室主导的项目之一，Filecoin 构建于 IPFS之上，并在很大程度上依赖于IPFS 。许多IPFS的用户也希望成为Filecoin的用户。因此，IPFS 的性能和用例会极大有益于Filecoin。以下，我们简要提供一些IPFS与Filecoin相关的更新信息
+[IPFS](https://ipfs.tech/) 也是协议实验室主导的项目之一，Filecoin 构建于 IPFS之上，并在很大程度上依赖于IPFS 。许多IPFS的用户也希望成为Filecoin的用户。因此，IPFS 的性能和用例会极大有益于Filecoin。以下，我们简要提供一些IPFS与Filecoin相关的更新信息
 
 - **什么是IPFS？:** 一个内容寻址的超媒体分发协议。[查看这个网站](https://ipfs.tech/)了解更多。
 - **IPFS对浏览器的支持：** IPFS具有强大的浏览器支持，能够完全通过[js-ipfs](https://js.ipfs.tech/)和[ipfs-companion](https://github.com/ipfs-shipyard/ipfs-companion)在浏览器中工作。这让编写使用Filecoin的网页应用程序变得非常容易。
@@ -247,7 +231,7 @@ libp2p 也是协议实验室主导的项目之一，Filecoin 构建于 [libp2p](
   - _教程_: [Code a simple P2P blockchain in Go](https://medium.com/@mycoralhealth/code-a-simple-p2p-blockchain-in-go-46662601f417)
   - _教程_: [From Zero to Interplanetary Hero (browser-based ĐApps with IPFS)](https://medium.freecodecamp.org/from-zero-to-interplanetary-hero-7e62f7d4427)
 
-### 7. 博客和更新的变动
+## 7. 博客和更新的变动
 
 我们正在对我们的博客和更新做一些调整。在[上次更新中](https://filecoin.io/blog/update-2017-q4/)，我们计划每季度至少发布一次更新。我们很遗憾没有达到这个目标——我们知道，对社区中的一些成员来说，这令人失望。因此，本次更新比通常的更新更加丰富。此外，我们正在进行以下改进：
 
@@ -256,7 +240,7 @@ libp2p 也是协议实验室主导的项目之一，Filecoin 构建于 [libp2p](
 - （3）我们计划发布关于Filecoin各方面的短小文章。这将使我们能够深入地写出Filecoin网络中那些令人激动的特点或组件。
 - （4）我们计划扩大作者圈，以此展示我们新的团队成员做出的众多杰出贡献和成功开发。
 
-### 8. 提请注意和声明
+## 8. 提请注意和声明
 
 **请矿工注意：** 我们觉察到有些公司正在生产和销售“Filecoin矿机”或“Filecoin挖矿硬件”。请注意：我们尚未发布有关Filecoin 挖矿硬件的官方规范，因此这些系统可能会不甚理想或者过度复杂。一旦我们对主网启动（Network Launch）的最优结构有了明确的理解，我们就会发布系统要求的具体规范，以及需要考虑的取舍和硬件推荐。我们建议在发布这些规范之前，不要购买特定用于Filecoin的硬件。
 
@@ -266,7 +250,7 @@ _为什么我们还不发布关于挖矿的硬件需求？_ 我们的目标是�
 
 **法律免责声明：** 此更新列出了我们目前的项目计划。随着进一步发展，未来实际发生的情况可能与此不同。请勿依赖任何根据本文作出的推测。
 
-### 非常感谢
+## 非常感谢
 
 感谢您现在和将来的支持！并欢迎和感谢您的推荐、意见和建议。您的帮助加快了我们的发展。
 

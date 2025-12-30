@@ -26,15 +26,15 @@ The [Filecoin Testnet Incentives Program](https://filecoin.io/blog/announcing-te
 
 Now, it’s time to start your engines. 🚀 Lotus is in code-freeze for the competition, and we have [officially merged the “next” branch into “master”](https://github.com/filecoin-project/lotus/commits/master) in preparation for resetting the Filecoin Testnet to start the Space Race. `Epoch 0` will start on Monday August 24th at 10pm UTC exactly, with the genesis being released approximately \~2 hours ahead of time for miners to get set up.
 
-Let the countdown begin! ⏱
+Let the countdown begin!
 
-### The Competition
+## The Competition
 
 Space Race is a collaborative competition intended to stress-test the network, encourage participation all over the world, and help miners get ready to run the world’s biggest decentralized storage network. In this 3-week competition, miners are competing to onboard as much storage capacity as possible to the network. The top 100 miners globally, as well as the top 50 miners from each continent, will earn Filecoin rewards based on how much storage they and the network achieve during the competition period.
 
 In addition to onboarding storage capacity, the 20 largest block reward winners will split an additional **100K FIL** prize proportionally based on how much block reward they win.
 
-### Space Race Eligibility
+## Space Race Eligibility
 
 Filecoin aims to create a decentralized, efficient, and robust foundation for humanity’s information. Successfully reaching that goal requires a global network of miners able to demonstrate responsible stewardship of client data. Therefore, in order to be eligible for Space Race, participating miners must respond to storage and retrieval deal requests from competition bots, maintaining a **80% success rate** or above for BOTH storage and retrieval deals. Bots will start making deals with miners who have successfully sealed sectors within 12-24 hours after competition launch, and will continue making deal requests throughout the competition.
 
@@ -42,7 +42,7 @@ To demonstrate they can execute the whole sector lifecycle (onboarding, upgradin
 
 Miners will be able to track their deal success rate and sector lifecycle status in the spacerace.filecoin.io dashboard. For additional details on the rules and eligibility requirements, see the [Space Race docs and FAQ](https://docs.filecoin.io/mine/spacerace/). Please join the **#space-race** channel on [Filecoin slack](http://filecoin.io/slack) for the latest competition updates, and **#fil-testnet** for network/debugging questions once the competition begins!
 
-### Incentives Calibration Period
+## Incentives Calibration Period
 
 Since late July, we’ve been running a Space Race “calibration” network for miners to practice in real competition conditions and see how their performance influences hypothetical competition standings. This calibration period was a critical addition to ensure that miners participating in the Space Race were able to meet eligibility criteria by making successful storage and retrieval deals - and that the network was stable enough to enable their success.
 
@@ -50,7 +50,7 @@ The Calibration Period also saw huge improvements in network functionality and p
 
 Huge thanks to the great community in the **#fil-net-calibration** channel on [Filecoin slack](http://filecoin.io/slack) for all their help upgrading the network over the past few weeks! 💪 If you’re still not happy with your standings, you have a few more days to iron out any last issues. Please ensure you’re up to date with the latest calibration network to make sure you’re ready to start Space Race with the latest fixes on Monday.
 
-### Participating in Space Race
+## Participating in Space Race
 
 Thanks to the calibration period, miners in the Space Race have a number of new tools (and better docs!) to help them participate successfully in the competition.
 
@@ -74,7 +74,7 @@ Filecoin is a community-built network, and a healthy economy is built through co
 
 ![Launch Roadster](https://filecoin.io/vintage/images/blog/launch-roadster.jpg)
 
-### Space Race Events
+## Space Race Events
 
 Please join us for the **Space Race Opening Ceremony** on Wednesday, August 26th at 10pm UTC (3pm PT | 6am CST on Thursday, August 27th). We’ll celebrate the start of Space Race and have presentations from the team.
 

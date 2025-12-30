@@ -26,9 +26,9 @@ title: "Filecoin News 23: Hedera, Filecoin Base Camp, Juan at EthCC, and More"
 
 ![](/uploads/filecoin-news-23.webp)
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Build</b></h3>
+## Build
 
-<a href="https://filecoin.io/blog/posts/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/"><img src="/uploads/fil-news-hedera.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/fil-news-hedera.webp)](https://filecoin.io/blog/posts/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/)
 
 ### Filecoin and Hedera Hashgraph Announce Grant Program to Propel Web3 Interoperability
 
@@ -36,7 +36,7 @@ Today, Filecoin and [**Hedera Hashgraph**](https://hedera.com/) are announcing a
 
 Filecoin and Hedera have a history of technical collaboration among various projects. Hedera brings highly efficient DLT capabilities, while Filecoin offers a robust, flexible large-scale storage layer. Combining both networks provides new possibilities to verify the provenance, ownership, and validity of both transactions and their underlying data. [**Learn more**](https://filecoin.io/blog/posts/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/).
 
-<a href="https://outlierventures.io/base-camp/filecoin-base-camp/"><img src="/uploads/base-camp-simple.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/base-camp-simple.webp)](https://outlierventures.io/base-camp/filecoin-base-camp/)
 
 ### Filecoin Base Camp Accelerator
 
@@ -44,7 +44,7 @@ Outlier Ventures has launched the [**Filecoin Base Camp**](https://outlierventur
 
 During the 12-week virtual program, you will get access to $50,000 upfront investment and up to $250,000 total funding per team. Outlier Ventures has helped raise more than $130m at a combined valuation of over $1bn for 70 Base Camp graduates to date. The fully remote application process closes on the 9th of August. We encourage you to [**apply directly**](https://outlierventures.io/base-camp/filecoin-base-camp/) or book a meeting with the Outlier Ventures team using the [**office hours link**](https://meetings.hubspot.com/anavc/office-hours-outlier-ventures-filecoin-base-camp?__hstc=244311002.2da0aebd31b819f21c25c1ca37cf527a.1616495705464.1624353262973.1624553435524.49&__hssc=244311002.1.1624553435524&__hsfp=815620960) to find out more details.
 
-<a href="https://www.youtube.com/watch?v=fHbjjSKrLJU"><img src="/uploads/ethcc-4-juan.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/ethcc-4-juan.webp)](https://www.youtube.com/watch?v=fHbjjSKrLJU)
 
 ### Juan’s EthCC Talk Quick Recap
 
@@ -54,7 +54,7 @@ It was hard to miss out hearing about EthCC, one of the first live events for th
 
 HackFS is right around the corner, from July 30 - August 20 and there is still time left to apply! The virtual hackathon with ETHGlobal and Protocol Labs will bring together developers and founders to focus on building dapps, web3, decentralized storage, and everything in between.
 
-<a href="https://www.techstars.com/newsroom/techstars-collaborates-with-filecoin-to-launch-accelerator-program"><img src="/uploads/techstars.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/techstars.webp)](https://www.techstars.com/newsroom/techstars-collaborates-with-filecoin-to-launch-accelerator-program)
 
 ### Filecoin Techstars Accelerator
 
@@ -64,9 +64,9 @@ In collaboration with [**Techstars**](http://www.techstars.com/), we are excited
 
 Outlier Ventures CEO Jamie Burke and Protocol Labs Ecosystem Lead Colin Evran sat down to talk about business opportunities for the future of Web3. They discussed existing and new business models that will be empowered by decentralized technology — and storage in particular — to supercharge the next phase of the global economy. [**Check out the highlights from the conversation**](https://filecoin.io/blog/posts/building-businesses-for-the-future-of-the-decentralized-web/).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Store</b></h3>
+## Store
 
-<a href="https://github.com/filecoin-project/filecoin-plus-large-datasets"><img src="/uploads/fil-logo-filecoin-plus-symbol-color-dark.webp" style="width:20%;margin-left:0%"></a>
+[![](/uploads/fil-logo-filecoin-plus-symbol-color-dark.webp)](https://github.com/filecoin-project/filecoin-plus-large-datasets)
 
 ### Filecoin Plus Support for Large Datasets
 
@@ -76,7 +76,7 @@ The Fil+ governance community recently launched [**Filecoin Plus for large datas
 
 In the past couple of weeks, we’ve had 5 applications accepted by the community, and had our first LDN allocate DataCap to a client. If you are working on a project which could use a large amount of DataCap, please apply by creating an Issue [**here**](https://github.com/filecoin-project/filecoin-plus-large-datasets/issues). If you are interested in participating in the discussion around other applications or Fil+ in general, please feel free to read through the current set and drop comments on their respective GitHub issues and [**participate in Fil+ governance**](https://docs.filecoin.io/store/filecoin-plus/#get-involved-in-fil-governance).
 
-<a href="https://storage.chainsafe.io/"><img src="/uploads/chainsafe-logofield.webp" style="width:40%;margin-left:0%">
+[![](/uploads/chainsafe-logofield.webp)](https://storage.chainsafe.io/)
 
 ### Chainsafe Storage
 
@@ -86,7 +86,7 @@ ChainSafe is proud to launch [**ChainSafe Storage**](https://storage.chainsafe.i
 
 Since mainnet launch in October 2020, over 2,700 storage providers are contributing over 8 exbibytes of storage to the network. Providing storage on Filecoin has become one of the most significant economic activities in Web3, with more than 86 million FILs mined, over 92 million FILs locked as collateral, and over 27 million FILs burned as network fees. Starboard Ventures broke down the economics of providing storage on the Filecoin network to take a deep look at the economic incentives behind such a strong and growing Web3 service.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Mine</b></h3>
+## Mine
 
 ### Synthetic PoRep
 
@@ -104,23 +104,21 @@ For more information, the protocol flow on Synthetic PoRep, and more read the [*
 
 Recently, the **Web 3.0 China Summit** in Chengdu, Sichuan Province gathered 5000 attendees with more than 60 industry experts sharing their knowledge and expertise. More than 70 Filecoin ecosystem service providers participated in the exhibition, including major mining companies, hardware manufacturers, ecosystem application upstream and downstream enterprises. Visit the **event website** for a look into the summit.
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;"><b>Learn</b></h3>
+## Learn
 
-<a href="https://fil.org/events/"><img src="/uploads/fil-news-browsers-hackathon.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/fil-news-browsers-hackathon.webp)](https://fil.org/events/)
 
 ### Browsers3000 Learning Sessions
 
 [**Browsers 3000**](https://browsers3000.devpost.com) is a six week virtual event to explore and accelerate the development of Web3 in the browser through experimentation, creative collaboration, and challenge prizes. Throughout the hackathon, the community is hosting a series of learning sessions featuring ecosystem collaborators. This week we’ll be joined by **MetaMask on July 29th** and **Coil on July 30th**].
 
-<a href="https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46"><img src="/uploads/encode-1.webp" style="width:40%;margin-left:0%"></a>
+[![](/uploads/encode-1.webp)](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46)
 
 ### Join The Filecoin Learning Sessions
 
 In July, Encode Club announced the [**Encode Filecoin Club**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46), a nine-month program including a Filecoin education series, a Filecoin-dedicated hackathon and a follow-up accelerator. Filecoin Educate aims to teach students about blockchain through the lens of Filecoin, in attendance will be 125+ university blockchain societies and students globally. To join and learn more, please see the [**full event schedule**](https://medium.com/encode-club/announcing-the-encode-filecoin-club-b89e1ec4ee46).
 
-<h3 style="margin:3em 0 2em 0;padding-bottom:.5em;color:#888888;border-bottom: 2px solid #808080;">&nbsp</h3>
-
-### ✊ Get Involved
+## Get Involved
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 
