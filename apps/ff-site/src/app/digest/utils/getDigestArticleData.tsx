@@ -5,12 +5,10 @@ import {
 
 import { PATHS } from '@/constants/paths'
 
-const DIGEST_DIRECTORY_ARTICLES_PATH = PATHS.DIGEST.articlesPath
-
 export async function getDigestArticleData(slug: string) {
-  return sharedGetDigestArticleData(slug, DIGEST_DIRECTORY_ARTICLES_PATH)
+  return sharedGetDigestArticleData(slug, PATHS.DIGEST.articlesPath)
 }
 
 export async function getDigestArticlesData() {
-  return sharedGetDigestArticlesData(DIGEST_DIRECTORY_ARTICLES_PATH)
+  return sharedGetDigestArticlesData(PATHS.DIGEST.articlesPath)
 }
