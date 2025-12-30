@@ -417,7 +417,7 @@ collections:
 
   - name: "digest_issues"
     label: "Digest Issues"
-    folder: "apps/ffdweb-site/src/content/digest/issues"
+    folder: "apps/ff-site/src/content/digest/issues"
     preview_path: "digest"
     label_singular: "Digest Issue"
     create: true
