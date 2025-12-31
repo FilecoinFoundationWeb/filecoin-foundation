@@ -4,6 +4,8 @@ title: "Free Software’s Paradox: Losing While Winning and the Need for
 created-on: 2023-10-16T17:52:37.913Z
 updated-on: 2023-10-16T17:52:37.927Z
 published-on: 2023-10-16T17:52:37.937Z
+issue-number: 1
+article-number: 5
 image:
   src: /assets/images/DWD-Illustration-05.png
 authors:

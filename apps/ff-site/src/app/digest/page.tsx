@@ -4,6 +4,7 @@ import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { getDigestIssueDescription } from '@filecoin-foundation/utils/getDigestIssueDescription'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -22,12 +23,22 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getDigestArticlesData } from './utils/getDigestArticleData'
+import { getDigestArticlesWithIssueContext } from './utils/getDigestArticlesWithIssueContext'
+import {
+  getDigestIssuesData,
+  getDigestIssueData,
+} from './utils/getDigestIssueData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
 export default async function Digest() {
-  const articles = await getDigestArticlesData()
+  const allIssues = await getDigestIssuesData()
+
+  const issueNumber = allIssues[0].issueNumber
+
+  const articles = await getDigestArticlesWithIssueContext(issueNumber)
+
+  const issue = await getDigestIssueData(issueNumber)
 
   return (
     <PageLayout>
@@ -39,12 +50,12 @@ export default async function Digest() {
       />
 
       <PageSection
-        kicker="Issue 1 - Sep 2024"
-        title="The Inaugural Edition: All Systems Go"
-        description={[
-          'Featuring Guest Editor Jonathan Victor, Co-Founder, Ansa Research',
-          'Published in September 2024, the inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and sustainable data centers. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future.',
-        ]}
+        kicker={issue.kicker}
+        title={issue.title}
+        description={getDigestIssueDescription(
+          issue.description,
+          issue.guestEditor,
+        )}
       >
         <CardGrid as="section" cols="smTwo">
           {articles.map((article) => {

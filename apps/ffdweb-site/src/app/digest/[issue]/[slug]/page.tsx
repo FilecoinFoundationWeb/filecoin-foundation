@@ -14,38 +14,29 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
-import {
-  getAllDigestArticlesWithIssueContext,
-  getDigestArticleWithIssueContext,
-} from '../../utils/getDigestArticlesWithIssueContext'
+import { getDigestArticleData } from '../../utils/getDigestArticleData'
+import { getDigestArticlesWithIssueContext } from '../../utils/getDigestArticlesWithIssueContext'
+import { getDigestIssuesData } from '../../utils/getDigestIssueData'
+import { buildIssueSlug } from '../../utils/parseDigestParams'
 
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
-
-import { getAllDigestIssuesData } from '@/digest/utils/getDigestIssueData'
-import { parseDigestArticleParams } from '@/digest/utils/parseDigestParams'
 
 type DigestArticleProps = {
   params: Promise<DigestArticleParams>
 }
 
 export default async function DigestArticle(props: DigestArticleProps) {
-  const { issueNumber: issueSlug, articleSlug } =
-    await parseDigestArticleParams(props.params)
-
-  const data = await getDigestArticleWithIssueContext({
-    issueNumber: issueSlug,
-    articleSlug,
-  })
-
+  const { slug: articleSlug } = await props.params
+  const article = await getDigestArticleData(articleSlug)
   const { title, issueNumber, articleNumber, image, authors, content, slug } =
-    data
+    article
 
   const atLeastOneAuthorHasBio = authors.some((author) => author.bio)
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={generateStructuredData(data)} />
+      <StructuredDataScript structuredData={generateStructuredData(article)} />
       <ArticleLayout>
         <DigestArticleHeader
           title={title}
@@ -80,33 +71,29 @@ export default async function DigestArticle(props: DigestArticleProps) {
 }
 
 export async function generateStaticParams() {
-  const allIssues = await getAllDigestIssuesData()
+  const allIssues = await getDigestIssuesData()
 
-  const allArticles = await Promise.all(
+  const params = await Promise.all(
     allIssues.map(async (issue) => {
-      const articles = await getAllDigestArticlesWithIssueContext({
-        issueNumber: issue.issueNumber,
-      })
-      return articles.map((article) => ({
-        issue: `issue-${issue.issueNumber}`,
-        slug: article?.slug,
+      const issueArticles = await getDigestArticlesWithIssueContext(
+        issue.issueNumber,
+      )
+      return issueArticles.map((article) => ({
+        issue: buildIssueSlug(article.issueNumber),
+        slug: article.slug,
       }))
     }),
   )
-  return allArticles.flat()
+
+  return params.flat()
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
-  const { issueNumber: issueSlug, articleSlug } =
-    await parseDigestArticleParams(props.params)
-
-  const { image, seo, issueNumber } = await getDigestArticleWithIssueContext({
-    issueNumber: issueSlug,
-    articleSlug,
-  })
+  const { slug } = await props.params
+  const { seo, image, issueNumber } = await getDigestArticleData(slug)
 
   return createMetadata({
-    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}` as `/${string}`,
+    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}` as `/${string}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,

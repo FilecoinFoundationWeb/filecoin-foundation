@@ -3,6 +3,8 @@ title: Recognizing Code as Speech is Vital
 created-on: 2023-10-18T18:44:40.679Z
 updated-on: 2023-10-18T18:44:40.685Z
 published-on: 2023-10-18T18:44:40.692Z
+issue-number: 1
+article-number: 8
 image:
   src: /assets/images/DWD-Illustration-08.png
 authors:

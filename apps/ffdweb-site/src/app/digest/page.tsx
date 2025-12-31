@@ -1,6 +1,7 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { Social } from '@filecoin-foundation/ui/Social'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { getDigestIssueDescription } from '@filecoin-foundation/utils/getDigestIssueDescription'
 
 import { PATHS } from '@/constants/paths'
 
@@ -15,9 +16,10 @@ import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
 import { DIGEST_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getAllDigestIssuesData } from './utils/getDigestIssueData'
+import { getDigestIssuesThatHaveArticles } from './utils/getDigestIssuesThatHaveArticles'
+
 export default async function Digest() {
-  const digestIssues = await getAllDigestIssuesData()
+  const digestIssues = await getDigestIssuesThatHaveArticles()
 
   return (
     <PageLayout gap="large">
@@ -31,22 +33,24 @@ export default async function Digest() {
         image={graphicsData.digest}
       />
 
-      {digestIssues.map(({ title, description, issueNumber, kicker }) => (
-        <PageSectionWithImage
-          key={issueNumber}
-          kicker={kicker}
-          title={`DWeb Digest: ${title}`}
-          image={graphicsData.dWebDigestCover}
-          description={description}
-          layout={Number(issueNumber) % 2 === 1 ? 'regular' : 'reversed'}
-          cta={{
-            href: PATHS.DIGEST.issueUrl({
-              issueNumber,
-            }),
-            children: `Read Issue ${issueNumber}`,
-          }}
-        />
-      ))}
+      {digestIssues.map(
+        ({ issueNumber, kicker, title, description, guestEditor }) => (
+          <PageSectionWithImage
+            key={issueNumber}
+            kicker={kicker}
+            title={`DWeb Digest: ${title}`}
+            image={graphicsData.dWebDigestCover}
+            description={getDigestIssueDescription(description, guestEditor)}
+            layout={Number(issueNumber) % 2 === 1 ? 'regular' : 'reversed'}
+            cta={{
+              href: PATHS.DIGEST.issueUrl({
+                issueNumber,
+              }),
+              children: `Read Issue ${issueNumber}`,
+            }}
+          />
+        ),
+      )}
 
       <CTASection
         kicker="Social Media"

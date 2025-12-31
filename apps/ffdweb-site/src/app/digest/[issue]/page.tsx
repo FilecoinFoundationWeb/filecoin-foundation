@@ -1,9 +1,8 @@
-import { notFound } from 'next/navigation'
-
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { getDigestIssueDescription } from '@filecoin-foundation/utils/getDigestIssueDescription'
 import type { DigestIssueParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
@@ -19,29 +18,25 @@ import { PageSection } from '@/components/PageSection'
 
 import { DIGEST_SEO } from '../constants/seo'
 import { generateStructuredData } from '../utils/generateStructuredData'
-import { getAllDigestArticlesWithIssueContext } from '../utils/getDigestArticlesWithIssueContext'
+import { getDigestArticlesWithIssueContext } from '../utils/getDigestArticlesWithIssueContext'
 import {
-  getAllDigestIssuesData,
   getDigestIssueData,
+  getDigestIssuesData,
 } from '../utils/getDigestIssueData'
-import { parseDigestIssueParams } from '../utils/parseDigestParams'
+import { buildIssueSlug, parseIssueSlug } from '../utils/parseDigestParams'
 
 type DigestIssueProps = {
   params: Promise<DigestIssueParams>
 }
 
 export default async function DigestIssue(props: DigestIssueProps) {
-  const { issueNumber } = await parseDigestIssueParams(props.params)
+  const { issue } = await props.params
+  const issueNumber = parseIssueSlug(issue)
 
-  const digestIssue = await getDigestIssueData(issueNumber)
+  const { kicker, title, description, guestEditor } =
+    await getDigestIssueData(issueNumber)
 
-  if (!digestIssue) {
-    notFound()
-  }
-
-  const articles = await getAllDigestArticlesWithIssueContext({ issueNumber })
-
-  const { kicker, title } = digestIssue
+  const articles = await getDigestArticlesWithIssueContext(issueNumber)
 
   return (
     <PageLayout gap="large">
@@ -49,7 +44,11 @@ export default async function DigestIssue(props: DigestIssueProps) {
         structuredData={generateStructuredData(DIGEST_SEO)}
       />
 
-      <PageSection kicker={kicker} title={title}>
+      <PageSection
+        kicker={kicker}
+        title={title}
+        description={getDigestIssueDescription(description, guestEditor)}
+      >
         <CardGrid as="section" cols="smTwo">
           {articles.map((article, index) => {
             if (!article) return null
@@ -106,14 +105,15 @@ export default async function DigestIssue(props: DigestIssueProps) {
 }
 
 export async function generateStaticParams() {
-  const allIssues = await getAllDigestIssuesData()
+  const allIssues = await getDigestIssuesData()
   return allIssues.map(({ issueNumber }) => ({
-    issue: `issue-${issueNumber}`,
+    issue: buildIssueSlug(issueNumber),
   }))
 }
 
 export async function generateMetadata(props: DigestIssueProps) {
-  const { issueNumber } = await parseDigestIssueParams(props.params)
+  const { issue } = await props.params
+  const issueNumber = parseIssueSlug(issue)
 
   const digestIssue = await getDigestIssueData(issueNumber)
 

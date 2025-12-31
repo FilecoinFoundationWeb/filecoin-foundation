@@ -3,6 +3,8 @@ title: Navigating Crypto Policy Around the Globe
 created-on: 2023-10-16T18:01:20.033Z
 updated-on: 2023-10-16T18:01:20.039Z
 published-on: 2023-10-16T18:01:20.045Z
+issue-number: 1
+article-number: 6
 image:
   src: /assets/images/DWD-Illustration-06.png
 authors:

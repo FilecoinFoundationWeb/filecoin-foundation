@@ -172,7 +172,6 @@ collections:
       - name: "guest-editor"
         label: "Guest Editor"
         widget: "object"
-        required: false
         fields:
           - name: "full-name"
             label: "Full Name"
@@ -181,21 +180,6 @@ collections:
             label: "Job Title and Company"
             widget: "string"
             hint: "e.g., 'Co-Founder, Ansa Research'"
-      - name: "articles"
-        label: "Articles"
-        widget: "list"
-        field:
-          {
-            name: "title",
-            label: "Article Title",
-            widget: "relation",
-            collection: "digest_articles",
-            search_fields: ["title"],
-            value_field: "{{slug}}",
-            display_fields: ["title"],
-            filter: { field: "issue-number", value: "{{issue-number}}" },
-          }
-        hint: "Articles will be automatically numbered in the order they are added."
       - *image_config
       - *meta_config_with_title_fallback
 

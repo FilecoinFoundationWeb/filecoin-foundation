@@ -415,9 +415,46 @@ collections:
       - *body_config
       - *meta_config_with_title_fallback
 
+  - name: "digest_issues"
+    label: "Digest Issues"
+    folder: "apps/ff-site/src/content/digest/issues"
+    preview_path: "digest"
+    label_singular: "Digest Issue"
+    create: true
+    extension: "md"
+    slug: "{{issue-number}}"
+    fields:
+      - name: "issue-number"
+        label: "Issue Number"
+        widget: "number"
+        min: 1
+      - name: "title"
+        label: "Issue Title"
+        widget: "string"
+        hint: "e.g., 'The Inaugural Edition: All Systems Go'"
+      - name: "description"
+        label: "Issue Description"
+        widget: "text"
+      - *created_on
+      - *updated_on
+      - *published_on
+      - name: "guest-editor"
+        label: "Guest Editor"
+        widget: "object"
+        fields:
+          - name: "full-name"
+            label: "Full Name"
+            widget: "string"
+          - name: "title"
+            label: "Job Title and Company"
+            widget: "string"
+            hint: "e.g., 'Co-Founder, Ansa Research'"
+      - *image_config
+      - *meta_config_with_title_fallback
+
   - name: "digest_articles"
     label: "Digest Articles"
-    folder: "apps/ff-site/src/content/digest/"
+    folder: "apps/ff-site/src/content/digest/articles/"
     preview_path: "digest/{{slug}}"
     label_singular: "Digest Article"
     create: true

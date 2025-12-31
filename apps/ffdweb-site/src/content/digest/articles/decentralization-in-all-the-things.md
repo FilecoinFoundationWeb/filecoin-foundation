@@ -3,6 +3,8 @@ title: Decentralization In All the Things
 created-on: 2023-10-16T18:18:29.399Z
 updated-on: 2023-10-16T18:18:29.410Z
 published-on: 2023-10-16T18:18:29.417Z
+issue-number: 1
+article-number: 7
 image:
   src: /assets/images/DWD-Illustration-07.png
 authors:

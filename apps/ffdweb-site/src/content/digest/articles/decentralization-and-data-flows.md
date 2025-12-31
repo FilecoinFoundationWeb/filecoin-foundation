@@ -3,6 +3,8 @@ title: Decentralization and Data Flows
 created-on: 2023-10-18T19:00:51.708Z
 updated-on: 2023-10-18T19:00:51.715Z
 published-on: 2023-10-18T19:00:51.722Z
+issue-number: 1
+article-number: 11
 image:
   src: /assets/images/DWD-Illustration-11.png
 authors:

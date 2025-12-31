@@ -39,6 +39,7 @@ export function PageSection({
   return (
     <section>
       <SectionDivider title={kicker} />
+
       <div
         className={clsx('mt-4', {
           'grid grid-cols-1 gap-6 lg:grid-cols-2': image,
@@ -50,9 +51,12 @@ export function PageSection({
           <Heading tag="h2" variant="3xl">
             {title}
           </Heading>
+
           {description && <DescriptionText>{description}</DescriptionText>}
+
           {cta && <CTAButtonGroup cta={cta} />}
         </div>
+
         {image && (
           <Image
             src={image.data}
@@ -62,6 +66,7 @@ export function PageSection({
           />
         )}
       </div>
+
       {children && <div className="flex flex-col gap-6">{children}</div>}
     </section>
   )

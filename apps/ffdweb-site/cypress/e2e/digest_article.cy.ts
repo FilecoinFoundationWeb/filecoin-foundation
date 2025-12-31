@@ -8,25 +8,24 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
-const CONTENT_FOLDER = PATHS.DIGEST
+type DigestArticleFrontmatter = GenericEntryFrontmatter & {
+  'issue-number': number
+}
 
-describe('Digest Article Page', () => {
+const CONTENT_FOLDER = PATHS.DIGEST.articlesContentPath
+
+describe('Random Digest Article', () => {
   it(tests.metadata.prompt, () => {
-    cy.task<{ issueNumber: string; articleSlug: string }>(
-      'getRandomDigestArticleSlug',
-      CONTENT_FOLDER.issuePath,
-    ).then(({ issueNumber, articleSlug }) => {
-      cy.task<GenericEntryFrontmatter>(
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      cy.task<DigestArticleFrontmatter>(
         'getEntryFrontmatter',
-        path.join(CONTENT_FOLDER.articlesPath, articleSlug),
-      ).then(({ title, seo }) => {
+        path.join(CONTENT_FOLDER, slug),
+      ).then(({ title, seo, 'issue-number': issueNumber }) => {
         const seoTitle = seo.title || title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
-        const articlePath = `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}`
-
         tests.metadata.fn({
-          path: articlePath,
+          path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}`,
           title: metaTitleWithSuffix,
           description: seo.description,
           baseUrl: BASE_URL,
@@ -36,22 +35,28 @@ describe('Digest Article Page', () => {
   })
 
   it(tests.links.prompt, () => {
-    cy.task<{ issueNumber: string; articleSlug: string }>(
-      'getRandomDigestArticleSlug',
-      CONTENT_FOLDER.issuePath,
-    ).then(({ issueNumber, articleSlug }) => {
-      tests.links.fn(`${PATHS.DIGEST.issueUrl({ issueNumber })}/${articleSlug}`)
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      cy.task<DigestArticleFrontmatter>(
+        'getEntryFrontmatter',
+        path.join(CONTENT_FOLDER, slug),
+      ).then(({ 'issue-number': issueNumber }) => {
+        tests.links.fn(
+          `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}`,
+        )
+      })
     })
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<{ issueNumber: string; articleSlug: string }>(
-      'getRandomDigestArticleSlug',
-      CONTENT_FOLDER.issuePath,
-    ).then(({ issueNumber, articleSlug }) => {
-      tests.visualSnapshot.fn(
-        `${PATHS.DIGEST.issueUrl({ issueNumber })}/${articleSlug}`,
-      )
+    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
+      cy.task<DigestArticleFrontmatter>(
+        'getEntryFrontmatter',
+        path.join(CONTENT_FOLDER, slug),
+      ).then(({ 'issue-number': issueNumber }) => {
+        tests.visualSnapshot.fn(
+          `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}`,
+        )
+      })
     })
   })
 })
