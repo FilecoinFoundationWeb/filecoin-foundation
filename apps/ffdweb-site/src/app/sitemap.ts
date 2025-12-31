@@ -4,7 +4,6 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
-import { getDigestArticlesData } from '@/digest/utils/getDigestArticleData'
 import { getProjectsData } from '@/projects/utils/getProjectData'
 
 export default async function sitemap() {
@@ -16,10 +15,7 @@ export default async function sitemap() {
         getData: getBlogPostsData,
         basePath: PATHS.BLOG.path,
       },
-      {
-        getData: getDigestArticlesData,
-        basePath: PATHS.DIGEST.path,
-      },
+      // #todo: Add digest articles and issues
       {
         getData: getProjectsData,
         basePath: PATHS.PROJECTS.path,

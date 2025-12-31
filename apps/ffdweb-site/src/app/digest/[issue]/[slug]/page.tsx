@@ -17,7 +17,7 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 import { getDigestArticleData } from '@/digest/utils/getDigestArticleData'
 import { getDigestArticlesWithIssueContext } from '@/digest/utils/getDigestArticlesWithIssueContext'
-import { getAllDigestIssuesData } from '@/digest/utils/getDigestIssueData'
+import { getDigestIssuesData } from '@/digest/utils/getDigestIssueData'
 import { buildIssueSlug } from '@/digest/utils/parseDigestParams'
 
 type DigestArticleProps = {
@@ -71,7 +71,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
 }
 
 export async function generateStaticParams() {
-  const allIssues = await getAllDigestIssuesData()
+  const allIssues = await getDigestIssuesData()
 
   const params = await Promise.all(
     allIssues.map(async (issue) => {

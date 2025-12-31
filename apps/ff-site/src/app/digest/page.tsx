@@ -25,14 +25,14 @@ import { PageSection } from '@/components/PageSection'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getDigestArticlesWithIssueContext } from './utils/getDigestArticlesWithIssueContext'
 import {
-  getAllDigestIssuesData,
+  getDigestIssuesData,
   getDigestIssueData,
 } from './utils/getDigestIssueData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
 export default async function Digest() {
-  const allIssues = await getAllDigestIssuesData()
+  const allIssues = await getDigestIssuesData()
 
   const issueNumber = allIssues[0].issueNumber
 

@@ -1,5 +1,5 @@
 import {
-  getAllDigestIssuesData as sharedGetAllDigestIssuesData,
+  getDigestIssuesData as sharedGetAllDigestIssuesData,
   getDigestIssueData as sharedGetDigestIssueData,
 } from '@filecoin-foundation/utils/getDigestIssueData'
 import type { DigestIssueFrontmatter } from '@filecoin-foundation/utils/schemas/DigestIssueFrontmatterSchema'
@@ -12,6 +12,6 @@ export async function getDigestIssueData(
   return sharedGetDigestIssueData(issueNumber, PATHS.DIGEST.issuesContentPath)
 }
 
-export async function getAllDigestIssuesData() {
+export async function getDigestIssuesData() {
   return sharedGetAllDigestIssuesData(PATHS.DIGEST.issuesContentPath)
 }

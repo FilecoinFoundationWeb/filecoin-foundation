@@ -21,7 +21,7 @@ import { generateStructuredData } from '../utils/generateStructuredData'
 import { getDigestArticlesWithIssueContext } from '../utils/getDigestArticlesWithIssueContext'
 import {
   getDigestIssueData,
-  getAllDigestIssuesData,
+  getDigestIssuesData,
 } from '../utils/getDigestIssueData'
 import { buildIssueSlug, parseIssueSlug } from '../utils/parseDigestParams'
 
@@ -105,7 +105,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
 }
 
 export async function generateStaticParams() {
-  const allIssues = await getAllDigestIssuesData()
+  const allIssues = await getDigestIssuesData()
   return allIssues.map(({ issueNumber }) => ({
     issue: buildIssueSlug(issueNumber),
   }))

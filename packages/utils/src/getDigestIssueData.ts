@@ -11,7 +11,7 @@ export async function getDigestIssueData(
   return transformDigestIssueData(data)
 }
 
-export async function getAllDigestIssuesData(directoryPath: string) {
+export async function getDigestIssuesData(directoryPath: string) {
   const allIssues = await getAllMarkdownData({
     directoryPath,
     zodSchema: DigestIssueFrontmatterSchema,
@@ -40,6 +40,7 @@ function transformDigestIssueData(
 ) {
   return {
     ...issue,
+    // slug: buildIssueSlug(issue.issueNumber), // #todo: Add this line - transforms to 'issue-1', 'issue-2', etc.
     kicker: `Issue ${issue.issueNumber} - ${formatDate(issue.publishedOn, 'MMM yyyy')}`,
     seo: {
       ...issue.seo,
