@@ -89,11 +89,11 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
-  const { slug: articleSlug } = await props.params
-  const { seo, image, issueNumber } = await getDigestArticleData(articleSlug)
+  const { slug } = await props.params
+  const { seo, image, issueNumber } = await getDigestArticleData(slug)
 
   return createMetadata({
-    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}` as `/${string}`,
+    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}` as `/${string}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,

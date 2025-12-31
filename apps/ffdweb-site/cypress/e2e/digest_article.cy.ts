@@ -8,20 +8,24 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
+type DigestArticleFrontmatter = GenericEntryFrontmatter & {
+  'issue-number': number
+}
+
 const CONTENT_FOLDER = PATHS.DIGEST.articlesContentPath
 
 describe('Random Digest Article', () => {
   it(tests.metadata.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      cy.task<GenericEntryFrontmatter>(
+      cy.task<DigestArticleFrontmatter>(
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
-      ).then(({ title, seo }) => {
+      ).then(({ title, seo, 'issue-number': issueNumber }) => {
         const seoTitle = seo.title || title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
         tests.metadata.fn({
-          path: `${PATHS.DIGEST.articleUrl({ issueNumber: Number(slug), articleSlug: slug })}`,
+          path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}`,
           title: metaTitleWithSuffix,
           description: seo.description,
           baseUrl: BASE_URL,
@@ -32,17 +36,27 @@ describe('Random Digest Article', () => {
 
   it(tests.links.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.links.fn(
-        `${PATHS.DIGEST.articleUrl({ issueNumber: Number(slug), articleSlug: slug })}`,
-      )
+      cy.task<DigestArticleFrontmatter>(
+        'getEntryFrontmatter',
+        path.join(CONTENT_FOLDER, slug),
+      ).then(({ 'issue-number': issueNumber }) => {
+        tests.links.fn(
+          `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}`,
+        )
+      })
     })
   })
 
   it(tests.visualSnapshot.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(
-        `${PATHS.DIGEST.articleUrl({ issueNumber: Number(slug), articleSlug: slug })}`,
-      )
+      cy.task<DigestArticleFrontmatter>(
+        'getEntryFrontmatter',
+        path.join(CONTENT_FOLDER, slug),
+      ).then(({ 'issue-number': issueNumber }) => {
+        tests.visualSnapshot.fn(
+          `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}`,
+        )
+      })
     })
   })
 })
