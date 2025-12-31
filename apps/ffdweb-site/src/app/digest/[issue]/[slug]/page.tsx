@@ -90,13 +90,13 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: DigestArticleProps) {
   const { slug: articleSlug } = await props.params
-
-  const { image, seo } = await getDigestArticleData(articleSlug)
+  const { seo, image, issueNumber } = await getDigestArticleData(articleSlug)
 
   return {
     title: seo.title,
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,
+    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}`,
     openGraph: { type: 'article' },
   }
 }
