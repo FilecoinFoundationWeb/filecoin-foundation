@@ -12,13 +12,13 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
+import { getDigestArticleData } from '../../utils/getDigestArticleData'
+import { getDigestArticlesWithIssueContext } from '../../utils/getDigestArticlesWithIssueContext'
+import { getDigestIssuesData } from '../../utils/getDigestIssueData'
+import { buildIssueSlug } from '../../utils/parseDigestParams'
+
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
-
-import { getDigestArticleData } from '@/digest/utils/getDigestArticleData'
-import { getDigestArticlesWithIssueContext } from '@/digest/utils/getDigestArticlesWithIssueContext'
-import { getDigestIssuesData } from '@/digest/utils/getDigestIssueData'
-import { buildIssueSlug } from '@/digest/utils/parseDigestParams'
 
 type DigestArticleProps = {
   params: Promise<DigestArticleParams>
@@ -26,9 +26,7 @@ type DigestArticleProps = {
 
 export default async function DigestArticle(props: DigestArticleProps) {
   const { slug: articleSlug } = await props.params
-
   const article = await getDigestArticleData(articleSlug)
-
   const { title, issueNumber, articleNumber, image, authors, content, slug } =
     article
 
