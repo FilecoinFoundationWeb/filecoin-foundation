@@ -4,6 +4,7 @@ import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { getDigestIssueDescription } from '@filecoin-foundation/utils/getDigestIssueDescription'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -51,10 +52,10 @@ export default async function Digest() {
       <PageSection
         kicker={issue.kicker}
         title={issue.title}
-        description={[
-          'Featuring Guest Editor Jonathan Victor, Co-Founder, Ansa Research',
-          ...issue.description.split('\n'),
-        ]}
+        description={getDigestIssueDescription(
+          issue.description,
+          issue.guestEditor,
+        )}
       >
         <CardGrid as="section" cols="smTwo">
           {articles.map((article) => {

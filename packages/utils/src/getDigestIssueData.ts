@@ -47,3 +47,5 @@ function transformDigestIssueData(
     },
   }
 }
+
+export type DigestIssueData = Awaited<ReturnType<typeof getDigestIssueData>>

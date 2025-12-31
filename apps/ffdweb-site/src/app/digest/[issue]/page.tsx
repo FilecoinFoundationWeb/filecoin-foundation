@@ -2,6 +2,7 @@ import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { getDigestIssueDescription } from '@filecoin-foundation/utils/getDigestIssueDescription'
 import type { DigestIssueParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
@@ -32,7 +33,8 @@ export default async function DigestIssue(props: DigestIssueProps) {
   const { issue } = await props.params
   const issueNumber = parseIssueSlug(issue)
 
-  const { kicker, title } = await getDigestIssueData(issueNumber)
+  const { kicker, title, description, guestEditor } =
+    await getDigestIssueData(issueNumber)
 
   const articles = await getDigestArticlesWithIssueContext(issueNumber)
 
@@ -42,7 +44,11 @@ export default async function DigestIssue(props: DigestIssueProps) {
         structuredData={generateStructuredData(DIGEST_SEO)}
       />
 
-      <PageSection kicker={kicker} title={title}>
+      <PageSection
+        kicker={kicker}
+        title={title}
+        description={getDigestIssueDescription(description, guestEditor)}
+      >
         <CardGrid as="section" cols="smTwo">
           {articles.map((article, index) => {
             if (!article) return null

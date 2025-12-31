@@ -22,6 +22,7 @@
     "./getDigestArticleData": "./src/getDigestArticleData.ts",
     "./getDigestArticlesWithIssueContext": "./src/getDigestArticlesWithIssueContext.ts",
     "./getDigestIssueData": "./src/getDigestIssueData.ts",
+    "./getDigestIssueDescription": "./src/getDigestIssueDescription.ts",
     "./getFeaturedBlogPosts": "./src/getFeaturedBlogPosts.ts",
     "./getFeaturedEntry": "./src/getFeaturedEntry.ts",
     "./getMarkdownData": "./src/getMarkdownData.ts",
