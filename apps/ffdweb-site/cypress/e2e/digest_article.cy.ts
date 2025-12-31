@@ -21,7 +21,7 @@ describe('Random Digest Article', () => {
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
         tests.metadata.fn({
-          path: path.join(PATHS.DIGEST.path, slug),
+          path: `${PATHS.DIGEST.articleUrl({ issueNumber: Number(slug), articleSlug: slug })}`,
           title: metaTitleWithSuffix,
           description: seo.description,
           baseUrl: BASE_URL,
@@ -32,13 +32,17 @@ describe('Random Digest Article', () => {
 
   it(tests.links.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.links.fn(path.join(PATHS.DIGEST.path, slug))
+      tests.links.fn(
+        `${PATHS.DIGEST.articleUrl({ issueNumber: Number(slug), articleSlug: slug })}`,
+      )
     })
   })
 
   it(tests.visualSnapshot.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(path.join(PATHS.DIGEST.path, slug))
+      tests.visualSnapshot.fn(
+        `${PATHS.DIGEST.articleUrl({ issueNumber: Number(slug), articleSlug: slug })}`,
+      )
     })
   })
 })
