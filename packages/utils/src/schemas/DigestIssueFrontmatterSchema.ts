@@ -12,7 +12,7 @@ const DigestIssueFields = {
   'issue-number': z.number().int().positive(),
   title: z.string(),
   description: z.string(),
-  'guest-editor': GuestEditorSchema.optional(),
+  'guest-editor': GuestEditorSchema,
   image: ImagePropsSchema.optional(),
 }
 

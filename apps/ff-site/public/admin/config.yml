@@ -441,7 +441,6 @@ collections:
       - name: "guest-editor"
         label: "Guest Editor"
         widget: "object"
-        required: false
         fields:
           - name: "full-name"
             label: "Full Name"
