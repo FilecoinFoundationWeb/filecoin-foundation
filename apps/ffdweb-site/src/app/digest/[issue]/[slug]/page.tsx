@@ -6,7 +6,7 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import type { DigestArticleParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
+import { BASE_URL, ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -91,7 +91,7 @@ export async function generateMetadata(props: DigestArticleProps) {
   const { seo, image, issueNumber } = await getDigestArticleData(articleSlug)
 
   return {
-    title: seo.title,
+    title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,
     path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}`,
