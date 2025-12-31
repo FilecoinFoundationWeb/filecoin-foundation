@@ -10,6 +10,8 @@ import { BASE_URL, ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
+import { createMetadata } from '@/utils/createMetadata'
+
 import { MarkdownContent } from '@/components/MarkdownContent'
 
 import { getDigestArticleData } from '../../utils/getDigestArticleData'
@@ -90,11 +92,11 @@ export async function generateMetadata(props: DigestArticleProps) {
   const { slug: articleSlug } = await props.params
   const { seo, image, issueNumber } = await getDigestArticleData(articleSlug)
 
-  return {
+  return createMetadata({
+    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}` as `/${string}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,
-    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug })}`,
     openGraph: { type: 'article' },
-  }
+  })
 }
