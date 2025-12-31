@@ -8,6 +8,6 @@ export async function getDigestArticlesWithIssueContext(
 ) {
   return sharedGetDigestArticlesWithIssueContext({
     issueNumber,
-    directoryPath: PATHS.DIGEST.articlesPath,
+    directoryPath: PATHS.DIGEST.articlesContentPath,
   })
 }

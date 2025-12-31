@@ -8,7 +8,7 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
-const CONTENT_FOLDER = PATHS.DIGEST.issuePath
+const CONTENT_FOLDER = PATHS.DIGEST.issuesContentPath
 
 describe('Digest Issue Page', () => {
   it(tests.metadata.prompt, () => {

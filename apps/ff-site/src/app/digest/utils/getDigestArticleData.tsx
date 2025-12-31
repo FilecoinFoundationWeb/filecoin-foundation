@@ -6,9 +6,9 @@ import {
 import { PATHS } from '@/constants/paths'
 
 export async function getDigestArticleData(slug: string) {
-  return sharedGetDigestArticleData(slug, PATHS.DIGEST.articlesPath)
+  return sharedGetDigestArticleData(slug, PATHS.DIGEST.articlesContentPath)
 }
 
 export async function getDigestArticlesData() {
-  return sharedGetDigestArticlesData(PATHS.DIGEST.articlesPath)
+  return sharedGetDigestArticlesData(PATHS.DIGEST.articlesContentPath)
 }

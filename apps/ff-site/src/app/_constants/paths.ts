@@ -53,8 +53,8 @@ export const PATHS = {
   ),
   DIGEST: {
     ...createPathConfig('/digest', 'Digest'),
-    issuesPath: `${CONTENT_ROOT}/digest/issues`,
-    articlesPath: `${CONTENT_ROOT}/digest/articles`,
+    articlesContentPath: `${CONTENT_ROOT}/digest/articles`,
+    issuesContentPath: `${CONTENT_ROOT}/digest/issues`,
   },
   ECOSYSTEM_EXPLORER: createPathConfig(
     '/ecosystem-explorer',

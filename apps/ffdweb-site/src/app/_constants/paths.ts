@@ -43,8 +43,8 @@ export const PATHS = {
   }),
   DIGEST: {
     ...createPathConfig('/digest', 'Digest'),
-    articlesPath: `${CONTENT_ROOT}/digest/articles`,
-    issuePath: `${CONTENT_ROOT}/digest/issues`,
+    articlesContentPath: `${CONTENT_ROOT}/digest/articles`,
+    issuesContentPath: `${CONTENT_ROOT}/digest/issues`,
     issueUrl: ({ issueNumber }: IssueUrlProps) =>
       `/digest/${buildIssueSlug(issueNumber)}`,
     articleUrl: ({ issueNumber, articleSlug }: ArticleUrlProps) =>

@@ -9,9 +9,9 @@ import { PATHS } from '@/constants/paths'
 export async function getDigestIssueData(
   issueNumber: DigestIssueFrontmatter['issue-number'],
 ) {
-  return sharedGetDigestIssueData(issueNumber, PATHS.DIGEST.issuePath)
+  return sharedGetDigestIssueData(issueNumber, PATHS.DIGEST.issuesContentPath)
 }
 
 export async function getAllDigestIssuesData() {
-  return sharedGetAllDigestIssuesData(PATHS.DIGEST.issuePath)
+  return sharedGetAllDigestIssuesData(PATHS.DIGEST.issuesContentPath)
 }
