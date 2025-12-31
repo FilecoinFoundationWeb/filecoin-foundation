@@ -19,13 +19,11 @@ export async function getDigestArticlesData(directoryPath: string) {
     zodSchema: DigestArticleFrontmatterSchema,
   })
 
-  const transformedArticles = allArticles
+  validateUniqueArticleNumbers(allArticles)
+
+  return allArticles
     .map(transformDigestArticleData)
     .sort((a, b) => a.articleNumber - b.articleNumber)
-
-  validateUniqueArticleNumbers(transformedArticles)
-
-  return transformedArticles
 }
 
 function getDigestMarkdownData(slug: string, directoryPath: string) {
