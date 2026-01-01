@@ -7,7 +7,7 @@ import { PATHS } from '@/constants/paths'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Card } from '@/components/Card'
-import Header from '@/components/Header'
+import { Header } from '@/components/Header'
 
 import { homepageCards, otherResources } from './data/homepage'
 

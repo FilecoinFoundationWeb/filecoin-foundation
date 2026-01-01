@@ -1,178 +1,162 @@
 [
   {
     "path": "/",
-    "score": 0.95,
-    "performance": 0.92,
-    "accessibility": 1,
+    "score": 0.94,
+    "performance": 0.91,
+    "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 0.92
   },
   {
     "path": "/about",
-    "score": 0.99,
-    "performance": 0.98,
-    "accessibility": 1,
+    "score": 0.96,
+    "performance": 0.93,
+    "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/blog",
-    "score": 0.92,
-    "performance": 0.74,
-    "accessibility": 0.94,
+    "score": 0.91,
+    "performance": 0.73,
+    "accessibility": 0.91,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/blog/welcome-to-the-forest-with-chainsafe-s-filecoin",
-    "score": 0.98,
-    "performance": 0.95,
+    "path": "/blog/filecoin-foundation-joins-blockchain-for-europe",
+    "score": 0.99,
+    "performance": 0.99,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/digest",
-    "score": 0.97,
-    "performance": 0.91,
-    "accessibility": 1,
+    "score": 0.96,
+    "performance": 0.92,
+    "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 1
   },
   {
-    "path": "/digest/letter-from-the-guest-editor",
-    "score": 0.96,
-    "performance": 0.82,
-    "accessibility": 1,
+    "path": "/digest/from-participant-to-organizer-how-community-led-activities-drive-innovation-in-decentralized-systems",
+    "score": 0.97,
+    "performance": 0.93,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/ecosystem-explorer",
-    "score": 0.95,
-    "performance": 0.97,
-    "accessibility": 0.94,
+    "score": 0.91,
+    "performance": 0.84,
+    "accessibility": 0.91,
     "best-practices": 0.96,
     "seo": 0.92
   },
   {
-    "path": "/ecosystem-explorer/atlas-experiment-at-cern",
-    "score": 0.95,
-    "performance": 0.99,
-    "accessibility": 1,
-    "best-practices": 0.82,
+    "path": "/ecosystem-explorer/bagel",
+    "score": 0.98,
+    "performance": 0.96,
+    "accessibility": 0.96,
+    "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/employee-privacy-policy",
-    "score": 0.94,
+    "score": 0.98,
     "performance": 0.96,
     "accessibility": 0.96,
-    "best-practices": 0.82,
+    "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/events",
-    "score": 0.98,
-    "performance": 0.97,
-    "accessibility": 0.94,
+    "score": 0.97,
+    "performance": 0.98,
+    "accessibility": 0.91,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/events/hackathon-browsers-3000",
-    "score": 1,
-    "performance": 0.99,
-    "accessibility": 1,
+    "score": 0.98,
+    "performance": 0.96,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/filecoin-plus",
-    "score": 0.99,
+    "score": 0.98,
     "performance": 0.98,
-    "accessibility": 1,
+    "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/filecoin-plus/allocators",
-    "score": 0.96,
-    "performance": 0.86,
-    "accessibility": 1,
+    "score": 0.98,
+    "performance": 0.99,
+    "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/governance",
-    "score": 0.96,
+    "score": 0.95,
     "performance": 0.95,
-    "accessibility": 1,
+    "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 0.92
   },
   {
     "path": "/governance/govhub",
     "score": 0.95,
-    "performance": 0.91,
-    "accessibility": 1,
+    "performance": 0.95,
+    "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 0.92
   },
   {
     "path": "/grants",
-    "score": 0.95,
-    "performance": 0.92,
-    "accessibility": 1,
+    "score": 0.91,
+    "performance": 0.82,
+    "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 0.92
   },
   {
     "path": "/orbit",
-    "score": 0.96,
-    "performance": 0.92,
+    "score": 0.97,
+    "performance": 0.96,
     "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 1
   },
   {
-    "path": "/privacy-policy",
-    "score": 0.94,
-    "performance": 0.96,
-    "accessibility": 0.96,
-    "best-practices": 0.82,
-    "seo": 1
-  },
-  {
     "path": "/security",
-    "score": 0.98,
-    "performance": 0.94,
-    "accessibility": 1,
+    "score": 0.94,
+    "performance": 0.82,
+    "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/security/bug-bounty/leaderboard",
-    "score": 1,
-    "performance": 0.98,
-    "accessibility": 1,
-    "best-practices": 1,
-    "seo": 1
-  },
-  {
-    "path": "/security/coordinated-disclosure-policy",
     "score": 0.99,
-    "performance": 0.96,
-    "accessibility": 1,
+    "performance": 0.99,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/terms-of-use",
-    "score": 0.94,
-    "performance": 0.96,
+    "path": "/security/maturity-model",
+    "score": 0.98,
+    "performance": 0.98,
     "accessibility": 0.96,
-    "best-practices": 0.82,
+    "best-practices": 0.96,
     "seo": 1
   }
 ]

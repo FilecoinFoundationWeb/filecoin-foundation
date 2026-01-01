@@ -1,32 +1,32 @@
 [
   {
     "path": "/",
-    "score": 0.98,
-    "performance": 0.93,
-    "accessibility": 1,
+    "score": 0.97,
+    "performance": 0.92,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/about",
-    "score": 0.97,
-    "performance": 0.89,
-    "accessibility": 1,
+    "score": 0.99,
+    "performance": 0.98,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/blog",
     "score": 0.99,
-    "performance": 0.94,
-    "accessibility": 1,
+    "performance": 0.98,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/blog/how-to-make-an-impact-on-tech-policy-a-q-a-with-travis-moore-founder-of-techcongress",
+    "path": "/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records",
     "score": 0.98,
-    "performance": 0.99,
+    "performance": 0.98,
     "accessibility": 0.94,
     "best-practices": 1,
     "seo": 1
@@ -34,16 +34,8 @@
   {
     "path": "/digest",
     "score": 0.97,
-    "performance": 0.87,
-    "accessibility": 1,
-    "best-practices": 1,
-    "seo": 1
-  },
-  {
-    "path": "/digest/recognizing-code-as-speech-is-vital",
-    "score": 0.97,
-    "performance": 0.89,
-    "accessibility": 0.98,
+    "performance": 0.9,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
@@ -57,42 +49,42 @@
   },
   {
     "path": "/learning-resources",
-    "score": 0.99,
-    "performance": 0.95,
-    "accessibility": 1,
+    "score": 0.98,
+    "performance": 0.97,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/privacy-policy",
-    "score": 0.95,
+    "score": 0.98,
     "performance": 0.96,
-    "accessibility": 1,
-    "best-practices": 0.82,
+    "accessibility": 0.96,
+    "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/projects",
-    "score": 0.97,
-    "performance": 0.97,
-    "accessibility": 1,
+    "score": 0.96,
+    "performance": 0.94,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 0.92
   },
   {
-    "path": "/projects/connect-humanity",
-    "score": 1,
+    "path": "/projects/decentralized-future-council",
+    "score": 0.99,
     "performance": 0.98,
-    "accessibility": 1,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/terms-of-use",
-    "score": 0.95,
+    "score": 0.98,
     "performance": 0.96,
-    "accessibility": 1,
-    "best-practices": 0.82,
+    "accessibility": 0.96,
+    "best-practices": 1,
     "seo": 1
   }
 ]

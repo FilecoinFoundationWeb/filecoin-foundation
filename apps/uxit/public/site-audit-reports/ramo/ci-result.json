@@ -25,32 +25,32 @@
   },
   {
     "path": "/cloud-services",
-    "score": 0.92,
-    "performance": 0.84,
+    "score": 0.94,
+    "performance": 0.93,
     "accessibility": 0.91,
     "best-practices": 0.93,
     "seo": 1
   },
   {
     "path": "/events",
-    "score": 0.86,
-    "performance": 0.91,
+    "score": 0.89,
+    "performance": 0.85,
     "accessibility": 0.91,
-    "best-practices": 0.71,
+    "best-practices": 0.89,
     "seo": 0.91
   },
   {
     "path": "/legal/privacy-policy",
-    "score": 0.93,
-    "performance": 0.83,
+    "score": 0.95,
+    "performance": 0.91,
     "accessibility": 0.92,
     "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/network",
-    "score": 0.95,
-    "performance": 0.96,
+    "score": 0.93,
+    "performance": 0.86,
     "accessibility": 0.91,
     "best-practices": 0.93,
     "seo": 1
@@ -58,7 +58,7 @@
   {
     "path": "/stake",
     "score": 0.95,
-    "performance": 0.95,
+    "performance": 0.94,
     "accessibility": 0.92,
     "best-practices": 0.93,
     "seo": 1

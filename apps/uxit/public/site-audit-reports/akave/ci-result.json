@@ -1,80 +1,64 @@
 [
   {
     "path": "/",
-    "score": 0.98,
-    "performance": 0.97,
+    "score": 0.96,
+    "performance": 0.87,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/about-us",
-    "score": 0.95,
-    "performance": 0.85,
-    "accessibility": 0.96,
-    "best-practices": 1,
-    "seo": 1
-  },
-  {
-    "path": "/akavecloud-contact",
-    "score": 0.98,
-    "performance": 0.95,
-    "accessibility": 0.96,
-    "best-practices": 1,
+    "score": 0.89,
+    "performance": 0.65,
+    "accessibility": 0.97,
+    "best-practices": 0.93,
     "seo": 1
   },
   {
     "path": "/blog",
-    "score": 0.93,
-    "performance": 0.75,
+    "score": 0.92,
+    "performance": 0.73,
     "accessibility": 0.95,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/blog/akave-protocol-o3-update-object-retention-acl-enforcement-and-performance-gains",
+    "path": "/blog/breaking-down-data-silos-with-akave-baselight-store-monetize-control",
     "score": 0.97,
-    "performance": 0.98,
-    "accessibility": 0.96,
+    "performance": 0.92,
+    "accessibility": 0.97,
     "best-practices": 1,
-    "seo": 0.92
+    "seo": 1
   },
   {
     "path": "/ecosystem",
     "score": 0.89,
-    "performance": 0.73,
+    "performance": 0.72,
     "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 0.92
   },
   {
-    "path": "/ecosystem/finisterra",
-    "score": 0.91,
-    "performance": 0.75,
+    "path": "/ecosystem/xtrace",
+    "score": 0.9,
+    "performance": 0.74,
     "accessibility": 0.95,
     "best-practices": 1,
     "seo": 0.92
   },
   {
-    "path": "/enterprise/s3-cloud-storage",
-    "score": 0.98,
-    "performance": 0.95,
-    "accessibility": 0.96,
-    "best-practices": 1,
-    "seo": 1
-  },
-  {
     "path": "/testnet",
-    "score": 0.99,
-    "performance": 0.96,
+    "score": 0.9,
+    "performance": 0.6,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/unsubscribe",
-    "score": 0.98,
-    "performance": 0.95,
+    "score": 0.97,
+    "performance": 0.93,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1

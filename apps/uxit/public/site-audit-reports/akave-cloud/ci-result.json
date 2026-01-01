@@ -1,54 +1,70 @@
 [
   {
     "path": "/",
-    "score": 0.91,
-    "performance": 0.75,
-    "accessibility": 0.95,
+    "score": 0.92,
+    "performance": 0.7,
+    "accessibility": 0.96,
     "best-practices": 1,
-    "seo": 0.92
+    "seo": 1
   },
   {
     "path": "/about-us",
-    "score": 0.93,
-    "performance": 0.77,
+    "score": 0.89,
+    "performance": 0.64,
     "accessibility": 0.93,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/akave-cloud",
-    "score": 0.94,
-    "performance": 0.84,
+    "path": "/akave-cloud-pricing",
+    "score": 0.91,
+    "performance": 0.71,
+    "accessibility": 0.93,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/akave-object-storage",
+    "score": 0.91,
+    "performance": 0.73,
     "accessibility": 0.91,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/blog",
-    "score": 0.97,
-    "performance": 0.9,
+    "score": 0.88,
+    "performance": 0.62,
     "accessibility": 0.96,
     "best-practices": 1,
-    "seo": 1
+    "seo": 0.92
   },
   {
-    "path": "/blog/akave-cloud-x-filecoin-empowering-verifiable-data-storage",
-    "score": 0.96,
-    "performance": 0.87,
-    "accessibility": 0.96,
+    "path": "/blog/october-engineering-update-o3-gets-faster-leaner-and-more-operator-friendly",
+    "score": 0.97,
+    "performance": 0.92,
+    "accessibility": 0.95,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/contact",
-    "score": 0.91,
-    "performance": 0.92,
-    "accessibility": 0.93,
-    "best-practices": 0.79,
+    "score": 0.92,
+    "performance": 0.72,
+    "accessibility": 0.96,
+    "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/knowledge-center",
+    "path": "/depin-storage",
+    "score": 0.93,
+    "performance": 0.91,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.83
+  },
+  {
+    "path": "/free-trial",
     "score": 0.9,
     "performance": 0.73,
     "accessibility": 0.96,
@@ -56,49 +72,97 @@
     "seo": 0.92
   },
   {
-    "path": "/pricing",
+    "path": "/how-it-works",
+    "score": 0.9,
+    "performance": 0.64,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/knowledge-center",
+    "score": 0.91,
+    "performance": 0.77,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.92
+  },
+  {
+    "path": "/pricing-wip",
     "score": 0.92,
-    "performance": 0.75,
-    "accessibility": 0.92,
+    "performance": 0.76,
+    "accessibility": 0.93,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/privacy-policy",
     "score": 0.93,
-    "performance": 0.85,
+    "performance": 0.84,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 0.92
+  },
+  {
+    "path": "/product",
+    "score": 0.93,
+    "performance": 0.81,
+    "accessibility": 0.93,
+    "best-practices": 0.96,
+    "seo": 1
+  },
+  {
+    "path": "/s3-compatible-storage",
+    "score": 0.93,
+    "performance": 0.91,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.83
+  },
+  {
+    "path": "/solutions/snowflake",
+    "score": 0.91,
+    "performance": 0.74,
+    "accessibility": 0.96,
+    "best-practices": 0.93,
+    "seo": 1
+  },
+  {
+    "path": "/storage-for-ai",
+    "score": 0.93,
+    "performance": 0.91,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.83
   },
   {
     "path": "/terms-of-service",
-    "score": 0.96,
-    "performance": 0.94,
+    "score": 0.95,
+    "performance": 0.92,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 0.92
+  },
+  {
+    "path": "/updates",
+    "score": 0.92,
+    "performance": 0.9,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.83
   },
   {
     "path": "/use-cases",
-    "score": 0.92,
-    "performance": 0.79,
-    "accessibility": 0.96,
-    "best-practices": 1,
-    "seo": 0.92
-  },
-  {
-    "path": "/why-akave-cloud",
     "score": 0.95,
-    "performance": 0.93,
+    "performance": 0.91,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 0.92
   },
   {
     "path": "/workshop",
-    "score": 0.98,
-    "performance": 0.96,
+    "score": 0.97,
+    "performance": 0.92,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1

@@ -32,6 +32,7 @@ export default function SiteAuditPage() {
           and include performance metrics, accessibility scores, best practices
           analysis, and SEO recommendations.
         </p>
+        <p className="text-sm">Last updated: 2026-01-01</p>
       </header>
 
       <CardGrid as="section" cols="smTwoLgThree">

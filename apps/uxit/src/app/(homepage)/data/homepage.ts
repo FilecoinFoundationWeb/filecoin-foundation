@@ -73,7 +73,7 @@ export const homepageCards: HomepageCard[] = [
 
 export const otherResources: Resource[] = [
   {
-    href: 'https://filecoin.notion.site/Minimum-Viable-Discoverability-Checklist-19a7631f28258017b602ef3ba4e92ae3?pvs=74',
+    href: 'https://filecoin.notion.site/Minimum-Viable-Discoverability-Checklist-19a7631f28258017b602ef3ba4e92ae3',
     children: 'Minimum Viable Discoverability Checklist',
   },
   {

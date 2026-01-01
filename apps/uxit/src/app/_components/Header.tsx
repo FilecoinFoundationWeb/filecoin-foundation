@@ -1,4 +1,4 @@
-function Header() {
+export function Header() {
   return (
     <header className="flex flex-col items-center gap-5 text-center">
       <span className="font-semibold text-indigo-800">UXIT</span>
@@ -15,5 +15,3 @@ function Header() {
     </header>
   )
 }
-
-export default Header

@@ -40,8 +40,8 @@ export const siteMetadataList: SiteMetadata[] = [
     id: 'ramo',
     name: 'Ramo',
   },
-  {
-    id: 'storacha',
-    name: 'Storacha Network',
-  },
+  // {
+  //   id: 'storacha',
+  //   name: 'Storacha Network',
+  // },
 ]
