@@ -2,7 +2,7 @@
   {
     "path": "/",
     "score": 0.75,
-    "performance": 0.62,
+    "performance": 0.61,
     "accessibility": 0.82,
     "best-practices": 0.82,
     "seo": 0.75
@@ -17,8 +17,8 @@
   },
   {
     "path": "/pricing",
-    "score": 0.82,
-    "performance": 0.68,
+    "score": 0.83,
+    "performance": 0.69,
     "accessibility": 0.86,
     "best-practices": 1,
     "seo": 0.75

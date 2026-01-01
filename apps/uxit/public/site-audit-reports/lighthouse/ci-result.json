@@ -1,58 +1,58 @@
 [
   {
     "path": "/",
-    "score": 0.94,
-    "performance": 0.74,
+    "score": 0.92,
+    "performance": 0.73,
     "accessibility": 1,
-    "best-practices": 1,
+    "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/blogs",
-    "score": 0.97,
-    "performance": 0.89,
+    "score": 0.93,
+    "performance": 0.75,
     "accessibility": 1,
-    "best-practices": 1,
+    "best-practices": 0.96,
     "seo": 1
   },
   {
-    "path": "/blogs/On-Chain%20Encryption%3A%20Security%20Unveiled",
-    "score": 0.97,
-    "performance": 0.88,
+    "path": "/blogs/Lighthouse%20Monthly%20Update%20%E2%80%93%20April%202025",
+    "score": 0.96,
+    "performance": 0.86,
     "accessibility": 1,
-    "best-practices": 1,
+    "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/documentation",
-    "score": 0.98,
-    "performance": 0.9,
+    "score": 0.97,
+    "performance": 0.91,
     "accessibility": 1,
-    "best-practices": 1,
+    "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/ecosystem",
-    "score": 0.89,
+    "score": 0.93,
     "performance": 0.74,
     "accessibility": 1,
-    "best-practices": 0.82,
+    "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/faq",
-    "score": 0.95,
+    "score": 0.94,
     "performance": 0.85,
     "accessibility": 0.96,
-    "best-practices": 1,
+    "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/pricing",
-    "score": 0.98,
-    "performance": 0.96,
+    "score": 0.93,
+    "performance": 0.79,
     "accessibility": 1,
-    "best-practices": 0.96,
+    "best-practices": 0.93,
     "seo": 1
   }
 ]
