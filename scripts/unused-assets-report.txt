@@ -2,31 +2,19 @@ UNUSED ASSETS REPORT
 ===================
 
 ff-site:
-  public/assets/images/slide-16_9-1.webp
-  public/assets/images/marta-belcher-filecoin-foundation.webp
-  public/assets/images/marco-de-rossi-metamask-1-.webp
-  public/assets/images/66d74e4db714067e4cabed3f_image-6.webp
-  public/assets/images/1745403328875.webp
-  public/assets/images/1728467665082.webp
-  public/assets/images/1687336501122.webp
-  public/assets/images/1670490998296.webp
-  public/assets/images/1648161259450.webp
-  public/assets/images/1605526794028.webp
-  public/assets/images/1571900126220.webp
-  public/assets/images/1553381322360.webp
-  public/assets/images/1545691189584.webp
-  public/assets/images/1516955240728.webp
-  Total: 14
+  public/assets/images/beryx_logo_white.png
+  Total: 1
 
 ffdweb-site:
   Total: 0
 
 filecoin-site:
-  Total: 0
+  public/assets/images/lab-team.webp
+  Total: 1
 
 uxit:
   Total: 0
 
-Total unused: 14
-Total deleted: 14
-Generated: 2025-12-01T02:54:37.196Z
+Total unused: 2
+Total deleted: 2
+Generated: 2026-01-01T02:54:08.393Z
