@@ -46,4 +46,4 @@ GhostDrive is now available on the [Apple App Store](https://apps.apple.com/us/a
 
 ---
 
-**Dig deeper**: Explore GhostDrive's solutions through the documentation at [docs.ghostdrive.com](http://docs.ghostdrive.com) and catch GhostDrive founder [Roman Nebo’s keynote from FIL Bangalore](https://www.youtube.com/watch?v=D0Mh3ZDA-3Y) where he explores the challenges and opportunities associated with traditional centralized storage systems and unveils new GhostDrive solutions.
+**Dig deeper**: Catch GhostDrive founder [Roman Nebo’s keynote from FIL Bangalore](https://www.youtube.com/watch?v=D0Mh3ZDA-3Y) where he explores the challenges and opportunities associated with traditional centralized storage systems and unveils new GhostDrive solutions.

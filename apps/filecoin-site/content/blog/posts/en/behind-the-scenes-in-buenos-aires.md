@@ -96,4 +96,4 @@ FDS-7 was the linchpin for conversations that the community can build on and car
 
 ### Get Involved 
 
-Ready to start building with Filecoin Onchain Cloud? Join the Filecoin Code n’ Corgi Winter Build-a-thon to design your own project using Filecoin Onchain Cloud’s infrastructure. [Apply now](https://luma.com/b23to0at), and subscribe to the [luma calendar](https://luma.com/codencorgi?k=c&period=past) to get notified about opportunities to build with the latest Filecoin technologies at Code N’ Corgi events near you. 
+Ready to start building with Filecoin Onchain Cloud? Join the Filecoin Code n’ Corgi Winter Build-a-thon to design your own project using Filecoin Onchain Cloud’s infrastructure. Apply now _(link no longer available)_ and subscribe to the [luma calendar](https://luma.com/codencorgi?k=c&period=past) to get notified about opportunities to build with the latest Filecoin technologies at Code N’ Corgi events near you. 

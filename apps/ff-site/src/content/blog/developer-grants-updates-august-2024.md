@@ -24,7 +24,7 @@ This year, we received proposals that demonstrated impressive innovation within 
 - [Filecoin x Unreal Engine 5](https://www.3studio.online/): A multi-front integration that will bring decentralized storage via web3.storage and Filecoin payments to their existing Unreal Engine blockchain plugin.
 - [Lava: an incentivized RPC Pool](https://www.lavanet.xyz/): A framework for deploying multiple FVM-based applications using public Filecoin RPC solutions with functionality for one-click deployments, payments and more.
 - [GhostDrive](/ecosystem-explorer/ghostdrive-global): A client-side storage solution optimized by FVM integration for data uploading, downloading and sharing.
-- [Lighthouse FVM Tooling](https://docs.lighthouse.storage/lighthouse-1/filecoin-virtual-machine): An FVM-integrated SDK for uploading and downloading files on Filecoin.
+- Lighthouse FVM Tooling _(original link no longer available)_: An FVM-integrated SDK for uploading and downloading files on Filecoin.
 - TRANSFER Data DAO _(original link no longer available)_: An open collective trust designed to create encrypted file systems and provide access to a global digital data archive.
 
 We encourage everyone to continue sharing their creative ideas to help shape the future of the Filecoin ecosystem. Make sure to check out our [grant criteria](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Open%20Grants%20README.md) to inform your proposals.

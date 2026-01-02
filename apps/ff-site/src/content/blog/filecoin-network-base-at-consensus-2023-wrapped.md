@@ -59,7 +59,7 @@ Here are some of the learnings from the day and what audience members were able 
 
 - _[Matt Hamilton](https://youtu.be/J9i7J5lMsgg)_, Principal Developer Advocate, Protocol Labs walked us through understanding a Filecoin storage deal flow, how to create a storage contract using smart contracts and demonstrated rolls with the Filecoin network locally.
 - _[Andrew Hill](https://youtu.be/y1secDqVgYI)_, Co-Founder of [Tableland](/ecosystem-explorer/tableland), discussed relational databases on FVM and paving the way for a new era of data centric applications.
-- _[Preston James](https://youtu.be/dcYVssNSrak)_, CEO and Co-Founder of DivInc, announced their partnership with DivInc to launch a Dweb for Social Impact Accelerator - applications are being [accepted here](https://www.divinc.org/focusareas/social-impact).
+- _[Preston James](https://youtu.be/dcYVssNSrak)_, CEO and Co-Founder of DivInc, announced their partnership with DivInc to launch a Dweb for Social Impact Accelerator.
 - _[Garrett Kinsman](https://youtu.be/-u83Cvv9lAM)_, Co-Founder of Nodle, showed the audience how AI generated content is unraveling civilization and how decentralized technologies will save the day.
 
 ![](/assets/images/filecoin-network-base-4.jpg)

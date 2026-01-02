@@ -9,7 +9,6 @@ location:
   region: north-america
 start-date: 2024-05-14
 end-date: 2024-05-15
-external-link: https://foresight.org/2024-intelligent-cooperation-workshop/
 image:
   src: /assets/images/foresight.svg
 seo:
