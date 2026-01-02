@@ -81,9 +81,9 @@ As a developer, there are many factors to consider when planning a new project, 
 
 Developing the next generation of applications is only one part of Allan’s work. As an Orbit Ambassador, he’s able to give back to the Web3 community and contribute to its growth, and he has several personal goals as a Filecoin Orbit Ambassador.
 
-“One \[goal] is to grow the local Filecoin community. Another is to work towards having a storage provider network in my country. The third goal is to advocate for using renewable energy to provide Filecoin storage. And finally, I’m passionate about working with local authorities to help educate about Bitcoin, Filecoin, and other projects in the Web3 space.”
+“One goal is to grow the local Filecoin community. Another is to work towards having a storage provider network in my country. The third goal is to advocate for using renewable energy to provide Filecoin storage. And finally, I’m passionate about working with local authorities to help educate about Bitcoin, Filecoin, and other projects in the Web3 space.”
 
-Wengi Web is a blockchain research and education company fueling the next generation of developer innovation at Filecoin. Head over to their [website](http://wengiweb.com/) to learn more.
+Wengi Web is a blockchain research and education company fueling the next generation of developer innovation at Filecoin.
 
 Get involved by checking out the [Orbit Kenya Meetup Group](https://www.meetup.com/orbit-community-program-nairobi-kenya/) page and [Twitter](https://twitter.com/wengi_web)for details on the next gathering and registration information.
 
