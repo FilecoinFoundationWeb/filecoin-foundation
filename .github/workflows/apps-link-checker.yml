@@ -15,10 +15,13 @@ jobs:
         include:
           - app: ff-site
             base_url: https://fil.org
+            subpath: "src/**/*.md"
           - app: ffdweb-site
             base_url: https://ffdweb.org
+            subpath: "src/**/*.md"
           - app: filecoin-site
             base_url: https://filecoin-site.vercel.app/
+            subpath: "content/**/*.md"
 
     env:
       BASE_URL: ${{ matrix.base_url }}
@@ -35,13 +38,13 @@ jobs:
         with:
           args: |
             --accept 100..=103,200..=299,403,429
-            --base ${{ env.BASE_URL }}
+            --base-url ${{ env.BASE_URL }}
             --retry-wait-time 3
             --max-retries 3
             --timeout 30
             --user-agent "Mozilla/5.0 (compatible; LinkChecker/1.0)"
             --verbose
-            "apps/${{ matrix.app }}/src/**/*.md"
+            "apps/${{ matrix.app }}/${{ matrix.subpath }}"
 
       - name: Notify Slack on Link Check Results
         if: always()
