@@ -38,7 +38,7 @@ jobs:
         with:
           args: |
             --accept 100..=103,200..=299,403,429
-            --base ${{ env.BASE_URL }}
+            --base-url ${{ env.BASE_URL }}
             --retry-wait-time 3
             --max-retries 3
             --timeout 30
