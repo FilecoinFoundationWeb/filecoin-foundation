@@ -18,7 +18,7 @@ keywords: >-
   DAOs, Smart Contract,. blockchain, legal, law, policy, intellectual property
   (IP), Provenance
 link: >-
-  https://www.usfca.edu/law/engaged-learning/center-law-tech-social-good/post/new-horizons-for-lawyers-in-the-blockchain-era
+  https://www.blockchainlawsg.org/post/new-horizons-for-lawyers-in-the-blockchain-era
 seo:
   description: "Explores emerging legal opportunities in blockchain, examining how lawyers can adapt to smart contracts, DAOs, and digital asset provenance in this rapidly evolving technological landscape."
 ---

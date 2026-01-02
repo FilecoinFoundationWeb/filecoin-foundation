@@ -60,43 +60,43 @@ Filecoin Foundation committed funding and continued to support the projects list
 
 [Agregore P2P Web Tutorials](https://github.com/ipfs/devgrants/pull/245): These easy-to-follow tutorials reduce the barrier to entry for building apps on P2P networks, including IPFS.
 
-[Algovera](/ecosystem-explorer/algovera): [AI Workflows/Assistants for Web3](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1222): This project is creating a platform for building, deploying, and monetizing AI workflows and assistants that interact with Web3 services such as IPFS. 
+[Algovera](/ecosystem-explorer/algovera): [AI Workflows/Assistants for Web3](https://github.com/filecoin-project/devgrants/issues/1222): This project is creating a platform for building, deploying, and monetizing AI workflows and assistants that interact with Web3 services such as IPFS. 
 
 [Ankr](/ecosystem-explorer/ankr) x Filecoin [RPC Integration](https://www.ankr.com/blog/ankrs-new-filecoin-rpc-connection-is-live/): Ankr is working to launch a public, load-balanced remote procedure call (RPC) for Filecoin to support developer growth. 
 
-[AutoNATv2 implementation for rust-libp2p](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1421): This project is implementing changes to keep rust-libp2p up-to-date with the current libp2p spec.  
+[AutoNATv2 implementation for rust-libp2p](https://github.com/filecoin-project/devgrants/issues/1421): This project is implementing changes to keep rust-libp2p up-to-date with the current libp2p spec.  
 
 [Beryx](/ecosystem-explorer/beryx): Beryx is a platform developed by [Zondax](/ecosystem-explorer/zondax) that includes public historical data, streaming data, and metrics for the Filecoin blockchain.
 
 [Blockscout](https://filecoin.blockscout.com/): Blockscout is a tool for inspecting and analyzing EVM-based blockchains. The blockchain scanner offers faster indexing, comprehensive search features, and views for transactions, receipts, addresses, and metadata.
 
-[Decentralized Storage Alliance (DSA)](https://www.dsalliance.io/): A professional organization including global leaders from AMD, EY, Seagate, [Supranational](/ecosystem-explorer/supranational), Protocol Labs, and FF, DSA’s mission is to imagine a better path to decentralized data storage for enterprise organizations. 
+[Decentralized Storage Alliance (DSA)](https://dsalliance.io/): A professional organization including global leaders from AMD, EY, Seagate, [Supranational](/ecosystem-explorer/supranational), Protocol Labs, and FF, DSA’s mission is to imagine a better path to decentralized data storage for enterprise organizations. 
 
 [Democracy’s Library](https://archive.org/details/democracys-library): An Internet Archive initiative, Democracy’s Library, creates a [free, open collection](/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network)of government data so that government research and publications from around the world remain permanently accessible to the public.
 
-[DMRV of Natural Capital](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1062): This project will develop a new method for valuing ecosystems based on the services they provide and the value of their natural capital stock, leveraging Filecoin for data storage. 
+[DMRV of Natural Capital](https://github.com/filecoin-project/devgrants/issues/1062): This project will develop a new method for valuing ecosystems based on the services they provide and the value of their natural capital stock, leveraging Filecoin for data storage. 
 
-[Edge + Filecoin](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1346): Edge is an open source, non-custodial, and privacy-focused wallet that integrates Filecoin. The wallet is available on iOS/Android and has multi-asset support, swap, and staking functionality. 
+[Edge + Filecoin](https://github.com/filecoin-project/devgrants/issues/1346): Edge is an open source, non-custodial, and privacy-focused wallet that integrates Filecoin. The wallet is available on iOS/Android and has multi-asset support, swap, and staking functionality. 
 
-[ES4D](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/916): To address the issue of excessive energy consumption and CO2 output in data centers, ES4D is a proof of concept for the Filecoin ecosystem to reduce data center e-waste and keep energy costs to a minimum. 
+[ES4D](https://github.com/filecoin-project/devgrants/issues/916): To address the issue of excessive energy consumption and CO2 output in data centers, ES4D is a proof of concept for the Filecoin ecosystem to reduce data center e-waste and keep energy costs to a minimum. 
 
-[Filecoin DHT Metrics](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1756): This project supports weekly reporting for Filecoin's distributed hash table (DHT) network which includes several critical metrics, such as node geolocation, node uptime, node deployment (cloud vs non-cloud), and connectivity errors. 
+[Filecoin DHT Metrics](https://github.com/filecoin-project/devgrants/issues/1756): This project supports weekly reporting for Filecoin's distributed hash table (DHT) network which includes several critical metrics, such as node geolocation, node uptime, node deployment (cloud vs non-cloud), and connectivity errors. 
 
 [Filecoin Green](/ecosystem-explorer/filecoin-green): FF supports projects linked to Filecoin Green through environmental grants designed to enhance sustainability across the network. 
 
 [Filecoin Incentive Design Labs (FIDL)](https://www.fidl.tech/): FIDL is an organization that incentivizes good behavior and transparency in the Filecoin ecosystem through tooling, metrics, and dashboards for the Fil+ program. 
 
-[Filecoin MetaMask Wallet](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1762): This project integrates updates into the Filecoin MetaMask Wallet to enhance usability.
+[Filecoin MetaMask Wallet](https://github.com/filecoin-project/devgrants/issues/1762): This project integrates updates into the Filecoin MetaMask Wallet to enhance usability.
 
-[Filecoin Solidity Optimization](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1569): This project will make the Filecoin-Solidity library compatible with all types of optimizers, including Standard, YUL, and via-IR optimizers.
+[Filecoin Solidity Optimization](https://github.com/filecoin-project/devgrants/issues/1569): This project will make the Filecoin-Solidity library compatible with all types of optimizers, including Standard, YUL, and via-IR optimizers.
 
-[FileDAG](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/470): FileDAG is a distributed storage service built on the IPFS technology stack, focused on data management, reliability, availability, fault tolerance, and clustering storage nodes.
+[FileDAG](https://github.com/filecoin-project/devgrants/issues/470): FileDAG is a distributed storage service built on the IPFS technology stack, focused on data management, reliability, availability, fault tolerance, and clustering storage nodes.
 
-[Filfox](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1094): The current project will update the Filfox explorer to showcase activity and interactions involving user-defined actors (native and EVM smart contracts). 
+[Filfox](https://github.com/filecoin-project/devgrants/issues/1094): The current project will update the Filfox explorer to showcase activity and interactions involving user-defined actors (native and EVM smart contracts). 
 
 [Forest](https://github.com/ChainSafe/forest): FF is the funder of ChainSafe’s work to maintain the Forest Filecoin implementation, a lightweight network client written in Rust. 
 
-[Freenet 2](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/345): Freenet 2 is a distributed, decentralized, key-value store in which keys are cryptographic contracts that determine what values are valid under that key. It is implemented in Rust on top of the libp2p library and will be available across all major operating systems, desktop, and mobile.
+[Freenet 2](https://github.com/filecoin-project/devgrants/issues/345): Freenet 2 is a distributed, decentralized, key-value store in which keys are cryptographic contracts that determine what values are valid under that key. It is implemented in Rust on top of the libp2p library and will be available across all major operating systems, desktop, and mobile.
 
 [Funding the Commons – Akashic](https://github.com/fundingthecommons/akashic): Akashic is a digital archive and fundraising tool to permanently store, preserve, and organize memories, stories, and cultural knowledge of refugees and vulnerable populations using IPFS and Filecoin. 
 
@@ -106,21 +106,21 @@ Filecoin Foundation committed funding and continued to support the projects list
 
 [GLIF](/ecosystem-explorer/glif): FF supported multiple GLIF projects building interoperable apps and developer tools for the Filecoin network that offer healthier ways of storing and permissioning data. 
 
-[Hedgey Finance Developer](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1753): Hedgey provides a suite of onchain tools for responsible and efficient distribution of tokens from projects to their community. Hedgey will explore deploying its smart contracts onto Filecoin EVM and adding native Filecoin wallet connectivity. 
+[Hedgey Finance Developer](https://github.com/filecoin-project/devgrants/issues/1753): Hedgey provides a suite of onchain tools for responsible and efficient distribution of tokens from projects to their community. Hedgey will explore deploying its smart contracts onto Filecoin EVM and adding native Filecoin wallet connectivity. 
 
-Incentivized [RPC Pool](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1648): Lava enables ecosystems to consolidate multiple RPC endpoints into a single optimized endpoint. This project provides insights into latency, uptime, provider accuracy, and detailed usage metrics such as user geolocation, project activity, and frontend or backend usage trends for the Filecoin network. 
+Incentivized [RPC Pool](https://github.com/filecoin-project/devgrants/issues/1648): Lava enables ecosystems to consolidate multiple RPC endpoints into a single optimized endpoint. This project provides insights into latency, uptime, provider accuracy, and detailed usage metrics such as user geolocation, project activity, and frontend or backend usage trends for the Filecoin network. 
 
 [Internet Archive](https://web.archive.org/): Internet Archive has uploaded roughly 100,000 cultural artifacts to Filecoin –– from internet history to official public government datasets. As part of its work in the Filecoin ecosystem, Internet Archive has developed and refined methods for uploading data to decentralized storage consistently at scale.    
 
-[Improving Socio-technical Resilience in IPFS v2](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1139): This project investigates theoretical and applied models to enhance resilience for IPFS users to forge governance norms and processes that function well and investigate those that don’t.
+[Improving Socio-technical Resilience in IPFS v2](https://github.com/filecoin-project/devgrants/issues/1139): This project investigates theoretical and applied models to enhance resilience for IPFS users to forge governance norms and processes that function well and investigate those that don’t.
 
-[Data Onboarding Metrics](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/858): The IPFS [Force Community](/ecosystem-explorer/force-community) is developing critical metrics for Venus to provide operators with real-time insights into system health, enabling informed decisions without reliance on extensive logs or advanced dev-ops expertise. 
+[Data Onboarding Metrics](https://github.com/filecoin-project/devgrants/issues/858): The IPFS [Force Community](/ecosystem-explorer/force-community) is developing critical metrics for Venus to provide operators with real-time insights into system health, enabling informed decisions without reliance on extensive logs or advanced dev-ops expertise. 
 
 [IPLD Prolly Trees](https://github.com/ipfs/devgrants/pull/194): This group is standardizing B tree-based indexes in the IPLD ecosystem.
 
-[Lighthouse FVM Tooling](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1624): This project aims to make tools for developers to use FVM easily and build on Filecoin with the best developer experience. 
+[Lighthouse FVM Tooling](https://github.com/filecoin-project/devgrants/issues/1624): This project aims to make tools for developers to use FVM easily and build on Filecoin with the best developer experience. 
 
-[Lucky Solar](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1047): Lucky Strike Facility is a 1-million square foot former tobacco factory in North Carolina that’s being converted into a modern data center –– designed to be a green, environmentally sustainable facility space for Web3 infrastructure, and in particular, for Filecoin service providers.
+[Lucky Solar](https://github.com/filecoin-project/devgrants/issues/1047): Lucky Strike Facility is a 1-million square foot former tobacco factory in North Carolina that’s being converted into a modern data center –– designed to be a green, environmentally sustainable facility space for Web3 infrastructure, and in particular, for Filecoin service providers.
 
 [Murmuration Labs](/ecosystem-explorer/murmuration-labs): Mumuration Labs designs decentralized trust and safety tools that empower users to control their online experience, including content-related risk mitigation. 
 
@@ -134,22 +134,22 @@ Regen Foundation - ReFi Chamas: This project supported ReFi initiatives for wome
 
 [Renderhive](/ecosystem-explorer/renderhive): Renderhive is a trust-free, decentralized, self-governed marketplace that enables any owner of a CPU/GPU to offer available computation power. This platform uses IPFS, Filecoin, and Hedera’s DLT to establish trust among the participants of the network. 
 
-[Spark Eco](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/780): This project is focused on building an onchain market for Renewable Energy Certificates (RECs) worldwide. 
+[Spark Eco](https://github.com/filecoin-project/devgrants/issues/780): This project is focused on building an onchain market for Renewable Energy Certificates (RECs) worldwide. 
 [Starboard](/ecosystem-explorer/starboard): FF is the largest funder of Starboard. Starboard’s Filecoin Network Health Dashboard provides in-depth network usage and growth statistics for governance support and protocol improvement. 
 
 [TRANSFER Data Trust](/ecosystem-explorer/transfer-data-trust): FF supports TRANSFER in building an artist-owned decentralized archive and cooperative value exchange network.
 
-[Twinquasar-Celeste](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1042): Twinquasar, in collaboration with Celeste, provides Filecoin storage providers and investors with green and cost-effective hosting offers. 
+[Twinquasar-Celeste](https://github.com/filecoin-project/devgrants/issues/1042): Twinquasar, in collaboration with Celeste, provides Filecoin storage providers and investors with green and cost-effective hosting offers. 
 
 [VenusHub](https://venushub.io/): FF’s resources support master programs, hackathons, storage provider incubators, deal accelerators, and more to help drive Venus adoption and support storage providers in storing useful data on the network. 
 
 [Webrecorder](https://webrecorder.net/): Webrecorder makes web archiving accessible, using IPFS and Filecoin to provide a foundation for decentralized web archiving. 
 
-[WEEECycle](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/950): By integrating GAIA’s backend systems with the Filecoin ecosystem, this project aims to create a framework for making the Filecoin network’s electronic waste disposal database available.  
+[WEEECycle](https://github.com/filecoin-project/devgrants/issues/950): By integrating GAIA’s backend systems with the Filecoin ecosystem, this project aims to create a framework for making the Filecoin network’s electronic waste disposal database available.  
 
 [Zondax](/ecosystem-explorer/zondax): Zondax is a blockchain service provider that delivers services and software solutions for security, data indexing, integration, and protocol engineering. Zondax’s contributions to the Filecoin ecosystem include [Beryx](/ecosystem-explorer/beryx) API, Filecoin signing tools, Filecoin Ledger App, Assembly script SDK for FVM, and Filecoin Gas.
 
-[3S Game Studio OU](https://github.com/filecoin-project/devgrants/tree/master/Archive/rfps/1727): The core purpose of this integration is to equip Unreal Engine developers with the tools necessary to incorporate FIL transactions and interactions directly into their games, without reliance on external wallets or third-party services.
+[3S Game Studio OU](https://github.com/filecoin-project/devgrants/issues/1727): The core purpose of this integration is to equip Unreal Engine developers with the tools necessary to incorporate FIL transactions and interactions directly into their games, without reliance on external wallets or third-party services.
 
 ## Network Growth: Accelerating the Filecoin Network
 

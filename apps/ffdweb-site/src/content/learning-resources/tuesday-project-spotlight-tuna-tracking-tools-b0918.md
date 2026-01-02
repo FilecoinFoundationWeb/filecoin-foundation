@@ -15,7 +15,7 @@ technicality: "1"
 length: ~5 Minutes
 keywords: Wildlife, Blockchain, Environmental, Fishing, ConsenSys, TraSeable
 link: >-
-  https://www.usfca.edu/law/engaged-learning/center-law-tech-social-good/post/tuesday-project-spotlight-tuna-tracking-tools
+  https://www.blockchainlawsg.org/post/tuesday-project-spotlight-tuna-tracking-tools
 seo:
   description: "Case study of ConsenSys and TraSeable's blockchain solution for transparent tuna supply chain tracking, demonstrating how Web3 technology enables sustainable fishing verification from ocean to supermarket."
 ---

@@ -50,7 +50,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 - 70 allocators have received their first 5 PiB allocation of DataCap for an approximate total of 350 PiB, and client applications and approvals have begun.
 - The Fil+ team is supporting more than 80 allocators on the [Filecoin-project-Registry.](https://github.com/filecoin-project/Allocator-Registry/issues)
-- For more information about the latest developments and discussions surrounding Fil Plus, attend upcoming meetings by adding the [Fil Plus Governance meeting calendar](https://lu.ma/filecoin) or view the recordings on the [Fil Plus YouTube playlist](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kYN1hJpERMUxTCbFC4yZwN).
+- For more information about the latest developments and discussions surrounding Fil Plus, attend upcoming meetings by adding the [Fil Plus Governance meeting calendar](https://calendar.google.com/calendar/u/1?cid=Y19rMWdrZm9vbTE3ZzBqOGM2YmFtNnVmNDNqMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) or view the recordings on the [Fil Plus YouTube playlist](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kYN1hJpERMUxTCbFC4yZwN).
 
 ## Comms, Marketing, & Events
 

@@ -10,7 +10,7 @@ seo:
   description: "TechCongress founder Travis Moore discusses bridging tech and policy through Congressional fellowships, sharing insights on making meaningful impact in tech policy."
 ---
 
-In the ever-evolving landscape of technology and policy, organizations like [TechCongress](https://techcongress.io/) play a crucial role in bridging the gap between these two realms. Last year, Filecoin Foundation for the Decentralized Web (FFDW) began [working with TechCongress](/blog/filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill) to connect technologists and policymakers in Congress.
+In the ever-evolving landscape of technology and policy, organizations like [TechCongress](https://www.techcongress.io/) play a crucial role in bridging the gap between these two realms. Last year, Filecoin Foundation for the Decentralized Web (FFDW) began [working with TechCongress](/blog/filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill/) to connect technologists and policymakers in Congress. 
 
 Since 2016, TechCongress has placed 95 fellows in Congressional offices, intending to build a new generation of technology leaders. And as technology touches more issues under consideration on Capitol Hill, TechCongress aims to increase the availability of technical knowledge through the fellowship programs, and ultimately, help technologists play a bigger role in the development of tech policy.
 
@@ -68,6 +68,6 @@ Additionally, TechCongress Alumni are integrated into our training and orientati
 
 TechCongress serves an incredibly important role, connecting Congressional offices with the technological knowledge needed to navigate the complex tech-driven policy landscape. TechCongress is currently recruiting 12 - 16 fellows for the January 2024 Fellowship, and we are seeking early- and mid-career technologists to serve in both Democrat and Republican offices. 
 
-TechCongress also welcomes nominations _(original link no longer available)_. If you nominate a veteran, woman or nonbinary individual, underrepresented person of color, or person with a disability for the program, and they apply, are accepted, and join the program as a fellow, we will award you a [$500 Referral Award](https://techcongress.io/blog/2018/7/17/diversity-referral-award).
+TechCongress also welcomes nominations _(original link no longer available)_. If you nominate a veteran, woman or nonbinary individual, underrepresented person of color, or person with a disability for the program, and they apply, are accepted, and join the program as a fellow, we will award you a [$500 Referral Award](https://techcongress.us10.list-manage.com/track/click?u=af5890511c379af397cbc931d&id=41d6727f97&e=d04e36028e).
 
-To learn more or apply, visit [TechCongress.io.](https://techcongress.io/apply)
+To learn more or apply, visit [TechCongress.io.](https://www.techcongress.io/apply)

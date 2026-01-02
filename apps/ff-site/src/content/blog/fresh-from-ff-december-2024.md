@@ -34,9 +34,9 @@ seo:
 
 - The NV24 upgrade introduced crucial improvements in network security, performance, and developer functionality, continuing Filecoin's mission to provide a robust and decentralized storage solution to preserve humanity's most important information. Three FIPs were in scope, including:
 
-  - [FIP-0081: Introduce Lower Bound for Sector Initial Pledge.](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0081.md) A critical enhancement comes with improvements to the sector initial pledge mechanism, ensuring that the network maintains sufficient collateral to secure consensus, even as storage growth fluctuates.
-  - [FIP-0094: Add Support for EIP-5656 in the FEVM](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0094.md). The upgrade includes performance boosts for smart contracts running on the Filecoin Ethereum Virtual Machine (FEVM). By adding support for modern memory operations and historical randomness, developers can now create more efficient and secure applications on the Filecoin network.
-  - [FIP-0095: Add FEVM Precompile to Fetch Beacon Digest from Chain History.](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0095.md) FIP-0095 enhances the FEVM by enabling smart contracts to access randomness from prior chain epochs through a newly added precompile.
+  - [FIP-0081: Introduce Lower Bound for Sector Initial Pledge.](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0081.md) A critical enhancement comes with improvements to the sector initial pledge mechanism, ensuring that the network maintains sufficient collateral to secure consensus, even as storage growth fluctuates.
+  - [FIP-0094: Add Support for EIP-5656 in the FEVM](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0094.md). The upgrade includes performance boosts for smart contracts running on the Filecoin Ethereum Virtual Machine (FEVM). By adding support for modern memory operations and historical randomness, developers can now create more efficient and secure applications on the Filecoin network.
+  - [FIP-0095: Add FEVM Precompile to Fetch Beacon Digest from Chain History.](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0095.md) FIP-0095 enhances the FEVM by enabling smart contracts to access randomness from prior chain epochs through a newly added precompile.
 
 ### Fil Plus
 

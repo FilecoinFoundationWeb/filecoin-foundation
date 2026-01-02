@@ -27,10 +27,10 @@ TechCongress operates three fellowship programs:
 
 - The Congressional Innovation Fellowship _(original link no longer available)_, which places mid-career technologists on Capitol Hill for twelve months.
 - The Congressional Innovation Scholars program _(original link no longer available)_, which places early-career technologists, including graduates of technical degree programs, on Capitol Hill for ten months.
-- [The Congressional Digital Service Fellowship](https://techcongress.io/congressional-digital-service) is a one-time program to help members of Congress manage the digital challenges posed by the COVID-19 pandemic.
+- [The Congressional Digital Service Fellowship](https://www.techcongress.io/congressional-digital-service) is a one-time program to help members of Congress manage the digital challenges posed by the COVID-19 pandemic.
 
 As technology touches on more issues under consideration on Capitol Hill, TechCongress aims to increase the availability of technical knowledge through fellow programs, and ultimately, help technologists play a bigger role in the development of tech policy.
 
 “We’re thrilled to support TechCongress with this award,” said FFDW President and Chair Marta Belcher. “It has never been more important to have technologists on Capitol Hill informing policy, and this grant is a natural fit for FFDW’s mission to advance the decentralized web through education.”
 
-If you're interested in applying to be a TechCongress fellow for 2023, please visit [techcongress.io](https://techcongress.io/) for more details.
+If you’re interested in applying to be a TechCongress fellow for 2023, please visit [techcongress.io](http://techcongress.io/) for more details.

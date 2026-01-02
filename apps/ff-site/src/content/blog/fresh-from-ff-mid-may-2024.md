@@ -29,14 +29,14 @@ _Check out the latest updates about what Filecoin Foundation has been up to._
 
 #### Storage
 
-- FF’s Porter Stowell hosted the second edition of [Network Growth 2.0](https://filecoin.io/slack/p1714755293102279) on May 3, featuring the latest updates from across the Filecoin community. Join the [\#global-storage-provider-community](https://filecoin.io/slack) Slack channel for details on future meetings.
+- FF’s Porter Stowell hosted the second edition of [Network Growth 2.0](https://filecoinproject.slack.com/archives/C02GQUMFQVA/p1714755293102279) on May 3, featuring the latest updates from across the Filecoin community. Join the [\#global-storage-provider-community](https://filecoinproject.slack.com/archives/C02GQUMFQVA) Slack channel for details on future meetings.
 
 ### Network Operations
 
 #### Governance
 
 - Check out these three community governance working groups: the Storage Provider Working Group (SPWG), the Developer Working Group (DevWG), and the Data Clients Working Group (DCWG).
-  - The SPWG holds weekly calls to discuss the latest developments for Filecoin Storage Providers. Join the [\#global-storage-provider-community](https://filecoin.io/slack) Slack channel to get involved.
+  - The SPWG holds weekly calls to discuss the latest developments for Filecoin Storage Providers. Join the [\#global-storage-provider-community](https://filecoinproject.slack.com/archives/C02GQUMFQVA) Slack channel to get involved.
   - The DCWG welcomes participants to share their data upload experiences, identify hurdles and solutions for uploading data, and discuss how the Filecoin ecosystem can support data onboarding. To join, [send us a note](mailto:dataclients@fil.org).
   - [The DevWG](https://github.com/filecoin-project/DeveloperWG) is a space to connect with developers, community members, researchers, and others interested in the development of new tools, technologies, and use cases that leverage the Filecoin protocol. Join the [\#dev-wg](https://filecoinproject.slack.com/archives/C06G5K8H3J7) Slack channel to get involved.
 

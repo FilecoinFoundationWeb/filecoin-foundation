@@ -35,9 +35,9 @@ All session recordings are available as part of the [Storage Adoption: Winning C
 ### Governance
 
 - Three FIPS were introduced in NV25 "Teep," including improvements that make Filecoin more efficient and adaptable, simplifying storage provider economics and enhancing developer tooling:
-- Transient storage via EIP-1153 in the FEVM ([FIP-0097](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0097.md));
-- A simplified fixed-percentage sector termination fee ([FIP-0098](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0098.md));
-- Streamlined data onboarding with the removal of the Batch Balancer and gas constraints ([FIP-0100](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0100.md)), alongside mainnet activation of F3 parameters.
+- Transient storage via EIP-1153 in the FEVM ([FIP-0097](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0097.md));
+- A simplified fixed-percentage sector termination fee ([FIP-0098](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0098.md));
+- Streamlined data onboarding with the removal of the Batch Balancer and gas constraints ([FIP-0100](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0100.md)), alongside mainnet activation of F3 parameters.
 
 ### Fil Plus
 

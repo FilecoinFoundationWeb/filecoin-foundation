@@ -40,10 +40,10 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 ### Governance
 
 - Nv22 Dragon remains on track to go live on April 2. There are four FIPs in scope for this upgrade:
-- - [FIP0063](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0063.md) - Switching to a new Drand Mainnet Network
-  - [FIP0074](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0074.md) - Remove cron-based automatic deal settlement
-  - [FIP0076](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0076.md) - Direct Data Onboarding
-  - [FIP0083](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0083.md) - Ecosystem Tooling: Add Built-in Actor Events in Verified Registry, Miner & Market Actors
+- - [FIP0063](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0063.md) - Switching to a new Drand Mainnet Network
+  - [FIP0074](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0074.md) - Remove cron-based automatic deal settlement
+  - [FIP0076](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0076.md) - Direct Data Onboarding
+  - [FIP0083](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0083.md) - Ecosystem Tooling: Add Built-in Actor Events in Verified Registry, Miner & Market Actors
 
 ### Fil Plus
 

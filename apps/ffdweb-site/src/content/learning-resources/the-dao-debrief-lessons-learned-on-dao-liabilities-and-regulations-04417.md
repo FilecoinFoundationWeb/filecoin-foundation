@@ -19,7 +19,7 @@ keywords: >-
   Decentralized Autonomous Organizations (DAOs), ESG objectives, DAO Limited
   Liabilitiy Corporations (DAO LLCs)
 link: >-
-  https://www.usfca.edu/law/engaged-learning/center-law-tech-social-good/post/the-dao-debrief-lessons-learned-on-dao-liabilities-and-regulations
+  https://www.blockchainlawsg.org/post/the-dao-debrief-lessons-learned-on-dao-liabilities-and-regulations
 seo:
   description: "Legal analysis of DAO liability issues, regulatory frameworks, and the emergence of DAO LLCs to protect members while promoting democratic principles in decentralized organizations."
 ---

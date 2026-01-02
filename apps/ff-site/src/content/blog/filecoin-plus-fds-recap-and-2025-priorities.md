@@ -64,7 +64,7 @@ The FDS discussions served as a touchpoint to receive community feedback and sha
 
 As we continue to build on these conversations and seek community input, the Filecoin Plus team will publish regular updates about the program’s roadmap and evolution. 
 
-We’re energized to deliver on our commitments to create a platform that empowers users around the globe, with a Filecoin Plus program that continues to evolve and expand support for innovative use cases. And we welcome you to join the discussion. We invite you to attend the [biweekly Allocator meetings](https://lu.ma/filecoin) to connect, share updates, and [collaborate on the program](https://youtube.com/playlist?list=PLp3zrT1ewY0kYN1hJpERMUxTCbFC4yZwN&feature=shared). and join us this May for the Fil Plus track at [FDS-6: Toronto](https://www.fildev.io/FDS-6).  
+We’re energized to deliver on our commitments to create a platform that empowers users around the globe, with a Filecoin Plus program that continues to evolve and expand support for innovative use cases. And we welcome you to join the discussion. We invite you to attend the [biweekly Allocator meetings](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles) to connect, share updates, and [collaborate on the program](https://youtube.com/playlist?list=PLp3zrT1ewY0kYN1hJpERMUxTCbFC4yZwN&feature=shared). and join us this May for the Fil Plus track at [FDS-6: Toronto](https://www.fildev.io/FDS-6).  
 
 ## About Fil+
 

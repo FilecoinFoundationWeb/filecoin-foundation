@@ -33,7 +33,7 @@ We have a couple of ways we are using Filecoin and working with FFDW. First, HRD
 
 We're also very excited about the ecosystem of the Filecoin network and all the different kinds of applications people are building on the network. What can we do with chain of custody, for example? Filecoin enables us to capture data at the point of collection and put it directly into a system that enables chain of custody analysis to ensure security for the rest of time. In the old days, we were using digital signatures. But nobody did it, and we didn't have the workflows to enable it. Now, blockchain-enabled systems make the process trivial. Moving forward, we are interested in what people are building to determine what will work and be truly valuable in the long term.
 
-**Since the initial announcement of FFDW and HRDAG's collaboration in [December 2021](/blog/ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage), what kind of progress have you seen in terms of outreach or organizations using decentralized web tools?**
+**Since the initial announcement of FFDW and HRDAG's collaboration in [December 2021](/ffdw-and-human-rights-data-analysis-group-hrdag-collaborate-to-advance-decentralized-storage/), what kind of progress have you seen in terms of outreach or organizations using decentralized web tools?**
 
 We have finished the first year of a three-year outreach process to teach our partner organizations around the world about dWeb tools and Filecoin. We must ask questions to determine what our partners want and whether using Filecoin to store human rights data is a good idea. That's where we are right now.
 

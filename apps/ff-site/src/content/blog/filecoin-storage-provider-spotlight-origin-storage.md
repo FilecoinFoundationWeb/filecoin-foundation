@@ -20,7 +20,7 @@ _This is one in a series of periodic blog posts devoted to profiling Filecoin st
 
 [Origin Storage](http://www.originstorage.io/) was founded in 2018 with a mission to provide underlying technology solutions for the Web3 ecosystem with safe, flexible, and reliable products and services. The company, an independent blockchain infrastructure platform, has operations in Hong Kong, Singapore, and the United States.
 
-In 2022, Origin signed on as a Filecoin notary, serving as a fiduciary for the Filecoin network. Notaries are entrusted to uphold the [Principles](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0003.md) of the Filecoin Plus program — responsibly allocating DataCap to help foster various use cases on Filecoin.
+In 2022, Origin signed on as a Filecoin notary, serving as a fiduciary for the Filecoin network. Notaries are entrusted to uphold the [Principles](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0003.md) of the Filecoin Plus program — responsibly allocating DataCap to help foster various use cases on Filecoin.
 
 Today, Origin operates more than 10 internet data centers with 100,000+ managed servers capable of 600P+ of compute power, a capacity that grew more than 21x in 2021 and continues to expand.
 

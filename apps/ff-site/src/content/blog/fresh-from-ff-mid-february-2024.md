@@ -37,7 +37,7 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
 
 ### Storage
 
-- This month we laid out FF's 2024 priorities for supporting the storage provider community; read more [on Filecoin Slack](https://filecoin.io/slack/p1707172145882549). Some of FF’s 2024 focus areas for supporting storage providers include:
+- This month we laid out FF's 2024 priorities for supporting the storage provider community; read more [on Filecoin Slack](https://filecoinproject.slack.com/archives/C02GQUMFQVA/p1707172145882549). Some of FF’s 2024 focus areas for supporting storage providers include:
 
   1. Paid storage: FF is focused on supporting the launch of 6+ software platforms in Q1-Q2 2024 (complete with SP integrations) by supporting testing, design, partnerships, contracts, enablement, community engagement, and amplification. Multiple UIs aimed at supporting deal-making with different target users will help increase network activity.   AI & Filecoin: FF is incubating 3 AI-specific initiatives that use Filecoin as a key part of their value proposition.
   2. AI & Filecoin: FF is incubating 3 AI-specific initiatives that use Filecoin as a key part of their value proposition.
@@ -51,7 +51,7 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
 
 - FF’s governance team is finalizing an audit for on-chain voting tooling and refining edits to a public plan to test sentiment analysis tooling.
 - Additional documentation and support work for new Working Groups and FIP0001v2 remains ongoing.
-- Follow the [governance GitHub](https://github.com/filecoin-project/FIPs/tree/master/discussions) for weekly updates on the latest topics and developments surrounding network FIPs and governance.
+- Follow the [governance GitHub](https://github.com/filecoin-project/FIPs/discussions) for weekly updates on the latest topics and developments surrounding network FIPs and governance.
 
 ### Fil Plus
 

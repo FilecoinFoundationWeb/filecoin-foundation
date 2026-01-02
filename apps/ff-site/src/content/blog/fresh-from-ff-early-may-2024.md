@@ -36,7 +36,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 ### Governance
 
 - The Nv22 Dragon upgrade introduced several key improvements fostering a more efficient, user-friendly, and scalable network. [Learn about the Dragon upgrade's network improvements and enhancements](/blog/announcing-the-filecoin-nv22-dragon-upgrade-a-leap-forward-in-network-efficiency-and-flexibility).
-- Engage and contribute to the [development of FIPs](https://github.com/filecoin-project/FIPs/tree/master/discussions) by participating in Filecoin Foundation's monthly [community governance calls](https://lu.ma/filecoin).
+- Engage and contribute to the [development of FIPs](https://github.com/filecoin-project/FIPs/discussions) by participating in Filecoin Foundation's monthly [community governance calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto).
 
 ### Fil Plus
 
