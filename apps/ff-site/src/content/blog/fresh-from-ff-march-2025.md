@@ -20,7 +20,7 @@ seo:
 ## Ecosystem
 
 - Filecoin Foundation & FILOz hosted key ecosystem builders, founders, and business development leaders during ETHDenver for a FWS, Onramp, and Tooling collaboration to continue the work started in Bangkok to reach Product Market Fit. Register to attend [FDS-6: Toronto](https://www.fildev.io/FDS-6), to participate in this ongoing effort. 
-- Check out the latest updates and developments for Filecoin Storage Providers in the SPWG! Join the [\#global-storage-provider-community](https://filecoin.io/slack) Slack channel to get involved. 
+- Check out the latest updates and developments for Filecoin Storage Providers in the SPWG! Join the [\#global-storage-provider-community](https://filecoinproject.slack.com/archives/C02GQUMFQVA) Slack channel to get involved. 
 - Read the [latest edition of the Developer Grants Updates Series.](/blog/developer-grants-updates-february-2025) Filecoin Foundation has continued to support new, impactful projects and introduced program updates to empower more developers in the Filecoin ecosystem. 
 
 ## Network Operations
@@ -28,12 +28,12 @@ seo:
 ### Governance
 
 - The Filecoin community has reached a milestone — 100 Filecoin Improvement Proposals have been considered to date! Check out the [most recent FIP one-pagers](https://x.com/fil_gov/status/1889728327188947338) for insights into the latest proposals. 
-- Join the Filecoin governance discussion! To get involved, visit the [Governance GitHub](https://github.com/filecoin-project/FIPs) and join the conversation in the [\#fil-gov Slack channel](https://filecoin.io/slack). These spaces are an open forum for Filecoin community members to come together and discuss important issues and initiatives related to the governance of the Filecoin Network.
+- Join the Filecoin governance discussion! To get involved, visit the [Governance GitHub](https://github.com/filecoin-project/FIPs) and join the conversation in the [\#fil-gov Slack channel](https://filecoinproject.slack.com/archives/C0535S9TUUF). These spaces are an open forum for Filecoin community members to come together and discuss important issues and initiatives related to the governance of the Filecoin Network.
 
 ### Fil Plus
 
-- The [February 18 Allocator Call](https://youtu.be/v0ufptQqoxQ?feature=shared) is available on YouTube. The call is open to the public and all are encouraged to join in order to learn more about Filecoin Plus. If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar.](https://lu.ma/filecoin)
-- Marta Piekarska-Geater, Executive Director of FIDL, [joined the DWeb Decoded podcast to discuss Fil+](https://youtu.be/TKaRTgmz5Yg?feature=shared), governance challenges, and the incentives shaping the future of decentralized storage. Watch to learn how Filecoin Plus is powering decentralized storage.[](https://lu.ma/filecoin)
+- The [February 18 Allocator Call](https://youtu.be/v0ufptQqoxQ?feature=shared) is available on YouTube. The call is open to the public and all are encouraged to join in order to learn more about Filecoin Plus. If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar.](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles)
+- Marta Piekarska-Geater, Executive Director of FIDL, [joined the DWeb Decoded podcast to discuss Fil+](https://youtu.be/TKaRTgmz5Yg?feature=shared), governance challenges, and the incentives shaping the future of decentralized storage. Watch to learn how Filecoin Plus is powering decentralized storage.[](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles)
 
 ### Comms, Marketing, & Events
 

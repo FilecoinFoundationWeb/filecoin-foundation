@@ -31,9 +31,9 @@ Metropolis also allows anyone in the Filecoin community to open community crowds
 
 As Metropolis becomes available to the community for use today, we remind our community that this is a test tool, and Filecoin Foundation will continue to moderate this tool, including submitted community polls.
 
-FIP discussions will continue to take place in the [FIPs repo](https://github.com/filecoin-project/FIPs/tree/master/discussions) on GitHub. In contrast, Metropolis will be a community-focused interface where community members can signal their opinions on FIP ideas and surface polling needs on ideas. Metropolis will only function as an opinion crowdsourcing tool that will not gate the broader FIPs process.
+FIP discussions will continue to take place in the [FIPs repo](https://github.com/filecoin-project/FIPs/discussions) on GitHub. In contrast, Metropolis will be a community-focused interface where community members can signal their opinions on FIP ideas and surface polling needs on ideas. Metropolis will only function as an opinion crowdsourcing tool that will not gate the broader FIPs process.
 
-We invite the Filecoin community to utilize this tool and share feedback with the Governance team. This is still a proof-of-concept product requiring user engagement to make the tool useful and valuable to the community. The best way to provide feedback is to participate in the monthly [Community Governance Calls](https://lu.ma/filecoin) and join the [Fil-Gov Slack channel](https://filecoin.io/slack).
+We invite the Filecoin community to utilize this tool and share feedback with the Governance team. This is still a proof-of-concept product requiring user engagement to make the tool useful and valuable to the community. The best way to provide feedback is to participate in the monthly [Community Governance Calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto) and join the [Fil-Gov Slack channel](https://filecoinproject.slack.com/archives/C0535S9TUUF).
 
 ## The Collaborative Effort
 
@@ -47,6 +47,6 @@ We call on the Filecoin community to utilize the benefits of this tool. There ar
 
 We are also working to identify helpful ways to utilize the data generated from Metropolis to enhance the FIPs process.
 
-Try out the [Metropolis governance tool](https://poll.fil.org) and let us know what you think. We encourage community members to explore potential use cases for Metropolis and share their feedback with the Filecoin Foundation Governance Team. The best way to provide feedback is to join our monthly Community Governance Calls - [register for upcoming calls](https://lu.ma/filecoin).
+Try out the [Metropolis governance tool](https://poll.fil.org) and let us know what you think. We encourage community members to explore potential use cases for Metropolis and share their feedback with the Filecoin Foundation Governance Team. The best way to provide feedback is to join our monthly Community Governance Calls - [register for upcoming calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto).
 
 To have an initial deep-dive into how Metropolis works, watch the [Metropolis demo video](https://github.com/filecoin-project/FIPs/tree/master/Community%20Governance%20Calls) from our Community Governance Calls.

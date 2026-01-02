@@ -175,7 +175,7 @@ Rohingya Project champions stateless Rohingya, using blockchain-based technologi
 
 #### [Shift Collective](https://www.shiftcollective.us/)
 
-Shift Collective is a non-profit consulting and design group that helps organizations better engage, collaborate with, and reflect their local communities. FFDW's support enables Shift to explore decentralized storage solutions for [Historypin.org](https://www.historypin.org/en) and map the ethical and material digital storage needs of community-based archives. This includes work to build a pilot storage network in collaboration with institutional and community archive partners. The goal is to design a prototype for community-centered, affordable, and accessible long-term, decentralized storage that is also ethical, autonomous, and sustainable. 
+Shift Collective is a non-profit consulting and design group that helps organizations better engage, collaborate with, and reflect their local communities. FFDW's support enables Shift to explore decentralized storage solutions for [Historypin.org](http://historypin.org) and map the ethical and material digital storage needs of community-based archives. This includes work to build a pilot storage network in collaboration with institutional and community archive partners. The goal is to design a prototype for community-centered, affordable, and accessible long-term, decentralized storage that is also ethical, autonomous, and sustainable. 
 
 #### [Smithsonian Institution](https://www.si.edu/)
 

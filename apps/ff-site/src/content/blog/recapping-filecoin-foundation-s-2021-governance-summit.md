@@ -28,7 +28,7 @@ For example, the team wanted to better understand:
 
 From this, several conclusions were drawn that will help the team coordinate continuous governance improvement in the coming months. These include both short- and long-term activities in several key areas.
 
-For the FIPs process, this includes a series of process improvements implemented before the end of the year. The first of these is [a proposed change to the FIPs process and workflow](https://github.com/filecoin-project/FIPs/tree/master/discussions/215). The goal of this proposal is to enable the FIPs process to scale — accommodating both complex technical proposals and an increase in the number of community members participating in governance — while also improving the overall transparency and robustness of the system.
+For the FIPs process, this includes a series of process improvements implemented before the end of the year. The first of these is [a proposed change to the FIPs process and workflow](https://github.com/filecoin-project/FIPs/discussions/215). The goal of this proposal is to enable the FIPs process to scale — accommodating both complex technical proposals and an increase in the number of community members participating in governance — while also improving the overall transparency and robustness of the system.
 
 The community also identified other improvement opportunities during the Summit, many of which will be introduced and/or implemented in the coming weeks. These include governance office hours hosted by the Foundation, public roadmaps for both the network and all core implementation teams, and the creation of better documentation via a FIPs resource library.
 

@@ -19,7 +19,7 @@ seo:
 
 The Filecoin community is currently considering Filecoin Improvement Proposal (FIP) 0018, which proposes to rebrand network “miners” as “storage providers”.
 
-The change was initiated by miners themselves, who argue that the term “storage provider” is a better representation of the role they play in the network. The current [FIP-0018 Draft Proposal](https://github.com/filecoin-project/FIPs/tree/master/FIPS/fip-0018.md) lists this and other perspectives as the primary motivator for the revision.
+The change was initiated by miners themselves, who argue that the term “storage provider” is a better representation of the role they play in the network. The current [FIP-0018 Draft Proposal](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0018.md) lists this and other perspectives as the primary motivator for the revision.
 
 Many members of the Filecoin community have already weighed in on this issue. This includes miners as well as developers, ambassadors, and others who participate in the Filecoin ecosystem in unique ways. Although the response to FIP-0018 has been overwhelmingly positive, the language adjustment will not be formally adopted until the entire Filecoin community has had an opportunity to provide feedback.
 

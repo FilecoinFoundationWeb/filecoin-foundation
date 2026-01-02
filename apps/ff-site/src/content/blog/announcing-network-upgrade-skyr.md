@@ -30,4 +30,4 @@ What’s next for the Filecoin network? User-programmable smart contracts are on
 
 The v16 update is the culmination of a comprehensive end-to-end effort spanning from network ideation to developer implementation, an achievement hard-won from every level of the community and setting the tone for the future of the network; a milestone only possible thanks to everyone in the community innovating the boundaries of decentralized storage.
 
-Stay involved in governance discussions and keep an eye on the next phase of the FVM by heading over to the [FilecoinProject/FIP](https://github.com/filecoin-project/FIPs/tree/master/discussions?discussions_q=FVM) Github page. Welcome to Skyr!
+Stay involved in governance discussions and keep an eye on the next phase of the FVM by heading over to the [FilecoinProject/FIP](https://github.com/filecoin-project/FIPs/discussions?discussions_q=FVM) Github page. Welcome to Skyr!
