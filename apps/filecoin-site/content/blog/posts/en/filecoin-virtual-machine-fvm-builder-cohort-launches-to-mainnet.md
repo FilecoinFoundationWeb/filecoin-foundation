@@ -68,7 +68,7 @@ MomentSwap is an FVM-based social media platform that makes sharing wonderful mo
 
 Collectif DAO optimizes FIL earning potential by leasing FIL as collateral into the network's most sophisticated Storage Providers. Leveraging a deep understanding of the Filecoin economy and cutting-edge financial models, Collectif DAO gives FIL token holders unrivaled access to high fees. With the help of FVM capabilities, the platform enhances the distribution of FIL, fostering a resilient and balanced growth of the Filecoin ecosystem. 
 
-## [STFIL](https://www.stfil.io/) - Liquid leasing with compounding rewards 
+## stFIL - Liquid leasing with compounding rewards 
 
 STFIL Protocol is one of the first Filecoin liquidity and leveraged farming protocols launched on FVM. It enables $FIL token holders to earn stable fees without a locking period and offers storage providers undercollateralized FIL for leveraged farming positions. As a pioneer on FVM, STFIL is dedicated to providing decentralized and trustless FIL leasing while ensuring higher profitability. The protocol is incubated by [Outlier Ventures](https://twitter.com/oviohq/status/1662062713550299136?s=46&t=XwjlEiqmvBvELhXXb60cUw) and has been featured in the Filecoin & IPFS Ecosystem Roundup 'Wins of the Month.'
 

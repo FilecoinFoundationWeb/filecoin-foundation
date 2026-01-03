@@ -81,7 +81,7 @@ There are also numerous notable decentralized applications that have launched on
 
 - [Glif](https://www.glif.io/en)
 - [Collectif DAO](https://collectif.finance/)
-- [stFIL](https://www.stfil.io/#/)
+- stFIL
 - SFT Protocol
 - [Filet Finance](https://www.filet.finance/)
 - [HashMix](https://hashmix.org/en/)

@@ -11,9 +11,7 @@ category: data-storage-management
 tech:
   - filecoin
 description: Cutting edge decentralized communication platform built on the XMTP protocol which provides secure, private interactions for digital asset transactions.
-website: https://cryptalk.net
 year-joined: 2025
-
 twitter: https://x.com/CryptalkNetwork
 seo:
   title: CRYPTALK

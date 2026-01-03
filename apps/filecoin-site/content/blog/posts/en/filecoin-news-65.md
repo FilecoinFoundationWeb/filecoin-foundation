@@ -54,7 +54,7 @@ The [Filecoin Virtual Machine (FVM)](http://fvm.dev/) went live on mainnet on Ma
 
 ### FVM Growth: STFIL
 
-FrogHub is one of the many teams that are building one of the exciting new applications enabled by the FVM. Their project, STFIL, is a decentralized liquidity staking protocol for FIL that connects token holders and Storage Providers in more efficient ways. The protocol recently passed 10K in total FIL locked with the help of their leasing features. Learn more about STFIL, the team behind it, and how they’re growing the Filecoin DeFi ecosystem by visiting their [website](https://www.stfil.io/).
+FrogHub is one of the many teams that are building one of the exciting new applications enabled by the FVM. Their project, STFIL, is a decentralized liquidity staking protocol for FIL that connects token holders and Storage Providers in more efficient ways. The protocol recently passed 10K in total FIL locked with the help of their leasing features.
 
 ### Filecoin Bug Bounty Program Now Live on Immunefi
 

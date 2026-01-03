@@ -7,7 +7,6 @@ image:
   src: /assets/images/dosier.png
 category: data-storage-management
 description: Decentralized ZK Content Delivery Network
-website: https://dosier.ai/
 tech:
   - filecoin
 twitter: https://twitter.com/dosier_ai

@@ -92,7 +92,7 @@ MFIL DAO is a comprehensive solution for providing liquidity services to the Fil
 
 NodeDAO is a decentralized organization, formed by several larger institutions, that provides staking liquidity solutions. Previously, NodeDAO launched staking solutions for Ethereum and has now introduced a staking solution for the FIlecoin ecosystem, which is already live on Mainnet. NodeDAO aims to connect token holders with SPs via a decentralized platform in hopes of creating a more robust and efficient staking ecosystem. _Currently live on Mainnet_
 
-[**stFIL**](https://www.stfil.io/)
+**stFIL**
 
 stFIL is built by the FrogHub team, an active developer in the Filecoin ecosystem. stFIL is designed to be community owned, decentralized, and trustless, while enabling storage provider growth. _Launching April 2023_
 
