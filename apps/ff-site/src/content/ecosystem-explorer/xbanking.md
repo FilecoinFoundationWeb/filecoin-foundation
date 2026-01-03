@@ -10,10 +10,8 @@ image:
 category: leasing
 description: Non-custodial staking & liquid pools provider. Liquid pool provider
   and market maker for FIL tokens.
-website: https://xbanking.org
 tech:
   - filecoin
-repo: https://github.com/xbankingorg
 twitter: https://twitter.com/TresDotFinance
 video-url: https://www.youtube.com/embed/4YHdkICYvJc
 year-joined: 2024

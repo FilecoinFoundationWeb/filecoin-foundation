@@ -404,7 +404,7 @@ At [FIL Singapore]((https://lu.ma/escdw9dx?tk=LRE4fg), hosted by [MetaPals](/eco
 
 [FIL Bangkok](/events/fil-bangkok-2024)
 
-Ecosystem teams unveiled new L2 data storage solutions, signaling a new era of what’s possible with Filecoin. [Akave](/ecosystem-explorer/akave), a decentralized, modular L2 solution offering cutting-edge encryption, [announced the launch of its Yucca testnet](https://www.akave.ai/blog/akave-secures-3-45-million-to-accelerate-on-chain-data-management). Storacha, a high-performance decentralized storage solution built with Filecoin, [launched its closed alpha network tailored](https://medium.com/@storacha/storachas-alpha-network-ignites-unleashing-decentralized-hot-storage-on-filecoin-bddad58bd1be) for gaming, AI, and DePIN networks. 
+Ecosystem teams unveiled new L2 data storage solutions, signaling a new era of what’s possible with Filecoin. [Akave](/ecosystem-explorer/akave), a decentralized, modular L2 solution offering cutting-edge encryption, announced the launch of its Yucca testnet. Storacha, a high-performance decentralized storage solution built with Filecoin, [launched its closed alpha network tailored](https://medium.com/@storacha/storachas-alpha-network-ignites-unleashing-decentralized-hot-storage-on-filecoin-bddad58bd1be) for gaming, AI, and DePIN networks. 
 
 #### More Events Organized and Supported by FF
 

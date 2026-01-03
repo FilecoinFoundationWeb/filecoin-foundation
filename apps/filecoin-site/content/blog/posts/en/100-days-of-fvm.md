@@ -71,7 +71,7 @@ There are also numerous notable decentralized applications that have launched on
 
 ### Media & Entertainment
 
-- [Waterlily](https://www.waterlily.ai/)
+- Waterlily
 - [Trustified](https://www.trustified.xyz/)
 - [Filemarket](https://filemarket.xyz/)
 - [NFT Forever](https://blog.nft.storage/posts/2023-03-14-announcing-nft-forever-project)
@@ -81,7 +81,7 @@ There are also numerous notable decentralized applications that have launched on
 
 - [Glif](https://www.glif.io/en)
 - [Collectif DAO](https://collectif.finance/)
-- [stFIL](https://www.stfil.io/#/)
+- stFIL
 - SFT Protocol
 - [Filet Finance](https://www.filet.finance/)
 - [HashMix](https://hashmix.org/en/)

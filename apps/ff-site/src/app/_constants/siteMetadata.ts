@@ -26,7 +26,6 @@ const FIL_PLUS_URLS = {
   filPlusParticipants:
     'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus#filecoin-processes-and-participants',
   notary: 'https://github.com/filecoin-project/Allocator-Governance',
-  site: 'https://plus.fil.org',
   slack: 'https://filecoinproject.slack.com/archives/C01DLAPKDGX',
 }
 

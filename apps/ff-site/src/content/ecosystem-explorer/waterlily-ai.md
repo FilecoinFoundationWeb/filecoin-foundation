@@ -12,7 +12,6 @@ tech:
   - ipfs
 image:
   src: /assets/images/659872da19567f4307ba3b38_bacalhua_logo_white.png
-website: "https://www.waterlily.ai/"
 featured-content: "https://fil.org/blog/decentralizing-art-a-deep-dive-into-waterlily-ais-use-of-fvm-and-ai"
 repo: "https://github.com/bacalhau-project/Waterlily"
 twitter: "https://twitter.com/Waterlily"

@@ -10,7 +10,7 @@ tech:
   - filecoin
 image:
   src: /assets/images/screenshot-2024-02-07-at-11.20.48-am.png
-website: "https://foxwallet.com/en"
+website: "https://foxwallet.com/"
 repo: https://github.com/foxwallet
 twitter: "https://twitter.com/FoxWallet"
 year-joined: 2024

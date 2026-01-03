@@ -13,7 +13,6 @@ description: Empower any user on any chain to engage in seamless cross-chain
 website: https://archly.fi
 tech:
   - filecoin
-repo: https://github.com/ArchlyFi
 twitter: https://twitter.com/archlyfinance/
 video-url: https://www.youtube.com/embed/8rt11F3qG1I
 year-joined: 2024

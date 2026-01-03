@@ -58,7 +58,11 @@ There are a number of these applications in this group that have been approved a
 
 ## Storage provider outreach
 
-As a storage provider, how do you find verified clients? There is a Storage Provider Table where you can add your contact info, locations served, and other details for clients to find and compare with other storage providers. This lives on the [Filecoin Plus Registry](https://plus.fil.org/ "Filecoin Plus Registry"), which is where a client goes to get verified to begin with.
+As a storage provider, how do you find verified clients?
+
+Clients receive DataCap by applying through an allocator. Once verified, they look for storage providers to store their data.
+
+You can make yourself discoverable by adding your contact information, regions served, and other details to the Storage Provider Table on the Filecoin Plus Registry, where clients can find and compare storage providers.
 
 Getting added to the Storage Provider Table requires simply editing and submitting a pull request on the public [Filecoin Plus Client Onboarding repo](https://github.com/filecoin-project/filecoin-plus-client-onboarding "Filecoin Plus Client Onboarding repo") with the miners.md markdown file. Other information is recorded on the Storage Provider Table including reputation score coming from the [Filecoin Reputation System](filrep.io "Filecoin Reputation System").
 

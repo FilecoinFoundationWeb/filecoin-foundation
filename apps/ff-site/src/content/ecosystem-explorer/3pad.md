@@ -11,7 +11,6 @@ category: dapp
 description: 3Pad is a trustless web3 platform that provides users with an
   WYSIWYG link page for building and managing their online presence by deploying
   their own Dapp.
-website: https://hello.3pad.xyz/
 tech:
   - ipfs
 repo: https://github.com/3Pad

@@ -113,7 +113,7 @@ If you're a service provider interested in pioneering this new frontier, the SPX
 
 The FilOz team also created comprehensive documentation to help you get started with PDP:
 
-- [Getting Started with PDP for Filecoin Storage Providers](https://docs.filecoin.io/storage-providers/pdp/prerequisites)
-- [Getting Started with PDP for Storage Clients](https://docs.filecoin.io/storage-providers/pdp/use-pdp)
+- [Getting Started with PDP for Filecoin Storage Providers](https://docs.filecoin.io/storage-providers/pdp/install-and-run-pdp#prerequisites)
+- [Getting Started with PDP for Storage Clients](https://docs.filecoin.io/storage-providers/pdp)
 
 Stay tuned for more updates, tutorials, and announcements coming soon!

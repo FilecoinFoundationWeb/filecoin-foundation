@@ -740,7 +740,6 @@ sponsors:
     - name: STFIL
       image:
         src: /assets/images/stfil-logo.webp
-      website: https://www.stfil.io/
     - name: SFT
       image:
         src: /assets/images/sft-logo.webp

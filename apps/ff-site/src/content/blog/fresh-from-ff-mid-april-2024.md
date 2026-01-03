@@ -41,7 +41,6 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 ### Governance
 
 - Nv22 has been [postponed until April 24](https://twitter.com/fil_gov/status/1777386747023724707). If you haven’t already, please ensure to follow your implementation’s instructions and update your nodes accordingly in preparation for the scheduled upgrade on April 24: [](https://github.com/filecoin-project/lotus/releases/tag/v1.26.2)
-
   - [Lotus](https://github.com/filecoin-project/lotus/releases/tag/v1.26.2)
   - [Forest](https://github.com/ChainSafe/forest/releases/tag/v0.17.2)
   - [Venus](https://venus.filecoin.io/operation/nv22-upgrade.html)
@@ -68,8 +67,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 - Brynn O’Donnell and Jefferson Sankara from the social impact team spoke at the University of Maryland’s [EASIER Data Initiative](/ecosystem-explorer/easier-data-initiative) workshop on [Open Geospatial Science and the Decentralized Geospatial Web](https://workshop.easierdata.org/).
 - See you at [Consensus](https://consensus2024.coindesk.com/), May 29-31 in Austin, TX. Find FF and teams across the Filecoin ecosystem in Austin at events throughout the week. Stay tuned for more details.
 - Join us for the Orbit Europe Roadshow!
-
-  - April 17-19, join FF Dev Advocate Robert Dowling for talks at [Web3FC](https://web3fc.xyz/) in Barcelona.
+  - April 17-19, join FF Dev Advocate Robert Dowling for talks at Web3FC in Barcelona.
   - April 22, [Intro to Filecoin and Interplanetary Consensus hosted by Zondax](https://www.eventbrite.com/e/filecoin-orbit-meetup-intro-to-filecoin-and-interplanetary-consensus-tickets-867725569537?aff=oddtdtcreator) in Madrid
   - April 23, [ETHWarsaw & Orbit Filecoin](https://www.eventbrite.com/e/ethwarsaw-orbit-filecoin-tickets-873379029187?aff=oddtdtc[%85]eVhMFk3tu5hHSWso2QesU1Z4F_iBAy_9Luj8cPx6pGPwvmOq3wfvfFQ8SCN)
   - April 29, [Orbit Filecoin x Cyber Science Katowice](https://www.eventbrite.com/e/orbit-filecoin-x-cyber-science-katowice-tickets-872433832077?aff=oddtdtcreator)

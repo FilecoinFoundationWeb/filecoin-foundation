@@ -18,7 +18,7 @@ seo:
 
 ## Key Highlights
 
-- [Beijing Yiweishi Network Technology Company, Ltd.](http://www.ewesion.com/) (commonly referred to as Ewesion) is one of China’s fastest-growing online hosts of photographs, illustrations, and vector files.
+- Beijing Yiweishi Network Technology Company, Ltd. (commonly referred to as Ewesion) is one of China’s fastest-growing online hosts of photographs, illustrations, and vector files.
 - Ewesion’s library currently uses around 1EB of storage in the public cloud. That number is set to increase even further as the company expands into audio and video capabilities.
 - Ewesion is working closely with ByteBase, a decentralized storage provider in the Filecoin network, to leverage the power of both Filecoin’s blockchain-based technology and its cost-effective storage solution.
 - The benefits Ewesion is seeing by adopting the Filecoin network include lower-cost for storage while maintaining ease of image retrieval for customers; security and peace of mind for its business partners (photographers, illustrators, and designers) in terms of copyright and data ownership challenges; and longer-term storage solutions for the current client base.

@@ -9,7 +9,6 @@ location:
   region: north-america
 start-date: 2024-12-06
 end-date: 2024-12-08
-external-link: https://foresight.org/vw2024us/
 image:
   src: /assets/images/vision-sf-2022.png
 seo:

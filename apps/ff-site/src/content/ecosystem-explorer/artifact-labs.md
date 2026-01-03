@@ -9,7 +9,6 @@ image:
   src: /assets/images/659746e70b1ecbf25f67cd3c_artifact-labs-logo.webp
 category: arts-collectibles-nfts
 description: Artifact Labs preserves and connects culture and history on the blockchain.
-website: https://artifactlabs.io/
 tech:
   - filecoin
   - ipfs

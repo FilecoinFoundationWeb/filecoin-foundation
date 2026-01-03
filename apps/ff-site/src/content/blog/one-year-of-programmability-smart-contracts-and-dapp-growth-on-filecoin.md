@@ -38,7 +38,7 @@ Here are a few more early-stage projects building on FVM to keep an eye on**:**
 
 - [Clover](/ecosystem-explorer/clover) (link previously available but now unavailable): Building a workplace suite dedicated to improving communication and community engagement within DAO organizations.
 - [FileMarket](/ecosystem-explorer/filemarket): Assists users of EVM-compatible wallets used for digital content creation to store files directly in the wallet without the risk of unauthorized access, with the ability to monetize through selling access on a public storefront. In the Encrypted FileToken protocol (EFT), FileMarket aims to decentralize the role of the trusted third party responsible for fraud checks.
-- [Hashcase](https://www.hashcase.co/): Helping brands create, launch, and distribute digital collectibles to non-Web3 audiences.
+- Hashcase _(original link no longer available)_: Helping brands create, launch, and distribute digital collectibles to non-Web3 audiences.
 - [Eastore](/ecosystem-explorer/eastore): A decentralized solution on Filecoin that stores files directly to the Filecoin network using smart contracts completely onchain.
 - [Trustified](https://www.trustified.xyz/): Building a platform to issue forgery-proof digital certificates and badges.
 - [Resolutio](https://resolutio.ai/): Blockchain-based stamps to provide irrefutable proof of ownership, safeguarding creative assets from unauthorized use.

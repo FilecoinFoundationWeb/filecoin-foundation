@@ -153,7 +153,6 @@ schedule:
           start-time: 10:00:00.000Z
           end-time: 16:00:00.000Z
           location: La Rural
-          url: https://devconnect.org/calendar?event=trustlessagentsday
 seo:
   description: Join Filecoin at DevConnect in Argentina! Explore ecosystem
     updates, connect with the community, and discover how you can help build the

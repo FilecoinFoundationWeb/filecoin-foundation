@@ -52,6 +52,9 @@ Filecoin Plus是实用的解决方案，它解决了技术上的挑战，即在�
 
 ## 参与
 
-如果您对DataCap有兴趣，想通过Filecoin来满足您的存储需求，您可以在 [Filecoin Plus注册表](https://plus.fil.org/)上找到一份活跃的公证人名单。[client-onboarding repo](https://github.com/filecoin-project/filecoin-plus-client-onboarding)正用于提出和跟踪DataCap的请求，并包括关于您收到分配后如何使用DataCap的额外说明。
+如果您希望申请 DataCap，并通过 Filecoin 来满足您的存储需求，您可以在 [Filecoin Plus 分配者（allocators）页面](/filecoin-plus/allocators) 上查看活跃的分配者列表。
+
+用于提交和跟踪 DataCap 申请的 [client-onboarding 仓库](https://github.com/filecoin-project/filecoin-plus-client-onboarding) 位于此处。  
+该仓库还包含在获得分配后如何使用 DataCap 的相关说明。
 
 每周二都有社区治理电话会--您可以通过[Filecoin社区活动日历](https://calendar.google.com/calendar/u/1?cid=Y19rMWdrZm9vbTE3ZzBqOGM2YmFtNnVmNDNqMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)加入。

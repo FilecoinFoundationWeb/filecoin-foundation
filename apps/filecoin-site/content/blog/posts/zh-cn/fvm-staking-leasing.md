@@ -89,7 +89,7 @@ mFIL DAO是为Filecoin网络提供流动性服务的综合解决方案，以“D
 
 NodeDAO提供DAO方式的FIL出租服务，将Token持有人和存储提供商通过DAO 连接起来。NodeDAO之前也为以太坊构建过类似的解决方案。 _将在 2023 年第二季度推出_
 
-[**stFIL**](https://www.stfil.io/)
+**stFIL**
 
 stFIL是FrogHub团队在Filecoin生态中的积极开发者所构建的。stFIL 设计为社区所有、去中心化和不可信，同时也支持存储提供商的增长。 _将在 2023 年 4 月推出_
 

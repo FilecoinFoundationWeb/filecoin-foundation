@@ -48,5 +48,3 @@ We call on the Filecoin community to utilize the benefits of this tool. There ar
 We are also working to identify helpful ways to utilize the data generated from Metropolis to enhance the FIPs process.
 
 Try out the [Metropolis governance tool](https://poll.fil.org) and let us know what you think. We encourage community members to explore potential use cases for Metropolis and share their feedback with the Filecoin Foundation Governance Team. The best way to provide feedback is to join our monthly Community Governance Calls - [register for upcoming calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto).
-
-To have an initial deep-dive into how Metropolis works, watch the [Metropolis demo video](https://github.com/filecoin-project/FIPs/tree/master/Community%20Governance%20Calls) from our Community Governance Calls.

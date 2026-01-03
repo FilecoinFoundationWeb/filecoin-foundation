@@ -670,7 +670,6 @@ sponsors:
     - name: Impossible Cloud Network
       image:
         src: /assets/images/impossible-logo.webp
-      website: https://www.impossiblecloud.com/icn
   third-tier:
     - name: Open Ledger
       image:
