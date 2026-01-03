@@ -20,9 +20,9 @@ seo:
     integrity, and long-term availability powered by Filecoin.
 ---
 
-KYVE is a Proof of Stake (PoS) Layer 1 blockchain built with the [Cosmos SDK](https://v1.cosmos.network/sdk). It has two layers: the Chain Layer, and the Protocol Layer, each with their own node infrastructure.
+KYVE is a Proof of Stake (PoS) Layer 1 blockchain built with the Cosmos SDK. It has two layers: the Chain Layer, and the Protocol Layer, each with their own node infrastructure.
 
-The Chain Layer which is the consensus layer, is the backbone of KYVE and is an entirely sovereign Proof of Stake (PoS) blockchain built with/on [Ignite](https://ignitedao.io/about-ignite-dao/). It’s run by independent nodes, which enable users to support and secure the KYVE blockchain.
+The Chain Layer which is the consensus layer, is the backbone of KYVE and is an entirely sovereign Proof of Stake (PoS) blockchain built with/on Ignite. It’s run by independent nodes, which enable users to support and secure the KYVE blockchain.
 
 Sitting on top of the consensus layer is the Protocol Layer, which enables the actual use case of KYVE’s data lake. This includes data pools, funding, staking, and delegation.
 

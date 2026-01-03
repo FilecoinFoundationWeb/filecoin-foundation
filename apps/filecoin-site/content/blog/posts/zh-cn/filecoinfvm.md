@@ -63,7 +63,7 @@ FVM与运行在以太坊区块链之上的EVM完全兼容，这有助于新Filec
 
 ### 媒体与娱乐
 
-- [Waterlily](https://www.waterlily.ai/)
+- Waterlily
 - [Trustified](https://www.trustified.xyz/)
 - [Filemarket](https://filemarket.xyz/)
 - [NFT Forever](https://blog.nft.storage/posts/2023-03-14-announcing-nft-forever-project)

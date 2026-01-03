@@ -71,7 +71,7 @@ There are also numerous notable decentralized applications that have launched on
 
 ### Media & Entertainment
 
-- [Waterlily](https://www.waterlily.ai/)
+- Waterlily
 - [Trustified](https://www.trustified.xyz/)
 - [Filemarket](https://filemarket.xyz/)
 - [NFT Forever](https://blog.nft.storage/posts/2023-03-14-announcing-nft-forever-project)

@@ -14,7 +14,7 @@ tech:
 description: ZKForge is a complete privacy ecosystem powered by zkSTARK proofs to enable encrypted messaging, privacy-preserving dApps
 website: https://zkforge.io/
 year-joined: 2025
-repo: https://github.com/ZKForgeIO/ZKForge-Repo
+repo: https://github.com/ZKForgeIO
 twitter: https://x.com/ZKForge_io
 seo:
   description: ZKForge is a complete privacy ecosystem powered by zkSTARK proofs to enable encrypted messaging, privacy-preserving dApps

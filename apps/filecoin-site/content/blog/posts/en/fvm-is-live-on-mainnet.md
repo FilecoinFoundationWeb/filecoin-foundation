@@ -37,7 +37,7 @@ Additionally, the launch of FVM solidifies Filecoin’s position as the Layer-1 
 
 ## Unlocking the open data economy for Web3
 
-The FVM not only brings closer a more resilient, accessible and decentralized cloud, but also opportunities to own and reward individual contributions to the data economy in previously unimaginable ways for the many thousands of developers, storage providers, entrepreneurs and other network participants from all over the world. For example, [Waterlily](https://www.waterlily.ai/), a prompt-based AI tool that generates images in the style of specific artists, uses tokens to directly reward the creator of the original AI training data.
+The FVM not only brings closer a more resilient, accessible and decentralized cloud, but also opportunities to own and reward individual contributions to the data economy in previously unimaginable ways for the many thousands of developers, storage providers, entrepreneurs and other network participants from all over the world. For example, Waterlily, a prompt-based AI tool that generates images in the style of specific artists, uses tokens to directly reward the creator of the original AI training data.
 
 Waterlily is one of over 150 teams which began deploying FVM-powered products and services to the Filecoin mainnet earlier today after experimenting, iterating and hardening on testnets over the past few months. The ability to launch FVM-powered DataDAOs, dApps, and more – many of which were impossible to build before – has energized the 16,000+ developers in the Filecoin ecosystem.
 

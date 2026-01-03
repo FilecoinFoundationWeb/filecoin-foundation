@@ -12,7 +12,6 @@ tech:
   - filecoin
   - ipfs
 description: GuaridOS is a decentralized privacy suite. It combines secure email, storage, and identity management with Filecoin and IPFS integration.
-website: https://guaridos.me/
 year-joined: 2025
 repo: https://github.com/GuaridOS-HQ
 twitter: https://x.com/guaridosme

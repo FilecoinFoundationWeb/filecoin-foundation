@@ -9,7 +9,6 @@ image:
   src: /assets/images/659751960cea1eb2d9ca9d33_opengate_logo.png
 category: data-storage-management
 description: OpenGate has launched CryptoBear, an NFT project within the Filecoin ecosystem.
-website: https://www.opengatenft.com/
 tech:
   - ipfs
 twitter: https://twitter.com/OpenGateNFT

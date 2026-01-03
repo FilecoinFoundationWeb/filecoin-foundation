@@ -11,8 +11,6 @@ tech:
   - filecoin
 image:
   src: /assets/images/repl_logo_white.png
-website: "https://www.repl.fi/"
-twitter: "https://twitter.com/Repl_fi"
 category: data-storage-management
 seo:
   description:

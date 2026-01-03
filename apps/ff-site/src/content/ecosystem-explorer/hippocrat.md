@@ -14,7 +14,6 @@ tech:
 description: Hippocrat is a Healthcare Data Protocol that transforms healthcare data collection and utilization by leveraging blockchain technology and zero-knowledge proofs.
 website: https://hippocrat.io
 year-joined: 2024
-repo: https://github.com/hippocrat-dao
 twitter: https://x.com/hippocrat_io
 seo:
   description: Hippocrat is a Healthcare Data Protocol that transforms healthcare data collection and utilization by leveraging blockchain technology and zero-knowledge proofs.
