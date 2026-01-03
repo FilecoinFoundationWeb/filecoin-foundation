@@ -52,6 +52,6 @@ Thank you to members of the community that have been involved in the program so 
 
 ## Getting involved
 
-If you are interested in receiving DataCap to have your storage needs served through Filecoin, you can find a list of active Notaries on the [Filecoin Plus Registry](https://plus.fil.org/). The [client-onboarding](https://github.com/filecoin-project/filecoin-plus-client-onboarding) repo is being used to make and track requests for DataCap and includes additional instructions on how to use DataCap once you have received an allocation.
+If you are interested in receiving DataCap to have your storage needs served through Filecoin, you can find a list of active allocators on the [Filecoin Plus Allocators page](/filecoin-plus/allocators). The [client-onboarding](https://github.com/filecoin-project/filecoin-plus-client-onboarding) repo is being used to make and track requests for DataCap and includes additional instructions on how to use DataCap once you have received an allocation.
 
 Community Governance calls happen every other Tuesday - use the [Filecoin Community Events calendar](https://calendar.google.com/calendar/u/1?cid=Y19rMWdrZm9vbTE3ZzBqOGM2YmFtNnVmNDNqMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) to join.
