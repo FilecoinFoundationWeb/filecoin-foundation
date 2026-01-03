@@ -40,5 +40,3 @@ There’s already bias against people of color and women in terms of getting acc
 —
 
 At FFDW, our mission is to help educate society about the decentralized web and how its solutions can aid in preserving humanity’s most important information. We look forward to continuing to support DivInc as it helps bring diverse perspectives to the Web3 ecosystem. 
-
-_To learn more about the Fall 2023 DWeb for Social Impact Accelerator supported by FFDW, visit [divinc.org/apply](http://www.divinc.org/apply)._
