@@ -8,7 +8,7 @@ description: >-
   serves everyone from large and medium-sized enterprises to media and
   individual users.
 image:
-  src: /assets/images/643e66c80a81033d920c68ba_1-b1odemnhfczn_24q2linww.webp
+  src: /assets/images/643e66c80a810364460c68bb_1-b1odemnhfczn_24q2linww.png
 category: use-cases
 seo:
   description:
