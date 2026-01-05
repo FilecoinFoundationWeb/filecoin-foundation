@@ -19,14 +19,22 @@ import { Table } from './Table'
 export type TanstackTableProps<TData> = {
   table: TableType<TData>
   striped?: boolean
+  maxHeight?: `${number}px` | `${number}vh`
 }
 
 export function TanstackTable<TData>({
   table,
   striped = true,
+  maxHeight,
 }: TanstackTableProps<TData>) {
+  const isScrollable = maxHeight != null
+
+  const containerStyle = isScrollable
+    ? { maxHeight, overflow: 'auto' as const }
+    : undefined
+
   return (
-    <Table>
+    <Table containerStyle={containerStyle}>
       <Table.Header>
         {table.getHeaderGroups().map((headerGroup) => (
           <Table.Row key={headerGroup.id}>
@@ -38,7 +46,10 @@ export function TanstackTable<TData>({
               return (
                 <Table.Head
                   key={header.id}
-                  style={{ maxWidth: header.column.columnDef.maxSize }}
+                  style={{
+                    maxWidth: header.column.columnDef.maxSize,
+                  }}
+                  sticky={isScrollable}
                 >
                   {canSort ? (
                     <button
