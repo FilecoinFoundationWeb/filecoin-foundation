@@ -187,18 +187,8 @@ export const redirects = [
 
   // ECOSYSTEM PROJECTS REDIRECTS
   {
-    source: '/ecosystem-explorer/bildo',
-    destination: '/ecosystem-explorer/bidlo',
-    permanent: true,
-  },
-  {
-    source: '/ecosystem-explorer/solmedia/:path*',
+    source: '/ecosystem/project/artifact-labs',
     destination: '/ecosystem-explorer',
-    permanent: true,
-  },
-  {
-    source: '/ecosystem/muckrock',
-    destination: '/ecosystem-explorer/muckrock',
     permanent: true,
   },
   {
@@ -208,8 +198,8 @@ export const redirects = [
     permanent: true,
   },
   {
-    source: '/ecosystem-explorer/stfil',
-    destination: '/ecosystem-explorer',
+    source: '/ecosystem-explorer/bildo',
+    destination: '/ecosystem-explorer/bidlo',
     permanent: true,
   },
   {
@@ -219,6 +209,16 @@ export const redirects = [
   },
   {
     source: '/ecosystem-explorer/cooperdb',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem/project/cryptalk',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem/project/datahaus',
     destination: '/ecosystem-explorer',
     permanent: true,
   },
@@ -234,6 +234,26 @@ export const redirects = [
   },
   {
     source: '/ecosystem-explorer/encryption-pinner',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem/muckrock',
+    destination: '/ecosystem-explorer/muckrock',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/3pad',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/solmedia',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/stfil',
     destination: '/ecosystem-explorer',
     permanent: true,
   },
