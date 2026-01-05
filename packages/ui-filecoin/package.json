@@ -49,6 +49,10 @@
       "types": "./dist/components/CardGrid.d.ts",
       "default": "./dist/components/CardGrid.js"
     },
+    "./BreakoutContainer": {
+      "types": "./dist/components/BreakoutContainer.d.ts",
+      "default": "./dist/components/BreakoutContainer.js"
+    },
     "./Container": {
       "types": "./dist/components/Container.d.ts",
       "default": "./dist/components/Container.js"
