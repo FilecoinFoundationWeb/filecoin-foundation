@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.6.0
+
+### Minor Changes
+
+- 44db793: Add BreakoutContainer component for full-width content
+
 ## 0.5.10
 
 ### Patch Changes
