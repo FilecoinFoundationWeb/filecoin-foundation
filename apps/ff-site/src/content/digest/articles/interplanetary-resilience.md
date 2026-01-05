@@ -27,7 +27,7 @@ The [lunar economy](https://www.nasa.gov/humans-in-space/growing-the-lunar-econo
 
 ![The chart shows the total investment in billions of dollars on the left vertical axis, ranging from $0 to $15 billion, and the number of deals on the right vertical axis, ranging from 0 to 300. The horizontal axis lists the years from 2012 to 2021.](/assets/images/investment-start-up-space.webp "Investment in Start-Up Space Companies")
 
-([Prometheus Space, 2022](https://prometheusspace.com/the-state-of-the-space-startup-companies-in-2022-and-the-way-forward/))
+(Prometheus Space, 2022)
 
 ![A stacked bar chart with a line graph showing annual investment sources from 2014 to 2023. Investment types include Other, Corporate, Venture Capital, and Angel/Individual. Both total investment and the number of rounds generally increased, peaking around 2021.](/assets/images/annual-investment-source.webp "Annual Investment Source")
 
