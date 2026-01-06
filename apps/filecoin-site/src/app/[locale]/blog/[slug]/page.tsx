@@ -48,7 +48,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
             slug={slug}
             image={{
               src: image?.url || graphicsData.fallback.data.src,
-              alt: '',
+              alt: image?.alt || '',
             }}
           />
 

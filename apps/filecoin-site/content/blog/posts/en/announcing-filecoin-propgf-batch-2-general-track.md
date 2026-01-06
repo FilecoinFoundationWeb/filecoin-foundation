@@ -8,6 +8,7 @@ excerpt: >-
 share_image: /uploads/FIL-ProPGF.webp
 image:
   url: /uploads/FIL-ProPGF.webp
+  alt: Filecoin ProPGF program logo
 author: Sejal Rekhan & Josh Daniels
 date: 2025-12-03T00:26:00.160Z
 categories:

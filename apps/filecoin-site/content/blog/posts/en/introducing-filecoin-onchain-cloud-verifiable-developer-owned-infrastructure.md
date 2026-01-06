@@ -8,6 +8,7 @@ excerpt: >-
 share_image: /uploads/introducing-filecoin-onchain-cloud-hero2.webp
 image:
   url: /uploads/introducing-filecoin-onchain-cloud-hero2.webp
+  alt: Filecoin Onchain Cloud launch graphic
 date: 2025-11-18T11:28:55.495Z
 dim_image: true
 categories:

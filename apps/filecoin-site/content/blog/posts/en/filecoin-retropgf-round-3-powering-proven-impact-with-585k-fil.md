@@ -6,6 +6,7 @@ excerpt: >-
 share_image: /uploads/08.25.FIL-RetroPGF.webp
 image:
   url: /uploads/08.25.FIL-RetroPGF.webp
+  alt: Filecoin RetroPGF program graphic
 author: Onkar Date
 date: 2025-08-25T20:21:17.882Z
 categories:
@@ -14,7 +15,7 @@ categories:
 dim_image: true
 ---
 
-From the experimental first round that distributed [200,000 FIL to 99 projects](blog/posts/unveiling-fil-retropgf-1-retroactively-funding-filecoin-public-goods/), to the refined second round that allocated [300,000 FIL across 97 projects](blog/posts/amplify-the-impact-fil-retropgf-2-with-drips/), the Filecoin community has consistently demonstrated that public goods funding drives real innovation.
+From the experimental first round that distributed [200,000 FIL to 99 projects](/blog/unveiling-fil-retropgf-1-retroactively-funding-filecoin-public-goods/), to the refined second round that allocated [300,000 FIL across 97 projects](/blog/amplify-the-impact-fil-retropgf-2-with-drips/), the Filecoin community has consistently demonstrated that public goods funding drives real innovation.
 
 [RetroPGF](https://app.optimism.io/retropgf) is an upgrade to Filecoin’s core economic mechanisms that addresses a gap in funding for public goods. It sets out to fund contributions that have generated recognized impact for Filecoin using Optimism-style retroactive public goods funding. In essence, funding in recognition rather than anticipation.
 

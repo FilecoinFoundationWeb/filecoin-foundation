@@ -22,7 +22,7 @@ title: "Five Years of Filecoin: What We've Built and What's Next"
 _template: blog_detail
 ---
 
-October 15 marks five years since the launch of Filecoin mainnet. Since then, Filecoin has grown into the world’s largest decentralized storage network, supporting exbibytes of capacity, thousands of active storage deals, and a thriving community of developers, storage providers, and clients. Together, we’ve unlocked new frontiers for Filecoin, from [scaling chain bandwidth](/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-10-25x-increase-in-storage-onboarding/) 10-25x in 2021, to launching smart contract programmability in 2023.
+October 15 marks five years since the launch of Filecoin mainnet. Since then, Filecoin has grown into the world’s largest decentralized storage network, supporting exbibytes of capacity, thousands of active storage deals, and a thriving community of developers, storage providers, and clients. Together, we’ve unlocked new frontiers for Filecoin, from [scaling chain bandwidth](/blog/filecoin-v13-hyperdrive-network-upgrade-unlocks-10-25x-increase-in-storage-onboarding/) 10-25x in 2021, to launching smart contract programmability in 2023.
 
 Since Liftoff, Filecoin has been on a mission to bring fully verifiable, incentive-aligned, and decentralized storage to the world. The InterPlanetary File System (IPFS) is the open protocol used by a massive community of over half a million developers who use decentralized content IDs (CIDs) for everything from ENS websites to NFTs to trustless onchain agents and beyond. From day one, Filecoin was designed as an open incentive layer for anyone to persist their IPFS content-addressed data across a global network of cryptographically audited storage providers. 
 

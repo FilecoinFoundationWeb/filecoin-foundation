@@ -10,6 +10,7 @@ excerpt: >-
 share_image: /uploads/101725_ProPGF_Learning_Reflections.webp
 image:
   url: /uploads/101725_ProPGF_Learning_Reflections.webp
+  alt: ProPGF Batch 1 learning and reflections graphic
 author: Sejal Rekhan & Josh Daniels
 date: 2025-10-17T17:54:03.545Z
 categories:
@@ -91,7 +92,7 @@ These reflections also reminded us of something simpler but equally important: c
 
 Batch 2 launches next month, carrying forward these learnings into an improved and more predictable cycle.
 
-![](/uploads/screenshot-2025-10-17-at-1.55.24-PM.webp)
+![Batch 2 timeline showing applications open November–December 2025, review in January 2026, and KYC and payouts from February to March 2026](/uploads/screenshot-2025-10-17-at-1.55.24-PM.webp)
 
 ## Closing
 
