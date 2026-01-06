@@ -1,7 +1,5 @@
-import { LogoWithSnow } from './LogoWithSnow'
+import LogoAsset from '@/assets/images/logo.svg'
 
-type LogoProps = React.SVGProps<SVGSVGElement>
-
-export function Logo(props: LogoProps) {
-  return <LogoWithSnow {...props} />
+export function Logo() {
+  return <LogoAsset />
 }
