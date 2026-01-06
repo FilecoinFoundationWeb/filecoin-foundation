@@ -10,6 +10,7 @@ type SectionContentDescriptionProps = {
 }
 
 type SectionContentProps = {
+  headingTag: HeadingProps['tag']
   title: HeadingProps['children']
   children?: React.ReactNode
   cta?: ButtonRowProps['buttons']
@@ -18,6 +19,7 @@ type SectionContentProps = {
 } & Partial<SectionContentDescriptionProps>
 
 export function SectionContent({
+  headingTag,
   title,
   description,
   descriptionColorBase,
@@ -37,7 +39,7 @@ export function SectionContent({
           centerTitle && 'mx-auto text-center',
         )}
       >
-        <Heading tag="h2" variant="section-heading">
+        <Heading tag={headingTag} variant="section-heading">
           {title}
         </Heading>
 
