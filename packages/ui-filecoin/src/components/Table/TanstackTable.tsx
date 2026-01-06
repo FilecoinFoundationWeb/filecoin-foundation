@@ -18,9 +18,13 @@ import { Table } from './Table'
 
 export type TanstackTableProps<TData> = {
   table: TableType<TData>
+  alternatingRowColors?: boolean
 }
 
-export function TanstackTable<TData>({ table }: TanstackTableProps<TData>) {
+export function TanstackTable<TData>({
+  table,
+  alternatingRowColors = false,
+}: TanstackTableProps<TData>) {
   return (
     <Table>
       <Table.Header>
@@ -67,8 +71,13 @@ export function TanstackTable<TData>({ table }: TanstackTableProps<TData>) {
         ))}
       </Table.Header>
       <Table.Body>
-        {table.getRowModel().rows.map((row) => (
-          <Table.Row key={row.id}>
+        {table.getRowModel().rows.map((row, index) => (
+          <Table.Row
+            key={row.id}
+            className={clsx(
+              alternatingRowColors && index % 2 === 1 && 'bg-zinc-50',
+            )}
+          >
             {row.getVisibleCells().map((cell) => (
               <Table.Cell
                 key={cell.id}
