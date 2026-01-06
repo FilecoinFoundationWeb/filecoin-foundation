@@ -78,7 +78,7 @@ function TableHead({ sticky, className, ...props }: TableHeadProps) {
       className={clsx(
         'border-table-border border-b text-left align-middle font-medium whitespace-nowrap',
         cellPadding,
-        sticky && 'sticky top-0 z-10 bg-(--color-table-background)',
+        sticky && 'bg-table-background sticky top-0 z-10',
         className,
       )}
       {...props}

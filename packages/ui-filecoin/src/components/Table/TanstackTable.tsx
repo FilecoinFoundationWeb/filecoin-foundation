@@ -56,8 +56,8 @@ export function TanstackTable<TData>({
                       onClick={header.column.getToggleSortingHandler()}
                       className={clsx(
                         'flex cursor-pointer items-center gap-2 rounded-sm py-1.5 pr-1.5 pl-2.5 font-semibold',
-                        'focus:brand-outline hover:bg-(--color-head-button-background) focus:bg-(--color-head-button-background)',
-                        'aria-[sort=ascending]:bg-(--color-head-button-background) aria-[sort=descending]:bg-(--color-head-button-background)',
+                        'focus:brand-outline hover:bg-color-head-button-background focus:bg-color-head-button-background',
+                        'aria-[sort=ascending]:bg-color-head-button-background aria-[sort=descending]:bg-color-head-button-background',
                       )}
                       aria-label={`Sort by ${columnName}`}
                       aria-sort={getAriaSort(sortState)}
