@@ -27,7 +27,7 @@ export function TanstackTable<TData>({
   striped = true,
   maxHeight,
 }: TanstackTableProps<TData>) {
-  const isScrollable = maxHeight != null
+  const isScrollable = maxHeight !== null
 
   const containerStyle = isScrollable
     ? { maxHeight, overflow: 'auto' as const }
