@@ -18,7 +18,7 @@ export const networkUpgrades = [
     label: 'Current upgrade',
     cta: {
       href: 'https://fil.org/blog/announcing-the-filecoin-network-v27-golden-week-upgrade',
-      text: 'Learn more',
+      text: 'Learn more about NV27 Golden Week',
     },
     image: {
       src: nv27GoldenWeekImage,
@@ -32,7 +32,7 @@ export const networkUpgrades = [
     label: 'Upcoming upgrade',
     cta: {
       href: 'https://github.com/filecoin-project/core-devs/discussions/205',
-      text: 'Learn more',
+      text: 'Learn more about NV28',
     },
     image: {
       src: nv28GoldenWeekImage,
