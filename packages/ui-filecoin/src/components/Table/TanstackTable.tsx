@@ -18,9 +18,13 @@ import { Table } from './Table'
 
 export type TanstackTableProps<TData> = {
   table: TableType<TData>
+  striped?: boolean
 }
 
-export function TanstackTable<TData>({ table }: TanstackTableProps<TData>) {
+export function TanstackTable<TData>({
+  table,
+  striped = true,
+}: TanstackTableProps<TData>) {
   return (
     <Table>
       <Table.Header>
@@ -67,8 +71,13 @@ export function TanstackTable<TData>({ table }: TanstackTableProps<TData>) {
         ))}
       </Table.Header>
       <Table.Body>
-        {table.getRowModel().rows.map((row) => (
-          <Table.Row key={row.id}>
+        {table.getRowModel().rows.map((row, index) => (
+          <Table.Row
+            key={row.id}
+            className={clsx(
+              striped && index % 2 === 0 && 'bg-(--color-table-row-striped)',
+            )}
+          >
             {row.getVisibleCells().map((cell) => (
               <Table.Cell
                 key={cell.id}
