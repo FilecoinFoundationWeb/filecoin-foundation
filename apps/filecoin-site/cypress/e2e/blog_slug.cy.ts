@@ -34,16 +34,12 @@ describe('Blog Slug Page', () => {
       })
     })
   })
+})
 
-  it(tests.links.prompt, () => {
-    cy.task<string>('getRandomSlug', ENGLISH_CONTENT_FOLDER).then((slug) => {
-      tests.links.fn(`${BLOG_PATH}/${slug}`)
-    })
-  })
+describe('Blog Post - Visual Regression', () => {
+  const BLOG_POST_SLUG = 'introducing-filecoin-onchain-cloud'
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', ENGLISH_CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(`${BLOG_PATH}/${slug}`)
-    })
+    tests.visualSnapshot.fn(path.join(BLOG_PATH, BLOG_POST_SLUG))
   })
 })

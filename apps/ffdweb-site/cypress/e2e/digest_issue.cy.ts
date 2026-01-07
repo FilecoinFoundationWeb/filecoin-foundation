@@ -35,12 +35,12 @@ describe('Digest Issue Page', () => {
       tests.links.fn(`${PATHS.DIGEST.issueUrl({ issueNumber: Number(slug) })}`)
     })
   })
+})
+
+describe('Digest Issue - Visual Regression', () => {
+  const DIGEST_ISSUE_SLUG = 'issue-1'
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(
-        `${PATHS.DIGEST.issueUrl({ issueNumber: Number(slug) })}`,
-      )
-    })
+    tests.visualSnapshot.fn(path.join(PATHS.DIGEST.path, DIGEST_ISSUE_SLUG))
   })
 })
