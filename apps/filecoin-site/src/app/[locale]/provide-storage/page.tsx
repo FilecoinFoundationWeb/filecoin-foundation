@@ -73,6 +73,7 @@ export default function ProvideStorage() {
       <PageSection backgroundVariant="dark" paddingVariant="topCompact">
         <SectionContent
           centerCTA
+          headingTag="h2"
           title="Getting started with PDP storage"
           description="Running a warm storage node using Proof of Data Possession (PDP) is the easiest way to begin offering Filecoin storage — no expensive hardware or long-term collateral required."
           cta={[
@@ -105,6 +106,7 @@ export default function ProvideStorage() {
       <PageSection backgroundVariant="light">
         <SectionContent
           centerCTA
+          headingTag="h2"
           title="Scaling your storage operations"
           description="If you're already running a warm storage node and want to expand, Filecoin supports enterprise-grade proofs like Proof of Replication (PoRep) and Proof of Spacetime (PoSt) — enabling high-capacity, production-scale storage operations. Scaling involves:"
           cta={[
@@ -129,6 +131,7 @@ export default function ProvideStorage() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
+          headingTag="h2"
           title="Need help choosing the right architecture?"
           description="Our team can guide you through PoRep requirements, recommended hardware, sealing pipelines, and operational best practices."
           cta={
