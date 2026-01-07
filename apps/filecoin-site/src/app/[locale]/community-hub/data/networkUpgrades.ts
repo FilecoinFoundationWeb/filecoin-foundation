@@ -32,7 +32,7 @@ export const networkUpgrades = [
     label: 'Upcoming upgrade',
     cta: {
       href: 'https://github.com/filecoin-project/core-devs/discussions/205',
-      text: 'Learn more about NV28',
+      text: 'View the NV28 upgrade discussion',
     },
     image: {
       src: nv28GoldenWeekImage,
