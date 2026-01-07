@@ -49,9 +49,12 @@ describe('Random Digest Article', () => {
 })
 
 describe('Digest Article - Visual Regression', () => {
-  const DIGEST_ARTICLE_SLUG = 'issue-1/why-we-need-to-fight-for-our-privacy'
+  const DIGEST_ISSUE_SLUG = 'issue-1'
+  const DIGEST_ARTICLE_SLUG = 'why-we-need-to-fight-for-our-privacy'
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn(path.join(PATHS.DIGEST.path, DIGEST_ARTICLE_SLUG))
+    tests.visualSnapshot.fn(
+      path.join(PATHS.DIGEST.path, DIGEST_ISSUE_SLUG, DIGEST_ARTICLE_SLUG),
+    )
   })
 })
