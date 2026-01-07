@@ -24,6 +24,10 @@ export const createSentryConfig = ({ project, authTokenEnvVar }) => ({
     disable: true,
   },
   widenClientFileUpload: true,
-  disableLogger: true,
-  automaticVercelMonitors: true,
+  webpack: {
+    treeshake: {
+      removeDebugLogging: true,
+    },
+    automaticVercelMonitors: true,
+  },
 })
