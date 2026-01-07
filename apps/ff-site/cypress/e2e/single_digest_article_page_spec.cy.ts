@@ -35,10 +35,13 @@ describe('Random Digest Article', () => {
       tests.links.fn(path.join(PATHS.DIGEST.path, slug))
     })
   })
+})
+
+describe('Digest Article - Visual Regression', () => {
+  const DIGEST_ARTICLE_SLUG =
+    'enterprise-storage-market-insights-from-the-field'
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(path.join(PATHS.DIGEST.path, slug))
-    })
+    tests.visualSnapshot.fn(path.join(PATHS.DIGEST.path, DIGEST_ARTICLE_SLUG))
   })
 })
