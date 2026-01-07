@@ -18,12 +18,12 @@ import { Table } from './Table'
 
 export type TanstackTableProps<TData> = {
   table: TableType<TData>
-  alternatingRowColors?: boolean
+  striped?: boolean
 }
 
 export function TanstackTable<TData>({
   table,
-  alternatingRowColors = false,
+  striped = true,
 }: TanstackTableProps<TData>) {
   return (
     <Table>
@@ -75,7 +75,7 @@ export function TanstackTable<TData>({
           <Table.Row
             key={row.id}
             className={clsx(
-              alternatingRowColors && index % 2 === 1 && 'bg-zinc-50',
+              striped && index % 2 === 0 && 'bg-(--color-table-row-striped)',
             )}
           >
             {row.getVisibleCells().map((cell) => (

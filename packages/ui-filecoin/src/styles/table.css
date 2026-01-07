@@ -7,4 +7,5 @@
     --color-navigation-link-background-active,
     var(--color-zinc-100)
   );
+  --color-table-row-striped: var(--color-zinc-50);
 }
