@@ -19,14 +19,22 @@ import { Table } from './Table'
 export type TanstackTableProps<TData> = {
   table: TableType<TData>
   striped?: boolean
+  maxHeight?: `${number}px` | `${number}vh`
 }
 
 export function TanstackTable<TData>({
   table,
   striped = true,
+  maxHeight,
 }: TanstackTableProps<TData>) {
+  const isScrollable = maxHeight !== null
+
+  const containerStyle = isScrollable
+    ? { maxHeight, overflow: 'auto' as const }
+    : undefined
+
   return (
-    <Table>
+    <Table containerStyle={containerStyle}>
       <Table.Header>
         {table.getHeaderGroups().map((headerGroup) => (
           <Table.Row key={headerGroup.id}>
@@ -38,15 +46,18 @@ export function TanstackTable<TData>({
               return (
                 <Table.Head
                   key={header.id}
-                  style={{ maxWidth: header.column.columnDef.maxSize }}
+                  style={{
+                    maxWidth: header.column.columnDef.maxSize,
+                  }}
+                  sticky={isScrollable}
                 >
                   {canSort ? (
                     <button
                       onClick={header.column.getToggleSortingHandler()}
                       className={clsx(
                         'flex cursor-pointer items-center gap-2 rounded-sm py-1.5 pr-1.5 pl-2.5 font-semibold',
-                        'focus:brand-outline hover:bg-(--color-head-button-background) focus:bg-(--color-head-button-background)',
-                        'aria-[sort=ascending]:bg-(--color-head-button-background) aria-[sort=descending]:bg-(--color-head-button-background)',
+                        'focus:brand-outline hover:bg-color-head-button-background focus:bg-color-head-button-background',
+                        'aria-[sort=ascending]:bg-color-head-button-background aria-[sort=descending]:bg-color-head-button-background',
                       )}
                       aria-label={`Sort by ${columnName}`}
                       aria-sort={getAriaSort(sortState)}

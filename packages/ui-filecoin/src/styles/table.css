@@ -1,7 +1,7 @@
 @theme {
   --color-table-foreground: var(--color-zinc-950);
   --color-table-foreground-muted: var(--color-zinc-600);
-  --color-table-background: var(--color-zinc-100);
+  --color-table-background: var(--color-white);
   --color-table-border: var(--color-zinc-200);
   --color-head-button-background: var(
     --color-navigation-link-background-active,
