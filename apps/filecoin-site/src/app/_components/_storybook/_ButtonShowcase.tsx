@@ -6,11 +6,14 @@ import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
-
 export function ButtonShowcase() {
   return (
     <PageSection backgroundVariant="light">
-      <SectionContent centerTitle title="Button Styles Showcase">
+      <SectionContent
+        centerTitle
+        headingTag="h1"
+        title="Button Styles Showcase"
+      >
         <div className="space-y-12">
           {/* Light Section */}
           <div className="light-section rounded-lg border border-zinc-200 bg-white p-8">

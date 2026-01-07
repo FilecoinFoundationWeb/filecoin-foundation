@@ -60,12 +60,12 @@ export default function StoreData() {
       </PageSection>
 
       <PageSection backgroundVariant="light">
+        centerCTA
         <SectionContent
-          centerCTA
+          headingTag="h2"
           title="Store on Filecoin"
           description="Find the perfect storage solution for your data on Filecoin."
         />
-
         <div className="mt-20 flex flex-col gap-20">
           <StorageProviderCardWithImage {...featuredFilecoinStorageProvider} />
 
@@ -91,6 +91,7 @@ export default function StoreData() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
+          headingTag="h2"
           title="Not sure what storage solution to choose?"
           description="Tell us about your needs, and we'll guide you to the Filecoin solution that fits best."
           cta={
