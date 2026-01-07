@@ -1,5 +1,13 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.7.0
+
+### Minor Changes
+
+- 76f791f: Add striped rows to tables
+- d2faf77: Add pinned header bar to tables
+- 49c9bfd: Adds support for dynamic heading tags to the SectionContent component
+
 ## 0.6.0
 
 ### Minor Changes
