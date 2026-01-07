@@ -46,19 +46,6 @@ describe('Random Digest Article', () => {
       })
     })
   })
-
-  it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      cy.task<DigestArticleFrontmatter>(
-        'getEntryFrontmatter',
-        path.join(CONTENT_FOLDER, slug),
-      ).then(({ 'issue-number': issueNumber }) => {
-        tests.visualSnapshot.fn(
-          `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}`,
-        )
-      })
-    })
-  })
 })
 
 describe('Digest Article - Visual Regression', () => {
