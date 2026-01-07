@@ -69,6 +69,7 @@ export default function Learn() {
         <SectionContent
           centerCTA
           descriptionColorBase
+          headingTag="h2"
           title="What is Filecoin?"
         >
           <SplitSectionContent
@@ -86,6 +87,7 @@ export default function Learn() {
       <PageSection backgroundVariant="light">
         <SectionContent
           centerCTA
+          headingTag="h2"
           title="What is Filecoin used for?"
           description="From archival backups to Web3 and AI apps, Filecoin offers decentralized, secure, and verifiable storage at scale."
           cta={
@@ -111,6 +113,7 @@ export default function Learn() {
       <PageSection backgroundVariant="gray">
         <SectionContent
           centerCTA
+          headingTag="h2"
           title="What makes Filecoin unique"
           description="Filecoin's distributed design delivers verifiable storage, removes single points of failure, and creates a resilient, transparent storage foundation."
           cta={
@@ -136,6 +139,7 @@ export default function Learn() {
       <PageSection backgroundVariant="light">
         <SectionContent
           centerCTA
+          headingTag="h2"
           title="Learn about the Filecoin protocol"
           description="For technically curious people who want to go deeper into how Filecoin actually works."
           cta={
@@ -160,6 +164,7 @@ export default function Learn() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
+          headingTag="h2"
           title="Be a part of a more resilient internet"
           description="Filecoin is more than storage; it's an innovative, open ecosystem built to preserve humanity's information."
         >

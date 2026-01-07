@@ -19,6 +19,7 @@ export default function ProvideStorageFormPage() {
           <Heading tag="h1" variant="section-heading">
             Thanks for your interest in becoming a Filecoin storage provider.
           </Heading>
+
           <p className="pt-6 pb-25 text-xl/7 text-pretty text-(--color-paragraph-text)">
             Please fill out this form below, and a member of the onboarding team
             will reach out to guide you through next steps.
