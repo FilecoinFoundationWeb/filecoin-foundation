@@ -5,7 +5,7 @@ import { setRequestLocale } from 'next-intl/server'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { MarkdownContent as BaseMarkdownContent } from '@filecoin-foundation/ui-filecoin/Markdown/MarkdownContent'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
-import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
+import type { SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
@@ -33,6 +33,7 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
 
   const {
     title,
+    cardDescription,
     pageDescription,
     content,
     image,
@@ -48,7 +49,7 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
       <PageSection backgroundVariant="dark">
         <PageHeader
           title={title}
-          description={pageDescription}
+          description={pageDescription || cardDescription}
           label="Case Study"
           image={{
             src: image?.src || '',
@@ -57,19 +58,23 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
         />
       </PageSection>
 
-      <PageSection backgroundVariant="dark" paddingVariant="topNone">
-        <ul className="grid grid-cols-1 gap-15 md:grid-cols-2 lg:grid-cols-3">
-          <TextCard title="Challenge" description={challenge} />
-          <TextCard title="Solution" description={solution} />
-          <TextCard title="Results" description={results} />
-        </ul>
-      </PageSection>
+      {challenge && solution && results && (
+        <PageSection backgroundVariant="dark" paddingVariant="topNone">
+          <ul className="grid grid-cols-1 gap-15 md:grid-cols-2 lg:grid-cols-3">
+            <TextCard title="Challenge" description={challenge} />
+            <TextCard title="Solution" description={solution} />
+            <TextCard title="Results" description={results} />
+          </ul>
+        </PageSection>
+      )}
 
-      <PageSection backgroundVariant="light">
-        <div className="mx-auto max-w-3xl">
-          <BaseMarkdownContent>{content}</BaseMarkdownContent>
-        </div>
-      </PageSection>
+      {content && pageDescription && (
+        <PageSection backgroundVariant="light">
+          <div className="mx-auto max-w-3xl">
+            <BaseMarkdownContent>{content}</BaseMarkdownContent>
+          </div>
+        </PageSection>
+      )}
     </>
   )
 }
