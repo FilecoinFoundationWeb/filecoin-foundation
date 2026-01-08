@@ -8,8 +8,8 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 import { getCaseStudiesData } from '@/case-studies/utils/getCaseStudyData'
 
-export default async function sitemap() {
-  return await generateSitemap({
+export default function sitemap() {
+  return generateSitemap({
     paths: PATHS,
     baseUrl: BASE_URL,
     dynamicRoutes: [
@@ -26,23 +26,26 @@ export default async function sitemap() {
 }
 
 async function getAllBlogPosts() {
-  const allPosts = await Promise.all(
-    LOCALES.map((locale) => getBlogPostsData(locale)),
-  )
+  const posts = await getLocalizedData(getBlogPostsData)
 
-  return allPosts.flat().map((post) => ({
-    slug: post.slug,
-    updatedOn: post.publishedOn,
+  return posts.map(({ slug, publishedOn }) => ({
+    slug,
+    updatedOn: publishedOn,
   }))
 }
 
 async function getAllCaseStudies() {
-  const allCaseStudies = await Promise.all(
-    LOCALES.map((locale) => getCaseStudiesData(locale)),
-  )
+  const caseStudies = await getLocalizedData(getCaseStudiesData)
 
-  return allCaseStudies.flat().map((caseStudy) => ({
-    slug: caseStudy.slug,
-    updatedOn: new Date(),
+  return caseStudies.map(({ slug, publishedOn, updatedOn }) => ({
+    slug,
+    updatedOn: updatedOn || publishedOn,
   }))
+}
+
+async function getLocalizedData<T>(
+  fetchFn: (locale: (typeof LOCALES)[number]) => Promise<T[]>,
+) {
+  const localizedData = await Promise.all(LOCALES.map(fetchFn))
+  return localizedData.flat()
 }
