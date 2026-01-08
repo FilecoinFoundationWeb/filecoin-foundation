@@ -43,7 +43,7 @@ export function YouTubeVideo({
   const { title, thumbnail_url } = data
 
   return (
-    <div className="relative">
+    <div className="group relative">
       <LiteYouTubeEmbed
         id={videoId}
         title={title}
@@ -62,8 +62,8 @@ export function YouTubeVideo({
       />
       {PlayButton && (
         <div
-          role="presentation"
-          className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 [.lyt-activated_+_&]:invisible [.lyt-activated_+_&]:opacity-0"
+          aria-hidden="true"
+          className="group-focus-within:brand-outline pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full [.lyt-activated+&]:invisible [.lyt-activated+&]:opacity-0"
         >
           <PlayButton />
         </div>
