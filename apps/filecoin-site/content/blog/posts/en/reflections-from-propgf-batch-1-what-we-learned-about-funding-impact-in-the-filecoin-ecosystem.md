@@ -10,7 +10,6 @@ excerpt: >-
 share_image: /uploads/101725_ProPGF_Learning_Reflections.webp
 image:
   url: /uploads/101725_ProPGF_Learning_Reflections.webp
-  alt: ProPGF Batch 1 learning and reflections graphic
 author: Sejal Rekhan & Josh Daniels
 date: 2025-10-17T17:54:03.545Z
 categories:

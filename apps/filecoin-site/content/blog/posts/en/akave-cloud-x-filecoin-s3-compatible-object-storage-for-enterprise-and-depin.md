@@ -6,7 +6,6 @@ excerpt: >-
 share_image: /uploads/09.16.25_Akave_Blog_Post.webp
 image:
   url: /uploads/09.16.25_Akave_Blog_Post.webp
-  alt: Akave Cloud and Filecoin partnership graphic
 author: Daniel Leon
 date: 2025-09-16T14:32:56.578Z
 categories:

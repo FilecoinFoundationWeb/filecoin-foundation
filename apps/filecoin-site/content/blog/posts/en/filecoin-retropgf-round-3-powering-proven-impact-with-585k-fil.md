@@ -6,7 +6,6 @@ excerpt: >-
 share_image: /uploads/08.25.FIL-RetroPGF.webp
 image:
   url: /uploads/08.25.FIL-RetroPGF.webp
-  alt: Filecoin RetroPGF program graphic
 author: Onkar Date
 date: 2025-08-25T20:21:17.882Z
 categories:
