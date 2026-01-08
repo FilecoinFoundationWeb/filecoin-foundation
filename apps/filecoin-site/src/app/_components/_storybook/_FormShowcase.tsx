@@ -17,7 +17,11 @@ export function FormShowcase() {
 
   return (
     <PageSection backgroundVariant="light">
-      <SectionContent centerTitle title="Button Styles Showcase">
+      <SectionContent
+        centerTitle
+        headingTag="h1"
+        title="Button Styles Showcase"
+      >
         <form className="max-w-readable flex flex-col gap-6">
           <Checkbox checked={checked} onChange={setChecked} />
           <Input value={value} placeholder="Placeholder" onChange={setValue} />

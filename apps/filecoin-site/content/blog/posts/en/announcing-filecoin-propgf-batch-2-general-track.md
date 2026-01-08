@@ -70,10 +70,10 @@ All grants under this program are milestone-based, with payouts tied to the comp
 
 The selection committee will stay largely the same as in Round 1, with some slight changes from the initial announcement. More details on the updated composition will be shared soon.
 
-You can find the list of Round 1 members and details [here](https://filecoin.io/blog/posts/announcing-the-propgf-selection-committee-members/).
+[View the list of Round 1 members and details](https://filecoin.io/blog/posts/announcing-the-propgf-selection-committee-members/).
 
 ### Stay Connected
 
-- For updates, follow the #propgf channel on Slack or join tg group [here](https://t.me/+nUc-d7FXmt1kOWVl)
+- For updates, follow the #propgf channel on Slack or [join our Telegram group](https://t.me/+nUc-d7FXmt1kOWVl)
 - Questions? Reach out to Sejal or Josh directly.
 - Stay tuned for our follow-up blog with step-by-step details on how to apply via Karma.

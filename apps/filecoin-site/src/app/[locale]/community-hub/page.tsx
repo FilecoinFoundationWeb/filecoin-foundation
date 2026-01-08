@@ -90,6 +90,7 @@ export default async function CommunityHub({ params }: BlogProps) {
 
       <PageSection backgroundVariant="light">
         <SectionContent
+          headingTag="h2"
           title="Ecosystem groups"
           description="Filecoin is open-source and community-driven. Explore groups advancing the protocol and building the tools that power its ecosystem."
         >
@@ -110,6 +111,7 @@ export default async function CommunityHub({ params }: BlogProps) {
       <PageSection backgroundVariant="gray">
         <SectionContent
           centerCTA
+          headingTag="h2"
           title="Connect with the community"
           description="Connect with a vibrant network of developers building on Filecoin.
           Connect, collaborate, and grow with the ecosystem."
@@ -146,6 +148,7 @@ export default async function CommunityHub({ params }: BlogProps) {
       <PageSection backgroundVariant="light">
         <SectionContent
           centerCTA
+          headingTag="h2"
           title="Network upgrades"
           description="Filecoin is governed through an open, community-driven process where technical decisions are discussed in public and implemented through regular upgrades that keep the network secure and evolving."
           cta={[
@@ -187,6 +190,7 @@ export default async function CommunityHub({ params }: BlogProps) {
       <PageSection backgroundVariant="gray">
         <SectionContent
           centerCTA
+          headingTag="h2"
           title="Latest news"
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={
@@ -231,6 +235,7 @@ export default async function CommunityHub({ params }: BlogProps) {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
+          headingTag="h2"
           title="Explore the ecosystem"
           description="Visit Filecoin Foundation's Ecosystem Explorer to discover Filecoin projects, get inspired by what others are building, and find your place in the Filecoin ecosystem."
           cta={

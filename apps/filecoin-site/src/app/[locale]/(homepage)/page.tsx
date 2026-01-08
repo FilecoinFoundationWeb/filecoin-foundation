@@ -80,7 +80,11 @@ export default async function Home({ params }: BlogProps) {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <SectionContent centerTitle title="Filecoin by the numbers">
+        <SectionContent
+          centerTitle
+          headingTag="h2"
+          title="Filecoin by the numbers"
+        >
           <CardGrid as="ul" variant="mdThreeWider">
             {filecoinByTheNumbers.map(({ title, subTitle, description }) => (
               <MetricCard
@@ -95,7 +99,10 @@ export default async function Home({ params }: BlogProps) {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        <SectionContent title="Filecoin is reshaping how the world stores data">
+        <SectionContent
+          headingTag="h2"
+          title="Filecoin is reshaping how the world stores data"
+        >
           <SplitSectionContent
             title="A better foundation for the next generation of the web."
             description={[
@@ -121,6 +128,7 @@ export default async function Home({ params }: BlogProps) {
         <SectionContentWrapper>
           <SectionContent
             descriptionColorBase
+            headingTag="h2"
             title="The incentive layer for IPFS"
             description={[
               'Filecoin adds incentivized, persistent storage to the InterPlanetary File System (IPFS), a peer-to-peer network for content-addressable data, creating a powerful, versatile, and long-term home for data. ',
@@ -144,6 +152,7 @@ export default async function Home({ params }: BlogProps) {
         <SectionContent
           centerCTA
           centerTitle
+          headingTag="h2"
           title="How Filecoin storage stacks up"
           description="How decentralized storage compares to traditional cloud storage"
           cta={[
@@ -162,7 +171,10 @@ export default async function Home({ params }: BlogProps) {
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <SectionContent title="Open, scalable, and built for the future">
+        <SectionContent
+          headingTag="h2"
+          title="Open, scalable, and built for the future"
+        >
           <SplitSectionContent
             title="A decentralized, verifiable storage layer that scales effortlessly."
             description="Power chain storage, dApps, data-heavy SaaS platforms, immutable archives, and beyond. Accelerate development with open source tools, native IPFS integration, cross-chain data bridges, and FEVM for programmable smart contracts. Build without compromise, knowing you control your data, not centralized gatekeepers."
@@ -187,6 +199,7 @@ export default async function Home({ params }: BlogProps) {
       <PageSection backgroundVariant="gray">
         <SectionContent
           centerCTA
+          headingTag="h2"
           title="Latest news"
           description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
           cta={
@@ -231,6 +244,7 @@ export default async function Home({ params }: BlogProps) {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
+          headingTag="h2"
           title="Join a vibrant community"
           description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
         >

@@ -37,7 +37,10 @@ export function HeroSection() {
         </header>
 
         <div className="lg:mt-80">
-          <SectionContent title="Announcing Filecoin Onchain Cloud">
+          <SectionContent
+            headingTag="h2"
+            title="Announcing Filecoin Onchain Cloud"
+          >
             <SplitSectionContent
               title="Verifiable onchain services with transparent storage, retrieval, and payments"
               description={[

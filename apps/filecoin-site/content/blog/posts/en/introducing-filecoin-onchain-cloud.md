@@ -52,7 +52,7 @@ The core of this new onchain cloud starts with five open source, verifiable, and
 4. **[Filecoin Pin](https://pin.filecoin.cloud/):** Bringing IPFS and Filecoin closer than ever for fast, decentralized data persistence.
 5. **[Filecoin Beam](https://filbeam.com/):** A service bridging verifiable data movement across onchain and offchain systems.
 
-![](/uploads/filecoin-onchain-cloud-stackanimation.webp)
+![Layered architecture diagram of Filecoin Onchain Cloud showing the unstoppable stack: user applications at the top (Your App or Cloud Service, Filecoin Beam, Filecoin Pin), Synapse SDK integration layer, Onchain Service Layer with SP Registry, Warm Storage, PDP Verifier, and Filecoin Pay, Core Filecoin layers including F(e)VM, Storage Providers with PoRep and PoSt, IPFS, IPLD, and LibP2P, all built on the Filecoin L1 foundation](/uploads/filecoin-onchain-cloud-stackanimation.webp)
 
 ## Speed Meets Verifiability: New Era of Filecoin Storage Arrives
 
@@ -98,7 +98,7 @@ Filecoin Pin was built for the thousands of developers who already rely on IPFS 
 
 Filecoin Pin is simple, composable infrastructure: usable like a pinning service, but verifiable like a blockchain and preserved with decentralized storage. When you pin a file through Filecoin Pin, your IPFS content is uploaded to an audited Filecoin storage provider. Each provider must verify continuous data storage and access. Payments and uptime are handled automatically through Filecoin Pay, so if proofs fail, streaming payments pause.
 
-![](/uploads/filecoin-pin-architecture.webp)
+![Filecoin Pin architecture diagram showing three layers: user actions (Wallet, Upload, Verify, Retrieve), intermediate components (dApp/CLI, PDP Explorer, IPFS Network, IPNI), and Filecoin L1 foundation (Smart Contracts, Storage Providers). Arrows show data flows including funding, uploading, verifying storage, and retrieving data, with bidirectional flows for storage proofs and payments](/uploads/filecoin-pin-architecture.webp)
 
 Filecoin Pin contains a forkable [demo dapp](https://docs.filecoin.io/builder-cookbook/filecoin-pin/dapp-demo), a [CLI](https://docs.filecoin.io/builder-cookbook/filecoin-pin/filecoin-pin-cli) for custom integrations, a [GitHub Action](https://docs.filecoin.io/builder-cookbook/filecoin-pin/github-action) to back up sites, repos, or frontends automatically, and a [simple web app](https://filecoin-pin-website.vercel.app/) for any IPFS user to upload and pin data directly from the browser.
 
@@ -120,7 +120,7 @@ With Filecoin Beam, developers can build:
 
 Filecoin Beam users get fast retrieval while providers get paid for onchain attestable egress. Each retrieval request is verified through Beam’s onchain verifier, a smart contract that records delivery metrics like time-to-first-byte, success rate, and egress volume. Those proofs connect directly to Filecoin Pay, streaming payments automatically to providers for verified performance. Beam is fully composable with Filecoin Onchain Cloud’s warm storage, but builders can also use it independently to add retrievals to their applications.
 
-[Storage](https://dealbot-ga.fwss.io/) and [retrieval](https://github.com/filbeam/bot) deal checkers continuously test retrievals across the Filecoin network, executing real deals with providers to track latency, success rates, and throughput. [Public dashboards](https://dashboard.filbeam.com) rank providers by performance, giving builders transparent benchmarks and helping the retrieval market stay competitive and accountable.
+Storage and [retrieval](https://github.com/filbeam/bot) deal checkers continuously test retrievals across the Filecoin network, executing real deals with providers to track latency, success rates, and throughput. [Public dashboards](https://dashboard.filbeam.com) rank providers by performance, giving builders transparent benchmarks and helping the retrieval market stay competitive and accountable.
 
 Filecoin Beam completes the Filecoin data lifecycle by making retrievals as verifiable as storage, transforming content delivery into a performance-based market where speed and quality determine rewards.
 
@@ -130,7 +130,7 @@ Filecoin Beam completes the Filecoin data lifecycle by making retrievals as veri
 
 ## Who’s Building
 
-![](/uploads/filecoin-onchain-cloud-partners.webp)
+![Logos of teams building on Filecoin Onchain Cloud including ecosystem integrations (ERC-8004, ENS, Safe, Monad, KYVE), storage services (Akave Cloud, Storacha), and alpha builder cohort projects (Eastore, Filosign, Cha-Ching, Groundline, Cairn), displayed in white against a dark cosmic background](/uploads/filecoin-onchain-cloud-partners.webp)
 
 A growing number of teams are already integrating and building on Filecoin Onchain Cloud.
 

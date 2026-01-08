@@ -16,5 +16,5 @@
   "MD041": false, // Allow content before first header
   "MD045": false, // Allow images without alt text
   "MD046": false, // Allow different code block styles
-  "MD059": false, // #todo: Re-enable later to enforce descriptive link text
+  "MD059": true, // Enforce descriptive link text
 }

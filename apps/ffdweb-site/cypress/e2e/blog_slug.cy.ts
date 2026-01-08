@@ -35,10 +35,12 @@ describe('Blog Slug Page', () => {
       tests.links.fn(`${PATHS.BLOG.path}/${slug}`)
     })
   })
+})
+
+describe('Blog Post - Visual Regression', () => {
+  const BLOG_POST_SLUG = 'ffdw-2024-annual-report'
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(`${PATHS.BLOG.path}/${slug}`)
-    })
+    tests.visualSnapshot.fn(path.join(PATHS.BLOG.path, BLOG_POST_SLUG))
   })
 })

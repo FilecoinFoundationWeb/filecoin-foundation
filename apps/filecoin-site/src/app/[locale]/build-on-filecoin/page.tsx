@@ -46,6 +46,7 @@ export default function BuildOnFilecoin() {
         <SectionContent
           centerCTA
           centerTitle
+          headingTag="h2"
           title="Built on Filecoin"
           description="Discover tools and applications powered by Filecoin."
           cta={
@@ -73,6 +74,7 @@ export default function BuildOnFilecoin() {
 
       <PageSection backgroundVariant="light">
         <SectionContent
+          headingTag="h2"
           title="Tutorials and guides"
           description="Learn the basics to start building with Filecoin."
         >
@@ -97,7 +99,7 @@ export default function BuildOnFilecoin() {
       </PageSection>
 
       <PageSection backgroundVariant="gray">
-        <SectionContent title="Developer resources">
+        <SectionContent headingTag="h2" title="Developer resources">
           <CardGridContainer width="6xl">
             <CardGrid as="ul" variant="mdTwo">
               {developerResources.map(({ title, description, href, icon }) => (
@@ -118,6 +120,7 @@ export default function BuildOnFilecoin() {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
+          headingTag="h2"
           title="Get involved"
           description="Whether you're just getting started or looking to deepen your
           contributions, there are many ways to get involved."

@@ -36,10 +36,12 @@ describe('Random Event Page', () => {
       tests.links.fn(path.join(PATHS.EVENTS.path, slug))
     })
   })
+})
+
+describe('Event Page - Visual Regression', () => {
+  const EVENT_SLUG = 'filecoin-onchain-cloud-launch'
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(path.join(PATHS.EVENTS.path, slug))
-    })
+    tests.visualSnapshot.fn(path.join(PATHS.EVENTS.path, EVENT_SLUG))
   })
 })

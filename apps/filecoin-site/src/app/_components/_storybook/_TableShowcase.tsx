@@ -116,7 +116,7 @@ export function TableShowcase() {
 
   return (
     <PageSection backgroundVariant="light">
-      <SectionContent centerTitle title="Table Style Showcase">
+      <SectionContent centerTitle headingTag="h1" title="Table Style Showcase">
         <TanstackTable table={table} />
       </SectionContent>
     </PageSection>

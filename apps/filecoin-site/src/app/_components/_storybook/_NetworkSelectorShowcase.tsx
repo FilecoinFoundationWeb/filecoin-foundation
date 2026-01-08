@@ -5,7 +5,11 @@ import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 export function NetworkSelectorShowcase() {
   return (
     <PageSection backgroundVariant="light">
-      <SectionContent centerTitle title="Network Selector Showcase">
+      <SectionContent
+        centerTitle
+        headingTag="h1"
+        title="Network Selector Showcase"
+      >
         <div className="max-w-md">
           <NetworkSelector />
         </div>

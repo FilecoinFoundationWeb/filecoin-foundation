@@ -36,10 +36,14 @@ describe('Random Ecosystem Project', () => {
       tests.links.fn(path.join(PATHS.ECOSYSTEM_EXPLORER.path, slug))
     })
   })
+})
+
+describe('Ecosystem Project - Visual Regression', () => {
+  const ECOSYSTEM_PROJECT_SLUG = 'filecoin-foundation'
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(path.join(PATHS.ECOSYSTEM_EXPLORER.path, slug))
-    })
+    tests.visualSnapshot.fn(
+      path.join(PATHS.ECOSYSTEM_EXPLORER.path, ECOSYSTEM_PROJECT_SLUG),
+    )
   })
 })

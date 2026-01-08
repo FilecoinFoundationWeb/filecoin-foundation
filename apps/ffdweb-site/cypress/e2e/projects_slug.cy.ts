@@ -35,10 +35,12 @@ describe('Projects Slug Page', () => {
       tests.links.fn(`${PATHS.PROJECTS.path}/${slug}`)
     })
   })
+})
+
+describe('Projects Slug Page - Visual Regression', () => {
+  const PROJECT_SLUG = 'muckrock-documentcloud'
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(`${PATHS.PROJECTS.path}/${slug}`)
-    })
+    tests.visualSnapshot.fn(path.join(PATHS.PROJECTS.path, PROJECT_SLUG))
   })
 })

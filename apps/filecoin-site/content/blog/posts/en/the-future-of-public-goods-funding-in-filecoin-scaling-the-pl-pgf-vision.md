@@ -35,7 +35,7 @@ The answer we’re building toward is the **Filecoin Public Goods Funding (FIL P
 
 The FIL PGF maps the current flows of funding from diverse sources - Protocol Labs, the Filecoin Foundation, service providers, apps, L2s into coordinated funding programs.
 
-![](/uploads/09-16-25_Screenshot1.webp)
+![FIL PGF network diagram showing funding flows: onchain sources (Filecoin Foundation, Protocol Labs, Storage Providers, Apps, L2s) feed into central FIL PGF mechanism, which distributes through FIL RetroPGF and FIL ProPGF to ecosystem projects including FilOz, FIDL, Chainsafe DevOps, Akave, Storacha, GLIF, and others](/uploads/09-16-25_Screenshot1.webp)
 _(diagram credit: Juan Benet)_
 
 At the heart of this network sit two complementary pillars:
@@ -82,7 +82,7 @@ Over the next 18 months, we’re scaling and strengthening FIL PGF core pillars:
 
 ### Our “What’s Next” Goals
 
-![](/uploads/09-16-25_Screenshot2.webp)
+![Future FIL PGF network diagram showing funding flows: onchain sources (Filecoin Foundation, Protocol Labs, Storage Providers, Apps, L2s) feed into central FIL PGF mechanism, which distributes through FIL RetroPGF, FIL ProPGF, and FIL DRIPS to ecosystem projects including FilOz, FIDL, Chainsafe DevOps, Akave, Storacha, GLIF, and others. Filecoin Network is prominently highlighted with yellow outline](/uploads/09-16-25_Screenshot2.webp)
 _(diagram credit: Juan Benet)_
 
 Where we’re heading is bigger than just scaling existing programs. We want to:

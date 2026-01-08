@@ -36,10 +36,12 @@ describe('Random Blog Post', () => {
       tests.links.fn(path.join(PATHS.BLOG.path, slug))
     })
   })
+})
+
+describe('Blog Post - Visual Regression', () => {
+  const BLOG_POST_SLUG = 'filecoin-foundation-2024-annual-report'
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.visualSnapshot.fn(path.join(PATHS.BLOG.path, slug))
-    })
+    tests.visualSnapshot.fn(path.join(PATHS.BLOG.path, BLOG_POST_SLUG))
   })
 })

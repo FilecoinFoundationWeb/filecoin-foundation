@@ -53,6 +53,7 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
 
       <PageSection paddingVariant="topNone" backgroundVariant="dark">
         <SectionContent
+          headingTag="h2"
           title="Organizations preserving their data on Filecoin"
           description="Read full case studies of some of the organizations using Filecoin to preserve their data."
         >
@@ -77,6 +78,7 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
 
       <PageSection backgroundVariant="light">
         <SectionContent
+          headingTag="h2"
           title="More datasets (case studies coming soon)"
           description="Discover additional teams leveraging Filecoin for data preservation. Full case studies are coming soon."
         >
@@ -101,6 +103,7 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
 
       <PageSection backgroundVariant="dark">
         <SectionContent
+          headingTag="h2"
           title="Preserve your most important data with Filecoin"
           description="Join the organizations already protecting their most valuable datasets on the Filecoin network."
           cta={

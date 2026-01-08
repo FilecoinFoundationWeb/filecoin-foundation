@@ -46,17 +46,15 @@ describe('Random Digest Article', () => {
       })
     })
   })
+})
+
+describe('Digest Article - Visual Regression', () => {
+  const DIGEST_ISSUE_SLUG = 'issue-1'
+  const DIGEST_ARTICLE_SLUG = 'why-we-need-to-fight-for-our-privacy'
 
   it(tests.visualSnapshot.prompt, () => {
-    cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      cy.task<DigestArticleFrontmatter>(
-        'getEntryFrontmatter',
-        path.join(CONTENT_FOLDER, slug),
-      ).then(({ 'issue-number': issueNumber }) => {
-        tests.visualSnapshot.fn(
-          `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}`,
-        )
-      })
-    })
+    tests.visualSnapshot.fn(
+      path.join(PATHS.DIGEST.path, DIGEST_ISSUE_SLUG, DIGEST_ARTICLE_SLUG),
+    )
   })
 })
