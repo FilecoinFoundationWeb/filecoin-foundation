@@ -43,6 +43,7 @@ const variantStyles = {
 export function Heading({
   tag,
   variant,
+  className,
   iconProps,
   isClamped,
   children,
@@ -55,6 +56,7 @@ export function Heading({
     baseStyles,
     variantStyles[variant],
     isClamped && 'line-clamp-2 text-ellipsis',
+    className,
   )
 
   if (icon) {

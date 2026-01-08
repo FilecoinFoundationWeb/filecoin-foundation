@@ -62,7 +62,6 @@ export function YouTubeVideo({
       />
       {PlayButton && (
         <div
-          aria-hidden="true"
           role="presentation"
           className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 [.lyt-activated_+_&]:invisible [.lyt-activated_+_&]:opacity-0"
         >

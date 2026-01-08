@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import type { LocaleParams } from '@/i18n/types'
 
+import { Heading } from '@filecoin-foundation/ui/Heading'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
@@ -74,6 +75,10 @@ export default async function CommunityHub({ params }: BlogProps) {
           backgroundVariant="transparentDark"
           paddingVariant="topNone"
         >
+          <Heading tag="h2" variant="2xl" className="sr-only">
+            Get involved with the community
+          </Heading>
+
           <CardGrid as="ul" variant="mdOneLgThree">
             {getInvolvedWithCommunity.map(({ title, description, cta }) => (
               <SimpleCard
