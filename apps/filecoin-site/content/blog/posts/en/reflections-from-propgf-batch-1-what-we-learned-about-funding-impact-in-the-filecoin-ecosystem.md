@@ -91,7 +91,7 @@ These reflections also reminded us of something simpler but equally important: c
 
 Batch 2 launches next month, carrying forward these learnings into an improved and more predictable cycle.
 
-![](/uploads/screenshot-2025-10-17-at-1.55.24-PM.webp)
+![Batch 2 timeline showing applications open November–December 2025, review in January 2026, and KYC and payouts from February to March 2026](/uploads/screenshot-2025-10-17-at-1.55.24-PM.webp)
 
 ## Closing
 
