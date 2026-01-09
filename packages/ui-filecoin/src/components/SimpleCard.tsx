@@ -2,12 +2,13 @@ import { cva } from 'class-variance-authority'
 
 import { Badge, type BadgeProps } from './Badge'
 import { CTALink, type CTALinkProps } from './CTALink'
-import { Heading } from './Heading'
+import { Heading, type HeadingProps } from './Heading'
 
 type borderVariants = 'all' | 'only-top'
 
 export type SimpleCardProps = {
   title: string
+  headingTag: HeadingProps['tag']
   description: string
   as: 'li' | 'div'
   badge?: {
@@ -29,7 +30,7 @@ export type SimpleCardData = {
 
 export type CardContentProps = Pick<
   SimpleCardProps,
-  'title' | 'description' | 'border'
+  'title' | 'description' | 'border' | 'headingTag'
 >
 
 const cardOuter = cva(
@@ -92,6 +93,7 @@ const ctaLink = cva('', {
 export function SimpleCard({
   as: Tag,
   title,
+  headingTag,
   description,
   cta,
   badge,
@@ -111,7 +113,12 @@ export function SimpleCard({
           </div>
         )}
 
-        <CardContent title={title} description={description} border={border} />
+        <CardContent
+          title={title}
+          description={description}
+          border={border}
+          headingTag={headingTag}
+        />
 
         {cta && (
           <CTALink inset href={cta.href} textClassName={ctaLink({ border })}>
@@ -123,11 +130,16 @@ export function SimpleCard({
   )
 }
 
-export function CardContent({ title, description, border }: CardContentProps) {
+export function CardContent({
+  title,
+  description,
+  border,
+  headingTag,
+}: CardContentProps) {
   return (
     <div className={cardContent({ border })}>
       <span className="group-focus-within:text-(--color-card-heading-hover) group-hover:text-(--color-card-heading-hover)">
-        <Heading tag="h3" variant="card-heading">
+        <Heading tag={headingTag} variant="card-heading">
           {title}
         </Heading>
       </span>

@@ -85,6 +85,7 @@ export default function BuildOnFilecoin() {
                   key={title}
                   as="li"
                   title={title}
+                  headingTag="h3"
                   description={description}
                   cta={cta}
                   badge={{
