@@ -51,7 +51,7 @@ export function Listbox<T extends Option>({
         anchor="bottom start"
         className={clsx(
           backgroundVariants[theme],
-          'w-(--button-width) space-y-2 rounded-lg border border-(--color-listbox-border) p-2 shadow-xs transition duration-100 ease-in [--anchor-gap:--spacing(2)] focus:outline-none data-leave:data-closed:opacity-0',
+          'z-50 w-(--button-width) space-y-2 rounded-lg border border-(--color-listbox-border) p-2 shadow-xs transition duration-100 ease-in [--anchor-gap:--spacing(2)] focus:outline-none data-leave:data-closed:opacity-0',
         )}
       >
         {options.map((option) => (
