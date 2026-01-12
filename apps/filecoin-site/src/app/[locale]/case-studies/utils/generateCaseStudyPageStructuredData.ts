@@ -1,19 +1,24 @@
-import type { Article } from 'schema-dts'
+import type { Article, CollectionPage, Organization } from 'schema-dts'
 
 import type { ArticleGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 
 import { PATHS, type NextRouteWithoutLocale } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
+import {
+  BASE_URL,
+  FILECOIN_FOUNDATION_URL,
+  ORGANIZATION_NAME,
+} from '@/constants/siteMetadata'
 import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
-
-import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
 
 type GenerateCaseStudyPageStructuredDataProps = {
   path: NextRouteWithoutLocale
   headline: string
   description: Article['description']
-  image?: Article['image'] // #todo: Make image required
+  image?: string
+  datePublished: Date
+  dateModified?: Date
+  locale?: string
 }
 
 export function generateCaseStudyPageStructuredData({
@@ -21,30 +26,45 @@ export function generateCaseStudyPageStructuredData({
   headline,
   description,
   image,
+  datePublished,
+  dateModified,
+  locale = 'en',
 }: GenerateCaseStudyPageStructuredDataProps): ArticleGraph {
   const url = `${BASE_URL}${path}`
 
+  const organization: Organization = {
+    '@type': 'Organization',
+    name: ORGANIZATION_NAME,
+    url: FILECOIN_FOUNDATION_URL,
+  }
+
+  const collectionPage: CollectionPage = {
+    '@type': 'CollectionPage',
+    '@id': STRUCTURED_DATA_IDS.getPageId(
+      PATHS.CASE_STUDIES.path,
+      'CollectionPage',
+    ),
+    url: `${BASE_URL}${PATHS.CASE_STUDIES.path}`,
+    name: PATHS.CASE_STUDIES.label,
+  }
+
   const caseStudyArticle: Article = {
     '@type': 'Article',
+    '@id': `${url}#article`,
+    url,
     headline,
     description,
-    author: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
-    publisher: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
-    mainEntityOfPage: { '@id': url },
-    ...(image && { image }), // #todo: Make image required
+    image: image ? [image] : undefined,
+    datePublished: datePublished.toISOString(),
+    dateModified: dateModified?.toISOString() || datePublished.toISOString(),
+    author: organization,
+    publisher: organization,
+    isPartOf: collectionPage,
+    inLanguage: locale,
   }
 
   return {
     '@context': SCHEMA_CONTEXT_URL,
-    '@graph': [
-      caseStudyArticle,
-      generateBreadcrumbList({
-        path,
-        title: headline,
-        parentPaths: [
-          { path: PATHS.CASE_STUDIES.path, title: PATHS.CASE_STUDIES.label },
-        ],
-      }),
-    ],
+    '@graph': [caseStudyArticle],
   }
 }

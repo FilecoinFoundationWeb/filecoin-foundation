@@ -13,8 +13,8 @@ results: "Starling Lab is proving the real-world impact of decentralized technol
 featured: true
 website: https://www.starlinglab.org/
 seo:
-  title: "The Starling Lab Case Study - Filecoin for Data Integrity and Provenance"
-  description: "Learn how Starling Lab uses Filecoin and decentralized technologies to preserve authentic records and establish trust in journalism, history, and human rights data."
+  title: "Starling Lab Case Study — Digital Trust with Filecoin"
+  description: "See how the Starling Lab uses cryptography and decentralized storage on Filecoin to protect digital records and safeguard trusted data."
 ---
 
 ## Overview
