@@ -9,7 +9,7 @@ import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
 import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
 
-type GenerateCaseStudyStructuredDataProps = {
+type GenerateCaseStudiesListStructuredDataProps = {
   name: string
   description: string
   items?: Array<{
@@ -20,11 +20,11 @@ type GenerateCaseStudyStructuredDataProps = {
   }>
 }
 
-export function generateCaseStudyStructuredData({
+export function generateCaseStudiesListStructuredData({
   name,
   description,
   items = [],
-}: GenerateCaseStudyStructuredDataProps): CollectionPageGraph {
+}: GenerateCaseStudiesListStructuredDataProps): CollectionPageGraph {
   const mainEntity: ItemList | undefined =
     items.length > 0
       ? {

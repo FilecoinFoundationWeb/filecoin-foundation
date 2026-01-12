@@ -9,19 +9,19 @@ import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
 import { generateBreadcrumbList } from '@/utils/generateBreadcrumbsList'
 
-type GenerateCaseStudyArticleStructuredDataProps = {
+type GenerateCaseStudyPageStructuredDataProps = {
   path: NextRouteWithoutLocale
   headline: string
   description: Article['description']
   image?: Article['image'] // #todo: Make image required
 }
 
-export function generateCaseStudyArticleStructuredData({
+export function generateCaseStudyPageStructuredData({
   path,
   headline,
   description,
   image,
-}: GenerateCaseStudyArticleStructuredDataProps): ArticleGraph {
+}: GenerateCaseStudyPageStructuredDataProps): ArticleGraph {
   const url = `${BASE_URL}${path}`
 
   const caseStudyArticle: Article = {
