@@ -25,7 +25,7 @@ const variantClasses = {
     icon: 'text-red-600',
   },
   solid: {
-    wrapper: 'text-white bg-brand-700 border-brand-700',
+    wrapper: 'text-white bg-brand-800 border-brand-800',
     icon: 'text-white',
   },
 } as const

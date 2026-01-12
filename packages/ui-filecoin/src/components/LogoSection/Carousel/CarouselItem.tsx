@@ -11,7 +11,6 @@ export function CarouselItem({
 }: CarouselItemProps) {
   return (
     <li
-      role="group"
       aria-roledescription="slide"
       data-slot="carousel-item"
       className={clsx(

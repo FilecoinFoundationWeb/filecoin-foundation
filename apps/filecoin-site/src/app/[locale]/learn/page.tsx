@@ -152,6 +152,7 @@ export default function Learn() {
             {learnAboutFilecoinProtocol.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
+                headingTag="h3"
                 as="li"
                 title={title}
                 description={description}

@@ -78,6 +78,7 @@ export default async function CommunityHub({ params }: BlogProps) {
             {getInvolvedWithCommunity.map(({ title, description, cta }) => (
               <SimpleCard
                 key={title}
+                headingTag="h2"
                 as="li"
                 title={title}
                 description={description}
