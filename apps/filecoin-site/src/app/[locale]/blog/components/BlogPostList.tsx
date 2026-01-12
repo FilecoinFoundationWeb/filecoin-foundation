@@ -21,6 +21,7 @@ import { postMatchesCategory } from '../utils/postMatchesCategory'
 
 import { BlogCard } from './BlogCard'
 import { BlogCategoryFilter } from './BlogCategoryFilter'
+import { NoSearchResults } from './NoSearchResults'
 import { RSSFeed } from './RSSFeed'
 
 type BlogPostListProps = {
@@ -117,7 +118,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
             numberRange={PAGINATION_INDEX_MAX_RANGE}
           />
         ) : (
-          <p className="text-center text-lg">No posts in this category</p>
+          <NoSearchResults />
         )}
       </div>
     </div>
