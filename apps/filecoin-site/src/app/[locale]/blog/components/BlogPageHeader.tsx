@@ -52,11 +52,17 @@ export function BlogPageHeader({
         <Image
           fill
           priority
+          fetchPriority="high"
           className="card-image"
           quality={100}
-          sizes={buildImageSizeProp({ startSize: '100vw', md: '768px' })}
           src={image.src}
           alt={image.alt}
+          sizes={buildImageSizeProp({
+            startSize: '100vw',
+            sm: '640px',
+            md: '768px',
+            lg: '50vw',
+          })}
         />
       </div>
     </header>

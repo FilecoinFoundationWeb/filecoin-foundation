@@ -63,7 +63,11 @@ export function BlogPostHeader({
           src={image.src}
           alt={image.alt}
           className="rounded-2xl object-cover"
-          sizes={buildImageSizeProp({ startSize: '100vw', md: '768px' })}
+          sizes={buildImageSizeProp({
+            startSize: '100vw',
+            sm: '640px',
+            md: '768px',
+          })}
         />
       </div>
     </header>
