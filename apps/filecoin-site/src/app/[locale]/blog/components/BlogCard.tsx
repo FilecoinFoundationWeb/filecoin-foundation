@@ -47,6 +47,7 @@ export function BlogCard({
           {...(image || graphicsData.fallback)}
           sizes={buildImageSizeProp({
             startSize: '100vw',
+            sm: '640px',
             md: '364px',
             lg: '315px',
           })}
