@@ -5,6 +5,7 @@ import {
   type CardImageProps,
 } from '@filecoin-foundation/ui-filecoin/Card/CardImage'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
+import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils'
 
 import { PATHS } from '@/constants/paths'
 
@@ -42,7 +43,14 @@ export function BlogCard({
         title={title}
         className="group relative h-full"
       >
-        <CardImage {...(image || graphicsData.fallback)} />
+        <CardImage
+          {...(image || graphicsData.fallback)}
+          sizes={buildImageSizeProp({
+            startSize: '100vw',
+            md: '364px',
+            lg: '315px',
+          })}
+        />
 
         <div className="flex flex-col gap-4 py-5">
           <TagGroup tags={tags} />
