@@ -61,6 +61,7 @@ export function BlogPageHeader({
             startSize: '100vw',
             sm: '640px',
             md: '768px',
+            lg: '50vw',
           })}
         />
       </div>
