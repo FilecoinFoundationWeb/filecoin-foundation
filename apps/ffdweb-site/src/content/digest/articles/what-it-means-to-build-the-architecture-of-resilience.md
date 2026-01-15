@@ -13,7 +13,8 @@ seo:
   description: Artists and technologists reflect on building an “architecture of
     resilience” through decentralized tools, creativity, and collective care.
 ---
-What does it mean to build and inhabit networks that hold up under pressure — not just technically, but culturally and creatively? This was one of the animating questions of the *DWeb for Creators* course, a multi-week workshop from Gray Area and sponsored by Filecoin Foundation for the Decentralized Web (FFDW), led by artists, organizers, and technologists working at the intersection of decentralized technologies and cultural production. Designed for creatives of all kinds, the course introduced students to the possibilities of decentralized tools, platforms, and protocols.
+
+What does it mean to build and inhabit networks that hold up under pressure — not just technically, but culturally and creatively? This was one of the animating questions of the _DWeb for Creators_ course, a multi-week workshop from Gray Area and sponsored by Filecoin Foundation for the Decentralized Web (FFDW), led by artists, organizers, and technologists working at the intersection of decentralized technologies and cultural production. Designed for creatives of all kinds, the course introduced students to the possibilities of decentralized tools, platforms, and protocols.
 
 In this conversation, the course instructors reflect on what it means to construct an “architecture of resilience” — not just in terms of infrastructure, but in terms of imagination. Their answers underscore a shared belief: the decentralized web offers blueprints for systems rooted in solidarity, sovereignty, and care. Artists bring not only a stake in this reimagined architecture, but the vision and urgency to shape it.
 
@@ -23,7 +24,7 @@ In this conversation, the course instructors reflect on what it means to constru
 
 ## In what ways do decentralized technologies empower creativity, especially for underrepresented or independent creators?
 
-**ngọc:** First off — data ownership. For the first time, creators can actually *own* their work and still be able to share it with a global audience. In a world much dominated by surveillance, extraction, and corporate control, the DWeb opens space for radical alternatives: autonomy, justice, and collective power. Tools like [Distributed Press](https://distributed.press/en/) allow independent and historically marginalized creators to publish without censorship, to speak without fear, and to build without compromises. They can also receive direct support from their communities — no middlemen, no cuts, no commission fees. They are free to build communities rooted in solidarity, care, and mutual benefits. In a way, decentralization is more than just a shift in technology; it is a practice of liberation.
+**ngọc:** First off — data ownership. For the first time, creators can actually _own_ their work and still be able to share it with a global audience. In a world much dominated by surveillance, extraction, and corporate control, the DWeb opens space for radical alternatives: autonomy, justice, and collective power. Tools like [Distributed Press](https://distributed.press/en/) allow independent and historically marginalized creators to publish without censorship, to speak without fear, and to build without compromises. They can also receive direct support from their communities — no middlemen, no cuts, no commission fees. They are free to build communities rooted in solidarity, care, and mutual benefits. In a way, decentralization is more than just a shift in technology; it is a practice of liberation.
 
 ## How are decentralized technologies intersecting with creative fields to cultivate an architecture of resilience?
 
@@ -31,7 +32,7 @@ In this conversation, the course instructors reflect on what it means to constru
 
 **Ayana:** [Equitable Internet Initiative](https://detroitcommunitytech.org/eii) (EII) is a group in Detroit building its own wireless networks to prevent the creation of a digital class system. Taeyoon Choi explores infrastructure and equity through participatory performances happening on top of what they’ve coined, [The Distributed Web of Care](https://distributedweb.care/). Through their project Forkonomy(), artists Tzu Tung Lee and Winnie Soon are using decentralized technologies to address questions around collaboration, land, and ownership. Considered together, these projects demonstrate that cultivating an architecture of resilience not only requires tools and technology, but also a mindset shift toward reclaiming our agency and power. These artists and organizers remind us that an architecture of resilience is first cultivated inside our own imaginations.
 
-## Reflecting on the *DWeb for Creators* course, what lessons did you most hope students would take away? And what insights did you leave with yourself?
+## Reflecting on the _DWeb for Creators_ course, what lessons did you most hope students would take away? And what insights did you leave with yourself?
 
 **Sarah F:** I hope students develop a nuanced and thoughtful perspective on decentralization. We tried to design the curriculum to contain both optimism and pragmatic conversations about limitations. There are many possibilities on offer with decentralized tech, but new tools also come with new problems, both social and technical. Personally, I was excited to see the range of student projects and so much enthusiastic participation throughout the course. I think building a sense of agency is one of the most useful things you can do as a tech educator, and I hope students find ways to keep engaging with the tools and protocols discussed in class going forward.
 
@@ -47,7 +48,7 @@ In this conversation, the course instructors reflect on what it means to constru
 
 **Sarah G:** Artists must help shape the decentralized web because they work beyond practical constraints, constantly questioning technology rather than simply accepting its path. They bring a range of perspectives, from critical to playful, that technical development alone can't provide. While engineers build systems that work, artists challenge assumptions without being limited by what's considered possible, often finding surprising insights by exploring the improbable and even the absurd. Without diverse viewpoints actively shaping these systems, we risk simply transferring existing problems into new infrastructures, no matter how distributed their technical design may be.
 
-## Bios
+## Author Bios
 
 **Sarah Grant** is an American media artist and educator based in Berlin at Studio Weise7. She engages with the electromagnetic spectrum and computer networks as artistic material, habitat, and political landscape. She organizes the Radical Networks conference in support of critical investigations and creative experiments in telecommunications.
 
@@ -57,7 +58,7 @@ In this conversation, the course instructors reflect on what it means to constru
 
 **mai ishikawa sutton** is an organizer and writer focused on the digital commons and other intersections between network technologies and the solidarity economy. They are a co-founder and editor of COMPOST, an online magazine about and for the digital commons. They are a Senior Organizer with DWeb and a Digital Commons Fellow with Commons Network.
 
-**Sarah Friend** is an artist and software developer currently based in Berlin, Germany. Besides her work as an artist, she has taught at The Cooper Union (NYC), Gray Area (San Francisco), La Plateforme (Marseille), HEAD – Genève (Switzerland), and Rupert (Lithuania).  
+**Sarah Friend** is an artist and software developer currently based in Berlin, Germany. Besides her work as an artist, she has taught at The Cooper Union (NYC), Gray Area (San Francisco), La Plateforme (Marseille), HEAD – Genève (Switzerland), and Rupert (Lithuania).
 
 Other DWeb for Creators instructors not included in this article: 
 

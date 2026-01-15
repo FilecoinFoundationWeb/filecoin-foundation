@@ -7,13 +7,15 @@ published-on: 2026-01-15T13:57:00.000Z
 issue-number: 2
 article-number: 6
 authors:
-  - first-name: "Kelani "
+  - first-name: Kelani
     last-name: Nichole
-    company: "TRANSFER Archive "
+    company: TRANSFER Archive
 seo:
-  description: How artists are reimagining decentralized infrastructure to reclaim
+  description:
+    How artists are reimagining decentralized infrastructure to reclaim
     data, preserve digital culture, and build resilient futures for the web.
 ---
+
 Throughout history, artists have been the catalysts for major shifts in culture. A quick survey of the past 60 years shows how artists have shaped innovation in technology. Artist Robert Rauschenberg and Bell Labs Engineer Billy Kluver’s “Experiments in Art and Technology” in the 1970s anticipated technological innovations like CCTV, chat rooms, and digitized graphics, and squarely established a practice of experimental “R&D” within technology corporations. In the 80s and 90s, artists were among the first to form vibrant networks of exchange on bulletin board systems, the predecessors of the World Wide Web. The artistic avant-garde that emerged in that era, known as “Net Art,” served as the creative model for early internet communities, which evolved into modern social networks. Similarly, generative algorithmic art experiments in artists' studios date back to the 1960s, with pioneers like Vera Molnar and Manfred Mohr anticipating the emergence of generative AI via visual culture.
 
 Standing on the shoulders of these giants, contemporary artists working online have anticipated the seismic shifts in the technology landscape we are experiencing today, post-Web 2.0 and AI. As every aspect of our lives fell under the control of Silicon Valley giants — communication, commerce, travel, even our intimate relationships and identity — artists were showing us another possible world. Their work took shape as online public art, distributed moving images, social media interventions, and virtual worlds that reflect on how decentralization might offer alternative means of shaping digital value, identity, rights, privacy and security, and access to knowledge. As popular culture now becomes aware of the precarity of data and its immense value, we are facing a collective crisis. 
@@ -22,9 +24,9 @@ Standing on the shoulders of these giants, contemporary artists working online h
 
 ## Embracing Decentralization to Reimagine Cultural Infrastructure 
 
-For the past decade, I have been working with a group of ***\*extremely online\**** artists at [TRANSFER](http://transfer.art). Presenting as a contemporary art gallery, but operating more like a co-op, our exhibitions and experiments with decentralized infrastructure have culminated in a new model for stewarding data, outside of the grasp of Big Tech. Our overarching goal is to preserve the cultural heritage of networked moving images, video games and virtual worlds, immersive artworks, and online public art. Given the rapid evolution of the media landscape, institutions have struggled to keep up. Traditional institutional practices designed for scarce physical objects can’t adapt with the volume and rapid evolution of digital media. By embracing decentralized tools, we are shifting power away from centralized institutions into the hands of culture creators.
+For the past decade, I have been working with a group of _extremely online_ artists at [TRANSFER](http://transfer.art). Presenting as a contemporary art gallery, but operating more like a co-op, our exhibitions and experiments with decentralized infrastructure have culminated in a new model for stewarding data, outside of the grasp of Big Tech. Our overarching goal is to preserve the cultural heritage of networked moving images, video games and virtual worlds, immersive artworks, and online public art. Given the rapid evolution of the media landscape, institutions have struggled to keep up. Traditional institutional practices designed for scarce physical objects can’t adapt with the volume and rapid evolution of digital media. By embracing decentralized tools, we are shifting power away from centralized institutions into the hands of culture creators.
 
-Starting from a small scale allows us to reimagine how a resilient cultural infrastructure might operate. The current cultural landscape — from the contemporary art market to the music industry — is built on extraction from artists. Instead of looking to agents and institutions, we are establishing our own store of cultural data through archiving and stewardship. This requires not only realigning how we value our own work, share profits, and sustain our practice, but also extends to the actual infrastructure that carrys on this legacy.
+Starting from a small scale allows us to reimagine how a resilient cultural infrastructure might operate. The current cultural landscape — from the contemporary art market to the music industry — is built on extraction from artists. Instead of looking to agents and institutions, we are establishing our own store of cultural data through archiving and stewardship. This requires not only realigning how we value our own work, share profits, and sustain our practice, but also extends to the actual infrastructure that carries on this legacy.
 
 ## Getting Hands-On with Data 
 

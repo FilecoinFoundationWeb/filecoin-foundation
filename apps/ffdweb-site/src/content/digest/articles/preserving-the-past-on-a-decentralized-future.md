@@ -6,14 +6,15 @@ published-on: 2026-01-15T13:48:00.000Z
 issue-number: 2
 article-number: 3
 authors:
-  - first-name: Bobby
+  - first-name: Bobbie
     last-name: Johnson
-    company: "Super Hyper "
+    company: Super Hyper
 seo:
   description: How archivists are using decentralized storage and blockchain to
     preserve fragile cultural history and expand public access for future
     generations.
 ---
+
 Rick Prelinger is all about contradictions. He’s a 72-year-old archivist, but his shock of white hair is dyed a cyberpunk blue. He’s a historian who is desperate to expand public access to rare materials — and also knows that the process of sharing fragile items can sometimes end up destroying them. And, like any good collector, he’s obsessed with the ancient and the obscure… yet he’s tuned in to next-generation technologies.
 
 Here’s an example: We’re on the upper floor of a sprawling warehouse outside San Francisco where his immense, generational film preservation project, [the Prelinger Archives](https://archive.org/details/prelinger), is working to scan thousands of ephemeral movies from its collection — and then upload them to a warren of decentralized digital storage, organized and managed through Filecoin.
@@ -51,8 +52,6 @@ If that scale makes your eyes water, then the Internet Archive’s challenges mi
 Still, the march of technology suggests decentralizing will get easier over time — or at least cheaper: Prelinger says that when he first started working with the Internet Archive, it cost about $100 to digitize a minute of footage. That number is drastically lower today.
 
 But why do it? Well, everything needs a backup, he says, and “lots of copies to keep it safe.”
-
-
 
 In reality, though, it’s less about backups for the present and more about creating a gift for posterity. These aren’t our materials, says Prelinger, and they shouldn’t be ours to gatekeep: putting them on the decentralized system is the next step in their liberation.
 

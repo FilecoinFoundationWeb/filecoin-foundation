@@ -6,17 +6,18 @@ published-on: 2026-01-15T14:02:00.000Z
 issue-number: 2
 article-number: 7
 authors:
-  - first-name: "Nandit "
+  - first-name: Nandit
     last-name: Mehra
-    company: "Lighthouse "
+    company: Lighthouse
 seo:
   description: Why today’s internet forgets—and how decentralized perpetual
     storage can preserve knowledge, culture, and public records for the long
     term.
 ---
+
 In today’s digital world, vast amounts of information are created every second, yet much of it remains fragile and temporary. From research papers and public records to cultural archives, essential data often lives on platforms that were never designed for long-term preservation.
 
-We are living in an ephemeral age: one where digital content is created at unprecedented rates, but [little of it is built to last](https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/). We need an internet where permanence *is* an option.
+We are living in an ephemeral age: one where digital content is created at unprecedented rates, but [little of it is built to last](https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/). We need an internet where permanence _is_ an option.
 
 ## Anatomy of an Ephemeral Age
 
@@ -32,9 +33,7 @@ The world’s data needs demand a path to permanence. But traditional data stora
 
 However, centralized perpetual storage solutions face challenges when tackling these issues. They’re vulnerable to single points of failure, censorship, and control. Additionally, these centralized solutions can become expensive and inefficient as data volumes grow. 
 
-Decentralized perpetual storage offers a compelling alternative. By distributing data across a network of nodes, it ensures redundancy, resilience, censorship resistance, cost-effectiveness, and increased security. My company, [Lighthouse,](https://lighthouse.storage/) is developing a decentralized solution to perpetual storage –– a protocol that allows users to pay once and store their files indefinitely. Loosely speaking, this protocol offers a new and robust incentive and financial layer to create a perpetual storage protocol on top
-
-of a Decentralized Storage Network (DSN) such as Filecoin.
+Decentralized perpetual storage offers a compelling alternative. By distributing data across a network of nodes, it ensures redundancy, resilience, censorship resistance, cost-effectiveness, and increased security. My company, [Lighthouse,](https://lighthouse.storage/) is developing a decentralized solution to perpetual storage –– a protocol that allows users to pay once and store their files indefinitely. Loosely speaking, this protocol offers a new and robust incentive and financial layer to create a perpetual storage protocol on top of a Decentralized Storage Network (DSN) such as Filecoin.
 
 ## Designing for Durability
 
@@ -78,4 +77,4 @@ Some data isn’t meant to stay forever on the web. But the knowledge, culture, 
 
 ## Author Bio
 
-**Nandit Mehra** is the Founder of Lighthouse
+**Nandit Mehra** is the Founder of Lighthouse.
