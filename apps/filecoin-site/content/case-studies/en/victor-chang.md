@@ -13,8 +13,8 @@ image:
 featured: true
 website: https://www.victorchang.edu.au/
 seo:
-  title: "Victor Chang Cardiac Research Institute Case Study - Filecoin for Medical Research Data"
-  description: "Learn how the Victor Chang Cardiac Research Institute uses Filecoin to store 125+ TiB of cardiac research data with cryptographic integrity guarantees."
+  title: "Victor Chang Institute Case Study — Filecoin for Research Data"
+  description: "Learn how the Victor Chang Cardiac Research Institute uses Filecoin to securely store and share critical medical research data."
 ---
 
 ## Overview
