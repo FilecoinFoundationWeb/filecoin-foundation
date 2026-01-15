@@ -1,5 +1,7 @@
 ---
 title: "Victor Chang Cardiac Research Institute"
+publishedOn: 2026-01-08T00:00:00.000Z
+updatedOn: 2026-01-08T00:00:00.000Z
 cardDescription: "The Victor Chang Cardiac Research Institute uses Filecoin to securely store and preserve over 125 TiB of vital cardiac research data."
 pageDescription: "World-class heart research protected by the world's largest decentralized storage network. As they work towards finding a cure for heart disease, The Victor Chang Cardiac Research Institute is utilizing Filecoin to safeguard and share research data."
 challenge: "A highly scalable data storage solution that provides data integrity, data resiliency and cost savings."
@@ -11,8 +13,8 @@ image:
 featured: true
 website: https://www.victorchang.edu.au/
 seo:
-  title: "Victor Chang Cardiac Research Institute Case Study - Filecoin for Medical Research Data"
-  description: "Learn how the Victor Chang Cardiac Research Institute uses Filecoin to store 125+ TiB of cardiac research data with cryptographic integrity guarantees."
+  title: "Victor Chang Institute Case Study — Filecoin for Research Data"
+  description: "Learn how the Victor Chang Cardiac Research Institute uses Filecoin to securely store and share critical medical research data."
 ---
 
 ## Overview

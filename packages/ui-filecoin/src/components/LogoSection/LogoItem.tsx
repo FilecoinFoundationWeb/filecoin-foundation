@@ -16,7 +16,6 @@ export function LogoItem({
   const logoElement = (
     <SvgComponent
       height={size}
-      width="auto"
       aria-label={href ? undefined : alt}
       aria-hidden={href ? 'true' : undefined}
       className="max-w-full text-(--color-logo-item) group-focus-within:text-(--color-logo-item-hover) group-hover:text-(--color-logo-item-hover)"

@@ -1,17 +1,19 @@
-import type { WebPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
+import type { CollectionPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
 import type { StructuredDataParams } from '@filecoin-foundation/utils/types/structuredDataParams'
 
-import { PATHS } from '@/constants/paths'
-
-import { generatePageStructuredData } from '@/utils/generatePageStructuredData'
+import { generateLearnStructuredData } from './generateLearnStructuredData'
 
 export function generateStructuredData(
   seo: StructuredDataParams,
-): WebPageGraph {
-  return generatePageStructuredData({
-    title: seo.title,
+): CollectionPageGraph {
+  return generateLearnStructuredData({
+    name: seo.title,
     description: seo.description,
-    path: PATHS.LEARN.path,
-    pageType: 'WebPage',
+    about: [
+      'Filecoin',
+      'Decentralized storage',
+      'Verifiable data',
+      'Web3 infrastructure',
+    ],
   })
 }

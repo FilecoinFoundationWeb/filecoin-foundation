@@ -1,5 +1,7 @@
 ---
 title: "The Starling Lab"
+publishedOn: 2026-01-08T00:00:00.000Z
+updatedOn: 2026-01-08T00:00:00.000Z
 cardDescription: "Starling Lab is developing technology to help establish and preserve the integrity of digital media, including archiving sensitive records on IPFS and Filecoin."
 pageDescription: "Starling Lab demonstrates how decentralized technologies can establish trust in the digital age, applying cryptographic integrity and Web3 standards to protect journalism, history, and human-rights data worldwide."
 challenge: "Data integrity in the digital age is undermined by manipulation, misattribution, and centralized control, making it difficult to verify when, where, and by whom content was created—eroding public trust in media and historical records."
@@ -11,8 +13,8 @@ results: "Starling Lab is proving the real-world impact of decentralized technol
 featured: true
 website: https://www.starlinglab.org/
 seo:
-  title: "The Starling Lab Case Study - Filecoin for Data Integrity and Provenance"
-  description: "Learn how Starling Lab uses Filecoin and decentralized technologies to preserve authentic records and establish trust in journalism, history, and human rights data."
+  title: "Starling Lab Case Study — Digital Trust with Filecoin"
+  description: "See how the Starling Lab uses cryptography and decentralized storage on Filecoin to protect digital records and safeguard trusted data."
 ---
 
 ## Overview

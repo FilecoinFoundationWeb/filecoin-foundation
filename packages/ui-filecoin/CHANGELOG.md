@@ -1,5 +1,13 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.7.1
+
+### Patch Changes
+
+- b9321b8: Remove width="auto" from LogoItem component
+- 55133ef: Accessibility fixes
+- 6ab3286: Remove redundant z-index
+
 ## 0.7.0
 
 ### Minor Changes
