@@ -7,7 +7,7 @@ published-on: 2026-01-15T14:06:00.000Z
 issue-number: 2
 article-number: 8
 authors:
-  - first-name: "Elio &"
+  - first-name: Elio &
     last-name: Fauno
     company: Sutty
   - first-name: Nicolás
@@ -23,13 +23,11 @@ authors:
     last-name: Ng
     company: WITNESS
 image:
-  src: "/assets/images/dwd2-8.webp"
+  src: /assets/images/dwd2-8.webp
 seo:
-  description:
-    In the Amazon, indigenous communities learn decentralized tools to
+  description: In the Amazon, indigenous communities learn decentralized tools to
     document environmental harm, protect data, and defend their rights.
 ---
-
 In the Amazonian rainforest, over forty activists and trainers gather with laptops, video cameras, and flip charts to hack together. Escuela Común — the School of the Commons — was the result of years of collaborative work between decentralized technology support organizations: Laboratorio Popular de Medios Libres, WITNESS LAC, Sutty, Lanceros Digitales, Cad, Awana Digital, Radios Libres, and others. The plan: to equip indigenous communities with secure, decentralized digital tools to give them the freedom they need to protect their environment and advocate for their rights. This included video, audio, and image documentation for legal processes, digital archiving, and self-hosted servers to protect their data and communications from surveillance.
 
 Puyo sits in the Ecuadorian Amazon, near Yutzupino in Napo province, where illegal mining has exploded in recent years, destroying forests and threatening indigenous territories. It was the right place to learn. School of the Commons participants spent most of their time training on tools and strategies for documenting mining impacts, but they also went into the field, collecting evidence with video cameras, drones, and phones. Guiding them were members of the Pastaza Kichwa Nation Pakkiru, who came to share the techniques they use to preserve their language, tell their stories, and assert their rights. They left with something new: the knowledge to create their own community-run server for decentralized storage and communications, independent from the Big Tech platforms that so often side with the governments and corporations that they are fighting.
@@ -50,4 +48,14 @@ A new edition of the School of the Commons takes place in 2026. Find out more at
 
 ## Author Bios
 
-**Yvonne Ng** is an audiovisual archivist and the Senior Program Manager of Archives at WITNESS.
+**Laura Salas** is Senior Program Manager for Latin America and the Caribbean at WITNESS, where she leads training and capacity-building processes that empower activists and communities to use video for human rights advocacy. With over two decades of experience, she has designed and facilitated regional learning programs and audiovisual initiatives focused on social justice and collective storytelling.
+
+**Andrés Tapia** is co founder of Lanceros Digitales and Radio La Voz de la Confeniae in the Amazonian rainforest of the Pastaza province of Ecuador, with two decades  of experience in communitarian and environmental journalism, human rights advocacy, radio broadcast and multimedia/transmedia production. He is a member of the Kichwa Nationality of Pastaza PAKKIRU as a part of the media team of the organisation and the indigenous radio Jatari Kichwa.
+
+**Nicolás Tapia** is a member of the Laboratorio Popular de Medios Libres (LPML). He works on communication processes, free technologies, and community-based digital infrastructures, supporting organizations and communities in building technological autonomy, digital care, and data sovereignty.
+
+**Yvonne Ng** is the Senior Program Manager of Archives at WITNESS, where she trains practitioners, develops learning materials, and advocates for the use of archives to support human rights change and accountability. An audiovisual archivist with over 20 years of experience in community-based and nonprofit settings, she focuses on accessible, innovative archiving approaches relevant to contemporary movements and human rights defenders.
+
+**Fauno’s** work is focused on investigating, adapting and implementing ecological and resilient technologies, specially autonomous, collectivelly managed infrastructure. In the last eight years I've been working almost exclusively on resilient web sites using Jekyll and developing a platform for updating and hosting them called Sutty.
+
+**Elio** is part of Sutty, a diverse and inclusive cooperative based in South America that provides resilient websites and sovereign hosting, as well as support in holistic digital care; inclusive design, and human interaction for activists, the social and solidarity economy, organizations, and collectives defending human and environmental rights. He specializes in support for communication and the appropriation of community technologies with a holistic digital care perspective; planning and management in communication and education; and advice on inclusion from intersectional perspectives.
