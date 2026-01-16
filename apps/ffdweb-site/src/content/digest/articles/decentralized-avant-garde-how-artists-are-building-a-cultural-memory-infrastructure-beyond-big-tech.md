@@ -10,6 +10,8 @@ authors:
   - first-name: Kelani
     last-name: Nichole
     company: TRANSFER Archive
+image:
+  src: "/assets/images/dwd2-6.webp"
 seo:
   description:
     How artists are reimagining decentralized infrastructure to reclaim

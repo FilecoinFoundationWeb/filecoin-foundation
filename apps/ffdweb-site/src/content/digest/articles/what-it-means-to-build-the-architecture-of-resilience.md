@@ -9,6 +9,8 @@ authors:
   - first-name: Course
     last-name: Instructors
     company: DWeb for Creators
+image:
+  src: "/assets/images/dwd2-4.webp"
 seo:
   description: Artists and technologists reflect on building an “architecture of
     resilience” through decentralized tools, creativity, and collective care.

@@ -9,6 +9,8 @@ authors:
   - first-name: Peter B.
     last-name: Kaufman
     company: Associate Director of Development, MIT Open Learning
+image:
+  src: "/assets/images/dwd2-1.webp"
 seo:
   description: A reflection on how societies overturn entrenched injustices—from
     slavery to totalitarianism—and why history offers hope and inspiration for

@@ -9,6 +9,8 @@ authors:
   - first-name: Basile
     last-name: Simon
     company: Starling Lab
+image:
+  src: "/assets/images/dwd2-2.webp"
 seo:
   description:
     How analogies from courts, art authentication, and Wikipedia reveal

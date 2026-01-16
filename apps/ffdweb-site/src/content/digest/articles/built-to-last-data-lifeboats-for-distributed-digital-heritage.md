@@ -9,6 +9,8 @@ authors:
   - first-name: George
     last-name: Oates
     company: Flickr Foundation
+image:
+  src: "/assets/images/dwd2-5.webp"
 seo:
   description: Why digital culture is disappearing—and how Data Lifeboats use
     decentralized infrastructure to preserve photos and shared history for the

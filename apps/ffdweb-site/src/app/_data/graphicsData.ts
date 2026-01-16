@@ -8,6 +8,7 @@ import fallback from '@/assets/graphics/fallback.webp'
 import homepage from '@/assets/graphics/homepage.webp'
 import learningResources from '@/assets/graphics/learning-resources.webp'
 import projects from '@/assets/graphics/projects.webp'
+import dWebDigestCover2 from '@/assets/images/dwd2-1.webp'
 
 export const graphicsData = {
   imageFallback: {
@@ -26,6 +27,10 @@ export const graphicsData = {
     data: dWebDigestCover,
     alt: 'A futuristic "D-WEB DIGEST" magazine cover featuring a glowing network sphere graphic with neon colors on black, showcasing decentralized web technology themes.',
   },
+  dWebDigestCover2: {
+    data: dWebDigestCover2,
+    alt: 'Illustrated magazine cover showing interconnected domes representing resilient web architecture',
+  },
   homepage: {
     data: homepage,
     alt: 'An abstract 3D visualization of interconnected data cubes and nodes in green, blue, pink, and purple, forming a complex network structure against a dark background.',
@@ -43,3 +48,8 @@ export const graphicsData = {
     alt: 'A futuristic news studio with a glowing holographic globe, digital screens displaying data, and four panelists in discussion. Neon lighting and studio cameras enhance the high-tech atmosphere.',
   },
 } as const satisfies Record<string, StaticImageProps>
+
+export const digestIssueImages: Record<number, StaticImageProps> = {
+  1: graphicsData.dWebDigestCover,
+  2: graphicsData.dWebDigestCover2,
+}

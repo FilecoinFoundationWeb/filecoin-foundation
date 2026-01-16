@@ -9,6 +9,8 @@ authors:
   - first-name: Nandit
     last-name: Mehra
     company: Lighthouse
+image:
+  src: "/assets/images/dwd2-7.webp"
 seo:
   description: Why today’s internet forgets—and how decentralized perpetual
     storage can preserve knowledge, culture, and public records for the long

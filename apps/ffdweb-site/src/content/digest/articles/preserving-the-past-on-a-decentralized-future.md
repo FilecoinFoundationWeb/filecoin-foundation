@@ -9,6 +9,8 @@ authors:
   - first-name: Bobbie
     last-name: Johnson
     company: Super Hyper
+image:
+  src: "/assets/images/dwd2-3.webp"
 seo:
   description: How archivists are using decentralized storage and blockchain to
     preserve fragile cultural history and expand public access for future

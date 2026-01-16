@@ -22,6 +22,8 @@ authors:
   - first-name: Yvonne
     last-name: Ng
     company: WITNESS
+image:
+  src: "/assets/images/dwd2-8.webp"
 seo:
   description:
     In the Amazon, indigenous communities learn decentralized tools to
