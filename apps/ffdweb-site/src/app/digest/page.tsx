@@ -5,7 +5,7 @@ import { getDigestIssueDescription } from '@filecoin-foundation/utils/getDigestI
 
 import { PATHS } from '@/constants/paths'
 
-import { graphicsData } from '@/data/graphicsData'
+import { digestIssueImages, graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { socialLinksWithIcons } from '@/utils/socialConfig'
@@ -39,7 +39,7 @@ export default async function Digest() {
             key={issueNumber}
             kicker={kicker}
             title={`DWeb Digest: ${title}`}
-            image={graphicsData.dWebDigestCover}
+            image={digestIssueImages[Number(issueNumber)]}
             description={getDigestIssueDescription(description, guestEditor)}
             layout={Number(issueNumber) % 2 === 1 ? 'regular' : 'reversed'}
             cta={{
