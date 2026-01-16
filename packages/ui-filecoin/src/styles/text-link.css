@@ -13,18 +13,22 @@
   }
 
   .text-link {
-    @apply focus:brand-outline underline;
+    @apply focus:brand-outline;
 
     .light-section & {
-      @apply text-brand-800;
+      @apply underline;
+
+      &:hover {
+        @apply text-brand-800;
+      }
     }
 
     .dark-section & {
       @apply text-zinc-400;
-    }
 
-    :is(.light-section, .dark-section) &:hover {
-      @apply text-inherit;
+      &:hover {
+        @apply underline;
+      }
     }
   }
 }
