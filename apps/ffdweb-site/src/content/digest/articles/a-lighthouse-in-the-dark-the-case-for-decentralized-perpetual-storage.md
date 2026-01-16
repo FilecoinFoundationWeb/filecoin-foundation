@@ -79,4 +79,4 @@ Some data isn’t meant to stay forever on the web. But the knowledge, culture, 
 
 ## Author Bio
 
-**Nandit Mehra** is the Founder of Lighthouse.
+**Nandit Mehra** is the founder of Lighthouse Storage and 1MB.io. He works at the intersection of infrastructure, data ownership, and cryptography, focusing on building systems that make data permanent, private, and user-owned.
