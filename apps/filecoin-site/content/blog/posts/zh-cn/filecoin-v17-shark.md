@@ -24,7 +24,7 @@ _template: blog_detail_ch
 
 在v17中激活的FIP完整列表可在本文末尾查看。您可以从[7月起的PL EngRes全员深度探索](https://www.youtube.com/watch?v=oQTPUE4MN_4&list=PLhuBigpl7lqtkWt7koiW6SvQKzT_O4bvY&index=13)和10月的Lotus nv17概述中了解更多信息（详见下文）。
 
-{{<youtube id="10TVAH_bseY" title="Introducing Shark - Filecoin Network Version 17" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/10TVAH_bseY" title="Introducing Shark - Filecoin Network Version 17" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 本次升级亮点
 

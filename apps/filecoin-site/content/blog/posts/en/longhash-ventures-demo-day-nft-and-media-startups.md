@@ -31,7 +31,7 @@ On April 23, the Filecoin Frontier Accelerator II powered by LongHash Ventures, 
 
 _Empowering brands to monetize their intellectual property in the entertainment industry with a marketplace for tokenized digital collectibles._
 
-{{<youtube id="QC90YKBSCt4" title="Filecoin Frontier Accelerator Demo Day Pitch - Curio">}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QC90YKBSCt4" title="Filecoin Frontier Accelerator Demo Day Pitch - Curio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **What is Curio?**
 
@@ -53,7 +53,7 @@ One of their largest client use cases to date has included the _American Gods_ t
 
 _A decentralized NFT minting solution catered to the mass market creators._
 
-{{<youtube id="EP3RH_a6uiM" title="Filecoin Frontier Accelerator Demo Day Pitch - Flame">}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EP3RH_a6uiM" title="Filecoin Frontier Accelerator Demo Day Pitch - Flame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **What is Flame?**
 
@@ -73,7 +73,7 @@ Flame solves for:
 
 _An on-chain education platform that incentivizes content creation and learner usage._
 
-{{<youtube id="hweYwJU8qt8" title="Filecoin Frontier Accelerator Demo Day Pitch - Non-Entropy">}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hweYwJU8qt8" title="Filecoin Frontier Accelerator Demo Day Pitch - Non-Entropy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **What is NonEntropy Tech?**
 
@@ -94,7 +94,7 @@ NonEntropy solves for:
 
 _Creating an authentic media network and turning digital creations into assets._
 
-{{<youtube id="ykBeSZtxSLg" title="Filecoin Frontier Accelerator Demo Day Pitch - Numbers">}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ykBeSZtxSLg" title="Filecoin Frontier Accelerator Demo Day Pitch - Numbers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **What is Numbers Protocol?**
 
@@ -117,7 +117,7 @@ Learn more and contact the team at [https://numbersprotocol.io/](https://numbers
 
 _A suite of tools that enables multiplayer competitions in single player games._
 
-{{<youtube id="Ya6r9gYNHDg" title="Filecoin Frontier Accelerator Demo Day Pitch - OP Games">}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ya6r9gYNHDg" title="Filecoin Frontier Accelerator Demo Day Pitch - OP Games" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **What is OP Games?**
 
@@ -143,7 +143,7 @@ Learn more and contact the team at [https://outplay.games/](https://outplay.game
 
 _Revolutionizing video conferences for remote learning using blockchain and Web3 technology._
 
-{{<youtube id="KkFWiUGLeXY" title="Filecoin Frontier Accelerator Demo Day Pitch - Huddle 01">}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KkFWiUGLeXY" title="Filecoin Frontier Accelerator Demo Day Pitch - Huddle 01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **What is Huddle 01?**
 
@@ -167,7 +167,7 @@ Learn more and contact the team at [https://beta.huddle01.com/](https://beta.hud
 
 _A community-powered content delivery network._
 
-{{<youtube id="9p4G6YZsqyY" title="Filecoin Frontier Accelerator Demo Day Pitch - Myel">}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9p4G6YZsqyY" title="Filecoin Frontier Accelerator Demo Day Pitch - Myel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **What is Myel?**
 

@@ -24,7 +24,7 @@ The upcoming Filecoin upgrade to network version 17, “Shark 🦈”, will brin
 
 The full list of FIPs activating in version 17 is at the end of this post. You can hear more about these from [PL EngRes All Hands deep dive from July](https://www.youtube.com/watch?v=oQTPUE4MN_4&list=PLhuBigpl7lqtkWt7koiW6SvQKzT_O4bvY&index=13), and the Lotus nv17 Overview from October, embedded below.
 
-{{<youtube id="10TVAH_bseY" title="Introducing Shark - Filecoin Network Version 17" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/10TVAH_bseY" title="Introducing Shark - Filecoin Network Version 17" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Here are a few highlights.
 
