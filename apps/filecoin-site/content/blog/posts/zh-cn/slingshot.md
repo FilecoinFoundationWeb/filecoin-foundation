@@ -92,78 +92,28 @@ Slingshot第二阶段的比赛与第一阶段截然不同。如果您要参与�
 
 Slingshot奖励池具有协作性和竞争性。Slingshot参与者存储到网络的数据越多，您将解锁的奖励池就越多!
 
-<table style="width:80%;margin-left:auto;margin-right:auto;">
-  <tr>
-   <th style="text-align:center"><strong>Slingshot 参与者存储数据总量</strong></th>
-   <th style="text-align:center"><strong>对应解锁的奖励池奖励的FIL数量</strong></th>
-   <th style="text-align:center"><strong>累积奖励FIL的数量</strong></th>
-  </tr>
-  <tr>
-   <td style="text-align:center">500TiB (第一阶段)</td>
-   <td style="text-align:center"> - </td>
-   <td style="text-align:center"> 50,000 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center">1PiB</td>
-   <td style="text-align:center">50,000</td>
-   <td style="text-align:center">100,000</td>
-  </tr>
-  <tr>
-   <td style="text-align:center">1.5PiB</td>
-   <td style="text-align:center">25,000</td>
-   <td style="text-align:center">125,000</td>
-  </tr>
-  <tr>
-   <td style="text-align:center">2PiB</td>
-   <td style="text-align:center">25,000</td>
-   <td style="text-align:center">150,000</td>
-  </tr>
-  <tr>
-   <td style="text-align:center">2.5PiB</td>
-   <td style="text-align:center">25,000</td>
-   <td style="text-align:center">175,000</td>
-  </tr>
-  <tr>
-   <td style="text-align:center">3PiB</td>
-   <td style="text-align:center">25,000</td>
-   <td style="text-align:center">200,000</td>
-  </tr>
-  <tr>
-   <td style="text-align:center">还有更多等待公布</td>
-  </tr>
-</table>
+<!-- markdownlint-disable MD060 -->
+| Slingshot 参与者存储数据总量 | 对应解锁的奖励池奖励的FIL数量 | 累积奖励FIL的数量 |
+|:-------------------:|:----------------:|:----------:|
+| 500TiB (第一阶段)       | -                | 50,000     |
+| 1PiB                | 50,000           | 100,000    |
+| 1.5PiB              | 25,000           | 125,000    |
+| 2PiB                | 25,000           | 150,000    |
+| 2.5PiB              | 25,000           | 175,000    |
+| 3PiB                | 25,000           | 200,000    |
+| 还有更多等待公布            |                  |            |
+<!-- markdownlint-enable MD060 -->
 
 每个月只要达到解锁存储奖的存储数量，奖励池就会解锁发放奖励。我们的计划是在接下来的几个月里继续进行这种竞争。我们认为如果能够按月发放奖励而不是等到比赛结束才发放是最好的！因此，我们设定了每月的奖励窗口，我们将根据这些窗口来决定当月的最终奖励分配。以下所有的截止时间都是在UTC时间18：00。
 
-<table style="width:80%;margin-left:auto;margin-right:auto;">
-  <tr>
-   <th style="text-align:center"><b>奖励截止日</b>: 我们将在此时对竞赛进行快照以确定排名/数据存储。如果在此日期前没有达到解锁奖励池的存储量，我们将不会在此奖励期内发放任何奖励。</th>
-   <th style="text-align:center"><b>材料提交截止日</b>: 这是提交其他材料的截止日期，例如CID列表和文档说明等。参与将通过Slingshot网站提交这些信息。</th>
-   <th style="text-align:center"><b>评审时间</b>: 社区评审员将在此期间对所有项目进行评审，并确定存储的有效数据和最终奖励。</th>
-   <th style="text-align:center"><b>公布获奖者名单：最终奖励确定后将公布获奖者名单。奖励将在此日期后的1-2周内发放，所有奖励的生效时间为发放日期后的6个月。</b></th>
-  </tr>
-  <tr>
-   <td style="text-align:center">2020年12月9日</td>
-   <td style="text-align:center">2020年12月11日</td>
-   <td style="text-align:center">2020年12月14-16日</td>
-   <td style="text-align:center">2020年12月18日</td>
-  </tr>
-  <tr>
-   <td style="text-align:center">2021年1月27日</td>
-   <td style="text-align:center">2021年1月29日</td>
-   <td style="text-align:center">2021年2月1-3日</td>
-   <td style="text-align:center">2021年2月5日</td>
-  </tr>
-  <tr>
-   <td style="text-align:center">2021年3月10日</td>
-   <td style="text-align:center">2021年3月12日</td>
-   <td style="text-align:center">2021年3月15-17日</td>
-   <td style="text-align:center">2021年3月19日</td>
-  </tr>
-  <tr>
-   <td style="text-align:center">还有更多等待公布</td>
-  </tr>
-</table>
+<!-- markdownlint-disable MD060 -->
+| 奖励截止日: 我们将在此时对竞赛进行快照以确定排名/数据存储。如果在此日期前没有达到解锁奖励池的存储量，我们将不会在此奖励期内发放任何奖励。 | 材料提交截止日: 这是提交其他材料的截止日期，例如CID列表和文档说明等。参与将通过Slingshot网站提交这些信息。 | 评审时间: 社区评审员将在此期间对所有项目进行评审，并确定存储的有效数据和最终奖励。 | 公布获奖者名单：最终奖励确定后将公布获奖者名单。奖励将在此日期后的1-2周内发放，所有奖励的生效时间为发放日期后的6个月。 |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2020年12月9日 | 2020年12月11日 | 2020年12月14-16日 | 2020年12月18日 |
+| 2021年1月27日 | 2021年1月29日 | 2021年2月1-3日 | 2021年2月5日 |
+| 2021年3月10日 | 2021年3月12日 | 2021年3月15-17日 | 2021年3月19日 |
+| 还有更多等待公布 | | | |
+<!-- markdownlint-enable MD060 -->
 
 存储奖将根据Slingshot参与者在奖励窗口期中存储的**最新有效数据量按比例**分配。在排除了太多冗余副本、数据不可检索、数据集与精选数据集列表不匹配、文档不完善、参与者存储大量不可检索数据等因素后，有效数据量可能与您存储的总数据量有所不同。有些团队可能会因为不遵守规则而被直接取消资格，所以请务必遵守规则!
 
