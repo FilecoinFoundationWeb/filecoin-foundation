@@ -7,7 +7,7 @@ category: news
 description: "Bermuda Positions Itself as a Global Leader in Digital Public
   Infrastructure and Demonstrates the Power of Verifiable, Decentralized Public
   Data: An initiative led by the Ministry for the Cabinet Office and Digital
-  Innovation "
+  Innovation"
 image:
   src: /assets/images/200126-bermuda.webp
 seo:
@@ -26,7 +26,7 @@ The initiative to upload government data to Filecoin is being carried out in col
 
 This work reflects a shift toward making public data permanently accessible, tamper-resistant, and verifiable for future generations.
 
-"Bermuda has long been committed to responsible innovation and forward-thinking governance," said The Honourable E. David Burt, JP, MP, Premier and Minister of Finance of Bermuda**.** "Partnering with Filecoin Foundation and Internet Archive strengthens the resilience of our public records and ensures that citizens of Bermuda—and people around the world—can verify the integrity of our data. This initiative supports our broader vision for transparent public services built on trustworthy information."
+"Bermuda has long been committed to responsible innovation and forward-thinking governance," said The Honourable E. David Burt, JP, MP, Premier and Minister of Finance of Bermuda. "Partnering with Filecoin Foundation and Internet Archive strengthens the resilience of our public records and ensures that citizens of Bermuda—and people around the world—can verify the integrity of our data. This initiative supports our broader vision for transparent public services built on trustworthy information."
 
 The initial datasets from the Government of Bermuda include “Employment/Labour publications” that document key trends in the Bermuda labor market, with additional datasets planned for future phases. These records represent critical components of Bermuda's public archive and provide a foundation for future digital governance initiatives.
 
@@ -37,6 +37,6 @@ Filecoin, the world's largest decentralized storage network, distributes data ac
 * **Resilience:** Data is replicated across multiple storage providers, eliminating single points of failure and protecting against outages, cyberattacks, and more. 
 * **Verifiability:** Files receive cryptographic content identifiers (CIDs) that change if the data is altered, making tampering immediately detectable. 
 * **Transparency:** Files can be retrieved and independently verified, confirming data integrity.
-* **Long-term preservation:** Trusted by [leading organizations](https://fil.org/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage) including Internet Archive, Starling Lab, and [others](https://fil.org/blog/filecoin-foundation-announces-one-million-cultural-artifacts-preserved-on-the-filecoin-network), Filecoin ensures public data remains accessible, verifiable, and resilient over the long term. 
+* **Long-term preservation:** Trusted by [leading organizations](/blog/flickr-foundation-internet-archive-and-other-leading-organizations-leverage-filecoin-to-safeguard-cultural-heritage) including Internet Archive, Starling Lab, and [others](/blog/filecoin-foundation-announces-one-million-cultural-artifacts-preserved-on-the-filecoin-network), Filecoin ensures public data remains accessible, verifiable, and resilient over the long term. 
 
 Since 2018, Bermuda has set a globally recognized example for digital asset regulation through the implementation of the Digital Asset Business Act (DABA) and the Bermuda Monetary Authority’s (BMA’s) principles-based regulatory approach. Together, DABA and Bermuda’s clearly defined regulatory standards have positioned the jurisdiction as a trusted hub for responsible digital asset innovation, attracting leading firms.
