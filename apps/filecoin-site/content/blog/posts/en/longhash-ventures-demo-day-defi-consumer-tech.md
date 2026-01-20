@@ -30,7 +30,7 @@ On April 23, the Filecoin Frontier Accelerator II powered by LongHash Ventures, 
 
 _The cross-chain risk liquidity protocol to accelerate mass adoption of Web3 economies._
 
-{{<youtube id="d3Z2_-pd3wY" title="Filecoin Frontier Accelerator Demo Day Pitch - Atomica">}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d3Z2_-pd3wY" title="Filecoin Frontier Accelerator Demo Day Pitch - Atomica" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **What is Atomica?**
 
@@ -55,7 +55,7 @@ Learn more and contact the team at [https://atomica.org/](https://atomica.org/ "
 
 _An open data marketplace for trading the computing rights of private data._
 
-{{<youtube id="ZBICucQYe0U" title="Filecoin Frontier Accelerator Demo Day Pitch - Ownership Labs">}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZBICucQYe0U" title="Filecoin Frontier Accelerator Demo Day Pitch - Ownership Labs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **What is Ownership Labs?**
 
@@ -78,7 +78,7 @@ Learn more and contact the team at [https://github.com/ownership-labs](https://g
 
 _Democratizing access to critical medical services in China._
 
-{{<youtube id="22qrATbyJaI" title="Filecoin Frontier Accelerator Demo Day Pitch - Sinso">}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/22qrATbyJaI" title="Filecoin Frontier Accelerator Demo Day Pitch - Sinso" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **What is Sinso Technology?**
 
@@ -98,7 +98,7 @@ Sinso solves for:
 
 _Privacy preserving decentralized identity and decentralized applications._
 
-{{<youtube id="_9_gluHJXro" title="Filecoin Frontier Accelerator Demo Day Pitch - Vera AI">}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_9_gluHJXro" title="Filecoin Frontier Accelerator Demo Day Pitch - Vera AI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **What is Vera AI?**
 
