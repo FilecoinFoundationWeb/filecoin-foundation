@@ -1,13 +1,15 @@
 ---
 title: Government of Bermuda Uploads Public Datasets to Filecoin Network
-created-on: 2026-01-20T10:27:00.000Z
-updated-on: 2026-01-20T10:27:00.000Z
-published-on: 2026-01-20T10:27:00.000Z
+created-on: 2026-01-20T10:46:00.000Z
+updated-on: 2026-01-20T10:46:00.000Z
+published-on: 2026-01-20T10:46:00.000Z
 category: news
 description: "Bermuda Positions Itself as a Global Leader in Digital Public
   Infrastructure and Demonstrates the Power of Verifiable, Decentralized Public
   Data: An initiative led by the Ministry for the Cabinet Office and Digital
   Innovation "
+image:
+  src: /assets/images/200126-bermuda.webp
 seo:
   title: Government of Bermuda Uploads Public Datasets to Filecoin Network
   description: Filecoin Foundation and Bermuda are preserving public records on
