@@ -47,31 +47,17 @@ While simple in concept, implementations of Fiat-Shamir transformations require 
 
 In SnarkPack, when aggregating N proofs, there are log2(N) Fiat-Shamir transformations that need to be performed, in turn requiring log2(N) hashes to perform. Each hash computation must take as input all of the elements that the prover has already generated in the proving process. This can be mocked up in pseudo-code as follows:
 
-<code>
-
-<p style="padding-left: 50px; display=inline-block">rand = H(...)</p>
-
-<p style="padding-left: 50px; display=inline-block">……</p>
-
-<p style="padding-left: 50px; display=inline-block">for i in 0…log2(n):</p>
-
-<p style="padding-left: 100px; display=inline-block">A &nbsp; &nbsp; &nbsp;<- generate_proof_step(i)</p>
-
-<p style="padding-left: 100px; display=inline-block">rand &nbsp; <- H(rand, A)</p>
-
-<p style="padding-left: 100px; display=inline-block">B &nbsp; &nbsp; &nbsp;<- generate_post_randomness_step(rand)</p>
-
-</code>
+    rand = H(...)
+    ……
+    for i in 0…log2(n):
+        A    <- generate_proof_step(i)
+        rand <- H(rand, A)
+        B    <- generate_post_randomness_step(rand)
 
 Once this process is complete (that is, once the loop terminates after log2(N) steps), there is one last hash that needs to be computed – that is, one last randomness to be calculated. This randomness is then fed into the rest of the SnarkPack protocol. In pseudo-code, this is simply:
 
-<code>
-
-<p style="padding-left: 50px;">KZG_proof(final_randomness, …)</p>
-
-<p style="padding-left: 50px;">final_randomness = H(B)</p>
-
-</code>
+    KZG_proof(final_randomness, …)
+    final_randomness = H(B)
 
 ## The issues
 
