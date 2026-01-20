@@ -25,9 +25,9 @@ _template: blog_detail_ch
 
 2020年10月23至28日，我们同社区参与了上海区块链国际周——一周时间内的黑客松、论坛和活动。我们与新老粉丝、开发者和矿工们一起庆祝了Filecoin顺利启动主网。以下是这几天活动中的一些亮点：
 
-<video width="80%" style="margin-left:10%" controls>
-<source src="/vintage/videos/blockchainweek.mp4" type="video/mp4">
-您的浏览器不支持播放此版本的视频。
+<video width="560" height="315" controls>
+  <source src="/videos/1eib-video-720.mp4" type="video/mp4">
+  您的浏览器不支持播放此版本的视频。
 </video>
 
 ## 10月23至25日，万向区块链实验室举办的黑客松活动
@@ -42,12 +42,12 @@ _template: blog_detail_ch
 
 Filecoin生态中的专家们也进行了多场讨论。来自分布式资本的Rin Huang、Hashkey Capital的Chao Deng、SNZ的Neo Liang和Yimo Capital的Juan Tu参加了关于主网启动后对Filecoin生态发展展望的圆桌讨论。Colin Evran与中国社区分享了Filecoin生态在网络增长和生态成就方面的最新进展。来自Filecoin基金会的代表介绍了基金会的情况并简要说明了基金会的目标和最近更新。ZX Zhang分享了“Filecoin的存储经济”，将既作为网络运营者又是网络本身的Filecoin挖矿社区与Airbnb的房东进行了对比。LongHash Ventures的CEO Emma Cui介绍了Filecoin Frontier加速营，目前该加速营正在接受申请并将于2021年2月启动。
 
-<video width="80%" style="margin-left:10%" controls>
-<source src="/vintage/videos/blockchainweek-open.mp4" type="video/mp4">
-您的浏览器不支持播放此版本的视频。
+<video width="560" height="315" controls>
+  <source src="/videos/blockchainweek-open.mp4" type="video/mp4">
+  您的浏览器不支持播放此版本的视频。
 </video>
 
-2020年上海区块链国际周。10月26日，Filecoin开放日。
+_2020年上海区块链国际周。10月26日，Filecoin开放日。_
 
 ## 10月27日至28日，位于上海外滩W酒店的区块链峰会
 
