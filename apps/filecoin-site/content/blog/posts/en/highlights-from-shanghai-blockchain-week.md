@@ -25,9 +25,10 @@ _template: blog_detail
 
 From October 23 - 28, 2020, we joined our community in China for Shanghai International Blockchain Week - a week of hackathons, talks, and events. We celebrated Filecoin’s recent mainnet launch with new and longtime fans, developers, and miners. Here are some highlights from the days’ activities.
 
-<video width="80%" style="margin-left:10%" controls> <source src="/vintage/videos/blockchainweek.mp4" type="video/mp4"> Your browser does not support the video tag. </video>
-
-<br>
+<video width="560" height="315" controls>
+  <source src="/videos/blockchainweek.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## October 23 - 25, Hackathon @ Wanxiang Blockchain Labs
 
@@ -41,13 +42,12 @@ On Filecoin opening day, over 200 attendees joined to learn about the Filecoin e
 
 There were also a number of talks from experts throughout the Filecoin ecosystem. Rin Huang from Fenbushi Capital, Chao Deng from Hashkey Capital, Neo Liang from SNZ, and Juan Tu from Yimo Capital joined a panel on the outlook of Filecoin’s ecosystem development following the mainnet launch. Colin Evran shared the Filecoin Ecosystem’s current progress on network growth and ecosystem achievements with the China community. Representatives from the Filecoin Foundation joined us to introduce the Foundation and give an overview of its goal and latest updates. ZX Zhang shared the ‘Filecoin Storage Economy’ with the audience - comparing the Filecoin mining community to Airbnb hosts who are both network operators and co-owners of the network itself. Emma Cui, the CEO of LongHash Ventures, provided a thorough introduction of the Filecoin Frontier Accelerator, which is currently accepting applications and will launch in February 2021.
 
-<p>
+<video width="560" height="315" controls>
+  <source src="/videos/blockchainweek-open.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-<video width="80%" style="margin-left:10%" controls> <source src="/vintage/videos/blockchainweek-open.mp4" type="video/mp4"> Your browser does not support the video tag. </video>
-
-<p style="font-size:small;font-style:italic;text-align:center">Shanghai Blockchain Week 2020. Filecoin Opening Day, October 26.</p>
-
-</p>
+_Shanghai Blockchain Week 2020. Filecoin Opening Day, October 26._
 
 ## 10/27/20 - 10/28/20 Summit @ W the Bund Shanghai
 
