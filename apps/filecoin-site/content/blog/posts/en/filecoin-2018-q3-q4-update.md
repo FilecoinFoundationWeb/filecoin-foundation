@@ -224,7 +224,7 @@ Filecoin is built on top of and depends heavily on [libp2p](https://libp2p.io/),
     - [Implement a payment channel with libp2p](https://www.youtube.com/watch?v=t2qCmwUlY2Q) (Lucas Vogelsang)
   - **Other**
     - 2018-09-18. [How to Leverage libp2p for Blockchain Applications](https://www.infoq.com/presentations/blockchain-libp2p) (Chris Pacia, Open Bazaar, InfoQ)
-    - [More libp2p talks and presentations](https://libp2p.io/media/)..
+    - [More libp2p talks and presentations](https://libp2p.io/media/).
 
 ## 9. IPFS update for Filecoin
 
