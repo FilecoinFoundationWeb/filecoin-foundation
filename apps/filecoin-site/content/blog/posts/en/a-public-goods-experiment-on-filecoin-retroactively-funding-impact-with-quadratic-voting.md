@@ -114,4 +114,4 @@ Shoutout to Rafael Souza (RafaRed) from the Vochaa team for building a custom im
 
 _While it was not included in the time range for this competition, the Maintainer team would like to thank community contributor **clinta** for a [valuable PR on Scheduler Enhancements](https://github.com/filecoin-project/lotus/pull/7269)_
 
-Full details on voting and reward allocation [here](https://docs.google.com/spreadsheets/d/1f-V6r8pi0AgCZRSYuUAnsQZnfXg0wYTB/edit?usp=sharing&ouid=110683744377797191434&rtpof=true&sd=true)
+[View full details on voting and reward allocation](https://docs.google.com/spreadsheets/d/1f-V6r8pi0AgCZRSYuUAnsQZnfXg0wYTB/edit?usp=sharing&ouid=110683744377797191434&rtpof=true&sd=true)

@@ -26,7 +26,7 @@ _template: blog_detail
 
 On July 18, the voting period closed for the 2021 DoraHacks Filecoin Grant Hackathon. Lasting from May 1 to mid-July, the Round 1 Filecoin Grants distributed $249,000 USD among the winning projects across first, second, and third place. Catch up below with the winning projects to learn more about the projects building the future of the Filecoin network.
 
-You can check out all the applicants [here](https://dorahacks.io/grant/filecoin/), and watch the projects’ livestream presentations [here](https://www.youtube.com/channel/UCApW8piYNP4T10kgenp0Mjg/playlists).
+You can check out all the applicants [on DoraHacks](https://dorahacks.io/grant/filecoin/), and [watch the livestream presentations](https://www.youtube.com/channel/UCApW8piYNP4T10kgenp0Mjg/playlists).
 
 ## DoraHacks First Place
 
@@ -134,4 +134,4 @@ IPFSpace is a decentralized storage platform based on IPFS. It uses MetaMask to 
 
 Touchain is a fully aggregated, one-stop NFT creative trading platform that links the physical and digital worlds together to create a Web3 lifestyle.
 
-**For more information in Chinese, you can catch up** [**here**](https://mp.weixin.qq.com/s/MCYUNta300OoCP1vFLvKhA)**.**
+[**Read more information in Chinese**](https://mp.weixin.qq.com/s/MCYUNta300OoCP1vFLvKhA)**.**

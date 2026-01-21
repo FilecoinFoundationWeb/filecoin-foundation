@@ -51,4 +51,4 @@ Myel's POPs can also be paired with a JavaScript implementation and an in-browse
 
 Altogether, Myel and its users are able to create a better option for content distribution that benefits audiences all over the world. This solution is possible by making the most of the Filecoin network’s capacity for content addressing and persistence.
 
-_Learn more about the Filecoin Retrieval Market and Myel_ [_here_](https://www.youtube.com/watch?v=-VSR4aFQrf8&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=38)_._
+_Learn more about the Filecoin Retrieval Market and Myel_ [_in this video_](https://www.youtube.com/watch?v=-VSR4aFQrf8&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=38)_._

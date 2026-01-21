@@ -93,7 +93,7 @@ In our modeling, we look at the various strategies (i.e. pipelines) available fo
 ### Assumptions
 
 - 32GiB sectors
-- Deals with same size as sectors (ie, 32GiB). Note that this is coherent with the status quo (average verified deals size is ~30GiB, see related statistics in Starboard [here](https://dashboard.starboard.ventures/market-deals)).
+- Deals with same size as sectors (ie, 32GiB). Note that this is coherent with the status quo (average verified deals size is ~30GiB, see related statistics in [Starboard dashboard](https://dashboard.starboard.ventures/market-deals)).
 - Verified deals only, assuming deals duration matching the remaining sector lifetime when they are activated (ie, a sector can be extended if needed).
 
 ## Definitions

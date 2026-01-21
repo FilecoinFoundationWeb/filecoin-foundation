@@ -158,7 +158,7 @@ We have been preparing to meet the needs of a broad and vibrant Filecoin communi
 
 **The Permissive License Stack**. Protocol Labs has developed and adopted a set of open source intellectual property commitments we call [the Permissive License Stack](https://protocol.ai/blog/announcing-the-permissive-license-stack/). These commitments guarantee that the technology PL is building for Filecoin will be usable by the largest possible number of people and projects.
 
-We’re hopeful that sharing our approach will help our colleagues at other companies and organizations to join us and follow this path forward. You can read more about the Permissive Licensing Stack [here](https://protocol.ai/blog/announcing-the-permissive-license-stack/).
+We’re hopeful that sharing our approach will help our colleagues at other companies and organizations to join us and follow this path forward. You can read more about the Permissive Licensing Stack [in this blog post](https://protocol.ai/blog/announcing-the-permissive-license-stack/).
 
 **Engaging with policymakers about the decentralized web**. Protocol Labs is a founding member of the [Blockchain Association](https://theblockchainassociation.org/), a new policy advocacy group whose work we believe will advance the goals of the decentralized web. The Blockchain Association has done incredible work educating policymakers, providing critical industry knowledge to improve draft legislation, and promoting productive engagement between the U.S. government and important decentralized software projects. Their writings about [decentralization](https://medium.com/@BlockchainAssoc/understanding-the-secs-guidance-on-digital-tokens-the-hinman-token-standard-dd51c6105e2a), a [recently proposed law in Congress](https://medium.com/@BlockchainAssoc/new-bipartisan-legislation-defines-digital-tokens-paves-way-for-pro-innovation-policy-4833cbfca600), and a [potential administrative law case](https://medium.com/@BlockchainAssoc/the-potential-kik-and-the-kin-foundation-case-has-major-consequences-for-the-open-blockchain-de8ed616a1c) may interest those following US public policy.
 
@@ -224,7 +224,7 @@ Filecoin is built on top of and depends heavily on [libp2p](https://libp2p.io/),
     - [Implement a payment channel with libp2p](https://www.youtube.com/watch?v=t2qCmwUlY2Q) (Lucas Vogelsang)
   - **Other**
     - 2018-09-18. [How to Leverage libp2p for Blockchain Applications](https://www.infoq.com/presentations/blockchain-libp2p) (Chris Pacia, Open Bazaar, InfoQ)
-    - And [more](https://libp2p.io/media/).
+    - [More libp2p talks and presentations](https://libp2p.io/media/)..
 
 ## 9. IPFS update for Filecoin
 
@@ -245,7 +245,7 @@ Filecoin is built on top of and depends heavily on [IPFS](https://ipfs.tech/), a
   - [IPFS WebUI](https://github.com/ipfs-shipyard/ipfs-webui#ipfs-web-ui) - a shiny new interface to check in on your node’s stats, explore the IPLD powered merkle forest, see peers around the world, and manage your files
   - [@ipfspin, a Twitter Pinbot](https://twitter.com/ipfspin/status/1053376847596187648) - add and pin your data to IPFS Cluster with just a tweet
   - [IPFS Install Manager](https://www.youtube.com/watch?v=C7A3-ycCRWU) - a CLI interface for managing IPFS installs
-  - and [more](https://ipfs.tech/blog/)
+  - [More IPFS updates on the IPFS blog](https://ipfs.tech/blog/)
 - **Recent IPFS user highlights.**
   - [Cloudflare - distributed IPFS gateway](https://blog.cloudflare.com/distributed-web-gateway/)
   - [Azure - support for IPFS in consortiums](https://youtu.be/kaueUSiDrc0)

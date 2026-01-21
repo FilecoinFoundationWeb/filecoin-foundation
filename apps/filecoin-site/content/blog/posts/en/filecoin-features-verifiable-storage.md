@@ -32,7 +32,7 @@ The Filecoin marketplace runs effectively because of the confidence clients can 
 
 With Filecoin, miners’ storage is publicly audited. In other words, our storage proofs give every user of the Filecoin network assurance that all miners are storing data exactly as promised. Storage verification is the glue that holds the Filecoin marketplace together; it ensures the integrity of all data stored on the network.
 
-For these data integrity checks to provide storage users the assurance they desire, the checks must be a part of Filecoin’s most basic protocols. That’s where Filecoin’s proof system comes into play (we wrote another blog post about Filecoin proofs [here](https://filecoin.io/blog/filecoin-proof-system/)).
+For these data integrity checks to provide storage users the assurance they desire, the checks must be a part of Filecoin’s most basic protocols. That’s where Filecoin’s proof system comes into play ([we wrote another blog post about Filecoin proofs](https://filecoin.io/blog/filecoin-proof-system/)).
 
 A proof system is a cryptographic protocol that participants – generally miners – use to validate the storage services. Filecoin’s proof system solves a previously intractable problem for decentralized storage: How can miners _prove_ that they are really storing the data they say they are through time and that they are dedicating unique physical space? To understand this, we need to take a look at how Filecoin implements decentralized storage and what makes its proof system unique.
 
@@ -64,7 +64,7 @@ That’s where _Proofs-of-Spacetime_ (PoSt) comes in. With PoSt, randomly select
 
 Taken together, PoRep and PoSt make up Filecoin’s unique proof system, a combination of Proof of Storage and Proof of Space.
 
-In addition to its proof system, the Filecoin network also relies on game-theoretic incentives to discourage malicious or negligent activity. All miners that agree to store data on the Filecoin network must provide collateral in the form of Filecoin at the time of agreement. Any storage miner that fails a PoSt check is penalized, and portions of this collateral are lost whenever a penalty is applied. After too many penalties, all the collateral is lost, and a miner is prevented from offering storage again to clients. You can read more about some of these cryptoeconomic mechanisms [here](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/).
+In addition to its proof system, the Filecoin network also relies on game-theoretic incentives to discourage malicious or negligent activity. All miners that agree to store data on the Filecoin network must provide collateral in the form of Filecoin at the time of agreement. Any storage miner that fails a PoSt check is penalized, and portions of this collateral are lost whenever a penalty is applied. After too many penalties, all the collateral is lost, and a miner is prevented from offering storage again to clients. You can read more about some of these cryptoeconomic mechanisms [in this blog post](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/).
 
 ## Conclusion
 
