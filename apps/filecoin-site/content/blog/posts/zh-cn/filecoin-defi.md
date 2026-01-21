@@ -87,6 +87,6 @@ _Corbin Page, ConsenSys Codefi_
 1. 创建今天不可能的事情。加密和Web3生态发展的如此之快，你应该需要提前留出6个月的时间来真正了解事情的发展方向。我鼓励开发者对他们提出的解决方案进行 _天马行空的创新_。
 2. 这似乎有点矛盾的，但我也建议解决实际的问题。我们的生态花了很多时间在想法上，这很有趣，也很神奇。然而，在结束这一天的时候，如果我们希望这个东西是有影响力的，我们必须解决真正的人的问题；而这些人中的很多人都生活在我们的加密领域之外。我们有很多问题需要解决，所以一定要把所有这些新颖的创意想法立足于现实，建立人们真正想要的解决方案。
 
-<iframe width="760" height="427" src="https://www.youtube.com/embed/4r05Qlmt8CY" frameborder="0" style="max-width:1000px;margin-left:auto;margin-right:auto;" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4r05Qlmt8CY" allowfullscreen></iframe>
 
 _(本文中讨论者的发言均为转述。_ [_观看完整视频请至Filecoin YouTube 频道_](https://www.youtube.com/watch?v=4r05Qlmt8CY)_)_

@@ -26,8 +26,8 @@ _template: blog_detail
 
 Fewer than four weeks after its mainnet launch, the Filecoin network is celebrating a major milestone. As of today, the global community of Filecoin miners has dedicated 1 exbibyte (EiB) of decentralized storage capacity to the Filecoin network. This is a tremendous achievement for the Filecoin network.
 
-<video width="80%" style="margin-left:10%" controls>
-  <source src="/vintage/videos/1eib-video-720.mp4" type="video/mp4">
+<video width="560" height="315" controls>
+  <source src="/videos/1eib-video-720.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
