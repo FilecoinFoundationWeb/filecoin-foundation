@@ -26,7 +26,7 @@ _template: blog_detail
 From October 23 - 28, 2020, we joined our community in China for Shanghai International Blockchain Week - a week of hackathons, talks, and events. We celebrated Filecoin’s recent mainnet launch with new and longtime fans, developers, and miners. Here are some highlights from the days’ activities.
 
 <video width="560" height="315" controls>
-  <source src="/videos/1eib-video-720.mp4" type="video/mp4">
+  <source src="/videos/blockchainweek.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

@@ -26,7 +26,7 @@ _template: blog_detail_ch
 2020年10月23至28日，我们同社区参与了上海区块链国际周——一周时间内的黑客松、论坛和活动。我们与新老粉丝、开发者和矿工们一起庆祝了Filecoin顺利启动主网。以下是这几天活动中的一些亮点：
 
 <video width="560" height="315" controls>
-  <source src="/videos/1eib-video-720.mp4" type="video/mp4">
+  <source src="/videos/blockchainweek.mp4" type="video/mp4">
   您的浏览器不支持播放此版本的视频。
 </video>
 
