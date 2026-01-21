@@ -72,7 +72,7 @@ Use [Estuary](https://estuary.tech) to store assets at metaverse scale on Fileco
 
 Projects in the Polygon ecosystem that are integrating with IPFS and Filecoin (and services like NFT.storage, Estuary, Web3.storage, Filecoin-Polygon Bridge) are eligible for a $5,000 grant.
 
-Eligible projects can apply [here](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)! Applications are reviewed on a rolling basis, so early submissions are encouraged.
+[Eligible projects can apply via the microgrants README](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)! Applications are reviewed on a rolling basis, so early submissions are encouraged.
 
 Grant-funded projects will also have the opportunity to join future acceleration programs, and connect to technical, product, and other potential resources of support from both ecosystems.
 

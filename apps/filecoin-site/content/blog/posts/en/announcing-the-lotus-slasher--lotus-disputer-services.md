@@ -38,6 +38,6 @@ In case a Lotus Disputer successfully challenges an optimistically accepted Wind
 
 Both the Slasher and Disputer services are designed to be efficient and lightweight, ensuring no detrimental effect on the performance of your Lotus node.
 
-Check out our new Lotus Slasher and Lotus Disputer video tutorial [here](https://www.youtube.com/watch?v=akJd6-2kR3Q)!
+Check out our new [Lotus Slasher and Lotus Disputer video tutorial](https://www.youtube.com/watch?v=akJd6-2kR3Q)!
 
 For detailed information, configurations, and setup instructions, please visit the [official documentation](https://lotus.filecoin.io/lotus/manage/slasher-and-disputer/).

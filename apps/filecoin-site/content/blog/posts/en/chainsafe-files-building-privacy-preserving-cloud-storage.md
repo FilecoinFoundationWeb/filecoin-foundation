@@ -46,7 +46,7 @@ Another common use case for an application’s user login is to use a single sig
 
 All an application needs to do is to verify that the third-party signature is valid (e.g Google’s signature). Now, this means that in our example, Google is the gatekeeper, and you would have to trust them. If your Google account gets hacked, if Google itself gets hacked, or if an admin is malicious, **they could issue a signature to vouch that someone is identified as you.**
 
-At ChainSafe Files, to prevent the need to trust a third-party, we have built an authentication flow using a decentralized login provider called tKey, by [Torus](https://tech.tor.us). We have dedicated an article about it and shared in detail how it works, you can check it out [here](https://medium.com/chainsafe-systems/major-improvement-to-chainsafe-files-ab489d3e52a2). The gist of it is that you **no longer need to trust a single actor**, be it Google, GitHub, or the ChainSafe Files’ team. You will require two factors to be authenticated:
+At ChainSafe Files, to prevent the need to trust a third-party, we have built an authentication flow using a decentralized login provider called tKey, by [Torus](https://tech.tor.us). We have dedicated an article about it and shared in detail how it works in [our Medium article](https://medium.com/chainsafe-systems/major-improvement-to-chainsafe-files-ab489d3e52a2). The gist of it is that you **no longer need to trust a single actor**, be it Google, GitHub, or the ChainSafe Files’ team. You will require two factors to be authenticated:
 
 1. A password in case your first sign-in method gets compromised, a malicious actor would still not be able to login to Files on your behalf.
 

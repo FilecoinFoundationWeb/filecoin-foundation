@@ -58,6 +58,6 @@ Projects funded can be broad in scope, but will generally fit into one of three 
 - $50,000 for proof of concept ReFi projects
 - $100,000-$200,000 for established Web3 climate projects/companies working on building something new and impactful in the ReFi space
 
-If you are interested in applying for a Filecoin Green Grant, please apply [here](https://github.com/filecoin-project/devgrants) under Requests for Proposals. The ReFi grants round is open on a rolling basis until September 30, 2022.
+If you are interested in applying for a Filecoin Green Grant, please [apply on GitHub](https://github.com/filecoin-project/devgrants) under Requests for Proposals. The ReFi grants round is open on a rolling basis until September 30, 2022.
 
 You can also join #fil-green on the Filecoin Slack or @filecoingreen on Twitter for more information!

@@ -53,7 +53,7 @@ For our first batch of implementation grants, we chose to partner with ChainSafe
 
 ## ChainSafe
 
-[ChainSafe Systems](https://chainsafe.io/) is a blockchain R&D firm that is building infrastructure for Web3. ChainSafe started several years ago as a group of developers who met at early Ethereum meetups. Ever since, the team has been building in the Ethereum, Ethereum Classic, Cosmos, Polkadot, and now Filecoin ecosystems. In addition to the Rust Filecoin implementation, ChainSafe is building Ethereum 2.0 and Polkadot protocol implementations. You can read more about the team and their Rust implementation of Filecoin [here](https://medium.com/chainsafe-systems/announcing-forest-chainsafes-implementation-of-filecoin-in-rust-675d176be517).
+[ChainSafe Systems](https://chainsafe.io/) is a blockchain R&D firm that is building infrastructure for Web3. ChainSafe started several years ago as a group of developers who met at early Ethereum meetups. Ever since, the team has been building in the Ethereum, Ethereum Classic, Cosmos, Polkadot, and now Filecoin ecosystems. In addition to the Rust Filecoin implementation, ChainSafe is building Ethereum 2.0 and Polkadot protocol implementations. You can read more about the team and their Rust implementation of Filecoin [in their Forest announcement](https://medium.com/chainsafe-systems/announcing-forest-chainsafes-implementation-of-filecoin-in-rust-675d176be517).
 
 ## Soramitsu
 

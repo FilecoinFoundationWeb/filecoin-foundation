@@ -23,7 +23,7 @@ title: "Building Web3: Filecoin + Ethereum Better Together"
 _template: blog_detail
 ---
 
-_Summary of a talk given by Protocol Labs Founder Juan Benet at EthCC 2021 — see the full talk_ [_here_](https://www.youtube.com/watch?v=fHbjjSKrLJU)_._
+_Summary of a talk given by Protocol Labs Founder Juan Benet at EthCC 2021 — see the full talk_ [_in this video_](https://www.youtube.com/watch?v=fHbjjSKrLJU)_._
 
 The Filecoin network is ecosystem oriented, aligning with Protocol Labs’ tendency to build modular solutions. Designed to be used by others, Filecoin has found a natural fit with other stacks, applications, and ecosystems within Web3. Since its launch in October 2020, Filecoin has grown to over 8 exbibytes of available storage with 400+ new projects entering the space. One ecosystem that continues to prove collaborative and mutually beneficial is Ethereum.
 
@@ -81,4 +81,4 @@ In action, data-rich NFTs enable Vine-like short video clips. A user on this the
 
 With information stored on Filecoin, the token-access capabilities of Ethereum can be leveraged to create token-protected pages and media (articles, movies, music, and more). The ‘pay per view’ models of Web2 can be replicated, without needing to replicate the data and advertising models.
 
-And that’s just the beginning! The Filecoin and Ethereum ecosystems have a long history of collaboration and opportunity, with much more to come. Watch the entirety of Juan Benet’s talk [here](https://www.youtube.com/watch?v=fHbjjSKrLJU).
+And that’s just the beginning! The Filecoin and Ethereum ecosystems have a long history of collaboration and opportunity, with much more to come. Watch the entirety of Juan Benet’s talk [in this video](https://www.youtube.com/watch?v=fHbjjSKrLJU).

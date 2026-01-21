@@ -46,7 +46,7 @@ Having multiple software implementations that interoperate on the same network r
 
 Multiple implementations offer other benefits, such as the ability to increase engagement with different developer communities and the opportunity to explore different implementation architectures (which may offer different performance and other optimizations). Ever since Ethereum launched with Geth and Parity, we have seen an increasing number of cryptonetworks launching with multiple software implementations.
 
-Because multiple implementations are so valuable for network security, resilience, and community engagement, we have made it a goal to launch Filecoin (in March 2020) with 2+ interoperable protocol implementations. As of today, we have several Filecoin implementations in progress – **go-filecoin**, **lotus**, and others that will be formally announced soon. We are looking for even more talented teams to build Filecoin implementations. If interested, please apply for our [grant](https://github.com/filecoin-project/devgrants/issues/43) to build an additional implementation by following the instructions [here](http://filecoin.io/grants)!
+Because multiple implementations are so valuable for network security, resilience, and community engagement, we have made it a goal to launch Filecoin (in March 2020) with 2+ interoperable protocol implementations. As of today, we have several Filecoin implementations in progress – **go-filecoin**, **lotus**, and others that will be formally announced soon. We are looking for even more talented teams to build Filecoin implementations. If interested, please apply for our [grant](https://github.com/filecoin-project/devgrants/issues/43) to build an additional implementation by following the instructions on our [grants page](http://filecoin.io/grants)!
 
 ## Tell me more about lotus
 
@@ -55,7 +55,7 @@ Because multiple implementations are so valuable for network security, resilienc
 - **Mining.** Miners can now start mining on the lotus devnet and start earning storage power. **lotus** has also implemented multiple sector sizes, so miners with many different storage configurations can mine on the network. **lotus** integrates with [**rust-fil-proofs**](https://github.com/filecoin-project/rust-fil-proofs/), so miners can submit _Proofs-of-Spacetime_ on schedule in order to avoid being slashed. What’s more, the storage mining functionality is implemented as a separate module, so advanced miners can optimize mining processes as they wish for their particular hardware configurations.
 - **Storage.** Storage clients can create deals with miners, set up payment channels to miners, transfer data for storage, and pay miners for storing their data correctly.
 - **Retrieval.** Retrieval clients can pay to retrieve their data from storage miners (i.e. [retrieval v0](https://filecoin-project.github.io/specs/#retrieval-v0-libp2p-services)).
-- And much more! Check out the codebase on GitHub [here](https://github.com/filecoin-project/lotus)!
+- And much more! Check out the [lotus codebase on GitHub](https://github.com/filecoin-project/lotus)!
 
 In addition to opening the **lotus** codebase, today we are also announcing the launch of the first public **lotus** development network (devnet). After setting up a **lotus** node, you can connect to the devnet and begin storing data with other nodes or start mining. Read the [Getting Started with Lotus](https://filecoin.io/blog/announcing-lotus/#getting-started-with-lotus) section below for more details.
 
@@ -72,9 +72,9 @@ We encourage miners, clients, and developers to start experimenting with **lotus
 
 For miners and users, there are 4 main ways to get involved with **lotus** today:
 
-1. Download, install, and run **lotus** locally (instructions [here](https://github.com/filecoin-project/lotus#building))
-2. Connect to the **lotus** devnet (instructions [here](https://github.com/filecoin-project/lotus#devnet))
-3. Contribute to the **lotus** codebase (open issues [here](https://github.com/filecoin-project/lotus/issues))
+1. Download, install, and run **lotus** locally ([building instructions](https://github.com/filecoin-project/lotus#building))
+2. Connect to the **lotus** devnet ([devnet connection instructions](https://github.com/filecoin-project/lotus#devnet))
+3. Contribute to the **lotus** codebase ([open issues on GitHub](https://github.com/filecoin-project/lotus/issues))
 
 Adventurous developers can begin exploring the [**lotus** RPC API](https://github.com/filecoin-project/lotus/blob/master/api/api_full.go) to start building applications on the **lotus** devnet (and eventually testnet). Note that **lotus** will continue to evolve significantly until testnet, so be prepared for breaking changes.
 

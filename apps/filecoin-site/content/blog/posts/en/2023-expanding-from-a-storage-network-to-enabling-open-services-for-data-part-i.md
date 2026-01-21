@@ -40,7 +40,7 @@ The Dawn of an Era: At precisely 3:14 PM UTC on March 14, 2023 (epoch 2,683,348)
 Fueling DeFi Growth: FVM fueled the rapid growth of a Filecoin DeFi ecosystem, with third parties building staking and lending protocols atop the Filecoin network’s \~140M FIL pledge collateral from Storage Providers. 
 
 - Since its mainnet launch in March, the Total Value Locked has reached \~$280M by the end of 2023!
-- dApps built on top of FVM have helped to connect Filecoin token holders with Storage Providers fueling capacity and data to the network. Within just three months of launch, 10 staking pools were launched on FVM that led to 20.9M FIL deposits and 18.3M FIL borrowed to date (live stats [here](https://fvm.starboard.ventures/explorer/leaderboard)). 
+- dApps built on top of FVM have helped to connect Filecoin token holders with Storage Providers fueling capacity and data to the network. Within just three months of launch, 10 staking pools were launched on FVM that led to 20.9M FIL deposits and 18.3M FIL borrowed to date (live stats [on the FVM Starboard leaderboard](https://fvm.starboard.ventures/explorer/leaderboard)). 
 
 Expanding Horizons with Exciting Use Cases, Applications and Partnerships: Throughout 2023, FVM continued to mature its features, integrations and resources to enable a wide variety of projects to build on Filecoin. 
 

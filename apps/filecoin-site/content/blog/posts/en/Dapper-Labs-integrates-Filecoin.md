@@ -54,7 +54,7 @@ To jumpstart the collaboration, there will be grants available for the Flow ecos
 
 ## Next Step Grants of $5,000 each to eligible Flow projects integrating IPFS/Filecoin solutions
 
-Any project actively integrating with IPFS, Filecoin, or related services like Pinata or NFT.Storage can qualify for the grant, subject to five simple criteria. Review the grant criteria and apply [here](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)! Applications are reviewed on a rolling basis, so early submissions are encouraged.
+Any project actively integrating with IPFS, Filecoin, or related services like Pinata or NFT.Storage can qualify for the grant, subject to five simple criteria. [Review the grant criteria and apply](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)! Applications are reviewed on a rolling basis, so early submissions are encouraged.
 
 Grant-funded projects will also have the opportunity to join future acceleration programs, promote ideas to the broader community of both Filecoin and Flow ecosystem, and connect to technical, product, and other potential resources of support from Filecoin ecosystem.
 
