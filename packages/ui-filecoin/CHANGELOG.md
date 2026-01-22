@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.7.2
+
+### Patch Changes
+
+- 6d26eb6: Fix table header alignment
+
 ## 0.7.1
 
 ### Patch Changes
