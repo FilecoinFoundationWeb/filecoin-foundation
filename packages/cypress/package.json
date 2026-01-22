@@ -24,7 +24,7 @@
   "peerDependencies": {
     "@filecoin-foundation/utils": "0.0.0",
     "@percy/cypress": "^3.1.7",
-    "cypress": "^15.8.1",
+    "cypress": "^15.9.0",
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3"
   }
