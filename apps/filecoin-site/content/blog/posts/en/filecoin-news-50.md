@@ -91,7 +91,7 @@ The Filecoin Green community will also be at DevCon with a LATAM-focused sustain
 
 ### Funding the Commons Bogota
 
-Funding the Commons is back! We will be hosting a pop-up track Oct. 10th at the [Schelling Point event in Bogota](https://schellingpoint.gitcoin.co/), hosted by our friends at Gitcoin. This will be a community-focused event with a series of lighting talks, workshops and collaboration to push forward the funding of public goods in web3 and beyond. If you're interested in presenting a talk at the FTC track, reach out to [commons@protocol.ai](mailto:commons@protocol.ai). See previous Funding the Commons material [here](https://fundingthecommons.io/).
+Funding the Commons is back! We will be hosting a pop-up track Oct. 10th at the [Schelling Point event in Bogota](https://schellingpoint.gitcoin.co/), hosted by our friends at Gitcoin. This will be a community-focused event with a series of lighting talks, workshops and collaboration to push forward the funding of public goods in web3 and beyond. If you're interested in presenting a talk at the FTC track, reach out to [commons@protocol.ai](mailto:commons@protocol.ai). See previous Funding the Commons material [on the Funding the Commons website](https://fundingthecommons.io/).
 
 ## Hackathons
 

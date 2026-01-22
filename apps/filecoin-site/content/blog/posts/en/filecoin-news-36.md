@@ -109,7 +109,7 @@ Join Developer DAO for their first ever hackathon and conference happening from 
 
 ### Funding the Commons Q1 2022
 
-Join Protocol Labs Research for the second edition of Funding the Commons, a virtual 2-day summit for individuals and organizations building new models of sustainable public goods funding and value alignment in open source networks. Tune in on March 3rd for the speaker series featuring Juan Benet and other thought leaders to discuss novel experiments and future directions for funding our collective commons. And don’t miss out on workshops and collaboration happening March 4th. Check out the full agenda and register [here](https://fundingthecommons.io/)!
+Join Protocol Labs Research for the second edition of Funding the Commons, a virtual 2-day summit for individuals and organizations building new models of sustainable public goods funding and value alignment in open source networks. Tune in on March 3rd for the speaker series featuring Juan Benet and other thought leaders to discuss novel experiments and future directions for funding our collective commons. And don’t miss out on workshops and collaboration happening March 4th. Check out the full agenda and register [on the Funding the Commons website](https://fundingthecommons.io/)!
 
 [![](/uploads/dinps22-1.webp)](https://research.protocol.ai/sites/dinps/calls/)
 

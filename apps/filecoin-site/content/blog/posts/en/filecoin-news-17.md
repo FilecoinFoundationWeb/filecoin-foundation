@@ -48,7 +48,7 @@ They received a $20,000 grant at the beginning of the Accelerator, and selected 
 
 This build of MetaMask is a special developer release that contains basic support for Filecoin via a prototype of the upcoming MetaMask Snaps extensibility system. We are making this distribution available so that Filecoin developers can start building Web3 sites that use Filecoin.
 
-Although the Filecoin Snap is pre-installed in this build, the final product will install the Snap plugin through the connect flow when a consumer connects to the site that depends on Filecoin. There may be breaking changes between now and the production release, and we’ll do our best to communicate these regularly. Check out the latest release [**here**](https://github.com/MetaMask/metamask-filecoin-developer-beta/releases).
+Although the Filecoin Snap is pre-installed in this build, the final product will install the Snap plugin through the connect flow when a consumer connects to the site that depends on Filecoin. There may be breaking changes between now and the production release, and we’ll do our best to communicate these regularly. Check out the latest release [**on GitHub**](https://github.com/MetaMask/metamask-filecoin-developer-beta/releases).
 
 ![](/uploads/hackathon-tools-filcoin-ipfs.webp)
 

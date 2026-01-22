@@ -58,7 +58,7 @@ Join Filecoin and Longhash Ventures for the LongHashX Web 3 Accelerator. Earlier
 
 July 8th marked the beginning of [**Browsers 3000**](https://fil.org/events/), a six-week event focused on integrating decentralized technologies into the browser experience for users around the world. So far, we’ve heard from team members of Unstoppable Domains, ENS, IPFS, Microsoft, Puma, Agregore, and more.
 
-You can watch the full Browsers 3000 event so far [**here**](https://www.youtube.com/watch?v=dARxOaRd6Mc). To drill down to the role that ENS is playing in the evolution of the browser, [**check out this learning session**](https://www.youtube.com/watch?v=_QW3RLLJ-oI&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP&index=1) from Makato Inoue, dev at [**Ethereum Name Service**](https://ens.domains/).
+You can watch the full Browsers 3000 event so far [**on YouTube**](https://www.youtube.com/watch?v=dARxOaRd6Mc). To drill down to the role that ENS is playing in the evolution of the browser, [**check out this learning session**](https://www.youtube.com/watch?v=_QW3RLLJ-oI&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP&index=1) from Makato Inoue, dev at [**Ethereum Name Service**](https://ens.domains/).
 
 [![](/uploads/fil-blog-2021-07-01-dorahacks-2.webp)](https://filecoin.io/blog/posts/filecoin-quadratic-funding-grant-round-1-at-dorahacks/)
 
@@ -110,7 +110,7 @@ For the past two years, CryptoComputeLab and CryptoNetLab (two of the Protocol L
 
 Hello again from the Rust implementation team Forest! We are a part of the [**ChainSafe**](https://chainsafe.io/) family and have a new blog post on our Medium detailing our latest updates with the project. With the Sigma Prime audit nearing completion, our Filecoin Forest team has been furiously hacking away at the new EPIC’s for our codebase. We detail all the issues completed, and all the outstanding issues still to be tackled! But our codebase is looking as strong and resilient as ever, and we cannot wait to join Lotus in building an antifragile network on Filecoin!
 
-We’re also chipping away at Storage/Retrieval Markets, State Migration, implementing metrics to measure our node performance, & updating our RPC’s and CLI. You can read all about it [**here**](https://medium.com/chainsafe-systems/forest-growth-d26998a3da61). If you want to get in touch with our Forest developers, don’t forget to drop into our [**Discord**](https://discord.gg/CprJHjrWG6) to ask questions. For more updates, make sure to follow ChainSafe’s [**Twitter**](https://twitter.com/ChainSafeth).
+We’re also chipping away at Storage/Retrieval Markets, State Migration, implementing metrics to measure our node performance, & updating our RPC’s and CLI. You can read all about it [**on Medium**](https://medium.com/chainsafe-systems/forest-growth-d26998a3da61). If you want to get in touch with our Forest developers, don’t forget to drop into our [**Discord**](https://discord.gg/CprJHjrWG6) to ask questions. For more updates, make sure to follow ChainSafe’s [**Twitter**](https://twitter.com/ChainSafeth).
 
 ## Community
 

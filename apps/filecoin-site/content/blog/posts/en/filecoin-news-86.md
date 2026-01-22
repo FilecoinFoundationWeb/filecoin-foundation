@@ -44,7 +44,7 @@ DeStor and Seal Storage technology recently announced their collaboration with C
 
 ### Support NFT.Storage's Growth: Make a Small Donation, Create Big Impact
 
-Support is needed for NFT.Storage in this current Gitcoin round, featuring a $300,000 matching pool. A small donation, even as little as $1, can make a significant difference. Gitcoin emphasizes the potential impact of contributions with their statement: "GG20 is your opportunity to seed the next generation of high impact builders—to Fund What Matters to YOU & get your donation multiplied through the power of Quadratic Funding." Contributions to NFT.Storage can be made [here](https://explorer.gitcoin.co). To keep up with NFT.Storage and their progress, follow them on [Twitter, @NFTdotStorage](https://twitter.com/NFTdotStorage).
+Support is needed for NFT.Storage in this current Gitcoin round, featuring a $300,000 matching pool. A small donation, even as little as $1, can make a significant difference. Gitcoin emphasizes the potential impact of contributions with their statement: "GG20 is your opportunity to seed the next generation of high impact builders—to Fund What Matters to YOU & get your donation multiplied through the power of Quadratic Funding." Contributions to NFT.Storage can be made [on Gitcoin](https://explorer.gitcoin.co). To keep up with NFT.Storage and their progress, follow them on [Twitter, @NFTdotStorage](https://twitter.com/NFTdotStorage).
 
 ### A wrap on the IPC Data Economy Hack
 

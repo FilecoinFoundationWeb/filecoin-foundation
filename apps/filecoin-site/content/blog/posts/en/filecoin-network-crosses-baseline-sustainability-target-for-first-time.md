@@ -26,7 +26,7 @@ title: Filecoin Network Crosses Baseline Sustainability Target for First Time
 _template: blog_detail
 ---
 
-_This article provides an update on the Filecoin x_ [_BlockScience_](https://block.science) _research collaboration, denoting a significant milestone for the Filecoin project. It was first published by Blockscience_ [_here_](https://medium.com/block-science/sustainability-goal-achieved-filecoin-network-crosses-baseline-target-cec13a3ed8f).
+_This article provides an update on the Filecoin x_ [_BlockScience_](https://block.science) _research collaboration, denoting a significant milestone for the Filecoin project. It was first published by Blockscience_ [_on Medium_](https://medium.com/block-science/sustainability-goal-achieved-filecoin-network-crosses-baseline-target-cec13a3ed8f).
 
 The Network Baseline for Filecoin has crossed the Baseline Target for the first time! This is an important milestone that marks a transition on the path of continued sustainability of the network. **This happened at 05:00 UTC on 02 April 2021 — or 00:00 UTC on 21th December 2020 if we measure through the Network Effective Time, which is a key component of why baseline minting is important.**
 

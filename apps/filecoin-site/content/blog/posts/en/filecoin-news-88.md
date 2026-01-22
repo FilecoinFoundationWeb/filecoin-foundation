@@ -84,4 +84,4 @@ The latest FilOz [Protocol Day](https://youtu.be/p999VCjRgHY) meeting on May 23,
 - Ensuring stable pricing and reliable data storage.
 - Review of Nicola’s (FilOz) [comprehensive architecture plan](https://hackmd.io/Ghawlzu1TLmGY-sT2lgJRQ?both) for future system development, which aims to enhance scalability, performance, and integration capabilities.
 
-Key takeaways emphasized efficiency, trust through client-side processing, a flexible yet decentralized architecture, and a strong focus on user needs. The meeting highlighted collaborative problem-solving and a commitment to refining the system to meet future challenges. Check out the full meeting recording [here](https://youtu.be/p999VCjRgHY)! 
+Key takeaways emphasized efficiency, trust through client-side processing, a flexible yet decentralized architecture, and a strong focus on user needs. The meeting highlighted collaborative problem-solving and a commitment to refining the system to meet future challenges. Check out the full meeting recording [on YouTube](https://youtu.be/p999VCjRgHY)! 

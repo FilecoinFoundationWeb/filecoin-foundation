@@ -47,11 +47,11 @@ The launch of the FVM opens up the opportunity for Livepeer to credibly provide 
 
 ### Molly Mackinlay Shares Filecoin's Future Following FVM Launch in Coindesk TV Interview
 
-In a recent interview with Coindesk TV, Molly Mackinlay, Head of Engineering at Protocol Labs, shared insights into the recent FVM network upgrade that went live on March 14th. Mackinlay spoke about the growing excitement around Filecoin as more and more developers are designing dapps on the platform and utilizing the smart contracts enabled by FVM. Watch the full interview [here](https://www.coindesk.com/video/protocol-labs-exec-on-future-of-filecoin/).
+In a recent interview with Coindesk TV, Molly Mackinlay, Head of Engineering at Protocol Labs, shared insights into the recent FVM network upgrade that went live on March 14th. Mackinlay spoke about the growing excitement around Filecoin as more and more developers are designing dapps on the platform and utilizing the smart contracts enabled by FVM. Watch the full interview [on CoinDesk website](https://www.coindesk.com/video/protocol-labs-exec-on-future-of-filecoin/).
 
 ### Colin Evran Discusses Open Data Economy with Nasdaq TradeTalks
 
-Colin Evran, Head of Ecosystem Growth at Protocol Labs, recently sat down with Jill Malandrino from Nasdaq #TradeTalks to discuss the FVM network upgrade's role in enabling the open data economy and how it has the potential to revolutionize how data is captured and valued. Evran highlighted the importance of decentralized technology in enabling more secure and efficient data management solutions. The full interview is available [here](https://www.youtube.com/live/xRDnKXrKmKE?feature=share).
+Colin Evran, Head of Ecosystem Growth at Protocol Labs, recently sat down with Jill Malandrino from Nasdaq #TradeTalks to discuss the FVM network upgrade's role in enabling the open data economy and how it has the potential to revolutionize how data is captured and valued. Evran highlighted the importance of decentralized technology in enabling more secure and efficient data management solutions. The full interview is available [on YouTube](https://www.youtube.com/live/xRDnKXrKmKE?feature=share).
 
 ### Ankr’s new Filecoin RPC Connection is live
 

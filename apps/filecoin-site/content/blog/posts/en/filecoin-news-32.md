@@ -65,7 +65,7 @@ The new Filecoin Ecosystem Accelerators Calendar is updated and live! [Subscribe
 
 ### November Filecoin Community Meetup
 
-The November Filecoin Community Meetup happened on November 16th. Catch up with the community and what’s been going on in the Filecoin ecosystem [here](https://www.youtube.com/watch?v=FghO20DdEgg) and stay tuned for more details on future meetups.
+The November Filecoin Community Meetup happened on November 16th. Catch up with the community and what's been going on in the Filecoin ecosystem [on YouTube](https://www.youtube.com/watch?v=FghO20DdEgg) and stay tuned for more details on future meetups.
 
 ## Events
 

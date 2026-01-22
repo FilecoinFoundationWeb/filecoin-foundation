@@ -84,7 +84,7 @@ There’s still time to join the VideoJam Hackathon happening online until May 3
 
 Another SBS is complete! SBS-Boston featured 30+ expert speakers in blockchain, sustainability, and the growing ReFi movement. Some of the most prominent topics covered included highlighting the real-world applications and utility of blockchain technology on people and planet, how open and decentralized data enables a higher degree of transparency for things like carbon offsets and supply chain traceability, and how we can build the next generation of the internet to be more aligned with the natural world.
 
-Leading up to SBS Boston was a two-stage hackathon with over 400+ participants that aimed to connect the ReFi community with students interested in sustainability and web3, with a goal to seek the best use of Filecoin and CO2.Storage for environmentally focused projects. You can check out the first place winner [OpenTrees](https://devpost.com/software/open-trees), as well as other hackathon winners [here](https://sbsboston.devpost.com/project-gallery)!
+Leading up to SBS Boston was a two-stage hackathon with over 400+ participants that aimed to connect the ReFi community with students interested in sustainability and web3, with a goal to seek the best use of Filecoin and CO2.Storage for environmentally focused projects. You can check out the first place winner [OpenTrees](https://devpost.com/software/open-trees), as well as other hackathon winners [on the Devpost project gallery](https://sbsboston.devpost.com/project-gallery)!
 
 ### Announcing SBS-Earth and [SBS.VC](http://sbs.vc/)
 

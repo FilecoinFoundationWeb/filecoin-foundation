@@ -49,7 +49,7 @@ Protocol Labs recently launched the first production [Network Indexer](https://f
 
 ### Lotus
 
-[Lotus has released v1.15.1](https://github.com/filecoin-project/lotus/releases/tag/v1.15.1) which includes many Snap Deal improvements and bug fixes, **supports FVM 0.5** and allows storage providers to become an index provider to the content addressing network. See the [release notes](https://github.com/filecoin-project/lotus/releases/tag/v1.15.1) for more details! At this stage, we welcome lotus node operators to help find potential bugs in [ref-fvm](https://github.com/filecoin-project/ref-fvm) and [built-in actor](https://github.com/filecoin-project/builtin-actors) by running an FVM node on mainnet, please submit feedback [here](https://github.com/filecoin-project/lotus/discussions/8334). Stay up to date with all things Lotus by following [@lotus_web3](https://twitter.com/lotus_web3) on Twitter.
+[Lotus has released v1.15.1](https://github.com/filecoin-project/lotus/releases/tag/v1.15.1) which includes many Snap Deal improvements and bug fixes, **supports FVM 0.5** and allows storage providers to become an index provider to the content addressing network. See the [release notes](https://github.com/filecoin-project/lotus/releases/tag/v1.15.1) for more details! At this stage, we welcome lotus node operators to help find potential bugs in [ref-fvm](https://github.com/filecoin-project/ref-fvm) and [built-in actor](https://github.com/filecoin-project/builtin-actors) by running an FVM node on mainnet, please submit feedback [on GitHub](https://github.com/filecoin-project/lotus/discussions/8334). Stay up to date with all things Lotus by following [@lotus_web3](https://twitter.com/lotus_web3) on Twitter.
 
 ## Community
 

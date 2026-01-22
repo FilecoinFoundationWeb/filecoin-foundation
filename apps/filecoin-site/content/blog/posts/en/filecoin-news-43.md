@@ -35,7 +35,7 @@ Public goods are a cornerstone of building open networks and the future of the w
 
 Today, Tephra Labs’ first product, Radius, has launched. Their mission is to onboard the next billion workers into web3 as a decentralized network that connects talented individuals and teams to the best projects in web3.
 
-In addition to the Filecoin grants, you can explore other Radius learning resources [here](https://bit.ly/radius-notion-home).
+In addition to the Filecoin grants, you can explore other Radius learning resources [on the Radius Notion page](https://bit.ly/radius-notion-home).
 
 ## Community
 

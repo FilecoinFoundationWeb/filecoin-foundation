@@ -69,7 +69,7 @@ In this episode, Juan takes Charlie back to the beginning and shares the goals o
 
 ### Colin Evran and Scott Melker discuss the future of cloud storage on the Wolf of All Streets Podcast
 
-Colin Evran joins the Wall of All Streets podcast to discuss the benefits of decentralized storage and how it offers lower costs compared to centralized storage networks. He shares insights on Filecoin's remarkable growth and its potential to shape the future of cloud storage. Learn more about the advantages of decentralized storage and how it could revolutionize the storage industry by tuning in [here](https://www.youtube.com/watch?v=KA-bxbOmz3A&t=12s).
+Colin Evran joins the Wall of All Streets podcast to discuss the benefits of decentralized storage and how it offers lower costs compared to centralized storage networks. He shares insights on Filecoin's remarkable growth and its potential to shape the future of cloud storage. Learn more about the advantages of decentralized storage and how it could revolutionize the storage industry by tuning in [on YouTube](https://www.youtube.com/watch?v=KA-bxbOmz3A&t=12s).
 
 ### Energy Validation Process
 
