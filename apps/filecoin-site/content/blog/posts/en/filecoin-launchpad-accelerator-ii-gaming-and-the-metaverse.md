@@ -27,7 +27,7 @@ On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launc
 
 _A metaverse society for high-end 3D art display and appreciation._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GHxr5g3T6n4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="The MoNA Gallery"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GHxr5g3T6n4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="The MoNA Gallery"></iframe>
 
 ### What is The MoNA Gallery
 
@@ -49,7 +49,7 @@ If you're interested in what The MoNA Gallery is doing, learn more [here](https:
 
 _A space for NFT holders and creators to meet and discuss the history of their collections._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lf66NgZfQp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Huddln"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lf66NgZfQp4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Huddln"></iframe>
 
 ### What is Huddln
 
@@ -71,7 +71,7 @@ Enjoying what Huddln is trying to do? You can check out their project in detail 
 
 _The first social platform to allow artists to monetize their community directly, and reward fans with tokens generated from the platform._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ekYIyVKR7ug" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Inflow Music"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ekYIyVKR7ug" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Inflow Music"></iframe>
 
 ### What is Inflow Music
 
@@ -89,7 +89,7 @@ Today, fans who want to support their favorite artists struggle to do so, since 
 
 _Helping gamers earn money instantly on every game, with technology built on blockchain._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Pc3k-ZexLfk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Blockbets Corp"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pc3k-ZexLfk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Blockbets Corp"></iframe>
 
 ### What is Blockbets Corp
 
@@ -107,7 +107,7 @@ Online gaming is home to many great players, but earning potential is limited to
 
 _0xEssential offers users a platform to bring their own NFTs to play, compete, and win._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R-wER0bQPRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="0xEssential"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R-wER0bQPRM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="0xEssential"></iframe>
 
 ### What is 0xEssential
 

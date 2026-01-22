@@ -27,7 +27,7 @@ On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launc
 
 _Nftfy offers fractional ownership for the most valuable NFTs in the world._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PbMJka8jK4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Nftfy"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PbMJka8jK4Q" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Nftfy"></iframe>
 
 ### What is Nftfy?
 
@@ -51,7 +51,7 @@ Those who are interested in Nftfy can learn more about the project [on Nftfy's w
 
 _Paras is a system for supporting and developing crypto-native intellectual properties._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Y6I8xcbxgrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Paras"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y6I8xcbxgrM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Paras"></iframe>
 
 ### What is Paras?
 
@@ -73,7 +73,7 @@ If you're interested in what Paras is doing, you can check out the project in de
 
 _A premium NFT toolkit for creators interested in dynamic-data NFTs._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qt0Mka6Jr9I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Fractio"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qt0Mka6Jr9I" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Fractio"></iframe>
 
 ### What is Fractio?
 
@@ -93,7 +93,7 @@ Dynamic NFTs are very likely going to be the next step in the technology's evolu
 
 Nifty Royale is a prize distribution system that distributes NFTs through a no-loss pool system.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hwvRWETMnn4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Nifty Royale"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hwvRWETMnn4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Nifty Royale"></iframe>
 
 ### What does Nifty Royale Do?
 
@@ -115,7 +115,7 @@ Want to find out about Nifty Royale? Their [project page](https://niftyroyale.co
 
 _A create-to-earn platform centered around digital artists._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D-37F9lnbGg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Chestr"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D-37F9lnbGg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Chestr"></iframe>
 
 ### What is Chestr?
 

@@ -30,7 +30,7 @@ On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launc
 
 _Hedgey Finance is a protocol for adding options markets to any token._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Pmgz5E8u1XU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Hedgey Finance"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pmgz5E8u1XU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Hedgey Finance"></iframe>
 
 **What is Hedgey Finance?**
 
@@ -52,7 +52,7 @@ Discover more about Hedgey Finance and learn about what they do and their offeri
 
 _A DeFi protocol that makes synthetic tokens for widespread distribution on Asian real-world markets._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cd26ZWIWLXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Tamago Finance"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cd26ZWIWLXU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Tamago Finance"></iframe>
 
 **What is Tamago Finance?**
 
@@ -70,7 +70,7 @@ Tamago Finance is a unique take on offering traders worldwide the chance to part
 
 _SmartFunds is a simple, automated, and compliant fund-management tool._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SQjdUT11GWE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="SmartFunds"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SQjdUT11GWE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="SmartFunds"></iframe>
 
 **What is SmartFunds?**
 
@@ -94,7 +94,7 @@ If you're interested in what SmartFunds is doing and want to get some more infor
 
 Gamification of investments using Blockchain, NFTs, and Yield Farming.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9ebOSIK_VPE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Clam Island"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9ebOSIK_VPE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Clam Island"></iframe>
 
 **What is Clam Island?**
 
@@ -112,7 +112,7 @@ Clam Island is a unique approach to gaming that incorporates NFTs and tries to m
 
 Boto is an online no-code platform that allows users to build bots to automate online tasks.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CXGbK-HGqdM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Boto"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CXGbK-HGqdM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Boto"></iframe>
 
 **What is Boto?**
 

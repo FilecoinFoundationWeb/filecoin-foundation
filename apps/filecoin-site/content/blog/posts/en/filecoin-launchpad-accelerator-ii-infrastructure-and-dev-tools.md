@@ -28,7 +28,7 @@ On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launc
 
 _CID Gravity is helping create a layer of trust between Filecoin stakeholders, de-risking their data and incentivizing storage providers._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s6A6v7qeK-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="CID Gravity"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s6A6v7qeK-c" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="CID Gravity"></iframe>
 
 ### What is CID Gravity?
 
@@ -52,7 +52,7 @@ Interested in everything CID Gravity is trying to accomplish? Check them out her
 
 _SkillWallet provides Role-Based NFT IDs that help build communities in Web3._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5YlwqeWK250" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="SkillWallet"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5YlwqeWK250" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="SkillWallet"></iframe>
 
 ### What is SkillWallet?
 
@@ -69,7 +69,7 @@ DAOs were designed to be autonomous, but the crux of the matter is that they nee
 
 _A Community-Operated weather network that gives station owners rewards and offers accurate weather forecasting to Web3 services._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o3GtPUScQDk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="WeatherXM"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o3GtPUScQDk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="WeatherXM"></iframe>
 
 ### What is WeatherXM?
 
@@ -90,7 +90,7 @@ Interested in learning more about WeatherXM? Find out all the details here: [htt
 
 _Decentralized Automation - helping decentralized exchanges grow volume._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NzciH4JGd9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Autonomy Network"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NzciH4JGd9U" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Autonomy Network"></iframe>
 
 ### What is Autonomy Network?
 
@@ -107,7 +107,7 @@ Crypto traders, decentralized exchanges, and dApp developers have struggled with
 
 _The Convo Space is a framework for adding a decentralized social layer to any Web3 community._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d9BsoTfIDOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Convo Space"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d9BsoTfIDOM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Convo Space"></iframe>
 
 ### What is The Convo Space?
 
