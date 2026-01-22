@@ -20,7 +20,7 @@ related_article_2: ""
 related_article_3: ""
 share_image: >-
   /uploads/fil-blog-2022-01-27-trusted-setup-complete-for-network-v15-upgrade.webp
-title: "Trusted Setup Complete for Network v15 Upgrade "
+title: Trusted Setup Complete for Network v15 Upgrade
 _template: blog_detail
 ---
 
@@ -48,7 +48,7 @@ For **EmptySectorUpdate - Poseidon**:
 
 ![](/uploads/untitled-5.webp)
 
-**Attestations page that holds more information about the entire process and all the participants is linked [here](https://github.com/filecoin-project/phase2-attestations/tree/trusted-setup-2/ts2).**
+**Attestations page that holds more information about the entire process and all the participants is linked [on GitHub](https://github.com/filecoin-project/phase2-attestations/tree/trusted-setup-2/ts2).**
 
 ## Community and participants feedback: 🎉
 
