@@ -24,7 +24,7 @@ title: Join us for Filecoin Liftoff on October 19-23 2020
 _template: blog_detail
 ---
 
-The Filecoin Network is now LIVE! This marks the culmination of years of innovation and hard work, and we thank everyone who dedicated their time, ideas, and expertise to make Filecoin a reality. To read more about this milestone, check our blog post on the launch [here](https://filecoin.io/blog/mainnet-liftoff/).
+The Filecoin Network is now LIVE! This marks the culmination of years of innovation and hard work, and we thank everyone who dedicated their time, ideas, and expertise to make Filecoin a reality. To read more about this milestone, check our blog post on the launch [on our blog](/blog/mainnet-liftoff/).
 
 ## Join us for Filecoin Liftoff
 
@@ -54,4 +54,4 @@ This is only the beginning for the Filecoin network. On Friday, you’ll have a 
 
 ## Come join us
 
-You can find the agenda [here](https://liftoff.filecoin.io/). If you’d like to add your own event or celebration to the schedule then you can [submit it here](https://filecoin-community.typeform.com/to/EYLmGgOr). There will also be opportunities to connect and collaborate with the community. Stay tuned! [Register now](https://liftoff.filecoin.io/) and we’ll see you there.
+You can find the agenda [on the Filecoin Liftoff website](https://liftoff.filecoin.io/). If you'd like to add your own event or celebration to the schedule then you can [submit it using the form](https://filecoin-community.typeform.com/to/EYLmGgOr). There will also be opportunities to connect and collaborate with the community. Stay tuned! [Register now](https://liftoff.filecoin.io/) and we’ll see you there.

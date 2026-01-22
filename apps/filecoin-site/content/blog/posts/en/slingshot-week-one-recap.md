@@ -31,7 +31,7 @@ Slingshot is part of Filecoin’s [Ignite series](https://hub.fil.org/events/) o
 1. Build an end-user facing application that stores application and user data to Filecoin.
 2. Store data from a [curated list of data collections](https://github.com/filecoin-project/slingshot/blob/master/datasets.md) and create an accompanying UI to utilize and access this data.
 
-To date, we’ve had more than 100 teams sign up for the competition, making more than 26,000 storage deals so far. Slingshot is accepting applications through the end of the competition! You can register to participate [here](https://slingshot.filecoin.io/).
+To date, we’ve had more than 100 teams sign up for the competition, making more than 26,000 storage deals so far. Slingshot is accepting applications through the end of the competition! You can register to participate [on the Slingshot website](https://slingshot.filecoin.io/).
 
 Here’s where the competition stands as of 20:00 UTC Friday, September 25, two days into the competition:
 
@@ -47,15 +47,15 @@ On September 25, we held our first Slingshot Master Class, [Filecoin 101](https:
 
 We have more amazing events coming up, including more master classes, open office hours, workshops, and a series called “How We Built This” that showcases development teams and how they built their projects and/or companies.
 
-Here’s our event lineup for the upcoming week!  
-\* Intro to Powergate with Andrew Hill, CEO of Textile: Monday, September 28 at 3:30pm UTC / 8:30am PT  
-\* Filecoin 201 with ribasushi, Engineer at Protocol Labs: Tuesday, September 29 at 4pm UTC / 9am PT  
-\* Intro to Buckets with Andrew Hill, CEO of Textile: Wednesday, September 30 at 4pm UTC / 9am PT  
-\* Lotus Office Hours with the Filecoin lotus team: Wednesday, September 30 at 5pm UTC / 10am PT  
+Here’s our event lineup for the upcoming week!
+\* Intro to Powergate with Andrew Hill, CEO of Textile: Monday, September 28 at 3:30pm UTC / 8:30am PT
+\* Filecoin 201 with ribasushi, Engineer at Protocol Labs: Tuesday, September 29 at 4pm UTC / 9am PT
+\* Intro to Buckets with Andrew Hill, CEO of Textile: Wednesday, September 30 at 4pm UTC / 9am PT
+\* Lotus Office Hours with the Filecoin lotus team: Wednesday, September 30 at 5pm UTC / 10am PT
 \* How We Built Slate with Jimmy Lee, co-founder of Slate: Thursday, October 1 at 4pm UTC / 9am PT
 
 **Join us!**
 
-If you’re ready to register for Slingshot, you can do so [here](https://slingshot.filecoin.io/)! Check out the Slingshot [website](https://slingshot.filecoin.io/) to track all the action in the Slingshot competition. Make sure you [join the Filecoin Slack](https://filecoin.io/slack) to connect with the amazing community of developers building on the Filecoin Network.
+If you're ready to register for Slingshot, you can do so [on the Slingshot website](https://slingshot.filecoin.io/)! Check out the Slingshot [website](https://slingshot.filecoin.io/) to track all the action in the Slingshot competition. Make sure you [join the Filecoin Slack](https://filecoin.io/slack) to connect with the amazing community of developers building on the Filecoin Network.
 
 Thank you to all the individuals who are participating in the competition! We’re excited to see the innovative projects that are part of this competition as we work toward the common goal of onboarding real, valuable data to the Filecoin network.

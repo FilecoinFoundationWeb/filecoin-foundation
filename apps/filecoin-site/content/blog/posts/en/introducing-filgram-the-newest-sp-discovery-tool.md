@@ -20,7 +20,7 @@ title: "Introducing Filgram, the Newest SP Discovery Tool"
 _template: blog_detail
 ---
 
-Filgram has officially launched! This new tool will enable you to optimize marketing for your Storage Provider enterprise. Sign up [here](http://filgram.filmine.io/) to claim your miner ID(s) and share more information about your SP operation.
+Filgram has officially launched! This new tool will enable you to optimize marketing for your Storage Provider enterprise. Sign up [on Filgram](http://filgram.filmine.io/) to claim your miner ID(s) and share more information about your SP operation.
 
 ## Why Filgram was developed
 

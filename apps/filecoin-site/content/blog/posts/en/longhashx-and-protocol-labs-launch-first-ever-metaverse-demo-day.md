@@ -77,4 +77,4 @@ The conditions to win the fractionalized NFT and enter the raffle are to follow 
 
 [LongHashX Demo Day](https://longhash.vc/accelerator/) will be livestreamed on Cryptovoxels and on YouTube at 10 pm PST on January 17th or at 2pm SGT/HKT January 18th.
 
-Sign up for Demo Day [here](https://forms.gle/xY7ycNL7W8m3Rh4R8).
+Sign up for Demo Day [using the Google form](https://forms.gle/xY7ycNL7W8m3Rh4R8).

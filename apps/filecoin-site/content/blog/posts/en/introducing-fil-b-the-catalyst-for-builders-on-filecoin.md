@@ -12,7 +12,7 @@ categories:
 dim_image: true
 ---
 
-_Original source [here](https://medium.com/@filbuilders/introducing-fil-b-the-catalyst-for-builders-on-filecoin-a07bd32329e4)._
+_Original source [on Medium](https://medium.com/@filbuilders/introducing-fil-b-the-catalyst-for-builders-on-filecoin-a07bd32329e4)._
 
 We are [FIL-B (FIL Builders)](https://fil.builders/), an independent public goods developer experience (DX) team for the [Filecoin](http://filecoin.io/) ecosystem.
 

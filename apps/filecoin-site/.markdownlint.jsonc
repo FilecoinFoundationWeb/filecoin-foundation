@@ -1,4 +1,0 @@
-{
-  "extends": "../../.markdownlint.jsonc",
-  "MD059": false, // Disable enforcing descriptive link text for filecoin-site
-}

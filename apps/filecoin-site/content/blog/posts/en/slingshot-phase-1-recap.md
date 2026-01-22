@@ -39,7 +39,7 @@ Phase 1 of the Slingshot competition ran for four weeks, and culminated with the
 
 To kick off the Closing Ceremony, Filecoin Product Lead Pooja Shah recapped what happened in the 4 weeks of the Phase 1 competition. The Filecoin network itself underwent massive changes, including a successful [mainnet launch](https://filecoin.io/blog/journey-to-liftoff/), five community-led [Filecoin Improvement Proposals](https://github.com/filecoin-project/FIPs), and the network continuing to scale to more than 675PiB of storage capacity.
 
-To celebrate the network’s launch and achievements, the community put together [Filecoin Liftoff Week](https://liftoff.filecoin.io/), an event gathering over 80 panelists to talk about Filecoin and related topics, from the technical details and development process to current and future applications and everything in between. You can stream all of the sessions [here](https://liftoff.filecoin.io/#mainTrack)!
+To celebrate the network’s launch and achievements, the community put together [Filecoin Liftoff Week](https://liftoff.filecoin.io/), an event gathering over 80 panelists to talk about Filecoin and related topics, from the technical details and development process to current and future applications and everything in between. You can stream all of the sessions [on the Filecoin Liftoff website](https://liftoff.filecoin.io/#mainTrack)!
 
 _![Achievements of Phase 1](https://filecoin.io/vintage/images/blog/slingshot-p1-achieve.jpg "Achievements of Phase 1")_
 
@@ -63,7 +63,7 @@ During the Slingshot Closing Ceremony, nine teams that participated in Phase 1 p
 - UIs that shared interesting and novel data, from university-collected meteorological data to public virtual reality video ([Starry Sky in Yunnan](https://ah22192341-1.icoc.vc/).
 - A platform that stores artificial intelligence training data and integrates it with a broader decentralized model training platform ([Orion-DeepLearningCloud](https://nbai.io/))
 
-These teams accomplished a tremendous amount in a short amount of time. Check out all the presentations [here](https://youtu.be/qheNJZ1DClM?t=556)!
+These teams accomplished a tremendous amount in a short amount of time. Check out all the presentations [on YouTube](https://youtu.be/qheNJZ1DClM?t=556)!
 
 _![ipfsNewBund presenting their UI](https://filecoin.io/vintage/images/blog/slingshot-p1-ipfsnewbund.jpg)_
 
@@ -135,6 +135,6 @@ _![Looking forward to Phase 2](https://filecoin.io/vintage/images/blog/slingshot
 
 _Looking forward to Phase 2_
 
-Congratulations to all of the teams who participated in Phase 1. If you are interested in Phase 2, stay tuned for details to be announced by November 9 [here](https://slingshot.filecoin.io/) (and join the #slingshot and #slingshot-announcements channel on [Filecoin Slack](https://filecoin.io/slack) if you haven’t already).
+Congratulations to all of the teams who participated in Phase 1. If you are interested in Phase 2, stay tuned for details to be announced by November 9 [on the Slingshot website](https://slingshot.filecoin.io/) (and join the #slingshot and #slingshot-announcements channel on [Filecoin Slack](https://filecoin.io/slack) if you haven't already).
 
 We are in awe of what the community was able to accomplish thus far, and are excited to see what’s to come! Onward! 🚀

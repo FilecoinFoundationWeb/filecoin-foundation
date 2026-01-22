@@ -62,7 +62,7 @@ Beryx, Filfox and Starboard provide contract verification as a feature, allowing
 
 ### Beryx Explorer
 
-[Beryx Explorer](https://beryx.zondax.ch/) by the Zondax team is a comprehensive tool to easily extract data about the Filecoin network in a ‘ready to add to your code’ format from the Filecoin network and interact with custom smart contracts. Check out the [Beryx Client tool for JS](https://www.npmjs.com/package/@zondax/beryx) to use in your project. Verify your smart contract via Beryx [here](https://beryx.zondax.ch/contract_verifier).
+[Beryx Explorer](https://beryx.zondax.ch/) by the Zondax team is a comprehensive tool to easily extract data about the Filecoin network in a ‘ready to add to your code’ format from the Filecoin network and interact with custom smart contracts. Check out the [Beryx Client tool for JS](https://www.npmjs.com/package/@zondax/beryx) to use in your project. Verify your smart contract via Beryx [on the Beryx website](https://beryx.zondax.ch/contract_verifier).
 
 ### Filfox
 
@@ -94,7 +94,7 @@ Cross chain solutions make it possible to build a variety of cross chain project
 
 ### Oracle support with Tellor
 
-[Tellor](https://tellor.io/) is a generic oracle that works for any data at any frequency. If you’re building DeFi apps, you can get the price feeds info from the Tellor oracle, and for any other type of apps, real world data is available too. Check out the contract references [here](https://docs.tellor.io/tellor/the-basics/contracts-reference#filecoin-fvm).
+[Tellor](https://tellor.io/) is a generic oracle that works for any data at any frequency. If you’re building DeFi apps, you can get the price feeds info from the Tellor oracle, and for any other type of apps, real world data is available too. Check out the contract references [in the Tellor documentation](https://docs.tellor.io/tellor/the-basics/contracts-reference#filecoin-fvm).
 
 ### wFIL
 

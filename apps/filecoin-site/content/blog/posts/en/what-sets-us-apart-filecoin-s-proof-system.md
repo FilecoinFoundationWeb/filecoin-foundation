@@ -83,4 +83,4 @@ I think no other network is using Proof of Replication, it’s an advantage we h
 
 Then there’s the tight integration through libp2p into IPFS and a bunch of other things where there’s a ton of usage on IPFS already. It’s going to be easy to backup all of that data straight into Filecoin. One cool thing to mention is that IPFS is an open network and we’ve seen other networks start to add support for it which is also really cool to see. It’s meant to be a decoupled layer for that reason.”
 
-_Juan Benet’s full interview on the Zero Knowledge podcast can be found_ [**_here_**](https://www.zeroknowledge.fm/106)_._
+_Juan Benet's full interview on the Zero Knowledge podcast can be found_ [**_on the Zero Knowledge podcast_**](https://www.zeroknowledge.fm/106)_._

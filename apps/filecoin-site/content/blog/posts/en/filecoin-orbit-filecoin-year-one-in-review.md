@@ -246,7 +246,7 @@ In February 2021, Filecoin Launchpad hosted their demo day with 13 teams from 11
 
 The [presentations from the first cohort](https://www.youtube.com/playlist?list=PL_0VrY55uV19AJ9uqZODM16cL8oj3uAO-) as well as the 20 teams from 13 countries who participated in the second cohort can be watched online. Applications for Tachyon 6 winter cohort are now being accepted.
 
-[Filecoin partnered with LongHash Ventures](https://filecoin.io/blog/posts/filecoin-frontier-accelerator-launched-by-longhash-ventures/) to launch the [Filecoin Frontier Accelerator](https://longhash.vc/accelerator/). You can learn more about the program [here](https://longhash.vc/accelerator/) and watch [11 amazing team presentations from](https://www.youtube.com/watch?v=-lwttk-HsoQ) the first demo day in April.
+[Filecoin partnered with LongHash Ventures](https://filecoin.io/blog/posts/filecoin-frontier-accelerator-launched-by-longhash-ventures/) to launch the [Filecoin Frontier Accelerator](https://longhash.vc/accelerator/). You can learn more about the program [on the LongHash Ventures website](https://longhash.vc/accelerator/) and watch [11 amazing team presentations from](https://www.youtube.com/watch?v=-lwttk-HsoQ) the first demo day in April.
 
 Filecoin is also [collaborating with Outlier Ventures](https://outlierventures.io/outlier-ventures-launches-filecoin-base-camp/) to launch the [Filecoin Base Camp accelerator](https://outlierventures.io/base-camp/filecoin-base-camp/) to catalyze the growth of new ecosystem projects that are building the next generation of applications that will drive adoption of web3.
 

@@ -34,9 +34,9 @@ In this post, we’re recapping some of these talks and panels to help you get a
 
 You can run Powergate on your own machine or use one of Textile’s managed instances, and it allows you to store a single piece of data to either or both the IPFS and Filecoin networks with just a few commands! It also triages data retrieval requests across the two networks, where IPFS is generally better for more frequent, “hot” storage and Filecoin for less frequent, “cold” storage.
 
-More generally, Powergate is one of the simplest ways to store on Filecoin, handling many of the details around making Filecoin deals. It has Javascript and Golang clients, as well as a community-developed Python client. To get started, check out the docs [here](https://docs.textile.io/powergate/).
+More generally, Powergate is one of the simplest ways to store on Filecoin, handling many of the details around making Filecoin deals. It has Javascript and Golang clients, as well as a community-developed Python client. To get started, check out the docs [on the Textile documentation site](https://docs.textile.io/powergate/).
 
-Textile also makes [Buckets](https://docs.textile.io/buckets/), an S3-like cloud storage solution with Filecoin features. You can watch Textile’s Intro to Buckets Master Class [here](https://www.youtube.com/watch?v=Id4SRT9_2CM&list=PL_0VrY55uV19nu6orLLCaGCGocsjvpiGZ&index=5).
+Textile also makes [Buckets](https://docs.textile.io/buckets/), an S3-like cloud storage solution with Filecoin features. You can watch Textile's Intro to Buckets Master Class [on YouTube](https://www.youtube.com/watch?v=Id4SRT9_2CM&list=PL_0VrY55uV19nu6orLLCaGCGocsjvpiGZ&index=5).
 
 ### The Benefits of Using Powergate
 
@@ -118,7 +118,5 @@ The Web3 ecosystem has come a long way, with many promising projects in the spac
 **Colin Evran:** “We shouldn’t discount how powerful the early adopter ethos is in the Web3 space. The kind of innovation catalyzed by these early adopters working in the same space is incredible.”
 
 **Shi Khai:** “As developers, we need to focus on building true users and communities who will stay with us. Look for communities of true users who will give you true feedback, versus just people who think it’s cool right now because it’s new.”
-
-## 
 
 Thank you to all the speakers and participants for these Slingshot events! As we head into the final week of Phase 1 of the competition, we’re excited to see how teams are using what they’ve learned from these events. And we look forward to seeing more generations of developers storing and building on Filecoin.

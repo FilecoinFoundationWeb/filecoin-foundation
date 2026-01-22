@@ -28,7 +28,7 @@ _template: blog_detail
 
 ![Getting Started with Filecoin Repos and Devnets](https://filecoin.io/vintage/images/blog/getting-started-with-repos-devnets.jpg)
 
-As we announced [here](https://filecoin.io/blog/opening-filecoin-project-repos/), we recently opened up the Filecoin project repos on [GitHub](https://github.com/filecoin-project). You can visit the GitHub repos to explore the codebase, development tools, community resources, and more. If you’re ready to jump straight in, here are some of the ways you can learn more.
+As we announced [in our blog post](/blog/opening-filecoin-project-repos/), we recently opened up the Filecoin project repos on [GitHub](https://github.com/filecoin-project). You can visit the GitHub repos to explore the codebase, development tools, community resources, and more. If you’re ready to jump straight in, here are some of the ways you can learn more.
 
 1. [Set up a Filecoin node and connect to a devnet](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#1-set-up-a-filecoin-node-and-connect-to-a-devnet)
 2. [Visualize the network](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#2-visualize-the-network)
@@ -46,7 +46,7 @@ As of today, anyone can set up a Filecoin node and connect to a devnet. This is 
 
 Note that the Filecoin project and network are not yet live. The entire project is still a work-in-progress, so we cannot make any performance, stability, or security guarantees.
 
-There is currently one reference implementation for the Filecoin protocol: [go-filecoin](https://github.com/filecoin-project/go-filecoin). There has been tremendous progress made on the go-filecoin implementation. You can get a full development update for go-filecoin [here](https://filecoin.io/blog/update-2018-q3-q4/).
+There is currently one reference implementation for the Filecoin protocol: [go-filecoin](https://github.com/filecoin-project/go-filecoin). There has been tremendous progress made on the go-filecoin implementation. You can get a full development update for go-filecoin [in our blog post](/blog/update-2018-q3-q4/).
 
 You can connect to one of two devnets:
 
@@ -91,7 +91,7 @@ Come join the discussion! You can participate in our research and development co
 
 - **Chat channels:** We use channels bridged across several platforms. As a distributed community, these channels are where the vast majority of our communications take place. Please read our [code of conduct](https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md) before posting on chat.
   - _Matrix:_ [Filecoin community](https://riot.im/app/#/group/+filecoin:matrix.org) (which contains links to all bridged channels)
-  - _Slack:_ Create an account [here](https://join.slack.com/t/filecoinproject/shared_invite/enQtNTUwNTI1Mzk5MDYwLTI2MmMxNzNjYjhlYWM3YjQxM2E4MThmM2ZhY2JkYWIxNGVjMGVmNTg3Y2VhZjQ3OGM5ZTc1OGFmZGZhMzZmMTI)
+  - _Slack:_ Create an account [on Slack](https://join.slack.com/t/filecoinproject/shared_invite/enQtNTUwNTI1Mzk5MDYwLTI2MmMxNzNjYjhlYWM3YjQxM2E4MThmM2ZhY2JkYWIxNGVjMGVmNTg3Y2VhZjQ3OGM5ZTc1OGFmZGZhMzZmMTI)
   - _IRC:_ [Coming soon](https://github.com/filecoin-project/community/issues/4)
 - [**Discussion forum**](https://discuss.filecoin.io/): We use the forums for more long-lived questions. When in doubt, you can always post here.
 

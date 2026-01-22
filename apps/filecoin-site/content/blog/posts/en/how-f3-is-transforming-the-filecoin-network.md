@@ -36,4 +36,4 @@ F3 marks a significant improvement in reducing finality latency and enhancing th
 
 Thanks to Fil Oz, ConsensusLab, CryptoNet, and all of the teams supporting the development of F3 and fostering the innovation for tools and infrastructure to help make the Filecoin network the foremost decentralized solution for the data economy!\
 \
-_Original source [here](https://www.fil.org/blog/how-f3-is-transforming-the-filecoin-network)._
+_Original source [on the Filecoin Foundation blog](https://www.fil.org/blog/how-f3-is-transforming-the-filecoin-network)._

@@ -24,7 +24,7 @@ Today, we are excited to announce the launch of the **Filecoin [ProPGF](https://
 
 ProPGF is a proactive funding mechanism that identifies and supports both new and existing opportunities for public goods innovation. Working in tandem with RetroPGF, these prospective and retroactive programs will form a comprehensive community-run funding vehicle for public goods in the Filecoin ecosystem. The goal is to foster sustainable projects that align with community needs and priorities, enhancing the ecosystem's technology infrastructure and user base.
 
-Below is the high-level roadmap for the development of ProPGF. Please remember that we are still in the development phase of this prototype so very much open to feedback. More Specifics on the rollout can be found [here](https://docs.google.com/presentation/d/1kFIvj7Zt80OI9_g9O7Oy01Qnf8q_wRyUKEbHKYtfmVo/edit#slide=id.g33221d25282_0_3167).
+Below is the high-level roadmap for the development of ProPGF. Please remember that we are still in the development phase of this prototype so very much open to feedback. More Specifics on the rollout can be found [in the Google presentation](https://docs.google.com/presentation/d/1kFIvj7Zt80OI9_g9O7Oy01Qnf8q_wRyUKEbHKYtfmVo/edit#slide=id.g33221d25282_0_3167).
 
 **Phase 1: Prototype** → develop the structure and onchain tech stack for the program with Filecoin community feedback
 

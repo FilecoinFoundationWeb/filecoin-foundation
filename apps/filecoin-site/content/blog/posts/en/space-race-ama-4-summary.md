@@ -41,7 +41,7 @@ For Orbital Burn, the primary mechanism for miner rewards will be (1) storage po
 
 **Will the Filecoin team address the concerns that have been raised about big miners in SR1 having faked their location to reap the majority of rewards?**
 
-We’ve addressed this a few times before (see a description of the Space Race location verification procedures [here](https://filecoinproject.slack.com/archives/C0179RNEMU4/p1599227081117000)). We won’t publicly comment on individual miners, but everyone gets the exact same treatment. Remember that the Filecoin team has requested and received substantial documentation and conducted out of band verification to verify many miners.
+We’ve addressed this a few times before (see a description of the Space Race location verification procedures [on Slack](https://filecoinproject.slack.com/archives/C0179RNEMU4/p1599227081117000)). We won’t publicly comment on individual miners, but everyone gets the exact same treatment. Remember that the Filecoin team has requested and received substantial documentation and conducted out of band verification to verify many miners.
 
 **What are the specific rules of SR2 - Orbital Burn?What proportion of the reward will be transferred to the mainnet**
 

@@ -36,8 +36,8 @@ An Index provider is essentially a content provider that does two additional thi
 
 ## Process Overview
 
-The following illustrates an overview of steps a typical index provider takes:  
-![](/uploads/process-overview.webp)  
+The following illustrates an overview of steps a typical index provider takes:
+![](/uploads/process-overview.webp)
 **Content**: Some new addressable content is stored on the provider. The provider extracts the multihashes from the content CIDs, a.k.a. _Entries_.
 
 1. **Generate Advertisements**: The provider assembles the entries along with metadata on how to retrieve the content in a data structure called an _Advertisement_.
@@ -84,8 +84,8 @@ Here is a quick overview of what each of those fields represent:
 
 ## Advertisement Chain
 
-The advertisements are chained together, where each advertisement is effectively a diff of content hosted by the providers. The collection of all advertisements together represents a full list of all multihashes on the host. The following figure illustrates how advertisements are chained together:  
-![](/uploads/indexprovider.webp)  
+The advertisements are chained together, where each advertisement is effectively a diff of content hosted by the providers. The collection of all advertisements together represents a full list of all multihashes on the host. The following figure illustrates how advertisements are chained together:
+![](/uploads/indexprovider.webp)
 Entries
 
 Entries capture a list of mutlihashes that are hosted by a content provider. It can be structured as:
@@ -206,7 +206,7 @@ IPNI also supports _Extended Provider Families_. This feature allows a provider 
 
 The [index-provider](https://github.com/ipni/index-provider) library offers a CLI tool that can be used to verify that the advertised content is correct from both the content provider and indexer side. It can check that a content provider is exposing the chain correctly such that it is accessible by the network indexers. On the indexer side, it can then check that the advertised content is indeed ingested by the indexers and is discoverable via the query APIs associated to the correct provider.
 
-See installation guide [here](https://github.com/ipni/index-provider#install), and run `provider verify-ingest --help` for more information.
+See installation guide [on GitHub](https://github.com/ipni/index-provider#install), and run `provider verify-ingest --help` for more information.
 
 ## Resources
 

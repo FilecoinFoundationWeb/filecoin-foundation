@@ -51,6 +51,6 @@ Anyone can [nominate a project](https://github.com/filecoin-project/community/di
 - [Products & End User UX](https://github.com/filecoin-project/community/discussions/695)
 - [Other (for important contributions that evade any above category)](https://github.com/filecoin-project/community/discussions/696)
 
-The iteration begins today. Have a project you’d like to nominate? You can do so on Github [here](https://github.com/filecoin-project/community/discussions/689).
+The iteration begins today. Have a project you’d like to nominate? You can do so [on GitHub](https://github.com/filecoin-project/community/discussions/689).
 
 In the first round FIL-RetroPGF-1 aims to distribute 200,000 FIL, with plans to grow the program substantially in the future. For more on FIL-RetroPGF-1 check out this talk at [FIL Dev Summit](https://www.youtube.com/watch?v=wT9YeFemzPA&list=PL_0VrY55uV1_88_dDYcGmhCcK6Y3eRhRJ&index=11), and more documentation on processes incoming soon. Extending a huge thank you to all nominators, applicants, badgeholders, and funders for stewarding this important initiative to encourage and reward building public goods that push the Filecoin network forward.

@@ -139,7 +139,7 @@ _We are very committed both as engineers and as researchers to improve SNARKs (i
 
 _Very good question! The current construction requires miners to check a small fraction of their storage to look for “tickets” and generate a winning proof. This means that the storage device should be fast enough to perform random reads on time for the block time. We are prioritizing hard-disks at the moment, since we expect most miners to use those storage devices. We hope future versions of the Filecoin consensus can relax this requirement. We are not testing tape at this time._
 
-_Regarding VDFs, we are part of the VDF Alliance alongside the Ethereum Foundation and other organizations. We are funding and supporting research for VDFs; you can read more about our collaboration_ [_here_](https://filecoin.io/blog/collaboration-on-vdfs/)_. Our constructions currently do not use VDFs, but may do so in the future._
+_Regarding VDFs, we are part of the VDF Alliance alongside the Ethereum Foundation and other organizations. We are funding and supporting research for VDFs; you can read more about our collaboration_ [_in our blog post_](https://filecoin.io/blog/collaboration-on-vdfs/)_. Our constructions currently do not use VDFs, but may do so in the future._
 
 **How will Filecoin keep from being 51% attacked?**
 

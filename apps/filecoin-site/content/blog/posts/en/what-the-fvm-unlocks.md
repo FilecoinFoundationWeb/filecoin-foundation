@@ -67,7 +67,7 @@ There are many more use cases to unlock with FVM. The only limit is developer im
 - Futures and derivatives on storage that compose in DeFi fashion
 - Conditional loans for sector pledging
 
-If you have a great use case idea/suggestion, join the discussion on the FVM forum [here](https://github.com/filecoin-project/community/discussions/categories/developers)!
+If you have a great use case idea/suggestion, join the discussion [on the FVM forum](https://github.com/filecoin-project/community/discussions/categories/developers)!
 
 ## How Will This Be Possible
 

@@ -40,7 +40,7 @@ The Builders Leaderboard, when coupled with the Impact Evaluators, creates a mar
 
 ## Impact Evaluators for FVM
 
-Impact Evaluators are a class of funding mechanisms that are growing in priority for Protocol Labs, and they can be understood as systems or mechanisms for retrospectively measuring, evaluating, and rewarding valuable work towards specific objectives (learn more [here](https://www.youtube.com/watch?v=1soPQ31ZHkQ&t=510s)). This provides a system to reward and acknowledge the high uncertainty, high upside projects that may or may not be captured by other mechanisms (e.g. prospective grants).
+Impact Evaluators are a class of funding mechanisms that are growing in priority for Protocol Labs, and they can be understood as systems or mechanisms for retrospectively measuring, evaluating, and rewarding valuable work towards specific objectives (learn more [on YouTube](https://www.youtube.com/watch?v=1soPQ31ZHkQ&t=510s)). This provides a system to reward and acknowledge the high uncertainty, high upside projects that may or may not be captured by other mechanisms (e.g. prospective grants).
 
 ![](/uploads/cryptoeconday-juan.webp)
 

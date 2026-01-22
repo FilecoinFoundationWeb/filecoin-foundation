@@ -113,7 +113,7 @@ The AS makes the decision about to which indexers to handoff a publisher using t
 
 ## Setting up Indexer Pool with Assigner Service
 
-The steps to deploying an indexer pool with an assigner service are described [here](https://github.com/ipni/storetheindex/blob/main/doc/assigner-deployment.md#setting-up-indexer-pool-with-assigner-service). To summarize these steps:
+The steps to deploying an indexer pool with an assigner service are described [on GitHub](https://github.com/ipni/storetheindex/blob/main/doc/assigner-deployment.md#setting-up-indexer-pool-with-assigner-service). To summarize these steps:
 
 - [Deploy Indexers](https://github.com/ipni/storetheindex/blob/main/doc/assigner-deployment.md#deploy-indexers)
 - [Deploy Assigner Service](https://github.com/ipni/storetheindex/blob/main/doc/assigner-deployment.md#deploy-assigner-service)

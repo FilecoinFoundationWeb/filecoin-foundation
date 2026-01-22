@@ -22,7 +22,7 @@ title: "More than just Storage: Business Opportunities on Filecoin"
 _template: blog_detail
 ---
 
-_The following is a summary of a talk given by ZX Zhang at the Web3 Summit in May 2021 - see the full talk [here](https://www.youtube.com/watch?v=Yx1rtKcayuY#t=1h00m52s)._
+_The following is a summary of a talk given by ZX Zhang at the Web3 Summit in May 2021 - see the full talk [on YouTube](https://www.youtube.com/watch?v=Yx1rtKcayuY#t=1h00m52s)._
 
 ## The Airbnb of Cloud Services
 
