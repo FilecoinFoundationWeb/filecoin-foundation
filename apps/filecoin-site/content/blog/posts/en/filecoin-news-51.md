@@ -69,7 +69,7 @@ If you’re participating in a hackathon soon, be sure to check out Dawn Kelly�
 
 ### Bad Crypto Podcast & The Nifty Show: Decentralized NFT File Storage With Filecoin’s Jonathan Victor
 
-Jonathan Victor, Head of NFTs at Filecoin, joined the [Bad Crypto Podcast & The Nifty Show](https://www.youtube.com/c/BadCryptoPodcast) to talk about observing the trends of NFTs by seeing the back end of storage. The episode jumps into Jonathan’s experience with NFTs and how storage works on IPFS and Filecoin. Watch the full episode [here](https://www.youtube.com/watch?v=e2kWxKB8ZWQ)!
+Jonathan Victor, Head of NFTs at Filecoin, joined the [Bad Crypto Podcast & The Nifty Show](https://www.youtube.com/c/BadCryptoPodcast) to talk about observing the trends of NFTs by seeing the back end of storage. The episode jumps into Jonathan’s experience with NFTs and how storage works on IPFS and Filecoin. Watch the full episode [on YouTube](https://www.youtube.com/watch?v=e2kWxKB8ZWQ)!
 
 ## Tools
 
@@ -101,7 +101,7 @@ The Filecoin Green community will also be at DevCon with a LATAM-focused sustain
 
 ### Funding the Commons Bogota
 
-Funding the Commons will be hosting a pop-up track on October 10th at the [Schelling Point event in Bogota](https://schellingpoint.gitcoin.co/), hosted by Gitcoin. This will be a community-focused event with a series of lighting talks, workshops and collaboration to push forward the funding of public goods in web3 and beyond. If you're interested in presenting a talk at the FTC track, reach out to [commons@protocol.ai](mailto:commons@protocol.ai). See previous Funding the Commons material [here](https://fundingthecommons.io/).
+Funding the Commons will be hosting a pop-up track on October 10th at the [Schelling Point event in Bogota](https://schellingpoint.gitcoin.co/), hosted by Gitcoin. This will be a community-focused event with a series of lighting talks, workshops and collaboration to push forward the funding of public goods in web3 and beyond. If you're interested in presenting a talk at the FTC track, reach out to [commons@protocol.ai](mailto:commons@protocol.ai). See previous Funding the Commons material [on the Funding the Commons website](https://fundingthecommons.io/).
 
 [![](/uploads/fil-lisbon.webp)](https://fil-lisbon.io/register-now/)
 

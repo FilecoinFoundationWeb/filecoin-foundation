@@ -59,7 +59,7 @@ We actually haven’t seen any large miners turn off their operations - so we wo
 
 **Any interesting light client designs? Many chains have put a lot of effort in this and I would say most haven’t gotten it right w.r.t. incentives and security.**
 
-We’re actively working on a light client of our own right now! You can track our progress [here](https://github.com/filecoin-project/lotus/issues/3532).
+We're actively working on a light client of our own right now! You can track our progress [on GitHub](https://github.com/filecoin-project/lotus/issues/3532).
 
 **Are smart contracts included in the development plan?**
 

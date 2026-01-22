@@ -63,7 +63,7 @@ On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launc
 
 ### League of Entropy Partnership Opportunity
 
-The League of Entropy is expanding the drand network and is looking for credible organizations to partner with. Check [here](https://drand.love/partner-with-us/) for more details and get in touch!
+The League of Entropy is expanding the drand network and is looking for credible organizations to partner with. Check [the partnership page](https://drand.love/partner-with-us/) for more details and get in touch!
 
 ## Events
 

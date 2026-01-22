@@ -64,7 +64,7 @@ If you want to learn more, check out these helpful links:
 
 ### Development Upgrades
 
-Lotus has released [v1.4.2](https://github.com/filecoin-project/lotus/releases/tag/v1.4.2), which is an optional, but highly recommended release with new features and improvements for lotus miners and deal-making UX. Please see more details and leave any question you have [here](https://github.com/filecoin-project/lotus/discussions/5595). Additionally, there is another network upgrade scheduled for March, for future updates, please subscribe to [the network announcements](https://github.com/filecoin-project/community/discussions/74) and the [lotus v1.5.0 release and upgrade timeline](https://github.com/filecoin-project/lotus/discussions/5617).
+Lotus has released [v1.4.2](https://github.com/filecoin-project/lotus/releases/tag/v1.4.2), which is an optional, but highly recommended release with new features and improvements for lotus miners and deal-making UX. Please see more details and leave any question you have [on GitHub](https://github.com/filecoin-project/lotus/discussions/5595). Additionally, there is another network upgrade scheduled for March, for future updates, please subscribe to [the network announcements](https://github.com/filecoin-project/community/discussions/74) and the [lotus v1.5.0 release and upgrade timeline](https://github.com/filecoin-project/lotus/discussions/5617).
 
 More updates from the Crypto Compute Lab and CryptoNet teams can be found in the latest [dev newsletter](https://github.com/filecoin-project/community/discussions/71#discussioncomment-378972)!
 

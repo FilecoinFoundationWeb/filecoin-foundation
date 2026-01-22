@@ -22,13 +22,13 @@ share_image: /uploads/142237255-9c4c2dd4-9268-4a62-ad67-abfa44be37af-1.webp
 title: "Filecoin Launchpad Accelerator II: Infrastructure and Dev Tools"
 ---
 
-On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the infrastructure and dev tools projects that emerged from the accelerator and presented during Demo Day. The entire Demo Day is available [here](https://www.youtube.com/watch?v=UWuaSP6YuJ4).
+On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the infrastructure and dev tools projects that emerged from the accelerator and presented during Demo Day. The entire Demo Day is [available on YouTube](https://www.youtube.com/watch?v=UWuaSP6YuJ4).
 
 ## CID Gravity
 
 _CID Gravity is helping create a layer of trust between Filecoin stakeholders, de-risking their data and incentivizing storage providers._
 
-{{< youtube id="s6A6v7qeK-c" title="CID Gravity" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s6A6v7qeK-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="CID Gravity"></iframe>
 
 ### What is CID Gravity?
 
@@ -52,7 +52,7 @@ Interested in everything CID Gravity is trying to accomplish? Check them out her
 
 _SkillWallet provides Role-Based NFT IDs that help build communities in Web3._
 
-{{< youtube id="5YlwqeWK250" title="SkillWallet" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5YlwqeWK250" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="SkillWallet"></iframe>
 
 ### What is SkillWallet?
 
@@ -69,7 +69,7 @@ DAOs were designed to be autonomous, but the crux of the matter is that they nee
 
 _A Community-Operated weather network that gives station owners rewards and offers accurate weather forecasting to Web3 services._
 
-{{< youtube id="o3GtPUScQDk" title="WeatherXM" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o3GtPUScQDk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="WeatherXM"></iframe>
 
 ### What is WeatherXM?
 
@@ -90,7 +90,7 @@ Interested in learning more about WeatherXM? Find out all the details here: [htt
 
 _Decentralized Automation - helping decentralized exchanges grow volume._
 
-{{< youtube id="NzciH4JGd9U" title="Autonomy Network" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NzciH4JGd9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Autonomy Network"></iframe>
 
 ### What is Autonomy Network?
 
@@ -107,7 +107,7 @@ Crypto traders, decentralized exchanges, and dApp developers have struggled with
 
 _The Convo Space is a framework for adding a decentralized social layer to any Web3 community._
 
-{{< youtube id="d9BsoTfIDOM" title="Convo Space" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d9BsoTfIDOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Convo Space"></iframe>
 
 ### What is The Convo Space?
 

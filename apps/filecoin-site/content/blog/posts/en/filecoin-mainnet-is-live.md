@@ -44,7 +44,7 @@ The Filecoin network has now entered a quiet post-launch monitoring period to en
 
 Next week, it’s time to celebrate! Join us for [Filecoin Liftoff Week](https://liftoff.filecoin.io/), an action-packed series of talks, workshops, and panels curated by the community to celebrate the Filecoin mainnet launch and explore the network’s future. The event takes place October 19-23, 2020.
 
-Whether you’re a Filecoin expert or just getting started, Liftoff is a great opportunity to learn, build, and explore. There will also be some very special guests and exciting announcements, so don’t miss it! You can register to attend [here](https://liftoff.filecoin.io/). If you’d like to host your own event or celebration, [submit](https://filecoin-community.typeform.com/to/EYLmGgOr) your session today.
+Whether you're a Filecoin expert or just getting started, Liftoff is a great opportunity to learn, build, and explore. There will also be some very special guests and exciting announcements, so don't miss it! You can register to attend [on the Filecoin Liftoff Week website](https://liftoff.filecoin.io/). If you'd like to host your own event or celebration, [submit](https://filecoin-community.typeform.com/to/EYLmGgOr) your session today.
 
 [![Filecoin Liftoff Schedule](https://filecoin.io/vintage/images/blog/mainnet-liftoff-schedule.jpg)](https://liftoff.filecoin.io/)
 

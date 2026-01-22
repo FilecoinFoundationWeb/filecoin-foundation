@@ -74,7 +74,7 @@ The Fil+ governance community recently launched [**Filecoin Plus for large datas
 
 7 notaries from at least 3 regions self-select themselves as co-signers on a multisig address which is then granted its own notary status (referred to as LDN - Large Dataset Notary), and can be used to send DataCap to the client’s address once every few weeks. DataCap dispensing is throttled at \~2 weeks worth of DataCap for the client, and the notaries are tasked with keeping track of the usage of past allocations.
 
-In the past couple of weeks, we’ve had 5 applications accepted by the community, and had our first LDN allocate DataCap to a client. If you are working on a project which could use a large amount of DataCap, please apply by creating an Issue [**here**](https://github.com/filecoin-project/filecoin-plus-large-datasets/issues). If you are interested in participating in the discussion around other applications or Fil+ in general, please feel free to read through the current set and drop comments on their respective GitHub issues and [**participate in Fil+ governance**](https://docs.filecoin.io/store/filecoin-plus/#get-involved-in-fil-governance).
+In the past couple of weeks, we’ve had 5 applications accepted by the community, and had our first LDN allocate DataCap to a client. If you are working on a project which could use a large amount of DataCap, please apply by creating an Issue [**on GitHub**](https://github.com/filecoin-project/filecoin-plus-large-datasets/issues). If you are interested in participating in the discussion around other applications or Fil+ in general, please feel free to read through the current set and drop comments on their respective GitHub issues and [**participate in Fil+ governance**](https://docs.filecoin.io/store/filecoin-plus/#get-involved-in-fil-governance).
 
 [![](/uploads/chainsafe-logofield.webp)](https://storage.chainsafe.io/)
 
@@ -90,7 +90,7 @@ Since mainnet launch in October 2020, over 2,700 storage providers are contribut
 
 ### Synthetic PoRep
 
-The PoRep protocol today requires miners to store 12x sector size of layers data after it is created during the replication step until the sector is proven in the on-chain Commit step.  
+The PoRep protocol today requires miners to store 12x sector size of layers data after it is created during the replication step until the sector is proven in the on-chain Commit step.
 This leads to major inefficiencies where storage space needed to perform replication is occupied for a prolonged period of time by the layers data. This also prevents some miners from efficiently using aggregation. Synthetic PoRep achieves reduction in used up space by reducing the set of challenges that might be chosen during the interactive Commit step from all possible challenges to some predetermined number that is feasible to precompute.
 
 We propose a Synthetic PoRep protocol where:

@@ -24,13 +24,13 @@ _template: blog_detail
 
 **Filecoin Launchpad Accelerator II: DeFi**
 
-On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the DeFi projects that emerged from the accelerator and presented during Demo Day. The entire Demo Day is available [here](https://www.youtube.com/watch?v=UWuaSP6YuJ4).
+On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the DeFi projects that emerged from the accelerator and presented during Demo Day. The entire Demo Day is [available on Youtube](https://www.youtube.com/watch?v=UWuaSP6YuJ4).
 
 ## Hedgey Finance
 
 _Hedgey Finance is a protocol for adding options markets to any token._
 
-{{< youtube id="Pmgz5E8u1XU" title="Hedgey Finance" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pmgz5E8u1XU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Hedgey Finance"></iframe>
 
 **What is Hedgey Finance?**
 
@@ -52,7 +52,7 @@ Discover more about Hedgey Finance and learn about what they do and their offeri
 
 _A DeFi protocol that makes synthetic tokens for widespread distribution on Asian real-world markets._
 
-{{< youtube id="cd26ZWIWLXU" title="Tamago Finance" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cd26ZWIWLXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Tamago Finance"></iframe>
 
 **What is Tamago Finance?**
 
@@ -70,7 +70,7 @@ Tamago Finance is a unique take on offering traders worldwide the chance to part
 
 _SmartFunds is a simple, automated, and compliant fund-management tool._
 
-{{< youtube id="SQjdUT11GWE" title="SmartFunds" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SQjdUT11GWE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="SmartFunds"></iframe>
 
 **What is SmartFunds?**
 
@@ -94,7 +94,7 @@ If you're interested in what SmartFunds is doing and want to get some more infor
 
 Gamification of investments using Blockchain, NFTs, and Yield Farming.
 
-{{< youtube id="9ebOSIK_VPE" title="Clam Island" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9ebOSIK_VPE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Clam Island"></iframe>
 
 **What is Clam Island?**
 
@@ -112,7 +112,7 @@ Clam Island is a unique approach to gaming that incorporates NFTs and tries to m
 
 Boto is an online no-code platform that allows users to build bots to automate online tasks.
 
-{{< youtube id="CXGbK-HGqdM" title="Boto" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CXGbK-HGqdM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Boto"></iframe>
 
 **What is Boto?**
 

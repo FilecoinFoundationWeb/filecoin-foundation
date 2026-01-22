@@ -74,7 +74,7 @@ Calling all Filecoin miners - we are still looking for community members to comp
 
 Since the [Filecoin v13 ‘HyperDrive’ Network upgrade announcement](https://github.com/filecoin-project/community/discussions/74#discussioncomment-707228), the Filecoin community has been curious about what this upgrade means for the network as a whole. On June 8th, Filecoin hosted an AMA answering 25+ questions on the network upgrade, sealing, onboarding new storage deals and more.
 
-A summary of the answers from the Q&A is [here](https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-ama-1-recap/). We look forward to hosting more sessions like this as the v13 HyperDrive network upgrade approaches, so join us on Tuesday, June 22nd at 6pm PT for a HyperDrive Deep Dive - more details soon to come. In the meantime, stay tuned for updates on the [Filecoin community forum](https://github.com/filecoin-project/community/discussions/74#discussioncomment-707228), [Filecoin Community Slack](https://filecoin.io/slack). You can also find us on Wechat (Filecoin-Official), and [Twitter](https://twitter.com/Filecoin).
+A summary of the answers from the Q&A is [available in our blog post](/blog/posts/filecoin-v13-hyperdrive-ama-1-recap/). We look forward to hosting more sessions like this as the v13 HyperDrive network upgrade approaches, so join us on Tuesday, June 22nd at 6pm PT for a HyperDrive Deep Dive - more details soon to come. In the meantime, stay tuned for updates on the [Filecoin community forum](https://github.com/filecoin-project/community/discussions/74#discussioncomment-707228), [Filecoin Community Slack](/slack). You can also find us on Wechat (Filecoin-Official), and [Twitter](https://twitter.com/Filecoin).
 
 ## Learn
 

@@ -29,7 +29,7 @@ An on-chain vote proposing to deploy Uniswap on the Filecoin Virtual Machine is 
 
 ### Protocol Labs & Consensys partner to supercharge Web3 innovations
 
-Protocol Labs and Consensys have teamed up via the Consensys Scale Program, providing blockchain startups with access to a comprehensive product suite and specialized advisory support. As part of this collaboration, Protocol Labs will offer their expertise in mentorship and technical advice to selected projects within the program. Additionally, teams will have the opportunity to integrate Filecoin, IPFS, and advanced solutions like NFT.Storage Pro and Web3.Storage Pro into their ventures. Learn more about the program and how to apply [here](https://protocol.ai/blog/protocol-labs-partners-with-consensys-scale/).
+Protocol Labs and Consensys have teamed up via the Consensys Scale Program, providing blockchain startups with access to a comprehensive product suite and specialized advisory support. As part of this collaboration, Protocol Labs will offer their expertise in mentorship and technical advice to selected projects within the program. Additionally, teams will have the opportunity to integrate Filecoin, IPFS, and advanced solutions like NFT.Storage Pro and Web3.Storage Pro into their ventures. Learn more about the program and how to apply [on the Protocol Labs blog](https://protocol.ai/blog/protocol-labs-partners-with-consensys-scale/).
 
 ### Democracy's Library uploads 1PB of data onto Filecoin
 

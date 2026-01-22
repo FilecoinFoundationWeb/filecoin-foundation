@@ -31,11 +31,11 @@ With FIP0036, the CryptoEconLab has proposed economic changes that seek to bette
 - Increase minimum sector duration time from six months to 1 year.
 - Increase the maximum sector duration time from 1.5 years to 3.5 years.
 - Introduce a Sector Duration Multiplier for all sectors, regardless of deal type.
-- The multiplier is linear, and corresponds to sector term length.  
-  — All sectors will automatically receive a 1.5 multiplier in the calculation of their Quality Adjusted Power (QAP), since this is the shortest possible sector term length.  
-  — The maximum multiplier would be 3.5, which corresponds to the proposed 3.5 year sector term maximum.  
+- The multiplier is linear, and corresponds to sector term length.
+  — All sectors will automatically receive a 1.5 multiplier in the calculation of their Quality Adjusted Power (QAP), since this is the shortest possible sector term length.
+  — The maximum multiplier would be 3.5, which corresponds to the proposed 3.5 year sector term maximum.
   — Storage providers could pledge sectors for any period of time between 1.5 and 3.5 years and their multiplier would be adjusted accordingly.
-- The Sector Duration Multiplier would compound with the Filecoin Plus deal multiplier that already exists in the network.  
+- The Sector Duration Multiplier would compound with the Filecoin Plus deal multiplier that already exists in the network.
   — Thus, if a sector were committed for the maximum term period and filled 100% with Filecoin Plus deals, that storage provider would receive the maximum compounded multiplier of 35x (10x Filecoin Plus multiplier, compounded with the 3.5x term length multiplier).
 - Increase Sector Initial Consensus Pledge multiplier from 30% to 50%.
 
@@ -81,4 +81,4 @@ If accepted, Core Devs have already agreed to schedule this FIP for inclusion in
 
 If rejected, the FIP will no longer be considered by the community. FIP authors are of course welcome to author a new FIP, but FIP0036 will be considered final. In its current form, it will not be eligible for reconsideration or inclusion in future network upgrades.
 
-For more details about the FIL Poll process, see [here](https://github.com/filecoin-project/FIPs/discussions/464). To cast your vote, or ask for technical support with the voting tool, see [here](https://pl-strflt.notion.site/How-to-sign-a-vote-on-FilPoll-using-Lotus-Glif-95d9b0a32f9c48858574f9cb072c054b).
+For more details about the FIL Poll process, see [the FIL Poll process discussion](https://github.com/filecoin-project/FIPs/discussions/464). To cast your vote, or ask for technical support with the voting tool, see [the voting guide](https://pl-strflt.notion.site/How-to-sign-a-vote-on-FilPoll-using-Lotus-Glif-95d9b0a32f9c48858574f9cb072c054b).

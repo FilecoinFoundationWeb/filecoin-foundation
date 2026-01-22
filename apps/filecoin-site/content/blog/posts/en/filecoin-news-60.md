@@ -49,7 +49,7 @@ Opscientia (OpSci) is an open source DeSci project leveraging the power of Web3 
 
 ### Introducing the FVM Builders Leaderboard
 
-The Builders Leaderboard powered by Impact Evaluators is here. FVM builders can showcase their projects to the community by entering the Impact Evaluator rounds, giving the team a chance to top the leaderboard and to win rewards from the $75k prize pool! Rounds will run every two weeks until the end of March, where builders and FVM Subject Matter Expert will vote on top projects using Protocol Labs’ Impact Evaluator Tool. Learn more and submit your project [here](https://network-goods.notion.site/Impact-Evaluators-Builders-Leaderboard-602ea6755b5642e1ad6f9da59a47fa62)!
+The Builders Leaderboard powered by Impact Evaluators is here. FVM builders can showcase their projects to the community by entering the Impact Evaluator rounds, giving the team a chance to top the leaderboard and to win rewards from the $75k prize pool! Rounds will run every two weeks until the end of March, where builders and FVM Subject Matter Expert will vote on top projects using Protocol Labs’ Impact Evaluator Tool. Learn more and submit your project [on the Impact Evaluators Builders Leaderboard](https://network-goods.notion.site/Impact-Evaluators-Builders-Leaderboard-602ea6755b5642e1ad6f9da59a47fa62)!
 
 ## Events
 

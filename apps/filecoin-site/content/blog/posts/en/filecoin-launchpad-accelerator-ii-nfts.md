@@ -21,13 +21,13 @@ share_image: /uploads/fil-blog-2021-10-29-filecoin-launchpad-accelerator-ii-v3.w
 title: "Filecoin Launchpad Accelerator II: NFTs"
 ---
 
-On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the NFTs projects that emerged from the accelerator and presented during Demo Day. The entire Demo Day is available [here](https://www.youtube.com/watch?v=UWuaSP6YuJ4).
+On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the NFTs projects that emerged from the accelerator and presented during Demo Day. The entire Demo Day is [available on YouTube](https://www.youtube.com/watch?v=UWuaSP6YuJ4).
 
 ## Nftfy
 
 _Nftfy offers fractional ownership for the most valuable NFTs in the world._
 
-{{< youtube id="PbMJka8jK4Q" title="Nftfy" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PbMJka8jK4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Nftfy"></iframe>
 
 ### What is Nftfy?
 
@@ -45,13 +45,13 @@ Nftfy offers a unique way to approach the buying and selling of NFT works. NFT f
 
 ### Learn more about Nftfy
 
-Those who are interested in Nftfy can learn more about the project [here](https://nftfy.org/#/).
+Those who are interested in Nftfy can learn more about the project [on Nftfy's website](https://nftfy.org/#/).
 
 ## Paras
 
 _Paras is a system for supporting and developing crypto-native intellectual properties._
 
-{{< youtube id="Y6I8xcbxgrM" title="Paras" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y6I8xcbxgrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Paras"></iframe>
 
 ### What is Paras?
 
@@ -67,13 +67,13 @@ The NFT nature of Paras allows people who collect comics to have an actual digit
 
 ### Learn more about Paras
 
-If you're interested in what Paras is doing, you can check out the project in detail [here](https://paras.id/).
+If you're interested in what Paras is doing, you can check out the project in detail [on Paras's website](https://paras.id/).
 
 ## Fractio
 
 _A premium NFT toolkit for creators interested in dynamic-data NFTs._
 
-{{< youtube id="Qt0Mka6Jr9I" title="Fractio" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qt0Mka6Jr9I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Fractio"></iframe>
 
 ### What is Fractio?
 
@@ -93,7 +93,7 @@ Dynamic NFTs are very likely going to be the next step in the technology's evolu
 
 Nifty Royale is a prize distribution system that distributes NFTs through a no-loss pool system.
 
-{{< youtube id="hwvRWETMnn4" title="Nifty Royale" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hwvRWETMnn4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Nifty Royale"></iframe>
 
 ### What does Nifty Royale Do?
 
@@ -115,7 +115,7 @@ Want to find out about Nifty Royale? Their [project page](https://niftyroyale.co
 
 _A create-to-earn platform centered around digital artists._
 
-{{< youtube id="D-37F9lnbGg" title="Chestr" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D-37F9lnbGg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Chestr"></iframe>
 
 ### What is Chestr?
 

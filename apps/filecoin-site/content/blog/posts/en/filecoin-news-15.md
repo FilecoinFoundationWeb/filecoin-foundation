@@ -82,7 +82,7 @@ CryptoComputeLab has announced proofs release [v6.1.0](https://github.com/fileco
 
 ### Network v11 Upgrade
 
-Network v11 upgrade is scheduled on Apr 12th, 22:00 UTC for accepting [FIP-0014,](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0014.md) which will allow miners to extend any v1 sectors’ lifetime up to 540 days. More details on implementation releases timelines for this upgrade can be found [here](https://github.com/filecoin-project/community/discussions/74#discussioncomment-545945).
+Network v11 upgrade is scheduled on Apr 12th, 22:00 UTC for accepting [FIP-0014,](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0014.md) which will allow miners to extend any v1 sectors' lifetime up to 540 days. More details on implementation releases timelines for this upgrade can be found [on GitHub](https://github.com/filecoin-project/community/discussions/74#discussioncomment-545945).
 
 ### Thanks for Participating in FIP-0014
 

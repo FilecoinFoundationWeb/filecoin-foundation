@@ -21,13 +21,13 @@ share_image: /uploads/142154162-a5dce0f5-b32b-48c1-8532-5a087ff2c380.webp
 title: "Filecoin Launchpad Accelerator II: Gaming and the Metaverse"
 ---
 
-On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the Gaming, Social, and Metaverse projects that emerged from the accelerator and were presented during Demo Day. The entire Demo Day is [available here](https://www.youtube.com/watch?v=XAu2Ydc-DcY&list=PL_0VrY55uV18I3tacudE5eXrEs-CZrcmd).
+On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. This accelerator is a 6-week course dedicated to incubating young Web3 companies. Below is an overview of the Gaming, Social, and Metaverse projects that emerged from the accelerator and were presented during Demo Day. The entire Demo Day is [available on YouTube](https://www.youtube.com/watch?v=XAu2Ydc-DcY&list=PL_0VrY55uV18I3tacudE5eXrEs-CZrcmd).
 
 ## The MoNA Gallery
 
 _A metaverse society for high-end 3D art display and appreciation._
 
-{{< youtube id="GHxr5g3T6n4" title="The MoNA Gallery" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GHxr5g3T6n4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="The MoNA Gallery"></iframe>
 
 ### What is The MoNA Gallery
 
@@ -49,7 +49,7 @@ If you're interested in what The MoNA Gallery is doing, learn more [here](https:
 
 _A space for NFT holders and creators to meet and discuss the history of their collections._
 
-{{< youtube id="lf66NgZfQp4" title="Huddln" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lf66NgZfQp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Huddln"></iframe>
 
 ### What is Huddln
 
@@ -65,13 +65,13 @@ Social media is a powerful tool, and in the metaverse, social media might become
 
 ### Learn More About Huddln
 
-Enjoying what Huddln is trying to do? You can check out their project in detail [here](https://www.huddln.io/).
+Enjoying what Huddln is trying to do? You can check out their project in detail [on Huddln's website](https://www.huddln.io/).
 
 ## Inflow Music
 
 _The first social platform to allow artists to monetize their community directly, and reward fans with tokens generated from the platform._
 
-{{< youtube id="ekYIyVKR7ug" title="Inflow Music" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ekYIyVKR7ug" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Inflow Music"></iframe>
 
 ### What is Inflow Music
 
@@ -89,7 +89,7 @@ Today, fans who want to support their favorite artists struggle to do so, since 
 
 _Helping gamers earn money instantly on every game, with technology built on blockchain._
 
-{{< youtube id="Pc3k-ZexLfk" title="Blockbets Corp" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pc3k-ZexLfk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Blockbets Corp"></iframe>
 
 ### What is Blockbets Corp
 
@@ -107,7 +107,7 @@ Online gaming is home to many great players, but earning potential is limited to
 
 _0xEssential offers users a platform to bring their own NFTs to play, compete, and win._
 
-{{< youtube id="R-wER0bQPRM" title="0xEssential" >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R-wER0bQPRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="0xEssential"></iframe>
 
 ### What is 0xEssential
 
