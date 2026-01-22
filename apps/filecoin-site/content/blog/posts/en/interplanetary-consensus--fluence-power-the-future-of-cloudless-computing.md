@@ -85,7 +85,7 @@ IPC opens up web3 scalability for any developer wanting to architect the next bi
 
 **Calling all Builders and Developers!**
 
-The IPC team wants to speak with leading web2 and web3 builders who are seeking a truly scalable blockchain framework that goes beyond the current industry L2 approach. Keen to build the next scalability solution with us? Sign up for the IPC Early Builders Program [here](https://airtable.com/appDOrRCG0KlUPNxR/pagS73VfCTEsWlxio/form).
+The IPC team wants to speak with leading web2 and web3 builders who are seeking a truly scalable blockchain framework that goes beyond the current industry L2 approach. Keen to build the next scalability solution with us? Sign up for the IPC Early Builders Program [on Airtable](https://airtable.com/appDOrRCG0KlUPNxR/pagS73VfCTEsWlxio/form).
 
 Ready to get started building permissionless, serverless apps? Check out the [Fluence Docs](https://fluence.dev/docs/learn/overview). 
 

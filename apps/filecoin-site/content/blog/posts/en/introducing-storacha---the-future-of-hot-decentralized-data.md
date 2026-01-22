@@ -14,7 +14,7 @@ categories:
 dim_image: true
 ---
 
-_Original source [here](https://medium.com/@storacha/welcome-to-the-future-of-super-hot-decentralized-data-scale-storacha-is-coming-at-ya-fd2b2de75bf6)._
+_Original source [on Medium](https://medium.com/@storacha/welcome-to-the-future-of-super-hot-decentralized-data-scale-storacha-is-coming-at-ya-fd2b2de75bf6)._
 
 [Storacha](https://storacha.network/) is a new decentralized network for data at scale, cooked up by the brains at Protocol Labs. We took the finest ingredients from [web3.storage](https://web3.storage/) and [Saturn](https://saturn.tech/) (dCDN), blended them together, added some salt, and came up with a blazingly fast, user-owned, verifiable hot data storage and retrieval system built on top of Filecoin. Holy wow! — right?! Storacha has already served Petabytes(!) of data to open web projects. It’s the bestest and most production-gradey storage system on the decentralized internet, and we’re not the only ones saying that.
 

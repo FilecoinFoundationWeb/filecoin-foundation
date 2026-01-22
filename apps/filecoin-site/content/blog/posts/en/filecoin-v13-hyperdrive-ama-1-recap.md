@@ -41,7 +41,7 @@ A: The constant comes from the average `GasUsage` of pre committing and prove co
 
 **Q: To balance between gas reduction and benefit loss caused by delayed (maybe for days) submit, will there be a detailed suggestion about how to set up the policy?**
 
-A: For lotus miners, you will be able to set the min/max number of `PreCommit` to batch or `ProveCommit` to aggregate in the lotus miner config file. You can also configure how long to wait before submitting a batch after crossing the minimum size - which is used to ensure that batched sectors are submitted before the deals/sectors expire. See the configuration instruction preview [here](https://github.com/filecoin-project/filecoin-docs/pull/898) and default values in lotus can be found in [def.go](https://github.com/filecoin-project/lotus/blob/f9596dd730cdb70e3465450b66299606953c7785/node/config/def.go#L275).
+A: For lotus miners, you will be able to set the min/max number of `PreCommit` to batch or `ProveCommit` to aggregate in the lotus miner config file. You can also configure how long to wait before submitting a batch after crossing the minimum size - which is used to ensure that batched sectors are submitted before the deals/sectors expire. See the configuration instruction preview [on GitHub](https://github.com/filecoin-project/filecoin-docs/pull/898) and default values in lotus can be found in [def.go](https://github.com/filecoin-project/lotus/blob/f9596dd730cdb70e3465450b66299606953c7785/node/config/def.go#L275).
 
 Miners should change these configurations based on their own operation or preferences. Here are some potential inputs that may influence a miner’s decision: current network `BaseFee`, missed revenue in waiting, sealing throughput.
 
@@ -75,7 +75,7 @@ A: We expect to see a 10x to 25x increase in storage onboarding, depending on ho
 
 **Q: What is the network doing to incentivize all miners to upgrade existing CC sectors to store real data from clients? Are there any WIP FIPs**
 
-A: To upgrade the CC sectors with deals, follow the steps [here](https://docs.filecoin.io/mine/lotus/sector-pledging/#upgrading-pledged-sectors). Miners can earn FIL for storing client’s deals. If the deal is a Filecoin Plus verified deal with datacap, the miner will get 10x adjusted power.
+A: To upgrade the CC sectors with deals, follow the steps [in the Filecoin documentation](https://docs.filecoin.io/mine/lotus/sector-pledging/#upgrading-pledged-sectors). Miners can earn FIL for storing client’s deals. If the deal is a Filecoin Plus verified deal with datacap, the miner will get 10x adjusted power.
 
 **Q: Is there an upper limit for the max gas used / gas limit for the two new messages or can the new messages be maxed out up to a blocks gas limit?**
 

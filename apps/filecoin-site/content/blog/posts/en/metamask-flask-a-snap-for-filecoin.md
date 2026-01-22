@@ -45,7 +45,7 @@ At a high level, MetaMask Snaps consists of two things:
 
 Communication occurs via JSON-RPC requests and responses. In this way, Snaps can expand MetaMask’s JSON-RPC API and change the behavior of the MetaMask application at runtime. Over time, MetaMask will use this to support different blockchains and other decentralized protocols, novel kinds of cryptography, novel kinds of crypto assets, and a countless number of other features.
 
-To learn more about how to use Snaps, read the technical documentation [here](https://docs.metamask.io/guide/snaps.html).
+To learn more about how to use Snaps, read the technical documentation [on the MetaMask documentation site](https://docs.metamask.io/guide/snaps.html).
 
 ## A Snap for Filecoin
 

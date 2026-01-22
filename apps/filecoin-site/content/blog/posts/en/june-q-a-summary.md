@@ -175,7 +175,7 @@ In addition to [Filecoin Discover](https://filecoin.io/blog/intro-filecoin-disco
 
 **Will the total of 4 million FIL be split between miners? How much will be actually distributed to miners?**
 
-You can read about the method for distributing Testnet Incentive rewards [here](https://filecoin.io/blog/announcing-testnet-incentives/). It’s up to miners how much FIL will actually be distributed! Add more storage to unlock more rewards.
+You can read about the method for distributing Testnet Incentive rewards [in our blog post](https://filecoin.io/blog/announcing-testnet-incentives/). It’s up to miners how much FIL will actually be distributed! Add more storage to unlock more rewards.
 
 **How big will the deals be that the bot tries to make with miners during Incentivized Testnet?**
 
@@ -205,7 +205,7 @@ There will be a small number of different, competing orderbook protocols, simila
 
 **Will the 5PB Big miner incentive be part of the 4M incentives for Incentivized Testnet?**
 
-The mechanisms for the incentive competition are [here](https://filecoin.io/blog/announcing-testnet-incentives/).
+The mechanisms for the incentive competition are [in our blog post](/blog/announcing-testnet-incentives/).
 
 **What’s the minimum time period for the storage contract between the provider and the buyer?**
 

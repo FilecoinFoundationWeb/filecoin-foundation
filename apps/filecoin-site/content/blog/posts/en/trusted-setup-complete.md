@@ -65,7 +65,7 @@ Over two months, participants from all over the world [contributed](https://gith
 
 For both phases the outputs can be trusted if the transcript is entirely verifiable, and you trust that **_at least_** one of the participants did not leak their contributed randomness in any way. As such, for both ceremonies we attempted to gather a diverse group of participants – both contributors from within the Filecoin ecosystem, miners with competing interests, as well as individuals and teams from outside in adjacent Web3 communities. In doing so, we aim to reduce the risk of collusion and increase the probability that at least one contributor per circuit would be deemed sufficiently trustable - thereby guaranteeing the integrity of the output parameters.
 
-To verify that the parameters for our mainnet circuits are the same as the output from our participants you can follow the instructions [here](https://github.com/filecoin-project/phase2-attestations/tree/a5f58bc31efbfdcd93f0207efe475c62a50ae13c/b288702#phase-2-validation).
+To verify that the parameters for our mainnet circuits are the same as the output from our participants you can follow the instructions [on GitHub](https://github.com/filecoin-project/phase2-attestations/tree/a5f58bc31efbfdcd93f0207efe475c62a50ae13c/b288702#phase-2-validation).
 
 ## What happens next
 

@@ -30,7 +30,7 @@ Most questions and answers are quoted directly, some are edited for readability.
 
 **When will Space Race 2 begin?**
 
-Space Race 2 has already begun! You can learn more [here](https://filecoin.io/blog/space-race-2/).
+Space Race 2 has already begun! You can learn more [in our blog post](https://filecoin.io/blog/space-race-2/).
 
 **What percentage of sectors completed by miners in Space Race can be converted to sectors in Mainnet?**
 
@@ -86,7 +86,7 @@ Lotus v0.8 adds functionality to upgrade the actors implementation within Lotus 
 
 **After Space Race 2 is over, is there time left for miners to adjust hardware and architecture before the mainnet goes online? If so, how long is it？**
 
-We encourage miners to take time during Space Race 2 to adjust their setups as needed. We’re working to add more documentation [here](https://docs.filecoin.io/get-started/lotus/switch-networks/) for how miners can move their data between setups so they can use this time to prepare their hardware and architecture for mainnet.
+We encourage miners to take time during Space Race 2 to adjust their setups as needed. We're working to add more documentation [in the Filecoin documentation](https://docs.filecoin.io/get-started/lotus/switch-networks/) for how miners can move their data between setups so they can use this time to prepare their hardware and architecture for mainnet.
 
 **After the end of Space Race 2, do you need to keep all the sectors encapsulated during the game to the mainnet, or only a part of them?**
 
@@ -102,7 +102,7 @@ Message packing is a resource allocation problem at the end of the day. Block pr
 
 **How can a new miner participate in Space Race 2 ?**
 
-There’s nothing special about participating as a new miner. For an outline of the program structure read [here](https://filecoin.io/blog/space-race-2/). To learn how to mine, head to docs.filecoin.io to get started.
+There’s nothing special about participating as a new miner. For an outline of the program structure read [in our blog post](https://filecoin.io/blog/space-race-2/). To learn how to mine, head to docs.filecoin.io to get started.
 
 **When will the “wdpost failure” be fixed?**
 

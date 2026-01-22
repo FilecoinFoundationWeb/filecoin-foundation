@@ -27,7 +27,7 @@ _template: blog_detail
 
 In this post, we share what’s next on our roadmap and a tool you can use to follow milestone timing estimates.
 
-As we announced in [this blog post](https://filecoin.io/blog/filecoin-testnet-is-live), we launched the Filecoin testnet ([on schedule](https://filecoin.io/blog/update-2019-q2-q3/#1-launches-testnet-on-dec-11-mainnet-in-2020-q1)!) and are now in a period of significant testing, benchmarking, and optimizations. The purpose of the testnet is to evaluate Filecoin at meaningful scale and fix any bugs so we can ensure a secure, performant, and interoperable mainnet. Read more about the testnet launch and how to participate in making this network successful [here](https://filecoin.io/blog/filecoin-testnet-is-live).
+As we announced in [this blog post](https://filecoin.io/blog/filecoin-testnet-is-live), we launched the Filecoin testnet ([on schedule](https://filecoin.io/blog/update-2019-q2-q3/#1-launches-testnet-on-dec-11-mainnet-in-2020-q1)!) and are now in a period of significant testing, benchmarking, and optimizations. The purpose of the testnet is to evaluate Filecoin at meaningful scale and fix any bugs so we can ensure a secure, performant, and interoperable mainnet. Read more about the testnet launch and how to participate in making this network successful [in our blog post](/blog/filecoin-testnet-is-live).
 
 We have updated our [public roadmap document](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#). In rough terms, this is where we are (these phases are not equally long).
 
@@ -43,8 +43,8 @@ Looking ahead to mainnet launch, here are the critical path workstreams, their r
 
 During Testnet phase 2, we will also launch a number of initiatives:
 
-- _Trusted setup ceremony phase 2:_ During Testnet phase 2, we will begin the second phase of the trusted setup ceremony. Learn more about how to participate in the trusted setup ceremony [here](https://filecoin.io/blog/participate-in-our-trusted-setup-ceremony/).
-- _Updated hardware testing configurations for mainnet:_ We will publish updated mainnet hardware testing configurations during Testnet phase 2. You can read about our latest testnet hardware configuration [here](https://filecoin.io/blog/filecoin-testnet-mining/).
+- _Trusted setup ceremony phase 2:_ During Testnet phase 2, we will begin the second phase of the trusted setup ceremony. Learn more about how to participate in the trusted setup ceremony [in our blog post](/blog/participate-in-our-trusted-setup-ceremony/).
+- _Updated hardware testing configurations for mainnet:_ We will publish updated mainnet hardware testing configurations during Testnet phase 2. You can read about our latest testnet hardware configuration [in our blog post](/blog/filecoin-testnet-mining/).
 - _Dev tooling collaborations:_ We aim to launch mainnet with a richer developer toolkit for building applications on Filecoin. We’re looking for collaborators to help us build these tools and a great Filecoin developer experience. (If you’re interested, please submit a proposal to the [Filecoin DevGrants program](https://github.com/filecoin-project/devgrants)! The second wave closes January 15, 2019.)
 - _And more!_
 

@@ -48,7 +48,7 @@ Over the Space Race period, we’ve run various testnet FIL faucets to reimburse
 
 To help with this, we have executed a _one-time_ reimbursement for all miners with negative balance - to top them back up to **net zero** available balance so all miners can enter the mainnet without debts. In addition to this, we have disbursed a _one-time_ **100 FIL bonus** to all Space Race 2 miners who have been actively proving storage on the network within the past week. Normally, we avoid any rewards that encourage people to create sybil nodes - however with this one-time “above and beyond” bonus we especially wanted to recognize and benefit small miners who have worked so hard throughout SR1&2 to reach the 10 TiB Minimum Miner Size for earning block rewards. Thank you for all your stress-testing, issue reports, and bug fixes to help make Filecoin better! 🙏
 
-[Space Race 2: Orbital Burn](https://filecoin.io/blog/space-race-2/#introducing-space-race-2) is concluding as we transition into mainnet, but the [Slingshot](http://slingshot.filecoin.io/) competition is still going strong! To specifically support miners participating in Slingshot to store valuable data on the network, we plan to continue running some small faucets like the PublishDeals and WindowPoSt reimbursement bots for a little while as the network stabilizes. If you’re interested in joining Slingshot as a client, you can apply [here](https://slingshot.filecoin.io/).
+[Space Race 2: Orbital Burn](https://filecoin.io/blog/space-race-2/#introducing-space-race-2) is concluding as we transition into mainnet, but the [Slingshot](http://slingshot.filecoin.io/) competition is still going strong! To specifically support miners participating in Slingshot to store valuable data on the network, we plan to continue running some small faucets like the PublishDeals and WindowPoSt reimbursement bots for a little while as the network stabilizes. If you're interested in joining Slingshot as a client, you can apply [on the Slingshot website](https://slingshot.filecoin.io/).
 
 ## Liftoff FAQ
 
@@ -66,7 +66,7 @@ To help with this, we have executed a _one-time_ reimbursement for all miners wi
 
 **From an operational security perspective, is there anything I should change before Liftoff?**
 
-- As of [lotus 0.9.0](https://github.com/filecoin-project/lotus/releases/tag/v0.9.0) there is a new CLI to manage your miner’s owner address. The wallet associated with the owner address is designed to be kept offline as a cold wallet, given that it should not be used often and it is critical to safeguard the miner’s funds. In production environments, we strongly recommend using separate owner and worker addresses. See the guides [here](https://lotus.filecoin.io/tutorials/lotus-miner/run-a-miner/#setup-wallets-for-the-miner).
+- As of [lotus 0.9.0](https://github.com/filecoin-project/lotus/releases/tag/v0.9.0) there is a new CLI to manage your miner’s owner address. The wallet associated with the owner address is designed to be kept offline as a cold wallet, given that it should not be used often and it is critical to safeguard the miner’s funds. In production environments, we strongly recommend using separate owner and worker addresses. See the guides [in the Lotus documentation](https://lotus.filecoin.io/tutorials/lotus-miner/run-a-miner/#setup-wallets-for-the-miner).
 
 **How can I help keep my miner stable throughout the Liftoff transition?**
 

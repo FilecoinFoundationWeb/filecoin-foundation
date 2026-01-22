@@ -67,7 +67,7 @@ Based on the [Filecoin test vectors](https://github.com/filecoin-project/test-ve
 
 ## Reporting Bugs
 
-To report vulnerabilities, please contact security@filecoin.io to be eligible for bounties. You can use the [confidential reporting guidelines listed here](https://security.filecoin.io/#vulnerability-reporting). Alternatively, the FVM Bug Bounty program is posted on Gitcoin [here](https://gitcoin.co/issue/filecoin-project/community/504/100028707) and on ImmuneFi [here](https://immunefi.com/).
+To report vulnerabilities, please contact security@filecoin.io to be eligible for bounties. You can use the [confidential reporting guidelines listed here](https://security.filecoin.io/#vulnerability-reporting). Alternatively, the FVM Bug Bounty program is posted [on Gitcoin](https://gitcoin.co/issue/filecoin-project/community/504/100028707) and [on ImmuneFi](https://immunefi.com/).
 
 Please **do not** file a public issue or discuss the vulnerability in public places like Slack, Twitter, etc. or it will not be eligible for rewards.
 

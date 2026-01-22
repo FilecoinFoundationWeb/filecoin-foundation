@@ -43,7 +43,7 @@ The scheduler is designed to automatically manage the concurrency of workers. Fo
 
 We know it isn’t perfect yet! If you notice any issues, especially deadlocks, resource starvation, or workers idling, please submit an issue using the [Sealing Issues template](https://github.com/filecoin-project/lotus/issues/new/choose).
 
-We’re also inviting suggestions on how to improve the scheduler. Please share your suggestions [here](https://github.com/filecoin-project/lotus/issues/3498).
+We’re also inviting suggestions on how to improve the scheduler. Please share your suggestions [on GitHub](https://github.com/filecoin-project/lotus/issues/3498).
 
 **Why does my miner appear to have lost storage power suddenly?**
 
@@ -53,9 +53,9 @@ If you don’t find any logs in your miner indicating failures to produce or sub
 
 **For convenience, would you please leave the link to what are the minimum and recommended specs to start storage mining and are GPUs required?**
 
-You can find our hardware recommendations [here](https://docs.filecoin.io/mine/#hardware-recommendations).
+You can find our hardware recommendations [in the Filecoin documentation](https://docs.filecoin.io/mine/#hardware-recommendations).
 
-You can also find community produced benchmark results [here](https://github.com/filecoin-project/benchmarks).
+You can also find community produced benchmark results [on GitHub](https://github.com/filecoin-project/benchmarks).
 
 A GPU is a must for storage mining (winning block rewards).
 
@@ -77,7 +77,7 @@ EIP1559 introduced the notion of a network fee and a dynamic fee adjustment mech
 
 **Is each partition capped at 2349 sectors? What are the correlations between the number of storage disks and the number of partitions? I see that they match.**
 
-Partitions are capped at 2349 sectors for 64 GiB deals, the number varies based on sector size. You can find them, and some explanation, [here](https://github.com/filecoin-project/rust-fil-proofs/blob/master/filecoin-proofs/src/constants.rs#L92-L101).
+Partitions are capped at 2349 sectors for 64 GiB deals, the number varies based on sector size. You can find them, and some explanation, [on GitHub](https://github.com/filecoin-project/rust-fil-proofs/blob/master/filecoin-proofs/src/constants.rs#L92-L101).
 
 **Does the Space Race deal bot favor particular miners?**
 
@@ -103,6 +103,6 @@ Note that these are all _potential rewards_ - as miners add capacity to the netw
 
 **What is the official end date/time for Space Race?**
 
-Space Race ends on Monday, September 14th at 21:59 UTC. You can see the full rules [here](https://docs.filecoin.io/mine/spacerace/#how-do-i-participate).
+Space Race ends on Monday, September 14th at 21:59 UTC. You can see the full rules [in the Filecoin documentation](https://docs.filecoin.io/mine/spacerace/#how-do-i-participate).
 
 We take snapshots of the rankings many times per day, so if the network gets over-excited at the end, don’t worry – we will still have plenty of information available to correctly calculate rewards.

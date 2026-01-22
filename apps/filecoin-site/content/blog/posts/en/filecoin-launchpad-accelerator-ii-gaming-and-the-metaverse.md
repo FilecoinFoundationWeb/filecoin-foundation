@@ -43,7 +43,7 @@ Artists can access the value of their NFT through sales, but MoNA helps creators
 
 ### Learn more about The MoNA Gallery
 
-If you're interested in what The MoNA Gallery is doing, learn more [here](https://www.mona.gallery/).
+If you're interested in what The MoNA Gallery is doing, learn more [on The MoNA Gallery website](https://www.mona.gallery/).
 
 ## Huddln
 

@@ -24,7 +24,7 @@ title: Slingshot Phase 2.3 Recap
 _template: blog_detail
 ---
 
-The Slingshot Phase 2.3 Closing Ceremony on June 9th closed what has been one of the most productive phases of the Slingshot Competition yet. Over the last 2 months, several members of the Filecoin community participated in Phase 2.3 of the Slingshot competition. 25 teams onboarded nearly 9 PiB of data onto the network through 300,000 storage deals and were rewarded from a prize pool of 165,000 FIL! At the official phase end (May 14), \~13.4 PiB of data had been onboarded onto Filecoin through Slingshot. Watch the recording of the Phase 2.3 Closing Ceremony [here](https://www.youtube.com/watch?v=uG8RtJuFcqc) to learn more about the key takeaways from this Phase and hear from some of the participating teams!
+The Slingshot Phase 2.3 Closing Ceremony on June 9th closed what has been one of the most productive phases of the Slingshot Competition yet. Over the last 2 months, several members of the Filecoin community participated in Phase 2.3 of the Slingshot competition. 25 teams onboarded nearly 9 PiB of data onto the network through 300,000 storage deals and were rewarded from a prize pool of 165,000 FIL! At the official phase end (May 14), \~13.4 PiB of data had been onboarded onto Filecoin through Slingshot. Watch the recording of the Phase 2.3 Closing Ceremony [on YouTube](https://www.youtube.com/watch?v=uG8RtJuFcqc) to learn more about the key takeaways from this Phase and hear from some of the participating teams!
 
 The Slingshot competition has the following goals:
 
@@ -54,7 +54,7 @@ Congratulations to all the teams that participated in this impactful Slingshot p
 
 5\. IPFS Found
 
-The full list of projects and their corresponding scores and rewards can be found [here](https://docs.google.com/spreadsheets/d/1_uJ7BYshxXH0vPun3gTD7zMcq0VG-8pAzejg3QDG514/edit?usp=sharing).
+The full list of projects and their corresponding scores and rewards can be found [in the Google spreadsheet](https://docs.google.com/spreadsheets/d/1_uJ7BYshxXH0vPun3gTD7zMcq0VG-8pAzejg3QDG514/edit?usp=sharing).
 
 Phase 2.4 is already underway and will run through June 30th. If you are interested in participating, be sure to check out the latest information on Rules and Prizes. Participating teams just crossed the 15 PiB milestone – congratulations! The reward pool is already at 25,000 FIL for eligible teams that will be scored at the end of this Phase. Join the #slingshot-announcements channel on [Filecoin Slack](https://filecoin.io/slack) to stay up to date on the latest updates on Slingshot and participate in the discussion or ask any questions in #slingshot.
 

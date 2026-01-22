@@ -35,7 +35,7 @@ This Thursday, March 5, 2020, we will host a virtual Q&A session with Juan Benet
 
 ## How can I participate
 
-- Please set up an account on the [Filecoin Project Slack](https://join.slack.com/t/filecoinproject/shared_invite/zt-dj58b7fq-weyaTEvjHoYF_ENkQHR6Ig) or WeChat. Invite links for both can be found [**here**](https://filecoin.io/#community).
+- Please set up an account on the [Filecoin Project Slack](https://join.slack.com/t/filecoinproject/shared_invite/zt-dj58b7fq-weyaTEvjHoYF_ENkQHR6Ig) or WeChat. Invite links for both can be found [**on the Filecoin community page**](https://filecoin.io/#community).
 - Join the **#fil-ama** channel on the Filecoin Project Slack before 6:00PM PST on March 5, 2020.
 - To ask questions you will need a special event link from Sli.do. We will post the event link in the **#fil-ama channel** on Slack and in WeChat on March 5, 2020 at 6:00PM PST.
 - Please review the [**Filecoin Community Code of Conduct**](https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md) before the session. In general, treat each other with respect.

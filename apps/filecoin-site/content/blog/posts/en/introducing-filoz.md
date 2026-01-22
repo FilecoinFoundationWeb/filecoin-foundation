@@ -88,7 +88,7 @@ In the past 2 months, FilOz has been hard at work contributing to each Filecoin 
 - 🔥 FilOz created the initial design for [Proof of Data Possession (PDP)](https://docs.google.com/document/u/0/d/1QHeTbxXtqGOA4BLxLFsezkePqrOczkSEcqJTSB8OTf8/mobilebasic#heading=h.eam5tbputddb) - and is working with the L1 and L2 community to refine the design to deliver maximum value to the Filecoin ecosystem.
 - 🤝 FilOz is supporting other teams with design work, FIP co-authorship, and code reviews on new protocol upgrades like NI-PoRep & introduction of Sealer ID - as well as helping TPM the network v23 upgrade across all three client implementations - lotus, forest, and venus, as well as the FF governance team and ecosystem stakeholders.
 - 🤝 FilOz will be working with other implementers like Forest teams, to streamline and optimize protocol development and testing so to deliver features to network users faster yet safely.
-- 🤝 FilOz also hosted 3 [Protocol Day](https://lu.ma/filprotocoldev?tag=protocol%20day) (aggregators, Filecoin economy & data onramp) and Network upgrade AMAs, and we plan to host more, subscribe [here](https://www.filoz.org/events) for upcoming events!! We are also participating as track leads and organizers for the next [FIL Dev Summit](https://www.fildev.io/) (FDS-4) in Brussels!
+- 🤝 FilOz also hosted 3 [Protocol Day](https://lu.ma/filprotocoldev?tag=protocol%20day) (aggregators, Filecoin economy & data onramp) and Network upgrade AMAs, and we plan to host more, subscribe [on the FilOz events page](https://www.filoz.org/events) for upcoming events!! We are also participating as track leads and organizers for the next [FIL Dev Summit](https://www.fildev.io/) (FDS-4) in Brussels!
 - 🤝 FilOz is upgrading the lotus release process so that users can get enhancements & bug fixes more regularly,  and contribution process to make it easier for any OSS developer to contribute to Filecoin improvement and custodianship.
 - 🤝 FilOz also plans to look into opportunities that enhance the economic breadth of Filecoin - such as new storage onboarding fees, QAP design, baseline pledge updates, and much more. 
 
@@ -114,7 +114,7 @@ If you align with these areas of focus in the Filecoin community - we’d love t
   - \#fil-protocol to brainstorm and design protocol improvements for/with Filecoin. 
   - \#fil-lotus-dev to implement Filecoin improvements w/ us!
 - Participate in or host a Protocol Office Day (deep-dive, Office Hour, or AMA)
-  - Subscribe to upcoming events [here](https://www.filoz.org/events)
+  - Subscribe to upcoming events [on the FilOz events page](https://www.filoz.org/events)
   - [Book office hours](https://www.filoz.org/#team) with our team members, click the 📅 links!
   - Send collaboration or protocol office ideas to [po@filoz.org](mailto:po@filoz.org). 
 - Join us for deep protocol discussions and workshops at [FDS in Brussels](https://www.fildev.io/).

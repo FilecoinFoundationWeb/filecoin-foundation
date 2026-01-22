@@ -35,6 +35,6 @@ Last week, the Filecoin team hosted our very first Filecoin virtual community me
 - [Virtual Community Meetup: Creating Unstoppable Ecosystems - Michelle Lee](https://www.youtube.com/watch?v=LZztEeQT4_Q)
 - [Virtual Community Meetup: Powergate Update - Andrew Hill](https://www.youtube.com/watch?v=rrKAlmhWlBc)
 
-The next Filecoin virtual community meetup is on July 14th! If you are interested in giving a short 3-minute demo on your project at the next meetup, please sign up [here](https://docs.google.com/forms/d/e/1FAIpQLSc5Ol4Q_FpdnM61gQRQ10DLLrRAy8-j6YrfWUBEbcVVkNQ4mQ/viewform).
+The next Filecoin virtual community meetup is on July 14th! If you are interested in giving a short 3-minute demo on your project at the next meetup, please sign up [using the Google form](https://docs.google.com/forms/d/e/1FAIpQLSc5Ol4Q_FpdnM61gQRQ10DLLrRAy8-j6YrfWUBEbcVVkNQ4mQ/viewform).
 
 We look forward to seeing you on July 14th, in the meantime, [join our Filecoin community slack channel](https://filecoin.io/slack) to keep in touch with the team and get your Filecoin questions answered.
