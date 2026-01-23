@@ -34,7 +34,7 @@ export default async function Digest() {
       />
 
       {digestIssues.map(
-        ({ issueNumber, kicker, title, description, guestEditor }) => (
+        ({ issueNumber, kicker, title, description, guestEditor, slug }) => (
           <PageSectionWithImage
             key={issueNumber}
             kicker={kicker}
@@ -43,9 +43,7 @@ export default async function Digest() {
             description={getDigestIssueDescription(description, guestEditor)}
             layout={Number(issueNumber) % 2 === 1 ? 'regular' : 'reversed'}
             cta={{
-              href: PATHS.DIGEST.issueUrl({
-                issueNumber,
-              }),
+              href: `${PATHS.DIGEST.path}/${slug}`,
               children: `Read Issue ${issueNumber}`,
             }}
           />

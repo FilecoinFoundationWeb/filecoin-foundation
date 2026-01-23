@@ -20,12 +20,12 @@ describe('Random Digest Article', () => {
       cy.task<DigestArticleFrontmatter>(
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
-      ).then(({ title, seo, 'issue-number': issueNumber }) => {
+      ).then(({ title, seo }) => {
         const seoTitle = seo.title || title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
         tests.metadata.fn({
-          path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}`,
+          path: `${PATHS.DIGEST.path}/${slug}`,
           title: metaTitleWithSuffix,
           description: seo.description,
           baseUrl: BASE_URL,
@@ -39,9 +39,9 @@ describe('Random Digest Article', () => {
       cy.task<DigestArticleFrontmatter>(
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
-      ).then(({ 'issue-number': issueNumber }) => {
+      ).then(() => {
         tests.links.fn(
-          `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}`,
+          `${PATHS.DIGEST.path}/${slug}`,
         )
       })
     })

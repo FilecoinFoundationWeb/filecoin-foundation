@@ -18,6 +18,3 @@ export function parseIssueSlug(issue: string) {
   return issueNumber
 }
 
-export function buildIssueSlug(issueNumber: number) {
-  return `${ISSUE_NUMBER_PREFIX}${issueNumber}`
-}

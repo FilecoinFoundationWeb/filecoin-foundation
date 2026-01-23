@@ -1,7 +1,9 @@
+import { buildIssueSlug } from '@filecoin-foundation/utils/buildIssueSlug'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
 import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 import { DigestIssueFrontmatterSchema } from '@filecoin-foundation/utils/schemas/DigestIssueFrontmatterSchema'
+
 
 export async function getDigestIssueData(
   issueNumber: number,
@@ -38,9 +40,10 @@ function getDigestIssueMarkdownData(
 function transformDigestIssueData(
   issue: Awaited<ReturnType<typeof getDigestIssueMarkdownData>>,
 ) {
+
   return {
     ...issue,
-    // slug: buildIssueSlug(issue.issueNumber), // #todo: Add this line - transforms to 'issue-1', 'issue-2', etc.
+    slug: buildIssueSlug(issue.issueNumber),
     kicker: `Issue ${issue.issueNumber} - ${formatDate(issue.publishedOn, 'MMM yyyy')}`,
     seo: {
       ...issue.seo,

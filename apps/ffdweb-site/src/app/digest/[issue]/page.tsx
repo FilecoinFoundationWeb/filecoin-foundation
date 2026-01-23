@@ -23,7 +23,8 @@ import {
   getDigestIssueData,
   getDigestIssuesData,
 } from '../utils/getDigestIssueData'
-import { buildIssueSlug, parseIssueSlug } from '../utils/parseDigestParams'
+import { parseIssueSlug } from '../utils/parseDigestParams'
+
 
 type DigestIssueProps = {
   params: Promise<DigestIssueParams>
@@ -37,6 +38,8 @@ export default async function DigestIssue(props: DigestIssueProps) {
     await getDigestIssueData(issueNumber)
 
   const articles = await getDigestArticlesWithIssueContext(issueNumber)
+
+  console.log({articles});
 
   return (
     <PageLayout gap="large">
@@ -74,10 +77,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
                   { text: `Issue ${issueNumber}` },
                 ]}
                 cta={{
-                  href: PATHS.DIGEST.articleUrl({
-                    issueNumber,
-                    articleSlug: slug,
-                  }),
+                  href: `${PATHS.DIGEST.path}/${slug}`,
                   text: 'Read Article',
                   icon: CARET_RIGHT,
                 }}
@@ -106,8 +106,9 @@ export default async function DigestIssue(props: DigestIssueProps) {
 
 export async function generateStaticParams() {
   const allIssues = await getDigestIssuesData()
-  return allIssues.map(({ issueNumber }) => ({
-    issue: buildIssueSlug(issueNumber),
+
+  return allIssues.map(({ slug }) => ({
+    issue: slug,
   }))
 }
 
@@ -116,11 +117,10 @@ export async function generateMetadata(props: DigestIssueProps) {
   const issueNumber = parseIssueSlug(issue)
 
   const digestIssue = await getDigestIssueData(issueNumber)
-
-  const { seo, image } = digestIssue
+  const { seo, image, slug } = digestIssue
 
   return createMetadata({
-    path: `${PATHS.DIGEST.issueUrl({ issueNumber })}` as `/${string}`,
+    path: `${PATHS.DIGEST.path}/${slug}` as `/${string}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,
