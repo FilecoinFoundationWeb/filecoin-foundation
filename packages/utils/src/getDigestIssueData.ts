@@ -1,8 +1,9 @@
-import { buildIssueSlug } from '@filecoin-foundation/utils/buildIssueSlug'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
 import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 import { DigestIssueFrontmatterSchema } from '@filecoin-foundation/utils/schemas/DigestIssueFrontmatterSchema'
+
+import { buildIssuePath } from './buildDigestPath'
 
 export async function getDigestIssueData(
   issueNumber: number,
@@ -41,7 +42,7 @@ function transformDigestIssueData(
 ) {
   return {
     ...issue,
-    issuePath: buildIssueSlug(issue.issueNumber),
+    issuePath: buildIssuePath({ issueNumber: issue.issueNumber }),
     kicker: `Issue ${issue.issueNumber} - ${formatDate(issue.publishedOn, 'MMM yyyy')}`,
     seo: {
       ...issue.seo,

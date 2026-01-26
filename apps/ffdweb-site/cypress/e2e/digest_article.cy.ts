@@ -1,7 +1,7 @@
 import path from 'path'
 
 import { tests } from '@filecoin-foundation/cypress/support'
-import { buildIssueSlug } from '@filecoin-foundation/utils/buildIssueSlug'
+import { buildArticlePath } from '@filecoin-foundation/utils/buildDigestPath'
 import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
 import { PATHS } from '@/constants/paths'
@@ -24,7 +24,7 @@ describe('Random Digest Article', () => {
       ).then(({ title, seo, 'issue-number': issueNumber }) => {
         const seoTitle = seo.title || title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
-        const articlePath = `${buildIssueSlug(issueNumber)}/${slug}`
+        const articlePath = buildArticlePath({ issueNumber, articleSlug: slug })
 
         tests.metadata.fn({
           path: `${PATHS.DIGEST.path}/${articlePath}`,
@@ -42,7 +42,7 @@ describe('Random Digest Article', () => {
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
       ).then(({ 'issue-number': issueNumber }) => {
-        const articlePath = `${buildIssueSlug(issueNumber)}/${slug}`
+        const articlePath = buildArticlePath({ issueNumber, articleSlug: slug })
         tests.links.fn(`${PATHS.DIGEST.path}/${articlePath}`)
       })
     })

@@ -8,7 +8,7 @@
   },
   "exports": {
     "./buildImageSizeProp": "./src/buildImageSizeProp.ts",
-    "./buildIssueSlug": "./src/buildIssueSlug.ts",
+    "./buildDigestPath": "./src/buildDigestPath.ts",
     "./createMetadata": "./src/createMetadata.ts",
     "./cmsConfigUtils": "./src/cmsConfigUtils.ts",
     "./convertYamlToJson": "./src/convertYamlToJson.ts",

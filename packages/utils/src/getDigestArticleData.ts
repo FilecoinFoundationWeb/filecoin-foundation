@@ -1,6 +1,6 @@
 import removeMarkdown from 'remove-markdown'
 
-import { buildIssueSlug } from './buildIssueSlug'
+import { buildArticlePath } from './buildDigestPath'
 import { getAllMarkdownData } from './getAllMarkdownData'
 import { getMarkdownData } from './getMarkdownData'
 import { DigestArticleFrontmatterSchema } from './schemas/DigestArticleFrontmatterSchema'
@@ -38,12 +38,13 @@ function getDigestMarkdownData(slug: string, directoryPath: string) {
 function transformDigestArticleData(
   article: Awaited<ReturnType<typeof getDigestMarkdownData>>,
 ) {
-  const issueSlug = buildIssueSlug(article.issueNumber)
-
   return {
     ...article,
     description: removeMarkdown(article.content),
-    articlePath: `${issueSlug}/${article.slug}`,
+    articlePath: buildArticlePath({
+      issueNumber: article.issueNumber,
+      articleSlug: article.slug,
+    }),
     seo: {
       ...article.seo,
       title: article.seo.title || article.title,
