@@ -9,7 +9,7 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
 type DigestArticleFrontmatter = GenericEntryFrontmatter & {
-  'issue-number': number
+  articlePath: string
 }
 
 const CONTENT_FOLDER = PATHS.DIGEST.articlesContentPath
@@ -20,12 +20,12 @@ describe('Random Digest Article', () => {
       cy.task<DigestArticleFrontmatter>(
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
-      ).then(({ title, seo }) => {
+      ).then(({ title, seo, articlePath }) => {
         const seoTitle = seo.title || title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
         tests.metadata.fn({
-          path: `${PATHS.DIGEST.path}/${slug}`,
+          path: `${PATHS.DIGEST.path}/${articlePath}`,
           title: metaTitleWithSuffix,
           description: seo.description,
           baseUrl: BASE_URL,
@@ -39,10 +39,8 @@ describe('Random Digest Article', () => {
       cy.task<DigestArticleFrontmatter>(
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
-      ).then(() => {
-        tests.links.fn(
-          `${PATHS.DIGEST.path}/${slug}`,
-        )
+      ).then(({ articlePath }) => {
+        tests.links.fn(`${PATHS.DIGEST.path}/${articlePath}`)
       })
     })
   })

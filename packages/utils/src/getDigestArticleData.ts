@@ -43,7 +43,7 @@ function transformDigestArticleData(
   return {
     ...article,
     description: removeMarkdown(article.content),
-    slug: `${issueSlug}/${article.slug}`,
+    articlePath: `${issueSlug}/${article.slug}`,
     seo: {
       ...article.seo,
       title: article.seo.title || article.title,

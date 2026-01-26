@@ -25,7 +25,6 @@ import {
 } from '../utils/getDigestIssueData'
 import { parseIssueSlug } from '../utils/parseDigestParams'
 
-
 type DigestIssueProps = {
   params: Promise<DigestIssueParams>
 }
@@ -38,8 +37,6 @@ export default async function DigestIssue(props: DigestIssueProps) {
     await getDigestIssueData(issueNumber)
 
   const articles = await getDigestArticlesWithIssueContext(issueNumber)
-
-  console.log({articles});
 
   return (
     <PageLayout gap="large">
@@ -59,6 +56,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
             const {
               title,
               image,
+              articlePath,
               slug,
               articleNumber,
               issueNumber,
@@ -77,7 +75,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
                   { text: `Issue ${issueNumber}` },
                 ]}
                 cta={{
-                  href: `${PATHS.DIGEST.path}/${slug}`,
+                  href: `${PATHS.DIGEST.path}/${articlePath}`,
                   text: 'Read Article',
                   icon: CARET_RIGHT,
                 }}
@@ -117,10 +115,10 @@ export async function generateMetadata(props: DigestIssueProps) {
   const issueNumber = parseIssueSlug(issue)
 
   const digestIssue = await getDigestIssueData(issueNumber)
-  const { seo, image, slug } = digestIssue
+  const { seo, image, issuePath } = digestIssue
 
   return createMetadata({
-    path: `${PATHS.DIGEST.path}/${slug}` as `/${string}`,
+    path: `${PATHS.DIGEST.path}/${issuePath}` as `/${string}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,

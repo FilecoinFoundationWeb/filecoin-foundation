@@ -8,20 +8,24 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
+type DigestIssueFrontmatter = GenericEntryFrontmatter & {
+  issuePath: string
+}
+
 const CONTENT_FOLDER = PATHS.DIGEST.issuesContentPath
 
 describe('Digest Issue Page', () => {
   it(tests.metadata.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      cy.task<GenericEntryFrontmatter>(
+      cy.task<DigestIssueFrontmatter>(
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
-      ).then(({ title, seo }) => {
+      ).then(({ title, seo, issuePath }) => {
         const seoTitle = seo.title || title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
 
         tests.metadata.fn({
-          path: `${PATHS.DIGEST.issueUrl({ issueNumber: Number(slug) })}`,
+          path: `${PATHS.DIGEST.path}/${issuePath}`,
           title: metaTitleWithSuffix,
           description: seo.description,
           baseUrl: BASE_URL,
@@ -32,7 +36,12 @@ describe('Digest Issue Page', () => {
 
   it(tests.links.prompt, () => {
     cy.task<string>('getRandomSlug', CONTENT_FOLDER).then((slug) => {
-      tests.links.fn(`${PATHS.DIGEST.issueUrl({ issueNumber: Number(slug) })}`)
+      cy.task<DigestIssueFrontmatter>(
+        'getEntryFrontmatter',
+        path.join(CONTENT_FOLDER, slug),
+      ).then(({ issuePath }) => {
+        tests.links.fn(`${PATHS.DIGEST.path}/${issuePath}`)
+      })
     })
   })
 })
