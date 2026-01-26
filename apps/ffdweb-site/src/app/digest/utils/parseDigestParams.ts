@@ -1,4 +1,4 @@
-const ISSUE_NUMBER_PREFIX = 'issue-'
+import { ISSUE_NUMBER_PREFIX } from '@filecoin-foundation/utils/buildDigestPath'
 
 export function parseIssueSlug(issue: string) {
   if (!issue.startsWith(ISSUE_NUMBER_PREFIX)) {
@@ -17,4 +17,3 @@ export function parseIssueSlug(issue: string) {
 
   return issueNumber
 }
-

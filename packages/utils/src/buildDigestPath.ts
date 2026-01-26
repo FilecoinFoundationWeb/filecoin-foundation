@@ -1,14 +1,14 @@
-const ISSUE_NUMBER_PREFIX = 'issue-'
+export const ISSUE_NUMBER_PREFIX = 'issue-'
 
-type buildIssuePathProps = {
+type BuildIssuePathParams = {
   issueNumber: number
 }
 
-export function buildIssuePath({ issueNumber }: buildIssuePathProps) {
+export function buildIssuePath({ issueNumber }: BuildIssuePathParams) {
   return `${ISSUE_NUMBER_PREFIX}${issueNumber}`
 }
 
-type buildArticlePathProps = {
+type BuildArticlePathParams = {
   issueNumber: number
   articleSlug: string
 }
@@ -16,7 +16,7 @@ type buildArticlePathProps = {
 export function buildArticlePath({
   issueNumber,
   articleSlug,
-}: buildArticlePathProps) {
+}: BuildArticlePathParams) {
   const issuePath = buildIssuePath({ issueNumber })
   return `${issuePath}/${articleSlug}`
 }
