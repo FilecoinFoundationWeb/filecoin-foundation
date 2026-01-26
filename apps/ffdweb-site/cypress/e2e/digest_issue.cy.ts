@@ -1,6 +1,7 @@
 import path from 'path'
 
 import { tests } from '@filecoin-foundation/cypress/support'
+import { buildIssueSlug } from '@filecoin-foundation/utils/buildIssueSlug'
 import type { GenericEntryFrontmatter } from '@filecoin-foundation/utils/types/genericEntryFrontmatterType'
 
 import { PATHS } from '@/constants/paths'
@@ -9,7 +10,7 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { getMetaTitleWithSuffix } from '@/cypress/utils/getMetaTitleWithSuffix'
 
 type DigestIssueFrontmatter = GenericEntryFrontmatter & {
-  issuePath: string
+  'issue-number': number
 }
 
 const CONTENT_FOLDER = PATHS.DIGEST.issuesContentPath
@@ -20,9 +21,10 @@ describe('Digest Issue Page', () => {
       cy.task<DigestIssueFrontmatter>(
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
-      ).then(({ title, seo, issuePath }) => {
+      ).then(({ title, seo, 'issue-number': issueNumber }) => {
         const seoTitle = seo.title || title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
+        const issuePath = buildIssueSlug(issueNumber)
 
         tests.metadata.fn({
           path: `${PATHS.DIGEST.path}/${issuePath}`,
@@ -39,7 +41,8 @@ describe('Digest Issue Page', () => {
       cy.task<DigestIssueFrontmatter>(
         'getEntryFrontmatter',
         path.join(CONTENT_FOLDER, slug),
-      ).then(({ issuePath }) => {
+      ).then(({ 'issue-number': issueNumber }) => {
+        const issuePath = buildIssueSlug(issueNumber)
         tests.links.fn(`${PATHS.DIGEST.path}/${issuePath}`)
       })
     })

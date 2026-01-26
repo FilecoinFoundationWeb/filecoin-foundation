@@ -21,18 +21,20 @@ export default async function sitemap() {
         getData: getProjectsData,
         basePath: PATHS.PROJECTS.path,
       },
-      {
-        getData: getDigestIssuesData,
-        basePath: PATHS.DIGEST.path,
-      },
     ],
   })
 
-  const articles = await getDigestArticlesData()
-  const articleRoutes = articles.map(({ articlePath, updatedOn }) => ({
-    url: `${BASE_URL}${articlePath}`,
+  const issues = await getDigestIssuesData()
+  const issueRoutes = issues.map(({ issuePath, updatedOn }) => ({
+    url: `${BASE_URL}${PATHS.DIGEST.path}/${issuePath}`,
     lastModified: updatedOn.toISOString(),
   }))
 
-  return [...routes, ...articleRoutes]
+  const articles = await getDigestArticlesData()
+  const articleRoutes = articles.map(({ articlePath, updatedOn }) => ({
+    url: `${BASE_URL}${PATHS.DIGEST.path}/${articlePath}`,
+    lastModified: updatedOn.toISOString(),
+  }))
+
+  return [...routes, ...issueRoutes, ...articleRoutes]
 }
