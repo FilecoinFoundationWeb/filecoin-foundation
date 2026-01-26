@@ -57,7 +57,6 @@ export default async function DigestIssue(props: DigestIssueProps) {
               title,
               image,
               articlePath,
-              slug,
               articleNumber,
               issueNumber,
               description,
@@ -66,7 +65,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
 
             return (
               <Card
-                key={slug}
+                key={articlePath}
                 as="article"
                 avatars={authors}
                 description={{ text: description, isClamped: true }}
@@ -105,8 +104,8 @@ export default async function DigestIssue(props: DigestIssueProps) {
 export async function generateStaticParams() {
   const allIssues = await getDigestIssuesData()
 
-  return allIssues.map(({ slug }) => ({
-    issue: slug,
+  return allIssues.map(({ issuePath }) => ({
+    issue: issuePath,
   }))
 }
 
