@@ -17,7 +17,6 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { getDigestArticleData } from '../../utils/getDigestArticleData'
 import { getDigestArticlesWithIssueContext } from '../../utils/getDigestArticlesWithIssueContext'
 import { getDigestIssuesData } from '../../utils/getDigestIssueData'
-import { buildIssueSlug } from '../../utils/parseDigestParams'
 
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -29,8 +28,15 @@ type DigestArticleProps = {
 export default async function DigestArticle(props: DigestArticleProps) {
   const { slug: articleSlug } = await props.params
   const article = await getDigestArticleData(articleSlug)
-  const { title, issueNumber, articleNumber, image, authors, content, slug } =
-    article
+  const {
+    title,
+    issueNumber,
+    articlePath,
+    articleNumber,
+    image,
+    authors,
+    content,
+  } = article
 
   const atLeastOneAuthorHasBio = authors.some((author) => author.bio)
 
@@ -62,7 +68,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
         <ShareArticle
           sectionTitle="Share Article"
           articleTitle={title}
-          path={`${PATHS.DIGEST.path}/${slug}`}
+          path={`${PATHS.DIGEST.path}/${articlePath}`}
           baseUrl={BASE_URL}
         />
       </ArticleLayout>
@@ -79,7 +85,7 @@ export async function generateStaticParams() {
         issue.issueNumber,
       )
       return issueArticles.map((article) => ({
-        issue: buildIssueSlug(article.issueNumber),
+        issue: issue.issuePath,
         slug: article.slug,
       }))
     }),
@@ -89,11 +95,12 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
-  const { slug } = await props.params
-  const { seo, image, issueNumber } = await getDigestArticleData(slug)
+  const { slug: articleSlug } = await props.params
+  const article = await getDigestArticleData(articleSlug)
+  const { seo, image, articlePath } = article
 
   return createMetadata({
-    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}` as `/${string}`,
+    path: `${PATHS.DIGEST.path}/${articlePath}` as `/${string}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,

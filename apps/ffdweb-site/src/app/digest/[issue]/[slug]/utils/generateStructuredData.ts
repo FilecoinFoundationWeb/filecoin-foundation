@@ -9,11 +9,11 @@ import { generateWebPageStructuredData } from '@/utils/generateWebPageStructured
 export function generateStructuredData(
   data: DigestArticleData,
 ): WithContext<WebPage> {
-  const { seo } = data
+  const { seo, articlePath } = data
 
   return generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
-    path: `${PATHS.DIGEST.path}/${data.slug}` as DynamicPathValues,
+    path: `${PATHS.DIGEST.path}/${articlePath}` as DynamicPathValues,
   })
 }

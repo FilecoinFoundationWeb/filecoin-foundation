@@ -1,5 +1,6 @@
 import removeMarkdown from 'remove-markdown'
 
+import { buildArticlePath } from './buildDigestPath'
 import { getAllMarkdownData } from './getAllMarkdownData'
 import { getMarkdownData } from './getMarkdownData'
 import { DigestArticleFrontmatterSchema } from './schemas/DigestArticleFrontmatterSchema'
@@ -40,6 +41,10 @@ function transformDigestArticleData(
   return {
     ...article,
     description: removeMarkdown(article.content),
+    articlePath: buildArticlePath({
+      issueNumber: article.issueNumber,
+      articleSlug: article.slug,
+    }),
     seo: {
       ...article.seo,
       title: article.seo.title || article.title,
