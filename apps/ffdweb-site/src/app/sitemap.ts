@@ -29,8 +29,8 @@ export default async function sitemap() {
   })
 
   const articles = await getDigestArticlesData()
-  const articleRoutes = articles.map(({ path, updatedOn }) => ({
-    url: `${BASE_URL}${path}`,
+  const articleRoutes = articles.map(({ articlePath, updatedOn }) => ({
+    url: `${BASE_URL}${articlePath}`,
     lastModified: updatedOn.toISOString(),
   }))
 
