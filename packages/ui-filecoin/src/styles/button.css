@@ -53,6 +53,10 @@
         }
       }
 
+      .gray-section & {
+        @apply bg-gray-200;
+      }
+
       .dark-section & {
         @apply bg-zinc-950 text-zinc-50;
 
