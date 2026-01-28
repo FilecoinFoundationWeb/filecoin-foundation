@@ -38,7 +38,7 @@
       }
 
       .light-section & {
-        @apply bg-white text-zinc-950;
+        @apply text-zinc-950;
 
         & .button-arrow-icon {
           @apply text-zinc-500;
@@ -51,6 +51,14 @@
             @apply text-zinc-300;
           }
         }
+      }
+
+      .light-section & {
+        @apply bg-white;
+      }
+
+      .gray-section & {
+        @apply bg-gray-200;
       }
 
       .dark-section & {
