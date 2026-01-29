@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.7.4
+
+### Patch Changes
+
+- 058204b: Text link fixes
+
 ## 0.7.3
 
 ### Patch Changes
