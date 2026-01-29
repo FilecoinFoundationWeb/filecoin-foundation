@@ -23,4 +23,8 @@
       @apply text-zinc-400;
     }
   }
+
+  footer .text-link {
+    @apply no-underline hover:underline;
+  }
 }
