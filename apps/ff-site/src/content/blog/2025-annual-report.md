@@ -8,6 +8,7 @@ description: >+
   We’re proud to share our progress and grateful to continue supporting the
   Filecoin ecosystem throughout 2026.
 
+add-table-of-contents: true
 seo:
   description: We’re proud to share our progress and grateful to continue
     supporting the Filecoin ecosystem throughout 2026.
@@ -486,5 +487,25 @@ This year Filecoin Orbit welcomed 10 new regional ambassadors, including univers
 FF engaged with policymakers around the world to ensure that legislators recognize Filecoin as an important and legitimate use case with many real-world applications. As just one example of this work, FF organized a DePIN fly-in in Washington, D.C. focused on educating policymakers on the unique attributes and benefits of Filecoin and DePIN.
 
 As we head into 2026 and anticipate material progress on market structure legislation in the U.S., FF is focused on ensuring that the language in any bill will be positive for the Filecoin ecosystem, setting the stage for a more favorable regulatory environment in the future. 
+
+| Category                                                                                                           |        USD |       FIL |
+| :----------------------------------------------------------------------------------------------------------------- | ---------: | --------: |
+| Ecosystem Grants - General & Support                                  | $2,331,148 | 57,890 |
+| Ecosystem Grants - Network Metrics                                            | $1,200,000 |   165,000 |
+| Data Onboarding, Storage Provider, and Enterprise Programs & Grants | $1,039,203 |   300 |
+| Token Holder-Related Grants and Research                                    |   $165,572 |         0 |
+| Use Case Grants and Support                                                      |   $75,672 |    0 |
+| Solutions Architecture                                                       |   $59,033 |    0 |
+| Trust & Safety                                                         |   $390,000|    12,000 |
+| User Experience Improvement                                                     |   $523,833 |         0 |
+| Protocol Implementation Grants                                                  | $$3,134,075 |         0 |
+| Network Security (Including Bug Bounties and Network Audits)              | $623,672 |   0 |
+| Network Governance                                                           |   $149,270 |    0 |
+| Filecoin Plus Grants and Support                                                 | $585,366 |    0 |
+| Events, Comms, Marketing, and Design                                             | $3,844,825 |   11,307 |
+| Regulatory and Policy                                                                    | $1,458,848 |    19,516 |
+| Enablement (Legal, Finance, HR, IT, etc.)                                                                          | $3,037,951 |   24,174 |
+| Other Operating Expenses (Insurance, Taxes, etc.)                                                                  | $5,578,146 |    0 |
+| Cross-Functional Personnel                                                                                         |   $1,206,875 |   443,329 |
 
 ###
