@@ -60,7 +60,6 @@ export default function StoreData() {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        centerCTA
         <SectionContent
           headingTag="h2"
           title="Store on Filecoin"
