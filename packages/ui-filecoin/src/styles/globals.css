@@ -48,6 +48,13 @@
   border-color: transparent;
 }
 
+@utility prose {
+  & h2,
+  & h3,
+  & h4 {
+    @apply font-medium;
+  }
+}
 /* SECTION VARIANT COLORS */
 :root,
 .light-section {
