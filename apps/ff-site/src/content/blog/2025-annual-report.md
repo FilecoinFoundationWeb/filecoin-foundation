@@ -108,7 +108,7 @@ Filecoin Foundation committed funding and continued to support the projects list
 * **[Webrecorder](https://webrecorder.net/):** Webrecorder makes web archiving accessible, using IPFS and Filecoin as a foundation for decentralized web archiving. 
 * **[Zondax](https://fil.org/ecosystem-explorer/zondax):** Zondax is a blockchain service provider that delivers services and software solutions for security, data indexing, integration, and protocol engineering. Zondax’s contributions to the Filecoin ecosystem include Beryx API, Filecoin signing tools, Filecoin Ledger App, Assembly script SDK for FVM, and Filecoin Gas.
 
-#### RetroPGF Funding Highlights 
+#### RetroPGF Funding Highlights
 
 Projects from the second round of RetroPGF were announced last December 2024 at the beginning of FF’s FY2025. The top 5 projects to receive funding included:  
 
@@ -118,9 +118,7 @@ Projects from the second round of RetroPGF were announced last December 2024 at 
 * **[Filecoin Spark](https://pl-strflt.notion.site/Spark-Docs-884606dfbe074f7598f53025ebaf519b):** A trustless protocol for sampling retrievals from Filecoin Storage Providers.
 * **[Randamu](https://randa.mu/):** Real-world consensus via threshold cryptography and Web3 innovation using Filecoin Testnet.
 
-
 Projects from the third round of RetroPGF were announced in December 2025 at the beginning of FY2026. The top 5 projects to receive funding included:  
-
 
 * **[FilOz](https://www.filoz.org/)**: An independent public goods Filecoin protocol design and development team within the Filecoin ecosystem that has been driving the development of Filecoin Onchain Cloud. 
 * **[Filecoin Onchain Cloud](https://filecoin.cloud/)**: A decentralized cloud platform that brings verifiable storage, fast retrieval, and programmable payments fully onchain. 
@@ -128,7 +126,6 @@ Projects from the third round of RetroPGF were announced in December 2025 at the
 * **[FIL-Builders](https://fil.builders/)**: An independent public goods developer experience team, FIL-B is dedicated to supporting builders on Filecoin by providing documentation, tutorials, tooling, technical guidance, and workshops to simplify onchain development using Filecoin Onchain Cloud, FVM, and related protocols.
 * **[Filecoin Data Portal](https://filecoindataportal.xyz/):** The Filecoin Data Portal is a fully open and local friendly data platform that unifies Filecoin data from diverse onchain and off-chain sources. It is an instance of [Datadex](https://github.com/datonic/datadex).
 
-### 
 Filecoin Onchain Cloud: A Pivotal Network Milestone
 
 #### Filecoin Onchain Cloud by the Numbers 
@@ -154,9 +151,7 @@ As Filecoin Onchain Cloud entered the market, several key partners began integra
 
 Additional integrations included [ERC-8004](https://eips.ethereum.org/EIPS/eip-8004), [Ethereum Name Service (ENS)](https://ens.domains/), [Safe](https://app.safe.global/safe-labs-terms?redirect=%2F), and [Geo Podcasts](https://www.geobrowser.io/).
 
-
 Launch Impact and Global Reach
-
 
 Filecoin Onchain Cloud was announced live at DePIN Day Buenos Aires, drawing more than 280 attendees and 30+ media partners –– and coinciding with a major Cloudflare outage that underscored the fragility of centralized cloud infrastructure. Filecoin Onchain Cloud offered a compelling alternative rooted in openness, verifiability, and community ownership. Sentiment across the ecosystem was positive, and launch momentum exceeded expectations across all channels, including: 
 
@@ -195,11 +190,23 @@ Key workstreams include:
 In 2025, Filecoin Foundation strengthened its ecosystem presence across the Asia-Pacific region by expanding community programs, advancing local partnerships, and establishing new structures to support long-term network growth. Together, these efforts reinforced support for a region that is vital to the overall strength of the network and its community.
 
 * **APAC AMAs**: Led four APAC AMA sessions, each drawing 24k–35k listeners. The strong turnout demonstrated sustained demand for regionally tailored programming and underscored APAC’s role as the most active and engaged community hub in the network.
-
 * **Event Series**: Hosted a series of in-person gatherings in collaboration with leading regional partners — including Hangzhou SP & Builder Day with Zhejiang University, Hangzhou SP meetups, and the Singapore SP meetup — maintaining a consistent presence on the ground and supporting continued ecosystem activation.
-
 * **Media Partnerships**: Worked with top media and ecosystem organizations, including MetaEra, TechFlow, Ansa Research, ND Labs, and regional media networks, to expand content distribution. Also developed APAC-specific messaging to better reach diverse audiences and strengthen awareness across key markets.
 
-
-
 **New APAC Working Groups**: Established two APAC working groups focused on Marketing & Communications and Governance, bringing together core contributors to align strategy, address shared challenges, and support more coordinated engagement across the region.
+
+
+
+#### Building Bridges with L1 Ecosystems
+
+FF continues to strengthen connections with Layer 1 (L1) ecosystems to advance decentralization and expand access to open, resilient infrastructure. This year’s work centered on a collaboration with Ava Labs, marking an important step forward in cross-chain data mobility.
+
+* **[Avalanche](https://filecoin.io/blog/posts/new-avalanche-x-filecoin-data-bridge-unlocks-cross-chain-value/):** In May, the Filecoin and Avalanche ecosystems launched a native cross-chain data bridge connecting Avalanche’s C-Chain to Filecoin’s decentralized storage network. The integration gives Avalanche builders access to scalable, verifiable, and cost-efficient storage for enterprise-grade and multi-chain applications, while reinforcing Filecoin’s role as the leading decentralized data layer for Web3.
+
+### Quality Engineering: Strengthening Open Infrastructure 
+
+#### Quality Engineering by the Numbers 
+
+* 3.5 PiB of culturally valuable datasets onboarded to the network 
+
+Composed of longtime core infrastructure engineers from across the ecosystem, Filecoin Foundation’s Quality Engineering (QE) team plays a leading role in building the technical foundation for Filecoin’s future. Through cross-organizational initiatives that improve network functionality and support protocol advancements, the team develops solutions that enhance client experience and protocol usability. Focused on practical strategies for driving real-world adoption of Filecoin storage, particularly among archival clients, the QE team builds and refines tools that unlock scalable demand and support long-term network growth.
