@@ -224,3 +224,15 @@ As part of Filecoin Foundation’s mission to preserve humanity’s most importa
 #### Archival Data Onboarding with Singularity
 
 As one of the only open source, self-hosted tools for onboarding data to the network, Singularity is the first choice for archival clients who want full control of their Filecoin pipeline. QE’s commons data preservation work gives the team a tight feedback loop with archival partners, allowing the QE team to dogfood and simplify Singularity as a pathway for onboarding and retrieval of large archival datasets. Through this work, the team has identified critical bugs and usability issues –– not just in Singularity, but across Filecoin’s broader tooling and systems.
+
+### Governance: Shaping a New Era of Filecoin Governance 
+
+#### Governance by the Numbers 
+
+* 3 network upgrades in FY2025
+* 13 FIPs and 1 Filecoin Requests for Comments (FRC) executed across upgrades
+* 780+ PiB of DataCap distributed  
+
+Governance of the Filecoin ecosystem is at an inflection point.Since the network’s inception, Filecoin’s open source governance has been anchored in the Filecoin Improvement Proposal (FIP) process. As the network has scaled, the demands on governance have expanded as well. This year, FF continued to strengthen the governance framework to meet the needs of a maturing network while staying true to its decentralized, open source principles.
+
+As an open source project, Filecoin is governed through community-driven processes rooted in openness, collaboration, and shared stewardship. FF supports this decentralized model by facilitating transparent [forums for discussion](https://github.com/filecoin-project/FIPs), broadening and diversifying participation, and ensuring that community input meaningfully informs the evolution of the core protocol.
