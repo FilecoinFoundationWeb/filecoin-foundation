@@ -135,7 +135,9 @@ Projects from the third round of RetroPGF were announced in December 2025 at the
 * **[FIL-Builders](https://fil.builders/)**: An independent public goods developer experience team, FIL-B is dedicated to supporting builders on Filecoin by providing documentation, tutorials, tooling, technical guidance, and workshops to simplify onchain development using Filecoin Onchain Cloud, FVM, and related protocols.
 * **[Filecoin Data Portal](https://filecoindataportal.xyz/):** The Filecoin Data Portal is a fully open and local friendly data platform that unifies Filecoin data from diverse onchain and off-chain sources. It is an instance of [Datadex](https://github.com/datonic/datadex).
 
-Filecoin Onchain Cloud: A Pivotal Network Milestone
+![](/assets/images/2025_ffannualreport_foc1_1x.webp)
+
+### Filecoin Onchain Cloud: A Pivotal Network Milestone
 
 #### Filecoin Onchain Cloud by the Numbers 
 
@@ -149,6 +151,8 @@ Filecoin Onchain Cloud introduces a cloud platform that provides developers with
 
 Filecoin Foundation played a key role in bringing Filecoin Onchain Cloud to launch across marketing, communications, design, website development, events, and ecosystem coordination. FF partnered closely with contributors to shape the strategy, develop content and messaging, coordinate external outreach, bring collaborators on board, and activate communities around the world. 
 
+![](/assets/images/2025_ffannualreport_foc2_1x.webp)
+
 #### Early Ecosystem Adoption
 
 As Filecoin Onchain Cloud entered the market, several key partners began integrating the new building blocks into their products and services. These early collaborations demonstrate the breadth of use cases unlocked by a verifiable, decentralized cloud and highlight the momentum among teams building with Filecoin Onchain Cloud’s storage, retrieval, and verification capabilities.
@@ -160,7 +164,9 @@ As Filecoin Onchain Cloud entered the market, several key partners began integra
 
 Additional integrations included [ERC-8004](https://eips.ethereum.org/EIPS/eip-8004), [Ethereum Name Service (ENS)](https://ens.domains/), [Safe](https://app.safe.global/safe-labs-terms?redirect=%2F), and [Geo Podcasts](https://www.geobrowser.io/).
 
-Launch Impact and Global Reach
+![](/assets/images/2025_ffannualreport_foc3_1x.webp)
+
+#### Launch Impact and Global Reach
 
 Filecoin Onchain Cloud was announced live at DePIN Day Buenos Aires, drawing more than 280 attendees and 30+ media partners –– and coinciding with a major Cloudflare outage that underscored the fragility of centralized cloud infrastructure. Filecoin Onchain Cloud offered a compelling alternative rooted in openness, verifiability, and community ownership. Sentiment across the ecosystem was positive, and launch momentum exceeded expectations across all channels, including: 
 
@@ -204,6 +210,8 @@ In 2025, Filecoin Foundation strengthened its ecosystem presence across the Asia
 
 **New APAC Working Groups**: Established two APAC working groups focused on Marketing & Communications and Governance, bringing together core contributors to align strategy, address shared challenges, and support more coordinated engagement across the region.
 
+![](/assets/images/2025_ffannualreport_avalanche_1x.webp)
+
 #### Building Bridges with L1 Ecosystems
 
 FF continues to strengthen connections with Layer 1 (L1) ecosystems to advance decentralization and expand access to open, resilient infrastructure. This year’s work centered on a collaboration with Ava Labs, marking an important step forward in cross-chain data mobility.
@@ -218,9 +226,13 @@ FF continues to strengthen connections with Layer 1 (L1) ecosystems to advance d
 
 Composed of longtime core infrastructure engineers from across the ecosystem, Filecoin Foundation’s Quality Engineering (QE) team plays a leading role in building the technical foundation for Filecoin’s future. Through cross-organizational initiatives that improve network functionality and support protocol advancements, the team develops solutions that enhance client experience and protocol usability. Focused on practical strategies for driving real-world adoption of Filecoin storage, particularly among archival clients, the QE team builds and refines tools that unlock scalable demand and support long-term network growth. 
 
+![](/assets/images/2025_ffannualreport_corelogos_1x.webp)
+
 #### Core Infrastructure & Protocol Maintenance
 
 The QE team oversees funding strategy for core infrastructure projects, including Forest, ProbeLab, Starboard, Venus, Zondax, and others. They also work closely with FF’s Security, Governance, and Funding Operations and Impact teams to support core protocol implementations, ecosystem metrics, developer grants, documentation, governance reform, and network upgrades.
+
+![](/assets/images/2025_ffannualreport_commonslogos_1x.webp)
 
 #### Commons Data Preservation
 
@@ -231,6 +243,8 @@ As part of Filecoin Foundation’s mission to preserve humanity’s most importa
 #### Archival Data Onboarding with Singularity
 
 As one of the only open source, self-hosted tools for onboarding data to the network, Singularity is the first choice for archival clients who want full control of their Filecoin pipeline. QE’s commons data preservation work gives the team a tight feedback loop with archival partners, allowing the QE team to dogfood and simplify Singularity as a pathway for onboarding and retrieval of large archival datasets. Through this work, the team has identified critical bugs and usability issues –– not just in Singularity, but across Filecoin’s broader tooling and systems.
+
+![](/assets/images/2025_ffannualreport_constellation3_1x.webp)
 
 ### Governance: Shaping a New Era of Filecoin Governance 
 
@@ -244,6 +258,8 @@ Governance of the Filecoin ecosystem is at an inflection point.Since the network
 
 As an open source project, Filecoin is governed through community-driven processes rooted in openness, collaboration, and shared stewardship. FF supports this decentralized model by facilitating transparent [forums for discussion](https://github.com/filecoin-project/FIPs), broadening and diversifying participation, and ensuring that community input meaningfully informs the evolution of the core protocol.
 
+![](/assets/images/2025_ffannualreport_constellation1_1x.webp)
+
 #### Constellation Program
 
 In late 2025, FF’s Governance team formally launched the [Constellation Program](https://fil.org/blog/help-us-shape-a-new-era-of-filecoin-governance), a structured, community-driven, and multi-phase initiative to evolve and modernize how governance works across the Filecoin ecosystem.[ ](https://fil.org/blog/help-us-shape-a-new-era-of-filecoin-governance)The program includes three phases:
@@ -256,7 +272,7 @@ The initial Nebula phase kicked off in November at FDS-7, diving into [Filecoin 
 
 The FF governance team also introduced a broader governance framework built on three interacting pillars, each covering a distinct dimension of Filecoin governance. 
 
-Network Upgrades
+#### Network Upgrades
 
 Throughout Fiscal Year 2025, FF continued to collaborate closely with the Lotus, Venus, and Forest implementation teams to advance a predictable, transparent upgrade schedule for the Filecoin network. This coordinated approach helps ensure that improvements to security, functionality, and performance are developed in the open and vetted by the community.
 
@@ -269,7 +285,7 @@ This year, the Filecoin network successfully deployed multiple major upgrades to
 
 Each upgrade incorporated community input and rigorous testing, reflecting the Filecoin community’s commitment to participatory governance and the continuous strengthening of its decentralized infrastructure.
 
-Filecoin Plus (Fil+) Updates 
+#### Filecoin Plus (Fil+) Updates 
 
 Building on the alignment that emerged at FDS-5 in Bangkok, Filecoin Foundation’s Governance team, in collaboration with Filecoin Incentive Design Labs (FIDL), introduced a [2025/2026 Fil+ roadmap](https://fil.org/blog/filecoin-plus-fds-recap-and-2025-priorities) focused on six key action areas: Layer 2 scaling solutions, security and efficiency improvements, onboarding enhancements, new Fil+ allocation experiments, allocator performance scoring system innovation, and tiered incentive mechanisms. These initiatives aimed to accelerate the storage of useful data, strengthen trust and auditability, and expand Fil+’s ability to support a diverse range of real-world use cases.
 
