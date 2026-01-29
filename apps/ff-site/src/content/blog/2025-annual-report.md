@@ -209,4 +209,18 @@ FF continues to strengthen connections with Layer 1 (L1) ecosystems to advance d
 
 * 3.5 PiB of culturally valuable datasets onboarded to the network 
 
-Composed of longtime core infrastructure engineers from across the ecosystem, Filecoin Foundation’s Quality Engineering (QE) team plays a leading role in building the technical foundation for Filecoin’s future. Through cross-organizational initiatives that improve network functionality and support protocol advancements, the team develops solutions that enhance client experience and protocol usability. Focused on practical strategies for driving real-world adoption of Filecoin storage, particularly among archival clients, the QE team builds and refines tools that unlock scalable demand and support long-term network growth.
+Composed of longtime core infrastructure engineers from across the ecosystem, Filecoin Foundation’s Quality Engineering (QE) team plays a leading role in building the technical foundation for Filecoin’s future. Through cross-organizational initiatives that improve network functionality and support protocol advancements, the team develops solutions that enhance client experience and protocol usability. Focused on practical strategies for driving real-world adoption of Filecoin storage, particularly among archival clients, the QE team builds and refines tools that unlock scalable demand and support long-term network growth. 
+
+#### Core Infrastructure & Protocol Maintenance
+
+The QE team oversees funding strategy for core infrastructure projects, including Forest, ProbeLab, Starboard, Venus, Zondax, and others. They also work closely with FF’s Security, Governance, and Funding Operations and Impact teams to support core protocol implementations, ecosystem metrics, developer grants, documentation, governance reform, and network upgrades.
+
+#### Commons Data Preservation
+
+Throughout 2025, the QE team worked closely with FF partners, including Harvard Library Innovation Lab, Human Rights Data Analysis Group (HRDAG), Internet Archive, and others, to develop decentralized storage solutions for diverse data preservation communities, driving novel use cases for Filecoin and providing critical product feedback to the ecosystem.
+
+As part of Filecoin Foundation’s mission to preserve humanity’s most important information, the QE team stewards over 3.5 PiB of culturally valuable datasets on the network, including data from [Democracy’s Library,](https://blog.archive.org/2022/10/19/announcing-democracys-library/) [Flickr Commons](https://www.flickr.com/commons), [NASA GEDI geospatial data](https://gedi.umd.edu/), [MIT OpenCourseWare](https://ocw.mit.edu/), [Prelinger Archives](https://help.archive.org/help/prelinger-archive/), and more.
+
+#### Archival Data Onboarding with Singularity
+
+As one of the only open source, self-hosted tools for onboarding data to the network, Singularity is the first choice for archival clients who want full control of their Filecoin pipeline. QE’s commons data preservation work gives the team a tight feedback loop with archival partners, allowing the QE team to dogfood and simplify Singularity as a pathway for onboarding and retrieval of large archival datasets. Through this work, the team has identified critical bugs and usability issues –– not just in Singularity, but across Filecoin’s broader tooling and systems.
