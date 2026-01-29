@@ -196,8 +196,6 @@ In 2025, Filecoin Foundation strengthened its ecosystem presence across the Asia
 
 **New APAC Working Groups**: Established two APAC working groups focused on Marketing & Communications and Governance, bringing together core contributors to align strategy, address shared challenges, and support more coordinated engagement across the region.
 
-
-
 #### Building Bridges with L1 Ecosystems
 
 FF continues to strengthen connections with Layer 1 (L1) ecosystems to advance decentralization and expand access to open, resilient infrastructure. This year’s work centered on a collaboration with Ava Labs, marking an important step forward in cross-chain data mobility.
@@ -250,7 +248,6 @@ The initial Nebula phase kicked off in November at FDS-7, diving into [Filecoin 
 
 The FF governance team also introduced a broader governance framework built on three interacting pillars, each covering a distinct dimension of Filecoin governance. 
 
-
 Network Upgrades
 
 Throughout Fiscal Year 2025, FF continued to collaborate closely with the Lotus, Venus, and Forest implementation teams to advance a predictable, transparent upgrade schedule for the Filecoin network. This coordinated approach helps ensure that improvements to security, functionality, and performance are developed in the open and vetted by the community.
@@ -263,7 +260,6 @@ This year, the Filecoin network successfully deployed multiple major upgrades to
 * **[NV24 Tuk Tuk](https://fil.org/blog/announcing-the-filecoin-nv24-tuk-tuk-upgrade-enhancing-filecoin-s-efficiency) (November 2024):** This upgrade delivered significant efficiency and stability improvements to the Filecoin network, optimizing system actors, reducing gas costs, and enhancing the overall performance of the protocol as it scales.
 
 Each upgrade incorporated community input and rigorous testing, reflecting the Filecoin community’s commitment to participatory governance and the continuous strengthening of its decentralized infrastructure.
-
 
 Filecoin Plus (Fil+) Updates 
 
@@ -286,8 +282,6 @@ Additionally, FF’s Security team advanced the development of ecosystem securit
 To improve visibility and strengthen threat detection, the team introduced approximately 30 new monitoring metrics, deployed chain-level alerts for suspicious activity, and launched a dedicated threat intelligence pipeline integrated directly into incident response and testing workflows.The team also coordinated the ecosystem bug bounty program, processing more than 35 submissions. Together, these efforts further strengthened operational readiness and reduced risk across the Filecoin network. 
 
 ### User Experience Improvement: Enhancing User Experience and Accessibility Across the Filecoin Ecosystem 
-
-#### 
 
 User Experience Improvement Team (UXIT) by the Numbers 
 
@@ -319,9 +313,7 @@ UXIT also delivered a wide range of improvements across fil.org, including upgra
 * Nearly 10,000 Filecoin mentions in verified news outlets 
 * 120+ speaking engagements and interviews secured for Filecoin ecosystem spokespeople
 
-### 
 This year marked a pivotal moment for the Filecoin ecosystem, reflecting on five years of progress while launching into a new era with Filecoin Onchain Cloud. The Marketing and Communications (MarComm) team played a central role in coordinating the community around shared narratives and amplifying the updates, wins, and breakthroughs emerging across the network.  
-
 
 The stories MarComm told this year illustrate both FF’s commitment to preserving humanity’s most important information and the network’s transformative expansion toward “opening the cloud.” A core part of this work is elevating the datasets and stories that demonstrate the network’s impact, demonstrating how decentralized storage preserves cultural memory, protects human rights documentation, strengthens scientific research, and more –– for generations to come.
 
@@ -334,9 +326,7 @@ Filecoin’s birthday represented an opportunity to recognize progress over five
 * 600k+ social media impressions across Filecoin and FF handles
 * 131.11% Week-over-week (WOW) increase in social media sentiment score 
 
-### 
 Preserved on Filecoin: Data Anchoring a Resilient Future
-
 
 **Expanding Journalism and Research Accessibility**
 
@@ -401,10 +391,6 @@ In 2025, Filecoin Foundation strengthened its role as a convener for the decentr
 3. **Builder Community:** Expanding regional engagement to grow a resilient, global builder community. 
 
 Across every gathering — from highly technical developer summits to global thought-leadership moments — FF worked to ensure that Filecoin’s narrative, strategic direction, and ecosystem milestones were consistently represented. These events created essential touchpoints for builders, elevated new tools and services, and strengthened the network’s position as the foundation for decentralized, verifiable data infrastructure.
-
-### 
-
-
 
 FIL City Events 
 
@@ -488,24 +474,58 @@ FF engaged with policymakers around the world to ensure that legislators recogni
 
 As we head into 2026 and anticipate material progress on market structure legislation in the U.S., FF is focused on ensuring that the language in any bill will be positive for the Filecoin ecosystem, setting the stage for a more favorable regulatory environment in the future. 
 
-| Category                                                                                                           |        USD |       FIL |
-| :----------------------------------------------------------------------------------------------------------------- | ---------: | --------: |
-| Ecosystem Grants - General & Support                                  | $2,331,148 | 57,890 |
-| Ecosystem Grants - Network Metrics                                            | $1,200,000 |   165,000 |
-| Data Onboarding, Storage Provider, and Enterprise Programs & Grants | $1,039,203 |   300 |
-| Token Holder-Related Grants and Research                                    |   $165,572 |         0 |
-| Use Case Grants and Support                                                      |   $75,672 |    0 |
-| Solutions Architecture                                                       |   $59,033 |    0 |
-| Trust & Safety                                                         |   $390,000|    12,000 |
-| User Experience Improvement                                                     |   $523,833 |         0 |
-| Protocol Implementation Grants                                                  | $$3,134,075 |         0 |
-| Network Security (Including Bug Bounties and Network Audits)              | $623,672 |   0 |
-| Network Governance                                                           |   $149,270 |    0 |
-| Filecoin Plus Grants and Support                                                 | $585,366 |    0 |
-| Events, Comms, Marketing, and Design                                             | $3,844,825 |   11,307 |
-| Regulatory and Policy                                                                    | $1,458,848 |    19,516 |
-| Enablement (Legal, Finance, HR, IT, etc.)                                                                          | $3,037,951 |   24,174 |
-| Other Operating Expenses (Insurance, Taxes, etc.)                                                                  | $5,578,146 |    0 |
-| Cross-Functional Personnel                                                                                         |   $1,206,875 |   443,329 |
+### 2025 Spend
 
-###
+Filecoin Foundation spending for fiscal year 2025.
+
+
+
+
+
+| Category                                                            | USD         | FIL     |
+| ------------------------------------------------------------------- | ----------- | ------- |
+| Ecosystem Grants - General & Support                                | $2,331,148  | 57,890  |
+| Ecosystem Grants - Network Metrics                                  | $1,200,000  | 165,000 |
+| Data Onboarding, Storage Provider, and Enterprise Programs & Grants | $1,039,203  | 300     |
+| Token Holder-Related Grants and Research                            | $165,572    | 0       |
+| Use Case Grants and Support                                         | $75,672     | 0       |
+| Solutions Architecture                                              | $59,033     | 0       |
+| Trust & Safety                                                      | $390,000    | 12,000  |
+| User Experience Improvement                                         | $523,833    | 0       |
+| Protocol Implementation Grants                                      | $$3,134,075 | 0       |
+| Network Security (Including Bug Bounties and Network Audits)        | $623,672    | 0       |
+| Network Governance                                                  | $149,270    | 0       |
+| Filecoin Plus Grants and Support                                    | $585,366    | 0       |
+| Events, Comms, Marketing, and Design                                | $3,844,825  | 11,307  |
+| Regulatory and Policy                                               | $1,458,848  | 19,516  |
+| Enablement (Legal, Finance, HR, IT, etc.)                           | $3,037,951  | 24,174  |
+| Other Operating Expenses (Insurance, Taxes, etc.)                   | $5,578,146  | 0       |
+| Cross-Functional Personnel                                          | $1,206,875  | 443,329 |
+
+### Learn More About Filecoin Foundation
+
+To learn more about FF, visit fil.org. 
+
+If you have questions or are interested in collaborating, don’t hesitate to reach out to the FF team — we’re here to support the ecosystem and look forward to hearing from you. 
+
+Grants: [grants@fil.org](mailto:grants@fil.org)
+
+Governance: [governance@fil.org](mailto:governance@fil.org)
+
+Fil+: [filplus@fil.org](mailto:filplus@fil.org) 
+
+Security: [security@fil.org](mailto:security@fil.org)
+
+Quality Engineering: [eng@fil.org](mailto:eng@fil.org)
+
+Funding Operations and Impact: [impact@fil.org](mailto:impact@fil.org) 
+
+UXIT: [uxit@fil.org](mailto:uxit@fil.org) 
+
+Communications and Marketing: [marketing@fil.org](mailto:marketing@fil.org) 
+
+Design: [design@fil.org](mailto:design@fil.org) 
+
+Events: [events@fil.org](mailto:events@fil.org)
+
+General questions: [hello@fil.org](mailto:hello@fil.org)
