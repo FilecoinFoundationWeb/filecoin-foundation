@@ -21,6 +21,11 @@
     @apply icon-button;
   }
 
+  /* FOOTER */
+  footer .text-link {
+    @apply no-underline hover:underline;
+  }
+
   /* FORM */
   .form-text-input {
     @apply block w-full border-b py-3 placeholder:text-sm data-disabled:cursor-not-allowed;
