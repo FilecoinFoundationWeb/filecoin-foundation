@@ -272,6 +272,8 @@ The initial Nebula phase kicked off in November at FDS-7, diving into [Filecoin 
 
 The FF governance team also introduced a broader governance framework built on three interacting pillars, each covering a distinct dimension of Filecoin governance. 
 
+![](/assets/images/2025_ffannualreport_constellation2_1x.webp)
+
 #### Network Upgrades
 
 Throughout Fiscal Year 2025, FF continued to collaborate closely with the Lotus, Venus, and Forest implementation teams to advance a predictable, transparent upgrade schedule for the Filecoin network. This coordinated approach helps ensure that improvements to security, functionality, and performance are developed in the open and vetted by the community.
@@ -284,6 +286,8 @@ This year, the Filecoin network successfully deployed multiple major upgrades to
 * **[NV24 Tuk Tuk](https://fil.org/blog/announcing-the-filecoin-nv24-tuk-tuk-upgrade-enhancing-filecoin-s-efficiency) (November 2024):** This upgrade delivered significant efficiency and stability improvements to the Filecoin network, optimizing system actors, reducing gas costs, and enhancing the overall performance of the protocol as it scales.
 
 Each upgrade incorporated community input and rigorous testing, reflecting the Filecoin community’s commitment to participatory governance and the continuous strengthening of its decentralized infrastructure.
+
+![](/assets/images/2025_ffannualreport_fil-_1x.webp)
 
 #### Filecoin Plus (Fil+) Updates 
 
@@ -307,7 +311,11 @@ To improve visibility and strengthen threat detection, the team introduced appro
 
 ### User Experience Improvement: Enhancing User Experience and Accessibility Across the Filecoin Ecosystem 
 
-User Experience Improvement Team (UXIT) by the Numbers 
+
+
+![](/assets/images/2025_ffannualreport_uxit_1x.webp)
+
+#### User Experience Improvement Team (UXIT) by the Numbers 
 
 * 23 dogfooding sessions orchestrated 
 * 15 sites supported through structured issue-triage and pull requests delivery 
@@ -337,6 +345,8 @@ UXIT also delivered a wide range of improvements across fil.org, including upgra
 * Nearly 10,000 Filecoin mentions in verified news outlets 
 * 120+ speaking engagements and interviews secured for Filecoin ecosystem spokespeople
 
+![](/assets/images/filecoin5_blogheader.webp)
+
 This year marked a pivotal moment for the Filecoin ecosystem, reflecting on five years of progress while launching into a new era with Filecoin Onchain Cloud. The Marketing and Communications (MarComm) team played a central role in coordinating the community around shared narratives and amplifying the updates, wins, and breakthroughs emerging across the network.  
 
 The stories MarComm told this year illustrate both FF’s commitment to preserving humanity’s most important information and the network’s transformative expansion toward “opening the cloud.” A core part of this work is elevating the datasets and stories that demonstrate the network’s impact, demonstrating how decentralized storage preserves cultural memory, protects human rights documentation, strengthens scientific research, and more –– for generations to come.
@@ -350,7 +360,9 @@ Filecoin’s birthday represented an opportunity to recognize progress over five
 * 600k+ social media impressions across Filecoin and FF handles
 * 131.11% Week-over-week (WOW) increase in social media sentiment score 
 
-Preserved on Filecoin: Data Anchoring a Resilient Future
+![](/assets/images/2025_ffannualreport_defiant_1x.webp)
+
+### Preserved on Filecoin: Data Anchoring a Resilient Future
 
 **Expanding Journalism and Research Accessibility**
 
@@ -359,6 +371,8 @@ In an increasingly digital era, the stories we tell and how we preserve them mat
 * **[The Defiant](https://thedefiant.io/news/defi/the-defiant-to-preserve-article-archives-on-filecoin)**: A leading Web3 media outlet, The Defiant, partnered with[ ](https://thedefiant.io/news/defi/the-defiant-to-preserve-article-archives-on-filecoin)Filecoin Foundation in March 2025 to create redundant, tamper-resistant backups of its reporting, ensuring long-term access. Today, at the bottom of every article, readers can see a “Preserved on Filecoin” marker — proof that the content is archived and accessible even if the original website goes down.
 * **[MuckRock](https://www.muckrock.com/news/archives/2024/sep/11/featured-add-on-push-to-ipfs-filecoin/)**: MuckRock integrated IPFS and Filecoin with its DocumentCloud platform, which hosts over 5.5 million verified documents. More than 500,000 files from newsrooms, nonprofits, and researchers have been preserved on Filecoin, ensuring continual access to key public records.
 * **[Fasila](https://www.fasila-inc.com/)**: A news organization supporting local journalists, Fasila, is helping more than 20 journalists preserve their most critical reporting. Stories from their journalist partners — along with associated digital records— are being stored on the Filecoin network and made accessible through IPFS, ensuring these vital narratives are not lost to time, censorship, or technological failure.
+
+![](/assets/images/2025_ffannualreport_culturallogos_1x.webp)
 
 ### **Preserving Cultural Heritage & Scientific Knowledge**
 
@@ -381,6 +395,8 @@ Public speaking engagements position ecosystem spokespeople alongside reputable 
 In addition to placing Filecoin speakers at external events, FF leveraged its owned channels to amplify Filecoin’s brand through conversations with credible industry leaders. FF’s podcast, [DWeb Decoded](https://www.youtube.com/playlist?list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy), served as a key channel for engaging the Filecoin community. With 65 episodes in 2025, DWeb Decoded featured high-profile guests including [U.S. CFTC Commissioner Kristin Johnson](https://www.youtube.com/watch?v=LJO3PmzYUkI&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=45&pp=iAQB), [former Executive Director of the Presidential Council of Advisers for Digital Assets Bo Hines](https://www.youtube.com/watch?v=HbkMItxV-Bo&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=18&pp=iAQB), and executives from [Circle](https://www.youtube.com/watch?v=2QGTzJ72W3E&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=63&t=131s&pp=iAQB), [Chainalysis](https://www.youtube.com/watch?v=enYyUl1tXgI&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=60&t=175s&pp=iAQB0gcJCToKAYcqIYzv), [Ernest & Young](https://www.youtube.com/watch?v=v6s6godgZSU&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=33&pp=iAQB), [Gensyn](https://www.youtube.com/watch?v=nQggsoNGWMc&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=25&t=1s&pp=iAQB), [Monad](https://www.youtube.com/watch?v=7WXk2SKYauk&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=4&pp=iAQB), [Stellar](https://www.youtube.com/@filecoinfoundation), [The Defiant](https://www.youtube.com/watch?v=4KPY-XMUW-4&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=39&t=11s&pp=iAQB) and many more mission-aligned projects.
 
 ### Creative: Refining Brand Coherence and Creative Innovation
+
+![](/assets/images/2025_ffannualreport_design_1x.webp)
 
 #### Creative by the numbers:
 
@@ -416,7 +432,9 @@ In 2025, Filecoin Foundation strengthened its role as a convener for the decentr
 
 Across every gathering — from highly technical developer summits to global thought-leadership moments — FF worked to ensure that Filecoin’s narrative, strategic direction, and ecosystem milestones were consistently represented. These events created essential touchpoints for builders, elevated new tools and services, and strengthened the network’s position as the foundation for decentralized, verifiable data infrastructure.
 
-FIL City Events 
+![](/assets/images/2025_ffannualreport_events.webp)
+
+#### FIL City Events 
 
 FIL City events are umbrella experiences that connect multiple ecosystem events, often anchored to major industry conferences like Consensus or Devconnect. By structuring several curated events under one banner, FIL City creates a cohesive presence that amplifies announcements, fosters collaboration, and convenes the Filecoin ecosystem at moments of peak industry attention.
 
