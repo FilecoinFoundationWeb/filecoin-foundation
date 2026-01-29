@@ -1,5 +1,5 @@
 ---
-title: "2025 Annual Report "
+title: "Filecoin Foundation 2025 Annual Report "
 created-on: 2026-01-29T14:23:00.000Z
 updated-on: 2026-01-29T14:23:00.000Z
 published-on: 2026-01-29T14:23:00.000Z
