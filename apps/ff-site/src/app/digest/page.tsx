@@ -62,7 +62,7 @@ export default async function Digest() {
             const {
               title,
               image,
-              slug,
+              articlePath,
               issueNumber,
               articleNumber,
               description,
@@ -71,7 +71,7 @@ export default async function Digest() {
 
             return (
               <Card
-                key={slug}
+                key={articlePath}
                 as="article"
                 avatars={authors}
                 description={{ text: description, isClamped: true }}
@@ -80,7 +80,7 @@ export default async function Digest() {
                   { text: `Article ${articleNumber}` },
                 ]}
                 cta={{
-                  href: `${PATHS.DIGEST.path}/${slug}`,
+                  href: `${PATHS.DIGEST.path}/${articlePath}`,
                   text: 'Read Article',
                   icon: {
                     component: BookOpenIcon,

@@ -26,6 +26,16 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/digest/issue-1',
+    destination: '/digest',
+    permanent: true,
+  },
+  {
+    source: '/digest/:slug',
+    destination: '/digest/issue-1/:slug',
+    permanent: true,
+  },
+  {
     source: '/davos',
     destination: '/events/davos',
     permanent: true,
