@@ -8,6 +8,8 @@ description: >+
   We’re proud to share our progress and grateful to continue supporting the
   Filecoin ecosystem throughout 2026.
 
+image:
+  src: /assets/images/2025_ffannualreport_hero_1x.webp
 add-table-of-contents: true
 seo:
   description: We’re proud to share our progress and grateful to continue
@@ -38,6 +40,8 @@ In 2017, the creators of Filecoin envisioned a governance body to serve as a lon
 In this report, you’ll read about the ways that Filecoin Foundation supported the Filecoin community in 2025 and learn about FF’s strategic priorities in 2026. FF’s top ecosystem-facing objective in 2026 remains to make Filecoin work seamlessly and find product-market fit. But FF cannot dictate what the Filecoin community should do to pursue these objectives. Instead, FF’s strategic priorities in 2026 are about mobilizing the ecosystem to achieve those goals. This includes driving a process to align the community on the most important actions to make Filecoin work seamlessly and find product-market fit, and supporting projects that will help accomplish those goals.
 
 But before we dive into our plans for 2026, let’s take a look back at the achievements of Filecoin Foundation in 2025. 
+
+![](/assets/images/2025_ffannualreport_retropgf_1x.webp)
 
 ### Ecosystem Funding: Supporting the Filecoin Community
 
@@ -111,6 +115,8 @@ Filecoin Foundation committed funding and continued to support the projects list
 
 #### RetroPGF Funding Highlights
 
+![](/assets/images/2025_ffannualreport_pgflogos1_1x.webp)
+
 Projects from the second round of RetroPGF were announced last December 2024 at the beginning of FF’s FY2025. The top 5 projects to receive funding included:  
 
 * **[Curio](https://curiostorage.org/):** A next-gen platform in the Filecoin ecosystem, streamlining storage provider operations.
@@ -118,6 +124,8 @@ Projects from the second round of RetroPGF were announced last December 2024 at 
 * **[Lighthouse](https://www.lighthouse.storage/):** A programmable data layer powering AI, DePIN, and NFTs with Filecoin’s decentralized storage and encryption.
 * **[Filecoin Spark](https://pl-strflt.notion.site/Spark-Docs-884606dfbe074f7598f53025ebaf519b):** A trustless protocol for sampling retrievals from Filecoin Storage Providers.
 * **[Randamu](https://randa.mu/):** Real-world consensus via threshold cryptography and Web3 innovation using Filecoin Testnet.
+
+![](/assets/images/2025_ffannualreport_pgflogos2_1x.webp)
 
 Projects from the third round of RetroPGF were announced in December 2025 at the beginning of FY2026. The top 5 projects to receive funding included:  
 
