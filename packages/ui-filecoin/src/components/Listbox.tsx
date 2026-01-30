@@ -38,7 +38,9 @@ export function Listbox<T extends Option>({
     <HeadlessListbox value={selected} onChange={setSelected}>
       <ListboxButton className="listbox-button">
         <span className="flex items-center gap-2">
-          <Icon component={IconComponent} size={20} />
+          <div className="text-zinc-500">
+            <Icon component={IconComponent} size={20} color="inherit" />
+          </div>
           {selected.label}
         </span>
         <span className="absolute inset-y-0 right-0 flex items-center pr-3">

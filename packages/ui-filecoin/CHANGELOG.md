@@ -1,5 +1,17 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.7.4
+
+### Patch Changes
+
+- 058204b: Text link fixes
+
+## 0.7.3
+
+### Patch Changes
+
+- 6243a68: UI styling updates for text links, buttons, listbox icons, and prose headings
+
 ## 0.7.2
 
 ### Patch Changes
