@@ -9,18 +9,22 @@
 
 @layer components {
   .cta-link {
-    @apply font-semibold text-[var(--color-cta-link-text)];
+    @apply font-semibold text-(--color-cta-link-text);
   }
 
   .text-link {
-    @apply focus:brand-outline no-underline hover:underline;
+    @apply focus:brand-outline underline;
 
-    .light-section & {
+    .light-section &:hover {
       @apply text-brand-800;
     }
 
-    .dark-section & {
-      @apply text-zinc-400;
+    .dark-section &:hover {
+      @apply text-zinc-300;
     }
+  }
+
+  footer .text-link {
+    @apply no-underline hover:underline;
   }
 }
