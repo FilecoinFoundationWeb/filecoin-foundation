@@ -15,12 +15,14 @@ export async function generateDigestSitemapRoutes({
   articlesContentPath,
 }: DigestSitemapConfig) {
   const issues = await getDigestIssuesData(issuesContentPath)
+
   const issueRoutes = issues.map(({ issuePath, updatedOn }) => ({
     url: `${baseUrl}${digestPath}/${issuePath}`,
     lastModified: updatedOn.toISOString(),
   }))
 
   const articles = await getDigestArticlesData(articlesContentPath)
+
   const articleRoutes = articles.map(({ articlePath, updatedOn }) => ({
     url: `${baseUrl}${digestPath}/${articlePath}`,
     lastModified: updatedOn.toISOString(),
