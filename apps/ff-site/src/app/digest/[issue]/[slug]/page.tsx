@@ -17,7 +17,7 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import {
   getDigestArticleData,
   getDigestArticlesData,
-} from '../utils/getDigestArticleData'
+} from '../../utils/getDigestArticleData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -29,7 +29,15 @@ export default async function DigestArticle(props: DigestArticleProps) {
   const { slug } = await props.params
   const data = await getDigestArticleData(slug)
 
-  const { title, issueNumber, articleNumber, image, authors, content } = data
+  const {
+    title,
+    issueNumber,
+    articleNumber,
+    image,
+    authors,
+    content,
+    articlePath,
+  } = data
 
   return (
     <PageLayout>
@@ -49,7 +57,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
         <ShareArticle
           sectionTitle="Share Article"
           articleTitle={title}
-          path={`${PATHS.DIGEST.path}/${slug}`}
+          path={`${PATHS.DIGEST.path}/${articlePath}`}
           baseUrl={BASE_URL}
         />
       </ArticleLayout>
@@ -59,18 +67,18 @@ export default async function DigestArticle(props: DigestArticleProps) {
 
 export async function generateStaticParams() {
   const entries = await getDigestArticlesData()
-  return entries.map(({ slug }) => ({ slug }))
+  return entries.map(({ articlePath }) => ({ articlePath }))
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
   const { slug } = await props.params
-  const { seo, image } = await getDigestArticleData(slug)
+  const { seo, image, articlePath } = await getDigestArticleData(slug)
 
   return createMetadata({
     title: seo.title,
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,
-    path: `${PATHS.DIGEST.path}/${slug}`,
+    path: `${PATHS.DIGEST.path}/${articlePath}`,
     openGraph: { type: 'article' },
   })
 }
