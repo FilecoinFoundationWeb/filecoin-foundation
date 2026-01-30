@@ -100,7 +100,7 @@ export async function generateMetadata(props: DigestArticleProps) {
   const { seo, image, articlePath } = article
 
   return createMetadata({
-    path: `${PATHS.DIGEST.path}/${articlePath}` as `/${string}`,
+    path: `${PATHS.DIGEST.path}/${articlePath}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,
