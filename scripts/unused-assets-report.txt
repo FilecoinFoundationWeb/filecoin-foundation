@@ -2,11 +2,13 @@ UNUSED ASSETS REPORT
 ===================
 
 ff-site:
-  public/assets/images/beryx_logo_white.png
-  Total: 1
+  public/assets/images/64423beb4e4c687814f57abf_0-ds-rp-2ps7f4wkfo.jpeg
+  public/assets/images/643e66c80a81033d920c68ba_1-b1odemnhfczn_24q2linww.webp
+  Total: 2
 
 ffdweb-site:
-  Total: 0
+  public/assets/images/digest-issue2-0-cover.webp
+  Total: 1
 
 filecoin-site:
   public/assets/images/lab-team.webp
@@ -15,6 +17,6 @@ filecoin-site:
 uxit:
   Total: 0
 
-Total unused: 2
-Total deleted: 2
-Generated: 2026-01-01T02:54:08.393Z
+Total unused: 4
+Total deleted: 4
+Generated: 2026-02-01T03:10:40.774Z
