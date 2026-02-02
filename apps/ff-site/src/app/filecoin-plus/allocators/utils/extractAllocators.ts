@@ -30,7 +30,7 @@ function decodeAllocatorFileMetaDataContent(
 }
 
 type GetParsedAllocatorParams = {
-  decodedContent: string
+  decodedContent: z.input<typeof AllocatorSchema>
   allocatorName: string
 }
 
