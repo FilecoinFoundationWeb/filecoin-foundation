@@ -11,6 +11,7 @@ export function extractAllocators(
   return filteredAllocatorFileMetaData
     .map((file) => decodeAllocatorFileMetaDataContent(file.content))
     .map((decodedContent) => getParsedAllocator(decodedContent))
+    .filter((allocator) => allocator !== null)
 }
 
 function decodeAllocatorFileMetaDataContent(
@@ -21,5 +22,11 @@ function decodeAllocatorFileMetaDataContent(
 }
 
 function getParsedAllocator(decodedContent: string) {
-  return AllocatorSchema.parse(decodedContent)
+  const result = AllocatorSchema.safeParse(decodedContent)
+  if (result.success) return result.data
+  console.error('Failed to parse allocator:', {
+    error: result.error.message,
+    decodedContent: JSON.stringify(decodedContent, null, 2),
+  })
+  return null
 }
