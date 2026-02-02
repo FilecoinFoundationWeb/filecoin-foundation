@@ -1,3 +1,6 @@
+import * as Sentry from '@sentry/nextjs'
+import { z } from 'zod'
+
 import { type AllocatorFileMetaData } from '../schemas/AllocatorFileSchema'
 import { AllocatorSchema } from '../schemas/AllocatorsSchema'
 
@@ -10,7 +13,12 @@ export function extractAllocators(
 
   return filteredAllocatorFileMetaData
     .map((file) => decodeAllocatorFileMetaDataContent(file.content))
-    .map((decodedContent) => getParsedAllocator(decodedContent))
+    .map((decodedContent) =>
+      getParsedAllocator({
+        decodedContent,
+        allocatorName: decodedContent.name,
+      }),
+    )
     .filter((allocator) => allocator !== null)
 }
 
@@ -21,12 +29,25 @@ function decodeAllocatorFileMetaDataContent(
   return JSON.parse(decodedContent)
 }
 
-function getParsedAllocator(decodedContent: string) {
+type GetParsedAllocatorParams = {
+  decodedContent: string
+  allocatorName: string
+}
+
+function getParsedAllocator({
+  decodedContent,
+  allocatorName,
+}: GetParsedAllocatorParams) {
   const result = AllocatorSchema.safeParse(decodedContent)
   if (result.success) return result.data
   console.error('Failed to parse allocator:', {
-    error: result.error.message,
-    decodedContent: JSON.stringify(decodedContent, null, 2),
+    error: z.prettifyError(result.error),
+    allocatorName,
+  })
+
+  Sentry.captureException(result.error, {
+    tags: { context: 'allocator_parse' },
+    extra: { allocatorName, formattedError: z.prettifyError(result.error) },
   })
   return null
 }
