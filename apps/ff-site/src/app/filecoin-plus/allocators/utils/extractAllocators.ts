@@ -13,13 +13,17 @@ export function extractAllocators(
 
   return filteredAllocatorFileMetaData
     .map((file) => decodeAllocatorFileMetaDataContent(file.content))
-    .map((decodedContent) =>
-      getParsedAllocator({
-        decodedContent,
-        allocatorName: decodedContent.name,
-      }),
-    )
-    .filter((allocator) => allocator !== null)
+    .map((decodedContent) => AllocatorSchema.safeParse(decodedContent))
+    .filter((result, index) => {
+      if (!result.success) {
+        reportAllocatorParseFailure({
+          error: result.error,
+          fileName: filteredAllocatorFileMetaData[index].name,
+        })
+      }
+      return result.success
+    })
+    .map((result) => result.data)
 }
 
 function decodeAllocatorFileMetaDataContent(
@@ -29,25 +33,22 @@ function decodeAllocatorFileMetaDataContent(
   return JSON.parse(decodedContent)
 }
 
-type GetParsedAllocatorParams = {
-  decodedContent: z.input<typeof AllocatorSchema>
-  allocatorName: string
+type ReportAllocatorParseFailureParams = {
+  error: z.ZodError
+  fileName: string
 }
 
-function getParsedAllocator({
-  decodedContent,
-  allocatorName,
-}: GetParsedAllocatorParams) {
-  const result = AllocatorSchema.safeParse(decodedContent)
-  if (result.success) return result.data
+function reportAllocatorParseFailure({
+  error,
+  fileName,
+}: ReportAllocatorParseFailureParams) {
+  const prettyError = z.prettifyError(error)
   console.error('Failed to parse allocator:', {
-    error: z.prettifyError(result.error),
-    allocatorName,
+    error: prettyError,
+    allocatorPath: fileName,
   })
-
-  Sentry.captureException(result.error, {
+  Sentry.captureException(error, {
     tags: { context: 'allocator_parse' },
-    extra: { allocatorName, formattedError: z.prettifyError(result.error) },
+    extra: { error: prettyError, allocatorPath: fileName },
   })
-  return null
 }
