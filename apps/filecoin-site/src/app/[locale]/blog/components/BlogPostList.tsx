@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation'
 import { MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
+import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { EmptyStateCard } from '@filecoin-foundation/ui-filecoin/EmptyStateCard'
 import {
@@ -12,7 +13,6 @@ import {
   Search,
   useSearch,
 } from '@filecoin-foundation/ui-filecoin/Search'
-import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
