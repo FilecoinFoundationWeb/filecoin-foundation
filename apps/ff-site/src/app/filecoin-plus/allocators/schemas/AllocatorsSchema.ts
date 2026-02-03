@@ -2,6 +2,7 @@ import { z } from 'zod'
 
 const AuditOutcomeSchema = z.enum([
   'GRANTED',
+  'DOUBLE',
   'DOUBLED',
   'MATCH',
   'MATCHED',
@@ -10,6 +11,7 @@ const AuditOutcomeSchema = z.enum([
   'REJECT',
   'REJECTED',
   'PENDING',
+  'UNKNOWN',
 ])
 
 const ApplicationAuditSchema = z.enum([
@@ -18,6 +20,7 @@ const ApplicationAuditSchema = z.enum([
   'Automated',
   'Automated Allocator',
   'Other',
+  'On-Ramps',
 ])
 
 export const MetapathwayTypeSchema = z.enum(['MDMA', 'RKH', 'AMA', 'ORMA'])
