@@ -238,6 +238,31 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/ecosystem-explorer/guaridos',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/opengate',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/repl',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/waterlily-ai',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/xbanking',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
     source: '/ecosystem/muckrock',
     destination: '/ecosystem-explorer/muckrock',
     permanent: true,
