@@ -17,8 +17,8 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
     a: ({ href, ...props }) => (
       <MarkdownLink href={href as string} {...props} />
     ),
-    img: ({ src, alt, ...props }) => (
-      <MarkdownImage src={src as string} alt={alt || ''} {...props} />
+    img: ({ src, alt, ..._ }) => (
+      <MarkdownImage src={src as string} alt={alt || ''} />
     ),
   }
 
