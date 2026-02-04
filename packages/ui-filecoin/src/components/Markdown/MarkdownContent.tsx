@@ -3,6 +3,7 @@ import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
 
+import { MarkdownImage } from './MarkdownImage'
 import { MarkdownLink } from './MarkdownLink'
 
 export type MarkdownContentProps = {
@@ -15,6 +16,9 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
   const markdownComponents: Components = {
     a: ({ href, ...props }) => (
       <MarkdownLink href={href as string} {...props} />
+    ),
+    img: ({ src, alt, ...props }) => (
+      <MarkdownImage src={src as string} alt={alt || ''} {...props} />
     ),
   }
 
