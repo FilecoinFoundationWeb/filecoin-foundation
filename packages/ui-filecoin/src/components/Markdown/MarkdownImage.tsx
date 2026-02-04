@@ -1,6 +1,5 @@
 import type { ComponentPropsWithoutRef } from 'react'
 
-import * as Sentry from '@sentry/nextjs'
 import Image from 'next/image'
 
 import { buildImageSizeProp } from '../../utils/buildImageSizeProp'
@@ -28,7 +27,6 @@ export function MarkdownImage({ src, alt }: MarkdownImageProps) {
     const errorMessage = 'Invalid markdown: image is missing src attribute'
 
     console.error(errorMessage)
-    Sentry.captureException(new Error(errorMessage))
 
     return null
   }
