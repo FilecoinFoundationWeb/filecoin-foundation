@@ -67,7 +67,10 @@ export default async function DigestArticle(props: DigestArticleProps) {
 
 export async function generateStaticParams() {
   const entries = await getDigestArticlesData()
-  return entries.map(({ articlePath }) => ({ articlePath }))
+  return entries.map(({ articlePath }) => {
+    const [issue, slug] = articlePath.split('/')
+    return { issue, slug }
+  })
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
