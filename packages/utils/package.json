@@ -23,6 +23,7 @@
     "./getCMSFieldOptionsAndValidIds": "./src/getCMSFieldOptionsAndValidIds.ts",
     "./getDigestArticleData": "./src/getDigestArticleData.ts",
     "./getDigestArticlesWithIssueContext": "./src/getDigestArticlesWithIssueContext.ts",
+    "./getDigestArticleStaticParams": "./src/getDigestArticleStaticParams.ts",
     "./getDigestIssueData": "./src/getDigestIssueData.ts",
     "./getDigestIssueDescription": "./src/getDigestIssueDescription.ts",
     "./getFeaturedBlogPosts": "./src/getFeaturedBlogPosts.ts",

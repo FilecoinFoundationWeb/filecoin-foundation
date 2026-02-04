@@ -3,6 +3,7 @@ import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { getDigestArticleStaticParams } from '@filecoin-foundation/utils/getDigestArticleStaticParams'
 import type { DigestArticleParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -14,9 +15,10 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
-import { getDigestArticleData } from '../../utils/getDigestArticleData'
-import { getDigestArticlesWithIssueContext } from '../../utils/getDigestArticlesWithIssueContext'
-import { getDigestIssuesData } from '../../utils/getDigestIssueData'
+import {
+  getDigestArticleData,
+  getDigestArticlesData,
+} from '../../utils/getDigestArticleData'
 
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -77,21 +79,8 @@ export default async function DigestArticle(props: DigestArticleProps) {
 }
 
 export async function generateStaticParams() {
-  const allIssues = await getDigestIssuesData()
-
-  const params = await Promise.all(
-    allIssues.map(async (issue) => {
-      const issueArticles = await getDigestArticlesWithIssueContext(
-        issue.issueNumber,
-      )
-      return issueArticles.map((article) => ({
-        issue: issue.issuePath,
-        slug: article.slug,
-      }))
-    }),
-  )
-
-  return params.flat()
+  const articles = await getDigestArticlesData()
+  return getDigestArticleStaticParams({ articles })
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
