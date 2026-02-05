@@ -2,13 +2,16 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr'
+
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
+import { EmptyStateCard } from '@filecoin-foundation/ui-filecoin/EmptyStateCard'
 import {
+  normalizeSearchParams,
   Search,
   useSearch,
-  normalizeSearchParams,
 } from '@filecoin-foundation/ui-filecoin/Search'
 import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
@@ -21,7 +24,6 @@ import { postMatchesCategory } from '../utils/postMatchesCategory'
 
 import { BlogCard } from './BlogCard'
 import { BlogCategoryFilter } from './BlogCategoryFilter'
-import { NoSearchResults } from './NoSearchResults'
 import { RSSFeed } from './RSSFeed'
 
 type BlogPostListProps = {
@@ -79,48 +81,55 @@ export function BlogPostList({ posts }: BlogPostListProps) {
         <SectionDivider />
       </div>
 
-      <CardGrid as="ul" variant="mdTwoLgThreeWide">
-        {paginatedResults.map((post: BlogPost) => {
-          const {
-            title,
-            slug,
-            excerpt,
-            categories,
-            image,
-            author,
-            publishedOn,
-          } = post
+      {filteredEntries.length > 0 ? (
+        <>
+          <CardGrid as="ul" variant="mdTwoLgThreeWide">
+            {paginatedResults.map((post: BlogPost) => {
+              const {
+                title,
+                slug,
+                excerpt,
+                categories,
+                image,
+                author,
+                publishedOn,
+              } = post
 
-          return (
-            <BlogCard
-              key={slug}
-              title={title}
-              slug={slug}
-              description={excerpt}
-              author={author}
-              date={publishedOn}
-              tags={categories}
-              image={
-                image && {
-                  src: image.url,
-                  alt: title,
-                }
-              }
+              return (
+                <BlogCard
+                  key={slug}
+                  title={title}
+                  slug={slug}
+                  description={excerpt}
+                  author={author}
+                  date={publishedOn}
+                  tags={categories}
+                  image={
+                    image && {
+                      src: image.url,
+                      alt: title,
+                    }
+                  }
+                />
+              )
+            })}
+          </CardGrid>
+
+          <div className="mx-auto mt-20 max-w-2xl">
+            <Pagination
+              pageCount={pageCount}
+              numberRange={PAGINATION_INDEX_MAX_RANGE}
             />
-          )
-        })}
-      </CardGrid>
-
-      <div className="mx-auto mt-20 max-w-2xl">
-        {filteredEntries.length > 0 ? (
-          <Pagination
-            pageCount={pageCount}
-            numberRange={PAGINATION_INDEX_MAX_RANGE}
-          />
-        ) : (
-          <NoSearchResults />
-        )}
-      </div>
+          </div>
+        </>
+      ) : (
+        <EmptyStateCard
+          icon={MagnifyingGlassIcon}
+          title="No results found"
+          titleTag="h3"
+          description="Try changing your search query or category filter."
+        />
+      )}
     </div>
   )
 }
