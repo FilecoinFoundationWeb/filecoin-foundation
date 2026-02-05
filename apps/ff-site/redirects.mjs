@@ -187,6 +187,11 @@ export const redirects = [
 
   // ECOSYSTEM PROJECTS REDIRECTS
   {
+    source: '/ecosystem-explorer/3pad',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
     source: '/ecosystem/project/akave',
     destination: '/ecosystem-explorer/akave-cloud',
     permanent: true,
@@ -248,6 +253,11 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/ecosystem/muckrock',
+    destination: '/ecosystem-explorer/muckrock',
+    permanent: true,
+  },
+  {
     source: '/ecosystem-explorer/opengate',
     destination: '/ecosystem-explorer',
     permanent: true,
@@ -258,32 +268,22 @@ export const redirects = [
     permanent: true,
   },
   {
-    source: '/ecosystem-explorer/waterlily-ai',
-    destination: '/ecosystem-explorer',
-    permanent: true,
-  },
-  {
-    source: '/ecosystem-explorer/xbanking',
-    destination: '/ecosystem-explorer',
-    permanent: true,
-  },
-  {
-    source: '/ecosystem/muckrock',
-    destination: '/ecosystem-explorer/muckrock',
-    permanent: true,
-  },
-  {
-    source: '/ecosystem-explorer/3pad',
-    destination: '/ecosystem-explorer',
-    permanent: true,
-  },
-  {
     source: '/ecosystem-explorer/solmedia',
     destination: '/ecosystem-explorer',
     permanent: true,
   },
   {
     source: '/ecosystem-explorer/stfil',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/waterlily-ai',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/xbanking',
     destination: '/ecosystem-explorer',
     permanent: true,
   },
