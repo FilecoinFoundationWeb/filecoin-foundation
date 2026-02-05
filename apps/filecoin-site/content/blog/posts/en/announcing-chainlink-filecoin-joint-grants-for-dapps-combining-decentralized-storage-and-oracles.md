@@ -33,7 +33,7 @@ By bringing together Filecoin and Chainlink, developers can build end-to-end dec
 
 This grant initiative comes on the heels of several other joint efforts between the Filecoin and Chainlink communities. For starters, Chainlink and Filecoin have been [working on Chainlink External Adapters](https://filecoin.io/blog/posts/filecoin-and-chainlink-integration/) to facilitate bi-directional communication between the two projects. Additionally, the Chainlink Labs team joined the Filecoin Launchpad Accelerator as an advisor for the second cohort of projects, helping them extend the functionality of their applications using oracles.
 
-Filecoin also sponsored prizes in the widely attended Spring 2021 Chainlink Hackathon, with several dual Filecoin- and Chainlink-enabled projects being accepted into the Filecoin Launchpad Accelerator, such as Tamago, [Nifty Royale](https://niftyroyale.com/), and [CryptOrchids](https://cryptorchids.io/).
+Filecoin also sponsored prizes in the widely attended Spring 2021 Chainlink Hackathon, with several dual Filecoin- and Chainlink-enabled projects being accepted into the Filecoin Launchpad Accelerator, such as Tamago, Nifty Royale, and [CryptOrchids](https://cryptorchids.io/).
 
 The new joint grant program aims to support and promotes even deeper integrations between Chainlink and Filecoin by encouraging developers to create workflows that directly combine the two networks. This can be achieved in several key ways, all possible via custom-built [Chainlink External Adapters](https://docs.chain.link/docs/external-adapters/):
 

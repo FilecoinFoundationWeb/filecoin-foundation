@@ -39,7 +39,7 @@ With over 3,000 Portraits already registered, Portrait’s decentralized website
 
 ### Welcome Six New Members to the Decentralized Storage Alliance
 
-The DSA is growing! Six innovative organizations - DAIS, Akave, DeStor, Seal Storage, Curio, and Titan Network - have joined the global network pushing the boundaries of decentralized storage. Together, they're crafting secure, efficient, and scalable solutions to power AI and beyond. [Learn more](https://dsalliance.io/resources/blog/dais-and-web3-orgs-join-decentralized-storage-alliance).
+The DSA is growing! Six innovative organizations - DAIS, Akave, DeStor, Seal Storage, Curio, and Titan Network - have joined the global network pushing the boundaries of decentralized storage. Together, they're crafting secure, efficient, and scalable solutions to power AI and beyond.
 
 ## 🛠️ Tools 🛠️
 
