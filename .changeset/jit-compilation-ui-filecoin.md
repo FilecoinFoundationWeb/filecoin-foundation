@@ -1,6 +1,5 @@
 ---
 "@filecoin-foundation/ui-filecoin": minor
-"@filecoin-foundation/next-config": minor
 ---
 
 Enable JIT compilation for ui-filecoin with dual-mode support
