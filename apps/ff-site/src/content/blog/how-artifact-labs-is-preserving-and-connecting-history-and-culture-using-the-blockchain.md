@@ -21,7 +21,7 @@ seo:
     using blockchain technology.
 ---
 
-[Artifact Labs](/ecosystem-explorer/artifact-labs) is driven by a mission to “preserve and connect culture and history on the blockchain.” The company puts the power of preservation in the hands of organizations and individuals dedicated to the same goals: to preserve valuable assets, foster accessibility and engagement, facilitate rights management of digital assets, and unlock fundraising and commercialization opportunities.
+Artifact Labs is driven by a mission to “preserve and connect culture and history on the blockchain.” The company puts the power of preservation in the hands of organizations and individuals dedicated to the same goals: to preserve valuable assets, foster accessibility and engagement, facilitate rights management of digital assets, and unlock fundraising and commercialization opportunities.
 
 Historically, Artifact Labs has worked with museums and newspapers to preserve their collections using Web3 tools. Now they’re taking on a much larger project: the shipwreck _Titanic_.
 
@@ -49,7 +49,7 @@ Filecoin Foundation has been critical in supporting how we’re building our tec
 
 In addition to the preservation of assets, Artifact Labs focuses on fostering engagement, providing  accessibility, and building community for the guardians of these valuable assets. For instance, we are working on a collection with RMS Titanic Inc that will continue to build out _Titanic’s_ Web3 journey, engaging and re-engaging the millions of people interested in _Titanic_ and allowing them to assume roles in the community. Those who participate will unlock exclusive benefits, including community events; direct access to experts and content; and even involvement in decision making on future dive expeditions.
 
-We have three overarching goals for the _Titanic_ project: 1) build the community of enthusiasts, 2) establish a community of stakeholders and unlock theƒ utilities with expedition as a highlight, and 3) preserve the thousands of artifacts already recovered from the wreck site. tit
+We have three overarching goals for the _Titanic_ project: 1) build the community of enthusiasts, 2) establish a community of stakeholders and unlock the utilities with expedition as a highlight, and 3) preserve the thousands of artifacts already recovered from the wreck site. tit
 
 As we continue to embark on expeditions, newly collected items  will help further preserve Titanic’s legacy. With blockchain technology and NFTs, we can continue engaging Titanic enthusiasts with the opportunity to own and collect valuable digital assets with legendary stories behind them.
 

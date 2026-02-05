@@ -23,7 +23,7 @@ import {
   getDigestIssueData,
   getDigestIssuesData,
 } from '../utils/getDigestIssueData'
-import { buildIssueSlug, parseIssueSlug } from '../utils/parseDigestParams'
+import { parseIssueSlug } from '../utils/parseDigestParams'
 
 type DigestIssueProps = {
   params: Promise<DigestIssueParams>
@@ -56,7 +56,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
             const {
               title,
               image,
-              slug,
+              articlePath,
               articleNumber,
               issueNumber,
               description,
@@ -65,7 +65,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
 
             return (
               <Card
-                key={slug}
+                key={articlePath}
                 as="article"
                 avatars={authors}
                 description={{ text: description, isClamped: true }}
@@ -74,10 +74,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
                   { text: `Issue ${issueNumber}` },
                 ]}
                 cta={{
-                  href: PATHS.DIGEST.articleUrl({
-                    issueNumber,
-                    articleSlug: slug,
-                  }),
+                  href: `${PATHS.DIGEST.path}/${articlePath}`,
                   text: 'Read Article',
                   icon: CARET_RIGHT,
                 }}
@@ -106,8 +103,9 @@ export default async function DigestIssue(props: DigestIssueProps) {
 
 export async function generateStaticParams() {
   const allIssues = await getDigestIssuesData()
-  return allIssues.map(({ issueNumber }) => ({
-    issue: buildIssueSlug(issueNumber),
+
+  return allIssues.map(({ issuePath }) => ({
+    issue: issuePath,
   }))
 }
 
@@ -116,11 +114,10 @@ export async function generateMetadata(props: DigestIssueProps) {
   const issueNumber = parseIssueSlug(issue)
 
   const digestIssue = await getDigestIssueData(issueNumber)
-
-  const { seo, image } = digestIssue
+  const { seo, image, issuePath } = digestIssue
 
   return createMetadata({
-    path: `${PATHS.DIGEST.issueUrl({ issueNumber })}` as `/${string}`,
+    path: `${PATHS.DIGEST.path}/${issuePath}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,

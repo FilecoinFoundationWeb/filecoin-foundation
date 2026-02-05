@@ -29,7 +29,7 @@ seo:
   <figcaption><a href="https://soundcloud.com/filecoin-foundation/decentralizing-art-a-deep-dive-into-waterlilyais-use-of-fvm-and-ai" target="_blank" title="Filecoin Foundation · Decentralizing Art: A Deep Dive into Waterlily.ai's Use of FVM and AI">Filecoin Foundation · Decentralizing Art: A Deep Dive into Waterlily.ai's Use of FVM and AI</a></figcaption>
 </figure>
 
-[Waterlily.ai](/ecosystem-explorer/waterlily-ai) is a Filecoin-powered generative AI tool that allows digital artists to distribute their work while addressing the pain point of compensation when their art is used in AI training models.
+Waterlily.ai is a Filecoin-powered generative AI tool that allows digital artists to distribute their work while addressing the pain point of compensation when their art is used in AI training models.
 
 In the recent episode of [The Decentralists](https://twitter.com/i/spaces/1LyxBqNjXVkJN), Filecoin Foundations’ Ally Haire and Aaron Stanley delved into the workings of Waterlily, and discussed the way we perceive AI-generated art. Waterlily.ai is not just another generative AI tool; it is a platform that is built on the principles of ethical AI, ensuring that original creators of artwork are compensated for their work.
 
