@@ -233,6 +233,11 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/ecosystem/project/dosier',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
     source: '/ecosystem-explorer/e-ipfs',
     destination: '/ecosystem-explorer',
     permanent: true,
