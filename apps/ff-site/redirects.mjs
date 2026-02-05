@@ -187,6 +187,11 @@ export const redirects = [
 
   // ECOSYSTEM PROJECTS REDIRECTS
   {
+    source: '/ecosystem/project/akave',
+    destination: '/ecosystem-explorer/akave-cloud',
+    permanent: true,
+  },
+  {
     source: '/ecosystem/project/artifact-labs',
     destination: '/ecosystem-explorer',
     permanent: true,
