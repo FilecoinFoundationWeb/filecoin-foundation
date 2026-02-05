@@ -4,311 +4,86 @@
   "description": "Filecoin branded UI components for the Filecoin ecosystem created by Filecoin Foundation",
   "private": false,
   "type": "module",
-  "files": [
-    "dist",
-    "README.md"
-  ],
   "exports": {
-    "./Alert": {
-      "types": "./dist/components/Alert.d.ts",
-      "default": "./dist/components/Alert.js"
-    },
-    "./Announcement": {
-      "types": "./dist/components/Announcement.d.ts",
-      "default": "./dist/components/Announcement.js"
-    },
-    "./Badge": {
-      "types": "./dist/components/Badge.d.ts",
-      "default": "./dist/components/Badge.js"
-    },
-    "./BaseLink": {
-      "types": "./dist/components/BaseLink.d.ts",
-      "default": "./dist/components/BaseLink.js"
-    },
-    "./BreakpointDebugger": {
-      "types": "./dist/components/BreakpointDebugger.d.ts",
-      "default": "./dist/components/BreakpointDebugger.js"
-    },
-    "./Button": {
-      "types": "./dist/components/Button.d.ts",
-      "default": "./dist/components/Button.js"
-    },
-    "./ButtonRow": {
-      "types": "./dist/components/ButtonRow.d.ts",
-      "default": "./dist/components/ButtonRow.js"
-    },
-    "./Card": {
-      "types": "./dist/components/Card/Card.d.ts",
-      "default": "./dist/components/Card/Card.js"
-    },
-    "./Card/CardImage": {
-      "types": "./dist/components/Card/CardImage.d.ts",
-      "default": "./dist/components/Card/CardImage.js"
-    },
-    "./CardGrid": {
-      "types": "./dist/components/CardGrid.d.ts",
-      "default": "./dist/components/CardGrid.js"
-    },
-    "./BreakoutContainer": {
-      "types": "./dist/components/BreakoutContainer.d.ts",
-      "default": "./dist/components/BreakoutContainer.js"
-    },
-    "./Container": {
-      "types": "./dist/components/Container.d.ts",
-      "default": "./dist/components/Container.js"
-    },
-    "./CTALink": {
-      "types": "./dist/components/CTALink.d.ts",
-      "default": "./dist/components/CTALink.js"
-    },
-    "./Checkbox": {
-      "types": "./dist/components/Checkbox.d.ts",
-      "default": "./dist/components/Checkbox.js"
-    },
-    "./EmptyStateCard": {
-      "types": "./dist/components/EmptyStateCard.d.ts",
-      "default": "./dist/components/EmptyStateCard.js"
-    },
-    "./ErrorStateCard": {
-      "types": "./dist/components/ErrorStateCard.d.ts",
-      "default": "./dist/components/ErrorStateCard.js"
-    },
-    "./Footer/LegalSection": {
-      "types": "./dist/components/Footer/LegalSection.d.ts",
-      "default": "./dist/components/Footer/LegalSection.js"
-    },
-    "./FilterButton": {
-      "types": "./dist/components/FilterButton.d.ts",
-      "default": "./dist/components/FilterButton.js"
-    },
-    "./Heading": {
-      "types": "./dist/components/Heading.d.ts",
-      "default": "./dist/components/Heading.js"
-    },
-    "./HomeLogoLink": {
-      "types": "./dist/components/HomeLogoLink.d.ts",
-      "default": "./dist/components/HomeLogoLink.js"
-    },
-    "./Icon": {
-      "types": "./dist/components/Icon.d.ts",
-      "default": "./dist/components/Icon.js"
-    },
-    "./IconBadge": {
-      "types": "./dist/components/IconBadge.d.ts",
-      "default": "./dist/components/IconBadge.js"
-    },
-    "./IconButton": {
-      "types": "./dist/components/IconButton.d.ts",
-      "default": "./dist/components/IconButton.js"
-    },
-    "./InfoCard": {
-      "types": "./dist/components/InfoCard.d.ts",
-      "default": "./dist/components/InfoCard.js"
-    },
-    "./Input": {
-      "types": "./dist/components/Input.d.ts",
-      "default": "./dist/components/Input.js"
-    },
-    "./LinkCard": {
-      "types": "./dist/components/LinkCard.d.ts",
-      "default": "./dist/components/LinkCard.js"
-    },
-    "./LoadingStateCard": {
-      "types": "./dist/components/LoadingStateCard.d.ts",
-      "default": "./dist/components/LoadingStateCard.js"
-    },
-    "./Table": {
-      "types": "./dist/components/Table.d.ts",
-      "default": "./dist/components/Table.js"
-    },
-    "./Table/CompactAddress": {
-      "types": "./dist/components/Table/CompactAddress.d.ts",
-      "default": "./dist/components/Table/CompactAddress.js"
-    },
-    "./Table/ID": {
-      "types": "./dist/components/Table/ID.d.ts",
-      "default": "./dist/components/Table/ID.js"
-    },
-    "./Table/PeerID": {
-      "types": "./dist/components/Table/PeerID.d.ts",
-      "default": "./dist/components/Table/PeerID.js"
-    },
-    "./Table/SoftwareVersion": {
-      "types": "./dist/components/Table/SoftwareVersion.d.ts",
-      "default": "./dist/components/Table/SoftwareVersion.js"
-    },
-    "./Table/ActiveStatus": {
-      "types": "./dist/components/Table/ActiveStatus.d.ts",
-      "default": "./dist/components/Table/ActiveStatus.js"
-    },
-    "./Table/YesNoStatus": {
-      "types": "./dist/components/Table/YesNoStatus.d.ts",
-      "default": "./dist/components/Table/YesNoStatus.js"
-    },
-    "./Table/TanstackTable": {
-      "types": "./dist/components/Table/TanstackTable.d.ts",
-      "default": "./dist/components/Table/TanstackTable.js"
-    },
-    "./Listbox": {
-      "types": "./dist/components/Listbox.d.ts",
-      "default": "./dist/components/Listbox.js"
-    },
-    "./LogoSection/LogoSection": {
-      "types": "./dist/components/LogoSection/LogoSection.d.ts",
-      "default": "./dist/components/LogoSection/LogoSection.js"
-    },
-    "./LogoSection/LogoItem": {
-      "types": "./dist/components/LogoSection/LogoItem.d.ts",
-      "default": "./dist/components/LogoSection/LogoItem.js"
-    },
-    "./Markdown/MarkdownContent": {
-      "types": "./dist/components/Markdown/MarkdownContent.d.ts",
-      "default": "./dist/components/Markdown/MarkdownContent.js"
-    },
-    "./Markdown/MarkdownLink": {
-      "types": "./dist/components/Markdown/MarkdownLink.d.ts",
-      "default": "./dist/components/Markdown/MarkdownLink.js"
-    },
-    "./Markdown/MarkdownPage": {
-      "types": "./dist/components/Markdown/MarkdownPage.d.ts",
-      "default": "./dist/components/Markdown/MarkdownPage.js"
-    },
-    "./Navigation/MobileNavigation": {
-      "types": "./dist/components/Navigation/MobileNavigation.d.ts",
-      "default": "./dist/components/Navigation/MobileNavigation.js"
-    },
-    "./Navigation/NavigationMainLink": {
-      "types": "./dist/components/Navigation/NavigationMainLink.d.ts",
-      "default": "./dist/components/Navigation/NavigationMainLink.js"
-    },
-    "./Navigation/NavigationMenu": {
-      "types": "./dist/components/Navigation/NavigationMenu.d.ts",
-      "default": "./dist/components/Navigation/NavigationMenu.js"
-    },
-    "./Navigation/NavigationMenuLink": {
-      "types": "./dist/components/Navigation/NavigationMenuLink.d.ts",
-      "default": "./dist/components/Navigation/NavigationMenuLink.js"
-    },
-    "./Navigation/NavigationMenuPanel": {
-      "types": "./dist/components/Navigation/NavigationMenuPanel.d.ts",
-      "default": "./dist/components/Navigation/NavigationMenuPanel.js"
-    },
-    "./Navigation/constants": {
-      "types": "./dist/components/Navigation/constants/index.d.ts",
-      "default": "./dist/components/Navigation/constants/index.js"
-    },
-    "./Navigation/types": {
-      "types": "./dist/components/Navigation/types/index.d.ts",
-      "default": "./dist/components/Navigation/types/index.js"
-    },
-    "./Navigation/hooks/*": {
-      "types": "./dist/components/Navigation/hooks/*.d.ts",
-      "default": "./dist/components/Navigation/hooks/*.js"
-    },
-    "./PageHeader": {
-      "types": "./dist/components/PageHeader.d.ts",
-      "default": "./dist/components/PageHeader.js"
-    },
-    "./PageSection": {
-      "types": "./dist/components/PageSection.d.ts",
-      "default": "./dist/components/PageSection.js"
-    },
-    "./RefreshButton": {
-      "types": "./dist/components/RefreshButton.d.ts",
-      "default": "./dist/components/RefreshButton.js"
-    },
-    "./RefreshOverlay": {
-      "types": "./dist/components/RefreshOverlay.d.ts",
-      "default": "./dist/components/RefreshOverlay.js"
-    },
-    "./Network/useNetwork": {
-      "types": "./dist/components/Network/useNetwork.d.ts",
-      "default": "./dist/components/Network/useNetwork.js"
-    },
-    "./Network/NetworkSelector": {
-      "types": "./dist/components/Network/NetworkSelector.d.ts",
-      "default": "./dist/components/Network/NetworkSelector.js"
-    },
-    "./Network/config": {
-      "types": "./dist/components/Network/config/index.d.ts",
-      "default": "./dist/components/Network/config/index.js"
-    },
-    "./Network/types": {
-      "types": "./dist/components/Network/types/index.d.ts",
-      "default": "./dist/components/Network/types/index.js"
-    },
-    "./Section/Section": {
-      "types": "./dist/components/Section/Section.d.ts",
-      "default": "./dist/components/Section/Section.js"
-    },
-    "./SectionContent": {
-      "types": "./dist/components/SectionContent.d.ts",
-      "default": "./dist/components/SectionContent.js"
-    },
-    "./Search": {
-      "types": "./dist/components/Search/index.d.ts",
-      "default": "./dist/components/Search/index.js"
-    },
-    "./SimpleCard": {
-      "types": "./dist/components/SimpleCard.d.ts",
-      "default": "./dist/components/SimpleCard.js"
-    },
-    "./SlideOver": {
-      "types": "./dist/components/SlideOver.d.ts",
-      "default": "./dist/components/SlideOver.js"
-    },
-    "./Spinner": {
-      "types": "./dist/components/Spinner.d.ts",
-      "default": "./dist/components/Spinner.js"
-    },
-    "./StateCard": {
-      "types": "./dist/components/StateCard.d.ts",
-      "default": "./dist/components/StateCard.js"
-    },
-    "./SearchInput": {
-      "types": "./dist/components/SearchInput.d.ts",
-      "default": "./dist/components/SearchInput.js"
-    },
-    "./TextLink/ExternalTextLink": {
-      "types": "./dist/components/TextLink/ExternalTextLink.d.ts",
-      "default": "./dist/components/TextLink/ExternalTextLink.js"
-    },
-    "./TextLink/InternalTextLink": {
-      "types": "./dist/components/TextLink/InternalTextLink.d.ts",
-      "default": "./dist/components/TextLink/InternalTextLink.js"
-    },
-    "./TextLink/SmartTextLink": {
-      "types": "./dist/components/TextLink/SmartTextLink.d.ts",
-      "default": "./dist/components/TextLink/SmartTextLink.js"
-    },
-    "./constants/tailwindConstants": {
-      "types": "./dist/constants/tailwindConstants.d.ts",
-      "default": "./dist/constants/tailwindConstants.js"
-    },
-    "./styles": "./dist/styles/globals.css",
-    "./types/imageType": {
-      "types": "./dist/types/imageType.d.ts",
-      "default": "./dist/types/imageType.js"
-    },
-    "./types/tailwindTypes": {
-      "types": "./dist/types/tailwindTypes.d.ts",
-      "default": "./dist/types/tailwindTypes.js"
-    },
-    "./types/touchTarget": {
-      "types": "./dist/types/touchTarget.d.ts",
-      "default": "./dist/types/touchTarget.js"
-    },
-    "./utils": {
-      "types": "./dist/utils/index.d.ts",
-      "default": "./dist/utils/index.js"
-    },
-    "./config/ui-config": {
-      "types": "./dist/config/ui-config.d.ts",
-      "default": "./dist/config/ui-config.js"
-    }
+    "./Alert": "./src/components/Alert.tsx",
+    "./Announcement": "./src/components/Announcement.tsx",
+    "./Badge": "./src/components/Badge.tsx",
+    "./BaseLink": "./src/components/BaseLink.tsx",
+    "./BreakpointDebugger": "./src/components/BreakpointDebugger.tsx",
+    "./Button": "./src/components/Button.tsx",
+    "./ButtonRow": "./src/components/ButtonRow.tsx",
+    "./Card": "./src/components/Card/Card.tsx",
+    "./Card/CardImage": "./src/components/Card/CardImage.tsx",
+    "./CardGrid": "./src/components/CardGrid.tsx",
+    "./BreakoutContainer": "./src/components/BreakoutContainer.tsx",
+    "./Container": "./src/components/Container.tsx",
+    "./CTALink": "./src/components/CTALink.tsx",
+    "./Checkbox": "./src/components/Checkbox.tsx",
+    "./EmptyStateCard": "./src/components/EmptyStateCard.tsx",
+    "./ErrorStateCard": "./src/components/ErrorStateCard.tsx",
+    "./Footer/LegalSection": "./src/components/Footer/LegalSection.tsx",
+    "./FilterButton": "./src/components/FilterButton.tsx",
+    "./Heading": "./src/components/Heading.tsx",
+    "./HomeLogoLink": "./src/components/HomeLogoLink.tsx",
+    "./Icon": "./src/components/Icon.tsx",
+    "./IconBadge": "./src/components/IconBadge.tsx",
+    "./IconButton": "./src/components/IconButton.tsx",
+    "./InfoCard": "./src/components/InfoCard.tsx",
+    "./Input": "./src/components/Input.tsx",
+    "./LinkCard": "./src/components/LinkCard.tsx",
+    "./LoadingStateCard": "./src/components/LoadingStateCard.tsx",
+    "./Table": "./src/components/Table.tsx",
+    "./Table/CompactAddress": "./src/components/Table/CompactAddress.tsx",
+    "./Table/ID": "./src/components/Table/ID.tsx",
+    "./Table/PeerID": "./src/components/Table/PeerID.tsx",
+    "./Table/SoftwareVersion": "./src/components/Table/SoftwareVersion.tsx",
+    "./Table/ActiveStatus": "./src/components/Table/ActiveStatus.tsx",
+    "./Table/YesNoStatus": "./src/components/Table/YesNoStatus.tsx",
+    "./Table/TanstackTable": "./src/components/Table/TanstackTable.tsx",
+    "./Listbox": "./src/components/Listbox.tsx",
+    "./LogoSection/LogoSection": "./src/components/LogoSection/LogoSection.tsx",
+    "./LogoSection/LogoItem": "./src/components/LogoSection/LogoItem.tsx",
+    "./Markdown/MarkdownContent": "./src/components/Markdown/MarkdownContent.tsx",
+    "./Markdown/MarkdownLink": "./src/components/Markdown/MarkdownLink.tsx",
+    "./Markdown/MarkdownPage": "./src/components/Markdown/MarkdownPage.tsx",
+    "./Navigation/MobileNavigation": "./src/components/Navigation/MobileNavigation.tsx",
+    "./Navigation/NavigationMainLink": "./src/components/Navigation/NavigationMainLink.tsx",
+    "./Navigation/NavigationMenu": "./src/components/Navigation/NavigationMenu.tsx",
+    "./Navigation/NavigationMenuLink": "./src/components/Navigation/NavigationMenuLink.tsx",
+    "./Navigation/NavigationMenuPanel": "./src/components/Navigation/NavigationMenuPanel.tsx",
+    "./Navigation/constants": "./src/components/Navigation/constants/index.ts",
+    "./Navigation/types": "./src/components/Navigation/types/index.ts",
+    "./Navigation/hooks/*": "./src/components/Navigation/hooks/*.ts",
+    "./PageHeader": "./src/components/PageHeader.tsx",
+    "./PageSection": "./src/components/PageSection.tsx",
+    "./RefreshButton": "./src/components/RefreshButton.tsx",
+    "./RefreshOverlay": "./src/components/RefreshOverlay.tsx",
+    "./Network/useNetwork": "./src/components/Network/useNetwork.tsx",
+    "./Network/NetworkSelector": "./src/components/Network/NetworkSelector.tsx",
+    "./Network/config": "./src/components/Network/config/index.ts",
+    "./Network/types": "./src/components/Network/types/index.ts",
+    "./Section/Section": "./src/components/Section/Section.tsx",
+    "./SectionContent": "./src/components/SectionContent.tsx",
+    "./Search": "./src/components/Search/index.ts",
+    "./SimpleCard": "./src/components/SimpleCard.tsx",
+    "./SlideOver": "./src/components/SlideOver.tsx",
+    "./Spinner": "./src/components/Spinner.tsx",
+    "./StateCard": "./src/components/StateCard.tsx",
+    "./SearchInput": "./src/components/SearchInput.tsx",
+    "./TextLink/ExternalTextLink": "./src/components/TextLink/ExternalTextLink.tsx",
+    "./TextLink/InternalTextLink": "./src/components/TextLink/InternalTextLink.tsx",
+    "./TextLink/SmartTextLink": "./src/components/TextLink/SmartTextLink.tsx",
+    "./constants/tailwindConstants": "./src/constants/tailwindConstants.ts",
+    "./styles": "./src/styles/globals.css",
+    "./types/imageType": "./src/types/imageType.ts",
+    "./types/tailwindTypes": "./src/types/tailwindTypes.ts",
+    "./types/touchTarget": "./src/types/touchTarget.ts",
+    "./utils": "./src/utils/index.ts",
+    "./config/ui-config": "./src/config/ui-config.ts"
   },
   "scripts": {
-    "build": "tsc && mkdir -p dist/styles && cp src/styles/*.css dist/styles/",
+    "build": "tsup && cp -r src/styles dist/",
+    "dev": "tsup --watch",
     "prepublishOnly": "npm run build",
     "lint": "eslint src --fix",
     "test": "jest"
@@ -351,6 +126,7 @@
     "jest": "^30.2.0",
     "jest-environment-jsdom": "^30.2.0",
     "ts-jest": "^29.4.6",
+    "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {

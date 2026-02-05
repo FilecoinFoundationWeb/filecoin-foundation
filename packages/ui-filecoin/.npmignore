@@ -1,0 +1,15 @@
+# Exclude development files
+*.test.ts
+*.test.tsx
+.eslintrc.js
+tsconfig.json
+tsconfig.build.json
+tsup.config.ts
+jest.config.js
+
+# Exclude source control
+.git
+.github
+
+# Note: dist/ is included for npm publishing
+# even though it's in .gitignore
