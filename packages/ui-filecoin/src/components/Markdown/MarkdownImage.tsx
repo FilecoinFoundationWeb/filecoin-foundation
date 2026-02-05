@@ -13,7 +13,7 @@ type MarkdownImageProps = ComponentPropsWithoutRef<'img'>
 
 export function MarkdownImage({ src, alt }: MarkdownImageProps) {
   const commonProps = {
-    className: 'rounded-lg',
+    className: 'rounded-lg object-cover',
     quality: 100,
     width: IMAGE_DIMENSIONS.containerWidth,
     height: IMAGE_DIMENSIONS.aspectRatioHeight,
