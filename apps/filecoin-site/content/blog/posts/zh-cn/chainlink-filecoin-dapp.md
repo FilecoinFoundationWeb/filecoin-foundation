@@ -32,7 +32,7 @@ _template: blog_detail_ch
 
 这次资助计划的推出紧跟着Filecoin和Chainlink社区的几项其他联合行动。例如，Chainlink和Filecoin正在打造[Chainlink外部适配器](https://filecoin.io/blog/posts/filecoin-and-chainlink-integration/)，用于两个项目之间的双向通讯。另外，Chainlink Labs团队在Filecoin Launchpad加速营中担任第二批项目的顾问，帮助加速营参与者使用预言机扩展应用功能。
 
-Filecoin还赞助了参与者众多的2021年春季Chainlink黑客松，数个同时使用Filecoin和Chainlink的项目进入Filecoin Launchpad加速营，如 Tamago、[Nifty Royale](https://niftyroyale.com/)、[CryptOrchids](https://cryptorchids.io/)。
+Filecoin还赞助了参与者众多的2021年春季Chainlink黑客松，数个同时使用Filecoin和Chainlink的项目进入Filecoin Launchpad加速营，如 Tamago、Nifty Royale、[CryptOrchids](https://cryptorchids.io/)。
 
 新的联合资助计划旨在通过鼓励开发者创建直接结合这两个网络的工作流，来支持和促进Chainlink和Filecoin之间更深层次的集成。使用专门打造的[Chainlink外部适配器](https://docs.chain.link/docs/external-adapters/)，实现集成的几种主要方式有：
 

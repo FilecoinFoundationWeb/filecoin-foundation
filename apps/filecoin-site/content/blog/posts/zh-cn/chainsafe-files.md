@@ -73,7 +73,7 @@ _ChainSafe Files能够提供高度保护隐私、高度安全的云存储，让�
 
 数据取回的能力是构建开放和去中心化平台的一个重要方面。除了你没有人能登录平台和阅读你的文件，这听上去很棒。但万一这个平台倒闭了或控制你的访问呢？这就是IPFS和Filecoin这样的分布式存储网络发挥作用的时候了。有不少读者应该早知道IPFS和Filecoin了，不过对此不熟悉的人还是可以 [阅读这个链接的内容来了解更多](https://docs.filecoin.io/about-filecoin/ipfs-and-filecoin/)。
 
-简单地说，IPFS是一个由计算机（节点）构成的文件存储网络。一个节点可“pin”住你的文件，意味着它会保留一个副本，在得到请求的时候进行分发。Files的后端是在 [ChainSafe Storage](http://storage.chainsafe.io)之上构建的，而上传到Files的任何文件都是由我们的基础设施里的一个节点pin住的。每一个文件都有一个IPFS内容标识(CID)，在操作界面点击“信息”时就可以看到。
+简单地说，IPFS是一个由计算机（节点）构成的文件存储网络。一个节点可“pin”住你的文件，意味着它会保留一个副本，在得到请求的时候进行分发。Files的后端是在 ChainSafe Storage之上构建的，而上传到Files的任何文件都是由我们的基础设施里的一个节点pin住的。每一个文件都有一个IPFS内容标识(CID)，在操作界面点击“信息”时就可以看到。
 
 ![ChainSafe Files文件信息](/uploads/file-info.webp)
 
