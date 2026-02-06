@@ -31,6 +31,8 @@ export default async function Blog({ params }: BlogProps) {
   const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = sortedPosts[0]
 
+  const postsWithoutContent = sortedPosts.map(({ content: _, ...post }) => post)
+
   return (
     <>
       <StructuredDataScript
@@ -52,7 +54,7 @@ export default async function Blog({ params }: BlogProps) {
 
       <PageSection backgroundVariant="light" paddingVariant="topNone">
         <Suspense>
-          <BlogPostList posts={sortedPosts} />
+          <BlogPostList posts={postsWithoutContent} />
         </Suspense>
       </PageSection>
     </>
