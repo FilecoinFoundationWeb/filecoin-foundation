@@ -10,6 +10,7 @@ const withNextIntl = createNextIntlPlugin()
 const nextConfig = createNextConfig({
   imageRemotePatterns: [],
   redirects: async () => rawRedirects,
+  transpilePackages: ['@filecoin-foundation/ui-filecoin'],
   sentry: {
     project: 'filecoin-site',
     authTokenEnvVar: 'SENTRY_AUTH_TOKEN_FILECOIN_SITE',
