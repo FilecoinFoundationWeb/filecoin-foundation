@@ -3,7 +3,7 @@ import { routing } from '@/i18n/routing'
 import createMiddleware from 'next-intl/middleware'
 
 
-export default createMiddleware(routing)
+export const proxy = createMiddleware(routing)
 
 export const config = {
   // Match all pathnames except for

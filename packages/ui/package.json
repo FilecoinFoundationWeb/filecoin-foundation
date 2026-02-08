@@ -86,7 +86,7 @@
     "@sentry/nextjs": "^10.32.1",
     "@tailwindcss/postcss": "^4.1.18",
     "clsx": "^2.1.1",
-    "next": "^15.5.7",
+    "next": "^16.1.6",
     "next-plausible": "^3.12.4",
     "nuqs": "^2.8.6",
     "postcss": "^8.5.6",
