@@ -1,11 +1,11 @@
-import '../config-initializer' // Just import to run initialization
-
 import localFont from 'next/font/local'
 
 import { DEFAULT_LOCALE } from '@/i18n/locales'
 import type { Locale } from '@/i18n/types'
 
 import { clsx } from 'clsx'
+import { NextIntlClientProvider } from 'next-intl'
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { BreakpointDebugger } from '@filecoin-foundation/ui-filecoin/BreakpointDebugger'
@@ -49,10 +49,14 @@ export function SiteLayout({
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
       </head>
       <body className="bg-zinc-950 font-sans text-base/5.5">
-        <main>{children}</main>
-        <Footer />
+        <NextIntlClientProvider>
+          <NuqsAdapter>
+            <main>{children}</main>
+            <Footer />
 
-        {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
+            {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
+          </NuqsAdapter>
+        </NextIntlClientProvider>
       </body>
     </html>
   )

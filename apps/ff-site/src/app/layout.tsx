@@ -1,3 +1,5 @@
+import '../config-initializer' // Just import to run initialization
+
 import '@/styles/globals.css'
 
 import { ROOT_METADATA } from '@/constants/siteMetadata'
