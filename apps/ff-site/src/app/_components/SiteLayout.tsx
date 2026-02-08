@@ -1,6 +1,12 @@
 import { Archivo } from 'next/font/google'
 
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import PlausibleProvider from 'next-plausible'
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
+
 import { SiteLayout as SharedSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
+
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -17,7 +23,17 @@ type SiteLayoutProps = {
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
     <SharedSiteLayout font={archivo} Navigation={Navigation} Footer={Footer}>
-      {children}
+      <NuqsAdapter>
+        <PlausibleProvider
+          trackOutboundLinks
+          hash
+          trackFileDownloads
+          domain={BASE_DOMAIN}
+        >
+          {children}
+          <SpeedInsights />
+        </PlausibleProvider>
+      </NuqsAdapter>
     </SharedSiteLayout>
   )
 }
