@@ -65,6 +65,6 @@
   },
   "dependencies": {
     "js-yaml": "^4.1.0",
-    "remove-markdown": "^0.6.2"
+    "remove-markdown": "^0.6.3"
   }
 }
