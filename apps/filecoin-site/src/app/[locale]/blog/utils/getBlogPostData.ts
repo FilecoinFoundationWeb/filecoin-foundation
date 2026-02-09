@@ -5,7 +5,6 @@ import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 
 import { PATHS } from '@/constants/paths'
 
-
 import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
 export async function getBlogPostData(slug: string, locale: Locale) {
@@ -19,7 +18,9 @@ export async function getBlogPostsData(locale: Locale) {
     zodSchema: BlogPostFrontmatterSchema,
   })
 
-  return allPosts.map(transformBlogPostData)
+  return allPosts
+    .map(transformBlogPostData)
+    .map(({ content: _, ...post }) => post)
 }
 
 function getBlogPostMarkdownData(slug: string, locale: Locale) {
