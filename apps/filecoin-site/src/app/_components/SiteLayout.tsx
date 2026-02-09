@@ -48,7 +48,7 @@ export function SiteLayout({
       <head>
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
       </head>
-      <body className="bg-white font-sans text-base/5.5">
+      <body className="bg-zinc-950 font-sans text-base/5.5">
         <main>{children}</main>
         <Footer />
 
