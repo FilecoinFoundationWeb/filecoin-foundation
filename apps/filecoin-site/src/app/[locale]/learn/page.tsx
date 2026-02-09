@@ -1,6 +1,8 @@
 import Image from 'next/image'
 
 import { clsx } from 'clsx'
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -25,18 +27,24 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbed'
 
-import { LEARN_SEO } from './constants/seo'
 import { howFilecoinWorks } from './data/howFilecoinWorks'
 import { learnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
 import { resilientInternetCta } from './data/resilientInternetCta'
 import { whatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-export default function Learn() {
+const TRANSLATION_NAMESPACE = 'learn'
+
+export default async function Learn() {
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(LEARN_SEO)}
+        structuredData={generateStructuredData({
+          title: t('metadata.title'),
+          description: t('metadata.description'),
+        })}
       />
       <div className={clsx('relative isolate', backgroundVariants.dark)}>
         <Navigation backgroundVariant="transparentDark" />
@@ -187,8 +195,12 @@ export default function Learn() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: LEARN_SEO.title },
-  description: LEARN_SEO.description,
-  path: PATHS.LEARN.path,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
+  return createMetadata({
+    title: { absolute: t('metadata.title') },
+    description: t('metadata.description'),
+    path: PATHS.LEARN.path,
+  })
+}

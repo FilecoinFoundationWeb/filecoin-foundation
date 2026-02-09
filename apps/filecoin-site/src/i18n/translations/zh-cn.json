@@ -8,6 +8,70 @@
         "main": "存储数据",
         "secondary": "开始构建"
       }
+    },
+    "metadata": {
+      "title": "TODO",
+      "description": "TODO"
+    }
+  },
+  "blog": {
+    "metadata": {
+      "title": "TODO",
+      "description": "TODO"
+    }
+  },
+  "community-hub": {
+    "metadata": {
+      "title": "TODO",
+      "description": "TODO"
+    }
+  },
+  "learn": {
+    "metadata": {
+      "title": "TODO",
+      "description": "TODO"
+    }
+  },
+  "store-data": {
+    "metadata": {
+      "title": "TODO",
+      "description": "TODO"
+    }
+  },
+  "build-on-filecoin": {
+    "metadata": {
+      "title": "TODO",
+      "description": "TODO"
+    }
+  },
+  "case-studies": {
+    "metadata": {
+      "title": "TODO",
+      "description": "TODO"
+    }
+  },
+  "privacy-policy": {
+    "metadata": {
+      "title": "TODO",
+      "description": "TODO"
+    }
+  },
+  "terms-of-use": {
+    "metadata": {
+      "title": "TODO",
+      "description": "TODO"
+    }
+  },
+  "provide-storage": {
+    "metadata": {
+      "title": "TODO",
+      "description": "TODO"
+    }
+  },
+  "provide-storage-onboarding": {
+    "metadata": {
+      "title": "TODO",
+      "description": "TODO"
     }
   }
 }

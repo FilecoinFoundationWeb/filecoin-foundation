@@ -1,5 +1,8 @@
 import Image from 'next/image'
 
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Card } from '@filecoin-foundation/ui-filecoin/Card'
@@ -19,17 +22,23 @@ import { createMetadata } from '@/utils/createMetadata'
 import { GradientOverlay } from '@/components/GradientOverlay'
 import { Navigation } from '@/components/Navigation/Navigation'
 
-import { PROVIDE_STORAGE_SEO } from './constants/seo'
 import { gettingStartedWithPDP } from './data/gettingStartedWithPDP'
 import { scalingOperations } from './data/scalingOperations'
 import { storageProvidersLogos } from './data/storageProvidersLogos'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-export default function ProvideStorage() {
+const TRANSLATION_NAMESPACE = 'provide-storage'
+
+export default async function ProvideStorage() {
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(PROVIDE_STORAGE_SEO)}
+        structuredData={generateStructuredData({
+          title: t('metadata.title'),
+          description: t('metadata.description'),
+        })}
       />
 
       <Navigation backgroundVariant="dark" />
@@ -148,9 +157,13 @@ export default function ProvideStorage() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: PROVIDE_STORAGE_SEO.title },
-  description: PROVIDE_STORAGE_SEO.description,
-  path: PATHS.PROVIDE_STORAGE.path,
-  image: graphicsData.filecoinStorageDevice.data.src,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
+  return createMetadata({
+    title: { absolute: t('metadata.title') },
+    description: t('metadata.description'),
+    path: PATHS.PROVIDE_STORAGE.path,
+    image: graphicsData.filecoinStorageDevice.data.src,
+  })
+}

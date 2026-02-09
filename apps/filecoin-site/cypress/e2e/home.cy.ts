@@ -1,17 +1,18 @@
+import translations from '@/i18n/translations/en.json'
+
 import { tests } from '@filecoin-foundation/cypress/support'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL, SEO } from '@/constants/siteMetadata'
+import { BASE_URL } from '@/constants/siteMetadata'
 
 const { path } = PATHS.HOME
-const { title, description } = SEO
 
 describe('Home Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
-      path,
-      title,
-      description,
+      path: PATHS.HOME.path,
+      title: translations.home.metadata.title,
+      description: translations.home.metadata.description,
       baseUrl: BASE_URL,
     })
   })

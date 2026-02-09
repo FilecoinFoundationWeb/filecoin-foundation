@@ -1,5 +1,8 @@
 import Image from 'next/image'
 
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
@@ -23,7 +26,6 @@ import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { getInvolvedOptions } from '../community-hub/data/getInvolvedOptions'
 
 import { HeroSection } from './components/HeroSection'
-import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
 import { builtOnFilecoin } from './data/builtOnFilecoin'
 import { developerResources } from './data/developerResources'
 import { getInvolvedImages } from './data/getInvolvedImages'
@@ -31,11 +33,18 @@ import { tutorialsAndGuides } from './data/tutorialsAndGuides'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBadgeVariant } from './utils/getBadgeVariant'
 
-export default function BuildOnFilecoin() {
+const TRANSLATION_NAMESPACE = 'build-on-filecoin'
+
+export default async function BuildOnFilecoin() {
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(BUILD_ON_FILECOIN_SEO)}
+        structuredData={generateStructuredData({
+          title: t('metadata.title'),
+          description: t('metadata.description'),
+        })}
       />
 
       <Navigation backgroundVariant="dark" />
@@ -153,9 +162,13 @@ export default function BuildOnFilecoin() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: BUILD_ON_FILECOIN_SEO.title },
-  description: BUILD_ON_FILECOIN_SEO.description,
-  path: PATHS.BUILD_ON_FILECOIN.path,
-  image: graphicsData.spiralGalaxyStarsSpace.data.src,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
+  return createMetadata({
+    title: { absolute: t('metadata.title') },
+    description: t('metadata.description'),
+    path: PATHS.BUILD_ON_FILECOIN.path,
+    image: graphicsData.spiralGalaxyStarsSpace.data.src,
+  })
+}

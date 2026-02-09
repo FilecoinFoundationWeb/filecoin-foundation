@@ -1,19 +1,18 @@
+import translations from '@/i18n/translations/en.json'
+
 import { tests } from '@filecoin-foundation/cypress/support'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { COMMUNITY_SEO } from '@/community-hub/constants/seo'
-
 const { path } = PATHS.COMMUNITY_HUB
-const { title, description } = COMMUNITY_SEO
 
 describe('Community Hub Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path,
-      title,
-      description,
+      title: translations['community-hub'].metadata.title,
+      description: translations['community-hub'].metadata.description,
       baseUrl: BASE_URL,
     })
   })

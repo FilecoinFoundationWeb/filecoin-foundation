@@ -1,5 +1,8 @@
 import type { LocaleParams } from '@/i18n/types'
 
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
@@ -16,9 +19,10 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { PageHeader } from './components/PageHeader'
-import { CASE_STUDIES_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getCaseStudiesByFeaturedStatus } from './utils/getCaseStudyData'
+
+const TRANSLATION_NAMESPACE = 'case-studies'
 
 type CaseStudiesProps = {
   params: Promise<LocaleParams>
@@ -30,11 +34,16 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
   const { featured: featuredCaseStudies, upcoming: upcomingCaseStudies } =
     await getCaseStudiesByFeaturedStatus(locale)
 
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
   return (
     <>
       <StructuredDataScript
         structuredData={generateStructuredData(
-          CASE_STUDIES_SEO,
+          {
+            title: t('metadata.title'),
+            description: t('metadata.description'),
+          },
           featuredCaseStudies,
         )}
       />
@@ -117,8 +126,12 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: CASE_STUDIES_SEO.title },
-  description: CASE_STUDIES_SEO.description,
-  path: PATHS.CASE_STUDIES.path,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
+  return createMetadata({
+    title: { absolute: t('metadata.title') },
+    description: t('metadata.description'),
+    path: PATHS.CASE_STUDIES.path,
+  })
+}

@@ -3,6 +3,8 @@ import Image from 'next/image'
 import type { LocaleParams } from '@/i18n/types'
 
 import { BookIcon } from '@phosphor-icons/react/dist/ssr'
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -14,7 +16,6 @@ import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
-import { SEO } from '@/constants/siteMetadata'
 import { FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -46,8 +47,11 @@ type BlogProps = {
   params: Promise<LocaleParams>
 }
 
+const TRANSLATION_NAMESPACE = 'home'
+
 export default async function Home({ params }: BlogProps) {
   const { locale } = await params
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
 
   const featuredBlogPosts = getFeaturedBlogPosts({
     posts: await getBlogPostsData(locale),
@@ -56,7 +60,12 @@ export default async function Home({ params }: BlogProps) {
 
   return (
     <>
-      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+      <StructuredDataScript
+        structuredData={generateStructuredData({
+          title: t('metadata.title'),
+          description: t('metadata.description'),
+        })}
+      />
 
       <div className="relative isolate">
         <Navigation backgroundVariant="transparentDark" />
@@ -274,9 +283,13 @@ export default async function Home({ params }: BlogProps) {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: SEO.title },
-  description: SEO.description,
-  path: PATHS.HOME.path,
-  image: graphicsData.classicLibraryInterior.data.src,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
+  return createMetadata({
+    title: { absolute: t('metadata.title') },
+    description: t('metadata.description'),
+    path: PATHS.HOME.path,
+    image: graphicsData.classicLibraryInterior.data.src,
+  })
+}

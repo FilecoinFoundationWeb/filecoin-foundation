@@ -2,6 +2,9 @@ import { Suspense } from 'react'
 
 import type { LocaleParams } from '@/i18n/types'
 
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
@@ -16,9 +19,10 @@ import { Navigation } from '@/components/Navigation/Navigation'
 
 import { BlogPageHeader } from './components/BlogPageHeader'
 import { BlogPostList } from './components/BlogPostList'
-import { BLOG_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
+
+const TRANSLATION_NAMESPACE = 'blog'
 
 type BlogProps = {
   params: Promise<LocaleParams>
@@ -31,10 +35,18 @@ export default async function Blog({ params }: BlogProps) {
   const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = sortedPosts[0]
 
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(BLOG_SEO, sortedPosts)}
+        structuredData={generateStructuredData(
+          {
+            title: t('metadata.title'),
+            description: t('metadata.description'),
+          },
+          sortedPosts,
+        )}
       />
       <Navigation backgroundVariant="light" />
 
@@ -59,8 +71,12 @@ export default async function Blog({ params }: BlogProps) {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: BLOG_SEO.title },
-  description: BLOG_SEO.description,
-  path: PATHS.BLOG.path,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
+  return createMetadata({
+    title: { absolute: t('metadata.title') },
+    description: t('metadata.description'),
+    path: PATHS.BLOG.path,
+  })
+}

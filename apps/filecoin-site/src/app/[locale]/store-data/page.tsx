@@ -1,5 +1,8 @@
 import Image from 'next/image'
 
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoSection'
@@ -19,7 +22,6 @@ import { Navigation } from '@/components/Navigation/Navigation'
 
 import { StorageProviderCardWithImage } from './components/StorageProviderCard/StorageProviderCardWithImage'
 import { StorageProviderSection } from './components/StorageProviderSection'
-import { STORE_DATA_SEO } from './constants/seo'
 import {
   filecoinStorageProviders,
   featuredFilecoinStorageProvider,
@@ -27,11 +29,18 @@ import {
 } from './data/storageProviders'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-export default function StoreData() {
+const TRANSLATION_NAMESPACE = 'store-data'
+
+export default async function StoreData() {
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(STORE_DATA_SEO)}
+        structuredData={generateStructuredData({
+          title: t('metadata.title'),
+          description: t('metadata.description'),
+        })}
       />
 
       <div className="relative isolate overflow-clip">
@@ -104,9 +113,13 @@ export default function StoreData() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: STORE_DATA_SEO.title },
-  description: STORE_DATA_SEO.description,
-  path: PATHS.STORE_DATA.path,
-  image: graphicsData.digitalMediaConversionSetup.data.src,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
+  return createMetadata({
+    title: { absolute: t('metadata.title') },
+    description: t('metadata.description'),
+    path: PATHS.STORE_DATA.path,
+    image: graphicsData.digitalMediaConversionSetup.data.src,
+  })
+}
