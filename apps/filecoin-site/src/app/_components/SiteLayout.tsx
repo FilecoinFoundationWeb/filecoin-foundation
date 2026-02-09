@@ -1,6 +1,7 @@
 import localFont from 'next/font/local'
 
 import { DEFAULT_LOCALE } from '@/i18n/locales'
+import { Link } from '@/i18n/navigation'
 import type { Locale } from '@/i18n/types'
 
 import { clsx } from 'clsx'
@@ -9,10 +10,18 @@ import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { BreakpointDebugger } from '@filecoin-foundation/ui-filecoin/BreakpointDebugger'
+import { setUIConfig } from '@filecoin-foundation/ui-filecoin/config/ui-config'
 
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { Footer } from '@/components/Footer/Footer'
+
+// Initialize UI config before any components render
+setUIConfig({
+  baseDomain: BASE_DOMAIN,
+  Link: Link,
+})
 
 // funnelSans also has an italic version in the same directory. We don't use italics as of now so it's not imported here.
 const funnelSans = localFont({
