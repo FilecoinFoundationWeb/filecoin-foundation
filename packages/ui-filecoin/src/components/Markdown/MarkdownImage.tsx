@@ -4,32 +4,31 @@ import Image from 'next/image'
 
 import { buildImageSizeProp } from '../../utils/buildImageSizeProp'
 
-const IMAGE_DIMENSIONS = {
-  containerWidth: 672,
-  aspectRatioHeight: Math.round(672 * (9 / 16)),
-} as const
-
 type MarkdownImageProps = ComponentPropsWithoutRef<'img'>
 
+const TAILWIND_3XL_WIDTH = 768
+
+const IMAGE_PLACEHOLDER_WIDTH = 1_280
+const IMAGE_PLACEHOLDER_HEIGHT = IMAGE_PLACEHOLDER_WIDTH * (9 / 16)
+
 export function MarkdownImage({ src, alt }: MarkdownImageProps) {
-  const commonProps = {
-    className: 'rounded-lg object-cover',
-    quality: 100,
-    width: IMAGE_DIMENSIONS.containerWidth,
-    height: IMAGE_DIMENSIONS.aspectRatioHeight,
-    sizes: buildImageSizeProp({
-      startSize: '100vw',
-      md: `${IMAGE_DIMENSIONS.containerWidth}px`,
-    }),
-  }
-
   if (!src) {
-    const errorMessage = 'Invalid markdown: image is missing src attribute'
-
-    console.error(errorMessage)
-
+    console.error('Invalid markdown: image is missing src attribute')
     return null
   }
 
-  return <Image {...commonProps} src={src as string} alt={alt || ''} />
+  return (
+    <Image
+      className="rounded-lg object-cover"
+      src={src}
+      alt={alt || ''}
+      quality={100}
+      width={IMAGE_PLACEHOLDER_WIDTH}
+      height={IMAGE_PLACEHOLDER_HEIGHT}
+      sizes={buildImageSizeProp({
+        startSize: '100vw',
+        md: `${TAILWIND_3XL_WIDTH}px`,
+      })}
+    />
+  )
 }
