@@ -1,6 +1,5 @@
 import { Archivo } from 'next/font/google'
 
-import { SpeedInsights } from '@vercel/speed-insights/next'
 import PlausibleProvider from 'next-plausible'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
@@ -31,7 +30,6 @@ export function SiteLayout({ children }: SiteLayoutProps) {
           domain={BASE_DOMAIN}
         >
           {children}
-          <SpeedInsights />
         </PlausibleProvider>
       </NuqsAdapter>
     </SharedSiteLayout>
