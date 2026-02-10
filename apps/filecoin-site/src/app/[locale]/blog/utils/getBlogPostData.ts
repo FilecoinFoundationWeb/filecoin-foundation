@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 import type { Locale } from '@/i18n/types'
 
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
@@ -9,6 +11,9 @@ import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
 export async function getBlogPostData(slug: string, locale: Locale) {
   const data = await getBlogPostMarkdownData(slug, locale)
+  if (!isBlogPostPublished(data)) {
+    notFound()
+  }
   return transformBlogPostData(data)
 }
 
@@ -19,6 +24,7 @@ export async function getBlogPostsData(locale: Locale) {
   })
 
   return allPosts
+    .filter(isBlogPostPublished)
     .map(transformBlogPostData)
     .map(({ content: _, ...post }) => post)
 }
@@ -46,4 +52,8 @@ function transformBlogPostData(
 
 function getDirectoryPathForLocale(locale: Locale) {
   return PATHS.BLOG.entriesPath + `/${locale}`
+}
+
+function isBlogPostPublished(post: { draft?: boolean }): boolean {
+  return post?.draft !== true
 }
