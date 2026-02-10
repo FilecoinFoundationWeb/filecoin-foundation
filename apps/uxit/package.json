@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint src --fix",
     "unlighthouse": "tsx ./scripts/generateSiteAuditReports.ts"
   },
   "dependencies": {
     "@filecoin-foundation/ui": "0.0.0",
-    "next": "^15.5.7",
+    "next": "^16.1.6",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "tailwindcss": "^4.1.18"
@@ -20,7 +20,7 @@
     "@eslint/js": "^9.39.2",
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
-    "@next/eslint-plugin-next": "^15.5.6",
+    "@next/eslint-plugin-next": "^16.1.6",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^22",
     "@types/react": "19.2.7",
