@@ -33,6 +33,18 @@ export const siteMetadataList: SiteMetadata[] = [
     name: 'Filecoin.io Prototype',
   },
   {
+    id: 'filecoin-pay',
+    name: 'Filecoin Pay',
+  },
+  {
+    id: 'filecoin-onchain-cloud',
+    name: 'Filecoin Onchain Cloud',
+  },
+  {
+    id: 'filecoin-pin',
+    name: 'Filecoin Pin',
+  },
+  {
     id: 'lighthouse',
     name: 'Lighthouse Storage',
   },

@@ -3,6 +3,7 @@ import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { getDigestArticleStaticParams } from '@filecoin-foundation/utils/getDigestArticleStaticParams'
 import type { DigestArticleParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -14,10 +15,10 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
-import { getDigestArticleData } from '../../utils/getDigestArticleData'
-import { getDigestArticlesWithIssueContext } from '../../utils/getDigestArticlesWithIssueContext'
-import { getDigestIssuesData } from '../../utils/getDigestIssueData'
-import { buildIssueSlug } from '../../utils/parseDigestParams'
+import {
+  getDigestArticleData,
+  getDigestArticlesData,
+} from '../../utils/getDigestArticleData'
 
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -29,8 +30,15 @@ type DigestArticleProps = {
 export default async function DigestArticle(props: DigestArticleProps) {
   const { slug: articleSlug } = await props.params
   const article = await getDigestArticleData(articleSlug)
-  const { title, issueNumber, articleNumber, image, authors, content, slug } =
-    article
+  const {
+    title,
+    issueNumber,
+    articlePath,
+    articleNumber,
+    image,
+    authors,
+    content,
+  } = article
 
   const atLeastOneAuthorHasBio = authors.some((author) => author.bio)
 
@@ -62,7 +70,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
         <ShareArticle
           sectionTitle="Share Article"
           articleTitle={title}
-          path={`${PATHS.DIGEST.path}/${slug}`}
+          path={`${PATHS.DIGEST.path}/${articlePath}`}
           baseUrl={BASE_URL}
         />
       </ArticleLayout>
@@ -71,29 +79,17 @@ export default async function DigestArticle(props: DigestArticleProps) {
 }
 
 export async function generateStaticParams() {
-  const allIssues = await getDigestIssuesData()
-
-  const params = await Promise.all(
-    allIssues.map(async (issue) => {
-      const issueArticles = await getDigestArticlesWithIssueContext(
-        issue.issueNumber,
-      )
-      return issueArticles.map((article) => ({
-        issue: buildIssueSlug(article.issueNumber),
-        slug: article.slug,
-      }))
-    }),
-  )
-
-  return params.flat()
+  const articles = await getDigestArticlesData()
+  return getDigestArticleStaticParams({ articles })
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
-  const { slug } = await props.params
-  const { seo, image, issueNumber } = await getDigestArticleData(slug)
+  const { slug: articleSlug } = await props.params
+  const article = await getDigestArticleData(articleSlug)
+  const { seo, image, articlePath } = article
 
   return createMetadata({
-    path: `${PATHS.DIGEST.articleUrl({ issueNumber, articleSlug: slug })}` as `/${string}`,
+    path: `${PATHS.DIGEST.path}/${articlePath}`,
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME_SHORT}` },
     description: seo.description,
     image: image?.src || graphicsData.digest.data.src,
