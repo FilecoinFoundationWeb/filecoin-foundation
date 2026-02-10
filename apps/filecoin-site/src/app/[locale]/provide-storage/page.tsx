@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -18,6 +17,7 @@ import { FILECOIN_URLS, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { GradientOverlay } from '@/components/GradientOverlay'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -30,16 +30,11 @@ import { generateStructuredData } from './utils/generateStructuredData'
 const TRANSLATION_NAMESPACE = 'provide-storage'
 
 export default async function ProvideStorage() {
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
 
   return (
     <>
-      <StructuredDataScript
-        structuredData={generateStructuredData({
-          title: t('metadata.title'),
-          description: t('metadata.description'),
-        })}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(metadata)} />
 
       <Navigation backgroundVariant="dark" />
 
@@ -158,11 +153,13 @@ export default async function ProvideStorage() {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+  const { title, description } = await getTranslatedMetadata(
+    TRANSLATION_NAMESPACE,
+  )
 
   return createMetadata({
-    title: { absolute: t('metadata.title') },
-    description: t('metadata.description'),
+    title: { absolute: title },
+    description,
     path: PATHS.PROVIDE_STORAGE.path,
     image: graphicsData.filecoinStorageDevice.data.src,
   })

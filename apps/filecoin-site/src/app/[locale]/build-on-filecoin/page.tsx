@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -17,6 +16,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { ImageGrid } from '@/components/ImageGrid'
@@ -36,16 +36,11 @@ import { getBadgeVariant } from './utils/getBadgeVariant'
 const TRANSLATION_NAMESPACE = 'build-on-filecoin'
 
 export default async function BuildOnFilecoin() {
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
 
   return (
     <>
-      <StructuredDataScript
-        structuredData={generateStructuredData({
-          title: t('metadata.title'),
-          description: t('metadata.description'),
-        })}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(metadata)} />
 
       <Navigation backgroundVariant="dark" />
 
@@ -163,11 +158,13 @@ export default async function BuildOnFilecoin() {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+  const { title, description } = await getTranslatedMetadata(
+    TRANSLATION_NAMESPACE,
+  )
 
   return createMetadata({
-    title: { absolute: t('metadata.title') },
-    description: t('metadata.description'),
+    title: { absolute: title },
+    description,
     path: PATHS.BUILD_ON_FILECOIN.path,
     image: graphicsData.spiralGalaxyStarsSpace.data.src,
   })

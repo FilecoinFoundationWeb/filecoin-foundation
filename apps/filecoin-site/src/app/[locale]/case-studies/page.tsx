@@ -1,7 +1,6 @@
 import type { LocaleParams } from '@/i18n/types'
 
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -14,6 +13,7 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
@@ -34,18 +34,12 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
   const { featured: featuredCaseStudies, upcoming: upcomingCaseStudies } =
     await getCaseStudiesByFeaturedStatus(locale)
 
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
 
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(
-          {
-            title: t('metadata.title'),
-            description: t('metadata.description'),
-          },
-          featuredCaseStudies,
-        )}
+        structuredData={generateStructuredData(metadata, featuredCaseStudies)}
       />
       <Navigation backgroundVariant="dark" />
       <PageSection backgroundVariant="dark">
@@ -127,11 +121,13 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+  const { title, description } = await getTranslatedMetadata(
+    TRANSLATION_NAMESPACE,
+  )
 
   return createMetadata({
-    title: { absolute: t('metadata.title') },
-    description: t('metadata.description'),
+    title: { absolute: title },
+    description,
     path: PATHS.CASE_STUDIES.path,
   })
 }

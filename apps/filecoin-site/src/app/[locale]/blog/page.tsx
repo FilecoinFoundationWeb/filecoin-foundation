@@ -3,7 +3,6 @@ import { Suspense } from 'react'
 import type { LocaleParams } from '@/i18n/types'
 
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
@@ -14,6 +13,7 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
@@ -35,18 +35,12 @@ export default async function Blog({ params }: BlogProps) {
   const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = sortedPosts[0]
 
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
 
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(
-          {
-            title: t('metadata.title'),
-            description: t('metadata.description'),
-          },
-          sortedPosts,
-        )}
+        structuredData={generateStructuredData(metadata, sortedPosts)}
       />
       <Navigation backgroundVariant="light" />
 
@@ -72,11 +66,13 @@ export default async function Blog({ params }: BlogProps) {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+  const { title, description } = await getTranslatedMetadata(
+    TRANSLATION_NAMESPACE,
+  )
 
   return createMetadata({
-    title: { absolute: t('metadata.title') },
-    description: t('metadata.description'),
+    title: { absolute: title },
+    description,
     path: PATHS.BLOG.path,
   })
 }

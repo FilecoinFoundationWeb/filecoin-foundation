@@ -3,7 +3,6 @@ import Image from 'next/image'
 import type { LocaleParams } from '@/i18n/types'
 
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -22,6 +21,7 @@ import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { ImageGrid } from '@/components/ImageGrid'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -38,8 +38,6 @@ import { socialMedia } from './data/socialMedia'
 import { BlogCard } from '@/blog/components/BlogCard'
 import type { BlogPostPreview } from '@/blog/types/blogPostType'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
-
-const TRANSLATION_NAMESPACE = 'community-hub'
 
 type BlogProps = {
   params: Promise<LocaleParams>
@@ -262,11 +260,11 @@ export default async function CommunityHub({ params }: BlogProps) {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+  const { title, description } = await getTranslatedMetadata('community-hub')
 
   return createMetadata({
-    title: { absolute: t('metadata.title') },
-    description: t('metadata.description'),
+    title: { absolute: title },
+    description,
     path: PATHS.COMMUNITY_HUB.path,
   })
 }

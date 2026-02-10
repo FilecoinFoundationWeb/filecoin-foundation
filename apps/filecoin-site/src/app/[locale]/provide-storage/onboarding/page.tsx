@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
 
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
@@ -7,12 +6,11 @@ import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import { ProvideStorageForm } from './components/ProvideStorageForm'
-
-const TRANSLATION_NAMESPACE = 'provide-storage-onboarding'
 
 export default function ProvideStorageFormPage() {
   return (
@@ -37,11 +35,13 @@ export default function ProvideStorageFormPage() {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+  const { title, description } = await getTranslatedMetadata(
+    'provide-storage-onboarding',
+  )
 
   return createMetadata({
-    title: { absolute: t('metadata.title') },
-    description: t('metadata.description'),
+    title: { absolute: title },
+    description,
     path: PATHS.PROVIDE_STORAGE_ONBOARDING.path,
   })
 }

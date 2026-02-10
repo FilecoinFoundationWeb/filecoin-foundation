@@ -4,7 +4,6 @@ import type { LocaleParams } from '@/i18n/types'
 
 import { BookIcon } from '@phosphor-icons/react/dist/ssr'
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -22,6 +21,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { GradientOverlay } from '@/components/GradientOverlay'
@@ -51,7 +51,8 @@ const TRANSLATION_NAMESPACE = 'home'
 
 export default async function Home({ params }: BlogProps) {
   const { locale } = await params
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+
+  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
 
   const featuredBlogPosts = getFeaturedBlogPosts({
     posts: await getBlogPostsData(locale),
@@ -60,12 +61,7 @@ export default async function Home({ params }: BlogProps) {
 
   return (
     <>
-      <StructuredDataScript
-        structuredData={generateStructuredData({
-          title: t('metadata.title'),
-          description: t('metadata.description'),
-        })}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(metadata)} />
 
       <div className="relative isolate">
         <Navigation backgroundVariant="transparentDark" />
@@ -284,11 +280,13 @@ export default async function Home({ params }: BlogProps) {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations(TRANSLATION_NAMESPACE)
+  const { title, description } = await getTranslatedMetadata(
+    TRANSLATION_NAMESPACE,
+  )
 
   return createMetadata({
-    title: { absolute: t('metadata.title') },
-    description: t('metadata.description'),
+    title: { absolute: title },
+    description,
     path: PATHS.HOME.path,
     image: graphicsData.classicLibraryInterior.data.src,
   })
