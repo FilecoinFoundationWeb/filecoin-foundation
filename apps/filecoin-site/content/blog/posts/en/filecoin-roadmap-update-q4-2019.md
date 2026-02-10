@@ -31,7 +31,7 @@ As we announced in [this blog post](https://filecoin.io/blog/filecoin-testnet-is
 
 We have updated our [public roadmap document](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#). In rough terms, this is where we are (these phases are not equally long).
 
-![Roadmap phases](https://filecoin.io/vintage/images/blog/roadmap-phases-testnet.jpg)
+![Roadmap phases](/blog/roadmap-phases-testnet.jpg)
 
 ## What’s next
 
@@ -56,7 +56,7 @@ This is just a preview of some ecosystem initiatives. We will describe these pro
 
 We recently assembled a public Gantt chart that allows us to share our critical path workstreams and updated timing information. The tool looks like this 👇and can be accessed at [this link](https://app.instagantt.com/shared/s/1152992274307505/latest).
 
-![Roadmap Gantt chart](https://filecoin.io/vintage/images/blog/roadmap-gantt-chart.jpg)
+![Roadmap Gantt chart](/blog/roadmap-gantt-chart.jpg)
 
 The milestones we discussed in the previous section are in the Gantt chart. We will directly update [this tool](https://app.instagantt.com/shared/s/1152992274307505/latest) when we have updated timing information.
 

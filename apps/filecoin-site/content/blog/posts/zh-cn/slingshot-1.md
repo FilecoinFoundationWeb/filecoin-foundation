@@ -33,7 +33,7 @@ Slingshot竞赛的第一阶段历时四周，在2020年10月28日（上周三）
 
 为了庆祝主网顺利启动，社区发起了[Filecoin 主网启动周](https://liftoff.filecoin.io/)，聚集了超过80位圆桌讨论者来谈论涵盖从技术细节和发展过程到当前和未来的应用等所有与Filecoin相关的话题。您可以在[此处](https://liftoff.filecoin.io/#mainTrack)查看所有环节！
 
-![第一阶段成就](/vintage/images/blog/slingshot-p1-achieve.jpg)
+![第一阶段成就](/blog/slingshot-p1-achieve.jpg)
 
 _第一阶段成就_
 
@@ -56,7 +56,7 @@ _第一阶段成就_
 
 这些团队在短时间内完成了大量的工作。点击[此处](https://youtu.be/qheNJZ1DClM?t=556)查看所有的演示!
 
-![ipfsNewBund 团队展示其界面](/vintage/images/blog/slingshot-p1-ipfsnewbund.jpg)
+![ipfsNewBund 团队展示其界面](/blog/slingshot-p1-ipfsnewbund.jpg)
 
 _ipfsNewBund 团队展示其界面_
 
@@ -78,7 +78,7 @@ _ipfsNewBund 团队展示其界面_
 4. Filecoin.Netdisk
 5. matin-cloud-pan
 
-![ipfsNewBund 团队展示其界面](/vintage/images/blog/slingshot-p1-ipfsnewbund.jpg)
+![ipfsNewBund 团队展示其界面](/blog/slingshot-p1-ipfsnewbund.jpg)
 
 _ipfsNewBund 团队展示其界面_
 
@@ -97,7 +97,7 @@ Chainsafe联合创始人兼CTO、Slingshot大赛社区评审员Greg Markou为社
   - Anwen Web3 Content Community
   - diceSolo
 
-![为精彩的用户界面颁奖](/vintage/images/blog/slingshot-p1-ui.jpg)
+![为精彩的用户界面颁奖](/blog/slingshot-p1-ui.jpg)
 
 _为精彩的用户界面颁奖_
 
@@ -107,7 +107,7 @@ _为精彩的用户界面颁奖_
 
 随后Pooja为大家预告了第二阶段的内容。第二阶段于UTC时间2020年10月21日18时正式启动。我们将于2020年11月9日公布最终确定的规则和奖励，并于2020年11月11日开放本阶段竞赛的正式报名。
 
-![第二阶段提前指导](/vintage/images/blog/slingshot-p1-p2-guidance.jpg)
+![第二阶段提前指导](/blog/slingshot-p1-p2-guidance.jpg)
 
 _第二阶段提前指导_
 
@@ -122,7 +122,7 @@ _第二阶段提前指导_
 
 最后，协议实验室的CEO胡安为第一阶段的工作圆满地画上了句号，他提出了一些关于Slingshot的想法，以及他希望看到竞赛引领的新方向。Filecoin项目仍处于早期阶段，有很多机会可以创造有价值的使用场景、集成等来不断改善项目的方向。您可以在此处查看他的演讲。
 
-![期待第二阶段的精彩表现](/vintage/images/blog/slingshot-p1-p2-forward.jpg)
+![期待第二阶段的精彩表现](/blog/slingshot-p1-p2-forward.jpg)
 
 _期待第二阶段的精彩表现_
 

@@ -37,12 +37,16 @@ Bitcoin is built on a simple, linear blockchain. Every block is weighted equally
 
 As of this writing, the bitcoin blockchain is more than 600,000 blocks long (one for every 10 minutes since genesis, roughly). Sometimes two blocks are mined relatively close to each other (temporally). Bitcoin’s longest-chain rule and the 10-minute block time allow for most of the network to implicitly “vote” on which block they want to use in relatively short order. This choice could depend on factors like which block a miner heard about first and the transactions included in the blocks. It’s up to the miners to decide, the important thing being that the majority of the network eventually agrees which block is mined and which is abandoned. The abandoned block is called an orphan block. Orphan blocks are represented in the purple in the chart below.
 
-[![orphan blocks](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-1.jpg)](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-1.jpg)Orphan blocks above in purple.
+![orphan blocks](/blog/tipsets-family-based-approach-diagram-1.jpg)
+Orphan blocks above in purple.
 
 Orphans are valid blocks that don’t contribute to the overall length and stability of the chain. Other blockchains, like Ethereum, reward miners who crafted these blocks, known as “uncle blocks”. Miners earn rewards when they mine blocks even if they’re not ultimately included in the chain. This helps offset potential disadvantages a miner faces because of network latency, and disincentivizes centralization in the network: individual or less-well connected miners also get compensated.
 
-[![uncle blocks](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-2.jpg)](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-2.jpg)Uncle blocks. Unlike Bitcoin which uses a longest-chain, Filecoin’s consensus  
-seeks to make use of as much work as possible as a heaviest-chain algorithm.  
+![uncle blocks](/blog/tipsets-family-based-approach-diagram-2.jpg)
+
+Uncle blocks. Unlike Bitcoin which uses a longest-chain, Filecoin’s consensus
+seeks to make use of as much work as possible as a heaviest-chain algorithm.
+
 (Original from [https://vas3k.com/blog/ethereum/#scroll240](https://vas3k.com/blog/ethereum/#scroll240 "https://vas3k.com/blog/ethereum/#scroll240"))
 
 With the publication of “Secure High-Rate Transaction Processing in Bitcoin” (Sompolinsky, Zohar) in 2015, the idea of thinking of blockchains not as chains per se, but as directed acyclic graphs (DAGs) was popularized. In that way, rather than look simply at the longest-chain, one may look at the heaviest DAG (or GHOST—Greedy Heaviest-Observed SubTree), that with the most blocks. Filecoin is such a protocol, using both the overall number of blocks as well as the storage power they encode in its chain selection rule.

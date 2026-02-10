@@ -33,7 +33,7 @@ In this blog post, we cover recent progress since launching Testnet Phase 1 and 
 
 As a reminder, we [launched Testnet Phase 1](https://filecoin.io/blog/filecoin-testnet-is-live/) on December 11, 2019. As of this writing, the testnet has **3.6PiB+** of proven storage capacity. While we expect the Filecoin mainnet to be several orders of magnitude larger, this is a great start! Let’s keep growing the network!
 
-![Recent screenshot of Filecoin testnet stats dashboard](https://filecoin.io/vintage/images/blog/testnet-stats-feb-2020.jpg)
+![Recent screenshot of Filecoin testnet stats dashboard](/blog/testnet-stats-feb-2020.jpg)
 
 Since launching Testnet Phase 1 two months ago, we have made significant progress towards Testnet Phase 2. Here are a few highlights:
 
@@ -54,7 +54,9 @@ Since launching Testnet Phase 1 two months ago, we have made significant progres
   - **🛳️ filscan.io.** Check out [Filscan](https://filscan.io/), a block explorer for the Filecoin testnet! You can use Filscan to observe the progression of the chain, see the contents of each block, see messages and number of blocks mined per miner, and more! It’s a great way to explore activity on the Filecoin network. This project was supported through a grant from the Filecoin Dev Grants program in Wave 1 – we’re excited to see such a useful community resource being actively maintained and used on the testnet.
   - **😎 Ledger Filecoin app.** This week, the [Zondax](https://zondax.ch/) team published a [repo containing a work-in-progress Ledger Filecoin app](https://github.com/Zondax/ledger-filecoin). In addition, Open Work Labs is building a non-custodial web wallet that integrates this Ledger Filecoin library, and [posted a screenshot](https://twitter.com/openworklabs/status/1225882262291378176) showing a local version of Filecoin on Ledger. While this work is still very much in progress, we’re excited for what lies ahead – and hopefully, to see Filecoin on Ledger soon!
   - **❄️ Trustwallet.** [Trustwallet has merged support for Filecoin!](https://github.com/trustwallet/wallet-core/pull/811) The app will be able to support Filecoin tokens at mainnet launch.
-  - **💾 Moar miners!** This week, we saw several mining teams post pictures and videos of their mining setups in advance of the Filecoin mainnet launch. Check out some of the setups below! ![Filecoin community mining rigs](https://filecoin.io/vintage/images/blog/mining-rigs.jpg)
+  - **💾 Moar miners!** This week, we saw several mining teams post pictures and videos of their mining setups in advance of the Filecoin mainnet launch. Check out some of the setups below!
+
+  ![Filecoin community mining rigs](/blog/mining-rigs.jpg)
   - **👟 Dev Grants.** We recently closed Wave 2 of [Filecoin Dev Grants](https://filecoin.io/grants/). Thank you so much for the thoughtful and creative proposals from community members! We’ll be announcing grant recipients very soon. If you missed this wave, don’t worry – Wave 3 is currently open and we are accepting applications until **March 31, 2020**. We look forward to seeing your proposals!
 
 ## Testnet Phase 2: Rescheduling

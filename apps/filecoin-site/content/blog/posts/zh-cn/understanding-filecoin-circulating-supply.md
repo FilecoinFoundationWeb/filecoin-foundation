@@ -41,7 +41,7 @@ Filecoin是一种功能型代币，目的是为了让代币持有者拥有使用
 
 Filecoin经济的首要目标是通过矿工、开发者、研究者、用户和代币持有者，高效地生产有吸引力的存储相关商品和服务，并能向外部世界输出。可以更高效地生产具有价值商品的经济体能够促进对商品的更多需求和对网络代币的更多需求。经济体内参与者购买力的提高将促使经济体扩大和改进业务，为世界提供更好、性价比更优的服务。
 
-![Filecoin参与者](/vintage/images/blog/filecoin-circulating-supply-participants.png)
+![Filecoin参与者](/blog/filecoin-circulating-supply-participants.png)
 
 ## 代币铸造：使矿工铸币曲线和网络效用保持一致
 
@@ -57,11 +57,11 @@ Filecoin经济的首要目标是通过矿工、开发者、研究者、用户和
 
 因此，从挖矿中获得的有效代币的铸造权掌握在社区手中，并落在图1中两条线之间的任意地方。图2提供了一个网络需要增长多少才能达到最大铸币量的示例。虽然社区可能会一起更新网络的基准，但达到基准需要所有利益相关者、研究者、矿工、开发者、代币持有者、生态合作伙伴和存储用户之间的竞争与合作。
 
-![图1: 存储挖矿的最小和最大铸币量。](/vintage/images/blog/filecoin-circulating-supply-minting.png)
+![图1: 存储挖矿的最小和最大铸币量。](/blog/filecoin-circulating-supply-minting.png)
 
 _图1: 存储挖矿的最小和最大铸币量。_
 
-![图2: 对数刻度上的最大基准铸造线对应的网络存储基准。](/vintage/images/blog/filecoin-circulating-supply-baseline.png)
+![图2: 对数刻度上的最大基准铸造线对应的网络存储基准。](/blog/filecoin-circulating-supply-baseline.png)
 
 _图2: 对数刻度上的最大基准铸造线对应的网络存储基准。_
 

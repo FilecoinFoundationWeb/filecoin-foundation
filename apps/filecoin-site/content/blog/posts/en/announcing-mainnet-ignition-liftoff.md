@@ -28,13 +28,13 @@ The Filecoin network has made phenomenal progress over the last few months:
 3. **📑 Storage Clients**. Many new storage clients are already onboarding on the Filecoin network as part of [Space Race: Slingshot](https://slingshot.filecoin.io/) - including beautiful new clients like Slate which allow users and applications to store & retrieve files. These clients are building on sleek Filecoin developer APIs and tooling like Fleek’s Storage Daemon, and [Textile’s Powergate](https://docs.textile.io/powergate/).
 4. **⛏ Storage Miners**. Over the past 4 weeks, over 400 miners across 34 countries and 6 continents have onboarded an astounding **325+ PiB of storage capacity** onto the Filecoin network. That’s enough space for 90 million 1080p movies, 1,400 full copies of Wikipedia, or 7 times the entire written works of mankind (in all languages) from the beginning of recorded history to the present day. This is truly an extraordinary achievement; never in the history of the internet has a community coordinated to amass this much storage capacity in one trustless decentralized storage network. 🙇‍♀️
 
-![325 PiB on Stats Dashboard](https://filecoin.io/vintage/images/blog/ignition-stats-dashboard.jpg)
+![325 PiB on Stats Dashboard](/blog/ignition-stats-dashboard.jpg)
 
 ## Transition to Mainnet Ignition
 
 Today, we’re excited to share an update on [Filecoin’s launch phases and schedule](https://app.instagantt.com/shared/s/1152992274307505/latest) as we enter our Mainnet Ignition phase and get ready for Filecoin Mainnet Liftoff. Launching a blockchain is an involved and lengthy process. Like many other networks (including [Polkadot](https://polkadot.network/launch-roadmap/), [NEAR](https://near.org/blog/mainnet-roadmap/), and others), Filecoin is taking a phased approach to launching mainnet, with different groups and communities onboarding onto the network over a period of time, leading up to Mainnet Liftoff.
 
-![Launch Phases](https://filecoin.io/vintage/images/blog/mainnet-launch-process.jpg)
+![Launch Phases](/blog/mainnet-launch-process.jpg)
 
 Over the next few weeks, various groups within the Filecoin community - including miners, clients, custodians, applications, network services, and more - will be onboarding onto the network in advance of Mainnet Liftoff. This pre-liftoff phase, which we’re calling Mainnet Ignition, gives network participants time to initialize, learn, set up their systems, and optimize their deployments. We’re all counting down to Liftoff, but that doesn’t mean the work is done. We still have a lot of preparation to do to set the network up for an amazing launch:
 
@@ -56,7 +56,7 @@ We’re excited to build on that solid foundation from Space Race to set the Fil
 
 The culmination of all our hard work is right around the corner. The Filecoin mainnet will officially begin at epoch 148,888 (which means “prosperity for life” in Chinese, chosen to honor the epic contribution by our Chinese mining community to Filecoin’s long-term success ❤️)! We expect this epoch to land around Oct 15, which will begin a period of monitoring and problem solving to ensure the network is nominal (working as expected) after the transition. After a few quiet days, we will hold **Filecoin Mainnet Liftoff: a week of events from October 19-23 celebrating Filecoin’s mainnet launch. 🚀**
 
-![Filecoin Mainnet Liftoff](https://filecoin.io/vintage/images/blog/mainnet-liftoff-launch.jpg)
+![Filecoin Mainnet Liftoff](/blog/mainnet-liftoff-launch.jpg)
 
 From cutting-edge cryptography research, to complex protocol design & development discussions, to the many sleepless nights during Space Race debugging the live network - we’ve built something amazing together over the past 3 years. Launching a blockchain is like launching a software rocket, and it’s taken a whole interplanetary community to reach this point. Thank you for being part of this epic journey!
 

@@ -33,7 +33,7 @@ Filecoin is built on a variation of Proof-of-Space. It is also related to Proof 
 
 When Filecoin was announced in 2017, the plan was to create a decentralized storage network built on a robust decentralized market. To seed this market, to decentralize market functions, and to incentivize early miner participation, a crypto token was created, a byproduct of Filecoin consensus. This token is generated on the back of useful work, namely a useful Proof-of-Replication and Proof-of-Space-time.
 
-![Proofs diagram](https://filecoin.io/vintage/images/blog/filecoin-proof-system-diagram.jpg)
+![Proofs diagram](/blog/filecoin-proof-system-diagram.jpg)
 
 ## The Story of these Proofs
 
@@ -59,7 +59,9 @@ We also use **SNARKs** to prove some of the actual Proofs of Replication which p
 
 In Proof of Replication we take the source data, a large amount like 32GB, and apply a very slow encoding that produces these lattice-like graphs in layers where a node might be a 32 byte segment. There’s a sequential process going on producing a graph and for each node hashing sequentially. It has to be done one after the other, because of the hash function.
 
-![Sierpinski triangle as decoration](https://filecoin.io/vintage/images/blog/filecoin-proofs-system-sierpinski-triangle.svg)One type of graph produced is a **DRG (Depth-Robust-Graph)** and they get connected with these expander graphs, and there’s a whole complicated lattice structure. At the end of which we now have encoded the original data into what we call the **replica**, which is committed as a value. You can take the same source data and encode it multiple times if you wanted to, and you’d end up with multiple different replicas that are uniquely encoded.
+![Sierpinski triangle as decoration](/blog/filecoin-proofs-system-sierpinski-triangle.svg)
+
+One type of graph produced is a **DRG (Depth-Robust-Graph)** and they get connected with these expander graphs, and there’s a whole complicated lattice structure. At the end of which we now have encoded the original data into what we call the **replica**, which is committed as a value. You can take the same source data and encode it multiple times if you wanted to, and you’d end up with multiple different replicas that are uniquely encoded.
 
 Now that we’ve done that, **in order to prove that we’ve done this encoding correctly**, we can either do the entire encoding inside of a SNARK, which would be extremely expensive, or we could just sample a few of the challenges to prove that we have stored this. Say we sample a thousand random challenges over this whole proof, and we do that computation inside of the SNARK. We take the source encoded data, then decode it, and then show that that goes all the way back to root that we committed to. **It’s that proof that we want to make succinct.** Because otherwise it’d be a 32 byte leaf and then the whole Merkle chain all the way back up to the root would be a pretty large amount of data, then times that by a thousand. 100s of KB or MB to produce one proof. With a SNARK we can compress it down, I think it’s like to 200B or something like that.
 
@@ -77,7 +79,9 @@ We used a tool called [**Orient**](https://github.com/filecoin-project/orient), 
 
 And then you can do experimental results for say, how long certain hash functions take, and plug that data in some of the parameters and compute out what some of the other parameters have to be. So, for example, based on this hash function and how long that takes, inside of the SNARK or outside of a SNARK, then this particular construction is the one you want to use, because it minimizes some times or minimizes some on-chain footprint and all of that stuff is calculated through this solver.
 
-![ubercalc](https://filecoin.io/vintage/images/blog/filecoin-proof-system-ubercalc.jpg)Making blockchain technology right now, because of how complex the structures are, both the individual primitives and how they’re weaved into the chain, and all the off-chain protocols and so on, all of that stuff is so complex, that **we need this software to help us write software**. Similar to how chip manufacturing where, chip manufacturing was going pretty well until it hit a certain density, and they then stopped being able to produce chips manually. They had to start using software to be able to lay out the chips. I think we’ve hit that point with blockchains, where some of the constructions we’re making, we need software to help us design.
+![ubercalc](/blog/filecoin-proof-system-ubercalc.jpg)
+
+Making blockchain technology right now, because of how complex the structures are, both the individual primitives and how they’re weaved into the chain, and all the off-chain protocols and so on, all of that stuff is so complex, that **we need this software to help us write software**. Similar to how chip manufacturing where, chip manufacturing was going pretty well until it hit a certain density, and they then stopped being able to produce chips manually. They had to start using software to be able to lay out the chips. I think we’ve hit that point with blockchains, where some of the constructions we’re making, we need software to help us design.
 
 I think no other network is using Proof of Replication, it’s an advantage we have that we created that field. So that’s one differentiating factor. We are also the only one with this fluid market structure that is meant to be optimized based on an ask and bid structure where miners and clients are able to reason about prices together and then form deals out of that. I think we are also the only ones doing consensus backed by useful storage. With other networks it may be a consensus backed by a Proof of Space, but in our case it’s useful. **Those are the three biggest differentiating factors of Filecoin.**
 

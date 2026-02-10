@@ -27,7 +27,7 @@ _template: blog_detail_ch
 
 ## Filecoin 基础
 
-![](/vintage/images/blog/zeroknowledge-interview-header.png)
+![](/blog/zeroknowledge-interview-header.png)
 
 ### [Filecoin项目历史](https://www.zeroknowledge.fm/106) 与 [Filecoin的胡安: Web 3.0的愿景](https://www.youtube.com/watch?v=0a_EcR9ZgmM)
 
@@ -52,7 +52,7 @@ _template: blog_detail_ch
 
 - 观看[3D Filecoin Explainer](https://filecoin.io/) (点击"Explore the Filecoin vision")
 
-![](/vintage/images/blog/filecoin-mining-guide.png)
+![](/blog/filecoin-mining-guide.png)
 
 ### [Filecoin挖矿简介](https://filecoin.io/blog/filecoin-guide-to-storage-mining/)
 
@@ -77,7 +77,7 @@ _template: blog_detail_ch
 
 ## Filecoin生态
 
-![](/vintage/images/blog/filecoin-integrations-web3.jpg)
+![](/blog/filecoin-integrations-web3.jpg)
 
 ### [为Web3基础设施集成Filecoin](https://www.youtube.com/watch?v=Q0oe6i7d1u4)
 

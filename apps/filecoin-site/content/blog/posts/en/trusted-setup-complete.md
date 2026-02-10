@@ -35,7 +35,7 @@ As a brief reminder, the trusted setup ceremony is conducted in two phases. The 
 
 Over two months, participants from all over the world [contributed](https://github.com/arielgabizon/perpetualpowersoftau#ceremony-progress) their resources to participate in generating secure and verifiable parameters for Filecoin’s proofs. Once again, we’d like to extend a sincere thanks to everyone who helped make this first phase of the trusted setup a success!
 
-![Participants](https://filecoin.io/vintage/images/blog/trusted-setup-participants.jpg)
+![Participants](/blog/trusted-setup-participants.jpg)
 
 ## Recap of Phase 2
 

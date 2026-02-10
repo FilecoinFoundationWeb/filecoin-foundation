@@ -42,7 +42,7 @@ This isn’t just a theoretical concern. A recent [Harvard-led study](https://bl
 
 Instead, consider a different way. Consider addressing information by what it is, not where it is. To do this we need to use a different kind of web link. Instead of using links that point to locations, we need links that uniquely describe the content itself, like a fingerprint. This content-addressed approach separates “what” from “where”, so data can flow through the network, so it can be **stored and served from anywhere by anyone**. To create these content-addressed links, we use the content’s _cryptographic_ hash as the unique identifier or fingerprint.
 
-![content addressed links](https://filecoin.io/vintage/images/blog/coin-center/ipfs1.png_optimized.jpg)
+![content addressed links](/blog/coin-center/ipfs1.png_optimized.jpg)
 
 IPFS, the InterPlanetary File System, is a protocol that lets us use those content-addressed links to exchange data. In IPFS, the hash fingerprint of a file or a piece of data is its address. We use these fingerprints to identify the content instead of using the physical location of the server. This way, when you are trying to load a file, you retrieve it from any place you can. If the file is already on your own computer you could retrieve it from there. If your direct neighbors in the network have the file you could retrieve it from them. You might get it from the original server, from others in the network, whomever. IPFS handles this all for you using efficient routing algorithms to search the network, and it can be tuned for privacy: e.g. only request data from peers you trust. This is similar to what other peer-to-peer systems do, but greatly amplified. You can use it to exchange any kind of files or data with any number of peers and it’s built directly into the web.
 
@@ -62,7 +62,7 @@ Currently, building a successful cloud data storage business is extraordinarily 
 
 Even more frustrating, there exists a significant amount of ‘latent’ (available) storage throughout the world that sits unused. This storage is owned by all kinds of entities: large corporations down to small family businesses, individuals with huge hard-drive racks in their basements to small drives in everyone’s laptop. However, due to the aforementioned barriers to entry it would be difficult for any one particular company or individual to monetize their extra space and start a cloud data service. A much more efficient market would decouple raw hard-drive space, e.g. the storage, from all the services and support on-top, e.g. the customer service, user interface, payments and price negotiation, etc.. This would allow for a diverse and dynamic market of hard-drive providers to focus only on hardware and compete in a proper market for storage itself, which would greatly reduce the price of cloud storage and allow vast monetization of existing capacity. It would make cloud storage more like a commodity or a utility that you buy as you need at the going market rate and less like a service relationship fraught with contracting, negotiation, transaction, and lock-in costs. But the question remains, how can we build a true decentralized storage ecosystem? Content addressing is solved by IPFS, but how can we encourage people all over the world to become the backbone of storage itself? Enter Filecoin.
 
-![Filecoin: A blockchain-based storage network and cryptocurrency](https://filecoin.io/vintage/images/blog/coin-center/ipfs2.png)
+![Filecoin: A blockchain-based storage network and cryptocurrency](/blog/coin-center/ipfs2.png)
 
 ## Filecoin: Paying the network to store your data
 
@@ -70,13 +70,13 @@ While IPFS lets us exchange data directly with our peers instead of relying on c
 
 Filecoin draws from cutting-edge advances in cryptography and blockchain technologies to make this holy grail a reality. It uses: a blockchain, a native cryptocurrency, publicly verifiable _proofs-of-storage_, storage contracts with collaterals, algorithmic markets to ensure efficient pricing, payment channels to enable micropayments and reduce transaction costs, and more. All this adds up to a _powerful, decentralized, self-healing network_ that can bring together massive amounts of storage from “miners” all over the world, and provide a great service with strong guarantees of availability, resilience, and great price. It can automatically rebalance itself to meet demand, protects content from attack, and recovers from miners going offline.
 
-![self-storage in the Filecoin decentralized storage market](https://filecoin.io/vintage/images/blog/coin-center/ipfs3.png)
+![self-storage in the Filecoin decentralized storage market](/blog/coin-center/ipfs3.png)
 
 The world has a gargantuan amount of unused storage across thousands of entities and millions of people. By bringing all that latent supply into the market, Filecoin might cause the price of online storage to drop significantly. Moreover, Filecoin kicks off the powerful optimization process that made Bitcoin amass enormous quantities of computing power. Filecoin miners can make a lot of money by adding more and more storage to the network.
 
 Users aren’t required to use Filecoin and IPFS together, but the two combined are a perfect pair that solve significant failings of the current web. Users currently using IPFS are required to ‘pin’ (store & serve) their data from either their own computer, an existing centralized cloud provider, or off the generosity of other IPFS users who actively choose to host that content. Filecoin provides the incentive for any IPFS user to assure their data is stored across a host of decentralized nodes. Soon anyone will be able to pay a large mass of decentralized storage providers in filecoin to robustly store their files, assuring their data can be securely and quickly served to those that request it. Users storing files on IPFS and Filecoin will benefit from optimized storage costs, a diversity of storage providers, much faster serving of data, automated self-healing, and tremendous economies of scale.
 
-![New blockchain, new breakthroughs](https://filecoin.io/vintage/images/blog/coin-center/ipfs4.png)
+![New blockchain, new breakthroughs](/blog/coin-center/ipfs4.png)
 
 ## Protecting Privacy and Decency on the Decentralized Web
 
@@ -84,7 +84,7 @@ Storing private data on a network powered by IPFS and Filecoin means that parts 
 
 Distributing user data to a large array of storage computers who are not owned by one company or service can increase the exposure of the data. However, if valuable data is stored end-to-end encrypted, then attackers with access to the encrypted texts cannot learn what is inside them. This is true whether the storage network is a big cloud provider or an incentive market like Filecoin. This is a different security model, where we are forced to always encrypt everything, with only user access to the keys, and where the failures of a single cloud provider cannot harm the resilience of the data.
 
-![A decentralized market for storage](https://filecoin.io/vintage/images/blog/coin-center/ipfs5.png)
+![A decentralized market for storage](/blog/coin-center/ipfs5.png)
 
 ## Market Protocols: Harnessing networks and incentives to create better industries
 

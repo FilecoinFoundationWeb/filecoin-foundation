@@ -50,7 +50,7 @@ Our goal is to make data traceable. The integrity of the data is preserved, and 
 
 Sensor metadata looks like this:
 
-![Metadata Image](https://filecoin.io/vintage/images/blog/community-numbers-metadata.png)
+![Metadata Image](/blog/community-numbers-metadata.png)
 
 The hashes are used later for verification. We’re also considering using unique content identifiers (CIDs) as hashes to replace SHA256.
 
@@ -62,7 +62,7 @@ When we put all of this information into a verified module, we achieve two thing
 
 The published version of Numbers that we’re working on can be used on the [HTC Exodus 1](https://www.htcexodus.com/eu/), a blockchain-enabled smartphone. We’re also working with journalists on another version that can be used with any mobile phone.
 
-![Basic Capture & Verify Flow image](https://filecoin.io/vintage/images/blog/community-numbers-flowchart.png)
+![Basic Capture & Verify Flow image](/blog/community-numbers-flowchart.png)
 
 **And now you’re using IPFS and Filecoin, too, yes?**
 

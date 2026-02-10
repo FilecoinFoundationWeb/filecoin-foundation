@@ -34,11 +34,13 @@ _template: blog_detail_ch
 
 在撰写本文之时，比特币区块链的长度已经超过600,000个区块（自创世以来，约每10分钟出一个块）。有时候，两个区块的（暂时）挖矿时间相对较近。比特币的最长链规则和10分钟出块的时间使大部分网络暗示地“投票”选择了他们想要使用哪条链。这种选择取决于多种因素，例如矿工最先收到哪个区块以及区块中包含的交易。这由矿工决定，重要的是，网络中的大多数人会最终统一意见挖哪个区块和放弃哪个区块。废弃的区块被称为孤块，下表中的紫色部分表示孤块。
 
-[![orphan blocks](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-1.jpg)](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-1.jpg)上面紫色的即是孤块。
+![orphan blocks](/blog/tipsets-family-based-approach-diagram-1.jpg)
+上面紫色的即是孤块。
 
 孤块是有效的区块但是不影响链的长度和稳定性。其他的区块链，例如以太坊，会奖励挖到这些区块的矿工，这些区块称为“叔块”。矿工在挖矿过程中即使这些块未被包括在最终的链中，矿工也会获得奖励。这有助于消除矿工由于网络延迟而面临的潜在不利因素并且不鼓励网络的中心化，单个矿工或者连接不佳的矿工也可以获得补偿。
 
-[![uncle blocks](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-2.jpg)](https://filecoin.io/vintage/images/blog/tipsets-family-based-approach-diagram-2.jpg)叔块，不像比特币是使用最长的链，Filecoin的共识是寻找最大化利用权重最大的链的算法。
+![uncle blocks](/blog/tipsets-family-based-approach-diagram-2.jpg)
+叔块，不像比特币是使用最长的链，Filecoin的共识是寻找最大化利用权重最大的链的算法。
 (来源于 [https://vas3k.com/blog/ethereum/#scroll240](https://vas3k.com/blog/ethereum/#scroll240 "https://vas3k.com/blog/ethereum/#scroll240"))
 
 随着2015年《比特币中的安全高速交易处理》(Sompolinsky, Zohar)的发布，区块链的思想不再是链本身，而是有向无环图（DAGs）。用此方式来看，就不再是简单的查看最长的链，而是查看拥有最大权重的DAG（或GHOST - Greedy Heaviest-Observed SubTree 贪婪最重可观察子树协议），它拥有最多的区块。Filecoin就是这样一种协议，使用区块总数以及贡献的存储算力来决定选择哪条链。

@@ -31,7 +31,7 @@ _Build a system for storing, retrieving, and verifying scientific or other resea
 
 ### Filecoin Research Repository
 
-![Filecoin Research Repository](https://filecoin.io/vintage/images/blog/filecoin-research-repository.jpg)
+![Filecoin Research Repository](/blog/filecoin-research-repository.jpg)
 
 Our third place winners are the team behind the [Filecoin Research Repository](https://github.com/sarangparikh22/research-app-filecoin). Their project implements a decentralized repository for research papers, aiming to further democratize access to high-quality research, as well as lower the barrier to contribution by making funding more accessible. On their distributed platform, which is implemented using Ethereum smart contracts, research papers are uploaded to the Filecoin network and made freely available. Authors who publish to the platform can solicit grants from readers interested in their work via a built-in crowdsourcing feature, facilitating low-friction, world-wide patronage of interesting research.
 
@@ -41,7 +41,7 @@ Our third place winners are the team behind the [Filecoin Research Repository](h
 
 ### Filecoin Pricing Mechanism
 
-![Filecoin Pricing Mechanism](https://filecoin.io/vintage/images/blog/filecoin-pricing-mechanism.jpg)
+![Filecoin Pricing Mechanism](/blog/filecoin-pricing-mechanism.jpg)
 
 A critical concern in the use of the Filecoin network as a repository for research data is the friction involved in selecting and negotiating with suitable storage miners to custody one’s data. The winners of our second-place prize are the team behind the [Filecoin Pricing Mechanism](https://github.com/harnen/FilecoinPricingMechanism) (FPM), which automates this process.
 
@@ -55,7 +55,7 @@ The solution to the auction is computed off-chain; any node is capable of comput
 
 ### DeepVerse
 
-![Filecoin Pricing Mechanism](https://filecoin.io/vintage/images/blog/deepverse.jpg)
+![Filecoin Pricing Mechanism](/blog/deepverse.jpg)
 
 Finally, our first-place winners: [DeepVerse](https://deepverse.co.uk/)! The DeepVerse team tackled a pressing problem: how, in a world that is both increasingly privacy-conscious and yet eager to glean insights via machine learning, can we work collaboratively to develop better analytical tools without fear of compromising the data of our subjects?
 

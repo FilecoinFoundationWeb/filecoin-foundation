@@ -29,11 +29,11 @@ _template: blog_detail_ch
 
 🎛 **校准开发网络**。我们为期一个月的校准期将帮助矿工通过成功完成实际存储并执行扇区的完整生命周期来进行太空竞赛准备。在此期间，我们发现矿工在检索交易中的成功率达到97%，并且前50名矿工中有24名矿工在存储交易中达到了 **_100%_** 的成功率。
 
-![校准开发网络中的成功率](/vintage/images/blog/update-success-rates.png)
+![校准开发网络中的成功率](/blog/update-success-rates.png)
 
 ⛏ **挖矿**。随着PB级的数据被来自世界各地的矿工存储在Filecoin测试网上，挖矿社区也继续发展壮大。在过去的一个月里，可靠存储达到了25PB以上的新高——与上一次路线图更新相比，提高了近3倍！校准开发网络还看到极快的封装速度——每日超过5PB！测试网已在今日下午3点（太平洋时间）(下午10点 国际标准时间 | 上午6点 北京时间) 更新为太空竞赛的最新代码——矿工们对竞赛做好了准备！🎉
 
-![存储数据](/vintage/images/blog/update-storage-stats.jpg)
+![存储数据](/blog/update-storage-stats.jpg)
 
 ## 主网性能
 
@@ -69,7 +69,7 @@ _template: blog_detail_ch
 - **Filecoin Launchpad**: [Filecoin Launchpad Accelerator](https://tachyon.xyz/)是完全远程和全职的、专门用于指导为分布式和去中心化网络进行创建的初始团队的计划。将有15-20个团队加入该计划，并将历经12周的时间进行资助、指导和围绕业务以及与区块链相关的事件进行编程，最后以最终展示日为结尾。团队们将获得在ConsenSys和协议实验室网络方面的专业知识，本次参与者将涵盖从企业家、法律顾问到开拓性技术研究人员。每个团队将获得8万美元的投资。申请截止日现已延长至8月28日！
 - 如果您想举办一场Ignite的活动请与我们取得联系！超过400万枚FIL和25万美元的奖励在各个活动中等着您，现在是开始在Filecoin上进行创建的最佳时机。🚀
 
-![随机性峰会](/vintage/images/blog/update-randomness-summit.jpg)
+![随机性峰会](/blog/update-randomness-summit.jpg)
 
 🎲 **随机性峰会**。为了庆祝League of Entropy生产级别随机信标drand的发布，[随机性峰会](https://randomness2020.com/)将于8月13日举行。演讲者包括Bryan Ford、Joseph Boneau、Justin Drake、Kelly Olson和Vitalik Buterin，以及LoE合作伙伴Cloudflare、Kudelski Security、协议实验室、智利大学等，演讲的范围从随机性的基础到可验证延迟函数VDF的未来。协议实验室将在YouTube上提供完整的[峰会内容回顾](https://www.youtube.com/watch?v=661hUozi9oo)。
 

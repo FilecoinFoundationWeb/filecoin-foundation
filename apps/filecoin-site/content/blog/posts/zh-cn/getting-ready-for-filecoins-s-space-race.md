@@ -24,7 +24,7 @@ title: 做好准备参与Filecoin太空竞赛
 
 随着我们进入了主网启动的最后准备阶段，[Lotus](https://lotus.filecoin.io/) （Filecoin实施方案）正在快速发展。仅在过去的两周内，团队就对Filecoin市场的实施方案进行了[数据传输的重大改进](https://github.com/filecoin-project/go-data-transfer/pull/55)，完成了用于[验证](https://github.com/filecoin-project/go-fil-markets/pull/304) 和[快速检索](https://github.com/filecoin-project/lotus/pull/2323)交易的整个扇区生命周期性能提升，并[升级了承诺容量扇区](https://github.com/filecoin-project/lotus/pull/2220)和为 [Filecoin 参与者](https://github.com/filecoin-project/specs-actors/releases)带来了巨大改进。矿工社区也正在迅速发展，全球各地的矿工已将PB级的存储提交到Filecoin测试网上，本周达到**20PB存储**的新里程碑。 🎉
 
-![测试网数据](https://filecoin.io/vintage/images/blog/testnet-stats-jul-14.jpg)
+![测试网数据](/blog/testnet-stats-jul-14.jpg)
 
 随着主网启动，我们下一个里程碑是发布[Filecoin测试网奖励计划](https://filecoin.io/blog/announcing-testnet-incentives/) ——也称为太空竞赛。本次竞赛旨在对网络进行压力测试，鼓励世界各地的参与者参与，并帮助矿工做好运行世界上规模最大的分布式网络的准备。在为期3周的竞赛中，矿工将竞争存储网络上尽可能多的存储容量。全球排名前100位的矿工以及各大洲排名前50位的矿工将根据竞赛期间在Filecoin网络上的存储量来获取Filecoin奖励。除了竞赛优胜者获得奖励之外，太空竞赛里的filecoin代币还致力于帮助矿工在Filecoin主网上更快地提高其存储量，并进行其他的优化工作以保证过程顺利运行。有关竞赛规则和参赛要求，请参考我们的[博客公告](https://filecoin.io/blog/announcing-testnet-incentives/)。
 

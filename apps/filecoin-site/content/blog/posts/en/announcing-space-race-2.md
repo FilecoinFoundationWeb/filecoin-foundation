@@ -34,7 +34,7 @@ One of the main goals of Space Race was to prepare the Filecoin network and oper
 
 Huge thank you to the entire community for such a phenomenal competition so far. We’re honored to be building this network alongside you — here’s hoping we hit the epic 200 PiB milestone and reward tier!
 
-![Space Race 1 dashboard](https://filecoin.io/vintage/images/blog/SP1-dashboard.jpg)
+![Space Race 1 dashboard](/blog/SP1-dashboard.jpg)
 
 ## Bringing the Community Together
 
@@ -52,7 +52,7 @@ Among the many insights and feedback, five big requests led to this post today:
 
 Now, doing another Space Race is asking a lot of the miners, developers, and Space Race staff – many of us are exhausted after 3 fast-paced and intense weeks! The Space Race has been a huge and challenging undertaking for everyone. Miners had to build and run their entire operations, learn how everything worked, improve and optimize their operations, gracefully manage problems and stress-tests, and more. We developed lots of custom software, created competition programs, put on events, staffed the channels 24⁄7 to help people get started and problem solve, and so on. These programs take significant time to plan, put on, and participate in. However, given the valuable opportunities and the strong requests, we decided to give the community what they asked for. ❤️
 
-![Space Race Orbital Burn](https://filecoin.io/vintage/images/blog/sr2-orbital-burn.jpg)
+![Space Race Orbital Burn](/blog/sr2-orbital-burn.jpg)
 
 ## Introducing Space Race 2
 

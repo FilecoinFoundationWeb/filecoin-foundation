@@ -137,7 +137,7 @@ With this update, we are publishing a more detailed project roadmap and a rough 
 
 In rough terms, this is a high-level view of where we are. (These phases are not equally long)
 
-![](https://filecoin.io/vintage/images/blog/filecoin-roadmap-at-impl.png)
+![](/blog/filecoin-roadmap-at-impl.png)
 
 ### 3.3. Roadmap / Upcoming Milestones
 

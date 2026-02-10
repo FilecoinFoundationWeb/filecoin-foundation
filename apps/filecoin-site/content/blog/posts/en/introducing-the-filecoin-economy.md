@@ -28,7 +28,7 @@ _template: blog_detail
 >
 > — [Elinor Ostrom](https://www.youtube.com/watch?v=Qr5Q3VvpI7w&feature=youtu.be&t=80), awarded the 2009 Nobel Memorial Prize in Economic Sciences for her "analysis of economic governance, especially the commons"
 
-[![Report Download](https://filecoin.io/vintage/images/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
+[![Report Download](/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
 
 ## Global Cloud Storage
 
@@ -79,7 +79,7 @@ The report explores:
 - The current economic structures and initial parameters of the Filecoin Protocol
 - Key planned improvements that may drive future growth of the network
 
-[![Report Download](https://filecoin.io/vintage/images/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)[![Report Download](https://filecoin.io/vintage/images/blog/economy-report-zh-cn.png)](https://filecoin.io/zh-cn/2020-engineering-filecoins-economy-zh-cn.pdf)
+[![Report Download](/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)[![Report Download](/blog/economy-report-zh-cn.png)](https://filecoin.io/zh-cn/2020-engineering-filecoins-economy-zh-cn.pdf)
 
 **Download the full report here in** [**English**](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf) **and** [**Chinese**](https://filecoin.io/zh-cn/2020-engineering-filecoins-economy-zh-cn.pdf)**.**
 
