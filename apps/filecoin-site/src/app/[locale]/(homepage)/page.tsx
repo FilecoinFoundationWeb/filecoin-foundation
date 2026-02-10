@@ -39,7 +39,7 @@ import { joinVibrantCommunityImages } from './data/joinVibrantCommunityImages'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 import { BlogCard } from '@/blog/components/BlogCard'
-import type { BlogPost } from '@/blog/types/blogPostType'
+import type { BlogPostPreview } from '@/blog/types/blogPostType'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 type BlogProps = {
@@ -209,7 +209,7 @@ export default async function Home({ params }: BlogProps) {
           }
         >
           <CardGrid as="ul" variant="mdTwoLgThreeWide">
-            {featuredBlogPosts.map((post: BlogPost) => {
+            {featuredBlogPosts.map((post: BlogPostPreview) => {
               const {
                 title,
                 slug,
