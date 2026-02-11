@@ -2,6 +2,8 @@ import { Suspense } from 'react'
 
 import type { LocaleParams } from '@/i18n/types'
 
+import type { Metadata } from 'next'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
@@ -11,12 +13,12 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import { BlogPageHeader } from './components/BlogPageHeader'
 import { BlogPostList } from './components/BlogPostList'
-import { BLOG_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
@@ -31,10 +33,12 @@ export default async function Blog({ params }: BlogProps) {
   const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = sortedPosts[0]
 
+  const metadata = await getTranslatedMetadata(PATHS.BLOG.path)
+
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(BLOG_SEO, sortedPosts)}
+        structuredData={generateStructuredData(metadata, sortedPosts)}
       />
       <Navigation backgroundVariant="light" />
 
@@ -59,8 +63,12 @@ export default async function Blog({ params }: BlogProps) {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: BLOG_SEO.title },
-  description: BLOG_SEO.description,
-  path: PATHS.BLOG.path,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { title, description } = await getTranslatedMetadata(PATHS.BLOG.path)
+
+  return createMetadata({
+    title: { absolute: title },
+    description,
+    path: PATHS.BLOG.path,
+  })
+}

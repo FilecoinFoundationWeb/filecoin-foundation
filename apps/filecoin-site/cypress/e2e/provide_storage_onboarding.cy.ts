@@ -1,12 +1,12 @@
+import translations from '@/i18n/translations/en.json'
+
 import { tests } from '@filecoin-foundation/cypress/support'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { PROVIDE_STORAGE_ONBOARDING_SEO } from '@/provide-storage/onboarding/constants/seo'
-
 const { path } = PATHS.PROVIDE_STORAGE_ONBOARDING
-const { title, description } = PROVIDE_STORAGE_ONBOARDING_SEO
+const { title, description } = translations[path].metadata
 
 describe('Provide Storage - Onboarding Page', () => {
   it(tests.metadata.prompt, () => {

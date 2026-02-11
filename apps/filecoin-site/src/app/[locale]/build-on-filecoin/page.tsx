@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import type { Metadata } from 'next'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
@@ -14,6 +16,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { ImageGrid } from '@/components/ImageGrid'
@@ -23,7 +26,6 @@ import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { getInvolvedOptions } from '../community-hub/data/getInvolvedOptions'
 
 import { HeroSection } from './components/HeroSection'
-import { BUILD_ON_FILECOIN_SEO } from './constants/seo'
 import { builtOnFilecoin } from './data/builtOnFilecoin'
 import { developerResources } from './data/developerResources'
 import { getInvolvedImages } from './data/getInvolvedImages'
@@ -31,12 +33,12 @@ import { tutorialsAndGuides } from './data/tutorialsAndGuides'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBadgeVariant } from './utils/getBadgeVariant'
 
-export default function BuildOnFilecoin() {
+export default async function BuildOnFilecoin() {
+  const metadata = await getTranslatedMetadata(PATHS.BUILD_ON_FILECOIN.path)
+
   return (
     <>
-      <StructuredDataScript
-        structuredData={generateStructuredData(BUILD_ON_FILECOIN_SEO)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(metadata)} />
 
       <Navigation backgroundVariant="dark" />
 
@@ -153,9 +155,15 @@ export default function BuildOnFilecoin() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: BUILD_ON_FILECOIN_SEO.title },
-  description: BUILD_ON_FILECOIN_SEO.description,
-  path: PATHS.BUILD_ON_FILECOIN.path,
-  image: graphicsData.spiralGalaxyStarsSpace.data.src,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { title, description } = await getTranslatedMetadata(
+    PATHS.BUILD_ON_FILECOIN.path,
+  )
+
+  return createMetadata({
+    title: { absolute: title },
+    description,
+    path: PATHS.BUILD_ON_FILECOIN.path,
+    image: graphicsData.spiralGalaxyStarsSpace.data.src,
+  })
+}

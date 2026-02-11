@@ -1,12 +1,8 @@
-type RemoveLocalePrefix<Routes extends string> =
-  Routes extends `/${string}${infer Rest}`
-    ? Rest extends ''
-      ? '/'
-      : Rest
-    : never
+import type { AppRoutes } from '@/next/types/routes'
 
-type NextRoute = __next_route_internal_types__.DynamicRoutes
-export type NextRouteWithoutLocale = RemoveLocalePrefix<NextRoute>
+export type NextRouteWithoutLocale = TurnDynamicSegmentsIntoString<
+  RemoveLocalePrefix<AppRoutes>
+>
 
 type PathConfig = {
   path: NextRouteWithoutLocale
@@ -66,3 +62,15 @@ export const PATHS = {
 } as const satisfies Record<string, PathConfig>
 
 export const BLOG_RSS_PATH = `${PATHS.BLOG.path}/rss.xml`
+
+type RemoveLocalePrefix<Routes extends string> =
+  Routes extends `/[locale]${infer Rest}`
+    ? Rest extends ''
+      ? '/'
+      : Rest
+    : never
+
+type TurnDynamicSegmentsIntoString<T extends string> =
+  T extends `${infer Start}[${string}]${infer Rest}`
+    ? `${Start}${string}${TurnDynamicSegmentsIntoString<Rest>}`
+    : T

@@ -1,12 +1,12 @@
+import translations from '@/i18n/translations/en.json'
+
 import { tests } from '@filecoin-foundation/cypress/support'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { CASE_STUDIES_SEO } from '@/case-studies/constants/seo'
-
 const { path } = PATHS.CASE_STUDIES
-const { title, description } = CASE_STUDIES_SEO
+const { title, description } = translations[path].metadata
 
 describe('Case Studies Page', () => {
   it(tests.metadata.prompt, () => {

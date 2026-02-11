@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { clsx } from 'clsx'
+import type { Metadata } from 'next'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -19,25 +20,25 @@ import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { GradientOverlay } from '@/components/GradientOverlay'
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbed'
 
-import { LEARN_SEO } from './constants/seo'
 import { howFilecoinWorks } from './data/howFilecoinWorks'
 import { learnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
 import { resilientInternetCta } from './data/resilientInternetCta'
 import { whatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-export default function Learn() {
+export default async function Learn() {
+  const metadata = await getTranslatedMetadata(PATHS.LEARN.path)
+
   return (
     <>
-      <StructuredDataScript
-        structuredData={generateStructuredData(LEARN_SEO)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(metadata)} />
       <div className={clsx('relative isolate', backgroundVariants.dark)}>
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
@@ -187,8 +188,12 @@ export default function Learn() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: LEARN_SEO.title },
-  description: LEARN_SEO.description,
-  path: PATHS.LEARN.path,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { title, description } = await getTranslatedMetadata(PATHS.LEARN.path)
+
+  return createMetadata({
+    title: { absolute: title },
+    description,
+    path: PATHS.LEARN.path,
+  })
+}

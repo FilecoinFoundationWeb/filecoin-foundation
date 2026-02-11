@@ -2,6 +2,8 @@ import Image from 'next/image'
 
 import type { LocaleParams } from '@/i18n/types'
 
+import type { Metadata } from 'next'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
@@ -19,6 +21,7 @@ import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { ImageGrid } from '@/components/ImageGrid'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -26,7 +29,6 @@ import { SectionImage } from '@/components/SectionImage'
 import { SimpleCardWithImage } from '@/components/SimpleCardWithImage'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
-import { COMMUNITY_SEO } from './constants/seo'
 import { communityConnectionImages } from './data/communityConnectionImages'
 import { ecosystemGroups } from './data/ecosystemGroups'
 import { getInvolvedWithCommunity } from './data/getInvolvedWithCommunity'
@@ -257,8 +259,14 @@ export default async function CommunityHub({ params }: BlogProps) {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: COMMUNITY_SEO.title },
-  description: COMMUNITY_SEO.description,
-  path: PATHS.COMMUNITY_HUB.path,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { title, description } = await getTranslatedMetadata(
+    PATHS.COMMUNITY_HUB.path,
+  )
+
+  return createMetadata({
+    title: { absolute: title },
+    description,
+    path: PATHS.COMMUNITY_HUB.path,
+  })
+}
