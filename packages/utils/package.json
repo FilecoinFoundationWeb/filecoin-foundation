@@ -61,10 +61,10 @@
     "@phosphor-icons/react": "^2.1.10",
     "schema-dts": "^1.1.5",
     "slugify": "^1.6.6",
-    "zod": "^4.3.5"
+    "zod": "^4.3.6"
   },
   "dependencies": {
     "js-yaml": "^4.1.0",
-    "remove-markdown": "^0.6.2"
+    "remove-markdown": "^0.6.3"
   }
 }
