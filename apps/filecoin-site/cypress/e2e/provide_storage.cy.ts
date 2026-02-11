@@ -6,6 +6,7 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 const { path } = PATHS.PROVIDE_STORAGE
+const { title, description } = translations[path].metadata
 
 const excludedLinks = ['ndlabs.io']
 
@@ -13,8 +14,8 @@ describe('Provide Storage Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path,
-      title: translations['provide-storage'].metadata.title,
-      description: translations['provide-storage'].metadata.description,
+      title,
+      description,
       baseUrl: BASE_URL,
     })
   })

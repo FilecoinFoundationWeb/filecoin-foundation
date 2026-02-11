@@ -22,8 +22,6 @@ import { PageHeader } from './components/PageHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getCaseStudiesByFeaturedStatus } from './utils/getCaseStudyData'
 
-const TRANSLATION_NAMESPACE = 'case-studies'
-
 type CaseStudiesProps = {
   params: Promise<LocaleParams>
 }
@@ -34,7 +32,7 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
   const { featured: featuredCaseStudies, upcoming: upcomingCaseStudies } =
     await getCaseStudiesByFeaturedStatus(locale)
 
-  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(PATHS.CASE_STUDIES.path)
 
   return (
     <>
@@ -122,7 +120,7 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
 
 export async function generateMetadata(): Promise<Metadata> {
   const { title, description } = await getTranslatedMetadata(
-    TRANSLATION_NAMESPACE,
+    PATHS.CASE_STUDIES.path,
   )
 
   return createMetadata({

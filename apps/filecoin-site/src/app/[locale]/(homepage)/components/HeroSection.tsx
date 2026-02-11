@@ -9,7 +9,7 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_CLOUD_URL } from '@/constants/siteMetadata'
 
 export function HeroSection() {
-  const t = useTranslations('home.hero')
+  const t = useTranslations('/.hero')
 
   return (
     <PageSection backgroundVariant="transparentDark" paddingVariant="none">

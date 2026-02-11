@@ -260,7 +260,9 @@ export default async function CommunityHub({ params }: BlogProps) {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { title, description } = await getTranslatedMetadata('community-hub')
+  const { title, description } = await getTranslatedMetadata(
+    PATHS.COMMUNITY_HUB.path,
+  )
 
   return createMetadata({
     title: { absolute: title },

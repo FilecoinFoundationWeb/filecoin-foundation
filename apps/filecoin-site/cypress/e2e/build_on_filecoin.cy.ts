@@ -6,13 +6,14 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 const { path } = PATHS.BUILD_ON_FILECOIN
+const { title, description } = translations[path].metadata
 
 describe('Build on Filecoin Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path,
-      title: translations['build-on-filecoin'].metadata.title,
-      description: translations['build-on-filecoin'].metadata.description,
+      title,
+      description,
       baseUrl: BASE_URL,
     })
   })

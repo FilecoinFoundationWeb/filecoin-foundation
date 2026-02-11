@@ -33,10 +33,8 @@ import { resilientInternetCta } from './data/resilientInternetCta'
 import { whatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const TRANSLATION_NAMESPACE = 'learn'
-
 export default async function Learn() {
-  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(PATHS.LEARN.path)
 
   return (
     <>
@@ -191,9 +189,7 @@ export default async function Learn() {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { title, description } = await getTranslatedMetadata(
-    TRANSLATION_NAMESPACE,
-  )
+  const { title, description } = await getTranslatedMetadata(PATHS.LEARN.path)
 
   return createMetadata({
     title: { absolute: title },

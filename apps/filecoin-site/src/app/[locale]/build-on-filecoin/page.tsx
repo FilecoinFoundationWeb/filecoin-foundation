@@ -33,10 +33,8 @@ import { tutorialsAndGuides } from './data/tutorialsAndGuides'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBadgeVariant } from './utils/getBadgeVariant'
 
-const TRANSLATION_NAMESPACE = 'build-on-filecoin'
-
 export default async function BuildOnFilecoin() {
-  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(PATHS.BUILD_ON_FILECOIN.path)
 
   return (
     <>
@@ -159,7 +157,7 @@ export default async function BuildOnFilecoin() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const { title, description } = await getTranslatedMetadata(
-    TRANSLATION_NAMESPACE,
+    PATHS.BUILD_ON_FILECOIN.path,
   )
 
   return createMetadata({

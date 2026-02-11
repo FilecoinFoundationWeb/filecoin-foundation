@@ -47,12 +47,10 @@ type BlogProps = {
   params: Promise<LocaleParams>
 }
 
-const TRANSLATION_NAMESPACE = 'home'
-
 export default async function Home({ params }: BlogProps) {
   const { locale } = await params
 
-  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(PATHS.HOME.path)
 
   const featuredBlogPosts = getFeaturedBlogPosts({
     posts: await getBlogPostsData(locale),
@@ -280,9 +278,7 @@ export default async function Home({ params }: BlogProps) {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { title, description } = await getTranslatedMetadata(
-    TRANSLATION_NAMESPACE,
-  )
+  const { title, description } = await getTranslatedMetadata(PATHS.HOME.path)
 
   return createMetadata({
     title: { absolute: title },

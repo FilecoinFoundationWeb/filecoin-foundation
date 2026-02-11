@@ -1,5 +1,5 @@
 {
-  "home": {
+  "/": {
     "hero": {
       "headline": "保存人类最重要的信息",
       "description": "Filecoin 是全球最大的去中心化存储网络，旨在确保数据可验证，并摆脱中心化控制",
@@ -14,61 +14,61 @@
       "description": "TODO"
     }
   },
-  "blog": {
+  "/blog": {
     "metadata": {
       "title": "TODO",
       "description": "TODO"
     }
   },
-  "community-hub": {
+  "/community-hub": {
     "metadata": {
       "title": "TODO",
       "description": "TODO"
     }
   },
-  "learn": {
+  "/learn": {
     "metadata": {
       "title": "TODO",
       "description": "TODO"
     }
   },
-  "store-data": {
+  "/store-data": {
     "metadata": {
       "title": "TODO",
       "description": "TODO"
     }
   },
-  "build-on-filecoin": {
+  "/build-on-filecoin": {
     "metadata": {
       "title": "TODO",
       "description": "TODO"
     }
   },
-  "case-studies": {
+  "/case-studies": {
     "metadata": {
       "title": "TODO",
       "description": "TODO"
     }
   },
-  "privacy-policy": {
+  "/privacy-policy": {
     "metadata": {
       "title": "TODO",
       "description": "TODO"
     }
   },
-  "terms-of-use": {
+  "/terms-of-use": {
     "metadata": {
       "title": "TODO",
       "description": "TODO"
     }
   },
-  "provide-storage": {
+  "/provide-storage": {
     "metadata": {
       "title": "TODO",
       "description": "TODO"
     }
   },
-  "provide-storage-onboarding": {
+  "/provide-storage/onboarding": {
     "metadata": {
       "title": "TODO",
       "description": "TODO"

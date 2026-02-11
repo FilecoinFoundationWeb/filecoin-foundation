@@ -22,8 +22,6 @@ import { BlogPostList } from './components/BlogPostList'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
-const TRANSLATION_NAMESPACE = 'blog'
-
 type BlogProps = {
   params: Promise<LocaleParams>
 }
@@ -35,7 +33,7 @@ export default async function Blog({ params }: BlogProps) {
   const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = sortedPosts[0]
 
-  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(PATHS.BLOG.path)
 
   return (
     <>
@@ -66,9 +64,7 @@ export default async function Blog({ params }: BlogProps) {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { title, description } = await getTranslatedMetadata(
-    TRANSLATION_NAMESPACE,
-  )
+  const { title, description } = await getTranslatedMetadata(PATHS.BLOG.path)
 
   return createMetadata({
     title: { absolute: title },

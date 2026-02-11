@@ -36,7 +36,7 @@ export default function ProvideStorageFormPage() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const { title, description } = await getTranslatedMetadata(
-    'provide-storage-onboarding',
+    PATHS.PROVIDE_STORAGE_ONBOARDING.path,
   )
 
   return createMetadata({

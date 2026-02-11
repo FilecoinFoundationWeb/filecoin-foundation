@@ -27,10 +27,8 @@ import { scalingOperations } from './data/scalingOperations'
 import { storageProvidersLogos } from './data/storageProvidersLogos'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const TRANSLATION_NAMESPACE = 'provide-storage'
-
 export default async function ProvideStorage() {
-  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(PATHS.PROVIDE_STORAGE.path)
 
   return (
     <>
@@ -154,7 +152,7 @@ export default async function ProvideStorage() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const { title, description } = await getTranslatedMetadata(
-    TRANSLATION_NAMESPACE,
+    PATHS.PROVIDE_STORAGE.path,
   )
 
   return createMetadata({

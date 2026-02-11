@@ -6,13 +6,14 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 const { path } = PATHS.STORE_DATA
+const { title, description } = translations[path].metadata
 
 describe('Store Data Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path,
-      title: translations['store-data'].metadata.title,
-      description: translations['store-data'].metadata.description,
+      title,
+      description,
       baseUrl: BASE_URL,
     })
   })

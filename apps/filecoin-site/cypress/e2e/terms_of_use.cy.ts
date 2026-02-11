@@ -6,13 +6,14 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 const { path } = PATHS.TERMS_OF_USE
+const { title, description } = translations[path].metadata
 
 describe('Terms of Use Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path,
-      title: translations['terms-of-use'].metadata.title,
-      description: translations['terms-of-use'].metadata.description,
+      title,
+      description,
       baseUrl: BASE_URL,
     })
   })

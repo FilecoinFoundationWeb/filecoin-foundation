@@ -13,10 +13,8 @@ import { Navigation } from '@/components/Navigation/Navigation'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const TRANSLATION_NAMESPACE = 'privacy-policy'
-
 export default async function PrivacyPolicy() {
-  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(PATHS.PRIVACY_POLICY.path)
 
   return (
     <>
@@ -28,10 +26,9 @@ export default async function PrivacyPolicy() {
     </>
   )
 }
-
 export async function generateMetadata(): Promise<Metadata> {
   const { title, description } = await getTranslatedMetadata(
-    TRANSLATION_NAMESPACE,
+    PATHS.PRIVACY_POLICY.path,
   )
 
   return createMetadata({

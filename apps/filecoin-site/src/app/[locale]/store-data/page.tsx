@@ -29,10 +29,8 @@ import {
 } from './data/storageProviders'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const TRANSLATION_NAMESPACE = 'store-data'
-
 export default async function StoreData() {
-  const metadata = await getTranslatedMetadata(TRANSLATION_NAMESPACE)
+  const metadata = await getTranslatedMetadata(PATHS.STORE_DATA.path)
 
   return (
     <>
@@ -110,7 +108,7 @@ export default async function StoreData() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const { title, description } = await getTranslatedMetadata(
-    TRANSLATION_NAMESPACE,
+    PATHS.STORE_DATA.path,
   )
 
   return createMetadata({

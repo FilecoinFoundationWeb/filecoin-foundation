@@ -6,13 +6,14 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 const { path } = PATHS.PRIVACY_POLICY
+const { title, description } = translations[path].metadata
 
 describe('Privacy Policy Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
       path,
-      title: translations['privacy-policy'].metadata.title,
-      description: translations['privacy-policy'].metadata.description,
+      title,
+      description,
       baseUrl: BASE_URL,
     })
   })
