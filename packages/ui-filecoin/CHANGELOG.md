@@ -1,5 +1,12 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.7.5
+
+### Patch Changes
+
+- d711913: Create ImageMarkdown component
+- 85dee1a: Upgrade to Next 16
+
 ## 0.7.4
 
 ### Patch Changes
