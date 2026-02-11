@@ -12,8 +12,10 @@ const IMAGE_PLACEHOLDER_WIDTH = 1_280
 const IMAGE_PLACEHOLDER_HEIGHT = IMAGE_PLACEHOLDER_WIDTH * (9 / 16)
 
 export function MarkdownImage({ src, alt }: MarkdownImageProps) {
-  if (!src) {
-    console.error('Invalid markdown: image is missing src attribute')
+  if (typeof src !== 'string') {
+    console.error(
+      'Invalid markdown: image is missing src attribute or src is not a string',
+    )
     return null
   }
 
