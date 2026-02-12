@@ -1,9 +1,25 @@
 import { z } from 'zod'
 
-export const NewsletterFormSchema = z.object({
-  email: z
-    .email({ error: 'Your email format is invalid' })
-    .min(1, { error: 'Your email is required' }),
-})
+export type NewsletterFormMessages = {
+  emailInvalid: string
+  emailRequired: string
+}
 
-export type NewsletterFormData = z.infer<typeof NewsletterFormSchema>
+const defaultMessages: NewsletterFormMessages = {
+  emailInvalid: 'Your email format is invalid',
+  emailRequired: 'Your email is required',
+}
+
+export function createNewsletterFormSchema(
+  messages: NewsletterFormMessages = defaultMessages,
+) {
+  return z.object({
+    email: z
+      .email({ error: messages.emailInvalid })
+      .min(1, { error: messages.emailRequired }),
+  })
+}
+
+export type NewsletterFormData = z.infer<
+  ReturnType<typeof createNewsletterFormSchema>
+>

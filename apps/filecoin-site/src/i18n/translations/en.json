@@ -73,5 +73,67 @@
       "title": "Become a Filecoin Storage Provider | Onboarding Guide",
       "description": "Start your Filecoin journey—learn how to become a storage provider with step-by-step onboarding, support resources, and community guidance."
     }
+  },
+  "navigation": {
+    "learn": "Learn",
+    "caseStudies": "Case Studies",
+    "storeData": "Store Data",
+    "provideStorage": "Provide Storage",
+    "buildOnFilecoin": "Build on Filecoin",
+    "communityHub": "Community Hub",
+    "blog": "Blog",
+    "developers": "Developers",
+    "network": "Network",
+    "community": "Community",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "managedBy": "Managed by",
+    "fipsGovernance": "FIPs & Governance",
+    "networkStatus": "Network Status",
+    "networkHealth": "Network Health",
+    "documentation": "Documentation",
+    "cookbook": "Cookbook",
+    "brandKit": "Brand Kit",
+    "events": "Events",
+    "grants": "Grants",
+    "bugBounty": "Security Bug Bounty",
+    "sections": {
+      "understandFilecoin": "Understand Filecoin",
+      "explore": "Explore",
+      "contribute": "Contribute",
+      "blockExplorers": "Block Explorers",
+      "networkMonitoring": "Network Monitoring",
+      "getInvolved": "Get involved",
+      "navigation": "Navigation",
+      "resources": "Resources",
+      "community": "Community"
+    },
+    "descriptions": {
+      "learn": "Understand what Filecoin is and how it works",
+      "caseStudies": "See how others are using Filecoin in the real world",
+      "buildOnFilecoin": "Start building apps on the Filecoin network",
+      "documentation": "Official documentation for Filecoin",
+      "cookbook": "Recipes for building with Filecoin and the FVM",
+      "github": "Explore Filecoin's open-source repositories",
+      "grants": "Funding opportunities to build in the ecosystem",
+      "bugBounty": "Help find vulnerabilities and get rewarded",
+      "beryx": "Explorer and API for accessing real-time data",
+      "blockscout": "Open-source explorer for FEVM smart contracts",
+      "filfox": "Explorer with rich network and storage statistics",
+      "filscan": "Explorer for blocks, deals, and addresses",
+      "communityHub": "Explore ways to contribute to the ecosystem",
+      "events": "Join meetups, hackathons, and conferences",
+      "orbit": "Become a Filecoin Orbit ambassador",
+      "fipsGovernance": "Propose, discuss, and shape future upgrades",
+      "networkStatus": "The status of the Filecoin networks",
+      "networkHealth": "Filecoin chain activity and performance"
+    }
+  },
+  "newsletterForm": {
+    "label": "Sign up for Filecoin updates",
+    "placeholder": "Your email",
+    "submitAriaLabel": "Submit newsletter subscription",
+    "emailInvalid": "Your email format is invalid",
+    "emailRequired": "Your email is required"
   }
 }

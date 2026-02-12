@@ -73,5 +73,67 @@
       "title": "TODO",
       "description": "TODO"
     }
+  },
+  "navigation": {
+    "learn": "了解",
+    "caseStudies": "案例研究",
+    "storeData": "存储数据",
+    "provideStorage": "提供存储",
+    "buildOnFilecoin": "在 Filecoin 上构建",
+    "communityHub": "社区中心",
+    "blog": "博客",
+    "developers": "开发者",
+    "network": "网络",
+    "community": "社区",
+    "privacyPolicy": "隐私政策",
+    "termsOfUse": "使用条款",
+    "managedBy": "管理方",
+    "fipsGovernance": "FIPs 与治理",
+    "networkStatus": "网络状态",
+    "networkHealth": "网络健康",
+    "documentation": "文档",
+    "cookbook": "开发手册",
+    "brandKit": "品牌工具包",
+    "events": "活动",
+    "grants": "资助",
+    "bugBounty": "安全漏洞赏金",
+    "sections": {
+      "understandFilecoin": "了解 Filecoin",
+      "explore": "探索",
+      "contribute": "贡献",
+      "blockExplorers": "区块浏览器",
+      "networkMonitoring": "网络监控",
+      "getInvolved": "参与其中",
+      "navigation": "导航",
+      "resources": "资源",
+      "community": "社区"
+    },
+    "descriptions": {
+      "learn": "了解 Filecoin 是什么以及它如何运作",
+      "caseStudies": "查看其他人如何在现实世界中使用 Filecoin",
+      "buildOnFilecoin": "开始在 Filecoin 网络上构建应用",
+      "documentation": "Filecoin 官方文档",
+      "cookbook": "使用 Filecoin 和 FVM 构建的秘诀",
+      "github": "探索 Filecoin 的开源代码库",
+      "grants": "生态系统中的资金支持机会",
+      "bugBounty": "帮助发现漏洞并获得奖励",
+      "beryx": "用于访问实时数据的浏览器和 API",
+      "blockscout": "FEVM 智能合约的开源浏览器",
+      "filfox": "具有丰富网络和存储统计数据的浏览器",
+      "filscan": "区块、交易和地址浏览器",
+      "communityHub": "探索为生态系统做出贡献的方式",
+      "events": "参加聚会、黑客马拉松和会议",
+      "orbit": "成为 Filecoin Orbit 大使",
+      "fipsGovernance": "提议、讨论和塑造未来升级",
+      "networkStatus": "Filecoin 网络的状态",
+      "networkHealth": "Filecoin 链上活动和性能"
+    }
+  },
+  "newsletterForm": {
+    "label": "订阅 Filecoin 更新",
+    "placeholder": "您的邮箱",
+    "submitAriaLabel": "提交订阅",
+    "emailInvalid": "邮箱格式无效",
+    "emailRequired": "请输入邮箱"
   }
 }
