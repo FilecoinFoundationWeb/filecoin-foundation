@@ -13,9 +13,11 @@ location:
   region: north-america
 start-date: 2026-02-17
 end-date: 2026-02-21
+image:
+  src: /assets/images/image-3-.png
 schedule:
-  kicker: "Don't miss out"
-  title: "Speaking Engagements"
+  kicker: Don't miss out
+  title: Speaking Engagements
   days:
     - date: 2026-02-17
       events:
@@ -38,8 +40,8 @@ schedule:
           end-time: 17:00:00.000Z
           url: https://ethdenver.com/schedule/
           location: "ETH Denver: Prosperia Stage"
-          title: "ETHDenver"
-          description: "Fireside Chat"
+          title: ETHDenver
+          description: Fireside Chat
 speakers:
   speakers_list:
     - name: Molly Mackinlay
