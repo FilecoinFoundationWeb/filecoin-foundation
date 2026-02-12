@@ -132,6 +132,8 @@
   "newsletterForm": {
     "label": "订阅 Filecoin 更新",
     "placeholder": "您的邮箱",
-    "submitAriaLabel": "提交订阅"
+    "submitAriaLabel": "提交订阅",
+    "emailInvalid": "邮箱格式无效",
+    "emailRequired": "请输入邮箱"
   }
 }

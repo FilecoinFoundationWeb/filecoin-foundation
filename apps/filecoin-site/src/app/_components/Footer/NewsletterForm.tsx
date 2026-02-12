@@ -8,14 +8,19 @@ import { useForm } from 'react-hook-form'
 
 import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 import {
-  NewsletterFormSchema,
+  createNewsletterFormSchema,
   type NewsletterFormData,
 } from '@filecoin-foundation/utils/schemas/NewsletterFormSchema'
 
 export function NewsletterForm() {
   const t = useTranslations('newsletterForm')
+  const schema = createNewsletterFormSchema({
+    emailInvalid: t('emailInvalid'),
+    emailRequired: t('emailRequired'),
+  })
+
   const { register, handleSubmit, formState } = useForm<NewsletterFormData>({
-    resolver: zodResolver(NewsletterFormSchema),
+    resolver: zodResolver(schema),
   })
 
   const error = formState.errors.email?.message

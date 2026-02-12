@@ -132,6 +132,8 @@
   "newsletterForm": {
     "label": "Sign up for Filecoin updates",
     "placeholder": "Your email",
-    "submitAriaLabel": "Submit newsletter subscription"
+    "submitAriaLabel": "Submit newsletter subscription",
+    "emailInvalid": "Your email format is invalid",
+    "emailRequired": "Your email is required"
   }
 }
