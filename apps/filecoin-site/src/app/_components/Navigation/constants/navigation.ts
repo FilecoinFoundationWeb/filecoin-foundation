@@ -56,7 +56,7 @@ function getCommunityItems(t: TranslationFunction): Array<ExpandedNavItem> {
       href: FILECOIN_FOUNDATION_URLS.events.href,
     },
     {
-      label: t('orbit'),
+      label: 'Orbit',
       description: t('descriptions.orbit'),
       href: FILECOIN_FOUNDATION_URLS.orbit.href,
     },
@@ -100,7 +100,7 @@ function getDeveloperResourcesItems(
       href: FILECOIN_DOCS_URLS.builderCookbook,
     },
     {
-      label: t('github'),
+      label: 'GitHub',
       description: t('descriptions.github'),
       href: FILECOIN_URLS.github.href,
     },
