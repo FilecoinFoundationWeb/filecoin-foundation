@@ -2,6 +2,7 @@
 
 import { Input, Label, Field, Button } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { useTranslations } from 'next-intl'
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { useForm } from 'react-hook-form'
 
@@ -12,6 +13,7 @@ import {
 } from '@filecoin-foundation/utils/schemas/NewsletterFormSchema'
 
 export function NewsletterForm() {
+  const t = useTranslations('newsletterForm')
   const { register, handleSubmit, formState } = useForm<NewsletterFormData>({
     resolver: zodResolver(NewsletterFormSchema),
   })
@@ -21,13 +23,13 @@ export function NewsletterForm() {
   return (
     <form className="flex flex-col gap-2" onSubmit={handleSubmit(submitForm)}>
       <Field>
-        <Label className="form-label">Sign up for Filecoin updates</Label>
+        <Label className="form-label">{t('label')}</Label>
         <div className="relative flex items-center gap-4 pt-1">
           <Input
             {...register('email', { required: true })}
             type="email"
             invalid={Boolean(error)}
-            placeholder="Your email"
+            placeholder={t('placeholder')}
             autoComplete="email"
             className="form-text-input"
           />
@@ -35,7 +37,7 @@ export function NewsletterForm() {
             disabled={formState.isSubmitting}
             className="focus:brand-outline absolute right-0 -mr-1 flex h-12 w-12 cursor-pointer items-center justify-center"
             type="submit"
-            aria-label="Submit newsletter subscription"
+            aria-label={t('submitAriaLabel')}
           >
             <div className="text-brand-600 relative inline-block">
               <Icon component={ArrowRightIcon} size={20} />

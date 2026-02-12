@@ -14,192 +14,229 @@ import {
 
 import { pickNavItem } from '../utils/pickNavItem'
 
+type TranslationFunction = (key: string) => string
 
 type FooterNavigationItem = { title: string; items: Array<NavItem> }
 
-const blockExplorerItems: Array<ExpandedNavItem> = [
-  {
-    label: 'Beryx',
-    description: 'Explorer and API for accessing real-time data',
-    href: 'https://beryx.io/',
-  },
-  {
-    label: 'Blockscout (FEVM)',
-    description: 'Open-source explorer for FEVM smart contracts',
-    href: 'https://www.blockscout.com/',
-  },
-  {
-    label: 'Filfox',
-    description: 'Explorer with rich network and storage statistics',
-    href: 'https://filfox.info/',
-  },
-  {
-    label: 'Filscan',
-    description: 'Explorer for blocks, deals, and addresses',
-    href: 'https://filscan.io/en/',
-  },
-]
+function getBlockExplorerItems(t: TranslationFunction): Array<ExpandedNavItem> {
+  return [
+    {
+      label: 'Beryx',
+      description: t('descriptions.beryx'),
+      href: 'https://beryx.io/',
+    },
+    {
+      label: 'Blockscout (FEVM)',
+      description: t('descriptions.blockscout'),
+      href: 'https://www.blockscout.com/',
+    },
+    {
+      label: 'Filfox',
+      description: t('descriptions.filfox'),
+      href: 'https://filfox.info/',
+    },
+    {
+      label: 'Filscan',
+      description: t('descriptions.filscan'),
+      href: 'https://filscan.io/en/',
+    },
+  ]
+}
 
-const communityItems: Array<ExpandedNavItem> = [
-  {
-    label: PATHS.COMMUNITY_HUB.label,
-    description: 'Explore ways to contribute to the ecosystem',
-    href: PATHS.COMMUNITY_HUB.path,
-  },
-  {
-    label: FILECOIN_FOUNDATION_URLS.events.label,
-    description: 'Join meetups, hackathons, and conferences',
-    href: FILECOIN_FOUNDATION_URLS.events.href,
-  },
-  {
-    label: FILECOIN_FOUNDATION_URLS.orbit.label,
-    description: 'Become a Filecoin Orbit ambassador',
-    href: FILECOIN_FOUNDATION_URLS.orbit.href,
-  },
-  {
-    label: 'FIPs & Governance',
-    description: 'Propose, discuss, and shape future upgrades',
-    href: FILECOIN_FOUNDATION_URLS.governance.href,
-  },
-]
+function getCommunityItems(t: TranslationFunction): Array<ExpandedNavItem> {
+  return [
+    {
+      label: t('communityHub'),
+      description: t('descriptions.communityHub'),
+      href: PATHS.COMMUNITY_HUB.path,
+    },
+    {
+      label: t('events'),
+      description: t('descriptions.events'),
+      href: FILECOIN_FOUNDATION_URLS.events.href,
+    },
+    {
+      label: t('orbit'),
+      description: t('descriptions.orbit'),
+      href: FILECOIN_FOUNDATION_URLS.orbit.href,
+    },
+    {
+      label: t('fipsGovernance'),
+      description: t('descriptions.fipsGovernance'),
+      href: FILECOIN_FOUNDATION_URLS.governance.href,
+    },
+  ]
+}
 
-const networkMonitoringItems: Array<ExpandedNavItem> = [
-  {
-    label: 'Network Status',
-    description: 'The status of the Filecoin networks',
-    href: 'https://status.filecoin.io/',
-  },
-  {
-    label: 'Network Health',
-    description: 'Filecoin chain activity and performance',
-    href: 'https://dashboard.starboard.ventures/',
-  },
-]
+function getNetworkMonitoringItems(
+  t: TranslationFunction,
+): Array<ExpandedNavItem> {
+  return [
+    {
+      label: t('networkStatus'),
+      description: t('descriptions.networkStatus'),
+      href: 'https://status.filecoin.io/',
+    },
+    {
+      label: t('networkHealth'),
+      description: t('descriptions.networkHealth'),
+      href: 'https://dashboard.starboard.ventures/',
+    },
+  ]
+}
 
-const developerResourcesItems: Array<ExpandedNavItem> = [
-  {
-    label: 'Documentation',
-    description: 'Official documentation for Filecoin',
-    href: FILECOIN_DOCS_URL,
-  },
-  {
-    label: 'Cookbook',
-    description: 'Recipes for building with Filecoin and the FVM',
-    href: FILECOIN_DOCS_URLS.builderCookbook,
-  },
-  {
-    label: FILECOIN_URLS.github.label,
-    description: "Explore Filecoin's open-source repositories",
-    href: FILECOIN_URLS.github.href,
-  },
-]
+function getDeveloperResourcesItems(
+  t: TranslationFunction,
+): Array<ExpandedNavItem> {
+  return [
+    {
+      label: t('documentation'),
+      description: t('descriptions.documentation'),
+      href: FILECOIN_DOCS_URL,
+    },
+    {
+      label: t('cookbook'),
+      description: t('descriptions.cookbook'),
+      href: FILECOIN_DOCS_URLS.builderCookbook,
+    },
+    {
+      label: t('github'),
+      description: t('descriptions.github'),
+      href: FILECOIN_URLS.github.href,
+    },
+  ]
+}
 
-const contributeItems: Array<ExpandedNavItem> = [
-  {
-    label: FILECOIN_FOUNDATION_URLS.grants.label,
-    description: 'Funding opportunities to build in the ecosystem',
-    href: FILECOIN_FOUNDATION_URLS.grants.href,
-  },
-  {
-    label: FILECOIN_URLS.securityBugBounty.label,
-    description: 'Help find vulnerabilities and get rewarded',
-    href: FILECOIN_URLS.securityBugBounty.href,
-  },
-]
+function getContributeItems(t: TranslationFunction): Array<ExpandedNavItem> {
+  return [
+    {
+      label: t('grants'),
+      description: t('descriptions.grants'),
+      href: FILECOIN_FOUNDATION_URLS.grants.href,
+    },
+    {
+      label: t('bugBounty'),
+      description: t('descriptions.bugBounty'),
+      href: FILECOIN_URLS.securityBugBounty.href,
+    },
+  ]
+}
 
-const internalNavigationItems: Array<NavItem> = [
-  { label: PATHS.LEARN.label, href: PATHS.LEARN.path },
-  { label: PATHS.CASE_STUDIES.label, href: PATHS.CASE_STUDIES.path },
-  { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
-  { label: PATHS.PROVIDE_STORAGE.label, href: PATHS.PROVIDE_STORAGE.path },
-  { label: PATHS.BUILD_ON_FILECOIN.label, href: PATHS.BUILD_ON_FILECOIN.path },
-  { label: PATHS.COMMUNITY_HUB.label, href: PATHS.COMMUNITY_HUB.path },
-  { label: PATHS.BLOG.label, href: PATHS.BLOG.path },
-]
+function getInternalNavigationItems(t: TranslationFunction): Array<NavItem> {
+  return [
+    { label: t('learn'), href: PATHS.LEARN.path },
+    { label: t('caseStudies'), href: PATHS.CASE_STUDIES.path },
+    { label: t('storeData'), href: PATHS.STORE_DATA.path },
+    { label: t('provideStorage'), href: PATHS.PROVIDE_STORAGE.path },
+    { label: t('buildOnFilecoin'), href: PATHS.BUILD_ON_FILECOIN.path },
+    { label: t('communityHub'), href: PATHS.COMMUNITY_HUB.path },
+    { label: t('blog'), href: PATHS.BLOG.path },
+  ]
+}
 
-export const mobileNavigationItems = internalNavigationItems
+export function getMobileNavigationItems(t: TranslationFunction) {
+  return getInternalNavigationItems(t)
+}
 
-export const headerNavigationItems: Array<NavItem | NavigationMenuItem> = [
-  {
-    label: PATHS.LEARN.label,
-    items: [
-      {
-        title: 'Understand Filecoin',
-        links: [
-          {
-            label: PATHS.LEARN.label,
-            description: 'Understand what Filecoin is and how it works',
-            href: PATHS.LEARN.path,
-          },
-          {
-            label: PATHS.CASE_STUDIES.label,
-            description: 'See how others are using Filecoin in the real world',
-            href: PATHS.CASE_STUDIES.path,
-          },
-        ],
-      },
-    ],
-  },
-  { label: PATHS.STORE_DATA.label, href: PATHS.STORE_DATA.path },
-  { label: PATHS.PROVIDE_STORAGE.label, href: PATHS.PROVIDE_STORAGE.path },
-  {
-    label: 'Developers',
-    items: [
-      {
-        title: 'Explore',
-        links: [
-          {
-            label: PATHS.BUILD_ON_FILECOIN.label,
-            description: 'Start building apps on the Filecoin network',
-            href: PATHS.BUILD_ON_FILECOIN.path,
-          },
-          ...developerResourcesItems,
-        ],
-      },
-      { title: 'Contribute', links: contributeItems },
-    ],
-  },
-  {
-    label: 'Network',
-    items: [
-      { title: 'Block Explorers', links: blockExplorerItems },
-      { title: 'Network Monitoring', links: networkMonitoringItems },
-    ],
-  },
-  {
-    label: 'Community',
-    items: [{ title: 'Get involved', links: communityItems }],
-  },
-  { label: PATHS.BLOG.label, href: PATHS.BLOG.path },
-]
+export function getHeaderNavigationItems(
+  t: TranslationFunction,
+): Array<NavItem | NavigationMenuItem> {
+  return [
+    {
+      label: t('learn'),
+      items: [
+        {
+          title: t('sections.understandFilecoin'),
+          links: [
+            {
+              label: t('learn'),
+              description: t('descriptions.learn'),
+              href: PATHS.LEARN.path,
+            },
+            {
+              label: t('caseStudies'),
+              description: t('descriptions.caseStudies'),
+              href: PATHS.CASE_STUDIES.path,
+            },
+          ],
+        },
+      ],
+    },
+    { label: t('storeData'), href: PATHS.STORE_DATA.path },
+    { label: t('provideStorage'), href: PATHS.PROVIDE_STORAGE.path },
+    {
+      label: t('developers'),
+      items: [
+        {
+          title: t('sections.explore'),
+          links: [
+            {
+              label: t('buildOnFilecoin'),
+              description: t('descriptions.buildOnFilecoin'),
+              href: PATHS.BUILD_ON_FILECOIN.path,
+            },
+            ...getDeveloperResourcesItems(t),
+          ],
+        },
+        { title: t('sections.contribute'), links: getContributeItems(t) },
+      ],
+    },
+    {
+      label: t('network'),
+      items: [
+        {
+          title: t('sections.blockExplorers'),
+          links: getBlockExplorerItems(t),
+        },
+        {
+          title: t('sections.networkMonitoring'),
+          links: getNetworkMonitoringItems(t),
+        },
+      ],
+    },
+    {
+      label: t('community'),
+      items: [
+        { title: t('sections.getInvolved'), links: getCommunityItems(t) },
+      ],
+    },
+    { label: t('blog'), href: PATHS.BLOG.path },
+  ]
+}
 
-export const footerNavigationItems: Array<FooterNavigationItem> = [
-  {
-    title: 'Navigation',
-    items: internalNavigationItems.filter(
-      ({ href }) => href !== PATHS.COMMUNITY_HUB.path,
-    ),
-  },
-  {
-    title: 'Resources',
-    items: [
-      ...developerResourcesItems.map(pickNavItem),
-      ...contributeItems.map(pickNavItem),
-      { label: 'Brand Kit', href: 'https://hub.fil.org/design' },
-      ...networkMonitoringItems.map(pickNavItem),
-    ],
-  },
-  {
-    title: 'Block Explorers',
-    items: blockExplorerItems.map(pickNavItem),
-  },
-  {
-    title: 'Community',
-    items: communityItems.map(pickNavItem),
-  },
-]
+export function getFooterNavigationItems(
+  t: TranslationFunction,
+): Array<FooterNavigationItem> {
+  return [
+    {
+      title: t('sections.navigation'),
+      items: getInternalNavigationItems(t).filter(
+        ({ href }) => href !== PATHS.COMMUNITY_HUB.path,
+      ),
+    },
+    {
+      title: t('sections.resources'),
+      items: [
+        ...getDeveloperResourcesItems(t).map(pickNavItem),
+        ...getContributeItems(t).map(pickNavItem),
+        { label: t('brandKit'), href: 'https://hub.fil.org/design' },
+        ...getNetworkMonitoringItems(t).map(pickNavItem),
+      ],
+    },
+    {
+      title: t('sections.blockExplorers'),
+      items: getBlockExplorerItems(t).map(pickNavItem),
+    },
+    {
+      title: t('sections.community'),
+      items: getCommunityItems(t).map(pickNavItem),
+    },
+  ]
+}
 
-export const footerLegalItems: Array<NavItem> = [
-  { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
-  { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
-]
+export function getFooterLegalItems(t: TranslationFunction): Array<NavItem> {
+  return [
+    { label: t('privacyPolicy'), href: PATHS.PRIVACY_POLICY.path },
+    { label: t('termsOfUse'), href: PATHS.TERMS_OF_USE.path },
+  ]
+}
