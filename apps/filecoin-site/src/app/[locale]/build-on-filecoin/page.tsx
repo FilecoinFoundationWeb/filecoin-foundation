@@ -21,12 +21,14 @@ import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { ImageGrid } from '@/components/ImageGrid'
 import { Navigation } from '@/components/Navigation/Navigation'
+import { SimpleCardWithImage } from '@/components/SimpleCardWithImage'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { getInvolvedOptions } from '../community-hub/data/getInvolvedOptions'
 
 import { HeroSection } from './components/HeroSection'
 import { builtOnFilecoin } from './data/builtOnFilecoin'
+import { codeNCorgiSeries } from './data/codeNcorgiSeries'
 import { developerResources } from './data/developerResources'
 import { getInvolvedImages } from './data/getInvolvedImages'
 import { tutorialsAndGuides } from './data/tutorialsAndGuides'
@@ -97,6 +99,27 @@ export default async function BuildOnFilecoin() {
                 />
               ),
             )}
+          </CardGrid>
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="light" paddingVariant="topNone">
+        <SectionContent
+          centerCTA
+          headingTag="h2"
+          title="Code n' Corgi: Discovering AI Pawsibilitiess"
+          description="A 7-day beginner series covering the foundations of decentralized AI — from blockchain basics to storing AI model data on Filecoin. Watch each session and follow practical guides from ecosystem partners."
+        >
+          <CardGrid as="ul" variant="lgTwoWide">
+            {codeNCorgiSeries.map(({ title, description, cta, image }) => (
+              <SimpleCardWithImage
+                key={title}
+                title={title}
+                description={description}
+                cta={cta}
+                image={image}
+              />
+            ))}
           </CardGrid>
         </SectionContent>
       </PageSection>
