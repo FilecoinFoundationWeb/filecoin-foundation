@@ -1,25 +1,20 @@
-import {
-  filecoin,
-  traditionalCloud,
-} from '../../data/filecoinVsCloudComparison'
-
+import type { ColumnPropsData } from './Column'
 import { Column } from './Column'
 
-export function ComparisonTable() {
+type ComparisonTableProps = {
+  columns: [ColumnPropsData, ColumnPropsData]
+}
+
+export function ComparisonTable({ columns }: ComparisonTableProps) {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-      <Column
-        perspective="advantage"
-        title={filecoin.title}
-        features={filecoin.features}
-        logo={filecoin.logo}
-      />
-
-      <Column
-        perspective="disadvantage"
-        title={traditionalCloud.title}
-        features={traditionalCloud.features}
-      />
+      {columns.map((column, index) => (
+        <Column
+          key={column.title}
+          perspective={index === 0 ? 'advantage' : 'disadvantage'}
+          {...column}
+        />
+      ))}
     </div>
   )
 }

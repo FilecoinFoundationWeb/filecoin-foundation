@@ -12,6 +12,95 @@
     "metadata": {
       "title": "TODO",
       "description": "TODO"
+    },
+    "trustedBy": {
+      "title": "受到行业领袖的信赖"
+    },
+    "byTheNumbers": {
+      "title": "Filecoin 数据一览",
+      "storageCapacity": {
+        "subTitle": "网络存储容量",
+        "description": "足以存储维基百科文本 3600 万次"
+      },
+      "clients": {
+        "subTitle": "客户",
+        "description": "拥有超过 1TiB 活跃数据"
+      },
+      "smartContracts": {
+        "subTitle": "智能合约",
+        "description": "通过 Filecoin 虚拟机 (FVM) 部署"
+      }
+    },
+    "reshapingData": {
+      "title": "Filecoin 正在重塑世界存储数据的方式",
+      "subTitle": "为下一代互联网奠定更好的基础。",
+      "paragraph1": "如今，少数几家公司控制着世界上大部分数据，形成了中心化的守门人，引入了单点故障并限制了透明度。",
+      "paragraph2": "Filecoin 提供了一种根本不同的数据存储方法：将数据分布在受密码学证明保护的去中心化全球网络中，确保更高的安全性和弹性。",
+      "paragraph3": "从文化档案到科学研究，PB 级的数据已经存储在 Filecoin 上。去中心化模型赋予用户对其信息的真正自主权，为更开放、更有弹性、用户可控的互联网奠定基础。",
+      "storeDataCta": "存储数据",
+      "becomeProviderCta": "成为存储提供者"
+    },
+    "ipfs": {
+      "title": "IPFS 的激励层",
+      "paragraph1": "Filecoin 为星际文件系统 (IPFS) 添加了激励性的持久存储，IPFS 是一个用于内容寻址数据的点对点网络，为数据创建了一个强大、多功能且长期的存储空间。",
+      "paragraph2": "Filecoin 使 IPFS 用户能够轻松可靠地将数据直接存储在 Filecoin 网络上。其结果是一个去中心化的存储层，开辟了全新类别的应用和用例。",
+      "learnMoreCta": "了解更多关于 IPFS"
+    },
+    "comparison": {
+      "title": "Filecoin 存储优势对比",
+      "description": "去中心化存储与传统云存储的对比",
+      "storeDataCta": "存储数据",
+      "learnMoreCta": "了解更多关于 Filecoin",
+      "traditionalCloud": "传统云存储",
+      "resilience": {
+        "filecoin": "通过全球冗余实现弹性",
+        "traditionalCloud": "单点故障"
+      },
+      "censorship": {
+        "filecoin": "设计上抗审查",
+        "traditionalCloud": "易受审查和下架影响"
+      },
+      "participation": {
+        "filecoin": "开放、无许可参与",
+        "traditionalCloud": "由企业守门人控制"
+      },
+      "storage": {
+        "filecoin": "可验证的存储承诺",
+        "traditionalCloud": "不透明的信任模型"
+      },
+      "incentives": {
+        "filecoin": "参与者的经济激励",
+        "traditionalCloud": "利润流向股东"
+      },
+      "longevity": {
+        "filecoin": "数据比机构更长久",
+        "traditionalCloud": "提供商失败则数据丢失"
+      }
+    },
+    "buildForFuture": {
+      "title": "开放、可扩展、面向未来",
+      "subTitle": "去中心化、可验证的存储层，轻松扩展。",
+      "description": "驱动链上存储、dApp、数据密集型 SaaS 平台、不可变档案等。利用开源工具、原生 IPFS 集成、跨链数据桥和 FEVM 可编程智能合约加速开发。无需妥协地构建，因为您控制数据，而非中心化守门人。",
+      "startBuildingCta": "开始构建",
+      "documentationCta": "文档"
+    },
+    "latestNews": {
+      "title": "最新消息",
+      "description": "来自构建 Filecoin 团队的洞察、更新、生态亮点和社区故事。",
+      "viewAllCta": "查看所有文章"
+    },
+    "community": {
+      "title": "加入充满活力的社区",
+      "description": "成为构建去中心化、高效、强大的人类信息基础设施运动的一份子。",
+      "chatOnSlack": "在 Slack 上交流",
+      "attendEvent": "参加 Filecoin 活动",
+      "getInvolvedGitHub": "在 GitHub 上参与",
+      "becomeAmbassador": "成为 Filecoin Orbit 大使",
+      "images": {
+        "conference": "一大群人参加科技大会或研讨会，演讲者在台上演讲，参会者坐在椅子和懒人沙发上，许多人在使用笔记本电脑。",
+        "panel": "一名男子在讨论小组中对着麦克风发言，面带微笑，其他参与者在旁边认真倾听。",
+        "presentation": "一名女性在现代会议室向坐着的观众做演示，几位参与者举手提问。"
+      }
     }
   },
   "/blog": {

@@ -1,47 +1,33 @@
 import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
 
+import type { TranslationFunction } from '@/i18n/types'
+
 import type { ColumnPropsData } from '../components/ComparisonTable/Column'
 
-type ComparisonProvider = 'filecoin' | 'traditional-cloud'
+const FEATURE_KEYS = [
+  'resilience',
+  'censorship',
+  'participation',
+  'storage',
+  'incentives',
+  'longevity',
+] as const
 
-type ComparisonFeature = {
-  [key in ComparisonProvider]: string
+export function getFilecoinColumn(t: TranslationFunction): ColumnPropsData {
+  return {
+    title: 'Filecoin',
+    features: FEATURE_KEYS.map((key) => t(`comparison.${key}.filecoin`)),
+    logo: IconLogo,
+  }
 }
 
-const comparisonFeatures = [
-  {
-    filecoin: 'Resilience through global redundancy',
-    'traditional-cloud': 'Single points of failure',
-  },
-  {
-    filecoin: 'Censorship resistance by design',
-    'traditional-cloud': 'Susceptible to censorship and takedowns',
-  },
-  {
-    filecoin: 'Open, permissionless participation',
-    'traditional-cloud': 'Controlled by corporate gatekeepers',
-  },
-  {
-    filecoin: 'Verifiable storage commitments',
-    'traditional-cloud': 'Opaque trust models',
-  },
-  {
-    filecoin: 'Economic incentives for participants',
-    'traditional-cloud': 'Profits flow to shareholders',
-  },
-  {
-    filecoin: 'Data outlives institutions',
-    'traditional-cloud': 'Data loss if provider fails',
-  },
-] as const satisfies Array<ComparisonFeature>
-
-export const filecoin = {
-  title: 'Filecoin',
-  features: comparisonFeatures.map((item) => item.filecoin),
-  logo: IconLogo,
-} as const satisfies ColumnPropsData
-
-export const traditionalCloud = {
-  title: 'Traditional Cloud',
-  features: comparisonFeatures.map((item) => item['traditional-cloud']),
-} as const satisfies ColumnPropsData
+export function getTraditionalCloudColumn(
+  t: TranslationFunction,
+): ColumnPropsData {
+  return {
+    title: t('comparison.traditionalCloud'),
+    features: FEATURE_KEYS.map((key) =>
+      t(`comparison.${key}.traditionalCloud`),
+    ),
+  }
+}
