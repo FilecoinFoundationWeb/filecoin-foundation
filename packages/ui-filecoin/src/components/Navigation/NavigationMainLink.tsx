@@ -31,12 +31,14 @@ export const mobileStyle = clsx(
 
 export type NavigationLinkProps = {
   on: 'mobile' | 'desktop'
+  onNavigate?: () => void
 } & (InternalLinkProps | ExternalLinkProps)
 
 export function NavigationMainLink({
   href,
   label,
   on,
+  onNavigate,
   ...rest
 }: NavigationLinkProps) {
   const pathname = usePathname()
@@ -45,20 +47,21 @@ export function NavigationMainLink({
   const { baseDomain } = getUIConfig()
   const isExternal = isExternalLink(href, baseDomain)
 
-  const props = {
-    href,
-    label,
-    'aria-label': `Go to ${label} page`,
-    'aria-current': isActive,
-    className: clsx(
-      'inline-block',
-      on === 'desktop' && desktopStyle,
-      on === 'mobile' && mobileStyle,
-    ),
-    ...rest,
-  }
-
   const Link = isExternal ? ExternalLink : InternalLink
 
-  return <Link {...props} />
+  return (
+    <Link
+      href={href}
+      label={label}
+      aria-label={`Go to ${label} page`}
+      aria-current={isActive}
+      className={clsx(
+        'inline-block',
+        on === 'desktop' && desktopStyle,
+        on === 'mobile' && mobileStyle,
+      )}
+      {...(!isExternal && { onNavigate })}
+      {...rest}
+    />
+  )
 }
