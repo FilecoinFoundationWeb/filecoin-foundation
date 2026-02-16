@@ -42,7 +42,7 @@
     },
     "ipfs": {
       "title": "The incentive layer for IPFS",
-      "paragraph1": "Filecoin adds incentivized, persistent storage to the InterPlanetary File System (IPFS), a peer-to-peer network for content-addressable data, creating a powerful, versatile, and long-term home for data. ",
+      "paragraph1": "Filecoin adds incentivized, persistent storage to the InterPlanetary File System (IPFS), a peer-to-peer network for content-addressable data, creating a powerful, versatile, and long-term home for data.",
       "paragraph2": "Filecoin makes it easy for IPFS users to reliably store their data directly on the Filecoin network. The result is a decentralized, storage layer opening up an entirely new class of applications and use cases.",
       "learnMoreCta": "Learn more about IPFS"
     },
