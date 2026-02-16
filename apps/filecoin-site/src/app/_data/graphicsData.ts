@@ -7,13 +7,14 @@ import cupolaEarthView from '@/assets/graphics/cupola-earth-view.webp'
 import dataCenterServerRow from '@/assets/graphics/data-center-server-row.webp'
 import digitalMediaConversionSetup from '@/assets/graphics/digital-media-conversion-setup.webp'
 import earthAtNight from '@/assets/graphics/earth-at-night.webp'
+import IPFSIllustration from '@/assets/graphics/IPFS-illustration.webp'
+import howDataMovesThroughFilecoin from '@/assets/graphics/how-data-moves-through-filecoin.webp'
 import earthBlueEdge from '@/assets/graphics/earth-blue-edge.webp'
 import earthFromDeepSpace from '@/assets/graphics/earth-from-deep-space.webp'
 import filecoinMiningRig from '@/assets/graphics/filecoin-mining-rig.webp'
 import filecoinServerRack from '@/assets/graphics/filecoin-server-rack.webp'
 import filecoinStorageDevice from '@/assets/graphics/filecoin-storage-device.webp'
 import imageFallback from '@/assets/graphics/image-fallback.webp'
-import IPFSIllustration from '@/assets/graphics/IPFS-illustration.webp'
 import nasaHubbleSpaceTelescope from '@/assets/graphics/nasa-hubble-space-telescope.webp'
 import planetsShadow from '@/assets/graphics/planets-shadow.svg'
 import rocketLaunch from '@/assets/graphics/rocket-launch.webp'
@@ -74,6 +75,10 @@ export const graphicsData = {
   filecoinStorageDevice: {
     data: filecoinStorageDevice,
     alt: 'Black storage device with Filecoin logo and glowing green indicator lights.',
+  },
+  howDataMovesThroughFilecoin: {
+    data: howDataMovesThroughFilecoin,
+    alt: 'Diagram showing how data moves through the Filecoin network. A circular flow surrounds a globe representing the global network. On the left, a user icon labeled “User stores data” explains that users upload data to Filecoin using storage tools or services, which create storage deals with Storage Providers. Below, Storage Providers are shown committing these deals to the Filecoin blockchain; the diagram notes that the blockchain stores only the record of the deal, not the data itself. At the bottom, the Filecoin logo represents the blockchain, where Storage Providers regularly submit cryptographic storage proofs to verify they are correctly storing user data. On the right, a section labeled “Retrieval clients” explains that storage solutions or retrieval clients fetch data directly from Storage Providers. At the top right, another user icon labeled “User retrieves data” indicates that users can retrieve their stored data using a tool or storage solution of their choice. The overall graphic illustrates a decentralized, global data storage and retrieval process coordinated through Filecoin.',
   },
   IPFSIllustration: {
     data: IPFSIllustration,
