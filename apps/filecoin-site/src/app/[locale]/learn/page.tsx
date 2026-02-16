@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import { clsx } from 'clsx'
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -27,14 +28,20 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbed'
 
-import { howFilecoinWorks } from './data/howFilecoinWorks'
-import { learnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
-import { resilientInternetCta } from './data/resilientInternetCta'
-import { whatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
+import { getHowFilecoinWorks } from './data/howFilecoinWorks'
+import { getLearnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
+import { getResilientInternetCta } from './data/resilientInternetCta'
+import { getWhatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 export default async function Learn() {
+  const t = await getTranslations(PATHS.LEARN.path)
   const metadata = await getTranslatedMetadata(PATHS.LEARN.path)
+
+  const whatIsFilecoinUsedFor = getWhatIsFilecoinUsedFor(t)
+  const howFilecoinWorks = getHowFilecoinWorks(t)
+  const learnAboutFilecoinProtocol = getLearnAboutFilecoinProtocol(t)
+  const resilientInternetCta = getResilientInternetCta(t)
 
   return (
     <>
@@ -44,11 +51,11 @@ export default async function Learn() {
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
             variant="highContrast"
-            title="The authenticity layer of a more resilient internet"
-            description="Filecoin is the world's largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's information, keeping it free from centralized control."
+            title={t('hero.title')}
+            description={t('hero.description')}
             cta={
               <Button href={FILECOIN_DOCS_URL} variant="primary">
-                Explore documentation
+                {t('hero.exploreDocs')}
               </Button>
             }
           />
@@ -71,14 +78,14 @@ export default async function Learn() {
           centerCTA
           descriptionColorBase
           headingTag="h2"
-          title="What is Filecoin?"
+          title={t('whatIsFilecoin.title')}
         >
           <SplitSectionContent
-            title="A decentralized alternative to today's storage solutions."
+            title={t('whatIsFilecoin.subTitle')}
             description={[
-              "Filecoin is a decentralized alternative to today's storage solutions, offering a better foundation for humanity's information.",
-              "A handful of corporations currently control most of the world's data. This centralized model creates gatekeepers, introduces single points of failures, and reduces transparency.",
-              'Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, protected by cryptographic proofs.',
+              t('whatIsFilecoin.paragraph1'),
+              t('whatIsFilecoin.paragraph2'),
+              t('whatIsFilecoin.paragraph3'),
             ]}
           />
           <YouTubeVideoEmbed videoUrl={FILECOIN_URLS.video.whatIsFilecoin} />
@@ -89,23 +96,17 @@ export default async function Learn() {
         <SectionContent
           centerCTA
           headingTag="h2"
-          title="What is Filecoin used for?"
-          description="From archival backups to Web3 and AI apps, Filecoin offers decentralized, secure, and verifiable storage at scale."
+          title={t('usedFor.title')}
+          description={t('usedFor.description')}
           cta={
             <Button href={PATHS.CASE_STUDIES.path} variant="primary">
-              Explore real-world case studies
+              {t('usedFor.exploreCaseStudiesCta')}
             </Button>
           }
         >
           <CardGrid as="ul" variant="mdTwoWider">
-            {whatIsFilecoinUsedFor.map(({ title, description, image }) => (
-              <Card
-                key={title}
-                as="li"
-                title={title}
-                description={description}
-                image={image}
-              />
+            {whatIsFilecoinUsedFor.map((card) => (
+              <Card key={card.title} as="li" {...card} />
             ))}
           </CardGrid>
         </SectionContent>
@@ -115,23 +116,17 @@ export default async function Learn() {
         <SectionContent
           centerCTA
           headingTag="h2"
-          title="What makes Filecoin unique"
-          description="Filecoin's distributed design delivers verifiable storage, removes single points of failure, and creates a resilient, transparent storage foundation."
+          title={t('unique.title')}
+          description={t('unique.description')}
           cta={
             <Button href={PATHS.STORE_DATA.path} variant="primary">
-              Start storing on Filecoin
+              {t('unique.startStoringCta')}
             </Button>
           }
         >
           <CardGrid as="ul" variant="smTwoLgThreeWider">
-            {howFilecoinWorks.map(({ title, description, icon }) => (
-              <Card
-                key={title}
-                as="li"
-                title={title}
-                description={description}
-                icon={icon}
-              />
+            {howFilecoinWorks.map((card) => (
+              <Card key={card.title} as="li" {...card} />
             ))}
           </CardGrid>
         </SectionContent>
@@ -141,11 +136,11 @@ export default async function Learn() {
         <SectionContent
           centerCTA
           headingTag="h2"
-          title="Learn about the Filecoin protocol"
-          description="For technically curious people who want to go deeper into how Filecoin actually works."
+          title={t('protocol.title')}
+          description={t('protocol.description')}
           cta={
             <Button href={FILECOIN_DOCS_URL} variant="primary">
-              Explore documentation
+              {t('protocol.exploreDocsCta')}
             </Button>
           }
         >
@@ -167,8 +162,8 @@ export default async function Learn() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           headingTag="h2"
-          title="Be a part of a more resilient internet"
-          description="Filecoin is more than storage; it's an innovative, open ecosystem built to preserve humanity's information."
+          title={t('resilientInternet.title')}
+          description={t('resilientInternet.description')}
         >
           <CardGrid as="ul" variant="mdTwo">
             {resilientInternetCta.map(({ title, href, icon }) => (
