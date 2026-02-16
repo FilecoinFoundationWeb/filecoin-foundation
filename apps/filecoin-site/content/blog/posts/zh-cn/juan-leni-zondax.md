@@ -40,7 +40,7 @@ _很有趣的是Filecoin是建立在协议实验室其他大型项目（比如IP
 
 _还有很多有趣的领域等待我们去贡献自己的力量，Zondax团队非常乐意成为这个过程的一份子。_
 
-![由Zondax开发的Filecoin Ledger应用程序](https://filecoin.io/vintage/images/blog/filecoin-ledger.jpg) _由Zondax开发的Filecoin Ledger应用程序_
+![由Zondax开发的Filecoin Ledger应用程序](/blog/filecoin-ledger.jpg) _由Zondax开发的Filecoin Ledger应用程序_
 
 **您如何选择您想参与的加密项目？您寻求的项目是什么？** _我们的大部分工作都涉及直接与工程师团队联系而不是与消费者联系。我们为区块链项目直接提供咨询服务，因此我们经常和基金会或区块链项目本身工作。通常，我们不是专注于Web开发或者智能合约开发，相反，我们是致力于诸如密码学或协议开发方面。_
 

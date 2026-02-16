@@ -63,7 +63,7 @@ There are many features that will make passing the baseline more efficient and e
 
 Lastly, it is important to note that while the block reward incentivizes participation, it cannot be treated as a resource to be exploited. It is a common pool of subsidies that seeds and grows the network to benefit the economy and participants. An example of different stages of the economy and different sources of subsidies is illustrated below.
 
-![Chart](https://filecoin.io/vintage/images/blog/filecoin-features-block-rewards-chart.jpg)
+![Chart](/blog/filecoin-features-block-rewards-chart.jpg)
 
 ## Conclusion
 

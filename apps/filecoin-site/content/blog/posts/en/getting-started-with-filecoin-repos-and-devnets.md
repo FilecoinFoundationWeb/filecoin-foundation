@@ -26,7 +26,7 @@ title: Getting started with Filecoin repos and devnets
 _template: blog_detail
 ---
 
-![Getting Started with Filecoin Repos and Devnets](https://filecoin.io/vintage/images/blog/getting-started-with-repos-devnets.jpg)
+![Getting Started with Filecoin Repos and Devnets](/blog/getting-started-with-repos-devnets.jpg)
 
 As we announced [in our blog post](/blog/opening-filecoin-project-repos/), we recently opened up the Filecoin project repos on [GitHub](https://github.com/filecoin-project). You can visit the GitHub repos to explore the codebase, development tools, community resources, and more. If you’re ready to jump straight in, here are some of the ways you can learn more.
 

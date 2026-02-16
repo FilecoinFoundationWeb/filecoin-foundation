@@ -38,7 +38,7 @@ Additionally, the success of any open source project – such as Filecoin – re
 
 Today, there are **four full node implementations** of the Filecoin protocol in progress. This is a huge step forward for increasing Filecoin network security and growing the Filecoin ecosystem!
 
-[![Four Filecoin Implementations](https://filecoin.io/vintage/images/blog/four-implementations.png)](https://filecoin.io/vintage/images/blog/four-implementations.png)
+![Four Filecoin Implementations](/blog/four-implementations.png)
 
 While the four Filecoin implementations are not yet feature-complete, they are getting really close. As published in our [most recent roadmap update](https://filecoin.io/blog/testnet-phase-2-update/), we are aiming for network interoperability between **lotus** and **go-filecoin** within the next few weeks. Interoperability with **fuhon** and **forest** will follow shortly afterwards. In the meantime, you can follow each implementation’s progress at its respective repo on GitHub:
 

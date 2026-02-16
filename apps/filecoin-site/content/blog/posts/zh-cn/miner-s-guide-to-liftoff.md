@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 在SR1结束后的过去4周内，我们看到了在[8个主要的lotus版本发布](https://github.com/filecoin-project/lotus/releases)的过程中，网络运营、稳定性、效率和弹性方面的巨大改进。这些版本包括[我们的第一个Filecoin改进提案(FIP)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0002.md)，用来减少Window PoSt故障费用([lotus 0.8.0](https://github.com/filecoin-project/lotus/releases/tag/v0.8.0))，一个重大的迁移，使Filecoin内部的核心行为者逻辑更容易升级([lotus 0.9.0](https://github.com/filecoin-project/lotus/releases/tag/v0.9.0))，甚至我们的第一个状态突破的热修复([lotus 0.10.0](https://github.com/filecoin-project/lotus/releases/tag/v0.10.0))。矿工们也在他们的存储挖矿稳定性、可升级性和效率方面做出了关键性的改进——同时作为[Slingshot](http://slingshot.filecoin.io/)的一部分，也对交易本身进行了压力测试。总的来说，[SR2：Orbital Burn](https://filecoin.io/blog/space-race-2/#introducing-space-race-2) 取得了巨大的成功，在不到一个月的时间里，又落地了 _**300PiB**_ 的存储!
 
-![太空竞赛1 仪表板](/vintage/images/blog/SP2-dashboard.jpg)
+![太空竞赛1 仪表板](/blog/SP2-dashboard.jpg)
 
 ## Orbital Burn奖励
 

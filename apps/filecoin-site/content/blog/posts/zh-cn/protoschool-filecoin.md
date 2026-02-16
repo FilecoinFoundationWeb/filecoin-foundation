@@ -31,7 +31,9 @@ Filecoin最具特色的功能之一是其可验证的存储方式。在最近的
 
 [**现在开启教程之旅**](https://proto.school/#/verifying-storage-on-filecoin)
 
-![table of contents](https://filecoin.io/vintage/images/blog/protoschool-verifying-storage-toc.png =x300)![multiple-choice quiz](https://filecoin.io/vintage/images/blog/protoschool-verifying-storage-mult-choice.png =x200)
+![table of contents](https://filecoin.io/blog/protoschool-verifying-storage-toc.png)
+
+![multiple-choice quiz](https://filecoin.io/blog/protoschool-verifying-storage-mult-choice.png)
 
 如果您还没有看过，我们建议您先阅读[分布式数据结构](https://proto.school/#/data-structures)教程，然后再研究“验证Filecoin上的存储”。它探讨了在分布式网络上建立信任的各种关键概念，包括加密哈希、内容寻址、有向无环图（DAG）和Merkle树。
 
@@ -41,7 +43,7 @@ Filecoin最具特色的功能之一是其可验证的存储方式。在最近的
 
 协议学院(ProtoSchool)的[自学教程](https://proto.school/#/tutorials)旨在向您介绍DWeb概念、协议和工具。您可以直接在Web浏览器中完成JavaScript代码挑战，或者坚持使用我们基于文本或多种可选的教程来获得无代码体验，其中内容包括从IPFS到Multiformats到Filecoin。
 
-![各具特色的教程](https://filecoin.io/vintage/images/blog/protoschool-featured-tutorials.png =x350)
+![各具特色的教程](/blog/protoschool-featured-tutorials.png)
 
 有兴趣向其他人介绍DWeb概念吗？了解如何[举办协议学院ProtoSchool研讨会](https://proto.school/#/host)（线上或线下）以保障您社区中的学习成员在导师指导下探索我们的内容。
 

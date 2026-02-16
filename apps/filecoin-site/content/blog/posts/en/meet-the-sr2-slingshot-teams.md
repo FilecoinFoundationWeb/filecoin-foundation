@@ -31,7 +31,7 @@ This week, we talked to four teams to learn more about their work, how they got 
 
 ## Team: Fin-File
 
-![Fin-File](/vintage/images/blog/fin-file.png)
+![Fin-File](/blog/fin-file.png)
 
 **Team Members:** @John_Mc and and @Daniel Kurzweil
 
@@ -47,7 +47,7 @@ This week, we talked to four teams to learn more about their work, how they got 
 
 ## Team: Yolo
 
-![Yolo](/vintage/images/blog/yolo.png)
+![Yolo](/blog/yolo.png)
 
 **Team member:** @Max
 
@@ -61,7 +61,7 @@ This week, we talked to four teams to learn more about their work, how they got 
 
 ## Team: Scavenger Hunt
 
-![Scavenger Hunt](https://filecoin.io/vintage/images/blog/scavenger-hunt.png =30%x)
+![Scavenger Hunt](/blog/scavenger-hunt.png)
 
 **Team Member:** @jimpick
 
@@ -77,7 +77,7 @@ I’m primarily participating in Slingshot for the experience and for the commun
 
 ## Team: [Decentralized Docker Hub](https://github.com/viraja1/decentralized_docker_hub)
 
-![Decentralized Docker Hub](/vintage/images/blog/decentralized-docker-hub.png)
+![Decentralized Docker Hub](/blog/decentralized-docker-hub.png)
 
 **Team member:** @viraj
 

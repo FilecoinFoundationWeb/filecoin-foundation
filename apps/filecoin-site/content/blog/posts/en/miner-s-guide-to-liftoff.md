@@ -29,7 +29,7 @@ During [Space Race 2: Orbital Burn](https://filecoin.io/blog/space-race-2/#intro
 
 In the past 4 weeks since the end of SR1, we’ve seen huge improvements in network operations, stability, efficiency, and resiliency over the course of [8 massive lotus releases](https://github.com/filecoin-project/lotus/releases). These releases included [our first Filecoin Improvement Proposal (FIP)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0002.md) to decrease Window PoSt Fault Fees ([lotus 0.8.0](https://github.com/filecoin-project/lotus/releases/tag/v0.8.0)), a major migration to make the core actors logic inside Filecoin easier to upgrade cleanly ([lotus 0.9.0](https://github.com/filecoin-project/lotus/releases/tag/v0.9.0)), and even our first state-breaking hot-fix ([lotus 0.10.0](https://github.com/filecoin-project/lotus/releases/tag/v0.10.0)). Miners also made crucial improvements in their storage mining stability, upgradeability, and efficiency - while also stress-testing deal-making as part of [Slingshot](http://slingshot.filecoin.io/). Overall, [SR2: Orbital Burn](https://filecoin.io/blog/space-race-2/#introducing-space-race-2) was a massive success, onboarding an additional **300 PiB** _in under a month_!
 
-![Space Race 1 dashboard](https://filecoin.io/vintage/images/blog/SP2-dashboard.jpg)
+![Space Race 1 dashboard](/blog/SP2-dashboard.jpg)
 
 ## Orbital Burn Rewards
 

@@ -69,7 +69,7 @@ Filecoin is relatively unopinionated about the form of storage provided to the n
 
 Currently in our testing configuration, a commodity harddrive provided sufficient read speeds to fit within the ElectionPoSt epoch window. Miners should consider the time budget allotted for Election PoSt and derive their own requirements based on the speed of their network and compute resources. For more information about Election PoSt, please see [Proof-of-Spacetime](https://filecoin.io/blog/filecoin-testnet-mining/#proof-of-spacetime).
 
-![Storage](https://filecoin.io/vintage/images/blog/dark-servers-center-room-with-computers-storage-systems_117023-894.jpg)
+![Storage](/blog/dark-servers-center-room-with-computers-storage-systems_117023-894.jpg)
 
 ## Proof-of-Replication
 
@@ -85,7 +85,7 @@ We observed in our testing that it can be more efficient to have multiple “sea
 
 For more information about how the Proof-of-Replication process relates to mining hardware, see our diagram below:
 
-[![PoRep](https://filecoin.io/vintage/images/blog/porepgraphicv2-watermark.png)](https://filecoin.io/vintage/images/blog/porepgraphicv2-watermark.png)
+![PoRep](/blog/porepgraphicv2-watermark.png)
 
 ## Proof-of-Spacetime
 
@@ -99,7 +99,7 @@ We also suggest a relatively low latency network connection to submit PoSt on ti
 
 For more information about how the ElectionPoSt process relates to mining hardware, see our diagram below:
 
-[![ePoSt](https://filecoin.io/vintage/images/blog/testnet-mining-epost-watermark.png)](https://filecoin.io/vintage/images/blog/testnet-mining-epost-watermark.png)
+![ePoSt](/blog/testnet-mining-epost-watermark.png)
 
 ## Filecoin Mining is NOT Proof-of-Work GPU Mining
 

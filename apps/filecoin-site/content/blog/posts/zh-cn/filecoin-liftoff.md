@@ -44,7 +44,7 @@ Filecoin网络现已进入启动后的监测期来保证网络的正常运行。
 
 无论您是Filecoin的专家还是新手，启动阶段都是学习、创建和探索的绝佳机会。其中还会有一些特别的来宾和激动人心的公告，所以请不要错过！您可以点击[此处](https://liftoff.filecoin.io/)注册参加。如果您想要举办活动或庆祝，[在此](https://filecoin-community.typeform.com/to/EYLmGgOr)提交您的申请。
 
-[![Filecoin Liftoff Schedule](https://filecoin.io/vintage/images/blog/mainnet-liftoff-schedule.jpg)](https://liftoff.filecoin.io/)
+![Filecoin Liftoff Schedule](/blog/mainnet-liftoff-schedule.jpg)
 
 ## 分享您的故事 (#FilecoinLiftoff)
 

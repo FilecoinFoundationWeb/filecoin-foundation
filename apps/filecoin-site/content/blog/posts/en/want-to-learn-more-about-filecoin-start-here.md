@@ -27,7 +27,7 @@ Just in time for back to school, we’re here to get you up to speed on all thin
 
 ## Filecoin Fundamentals
 
-![](https://filecoin.io/vintage/images/blog/zeroknowledge-interview-header.png)
+![](/blog/zeroknowledge-interview-header.png)
 
 [History of the Filecoin Project](https://www.zeroknowledge.fm/106) and [Filecoin’s Juan Benet: The Vision for Web 3.0](https://www.youtube.com/watch?v=0a_EcR9ZgmM)
 
@@ -48,11 +48,11 @@ This workshop is a conceptual overview of how Filecoin works, including backgrou
 **Supplemental Materials:**
 _Length: 2 hours_
 
-- Watch the[3D Filecoin Explainer](https://filecoin.io/) (click “Explore the Filecoin vision”)
+- Watch the [3D Filecoin Explainer](https://filecoin.io/) (click “Explore the Filecoin vision”)
 
-![](https://filecoin.io/vintage/images/blog/filecoin-mining-guide.png)
+![](/blog/filecoin-mining-guide.png)
 
-[**Intro to Filecoin Mining**](https://filecoin.io/blog/filecoin-guide-to-storage-mining/)
+[**Intro to Filecoin Mining**](/blog/a-guide-to-filecoin-storage-mining/)
 
 In this session, Filecoin Software Engineer Łukasz Magiera explains how to mine on the Filecoin Network, walking through key concepts including storage sectors, storage proofs, and mining power. He offers a high-level overview of the network’s architecture and covers how to set up a mining node.
 
@@ -68,12 +68,12 @@ In this Zoom presentation, the Filecoin team discusses the mechanisms and models
 **Supplemental Materials:**
 _Length: 2 hours_
 
-- [Introducing the Filecoin Economy](https://filecoin.io/blog/introducing-the-filecoin-economy/)
-- [Engineering Filecoin’s Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
+- [Introducing the Filecoin Economy](/blog/introducing-the-filecoin-economy/)
+- [Engineering Filecoin’s Economy](/assets/documents/2020-engineering-filecoins-economy-en.pdf)
 
 ### The Filecoin Ecosystem
 
-![](https://filecoin.io/vintage/images/blog/filecoin-integrations-web3.jpg)
+![](/blog/filecoin-integrations-web3.jpg)
 
 [**Filecoin Integrations for Web3 Infrastructure**](https://www.youtube.com/watch?v=Q0oe6i7d1u4)
 

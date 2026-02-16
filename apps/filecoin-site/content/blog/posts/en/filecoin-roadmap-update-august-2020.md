@@ -30,11 +30,11 @@ Our August 2020 roadmap update covers progress made since the last roadmap updat
 
 🎛 **Calibration Devnet**. Our month-long calibration period helped miners prepare for the Space Race by successfully completing real storage and retrieval deals and executing the full sector life cycle. Over the course of this period, we saw miners reach a 97% success rate on retrieval deals - and 24⁄50 top miners reached a **_100%_** success rate on their storage deals.
 
-![Filecoin success rates](https://filecoin.io/vintage/images/blog/update-success-rates.png)
+![Filecoin success rates](/blog/update-success-rates.png)
 
 ⛏ **Mining**. The mining community continues to accelerate quickly, with miners all over the world onboarding Petabytes of storage onto the Filecoin Testnet. In the past month, they’ve reached a new high watermark of >25PB of proven storage – a nearly 3x improvement from our last roadmap update! The calibration devnet also saw super fast sealing - over 5PB/day! The Filecoin Testnet was updated to the most recent Space Race code at 3pm PT today (10pm UTC | 6am CST) - and miners are already off to the races. 🎉
 
-![Storage stats that show Filecoin progress](https://filecoin.io/vintage/images/blog/update-storage-stats.jpg)
+![Storage stats that show Filecoin progress](/blog/update-storage-stats.jpg)
 
 ## Mainnet Functionality
 
@@ -66,7 +66,7 @@ Our August 2020 roadmap update covers progress made since the last roadmap updat
 - **Filecoin Launchpad**: The [Filecoin Launchpad Accelerator](https://tachyon.xyz/) is a full-time, fully-remote program dedicated to startups building for the distributed and decentralized web. Between 15 and 20 teams will be admitted to the program, and will go through twelve weeks of funding, mentorship, and programming around business and blockchain-specific issues, culminating in a Demo Day. Teams leverage access to the ConsenSys and Protocol Labs networks and expertise, ranging from entrepreneurs and legal advisors to pathbreaking technical researchers. Each team will receive $80,000 USD in investment. The application deadline is now extended to August 28th!
 - [Reach out and let us know](https://forms.gle/yhGiSC8rRcAY9YvE8) if you’d like to host an Ignite event! With over 4 Million FIL and 250K USD in prizes spread out across events, now is a great time to start building on Filecoin. 🚀
 
-![Randomness Summit](https://filecoin.io/vintage/images/blog/update-randomness-summit.jpg)
+![Randomness Summit](/blog/update-randomness-summit.jpg)
 
 🎲 **Randomness Summit**. Celebrating the launch of the League of Entropy’s production-level drand beacon, the [Randomness Summit](https://randomness2020.com/) took place on 13 August. Speakers included Bryan Ford, Joseph Boneau, Justin Drake, Kelly Olson, and Vitalik Buterin, as well as representatives from LoE partners Cloudflare, Kudelski Security, Protocol Labs, and the University of Chile, with talks ranged from the fundamentals of randomness to the future of VDFs. A [recording of the full summit](https://www.youtube.com/watch?v=661hUozi9oo) is available in Protocol Labs’ YouTube channel.
 

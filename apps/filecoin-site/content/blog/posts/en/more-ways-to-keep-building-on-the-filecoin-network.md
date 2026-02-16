@@ -32,7 +32,7 @@ Keep reading to learn more about how you can participate in two new programs des
 
 ## [Filecoin Launchpad Accelerator](https://tachyon.xyz/)
 
-![Filecoin Launchpad Accelerator](https://filecoin.io/vintage/images/blog/ignite-launchpad.jpg)
+![Filecoin Launchpad Accelerator](/blog/ignite-launchpad.jpg)
 
 [Apply now](https://tachyon.submittable.com/submit/170134/filecoin-launchpad-accelerator-powered-by-tachyon) for the Filecoin Launchpad Accelerator, powered by [Tachyon](https://tachyon.xyz/), a program designed to offer up to 20 teams twelve weeks of funding, mentorship, benefits, and programming around business and blockchain-specific issues.
 
@@ -44,7 +44,7 @@ This cohort will be focused on startups building more open, interoperable, and p
 
 ## [Filecoin APOLLO](https://gitcoin.co/hackathon/filecoin/onboard)
 
-![Filecoin Launchpad Accelerator](https://filecoin.io/vintage/images/blog/ignite-apollo.jpg)
+![Filecoin Launchpad Accelerator](/blog/ignite-apollo.jpg)
 
 Looking for more ways to get involved? [Apply for APOLLO](https://gitcoin.co/hackathon/filecoin/onboard), a 6-week, invite-only incubator program designed for Filecoin entrepreneurs and makers building investable businesses. Co-hosted by Protocol Labs and [Gitcoin](https://gitcoin.co/), APOLLO kicks off September 1st and will offer opportunities for more than 150 highly-talented builders to become pioneers of the Filecoin and Web3 ecosystems. Applications close August 28th.
 

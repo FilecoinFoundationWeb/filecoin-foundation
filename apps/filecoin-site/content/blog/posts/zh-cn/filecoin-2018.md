@@ -119,7 +119,7 @@ Filecoin研究小组的工作重点在于以下几个方面。这只是一个简
 
 总体来说，下面这张图显示了我们现在的开发进度状态（注：各个阶段并不一定等长）
 
-![](https://filecoin.io/vintage/images/blog/filecoin%E9%A1%B9%E7%9B%AE%E8%B7%AF%E7%BA%BF%E5%9B%BE2018%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%BA%A6.png)
+![](/blog/filecoin%E9%A1%B9%E7%9B%AE%E8%B7%AF%E7%BA%BF%E5%9B%BE2018%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%BA%A6.png)
 
 ### 3.3. 路线图/未来里程碑事件
 

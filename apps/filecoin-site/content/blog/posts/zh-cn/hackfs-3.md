@@ -24,11 +24,11 @@ _template: blog_detail_ch
 
 _欢迎来到第七期Filecoin社区亮点系列，该系列主要针对用户以及在Filecoin网络上创建基本工具和服务的开发者们。我们希望本文和系列中的[其](/blog/community-juan-leni-zondax/)[他](/blog/community-jonathan-schwartz-owl/)[文](/blog/community-ben-fino-radin-sdi/)[章](/blog/community-ben-fino-radin-sdi/) 能激发您的兴趣来为分布式网络创建世界一流的工具。_
 
-上周我们[着重介绍了](/blog/hackfs-teams-vol-1/) OMO Earth、Pygate、Unchained Index和Padlock这4支参与HackFS的团队，HackFS是一场由协议实验室和ETH Global共同举办为期一个月、面向展示Web3强大功能的黑客松活动。本周，我们采访了另外3个团队来了解他们的工作、他们怎样参与HackFS和基于Filecoin进行创建的原因。
+上周我们[着重介绍了](/blog/meet-the-hackfs-teams-vol-1/) OMO Earth、Pygate、Unchained Index和Padlock这4支参与HackFS的团队，HackFS是一场由协议实验室和ETH Global共同举办为期一个月、面向展示Web3强大功能的黑客松活动。本周，我们采访了另外3个团队来了解他们的工作、他们怎样参与HackFS和基于Filecoin进行创建的原因。
 
 ## [Kazan](https://github.com/samikshan/kazan)团队
 
-![Kazan](/vintage/images/blog/hfs-kazan.png)
+![Kazan](/blog/hfs-kazan.png)
 
 > "如果我弹奏吉他，有人可以加入打鼓，还可以来和声，这种合作是可以一直进行下去的并且有无限可能。我的愿景是能够加入其他的艺术家，比如制作专辑的艺术家和制作音乐视频的艺术家。"
 >
@@ -62,11 +62,11 @@ Kazan是一款可以让音乐家发现新曲目并且可以重新发布以最大
 
 ## EduVault团队
 
-![EduVault](/vintage/images/blog/hfs-eduvault.png)
+![EduVault](/blog/hfs-eduvault.png)
 
 **团队成员：** Jacob Cohen-Rosenthal、Aqeel Mohammad、Monica Kumaran 和 Brian Schwartz
 
-**EduVault 背后的灵感：**  
+**EduVault 背后的灵感：**
 我们的前提是，人工智能可以成为指导个人教育的绝佳工具。但要实现这一点，人工智能必须掌握关于你的完整信息——而在当今世界，这通常意味着某一家公司或平台需要对你的数据有非常全面的了解。
 
 如今，我们使用的许多在线平台（包括 EdTech 平台）都会收集大量关于我们的数据，并将这些数据出售给第三方。EduVault 的核心理念是为数字化学习数据创建一个私有云，使学生能够根据自身需求调整学习路径，而无需向第三方或广告商提供个人信息。
@@ -75,7 +75,7 @@ Kazan是一款可以让音乐家发现新曲目并且可以重新发布以最大
 
 最终，借助 EduVault，用户可以在不同应用之间随时保存数据，并在各类教育应用中同步信息。这种互操作性能够解锁强大的使用场景，并创造更优质的学习体验。
 
-![EduVault MVP](/vintage/images/blog/hfs-eduvault-mvp.png)
+![EduVault MVP](/blog/hfs-eduvault-mvp.png)
 
 到目前为止，构建私有云非常困难。 想要拥有自己的数据需要两个要素：访问控制和可用性。通过对数据进行加密可实现访问控制。可用性意味着没有人可以删除用户的数据。例如，您可以在加密您的数据库然后将其存储在中心化云存储服务上，但此服务可能某天会限制您的访问。
 

@@ -75,7 +75,7 @@ Filecoin是一个基于社区的网络，健康的经济是通过合作而不是
 
 **文档：**根据校准网络中发现的挑战，我们增加了很多新的文档，以帮助矿工顺利加入。请参阅[矿工故障排除](https://docs.filecoin.io/mine/)、[改善连接](https://docs.filecoin.io/mine/connectivity/)和[太空竞赛常见问题](https://docs.filecoin.io/mine/spacerace/#frequently-asked-questions)的新页面。我们还有[来自社区的大量关于改进文档的建议](https://github.com/filecoin-project/lotus/issues/2956)，所以随着团队在接下来的几天里对这些建议的处理，预计会在这里看到更多更新。🙏
 
-![Launch Roadster](https://filecoin.io/vintage/images/blog/launch-roadster.jpg)
+![Launch Roadster](/blog/launch-roadster.jpg)
 
 ## 太空竞赛相关活动
 

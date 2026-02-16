@@ -32,7 +32,7 @@ _Build a system or app for the decentralized web that stores data on both IPFS a
 
 ### Kazan
 
-![Kazan](https://filecoin.io/vintage/images/blog/kazan.jpg)
+![Kazan](/blog/kazan.jpg)
 
 The application that snagged our third-place prize is Kazan, a decentralized collaborative music platform! Kazan offers musicians the opportunity to discover tracks, jam on top of them, and publish the result back to the platform for further collaboration. Users of the platform can tag their creations to indicate the elements (such as guitar, drums, or vocals) that each piece contains. Kazan leverages [Textile buckets](https://textile.io/) for audio storage and distribution, and the Web Audio API to facilitate in-browser audio mixing.
 
@@ -44,7 +44,7 @@ While still a prototype, Kazan hopes to add many more features, including the ab
 
 ### Box&Drop
 
-![Box&Drop](https://filecoin.io/vintage/images/blog/box-and-drop.jpg)
+![Box&Drop](/blog/box-and-drop.jpg)
 
 Our second place prize goes to Box&Drop, a location-based filesharing game for iPhone! Making use of IPFS for content distribution, Box&Drop allows its users to “drop” files to physical locations. Others can subsequently find and open these boxes, with the app tracking how many times each box has been opened and its content downloaded. The app even provides built-in navigation support to help users figure out the fastest way to nearby boxes!
 
@@ -56,7 +56,7 @@ This offers a wide array of fun possibilities, from interactive quests and sites
 
 ### Código Hub
 
-![Código Hub](https://filecoin.io/vintage/images/blog/codigo.jpg)
+![Código Hub](/blog/codigo.jpg)
 
 And finally, the winners of our second challenge: the team behind behind Código Hub!
 

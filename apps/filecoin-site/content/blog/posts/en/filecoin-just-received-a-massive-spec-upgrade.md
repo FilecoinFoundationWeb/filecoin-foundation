@@ -27,7 +27,7 @@ Over the last few months, we have made massive progress revamping the Filecoin S
 
 If you haven’t visited the Filecoin Spec site recently, head over to: [https://spec.filecoin.io/](https://spec.filecoin.io/ "https://spec.filecoin.io/") to see a fully refurbished website, full of updated content!
 
-![header](https://filecoin.io/vintage/images/blog/fil-spec-header.png)
+![header](/blog/fil-spec-header.png)
 
 The Spec website went through several “design → implement → deploy” rounds, in order to integrate all the features essential to create a great platform for Filecoin developers, implementers, researchers and ecosystem developers. Additionally, we reduced the complexity required to update the spec content, applied structured dependency management, added features to ensure consistency throughout the spec, added support for new tools, and much more!
 
@@ -56,7 +56,7 @@ The most noteworthy features of the updated site are split into the following ca
 
 In addition to these background changes, the website got a facelift too!
 
-![facelilft](https://filecoin.io/vintage/images/blog/fil-spec-facelift.png)
+![facelilft](/blog/fil-spec-facelift.png)
 
 On the content front, we have put a huge amount of effort in updating the description of the protocol. Filecoin is an enormous project. To put our effort into perspective, if printed, **the specification of the protocol would be a \~400-page textbook!**
 
@@ -66,25 +66,25 @@ The Filecoin specification is implementation-agnostic, which means that the text
 
 In our 3-month Spec Project journey there were more than 300 GitHub issues opened and more than 200 PRs merged.
 
-![stats](https://filecoin.io/vintage/images/blog/fil-spec-stats.png)
+![stats](/blog/fil-spec-stats.png)
 
 Today the spec site is 84% up-to-date. In order to keep track of our own progress, as well as the “health” state of the site and protocol, we have incorporated three great tools:
 
 **1. A bright dashboard** that shows the state of each section of the spec in the range of “Incorrect”, “WIP/Draft”, “Reliable” and “Stable”. We have integrated front matter properties in spec markdown files to feed the values automatically into the dashboard, without any extra action needed. It is also worth noting that the dashboard is generated and updated automatically from the ToC. There is no need to edit separate files in order to update the dashboard!
 
-![legend](https://filecoin.io/vintage/images/blog/fil-spec-legend.png)
+![legend](/blog/fil-spec-legend.png)
 
 **2. An “audit-complete” indicator** as a separate column of the dashboard to show whether the specific component of the protocol has been audited. Where an audit report is available, there is a link to the report (or list of previous reports) together with the date when the audit took place.
 
-![dashboard](https://filecoin.io/vintage/images/blog/fil-spec-dashboard2.png)
+![dashboard](/blog/fil-spec-dashboard2.png)
 
 **3. A stabilisation progress bar** that summarises the state of the whole specification.
 
-![progressbar](https://filecoin.io/vintage/images/blog/fil-spec-progressbar-85.png)
+![progressbar](/blog/fil-spec-progressbar-85.png)
 
 **4. A separate “Implementation Status” dashboard** with status information for all the different Filecoin implementations: Lotus, Fuhon, Forest and go-filecoin. The dashboard integrates hooks to seamlessly pull information from the corresponding repositories and reports CI test success/failure as well as test coverage.
 
-![implementations](https://filecoin.io/vintage/images/blog/fil-spec-implementations.png)
+![implementations](/blog/fil-spec-implementations.png)
 
 ## FIP Integration
 

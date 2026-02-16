@@ -29,7 +29,7 @@ We currently have 6 main events lined up. We’ve already announced one: [SpaceR
 
 Many Ignite events will have sizable prizes, for intrepid developers and miners. We expect the total prize pools to be over 4 Million FIL and 250K USD, spread out across events.
 
-[![HackFS](https://filecoin.io/vintage/images/blog/fihfs-hackfs.png)](https://hackfs.com/)
+![HackFS](/blog/fihfs-hackfs.png)
 
 ## HackFS - a 30 day virtual hackathon
 
@@ -41,7 +41,7 @@ Lots of amazing projects and companies start out as hackathon hacks, including t
 
 ETHGlobal is famous for organizing [ETHWaterloo](http://ethwaterloo.com/), ETHSanFrancisco, ETHBuenosAires, and more, which have come to be seen as some of the best hackathons in the world. ETHGlobal recently organized [HackMoney](https://hackathon.money/), a 30-day virtual hackathon for DeFi, with hundreds of participants, 100+ hacks, and more. You can explore activity via [#HackMoney on twitter](https://twitter.com/search?q=%23HackMoney), and [watch the Finale here](https://www.pscp.tv/w/1mrxmQBOAYLxy). HackFS is their next act in making amazing virtual hackathon experiences. We are stoked to see this excellent team bring their magic to the Filecoin and IPFS communities.
 
-![Events](https://filecoin.io/vintage/images/blog/fihfs-event.jpg)
+![Events](/blog/fihfs-event.jpg)
 
 ## Hosting a Filecoin Ignite event
 
@@ -53,4 +53,4 @@ If you had been wanting to hold an event centered on or featuring Filecoin or IP
 
 We can’t wait for HackFS and the Space Race to start! We look forward to everything you’ll build.
 
-[![Filecoin Ignite](https://filecoin.io/vintage/images/blog/fihfs-ignite.png)](https://hub.fil.org/events/)
+[![Filecoin Ignite](/blog/fihfs-ignite.png)](https://hub.fil.org/events/)

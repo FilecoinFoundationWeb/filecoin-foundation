@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 我们已经更新了[公共路线图文件](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#) 。简而言之，这就是我们所处的位置（这些阶段不一样长）。
 
-![路线图阶段](https://filecoin.io/vintage/images/blog/roadmap-phases-testnet.jpg)
+![路线图阶段](/blog/roadmap-phases-testnet.jpg)
 
 ## 下一步是什么
 
@@ -54,7 +54,7 @@ _template: blog_detail_ch
 
 我们最近组装了一个公共甘特图（Gantt chart），使我们可以共享关键路径工作流和更新的时序信息。该工具看起来像👇，可以在[此链接上](https://app.instagantt.com/shared/s/1152992274307505/latest)进行访问。
 
-![路线图甘特图](https://filecoin.io/vintage/images/blog/roadmap-gantt-chart.jpg)
+![路线图甘特图](/blog/roadmap-gantt-chart.jpg)
 
 我们在上一节中讨论的里程碑位于甘特图中。更新时序信息后，我们将直接更新[此工具](https://app.instagantt.com/shared/s/1152992274307505/latest) 。
 

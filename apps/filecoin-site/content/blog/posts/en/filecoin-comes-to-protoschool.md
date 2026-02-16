@@ -34,7 +34,8 @@ Today we’re excited to announce ProtoSchool’s first-ever Filecoin tutorial, 
 
 [**Explore the tutorial now.**](https://proto.school/#/verifying-storage-on-filecoin)
 
-![table of contents](https://filecoin.io/vintage/images/blog/protoschool-verifying-storage-toc.png =x300)![multiple-choice quiz](https://filecoin.io/vintage/images/blog/protoschool-verifying-storage-mult-choice.png =x200)
+![table of contents](/blog/protoschool-verifying-storage-toc.png)
+![multiple-choice quiz](/blog/protoschool-verifying-storage-mult-choice.png)
 
 If you haven’t yet done so, we encourage you to check out our [Decentralized Data Structures](https://proto.school/#/data-structures) tutorial before digging into Verifying Storage on Filecoin. It explores concepts that are key to building trust on the decentralized web, including cryptographic hashing, content addressing, Directed Acyclic Graphs (DAG), and Merkle Trees.
 
@@ -44,7 +45,7 @@ For other content relevant to Filecoin, you can check out our [Anatomy of a CID]
 
 ProtoSchool’s [self-guided tutorials](https://proto.school/#/tutorials) are designed to introduce you to DWeb concepts, protocols, and tools. Complete JavaScript code challenges right in your web browser or stick to our text-based or multiple-choice tutorials for a code-free experience, with content ranging from from IPFS to Multiformats and now Filecoin.
 
-![featured tutorials](https://filecoin.io/vintage/images/blog/protoschool-featured-tutorials.png =x350)
+![featured tutorials](/blog/protoschool-featured-tutorials.png)
 
 Excited to introduce others to DWeb concepts? Learn how to [host a ProtoSchool workshop](https://proto.school/#/host) (live or virtual) that allows learners in your community to explore our content with support from mentors.
 
