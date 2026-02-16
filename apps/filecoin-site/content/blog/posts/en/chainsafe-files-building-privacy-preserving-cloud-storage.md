@@ -72,7 +72,7 @@ As you can see, we’ve built Files with a privacy-by-design approach. We’ve m
 
 One very important aspect of building an open and decentralized platform is data retrieval. It sounds awesome that no one but you can log in to the platform and read your files, but what if the platform is down, or worse censoring you? This is where the decentralized storage network of IPFS and Filecoin come into play. While there are high chances that readers of this article already know about IPFS and Filecoin, [here is a link to learn more about them](https://docs.filecoin.io/basics/how-storage-works/filecoin-and-ipfs/).
 
-In a nutshell, IPFS is a network of computers (called nodes) that store files. A node can “pin” your files, meaning it will keep a copy of it ready for distribution in case it is asked to. The Files’ backend is built on top of [ChainSafe Storage](http://storage.chainsafe.io), and any file that is uploaded to Files is also pinned by a node on our infrastructure. Each file has an IPFS content identifier (CID) which can be seen on the interface when you click on “info”.
+In a nutshell, IPFS is a network of computers (called nodes) that store files. A node can “pin” your files, meaning it will keep a copy of it ready for distribution in case it is asked to. The Files’ backend is built on top of ChainSafe Storage, and any file that is uploaded to Files is also pinned by a node on our infrastructure. Each file has an IPFS content identifier (CID) which can be seen on the interface when you click on “info”.
 
 ![ChainSafe Files file info](/uploads/file-info.webp)
 

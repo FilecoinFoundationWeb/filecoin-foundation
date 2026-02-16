@@ -53,8 +53,6 @@ The challenge will be broken up into two events that together span 3 months. $10
 
 And yes, there will be swag.
 
-[Sign up](https://coinlist.co/build/coda) on the Coinlist SNARK Challenge website to stay up to date with the latest updates. We look forward to seeing what you come up with!
+The SNARK Challenge was hosted on the Coinlist platform and has since concluded. We were excited to see what participants came up with!
 
 Separately, but no less importantly, we are constantly looking for new minds to help us push our research work forward. Please reach out to [team@filecoin.io](mailto:team@filecoin.io) if you’re interested in working on SNARK research with us as a collaborator, researcher or developer.
-
-## [Sign up for the SNARK Challenge »](https://coinlist.co/build/coda)

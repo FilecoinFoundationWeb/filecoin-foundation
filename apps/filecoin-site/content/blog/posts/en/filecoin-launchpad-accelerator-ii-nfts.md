@@ -43,10 +43,6 @@ Nftfy offers "shares" in valuable NFT's, allowing smaller stakeholders to have p
 
 Nftfy offers a unique way to approach the buying and selling of NFT works. NFT fractions provide another method of exchanging value on the chain, with each portion of an NFT having its own weight as a subset of the whole. It's easy to consider this in terms of a company, where each fractional component of an NFT is a share, which can be traded independently of the company itself. As a result, NFT fractions can "discover" their own price on the open market, embodying true free-market principles.
 
-### Learn more about Nftfy
-
-Those who are interested in Nftfy can learn more about the project [on Nftfy's website](https://nftfy.org/#/).
-
 ## Paras
 
 _Paras is a system for supporting and developing crypto-native intellectual properties._
@@ -106,10 +102,6 @@ NFTs are difficult for the everyman collector to get their hands on. Common and 
 **Lowered Price of Entry:** Because everyone pays the same entry price, the rare NFTs don't only go to the highest bidder with the most capital.
 
 The "Royale" comes from the term "battle royale," a system where the last player standing wins. Eliminations are done through a verifiable randomized system, ensuring that every step is transparent to all participants.
-
-### Learn more about Nifty Royale
-
-Want to find out about Nifty Royale? Their [project page](https://niftyroyale.com/) is the best place to go for more information.
 
 ## Chestr
 

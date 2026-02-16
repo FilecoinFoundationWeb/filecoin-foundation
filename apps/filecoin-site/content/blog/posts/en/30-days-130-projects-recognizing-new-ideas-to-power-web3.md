@@ -63,7 +63,7 @@ BlockSig is a notarized document signing solution. A notary sends out a document
 
 ## Infrastructure Category
 
-### [Valist](https://valist.io/)
+### [Valist](https://app.valist.io/)
 
 ![Valist](https://filecoin.io/vintage/images/blog/hfs-valist-finale.jpg)
 
