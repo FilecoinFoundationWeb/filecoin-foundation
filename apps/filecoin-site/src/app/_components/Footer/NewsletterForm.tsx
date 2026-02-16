@@ -1,9 +1,9 @@
 'use client'
 
-import { Input, Label, Field, Button } from '@headlessui/react'
+import { Button, Field, Input, Label } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useTranslations } from 'next-intl'
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
+import { useTranslations } from 'next-intl'
 import { useForm } from 'react-hook-form'
 
 import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'

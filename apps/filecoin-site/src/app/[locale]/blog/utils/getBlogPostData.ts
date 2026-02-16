@@ -54,6 +54,10 @@ function getDirectoryPathForLocale(locale: Locale) {
   return PATHS.BLOG.entriesPath + `/${locale}`
 }
 
-function isBlogPostPublished(post: { draft?: boolean }): boolean {
-  return post?.draft !== true
+type IsBlogPostPublishedParams = {
+  draft?: boolean
+}
+
+function isBlogPostPublished(post: IsBlogPostPublishedParams) {
+  return post.draft !== true
 }
