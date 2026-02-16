@@ -12,6 +12,95 @@
     "metadata": {
       "title": "Filecoin | World's Largest Decentralized Storage Network for Humanity's Data",
       "description": "Preserve humanity's most important information on Filecoin, the decentralized storage network with verifiable integrity, global redundancy, and no centralized control. Build apps, store data securely, or become a storage provider today."
+    },
+    "trustedBy": {
+      "title": "Trusted by industry leaders"
+    },
+    "byTheNumbers": {
+      "title": "Filecoin by the numbers",
+      "storageCapacity": {
+        "subTitle": "network storage capacity",
+        "description": "Enough to store Wikipedia's text 36 million times over"
+      },
+      "clients": {
+        "subTitle": "clients",
+        "description": "With more than 1TiB active data"
+      },
+      "smartContracts": {
+        "subTitle": "smart contracts",
+        "description": "Deployed via the Filecoin Virtual Machine (FVM)"
+      }
+    },
+    "reshapingData": {
+      "title": "Filecoin is reshaping how the world stores data",
+      "subTitle": "A better foundation for the next generation of the web.",
+      "paragraph1": "Today, a small handful of corporations control most of the world's data, creating centralized gatekeepers that introduce single points of failure and limit transparency.",
+      "paragraph2": "Filecoin offers a fundamentally different approach to data storage: distributing data across a decentralized, global network protected by cryptographic proofs, ensuring greater security and resilience.",
+      "paragraph3": "From cultural archives to scientific research, petabytes of data are already stored on Filecoin. The decentralized model empowers users with true autonomy over their information, building a foundation for a more open, resilient, and user-controlled web.",
+      "storeDataCta": "Store data",
+      "becomeProviderCta": "Become a storage provider"
+    },
+    "ipfs": {
+      "title": "The incentive layer for IPFS",
+      "paragraph1": "Filecoin adds incentivized, persistent storage to the InterPlanetary File System (IPFS), a peer-to-peer network for content-addressable data, creating a powerful, versatile, and long-term home for data.",
+      "paragraph2": "Filecoin makes it easy for IPFS users to reliably store their data directly on the Filecoin network. The result is a decentralized, storage layer opening up an entirely new class of applications and use cases.",
+      "learnMoreCta": "Learn more about IPFS"
+    },
+    "comparison": {
+      "title": "How Filecoin storage stacks up",
+      "description": "How decentralized storage compares to traditional cloud storage",
+      "storeDataCta": "Store data",
+      "learnMoreCta": "Learn more about Filecoin",
+      "traditionalCloud": "Traditional Cloud",
+      "resilience": {
+        "filecoin": "Resilience through global redundancy",
+        "traditionalCloud": "Single points of failure"
+      },
+      "censorship": {
+        "filecoin": "Censorship resistance by design",
+        "traditionalCloud": "Susceptible to censorship and takedowns"
+      },
+      "participation": {
+        "filecoin": "Open, permissionless participation",
+        "traditionalCloud": "Controlled by corporate gatekeepers"
+      },
+      "storage": {
+        "filecoin": "Verifiable storage commitments",
+        "traditionalCloud": "Opaque trust models"
+      },
+      "incentives": {
+        "filecoin": "Economic incentives for participants",
+        "traditionalCloud": "Profits flow to shareholders"
+      },
+      "longevity": {
+        "filecoin": "Data outlives institutions",
+        "traditionalCloud": "Data loss if provider fails"
+      }
+    },
+    "buildForFuture": {
+      "title": "Open, scalable, and built for the future",
+      "subTitle": "A decentralized, verifiable storage layer that scales effortlessly.",
+      "description": "Power chain storage, dApps, data-heavy SaaS platforms, immutable archives, and beyond. Accelerate development with open source tools, native IPFS integration, cross-chain data bridges, and FEVM for programmable smart contracts. Build without compromise, knowing you control your data, not centralized gatekeepers.",
+      "startBuildingCta": "Start building",
+      "documentationCta": "Documentation"
+    },
+    "latestNews": {
+      "title": "Latest news",
+      "description": "Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin.",
+      "viewAllCta": "View all articles"
+    },
+    "community": {
+      "title": "Join a vibrant community",
+      "description": "Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information.",
+      "chatOnSlack": "Chat on Slack",
+      "attendEvent": "Attend a Filecoin event",
+      "getInvolvedGitHub": "Get involved on GitHub",
+      "becomeAmbassador": "Become a Filecoin Orbit ambassador",
+      "images": {
+        "conference": "A large group of people attending a tech conference or workshop, with a speaker presenting on stage and attendees seated on chairs and beanbags, many working on laptops.",
+        "panel": "A man speaks into a microphone during a discussion panel, smiling while other participants listen attentively beside him.",
+        "presentation": "A woman gives a presentation to a seated audience, several participants raising their hands to ask questions in a modern meeting room."
+      }
     }
   },
   "/blog": {

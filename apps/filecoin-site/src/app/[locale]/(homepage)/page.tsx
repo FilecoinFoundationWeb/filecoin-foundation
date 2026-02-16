@@ -4,6 +4,7 @@ import type { LocaleParams } from '@/i18n/types'
 
 import { BookIcon } from '@phosphor-icons/react/dist/ssr'
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -34,9 +35,13 @@ import { SplitSectionContent } from '@/components/SplitSectionContent'
 import { ComparisonTable } from './components/ComparisonTable/ComparisonTable'
 import { HeroSection } from './components/HeroSection'
 import { MetricCard } from './components/MetricCard'
-import { communityLinks } from './data/communityLinks'
-import { filecoinByTheNumbers } from './data/filecoinByTheNumbers'
-import { joinVibrantCommunityImages } from './data/joinVibrantCommunityImages'
+import { getCommunityLinks } from './data/communityLinks'
+import { getFilecoinByTheNumbers } from './data/filecoinByTheNumbers'
+import {
+  getFilecoinColumn,
+  getTraditionalCloudColumn,
+} from './data/filecoinVsCloudComparison'
+import { getJoinVibrantCommunityImages } from './data/joinVibrantCommunityImages'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 import { BlogCard } from '@/blog/components/BlogCard'
@@ -50,12 +55,19 @@ type BlogProps = {
 export default async function Home({ params }: BlogProps) {
   const { locale } = await params
 
+  const t = await getTranslations(PATHS.HOME.path)
   const metadata = await getTranslatedMetadata(PATHS.HOME.path)
 
   const featuredBlogPosts = getFeaturedBlogPosts({
     posts: await getBlogPostsData(locale),
     limit: 3,
   })
+
+  const filecoinByTheNumbers = getFilecoinByTheNumbers(t)
+  const communityLinks = getCommunityLinks(t)
+  const communityImages = getJoinVibrantCommunityImages(t)
+  const filecoinColumn = getFilecoinColumn(t)
+  const traditionalCloudColumn = getTraditionalCloudColumn(t)
 
   return (
     <>
@@ -77,7 +89,7 @@ export default async function Home({ params }: BlogProps) {
       <PageSection backgroundVariant="dark" paddingVariant="none">
         <LogoSection
           headingTag="h2"
-          title="Trusted by industry leaders"
+          title={t('trustedBy.title')}
           logos={trustedByLogos}
         />
       </PageSection>
@@ -86,7 +98,7 @@ export default async function Home({ params }: BlogProps) {
         <SectionContent
           centerTitle
           headingTag="h2"
-          title="Filecoin by the numbers"
+          title={t('byTheNumbers.title')}
         >
           <CardGrid as="ul" variant="mdThreeWider">
             {filecoinByTheNumbers.map(({ title, subTitle, description }) => (
@@ -102,23 +114,20 @@ export default async function Home({ params }: BlogProps) {
       </PageSection>
 
       <PageSection backgroundVariant="light">
-        <SectionContent
-          headingTag="h2"
-          title="Filecoin is reshaping how the world stores data"
-        >
+        <SectionContent headingTag="h2" title={t('reshapingData.title')}>
           <SplitSectionContent
-            title="A better foundation for the next generation of the web."
+            title={t('reshapingData.subTitle')}
             description={[
-              "Today, a small handful of corporations control most of the world's data, creating centralized gatekeepers that introduce single points of failure and limit transparency.",
-              'Filecoin offers a fundamentally different approach to data storage: distributing data across a decentralized, global network protected by cryptographic proofs, ensuring greater security and resilience.',
-              'From cultural archives to scientific research, petabytes of data are already stored on Filecoin. The decentralized model empowers users with true autonomy over their information, building a foundation for a more open, resilient, and user-controlled web.',
+              t('reshapingData.paragraph1'),
+              t('reshapingData.paragraph2'),
+              t('reshapingData.paragraph3'),
             ]}
             cta={[
               <Button href={PATHS.STORE_DATA.path} variant="primary">
-                Store data
+                {t('reshapingData.storeDataCta')}
               </Button>,
               <Button href={PATHS.PROVIDE_STORAGE.path} variant="ghost">
-                Become a storage provider
+                {t('reshapingData.becomeProviderCta')}
               </Button>,
             ]}
           />
@@ -132,14 +141,11 @@ export default async function Home({ params }: BlogProps) {
           <SectionContent
             descriptionColorBase
             headingTag="h2"
-            title="The incentive layer for IPFS"
-            description={[
-              'Filecoin adds incentivized, persistent storage to the InterPlanetary File System (IPFS), a peer-to-peer network for content-addressable data, creating a powerful, versatile, and long-term home for data. ',
-              'Filecoin makes it easy for IPFS users to reliably store their data directly on the Filecoin network. The result is a decentralized, storage layer opening up an entirely new class of applications and use cases.',
-            ]}
+            title={t('ipfs.title')}
+            description={[t('ipfs.paragraph1'), t('ipfs.paragraph2')]}
             cta={
               <Button href="https://ipfs.tech/" variant="primary">
-                Learn more about IPFS
+                {t('ipfs.learnMoreCta')}
               </Button>
             }
           />
@@ -156,41 +162,40 @@ export default async function Home({ params }: BlogProps) {
           centerCTA
           centerTitle
           headingTag="h2"
-          title="How Filecoin storage stacks up"
-          description="How decentralized storage compares to traditional cloud storage"
+          title={t('comparison.title')}
+          description={t('comparison.description')}
           cta={[
             <Button href={PATHS.STORE_DATA.path} variant="primary">
-              Store data
+              {t('comparison.storeDataCta')}
             </Button>,
             <Button href={PATHS.LEARN.path} variant="ghost">
-              Learn more about Filecoin
+              {t('comparison.learnMoreCta')}
             </Button>,
           ]}
         >
           <div className="m-auto w-full max-w-sm md:max-w-4xl">
-            <ComparisonTable />
+            <ComparisonTable
+              columns={[filecoinColumn, traditionalCloudColumn]}
+            />
           </div>
         </SectionContent>
       </PageSection>
 
       <PageSection backgroundVariant="dark">
-        <SectionContent
-          headingTag="h2"
-          title="Open, scalable, and built for the future"
-        >
+        <SectionContent headingTag="h2" title={t('buildForFuture.title')}>
           <SplitSectionContent
-            title="A decentralized, verifiable storage layer that scales effortlessly."
-            description="Power chain storage, dApps, data-heavy SaaS platforms, immutable archives, and beyond. Accelerate development with open source tools, native IPFS integration, cross-chain data bridges, and FEVM for programmable smart contracts. Build without compromise, knowing you control your data, not centralized gatekeepers."
+            title={t('buildForFuture.subTitle')}
+            description={t('buildForFuture.description')}
             cta={[
               <Button href={PATHS.BUILD_ON_FILECOIN.path} variant="primary">
-                Start building
+                {t('buildForFuture.startBuildingCta')}
               </Button>,
               <Button
                 href={FILECOIN_DOCS_URL}
                 variant="tertiary"
                 icon={BookIcon}
               >
-                Documentation
+                {t('buildForFuture.documentationCta')}
               </Button>,
             ]}
           />
@@ -203,11 +208,11 @@ export default async function Home({ params }: BlogProps) {
         <SectionContent
           centerCTA
           headingTag="h2"
-          title="Latest news"
-          description="Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin."
+          title={t('latestNews.title')}
+          description={t('latestNews.description')}
           cta={
             <Button variant="primary" href={PATHS.BLOG.path}>
-              View all articles
+              {t('latestNews.viewAllCta')}
             </Button>
           }
         >
@@ -248,11 +253,11 @@ export default async function Home({ params }: BlogProps) {
       <PageSection backgroundVariant="dark">
         <SectionContent
           headingTag="h2"
-          title="Join a vibrant community"
-          description="Be part of the movement to build a decentralized, efficient, and robust foundation for humanity's information."
+          title={t('community.title')}
+          description={t('community.description')}
         >
           <ImageGrid variant="oneMdThree">
-            {joinVibrantCommunityImages.map(({ data, alt }) => (
+            {communityImages.map(({ data, alt }) => (
               <Image key={alt} src={data} alt={alt} />
             ))}
           </ImageGrid>
