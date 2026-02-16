@@ -13,6 +13,7 @@ export type SimpleCardWithImageProps = {
   badge?: {
     variant: BadgeProps['variant']
     text: BadgeProps['children']
+    textTransform?: BadgeProps['textTransform']
   }
   image: ImageProps
   cta: {
@@ -35,7 +36,9 @@ export function SimpleCardWithImage({
       <div className="relative flex h-full w-full flex-col gap-6 p-8 group-focus-within:bg-(--color-card-background-hover) group-hover:bg-(--color-card-background-hover)">
         {badge && (
           <div className="flex">
-            <Badge variant={badge.variant}>{badge.text}</Badge>
+            <Badge variant={badge.variant} textTransform={badge.textTransform}>
+              {badge.text}
+            </Badge>
           </div>
         )}
 
