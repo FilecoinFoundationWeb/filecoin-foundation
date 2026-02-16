@@ -10,7 +10,7 @@ import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 export type SimpleCardWithImageProps = {
   title: string
   description: string
-  badge: {
+  badge?: {
     variant: BadgeProps['variant']
     text: BadgeProps['children']
   }
@@ -33,9 +33,11 @@ export function SimpleCardWithImage({
       <Image src={image.src} alt={image.alt} />
 
       <div className="relative flex h-full w-full flex-col gap-6 p-8 group-focus-within:bg-(--color-card-background-hover) group-hover:bg-(--color-card-background-hover)">
-        <div className="flex">
-          <Badge variant={badge.variant}>{badge.text}</Badge>
-        </div>
+        {badge && (
+          <div className="flex">
+            <Badge variant={badge.variant}>{badge.text}</Badge>
+          </div>
+        )}
 
         <div className="mb-12 flex flex-col gap-3">
           <span className="group-focus-within:text-(--color-card-heading-hover) group-hover:text-(--color-card-heading-hover)">

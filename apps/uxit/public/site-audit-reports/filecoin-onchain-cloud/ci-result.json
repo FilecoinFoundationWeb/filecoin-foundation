@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/",
+    "score": 0.92,
+    "performance": 0.95,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.75
+  },
+  {
+    "path": "/privacy-policy",
+    "score": 0.99,
+    "performance": 0.97,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/service-providers",
+    "score": 0.86,
+    "performance": 0.75,
+    "accessibility": 0.94,
+    "best-practices": 0.75,
+    "seo": 1
+  },
+  {
+    "path": "/terms-of-use",
+    "score": 0.99,
+    "performance": 0.97,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/warm-storage-service",
+    "score": 0.91,
+    "performance": 0.75,
+    "accessibility": 0.93,
+    "best-practices": 0.96,
+    "seo": 1
+  }
+]

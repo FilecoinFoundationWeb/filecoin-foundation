@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import type { Metadata } from 'next'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoSection'
@@ -14,12 +16,12 @@ import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import { StorageProviderCardWithImage } from './components/StorageProviderCard/StorageProviderCardWithImage'
 import { StorageProviderSection } from './components/StorageProviderSection'
-import { STORE_DATA_SEO } from './constants/seo'
 import {
   filecoinStorageProviders,
   featuredFilecoinStorageProvider,
@@ -27,12 +29,12 @@ import {
 } from './data/storageProviders'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-export default function StoreData() {
+export default async function StoreData() {
+  const metadata = await getTranslatedMetadata(PATHS.STORE_DATA.path)
+
   return (
     <>
-      <StructuredDataScript
-        structuredData={generateStructuredData(STORE_DATA_SEO)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(metadata)} />
 
       <div className="relative isolate overflow-clip">
         <Navigation backgroundVariant="transparentDark" />
@@ -104,9 +106,15 @@ export default function StoreData() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: STORE_DATA_SEO.title },
-  description: STORE_DATA_SEO.description,
-  path: PATHS.STORE_DATA.path,
-  image: graphicsData.digitalMediaConversionSetup.data.src,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { title, description } = await getTranslatedMetadata(
+    PATHS.STORE_DATA.path,
+  )
+
+  return createMetadata({
+    title: { absolute: title },
+    description,
+    path: PATHS.STORE_DATA.path,
+    image: graphicsData.digitalMediaConversionSetup.data.src,
+  })
+}

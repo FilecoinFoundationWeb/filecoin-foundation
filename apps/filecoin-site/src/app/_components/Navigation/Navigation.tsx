@@ -1,3 +1,5 @@
+import { getTranslations } from 'next-intl/server'
+
 import { Container } from '@filecoin-foundation/ui-filecoin/Container'
 import { MobileNavigation } from '@filecoin-foundation/ui-filecoin/Navigation/MobileNavigation'
 import {
@@ -5,7 +7,7 @@ import {
   type SectionProps,
 } from '@filecoin-foundation/ui-filecoin/Section/Section'
 
-import { mobileNavigationItems } from './constants/navigation'
+import { getMobileNavigationItems } from './constants/navigation'
 import { DesktopNavigation } from './DesktopNavigation'
 import { HomeLogoIconLink } from './HomeLogoIconLink'
 
@@ -13,7 +15,9 @@ type NavigationProps = {
   backgroundVariant: SectionProps['backgroundVariant']
 }
 
-export function Navigation({ backgroundVariant }: NavigationProps) {
+export async function Navigation({ backgroundVariant }: NavigationProps) {
+  const t = await getTranslations('navigation')
+
   return (
     <Section as="header" backgroundVariant={backgroundVariant}>
       <Container>
@@ -22,7 +26,7 @@ export function Navigation({ backgroundVariant }: NavigationProps) {
 
           <div className="block xl:hidden">
             <MobileNavigation
-              items={mobileNavigationItems}
+              items={getMobileNavigationItems(t)}
               HomeLogoIconLinkComponent={HomeLogoIconLink}
             />
           </div>

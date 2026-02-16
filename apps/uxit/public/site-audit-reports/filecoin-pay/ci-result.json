@@ -1,0 +1,58 @@
+[
+  {
+    "path": "/",
+    "score": 0.93,
+    "performance": 0.95,
+    "accessibility": 0.92,
+    "best-practices": 0.96,
+    "seo": 0.9
+  },
+  {
+    "path": "/accounts",
+    "score": 0.91,
+    "performance": 0.81,
+    "accessibility": 0.91,
+    "best-practices": 1,
+    "seo": 0.91
+  },
+  {
+    "path": "/console",
+    "score": 0.98,
+    "performance": 0.99,
+    "accessibility": 0.96,
+    "best-practices": 0.96,
+    "seo": 1
+  },
+  {
+    "path": "/mainnet",
+    "score": 0.94,
+    "performance": 0.98,
+    "accessibility": 0.92,
+    "best-practices": 0.96,
+    "seo": 0.9
+  },
+  {
+    "path": "/mainnet/accounts",
+    "score": 0.94,
+    "performance": 0.98,
+    "accessibility": 0.92,
+    "best-practices": 0.96,
+    "seo": 0.9
+  },
+  {
+    "path": "/operators",
+    "score": 0.93,
+    "performance": 0.95,
+    "accessibility": 0.92,
+    "best-practices": 0.96,
+    "seo": 0.9
+  },
+  {
+    "path": "/rails",
+    "score": 0.9,
+    "performance": 0.79,
+    "accessibility": 0.91,
+    "best-practices": 1,
+    "seo": 0.91
+  }
+]

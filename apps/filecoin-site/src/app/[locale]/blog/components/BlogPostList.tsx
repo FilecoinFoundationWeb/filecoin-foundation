@@ -19,7 +19,7 @@ import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { SectionDivider } from '@/components/SectionDivider'
 
 import { useCategoryState } from '../hooks/useCategoryState'
-import type { BlogPost } from '../types/blogPostType'
+import type { BlogPostPreview } from '../types/blogPostType'
 import { postMatchesCategory } from '../utils/postMatchesCategory'
 
 import { BlogCard } from './BlogCard'
@@ -27,7 +27,7 @@ import { BlogCategoryFilter } from './BlogCategoryFilter'
 import { RSSFeed } from './RSSFeed'
 
 type BlogPostListProps = {
-  posts: Array<BlogPost>
+  posts: Array<BlogPostPreview>
 }
 
 const BLOG_POSTS_PER_PAGE = 12
@@ -84,7 +84,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
       {filteredEntries.length > 0 ? (
         <>
           <CardGrid as="ul" variant="mdTwoLgThreeWide">
-            {paginatedResults.map((post: BlogPost) => {
+            {paginatedResults.map((post: BlogPostPreview) => {
               const {
                 title,
                 slug,

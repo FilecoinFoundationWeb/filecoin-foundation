@@ -1,5 +1,7 @@
 import type { LocaleParams } from '@/i18n/types'
 
+import type { Metadata } from 'next'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
@@ -11,12 +13,12 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
 import { PageHeader } from './components/PageHeader'
-import { CASE_STUDIES_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getCaseStudiesByFeaturedStatus } from './utils/getCaseStudyData'
 
@@ -30,13 +32,12 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
   const { featured: featuredCaseStudies, upcoming: upcomingCaseStudies } =
     await getCaseStudiesByFeaturedStatus(locale)
 
+  const metadata = await getTranslatedMetadata(PATHS.CASE_STUDIES.path)
+
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(
-          CASE_STUDIES_SEO,
-          featuredCaseStudies,
-        )}
+        structuredData={generateStructuredData(metadata, featuredCaseStudies)}
       />
       <Navigation backgroundVariant="dark" />
       <PageSection backgroundVariant="dark">
@@ -117,8 +118,14 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: CASE_STUDIES_SEO.title },
-  description: CASE_STUDIES_SEO.description,
-  path: PATHS.CASE_STUDIES.path,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { title, description } = await getTranslatedMetadata(
+    PATHS.CASE_STUDIES.path,
+  )
+
+  return createMetadata({
+    title: { absolute: title },
+    description,
+    path: PATHS.CASE_STUDIES.path,
+  })
+}

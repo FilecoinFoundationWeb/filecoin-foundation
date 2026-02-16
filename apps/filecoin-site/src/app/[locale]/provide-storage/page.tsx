@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import type { Metadata } from 'next'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Card } from '@filecoin-foundation/ui-filecoin/Card'
@@ -15,22 +17,22 @@ import { FILECOIN_URLS, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { GradientOverlay } from '@/components/GradientOverlay'
 import { Navigation } from '@/components/Navigation/Navigation'
 
-import { PROVIDE_STORAGE_SEO } from './constants/seo'
 import { gettingStartedWithPDP } from './data/gettingStartedWithPDP'
 import { scalingOperations } from './data/scalingOperations'
 import { storageProvidersLogos } from './data/storageProvidersLogos'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-export default function ProvideStorage() {
+export default async function ProvideStorage() {
+  const metadata = await getTranslatedMetadata(PATHS.PROVIDE_STORAGE.path)
+
   return (
     <>
-      <StructuredDataScript
-        structuredData={generateStructuredData(PROVIDE_STORAGE_SEO)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(metadata)} />
 
       <Navigation backgroundVariant="dark" />
 
@@ -148,9 +150,15 @@ export default function ProvideStorage() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: PROVIDE_STORAGE_SEO.title },
-  description: PROVIDE_STORAGE_SEO.description,
-  path: PATHS.PROVIDE_STORAGE.path,
-  image: graphicsData.filecoinStorageDevice.data.src,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { title, description } = await getTranslatedMetadata(
+    PATHS.PROVIDE_STORAGE.path,
+  )
+
+  return createMetadata({
+    title: { absolute: title },
+    description,
+    path: PATHS.PROVIDE_STORAGE.path,
+    image: graphicsData.filecoinStorageDevice.data.src,
+  })
+}

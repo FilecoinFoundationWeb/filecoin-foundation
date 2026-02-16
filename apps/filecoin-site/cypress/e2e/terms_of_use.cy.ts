@@ -1,12 +1,12 @@
+import translations from '@/i18n/translations/en.json'
+
 import { tests } from '@filecoin-foundation/cypress/support'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { TERMS_OF_USE_SEO } from '@/terms-of-use/constants/seo'
-
 const { path } = PATHS.TERMS_OF_USE
-const { title, description } = TERMS_OF_USE_SEO
+const { title, description } = translations[path].metadata
 
 describe('Terms of Use Page', () => {
   it(tests.metadata.prompt, () => {
