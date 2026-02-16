@@ -1,16 +1,20 @@
+import { getTranslations } from 'next-intl/server'
+
 import { LegalSection as SharedLegalSection } from '@filecoin-foundation/ui-filecoin/Footer/LegalSection'
 
 import { FILECOIN_FOUNDATION_URL } from '@/constants/siteMetadata'
 
 import FilecoinFoundationLogo from '@/assets/logos/filecoin-foundation-logo.svg'
 
-import { footerLegalItems } from '../Navigation/constants/navigation'
+import { getFooterLegalItems } from '../Navigation/constants/navigation'
 
-export function LegalSection() {
+export async function LegalSection() {
+  const t = await getTranslations('navigation')
+
   return (
     <SharedLegalSection
-      leadingText="Managed by"
-      legalItems={footerLegalItems}
+      leadingText={t('managedBy')}
+      legalItems={getFooterLegalItems(t)}
       creators={[
         {
           companyName: 'Filecoin Foundation',

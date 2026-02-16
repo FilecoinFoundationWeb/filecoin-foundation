@@ -13,7 +13,7 @@ import {
 } from '@filecoin-foundation/ui/NotificationDialog'
 import { NOTIFICATION_DIALOG_ERROR_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
 import {
-  NewsletterFormSchema,
+  createNewsletterFormSchema,
   type NewsletterFormData,
 } from '@filecoin-foundation/utils/schemas/NewsletterFormSchema'
 
@@ -58,8 +58,10 @@ export function NewsletterForm() {
 }
 
 function useNewsletterForm() {
+  const schema = createNewsletterFormSchema()
+
   const form = useForm<NewsletterFormData>({
-    resolver: zodResolver(NewsletterFormSchema),
+    resolver: zodResolver(schema),
   })
 
   const dialog = useNotificationDialog()

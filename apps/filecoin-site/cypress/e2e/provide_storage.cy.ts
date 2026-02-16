@@ -1,12 +1,12 @@
+import translations from '@/i18n/translations/en.json'
+
 import { tests } from '@filecoin-foundation/cypress/support'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { PROVIDE_STORAGE_SEO } from '@/provide-storage/constants/seo'
-
 const { path } = PATHS.PROVIDE_STORAGE
-const { title, description } = PROVIDE_STORAGE_SEO
+const { title, description } = translations[path].metadata
 
 const excludedLinks = ['ndlabs.io']
 

@@ -108,10 +108,6 @@ Nifty Royale是一个通过无常损失池系统分发NFT的奖项分配系统�
 
 “Royale”一词源于“battle Royale（电影大逃杀）”，即坚持到最后的一名玩家为胜者。通过可验证的随机系统进行淘汰，确保每个步骤对所有参与者都公开透明。
 
-### Nifty Royale更多信息
-
-欲知Nifty Royale更多信息，请查看[项目页面](https://niftyroyale.com/)获取。
-
 ## Chestr
 
 _一个以数字艺术家为中心的创作平台。_

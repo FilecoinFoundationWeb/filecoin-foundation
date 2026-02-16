@@ -48,7 +48,7 @@ The deadline to submit your FIL-RetroPGF-2 Stage 2 applications is fast approach
 
 ### DSA Member Interview with Filecoin OG, Stuart Berman
 
-Stuart Berman, a DSA member and Filecoin pioneer, explores the technical and practical promise of decentralized storage, tracing its evolution from web2 to web3 in this [recent DSA member interview](https://dsalliance.io/resources/blog/the-case-for-decentralized-storage). He discusses the benefits of decentralized data control, immutability, and security, as well as emerging challenges like access control and proof of access. Berman also shares insights from his recent work, focused on helping enterprises and users leverage Filecoin and Web3 for resilient, scalable data storage solutions. [Read the article](https://dsalliance.io/resources/blog/the-case-for-decentralized-storage) for all of Stuart’s insights. 
+Stuart Berman, a DSA member and Filecoin pioneer, explores the technical and practical promise of decentralized storage, tracing its evolution from web2 to web3 in a recent DSA member interview. He discusses the benefits of decentralized data control, immutability, and security, as well as emerging challenges like access control and proof of access. Berman also shares insights from his recent work, focused on helping enterprises and users leverage Filecoin and Web3 for resilient, scalable data storage solutions.
 
 ### Destor partners with Kabat to deliver energy-efficient cloud storage
 

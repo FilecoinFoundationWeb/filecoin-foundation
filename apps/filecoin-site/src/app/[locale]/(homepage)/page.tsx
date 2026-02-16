@@ -3,6 +3,7 @@ import Image from 'next/image'
 import type { LocaleParams } from '@/i18n/types'
 
 import { BookIcon } from '@phosphor-icons/react/dist/ssr'
+import type { Metadata } from 'next'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -14,13 +15,13 @@ import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
-import { SEO } from '@/constants/siteMetadata'
 import { FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { CardGridContainer } from '@/components/CardGridContainer'
 import { GradientOverlay } from '@/components/GradientOverlay'
@@ -49,6 +50,8 @@ type BlogProps = {
 export default async function Home({ params }: BlogProps) {
   const { locale } = await params
 
+  const metadata = await getTranslatedMetadata(PATHS.HOME.path)
+
   const featuredBlogPosts = getFeaturedBlogPosts({
     posts: await getBlogPostsData(locale),
     limit: 3,
@@ -56,7 +59,7 @@ export default async function Home({ params }: BlogProps) {
 
   return (
     <>
-      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+      <StructuredDataScript structuredData={generateStructuredData(metadata)} />
 
       <div className="relative isolate">
         <Navigation backgroundVariant="transparentDark" />
@@ -274,9 +277,13 @@ export default async function Home({ params }: BlogProps) {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: SEO.title },
-  description: SEO.description,
-  path: PATHS.HOME.path,
-  image: graphicsData.classicLibraryInterior.data.src,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { title, description } = await getTranslatedMetadata(PATHS.HOME.path)
+
+  return createMetadata({
+    title: { absolute: title },
+    description,
+    path: PATHS.HOME.path,
+    image: graphicsData.classicLibraryInterior.data.src,
+  })
+}

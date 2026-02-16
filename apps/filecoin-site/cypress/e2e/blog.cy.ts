@@ -1,12 +1,12 @@
+import translations from '@/i18n/translations/en.json'
+
 import { tests } from '@filecoin-foundation/cypress/support'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { BLOG_SEO } from '@/blog/constants/seo'
-
 const { path } = PATHS.BLOG
-const { title, description } = BLOG_SEO
+const { title, description } = translations[path].metadata
 
 describe('Blog Page', () => {
   it(tests.metadata.prompt, () => {

@@ -24,7 +24,7 @@ export default async function Blog() {
 
   const featuredPost = getFeaturedEntry({
     entries: posts,
-    featuredEntryPath: '/blog/ffdw-2024-annual-report',
+    featuredEntryPath: '/blog/ffdw-2025-annual-report',
   })
 
   return (

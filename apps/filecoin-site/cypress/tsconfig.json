@@ -6,6 +6,7 @@
       "@/*": ["src/app/[locale]/*"],
       "@/constants/*": ["src/app/_constants/*"],
       "@/cypress/*": ["cypress/*"],
+      "@/i18n/*": ["src/i18n/*"],
       "@/utils/*": ["src/app/_utils/*"]
     }
   },

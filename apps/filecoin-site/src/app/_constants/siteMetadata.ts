@@ -4,13 +4,6 @@ const BASE_DOMAIN = 'filecoin-site.vercel.app'
 const BASE_URL = `https://${BASE_DOMAIN}`
 const ORGANIZATION_NAME = 'Filecoin'
 
-const SEO = {
-  title:
-    "Filecoin | World's Largest Decentralized Storage Network for Humanity's Data",
-  description:
-    "Preserve humanity's most important information on Filecoin, the decentralized storage network with verifiable integrity, global redundancy, and no centralized control. Build apps, store data securely, or become a storage provider today.",
-} as const
-
 const FILECOIN_DOCS_URL = 'https://docs.filecoin.io/'
 const FILECOIN_DOCS_URLS = {
   basicsWhatIsFilecoin: `${FILECOIN_DOCS_URL}basics/what-is-filecoin`,
@@ -135,5 +128,4 @@ export {
   FILECOIN_CLOUD_URL,
   ORGANIZATION_NAME,
   ROOT_METADATA,
-  SEO,
 }

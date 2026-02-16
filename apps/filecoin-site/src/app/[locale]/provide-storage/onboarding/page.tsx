@@ -1,14 +1,16 @@
+import type { Metadata } from 'next'
+
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 
 import { PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import { ProvideStorageForm } from './components/ProvideStorageForm'
-import { PROVIDE_STORAGE_ONBOARDING_SEO } from './constants/seo'
 
 export default function ProvideStorageFormPage() {
   return (
@@ -32,8 +34,14 @@ export default function ProvideStorageFormPage() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: PROVIDE_STORAGE_ONBOARDING_SEO.title },
-  description: PROVIDE_STORAGE_ONBOARDING_SEO.description,
-  path: PATHS.PROVIDE_STORAGE_ONBOARDING.path,
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { title, description } = await getTranslatedMetadata(
+    PATHS.PROVIDE_STORAGE_ONBOARDING.path,
+  )
+
+  return createMetadata({
+    title: { absolute: title },
+    description,
+    path: PATHS.PROVIDE_STORAGE_ONBOARDING.path,
+  })
+}

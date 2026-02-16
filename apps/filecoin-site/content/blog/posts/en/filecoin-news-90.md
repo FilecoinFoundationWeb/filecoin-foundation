@@ -75,9 +75,9 @@ DeStor has announced the launch of [DeStor.com](http://destor.com/), a decentral
 
 Ambassadors from the Filecoin Orbit Community Program and the Filecoin Foundation recently hosted events across six cities: Barcelona, Madrid, Warsaw, Lisbon, Katowice, and Munich. Each stop included engagement with local Web3 communities and hubs, insightful talks showcasing the depth and diversity of the Filecoin ecosystem, and participation by attendees already engaged in Filecoin land as well as those taking their first steps. One highlight? Katowice, Poland was the best-attended Filecoin Orbit event on record! [Read more about the tour and how to get involved with the Orbit program](https://fil.org/blog/european-orbit-community-meetups-eager-developers-decentralized-storage-curiosity-and-vibrant-communities).
 
-### DSA Releases [New Reference Architecture for Filecoin](https://dsalliance.io/resources/blog/filecoin-storage-reference-architecture-seagate-klara-web3mine)
+### DSA Releases New Reference Architecture for Filecoin
 
-The Decentralized Storage Alliance (DSA) has released a new storage reference architecture for the Filecoin network. This architecture utilizes Seagate's Exos CORVAULT technology and OpenZFS to deliver significant benefits for storage providers. Key improvements include: reduced compute infrastructure requirements, improved economic viability for onboarding commercial-grade storage loads, increased network resiliency and more. Learn more about this release by reading the [DSA's blog post](https://dsalliance.io/resources/blog/filecoin-storage-reference-architecture-seagate-klara-web3mine).
+The Decentralized Storage Alliance (DSA) has released a new storage reference architecture for the Filecoin network. This architecture utilizes Seagate's Exos CORVAULT technology and OpenZFS to deliver significant benefits for storage providers. Key improvements include: reduced compute infrastructure requirements, improved economic viability for onboarding commercial-grade storage loads, increased network resiliency and more.
 
 ## 🛠️ Tools 🛠️
 

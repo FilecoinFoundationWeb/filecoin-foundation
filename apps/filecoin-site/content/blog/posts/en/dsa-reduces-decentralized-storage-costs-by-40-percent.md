@@ -15,7 +15,7 @@ dim_image: true
 related_article_1: content/blog/posts/introducing-the-decentralized-storage-alliance.en.md
 ---
 
-_This is a cross-post from the Decentralized Storage Alliance (DSA) – [original article](https://dsalliance.io/resources/blog/dsa-launches-golden-gate-upgrade-reducing-decentralized-storage-costs-by-40-percent)._
+_This is a cross-post from the Decentralized Storage Alliance (DSA); the original article was previously published on their website._
 
 **Sealing Optimizations Release (GA) open sourced and ready for testing.**
 

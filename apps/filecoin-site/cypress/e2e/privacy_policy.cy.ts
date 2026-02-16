@@ -1,12 +1,12 @@
+import translations from '@/i18n/translations/en.json'
+
 import { tests } from '@filecoin-foundation/cypress/support'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { PRIVACY_POLICY_SEO } from '@/privacy-policy/constants/seo'
-
 const { path } = PATHS.PRIVACY_POLICY
-const { title, description } = PRIVACY_POLICY_SEO
+const { title, description } = translations[path].metadata
 
 describe('Privacy Policy Page', () => {
   it(tests.metadata.prompt, () => {

@@ -14,7 +14,8 @@
       "@/hooks/*": ["./src/app/_hooks/*"],
       "@/styles/*": ["./src/app/_styles/*"],
       "@/utils/*": ["./src/app/_utils/*"],
-      "@/i18n/*": ["./src/i18n/*"]
+      "@/i18n/*": ["./src/i18n/*"],
+      "@/next/types/*": ["./.next/dev/types/*", "./.next/types/*"]
     },
     "plugins": [{ "name": "next" }]
   },

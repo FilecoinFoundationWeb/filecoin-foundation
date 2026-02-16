@@ -1,5 +1,5 @@
 {
-  "home": {
+  "/": {
     "hero": {
       "headline": "A decentralized, efficient, and robust foundation for humanity's information",
       "description": "Filecoin is the world's largest decentralized storage network, built to keep data verifiable and free from centralized control.",
@@ -8,6 +8,132 @@
         "main": "Store data",
         "secondary": "Start building"
       }
+    },
+    "metadata": {
+      "title": "Filecoin | World's Largest Decentralized Storage Network for Humanity's Data",
+      "description": "Preserve humanity's most important information on Filecoin, the decentralized storage network with verifiable integrity, global redundancy, and no centralized control. Build apps, store data securely, or become a storage provider today."
     }
+  },
+  "/blog": {
+    "metadata": {
+      "title": "Filecoin Blog | Latest News, Updates & Ecosystem Insights",
+      "description": "Dive into Filecoin's blog for ecosystem metrics, news on verifiable hot storage, cross-chain bridges, events, and growth insights. Stay informed on decentralized storage innovations driving AI, crypto, and data resilience."
+    }
+  },
+  "/community-hub": {
+    "metadata": {
+      "title": "Filecoin Community | Connect, Learn & Build Together",
+      "description": "Join the Filecoin community—connect with developers, join events, and access resources to collaborate on building the future of decentralized storage."
+    }
+  },
+  "/learn": {
+    "metadata": {
+      "title": "What Is Filecoin? | Decentralized Storage Explained",
+      "description": "Learn how Filecoin's decentralized storage network works, what it's used for, and why it's a foundation for a more resilient internet."
+    }
+  },
+  "/store-data": {
+    "metadata": {
+      "title": "Store Data on Filecoin | Secure, Verifiable Decentralized Storage Solutions",
+      "description": "Securely store big data on Filecoin with tamper-proof integrity, compliance standards, predictable pricing, and infinite scalability. Choose from trusted providers for resilient, censorship-resistant storage without hidden fees."
+    }
+  },
+  "/build-on-filecoin": {
+    "metadata": {
+      "title": "Build on Filecoin | Scalable Decentralized Storage for Developers & AI",
+      "description": "Empower your apps with Filecoin's programmable, verifiable storage. Integrate AI datasets, dApps, cross-chain bridges, and more using open-source tools, FVM smart contracts, and IPFS for resilient, permissionless development."
+    }
+  },
+  "/case-studies": {
+    "metadata": {
+      "title": "Filecoin Case Studies | Real-World Decentralized Storage Success",
+      "description": "Explore Filecoin case studies showcasing how organizations use decentralized storage for scalability, security, and innovation across industries."
+    }
+  },
+  "/privacy-policy": {
+    "metadata": {
+      "title": "Privacy Policy | Filecoin Decentralized Storage Network",
+      "description": "Review Filecoin's privacy policy to understand our data collection, usage, and protection practices in a decentralized ecosystem. We prioritize user privacy, security, and transparency without centralized control."
+    }
+  },
+  "/terms-of-use": {
+    "metadata": {
+      "title": "Terms of Use | Filecoin Decentralized Storage Platform",
+      "description": "Read Filecoin's terms of use for guidelines on accessing our network, user responsibilities, and intellectual property rights. Ensure compliance while building, storing, or providing decentralized storage services."
+    }
+  },
+  "/provide-storage": {
+    "metadata": {
+      "title": "Become a Filecoin Storage Provider | Earn Rewards in Decentralized Network",
+      "description": "Join the Filecoin network as a storage provider to power global decentralized infrastructure. Use your data center to earn FIL rewards, diversify revenue, and scale with demand while preserving vital data in a permissionless ecosystem."
+    }
+  },
+  "/provide-storage/onboarding": {
+    "metadata": {
+      "title": "Become a Filecoin Storage Provider | Onboarding Guide",
+      "description": "Start your Filecoin journey—learn how to become a storage provider with step-by-step onboarding, support resources, and community guidance."
+    }
+  },
+  "navigation": {
+    "learn": "Learn",
+    "caseStudies": "Case Studies",
+    "storeData": "Store Data",
+    "provideStorage": "Provide Storage",
+    "buildOnFilecoin": "Build on Filecoin",
+    "communityHub": "Community Hub",
+    "blog": "Blog",
+    "developers": "Developers",
+    "network": "Network",
+    "community": "Community",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "managedBy": "Managed by",
+    "fipsGovernance": "FIPs & Governance",
+    "networkStatus": "Network Status",
+    "networkHealth": "Network Health",
+    "documentation": "Documentation",
+    "cookbook": "Cookbook",
+    "brandKit": "Brand Kit",
+    "events": "Events",
+    "grants": "Grants",
+    "bugBounty": "Security Bug Bounty",
+    "sections": {
+      "understandFilecoin": "Understand Filecoin",
+      "explore": "Explore",
+      "contribute": "Contribute",
+      "blockExplorers": "Block Explorers",
+      "networkMonitoring": "Network Monitoring",
+      "getInvolved": "Get involved",
+      "navigation": "Navigation",
+      "resources": "Resources",
+      "community": "Community"
+    },
+    "descriptions": {
+      "learn": "Understand what Filecoin is and how it works",
+      "caseStudies": "See how others are using Filecoin in the real world",
+      "buildOnFilecoin": "Start building apps on the Filecoin network",
+      "documentation": "Official documentation for Filecoin",
+      "cookbook": "Recipes for building with Filecoin and the FVM",
+      "github": "Explore Filecoin's open-source repositories",
+      "grants": "Funding opportunities to build in the ecosystem",
+      "bugBounty": "Help find vulnerabilities and get rewarded",
+      "beryx": "Explorer and API for accessing real-time data",
+      "blockscout": "Open-source explorer for FEVM smart contracts",
+      "filfox": "Explorer with rich network and storage statistics",
+      "filscan": "Explorer for blocks, deals, and addresses",
+      "communityHub": "Explore ways to contribute to the ecosystem",
+      "events": "Join meetups, hackathons, and conferences",
+      "orbit": "Become a Filecoin Orbit ambassador",
+      "fipsGovernance": "Propose, discuss, and shape future upgrades",
+      "networkStatus": "The status of the Filecoin networks",
+      "networkHealth": "Filecoin chain activity and performance"
+    }
+  },
+  "newsletterForm": {
+    "label": "Sign up for Filecoin updates",
+    "placeholder": "Your email",
+    "submitAriaLabel": "Submit newsletter subscription",
+    "emailInvalid": "Your email format is invalid",
+    "emailRequired": "Your email is required"
   }
 }
