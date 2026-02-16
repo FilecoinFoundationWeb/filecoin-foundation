@@ -32,46 +32,22 @@ describe('Blog Slug Page', () => {
     })
   })
 
-  it('should have valid metadata for published posts', () => {
-    cy.fixture('blogSlug').then((slugs: BlogSlug) => {
-      cy.task<BlogPostFrontmatter>(
-        'getEntryFrontmatter',
-        `${ENGLISH_CONTENT_FOLDER}/${slugs.published}`,
-      ).then((frontmatter) => {
-        const { title, seo, excerpt } = frontmatter
-        const seoTitle = seo?.title ?? title
-        const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
-        tests.metadata.fn({
-          path: `${BLOG_PATH}/${slugs.published}`,
-          title: metaTitleWithSuffix,
-          description: seo?.description ?? excerpt,
-          baseUrl: BASE_URL,
-        })
-      })
-    })
-  })
-
   it('should have valid metadata for any random published post', () => {
-    cy.task<string>('getRandomSlug', ENGLISH_CONTENT_FOLDER).then((slug) => {
-      cy.task<BlogPostFrontmatter & { draft?: boolean }>(
-        'getEntryFrontmatter',
-        `${ENGLISH_CONTENT_FOLDER}/${slug}`,
-      ).then((frontmatter) => {
-        if (frontmatter.draft !== true) {
-          const { title, seo, excerpt } = frontmatter
-          const seoTitle = seo?.title ?? title
-          const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
+    cy.task<string>('getRandomPublishedSlug', ENGLISH_CONTENT_FOLDER).then(
+      (slug) => {
+        cy.task<BlogPostFrontmatter>(
+          'getEntryFrontmatter',
+          `${ENGLISH_CONTENT_FOLDER}/${slug}`,
+        ).then(({ title, seo, excerpt }) => {
           tests.metadata.fn({
             path: `${BLOG_PATH}/${slug}`,
-            title: metaTitleWithSuffix,
+            title: getMetaTitleWithSuffix(seo?.title ?? title),
             description: seo?.description ?? excerpt,
             baseUrl: BASE_URL,
           })
-        } else {
-          cy.log(`Skipping draft post: ${slug}`)
-        }
-      })
-    })
+        })
+      },
+    )
   })
 })
 

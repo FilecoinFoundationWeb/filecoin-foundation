@@ -2,7 +2,7 @@ import { defineConfig } from 'cypress'
 
 import {
   getEntryFrontmatter,
-  getRandomSlug,
+  getRandomPublishedSlug,
 } from '@filecoin-foundation/cypress/tasks'
 
 export default defineConfig({
@@ -12,7 +12,7 @@ export default defineConfig({
     supportFile: false,
     setupNodeEvents(on) {
       on('task', {
-        getRandomSlug,
+        getRandomPublishedSlug,
         getEntryFrontmatter,
       })
     },
