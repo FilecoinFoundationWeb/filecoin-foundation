@@ -32,22 +32,20 @@ describe('Blog Slug Page', () => {
     })
   })
 
-  it('should have valid metadata for any random published post', () => {
-    cy.task<string>('getRandomPublishedSlug', ENGLISH_CONTENT_FOLDER).then(
-      (slug) => {
-        cy.task<BlogPostFrontmatter>(
-          'getEntryFrontmatter',
-          `${ENGLISH_CONTENT_FOLDER}/${slug}`,
-        ).then(({ title, seo, excerpt }) => {
-          tests.metadata.fn({
-            path: `${BLOG_PATH}/${slug}`,
-            title: getMetaTitleWithSuffix(seo?.title ?? title),
-            description: seo?.description ?? excerpt,
-            baseUrl: BASE_URL,
-          })
+  it(tests.metadata.prompt, () => {
+    cy.fixture('blogSlug').then((slugs: BlogSlug) => {
+      cy.task<BlogPostFrontmatter>(
+        'getEntryFrontmatter',
+        path.join(ENGLISH_CONTENT_FOLDER, slugs.published),
+      ).then(({ title, seo, excerpt }) => {
+        tests.metadata.fn({
+          path: path.join(BLOG_PATH, slugs.published),
+          title: getMetaTitleWithSuffix(seo?.title ?? title),
+          description: seo?.description ?? excerpt,
+          baseUrl: BASE_URL,
         })
-      },
-    )
+      })
+    })
   })
 })
 
