@@ -15,31 +15,70 @@ type BlogPostFrontmatter = GenericEntryFrontmatter & {
 const { entriesPath: CONTENT_FOLDER, path: BLOG_PATH } = PATHS.BLOG
 const ENGLISH_CONTENT_FOLDER = path.join(CONTENT_FOLDER, 'en')
 
+type BlogSlug = {
+  draft: string
+  published: string
+}
+
 describe('Blog Slug Page', () => {
-  it(tests.metadata.prompt, () => {
-    cy.task<string>('getRandomSlug', ENGLISH_CONTENT_FOLDER).then((slug) => {
+  it('should return 404 for draft posts', () => {
+    cy.fixture('blogSlug').then((slugs: BlogSlug) => {
+      cy.request({
+        url: `${BLOG_PATH}/${slugs.draft}`,
+        failOnStatusCode: false,
+      }).then((response) => {
+        expect(response.status).to.eq(404)
+      })
+    })
+  })
+
+  it('should have valid metadata for published posts', () => {
+    cy.fixture('blogSlug').then((slugs: BlogSlug) => {
       cy.task<BlogPostFrontmatter>(
         'getEntryFrontmatter',
-        `${ENGLISH_CONTENT_FOLDER}/${slug}`,
-      ).then(({ title, seo, excerpt }) => {
-        const seoTitle = seo?.title || title
+        `${ENGLISH_CONTENT_FOLDER}/${slugs.published}`,
+      ).then((frontmatter) => {
+        const { title, seo, excerpt } = frontmatter
+        const seoTitle = seo?.title ?? title
         const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
-
         tests.metadata.fn({
-          path: `${BLOG_PATH}/${slug}`,
+          path: `${BLOG_PATH}/${slugs.published}`,
           title: metaTitleWithSuffix,
-          description: seo?.description || excerpt,
+          description: seo?.description ?? excerpt,
           baseUrl: BASE_URL,
         })
+      })
+    })
+  })
+
+  it('should have valid metadata for any random published post', () => {
+    cy.task<string>('getRandomSlug', ENGLISH_CONTENT_FOLDER).then((slug) => {
+      cy.task<BlogPostFrontmatter & { draft?: boolean }>(
+        'getEntryFrontmatter',
+        `${ENGLISH_CONTENT_FOLDER}/${slug}`,
+      ).then((frontmatter) => {
+        if (frontmatter.draft !== true) {
+          const { title, seo, excerpt } = frontmatter
+          const seoTitle = seo?.title ?? title
+          const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
+          tests.metadata.fn({
+            path: `${BLOG_PATH}/${slug}`,
+            title: metaTitleWithSuffix,
+            description: seo?.description ?? excerpt,
+            baseUrl: BASE_URL,
+          })
+        } else {
+          cy.log(`Skipping draft post: ${slug}`)
+        }
       })
     })
   })
 })
 
 describe('Blog Post - Visual Regression', () => {
-  const BLOG_POST_SLUG = 'introducing-filecoin-onchain-cloud'
-
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn(path.join(BLOG_PATH, BLOG_POST_SLUG))
+    cy.fixture('blogSlug').then((slugs: { published: string }) => {
+      tests.visualSnapshot.fn(path.join(BLOG_PATH, slugs.published))
+    })
   })
 })

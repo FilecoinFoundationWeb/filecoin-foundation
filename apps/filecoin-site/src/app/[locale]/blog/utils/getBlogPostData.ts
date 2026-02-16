@@ -10,11 +10,11 @@ import { PATHS } from '@/constants/paths'
 import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
 export async function getBlogPostData(slug: string, locale: Locale) {
-  const data = await getBlogPostMarkdownData(slug, locale)
-  if (!isBlogPostPublished(data)) {
+  const post = await getBlogPostMarkdownData(slug, locale)
+  if (!isBlogPostPublished(post)) {
     notFound()
   }
-  return transformBlogPostData(data)
+  return transformBlogPostData(post)
 }
 
 export async function getBlogPostsData(locale: Locale) {
