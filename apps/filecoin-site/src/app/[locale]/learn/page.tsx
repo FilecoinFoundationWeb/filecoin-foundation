@@ -24,6 +24,7 @@ import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { GradientOverlay } from '@/components/GradientOverlay'
 import { Navigation } from '@/components/Navigation/Navigation'
+import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbed'
 
@@ -108,6 +109,16 @@ export default async function Learn() {
               />
             ))}
           </CardGrid>
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="dark">
+        <SectionContent
+          headingTag="h2"
+          title="How data moves through Filecoin"
+          description="Users and storage providers interact through onchain deals. The blockchain records and monitors these deals, using publicly verifiable proofs to ensure the data is correctly stored and accessible."
+        >
+          <SectionImage {...graphicsData.howDataMovesThroughFilecoin} />
         </SectionContent>
       </PageSection>
 
