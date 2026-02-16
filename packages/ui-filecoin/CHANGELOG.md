@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.7.6
+
+### Patch Changes
+
+- ba3fa25: Improve src validation for MarkdownImage
+
 ## 0.7.5
 
 ### Patch Changes
