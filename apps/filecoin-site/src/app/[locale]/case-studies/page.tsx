@@ -31,14 +31,14 @@ type CaseStudiesProps = {
 export default async function CaseStudies({ params }: CaseStudiesProps) {
   const { locale } = await params
 
-  const { featured: featuredCaseStudies, upcoming: upcomingCaseStudies } =
-    await getCaseStudiesByFeaturedStatus(locale)
+  const {
+    all: allCaseStudies,
+    featured: featuredCaseStudies,
+    upcoming: upcomingCaseStudies,
+  } = await getCaseStudiesByFeaturedStatus(locale)
 
   const metadata = await getTranslatedMetadata(PATHS.CASE_STUDIES.path)
   const t = await getTranslations(PATHS.CASE_STUDIES.path)
-
-  const hasContent =
-    featuredCaseStudies.length > 0 || upcomingCaseStudies.length > 0
 
   return (
     <>
@@ -58,8 +58,11 @@ export default async function CaseStudies({ params }: CaseStudiesProps) {
         />
       </PageSection>
 
-      {hasContent ? (
-        <CaseStudiesGrid locale={locale} />
+      {allCaseStudies.length > 0 ? (
+        <CaseStudiesGrid
+          featured={featuredCaseStudies}
+          upcoming={upcomingCaseStudies}
+        />
       ) : (
         <PageSection backgroundVariant="dark">
           <p>{t('emptyState')}</p>

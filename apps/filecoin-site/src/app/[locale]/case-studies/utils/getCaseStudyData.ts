@@ -52,6 +52,7 @@ export async function getCaseStudiesByFeaturedStatus(locale: string) {
   const allCaseStudies = await getCaseStudiesData(locale)
 
   return {
+    all: allCaseStudies,
     featured: allCaseStudies.filter((item) => item.featured),
     upcoming: allCaseStudies.filter((item) => !item.featured),
   }
