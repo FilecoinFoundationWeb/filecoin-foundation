@@ -329,5 +329,10 @@
     "submitAriaLabel": "Submit newsletter subscription",
     "emailInvalid": "Your email format is invalid",
     "emailRequired": "Your email is required"
+  },
+  "youtubeVideoEmbed": {
+    "playButton": "See how it works",
+    "loading": "Loading Video...",
+    "error": "Video Unavailable"
   }
 }

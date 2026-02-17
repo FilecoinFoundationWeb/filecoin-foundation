@@ -329,5 +329,10 @@
     "submitAriaLabel": "提交订阅",
     "emailInvalid": "邮箱格式无效",
     "emailRequired": "请输入邮箱"
+  },
+  "youtubeVideoEmbed": {
+    "playButton": "查看如何运行",
+    "loading": "加载中...",
+    "error": "视频不可用"
   }
 }
