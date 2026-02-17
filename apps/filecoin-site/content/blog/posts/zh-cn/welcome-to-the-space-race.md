@@ -25,7 +25,7 @@ title: 欢迎来到太空竞赛
 _template: blog_detail_ch
 ---
 
-[Filecoin测试网奖励计划](https://filecoin.io/blog/announcing-testnet-incentives/)将在8月24日晚上10点(3pm PT | 8月25日 6am CST)开启！在接下来的3周内，随着越来越多的存储空间竞相提交，Filecoin测试网上的矿工们将争夺高达400万FIL的奖金。在过去的一个月里，我们已经看到来自五大洲的240多名矿工准备参与——达到了1TiB/秒的封存速度（3天内封存了15个PiB）!非常感谢所有矿工帮助诊断问题，提出修复方案，并以令人兴奋的方式对网络进行压力测试。🙏
+[Filecoin测试网奖励计划](/blog/announcing-filecoin-s-testnet-incentives/)将在8月24日晚上10点(3pm PT | 8月25日 6am CST)开启！在接下来的3周内，随着越来越多的存储空间竞相提交，Filecoin测试网上的矿工们将争夺高达400万FIL的奖金。在过去的一个月里，我们已经看到来自五大洲的240多名矿工准备参与——达到了1TiB/秒的封存速度（3天内封存了15个PiB）!非常感谢所有矿工帮助诊断问题，提出修复方案，并以令人兴奋的方式对网络进行压力测试。🙏
 
 现在，是时候启动大家的引擎了。🚀为本次比赛，Lotus已经冻结代码。同时为准备开启太空竞赛将Filecoin测试网重置，我们也已[正式将 “next “分支合入 “master”](https://github.com/filecoin-project/lotus/commits/master)。`Epoch 0`将在UTC时间8月24日星期一晚上10点准时开始，genesis提前约2小时发布，让矿工们做好准备。
 
@@ -41,7 +41,7 @@ _template: blog_detail_ch
 
 Filecoin的目标是为人类的信息创造一个分布式的、高效的、强大的基础。成功实现这一目标需要一个全球矿工网络，能够展示出对客户数据的负责任管理。因此，为了获得参加太空竞赛的资格，参与的矿工必须响应竞赛机器人的存储和检索交易请求，保持**80%以上的成功率**的存储和检索交易。机器人将在竞赛启动后12-24小时内开始与成功封存扇区的矿工进行交易，并将在整个竞赛过程中持续提出交易请求。
 
-为了证明他们能够执行整个扇区生命周期（提交、升级和终止扇区），参赛者必须在比赛期间至少 *执行一次* **承诺容量扇区升级**，才有资格获得奖励。参见[Filecoin文档](https://docs.filecoin.io/mine/spacerace/#how-do-i-demonstrate-a-sector-upgrade)中的说明。
+为了证明他们能够执行整个扇区生命周期（提交、升级和终止扇区），参赛者必须在比赛期间至少 _执行一次_ **承诺容量扇区升级**，才有资格获得奖励。参见[Filecoin文档](https://docs.filecoin.io/mine/spacerace/#how-do-i-demonstrate-a-sector-upgrade)中的说明。
 
 矿工将能够在spacerace.filecoin.io仪表板中查询他们的交易成功率和扇区生命周期状态。有关规则和资格要求的更多细节，请参见[太空竞赛文档和常见问题](https://docs.filecoin.io/mine/spacerace/)。请加入[Filecoin slack](https://filecoin.io/slack)上的**#space-race**频道，了解最新的比赛动态，比赛开始后请加入**#fil-testnet**，了解网络/调试问题!
 

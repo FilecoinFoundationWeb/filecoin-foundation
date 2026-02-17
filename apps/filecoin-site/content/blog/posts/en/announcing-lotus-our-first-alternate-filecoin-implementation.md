@@ -29,7 +29,7 @@ _template: blog_detail
 
 One of our most important goals is to make the Filecoin mainnet as secure and resilient as possible. One part of our network security strategy is launching the Filecoin network with multiple implementations. Today, we are delighted to announce [**lotus**](https://github.com/filecoin-project/lotus), our first alternate Filecoin implementation.
 
-For [several months](https://filecoin.io/blog/update-2019-q2-q3/#3-roadmap-update), we have been working simultaneously toward building [**go-filecoin**](https://github.com/filecoin-project/go-filecoin), our original reference implementation, while also collaborating with other teams to build multiple implementations of the [Filecoin protocol spec](https://github.com/filecoin-project/specs/). This effort will not alter our testnet and mainnet timelines, but it will make the Filecoin mainnet more secure and resilient. **lotus** is the first of many multiple implementation announcements that are coming very soon!
+For [several months](/blog/filecoin-2019-q2-q3-update/#3-roadmap-update), we have been working simultaneously toward building [**go-filecoin**](https://github.com/filecoin-project/go-filecoin), our original reference implementation, while also collaborating with other teams to build multiple implementations of the [Filecoin protocol spec](https://github.com/filecoin-project/specs/). This effort will not alter our testnet and mainnet timelines, but it will make the Filecoin mainnet more secure and resilient. **lotus** is the first of many multiple implementation announcements that are coming very soon!
 
 Specifically, today we’re announcing:
 
@@ -40,7 +40,7 @@ Let’s dive in!
 
 ## Why multiple implementations
 
-As we’ve mentioned [elsewhere](https://filecoin.io/blog/update-2019-q2-q3/#3-roadmap-update), building a blockchain is like building a software rocket. We are working to ensure that our protocol and software implementations are secure – we have an internal protocol security team and are performing internal implementation security audits, external security audits, and more. But no matter how hard we work to protect the system and individual nodes, there is always the chance that an implementation bug might rear its head and result in adverse consequences for the network.
+As we’ve mentioned [elsewhere](/blog/filecoin-2019-q2-q3-update/#3-roadmap-update), building a blockchain is like building a software rocket. We are working to ensure that our protocol and software implementations are secure – we have an internal protocol security team and are performing internal implementation security audits, external security audits, and more. But no matter how hard we work to protect the system and individual nodes, there is always the chance that an implementation bug might rear its head and result in adverse consequences for the network.
 
 Having multiple software implementations that interoperate on the same network reduces this risk significantly. While each implementation might have its own set of bugs, it is unlikely that all implementations will have the exact same set of security issues – especially if these implementations do not share security-critical software components. Thus, launching a cryptocurrency network with multiple implementations decreases the likelihood of a catastrophic bug that can adversely affect or even take down the entire Filecoin network.
 
@@ -57,7 +57,7 @@ Because multiple implementations are so valuable for network security, resilienc
 - **Retrieval.** Retrieval clients can pay to retrieve their data from storage miners (i.e. [retrieval v0](https://filecoin-project.github.io/specs/#retrieval-v0-libp2p-services)).
 - And much more! Check out the [lotus codebase on GitHub](https://github.com/filecoin-project/lotus)!
 
-In addition to opening the **lotus** codebase, today we are also announcing the launch of the first public **lotus** development network (devnet). After setting up a **lotus** node, you can connect to the devnet and begin storing data with other nodes or start mining. Read the [Getting Started with Lotus](https://filecoin.io/blog/announcing-lotus/#getting-started-with-lotus) section below for more details.
+In addition to opening the **lotus** codebase, today we are also announcing the launch of the first public **lotus** development network (devnet). After setting up a **lotus** node, you can connect to the devnet and begin storing data with other nodes or start mining. Read the [Getting Started with Lotus](/blog/announcing-lotus-our-first-alternate-filecoin-implementation/#getting-started-with-lotus) section below for more details.
 
 A few very important notes:
 

@@ -94,7 +94,7 @@ MinerX Fellows will spend the duration of the program accepting storage and retr
 
 The economic mechanisms embedded in the Filecoin protocol ensure that network activities and stakeholders are fully aligned with the long-term health of the network. Mechanisms such as variable minting based on network growth, vesting structures, token consumption, collateral requirements and more align participant incentives and motivations with the long-term success of the network.
 
-Read our most recent technical blog post on [“Understanding Filecoin Circulating Supply”](https://filecoin.io/blog/filecoin-circulating-supply/) that aims to unpack how Filecoin tokens enter circulating supply, provides more insights on how various stakeholders take part in its economy, and sheds light on how one should approach and think about Filecoin token economics. This post should be paired by reading the paper on [Filecoin’s Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf) and the detailed mechanisms outlined in the [Filecoin Spec](https://spec.filecoin.io/#).
+Read our most recent technical blog post on [“Understanding Filecoin Circulating Supply”](/blog/understanding-filecoin-circulating-supply/) that aims to unpack how Filecoin tokens enter circulating supply, provides more insights on how various stakeholders take part in its economy, and sheds light on how one should approach and think about Filecoin token economics. This post should be paired by reading the paper on [Filecoin’s Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf) and the detailed mechanisms outlined in the [Filecoin Spec](https://spec.filecoin.io/#).
 
 ## Community
 

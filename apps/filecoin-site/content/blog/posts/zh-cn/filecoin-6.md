@@ -21,7 +21,7 @@ title: 参与在Filecoin网络上进行创建的更多途径
 _template: blog_detail_ch
 ---
 
-来自世界各地成千上万的个人和团队将精力、才华和资源投入到Filecoin中，推动Filecoin成为不断发展的互联网基础设施的重要组成部分。正如我们在过去几周的[HackFS](http://hackfs.com)中的所见所闻，这些团队在创建具有革命性的产品和服务(请查看我们的 [博客回顾](/blog/hackfs-finale/) 以了解更多信息)。仅HackFS就激发了130多个为分布式网络提供动力的项目。由协议实验室和EthGlobal共同举办的为期1个月的黑客松吸引了来自19个时区50个国家的470多名开发者。于今年夏天由[Encode Club](https://www.encode.club/)举办的为期6周的Spark University Hackathon吸引了来自全球各大高校50个团队在Filecoin上进行创建的挑战。挑战赛的获奖者将于8月31日宣布。
+来自世界各地成千上万的个人和团队将精力、才华和资源投入到Filecoin中，推动Filecoin成为不断发展的互联网基础设施的重要组成部分。正如我们在过去几周的[HackFS](http://hackfs.com)中的所见所闻，这些团队在创建具有革命性的产品和服务(请查看我们的 [博客回顾](/blog/30-days-130-projects-recognizing-new-ideas-to-power-web3//) 以了解更多信息)。仅HackFS就激发了130多个为分布式网络提供动力的项目。由协议实验室和EthGlobal共同举办的为期1个月的黑客松吸引了来自19个时区50个国家的470多名开发者。于今年夏天由[Encode Club](https://www.encode.club/)举办的为期6周的Spark University Hackathon吸引了来自全球各大高校50个团队在Filecoin上进行创建的挑战。挑战赛的获奖者将于8月31日宣布。
 
 为了保持这种势头，我们正与Web 3的其他领导者进行合作，为开发者提供更多机会来创建和展示他们的项目。这些新计划是[Filecoin Ignite](https://hub.fil.org/events/)的一部分，也是在主网启动前建立一个强大、可持续发展的Web 3社区的使命。
 

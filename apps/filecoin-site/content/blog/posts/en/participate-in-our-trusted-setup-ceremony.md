@@ -28,7 +28,7 @@ title: Participate in our trusted setup ceremony
 _template: blog_detail
 ---
 
-As you may have seen in our [recent update](https://filecoin.io/blog/update-2019-q2-q3/), the Filecoin team is gearing up to launch our testnet in December 2019 and mainnet in March 2020. Prior to launch, we need to conduct a secure trusted setup ceremony (read more about this below). We are seeking volunteers to participate in our trusted setup ceremony and to help us get Filecoin securely off the ground.
+As you may have seen in our [recent update](/blog/filecoin-2019-q2-q3-update/), the Filecoin team is gearing up to launch our testnet in December 2019 and mainnet in March 2020. Prior to launch, we need to conduct a secure trusted setup ceremony (read more about this below). We are seeking volunteers to participate in our trusted setup ceremony and to help us get Filecoin securely off the ground.
 
 **If you already know you’d like to participate in the ceremony, you can fill out** [**this form**](https://forms.gle/sHVYrqMZ8u4Dg1vW7) **directly. Otherwise, read on for more details.**
 
@@ -56,7 +56,6 @@ We are still finalizing details for Phase 2 of the ceremony. Here is an overview
 
 1. First, you will download the latest verified version of the data (\~60 GB).
 2. Next, you will run the specified software on the data. _Note: Compute time is variable depending on your machine’s hardware specs. For reference, we’re including our sample hardware and computation time:_
-
    - RAM: 16GB
    - Processor: AMD Ryzen 1950X (32 thread, 3.5ghz)
    - Number of cores: 16

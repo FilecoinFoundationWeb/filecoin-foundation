@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 经过数年的努力，Filecoin主网正式上线！🚀 正如我们上周分享的那样，对于整个社区来说，主网启动是整个社区共同努力多年的精彩里程碑。现在Filecoin上有超过100个可用的应用程序和工具，有600TiB的存储交易不断提高Filecoin的容量，还有正以超过500TiB/每小时的速度在增长的近7️⃣0️⃣0️⃣ PiB的存储容量。
 
-除了Filecoin高质量的奖励、长期的数据存储和完善的激励机制之外，令Filecoin与众不同的是集成了分布式存储层的**蓬勃生态**。从[Filecoin网络的ConsenSys的组件](https://filecoin.io/blog/filecoin-ethereum-community/)到[Filecoin 档案库](https://twitter.com/juanbenet/status/1319375340196646913)，通过互联网资料库[帮助IPFS社区中的贡献者们](https://www.youtube.com/embed/FHqtIX4FPP4)——他们通过令人印象深刻的社区为Filecoin的成功助力。感谢大家！
+除了Filecoin高质量的奖励、长期的数据存储和完善的激励机制之外，令Filecoin与众不同的是集成了分布式存储层的**蓬勃生态**。从[Filecoin网络的ConsenSys的组件](/blog/bridging-the-filecoin-and-ethereum-communities/)到[Filecoin 档案库](https://twitter.com/juanbenet/status/1319375340196646913)，通过互联网资料库[帮助IPFS社区中的贡献者们](https://www.youtube.com/embed/FHqtIX4FPP4)——他们通过令人印象深刻的社区为Filecoin的成功助力。感谢大家！
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FHqtIX4FPP4" allowfullscreen></iframe>
 
@@ -105,7 +105,7 @@ Filecoin是一种全新的区块链挖矿。除了维护对公链的共识和状
 
 最重要的是Filecoin存储用户的多样化社区使分布式存储网络更加多姿多彩。Filecoin用户将人类信息社会最重要的数据集存储在Filecoin上，并通过具有弹性的全球存储网络来保存这些数据，不然其中的许多数据容易丢失或维护成本高昂。通过多个项目和计划以及协作，数百名个人和组织正共同致力于将重要的数据集保存在Web3新型分布式存储层上。
 
-我们的社会每天会产生2.5乘10的18次方个字节的数据，包括2940亿封电子邮件、640亿条WhatsApp消息、5亿条推文、检测数据、传感器数据等等。尽管这些数据中的很多被保存、分析和以其他方式使用， 但社会中产生数据的90%以上都会被常规丢弃。这仅仅是个开始，Filecoin成为其中一些极有价值的数据集提供存储，否则这些数据可能会被丢失。通过[Filecoin Discover项目](https://filecoin.io/blog/intro-filecoin-discover/)，在过去的几个月内，我们通过Filecoin上数百名矿工对3PB的重要公共数据进行了访问，其中这些数据包括维基百科、谷歌实景、1000Genomes、Arxiv.org、OpenNeuro等等。
+我们的社会每天会产生2.5乘10的18次方个字节的数据，包括2940亿封电子邮件、640亿条WhatsApp消息、5亿条推文、检测数据、传感器数据等等。尽管这些数据中的很多被保存、分析和以其他方式使用， 但社会中产生数据的90%以上都会被常规丢弃。这仅仅是个开始，Filecoin成为其中一些极有价值的数据集提供存储，否则这些数据可能会被丢失。通过[Filecoin Discover项目](/blog/introducing-filecoin-discover/)，在过去的几个月内，我们通过Filecoin上数百名矿工对3PB的重要公共数据进行了访问，其中这些数据包括维基百科、谷歌实景、1000Genomes、Arxiv.org、OpenNeuro等等。
 
 通过[Filecoin Slingshot](https://slingshot.filecoin.io/)之类的计划，社区成员已经存储了700 TB以上的通过知识共享许可协议的播客、音乐专辑、[程序包管理](https://github.com/filecoin-project/slingshot/pull/128/files)、[生物多样性数据集](https://github.com/filecoin-project/slingshot/pull/188/files)、[天文数据](https://github.com/filecoin-project/slingshot/pull/97/files)等更多在Filecoin网络上长期存储的数据。我们的存储用户社区帮助创建了一个健康、高效且价格公平的存储市场，加强了我们存储软件和完善了用户体验并让Filecoin满足存储用户需求的核心价值主张。
 

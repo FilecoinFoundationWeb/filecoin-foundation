@@ -30,7 +30,7 @@ Most questions and answers are quoted directly, some are edited for readability.
 
 **When will Space Race 2 begin?**
 
-Space Race 2 has already begun! You can learn more [in our blog post](https://filecoin.io/blog/space-race-2/).
+Space Race 2 has already begun! You can learn more [in our blog post](/blog/announcing-space-race-2/).
 
 **What percentage of sectors completed by miners in Space Race can be converted to sectors in Mainnet?**
 
@@ -102,7 +102,7 @@ Message packing is a resource allocation problem at the end of the day. Block pr
 
 **How can a new miner participate in Space Race 2 ?**
 
-There’s nothing special about participating as a new miner. For an outline of the program structure read [in our blog post](https://filecoin.io/blog/space-race-2/). To learn how to mine, head to docs.filecoin.io to get started.
+There’s nothing special about participating as a new miner. For an outline of the program structure read [in our blog post](/blog/announcing-space-race-2/). To learn how to mine, head to docs.filecoin.io to get started.
 
 **When will the “wdpost failure” be fixed?**
 

@@ -23,7 +23,7 @@ _template: blog_detail_ch
 
 _本文是[胡安](https://www.youtube.com/watch?v=ABhyJXxTnJY&feature=youtu.be)的演讲总结。_
 
-在Filecoin网络中，[Gas](https://filecoin.io/blog/filecoin-features-gas-fees/)的概念被用来衡量执行特定链上交易所需的计算资源。这些资源的成本需要被支付，这就引发出谁应该承担这些成本以及如何对消耗有限资源对交易进行优先排序做出决定等相关问题。
+在Filecoin网络中，[Gas](/blog/filecoin-features-gas-fees/)的概念被用来衡量执行特定链上交易所需的计算资源。这些资源的成本需要被支付，这就引发出谁应该承担这些成本以及如何对消耗有限资源对交易进行优先排序做出决定等相关问题。
 
 例如，一种方法可能是进行首价拍卖。在系统中，希望在区块链上执行交易的操作者向区块矿工提交竞价。然后，当矿工将相关交易打包入区块时，矿工将这些出价作为费用收取。鉴于区块的大小或区块所能消耗的交易的Gas有上限，矿工会对交易进行优先排序，以便优化他们收取的费用。
 

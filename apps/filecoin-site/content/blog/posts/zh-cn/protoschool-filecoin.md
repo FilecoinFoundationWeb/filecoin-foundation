@@ -23,7 +23,7 @@ title: 协议学院(ProtoSchool)推出Filecoin教程
 _template: blog_detail_ch
 ---
 
-Filecoin最具特色的功能之一是其可验证的存储方式。在最近的[博客更新](https://filecoin.io/blog/filecoin-features-verifiable-storage/)中，我们总结了Filecoin如何结合共识机制和加密证明结构来实现分布式存储，从而使客户能够信任矿工正在按照约定存储他们的数据。
+Filecoin最具特色的功能之一是其可验证的存储方式。在最近的[博客更新](/blog/filecoin-features-verifiable-storage/)中，我们总结了Filecoin如何结合共识机制和加密证明结构来实现分布式存储，从而使客户能够信任矿工正在按照约定存储他们的数据。
 
 ## 在协议学院(ProtoSchool)探索Filecoin知识
 

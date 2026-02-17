@@ -60,7 +60,7 @@ _template: blog_detail_ch
 
 ## 3. 路线图更新
 
-在上一次[重大更新中](https://filecoin.io/blog/update-2018-q3-q4/#2-filecoin-project-roadmap-update)，我们宣布了对[路线图](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/)的一些修订。目前我们对路线图进行了又一次修订，以包括最近取得的进展和最新的上线日期。
+在上一次[重大更新中](/blog/filecoin-2018-q3-q4-update/#2-filecoin-project-roadmap-update)，我们宣布了对[路线图](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/)的一些修订。目前我们对路线图进行了又一次修订，以包括最近取得的进展和最新的上线日期。
 
 到目前为止，在2019年，我们取得了以下进展 🎉🎉🎉：
 
@@ -112,7 +112,7 @@ _template: blog_detail_ch
 
 - **🏇 存储市场协议的实现。** 我们要求矿工定期提交PoSt证明，以确保他们一直在正确存储客户的数据。如果发现他们有过错 - 即如果他们没有及时提交所需的信息 - 他们将受到处罚。故障处理和罚款对于确保Filecoin系统的可验证存储至关重要。我们已对延迟或不正确的PoSt提交（存储市场协议的重要部分）实施了故障处理和处罚措施。
 - **🤝 交易争议解决。** 我们使用支付渠道来让（存储和检索）客户向（存储和检索）矿工进行支付。如果存储矿工在某项存储交易中发生故障，则客户可以提出“索赔”，称该交易已被破坏。如果协议发现交易确实中断，则支付渠道将被取消，矿工的一部分资金将被削减。这种纠纷解决机制使用片段包含证明来显示特定数据是否存储在矿机上。我们实行了交易纠纷解决方案，并能够使用片段包含证明（PIPs）来取消付款渠道（有关PIPs的更多信息，请参见文章 4.2 部分 [**rust-fil-proofs** 更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/#42-%E5%BC%80%E5%8F%91%E6%9B%B4%E6%96%B0--rust-fil-proofs)）。
-- **🔗 _时空证明_的部署。** 我们已将_时空证明_(PoSt)证明过程部署到 **go-filecoin** 代码库中。矿工现在定期计算获得可继续存储的证明,并将这些证明发布到链上。一旦完成PoSt构建,部署最终的PoSt将非常简单。
+- **🔗 *时空证明*的部署。** 我们已将*时空证明*(PoSt)证明过程部署到 **go-filecoin** 代码库中。矿工现在定期计算获得可继续存储的证明,并将这些证明发布到链上。一旦完成PoSt构建,部署最终的PoSt将非常简单。
 - **🌳 网络升级。** 为了给将长期运行的 alphanet 和测试网做准备，我们一直在为顺利的网络升级奠定基础。一些实现该目标的工作包括实现能够命名网络，让节点检查网络名称以及显示协议版本的功能。
 - **🍄 数据存储迁移。** 除了保密的客户端数据外，Filecoin 节点还在磁盘上存储其他数据，例如配置，区块，交易状态和加密密钥。随着开发的进行，我们需要一种方法来安全地更改此数据的类型和架构。我们已经设计并实现了文件系统存储库迁移，以便节点在生产环境中运行时可以无缝更新。
 - **⌛ 更快的区块链同步。** 更快的区块链同步是 Filecoin 的重要软件 UX 功能。如果没有优化的区块链同步软件，则可能需要几天的时间才能检索仅1个月历史的区块链。我们的团队朝着这个目标取得了重大进展，通过 [Graphsync](https://github.com/ipfs/go-graphsync) 的IPLD DAG遍历协议实现了更快的区块链同步。
@@ -155,7 +155,7 @@ _template: blog_detail_ch
 - **🚢 Filecoin Shipyard。** [Filecoin Shipyard](https://github.com/filecoin-shipyard) GitHub 组织包含有助于发展 Filecoin 生态系统的项目。如果有任何对 Shipyard 应有哪些特色的想法，直接在我们的论坛上发帖，主持人将为你进行设置！
 - **❤️ Filecoin开发津贴。** 我们最近启动了 [Filecoin 开发津贴计划](https://filecoin.io/grants/)！每个季度，我们将向提交有助于开发Filecoin生态系统的工作提案的团体/个人提供津贴。我们已经确定了项目提案的范围和开放津贴的类别。我们的下一个津贴截止日期是9月30日！[请立即申请](https://github.com/filecoin-project/devgrants#-how-to-apply)！
 - **🤝 合作:** 我们非常高兴能够支持一些正在进行的合作。
-  - **和以太坊基金会的VDF研究。** 正如我们在[此博客文章](https://filecoin.io/blog/collaboration-on-vdfs/)中宣布的那样，我们正在与以太坊基金会合作，共同研究VDF的硬件加速研究。尽管我们目前在Filecoin对安全性要求高的应用程序中均未使用VDF，但我们将来可能会使用。为了我们和整个行业，我们希望确保VDF易于理解和安全。
+  - **和以太坊基金会的VDF研究。** 正如我们在[此博客文章](/blog/collaboration-with-the-ethereum-foundation-on-vdfs/)中宣布的那样，我们正在与以太坊基金会合作，共同研究VDF的硬件加速研究。尽管我们目前在Filecoin对安全性要求高的应用程序中均未使用VDF，但我们将来可能会使用。为了我们和整个行业，我们希望确保VDF易于理解和安全。
   - **Coinlist SNARK 挑战赛。** 正如我们在[这里](https://filecoin.io/blog/announcing-the-snark-challenge/)宣布的那样，我们很荣幸赞助最近结束的Coinlist SNARK挑战赛。挑战赛的总冠军使Groth16 SNARK证明者的速度提高了3.6倍，并已将其解决方案开源（[在此](https://github.com/CodaProtocol/gpu-groth16-prover-3x)处可见）。
   - **斯坦福区块链中心。** 我们很荣幸能成为[斯坦福区块链中心](https://cbr.stanford.edu/sbc19/)的持续合作伙伴，包括作为今年初举行的斯坦福区块链会议的赞助商。
   - 我们已迫不及待能够通过Filecoin Research，Filecoin开发津贴计划和Filecoin Shipyard开始更多的合作！

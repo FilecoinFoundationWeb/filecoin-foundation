@@ -32,7 +32,7 @@ Today, we are excited to announce two additional implementations of the Filecoin
 
 ## The importance of multiple implementations
 
-As we first mentioned in [this blog post](https://filecoin.io/blog/announcing-lotus/), launching the Filecoin network with multiple implementations is a key part of our network security strategy. Having multiple software implementations that interoperate on the same network reduces the risk that a significant bug in _one_ implementation rears its head and takes down the entire network.
+As we first mentioned in [this blog post](/blog/announcing-lotus-our-first-alternate-filecoin-implementation/), launching the Filecoin network with multiple implementations is a key part of our network security strategy. Having multiple software implementations that interoperate on the same network reduces the risk that a significant bug in _one_ implementation rears its head and takes down the entire network.
 
 Additionally, the success of any open source project – such as Filecoin – rests on a strong community that is collectively involved in building and stewarding the project. Ultimately, Protocol Labs will be just one of **many** parties devoting their energy, talent, and resources to making Filecoin an important building block of the internet’s evolving infrastructure. We are very excited to see the exceptional teams of ChainSafe and Soramitsu building implementations and providing more security to the broader Filecoin ecosystem.
 

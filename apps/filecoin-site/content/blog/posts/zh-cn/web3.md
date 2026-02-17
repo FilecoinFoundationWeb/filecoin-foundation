@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 今天，我们很高兴地宣布推出创建Web3视频系列，来献给这些技术专家、团队和有远见的人，他们通过为Web3世界创建有价值的工具和服务，对现在及未来产生了深远的影响。在接下来的几个月里，该系列将展示创建者们是如何将这些前所未有的协议、应用程序和服务变为现实。
 
-Web3的创建系列的[第一个视频](https://www.youtube.com/watch?v=d1kpID1LSRE)的主角是[Textile](http://textile.io)。4月，我们在博客上[介绍](/blog/community-andrew-hill-textile/)了Textile联合创始人Andrew Hill。此后，Textile推出了Powergate，这是一项将IPFS和Filecoin存储无缝结合的技术；Textile Hub，这是一个连接和扩展IPFS、libp2p和Filecoin的开发者库和服务的集成；User Mailbox API，这是一个用于web3应用进行安全消息传递的API。Textile的开发工具组件以简洁的方式抽象出复杂的协议功能和交互。这些工具允许开发人员利用web3协议（如libp2p、IPFS和Filecoin）进行试验并进行有意义的体验。像Slate和[许多其他](https://filecoin.io/blog/hackfs-finale/)这样的用户应用都使用 Textile 的工具在 Filecoin 网络上快速创建基于 web3 的产品和服务。
+Web3的创建系列的[第一个视频](https://www.youtube.com/watch?v=d1kpID1LSRE)的主角是[Textile](http://textile.io)。4月，我们在博客上[介绍](/blog/community-andrew-hill-textile/)了Textile联合创始人Andrew Hill。此后，Textile推出了Powergate，这是一项将IPFS和Filecoin存储无缝结合的技术；Textile Hub，这是一个连接和扩展IPFS、libp2p和Filecoin的开发者库和服务的集成；User Mailbox API，这是一个用于web3应用进行安全消息传递的API。Textile的开发工具组件以简洁的方式抽象出复杂的协议功能和交互。这些工具允许开发人员利用web3协议（如libp2p、IPFS和Filecoin）进行试验并进行有意义的体验。像Slate和[许多其他](/blog/30-days-130-projects-recognizing-new-ideas-to-power-web3/)这样的用户应用都使用 Textile 的工具在 Filecoin 网络上快速创建基于 web3 的产品和服务。
 
 在Web3的创建系列视频的首集中，Andrew Hill强调了Textile的起源和专注于开发者工具的灵感:
 

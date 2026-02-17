@@ -21,7 +21,7 @@ share_image: /uploads/fil-implementations.webp
 title: Filecoin实施方案过程更新
 ---
 
-Filecoin的启动目标之一[一直是](https://filecoin.io/blog/announcing-lotus/#why-multiple-implementations)拥有多个独立的协议实施方案来帮助保护网络安全。本次更新详细介绍了最近在实施方案方面的进展以及四个主要实施方案的下一步计划：由Chainsafe开发的[Forest](https://github.com/ChainSafe/forest)、Soramitsu开发的[Fuhon](https://github.com/filecoin-project/cpp-filecoin)、IPFSForce开发的[Venus (之前叫做go-filecoin)](https://github.com/filecoin-project/venus)以及协议实验室创建的[Lotus](https://github.com/filecoin-project/lotus)。
+Filecoin的启动目标之一[一直是](/blog/announcing-lotus-our-first-alternate-filecoin-implementation/#why-multiple-implementations)拥有多个独立的协议实施方案来帮助保护网络安全。本次更新详细介绍了最近在实施方案方面的进展以及四个主要实施方案的下一步计划：由Chainsafe开发的[Forest](https://github.com/ChainSafe/forest)、Soramitsu开发的[Fuhon](https://github.com/filecoin-project/cpp-filecoin)、IPFSForce开发的[Venus (之前叫做go-filecoin)](https://github.com/filecoin-project/venus)以及协议实验室创建的[Lotus](https://github.com/filecoin-project/lotus)。
 
 ## Forest
 

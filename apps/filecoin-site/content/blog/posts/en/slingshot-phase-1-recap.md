@@ -37,7 +37,7 @@ Phase 1 of the Slingshot competition ran for four weeks, and culminated with the
 
 ## Celebrating Phase 1
 
-To kick off the Closing Ceremony, Filecoin Product Lead Pooja Shah recapped what happened in the 4 weeks of the Phase 1 competition. The Filecoin network itself underwent massive changes, including a successful [mainnet launch](https://filecoin.io/blog/journey-to-liftoff/), five community-led [Filecoin Improvement Proposals](https://github.com/filecoin-project/FIPs), and the network continuing to scale to more than 675PiB of storage capacity.
+To kick off the Closing Ceremony, Filecoin Product Lead Pooja Shah recapped what happened in the 4 weeks of the Phase 1 competition. The Filecoin network itself underwent massive changes, including a successful [mainnet launch](/blog/the-journey-to-filecoin-mainnet-liftoff/), five community-led [Filecoin Improvement Proposals](https://github.com/filecoin-project/FIPs), and the network continuing to scale to more than 675PiB of storage capacity.
 
 To celebrate the network’s launch and achievements, the community put together [Filecoin Liftoff Week](https://liftoff.filecoin.io/), an event gathering over 80 panelists to talk about Filecoin and related topics, from the technical details and development process to current and future applications and everything in between. You can stream all of the sessions [on the Filecoin Liftoff website](https://liftoff.filecoin.io/#mainTrack)!
 

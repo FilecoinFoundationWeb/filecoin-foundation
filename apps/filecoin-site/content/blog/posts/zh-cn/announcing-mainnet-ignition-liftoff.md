@@ -25,8 +25,8 @@ _template: blog_detail_ch
 
 在过去的几个月中，Filecoin网络取得了惊人的进步：
 
-1. **🛠 核心协议功能**。8月，我们完成主网证明[可信配置的第二阶段](https://filecoin.io/blog/trusted-setup-complete/)、与Cloudflare和以太坊等合作伙伴一起推出了[drand主网](https://filecoin.io/blog/distributed-randomness-and-leader-elections/)、发布了[对Filecoin加密经济深度解读的文章](https://filecoin.io/blog/introducing-the-filecoin-economy/)，并交付了全功能的，可用于主网启动的Filecoin实现[lotus 0.5.0](https://github.com/filecoin-project/lotus/releases/tag/v0.5.0)——不仅支持存储挖矿，还支持存储和检索交易。
-2. **👨‍👩‍👧‍👦 生态发展**。目前有至少85个组织正在Filecoin网络上进行协作——创建应用程序、开发者工具、基础设施等等。[Filecoin点燃计划](https://hub.fil.org/events/)黑客松系列活动和加速器吸引了成千上万的社区成员参与，他们在Filecoin网络上学习、构建和启动他们的的项目。活动包括[HackFS黑客松](https://hackfs.com/)（由EthGlobal主办）、[Spark University黑客松](https://filecoin.io/blog/spark-challenge-two/)（由En\[code\] Club主办）、[阿波罗](https://gitcoin.co/hackathon/filecoin/onboard) (由Gitcoin主办)和[Filecoin Launchpad](https://tachyon.xyz/) (由Tachyon主办)——共同在Filecoin上培育了230多个新项目以及1000多名才华横溢的开发者。
+1. **🛠 核心协议功能**。8月，我们完成主网证明[可信配置的第二阶段](/blog/trusted-setup-complete/)、与Cloudflare和以太坊等合作伙伴一起推出了[drand主网](/blog/filecoin-features-distributed-randomness-leader-elections/)、发布了[对Filecoin加密经济深度解读的文章](/blog/introducing-the-filecoin-economy/)，并交付了全功能的，可用于主网启动的Filecoin实现[lotus 0.5.0](https://github.com/filecoin-project/lotus/releases/tag/v0.5.0)——不仅支持存储挖矿，还支持存储和检索交易。
+2. **👨‍👩‍👧‍👦 生态发展**。目前有至少85个组织正在Filecoin网络上进行协作——创建应用程序、开发者工具、基础设施等等。[Filecoin点燃计划](https://hub.fil.org/events/)黑客松系列活动和加速器吸引了成千上万的社区成员参与，他们在Filecoin网络上学习、构建和启动他们的的项目。活动包括[HackFS黑客松](https://hackfs.com/)（由EthGlobal主办）、[Spark University黑客松](/blog/spark-university-hackathon-winners-challenge-two/)（由En\[code\] Club主办）、[阿波罗](https://gitcoin.co/hackathon/filecoin/onboard) (由Gitcoin主办)和[Filecoin Launchpad](https://tachyon.xyz/) (由Tachyon主办)——共同在Filecoin上培育了230多个新项目以及1000多名才华横溢的开发者。
 3. **📑 存储用户**。作为[太空竞赛:Slingshot](https://slingshot.filecoin.io/)的一份子，许多存储用户已经在Filecoin网络上落地——包括Slate这样的用户，允许其用户和应用程序存储和检索文件。这些用户基于Filecoin开发者API和像Fleek’s Storage Daemon、[Textile的Powergate](https://docs.textile.io/powergate/)和[Pinata即将推出的由IPFS支持的Filecoin检索服务](https://docs.filecoin.io/build/filecoin-pinning-services/)这样的工具上进行创建。
 4. **⛏ 存储矿工**。在过去的四周内，横跨六大洲34个国家和地区的400多个矿工将**325+PiB的存储容量**上传至Filecoin网络。这足以容纳9000万部1080p的电影、1400多份维基百科副本或人类社会自古以来所有书面作品的7倍。这的确是一个非凡的成就。互联网历史上从未有一个社区可以协调地在一个无信任分布式存储网络中有如此大的存储容量。🙇‍♀️
 
@@ -52,7 +52,7 @@ _template: blog_detail_ch
 
 在过去的一个月中，整个Filecoin生态完全专注于太空竞赛-我们的多赛道测试网奖励比赛。这是Filecoin项目对网络进行调整和升级来为主网启动做准备的关键阶段——整个生态通过大规模的实时压力测试来积累有价值的知识和运营经验。在整场太空竞赛中，超过500名矿工在 Orbital Burn 中落地了超过325PiB的存储，其中有265个用户应用程序在[Slingshot](https://slingshot.filecoin.io/)中进行了超过40,000次存储和检索交易，并共同对网络的功能、安全性和弹性进行了全面的测试。
 
-我们很高兴能够基于太空竞赛的坚实基础来启动Filecoin网络。大家投入了大量的工作（人力和机器！）来增加存储容量，来使得Filecoin网络更安全并且更分布式。早期矿工投入了大量资金来查找漏洞、积累运营知识以及为网络投入大量封装和存储硬件奠定基础。太空竞赛测试网将继续运行，并在接下来的3周内通过协议升级和状态转换逐步进入主网，而不是从头开始进行设置（这样会失去所有存储容量）。在主网启动后，我们仍然需要进行一些改进和状态转换的工作，但是我们会将其构建在链的升级中而不是硬性重置。如果您是矿工并想加入 Filecoin网络，[第二轮太空竞赛: Orbital Burn](https://filecoin.io/blog/space-race-2/)是您现在开始的最佳途径！
+我们很高兴能够基于太空竞赛的坚实基础来启动Filecoin网络。大家投入了大量的工作（人力和机器！）来增加存储容量，来使得Filecoin网络更安全并且更分布式。早期矿工投入了大量资金来查找漏洞、积累运营知识以及为网络投入大量封装和存储硬件奠定基础。太空竞赛测试网将继续运行，并在接下来的3周内通过协议升级和状态转换逐步进入主网，而不是从头开始进行设置（这样会失去所有存储容量）。在主网启动后，我们仍然需要进行一些改进和状态转换的工作，但是我们会将其构建在链的升级中而不是硬性重置。如果您是矿工并想加入 Filecoin网络，[第二轮太空竞赛: Orbital Burn](/blog/announcing-space-race-2/)是您现在开始的最佳途径！
 
 ## 主网启动倒计时
 

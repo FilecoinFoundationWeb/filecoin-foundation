@@ -24,9 +24,9 @@ title: "Meet the HackFS Teams Vol. 2: Kazan, Parcel, EduVault"
 _template: blog_detail
 ---
 
-_Welcome to the seventh installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network. We hope this post,_ [_as well as others_](https://filecoin.io/blog/community-jonathan-schwartz-owl/) _in this series, inspires you to join the movement and build world-class tools for the distributed web._
+_Welcome to the seventh installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network. We hope this post,_ [_as well as others_](/blog/jonathan-schwartz-open-work-labs/) _in this series, inspires you to join the movement and build world-class tools for the distributed web._
 
-Last week we [highlighted](https://filecoin.io/blog/meet-the-hackfs-teams-vol-1/) OMO Earth, Pygate, Unchained Index, and Padlock – four bootstrapping teams taking part in [HackFS](https://hackfs.com/), a month-long hackathon co-hosted by Protocol Labs and [ETH Global](https://ethglobal.co/), designed to showcase the power of Web3. This week, we talked to three more teams to learn more about their work, how they got involved with HackFS and why they’re building on Filecoin.
+Last week we [highlighted](/blog/meet-the-hackfs-teams-vol-1/) OMO Earth, Pygate, Unchained Index, and Padlock – four bootstrapping teams taking part in [HackFS](https://hackfs.com/), a month-long hackathon co-hosted by Protocol Labs and [ETH Global](https://ethglobal.co/), designed to showcase the power of Web3. This week, we talked to three more teams to learn more about their work, how they got involved with HackFS and why they’re building on Filecoin.
 
 ## Team: [Kazan](https://github.com/samikshan/kazan)
 

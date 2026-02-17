@@ -27,11 +27,11 @@ title: Filecoin roadmap update February 2020
 _template: blog_detail
 ---
 
-In this blog post, we cover recent progress since launching Testnet Phase 1 and updated roadmap information about Testnet Phase 2 and mainnet launch. Please review our [Roadmap Update Q4 2019](https://filecoin.io/blog/roadmap-update-2019-q4/) and [Testnet Phase 2 Update](https://filecoin.io/blog/testnet-phase-2-update/) (in that order) for additional context.
+In this blog post, we cover recent progress since launching Testnet Phase 1 and updated roadmap information about Testnet Phase 2 and mainnet launch. Please review our [Roadmap Update Q4 2019](/blog/filecoin-roadmap-update-q4-2019/) and [Testnet Phase 2 Update](https://filecoin.io/blog/testnet-phase-2-update/) (in that order) for additional context.
 
 ## Where we are now
 
-As a reminder, we [launched Testnet Phase 1](https://filecoin.io/blog/filecoin-testnet-is-live/) on December 11, 2019. As of this writing, the testnet has **3.6PiB+** of proven storage capacity. While we expect the Filecoin mainnet to be several orders of magnitude larger, this is a great start! Let’s keep growing the network!
+As a reminder, we [launched Testnet Phase 1](/blog/filecoin-testnet-is-live/) on December 11, 2019. As of this writing, the testnet has **3.6PiB+** of proven storage capacity. While we expect the Filecoin mainnet to be several orders of magnitude larger, this is a great start! Let’s keep growing the network!
 
 ![Recent screenshot of Filecoin testnet stats dashboard](/blog/testnet-stats-feb-2020.jpg)
 
@@ -63,7 +63,7 @@ Since launching Testnet Phase 1 two months ago, we have made significant progres
 
 As a reminder, our next major milestones are:
 
-- **Testnet Phase 2:** Our second phase of testnet will launch with _multiple secure, interoperable implementations_. From our [last roadmap update](https://filecoin.io/blog/roadmap-update-2019-q4/), “Testnet Phase 2 will mark a feature freeze and be a **minimum two-month period** of formal testing, validation, and security audits. As a reminder, our most critical requirement for mainnet launch is that Filecoin is secure; we will not launch an insecure network. If we discover any critical security issues, we may extend this phase.” We will also launch a number of **ecosystem initiatives** during Testnet Phase 2, including the next phase of our trusted setup ceremony.
+- **Testnet Phase 2:** Our second phase of testnet will launch with _multiple secure, interoperable implementations_. From our [last roadmap update](/blog/filecoin-roadmap-update-q4-2019/), “Testnet Phase 2 will mark a feature freeze and be a **minimum two-month period** of formal testing, validation, and security audits. As a reminder, our most critical requirement for mainnet launch is that Filecoin is secure; we will not launch an insecure network. If we discover any critical security issues, we may extend this phase.” We will also launch a number of **ecosystem initiatives** during Testnet Phase 2, including the next phase of our trusted setup ceremony.
 - **Mainnet launch:** We will have a one-month launch window to complete launch preparations and launch the Filecoin mainnet.
 
 Our team is firing on all cylinders as we gear up for Testnet Phase 2 launch. While we are working to launch Testnet Phase 2 and mainnet as soon as possible, **we have the responsibility to ensure that Filecoin will be secure at launch.** Our teams need some additional time to complete protocol development, cross-implementation interop, internal protocol security audit, and refine our cryptoeconomic constructions.

@@ -45,7 +45,7 @@ Most questions and answers are quoted directly; some are edited for readability.
 
 _Safety and security of the Filecoin protocol, implementations, and network is our top priority. We will not launch Filecoin until we are convinced it is safe._
 
-_You can see our most recent_ [_Roadmap Update_](https://filecoin.io/blog/roadmap-update-april-2020/) _for more information on launch estimates. Note: These are **estimates**; mainnet launch is **not scheduled yet**. We will announce on our blog when we have a final launch date._
+_You can see our most recent_ [_Roadmap Update_](/blog/filecoin-roadmap-update-april-2020/) _for more information on launch estimates. Note: These are **estimates**; mainnet launch is **not scheduled yet**. We will announce on our blog when we have a final launch date._
 
 **What is the current interop status of two interoperable filecoin implementations, filecoin & Lotus?** _Go-filecoin and Lotus are currently interoperating on Testnet Phase 2. We discover issues as they turn up, and patch them, but they are currently fully interoperable._
 
@@ -68,7 +68,7 @@ _Cheating is solved by a network of incentives:_
 
 **NetworkBaseLine setting is critical. What kind of criteria are being considered? e.g. how long do you expect the network could achieve a defined target?** _A lot is going into it and we will finalize network parameters on a later date. It’s great for us to see baseline running in testnet and block reward has 7x since testnet launch! We hope you find it encouraging too._
 
-**When will the details of the cryptoeconomics be released?** _We published a_ [_blog post_](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/) _describing the overall cryptoeconomic structure. Many of these mechanisms are already in testnet and we encourage you to experiment with them! We hope to write up more detailed descriptions of each mechanism on a later date. Parameters will only be finalized after all core mechanisms are completed and tested._
+**When will the details of the cryptoeconomics be released?** _We published a_ [_blog post_](/blog/filecoin-s-cryptoeconomic-constructions/) _describing the overall cryptoeconomic structure. Many of these mechanisms are already in testnet and we encourage you to experiment with them! We hope to write up more detailed descriptions of each mechanism on a later date. Parameters will only be finalized after all core mechanisms are completed and tested._
 
 **When will detailed economic model parameters be determined?** _Detailed parameters will only be released after all core features are completed and tested thoroughly on testnet. Current parameters in testnet are temporary placeholders._
 
@@ -112,7 +112,7 @@ _Note that PoRep and consensus algorithms will likely change and evolve after Ma
 
 ### Other
 
-**In addition to the Filecoin Discover program, are there any other important pre-launch plans for the official launch of the main network?** We are seeing very strong ecosystem activity from a wide variety of groups that want to build on Filecoin. These groups help grow and augment each of the following primary Filecoin stakeholders: developers, clients, token holders, partners, and miners. A few exciting examples include [Textile’s Powergate Platform](https://www.youtube.com/watch?v=aiOTSkz_6aY&feature=youtu.be), [Glif web wallet](https://filecoin.io/blog/community-jonathan-schwartz-owl/), and [Starling Storage](https://starlingstorage.io/). Stay tuned for more announcements in the coming months.
+**In addition to the Filecoin Discover program, are there any other important pre-launch plans for the official launch of the main network?** We are seeing very strong ecosystem activity from a wide variety of groups that want to build on Filecoin. These groups help grow and augment each of the following primary Filecoin stakeholders: developers, clients, token holders, partners, and miners. A few exciting examples include [Textile’s Powergate Platform](https://www.youtube.com/watch?v=aiOTSkz_6aY&feature=youtu.be), [Glif web wallet](/blog/jonathan-schwartz-open-work-labs/), and [Starling Storage](https://starlingstorage.io/). Stay tuned for more announcements in the coming months.
 
 **Will you design and develop official mining software?** The Filecoin Project develops the [sector storage module](https://github.com/filecoin-project/sector-storage) which is used by both Lotus and Go-filecoin. Miner operators are free to customize or re-implement as they see fit.
 

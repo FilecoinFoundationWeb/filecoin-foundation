@@ -25,9 +25,9 @@ title: Opening the Filecoin project repos
 _template: blog_detail
 ---
 
-Today, we are excited to open several repos on GitHub, and invite everybody to join us on GitHub. Come learn about Filecoin, play with the code, and contribute to development. As described in [this prior update](https://filecoin.io/blog/update-2018-q1-q2/), we made the hard choice of starting our repos privately to avoid distractions and develop quickly. Now, we have reached [our next big milestone](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.b17ldb17wszo). If you are a developer, researcher, adventurous miner or user, or just want to support our efforts, this is an exciting time to get involved!
+Today, we are excited to open several repos on GitHub, and invite everybody to join us on GitHub. Come learn about Filecoin, play with the code, and contribute to development. As described in [this prior update](/blog/filecoin-2018-q1-q2-update/), we made the hard choice of starting our repos privately to avoid distractions and develop quickly. Now, we have reached [our next big milestone](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.b17ldb17wszo). If you are a developer, researcher, adventurous miner or user, or just want to support our efforts, this is an exciting time to get involved!
 
-Please note: Filecoin is in heavy development. Code is changing drastically day to day. At this stage, the repos, devnets, and other resources are **for development**. This release is aimed for developers, researchers, and community members who want to help _make_ Filecoin. Miners and users who seek to _use_ Filecoin will want to wait for a future release (likely, [the testnet milestone](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.b17ldb17wszo)). Read our [Getting Started Guide](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/) to find out more.
+Please note: Filecoin is in heavy development. Code is changing drastically day to day. At this stage, the repos, devnets, and other resources are **for development**. This release is aimed for developers, researchers, and community members who want to help _make_ Filecoin. Miners and users who seek to _use_ Filecoin will want to wait for a future release (likely, [the testnet milestone](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.b17ldb17wszo)). Read our [Getting Started Guide](/blog/getting-started-with-filecoin-repos-and-devnets/) to find out more.
 
 ## What is in this release
 
@@ -51,7 +51,7 @@ A few hours ago, we opened up the [Filecoin Project repos on GitHub](https://git
 - [filecoin-project/research](https://github.com/filecoin-project/research): open problems, ideas, and discussions
 - and [many more](https://github.com/filecoin-project)
 
-And, as we explain in our broader [Q3/Q4 update](https://filecoin.io/blog/update-2018-q3-q4/), there is much, much more.
+And, as we explain in our broader [Q3/Q4 update](/blog/filecoin-2018-q3-q4-update/), there is much, much more.
 
 ## Important Note
 

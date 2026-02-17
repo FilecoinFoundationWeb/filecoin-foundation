@@ -28,7 +28,7 @@ title: Testnet Phase 2 update
 _template: blog_detail
 ---
 
-As announced in our [last roadmap update](https://filecoin.io/blog/roadmap-update-2019-q4/), we’re using a [public Gantt chart](https://app.instagantt.com/shared/s/1152992274307505/latest) to maintain an updated view of our roadmap to launch. We are currently in Testnet Phase 1, and are gearing up to launch Testnet Phase 2. This blog post assumes knowledge of our milestones and what they mean; if you'd like a refresher, read more [in our blog post](https://filecoin.io/blog/roadmap-update-2019-q4/#what-s-next).
+As announced in our [last roadmap update](/blog/filecoin-roadmap-update-q4-2019/), we’re using a [public Gantt chart](https://app.instagantt.com/shared/s/1152992274307505/latest) to maintain an updated view of our roadmap to launch. We are currently in Testnet Phase 1, and are gearing up to launch Testnet Phase 2. This blog post assumes knowledge of our milestones and what they mean; if you'd like a refresher, read more [in our blog post](/blog/filecoin-roadmap-update-q4-2019/#what-s-next).
 
 ![Public Filecoin Gantt Chart](/blog/testnet-phase-2-gantt-chart.jpg)
 

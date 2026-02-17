@@ -26,7 +26,7 @@ title: Filecoin Comes to ProtoSchool
 _template: blog_detail
 ---
 
-One of Filecoin’s most distinguishing features is its approach to verifiable storage. In a recent [blog post](https://filecoin.io/blog/filecoin-features-verifiable-storage/), we summarized how Filecoin implements decentralized storage with a combination of consensus mechanisms and cryptographic proofs that allow clients to trust that miners are storing their data as agreed.
+One of Filecoin’s most distinguishing features is its approach to verifiable storage. In a recent [blog post](/blog/filecoin-features-verifiable-storage/), we summarized how Filecoin implements decentralized storage with a combination of consensus mechanisms and cryptographic proofs that allow clients to trust that miners are storing their data as agreed.
 
 ## Explore Filecoin concepts on ProtoSchool
 

@@ -85,7 +85,7 @@ We announced on September 27, weeks before mainnet launch, that mainnet would be
 
 **A few days before mainnet launch, someone was buying a large amount of testnet FILs in (the filecoin wechat) group. Did someone from the filecoin official team know that the testnet FILs will be converting to mainnet FILs and tell some of the largest miners? If not, was there a mole in the official team that cut the leek together with some outside parties?**
 
-We publicly announced on September 27, weeks before mainnet launch, that mainnet would begin as a continuation of the testnet. The Filecoin project stated in a blog post: “the Space Race testnet will keep running and graduate into the mainnet through protocol upgrades and state transitions over the next 3 weeks.” [This is the public blog post announcement](https://filecoin.io/blog/mainnet-ignition/). Everyone got the exact same information.
+We publicly announced on September 27, weeks before mainnet launch, that mainnet would begin as a continuation of the testnet. The Filecoin project stated in a blog post: “the Space Race testnet will keep running and graduate into the mainnet through protocol upgrades and state transitions over the next 3 weeks.” [This is the public blog post announcement](/blog/announcing-mainnet-ignition-liftoff/). Everyone got the exact same information.
 
 **Right now, the circulating supply in the market is already 19,000,000FILs, can the official team explain where are they from? The rumor says that it is from successful trading using testnetFIL with exchanges before mainnet(?), is this a real bug? What is the team gonna do with the extra 300,00,000FIL that comes out of nowhere?**
 

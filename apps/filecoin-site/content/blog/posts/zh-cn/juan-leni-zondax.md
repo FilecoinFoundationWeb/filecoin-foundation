@@ -22,7 +22,7 @@ title: "胡安勒尼(Juan Leni), Zondax"
 _template: blog_detail_ch
 ---
 
-_欢迎来到Filecoin社区亮点系列的第五部分，该系列主要与用户和在Filecoin网络上创建工具和服务的开发者相关。目的是激励大家为分布式网络创建世界一流的工具。查看最近发表在Open Work Labs (OWL)上的Jonathan Schwartz的_[_文章_](https://filecoin.io/blog/community-jonathan-schwartz-owl/) _，该公司目前正在研究Filecoin网络上的网页版钱包和可互操作的工具。_
+_欢迎来到Filecoin社区亮点系列的第五部分，该系列主要与用户和在Filecoin网络上创建工具和服务的开发者相关。目的是激励大家为分布式网络创建世界一流的工具。查看最近发表在Open Work Labs (OWL)上的Jonathan Schwartz的_[_文章_](/blog/jonathan-schwartz-open-work-labs/) _，该公司目前正在研究Filecoin网络上的网页版钱包和可互操作的工具。_
 
 胡安勒尼(Juan Leni)是[Zondax](https://zondax.ch/)（位于瑞士楚格的公司）的联合创始人，Zondax的咨询工作主要集中在加密学、嵌入式系统、硬件的安全模块、可信执行环境（TEE）和分布式账本技术。我们与胡安交流了Zondax在加密库、硬件钱包集成、ledger应用程序和GPU加速软件中的工作成果如何推动Filecoin主网启动。
 
