@@ -31,7 +31,8 @@
   },
   "overrides": {
     "dompurify": "^3.3.0",
-    "jsonpath-plus": "^10.3.0"
+    "jsonpath-plus": "^10.3.0",
+    "eslint": "^9.39.2"
   },
   "version": "0.0.1"
 }

@@ -64,7 +64,7 @@
   "devDependencies": {
     "@babel/core": "^7.29.0",
     "@babel/preset-react": "^7.27.1",
-    "@eslint/js": "^10.0.1",
+    "@eslint/js": "^9.39.2",
     "@filecoin-foundation/cypress": "0.0.0",
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
@@ -80,18 +80,18 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "cypress": "^15.10.0",
-    "eslint": "^10.0.0",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-only-warn": "^1.1.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.0",
-    "eslint-plugin-turbo": "^2.8.9",
+    "eslint-plugin-turbo": "^2.7.2",
     "frontmatter-markdown-loader": "^3.7.0",
     "globals": "^17.3.0",
     "postcss": "^8.5.6",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.55.0",
+    "typescript-eslint": "^8.51.0",
     "yaml-loader": "^0.9.0"
   }
 }
