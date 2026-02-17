@@ -14,6 +14,7 @@ export type SimpleCardProps = {
   badge?: {
     variant: BadgeProps['variant']
     text: BadgeProps['children']
+    textTransform?: BadgeProps['textTransform']
   }
   border?: borderVariants
   cta?: {
@@ -109,7 +110,9 @@ export function SimpleCard({
       <div className={cardInner({ border })}>
         {badge && (
           <div className="flex">
-            <Badge variant={badge.variant}>{badge.text}</Badge>
+            <Badge variant={badge.variant} textTransform={badge.textTransform}>
+              {badge.text}
+            </Badge>
           </div>
         )}
 
