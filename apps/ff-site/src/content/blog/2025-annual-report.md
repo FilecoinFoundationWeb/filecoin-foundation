@@ -536,7 +536,7 @@ Filecoin Foundation spending for fiscal year 2025.
 | Regulatory and Policy                                               | $2,072,924 | 38,352  |
 | Enablement (Legal, Finance, HR, IT, etc.)                           | $4,391,980 | 312,601 |
 | Other Operating Expenses (Insurance, Taxes, etc.)                   | $3,831,733 | 8,844   |
-| Cross-Functional Personnel                                          | 1,022,734  | 395,687 |
+| Cross-Functional Personnel                                          | 1,022,734  |395,687 |
 
 ### Learn More About Filecoin Foundation
 
