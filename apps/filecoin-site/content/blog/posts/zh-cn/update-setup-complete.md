@@ -32,7 +32,7 @@ _template: blog_detail_ch
 
 在两个多月的时间里，来自世界各地的[贡献者](https://github.com/arielgabizon/perpetualpowersoftau#ceremony-progress)参与了生成用于Filecoin证明的安全可验证参数。我们再一次对所有参与和帮助可信配置第一阶段顺利完成的人们表示衷心地感谢！
 
-![Participants](https://filecoin.io/vintage/images/blog/trusted-setup-participants.jpg)
+![Participants](/blog/trusted-setup-participants.jpg)
 
 ## 回顾第二阶段
 

@@ -61,7 +61,7 @@ Filecoin网络旨在为用户提供可靠和有用的存储。在传统的工作
 
 最后，需要注意的是，虽然区块奖励可以激励参与，但不能把它当作一种资源来利用。它是一个共同的补贴池，促进网络萌芽和发展，使经济和参与者受益。下面以经济的不同阶段不同补贴来源为例进行说明。
 
-![Chart](/vintage/images/blog/filecoin-features-block-rewards-chart.jpg)
+![Chart](/blog/filecoin-features-block-rewards-chart.jpg)
 
 ## 总结
 

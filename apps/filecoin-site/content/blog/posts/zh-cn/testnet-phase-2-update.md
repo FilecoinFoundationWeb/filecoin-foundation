@@ -28,7 +28,7 @@ _template: blog_detail_ch
 
 正如我们在[上次的路线图](https://filecoin.io/blog/roadmap-update-2019-q4/)更新中宣布的那样，我们正在使用[甘特图](https://app.instagantt.com/shared/s/1152992274307505/latest)来维护路线图的更新。目前我们处于测试网的第一阶段，并且在准备即将启动测试网的第二阶段，在这篇博客中，我们将讨论大致的时间安排和接下来的计划中的里程碑， 如果您需要回顾之前的内容，请点击[这里](https://filecoin.io/blog/roadmap-update-2019-q4/#what-s-next)阅读更多信息。
 
-[![Public Filecoin Gantt Chart](https://filecoin.io/vintage/images/blog/testnet-phase-2-gantt-chart.jpg)](https://filecoin.io/vintage/images/blog/testnet-phase-2-gantt-chart.jpg)
+![Public Filecoin Gantt Chart](/blog/testnet-phase-2-gantt-chart.jpg)
 
 测试网第二阶段是基于功能的版本上线，将与多个功能完备和可互操作的Filecoin版本一起启动。此版本的上线将着重于实现[**lotus**](https://github.com/filecoin-project/lotus)和[**go-filecoin**](https://github.com/filecoin-project/venus)之间的互操作。**lotus**和**go-filecoin**都将使用当前的证明机制、经济模型和参数。尽管协议、证明机制和节点配置都不会在第二阶段上线的时候完全确定，但已经非常接近最终版本了。
 

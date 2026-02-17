@@ -56,7 +56,7 @@ What we’re doing specifically for Filecoin is building a reputation system spe
 
 With Hubble, we currently support 9 networks like Cosmos, Tezos, and NEAR and we should be supporting around 10 to 12 by the end of Q3 of this year. And our plan is for Datahub to be available for about 10 networks by the end of this year.
 
-![Figment DataHub](https://filecoin.io/vintage/images/blog/community-figment-datahub.png)
+![Figment DataHub](/blog/community-figment-datahub.png)
 
 **Why Web3? Where do you see the web heading over the next decade?**
 

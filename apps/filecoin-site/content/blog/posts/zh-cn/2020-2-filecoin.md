@@ -31,7 +31,7 @@ _template: blog_detail_ch
 
 提醒大家，我们于2019年12月11日启动了[测试网第一阶段](https://filecoin.io/blog/filecoin-testnet-is-live/)，截至本文撰写之时，测试网已经拥有**3.6PiB+** 的存储容量。尽管我们期望Filecoin主网会更加的重量级，但这是一个很好的开端，让我们继续成长！
 
-![查看最新的Filecoin测试网数据请点击](https://filecoin.io/vintage/images/blog/testnet-stats-feb-2020.jpg)
+![查看最新的Filecoin测试网数据请点击](/blog/testnet-stats-feb-2020.jpg)
 
 自启动测试网第一阶段的两个月以来，我们为在迈向测试网第二阶段的路上取得重大进展，以下是一些要点：
 
@@ -52,7 +52,7 @@ _template: blog_detail_ch
   - **🛳️ filscan.io.** 查看[Filscan](https://filscan.io)，这是一个Filecoin测试网的区块浏览器！您可以使用Filscan来获取链的进展、查看区块内容、查看消息和每个矿工开采的区块数量以及更多信息！这是探索Filecoin网络的好方法。该项目获得了Filecoin开发者资助计划的第一批款项，我们很高兴看到这些有价值的社区资源能够在测试网上得到积极地投入应用。
   - **😎 Ledger Filecoin app.** 本周，[Zondax](https://zondax.ch/)团队推出了[正在进行中的Ledger Filecoin app的repo](https://github.com/Zondax/ledger-filecoin)。此外，Open Work Labs 正在构建一个非托管的Web钱包，该钱包集成了Ledger Filecoin的代码库，[发布的快照](https://twitter.com/openworklabs/status/1225882262291378176)显示了Ledger上Filecoin的本地版本。尽管这项工作仍在进行中，但我们为其未来的发展感到兴奋，希望很快能在Ledger上看到Filecoin!
   - **❄️ Trustwallet.** [Trustwallet合并了对Filecoin的支持](https://github.com/trustwallet/wallet-core/pull/811)。该应用程序能够在主网上线时支持Filecoin代币。
-  - **💾 更多矿工!** 本周我们看到一些挖矿团队在Filecoin主网启动之前的挖矿配置的视频和图片。请看下面的一些配置! ![Filecoin 社区挖矿平台](https://filecoin.io/vintage/images/blog/mining-rigs.jpg)
+  - **💾 更多矿工!** 本周我们看到一些挖矿团队在Filecoin主网启动之前的挖矿配置的视频和图片。请看下面的一些配置! ![Filecoin 社区挖矿平台](/blog/mining-rigs.jpg)
   - **👟 开发者资助。** 我们最近刚刚结束了[Filecoin开发者资助](https://filecoin.io/grants/)的第二批申请。非常感谢社区成员提出的富有创意的建议！我们将很快宣布资助的获得者。如果您错过了这一批，请不要担心，我们正在接受第三批申请，第三批在**2020年3月31日**截止。我们期待看到您的申请！
 
 ## 测试网第二阶段：日期更新

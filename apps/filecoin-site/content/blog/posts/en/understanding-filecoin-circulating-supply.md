@@ -44,7 +44,7 @@ Filecoin is a utility token that is meant to be used, giving token holders a rig
 
 The overarching goal for the whole economy, across miners, developers, researchers, clients, and token holders is to efficiently produce attractive storage-related goods and services that can be exported to the outside world. An economy producing more valuable goods more efficiently will lead to more demand for the goods and more demand for the networkʼs token. An increase in the purchasing power of the participants within the economy will allow them to expand and improve their operations to provide an even better, cheaper service to the world.
 
-![Filecoin Participants](https://filecoin.io/vintage/images/blog/filecoin-circulating-supply-participants.png)
+![Filecoin Participants](/blog/filecoin-circulating-supply-participants.png)
 
 ## Token Minting: Aligning the Miner Minting Curve with Network Utility
 
@@ -58,9 +58,9 @@ Unlike most other blockchain networks, Filecoin has innovatively adopted a [dual
 
 As such, effective token minting from mining is in the hands of the community and falls anywhere between the two lines in Figure 1. Figure 2 provides a sense of how much the network needs to grow to hit maximum minting. While the community may come together to update the baseline of the network, hitting the baseline requires competitive collaboration among all stakeholders, researchers, miners, developers, token holders, ecosystem partners, and storage clients.
 
-_![](https://filecoin.io/vintage/images/blog/filecoin-circulating-supply-minting.png)Figure 1: Maximum and Minimum Minting from Storage Mining._
+_![](/blog/filecoin-circulating-supply-minting.png)Figure 1: Maximum and Minimum Minting from Storage Mining._
 
-_![](https://filecoin.io/vintage/images/blog/filecoin-circulating-supply-baseline.png)Figure 2: Network Storage Baseline for Max Baseline Minting on Log Scale._
+_![](/blog/filecoin-circulating-supply-baseline.png)Figure 2: Network Storage Baseline for Max Baseline Minting on Log Scale._
 
 More information can be found in the Filecoin spec.
 

@@ -72,7 +72,7 @@ Filecoin is a community-built network, and a healthy economy is built through co
 
 **Documentation:** Based on the challenges observed in the Calibration network, we’ve added lots of new documentation to help miners onboard smoothly. See new pages for [miner troubleshooting](https://docs.filecoin.io/mine/), [improving connectivity](https://docs.filecoin.io/mine/connectivity/), and [Space Race FAQs](https://docs.filecoin.io/mine/spacerace/#frequently-asked-questions). We also have a [whole host of great suggestions for more documentation improvements from the community](https://github.com/filecoin-project/lotus/issues/2956), so expect to see more updates here as the team works on these suggestions over the next few days. 🙏
 
-![Launch Roadster](https://filecoin.io/vintage/images/blog/launch-roadster.jpg)
+![Launch Roadster](/blog/launch-roadster.jpg)
 
 ## Space Race Events
 

@@ -29,7 +29,7 @@ jobs:
           cache: "npm"
 
       - name: Install Dependencies
-        run: npm install --prefer-offline || npm install --prefer-offline
+        run: npm ci
 
       - name: Run Asset Cleanup Scan
         id: cleanup

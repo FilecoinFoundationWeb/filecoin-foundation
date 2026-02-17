@@ -6,6 +6,7 @@ import { Icon, type IconProps } from './Icon'
 
 export type BadgeProps = {
   icon?: IconProps['component']
+  textTransform?: 'capitalize' | 'uppercase' | 'none'
   variant?: keyof typeof variantClasses
   children: string
 }
@@ -30,8 +31,14 @@ const variantClasses = {
   },
 } as const
 
-export function Badge({ icon, variant = 'primary', children }: BadgeProps) {
+export function Badge({
+  icon,
+  variant = 'primary',
+  textTransform = 'capitalize',
+  children,
+}: BadgeProps) {
   const styles = variantClasses[variant]
+  const transformedText = getTransformedText(children, textTransform)
 
   return (
     <span
@@ -45,7 +52,16 @@ export function Badge({ icon, variant = 'primary', children }: BadgeProps) {
           <Icon component={icon} size={16} />
         </span>
       )}
-      {capitalize(children)}
+      {transformedText}
     </span>
   )
+}
+
+function getTransformedText(
+  text: string,
+  transform: BadgeProps['textTransform'] = 'capitalize',
+) {
+  if (transform === 'uppercase') return text.toUpperCase()
+  if (transform === 'none') return text
+  return capitalize(text)
 }

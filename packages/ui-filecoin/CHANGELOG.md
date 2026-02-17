@@ -1,5 +1,16 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.8.0
+
+### Minor Changes
+
+- 2b1532c: Add YouTubeVideo component
+- 1b2ff8c: Add textTransform prop to Badge component with support for 'uppercase', 'capitalize', and 'none' options
+
+### Patch Changes
+
+- 24401b7: Extract onNavigate callback to NavigationMainLink for internal links only
+
 ## 0.7.6
 
 ### Patch Changes

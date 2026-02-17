@@ -30,13 +30,13 @@ _template: blog_detail_ch
 3. **📑 存储用户**。作为[太空竞赛:Slingshot](https://slingshot.filecoin.io/)的一份子，许多存储用户已经在Filecoin网络上落地——包括Slate这样的用户，允许其用户和应用程序存储和检索文件。这些用户基于Filecoin开发者API和像Fleek’s Storage Daemon、[Textile的Powergate](https://docs.textile.io/powergate/)和[Pinata即将推出的由IPFS支持的Filecoin检索服务](https://docs.filecoin.io/build/filecoin-pinning-services/)这样的工具上进行创建。
 4. **⛏ 存储矿工**。在过去的四周内，横跨六大洲34个国家和地区的400多个矿工将**325+PiB的存储容量**上传至Filecoin网络。这足以容纳9000万部1080p的电影、1400多份维基百科副本或人类社会自古以来所有书面作品的7倍。这的确是一个非凡的成就。互联网历史上从未有一个社区可以协调地在一个无信任分布式存储网络中有如此大的存储容量。🙇‍♀️
 
-![数据仪表板上的325PiB](https://filecoin.io/vintage/images/blog/ignition-stats-dashboard.jpg)
+![数据仪表板上的325PiB](/blog/ignition-stats-dashboard.jpg)
 
 ## 过渡到主网点火
 
 今天，当我们进入主网点火阶段并已经为Filecoin主网启动做好准备之际，很高兴能够与大家分享[Filecoin启动的阶段与时间表](https://app.instagantt.com/shared/s/1152992274307505/latest)。启动区块链是复杂而漫长的过程，像许多其他网络（如[波卡](https://polkadot.network/launch-roadmap/)、[NEAR](https://near.org/blog/mainnet-roadmap/)等等）一样，Filecoin采用分段式方法来启动主网，在阶段性的时间内将不同群体和社区加入到网络中直至主网启动。
 
-![启动阶段](https://filecoin.io/vintage/images/blog/mainnet-launch-process.jpg)
+![启动阶段](/blog/mainnet-launch-process.jpg)
 
 在接下来的几周内，Filecoin社区的各个群体——包括矿工、用户、托管方、应用程序、网络服务等等将在主网启动完毕之前加入网络。这个预启动阶段我们称为主网点火阶段，使网络参与者有时间进行初始化、学习、设置他们的系统和优化他们的部署。我们都在倒计时主网启动，但这并不意味着所有工作已经完成。我们依然还需进行很多准备工作以保证网络实现精彩的启动：
 
@@ -58,7 +58,7 @@ _template: blog_detail_ch
 
 我们所有努力的顶峰即将到来。Filecoin主网将在epoch 148888正式开启! 我们预期将在10月15日左右到达这个epoch，然后我们将开始一段时间的监控和解决问题来保证过渡后网络的正常运行（与预期相符）。几天之后，我们将举行**Filecoin主网启动：10月19日至10月23日为期一周的Filecoin启动活动。🚀**
 
-![Filecoin主网启动](https://filecoin.io/vintage/images/blog/mainnet-liftoff-launch.jpg)
+![Filecoin主网启动](/blog/mainnet-liftoff-launch.jpg)
 
 从尖端的密码学研究到复杂的协议设计和开发讨论，再到太空竞赛时调试实时网络期间的许多不眠之夜-我们在过去3年中共同创造了惊人的成果。启动一个区块链就像发射软件火箭一样，需要整个星际社区共同努力达到这一目标。感谢您参与这次史诗般的旅程！
 

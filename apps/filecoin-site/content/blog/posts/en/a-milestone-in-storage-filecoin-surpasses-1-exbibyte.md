@@ -38,11 +38,11 @@ To provide some context to the announcement, here are some examples of what 1 Ei
 - 685,000 years of continuous video calls
 - 19 copies of the entire Internet Archive
 
-![1 exibibye of data](https://filecoin.io/vintage/images/blog/1eib-data.png)
+![1 exibibye of data](/blog/1eib-data.png)
 
 At this 1 EiB storage milestone, the Filecoin network is a large, diverse, distributed, and innovative ecosystem of participants.
 
-![Filecoin highlights](https://filecoin.io/vintage/images/blog/1eib-highlights.png)
+![Filecoin highlights](/blog/1eib-highlights.png)
 
 The current structure of the internet is on fragile foundations. Filecoin acts as a cornerstone for critically important public information, preserving datasets such as open access scientific data, creative commons media, and historical archives. A powerful and dynamic distributed cloud storage network for your data, [Filecoin Discover](https://filecoin.io/blog/intro-filecoin-discover/) provides miners the opportunity to select datasets spanning literature, science, art, and history to store, which are all now open and accessible to the public. The catalog of open-source datasets includes; [ENCODE](https://www.encodeproject.org/), 1000 Genomes, [Project Gutenberg](https://www.gutenberg.org/), Berkeley’s Self Driving Data, as well as a copy of Wikipedia’s database.
 

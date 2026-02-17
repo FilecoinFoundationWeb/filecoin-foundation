@@ -35,7 +35,7 @@ To date, we’ve had more than 100 teams sign up for the competition, making mor
 
 Here’s where the competition stands as of 20:00 UTC Friday, September 25, two days into the competition:
 
-![](https://filecoin.io/vintage/images/blog/slingshot-week-one-stats.png)
+![](/blog/slingshot-week-one-stats.png)
 
 **Week One in Review**
 
@@ -47,12 +47,7 @@ On September 25, we held our first Slingshot Master Class, [Filecoin 101](https:
 
 We have more amazing events coming up, including more master classes, open office hours, workshops, and a series called “How We Built This” that showcases development teams and how they built their projects and/or companies.
 
-Here’s our event lineup for the upcoming week!
-\* Intro to Powergate with Andrew Hill, CEO of Textile: Monday, September 28 at 3:30pm UTC / 8:30am PT
-\* Filecoin 201 with ribasushi, Engineer at Protocol Labs: Tuesday, September 29 at 4pm UTC / 9am PT
-\* Intro to Buckets with Andrew Hill, CEO of Textile: Wednesday, September 30 at 4pm UTC / 9am PT
-\* Lotus Office Hours with the Filecoin lotus team: Wednesday, September 30 at 5pm UTC / 10am PT
-\* How We Built Slate with Jimmy Lee, co-founder of Slate: Thursday, October 1 at 4pm UTC / 9am PT
+Here’s our event lineup for the upcoming week! \* Intro to Powergate with Andrew Hill, CEO of Textile: Monday, September 28 at 3:30pm UTC / 8:30am PT \* Filecoin 201 with ribasushi, Engineer at Protocol Labs: Tuesday, September 29 at 4pm UTC / 9am PT \* Intro to Buckets with Andrew Hill, CEO of Textile: Wednesday, September 30 at 4pm UTC / 9am PT \* Lotus Office Hours with the Filecoin lotus team: Wednesday, September 30 at 5pm UTC / 10am PT \* How We Built Slate with Jimmy Lee, co-founder of Slate: Thursday, October 1 at 4pm UTC / 9am PT
 
 **Join us!**
 

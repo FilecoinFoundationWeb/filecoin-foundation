@@ -34,7 +34,7 @@ _template: blog_detail_ch
 
 今天，Filecoin协议有**四个全节点实现**正在开发过程中，这是提高Filecoin网络安全性和发展Filecoin生态系统巨大的一步！
 
-[![Four Filecoin Implementations](https://filecoin.io/vintage/images/blog/four-implementations.png)](https://filecoin.io/vintage/images/blog/four-implementations.png)
+![Four Filecoin Implementations](/blog/four-implementations.png)
 
 尽管4个实现还没有功能完备，但它们已经非常接近实现了。正如我们在最新路线图更新中所发布的那样，我们的目标是接下来的几周内实现**lotus**和**go-filecoin**之间的网络互操作。同样，**fuhon**和**forest**的互操作也在不久之后发布。同时，您也可以在GitHub上跟踪每个版本的进度：
 

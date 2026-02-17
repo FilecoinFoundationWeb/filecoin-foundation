@@ -47,7 +47,7 @@ _It is very interesting that Filecoin builds on top of other big Protocol Labs p
 
 _There are a lot of interesting areas where it is possible to contribute, and the Zondax team is very happy to be part of this process._
 
-![Filecoin Ledger app developed by Zondax](https://filecoin.io/vintage/images/blog/filecoin-ledger.jpg) _Filecoin Ledger app developed by Zondax_
+![Filecoin Ledger app developed by Zondax](/blog/filecoin-ledger.jpg) _Filecoin Ledger app developed by Zondax_
 
 **How do you choose the crypto projects that you work with? What do you look for?**
 

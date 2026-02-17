@@ -20,7 +20,7 @@ share_image: /uploads/filecoin-economy-social.webp
 title: 解读Filecoin经济
 ---
 
-![Report Download](https://filecoin.io/vintage/images/blog/economy-report-zh-cn.png)
+![Report Download](/blog/economy-report-zh-cn.png)
 
 ## 全球云存储
 
@@ -71,7 +71,7 @@ Filecoin的使命是为人类信息打造分布式、高效且强大的基础。
 - Filecoin协议当前的经济结构和初步参数
 - 可推动网络未来发展的关键改进规划
 
-[![Report Download](https://filecoin.io/vintage/images/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)[![Report Download](https://filecoin.io/vintage/images/blog/economy-report-zh-cn.png)](https://filecoin.io/zh-cn/2020-engineering-filecoins-economy-zh-cn.pdf)
+[![Report Download](/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)[![Report Download](/blog/economy-report-zh-cn.png)](https://filecoin.io/zh-cn/2020-engineering-filecoins-economy-zh-cn.pdf)
 
 **点击此处下载报告全文 (**[**英文版**](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)**) (**[**中文版**](https://filecoin.io/zh-cn/2020-engineering-filecoins-economy-zh-cn.pdf)**)。**
 

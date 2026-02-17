@@ -33,7 +33,7 @@ While it is possible to interface directly with the nodes that expose these inte
 
 To help developers get around this issue, [Infura](https://infura.io/) has spent the last several years building out API proxies for a number of decentralized networks, including Ethereum, IPFS, and, as of Filecoin Liftoff Week, Filecoin! Infura run nodes on behalf of their users, directing API requests to those nodes behind the scenes. This reduces the infrastructure that developers need to maintain themselves, making it significantly easier to create services that build on top of those APIs!
 
-![Infura Filecoin API Dashboard](https://filecoin.io/vintage/images/blog/infura.jpg)
+![Infura Filecoin API Dashboard](/blog/infura.jpg)
 
 You’ll need to register with Infura in order to access their Filecoin API. If you haven’t created an account yet, you can [sign up here](https://infura.io/register?&utm_source=infurablog&utm_medium=referral&utm_campaign=filecoin_api&utm_content=filecoin_api_blog). Once you’ve registered:
 

@@ -31,7 +31,7 @@ Phase 1 of Space Race 2: [Slingshot](https://slingshot.filecoin.io/) is in the b
 
 Phase 1 of the Slingshot competition ran for four weeks, and culminated with the Closing Ceremony last Wednesday, October 28, 2020. This post recaps the Closing Ceremony and Phase 1 competition. You can also watch the Closing Ceremony recording in this video:
 
-{{< youtube id="qheNJZ1DClM" title="Slingshot Phase 1 Closing Ceremony" >}}
+<iframe width="715" height="378" src="https://www.youtube.com/embed/qheNJZ1DClM" title="Slingshot Phase 1 Closing Ceremony" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
@@ -41,7 +41,7 @@ To kick off the Closing Ceremony, Filecoin Product Lead Pooja Shah recapped what
 
 To celebrate the network’s launch and achievements, the community put together [Filecoin Liftoff Week](https://liftoff.filecoin.io/), an event gathering over 80 panelists to talk about Filecoin and related topics, from the technical details and development process to current and future applications and everything in between. You can stream all of the sessions [on the Filecoin Liftoff website](https://liftoff.filecoin.io/#mainTrack)!
 
-_![Achievements of Phase 1](https://filecoin.io/vintage/images/blog/slingshot-p1-achieve.jpg "Achievements of Phase 1")_
+_![Achievements of Phase 1](/blog/slingshot-p1-achieve.jpg "Achievements of Phase 1")_
 
 _Achievements of Phase 1_
 
@@ -65,7 +65,7 @@ During the Slingshot Closing Ceremony, nine teams that participated in Phase 1 p
 
 These teams accomplished a tremendous amount in a short amount of time. Check out all the presentations [on YouTube](https://youtu.be/qheNJZ1DClM?t=556)!
 
-_![ipfsNewBund presenting their UI](https://filecoin.io/vintage/images/blog/slingshot-p1-ipfsnewbund.jpg)_
+_![ipfsNewBund presenting their UI](/blog/slingshot-p1-ipfsnewbund.jpg)_
 
 _ipfsNewBund presenting their UI_
 
@@ -87,7 +87,7 @@ The Storage awards were distributed to all teams that stored qualifying data, pr
 4. Filecoin.Netdisk
 5. matin-cloud-pan
 
-_![Top projects in Storage competition announced](https://filecoin.io/vintage/images/blog/slingshot-p1-topprojects.jpg)_
+_![Top projects in Storage competition announced](/blog/slingshot-p1-topprojects.jpg)_
 
 _Top projects in Storage competition announced_
 
@@ -106,7 +106,7 @@ Greg Markou, Co-founder and CTO of Chainsafe and a community reviewer for the Sl
   - Anwen Web3 Content Community
   - [diceSolo
 
-_![Dazzling User Interface award presented](https://filecoin.io/vintage/images/blog/slingshot-p1-ui.jpg)_
+_![Dazzling User Interface award presented](/blog/slingshot-p1-ui.jpg)_
 
 _Dazzling User Interface award presented_
 
@@ -116,7 +116,7 @@ Congratulations to all these teams, and great work on your projects!
 
 Pooja then previewed what to expect in Phase 2. Phase 2 officially kicked off on October 21, 2020 at 1800 UTC. We will announce finalized rules and rewards on November 9, 2020 and open formal registration for this phase of the competition on November 11, 2020.
 
-_![Giving early guidance for Phase 2](https://filecoin.io/vintage/images/blog/slingshot-p1-p2-guidance.jpg)_
+_![Giving early guidance for Phase 2](/blog/slingshot-p1-p2-guidance.jpg)_
 
 _Giving early guidance for Phase 2_
 
@@ -131,7 +131,7 @@ For teams looking to start participating in Phase 2 before then, Pooja offered g
 
 Finally, Juan Benet, CEO of Protocol Labs, closed the book on Phase 1 by offering some thoughts about Slingshot thus far and where he’d like to see the competition headed. The Filecoin project is still in early stages, and there’s a lot of opportunity to create valuable use cases, integrations, and more to shape the direction of the project. You can listen to his talk here.
 
-_![Looking forward to Phase 2](https://filecoin.io/vintage/images/blog/slingshot-p1-p2-forward.jpg)_
+_![Looking forward to Phase 2](/blog/slingshot-p1-p2-forward.jpg)_
 
 _Looking forward to Phase 2_
 

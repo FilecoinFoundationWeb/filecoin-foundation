@@ -35,7 +35,7 @@ Additionally, we’re also announcing a significantly upgraded version of the Fi
 
 ## The New Filecoin Whitepaper
 
-[![](https://filecoin.io/vintage/images/blog/whitepaper.jpg)](https://filecoin.io/vintage/filecoin.pdf)
+[![](/blog/whitepaper.jpg)](/assets/documents/filecoin.pdf)
 
 In the upgraded whitepaper we’ve reached significant new research breakthroughs that will make Filecoin an extremely competitive, reliable, and scalable storage network. More specifically, we’re releasing two new Cryptographic Proofs: Proof-of-Spacetime (PoSt) and Proof-of-Replication (PoRep). Among many things these advancements create a completely decentralized storage market, assure files are secure and robust, and allow Filecoin miners to earn filecoin for the actual storage of files, not for useless proofs of work.
 
@@ -43,7 +43,7 @@ Over the coming days we’ll be diving into these new innovations and their impa
 
 ## Token Sale
 
-[![](https://filecoin.io/vintage/images/blog/coinlist-filecoin.jpg)](https://coinlist.co/)
+![](/blog/coinlist-filecoin.jpg)
 
 A successful Filecoin network can make a significant impact on the way data is stored globally, but developing and growing such a network is no easy feat and will take significant funding. To accomplish this we will be selling a small fraction of the Filecoin network to investors and early-supporters via the Simple Agreement for Future Tokens (‘SAFT’).
 

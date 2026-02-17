@@ -64,7 +64,7 @@
     "./Tooltip/*": "./src/Tooltip/*.tsx",
     "./Pagination": "./src/Pagination/index.ts",
     "./StructuredDataScript": "./src/StructuredDataScript.tsx",
-    "./YouTubeVideo": "./src/YouTubeVideo/index.ts"
+    "./YouTubeVideo": "./src/YouTubeVideo.tsx"
   },
   "scripts": {
     "lint": "eslint src --fix",

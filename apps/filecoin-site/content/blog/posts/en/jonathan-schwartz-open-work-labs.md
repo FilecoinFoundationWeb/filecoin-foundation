@@ -36,11 +36,11 @@ Jonathan Schwartz is the co-founder of **Open Work Labs** (OWL), a product studi
 
 Two words that come to my mind when talking about Open Work Labs are our _hope_, what we want to achieve, and our _epicenter_, what we care about. Our hope is to improve the way people share, organize, and archive their work. We care because if we had a persistent, well-organized, and publicly accessible system for managing all of humanity’s work, we should be able to learn, innovate, and collaborate more efficiently. That’s the appeal behind “open work”.
 
-![an owl](https://filecoin.io/vintage/images/blog/openworklabs-owl-owl.svg)
+![an owl](/blog/openworklabs-owl-owl.svg)
 
 OWL is currently working on **[Glif](https://www.glif.io/en)** – a set of interoperable tools on the Filecoin network.
 
-![glif wallet](https://filecoin.io/vintage/images/blog/openworklabs-glif-icon.svg)
+![glif wallet](/blog/openworklabs-glif-icon.svg)
 
 **Tell us more about Glif!**
 
@@ -72,8 +72,7 @@ In theory, content addressing makes much more sense. Referring to the previous e
 
 An exciting part of content addressing data is that once you know what you’re looking for, you can get it from anywhere! Filecoin is exciting because it incentivizes more people and machines to join in this effort. It’s the fuel that can make a network built on content-addressed data work well at scale. This enables a whole lot of cool things, some we know of (and are trying to build), and others we will probably discover down the road.
 
-<p align="center">
-![openworklabs logo](https://filecoin.io/vintage/images/blog/openworklabs-owl-logo.jpg)
+![openworklabs logo](/blog/openworklabs-owl-logo.jpg)
 
 **What interests you about Web3 and Filecoin?**
 

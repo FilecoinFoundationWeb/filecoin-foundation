@@ -35,7 +35,7 @@ In addition to the 10 finalists who demoed their projects in the HackFS Finale, 
 - **PL Prize:** Winner of the Audio track
 - **Team Members:** Susmit Lavania and Ayush Ranjan
 
-![Cadbury](https://filecoin.io/vintage/images/blog/hfs-cadbury.jpg)
+![Cadbury](/blog/hfs-cadbury.jpg)
 
 Cadbury is building an open, borderless, decentralized video chat and meeting platform. Think Zoom or Google Meet for Web3. It’s hosted on IPFS via Fleek and Unstoppable Domains.
 
@@ -54,7 +54,7 @@ The Cadbury team’s next step is to expand the network. They’re working to sc
 - **PL Prize:** Winner of the Devtools track
 - **Team Member:** Mostafa Farghaly
 
-![Kotal](https://filecoin.io/vintage/images/blog/hfs-kotal.jpg)
+![Kotal](/blog/hfs-kotal.jpg)
 
 Kotal, which means “blocks” in Arabic, is an open-source, cloud-agnostic blockchain infrastructure solution that makes it easy to deploy highly available, self-managing, self-healing blockchain infrastructure like networks, nodes, and storage clusters. It uses [Kubebuilder](https://book.kubebuilder.io/) to create Kubernetes controllers, with custom resources like Ethereum Network and IPFS Swarm.
 
@@ -67,7 +67,7 @@ After taking home PL’s Devtools Stack price from HackFS, Farghaly says he’s 
 - **PL Prize:** Winner of the DeFi track
 - **Team Members:** Bakhtiiar Muzakparov, Senshi Masa, Bach Adylbekov, and Denis Davydov
 
-![Secured Finance](https://filecoin.io/vintage/images/blog/hfs-secured-finance.jpg)
+![Secured Finance](/blog/hfs-secured-finance.jpg)
 
 Secured Finance is an institutional-grade financial transaction platform with automatic collateral management and mark-to-market mechanisms. Their team of four spans three countries: Bakhtiiar Muzakparov from Kyrgyzstan, Senshi Masa from Japan, and Bach Adylbekov and Denis Davydov from Russia.
 
