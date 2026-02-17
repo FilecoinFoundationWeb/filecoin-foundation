@@ -1,60 +1,58 @@
 import type { SimpleCardData } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
+import type { TranslationFunction } from '@/i18n/types'
+
 import { FILECOIN_DOCS_URL, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
-export const learnAboutFilecoinProtocol = [
-  {
-    title: 'Content addressing',
-    description:
-      'Files are retrieved via content identifiers (CIDs) instead of location-based URLs prone to deterioration.',
-    cta: {
-      href: 'https://docs.ipfs.tech/concepts/content-addressing/',
-      text: 'See how content addressing works',
+export function getLearnAboutFilecoinProtocol(t: TranslationFunction) {
+  return [
+    {
+      title: t('protocol.contentAddressing.title'),
+      description: t('protocol.contentAddressing.description'),
+      cta: {
+        href: 'https://docs.ipfs.tech/concepts/content-addressing/',
+        text: t('protocol.contentAddressing.cta'),
+      },
     },
-  },
-  {
-    title: 'Storage & retrieval deals',
-    description:
-      'Clients make programmable deals with independent storage providers in a global marketplace.',
-    cta: {
-      href: FILECOIN_DOCS_URLS.storageModel,
-      text: 'Learn about storage deals',
+    {
+      title: t('protocol.storageDeals.title'),
+      description: t('protocol.storageDeals.description'),
+      cta: {
+        href: FILECOIN_DOCS_URLS.storageModel,
+        text: t('protocol.storageDeals.cta'),
+      },
     },
-  },
-  {
-    title: 'Proofs & verification',
-    description:
-      'Providers must cryptographically prove they are storing data.',
-    cta: {
-      href: FILECOIN_DOCS_URLS.proofs,
-      text: 'Understand Filecoin proofs',
+    {
+      title: t('protocol.proofsVerification.title'),
+      description: t('protocol.proofsVerification.description'),
+      cta: {
+        href: FILECOIN_DOCS_URLS.proofs,
+        text: t('protocol.proofsVerification.cta'),
+      },
     },
-  },
-  {
-    title: 'Token Incentives (FIL)',
-    description:
-      'The native token aligns economic incentives and rewards useful storage over time.',
-    cta: {
-      href: FILECOIN_DOCS_URLS.cryptoEconomics,
-      text: 'Explore FIL token economics',
+    {
+      title: t('protocol.tokenIncentives.title'),
+      description: t('protocol.tokenIncentives.description'),
+      cta: {
+        href: FILECOIN_DOCS_URLS.cryptoEconomics,
+        text: t('protocol.tokenIncentives.cta'),
+      },
     },
-  },
-  {
-    title: 'Filecoin Virtual Machine (FVM)',
-    description:
-      'The smart-contract layer that lets developers build logic, automation, and apps on top of Filecoin storage.',
-    cta: {
-      href: FILECOIN_DOCS_URLS.filecoinVirtualMachine,
-      text: 'Discover the FVM',
+    {
+      title: t('protocol.fvm.title'),
+      description: t('protocol.fvm.description'),
+      cta: {
+        href: FILECOIN_DOCS_URLS.filecoinVirtualMachine,
+        text: t('protocol.fvm.cta'),
+      },
     },
-  },
-  {
-    title: 'Filecoin Plus (Fil+)',
-    description:
-      'An incentive system that aims to increase the amount of useful data stored on the Filecoin network.',
-    cta: {
-      href: `${FILECOIN_DOCS_URL}basics/how-storage-works/filecoin-plus`,
-      text: 'Read about Filecoin Plus',
+    {
+      title: t('protocol.filecoinPlus.title'),
+      description: t('protocol.filecoinPlus.description'),
+      cta: {
+        href: `${FILECOIN_DOCS_URL}basics/how-storage-works/filecoin-plus`,
+        text: t('protocol.filecoinPlus.cta'),
+      },
     },
-  },
-] as const satisfies Array<SimpleCardData>
+  ] satisfies Array<SimpleCardData>
+}

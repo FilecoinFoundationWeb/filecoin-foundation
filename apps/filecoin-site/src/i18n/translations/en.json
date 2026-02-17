@@ -119,6 +119,111 @@
     "metadata": {
       "title": "What Is Filecoin? | Decentralized Storage Explained",
       "description": "Learn how Filecoin's decentralized storage network works, what it's used for, and why it's a foundation for a more resilient internet."
+    },
+    "hero": {
+      "title": "The authenticity layer of a more resilient internet",
+      "description": "Filecoin is the world's largest decentralized storage network. By leveraging cryptographic verification and global redundancy, Filecoin safeguards humanity's information, keeping it free from centralized control.",
+      "exploreDocs": "Explore documentation"
+    },
+    "whatIsFilecoin": {
+      "title": "What is Filecoin?",
+      "subTitle": "A decentralized alternative to today's storage solutions.",
+      "paragraph1": "Filecoin is a decentralized alternative to today's storage solutions, offering a better foundation for humanity's information.",
+      "paragraph2": "A handful of corporations currently control most of the world's data. This centralized model creates gatekeepers, introduces single points of failure, and reduces transparency.",
+      "paragraph3": "Filecoin offers a fundamentally different approach to data storage by distributing data across a decentralized, global network, protected by cryptographic proofs."
+    },
+    "usedFor": {
+      "title": "What is Filecoin used for?",
+      "description": "From archival backups to Web3 and AI apps, Filecoin offers decentralized, secure, and verifiable storage at scale.",
+      "exploreCaseStudiesCta": "Explore real-world case studies",
+      "web3Apps": {
+        "title": "Web3 apps & AI datasets",
+        "description": "Powering the data layer for NFTs, video streaming, AI training datasets, and dApps."
+      },
+      "backups": {
+        "title": "Backups & archival storage",
+        "description": "Secure, long-term storage for mission-critical data."
+      },
+      "culturalArchives": {
+        "title": "Cultural archives",
+        "description": "Preserving humanity's knowledge and records for the long term."
+      },
+      "scientificDatasets": {
+        "title": "Scientific datasets",
+        "description": "Enabling resilient access to genomics, public research, and large-scale scientific data."
+      }
+    },
+    "unique": {
+      "title": "What makes Filecoin unique",
+      "description": "Filecoin's distributed design delivers verifiable storage, removes single points of failure, and creates a resilient, transparent storage foundation.",
+      "startStoringCta": "Start storing on Filecoin",
+      "storageDeals": {
+        "title": "Storage deals",
+        "description": "The Filecoin economy runs on deals where a client and provider agree on how much data will be stored, for how long, and at what price."
+      },
+      "cryptographicProofs": {
+        "title": "Cryptographic proofs",
+        "description": "After the client sends the data, the provider must regularly generate blockchain-verified cryptographic proofs so clients can confirm their data is stored as promised."
+      },
+      "verifiableSecurity": {
+        "title": "Verifiable security",
+        "description": "Filecoin uses two proofs to ensure data integrity: <porepLink>Proof of Replication</porepLink>, which verifies a provider has stored a unique copy of the data, and <postLink>Proof of Spacetime</postLink>, which confirms data is continuously stored over time. Providers who fail these requirements forfeit collateral."
+      },
+      "retrievalOnDemand": {
+        "title": "Retrieval on demand",
+        "description": "With <focLink>Filecoin Onchain Cloud</focLink>, retrievals can be automatic, service-based, or integrated directly into workflows. They are as verifiable as storage, enabling a performance-driven market where speed and quality determine rewards."
+      },
+      "builtForScale": {
+        "title": "Built for scale",
+        "description": "Filecoin's infrastructure is designed for exabyte-scale datasets and long-term archival. With built-in redundancy and global distribution, it meets the needs of everything from personal storage to cultural archives and large-scale scientific datasets."
+      },
+      "poweredByIncentives": {
+        "title": "Powered by incentives",
+        "description": "The <filLink>Filecoin token (FIL)</filLink> underpins the network's economy. Clients pay in FIL to store and retrieve data, while providers earn FIL by offering reliable services and locking collateral that keeps the system honest and secure."
+      }
+    },
+    "protocol": {
+      "title": "Learn about the Filecoin protocol",
+      "description": "For technically curious people who want to go deeper into how Filecoin actually works.",
+      "exploreDocsCta": "Explore documentation",
+      "contentAddressing": {
+        "title": "Content addressing",
+        "description": "Files are retrieved via content identifiers (CIDs) instead of location-based URLs prone to deterioration.",
+        "cta": "See how content addressing works"
+      },
+      "storageDeals": {
+        "title": "Storage & retrieval deals",
+        "description": "Clients make programmable deals with independent storage providers in a global marketplace.",
+        "cta": "Learn about storage deals"
+      },
+      "proofsVerification": {
+        "title": "Proofs & verification",
+        "description": "Providers must cryptographically prove they are storing data.",
+        "cta": "Understand Filecoin proofs"
+      },
+      "tokenIncentives": {
+        "title": "Token Incentives (FIL)",
+        "description": "The native token aligns economic incentives and rewards useful storage over time.",
+        "cta": "Explore FIL token economics"
+      },
+      "fvm": {
+        "title": "Filecoin Virtual Machine (FVM)",
+        "description": "The smart-contract layer that lets developers build logic, automation, and apps on top of Filecoin storage.",
+        "cta": "Discover the FVM"
+      },
+      "filecoinPlus": {
+        "title": "Filecoin Plus (Fil+)",
+        "description": "An incentive system that aims to increase the amount of useful data stored on the Filecoin network.",
+        "cta": "Read about Filecoin Plus"
+      }
+    },
+    "resilientInternet": {
+      "title": "Be a part of a more resilient internet",
+      "description": "Filecoin is more than storage; it's an innovative, open ecosystem built to preserve humanity's information.",
+      "buildOnFilecoin": "Build on Filecoin",
+      "storeYourData": "Store your data",
+      "becomeProvider": "Become a storage provider",
+      "joinCommunity": "Join the community"
     }
   },
   "/store-data": {
@@ -224,5 +329,10 @@
     "submitAriaLabel": "Submit newsletter subscription",
     "emailInvalid": "Your email format is invalid",
     "emailRequired": "Your email is required"
+  },
+  "youtubeVideoEmbed": {
+    "playButton": "See how it works",
+    "loading": "Loading Video...",
+    "error": "Video Unavailable"
   }
 }

@@ -3,7 +3,7 @@
 import LiteYouTubeEmbed from 'react-lite-youtube-embed'
 import useSWR from 'swr'
 
-import { fetchYouTubeVideoMetadata } from './utils/fetchYouTubeVideoMetadata'
+import { fetchYouTubeVideoMetadata } from '@filecoin-foundation/utils/fetchYouTubeVideoMetadata'
 
 type YouTubeVideoEmbedProps = {
   embedUrl: string

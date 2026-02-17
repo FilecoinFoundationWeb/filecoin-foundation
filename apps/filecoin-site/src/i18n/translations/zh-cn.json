@@ -117,8 +117,113 @@
   },
   "/learn": {
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "什么是 Filecoin？| 去中心化存储详解",
+      "description": "了解 Filecoin 去中心化存储网络的运作方式、用途，以及它为何是构建更具韧性互联网的基础。"
+    },
+    "hero": {
+      "title": "更具韧性互联网的真实性层",
+      "description": "Filecoin 是全球最大的去中心化存储网络。通过利用密码学验证和全球冗余，Filecoin 保护人类的信息，使其免受中心化控制。",
+      "exploreDocs": "浏览文档"
+    },
+    "whatIsFilecoin": {
+      "title": "什么是 Filecoin？",
+      "subTitle": "当今存储解决方案的去中心化替代方案。",
+      "paragraph1": "Filecoin 是当今存储解决方案的去中心化替代方案，为人类的信息提供更好的基础。",
+      "paragraph2": "目前，少数几家公司控制着世界上大部分数据。这种中心化模式造就了守门人，引入了单点故障，并降低了透明度。",
+      "paragraph3": "Filecoin 提供了一种根本不同的数据存储方法，将数据分布在受密码学证明保护的去中心化全球网络中。"
+    },
+    "usedFor": {
+      "title": "Filecoin 的用途是什么？",
+      "description": "从归档备份到 Web3 和 AI 应用，Filecoin 提供大规模的去中心化、安全且可验证的存储。",
+      "exploreCaseStudiesCta": "探索真实案例研究",
+      "web3Apps": {
+        "title": "Web3 应用和 AI 数据集",
+        "description": "为 NFT、视频流、AI 训练数据集和 dApp 提供数据层支持。"
+      },
+      "backups": {
+        "title": "备份和归档存储",
+        "description": "为关键任务数据提供安全、长期的存储。"
+      },
+      "culturalArchives": {
+        "title": "文化档案",
+        "description": "长期保存人类的知识和记录。"
+      },
+      "scientificDatasets": {
+        "title": "科学数据集",
+        "description": "为基因组学、公共研究和大规模科学数据提供弹性访问。"
+      }
+    },
+    "unique": {
+      "title": "Filecoin 的独特之处",
+      "description": "Filecoin 的分布式设计提供可验证的存储，消除单点故障，并创建弹性、透明的存储基础。",
+      "startStoringCta": "开始在 Filecoin 上存储",
+      "storageDeals": {
+        "title": "存储交易",
+        "description": "Filecoin 经济运行在交易之上，客户和提供者就存储多少数据、存储多长时间以及价格达成一致。"
+      },
+      "cryptographicProofs": {
+        "title": "密码学证明",
+        "description": "客户发送数据后，提供者必须定期生成经区块链验证的密码学证明，以便客户确认其数据按照承诺进行存储。"
+      },
+      "verifiableSecurity": {
+        "title": "可验证的安全性",
+        "description": "Filecoin 使用两种证明来确保数据完整性：<porepLink>复制证明</porepLink>验证提供者已存储数据的唯一副本，<postLink>时空证明</postLink>确认数据在一段时间内被持续存储。未能满足这些要求的提供者将被没收抵押品。"
+      },
+      "retrievalOnDemand": {
+        "title": "按需检索",
+        "description": "通过 <focLink>Filecoin 链上云</focLink>，检索可以是自动的、基于服务的，或直接集成到工作流程中。检索与存储一样可验证，形成了一个以性能为驱动的市场，速度和质量决定奖励。"
+      },
+      "builtForScale": {
+        "title": "为规模化而构建",
+        "description": "Filecoin 的基础设施专为 EB 级数据集和长期归档而设计。凭借内置的冗余和全球分布，它满足从个人存储到文化档案和大规模科学数据集的各种需求。"
+      },
+      "poweredByIncentives": {
+        "title": "由激励驱动",
+        "description": "<filLink>Filecoin 代币 (FIL)</filLink> 支撑着网络经济。客户支付 FIL 来存储和检索数据，而提供者通过提供可靠的服务和锁定抵押品来赚取 FIL，从而保持系统的诚实和安全。"
+      }
+    },
+    "protocol": {
+      "title": "了解 Filecoin 协议",
+      "description": "面向希望深入了解 Filecoin 实际运作方式的技术爱好者。",
+      "exploreDocsCta": "浏览文档",
+      "contentAddressing": {
+        "title": "内容寻址",
+        "description": "文件通过内容标识符 (CID) 检索，而非容易失效的基于位置的 URL。",
+        "cta": "了解内容寻址的工作原理"
+      },
+      "storageDeals": {
+        "title": "存储和检索交易",
+        "description": "客户在全球市场中与独立的存储提供者进行可编程交易。",
+        "cta": "了解存储交易"
+      },
+      "proofsVerification": {
+        "title": "证明和验证",
+        "description": "提供者必须通过密码学方式证明他们正在存储数据。",
+        "cta": "理解 Filecoin 证明机制"
+      },
+      "tokenIncentives": {
+        "title": "代币激励 (FIL)",
+        "description": "原生代币协调经济激励，并随时间奖励有用的存储。",
+        "cta": "探索 FIL 代币经济学"
+      },
+      "fvm": {
+        "title": "Filecoin 虚拟机 (FVM)",
+        "description": "智能合约层，让开发者在 Filecoin 存储之上构建逻辑、自动化和应用。",
+        "cta": "探索 FVM"
+      },
+      "filecoinPlus": {
+        "title": "Filecoin Plus (Fil+)",
+        "description": "一个旨在增加 Filecoin 网络上存储的有用数据量的激励系统。",
+        "cta": "了解 Filecoin Plus"
+      }
+    },
+    "resilientInternet": {
+      "title": "成为更具韧性互联网的一份子",
+      "description": "Filecoin 不仅仅是存储；它是一个创新的、开放的生态系统，旨在保存人类的信息。",
+      "buildOnFilecoin": "在 Filecoin 上构建",
+      "storeYourData": "存储您的数据",
+      "becomeProvider": "成为存储提供者",
+      "joinCommunity": "加入社区"
     }
   },
   "/store-data": {
@@ -224,5 +329,10 @@
     "submitAriaLabel": "提交订阅",
     "emailInvalid": "邮箱格式无效",
     "emailRequired": "请输入邮箱"
+  },
+  "youtubeVideoEmbed": {
+    "playButton": "查看如何运行",
+    "loading": "加载中...",
+    "error": "视频不可用"
   }
 }

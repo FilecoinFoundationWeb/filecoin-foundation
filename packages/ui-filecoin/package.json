@@ -281,6 +281,10 @@
       "types": "./dist/components/TextLink/SmartTextLink.d.ts",
       "default": "./dist/components/TextLink/SmartTextLink.js"
     },
+    "./YouTubeVideo": {
+      "types": "./dist/components/YouTubeVideo.d.ts",
+      "default": "./dist/components/YouTubeVideo.js"
+    },
     "./constants/tailwindConstants": {
       "types": "./dist/constants/tailwindConstants.d.ts",
       "default": "./dist/constants/tailwindConstants.js"
@@ -334,6 +338,7 @@
     "clsx": "^2.1.1",
     "embla-carousel-auto-scroll": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
+    "react-lite-youtube-embed": "^3.3.3",
     "react-markdown": "^10.1.0",
     "rehype-raw": "^7.0.0",
     "rehype-slug": "^6.0.0",
@@ -359,6 +364,7 @@
     "next": "^16.1.6",
     "nuqs": "^2.8.8",
     "react": "^19.2.4",
+    "swr": "^2.4.0",
     "tailwindcss": "^4.1.18"
   }
 }

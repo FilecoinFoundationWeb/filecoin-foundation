@@ -4,10 +4,6 @@ import { YouTubeVideo } from '@filecoin-foundation/ui/YouTubeVideo'
 
 import YouTubeLogoIcon from '@/assets/logos/youtube-logo-icon.svg'
 
-type PlaceholderProps = {
-  text: string
-}
-
 type YouTubeVideoEmbedProps = {
   videoUrl: string
 }
@@ -22,6 +18,10 @@ export function YouTubeVideoEmbed({ videoUrl }: YouTubeVideoEmbedProps) {
       />
     </div>
   )
+}
+
+type PlaceholderProps = {
+  text: string
 }
 
 function Placeholder({ text }: PlaceholderProps) {
