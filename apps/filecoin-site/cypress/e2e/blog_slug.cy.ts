@@ -15,33 +15,20 @@ type BlogPostFrontmatter = GenericEntryFrontmatter & {
 const { entriesPath: CONTENT_FOLDER, path: BLOG_PATH } = PATHS.BLOG
 const ENGLISH_CONTENT_FOLDER = path.join(CONTENT_FOLDER, 'en')
 
-type BlogSlug = {
-  draft: string
-  published: string
-}
-
 describe('Blog Slug Page', () => {
-  it('should return 404 for draft posts', () => {
-    cy.fixture('blogSlug').then((slugs: BlogSlug) => {
-      cy.request({
-        url: `${BLOG_PATH}/${slugs.draft}`,
-        failOnStatusCode: false,
-      }).then((response) => {
-        expect(response.status).to.eq(404)
-      })
-    })
-  })
-
   it(tests.metadata.prompt, () => {
-    cy.fixture('blogSlug').then((slugs: BlogSlug) => {
+    cy.task<string>('getRandomSlug', ENGLISH_CONTENT_FOLDER).then((slug) => {
       cy.task<BlogPostFrontmatter>(
         'getEntryFrontmatter',
-        path.join(ENGLISH_CONTENT_FOLDER, slugs.published),
+        `${ENGLISH_CONTENT_FOLDER}/${slug}`,
       ).then(({ title, seo, excerpt }) => {
+        const seoTitle = seo?.title || title
+        const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
+
         tests.metadata.fn({
-          path: path.join(BLOG_PATH, slugs.published),
-          title: getMetaTitleWithSuffix(seo?.title ?? title),
-          description: seo?.description ?? excerpt,
+          path: `${BLOG_PATH}/${slug}`,
+          title: metaTitleWithSuffix,
+          description: seo?.description || excerpt,
           baseUrl: BASE_URL,
         })
       })
@@ -50,9 +37,9 @@ describe('Blog Slug Page', () => {
 })
 
 describe('Blog Post - Visual Regression', () => {
+  const BLOG_POST_SLUG = 'introducing-filecoin-onchain-cloud'
+
   it(tests.visualSnapshot.prompt, () => {
-    cy.fixture('blogSlug').then((slugs: { published: string }) => {
-      tests.visualSnapshot.fn(path.join(BLOG_PATH, slugs.published))
-    })
+    tests.visualSnapshot.fn(path.join(BLOG_PATH, BLOG_POST_SLUG))
   })
 })

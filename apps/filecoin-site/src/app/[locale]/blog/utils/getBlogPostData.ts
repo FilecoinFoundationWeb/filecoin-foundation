@@ -1,5 +1,3 @@
-import { notFound } from 'next/navigation'
-
 import type { Locale } from '@/i18n/types'
 
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
@@ -11,9 +9,6 @@ import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
 export async function getBlogPostData(slug: string, locale: Locale) {
   const post = await getBlogPostMarkdownData(slug, locale)
-  if (!isBlogPostPublished(post)) {
-    notFound()
-  }
   return transformBlogPostData(post)
 }
 
