@@ -12,8 +12,8 @@ export default defineConfig({
     supportFile: false,
     setupNodeEvents(on) {
       on('task', {
-        getEntryFrontmatter,
         getRandomSlug,
+        getEntryFrontmatter,
       })
     },
   },
