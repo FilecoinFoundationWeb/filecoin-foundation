@@ -8,6 +8,7 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink'
+import type { CardData } from '@filecoin-foundation/ui-filecoin/Card'
 
 import type { TranslationFunction } from '@/i18n/types'
 
@@ -70,5 +71,5 @@ export function getHowFilecoinWorks(t: TranslationFunction) {
       }),
       icon: CoinsIcon,
     },
-  ]
+  ] satisfies Array<CardData>
 }
