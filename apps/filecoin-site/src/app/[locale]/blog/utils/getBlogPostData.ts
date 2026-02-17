@@ -1,4 +1,5 @@
 import type { Locale } from '@/i18n/types'
+import type { z } from 'zod'
 
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
 import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
@@ -49,9 +50,10 @@ function getDirectoryPathForLocale(locale: Locale) {
   return PATHS.BLOG.entriesPath + `/${locale}`
 }
 
-type IsBlogPostPublishedParams = {
-  draft?: boolean
-}
+type IsBlogPostPublishedParams = Pick<
+  z.infer<typeof BlogPostFrontmatterSchema>,
+  'draft'
+>
 
 function isBlogPostPublished(post: IsBlogPostPublishedParams) {
   return post.draft !== true

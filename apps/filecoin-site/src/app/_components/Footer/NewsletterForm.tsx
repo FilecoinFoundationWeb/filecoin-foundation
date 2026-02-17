@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Field, Input, Label } from '@headlessui/react'
+import { Input, Label, Field, Button } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { useTranslations } from 'next-intl'
