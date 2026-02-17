@@ -1,6 +1,6 @@
 import type { LocaleParams } from '@/i18n/types'
 
-import { setRequestLocale } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { MarkdownContent as BaseMarkdownContent } from '@filecoin-foundation/ui-filecoin/Markdown/MarkdownContent'
@@ -9,6 +9,8 @@ import type { SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
+
+import { LOCALES } from '@/i18n/locales'
 
 import { createMetadata } from '@/utils/createMetadata'
 
@@ -27,6 +29,8 @@ type CaseStudyArticleProps = {
 export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
   const { slug, locale } = await props.params
   setRequestLocale(locale)
+
+  const t = await getTranslations(PATHS.CASE_STUDIES.path)
 
   // #todo: Add all case studies and make challenge, solution, and results required
   const data = await getCaseStudyData(slug, locale)
@@ -50,7 +54,7 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
         <PageHeader
           title={title}
           description={pageDescription || cardDescription}
-          label="Case Study"
+          label={t('article.label')}
           image={{
             src: image?.src || '',
             alt: image?.alt || '',
@@ -61,9 +65,9 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
       {challenge && solution && results && (
         <PageSection backgroundVariant="dark" paddingVariant="topNone">
           <ul className="grid grid-cols-1 gap-15 md:grid-cols-2 lg:grid-cols-3">
-            <TextCard title="Challenge" description={challenge} />
-            <TextCard title="Solution" description={solution} />
-            <TextCard title="Results" description={results} />
+            <TextCard title={t('article.challenge')} description={challenge} />
+            <TextCard title={t('article.solution')} description={solution} />
+            <TextCard title={t('article.results')} description={results} />
           </ul>
         </PageSection>
       )}
@@ -80,13 +84,19 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
 }
 
 export async function generateStaticParams() {
-  const caseStudies = await getCaseStudiesData('en')
-  return caseStudies.map(({ slug }: { slug: string }) => ({ slug }))
+  const params = await Promise.all(
+    LOCALES.map(async (locale) => {
+      const caseStudies = await getCaseStudiesData(locale)
+      return caseStudies.map(({ slug }) => ({ slug, locale }))
+    }),
+  )
+
+  return params.flat()
 }
 
 export async function generateMetadata(props: CaseStudyArticleProps) {
-  const { slug } = await props.params
-  const { seo, image } = await getCaseStudyData(slug, 'en')
+  const { slug, locale } = await props.params
+  const { seo, image } = await getCaseStudyData(slug, locale)
 
   return createMetadata({
     path: `${PATHS.CASE_STUDIES.path}/${slug}`,

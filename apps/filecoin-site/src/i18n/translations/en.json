@@ -242,6 +242,32 @@
     "metadata": {
       "title": "Filecoin Case Studies | Real-World Decentralized Storage Success",
       "description": "Explore Filecoin case studies showcasing how organizations use decentralized storage for scalability, security, and innovation across industries."
+    },
+    "hero": {
+      "title": "Powering the preservation of critical datasets",
+      "description": "From AI datasets to government archives, leading institutions trust Filecoin to securely and resiliently store their most valuable datasets."
+    },
+    "featured": {
+      "title": "Organizations preserving their data on Filecoin",
+      "description": "Read full case studies of some of the organizations using Filecoin to preserve their data.",
+      "readCaseStudy": "Read case study"
+    },
+    "upcoming": {
+      "title": "More datasets (case studies coming soon)",
+      "description": "Discover additional teams leveraging Filecoin for data preservation. Full case studies are coming soon.",
+      "visitWebsite": "Visit website"
+    },
+    "cta": {
+      "title": "Preserve your most important data with Filecoin",
+      "description": "Join the organizations already protecting their most valuable datasets on the Filecoin network.",
+      "startStoring": "Start storing on Filecoin"
+    },
+    "emptyState": "Case studies coming soon.",
+    "article": {
+      "label": "Case Study",
+      "challenge": "Challenge",
+      "solution": "Solution",
+      "results": "Results"
     }
   },
   "/privacy-policy": {
