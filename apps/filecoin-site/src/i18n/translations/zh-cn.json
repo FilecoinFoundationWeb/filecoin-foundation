@@ -159,15 +159,15 @@
       "startStoringCta": "开始在 Filecoin 上存储",
       "onchainProof": {
         "title": "链上存储证明",
-        "description": "Filecoin 使用两种证明来确保数据完整性：复制证明验证数据的唯一副本是否存在，时空证明确认数据在一段时间内持续存储。"
+        "description": "Filecoin 使用两种证明来确保数据完整性：<porepLink>复制证明</porepLink>验证数据的唯一副本是否存在，<postLink>时空证明</postLink>确认数据在一段时间内持续存储。"
       },
       "poweredByIncentives": {
         "title": "由激励驱动",
-        "description": "Filecoin 代币（FIL）驱动网络经济。客户支付 FIL 来存储数据，而提供者通过提供可靠服务来赚取 FIL。提供者必须锁定 FIL 作为抵押品，并通过提交有效证明来赚取奖励。"
+        "description": "<filLink>Filecoin 代币（FIL）</filLink>驱动网络经济。客户支付 FIL 来存储数据，而提供者通过提供可靠服务来赚取 FIL。提供者必须锁定 FIL 作为抵押品，并通过提交有效证明来赚取奖励。"
       },
       "verifiableRetrieval": {
         "title": "可验证的检索",
-        "description": "借助 Filecoin 链上云，检索性能可在链上得到证明，将速度和可靠性转化为可衡量、可验证的指标。"
+        "description": "借助<focLink>Filecoin 链上云</focLink>，检索性能可在链上得到证明，将速度和可靠性转化为可衡量、可验证的指标。"
       },
       "builtForScale": {
         "title": "为规模化而构建",

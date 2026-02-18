@@ -159,15 +159,15 @@
       "startStoringCta": "Start storing on Filecoin",
       "onchainProof": {
         "title": "Onchain proof of storage",
-        "description": "Filecoin uses two proofs to ensure data integrity: Proof of Replication verifies a unique copy of data exists, and Proof of Spacetime confirms it remains stored over time."
+        "description": "Filecoin uses two proofs to ensure data integrity: <porepLink>Proof of Replication</porepLink> verifies a unique copy of data exists, and <postLink>Proof of Spacetime</postLink> confirms it remains stored over time."
       },
       "poweredByIncentives": {
         "title": "Powered by incentives",
-        "description": "The Filecoin token (FIL) powers the network's economy. Clients pay in FIL to store data, while providers earn FIL by offering reliable services. Providers must lock FIL as collateral and earn rewards by submitting valid proofs."
+        "description": "The <filLink>Filecoin token (FIL)</filLink> powers the network's economy. Clients pay in FIL to store data, while providers earn FIL by offering reliable services. Providers must lock FIL as collateral and earn rewards by submitting valid proofs."
       },
       "verifiableRetrieval": {
         "title": "Verifiable retrieval",
-        "description": "With Filecoin Onchain Cloud, retrieval performance is provable onchain, turning speed and reliability into measurable, verifiable metrics."
+        "description": "With <focLink>Filecoin Onchain Cloud</focLink>, retrieval performance is provable onchain, turning speed and reliability into measurable, verifiable metrics."
       },
       "builtForScale": {
         "title": "Built for scale",
