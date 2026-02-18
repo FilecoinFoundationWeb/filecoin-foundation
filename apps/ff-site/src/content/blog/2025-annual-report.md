@@ -542,24 +542,16 @@ To learn more about FF, visit fil.org.
 
 If you have questions or are interested in collaborating, don’t hesitate to reach out to the FF team — we’re here to support the ecosystem and look forward to hearing from you.
 
-Grants: [grants@fil.org](mailto:grants@fil.org)
-
-Governance: [governance@fil.org](mailto:governance@fil.org)
-
-Fil+: [filplus@fil.org](mailto:filplus@fil.org)
-
-Security: [security@fil.org](mailto:security@fil.org)
-
-Quality Engineering: [eng@fil.org](mailto:eng@fil.org)
-
-Funding Operations and Impact: [impact@fil.org](mailto:impact@fil.org)
-
-UXIT: [uxit@fil.org](mailto:uxit@fil.org)
-
-Communications and Marketing: [marketing@fil.org](mailto:marketing@fil.org)
-
-Design: [design@fil.org](mailto:design@fil.org)
-
-Events: [events@fil.org](mailto:events@fil.org)
-
-General questions: [hello@fil.org](mailto:hello@fil.org)
+| Team                          | Email                                           |
+| ----------------------------- | ----------------------------------------------- |
+| Grants                        | [grants@fil.org](mailto:grants@fil.org)         |
+| Governance                    | [governance@fil.org](mailto:governance@fil.org) |
+| Fil+                          | [filplus@fil.org](mailto:filplus@fil.org)       |
+| Security                      | [security@fil.org](mailto:security@fil.org)     |
+| Quality Engineering           | [eng@fil.org](mailto:eng@fil.org)               |
+| Funding Operations and Impact | [impact@fil.org](mailto:impact@fil.org)         |
+| UX Improvement Team           | [uxit@fil.org](mailto:uxit@fil.org)             |
+| Communications and Marketing  | [marketing@fil.org](mailto:marketing@fil.org)   |
+| Design                        | [design@fil.org](mailto:design@fil.org)         |
+| Events                        | [events@fil.org](mailto:events@fil.org)         |
+| General questions             | [hello@fil.org](mailto:hello@fil.org)           |
