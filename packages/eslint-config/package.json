@@ -13,9 +13,9 @@
     "lint": "eslint --fix ."
   },
   "peerDependencies": {
-    "@eslint/js": "^10.0.1",
+    "@eslint/js": "9.39.2",
     "@next/eslint-plugin-next": "^16.1.6",
-    "eslint": "^10.0.0",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-only-warn": "^1.1.0",
@@ -32,9 +32,9 @@
     }
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
+    "@eslint/js": "9.39.2",
     "@next/eslint-plugin-next": "^16.1.6",
-    "eslint": "^10.0.0",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-only-warn": "^1.1.0",
