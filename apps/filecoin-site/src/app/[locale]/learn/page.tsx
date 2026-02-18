@@ -135,7 +135,7 @@ export default async function Learn() {
             </Button>
           }
         >
-          <CardGrid as="ul" variant="smTwoLgThreeWider">
+          <CardGrid as="ul" variant="mdTwoWider">
             {decentralizedByDesign.map((card) => (
               <Card key={card.title} as="li" {...card} />
             ))}
