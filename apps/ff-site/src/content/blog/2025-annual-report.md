@@ -498,7 +498,7 @@ At MAGMA, Filecoin representatives engaged with builders focused on real-world a
 
 In 2025, Filecoin Orbit entered a new chapter. Filecoin Foundation teamed up with [FIL-B](http://fil.builders) to guide the program’s execution in close collaboration. As its Operator, FIL-B is reimagining the Orbit Program to foster even greater impact, and that includes introducing new specialized roles designed to recognize diverse contributions and amplify the community's collective reach. Filecoin Foundation remains the Program Owner — guiding strategy, messaging, and funding.
 
-This year Filecoin Orbit welcomed 10 new regional ambassadors, including university chapters at Northwestern Univeristy, Purdue University, University of Pennsylvnia, and Waterloo, as well as teams in Accra, India, Latin America, Nigeria, Prague, Thailand, and Vietnam. Activating and engaging technical communities through Code n’ Corgi workshops, hackathon support, and Filecoin Onchain Cloud launch initiatives was a key focus for the program as it onboarded the next wave of Filecoin builders.
+This year Filecoin Orbit welcomed 10 new regional ambassadors, including university chapters at Northwestern University, Purdue University, University of Pennsylvania, and Waterloo, as well as teams in Accra, India, Latin America, Nigeria, Prague, Thailand, and Vietnam. Activating and engaging technical communities through Code n’ Corgi workshops, hackathon support, and Filecoin Onchain Cloud launch initiatives was a key focus for the program as it onboarded the next wave of Filecoin builders.
 
 ## Regulatory and Policy: Protecting the Filecoin Ecosystem
 
@@ -534,7 +534,7 @@ Filecoin Foundation spending for fiscal year 2025.
 | Regulatory and Policy                                               | $2,072,924 | 38,352  |
 | Enablement (Legal, Finance, HR, IT, etc.)                           | $4,391,980 | 312,601 |
 | Other Operating Expenses (Insurance, Taxes, etc.)                   | $3,831,733 | 8,844   |
-| Cross-Functional Personnel                                          | 1,022,734  | 395,687 |
+| Cross-Functional Personnel                                          | $1,022,734 | 395,687 |
 
 ## Learn More About Filecoin Foundation
 
