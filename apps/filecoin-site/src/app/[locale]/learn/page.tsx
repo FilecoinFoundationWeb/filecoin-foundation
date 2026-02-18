@@ -29,7 +29,7 @@ import { SectionImage } from '@/components/SectionImage'
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 import { YouTubeVideoEmbed } from '@/components/YoutubeVideoEmbed'
 
-import { getHowFilecoinWorks } from './data/howFilecoinWorks'
+import { getDecentralizedByDesign } from './data/decentralizedByDesign'
 import { getLearnAboutFilecoinProtocol } from './data/learnAboutFilecoinProtocol'
 import { getResilientInternetCta } from './data/resilientInternetCta'
 import { getWhatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
@@ -40,7 +40,7 @@ export default async function Learn() {
   const metadata = await getTranslatedMetadata(PATHS.LEARN.path)
 
   const whatIsFilecoinUsedFor = getWhatIsFilecoinUsedFor(t)
-  const howFilecoinWorks = getHowFilecoinWorks(t)
+  const decentralizedByDesign = getDecentralizedByDesign(t)
   const learnAboutFilecoinProtocol = getLearnAboutFilecoinProtocol(t)
   const resilientInternetCta = getResilientInternetCta(t)
 
@@ -127,16 +127,16 @@ export default async function Learn() {
         <SectionContent
           centerCTA
           headingTag="h2"
-          title={t('unique.title')}
-          description={t('unique.description')}
+          title={t('decentralizedByDesign.title')}
+          description={t('decentralizedByDesign.description')}
           cta={
             <Button href={PATHS.STORE_DATA.path} variant="primary">
-              {t('unique.startStoringCta')}
+              {t('decentralizedByDesign.startStoringCta')}
             </Button>
           }
         >
           <CardGrid as="ul" variant="smTwoLgThreeWider">
-            {howFilecoinWorks.map((card) => (
+            {decentralizedByDesign.map((card) => (
               <Card key={card.title} as="li" {...card} />
             ))}
           </CardGrid>
