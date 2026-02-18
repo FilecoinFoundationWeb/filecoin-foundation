@@ -25,17 +25,17 @@ _template: blog_detail_ch
 
 免责声明:将技术概念从一种语言完美地翻译到另一种语言是困难的，因此请注意，我们不能保证这个翻译的准确性。 [原文可以在这里找到。](/blog/getting-started-with-filecoin-repos-and-devnets/)
 
-正如我们在[这里](https://filecoin.io/zh-cn/blog/opening-filecoin-project-repos/)宣布的，我们最近在 [GitHub](https://github.com/filecoin-project)上开放了 Filecoin 项目 repos。你可以访问 GitHub repos 来探索代码库、开发工具、社区资源等等。如果你准备好直接跳进去，这里有一些方法可以让你了解更多。
+正如我们在[这里](/blog/filecoin-repos-devnets/)宣布的，我们最近在 [GitHub](https://github.com/filecoin-project)上开放了 Filecoin 项目 repos。你可以访问 GitHub repos 来探索代码库、开发工具、社区资源等等。如果你准备好直接跳进去，这里有一些方法可以让你了解更多。
 
-1. [设置 Filecoin 节点并连接到 devnet](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#1-%E8%AE%BE%E7%BD%AE-filecoin-%E8%8A%82%E7%82%B9%E5%B9%B6%E8%BF%9E%E6%8E%A5%E5%88%B0-devnet)
-2. [可视化网络](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#2-%E5%8F%AF%E8%A7%86%E5%8C%96%E7%BD%91%E7%BB%9C)
-3. [改进 Filecoin 协议规范](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#3-%E6%94%B9%E8%BF%9B-filecoin-%E5%8D%8F%E8%AE%AE%E8%A7%84%E8%8C%83)
-4. [与我们合作解决开放式研究问题](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#4-%E4%B8%8E%E6%88%91%E4%BB%AC%E5%90%88%E4%BD%9C%E8%A7%A3%E5%86%B3%E5%BC%80%E6%94%BE%E5%BC%8F%E7%A0%94%E7%A9%B6%E9%97%AE%E9%A2%98)
-5. [在复制游戏中竞争](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#5-%E5%9C%A8%E5%A4%8D%E5%88%B6%E6%B8%B8%E6%88%8F%E4%B8%AD%E7%AB%9E%E4%BA%89)
-6. [加入社区](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#6-%E5%8A%A0%E5%85%A5%E7%A4%BE%E5%8C%BA)
-7. [在 Filecoin 之上构建](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#7-%E5%9C%A8-filecoin-%E4%B9%8B%E4%B8%8A%E6%9E%84%E5%BB%BA)
-8. [加入团队](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#8-%E5%8A%A0%E5%85%A5%E5%9B%A2%E9%98%9F)
-9. [结束时的思考](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#%E7%BB%93%E6%9D%9F%E6%97%B6%E7%9A%84%E6%80%9D%E8%80%83)
+1. [设置 Filecoin 节点并连接到 devnet](/blog/filecoin-repos/#1-%E8%AE%BE%E7%BD%AE-filecoin-%E8%8A%82%E7%82%B9%E5%B9%B6%E8%BF%9E%E6%8E%A5%E5%88%B0-devnet)
+2. [可视化网络](/blog/filecoin-repos/#2-%E5%8F%AF%E8%A7%86%E5%8C%96%E7%BD%91%E7%BB%9C)
+3. [改进 Filecoin 协议规范](/blog/filecoin-repos/#3-%E6%94%B9%E8%BF%9B-filecoin-%E5%8D%8F%E8%AE%AE%E8%A7%84%E8%8C%83)
+4. [与我们合作解决开放式研究问题](/blog/filecoin-repos/#4-%E4%B8%8E%E6%88%91%E4%BB%AC%E5%90%88%E4%BD%9C%E8%A7%A3%E5%86%B3%E5%BC%80%E6%94%BE%E5%BC%8F%E7%A0%94%E7%A9%B6%E9%97%AE%E9%A2%98)
+5. [在复制游戏中竞争](/blog/filecoin-repos/#5-%E5%9C%A8%E5%A4%8D%E5%88%B6%E6%B8%B8%E6%88%8F%E4%B8%AD%E7%AB%9E%E4%BA%89)
+6. [加入社区](/blog/filecoin-repos/#6-%E5%8A%A0%E5%85%A5%E7%A4%BE%E5%8C%BA)
+7. [在 Filecoin 之上构建](/blog/filecoin-repos/#7-%E5%9C%A8-filecoin-%E4%B9%8B%E4%B8%8A%E6%9E%84%E5%BB%BA)
+8. [加入团队](/blog/filecoin-repos/#8-%E5%8A%A0%E5%85%A5%E5%9B%A2%E9%98%9F)
+9. [结束时的思考](/blog/filecoin-repos/#%E7%BB%93%E6%9D%9F%E6%97%B6%E7%9A%84%E6%80%9D%E8%80%83)
 
 ## 1. 设置 Filecoin 节点并连接到 devnet
 
@@ -43,7 +43,7 @@ _template: blog_detail_ch
 
 请注意，Filecoin 项目和网络尚未启用。整个项目仍在进行中，因此我们无法对性能、稳定性或安全性做出任何保证。
 
-目前有一个 Filecoin 协议的参考实现: [go-filecoin](https://github.com/filecoin-project/go-filecoin)。go-filecoin 的实现已经取得了巨大的进展。你可以在[这里](https://filecoin.io/zh-cn/blog/update-2018-q3-q4/)获得 go-filecoin 的全部开发更新。
+目前有一个 Filecoin 协议的参考实现: [go-filecoin](https://github.com/filecoin-project/go-filecoin)。go-filecoin 的实现已经取得了巨大的进展。你可以在[这里](/blog/2018/)获得 go-filecoin 的全部开发更新。
 
 你可以连接到两个devnet之一：
 
@@ -66,7 +66,7 @@ Filecoin 协议规范可以在 GitHub 上的 [filecoin-project/specs](https://gi
 
 我们非常欢迎对规范的评论、提问和贡献。你可以在 [GitHub 上的 specs repo 问题 (issues)](https://github.com/filecoin-project/specs/issues) 中找到这些议题。
 
-我们欢迎规范的拉入请求 (Pull Requests)。这是为构建 Filecoin 网络做出贡献的最有价值的方法之一。改进协议规范使协议的多种实现能够按照类似的标准构建规模性和安全性。不过请注意: 如果不深入了解协议规范的工作原理，就很难编写协议规范。澄清问题，审查和评论草案，充实细节，这些都是开始的好方法。那些想要通过从头开始编写一个部分来做出贡献的人，将需要更深入的知识和与我们团队的密切合作。来和我们聊天吧 (参见下面的[加入社区](https://filecoin.io/zh-cn/blog/getting-started-with-filecoin-repos-and-devnets/#6-%E5%8A%A0%E5%85%A5%E7%A4%BE%E5%8C%BA)部分)！
+我们欢迎规范的拉入请求 (Pull Requests)。这是为构建 Filecoin 网络做出贡献的最有价值的方法之一。改进协议规范使协议的多种实现能够按照类似的标准构建规模性和安全性。不过请注意: 如果不深入了解协议规范的工作原理，就很难编写协议规范。澄清问题，审查和评论草案，充实细节，这些都是开始的好方法。那些想要通过从头开始编写一个部分来做出贡献的人，将需要更深入的知识和与我们团队的密切合作。来和我们聊天吧 (参见下面的[加入社区](/blog/filecoin-repos/#6-%E5%8A%A0%E5%85%A5%E7%A4%BE%E5%8C%BA)部分)！
 
 ## 4. 与我们合作解决开放式研究问题
 

@@ -29,7 +29,7 @@ _template: blog_detail_ch
 
 Filecoin团队一直致力于存储和保留这些有价值的数据集。我们希望研究人员继续致力于解决全球气候变化问题，以便能够收集到来自世界各地的城市PB级别的数据。我们希望科学家能够非常轻松地搜索到彼此的数据集和研究文献，以研制针对全球性疾病的疫苗。我们也希望汽车工程师能够访问所有公开可用的自动驾驶报告。明年开始，Filecoin团队将赞助PB量级的开源数据存储以便于使访问这些重要数据集的途径更加普及。
 
-将这些海量的数据去中心化的最佳途径就是确保这些数据被适当的存储和保存，没有任何一个硬盘可以单独保存如此多的数据。而依靠大型技术平台控制的大型数据中心会增加丢失和损坏[已验证数据的](https://filecoin.io/zh-cn/blog/filecoin-cryptoeconomic-constructions/)风险。
+将这些海量的数据去中心化的最佳途径就是确保这些数据被适当的存储和保存，没有任何一个硬盘可以单独保存如此多的数据。而依靠大型技术平台控制的大型数据中心会增加丢失和损坏[已验证数据的](/blog/filecoin-cryptoeconomic-constructions/)风险。
 
 **今天，我们很高兴地推出Filecoin Discover——该项目旨在帮助Filecoin成为全人类最重要的数据集来源，并且其他人可以访问数据来扩大我们人类的知识库以促成新的灵感与想法。**
 
@@ -39,7 +39,7 @@ Filecoin Discover项目激励各种规模的早期矿工存储有价值的数据
 
 正如WNYC播客《Note to Self》的前主持人Manoush Zomorodi[所说](https://www.forbes.com/sites/geristengel/2018/10/24/a-springboard-to-success-for-female-blockchain-founders/#b9f3aff43219)：“想想很多人同计算机一起工作，区块链要求你有集体精神。”在Filecoin网络上挖矿和存储数据的节点越多，节点的存储算力就越强大。因此，Discover项目是我们鼓励更多矿工在早期阶段加入网络的办法。我们构建Discover项目作为快速扩展Filecoin网络的一种方式。
 
-Filecoin Discover store是PB级别公共数据的目录（还在不断的增长中），涵盖了文学、科学、艺术和历史等方面。希望加入Filecoin网络的矿工可以访问该站点，选择他们想要存储的数据集，并花费一定成本收到存了[已验证数据的](https://filecoin.io/zh-cn/blog/filecoin-cryptoeconomic-constructions/)硬盘。下订单之前，请检查\[莲花常见问题解答\]（[https://lotus.filecoin.io/storage-providers/get-started/hardware-requirements/) 中的采矿要求！为了交换存储这些[已验证数据](/blog/filecoin-s-cryptoeconomic-constructions/)，矿工将在常规的存储数据获得区块奖励之外再额外获得Filecoin奖励。
+Filecoin Discover store是PB级别公共数据的目录（还在不断的增长中），涵盖了文学、科学、艺术和历史等方面。希望加入Filecoin网络的矿工可以访问该站点，选择他们想要存储的数据集，并花费一定成本收到存了[已验证数据的](/blog/filecoin-cryptoeconomic-constructions/)硬盘。下订单之前，请检查\[莲花常见问题解答\]（[https://lotus.filecoin.io/storage-providers/get-started/hardware-requirements/) 中的采矿要求！为了交换存储这些[已验证数据](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/)，矿工将在常规的存储数据获得区块奖励之外再额外获得Filecoin奖励。
 
 数据集包括：
 

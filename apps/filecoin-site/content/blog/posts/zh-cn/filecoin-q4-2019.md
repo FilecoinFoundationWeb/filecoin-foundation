@@ -25,7 +25,7 @@ _template: blog_detail_ch
 
 在本文中，我们将分享路线图的下一步内容以及可用于跟踪里程碑时间估算的工具。
 
-正如我们在[此博客文章中](https://filecoin.io/blog/filecoin-testnet-is-live)宣布的那样，我们[(如期！)启动了 Filecoin 测试网](/blog/filecoin-2019-q2-q3-update/#1-launches-testnet-on-dec-11-mainnet-in-2020-q1) ，目前正处于重要的测试阶段，包括基准测试和优化测试。测试网的目的是对 Filecoin 进行有意义的评估，并修复所有错误，以确保安全、高效、可互操作的主网。在[此处](https://filecoin.io/blog/filecoin-testnet-is-live)阅读有关 testnet 启动以及如何参与使该网络成功的更多信息。
+正如我们在[此博客文章中](https://filecoin.io/blog/filecoin-testnet-is-live)宣布的那样，我们[(如期！)启动了 Filecoin 测试网](https://filecoin.io/blog/update-2019-q2-q3/#1-launches-testnet-on-dec-11-mainnet-in-2020-q1) ，目前正处于重要的测试阶段，包括基准测试和优化测试。测试网的目的是对 Filecoin 进行有意义的评估，并修复所有错误，以确保安全、高效、可互操作的主网。在[此处](https://filecoin.io/blog/filecoin-testnet-is-live)阅读有关 testnet 启动以及如何参与使该网络成功的更多信息。
 
 我们已经更新了[公共路线图文件](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#) 。简而言之，这就是我们所处的位置（这些阶段不一样长）。
 
@@ -41,8 +41,8 @@ _template: blog_detail_ch
 
 在 Testnet 阶段 2 中，我们还将启动许多举措：
 
-- _可信安装程序阶段 2：_ 在 Testnet 阶段 2，我们将开始可信安装程序阶段的第二阶段。在[此处](/blog/participate-in-our-trusted-setup-ceremony/)了解有关如何参加受信任的设置仪式的更多信息。
-- _针对主网更新的硬件测试配置：_ 我们将在 Testnet 阶段 2 中发布更新的主网硬件测试配置。您可以[在此处](https://filecoin.io/zh-cn/blog/filecoin-testnet-mining/)阅读有关我们最新的 testnet 硬件配置的[信息](https://filecoin.io/zh-cn/blog/filecoin-testnet-mining/) 。
+- _可信安装程序阶段 2：_ 在 Testnet 阶段 2，我们将开始可信安装程序阶段的第二阶段。在[此处](https://filecoin.io/blog/participate-in-our-trusted-setup-ceremony/)了解有关如何参加受信任的设置仪式的更多信息。
+- _针对主网更新的硬件测试配置：_ 我们将在 Testnet 阶段 2 中发布更新的主网硬件测试配置。您可以[在此处](/blog/filecoin-testnet-mining/)阅读有关我们最新的 testnet 硬件配置的[信息](/blog/filecoin-testnet-mining/) 。
 - _开发工具协作：_ 我们的目标是使用功能更强大的开发人员工具箱启动 主网，以在 Filecoin 上构建应用程序。我们正在寻找合作者来帮助我们构建这些工具和出色的 Filecoin 开发经验。（如果您有兴趣，请向 [Filecoin DevGrants 计划](https://github.com/filecoin-project/devgrants)提交建议！第二波将于 2019 年 1 月 15 日[截止](https://github.com/filecoin-project/devgrants)。）
 - _还有更多！_
 

@@ -53,7 +53,7 @@ _template: blog_detail_ch
 - **检索。** 检索客户可以付费从存储矿工那里检索他们的数据（即检索 [v0](https://filecoin-project.github.io/specs/#retrieval-v0-libp2p-services)）。
 - 还有更多功能！在[此处](https://github.com/filecoin-project/lotus)查看 GitHub 上的代码库！
 
-除了开放 **lotus** 代码库外，今天我们还宣布启动第一个公开 **lotus** 开发网络。设置 **lotus** 节点后，您可以连接到开发网并与其他节点一起开始存储数据或开始挖矿。有关更多详细信息，请阅读下面的 [**lotus** 入门](https://filecoin.io/zh-cn/blog/announcing-lotus/#lotus-%E5%85%A5%E9%97%A8)部分。
+除了开放 **lotus** 代码库外，今天我们还宣布启动第一个公开 **lotus** 开发网络。设置 **lotus** 节点后，您可以连接到开发网并与其他节点一起开始存储数据或开始挖矿。有关更多详细信息，请阅读下面的 [**lotus** 入门](/blog/lotus-filecoin/#lotus-%E5%85%A5%E9%97%A8)部分。
 
 一些非常重要的注意事项：
 
