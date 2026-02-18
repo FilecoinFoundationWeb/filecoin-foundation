@@ -242,6 +242,32 @@
     "metadata": {
       "title": "TODO",
       "description": "TODO"
+    },
+    "hero": {
+      "title": "守护关键数据集的持久保存",
+      "description": "从 AI 数据集到政府档案，领先机构信赖 Filecoin 安全、弹性地存储其最有价值的数据集。"
+    },
+    "featured": {
+      "title": "在 Filecoin 上保存数据的机构",
+      "description": "阅读部分使用 Filecoin 保存数据的机构完整案例研究。",
+      "readCaseStudy": "阅读案例研究"
+    },
+    "upcoming": {
+      "title": "更多数据集（案例研究即将推出）",
+      "description": "了解更多利用 Filecoin 进行数据保存的团队。完整案例研究即将推出。",
+      "visitWebsite": "访问网站"
+    },
+    "cta": {
+      "title": "使用 Filecoin 保存您最重要的数据",
+      "description": "加入已在 Filecoin 网络上保护其最有价值数据集的机构。",
+      "startStoring": "开始在 Filecoin 上存储"
+    },
+    "emptyState": "案例研究即将推出。",
+    "article": {
+      "label": "案例研究",
+      "challenge": "挑战",
+      "solution": "解决方案",
+      "results": "成果"
     }
   },
   "/privacy-policy": {
