@@ -44,7 +44,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
+    "@eslint/js": "9.39.2",
     "@filecoin-foundation/cypress": "0.0.0",
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
@@ -57,7 +57,7 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "cypress": "^15.10.0",
-    "eslint": "^10.0.0",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-only-warn": "^1.1.0",
