@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -23,14 +24,19 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { StorageProviderCardWithImage } from './components/StorageProviderCard/StorageProviderCardWithImage'
 import { StorageProviderSection } from './components/StorageProviderSection'
 import {
-  filecoinStorageProviders,
-  featuredFilecoinStorageProvider,
-  otherFilecoinPoweredSolutions,
+  getFilecoinStorageProviders,
+  getFeaturedFilecoinStorageProvider,
+  getOtherFilecoinPoweredSolutions,
 } from './data/storageProviders'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 export default async function StoreData() {
   const metadata = await getTranslatedMetadata(PATHS.STORE_DATA.path)
+  const t = await getTranslations(PATHS.STORE_DATA.path)
+
+  const featuredProvider = getFeaturedFilecoinStorageProvider(t)
+  const storageProviders = getFilecoinStorageProviders(t)
+  const otherSolutions = getOtherFilecoinPoweredSolutions(t)
 
   return (
     <>
@@ -40,8 +46,8 @@ export default async function StoreData() {
         <Navigation backgroundVariant="transparentDark" />
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
-            title="Decentralized, secure storage for data that matters"
-            description="Filecoin is a dynamic, decentralized storage network that keeps your data secure, verifiable, and always under your control — powering solutions from enterprise platforms to simple onramps."
+            title={t('hero.title')}
+            description={t('hero.description')}
           />
         </PageSection>
 
@@ -56,7 +62,7 @@ export default async function StoreData() {
       <PageSection backgroundVariant="dark" paddingVariant="topNone">
         <LogoSection
           headingTag="h2"
-          title="Trusted by industry leaders"
+          title={t('trustedBy.title')}
           logos={trustedByLogos}
         />
       </PageSection>
@@ -64,20 +70,20 @@ export default async function StoreData() {
       <PageSection backgroundVariant="light">
         <SectionContent
           headingTag="h2"
-          title="Store on Filecoin"
-          description="Find the perfect storage solution for your data on Filecoin."
+          title={t('storeOnFilecoin.title')}
+          description={t('storeOnFilecoin.description')}
         />
         <div className="mt-20 flex flex-col gap-20">
-          <StorageProviderCardWithImage {...featuredFilecoinStorageProvider} />
+          <StorageProviderCardWithImage {...featuredProvider} />
 
           <StorageProviderSection
-            title="Selected storage solutions"
-            providers={filecoinStorageProviders}
+            title={t('selectedSolutions.title')}
+            providers={storageProviders}
           />
 
           <StorageProviderSection
-            title="Other Filecoin-powered solutions"
-            providers={otherFilecoinPoweredSolutions}
+            title={t('otherSolutions.title')}
+            providers={otherSolutions}
           />
 
           <Button
@@ -85,7 +91,7 @@ export default async function StoreData() {
             variant="primary"
             className="self-center"
           >
-            See more Filecoin-powered solutions
+            {t('seeMore')}
           </Button>
         </div>
       </PageSection>
@@ -93,11 +99,11 @@ export default async function StoreData() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           headingTag="h2"
-          title="Not sure what storage solution to choose?"
-          description="Tell us about your needs, and we'll guide you to the Filecoin solution that fits best."
+          title={t('notSure.title')}
+          description={t('notSure.description')}
           cta={
             <Button href="#todo" variant="primary">
-              Talk to an expert
+              {t('notSure.cta')}
             </Button>
           }
         />

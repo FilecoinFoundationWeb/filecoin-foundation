@@ -230,6 +230,84 @@
     "metadata": {
       "title": "TODO",
       "description": "TODO"
+    },
+    "hero": {
+      "title": "TODO",
+      "description": "TODO"
+    },
+    "trustedBy": {
+      "title": "TODO"
+    },
+    "storeOnFilecoin": {
+      "title": "TODO",
+      "description": "TODO"
+    },
+    "selectedSolutions": {
+      "title": "TODO"
+    },
+    "otherSolutions": {
+      "title": "TODO"
+    },
+    "seeMore": "TODO",
+    "notSure": {
+      "title": "TODO",
+      "description": "TODO",
+      "cta": "TODO"
+    },
+    "bestFor": {
+      "aiMlDevelopers": "TODO",
+      "archivalStorage": "TODO",
+      "advancedTechnicalUsers": "TODO",
+      "creators": "TODO",
+      "developers": "TODO",
+      "enterprises": "TODO",
+      "nftProjects": "TODO"
+    },
+    "providers": {
+      "akave": {
+        "description": "TODO",
+        "labels": ["TODO"],
+        "keyFeatures": ["TODO", "TODO", "TODO"]
+      },
+      "cidgravity": {
+        "description": "TODO",
+        "labels": ["TODO"],
+        "keyFeatures": ["TODO", "TODO", "TODO"]
+      },
+      "lighthouse": {
+        "description": "TODO",
+        "labels": ["TODO", "TODO"],
+        "keyFeatures": ["TODO", "TODO", "TODO"]
+      },
+      "ramo": {
+        "description": "TODO",
+        "keyFeatures": ["TODO", "TODO"]
+      },
+      "singularity": {
+        "description": "TODO",
+        "labels": ["TODO"],
+        "keyFeatures": ["TODO", "TODO", "TODO"]
+      },
+      "storacha": {
+        "description": "TODO",
+        "labels": ["TODO"],
+        "keyFeatures": ["TODO", "TODO", "TODO", "TODO"]
+      },
+      "placeholderA": {
+        "description": "TODO",
+        "labels": ["TODO"],
+        "keyFeatures": ["TODO", "TODO"]
+      },
+      "placeholderB": {
+        "description": "TODO",
+        "labels": ["TODO"],
+        "keyFeatures": ["TODO", "TODO"]
+      },
+      "placeholderC": {
+        "description": "TODO",
+        "labels": ["TODO"],
+        "keyFeatures": ["TODO", "TODO"]
+      }
     }
   },
   "/build-on-filecoin": {

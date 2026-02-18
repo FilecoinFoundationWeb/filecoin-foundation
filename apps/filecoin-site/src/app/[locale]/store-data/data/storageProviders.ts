@@ -6,6 +6,8 @@ import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.svg'
 import SingularityMiniatureLogo from '@/assets/miniatures/singularity-miniature.svg'
 import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.svg'
 
+import type { TranslationFunction } from '@/i18n/types'
+
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 import type { StorageProviderCardWithImageProps } from '../components/StorageProviderCard/StorageProviderCardWithImage'
 
@@ -22,144 +24,160 @@ type FeaturedStorageProvider = Pick<
   | 'logo'
   | 'image'
 > & {
-  bestFor: Array<BestForType>
+  bestFor: Array<string>
 }
 
 type StorageProvider = Pick<
   StorageProviderCardProps,
   'name' | 'description' | 'labels' | 'cents' | 'keyFeatures' | 'url' | 'logo'
 > & {
-  bestFor: Array<BestForType>
+  bestFor: Array<string>
 }
 
-type BestForType =
-  | 'AI/ML developers'
-  | 'Archival storage'
-  | 'Advanced technical users'
-  | 'Creators'
-  | 'Developers'
-  | 'Enterprises'
-  | 'NFT projects'
-
 // todo: update price with actual prices
-export const filecoinStorageProviders = [
-  {
-    name: 'Akave Cloud',
-    description: 'Enterprise-grade hot storage for AI & data lakes.',
-    labels: ['Drag and drop', 'S3-compatible'],
-    cents: 10_000,
-    bestFor: ['Enterprises', 'AI/ML developers'],
-    keyFeatures: [
-      'S3-compatible API',
-      'Client-side encryption',
-      'Access control',
-    ],
-    url: 'https://www.akave.ai/',
-    logo: AkaveMiniatureLogo,
-  },
-  {
-    name: 'CIDgravity',
-    description: 'Simple decentralized storage backend for Nextcloud.',
-    labels: ['Drag and drop'],
-    cents: 10_000,
-    bestFor: ['Developers'],
-    keyFeatures: [
-      'Nextcloud integration',
-      'File sync and share',
-      'REST API for programmatic access',
-    ],
-    url: 'https://www.cidgravity.com/',
-    logo: CIDgravityMiniatureLogo,
-  },
-  {
-    name: 'Lighthouse',
-    description: 'Perpetual, long-term data storage.',
-    labels: ['Archival', 'Drag and drop'],
-    cents: 10_000,
-    bestFor: ['Developers', 'NFT projects', 'Creators'],
-    keyFeatures: [
-      '"Pay once, store forever" pricing mode',
-      'Simple web app',
-      'Developer SDK/CLI',
-    ],
-    url: 'https://www.lighthouse.storage/',
-    logo: LighthouseMiniatureLogo,
-  },
-  {
-    name: 'Ramo',
-    description: 'An open-access decentralized cloud network.',
-    labels: ['S3-compatible'],
-    cents: 10_000,
-    bestFor: ['Developers'],
-    keyFeatures: ['S3-compatible API', 'Developer SDK/CLI'],
-    url: 'https://use.ramo.computer/',
-    logo: RamoMiniatureLogo,
-  },
-  {
-    name: 'Singularity CLI',
-    description: 'Directly manage the full deal-making lifecycle on Filecoin.',
-    labels: ['Archival'],
-    cents: 10_000,
-    bestFor: ['Advanced technical users'],
-    keyFeatures: [
-      'Prepare and upload files using the CLI',
-      'Retrieve files with Lassie',
-      'Direct negotiation with storage providers',
-    ],
-    url: 'https://singularity.storage/',
-    logo: SingularityMiniatureLogo,
-  },
-] as const satisfies Array<StorageProvider>
+export function getFilecoinStorageProviders(t: TranslationFunction) {
+  return [
+    {
+      name: 'Akave Cloud',
+      description: t('providers.akave.description'),
+      labels: [t('providers.akave.labels.0'), 'S3-compatible'],
+      cents: 10_000,
+      bestFor: [t('bestFor.enterprises'), t('bestFor.aiMlDevelopers')],
+      keyFeatures: [
+        t('providers.akave.keyFeatures.0'),
+        t('providers.akave.keyFeatures.1'),
+        t('providers.akave.keyFeatures.2'),
+      ],
+      url: 'https://www.akave.ai/',
+      logo: AkaveMiniatureLogo,
+    },
+    {
+      name: 'CIDgravity',
+      description: t('providers.cidgravity.description'),
+      labels: [t('providers.cidgravity.labels.0')],
+      cents: 10_000,
+      bestFor: [t('bestFor.developers')],
+      keyFeatures: [
+        t('providers.cidgravity.keyFeatures.0'),
+        t('providers.cidgravity.keyFeatures.1'),
+        t('providers.cidgravity.keyFeatures.2'),
+      ],
+      url: 'https://www.cidgravity.com/',
+      logo: CIDgravityMiniatureLogo,
+    },
+    {
+      name: 'Lighthouse',
+      description: t('providers.lighthouse.description'),
+      labels: [
+        t('providers.lighthouse.labels.0'),
+        t('providers.lighthouse.labels.1'),
+      ],
+      cents: 10_000,
+      bestFor: [
+        t('bestFor.developers'),
+        t('bestFor.nftProjects'),
+        t('bestFor.creators'),
+      ],
+      keyFeatures: [
+        t('providers.lighthouse.keyFeatures.0'),
+        t('providers.lighthouse.keyFeatures.1'),
+        t('providers.lighthouse.keyFeatures.2'),
+      ],
+      url: 'https://www.lighthouse.storage/',
+      logo: LighthouseMiniatureLogo,
+    },
+    {
+      name: 'Ramo',
+      description: t('providers.ramo.description'),
+      labels: ['S3-compatible'],
+      cents: 10_000,
+      bestFor: [t('bestFor.developers')],
+      keyFeatures: [
+        t('providers.ramo.keyFeatures.0'),
+        t('providers.ramo.keyFeatures.1'),
+      ],
+      url: 'https://use.ramo.computer/',
+      logo: RamoMiniatureLogo,
+    },
+    {
+      name: 'Singularity CLI',
+      description: t('providers.singularity.description'),
+      labels: [t('providers.singularity.labels.0')],
+      cents: 10_000,
+      bestFor: [t('bestFor.advancedTechnicalUsers')],
+      keyFeatures: [
+        t('providers.singularity.keyFeatures.0'),
+        t('providers.singularity.keyFeatures.1'),
+        t('providers.singularity.keyFeatures.2'),
+      ],
+      url: 'https://singularity.storage/',
+      logo: SingularityMiniatureLogo,
+    },
+  ] satisfies Array<StorageProvider>
+}
 
-export const featuredFilecoinStorageProvider = {
-  image: {
-    ...Storacha,
-    alt: 'Storacha',
-  },
-  name: 'Storacha',
-  description: 'High-speed hot storage for fast data retrieval.',
-  labels: ['Drag and drop'],
-  cents: 10_000,
-  bestFor: ['Developers'],
-  keyFeatures: [
-    'Fast access to data',
-    'Tightly integrated with IPFS',
-    'Optimized for content delivery and streaming',
-    'Decentralized permissions with UCANs',
-  ],
-  url: 'https://storacha.network/',
-  logo: StorachaMiniatureLogo,
-} as const satisfies FeaturedStorageProvider
+export function getFeaturedFilecoinStorageProvider(t: TranslationFunction) {
+  return {
+    image: {
+      ...Storacha,
+      alt: 'Storacha',
+    },
+    name: 'Storacha',
+    description: t('providers.storacha.description'),
+    labels: [t('providers.storacha.labels.0')],
+    cents: 10_000,
+    bestFor: [t('bestFor.developers')],
+    keyFeatures: [
+      t('providers.storacha.keyFeatures.0'),
+      t('providers.storacha.keyFeatures.1'),
+      t('providers.storacha.keyFeatures.2'),
+      t('providers.storacha.keyFeatures.3'),
+    ],
+    url: 'https://storacha.network/',
+    logo: StorachaMiniatureLogo,
+  } satisfies FeaturedStorageProvider
+}
 
-export const otherFilecoinPoweredSolutions = [
-  {
-    name: 'Ipsum Storage A',
-    description: 'Lorem ipsum dolor sit amet.',
-    labels: ['Lorem ipsum'],
-    cents: 300,
-    bestFor: ['Developers'],
-    keyFeatures: ['Lorem ipsum A', 'Lorem ipsum B'],
-    url: '#',
-    logo: PlaceholderLogo,
-  },
-  {
-    name: 'Ipsum Storage B',
-    description: 'Lorem ipsum dolor sit amet.',
-    labels: ['Lorem ipsum'],
-    cents: 300,
-    bestFor: ['Developers'],
-    keyFeatures: ['Lorem ipsum A', 'Lorem ipsum B'],
-    url: '#',
-    logo: PlaceholderLogo,
-  },
-  {
-    name: 'Ipsum Storage C',
-    description: 'Lorem ipsum dolor sit amet.',
-    labels: ['Lorem ipsum'],
-    cents: 300,
-    bestFor: ['Developers'],
-    keyFeatures: ['Lorem ipsum A', 'Lorem ipsum B'],
-    url: '#',
-    logo: PlaceholderLogo,
-  },
-] as const satisfies Array<StorageProvider>
+export function getOtherFilecoinPoweredSolutions(t: TranslationFunction) {
+  return [
+    {
+      name: 'Ipsum Storage A',
+      description: t('providers.placeholderA.description'),
+      labels: [t('providers.placeholderA.labels.0')],
+      cents: 300,
+      bestFor: [t('bestFor.developers')],
+      keyFeatures: [
+        t('providers.placeholderA.keyFeatures.0'),
+        t('providers.placeholderA.keyFeatures.1'),
+      ],
+      url: '#',
+      logo: PlaceholderLogo,
+    },
+    {
+      name: 'Ipsum Storage B',
+      description: t('providers.placeholderB.description'),
+      labels: [t('providers.placeholderB.labels.0')],
+      cents: 300,
+      bestFor: [t('bestFor.developers')],
+      keyFeatures: [
+        t('providers.placeholderB.keyFeatures.0'),
+        t('providers.placeholderB.keyFeatures.1'),
+      ],
+      url: '#',
+      logo: PlaceholderLogo,
+    },
+    {
+      name: 'Ipsum Storage C',
+      description: t('providers.placeholderC.description'),
+      labels: [t('providers.placeholderC.labels.0')],
+      cents: 300,
+      bestFor: [t('bestFor.developers')],
+      keyFeatures: [
+        t('providers.placeholderC.keyFeatures.0'),
+        t('providers.placeholderC.keyFeatures.1'),
+      ],
+      url: '#',
+      logo: PlaceholderLogo,
+    },
+  ] satisfies Array<StorageProvider>
+}
