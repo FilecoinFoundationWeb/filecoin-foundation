@@ -249,6 +249,12 @@
       "title": "Other Filecoin-powered solutions"
     },
     "seeMore": "See more Filecoin-powered solutions",
+    "perMonth": "/ month",
+    "price": "Price",
+    "bestForLabel": "Best For",
+    "keyFeaturesLabel": "Key Features",
+    "storeWith": "Store with {name}",
+    "featured": "Featured",
     "notSure": {
       "title": "Not sure what storage solution to choose?",
       "description": "Tell us about your needs, and we'll guide you to the Filecoin solution that fits best.",
