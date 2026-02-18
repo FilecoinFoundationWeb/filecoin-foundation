@@ -1,4 +1,5 @@
 import type { Locale } from '@/i18n/types'
+import type { z } from 'zod'
 
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
 import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
@@ -8,8 +9,8 @@ import { PATHS } from '@/constants/paths'
 import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
 export async function getBlogPostData(slug: string, locale: Locale) {
-  const data = await getBlogPostMarkdownData(slug, locale)
-  return transformBlogPostData(data)
+  const post = await getBlogPostMarkdownData(slug, locale)
+  return transformBlogPostData(post)
 }
 
 export async function getBlogPostsData(locale: Locale) {
@@ -19,6 +20,7 @@ export async function getBlogPostsData(locale: Locale) {
   })
 
   return allPosts
+    .filter(isBlogPostPublished)
     .map(transformBlogPostData)
     .map(({ content: _, ...post }) => post)
 }
@@ -46,4 +48,13 @@ function transformBlogPostData(
 
 function getDirectoryPathForLocale(locale: Locale) {
   return PATHS.BLOG.entriesPath + `/${locale}`
+}
+
+type IsBlogPostPublishedParams = Pick<
+  z.infer<typeof BlogPostFrontmatterSchema>,
+  'draft'
+>
+
+function isBlogPostPublished(post: IsBlogPostPublishedParams) {
+  return post.draft !== true
 }
