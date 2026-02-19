@@ -10,7 +10,10 @@ import { ExternalTextLink } from '@filecoin-foundation/ui-filecoin/TextLink/Exte
 
 import type { TranslationFunction } from '@/i18n/types'
 
-import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
+import {
+  FILECOIN_CLOUD_DOCS_URLS,
+  FILECOIN_DOCS_URLS,
+} from '@/constants/siteMetadata'
 
 export function getDecentralizedByDesign(t: TranslationFunction) {
   return [
@@ -52,7 +55,7 @@ export function getDecentralizedByDesign(t: TranslationFunction) {
         'decentralizedByDesign.verifiableRetrieval.description',
         {
           focLink: (chunks) => (
-            <ExternalTextLink href="https://docs.filecoin.cloud/introduction/about/">
+            <ExternalTextLink href={FILECOIN_CLOUD_DOCS_URLS.about}>
               {chunks}
             </ExternalTextLink>
           ),
