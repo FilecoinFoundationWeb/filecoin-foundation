@@ -45,7 +45,7 @@ export function useNewsletterForm() {
       }
 
       dialog.open({
-        message: 'Successfully subscribed!',
+        message: 'Check your email to confirm your subscription.',
         icon: { component: CheckCircleIcon, color: 'success' },
       })
     } catch (err) {

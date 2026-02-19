@@ -1,6 +1,6 @@
 import { type NextRequest } from 'next/server'
 
-const MAILCHIMP_URL = `https://protocol.us16.list-manage.com/subscribe/post-json?u=${process.env.MAILCHIMP_U}&id=${process.env.MAILCHIMP_ID}`
+const MAILCHIMP_JSONP_CALLBACK = 'handle_response'
 
 export async function POST(request: NextRequest) {
   const { email } = await request.json()
@@ -12,11 +12,39 @@ export async function POST(request: NextRequest) {
     )
   }
 
+  const baseUrl = getMailchimpSubscribeUrl()
+  if (!baseUrl) {
+    return Response.json(
+      { ok: false, message: 'Subscription service unavailable' },
+      { status: 503 },
+    )
+  }
+
   const res = await fetch(
-    `${MAILCHIMP_URL}&EMAIL=${encodeURIComponent(email)}`,
-    { method: 'GET', headers: { Accept: 'application/json' } },
+    `${baseUrl}&EMAIL=${encodeURIComponent(email)}&c=${MAILCHIMP_JSONP_CALLBACK}`,
+    { method: 'GET' },
   )
-  const data = (await res.json()) as { result?: string; msg?: string }
+
+  if (!res.ok) {
+    return Response.json(
+      { ok: false, message: 'Subscription service unavailable' },
+      { status: 502 },
+    )
+  }
+
+  const text = await res.text()
+
+  let data: { result?: string; msg?: string }
+  try {
+    const json = text.replace(/^[^(]+\(/, '').replace(/\)$/, '')
+    data = JSON.parse(json)
+  } catch {
+    console.error('Failed to parse Mailchimp response as JSON:', text)
+    return Response.json(
+      { ok: false, message: 'Subscription service unavailable' },
+      { status: 502 },
+    )
+  }
 
   if (data.result === 'error') {
     return Response.json(
@@ -26,4 +54,11 @@ export async function POST(request: NextRequest) {
   }
 
   return Response.json({ ok: true })
+}
+
+function getMailchimpSubscribeUrl(): string | null {
+  const u = process.env.MAILCHIMP_U
+  const id = process.env.MAILCHIMP_LIST_ID
+  if (!u || !id) return null
+  return `https://protocol.us16.list-manage.com/subscribe/post-json?u=${u}&id=${id}`
 }
