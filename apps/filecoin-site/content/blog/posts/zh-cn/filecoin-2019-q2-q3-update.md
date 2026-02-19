@@ -60,7 +60,7 @@ _template: blog_detail_ch
 
 ## 3. 路线图更新
 
-在上一次[重大更新中](https://filecoin.io/blog/update-2018-q3-q4/#2-filecoin-project-roadmap-update)，我们宣布了对[路线图](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/)的一些修订。目前我们对路线图进行了又一次修订，以包括最近取得的进展和最新的上线日期。
+在上一次[重大更新中](/blog/filecoin-2018-q3-q4-update/#2-filecoin-project-roadmap-update)，我们宣布了对[路线图](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/)的一些修订。目前我们对路线图进行了又一次修订，以包括最近取得的进展和最新的上线日期。
 
 到目前为止，在2019年，我们取得了以下进展 🎉🎉🎉：
 
@@ -155,7 +155,7 @@ _template: blog_detail_ch
 - **🚢 Filecoin Shipyard。** [Filecoin Shipyard](https://github.com/filecoin-shipyard) GitHub 组织包含有助于发展 Filecoin 生态系统的项目。如果有任何对 Shipyard 应有哪些特色的想法，直接在我们的论坛上发帖，主持人将为你进行设置！
 - **❤️ Filecoin开发津贴。** 我们最近启动了 [Filecoin 开发津贴计划](https://filecoin.io/grants/)！每个季度，我们将向提交有助于开发Filecoin生态系统的工作提案的团体/个人提供津贴。我们已经确定了项目提案的范围和开放津贴的类别。我们的下一个津贴截止日期是9月30日！[请立即申请](https://github.com/filecoin-project/devgrants#-how-to-apply)！
 - **🤝 合作:** 我们非常高兴能够支持一些正在进行的合作。
-  - **和以太坊基金会的VDF研究。** 正如我们在[此博客文章](https://filecoin.io/blog/collaboration-on-vdfs/)中宣布的那样，我们正在与以太坊基金会合作，共同研究VDF的硬件加速研究。尽管我们目前在Filecoin对安全性要求高的应用程序中均未使用VDF，但我们将来可能会使用。为了我们和整个行业，我们希望确保VDF易于理解和安全。
+  - **和以太坊基金会的VDF研究。** 正如我们在[此博客文章](/blog/collaboration-with-the-ethereum-foundation-on-vdfs/)中宣布的那样，我们正在与以太坊基金会合作，共同研究VDF的硬件加速研究。尽管我们目前在Filecoin对安全性要求高的应用程序中均未使用VDF，但我们将来可能会使用。为了我们和整个行业，我们希望确保VDF易于理解和安全。
   - **Coinlist SNARK 挑战赛。** 正如我们在[这里](https://filecoin.io/blog/announcing-the-snark-challenge/)宣布的那样，我们很荣幸赞助最近结束的Coinlist SNARK挑战赛。挑战赛的总冠军使Groth16 SNARK证明者的速度提高了3.6倍，并已将其解决方案开源（[在此](https://github.com/CodaProtocol/gpu-groth16-prover-3x)处可见）。
   - **斯坦福区块链中心。** 我们很荣幸能成为[斯坦福区块链中心](https://cbr.stanford.edu/sbc19/)的持续合作伙伴，包括作为今年初举行的斯坦福区块链会议的赞助商。
   - 我们已迫不及待能够通过Filecoin Research，Filecoin开发津贴计划和Filecoin Shipyard开始更多的合作！

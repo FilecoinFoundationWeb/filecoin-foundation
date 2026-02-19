@@ -23,7 +23,7 @@ title: A Guide to Filecoin Storage Mining
 _template: blog_detail
 ---
 
-A lot has changed since our [last set of guidelines](https://filecoin.io/blog/filecoin-testnet-mining/) for Filecoin testnet storage miners was published! At the time, we had [just launched](https://filecoin.io/blog/filecoin-testnet-is-live/) the first iteration of the testnet, and our advice then reflected the uncertainty and experimental nature of the nascent network. We’re extremely grateful to all who participated (and continue to participate) in the testnet – thanks to your support, we’ve been able to rapidly mature our protocols and implementations. We’re now in the [second testnet phase](https://filecoin.io/blog/filecoin-testnet-phase-2-is-here/), and are [steadily progressing](https://filecoin.io/blog/roadmap-update-april-2020/) towards mainnet launch.
+A lot has changed since our [last set of guidelines](/blog/filecoin-testnet-mining/) for Filecoin testnet storage miners was published! At the time, we had [just launched](/blog/filecoin-testnet-is-live/) the first iteration of the testnet, and our advice then reflected the uncertainty and experimental nature of the nascent network. We’re extremely grateful to all who participated (and continue to participate) in the testnet – thanks to your support, we’ve been able to rapidly mature our protocols and implementations. We’re now in the [second testnet phase](/blog/filecoin-testnet-phase-2-is-here/), and are [steadily progressing](/blog/filecoin-roadmap-update-april-2020/) towards mainnet launch.
 
 In this post, we offer an updated guide to Filecoin storage mining, and discuss some of the recently announced incentives and opportunities for members of the growing Filecoin community.
 
@@ -79,7 +79,7 @@ A storage miner’s probability of being elected corresponds to their storage po
 
 ### Storage power
 
-A Filecoin storage miner’s _power_, which corresponds to the likelihood that a storage miner will be elected to mine a block, is roughly proportional to the amount of storage they have sealed on behalf of the network. To further incentivize the storage of “useful” data over simple capacity commitments, storage miners have the additional opportunity to compete for special deals offered by [_verified clients_](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/). Such clients are certified with respect to their intent to offer deals involving the storage of meaningful data, and the power a storage miner earns for these deals is augmented by a multiplier. The total amount of power a given storage miner has, after accounting for this multiplier, is known as _quality-adjusted_ power.
+A Filecoin storage miner’s _power_, which corresponds to the likelihood that a storage miner will be elected to mine a block, is roughly proportional to the amount of storage they have sealed on behalf of the network. To further incentivize the storage of “useful” data over simple capacity commitments, storage miners have the additional opportunity to compete for special deals offered by [_verified clients_](/blog/filecoin-s-cryptoeconomic-constructions/). Such clients are certified with respect to their intent to offer deals involving the storage of meaningful data, and the power a storage miner earns for these deals is augmented by a multiplier. The total amount of power a given storage miner has, after accounting for this multiplier, is known as _quality-adjusted_ power.
 
 ## Filecoin implementations
 
@@ -159,15 +159,15 @@ As the launch of the mainnet approaches, a growing number of opportunities are b
 
 ### SpaceRace
 
-In preparation for the mainnet, Protocol Labs has recently announced an incentives program, [SpaceRace](https://filecoin.io/blog/announcing-testnet-incentives/), to stress-test the testnet. Participants will have the opportunity to compete for mainnet filecoin by onboarding as much storage as possible.
+In preparation for the mainnet, Protocol Labs has recently announced an incentives program, [SpaceRace](/blog/announcing-filecoin-s-testnet-incentives/), to stress-test the testnet. Participants will have the opportunity to compete for mainnet filecoin by onboarding as much storage as possible.
 
 ### HackFS
 
-[HackFS](https://filecoin.io/blog/announcing-filecoin-ignite-and-hackfs/) is a 30-day virtual hackathon aimed at building the foundation of the decentralized web. Developers will build dapps, games, dev tools, DeFi integrations, and other hacks that utilize decentralized storage. HackFS will be hosted by [ETHGlobal](https://ethglobal.co/) and [Protocol Labs](https://protocol.ai/), and will have all the hackathon staples: workshops, mentorship, inspiring talks, AMAs, and prizes!
+[HackFS](/blog/one-more/) is a 30-day virtual hackathon aimed at building the foundation of the decentralized web. Developers will build dapps, games, dev tools, DeFi integrations, and other hacks that utilize decentralized storage. HackFS will be hosted by [ETHGlobal](https://ethglobal.co/) and [Protocol Labs](https://protocol.ai/), and will have all the hackathon staples: workshops, mentorship, inspiring talks, AMAs, and prizes!
 
 ### Filecoin Discover
 
-Filecoin Discover is a [recently announced](https://filecoin.io/blog/intro-filecoin-discover/) initiative to seed Filecoin with some of humanity’s most valuable cultural and scientific data. Individuals that buy in to the Discover program will receive one-year quality-adjusted storage deals, with Discover acting as the verified client.
+Filecoin Discover is a [recently announced](/blog/introducing-filecoin-discover/) initiative to seed Filecoin with some of humanity’s most valuable cultural and scientific data. Individuals that buy in to the Discover program will receive one-year quality-adjusted storage deals, with Discover acting as the verified client.
 
 ### Filecoin dev grants
 

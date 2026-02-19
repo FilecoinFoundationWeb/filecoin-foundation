@@ -67,7 +67,7 @@ Filecoin rewards miners for the storage they provide to the network. **Miners sh
 
 Filecoin is relatively unopinionated about the form of storage provided to the network, however it is important to reiterate that the storage medium used for providing storage to the network **will be read** during Election PoSt. For this reason, we recommend choosing a storage medium that can perform reads quickly (i.e., not cold storage).
 
-Currently in our testing configuration, a commodity harddrive provided sufficient read speeds to fit within the ElectionPoSt epoch window. Miners should consider the time budget allotted for Election PoSt and derive their own requirements based on the speed of their network and compute resources. For more information about Election PoSt, please see [Proof-of-Spacetime](https://filecoin.io/blog/filecoin-testnet-mining/#proof-of-spacetime).
+Currently in our testing configuration, a commodity harddrive provided sufficient read speeds to fit within the ElectionPoSt epoch window. Miners should consider the time budget allotted for Election PoSt and derive their own requirements based on the speed of their network and compute resources. For more information about Election PoSt, please see [Proof-of-Spacetime](/blog/filecoin-testnet-mining/#proof-of-spacetime).
 
 ![Storage](/blog/dark-servers-center-room-with-computers-storage-systems_117023-894.jpg)
 

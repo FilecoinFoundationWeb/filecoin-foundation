@@ -24,7 +24,7 @@ title: "Meet the HackFS Teams Vol. 1: Omo Earth, Pygate, Unchained Index, Padloc
 _template: blog_detail
 ---
 
-_Welcome to the sixth installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network. We hope this post, as well as others in this series, inspires you to join the movement and build world-class tools for the distributed web. Check out the last post featuring Juan Leni,_ [_co-founder of Zondax_](https://filecoin.io/blog/community-juan-leni-zondax/)_, which is building cryptographic libraries, hardware wallet integrations, ledger apps, and GPU accelerated software for Filecoin._
+_Welcome to the sixth installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network. We hope this post, as well as others in this series, inspires you to join the movement and build world-class tools for the distributed web. Check out the last post featuring Juan Leni,_ [_co-founder of Zondax_](/blog/juan-leni-zondax/)_, which is building cryptographic libraries, hardware wallet integrations, ledger apps, and GPU accelerated software for Filecoin._
 
 This week we’re featuring four teams participating in [HackFS](https://hackfs.com/), a month-long hackathon co-hosted by Protocol Labs and ETH Global, designed to showcase the power of Web3. Participants are building anything and everything that can benefit from decentralized storage, from dapps and games, to dev tools and defi integrations. Throughout the month, we’ll check in with different teams to dive deeper into their work.
 

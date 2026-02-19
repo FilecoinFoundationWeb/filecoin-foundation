@@ -28,7 +28,7 @@ _template: blog_detail_ch
 
 ## 上线不同实现的重要性
 
-正如我们在[这篇博客文章](https://filecoin.io/blog/announcing-lotus/)里首次提到的那样，上线多种实现的Filecoin网络是我们实现网络安全策略的关键部分。可在同一网络进行互操作的多个实现可减少*一个*实现出现重大错误和破坏整个网络的风险。
+正如我们在[这篇博客文章](/blog/announcing-lotus-our-first-alternate-filecoin-implementation/)里首次提到的那样，上线多种实现的Filecoin网络是我们实现网络安全策略的关键部分。可在同一网络进行互操作的多个实现可减少*一个*实现出现重大错误和破坏整个网络的风险。
 
 此外，任何像Filecoin的开源项目的成功都基于一个强大的并共同参与项目建设和管理的社区。最终，协议实验室将成为**许多**贡献他们能量、才华和资源来使Filecoin成为推动互联网基础架构的重要力量之一。我们非常高兴地看到像ChainSafe和Soramitsu这样杰出的团队构建实现并为更广泛的Filecoin生态系统提供安全性。
 

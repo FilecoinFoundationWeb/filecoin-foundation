@@ -33,11 +33,11 @@ _template: blog_detail
 
 ## 1. Opening up development and research repos
 
-Good news! After many months building things privately, we are ready to open up a number of codebases and community forums. This is right on schedule as predicted in our [Project Roadmap](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn) and [last update](https://filecoin.io/blog/update-2018-q1-q2/). Read our [announcement blog post](https://filecoin.io/blog/opening-filecoin-project-repos/) for more.
+Good news! After many months building things privately, we are ready to open up a number of codebases and community forums. This is right on schedule as predicted in our [Project Roadmap](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn) and [last update](/blog/filecoin-2018-q1-q2-update/). Read our [announcement blog post](https://filecoin.io/blog/opening-filecoin-project-repos/) for more.
 
 ## 2. Filecoin Project Roadmap Update
 
-In our [last big update](https://filecoin.io/blog/update-2018-q1-q2/), we published a high-level [roadmap](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn), with upcoming optimistic milestones.
+In our [last big update](/blog/filecoin-2018-q1-q2-update/), we published a high-level [roadmap](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn), with upcoming optimistic milestones.
 
 We are pleased to report that – so far – we have hit our first two big milestones on time 🎉🎉, and added a third 🎉:
 
@@ -269,7 +269,7 @@ Filecoin is built on top of and depends heavily on [IPFS](https://ipfs.tech/), a
 - Miners cannot earn actual block rewards.
 - Exchanges claiming to trade in filecoin or filecoin futures are either fraudulent or very confused. There should not yet be any sales or purchases of devnet filecoin – or any other filecoin.
 - Nobody should invest in mining hardware based on any specs in the devnet, as these specs will likely change.
-- Beware of any potential scams anywhere based on claims contrary to the above. We have unfortunately heard of some potentially fraudulent activity in China and Hong Kong. Please review [the Anti-Fraud Statement](https://filecoin.io/blog/china-antifraud/), which strongly recommends avoiding anyone in China or Hong Kong claiming to be commercially or officially affiliated with the Filecoin project (or IPFS or Protocol Labs) at this time.
+- Beware of any potential scams anywhere based on claims contrary to the above. We have unfortunately heard of some potentially fraudulent activity in China and Hong Kong. Please review [the Anti-Fraud Statement](/blog/anti-fraud-statement-for-our-communities-in-china-hong-kong/), which strongly recommends avoiding anyone in China or Hong Kong claiming to be commercially or officially affiliated with the Filecoin project (or IPFS or Protocol Labs) at this time.
 
 ## Many Thanks
 

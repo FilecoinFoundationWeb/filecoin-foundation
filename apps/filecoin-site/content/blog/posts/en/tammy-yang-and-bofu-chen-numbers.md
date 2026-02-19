@@ -28,7 +28,7 @@ title: "Tammy Yang and Bofu Chen, Numbers"
 _template: blog_detail
 ---
 
-_Welcome to the second installment of our Filecoin Community Highlights series, where we feature users and developers who are building essential tools and services on the Filecoin network. We hope these stories inspire others to join us in our mission to build world-class tools for the distributed web. Check out our_ [_first interview_](https://filecoin.io/blog/community-andrew-hill-textile/) _with Textile’s Andrew Hill._
+_Welcome to the second installment of our Filecoin Community Highlights series, where we feature users and developers who are building essential tools and services on the Filecoin network. We hope these stories inspire others to join us in our mission to build world-class tools for the distributed web. Check out our_ [_first interview_](/blog/meet-andrew-hill/) _with Textile’s Andrew Hill._
 
 [Numbers](https://numbersprotocol.io/) is a company based in Taiwan that’s building technology to protect data integrity. The Numbers framework is an open, transparent, and traceable data system consisting of 3 layers: application, data control, and infrastructure. At each layer, unique features such as site-of-capture fingerprinting, privacy-preserving computation, and data verification all contribute to ensuring data remains trustworthy. Potential applications include evidence preservation, medical device collection, Know Your Customer administration, insurance validation, and other scenarios.
 
@@ -66,7 +66,7 @@ The published version of Numbers that we’re working on can be used on the [HTC
 
 **And now you’re using IPFS and Filecoin, too, yes?**
 
-**Tammy:** We leverage [Textile](https://filecoin.io/blog/community-andrew-hill-textile/), and Textile is based on IPFS. What’s great about IPFS is that it gives every piece of digital content a unique ID. When people take photos or videos on their mobile phones, those files are very large. And it can be impractical to add that data directly to the ledger because current ledger technology is not designed to record such a huge amount of digital content.
+**Tammy:** We leverage [Textile](/blog/meet-andrew-hill/), and Textile is based on IPFS. What’s great about IPFS is that it gives every piece of digital content a unique ID. When people take photos or videos on their mobile phones, those files are very large. And it can be impractical to add that data directly to the ledger because current ledger technology is not designed to record such a huge amount of digital content.
 
 With IPFS, we only need to register the content ID to the ledger, instead of the entire file of digital content. So for us, it’s a great match between the ledger and the IPFS technology, to make the digital data traceable and trustworthy.
 

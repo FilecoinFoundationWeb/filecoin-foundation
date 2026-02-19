@@ -23,7 +23,7 @@ title: 开始入门 Filecoin Repos 和 Devnets
 _template: blog_detail_ch
 ---
 
-免责声明:将技术概念从一种语言完美地翻译到另一种语言是困难的，因此请注意，我们不能保证这个翻译的准确性。 [原文可以在这里找到。](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/)
+免责声明:将技术概念从一种语言完美地翻译到另一种语言是困难的，因此请注意，我们不能保证这个翻译的准确性。 [原文可以在这里找到。](/blog/getting-started-with-filecoin-repos-and-devnets/)
 
 正如我们在[这里](https://filecoin.io/zh-cn/blog/opening-filecoin-project-repos/)宣布的，我们最近在 [GitHub](https://github.com/filecoin-project)上开放了 Filecoin 项目 repos。你可以访问 GitHub repos 来探索代码库、开发工具、社区资源等等。如果你准备好直接跳进去，这里有一些方法可以让你了解更多。
 

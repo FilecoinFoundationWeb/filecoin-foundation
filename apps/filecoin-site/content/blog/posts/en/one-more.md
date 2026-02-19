@@ -25,7 +25,7 @@ Filecoin is getting closer to mainnet launch, and the ecosystem is moving at bla
 
 We are thrilled to announce [**Filecoin Ignite**](https://hub.fil.org/events/), a series of events gathering the community, to learn, show, and build together. This is a unique opportunity to dive deep into the tech and share knowledge with other pioneers. It is a chance to hack on ideas and build amazing things. It is a spotlight to show the world what you’ve been working on. And you can do so in one of several events tailored to different audiences.
 
-We currently have 6 main events lined up. We’ve already announced one: [SpaceRace](https://filecoin.io/blog/announcing-testnet-incentives/), a world-wide competition for Filecoin Miners. Today, we’re announcing the second: [HackFS](https://hackfs.com/). This is a collaboration with one of our favorite groups in web3: the fantastic ETHGlobal team.
+We currently have 6 main events lined up. We’ve already announced one: [SpaceRace](/blog/announcing-filecoin-s-testnet-incentives/), a world-wide competition for Filecoin Miners. Today, we’re announcing the second: [HackFS](https://hackfs.com/). This is a collaboration with one of our favorite groups in web3: the fantastic ETHGlobal team.
 
 Many Ignite events will have sizable prizes, for intrepid developers and miners. We expect the total prize pools to be over 4 Million FIL and 250K USD, spread out across events.
 

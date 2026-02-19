@@ -26,11 +26,11 @@ title: 做好准备参与Filecoin太空竞赛
 
 ![测试网数据](/blog/testnet-stats-jul-14.jpg)
 
-随着主网启动，我们下一个里程碑是发布[Filecoin测试网奖励计划](https://filecoin.io/blog/announcing-testnet-incentives/) ——也称为太空竞赛。本次竞赛旨在对网络进行压力测试，鼓励世界各地的参与者参与，并帮助矿工做好运行世界上规模最大的分布式网络的准备。在为期3周的竞赛中，矿工将竞争存储网络上尽可能多的存储容量。全球排名前100位的矿工以及各大洲排名前50位的矿工将根据竞赛期间在Filecoin网络上的存储量来获取Filecoin奖励。除了竞赛优胜者获得奖励之外，太空竞赛里的filecoin代币还致力于帮助矿工在Filecoin主网上更快地提高其存储量，并进行其他的优化工作以保证过程顺利运行。有关竞赛规则和参赛要求，请参考我们的[博客公告](https://filecoin.io/blog/announcing-testnet-incentives/)。
+随着主网启动，我们下一个里程碑是发布[Filecoin测试网奖励计划](/blog/announcing-filecoin-s-testnet-incentives/) ——也称为太空竞赛。本次竞赛旨在对网络进行压力测试，鼓励世界各地的参与者参与，并帮助矿工做好运行世界上规模最大的分布式网络的准备。在为期3周的竞赛中，矿工将竞争存储网络上尽可能多的存储容量。全球排名前100位的矿工以及各大洲排名前50位的矿工将根据竞赛期间在Filecoin网络上的存储量来获取Filecoin奖励。除了竞赛优胜者获得奖励之外，太空竞赛里的filecoin代币还致力于帮助矿工在Filecoin主网上更快地提高其存储量，并进行其他的优化工作以保证过程顺利运行。有关竞赛规则和参赛要求，请参考我们的[博客公告](/blog/announcing-filecoin-s-testnet-incentives/)。
 
 ## 最新区块奖励计划
 
-除了提高存储容量外，验证Filecoin网络作为*为人类信息社会奠定分布式的、高效且强大的基础*能够真正成功的重要部分就是 - 来测试Filecoin区块链中的实际挖出区块总量。一旦主网启动，这将成为矿工通过运行网络获得奖励的主要方式之一。因此，为了确保测试网激励计划能准确模拟主网动态，我们很高兴地宣布，将**额外奖励10万枚FIL**按比例分配给20名获得最多区块奖励的参与者。额外奖励池将遵守与太空竞赛相同的[规则与要求](https://filecoin.io/blog/announcing-testnet-incentives/#rules)，并将拥有自己的排行榜。
+除了提高存储容量外，验证Filecoin网络作为*为人类信息社会奠定分布式的、高效且强大的基础*能够真正成功的重要部分就是 - 来测试Filecoin区块链中的实际挖出区块总量。一旦主网启动，这将成为矿工通过运行网络获得奖励的主要方式之一。因此，为了确保测试网激励计划能准确模拟主网动态，我们很高兴地宣布，将**额外奖励10万枚FIL**按比例分配给20名获得最多区块奖励的参与者。额外奖励池将遵守与太空竞赛相同的[规则与要求](/blog/announcing-filecoin-s-testnet-incentives/#rules)，并将拥有自己的排行榜。
 
 请加入[Filecoin slack](https://filecoin.io/slack) 上的**#space-race**频道获取最新动态！
 

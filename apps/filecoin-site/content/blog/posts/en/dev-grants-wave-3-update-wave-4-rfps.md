@@ -46,12 +46,12 @@ For Wave 3 of Dev Grants that were due in April, we received 44 proposals from t
 
 Thanks to all teams that applied! Proposals not funded in Wave 3 will be re-considered in Wave 4. Wave 4 proposals are due **July 1st at 23:59 PDT** for priority consideration. We will evaluate later proposals as capacity allows. A list of [**Wave 4 RFPs**](https://github.com/filecoin-project/devgrants/tree/master?tab=readme-ov-file#requests-for-proposals-rfps) is available and we also encourage teams to apply for Open Grants with your own ideas.
 
-There is also an exciting 30-day [**HackFS virtual hackthon**](https://filecoin.io/blog/announcing-filecoin-ignite-and-hackfs/) coming up on July 6th where you can noodle on new Filecoin experiments with other dapp developers and receive technical advice and support. [_Apply for HackFS_](https://hackfs.com/) to participate!
+There is also an exciting 30-day [**HackFS virtual hackthon**](/blog/one-more/) coming up on July 6th where you can noodle on new Filecoin experiments with other dapp developers and receive technical advice and support. [_Apply for HackFS_](https://hackfs.com/) to participate!
 
 ## PB-scale miner testing RFP update
 
 We received 48 proposals in Wave 3 for PB-scale miner testing RFP. Because proofs will continue to evolve, for this grant we have decided to focus on understanding the performance and tradeoffs of different **storage layer options** better. We will be reaching out to select teams who described interesting storage layer technology in their proposals soon.
 
-Filecoin mining operators with large amounts of storage are also encouraged to participate in the upcoming [**SpaceRace**](https://filecoin.io/blog/announcing-testnet-incentives/) world-wide testnet incentives program.
+Filecoin mining operators with large amounts of storage are also encouraged to participate in the upcoming [**SpaceRace**](/blog/announcing-filecoin-s-testnet-incentives/) world-wide testnet incentives program.
 
 _Cheers to all community members who submitted dev grant proposals and we hope to see more of you in upcoming waves!_

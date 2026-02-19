@@ -55,7 +55,7 @@ Yes, we’ll be hosting a closing ceremony on Monday 09/14 at 11pm (UTC) / 4pm (
 
 **When is mainnet launch?**
 
-You can consult the [Filecoin August 2020 Roadmap Update](https://filecoin.io/blog/roadmap-update-august-2020/) for the latest, and the latest timeline is also available in the [public project roadmap gantt chart](https://app.instagantt.com/shared/s/1152992274307505/latest). The tentative mainnet launch window as of those posts ends on September 28 2020, but of course that is subject to revisions.
+You can consult the [Filecoin August 2020 Roadmap Update](/blog/filecoin-roadmap-update-august-2020/) for the latest, and the latest timeline is also available in the [public project roadmap gantt chart](https://app.instagantt.com/shared/s/1152992274307505/latest). The tentative mainnet launch window as of those posts ends on September 28 2020, but of course that is subject to revisions.
 
 **Do you have any thoughts on what fees/costs are going to be like on mainnet? Wondering how much FIL a miner should expect to have ‘in their coffers’ to start.**
 

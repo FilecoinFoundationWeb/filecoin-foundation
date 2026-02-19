@@ -25,7 +25,7 @@ title: 欢迎来到太空竞赛
 _template: blog_detail_ch
 ---
 
-[Filecoin测试网奖励计划](https://filecoin.io/blog/announcing-testnet-incentives/)将在8月24日晚上10点(3pm PT | 8月25日 6am CST)开启！在接下来的3周内，随着越来越多的存储空间竞相提交，Filecoin测试网上的矿工们将争夺高达400万FIL的奖金。在过去的一个月里，我们已经看到来自五大洲的240多名矿工准备参与——达到了1TiB/秒的封存速度（3天内封存了15个PiB）!非常感谢所有矿工帮助诊断问题，提出修复方案，并以令人兴奋的方式对网络进行压力测试。🙏
+[Filecoin测试网奖励计划](/blog/announcing-filecoin-s-testnet-incentives/)将在8月24日晚上10点(3pm PT | 8月25日 6am CST)开启！在接下来的3周内，随着越来越多的存储空间竞相提交，Filecoin测试网上的矿工们将争夺高达400万FIL的奖金。在过去的一个月里，我们已经看到来自五大洲的240多名矿工准备参与——达到了1TiB/秒的封存速度（3天内封存了15个PiB）!非常感谢所有矿工帮助诊断问题，提出修复方案，并以令人兴奋的方式对网络进行压力测试。🙏
 
 现在，是时候启动大家的引擎了。🚀为本次比赛，Lotus已经冻结代码。同时为准备开启太空竞赛将Filecoin测试网重置，我们也已[正式将 “next “分支合入 “master”](https://github.com/filecoin-project/lotus/commits/master)。`Epoch 0`将在UTC时间8月24日星期一晚上10点准时开始，genesis提前约2小时发布，让矿工们做好准备。
 

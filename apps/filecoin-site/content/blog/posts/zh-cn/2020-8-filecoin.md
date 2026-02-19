@@ -39,9 +39,9 @@ _template: blog_detail_ch
 
 💪 **主网性能不断强化**。我们工作的主要重点是加强Filecoin区块链中存储和检索交易的生命周期——包括通过实际存储升级的承诺容量、将多个交易存储在一个扇区中、通过纯文本的副本向矿工请求[快速检索](https://github.com/filecoin-project/lotus/pull/2323)以及通过支付通道为成功的交易交换filecoin（这带来了巨大的改进）。我们还向虚拟机中引入了“真实”的Gas费⛽——包括实施了[EIP1559](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md)。详细内容请查看[Lotus 0.5.0 release](https://github.com/filecoin-project/lotus/releases/tag/v0.5.0)。
 
-💎 **主网上的Drand**。Filecoin网络使用Drand（生产级别的分布式随机信标网络）作为达成共识的外部随机资源。自Drand主网启动以来，该随机性网络获得League of Entropy参与者们的参与，例如Cloudflare、Ethereum、Chainsafe、EPFS、UCL、Truffle等等。点击[此处](https://drand.love/blog/2020/08/10/drand-launches-v1-0/)阅读有关drand的更多内容，并在[此处](https://filecoin.io/blog/distributed-randomness-and-leader-elections/)了解Filecoin如何使用drand的知识。
+💎 **主网上的Drand**。Filecoin网络使用Drand（生产级别的分布式随机信标网络）作为达成共识的外部随机资源。自Drand主网启动以来，该随机性网络获得League of Entropy参与者们的参与，例如Cloudflare、Ethereum、Chainsafe、EPFS、UCL、Truffle等等。点击[此处](https://drand.love/blog/2020/08/10/drand-launches-v1-0/)阅读有关drand的更多内容，并在[此处](/blog/filecoin-features-distributed-randomness-leader-elections/)了解Filecoin如何使用drand的知识。
 
-🔐 **可信配置的第二阶段**。我们完成了[可信配置环节的第二阶段](https://filecoin.io/blog/trusted-setup-update/)——来自世界各地的参与者贡献他们的资源以帮助生成Filecoin网络的安全参数和可供任何人验证的公开证明。每条逻辑电路我们有15-25名唯一的参与者（总共6条逻辑电路），其中包括以太坊基金会、Consensys、Supranational、Ocean Protocol、IPFSMain、Sigma Prime等等组织。我们即将推出第三方验证可信配置输出的说明。
+🔐 **可信配置的第二阶段**。我们完成了[可信配置环节的第二阶段](/blog/update-trusted-setup/)——来自世界各地的参与者贡献他们的资源以帮助生成Filecoin网络的安全参数和可供任何人验证的公开证明。每条逻辑电路我们有15-25名唯一的参与者（总共6条逻辑电路），其中包括以太坊基金会、Consensys、Supranational、Ocean Protocol、IPFSMain、Sigma Prime等等组织。我们即将推出第三方验证可信配置输出的说明。
 
 🔋 **主网证明的最终确定**。基于可信配置第二阶段的输出，我们发布了用于主网启动的SDR复制证明参数的最终版。这些证明已经通过了准确性、完整性和稳定性审核。您可以在[https://proofs.filecoin.io](https://proofs.filecoin.io)上查看。
 **请注意**：矿工需要知道Filecoin在主网启动后也会定期升级其证明。
@@ -62,7 +62,7 @@ _template: blog_detail_ch
 
 🔥 **Filecoin Ignite**。[Filecoin Ignite](https://hub.fil.org/events/)将继续为社区提供一系列黑客松和学习活动以促进和支持快速发展的Filecoin生态。HackFS是我们取得巨大成功的首个活动。
 
-- **HackFS**: HackFS是与ETHGlobal共同举办的为期30天的线上黑客松活动，目前已帮助130多个项目加入分布式网络。共有来自19个时区的50多个国家的470多名开发者参与了本次活动。您可以深入了解参加黑客松的[10个](/blog/hackfs-teams-vol-1/)[团](/blog/hackfs-teams-vol-2/)[队](/blog/hackfs-teams-vol-3/)背后的故事、回顾[HackFS Finale](https://filecoin.io/blog/hackfs-finale/)、看看哪些团队获得了大奖，或者可以在HackFS Showcase上了解有关所有134个项目的更多内容。
+- **HackFS**: HackFS是与ETHGlobal共同举办的为期30天的线上黑客松活动，目前已帮助130多个项目加入分布式网络。共有来自19个时区的50多个国家的470多名开发者参与了本次活动。您可以深入了解参加黑客松的[10个](/blog/hackfs-teams-vol-1/)[团](/blog/hackfs-teams-vol-2/)[队](/blog/hackfs-teams-vol-3/)背后的故事、回顾[HackFS Finale](/blog/30-days-130-projects-recognizing-new-ideas-to-power-web3/)、看看哪些团队获得了大奖，或者可以在HackFS Showcase上了解有关所有134个项目的更多内容。
 
 - **Spark University Hackathon**: 是由Encode Club举办的为期6周的线上黑客松活动，[Encode Club](https://www.encode.club/)是一个由大学生、学者和开发者在区块链上创建的线上社区。来自全球各大高校的50支团队响应啦Filecoin发起的两项挑战，获奖者将在8月31日（下周一）的现场决赛中宣布。
 - **Apollo**: [APOLLO](https://gitcoin.co/blog/apollo/)是由Gitcoin设计的为期6周、旨在为Filecoin生态中的创建者和贡献者提供社区服务的项目。可以把它视为是为顶级InterPlanetary Filecoin开发者创造的跨空间和时间的任务控制！将有150多名优秀的开发者有机会成为Filecoin和Web 3生态的开拓者。本次申请将于8月28日周五关闭——点击[此处](https://gitcoin.co/hackathon/filecoin/onboard)今日注册！

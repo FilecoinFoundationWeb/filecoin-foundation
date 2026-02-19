@@ -23,7 +23,7 @@ title: Filecoin Implementations Progress Update
 _template: blog_detail
 ---
 
-One of Filecoin’s launch goals [has always been](https://filecoin.io/blog/announcing-lotus/#why-multiple-implementations) to have multiple independent protocol implementations to help secure the network at launch. In this post, we’ll detail the recent progress and next steps for each of the four major implementations: [Forest](https://github.com/ChainSafe/forest), built by Chainsafe; [Fuhon](https://github.com/filecoin-project/cpp-filecoin), developed by Soramitsu; [Venus (previously known as go-filecoin)](https://github.com/filecoin-project/venus), stewarded by IPFSForce; and [Lotus](https://github.com/filecoin-project/lotus), created by Protocol Labs.
+One of Filecoin’s launch goals [has always been](/blog/announcing-lotus-our-first-alternate-filecoin-implementation/#why-multiple-implementations) to have multiple independent protocol implementations to help secure the network at launch. In this post, we’ll detail the recent progress and next steps for each of the four major implementations: [Forest](https://github.com/ChainSafe/forest), built by Chainsafe; [Fuhon](https://github.com/filecoin-project/cpp-filecoin), developed by Soramitsu; [Venus (previously known as go-filecoin)](https://github.com/filecoin-project/venus), stewarded by IPFSForce; and [Lotus](https://github.com/filecoin-project/lotus), created by Protocol Labs.
 
 ## Forest
 

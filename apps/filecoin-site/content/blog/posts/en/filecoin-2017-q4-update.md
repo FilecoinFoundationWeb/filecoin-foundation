@@ -58,7 +58,7 @@ We have a unique opportunity to leverage the collective knowledge, capabilities,
 
 Here are some top priorities that our community can help us with in the short-term:
 
-- Refer candidates to hire (see list of high priority open positions in [item 6 below](https://filecoin.io/blog/update-2017-q4/#6-growing-the-team))
+- Refer candidates to hire (see list of high priority open positions in [item 6 below](/blog/filecoin-2017-q4-update/#6-growing-the-team))
 - Refer potential early storage users ([Filecoin Early Users](https://docs.google.com/forms/d/e/1FAIpQLSdCOjMenUU7WtT54zeAivCS2nnaWYQIgaXh0eRdIdpi6Pwkew/viewform) form)
 - Refer potential early miners ([Filecoin Early Mining](https://docs.google.com/forms/d/e/1FAIpQLSfdFpWhJj8OIGA2iXrT3bnLgVK9bgR_1iLMPdAcXLxr_1d-pw/viewform?c=0&w=1) form)
 - Ideas, Suggestions, anything else? Please fill out our [suggestion form](https://docs.google.com/forms/d/e/1FAIpQLSeMgVzmDramhx0UM7UtTOECd0rw5CTzhYrt5V3Hfrdor3Z1Iw/viewform?usp=sf_link)

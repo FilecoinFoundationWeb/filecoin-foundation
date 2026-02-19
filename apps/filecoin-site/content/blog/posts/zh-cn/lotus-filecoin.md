@@ -25,7 +25,7 @@ _template: blog_detail_ch
 
 我们最重要的目标之一是使 Filecoin 主网尽可能地安全并且具有弹性。我们网络安全策略的一部分是启动具有多种实现方式的 Filecoin 网络。今天，我们很高兴地宣布我们的第一个备用 Filecoin 实现, [**lotus**](https://github.com/filecoin-project/lotus)。
 
-[几个月以来](https://filecoin.io/blog/update-2019-q2-q3/#3-roadmap-update)，我们一直在努力构建最初的实现, [**go-filecoin**](https://github.com/filecoin-project/go-filecoin)，同时还与其他团队合作构建 [Filecoin 协议规范](https://github.com/filecoin-project/specs/)的其他多个实现。这项构建不会改变我们的测试网和主网的时间线，但是会使 Filecoin 主网更加安全和灵活。 Lotus 是即将推出的众多实现中的第一个！
+[几个月以来](/blog/filecoin-2019-q2-q3-update/#3-roadmap-update)，我们一直在努力构建最初的实现, [**go-filecoin**](https://github.com/filecoin-project/go-filecoin)，同时还与其他团队合作构建 [Filecoin 协议规范](https://github.com/filecoin-project/specs/)的其他多个实现。这项构建不会改变我们的测试网和主网的时间线，但是会使 Filecoin 主网更加安全和灵活。 Lotus 是即将推出的众多实现中的第一个！
 
 具体来说，今天我们宣布：
 
@@ -36,7 +36,7 @@ _template: blog_detail_ch
 
 ## 为什么要有多个实现？
 
-正如我们在[其他地方提到的](https://filecoin.io/blog/update-2019-q2-q3/#3-roadmap-update)，构建一个区块链就像构建一个软件火箭。我们正努力确保我们的协议和软件实施的安全性 – 我们拥有内部的协议安全团队，并且正在执行内部实现的安全审核和外部安全审核等等。但是，无论我们为保护系统和各个节点付出多大的努力，始终都有可能某个实现的错误会出现并给网络带来非常不利的后果。
+正如我们在[其他地方提到的](/blog/filecoin-2019-q2-q3-update/#3-roadmap-update)，构建一个区块链就像构建一个软件火箭。我们正努力确保我们的协议和软件实施的安全性 – 我们拥有内部的协议安全团队，并且正在执行内部实现的安全审核和外部安全审核等等。但是，无论我们为保护系统和各个节点付出多大的努力，始终都有可能某个实现的错误会出现并给网络带来非常不利的后果。
 
 拥有可在同一网络上交互操作的多个软件实现，可以大大降低这种风险。尽管每个实现都有自己的一些漏洞，但是所有实现都不太可能具有完全相同的安全问题 - 尤其是在这些实现不共享对于安全性至关重要的软件组件的情况下。因此，启动具有多种实现方式的加密货币网络可降低发生灾难性漏洞的可能性，这些漏洞可能会对整个 Filecoin 网络产生不利影响，甚至使整个Filecoin网络陷入瘫痪。
 

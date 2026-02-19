@@ -25,7 +25,7 @@ title: "Juan Leni, Zondax"
 _template: blog_detail
 ---
 
-_Welcome to the fifth installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network. The goal is to inspire others to build world-class tools for the distributed web. Check out the_ [_last post_](https://filecoin.io/blog/community-jonathan-schwartz-owl/) _featuring Jonathan Schwartz of Open Work Labs (OWL), a company currently working on web wallet and interoperable tools on the Filecoin network._
+_Welcome to the fifth installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network. The goal is to inspire others to build world-class tools for the distributed web. Check out the_ [_last post_](/blog/jonathan-schwartz-open-work-labs/) _featuring Jonathan Schwartz of Open Work Labs (OWL), a company currently working on web wallet and interoperable tools on the Filecoin network._
 
 Juan Leni is co-founder of [Zondax](https://zondax.ch/), a company based in Zug, Switzerland. Zondax’s consulting work focuses mainly on cryptography, embedded systems, hardware security modules, trusted execution environments (TEEs), and distributed ledger technologies. We chatted with Juan about how Zondax’s work in cryptographic libraries, hardware wallet integrations, ledger apps, and GPU accelerated software for Filecoin are contributing to the path to mainnet launch.
 

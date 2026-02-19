@@ -28,7 +28,7 @@ This blog post aims to unpack how Filecoin tokens enter circulating supply, prov
 
 ## The Filecoin Ecosystem
 
-The growing momentum in the Filecoin ecosystem is a primary driver of use cases, tooling, and infrastructure for all Filecoin stakeholders. Since the [release of Filecoin’s mainnet](https://filecoin.io/blog/journey-to-liftoff/) on October 15th, 2020, the network has now surpassed a number of important milestones:
+The growing momentum in the Filecoin ecosystem is a primary driver of use cases, tooling, and infrastructure for all Filecoin stakeholders. Since the [release of Filecoin’s mainnet](/blog/the-journey-to-filecoin-mainnet-liftoff/) on October 15th, 2020, the network has now surpassed a number of important milestones:
 
 - The network exceeding 1EiB of storage capacity from 700+ miners
 - An ecosystem of 90+ projects building applications, developer tooling and infrastructure on the network
@@ -36,7 +36,7 @@ The growing momentum in the Filecoin ecosystem is a primary driver of use cases,
 - Over 5400 developers contributing to the project’s GitHub repos
 - Development of a number of use cases, including Consumer Storage Apps, DeFi, [Decentralized Video](https://file.video/), and many others
 
-For more, here’s a deep dive on the state of the [Filecoin Ecosystem](https://www.youtube.com/watch?v=FHqtIX4FPP4) from Liftoff Week or a recent [recap of the network](https://filecoin.io/blog/journey-to-liftoff/) from October 2020.
+For more, here’s a deep dive on the state of the [Filecoin Ecosystem](https://www.youtube.com/watch?v=FHqtIX4FPP4) from Liftoff Week or a recent [recap of the network](/blog/the-journey-to-filecoin-mainnet-liftoff/) from October 2020.
 
 ## Filecoin as a Utility Token
 
@@ -101,7 +101,7 @@ This mechanism incentivizes all participants to invest in business development, 
 
 ## Network Transaction Fee: Aligning Token Supply with Network Usage
 
-As long as there is any action or utility on the network, Filecoin tokens will be [consumed](https://filecoin.io/blog/filecoin-features-gas-fees/) to compensate for the computation and storage resources on-chain messages consume. Similar to the rate of token minting for miners, the rate of token consumption is also in the hands of the community, as participants compete for on-chain resources.
+As long as there is any action or utility on the network, Filecoin tokens will be [consumed](/blog/filecoin-features-gas-fees/) to compensate for the computation and storage resources on-chain messages consume. Similar to the rate of token minting for miners, the rate of token consumption is also in the hands of the community, as participants compete for on-chain resources.
 
 As of today, Filecoin daily token consumption has climbed as high as 180k FIL per day, which is a sign of a thriving economy.
 
