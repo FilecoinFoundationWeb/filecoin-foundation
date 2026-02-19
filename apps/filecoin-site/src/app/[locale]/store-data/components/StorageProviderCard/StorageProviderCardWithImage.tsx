@@ -1,6 +1,8 @@
 import type { ImageProps } from 'next/image'
 import Image from 'next/image'
 
+import { useTranslations } from 'next-intl'
+
 import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
@@ -35,6 +37,8 @@ export function StorageProviderCardWithImage({
   url,
   logo,
 }: StorageProviderCardWithImageProps) {
+  const t = useTranslations('storageProviderCard')
+
   return (
     <article className="grid grid-cols-1 rounded-2xl border border-(--color-border-muted) lg:grid-cols-2">
       <div className="relative aspect-video h-full w-full">
@@ -58,7 +62,7 @@ export function StorageProviderCardWithImage({
           </div>
 
           <span className="sm:order-2 sm:flex-row">
-            <Badge variant="solid">Featured</Badge>
+            <Badge variant="solid">{t('featured')}</Badge>
           </span>
         </div>
         <div className="grid gap-8 md:grid-cols-2">
@@ -73,7 +77,7 @@ export function StorageProviderCardWithImage({
               Component={Badge}
             />
 
-            <StorageProviderCardSection title="Price">
+            <StorageProviderCardSection title={t('price')}>
               <StorageProviderPricePerMonth>
                 {cents}
               </StorageProviderPricePerMonth>
@@ -81,12 +85,12 @@ export function StorageProviderCardWithImage({
           </div>
 
           <div className="flex flex-col gap-8">
-            <StorageProviderCardSection title="Best For">
+            <StorageProviderCardSection title={t('bestForLabel')}>
               <StorageProviderCardText>
                 {bestFor.join(', ')}
               </StorageProviderCardText>
             </StorageProviderCardSection>
-            <StorageProviderCardSection title="Key Features">
+            <StorageProviderCardSection title={t('keyFeaturesLabel')}>
               <StorageProviderFeatures
                 direction="column"
                 list={keyFeatures}
@@ -97,7 +101,7 @@ export function StorageProviderCardWithImage({
         </div>
         <div className="flex flex-col md:flex-row md:justify-start">
           <Button href={url} variant="ghost">
-            {`Store with ${name}`}
+            {t('storeWith', { name })}
           </Button>
         </div>
       </div>

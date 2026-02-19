@@ -220,8 +220,87 @@
   },
   "/store-data": {
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "在 Filecoin 上存储数据 | 安全、可验证的去中心化存储解决方案",
+      "description": "在 Filecoin 上安全存储大数据，具备防篡改完整性、合规标准、可预测定价和无限可扩展性。从可信提供商中选择弹性、抗审查的存储，无隐藏费用。"
+    },
+    "hero": {
+      "title": "为重要数据提供去中心化、安全的存储",
+      "description": "Filecoin 是一个动态的去中心化存储网络，确保您的数据安全、可验证且始终由您掌控——为企业平台到简易入口提供一站式存储解决方案。"
+    },
+    "trustedBy": {
+      "title": "深受行业领袖信赖"
+    },
+    "storeOnFilecoin": {
+      "title": "在 Filecoin 上存储",
+      "description": "在 Filecoin 上为您的数据找到理想的存储解决方案。"
+    },
+    "selectedSolutions": {
+      "title": "精选存储解决方案"
+    },
+    "otherSolutions": {
+      "title": "其他 Filecoin 驱动的解决方案"
+    },
+    "seeMore": "查看更多 Filecoin 驱动的解决方案",
+    "notSure": {
+      "title": "不确定该选择哪种存储解决方案？",
+      "description": "告诉我们您的需求，我们将为您推荐最合适的 Filecoin 解决方案。",
+      "cta": "咨询专家"
+    },
+    "bestFor": {
+      "aiMlDevelopers": "AI/ML 开发者",
+      "archivalStorage": "归档存储",
+      "advancedTechnicalUsers": "高级技术用户",
+      "creators": "创作者",
+      "developers": "开发者",
+      "enterprises": "企业",
+      "nftProjects": "NFT 项目"
+    },
+    "providers": {
+      "akave": {
+        "description": "面向 AI 和数据湖的企业级热存储。",
+        "labels": ["拖放上传", "S3 兼容"],
+        "keyFeatures": ["兼容 S3 的 API", "客户端加密", "访问控制"]
+      },
+      "cidgravity": {
+        "description": "面向 Nextcloud 的简易去中心化存储后端。",
+        "labels": ["拖放上传"],
+        "keyFeatures": ["Nextcloud 集成", "文件同步与共享", "REST API 编程访问"]
+      },
+      "lighthouse": {
+        "description": "永久性长期数据存储。",
+        "labels": ["归档", "拖放上传"],
+        "keyFeatures": ["\"一次付费，永久存储\"定价模式", "简洁的 Web 应用", "开发者 SDK/CLI"]
+      },
+      "ramo": {
+        "description": "开放访问的去中心化云网络。",
+        "labels": ["S3 兼容"],
+        "keyFeatures": ["兼容 S3 的 API", "开发者 SDK/CLI"]
+      },
+      "singularity": {
+        "description": "直接管理 Filecoin 上完整的交易生命周期。",
+        "labels": ["归档"],
+        "keyFeatures": ["使用 CLI 准备和上传文件", "使用 Lassie 检索文件", "与存储提供商直接协商"]
+      },
+      "storacha": {
+        "description": "高速热存储，实现快速数据检索。",
+        "labels": ["拖放上传"],
+        "keyFeatures": ["快速访问数据", "与 IPFS 深度集成", "针对内容分发和流媒体优化", "基于 UCAN 的去中心化权限管理"]
+      },
+      "placeholderA": {
+        "description": "Lorem ipsum dolor sit amet.",
+        "labels": ["Lorem ipsum"],
+        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
+      },
+      "placeholderB": {
+        "description": "Lorem ipsum dolor sit amet.",
+        "labels": ["Lorem ipsum"],
+        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
+      },
+      "placeholderC": {
+        "description": "Lorem ipsum dolor sit amet.",
+        "labels": ["Lorem ipsum"],
+        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
+      }
     }
   },
   "/build-on-filecoin": {
@@ -347,6 +426,14 @@
     "submitAriaLabel": "提交订阅",
     "emailInvalid": "邮箱格式无效",
     "emailRequired": "请输入邮箱"
+  },
+  "storageProviderCard": {
+    "perMonth": "/ 月",
+    "price": "价格",
+    "bestForLabel": "最适合",
+    "keyFeaturesLabel": "主要特性",
+    "storeWith": "使用 {name} 存储",
+    "featured": "精选"
   },
   "youtubeVideoEmbed": {
     "playButton": "查看如何运行",

@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl'
+
 import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
@@ -32,6 +34,8 @@ export function StorageProviderCard({
   url,
   logo,
 }: StorageProviderCardProps) {
+  const t = useTranslations('storageProviderCard')
+
   return (
     <Tag>
       <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-10 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 focus-within:bg-zinc-50 hover:bg-zinc-50">
@@ -54,15 +58,15 @@ export function StorageProviderCard({
             Component={Badge}
           />
 
-          <StorageProviderCardSection title="Price">
+          <StorageProviderCardSection title={t('price')}>
             <StorageProviderPricePerMonth>{cents}</StorageProviderPricePerMonth>
           </StorageProviderCardSection>
-          <StorageProviderCardSection title="Best For">
+          <StorageProviderCardSection title={t('bestForLabel')}>
             <StorageProviderCardText>
               {bestFor.join(', ')}
             </StorageProviderCardText>
           </StorageProviderCardSection>
-          <StorageProviderCardSection title="Key Features">
+          <StorageProviderCardSection title={t('keyFeaturesLabel')}>
             <StorageProviderFeatures
               direction="column"
               list={keyFeatures}
@@ -72,7 +76,7 @@ export function StorageProviderCard({
         </div>
 
         <Button href={url} variant="ghost">
-          {`Store with ${name}`}
+          {t('storeWith', { name })}
         </Button>
       </article>
     </Tag>

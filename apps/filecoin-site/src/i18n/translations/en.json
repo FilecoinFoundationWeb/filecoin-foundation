@@ -222,6 +222,85 @@
     "metadata": {
       "title": "Store Data on Filecoin | Secure, Verifiable Decentralized Storage Solutions",
       "description": "Securely store big data on Filecoin with tamper-proof integrity, compliance standards, predictable pricing, and infinite scalability. Choose from trusted providers for resilient, censorship-resistant storage without hidden fees."
+    },
+    "hero": {
+      "title": "Decentralized, secure storage for data that matters",
+      "description": "Filecoin is a dynamic, decentralized storage network that keeps your data secure, verifiable, and always under your control — powering solutions from enterprise platforms to simple onramps."
+    },
+    "trustedBy": {
+      "title": "Trusted by industry leaders"
+    },
+    "storeOnFilecoin": {
+      "title": "Store on Filecoin",
+      "description": "Find the perfect storage solution for your data on Filecoin."
+    },
+    "selectedSolutions": {
+      "title": "Selected storage solutions"
+    },
+    "otherSolutions": {
+      "title": "Other Filecoin-powered solutions"
+    },
+    "seeMore": "See more Filecoin-powered solutions",
+    "notSure": {
+      "title": "Not sure what storage solution to choose?",
+      "description": "Tell us about your needs, and we'll guide you to the Filecoin solution that fits best.",
+      "cta": "Talk to an expert"
+    },
+    "bestFor": {
+      "aiMlDevelopers": "AI/ML developers",
+      "archivalStorage": "Archival storage",
+      "advancedTechnicalUsers": "Advanced technical users",
+      "creators": "Creators",
+      "developers": "Developers",
+      "enterprises": "Enterprises",
+      "nftProjects": "NFT projects"
+    },
+    "providers": {
+      "akave": {
+        "description": "Enterprise-grade hot storage for AI & data lakes.",
+        "labels": ["Drag and drop", "S3-compatible"],
+        "keyFeatures": ["S3-compatible API", "Client-side encryption", "Access control"]
+      },
+      "cidgravity": {
+        "description": "Simple decentralized storage backend for Nextcloud.",
+        "labels": ["Drag and drop"],
+        "keyFeatures": ["Nextcloud integration", "File sync and share", "REST API for programmatic access"]
+      },
+      "lighthouse": {
+        "description": "Perpetual, long-term data storage.",
+        "labels": ["Archival", "Drag and drop"],
+        "keyFeatures": ["\"Pay once, store forever\" pricing mode", "Simple web app", "Developer SDK/CLI"]
+      },
+      "ramo": {
+        "description": "An open-access decentralized cloud network.",
+        "labels": ["S3-compatible"],
+        "keyFeatures": ["S3-compatible API", "Developer SDK/CLI"]
+      },
+      "singularity": {
+        "description": "Directly manage the full deal-making lifecycle on Filecoin.",
+        "labels": ["Archival"],
+        "keyFeatures": ["Prepare and upload files using the CLI", "Retrieve files with Lassie", "Direct negotiation with storage providers"]
+      },
+      "storacha": {
+        "description": "High-speed hot storage for fast data retrieval.",
+        "labels": ["Drag and drop"],
+        "keyFeatures": ["Fast access to data", "Tightly integrated with IPFS", "Optimized for content delivery and streaming", "Decentralized permissions with UCANs"]
+      },
+      "placeholderA": {
+        "description": "Lorem ipsum dolor sit amet.",
+        "labels": ["Lorem ipsum"],
+        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
+      },
+      "placeholderB": {
+        "description": "Lorem ipsum dolor sit amet.",
+        "labels": ["Lorem ipsum"],
+        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
+      },
+      "placeholderC": {
+        "description": "Lorem ipsum dolor sit amet.",
+        "labels": ["Lorem ipsum"],
+        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
+      }
     }
   },
   "/build-on-filecoin": {
@@ -347,6 +426,14 @@
     "submitAriaLabel": "Submit newsletter subscription",
     "emailInvalid": "Your email format is invalid",
     "emailRequired": "Your email is required"
+  },
+  "storageProviderCard": {
+    "perMonth": "/ month",
+    "price": "Price",
+    "bestForLabel": "Best For",
+    "keyFeaturesLabel": "Key Features",
+    "storeWith": "Store with {name}",
+    "featured": "Featured"
   },
   "youtubeVideoEmbed": {
     "playButton": "See how it works",
