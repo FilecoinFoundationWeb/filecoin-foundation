@@ -153,33 +153,25 @@
         "description": "Enabling resilient access to genomics, public research, and large-scale scientific data."
       }
     },
-    "unique": {
-      "title": "What makes Filecoin unique",
-      "description": "Filecoin's distributed design delivers verifiable storage, removes single points of failure, and creates a resilient, transparent storage foundation.",
+    "decentralizedByDesign": {
+      "title": "Decentralized by design",
+      "description": "The Filecoin network provides decentralized storage secured by cryptographic proofs and economic incentives, transforming data storage into open, verifiable infrastructure.",
       "startStoringCta": "Start storing on Filecoin",
-      "storageDeals": {
-        "title": "Storage deals",
-        "description": "The Filecoin economy runs on deals where a client and provider agree on how much data will be stored, for how long, and at what price."
-      },
-      "cryptographicProofs": {
-        "title": "Cryptographic proofs",
-        "description": "After the client sends the data, the provider must regularly generate blockchain-verified cryptographic proofs so clients can confirm their data is stored as promised."
-      },
-      "verifiableSecurity": {
-        "title": "Verifiable security",
-        "description": "Filecoin uses two proofs to ensure data integrity: <porepLink>Proof of Replication</porepLink>, which verifies a provider has stored a unique copy of the data, and <postLink>Proof of Spacetime</postLink>, which confirms data is continuously stored over time. Providers who fail these requirements forfeit collateral."
-      },
-      "retrievalOnDemand": {
-        "title": "Retrieval on demand",
-        "description": "With <focLink>Filecoin Onchain Cloud</focLink>, retrievals can be automatic, service-based, or integrated directly into workflows. They are as verifiable as storage, enabling a performance-driven market where speed and quality determine rewards."
-      },
-      "builtForScale": {
-        "title": "Built for scale",
-        "description": "Filecoin's infrastructure is designed for exabyte-scale datasets and long-term archival. With built-in redundancy and global distribution, it meets the needs of everything from personal storage to cultural archives and large-scale scientific datasets."
+      "onchainProof": {
+        "title": "Onchain proof of storage",
+        "description": "Filecoin uses two proofs to ensure data integrity: <porepLink>Proof of Replication</porepLink> verifies a unique copy of data exists, and <postLink>Proof of Spacetime</postLink> confirms it remains stored over time."
       },
       "poweredByIncentives": {
         "title": "Powered by incentives",
-        "description": "The <filLink>Filecoin token (FIL)</filLink> underpins the network's economy. Clients pay in FIL to store and retrieve data, while providers earn FIL by offering reliable services and locking collateral that keeps the system honest and secure."
+        "description": "The <filLink>Filecoin token (FIL)</filLink> powers the network's economy. Clients pay in FIL to store data, while providers earn FIL by offering reliable services. Providers must lock FIL as collateral and earn rewards by submitting valid proofs."
+      },
+      "verifiableRetrieval": {
+        "title": "Verifiable retrieval",
+        "description": "With <focLink>Filecoin Onchain Cloud</focLink>, retrieval performance is provable onchain, turning speed and reliability into measurable, verifiable metrics."
+      },
+      "builtForScale": {
+        "title": "Built for scale",
+        "description": "The network's infrastructure is designed to support exabyte-scale datasets and long-term preservation with built-in global distribution and redundancy."
       }
     },
     "protocol": {

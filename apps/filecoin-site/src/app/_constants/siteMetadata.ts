@@ -24,6 +24,11 @@ const FILECOIN_DOCS_URLS = {
 } as const
 
 const FILECOIN_CLOUD_URL = 'https://filecoin.cloud'
+const FILECOIN_CLOUD_DOCS_URL = 'https://docs.filecoin.cloud'
+const FILECOIN_CLOUD_DOCS_URLS = {
+  about: `${FILECOIN_CLOUD_DOCS_URL}/introduction/about`,
+} as const
+
 const FILECOIN_FOUNDATION_URL = 'https://fil.org'
 const FILECOIN_FOUNDATION_URLS = {
   ecosystemExplorer: {
@@ -126,6 +131,8 @@ export {
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
   FILECOIN_CLOUD_URL,
+  FILECOIN_CLOUD_DOCS_URL,
+  FILECOIN_CLOUD_DOCS_URLS,
   ORGANIZATION_NAME,
   ROOT_METADATA,
 }
