@@ -266,7 +266,7 @@
     "providers": {
       "akave": {
         "description": "Enterprise-grade hot storage for AI & data lakes.",
-        "labels": ["Drag and drop"],
+        "labels": ["Drag and drop", "S3-compatible"],
         "keyFeatures": ["S3-compatible API", "Client-side encryption", "Access control"]
       },
       "cidgravity": {
@@ -281,6 +281,7 @@
       },
       "ramo": {
         "description": "An open-access decentralized cloud network.",
+        "labels": ["S3-compatible"],
         "keyFeatures": ["S3-compatible API", "Developer SDK/CLI"]
       },
       "singularity": {

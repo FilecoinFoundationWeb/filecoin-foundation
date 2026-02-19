@@ -40,7 +40,7 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
     {
       name: 'Akave Cloud',
       description: t('providers.akave.description'),
-      labels: [t('providers.akave.labels.0'), 'S3-compatible'],
+      labels: [t('providers.akave.labels.0'), t('providers.akave.labels.1')],
       cents: 10_000,
       bestFor: [t('bestFor.enterprises'), t('bestFor.aiMlDevelopers')],
       keyFeatures: [
@@ -89,7 +89,7 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
     {
       name: 'Ramo',
       description: t('providers.ramo.description'),
-      labels: ['S3-compatible'],
+      labels: [t('providers.ramo.labels.0')],
       cents: 10_000,
       bestFor: [t('bestFor.developers')],
       keyFeatures: [

@@ -266,7 +266,7 @@
     "providers": {
       "akave": {
         "description": "面向 AI 和数据湖的企业级热存储。",
-        "labels": ["拖放上传"],
+        "labels": ["拖放上传", "S3 兼容"],
         "keyFeatures": ["兼容 S3 的 API", "客户端加密", "访问控制"]
       },
       "cidgravity": {
@@ -281,6 +281,7 @@
       },
       "ramo": {
         "description": "开放访问的去中心化云网络。",
+        "labels": ["S3 兼容"],
         "keyFeatures": ["兼容 S3 的 API", "开发者 SDK/CLI"]
       },
       "singularity": {
