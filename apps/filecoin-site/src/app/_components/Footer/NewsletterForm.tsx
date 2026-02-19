@@ -1,16 +1,13 @@
 'use client'
 
 import { Input, Label, Field, Button } from '@headlessui/react'
-import { zodResolver } from '@hookform/resolvers/zod'
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr'
 import { useTranslations } from 'next-intl'
-import { useForm } from 'react-hook-form'
 
 import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
-import {
-  createNewsletterFormSchema,
-  type NewsletterFormData,
-} from '@filecoin-foundation/utils/schemas/NewsletterFormSchema'
+import { createNewsletterFormSchema } from '@filecoin-foundation/utils/schemas/NewsletterFormSchema'
+
+import { useNewsletterForm } from '@/hooks/useNewsletterForm'
 
 export function NewsletterForm() {
   const t = useTranslations('newsletterForm')
@@ -19,27 +16,26 @@ export function NewsletterForm() {
     emailRequired: t('emailRequired'),
   })
 
-  const { register, handleSubmit, formState } = useForm<NewsletterFormData>({
-    resolver: zodResolver(schema),
-  })
-
-  const error = formState.errors.email?.message
+  const { form, dialog, onSubmit } = useNewsletterForm()
 
   return (
-    <form className="flex flex-col gap-2" onSubmit={handleSubmit(submitForm)}>
+    <form
+      className="flex flex-col gap-2"
+      onSubmit={form.handleSubmit(onSubmit)}
+    >
       <Field>
         <Label className="form-label">{t('label')}</Label>
         <div className="relative flex items-center gap-4 pt-1">
           <Input
-            {...register('email', { required: true })}
+            {...form.register('email', { required: true })}
             type="email"
-            invalid={Boolean(error)}
+            invalid={Boolean(form.formState.errors.email)}
             placeholder={t('placeholder')}
             autoComplete="email"
             className="form-text-input"
           />
           <Button
-            disabled={formState.isSubmitting}
+            disabled={form.formState.isSubmitting}
             className="focus:brand-outline absolute right-0 -mr-1 flex h-12 w-12 cursor-pointer items-center justify-center"
             type="submit"
             aria-label={t('submitAriaLabel')}
@@ -50,12 +46,12 @@ export function NewsletterForm() {
           </Button>
         </div>
 
-        {error && <p className="form-error-description mt-2">{error}</p>}
+        {form.formState.errors.email && (
+          <p className="form-error-description mt-2">
+            {form.formState.errors.email.message}
+          </p>
+        )}
       </Field>
     </form>
   )
-
-  function submitForm(data: NewsletterFormData) {
-    console.log(data)
-  }
 }
