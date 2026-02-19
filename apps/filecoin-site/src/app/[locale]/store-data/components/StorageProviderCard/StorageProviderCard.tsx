@@ -5,8 +5,6 @@ import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui-filecoin/Icon'
 
-import { PATHS } from '@/constants/paths'
-
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'
 import { StorageProviderCardText } from './StorageProviderCardText'
@@ -36,7 +34,7 @@ export function StorageProviderCard({
   url,
   logo,
 }: StorageProviderCardProps) {
-  const t = useTranslations(PATHS.STORE_DATA.path)
+  const t = useTranslations('storageProviderCard')
 
   return (
     <Tag>

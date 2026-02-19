@@ -249,12 +249,6 @@
       "title": "其他 Filecoin 驱动的解决方案"
     },
     "seeMore": "查看更多 Filecoin 驱动的解决方案",
-    "perMonth": "/ 月",
-    "price": "价格",
-    "bestForLabel": "最适合",
-    "keyFeaturesLabel": "主要特性",
-    "storeWith": "使用 {name} 存储",
-    "featured": "精选",
     "notSure": {
       "title": "不确定该选择哪种存储解决方案？",
       "description": "告诉我们您的需求，我们将为您推荐最合适的 Filecoin 解决方案。",
@@ -439,6 +433,14 @@
     "submitAriaLabel": "提交订阅",
     "emailInvalid": "邮箱格式无效",
     "emailRequired": "请输入邮箱"
+  },
+  "storageProviderCard": {
+    "perMonth": "/ 月",
+    "price": "价格",
+    "bestForLabel": "最适合",
+    "keyFeaturesLabel": "主要特性",
+    "storeWith": "使用 {name} 存储",
+    "featured": "精选"
   },
   "youtubeVideoEmbed": {
     "playButton": "查看如何运行",
