@@ -357,6 +357,59 @@
     "metadata": {
       "title": "Become a Filecoin Storage Provider | Earn Rewards in Decentralized Network",
       "description": "Join the Filecoin network as a storage provider to power global decentralized infrastructure. Use your data center to earn FIL rewards, diversify revenue, and scale with demand while preserving vital data in a permissionless ecosystem."
+    },
+    "hero": {
+      "title": "Power the world's largest decentralized storage network",
+      "description": "Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important information.",
+      "exploreDocs": "Explore documentation",
+      "bookCall": "Book a call with the onboarding team"
+    },
+    "logoSection": {
+      "title": "Join a global network of storage providers"
+    },
+    "gettingStarted": {
+      "title": "Getting started with PDP storage",
+      "description": "Running a warm storage node using Proof of Data Possession (PDP) is the easiest way to begin offering Filecoin storage — no expensive hardware or long-term collateral required.",
+      "becomePDP": "Become a PDP storage provider",
+      "learnMorePDP": "Learn more about PDP Storage",
+      "lowestHardware": {
+        "title": "Lowest hardware costs",
+        "description": "Warm storage requires minimal infrastructure, making it affordable to start offering storage with just basic compute and disk."
+      },
+      "fastestPath": {
+        "title": "Fastest path to becoming a SP",
+        "description": "Get online quickly with a simple setup and no sealing hardware — perfect for testing, learning, and onboarding your first clients."
+      },
+      "idealForNew": {
+        "title": "Ideal for new operators and small teams",
+        "description": "Operate a reliable, permissionless storage service without managing complex pipelines or large-scale hardware."
+      }
+    },
+    "scalingOperations": {
+      "title": "Scaling your storage operations",
+      "description": "If you're already running a warm storage node and want to expand, Filecoin supports enterprise-grade proofs like Proof of Replication (PoRep) and Proof of Spacetime (PoSt) — enabling high-capacity, production-scale storage operations. Scaling involves:",
+      "learnMoreRequirements": "Learn more about the requirements",
+      "sealingHardware": {
+        "title": "Dedicated sealing hardware (CPU/GPU)",
+        "description": "High-performance machines designed to handle sealing workloads reliably and at scale."
+      },
+      "storagePipelines": {
+        "title": "High-performance storage pipelines",
+        "description": "Optimized data paths that maintain consistent throughput and stable thermal performance."
+      },
+      "distributedSealing": {
+        "title": "Distributed sealing systems",
+        "description": "Run parallelized sealing workflows with networked workers and production-grade tooling."
+      },
+      "deepSupport": {
+        "title": "Deep support from Filecoin solution architects",
+        "description": "Get expert guidance on architecture, scaling strategy, and best practices for large deployments."
+      }
+    },
+    "needHelp": {
+      "title": "Need help choosing the right architecture?",
+      "description": "Our team can guide you through PoRep requirements, recommended hardware, sealing pipelines, and operational best practices.",
+      "bookCall": "Book a call with the onboarding team"
     }
   },
   "/provide-storage/onboarding": {

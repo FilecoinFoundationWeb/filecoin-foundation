@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -22,13 +23,17 @@ import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 import { GradientOverlay } from '@/components/GradientOverlay'
 import { Navigation } from '@/components/Navigation/Navigation'
 
-import { gettingStartedWithPDP } from './data/gettingStartedWithPDP'
-import { scalingOperations } from './data/scalingOperations'
+import { getGettingStartedWithPDP } from './data/gettingStartedWithPDP'
+import { getScalingOperations } from './data/scalingOperations'
 import { storageProvidersLogos } from './data/storageProvidersLogos'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 export default async function ProvideStorage() {
   const metadata = await getTranslatedMetadata(PATHS.PROVIDE_STORAGE.path)
+  const t = await getTranslations(PATHS.PROVIDE_STORAGE.path)
+
+  const gettingStartedWithPDP = getGettingStartedWithPDP(t)
+  const scalingOperations = getScalingOperations(t)
 
   return (
     <>
@@ -47,17 +52,17 @@ export default async function ProvideStorage() {
 
         <PageSection backgroundVariant="transparentDark">
           <PageHeader
-            title="Power the world's largest decentralized storage network"
-            description="Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity’s most important information."
+            title={t('hero.title')}
+            description={t('hero.description')}
             cta={[
               <Button href={FILECOIN_URLS.github.href} variant="primary">
-                Explore documentation
+                {t('hero.exploreDocs')}
               </Button>,
               <Button
                 href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
                 variant="ghost"
               >
-                Book a call with the onboarding team
+                {t('hero.bookCall')}
               </Button>,
             ]}
           />
@@ -65,7 +70,7 @@ export default async function ProvideStorage() {
           <div className="mt-40">
             <LogoSection
               headingTag="h2"
-              title="Join a global network of storage providers"
+              title={t('logoSection.title')}
               logos={storageProvidersLogos}
             />
           </div>
@@ -76,18 +81,18 @@ export default async function ProvideStorage() {
         <SectionContent
           centerCTA
           headingTag="h2"
-          title="Getting started with PDP storage"
-          description="Running a warm storage node using Proof of Data Possession (PDP) is the easiest way to begin offering Filecoin storage — no expensive hardware or long-term collateral required."
+          title={t('gettingStarted.title')}
+          description={t('gettingStarted.description')}
           cta={[
             <Button
               href={FILECOIN_DOCS_URLS.installAndRunPDP}
               variant="primary"
             >
-              Become a PDP storage provider
+              {t('gettingStarted.becomePDP')}
             </Button>,
 
             <Button href={FILECOIN_DOCS_URLS.pdp} variant="ghost">
-              Learn more about PDP Storage
+              {t('gettingStarted.learnMorePDP')}
             </Button>,
           ]}
         >
@@ -109,11 +114,11 @@ export default async function ProvideStorage() {
         <SectionContent
           centerCTA
           headingTag="h2"
-          title="Scaling your storage operations"
-          description="If you're already running a warm storage node and want to expand, Filecoin supports enterprise-grade proofs like Proof of Replication (PoRep) and Proof of Spacetime (PoSt) — enabling high-capacity, production-scale storage operations. Scaling involves:"
+          title={t('scalingOperations.title')}
+          description={t('scalingOperations.description')}
           cta={[
             <Button href={FILECOIN_DOCS_URLS.lotusComponents} variant="primary">
-              Learn more about the requirements
+              {t('scalingOperations.learnMoreRequirements')}
             </Button>,
           ]}
         >
@@ -134,14 +139,14 @@ export default async function ProvideStorage() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           headingTag="h2"
-          title="Need help choosing the right architecture?"
-          description="Our team can guide you through PoRep requirements, recommended hardware, sealing pipelines, and operational best practices."
+          title={t('needHelp.title')}
+          description={t('needHelp.description')}
           cta={
             <Button
               href={PATHS.PROVIDE_STORAGE_ONBOARDING.path}
               variant="primary"
             >
-              Book a call with the onboarding team
+              {t('needHelp.bookCall')}
             </Button>
           }
         />

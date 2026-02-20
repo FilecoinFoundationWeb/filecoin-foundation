@@ -355,8 +355,61 @@
   },
   "/provide-storage": {
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "成为 Filecoin 存储提供者 | 在去中心化网络中获得奖励",
+      "description": "加入 Filecoin 网络，成为存储提供者，驱动全球去中心化基础设施。利用您的数据中心赚取 FIL 奖励、实现收入多元化，并在无许可生态中按需扩展，同时保存重要数据。"
+    },
+    "hero": {
+      "title": "驱动全球最大的去中心化存储网络",
+      "description": "在去中心化存储的未来中发挥关键作用。成为 Filecoin 存储提供者，为保存人类最重要信息的全球系统贡献存储容量。",
+      "exploreDocs": "浏览文档",
+      "bookCall": "预约入驻团队通话"
+    },
+    "logoSection": {
+      "title": "加入全球存储提供者网络"
+    },
+    "gettingStarted": {
+      "title": "开始使用 PDP 存储",
+      "description": "使用数据持有证明（PDP）运行热存储节点是开始提供 Filecoin 存储的最简单方式——无需昂贵硬件或长期抵押。",
+      "becomePDP": "成为 PDP 存储提供者",
+      "learnMorePDP": "了解更多关于 PDP 存储",
+      "lowestHardware": {
+        "title": "最低硬件成本",
+        "description": "热存储仅需最少的基础设施，只需基本的计算和磁盘即可开始以低成本提供存储服务。"
+      },
+      "fastestPath": {
+        "title": "成为存储提供者的最快途径",
+        "description": "通过简单设置快速上线，无需密封硬件——非常适合测试、学习和接入您的首批客户。"
+      },
+      "idealForNew": {
+        "title": "适合新手运营者和小团队",
+        "description": "运营可靠的无许可存储服务，无需管理复杂的流水线或大规模硬件。"
+      }
+    },
+    "scalingOperations": {
+      "title": "扩展您的存储运营",
+      "description": "如果您已经在运行热存储节点并希望扩展，Filecoin 支持企业级证明，如复制证明（PoRep）和时空证明（PoSt）——实现大容量、生产级存储运营。扩展涉及：",
+      "learnMoreRequirements": "了解更多关于要求",
+      "sealingHardware": {
+        "title": "专用密封硬件（CPU/GPU）",
+        "description": "高性能机器，专为可靠、大规模地处理密封工作负载而设计。"
+      },
+      "storagePipelines": {
+        "title": "高性能存储流水线",
+        "description": "优化的数据路径，保持稳定的吞吐量和热性能。"
+      },
+      "distributedSealing": {
+        "title": "分布式密封系统",
+        "description": "通过联网的工作节点和生产级工具运行并行密封工作流。"
+      },
+      "deepSupport": {
+        "title": "Filecoin 解决方案架构师的深度支持",
+        "description": "获取关于架构、扩展策略和大规模部署最佳实践的专家指导。"
+      }
+    },
+    "needHelp": {
+      "title": "需要帮助选择合适的架构？",
+      "description": "我们的团队可以指导您了解 PoRep 要求、推荐硬件、密封流水线和运营最佳实践。",
+      "bookCall": "预约入驻团队通话"
     }
   },
   "/provide-storage/onboarding": {
