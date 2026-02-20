@@ -52,6 +52,7 @@ export function useNewsletterForm() {
         message: successMessage,
         icon: { component: CheckCircleIcon, color: 'success' },
       })
+      form.resetField('email')
     } catch (err) {
       dialog.open({
         message: t('errorOccurred'),
@@ -59,8 +60,6 @@ export function useNewsletterForm() {
         icon: { component: XCircleIcon, color: 'error' },
       })
       Sentry.captureException(err)
-    } finally {
-      form.resetField('email')
     }
   }
 

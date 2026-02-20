@@ -1,5 +1,7 @@
 import { type NextRequest } from 'next/server'
 
+import * as Sentry from '@sentry/nextjs'
+
 const MAILCHIMP_JSONP_CALLBACK = 'handle_response'
 
 export async function POST(request: NextRequest) {
@@ -38,6 +40,11 @@ export async function POST(request: NextRequest) {
     const json = text.replace(/^[^(]+\(/, '').replace(/\)$/, '')
     data = JSON.parse(json)
   } catch {
+    Sentry.captureException(
+      new Error(
+        'Failed to parse Mailchimp response as JSON from Mailchimp API',
+      ),
+    )
     console.error(
       'Failed to parse Mailchimp response as JSON from Mailchimp API',
     )
