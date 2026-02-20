@@ -113,6 +113,83 @@
     "metadata": {
       "title": "TODO",
       "description": "TODO"
+    },
+    "hero": {
+      "title": "与 Filecoin 社区一起构建、连接和成长",
+      "description": "一个由构建者、研究者、倡导者和创作者组成的全球网络正在塑造 Filecoin 的未来。加入社区，以自己的方式开始贡献。"
+    },
+    "getInvolvedWithCommunity": {
+      "events": {
+        "title": "活动和聚会",
+        "description": "参加即将举行的黑客松、峰会和聚会。",
+        "cta": "探索未来活动"
+      },
+      "orbit": {
+        "title": "Orbit 大使",
+        "description": "为 Filecoin 发声、举办活动，并在全球推动生态发展。",
+        "cta": "了解更多关于 Orbit"
+      },
+      "calls": {
+        "title": "社区电话会议",
+        "description": "加入定期社区电话会议，了解最新动态、结识贡献者并开始参与贡献。",
+        "cta": "加入社区电话会议"
+      }
+    },
+    "ecosystemGroups": {
+      "title": "生态系统组织",
+      "description": "Filecoin 是开源且由社区驱动的。探索推进协议并构建支持其生态系统的工具的组织。",
+      "visitWebsite": "访问网站",
+      "filecoinFoundation": {
+        "description": "网络治理、Filecoin Plus 和资助。"
+      },
+      "filOz": {
+        "description": "核心软件开发。"
+      },
+      "polaris": {
+        "description": "Protocol Labs 开发者公会和黑客松。"
+      },
+      "filB": {
+        "description": "构建者社区和教育。"
+      },
+      "fidl": {
+        "description": "研究和协议设计。"
+      },
+      "ansa": {
+        "description": "应用研究和生态增长。"
+      }
+    },
+    "connectCommunity": {
+      "title": "与社区建立联系",
+      "description": "与在 Filecoin 上构建的充满活力的开发者网络建立联系。连接、协作，与生态共同成长。",
+      "exploreEvents": "探索即将举行的活动"
+    },
+    "networkUpgrades": {
+      "title": "网络升级",
+      "description": "Filecoin 通过开放的、社区驱动的流程进行治理，技术决策在公开场合讨论，并通过定期升级来保持网络的安全和演进。",
+      "checkProposals": "查看提案",
+      "learnGovernance": "了解更多关于治理",
+      "currentUpgrade": "当前升级",
+      "upcomingUpgrade": "即将到来的升级",
+      "nv27": {
+        "title": "NV27 Golden Week",
+        "description": "此次升级提供了协议清理和增强功能，包括 Filecoin 以太坊虚拟机 (FEVM) 的密码学预编译、直接数据上链的智能合约通知、Filecoin 快速最终性 (F3) 兼容的快照格式，以及存储提供商 (SP) 创建的新质押要求。",
+        "cta": "阅读 NV27 升级概述"
+      },
+      "nv28": {
+        "title": "NV28 即将到来",
+        "description": "NV28 预计将带来持续的协议改进和生态增强，重点关注核心网络运营、开发者体验和存储提供商功能，同时支持 Filecoin 在可扩展性和安全性方面的更广泛路线图。",
+        "cta": "查看 NV28 升级讨论"
+      }
+    },
+    "latestNews": {
+      "title": "最新消息",
+      "description": "来自构建 Filecoin 的团队的洞察、更新、生态亮点和社区故事。",
+      "viewAll": "查看所有文章"
+    },
+    "exploreEcosystem": {
+      "title": "探索生态系统",
+      "description": "访问 Filecoin 基金会的生态系统浏览器，发现 Filecoin 项目，获取灵感，并在 Filecoin 生态中找到自己的位置。",
+      "visitExplorer": "访问生态系统浏览器"
     }
   },
   "/learn": {

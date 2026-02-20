@@ -113,6 +113,83 @@
     "metadata": {
       "title": "Filecoin Community | Connect, Learn & Build Together",
       "description": "Join the Filecoin community—connect with developers, join events, and access resources to collaborate on building the future of decentralized storage."
+    },
+    "hero": {
+      "title": "Build, connect and grow with the Filecoin community",
+      "description": "A global network of builders, researchers, advocates and creators is shaping the future of Filecoin. Plug into the community and start contributing in your own way."
+    },
+    "getInvolvedWithCommunity": {
+      "events": {
+        "title": "Events & meetups",
+        "description": "Attend upcoming hackathons, summits, and meetups.",
+        "cta": "Explore future events"
+      },
+      "orbit": {
+        "title": "Orbit Ambassadors",
+        "description": "Advocate for Filecoin, host events, and grow the ecosystem around the world.",
+        "cta": "Learn more about Orbit"
+      },
+      "calls": {
+        "title": "Community calls",
+        "description": "Join recurring community calls to hear updates, meet contributors and start contributing.",
+        "cta": "Join community calls"
+      }
+    },
+    "ecosystemGroups": {
+      "title": "Ecosystem groups",
+      "description": "Filecoin is open-source and community-driven. Explore groups advancing the protocol and building the tools that power its ecosystem.",
+      "visitWebsite": "Visit website",
+      "filecoinFoundation": {
+        "description": "Network governance, Filecoin Plus, and grants."
+      },
+      "filOz": {
+        "description": "Core software development."
+      },
+      "polaris": {
+        "description": "Protocol Labs dev guild and hackathons."
+      },
+      "filB": {
+        "description": "Builder community and education."
+      },
+      "fidl": {
+        "description": "Research and protocol design."
+      },
+      "ansa": {
+        "description": "Applied research and ecosystem growth."
+      }
+    },
+    "connectCommunity": {
+      "title": "Connect with the community",
+      "description": "Connect with a vibrant network of developers building on Filecoin. Connect, collaborate, and grow with the ecosystem.",
+      "exploreEvents": "Explore upcoming events"
+    },
+    "networkUpgrades": {
+      "title": "Network upgrades",
+      "description": "Filecoin is governed through an open, community-driven process where technical decisions are discussed in public and implemented through regular upgrades that keep the network secure and evolving.",
+      "checkProposals": "Check proposals",
+      "learnGovernance": "Learn more about governance",
+      "currentUpgrade": "Current upgrade",
+      "upcomingUpgrade": "Upcoming upgrade",
+      "nv27": {
+        "title": "NV27 Golden Week",
+        "description": "This upgrade delivered protocol cleanups and enhancements, including cryptographic precompiles for the Filecoin Ethereum Virtual Machine (FEVM), smart contract notifications for Direct Data Onboarding, Fast Finality on Filecoin (F3)-compatible snapshot formatting, and a new deposit requirement for storage provider (SP) creation.",
+        "cta": "Read the NV27 upgrade overview"
+      },
+      "nv28": {
+        "title": "NV28 Upcoming",
+        "description": "NV28 is expected to deliver continued protocol improvements and ecosystem enhancements, focusing on core network operations, developer experience, and storage provider functionality while supporting Filecoin's broader roadmap for scalability and security.",
+        "cta": "View the NV28 upgrade discussion"
+      }
+    },
+    "latestNews": {
+      "title": "Latest news",
+      "description": "Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin.",
+      "viewAll": "View all articles"
+    },
+    "exploreEcosystem": {
+      "title": "Explore the ecosystem",
+      "description": "Visit Filecoin Foundation's Ecosystem Explorer to discover Filecoin projects, get inspired by what others are building, and find your place in the Filecoin ecosystem.",
+      "visitExplorer": "Visit ecosystem explorer"
     }
   },
   "/learn": {

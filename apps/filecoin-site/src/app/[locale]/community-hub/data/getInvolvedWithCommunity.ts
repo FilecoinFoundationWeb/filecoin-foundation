@@ -2,32 +2,33 @@ import type { SimpleCardData } from '@filecoin-foundation/ui-filecoin/SimpleCard
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import type { TranslationFunction } from '@/i18n/types'
 
-export const getInvolvedWithCommunity = [
-  {
-    title: 'Events & meetups',
-    description: 'Attend upcoming hackathons, summits, and meetups.',
-    cta: {
-      href: FILECOIN_FOUNDATION_URLS.events.href,
-      text: 'Explore future events',
+export function getGetInvolvedWithCommunity(t: TranslationFunction) {
+  return [
+    {
+      title: t('getInvolvedWithCommunity.events.title'),
+      description: t('getInvolvedWithCommunity.events.description'),
+      cta: {
+        href: FILECOIN_FOUNDATION_URLS.events.href,
+        text: t('getInvolvedWithCommunity.events.cta'),
+      },
     },
-  },
-  {
-    title: 'Orbit Ambassadors',
-    description:
-      'Advocate for Filecoin, host events, and grow the ecosystem around the world.',
-    cta: {
-      href: FILECOIN_FOUNDATION_URLS.orbit.href,
-      text: 'Learn more about Orbit',
+    {
+      title: t('getInvolvedWithCommunity.orbit.title'),
+      description: t('getInvolvedWithCommunity.orbit.description'),
+      cta: {
+        href: FILECOIN_FOUNDATION_URLS.orbit.href,
+        text: t('getInvolvedWithCommunity.orbit.cta'),
+      },
     },
-  },
-  {
-    title: 'Community calls',
-    description:
-      'Join recurring community calls to hear updates, meet contributors and start contributing.',
-    cta: {
-      href: '#todo',
-      text: 'Join community calls',
+    {
+      title: t('getInvolvedWithCommunity.calls.title'),
+      description: t('getInvolvedWithCommunity.calls.description'),
+      cta: {
+        href: '#todo',
+        text: t('getInvolvedWithCommunity.calls.cta'),
+      },
     },
-  },
-] as const satisfies Array<SimpleCardData>
+  ] as const satisfies Array<SimpleCardData>
+}
