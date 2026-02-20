@@ -1,90 +1,92 @@
-import type { SimpleCardData } from '@filecoin-foundation/ui-filecoin/SimpleCard'
-
 import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
-export type TutorialsAndGuides = SimpleCardData & {
+import type { TranslationFunction } from '@/i18n/types'
+
+export type TutorialsAndGuides = {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
 }
 
-export const tutorialsAndGuides = [
-  {
-    title: 'Understand Filecoin basics',
-    description:
-      "A quick intro to Filecoin's role as a decentralized, verifiable storage network and why developers use it.",
-    difficulty: 'Beginner',
-    cta: {
-      href: FILECOIN_DOCS_URLS.basicsWhatIsFilecoin,
-      text: 'Read the Filecoin basics guide',
+export function getTutorialsAndGuides(t: TranslationFunction) {
+  return [
+    {
+      title: t('tutorials.basics.title'),
+      description: t('tutorials.basics.description'),
+      difficulty: 'Beginner' as const,
+      difficultyLabel: t('tutorials.difficulty.beginner'),
+      cta: {
+        href: FILECOIN_DOCS_URLS.basicsWhatIsFilecoin,
+        text: t('tutorials.basics.cta'),
+      },
     },
-  },
-  {
-    title: 'Set up your development environment',
-    description:
-      'Install tools and create a Filecoin-compatible wallet (e.g., MetaMask) ready for development.',
-    difficulty: 'Beginner',
-    cta: {
-      href: 'https://github.com/FIL-Builders/fil-frame',
-      text: 'Follow the setup instructions',
+    {
+      title: t('tutorials.devEnv.title'),
+      description: t('tutorials.devEnv.description'),
+      difficulty: 'Beginner' as const,
+      difficultyLabel: t('tutorials.difficulty.beginner'),
+      cta: {
+        href: 'https://github.com/FIL-Builders/fil-frame',
+        text: t('tutorials.devEnv.cta'),
+      },
     },
-  },
-  {
-    title: 'Connect to the Filecoin network',
-    description:
-      'Use the Calibration testnet to build safely. Claim testFIL from the faucet and connect via an RPC endpoint.',
-    difficulty: 'Beginner',
-    cta: {
-      href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: 'Connect to the testnet',
+    {
+      title: t('tutorials.connect.title'),
+      description: t('tutorials.connect.description'),
+      difficulty: 'Beginner' as const,
+      difficultyLabel: t('tutorials.difficulty.beginner'),
+      cta: {
+        href: FILECOIN_DOCS_URLS.builderCookbook,
+        text: t('tutorials.connect.cta'),
+      },
     },
-  },
-  {
-    title: 'Store and retrieve your first file',
-    description:
-      'Upload a file using a storage API or SDK, get a CID, and retrieve it through an IPFS gateway.',
-    difficulty: 'Beginner',
-    cta: {
-      href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: 'Try storing your first file',
+    {
+      title: t('tutorials.storeRetrieve.title'),
+      description: t('tutorials.storeRetrieve.description'),
+      difficulty: 'Beginner' as const,
+      difficultyLabel: t('tutorials.difficulty.beginner'),
+      cta: {
+        href: FILECOIN_DOCS_URLS.builderCookbook,
+        text: t('tutorials.storeRetrieve.cta'),
+      },
     },
-  },
-  {
-    title: 'Programmatic storage in your app',
-    description:
-      'Use the JavaScript SDK or HTTP API to store and retrieve files directly in your application logic.',
-    difficulty: 'Intermediate',
-    cta: {
-      href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: 'See code examples',
+    {
+      title: t('tutorials.programmatic.title'),
+      description: t('tutorials.programmatic.description'),
+      difficulty: 'Intermediate' as const,
+      difficultyLabel: t('tutorials.difficulty.intermediate'),
+      cta: {
+        href: FILECOIN_DOCS_URLS.builderCookbook,
+        text: t('tutorials.programmatic.cta'),
+      },
     },
-  },
-  {
-    title: 'Deploy your first smart contract on FVM',
-    description:
-      'Deploy a simple smart contract to store references to Filecoin data on the FEVM.',
-    difficulty: 'Intermediate',
-    cta: {
-      href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: 'Deploy a sample contract',
+    {
+      title: t('tutorials.smartContract.title'),
+      description: t('tutorials.smartContract.description'),
+      difficulty: 'Intermediate' as const,
+      difficultyLabel: t('tutorials.difficulty.intermediate'),
+      cta: {
+        href: FILECOIN_DOCS_URLS.builderCookbook,
+        text: t('tutorials.smartContract.cta'),
+      },
     },
-  },
-  {
-    title: 'Build your first dApp',
-    description:
-      'Create a minimal dApp with a frontend, storage backend, and FVM smart contract working together.',
-    difficulty: 'Intermediate',
-    cta: {
-      href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: 'Start building a dApp',
+    {
+      title: t('tutorials.firstDapp.title'),
+      description: t('tutorials.firstDapp.description'),
+      difficulty: 'Intermediate' as const,
+      difficultyLabel: t('tutorials.difficulty.intermediate'),
+      cta: {
+        href: FILECOIN_DOCS_URLS.builderCookbook,
+        text: t('tutorials.firstDapp.cta'),
+      },
     },
-  },
-  {
-    title: 'Explore advanced use cases',
-    description:
-      'Learn patterns for NFTs, AI datasets, hybrid cloud storage, and cross-chain integrations.',
-    difficulty: 'Advanced',
-    cta: {
-      href: FILECOIN_DOCS_URLS.builderCookbook,
-      text: 'Explore advanced examples',
+    {
+      title: t('tutorials.advanced.title'),
+      description: t('tutorials.advanced.description'),
+      difficulty: 'Advanced' as const,
+      difficultyLabel: t('tutorials.difficulty.advanced'),
+      cta: {
+        href: FILECOIN_DOCS_URLS.builderCookbook,
+        text: t('tutorials.advanced.cta'),
+      },
     },
-  },
-] as const satisfies Array<TutorialsAndGuides>
+  ]
+}

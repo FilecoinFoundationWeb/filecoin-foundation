@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -24,41 +25,52 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { SimpleCardWithImage } from '@/components/SimpleCardWithImage'
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
-import { getInvolvedOptions } from '../community-hub/data/getInvolvedOptions'
+import { getGetInvolvedOptions } from '../community-hub/data/getInvolvedOptions'
 
 import { HeroSection } from './components/HeroSection'
-import { builtOnFilecoin } from './data/builtOnFilecoin'
-import { codeNCorgiSeries } from './data/codeNcorgiSeries'
-import { developerResources } from './data/developerResources'
+import { getBuiltOnFilecoin } from './data/builtOnFilecoin'
+import { getCodeNCorgiSeries } from './data/codeNcorgiSeries'
+import { getDeveloperResources } from './data/developerResources'
+import { getFilecoinFeatures } from './data/filecoinFeatures'
 import { getInvolvedImages } from './data/getInvolvedImages'
-import { tutorialsAndGuides } from './data/tutorialsAndGuides'
+import { getTutorialsAndGuides } from './data/tutorialsAndGuides'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBadgeVariant } from './utils/getBadgeVariant'
 
 export default async function BuildOnFilecoin() {
   const metadata = await getTranslatedMetadata(PATHS.BUILD_ON_FILECOIN.path)
+  const t = await getTranslations(PATHS.BUILD_ON_FILECOIN.path)
+
+  const builtOnFilecoin = getBuiltOnFilecoin(t)
+  const tutorialsAndGuides = getTutorialsAndGuides(t)
+  const codeNCorgiSeries = getCodeNCorgiSeries(t)
+  const developerResources = getDeveloperResources(t)
+  const getInvolvedOptions = getGetInvolvedOptions(t)
+  const filecoinFeatures = getFilecoinFeatures(t)
 
   return (
     <>
-      <StructuredDataScript structuredData={generateStructuredData(metadata)} />
+      <StructuredDataScript
+        structuredData={generateStructuredData(metadata, filecoinFeatures)}
+      />
 
       <Navigation backgroundVariant="dark" />
 
-      <HeroSection />
+      <HeroSection t={t} />
 
       <PageSection backgroundVariant="light" paddingVariant="bottomNone">
         <SectionContent
           centerCTA
           centerTitle
           headingTag="h2"
-          title="Built on Filecoin"
-          description="Discover tools and applications powered by Filecoin."
+          title={t('builtOnFilecoin.title')}
+          description={t('builtOnFilecoin.description')}
           cta={
             <Button
               href={FILECOIN_FOUNDATION_URLS.ecosystemExplorer.href}
               variant="primary"
             >
-              Visit ecosystem explorer
+              {t('builtOnFilecoin.visitEcosystem')}
             </Button>
           }
         >
@@ -79,12 +91,12 @@ export default async function BuildOnFilecoin() {
       <PageSection backgroundVariant="light">
         <SectionContent
           headingTag="h2"
-          title="Tutorials and guides"
-          description="Learn the basics to start building with Filecoin."
+          title={t('tutorials.title')}
+          description={t('tutorials.description')}
         >
           <CardGrid as="ul" variant="smTwoXlThreeWide">
             {tutorialsAndGuides.map(
-              ({ title, description, cta, difficulty }) => (
+              ({ title, description, cta, difficulty, difficultyLabel }) => (
                 <SimpleCard
                   key={title}
                   as="li"
@@ -93,7 +105,7 @@ export default async function BuildOnFilecoin() {
                   description={description}
                   cta={cta}
                   badge={{
-                    text: difficulty,
+                    text: difficultyLabel,
                     variant: getBadgeVariant(difficulty),
                   }}
                 />
@@ -107,8 +119,8 @@ export default async function BuildOnFilecoin() {
         <SectionContent
           centerCTA
           headingTag="h2"
-          title="Code n' Corgi: Discovering AI Pawsibilitiess"
-          description="A 7-day beginner series covering the foundations of decentralized AI — from blockchain basics to storing AI model data on Filecoin. Watch each session and follow practical guides from ecosystem partners."
+          title={t('codeNCorgi.title')}
+          description={t('codeNCorgi.description')}
         >
           <CardGrid as="ul" variant="lgTwoWide">
             {codeNCorgiSeries.map(({ title, description, cta, image }) => (
@@ -125,7 +137,10 @@ export default async function BuildOnFilecoin() {
       </PageSection>
 
       <PageSection backgroundVariant="gray">
-        <SectionContent headingTag="h2" title="Developer resources">
+        <SectionContent
+          headingTag="h2"
+          title={t('developerResources.title')}
+        >
           <CardGridContainer width="6xl">
             <CardGrid as="ul" variant="mdTwo">
               {developerResources.map(({ title, description, href, icon }) => (
@@ -147,9 +162,8 @@ export default async function BuildOnFilecoin() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           headingTag="h2"
-          title="Get involved"
-          description="Whether you're just getting started or looking to deepen your
-          contributions, there are many ways to get involved."
+          title={t('getInvolved.title')}
+          description={t('getInvolved.description')}
         >
           <ImageGrid variant="oneMdThree">
             {getInvolvedImages.map(({ data, alt }) => (

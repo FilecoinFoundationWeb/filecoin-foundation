@@ -305,8 +305,168 @@
   },
   "/build-on-filecoin": {
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "在 Filecoin 上构建 | 面向开发者和 AI 的可扩展去中心化存储",
+      "description": "利用 Filecoin 的可编程、可验证存储赋能您的应用。使用开源工具、FVM 智能合约和 IPFS 集成 AI 数据集、dApp、跨链桥等，实现弹性、无许可的开发。"
+    },
+    "hero": {
+      "title": "在 Filecoin 上构建：开放、可扩展、可验证的存储",
+      "description": "Filecoin 是一个从底层设计的可编程、无许可网络，具备加密验证和全球冗余。集成去中心化存储，随您的需求扩展，并在每一层保护数据完整性。",
+      "exploreDocs": "浏览文档",
+      "announcingFOC": "Filecoin 链上云发布",
+      "focTitle": "透明存储、检索和支付的可验证链上服务",
+      "focDescription1": "Filecoin 链上云允许开发者在链上构建可组合和可验证的服务，其中存储、固定、检索和支付默认透明、可编程且可互操作。",
+      "focDescription2": "这为 Filecoin 网络提供了直接的、无需信任的入口，让开发者无需运行自己的基础设施即可连接数据、服务和应用程序。",
+      "focCta": "开始使用 Filecoin 链上云"
+    },
+    "builtOnFilecoin": {
+      "title": "基于 Filecoin 构建",
+      "description": "探索由 Filecoin 驱动的工具和应用程序。",
+      "visitEcosystem": "访问生态系统浏览器",
+      "visitWebsite": "访问网站",
+      "lighthouse": {
+        "description": "Filecoin 网络上的永久存储，允许用户以固定价格长期存储文件。"
+      },
+      "glif": {
+        "description": "用于在 Filecoin 上构建、管理和交易的开发者工具和 DeFi 基础设施。"
+      },
+      "recall": {
+        "description": "Recall 让 AI 代理证明其智能、竞争奖励和声誉，并在专业技能中展示顶级表现者。"
+      },
+      "huddle01": {
+        "description": "基于 Filecoin 构建，Huddle01 是一个去中心化的实时通信网络，提供面向 Web 和移动端的实时音视频软件开发套件。"
+      }
+    },
+    "tutorials": {
+      "title": "教程和指南",
+      "description": "学习基础知识，开始使用 Filecoin 构建。",
+      "basics": {
+        "title": "了解 Filecoin 基础",
+        "description": "快速了解 Filecoin 作为去中心化、可验证存储网络的角色以及开发者使用它的原因。",
+        "cta": "阅读 Filecoin 基础指南"
+      },
+      "devEnv": {
+        "title": "设置开发环境",
+        "description": "安装工具并创建与 Filecoin 兼容的钱包（例如 MetaMask），为开发做好准备。",
+        "cta": "按照设置说明操作"
+      },
+      "connect": {
+        "title": "连接到 Filecoin 网络",
+        "description": "使用 Calibration 测试网安全构建。从水龙头领取 testFIL 并通过 RPC 端点连接。",
+        "cta": "连接到测试网"
+      },
+      "storeRetrieve": {
+        "title": "存储和检索您的第一个文件",
+        "description": "使用存储 API 或 SDK 上传文件，获取 CID，并通过 IPFS 网关检索。",
+        "cta": "尝试存储您的第一个文件"
+      },
+      "programmatic": {
+        "title": "在应用中进行编程化存储",
+        "description": "使用 JavaScript SDK 或 HTTP API 直接在应用逻辑中存储和检索文件。",
+        "cta": "查看代码示例"
+      },
+      "smartContract": {
+        "title": "在 FVM 上部署您的第一个智能合约",
+        "description": "部署一个简单的智能合约，在 FEVM 上存储对 Filecoin 数据的引用。",
+        "cta": "部署示例合约"
+      },
+      "firstDapp": {
+        "title": "构建您的第一个 dApp",
+        "description": "创建一个包含前端、存储后端和 FVM 智能合约协同工作的最小 dApp。",
+        "cta": "开始构建 dApp"
+      },
+      "advanced": {
+        "title": "探索高级用例",
+        "description": "了解 NFT、AI 数据集、混合云存储和跨链集成的模式。",
+        "cta": "探索高级示例"
+      },
+      "difficulty": {
+        "beginner": "初级",
+        "intermediate": "中级",
+        "advanced": "高级"
+      }
+    },
+    "codeNCorgi": {
+      "title": "Code n' Corgi：探索 AI 的无限可能",
+      "description": "为期 7 天的入门系列，涵盖去中心化 AI 基础——从区块链基础到在 Filecoin 上存储 AI 模型数据。观看每节课程并跟随生态系统合作伙伴的实践指南。",
+      "watchVideo": "观看视频",
+      "day1": {
+        "title": "第 1 天 — 区块链和 Filecoin 基础",
+        "description": "学习区块链和 Filecoin（AI 的数据层）的基础知识，开启您的去中心化技术之旅。"
+      },
+      "day2": {
+        "title": "第 2 天 — 理解数据 DAO",
+        "description": "了解高质量数据的重要性、数据 DAO 如何解决数据所有权挑战，并设置 FoxWallet。"
+      },
+      "day3": {
+        "title": "第 3 天 — 在 Filecoin 上存储数据（Storacha）",
+        "description": "探索去中心化存储如何支持更智能的 AI，学习如何通过 Storacha 在 Filecoin 上存储数据。"
+      },
+      "day4": {
+        "title": "第 4 天 — 构建您的第一个子图",
+        "description": "构建、部署和管理子图，跟踪驱动 AI 代理的智能合约事件——由 Protofire 指导。"
+      },
+      "day5": {
+        "title": "第 5 天 — 构建您的第一个 AI 代理",
+        "description": "通过 CrewAI 在 Filecoin 上构建您的第一个 AI 代理，采用入门友好的分步工作流程。"
+      },
+      "day6": {
+        "title": "第 6 天 — 热存储 + dApp 构建",
+        "description": "动手实践 Akave 的热存储解决方案，然后探索 FILFrame——构建 dApp 的起点。"
+      },
+      "day7": {
+        "title": "第 7 天 — 产品马拉松与模型存储",
+        "description": "为产品马拉松做准备：探索在 Filecoin 上存储 AI 模型数据的真实项目示例，找到可以构建的问题陈述。"
+      }
+    },
+    "developerResources": {
+      "title": "开发者资源",
+      "documentation": {
+        "title": "文档",
+        "description": "全面的指南和教程，助您在 Filecoin 上构建。"
+      },
+      "testFILFaucet": {
+        "title": "testFIL 水龙头",
+        "description": "即时获取用于开发和实验的测试代币。"
+      },
+      "rpcEndpoints": {
+        "title": "RPC 端点",
+        "description": "可靠的端点，将您的 dApp 连接到 Filecoin 网络。"
+      },
+      "filecoinSol": {
+        "title": "Filecoin.sol",
+        "description": "用于与 Filecoin 虚拟机无缝集成的 Solidity 库。"
+      }
+    },
+    "getInvolved": {
+      "title": "参与其中",
+      "description": "无论您是刚起步还是希望深入贡献，都有许多方式可以参与其中。",
+      "applyGrant": {
+        "title": "申请资助",
+        "description": "获取资金支持您的 Filecoin 项目或研究。"
+      },
+      "retroPGF": {
+        "title": "探索追溯性公共产品资助",
+        "description": "因推动 Filecoin 生态系统的有影响力的开源贡献而获得奖励。"
+      },
+      "orbitAmbassador": {
+        "title": "成为 Orbit 大使",
+        "description": "加入 Orbit 社区，倡导去中心化技术，支持新建设者，在全球推动 Filecoin 运动。"
+      },
+      "communityEvents": {
+        "title": "参加社区活动",
+        "description": "在世界各地的黑客松、聚会和峰会上与建设者、研究人员和倡导者交流。"
+      }
+    },
+    "filecoinFeatures": {
+      "archivalStorage": {
+        "title": "大规模归档存储"
+      },
+      "crossChainBridges": {
+        "title": "跨链数据桥"
+      },
+      "storageEnabledDapps": {
+        "title": "存储驱动的 dApp"
+      }
     }
   },
   "/case-studies": {
