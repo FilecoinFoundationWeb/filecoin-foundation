@@ -28,7 +28,7 @@ title: "Jonathan Schwartz, Open Work Labs"
 _template: blog_detail
 ---
 
-_Welcome to the fourth installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network. The goal is to inspire others to build world-class tools for the distributed web. Check out the_ [**_last post_**](https://filecoin.io/blog/community-ben-fino-radin-sdi/) _featuring Ben Fino-Radin, founder of Small Data Industries._
+_Welcome to the fourth installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network. The goal is to inspire others to build world-class tools for the distributed web. Check out the_ [**_last post_**](/blog/ben-fino-radin-small-data-industries/) _featuring Ben Fino-Radin, founder of Small Data Industries._
 
 Jonathan Schwartz is the co-founder of **Open Work Labs** (OWL), a product studio based in Brooklyn that builds tools to improve the way people share, organize, and archive their work. Most of their time is spent helping other teams develop distributed web apps and infrastructure that they hope to eventually reuse on their own products.
 

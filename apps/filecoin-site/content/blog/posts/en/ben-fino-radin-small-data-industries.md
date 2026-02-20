@@ -29,7 +29,7 @@ title: "Ben Fino-Radin, Small Data Industries"
 _template: blog_detail
 ---
 
-_Welcome to the third installment of the Filecoin Community Highlights series, where we feature users and developers who are building essential tools and services on the Filecoin network. The goal is to inspire others to join Filecoin in its mission to build world-class tools for the distributed web. Check out the_ [_previous interview in this series_](https://filecoin.io/blog/community-tammy-yang-bofu-chen-numbers/)_, with Bofu Chen and Tammy Yang, co-founders of Numbers._
+_Welcome to the third installment of the Filecoin Community Highlights series, where we feature users and developers who are building essential tools and services on the Filecoin network. The goal is to inspire others to join Filecoin in its mission to build world-class tools for the distributed web. Check out the_ [_previous interview in this series_](/blog/tammy-yang-and-bofu-chen-numbers/)_, with Bofu Chen and Tammy Yang, co-founders of Numbers._
 
 Ben Fino-Radin is the founder of [Small Data Industries](https://smalldata.industries/), a lab and consultancy based in New York City. Small Data’s mission is to safeguard the permanence and integrity of the world’s artistic record. Ben and his team work with artists, collectors, and cultural heritage institutions around the world to preserve and protect art and archives, and they see Filecoin as the key to improving their efficiency and creating more secure records. We spoke with Fino-Radin about his career path, how he first discovered the Filecoin network, and his vision for leveraging the power of decentralized storage for artists, collectors, and institutions.
 

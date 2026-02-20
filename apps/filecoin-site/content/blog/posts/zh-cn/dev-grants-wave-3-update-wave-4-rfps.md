@@ -44,12 +44,12 @@ _template: blog_detail_ch
 
 感谢所有提交申请的团队！未获得第三批资助的提案也会在第四批资助中重新被考虑。第四批资助的提案请于**7月1日23:59(PDT)** 前提交。我们将在数量允许的情况下评估后面的申请。[**第四批提案列表**](https://github.com/filecoin-project/devgrants/tree/master?tab=readme-ov-file#requests-for-proposals-rfps) 已可查看，我们也鼓励团队按自己的想法申请开放性资助。
 
-令人兴奋的为期30天的 [HackFS线上黑客松](https://filecoin.io/zh-cn/blog/announcing-filecoin-ignite-and-hackfs/) 即将于7月6日开始，您可以在此与其他dapp开发者一起进行新的Filecoin试验、获得技术指导和支持。参与 _[申请 HackFS](https://hackfs.com/)_！
+令人兴奋的为期30天的 [HackFS线上黑客松](/blog/filecoin-ignite-hackfs/) 即将于7月6日开始，您可以在此与其他dapp开发者一起进行新的Filecoin试验、获得技术指导和支持。参与 _[申请 HackFS](https://hackfs.com/)_！
 
 ## PB级矿工测试提案更新
 
 我们在第三批资助中收到了48份PB级矿工测试提案。由于证明继续改进，因此对于该项资助，我们决定专注于更好地理解不同**存储层选择**的性能和权衡。我们将从在他们提案里描述有趣的存储层技术的团队中选出一些团队来取得联系。
 
-我们还鼓励拥有大容量存储空间的Filecoin挖矿运营商们参与即将到来的 [**SpaceRace**](https://filecoin.io/zh-cn/blog/announcing-testnet-incentives/) ——全球范围的测试网奖励计划。
+我们还鼓励拥有大容量存储空间的Filecoin挖矿运营商们参与即将到来的 [**SpaceRace**](/blog/filecoin-9/) ——全球范围的测试网奖励计划。
 
 _为所有提交开发者资助申请提案的社区成员们喝彩，我们希望在未来的开发者资助计划中看到更多参与！_

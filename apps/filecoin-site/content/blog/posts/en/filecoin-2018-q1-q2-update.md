@@ -252,7 +252,7 @@ Filecoin is built on top of and depends heavily on [IPFS](https://ipfs.tech/), a
 
 ## 7. Changes to the blog and to our updates
 
-We are making some changes to our blog and our updates. In our [last update](https://filecoin.io/blog/update-2017-q4/), we planned to broadcast updates at least once a quarter. We are sorry to have missed that goal – we know this was frustrating for some in the community. Hence, this update is longer than usual, and we’re making the following changes:
+We are making some changes to our blog and our updates. In our [last update](/blog/filecoin-2017-q4-update/), we planned to broadcast updates at least once a quarter. We are sorry to have missed that goal – we know this was frustrating for some in the community. Hence, this update is longer than usual, and we’re making the following changes:
 
 1. We plan to switch to a stream of smaller updates. This means our update cadence will no longer be quarterly.
 2. We will drop the requirement that our updates "speak for the whole project" and thus avoid blocking on review. Instead, in a more decentralized fashion, we intend for our working groups and individual team members to start publishing their own updates through the blog.

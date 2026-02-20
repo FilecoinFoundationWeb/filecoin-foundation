@@ -26,7 +26,7 @@ title: 测试网第二阶段的更新
 _template: blog_detail_ch
 ---
 
-正如我们在[上次的路线图](https://filecoin.io/blog/roadmap-update-2019-q4/)更新中宣布的那样，我们正在使用[甘特图](https://app.instagantt.com/shared/s/1152992274307505/latest)来维护路线图的更新。目前我们处于测试网的第一阶段，并且在准备即将启动测试网的第二阶段，在这篇博客中，我们将讨论大致的时间安排和接下来的计划中的里程碑， 如果您需要回顾之前的内容，请点击[这里](https://filecoin.io/blog/roadmap-update-2019-q4/#what-s-next)阅读更多信息。
+正如我们在[上次的路线图](/blog/filecoin-roadmap-update-q4-2019/)更新中宣布的那样，我们正在使用[甘特图](https://app.instagantt.com/shared/s/1152992274307505/latest)来维护路线图的更新。目前我们处于测试网的第一阶段，并且在准备即将启动测试网的第二阶段，在这篇博客中，我们将讨论大致的时间安排和接下来的计划中的里程碑， 如果您需要回顾之前的内容，请点击[这里](/blog/filecoin-roadmap-update-q4-2019/#what-s-next)阅读更多信息。
 
 ![Public Filecoin Gantt Chart](/blog/testnet-phase-2-gantt-chart.jpg)
 

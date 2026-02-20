@@ -79,8 +79,8 @@ The report explores:
 - The current economic structures and initial parameters of the Filecoin Protocol
 - Key planned improvements that may drive future growth of the network
 
-[![Report Download](/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)[![Report Download](/blog/economy-report-zh-cn.png)](https://filecoin.io/zh-cn/2020-engineering-filecoins-economy-zh-cn.pdf)
+[![Report Download](/blog/economy-report-en.png)](/assets/documents/2020-engineering-filecoins-economy-en.pdf)[![Report Download](/blog/economy-report-zh-cn.png)](/assets/documents/2020-engineering-filecoins-economy-zh-cn.pdf)
 
-**Download the full report here in** [**English**](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf) **and** [**Chinese**](https://filecoin.io/zh-cn/2020-engineering-filecoins-economy-zh-cn.pdf)**.**
+**Download the full report here in** [**English**](/assets/documents/2020-engineering-filecoins-economy-en.pdf) **and** [**Chinese**](/assets/documents/2020-engineering-filecoins-economy-zh-cn.pdf)**.**
 
 You can keep up with events for the Filecoin community by heading over to the [Filecoin project on GitHub](https://github.com/filecoin-project) and by checking out the [community resources](https://github.com/filecoin-project/community). And stay connected on [Filecoin Slack](https://filecoin.io/slack).

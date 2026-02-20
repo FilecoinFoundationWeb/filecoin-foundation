@@ -27,7 +27,7 @@ _template: blog_detail
 
 _This is a summary of a_ [_talk_](https://www.youtube.com/watch?v=ABhyJXxTnJY&feature=youtu.be) _given by Juan Benet._
 
-In the Filecoin network, the concept of [gas](https://filecoin.io/blog/filecoin-features-gas-fees/) is used to measure the computational resources required to execute a given on-chain transaction. The cost of these resources needs to be paid for, leading to a number of decisions that must be made around who should bear the brunt of these costs, and how transactions, which consume finite resources, should be prioritized.
+In the Filecoin network, the concept of [gas](/blog/filecoin-features-gas-fees/) is used to measure the computational resources required to execute a given on-chain transaction. The cost of these resources needs to be paid for, leading to a number of decisions that must be made around who should bear the brunt of these costs, and how transactions, which consume finite resources, should be prioritized.
 
 One approach, for example, might be to run a first-price auction. In such a system, actors that wish to execute a transaction on the blockchain submit bids to block miners. Miners then collect these bids as fees when they include the associated transactions in a mined block. Given a cap on the size of the block or the amount of gas that the transactions that a block can expend, miners prioritize transactions so as to optimize the fees they collect.
 

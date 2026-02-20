@@ -24,7 +24,7 @@ title: "走近HackFS黑客松的团队: 第一集"
 _template: blog_detail_ch
 ---
 
-_欢迎来到第六期Filecoin社区亮点系列，该系列主要针对用户以及在Filecoin网络上创建基本工具和服务的开发者们。我们希望本文和系列中的其他文章能激发您的兴趣来为分布式网络创建世界一流的工具。查看最近有关_[_Zondax联合创始人_](https://filecoin.io/blog/community-juan-leni-zondax/)_胡安勒尼(Juan Leni)的文章，该公司致力于为Filecoin创建密码学库、硬件钱包集成、Ledger应用程序和GPU加速软件。_
+_欢迎来到第六期Filecoin社区亮点系列，该系列主要针对用户以及在Filecoin网络上创建基本工具和服务的开发者们。我们希望本文和系列中的其他文章能激发您的兴趣来为分布式网络创建世界一流的工具。查看最近有关_[_Zondax联合创始人_](/blog/juan-leni-zondax/)_胡安勒尼(Juan Leni)的文章，该公司致力于为Filecoin创建密码学库、硬件钱包集成、Ledger应用程序和GPU加速软件。_
 
 本周我们将介绍四个参加[HackFS](https://hackfs.com/)的团队——一场由协议实验室和ETH Global主办的为期一个月、旨在展示Web3强大功能的黑客松活动。参与者可创建基于分布式存储的dapp、游戏、开发工具和DeFi集成等相关内容。期间，我们将与不同的团队交流和深入研究他们的工作。
 

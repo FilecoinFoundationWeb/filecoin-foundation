@@ -35,7 +35,7 @@ _template: blog_detail_ch
 
 ### 💾 测试网亮点
 
-- **2️⃣ 测试网第二阶段。** 根据核心实施团队与社区建议选择的“方案二”时间，我们于5月14日启动了[Filecoin测试网第二阶段](https://filecoin.io/blog/filecoin-testnet-phase-2-is-here/)。主要的里程碑包括两个可互操作的Filecoin实施方案([**go-filecoin**](https://github.com/filecoin-project/go-filecoin) 和 [**lotus**](https://github.com/filecoin-project/lotus/))、WinningPoSth和WindowPoSt（我们在协议中使用两种形式的Filecoin _时空证明_）和Drand（分布式随机信标网络）作为共识的外部信标来源。测试网第二阶段还包括我们对参与者和存储市场对重大改进以及[加密经济模型的完善](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/)。关于如何进行测试网请查阅我们的[最新文档](https://filecoin.io/zh-cn/blog/roadmap-update-june-2020/)。
+- **2️⃣ 测试网第二阶段。** 根据核心实施团队与社区建议选择的“方案二”时间，我们于5月14日启动了[Filecoin测试网第二阶段](/blog/filecoin-testnet-phase-2-is-here/)。主要的里程碑包括两个可互操作的Filecoin实施方案([**go-filecoin**](https://github.com/filecoin-project/go-filecoin) 和 [**lotus**](https://github.com/filecoin-project/lotus/))、WinningPoSth和WindowPoSt（我们在协议中使用两种形式的Filecoin _时空证明_）和Drand（分布式随机信标网络）作为共识的外部信标来源。测试网第二阶段还包括我们对参与者和存储市场对重大改进以及[加密经济模型的完善](/blog/filecoin-s-cryptoeconomic-constructions/)。关于如何进行测试网请查阅我们的[最新文档](/blog/2020-6-filecoin/)。
 - ✨**Filecoin测试网第二阶段达到了9PB存储。** 测试网第二阶段在近1个月的时间内达到了9PB的数据，这几乎是我们之前设定的高水位线的两倍。我们于上周重置了测试网以使用最新的Lotus和证明结构的优化。至此，我们已看到随着网络以15GB/s的速度有超过6PB的数据落地，近乎每天1.2PB。 ![测试网状态](https://filecoin.io/vintage/images/blog/fil-testnet-stats.jpg)
 - **💸测试网奖励。** 本月初，我们宣布了[测试网奖励](https://filecoin.io/blog/announcing-testnet-incentives/)的规则与硬件推荐。为期3周的合作比赛旨在对网络进行压力测试，鼓励世界各地的参与并为矿工提供在主网启动之前在测试网测试的机会。矿工需要成功地完成真实存储和检索交易，并执行扇区的整个生命周期——创建承诺容量扇区、升级并存储真实数据以及终止，才能获得奖励。加入我们本周五(6⁄26)在[filecoin.io/slack](https://filecoin.io/slack)进行的Filecoin Q&A直播以了解更多信息。
 

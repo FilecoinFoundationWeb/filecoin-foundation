@@ -27,7 +27,7 @@ _template: blog_detail
 
 - More than 730 TiB data stored across more than 450,000 storage deals to unlock a 50,000FIL prize pool
 - 15 events where speakers shared lessons and insights into developer tooling and how to navigate Filecoin as a storage client
-- And more! You can read all about Slingshot Phase 1 in our [recap blog post](https://filecoin.io/blog/slingshot-phase-1-recap/)
+- And more! You can read all about Slingshot Phase 1 in our [recap blog post](/blog/slingshot-phase-1-recap/)
 
 In this blog post, we are introducing Phase 2 of the Slingshot competition. If you are interested in earning FIL rewards for storing valuable data on the Filecoin network, Slingshot is for you!
 

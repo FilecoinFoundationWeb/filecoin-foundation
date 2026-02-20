@@ -24,7 +24,7 @@ title: "HackFS: What's Next"
 _template: blog_detail
 ---
 
-More than three dozen teams took home prizes at the HackFS Finale last week on August 18. Among them, 10 were named finalists, earning $1,000 USD per team member plus 250 FIL. You can learn more about these projects by reading [our last post](https://filecoin.io/blog/hackfs-finale/) or watching the [finale recording](https://www.youtube.com/watch?v=GibA0t0z_9w).
+More than three dozen teams took home prizes at the HackFS Finale last week on August 18. Among them, 10 were named finalists, earning $1,000 USD per team member plus 250 FIL. You can learn more about these projects by reading [our last post](/blog/30-days-130-projects-recognizing-new-ideas-to-power-web3/) or watching the [finale recording](https://www.youtube.com/watch?v=GibA0t0z_9w).
 
 The amazing array of projects created within the month-long hackathon covered almost every facet of the decentralized web – from communications tools, to gaming, to dev tools, to new innovations in DeFi. All 130+ teams that completed HackFS will receive 100 FIL if they continue to build out their projects, and the 10 finalist teams have access to a pool of $30,000 USD to take their projects to the next level.
 

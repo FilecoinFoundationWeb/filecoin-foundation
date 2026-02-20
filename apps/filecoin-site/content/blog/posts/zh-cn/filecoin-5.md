@@ -72,7 +72,7 @@ _template: blog_detail_ch
 
 **补充资料:**
 
-- [简析Filecoin经济](https://filecoin.io/blog/introducing-the-filecoin-economy/)
+- [简析Filecoin经济](/blog/introducing-the-filecoin-economy/)
 - [缔造Filecoin经济](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
 
 ## Filecoin生态
@@ -152,10 +152,10 @@ Fleek的Space Daemon是一个建立在分布式网络上的开源文件存储、
 
 ## 额外惊喜！Filecoin的功能特色
 
-- [分布式随机性 & 领导者选举](https://filecoin.io/blog/distributed-randomness-and-leader-elections/)
-- [Filecoin的证明系统](https://filecoin.io/blog/filecoin-proof-system/)
+- [分布式随机性 & 领导者选举](/blog/filecoin-features-distributed-randomness-leader-elections/)
+- [Filecoin的证明系统](/blog/what-sets-us-apart-filecoin-s-proof-system/)
 - [技巧集——近看Filecoin创建区块](https://filecoin.io/blog/tipsets-family-based-approach-to-consensus/)
-- [Filecoin的可验证存储](https://filecoin.io/blog/filecoin-features-verifiable-storage/)
+- [Filecoin的可验证存储](/blog/filecoin-features-verifiable-storage/)
 - [对于大型数据的离线数据传输](https://filecoin.io/blog/offline-data-transfer-for-large-scale-data/)和[通过Filecoin Discover存储珍贵数据](https://www.youtube.com/watch?v=UXmQfnwzhtQ)
 - [ProtoSchool: 解析内容标识符(CID)](https://proto.school/anatomy-of-a-cid)
 - [如何使用React、lotus和go-ipfs创建一个Filecoin网络检查器](https://www.youtube.com/watch?v=lkx2Z3T649Y)

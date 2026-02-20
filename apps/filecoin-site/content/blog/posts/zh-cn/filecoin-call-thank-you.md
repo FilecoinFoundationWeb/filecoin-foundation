@@ -22,7 +22,7 @@ title: 感谢参加Filecoin矿工社区通话
 
 2020年5月28日，Filecoin团队主持了第二次Filecoin矿工社区通话，全球超过160名现场观众与我们一同参与了会议。
 
-本次通话中，Filecoin的生态负责人Colin Evran提供了Filecoin项目最近更新，包括我们不断发展的矿工生态的概况以及出现的一些重要应用场景。Filecoin创始人Juan Benet随后进行了演讲，重点介绍了Filecoin中“已验证用户”。接下来Jonathan Victor就Filecoin Discover项目进行了介绍，该项目旨在激励不同规模的早期矿工存储非营利组织和开源项目中的宝贵数据以获取额外的Filecoin（点击 [此处](https://filecoin.io/blog/intro-filecoin-discover/)了解更多相关信息）。我们还从Ian Darrow那里获得了很多信息，他为测试网奖励计划提供了预告——即将推出更多相关细节！最后，Aayush Rajasekaran回答了社区的常见问题。以下是本次提问与回答的概况。
+本次通话中，Filecoin的生态负责人Colin Evran提供了Filecoin项目最近更新，包括我们不断发展的矿工生态的概况以及出现的一些重要应用场景。Filecoin创始人Juan Benet随后进行了演讲，重点介绍了Filecoin中“已验证用户”。接下来Jonathan Victor就Filecoin Discover项目进行了介绍，该项目旨在激励不同规模的早期矿工存储非营利组织和开源项目中的宝贵数据以获取额外的Filecoin（点击 [此处](/blog/introducing-filecoin-discover/)了解更多相关信息）。我们还从Ian Darrow那里获得了很多信息，他为测试网奖励计划提供了预告——即将推出更多相关细节！最后，Aayush Rajasekaran回答了社区的常见问题。以下是本次提问与回答的概况。
 
 ## 回答您挖矿相关的问题
 

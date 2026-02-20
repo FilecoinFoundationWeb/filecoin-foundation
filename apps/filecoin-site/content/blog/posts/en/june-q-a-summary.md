@@ -40,7 +40,7 @@ We are still finalizing our Cryptoecon parameters and they will continue to evol
 
 **Can you confirm that the mainnet launch window is still on track?**
 
-As we said in our [June roadmap update](https://filecoin.io/blog/roadmap-update-june-2020/), we’re continuing to make good progress towards mainnet launch, aiming towards the end of our mainnet launch window. However, all dates are still best-effort optimistic estimates - our top priority is to launch a secure and successful network.
+As we said in our [June roadmap update](/blog/filecoin-roadmap-update-june-2020/), we’re continuing to make good progress towards mainnet launch, aiming towards the end of our mainnet launch window. However, all dates are still best-effort optimistic estimates - our top priority is to launch a secure and successful network.
 
 **Will the hard disk of Filecoin Discover catch up with the incentive competition on July 20 in time?**
 
@@ -171,11 +171,11 @@ For (2) Mandatory Security Upgrades, these will come with some sort of transitio
 
 **How are you working to bootstrap the demand side of the marketplace? The Discover program is nice but who is the target market for users and how do you get them?**
 
-In addition to [Filecoin Discover](https://filecoin.io/blog/intro-filecoin-discover/), a number of groups are actively building tools and services to support adoption of the Filecoin network with developers and clients. For example, [check out the recordings from our Virtual Community Meetup](https://filecoin.io/blog/filecoin-virtual-community-meetup-recap/) to see updates about Textile Powergate and Starling Storage. A number of other programs, like [Filecoin Ignite](https://filecoin.io/blog/announcing-filecoin-ignite-and-hackfs/), will also contribute additional demand, tooling, and usage.
+In addition to [Filecoin Discover](/blog/introducing-filecoin-discover/), a number of groups are actively building tools and services to support adoption of the Filecoin network with developers and clients. For example, [check out the recordings from our Virtual Community Meetup](/blog/filecoin-virtual-community-meetup-recap/) to see updates about Textile Powergate and Starling Storage. A number of other programs, like [Filecoin Ignite](/blog/one-more/), will also contribute additional demand, tooling, and usage.
 
 **Will the total of 4 million FIL be split between miners? How much will be actually distributed to miners?**
 
-You can read about the method for distributing Testnet Incentive rewards [in our blog post](https://filecoin.io/blog/announcing-testnet-incentives/). It’s up to miners how much FIL will actually be distributed! Add more storage to unlock more rewards.
+You can read about the method for distributing Testnet Incentive rewards [in our blog post](/blog/announcing-filecoin-s-testnet-incentives/). It’s up to miners how much FIL will actually be distributed! Add more storage to unlock more rewards.
 
 **How big will the deals be that the bot tries to make with miners during Incentivized Testnet?**
 
@@ -183,7 +183,7 @@ Expect ranges from a few kilobytes up to full 32GiB sectors.
 
 **What is your recommendation on the right hardware?**
 
-While the Filecoin team does not recommend any specific hardware configuration, we did share some setups ([https://filecoin.io/blog/announcing-testnet-incentives/#hardware](https://filecoin.io/blog/announcing-testnet-incentives/#hardware "https://filecoin.io/blog/announcing-testnet-incentives/#hardware")) we’ve used for various types of testing. However, it is overwhelmingly likely that there are more efficient setups, and we strongly encourage miners to test and experiment to find the best combinations.
+While the Filecoin team does not recommend any specific hardware configuration, we did share some setups ([/blog/announcing-filecoin-s-testnet-incentives/#hardware](/blog/announcing-filecoin-s-testnet-incentives/#hardware "/blog/announcing-filecoin-s-testnet-incentives/#hardware")) we’ve used for various types of testing. However, it is overwhelmingly likely that there are more efficient setups, and we strongly encourage miners to test and experiment to find the best combinations.
 
 **What happens to the existing content on IPFS once Filecoin launches? What if nodes continue to host content for free and undermine the Filecoin incentive layer?**
 

@@ -153,33 +153,25 @@
         "description": "为基因组学、公共研究和大规模科学数据提供弹性访问。"
       }
     },
-    "unique": {
-      "title": "Filecoin 的独特之处",
-      "description": "Filecoin 的分布式设计提供可验证的存储，消除单点故障，并创建弹性、透明的存储基础。",
+    "decentralizedByDesign": {
+      "title": "设计即去中心化",
+      "description": "Filecoin 网络提供由密码学证明和经济激励保障的去中心化存储，将数据存储转变为开放、可验证的基础设施。",
       "startStoringCta": "开始在 Filecoin 上存储",
-      "storageDeals": {
-        "title": "存储交易",
-        "description": "Filecoin 经济运行在交易之上，客户和提供者就存储多少数据、存储多长时间以及价格达成一致。"
-      },
-      "cryptographicProofs": {
-        "title": "密码学证明",
-        "description": "客户发送数据后，提供者必须定期生成经区块链验证的密码学证明，以便客户确认其数据按照承诺进行存储。"
-      },
-      "verifiableSecurity": {
-        "title": "可验证的安全性",
-        "description": "Filecoin 使用两种证明来确保数据完整性：<porepLink>复制证明</porepLink>验证提供者已存储数据的唯一副本，<postLink>时空证明</postLink>确认数据在一段时间内被持续存储。未能满足这些要求的提供者将被没收抵押品。"
-      },
-      "retrievalOnDemand": {
-        "title": "按需检索",
-        "description": "通过 <focLink>Filecoin 链上云</focLink>，检索可以是自动的、基于服务的，或直接集成到工作流程中。检索与存储一样可验证，形成了一个以性能为驱动的市场，速度和质量决定奖励。"
-      },
-      "builtForScale": {
-        "title": "为规模化而构建",
-        "description": "Filecoin 的基础设施专为 EB 级数据集和长期归档而设计。凭借内置的冗余和全球分布，它满足从个人存储到文化档案和大规模科学数据集的各种需求。"
+      "onchainProof": {
+        "title": "链上存储证明",
+        "description": "Filecoin 使用两种证明来确保数据完整性：<porepLink>复制证明</porepLink>验证数据的唯一副本是否存在，<postLink>时空证明</postLink>确认数据在一段时间内持续存储。"
       },
       "poweredByIncentives": {
         "title": "由激励驱动",
-        "description": "<filLink>Filecoin 代币 (FIL)</filLink> 支撑着网络经济。客户支付 FIL 来存储和检索数据，而提供者通过提供可靠的服务和锁定抵押品来赚取 FIL，从而保持系统的诚实和安全。"
+        "description": "<filLink>Filecoin 代币（FIL）</filLink>驱动网络经济。客户支付 FIL 来存储数据，而提供者通过提供可靠服务来赚取 FIL。提供者必须锁定 FIL 作为抵押品，并通过提交有效证明来赚取奖励。"
+      },
+      "verifiableRetrieval": {
+        "title": "可验证的检索",
+        "description": "借助<focLink>Filecoin 链上云</focLink>，检索性能可在链上得到证明，将速度和可靠性转化为可衡量、可验证的指标。"
+      },
+      "builtForScale": {
+        "title": "为规模化而构建",
+        "description": "网络基础设施旨在支持 EB 级数据集和长期保存，内置全球分发和冗余机制。"
       }
     },
     "protocol": {
@@ -228,8 +220,87 @@
   },
   "/store-data": {
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "在 Filecoin 上存储数据 | 安全、可验证的去中心化存储解决方案",
+      "description": "在 Filecoin 上安全存储大数据，具备防篡改完整性、合规标准、可预测定价和无限可扩展性。从可信提供商中选择弹性、抗审查的存储，无隐藏费用。"
+    },
+    "hero": {
+      "title": "为重要数据提供去中心化、安全的存储",
+      "description": "Filecoin 是一个动态的去中心化存储网络，确保您的数据安全、可验证且始终由您掌控——为企业平台到简易入口提供一站式存储解决方案。"
+    },
+    "trustedBy": {
+      "title": "深受行业领袖信赖"
+    },
+    "storeOnFilecoin": {
+      "title": "在 Filecoin 上存储",
+      "description": "在 Filecoin 上为您的数据找到理想的存储解决方案。"
+    },
+    "selectedSolutions": {
+      "title": "精选存储解决方案"
+    },
+    "otherSolutions": {
+      "title": "其他 Filecoin 驱动的解决方案"
+    },
+    "seeMore": "查看更多 Filecoin 驱动的解决方案",
+    "notSure": {
+      "title": "不确定该选择哪种存储解决方案？",
+      "description": "告诉我们您的需求，我们将为您推荐最合适的 Filecoin 解决方案。",
+      "cta": "咨询专家"
+    },
+    "bestFor": {
+      "aiMlDevelopers": "AI/ML 开发者",
+      "archivalStorage": "归档存储",
+      "advancedTechnicalUsers": "高级技术用户",
+      "creators": "创作者",
+      "developers": "开发者",
+      "enterprises": "企业",
+      "nftProjects": "NFT 项目"
+    },
+    "providers": {
+      "akave": {
+        "description": "面向 AI 和数据湖的企业级热存储。",
+        "labels": ["拖放上传", "S3 兼容"],
+        "keyFeatures": ["兼容 S3 的 API", "客户端加密", "访问控制"]
+      },
+      "cidgravity": {
+        "description": "面向 Nextcloud 的简易去中心化存储后端。",
+        "labels": ["拖放上传"],
+        "keyFeatures": ["Nextcloud 集成", "文件同步与共享", "REST API 编程访问"]
+      },
+      "lighthouse": {
+        "description": "永久性长期数据存储。",
+        "labels": ["归档", "拖放上传"],
+        "keyFeatures": ["\"一次付费，永久存储\"定价模式", "简洁的 Web 应用", "开发者 SDK/CLI"]
+      },
+      "ramo": {
+        "description": "开放访问的去中心化云网络。",
+        "labels": ["S3 兼容"],
+        "keyFeatures": ["兼容 S3 的 API", "开发者 SDK/CLI"]
+      },
+      "singularity": {
+        "description": "直接管理 Filecoin 上完整的交易生命周期。",
+        "labels": ["归档"],
+        "keyFeatures": ["使用 CLI 准备和上传文件", "使用 Lassie 检索文件", "与存储提供商直接协商"]
+      },
+      "storacha": {
+        "description": "高速热存储，实现快速数据检索。",
+        "labels": ["拖放上传"],
+        "keyFeatures": ["快速访问数据", "与 IPFS 深度集成", "针对内容分发和流媒体优化", "基于 UCAN 的去中心化权限管理"]
+      },
+      "placeholderA": {
+        "description": "Lorem ipsum dolor sit amet.",
+        "labels": ["Lorem ipsum"],
+        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
+      },
+      "placeholderB": {
+        "description": "Lorem ipsum dolor sit amet.",
+        "labels": ["Lorem ipsum"],
+        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
+      },
+      "placeholderC": {
+        "description": "Lorem ipsum dolor sit amet.",
+        "labels": ["Lorem ipsum"],
+        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
+      }
     }
   },
   "/build-on-filecoin": {
@@ -355,6 +426,14 @@
     "submitAriaLabel": "提交订阅",
     "emailInvalid": "邮箱格式无效",
     "emailRequired": "请输入邮箱"
+  },
+  "storageProviderCard": {
+    "perMonth": "/ 月",
+    "price": "价格",
+    "bestForLabel": "最适合",
+    "keyFeaturesLabel": "主要特性",
+    "storeWith": "使用 {name} 存储",
+    "featured": "精选"
   },
   "youtubeVideoEmbed": {
     "playButton": "查看如何运行",

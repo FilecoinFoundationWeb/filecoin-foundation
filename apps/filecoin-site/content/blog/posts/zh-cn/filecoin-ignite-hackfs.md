@@ -31,7 +31,7 @@ Filecoin Ignite - 学习 📚 创建 🛠 发布 🚀
 
 我们很高兴地宣布我们推出了 [**Filecoin Ignite**](https://hub.fil.org/events/)，这里有一系列活动来让社区的人们聚在一起学习、展示以及一起开发。也是深入了解技术和分享知识的特别机会，更是打破边界一同创建奇思妙想的绝佳机会。通过这里您可以向世界展示您所致力的事业，可以在针对不同群体设置的活动中展现您的产品。
 
-目前我们主要有6个主要活动。我们已经宣布了一个：[SpaceRace](https://filecoin.io/blog/announcing-testnet-incentives/)，一个针对Filecoin矿工的全球比赛。今天，我们宣布第二个活动：[HackFS](https://hackfs.com/)。这是与我们Web 3领域中最喜欢的团队之一的合作：非常厉害的ETHGlobal团队。
+目前我们主要有6个主要活动。我们已经宣布了一个：[SpaceRace](/blog/announcing-filecoin-s-testnet-incentives/)，一个针对Filecoin矿工的全球比赛。今天，我们宣布第二个活动：[HackFS](https://hackfs.com/)。这是与我们Web 3领域中最喜欢的团队之一的合作：非常厉害的ETHGlobal团队。
 
 Ignite中的许多活动将为厉害的开发者和矿工设置可观的奖励。我们预计总奖励池将超过400万FIL和25万美元，这些奖励将分配于各个活动中。
 

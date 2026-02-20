@@ -24,7 +24,7 @@ title: "HackFS: 下一步计划"
 _template: blog_detail_ch
 ---
 
-在8月18日上周结束的HackFS决赛中，有超过30多个团队获得了奖项。其中，入围决赛的10个团队，奖励每名团队成员$1000外加250枚FIL。您可以通过浏览[最新博客](/blog/hackfs-finale/)或观看[决赛回顾](https://www.youtube.com/watch?v=GibA0t0z_9w)来了解有关这些项目的更多信息。
+在8月18日上周结束的HackFS决赛中，有超过30多个团队获得了奖项。其中，入围决赛的10个团队，奖励每名团队成员$1000外加250枚FIL。您可以通过浏览[最新博客](/blog/30-days-130-projects-recognizing-new-ideas-to-power-web3//)或观看[决赛回顾](https://www.youtube.com/watch?v=GibA0t0z_9w)来了解有关这些项目的更多信息。
 
 参与团队在为期1个月的黑客松中创建了涵盖分布式Web方方面面的项目——通讯工具、游戏、开发工具、DeFi创新等等。如果所有团队基于HackFS的参赛项目继续开发，将获得100枚FIL，而10个入围决赛的团队可以获得$30000以推进项目达到新高度。
 

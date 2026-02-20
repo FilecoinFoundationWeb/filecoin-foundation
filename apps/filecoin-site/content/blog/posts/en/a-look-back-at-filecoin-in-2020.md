@@ -29,13 +29,13 @@ In the final hours before we welcome 2021, we’re taking a moment to look back 
 
 ### Filecoin Discover
 
-[Filecoin Discover](https://filecoin.io/blog/intro-filecoin-discover/) was launched during Filecoin’s testnet era to incentivize Filecoin miners to store valuable data and earn additional FIL in the process. The Discover program was based around compensating Filecoin miners for selecting data from the Filecoin Discover Store, a library of valuable data spanning literature, science, art, and history. Miners wishing to participate in the Filecoin network can visit the site, choose which datasets they want to store, and receive that data on a drive at cost. Many learnings from Filecoin Discover’s R&D and community engagement phases helped shape the Filecoin Plus program.
+[Filecoin Discover](/blog/introducing-filecoin-discover/) was launched during Filecoin’s testnet era to incentivize Filecoin miners to store valuable data and earn additional FIL in the process. The Discover program was based around compensating Filecoin miners for selecting data from the Filecoin Discover Store, a library of valuable data spanning literature, science, art, and history. Miners wishing to participate in the Filecoin network can visit the site, choose which datasets they want to store, and receive that data on a drive at cost. Many learnings from Filecoin Discover’s R&D and community engagement phases helped shape the Filecoin Plus program.
 
 Filecoin Discover continues to propel Filecoin’s mission to create a decentralized, efficient, and robust foundation for humanity’s information.
 
 ### Testnet Phase 2 Launched
 
-Towards the end of 2019, we launched the first phase of the Filecoin testnet. [In May, we launched the second phase](https://filecoin.io/blog/filecoin-testnet-phase-2-is-here/). Testnet 2 was the last major milestone before mainnet launch. In this update, we released two interoperable Filecoin implementations ([go-filecoin](https://github.com/filecoin-project/go-filecoin) and [lotus](https://github.com/filecoin-project/lotus/)), secure proofs (WinningPoSt and WindowPoSt), [Drand](https://github.com/drand/drand), an overview of the [network’s cryptoeconomic structures](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/), a [new documentation site](http://docs.filecoin.io/), and new security audits before launch.
+Towards the end of 2019, we launched the first phase of the Filecoin testnet. [In May, we launched the second phase](/blog/filecoin-testnet-phase-2-is-here/). Testnet 2 was the last major milestone before mainnet launch. In this update, we released two interoperable Filecoin implementations ([go-filecoin](https://github.com/filecoin-project/go-filecoin) and [lotus](https://github.com/filecoin-project/lotus/)), secure proofs (WinningPoSt and WindowPoSt), [Drand](https://github.com/drand/drand), an overview of the [network’s cryptoeconomic structures](/blog/filecoin-s-cryptoeconomic-constructions/), a [new documentation site](http://docs.filecoin.io/), and new security audits before launch.
 
 ## June: Gearing up for Mainnet Launch
 
@@ -47,15 +47,15 @@ By June, we were already headed at full speed towards mainnet launch. We announc
 
 ### HackFS
 
-August marked the completion of our [inaugural HackFS hackathon](https://filecoin.io/blog/hackfs-finale/). Over a month, 134 teams worked on projects across the Filecoin ecosystem. In total, more than 470 hackers from 50 countries across 19 time zones participated in this 30-day virtual event. Check out the full [presentations](https://www.youtube.com/watch?v=GibA0t0z_9w) of the top 10 finalist teams: Sailplane, Public Annotation Network (PAN) Protocol, Pnlp, BlockSig, Valist, IPFS Recovery, PlanetFlare, Web3API, Decentralized Docker Hub, and Pygate.
+August marked the completion of our [inaugural HackFS hackathon](/blog/30-days-130-projects-recognizing-new-ideas-to-power-web3/). Over a month, 134 teams worked on projects across the Filecoin ecosystem. In total, more than 470 hackers from 50 countries across 19 time zones participated in this 30-day virtual event. Check out the full [presentations](https://www.youtube.com/watch?v=GibA0t0z_9w) of the top 10 finalist teams: Sailplane, Public Annotation Network (PAN) Protocol, Pnlp, BlockSig, Valist, IPFS Recovery, PlanetFlare, Web3API, Decentralized Docker Hub, and Pygate.
 
 ### Space Race 1
 
-[Space Race 1](https://filecoin.io/blog/welcome-to-space-race/) was a three-week competition to incentivize miners to add storage to the network and meet deal quality targets. During the competition, miners competed for 4M FIL in prizes. At the end of the race, 230PiB of storage was added to the network - more than 2x the original target. 400 miners from six continents participated, and eight network upgrades with dozens of bug and performance fixes were implemented as a result of the lessons learned. The community also hosted a series of technical talks, workshops and deep dives which can be found on the Filecoin [Youtube](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) channel.
+[Space Race 1](/blog/welcome-to-the-space-race/) was a three-week competition to incentivize miners to add storage to the network and meet deal quality targets. During the competition, miners competed for 4M FIL in prizes. At the end of the race, 230PiB of storage was added to the network - more than 2x the original target. 400 miners from six continents participated, and eight network upgrades with dozens of bug and performance fixes were implemented as a result of the lessons learned. The community also hosted a series of technical talks, workshops and deep dives which can be found on the Filecoin [Youtube](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) channel.
 
 ### Filecoin Economy Report
 
-In August, we released the [Filecoin Economy Report](https://filecoin.io/blog/introducing-the-filecoin-economy/), a 34-page overview about how the Filecoin protocol aligns incentives and pragmatically rewards useful and reliable storage.The economic design of the Filecoin network aims to align incentives and pragmatically reward useful and reliable storage with as few rules as possible. The many mechanisms and stimuli of the protocol are designed carefully with a single goal: If the participants in the network’s economy pursue their own self-interests, the network should grow and improve.
+In August, we released the [Filecoin Economy Report](/blog/introducing-the-filecoin-economy/), a 34-page overview about how the Filecoin protocol aligns incentives and pragmatically rewards useful and reliable storage.The economic design of the Filecoin network aims to align incentives and pragmatically reward useful and reliable storage with as few rules as possible. The many mechanisms and stimuli of the protocol are designed carefully with a single goal: If the participants in the network’s economy pursue their own self-interests, the network should grow and improve.
 
 ## September: Mainnet Ignition
 
@@ -71,11 +71,11 @@ Slate is a fully open-source file sharing network designed for research and coll
 
 ### Filecoin Mainnet Launch
 
-The date we were all waiting for… On October 15, 2020 \~3pm UTC, the [Filecoin network went live](https://filecoin.io/blog/mainnet-liftoff/). The moment marked the culmination of years of innovation and hard work from the Filecoin community. A huge thank you to everyone who dedicated their time, ideas, and expertise to make Filecoin a reality.
+The date we were all waiting for… On October 15, 2020 \~3pm UTC, the [Filecoin network went live](/blog/filecoin-mainnet-is-live/). The moment marked the culmination of years of innovation and hard work from the Filecoin community. A huge thank you to everyone who dedicated their time, ideas, and expertise to make Filecoin a reality.
 
 ### Liftoff Week
 
-We couldn’t let Filecoin mainnet go live without a proper celebration. From October 19 - 23 the community hosted [Filecoin Liftoff](https://filecoin.io/blog/mainnet-liftoff-week-recap/), a week completely dedicated to the Filecoin ecosystem; speakers from across the world and across the Web3 ecosystem joined us to talk about their projects and the Filecoin network. There were over 2,000 participants across 5 days engaging in over 82,000 session views on YouTube. Filecoin Liftoff was led by 81 speakers across 84 sessions representing all actors in the Filecoin community – app developers, miners, storage clients, policymakers, human rights activists, investors, and more!
+We couldn’t let Filecoin mainnet go live without a proper celebration. From October 19 - 23 the community hosted [Filecoin Liftoff](/blog/looking-back-on-filecoin-liftoff-week/), a week completely dedicated to the Filecoin ecosystem; speakers from across the world and across the Web3 ecosystem joined us to talk about their projects and the Filecoin network. There were over 2,000 participants across 5 days engaging in over 82,000 session views on YouTube. Filecoin Liftoff was led by 81 speakers across 84 sessions representing all actors in the Filecoin community – app developers, miners, storage clients, policymakers, human rights activists, investors, and more!
 
 The event saw coverage in more than 280 articles, including CoinDesk, Decrypt, Fortune, Morning Consult, The Block, and Investing.com. Check out each day’s recordings on [YouTube](https://www.youtube.com/c/FilecoinProject/playlists).
 

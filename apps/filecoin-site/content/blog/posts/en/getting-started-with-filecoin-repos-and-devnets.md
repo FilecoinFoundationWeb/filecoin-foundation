@@ -30,15 +30,15 @@ _template: blog_detail
 
 As we announced [in our blog post](/blog/opening-filecoin-project-repos/), we recently opened up the Filecoin project repos on [GitHub](https://github.com/filecoin-project). You can visit the GitHub repos to explore the codebase, development tools, community resources, and more. If you’re ready to jump straight in, here are some of the ways you can learn more.
 
-1. [Set up a Filecoin node and connect to a devnet](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#1-set-up-a-filecoin-node-and-connect-to-a-devnet)
-2. [Visualize the network](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#2-visualize-the-network)
-3. [Improve the Filecoin protocol specification](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#3-improve-the-filecoin-protocol-specification)
-4. [Collaborate with us to solve open research problems](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#4-collaborate-with-us-to-solve-open-research-problems)
-5. [Compete in the Replication Game](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#5-compete-in-the-replication-game)
-6. [Join the community](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#6-join-the-community)
-7. [Build on top of Filecoin](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#7-build-on-top-of-filecoin)
-8. [Join the team](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#8-join-the-team)
-9. [Closing thoughts](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#closing-thoughts)
+1. [Set up a Filecoin node and connect to a devnet](/blog/getting-started-with-filecoin-repos-and-devnets/#1-set-up-a-filecoin-node-and-connect-to-a-devnet)
+2. [Visualize the network](/blog/getting-started-with-filecoin-repos-and-devnets/#2-visualize-the-network)
+3. [Improve the Filecoin protocol specification](/blog/getting-started-with-filecoin-repos-and-devnets/#3-improve-the-filecoin-protocol-specification)
+4. [Collaborate with us to solve open research problems](/blog/getting-started-with-filecoin-repos-and-devnets/#4-collaborate-with-us-to-solve-open-research-problems)
+5. [Compete in the Replication Game](/blog/getting-started-with-filecoin-repos-and-devnets/#5-compete-in-the-replication-game)
+6. [Join the community](/blog/getting-started-with-filecoin-repos-and-devnets/#6-join-the-community)
+7. [Build on top of Filecoin](/blog/getting-started-with-filecoin-repos-and-devnets/#7-build-on-top-of-filecoin)
+8. [Join the team](/blog/getting-started-with-filecoin-repos-and-devnets/#8-join-the-team)
+9. [Closing thoughts](/blog/getting-started-with-filecoin-repos-and-devnets/#closing-thoughts)
 
 ## 1. Set up a Filecoin node and connect to a devnet
 
@@ -69,7 +69,7 @@ The Filecoin protocol specification (“the spec”) can be found on GitHub in t
 
 We would love comments, questions, and contributions to the spec. You can surface these in [GitHub issues on the specs repo](https://github.com/filecoin-project/specs/issues).
 
-We welcome PRs to the spec. This is one of the most valuable ways to contribute to building the Filecoin network. Improving the protocol specification makes it possible for multiple implementations of the protocol to be built to similar standards of scale and security. Though be warned: it is hard to contribute protocol specification writing without a deep understanding of how it is meant to work. Asking clarifying questions, reviewing and commenting on drafts, and fleshing out details are great ways to get started. Those who want to contribute by writing a section entirely from scratch will require deeper knowledge and close collaboration with out team. Come talk with us on chat (see the [Join the Community](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#6-join-the-community) section below)!
+We welcome PRs to the spec. This is one of the most valuable ways to contribute to building the Filecoin network. Improving the protocol specification makes it possible for multiple implementations of the protocol to be built to similar standards of scale and security. Though be warned: it is hard to contribute protocol specification writing without a deep understanding of how it is meant to work. Asking clarifying questions, reviewing and commenting on drafts, and fleshing out details are great ways to get started. Those who want to contribute by writing a section entirely from scratch will require deeper knowledge and close collaboration with out team. Come talk with us on chat (see the [Join the Community](/blog/getting-started-with-filecoin-repos-and-devnets/#6-join-the-community) section below)!
 
 ## 4. Collaborate with us to solve open research problems
 

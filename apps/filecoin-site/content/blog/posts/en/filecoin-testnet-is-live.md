@@ -27,7 +27,7 @@ title: Filecoin Testnet is live
 _template: blog_detail
 ---
 
-Today marks an important milestone for the Filecoin project: the launch of the Filecoin testnet ([on schedule](https://filecoin.io/blog/update-2019-q2-q3/#1-launches-testnet-on-dec-11-mainnet-in-2020-q1))! After significant research, design, and development, the Filecoin protocol is ready for live network testing. We’re thrilled to share it with you.
+Today marks an important milestone for the Filecoin project: the launch of the Filecoin testnet ([on schedule](/blog/filecoin-2019-q2-q3-update/#1-launches-testnet-on-dec-11-mainnet-in-2020-q1))! After significant research, design, and development, the Filecoin protocol is ready for live network testing. We’re thrilled to share it with you.
 
 ## What is the Filecoin testnet
 
@@ -52,13 +52,13 @@ We can’t wait for you to join the Filecoin testnet and tell us what you think!
 
 ## Getting started with the Filecoin testnet
 
-1. [Join the testnet](https://filecoin.io/blog/filecoin-testnet-is-live/#join-the-testnet)
-2. [Join the Filecoin community](https://filecoin.io/blog/filecoin-testnet-is-live/#join-the-filecoin-community)
-3. [Participate in our testnet AMA](https://filecoin.io/blog/filecoin-testnet-is-live/#participate-in-our-testnet-ama)
-4. [Break the testnet! Report issues!](https://filecoin.io/blog/filecoin-testnet-is-live/#break-the-testnet-report-issues)
-5. [Send us product feedback](https://filecoin.io/blog/filecoin-testnet-is-live/#send-us-product-feedback)
-6. [Participate in miner testing](https://filecoin.io/blog/filecoin-testnet-is-live/#participate-in-miner-testing)
-7. [Build the Filecoin ecosystem](https://filecoin.io/blog/filecoin-testnet-is-live/#build-the-filecoin-ecosystem)
+1. [Join the testnet](/blog/filecoin-testnet-is-live/#join-the-testnet)
+2. [Join the Filecoin community](/blog/filecoin-testnet-is-live/#join-the-filecoin-community)
+3. [Participate in our testnet AMA](/blog/filecoin-testnet-is-live/#participate-in-our-testnet-ama)
+4. [Break the testnet! Report issues!](/blog/filecoin-testnet-is-live/#break-the-testnet-report-issues)
+5. [Send us product feedback](/blog/filecoin-testnet-is-live/#send-us-product-feedback)
+6. [Participate in miner testing](/blog/filecoin-testnet-is-live/#participate-in-miner-testing)
+7. [Build the Filecoin ecosystem](/blog/filecoin-testnet-is-live/#build-the-filecoin-ecosystem)
 
 ## Join the testnet
 
@@ -87,7 +87,7 @@ On Thursday, December 12, 2019, we will host two Ask Me Anything (AMA) sessions 
 
 **How to participate:**
 
-- You must set up an account on the Filecoin Project Slack workspace (instructions linked above in [“Join the Filecoin community”](https://filecoin.io/blog/filecoin-testnet-is-live/#join-the-filecoin-community)) in order to participate in the AMA.
+- You must set up an account on the Filecoin Project Slack workspace (instructions linked above in [“Join the Filecoin community”](/blog/filecoin-testnet-is-live/#join-the-filecoin-community)) in order to participate in the AMA.
 - Join the #fil-AMA channel on the Filecoin Project Slack workspace. We will only monitor these channels during the time slots listed above.
 - Please review our community [code of conduct](https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md) before the AMA. In general, treat each other with respect.
 - This is a time to ask questions about Filecoin technology or the testnet – please do not discuss speculative topics, such as token prices, exchanges, and more.
@@ -128,7 +128,7 @@ We are interested in collaborating with groups to build developer tooling and ap
 
 ## Thanks
 
-Filecoin has come a long way in 2019. We started this year with a core team, a closed codebase, and a curious community. In February, we transitioned to a new phase for Filecoin – one marked by community, intense research and protocol design, and rapid development. Since then, the Filecoin Project and community have grown tremendously. We have seen hundreds of community ambassador-led meetups, dozens of collaborations with universities and ecosystem partners, 6 grants awarded in the [first wave of Filecoin DevGrants](https://filecoin.io/blog/filecoin-dev-grants-wave-1-recipients-and-new-wave2-rfps/), 5 [go-filecoin releases](https://github.com/filecoin-project/go-filecoin/blob/master/CHANGELOG.md), the launch of [lotus](https://filecoin.io/blog/announcing-lotus/) and the [go-filecoin alphanet](https://filecoin.io/blog/announcing-alphanet/)and more!
+Filecoin has come a long way in 2019. We started this year with a core team, a closed codebase, and a curious community. In February, we transitioned to a new phase for Filecoin – one marked by community, intense research and protocol design, and rapid development. Since then, the Filecoin Project and community have grown tremendously. We have seen hundreds of community ambassador-led meetups, dozens of collaborations with universities and ecosystem partners, 6 grants awarded in the [first wave of Filecoin DevGrants](/blog/filecoin-dev-grants-wave-1-recipients-wave-2-now-open/), 5 [go-filecoin releases](https://github.com/filecoin-project/go-filecoin/blob/master/CHANGELOG.md), the launch of [lotus](/blog/announcing-lotus-our-first-alternate-filecoin-implementation/) and the [go-filecoin alphanet](/blog/announcing-the-go-filecoin-alphanet/)and more!
 
 And today, we launched our public testnet. Testnet marks the transition to yet another phase for the Filecoin project. It is a phase of ruthless prioritization, network launch, refining protocol-market fit, and growing the Filecoin ecosystem. We are very excited to take this big step forward. But we are still at the beginning of the decades-long journey that lies ahead to create a decentralized, efficient, and robust foundation for humanity’s information.
 

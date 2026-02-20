@@ -24,9 +24,9 @@ title: 开放Filecoin项目Repos
 _template: blog_detail_ch
 ---
 
-今天，我们很高兴能在GitHub上开放几个repos，并邀请大家在GitHub上加入我们。来吧！来了解Filecoin、使用代码、并为开发做出贡献。正如在[之前的更新中](https://filecoin.io/blog/update-2018-q1-q2/)所描述的，为了避免干扰和加快开发进展，我们做出了艰难的选择，不公开的开始了我们的repos。现在，我们已经到达了[下一个里程碑](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.b17ldb17wszo)。如果你是一名开发者、研究者、喜欢冒险的矿工或用户，或者只是想支持我们的努力，在这个令人兴奋的时刻，来参与我们吧！
+今天，我们很高兴能在GitHub上开放几个repos，并邀请大家在GitHub上加入我们。来吧！来了解Filecoin、使用代码、并为开发做出贡献。正如在[之前的更新中](/blog/filecoin-2018-q1-q2-update/)所描述的，为了避免干扰和加快开发进展，我们做出了艰难的选择，不公开的开始了我们的repos。现在，我们已经到达了[下一个里程碑](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.b17ldb17wszo)。如果你是一名开发者、研究者、喜欢冒险的矿工或用户，或者只是想支持我们的努力，在这个令人兴奋的时刻，来参与我们吧！
 
-请注意:Filecoin正在大量开发中。代码每天都在发生着巨大的变化。目前阶段，repos、devnets和其他资源全部用于开发。本发布面向愿意帮助开发Filecoin的开发者、研究者和社区成员。寻求使用Filecoin的矿工和用户应等待未来的发布(可能是[testnet里程碑](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.b17ldb17wszo))。请阅读我们的[入门指南](https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/)了解详情。
+请注意:Filecoin正在大量开发中。代码每天都在发生着巨大的变化。目前阶段，repos、devnets和其他资源全部用于开发。本发布面向愿意帮助开发Filecoin的开发者、研究者和社区成员。寻求使用Filecoin的矿工和用户应等待未来的发布(可能是[testnet里程碑](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.b17ldb17wszo))。请阅读我们的[入门指南](/blog/getting-started-with-filecoin-repos-and-devnets/)了解详情。
 
 ## 本发布包括什么内容？
 
@@ -50,7 +50,7 @@ _template: blog_detail_ch
 - [filecoin-project/research](https://github.com/filecoin-project/research): 还在讨论中的问题、想法和讨论
 - 还有[更多](https://github.com/filecoin-project)
 
-并且，正如我们在更广泛的[Q3/Q4更新](https://filecoin.io/blog/update-2018-q3-q4/)中所解释的，还有很多很多。
+并且，正如我们在更广泛的[Q3/Q4更新](/blog/filecoin-2018-q3-q4-update/)中所解释的，还有很多很多。
 
 ## 重要提示
 

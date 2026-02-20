@@ -25,7 +25,7 @@ title: 快来参与我们的可信设置环节
 _template: blog_detail_ch
 ---
 
-您在我们[最近更新](https://filecoin.io/zh-cn/blog/update-2019-q2-q3/)中看到的那样，Filecoin团队正努力准备在2019年12月发布测试网，并在2020年3月完成主网上线。在这项工作完成之前，我们正在寻找志愿者来参加可信设置环节（了解更多请阅读接下来的内容）一起帮助我们将Filecoin落地实践！
+您在我们[最近更新](/blog/filecoin-2019-q2-q3-update/)中看到的那样，Filecoin团队正努力准备在2019年12月发布测试网，并在2020年3月完成主网上线。在这项工作完成之前，我们正在寻找志愿者来参加可信设置环节（了解更多请阅读接下来的内容）一起帮助我们将Filecoin落地实践！
 
 **若您想参与这个环节，请直接填写**[**此表**](https://docs.google.com/forms/d/e/1FAIpQLSfYrehYIExQJbNLv-m_xsCXGDZM-rHhsBT5xWYy6cHANyBJxw/viewform)**，也可以阅读下面的内容了解更多关于此环节的信息。**
 

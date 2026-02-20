@@ -79,4 +79,4 @@ As with Ethereum, this system incentivizes collaboration and increases chain thr
 
 **Ultimately Filecoin gives weight to blocks that offer more storage power, because at its core, it’s a storage network. Over time, miners converge on the heaviest chain—those that are creating value.** Lighter chains become orphan blocks.
 
-The more data a Filecoin miner stores, the more that miner’s storage power grows, and greater storage power on the network makes it more likely that a miner can generate new blocks and win block rewards. To learn more about Filecoin’s weighting system, check out [this testnet mining post](https://filecoin.io/blog/filecoin-testnet-mining/), which outlines Filecoin’s storage proof systems.
+The more data a Filecoin miner stores, the more that miner’s storage power grows, and greater storage power on the network makes it more likely that a miner can generate new blocks and win block rewards. To learn more about Filecoin’s weighting system, check out [this testnet mining post](/blog/filecoin-testnet-mining/), which outlines Filecoin’s storage proof systems.

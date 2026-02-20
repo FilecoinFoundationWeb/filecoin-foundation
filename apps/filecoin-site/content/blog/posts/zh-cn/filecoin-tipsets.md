@@ -69,4 +69,4 @@ The final chart offers a comprehensive view of this chain, where the top 1st tip
 
 **最终，Filecoin会赋予提供更多存储算力的区块以权重，因为它的核心是存储网络。随着时间的流逝，矿工会聚集在权重最大的链上来创造价值**，而权重小的链将成为孤块。
 
-Filecoin矿工存储的数据越多，则矿工存储算力就增长的越多，网络上的存储算力就越强，矿工就更有可能生成新的区块并赢得区块奖励。要了解有关Filecoin权重系统更多的信息，请查看[this testnet mining post](https://filecoin.io/blog/filecoin-testnet-mining/)，其中概述了Filecoin的存储证明系统
+Filecoin矿工存储的数据越多，则矿工存储算力就增长的越多，网络上的存储算力就越强，矿工就更有可能生成新的区块并赢得区块奖励。要了解有关Filecoin权重系统更多的信息，请查看[this testnet mining post](/blog/filecoin-testnet-mining/)，其中概述了Filecoin的存储证明系统

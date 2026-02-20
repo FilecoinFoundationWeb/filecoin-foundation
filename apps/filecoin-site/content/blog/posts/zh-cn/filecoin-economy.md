@@ -71,8 +71,8 @@ Filecoin的使命是为人类信息打造分布式、高效且强大的基础。
 - Filecoin协议当前的经济结构和初步参数
 - 可推动网络未来发展的关键改进规划
 
-[![Report Download](/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)[![Report Download](/blog/economy-report-zh-cn.png)](https://filecoin.io/zh-cn/2020-engineering-filecoins-economy-zh-cn.pdf)
+[![Report Download](/blog/economy-report-en.png)](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)[![Report Download](/blog/economy-report-zh-cn.png)](/2020-engineering-filecoins-economy-zh-cn.pdf)
 
-**点击此处下载报告全文 (**[**英文版**](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)**) (**[**中文版**](https://filecoin.io/zh-cn/2020-engineering-filecoins-economy-zh-cn.pdf)**)。**
+**点击此处下载报告全文 (**[**英文版**](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)**) (**[**中文版**](/2020-engineering-filecoins-economy-zh-cn.pdf)**)。**
 
 您可以通过查阅[GitHub上的Filecoin](https://github.com/filecoin-project)项目和查看[社区资源](https://github.com/filecoin-project/community)来了解Filecoin社区的活动，请在 [Filecoin Slack](https://filecoin.io/slack)和我们保持联系。
