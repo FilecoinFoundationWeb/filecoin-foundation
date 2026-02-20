@@ -5,29 +5,13 @@ import type { AllowedCategory } from '../types/categoriesType'
 export type BlogCategoryKey = AllowedCategory | typeof DEFAULT_FILTER_ID
 
 type BlogCategory = {
-  name: string
   id: BlogCategoryKey
 }
 
 export const blogCategories = [
-  {
-    name: 'View All',
-    id: DEFAULT_FILTER_ID,
-  },
-  {
-    name: 'Events',
-    id: 'events',
-  },
-  {
-    name: 'Interviews',
-    id: 'interviews',
-  },
-  {
-    name: 'Awards',
-    id: 'awards',
-  },
-  {
-    name: 'Updates',
-    id: 'updates',
-  },
+  { id: DEFAULT_FILTER_ID },
+  { id: 'events' },
+  { id: 'interviews' },
+  { id: 'awards' },
+  { id: 'updates' },
 ] as const satisfies Array<BlogCategory>

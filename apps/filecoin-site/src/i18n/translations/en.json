@@ -107,6 +107,27 @@
     "metadata": {
       "title": "Filecoin Blog | Latest News, Updates & Ecosystem Insights",
       "description": "Dive into Filecoin's blog for ecosystem metrics, news on verifiable hot storage, cross-chain bridges, events, and growth insights. Stay informed on decentralized storage innovations driving AI, crypto, and data resilience."
+    },
+    "featuredPost": {
+      "badge": "Latest updates",
+      "cta": "Read full article"
+    },
+    "emptyState": {
+      "title": "No results found",
+      "description": "Try changing your search query or category filter."
+    },
+    "categoryFilter": {
+      "groupAriaLabel": "Filter blog posts by category",
+      "viewAllAriaLabel": "View all blog posts",
+      "filterByAriaLabel": "Filter by {name}",
+      "allCategories": "All Categories"
+    },
+    "categories": {
+      "all": "View All",
+      "events": "Events",
+      "interviews": "Interviews",
+      "awards": "Awards",
+      "updates": "Updates"
     }
   },
   "/community-hub": {

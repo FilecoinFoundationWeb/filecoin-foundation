@@ -14,7 +14,7 @@ import { PostMetadata } from '../../components/PostMetadata'
 import type { BlogPost } from '../../types/blogPostType'
 
 type BlogPostHeaderProps = {
-  categories: BlogPost['categories']
+  categories: Array<string>
   title: BlogPost['title']
   date: BlogPost['publishedOn']
   slug: BlogPost['slug']

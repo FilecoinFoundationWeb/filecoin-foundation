@@ -107,6 +107,27 @@
     "metadata": {
       "title": "TODO",
       "description": "TODO"
+    },
+    "featuredPost": {
+      "badge": "最新动态",
+      "cta": "阅读全文"
+    },
+    "emptyState": {
+      "title": "未找到结果",
+      "description": "请尝试更改搜索词或分类筛选条件。"
+    },
+    "categoryFilter": {
+      "groupAriaLabel": "按分类筛选博客文章",
+      "viewAllAriaLabel": "查看所有博客文章",
+      "filterByAriaLabel": "按{name}筛选",
+      "allCategories": "所有分类"
+    },
+    "categories": {
+      "all": "查看全部",
+      "events": "活动",
+      "interviews": "访谈",
+      "awards": "奖项",
+      "updates": "更新"
     }
   },
   "/community-hub": {
