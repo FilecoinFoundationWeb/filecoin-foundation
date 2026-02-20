@@ -3,36 +3,35 @@ import { type NextRequest } from 'next/server'
 const MAILCHIMP_JSONP_CALLBACK = 'handle_response'
 
 export async function POST(request: NextRequest) {
-  const { email } = await request.json()
+  let body: { email?: unknown }
+
+  try {
+    body = await request.json()
+  } catch {
+    return Response.json({ ok: false }, { status: 400 })
+  }
+
+  const { email } = body
 
   if (!email || typeof email !== 'string') {
-    return Response.json(
-      { ok: false, message: 'Email is required' },
-      { status: 400 },
-    )
+    return Response.json({ ok: false }, { status: 400 })
   }
 
   const baseUrl = getMailchimpSubscribeUrl()
   if (!baseUrl) {
-    return Response.json(
-      { ok: false, message: 'Subscription service unavailable' },
-      { status: 503 },
-    )
+    return Response.json({ ok: false }, { status: 503 })
   }
 
-  const res = await fetch(
+  const response = await fetch(
     `${baseUrl}&EMAIL=${encodeURIComponent(email)}&c=${MAILCHIMP_JSONP_CALLBACK}`,
     { method: 'GET' },
   )
 
-  if (!res.ok) {
-    return Response.json(
-      { ok: false, message: 'Subscription service unavailable' },
-      { status: 502 },
-    )
+  if (!response.ok) {
+    return Response.json({ ok: false }, { status: 502 })
   }
 
-  const text = await res.text()
+  const text = await response.text()
 
   let data: { result?: string; msg?: string }
   try {
@@ -42,23 +41,24 @@ export async function POST(request: NextRequest) {
     console.error(
       'Failed to parse Mailchimp response as JSON from Mailchimp API',
     )
-    return Response.json(
-      { ok: false, message: 'Subscription service unavailable' },
-      { status: 502 },
-    )
+    return Response.json({ ok: false }, { status: 502 })
   }
 
   if (data.result === 'error') {
     return Response.json(
-      { ok: false, message: data.msg ?? 'Subscription failed' },
+      { ok: false, ...(data.msg && { message: data.msg }) },
       { status: 400 },
     )
   }
 
-  return Response.json({ ok: true })
+  const isAlreadySubscribed = data.msg
+    ?.toLowerCase()
+    .includes('already subscribed')
+
+  return Response.json({ ok: true, isAlreadySubscribed })
 }
 
-function getMailchimpSubscribeUrl(): string | null {
+function getMailchimpSubscribeUrl() {
   const u = process.env.MAILCHIMP_U
   const id = process.env.MAILCHIMP_LIST_ID
   if (!u || !id) return null

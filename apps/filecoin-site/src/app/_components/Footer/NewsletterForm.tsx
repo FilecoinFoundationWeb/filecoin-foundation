@@ -36,7 +36,7 @@ export function NewsletterForm() {
 
         <Button
           disabled={isSubmitting}
-          className="focus:brand-outline absolute right-0 -mr-1 flex h-12 w-12 cursor-pointer items-center justify-center"
+          className="focus:brand-outline absolute right-0 flex h-12 w-12 -translate-y-0.5 cursor-pointer items-center justify-center"
           type="submit"
           aria-label={t('submitAriaLabel')}
         >

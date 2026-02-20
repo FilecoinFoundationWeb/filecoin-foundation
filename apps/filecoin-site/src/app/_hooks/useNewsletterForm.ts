@@ -33,24 +33,28 @@ export function useNewsletterForm() {
 
       const body = await response.json().catch(() => ({}))
       const message =
-        body?.message ?? (response.ok ? undefined : 'Subscription failed')
+        body?.message ?? (response.ok ? undefined : t('subscriptionFailed'))
 
       if (!response.ok) {
         dialog.open({
-          message: message || 'Something went wrong. Please try again.',
+          message: message || t('errorGeneric'),
           duration: NOTIFICATION_DIALOG_ERROR_DURATION_MS,
           icon: { component: XCircleIcon, color: 'error' },
         })
         return
       }
 
+      const successMessage = body?.isAlreadySubscribed
+        ? t('alreadySubscribed')
+        : t('successMessage')
+
       dialog.open({
-        message: 'Check your email to confirm your subscription.',
+        message: successMessage,
         icon: { component: CheckCircleIcon, color: 'success' },
       })
     } catch (err) {
       dialog.open({
-        message: 'An error has occurred. Please try again.',
+        message: t('errorOccurred'),
         duration: NOTIFICATION_DIALOG_ERROR_DURATION_MS,
         icon: { component: XCircleIcon, color: 'error' },
       })
