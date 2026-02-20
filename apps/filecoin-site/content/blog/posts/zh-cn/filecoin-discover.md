@@ -39,7 +39,7 @@ Filecoin Discover项目激励各种规模的早期矿工存储有价值的数据
 
 正如WNYC播客《Note to Self》的前主持人Manoush Zomorodi[所说](https://www.forbes.com/sites/geristengel/2018/10/24/a-springboard-to-success-for-female-blockchain-founders/#b9f3aff43219)：“想想很多人同计算机一起工作，区块链要求你有集体精神。”在Filecoin网络上挖矿和存储数据的节点越多，节点的存储算力就越强大。因此，Discover项目是我们鼓励更多矿工在早期阶段加入网络的办法。我们构建Discover项目作为快速扩展Filecoin网络的一种方式。
 
-Filecoin Discover store是PB级别公共数据的目录（还在不断的增长中），涵盖了文学、科学、艺术和历史等方面。希望加入Filecoin网络的矿工可以访问该站点，选择他们想要存储的数据集，并花费一定成本收到存了[已验证数据的](/blog/filecoin-cryptoeconomic-constructions/)硬盘。下订单之前，请检查\[莲花常见问题解答\]（[https://lotus.filecoin.io/storage-providers/get-started/hardware-requirements/) 中的采矿要求！为了交换存储这些[已验证数据](https://filecoin.io/blog/filecoin-cryptoeconomic-constructions/)，矿工将在常规的存储数据获得区块奖励之外再额外获得Filecoin奖励。
+Filecoin Discover store是PB级别公共数据的目录（还在不断的增长中），涵盖了文学、科学、艺术和历史等方面。希望加入Filecoin网络的矿工可以访问该站点，选择他们想要存储的数据集，并花费一定成本收到存了[已验证数据的](/blog/filecoin-cryptoeconomic-constructions/)硬盘。下订单之前，请检查\[莲花常见问题解答\]（[https://lotus.filecoin.io/storage-providers/get-started/hardware-requirements/) 中的采矿要求！为了交换存储这些[已验证数据](/blog/filecoin-s-cryptoeconomic-constructions/)，矿工将在常规的存储数据获得区块奖励之外再额外获得Filecoin奖励。
 
 数据集包括：
 
