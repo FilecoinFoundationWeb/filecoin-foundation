@@ -39,7 +39,9 @@ export async function POST(request: NextRequest) {
     const json = text.replace(/^[^(]+\(/, '').replace(/\)$/, '')
     data = JSON.parse(json)
   } catch {
-    console.error('Failed to parse Mailchimp response as JSON:', text)
+    console.error(
+      'Failed to parse Mailchimp response as JSON from Mailchimp API',
+    )
     return Response.json(
       { ok: false, message: 'Subscription service unavailable' },
       { status: 502 },
