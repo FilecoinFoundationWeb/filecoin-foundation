@@ -594,11 +594,6 @@ export const redirects = [
     permanent: true,
   },
   {
-    source: '/zh-cn/blog/announcing-testnet-incentives',
-    destination: '/zh-cn/blog/filecoin-9',
-    permanent: true,
-  },
-  {
     source: '/zh-cn/blog/announcing-the-snark-challenge',
     destination: '/zh-cn/blog/snark',
     permanent: true,
@@ -642,11 +637,6 @@ export const redirects = [
   {
     source: '/zh-cn/blog/filecoin-guide-to-storage-mining',
     destination: '/zh-cn/blog/a-guide-to-filecoin-storage-mining',
-    permanent: true,
-  },
-  {
-    source: '/zh-cn/blog/filecoin-guide-to-storage-mining',
-    destination: '/zh-cn/blog/filecoin-10',
     permanent: true,
   },
   {
