@@ -558,16 +558,6 @@ export const redirects = [
     permanent: true,
   },
   {
-    source: '/case-studies',
-    destination: '/blog/case-study-starling-lab',
-    permanent: true,
-  },
-  {
-    source: '/case-studies/starlinglab',
-    destination: '/blog/case-study-starling-lab',
-    permanent: true,
-  },
-  {
     source: '/zh-cn/blog/announcing-alphanet',
     destination: '/zh-cn/blog/go-filecoin-go-filecoin-alphanet',
     permanent: true,
