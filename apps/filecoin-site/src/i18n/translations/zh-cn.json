@@ -116,6 +116,9 @@
       "title": "未找到结果",
       "description": "请尝试更改搜索词或分类筛选条件。"
     },
+    "search": {
+      "placeholder": "搜索"
+    },
     "categoryFilter": {
       "groupAriaLabel": "按分类筛选博客文章",
       "viewAllAriaLabel": "查看所有博客文章",
@@ -367,7 +370,11 @@
       "lighthouse": {
         "description": "永久性长期数据存储。",
         "labels": ["归档", "拖放上传"],
-        "keyFeatures": ["\"一次付费，永久存储\"定价模式", "简洁的 Web 应用", "开发者 SDK/CLI"]
+        "keyFeatures": [
+          "\"一次付费，永久存储\"定价模式",
+          "简洁的 Web 应用",
+          "开发者 SDK/CLI"
+        ]
       },
       "ramo": {
         "description": "开放访问的去中心化云网络。",
@@ -377,12 +384,21 @@
       "singularity": {
         "description": "直接管理 Filecoin 上完整的交易生命周期。",
         "labels": ["归档"],
-        "keyFeatures": ["使用 CLI 准备和上传文件", "使用 Lassie 检索文件", "与存储提供商直接协商"]
+        "keyFeatures": [
+          "使用 CLI 准备和上传文件",
+          "使用 Lassie 检索文件",
+          "与存储提供商直接协商"
+        ]
       },
       "storacha": {
         "description": "高速热存储，实现快速数据检索。",
         "labels": ["拖放上传"],
-        "keyFeatures": ["快速访问数据", "与 IPFS 深度集成", "针对内容分发和流媒体优化", "基于 UCAN 的去中心化权限管理"]
+        "keyFeatures": [
+          "快速访问数据",
+          "与 IPFS 深度集成",
+          "针对内容分发和流媒体优化",
+          "基于 UCAN 的去中心化权限管理"
+        ]
       },
       "placeholderA": {
         "description": "Lorem ipsum dolor sit amet.",

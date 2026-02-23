@@ -64,7 +64,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
       <div className="flex flex-col gap-10">
         <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-center lg:gap-10 xl:gap-20">
           <div className="max-w flex-1">
-            <Search />
+            <Search placeholder={t('search.placeholder')} />
           </div>
 
           <div className="flex items-baseline gap-5">

@@ -116,6 +116,9 @@
       "title": "No results found",
       "description": "Try changing your search query or category filter."
     },
+    "search": {
+      "placeholder": "Search"
+    },
     "categoryFilter": {
       "groupAriaLabel": "Filter blog posts by category",
       "viewAllAriaLabel": "View all blog posts",
@@ -357,17 +360,29 @@
       "akave": {
         "description": "Enterprise-grade hot storage for AI & data lakes.",
         "labels": ["Drag and drop", "S3-compatible"],
-        "keyFeatures": ["S3-compatible API", "Client-side encryption", "Access control"]
+        "keyFeatures": [
+          "S3-compatible API",
+          "Client-side encryption",
+          "Access control"
+        ]
       },
       "cidgravity": {
         "description": "Simple decentralized storage backend for Nextcloud.",
         "labels": ["Drag and drop"],
-        "keyFeatures": ["Nextcloud integration", "File sync and share", "REST API for programmatic access"]
+        "keyFeatures": [
+          "Nextcloud integration",
+          "File sync and share",
+          "REST API for programmatic access"
+        ]
       },
       "lighthouse": {
         "description": "Perpetual, long-term data storage.",
         "labels": ["Archival", "Drag and drop"],
-        "keyFeatures": ["\"Pay once, store forever\" pricing mode", "Simple web app", "Developer SDK/CLI"]
+        "keyFeatures": [
+          "\"Pay once, store forever\" pricing mode",
+          "Simple web app",
+          "Developer SDK/CLI"
+        ]
       },
       "ramo": {
         "description": "An open-access decentralized cloud network.",
@@ -377,12 +392,21 @@
       "singularity": {
         "description": "Directly manage the full deal-making lifecycle on Filecoin.",
         "labels": ["Archival"],
-        "keyFeatures": ["Prepare and upload files using the CLI", "Retrieve files with Lassie", "Direct negotiation with storage providers"]
+        "keyFeatures": [
+          "Prepare and upload files using the CLI",
+          "Retrieve files with Lassie",
+          "Direct negotiation with storage providers"
+        ]
       },
       "storacha": {
         "description": "High-speed hot storage for fast data retrieval.",
         "labels": ["Drag and drop"],
-        "keyFeatures": ["Fast access to data", "Tightly integrated with IPFS", "Optimized for content delivery and streaming", "Decentralized permissions with UCANs"]
+        "keyFeatures": [
+          "Fast access to data",
+          "Tightly integrated with IPFS",
+          "Optimized for content delivery and streaming",
+          "Decentralized permissions with UCANs"
+        ]
       },
       "placeholderA": {
         "description": "Lorem ipsum dolor sit amet.",
