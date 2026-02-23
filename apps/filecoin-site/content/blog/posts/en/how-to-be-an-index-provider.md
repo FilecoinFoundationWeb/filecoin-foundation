@@ -23,7 +23,7 @@ title: How to be an Index Provider
 _template: blog_detail
 ---
 
-This is the third blog post in a series of posts on the Network Indexer. The [first blog post](https://filecoin.io/blog/posts/introducing-the-network-indexer/) introduced the Network Indexer as a concept while [the second blog post](https://filecoin.io/blog/posts/how-does-the-network-indexer-work/) dived deeper into how it works internally in order to enable finding content providers for billions of addressable content out there.
+This is the third blog post in a series of posts on the Network Indexer. The [first blog post](/blog/introducing-the-network-indexer/) introduced the Network Indexer as a concept while [the second blog post](/blog/how-does-the-network-indexer-work/) dived deeper into how it works internally in order to enable finding content providers for billions of addressable content out there.
 
 Building on top of the previous posts, this blog post will discuss in depth on how to be an index provider to network indexer and become an _Index Provider_.
 

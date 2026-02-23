@@ -68,4 +68,4 @@ The blog concludes that progress in FVM, IPC, and Filecoin tooling is crucial fo
 
 ### FIL Dev Iceland Track Recap: From Click to PiB, Scaling Enterprise Data
 
-The Filecoin ecosystem has onboarded over 1.8 exbibytes (EiB) of data! That’s like storing the digital collection of the Library of Congress 100+ times. Learn how teams at FIL Dev Summit are scaling data onboarding to support new enterprise clients in [this article](https://filecoin.io/blog/posts/fil-dev-iceland-track-recap-from-click-to-pib-scaling-enterprise-data/).
+The Filecoin ecosystem has onboarded over 1.8 exbibytes (EiB) of data! That’s like storing the digital collection of the Library of Congress 100+ times. Learn how teams at FIL Dev Summit are scaling data onboarding to support new enterprise clients in [this article](/blog/fil-dev-iceland-track-recap-from-click-to-pib-scaling-enterprise-data/).

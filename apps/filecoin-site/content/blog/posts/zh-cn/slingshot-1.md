@@ -29,7 +29,7 @@ Slingshot竞赛的第一阶段历时四周，在2020年10月28日（上周三）
 
 ## 庆祝第一阶段圆满结束
 
-闭幕式的开始，Filecoin产品负责人Pooja Shah回顾了竞赛第一阶段四个星期发生的事情。Filecoin网络本身发生了巨大的变化，包括成功地进行了[主网启动](https://filecoin.io/blog/posts/the-journey-to-filecoin-mainnet-liftoff/)、5个社区共同主导了[Filecoin改进提案](https://github.com/filecoin-project/FIPs)，以及网络继续扩展到超过675PiB的存储容量。
+闭幕式的开始，Filecoin产品负责人Pooja Shah回顾了竞赛第一阶段四个星期发生的事情。Filecoin网络本身发生了巨大的变化，包括成功地进行了[主网启动](/blog/the-journey-to-filecoin-mainnet-liftoff/)、5个社区共同主导了[Filecoin改进提案](https://github.com/filecoin-project/FIPs)，以及网络继续扩展到超过675PiB的存储容量。
 
 为了庆祝主网顺利启动，社区发起了[Filecoin 主网启动周](https://liftoff.filecoin.io/)，聚集了超过80位圆桌讨论者来谈论涵盖从技术细节和发展过程到当前和未来的应用等所有与Filecoin相关的话题。您可以在[此处](https://liftoff.filecoin.io/#mainTrack)查看所有环节！
 

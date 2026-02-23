@@ -27,7 +27,7 @@ _template: blog_detail_ch
 
 ## FIL Token
 
-Filecoin的[_island economy_](https://filecoin.io/blog/posts/filecoin-s-island-economy/)经济模型包括5种不同领域参与者之间的互动：用户、开发者、token持有者、生态伙伴，以及存储提供者（对我们而言最重要）。这些互动需要使用FIL这种功能型token，存储提供者也不例外。因此，网络里发生的这些经济互动是由这个token计价的。这是赋予持有者使用网络权利的方式。
+Filecoin的[_island economy_](/blog/filecoin-s-island-economy/)经济模型包括5种不同领域参与者之间的互动：用户、开发者、token持有者、生态伙伴，以及存储提供者（对我们而言最重要）。这些互动需要使用FIL这种功能型token，存储提供者也不例外。因此，网络里发生的这些经济互动是由这个token计价的。这是赋予持有者使用网络权利的方式。
 
 ## Filecoin存储提供者的收入与支出
 
@@ -69,4 +69,4 @@ Filecoin社区致力于让网络及其经济对所有参与者都是开放的。
 
 ## 进一步的阅读材料
 
-要学习更多Filecoin存储提供者的经济模型，可以查看其他重要的资源，如[设计Filecoin经济（Engineering Filecoin’s Economy）论文](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)，以及[Filecoin的加密经济学构造）（Filecoin’s Cryptoeconomic Constructions）](https://filecoin.io/blog/posts/filecoin-s-cryptoeconomic-constructions/)。此外，确保在[Slack](https://filecoin.io/slack)和[Twitter](https://twitter.com/FilecoinSP?s=20&t=Cied9srtVmuumV69dT7NSA)上加入社区。
+要学习更多Filecoin存储提供者的经济模型，可以查看其他重要的资源，如[设计Filecoin经济（Engineering Filecoin’s Economy）论文](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)，以及[Filecoin的加密经济学构造）（Filecoin’s Cryptoeconomic Constructions）](/blog/filecoin-s-cryptoeconomic-constructions/)。此外，确保在[Slack](https://filecoin.io/slack)和[Twitter](https://twitter.com/FilecoinSP?s=20&t=Cied9srtVmuumV69dT7NSA)上加入社区。

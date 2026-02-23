@@ -25,17 +25,17 @@ title: Filecoin News 63
 
 ### FVM is live on Mainnet
 
-On March 14th, the [Filecoin Virtual Machine (FVM)](http://fvm.dev/) officially launched on Filecoin mainnet! Now the network supports smart contracts and user programmability via the FVM, unlocking the enormous potential of an open data economy. This launch is a landmark milestone in Filecoin’s larger roadmap, which aims to bring open access and public verifiability to the three key arms of the data economy (storage, compute and content-delivery). Read all about the major upgrade, the ecosystem partners that are committed to supporting and integrating the FVM, and more in the [announcement blog post](https://filecoin.io/blog/posts/fvm-is-live-on-mainnet/).
+On March 14th, the [Filecoin Virtual Machine (FVM)](http://fvm.dev/) officially launched on Filecoin mainnet! Now the network supports smart contracts and user programmability via the FVM, unlocking the enormous potential of an open data economy. This launch is a landmark milestone in Filecoin’s larger roadmap, which aims to bring open access and public verifiability to the three key arms of the data economy (storage, compute and content-delivery). Read all about the major upgrade, the ecosystem partners that are committed to supporting and integrating the FVM, and more in the [announcement blog post](/blog/fvm-is-live-on-mainnet/).
 
 ### Refreshing the Filecoin Bug Bounty Program
 
-Now that the FVM has launched, the community is excited to announce a refreshed [Filecoin bug bounty program,](https://security.filecoin.io/bug-bounty/) featuring increased rewards up to 500k USD for critical issues and inclusion of programmability features in scope. Post-launch, the community continues to be committed to guaranteeing the security of the Filecoin network, now including its new and updated components: the FVM, the EVM runtime, and its dependencies. With this update, we once again extend an invitation to security researchers, developers, and bug bunters to help us identify latent risks and problems that may remain in the codebase after mainnet launch. Learn more about the program, the updated scope, rules and more in this [post](https://filecoin.io/blog/posts/refreshing-the-filecoin-bug-bounty-program/).
+Now that the FVM has launched, the community is excited to announce a refreshed [Filecoin bug bounty program,](https://security.filecoin.io/bug-bounty/) featuring increased rewards up to 500k USD for critical issues and inclusion of programmability features in scope. Post-launch, the community continues to be committed to guaranteeing the security of the Filecoin network, now including its new and updated components: the FVM, the EVM runtime, and its dependencies. With this update, we once again extend an invitation to security researchers, developers, and bug bunters to help us identify latent risks and problems that may remain in the codebase after mainnet launch. Learn more about the program, the updated scope, rules and more in this [post](/blog/refreshing-the-filecoin-bug-bounty-program/).
 
 ## Community
 
 ### FVM Imaginarium: Liquid Staking
 
-As the Filecoin network grows, the demand for FIL as collateral increases, thus underscoring the need for more options for token holders to connect with Storage Providers. The FVM launch paves the way for creating more efficient capital markets via DeFi staking and leasing protocols. In [this blog post](https://filecoin.io/blog/posts/fvm-imaginarium-staking-and-leasing-protocols/), we provide an overview of staking protocols on FVM, and showcase the projects who are soon releasing their solutions!
+As the Filecoin network grows, the demand for FIL as collateral increases, thus underscoring the need for more options for token holders to connect with Storage Providers. The FVM launch paves the way for creating more efficient capital markets via DeFi staking and leasing protocols. In [this blog post](/blog/fvm-imaginarium-staking-and-leasing-protocols/), we provide an overview of staking protocols on FVM, and showcase the projects who are soon releasing their solutions!
 
 ### Celer Now Supports the FVM
 
@@ -65,7 +65,7 @@ Ankr is now offering [Filecoin hosted nodes as a service](https://www.ankr.com/r
 
 ### HTTP Retrieval Benchmarks with Boost
 
-Boost recently released a feature which enables storage providers to serve HTTP retrievals (full piece retrieval and range requests) with [booster-http](https://boost.filecoin.io/experimental-features/http-retrieval). Additionally, there is now an option to perform range requests, which means clients can select a range of content in the full piece to retrieve. Learn more about Boost and the retrieval benchmarks tool in this [recent blog](https://filecoin.io/blog/posts/http-retrieval-benchmarks/).
+Boost recently released a feature which enables storage providers to serve HTTP retrievals (full piece retrieval and range requests) with [booster-http](https://boost.filecoin.io/experimental-features/http-retrieval). Additionally, there is now an option to perform range requests, which means clients can select a range of content in the full piece to retrieve. Learn more about Boost and the retrieval benchmarks tool in this [recent blog](/blog/http-retrieval-benchmarks/).
 
 ## Events
 

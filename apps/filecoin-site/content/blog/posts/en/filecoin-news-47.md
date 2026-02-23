@@ -35,21 +35,21 @@ The [Sustainable Blockchain Summit](http://sbs.tech) is coming to Paris **_this 
 
 In light of the ongoing COVID-19 disruption and continued travel restrictions across Asia Pacific, we are postponing FIL-Singapore to late September to ensure we meet the event’s high expectations, which we share with our valued community. The event will now take place September 26-27, at the Marina Bay Sands in Singapore, ahead of TOKEN2049. We understand this change is disruptive for our community members who have made plans to attend the event. Thank you for your flexibility and support. We look forward to seeing you later this year!
 
-[![](/uploads/fvm.webp)](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/)
+[![](/uploads/fvm.webp)](/blog/filecoin-v16-network-upgrade-skyr/)
 
 ### Filecoin v16 Skyr upgrade is here
 
-The Filecoin v16 Skyr upgrade - the deployment of Milestone 1 of the Filecoin Virtual Machine to the Filecoin network was successfully completed on Wednesday, July 6th at 1400 UTC. This upgrade represents the most dramatic transformation of the Filecoin network since its inception nearly two years ago. The centerpiece of this upgrade was [the introduction of the Filecoin Virtual Machine (FVM)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0030.md), and the migration of chain execution to it. The Skyr upgrade is the first of two steps on the path to fully enabling on-chain user programmability on Filecoin, bringing with it the possibility for a boundless number of new use cases and features to be implemented on the already robust network. Learn more about the upgrade and what’s next in the [announcement post](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/).
+The Filecoin v16 Skyr upgrade - the deployment of Milestone 1 of the Filecoin Virtual Machine to the Filecoin network was successfully completed on Wednesday, July 6th at 1400 UTC. This upgrade represents the most dramatic transformation of the Filecoin network since its inception nearly two years ago. The centerpiece of this upgrade was [the introduction of the Filecoin Virtual Machine (FVM)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0030.md), and the migration of chain execution to it. The Skyr upgrade is the first of two steps on the path to fully enabling on-chain user programmability on Filecoin, bringing with it the possibility for a boundless number of new use cases and features to be implemented on the already robust network. Learn more about the upgrade and what’s next in the [announcement post](/blog/filecoin-v16-network-upgrade-skyr/).
 
 ## Community
 
-[![](/uploads/espa-header.webp)](https://filecoin.io/blog/posts/espa-bootcamp-supermicro-s-solutions-for-the-filecoin-ecosystem/)
+[![](/uploads/espa-header.webp)](/blog/espa-bootcamp-supermicro-s-solutions-for-the-filecoin-ecosystem/)
 
 ### ESPA Bootcamp: Supermicro's Solutions for the Filecoin Ecosystem
 
-[Supermicro](https://www.supermicro.com/en) started developing application-optimized server building blocks in 1993 and has evolved into a global provider of fully-integrated rack solutions. Now, the company has taken on the task of facilitating the transition from Web 2.0 to Web3 with solutions that acknowledge the hardware needs of decentralized protocols. [Read along](https://filecoin.io/blog/posts/espa-bootcamp-supermicro-s-solutions-for-the-filecoin-ecosystem/) to learn more about how Supermicro aids enterprise-grade Storage Providers on the Filecoin network.
+[Supermicro](https://www.supermicro.com/en) started developing application-optimized server building blocks in 1993 and has evolved into a global provider of fully-integrated rack solutions. Now, the company has taken on the task of facilitating the transition from Web 2.0 to Web3 with solutions that acknowledge the hardware needs of decentralized protocols. [Read along](/blog/espa-bootcamp-supermicro-s-solutions-for-the-filecoin-ecosystem/) to learn more about how Supermicro aids enterprise-grade Storage Providers on the Filecoin network.
 
-[![](/uploads/pl_research_banner_for_apply.webp)](https://filecoin.io/blog/posts/espa-bootcamp-supermicro-s-solutions-for-the-filecoin-ecosystem/)
+[![](/uploads/pl_research_banner_for_apply.webp)](/blog/espa-bootcamp-supermicro-s-solutions-for-the-filecoin-ecosystem/)
 
 ### Project Pikachu: Checkpointing Filecoin onto Bitcoin
 
@@ -87,7 +87,7 @@ The Protocol Labs community is gathering IRL at EthCC in Paris for CryptoEconDay
 
 ### Introducing Filgram, the Newest SP Discovery Tool
 
-Filgram is a tool built for and powered by storage providers that enables them to optimize marketing for their enterprise. On the other hand, it lets users compare and contrast Storage Providers on a wide range of facets such as location, storage power, number of deals made, and much more. Visit the [Filecoin blog](https://filecoin.io/blog/posts/introducing-filgram-the-newest-sp-discovery-tool/) to learn more about Filgram.
+Filgram is a tool built for and powered by storage providers that enables them to optimize marketing for their enterprise. On the other hand, it lets users compare and contrast Storage Providers on a wide range of facets such as location, storage power, number of deals made, and much more. Visit the [Filecoin blog](/blog/introducing-filgram-the-newest-sp-discovery-tool/) to learn more about Filgram.
 
 ## Hackathons
 

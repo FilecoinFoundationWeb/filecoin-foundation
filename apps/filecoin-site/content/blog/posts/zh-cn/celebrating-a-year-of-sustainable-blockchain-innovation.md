@@ -15,7 +15,7 @@ draft: true
 
 可持续区块链黑客马拉松：该团队在去年7月举办了第一届可持续区块链黑客松，共有250多名与会者参加并提交了70多个项目。这次黑客松将开发人员、设计师和可持续发展专家汇聚在一起，携手打造创新的解决方案，致力于利用区块链技术促进可持续发展。
 
-Filecoin Green Grant计划：2022年6月，Filecoin Green[宣布](https://filecoin.io/blog/posts/filecoin-green-s-1-million-green-grants-program-will-support-climate-positive-regenerative-finance-refi-initiatives/)针对建立在Filecoin和IPFS之上的再融资项目将提供100万美元的奖励金。受支持的一些项目包括GainForest、Reneum和Impacta Finance，像DCENT和TwinQuasar这样的Filecoin存储提供者也能获得支持，从而推动实现更环保的运营。
+Filecoin Green Grant计划：2022年6月，Filecoin Green[宣布](/blog/filecoin-green-s-1-million-green-grants-program-will-support-climate-positive-regenerative-finance-refi-initiatives/)针对建立在Filecoin和IPFS之上的再融资项目将提供100万美元的奖励金。受支持的一些项目包括GainForest、Reneum和Impacta Finance，像DCENT和TwinQuasar这样的Filecoin存储提供者也能获得支持，从而推动实现更环保的运营。
 
 CO2.Storage：2022年10月，CO2.Storage正式宣布成为第一个存储在IPFS和Filecoin之上的结构化环境数据web3存储解决方案，专注于为数字环境资产(诸如可再生能源证书、碳补偿等)基础上的环境属性实现更高的透明度。该平台不仅旨在提高碳补偿市场的透明度和信任度，还致力于解决所有现实世界的索赔公开和透明管理的问题。
 

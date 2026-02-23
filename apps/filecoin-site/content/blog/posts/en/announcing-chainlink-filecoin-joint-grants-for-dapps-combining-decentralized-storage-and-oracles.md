@@ -31,7 +31,7 @@ Hybrid smart contracts leverage code running on the blockchain (on-chain) with d
 
 By bringing together Filecoin and Chainlink, developers can build end-to-end decentralized applications that have cost-efficient and immutable storage capabilities along with a universal and secure connection to external resources.
 
-This grant initiative comes on the heels of several other joint efforts between the Filecoin and Chainlink communities. For starters, Chainlink and Filecoin have been [working on Chainlink External Adapters](https://filecoin.io/blog/posts/filecoin-and-chainlink-integration/) to facilitate bi-directional communication between the two projects. Additionally, the Chainlink Labs team joined the Filecoin Launchpad Accelerator as an advisor for the second cohort of projects, helping them extend the functionality of their applications using oracles.
+This grant initiative comes on the heels of several other joint efforts between the Filecoin and Chainlink communities. For starters, Chainlink and Filecoin have been [working on Chainlink External Adapters](/blog/filecoin-and-chainlink-integration/) to facilitate bi-directional communication between the two projects. Additionally, the Chainlink Labs team joined the Filecoin Launchpad Accelerator as an advisor for the second cohort of projects, helping them extend the functionality of their applications using oracles.
 
 Filecoin also sponsored prizes in the widely attended Spring 2021 Chainlink Hackathon, with several dual Filecoin- and Chainlink-enabled projects being accepted into the Filecoin Launchpad Accelerator, such as Tamago, Nifty Royale, and [CryptOrchids](https://cryptorchids.io/).
 

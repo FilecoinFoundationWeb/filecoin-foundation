@@ -22,7 +22,7 @@ related_article_3: content/blog/posts/filecoin-news-64.en.md
 
 ### Brave Announces Automatic NFT Backups and Enhanced Filecoin Support in Brave Wallet
 
-Brave and Protocol Labs first began collaborating in January 2021, when [Brave introduced support for IPFS](https://brave.com/brave-integrates-ipfs/) on desktop versions of the browser, unlocking unique new ways to experience the Web for everyday users. Today, Brave is unveiling new features to support the development, adoption, and use of the decentralized Web (dWeb). The v1.51 release of the wallet introduces automatic NFT pinning, which backs up the metadata of supported NFTs to the InterPlanetary File System (IPFS). Catch up on the announcement [on the Filecoin blog](https://filecoin.io/blog/posts/brave-announces-automatic-nft-backups-and-enhanced-filecoin-support-in-brave-wallet/). 
+Brave and Protocol Labs first began collaborating in January 2021, when [Brave introduced support for IPFS](https://brave.com/brave-integrates-ipfs/) on desktop versions of the browser, unlocking unique new ways to experience the Web for everyday users. Today, Brave is unveiling new features to support the development, adoption, and use of the decentralized Web (dWeb). The v1.51 release of the wallet introduces automatic NFT pinning, which backs up the metadata of supported NFTs to the InterPlanetary File System (IPFS). Catch up on the announcement [on the Filecoin blog](/blog/brave-announces-automatic-nft-backups-and-enhanced-filecoin-support-in-brave-wallet/). 
 
 ### HackFS is back
 

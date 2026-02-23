@@ -22,7 +22,7 @@ title: "Introducing ref-fvm, a new FVM website, and the Early Builders Program"
 _template: blog_detail
 ---
 
-We’ve been busy since we [introduced the Filecoin Virtual Machine](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) back in November 2021. Today, we are thrilled to bring you three announcements. First, we [open sourced the repo](https://github.com/filecoin-project/ref-fvm) for the FVM reference implementation (ref-fvm) earlier this week. Second, we have launched a brand new [FVM website](https://fvm.filecoin.io/). And finally, we’re kicking off the [FVM Early Builders program](https://fvm.filecoin.io/foundry) to onboard the pioneering members to the FVM Foundry. Continue reading to find out more.
+We’ve been busy since we [introduced the Filecoin Virtual Machine](/blog/introducing-the-filecoin-virtual-machine/) back in November 2021. Today, we are thrilled to bring you three announcements. First, we [open sourced the repo](https://github.com/filecoin-project/ref-fvm) for the FVM reference implementation (ref-fvm) earlier this week. Second, we have launched a brand new [FVM website](https://fvm.filecoin.io/). And finally, we’re kicking off the [FVM Early Builders program](https://fvm.filecoin.io/foundry) to onboard the pioneering members to the FVM Foundry. Continue reading to find out more.
 
 ## Open sourcing the reference FVM implementation
 
@@ -72,7 +72,7 @@ Apply now at [fvm.filecoin.io](https://fvm.filecoin.io/foundry).
 
 ## What's next?
 
-We’re well underway towards [Milestone 1](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) (March ’22).
+We’re well underway towards [Milestone 1](/blog/introducing-the-filecoin-virtual-machine/) (March ’22).
 
 Milestone 1 represents the atomic switch of mainnet from the current built-in VMs to the WASM-based reference FVM. It comes with a brand new gas model that accounts for real WASM execution costs. Milestone 1 paves the way for user programmability, which will be introduced in Milestone 2 (June ’22).
 

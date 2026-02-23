@@ -23,7 +23,7 @@ related_article_3: content/blog/posts/filecoin-news-112.en.md
 ### 💸  ProPGF Batch 1: $3.6M Awarded to Ecosystem Builders
 
 The first round of the Filecoin Public Goods Funding (ProPGF) program is complete, with $3.6M in funding awarded to 14 outstanding teams across the Filecoin ecosystem. These projects are building essential infrastructure and tools, from open source developer services to real-world storage integrations, that strengthen the foundation of the Filecoin network. This milestone sets the tone for future rounds, with Batch 2 launching in October 2025.
-📚 [Read the full announcement and check out the projects.](https://filecoin.io/blog/posts/filecoin-propgf-batch-1-36m-awarded-to-ecosystem-builders)
+📚 [Read the full announcement and check out the projects.](/blog/filecoin-propgf-batch-1-36m-awarded-to-ecosystem-builders)
 
 ## 🌎 Community Updates 🌎
 

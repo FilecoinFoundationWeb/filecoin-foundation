@@ -21,7 +21,7 @@ title: 如何成为索引提供者
 _template: blog_detail_ch
 ---
 
-这是关于网络索引系列文章中的第三篇博文。[第一篇博文](https://filecoin.io/blog/posts/introducing-the-network-indexer/)介绍了网络索引器的概念，[第二篇博文](https://filecoin.io/blog/posts/how-does-the-network-indexer-work/)则更深入地探讨了内部运作机制，以便为数十亿可寻址的内容找到内容提供者。
+这是关于网络索引系列文章中的第三篇博文。[第一篇博文](/blog/introducing-the-network-indexer/)介绍了网络索引器的概念，[第二篇博文](/blog/how-does-the-network-indexer-work/)则更深入地探讨了内部运作机制，以便为数十亿可寻址的内容找到内容提供者。
 
 在前两篇文章的基础上，这篇博文将深入探讨如何成为网络索引器的索引提供者，助力大家成为**索引提供者**。
 

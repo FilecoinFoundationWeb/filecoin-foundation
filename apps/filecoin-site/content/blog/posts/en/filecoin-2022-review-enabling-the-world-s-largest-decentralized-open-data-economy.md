@@ -32,7 +32,7 @@ Filecoin’s mission is to create a decentralized, efficient, and robust foundat
 
 Since the launch of the Filecoin mainnet in October 2020, the community has set out on the journey in three sequential steps (which Juan Benet, founder of Protocol Labs, calls “[the Filecoin Masterplan](https://www.youtube.com/watch?v=oY1ot0qD0Rw)”). In 2022, the Filecoin community made remarkable progress on Steps 1 and 2, while 2023 will bring a significant amount of progress in Step 3.
 
-![](/uploads/filecoin-masterplan.webp)  
+![](/uploads/filecoin-masterplan.webp)
 Some key highlights in the Filecoin growth story in 2022 include:
 
 - In terms of **storage capacity**, Filecoin is now the largest decentralized storage network. >3,800 storage providers globally contribute more than 17M Terabytes of storage capacity. That’s enough to store the entire Internet Archive 275 times over. Offering more than 400x the capacity of its next-largest competitor, this also makes Filecoin the largest decentralized storage network.
@@ -55,7 +55,7 @@ We delve deeper into the ecosystem’s progress in 2022 below, celebrating the s
 
 ### Unlocking programmability, faster on-boarding, and better performance
 
-In 2022, the Filecoin network underwent significant updates. The [first major update](https://filecoin.io/blog/posts/trusted-setup-complete-for-network-v15-upgrade/), v15, was released in early January and enabled the creation of secure parameters for four circuits, known as "SnapDeals.” The [v16 Skyr upgrade](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/) represented a significant transformation for the Filecoin network, introducing the non-programmable version of Filecoin’s Virtual Machine. Subsequently, the [v17 Shark upgrade](https://filecoin.io/blog/posts/filecoin-network-v17-shark-upgrade/) made a range of improvements and simplifications, laying the foundation for programmable storage through the use of smart contracts that interact with storage deals and providers. The upcoming [v18 Hygge update](https://github.com/filecoin-project/community/discussions/74?sort=new#discussioncomment-4313888) will further enhance the network by introducing user programmability to Filecoin’s Virtual Machine.
+In 2022, the Filecoin network underwent significant updates. The [first major update](/blog/trusted-setup-complete-for-network-v15-upgrade/), v15, was released in early January and enabled the creation of secure parameters for four circuits, known as "SnapDeals.” The [v16 Skyr upgrade](/blog/filecoin-v16-network-upgrade-skyr/) represented a significant transformation for the Filecoin network, introducing the non-programmable version of Filecoin’s Virtual Machine. Subsequently, the [v17 Shark upgrade](/blog/filecoin-network-v17-shark-upgrade/) made a range of improvements and simplifications, laying the foundation for programmable storage through the use of smart contracts that interact with storage deals and providers. The upcoming [v18 Hygge update](https://github.com/filecoin-project/community/discussions/74?sort=new#discussioncomment-4313888) will further enhance the network by introducing user programmability to Filecoin’s Virtual Machine.
 
 ### Retrieval Markets
 
@@ -73,9 +73,9 @@ Head to [retrieval.market](https://retrieval.market) to learn more about the RM 
 
 ### FVM Development
 
-[Filecoin Virtual Machine (FVM)](https://fvm.filecoin.io/) made substantial progress on its [roadmap](https://fvm.filecoin.io/#roadmap-4) in 2022. Milestone 1.0 was completed in July to successfully install a [non-programmable version of FVM](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/) on the Filecoin main network. With the Skyr network upgrade, the main network now runs its core logic on FVM.
+[Filecoin Virtual Machine (FVM)](https://fvm.filecoin.io/) made substantial progress on its [roadmap](https://fvm.filecoin.io/#roadmap-4) in 2022. Milestone 1.0 was completed in July to successfully install a [non-programmable version of FVM](/blog/filecoin-v16-network-upgrade-skyr/) on the Filecoin main network. With the Skyr network upgrade, the main network now runs its core logic on FVM.
 
-We launched [FVM Foundry Early Builders](https://filecoin.io/blog/posts/introducing-ref-fvm-a-new-fvm-website-and-the-early-builders-program/) with the inaugural F/0 cohort and worked with 25 project teams from the Protocol Labs Network and community, to build FVM alongside the core team. The cohort yielded impressive projects like FVM SDKs in [Rust](https://github.com/polyphene/fvm-rs-sdk), [Go](https://github.com/ipfs-force-community/go-fvm-sdk), and [AssemblyScript](https://docs.zondax.ch/filecoin-virtual-machine/fvm-as-sdk/), multiple block explorers, and other essential FVM tooling and testing.
+We launched [FVM Foundry Early Builders](/blog/introducing-ref-fvm-a-new-fvm-website-and-the-early-builders-program/) with the inaugural F/0 cohort and worked with 25 project teams from the Protocol Labs Network and community, to build FVM alongside the core team. The cohort yielded impressive projects like FVM SDKs in [Rust](https://github.com/polyphene/fvm-rs-sdk), [Go](https://github.com/ipfs-force-community/go-fvm-sdk), and [AssemblyScript](https://docs.zondax.ch/filecoin-virtual-machine/fvm-as-sdk/), multiple block explorers, and other essential FVM tooling and testing.
 
 Milestone 2.0 began and is in progress to install a user-programmable FVM on the main network, which brings programmability to the Filecoin storage network and unlocks limitless use cases. We completed [90%](https://github.com/filecoin-project/ref-fvm/issues/692) of Milestone 2.1 in 2022 to build the [Ethereum-compatible FVM (FEVM)](https://docs.filecoin.io/developers/smart-contracts/concepts/filecoin-evm/), and built a feature-complete Ethereum JSON-RPC API that enables Ethereum tools like Metamask, Foundry, and Remix to operate against Filecoin.
 
@@ -128,7 +128,7 @@ Transparent ownership of data is a core belief for the Web3 community but the te
 
 Examples:
 
-1. [NFT Star](https://filecoin.io/blog/posts/case-study-why-nftstar-trusts-decentralized-cloud-storage-for-sports-collectibles/): They are building an integrated and global sports metaverse platform to create a Web3 community that fosters direct connections between sports stars and their fans. Sports NFT collectors expect their digital assets to be easily traded and exchanged without the risk of losing the data that makes them valuable. The team chose Filecoin because of its ability to provide direct content ownership that is verifiable and secure. In addition to providing storage, the network’s geographic distribution improves the platform’s user experience by reducing time spent on data retrieval.
+1. [NFT Star](/blog/case-study-why-nftstar-trusts-decentralized-cloud-storage-for-sports-collectibles/): They are building an integrated and global sports metaverse platform to create a Web3 community that fosters direct connections between sports stars and their fans. Sports NFT collectors expect their digital assets to be easily traded and exchanged without the risk of losing the data that makes them valuable. The team chose Filecoin because of its ability to provide direct content ownership that is verifiable and secure. In addition to providing storage, the network’s geographic distribution improves the platform’s user experience by reducing time spent on data retrieval.
 2. Solana: 3.4 PiB public chain snapshots are onboarding to the network.
 
 ### Developer Adoption and Onboarding Platforms
@@ -151,7 +151,7 @@ The recently released [Storage Provider Sales Kit](https://hub.filecoin.io/form-
 
 In 2022, the Network Growth team also created the Fil+ Interactive Infographic which outlines the Fil+ program and explains how Block Rewards are used to compensate Storage Providers on the Filecoin Network. It also covers how clients leverage data cap, and what role notaries play in this model. Furthermore, in order to allow SPs to have more in-depth conversations with opportunities in very specific areas, the Network Growth Team created a couple of sales playbooks.
 
-Specifically, 2022 saw the creation of the Life Sciences Playbook and the Environmental Impact Playbook. These playbooks offer case studies and best practices for SPs that want to build a business pipeline for these specialized opportunities. Lastly, the Network Growth Team announced the creation of the [Decentralized Storage Alliance](https://filecoin.io/blog/posts/introducing-the-decentralized-storage-alliance/). The Decentralized Storage Alliance brings together top-tier leaders across Web2 and Web3 to support the adoption of decentralized technologies such as Filecoin, IPFS, and Libp2p by helping them make the transition to Web3 through education, advocacy, and best practices.
+Specifically, 2022 saw the creation of the Life Sciences Playbook and the Environmental Impact Playbook. These playbooks offer case studies and best practices for SPs that want to build a business pipeline for these specialized opportunities. Lastly, the Network Growth Team announced the creation of the [Decentralized Storage Alliance](/blog/introducing-the-decentralized-storage-alliance/). The Decentralized Storage Alliance brings together top-tier leaders across Web2 and Web3 to support the adoption of decentralized technologies such as Filecoin, IPFS, and Libp2p by helping them make the transition to Web3 through education, advocacy, and best practices.
 
 ### Filecoin Builders & Startups
 

@@ -31,19 +31,19 @@ title:
 
 ## Build
 
-[![](/uploads/dora-winners.webp)](https://filecoin.io/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/)
+[![](/uploads/dora-winners.webp)](/blog/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/)
 
 ### 17 Winning Projects from DoraHack’s Filecoin Grant Hackathon
 
-Last month the voting period closed for the 2021 DoraHacks Filecoin Grant Hackathon. Lasting from May 1 to mid-July, the Round 1 Filecoin Grants distributed $249,000 USD among the winning projects across first, second, and third place. Catch up with the winning projects to learn more about the projects building the future of the Filecoin network in [this blog post](https://filecoin.io/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/). You can also check out all of the applicants and watch the projects’ presentations on the [DoraHacks Youtube channel](https://www.youtube.com/channel/UCApW8piYNP4T10kgenp0Mjg/playlists).
+Last month the voting period closed for the 2021 DoraHacks Filecoin Grant Hackathon. Lasting from May 1 to mid-July, the Round 1 Filecoin Grants distributed $249,000 USD among the winning projects across first, second, and third place. Catch up with the winning projects to learn more about the projects building the future of the Filecoin network in [this blog post](/blog/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/). You can also check out all of the applicants and watch the projects’ presentations on the [DoraHacks Youtube channel](https://www.youtube.com/channel/UCApW8piYNP4T10kgenp0Mjg/playlists).
 
-[![](/uploads/fil-polygon.webp)](https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/)
+[![](/uploads/fil-polygon.webp)](/blog/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/)
 
 ### Announcing Filecoin - Polygon Bridge with Free Storage for Developers
 
 Filecoin is announcing a collaboration with [Polygon](https://polygon.technology/) to accelerate Web3 interoperability between both ecosystems. The collaboration kicks off with the recently-created Filecoin-Polygon Bridge by the [Textile](https://www.textile.io/) team. To further encourage developers to try out and build on the bridge, Filecoin and Polygon are offering free storage costs for any projects using the Textile bridge. Both projects have also lined up two upcoming joint hackathons where developers can try the bridge and begin building new applications.
 
-To get started on the bridge deployment on Polygon, simply visit the instructions and documentation at [eth.storage](https://eth.storage/javascript/#eth--polygon). (All storage costs using the bridge are free!) To learn more about the collaboration, check out [this post](https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/).
+To get started on the bridge deployment on Polygon, simply visit the instructions and documentation at [eth.storage](https://eth.storage/javascript/#eth--polygon). (All storage costs using the bridge are free!) To learn more about the collaboration, check out [this post](/blog/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/).
 
 ## Store
 
@@ -53,7 +53,7 @@ To get started on the bridge deployment on Polygon, simply visit the instruction
 
 Gallery is the most recent solution from JigstackDAO, a governance platform for multiple DeFi products governed and incentivized by $STAK. Gallery is Jigstack’s entrance to the NFT ecosystem, developing novel and creative opportunities for NFTs and STAK holders. Gallery has just announced they will be using IPFS and Filecoin to store the NFTs that will be announced as part of their plans in the near future. [Read more](https://medium.com/jigstack/the-decentralized-storage-of-jigstack-gallerys-nfts-is-cemented-via-a-filecoin-collaboration-136dbd825cd2) and sign up to stay updated about Gallery’s release!
 
-[![](/uploads/fil-mask.webp)](https://filecoin.io/blog/posts/mask-network-x-filecoin-bridging-the-gap-between-web2-and-web3/)
+[![](/uploads/fil-mask.webp)](/blog/mask-network-x-filecoin-bridging-the-gap-between-web2-and-web3/)
 
 ### Mask Network × Filecoin: Bridging the Gap Between Web2 and Web3
 
@@ -61,7 +61,7 @@ Last week, [Mask Network](https://mask.io/) and Filecoin announced a collaborati
 
 Mask Network is a leading protocol connecting Web2 platforms with Web3 principles. The Mask browser extension allows anyone to interact with others on traditional platforms like Facebook and Twitter, but do so through and with Web3 principles and solutions. Users can send and receive encrypted messages, transfer cryptocurrencies, and fund projects on Gitcoin. And soon, store and share files through Filecoin. [Download the Mask browser extension](https://mask.io/) and get started.
 
-With the Mask browser extension, users will be able to choose to upload particular files to the Filecoin network, and share them as either encrypted or unencrypted assets to their networks. [Read more](https://filecoin.io/blog/posts/mask-network-x-filecoin-bridging-the-gap-between-web2-and-web3/) about this accelerated path towards the vision of storing and securing humanity’s digital information.
+With the Mask browser extension, users will be able to choose to upload particular files to the Filecoin network, and share them as either encrypted or unencrypted assets to their networks. [Read more](/blog/mask-network-x-filecoin-bridging-the-gap-between-web2-and-web3/) about this accelerated path towards the vision of storing and securing humanity’s digital information.
 
 [![](/uploads/web3-diagram.webp)](https://thenewstack.io/web3-storage-free-decentralized-storage-on-filecoin/)
 

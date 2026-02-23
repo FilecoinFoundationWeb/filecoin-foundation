@@ -19,11 +19,11 @@ dim_image: true
 
 ## A Prototype for Network-Led Public Goods Funding
 
-When we [launched](https://filecoin.io/blog/posts/introducing-fil-propgf-a-new-era-in-community-led-public-goods-funding-for-the-filecoin-ecosystem/) Filecoin ProPGF in early 2025, our goal was simple but ambitious: to prototype a transparent, community-driven, and repeatable funding mechanism for the teams  advancing the Filecoin network.
+When we [launched](/blog/introducing-fil-propgf-a-new-era-in-community-led-public-goods-funding-for-the-filecoin-ecosystem/) Filecoin ProPGF in early 2025, our goal was simple but ambitious: to prototype a transparent, community-driven, and repeatable funding mechanism for the teams  advancing the Filecoin network.
 
-Batch 1 was our first real test. Over the last few months, we reviewed 38 applications, shortlisted 23, and [funded 14 teams with a total of $3.68 million](https://filecoin.io/blog/posts/filecoin-propgf-batch-1-36m-awarded-to-ecosystem-builders/).
+Batch 1 was our first real test. Over the last few months, we reviewed 38 applications, shortlisted 23, and [funded 14 teams with a total of $3.68 million](/blog/filecoin-propgf-batch-1-36m-awarded-to-ecosystem-builders/).
 
-The round was guided by a [12-member Selection Committee](https://filecoin.io/blog/posts/announcing-the-propgf-selection-committee-members/)representing diverse expertise across the Filecoin ecosystem, using Questbook for grant management.
+The round was guided by a [12-member Selection Committee](/blog/announcing-the-propgf-selection-committee-members/)representing diverse expertise across the Filecoin ecosystem, using Questbook for grant management.
 
 This first batch wasn’t just about distributing funds; it was about learning how a decentralized network can coordinate experts, funders, and builders toward shared priorities. What follows is a reflection on what worked, what didn’t, and what we’re taking forward.
 

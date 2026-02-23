@@ -25,23 +25,23 @@ title: Filecoin News 40
 
 ## Announcements
 
-[![](/uploads/fvm-update_hud60c027a439008dcf3bf42e8849e5d71_735992_2000x0_resize_q90_linear_2.webp)](https://filecoin.io/blog/posts/fvm-milestone-0.5-is-complete/)
+[![](/uploads/fvm-update_hud60c027a439008dcf3bf42e8849e5d71_735992_2000x0_resize_q90_linear_2.webp)](/blog/fvm-milestone-0.5-is-complete/)
 
 ### FVM Milestone 0.5 Complete
 
-The FVM and implementation team has announced the completion of [FVM Milestone 0.5](https://fvm.filecoin.io/#roadmap-4)! Now all node operators can run their own FVM nodes using the v7 built-in actor to sync with the Filecoin Mainnet! For more details, please read the [announcement blog](https://filecoin.io/blog/posts/fvm-milestone-0.5-is-complete/).
+The FVM and implementation team has announced the completion of [FVM Milestone 0.5](https://fvm.filecoin.io/#roadmap-4)! Now all node operators can run their own FVM nodes using the v7 built-in actor to sync with the Filecoin Mainnet! For more details, please read the [announcement blog](/blog/fvm-milestone-0.5-is-complete/).
 
-[![](/uploads/fvm-bug-bounty_hue97cccb1b4d7d3531c30c57cbd5036d3_684406_2000x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/introducing-the-fvm-milestone-1-bug-bounty-program-audits/)
+[![](/uploads/fvm-bug-bounty_hue97cccb1b4d7d3531c30c57cbd5036d3_684406_2000x0_resize_q90_linear.webp)](/blog/introducing-the-fvm-milestone-1-bug-bounty-program-audits/)
 
 ### Introducing the FVM Milestone 1 Bug Bounty Program and Audits
 
-The [Filecoin VM Bug Bounty Program](https://fvm.filecoin.io/#fvm-bug-bounty-program-7) for Milestone 1 is now live! The FVM team invites hackers to help find potential vulnerabilities in the FVM codebase for the upcoming merge of M1 to Filecoin mainnet in May. M1 will transition the Filecoin network to exclusive use of the new Wasm-based FVM by all client implementations. Since this is a completely new codebase, one of the main areas of focus right now is to invite more external developers to help discover a wide range of potential vulnerabilities in FVM M1, in advance of later milestones to add user-programmability and EVM-compatibility in FVM M2, coming this Fall. Learn more in this [blog post](https://filecoin.io/blog/posts/introducing-the-fvm-milestone-1-bug-bounty-program-audits/).
+The [Filecoin VM Bug Bounty Program](https://fvm.filecoin.io/#fvm-bug-bounty-program-7) for Milestone 1 is now live! The FVM team invites hackers to help find potential vulnerabilities in the FVM codebase for the upcoming merge of M1 to Filecoin mainnet in May. M1 will transition the Filecoin network to exclusive use of the new Wasm-based FVM by all client implementations. Since this is a completely new codebase, one of the main areas of focus right now is to invite more external developers to help discover a wide range of potential vulnerabilities in FVM M1, in advance of later milestones to add user-programmability and EVM-compatibility in FVM M2, coming this Fall. Learn more in this [blog post](/blog/introducing-the-fvm-milestone-1-bug-bounty-program-audits/).
 
-[![](/uploads/network-indexer.webp)](https://filecoin.io/blog/posts/introducing-the-network-indexer/)
+[![](/uploads/network-indexer.webp)](/blog/introducing-the-network-indexer/)
 
 ### Introducing the Network Indexer
 
-Protocol Labs recently launched the first production [Network Indexer](https://filecoin.io/blog/posts/introducing-the-network-indexer/) to enable searching for content-addressable data available from storage providers, such as those on the Filecoin and IPFS networks. Storage providers can now publish the content IDs ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)s) of their data to the Network Indexer, and clients can query the Network Indexer to learn where to retrieve the content identified by those CIDs. Learn how to use a network indexer and more in this [blog post](https://filecoin.io/blog/posts/introducing-the-network-indexer/).
+Protocol Labs recently launched the first production [Network Indexer](/blog/introducing-the-network-indexer/) to enable searching for content-addressable data available from storage providers, such as those on the Filecoin and IPFS networks. Storage providers can now publish the content IDs ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)s) of their data to the Network Indexer, and clients can query the Network Indexer to learn where to retrieve the content identified by those CIDs. Learn how to use a network indexer and more in this [blog post](/blog/introducing-the-network-indexer/).
 
 ## Implementations
 
@@ -53,11 +53,11 @@ Protocol Labs recently launched the first production [Network Indexer](https://f
 
 ## Community
 
-[![](/uploads/the-economics-of-storage-providing_hu5f001c4504c1cf2d362fae7d52a9bd29_778733_2000x0_resize_q90_linear_2.webp)](https://filecoin.io/blog/posts/the-economics-of-storage-providers/)
+[![](/uploads/the-economics-of-storage-providing_hu5f001c4504c1cf2d362fae7d52a9bd29_778733_2000x0_resize_q90_linear_2.webp)](/blog/the-economics-of-storage-providers/)
 
 ### The Economics of Storage Providers
 
-Becoming a Storage Provider within the Filecoin Network is a way to participate in the preservation of humanity’s most valuable information, but it can also be a profitable endeavor. The Filecoin community is home to a fast-growing ecosystem of SPs of all sizes and geographic locations. Most of these have successfully applied different strategies and setups that have become financially sound businesses. [Read along](https://filecoin.io/blog/posts/the-economics-of-storage-providers/) and get a better understanding of how the economics of this ecosystem work.
+Becoming a Storage Provider within the Filecoin Network is a way to participate in the preservation of humanity’s most valuable information, but it can also be a profitable endeavor. The Filecoin community is home to a fast-growing ecosystem of SPs of all sizes and geographic locations. Most of these have successfully applied different strategies and setups that have become financially sound businesses. [Read along](/blog/the-economics-of-storage-providers/) and get a better understanding of how the economics of this ecosystem work.
 
 [![](/uploads/0_klbdrg86ewh29waw.webp)](https://blog.chainsafe.io/extending-metamask-a-snap-for-filecoin-692fc5998c0b)
 
@@ -79,11 +79,11 @@ Recently Tachyon and Protocol Labs hosted a Twitter Space AMA to discuss the Tac
 
 ## Tools
 
-[![](/uploads/_hu63bb858b305d92dba5869f89b7fb87e0_1260610_79032e860a310fc5d90b37d86bb677da.webp)](https://filecoin.io/blog/posts/introducing-boost-new-capabilities-for-markets-including-http-transfers-web-ui-and-more/)
+[![](/uploads/_hu63bb858b305d92dba5869f89b7fb87e0_1260610_79032e860a310fc5d90b37d86bb677da.webp)](/blog/introducing-boost-new-capabilities-for-markets-including-http-transfers-web-ui-and-more/)
 
 ### Introducing Boost: New Capabilities for Markets Including HTTP transfers, Web UI, and More
 
-Boost is a tool for storage providers to manage data storage and retrievals on Filecoin. It replaces the go-fil-markets package in Lotus with a standalone binary that runs alongside a Lotus daemon and Lotus miner. The tool also exposes libp2p interfaces for making storage and retrieval deals, a web interface for managing storage deals, and a graphql interface for accessing and updating real time deal information. Learn more about Boost in this recent [blog post](https://filecoin.io/blog/posts/introducing-boost-new-capabilities-for-markets-including-http-transfers-web-ui-and-more/).
+Boost is a tool for storage providers to manage data storage and retrievals on Filecoin. It replaces the go-fil-markets package in Lotus with a standalone binary that runs alongside a Lotus daemon and Lotus miner. The tool also exposes libp2p interfaces for making storage and retrieval deals, a web interface for managing storage deals, and a graphql interface for accessing and updating real time deal information. Learn more about Boost in this recent [blog post](/blog/introducing-boost-new-capabilities-for-markets-including-http-transfers-web-ui-and-more/).
 
 ## Events
 

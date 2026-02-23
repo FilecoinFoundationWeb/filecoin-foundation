@@ -26,7 +26,7 @@ We first invite you to ramp up quickly by watching this [two-minute introduction
 
 The [Filecoin Virtual Machine](https://fvm.filecoin.io/) (FVM) launch unlocked programmability across the Filecoin network. Now, the blockchain can be used for more than storage deals, storage proofs, and simple transactions, and EVM compatibility makes it possible to quickly deploy existing Ethereum smart contracts.
 
-Programmability represents a seismic shift for the Filecoin blockchain, which can now play host to DeFi solutions, [Data DAOs](https://filecoin.io/blog/posts/fvm-imaginarium-bringing-datadaos-to-the-next-level-with-fvm/), metaverse gaming, and much more. Think of all traditional blockchain applications that can be augmented by native storage — or think of adding processing units to the data ocean already on Filecoin. 
+Programmability represents a seismic shift for the Filecoin blockchain, which can now play host to DeFi solutions, [Data DAOs](/blog/fvm-imaginarium-bringing-datadaos-to-the-next-level-with-fvm/), metaverse gaming, and much more. Think of all traditional blockchain applications that can be augmented by native storage — or think of adding processing units to the data ocean already on Filecoin. 
 
 The forthcoming surge in activity is not without challenges. Filecoin blocks are seldom full nowadays, making for easy transactions with low fees and delays. However, as FVM activity ramps up, there will be competition for block space, increasing the cost of running applications on Filecoin. Moreover, not all applications can operate in a network with 30-second block times and the resulting latency. 
 

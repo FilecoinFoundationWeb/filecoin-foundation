@@ -24,13 +24,13 @@ At the heart of Filecoin’s appearances in Buenos Aires was [DePIN Day 2025](ht
 
 The Filecoin Onchain Cloud announcement, set against the backdrop of [a global Cloudflare outage](https://blog.cloudflare.com/18-november-2025-outage/), drew nearly 300 in-person attendees at DePIN Day, and the launch video had a cumulative reach of nearly 430K impressions and video views, signifying one of the year's most significant launches in decentralized infrastructure. 
 
-[Filecoin Onchain Cloud](https://filecoin.io/blog/posts/introducing-filecoin-onchain-cloud) is a decentralized cloud platform that brings verifiable storage, retrieval, and payments fully onchain. Built on the world’s largest decentralized storage network, Filecoin Onchain Cloud transforms core cloud functions into programmable, verifiable, and ownable services. The announcement notable launch partners and integrations, including: 
+[Filecoin Onchain Cloud](/blog/introducing-filecoin-onchain-cloud) is a decentralized cloud platform that brings verifiable storage, retrieval, and payments fully onchain. Built on the world’s largest decentralized storage network, Filecoin Onchain Cloud transforms core cloud functions into programmable, verifiable, and ownable services. The announcement notable launch partners and integrations, including: 
 
 - Ecosystem integrations, like [Ethereum Name Service](https://ens.domains/) (ENS) and [Monad](https://www.monad.xyz/); 
 - New warm storage services from [Akave](https://akave.com/) and [Storacha](https://storacha.network/); and 
 - New dApps and tools from the [AKINDO Alpha Builder Cohort](https://app.akindo.io/wave-hacks/1PRjgGzKaTqXaQBBl), like [Cha-Ching](https://cha-ching.it/) and [Filosign](https://app.filosign.xyz/). 
 
-Read the [full announcement](https://filecoin.io/blog/posts/introducing-filecoin-onchain-cloud) to learn more about the future of the cloud! 
+Read the [full announcement](/blog/introducing-filecoin-onchain-cloud) to learn more about the future of the cloud! 
 
 Additionally, The Block featured an [exclusive interview](https://www.theblock.co/post/379290/filecoin-foundation-filoz-unveil-decentralized-cloud-build-resilient-customizable-apps) with Juan Benet and Molly Mackinlay, explaining how any onchain product or service could ultimately be built on the decentralized cloud, enhancing programmability and resilience. 
 
@@ -67,7 +67,7 @@ The Future of FOC:
 
 ### Public Goods, Governance Highlights, and What’s Next 
 
-Filecoin public goods are already supported with the Filecoin RetroPGF program, rewarding past work that benefits the community and a [ProPGF program](https://filecoin.io/blog/posts/reflections-from-propgf-batch-1-what-we-learned-about-funding-impact-in-the-filecoin-ecosystem/) that awards larger sums to future public goods projects. While RetroPGF badgeholders voted on a [third round of funding](https://filecoin.drips.network/app/rpgf/rounds/fil-retropgf-3), FDS-7 attendees explored new methods for distributing FIL for public goods, including VeFIL, a proposed new network-wide way of allocating funds, with voting rights based on escrowed FIL. 
+Filecoin public goods are already supported with the Filecoin RetroPGF program, rewarding past work that benefits the community and a [ProPGF program](/blog/reflections-from-propgf-batch-1-what-we-learned-about-funding-impact-in-the-filecoin-ecosystem/) that awards larger sums to future public goods projects. While RetroPGF badgeholders voted on a [third round of funding](https://filecoin.drips.network/app/rpgf/rounds/fil-retropgf-3), FDS-7 attendees explored new methods for distributing FIL for public goods, including VeFIL, a proposed new network-wide way of allocating funds, with voting rights based on escrowed FIL. 
 
 We also heard progress reports from the Filecoin governance team’s ongoing Constellation Program, focused on strengthening participation and decision-making across the ecosystem, and from the Filecoin Incentive Design Lab’s (FIDL) plans to make Filecoin’s rich world of open datasets more accessible.
 
