@@ -47,7 +47,7 @@ _template: blog_detail_ch
 - 🚀 **新的上线日期。** 新的上线日期。我们将在今年12月11日启动测试网，然后在2020年第一季度启动主网。 可以在第三部分[路线图更新](/blog/filecoin-2019-q2-q3-update/#3-%E8%B7%AF%E7%BA%BF%E5%9B%BE%E6%9B%B4%E6%96%B0)中了解有关此内容的更多信息。
 - 🌐 **启动开发网。** 今年年初，我们为社区成员[启动了开发网络](https://github.com/filecoin-project/go-filecoin/wiki/Devnets)，以开始测试 Filecoin 网络和协议。在我们的网络统计信息中心上，我们已经看到连接到我们的测试网的节点在峰值为**500个，保证的存储容量为17PB**！对于一个非常早期的实验性网络而言，这是巨大的数字。这个网络每天都变得越来越稳定-如果有兴趣连接到我们的网络，请按照[本指南](https://github.com/filecoin-project/go-filecoin/wiki/Devnets)进行操作。
 
-📖 **开源 Filecoin 代码库。** 经过几个月的封闭开发，我们于今年初[开源了 Filecoin 代码库](https://filecoin.io/blog/opening-filecoin-project-repos/)。从此，我们看到了许多来自社区的贡献，并且每天活跃的贡献者的数量不断增长。
+📖 **开源 Filecoin 代码库。** 经过几个月的封闭开发，我们于今年初[开源了 Filecoin 代码库](/blog/opening-filecoin-project-repos/)。从此，我们看到了许多来自社区的贡献，并且每天活跃的贡献者的数量不断增长。
 
 - 🛫 **以稳定的节奏发布了多个 go-filecoin。** 启动我们的第一个开发网之后，我们开始了 go-filecoin 的更正式的[发布过程](https://github.com/filecoin-project/go-filecoin/releases)。该过程产生了4个主要版本（0.1.4、0.2.4、0.3.2、0.4.6），每个版本都有主要功能，重构和 UX 改进。有关每个版本的更多详细信息，请参见 [CHANGELOG](https://github.com/filecoin-project/go-filecoin/blob/master/CHANGELOG.md)。我们希望在以后的版本的测试阶段吸引更多的社区参与。如果想为我们提供帮助，请按照[此处](https://github.com/filecoin-project/go-filecoin/wiki/Devnets#staging-for-infra-and-pre-release-testing)操作！[_阅读更多相关内容_](/blog/filecoin-2019-q2-q3-update/##41-%E5%BC%80%E5%8F%91%E6%9B%B4%E6%96%B0--go-filecoin)
 - 💯 **预期共识的模拟和验证。** Filecoin 使用一种新颖的共识协议，称为“预期共识”。我们已经用几个月严格的安全分析和仿真建模来验证和改进我们的构造。[阅读预期共识规范中的最新构造](https://github.com/filecoin-project/consensus/tree/master/specs)。[_阅读更多相关内容_](/blog/filecoin-2019-q2-q3-update/#5-%E7%A0%94%E7%A9%B6%E6%9B%B4%E6%96%B0)
@@ -112,7 +112,7 @@ _template: blog_detail_ch
 
 - **🏇 存储市场协议的实现。** 我们要求矿工定期提交PoSt证明，以确保他们一直在正确存储客户的数据。如果发现他们有过错 - 即如果他们没有及时提交所需的信息 - 他们将受到处罚。故障处理和罚款对于确保Filecoin系统的可验证存储至关重要。我们已对延迟或不正确的PoSt提交（存储市场协议的重要部分）实施了故障处理和处罚措施。
 - **🤝 交易争议解决。** 我们使用支付渠道来让（存储和检索）客户向（存储和检索）矿工进行支付。如果存储矿工在某项存储交易中发生故障，则客户可以提出“索赔”，称该交易已被破坏。如果协议发现交易确实中断，则支付渠道将被取消，矿工的一部分资金将被削减。这种纠纷解决机制使用片段包含证明来显示特定数据是否存储在矿机上。我们实行了交易纠纷解决方案，并能够使用片段包含证明（PIPs）来取消付款渠道（有关PIPs的更多信息，请参见文章 4.2 部分 [**rust-fil-proofs** 更新](/blog/filecoin-2019-q2-q3-update/#42-%E5%BC%80%E5%8F%91%E6%9B%B4%E6%96%B0--rust-fil-proofs)）。
-- **🔗 _时空证明_的部署。** 我们已将_时空证明_(PoSt)证明过程部署到 **go-filecoin** 代码库中。矿工现在定期计算获得可继续存储的证明,并将这些证明发布到链上。一旦完成PoSt构建,部署最终的PoSt将非常简单。
+- **🔗 *时空证明*的部署。** 我们已将*时空证明*(PoSt)证明过程部署到 **go-filecoin** 代码库中。矿工现在定期计算获得可继续存储的证明,并将这些证明发布到链上。一旦完成PoSt构建,部署最终的PoSt将非常简单。
 - **🌳 网络升级。** 为了给将长期运行的 alphanet 和测试网做准备，我们一直在为顺利的网络升级奠定基础。一些实现该目标的工作包括实现能够命名网络，让节点检查网络名称以及显示协议版本的功能。
 - **🍄 数据存储迁移。** 除了保密的客户端数据外，Filecoin 节点还在磁盘上存储其他数据，例如配置，区块，交易状态和加密密钥。随着开发的进行，我们需要一种方法来安全地更改此数据的类型和架构。我们已经设计并实现了文件系统存储库迁移，以便节点在生产环境中运行时可以无缝更新。
 - **⌛ 更快的区块链同步。** 更快的区块链同步是 Filecoin 的重要软件 UX 功能。如果没有优化的区块链同步软件，则可能需要几天的时间才能检索仅1个月历史的区块链。我们的团队朝着这个目标取得了重大进展，通过 [Graphsync](https://github.com/ipfs/go-graphsync) 的IPLD DAG遍历协议实现了更快的区块链同步。
@@ -147,7 +147,7 @@ _template: blog_detail_ch
 对于Filecoin社区来说，2019年是非常重要的一年！以下是我们按时间顺序排列的一些主要社区活动。请注意，此列表并不包括我们的所有演讲和演示文稿（而是在文章下面[公开演讲和媒体](/blog/filecoin-2019-q2-q3-update/#8-%E5%85%AC%E5%85%B1%E6%BC%94%E8%AE%B2%E5%92%8C%E5%AA%92%E4%BD%93%E5%AE%A3%E4%BC%A0)部分列出）。
 
 - **🌐 启动开发网。** 今年年初，我们为社区成员[启动了开发网络](https://github.com/filecoin-project/go-filecoin/wiki/Devnets)，以开始测试 Filecoin 网络和协议。在我们的网络统计信息中心上我们经看到连接到我们的测试网的节点在峰值为500个，保证的存储容量为17PB！对于一个非常早期的实验性网络而言，这是巨大的数字。这个网络每天都变得越来越稳定-如果有兴趣连接到我们的网络，请按照[本指南](https://github.com/filecoin-project/go-filecoin/wiki/Devnets)进行操作
-- **📖 开源 Filecoin 代码库。** 经过几个月的封闭开发，我们于今年初开源了 [Filecoin 代码库](https://filecoin.io/blog/opening-filecoin-project-repos/)。从此，我们看到了许多来自社区的贡献，并且每天活跃的贡献者的数量不断增长。
+- **📖 开源 Filecoin 代码库。** 经过几个月的封闭开发，我们于今年初开源了 [Filecoin 代码库](/blog/opening-filecoin-project-repos/)。从此，我们看到了许多来自社区的贡献，并且每天活跃的贡献者的数量不断增长。
 - **💬 创建社区论坛和聊天。** 我们的社区成员正在我们的[讨论论坛](https://discuss.filecoin.io/)和[社区聊天](https://github.com/filecoin-project/community#chat)中就各种 Filecoin 主题进行对话。这些不同的沟通渠道有大约 900 个社区成员。非常感谢许多回答彼此的复杂的问题的社区成员！
 - **☎️ ️主持了我们的第一个挖矿社区电话会议。** 在2019年5月，我们举办了有史以来的首次挖矿[社区电话会议](https://www.youtube.com/watch?v=bpKKgkPmA_w)。我们收到了来自 55 个国家/地区的 1000 多个注册，与会者有大约 600 名。在电话会议中，我们提供了 Filecoin 项目的总体概述，包括 Filecoin 的价值主张，早期使用案例，路线图等。我们还提供了简短的研究更新和有关如何设置开始挖矿并参与其中的更新。我们还在电话会议上主持了实时问答，与会者提出了 180 多个问题。
 - **🗞️ 推出Filecoin新闻。** 为了响应社区对更频繁更新的要求，我们发布了一个每月简报，称为 Filecoin 新闻。到目前为止，我们已经发布了3期简报。我们听取了关于更多更新的要求，并正在努力提供更多更新。点击[订阅 Filecoin 新闻](https://filecoin.io/#community)！
@@ -156,7 +156,7 @@ _template: blog_detail_ch
 - **❤️ Filecoin开发津贴。** 我们最近启动了 [Filecoin 开发津贴计划](https://filecoin.io/grants/)！每个季度，我们将向提交有助于开发Filecoin生态系统的工作提案的团体/个人提供津贴。我们已经确定了项目提案的范围和开放津贴的类别。我们的下一个津贴截止日期是9月30日！[请立即申请](https://github.com/filecoin-project/devgrants#-how-to-apply)！
 - **🤝 合作:** 我们非常高兴能够支持一些正在进行的合作。
   - **和以太坊基金会的VDF研究。** 正如我们在[此博客文章](/blog/collaboration-with-the-ethereum-foundation-on-vdfs/)中宣布的那样，我们正在与以太坊基金会合作，共同研究VDF的硬件加速研究。尽管我们目前在Filecoin对安全性要求高的应用程序中均未使用VDF，但我们将来可能会使用。为了我们和整个行业，我们希望确保VDF易于理解和安全。
-  - **Coinlist SNARK 挑战赛。** 正如我们在[这里](https://filecoin.io/blog/announcing-the-snark-challenge/)宣布的那样，我们很荣幸赞助最近结束的Coinlist SNARK挑战赛。挑战赛的总冠军使Groth16 SNARK证明者的速度提高了3.6倍，并已将其解决方案开源（[在此](https://github.com/CodaProtocol/gpu-groth16-prover-3x)处可见）。
+  - **Coinlist SNARK 挑战赛。** 正如我们在[这里](/blog/announcing-the-snark-challenge/)宣布的那样，我们很荣幸赞助最近结束的Coinlist SNARK挑战赛。挑战赛的总冠军使Groth16 SNARK证明者的速度提高了3.6倍，并已将其解决方案开源（[在此](https://github.com/CodaProtocol/gpu-groth16-prover-3x)处可见）。
   - **斯坦福区块链中心。** 我们很荣幸能成为[斯坦福区块链中心](https://cbr.stanford.edu/sbc19/)的持续合作伙伴，包括作为今年初举行的斯坦福区块链会议的赞助商。
   - 我们已迫不及待能够通过Filecoin Research，Filecoin开发津贴计划和Filecoin Shipyard开始更多的合作！
 

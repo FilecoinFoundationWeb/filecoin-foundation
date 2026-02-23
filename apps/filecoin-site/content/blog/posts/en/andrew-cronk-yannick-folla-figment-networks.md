@@ -24,7 +24,7 @@ title: "Andrew Cronk & Yannick Folla, Figment Networks"
 _template: blog_detail
 ---
 
-_Welcome to the eighth installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network. We hope this post, as well as others in this series, inspires you to join the movement and build world-class tools for the distributed web. Check out the_ [_last post_](https://filecoin.io/blog/hackfs-teams-vol-2/) _featuring some of the teams participating in HackFS._
+_Welcome to the eighth installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network. We hope this post, as well as others in this series, inspires you to join the movement and build world-class tools for the distributed web. Check out the_ [_last post_](/blog/hackfs-teams-vol-2/) _featuring some of the teams participating in HackFS._
 
 Andrew Cronk and Yannick Folla manage product and growth for [Figment Networks](https://www.figment.io/), which provides enterprise-grade node and staking infrastructure, and developer tools for Web3 protocols. Last month, Figment Networks launched DataHub, which makes it easier for developers to leverage blockchain technologies without needing to become protocol experts.
 

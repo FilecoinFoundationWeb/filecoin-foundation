@@ -62,7 +62,7 @@ Fundamentally, this changes the paradigm of the global data storage industry. Bu
 
 Filecoin and IPFS are general purpose platforms, so the range of use cases are wide:
 
-- **Consumer use cases:** Dropbox-style platforms like [Slate](https://filecoin.io/blog/community-slate/), Space, and [ChainSafe Files](https://files.chainsafe.io/).
+- **Consumer use cases:** Dropbox-style platforms like [Slate](/blog/community-slate/), Space, and [ChainSafe Files](https://files.chainsafe.io/).
 - **NFT storage:** [Opensea](/blog/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/), Curio, [Mintgate](https://www.youtube.com/watch?v=QxJ5-nuY1NA), and Flame all use [nft.storage](http://nft.storage/).
 - **Data Markets:** projects like [Wolfram Alpha](/blog/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/), Ocean, and [Filehive](/blog/decentralized-data-markets-with-filehive/).
 - **Video:** platforms are using [Livepeer](/blog/livepeer-x-filecoin-co-mining-pilot/) and [VideoCoin](/blog/videocoin-and-filecoin-to-power-the-video-nft-market/) to transcode, store, and retrieve video files.
