@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-ethereum-community/
 author: ""
 categories:
   - updates

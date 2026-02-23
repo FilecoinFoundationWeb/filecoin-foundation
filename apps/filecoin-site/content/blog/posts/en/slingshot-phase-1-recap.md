@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/slingshot-phase-1-recap
 author: ""
 categories: []
 date: "2020-11-05T05:00:00Z"

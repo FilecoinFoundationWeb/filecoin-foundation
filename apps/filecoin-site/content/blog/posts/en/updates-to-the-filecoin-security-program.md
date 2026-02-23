@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-security-update/
 author: ""
 categories:
   - updates

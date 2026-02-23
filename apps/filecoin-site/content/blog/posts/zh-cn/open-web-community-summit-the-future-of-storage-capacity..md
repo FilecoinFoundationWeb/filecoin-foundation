@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/开放网络社区峰会-存储能力的未来
 author: ""
 categories:
   - updates

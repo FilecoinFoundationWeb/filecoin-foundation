@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/posts/filecoin-launches-collaboration-with-near-to-accelerate-the-growth-of-the-web3-stack
 author: ""
 categories:
   - updates

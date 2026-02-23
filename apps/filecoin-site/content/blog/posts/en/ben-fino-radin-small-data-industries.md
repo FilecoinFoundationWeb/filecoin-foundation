@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/community-ben-fino-radin-sdi/
 author: ""
 categories:
   - interviews

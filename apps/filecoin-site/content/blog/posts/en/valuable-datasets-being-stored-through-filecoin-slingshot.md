@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/slingshot-valuable-datasets/
 author: ""
 categories:
   - events

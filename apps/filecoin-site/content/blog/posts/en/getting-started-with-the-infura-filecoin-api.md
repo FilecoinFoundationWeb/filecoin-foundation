@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/infura-api
 author: ""
 categories:
   - updates

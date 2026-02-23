@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/miner-community-call-may-2020
 author: ""
 categories:
   - updates

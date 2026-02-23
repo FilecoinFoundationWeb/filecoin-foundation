@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/ann-filecoin-token-sale-and-new-paper/
 author: ""
 categories:
   - updates

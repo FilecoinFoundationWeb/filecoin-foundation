@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-virtual-community-meetup-recap/
 author: ""
 categories:
   - updates

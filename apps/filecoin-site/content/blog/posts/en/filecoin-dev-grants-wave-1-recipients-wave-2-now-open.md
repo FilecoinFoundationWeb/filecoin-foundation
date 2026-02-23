@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-dev-grants-wave-1-recipients-and-new-wave2-rfps/
 author: ""
 categories:
   - updates

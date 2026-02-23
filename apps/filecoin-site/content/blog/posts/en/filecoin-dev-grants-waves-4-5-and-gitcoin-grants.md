@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-dev-grants-wave-4-5-gitcoin
 author: ""
 categories:
   - updates

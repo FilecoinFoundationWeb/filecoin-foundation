@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/上海区块链周活动中的亮点
 author: Filecoin Project
 categories:
   - updates

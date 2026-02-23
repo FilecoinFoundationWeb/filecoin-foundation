@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/测试网第二阶段的更新
-  - /zh-cn/blog/testnet-phase-2-update
 author: ""
 categories:
   - updates

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/participate-in-our-trusted-setup-ceremony/
 author: ""
 categories:
   - updates

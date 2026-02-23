@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/回顾启动周第三天-区块链生态的圣杯
 author: Filecoin Project
 categories:
   - updates

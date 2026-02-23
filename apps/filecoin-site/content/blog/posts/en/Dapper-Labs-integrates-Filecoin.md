@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/posts/filecoin-launches-collaboration-with-dapper-labs-to-propel-the-future-of-the-nft-and-gaming-metaverse
 author: ""
 categories:
   - updates

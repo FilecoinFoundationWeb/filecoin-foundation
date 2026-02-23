@@ -1,6 +1,4 @@
 ---
-aliases:
-  - blog/filecoin-circulating-supply
 author: ""
 categories: []
 date: "2020-12-10T05:00:00Z"

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/proof-of-replication-power-fault-tolerance-research-roadmap/
 author: ""
 categories:
   - updates

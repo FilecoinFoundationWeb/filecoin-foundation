@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Caitlin Moore
 categories:
   - updates

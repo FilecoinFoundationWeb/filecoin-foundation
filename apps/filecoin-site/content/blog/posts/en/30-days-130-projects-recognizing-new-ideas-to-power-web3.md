@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/hackfs-finale/
 author: ""
 categories: []
 date: "2020-08-19T06:00:00Z"

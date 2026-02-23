@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/meet-the-slingshot-teams/
 author: ""
 categories:
   - updates

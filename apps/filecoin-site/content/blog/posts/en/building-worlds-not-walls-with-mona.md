@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories: []
 date: "2022-05-03T04:00:00Z"

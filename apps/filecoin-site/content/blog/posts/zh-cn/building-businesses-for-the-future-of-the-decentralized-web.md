@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/为去中心化网络的未来创造商业形态
 author: ""
 categories:
   - updates

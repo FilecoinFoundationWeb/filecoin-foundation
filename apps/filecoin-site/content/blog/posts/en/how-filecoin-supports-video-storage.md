@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/mainnet-liftoff-video-storage/
 author: ""
 categories:
   - events

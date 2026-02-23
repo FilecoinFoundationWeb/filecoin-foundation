@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Crystal Mills
 categories:
   - updates

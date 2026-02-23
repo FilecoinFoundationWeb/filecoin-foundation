@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/连接Filecoin与以太坊社区"
 author: Filecoin Project
 categories:
   - updates

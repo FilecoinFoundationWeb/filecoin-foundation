@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/hackfs-next/
 author: ""
 categories:
   - updates

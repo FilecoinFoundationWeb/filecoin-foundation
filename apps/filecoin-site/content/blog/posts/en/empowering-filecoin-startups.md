@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/empowering-filecoin-startups
 author: ""
 categories:
   - updates

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/one-exbibyte
 author: ""
 categories:
   - updates

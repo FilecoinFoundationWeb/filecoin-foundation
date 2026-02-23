@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/mainnet-liftoff-week/
 author: ""
 categories:
   - events

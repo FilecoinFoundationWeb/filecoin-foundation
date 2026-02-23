@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/Filecoin存储挖矿指南
-  - /zh-cn/blog/filecoin-guide-to-storage-mining
 author: ""
 categories:
   - updates

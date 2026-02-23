@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/introducing-the-filecoin-economy/
 author: ""
 categories:
   - updates

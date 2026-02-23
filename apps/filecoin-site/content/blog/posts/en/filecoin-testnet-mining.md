@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-testnet-mining/
 author: ""
 categories:
   - updates

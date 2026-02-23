@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/sale-delayed-until-aug-10/
 author: ""
 categories:
   - updates

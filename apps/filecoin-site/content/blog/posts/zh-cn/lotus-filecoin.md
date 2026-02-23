@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/announcing-lotus
 author: ""
 categories:
   - updates

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-liftoff-ama/
 author: ""
 categories:
   - events

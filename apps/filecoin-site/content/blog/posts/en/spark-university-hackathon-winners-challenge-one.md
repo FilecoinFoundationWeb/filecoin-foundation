@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/spark-challenge-one/
 author: ""
 categories: []
 date: "2020-09-08T06:00:00Z"

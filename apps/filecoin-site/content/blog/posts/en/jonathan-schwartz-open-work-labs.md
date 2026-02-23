@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/community-jonathan-schwartz-owl/
 author: ""
 categories:
   - interviews

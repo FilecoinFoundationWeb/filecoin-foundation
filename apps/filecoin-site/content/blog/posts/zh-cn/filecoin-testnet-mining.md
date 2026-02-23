@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/Filecoin-测试网挖矿
-  - /zh-cn/blog/filecoin-testnet-mining
 author: ""
 categories:
   - updates

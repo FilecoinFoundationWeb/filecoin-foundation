@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/Filecoin测试网第二阶段现已启动!
-  - /zh-cn/blog/filecoin-testnet-phase-2-is-here
 author: ""
 categories:
   - updates

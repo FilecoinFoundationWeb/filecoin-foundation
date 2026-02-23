@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/journey-to-liftoff/
 author: ""
 categories:
   - updates

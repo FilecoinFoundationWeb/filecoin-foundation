@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/filecoin-liftoff-ama
 author: ""
 categories:
   - updates

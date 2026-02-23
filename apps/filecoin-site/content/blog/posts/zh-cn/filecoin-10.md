@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/filecoin-guide-to-storage-mining
 author: ""
 categories:
   - updates

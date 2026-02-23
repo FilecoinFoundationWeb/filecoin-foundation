@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/ignite-more-ways-to-build/
 author: ""
 categories:
   - updates

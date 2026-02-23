@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/token-sale-updated-date/
 author: ""
 categories:
   - updates

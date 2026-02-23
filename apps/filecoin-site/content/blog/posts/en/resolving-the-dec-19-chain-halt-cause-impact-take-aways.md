@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/resolving-the-chain-halt
 author: ""
 categories:
   - updates

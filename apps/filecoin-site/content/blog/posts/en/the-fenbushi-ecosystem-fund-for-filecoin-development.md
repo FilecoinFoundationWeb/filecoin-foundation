@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/fenbushi-ecosystem-fund
 author: ""
 categories:
   - updates

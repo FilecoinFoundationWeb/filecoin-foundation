@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /case-studies/starlinglab
-  - /case-studies
 author: ""
 categories:
   - updates

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-frontier-accelerator/
 author: ""
 categories:
   - updates

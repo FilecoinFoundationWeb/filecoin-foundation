@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/欢迎来到太空竞赛
-  - /zh-cn/blog/welcome-to-space-race
 author: ""
 categories:
   - updates

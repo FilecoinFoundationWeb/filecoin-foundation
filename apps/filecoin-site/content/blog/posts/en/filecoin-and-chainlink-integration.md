@@ -1,7 +1,4 @@
 ---
-aliases:
-  - >-
-    /blog/posts/filecoin-and-chainlink-integration-to-bring-advanced-decentralized-storage-solutions-to-web-3.0-developers/
 author: ""
 categories:
   - updates

@@ -1,7 +1,4 @@
 ---
-aliases:
-  - >-
-    /blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-3-10x-increase-in-storage-onboarding
 author: ""
 categories:
   - updates

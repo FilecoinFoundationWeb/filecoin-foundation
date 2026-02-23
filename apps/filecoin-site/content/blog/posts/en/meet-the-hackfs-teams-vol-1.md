@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/meet-the-hackfs-teams-vol-1/
 author: ""
 categories:
   - updates

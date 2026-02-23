@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/china-antifraud/
 author: ""
 categories:
   - updates

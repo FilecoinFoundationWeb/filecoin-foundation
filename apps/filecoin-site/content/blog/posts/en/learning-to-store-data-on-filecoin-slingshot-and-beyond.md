@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/slingshot-and-beyond/
 author: ""
 categories:
   - events

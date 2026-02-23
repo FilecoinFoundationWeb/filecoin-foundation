@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/getting-started-with-filecoin-repos-and-devnets/
 author: ""
 categories:
   - updates

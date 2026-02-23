@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Patrick Woodhead
 categories: []
 date: "2022-07-18T22:00:00Z"

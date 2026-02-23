@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/六月问答总结
-  - /zh-cn/blog/june-q-and-a-summary
 author: ""
 categories:
   - updates

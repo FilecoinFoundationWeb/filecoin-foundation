@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/storage-market-summit
 author: ""
 categories: []
 date: "2020-12-15T05:00:00Z"

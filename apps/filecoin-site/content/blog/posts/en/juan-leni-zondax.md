@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/community-juan-leni-zondax/
 author: ""
 categories:
   - interviews

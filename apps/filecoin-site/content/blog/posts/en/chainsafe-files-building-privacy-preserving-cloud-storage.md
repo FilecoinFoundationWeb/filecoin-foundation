@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Thibaut Sardan
 categories:
   - updates

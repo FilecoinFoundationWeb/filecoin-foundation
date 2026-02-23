@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/mainnet-ignition/
 author: ""
 categories:
   - updates

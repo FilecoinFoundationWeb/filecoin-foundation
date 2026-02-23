@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-implementation-update/
 author: ""
 categories:
   - updates

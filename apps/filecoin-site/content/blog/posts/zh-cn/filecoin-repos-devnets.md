@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/opening-filecoin-project-repos
 author: ""
 categories:
   - updates

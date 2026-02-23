@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/why-is-decentralized-critical/
 author: ""
 categories:
   - updates

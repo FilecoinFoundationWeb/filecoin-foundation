@@ -1,7 +1,4 @@
 ---
-aliases:
-  - >-
-    /blog/posts/introducing-web3.storage-the-easiest-way-to-store-data-on-filecoin/
 author: ""
 categories:
   - updates
