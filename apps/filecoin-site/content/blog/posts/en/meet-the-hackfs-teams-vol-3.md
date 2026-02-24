@@ -30,7 +30,7 @@ HackFS, a month-long hackathon co-hosted by Protocol Labs and ETH Global, is des
 
 ## Team: [coeo](https://github.com/coeo)
 
-![coeo](https://filecoin.io/blog/hfs-coeo.png)
+![coeo](/blog/hfs-coeo.png)
 
 **Team members:** Yalda Mousavinia, Ola Kohut, and Peter Phillips
 
@@ -48,7 +48,7 @@ We plan to use [Semaphore](https://github.com/appliedzkp/semaphore) for anonymou
 
 ## Team: [IPFS.FPS](https://ipfs-fps.on.fleek.co/)
 
-![IPFS.FPS](https://filecoin.io/blog/hfs-ipfsfps-1.png)
+![IPFS.FPS](/blog/hfs-ipfsfps-1.png)
 
 **Team Members:** Leon Do and Randy Daniel
 
@@ -58,7 +58,7 @@ We plan to use [Semaphore](https://github.com/appliedzkp/semaphore) for anonymou
 
 Currently, on our website, we use [Fleek](https://fleek.co/). We built the game on Unity, exported it out, and saved it on GitHub. There’s a hook in our GitHub account, so whenever we make updates to GitHub, we would update their side. That’s where Fleek, which is built on IPFS, comes in. And then there’s [Unstoppable Domains](https://unstoppabledomains.com/).
 
-![IPFS.FPS](https://filecoin.io/blog/hfs-ipfsfps-2.png) ![IPFS.FPS](https://filecoin.io/blog/hfs-ipfsfps-3.png)
+![IPFS.FPS](/blog/hfs-ipfsfps-2.png) ![IPFS.FPS](/blog/hfs-ipfsfps-3.png)
 
 We have the domain IPFS.FPS.zil, which is an easy way to go to our site. Then we use [Pinata](https://pinata.cloud/) for metatags. That’s a little hack that we realized we can use – when you share a link, it has a picture of a name or a screenshot – and that metadata is from Pinata.
 
@@ -74,7 +74,7 @@ When we started building our game, the first background music we used was kind o
 
 ## Team: [Sailplane](https://cypsela.github.io/sailplane-web/#/)
 
-![IPFS.FPS](https://filecoin.io/blog/hfs-sailplane.png)
+![IPFS.FPS](/blog/hfs-sailplane.png)
 
 **Team Members:** Steve Dakh, Anders “Tabcat” Bjerg
 

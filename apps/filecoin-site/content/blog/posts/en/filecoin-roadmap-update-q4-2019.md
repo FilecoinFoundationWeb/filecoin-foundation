@@ -27,7 +27,7 @@ _template: blog_detail
 
 In this post, we share what’s next on our roadmap and a tool you can use to follow milestone timing estimates.
 
-As we announced in [this blog post](https://filecoin.io/blog/filecoin-testnet-is-live), we launched the Filecoin testnet ([on schedule](/blog/filecoin-2019-q2-q3-update/#1-launches-testnet-on-dec-11-mainnet-in-2020-q1)!) and are now in a period of significant testing, benchmarking, and optimizations. The purpose of the testnet is to evaluate Filecoin at meaningful scale and fix any bugs so we can ensure a secure, performant, and interoperable mainnet. Read more about the testnet launch and how to participate in making this network successful [in our blog post](/blog/filecoin-testnet-is-live).
+As we announced in [this blog post](/blog/filecoin-testnet-is-live), we launched the Filecoin testnet ([on schedule](/blog/filecoin-2019-q2-q3-update/#1-launches-testnet-on-dec-11-mainnet-in-2020-q1)!) and are now in a period of significant testing, benchmarking, and optimizations. The purpose of the testnet is to evaluate Filecoin at meaningful scale and fix any bugs so we can ensure a secure, performant, and interoperable mainnet. Read more about the testnet launch and how to participate in making this network successful [in our blog post](/blog/filecoin-testnet-is-live).
 
 We have updated our [public roadmap document](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#). In rough terms, this is where we are (these phases are not equally long).
 

@@ -46,7 +46,7 @@ SP参与存储与检索交易的能力与其运作能力同样重要。存储与
 
 ## 存储提供者相关数据
 
-主网上线以来，Filecoin Network面向用户的[存储力](https://filecoin.io/blog/filecoin-guide-to-storage-mining/#storage-power)稳步提升。SP数量已达3,876，其中头部SP提供了147.65 PiB存储空间。目前网络总存储力超过[15.6](https://dashboard.starboard.ventures/storage) EiB。
+主网上线以来，Filecoin Network面向用户的[存储力](/blog/filecoin-guide-to-storage-mining/#storage-power)稳步提升。SP数量已达3,876，其中头部SP提供了147.65 PiB存储空间。目前网络总存储力超过[15.6](https://dashboard.starboard.ventures/storage) EiB。
 
 ![](/uploads/image6.webp)*过去一年Filecoin的存储力增长情况 （来源：* [*https://filscan.io/statistics/power*](https://filscan.io/statistics/power "https://filscan.io/statistics/power")*）*
 

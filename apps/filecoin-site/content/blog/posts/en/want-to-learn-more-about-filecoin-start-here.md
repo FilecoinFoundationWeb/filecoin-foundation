@@ -144,9 +144,9 @@ _Length: 1 hour_
 
 - [Distributed Randomness & Leader Elections](/blog/filecoin-features-distributed-randomness-leader-elections/)
 - [Filecoin’s Proof System](/blog/what-sets-us-apart-filecoin-s-proof-system/)
-- [Tipsets - A closer look at Filecoin building blocks](https://filecoin.io/blog/tipsets-family-based-approach-to-consensus/)
+- [Tipsets - A closer look at Filecoin building blocks](/blog/tipsets-family-based-approach-to-consensus/)
 - [Filecoin’s Verifiable Storage](/blog/filecoin-features-verifiable-storage/)
-- [Offline Data Transfer for Large-Scale Data](https://filecoin.io/blog/offline-data-transfer-for-large-scale-data/) and [Preserving Critical Data with Filecoin Discover](https://www.youtube.com/watch?v=UXmQfnwzhtQ)
+- [Offline Data Transfer for Large-Scale Data](/blog/offline-data-transfer-for-large-scale-data/) and [Preserving Critical Data with Filecoin Discover](https://www.youtube.com/watch?v=UXmQfnwzhtQ)
 - [ProtoSchool: Anatomy of a Content Identifier (CID)](https://proto.school/anatomy-of-a-cid)
 - [How to build a Filecoin Network Inspector using React, lotus, and go-ipfs](https://www.youtube.com/watch?v=lkx2Z3T649Y)
 - [Protoschool’s Verifying Storage on Filecoin](https://proto.school/verifying-storage-on-filecoin)

@@ -30,7 +30,7 @@ Last week we [highlighted](/blog/meet-the-hackfs-teams-vol-1/) OMO Earth, Pygate
 
 ## Team: [Kazan](https://github.com/samikshan/kazan)
 
-![Kazan](https://filecoin.io/blog/hfs-kazan.png)
+![Kazan](/blog/hfs-kazan.png)
 
 > "If I play guitar and put out a track, someone else can add drums, and another person can add vocals, and the collaboration goes on and on. The possibilities are endless."
 >
@@ -62,7 +62,7 @@ Initially, we didn’t intend to build this exclusively for crypto payroll. But 
 
 ## Team: [EduVault](https://github.com/eduvault)
 
-![EduVault](https://filecoin.io/blog/hfs-eduvault.png)
+![EduVault](/blog/hfs-eduvault.png)
 
 **Team members:** Jacob Cohen-Rosenthal, Aqeel Mohammad, Monica Kumaran, and Brian Schwartz
 
@@ -72,7 +72,7 @@ Today, many of the online platforms we use, including EdTech platforms, collect 
 
 Ultimately, with EduVault, you’ll be able to bring your data with you between apps, and sync the information between education apps. This interoperability could unlock powerful new use cases and create better learning experiences.
 
-![Eduvault MVP](https://filecoin.io/blog/hfs-eduvault-mvp.png)
+![Eduvault MVP](/blog/hfs-eduvault-mvp.png)
 
 Until now, it was very difficult to build a cloud that was private. To truly own your own data you need two things: access control and availability. Access control is achievable by having your data encrypted. Availability means that no one else can take down your data. For example, you could encrypt your database and put it on a centralized cloud storage service, but that service could one day restrict your access.
 

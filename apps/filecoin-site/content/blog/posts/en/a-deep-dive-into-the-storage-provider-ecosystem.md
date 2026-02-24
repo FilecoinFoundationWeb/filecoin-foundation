@@ -45,7 +45,7 @@ Altogether, SPs form the basis of Filecoin’s decentralized storage marketplace
 
 ## Storage Provider Statistics
 
-Since mainnet launch, the Filecoin Network has continued to grow steadily in terms of the [Storage Power](https://filecoin.io/blog/filecoin-guide-to-storage-mining/#storage-power) that is available to users. The number of SPs has reached 3,876 with the largest of these providing up to 147.65 PiB in onboarded storage space. They make a total of over [15.6](https://dashboard.starboard.ventures/storage) EiB of storage available to the network.
+Since mainnet launch, the Filecoin Network has continued to grow steadily in terms of the [Storage Power](/blog/filecoin-guide-to-storage-mining/#storage-power) that is available to users. The number of SPs has reached 3,876 with the largest of these providing up to 147.65 PiB in onboarded storage space. They make a total of over [15.6](https://dashboard.starboard.ventures/storage) EiB of storage available to the network.
 
 ![](/uploads/image6.webp)_Increase in Filecoin’s Storage Power over the past year (source:_ [_https://filscan.io/statistics/power_](https://filscan.io/statistics/power "https://filscan.io/statistics/power")_)_
 

@@ -62,7 +62,7 @@ _“还没有开始反思数据存储的公司，算不上Web3初创公司。”
 
 Filecoin和IPFS是通用平台，应用案例范围广阔：
 
-- **消费者应用:** Dropbox型平台，比如[Slate](https://filecoin.io/blog/community-slate/)，Space，[ChainSafe Files](https://files.chainsafe.io/).
+- **消费者应用:** Dropbox型平台，比如[Slate](/blog/community-slate/)，Space，[ChainSafe Files](https://files.chainsafe.io/).
 - **NFT存储:** [Opensea](/blog/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)，Curio，[Mintgate](https://www.youtube.com/watch?v=QxJ5-nuY1NA)和Flame均使用[nft.storage](http://nft.storage/).
 - **数据市场:** 如[Wolfram Alpha](/blog/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/)， Ocean，和[Filehive](/blog/decentralized-data-markets-with-filehive/)等项目。
 - **视频:** 平台可运用[Livepeer](/blog/livepeer-x-filecoin-co-mining-pilot/) 和[VideoCoin](/blog/videocoin-and-filecoin-to-power-the-video-nft-market/)进行视频文件转码、存储和检索。
