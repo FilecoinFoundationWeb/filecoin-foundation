@@ -197,12 +197,14 @@
       "nv27": {
         "title": "NV27 Golden Week",
         "description": "此次升级提供了协议清理和增强功能，包括 Filecoin 以太坊虚拟机 (FEVM) 的密码学预编译、直接数据上链的智能合约通知、Filecoin 快速最终性 (F3) 兼容的快照格式，以及存储提供商 (SP) 创建的新质押要求。",
-        "cta": "阅读 NV27 升级概述"
+        "cta": "阅读 NV27 升级概述",
+        "alt": "Filecoin 网络升级公告：NV27 Golden Week，金色纹理背景。"
       },
       "nv28": {
         "title": "NV28 即将到来",
         "description": "NV28 预计将带来持续的协议改进和生态增强，重点关注核心网络运营、开发者体验和存储提供商功能，同时支持 Filecoin 在可扩展性和安全性方面的更广泛路线图。",
-        "cta": "查看 NV28 升级讨论"
+        "cta": "查看 NV28 升级讨论",
+        "alt": "Filecoin 网络升级公告：NV28，宇宙背景。"
       }
     },
     "latestNews": {

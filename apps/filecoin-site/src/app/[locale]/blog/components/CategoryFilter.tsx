@@ -4,11 +4,13 @@ import { useTranslations } from 'next-intl'
 
 import { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter/constants'
 
+import { PATHS } from '@/constants/paths'
+
 import { blogCategories } from '../data/blogCategories'
 import { useCategoryState } from '../hooks/useCategoryState'
 
 export function CategoryFilter() {
-  const t = useTranslations('/blog')
+  const t = useTranslations(PATHS.BLOG.path)
   const [selectedCategory, setSelectedCategory] = useCategoryState()
 
   return (
@@ -25,7 +27,7 @@ export function CategoryFilter() {
           <button
             key={id}
             aria-pressed={isActive}
-            className="focus:brand-outline cursor-pointer text-[var(--color-paragraph-text)] hover:text-[var(--color-text-base)] aria-pressed:text-[var(--color-text-base)]"
+            className="focus:brand-outline cursor-pointer text-(--color-paragraph-text) hover:text-(--color-text-base) aria-pressed:text-(--color-text-base)"
             aria-label={
               id === DEFAULT_FILTER_ID
                 ? t('categoryFilter.viewAllAriaLabel')

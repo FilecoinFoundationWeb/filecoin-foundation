@@ -26,7 +26,7 @@ export function getNetworkUpgrades(t: TranslationFunction) {
       },
       image: {
         src: nv27GoldenWeekImage,
-        alt: 'Filecoin Network Upgrade announcement for nv27 Golden Week, with gold-texture background artwork.',
+        alt: t('networkUpgrades.nv27.alt'),
       },
     },
     {
@@ -40,7 +40,7 @@ export function getNetworkUpgrades(t: TranslationFunction) {
       },
       image: {
         src: nv28GoldenWeekImage,
-        alt: 'Filecoin Network Upgrade announcement for nv28, with cosmic background artwork.',
+        alt: t('networkUpgrades.nv28.alt'),
       },
     },
   ] satisfies Array<NetworkUpgrade>

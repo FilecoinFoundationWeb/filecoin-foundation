@@ -35,7 +35,9 @@ export default async function BlogPost({ params }: BlogPostProps) {
   const { image, categories, author, publishedOn, title, content } = data
 
   const t = await getTranslations(PATHS.BLOG.path)
-  const translatedCategories = categories.map((cat) => t(`categories.${cat}`))
+  const translatedCategories = categories.map((category) =>
+    t(`categories.${category}`),
+  )
 
   return (
     <>

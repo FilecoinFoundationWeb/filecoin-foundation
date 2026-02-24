@@ -14,11 +14,13 @@ import { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter/constant
 import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/Section'
 
+import { PATHS } from '@/constants/paths'
+
 import { blogCategories, type BlogCategoryKey } from '../data/blogCategories'
 import { useCategoryState } from '../hooks/useCategoryState'
 
 export function CategoryListbox() {
-  const t = useTranslations('/blog')
+  const t = useTranslations(PATHS.BLOG.path)
   const [selectedCategory, setSelectedCategory] = useCategoryState()
 
   function getCategoryDisplayName(categoryId: BlogCategoryKey) {
