@@ -1,5 +1,7 @@
 import { FILECOIN_FOUNDATION_URL } from '@/constants/siteMetadata'
 
+import type { TranslationFunction } from '@/i18n/types'
+
 import ANSALogo from '@/assets/logos/ansa-logo.svg'
 import FIDLLogo from '@/assets/logos/fidl-logo.png'
 import FilBLogo from '@/assets/logos/fil-b-logo.png'
@@ -9,85 +11,85 @@ import PolarisLogo from '@/assets/logos/polaris-logo.png'
 
 import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 
-const CTA_TEXT = 'Visit website'
-
-export const ecosystemGroups = [
-  {
-    title: 'Filecoin Foundation',
-    description: 'Network governance, Filecoin Plus, and grants.',
-    logo: {
-      type: 'svg',
-      src: FilecoinFoundationIconLogo,
-      bgColor: '#08072E',
+export function getEcosystemGroups(t: TranslationFunction) {
+  return [
+    {
+      title: 'Filecoin Foundation',
+      description: t('ecosystemGroups.filecoinFoundation.description'),
+      logo: {
+        type: 'svg',
+        src: FilecoinFoundationIconLogo,
+        bgColor: '#08072E',
+      },
+      cta: {
+        href: FILECOIN_FOUNDATION_URL,
+        text: t('ecosystemGroups.visitWebsite'),
+      },
     },
-    cta: {
-      href: FILECOIN_FOUNDATION_URL,
-      text: CTA_TEXT,
+    {
+      title: 'FilOz',
+      description: t('ecosystemGroups.filOz.description'),
+      logo: {
+        type: 'svg',
+        src: FilOzLogo,
+        bgColor: '#0090FF',
+      },
+      cta: {
+        href: 'https://www.filoz.org/',
+        text: t('ecosystemGroups.visitWebsite'),
+      },
     },
-  },
-  {
-    title: 'FilOz',
-    description: 'Core software development.',
-    logo: {
-      type: 'svg',
-      src: FilOzLogo,
-      bgColor: '#0090FF',
+    {
+      title: 'Polaris',
+      description: t('ecosystemGroups.polaris.description'),
+      logo: {
+        type: 'image',
+        src: PolarisLogo,
+        bgColor: '#fff',
+      },
+      cta: {
+        href: 'https://directory.plnetwork.io/teams/clz1ls1gr0003xl02n5lpvbhn',
+        text: t('ecosystemGroups.visitWebsite'),
+      },
     },
-    cta: {
-      href: 'https://www.filoz.org/',
-      text: CTA_TEXT,
+    {
+      title: 'Fil-B',
+      description: t('ecosystemGroups.filB.description'),
+      logo: {
+        type: 'image',
+        src: FilBLogo,
+        bgColor: '#FAFAFA',
+      },
+      cta: {
+        href: 'https://fil.builders',
+        text: t('ecosystemGroups.visitWebsite'),
+      },
     },
-  },
-  {
-    title: 'Polaris',
-    description: 'Protocol Labs dev guild and hackathons.',
-    logo: {
-      type: 'image',
-      src: PolarisLogo,
-      bgColor: '#fff',
+    {
+      title: 'FIDL',
+      description: t('ecosystemGroups.fidl.description'),
+      logo: {
+        type: 'image',
+        src: FIDLLogo,
+        bgColor: '#000',
+      },
+      cta: {
+        href: 'https://www.fidl.tech/',
+        text: t('ecosystemGroups.visitWebsite'),
+      },
     },
-    cta: {
-      href: 'https://directory.plnetwork.io/teams/clz1ls1gr0003xl02n5lpvbhn',
-      text: CTA_TEXT,
+    {
+      title: 'ANSA',
+      description: t('ecosystemGroups.ansa.description'),
+      logo: {
+        type: 'svg',
+        src: ANSALogo,
+        bgColor: '#F5F4F2',
+      },
+      cta: {
+        href: 'https://ansaresearch.ai/',
+        text: t('ecosystemGroups.visitWebsite'),
+      },
     },
-  },
-  {
-    title: 'Fil-B',
-    description: 'Builder community and education.',
-    logo: {
-      type: 'image',
-      src: FilBLogo,
-      bgColor: '#FAFAFA',
-    },
-    cta: {
-      href: 'https://fil.builders',
-      text: CTA_TEXT,
-    },
-  },
-  {
-    title: 'FIDL',
-    description: 'Research and protocol design.',
-    logo: {
-      type: 'image',
-      src: FIDLLogo,
-      bgColor: '#000',
-    },
-    cta: {
-      href: 'https://www.fidl.tech/',
-      text: CTA_TEXT,
-    },
-  },
-  {
-    title: 'ANSA',
-    description: 'Applied research and ecosystem growth.',
-    logo: {
-      type: 'svg',
-      src: ANSALogo,
-      bgColor: '#F5F4F2',
-    },
-    cta: {
-      href: 'https://ansaresearch.ai/',
-      text: CTA_TEXT,
-    },
-  },
-] as const satisfies Array<SimpleCardWithLogoProps>
+  ] as const satisfies Array<SimpleCardWithLogoProps>
+}

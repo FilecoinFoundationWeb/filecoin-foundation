@@ -7,13 +7,19 @@ import { MagnifyingGlassIcon, XIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { Icon } from './Icon'
 
-type SearchInputProps = {
+export type SearchInputProps = {
   value: string
   onChange: (value: string) => void
   disabled?: boolean
+  placeholder?: string
 }
 
-export function SearchInput({ value, onChange, disabled }: SearchInputProps) {
+export function SearchInput({
+  value,
+  onChange,
+  disabled,
+  placeholder = 'Search',
+}: SearchInputProps) {
   const inputRef = useRef<HTMLInputElement>(null)
 
   return (
@@ -23,7 +29,7 @@ export function SearchInput({ value, onChange, disabled }: SearchInputProps) {
         <Input
           ref={inputRef}
           className="focus:brand-outline peer block w-full rounded-lg border border-(--input-border-color) px-12 py-3 placeholder:text-(--input-placeholder-color) [&::-webkit-search-cancel-button]:appearance-none"
-          placeholder="Search"
+          placeholder={placeholder}
           type="search"
           value={value}
           disabled={disabled}

@@ -20,7 +20,7 @@ import { PostMetadata } from './PostMetadata'
 export type BlogCardProps = {
   title: BlogPost['title']
   slug: BlogPost['slug']
-  tags: BlogPost['categories']
+  tags: Array<string>
   description: BlogPost['excerpt']
   image?: CardImageProps
   author?: BlogPost['author']

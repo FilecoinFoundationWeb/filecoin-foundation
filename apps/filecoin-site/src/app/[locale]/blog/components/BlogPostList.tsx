@@ -3,6 +3,7 @@
 import { useSearchParams } from 'next/navigation'
 
 import { MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr'
+import { useTranslations } from 'next-intl'
 
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
@@ -34,6 +35,7 @@ const BLOG_POSTS_PER_PAGE = 12
 const PAGINATION_INDEX_MAX_RANGE = 6
 
 export function BlogPostList({ posts }: BlogPostListProps) {
+  const t = useTranslations('/blog')
   const clientSearchParams = useSearchParams()
   const searchParams = Object.fromEntries(clientSearchParams.entries())
 
@@ -62,7 +64,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
       <div className="flex flex-col gap-10">
         <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-center lg:gap-10 xl:gap-20">
           <div className="max-w flex-1">
-            <Search />
+            <Search placeholder={t('search.placeholder')} />
           </div>
 
           <div className="flex items-baseline gap-5">
@@ -103,7 +105,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
                   description={excerpt}
                   author={author}
                   date={publishedOn}
-                  tags={categories}
+                  tags={categories.map((cat) => t(`categories.${cat}`))}
                   image={
                     image && {
                       src: image.url,
@@ -125,9 +127,9 @@ export function BlogPostList({ posts }: BlogPostListProps) {
       ) : (
         <EmptyStateCard
           icon={MagnifyingGlassIcon}
-          title="No results found"
+          title={t('emptyState.title')}
           titleTag="h3"
-          description="Try changing your search query or category filter."
+          description={t('emptyState.description')}
         />
       )}
     </div>

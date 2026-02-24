@@ -5,17 +5,20 @@ import { PATHS } from '@/constants/paths'
 
 import { generatePageStructuredData } from '@/utils/generatePageStructuredData'
 
-import { filecoinFeatures } from '../data/filecoinFeatures'
+type Feature = {
+  title: string
+}
 
 export function generateStructuredData(
   seo: StructuredDataParams,
+  features: Array<Feature>,
 ): WebPageGraph {
   return generatePageStructuredData({
     title: seo.title,
     description: seo.description,
     path: PATHS.BUILD_ON_FILECOIN.path,
     pageType: 'CollectionPage',
-    about: filecoinFeatures.map((feature) => ({
+    about: features.map((feature) => ({
       '@type': 'Thing',
       name: feature.title,
     })),

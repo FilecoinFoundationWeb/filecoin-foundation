@@ -1,7 +1,7 @@
 import { routing } from '@/i18n/routing'
 import type { LocaleParams } from '@/i18n/types'
 
-import { setRequestLocale } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { MarkdownContent } from '@filecoin-foundation/ui-filecoin/Markdown/MarkdownContent'
@@ -34,6 +34,11 @@ export default async function BlogPost({ params }: BlogPostProps) {
   const data = await getBlogPostData(slug, locale)
   const { image, categories, author, publishedOn, title, content } = data
 
+  const t = await getTranslations(PATHS.BLOG.path)
+  const translatedCategories = categories.map((category) =>
+    t(`categories.${category}`),
+  )
+
   return (
     <>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
@@ -42,7 +47,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
         <div className="mx-auto max-w-3xl">
           <BlogPostHeader
             title={title}
-            categories={categories}
+            categories={translatedCategories}
             author={author}
             date={publishedOn}
             slug={slug}

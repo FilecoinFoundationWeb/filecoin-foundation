@@ -4,6 +4,8 @@ import type { LocaleParams } from '@/i18n/types'
 
 import type { Metadata } from 'next'
 
+import { getTranslations } from 'next-intl/server'
+
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
@@ -33,6 +35,7 @@ export default async function Blog({ params }: BlogProps) {
   const sortedPosts = sortPostsByDateDesc(posts)
   const featuredPost = sortedPosts[0]
 
+  const t = await getTranslations(PATHS.BLOG.path)
   const metadata = await getTranslatedMetadata(PATHS.BLOG.path)
 
   return (
@@ -51,6 +54,8 @@ export default async function Blog({ params }: BlogProps) {
             src: featuredPost.image?.url || graphicsData.fallback.data.src,
             alt: '',
           }}
+          badgeText={t('featuredPost.badge')}
+          ctaText={t('featuredPost.cta')}
         />
       </PageSection>
 
