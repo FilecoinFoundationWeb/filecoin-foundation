@@ -35,7 +35,7 @@ On August 18, ten finalists demonstrated their projects live in front of a panel
 
 Sailplane is a peer-to-peer file storage service, similar to Dropbox, in a web app using IPFS and OrbitDB. It uses IPFS and a custom OrbitDB store for file metadata and other file management functionality. The front-end is built on React.js and has a custom browser-based user interface.
 
-Sailplane uses IPFS to store, send, and reference data. A custom OrbitDB store takes output from IPFS and creates a mutable file system-like structure from it. This structure stores paths and file CIDs. When a user uploads a file or folder to the website, it’s added to IPFS. The output is given to the OrbitDB store which allows for mutating the structure and replicating changes across devices. The website also allows for downloading that structure, whether it’s a file or a folder, at a later time. Read more about Sailplane on the [Filecoin blog](https://filecoin.io/blog/hackfs-teams-vol-3/) and [watch the demo](https://www.youtube.com/watch?v=Agntk5_XME4&feature=youtu.be).
+Sailplane uses IPFS to store, send, and reference data. A custom OrbitDB store takes output from IPFS and creates a mutable file system-like structure from it. This structure stores paths and file CIDs. When a user uploads a file or folder to the website, it’s added to IPFS. The output is given to the OrbitDB store which allows for mutating the structure and replicating changes across devices. The website also allows for downloading that structure, whether it’s a file or a folder, at a later time. Read more about Sailplane on the [Filecoin blog](/blog/hackfs-teams-vol-3/) and [watch the demo](https://www.youtube.com/watch?v=Agntk5_XME4&feature=youtu.be).
 
 ### Public Annotation Network (PAN) Protocol
 
@@ -93,7 +93,7 @@ Decentralized Docker Hub, powered by Powergate, lets you push and pull Docker im
 
 Pygate is a gateway to the Filecoin network and IPFS technology for Pythonistas. While most tooling to date has been geared toward JavaScript and Golang developers, the pygate team found that Python was overwhelmingly voted the “most wanted” language in [Stack Overflow’s](https://insights.stackoverflow.com/survey/2020) February 2020 survey of over 65,000 developers. The pygate team is helping to bring Filecoin to this community by building interfaces and tooling for Textile’s Powergate in Python. Pygate’s solution includes a Python API client, sample applications, and more!
 
-Read more about pygate [on the Filecoin blog](https://filecoin.io/blog/hackfs-teams-vol-1/) and [watch the demo](https://www.youtube.com/watch?v=G7jHfv4LdbM&feature=youtu.be).
+Read more about pygate [on the Filecoin blog](/blog/hackfs-teams-vol-1/) and [watch the demo](https://www.youtube.com/watch?v=G7jHfv4LdbM&feature=youtu.be).
 
 ## Protocol Labs Prizes
 

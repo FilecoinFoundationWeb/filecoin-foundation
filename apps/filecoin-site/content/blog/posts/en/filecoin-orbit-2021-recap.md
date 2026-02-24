@@ -25,9 +25,9 @@ title: >-
 _template: blog_detail
 ---
 
-[Filecoin Orbit 2021](https://orbit.filecoin.io/) celebrated the first anniversary of the [Filecoin mainnet launch](https://filecoin.io/blog/posts/filecoin-mainnet-is-live/) on October 18-22nd, 2021. For one week, the global Filecoin community gathered at conferences, workshops, and meetups — both virtual and IRL — held across the globe, from Italy to China, Nigeria to Japan, and more.
+[Filecoin Orbit 2021](https://orbit.filecoin.io/) celebrated the first anniversary of the [Filecoin mainnet launch](/blog/filecoin-mainnet-is-live/) on October 18-22nd, 2021. For one week, the global Filecoin community gathered at conferences, workshops, and meetups — both virtual and IRL — held across the globe, from Italy to China, Nigeria to Japan, and more.
 
-[Juan Benet](https://twitter.com/juanbenet) kicked off Filecoin Orbit with a keynote highlighting the [many achievements](https://filecoin.io/blog/posts/filecoin-orbit-filecoin-year-one-in-review/) of the Filecoin community over the past year since Liftoff, including the phenomenal growth in network storage power: “Twelve exbibytes is just a huge amount of storage capacity and this is provided by over three thousand storage providers around the world.”
+[Juan Benet](https://twitter.com/juanbenet) kicked off Filecoin Orbit with a keynote highlighting the [many achievements](/blog/filecoin-orbit-filecoin-year-one-in-review/) of the Filecoin community over the past year since Liftoff, including the phenomenal growth in network storage power: “Twelve exbibytes is just a huge amount of storage capacity and this is provided by over three thousand storage providers around the world.”
 
 ![Filecoin Orbit 2021: 34 events, 12 countries, 5 continents, 20k+ participants](/uploads/filecoin-orbit-2021-stats.webp "Filecoin Orbit 2021: 34 events, 12 countries, 5 continents, 20k+ participants")
 
@@ -57,7 +57,7 @@ At a fireside chat, Chainlink Co-founder, [Sergey Nazarov](https://twitter.com/S
 
 ### 💰 Zcash
 
-Last month, Protocol Labs, [Electric Coin Company](https://electriccoin.co/) (ECC) and the [Ethereum Foundation](https://ethereum.org/en/foundation/) [announced a partnership for R&D into Halo 2](https://filecoin.io/blog/posts/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/), ECC's recursion system for [Zcash](https://z.cash/). Many know Zcash as a privacy-enhancing cryptocurrency, while Halo 2 is also a marvel of blockchain scalability. In a [Filecoin Orbit keynote panel](https://www.youtube.com/watch?v=t4XOdagc9xw), Zcash creator and ECC CEO [Zooko Wilcox](https://twitter.com/zooko) and Filecoin Foundation chair [Marta Belcher](https://twitter.com/martabelcher) talked about extending the Halo zero knowledge proof system and how that new technology can be used.
+Last month, Protocol Labs, [Electric Coin Company](https://electriccoin.co/) (ECC) and the [Ethereum Foundation](https://ethereum.org/en/foundation/) [announced a partnership for R&D into Halo 2](/blog/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/), ECC's recursion system for [Zcash](https://z.cash/). Many know Zcash as a privacy-enhancing cryptocurrency, while Halo 2 is also a marvel of blockchain scalability. In a [Filecoin Orbit keynote panel](https://www.youtube.com/watch?v=t4XOdagc9xw), Zcash creator and ECC CEO [Zooko Wilcox](https://twitter.com/zooko) and Filecoin Foundation chair [Marta Belcher](https://twitter.com/martabelcher) talked about extending the Halo zero knowledge proof system and how that new technology can be used.
 
 Zooko also spoke about what web3 meant in terms of privacy: "A lot of people think of privacy as 'secrecy,' but to me, it means consent. You should choose who in your life you share information with. Web3 should enable those to share on their own terms."
 
@@ -91,13 +91,13 @@ There’s still time to[register in the Filecoin Project Gravity sales referral 
 
 ### 🚀 HyperDrive
 
-Just before Filecoin Orbit, [Filecoin mainnet executed its major HyperDrive network upgrade](https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-10-25x-increase-in-storage-onboarding/). "HyperDrive unlocks a 10 to 25x increase in network throughput through innovation in underlying technology," noted [ZX](https://twitter.com/zixuanzh) of Protocol Labs in a [Filecoin Orbit session](https://www.youtube.com/watch?v=-AS3mpp5-PA&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=21).
+Just before Filecoin Orbit, [Filecoin mainnet executed its major HyperDrive network upgrade](/blog/filecoin-v13-hyperdrive-network-upgrade-unlocks-10-25x-increase-in-storage-onboarding/). "HyperDrive unlocks a 10 to 25x increase in network throughput through innovation in underlying technology," noted [ZX](https://twitter.com/zixuanzh) of Protocol Labs in a [Filecoin Orbit session](https://www.youtube.com/watch?v=-AS3mpp5-PA&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=21).
 
 Storage clients and application developers have benefited from increased message throughput, improving overall network utility. But the most notable improvement has been for Filecoin storage providers, who are now benefiting from new economies of scale and faster capacity onboarding rates. These are just some of the advantages HyperDrive has brought to the Filecoin ecosystem.
 
 ### 🕊 Starling Lab
 
-[Starling Lab](https://www.starlinglab.org/), jointly developed by the [USC Shoah Foundation](https://sfi.usc.edu/) and [Stanford University’s Department of Electrical Engineering](https://ee.stanford.edu/), was [announced last year](https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/) as a new framework for combating misinformation, tracing provenance, and reducing information uncertainty across a variety of applications, from news media to historical preservation.
+[Starling Lab](https://www.starlinglab.org/), jointly developed by the [USC Shoah Foundation](https://sfi.usc.edu/) and [Stanford University’s Department of Electrical Engineering](https://ee.stanford.edu/), was [announced last year](/blog/starling-lab-establishing-trust-for-humanity-s-data/) as a new framework for combating misinformation, tracing provenance, and reducing information uncertainty across a variety of applications, from news media to historical preservation.
 
 Jonathan Dotan, a fellow at [Stanford's Center for Blockchain Research](https://cbr.stanford.edu/) and the [Stanford Compression Forum](https://compression.stanford.edu/), gave an [update on Starling Lab’s progress](https://www.youtube.com/watch?v=LrEXHGml-bE&list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz&index=33) and its role in the advancement of human rights.
 

@@ -43,7 +43,7 @@ A: There are gas costs for the message. Also, in the event the upgraded sector h
 
 **Q: Is the Storage Provider expected to have the disk space available for twice the size of the updated sectors during the transition on the same partition? If you have a Storage Provider with multiple disk paths for long-term storage, can the “update” sectors files be located on a different disk than the original “sealed” file?**
 
-A: Yes, during the replica update you will be keeping existing data for the sectors along with the newly computed data. The reason to keep the original CC sector is that [_WinningPoSt _](https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/#proof-of-spacetime)could be challenged for 900 epochs.
+A: Yes, during the replica update you will be keeping existing data for the sectors along with the newly computed data. The reason to keep the original CC sector is that [_WinningPoSt _](/blog/a-guide-to-filecoin-storage-mining/#proof-of-spacetime)could be challenged for 900 epochs.
 
 These two files are not constrained to be on the same disk, they can be located on different disks in general. In particular, if the worker with the “sealed” file is out of disk space, the sector manager can put the corresponding “update” file on another disk.
 

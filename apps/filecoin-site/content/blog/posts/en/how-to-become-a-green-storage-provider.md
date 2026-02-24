@@ -20,9 +20,9 @@ title: How to Become a Green Storage Provider
 _template: blog_detail
 ---
 
-Filecoin is on its way to becoming carbon neutral at the node level thanks to initiatives fostered by [Filecoin Green](https://green.filecoin.io/). The community is developing Web3-native tools that bring transparency and accountability to the network’s energy consumption and environmental impact. Gathering this information may enable future incentives to be designed and drive participants in Filecoin’s [_island economy_](https://filecoin.io/blog/posts/filecoin-s-island-economy/) towards more sustainable network operations.
+Filecoin is on its way to becoming carbon neutral at the node level thanks to initiatives fostered by [Filecoin Green](https://green.filecoin.io/). The community is developing Web3-native tools that bring transparency and accountability to the network’s energy consumption and environmental impact. Gathering this information may enable future incentives to be designed and drive participants in Filecoin’s [_island economy_](/blog/filecoin-s-island-economy/) towards more sustainable network operations.
 
-Of course, all these efforts have to start with Storage Providers (SPs). The SP ecosystem is the engine of the Filecoin Network and where most of its energy consumption happens. In order to provide [Storage Power](https://filecoin.io/blog/filecoin-guide-to-storage-mining/#storage-power), SPs must set up operations that not only use electricity to store data but also to [seal](https://spec.filecoin.io/#section-glossary.seal) it through a computationally-intensive process that ensures its redundancy and persistence.
+Of course, all these efforts have to start with Storage Providers (SPs). The SP ecosystem is the engine of the Filecoin Network and where most of its energy consumption happens. In order to provide [Storage Power](/blog/filecoin-guide-to-storage-mining/#storage-power), SPs must set up operations that not only use electricity to store data but also to [seal](https://spec.filecoin.io/#section-glossary.seal) it through a computationally-intensive process that ensures its redundancy and persistence.
 
 Luckily, the cryptographic primitives used in the Filecoin Network can also be applied to these operations to measure and, ultimately, make them more sustainable in verifiable ways. Let's take a look at how SPs can become greener with the tools, resources, and programs made available by Filecoin Green.
 
@@ -72,4 +72,4 @@ There are existing discussions around further incentivizing SPs, which in the fu
 
 You can participate in the ongoing conversations around what it means to be a green SP, how to become one, and how it may benefit your operations. Many of these discussions take place in the Work Groups in the [Filecoin Slack](https://app.slack.com/client/TEHTVS1L6/CEHHJNJS3/).
 
-Additionally, be sure to learn more about Filecoin Green’s [Green Grants](https://filecoin.io/blog/posts/filecoin-green-s-1-million-green-grants-program-will-support-climate-positive-regenerative-finance-refi-initiatives/) program designed to support projects working on reforestation, carbon credits, carbon negative solutions, and biodiversity monitoring and reporting.
+Additionally, be sure to learn more about Filecoin Green’s [Green Grants](/blog/filecoin-green-s-1-million-green-grants-program-will-support-climate-positive-regenerative-finance-refi-initiatives/) program designed to support projects working on reforestation, carbon credits, carbon negative solutions, and biodiversity monitoring and reporting.

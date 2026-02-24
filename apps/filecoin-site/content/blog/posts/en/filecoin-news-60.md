@@ -38,7 +38,7 @@ Filecoin Foundation (FF) recently released its 2022 Annual Report, a high-level 
 
 ### The FVM Imaginarium: Bringing DataDAOs to the Next Level with FVM
 
-With Filecoin’s storage network capability to store large amounts of data, there is a massive opportunity for DAOs to organize around stored data. These are known as DataDAOs for the curation, governance, usage and distribution of useful data. With the Filecoin Virtual Machine (FVM) adding programmability to storage, DataDAOs are in a prime position to unlock valuable data-related solutions and services. [Read this blog post](https://filecoin.io/blog/posts/fvm-imaginarium-bringing-datadaos-to-the-next-level-with-fvm/) to learn more about the DAOs already being built on Filecoin.
+With Filecoin’s storage network capability to store large amounts of data, there is a massive opportunity for DAOs to organize around stored data. These are known as DataDAOs for the curation, governance, usage and distribution of useful data. With the Filecoin Virtual Machine (FVM) adding programmability to storage, DataDAOs are in a prime position to unlock valuable data-related solutions and services. [Read this blog post](/blog/fvm-imaginarium-bringing-datadaos-to-the-next-level-with-fvm/) to learn more about the DAOs already being built on Filecoin.
 
 ### How an Open Science Commons Project Built on Web3 Infrastructure Empowers Community Discovery
 

@@ -51,11 +51,11 @@ Join the Filecoin track at [**ETHOdyssey**](https://ethodyssey.devfolio.co/), a 
 
 ## Store
 
-[![](/uploads/opensea.webp)](https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)
+[![](/uploads/opensea.webp)](/blog/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)
 
 ### OpenSea stores NFTs with IPFS and Filecoin
 
-[**OpenSea**](https://opensea.io/) recently [**launched**](https://opensea.io/blog/announcements/decentralizing-nft-metadata-on-opensea/) a feature to “freeze” NFT metadata, enabling NFT creators to properly decentralize their NFTs using IPFS and Filecoin. OpenSea is one of the largest NFT marketplaces in the web3 space, creating a market for millions of NFTs today. Using IPFS and Filecoin, NFT creators that use OpenSea can now create immutable NFT metadata using IPFS [**content addressing**](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) and [**provable and decentralized storage with Filecoin**](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/). [**Learn more.**](https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)
+[**OpenSea**](https://opensea.io/) recently [**launched**](https://opensea.io/blog/announcements/decentralizing-nft-metadata-on-opensea/) a feature to “freeze” NFT metadata, enabling NFT creators to properly decentralize their NFTs using IPFS and Filecoin. OpenSea is one of the largest NFT marketplaces in the web3 space, creating a market for millions of NFTs today. Using IPFS and Filecoin, NFT creators that use OpenSea can now create immutable NFT metadata using IPFS [**content addressing**](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) and [**provable and decentralized storage with Filecoin**](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/). [**Learn more.**](/blog/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)
 
 ## Mine
 
@@ -65,11 +65,11 @@ Join the Filecoin track at [**ETHOdyssey**](https://ethodyssey.devfolio.co/), a 
 
 The Filecoin Foundation has launched the Filecoin Mining Working Group (MWG), a voluntary working group that allows Filecoin miners of all sizes to work collaboratively with other esteemed miners on the Filecoin network. Through partnerships with local miners in North America, Europe, and Asia, the MWG aims to improve the mining experience for all Filecoin miners while also providing resources and education to bridge gaps between Filecoin miners and Filecoin developers, storage providers, and the broader community worldwide. [**Learn more.**](https://filecoinfoundation.medium.com/supporting-the-community-the-filecoin-mining-working-group-4bd5f289cbea)
 
-[![](/uploads/lotus-update.webp)](https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/)
+[![](/uploads/lotus-update.webp)](/blog/the-evolution-of-a-lotus-node/)
 
 ### Lotus & Retrieval Markets Builders Summit
 
-Recently, the Filecoin community hosted the [**Retrieval Market Builders Mini-Summit**](https://www.youtube.com/watch?v=QuE_NotFCXs&list=PL_0VrY55uV19TsJ8r2qsMyG2v2LIKEmv2), an event to gather all the builders of the multiple Retrieval Market solutions, highlight the progress made so far and identify how the multiple systems can come together in a way to increase the retrieval deals efficacy, efficiency and reliability for users of the network. At the summit, [**Raul Kripalani**](https://github.com/raulk) (libp2p and Filecoin core dev) led a deep dive on the architecture of a Lotus node and the changes planned, specifically to the lotus-miner nodes, to better fit the needs of miners and network participants. For a full recap of his talk on the Evolution of a Lotus Node, [**read this recent blog post**](https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/).
+Recently, the Filecoin community hosted the [**Retrieval Market Builders Mini-Summit**](https://www.youtube.com/watch?v=QuE_NotFCXs&list=PL_0VrY55uV19TsJ8r2qsMyG2v2LIKEmv2), an event to gather all the builders of the multiple Retrieval Market solutions, highlight the progress made so far and identify how the multiple systems can come together in a way to increase the retrieval deals efficacy, efficiency and reliability for users of the network. At the summit, [**Raul Kripalani**](https://github.com/raulk) (libp2p and Filecoin core dev) led a deep dive on the architecture of a Lotus node and the changes planned, specifically to the lotus-miner nodes, to better fit the needs of miners and network participants. For a full recap of his talk on the Evolution of a Lotus Node, [**read this recent blog post**](/blog/the-evolution-of-a-lotus-node/).
 
 [![](/uploads/survey-icon.webp)](https://filecoin-community.typeform.com/to/yTMkOLg8)
 

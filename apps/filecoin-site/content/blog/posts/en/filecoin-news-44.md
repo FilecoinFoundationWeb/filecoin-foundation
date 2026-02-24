@@ -24,19 +24,19 @@ title: Filecoin News 44
 
 ## Announcements
 
-[![](/uploads/story1.webp)](https://filecoin.io/blog/posts/funding-opportunity-for-public-goods-in-the-filecoin-ipfs-ecosystem/)
+[![](/uploads/story1.webp)](/blog/funding-opportunity-for-public-goods-in-the-filecoin-ipfs-ecosystem/)
 
 ### Funding Opportunity for Public Goods in the Filecoin and IPFS Ecosystem
 
-The Protocol Labs community participates in the next Gitcoin Grants Matching Round, happening June 8th-23rd, to help fund public and network goods in the greater Protocol Labs (IPFS / Filecoin) ecosystem using Quadratic Funding. Submissions are possible for one more week and voting starts tomorrow, Wednesday June 8th. Learn more about it on the [Filecoin blog](https://filecoin.io/blog/posts/funding-opportunity-for-public-goods-in-the-filecoin-ipfs-ecosystem/).
+The Protocol Labs community participates in the next Gitcoin Grants Matching Round, happening June 8th-23rd, to help fund public and network goods in the greater Protocol Labs (IPFS / Filecoin) ecosystem using Quadratic Funding. Submissions are possible for one more week and voting starts tomorrow, Wednesday June 8th. Learn more about it on the [Filecoin blog](/blog/funding-opportunity-for-public-goods-in-the-filecoin-ipfs-ecosystem/).
 
 ## Community
 
-[![](/uploads/networkgoods.webp)](https://filecoin.io/blog/posts/a-public-goods-experiment-on-filecoin-retroactively-funding-impact-with-quadratic-voting/)
+[![](/uploads/networkgoods.webp)](/blog/a-public-goods-experiment-on-filecoin-retroactively-funding-impact-with-quadratic-voting/)
 
 ### A Public Goods Experiment on Filecoin: Retroactively Funding Impact with Quadratic Voting
 
-The Protocol Labs Network Goods team launched the Filecoin Community PR program as a focused experiment to retroactively reward contributions to public goods within Protocol Labs. The goal was to test Quadratic Voting as part of a broader strategy to formalize [retroactive impact evaluation](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c) as a scalable method to fund and incentivize development of public goods in the Protocol Labs ecosystem. [Read along](https://filecoin.io/blog/posts/a-public-goods-experiment-on-filecoin-retroactively-funding-impact-with-quadratic-voting/) to learn about the results.
+The Protocol Labs Network Goods team launched the Filecoin Community PR program as a focused experiment to retroactively reward contributions to public goods within Protocol Labs. The goal was to test Quadratic Voting as part of a broader strategy to formalize [retroactive impact evaluation](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c) as a scalable method to fund and incentivize development of public goods in the Protocol Labs ecosystem. [Read along](/blog/a-public-goods-experiment-on-filecoin-retroactively-funding-impact-with-quadratic-voting/) to learn about the results.
 
 ### Content Addressing, Persistent Storage, and the Metaverse
 
@@ -60,11 +60,11 @@ The Block Research was commissioned by W3BCLOUD on a primer covering decentraliz
 
 ## Tools
 
-[![](/uploads/170366980-78f835fb-8168-4914-9a75-d62b1a157133_hucb442e6c1c91856b73a6a8f0b7cfb391_272760_2000x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/understanding-filecoin-data-aggregators-for-storage-providers/)
+[![](/uploads/170366980-78f835fb-8168-4914-9a75-d62b1a157133_hucb442e6c1c91856b73a6a8f0b7cfb391_272760_2000x0_resize_q90_linear.webp)](/blog/understanding-filecoin-data-aggregators-for-storage-providers/)
 
 ### Understanding Filecoin Data Aggregators for Storage Providers
 
-The Filecoin ecosystem has an expansive set of tools that are designed to provide accurate information about the network and let participants be active in more effective ways. Many of these are independently developed and maintained by the community and serve the specific needs of different components of the Filecoin island economy. For Storage Providers, analytics and data aggregation are important resources. Find out how to make the best use of them on the Filecoin [blog](https://filecoin.io/blog/posts/understanding-filecoin-data-aggregators-for-storage-providers/).
+The Filecoin ecosystem has an expansive set of tools that are designed to provide accurate information about the network and let participants be active in more effective ways. Many of these are independently developed and maintained by the community and serve the specific needs of different components of the Filecoin island economy. For Storage Providers, analytics and data aggregation are important resources. Find out how to make the best use of them on the Filecoin [blog](/blog/understanding-filecoin-data-aggregators-for-storage-providers/).
 
 ## Events
 

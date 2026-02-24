@@ -24,7 +24,7 @@ _template: blog_detail_ch
 
 Filecoin如今已正式成为Flow区块链官方存储合作伙伴，随着Flow元世界变得更加开放、强大和去中心化，它将持续为平台、开发者和用户赋能，此类技术整合将加速推动NFT的端到端所有权以及相关媒体资产在Flow上建立去中心化数据存储。
 
-此前有消息称，Flow的创始公司[Dapper Labs](https://www.dapperlabs.com/)正与[Filecoin合作](https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/)，共同推动NFT和游戏的未来。此举将允许创作者通过IPFS内容寻址以及Filecoin可证明和分布式存储来创建不可篡改的NFT元数据，包括视频和视觉资产。
+此前有消息称，Flow的创始公司[Dapper Labs](https://www.dapperlabs.com/)正与[Filecoin合作](/blog/dapper-labs-integrates-filecoin/)，共同推动NFT和游戏的未来。此举将允许创作者通过IPFS内容寻址以及Filecoin可证明和分布式存储来创建不可篡改的NFT元数据，包括视频和视觉资产。
 
 目前，诸如Eternal、Starly和Versus此类Flow平台已经在使用与Filecoin的集成，以确保NFT在任何地方都安全可用。随着Flow生态发展，Filecoin的分布式存储解决方案将使未来建立在Flow上的应用程序可以轻松保护其NFT媒体资产和元数据。
 

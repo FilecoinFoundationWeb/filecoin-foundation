@@ -33,7 +33,7 @@ LongHashX Partners with Protocol Labs to Launch the FVM Genesis Accelerator, One
 
 ### DSA Reduces Decentralized Storage Costs by 40%
 
-The Decentralized Storage Alliance (DSA) brings together technology industry leaders to help enterprises make the transition to decentralized storage technologies through education, advocacy, and best practices. The DSA, in collaboration with [Protocol Labs](https://protocol.ai/) and [Supranational](https://www.supranational.net/about), unveil the first release of an advanced software and reference configuration that will fundamentally optimize data onboarding for the [Filecoin network](https://filecoin.io/). The new software significantly reduces costs for network participants, making it easier to both become a [Filecoin Storage Provider](https://sp.filecoin.io/) and onboard data to the network. These network optimizations push forward decentralized storage technologies, advancing the industry and enabling further adoption by enterprises. Learn more in the [official announcement](https://filecoin.io/blog/posts/dsa-reduces-decentralized-storage-costs-by-40-percent/). 
+The Decentralized Storage Alliance (DSA) brings together technology industry leaders to help enterprises make the transition to decentralized storage technologies through education, advocacy, and best practices. The DSA, in collaboration with [Protocol Labs](https://protocol.ai/) and [Supranational](https://www.supranational.net/about), unveil the first release of an advanced software and reference configuration that will fundamentally optimize data onboarding for the [Filecoin network](https://filecoin.io/). The new software significantly reduces costs for network participants, making it easier to both become a [Filecoin Storage Provider](https://sp.filecoin.io/) and onboard data to the network. These network optimizations push forward decentralized storage technologies, advancing the industry and enabling further adoption by enterprises. Learn more in the [official announcement](/blog/dsa-reduces-decentralized-storage-costs-by-40-percent/). 
 
 ### Protocol Labs & Edgevana Boost Filecoin’s Storage Capacity
 
@@ -61,11 +61,11 @@ Check out [this recent article](https://medium.com/filemarket-xyz/the-evolution-
 
 ### CC Sector Upgrade: Guidelines and Modeling
 
-Upgrading existing CC sectors in the Filecoin Network is a promising opportunity for Storage Providers (SPs) to minimize new costs compared to sealing new deal sectors. The cost difference between upgrading a CC sector and adding a new deal sector is currently small, making the upgrading strategy viable. If verified deals are available, SPs should consider sealing new sectors with verified deals. Future changes, like cheaper CC sector acquisition and gas accounting adjustments, may further favor the CC sector upgrade pipeline. Read [this blog post](https://filecoin.io/blog/posts/cc-sector-upgrade-guidelines-and-modeling/) for more information.
+Upgrading existing CC sectors in the Filecoin Network is a promising opportunity for Storage Providers (SPs) to minimize new costs compared to sealing new deal sectors. The cost difference between upgrading a CC sector and adding a new deal sector is currently small, making the upgrading strategy viable. If verified deals are available, SPs should consider sealing new sectors with verified deals. Future changes, like cheaper CC sector acquisition and gas accounting adjustments, may further favor the CC sector upgrade pipeline. Read [this blog post](/blog/cc-sector-upgrade-guidelines-and-modeling/) for more information.
 
 ### Monitoring booster-http retrievals as a Filecoin Storage Provider
 
-Boost recently introduced HTTP Gateway functionality to booster-http. Now, Filecoin storage providers can serve any chunks of files over HTTP, for greater simplicity and better interoperability with the rest of the web. Storage providers can set up booster-http and learn how to monitor retrieval activity in the [latest blog post](https://filecoin.io/blog/posts/monitoring-booster-http-retrievals/).
+Boost recently introduced HTTP Gateway functionality to booster-http. Now, Filecoin storage providers can serve any chunks of files over HTTP, for greater simplicity and better interoperability with the rest of the web. Storage providers can set up booster-http and learn how to monitor retrieval activity in the [latest blog post](/blog/monitoring-booster-http-retrievals/).
 
 ## Events 
 

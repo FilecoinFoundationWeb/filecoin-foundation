@@ -55,7 +55,7 @@ As soon as the deal is created, you get a link to the CID. You can use this CID 
 
 Estuary uses the IPFS pinning standard so it is easy to switch from other existing solutions. Estuary is perfect for anyone writing software that requires shuttling large amounts of files of any size. Estuary doesn't require a specific programming language and can be used in a way that feels the most natural to you. Because of its intuitive nature, rollout of apps and websites can be uncomplicated.
 
-[Explore Estuary](https://estuary.tech/) or [read more](https://filecoin.io/blog/posts/taking-a-look-at-estuary/) about it.
+[Explore Estuary](https://estuary.tech/) or [read more](/blog/taking-a-look-at-estuary/) about it.
 
 ### Web3.storage
 
@@ -69,7 +69,7 @@ To make it easier to build a web app, there's a direct JavaScript interface to u
 
 You can access files directly through their CID and start streamlining your JavaScript app to use data stored on the IPFS network. The simplicity of use makes this an ideal storage solution for developers building JavaScript-based applications who want to use Web3.storage to upload and retrieve their files directly.
 
-[Use web3.storage](http://web3.storage) or [read more](https://filecoin.io/blog/posts/introducing-web3-storage/) about it.
+[Use web3.storage](http://web3.storage) or [read more](/blog/introducing-web3-storage/) about it.
 
 ### NFT.storage
 
@@ -81,7 +81,7 @@ NFT.storage uses many of the same details for storage as Estuary and Web3.storag
 
 Several prominent NFT marketplaces already power their networks with IPFS and Filecoin. Two of the more well-known names in this space, [Palm](https://palm.io/) and VideoCoin, use IFPS to store and retrieve content. However, NFT.storage offers users a way to interact with the network without going through an intermediary. It empowers NFT creators and affords them the resiliency of storage they'd expect from a robust decentralized storage network like IPFS.
 
-[Explore nft.storage](http://nft.storage) or [read more](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/) about it.
+[Explore nft.storage](http://nft.storage) or [read more](/blog/introducing-nft.storage-free-decentralized-storage-for-nfts/) about it.
 
 ## What Should I Be Using?
 

@@ -18,7 +18,7 @@ related_article_1: >-
   content/blog/posts/2023-expanding-from-a-storage-network-to-enabling-open-services-for-data-part-i.en.md
 ---
 
-As we bid farewell to 2023, it's a moment of reflection on the transformative journey that unfolded in the Filecoin ecosystem. In a year marked by global shifts and challenges, the Filecoin community stood resilient, collectively advancing towards our goals of building the largest decentralized storage network; onboarding and safeguarding humanity's data; and bringing compute to the data to enable web-scale apps. In this post, you will find ecosystem and community updates that contributed to the network’s transformative year, in addition to a look ahead at what to expect from Filecoin in 2024. If you’re interested in reading about the developmental and technical achievements from 2023, check out [Part I](https://filecoin.io/blog/posts/2023-expanding-from-a-storage-network-to-enabling-open-services-for-data-part-i/) of this blog post series.
+As we bid farewell to 2023, it's a moment of reflection on the transformative journey that unfolded in the Filecoin ecosystem. In a year marked by global shifts and challenges, the Filecoin community stood resilient, collectively advancing towards our goals of building the largest decentralized storage network; onboarding and safeguarding humanity's data; and bringing compute to the data to enable web-scale apps. In this post, you will find ecosystem and community updates that contributed to the network’s transformative year, in addition to a look ahead at what to expect from Filecoin in 2024. If you’re interested in reading about the developmental and technical achievements from 2023, check out [Part I](/blog/2023-expanding-from-a-storage-network-to-enabling-open-services-for-data-part-i/) of this blog post series.
 
 ## Filecoin Community Growth
 
@@ -34,8 +34,8 @@ The first ever [FIL Dev Summits](https://fildev.io/) in Singapore and Iceland we
 
 These summits sparked meaningful and impactful conversations to help push the Filecoin network forward - from protocol scalability and network improvements, to the intricacies of data onboarding and governance structures. Over the course of 6 days, over 200 developers, researchers, and community members gathered to share and refine improvements, gain insights from diverse perspectives, challenge assumptions, and collectively arrive at innovative solutions to the challenges faced by the Filecoin ecosystem. Check out the recaps for more:
 
-- [FIL Dev Iceland Track Recap: From Click to PiB, Scaling Enterprise Data](https://filecoin.io/blog/posts/fil-dev-iceland-track-recap-from-click-to-pib-scaling-enterprise-data/)
-- [Retrieving Memories from the FIL Dev Summit Iceland](https://filecoin.io/blog/posts/retrieving-memories-from-the-fil-dev-summit/)
+- [FIL Dev Iceland Track Recap: From Click to PiB, Scaling Enterprise Data](/blog/fil-dev-iceland-track-recap-from-click-to-pib-scaling-enterprise-data/)
+- [Retrieving Memories from the FIL Dev Summit Iceland](/blog/retrieving-memories-from-the-fil-dev-summit/)
 - [FIL Dev Summit 2023 Singapore Recap Video](https://www.youtube.com/watch?v=JtG08g_Thdc)
 
 ### Filecoin Orbit

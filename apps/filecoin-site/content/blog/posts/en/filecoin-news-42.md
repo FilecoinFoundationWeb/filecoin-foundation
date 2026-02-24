@@ -24,11 +24,11 @@ title: Filecoin News 42
 
 ## Community
 
-[![](/uploads/mona-blog-header.webp)](https://filecoin.io/blog/posts/building-worlds-not-walls-with-mona/)
+[![](/uploads/mona-blog-header.webp)](/blog/building-worlds-not-walls-with-mona/)
 
 ### Building Worlds, Not Walls, With Mona
 
-[Mona](https://www.mona.gallery/) is a metaverse world-building platform built for creators by creators. It offers incredible resolution and unparalleled performance for truly visionary Web3 experiences. More than 3,000 creators are already using the platform to design and mint online spaces, launch immersive exhibitions, host electrifying concerts, and more. [Read more](https://filecoin.io/blog/posts/building-worlds-not-walls-with-mona/) to find out how Mona builds these incredible experiences and stores them on Filecoin and IPFS via NFT.Storage.
+[Mona](https://www.mona.gallery/) is a metaverse world-building platform built for creators by creators. It offers incredible resolution and unparalleled performance for truly visionary Web3 experiences. More than 3,000 creators are already using the platform to design and mint online spaces, launch immersive exhibitions, host electrifying concerts, and more. [Read more](/blog/building-worlds-not-walls-with-mona/) to find out how Mona builds these incredible experiences and stores them on Filecoin and IPFS via NFT.Storage.
 
 [![](/uploads/getgreenwfil-chainlink-22.webp)](https://www.youtube.com/watch?v=nk4dn2NGmXM)
 
@@ -60,17 +60,17 @@ One of the biggest challenges in Big Data today is how to process growing datase
 
 ## Tools
 
-[![](/uploads/consumerapps.webp)](https://filecoin.io/blog/posts/tools-for-building-consumer-applications-with-filecoin/)
+[![](/uploads/consumerapps.webp)](/blog/tools-for-building-consumer-applications-with-filecoin/)
 
 ### Tools for Building Consumer Applications with Filecoin
 
-You no longer need to have to know the nitty-gritty details of how to set up a Lotus node or make storage deals in order to build applications that take advantage of the Filecoin network. A growing number of tools are making it easy for teams and developers to build solutions that benefit consumers and give them access to decentralized storage. Explore which ones you can leverage to store standard application or NFT data via APIs or store large scale data for your own applications on the [Filecoin blog](https://filecoin.io/blog/posts/tools-for-building-consumer-applications-with-filecoin/).
+You no longer need to have to know the nitty-gritty details of how to set up a Lotus node or make storage deals in order to build applications that take advantage of the Filecoin network. A growing number of tools are making it easy for teams and developers to build solutions that benefit consumers and give them access to decentralized storage. Explore which ones you can leverage to store standard application or NFT data via APIs or store large scale data for your own applications on the [Filecoin blog](/blog/tools-for-building-consumer-applications-with-filecoin/).
 
 ## Events
 
 ### A Chat About the Filecoin Network Indexer
 
-The Filecoin Network Indexer AMA and Q&A happened yesterday, May 10th, at 3 pm UTC with Honghao Qiu, Will Scott, Andrew Gillis, and Mayank Pandey. Indexers are nodes that store mappings of CIDs to providers for Filecoin content discovery. Read more about it on the [Filecoin blog](https://filecoin.io/blog/posts/introducing-the-network-indexer/).
+The Filecoin Network Indexer AMA and Q&A happened yesterday, May 10th, at 3 pm UTC with Honghao Qiu, Will Scott, Andrew Gillis, and Mayank Pandey. Indexers are nodes that store mappings of CIDs to providers for Filecoin content discovery. Read more about it on the [Filecoin blog](/blog/introducing-the-network-indexer/).
 
 [![](/uploads/filecoinmeetupsk.webp)](https://twitter.com/kryptoseoul/status/1521277474877116416?s=20&t=rASATggIW9iEDcS-OFe27Q)
 
@@ -98,7 +98,7 @@ Registration for FIL Austin is still open! On Wednesday, June 8th, the Filecoin 
 
 ### FIL-Singapore Summit
 
-Over a thousand Web3 enthusiasts will be joining members of the Filecoin community for FIL-Singapore Summit, happening from August 16th-19th. The event will be a celebration of all the amazing progress in the ecosystem and a look ahead to the exciting future of the network. You can expect to hear from world-class speakers, join side events and meetups, and participate in challenging hackathons. [Sign up](https://docs.google.com/forms/d/e/1FAIpQLSdtEtC0oAYdGDqw0csPyeIY3NgT1qm0YmZkX_wNY794HpiVUQ/viewform) now to host your own workshop or meetup at the event and read more on the Filecoin [blog](https://filecoin.io/blog/posts/announcing-fil-singapore-summit/).
+Over a thousand Web3 enthusiasts will be joining members of the Filecoin community for FIL-Singapore Summit, happening from August 16th-19th. The event will be a celebration of all the amazing progress in the ecosystem and a look ahead to the exciting future of the network. You can expect to hear from world-class speakers, join side events and meetups, and participate in challenging hackathons. [Sign up](https://docs.google.com/forms/d/e/1FAIpQLSdtEtC0oAYdGDqw0csPyeIY3NgT1qm0YmZkX_wNY794HpiVUQ/viewform) now to host your own workshop or meetup at the event and read more on the Filecoin [blog](/blog/announcing-fil-singapore-summit/).
 
 ## Get Involved
 

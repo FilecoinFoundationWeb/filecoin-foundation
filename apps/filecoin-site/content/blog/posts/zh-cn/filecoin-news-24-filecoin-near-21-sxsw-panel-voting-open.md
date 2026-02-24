@@ -36,17 +36,17 @@ _template: blog_detail_ch
 
 今日，我们欣喜于深化Filecoin和NEAR生态之间的合作，启动总金额为30万美元的联合奖励计划，旨在帮助开发者在此两种协议交互中探索新机会。项目在取得奖励金后，还将获得NEAR和Filecoin的全球集合，以支持产品开发和用户增长。[**在此了解更多**](/blog/near-filecoin-ecosystems-accelerate-growth-web3-stack/)。
 
-[![](/uploads/chainlink-filecoin.webp)](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/)
+[![](/uploads/chainlink-filecoin.webp)](/blog/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/)
 
 ### 为融合去中心化存储和预言机的dApp推出Chainlink-Filecoin联合资助计划
 
-[**Chainlink**](http://chain.link/)和[**Filecoin**](https://filecoin.io/)正在发起一项联合资助计划，以加速开发[**混合智能合约**](https://blog.chain.link/hybrid-smart-contracts-explained/)，旨在将 Chainlink去中心化预言机和 Filecoin去中心化存储融合打造至一个应用程序中。混合智能合约使用区块链（链上）上运行的代码以及来自区块链外部（链下）的数据和计算。通过将 Filecoin和Chainlink 结合，开发人员可以构建端到端的去中心化应用程序，此类应用程序具有经济高效且不可篡改的存储功能以及与外部资源的通用安全连接。欲知更多信息，请 [**阅读最新博文**](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/) ，若您很感兴趣，请在此处[申请。
+[**Chainlink**](http://chain.link/)和[**Filecoin**](https://filecoin.io/)正在发起一项联合资助计划，以加速开发[**混合智能合约**](https://blog.chain.link/hybrid-smart-contracts-explained/)，旨在将 Chainlink去中心化预言机和 Filecoin去中心化存储融合打造至一个应用程序中。混合智能合约使用区块链（链上）上运行的代码以及来自区块链外部（链下）的数据和计算。通过将 Filecoin和Chainlink 结合，开发人员可以构建端到端的去中心化应用程序，此类应用程序具有经济高效且不可篡改的存储功能以及与外部资源的通用安全连接。欲知更多信息，请 [**阅读最新博文**](/blog/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/) ，若您很感兴趣，请在此处[申请。
 
-[![](/uploads/juan-ethcc-talk.webp)](https://filecoin.io/blog/posts/building-web3-filecoin-ethereum-better-together/)
+[![](/uploads/juan-ethcc-talk.webp)](/blog/building-web3-filecoin-ethereum-better-together/)
 
 ### 搭建Web3：Filecoin与Ethereum携手共进
 
-作为一个模块化、可互操作的解决方案，Filecoin已可与Web3内其他堆栈、应用程序和生态系统自然契合。自从2020年10月推出以来，Filecoin已增长至超过8 exbibytes的可用存储空间，并且有超过400个项目进入该领域。Ethereum就是一个能持续证明其可协作性和互惠双赢的生态系统。观看2021年EthCC [**Juan Benet演讲**](https://filecoin.io/blog/posts/building-web3-filecoin-ethereum-better-together/)回顾，了解更多关于Filecoin + Ethereum 和其未来使用案例。
+作为一个模块化、可互操作的解决方案，Filecoin已可与Web3内其他堆栈、应用程序和生态系统自然契合。自从2020年10月推出以来，Filecoin已增长至超过8 exbibytes的可用存储空间，并且有超过400个项目进入该领域。Ethereum就是一个能持续证明其可协作性和互惠双赢的生态系统。观看2021年EthCC [**Juan Benet演讲**](/blog/building-web3-filecoin-ethereum-better-together/)回顾，了解更多关于Filecoin + Ethereum 和其未来使用案例。
 
 [![](/uploads/hackfs.webp)](https://www.youtube.com/watch?v=tdqIvaZ28ns)
 

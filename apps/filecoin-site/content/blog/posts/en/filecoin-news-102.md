@@ -35,7 +35,7 @@ The [latest blog post](https://medium.com/@filoz/the-f3-journey-testing-insights
 
 ### Amplifying the Impact: FIL-RetroPGF-2 with Drips
 
-Congratulations to all FIL-RetroPGF Round 2 recipients! This round uses Drips, a decentralized toolkit for Continuous Dependency Funding, to amplify impact by encouraging recipients to split their funds among team members, maintainers, and critical dependencies. This approach fosters sustainability, fairness, and resilience across the Filecoin ecosystem, ensuring resources flow to often-overlooked contributors who support decentralized systems. Inspired by projects like Ethers.js, where 40% of funds are redistributed to dependencies, recipients can create a Drip List to allocate funds automatically and maximize their impact. Learn more in the [full blog post](https://filecoin.io/blog/posts/amplify-the-impact-fil-retropgf-2-with-drips/).
+Congratulations to all FIL-RetroPGF Round 2 recipients! This round uses Drips, a decentralized toolkit for Continuous Dependency Funding, to amplify impact by encouraging recipients to split their funds among team members, maintainers, and critical dependencies. This approach fosters sustainability, fairness, and resilience across the Filecoin ecosystem, ensuring resources flow to often-overlooked contributors who support decentralized systems. Inspired by projects like Ethers.js, where 40% of funds are redistributed to dependencies, recipients can create a Drip List to allocate funds automatically and maximize their impact. Learn more in the [full blog post](/blog/amplify-the-impact-fil-retropgf-2-with-drips/).
 
 ### Preserving Cultural Heritage with Filecoin
 

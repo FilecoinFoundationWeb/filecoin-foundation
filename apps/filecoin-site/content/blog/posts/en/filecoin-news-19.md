@@ -27,7 +27,7 @@ title:
 
 ## Updates
 
-[![](/uploads/fil-blog-wormhole.webp)](https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-3-10x-increase-in-storage-onboarding/)
+[![](/uploads/fil-blog-wormhole.webp)](/blog/filecoin-v13-hyperdrive-network-upgrade-unlocks-3-10x-increase-in-storage-onboarding/)
 
 ### Filecoin v13 ‘HyperDrive’ Network Upgrade Unlocks 10-25x Increase in Storage Onboarding
 
@@ -35,15 +35,15 @@ The [**Filecoin v13 ‘HyperDrive’ Network upgrade**](https://github.com/filec
 
 <sup>1</sup> Depending on how storage providers take advantage of the new aggregation limits
 
-With only 7 months since Filecoin Mainnet Liftoff, there are now more than 2300 active miners providing hundreds of pebibytes of useful storage on the Filecoin Network every week. However, this amazing growth rate is actually a small fraction of the total capacity Filecoin storage providers are ready to add to the network. For more information about the upgrade, what it means for storage providers, future work, and more, [**check out this recent blog post**](https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-3-10x-increase-in-storage-onboarding/).
+With only 7 months since Filecoin Mainnet Liftoff, there are now more than 2300 active miners providing hundreds of pebibytes of useful storage on the Filecoin Network every week. However, this amazing growth rate is actually a small fraction of the total capacity Filecoin storage providers are ready to add to the network. For more information about the upgrade, what it means for storage providers, future work, and more, [**check out this recent blog post**](/blog/filecoin-v13-hyperdrive-network-upgrade-unlocks-3-10x-increase-in-storage-onboarding/).
 
-[![](/uploads/fil-blog-blockscience-3.webp)](https://filecoin.io/blog/posts/filecoin-network-crosses-baseline-sustainability-target-for-first-time/)
+[![](/uploads/fil-blog-blockscience-3.webp)](/blog/filecoin-network-crosses-baseline-sustainability-target-for-first-time/)
 
 ### Filecoin Network Crosses Baseline Sustainability Target for First Time
 
 The Network Baseline for Filecoin has crossed the Baseline Target for the first time! This is an important milestone that marks a transition on the path of continued sustainability of the network. This marks a transition of incentive alignment, toward having ever-increasing efficiency of providing storage while at the same time increasing the rewards for participating in the Deal Market.
 
-The phase shift and associated incentive transition together act as a Call to Action to the community, towards developing more applications and more business models on top of Filecoin. From these activities we’ll build a sustainable transition to the stage where Filecoin has a strong reputation and suite of products over a wide range of diverse markets! [**Read this blog post**](https://filecoin.io/blog/posts/filecoin-network-crosses-baseline-sustainability-target-for-first-time/) to learn more about this milestone.
+The phase shift and associated incentive transition together act as a Call to Action to the community, towards developing more applications and more business models on top of Filecoin. From these activities we’ll build a sustainable transition to the stage where Filecoin has a strong reputation and suite of products over a wide range of diverse markets! [**Read this blog post**](/blog/filecoin-network-crosses-baseline-sustainability-target-for-first-time/) to learn more about this milestone.
 
 [![](/uploads/forest_logo.webp)](https://medium.com/chainsafe-systems/back-into-the-forest-983a4344ffe9)
 
@@ -53,11 +53,11 @@ Hello from the Rust implementation team Forest! We are a part of the [**ChainSaf
 
 ## Build
 
-[![](/uploads/04-1.webp)](https://filecoin.io/blog/posts/longhash-ventures-demo-day-defi-consumer-tech/)
+[![](/uploads/04-1.webp)](/blog/longhash-ventures-demo-day-defi-consumer-tech/)
 
 ### Filecoin Frontier Accelerator Demo Day: DeFi & Consumer Tech
 
-On April 23, the **Filecoin Frontier Accelerator II powered by LongHash Ventures**, hosted a demo day to showcase the 11 teams that completed the 3-month accelerator program. During the program, the teams received hands-on venture support, world-class mentorship, dedicated resources from the Filecoin community, and a $20,000 grant to continue building on the Filecoin network. [**This post**](https://filecoin.io/blog/posts/longhash-ventures-demo-day-defi-consumer-tech/) profiles the startups building DeFi and consumer tech solutions with or on Filecoin’s technology: Atomica, Ownership Labs, Sinso Technology, and Vera AI.
+On April 23, the **Filecoin Frontier Accelerator II powered by LongHash Ventures**, hosted a demo day to showcase the 11 teams that completed the 3-month accelerator program. During the program, the teams received hands-on venture support, world-class mentorship, dedicated resources from the Filecoin community, and a $20,000 grant to continue building on the Filecoin network. [**This post**](/blog/longhash-ventures-demo-day-defi-consumer-tech/) profiles the startups building DeFi and consumer tech solutions with or on Filecoin’s technology: Atomica, Ownership Labs, Sinso Technology, and Vera AI.
 
 ## Mine
 
@@ -65,7 +65,7 @@ On April 23, the **Filecoin Frontier Accelerator II powered by LongHash Ventures
 
 ### MinerX Program
 
-The [**Filecoin MinerX Fellowship Program**](https://filecoin.io/blog/posts/filecoin-minerx-fellowship-program/) launched back in January 2021 and has been an excellent resource as development teams, miners, and clients continue to work together to improve the mining and deal making experience on Filecoin. Because of the success, the second cohort of the program, MinerX.2, will kick off on June 1st! The MinerX.2 Fellowship aims to engage a more diverse set of Filecoin miners to improve the experience and productivity of the Filecoin network. Selected Fellows will spend the next four months accepting storage and retrieval deals, supporting various development efforts, and identifying areas of improvements for the network and lotus software. For more information, please take a look at the [**overview of the MinerX.2 Fellowship Program**](https://docs.google.com/document/d/1GPfPPq-aphlH5c_hNfm9OIbvJ9AlmEQE-im4QDe5aUg/edit?usp=sharing)!
+The [**Filecoin MinerX Fellowship Program**](/blog/filecoin-minerx-fellowship-program/) launched back in January 2021 and has been an excellent resource as development teams, miners, and clients continue to work together to improve the mining and deal making experience on Filecoin. Because of the success, the second cohort of the program, MinerX.2, will kick off on June 1st! The MinerX.2 Fellowship aims to engage a more diverse set of Filecoin miners to improve the experience and productivity of the Filecoin network. Selected Fellows will spend the next four months accepting storage and retrieval deals, supporting various development efforts, and identifying areas of improvements for the network and lotus software. For more information, please take a look at the [**overview of the MinerX.2 Fellowship Program**](https://docs.google.com/document/d/1GPfPPq-aphlH5c_hNfm9OIbvJ9AlmEQE-im4QDe5aUg/edit?usp=sharing)!
 
 [![](/uploads/survey-icon.webp)](https://filecoin-community.typeform.com/to/yTMkOLg8)
 

@@ -22,11 +22,11 @@ title: Filecoin News 39
 
 ## Announcements
 
-[![](/uploads/pl-blog-2022-03-01-metaverse-landscape-map-banner.webp)](https://filecoin.io/blog/posts/announcing-mscape.io-a-community-driven-metaverse-landscape-framework-map/)
+[![](/uploads/pl-blog-2022-03-01-metaverse-landscape-map-banner.webp)](/blog/announcing-mscape.io-a-community-driven-metaverse-landscape-framework-map/)
 
 ### Announcing Mscape.io: A Community-driven Metaverse Landscape Framework and Map
 
-With so many teams launching and growing on top of the IPFS and Filecoin stack, the community could use a metaverse landscape to visualize and identify projects in this category. And so, say hello to mscape.io! A community-driven website and tool that allows anyone to explore metaverse projects and technologies, including what each team is building. [Read more](https://filecoin.io/blog/posts/announcing-mscape.io-a-community-driven-metaverse-landscape-framework-map/) about it on the Filecoin blog.
+With so many teams launching and growing on top of the IPFS and Filecoin stack, the community could use a metaverse landscape to visualize and identify projects in this category. And so, say hello to mscape.io! A community-driven website and tool that allows anyone to explore metaverse projects and technologies, including what each team is building. [Read more](/blog/announcing-mscape.io-a-community-driven-metaverse-landscape-framework-map/) about it on the Filecoin blog.
 
 ![](/uploads/50mnft.webp)
 
@@ -36,11 +36,11 @@ NFT.Storage has crossed 50 million user uploads to the service! It's a huge mile
 
 ## Community
 
-[![](/uploads/filecoinstorageprovider.webp)](https://filecoin.io/blog/posts/why-become-a-filecoin-storage-provider/)
+[![](/uploads/filecoinstorageprovider.webp)](/blog/why-become-a-filecoin-storage-provider/)
 
 ### Why Become a Filecoin Storage Provider
 
-As the need for file storage continues to grow and enterprises warm up to the advantages of decentralized Web3-native solutions, the addressable market for the independent service providers who choose the decentralized route is becoming increasingly fertile. There are concrete advantages for service providers who join Filecoin and embrace the transition from cloud storage to decentralized storage. [Read along](https://filecoin.io/blog/posts/why-become-a-filecoin-storage-provider/) and find out what they are.
+As the need for file storage continues to grow and enterprises warm up to the advantages of decentralized Web3-native solutions, the addressable market for the independent service providers who choose the decentralized route is becoming increasingly fertile. There are concrete advantages for service providers who join Filecoin and embrace the transition from cloud storage to decentralized storage. [Read along](/blog/why-become-a-filecoin-storage-provider/) and find out what they are.
 
 [![](/uploads/starboard.webp)](https://twitter.com/Starboard_V/status/1508464845288484873)
 

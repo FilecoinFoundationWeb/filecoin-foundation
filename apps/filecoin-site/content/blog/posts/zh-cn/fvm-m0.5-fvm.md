@@ -19,7 +19,7 @@ title: "FVM M0.5: 开始运行你自己的FVM节点！"
 _template: blog_detail_ch
 ---
 
-[Filecoin虚拟机](https://github.com/filecoin-project/fvm-specs)是基于WASM的IPLD执行环境，Filecoin区块链正对此进行整合。它旨在支持原生的Filecoin actors，这些actors所使用的的语言可编译为WASM(目前有的是 [Rust内置actors](https://github.com/filecoin-project/builtin-actors))以及为外部运行时（runtimes）[以太坊虚拟机 (EVM)](https://ethereum.org/en/developers/docs/evm/)编写的智能合约。要了解更多，可查看[Filecoin虚拟机介绍](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) 。
+[Filecoin虚拟机](https://github.com/filecoin-project/fvm-specs)是基于WASM的IPLD执行环境，Filecoin区块链正对此进行整合。它旨在支持原生的Filecoin actors，这些actors所使用的的语言可编译为WASM(目前有的是 [Rust内置actors](https://github.com/filecoin-project/builtin-actors))以及为外部运行时（runtimes）[以太坊虚拟机 (EVM)](https://ethereum.org/en/developers/docs/evm/)编写的智能合约。要了解更多，可查看[Filecoin虚拟机介绍](/blog/introducing-the-filecoin-virtual-machine/) 。
 
 最新的FVM M0.5里程碑增加了对[Fuhon](https://github.com/filecoin-project/cpp-filecoin)、[Forest](https://github.com/ChainSafe/forest)、[Lotus](https://github.com/filecoin-project/lotus)和[Venus](https://github.com/filecoin-project/venus)实现方案的支持，可以使用FVM来同步现有的Filecoin主网([网络版本v15 OhSnap](https://github.com/filecoin-project/community/discussions/74#discussioncomment-1922550))。根据[FVM路线图](https://fvm.filecoin.io/#roadmap-4)，这让项目迈过了“M0”里程碑，因此我们将其称为M0.5.
 

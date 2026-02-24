@@ -22,7 +22,7 @@ title: Filecoin虚拟机(FVM) M1里程碑 & 漏洞赏金计划和审计介绍
 _template: blog_detail_ch
 ---
 
-在[上周的FVM里程碑M0.5进展更新](https://filecoin.io/blog/posts/fvm-milestone-0.5-is-complete/)发布后，我们很高兴宣布[FVM虚拟机漏洞赏金计划](https://fvm.filecoin.io/#fvm-bug-bounty-program-7)并邀请漏洞猎手和社区开发者帮助寻找FVM M1里程碑代码基础的漏洞，以帮助作为[Filecoin网络升级v16 Skyr](https://github.com/filecoin-project/community/discussions/74?sort=new#discussioncomment-2392151)特性的5月份的FVM M1里程碑实施。
+在[上周的FVM里程碑M0.5进展更新](/blog/fvm-milestone-0.5-is-complete/)发布后，我们很高兴宣布[FVM虚拟机漏洞赏金计划](https://fvm.filecoin.io/#fvm-bug-bounty-program-7)并邀请漏洞猎手和社区开发者帮助寻找FVM M1里程碑代码基础的漏洞，以帮助作为[Filecoin网络升级v16 Skyr](https://github.com/filecoin-project/community/discussions/74?sort=new#discussioncomment-2392151)特性的5月份的FVM M1里程碑实施。
 
 Filecoin虚拟机（FVM）正通过几个里程碑的阶段加入到Filecoin的主网里。作为M1里程碑的一部分，Filecoin网络将会切换到只使用Filecoin虚拟机的状态。在所有的客户端实施方案上，从以前的虚拟机到采用基于基于Wasm的全新FVM参考架构，这是一个重大的改变。
 

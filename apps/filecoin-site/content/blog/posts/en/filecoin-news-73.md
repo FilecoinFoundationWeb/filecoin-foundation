@@ -22,7 +22,7 @@ related_article_3: content/blog/posts/filecoin-news-70.en.md
 
 ### Filecoin docs is moving to Gitbook 
 
-The Protocol Labs Docs Team is transitioning from Hugo, Doks, and Fleek to GitBook for hosting the Filecoin Docs website. This move aims to provide a more user-friendly experience for both contributors and readers, offering streamlined collaboration, version control, and customization options. GitBook also introduces AI-powered search features, making information retrieval faster and more efficient. Contributors can suggest edits using GitBook's user-friendly editor, ensuring accessibility, while the content remains the same, resulting in a smoother user experience with improved search functionality. [Learn more](https://filecoin.io/blog/posts/filecoin-docs-is-moving-to-gitbook/). 
+The Protocol Labs Docs Team is transitioning from Hugo, Doks, and Fleek to GitBook for hosting the Filecoin Docs website. This move aims to provide a more user-friendly experience for both contributors and readers, offering streamlined collaboration, version control, and customization options. GitBook also introduces AI-powered search features, making information retrieval faster and more efficient. Contributors can suggest edits using GitBook's user-friendly editor, ensuring accessibility, while the content remains the same, resulting in a smoother user experience with improved search functionality. [Learn more](/blog/filecoin-docs-is-moving-to-gitbook/). 
 
 ## Community 
 

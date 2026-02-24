@@ -24,19 +24,19 @@ title: Filecoin News 34
 
 ## Announcements
 
-[![](/uploads/fil-blog-2022-01-05-review-v3.webp)](https://filecoin.io/blog/posts/filecoin-in-2021-looking-back-at-a-year-of-exponential-growth/)
+[![](/uploads/fil-blog-2022-01-05-review-v3.webp)](/blog/filecoin-in-2021-looking-back-at-a-year-of-exponential-growth/)
 
 ### Filecoin 2021 in Review
 
-In 2021, the Filecoin network surpassed a combined storage capacity of 14+ EiB with the help of 3,600+ storage providers from around the globe. The community also welcomed over 400 new applications built by the community of 7,000 FIlecoin developers. All that in little more than a year since mainnet launch. Aside from the growth of the ecosystem, Filecoin is now an essential component of over 400 new applications that rely on the network for persistent storage needs. Some of these collaborators include Chainlink, OpenSea, Zcash, The Internet Archive, and more. Read [this report](https://filecoin.io/blog/posts/filecoin-in-2021-looking-back-at-a-year-of-exponential-growth/) to take a look at Filecoin’s extraordinary growth in 2021.
+In 2021, the Filecoin network surpassed a combined storage capacity of 14+ EiB with the help of 3,600+ storage providers from around the globe. The community also welcomed over 400 new applications built by the community of 7,000 FIlecoin developers. All that in little more than a year since mainnet launch. Aside from the growth of the ecosystem, Filecoin is now an essential component of over 400 new applications that rely on the network for persistent storage needs. Some of these collaborators include Chainlink, OpenSea, Zcash, The Internet Archive, and more. Read [this report](/blog/filecoin-in-2021-looking-back-at-a-year-of-exponential-growth/) to take a look at Filecoin’s extraordinary growth in 2021.
 
 ## Tools
 
-[![](/uploads/fil-blog-2022-xx-xx-metamask-flask-announcement_hu8a3a791cb96946ff51fa6071f7d8c9e8_603409_2000x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/metamask-flask-a-snap-for-filecoin/)
+[![](/uploads/fil-blog-2022-xx-xx-metamask-flask-announcement_hu8a3a791cb96946ff51fa6071f7d8c9e8_603409_2000x0_resize_q90_linear.webp)](/blog/metamask-flask-a-snap-for-filecoin/)
 
 ### MetaMask Flask: A Snap for Filecoin Devs
 
-Our friends at MetaMask are launching a new playground for experimental functionality. It’s called MetaMask Flask and it lets developers try out their ideas with a new tool called Snaps. Using this feature, you can extend the wallet’s capabilities, adding whatever you wish to see on the wallet without the official team’s involvement. The Protocol Labs team has worked with Chainsafe to develop a [snap](https://github.com/ChainSafe/filsnap) that lets users interact with Filecoin directly from MetaMask Flask. [Read more](https://filecoin.io/blog/posts/metamask-flask-a-snap-for-filecoin/) or watch Erik Marks’ [demo](https://youtu.be/14uEYdgyEr8) on how to get started.
+Our friends at MetaMask are launching a new playground for experimental functionality. It’s called MetaMask Flask and it lets developers try out their ideas with a new tool called Snaps. Using this feature, you can extend the wallet’s capabilities, adding whatever you wish to see on the wallet without the official team’s involvement. The Protocol Labs team has worked with Chainsafe to develop a [snap](https://github.com/ChainSafe/filsnap) that lets users interact with Filecoin directly from MetaMask Flask. [Read more](/blog/metamask-flask-a-snap-for-filecoin/) or watch Erik Marks’ [demo](https://youtu.be/14uEYdgyEr8) on how to get started.
 
 [![](/uploads/unnamed-7.webp)](https://medium.com/chainsafe-systems/chainsafe-storage-a-step-by-step-tutorial-on-how-to-store-and-retrieve-nft-data-f70988983ca)
 

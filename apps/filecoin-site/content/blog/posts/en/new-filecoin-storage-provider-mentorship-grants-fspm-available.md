@@ -23,7 +23,7 @@ _template: blog_detail
 
 [APPLY HERE!](https://factor8.typeform.com/fspm-sched?typeform-source=github.com)
 
-Last month the [Filecoin Storage Provider Mentorship Grants Program](https://filecoin.io/blog/posts/announcing-filecoin-storage-provider-mentorship-grants-fspm/) kicked off as a way to help qualified grantees become Storage Providers (SPs) or nascent SPs to scale their current operations.
+Last month the [Filecoin Storage Provider Mentorship Grants Program](/blog/announcing-filecoin-storage-provider-mentorship-grants-fspm/) kicked off as a way to help qualified grantees become Storage Providers (SPs) or nascent SPs to scale their current operations.
 
 The initial promotion of 10 hours of free consulting to the first 10 qualified SPs was almost immediately filled. As high demand for the program continues, we want SPs of all shapes and sizes to find a solution that works for them.
 
@@ -37,4 +37,4 @@ There are now three options SPs can choose from when working with Factor8 Soluti
 
 If you’d like to begin your journey as a Filecoin Storage Provider, please visit the [FSPM GitHub](https://github.com/filecoin-project/sp-mentorship-grants/blob/main/README.md) and look for the Factor8 Solutions application form. Applications from all backgrounds and regions are welcome, and qualified applicants will have a one-hour follow-up interview with our consultants to determine program fit.
 
-Be sure to visit the SP [landing page](https://sp.filecoin.io/) to explore more resources to get you started on your SP journey. You can also find more information on the [Filecoin blog](https://filecoin.io/blog/) including an overview of the [SP ecosystem](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/), the [economics](https://filecoin.io/blog/posts/the-economics-of-storage-providers/) of being an SP, and why one should consider [becoming](https://filecoin.io/blog/posts/why-become-a-filecoin-storage-provider/) an SP.
+Be sure to visit the SP [landing page](https://sp.filecoin.io/) to explore more resources to get you started on your SP journey. You can also find more information on the [Filecoin blog](https://filecoin.io/blog/) including an overview of the [SP ecosystem](/blog/a-deep-dive-into-the-storage-provider-ecosystem/), the [economics](/blog/the-economics-of-storage-providers/) of being an SP, and why one should consider [becoming](/blog/why-become-a-filecoin-storage-provider/) an SP.

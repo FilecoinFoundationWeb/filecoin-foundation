@@ -29,7 +29,7 @@ The FVM ([Filecoin Virtual Machine](https://fvm.filecoin.io)) brings smart contr
 
 ## Launching the FVM Bulletproofing initiative
 
-The FVM team at [Protocol Labs](https://protocol.ai/) has been working on [FVM Milestone 2.1](https://fvm.filecoin.io/#roadmap-4), bringing user programmability to the FVM. It is scheduled to go live on Filecoin mainnet on March ‘23, and big things are happening on the journey to mainnet: [Space Warp](https://filecoin.io/blog/posts/announcing-space-warp-journey-to-fvm-launch-on-filecoin-mainnet/).
+The FVM team at [Protocol Labs](https://protocol.ai/) has been working on [FVM Milestone 2.1](https://fvm.filecoin.io/#roadmap-4), bringing user programmability to the FVM. It is scheduled to go live on Filecoin mainnet on March ‘23, and big things are happening on the journey to mainnet: [Space Warp](/blog/announcing-space-warp-journey-to-fvm-launch-on-filecoin-mainnet/).
 
 This milestone adds an EVM runtime to the Filecoin Virtual Machine, support for Ethereum accounts, signatures, and transactions, and an Ethereum JSON-RPC endpoint in [Lotus](https://github.com/filecoin-project/lotus/). This milestone enables users to deploy code to the network for the first time, implying a step function change for the network.
 

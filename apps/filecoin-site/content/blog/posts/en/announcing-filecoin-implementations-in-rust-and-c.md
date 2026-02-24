@@ -38,7 +38,7 @@ Today, there are **four full node implementations** of the Filecoin protocol in 
 
 ![Four Filecoin Implementations](/blog/four-implementations.png)
 
-While the four Filecoin implementations are not yet feature-complete, they are getting really close. As published in our [most recent roadmap update](https://filecoin.io/blog/testnet-phase-2-update/), we are aiming for network interoperability between **lotus** and **go-filecoin** within the next few weeks. Interoperability with **fuhon** and **forest** will follow shortly afterwards. In the meantime, you can follow each implementation’s progress at its respective repo on GitHub:
+While the four Filecoin implementations are not yet feature-complete, they are getting really close. As published in our [most recent roadmap update](/blog/testnet-phase-2-update/), we are aiming for network interoperability between **lotus** and **go-filecoin** within the next few weeks. Interoperability with **fuhon** and **forest** will follow shortly afterwards. In the meantime, you can follow each implementation’s progress at its respective repo on GitHub:
 
 - [**go-filecoin**](https://github.com/filecoin-project/go-filecoin) (written in Go)
 - [**lotus**](https://github.com/filecoin-project/lotus) (written in Go)

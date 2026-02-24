@@ -48,7 +48,7 @@ NFTHack is bringing together a virtual collective of passionate creatives and en
 
 ### Fleek Introduces Automatic Archiving
 
-Fleek has announced that they are enabling automatic archiving on Filecoin for all sites and storage created on [**Fleek**](https://fleek.co/). This feature means Fleek users benefit from another degree of decentralization and permanence for anything they build with the protocol. Fleek’s support of Filecoin archiving means users who have websites or storage that run on IPFS with Fleek will now benefit from an automatic backup of all information on Filecoin. The v1 of Filecoin archiving on Fleek is just the beginning! Fleek continues to be a market leader in progressive decentralization for Web3, and we’re excited to support the team’s mission through IPFS and now Filecoin. [**Try Fleek**](https://app.fleek.co/) and benefit from Filecoin archiving at no cost to users. [**Read more about the integration in our recent blog post.**](https://filecoin.io/blog/posts/the-next-phase-of-fleek-with-filecoin/)
+Fleek has announced that they are enabling automatic archiving on Filecoin for all sites and storage created on [**Fleek**](https://fleek.co/). This feature means Fleek users benefit from another degree of decentralization and permanence for anything they build with the protocol. Fleek’s support of Filecoin archiving means users who have websites or storage that run on IPFS with Fleek will now benefit from an automatic backup of all information on Filecoin. The v1 of Filecoin archiving on Fleek is just the beginning! Fleek continues to be a market leader in progressive decentralization for Web3, and we’re excited to support the team’s mission through IPFS and now Filecoin. [**Try Fleek**](https://app.fleek.co/) and benefit from Filecoin archiving at no cost to users. [**Read more about the integration in our recent blog post.**](/blog/the-next-phase-of-fleek-with-filecoin/)
 
 [![](/uploads/textile-logo-symbol.webp)](https://textile.io/)
 
@@ -70,13 +70,13 @@ Taopaipai, a leading photography service in China, [**announced they will use IP
 
 Looking for a convenient way to quickly find Filecoin network chain data and analytics? Look no further, [**filscout.com**](http://filscout.com/) has you covered. Filscout is a Filecoin Network browser developed by the IPFSUnion team. Filscout has released its first version of the browser page, but is always looking for suggestions and ways to improve it. If you are interested in chatting with the team about how to make Filscout better, please contact them at **tech@ipfsunion.cn**.
 
-[![](/uploads/storage-deals.webp)](https://filecoin.io/blog/posts/how-storage-and-retrieval-deals-work-on-filecoin/)
+[![](/uploads/storage-deals.webp)](/blog/how-storage-and-retrieval-deals-work-on-filecoin/)
 
 ### How storage and retrieval deals work on Filecoin
 
 The Filecoin network achieves economies of scale by allowing anyone to participate as a storage provider. Currently the network is made up of [**hundreds of storage providers**](https://spacegap.github.io/) spread across the globe. Content addressing and cryptographic storage proofs verify that data is being stored correctly and securely over time on miners’ hardware, which creates a robust and reliable service.
 
-Check out [**this blog post**](https://filecoin.io/blog/posts/how-storage-and-retrieval-deals-work-on-filecoin/) that covers the basic stages of the two types of deals in Filecoin — storage deals and retrieval deals — and details their lifecycle.
+Check out [**this blog post**](/blog/how-storage-and-retrieval-deals-work-on-filecoin/) that covers the basic stages of the two types of deals in Filecoin — storage deals and retrieval deals — and details their lifecycle.
 
 ## Community
 

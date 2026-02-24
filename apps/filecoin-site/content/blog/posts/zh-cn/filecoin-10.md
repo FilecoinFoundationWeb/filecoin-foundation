@@ -69,7 +69,7 @@ Filecoin网络希望存储的文档具有持续可用性。未能为某个扇区
 
 #### WinningPoSt
 
-_WinningPoSt_ 是用于奖励存储矿工所做贡献的机制。在Filecoin网络，时间被分解成一系列纪元（epoch）——区块高度对应着随着时间流逝经过的纪元数。每个纪元开始，都会 _选出_ 少量存储矿工来挖新的区块（Filecoin使用[tipsets](https://filecoin.io/blog/tipsets-family-based-approach-to-consensus/)，它允许在同一高度挖出多个区块）。每个成功创建区块的矿工将获得奖励，并有机会向获取区块内消息的其他节点征收费用。
+_WinningPoSt_ 是用于奖励存储矿工所做贡献的机制。在Filecoin网络，时间被分解成一系列纪元（epoch）——区块高度对应着随着时间流逝经过的纪元数。每个纪元开始，都会 _选出_ 少量存储矿工来挖新的区块（Filecoin使用[tipsets](/blog/tipsets-family-based-approach-to-consensus/)，它允许在同一高度挖出多个区块）。每个成功创建区块的矿工将获得奖励，并有机会向获取区块内消息的其他节点征收费用。
 
 存储矿工被选出的概率与其存储算力相对应。与WindowPoSt相似的是，存储矿工需要在纪元结束前提交存储扇区的压缩证明。未能在必要的窗口完成WinningPoSt的矿工将失去出块的机会，但也不会因此受到惩罚。
 

@@ -38,7 +38,7 @@ This build of MetaMask is a special developer release that contains early suppor
 
 ### Filecoin and Chainlink Integration
 
-We’re excited to announce that [Chainlink](https://chain.link/) — the industry leading decentralized oracle solution—is integrating with [Filecoin](https://filecoin.io/) — the world’s largest open-source, decentralized storage network — to enable bidirectional connection between the Filecoin Network and smart contract enabled blockchains such as Ethereum. As a result, smart contract developers will have a full Web 3.0 infrastructure stack including blockchains for on-chain logic and state changes, Chainlink oracles for off-chain communication and computation, and Filecoin for decentralized storage and data solutions. [Learn more.](https://filecoin.io/blog/posts/filecoin-and-chainlink-integration/)
+We’re excited to announce that [Chainlink](https://chain.link/) — the industry leading decentralized oracle solution—is integrating with [Filecoin](https://filecoin.io/) — the world’s largest open-source, decentralized storage network — to enable bidirectional connection between the Filecoin Network and smart contract enabled blockchains such as Ethereum. As a result, smart contract developers will have a full Web 3.0 infrastructure stack including blockchains for on-chain logic and state changes, Chainlink oracles for off-chain communication and computation, and Filecoin for decentralized storage and data solutions. [Learn more.](/blog/filecoin-and-chainlink-integration/)
 
 ![](/uploads/truffle.webp)
 
@@ -58,7 +58,7 @@ We’re thrilled to announce that the Filecoin Foundation has committed 50,000 F
 
 ### Decentralized Data Markets with Filehive
 
-Recently, Filecoin-based data marketplace Filehive launched its beta app for public use. Filehive is built and maintained by OB1, a dapp development studio that has been behind OpenBazaar and Haven. Filehive is an open source marketplace to upload, maintain, buy, and/or grant datasets. The Filehive project came out of the Filecoin Grants Program and is built on top of Filecoin, [Powergate](https://docs.filecoin.io/build/powergate/), and Loom. It leverages the Filecoin network to incentivize the storage and licensing of datasets, which are retrieved from the IPFS network. [Learn more](https://filecoin.io/blog/posts/decentralized-data-markets-with-filehive/).
+Recently, Filecoin-based data marketplace Filehive launched its beta app for public use. Filehive is built and maintained by OB1, a dapp development studio that has been behind OpenBazaar and Haven. Filehive is an open source marketplace to upload, maintain, buy, and/or grant datasets. The Filehive project came out of the Filecoin Grants Program and is built on top of Filecoin, [Powergate](https://docs.filecoin.io/build/powergate/), and Loom. It leverages the Filecoin network to incentivize the storage and licensing of datasets, which are retrieved from the IPFS network. [Learn more](/blog/decentralized-data-markets-with-filehive/).
 
 ## Mine
 
@@ -73,7 +73,7 @@ The co-mining pilot will:
 - Identify the requirements for miners interested in co-mining
 - Identify the recommended path for miners interested in co-mining
 
-We are excited to run this co-mining pilot as the next step in the evolution of web3 infrastructure. If you are a miner interested in this pilot or simply looking to learn more about the program, read the [blog post](https://filecoin.io/blog/posts/livepeer-x-filecoin-co-mining-pilot/).
+We are excited to run this co-mining pilot as the next step in the evolution of web3 infrastructure. If you are a miner interested in this pilot or simply looking to learn more about the program, read the [blog post](/blog/livepeer-x-filecoin-co-mining-pilot/).
 
 ### rust-fil-proofs v6.1.0
 

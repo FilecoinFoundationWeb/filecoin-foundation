@@ -59,11 +59,11 @@ July 8th marked the beginning of [**Browsers 3000**](https://fil.org/events/), a
 
 You can watch the full Browsers 3000 event so far [**on YouTube**](https://www.youtube.com/watch?v=dARxOaRd6Mc). To drill down to the role that ENS is playing in the evolution of the browser, [**check out this learning session**](https://www.youtube.com/watch?v=_QW3RLLJ-oI&list=PLuhRWgmPaHtR2MDeMaiUcsBmBqpIBqFEP&index=1) from Makato Inoue, dev at [**Ethereum Name Service**](https://ens.domains/).
 
-[![](/uploads/fil-blog-2021-07-01-dorahacks-2.webp)](https://filecoin.io/blog/posts/filecoin-quadratic-funding-grant-round-1-at-dorahacks/)
+[![](/uploads/fil-blog-2021-07-01-dorahacks-2.webp)](/blog/filecoin-quadratic-funding-grant-round-1-at-dorahacks/)
 
 ### Filecoin Quadratic Funding Grant Round 1 at DoraHacks
 
-Protocol Labs is sponsoring a HackerLink Grant via DoraHacks to fund open source developer projects via donation, so that these projects can develop further into a startup in the Filecoin ecosystem. DoraHacks is a decentralized global hacker community and hackathon organizer focusing on blockchain with the mission of connecting hackers around the world and helping them solve critical issues in different industries. DoraHacks has organized 100+ featured hackathons, stewarded the launch of 3,000+ projects and connected 300,000+ hackers from 40+ countries worldwide. Learn more about the fund, how to apply, and more in [**this recent blog post**](https://filecoin.io/blog/posts/filecoin-quadratic-funding-grant-round-1-at-dorahacks/).
+Protocol Labs is sponsoring a HackerLink Grant via DoraHacks to fund open source developer projects via donation, so that these projects can develop further into a startup in the Filecoin ecosystem. DoraHacks is a decentralized global hacker community and hackathon organizer focusing on blockchain with the mission of connecting hackers around the world and helping them solve critical issues in different industries. DoraHacks has organized 100+ featured hackathons, stewarded the launch of 3,000+ projects and connected 300,000+ hackers from 40+ countries worldwide. Learn more about the fund, how to apply, and more in [**this recent blog post**](/blog/filecoin-quadratic-funding-grant-round-1-at-dorahacks/).
 
 ## Store
 
@@ -79,7 +79,7 @@ Protocol Labs is sponsoring a HackerLink Grant via DoraHacks to fund open source
 
 The Filecoin network recently crossed the Baseline Target Threshold. Filecoin block rewards are now primarily distributed according to the Baseline Minting policy. This provides ongoing incentives to maintain a baseline of storage capacity on the Filecoin network.
 
-[![](/uploads/miner-survey-graphic-v2.webp)](https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/)
+[![](/uploads/miner-survey-graphic-v2.webp)](/blog/the-evolution-of-a-lotus-node/)
 
 ### Miners, tell us about your operations and energy sources
 
@@ -97,11 +97,11 @@ Starting today, you can test Textile’s first functional bridge, which is deplo
 
 The Filecoin network successfully went over the HyperDrive upgrade on June 30th, 2021. Among the changes introduced in the new network version are FIPs [**0008**](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0008.md) and [**0013**](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0013.md), which optimize the rate of onboarding new storage to the network. Storage providers have begun benefiting from these FIPs, with the network onboarding a record high of 61 PiB on Sunday, June 11th! Stay tuned to see how the HyperDrive network transforms the Filecoin network moving forward.
 
-[![](/uploads/fil-blog-2021-07-13-snarks-website.webp)](https://filecoin.io/blog/posts/filecoin-zk-snarks-zero-knowledge-but-a-lot-of-zero-knowledge/)
+[![](/uploads/fil-blog-2021-07-13-snarks-website.webp)](/blog/filecoin-zk-snarks-zero-knowledge-but-a-lot-of-zero-knowledge/)
 
 ### SNARKs website launch
 
-For the past two years, CryptoComputeLab and CryptoNetLab (two of the Protocol Labs Research Development labs) have been working on bringing zk-SNARKs to the world and to the Filecoin Network. This week, the [**zk-SNARKs for the World**](https://research.protocol.ai/sites/snarks/) minisite launched! The site is a preview of the work done by the PL Research lab into how zk-SNARKs are applicable to the Filecoin network and to decentralized storage networks, and a preview what’s to come. [**Read more in this blog post**](https://filecoin.io/blog/posts/filecoin-zk-snarks-zero-knowledge-but-a-lot-of-zero-knowledge/).
+For the past two years, CryptoComputeLab and CryptoNetLab (two of the Protocol Labs Research Development labs) have been working on bringing zk-SNARKs to the world and to the Filecoin Network. This week, the [**zk-SNARKs for the World**](https://research.protocol.ai/sites/snarks/) minisite launched! The site is a preview of the work done by the PL Research lab into how zk-SNARKs are applicable to the Filecoin network and to decentralized storage networks, and a preview what’s to come. [**Read more in this blog post**](/blog/filecoin-zk-snarks-zero-knowledge-but-a-lot-of-zero-knowledge/).
 
 [![](/uploads/forest_logo.webp)](https://chainsafe.io/)
 

@@ -49,7 +49,7 @@ Messari recently shared its quarterly analysis on the Filecoin network. Some key
 
 ### The FVM Imaginarium: Developer Tooling, Hackathons and other Opportunities for Builders
 
-The [Filecoin Virtual Machine (FVM)](http://fvm.dev/) went live on mainnet on March 14th and since, builders have launched everything from [Filecoin pledging and leasing solutions](https://filecoin.io/blog/posts/fvm-imaginarium-staking-and-leasing-protocols/) to [token bridging protocols](https://filecoin.io/blog/posts/the-fvm-imaginarium-cross-chain-interoperability/). However, we are still just scratching the surface: storage, retrieval and compute applications, which combined are a 300 billion dollar industry, are now more accessible to tap into for Filecoin Ecosystem developers. The FVM enables developers to build a plethora of decentralized applications (dApps) on the Filecoin network and engender a data economy for a wide range of audiences from decentralized data computation services users to Filecoin Storage Providers and clients. [Read this blogpost](https://filecoin.io/blog/posts/the-fvm-imaginarium-developer-tooling-hackathons-and-other-opportunities-for-builders/) for an overview of developer tools that will help you get started on your journey building with FVM.
+The [Filecoin Virtual Machine (FVM)](http://fvm.dev/) went live on mainnet on March 14th and since, builders have launched everything from [Filecoin pledging and leasing solutions](/blog/fvm-imaginarium-staking-and-leasing-protocols/) to [token bridging protocols](/blog/the-fvm-imaginarium-cross-chain-interoperability/). However, we are still just scratching the surface: storage, retrieval and compute applications, which combined are a 300 billion dollar industry, are now more accessible to tap into for Filecoin Ecosystem developers. The FVM enables developers to build a plethora of decentralized applications (dApps) on the Filecoin network and engender a data economy for a wide range of audiences from decentralized data computation services users to Filecoin Storage Providers and clients. [Read this blogpost](/blog/the-fvm-imaginarium-developer-tooling-hackathons-and-other-opportunities-for-builders/) for an overview of developer tools that will help you get started on your journey building with FVM.
 
 ### FVM Growth: STFIL
 
@@ -57,7 +57,7 @@ FrogHub is one of the many teams that are building one of the exciting new appli
 
 ### Filecoin Bug Bounty Program Now Live on Immunefi
 
-As announced a few weeks ago, the [Filecoin Bug Bounty Program](https://security.filecoin.io/bug-bounty/) has been refreshed and is now [live on Immunefi](https://immunefi.com/bounty/filecoin/). It features increased rewards up to $500k USD for critical issues and inclusion of programmability features in scope. Post-launch, the community continues to be committed to guaranteeing the security of Filecoin. The network now counts with new and updated components: the FVM, the EVM runtime, and its dependencies. With this update, there is an invitation to security researchers, developers, and bug bunters to help the community identify latent risks and problems that may remain in the codebase after mainnet launch. Learn more about the program, the updated scope, rules and more in this [post](https://filecoin.io/blog/posts/refreshing-the-filecoin-bug-bounty-program/).
+As announced a few weeks ago, the [Filecoin Bug Bounty Program](https://security.filecoin.io/bug-bounty/) has been refreshed and is now [live on Immunefi](https://immunefi.com/bounty/filecoin/). It features increased rewards up to $500k USD for critical issues and inclusion of programmability features in scope. Post-launch, the community continues to be committed to guaranteeing the security of Filecoin. The network now counts with new and updated components: the FVM, the EVM runtime, and its dependencies. With this update, there is an invitation to security researchers, developers, and bug bunters to help the community identify latent risks and problems that may remain in the codebase after mainnet launch. Learn more about the program, the updated scope, rules and more in this [post](/blog/refreshing-the-filecoin-bug-bounty-program/).
 
 ### Graph Paper Capital’s GPC1
 
@@ -71,7 +71,7 @@ Alan Ransil, Filecoin Sustainability Lead, recently explained how leading web3 p
 
 ### Indexer Scalability for Ingest-heavy Workload
 
-There’s a simple strategy to handle index ingestion that requires less syncing and has no need for consensus. It is based on distributing ingestion over a pool of indexers in a way that allows nodes to be added as additional capacity is required. All of this happens without needing to move data around to rebalance storage. Dive into how to apply this strategy — as well as its pros and cons — on the [Filecoin blog](https://filecoin.io/blog/posts/indexer-scalability-for-ingest-heavy-workload/).
+There’s a simple strategy to handle index ingestion that requires less syncing and has no need for consensus. It is based on distributing ingestion over a pool of indexers in a way that allows nodes to be added as additional capacity is required. All of this happens without needing to move data around to rebalance storage. Dive into how to apply this strategy — as well as its pros and cons — on the [Filecoin blog](/blog/indexer-scalability-for-ingest-heavy-workload/).
 
 ## Events
 

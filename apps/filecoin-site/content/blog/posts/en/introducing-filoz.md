@@ -38,7 +38,7 @@ We do our work in deep partnership with many other public goods teams across the
 
 ## Filecoin 2024 Priorities
 
-As discussed in the [2023 wrap up](https://filecoin.io/blog/posts/2023-expanding-from-a-storage-network-to-enabling-open-services-for-data-part-ii/), Filecoin’s trajectory in 2024 includes 4 main opportunities:
+As discussed in the [2023 wrap up](/blog/2023-expanding-from-a-storage-network-to-enabling-open-services-for-data-part-ii/), Filecoin’s trajectory in 2024 includes 4 main opportunities:
 
 1. Bringing DePIN, Compute, Storage, and AI networks to Filecoin through L2s and deep integrations 💪
 2. Making Filecoin the fundamental storage layer for web3 🚀

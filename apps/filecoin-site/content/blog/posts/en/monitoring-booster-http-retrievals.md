@@ -17,7 +17,7 @@ related_article_2: content/blog/posts/protecting-booster-http-with-nginx.en.md
 related_article_3: content/blog/posts/serving-files-with-booster-http.en.md
 ---
 
-With the recent introduction of [serving files over HTTP](https://boost.filecoin.io/http-retrieval), storage providers will need to monitor the health of booster-http retrievals. To learn more about how to serve HTTP retrievals as a Filecoin storage provider, please reference our earlier blog posts on [serving files with booster-http](https://filecoin.io/blog/posts/serving-files-with-booster-http/) and [protecting booster-http with nginx](https://filecoin.io/blog/posts/protecting-booster-http-with-nginx/). 
+With the recent introduction of [serving files over HTTP](https://boost.filecoin.io/http-retrieval), storage providers will need to monitor the health of booster-http retrievals. To learn more about how to serve HTTP retrievals as a Filecoin storage provider, please reference our earlier blog posts on [serving files with booster-http](/blog/serving-files-with-booster-http/) and [protecting booster-http with nginx](/blog/protecting-booster-http-with-nginx/). 
 
 Once storage providers have set up their booster-http service, it is important to monitor HTTP retrieval activity to ensure a smooth experience for clients. 
 

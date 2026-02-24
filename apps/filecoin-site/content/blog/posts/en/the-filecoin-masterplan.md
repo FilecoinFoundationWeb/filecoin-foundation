@@ -38,7 +38,7 @@ Altogether, this will position Filecoin as a “layer 0” for computational net
 
 The good news is that the first step in the plan has already been accomplished by the hard work of the Filecoin community over the past two years since the mainnet launch. The network has grown to over [15.9 EiB](https://dashboard.starboard.ventures/capacity-services) in raw byte storage capacity thanks to a motivated community of Storage Providers around the world.
 
-This success has come by the hand of programs like [FIL+](https://filplus.d.interplanetary.one/about) and [ESPA Bootcamps](https://www.web3espa.io/) as well as [hardware providers](https://filecoin.io/blog/posts/espa-bootcamp-amd-s-view-on-filecoin-and-web3/) dedicated to make SP operations easier and more effective. Other efforts, like [Filecoin Green](https://filecoin.io/blog/posts/filecoin-green/), are also making sure that this growth goes hand in hand with sustainability goals such as becoming a carbon-neutral — or even carbon-negative — network.
+This success has come by the hand of programs like [FIL+](https://filplus.d.interplanetary.one/about) and [ESPA Bootcamps](https://www.web3espa.io/) as well as [hardware providers](/blog/espa-bootcamp-amd-s-view-on-filecoin-and-web3/) dedicated to make SP operations easier and more effective. Other efforts, like [Filecoin Green](/blog/filecoin-green/), are also making sure that this growth goes hand in hand with sustainability goals such as becoming a carbon-neutral — or even carbon-negative — network.
 
 ## Part 2: Massive Data Onboarding
 
@@ -58,7 +58,7 @@ Filecoin’s storage capacity has solved part of the problem of web3 infrastruct
 
 The FVM will bring smart contracts and programmability over the blockchain’s state, while compute over data will enable large-scale computation to take place over the network’s data. As a result, the Filecoin Network will be home to decentralized computation networks that will be built on top of it and rely on data that is stored on Filecoin. Together with current research being done at ConsensusLab around scalable throughput, these developments will enable new kinds of consumer-facing decentralized web3 applications.
 
-These capabilities will also count on bridges to other networks so that Filecoin can also compute data from other chains. Read more about [what the FVM unlocks](https://filecoin.io/blog/posts/what-the-fvm-unlocks/) and take a look at the project’s [roadmap](https://fvm.filecoin.io/#roadmap-4).
+These capabilities will also count on bridges to other networks so that Filecoin can also compute data from other chains. Read more about [what the FVM unlocks](/blog/what-the-fvm-unlocks/) and take a look at the project’s [roadmap](https://fvm.filecoin.io/#roadmap-4).
 
 ## Onwards and Upwards
 

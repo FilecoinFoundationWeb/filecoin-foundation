@@ -22,11 +22,11 @@ title: "SnarkPack v2: A New Version of Filecoin’s Proof Aggregator"
 _template: blog_detail
 ---
 
-In the recent [Filecoin Network v16 Skyr Upgrade](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/), a new version of the SnarkPack proof aggregation library was released. This version did not introduce any new functionality, but instead hardened the cryptographic protocol itself. This post details what motivated the examination of the SnarkPack library, the issues we discovered, and how they were resolved and shipped into the Filecoin Network.
+In the recent [Filecoin Network v16 Skyr Upgrade](/blog/filecoin-v16-network-upgrade-skyr/), a new version of the SnarkPack proof aggregation library was released. This version did not introduce any new functionality, but instead hardened the cryptographic protocol itself. This post details what motivated the examination of the SnarkPack library, the issues we discovered, and how they were resolved and shipped into the Filecoin Network.
 
 ## What is SnarkPack
 
-At the heart of the Filecoin protocol are a collection of cryptographic proofs, called [Proofs-of-Replication](https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/) (PoReps). These PoReps make possible the central promise of the Filecoin network: decentralized, **verifiable** storage.
+At the heart of the Filecoin protocol are a collection of cryptographic proofs, called [Proofs-of-Replication](/blog/what-sets-us-apart-filecoin-s-proof-system/) (PoReps). These PoReps make possible the central promise of the Filecoin network: decentralized, **verifiable** storage.
 
 SnarkPack is a cryptographic protocol to aggregate and verify multiple proofs at the same time in an efficient manner. The Filecoin protocol uses the SnarkPark library on Proofs-of-Replication, allowing for faster onboarding of storage to the network. More information on the SnarkPack library can be found by watching the presentation at [Financial Crypto ‘22](https://www.youtube.com/watch?v=fHQW_SIuv2o), and reading [the corresponding paper](https://research.protocol.ai/publications/snarkpack-practical-snark-aggregation/) or the associated [blog post](https://research.protocol.ai/blog/2021/snarkpack-how-to-aggregate-snarks-efficiently/).
 

@@ -20,7 +20,7 @@ _template: blog_detail_ch
 
 目前，Filecoin被视为分布式的数据存储及检索网络。通过全球数千个存储提供者，它为世界提供了超过18 EiB的分布式数据存储能力。
 
-不过，存储能力只是一个开始。[最近推出的](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/) Filecoin v16网络升级版本Skyr完成了启动Filecoin虚拟机（FVM）的首个里程碑。当这个流程完成后，建造者们将可以计算和分析Filecoin上存储的数据！
+不过，存储能力只是一个开始。[最近推出的](/blog/filecoin-v16-network-upgrade-skyr/) Filecoin v16网络升级版本Skyr完成了启动Filecoin虚拟机（FVM）的首个里程碑。当这个流程完成后，建造者们将可以计算和分析Filecoin上存储的数据！
 
 _FVM = 可证明的存储 + 智能合约。_
 

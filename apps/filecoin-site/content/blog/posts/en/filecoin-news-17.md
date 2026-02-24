@@ -59,13 +59,13 @@ Chainlink’s spring hackathon, which kicked off earlier in March, wrapped up mi
 
 ## Store
 
-[![](/uploads/fil-blog-nft-storage-1.webp)](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/)
+[![](/uploads/fil-blog-nft-storage-1.webp)](/blog/introducing-nft.storage-free-decentralized-storage-for-nfts/)
 
 ### Introducing NFT.Storage: Free Decentralized Storage for NFTs
 
 We are excited to introduce [**NFT.Storage**](https://nft.storage/), a service backed by Protocol Labs and Pinata specifically for storing NFT data. NFT.Storage allows developers to protect their NFT assets and associated metadata through content addressing and decentralized storage – ensuring that all NFTs follow best practices to stay accessible long-term.
 
-NFT.Storage lets developers store NFT data on decentralized networks easily, securely, and for free! With just a few lines of code, anyone can leverage the power of IPFS and Filecoin to ensure the persistence of their NFTs. [**Learn more about how it works, how to participate and what’s next.**](https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/)
+NFT.Storage lets developers store NFT data on decentralized networks easily, securely, and for free! With just a few lines of code, anyone can leverage the power of IPFS and Filecoin to ensure the persistence of their NFTs. [**Learn more about how it works, how to participate and what’s next.**](/blog/introducing-nft.storage-free-decentralized-storage-for-nfts/)
 
 [![](/uploads/videocoin-logo.webp)](https://medium.com/videocoin/the-first-videonft-on-videocoin-filecoin-live-demo-91a305509b34)
 
@@ -83,11 +83,11 @@ Join us Tuesday, May 11 at 2pm UTC for Filecoin Plus Day to learn about the fund
 
 Over the course of three hours, we’ll hear from the project architects, Filecoin Plus users, cryptoecon experts, miners, and more – all working together to maximize the amount of useful storage on Filecoin by adding a layer of social trust to the network. [**Learn more about the event**](https://filecoinfoundation.medium.com/join-us-for-filecoin-plus-day-a06b9c4acf85)
 
-[![](/uploads/filecoin-12-bug.webp)](https://filecoin.io/blog/posts/filecoin-network-v12/)
+[![](/uploads/filecoin-12-bug.webp)](/blog/filecoin-network-v12/)
 
 ### Network Upgrade v12
 
-On April 29th, 2021, the Filecoin network upgraded to version 12. The upgrade introduced [**version 4**](https://github.com/filecoin-project/specs-actors/releases/tag/v4.0.0) of the [**specs-actors implementation**](https://github.com/filecoin-project/specs-actors), the set of built-in actors that specify the rules of the Filecoin protocol. The new version of specs-actors was designed to be significantly more performant, thus speeding up block validation times. To learn more about the upgrade, the motivation behind it, and performance updates, check out our most recent [**blog post**](https://filecoin.io/blog/posts/filecoin-network-v12/).
+On April 29th, 2021, the Filecoin network upgraded to version 12. The upgrade introduced [**version 4**](https://github.com/filecoin-project/specs-actors/releases/tag/v4.0.0) of the [**specs-actors implementation**](https://github.com/filecoin-project/specs-actors), the set of built-in actors that specify the rules of the Filecoin protocol. The new version of specs-actors was designed to be significantly more performant, thus speeding up block validation times. To learn more about the upgrade, the motivation behind it, and performance updates, check out our most recent [**blog post**](/blog/filecoin-network-v12/).
 
 ## Community
 
