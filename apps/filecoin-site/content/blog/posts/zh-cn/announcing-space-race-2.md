@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/推出第二轮太空竞赛
-  - /zh-cn/blog/space-race-2
 author: ""
 categories:
   - updates

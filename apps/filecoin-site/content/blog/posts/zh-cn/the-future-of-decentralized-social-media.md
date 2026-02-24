@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/去中心化社交媒体的未来展望
 author: ""
 categories:
   - updates

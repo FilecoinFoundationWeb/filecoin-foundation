@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/了解Filecoin流通供应机制
 author: Filecoin Project
 categories:
   - updates
@@ -25,7 +23,7 @@ title: "了解Filecoin流通供应机制 "
 
 ## Filecoin 生态
 
-Filecoin生态中不断增长的动力是所有Filecoin利益相关者的使用场景、工具和基础设施。 自2020年10月15日[发布Filecoin主网](https://filecoin.io/blog/posts/the-journey-to-filecoin-mainnet-liftoff/)以来，该网络目前已经完成了许多重要的里程碑。
+Filecoin生态中不断增长的动力是所有Filecoin利益相关者的使用场景、工具和基础设施。 自2020年10月15日[发布Filecoin主网](/blog/the-journey-to-filecoin-mainnet-liftoff/)以来，该网络目前已经完成了许多重要的里程碑。
 
 - 网络上已经有来自700多名矿工超过1EiB的存储容量。
 - 由90多个项目组成的生态，不断在网络上创建应用程序、开发者工具和基础设施。

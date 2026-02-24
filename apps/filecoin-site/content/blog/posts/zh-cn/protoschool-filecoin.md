@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/filecoin-comes-to-protoschool
 author: ""
 categories:
   - updates
@@ -31,9 +29,9 @@ Filecoin最具特色的功能之一是其可验证的存储方式。在最近的
 
 [**现在开启教程之旅**](https://proto.school/#/verifying-storage-on-filecoin)
 
-![table of contents](https://filecoin.io/blog/protoschool-verifying-storage-toc.png)
+![table of contents](/blog/protoschool-verifying-storage-toc.png)
 
-![multiple-choice quiz](https://filecoin.io/blog/protoschool-verifying-storage-mult-choice.png)
+![multiple-choice quiz](/blog/protoschool-verifying-storage-mult-choice.png)
 
 如果您还没有看过，我们建议您先阅读[分布式数据结构](https://proto.school/#/data-structures)教程，然后再研究“验证Filecoin上的存储”。它探讨了在分布式网络上建立信任的各种关键概念，包括加密哈希、内容寻址、有向无环图（DAG）和Merkle树。
 

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/mainnet-liftoff-week-recap/
 author: ""
 categories:
   - updates

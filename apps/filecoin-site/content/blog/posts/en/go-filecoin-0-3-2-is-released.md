@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/go-filecoin-0-3-2-release/
 author: ""
 categories:
   - updates

@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/快来参与我们的可信设置环节
-  - /zh-cn/blog/participate-in-our-trusted-setup-ceremony
 author: ""
 categories:
   - updates

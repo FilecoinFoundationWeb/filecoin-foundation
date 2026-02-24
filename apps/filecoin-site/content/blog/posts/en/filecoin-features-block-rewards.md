@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-features-block-rewards/
 author: ""
 categories:
   - updates

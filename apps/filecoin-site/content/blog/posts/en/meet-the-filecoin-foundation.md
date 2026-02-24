@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-foundation
 author: ""
 categories:
   - updates

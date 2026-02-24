@@ -4,13 +4,6 @@ export function blogFields(collection = 'post'): Array<TinaField> {
   return [
     {
       type: 'string',
-      name: 'aliases',
-      label: 'Alias',
-      description: 'Any alternative urls that should redirect to this post',
-      list: true,
-    },
-    {
-      type: 'string',
       name: 'title',
       label: 'Title',
       isTitle: true,

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/sale-completed/
 author: ""
 categories:
   - updates

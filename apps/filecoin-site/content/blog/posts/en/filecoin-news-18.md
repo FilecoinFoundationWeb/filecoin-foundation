@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -40,23 +39,23 @@ We are thrilled to announce that we have received more than 150 applications for
 
 From social money & NFT applications to cross-chain interoperable protocols, we are excited to see how active the Web3 community is around building the next generation of infrastructure, tools and consumer applications. Only 15% of applications will be admitted for the next cohort. All teams will hear back on the status of their application by no later than Friday, May 28th, 2021, with the new cohort starting the program in early June.
 
-[![](/uploads/fil-longhash-demo-symbol.webp)](https://filecoin.io/blog/posts/longhash-ventures-demo-day-nft-and-media-startups/)
+[![](/uploads/fil-longhash-demo-symbol.webp)](/blog/longhash-ventures-demo-day-nft-and-media-startups/)
 
 ### Filecoin Frontier Accelerator Demo Day: NFTs and Media Startups
 
 On April 23, the **Filecoin Frontier Accelerator II powered by LongHash Ventures**, hosted a demo day to showcase the 11 teams that completed the 3-month accelerator program. During the program, the teams received hands-on venture support, world-class mentorship, dedicated resources from the Filecoin community, and a $20,000 grant to continue building on the Filecoin network.
 
-[**Check out this post**](https://filecoin.io/blog/posts/longhash-ventures-demo-day-nft-and-media-startups/) that profiles some of the innovative startups building applications for non-fungible tokens (NFTs) and media solutions with Filecoin’s technology: Curio, Flame, Huddle 01, Myel, NonEntropy Tech, Numbers Protocol, and OP Games.
+[**Check out this post**](/blog/longhash-ventures-demo-day-nft-and-media-startups/) that profiles some of the innovative startups building applications for non-fungible tokens (NFTs) and media solutions with Filecoin’s technology: Curio, Flame, Huddle 01, Myel, NonEntropy Tech, Numbers Protocol, and OP Games.
 
 ## Store
 
-[![](/uploads/fil-blog-wolfram-shadows.webp)](https://filecoin.io/blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/)
+[![](/uploads/fil-blog-wolfram-shadows.webp)](/blog/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/)
 
 ### Wolfram Blockchain Labs Expanding Storage Functionality with IPFS & Filecoin for Dapp Development
 
 Expanding available tooling options for developers to create new decentralized applications is critical for the growth of the IPFS and Filecoin ecosystems. In a new collaboration with Protocol Labs, [**Wolfram Blockchain Labs**](https://www.wolframblockchainlabs.com/) (WBL) will offer developers the opportunity to leverage storage, peer-to-peer networking, and other protocols to complement their existing applications.
 
-WBL is integrating their distributed ledger technology platform with IPFS and Filecoin to add new decentralized functionality and expanded storage to their existing blockchain features. Through the integration, developers will be able to access new tool sets from Wolfram Technologies, including the Wolfram programming language, Cloud, and Notebooks. [**Read our recent blog post to learn more about the collaboration.**](https://filecoin.io/blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/)
+WBL is integrating their distributed ledger technology platform with IPFS and Filecoin to add new decentralized functionality and expanded storage to their existing blockchain features. Through the integration, developers will be able to access new tool sets from Wolfram Technologies, including the Wolfram programming language, Cloud, and Notebooks. [**Read our recent blog post to learn more about the collaboration.**](/blog/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/)
 
 ![](/uploads/estuary-cube-faked.webp)
 

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/investing-filecoin-ecosystem
 author: ""
 categories:
   - updates

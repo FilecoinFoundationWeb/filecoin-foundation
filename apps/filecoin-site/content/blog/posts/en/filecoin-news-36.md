@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -23,11 +22,11 @@ title: Filecoin News 36
 
 ## Announcements
 
-[![](/uploads/153975496-cfc4b645-16df-4f64-ade0-ca8892b15a3b_hu1b15077720d77b4776146c36a7d8d42b_297018_2000x0_resize_q90_linear_2.webp)](https://filecoin.io/blog/posts/filecoin-and-polygon-studios-deepen-collaboration-in-nfts-games-and-the-metaverse/)
+[![](/uploads/153975496-cfc4b645-16df-4f64-ade0-ca8892b15a3b_hu1b15077720d77b4776146c36a7d8d42b_297018_2000x0_resize_q90_linear_2.webp)](/blog/filecoin-and-polygon-studios-deepen-collaboration-in-nfts-games-and-the-metaverse/)
 
 ### Filecoin and Polygon Studios Deepen Collaboration in NFTs, Games, and the Metaverse
 
-As two of the most important solutions for Web3 games and NFTs, Filecoin and Polygon are continuing [a collaborative effort](https://filecoin.io/blog/posts/filecoin-and-polygon-studios-deepen-collaboration-in-nfts-games-and-the-metaverse/) to drive the growth of projects in the space. The two ecosystems are supporting game developers and NFT projects with a series of tutorials, grants, and hackathons for builders in the Polygon network looking to leverage IPFS and Filecoin for decentralized storage. [Learn more on the Filecoin blog](https://filecoin.io/blog/posts/filecoin-and-polygon-studios-deepen-collaboration-in-nfts-games-and-the-metaverse/)!
+As two of the most important solutions for Web3 games and NFTs, Filecoin and Polygon are continuing [a collaborative effort](/blog/filecoin-and-polygon-studios-deepen-collaboration-in-nfts-games-and-the-metaverse/) to drive the growth of projects in the space. The two ecosystems are supporting game developers and NFT projects with a series of tutorials, grants, and hackathons for builders in the Polygon network looking to leverage IPFS and Filecoin for decentralized storage. [Learn more on the Filecoin blog](/blog/filecoin-and-polygon-studios-deepen-collaboration-in-nfts-games-and-the-metaverse/)!
 
 [![](/uploads/pl-launchpad.webp)](https://protocol.ai/blog/announcing-pl-launchpad/)
 
@@ -65,11 +64,11 @@ Stay up to date with all things Lotus by following [@lotus_web3](https://twitter
 
 ## Community
 
-[![](/uploads/piknik_hu4cd77d10ca3d20fe1b747189503086ad_321150_2000x0_resize_q90_linear_2.webp)](https://filecoin.io/blog/posts/piknik-s-espa-makes-way-for-web3-enterprise-storage-on-filecoin/)
+[![](/uploads/piknik_hu4cd77d10ca3d20fe1b747189503086ad_321150_2000x0_resize_q90_linear_2.webp)](/blog/piknik-s-espa-makes-way-for-web3-enterprise-storage-on-filecoin/)
 
 ### PiKNiK’s ESPA Makes Way for Web3 Enterprise Storage on Filecoin
 
-PiKNiK makes it easy for anyone to use Filecoin to their advantage without any technical knowledge requirement. The turnkey Web3 storage solution just announced the Enterprise Storage Provider Accelerator ([ESPA](https://www.web3espa.io/)) to help startups, data centers, CTOs, and existing storage providers become successful members of the Filecoin network. During the 7-month program, 50 organizations will learn how to leverage the untapped storage space on the network and scale independently. [Read more](https://filecoin.io/blog/posts/piknik-s-espa-makes-way-for-web3-enterprise-storage-on-filecoin/) on how Filecoin is at the center of the program and be sure to [sign up](https://www.web3espa.io/sign-up) for the April, July, or October cohorts.
+PiKNiK makes it easy for anyone to use Filecoin to their advantage without any technical knowledge requirement. The turnkey Web3 storage solution just announced the Enterprise Storage Provider Accelerator ([ESPA](https://www.web3espa.io/)) to help startups, data centers, CTOs, and existing storage providers become successful members of the Filecoin network. During the 7-month program, 50 organizations will learn how to leverage the untapped storage space on the network and scale independently. [Read more](/blog/piknik-s-espa-makes-way-for-web3-enterprise-storage-on-filecoin/) on how Filecoin is at the center of the program and be sure to [sign up](https://www.web3espa.io/sign-up) for the April, July, or October cohorts.
 
 [![](/uploads/ipfs-blog-impact-on-music-media-and-culture-dba38011.webp)](https://blog.ipfs.tech/2022-02-10-ipfs-filecoin-impact-on-music-media-culture/)
 

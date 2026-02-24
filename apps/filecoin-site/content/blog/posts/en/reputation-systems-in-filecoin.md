@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/posts/understanding-filecoin-s-reputation-system
 author: ""
 categories:
   - updates

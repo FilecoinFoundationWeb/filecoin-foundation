@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -23,17 +22,17 @@ title: Filecoin News 41
 
 ## Announcements
 
-[![](/uploads/162950357-a07d89d7-1472-40d2-8588-79e7f150fb61.webp)](https://filecoin.io/blog/posts/announcing-fil-singapore-summit/)
+[![](/uploads/162950357-a07d89d7-1472-40d2-8588-79e7f150fb61.webp)](/blog/announcing-fil-singapore-summit/)
 
 ### Announcing FIL-Singapore Summit
 
-Over a thousand Web3 enthusiasts will be joining members of the Filecoin community for FIL-Singapore Summit, happening from August 16th-19th. The event will be a celebration of all the amazing progress in the ecosystem and a look ahead to the exciting future of the network. You can expect to hear from world-class speakers, join side events and meetups, and participate in challenging hackathons. [Sign up](https://docs.google.com/forms/d/e/1FAIpQLSdtEtC0oAYdGDqw0csPyeIY3NgT1qm0YmZkX_wNY794HpiVUQ/viewform) now to host your own workshop or meetup at the event and read more on the Filecoin [blog](https://filecoin.io/blog/posts/announcing-fil-singapore-summit/).
+Over a thousand Web3 enthusiasts will be joining members of the Filecoin community for FIL-Singapore Summit, happening from August 16th-19th. The event will be a celebration of all the amazing progress in the ecosystem and a look ahead to the exciting future of the network. You can expect to hear from world-class speakers, join side events and meetups, and participate in challenging hackathons. [Sign up](https://docs.google.com/forms/d/e/1FAIpQLSdtEtC0oAYdGDqw0csPyeIY3NgT1qm0YmZkX_wNY794HpiVUQ/viewform) now to host your own workshop or meetup at the event and read more on the Filecoin [blog](/blog/announcing-fil-singapore-summit/).
 
-[![](/uploads/image-6.webp)](https://filecoin.io/blog/posts/announcing-filecoin-storage-provider-mentorship-grants-fspm/)
+[![](/uploads/image-6.webp)](/blog/announcing-filecoin-storage-provider-mentorship-grants-fspm/)
 
 ### Announcing Filecoin Storage Provider Mentorship Grants (FSPM)
 
-On April 18th, the Filecoin ecosystem launched the Filecoin Storage Provider Mentorship Grants (FSPM), a program where qualified grantees can receive subsidized expert SP operator consulting. This is the perfect opportunity for those interested in becoming an SP or nascent SPs looking to scale their current operations. As part of the FSPM kick-off, for a limited time only, 10 qualified applicants will receive 10 hours of fully subsidized consulting services. Find out more in this [blog](https://filecoin.io/blog/posts/announcing-filecoin-storage-provider-mentorship-grants-fspm/).
+On April 18th, the Filecoin ecosystem launched the Filecoin Storage Provider Mentorship Grants (FSPM), a program where qualified grantees can receive subsidized expert SP operator consulting. This is the perfect opportunity for those interested in becoming an SP or nascent SPs looking to scale their current operations. As part of the FSPM kick-off, for a limited time only, 10 qualified applicants will receive 10 hours of fully subsidized consulting services. Find out more in this [blog](/blog/announcing-filecoin-storage-provider-mentorship-grants-fspm/).
 
 ## Community
 
@@ -63,11 +62,11 @@ From the Filecoin Foundation and Protocol Labs, the Filecon Orbit Community Prog
 
 ## Tools
 
-[![](/uploads/164675419-d7e226dc-8790-4931-9687-23e985eb9777.webp)](https://filecoin.io/blog/posts/introducing-lurk-a-programming-language-for-recursive-zk-snarks/)
+[![](/uploads/164675419-d7e226dc-8790-4931-9687-23e985eb9777.webp)](/blog/introducing-lurk-a-programming-language-for-recursive-zk-snarks/)
 
 ### Introducing Lurk: A programming language for recursive zk-SNARKs
 
-The Lurk programming language’s [repositories](https://github.com/lurk-lang) are now open to the public. Lurk is a Turing-complete programming language for recursive zk-SNARKs (zero knowledge Succinct Non-interactive ARguments of Knowledge) that will enable new possibilities for SNARK proofs, blockchain consensus, the Filecoin Virtual Machine (FVM), decentralized apps, data integration with IPFS and IPLD, and more. [Read along](https://filecoin.io/blog/posts/introducing-lurk-a-programming-language-for-recursive-zk-snarks/) and learn more about how developers can leverage this new tool.
+The Lurk programming language’s [repositories](https://github.com/lurk-lang) are now open to the public. Lurk is a Turing-complete programming language for recursive zk-SNARKs (zero knowledge Succinct Non-interactive ARguments of Knowledge) that will enable new possibilities for SNARK proofs, blockchain consensus, the Filecoin Virtual Machine (FVM), decentralized apps, data integration with IPFS and IPLD, and more. [Read along](/blog/introducing-lurk-a-programming-language-for-recursive-zk-snarks/) and learn more about how developers can leverage this new tool.
 
 ## Events
 

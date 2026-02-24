@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/resolving-the-chain-halt
 author: ""
 categories:
   - updates
@@ -36,7 +34,7 @@ Tests for the Filecoin actors cover the code in question, but do not include a m
 
 ## Outage Impact
 
-Above all else, it should be emphasized that during the outage no data was lost. While the inability to mint new blocks temporarily inhibited transactions on the network, all data residing with storage providers was safe and ready to go once the network resumed operation. Furthermore, it is important to note that the specification for the Filecoin protocol provides for retrieval of data even in the event of a chain halt. Thus, while on-chain transactions were impossible for the duration of the event, the core functionality of the Filecoin network remained intact. Additionally, the fix put in place ensured that mining operations themselves were not penalized for the outage; instead, [consensus slashing](https://filecoin.io/blog/filecoin-features-slashing/) was temporarily suspended to prioritize and encourage network recovery.
+Above all else, it should be emphasized that during the outage no data was lost. While the inability to mint new blocks temporarily inhibited transactions on the network, all data residing with storage providers was safe and ready to go once the network resumed operation. Furthermore, it is important to note that the specification for the Filecoin protocol provides for retrieval of data even in the event of a chain halt. Thus, while on-chain transactions were impossible for the duration of the event, the core functionality of the Filecoin network remained intact. Additionally, the fix put in place ensured that mining operations themselves were not penalized for the outage; instead, [consensus slashing](/blog/filecoin-features-slashing/) was temporarily suspended to prioritize and encourage network recovery.
 
 ## Rapid Response
 

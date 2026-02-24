@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/roadmap-update-february-2020/
 author: ""
 categories:
   - updates
@@ -27,7 +25,7 @@ title: Filecoin roadmap update February 2020
 _template: blog_detail
 ---
 
-In this blog post, we cover recent progress since launching Testnet Phase 1 and updated roadmap information about Testnet Phase 2 and mainnet launch. Please review our [Roadmap Update Q4 2019](/blog/filecoin-roadmap-update-q4-2019/) and [Testnet Phase 2 Update](https://filecoin.io/blog/testnet-phase-2-update/) (in that order) for additional context.
+In this blog post, we cover recent progress since launching Testnet Phase 1 and updated roadmap information about Testnet Phase 2 and mainnet launch. Please review our [Roadmap Update Q4 2019](/blog/filecoin-roadmap-update-q4-2019/) and [Testnet Phase 2 Update](/blog/testnet-phase-2-update/) (in that order) for additional context.
 
 ## Where we are now
 

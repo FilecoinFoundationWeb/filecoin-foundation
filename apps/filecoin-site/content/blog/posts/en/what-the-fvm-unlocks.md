@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -25,7 +24,7 @@ _template: blog_detail
 
 Currently, Filecoin is known for being a decentralized storage and retrieval network. It provides over 18 EiB of distributed data storage capacity to the world through thousands of Storage Providers globally.
 
-But storage is only the start. Skyr, the [recently launched](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/) Filecoin v16 Network Upgrade, completed the first milestone in the launch of the Filecoin Virtual Machine (FVM). Once the process is complete, builders will be able to compute and analyze over and with the data on Filecoin!
+But storage is only the start. Skyr, the [recently launched](/blog/filecoin-v16-network-upgrade-skyr/) Filecoin v16 Network Upgrade, completed the first milestone in the launch of the Filecoin Virtual Machine (FVM). Once the process is complete, builders will be able to compute and analyze over and with the data on Filecoin!
 
 _FVM = Provable storage + smart contracts._
 

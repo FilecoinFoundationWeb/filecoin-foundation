@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -30,7 +29,7 @@ _template: blog_detail_ch
 
 **Web3周末**是由Protocol Labs, Audius和以太坊基金会赞助的，它将会以线上见面的形式，聚集一批热情的创意人士和工程师，从而打造一个旨在探索及开发Web3应用的周末。在这个黑客松期间，你可以获得一个庞大社区的专家、导师、创造者、赞助商及其他有意助你设计和打造未来网络的社区成员。活动提供了25000美元以上的多种形式的奖项
 
-[![](/uploads/launchpad-icon-logo-with-space-fill.webp)](https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-update/)
+[![](/uploads/launchpad-icon-logo-with-space-fill.webp)](/blog/filecoin-launchpad-accelerator-ii-update/)
 
 ### Tachyon支持的Filecoin Launchpad 加速营的新进展
 
@@ -38,23 +37,23 @@ _template: blog_detail_ch
 
 从社媒通证到NFT（非同质代币）应用，再到跨链互操作协议，我们对Web3社区如此活跃地建造下一代的基础设施、工具和消费者应用很是激动。只有15%的申请会被接纳到下一轮的环节中。所有的团队会在不晚于2021年5月28日星期五获知其申请的状态。新一轮的环节会在6月初期开始进行。
 
-[![](/uploads/fil-longhash-demo-symbol.webp)](https://filecoin.io/blog/posts/longhash-ventures-demo-day-nft-and-media-startups/)
+[![](/uploads/fil-longhash-demo-symbol.webp)](/blog/longhash-ventures-demo-day-nft-and-media-startups/)
 
 ### Filecoin Frontier加速营演示日：NFT与媒体初创项目
 
 在4月23日， **由LongHash Ventures支持的Filecoin Frontier加速营II期**举办了一个演示日，展示了完成3个月加速项目的11支团队。在这个加速项目里，这些团队得到了实际的创业支持、世界级的导师团及Filecoin社区的专有资源，以及一项2万美元的赞助以继续在Filecoin网络上建造项目。
 
-[**请查看这篇文章**](https://filecoin.io/blog/posts/longhash-ventures-demo-day-nft-and-media-startups/)，它展示了一些用Filecoin技术搭建NFT和媒体解决方案的创意型初创团队：Curio, Flame, Huddle 01, Myel, NonEntropy Tech, Numbers Protocol和 OP Games。
+[**请查看这篇文章**](/blog/longhash-ventures-demo-day-nft-and-media-startups/)，它展示了一些用Filecoin技术搭建NFT和媒体解决方案的创意型初创团队：Curio, Flame, Huddle 01, Myel, NonEntropy Tech, Numbers Protocol和 OP Games。
 
 ## 存储
 
-[![](/uploads/fil-blog-wolfram-shadows.webp)](https://filecoin.io/blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/)
+[![](/uploads/fil-blog-wolfram-shadows.webp)](/blog/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/)
 
 ### Wolfram区块链实验室利用IPFS为去中心化应用扩展存储功能
 
 对IPFS和Filecoin生态系统的增长而言，为开发者创建新型去中心化应用扩展可行的工具选项是至关重要的。在一项与Protocol Labs进行的全新协作中，[**Wolfram区块链实验室**](https://www.wolframblockchainlabs.com/) (WBL) 将会为开发者提供利用存储、点对点网络及其他协议去完善现有应用的机会。
 
-WBL正将其分布式账本技术平台与IPFS和Filecoin进行整合，以在其现有的区块链特性中加入新的去中心化功能及扩展存储。通过这样的整合，开发者将能从Wolfram Technologies技术中使用新的工具集，这包括了Wolfram编程语言、云及笔记本。 [**读一下我们最近的博客文章以更多地了解该项协作的内容。**](https://filecoin.io/blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/)
+WBL正将其分布式账本技术平台与IPFS和Filecoin进行整合，以在其现有的区块链特性中加入新的去中心化功能及扩展存储。通过这样的整合，开发者将能从Wolfram Technologies技术中使用新的工具集，这包括了Wolfram编程语言、云及笔记本。 [**读一下我们最近的博客文章以更多地了解该项协作的内容。**](/blog/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/)
 
 ![](/uploads/estuary-cube-faked.webp)
 

@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -32,9 +31,9 @@ Similarly, a growing number of projects in the play-to-earn (P2E) and NFT space 
 
 ## Combining Filecoin’s durability and Polygon’s scalability opens new use cases for developers
 
-In August 2021, we [announced](https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/) that Polygon would offer free storage costs for projects looking to build on the [Filecoin-Polygon bridge](https://eth.storage/docs#ethereum--polygon-bridge-to-filecoin) developed by the [Textile](https://www.textile.io/) team. The bridge enables developers and Polygon application users to easily store data from any Polygon address on the IPFS network without any new signups, secrets, or API keys.
+In August 2021, we [announced](/blog/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/) that Polygon would offer free storage costs for projects looking to build on the [Filecoin-Polygon bridge](https://eth.storage/docs#ethereum--polygon-bridge-to-filecoin) developed by the [Textile](https://www.textile.io/) team. The bridge enables developers and Polygon application users to easily store data from any Polygon address on the IPFS network without any new signups, secrets, or API keys.
 
-Filecoin and Polygon also jointly-organized the [Mars Hackathon](https://filecoin.io/blog/posts/about-500-000-in-prizes-and-grants-for-asia-hackathon-season-2021/), which ran from August to November 2021. The virtual hackathon saw more than 1,500 developers coming together to build new applications using the Filecoin-Polygon bridge, including use cases like storage, the metaverse, entertainment, digital art, and more.
+Filecoin and Polygon also jointly-organized the [Mars Hackathon](/blog/about-500-000-in-prizes-and-grants-for-asia-hackathon-season-2021/), which ran from August to November 2021. The virtual hackathon saw more than 1,500 developers coming together to build new applications using the Filecoin-Polygon bridge, including use cases like storage, the metaverse, entertainment, digital art, and more.
 
 Notable projects from the hackathon included [Blockspace](https://airtable.com/appPrImBw9ntRgY88/tblCwc1GeUbvwVrmU/viwsPcyqiucf24e1j/reckvUASFD2LclsGY?blocks=hide), a decentralized file storage and sharing platform built on top of IPFS that mirrors traditional cloud providers like Google Drive, and [Slick](https://airtable.com/appPrImBw9ntRgY88/tblCwc1GeUbvwVrmU/viwsPcyqiucf24e1j/recKvMw34LuRJuY3T?blocks=hide), a decentralized alternative to Patreon.
 

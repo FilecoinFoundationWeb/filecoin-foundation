@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories: []
 date: "2022-03-24T04:00:00Z"
@@ -44,12 +43,12 @@ title: 为什么要成为Filecoin存储提供者？
 - **保存人类最重要的信息。** Filecoin的存储永续性为存储提供者创造机会，让其参与到一项意义重大的服务。这个网络为Shoah Foundation、维基百科和互联网档案馆提供数据保存。
 - **成为Web3浪潮的一部分。** Web3应用的崛起及以NFT和元宇宙资产为形式的新型数据集的采用，正创建特定形式的数据存储市场。这些需求正由Filecoin这样的去中心化服务个体承担，而且已经在创造路径依赖了。
 - **参与到一个公开的网络。** Filecoin网络的设计是无需许可的，也没有准入门槛。任何参与者只要满足最低的[硬件要求](https://docs.filecoin.io/storage-providers/skills/storage#general-hardware-requirements) 都可以成为活跃贡献者并从其经济中受益。
-- **得到起步的激励。** 社区通过不同的项目来支持新参与者。其中包括 [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&t=1s)、 [Filecoin+](https://www.youtube.com/watch?v=-kxNpRiEd_c) 和[Filecoin Storage ProviderX Fellowship](https://filecoin.io/blog/posts/filecoin-minerx-fellowship-program/)。
+- **得到起步的激励。** 社区通过不同的项目来支持新参与者。其中包括 [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&t=1s)、 [Filecoin+](https://www.youtube.com/watch?v=-kxNpRiEd_c) 和[Filecoin Storage ProviderX Fellowship](/blog/filecoin-minerx-fellowship-program/)。
 - **对运作有更高的控制度。** 存储提供者和用户等有更好的方法在Filecoin网络上控制自己的数据集。这包括控制信息的存储方式和位置，以及其利用和货币化方式。
 - **利用创新机会。** 作为一种全新的技术，分布式存储仍有很大的实验和增长空间。存储提供者有机会探索新的成本架构和其他不同之处。
 - **赚取被动收入。** 成为Filecoin网络的存储提供者有几种回报策略。其中包括Stefaan Vervaet在ESPA的Filecoin存储提供者Bootcamp上[解释的](https://youtu.be/T-TgPILQD3c?t=736)方式那样，用你自己的数据集来赚取收入。
 
-除了这些优势外，Filecoin还在扩展存储以外的用例。如[Filecoin虚拟机](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) 的开发向这个网络中引入了智能合约能力。随着网络演化，存储提供者会继续担当基础性角色。
+除了这些优势外，Filecoin还在扩展存储以外的用例。如[Filecoin虚拟机](/blog/introducing-the-filecoin-virtual-machine/) 的开发向这个网络中引入了智能合约能力。随着网络演化，存储提供者会继续担当基础性角色。
 
 ## 如何成为存储提供者
 
@@ -62,9 +61,9 @@ title: 为什么要成为Filecoin存储提供者？
 - [为Filecoin存储提供者设计的视频列表](https://youtube.com/playlist?list=PL_0VrY55uV1_Z83vRQq5DsSI20X1YWO4q)
 - ProtoSchool “Filecoin上验证存储”[教程](https://proto.school/verifying-storage-on-filecoin)
 - 教程:
-  - [成为存储提供者教程](https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/)
-  - [深入探索存储提供者生态](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/)
-  - [Filecoin's Island Economy](https://filecoin.io/blog/posts/filecoin-s-island-economy/)
+  - [成为存储提供者教程](/blog/a-guide-to-filecoin-storage-mining/)
+  - [深入探索存储提供者生态](/blog/a-deep-dive-into-the-storage-provider-ecosystem/)
+  - [Filecoin's Island Economy](/blog/filecoin-s-island-economy/)
 
 记得跟社区保持联系:
 

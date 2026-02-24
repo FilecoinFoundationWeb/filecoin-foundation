@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/miners-guide-liftoff/
 author: ""
 categories:
   - updates

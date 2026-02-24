@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -123,7 +122,7 @@ _The Filecoin network ensures that data is safely stored. However, the processes
 
 {{< youtube id="MbLyVt2rISQ" title="Filecoin Economy Deep Dive - ZX Zhang" >}}
 
-In a nutshell, Filecoin takes the innovations of IPFS a step further by introducing a blockchain network and an incentive system that rewards independent Storage Providers for providing [Storage Power](https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/) and storage capacity to the network as well as retrieving files. These are known as the network’s Storage Market and Retrieval Market, respectively.
+In a nutshell, Filecoin takes the innovations of IPFS a step further by introducing a blockchain network and an incentive system that rewards independent Storage Providers for providing [Storage Power](/blog/a-guide-to-filecoin-storage-mining/) and storage capacity to the network as well as retrieving files. These are known as the network’s Storage Market and Retrieval Market, respectively.
 
 ### Storage Market
 
@@ -143,9 +142,9 @@ This decentralized model makes it possible for anyone with access to the interne
 
 Filecoin's Proof of Storage algorithm ensures that Storage Providers, the network’s miners, possess complete copies of client data. This provides clients with an even higher level of security than what is offered by most cloud storage providers since Storage Providers are penalized when storage deals are not honored.
 
-Altogether, this means that Filecoin is able to provide [data persistence](https://filecoin.io/blog/posts/ipfs-filecoin-and-content-persistence/).
+Altogether, this means that Filecoin is able to provide [data persistence](/blog/ipfs-filecoin-and-content-persistence/).
 
-_(Read through these resources for a more in-depth look at the economics of_ [_Filecoin_](https://filecoin.io/blog/posts/filecoin-network-economics/) _and_ [_Storage Providers_](https://filecoin.io/blog/posts/the-economics-of-storage-providers/)_.)_
+_(Read through these resources for a more in-depth look at the economics of_ [_Filecoin_](/blog/filecoin-network-economics/) _and_ [_Storage Providers_](/blog/the-economics-of-storage-providers/)_.)_
 
 ### Data Persistence
 

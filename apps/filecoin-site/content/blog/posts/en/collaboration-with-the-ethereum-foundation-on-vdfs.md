@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/collaboration-on-vdfs/
 author: ""
 categories:
   - updates

@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -30,7 +29,7 @@ Here are a few highlights.
 
 [FIP-0029](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0029.md) provides for a storage provider **beneficiary address** distinct from its owner. This beneficiary has sole right to withdraw funds from the on-chain miner actor, up to some specified amount and time limit. This beneficiary is fixed until the term or limit are reached, or the beneficiary agrees to a change. This is a key enabler of mechanisms for lending and borrowing of funds for a storage provider’s pledge collateral, both off-chain and, soon, on-chain lending markets. A lender can take financial control of a provider’s on-chain actor, while leaving operational control with the operator.
 
-[FIP-0044](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0044.md) specifies a **standardised authentication** _method_ for actors. This expands the set of entities that can attest to some piece of data from those with cryptographic keys (who attest by signing) to any on-chain actor or smart contract. One immediate benefit is that actors and smart contracts will be able to make storage deals 🎉. Storage deal proposals are usually _signed_ by the deal client. But smart contracts can’t have private keys so they can’t sign things. With FIP-0044, the built-in storage market actor will consult the deal’s client on-chain, and no longer requires it to be an account with a cryptographic key. [Data DAOs](https://filecoin.io/blog/posts/the-future-of-datadaos/), here we come.
+[FIP-0044](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0044.md) specifies a **standardised authentication** _method_ for actors. This expands the set of entities that can attest to some piece of data from those with cryptographic keys (who attest by signing) to any on-chain actor or smart contract. One immediate benefit is that actors and smart contracts will be able to make storage deals 🎉. Storage deal proposals are usually _signed_ by the deal client. But smart contracts can’t have private keys so they can’t sign things. With FIP-0044, the built-in storage market actor will consult the deal’s client on-chain, and no longer requires it to be an account with a cryptographic key. [Data DAOs](/blog/the-future-of-datadaos/), here we come.
 
 [FIP-0045](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0045.md) is the largest change, which decouples the Filecoin Plus verified registry actor from the built-in storage market. As a result of decoupling, storage providers will be able to immediately enjoy:
 

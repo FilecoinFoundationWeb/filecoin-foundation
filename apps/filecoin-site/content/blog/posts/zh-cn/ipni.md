@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -20,7 +19,7 @@ title: 扩展存储提供者的无限可能：无需重新通告即可更新IPNI
 _template: blog_detail_ch
 ---
 
-本文是IPNI系列文章中的第四篇。[第一篇文章](https://filecoin.io/blog/posts/introducing-the-network-indexer/)介绍了IPNI的概念，[第二篇文章](https://filecoin.io/blog/posts/how-does-the-network-indexer-work/)深入探讨了其内部工作方式，以便为数十亿可寻址内容找到内容提供者，[第三篇文章](https://filecoin.io/blog/posts/how-to-be-an-index-provider/)讲解了如何成为索引提供者。
+本文是IPNI系列文章中的第四篇。[第一篇文章](/blog/introducing-the-network-indexer/)介绍了IPNI的概念，[第二篇文章](/blog/how-does-the-network-indexer-work/)深入探讨了其内部工作方式，以便为数十亿可寻址内容找到内容提供者，[第三篇文章](/blog/how-to-be-an-index-provider/)讲解了如何成为索引提供者。
 
 在前一篇文章的基础上，本文将讨论最近添加到IPNI中的新功能——**扩展存储提供者**。
 

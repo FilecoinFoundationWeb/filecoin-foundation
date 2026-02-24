@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -29,15 +28,15 @@ title: Filecoin News 32
 
 Do you have an idea for pushing the Filecoin ecosystem forward? Grants of over $5000 are available to support novel ideas that advance the Filecoin ecosystem, bring significant new usage, or directly advance the Filecoin mission statement. Wave 12 proposal submissions are due today, November 30th, 2021 at 23:59 PDT for priority consideration. [Learn more about open grants](https://github.com/filecoin-project/devgrants/tree/master?tab=readme-ov-file#open-grant) and [apply](https://github.com/filecoin-project/devgrants/issues/new?assignees=&labels=&template=open-grant-application.md&title=).
 
-[![](/uploads/unnamed-6.webp)](https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-gaming-and-the-metaverse/)
+[![](/uploads/unnamed-6.webp)](/blog/filecoin-launchpad-accelerator-ii-gaming-and-the-metaverse/)
 
 ### Filecoin Launchpad Demo Day — Web3 Infrastructure and Gaming/Metaverse
 
 The [Demo Day](https://www.youtube.com/watch?v=UWuaSP6YuJ4) for Tachyon’s Filecoin Launchpad Accelerator featured a group of promising Web3 projects from across the ecosystem.
 
-The Web3 Infrastructure section showcased the teams building the foundational tools for the decentralized web, including: CID Gravity for storage provider incentives, SkillWallet for NFT IDs, WeatherXM for community-operated weather forecasting, Autonomy Network to scale DEXes, and Convo Space for Web3 social. [Check out the Infrastructure projects here](https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-infrastructure-and-dev-tools/)!
+The Web3 Infrastructure section showcased the teams building the foundational tools for the decentralized web, including: CID Gravity for storage provider incentives, SkillWallet for NFT IDs, WeatherXM for community-operated weather forecasting, Autonomy Network to scale DEXes, and Convo Space for Web3 social. [Check out the Infrastructure projects here](/blog/filecoin-launchpad-accelerator-ii-infrastructure-and-dev-tools/)!
 
-The Gaming and Metaverse portion of demo day showcased projects including: MoNA Gallery for 3D NFT display, HuddIn for NFT collaboration, Inflow Music for artist monetization, Blockbets Corp to help gamers earn, and 0x Essential for additional NFT functionality. [Check out the Metaverse projects here](https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-gaming-and-the-metaverse/)!
+The Gaming and Metaverse portion of demo day showcased projects including: MoNA Gallery for 3D NFT display, HuddIn for NFT collaboration, Inflow Music for artist monetization, Blockbets Corp to help gamers earn, and 0x Essential for additional NFT functionality. [Check out the Metaverse projects here](/blog/filecoin-launchpad-accelerator-ii-gaming-and-the-metaverse/)!
 
 ## Storage Providers
 

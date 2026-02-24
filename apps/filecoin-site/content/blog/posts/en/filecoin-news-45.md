@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -25,17 +24,17 @@ title: Filecoin News 45
 
 ## Announcements
 
-[![](/uploads/brave.webp)](https://filecoin.io/blog/posts/brave-browser-adds-filecoin-to-wallet//)
+[![](/uploads/brave.webp)](/blog/brave-browser-adds-filecoin-to-wallet//)
 
 ### Brave Browser Adds Filecoin to Wallet
 
-The Filecoin ecosystem is excited to announce that with today’s release of [Brave browser 1.40](https://brave.com/1.40-release/), the wallet feature now supports FIL, the token for Filecoin, the storage layer of Web3. [Brave](http://brave.com/)’s 56+ million users can now use FIL natively in the browser’s wallet, easing access and usage of Filecoin. [Download Brave](https://brave.com/download/) and check it out for yourself and learn more about the integration on the [Filecoin blog](https://filecoin.io/blog/posts/brave-browser-adds-filecoin-to-wallet/).
+The Filecoin ecosystem is excited to announce that with today’s release of [Brave browser 1.40](https://brave.com/1.40-release/), the wallet feature now supports FIL, the token for Filecoin, the storage layer of Web3. [Brave](http://brave.com/)’s 56+ million users can now use FIL natively in the browser’s wallet, easing access and usage of Filecoin. [Download Brave](https://brave.com/download/) and check it out for yourself and learn more about the integration on the [Filecoin blog](/blog/brave-browser-adds-filecoin-to-wallet/).
 
-[![](/uploads/filecoingreengrants_huf8d6a3a645a64ae1f9c720721f352e39_2100048_2000x0_resize_q90_linear_2.webp)](https://filecoin.io/blog/posts/filecoin-green-s-1-million-green-grants-program-will-support-climate-positive-regenerative-finance-refi-initiatives/)
+[![](/uploads/filecoingreengrants_huf8d6a3a645a64ae1f9c720721f352e39_2100048_2000x0_resize_q90_linear_2.webp)](/blog/filecoin-green-s-1-million-green-grants-program-will-support-climate-positive-regenerative-finance-refi-initiatives/)
 
 ### Filecoin Green’s $1 Million Green Grants Program Will Support Climate Positive ReFi Initiatives
 
-Filecoin Green, in conjunction with the Filecoin Foundation, is launching a $1 million grants program in support of Regenerative Finance (ReFi) projects aiming to bring the economic system into a healthier alignment with the natural world. The grants program is an expansion of the Filecoin Green mission that aims to measure the environmental impacts of Filecoin and verifiably drive them below zero, building infrastructure along the way that allows anyone to make transparent and substantive environmental claims. [Read the full announcement](https://filecoin.io/blog/posts/filecoin-green-s-1-million-green-grants-program-will-support-climate-positive-regenerative-finance-refi-initiatives/).
+Filecoin Green, in conjunction with the Filecoin Foundation, is launching a $1 million grants program in support of Regenerative Finance (ReFi) projects aiming to bring the economic system into a healthier alignment with the natural world. The grants program is an expansion of the Filecoin Green mission that aims to measure the environmental impacts of Filecoin and verifiably drive them below zero, building infrastructure along the way that allows anyone to make transparent and substantive environmental claims. [Read the full announcement](/blog/filecoin-green-s-1-million-green-grants-program-will-support-climate-positive-regenerative-finance-refi-initiatives/).
 
 ## Community
 
@@ -45,11 +44,11 @@ Filecoin Green, in conjunction with the Filecoin Foundation, is launching a $1 m
 
 Check out a recap of the June All Hands meeting for the IPFS, Filecoin, and libp2p Ecosystem Work Group. You’ll get the latest on BDNFT, a music copyright NFT platform; Ethersign, a project building Web3 tools for small businesses; and Tachyon’s efforts in supporting the next generation of Web3 founders. A full recording of the event is available on [Youtube](https://www.youtube.com/watch?v=Uw4R5PyLPfI&list=PL_0VrY55uV18-DugtNhjS5_-taPz0hnAO&index=3). If you’d like to become a part of a working group or featured in the next All Hands, contact: [ateam@protocol.ai](mailto:ateam@protocol.ai).
 
-[![](/uploads/180protocol.webp)](https://filecoin.io/blog/posts/180protocol-confidential-cloud-computing-with-decentralized-storage/)
+[![](/uploads/180protocol.webp)](/blog/180protocol-confidential-cloud-computing-with-decentralized-storage/)
 
 ### 180Protocol: Confidential Cloud Computing with Decentralized Storage
 
-The largest barrier to Web3 enterprise and broader adoption of blockchain technology is the risk of exploitation of sensitive data. 180Protocol solves this issue with a modular software protocol offering confidential computing for the cloud. The project’s technology enables users to unlock market intelligence via sensitive data on which the future of enterprise can be built. Learn more about 180Protocol in this recent [post](https://filecoin.io/blog/posts/180protocol-confidential-cloud-computing-with-decentralized-storage/).
+The largest barrier to Web3 enterprise and broader adoption of blockchain technology is the risk of exploitation of sensitive data. 180Protocol solves this issue with a modular software protocol offering confidential computing for the cloud. The project’s technology enables users to unlock market intelligence via sensitive data on which the future of enterprise can be built. Learn more about 180Protocol in this recent [post](/blog/180protocol-confidential-cloud-computing-with-decentralized-storage/).
 
 [![](/uploads/asset-1-2x.webp)](https://www.eventbrite.com/e/mona-x-nftnyc-tickets-344345776487/)
 

@@ -27,7 +27,7 @@ related_article_3: content/blog/posts/filecoin-news-75.en.md
 
 Meet [InterPlanetary Consensus (IPC)](http://ipc.space/), a revolutionary blockchain technology from the minds behind Filecoin and IPFS, designed to bring planetary-scale performance to web3. [IPC](http://ipc.space/) unlocks a new era of web3 scaling and flexibility for builders. With IPC, decentralized applications can reach planetary scale through recursively scalable subnets, sub-second transactions, robust compute workloads, and highly adaptable WebAssembly runtimes tailored to developer requirements.
 
-IPC allows the creation of flexible, dynamic networks of customizable sidechains or “subnets”, which can achieve massive scaling by running parallel chains that interoperate with one another. It also empowers developers to bring compute onto the Filecoin network. Learn more in [this blog post](https://filecoin.io/blog/posts/achieving-breakthrough-scalability-with-interplanetary-consensus-ipc/). 
+IPC allows the creation of flexible, dynamic networks of customizable sidechains or “subnets”, which can achieve massive scaling by running parallel chains that interoperate with one another. It also empowers developers to bring compute onto the Filecoin network. Learn more in [this blog post](/blog/achieving-breakthrough-scalability-with-interplanetary-consensus-ipc/). 
 
 Interested in some hands-on learning with IPC? If you’re heading to Istanbul for DevConnect Istanbul or LabWeek23, stop by the IPC event “Breakthrough Scaling with InterPlanetary Consensus” on November 16th to hear from the IPC builders.
 

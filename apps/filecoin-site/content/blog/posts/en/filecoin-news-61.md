@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -33,7 +32,7 @@ Eventually, FVM will unlock the development of applications, markets, and organi
 
 ### Filecoin and FVM’s Most Successful Hackathon Yet
 
-In anticipation of the Ethereum-compatible Filecoin Virtual Machine (FEVM) launching on Filecoin mainnet on March 14th, the Filecoin community recently completed its largest hackathon to date specifically for developers to kick off building with FEVM! In collaboration with ETHGlobal, [FVM Space Warp](https://ethglobal.com/events/spacewarp) ran from January 20th to February 10th with overwhelming support from the developer community. The hackathon had 1,040 hackers from 82 different countries with 279 prize submissions, 24 sponsor prize winners, 33 Filecoin prize winners and 12 EthGlobal finalists! Find more information about the winners, watch the finale, and find out how you can start building with FVM in this [post](https://filecoin.io/blog/posts/the-filecoin-community-s-largest-hackathon-yet/).
+In anticipation of the Ethereum-compatible Filecoin Virtual Machine (FEVM) launching on Filecoin mainnet on March 14th, the Filecoin community recently completed its largest hackathon to date specifically for developers to kick off building with FEVM! In collaboration with ETHGlobal, [FVM Space Warp](https://ethglobal.com/events/spacewarp) ran from January 20th to February 10th with overwhelming support from the developer community. The hackathon had 1,040 hackers from 82 different countries with 279 prize submissions, 24 sponsor prize winners, 33 Filecoin prize winners and 12 EthGlobal finalists! Find more information about the winners, watch the finale, and find out how you can start building with FVM in this [post](/blog/the-filecoin-community-s-largest-hackathon-yet/).
 
 ## Tools
 
@@ -43,7 +42,7 @@ Leading up to the [Filecoin Virtual Machine](https://fvm.filecoin.io/)’s mainn
 
 ### Boost Monitoring Stack
 
-Since the initial release of [Boost](https://boost.filecoin.io/) in mid June 2022, we have seen a significant increase in the number of storage providers migrating to use Boost to manage storage deals. With the introduction of new ecosystem projects and programs, there is a high demand for additional storage and retrieval options from Filecoin. Based on feedback from the ecosystem, we have added booster-http and booster-bitswap, which enables storage providers to directly serve content to retrieval clients over additional data transfer protocols. Learn more in [this blog post](https://filecoin.io/blog/posts/boost-monitoring-stack/).
+Since the initial release of [Boost](https://boost.filecoin.io/) in mid June 2022, we have seen a significant increase in the number of storage providers migrating to use Boost to manage storage deals. With the introduction of new ecosystem projects and programs, there is a high demand for additional storage and retrieval options from Filecoin. Based on feedback from the ecosystem, we have added booster-http and booster-bitswap, which enables storage providers to directly serve content to retrieval clients over additional data transfer protocols. Learn more in [this blog post](/blog/boost-monitoring-stack/).
 
 ### Filecoin Saturn Content Delivery Network (CDN) Passes 1,000 Nodes Worldwide
 

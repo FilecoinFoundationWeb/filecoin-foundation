@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -29,13 +28,13 @@ title: Filecoin和FVM迄今为止最成功的黑客松！
 
 {{< youtube id="EcZ_Bj43tSc" title="Space Warp Finale and Demos" >}}
 
-自2022年11月的上一次[FVM黑客松](https://filecoin.io/blog/posts/announcing-the-hack-fevm-finalists/)以来，FEVM在这一里程碑上取得了重大进展，开发人员能够使用更多功能来构建，(完整路线图[在此](https://fvm.filecoin.io/#roadmap-4))。
+自2022年11月的上一次[FVM黑客松](/blog/announcing-the-hack-fevm-finalists/)以来，FEVM在这一里程碑上取得了重大进展，开发人员能够使用更多功能来构建，(完整路线图[在此](https://fvm.filecoin.io/#roadmap-4))。
 
 FEVM[增量交付计划](https://github.com/filecoin-project/ref-fvm/issues/692)最终版本已经实施，基于此开发人员可以在FEVM最终版本上进行构建。Factor 8 Solutions最近推出了一个新测试网络Hyperspace，允许开发人员在稳定的测试网络上构建并持续迭代项目，该测试网络将在发布后继续可用。由[Zondax](https://docs.zondax.ch/)推出的新[Filecoin.sol library](https://docs.zondax.ch/fevm/filecoin-solidity)现在可以让Solidity智能合约无缝调用Filecoin内置actor的方法。例如，允许合约与市场和存储提供者内置actor交互，让他们分别访问Filecoin存储交易和存储提供者的操作和数据，这为存储相关解决方案带来了更多的可能性。
 
 本次黑客松议程相当充实，有来自Protocol Labs网络和赞助合作伙伴的演讲和研讨会，包括[Lighthouse Storage](https://www.lighthouse.storage/)、[LivePeer](https://livepeer.org/)、[Spheron Network](https://spheron.network/)、[Huddle01](https://huddle01.com/)和[Push Protocol](https://push.org/)。可以看到很多令人兴奋的FEVM新演示，包括用于程序化交易的[新数据奖励金合约](https://www.youtube.com/watch?v=KcZbXSoUxz4)、基于稳定扩散的[Bacalhau分布式数据计算](https://www.youtube.com/watch?v=nu55bKXnjlU)框架的AI艺术NFT，以及通过阈值网络的[Medusa分布式访问控制](https://www.youtube.com/watch?v=af8CBfhWEWs)。[在此](https://www.youtube.com/@ETHGlobal/videos)观看完整系列。
 
-本次黑客松的[项目提交](https://ethglobal.com/showcase?events=spacewarp)令人印象深刻，展现了开发人员对FEVM的强烈兴趣，其中包括[数据DAO](https://filecoin.io/blog/posts/the-future-of-datadaos/)、质押不足的借贷模型、数据的分布式计算以及数据索引和数据访问控制等使用案例。祝贺所有入围者和获奖者！
+本次黑客松的[项目提交](https://ethglobal.com/showcase?events=spacewarp)令人印象深刻，展现了开发人员对FEVM的强烈兴趣，其中包括[数据DAO](/blog/the-future-of-datadaos/)、质押不足的借贷模型、数据的分布式计算以及数据索引和数据访问控制等使用案例。祝贺所有入围者和获奖者！
 
 ## Filecoin获奖者
 

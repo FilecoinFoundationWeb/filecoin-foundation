@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -61,7 +60,7 @@ Filecoin’s DeFi ecosystem is growing with the help of [GLIF](https://glif.io/e
 
 ### FVM Imaginarium: Cross-chain Interoperability
 
-The Filecoin Network has taken a significant leap forward in cross-chain interoperability with the mainnet launch of messaging and token bridging solutions by [Axelar](https://axelar.network/how-axelar-works) and [Celer Network](https://celer.network/). These integrations enable seamless communication and asset transfers between Filecoin and 30+ other leading Web3 chains such as Polygon, Ethereum, Binance Smart Chain, Avalanche and more. Interoperable networks allow Filecoin to export its competitive services such as data compute and storage, to applications on other chains. This approach gives dapps on all chains the ability to take advantage of thousands of Filecoin storage providers, resources, and future subnets for their data needs. Learn more in this [deep dive](https://filecoin.io/blog/posts/the-fvm-imaginarium-cross-chain-interoperability/). Get started with [cBridge, powered by Celer Network](https://cbridge.celer.network/1/56/USDC) or [Satellite token transfer](https://testnet.satellite.money/?source=filecoin&destination=ethereum&asset_denom=fil&destination_address=), powered by Axelar now!
+The Filecoin Network has taken a significant leap forward in cross-chain interoperability with the mainnet launch of messaging and token bridging solutions by [Axelar](https://axelar.network/how-axelar-works) and [Celer Network](https://celer.network/). These integrations enable seamless communication and asset transfers between Filecoin and 30+ other leading Web3 chains such as Polygon, Ethereum, Binance Smart Chain, Avalanche and more. Interoperable networks allow Filecoin to export its competitive services such as data compute and storage, to applications on other chains. This approach gives dapps on all chains the ability to take advantage of thousands of Filecoin storage providers, resources, and future subnets for their data needs. Learn more in this [deep dive](/blog/the-fvm-imaginarium-cross-chain-interoperability/). Get started with [cBridge, powered by Celer Network](https://cbridge.celer.network/1/56/USDC) or [Satellite token transfer](https://testnet.satellite.money/?source=filecoin&destination=ethereum&asset_denom=fil&destination_address=), powered by Axelar now!
 
 ### Juan Benet Appears on The Charlie Shrem Show to Discuss IPFS and Web3
 
@@ -77,7 +76,7 @@ What does it mean to be a Green Storage Provider? The Filecoin Green team is cur
 
 ### Filecoin and FVM’s Most Successful Hackathon Yet
 
-In anticipation of the Ethereum-compatible Filecoin Virtual Machine (FEVM) launching on Filecoin mainnet on March 14th, the Filecoin community recently completed its largest hackathon to date specifically for developers to kick off building with FEVM! In collaboration with ETHGlobal, [FVM Space Warp](https://ethglobal.com/events/spacewarp) ran from January 20th to February 10th with overwhelming support from the developer community. The hackathon had 1,040 hackers from 82 different countries with 279 prize submissions, 24 sponsor prize winners, 33 Filecoin prize winners and 12 EthGlobal finalists! Find more information about the winners, watch the finale, and find out how you can start building with FVM in this [post](https://filecoin.io/blog/posts/the-filecoin-community-s-largest-hackathon-yet/).
+In anticipation of the Ethereum-compatible Filecoin Virtual Machine (FEVM) launching on Filecoin mainnet on March 14th, the Filecoin community recently completed its largest hackathon to date specifically for developers to kick off building with FEVM! In collaboration with ETHGlobal, [FVM Space Warp](https://ethglobal.com/events/spacewarp) ran from January 20th to February 10th with overwhelming support from the developer community. The hackathon had 1,040 hackers from 82 different countries with 279 prize submissions, 24 sponsor prize winners, 33 Filecoin prize winners and 12 EthGlobal finalists! Find more information about the winners, watch the finale, and find out how you can start building with FVM in this [post](/blog/the-filecoin-community-s-largest-hackathon-yet/).
 
 ## Tools
 

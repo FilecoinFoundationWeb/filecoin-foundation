@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -46,11 +45,11 @@ Join Protocol Labs, Ethereum, Chainlink, and more at Scaling Ethereum — a virt
 
 ## Store
 
-[![](/uploads/videocoin-logo.webp)](https://filecoin.io/blog/posts/videocoin-and-filecoin-to-power-the-video-nft-market/)
+[![](/uploads/videocoin-logo.webp)](/blog/videocoin-and-filecoin-to-power-the-video-nft-market/)
 
 ### VideoCoin and Filecoin to Power the Video NFT Market
 
-We are excited to announce that VideoCoin is integrating its decentralized video-processing network with Filecoin to build the first platform specifically designed for creating and trading Video NFTs, a highly compelling segment of the emerging global marketplace for digital collectibles. More details on the availability and features of the Video NFT platform are coming soon! Visit the project website to see how VideoCoin Network’s technology is being deployed to create the next generation of video applications, which leverage the new blockchain-powered Internet. Read more about the collaboration in our [recent blog post](https://filecoin.io/blog/posts/videocoin-and-filecoin-to-power-the-video-nft-market/).
+We are excited to announce that VideoCoin is integrating its decentralized video-processing network with Filecoin to build the first platform specifically designed for creating and trading Video NFTs, a highly compelling segment of the emerging global marketplace for digital collectibles. More details on the availability and features of the Video NFT platform are coming soon! Visit the project website to see how VideoCoin Network’s technology is being deployed to create the next generation of video applications, which leverage the new blockchain-powered Internet. Read more about the collaboration in our [recent blog post](/blog/videocoin-and-filecoin-to-power-the-video-nft-market/).
 
 ## Mine
 
@@ -58,19 +57,19 @@ We are excited to announce that VideoCoin is integrating its decentralized video
 
 IPFSUnion is a leading infrastructure provider for the blockchain industry, headquartered in China. A long-time tremendous supporter of the IPFS mission and ecosystem, IPFSUnion has established deep economic ties with tech companies in Asia — including Alibaba — to support the growth of decentralized technologies. Now they’ve announced a major investment in a Filecoin mining facility, as part of the Big Data Industrial Park. Upon completion, it will be the largest IPFS- and Filecoin-distributed storage infrastructure project in China.
 
-[![](/uploads/filrep.webp)](https://filecoin.io/blog/posts/filrep.io-a-filecoin-miner-reputation-system-v1-by-digital-mob/)
+[![](/uploads/filrep.webp)](/blog/filrep.io-a-filecoin-miner-reputation-system-v1-by-digital-mob/)
 
 ### FilRep.io - A Filecoin Miner Reputation System v1 by Digital Mob
 
-[Digital MOB](http://digitalmob.ro/) has launched the first version of their Filecoin Miner Reputation System, available now at [Filrep.io](https://filrep.io/). A reliable reputation system is crucial to the health of the Filecoin ecosystem. Storage clients must navigate a sea of storage miners to discover those who are the best match for their specific needs. The raison d’etre of the reputation system is to help them achieve this. [Read more about filrep.io](https://filecoin.io/blog/posts/filrep.io-a-filecoin-miner-reputation-system-v1-by-digital-mob/)..
+[Digital MOB](http://digitalmob.ro/) has launched the first version of their Filecoin Miner Reputation System, available now at [Filrep.io](https://filrep.io/). A reliable reputation system is crucial to the health of the Filecoin ecosystem. Storage clients must navigate a sea of storage miners to discover those who are the best match for their specific needs. The raison d’etre of the reputation system is to help them achieve this. [Read more about filrep.io](/blog/filrep.io-a-filecoin-miner-reputation-system-v1-by-digital-mob/)..
 
 ## Community
 
-[![](/uploads/okex-block-dream-fund-symbol.webp)](https://filecoin.io/blog/posts/block-dream-fund-launches-10m-fund-to-support-the-filecoin-ecosystem/)
+[![](/uploads/okex-block-dream-fund-symbol.webp)](/blog/block-dream-fund-launches-10m-fund-to-support-the-filecoin-ecosystem/)
 
 ### Block Dream Fund launches $10M fund to support the Filecoin Ecosystem
 
-OKEx’s newly founded Block Dream Fund has announced a collaboration with the Filecoin Network. Block Dream Fund will provide $10 million of dedicated capital and resources to support high-quality ecosystem projects from programs like [Filecoin Slingshot](https://slingshot.filecoin.io/), the Filecoin Launchpad Accelerator (led by Tachyon), the Filecoin Frontier Accelerator (led by Longhash Ventures), and more. [Learn more](https://filecoin.io/blog/posts/block-dream-fund-launches-10m-fund-to-support-the-filecoin-ecosystem/).
+OKEx’s newly founded Block Dream Fund has announced a collaboration with the Filecoin Network. Block Dream Fund will provide $10 million of dedicated capital and resources to support high-quality ecosystem projects from programs like [Filecoin Slingshot](https://slingshot.filecoin.io/), the Filecoin Launchpad Accelerator (led by Tachyon), the Filecoin Frontier Accelerator (led by Longhash Ventures), and more. [Learn more](/blog/block-dream-fund-launches-10m-fund-to-support-the-filecoin-ecosystem/).
 
 [![](/uploads/ambassadors-logo.webp)](https://github.com/filecoin-project/community/discussions/116)
 

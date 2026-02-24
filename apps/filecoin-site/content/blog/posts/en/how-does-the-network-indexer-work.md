@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Masih Derkani
 categories:
   - updates
@@ -22,7 +21,7 @@ title: How does the Network Indexer work?
 _template: blog_detail
 ---
 
-This is the second blog of the Network Indexer blog post series. In this post, we will dive into more details of how Network Indexer works. Find our previous post here: [Introduction to Network Indexer](https://filecoin.io/blog/posts/introducing-the-network-indexer/).
+This is the second blog of the Network Indexer blog post series. In this post, we will dive into more details of how Network Indexer works. Find our previous post here: [Introduction to Network Indexer](/blog/introducing-the-network-indexer/).
 
 Earlier this year, Protocol Labs launched the first production Network Indexer to enable searching for content-addressable data available from storage providers, such as those on the Filecoin and IPFS networks. We have now indexed 6B+ content IDs ([CID](https://docs.ipfs.tech/concepts/glossary/#cid)s), with over 140 Storage Providers publishing their data to Indexer, and 4 production indexer nodes running with our partners. As Indexer nodes process more and more content across Filecoin and IPFS, clients can query the Indexer to learn where to retrieve the content identified by those CIDs.
 

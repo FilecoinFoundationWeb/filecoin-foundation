@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-defi/
 author: ""
 categories:
   - updates

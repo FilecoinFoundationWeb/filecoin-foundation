@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/mainnet-liftoff-day5/
 author: ""
 categories:
   - updates

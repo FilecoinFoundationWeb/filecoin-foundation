@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-features-verifiable-storage/
 author: ""
 categories:
   - updates
@@ -26,7 +24,7 @@ title: "Filecoin features: verifiable storage"
 _template: blog_detail
 ---
 
-_This is the second blog post in the series highlighting features unique to the Filecoin protocol. Catch up on the_ [_first post_](https://filecoin.io/blog/offline-data-transfer-for-large-scale-data/)_, which explores offline data transfer._
+_This is the second blog post in the series highlighting features unique to the Filecoin protocol. Catch up on the_ [_first post_](/blog/offline-data-transfer-for-large-scale-data/)_, which explores offline data transfer._
 
 The Filecoin marketplace runs effectively because of the confidence clients can have that storage miners on the network are properly storing their data. This confidence comes from Filecoin’s own unique proof system for ensuring storage on the Filecoin network works as contracted.
 

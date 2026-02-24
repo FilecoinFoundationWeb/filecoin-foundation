@@ -1,6 +1,4 @@
 ---
-aliases:
-  - blog/starling-framework/
 author: ""
 categories: []
 date: "2020-12-18T05:00:00Z"

@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -30,7 +29,7 @@ _template: blog_detail_ch
 
 [FIP-0029](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0029.md)规定了一个不同于其所有者的存储提供者**受益人地址**。该受益人拥有从链上存储提供者提取资金的唯一权利，但不得超过一定的金额和时间限制。该受益人是固定的，直到达到期限或限额，或受益人同意更改。这是存储提供者质押抵押品的资金借贷机制的关键促成因素，包括链下和链上借贷市场。贷方可以对提供者的链上参与者进行财务控制，而将运营控制权留给运营商。
 
-[FIP-0044](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0044.md)为参与者指定了一种**标准化认证**的方法。这扩大了可以验证部分数据的实体范围，从拥有加密私钥（通过签名进行验证）的实体扩展到任何链上的参与者或智能合约。直接的好处是参与者和智能合约将能够进行存储交易🎉。存储协议建议通常由交易用户签署，但是智能合约不能有私钥，所以他们不能签署任何东西。通过FIP-0044，内置存储市场参与者将在链上咨询交易用户，不再要求它是一个带有加密私钥的账户。[数据DAOs](https://filecoin.io/blog/posts/the-future-of-datadaos/)，我们来了！
+[FIP-0044](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0044.md)为参与者指定了一种**标准化认证**的方法。这扩大了可以验证部分数据的实体范围，从拥有加密私钥（通过签名进行验证）的实体扩展到任何链上的参与者或智能合约。直接的好处是参与者和智能合约将能够进行存储交易🎉。存储协议建议通常由交易用户签署，但是智能合约不能有私钥，所以他们不能签署任何东西。通过FIP-0044，内置存储市场参与者将在链上咨询交易用户，不再要求它是一个带有加密私钥的账户。[数据DAOs](/blog/the-future-of-datadaos/)，我们来了！
 
 [FIP-0045](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0045.md)是其中最大的变化，它将Filecoin Plus验证的注册表参与者从内置存储市场中分离出来。由此带来的好处，存储提供者将能够立即享受到：
 

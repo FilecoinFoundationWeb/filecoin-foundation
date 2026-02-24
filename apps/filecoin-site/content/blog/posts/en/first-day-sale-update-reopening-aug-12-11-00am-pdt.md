@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/sale-update-and-reopen/
 author: ""
 categories:
   - updates

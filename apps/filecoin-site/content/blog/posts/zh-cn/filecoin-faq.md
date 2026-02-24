@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/faqs-blog-post
 author: ""
 categories:
   - updates

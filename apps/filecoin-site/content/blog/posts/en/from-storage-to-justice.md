@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/from-storage-to-justice
 author: ""
 categories:
   - events

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/community-andrew-hill-textile/
 author: ""
 categories:
   - interviews

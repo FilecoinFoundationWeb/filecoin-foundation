@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -23,11 +22,11 @@ title: Filecoin News 55
 
 ## Announcements
 
-[![](/uploads/decentralized_storage_alliance.webp)](https://filecoin.io/blog/posts/introducing-the-decentralized-storage-alliance/)
+[![](/uploads/decentralized_storage_alliance.webp)](/blog/introducing-the-decentralized-storage-alliance/)
 
 ### Announcing the Decentralized Storage Alliance
 
-On October 31st, Protocol Labs and the Filecoin Foundation announced the formation of the [Decentralized Storage Alliance (DSA)](https://dsalliance.io/) alongside Seagate, AMD, and Ernst and Young. A recent report found that 86% of enterprises have a positive view of decentralized storage and its opportunity to benefit data integrity, storage costs, and sustainability. The DSA will help these organizations transition from web2 to web3 storage through solutions like Filecoin, IPFS, and Libp2p. According to DSA lead Daniel Leon, the first step “will be to form Working Groups dedicated to helping enterprises adopt decentralized storage technologies." [Learn more about the DSA](https://filecoin.io/blog/posts/introducing-the-decentralized-storage-alliance/) and its plans for the future.
+On October 31st, Protocol Labs and the Filecoin Foundation announced the formation of the [Decentralized Storage Alliance (DSA)](https://dsalliance.io/) alongside Seagate, AMD, and Ernst and Young. A recent report found that 86% of enterprises have a positive view of decentralized storage and its opportunity to benefit data integrity, storage costs, and sustainability. The DSA will help these organizations transition from web2 to web3 storage through solutions like Filecoin, IPFS, and Libp2p. According to DSA lead Daniel Leon, the first step “will be to form Working Groups dedicated to helping enterprises adopt decentralized storage technologies." [Learn more about the DSA](/blog/introducing-the-decentralized-storage-alliance/) and its plans for the future.
 
 ![](/uploads/main-graphic-nftschool-ed585792.webp)
 

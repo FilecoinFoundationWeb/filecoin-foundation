@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-proof-system/
 author: ""
 categories:
   - updates

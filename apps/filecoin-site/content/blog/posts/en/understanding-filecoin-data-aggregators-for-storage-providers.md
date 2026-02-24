@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories: []
 date: "2022-06-01T04:00:00Z"
@@ -61,4 +60,4 @@ Filecoin Stats: Built on the Grafana open-source analytics and visualization app
 
 Filscout: IPFS Union’s tool provides detailed information and visualizations on important aspects of the Filecoin Network. It expands on other aggregators by including an Orphan Block List and a record of Large Amount Transfers as well as statistics on Gas Cost Trends and a FIL Circulation Analysis.
 
-Be sure to get familiar with these tools as you start or continue on your journey as a Filecoin Storage Provider. For more information on how these tools are applied, read through a deep dive into the SP [ecosystem](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/) or explore the [economics](https://filecoin.io/blog/posts/the-economics-of-storage-providers/) of SPs.
+Be sure to get familiar with these tools as you start or continue on your journey as a Filecoin Storage Provider. For more information on how these tools are applied, read through a deep dive into the SP [ecosystem](/blog/a-deep-dive-into-the-storage-provider-ecosystem/) or explore the [economics](/blog/the-economics-of-storage-providers/) of SPs.

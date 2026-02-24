@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/collaboration-on-vdfs
 author: ""
 categories:
   - updates

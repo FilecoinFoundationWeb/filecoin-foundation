@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -34,9 +33,9 @@ _template: blog_detail
 
 33 founders from 11 countries participated in an immersive twelve-week program bridging the IPFS, Filecoin and Ethereum communities. Learn more about the builders and their startups over on the Filecoin blog.
 
-- [Filecoin for Media, Video, Gaming, and more](https://filecoin.io/blog/posts/filecoin-for-media-video-gaming-and-more/)
-- [Filecoin for Content, DevOps, Trust, and more](https://filecoin.io/blog/posts/filecoin-for-content-devops-trust-and-more/)
-- [Filecoin for Treasuries, Wills, Financial Access and more](https://filecoin.io/blog/posts/filecoin-for-treasuries-wills-financial-access-and-more/)
+- [Filecoin for Media, Video, Gaming, and more](/blog/filecoin-for-media-video-gaming-and-more/)
+- [Filecoin for Content, DevOps, Trust, and more](/blog/filecoin-for-content-devops-trust-and-more/)
+- [Filecoin for Treasuries, Wills, Financial Access and more](/blog/filecoin-for-treasuries-wills-financial-access-and-more/)
 
 ![](/uploads/c2f9cdfc-a335-4ab1-b0fe-adbe819004ed.webp)
 

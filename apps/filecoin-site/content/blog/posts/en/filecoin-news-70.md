@@ -23,7 +23,7 @@ related_article_3: content/blog/posts/filecoin-news-67.en.md
 
 ### 100 Days of FVM
 
-On June 22nd, the Filecoin community celebrated 100 days since the Filecoin network introduced the first programmable runtime on the [Filecoin Virtual Machine](http://fvm.filecoin.io/) and became programmable ([re-read the announcement blog post](https://filecoin.io/blog/posts/fvm-is-live-on-mainnet/)). The launch solidified Filecoin as the L1 uniquely positioned to power the open data economy. Since then, the open ecosystem of developers, storage providers, storage clients and other network participants of Filecoin, the largest open access cloud service, has grown further. Read [this blog post](https://filecoin.io/blog/posts/100-days-of-fvm/) to take a closer look at the notable progress achieved by the FVM since its launch on Filecoin mainnet.
+On June 22nd, the Filecoin community celebrated 100 days since the Filecoin network introduced the first programmable runtime on the [Filecoin Virtual Machine](http://fvm.filecoin.io/) and became programmable ([re-read the announcement blog post](/blog/fvm-is-live-on-mainnet/)). The launch solidified Filecoin as the L1 uniquely positioned to power the open data economy. Since then, the open ecosystem of developers, storage providers, storage clients and other network participants of Filecoin, the largest open access cloud service, has grown further. Read [this blog post](/blog/100-days-of-fvm/) to take a closer look at the notable progress achieved by the FVM since its launch on Filecoin mainnet.
 
 ### Spheron integrates FIL as a Native payment method & announces the Filecoin \<> Spheron Grant Program
 

@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -41,17 +40,17 @@ Given the feedback and conversation that FIP0036 has generated, Filecoin governa
 
 The Protocol Labs Engineering and Research Workgroup met for its August All Hands to unlock new opportunities for Filecoin, IPFS, libp2p, and IPLD. It covered exciting project highlights, the Filecoin Network Roadmap, team updates and spotlights, as well as deep dives on Thunderdome and Drand’s new timelock encryption launch. Catch up with this full [recording](https://youtu.be/-WEHplQxFrY) of the meeting.
 
-[![](/uploads/187315453-608d73c3-c051-4ec5-9b57-fbffe0aab98e.webp)](https://filecoin.io/blog/posts/large-datasets-kernelogic/)
+[![](/uploads/187315453-608d73c3-c051-4ec5-9b57-fbffe0aab98e.webp)](/blog/large-datasets-kernelogic/)
 
 ### Large Datasets: Kernelogic
 
-Kernelogic started as an individual Storage Provider effort that evolved into the role of a large dataset client via the Slingshot competition. The project focuses on scripts that prepare open datasets into fixed-sized sectors that Filecoin can store. It then transfers these datasets to SPs who are interested in storing them. Over the course of its operations, Kernelogic has onboarded over 10 PiB of useful and verified datasets by making storage deals with over 50 different SPs from across the globe. [Find out more](https://filecoin.io/blog/posts/large-datasets-kernelogic/) about these datasets.
+Kernelogic started as an individual Storage Provider effort that evolved into the role of a large dataset client via the Slingshot competition. The project focuses on scripts that prepare open datasets into fixed-sized sectors that Filecoin can store. It then transfers these datasets to SPs who are interested in storing them. Over the course of its operations, Kernelogic has onboarded over 10 PiB of useful and verified datasets by making storage deals with over 50 different SPs from across the globe. [Find out more](/blog/large-datasets-kernelogic/) about these datasets.
 
-[![](/uploads/186283931-974c197b-f563-49e8-821c-fdf1b460108f.webp)](https://filecoin.io/blog/posts/espa-bootcamp-amd-s-view-on-filecoin-and-web3/)
+[![](/uploads/186283931-974c197b-f563-49e8-821c-fdf1b460108f.webp)](/blog/espa-bootcamp-amd-s-view-on-filecoin-and-web3/)
 
 ### ESPA Bootcamp: Innovation in Storage
 
-Advanced Micro Devices (AMD) has stayed at the forefront of technological development since the advent of the microprocessor, its most popular product. The company has provided hardware solutions that have served every stage of development in computer technology, from the personal computer to the rise of server-based social networking. Web3 and decentralized infrastructure will not be the exception. [Find out more](https://filecoin.io/blog/posts/espa-bootcamp-amd-s-view-on-filecoin-and-web3/) about how the company is working with the Filecoin ecosystem.
+Advanced Micro Devices (AMD) has stayed at the forefront of technological development since the advent of the microprocessor, its most popular product. The company has provided hardware solutions that have served every stage of development in computer technology, from the personal computer to the rise of server-based social networking. Web3 and decentralized infrastructure will not be the exception. [Find out more](/blog/espa-bootcamp-amd-s-view-on-filecoin-and-web3/) about how the company is working with the Filecoin ecosystem.
 
 [![](/uploads/orbit-growth.webp)](https://medium.com/@orbitcommunityug/building-a-better-we3-on-filecoin-and-ipfs-meetup-bbe9b2eec4f8)
 

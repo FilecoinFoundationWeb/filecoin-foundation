@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/miner-community-call-may-2020/
 author: ""
 categories:
   - events

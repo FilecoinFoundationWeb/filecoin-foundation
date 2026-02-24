@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/update-2018-q3-q4/
 author: ""
 categories:
   - updates
@@ -33,7 +31,7 @@ _template: blog_detail
 
 ## 1. Opening up development and research repos
 
-Good news! After many months building things privately, we are ready to open up a number of codebases and community forums. This is right on schedule as predicted in our [Project Roadmap](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn) and [last update](/blog/filecoin-2018-q1-q2-update/). Read our [announcement blog post](https://filecoin.io/blog/opening-filecoin-project-repos/) for more.
+Good news! After many months building things privately, we are ready to open up a number of codebases and community forums. This is right on schedule as predicted in our [Project Roadmap](https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn) and [last update](/blog/filecoin-2018-q1-q2-update/). Read our [announcement blog post](/blog/opening-filecoin-project-repos/) for more.
 
 ## 2. Filecoin Project Roadmap Update
 

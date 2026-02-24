@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -25,11 +24,11 @@ title: Filecoin News 50
 
 ## Announcements
 
-[![](/uploads/fil-blog-2022-08-24.webp)](https://filecoin.io/blog/posts/zondax-brings-filecoin-to-ledger-live/)
+[![](/uploads/fil-blog-2022-08-24.webp)](/blog/zondax-brings-filecoin-to-ledger-live/)
 
 ### Zondax Brings Filecoin to Ledger Live
 
-Filecoin is now available on [Ledger Live](https://www.ledger.com/ledger-live). Clients, Storage Providers, and other network participants can send and receive FIL directly from Ledger devices while their private keys remain secure and are never exposed to third parties. This new feature has been implemented thanks to a close collaboration between Protocol Labs and [Zondax](https://zondax.ch/), a software development team that has built over 45 solutions for the Ledger hardware wallet. [Learn more](https://filecoin.io/blog/posts/zondax-brings-filecoin-to-ledger-live/) about keeping FIL in cold storage.
+Filecoin is now available on [Ledger Live](https://www.ledger.com/ledger-live). Clients, Storage Providers, and other network participants can send and receive FIL directly from Ledger devices while their private keys remain secure and are never exposed to third parties. This new feature has been implemented thanks to a close collaboration between Protocol Labs and [Zondax](https://zondax.ch/), a software development team that has built over 45 solutions for the Ledger hardware wallet. [Learn more](/blog/zondax-brings-filecoin-to-ledger-live/) about keeping FIL in cold storage.
 
 ## Community
 
@@ -39,11 +38,11 @@ Filecoin is now available on [Ledger Live](https://www.ledger.com/ledger-live). 
 
 This month’s All Hands meeting with the Filecoin, IPFS, and libp2p WG covered important [updates](https://youtu.be/n54cW4o0HfE) and [spotlights](https://youtu.be/XqoXzQ1Ok5s). If you missed it, you can still get the details on the new [FIP 0036](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0036.md) that will increase sector duration times and learn more about important projects like [DoinGud](https://twitter.com/Filecoin/status/1562066184773799938?s=20&t=iReZDhZn2YMK8KiCkgL4PQ) and [Glif.io](https://youtu.be/XqoXzQ1Ok5s). You can also watch a quick [recap](https://www.youtube.com/watch?v=0sOz1ZS7vnc). If you’d like to participate or be featured in the next All Hands join the community on [Slack](https://filecoin.io/slack) or reach out at: [ateam@protocol.ai](mailto:ateam@protocol.ai).
 
-[![](/uploads/182880108-bbe5393e-4716-45ec-bb57-6b2bef0741d0.webp)](https://filecoin.io/blog/posts/the-filecoin-orbit-community-s-growth-around-the-globe/)
+[![](/uploads/182880108-bbe5393e-4716-45ec-bb57-6b2bef0741d0.webp)](/blog/the-filecoin-orbit-community-s-growth-around-the-globe/)
 
 ### The Filecoin Orbit Community’s Growth Around the Globe
 
-Launched in early 2022, the Filecoin Orbit Community Program is composed of volunteers from around the globe who are passionate about Filecoin, IPFS, and the overall Filecoin ecosystem. These volunteers are working to educate others in their local communities about the Filecoin ecosystem and Web3 by hosting events and producing educational content. Throughout this spring and summer, Filecoin Orbit ambassadors hosted over 20 events in 10 unique locations, with over 2,500 attendees — a 300% increase in attendees from Q1, 2022! [Read along](https://filecoin.io/blog/posts/the-filecoin-orbit-community-s-growth-around-the-globe/) and find out how the community continues to grow.
+Launched in early 2022, the Filecoin Orbit Community Program is composed of volunteers from around the globe who are passionate about Filecoin, IPFS, and the overall Filecoin ecosystem. These volunteers are working to educate others in their local communities about the Filecoin ecosystem and Web3 by hosting events and producing educational content. Throughout this spring and summer, Filecoin Orbit ambassadors hosted over 20 events in 10 unique locations, with over 2,500 attendees — a 300% increase in attendees from Q1, 2022! [Read along](/blog/the-filecoin-orbit-community-s-growth-around-the-globe/) and find out how the community continues to grow.
 
 [![](/uploads/fvm-twitter.webp)](https://twitter.com/duckie_han/status/1562981171176153088?s=20&t=ORX2K9YsEh7AOJOTLZCRZQ)
 

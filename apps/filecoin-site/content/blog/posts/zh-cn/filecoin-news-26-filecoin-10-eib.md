@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -35,11 +34,11 @@ _template: blog_detail_ch
 
 在主网发布后的11个月，Filecoin网络正迎来一个重大里程碑。截至上周，全球的Filecoin存储提供者总共往Filecoin网络投入了超过10 EiB的去中心化存储容量。 10EiB相当于190倍的互联网存档内容，45,000个维基百科网站，以及相当于6,850,000年的视频会议记录。这是Filecoin社区的重大成果。
 
-[![](/uploads/dapper.webp)](https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/)
+[![](/uploads/dapper.webp)](/blog/dapper-labs-integrates-filecoin/)
 
 ### Dapper Labs整合Filecoin以推动Flow Flow区块链上的NFT和游戏元宇宙的未来
 
-[**Dapper Labs**](https://www.dapperlabs.com/)正整合Filecoin技术以引领端到端的NFT所有权，这包括了底层的媒体资源以及存储NFT数据的最佳实践。为了加速这项协作，将会为Flow生态系统提供一系列的资助计划，这会从Next Step Microgrant计划开始。任何积极地整合IPFS、Filecoin和相关服务（如Pinata或NFT.Storage）都可以申请这项资助，只要满足5个简单的条件。可以点击 [**这里**](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)查看条件及进行申请！要了解更多关于整合方案和资助计划的详情，请[**阅读这篇博客文章**](https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/)。
+[**Dapper Labs**](https://www.dapperlabs.com/)正整合Filecoin技术以引领端到端的NFT所有权，这包括了底层的媒体资源以及存储NFT数据的最佳实践。为了加速这项协作，将会为Flow生态系统提供一系列的资助计划，这会从Next Step Microgrant计划开始。任何积极地整合IPFS、Filecoin和相关服务（如Pinata或NFT.Storage）都可以申请这项资助，只要满足5个简单的条件。可以点击 [**这里**](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)查看条件及进行申请！要了解更多关于整合方案和资助计划的详情，请[**阅读这篇博客文章**](/blog/dapper-labs-integrates-filecoin/)。
 
 ## 存储
 
@@ -51,11 +50,11 @@ _template: blog_detail_ch
 
 ## 工具
 
-[![](/uploads/estuary.webp)](https://filecoin.io/blog/posts/taking-a-look-at-estuary/)
+[![](/uploads/estuary.webp)](/blog/taking-a-look-at-estuary/)
 
 ### 了解Estuary
 
-Filecoin网络是一个突破性的去中心化存储网络基础设施及协议。互联网上有很多存储解决方案，但很少能在去中心化及透明性上跟Filecoin相提并论。现在，通过Estuary这个自由使用的开源的技术栈，社区可以将公开的数据存储在Filecoin上。想了解更多吗？请阅读这篇指引入门的[**博客文章**](https://filecoin.io/blog/posts/taking-a-look-at-estuary/)。如果你有意贡献，请在[**推特上联系 @aresearchgroup**](https://twitter.com/aresearchgroup).
+Filecoin网络是一个突破性的去中心化存储网络基础设施及协议。互联网上有很多存储解决方案，但很少能在去中心化及透明性上跟Filecoin相提并论。现在，通过Estuary这个自由使用的开源的技术栈，社区可以将公开的数据存储在Filecoin上。想了解更多吗？请阅读这篇指引入门的[**博客文章**](/blog/taking-a-look-at-estuary/)。如果你有意贡献，请在[**推特上联系 @aresearchgroup**](https://twitter.com/aresearchgroup).
 
 [![](/uploads/datastation.webp)](https://medium.com/buidl-labs/datastation-enhancing-the-experience-of-decentralised-storage-on-filecoin-79e8807b854d)
 

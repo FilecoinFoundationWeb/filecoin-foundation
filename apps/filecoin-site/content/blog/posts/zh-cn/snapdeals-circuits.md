@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -20,7 +19,7 @@ title: SnapDeals Circuits验证已完成
 _template: blog_detail_ch
 ---
 
-在1月份，Filecoin社区[完成了](https://filecoin.io/blog/posts/trusted-setup-complete-for-network-v15-upgrade/) 可信配置环节，让网络的重要升级成为可能。我们生成了安全的参数，用于主网上的四个新circuits的部署。众所周知，这些新的circuits是为了在Filecoin网络上启用 [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&t=1s)。
+在1月份，Filecoin社区[完成了](/blog/trusted-setup-complete-for-network-v15-upgrade/) 可信配置环节，让网络的重要升级成为可能。我们生成了安全的参数，用于主网上的四个新circuits的部署。众所周知，这些新的circuits是为了在Filecoin网络上启用 [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&t=1s)。
 
 我们很高兴宣布SnapDeals circuits验证步骤已经完成。如果脚本是完全可验证的，那么相关的输出信息就是可信的，你只需要相信至少有一个参与者没有以任何方式泄露其提交的随机值。
 

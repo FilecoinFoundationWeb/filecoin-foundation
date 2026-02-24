@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-features-gas-fees/
 author: ""
 categories:
   - updates

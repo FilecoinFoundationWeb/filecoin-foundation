@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/march-q-and-a-with-juan
 author: ""
 categories:
   - events

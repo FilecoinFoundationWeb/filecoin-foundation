@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/主网启动之旅
 author: Filecoin Project
 categories:
   - updates

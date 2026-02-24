@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Patrick Woodhead
 categories: []
 date: "2022-07-18T22:00:00Z"
@@ -153,7 +152,7 @@ Additionally, reputation is closely linked to the cryptoeconomics topic above, w
 
 #### The Indexer
 
-In March 2022, the Protocol Lab Data Systems team shipped the [indexer](http://filecoin.io/blog/posts/introducing-the-network-indexer). The indexer stores a mapping of CIDs to which SPs are storing them. It is already able to scale to billions of records.
+In March 2022, the Protocol Lab Data Systems team shipped the [indexer](/blog/introducing-the-network-indexer). The indexer stores a mapping of CIDs to which SPs are storing them. It is already able to scale to billions of records.
 
 From the RMWG, both [Leeway Hertz](https://www.leewayhertz.com/) and Ken Labs are running an Indexer node and are exploring what else they could build around the indexer relating to tooling and testing.
 

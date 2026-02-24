@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -29,7 +28,7 @@ title: Filecoin News 52
 
 Over 20,000 individual users are now storing more than 50 million data objects on Filecoin, all supported by a 20% month-over-month increase in Storage Providers. This significant growth comes right before the network adds new compute over data capabilities. The Filecoin Virtual Machine will allow 7,000 new developers to build decentralized applications directly on Filecoin that can leverage all the data stored on the network. Read more on [CoinDesk](https://www.coindesk.com/tech/2022/09/26/filesharing-crypto-project-filecoin-reports-strong-fundamental-growth-ahead-of-fvm-launch/).
 
-[![](/uploads/filecoin-fip-0036.webp)](https://filecoin.io/blog/posts/fip0036-everything-you-need-to-know/)
+[![](/uploads/filecoin-fip-0036.webp)](/blog/fip0036-everything-you-need-to-know/)
 
 ### FIP0036: Everything You Need to Know
 
@@ -63,11 +62,11 @@ FilSwan held a themed side-event during the FIL-Singapore Summit on Sep 26th. Ov
 
 ## Tools
 
-[![](/uploads/image.webp)](https://filecoin.io/blog/posts/what-the-fvm-unlocks/)
+[![](/uploads/image.webp)](/blog/what-the-fvm-unlocks/)
 
 ### What the FVM Unlocks
 
-The FVM can be used for the creation of a new class of web3 dApps, many of which will have the potential to become 10x improvements to the network’s functionality and beyond. Members of the Filecoin community are already excited about what can be built with these new capabilities. Find out how you can participate and start building some of these new use cases on the [Filecoin blog](https://filecoin.io/blog/posts/what-the-fvm-unlocks/).
+The FVM can be used for the creation of a new class of web3 dApps, many of which will have the potential to become 10x improvements to the network’s functionality and beyond. Members of the Filecoin community are already excited about what can be built with these new capabilities. Find out how you can participate and start building some of these new use cases on the [Filecoin blog](/blog/what-the-fvm-unlocks/).
 
 ## Events
 

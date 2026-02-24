@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/回顾主网启动周第一天
 author: Filecoin Project
 categories:
   - updates

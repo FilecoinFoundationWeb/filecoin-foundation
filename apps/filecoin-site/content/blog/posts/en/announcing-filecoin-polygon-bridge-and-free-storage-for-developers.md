@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -24,7 +23,7 @@ Textile’s release offers a fully functional storage bridge that allows develop
 
 This is just the beginning.
 
-Interoperability will enable a whole host of new Web3 applications, by allowing developers to combine capabilities from different blockchains to meet their particular needs. On the first level, Filecoin will bring greater functionality to Polygon applications that require [decentralized and verifiable storage](https://filecoin.io/blog/posts/ipfs-filecoin-and-content-persistence/). This may be especially relevant to the 170+ and growing NFT and gaming projects building on Polygon. Eventually, new applications will emerge from the collective communities, driving towards new kinds of product-market fit in the decentralized world. Both Polygon and Filecoin are only just beginning to explore the possibilities of their respective protocols. Filecoin is [more than just storage](https://filecoin.io/blog/posts/more-than-storage-business-opportunities-on-filecoin/) and Polygon is rapidly developing new functionalities..
+Interoperability will enable a whole host of new Web3 applications, by allowing developers to combine capabilities from different blockchains to meet their particular needs. On the first level, Filecoin will bring greater functionality to Polygon applications that require [decentralized and verifiable storage](/blog/ipfs-filecoin-and-content-persistence/). This may be especially relevant to the 170+ and growing NFT and gaming projects building on Polygon. Eventually, new applications will emerge from the collective communities, driving towards new kinds of product-market fit in the decentralized world. Both Polygon and Filecoin are only just beginning to explore the possibilities of their respective protocols. Filecoin is [more than just storage](/blog/more-than-storage-business-opportunities-on-filecoin/) and Polygon is rapidly developing new functionalities..
 
 ## Next Steps: Try out the Bridge and join us at the upcoming joint hackathons
 

@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -25,11 +24,11 @@ title: Filecoin News 58
 
 ## Announcements
 
-[![](/uploads/filecoin_blog_header__fvm_imaginarium__magmo.webp)](https://filecoin.io/blog/posts/the-fvm-imaginarium-magmo-brings-state-channels-to-the-filecoin-virtual-machine/)
+[![](/uploads/filecoin_blog_header__fvm_imaginarium__magmo.webp)](/blog/the-fvm-imaginarium-magmo-brings-state-channels-to-the-filecoin-virtual-machine/)
 
 ### Introducing the FVM Imaginarium
 
-The launch of the Filecoin Virtual Machine (FVM) is quickly approaching, but there are already amazing projects in development. The FVM Imaginarium Campaign is putting the spotlight on the teams who are building incredible use cases and introducing new opportunities and concepts on FVM. The first highlighted is Magmo, a development studio and research team who is working on porting State Channels to the FVM. [Check out the feature!](https://filecoin.io/blog/posts/the-fvm-imaginarium-magmo-brings-state-channels-to-the-filecoin-virtual-machine/)
+The launch of the Filecoin Virtual Machine (FVM) is quickly approaching, but there are already amazing projects in development. The FVM Imaginarium Campaign is putting the spotlight on the teams who are building incredible use cases and introducing new opportunities and concepts on FVM. The first highlighted is Magmo, a development studio and research team who is working on porting State Channels to the FVM. [Check out the feature!](/blog/the-fvm-imaginarium-magmo-brings-state-channels-to-the-filecoin-virtual-machine/)
 
 ## Community
 

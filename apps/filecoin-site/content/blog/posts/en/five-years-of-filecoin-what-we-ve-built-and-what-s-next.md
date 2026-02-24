@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /blog/five-years-of-filecoin
-  - /blog/filecoin-5th-birthday
 author: ""
 categories:
   - updates

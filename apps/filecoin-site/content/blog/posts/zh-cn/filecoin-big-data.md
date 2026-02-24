@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -21,7 +20,7 @@ title: Filecoin与大型数据集
 
 如今，Filecoin网络已具备 15个exbibytes (EiB)的数据存储能力，超过[七百个组织](https://storage.filecoin.io/)使用它进行数据存储和检索。随着越来越多的个人和去中心化应用程序加入分布式存储，Filecoin将持续欢迎大型传统玩家加入Web3。
 
-Filecoin网络是为接纳、存储、保护和提供来自企业级用户的大型数据集而特别打造。此外，Filecoin生态近期发布了[Project Gravity](https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/)，一个用于激励用户将大型数据集引入Filecoin的推荐计划。**Protocol Labs欣喜于宣布Project Gravity II将继续销售推荐计划并激励数据存储。**
+Filecoin网络是为接纳、存储、保护和提供来自企业级用户的大型数据集而特别打造。此外，Filecoin生态近期发布了[Project Gravity](/blog/filecoin-project-gravity-a-sales-referral-program/)，一个用于激励用户将大型数据集引入Filecoin的推荐计划。**Protocol Labs欣喜于宣布Project Gravity II将继续销售推荐计划并激励数据存储。**
 
 ## 脱离云端
 
@@ -47,7 +46,7 @@ Filecoin已经为这些缺陷开发了一个全面的解决方案。它不仅为
 
 随着超过3500个存储提供商在网络上提供服务，Filecoin上的大型数据集将会有更多机会。这个激励计划是为了确保此类大型数据集的所有者有额外的激励机制来探索该网络作为其存储的替代选择。
 
-首个Project Gravity于2021年9月启动，Project Gravity II现已开放申请至2022年4月1日。如需了解更多项目细节和要求，请访问原始公告页面(https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/)。相关简介请见下方内容。
+首个Project Gravity于2021年9月启动，Project Gravity II现已开放申请至2022年4月1日。如需了解更多项目细节和要求，请访问原始公告页面(/blog/filecoin-project-gravity-a-sales-referral-program/)。相关简介请见下方内容。
 
 ## 数据集具体类型
 

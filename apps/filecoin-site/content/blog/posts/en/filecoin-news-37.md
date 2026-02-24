@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -23,17 +22,17 @@ title: Filecoin News 37
 
 ## Announcements
 
-[![](/uploads/ecosystem-highlight-vivid-labs-2_hufcd2de2efd2d1a79fe665606f79c87f8_719437_2000x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/vivid-labs-using-filecoin-to-preserve-advanced-multimedia-nfts/)
+[![](/uploads/ecosystem-highlight-vivid-labs-2_hufcd2de2efd2d1a79fe665606f79c87f8_719437_2000x0_resize_q90_linear.webp)](/blog/vivid-labs-using-filecoin-to-preserve-advanced-multimedia-nfts/)
 
 ### Vivid Labs: Using Filecoin to Preserve Advanced Multimedia NFTs
 
-Vivid Labs doesn’t see NFTs as just digital collectibles but as next-generation media objects that create better content experiences. The project, which started as the VideoCoin Network, pivoted to NFTs 18 months ago as it realized their potential for more complex media types like video. Now, Vivid Labs enables creators to develop rich multimedia experiences through features like [NFT+](https://medium.com/vivid-labs/introducing-nft-71767a8d3644) on the VIVID platform. It encrypts all media via an on-chain ClearKey DRM and uses Filecoin’s decentralized storage to ensure the security and preservation of the NFT. Learn more about Vivid Labs on the Filecoin [blog](https://filecoin.io/blog/posts/vivid-labs-using-filecoin-to-preserve-advanced-multimedia-nfts/).
+Vivid Labs doesn’t see NFTs as just digital collectibles but as next-generation media objects that create better content experiences. The project, which started as the VideoCoin Network, pivoted to NFTs 18 months ago as it realized their potential for more complex media types like video. Now, Vivid Labs enables creators to develop rich multimedia experiences through features like [NFT+](https://medium.com/vivid-labs/introducing-nft-71767a8d3644) on the VIVID platform. It encrypts all media via an on-chain ClearKey DRM and uses Filecoin’s decentralized storage to ensure the security and preservation of the NFT. Learn more about Vivid Labs on the Filecoin [blog](/blog/vivid-labs-using-filecoin-to-preserve-advanced-multimedia-nfts/).
 
-[![](/uploads/dgm-grants-announcement_hu406ee1bce6c7f184c13fdb1926c121ab_607656_2000x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/announcing-dgm-a-new-decentralized-grants-marketplace/)
+[![](/uploads/dgm-grants-announcement_hu406ee1bce6c7f184c13fdb1926c121ab_607656_2000x0_resize_q90_linear.webp)](/blog/announcing-dgm-a-new-decentralized-grants-marketplace/)
 
 ### Announcing DGM, a New Decentralized Grants Marketplace
 
-Protocol Labs has launched a new platform for large-scale grants where funders within decentralized ecosystems can support important work. The Decentralized Grants Marketplace (DGM) aims to help projects reach ambitious roadmaps through a broader community of contributors. It will launch with a set of inaugural grants for the Filecoin ecosystem. Learn more about the DGM and how to participate in any of the initial grants on the Filecoin [blog](https://filecoin.io/blog/posts/announcing-dgm-a-new-decentralized-grants-marketplace/). You can also apply to be a [funder](https://airtable.com/shrrFHFi1PucZij51) or a [member](https://airtable.com/shrjDwJ09O4NNIHnY) of the team.
+Protocol Labs has launched a new platform for large-scale grants where funders within decentralized ecosystems can support important work. The Decentralized Grants Marketplace (DGM) aims to help projects reach ambitious roadmaps through a broader community of contributors. It will launch with a set of inaugural grants for the Filecoin ecosystem. Learn more about the DGM and how to participate in any of the initial grants on the Filecoin [blog](/blog/announcing-dgm-a-new-decentralized-grants-marketplace/). You can also apply to be a [funder](https://airtable.com/shrrFHFi1PucZij51) or a [member](https://airtable.com/shrjDwJ09O4NNIHnY) of the team.
 
 [![](/uploads/plgrants.webp)](https://docs.google.com/forms/d/e/1FAIpQLSdmJki5UoaRMlrWDfxeVZYSw3CpfDT2pkGM8fS6cWl404bCnw/viewform?usp=sf_link)
 
@@ -53,7 +52,7 @@ Today’s games are rich multimedia and art experiences, but that depth comes at
 
 ### SnapDeals Circuits Verification is Complete
 
-The Filecoin community [generated](https://filecoin.io/blog/posts/trusted-setup-complete-for-network-v15-upgrade/) secure parameters for four new circuits to be used on mainnet in January. This was the first step to enable [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&t=1s) on the network. Last week, the verification process for these circuits was completed. Their outputs can be trusted if the transcript is entirely verifiable, and you would need to trust that at least one of the participants did not leak their contributed randomness in any way. To verify that the parameters for our SnapDeals circuits are the same as the output from our participants you can follow the instructions on [GitHub](https://github.com/filecoin-project/phase2-attestations/tree/9cb8bece7611b09ec016c2d3a607e4317e45af54/934fe8c#phase-2-validation).
+The Filecoin community [generated](/blog/trusted-setup-complete-for-network-v15-upgrade/) secure parameters for four new circuits to be used on mainnet in January. This was the first step to enable [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&t=1s) on the network. Last week, the verification process for these circuits was completed. Their outputs can be trusted if the transcript is entirely verifiable, and you would need to trust that at least one of the participants did not leak their contributed randomness in any way. To verify that the parameters for our SnapDeals circuits are the same as the output from our participants you can follow the instructions on [GitHub](https://github.com/filecoin-project/phase2-attestations/tree/9cb8bece7611b09ec016c2d3a607e4317e45af54/934fe8c#phase-2-validation).
 
 [![](/uploads/index.webp)](https://cid.contact/)
 
@@ -82,17 +81,17 @@ Read [the blogpost](https://drand.love/blog/2022/02/21/multi-frequency-support-a
 
 ## Community
 
-[![](/uploads/1327-filecoin-blog-post-header-deal-making-ama-recap_huf24e73fab98f18f4923bc1705af7965d_193051_2000x0_resize_q90_linear_2.webp)](https://filecoin.io/blog/posts/filecoin-deal-making-ama/)
+[![](/uploads/1327-filecoin-blog-post-header-deal-making-ama-recap_huf24e73fab98f18f4923bc1705af7965d_193051_2000x0_resize_q90_linear_2.webp)](/blog/filecoin-deal-making-ama/)
 
 ### Filecoin Deal Making AMA Recap
 
-If you’ve been meaning to learn more about deal making in the Filecoin Network and missed the AMA on February 17th, don’t worry. We’ve [recapped](https://filecoin.io/blog/posts/filecoin-deal-making-ama/) the event and shared a [video](https://youtu.be/_9fgQHVMuVA) where you’ll find answers to questions ranging from SnapDeals to the Boost Alpha release. Be sure to join the conversation next time by tuning in on [Slack](https://filecoin.io/slack), [WeChat](https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF), or [Twitter](https://twitter.com/Filecoin).
+If you’ve been meaning to learn more about deal making in the Filecoin Network and missed the AMA on February 17th, don’t worry. We’ve [recapped](/blog/filecoin-deal-making-ama/) the event and shared a [video](https://youtu.be/_9fgQHVMuVA) where you’ll find answers to questions ranging from SnapDeals to the Boost Alpha release. Be sure to join the conversation next time by tuning in on [Slack](https://filecoin.io/slack), [WeChat](https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF), or [Twitter](https://twitter.com/Filecoin).
 
-[![](/uploads/filecoin-green.webp)](https://filecoin.io/blog/posts/filecoin-green/)
+[![](/uploads/filecoin-green.webp)](/blog/filecoin-green/)
 
 ### Filecoin Green Virtual Meetup
 
-The most recent gathering of the [Filecoin Green](https://filecoin.energy/) initiative [took place](https://www.meetup.com/Filecoin-New-York-City/events/283633616/) today at 12pm ET. The event featured Storage Providers in our community who are building renewable energy into their operations and developers using Filecoin and IPFS to track environmental impacts. Stay tuned on [Twitter](https://twitter.com/filecoin) for more updates on next events and read this [blog post](https://filecoin.io/blog/posts/filecoin-green/) about how the Filecoin Network is using Web3 solutions to make blockchains greener.
+The most recent gathering of the [Filecoin Green](https://filecoin.energy/) initiative [took place](https://www.meetup.com/Filecoin-New-York-City/events/283633616/) today at 12pm ET. The event featured Storage Providers in our community who are building renewable energy into their operations and developers using Filecoin and IPFS to track environmental impacts. Stay tuned on [Twitter](https://twitter.com/filecoin) for more updates on next events and read this [blog post](/blog/filecoin-green/) about how the Filecoin Network is using Web3 solutions to make blockchains greener.
 
 [![](/uploads/grants.webp)](https://5ufz7ber0fd.typeform.com/sealingservice?utm_campaign=sealing-as-a-service)
 
@@ -117,7 +116,7 @@ Join to hear from Juan Benet as he presents the future of Filecoin, followed by 
 This year the Filecoin and IPFS ecosystems are going big at SXSW. Join the community in Austin as we host three major events from March 11-15:
 
 - **NFT House:** Take a look at the endless possibilities of building NFTs with [NFT.Storage](https://nft.storage/). Register for the event on [March 11](https://www.eventbrite.com/e/nft-house-sxsw-day-1-nft-x-art-tickets-275786012387) to learn more about NFT applications in art, music, and video. On [March 12](https://www.eventbrite.com/e/nft-house-sxsw-day-2-nft-x-technology-tickets-276168095207) tune in fot a deeper dive into the technology and what it means for gaming and the metaverse.
-- **Sustainable Blockchain Summit:** Join us on [March 13](https://www.eventbrite.com/e/sustainable-blockchain-summit-sxsw-tickets-272887262147) for a conversation about how the Filecoin ecosystem can build greener blockchain networks with [Filecoin Green](https://filecoin.io/blog/posts/filecoin-green/). Join discussions on how Web3 tools can be a boon to renewable energy and drive change towards sustainability.
+- **Sustainable Blockchain Summit:** Join us on [March 13](https://www.eventbrite.com/e/sustainable-blockchain-summit-sxsw-tickets-272887262147) for a conversation about how the Filecoin ecosystem can build greener blockchain networks with [Filecoin Green](/blog/filecoin-green/). Join discussions on how Web3 tools can be a boon to renewable energy and drive change towards sustainability.
 - **Web3 Hacker House:** Finally, come hack with us and our ecosystem collaborators on [March 14](https://www.eventbrite.com/e/web3-hacker-house-sxsw-day-1-tickets-276203972517) and [15](https://www.eventbrite.com/e/web3-hacker-house-sxsw-day-2-tickets-276204514137). Register for mini hackathons, developer meetings, workshops, and panels as we get to know more builders in the fast-growing Web3 community.
 
 [![](/uploads/fmnnc3uakaqtu-b.webp)](https://ethernals.devfolio.co/)

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/announcing-filecoin-ignite-and-hackfs
 author: ""
 categories:
   - events

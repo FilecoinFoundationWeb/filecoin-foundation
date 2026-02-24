@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/testnet-phase-2-update/
 author: ""
 categories:
   - updates

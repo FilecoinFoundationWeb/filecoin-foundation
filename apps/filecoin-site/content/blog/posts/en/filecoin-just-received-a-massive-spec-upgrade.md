@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-spec-update/
 author: ""
 categories:
   - updates

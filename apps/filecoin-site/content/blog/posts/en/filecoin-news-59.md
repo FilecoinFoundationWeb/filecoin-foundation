@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -23,17 +22,17 @@ title: Filecoin News 59
 
 ## Announcements
 
-[![](/uploads/filecoin_2022_recap_header.webp)](https://filecoin.io/blog/posts/filecoin-2022-review-enabling-the-world-s-largest-decentralized-open-data-economy/)
+[![](/uploads/filecoin_2022_recap_header.webp)](/blog/filecoin-2022-review-enabling-the-world-s-largest-decentralized-open-data-economy/)
 
 ### Filecoin 2022 Review
 
-2022 was a tumultuous year for Web3 and the world more broadly. Yet, in spite of challenging times, the Filecoin community had a year with many bright spots, where the community came together to build and where the importance of the mission and vision of the project was reinforced. Revisit [key highlights in the Filecoin growth story](https://filecoin.io/blog/posts/filecoin-2022-review-enabling-the-world-s-largest-decentralized-open-data-economy/) and get a glimpse at what’s to come in 2023!
+2022 was a tumultuous year for Web3 and the world more broadly. Yet, in spite of challenging times, the Filecoin community had a year with many bright spots, where the community came together to build and where the importance of the mission and vision of the project was reinforced. Revisit [key highlights in the Filecoin growth story](/blog/filecoin-2022-review-enabling-the-world-s-largest-decentralized-open-data-economy/) and get a glimpse at what’s to come in 2023!
 
-[![](/uploads/fvm-brand-and-website_hu5c5a9ecdb23422a718b61fedc5bd64d3_886260_2000x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/the-filecoin-virtual-machine-explained/)
+[![](/uploads/fvm-brand-and-website_hu5c5a9ecdb23422a718b61fedc5bd64d3_886260_2000x0_resize_q90_linear.webp)](/blog/the-filecoin-virtual-machine-explained/)
 
 ### The Filecoin Virtual Machine Explained
 
-The Filecoin Virtual Machine was created to address Protocol Labs’ ambition of creating a truly decentralized internet, but what exactly is FVM? FVM combines the power of smart contracts and verifiable storage. Like smart contracts, FVM has the ability to self-execute a certain behavior, once the predetermined conditions are met. Unlike most other smart contracts, FVM has the additional ability to access verified proof of stored data, within the virtual machine’s native environment. [Learn more](https://filecoin.io/blog/posts/the-filecoin-virtual-machine-explained/) about FVM on the Filecoin Blog!
+The Filecoin Virtual Machine was created to address Protocol Labs’ ambition of creating a truly decentralized internet, but what exactly is FVM? FVM combines the power of smart contracts and verifiable storage. Like smart contracts, FVM has the ability to self-execute a certain behavior, once the predetermined conditions are met. Unlike most other smart contracts, FVM has the additional ability to access verified proof of stored data, within the virtual machine’s native environment. [Learn more](/blog/the-filecoin-virtual-machine-explained/) about FVM on the Filecoin Blog!
 
 ## Community
 
@@ -43,11 +42,11 @@ The Filecoin Virtual Machine was created to address Protocol Labs’ ambition of
 
 Lomads, an [operations and finance management](https://www.lomads.xyz/) dashboard for Web3 organizations, has [integrated Filecoin and IPFS](https://lomads.medium.com/lomads-partners-with-ipfs-filecoin-via-protocol-labs-40294ce84c87) for off-chain data storage. This gives the dashboard the ability to protect user data without compromising privacy and autonomy. Additionally, IPFS provides robust data backups to drastically reduce the chance of server failure. Lomads will be using IPFS specifically for projects and tasks, transactions, and Soulbound Token Metadata.
 
-[![](/uploads/fvm-brand-and-website_hu5c5a9ecdb23422a718b61fedc5bd64d3_886260_2000x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/fvm-bulletproofing-initiative/)
+[![](/uploads/fvm-brand-and-website_hu5c5a9ecdb23422a718b61fedc5bd64d3_886260_2000x0_resize_q90_linear.webp)](/blog/fvm-bulletproofing-initiative/)
 
 ### FVM Bulletproofing Initiative
 
-[FVM Bulletproofing](https://filecoin.io/blog/posts/fvm-bulletproofing-initiative/) is an invite-only initiative that aims to engage experts from relevant fields — Wasm, Rust, EVM, blockchain/web3 security — to assess the codebase for latent vulnerabilities and earn rewards for new issues they find and report responsibly. The rewards pool will be $100k, paid out in FIL tokens, and distributed between qualifying, confirmed, and approved issue reports.
+[FVM Bulletproofing](/blog/fvm-bulletproofing-initiative/) is an invite-only initiative that aims to engage experts from relevant fields — Wasm, Rust, EVM, blockchain/web3 security — to assess the codebase for latent vulnerabilities and earn rewards for new issues they find and report responsibly. The rewards pool will be $100k, paid out in FIL tokens, and distributed between qualifying, confirmed, and approved issue reports.
 
 ### How Push Protocol uses web3.storage
 

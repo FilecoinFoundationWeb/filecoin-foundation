@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/space-race-ama-3-summary/
 author: ""
 categories:
   - updates

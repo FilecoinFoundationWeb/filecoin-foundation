@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-comes-to-protoschool/
 author: ""
 categories:
   - updates

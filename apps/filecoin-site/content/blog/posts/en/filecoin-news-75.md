@@ -55,7 +55,7 @@ To remove as many barriers as possible to joining the Filecoin decentralized sto
 
 ### Dive into the Future of Filecoin Storage with Synthetic-PoRep
 
-Discover how Synthetic-PoRep (Synth-PoRep) is set to revolutionize the world of Filecoin storage by tackling the challenges of PoRep's large storage overhead. In this insightful blog post, explore how Synth-PoRep drastically reduces storage requirements, saving up to 98% of storage space, while also lowering gas costs for Storage Providers. Learn how this groundbreaking solution synergizes seamlessly with SupraSeal optimizations, opening up new possibilities for efficient parallelized PoRep generation. Don't miss out on the future of efficient and cost-effective storage on the Filecoin network. [Read more](https://filecoin.io/blog/posts/revolutionizing-filecoin-storage-with-synthetic-porep-cutting-overheads-and-boosting-efficiency/).
+Discover how Synthetic-PoRep (Synth-PoRep) is set to revolutionize the world of Filecoin storage by tackling the challenges of PoRep's large storage overhead. In this insightful blog post, explore how Synth-PoRep drastically reduces storage requirements, saving up to 98% of storage space, while also lowering gas costs for Storage Providers. Learn how this groundbreaking solution synergizes seamlessly with SupraSeal optimizations, opening up new possibilities for efficient parallelized PoRep generation. Don't miss out on the future of efficient and cost-effective storage on the Filecoin network. [Read more](/blog/revolutionizing-filecoin-storage-with-synthetic-porep-cutting-overheads-and-boosting-efficiency/).
 
 ## Events 
 

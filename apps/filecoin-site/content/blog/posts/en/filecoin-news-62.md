@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -27,7 +26,7 @@ title: Filecoin News 62
 
 ### 7 Days til FVM Launch
 
-We are just seven days away from the [Filecoin Virtual Machine](http://fvm.dev/)’s launch on Filecoin mainnet. On March 14th, please join us as we celebrate the successful launch by sharing the news with your networks on Twitter and joining us for a launch event. Please stay tuned for more details but in the meantime, check out this blog post on [What the FVM Unlocks](https://filecoin.io/blog/posts/what-the-fvm-unlocks/) and familiarize yourself with the multitude of opportunities that are unleashed by FVM and what it means for the future of Web3.
+We are just seven days away from the [Filecoin Virtual Machine](http://fvm.dev/)’s launch on Filecoin mainnet. On March 14th, please join us as we celebrate the successful launch by sharing the news with your networks on Twitter and joining us for a launch event. Please stay tuned for more details but in the meantime, check out this blog post on [What the FVM Unlocks](/blog/what-the-fvm-unlocks/) and familiarize yourself with the multitude of opportunities that are unleashed by FVM and what it means for the future of Web3.
 
 ### FVM Microgrants Wave 2 are now open
 
@@ -41,15 +40,15 @@ Already building with FVM and want to take your project to the next level? [Appl
 
 ### FVM Imaginarium: Block Explorers
 
-[The Filecoin Virtual Machine](http://fvm.dev/) is quickly approaching on March 14, 2023 (Pi Day) and developers are already building incredible smart contract use cases on Filecoin, as well as tooling to support these use cases. One class of essential tools are [block explorers](https://filecoin.io/blog/posts/the-fvm-imaginarium-block-explorers/) which provide the community with essential real-time and historical information about the Filecoin blockchain and state of the network, including data on transactions, addresses, blocks, Filecoin actor interactions, storage providers, and more.
+[The Filecoin Virtual Machine](http://fvm.dev/) is quickly approaching on March 14, 2023 (Pi Day) and developers are already building incredible smart contract use cases on Filecoin, as well as tooling to support these use cases. One class of essential tools are [block explorers](/blog/the-fvm-imaginarium-block-explorers/) which provide the community with essential real-time and historical information about the Filecoin blockchain and state of the network, including data on transactions, addresses, blocks, Filecoin actor interactions, storage providers, and more.
 
-With the launch of FVM, existing block explorers are being augmented and new ones are being developed that will dramatically enhance the Web3 experience for FVM users. Each will benefit the ecosystem in their own unique ways. Read all about them in [this recent blog post](https://filecoin.io/blog/posts/the-fvm-imaginarium-block-explorers/).
+With the launch of FVM, existing block explorers are being augmented and new ones are being developed that will dramatically enhance the Web3 experience for FVM users. Each will benefit the ecosystem in their own unique ways. Read all about them in [this recent blog post](/blog/the-fvm-imaginarium-block-explorers/).
 
 ## Tools
 
 ### The Interplanetary Network Indexer (IPNI) now more adaptable
 
-The [IPNI](https://github.com/ipni) is the fastest way to match the location of your content and the person seeking it. It allows Storage Providers to advertise the location of content they’ve stored in order to enable clients to query a Network Indexer and learn where to retrieve that content. This new feature allows a storage provider who is running an indexer to add extra information to all of their past and future advertisements with a single advertisement, without having to republish their entire advertisement chain. This makes a previously arduous process more efficient for storage providers, and improves the quality of the index itself! Learn more about the new capability in [this blog post](https://filecoin.io/blog/posts/extended-providers-updating-ipni-without-re-advertising/).
+The [IPNI](https://github.com/ipni) is the fastest way to match the location of your content and the person seeking it. It allows Storage Providers to advertise the location of content they’ve stored in order to enable clients to query a Network Indexer and learn where to retrieve that content. This new feature allows a storage provider who is running an indexer to add extra information to all of their past and future advertisements with a single advertisement, without having to republish their entire advertisement chain. This makes a previously arduous process more efficient for storage providers, and improves the quality of the index itself! Learn more about the new capability in [this blog post](/blog/extended-providers-updating-ipni-without-re-advertising/).
 
 ## Events
 

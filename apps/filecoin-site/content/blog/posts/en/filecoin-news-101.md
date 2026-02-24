@@ -29,7 +29,7 @@ As we step into 2025, the Filecoin Foundation (FF) is calling on the entire File
 
 ### Save the Date: FIL Dev Summit 6 in Toronto
 
-May 12-13, 2025, marks the return of FIL Dev Summit! Join builders, developers, and visionaries in Toronto for impactful conversations driving Filecoin’s evolution. Don’t miss the opportunity to shape the network’s future. [Get the details and secure your ticket](https://www.fildev.io/FDS-6)! And in case you missed FDS5 in Bangkok, [check out this blog post](https://filecoin.io/blog/posts/inside-fds-bangkok-2024-key-takeaways-part-1/) recapping the event. 
+May 12-13, 2025, marks the return of FIL Dev Summit! Join builders, developers, and visionaries in Toronto for impactful conversations driving Filecoin’s evolution. Don’t miss the opportunity to shape the network’s future. [Get the details and secure your ticket](https://www.fildev.io/FDS-6)! And in case you missed FDS5 in Bangkok, [check out this blog post](/blog/inside-fds-bangkok-2024-key-takeaways-part-1/) recapping the event. 
 
 ## 🌎 Community Updates 🌎
 

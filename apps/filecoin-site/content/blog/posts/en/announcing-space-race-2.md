@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/space-race-2/
 author: ""
 categories:
   - updates

@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/用于大型数据的离线数据传输
-  - /zh-cn/blog/offline-data-transfer-for-large-scale-data
 author: ""
 categories:
   - updates

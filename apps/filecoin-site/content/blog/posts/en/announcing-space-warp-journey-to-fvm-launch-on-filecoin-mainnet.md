@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -22,7 +21,7 @@ _template: blog_detail
 
 The [Filecoin Virtual Machine](https://fvm.filecoin.io/)’s EVM runtime (FEVM) is coming in February 2023, and it will be **_one of the most ground-breaking updates_** to the Filecoin network ever. For the first time, developers will be able to deploy user-defined smart contracts on top of Filecoin’s blockchain and storage network, with the ability to write them in [Solidity](https://soliditylang.org/) and deploy them using the many EVM-compatible developer tools that web3 builders know and love.
 
-Programmability, or the ability to deploy custom smart contracts, is being launched in phases to Filecoin mainnet, with the groundwork of FVM Milestone 1 launched this past July in the [nv16 Skyr Network Upgrade](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/). Since then, the FVM team has been hard at work on the much-anticipated Milestone 2.1 ([roadmap](https://fvm.filecoin.io/#roadmap-4)), which will be part of the Filecoin [nv18 Hygge Network Upgrade](https://github.com/filecoin-project/community/discussions/74?sort=new#discussioncomment-4313888) aimed for February 2023. For this milestone, an EVM runtime has been added to the FVM’s hypervisor-inspired design which will allow for multiple flavors of VMs to co-exist on Filecoin.
+Programmability, or the ability to deploy custom smart contracts, is being launched in phases to Filecoin mainnet, with the groundwork of FVM Milestone 1 launched this past July in the [nv16 Skyr Network Upgrade](/blog/filecoin-v16-network-upgrade-skyr/). Since then, the FVM team has been hard at work on the much-anticipated Milestone 2.1 ([roadmap](https://fvm.filecoin.io/#roadmap-4)), which will be part of the Filecoin [nv18 Hygge Network Upgrade](https://github.com/filecoin-project/community/discussions/74?sort=new#discussioncomment-4313888) aimed for February 2023. For this milestone, an EVM runtime has been added to the FVM’s hypervisor-inspired design which will allow for multiple flavors of VMs to co-exist on Filecoin.
 
 As the Filecoin EVM runtime ("FEVM") was being built, early builders were able to try out incremental weekly feature releases on the bleeding-edge [Wallaby testnet](https://github.com/filecoin-project/testnet-wallaby). Now it is nearing feature-completeness and the [final Carbonado release of FEVM](https://github.com/filecoin-project/ref-fvm/issues/692) will be ready soon. This release coming later in December will kick off the new **Hyperspace** **testnet**, a long-running stable testnet for FVM developers that will become the main developer-focused testnet for Filecoin going forward.
 
@@ -66,13 +65,13 @@ FVM unlocks the ability to write software that **automates the storage, retrieva
 
 For example, any number of disparate parties could be incentivized to form **DataDAOs around the creation and preservation of important datasets**. This can leverage a whole new galaxy of exciting products and services like DeFi and NFTs that the FVM unlocks, for continuous funding and the creation of new markets via value-added services on top of tokenized datasets.
 
-Filecoin also has a unique [island economy](https://filecoin.io/blog/posts/filecoin-s-island-economy/) of more than 4,000 storage providers globally contributing storage capacity to the network, with significant value locked as miner collateral and continuously earning block rewards. The FVM will enable more opportunities for **DeFi financial flows and markets** to further grow this valuable economy.
+Filecoin also has a unique [island economy](/blog/filecoin-s-island-economy/) of more than 4,000 storage providers globally contributing storage capacity to the network, with significant value locked as miner collateral and continuously earning block rewards. The FVM will enable more opportunities for **DeFi financial flows and markets** to further grow this valuable economy.
 
 Learn more about what the FVM makes possible from this [recent FIL Lisbon talk](https://www.youtube.com/watch?v=EqLlyJ13DLY) or via the [FVM docs, tutorials and resources portal](http://spacewarp.fvm.dev/#resources).
 
 ## FVM and Filecoin Roadmap
 
-Later next year after the FEVM’s launch on mainnet, a **WebAssembly FVM runtime** will also be added, with more VMs possible in the future. Developers will then be able to also write custom smart contracts in Rust, AssemblyScript, Go and compile them to Wasm bytecode, and potentially other privacy-preserving programming languages for zk-SNARKs like [Lurk](https://filecoin.io/blog/posts/introducing-lurk-a-programming-language-for-recursive-zk-snarks/).
+Later next year after the FEVM’s launch on mainnet, a **WebAssembly FVM runtime** will also be added, with more VMs possible in the future. Developers will then be able to also write custom smart contracts in Rust, AssemblyScript, Go and compile them to Wasm bytecode, and potentially other privacy-preserving programming languages for zk-SNARKs like [Lurk](/blog/introducing-lurk-a-programming-language-for-recursive-zk-snarks/).
 
 The FVM is just the first in a series of significant updates coming to Filecoin in 2023. The Filecoin Network is building the foundation for a decentralized internet based on [open services](https://medium.com/tldrfilecoin/state-and-direction-of-filecoin-summarized-4b90c59e3cca), in which open source and incentives are built-in to the protocol to drive production of quality services.
 

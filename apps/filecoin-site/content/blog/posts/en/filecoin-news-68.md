@@ -58,11 +58,11 @@ Learn more about the Accelerating Makers initiative to connect emerging DWeb too
 
 ### Onboarding large scale customer data with Filecoin Data Tools
 
-The Engineering team within the Filecoin ecosystem recently launched the Filecoin Data Tools (FDT) project to begin large scale onboarding of customer data. This platform has demonstrated the ease of use to rapidly and seamlessly onboard data through three pilot initiatives and is now ready to begin supporting more and more customers within the Filecoin ecosystem. Read this [recent blog post](https://filecoin.io/blog/posts/introducing-filecoin-data-tools-fdt/) to learn more about the lineup of technology plus a glimpse of the clients already leveraging FDT like [Radiant Earth](https://radiant.earth/) and [SUCHO](https://www.sucho.org/). 
+The Engineering team within the Filecoin ecosystem recently launched the Filecoin Data Tools (FDT) project to begin large scale onboarding of customer data. This platform has demonstrated the ease of use to rapidly and seamlessly onboard data through three pilot initiatives and is now ready to begin supporting more and more customers within the Filecoin ecosystem. Read this [recent blog post](/blog/introducing-filecoin-data-tools-fdt/) to learn more about the lineup of technology plus a glimpse of the clients already leveraging FDT like [Radiant Earth](https://radiant.earth/) and [SUCHO](https://www.sucho.org/). 
 
 ### Maximize your Filecoin storage potential with booster-http and nginx
 
-Filecoin Storage Providers can now serve blocks and files over HTTP, leveraging powerful tools like load balancers and reverse proxies. Clients can request uploaded files directly from their browsers, enhancing the user experience. Additionally, users can protect their booster-http server with nginx, plus serving files over HTTP unlocks a powerful ecosystem of tools for Storage Providers (SPs). Learn more about [serving files with booster-http](https://filecoin.io/blog/posts/serving-files-with-booster-http/) and [protecting booster-http with nginx](https://filecoin.io/blog/posts/protecting-booster-http-with-nginx/).
+Filecoin Storage Providers can now serve blocks and files over HTTP, leveraging powerful tools like load balancers and reverse proxies. Clients can request uploaded files directly from their browsers, enhancing the user experience. Additionally, users can protect their booster-http server with nginx, plus serving files over HTTP unlocks a powerful ecosystem of tools for Storage Providers (SPs). Learn more about [serving files with booster-http](/blog/serving-files-with-booster-http/) and [protecting booster-http with nginx](/blog/protecting-booster-http-with-nginx/).
 
 ## Events
 

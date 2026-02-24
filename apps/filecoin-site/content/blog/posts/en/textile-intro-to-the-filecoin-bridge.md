@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -51,7 +50,7 @@ Bridges are complex creations that take data from one blockchain and create a pa
 
 This interaction is revolutionary in that it allows users of the NEAR mainnet to take advantage of Filecoin storage using native NEAR tokens to pay for the costs — something that was previously impossible. The NEAR bridge is one of those currently under development and is now in its demo stage.
 
-Other cross-chain bridges include [one to the Ethereum mainnet](https://filecoin.io/blog/posts/bridging-the-filecoin-and-ethereum-communities/) and one that bridges to the Bitcoin blockchain. Bridges are helpful because they provide several inherent benefits:
+Other cross-chain bridges include [one to the Ethereum mainnet](/blog/bridging-the-filecoin-and-ethereum-communities/) and one that bridges to the Bitcoin blockchain. Bridges are helpful because they provide several inherent benefits:
 
 - **Convenience:** A bridge can help with batching, deal-making, and compiling files to make it easier to interact with Filecoin. Instead of manually assessing contracts and deals, the bridge automates the process, giving the user a much friendlier and cleaner front end. The only concern is the costs.
 - **Caching:** Normally, for batch uploads, there is a period of caching. This period allows users to access their files while they're still being uploaded to the Filecoin network. Caching also helps with speedy access to files, reducing the time taken to jump from one chain to another.

@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Filecoin Project
 categories:
   - updates
@@ -54,7 +53,7 @@ _template: blog_detail_ch
 
 ![](/blog/filecoin-mining-guide.png)
 
-### [Filecoin挖矿简介](https://filecoin.io/blog/filecoin-guide-to-storage-mining/)
+### [Filecoin挖矿简介](/blog/filecoin-guide-to-storage-mining/)
 
 在本节课中，Filecoin 软件工程师 Łukasz Magiera 解释了如何在 Filecoin 网络上挖矿，讲解了包括存储扇区、存储证明和挖矿算力在内等关键概念。他对网络架构从高层次进行了概述，并介绍了如何设置挖矿节点。
 
@@ -154,9 +153,9 @@ Fleek的Space Daemon是一个建立在分布式网络上的开源文件存储、
 
 - [分布式随机性 & 领导者选举](/blog/filecoin-features-distributed-randomness-leader-elections/)
 - [Filecoin的证明系统](/blog/what-sets-us-apart-filecoin-s-proof-system/)
-- [技巧集——近看Filecoin创建区块](https://filecoin.io/blog/tipsets-family-based-approach-to-consensus/)
+- [技巧集——近看Filecoin创建区块](/blog/tipsets-family-based-approach-to-consensus/)
 - [Filecoin的可验证存储](/blog/filecoin-features-verifiable-storage/)
-- [对于大型数据的离线数据传输](https://filecoin.io/blog/offline-data-transfer-for-large-scale-data/)和[通过Filecoin Discover存储珍贵数据](https://www.youtube.com/watch?v=UXmQfnwzhtQ)
+- [对于大型数据的离线数据传输](/blog/offline-data-transfer-for-large-scale-data/)和[通过Filecoin Discover存储珍贵数据](https://www.youtube.com/watch?v=UXmQfnwzhtQ)
 - [ProtoSchool: 解析内容标识符(CID)](https://proto.school/anatomy-of-a-cid)
 - [如何使用React、lotus和go-ipfs创建一个Filecoin网络检查器](https://www.youtube.com/watch?v=lkx2Z3T649Y)
 - [在Filecoin上的Protoschool的可验证存储](https://proto.school/verifying-storage-on-filecoin)

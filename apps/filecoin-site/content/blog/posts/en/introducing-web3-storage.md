@@ -1,7 +1,4 @@
 ---
-aliases:
-  - >-
-    /blog/posts/introducing-web3.storage-the-easiest-way-to-store-data-on-filecoin/
 author: ""
 categories:
   - updates
@@ -37,7 +34,7 @@ Here is a brief overview of these components.
 
 ## How Does It Work?
 
-Behind the scenes, content that is sent to Web3.Storage is persistently [stored](https://web3.storage/) across a network of storage providers on Filecoin and pinned redundantly on IPFS. Together, Filecoin and IPFS endow content, data, and applications with [_content addressability_](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) and [_persistence_](https://filecoin.io/blog/posts/ipfs-filecoin-and-content-persistence/)_. Content addressability_ enables immutable links that are based on the content itself (CIDs), rendering information impossible to change, edit, or compromise without leaving a traceable record of tampering. _Persistence_ ensures the data stored via this service will remain intact and available 一 backed by the robust [economic model](https://filecoin.io/blog/posts/introducing-the-filecoin-economy/) of Filecoin and verifiable proofs regarding the stored data’s integrity.
+Behind the scenes, content that is sent to Web3.Storage is persistently [stored](https://web3.storage/) across a network of storage providers on Filecoin and pinned redundantly on IPFS. Together, Filecoin and IPFS endow content, data, and applications with [_content addressability_](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) and [_persistence_](/blog/ipfs-filecoin-and-content-persistence/)_. Content addressability_ enables immutable links that are based on the content itself (CIDs), rendering information impossible to change, edit, or compromise without leaving a traceable record of tampering. _Persistence_ ensures the data stored via this service will remain intact and available 一 backed by the robust [economic model](/blog/introducing-the-filecoin-economy/) of Filecoin and verifiable proofs regarding the stored data’s integrity.
 
 ![Web3.Storage architecture](/uploads/image-5.webp)
 

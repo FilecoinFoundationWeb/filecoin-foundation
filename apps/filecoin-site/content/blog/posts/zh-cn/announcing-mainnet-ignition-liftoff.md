@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/发布主网点火和启动阶段
-  - /zh-cn/blog/mainnet-ignition
 author: ""
 categories:
   - updates

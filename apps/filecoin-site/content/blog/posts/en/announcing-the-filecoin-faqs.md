@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/faqs-blog-post/
 author: ""
 categories:
   - updates

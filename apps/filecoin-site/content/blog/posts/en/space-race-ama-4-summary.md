@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/space-race-ama-4-summary/
 author: ""
 categories:
   - updates

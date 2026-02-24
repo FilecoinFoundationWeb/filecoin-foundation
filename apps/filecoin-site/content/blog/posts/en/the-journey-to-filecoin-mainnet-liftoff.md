@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/journey-to-liftoff/
 author: ""
 categories:
   - updates
@@ -98,7 +96,7 @@ Filecoin storage clients and developers have also built several tools to make da
 
 - [The Starling project](http://starlingstorage.io/), which is a storage product catered towards large data volumes storage clients who have a special interest in data provenance and Filecoin’s verifiable storage features.
 - [Filecoin.tools](https://filecoin.tools/), a tool to help storage clients and storage developers monitor the status of their storage on the Filecoin network.
-- [Deal CSV export scripts](https://filecoin.io/blog/posts/the-journey-to-filecoin-mainnet-liftoff/) to backup indices of data stored on Filecoin for record-keeping and retrieval purposes
+- [Deal CSV export scripts](/blog/the-journey-to-filecoin-mainnet-liftoff/) to backup indices of data stored on Filecoin for record-keeping and retrieval purposes
 - Codefi Storage for tracking miner reputation and monthly storage price per GiB
 - And much more!
 

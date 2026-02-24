@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/update-2018-q1-q2/
 author: ""
 categories:
   - updates

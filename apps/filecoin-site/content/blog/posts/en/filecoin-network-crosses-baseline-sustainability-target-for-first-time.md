@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -117,6 +116,6 @@ This article was written by [Danilo Lessa Bernardineli](https://medium.com/u/7de
 
 ## Further Reading
 
-Read more about Filecoin on the [Filecoin blog](https://filecoin.io/blog/#posts).
+Read more about Filecoin on the [Filecoin blog](https://filecoin.io/blog/).
 
 Keep up with the latest [BlockScience](https://block.science "https://block.science") research on their [Twitter](https://twitter.com/block_science) and Medium or explore their library of presentations, academic papers and recent media on the [resources page of their website](https://block.science/resources).

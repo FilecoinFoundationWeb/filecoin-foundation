@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/march-q-a-thank-you-and-summary/
 author: ""
 categories:
   - updates

@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -22,7 +21,7 @@ _template: blog_detail
 
 Filecoin is now the official storage collaborator of Flow blockchain, empowering platforms, developers and users alike as the Flow metaverse becomes more open, robust, and decentralized. This integration of technologies will accelerate end-to-end ownership of NFTs, along with the media assets associated with them, establishing decentralized storage of data on Flow.
 
-This announcement follows news that [Dapper Labs](https://www.dapperlabs.com/), creators of Flow, are [collaborating with Filecoin](https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/) on propelling the future of NFTs and gaming. This will allow creators to create immutable NFT metadata, including video and visual assets, by leveraging IPFS content addressing along with Filecoin’s provable and decentralized storage.
+This announcement follows news that [Dapper Labs](https://www.dapperlabs.com/), creators of Flow, are [collaborating with Filecoin](/blog/dapper-labs-integrates-filecoin/) on propelling the future of NFTs and gaming. This will allow creators to create immutable NFT metadata, including video and visual assets, by leveraging IPFS content addressing along with Filecoin’s provable and decentralized storage.
 
 Already, platforms on Flow like Eternal, Starly, and Versus are using this integration with Filecoin to ensure their NFTs are securely available everywhere. As the Flow ecosystem grows, Filecoin’s decentralized storage solution will allow future applications that are built on Flow to have an easy way to protect NFT media assets and metadata.
 

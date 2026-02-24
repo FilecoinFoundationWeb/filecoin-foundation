@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -53,11 +52,11 @@ IPFS和Filecoin社区很高兴宣布[**Browsers 3000黑客松**](https://fil.org
 
 ## 存储
 
-[![](/uploads/opensea.webp)](https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)
+[![](/uploads/opensea.webp)](/blog/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)
 
 ### OpenSea用IPFS和Filecoin存储NFT
 
-[**OpenSea**](https://opensea.io/) 最近 [**启用**](https://opensea.io/blog/announcements/decentralizing-nft-metadata-on-opensea/) 了一个特性用于“冻结”NFT的元数据，让NFT的创造者可以使用IPFS和Filecoin来妥善以去中心化的方式存储其NFT。OpenSea是Web3领域中最大的NFT市场之一，为如今的数百万个NFT创造了一个市场。通过使用IPFS和Filecoin，OpenSea的NFT创造者现在可以使用IPFS [**内容寻址**](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) 和[**可证明及去中心化的Filecoin存储**](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/)来创建不可篡改的NFT元数据。 [**了解更多。**](https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)
+[**OpenSea**](https://opensea.io/) 最近 [**启用**](https://opensea.io/blog/announcements/decentralizing-nft-metadata-on-opensea/) 了一个特性用于“冻结”NFT的元数据，让NFT的创造者可以使用IPFS和Filecoin来妥善以去中心化的方式存储其NFT。OpenSea是Web3领域中最大的NFT市场之一，为如今的数百万个NFT创造了一个市场。通过使用IPFS和Filecoin，OpenSea的NFT创造者现在可以使用IPFS [**内容寻址**](https://blog.ipfs.tech/2021-04-05-storing-nfts-on-ipfs/) 和[**可证明及去中心化的Filecoin存储**](https://blog.ipfs.tech/2021-06-03-ipfs-filecoin-content-persistence/)来创建不可篡改的NFT元数据。 [**了解更多。**](/blog/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)
 
 ## 提供存储
 
@@ -67,11 +66,11 @@ IPFS和Filecoin社区很高兴宣布[**Browsers 3000黑客松**](https://fil.org
 
 Filecoin基金会发起了Filecoin 存储提供者工作组(MWG)，这是一个志愿性质的工作组，让不同体量的Filecoin　存储提供者与Filecoin网络上的其他人进行协作。通过与北美、欧洲和亚洲的当地的存储提供者建立合作关系，MWG工作组旨在为所有的Filecoin 存储提供者改善体验，同时提供资源和教育以弥合Filecoin miner＼Filecoin开发者＼存储空间提供者及全球社区之间的差距。 [**了解更多。**](https://filecoinfoundation.medium.com/supporting-the-community-the-filecoin-mining-working-group-4bd5f289cbea)
 
-[![](/uploads/lotus-update.webp)](https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/)
+[![](/uploads/lotus-update.webp)](/blog/the-evolution-of-a-lotus-node/)
 
 ### Lotus及检索市场创建者峰会
 
-最近，Filecoin社区举办了[**检索市场创建者峰会**](https://www.youtube.com/watch?v=QuE_NotFCXs&list=PL_0VrY55uV19TsJ8r2qsMyG2v2LIKEmv2)，这是一个旨在聚在各种检索市场解决方案创建者的活动，重点展示目前的进展以及探索不同系统的新型协作方式，从而为全网的用户找到提升检索交易提议有效性、效率和可靠性的方法。在峰会上，[**Raul Kripalani**](https://github.com/raulk) (libp2p和Filecoin核心开发者) 深度讲述了Lotus节点的架构以及计划中的改进（主要是lotus-miner节点），以更好地满足存储提供者和网络参与者的需要。要完整重温他对Lotus节点演化的演讲，[**可以阅读最近这篇博客文章**](https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/).
+最近，Filecoin社区举办了[**检索市场创建者峰会**](https://www.youtube.com/watch?v=QuE_NotFCXs&list=PL_0VrY55uV19TsJ8r2qsMyG2v2LIKEmv2)，这是一个旨在聚在各种检索市场解决方案创建者的活动，重点展示目前的进展以及探索不同系统的新型协作方式，从而为全网的用户找到提升检索交易提议有效性、效率和可靠性的方法。在峰会上，[**Raul Kripalani**](https://github.com/raulk) (libp2p和Filecoin核心开发者) 深度讲述了Lotus节点的架构以及计划中的改进（主要是lotus-miner节点），以更好地满足存储提供者和网络参与者的需要。要完整重温他对Lotus节点演化的演讲，[**可以阅读最近这篇博客文章**](/blog/the-evolution-of-a-lotus-node/).
 
 [![](/uploads/survey-icon.webp)](https://filecoin-community.typeform.com/to/yTMkOLg8)
 

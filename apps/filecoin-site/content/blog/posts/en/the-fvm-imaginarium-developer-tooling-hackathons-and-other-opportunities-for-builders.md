@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -24,7 +23,7 @@ image:
   alt: ""
 ---
 
-The [Filecoin Virtual Machine (FVM)](http://fvm.dev/) went live on mainnet on March 14th and since, builders have launched everything from [Filecoin pledging and leasing solutions](https://filecoin.io/blog/posts/fvm-imaginarium-staking-and-leasing-protocols/) to [token bridging protocols](https://filecoin.io/blog/posts/the-fvm-imaginarium-cross-chain-interoperability/). However, we are still just scratching the surface: storage, retrieval and compute applications, which combined are a 300 billion dollar industry, are now more accessible to tap into for Filecoin Ecosystem developers. The FVM enables developers to build a plethora of decentralized applications (dApps) on the Filecoin network and engender a data economy for a wide range of audiences from decentralized data computation services users to Filecoin Storage Providers and clients.
+The [Filecoin Virtual Machine (FVM)](http://fvm.dev/) went live on mainnet on March 14th and since, builders have launched everything from [Filecoin pledging and leasing solutions](/blog/fvm-imaginarium-staking-and-leasing-protocols/) to [token bridging protocols](/blog/the-fvm-imaginarium-cross-chain-interoperability/). However, we are still just scratching the surface: storage, retrieval and compute applications, which combined are a 300 billion dollar industry, are now more accessible to tap into for Filecoin Ecosystem developers. The FVM enables developers to build a plethora of decentralized applications (dApps) on the Filecoin network and engender a data economy for a wide range of audiences from decentralized data computation services users to Filecoin Storage Providers and clients.
 
 The FVM is a runtime environment for smart contracts on the Filecoin network. These smart contracts, also called actors, can be written in Solidity. This runtime is fully EVM compatible. This means devs are free to use whatever tool they are most comfortable with. Additionally, you will be able to take advantage of properties of the Filecoin network such as making, monitoring and interacting with storage deals. You can learn more at fvm.filecoin.io.
 
@@ -76,7 +75,7 @@ Beryx, Filfox and Starboard provide contract verification as a feature, allowing
 
 [Glif](https://www.glif.io) is your go-to tooling option for all information on Filecoin Lotus nodes. The strives to give depth, when it comes to metrics about the network. Check out the [Glif API](https://api.node.glif.io/) for your project.
 
-For more information, check out [this deep dive into all the available Filecoin Block Explorers](https://filecoin.io/blog/posts/the-fvm-imaginarium-block-explorers/) or the [official Block Explorers Docs](https://docs.filecoin.io/networks/mainnet/explorers/).
+For more information, check out [this deep dive into all the available Filecoin Block Explorers](/blog/the-fvm-imaginarium-block-explorers/) or the [official Block Explorers Docs](https://docs.filecoin.io/networks/mainnet/explorers/).
 
 ## Key dApp Building Tools
 

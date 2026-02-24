@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/march-q-and-a-with-juan/
 author: Andy
 categories:
   - interviews

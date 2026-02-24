@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/introducing-slingshot-phase-2
 author: ""
 categories: []
 date: "2020-11-09T05:00:00Z"

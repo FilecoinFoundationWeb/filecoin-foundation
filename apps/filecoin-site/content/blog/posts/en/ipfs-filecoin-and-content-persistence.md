@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -54,7 +53,7 @@ Decentralized content persistence is the only way to ensure that content remains
 
 [Filecoin](http://filecoin.io/) is the incentivization layer built to complement IPFS’ solution to content addressing by providing _content persistence._ IPFS ensures that content cannot change over time without a clear record and solves the issue of URLs not resolving. Filecoin ensures that content-based addressing remains resilient over time by making sure that the content that is being retrieved keeps being available.
 
-Filecoin achieves this mission through [novel cryptography, consensus protocols, and game-theoretic incentives](https://filecoin.io/blog/posts/filecoin-features-verifiable-storage/), providing true decentralized storage. At the heart of it all is Filecoin’s unique approach to storage verification.
+Filecoin achieves this mission through [novel cryptography, consensus protocols, and game-theoretic incentives](/blog/filecoin-features-verifiable-storage/), providing true decentralized storage. At the heart of it all is Filecoin’s unique approach to storage verification.
 
 Filecoin’s storage verification system solves a previously intractable problem for decentralized storage: How can storage providers _prove_ that they are really storing the data they say they are through time and that they are dedicating unique physical space for it?
 
@@ -62,7 +61,7 @@ In a centralized storage service, you have to place your trust in well-known com
 
 To verify storage on Filecoin’s decentralized network, you need to prove two things. First, you need to prove that the right set of data is stored in a given storage space. Second, you need to prove that the same set of data has been stored continuously over a given period of time.
 
-Filecoin’s [proving algorithms](https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/) perform these verification tasks. _Proof-of-Replication_ proves that a given storage provider is storing a physically unique copy of a client’s original data, while _Proof-of-Spacetime_ proves that the client’s data is stored continuously over time.
+Filecoin’s [proving algorithms](/blog/what-sets-us-apart-filecoin-s-proof-system/) perform these verification tasks. _Proof-of-Replication_ proves that a given storage provider is storing a physically unique copy of a client’s original data, while _Proof-of-Spacetime_ proves that the client’s data is stored continuously over time.
 
 In addition to its proof system, the Filecoin network also relies on game-theoretic incentives to discourage malicious or negligent activity. All storage providers that agree to store data on the Filecoin network must provide collateral in the form of Filecoin tokens at the time of agreement. Any storage provider that fails Proof-of-Spacetime checks is penalized, loses a portion of the collateral and is eventually prevented from offering storage again to clients.
 
@@ -84,7 +83,7 @@ NFTs stored via nft.storage are not only available via the IPFS network, they ar
 
 Right now, agreements to keep content stored over time are economic relationships between individuals and the nodes that keep the content online. The model has proven immensely sustainable for the Filecoin ecosystem. However, the ecosystem is also preparing for greater numbers of people who want to store their information online, and create solutions to accommodate more decentralized needs of ownership and payment. By providing storage for developers of NFT applications, nft.storage is on the frontlines of that role, encouraging NFT best practices by making them as easy as possible to implement and by removing the economic consideration from creators and collectors.
 
-A wave of other ecosystem partners will continue to emerge to incentivize the persistence of vital data by adopting different economic roles within the IPFS and Filecoin ecosystem. These ecosystem partners will make the basic relationship between individual and storage providers more varied, flexible, and sustainable. [DataDAOs](https://filecoin.io/blog/posts/the-future-of-datadaos/) are on the horizon and well-positioned to shape the evolution of data storage and payment on distributed systems. The term describes a DAO (Decentralized Autonomous Organization) dedicated to the storage, maintenance, processing, and (possibly) licensing of potentially massive datasets. By shouldering the technical and financial responsibility of storing the datasets, dataDAOs can effectively monetize critical data while remaining true to a broader commitment to decentralized content persistence. Other ecosystem partners, like [Ocean Protocol](https://oceanprotocol.com/) and [Filehive](https://filecoin.io/blog/posts/decentralized-data-markets-with-filehive/), do not operate as DAOs, but play a similar role as ecosystem partners that rely on Filecoin to maintain the data they are monetizing and licensing to others.
+A wave of other ecosystem partners will continue to emerge to incentivize the persistence of vital data by adopting different economic roles within the IPFS and Filecoin ecosystem. These ecosystem partners will make the basic relationship between individual and storage providers more varied, flexible, and sustainable. [DataDAOs](/blog/the-future-of-datadaos/) are on the horizon and well-positioned to shape the evolution of data storage and payment on distributed systems. The term describes a DAO (Decentralized Autonomous Organization) dedicated to the storage, maintenance, processing, and (possibly) licensing of potentially massive datasets. By shouldering the technical and financial responsibility of storing the datasets, dataDAOs can effectively monetize critical data while remaining true to a broader commitment to decentralized content persistence. Other ecosystem partners, like [Ocean Protocol](https://oceanprotocol.com/) and [Filehive](/blog/decentralized-data-markets-with-filehive/), do not operate as DAOs, but play a similar role as ecosystem partners that rely on Filecoin to maintain the data they are monetizing and licensing to others.
 
 ## Conclusion
 

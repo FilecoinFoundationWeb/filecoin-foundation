@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: ""
 categories:
   - updates
@@ -35,13 +34,13 @@ Just announced, the [**MoNA Gallery**](https://www.mona.gallery/) is live! MoNA 
 
 ## Tools
 
-[![](/uploads/decentralized-storage_hu560acc3b2bf52f5c764723e70a83f8f7_318054_1500x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/decentralized-storage-estuary-web3.storage-and-nft.storage/)
+[![](/uploads/decentralized-storage_hu560acc3b2bf52f5c764723e70a83f8f7_318054_1500x0_resize_q90_linear.webp)](/blog/decentralized-storage-estuary-web3.storage-and-nft.storage/)
 
 ### Decentralized Storage: Estuary, Web3.Storage, and NFT.Storage
 
-Estuary, Web3.Storage, and NFT.Storage are all gateway systems that act as intermediaries to accept data to store onto IPFS, allow for the collection of CIDs, and provide a way for users to create contracts to store their data on the Filecoin chain. Which is best for your needs? [**Find out how each solution is designed for a particular purpose and a particular audience.**](https://filecoin.io/blog/posts/decentralized-storage-estuary-web3.storage-and-nft.storage/)
+Estuary, Web3.Storage, and NFT.Storage are all gateway systems that act as intermediaries to accept data to store onto IPFS, allow for the collection of CIDs, and provide a way for users to create contracts to store their data on the Filecoin chain. Which is best for your needs? [**Find out how each solution is designed for a particular purpose and a particular audience.**](/blog/decentralized-storage-estuary-web3.storage-and-nft.storage/)
 
-[![](/uploads/using-filecoin-ipfs-1_huead5e06741560944f57049d5aa67a724_366938_1500x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/using-filecoin-with-ipfs/)
+[![](/uploads/using-filecoin-ipfs-1_huead5e06741560944f57049d5aa67a724_366938_1500x0_resize_q90_linear.webp)](/blog/using-filecoin-with-ipfs/)
 
 ### Using Filecoin with IPFS
 
@@ -49,11 +48,11 @@ Filecoin is a decentralized network that allows for storing data accessible from
 
 ## Storage Providers
 
-[![](/uploads/data-gravity-filecoin-sales-referral-program-1_huf4a9f1f6cc990112aa05a3b527ec0cb7_1611845_1500x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/)
+[![](/uploads/data-gravity-filecoin-sales-referral-program-1_huf4a9f1f6cc990112aa05a3b527ec0cb7_1611845_1500x0_resize_q90_linear.webp)](/blog/filecoin-project-gravity-a-sales-referral-program/)
 
 ### Filecoin Project Gravity, a Sales Referral Program
 
-A limited-time referral fee program has launched and is offering awards for community storage providers who can bring large datasets onto the Filecoin network. Invite your customers and help create the data gravity pull. [**Find out more about how you can participate, and what awards are available!**](https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/)
+A limited-time referral fee program has launched and is offering awards for community storage providers who can bring large datasets onto the Filecoin network. Invite your customers and help create the data gravity pull. [**Find out more about how you can participate, and what awards are available!**](/blog/filecoin-project-gravity-a-sales-referral-program/)
 
 ### Storage Provider Fall Public Meeting
 
