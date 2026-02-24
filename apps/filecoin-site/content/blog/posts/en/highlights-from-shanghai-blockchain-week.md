@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/shanghai-blockchain-week
 author: ""
 categories:
   - events

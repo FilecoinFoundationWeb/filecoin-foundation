@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/miner-community-call/
 author: ""
 categories:
   - updates

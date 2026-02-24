@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/ecosystem-growth-innovation
 author: ""
 categories:
   - updates

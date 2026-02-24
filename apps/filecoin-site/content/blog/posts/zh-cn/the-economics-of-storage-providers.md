@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/存储提供者经济模型
 author: ""
 categories:
   - updates

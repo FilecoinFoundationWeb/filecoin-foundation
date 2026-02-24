@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/slingshot-week-one-recap/
 author: ""
 categories:
   - updates

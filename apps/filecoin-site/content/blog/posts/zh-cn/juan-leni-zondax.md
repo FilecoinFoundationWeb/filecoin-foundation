@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/community-juan-leni-zondax
 author: ""
 categories:
   - updates

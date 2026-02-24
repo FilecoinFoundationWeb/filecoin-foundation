@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/roadmap-update-2019-q4/
 author: ""
 categories:
   - updates

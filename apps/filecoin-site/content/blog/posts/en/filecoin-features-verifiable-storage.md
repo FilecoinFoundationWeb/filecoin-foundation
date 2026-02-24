@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-features-verifiable-storage/
 author: ""
 categories:
   - updates

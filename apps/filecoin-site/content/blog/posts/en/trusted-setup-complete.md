@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/trusted-setup-complete/
 author: ""
 categories:
   - updates

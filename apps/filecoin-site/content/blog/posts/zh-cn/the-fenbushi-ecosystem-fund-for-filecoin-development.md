@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/分布式生态基金简介
 author: Filecoin Project
 categories:
   - updates

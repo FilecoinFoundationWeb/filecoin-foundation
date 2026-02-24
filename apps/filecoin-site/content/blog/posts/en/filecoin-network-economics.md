@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-network-economics
 author: ""
 categories: []
 date: "2020-12-22T05:00:00Z"

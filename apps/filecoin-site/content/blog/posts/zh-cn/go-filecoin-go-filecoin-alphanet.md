@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/announcing-alphanet
 author: ""
 categories:
   - updates

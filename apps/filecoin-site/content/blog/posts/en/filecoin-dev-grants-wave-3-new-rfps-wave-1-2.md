@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-dev-grants-wave-3-new-rfps/
 author: ""
 categories:
   - updates

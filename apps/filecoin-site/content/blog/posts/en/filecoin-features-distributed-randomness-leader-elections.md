@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/distributed-randomness-and-leader-elections/
 author: ""
 categories:
   - updates

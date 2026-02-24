@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/tipsets-family-based-approach-to-consensus/
 author: ""
 categories:
   - updates

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/space-race-ama-5-summary/
 author: ""
 categories:
   - events

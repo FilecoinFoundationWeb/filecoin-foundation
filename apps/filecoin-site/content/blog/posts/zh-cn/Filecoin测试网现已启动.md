@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/filecoin-testnet-is-live
 author: ""
 categories:
   - updates

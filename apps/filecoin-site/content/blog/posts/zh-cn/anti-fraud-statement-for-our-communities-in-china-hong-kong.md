@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/关于中国大陆及香港地区社区防范欺诈的声明
-  - /zh-cn/blog/china-antifraud
 author: ""
 categories:
   - updates

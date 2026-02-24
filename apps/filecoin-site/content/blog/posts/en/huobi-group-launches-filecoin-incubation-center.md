@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/huobi-launches-filecoin-incubation-center
 author: ""
 categories: []
 date: "2020-12-05T05:00:00Z"

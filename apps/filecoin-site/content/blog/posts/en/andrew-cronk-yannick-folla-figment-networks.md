@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/community-figment-networks/
 author: ""
 categories:
   - interviews

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/roadmap-update-june-2020/
 author: ""
 categories:
   - updates

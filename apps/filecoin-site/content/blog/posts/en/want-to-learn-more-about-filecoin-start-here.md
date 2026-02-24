@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/learn-more-about-filecoin/
 author: ""
 categories:
   - events

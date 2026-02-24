@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Raúl Kripalani
 categories:
   - updates

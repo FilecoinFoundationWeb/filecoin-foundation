@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/如何成为索引提供者
 author: ""
 categories:
   - updates

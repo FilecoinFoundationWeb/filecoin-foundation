@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/roadmap-update-august-2020/
 author: ""
 categories:
   - updates

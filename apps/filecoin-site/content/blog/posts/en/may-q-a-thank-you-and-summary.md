@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/may-q-and-a-thank-you/
 author: ""
 categories:
   - events

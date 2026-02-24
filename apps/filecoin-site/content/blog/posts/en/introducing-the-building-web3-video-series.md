@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/building-web3-series-1-explainer/
 author: ""
 categories:
   - updates

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/update-2019-q2-q3
 author: ""
 categories:
   - updates

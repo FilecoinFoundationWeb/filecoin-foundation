@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/getting-ready-testnet-incentives/
 author: ""
 categories:
   - updates

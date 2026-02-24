@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/announcing-the-snark-challenge/
 author: ""
 categories:
   - updates

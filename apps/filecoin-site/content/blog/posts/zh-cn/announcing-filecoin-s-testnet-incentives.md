@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/Filecoin测试网奖励计划
-  - /zh-cn/blog/announcing-testnet-incentives
 author: ""
 categories:
   - updates

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/announcing-testnet-incentives
 author: ""
 categories:
   - updates

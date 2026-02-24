@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/可信配置环节顺利完成
-  - /zh-cn/blog/trusted-setup-complete
 author: ""
 categories:
   - updates

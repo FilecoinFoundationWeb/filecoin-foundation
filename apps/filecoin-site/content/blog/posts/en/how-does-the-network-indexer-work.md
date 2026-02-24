@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Masih Derkani
 categories:
   - updates

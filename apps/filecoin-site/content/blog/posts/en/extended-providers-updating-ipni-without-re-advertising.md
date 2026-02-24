@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Ivan Schasny
 categories:
   - updates

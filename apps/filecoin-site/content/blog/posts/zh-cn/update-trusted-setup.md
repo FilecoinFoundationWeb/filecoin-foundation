@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/trusted-setup-update
-  - /zh-cn/blog/更新-可信配置
 author: ""
 categories:
   - updates

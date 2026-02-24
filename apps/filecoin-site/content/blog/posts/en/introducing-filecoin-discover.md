@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/intro-filecoin-discover/
 author: ""
 categories:
   - updates

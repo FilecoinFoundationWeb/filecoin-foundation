@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-features-slashing
 author: ""
 categories: []
 date: "2020-11-17T05:00:00Z"

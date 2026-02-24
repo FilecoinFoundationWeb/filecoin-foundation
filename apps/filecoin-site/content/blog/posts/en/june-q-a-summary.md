@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/june-q-and-a-summary/
 author: ""
 categories:
   - events

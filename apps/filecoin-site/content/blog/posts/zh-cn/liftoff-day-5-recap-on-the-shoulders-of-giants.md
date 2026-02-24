@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/回顾主网启动第五天-站在巨人的肩膀上
 author: Filecoin Project
 categories:
   - updates

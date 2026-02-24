@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Protocol Labs
 categories:
   - updates

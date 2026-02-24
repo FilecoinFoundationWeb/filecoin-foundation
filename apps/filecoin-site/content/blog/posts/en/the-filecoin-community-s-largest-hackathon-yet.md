@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Sarah Thiam
 categories:
   - updates

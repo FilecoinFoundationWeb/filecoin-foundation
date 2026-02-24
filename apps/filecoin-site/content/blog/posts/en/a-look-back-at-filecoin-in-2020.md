@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-in-2020
 author: ""
 categories:
   - updates

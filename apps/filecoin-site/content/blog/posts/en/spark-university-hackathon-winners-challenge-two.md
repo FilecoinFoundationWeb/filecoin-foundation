@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/spark-challenge-two/
 author: ""
 categories:
   - updates

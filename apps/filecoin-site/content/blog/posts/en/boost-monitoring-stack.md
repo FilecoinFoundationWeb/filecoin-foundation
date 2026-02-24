@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Brenda Lee
 categories:
   - updates

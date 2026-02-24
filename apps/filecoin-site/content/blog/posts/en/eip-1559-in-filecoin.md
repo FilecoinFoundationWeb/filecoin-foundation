@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/eip-1559-in-filecoin
 author: ""
 categories:
   - updates

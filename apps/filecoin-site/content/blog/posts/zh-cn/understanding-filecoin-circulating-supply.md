@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/了解Filecoin流通供应机制
 author: Filecoin Project
 categories:
   - updates

@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Matthew Frehlich
 categories:
   - updates

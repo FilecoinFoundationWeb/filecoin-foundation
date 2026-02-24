@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/announcing-filecoin-implementations-in-rust-and-c++/
 author: ""
 categories:
   - updates

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/posts/filecoin-news-24-near-grant-program-asia-hackathon-season-21-sxsw-panel-voting-open-and-more-copy
 author: ""
 categories:
   - updates

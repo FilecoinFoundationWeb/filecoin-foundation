@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/getting-ready-testnet-incentives
-  - /zh-cn/blog/做好准备参与Filecoin太空竞赛
 author: ""
 categories:
   - updates

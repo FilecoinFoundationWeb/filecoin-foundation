@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/filecoin-dev-grants-program-now-live
 author: ""
 categories:
   - updates

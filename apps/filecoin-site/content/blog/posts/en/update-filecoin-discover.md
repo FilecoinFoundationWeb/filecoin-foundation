@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/fil-discover-update/
 author: ""
 categories:
   - updates

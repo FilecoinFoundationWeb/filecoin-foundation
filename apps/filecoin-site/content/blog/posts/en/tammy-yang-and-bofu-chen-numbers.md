@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/community-tammy-yang-bofu-chen-numbers/
 author: ""
 categories:
   - interviews

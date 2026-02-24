@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/mining-community-call-thank-you/
 author: ""
 categories:
   - updates

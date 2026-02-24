@@ -1,7 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/filecoin-dev-grants-update-june-2020
-  - /zh-cn/blog/第三批与第四批开发者资助计划状态更新
 author: ""
 categories:
   - updates

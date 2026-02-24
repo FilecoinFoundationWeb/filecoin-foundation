@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/回顾启动周第四天-为美好未来而存储
 author: Filecoin Project
 categories:
   - updates

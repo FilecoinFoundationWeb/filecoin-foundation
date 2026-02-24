@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-testnet-phase-2-is-here/
 author: ""
 categories:
   - updates

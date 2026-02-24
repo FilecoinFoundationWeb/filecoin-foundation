@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: "2021年6月22日 12:00 PM"
 categories:
   - updates

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/minerx-fellowship
 author: ""
 categories:
   - updates

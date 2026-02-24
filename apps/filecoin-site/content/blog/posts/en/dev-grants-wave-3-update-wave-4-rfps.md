@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /blog/filecoin-dev-grants-update-june-2020/
 author: ""
 categories:
   - awards

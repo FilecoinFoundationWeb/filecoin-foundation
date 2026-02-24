@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/hackfs-teams-vol-1
 author: ""
 categories:
   - updates

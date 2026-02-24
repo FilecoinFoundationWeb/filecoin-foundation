@@ -35,7 +35,6 @@ export const BlogPostFrontmatterSchema = z.strictObject({
   dim_image: z.boolean().optional(),
   content: z.string(),
   seo: SeoMetadataWithOptionalTitleSchema.optional(),
-  aliases: z.array(z.string()).optional(),
   double_column_inverted: z.boolean().optional(),
   double_column_mode: z.boolean().optional(),
   main_feature_inverted: z.boolean().optional(),

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/roadmap-update-february-2020
 author: ""
 categories:
   - updates

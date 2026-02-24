@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Anshuman Prasad
 categories:
   - updates

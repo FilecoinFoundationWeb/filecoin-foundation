@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/火币推出Filecoin孵化中心
 author: Filecoin Project
 categories:
   - updates

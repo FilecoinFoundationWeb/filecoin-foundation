@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Ashwanth Samuel
 categories:
   - updates

@@ -1,5 +1,4 @@
 ---
-aliases: []
 author: Filecoin Project
 categories:
   - updates

@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/云存储服务-了解分布式存储方法
 author: ""
 categories:
   - updates

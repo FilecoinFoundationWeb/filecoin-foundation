@@ -1,6 +1,4 @@
 ---
-aliases:
-  - /zh-cn/blog/主网启动的矿工指南
 author: Filecoin Project
 categories:
   - updates
