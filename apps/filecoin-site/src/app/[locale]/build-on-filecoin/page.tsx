@@ -56,7 +56,7 @@ export default async function BuildOnFilecoin() {
 
       <Navigation backgroundVariant="dark" />
 
-      <HeroSection t={t} />
+      <HeroSection />
 
       <PageSection backgroundVariant="light" paddingVariant="bottomNone">
         <SectionContent
@@ -137,10 +137,7 @@ export default async function BuildOnFilecoin() {
       </PageSection>
 
       <PageSection backgroundVariant="gray">
-        <SectionContent
-          headingTag="h2"
-          title={t('developerResources.title')}
-        >
+        <SectionContent headingTag="h2" title={t('developerResources.title')}>
           <CardGridContainer width="6xl">
             <CardGrid as="ul" variant="mdTwo">
               {developerResources.map(({ title, description, href, icon }) => (

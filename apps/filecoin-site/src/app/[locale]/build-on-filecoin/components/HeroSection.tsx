@@ -7,17 +7,15 @@ import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
 import { FILECOIN_CLOUD_URL, FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
 
-import type { TranslationFunction } from '@/i18n/types'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { SplitSectionContent } from '@/components/SplitSectionContent'
+import { getTranslations } from 'next-intl/server'
+import { PATHS } from '@/constants/paths'
 
-type HeroSectionProps = {
-  t: TranslationFunction
-}
+export async function HeroSection() {
+  const t = await getTranslations(PATHS.BUILD_ON_FILECOIN.path)
 
-export function HeroSection({ t }: HeroSectionProps) {
   return (
     <div className="overflow-x-hidden">
       <PageSection backgroundVariant="dark">
@@ -43,10 +41,7 @@ export function HeroSection({ t }: HeroSectionProps) {
         </header>
 
         <div className="lg:mt-80">
-          <SectionContent
-            headingTag="h2"
-            title={t('hero.announcingFOC')}
-          >
+          <SectionContent headingTag="h2" title={t('hero.announcingFOC')}>
             <SplitSectionContent
               title={t('hero.focTitle')}
               description={[
