@@ -20,7 +20,7 @@ title: Hack FEVM（Filecoin以太坊虚拟机）
 _template: blog_detail_ch
 ---
 
-Hack FEVM将Filecoin虚拟机的以太坊兼容层引入ETH生态，迎来了超过[400名黑客以及117个项目](https://filecoin.io/blog/posts/announcing-the-hack-fevm-finalists/)。以太坊开发人员可以将EVM“开箱即用”地部署至FVM，使其智能合约能够在黑客马拉松期间与测试网络上的占位存储交易直接交互，从而模拟工作流，并最终与Filecoin存储网络上的交易进行交互。
+Hack FEVM将Filecoin虚拟机的以太坊兼容层引入ETH生态，迎来了超过[400名黑客以及117个项目](/blog/announcing-the-hack-fevm-finalists/)。以太坊开发人员可以将EVM“开箱即用”地部署至FVM，使其智能合约能够在黑客马拉松期间与测试网络上的占位存储交易直接交互，从而模拟工作流，并最终与Filecoin存储网络上的交易进行交互。
 
 在整个黑客松期间，共举办了11场讲座为开发人员介绍[Filecoin虚拟机和各种资源](https://www.youtube.com/watch?v=bWbZffRhp6Q&list=PLXzKMXK2aHh5SiBAeA6FGnhc6Sw4gRDlI)。其中包括熟悉的EVM开发工具教程，FEVM特定工具介绍，以及关于FEVM用例的头脑风暴。
 

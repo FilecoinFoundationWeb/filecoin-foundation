@@ -50,7 +50,7 @@ Ecosystems like Filecoin, IPFS, and Ethereum have the right primitives to addres
 
 Today, the data network economy is not functioning in an optimal manner. There is too much value capture by too few companies that operate as unchallenged monopolies. There is also too much data going unused. Its potential is not being realized, which is a consequence of the world’s data economy not being _open._
 
-One way to think of Filecoin is as the Airbnb of cloud storage. Currently, new data centers and solutions that want to grow cannot compete with the companies that currently dominate cloud storage. As Airbnb allows individuals to compete with the Marriotts of the world, so too does Filecoin [allow individuals, small businesses, and new businesses to compete](https://filecoin.io/blog/posts/more-than-storage-business-opportunities-on-filecoin/) with the data monopolies of the world by putting zettabytes of latent storage to use.
+One way to think of Filecoin is as the Airbnb of cloud storage. Currently, new data centers and solutions that want to grow cannot compete with the companies that currently dominate cloud storage. As Airbnb allows individuals to compete with the Marriotts of the world, so too does Filecoin [allow individuals, small businesses, and new businesses to compete](/blog/more-than-storage-business-opportunities-on-filecoin/) with the data monopolies of the world by putting zettabytes of latent storage to use.
 
 Fundamentally, this changes the paradigm of the global data storage industry. Businesses can now provide differentiated services to compete with each other and with industry veterans, creating an economy where the market sets pricing instead of a corporate pricing team.
 
@@ -63,11 +63,11 @@ Fundamentally, this changes the paradigm of the global data storage industry. Bu
 Filecoin and IPFS are general purpose platforms, so the range of use cases are wide:
 
 - **Consumer use cases:** Dropbox-style platforms like [Slate](https://filecoin.io/blog/community-slate/), Space, and [ChainSafe Files](https://files.chainsafe.io/).
-- **NFT storage:** [Opensea](https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/), Curio, [Mintgate](https://www.youtube.com/watch?v=QxJ5-nuY1NA), and Flame all use [nft.storage](http://nft.storage/).
-- **Data Markets:** projects like [Wolfram Alpha](https://filecoin.io/blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/), Ocean, and [Filehive](https://filecoin.io/blog/posts/decentralized-data-markets-with-filehive/).
-- **Video:** platforms are using [Livepeer](https://filecoin.io/blog/posts/livepeer-x-filecoin-co-mining-pilot/) and [VideoCoin](https://filecoin.io/blog/posts/videocoin-and-filecoin-to-power-the-video-nft-market/) to transcode, store, and retrieve video files.
+- **NFT storage:** [Opensea](/blog/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/), Curio, [Mintgate](https://www.youtube.com/watch?v=QxJ5-nuY1NA), and Flame all use [nft.storage](http://nft.storage/).
+- **Data Markets:** projects like [Wolfram Alpha](/blog/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/), Ocean, and [Filehive](/blog/decentralized-data-markets-with-filehive/).
+- **Video:** platforms are using [Livepeer](/blog/livepeer-x-filecoin-co-mining-pilot/) and [VideoCoin](/blog/videocoin-and-filecoin-to-power-the-video-nft-market/) to transcode, store, and retrieve video files.
 - **Audio:** [services like Audius](https://www.youtube.com/watch?v=c50licHTOik) are providing capabilities similar to Spotify, but on the Web3 stack.
-- **Others:** decentralized identity, retrieval markets, DeFi and finance, browsers like [Brave](https://brave.com/brave-integrates-ipfs/) and Opera, and [verifiable storage platforms like Starling](https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/).
+- **Others:** decentralized identity, retrieval markets, DeFi and finance, browsers like [Brave](https://brave.com/brave-integrates-ipfs/) and Opera, and [verifiable storage platforms like Starling](/blog/starling-lab-establishing-trust-for-humanity-s-data/).
 
 Driving all of these use cases forward is an extraordinary developer ecosystem. Through hackathons, the FIlecoin ecosystem witnessed 10,000 developers engaged in the last two months alone. Grant programs are funding thousands of companies. And accelerators such as Filecoin Base Camp with mentors like Outlier Ventures are playing a crucial role in helping those ideas become real businesses. All of this is supported by impressive funding; $50 million is earmarked for the Filecoin ecosystem by VCs.
 

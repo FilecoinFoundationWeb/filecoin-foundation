@@ -29,11 +29,11 @@ title: Filecoin News 56
 
 It’s hard to keep up with all the exciting things happening in the Filecoin community, so let’s make it easier for you. If you’re a FIL holder and would like to stay up to date without getting too deep into all the technical stuff, check out Filecoin TL;DR. It aims to simplify Filecoin ecosystem news. Get official updates on project development, staking, and the FIL token on the new [TL;DR website](https://tldr.filecoin.io/) and follow along on [Twitter](https://twitter.com/FilecoinTLDR).
 
-[![](/uploads/sharknv17.webp)](https://filecoin.io/blog/posts/filecoin-network-v17-shark-upgrade/)
+[![](/uploads/sharknv17.webp)](/blog/filecoin-network-v17-shark-upgrade/)
 
 ### Filecoin Network v17 Shark 🦈 Upgrade is Coming
 
-The upcoming Filecoin upgrade to network version 17, Shark 🦈, will bring a range of improvements and simplifications that set the stage for programmable storage: smart contracts that interact with storage deals and providers. This is currently expected to be the last upgrade before the February launch of the [FEVM (EVM runtime on FVM)](https://fvm.filecoin.io/) slated for [network version 18](https://github.com/filecoin-project/core-devs/discussions/115). Get the full list of FIPs that will be activated in version 17 in [this blog post](https://filecoin.io/blog/posts/filecoin-network-v17-shark-upgrade/) and hear more about them on the July 2022 [PL EngRes All Hands deep dive](https://www.youtube.com/watch?v=oQTPUE4MN_4&list=PLhuBigpl7lqtkWt7koiW6SvQKzT_O4bvY&index=13).
+The upcoming Filecoin upgrade to network version 17, Shark 🦈, will bring a range of improvements and simplifications that set the stage for programmable storage: smart contracts that interact with storage deals and providers. This is currently expected to be the last upgrade before the February launch of the [FEVM (EVM runtime on FVM)](https://fvm.filecoin.io/) slated for [network version 18](https://github.com/filecoin-project/core-devs/discussions/115). Get the full list of FIPs that will be activated in version 17 in [this blog post](/blog/filecoin-network-v17-shark-upgrade/) and hear more about them on the July 2022 [PL EngRes All Hands deep dive](https://www.youtube.com/watch?v=oQTPUE4MN_4&list=PLhuBigpl7lqtkWt7koiW6SvQKzT_O4bvY&index=13).
 
 ## Community
 
@@ -43,11 +43,11 @@ The upcoming Filecoin upgrade to network version 17, Shark 🦈, will bring a ra
 
 So you’re a new FIL-holder and want to know how you can stake your tokens? HQ Han has you covered. In her recent Twitter [thread](https://twitter.com/duckie_han/status/1589729091535925248?s=20&t=bJ364znWt55SH3DgWT7B1A), HQ lists and explains all the options that are available to you as well as new ones on the horizon. Some of these include Coinlist and Anchorage for institutions.
 
-[![](/uploads/filecoin-blog-header-for-filecoin-masterplan-10-26-22_hu0e5cacb812f18f7ab5ab3f1c7f828ca1_1929954_2000x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/the-filecoin-masterplan/)
+[![](/uploads/filecoin-blog-header-for-filecoin-masterplan-10-26-22_hu0e5cacb812f18f7ab5ab3f1c7f828ca1_1929954_2000x0_resize_q90_linear.webp)](/blog/the-filecoin-masterplan/)
 
 ### The Filecoin Masterplan
 
-Where is Filecoin going in the short-term and long-term future? Filecoin and IPFS are a foundational part of the web3 stack. The community has worked hard to build the world’s largest decentralized storage network and onboard and safeguard humanity’s data. Now, it plans to bring retrieval and compute capabilities to the data to build scalable applications. Learn more about the vision for Filecoin on the [blog](https://filecoin.io/blog/posts/the-filecoin-masterplan/) or by watching Juan Benet’s [keynote presentation](https://youtu.be/oY1ot0qD0Rw) at FIL-Singapore.
+Where is Filecoin going in the short-term and long-term future? Filecoin and IPFS are a foundational part of the web3 stack. The community has worked hard to build the world’s largest decentralized storage network and onboard and safeguard humanity’s data. Now, it plans to bring retrieval and compute capabilities to the data to build scalable applications. Learn more about the vision for Filecoin on the [blog](/blog/the-filecoin-masterplan/) or by watching Juan Benet’s [keynote presentation](https://youtu.be/oY1ot0qD0Rw) at FIL-Singapore.
 
 [![](/uploads/podcast-juanbenet.webp)](https://www.youtube.com/watch?v=ro9kFPX0Tk0)
 
@@ -67,7 +67,7 @@ The FEVM is the initial launch of Filecoin’s smart contract capabilities that 
 
 ### FVM Topaz is Live
 
-The Filecoin Wallaby testnet is now running FVM Topaz (r8) as the community continues to march on the roadmap for smart contract capabilities on the network. The release includes support for events and the full Ethereum JSON-RPC API. Read this short [thread](https://twitter.com/raulvk/status/1593356865571889155?s=20&t=HwrgnNE1f9ATKXTbddErIw) for more information on Topaz and the upcoming Sapphire release. You can also dig deeper into the ongoing FVM deployment in the Filecoin [blog](https://filecoin.io/blog/posts/what-the-fvm-unlocks/) and stay tuned for more updates on the FVM [website](https://fvm.filecoin.io/).
+The Filecoin Wallaby testnet is now running FVM Topaz (r8) as the community continues to march on the roadmap for smart contract capabilities on the network. The release includes support for events and the full Ethereum JSON-RPC API. Read this short [thread](https://twitter.com/raulvk/status/1593356865571889155?s=20&t=HwrgnNE1f9ATKXTbddErIw) for more information on Topaz and the upcoming Sapphire release. You can also dig deeper into the ongoing FVM deployment in the Filecoin [blog](/blog/what-the-fvm-unlocks/) and stay tuned for more updates on the FVM [website](https://fvm.filecoin.io/).
 
 ## Events
 

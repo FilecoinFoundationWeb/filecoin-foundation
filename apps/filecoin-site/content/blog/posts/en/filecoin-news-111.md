@@ -61,7 +61,7 @@ The Filecoin ecosystem continues to evolve—and with the rise of real-time, ret
 
 ### FIL Dev Summit 6: Key Takeaways and What’s Next
 
-[FIL Dev Summit 6](https://filecoin.io/blog/posts/fil-dev-summit-6-toronto-takeaways-and-next-steps/) brought the Filecoin community together in Toronto for two days of collaboration, deep technical dives, and strategic discussions on the future of the network. Paired with the virtual Kickoff Sessions, the event covered everything from client onboarding and governance to cryptoeconomics and the evolving onchain tech stack.
+[FIL Dev Summit 6](/blog/fil-dev-summit-6-toronto-takeaways-and-next-steps/) brought the Filecoin community together in Toronto for two days of collaboration, deep technical dives, and strategic discussions on the future of the network. Paired with the virtual Kickoff Sessions, the event covered everything from client onboarding and governance to cryptoeconomics and the evolving onchain tech stack.
 
 Key themes included:
 
@@ -72,6 +72,6 @@ Key themes included:
 
 The summit made one thing clear: Filecoin is entering a new phase—one where performance, usability, and adoption are at the center.
 
-Want to revisit what you missed? Explore the [FDS-6 track-by-track summary](https://filecoin.io/blog/posts/fil-dev-summit-6-toronto-takeaways-and-next-steps/) and try [Maple](https://www.perplexity.ai/collections/fds-6-bot-maple-FGzlYPMwR9elaGlGKxe_6w?login-source=oneTap%5c&login-new=false), the new AI-powered knowledge base trained on all summit content.
+Want to revisit what you missed? Explore the [FDS-6 track-by-track summary](/blog/fil-dev-summit-6-toronto-takeaways-and-next-steps/) and try [Maple](https://www.perplexity.ai/collections/fds-6-bot-maple-FGzlYPMwR9elaGlGKxe_6w?login-source=oneTap%5c&login-new=false), the new AI-powered knowledge base trained on all summit content.
 
 📍 Next stop: Buenos Aires. Join us for FIL Dev Summit 7 ahead of DevConnect, and help shape the next chapter of the network.

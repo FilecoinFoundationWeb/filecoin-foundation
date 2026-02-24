@@ -18,7 +18,7 @@ related_article_3: >-
   content/blog/posts/fvm-imaginarium-bringing-datadaos-to-the-next-level-with-fvm.en.md
 ---
 
-100 days ago, on March 14, 2023, the Filecoin network introduced the first programmable runtime on the [Filecoin Virtual Machine](http://fvm.filecoin.io/) and became programmable ([re-read the announcement blog post](https://filecoin.io/blog/posts/fvm-is-live-on-mainnet/)). The launch solidified Filecoin as the L1 uniquely positioned to power the open data economy. Since then, the open ecosystem of developers, storage providers, storage clients and other network participants of Filecoin, the largest open access cloud service, has grown further. Join us as we take a closer look at the notable progress achieved by the FVM since its launch on Filecoin’s mainnet.
+100 days ago, on March 14, 2023, the Filecoin network introduced the first programmable runtime on the [Filecoin Virtual Machine](http://fvm.filecoin.io/) and became programmable ([re-read the announcement blog post](/blog/fvm-is-live-on-mainnet/)). The launch solidified Filecoin as the L1 uniquely positioned to power the open data economy. Since then, the open ecosystem of developers, storage providers, storage clients and other network participants of Filecoin, the largest open access cloud service, has grown further. Join us as we take a closer look at the notable progress achieved by the FVM since its launch on Filecoin’s mainnet.
 
 ![](/uploads/FVM-100days-stats.webp)
 

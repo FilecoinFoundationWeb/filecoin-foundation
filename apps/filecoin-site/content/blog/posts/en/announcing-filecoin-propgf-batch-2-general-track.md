@@ -49,7 +49,7 @@ Mechanisms, frameworks, or tools that enhance transparency, decision-making, and
 
 Interfaces, integrations, and applications that make Filecoin more intuitive and usable for everyday users.
 
-For teams building on Filecoin, please make sure to check out the [Filecoin Ecosystem Metrics Roundup](https://filecoin.io/blog/posts/filecoin-ecosystem-metrics-roundup-building-a-data-driven-foundation-for-growth/). These are the key metrics that projects will be evaluated against, so we encourage applicants to design their work to ladder up to these metrics.
+For teams building on Filecoin, please make sure to check out the [Filecoin Ecosystem Metrics Roundup](/blog/filecoin-ecosystem-metrics-roundup-building-a-data-driven-foundation-for-growth/). These are the key metrics that projects will be evaluated against, so we encourage applicants to design their work to ladder up to these metrics.
 
 ## Funding Model: Milestone-Based
 
@@ -70,7 +70,7 @@ All grants under this program are milestone-based, with payouts tied to the comp
 
 The selection committee will stay largely the same as in Round 1, with some slight changes from the initial announcement. More details on the updated composition will be shared soon.
 
-[View the list of Round 1 members and details](https://filecoin.io/blog/posts/announcing-the-propgf-selection-committee-members/).
+[View the list of Round 1 members and details](/blog/announcing-the-propgf-selection-committee-members/).
 
 ### Stay Connected
 

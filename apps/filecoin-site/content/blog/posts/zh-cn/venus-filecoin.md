@@ -20,7 +20,7 @@ title: 欢迎Venus来到Filecoin主网
 _template: blog_detail_ch
 ---
 
-作为一个去中心化网络，Filecoin力求拥有多个独立的协议实现，以保障网络的可靠性和安全性。[Venus](https://github.com/filecoin-project/venus)是Filecoin网络目前正在进行的[四个协议实现](https://docs.filecoin.io/get-started/#filecoin-implementations)之一，构建了一个更有弹性的生态系统。Venus的前身是go-filecoin，是基于Golang语言的第一个Filecoin实现——最初由@anorth、@zenground0、@frrist、@laser、@dignifiedquire、@alexcruikshank、@whyrusleeping等人发起和开发。[2020年8月](https://filecoin.io/blog/posts/this-is-a-sample-post/)，IPFSForce，Filecoin社区的重要成员，接管了正在开发中的go-filecoin并在10月据悉了开发，并将其重新命名为“Venus”。
+作为一个去中心化网络，Filecoin力求拥有多个独立的协议实现，以保障网络的可靠性和安全性。[Venus](https://github.com/filecoin-project/venus)是Filecoin网络目前正在进行的[四个协议实现](https://docs.filecoin.io/get-started/#filecoin-implementations)之一，构建了一个更有弹性的生态系统。Venus的前身是go-filecoin，是基于Golang语言的第一个Filecoin实现——最初由@anorth、@zenground0、@frrist、@laser、@dignifiedquire、@alexcruikshank、@whyrusleeping等人发起和开发。[2020年8月](/blog/this-is-a-sample-post/)，IPFSForce，Filecoin社区的重要成员，接管了正在开发中的go-filecoin并在10月据悉了开发，并将其重新命名为“Venus”。
 
 今天我们很高兴地宣布，在epoch[455673](https://filscan.io/#/tipset/chain?height=455673) (2021年1月30日，03:16 UTC)，运行[Venusv0.9.0](https://github.com/filecoin-project/venus/releases/tag/v0.9.0)的矿工节点 [f0128788](https://filscan.io/#/tipset/address-detail?address=f0128788)在主网上出了[第一个区块](https://filscan.io/#/tipset/chain?height=455673)。
 

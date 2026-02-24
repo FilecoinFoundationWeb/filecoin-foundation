@@ -43,17 +43,17 @@ Filecoin社区很高兴宣布最新上线的Filecoin Green专属[网站](https:/
 
 ## Community
 
-[![](/uploads/a-deep-dive-into-the-storage-provider-ecosystem_hu5c8687c64948c597d44162d7e4a6775d_1678699_2000x0_resize_q90_linear_2.webp)](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/)
+[![](/uploads/a-deep-dive-into-the-storage-provider-ecosystem_hu5c8687c64948c597d44162d7e4a6775d_1678699_2000x0_resize_q90_linear_2.webp)](/blog/a-deep-dive-into-the-storage-provider-ecosystem/)
 
 ### 深入探究存储提供者生态
 
-Filecoin网络是由持续扩展的存储提供者生态支持的，它们目前投入了15 EiB以上的容量。这是一个分布在全球的生态系统，由大大小小的参与者组成，其中还有大型的企业级参与者。如果你想了解更多关于这个社区及如何上手成为存储提供者的信息，请在Filecoin博客查看[深入探究](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/) 一文。
+Filecoin网络是由持续扩展的存储提供者生态支持的，它们目前投入了15 EiB以上的容量。这是一个分布在全球的生态系统，由大大小小的参与者组成，其中还有大型的企业级参与者。如果你想了解更多关于这个社区及如何上手成为存储提供者的信息，请在Filecoin博客查看[深入探究](/blog/a-deep-dive-into-the-storage-provider-ecosystem/) 一文。
 
-[![](/uploads/filecoin-retrieval-market.webp)](https://filecoin.io/blog/posts/cdns-and-the-filecoin-retrieval-market/)
+[![](/uploads/filecoin-retrieval-market.webp)](/blog/cdns-and-the-filecoin-retrieval-market/)
 
 ### Myel、CDNs和Filecoin检索市场
 
-内容分发网络（Content Delivery Networks）是让互联网用户访问内容时更顺畅的重要环节。不过，它们在安全性、成本和地理分布等问题上有严重的局限性。新一代的CDN应用正寻求用Filecoin来提供更高效和去中心化的替代服务方案。在[这里](https://filecoin.io/blog/posts/cdns-and-the-filecoin-retrieval-market/) ，可以了解像 Myel 这样的项目如何让任何人为去中心化CDN轻松设立访问点（point-of-presence ，POP）。
+内容分发网络（Content Delivery Networks）是让互联网用户访问内容时更顺畅的重要环节。不过，它们在安全性、成本和地理分布等问题上有严重的局限性。新一代的CDN应用正寻求用Filecoin来提供更高效和去中心化的替代服务方案。在[这里](/blog/cdns-and-the-filecoin-retrieval-market/) ，可以了解像 Myel 这样的项目如何让任何人为去中心化CDN轻松设立访问点（point-of-presence ，POP）。
 
 [![](/uploads/nftport.webp)](https://twitter.com/nftport_xyz/status/1503405455489617929)
 

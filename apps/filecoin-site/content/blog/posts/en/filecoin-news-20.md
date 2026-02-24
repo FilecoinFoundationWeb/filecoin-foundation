@@ -44,13 +44,13 @@ This three-day event kicked off with a full-day summit, bringing together expert
 
 ## Store
 
-[![](/uploads/starling-fil-news-art.webp)](https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/)
+[![](/uploads/starling-fil-news-art.webp)](/blog/starling-lab-establishing-trust-for-humanity-s-data/)
 
 ### Starling Lab: Establishing Trust for Humanity’s Data
 
 Announcing the launch of Starling Lab, a commitment to continue building the frameworks required to endow humanity’s most vital digital information with trust. In collaboration with the USC Shoah Foundation and Stanford University, Starling Lab is deploying technology and methods that make the decentralized internet a viable platform for social impact. With an initial commitment of $2 million of funding from Protocol Labs and the Filecoin Foundation for the Decentralized Web, The Starling Lab is the first center in the world dedicated to using decentralized tools to advance human rights.
 
-Core to The Starling Lab solution is the Starling Framework, a set of open-source prototypes, best practices, and case studies built upon IPFS and Filecoin that help to reduce information uncertainty in digital media. The Starling Framework rests on the fundamental need to capture, store, and verify information to protect its integrity. Read more about [Starling Lab](https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/).
+Core to The Starling Lab solution is the Starling Framework, a set of open-source prototypes, best practices, and case studies built upon IPFS and Filecoin that help to reduce information uncertainty in digital media. The Starling Framework rests on the fundamental need to capture, store, and verify information to protect its integrity. Read more about [Starling Lab](/blog/starling-lab-establishing-trust-for-humanity-s-data/).
 
 ## Mine
 

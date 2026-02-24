@@ -29,7 +29,7 @@ title: Filecoin News 35
 
 ### Filecoin for Large Datasets Website Launch
 
-Decentralized storage provides drastic improvements in terms of robustness and efficiency when compared to traditional cloud storage, leading organizations such as the Shoah Foundation to trust Filecoin with its large data needs. The Filecoin community is excited to introduce a dedicated [website](https://largedata.filecoin.io) for these services as a cheaper Web3 alternative to its Web 2 predecessors with more than 15+ EiB available in storage power. [Read more](https://filecoin.io/blog/posts/filecoin-for-large-data/) on Filecoin’s solutions for large data sets and find out how you can earn a referral bounty with Project Gravity II.
+Decentralized storage provides drastic improvements in terms of robustness and efficiency when compared to traditional cloud storage, leading organizations such as the Shoah Foundation to trust Filecoin with its large data needs. The Filecoin community is excited to introduce a dedicated [website](https://largedata.filecoin.io) for these services as a cheaper Web3 alternative to its Web 2 predecessors with more than 15+ EiB available in storage power. [Read more](/blog/filecoin-for-large-data/) on Filecoin’s solutions for large data sets and find out how you can earn a referral bounty with Project Gravity II.
 
 ### NFT.Storage Q1 and 2022 Roadmap
 
@@ -49,7 +49,7 @@ Check out [Slik](https://www.sliksafe.com), a service using Filecoin to provide 
 
 ### Orbit Community Program Launch
 
-We are excited to announce the launch of the Orbit Community Program powered by Protocol Labs and the Filecoin Foundation. The search has begun for community leaders and advocates across the world to join the broader Web3 community. Candidates who become Orbit Community Program Cadets (the individual track) or Spaceships (the enterprise track) will help spread the word about next-generation Web3 solutions and grow their local communities. Applications [are open now](https://orbitcommunity.filecoin.io/)! Learn more in this recent [blog post](https://filecoin.io/blog/posts/orbit-community-program/).
+We are excited to announce the launch of the Orbit Community Program powered by Protocol Labs and the Filecoin Foundation. The search has begun for community leaders and advocates across the world to join the broader Web3 community. Candidates who become Orbit Community Program Cadets (the individual track) or Spaceships (the enterprise track) will help spread the word about next-generation Web3 solutions and grow their local communities. Applications [are open now](https://orbitcommunity.filecoin.io/)! Learn more in this recent [blog post](/blog/orbit-community-program/).
 
 [![](/uploads/fji49l-auaaat_j.webp)](https://www.youtube.com/c/LongHashVentures/videos)
 

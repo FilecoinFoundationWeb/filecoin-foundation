@@ -23,7 +23,7 @@ related_article_3: content/blog/posts/filecoin-news-89.en.md
 
 ### FIL RetroPGF 2 – Powering the Future of Filecoin Public Goods
 
-We’re thrilled to announce FIL RetroPGF 2, continuing the community’s mission to fund the development of essential public goods in the Filecoin ecosystem. Building on the success of the first round, this initiative will allocate significant resources to projects that enhance the decentralized web, with a particular focus on sustainability and innovation. By supporting builders who create open-source tools and infrastructure, FIL RetroPGF 2 ensures the long-term growth and health of the Filecoin network. [Discover more](https://filecoin.io/blog/posts/announcing-fil-retropgf-2-continuing-to-fund-filecoin-public-goods/) or to get involved and learn about our sponsorship packages, please reach out at [ops@fil-retropgf.io](mailto:ops@fil-retropgf.io).
+We’re thrilled to announce FIL RetroPGF 2, continuing the community’s mission to fund the development of essential public goods in the Filecoin ecosystem. Building on the success of the first round, this initiative will allocate significant resources to projects that enhance the decentralized web, with a particular focus on sustainability and innovation. By supporting builders who create open-source tools and infrastructure, FIL RetroPGF 2 ensures the long-term growth and health of the Filecoin network. [Discover more](/blog/announcing-fil-retropgf-2-continuing-to-fund-filecoin-public-goods/) or to get involved and learn about our sponsorship packages, please reach out at [ops@fil-retropgf.io](mailto:ops@fil-retropgf.io).
 
 ### FIL Dev Summit 5: Building on Success in Bangkok
 

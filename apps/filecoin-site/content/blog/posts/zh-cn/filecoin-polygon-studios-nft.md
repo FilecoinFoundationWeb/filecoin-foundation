@@ -30,9 +30,9 @@ Polygon最初是以安全的Layer 2解决方案问世，用于解决热门区块
 
 ## Filecoin持久性和Polygon可扩展性珠联璧合，为开发人员开拓新用例
 
-2021年8月，我们[宣布](https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/) Polygon将为希望建立在[Textile](https://www.textile.io/)团队开发的[Filecoin-Polygon bridge](https://eth.storage/docs ethereum——polygon-bridge-to-filecoin)上的项目提供免费存储费用。该桥梁使开发人员和Polygon应用程序用户能够轻松地从IPFS网络上的任何Polygon地址存储数据，而无需任何新注册、隐私或API密钥。
+2021年8月，我们[宣布](/blog/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/) Polygon将为希望建立在[Textile](https://www.textile.io/)团队开发的[Filecoin-Polygon bridge](https://eth.storage/docs ethereum——polygon-bridge-to-filecoin)上的项目提供免费存储费用。该桥梁使开发人员和Polygon应用程序用户能够轻松地从IPFS网络上的任何Polygon地址存储数据，而无需任何新注册、隐私或API密钥。
 
-Filecoin和Polygon还联袂打造了[Mars黑客松](https://filecoin.io/blog/posts/about-500-000-in-prizes-and-grants-for-asia-hackathon-season-2021/)，该活动从2021年8月开始持续至11月。本次线上黑客松汇聚了超过1500名开发人员，他们在活动中使用Filecoin-Polygon bridge打造新的应用程序，包括存储、元宇宙、娱乐、数字艺术等用例。
+Filecoin和Polygon还联袂打造了[Mars黑客松](/blog/about-500-000-in-prizes-and-grants-for-asia-hackathon-season-2021/)，该活动从2021年8月开始持续至11月。本次线上黑客松汇聚了超过1500名开发人员，他们在活动中使用Filecoin-Polygon bridge打造新的应用程序，包括存储、元宇宙、娱乐、数字艺术等用例。
 
 本次黑客松中值得关注的项目包括：[Blockspace](https://airtable.com/appPrImBw9ntRgY88/tblCwc1GeUbvwVrmU/viwsPcyqiucf24e1j/reckvUASFD2LclsGY?blocks=hide)，不同于Google Drive此类传统云服务供应商，这是一个建立在IPFS上的分布式文件存储和共享平台；以及[Slick](https://airtable.com/appPrImBw9ntRgY88/tblCwc1GeUbvwVrmU/viwsPcyqiucf24e1j/recKvMw34LuRJuY3T?blocks=hide)，一个替代Patreon的去中心化项目。
 

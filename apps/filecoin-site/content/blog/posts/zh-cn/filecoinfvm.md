@@ -10,7 +10,7 @@ categories:
 dim_image: true
 ---
 
-100天前，2023年3月14日，Filecoin网络在[Filecoin虚拟机](http://fvm.filecoin.io/)上推出了第一个可编程EVM运行时，从此具备了智能合约可编程性([重新回顾该篇公告文章](https://filecoin.io/blog/posts/fvm-is-live-on-mainnet/))。此次发布巩固了Filecoin作为L1的独特定位，为开放数据经济提供动力。此后，由开发者、存储提供者、存储用户和最大开放访问云服务Filecoin的其他网络参与者组成的开放生态系统进一步发展壮大。来和我们一起看看FVM在Filecoin主网上推出以来取得的显著进展。
+100天前，2023年3月14日，Filecoin网络在[Filecoin虚拟机](http://fvm.filecoin.io/)上推出了第一个可编程EVM运行时，从此具备了智能合约可编程性([重新回顾该篇公告文章](/blog/fvm-is-live-on-mainnet/))。此次发布巩固了Filecoin作为L1的独特定位，为开放数据经济提供动力。此后，由开发者、存储提供者、存储用户和最大开放访问云服务Filecoin的其他网络参与者组成的开放生态系统进一步发展壮大。来和我们一起看看FVM在Filecoin主网上推出以来取得的显著进展。
 
 [](/uploads/01FVM100days.webp)
 

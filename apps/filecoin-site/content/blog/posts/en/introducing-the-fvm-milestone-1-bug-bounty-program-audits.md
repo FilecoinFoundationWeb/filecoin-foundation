@@ -21,7 +21,7 @@ title: Introducing the FVM Milestone 1 Bug Bounty Program & Audits
 _template: blog_detail
 ---
 
-Following up on [last week’s FVM Milestone 0.5 progress update](https://filecoin.io/blog/posts/fvm-milestone-0.5-is-complete/), we are excited to announce the [FVM Bug Bounty Program](https://fvm.filecoin.io/#fvm-bug-bounty-program-7) and invite bug hunters and community developers to help find vulnerabilities in the FVM Milestone 1 codebase in preparation for May’s FVM M1 release as part of [Filecoin network upgrade v16 Skyr](https://github.com/filecoin-project/community/discussions/74?sort=new#discussioncomment-2392151).
+Following up on [last week’s FVM Milestone 0.5 progress update](/blog/fvm-milestone-0.5-is-complete/), we are excited to announce the [FVM Bug Bounty Program](https://fvm.filecoin.io/#fvm-bug-bounty-program-7) and invite bug hunters and community developers to help find vulnerabilities in the FVM Milestone 1 codebase in preparation for May’s FVM M1 release as part of [Filecoin network upgrade v16 Skyr](https://github.com/filecoin-project/community/discussions/74?sort=new#discussioncomment-2392151).
 
 The Filecoin Virtual Machine is being added to Filecoin’s mainnet in several milestones. As part of Milestone 1, Filecoin network will be transitioning to exclusive use of the Filecoin Virtual Machine. This represents a substantial change, switching from the current legacy VMs to the adoption of the new Wasm-based reference FVM by all client implementations.
 

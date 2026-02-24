@@ -29,7 +29,7 @@ Today, the Filecoin community is proud to announce the successful launch of the 
 
 This launch is a landmark milestone in Filecoin’s larger roadmap, which aims to bring open access and public verifiability to the three key arms of the data economy (storage, compute and content-delivery). When phones became “smart”, the ability to write and install apps catapulted these devices far beyond their pre-installed capabilities. Opening up creativity and control is how smartphones came to rule the world. Likewise, FVM allows developers to orchestrate where, when and how data gets placed, governed, and monetized on open markets.
 
-The launch of FVM kicks off the final step in the [Filecoin Masterplan](https://filecoin.io/blog/posts/the-filecoin-masterplan/), which aims to bring **large-scale computation and the ability to power web-scale apps** to the world’s largest decentralized storage network.
+The launch of FVM kicks off the final step in the [Filecoin Masterplan](/blog/the-filecoin-masterplan/), which aims to bring **large-scale computation and the ability to power web-scale apps** to the world’s largest decentralized storage network.
 
 Additionally, the launch of FVM solidifies Filecoin’s position as the Layer-1 blockchain uniquely poised to power an open data economy. Many leading web3 projects have announced plans to use, support, or integrate with FVM to upgrade their services.
 

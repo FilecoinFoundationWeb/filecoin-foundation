@@ -25,11 +25,11 @@ title: Filecoin News 31
 
 ## Announcements
 
-[![](/uploads/unnamed-1-1.webp)](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/)
+[![](/uploads/unnamed-1-1.webp)](/blog/introducing-the-filecoin-virtual-machine/)
 
 ### Dive into the Filecoin Virtual Machine
 
-Announced during Filecoin Orbit 2021, the Filecoin Virtual Machine (FVM) marks the next evolution of the Filecoin Network, bringing together decentralized storage and powerful computation. The FVM allows smart contracts (called ‘actors’ in the Filecoin ecosystem) to endow the data stored on the network with more utility and power. Based on WASM, the FVM is built to be multi-VM, starting with EVM compatibility — ensuring Filecoin’s storage solutions can scale to the growing, interoperable needs of Web3. [Dive into the FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/).
+Announced during Filecoin Orbit 2021, the Filecoin Virtual Machine (FVM) marks the next evolution of the Filecoin Network, bringing together decentralized storage and powerful computation. The FVM allows smart contracts (called ‘actors’ in the Filecoin ecosystem) to endow the data stored on the network with more utility and power. Based on WASM, the FVM is built to be multi-VM, starting with EVM compatibility — ensuring Filecoin’s storage solutions can scale to the growing, interoperable needs of Web3. [Dive into the FVM](/blog/introducing-the-filecoin-virtual-machine/).
 
 ## Storage Providers
 
@@ -55,11 +55,11 @@ The Filecoin community is excited to announce the official launch of Japan commu
 
 With over 450 registered builders, and 75 incredible Spaces submitted, the largest ever Metaverse Build Bounty is wrapping up. This event, sponsored by Filecoin, was designed to spur the creation and use of open metaverse spaces. After lengthy deliberation, the judging panel has decided their favorite Spaces they’d like to bid on. These Spaces will get wired together to create the Filecoin Forum. While each and every Space was incredible in its own way, the top Spaces best represent the Filecoin community and their needs. And since there were so many amazing builds submitted, Protocol Labs decided to expand the prize pool and number of build bounties.
 
-[![](/uploads/unnamed-6.webp)](https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-nfts/)
+[![](/uploads/unnamed-6.webp)](/blog/filecoin-launchpad-accelerator-ii-nfts/)
 
 ### Introducing the NFT Projects from the Filecoin Launchpad Accelerator II
 
-On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. Part of the Demo Day included presentations from 5 NFT projects. Nftfy offers fractional ownership for the valuable NFTs across the ecosystem. Paras is a system for supporting and developing crypto-native intellectual properties. Fractio is a premium NFT toolkit for creators interested in dynamic-data NFTs. Nifty Royale is a prize distribution system that distributes NFTs through a no-loss pool system. Chestr is a create-to-earn platform centered around digital artists. Learn more about each of these [NFT projects from Filecoin Launchpad II here.](https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-nfts/)
+On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. Part of the Demo Day included presentations from 5 NFT projects. Nftfy offers fractional ownership for the valuable NFTs across the ecosystem. Paras is a system for supporting and developing crypto-native intellectual properties. Fractio is a premium NFT toolkit for creators interested in dynamic-data NFTs. Nifty Royale is a prize distribution system that distributes NFTs through a no-loss pool system. Chestr is a create-to-earn platform centered around digital artists. Learn more about each of these [NFT projects from Filecoin Launchpad II here.](/blog/filecoin-launchpad-accelerator-ii-nfts/)
 
 ### League of Entropy Partnership Opportunity
 

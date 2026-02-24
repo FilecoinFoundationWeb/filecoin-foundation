@@ -31,9 +31,9 @@ _template: blog_detail_ch
 
 来自11个国家的33位创始人参加了为期12周的沉浸式计划，将IPFS、Filecoin和以太坊社区连接起来。点击Filecoin博客了解更多关于创建者及其初创公司的信息。
 
-- [用于媒体、视频、游戏等领域的Filecoin](https://filecoin.io/blog/posts/filecoin-for-media-video-gaming-and-more/)
-- [用于内容、运维、可信等领域的Filecoin](https://filecoin.io/blog/posts/filecoin-for-content-devops-trust-and-more/)
-- [用于国债、遗嘱、金融存取等领域的Filecoin](https://filecoin.io/blog/posts/filecoin-for-treasuries-wills-financial-access-and-more/)
+- [用于媒体、视频、游戏等领域的Filecoin](/blog/filecoin-for-media-video-gaming-and-more/)
+- [用于内容、运维、可信等领域的Filecoin](/blog/filecoin-for-content-devops-trust-and-more/)
+- [用于国债、遗嘱、金融存取等领域的Filecoin](/blog/filecoin-for-treasuries-wills-financial-access-and-more/)
 
 ![NFT黑客马拉松](/uploads/c2f9cdfc-a335-4ab1-b0fe-adbe819004ed.webp)
 

@@ -26,17 +26,17 @@ title: "Filecoin News 26: Filecoin Network capacity surpasses 10 EiB, and more!"
 
 ## Announcements
 
-[![](/uploads/10eib-graphic.webp)](https://filecoin.io/blog/posts/the-filecoin-network-surpasses-10-eib-of-storage-capacity/)
+[![](/uploads/10eib-graphic.webp)](/blog/the-filecoin-network-surpasses-10-eib-of-storage-capacity/)
 
 ### The Filecoin Network Surpasses 10 EiB of Storage Capacity
 
 Eleven months after mainnet launch, the Filecoin network is celebrating a major milestone. As of last week, the global community of Filecoin storage providers has dedicated over 10 exbibytes (EiB) of decentralized storage capacity to the Filecoin network. 10EiB is equivalent to 190 Internet Archives, 45,000 Wikipedias, and 6,850,000 years worth of video calls! This is a tremendous achievement for the Filecoin community.
 
-[![](/uploads/dapper.webp)](https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/)
+[![](/uploads/dapper.webp)](/blog/dapper-labs-integrates-filecoin/)
 
 ### Dapper Labs Integrates Filecoin to Propel the Future of the NFT and Gaming Metaverse on Flow Blockchain
 
-[**Dapper Labs**](https://www.dapperlabs.com/) is integrating with Filecoin to spearhead the end-to-end ownership of NFTs, including the underlying media assets, and to establish best practices for the storage of NFT data. To jumpstart the collaboration, there will be grants available for the Flow ecosystem, starting with the Next Step Microgrant Program. Any project actively integrating with IPFS, Filecoin, or related services like Pinata or NFT.Storage can qualify for the grant, subject to five simple criteria. Review the grant criteria and [**apply**](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)! For more information on the integration and grants program, please [**read this post**](https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/).
+[**Dapper Labs**](https://www.dapperlabs.com/) is integrating with Filecoin to spearhead the end-to-end ownership of NFTs, including the underlying media assets, and to establish best practices for the storage of NFT data. To jumpstart the collaboration, there will be grants available for the Flow ecosystem, starting with the Next Step Microgrant Program. Any project actively integrating with IPFS, Filecoin, or related services like Pinata or NFT.Storage can qualify for the grant, subject to five simple criteria. Review the grant criteria and [**apply**](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Microgrants%20README.md)! For more information on the integration and grants program, please [**read this post**](/blog/dapper-labs-integrates-filecoin/).
 
 ## Store
 
@@ -48,11 +48,11 @@ Registrations are now open for Filecoin Launchpad Accelerator II Demo Day, power
 
 ## Tools
 
-[![](/uploads/estuary.webp)](https://filecoin.io/blog/posts/taking-a-look-at-estuary/)
+[![](/uploads/estuary.webp)](/blog/taking-a-look-at-estuary/)
 
 ### Taking a Look at Estuary
 
-The Filecoin network is a breakthrough in decentralized storage network infrastructure and protocols. There are many storage solutions on the internet but few are as advanced as Filecoin with regards to decentralization and transparency. Now, with Estuary, there is an open-source stack for the community to use freely for storing public data on Filecoin. Want to learn more? Check out this [**blog post**](https://filecoin.io/blog/posts/taking-a-look-at-estuary/) on how to get started. If you’re interested in contributing, reach out on [**Twitter at @aresearchgroup**](https://twitter.com/aresearchgroup).
+The Filecoin network is a breakthrough in decentralized storage network infrastructure and protocols. There are many storage solutions on the internet but few are as advanced as Filecoin with regards to decentralization and transparency. Now, with Estuary, there is an open-source stack for the community to use freely for storing public data on Filecoin. Want to learn more? Check out this [**blog post**](/blog/taking-a-look-at-estuary/) on how to get started. If you’re interested in contributing, reach out on [**Twitter at @aresearchgroup**](https://twitter.com/aresearchgroup).
 
 [![](/uploads/datastation.webp)](https://medium.com/buidl-labs/datastation-enhancing-the-experience-of-decentralised-storage-on-filecoin-79e8807b854d)
 

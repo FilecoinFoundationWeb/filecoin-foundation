@@ -38,17 +38,17 @@ In July 2021, Textile launched the Filecoin-NEAR bridge, taking the first step t
 
 Today, collaboration between the Filecoin ecosystem and the NEAR ecosystem deepens with the launch of a $300,000 joint grants program designed to support developers interested in exploring new opportunities at the intersection of these two protocols. Upon receiving a grant, projects will also gain access to the global collectives of both NEAR and Filecoin to support product development and user growth. [**Learn more**](/blog/near-filecoin-ecosystems-accelerate-growth-web3-stack/).
 
-[![](/uploads/chainlink-filecoin.webp)](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/)
+[![](/uploads/chainlink-filecoin.webp)](/blog/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/)
 
 ### Announcing Chainlink-Filecoin Joint Grants for dApps Combining Decentralized Storage and Oracles
 
-[**Chainlink**](http://chain.link/) and [**Filecoin**](https://filecoin.io/) are launching a joint grant initiative to accelerate development of [**hybrid smart contracts**](https://blog.chain.link/hybrid-smart-contracts-explained/) that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application. Hybrid smart contacts leverage code running on the blockchain (on-chain) with data and computation from outside the blockchain (off-chain). By bringing together Filecoin and Chainlink, developers can build end-to-end decentralized applications that have cost-efficient and immutable storage capabilities along with a universal and secure connection to external resources. For more information, please [**read this recent blog post**](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/).
+[**Chainlink**](http://chain.link/) and [**Filecoin**](https://filecoin.io/) are launching a joint grant initiative to accelerate development of [**hybrid smart contracts**](https://blog.chain.link/hybrid-smart-contracts-explained/) that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application. Hybrid smart contacts leverage code running on the blockchain (on-chain) with data and computation from outside the blockchain (off-chain). By bringing together Filecoin and Chainlink, developers can build end-to-end decentralized applications that have cost-efficient and immutable storage capabilities along with a universal and secure connection to external resources. For more information, please [**read this recent blog post**](/blog/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/).
 
-[![](/uploads/juan-ethcc-talk.webp)](https://filecoin.io/blog/posts/building-web3-filecoin-ethereum-better-together/)
+[![](/uploads/juan-ethcc-talk.webp)](/blog/building-web3-filecoin-ethereum-better-together/)
 
 ### Building Web3: Filecoin + Ethereum Better Together
 
-As a modular, interoperable solution Filecoin has found a natural fit with other stacks, applications, and ecosystems within Web3. Since its launch in October 2020, Filecoin has grown to over 8 exbibytes of available storage with 400+ new projects entering the space. One ecosystem that continues to prove collaborative and mutually beneficial is Ethereum. Learn more about Filecoin + Ethereum and use cases for the future in this recap of [**Juan Benet’s talk**](https://filecoin.io/blog/posts/building-web3-filecoin-ethereum-better-together/) at EthCC 2021.
+As a modular, interoperable solution Filecoin has found a natural fit with other stacks, applications, and ecosystems within Web3. Since its launch in October 2020, Filecoin has grown to over 8 exbibytes of available storage with 400+ new projects entering the space. One ecosystem that continues to prove collaborative and mutually beneficial is Ethereum. Learn more about Filecoin + Ethereum and use cases for the future in this recap of [**Juan Benet’s talk**](/blog/building-web3-filecoin-ethereum-better-together/) at EthCC 2021.
 
 [![](/uploads/hackfs.webp)](https://www.youtube.com/watch?v=tdqIvaZ28ns)
 

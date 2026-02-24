@@ -31,11 +31,11 @@ The v16 network upgrade, codenamed Skyr, happened today, Wednesday, July 6th at 
 
 ## Community
 
-[![](/uploads/green-storage-provider.webp)](https://filecoin.io/blog/posts/how-to-become-a-green-storage-provider/)
+[![](/uploads/green-storage-provider.webp)](/blog/how-to-become-a-green-storage-provider/)
 
 ### How to Become a Green Storage Provider
 
-The Filecoin Network is on its way to becoming carbon neutral at the node level thanks to initiatives fostered by [Filecoin Green](https://green.filecoin.io/). Of course, all these efforts start with Filecoin Storage Providers (SPs). The cryptographic primitives used in the Filecoin Network can also be applied to their operations to measure and, ultimately, make them more sustainable in verifiable ways. Visit the [Filecoin blog](https://filecoin.io/blog/posts/how-to-become-a-green-storage-provider/) if you’d like to get started on your journey to become a green SP.
+The Filecoin Network is on its way to becoming carbon neutral at the node level thanks to initiatives fostered by [Filecoin Green](https://green.filecoin.io/). Of course, all these efforts start with Filecoin Storage Providers (SPs). The cryptographic primitives used in the Filecoin Network can also be applied to their operations to measure and, ultimately, make them more sustainable in verifiable ways. Visit the [Filecoin blog](/blog/how-to-become-a-green-storage-provider/) if you’d like to get started on your journey to become a green SP.
 
 [![](/uploads/allhandsmeeting.webp)](https://www.youtube.com/watch?v=cPgnYkdgT2w)
 
@@ -84,17 +84,17 @@ Over a thousand Web3 enthusiasts will be joining members of the Filecoin communi
 
 ## Tools
 
-[![](/uploads/lightning-fast.webp)](https://filecoin.io/blog/posts/make-lightning-fast-storage-deals-with-boost-v1.0/)
+[![](/uploads/lightning-fast.webp)](/blog/make-lightning-fast-storage-deals-with-boost-v1.0/)
 
 ### Make Lightning-Fast Storage Deals with Boost v1.0
 
-Boost v1.0.0 has officially landed! Boost is a new, standalone replacement for the existing Lotus Markets process that enables you to get your data into Filecoin up to 20x faster, retry paused deals, watch deal transfer rates, see deal logs right from the new Web UI, and much more. Start getting familiar with the new tool on the [Filecoin blog](https://filecoin.io/blog/posts/make-lightning-fast-storage-deals-with-boost-v1.0/) and learn why you should upgrade if you’re a Storage Provider.
+Boost v1.0.0 has officially landed! Boost is a new, standalone replacement for the existing Lotus Markets process that enables you to get your data into Filecoin up to 20x faster, retry paused deals, watch deal transfer rates, see deal logs right from the new Web UI, and much more. Start getting familiar with the new tool on the [Filecoin blog](/blog/make-lightning-fast-storage-deals-with-boost-v1.0/) and learn why you should upgrade if you’re a Storage Provider.
 
-[![](/uploads/lighthouse.webp)](https://filecoin.io/blog/posts/lighthouse-makes-permanent-storage-on-filecoin-easy-and-affordable/)
+[![](/uploads/lighthouse.webp)](/blog/lighthouse-makes-permanent-storage-on-filecoin-easy-and-affordable/)
 
 ### Lighthouse Makes Permanent Storage on Filecoin Easy and Affordable
 
-Lighthouse is a facilitator of permanent file storage on the Filecoin Network where users only pay once and their files are stored forever. Traditionally, users need to keep track and pay for their files after a fixed amount of time. Lighthouse manages this for them by moving from a rent-based cost model to a permanent ownership model. [Read along](https://filecoin.io/blog/posts/lighthouse-makes-permanent-storage-on-filecoin-easy-and-affordable/) to find out more about how it works and how it uses Filecoin and IPFS.
+Lighthouse is a facilitator of permanent file storage on the Filecoin Network where users only pay once and their files are stored forever. Traditionally, users need to keep track and pay for their files after a fixed amount of time. Lighthouse manages this for them by moving from a rent-based cost model to a permanent ownership model. [Read along](/blog/lighthouse-makes-permanent-storage-on-filecoin-easy-and-affordable/) to find out more about how it works and how it uses Filecoin and IPFS.
 
 ## Hackathons
 

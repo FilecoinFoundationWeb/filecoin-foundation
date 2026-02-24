@@ -48,7 +48,7 @@ Embark on a journey with the Filecoin community on December 8-10th at [ETHIndia]
 
 ### Retrieving Memories from the FIL Dev Summit
 
-In case you missed it, incentivizing Filecoin retrievals was a topic of significant excitement at the [FIL Dev Summit](http://fildev.io/). Learn how the Filecoin community is making retrievals more reliable, plus more in [this blog post](https://filecoin.io/blog/posts/retrieving-memories-from-the-fil-dev-summit/) recapping some of the talks from the event.
+In case you missed it, incentivizing Filecoin retrievals was a topic of significant excitement at the [FIL Dev Summit](http://fildev.io/). Learn how the Filecoin community is making retrievals more reliable, plus more in [this blog post](/blog/retrieving-memories-from-the-fil-dev-summit/) recapping some of the talks from the event.
 
 ## Tools
 

@@ -49,11 +49,11 @@ We are planning events, grants and other support to enable Filecoin to become ve
 
 [CryptoComputeLab](https://github.com/protocol/cryptocomputelab) is very proud to release [Proofs v10.0.0](https://github.com/filecoin-project/rust-fil-proofs/blob/master/CHANGELOG.md#1000---2021-09-30)! A lot has changed under the hood in this release, but ultimately, it comes down to additional GPU support options and better performance during proving. The far less visible highlights include consolidating a number of our internal dependencies which started life as forks from other projects back to the upstream sources. This kind of tooling update is beneficial for several reasons, including gaining optimizations from the upstream sources as our code diverged over time, and also making future updates (e.g. Halo2 work) more realistic. [Read all about the release](https://research.protocol.ai/blog/2021/cryptocomputelab-announces-proofs-release-version-10.0.0.0/).
 
-[![](/uploads/dapper-labs-flow-filecoin_hu38b5a7ba412f393c99af82bdfc52efda_86283_2000x0_resize_q90_linear.webp)](https://filecoin.io/blog/posts/filecoin-becomes-official-storage-collaborator-for-flow-blockchain/)
+[![](/uploads/dapper-labs-flow-filecoin_hu38b5a7ba412f393c99af82bdfc52efda_86283_2000x0_resize_q90_linear.webp)](/blog/filecoin-becomes-official-storage-collaborator-for-flow-blockchain/)
 
 ### Filecoin becomes official storage layer for Flow Blockchain
 
-Filecoin is now the official storage layer of Flow blockchain, empowering platforms, developers and users alike as the Flow metaverse becomes more open, robust, and decentralized. This integration of technologies will accelerate end-to-end ownership of NFTs, along with the media assets associated with them, establishing decentralized storage of data on Flow. [Read more about the announcement](https://filecoin.io/blog/posts/filecoin-becomes-official-storage-collaborator-for-flow-blockchain/).
+Filecoin is now the official storage layer of Flow blockchain, empowering platforms, developers and users alike as the Flow metaverse becomes more open, robust, and decentralized. This integration of technologies will accelerate end-to-end ownership of NFTs, along with the media assets associated with them, establishing decentralized storage of data on Flow. [Read more about the announcement](/blog/filecoin-becomes-official-storage-collaborator-for-flow-blockchain/).
 
 ## Tools
 
@@ -75,11 +75,11 @@ Textile's Filecoin Deal Auctions will award 250FIL in prizes to Storage Provider
 
 ## Community
 
-[![](/uploads/fil-blog-2021-10-29-filecoin-launchpad-accelerator-ii.webp)](https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-defi/)
+[![](/uploads/fil-blog-2021-10-29-filecoin-launchpad-accelerator-ii.webp)](/blog/filecoin-launchpad-accelerator-ii-defi/)
 
 ### FLAII: DeFi
 
-On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. Part of the Demo Day included presentations from 5 DeFi projects. Hedgey Finance is a protocol for adding options markets to any token. Tamago Finance is a DeFi protocol that makes synthetic tokens for widespread distribution on Asian real-world markets. SmartFunds is a simple, automated, and compliant fund-management tool. Clam Islands powers the gamification of investments using Blockchain, NFTs, and Yield Farming. Boto is an online no-code platform that allows users to build bots to automate online tasks. Learn more about each of these [DeFi projects from Filecoin Launchpad II here.](https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-defi/)
+On September 28th, 20 teams took part in a demo day hosted by the Filecoin Launchpad Accelerator, run by Tachyon. Part of the Demo Day included presentations from 5 DeFi projects. Hedgey Finance is a protocol for adding options markets to any token. Tamago Finance is a DeFi protocol that makes synthetic tokens for widespread distribution on Asian real-world markets. SmartFunds is a simple, automated, and compliant fund-management tool. Clam Islands powers the gamification of investments using Blockchain, NFTs, and Yield Farming. Boto is an online no-code platform that allows users to build bots to automate online tasks. Learn more about each of these [DeFi projects from Filecoin Launchpad II here.](/blog/filecoin-launchpad-accelerator-ii-defi/)
 
 [![](/uploads/1_qn7ffyrcd-injxqdbiguew.webp)](https://medium.com/chainsafe-systems/chainsafe-launches-forest-the-rust-filecoin-client-d94534f86bbe)
 

@@ -43,19 +43,19 @@ _template: blog_detail_ch
 
 存储提供者目前正在通过Lotus v1.11.3rc标签进行测试并报告性能提升。此版本还使用了与其他团队（如ZCash）共享的依赖项，而不是我们自己的分支版本。功能合并多个依赖项将使未来与Halo递归证明系统的整合更加顺畅。
 
-[![](/uploads/halo.webp)](https://filecoin.io/blog/posts/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/)
+[![](/uploads/halo.webp)](/blog/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/)
 
 ### 与Protocol Labs、Filecoin Foundation、Ethereum Foundation和Electric Coin Co. 共同复兴Halo 2
 
-近期[Electric Coin Co.](https://electriccoin.co/) (ECC)[宣布](https://electriccoin.co/blog/ethereum-zcash-filecoin-collab/) [Protocol Labs](https://protocol.ai/)、[Filecoin Foundation](https://fil.org/)、[Ethereum Foundation](https://ethereum.org/en/foundation/)和ECC将合作探索研究和开发[Halo](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/)，一个无需信任设置的零知识递归证明解决方案。 [点此链接了解更多合作信息](https://filecoin.io/blog/posts/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/)。
+近期[Electric Coin Co.](https://electriccoin.co/) (ECC)[宣布](https://electriccoin.co/blog/ethereum-zcash-filecoin-collab/) [Protocol Labs](https://protocol.ai/)、[Filecoin Foundation](https://fil.org/)、[Ethereum Foundation](https://ethereum.org/en/foundation/)和ECC将合作探索研究和开发[Halo](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/)，一个无需信任设置的零知识递归证明解决方案。 [点此链接了解更多合作信息](/blog/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/)。
 
 ## Tools
 
-[![](/uploads/chainlink-grant.webp)](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/)
+[![](/uploads/chainlink-grant.webp)](/blog/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/)
 
 ### Filecoin-Chainlink奖励计划延长
 
-想申请[Chainlink](https://chain.link/)和Filecoin的联合奖励计划吗？[今年8月初发布](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/)，该计划支持开发由防篡改文件存储和通用连接支持的卓越混合智能合约应用，截止日期目前已延长两个月至12月17日，申请 将以滚动方式接受。
+想申请[Chainlink](https://chain.link/)和Filecoin的联合奖励计划吗？[今年8月初发布](/blog/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/)，该计划支持开发由防篡改文件存储和通用连接支持的卓越混合智能合约应用，截止日期目前已延长两个月至12月17日，申请 将以滚动方式接受。
 
 [![](/uploads/lotus-upgrade.webp)](https://github.com/filecoin-project/lotus/releases/tag/v1.11.3)
 
@@ -67,7 +67,7 @@ _template: blog_detail_ch
 
 ### ChainSafe Files
 
-[ChainSafe Files](https://files.chainsafe.io/)是一个存储、查看和共享文件的在线平台，它通过IPFS和Filecoin为用户提供分布式存储和区块链技术的所有便利。 [点此链接了解](https://filecoin.io/blog/posts/chainsafe-files-building-privacy-preserving-cloud-storage/) Chainsafe如何彻底改变用户对其文件的私人访问模式，同时利用去中心化存储、安全性和持久性。
+[ChainSafe Files](https://files.chainsafe.io/)是一个存储、查看和共享文件的在线平台，它通过IPFS和Filecoin为用户提供分布式存储和区块链技术的所有便利。 [点此链接了解](/blog/chainsafe-files-building-privacy-preserving-cloud-storage/) Chainsafe如何彻底改变用户对其文件的私人访问模式，同时利用去中心化存储、安全性和持久性。
 
 ## Storage Providers
 
@@ -130,14 +130,14 @@ NFT.storage是本次寻宝活动的赞助商，将在时代广场中心的Edison
 
 ## Learn
 
-[![](/uploads/island-economy.webp)](https://filecoin.io/blog/posts/filecoin-s-island-economy/)
+[![](/uploads/island-economy.webp)](/blog/filecoin-s-island-economy/)
 
 ### Filecoin的海岛经济
 
-在和Filecoin生态接触过后，会发现“海岛经济”一词时常出现，其确切含义是什么？它为何是理解Filecoin生态经济的有效方式？简而言之，海岛经济是指在一个孤立区域（物理或虚拟）内的经济体，用户可以在其中生存和发展，而不必事事亲力亲为。感兴趣吗？[点击此处了解更多](https://filecoin.io/blog/posts/filecoin-s-island-economy/)。
+在和Filecoin生态接触过后，会发现“海岛经济”一词时常出现，其确切含义是什么？它为何是理解Filecoin生态经济的有效方式？简而言之，海岛经济是指在一个孤立区域（物理或虚拟）内的经济体，用户可以在其中生存和发展，而不必事事亲力亲为。感兴趣吗？[点击此处了解更多](/blog/filecoin-s-island-economy/)。
 
 ## 加入我们
 
-前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)并查看 [**社区资源**](https://github.com/filecoin-project/community)。您可以在[**Filecoin Slack**](http://filecoin.io/slack)频道提问，还可以在[**社区论坛**](https://discuss.filecoin.io/)中讨论问题和新想法。您还可以关注我们的微信公众号@Filecoin-Official或者[**在Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们您的想法。  
-[**Filecoin博客**](https://filecoin.io/blog/)和[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)对初学者来说也是重要的信息来源。  
+前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)并查看 [**社区资源**](https://github.com/filecoin-project/community)。您可以在[**Filecoin Slack**](http://filecoin.io/slack)频道提问，还可以在[**社区论坛**](https://discuss.filecoin.io/)中讨论问题和新想法。您还可以关注我们的微信公众号@Filecoin-Official或者[**在Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们您的想法。
+[**Filecoin博客**](https://filecoin.io/blog/)和[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)对初学者来说也是重要的信息来源。
 在此 [**订阅**](https://mailchi.mp/filecoin.io/subscribe)，即可直接收到此类资讯。
