@@ -42,7 +42,7 @@ This timeline provides participants a structured opportunity to gain visibility,
 
 ### DeStor Expands Its Decentralized Cloud Service with Strategic Partnerships
 
-In the latest developments from DeStor, their S3 Cloud Solutions, built on the Filecoin Network, are setting new benchmarks in decentralized storage by combining scalability and security with a user-friendly interface. Notable partnerships with DCENT, Future Tech Holdings, Akave, and Seal Storage further strengthen DeStor’s commitment to delivering robust, compliant, and sustainable storage solutions. As DeStor continues to innovate, these collaborations underscore its leading role in the future of decentralized cloud storage. [Read all about it in this recent blog post](https://filecoin.io/blog/posts/expanding-the-decentralized-frontier-destors-s3-cloud-solutions-and-new-partnerships/). 
+In the latest developments from DeStor, their S3 Cloud Solutions, built on the Filecoin Network, are setting new benchmarks in decentralized storage by combining scalability and security with a user-friendly interface. Notable partnerships with DCENT, Future Tech Holdings, Akave, and Seal Storage further strengthen DeStor’s commitment to delivering robust, compliant, and sustainable storage solutions. As DeStor continues to innovate, these collaborations underscore its leading role in the future of decentralized cloud storage. [Read all about it in this recent blog post](/blog/expanding-the-decentralized-frontier-destors-s3-cloud-solutions-and-new-partnerships/). 
 
 ### Storacha’s First Ever Hackathon! 
 
@@ -68,7 +68,7 @@ The Filecoin ecosystem is collaborating with Up Network to integrate decentraliz
 
 ### Get Ready for F3 (Fast Finality) in Filecoin! 🚀
 
-Prepare for the [upcoming F3 activation in network version 24](https://filecoin.io/blog/posts/how-f3-is-transforming-the-filecoin-network/), which will significantly reduce finalization times. Storage Providers, learn what this means for you and how to get ready. Check out the [latest Q\&A insights in the guide](https://filoznotebook.notion.site/The-Storage-Provider-s-Guide-to-F3-Fast-Finality-109dc41950c180319892cf47eeb1b56d#63e8715ac9374314a730c15da3106529) to get your questions answered.
+Prepare for the [upcoming F3 activation in network version 24](/blog/how-f3-is-transforming-the-filecoin-network/), which will significantly reduce finalization times. Storage Providers, learn what this means for you and how to get ready. Check out the [latest Q\&A insights in the guide](https://filoznotebook.notion.site/The-Storage-Provider-s-Guide-to-F3-Fast-Finality-109dc41950c180319892cf47eeb1b56d#63e8715ac9374314a730c15da3106529) to get your questions answered.
 
 ## 🎉 Events 🎉
 

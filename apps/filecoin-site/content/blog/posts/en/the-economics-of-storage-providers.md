@@ -29,7 +29,7 @@ To understand how this is possible it’s important to understand the economics 
 
 ## FIL Token
 
-Filecoin’s [_island economy_](https://filecoin.io/blog/posts/filecoin-s-island-economy/) consists of the interactions between five different sectors: clients, developers, token holders, ecosystem partners, and most important to us, SPs. All of these transact with each other using the FIL utility token and SPs are no exception. Therefore, all of the economic operations they participate in within the network are denominated in the token. It’s what gives holders the right to use the network.
+Filecoin’s [_island economy_](/blog/filecoin-s-island-economy/) consists of the interactions between five different sectors: clients, developers, token holders, ecosystem partners, and most important to us, SPs. All of these transact with each other using the FIL utility token and SPs are no exception. Therefore, all of the economic operations they participate in within the network are denominated in the token. It’s what gives holders the right to use the network.
 
 ## Filecoin Storage Providers’ P&L
 
@@ -37,7 +37,7 @@ SPs have two main sources of revenue in the Filecoin Network: they earn fees cha
 
 The first is available to all SPs who meet the [hardware requirements](https://docs.filecoin.io/storage-providers/skills/storage#general-hardware-requirements) for participating in the network. These fees are an essential part of the Filecoin economy since they’re determined by each SP and create a market for storage and retrieval that offers competitive opportunities to small and large participants alike.
 
-The second is limited to SPs who can participate in the network as consensus nodes. To do so, they must meet a minimum of 10 TiB in committed storage capacity. This, however, entitles them to verify the next block in the Filecoin Network in exchange for a reward, much like miners who receive a Coinbase transaction in PoW networks. Their chances of receiving this reward are proportional to the amount of committed capacity they’ve contributed to the total [Storage Power](https://filecoin.io/blog/filecoin-guide-to-storage-mining/#storage-power) available in the network.
+The second is limited to SPs who can participate in the network as consensus nodes. To do so, they must meet a minimum of 10 TiB in committed storage capacity. This, however, entitles them to verify the next block in the Filecoin Network in exchange for a reward, much like miners who receive a Coinbase transaction in PoW networks. Their chances of receiving this reward are proportional to the amount of committed capacity they’ve contributed to the total [Storage Power](/blog/filecoin-guide-to-storage-mining/#storage-power) available in the network.
 
 In terms of costs, SPs have many factors to consider: purchasing and maintaining performant hardware setups, optimizing sales and marketing operations, power consumption, as well as other expenses and interest payments on borrowed FIL when applicable. Some of these, such as hardware setups and power consumption, can be negotiated.
 
@@ -71,4 +71,4 @@ Another great resource for potential Storage Providers is the new [SP website](h
 
 ## Further Reading
 
-To learn more about the economics of being a Filecoin SP check out other important resources such as the paper on [Engineering Filecoin’s Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf) and a guide to [Filecoin’s Cryptoeconomic Constructions](https://filecoin.io/blog/posts/filecoin-s-cryptoeconomic-constructions/). Also, be sure to join the community on [Slack](https://filecoin.io/slack) and [Twitter](https://twitter.com/FilecoinSP?s=20&t=Cied9srtVmuumV69dT7NSA).
+To learn more about the economics of being a Filecoin SP check out other important resources such as the paper on [Engineering Filecoin’s Economy](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf) and a guide to [Filecoin’s Cryptoeconomic Constructions](/blog/filecoin-s-cryptoeconomic-constructions/). Also, be sure to join the community on [Slack](https://filecoin.io/slack) and [Twitter](https://twitter.com/FilecoinSP?s=20&t=Cied9srtVmuumV69dT7NSA).

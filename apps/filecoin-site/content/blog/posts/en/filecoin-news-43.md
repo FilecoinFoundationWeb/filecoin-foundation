@@ -39,17 +39,17 @@ In addition to the Filecoin grants, you can explore other Radius learning resour
 
 ## Community
 
-[![](/uploads/provider-mentorship.webp)](https://filecoin.io/blog/posts/new-filecoin-storage-provider-mentorship-grants-fspm-available/)
+[![](/uploads/provider-mentorship.webp)](/blog/new-filecoin-storage-provider-mentorship-grants-fspm-available/)
 
 ### Another Round of Grants for New Storage Providers
 
-Last month, the Filecoin Storage Provider Mentorship Grants Program was announced. The program offered 10 qualified storage providers 10 hours of free consulting to kickstart their Filecoin storage provider operations. The 10 storage provider slots were almost immediately filled, and demand has remained high. More consulting grants are now available for qualified storage providers along three tracks: Orientation, Retainer, and Build. [Learn more about each option and how to apply](https://filecoin.io/blog/posts/new-filecoin-storage-provider-mentorship-grants-fspm-available/).
+Last month, the Filecoin Storage Provider Mentorship Grants Program was announced. The program offered 10 qualified storage providers 10 hours of free consulting to kickstart their Filecoin storage provider operations. The 10 storage provider slots were almost immediately filled, and demand has remained high. More consulting grants are now available for qualified storage providers along three tracks: Orientation, Retainer, and Build. [Learn more about each option and how to apply](/blog/new-filecoin-storage-provider-mentorship-grants-fspm-available/).
 
-[![](/uploads/estuary-update.webp)](https://filecoin.io/blog/posts/estuary-is-a-boon-to-all-filecoin-users/)
+[![](/uploads/estuary-update.webp)](/blog/estuary-is-a-boon-to-all-filecoin-users/)
 
 ### Ecosystem Highlight: Estuary
 
-If you’ve been around the Filecoin community, you’ve probably heard of [Estuary](https://estuary.tech). Estuary is an open source data storage service built on Filecoin and IPFS. Estuary ensures data durability by storing data replicas as many as six times on Filecoin. In this breakdown, learn how Estuary powers much of the data on Filecoin, and helps users around the world more effectively realize the opportunity of decentralized storage. Read ‘[Estuary is a Boon to All Filecoin Users’](https://filecoin.io/blog/posts/estuary-is-a-boon-to-all-filecoin-users/).
+If you’ve been around the Filecoin community, you’ve probably heard of [Estuary](https://estuary.tech). Estuary is an open source data storage service built on Filecoin and IPFS. Estuary ensures data durability by storing data replicas as many as six times on Filecoin. In this breakdown, learn how Estuary powers much of the data on Filecoin, and helps users around the world more effectively realize the opportunity of decentralized storage. Read ‘[Estuary is a Boon to All Filecoin Users’](/blog/estuary-is-a-boon-to-all-filecoin-users/).
 
 ### Gitcoin Grants Round 14
 
@@ -106,7 +106,7 @@ Protocol Labs and the Filecoin Foundation are proud sponsors of the Sustainable 
 
 ### FIL-Singapore Summit
 
-Over a thousand Web3 enthusiasts will be joining members of the Filecoin community for FIL-Singapore Summit, happening from August 16th-19th. The event will be a celebration of all the amazing progress in the ecosystem and a look ahead to the exciting future of the network. You can expect to hear from world-class speakers, join side events and meetups, and participate in challenging hackathons. [Sign up](https://docs.google.com/forms/d/e/1FAIpQLSdtEtC0oAYdGDqw0csPyeIY3NgT1qm0YmZkX_wNY794HpiVUQ/viewform) now to host your own workshop or meetup at the event and read more on the Filecoin [blog](https://filecoin.io/blog/posts/announcing-fil-singapore-summit/).
+Over a thousand Web3 enthusiasts will be joining members of the Filecoin community for FIL-Singapore Summit, happening from August 16th-19th. The event will be a celebration of all the amazing progress in the ecosystem and a look ahead to the exciting future of the network. You can expect to hear from world-class speakers, join side events and meetups, and participate in challenging hackathons. [Sign up](https://docs.google.com/forms/d/e/1FAIpQLSdtEtC0oAYdGDqw0csPyeIY3NgT1qm0YmZkX_wNY794HpiVUQ/viewform) now to host your own workshop or meetup at the event and read more on the Filecoin [blog](/blog/announcing-fil-singapore-summit/).
 
 ## Get Involved
 

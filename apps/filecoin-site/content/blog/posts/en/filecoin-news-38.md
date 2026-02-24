@@ -37,17 +37,17 @@ The Filecoin community is happy to introduce the new dedicated [website](https:/
 
 ## Community
 
-[![](/uploads/a-deep-dive-into-the-storage-provider-ecosystem_hu5c8687c64948c597d44162d7e4a6775d_1678699_2000x0_resize_q90_linear_2.webp)](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/)
+[![](/uploads/a-deep-dive-into-the-storage-provider-ecosystem_hu5c8687c64948c597d44162d7e4a6775d_1678699_2000x0_resize_q90_linear_2.webp)](/blog/a-deep-dive-into-the-storage-provider-ecosystem/)
 
 ### A Deep Dive into the Storage Provider Ecosystem
 
-The Filecoin Network is supported by an expanding ecosystem of Storage Providers who currently provide over 15 EiB in committed capacity. Spreading across the globe, it consists of small and individual setups as well as large and enterprise-focused participants. If you’d like to learn more about this community and all the tools to get you started as a storage provider, be sure to check out an [in-depth exploration](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/) on the Filecoin blog.
+The Filecoin Network is supported by an expanding ecosystem of Storage Providers who currently provide over 15 EiB in committed capacity. Spreading across the globe, it consists of small and individual setups as well as large and enterprise-focused participants. If you’d like to learn more about this community and all the tools to get you started as a storage provider, be sure to check out an [in-depth exploration](/blog/a-deep-dive-into-the-storage-provider-ecosystem/) on the Filecoin blog.
 
-[![](/uploads/filecoin-retrieval-market.webp)](https://filecoin.io/blog/posts/cdns-and-the-filecoin-retrieval-market/)
+[![](/uploads/filecoin-retrieval-market.webp)](/blog/cdns-and-the-filecoin-retrieval-market/)
 
 ### Myel, CDNs, and the Filecoin Retrieval Market
 
-Content Delivery Networks are an essential part of providing internet users with better access to content. However, they have serious limitations in terms of security, costs, and geographical reach. A new generation of CDNs is resorting to Filecoin to provide more efficient and decentralized alternatives to these services. [Read more](https://filecoin.io/blog/posts/cdns-and-the-filecoin-retrieval-market/) on what projects like Myel are doing to allow anyone to easily set up a point-of-presence (POP) for decentralized CDNs.
+Content Delivery Networks are an essential part of providing internet users with better access to content. However, they have serious limitations in terms of security, costs, and geographical reach. A new generation of CDNs is resorting to Filecoin to provide more efficient and decentralized alternatives to these services. [Read more](/blog/cdns-and-the-filecoin-retrieval-market/) on what projects like Myel are doing to allow anyone to easily set up a point-of-presence (POP) for decentralized CDNs.
 
 [![](/uploads/nftport.webp)](https://twitter.com/nftport_xyz/status/1503405455489617929)
 

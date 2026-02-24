@@ -27,7 +27,7 @@ _template: blog_detail_ch
 
 ## FIL Token
 
-Filecoin的[_island economy_](https://filecoin.io/blog/posts/filecoin-s-island-economy/)经济模型包括5种不同领域参与者之间的互动：用户、开发者、token持有者、生态伙伴，以及存储提供者（对我们而言最重要）。这些互动需要使用FIL这种功能型token，存储提供者也不例外。因此，网络里发生的这些经济互动是由这个token计价的。这是赋予持有者使用网络权利的方式。
+Filecoin的[_island economy_](/blog/filecoin-s-island-economy/)经济模型包括5种不同领域参与者之间的互动：用户、开发者、token持有者、生态伙伴，以及存储提供者（对我们而言最重要）。这些互动需要使用FIL这种功能型token，存储提供者也不例外。因此，网络里发生的这些经济互动是由这个token计价的。这是赋予持有者使用网络权利的方式。
 
 ## Filecoin存储提供者的收入与支出
 
@@ -35,7 +35,7 @@ Filecoin的[_island economy_](https://filecoin.io/blog/posts/filecoin-s-island-e
 
 第一种是对所有存储提供者开放的，只要他们满足参与网络所需的[硬件需求](https://docs.filecoin.io/storage-providers/skills/storage#general-hardware-requirements) 。这些费用是Filecoin经济的关键环节，因为它们是由每一个存储提供者决定的，并创造了一个数据存取市场，为大大小小的参与者提供了竞争机会。
 
-第二种是只对成为网络共识节点的存储提供者开放的。要做到这一点，它们必须最少达成10 TiB的投入（committed）存储容量。这一点让他们可以验证Filecoin网络中的下一个区块以获取回报，这跟miner从工作量证明网络里获取Coinbase交易（一种特殊交易类型）以获得报酬很类似。他们获得这种奖励的机会与其投入到网络中可用的总[存储力（Storage Power）](https://filecoin.io/blog/filecoin-guide-to-storage-mining/#storage-power) 是成比例的。
+第二种是只对成为网络共识节点的存储提供者开放的。要做到这一点，它们必须最少达成10 TiB的投入（committed）存储容量。这一点让他们可以验证Filecoin网络中的下一个区块以获取回报，这跟miner从工作量证明网络里获取Coinbase交易（一种特殊交易类型）以获得报酬很类似。他们获得这种奖励的机会与其投入到网络中可用的总[存储力（Storage Power）](/blog/filecoin-guide-to-storage-mining/#storage-power) 是成比例的。
 
 就成本而言，存储提供者要考虑很多要素：购买和维护有竞争力的硬件设备、优化销售和营销活动，用电成本，以及在有需要的时候借入FIL的产生的其他成本和利息。其中一些费用，如硬件设备和用电成本，是可以通过协商调整的。
 
@@ -69,4 +69,4 @@ Filecoin社区致力于让网络及其经济对所有参与者都是开放的。
 
 ## 进一步的阅读材料
 
-要学习更多Filecoin存储提供者的经济模型，可以查看其他重要的资源，如[设计Filecoin经济（Engineering Filecoin’s Economy）论文](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)，以及[Filecoin的加密经济学构造）（Filecoin’s Cryptoeconomic Constructions）](https://filecoin.io/blog/posts/filecoin-s-cryptoeconomic-constructions/)。此外，确保在[Slack](https://filecoin.io/slack)和[Twitter](https://twitter.com/FilecoinSP?s=20&t=Cied9srtVmuumV69dT7NSA)上加入社区。
+要学习更多Filecoin存储提供者的经济模型，可以查看其他重要的资源，如[设计Filecoin经济（Engineering Filecoin’s Economy）论文](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)，以及[Filecoin的加密经济学构造）（Filecoin’s Cryptoeconomic Constructions）](/blog/filecoin-s-cryptoeconomic-constructions/)。此外，确保在[Slack](https://filecoin.io/slack)和[Twitter](https://twitter.com/FilecoinSP?s=20&t=Cied9srtVmuumV69dT7NSA)上加入社区。

@@ -25,7 +25,7 @@ title: Meet The SR2 Slingshot Teams
 _template: blog_detail
 ---
 
-We’re about a week into the Space Race 2 Slingshot competition, and it is off to an exciting start! So far, 370+ participants have made over 125,000 storage deals to store valuable data on the Filecoin network, competing for a potential 500,000 FIL prize pool. If you haven’t registered yet, it’s not too late! Sign up at [slingshot.filecoin.io/register](https://filecoin.io/blog/posts/the-journey-to-filecoin-mainnet-liftoff/).
+We’re about a week into the Space Race 2 Slingshot competition, and it is off to an exciting start! So far, 370+ participants have made over 125,000 storage deals to store valuable data on the Filecoin network, competing for a potential 500,000 FIL prize pool. If you haven’t registered yet, it’s not too late! Sign up at [slingshot.filecoin.io/register](/blog/the-journey-to-filecoin-mainnet-liftoff/).
 
 This week, we talked to four teams to learn more about their work, how they got involved with Slingshot and why they’re building on Filecoin.
 
@@ -93,4 +93,4 @@ I believe that we need an alternative to centralized Docker registries. Relying 
 
 SR2 Slingshot is a community competition that rewards the storage of real, valuable, and usable data on the Filecoin network. We’re especially inspired by the projects that are storing large, culturally or scientifically valuable datasets on Filecoin. And the more data you onboard, the more FIL you earn!
 
-The competition is young, and it’s anyone’s game! Register today at [slingshot.filecoin.io/register](https://filecoin.io/blog/posts/the-journey-to-filecoin-mainnet-liftoff/).
+The competition is young, and it’s anyone’s game! Register today at [slingshot.filecoin.io/register](/blog/the-journey-to-filecoin-mainnet-liftoff/).

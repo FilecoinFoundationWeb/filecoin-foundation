@@ -27,7 +27,7 @@ Filecoin Unleashed is the ultimate event to discover how Filecoin is transformin
 
 ### FVM Builder Cohort Launches to Mainnet
 
-Leading up to FVM launch, 60+ projects in the Filecoin ecosystem were already building with FVM on its Hyperspace testnet as a part of the FVM Mainnet Pioneers cohort, a 6-week program that provided technical, product, and business mentorship and resources to selected teams. The cohort recently graduated with a showcase of the projects and a successful pitch day demonstrating the numerous opportunities that the FVM unlocks, such as liquid leasing, dataDAOs, decentralized computation frameworks, and more. Learn more about each of these teams and what the community is building with FVM in [this blog post](https://filecoin.io/blog/posts/filecoin-virtual-machine-fvm-builder-cohort-launches-to-mainnet/). And lastly, congratulations to the graduated teams! 
+Leading up to FVM launch, 60+ projects in the Filecoin ecosystem were already building with FVM on its Hyperspace testnet as a part of the FVM Mainnet Pioneers cohort, a 6-week program that provided technical, product, and business mentorship and resources to selected teams. The cohort recently graduated with a showcase of the projects and a successful pitch day demonstrating the numerous opportunities that the FVM unlocks, such as liquid leasing, dataDAOs, decentralized computation frameworks, and more. Learn more about each of these teams and what the community is building with FVM in [this blog post](/blog/filecoin-virtual-machine-fvm-builder-cohort-launches-to-mainnet/). And lastly, congratulations to the graduated teams! 
 
 ## Community 
 

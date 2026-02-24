@@ -28,7 +28,7 @@ _template: blog_detail
 
 ### Fenbushi Ecosystem Fund
 
-In collaboration with Protocol Labs, Fenbushi Capital has announced a $15+ million USD investment fund. The mission of the fund is to drive the growth of the IPFS and Filecoin ecosystems. Fenbushi is planning to raise $15-20 million USD and has committed to raising and deploying all capital in FIL rather than in stablecoins or other crypto assets. Fenbushi has committed $1 million USD to the fund alongside other limited partners. Fenbushi anticipates three primary sources for locating target investment deals; the Slingshot Program, LongHash Filecoin Frontier Accelerator, and the Chinese community. For more information on the fund, please see this [post](https://filecoin.io/blog/posts/the-fenbushi-ecosystem-fund-for-filecoin-development/).
+In collaboration with Protocol Labs, Fenbushi Capital has announced a $15+ million USD investment fund. The mission of the fund is to drive the growth of the IPFS and Filecoin ecosystems. Fenbushi is planning to raise $15-20 million USD and has committed to raising and deploying all capital in FIL rather than in stablecoins or other crypto assets. Fenbushi has committed $1 million USD to the fund alongside other limited partners. Fenbushi anticipates three primary sources for locating target investment deals; the Slingshot Program, LongHash Filecoin Frontier Accelerator, and the Chinese community. For more information on the fund, please see this [post](/blog/the-fenbushi-ecosystem-fund-for-filecoin-development/).
 
 ### An Update from Textile
 
@@ -38,7 +38,7 @@ There are a whole lot of Filecoin things going on at Textile! Things you might h
 
 ### The Starling Framework
 
-The [Starling Framework for Data Integrity](https://filecoin.io/blog/posts/meet-filecoin-s-collaborators-jonathan-dotan-starling-framework-for-data-integrity/) lets organizations leverage the power of cryptography and distributed systems to authenticate digital video and images. Starling has three modules: capture, storage, and verify. And the IPFS/Filecoin framework is embedded throughout all three.
+The [Starling Framework for Data Integrity](/blog/meet-filecoin-s-collaborators-jonathan-dotan-starling-framework-for-data-integrity/) lets organizations leverage the power of cryptography and distributed systems to authenticate digital video and images. Starling has three modules: capture, storage, and verify. And the IPFS/Filecoin framework is embedded throughout all three.
 
 Spearheaded by the [USC Shoah Foundation](https://sfi.usc.edu/) and Stanford’s Department of Electrical Engineering. The project’s first undertaking is to permanently and immutably catalog the atrocities of genocides, including the Holocaust, the Armenian Genocide, and the Rohingya crisis, by building a tamper-proof ledger of survivor testimonies.
 
@@ -72,7 +72,7 @@ More updates from the Crypto Compute Lab and CryptoNet teams can be found in the
 
 As a decentralized network, Filecoin aims to have multiple independent protocol implementations to ensure the reliability and security of the network. [Venus](https://github.com/filecoin-project/venus) is one of [four protocol implementations](https://docs.filecoin.io/get-started/#filecoin-implementations) currently in development on the Filecoin Network, building a more resilient ecosystem.
 
-Venus, formerly known as go-filecoin, was the first Filecoin implementation in Golang - originally initiated and developed by @anorth, @zenground0, @frrist, @laser, @dignifiedquire, @alexcruikshank, @whyrusleeping & others. But in [August 2020](https://filecoin.io/blog/posts/this-is-a-sample-post/), IPFSForce, a long-time member of the Filecoin community, took over stewardship of the WIP implementation and resumed development in October - renaming it ‘Venus’.
+Venus, formerly known as go-filecoin, was the first Filecoin implementation in Golang - originally initiated and developed by @anorth, @zenground0, @frrist, @laser, @dignifiedquire, @alexcruikshank, @whyrusleeping & others. But in [August 2020](/blog/this-is-a-sample-post/), IPFSForce, a long-time member of the Filecoin community, took over stewardship of the WIP implementation and resumed development in October - renaming it ‘Venus’.
 
 We are excited to announce that at epoch [455673](https://filscan.io/#/tipset/chain?height=455673) (Jan 30th, 2021, 03:16 UTC), miner [f0128788](https://filscan.io/#/tipset/address-detail?address=f0128788) running [Venus v0.9.0](https://github.com/filecoin-project/venus/releases/tag/v0.9.0), mined [its very first block](https://filscan.io/#/tipset/chain?height=455673) on mainnet! This milestone marks a new era of the Filecoin main network with miners running multiple implementations together to add additional security and decentralization to the network.
 
@@ -82,13 +82,13 @@ Want to get involved? We encourage all open-source contributors to help build [V
 
 In order to maximize the amount of useful storage that Filecoin can and will support, the Network innovatively introduced a layer of social trust through Filecoin Plus. Clients use a novel resource, DataCap, to make deals with miners who are greatly incentivized to store their data as it increases their share of block rewards over time.
 
-Filecoin Plus is a pragmatic solution to the technically challenging problem of verifying that a particular set of data is useful in a permissionless, incentive-compatible, pseudonymous network, and presents a path for incentivizing using the Network in productive ways. Learn more about the core concepts, recent progress, and how to get involved in the [Filecoin Plus blog post](https://filecoin.io/blog/posts/filecoin-plus-aligning-participants-with-useful-storage/).
+Filecoin Plus is a pragmatic solution to the technically challenging problem of verifying that a particular set of data is useful in a permissionless, incentive-compatible, pseudonymous network, and presents a path for incentivizing using the Network in productive ways. Learn more about the core concepts, recent progress, and how to get involved in the [Filecoin Plus blog post](/blog/filecoin-plus-aligning-participants-with-useful-storage/).
 
 ### Filecoin MinerX Fellowship Program
 
 The Filecoin MinerX Fellowship aims to engage a set of geographically diverse, small-to-medium sized Filecoin miners to improve Filecoin’s experience and productivity. Specifically, the goals of this program are to build a solid foundation of globally distributed, reliable, long-term storage options to accelerate the development of tools and services in the ecosystem, while identifying areas to improve the experience of being a miner for the rest of the Filecoin community.
 
-MinerX Fellows will spend the duration of the program accepting storage and retrieval deals, supporting various development efforts, identifying areas of improvement for the network, engaging with the community, and growing their network footprint. If you are interested in learning more about the MinerX Program, please read the [blog post](https://filecoin.io/blog/posts/filecoin-minerx-fellowship-program/).
+MinerX Fellows will spend the duration of the program accepting storage and retrieval deals, supporting various development efforts, identifying areas of improvement for the network, engaging with the community, and growing their network footprint. If you are interested in learning more about the MinerX Program, please read the [blog post](/blog/filecoin-minerx-fellowship-program/).
 
 ### Understanding Filecoin’s Circulating Supply
 

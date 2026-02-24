@@ -34,7 +34,7 @@ This is just the beginning. ProPGF is designed to be a recurring, long-term init
 
 ## A Community Effort
 
-This milestone wouldn’t be possible without the time, care, and commitment of our [ProPGF selection committee](https://filecoin.io/blog/posts/announcing-the-propgf-selection-committee-members/), who conducted thoughtful reviews and rigorous due diligence to ensure that every dollar supports projects with meaningful impact. A heartfelt thank you to the committee, and to all the teams who applied. Your contributions continue to drive the Filecoin ecosystem forward.
+This milestone wouldn’t be possible without the time, care, and commitment of our [ProPGF selection committee](/blog/announcing-the-propgf-selection-committee-members/), who conducted thoughtful reviews and rigorous due diligence to ensure that every dollar supports projects with meaningful impact. A heartfelt thank you to the committee, and to all the teams who applied. Your contributions continue to drive the Filecoin ecosystem forward.
 
 ## Meet the Funded Teams
 

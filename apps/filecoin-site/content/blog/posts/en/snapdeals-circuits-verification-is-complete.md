@@ -22,7 +22,7 @@ title: SnapDeals Circuits Verification is Complete
 _template: blog_detail
 ---
 
-In January, the Filecoin community [completed](https://filecoin.io/blog/posts/trusted-setup-complete-for-network-v15-upgrade/) the trusted setup ceremony that enabled an important upgrade in the network. We generated secure parameters for four new circuits to be used on mainnet. As many of you know, these new circuits were built to enable [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&t=1s) in the Filecoin Network.
+In January, the Filecoin community [completed](/blog/trusted-setup-complete-for-network-v15-upgrade/) the trusted setup ceremony that enabled an important upgrade in the network. We generated secure parameters for four new circuits to be used on mainnet. As many of you know, these new circuits were built to enable [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&t=1s) in the Filecoin Network.
 
 We’re happy to announce that the SnapDeals circuits verification process is now complete. Their outputs can be trusted if the transcript is entirely verifiable, and you would need to trust that **_at least_** one of the participants did not leak their contributed randomness in any way.
 

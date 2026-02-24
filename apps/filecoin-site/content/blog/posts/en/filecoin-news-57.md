@@ -33,17 +33,17 @@ The [Space Warp](https://spacewarp.fvm.dev/) program was launched to inspire dev
 
 ## Community
 
-[![](/uploads/hacking_the_filecoin_ethereum_virtual_machine_-fevm-1.webp)](https://filecoin.io/blog/posts/hacking-the-filecoin-ethereum-virtual-machine-fevm/)
+[![](/uploads/hacking_the_filecoin_ethereum_virtual_machine_-fevm-1.webp)](/blog/hacking-the-filecoin-ethereum-virtual-machine-fevm/)
 
 ### Hacking the Filecoin Ethereum Virtual Machine (FEVM)
 
-The [first-ever Hack FEVM](https://ethglobal.medium.com/hack-fevm-2022-4d31781408b5) welcomed over 400 hackers to build and showcase 117 projects with over $50,000 awarded through various prizes! Throughout the hackathon, 11 talks introduced the Filecoin Virtual Machine and a variety of resources for developers. These included tutorials with familiar EVM developer tools, introduction to FEVM-specific tools, and a brainstorm on FEVM use cases. Get up to speed on the [Filecoin blog](https://filecoin.io/blog/posts/hacking-the-filecoin-ethereum-virtual-machine-fevm/) or watch this [YouTube playlist](https://www.youtube.com/watch?v=bWbZffRhp6Q&list=PLXzKMXK2aHh5SiBAeA6FGnhc6Sw4gRDlI) for full-length recordings of the presentations.
+The [first-ever Hack FEVM](https://ethglobal.medium.com/hack-fevm-2022-4d31781408b5) welcomed over 400 hackers to build and showcase 117 projects with over $50,000 awarded through various prizes! Throughout the hackathon, 11 talks introduced the Filecoin Virtual Machine and a variety of resources for developers. These included tutorials with familiar EVM developer tools, introduction to FEVM-specific tools, and a brainstorm on FEVM use cases. Get up to speed on the [Filecoin blog](/blog/hacking-the-filecoin-ethereum-virtual-machine-fevm/) or watch this [YouTube playlist](https://www.youtube.com/watch?v=bWbZffRhp6Q&list=PLXzKMXK2aHh5SiBAeA6FGnhc6Sw4gRDlI) for full-length recordings of the presentations.
 
-[![](/uploads/image-3-1.webp)](https://filecoin.io/blog/posts/announcing-the-hack-fevm-finalists/)
+[![](/uploads/image-3-1.webp)](/blog/announcing-the-hack-fevm-finalists/)
 
 ### Get to Know the FEVM Hackathon Finalists
 
-The FEVM hackathon introduced FEVM to the wider Ethereum ecosystem, with close mentorship and resources that supported hackers and their projects. Ethereum developers got to deploy EVM out-of-the-box to FVM, giving their smart contracts the ability to interact directly with placeholder storage deals on the test network during the hackathon to simulate the workflow, and eventually with deals on the Filecoin storage network. We’re excited to announce the ETHGlobal, Filecoin, and Pool Prize finalists! Find out more about them on the [Filecoin blog](https://filecoin.io/blog/posts/announcing-the-hack-fevm-finalists/).
+The FEVM hackathon introduced FEVM to the wider Ethereum ecosystem, with close mentorship and resources that supported hackers and their projects. Ethereum developers got to deploy EVM out-of-the-box to FVM, giving their smart contracts the ability to interact directly with placeholder storage deals on the test network during the hackathon to simulate the workflow, and eventually with deals on the Filecoin storage network. We’re excited to announce the ETHGlobal, Filecoin, and Pool Prize finalists! Find out more about them on the [Filecoin blog](/blog/announcing-the-hack-fevm-finalists/).
 
 [![](/uploads/0_s_z88asoxrvemsy6.webp)](https://medium.com/tldrfilecoin/business-models-on-the-fvm-23cd71fdd3f1)
 
@@ -67,7 +67,7 @@ ESPA is a program built entirely around the use of Filecoin’s Web3 infrastruct
 
 ### Storage Provider Public Meeting Q4
 
-The Storage Provider ecosystem made a great deal of progress during the last quarter of the year. SPs met to review their achievements in massive scale data onboarding, safeguarding humanity’s data, and enabling web-scale apps with compute-to-data. Watch a full video of the Storage Provider Public Meeting Q4 on [YouTube](https://www.youtube.com/watch?v=ANmrA4KyNvc) to catch up on projects like the [Decentralized Storage Alliance](https://filecoin.io/blog/posts/introducing-the-decentralized-storage-alliance/) and [DCENT](https://dcent.nl/), as well as Filecoin Lending Programs for SPs.
+The Storage Provider ecosystem made a great deal of progress during the last quarter of the year. SPs met to review their achievements in massive scale data onboarding, safeguarding humanity’s data, and enabling web-scale apps with compute-to-data. Watch a full video of the Storage Provider Public Meeting Q4 on [YouTube](https://www.youtube.com/watch?v=ANmrA4KyNvc) to catch up on projects like the [Decentralized Storage Alliance](/blog/introducing-the-decentralized-storage-alliance/) and [DCENT](https://dcent.nl/), as well as Filecoin Lending Programs for SPs.
 
 [![](/uploads/filisbon.webp)](https://www.youtube.com/watch?v=tRj94fJednY&list=PLp3zrT1ewY0kWhcrnEWz1r3r2k97TjPz2&index=9)
 

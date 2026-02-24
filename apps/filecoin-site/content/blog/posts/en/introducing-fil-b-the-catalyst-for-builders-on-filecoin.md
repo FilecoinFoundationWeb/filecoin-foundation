@@ -22,7 +22,7 @@ We are dedicated to helping builders be successful in building on-chain solution
 
 Filecoin is one of the largest decentralized storage networks and [foundational DePin infrastructure layers](https://www.fil.org/blog/filecoin-as-a-depin-prototype), with massive potential to offer alternatives to web2 cloud storage providers and revolutionize the web as we know it.
 
-In 2023, Filecoin [launched its virtual machine](https://medium.com/@filbuilders/filecoin.io/blog/posts/fvm-is-live-on-mainnet/) and enabled programmability on the Filecoin blockchain. This kicked off a whole new wave of builders and projects in the Filecoin ecosystem and unlocked [new opportunities](https://filecointldr.io/article/state-of-filecoin-2024) for Filecoin in DeFi, DePin, decentralized compute and more.
+In 2023, Filecoin [launched its virtual machine](/blog/fvm-is-live-on-mainnet) and enabled programmability on the Filecoin blockchain. This kicked off a whole new wave of builders and projects in the Filecoin ecosystem and unlocked [new opportunities](https://filecointldr.io/article/state-of-filecoin-2024) for Filecoin in DeFi, DePin, decentralized compute and more.
 
 The Filecoin builder community is rapidly growing, which means its developer experience and developer community must evolve for builder success. As Filecoin builders ourselves, we at FIL-B understand how great DX can make all the difference.
 

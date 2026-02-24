@@ -40,14 +40,14 @@ _(diagram credit: Juan Benet)_
 
 At the heart of this network sit two complementary pillars:
 
-- [ProPGF](https://filecoin.io/blog/posts/introducing-fil-propgf-a-new-era-in-community-led-public-goods-funding-for-the-filecoin-ecosystem/) – Proactive Public Goods Funding: A curated, selection committee-driven process to allocate resources to projects with a clear, strategic impact on the ecosystem’s priorities.
+- [ProPGF](/blog/introducing-fil-propgf-a-new-era-in-community-led-public-goods-funding-for-the-filecoin-ecosystem/) – Proactive Public Goods Funding: A curated, selection committee-driven process to allocate resources to projects with a clear, strategic impact on the ecosystem’s priorities.
 - [RetroPGF](https://www.fil-retropgf.io/) – Retroactive Public Goods Funding: Modeled after Optimism’s RetroPGF, this rewards work after it has proven its value -“fund in recognition rather than anticipation.” In this model, contributions that have already created impact are recognized and rewarded by a broad group of community badgeholders.
 
 Both pillars are essential: **ProPGF** ensures we can target and seed important work early, while **RetroPGF** ensures quantifiable impact and value are recognized, creating a reinforcing cycle for contributors.
 
 ## What We’ve Achieved So Far
 
-- **ProPGF Batch 1 (May 2025)**: $3.6M awarded to 14 ecosystem builders.[Read more here.](https://filecoin.io/blog/posts/filecoin-propgf-batch-1-36m-awarded-to-ecosystem-builders/)
+- **ProPGF Batch 1 (May 2025)**: $3.6M awarded to 14 ecosystem builders.[Read more here.](/blog/filecoin-propgf-batch-1-36m-awarded-to-ecosystem-builders/)
 - **RetroPGF**: Two completed rounds have already allocated 500k FIL to 100+ projects with funding based on demonstrated ecosystem impact. Read more here on [round 1](https://fil-retropgf.notion.site/FIL-RetroPGF-1-Results-9ad30232b643460598353489d79b9628) & [round 2](https://fil-retropgf.notion.site/Round-2-Results-160d0d646da180b09e0ee8baa3c1dfb9).
 
 What’s working today:

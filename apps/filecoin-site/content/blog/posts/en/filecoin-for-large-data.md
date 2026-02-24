@@ -24,7 +24,7 @@ _template: blog_detail
 
 The Filecoin Network has reached 15 exbibytes (EiB) of data storage capabilities. Today, as many as [seven hundred organizations](https://storage.filecoin.io/) use it for data storage and retrieval. As more and more individuals and decentralized applications onboard themselves to decentralized storage, Filecoin is also situated to welcome large traditional players into Web3.
 
-The network is uniquely built to accept, store, secure, and make available large datasets coming from enterprise-scale clients. Moreover, the Filecoin ecosystem has recently announced [Project Gravity](https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/), a sales referral program to incentivize these clients to bring their large datasets to Filecoin. **Protocol Labs is excited to announce Project Gravity II to continue the sales referral program and incentivize data storage.**
+The network is uniquely built to accept, store, secure, and make available large datasets coming from enterprise-scale clients. Moreover, the Filecoin ecosystem has recently announced [Project Gravity](/blog/filecoin-project-gravity-a-sales-referral-program/), a sales referral program to incentivize these clients to bring their large datasets to Filecoin. **Protocol Labs is excited to announce Project Gravity II to continue the sales referral program and incentivize data storage.**
 
 ## Coming Off the Cloud
 
@@ -50,7 +50,7 @@ Many organizations can experience these benefits from decentralized storage. Tha
 
 With more than 3,500 storage providers offering their services on the network, there is a growing opportunity for large datasets on Filecoin. This program was developed to ensure that owners of these large datasets have additional incentives to explore the network as an alternative option for storage.
 
-The first Project Gravity program started in September 2021, and the Project Gravity II is now open for applications until April 1st, 2022. To find out more about program details and requirements [visit our original announcement post](https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/). A brief summary, however, is below!
+The first Project Gravity program started in September 2021, and the Project Gravity II is now open for applications until April 1st, 2022. To find out more about program details and requirements [visit our original announcement post](/blog/filecoin-project-gravity-a-sales-referral-program/). A brief summary, however, is below!
 
 ## Specific Types of Datasets
 

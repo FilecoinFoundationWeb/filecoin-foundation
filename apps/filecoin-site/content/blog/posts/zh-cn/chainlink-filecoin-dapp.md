@@ -30,7 +30,7 @@ _template: blog_detail_ch
 
 通过结合Filecoin和Chainlink，开发者得以构建端到端的去中心化应用，并让应用拥有低价格的不可变数据存储能力，并能与外部资源有通用且安全的连接。
 
-这次资助计划的推出紧跟着Filecoin和Chainlink社区的几项其他联合行动。例如，Chainlink和Filecoin正在打造[Chainlink外部适配器](https://filecoin.io/blog/posts/filecoin-and-chainlink-integration/)，用于两个项目之间的双向通讯。另外，Chainlink Labs团队在Filecoin Launchpad加速营中担任第二批项目的顾问，帮助加速营参与者使用预言机扩展应用功能。
+这次资助计划的推出紧跟着Filecoin和Chainlink社区的几项其他联合行动。例如，Chainlink和Filecoin正在打造[Chainlink外部适配器](/blog/filecoin-and-chainlink-integration/)，用于两个项目之间的双向通讯。另外，Chainlink Labs团队在Filecoin Launchpad加速营中担任第二批项目的顾问，帮助加速营参与者使用预言机扩展应用功能。
 
 Filecoin还赞助了参与者众多的2021年春季Chainlink黑客松，数个同时使用Filecoin和Chainlink的项目进入Filecoin Launchpad加速营，如 Tamago、Nifty Royale、[CryptOrchids](https://cryptorchids.io/)。
 

@@ -40,7 +40,7 @@ Are you a part of the Filecoin Plus? Get up to speed with the latest discussion 
 
 ### IPC Subnet support comes to Filecoin Spacenet
 
-[Interplanetary Consensus (IPC)](https://ipc.space/) went live on Spacenet on April 20th, making it possible for builders and users to create FVM-capable, interoperable subnets with fast finality and high throughput. IPC is part of the community’s strategy for providing the network capacity to cope with the influx of FVM applications, as well as enabling use cases that require performance in excess of what the Filecoin root chain can support. [Read the launch blogpost](https://filecoin.io/blog/posts/ipc-subnet-support-comes-to-filecoin-spacenet/) for additional pointers and to try out IPC on its road to mainnet deployment later this year.
+[Interplanetary Consensus (IPC)](https://ipc.space/) went live on Spacenet on April 20th, making it possible for builders and users to create FVM-capable, interoperable subnets with fast finality and high throughput. IPC is part of the community’s strategy for providing the network capacity to cope with the influx of FVM applications, as well as enabling use cases that require performance in excess of what the Filecoin root chain can support. [Read the launch blogpost](/blog/ipc-subnet-support-comes-to-filecoin-spacenet/) for additional pointers and to try out IPC on its road to mainnet deployment later this year.
 
 ### Thetanuts Filecoin Covered Call Vaults
 

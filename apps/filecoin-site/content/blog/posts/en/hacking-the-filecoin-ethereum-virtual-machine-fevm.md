@@ -24,7 +24,7 @@ title: Hacking the Filecoin Ethereum Virtual Machine (FEVM)
 _template: blog_detail
 ---
 
-Hack FEVM introduced the Ethereum-compatible layer of the Filecoin Virtual Machine to the ETH ecosystem, welcoming over [400 hackers and 117 project submissions](https://filecoin.io/blog/posts/announcing-the-hack-fevm-finalists/). Ethereum developers got to deploy EVM out-of-the-box to FVM, giving their smart contracts the ability to interact directly with placeholder storage deals on the test network during the hackathon to simulate the workflow, and eventually with deals on the Filecoin storage network.
+Hack FEVM introduced the Ethereum-compatible layer of the Filecoin Virtual Machine to the ETH ecosystem, welcoming over [400 hackers and 117 project submissions](/blog/announcing-the-hack-fevm-finalists/). Ethereum developers got to deploy EVM out-of-the-box to FVM, giving their smart contracts the ability to interact directly with placeholder storage deals on the test network during the hackathon to simulate the workflow, and eventually with deals on the Filecoin storage network.
 
 Throughout the hackathon, 11 talks introduced the [Filecoin Virtual Machine and a variety of resources](https://www.youtube.com/watch?v=bWbZffRhp6Q&list=PLXzKMXK2aHh5SiBAeA6FGnhc6Sw4gRDlI) for developers. These included tutorials with familiar EVM developer tools, introduction to FEVM-specific tools, and a brainstorm on FEVM use cases.
 

@@ -29,7 +29,7 @@ title: Filecoin News 49
 
 ### Join the FEVM Early Builders Program
 
-The FVM was recently [introduced](https://filecoin.io/blog/posts/filecoin-v16-network-upgrade-skyr/) to enable users to deploy their own smart contracts and unlock the ability to perform on-chain computation over state data. The next major milestone will be the release of a fully EVM-compatible Filecoin Virtual Machine (FEVM). The community is looking for skilled Solidity developers that want to deploy some of the first use cases and smart contracts on the Filecoin network, to be part of our FEVM Early Builders Program. Stay tuned and find out more about FVM on [Twitter](https://twitter.com/Filecoin/status/1527731630156177410?s=20&t=DEFL2Vnt9U8bNzn3w-5Ptw), watch the YouTube [playlist](https://www.youtube.com/playlist?list=PL_0VrY55uV18DBdFIkN0jdBMF8nadVxWQ), or join the dedicated Slack [channel](https://filecoinproject.slack.com/) #fvm
+The FVM was recently [introduced](/blog/filecoin-v16-network-upgrade-skyr/) to enable users to deploy their own smart contracts and unlock the ability to perform on-chain computation over state data. The next major milestone will be the release of a fully EVM-compatible Filecoin Virtual Machine (FEVM). The community is looking for skilled Solidity developers that want to deploy some of the first use cases and smart contracts on the Filecoin network, to be part of our FEVM Early Builders Program. Stay tuned and find out more about FVM on [Twitter](https://twitter.com/Filecoin/status/1527731630156177410?s=20&t=DEFL2Vnt9U8bNzn3w-5Ptw), watch the YouTube [playlist](https://www.youtube.com/playlist?list=PL_0VrY55uV18DBdFIkN0jdBMF8nadVxWQ), or join the dedicated Slack [channel](https://filecoinproject.slack.com/) #fvm
 
 ## Community
 
@@ -39,11 +39,11 @@ The FVM was recently [introduced](https://filecoin.io/blog/posts/filecoin-v16-ne
 
 Support the [Filecoin Green](https://green.filecoin.io/) community by [voting](https://panelpicker.sxsw.com/vote/128291) for Alan Ransil’s talk “Renewable NFTs: Verifiable, Opaque, and Granular” to be part of SXSW 2023. He’ll be sharing all the ways in which NFTs can be a tool to measure and encourage the use of renewable energy sources across the space, from verifiability to enabling more granular approaches in the reduction of carbon emissions. The voting process is still open on the [SXSW website](https://panelpicker.sxsw.com/vote/128291).
 
-[![](/uploads/espa-bootcamp.webp)](https://filecoin.io/blog/posts/espa-bootcamp-innovation-in-storage/)
+[![](/uploads/espa-bootcamp.webp)](/blog/espa-bootcamp-innovation-in-storage/)
 
 ### ESPA Bootcamp: Innovation in Storage
 
-Storage technology has evolved rapidly over the past 30 years at a rate that even industry veterans did not expect. At the ESPA Bootcamp, Seagate’s Lance Blumberg presented the EXOS Corvault and E 4U106 as ideal solutions for SPs looking for cost-effective building blocks for their operations. The 18TB/20TB HDDs feature Filecoin-specific optimizations such as performance maximization, easy scalability, simple setup, and no software vendor lock-in. Read the recap of his presentation on the [Filecoin blog](https://filecoin.io/blog/posts/espa-bootcamp-innovation-in-storage/).
+Storage technology has evolved rapidly over the past 30 years at a rate that even industry veterans did not expect. At the ESPA Bootcamp, Seagate’s Lance Blumberg presented the EXOS Corvault and E 4U106 as ideal solutions for SPs looking for cost-effective building blocks for their operations. The 18TB/20TB HDDs feature Filecoin-specific optimizations such as performance maximization, easy scalability, simple setup, and no software vendor lock-in. Read the recap of his presentation on the [Filecoin blog](/blog/espa-bootcamp-innovation-in-storage/).
 
 [![](/uploads/tokens-blockchain.webp)](https://cointelegraph.com/news/nonfungible-tokens-don-t-live-on-the-blockchain-experts-say)
 
@@ -57,7 +57,7 @@ Jonathan Victor addressed the common misconception that off-chain storage means 
 
 ### Lotus v1.17.x Releases Come with Proofs v12
 
-[Proofs v12](https://github.com/filecoin-project/rust-fil-proofs/tree/filecoin-proofs-v12.0.0) has been released with many refactors and testing improvements built on top of the forward-ported [SnarkPack v2 update](https://filecoin.io/blog/posts/snarkpack-v2-a-new-version-of-filecoin-s-proof-aggregator/). Also, the multicore SDR improvements have been [included](https://github.com/filecoin-project/rust-fil-proofs/pull/1588) to better utilize cores across various architectures. Take a look at the [changelog](https://github.com/filecoin-project/rust-fil-proofs/blob/master/CHANGELOG.md#1200---2022-08-04) for everything that's new in this latest release. Let us know how your performance improves on the Filecoin community [Slack](https://filecoinproject.slack.com/)!
+[Proofs v12](https://github.com/filecoin-project/rust-fil-proofs/tree/filecoin-proofs-v12.0.0) has been released with many refactors and testing improvements built on top of the forward-ported [SnarkPack v2 update](/blog/snarkpack-v2-a-new-version-of-filecoin-s-proof-aggregator/). Also, the multicore SDR improvements have been [included](https://github.com/filecoin-project/rust-fil-proofs/pull/1588) to better utilize cores across various architectures. Take a look at the [changelog](https://github.com/filecoin-project/rust-fil-proofs/blob/master/CHANGELOG.md#1200---2022-08-04) for everything that's new in this latest release. Let us know how your performance improves on the Filecoin community [Slack](https://filecoinproject.slack.com/)!
 
 ## Events
 

@@ -46,12 +46,12 @@ As the need for storage continues to grow and enterprises warm up to the advanta
 - **Preserving humanity’s most important information.** Filecoin’s capability for persistent storage gives providers an opportunity to participate in a meaningful service. The network preserves information for institutions like the Shoah Foundation, Wikipedia, and the Internet Archive.
 - **Becoming a part of the Web3 wave.** The rise of Web3 applications and the adoption of new datasets in the form of NFTs and metaverse assets is creating markets for specific forms of data storage. These needs are met exclusively by decentralized services like Filecoin and are already creating a path-dependency.
 - **Participating in an open network.** The Filecoin Network is designed to be permissionless, with no barriers to entry. Any participant who meets the minimum [hardware requirements](https://docs.filecoin.io/storage-providers/skills/storage#general-hardware-requirements) can be an active contributor and benefit from its economy.
-- **Receiving incentives for bootstrapping.** The community supports new participants with different programs. Some of these include [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&t=1s), [Filecoin+](https://www.youtube.com/watch?v=-kxNpRiEd_c) and the [Filecoin MinerX Fellowship](https://filecoin.io/blog/posts/filecoin-minerx-fellowship-program/).
+- **Receiving incentives for bootstrapping.** The community supports new participants with different programs. Some of these include [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&t=1s), [Filecoin+](https://www.youtube.com/watch?v=-kxNpRiEd_c) and the [Filecoin MinerX Fellowship](/blog/filecoin-minerx-fellowship-program/).
 - **Having greater control over operations.** Storage Providers and clients alike have better ways to take charge of their datasets on the Filecoin Network. This ranges from having control over how and where information is stored to how it’s used and monetized.
 - **Leveraging opportunities for innovation.** As a fundamentally new technology, decentralized storage still has a lot of room for experimentation and growth. Storage providers have the chance to explore new cost structures and other differentiators.
 - **Earning passive income.** There are multiple strategies for ROIs when becoming a Storage Provider on the Filecoin Network. Some of these include ways to earn income with your own datasets as [explained](https://youtu.be/T-TgPILQD3c?t=736) by Stefaan Vervaet at ESPA’s Filecoin Storage Provider Bootcamp.
 
-On top of these advantages is the fact that Filecoin is expanding beyond storage use cases. Developments like the [Filecoin Virtual Machine](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) introduce smart contract capabilities to the network. As the network evolves, Storage Providers will continue to be the bedrock on which it’s built.
+On top of these advantages is the fact that Filecoin is expanding beyond storage use cases. Developments like the [Filecoin Virtual Machine](/blog/introducing-the-filecoin-virtual-machine/) introduce smart contract capabilities to the network. As the network evolves, Storage Providers will continue to be the bedrock on which it’s built.
 
 ## How to Become a Storage Provider
 
@@ -64,9 +64,9 @@ If you’re interested in becoming a Filecoin Storage Provider, learn more by ex
 - A [playlist](https://youtube.com/playlist?list=PL_0VrY55uV1_Z83vRQq5DsSI20X1YWO4q) dedicated to Filecoin Storage Providers
 - ProtoSchool's Verifying Storage on Filecoin [course](https://proto.school/verifying-storage-on-filecoin)
 - Guides:
-  - [A Guide to Filecoin Storage Mining](https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/)
-  - [A Deep Dive into the Storage Provider Ecosystem](https://filecoin.io/blog/posts/a-deep-dive-into-the-storage-provider-ecosystem/)
-  - [Filecoin's Island Economy](https://filecoin.io/blog/posts/filecoin-s-island-economy/)
+  - [A Guide to Filecoin Storage Mining](/blog/a-guide-to-filecoin-storage-mining/)
+  - [A Deep Dive into the Storage Provider Ecosystem](/blog/a-deep-dive-into-the-storage-provider-ecosystem/)
+  - [Filecoin's Island Economy](/blog/filecoin-s-island-economy/)
 
 Be sure to also get in touch with the community:
 

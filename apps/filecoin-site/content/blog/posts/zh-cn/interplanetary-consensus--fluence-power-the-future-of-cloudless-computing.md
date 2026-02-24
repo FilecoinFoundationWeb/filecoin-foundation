@@ -60,7 +60,7 @@ Fluence的IPC子网作为L1锚定在Filecoin之上。随着时间推移，这将
 
 Fluence联合创始人Evgeny Ponomarev表示：“我们喜欢IPC，是因为它能让我们实现拥有一个由母链安全保障的高性能、快速区块、低费用的区块链并具有完全可定制性的这一目标。所有这些都接近Filecoin最大的去中心化数据湖，因此我们的用户可以立即在其之上运行计算！”
 
-星际共识(IPC)、Protocol Labs和Filecoin创始人Juan Benet表示：“星际共识是解锁[Filecoin总体规划](https://filecoin.io/blog/posts/the-filecoin-masterplan/)第三部分的关键一步：创建一系列去中心化服务，对Filecoin网络上存储的大量有价值的数据进行操作；其中每个服务都是Filecoin上的独立且自定义的L2+网络，IPC框架将它们无缝互连。Fluence是率先采用IPC来实现这一愿景的先驱！世界需要更好的计算基础设施，通过可验证性来保护我们的权利。为实现这一目标，Fluence正在构建一个引人注目的下一代计算网络。他们的方法给我留下了深刻印象，我对他们的推出感到非常兴奋！这对于 Fluence、IPC和Filecoin来说都是一个巨大的里程碑。”
+星际共识(IPC)、Protocol Labs和Filecoin创始人Juan Benet表示：“星际共识是解锁[Filecoin总体规划](/blog/the-filecoin-masterplan/)第三部分的关键一步：创建一系列去中心化服务，对Filecoin网络上存储的大量有价值的数据进行操作；其中每个服务都是Filecoin上的独立且自定义的L2+网络，IPC框架将它们无缝互连。Fluence是率先采用IPC来实现这一愿景的先驱！世界需要更好的计算基础设施，通过可验证性来保护我们的权利。为实现这一目标，Fluence正在构建一个引人注目的下一代计算网络。他们的方法给我留下了深刻印象，我对他们的推出感到非常兴奋！这对于 Fluence、IPC和Filecoin来说都是一个巨大的里程碑。”
 
 ## 开发者乐园：立即构建真正的无云应用程序
 

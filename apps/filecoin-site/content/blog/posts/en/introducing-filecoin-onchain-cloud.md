@@ -47,7 +47,7 @@ Developers can store data on a global decentralized network, pay for services se
 The core of this new onchain cloud starts with five open source, verifiable, and composable building blocks:
 
 1. **[Filecoin Pay](https://pay.filecoin.cloud/):** Enabling onchain payments for verifiable service performance.
-2. **[Filecoin Warm Storage Service](https://filecoin.cloud/warm-storage-service):** Powered by Proof of Data Possession ([PDP)](https://filecoin.io/blog/posts/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin/) to guarantee your data is actually stored and available.
+2. **[Filecoin Warm Storage Service](https://filecoin.cloud/warm-storage-service):** Powered by Proof of Data Possession ([PDP)](/blog/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin/) to guarantee your data is actually stored and available.
 3. **[Synapse SDK](https://docs.filecoin.cloud/getting-started/):** Connecting builders to Filecoin Onchain Cloud with simple APIs.
 4. **[Filecoin Pin](https://pin.filecoin.cloud/):** Bringing IPFS and Filecoin closer than ever for fast, decentralized data persistence.
 5. **[Filecoin Beam](https://filbeam.com/):** A service bridging verifiable data movement across onchain and offchain systems.
@@ -56,7 +56,7 @@ The core of this new onchain cloud starts with five open source, verifiable, and
 
 ## Speed Meets Verifiability: New Era of Filecoin Storage Arrives
 
-The new [Filecoin Warm Storage Service](https://filecoin.cloud/warm-storage-service) provides verifiable storage with easy access and keeps data online with proven availability. Warm storage is programmed in smart contracts to handle service details, storage proofs, payments, and verification onchain. The storage capacity behind those services comes from the decentralized network of Filecoin storage providers –– verified every hour by [lightweight proofs](https://filecoin.io/blog/posts/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin/) generated in seconds.
+The new [Filecoin Warm Storage Service](https://filecoin.cloud/warm-storage-service) provides verifiable storage with easy access and keeps data online with proven availability. Warm storage is programmed in smart contracts to handle service details, storage proofs, payments, and verification onchain. The storage capacity behind those services comes from the decentralized network of Filecoin storage providers –– verified every hour by [lightweight proofs](/blog/introducing-proof-of-data-possession-pdp-verifiable-hot-storage-on-filecoin/) generated in seconds.
 
 This new storage offering is the data layer of Filecoin Onchain Cloud; it’s the base upon which retrievals, verifiable payments, and future compute and AI services can build upon. Every file, dataset, and proof is part of a live, verifiable storage economy. 
 

@@ -44,7 +44,7 @@ Halo is ECC’s recursive proof research, initially presented in 2019 as a solut
 
 ## Halo 2 in Action: Filecoin
 
-Perhaps not obvious to many, the Filecoin network is the largest deployed zero knowledge network in the world. [Zero knowledge is fundamental to the Filecoin network](https://filecoin.io/blog/posts/zero-knowledge-and-the-filecoin-network/), providing critical scalability solutions that have been in play since the network first launched on testnet.
+Perhaps not obvious to many, the Filecoin network is the largest deployed zero knowledge network in the world. [Zero knowledge is fundamental to the Filecoin network](/blog/zero-knowledge-and-the-filecoin-network/), providing critical scalability solutions that have been in play since the network first launched on testnet.
 
 The engagement between the ECC, the Filecion Foundation, the Ethereum Foundation, and Protocol Labs will partly focus on exploring the integration of Halo 2 into the existing Filecoin proof system.
 

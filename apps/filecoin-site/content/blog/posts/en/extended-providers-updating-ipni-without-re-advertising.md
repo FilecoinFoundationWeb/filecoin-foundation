@@ -20,7 +20,7 @@ title: "Extended Providers: Updating IPNI without re-advertising"
 _template: blog_detail
 ---
 
-This is the fourth blog post in a series of posts on IPNI. The [first blog post](https://filecoin.io/blog/posts/introducing-the-network-indexer/) introduced IPNI as a concept, [the second post](https://filecoin.io/blog/posts/how-does-the-network-indexer-work/) dived deeper into how it works internally in order to enable finding content providers for billions of addressable content out there and the [third](https://filecoin.io/blog/posts/how-to-be-an-index-provider/) explained how to become an Index Provider.
+This is the fourth blog post in a series of posts on IPNI. The [first blog post](/blog/introducing-the-network-indexer/) introduced IPNI as a concept, [the second post](/blog/how-does-the-network-indexer-work/) dived deeper into how it works internally in order to enable finding content providers for billions of addressable content out there and the [third](/blog/how-to-be-an-index-provider/) explained how to become an Index Provider.
 
 Building on top of the previous articled, this blog post will discuss a new feature that has recently been added to IPNI - **Extended Providers**.
 

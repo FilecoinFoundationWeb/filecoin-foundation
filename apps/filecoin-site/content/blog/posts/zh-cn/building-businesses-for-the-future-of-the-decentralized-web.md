@@ -52,7 +52,7 @@ Filecoin、IPFS、Ethereum等生态具备解决上述问题的基础条件，但
 
 当下，数据网络经济运营模式并不完善。个别公司形成了垄断攫取暴利，与此同时，大量数据未被使用，潜力未能释放，究其原因是世界数据经济不够_开放。_
 
-不妨将Filecoin视作云存储界的Airbnb。目前，新兴数据中心和数据解决方案无法与云存储市场的大玩家抗衡。Airbnb能让个人与酒店集团争夺市场，同理，Filecoin[赋能个人、小型和新兴企业](https://filecoin.io/blog/posts/more-than-storage-business-opportunities-on-filecoin/)，利用Zettabytes规模的闲置存储对抗数据垄断。
+不妨将Filecoin视作云存储界的Airbnb。目前，新兴数据中心和数据解决方案无法与云存储市场的大玩家抗衡。Airbnb能让个人与酒店集团争夺市场，同理，Filecoin[赋能个人、小型和新兴企业](/blog/more-than-storage-business-opportunities-on-filecoin/)，利用Zettabytes规模的闲置存储对抗数据垄断。
 
 这是在对全球数据存储行业范式发出挑战，允许商家凭借差异化服务与资深行业玩家竞争，实现市场定价而非公司定价的数据经济。
 
@@ -62,12 +62,12 @@ _“还没有开始反思数据存储的公司，算不上Web3初创公司。”
 
 Filecoin和IPFS是通用平台，应用案例范围广阔：
 
-- **消费者应用:** Dropbox型平台，比如[Slate](https://filecoin.io/blog/community-slate/)，Space，[ChainSafe Files](https://files.chainsafe.io/).
-- **NFT存储:** [Opensea](https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)，Curio，[Mintgate](https://www.youtube.com/watch?v=QxJ5-nuY1NA)和Flame均使用[nft.storage](http://nft.storage/).
-- **数据市场:** 如[Wolfram Alpha](https://filecoin.io/blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/)， Ocean，和[Filehive](https://filecoin.io/blog/posts/decentralized-data-markets-with-filehive/)等项目。
-- **视频:** 平台可运用[Livepeer](https://filecoin.io/blog/posts/livepeer-x-filecoin-co-mining-pilot/) 和[VideoCoin](https://filecoin.io/blog/posts/videocoin-and-filecoin-to-power-the-video-nft-market/)进行视频文件转码、存储和检索。
+- **消费者应用:** Dropbox型平台，比如[Slate](/blog/community-slate/)，Space，[ChainSafe Files](https://files.chainsafe.io/).
+- **NFT存储:** [Opensea](/blog/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/)，Curio，[Mintgate](https://www.youtube.com/watch?v=QxJ5-nuY1NA)和Flame均使用[nft.storage](http://nft.storage/).
+- **数据市场:** 如[Wolfram Alpha](/blog/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/)， Ocean，和[Filehive](/blog/decentralized-data-markets-with-filehive/)等项目。
+- **视频:** 平台可运用[Livepeer](/blog/livepeer-x-filecoin-co-mining-pilot/) 和[VideoCoin](/blog/videocoin-and-filecoin-to-power-the-video-nft-market/)进行视频文件转码、存储和检索。
 - **音频:** [Audius](https://www.youtube.com/watch?v=c50licHTOik)等服务在功能上与Spotify相似，区别是前者使用Web3技术堆栈。
-- **其他:** 分散式身份，检索市场，DeFi以及金融，[Brave](https://brave.com/brave-integrates-ipfs/)、Opera等浏览器，还有[Starling](https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/)等可验证存储平台。
+- **其他:** 分散式身份，检索市场，DeFi以及金融，[Brave](https://brave.com/brave-integrates-ipfs/)、Opera等浏览器，还有[Starling](/blog/starling-lab-establishing-trust-for-humanity-s-data/)等可验证存储平台。
 
 支撑这些应用案例的是一个卓越的开发者生态。在过去的短短两个月里，通过黑客松FIlecoin生态迎来 10,000位开发者。
 奖励金项目也为成千上万家公司提供资金。类似Filecoin Base Camp的加速器，联合Outlier Ventures优秀导师，帮助商业计划落地实施。这都得益于客观的资金支持，投资者为Filecoin生态设立了五千万美元专项经费。

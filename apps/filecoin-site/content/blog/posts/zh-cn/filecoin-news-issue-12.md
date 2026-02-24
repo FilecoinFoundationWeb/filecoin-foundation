@@ -26,7 +26,7 @@ _template: blog_detail_ch
 
 ### ⚡️ 分布式生态基金
 
-分布式资本与协议实验室合作宣布成立1500多万美元的投资基金。该基金的使命是推动IPFS和Filecoin生态的发展。分布式计划筹集1500-2000万美元，并承诺将所有筹资和投资都以FIL的形式，而不是稳定币或其他加密资产。分布式已与其他有限合伙人一起向基金投入了100万美元。分布式预计目标投资交易主要有三个来源：Slingshot项目、LongHash Filecoin Frontier 加速营和中国社区。有关该基金的更多信息，请参见[Blog](https://filecoin.io/blog/posts/the-fenbushi-ecosystem-fund-for-filecoin-development/)。
+分布式资本与协议实验室合作宣布成立1500多万美元的投资基金。该基金的使命是推动IPFS和Filecoin生态的发展。分布式计划筹集1500-2000万美元，并承诺将所有筹资和投资都以FIL的形式，而不是稳定币或其他加密资产。分布式已与其他有限合伙人一起向基金投入了100万美元。分布式预计目标投资交易主要有三个来源：Slingshot项目、LongHash Filecoin Frontier 加速营和中国社区。有关该基金的更多信息，请参见[Blog](/blog/the-fenbushi-ecosystem-fund-for-filecoin-development/)。
 
 ### 🧑💻 来自Textile的最新消息
 
@@ -36,7 +36,7 @@ Textile在Filecoin上进行了许多创建您可能已经错过其中一些：Po
 
 ### 💾 Starling框架
 
-[Starling数据完整性框架](https://filecoin.io/blog/posts/meet-filecoin-s-collaborators-jonathan-dotan-starling-framework-for-data-integrity/)可以让组织/机构能够利用密码学和分布式系统的力量来验证数字视频和图像。Starling有三个模块：采集、存储和验证。而IPFS/Filecoin框架也被嵌入到这三个模块中。
+[Starling数据完整性框架](/blog/meet-filecoin-s-collaborators-jonathan-dotan-starling-framework-for-data-integrity/)可以让组织/机构能够利用密码学和分布式系统的力量来验证数字视频和图像。Starling有三个模块：采集、存储和验证。而IPFS/Filecoin框架也被嵌入到这三个模块中。
 
 该项目由[南加州大学Shoah基金会](https://sfi.usc.edu/)和斯坦福大学电子工程系牵头。该项目的第一项工作是通过建立幸存者证词的防篡改分类账，永久地、不可篡改地记录灭绝种族的暴行，包括大屠杀、亚美尼亚事件和罗辛亚危机。
 
@@ -70,7 +70,7 @@ Lotus发布了[v1.4.2](https://github.com/filecoin-project/lotus/releases/tag/v1
 
 作为一个去中心化的网络，Filecoin旨在拥有多个独立的协议实现，以确保网络的可靠性和安全性。[Venus](https://github.com/filecoin-project/venus)是Filecoin网络目前正在开发的[四种协议实现](https://docs.filecoin.io/get-started/#filecoin-implementations)之一，该实现构建了一个更具弹性的生态。
 
-Venus，原名go-filecoin，是以Golang语言创建的第一个Filecoin实现--最初由@anorth、@zenground0、@frrist、@laser、@dignifiedquire、@alexcruikshank、@whyrusleeping等人发起并开发。但在[2020年8月](https://filecoin.io/blog/posts/this-is-a-sample-post/)，Filecoin社区的长期成员IPFSForce接管了WIP实施的管理权，并在10月恢复开发--将其更名为 "Venus"。
+Venus，原名go-filecoin，是以Golang语言创建的第一个Filecoin实现--最初由@anorth、@zenground0、@frrist、@laser、@dignifiedquire、@alexcruikshank、@whyrusleeping等人发起并开发。但在[2020年8月](/blog/this-is-a-sample-post/)，Filecoin社区的长期成员IPFSForce接管了WIP实施的管理权，并在10月恢复开发--将其更名为 "Venus"。
 
 我们很高兴地宣布，在区块高度[455673](https://filscan.io/#/tipset/chain?height=455673)(2021年1月30日03:16 UTC)，运行[Venus v0.9.0](https://github.com/filecoin-project/venus/releases/tag/v0.9.0)的矿工[f0128788](https://filscan.io/#/tipset/address-detail?address=f0128788)在主网上挖出了[它的第一个区块](https://filscan.io/#/tipset/chain?height=455673)!这个里程碑标志着Filecoin主网进入了一个新的时代，矿工可以共同运行多个实现，为网络增加了额外的安全性和去中心化。
 
@@ -80,13 +80,13 @@ Venus，原名go-filecoin，是以Golang语言创建的第一个Filecoin实现--
 
 为了最大限度地提高Filecoin能够和将要支持的有用存储量，网络创新性地通过Filecoin Plus引入了一层社会信任。用户使用一种新的方式——DataCap与矿工进行交易，矿工存储数据的积极性大大提高，因为随着时间的推移，矿工的区块奖励份额会增加。
 
-Filecoin Plus是一个技术上具有挑战性的务实解决方案，即验证特定数据集在无权限、激励兼容的假名网络中是否有用，并提出了激励通过生产的方式使用该网络的方法。点击[Filecoin Plus Blog更新](https://filecoin.io/blog/posts/filecoin-plus-aligning-participants-with-useful-storage/)了解更多关于核心概念、近期进展以及如何参与。
+Filecoin Plus是一个技术上具有挑战性的务实解决方案，即验证特定数据集在无权限、激励兼容的假名网络中是否有用，并提出了激励通过生产的方式使用该网络的方法。点击[Filecoin Plus Blog更新](/blog/filecoin-plus-aligning-participants-with-useful-storage/)了解更多关于核心概念、近期进展以及如何参与。
 
 ### ⚒ Filecoin MinerX 奖学金计划
 
 Filecoin MinerX 奖学金计划旨在让不同地方的多样化中小型Filecoin矿工参与进来，以改善Filecoin的体验和生产力。具体来说，该计划的目标是为全球分布式、可靠的长期存储建立坚实的基础，以加速生态中工具和服务的开发，同时确定改善Filecoin社区其他矿工体验的方向。
 
-MinerX成员将在计划期间接受存储和检索交易，支持各种开发工作，确定网络的改进方向，与社区接触，并增加他们的网络足迹。如果您有兴趣了解更多关于MinerX计划的信息，请阅读[blog文章](https://filecoin.io/blog/posts/filecoin-minerx-fellowship-program/)。
+MinerX成员将在计划期间接受存储和检索交易，支持各种开发工作，确定网络的改进方向，与社区接触，并增加他们的网络足迹。如果您有兴趣了解更多关于MinerX计划的信息，请阅读[blog文章](/blog/filecoin-minerx-fellowship-program/)。
 
 ### 🔁 了解Filecoin的流通供应
 

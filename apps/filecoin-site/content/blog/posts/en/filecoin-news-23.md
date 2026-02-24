@@ -28,13 +28,13 @@ title: "Filecoin News 23: Hedera, Filecoin Base Camp, Juan at EthCC, and More"
 
 ## Build
 
-[![](/uploads/fil-news-hedera.webp)](https://filecoin.io/blog/posts/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/)
+[![](/uploads/fil-news-hedera.webp)](/blog/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/)
 
 ### Filecoin and Hedera Hashgraph Announce Grant Program to Propel Web3 Interoperability
 
 Today, Filecoin and [**Hedera Hashgraph**](https://hedera.com/) are announcing a joint effort to advance the interoperability of Web3. Starting with a USD $200,000 grants program and an initial demo implementation for NFT use cases, the long-term vision is a full range of distributed ledger solutions, including distributed consensus, storage, and smart data applications, that combine the strengths of both networks.
 
-Filecoin and Hedera have a history of technical collaboration among various projects. Hedera brings highly efficient DLT capabilities, while Filecoin offers a robust, flexible large-scale storage layer. Combining both networks provides new possibilities to verify the provenance, ownership, and validity of both transactions and their underlying data. [**Learn more**](https://filecoin.io/blog/posts/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/).
+Filecoin and Hedera have a history of technical collaboration among various projects. Hedera brings highly efficient DLT capabilities, while Filecoin offers a robust, flexible large-scale storage layer. Combining both networks provides new possibilities to verify the provenance, ownership, and validity of both transactions and their underlying data. [**Learn more**](/blog/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/).
 
 [![](/uploads/base-camp-simple.webp)](https://outlierventures.io/base-camp/filecoin-base-camp/)
 
@@ -62,7 +62,7 @@ In collaboration with [**Techstars**](http://www.techstars.com/), we are excited
 
 ### Building Businesses for the Future of the Decentralized Web
 
-Outlier Ventures CEO Jamie Burke and Protocol Labs Ecosystem Lead Colin Evran sat down to talk about business opportunities for the future of Web3. They discussed existing and new business models that will be empowered by decentralized technology — and storage in particular — to supercharge the next phase of the global economy. [**Check out the highlights from the conversation**](https://filecoin.io/blog/posts/building-businesses-for-the-future-of-the-decentralized-web/).
+Outlier Ventures CEO Jamie Burke and Protocol Labs Ecosystem Lead Colin Evran sat down to talk about business opportunities for the future of Web3. They discussed existing and new business models that will be empowered by decentralized technology — and storage in particular — to supercharge the next phase of the global economy. [**Check out the highlights from the conversation**](/blog/building-businesses-for-the-future-of-the-decentralized-web/).
 
 ## Store
 

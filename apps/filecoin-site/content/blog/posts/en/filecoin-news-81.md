@@ -25,7 +25,7 @@ related_article_3: content/blog/posts/filecoin-news-78.en.md
 
 In 2023, Filecoin expanded its ecosystem significantly, marking its evolution from a decentralized storage network to enabling a broader range of open services for data. The year witnessed the launch of the Filecoin Virtual Machine (FVM), facilitating smart contracts and user programmability, and positioning Filecoin as a foundational layer for the open data economy. With over 200 projects building on FVM, the introduction of this technology has led to a surge in Total Value Locked to $280 million, highlighting robust growth. Additionally, the network saw a quadrupling in client data onboarded, reaching 2 million terabytes and expanding its client base across various sectors. Filecoin also improved data retrievability through projects like Boost, and established itself as a Layer 1 platform for Compute Networks, paving the way for large-scale computation over its data infrastructure. Furthermore, with the development of InterPlanetary Consensus (IPC), Filecoin aims at achieving web-scale applications through scalable subnets and rapid transactions, underscoring its continuous growth and innovation towards a decentralized future.
 
-For a full overview of the top technical and development achievements made by the Filecoin ecosystem in 2023, [read this article](https://filecoin.io/blog/posts/2023-expanding-from-a-storage-network-to-enabling-open-services-for-data-part-i/). Stay tuned for part 2!
+For a full overview of the top technical and development achievements made by the Filecoin ecosystem in 2023, [read this article](/blog/2023-expanding-from-a-storage-network-to-enabling-open-services-for-data-part-i/). Stay tuned for part 2!
 
 ## 🤝 Community Updates 🤝
 

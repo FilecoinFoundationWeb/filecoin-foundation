@@ -29,7 +29,7 @@ The transition from proprietary services to their decentralized counterparts has
 
 The Filecoin Network creates an algorithmic marketplace on top of the IPFS protocol that serves as an open and viable alternative to current cloud storage solutions. It’s designed to be a decentralized storage network that solves current client-facing deficiencies such as arbitrarily high prices, vendor lock-ins, and counterparty risks while lowering the barriers to entry for those looking to enter the market as service providers.
 
-To achieve this, the network has the task of aligning the roles of multiple independent actors who sustain its operations. Clients, developers, token holders, ecosystem partners, and storage providers are all part of Filecoin’s [island economy](https://filecoin.io/blog/posts/filecoin-s-island-economy/).
+To achieve this, the network has the task of aligning the roles of multiple independent actors who sustain its operations. Clients, developers, token holders, ecosystem partners, and storage providers are all part of Filecoin’s [island economy](/blog/filecoin-s-island-economy/).
 
 ## The Role of Storage Providers
 
@@ -45,7 +45,7 @@ Altogether, SPs form the basis of Filecoin’s decentralized storage marketplace
 
 ## Storage Provider Statistics
 
-Since mainnet launch, the Filecoin Network has continued to grow steadily in terms of the [Storage Power](https://filecoin.io/blog/filecoin-guide-to-storage-mining/#storage-power) that is available to users. The number of SPs has reached 3,876 with the largest of these providing up to 147.65 PiB in onboarded storage space. They make a total of over [15.6](https://dashboard.starboard.ventures/storage) EiB of storage available to the network.
+Since mainnet launch, the Filecoin Network has continued to grow steadily in terms of the [Storage Power](/blog/filecoin-guide-to-storage-mining/#storage-power) that is available to users. The number of SPs has reached 3,876 with the largest of these providing up to 147.65 PiB in onboarded storage space. They make a total of over [15.6](https://dashboard.starboard.ventures/storage) EiB of storage available to the network.
 
 ![](/uploads/image6.webp)_Increase in Filecoin’s Storage Power over the past year (source:_ [_https://filscan.io/statistics/power_](https://filscan.io/statistics/power "https://filscan.io/statistics/power")_)_
 
@@ -80,7 +80,7 @@ The Filecoin community has also developed other tools and programs that allow fo
 - [SnapDeals](https://www.youtube.com/watch?v=YIYfKlt2NhE&t=1s) are a new extension to the network that introduces a quicker way to onboard client data. This allows smaller SP setups to become more competitive by reducing the initial computational overhead of providing storage from an average of six hours down to one.
 - The previously mentioned Filecoin+ program benefits small SPs by allowing them to focus on approved clients. Successful deals with these clients grant them a tenfold increase in their Storage Power measurements (and consequently, their chances of participating in the consensus process for Block Rewards).
 - By combining both SnapDeals and Filecoin+, small and individual SPs can quickly upgrade their existing storage sectors with Filecoin+ deals and benefit from the multiplier.
-- The [Filecoin MinerX Fellowship](https://filecoin.io/blog/posts/filecoin-minerx-fellowship-program/) program is another effort with the specific goal of supporting small SP operations across the globe.
+- The [Filecoin MinerX Fellowship](/blog/filecoin-minerx-fellowship-program/) program is another effort with the specific goal of supporting small SP operations across the globe.
 
 The introduction of SnapDeals and the increasing adoption of Filecoin+ deals in the Filecoin marketplace speak to the equality of opportunities available to SPs of all sizes in the network. Meanwhile, the MinerX Fellowship fosters the ongoing development of the ecosystem by selecting projects that support SP communities.
 
@@ -94,7 +94,7 @@ Today we have a variety of different-sized SPs within the ecosystem who are capa
 
 ![](/uploads/image5.webp)_A look at the SP ecosystem in terms of the amount of Storage Power contributed in PiB (source: Protocol Labs)_
 
-The demand for Storage Power that can address large datasets is also set to increase with the launch of [Project Gravity](https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/), a referral program that rewards community members who bring these clients to the Filecoin Network.
+The demand for Storage Power that can address large datasets is also set to increase with the launch of [Project Gravity](/blog/filecoin-project-gravity-a-sales-referral-program/), a referral program that rewards community members who bring these clients to the Filecoin Network.
 
 ## The Storage Provider Support Ecosystem
 
@@ -133,9 +133,9 @@ Learn more about Filecoin Storage Providers:
 - ProtoSchool's Verifying Storage on Filecoin [course](https://proto.school/verifying-storage-on-filecoin)
 - Engineering Filecoin’s Economy [paper](https://filecoin.io/2020-engineering-filecoins-economy-en.pdf)
 - Guides:
-  - [A Guide to Filecoin Storage Mining](https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/)
-  - [Filecoin's Island Economy](https://filecoin.io/blog/posts/filecoin-s-island-economy/)
-  - [Filecoin’s Cryptoeconomic Constructions](https://filecoin.io/blog/posts/filecoin-s-cryptoeconomic-constructions/)
+  - [A Guide to Filecoin Storage Mining](/blog/a-guide-to-filecoin-storage-mining/)
+  - [Filecoin's Island Economy](/blog/filecoin-s-island-economy/)
+  - [Filecoin’s Cryptoeconomic Constructions](/blog/filecoin-s-cryptoeconomic-constructions/)
 
 **Explore and stay in touch:**
 

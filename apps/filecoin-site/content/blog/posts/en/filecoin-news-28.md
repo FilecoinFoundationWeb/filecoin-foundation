@@ -41,19 +41,19 @@ On October 21-22, the Filecoin community is coming together to celebrate with Fi
 
 Miners are currently testing and reporting performance gains as well via Lotus v1.11.3rc tags. This release also uses dependencies shared with other teams such as ZCash, rather than our own forked versions of them. The work of feature merging several dependencies will allow a smoother future integration with the Halo recursive proving system.
 
-[![](/uploads/halo.webp)](https://filecoin.io/blog/posts/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/)
+[![](/uploads/halo.webp)](/blog/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/)
 
 ### Reviving Halo 2 with Protocol Labs, Filecoin Foundation, Ethereum Foundation, and Electric Coin Co
 
-Recently [Electric Coin Co.](https://electriccoin.co/) (ECC) [announced](https://electriccoin.co/blog/ethereum-zcash-filecoin-collab/) that [Protocol Labs](https://protocol.ai/), the [Filecoin Foundation](https://fil.org/), the [Ethereum Foundation](https://ethereum.org/en/foundation/), and ECC would be collaborating to explore research and development of [Halo](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/) — a solution to zero knowledge recursive proofs without requiring a trusted setup. [Learn more about the collaboration](https://filecoin.io/blog/posts/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/).
+Recently [Electric Coin Co.](https://electriccoin.co/) (ECC) [announced](https://electriccoin.co/blog/ethereum-zcash-filecoin-collab/) that [Protocol Labs](https://protocol.ai/), the [Filecoin Foundation](https://fil.org/), the [Ethereum Foundation](https://ethereum.org/en/foundation/), and ECC would be collaborating to explore research and development of [Halo](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/) — a solution to zero knowledge recursive proofs without requiring a trusted setup. [Learn more about the collaboration](/blog/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/).
 
 ## Tools
 
-[![](/uploads/chainlink-grant.webp)](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/)
+[![](/uploads/chainlink-grant.webp)](/blog/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/)
 
 ### Extended Deadline for Filecoin-Chainlink Grant
 
-If you’re interested in applying to the [Chainlink](https://chain.link/) and Filecoin joint grant initiative [announced in early August](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/), which supports the development of superior hybrid smart contract applications powered by tamper-proof file storage and universal connectivity, the deadline has been extended by two months to December 17th, with applications to be accepted on a rolling basis.
+If you’re interested in applying to the [Chainlink](https://chain.link/) and Filecoin joint grant initiative [announced in early August](/blog/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/), which supports the development of superior hybrid smart contract applications powered by tamper-proof file storage and universal connectivity, the deadline has been extended by two months to December 17th, with applications to be accepted on a rolling basis.
 
 [![](/uploads/lotus-upgrade.webp)](https://github.com/filecoin-project/lotus/releases/tag/v1.11.3)
 
@@ -65,7 +65,7 @@ All Lotus users, including node operators, storage providers and clients, are hi
 
 ### ChainSafe Files
 
-[ChainSafe Files](https://files.chainsafe.io/) is an online platform to store, view, and share files. The product leverages IPFS and Filecoin to give users all the benefits of distributed storage and blockchain technology. [Learn](https://filecoin.io/blog/posts/chainsafe-files-building-privacy-preserving-cloud-storage/) how Chainsafe is revolutionizing what it means for users to have private access to their files while also leveraging decentralized storage, security, and persistence.
+[ChainSafe Files](https://files.chainsafe.io/) is an online platform to store, view, and share files. The product leverages IPFS and Filecoin to give users all the benefits of distributed storage and blockchain technology. [Learn](/blog/chainsafe-files-building-privacy-preserving-cloud-storage/) how Chainsafe is revolutionizing what it means for users to have private access to their files while also leveraging decentralized storage, security, and persistence.
 
 ## Storage Providers
 
@@ -128,11 +128,11 @@ At the culmination of the event, three startups ([NetSepio](https://devpost.com/
 
 ## Learn
 
-[![](/uploads/island-economy.webp)](https://filecoin.io/blog/posts/filecoin-s-island-economy/)
+[![](/uploads/island-economy.webp)](/blog/filecoin-s-island-economy/)
 
 ### Filecoin’s Island Economy
 
-If you’ve been around the Filecoin ecosystem for a bit, you’ve heard the term “Island Economy” thrown around. But what does it mean specifically, and why is it such a useful way to understand the economics of the Filecoin ecosystem? In a nutshell, an island economy is an economy within an isolated area (physical or virtual) in which you can survive, and thrive, without having to do all the work yourself. Pique your interest? [Learn more here](https://filecoin.io/blog/posts/filecoin-s-island-economy/).
+If you’ve been around the Filecoin ecosystem for a bit, you’ve heard the term “Island Economy” thrown around. But what does it mean specifically, and why is it such a useful way to understand the economics of the Filecoin ecosystem? In a nutshell, an island economy is an economy within an isolated area (physical or virtual) in which you can survive, and thrive, without having to do all the work yourself. Pique your interest? [Learn more here](/blog/filecoin-s-island-economy/).
 
 ## Get Involved
 
