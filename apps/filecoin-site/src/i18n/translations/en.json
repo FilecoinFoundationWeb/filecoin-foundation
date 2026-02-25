@@ -776,5 +776,11 @@
     "playButton": "See how it works",
     "loading": "Loading Video...",
     "error": "Video Unavailable"
+  },
+  "pagination": {
+    "prevAriaLabel": "Go to previous page",
+    "prev": "Previous",
+    "nextAriaLabel": "Go to next page",
+    "next": "Next"
   }
 }
