@@ -35,4 +35,4 @@ _template: blog_detail_ch
 
 如需了解更多定价细节和Factor8 Solutions能力，请访问其 官网 。若您想作为Filecoin存储提供者开启旅程，请访问[FSPM GitHub](https://github.com/filecoin-project/sp-mentorship-grants/blob/main/README.md)，并填写Factor8解决方案申请表。欢迎来自各种背景和地区的申请，为确保项目适配度，合格的申请者将与我们的顾问进行一小时的后续面试。
 
-请务必访问SP[登陆页面](https://sp.filecoin.io/)，探索更多资源，助您开启SP之旅。您还可以在[Filecoin blog](https://filecoin.io/blog/)上找到更多信息，了解[SP 生态系统](/blog/a-deep-dive-into-the-storage-provider-ecosystem/)，成为SP的[经济学知识](/blog/the-economics-of-storage-providers/)，以及为什么要考虑[成为SP](/blog/why-become-a-filecoin-storage-provider/)。
+请务必访问SP[登陆页面](https://sp.filecoin.io/)，探索更多资源，助您开启SP之旅。您还可以在[Filecoin blog](/blog)上找到更多信息，了解[SP 生态系统](/blog/a-deep-dive-into-the-storage-provider-ecosystem/)，成为SP的[经济学知识](/blog/the-economics-of-storage-providers/)，以及为什么要考虑[成为SP](/blog/why-become-a-filecoin-storage-provider/)。

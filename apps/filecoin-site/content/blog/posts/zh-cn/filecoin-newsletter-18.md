@@ -131,6 +131,6 @@ Chainlink的去中心化预言机网络(DONs)及Filecoin的去中心化存储协
 
 浏览[**Github上的Filecoin项目**](https://github.com/filecoin-project) ，并确保看一下[**社区资源（community resources）**](https://github.com/filecoin-project/community)。在[**Filecoin的Slack频道**](http://filecoin.io/slack)可以提问，并在[**社区论坛**](https://discuss.filecoin.io/)上讨论问题或新的想法，或将你的想法发送到[**推特上的 @Filecoin**](https://twitter.com/Filecoin).
 
-[**Filecoin博客**](https://filecoin.io/blog/) 和我们的[**YouTube频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) 对初学者来说也是很好的信息来源。如果这些渠道无法让你满意，则可以回信到这个邮件地址，我们会帮你寻找答案。
+[**Filecoin博客**](/blog) 和我们的[**YouTube频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) 对初学者来说也是很好的信息来源。如果这些渠道无法让你满意，则可以回信到这个邮件地址，我们会帮你寻找答案。
 
 [订阅Filecoin新闻](https://mailchi.mp/filecoin.io/subscribe) 以直接在邮箱中收到相关资讯！

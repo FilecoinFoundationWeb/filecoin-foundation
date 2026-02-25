@@ -30,7 +30,7 @@ Thanks to everyone who participated in our March 5 Q&A about the Filecoin projec
 
 More than 1,200 Filecoin community members participated in the session or checked the recap on Slido. Special thanks to those who joined us from our mining communities across Asia!
 
-We’re looking forward to having more sessions like these as we get closer to mainnet launch. In the meantime, stay tuned for updates on the [Filecoin Blog](https://filecoin.io/blog/). You can also find us on Wechat (Filecoin-Official), [Filecoin Slack](https://join.slack.com/t/filecoinproject/shared_invite/zt-dj58b7fq-weyaTEvjHoYF_ENkQHR6Ig), and [Twitter](https://twitter.com/Filecoin). Onwards!
+We’re looking forward to having more sessions like these as we get closer to mainnet launch. In the meantime, stay tuned for updates on the [Filecoin Blog](/blog). You can also find us on Wechat (Filecoin-Official), [Filecoin Slack](https://join.slack.com/t/filecoinproject/shared_invite/zt-dj58b7fq-weyaTEvjHoYF_ENkQHR6Ig), and [Twitter](https://twitter.com/Filecoin). Onwards!
 
 ## Summarized questions and answers
 
