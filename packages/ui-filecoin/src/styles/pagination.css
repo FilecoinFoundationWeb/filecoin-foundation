@@ -1,0 +1,35 @@
+@layer components {
+  .pagination {
+    & .pagination-arrow-button {
+      @apply focus:brand-outline font-medium text-zinc-600;
+
+      &:not(:disabled):hover {
+        @apply bg-zinc-100;
+      }
+    }
+
+    & .pagination-delimiter {
+      @apply text-(--color-border-muted);
+    }
+
+    & .pagination-index-container {
+      @apply size-10;
+    }
+
+    & .pagination-index-list {
+      @apply gap-5;
+    }
+
+    & .pagination-number-button {
+      @apply focus:brand-outline h-full w-full cursor-pointer rounded-full focus:outline-offset-1;
+
+      &[data-current='true'] {
+        @apply bg-brand-800 text-white;
+      }
+
+      &[data-current='false']:hover {
+        @apply bg-brand-50;
+      }
+    }
+  }
+}

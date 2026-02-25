@@ -6,9 +6,12 @@ import { MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr'
 import { useTranslations } from 'next-intl'
 
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
-import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { EmptyStateCard } from '@filecoin-foundation/ui-filecoin/EmptyStateCard'
+import {
+  Pagination,
+  usePagination,
+} from '@filecoin-foundation/ui-filecoin/Pagination'
 import {
   normalizeSearchParams,
   Search,

@@ -13,7 +13,8 @@ import { DIRECTIONS } from '@filecoin-foundation/utils/constants/paginationDirec
 import { PaginationArrowButton } from './PaginationArrowButton'
 import { PaginationDelimiter } from './PaginationDelimiter'
 
-type PaginationProps = {
+export type PaginationProps = {
+  directions?: typeof DIRECTIONS
   pageCount: number
   numberRange?: number
 }
@@ -21,6 +22,7 @@ type PaginationProps = {
 export function Pagination({
   pageCount,
   numberRange = MAX_RANGE,
+  directions = DIRECTIONS,
 }: PaginationProps) {
   if (numberRange > MAX_RANGE) {
     console.warn(
@@ -50,7 +52,7 @@ export function Pagination({
     >
       <div className="flex">
         <PaginationArrowButton
-          direction={DIRECTIONS.prev}
+          direction={directions.prev}
           disabled={!canGoBack}
           setPage={goToPreviousPage}
         />
@@ -86,7 +88,7 @@ export function Pagination({
         <PaginationDelimiter />
         <PaginationArrowButton
           reversed
-          direction={DIRECTIONS.next}
+          direction={directions.next}
           disabled={!canGoForward}
           setPage={goToNextPage}
         />
