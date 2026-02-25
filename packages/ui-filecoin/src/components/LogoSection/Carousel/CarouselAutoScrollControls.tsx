@@ -16,6 +16,7 @@ export function CarouselAutoScrollControls() {
         className="min-w-24"
         onClick={isScrolling ? stopAutoScroll : playAutoScroll}
         aria-label={isScrolling ? 'Stop auto scroll' : 'Start auto scroll'}
+        aria-live="polite"
       >
         {isScrolling ? 'Stop' : 'Start'}
       </Button>

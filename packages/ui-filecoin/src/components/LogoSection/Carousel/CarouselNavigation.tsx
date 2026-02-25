@@ -4,11 +4,7 @@ import { useCarousel } from './Carousel'
 import { CarouselButton } from './CarouselButton'
 
 export function CarouselNavigation() {
-  const { canScrollPrev, canScrollNext, autoPlay } = useCarousel()
-
-  if (autoPlay) {
-    return null
-  }
+  const { canScrollPrev, canScrollNext } = useCarousel()
 
   if (!canScrollPrev && !canScrollNext) {
     return null

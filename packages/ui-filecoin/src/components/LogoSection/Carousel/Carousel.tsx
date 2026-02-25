@@ -5,6 +5,7 @@ import {
   useCallback,
   useContext,
   useEffect,
+  useRef,
   useState,
 } from 'react'
 
@@ -62,14 +63,16 @@ export function Carousel({
   children,
   ...props
 }: React.ComponentProps<'div'> & CarouselProps) {
-  const [isScrolling, setIsScrolling] = useState(false)
+  const [isScrolling, setIsScrolling] = useState(autoPlay)
 
-  const autoScrollPlugin = AutoScroll({
-    startDelay: 0,
-    speed: 1.5,
-    stopOnMouseEnter: false,
-    stopOnInteraction: false,
-  })
+  const autoScrollPluginRef = useRef(
+    AutoScroll({
+      startDelay: 0,
+      speed: 1.5,
+      stopOnMouseEnter: false,
+      stopOnInteraction: false,
+    }),
+  )
 
   const [carouselRef, api] = useEmblaCarousel(
     {
@@ -77,7 +80,7 @@ export function Carousel({
       axis: getCarouselAxis(orientation),
       loop: opts?.loop ?? true,
     },
-    [autoScrollPlugin],
+    [autoScrollPluginRef.current],
   )
 
   const { canScrollPrev, canScrollNext, scrollPrev, scrollNext } =
@@ -86,25 +89,24 @@ export function Carousel({
 
   useEffect(() => {
     if (!api) return
-
     const plugin = api.plugins().autoScroll
     if (!plugin) return
 
-    plugin.stop()
-
-    const interval = setInterval(() => {
-      setIsScrolling(plugin.isPlaying())
-    }, 100)
-
-    return () => clearInterval(interval)
-  }, [api])
+    if (autoPlay) {
+      plugin.play()
+    } else {
+      plugin.stop()
+    }
+  }, [api, autoPlay])
 
   const playAutoScroll = useCallback(() => {
     api?.plugins().autoScroll?.play()
+    setIsScrolling(true)
   }, [api])
 
   const stopAutoScroll = useCallback(() => {
     api?.plugins().autoScroll?.stop()
+    setIsScrolling(false)
   }, [api])
 
   return (
