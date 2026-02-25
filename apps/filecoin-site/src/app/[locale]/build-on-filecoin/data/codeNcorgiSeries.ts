@@ -1,6 +1,7 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import imageFallback from '@/assets/graphics/image-fallback.webp'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 import type { SimpleCardWithImageProps } from '@/components/SimpleCardWithImage'
 

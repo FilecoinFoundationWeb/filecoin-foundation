@@ -3,8 +3,8 @@
 import { PlayCircleIcon } from '@phosphor-icons/react'
 import { useTranslations } from 'next-intl'
 
-import { YouTubeVideo } from '@filecoin-foundation/ui-filecoin/YouTubeVideo'
 import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
+import { YouTubeVideo } from '@filecoin-foundation/ui-filecoin/YouTubeVideo'
 
 type YouTubeVideoEmbedProps = {
   videoUrl: string

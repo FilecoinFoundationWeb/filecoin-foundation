@@ -1,10 +1,11 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import {
   CubeIcon,
   RocketLaunchIcon,
   UserPlusIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 export function getGettingStartedWithPDP(t: TranslationFunction) {
   return [

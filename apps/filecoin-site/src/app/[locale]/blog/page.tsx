@@ -3,7 +3,6 @@ import { Suspense } from 'react'
 import type { LocaleParams } from '@/i18n/types'
 
 import type { Metadata } from 'next'
-
 import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -50,12 +49,12 @@ export default async function Blog({ params }: BlogProps) {
           title={featuredPost.title}
           description={featuredPost.excerpt}
           slug={featuredPost.slug}
+          badgeText={t('featuredPost.badge')}
+          ctaText={t('featuredPost.cta')}
           image={{
             src: featuredPost.image?.url || graphicsData.fallback.data.src,
             alt: '',
           }}
-          badgeText={t('featuredPost.badge')}
-          ctaText={t('featuredPost.cta')}
         />
       </PageSection>
 

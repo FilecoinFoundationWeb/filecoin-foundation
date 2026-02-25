@@ -1,3 +1,5 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import {
   CpuIcon,
   GaugeIcon,
@@ -5,7 +7,6 @@ import {
   LockKeyIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 export function getScalingOperations(t: TranslationFunction) {
   return [

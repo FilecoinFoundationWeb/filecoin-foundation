@@ -1,3 +1,5 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import Storacha from '@/assets/images/storacha.webp'
 import AkaveMiniatureLogo from '@/assets/miniatures/akave-miniature.svg'
 import CIDgravityMiniatureLogo from '@/assets/miniatures/cid-gravity-miniature.svg'
@@ -6,7 +8,6 @@ import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.svg'
 import SingularityMiniatureLogo from '@/assets/miniatures/singularity-miniature.svg'
 import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.svg'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 import type { StorageProviderCardWithImageProps } from '../components/StorageProviderCard/StorageProviderCardWithImage'
