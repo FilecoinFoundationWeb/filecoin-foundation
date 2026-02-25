@@ -1,0 +1,24 @@
+'use client'
+
+import { Button } from '../../Button'
+
+import { useCarousel } from './Carousel'
+import { CarouselNavigation } from './CarouselNavigation'
+
+export function CarouselAutoScrollControls() {
+  const { isScrolling, playAutoScroll, stopAutoScroll } = useCarousel()
+
+  return (
+    <div className="mt-4 flex items-center justify-between">
+      <CarouselNavigation />
+      <Button
+        variant="ghost"
+        className="min-w-24"
+        onClick={isScrolling ? stopAutoScroll : playAutoScroll}
+        aria-label={isScrolling ? 'Stop auto scroll' : 'Start auto scroll'}
+      >
+        {isScrolling ? 'Stop' : 'Start'}
+      </Button>
+    </div>
+  )
+}

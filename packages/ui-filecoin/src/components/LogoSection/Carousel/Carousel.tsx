@@ -1,6 +1,12 @@
 'use client'
 
-import { createContext, useContext } from 'react'
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from 'react'
 
 import { clsx } from 'clsx'
 import AutoScroll from 'embla-carousel-auto-scroll'
@@ -30,6 +36,9 @@ type CarouselContextProps = {
   canScrollPrev: boolean
   canScrollNext: boolean
   autoPlay: boolean
+  isScrolling: boolean
+  playAutoScroll: () => void
+  stopAutoScroll: () => void
 } & CarouselProps
 
 const CarouselContext = createContext<CarouselContextProps | null>(null)
@@ -53,25 +62,50 @@ export function Carousel({
   children,
   ...props
 }: React.ComponentProps<'div'> & CarouselProps) {
-  const autoPlayPlugin = AutoScroll({
-    stopOnMouseEnter: true,
-    stopOnInteraction: false,
-    startDelay: 100,
+  const [isScrolling, setIsScrolling] = useState(false)
+
+  const autoScrollPlugin = AutoScroll({
+    startDelay: 0,
     speed: 1.5,
+    stopOnMouseEnter: false,
+    stopOnInteraction: false,
   })
 
   const [carouselRef, api] = useEmblaCarousel(
     {
       ...opts,
       axis: getCarouselAxis(orientation),
-      loop: autoPlay ? true : opts?.loop,
+      loop: opts?.loop ?? true,
     },
-    [...(autoPlay ? [autoPlayPlugin] : [])],
+    [autoScrollPlugin],
   )
 
   const { canScrollPrev, canScrollNext, scrollPrev, scrollNext } =
     useCarouselState(api, setApi)
   const handleKeyDown = useCarouselKeyboard(scrollPrev, scrollNext)
+
+  useEffect(() => {
+    if (!api) return
+
+    const plugin = api.plugins().autoScroll
+    if (!plugin) return
+
+    plugin.stop()
+
+    const interval = setInterval(() => {
+      setIsScrolling(plugin.isPlaying())
+    }, 100)
+
+    return () => clearInterval(interval)
+  }, [api])
+
+  const playAutoScroll = useCallback(() => {
+    api?.plugins().autoScroll?.play()
+  }, [api])
+
+  const stopAutoScroll = useCallback(() => {
+    api?.plugins().autoScroll?.stop()
+  }, [api])
 
   return (
     <CarouselContext.Provider
@@ -85,6 +119,9 @@ export function Carousel({
         canScrollPrev,
         canScrollNext,
         autoPlay,
+        isScrolling,
+        playAutoScroll,
+        stopAutoScroll,
       }}
     >
       <div
