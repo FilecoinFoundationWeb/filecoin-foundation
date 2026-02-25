@@ -1,6 +1,7 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import IconLogo from '@/assets/logos/filecoin-logo-icon.svg'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 import type { ColumnPropsData } from '../components/ComparisonTable/Column'
 

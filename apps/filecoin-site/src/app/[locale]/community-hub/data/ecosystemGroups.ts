@@ -1,6 +1,7 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import { FILECOIN_FOUNDATION_URL } from '@/constants/siteMetadata'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 import ANSALogo from '@/assets/logos/ansa-logo.svg'
 import FIDLLogo from '@/assets/logos/fidl-logo.png'

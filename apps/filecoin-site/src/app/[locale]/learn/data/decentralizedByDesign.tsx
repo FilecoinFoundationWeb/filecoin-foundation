@@ -1,3 +1,5 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import {
   CloudArrowDownIcon,
   CoinsIcon,
@@ -8,7 +10,6 @@ import {
 import type { CardData } from '@filecoin-foundation/ui-filecoin/Card'
 import { ExternalTextLink } from '@filecoin-foundation/ui-filecoin/TextLink/ExternalTextLink'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 import {
   FILECOIN_CLOUD_DOCS_URLS,

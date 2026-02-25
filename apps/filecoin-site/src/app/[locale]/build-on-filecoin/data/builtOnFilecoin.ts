@@ -1,9 +1,10 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import GLIFLogo from '@/assets/logos/glif-logo.svg'
 import Huddle01Logo from '@/assets/logos/huddle-01-logo.svg'
 import LighthouseLogo from '@/assets/logos/lighthouse-logo.svg'
 import RecallLogo from '@/assets/logos/recall-logo.svg'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 import type { SimpleCardWithLogoProps } from '@/components/SimpleCardWithLogo'
 

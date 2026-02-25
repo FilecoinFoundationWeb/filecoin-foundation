@@ -1,3 +1,5 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import {
   ArchiveIcon,
   ChatsCircleIcon,
@@ -7,7 +9,6 @@ import {
 
 import type { LinkCardData } from '@filecoin-foundation/ui-filecoin/LinkCard'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 import { PATHS } from '@/constants/paths'
 

@@ -1,3 +1,5 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import {
   ClockCounterClockwiseIcon,
   CurrencyDollarIcon,
@@ -7,7 +9,6 @@ import {
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 export function getGetInvolvedOptions(t: TranslationFunction) {
   return [

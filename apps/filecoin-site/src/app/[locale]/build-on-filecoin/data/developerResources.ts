@@ -1,3 +1,5 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import {
   BookIcon,
   BracketsCurlyIcon,
@@ -7,7 +9,6 @@ import {
 
 import { FILECOIN_DOCS_URL, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 export function getDeveloperResources(t: TranslationFunction) {
   return [

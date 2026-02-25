@@ -1,6 +1,7 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
-import type { TranslationFunction } from '@/i18n/types'
 
 export type TutorialsAndGuides = {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced'

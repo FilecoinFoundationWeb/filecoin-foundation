@@ -1,17 +1,18 @@
 import Image from 'next/image'
 
+import { getTranslations } from 'next-intl/server'
+
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
+import { PATHS } from '@/constants/paths'
 import { FILECOIN_CLOUD_URL, FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { SplitSectionContent } from '@/components/SplitSectionContent'
-import { getTranslations } from 'next-intl/server'
-import { PATHS } from '@/constants/paths'
 
 export async function HeroSection() {
   const t = await getTranslations(PATHS.BUILD_ON_FILECOIN.path)

@@ -1,9 +1,10 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import conference from '@/assets/images/conference.webp'
 import panelDiscussion from '@/assets/images/panel-discussion-speaker-with-microphone.webp'
 import techPresentation from '@/assets/images/tech-presentation-audience-raising-hands.webp'
-import type { TranslationFunction } from '@/i18n/types'
 
 export function getJoinVibrantCommunityImages(
   t: TranslationFunction,
