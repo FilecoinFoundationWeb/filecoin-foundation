@@ -112,4 +112,4 @@ The first DI2F workshop, taking place at a premier networking conference, will b
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 
-[**The Filecoin blog**](https://filecoin.io/blog/) and our [**YouTube channel**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) are also great sources of information if you’re just getting started. If all else fails, send a reply to this email, and we’ll help you track down an answer.
+[**The Filecoin blog**](/blog) and our [**YouTube channel**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) are also great sources of information if you’re just getting started. If all else fails, send a reply to this email, and we’ll help you track down an answer.

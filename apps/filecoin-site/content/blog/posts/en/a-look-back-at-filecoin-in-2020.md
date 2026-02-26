@@ -85,7 +85,7 @@ In November, the Filecoin community celebrated its first major milestone less th
 
 ## December: Filecoin Ecosystem Economics
 
-Along with ETH Global, the Filecoin community hosted a packed, 1-day event [Storage Markets Summit](https://www.youtube.com/watch?v=leJHrvz-YY8). The day, split into 5 themed ‘blocks’, saw developers, investors, and partners from across the Filecoin ecosystem give deep dives and overviews of different aspects of the Filecoin network and its economics. Summaries of each block can be found on the [blog](https://filecoin.io/blog/) and recordings on the Filecoin [Youtube](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) channel.
+Along with ETH Global, the Filecoin community hosted a packed, 1-day event [Storage Markets Summit](https://www.youtube.com/watch?v=leJHrvz-YY8). The day, split into 5 themed ‘blocks’, saw developers, investors, and partners from across the Filecoin ecosystem give deep dives and overviews of different aspects of the Filecoin network and its economics. Summaries of each block can be found on the [blog](/blog) and recordings on the Filecoin [Youtube](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) channel.
 
 ## Looking Ahead: Filecoin in 2021
 

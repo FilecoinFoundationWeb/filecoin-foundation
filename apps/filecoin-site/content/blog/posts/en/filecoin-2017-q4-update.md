@@ -65,7 +65,7 @@ Asks like these are typical in updates to project supporters, though perhaps mor
 
 ## 3. Launch of the Filecoin Blog
 
-This update marks the launch of the new [Filecoin Blog](https://filecoin.io/blog/). We have cross-posted all Filecoin specific posts from the [Protocol Labs Blog](https://protocol.ai/blog/), which we had been using to publish Filecoin news. Henceforth, this will be the main channel for Filecoin announcements.
+This update marks the launch of the new [Filecoin Blog](/blog). We have cross-posted all Filecoin specific posts from the [Protocol Labs Blog](https://protocol.ai/blog/), which we had been using to publish Filecoin news. Henceforth, this will be the main channel for Filecoin announcements.
 
 We have lots of plans for this blog in 2018. Expect to see technical deep-dives, explainers, event announcements, periodic updates like this one, and more. If you would like to request certain kinds of posts, feel free to [send us suggestions](https://docs.google.com/forms/d/e/1FAIpQLSeMgVzmDramhx0UM7UtTOECd0rw5CTzhYrt5V3Hfrdor3Z1Iw/viewform?usp=sf_link).
 

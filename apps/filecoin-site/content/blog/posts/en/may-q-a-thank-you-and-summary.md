@@ -29,7 +29,7 @@ _template: blog_detail
 
 On May 18, 2020, we hosted another AMA with Juan Benet and other developers of the Filecoin Project. Thanks to everyone who joined! Over the course of one hour, we received 291 questions and were able to answer 46, ranging from roadmap and timing updates to details on verified clients, hardware requirements, and the latest on testnet incentives. Nearly 1,400 Filecoin community members participated in the session or checked the recap on Slido.
 
-Below, we have included some of the most frequent and relevant questions from our Q&A. We look forward to doing more sessions like this as we gear up for mainnet launch! In the meantime, stay tuned for updates on the [Filecoin Blog](https://filecoin.io/blog/). You can also find us on Wechat (Filecoin-Official), [Filecoin Slack](https://join.slack.com/t/filecoinproject/shared_invite/zt-dj58b7fq-weyaTEvjHoYF_ENkQHR6Ig), and [Twitter](https://twitter.com/Filecoin).
+Below, we have included some of the most frequent and relevant questions from our Q&A. We look forward to doing more sessions like this as we gear up for mainnet launch! In the meantime, stay tuned for updates on the [Filecoin Blog](/blog). You can also find us on Wechat (Filecoin-Official), [Filecoin Slack](https://join.slack.com/t/filecoinproject/shared_invite/zt-dj58b7fq-weyaTEvjHoYF_ENkQHR6Ig), and [Twitter](https://twitter.com/Filecoin).
 
 ## Summarized questions and answers
 
