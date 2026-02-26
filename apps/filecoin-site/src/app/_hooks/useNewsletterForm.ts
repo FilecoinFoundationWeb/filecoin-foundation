@@ -31,7 +31,7 @@ export function useNewsletterForm() {
         body: JSON.stringify({ email: values.email }),
       })
 
-      const body = await response.json().catch(() => ({}))
+      const body = await response.json()
       const message =
         body?.message ?? (response.ok ? undefined : t('subscriptionFailed'))
 
