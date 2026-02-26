@@ -52,6 +52,10 @@ function getMailchimpSubscribeUrl(email: string) {
   const u = process.env.MAILCHIMP_U
   const id = process.env.MAILCHIMP_LIST_ID
 
+  if (!u || !id) {
+    throw new Error('MAILCHIMP_U or MAILCHIMP_LIST_ID is not set')
+  }
+
   const baseUrl = `https://protocol.us16.list-manage.com/subscribe/post-json?u=${u}&id=${id}`
   const url = new URL(baseUrl)
   url.searchParams.set('EMAIL', email)
