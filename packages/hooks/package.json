@@ -28,6 +28,9 @@
     "lint": "eslint src --fix",
     "test": "jest"
   },
+  "dependencies": {
+    "usehooks-ts": "^3.1.1"
+  },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
@@ -41,7 +44,6 @@
     "@filecoin-foundation/utils": "0.0.0",
     "next": "^16.1.6",
     "nuqs": "^2.8.8",
-    "react": "^19.2.4",
-    "usehooks-ts": "^3.1.1"
+    "react": "^19.2.4"
   }
 }
