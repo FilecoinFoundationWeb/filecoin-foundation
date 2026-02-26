@@ -1,4 +1,5 @@
 import type { Locale } from '@/i18n/types'
+
 import type { z } from 'zod'
 
 import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'

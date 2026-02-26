@@ -115,4 +115,4 @@ Content-addressed Merkle DAGs, structured using schemas provided by IPLD, are ke
 
 Head over to the [Filecoin project on GitHub](https://github.com/filecoin-project) and be sure to take a look at the [community resources](https://github.com/filecoin-project/community). Ask questions in the [Filecoin Slack](http://filecoin.io/slack), discuss issues or new ideas in [the community forum](https://discuss.filecoin.io/), or send us your thoughts [on Twitter by following @Filecoin](https://twitter.com/Filecoin).
 
-[The Filecoin blog](https://filecoin.io/blog/) and our [YouTube channel](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) are also great sources of information if you’re just getting started. To get this newsletter straight to your inbox, [subscribe to the Filecoin Newsletter](https://mailchi.mp/filecoin.io/subscribe).
+[The Filecoin blog](/blog) and our [YouTube channel](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) are also great sources of information if you’re just getting started. To get this newsletter straight to your inbox, [subscribe to the Filecoin Newsletter](https://mailchi.mp/filecoin.io/subscribe).

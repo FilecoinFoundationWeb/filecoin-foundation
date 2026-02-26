@@ -14,6 +14,8 @@ type BlogPageHeaderProps = {
   description: BlogPost['excerpt']
   slug: BlogPost['slug']
   image: ImageProps
+  badgeText: string
+  ctaText: string
 }
 
 export function BlogPageHeader({
@@ -21,13 +23,15 @@ export function BlogPageHeader({
   description,
   image,
   slug,
+  badgeText,
+  ctaText,
 }: BlogPageHeaderProps) {
   return (
     <header className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <div className="flex flex-col justify-between gap-10">
         <div className="flex flex-col gap-6">
           <div className="flex">
-            <Badge variant="primary">Latest updates</Badge>
+            <Badge variant="primary">{badgeText}</Badge>
           </div>
 
           <Heading tag="h1" variant="section-heading">
@@ -44,7 +48,7 @@ export function BlogPageHeader({
           href={`${PATHS.BLOG.path}/${slug}`}
           className="w-full lg:w-fit"
         >
-          Read full article
+          {ctaText}
         </Button>
       </div>
 

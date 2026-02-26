@@ -2,17 +2,18 @@
 
 import { useQueryState, parseAsString } from 'nuqs'
 
-import { SearchInput } from '../SearchInput'
+import { SearchInput, type SearchInputProps } from '../SearchInput'
 
 export const SEARCH_KEY = 'search'
 export const DEFAULT_SEARCH_QUERY = ''
 
 type SearchProps = {
   key?: string
-  onChange?: (value: string) => void
+  onChange?: SearchInputProps['onChange']
+  placeholder?: SearchInputProps['placeholder']
 }
 
-export function Search({ key = SEARCH_KEY, onChange }: SearchProps) {
+export function Search({ key = SEARCH_KEY, onChange, ...rest }: SearchProps) {
   const [query, setQuery] = useQueryState(
     key,
     parseAsString
@@ -25,5 +26,5 @@ export function Search({ key = SEARCH_KEY, onChange }: SearchProps) {
     onChange?.(newValue)
   }
 
-  return <SearchInput value={query} onChange={handleQueryChange} />
+  return <SearchInput value={query} onChange={handleQueryChange} {...rest} />
 }

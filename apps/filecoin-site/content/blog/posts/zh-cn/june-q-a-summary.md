@@ -21,7 +21,7 @@ title: 六月问答总结
 
 2020年6月25日，Filecoin团队举办了胡安与Filecoin项目团队其他开发人员的6月AMA活动。在一个小时的过程中，我们回答了41个有关测试网奖励、最新的路线图更新还有主网启动路线的问题。活动期间，有来自全球968个Filecoin社区成员加入了我们，特别感谢所有参与的人们以及他们提出的问题！
 
-下文是回答环节中一些最常见和相关的问题。我们希望在准备主网启动的期间举办更多这样的活动。同时敬请关注[Filecoin博客](https://filecoin.io/blog/)上的更新。您也可以通过微信公众号(Filecoin-Official)、[Filecoin Slack](https://filecoin.io/slack)和[Twitter](https://twitter.com/Filecoin)来关注我们。
+下文是回答环节中一些最常见和相关的问题。我们希望在准备主网启动的期间举办更多这样的活动。同时敬请关注[Filecoin博客](/blog)上的更新。您也可以通过微信公众号(Filecoin-Official)、[Filecoin Slack](https://filecoin.io/slack)和[Twitter](https://twitter.com/Filecoin)来关注我们。
 
 ## 提问与回答的总结
 

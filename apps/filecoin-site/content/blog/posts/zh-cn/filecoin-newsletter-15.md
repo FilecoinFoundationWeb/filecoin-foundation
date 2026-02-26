@@ -125,4 +125,4 @@ Minty，它可以在以太坊上创建基于IPFS存储的NFT。[研讨会](https
 
 前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)，也别错过[**社区资源**](https://github.com/filecoin-project/community)。可以通过 [**Filecoin Slack**](http://filecoin.io/slack)提问，在[**社区论坛**](https://discuss.filecoin.io/)讨论问题和新想法，或[**Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们你的想法。
 
-[**Filecoin博客**](https://filecoin.io/blog/)以及我们的[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)也有丰富的内容。如果仍然没有解决问题，可以回复此邮箱，我们会帮你找到答案。
+[**Filecoin博客**](/blog)以及我们的[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)也有丰富的内容。如果仍然没有解决问题，可以回复此邮箱，我们会帮你找到答案。

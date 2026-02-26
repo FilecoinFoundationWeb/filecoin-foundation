@@ -1,12 +1,10 @@
 import type { LocaleParams } from '@/i18n/types'
 
 import type { Metadata } from 'next'
-
 import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
-import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
@@ -19,10 +17,10 @@ import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
+import { CaseStudiesGrid } from './components/CaseStudiesGrid'
 import { PageHeader } from './components/PageHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getCaseStudiesByFeaturedStatus } from './utils/getCaseStudyData'
-import { CaseStudiesGrid } from './components/CaseStudiesGrid'
 
 type CaseStudiesProps = {
   params: Promise<LocaleParams>

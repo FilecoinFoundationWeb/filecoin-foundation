@@ -1,3 +1,5 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import {
   BookIcon,
   BracketsCurlyIcon,
@@ -5,37 +7,34 @@ import {
   PlugIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-import type { LinkCardData } from '@filecoin-foundation/ui-filecoin/LinkCard'
-
 import { FILECOIN_DOCS_URL, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
 
-export const developerResources = [
-  {
-    title: 'Documentation',
-    description: 'Comprehensive guides and tutorials to build on Filecoin.',
-    href: FILECOIN_DOCS_URL,
-    icon: BookIcon,
-  },
-  {
-    title: 'testFIL Faucet',
-    description:
-      'Instantly access test tokens for development and experimentation.',
-    href: 'https://faucet.calibnet.chainsafe-fil.io/',
-    icon: DropIcon,
-  },
-  {
-    title: 'RPC Endpoints',
-    description:
-      'Reliable endpoints for connecting your dApps to the Filecoin network.',
-    href: FILECOIN_DOCS_URLS.networksMainnetRCPs,
-    icon: PlugIcon,
-  },
-  {
-    title: 'Filecoin.sol',
-    description:
-      'Solidity libraries for seamless integration with the Filecoin Virtual Machine.',
-    href: FILECOIN_DOCS_URLS.smartContractDevelopingFilecoinSol,
-    icon: BracketsCurlyIcon,
-  },
-] as const satisfies Array<LinkCardData>
+export function getDeveloperResources(t: TranslationFunction) {
+  return [
+    {
+      title: t('developerResources.documentation.title'),
+      description: t('developerResources.documentation.description'),
+      href: FILECOIN_DOCS_URL,
+      icon: BookIcon,
+    },
+    {
+      title: t('developerResources.testFILFaucet.title'),
+      description: t('developerResources.testFILFaucet.description'),
+      href: 'https://faucet.calibnet.chainsafe-fil.io/',
+      icon: DropIcon,
+    },
+    {
+      title: t('developerResources.rpcEndpoints.title'),
+      description: t('developerResources.rpcEndpoints.description'),
+      href: FILECOIN_DOCS_URLS.networksMainnetRCPs,
+      icon: PlugIcon,
+    },
+    {
+      title: t('developerResources.filecoinSol.title'),
+      description: t('developerResources.filecoinSol.description'),
+      href: FILECOIN_DOCS_URLS.smartContractDevelopingFilecoinSol,
+      icon: BracketsCurlyIcon,
+    },
+  ]
+}

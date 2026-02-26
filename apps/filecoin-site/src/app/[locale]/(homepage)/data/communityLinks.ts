@@ -1,3 +1,5 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import {
   GithubLogoIcon,
   MapPinIcon,
@@ -6,7 +8,6 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 
 import type { LinkCardData } from '@filecoin-foundation/ui-filecoin/LinkCard'
-import type { TranslationFunction } from '@/i18n/types'
 
 import {
   FILECOIN_FOUNDATION_URLS,

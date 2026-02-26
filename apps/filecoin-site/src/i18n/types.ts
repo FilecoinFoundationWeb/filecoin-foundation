@@ -1,5 +1,6 @@
-import { LOCALES } from './locales'
 import { getTranslations } from 'next-intl/server'
+
+import { LOCALES } from './locales'
 
 export type Locale = (typeof LOCALES)[number]
 export type LocaleParams = { locale: Locale }

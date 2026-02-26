@@ -1,9 +1,7 @@
 import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
 
-import type { AllowedCategory } from '../types/categoriesType'
-
 export type CategoriesProps = {
-  categories: AllowedCategory | Array<AllowedCategory>
+  categories: string | Array<string>
 }
 
 export function Categories({ categories }: CategoriesProps) {

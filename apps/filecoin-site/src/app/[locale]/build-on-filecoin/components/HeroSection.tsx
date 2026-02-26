@@ -1,28 +1,33 @@
 import Image from 'next/image'
 
+import { getTranslations } from 'next-intl/server'
+
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
+import { PATHS } from '@/constants/paths'
 import { FILECOIN_CLOUD_URL, FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { SplitSectionContent } from '@/components/SplitSectionContent'
 
-export function HeroSection() {
+export async function HeroSection() {
+  const t = await getTranslations(PATHS.BUILD_ON_FILECOIN.path)
+
   return (
     <div className="overflow-x-hidden">
       <PageSection backgroundVariant="dark">
         <header className="grid max-w-full grid-cols-1 lg:grid-cols-3 lg:gap-0">
           <div className="lg:col-span-2 lg:pr-28">
             <PageHeader
-              title="Build on Filecoin: open, scalable, verifiable storage"
-              description="Filecoin is a programmable, permissionless network from the ground up with cryptographic verification and global redundancy. Integrate decentralized storage that scales with your needs and safeguards data integrity at every layer."
+              title={t('hero.title')}
+              description={t('hero.description')}
               cta={
                 <Button href={FILECOIN_DOCS_URL} variant="primary">
-                  Explore documentation
+                  {t('hero.exploreDocs')}
                 </Button>
               }
             />
@@ -37,19 +42,16 @@ export function HeroSection() {
         </header>
 
         <div className="lg:mt-80">
-          <SectionContent
-            headingTag="h2"
-            title="Announcing Filecoin Onchain Cloud"
-          >
+          <SectionContent headingTag="h2" title={t('hero.announcingFOC')}>
             <SplitSectionContent
-              title="Verifiable onchain services with transparent storage, retrieval, and payments"
+              title={t('hero.focTitle')}
               description={[
-                'Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pinning, retrieval, and payments are transparent, programmable, and interoperable by default.',
-                'This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.',
+                t('hero.focDescription1'),
+                t('hero.focDescription2'),
               ]}
               cta={[
                 <Button href={FILECOIN_CLOUD_URL} variant="primary">
-                  Get started with Filecoin Onchain Cloud
+                  {t('hero.focCta')}
                 </Button>,
               ]}
             />

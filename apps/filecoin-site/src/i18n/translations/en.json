@@ -107,12 +107,115 @@
     "metadata": {
       "title": "Filecoin Blog | Latest News, Updates & Ecosystem Insights",
       "description": "Dive into Filecoin's blog for ecosystem metrics, news on verifiable hot storage, cross-chain bridges, events, and growth insights. Stay informed on decentralized storage innovations driving AI, crypto, and data resilience."
+    },
+    "featuredPost": {
+      "badge": "Latest updates",
+      "cta": "Read full article"
+    },
+    "emptyState": {
+      "title": "No results found",
+      "description": "Try changing your search query or category filter."
+    },
+    "search": {
+      "placeholder": "Search"
+    },
+    "categoryFilter": {
+      "groupAriaLabel": "Filter blog posts by category",
+      "viewAllAriaLabel": "View all blog posts",
+      "filterByAriaLabel": "Filter by {name}",
+      "allCategories": "All Categories"
+    },
+    "categories": {
+      "all": "View All",
+      "events": "Events",
+      "interviews": "Interviews",
+      "awards": "Awards",
+      "updates": "Updates"
     }
   },
   "/community-hub": {
     "metadata": {
       "title": "Filecoin Community | Connect, Learn & Build Together",
       "description": "Join the Filecoin community—connect with developers, join events, and access resources to collaborate on building the future of decentralized storage."
+    },
+    "hero": {
+      "title": "Build, connect and grow with the Filecoin community",
+      "description": "A global network of builders, researchers, advocates and creators is shaping the future of Filecoin. Plug into the community and start contributing in your own way."
+    },
+    "getInvolvedWithCommunity": {
+      "events": {
+        "title": "Events & meetups",
+        "description": "Attend upcoming hackathons, summits, and meetups.",
+        "cta": "Explore future events"
+      },
+      "orbit": {
+        "title": "Orbit Ambassadors",
+        "description": "Advocate for Filecoin, host events, and grow the ecosystem around the world.",
+        "cta": "Learn more about Orbit"
+      },
+      "calls": {
+        "title": "Community calls",
+        "description": "Join recurring community calls to hear updates, meet contributors and start contributing.",
+        "cta": "Join community calls"
+      }
+    },
+    "ecosystemGroups": {
+      "title": "Ecosystem groups",
+      "description": "Filecoin is open-source and community-driven. Explore groups advancing the protocol and building the tools that power its ecosystem.",
+      "visitWebsite": "Visit website",
+      "filecoinFoundation": {
+        "description": "Network governance, Filecoin Plus, and grants."
+      },
+      "filOz": {
+        "description": "Core software development."
+      },
+      "polaris": {
+        "description": "Protocol Labs dev guild and hackathons."
+      },
+      "filB": {
+        "description": "Builder community and education."
+      },
+      "fidl": {
+        "description": "Research and protocol design."
+      },
+      "ansa": {
+        "description": "Applied research and ecosystem growth."
+      }
+    },
+    "connectCommunity": {
+      "title": "Connect with the community",
+      "description": "Connect with a vibrant network of developers building on Filecoin. Connect, collaborate, and grow with the ecosystem.",
+      "exploreEvents": "Explore upcoming events"
+    },
+    "networkUpgrades": {
+      "title": "Network upgrades",
+      "description": "Filecoin is governed through an open, community-driven process where technical decisions are discussed in public and implemented through regular upgrades that keep the network secure and evolving.",
+      "checkProposals": "Check proposals",
+      "learnGovernance": "Learn more about governance",
+      "currentUpgrade": "Current upgrade",
+      "upcomingUpgrade": "Upcoming upgrade",
+      "nv27": {
+        "title": "NV27 Golden Week",
+        "description": "This upgrade delivered protocol cleanups and enhancements, including cryptographic precompiles for the Filecoin Ethereum Virtual Machine (FEVM), smart contract notifications for Direct Data Onboarding, Fast Finality on Filecoin (F3)-compatible snapshot formatting, and a new deposit requirement for storage provider (SP) creation.",
+        "cta": "Read the NV27 upgrade overview",
+        "alt": "Filecoin Network Upgrade announcement for nv27 Golden Week, with gold-texture background artwork."
+      },
+      "nv28": {
+        "title": "NV28 Upcoming",
+        "description": "NV28 is expected to deliver continued protocol improvements and ecosystem enhancements, focusing on core network operations, developer experience, and storage provider functionality while supporting Filecoin's broader roadmap for scalability and security.",
+        "cta": "View the NV28 upgrade discussion",
+        "alt": "Filecoin Network Upgrade announcement for nv28, with cosmic background artwork."
+      }
+    },
+    "latestNews": {
+      "title": "Latest news",
+      "description": "Insights, updates, ecosystem spotlights, and community stories, directly from the teams building Filecoin.",
+      "viewAll": "View all articles"
+    },
+    "exploreEcosystem": {
+      "title": "Explore the ecosystem",
+      "description": "Visit Filecoin Foundation's Ecosystem Explorer to discover Filecoin projects, get inspired by what others are building, and find your place in the Filecoin ecosystem.",
+      "visitExplorer": "Visit ecosystem explorer"
     }
   },
   "/learn": {
@@ -328,6 +431,166 @@
     "metadata": {
       "title": "Build on Filecoin | Scalable Decentralized Storage for Developers & AI",
       "description": "Empower your apps with Filecoin's programmable, verifiable storage. Integrate AI datasets, dApps, cross-chain bridges, and more using open-source tools, FVM smart contracts, and IPFS for resilient, permissionless development."
+    },
+    "hero": {
+      "title": "Build on Filecoin: open, scalable, verifiable storage",
+      "description": "Filecoin is a programmable, permissionless network from the ground up with cryptographic verification and global redundancy. Integrate decentralized storage that scales with your needs and safeguards data integrity at every layer.",
+      "exploreDocs": "Explore documentation",
+      "announcingFOC": "Announcing Filecoin Onchain Cloud",
+      "focTitle": "Verifiable onchain services with transparent storage, retrieval, and payments",
+      "focDescription1": "Filecoin Onchain Cloud allows developers to build composable and verifiable services onchain where storage, pinning, retrieval, and payments are transparent, programmable, and interoperable by default.",
+      "focDescription2": "This provides direct, trustless entry points to the Filecoin network so developers can connect data, services, and applications without running their own infrastructure.",
+      "focCta": "Get started with Filecoin Onchain Cloud"
+    },
+    "builtOnFilecoin": {
+      "title": "Built on Filecoin",
+      "description": "Discover tools and applications powered by Filecoin.",
+      "visitEcosystem": "Visit ecosystem explorer",
+      "visitWebsite": "Visit website",
+      "lighthouse": {
+        "description": "Perpetual storage on the Filecoin network, allowing users to store their files long-term at a fixed price."
+      },
+      "glif": {
+        "description": "Developer tools and DeFi infrastructure for building, managing, and transacting on Filecoin."
+      },
+      "recall": {
+        "description": "Recall lets AI agents prove their intelligence, compete for rewards and reputation, and surface top performers across specialized skills."
+      },
+      "huddle01": {
+        "description": "Built on Filecoin, Huddle01 is a decentralized, real-time communication network with live audio and video software development kit for the web and mobile."
+      }
+    },
+    "tutorials": {
+      "title": "Tutorials and guides",
+      "description": "Learn the basics to start building with Filecoin.",
+      "basics": {
+        "title": "Understand Filecoin basics",
+        "description": "A quick intro to Filecoin's role as a decentralized, verifiable storage network and why developers use it.",
+        "cta": "Read the Filecoin basics guide"
+      },
+      "devEnv": {
+        "title": "Set up your development environment",
+        "description": "Install tools and create a Filecoin-compatible wallet (e.g., MetaMask) ready for development.",
+        "cta": "Follow the setup instructions"
+      },
+      "connect": {
+        "title": "Connect to the Filecoin network",
+        "description": "Use the Calibration testnet to build safely. Claim testFIL from the faucet and connect via an RPC endpoint.",
+        "cta": "Connect to the testnet"
+      },
+      "storeRetrieve": {
+        "title": "Store and retrieve your first file",
+        "description": "Upload a file using a storage API or SDK, get a CID, and retrieve it through an IPFS gateway.",
+        "cta": "Try storing your first file"
+      },
+      "programmatic": {
+        "title": "Programmatic storage in your app",
+        "description": "Use the JavaScript SDK or HTTP API to store and retrieve files directly in your application logic.",
+        "cta": "See code examples"
+      },
+      "smartContract": {
+        "title": "Deploy your first smart contract on FVM",
+        "description": "Deploy a simple smart contract to store references to Filecoin data on the FEVM.",
+        "cta": "Deploy a sample contract"
+      },
+      "firstDapp": {
+        "title": "Build your first dApp",
+        "description": "Create a minimal dApp with a frontend, storage backend, and FVM smart contract working together.",
+        "cta": "Start building a dApp"
+      },
+      "advanced": {
+        "title": "Explore advanced use cases",
+        "description": "Learn patterns for NFTs, AI datasets, hybrid cloud storage, and cross-chain integrations.",
+        "cta": "Explore advanced examples"
+      },
+      "difficulty": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
+      }
+    },
+    "codeNCorgi": {
+      "title": "Code n' Corgi: Discovering AI Pawsibilities",
+      "description": "A 7-day beginner series covering the foundations of decentralized AI — from blockchain basics to storing AI model data on Filecoin. Watch each session and follow practical guides from ecosystem partners.",
+      "watchVideo": "Watch video",
+      "day1": {
+        "title": "Day 1 — Blockchain & Filecoin Essentials",
+        "description": "Learn the basics of Blockchain and Filecoin — the Data Layer of AI — and kickstart your journey into decentralized tech."
+      },
+      "day2": {
+        "title": "Day 2 — Understanding Data DAOs",
+        "description": "Understand why high-quality data matters, how Data DAOs solve data ownership challenges, and get set up with FoxWallet."
+      },
+      "day3": {
+        "title": "Day 3 — Storing Data on Filecoin (Storacha)",
+        "description": "Explore how decentralized storage supports smarter AI, and learn how to store data on Filecoin through Storacha."
+      },
+      "day4": {
+        "title": "Day 4 — Build Your First Subgraph",
+        "description": "Build, deploy, and manage subgraphs to track smart-contract events powering your AI agents — guided by Protofire."
+      },
+      "day5": {
+        "title": "Day 5 — Build Your First AI Agent",
+        "description": "Build your first AI agent on Filecoin with CrewAI through a beginner-friendly, step-by-step workflow."
+      },
+      "day6": {
+        "title": "Day 6 — Hot Storage + dApp Building",
+        "description": "Get hands-on with Akave's hot-storage solution, then explore FILFrame — your starting point for building a dApp."
+      },
+      "day7": {
+        "title": "Day 7 — Product-a-thon & Model Storage",
+        "description": "Prepare for the Product-a-thon: explore real project examples storing AI model data on Filecoin and find problem statements to build on."
+      }
+    },
+    "developerResources": {
+      "title": "Developer resources",
+      "documentation": {
+        "title": "Documentation",
+        "description": "Comprehensive guides and tutorials to build on Filecoin."
+      },
+      "testFILFaucet": {
+        "title": "testFIL Faucet",
+        "description": "Instantly access test tokens for development and experimentation."
+      },
+      "rpcEndpoints": {
+        "title": "RPC Endpoints",
+        "description": "Reliable endpoints for connecting your dApps to the Filecoin network."
+      },
+      "filecoinSol": {
+        "title": "Filecoin.sol",
+        "description": "Solidity libraries for seamless integration with the Filecoin Virtual Machine."
+      }
+    },
+    "getInvolved": {
+      "title": "Get involved",
+      "description": "Whether you're just getting started or looking to deepen your contributions, there are many ways to get involved.",
+      "applyGrant": {
+        "title": "Apply for a grant",
+        "description": "Secure funding to support your Filecoin-based project or research."
+      },
+      "retroPGF": {
+        "title": "Explore Retroactive Public Goods Funding",
+        "description": "Get rewarded for impactful, open-source contributions that advance the Filecoin ecosystem."
+      },
+      "orbitAmbassador": {
+        "title": "Become an Orbit ambassador",
+        "description": "Join the Orbit community to advocate for decentralized tech, support new builders, and grow the Filecoin movement globally."
+      },
+      "communityEvents": {
+        "title": "Attend community events",
+        "description": "Connect with builders, researchers, and advocates at hackathons, meetups, and summits around the world."
+      }
+    },
+    "filecoinFeatures": {
+      "archivalStorage": {
+        "title": "Large archival storage"
+      },
+      "crossChainBridges": {
+        "title": "Cross-chain data bridges"
+      },
+      "storageEnabledDapps": {
+        "title": "Storage-enabled dApps"
+      }
     }
   },
   "/case-studies": {
@@ -378,6 +641,59 @@
     "metadata": {
       "title": "Become a Filecoin Storage Provider | Earn Rewards in Decentralized Network",
       "description": "Join the Filecoin network as a storage provider to power global decentralized infrastructure. Use your data center to earn FIL rewards, diversify revenue, and scale with demand while preserving vital data in a permissionless ecosystem."
+    },
+    "hero": {
+      "title": "Power the world's largest decentralized storage network",
+      "description": "Play a vital role in the future of decentralized storage. Become a Filecoin storage provider and contribute capacity to a global system preserving humanity's most important information.",
+      "exploreDocs": "Explore documentation",
+      "bookCall": "Book a call with the onboarding team"
+    },
+    "logoSection": {
+      "title": "Join a global network of storage providers"
+    },
+    "gettingStarted": {
+      "title": "Getting started with PDP storage",
+      "description": "Running a warm storage node using Proof of Data Possession (PDP) is the easiest way to begin offering Filecoin storage — no expensive hardware or long-term collateral required.",
+      "becomePDP": "Become a PDP storage provider",
+      "learnMorePDP": "Learn more about PDP Storage",
+      "lowestHardware": {
+        "title": "Lowest hardware costs",
+        "description": "Warm storage requires minimal infrastructure, making it affordable to start offering storage with just basic compute and disk."
+      },
+      "fastestPath": {
+        "title": "Fastest path to becoming a SP",
+        "description": "Get online quickly with a simple setup and no sealing hardware — perfect for testing, learning, and onboarding your first clients."
+      },
+      "idealForNew": {
+        "title": "Ideal for new operators and small teams",
+        "description": "Operate a reliable, permissionless storage service without managing complex pipelines or large-scale hardware."
+      }
+    },
+    "scalingOperations": {
+      "title": "Scaling your storage operations",
+      "description": "If you're already running a warm storage node and want to expand, Filecoin supports enterprise-grade proofs like Proof of Replication (PoRep) and Proof of Spacetime (PoSt) — enabling high-capacity, production-scale storage operations. Scaling involves:",
+      "learnMoreRequirements": "Learn more about the requirements",
+      "sealingHardware": {
+        "title": "Dedicated sealing hardware (CPU/GPU)",
+        "description": "High-performance machines designed to handle sealing workloads reliably and at scale."
+      },
+      "storagePipelines": {
+        "title": "High-performance storage pipelines",
+        "description": "Optimized data paths that maintain consistent throughput and stable thermal performance."
+      },
+      "distributedSealing": {
+        "title": "Distributed sealing systems",
+        "description": "Run parallelized sealing workflows with networked workers and production-grade tooling."
+      },
+      "deepSupport": {
+        "title": "Deep support from Filecoin solution architects",
+        "description": "Get expert guidance on architecture, scaling strategy, and best practices for large deployments."
+      }
+    },
+    "needHelp": {
+      "title": "Need help choosing the right architecture?",
+      "description": "Our team can guide you through PoRep requirements, recommended hardware, sealing pipelines, and operational best practices.",
+      "bookCall": "Book a call with the onboarding team"
     }
   },
   "/provide-storage/onboarding": {

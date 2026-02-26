@@ -1,3 +1,5 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import type {
   ExpandedNavItem,
   NavItem,
@@ -13,7 +15,6 @@ import {
 } from '@/constants/siteMetadata'
 
 import { pickNavItem } from '../utils/pickNavItem'
-import type { TranslationFunction } from '@/i18n/types'
 
 type FooterNavigationItem = { title: string; items: Array<NavItem> }
 

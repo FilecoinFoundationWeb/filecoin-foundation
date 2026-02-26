@@ -1,3 +1,4 @@
+import { LOCALES } from '@/i18n/locales'
 import type { LocaleParams } from '@/i18n/types'
 
 import { getTranslations, setRequestLocale } from 'next-intl/server'
@@ -10,7 +11,6 @@ import type { SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
-import { LOCALES } from '@/i18n/locales'
 
 import { createMetadata } from '@/utils/createMetadata'
 

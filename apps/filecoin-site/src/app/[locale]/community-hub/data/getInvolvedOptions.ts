@@ -1,3 +1,5 @@
+import type { TranslationFunction } from '@/i18n/types'
+
 import {
   ClockCounterClockwiseIcon,
   CurrencyDollarIcon,
@@ -5,38 +7,34 @@ import {
   MegaphoneIcon,
 } from '@phosphor-icons/react/dist/ssr'
 
-import type { LinkCardData } from '@filecoin-foundation/ui-filecoin/LinkCard'
-
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 
-export const getInvolvedOptions = [
-  {
-    title: 'Apply for a grant',
-    description:
-      'Secure funding to support your Filecoin-based project or research.',
-    href: FILECOIN_FOUNDATION_URLS.grants.href,
-    icon: CurrencyDollarIcon,
-  },
-  {
-    title: 'Explore Retroactive Public Goods Funding',
-    description:
-      'Get rewarded for impactful, open-source contributions that advance the Filecoin ecosystem.',
-    href: 'https://www.fil-retropgf.io/',
-    icon: ClockCounterClockwiseIcon,
-  },
-  {
-    title: 'Become an Orbit ambassador',
-    description:
-      'Join the Orbit community to advocate for decentralized tech, support new builders, and grow the Filecoin movement globally.',
-    href: FILECOIN_FOUNDATION_URLS.orbit.href,
-    icon: MegaphoneIcon,
-  },
-  {
-    title: 'Attend community events',
-    description:
-      'Connect with builders, researchers, and advocates at hackathons, meetups, and summits around the world.',
-    href: FILECOIN_FOUNDATION_URLS.events.href,
-    icon: MapPinLineIcon,
-  },
-] as const satisfies Array<LinkCardData>
+export function getGetInvolvedOptions(t: TranslationFunction) {
+  return [
+    {
+      title: t('getInvolved.applyGrant.title'),
+      description: t('getInvolved.applyGrant.description'),
+      href: FILECOIN_FOUNDATION_URLS.grants.href,
+      icon: CurrencyDollarIcon,
+    },
+    {
+      title: t('getInvolved.retroPGF.title'),
+      description: t('getInvolved.retroPGF.description'),
+      href: 'https://www.fil-retropgf.io/',
+      icon: ClockCounterClockwiseIcon,
+    },
+    {
+      title: t('getInvolved.orbitAmbassador.title'),
+      description: t('getInvolved.orbitAmbassador.description'),
+      href: FILECOIN_FOUNDATION_URLS.orbit.href,
+      icon: MegaphoneIcon,
+    },
+    {
+      title: t('getInvolved.communityEvents.title'),
+      description: t('getInvolved.communityEvents.description'),
+      href: FILECOIN_FOUNDATION_URLS.events.href,
+      icon: MapPinLineIcon,
+    },
+  ]
+}

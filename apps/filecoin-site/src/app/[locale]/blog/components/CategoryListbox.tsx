@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Listbox,
   ListboxButton,
@@ -6,18 +8,28 @@ import {
 } from '@headlessui/react'
 import { CaretDownIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
+import { useTranslations } from 'next-intl'
 
 import { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter/constants'
 import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
 import { backgroundVariants } from '@filecoin-foundation/ui-filecoin/Section/Section'
 
+import { PATHS } from '@/constants/paths'
+
 import { blogCategories, type BlogCategoryKey } from '../data/blogCategories'
 import { useCategoryState } from '../hooks/useCategoryState'
 
-const DEFAULT_BUTTON_TEXT = 'All Categories'
-
 export function CategoryListbox() {
+  const t = useTranslations(PATHS.BLOG.path)
   const [selectedCategory, setSelectedCategory] = useCategoryState()
+
+  function getCategoryDisplayName(categoryId: BlogCategoryKey) {
+    if (categoryId === DEFAULT_FILTER_ID) {
+      return t('categoryFilter.allCategories')
+    }
+
+    return t(`categories.${categoryId}`)
+  }
 
   return (
     <Listbox value={selectedCategory} onChange={handleCategoryChange}>
@@ -65,15 +77,4 @@ export function CategoryListbox() {
   function handleCategoryChange(newSelection: BlogCategoryKey) {
     setSelectedCategory(newSelection)
   }
-}
-
-function getCategoryDisplayName(categoryId: BlogCategoryKey) {
-  if (categoryId === DEFAULT_FILTER_ID) {
-    return DEFAULT_BUTTON_TEXT
-  }
-
-  return (
-    blogCategories.find(({ id }) => id === categoryId)?.name ??
-    DEFAULT_BUTTON_TEXT
-  )
 }
