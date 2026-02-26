@@ -18,21 +18,24 @@ export function usePageQueryState(pageCount: number) {
 
   const goToNextPage = useCallback(() => {
     if (canGoForward) {
-      setPage(page + 1)
+      return setPage((page) => page + 1)
     }
-  }, [page, canGoForward, setPage])
+    console.warn('Cannot go to next page')
+  }, [canGoForward, setPage])
 
   const goToPreviousPage = useCallback(() => {
     if (canGoBack) {
-      setPage(page - 1)
+      return setPage((page) => page - 1)
     }
-  }, [page, canGoBack, setPage])
+    console.warn('Cannot go to previous page')
+  }, [canGoBack, setPage])
 
   const goToPage = useCallback(
     (number: number) => {
       if (number >= 1 && number <= pageCount) {
-        setPage(number)
+        return setPage(number)
       }
+      console.warn('Cannot go to page ', number)
     },
     [pageCount, setPage],
   )
