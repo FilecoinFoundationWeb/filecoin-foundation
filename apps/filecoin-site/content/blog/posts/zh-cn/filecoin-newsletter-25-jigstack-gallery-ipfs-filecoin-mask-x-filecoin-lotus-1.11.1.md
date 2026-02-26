@@ -145,5 +145,5 @@ Filecoin韩语频道已在很多热门社交网络和讨论组中推出。加入
 ## 加入我们
 
 前往 [**GitHub上的Filecoin项目**](https://github.com/filecoin-project)并查看 [**社区资源**](https://github.com/filecoin-project/community)。您可以在[**Filecoin Slack**](http://filecoin.io/slack)频道提问，还可以在[**社区论坛**](https://discuss.filecoin.io/)中讨论问题和新想法。您还可以关注我们的微信公众号@Filecoin-Official或者[**在Twitter上关注@Filecoin**](https://twitter.com/Filecoin)告诉我们您的想法。
-[**Filecoin博客**](https://filecoin.io/blog/)和[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)对初学者来说也是重要的信息来源。
+[**Filecoin博客**](/blog)和[**YouTube 频道**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA)对初学者来说也是重要的信息来源。
 在此 [**订阅**](https://mailchi.mp/filecoin.io/subscribe)，即可直接收到此类资讯。

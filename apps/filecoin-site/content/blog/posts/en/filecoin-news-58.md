@@ -90,6 +90,6 @@ The community is invited to apply for an exclusive party celebrating the success
 
 Head over to the [**Filecoin project on GitHub**](https://github.com/filecoin-project) and be sure to take a look at the [**community resources**](https://github.com/filecoin-project/community). Ask questions in the [**Filecoin Slack**](http://filecoin.io/slack), discuss issues or new ideas in [**the community forum**](https://discuss.filecoin.io/), follow us on WeChat @Filecoin-Official or send us your thoughts [**on Twitter by following @Filecoin**](https://twitter.com/Filecoin).
 
-[**The Filecoin blog**](https://filecoin.io/blog/) and [**YouTube channel**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) are also great sources of information if you’re just getting started.
+[**The Filecoin blog**](/blog) and [**YouTube channel**](https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA) are also great sources of information if you’re just getting started.
 
 To receive this newsletter directly to your inbox, [**subscribe**](https://mailchi.mp/filecoin.io/subscribe)!
