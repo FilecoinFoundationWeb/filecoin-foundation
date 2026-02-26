@@ -3,6 +3,8 @@
   "tasks": {
     "build": {
       "env": [
+        "MAILCHIMP_U",
+        "MAILCHIMP_LIST_ID",
         "PERCY_TOKEN_FILECOIN_SITE",
         "SENTRY_AUTH_TOKEN_FILECOIN_SITE",
         "TINA_TOKEN",
