@@ -8,6 +8,10 @@ import { CarouselNavigation } from './CarouselNavigation'
 export function CarouselAutoScrollControls() {
   const { isScrolling, playAutoScroll, stopAutoScroll } = useCarousel()
 
+  if (!playAutoScroll || !stopAutoScroll) {
+    return null
+  }
+
   return (
     <div className="mt-4 flex items-center justify-between">
       <CarouselNavigation />

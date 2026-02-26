@@ -5,7 +5,6 @@ import {
   useCallback,
   useContext,
   useEffect,
-  useRef,
   useState,
 } from 'react'
 
@@ -65,14 +64,12 @@ export function Carousel({
 }: React.ComponentProps<'div'> & CarouselProps) {
   const [isScrolling, setIsScrolling] = useState(autoPlay)
 
-  const autoScrollPluginRef = useRef(
-    AutoScroll({
-      startDelay: 0,
-      speed: 1.5,
-      stopOnMouseEnter: false,
-      stopOnInteraction: false,
-    }),
-  )
+  const autoScrollPlugin = AutoScroll({
+    stopOnMouseEnter: false,
+    stopOnInteraction: false,
+    startDelay: 0,
+    speed: 1.5,
+  })
 
   const [carouselRef, api] = useEmblaCarousel(
     {
@@ -80,7 +77,7 @@ export function Carousel({
       axis: getCarouselAxis(orientation),
       loop: opts?.loop ?? true,
     },
-    [autoScrollPluginRef.current],
+    [autoScrollPlugin],
   )
 
   const { canScrollPrev, canScrollNext, scrollPrev, scrollNext } =
