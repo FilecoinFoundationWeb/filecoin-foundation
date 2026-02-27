@@ -86,6 +86,7 @@ export function Carousel({
 
   useEffect(() => {
     if (!api) return
+
     const plugin = api.plugins().autoScroll
     if (!plugin) return
 
@@ -96,14 +97,27 @@ export function Carousel({
     }
   }, [api, autoPlay])
 
+  useEffect(() => {
+    if (!api) return
+
+    const onPlay = () => setIsScrolling(true)
+    const onStop = () => setIsScrolling(false)
+
+    api.on('autoScroll:play', onPlay)
+    api.on('autoScroll:stop', onStop)
+
+    return () => {
+      api.off('autoScroll:play', onPlay)
+      api.off('autoScroll:stop', onStop)
+    }
+  }, [api])
+
   const playAutoScroll = useCallback(() => {
     api?.plugins().autoScroll?.play()
-    setIsScrolling(true)
   }, [api])
 
   const stopAutoScroll = useCallback(() => {
     api?.plugins().autoScroll?.stop()
-    setIsScrolling(false)
   }, [api])
 
   return (
