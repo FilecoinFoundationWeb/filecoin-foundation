@@ -213,6 +213,10 @@
       "types": "./dist/components/PageSection.d.ts",
       "default": "./dist/components/PageSection.js"
     },
+    "./Pagination": {
+      "types": "./dist/components/Pagination/index.d.ts",
+      "default": "./dist/components/Pagination/index.js"
+    },
     "./RefreshButton": {
       "types": "./dist/components/RefreshButton.d.ts",
       "default": "./dist/components/RefreshButton.js"
@@ -359,6 +363,7 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
+    "@filecoin-foundation/hooks": "0.0.0",
     "@tailwindcss/typography": "^0.5.19",
     "@tanstack/react-table": "^8.21.3",
     "next": "^16.1.6",

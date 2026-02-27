@@ -6,9 +6,9 @@ import { MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr'
 import { useTranslations } from 'next-intl'
 
 import { useFilter } from '@filecoin-foundation/hooks/useFilter'
-import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { EmptyStateCard } from '@filecoin-foundation/ui-filecoin/EmptyStateCard'
+import { usePagination } from '@filecoin-foundation/ui-filecoin/Pagination'
 import {
   normalizeSearchParams,
   Search,
@@ -26,6 +26,7 @@ import { postMatchesCategory } from '../utils/postMatchesCategory'
 import { BlogCard } from './BlogCard'
 import { BlogCategoryFilter } from './BlogCategoryFilter'
 import { RSSFeed } from './RSSFeed'
+import { TranslatedPagination } from './TranslatedPagination'
 
 type BlogPostListProps = {
   posts: Array<BlogPostPreview>
@@ -118,7 +119,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
           </CardGrid>
 
           <div className="mx-auto mt-20 max-w-2xl">
-            <Pagination
+            <TranslatedPagination
               pageCount={pageCount}
               numberRange={PAGINATION_INDEX_MAX_RANGE}
             />
