@@ -779,7 +779,7 @@
   },
   "pagination": {
     "prevAriaLabel": "Go to previous page",
-    "prev": "Previous",
+    "prev": "Prev",
     "nextAriaLabel": "Go to next page",
     "next": "Next"
   }
