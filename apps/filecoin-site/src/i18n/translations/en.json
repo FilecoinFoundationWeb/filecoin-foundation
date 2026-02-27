@@ -762,7 +762,12 @@
     "placeholder": "Your email",
     "submitAriaLabel": "Submit newsletter subscription",
     "emailInvalid": "Your email format is invalid",
-    "emailRequired": "Your email is required"
+    "emailRequired": "Your email is required",
+    "subscriptionFailed": "Subscription failed",
+    "alreadySubscribed": "You are already subscribed to the Filecoin newsletter.",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "successMessage": "Check your email to confirm your subscription.",
+    "errorOccurred": "An error has occurred. Please try again."
   },
   "storageProviderCard": {
     "perMonth": "/ month",

@@ -754,7 +754,12 @@
     "placeholder": "您的邮箱",
     "submitAriaLabel": "提交订阅",
     "emailInvalid": "邮箱格式无效",
-    "emailRequired": "请输入邮箱"
+    "emailRequired": "请输入邮箱",
+    "subscriptionFailed": "订阅失败",
+    "alreadySubscribed": "您已订阅 Filecoin 新闻。",
+    "errorGeneric": "出了点问题，请重试。",
+    "successMessage": "请查收邮件以确认订阅。",
+    "errorOccurred": "发生错误，请重试。"
   },
   "storageProviderCard": {
     "perMonth": "/ 月",
