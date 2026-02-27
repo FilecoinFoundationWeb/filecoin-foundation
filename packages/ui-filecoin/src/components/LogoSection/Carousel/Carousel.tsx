@@ -57,7 +57,7 @@ export function Carousel({
   orientation = 'horizontal',
   opts,
   setApi,
-  autoPlay = false,
+  autoPlay = true,
   className,
   children,
   ...props

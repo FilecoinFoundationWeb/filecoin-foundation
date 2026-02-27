@@ -9,7 +9,7 @@ export function CarouselAutoScrollControls() {
   const { isScrolling, playAutoScroll, stopAutoScroll } = useCarousel()
 
   return (
-    <div className="mt-4 flex items-center justify-between">
+    <div className="mt-6 flex items-center justify-between">
       <CarouselNavigation />
       <Button
         variant="tertiary"
