@@ -1,7 +1,7 @@
 import { Button, type ButtonProps } from '@headlessui/react'
 import { clsx } from 'clsx'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
+import { Icon } from '../Icon'
 import type { DirectionData } from '@filecoin-foundation/utils/constants/paginationDirections'
 
 type PaginationArrowButtonProps = {
