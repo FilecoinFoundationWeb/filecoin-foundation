@@ -7,7 +7,7 @@ import {
   type PaginationProps,
 } from '@filecoin-foundation/ui-filecoin/Pagination'
 
-import { getPaginationDirections } from '../data/pagination'
+import { getPaginationDirections, getPaginationLabels } from '../data/pagination'
 
 type TranslatedPaginationProps = Pick<
   PaginationProps,
@@ -17,6 +17,7 @@ type TranslatedPaginationProps = Pick<
 export function TranslatedPagination(props: TranslatedPaginationProps) {
   const t = useTranslations()
   const directions = getPaginationDirections(t)
+  const labels = getPaginationLabels(t)
 
-  return <Pagination {...props} directions={directions} />
+  return <Pagination {...props} directions={directions} labels={labels} />
 }

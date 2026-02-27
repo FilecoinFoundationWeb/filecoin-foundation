@@ -8,13 +8,18 @@ import {
   useResponsiveRange,
 } from '@filecoin-foundation/hooks/useResponsiveRange'
 import { useVisiblePages } from '@filecoin-foundation/hooks/useVisiblePages'
-import { DIRECTIONS } from '@filecoin-foundation/utils/constants/paginationDirections'
+import {
+  DIRECTIONS,
+  LABELS,
+  type PaginationLabels,
+} from '@filecoin-foundation/utils/constants/paginationLabels'
 
 import { PaginationArrowButton } from './PaginationArrowButton'
 import { PaginationDelimiter } from './PaginationDelimiter'
 
 export type PaginationProps = {
   directions?: typeof DIRECTIONS
+  labels?: PaginationLabels
   pageCount: number
   numberRange?: number
 }
@@ -23,6 +28,7 @@ export function Pagination({
   pageCount,
   numberRange = MAX_RANGE,
   directions = DIRECTIONS,
+  labels = LABELS,
 }: PaginationProps) {
   if (numberRange > MAX_RANGE) {
     console.warn(
@@ -46,7 +52,7 @@ export function Pagination({
 
   return (
     <nav
-      aria-label="Pagination"
+      aria-label={labels.nav}
       role="navigation"
       className="pagination flex w-full justify-between"
     >
@@ -68,7 +74,7 @@ export function Pagination({
           >
             {typeof item === 'number' ? (
               <Button
-                aria-label={`Go to page ${item}`}
+                aria-label={labels.goToPage(item)}
                 data-current={item === page}
                 className="pagination-number-button cursor-pointer"
                 onClick={() => goToPage(item)}

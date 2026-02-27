@@ -11,3 +11,13 @@ export const DIRECTIONS = {
   prev: { aria: 'Go to previous page', cta: 'Prev', icon: CaretLeftIcon },
   next: { aria: 'Go to next page', cta: 'Next', icon: CaretRightIcon },
 } satisfies Record<Direction, DirectionData>
+
+export type PaginationLabels = {
+  nav: string
+  goToPage: (page: number) => string
+}
+
+export const LABELS = {
+  nav: 'Pagination',
+  goToPage: (page) => `Go to page ${page}`,
+} satisfies PaginationLabels

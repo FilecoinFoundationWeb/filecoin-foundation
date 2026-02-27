@@ -1,7 +1,7 @@
 import { Button, type ButtonProps } from '@headlessui/react'
 import { clsx } from 'clsx'
 
-import type { DirectionData } from '@filecoin-foundation/utils/constants/paginationDirections'
+import type { DirectionData } from '@filecoin-foundation/utils/constants/paginationLabels'
 
 import { Icon } from '../Icon'
 

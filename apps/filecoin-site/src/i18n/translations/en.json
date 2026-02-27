@@ -781,6 +781,8 @@
     "prevAriaLabel": "Go to previous page",
     "prev": "Prev",
     "nextAriaLabel": "Go to next page",
-    "next": "Next"
+    "next": "Next",
+    "navAriaLabel": "Pagination",
+    "goToPage": "Go to page {page}"
   }
 }

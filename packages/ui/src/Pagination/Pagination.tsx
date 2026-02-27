@@ -8,7 +8,7 @@ import {
   useResponsiveRange,
 } from '@filecoin-foundation/hooks/useResponsiveRange'
 import { useVisiblePages } from '@filecoin-foundation/hooks/useVisiblePages'
-import { DIRECTIONS } from '@filecoin-foundation/utils/constants/paginationDirections'
+import { DIRECTIONS } from '@filecoin-foundation/utils/constants/paginationLabels'
 
 import { PaginationArrowButton } from './PaginationArrowButton'
 import { PaginationDelimiter } from './PaginationDelimiter'

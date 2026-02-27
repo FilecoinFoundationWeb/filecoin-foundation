@@ -1,10 +1,11 @@
 import type { TranslationFunction } from '@/i18n/types'
 
+import type { PaginationLabels } from '@filecoin-foundation/ui-filecoin/Pagination'
 import {
   DIRECTIONS,
   type Direction,
   type DirectionData,
-} from '@filecoin-foundation/utils/constants/paginationDirections'
+} from '@filecoin-foundation/utils/constants/paginationLabels'
 
 export function getPaginationDirections(t: TranslationFunction) {
   return {
@@ -19,4 +20,11 @@ export function getPaginationDirections(t: TranslationFunction) {
       icon: DIRECTIONS.next.icon,
     },
   } as const satisfies Record<Direction, DirectionData>
+}
+
+export function getPaginationLabels(t: TranslationFunction) {
+  return {
+    nav: t('pagination.navAriaLabel'),
+    goToPage: (page: number) => t('pagination.goToPage', { page }),
+  } satisfies PaginationLabels
 }
