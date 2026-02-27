@@ -1,6 +1,10 @@
 import type { TranslationFunction } from '@/i18n/types'
 
-import { DIRECTIONS } from '@filecoin-foundation/utils/constants/paginationDirections'
+import {
+  DIRECTIONS,
+  type Direction,
+  type DirectionData,
+} from '@filecoin-foundation/utils/constants/paginationDirections'
 
 export function getPaginationDirections(t: TranslationFunction) {
   return {
@@ -14,5 +18,5 @@ export function getPaginationDirections(t: TranslationFunction) {
       cta: t('pagination.next'),
       icon: DIRECTIONS.next.icon,
     },
-  } as const
+  } as const satisfies Record<Direction, DirectionData>
 }

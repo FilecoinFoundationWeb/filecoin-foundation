@@ -1,8 +1,9 @@
 import { Button, type ButtonProps } from '@headlessui/react'
 import { clsx } from 'clsx'
 
-import { Icon } from '../Icon'
 import type { DirectionData } from '@filecoin-foundation/utils/constants/paginationDirections'
+
+import { Icon } from '../Icon'
 
 type PaginationArrowButtonProps = {
   reversed?: boolean

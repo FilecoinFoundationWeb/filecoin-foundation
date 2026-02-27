@@ -1,6 +1,6 @@
 import { CaretLeftIcon, CaretRightIcon, type Icon } from '@phosphor-icons/react'
 
-type Direction = 'prev' | 'next'
+export type Direction = 'prev' | 'next'
 export type DirectionData = {
   aria: string
   cta: string
