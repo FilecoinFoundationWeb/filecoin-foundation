@@ -42,7 +42,7 @@ export function CarouselButton({
       data-slot={isPrev ? 'carousel-previous' : 'carousel-next'}
       disabled={!canScroll}
       className={clsx(
-        'focus:brand-outline grid size-8 cursor-pointer place-items-center rounded-full bg-zinc-800 hover:bg-zinc-700 focus:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-zinc-800 lg:size-8',
+        'focus:brand-outline grid size-8 cursor-pointer place-items-center rounded-full bg-zinc-800 hover:bg-zinc-700 focus:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-zinc-800',
         className,
       )}
       onClick={onClick}
