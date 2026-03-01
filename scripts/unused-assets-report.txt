@@ -2,21 +2,18 @@ UNUSED ASSETS REPORT
 ===================
 
 ff-site:
-  public/assets/images/64423beb4e4c687814f57abf_0-ds-rp-2ps7f4wkfo.jpeg
-  public/assets/images/643e66c80a81033d920c68ba_1-b1odemnhfczn_24q2linww.webp
-  Total: 2
+  public/assets/images/2025_ffannualreport_gsr_1x.webp
+  Total: 1
 
 ffdweb-site:
-  public/assets/images/digest-issue2-0-cover.webp
-  Total: 1
+  Total: 0
 
 filecoin-site:
-  public/assets/images/lab-team.webp
-  Total: 1
+  Total: 0
 
 uxit:
   Total: 0
 
-Total unused: 4
-Total deleted: 4
-Generated: 2026-02-01T03:10:40.774Z
+Total unused: 1
+Total deleted: 1
+Generated: 2026-03-01T03:11:10.141Z
