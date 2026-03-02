@@ -22,6 +22,7 @@ import { SectionDivider } from '@/components/SectionDivider'
 import { useCategoryState } from '../hooks/useCategoryState'
 import type { BlogPostPreview } from '../types/blogPostType'
 import { postMatchesCategory } from '../utils/postMatchesCategory'
+import { translateBlogCategory } from '../utils/translateBlogCategory'
 
 import { BlogCard } from './BlogCard'
 import { BlogCategoryFilter } from './BlogCategoryFilter'
@@ -106,7 +107,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
                   description={excerpt}
                   author={author}
                   date={publishedOn}
-                  tags={categories.map((cat) => t(`categories.${cat}`))}
+                  tags={categories.map((cat) => translateBlogCategory(t, cat))}
                   image={
                     image && {
                       src: image.url,

@@ -13,7 +13,6 @@ import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { SimpleCard } from '@filecoin-foundation/ui-filecoin/SimpleCard'
-import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -37,8 +36,7 @@ import { getNetworkUpgrades } from './data/networkUpgrades'
 import { socialMedia } from './data/socialMedia'
 
 import { BlogCard } from '@/blog/components/BlogCard'
-import type { BlogPostPreview } from '@/blog/types/blogPostType'
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { getFeaturedBlogPosts } from '@/blog/utils/getFeaturedBlogPosts'
 
 type BlogProps = {
   params: Promise<LocaleParams>
@@ -48,10 +46,7 @@ export default async function CommunityHub({ params }: BlogProps) {
   const { locale } = await params
   const t = await getTranslations(PATHS.COMMUNITY_HUB.path)
 
-  const featuredBlogPosts = getFeaturedBlogPosts({
-    posts: await getBlogPostsData(locale),
-    limit: 3,
-  })
+  const featuredBlogPosts = await getFeaturedBlogPosts(locale, 3)
 
   const getInvolvedWithCommunity = getGetInvolvedWithCommunity(t)
   const ecosystemGroups = getEcosystemGroups(t)
@@ -208,18 +203,8 @@ export default async function CommunityHub({ params }: BlogProps) {
           }
         >
           <CardGrid as="ul" variant="mdTwoLgThreeWide">
-            {featuredBlogPosts.map((post: BlogPostPreview) => {
-              const {
-                title,
-                slug,
-                excerpt,
-                categories,
-                image,
-                author,
-                publishedOn,
-              } = post
-
-              return (
+            {featuredBlogPosts.map(
+              ({ title, slug, excerpt, tags, image, author, publishedOn }) => (
                 <BlogCard
                   key={title}
                   slug={slug}
@@ -227,7 +212,7 @@ export default async function CommunityHub({ params }: BlogProps) {
                   description={excerpt}
                   author={author}
                   date={publishedOn}
-                  tags={categories}
+                  tags={tags}
                   image={
                     image && {
                       src: image.url,
@@ -235,8 +220,8 @@ export default async function CommunityHub({ params }: BlogProps) {
                     }
                   }
                 />
-              )
-            })}
+              ),
+            )}
           </CardGrid>
         </SectionContent>
       </PageSection>
