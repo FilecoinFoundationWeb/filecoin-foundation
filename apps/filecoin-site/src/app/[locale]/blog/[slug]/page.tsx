@@ -41,7 +41,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
   return (
     <>
-      <StructuredDataScript structuredData={generateStructuredData(data)} />
+      <StructuredDataScript structuredData={generateStructuredData(data, locale)} />
       <Navigation backgroundVariant="light" />
       <PageSection backgroundVariant="light" paddingVariant="topCompact">
         <div className="mx-auto max-w-3xl">

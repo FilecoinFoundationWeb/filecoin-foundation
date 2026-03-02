@@ -3,7 +3,7 @@ import { PATHS } from '@/constants/paths'
 import type { BlogPost } from '../../types/blogPostType'
 import { generateBlogPostStructuredData } from '../../utils/generateBlogPostStructuredData'
 
-export function generateStructuredData(data: BlogPost) {
+export function generateStructuredData(data: BlogPost, locale: string) {
   const { title, excerpt, image, publishedOn } = data
   return generateBlogPostStructuredData({
     path: `${PATHS.BLOG.path}/${data.slug}`,
@@ -12,5 +12,6 @@ export function generateStructuredData(data: BlogPost) {
     image: image ? image.url : undefined,
     datePublished: publishedOn,
     dateModified: publishedOn,
+    locale,
   })
 }

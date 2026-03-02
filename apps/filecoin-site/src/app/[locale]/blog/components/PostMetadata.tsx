@@ -1,6 +1,5 @@
 import clsx from 'clsx'
-
-import { formatDate } from '@filecoin-foundation/utils/dateUtils'
+import { useFormatter } from 'next-intl'
 
 import type { BlogPost } from '../types/blogPostType'
 
@@ -10,7 +9,12 @@ type PostMetadataProps = {
 }
 
 export function PostMetadata({ author, date }: PostMetadataProps) {
-  const formattedDate = formatDate(date)
+  const format = useFormatter()
+  const formattedDate = format.dateTime(date, {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  })
 
   const baseStyles = 'text-sm text-(--color-paragraph-text)'
 

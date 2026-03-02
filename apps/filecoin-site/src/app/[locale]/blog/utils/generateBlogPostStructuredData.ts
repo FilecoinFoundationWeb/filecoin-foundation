@@ -16,6 +16,7 @@ type GenerateBlogPostStructuredDataProps = {
   datePublished: Date
   dateModified?: Date
   image?: BlogPosting['image']
+  locale?: string
 }
 
 export function generateBlogPostStructuredData({
@@ -25,6 +26,7 @@ export function generateBlogPostStructuredData({
   image,
   datePublished,
   dateModified,
+  locale = 'en',
 }: GenerateBlogPostStructuredDataProps): BlogPostPageGraph {
   const blogPost: BlogPosting = {
     '@type': 'BlogPosting',
@@ -42,7 +44,7 @@ export function generateBlogPostStructuredData({
     },
     publisher: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
     isPartOf: { '@id': STRUCTURED_DATA_IDS.BLOG },
-    inLanguage: 'en',
+    inLanguage: locale,
   }
 
   return {
