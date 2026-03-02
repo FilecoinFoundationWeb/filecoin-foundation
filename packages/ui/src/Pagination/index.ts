@@ -1,4 +1,3 @@
-import { Pagination } from './Pagination'
-import { usePagination } from './usePagination'
+export { Pagination } from './Pagination'
 
-export { Pagination, usePagination }
+export { usePagination } from '@filecoin-foundation/hooks/usePagination'

@@ -773,5 +773,13 @@
     "playButton": "查看如何运行",
     "loading": "加载中...",
     "error": "视频不可用"
+  },
+  "pagination": {
+    "prevAriaLabel": "上一页",
+    "prev": "上一页",
+    "nextAriaLabel": "下一页",
+    "next": "下一页",
+    "navAriaLabel": "分页导航",
+    "goToPage": "前往第{page}页"
   }
 }
