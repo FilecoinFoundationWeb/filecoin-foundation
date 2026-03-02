@@ -203,5 +203,9 @@
         }
       }
     }
+
+    &.button--compact {
+      @apply px-4 py-2;
+    }
   }
 }
