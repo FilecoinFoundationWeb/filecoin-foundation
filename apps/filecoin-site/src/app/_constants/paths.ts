@@ -71,8 +71,8 @@ const RSS_ROUTE = `/rss.xml`
 
 export function getBlogRSSPath(locale: ReturnType<typeof useLocale>) {
   return locale === DEFAULT_LOCALE
-    ? path.join(PATHS.BLOG.path, RSS_ROUTE)
-    : path.join(PATHS.BLOG.path, locale, RSS_ROUTE)
+    ? `${PATHS.BLOG.path}${RSS_ROUTE}`
+    : `${PATHS.BLOG.path}/${locale}${RSS_ROUTE}`
 }
 
 type RemoveLocalePrefix<Routes extends string> =
