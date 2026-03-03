@@ -1,8 +1,4 @@
-import path from 'path'
-
 import { DEFAULT_LOCALE } from '@/i18n/locales'
-
-import type { useLocale } from 'next-intl'
 
 import type { AppRoutes } from '@/next/types/routes'
 
