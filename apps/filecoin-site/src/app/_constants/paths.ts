@@ -69,7 +69,7 @@ export const PATHS = {
 
 const RSS_ROUTE = `/rss.xml`
 
-export function getBlogRSSPath(locale: ReturnType<typeof useLocale>) {
+export function getBlogRSSPath(locale: string) {
   return locale === DEFAULT_LOCALE
     ? `${PATHS.BLOG.path}${RSS_ROUTE}`
     : `${PATHS.BLOG.path}/${locale}${RSS_ROUTE}`
