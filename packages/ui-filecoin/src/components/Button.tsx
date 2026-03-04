@@ -11,6 +11,7 @@ export type ButtonProps = {
   variant: keyof typeof variantClasses
   icon?: IconProps['component']
   href?: BaseLinkProps['href']
+  size?: keyof typeof sizeClasses
   children: React.ReactNode
 } & React.ComponentPropsWithoutRef<'button'>
 
@@ -24,6 +25,10 @@ const variantClasses = {
   tertiary: 'button--tertiary',
 } as const
 
+const sizeClasses = {
+  compact: 'button--compact',
+} as const
+
 export function Button({
   variant,
   className,
@@ -31,9 +36,15 @@ export function Button({
   children,
   disabled,
   href,
+  size,
   ...rest
 }: ButtonProps) {
-  className = clsx('button', variantClasses[variant], className)
+  className = clsx(
+    'button',
+    variantClasses[variant],
+    size && sizeClasses[size],
+    className,
+  )
 
   if (typeof href === 'undefined' || disabled) {
     return (
