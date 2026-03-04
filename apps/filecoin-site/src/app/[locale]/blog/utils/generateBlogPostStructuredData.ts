@@ -1,3 +1,6 @@
+import { DEFAULT_LOCALE } from '@/i18n/locales'
+import type { Locale } from '@/i18n/types'
+
 import type { BlogPosting } from 'schema-dts'
 
 import type { BlogPostPageGraph } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -16,7 +19,7 @@ type GenerateBlogPostStructuredDataProps = {
   datePublished: Date
   dateModified?: Date
   image?: BlogPosting['image']
-  locale?: string
+  locale?: Locale
 }
 
 export function generateBlogPostStructuredData({
@@ -26,7 +29,7 @@ export function generateBlogPostStructuredData({
   image,
   datePublished,
   dateModified,
-  locale = 'en',
+  locale = DEFAULT_LOCALE,
 }: GenerateBlogPostStructuredDataProps): BlogPostPageGraph {
   const blogPost: BlogPosting = {
     '@type': 'BlogPosting',
@@ -44,7 +47,7 @@ export function generateBlogPostStructuredData({
     },
     publisher: { '@id': STRUCTURED_DATA_IDS.ORGANIZATION },
     isPartOf: { '@id': STRUCTURED_DATA_IDS.BLOG },
-    inLanguage: locale,
+    inLanguage: new Intl.Locale(locale).toString(),
   }
 
   return {
