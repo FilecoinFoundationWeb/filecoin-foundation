@@ -1,5 +1,12 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.8.1
+
+### Patch Changes
+
+- 37af656: Add optional placeholder prop to SearchInput and Search components
+- 5c9769e: Rework Pagination
+
 ## 0.8.0
 
 ### Minor Changes

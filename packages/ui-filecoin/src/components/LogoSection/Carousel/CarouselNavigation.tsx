@@ -3,21 +3,17 @@
 import { useCarousel } from './Carousel'
 import { CarouselButton } from './CarouselButton'
 
-export function ConditionalCarouselNavigation() {
-  const { canScrollPrev, canScrollNext, autoPlay } = useCarousel()
-
-  if (autoPlay) {
-    return null
-  }
+export function CarouselNavigation() {
+  const { canScrollPrev, canScrollNext } = useCarousel()
 
   if (!canScrollPrev && !canScrollNext) {
     return null
   }
 
   return (
-    <>
+    <div className="flex items-center gap-4">
       <CarouselButton direction="prev" disabled={!canScrollPrev} />
       <CarouselButton direction="next" disabled={!canScrollNext} />
-    </>
+    </div>
   )
 }
