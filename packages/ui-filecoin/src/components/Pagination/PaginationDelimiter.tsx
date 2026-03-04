@@ -1,6 +1,6 @@
 import { LineVerticalIcon } from '@phosphor-icons/react'
 
-import { Icon } from '@filecoin-foundation/ui/Icon'
+import { Icon } from '../Icon'
 
 export function PaginationDelimiter() {
   return (

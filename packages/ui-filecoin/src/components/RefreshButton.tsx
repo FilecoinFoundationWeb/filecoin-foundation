@@ -1,10 +1,7 @@
 import { ArrowClockwiseIcon } from '@phosphor-icons/react/dist/ssr'
 
-import {
-  Button,
-  type ButtonProps,
-} from '@filecoin-foundation/ui-filecoin/Button'
-import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
+import { Button, type ButtonProps } from './Button'
+import { Icon } from './Icon'
 
 export type RefreshButtonProps = Omit<ButtonProps, 'variant' | 'children'>
 
