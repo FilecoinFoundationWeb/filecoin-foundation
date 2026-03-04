@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.8.3
+
+### Patch Changes
+
+- 38c19f1: Fix self-referential imports in `RefreshButton` to use relative paths
+
 ## 0.8.2
 
 ### Patch Changes
