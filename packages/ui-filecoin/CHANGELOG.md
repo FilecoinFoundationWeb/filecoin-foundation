@@ -1,5 +1,12 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.8.2
+
+### Patch Changes
+
+- a9473cf: Add play/pause button to LogoSection
+- 2311c34: Add button size prop
+
 ## 0.8.1
 
 ### Patch Changes
