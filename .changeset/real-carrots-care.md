@@ -2,4 +2,4 @@
 "@filecoin-foundation/ui-filecoin": patch
 ---
 
-Rework Pagination
+Add play/pause button to LogoSection
