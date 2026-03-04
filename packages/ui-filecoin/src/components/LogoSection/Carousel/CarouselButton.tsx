@@ -15,24 +15,34 @@ export function CarouselButton({
   className,
   ...props
 }: CarouselButtonProps) {
-  const { orientation, scrollPrev, scrollNext, canScrollPrev, canScrollNext } =
-    useCarousel()
+  const {
+    scrollPrev,
+    scrollNext,
+    canScrollPrev,
+    canScrollNext,
+    stopAutoScroll,
+  } = useCarousel()
 
   const isPrev = direction === 'prev'
-  const onClick = isPrev ? scrollPrev : scrollNext
+  const onClick = isPrev
+    ? () => {
+        stopAutoScroll()
+        scrollPrev()
+      }
+    : () => {
+        stopAutoScroll()
+        scrollNext()
+      }
   const canScroll = isPrev ? canScrollPrev : canScrollNext
   const Icon = isPrev ? ArrowLeftIcon : ArrowRightIcon
   const label = isPrev ? 'Previous slide' : 'Next slide'
-
-  const positionClasses = getPositionClasses(orientation, direction)
 
   return (
     <Button
       data-slot={isPrev ? 'carousel-previous' : 'carousel-next'}
       disabled={!canScroll}
       className={clsx(
-        'focus:brand-outline absolute grid size-12 cursor-pointer place-items-center rounded-full bg-zinc-800 hover:bg-zinc-700 focus:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-zinc-800 lg:size-11',
-        positionClasses,
+        'focus:brand-outline grid size-8 cursor-pointer place-items-center rounded-full bg-zinc-800 hover:bg-zinc-700 focus:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-zinc-800',
         className,
       )}
       onClick={onClick}
@@ -42,22 +52,4 @@ export function CarouselButton({
       <span className="sr-only">{label}</span>
     </Button>
   )
-}
-
-function getPositionClasses(
-  orientation: 'horizontal' | 'vertical' | undefined,
-  direction: 'prev' | 'next',
-) {
-  const isHorizontal = (orientation || 'horizontal') === 'horizontal'
-  const isPrev = direction === 'prev'
-
-  if (isHorizontal) {
-    return isPrev
-      ? 'top-1/2 left-0 -translate-y-1/2 md:-left-6'
-      : 'top-1/2 right-0 -translate-y-1/2 md:-right-6'
-  }
-
-  return isPrev
-    ? 'top-2 left-1/2 -translate-x-1/2 rotate-90 md:-top-10'
-    : 'bottom-2 left-1/2 -translate-x-1/2 rotate-90 md:-bottom-10'
 }

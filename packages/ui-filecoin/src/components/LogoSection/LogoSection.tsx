@@ -1,9 +1,9 @@
 import { type HeadingProps } from '../Heading'
 
 import { Carousel } from './Carousel/Carousel'
+import { CarouselAutoScrollControls } from './Carousel/CarouselAutoScrollControls'
 import { CarouselContent } from './Carousel/CarouselContent'
 import { CarouselItem } from './Carousel/CarouselItem'
-import { ConditionalCarouselNavigation } from './Carousel/CarouselNavigation'
 import { type LogoItemProps, LogoItem } from './LogoItem'
 
 type LogoSectionProps = {
@@ -43,7 +43,7 @@ export function LogoSection({
             </CarouselItem>
           ))}
         </CarouselContent>
-        <ConditionalCarouselNavigation />
+        <CarouselAutoScrollControls />
       </Carousel>
     </section>
   )
