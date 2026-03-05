@@ -18,6 +18,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
+import { translateBlogCategory } from '../utils/translateBlogCategory'
 
 import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -36,12 +37,14 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
   const t = await getTranslations(PATHS.BLOG.path)
   const translatedCategories = categories.map((category) =>
-    t(`categories.${category}`),
+    translateBlogCategory(t, category),
   )
 
   return (
     <>
-      <StructuredDataScript structuredData={generateStructuredData(data)} />
+      <StructuredDataScript
+        structuredData={generateStructuredData(data, locale)}
+      />
       <Navigation backgroundVariant="light" />
       <PageSection backgroundVariant="light" paddingVariant="topCompact">
         <div className="mx-auto max-w-3xl">

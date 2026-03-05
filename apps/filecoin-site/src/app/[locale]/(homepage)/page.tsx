@@ -13,7 +13,6 @@ import { LinkCard } from '@filecoin-foundation/ui-filecoin/LinkCard'
 import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoSection'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
-import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_DOCS_URL } from '@/constants/siteMetadata'
@@ -45,8 +44,7 @@ import { getJoinVibrantCommunityImages } from './data/joinVibrantCommunityImages
 import { generateStructuredData } from './utils/generateStructuredData'
 
 import { BlogCard } from '@/blog/components/BlogCard'
-import type { BlogPostPreview } from '@/blog/types/blogPostType'
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { getFeaturedBlogPosts } from '@/blog/utils/getFeaturedBlogPosts'
 
 type BlogProps = {
   params: Promise<LocaleParams>
@@ -58,10 +56,7 @@ export default async function Home({ params }: BlogProps) {
   const t = await getTranslations(PATHS.HOME.path)
   const metadata = await getTranslatedMetadata(PATHS.HOME.path)
 
-  const featuredBlogPosts = getFeaturedBlogPosts({
-    posts: await getBlogPostsData(locale),
-    limit: 3,
-  })
+  const featuredBlogPosts = await getFeaturedBlogPosts(locale, 3)
 
   const filecoinByTheNumbers = getFilecoinByTheNumbers(t)
   const communityLinks = getCommunityLinks(t)
@@ -217,18 +212,8 @@ export default async function Home({ params }: BlogProps) {
           }
         >
           <CardGrid as="ul" variant="mdTwoLgThreeWide">
-            {featuredBlogPosts.map((post: BlogPostPreview) => {
-              const {
-                title,
-                slug,
-                excerpt,
-                categories,
-                image,
-                author,
-                publishedOn,
-              } = post
-
-              return (
+            {featuredBlogPosts.map(
+              ({ title, slug, excerpt, tags, image, author, publishedOn }) => (
                 <BlogCard
                   key={title}
                   slug={slug}
@@ -236,7 +221,7 @@ export default async function Home({ params }: BlogProps) {
                   description={excerpt}
                   author={author}
                   date={publishedOn}
-                  tags={categories}
+                  tags={tags}
                   image={
                     image && {
                       src: image.url,
@@ -244,8 +229,8 @@ export default async function Home({ params }: BlogProps) {
                     }
                   }
                 />
-              )
-            })}
+              ),
+            )}
           </CardGrid>
         </SectionContent>
       </PageSection>
