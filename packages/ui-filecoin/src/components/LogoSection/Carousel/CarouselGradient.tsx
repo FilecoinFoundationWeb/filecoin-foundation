@@ -27,7 +27,12 @@ export function CarouselGradient({ variant = 'dark' }: CarouselGradientProps) {
   return (
     <>
       {horizontalEdgeStyles[variant].map((className, i) => (
-        <div key={i} className={className} />
+        <div
+          key={i}
+          className={className}
+          aria-hidden="true"
+          role="presentation"
+        />
       ))}
     </>
   )
