@@ -9,16 +9,28 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
+const FEED_METADATA: Record<Locale, { title: string; description: string }> = {
+  en: {
+    title: 'Filecoin Blog',
+    description: 'Latest updates from the Filecoin ecosystem',
+  },
+  'zh-cn': {
+    title: 'Filecoin 博客',
+    description: 'Filecoin 生态系统的最新动态',
+  },
+}
+
 async function generateFeedForLocale(locale: Locale) {
   const { Feed } = await import('feed')
 
   const localePrefix = locale === DEFAULT_LOCALE ? '' : `/${locale}`
   const blogBaseUrl = `${BASE_URL}${localePrefix}${PATHS.BLOG.path}`
   const rssPath = getBlogRSSPath(locale)
+  const { title, description } = FEED_METADATA[locale]
 
   const feed = new Feed({
-    title: 'Filecoin Blog',
-    description: 'Latest updates from the Filecoin ecosystem',
+    title,
+    description,
     id: blogBaseUrl,
     link: blogBaseUrl,
     language: locale,
@@ -31,7 +43,11 @@ async function generateFeedForLocale(locale: Locale) {
   const posts = await getBlogPostsData(locale)
   console.log(`[${locale}] Found ${posts.length} blog posts`)
 
-  posts.forEach((post) => {
+  const sortedPosts = posts.toSorted(
+    (a, b) => b.publishedOn.getTime() - a.publishedOn.getTime(),
+  )
+
+  sortedPosts.forEach((post) => {
     feed.addItem({
       title: post.title,
       id: `${blogBaseUrl}/${post.slug}`,
