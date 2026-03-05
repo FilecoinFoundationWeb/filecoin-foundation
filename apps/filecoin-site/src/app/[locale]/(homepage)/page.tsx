@@ -91,6 +91,7 @@ export default async function Home({ params }: BlogProps) {
           headingTag="h2"
           title={t('trustedBy.title')}
           logos={trustedByLogos}
+          gradientMode="dark"
         />
       </PageSection>
 
