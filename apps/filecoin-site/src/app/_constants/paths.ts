@@ -1,3 +1,5 @@
+import { DEFAULT_LOCALE } from '@/i18n/locales'
+
 import type { AppRoutes } from '@/next/types/routes'
 
 export type NextRouteWithoutLocale = TurnDynamicSegmentsIntoString<
@@ -61,7 +63,13 @@ export const PATHS = {
   },
 } as const satisfies Record<string, PathConfig>
 
-export const BLOG_RSS_PATH = `${PATHS.BLOG.path}/rss.xml`
+const RSS_ROUTE = `/rss.xml`
+
+export function getBlogRSSPath(locale: string) {
+  return locale === DEFAULT_LOCALE
+    ? `${PATHS.BLOG.path}${RSS_ROUTE}`
+    : `${PATHS.BLOG.path}/${locale}${RSS_ROUTE}`
+}
 
 type RemoveLocalePrefix<Routes extends string> =
   Routes extends `/[locale]${infer Rest}`
