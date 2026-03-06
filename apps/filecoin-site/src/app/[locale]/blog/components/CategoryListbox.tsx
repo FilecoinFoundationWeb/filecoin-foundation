@@ -18,6 +18,7 @@ import { PATHS } from '@/constants/paths'
 
 import { blogCategories, type BlogCategoryKey } from '../data/blogCategories'
 import { useCategoryState } from '../hooks/useCategoryState'
+import { translateBlogCategory } from '../utils/translateBlogCategory'
 
 export function CategoryListbox() {
   const t = useTranslations(PATHS.BLOG.path)
@@ -28,7 +29,7 @@ export function CategoryListbox() {
       return t('categoryFilter.allCategories')
     }
 
-    return t(`categories.${categoryId}`)
+    return translateBlogCategory(t, categoryId)
   }
 
   return (

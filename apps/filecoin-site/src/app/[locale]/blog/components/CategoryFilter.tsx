@@ -8,6 +8,7 @@ import { PATHS } from '@/constants/paths'
 
 import { blogCategories } from '../data/blogCategories'
 import { useCategoryState } from '../hooks/useCategoryState'
+import { translateBlogCategory } from '../utils/translateBlogCategory'
 
 export function CategoryFilter() {
   const t = useTranslations(PATHS.BLOG.path)
@@ -21,7 +22,7 @@ export function CategoryFilter() {
     >
       {blogCategories.map(({ id }) => {
         const isActive = selectedCategory === id
-        const displayName = t(`categories.${id}`)
+        const displayName = translateBlogCategory(t, id)
 
         return (
           <button
