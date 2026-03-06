@@ -20,10 +20,10 @@ const horizontalEdgeStyles = {
 } as const
 
 export type CarouselGradientProps = {
-  variant?: keyof typeof horizontalEdgeStyles
+  variant: keyof typeof horizontalEdgeStyles
 }
 
-export function CarouselGradient({ variant = 'dark' }: CarouselGradientProps) {
+export function CarouselGradient({ variant }: CarouselGradientProps) {
   return (
     <>
       {horizontalEdgeStyles[variant].map((className, i) => (
