@@ -81,7 +81,7 @@ export default async function Home({ params }: BlogProps) {
         <GradientOverlay />
       </div>
 
-      <PageSection backgroundVariant="dark" paddingVariant="none">
+      <PageSection backgroundVariant="dark" paddingVariant="topCompact">
         <LogoSection
           headingTag="h2"
           title={t('trustedBy.title')}
@@ -89,7 +89,7 @@ export default async function Home({ params }: BlogProps) {
         />
       </PageSection>
 
-      <PageSection backgroundVariant="dark">
+      <PageSection backgroundVariant="gray">
         <SectionContent
           centerTitle
           headingTag="h2"
@@ -127,7 +127,10 @@ export default async function Home({ params }: BlogProps) {
             ]}
           />
 
-          <SectionImage {...graphicsData.classicLibraryInterior} />
+          <SectionImage
+            {...graphicsData.classicLibraryInterior}
+            size="compact"
+          />
         </SectionContent>
       </PageSection>
 
@@ -195,7 +198,7 @@ export default async function Home({ params }: BlogProps) {
             ]}
           />
 
-          <SectionImage {...graphicsData.rocketLaunch} />
+          <SectionImage {...graphicsData.rocketLaunch} size="compact" />
         </SectionContent>
       </PageSection>
 
