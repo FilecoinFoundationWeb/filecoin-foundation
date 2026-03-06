@@ -72,6 +72,7 @@ export default async function ProvideStorage() {
               headingTag="h2"
               title={t('logoSection.title')}
               logos={storageProvidersLogos}
+              gradientMode="dark"
             />
           </div>
         </PageSection>
