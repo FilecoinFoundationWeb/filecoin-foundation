@@ -12,8 +12,9 @@ export function CarouselAutoScrollControls() {
     <div className="mt-6 flex items-center justify-between">
       <CarouselNavigation />
       <Button
-        variant="tertiary"
-        className="min-w-24"
+        variant="ghost"
+        size="compact"
+        className="min-w-20"
         onClick={isScrolling ? stopAutoScroll : playAutoScroll}
         aria-label={isScrolling ? 'Stop auto scroll' : 'Start auto scroll'}
         aria-live="polite"
