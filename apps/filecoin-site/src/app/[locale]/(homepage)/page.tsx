@@ -21,6 +21,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getLocalePath } from '@/utils/getLocalePath'
 import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { CardGridContainer } from '@/components/CardGridContainer'
@@ -274,7 +275,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return createMetadata({
     title: { absolute: title },
     description,
-    path: PATHS.HOME.path,
+    path: await getLocalePath(PATHS.HOME.path),
     image: graphicsData.classicLibraryInterior.data.src,
   })
 }

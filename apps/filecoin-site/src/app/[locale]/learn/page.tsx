@@ -21,6 +21,7 @@ import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getLocalePath } from '@/utils/getLocalePath'
 import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { GradientOverlay } from '@/components/GradientOverlay'
@@ -200,6 +201,6 @@ export async function generateMetadata(): Promise<Metadata> {
   return createMetadata({
     title: { absolute: title },
     description,
-    path: PATHS.LEARN.path,
+    path: await getLocalePath(PATHS.LEARN.path),
   })
 }

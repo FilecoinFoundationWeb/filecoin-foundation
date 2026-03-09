@@ -21,6 +21,7 @@ import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getLocalePath } from '@/utils/getLocalePath'
 import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { ImageGrid } from '@/components/ImageGrid'
@@ -257,6 +258,6 @@ export async function generateMetadata(): Promise<Metadata> {
   return createMetadata({
     title: { absolute: title },
     description,
-    path: PATHS.COMMUNITY_HUB.path,
+    path: await getLocalePath(PATHS.COMMUNITY_HUB.path),
   })
 }

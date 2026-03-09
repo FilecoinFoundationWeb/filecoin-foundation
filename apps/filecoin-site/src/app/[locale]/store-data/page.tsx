@@ -17,6 +17,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getLocalePath } from '@/utils/getLocalePath'
 import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -120,7 +121,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return createMetadata({
     title: { absolute: title },
     description,
-    path: PATHS.STORE_DATA.path,
+    path: await getLocalePath(PATHS.STORE_DATA.path),
     image: graphicsData.digitalMediaConversionSetup.data.src,
   })
 }

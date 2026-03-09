@@ -14,6 +14,7 @@ import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getLocalePath } from '@/utils/getLocalePath'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
@@ -85,7 +86,7 @@ export async function generateMetadata(props: BlogPostProps) {
   const { image, seo, excerpt } = await getBlogPostData(slug, locale)
 
   return createMetadata({
-    path: `${PATHS.BLOG.path}/${slug}`,
+    path: await getLocalePath(`${PATHS.BLOG.path}/${slug}`),
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME}` },
     description: seo?.description || excerpt,
     image: image?.url,
