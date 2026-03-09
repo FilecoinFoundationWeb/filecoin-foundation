@@ -11,7 +11,7 @@ category: bridges-oracles
 description: Bridge, swap, provide liquidity, and more on Oku Trade. Aggregator
   support across every EVM chain, including Ethereum, Arbitrum, Optimism,
   Polygon and Base.
-website: https://oku.trade/app/ethereum/swap/
+website: https://oku.trade/swap?inputChain=filecoin
 tech:
   - filecoin
 twitter: https://x.com/okutrade
