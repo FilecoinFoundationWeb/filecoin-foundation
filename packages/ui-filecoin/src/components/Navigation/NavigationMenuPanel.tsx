@@ -31,7 +31,10 @@ export function NavigationMenuPanel({ items }: NavigationMenuPanelProps) {
                 {item.title}
               </p>
               <ul
-                className="grid grid-rows-2 gap-2"
+                className={clsx(
+                  'grid gap-2',
+                  item.links.length === 1 ? 'grid-rows-1' : 'grid-rows-2',
+                )}
                 style={{
                   gridTemplateColumns: `repeat(${Math.floor(item.links.length / 2)}, minmax(0, 1fr))`,
                 }}
