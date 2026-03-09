@@ -1,4 +1,5 @@
 import translations from '@/i18n/translations/en.json'
+import zhCnTranslations from '@/i18n/translations/zh-cn.json'
 
 import { tests } from '@filecoin-foundation/cypress/support'
 
@@ -24,5 +25,28 @@ describe('Home Page', () => {
 
   it(tests.visualSnapshot.prompt, () => {
     tests.visualSnapshot.fn(path)
+  })
+})
+
+const zhCnPath = '/zh-cn'
+const { title: zhCnTitle, description: zhCnDescription } =
+  zhCnTranslations[path].metadata
+
+describe('Home Page (zh-cn)', () => {
+  it(tests.metadata.prompt, () => {
+    tests.metadata.fn({
+      path: zhCnPath,
+      title: zhCnTitle,
+      description: zhCnDescription,
+      baseUrl: BASE_URL,
+    })
+  })
+
+  it(tests.links.prompt, () => {
+    tests.links.fn(zhCnPath)
+  })
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(zhCnPath)
   })
 })

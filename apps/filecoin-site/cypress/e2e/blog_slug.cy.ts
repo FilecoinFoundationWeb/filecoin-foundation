@@ -14,6 +14,8 @@ type BlogPostFrontmatter = GenericEntryFrontmatter & {
 
 const { entriesPath: CONTENT_FOLDER, path: BLOG_PATH } = PATHS.BLOG
 const ENGLISH_CONTENT_FOLDER = path.join(CONTENT_FOLDER, 'en')
+const CHINESE_CONTENT_FOLDER = path.join(CONTENT_FOLDER, 'zh-cn')
+const zhCnBlogPath = `/zh-cn${BLOG_PATH}`
 
 describe('Blog Slug Page', () => {
   it(tests.metadata.prompt, () => {
@@ -41,5 +43,34 @@ describe('Blog Post - Visual Regression', () => {
 
   it(tests.visualSnapshot.prompt, () => {
     tests.visualSnapshot.fn(path.join(BLOG_PATH, BLOG_POST_SLUG))
+  })
+})
+
+describe('Blog Slug Page (zh-cn)', () => {
+  it(tests.metadata.prompt, () => {
+    cy.task<string>('getRandomSlug', CHINESE_CONTENT_FOLDER).then((slug) => {
+      cy.task<BlogPostFrontmatter>(
+        'getEntryFrontmatter',
+        `${CHINESE_CONTENT_FOLDER}/${slug}`,
+      ).then(({ title, seo, excerpt }) => {
+        const seoTitle = seo?.title || title
+        const metaTitleWithSuffix = getMetaTitleWithSuffix(seoTitle)
+
+        tests.metadata.fn({
+          path: `${zhCnBlogPath}/${slug}`,
+          title: metaTitleWithSuffix,
+          description: seo?.description || excerpt,
+          baseUrl: BASE_URL,
+        })
+      })
+    })
+  })
+})
+
+describe('Blog Post - Visual Regression (zh-cn)', () => {
+  const ZH_CN_BLOG_POST_SLUG = 'june-q-a-summary'
+
+  it(tests.visualSnapshot.prompt, () => {
+    tests.visualSnapshot.fn(path.join(zhCnBlogPath, ZH_CN_BLOG_POST_SLUG))
   })
 })
