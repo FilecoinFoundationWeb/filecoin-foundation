@@ -3,7 +3,7 @@ author: ""
 categories:
   - updates
 cover_feature: false
-date: ""
+date: "2020-01-31T05:00:00Z"
 dim_image: false
 double_column_inverted: false
 double_column_mode: false
