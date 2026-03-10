@@ -6,6 +6,7 @@ import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getLocalePath } from '@/utils/getLocalePath'
 import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -42,6 +43,6 @@ export async function generateMetadata(): Promise<Metadata> {
   return createMetadata({
     title: { absolute: title },
     description,
-    path: PATHS.PROVIDE_STORAGE_ONBOARDING.path,
+    path: await getLocalePath(PATHS.PROVIDE_STORAGE_ONBOARDING.path),
   })
 }

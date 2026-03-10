@@ -17,6 +17,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getLocalePath } from '@/utils/getLocalePath'
 import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { CardGridContainer } from '@/components/CardGridContainer'
@@ -197,7 +198,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return createMetadata({
     title: { absolute: title },
     description,
-    path: PATHS.BUILD_ON_FILECOIN.path,
+    path: await getLocalePath(PATHS.BUILD_ON_FILECOIN.path),
     image: graphicsData.spiralGalaxyStarsSpace.data.src,
   })
 }

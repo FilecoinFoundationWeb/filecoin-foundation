@@ -10,8 +10,8 @@
       }
     },
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "Filecoin | 全球最大的去中心化存储网络，守护人类数据",
+      "description": "在 Filecoin 上保存人类最重要的信息——具备可验证完整性、全球冗余且无中心化控制的去中心化存储网络。立即构建应用、安全存储数据或成为存储提供者。"
     },
     "trustedBy": {
       "title": "受到行业领袖的信赖"
@@ -105,8 +105,8 @@
   },
   "/blog": {
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "Filecoin 博客 | 最新资讯、更新与生态洞察",
+      "description": "深入 Filecoin 博客，了解生态指标、可验证热存储、跨链桥、活动及增长洞察等最新动态。紧跟推动 AI、加密货币和数据韧性的去中心化存储创新。"
     },
     "featuredPost": {
       "badge": "最新动态",
@@ -135,8 +135,8 @@
   },
   "/community-hub": {
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "Filecoin 社区 | 连接、学习、共同构建",
+      "description": "加入 Filecoin 社区——与开发者交流、参加活动、获取资源，共同构建去中心化存储的未来。"
     },
     "hero": {
       "title": "与 Filecoin 社区一起构建、连接和成长",
@@ -255,6 +255,10 @@
         "title": "科学数据集",
         "description": "为基因组学、公共研究和大规模科学数据提供弹性访问。"
       }
+    },
+    "howDataMoves": {
+      "title": "数据如何在 Filecoin 中流转",
+      "description": "用户和存储提供者通过链上交易进行交互。区块链记录并监控这些交易，使用可公开验证的证明来确保数据被正确存储和访问。"
     },
     "decentralizedByDesign": {
       "title": "设计即去中心化",
@@ -587,8 +591,8 @@
   },
   "/case-studies": {
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "Filecoin 案例研究 | 去中心化存储的真实成功案例",
+      "description": "探索 Filecoin 案例研究，了解各行业组织如何利用去中心化存储实现可扩展性、安全性和创新。"
     },
     "hero": {
       "title": "守护关键数据集的持久保存",
@@ -619,14 +623,14 @@
   },
   "/privacy-policy": {
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "隐私政策 | Filecoin 去中心化存储网络",
+      "description": "查阅 Filecoin 的隐私政策，了解我们在去中心化生态中的数据收集、使用和保护实践。我们优先保障用户隐私、安全和透明度，不依赖中心化控制。"
     }
   },
   "/terms-of-use": {
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "使用条款 | Filecoin 去中心化存储平台",
+      "description": "阅读 Filecoin 的使用条款，了解访问网络的准则、用户责任和知识产权。在构建、存储或提供去中心化存储服务时确保合规。"
     }
   },
   "/provide-storage": {
@@ -690,8 +694,8 @@
   },
   "/provide-storage/onboarding": {
     "metadata": {
-      "title": "TODO",
-      "description": "TODO"
+      "title": "成为 Filecoin 存储提供者 | 入驻指南",
+      "description": "开启您的 Filecoin 之旅——通过分步入驻指南、支持资源和社区指导，了解如何成为存储提供者。"
     }
   },
   "navigation": {

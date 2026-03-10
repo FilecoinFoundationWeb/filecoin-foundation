@@ -18,6 +18,7 @@ import { FILECOIN_URLS, FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getLocalePath } from '@/utils/getLocalePath'
 import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { GradientOverlay } from '@/components/GradientOverlay'
@@ -164,7 +165,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return createMetadata({
     title: { absolute: title },
     description,
-    path: PATHS.PROVIDE_STORAGE.path,
+    path: await getLocalePath(PATHS.PROVIDE_STORAGE.path),
     image: graphicsData.filecoinStorageDevice.data.src,
   })
 }

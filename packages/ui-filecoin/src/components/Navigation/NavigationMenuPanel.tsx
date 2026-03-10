@@ -25,25 +25,31 @@ export function NavigationMenuPanel({ items }: NavigationMenuPanelProps) {
         )}
       >
         <div className="flex divide-x divide-(--color-border-base)">
-          {items.map((item) => (
-            <div key={item.title} className="px-4">
-              <p className="mb-2 px-4 text-sm text-(--color-paragraph-text)">
-                {item.title}
-              </p>
-              <ul
-                className="grid grid-rows-2 gap-2"
-                style={{
-                  gridTemplateColumns: `repeat(${Math.floor(item.links.length / 2)}, minmax(0, 1fr))`,
-                }}
-              >
-                {item.links.map((link) => (
-                  <li key={link.href}>
-                    <NavigationMenuLink {...link} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {items.map((item) => {
+            const hasMultipleLinks = item.links.length > 1
+
+            return (
+              <div key={item.title} className="px-4">
+                <p className="mb-2 px-4 text-sm text-(--color-paragraph-text)">
+                  {item.title}
+                </p>
+                <ul
+                  {...(hasMultipleLinks && {
+                    className: 'grid grid-rows-2 gap-2',
+                    style: {
+                      gridTemplateColumns: `repeat(${Math.floor(item.links.length / 2)}, minmax(0, 1fr))`,
+                    },
+                  })}
+                >
+                  {item.links.map((link) => (
+                    <li key={link.href}>
+                      <NavigationMenuLink {...link} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>

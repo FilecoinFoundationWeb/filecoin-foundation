@@ -21,6 +21,7 @@ import { FILECOIN_DOCS_URL, FILECOIN_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getLocalePath } from '@/utils/getLocalePath'
 import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { GradientOverlay } from '@/components/GradientOverlay'
@@ -116,8 +117,8 @@ export default async function Learn() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           headingTag="h2"
-          title="How data moves through Filecoin"
-          description="Users and storage providers interact through onchain deals. The blockchain records and monitors these deals, using publicly verifiable proofs to ensure the data is correctly stored and accessible."
+          title={t('howDataMoves.title')}
+          description={t('howDataMoves.description')}
         >
           <SectionImage {...graphicsData.howDataMovesThroughFilecoin} />
         </SectionContent>
@@ -200,6 +201,6 @@ export async function generateMetadata(): Promise<Metadata> {
   return createMetadata({
     title: { absolute: title },
     description,
-    path: PATHS.LEARN.path,
+    path: await getLocalePath(PATHS.LEARN.path),
   })
 }
