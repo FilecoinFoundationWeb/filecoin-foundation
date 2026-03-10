@@ -3,9 +3,9 @@ title: ETHDenver 2024 FIL开发者峰会智能存储和dApp专题回顾
 excerpt: >-
   第三届FIL开发峰会在EthDenver
   2024举行，本峰会面向开发人员，由开发人员主持，就Filecoin协议和生态核心改进展开了为期一天的协议讨论、研讨会和演讲。智能存储和dApp专题讨论了Filecoin可编程存储和去中心化应用(dApp)的技术现状，以及Filecoin热/快速存储层的未来创新。
-share_image: /uploads/0FDS Smart Storage Header.png
+share_image: /uploads/0FDS-Smart-Storage-Header-2.webp
 image:
-  url: /uploads/0FDS Smart Storage Header.png
+  url: /uploads/0FDS-Smart-Storage-Header-2.webp
 date: 2024-03-14T23:00:00.000Z
 categories:
   - events
