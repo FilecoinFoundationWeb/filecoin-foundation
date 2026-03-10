@@ -13,6 +13,7 @@ import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getLocalePath } from '@/utils/getLocalePath'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
@@ -99,7 +100,7 @@ export async function generateMetadata(props: CaseStudyArticleProps) {
   const { seo, image } = await getCaseStudyData(slug, locale)
 
   return createMetadata({
-    path: `${PATHS.CASE_STUDIES.path}/${slug}`,
+    path: await getLocalePath(`${PATHS.CASE_STUDIES.path}/${slug}`),
     title: { absolute: `${seo.title} | ${ORGANIZATION_NAME}` },
     description: seo.description || '',
     image: image?.src,
