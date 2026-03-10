@@ -1,52 +1,45 @@
-import translations from '@/i18n/translations/en.json'
-import zhCnTranslations from '@/i18n/translations/zh-cn.json'
-
 import { tests } from '@filecoin-foundation/cypress/support'
 
-import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-const { path } = PATHS.HOME
-const { title, description } = translations[path].metadata
+import { getPageTestData } from '@/cypress/utils/getPageTestData'
+
+const { en, zhCn } = getPageTestData('HOME')
 
 describe('Home Page', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
-      path: PATHS.HOME.path,
-      title,
-      description,
+      path: en.path,
+      title: en.title,
+      description: en.description,
       baseUrl: BASE_URL,
     })
   })
 
   it(tests.links.prompt, () => {
-    tests.links.fn(path)
+    tests.links.fn(en.path)
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn(path)
+    tests.visualSnapshot.fn(en.path)
   })
 })
-
-const zhCnPath = '/zh-cn'
-const { title: zhCnTitle, description: zhCnDescription } =
-  zhCnTranslations[path].metadata
 
 describe('Home Page (zh-cn)', () => {
   it(tests.metadata.prompt, () => {
     tests.metadata.fn({
-      path: zhCnPath,
-      title: zhCnTitle,
-      description: zhCnDescription,
+      path: zhCn.path,
+      title: zhCn.title,
+      description: zhCn.description,
       baseUrl: BASE_URL,
     })
   })
 
   it(tests.links.prompt, () => {
-    tests.links.fn(zhCnPath)
+    tests.links.fn(zhCn.path)
   })
 
   it(tests.visualSnapshot.prompt, () => {
-    tests.visualSnapshot.fn(zhCnPath)
+    tests.visualSnapshot.fn(zhCn.path)
   })
 })
