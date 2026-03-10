@@ -256,6 +256,10 @@
         "description": "Enabling resilient access to genomics, public research, and large-scale scientific data."
       }
     },
+    "howDataMoves": {
+      "title": "How data moves through Filecoin",
+      "description": "Users and storage providers interact through onchain deals. The blockchain records and monitors these deals, using publicly verifiable proofs to ensure the data is correctly stored and accessible."
+    },
     "decentralizedByDesign": {
       "title": "Decentralized by design",
       "description": "The Filecoin network provides decentralized storage secured by cryptographic proofs and economic incentives, transforming data storage into open, verifiable infrastructure.",
