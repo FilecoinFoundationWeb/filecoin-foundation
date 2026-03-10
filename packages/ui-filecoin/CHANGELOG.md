@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.8.4
+
+### Patch Changes
+
+- 62144b5: Fix dropdown navigation spacing when there's only 1 link
+
 ## 0.8.3
 
 ### Patch Changes
