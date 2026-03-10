@@ -256,6 +256,10 @@
         "description": "为基因组学、公共研究和大规模科学数据提供弹性访问。"
       }
     },
+    "howDataMoves": {
+      "title": "数据如何在 Filecoin 中流转",
+      "description": "用户和存储提供者通过链上交易进行交互。区块链记录并监控这些交易，使用可公开验证的证明来确保数据被正确存储和访问。"
+    },
     "decentralizedByDesign": {
       "title": "设计即去中心化",
       "description": "Filecoin 网络提供由密码学证明和经济激励保障的去中心化存储，将数据存储转变为开放、可验证的基础设施。",

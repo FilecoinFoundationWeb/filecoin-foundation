@@ -117,8 +117,8 @@ export default async function Learn() {
       <PageSection backgroundVariant="dark">
         <SectionContent
           headingTag="h2"
-          title="How data moves through Filecoin"
-          description="Users and storage providers interact through onchain deals. The blockchain records and monitors these deals, using publicly verifiable proofs to ensure the data is correctly stored and accessible."
+          title={t('howDataMoves.title')}
+          description={t('howDataMoves.description')}
         >
           <SectionImage {...graphicsData.howDataMovesThroughFilecoin} />
         </SectionContent>
