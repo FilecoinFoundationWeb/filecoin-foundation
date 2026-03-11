@@ -4,7 +4,7 @@ categories:
   - updates
   - interviews
   - events
-date: ""
+date: "2020-08-26T06:00:00Z"
 dim_image: false
 double_column_inverted: false
 double_column_mode: false

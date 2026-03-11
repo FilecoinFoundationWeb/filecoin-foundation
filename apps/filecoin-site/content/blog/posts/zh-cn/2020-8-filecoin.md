@@ -3,7 +3,7 @@ author: Filecoin Project
 categories:
   - updates
   - events
-date: ""
+date: "2020-08-31T04:00:00Z"
 dim_image: false
 double_column_inverted: false
 double_column_mode: false

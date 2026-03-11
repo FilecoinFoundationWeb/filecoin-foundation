@@ -5,7 +5,7 @@ categories:
   - interviews
   - awards
   - events
-date: ""
+date: "2021-07-20T04:00:00Z"
 dim_image: false
 double_column_inverted: false
 double_column_mode: false
