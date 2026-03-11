@@ -26,7 +26,7 @@ In this early phase, a key goal is ensuring that the developers, storage provide
 
 CloudPaws is a limited collection of 100 ecosystem identity NFTs within the Filecoin Onchain Cloud (FOC) ecosystem, designed to identify and connect early participants of Onchain Cloud.
 
-🔗 [http://www.filcloudpaws.com/](http://www.filcloudpaws.com/)
+🔗 [http://www.filcloudpaws.com/](https://www.filcloudpaws.com/)
 
 CloudPaws is not a collectible, nor is it designed for trading or financial speculation. Instead, it serves as:
 

@@ -31,12 +31,12 @@ In 2025, a growing set of specialized Filecoin onramps created products that mee
 
 - **[Akave](https://akave.com/)** provides a fully managed, S3-compatible storage layer on Filecoin designed for enterprise and analytics workloads. Akave supports Snowflake integration and is used to connect Filecoin-backed storage to Web2 analytics pipelines, data lakes, and application backends.
 - **[Storacha](https://storacha.network/)** provides a decentralized hot storage and retrieval network built on the InterPlanetary File System (IPFS) and Filecoin for applications that require fast access to large, frequently used datasets. Storacha is used by infrastructure teams, geospatial and satellite data providers, and other high-throughput workloads where low-latency retrieval is critical.
-- **[Ramo](http://ramo.io)** is purpose-built for onboarding high-value, data-rich workloads to Filecoin. Ramo works with research institutions and other data-intensive organizations to prepare and integrate large-scale datasets, including multi-terabyte scientific data.
+- **[Ramo](https://ramo.io)** is purpose-built for onboarding high-value, data-rich workloads to Filecoin. Ramo works with research institutions and other data-intensive organizations to prepare and integrate large-scale datasets, including multi-terabyte scientific data.
 - **[Lighthouse](https://www.lighthouse.storage/)** offers decentralized, perpetual storage built on IPFS and Filecoin, focused on Web3-native use cases. Lighthouse is used by NFT platforms, DAOs, and AI and DePIN projects to store data that must remain accessible and verifiable over long time horizons.
 
 ## New Building Blocks for Web3 Infrastructure: Filecoin Onchain Cloud
 
-[Filecoin Onchain Cloud](http://filecoin.cloud) was unveiled during Devconnect Buenos Aires, marking one of the most important protocol-level expansions in Filecoin's history. It introduced transparent, verifiable, onchain storage and programmable payments. For end users, this means applications where data ownership, service delivery, and payments are transparently enforced onchain, instead of relying on opaque cloud providers and off-chain trust. These new protocol capabilities helped upgrade robust offerings from Filecoin onramps like Storacha and Akave with onchain verification and service provider payments, and unlocked a new class of direct dApp and Web3 builder integrations with the Filecoin network.
+[Filecoin Onchain Cloud](https://filecoin.cloud) was unveiled during Devconnect Buenos Aires, marking one of the most important protocol-level expansions in Filecoin's history. It introduced transparent, verifiable, onchain storage and programmable payments. For end users, this means applications where data ownership, service delivery, and payments are transparently enforced onchain, instead of relying on opaque cloud providers and off-chain trust. These new protocol capabilities helped upgrade robust offerings from Filecoin onramps like Storacha and Akave with onchain verification and service provider payments, and unlocked a new class of direct dApp and Web3 builder integrations with the Filecoin network.
 
 Filecoin Onchain Cloud introduces several composable building blocks that make it easier to build, price, and operate verifiable storage services onchain:
 
@@ -49,9 +49,9 @@ Filecoin Onchain Cloud introduces several composable building blocks that make i
 
 The first months of testnet operation demonstrated clear early traction:
 
-- 170+ unique wallets [transacted](http://pay.filecoin.cloud) with 30+ service providers, resulting in nearly 4,000 onchain service deals.
+- 170+ unique wallets [transacted](https://pay.filecoin.cloud) with 30+ service providers, resulting in nearly 4,000 onchain service deals.
 - 500+ developers [built with](https://npm-stat.com/charts.html?package=%40filoz%2Fsynapse-sdk&from=2025-08-05&to=2025-08-28) the Synapse SDK, validating demand for programmable storage and service primitives.
-- [pin.filecoin.cloud](http://pin.filecoin.cloud) enabled frictionless data storage via Filecoin Onchain Cloud with IPFS compatibility.
+- [pin.filecoin.cloud](https://pin.filecoin.cloud) enabled frictionless data storage via Filecoin Onchain Cloud with IPFS compatibility.
 - Early adopters include established protocols such as ENS, Monad, and KYVE, alongside Filecoin service providers like Storacha and Akave, and 100+ [early-stage builders](https://app.akindo.io/wave-hacks/1PRjgGzKaTqXaQBBl).
 - 5,000+ developers engaged with Filecoin Onchain Cloud through targeted builder activations, including Filecoin Orbit and ETHGlobal.
 - Filecoin Onchain Cloud's launch reached 1.5M social media impressions, indicating strong developer mindshare.

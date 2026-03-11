@@ -33,7 +33,7 @@ In 2026, the Filecoin community is investing in generating paid, onchain usage t
 
 Across the ecosystem, efforts are aligning to convert real-world storage demand into paid, onchain Filecoin services. Filecoin technology is being packaged for the real needs of global customers today and tomorrow, from traditional object storage to AI use cases and easy agentic pathways. The ecosystem is pairing this technology with expanded business models and go-to-market strategies so that paying customers worldwide can quickly and easily start using Filecoin in their existing workflows.
 
-A critical enabler of the network’s competitive product offerings is [Filecoin Onchain Cloud](http://filecoin.cloud), extending the network from a powerful storage protocol into programmable cloud services that teams can integrate into real workflows. This unlocks new classes of applications where verifiable storage creates differentiated value.
+A critical enabler of the network’s competitive product offerings is [Filecoin Onchain Cloud](https://filecoin.cloud), extending the network from a powerful storage protocol into programmable cloud services that teams can integrate into real workflows. This unlocks new classes of applications where verifiable storage creates differentiated value.
 
 ### The Plan
 
