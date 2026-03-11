@@ -463,25 +463,6 @@
         "description": "了解去中心化存储、证明与数据市场的核心概念。",
         "cta": "了解基础知识"
       },
-      "whatYouCanBuild": {
-        "title": "你可以构建什么",
-        "decentralizedStorageApps": {
-          "title": "去中心化存储应用",
-          "description": "在 Filecoin 上存储和检索数据的应用，而非依赖中心化云服务商，例如数据管道、文件托管平台和数据集归档。"
-        },
-        "aiDataPipelines": {
-          "title": "AI 数据管道",
-          "description": "在可验证的去中心化基础设施上存储训练数据集、推理结果和智能体输出。"
-        },
-        "web3Infrastructure": {
-          "title": "Web3 基础设施",
-          "description": "基于去中心化存储构建服务、API 和中间件。"
-        },
-        "dataVerificationServices": {
-          "title": "数据验证服务",
-          "description": "利用 Filecoin 证明确保重要数据被保存且可验证。"
-        }
-      },
       "builderCookbook": {
         "title": "开发者手册",
         "description": "常见任务的步骤指南，如存储文件、检索数据与构建应用。",
@@ -491,6 +472,25 @@
         "title": "FIL Frame",
         "description": "FIL Builders 社区的开源框架，帮助开发者快速搭建基于 Filecoin 的应用。",
         "cta": "在 GitHub 上查看 FIL Frame"
+      }
+    },
+    "whatYouCanBuild": {
+      "title": "你可以构建什么",
+      "decentralizedStorageApps": {
+        "title": "去中心化存储应用",
+        "description": "在 Filecoin 上存储和检索数据的应用，而非依赖中心化云服务商，例如数据管道、文件托管平台和数据集归档。"
+      },
+      "aiDataPipelines": {
+        "title": "AI 数据管道",
+        "description": "在可验证的去中心化基础设施上存储训练数据集、推理结果和智能体输出。"
+      },
+      "web3Infrastructure": {
+        "title": "Web3 基础设施",
+        "description": "基于去中心化存储构建服务、API 和中间件。"
+      },
+      "dataVerificationServices": {
+        "title": "数据验证服务",
+        "description": "利用 Filecoin 证明确保重要数据被保存且可验证。"
       }
     },
     "tutorials": {

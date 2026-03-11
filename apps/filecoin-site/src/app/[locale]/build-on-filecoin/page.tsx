@@ -172,44 +172,21 @@ export default async function BuildOnFilecoin() {
         </SectionContent>
       </PageSection>
 
-      {/* <PageSection backgroundVariant="light" paddingVariant="topNone">
-        <SectionContent
-          centerCTA
-          headingTag="h2"
-          title={t('codeNCorgi.title')}
-          description={t('codeNCorgi.description')}
-        >
-          <CardGrid as="ul" variant="lgTwoWide">
-            {codeNCorgiSeries.map(({ title, description, cta, image }) => (
-              <SimpleCardWithImage
+      <PageSection backgroundVariant="gray">
+        <SectionContent headingTag="h2" title={t('developerResources.title')}>
+          <CardGrid as="ul" variant="mdTwo">
+            {developerResources.map(({ title, description, href, icon }) => (
+              <LinkCard
                 key={title}
+                as="li"
                 title={title}
+                headingTag="h3"
                 description={description}
-                cta={cta}
-                image={image}
+                href={href}
+                icon={{ component: icon }}
               />
             ))}
           </CardGrid>
-        </SectionContent>
-      </PageSection> */}
-
-      <PageSection backgroundVariant="gray">
-        <SectionContent headingTag="h2" title={t('developerResources.title')}>
-          <CardGridContainer width="6xl">
-            <CardGrid as="ul" variant="mdTwo">
-              {developerResources.map(({ title, description, href, icon }) => (
-                <LinkCard
-                  key={title}
-                  as="li"
-                  title={title}
-                  headingTag="h3"
-                  description={description}
-                  href={href}
-                  icon={{ component: icon }}
-                />
-              ))}
-            </CardGrid>
-          </CardGridContainer>
         </SectionContent>
       </PageSection>
 
