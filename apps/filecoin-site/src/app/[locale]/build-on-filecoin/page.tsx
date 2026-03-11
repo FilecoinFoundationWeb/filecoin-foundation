@@ -146,8 +146,15 @@ export default async function BuildOnFilecoin() {
 
       <PageSection backgroundVariant="light">
         <SectionContent
+          centerCTA
           headingTag="h2"
           title={t('buildWithFilecoinOnchainCloud.title')}
+          description={t('buildWithFilecoinOnchainCloud.description')}
+          cta={
+            <Button href="#" variant="primary">
+              {t('buildWithFilecoinOnchainCloud.cta')}
+            </Button>
+          }
         >
           <CardGrid as="ul" variant="smTwoXlThreeWide">
             {buildWithFilecoinOnchainCloud.map(
