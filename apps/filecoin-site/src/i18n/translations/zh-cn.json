@@ -621,18 +621,6 @@
       "results": "成果"
     }
   },
-  "/privacy-policy": {
-    "metadata": {
-      "title": "隐私政策 | Filecoin 去中心化存储网络",
-      "description": "查阅 Filecoin 的隐私政策，了解我们在去中心化生态中的数据收集、使用和保护实践。我们优先保障用户隐私、安全和透明度，不依赖中心化控制。"
-    }
-  },
-  "/terms-of-use": {
-    "metadata": {
-      "title": "使用条款 | Filecoin 去中心化存储平台",
-      "description": "阅读 Filecoin 的使用条款，了解访问网络的准则、用户责任和知识产权。在构建、存储或提供去中心化存储服务时确保合规。"
-    }
-  },
   "/provide-storage": {
     "metadata": {
       "title": "成为 Filecoin 存储提供者 | 在去中心化网络中获得奖励",
