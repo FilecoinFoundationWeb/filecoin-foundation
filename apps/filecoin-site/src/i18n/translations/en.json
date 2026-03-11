@@ -464,86 +464,84 @@
         "description": "Built on Filecoin, Huddle01 is a decentralized, real-time communication network with live audio and video software development kit for the web and mobile."
       }
     },
-    "tutorials": {
-      "title": "Tutorials and guides",
-      "description": "Learn the basics to start building with Filecoin.",
-      "basics": {
-        "title": "Understand Filecoin basics",
-        "description": "A quick intro to Filecoin's role as a decentralized, verifiable storage network and why developers use it.",
-        "cta": "Read the Filecoin basics guide"
+    "quickstart": {
+      "title": "Quickstart",
+      "whatIsFilecoin": {
+        "title": "What is Filecoin?",
+        "description": "Understand the core concepts behind decentralized storage, proofs, and data markets.",
+        "cta": "Learn the basics"
       },
-      "devEnv": {
-        "title": "Set up your development environment",
-        "description": "Install tools and create a Filecoin-compatible wallet (e.g., MetaMask) ready for development.",
-        "cta": "Follow the setup instructions"
+      "builderCookbook": {
+        "title": "Builder Cookbook",
+        "description": "Step-by-step guides for common tasks like storing files, retrieving data, and building applications.",
+        "cta": "Explore the Builder Cookbook"
       },
-      "connect": {
-        "title": "Connect to the Filecoin network",
-        "description": "Use the Calibration testnet to build safely. Claim testFIL from the faucet and connect via an RPC endpoint.",
-        "cta": "Connect to the testnet"
-      },
-      "storeRetrieve": {
-        "title": "Store and retrieve your first file",
-        "description": "Upload a file using a storage API or SDK, get a CID, and retrieve it through an IPFS gateway.",
-        "cta": "Try storing your first file"
-      },
-      "programmatic": {
-        "title": "Programmatic storage in your app",
-        "description": "Use the JavaScript SDK or HTTP API to store and retrieve files directly in your application logic.",
-        "cta": "See code examples"
-      },
-      "smartContract": {
-        "title": "Deploy your first smart contract on FVM",
-        "description": "Deploy a simple smart contract to store references to Filecoin data on the FEVM.",
-        "cta": "Deploy a sample contract"
-      },
-      "firstDapp": {
-        "title": "Build your first dApp",
-        "description": "Create a minimal dApp with a frontend, storage backend, and FVM smart contract working together.",
-        "cta": "Start building a dApp"
-      },
-      "advanced": {
-        "title": "Explore advanced use cases",
-        "description": "Learn patterns for NFTs, AI datasets, hybrid cloud storage, and cross-chain integrations.",
-        "cta": "Explore advanced examples"
-      },
-      "difficulty": {
-        "beginner": "Beginner",
-        "intermediate": "Intermediate",
-        "advanced": "Advanced"
+      "filFrame": {
+        "title": "FIL Frame",
+        "description": "An open-source framework from the FIL Builders community designed to help developers quickly bootstrap Filecoin-powered applications.",
+        "cta": "View FIL Frame on GitHub"
       }
     },
-    "codeNCorgi": {
-      "title": "Code n' Corgi: Discovering AI Pawsibilities",
-      "description": "A 7-day beginner series covering the foundations of decentralized AI — from blockchain basics to storing AI model data on Filecoin. Watch each session and follow practical guides from ecosystem partners.",
-      "watchVideo": "Watch video",
-      "day1": {
-        "title": "Day 1 — Blockchain & Filecoin Essentials",
-        "description": "Learn the basics of Blockchain and Filecoin — the Data Layer of AI — and kickstart your journey into decentralized tech."
+    "whatYouCanBuild": {
+      "title": "What you can build",
+      "decentralizedStorageApps": {
+        "title": "Decentralized storage applications",
+        "description": "Applications that store and retrieve data on Filecoin rather than relying on centralized cloud providers, such as data pipelines, file hosting platforms, and dataset archives."
       },
-      "day2": {
-        "title": "Day 2 — Understanding Data DAOs",
-        "description": "Understand why high-quality data matters, how Data DAOs solve data ownership challenges, and get set up with FoxWallet."
+      "aiDataPipelines": {
+        "title": "AI data pipelines",
+        "description": "Store training datasets, inference results, and agent outputs on verifiable decentralized infrastructure."
       },
-      "day3": {
-        "title": "Day 3 — Storing Data on Filecoin (Storacha)",
-        "description": "Explore how decentralized storage supports smarter AI, and learn how to store data on Filecoin through Storacha."
+      "web3Infrastructure": {
+        "title": "Web3 infrastructure",
+        "description": "Build services, APIs, and middleware powered by decentralized storage."
       },
-      "day4": {
-        "title": "Day 4 — Build Your First Subgraph",
-        "description": "Build, deploy, and manage subgraphs to track smart-contract events powering your AI agents — guided by Protofire."
+      "dataVerificationServices": {
+        "title": "Data verification services",
+        "description": "Use Filecoin proofs to guarantee that important data is preserved and verifiable."
+      }
+    },
+    "tutorials": {
+      "title": "Tutorials and guides",
+      "buildDecentralizedFileStorageApp": {
+        "title": "Build a decentralized file storage app",
+        "description": "A step-by-step tutorial showing how to build a decentralized storage application using Filecoin and the Synapse SDK.",
+        "cta": "Learn more"
       },
-      "day5": {
-        "title": "Day 5 — Build Your First AI Agent",
-        "description": "Build your first AI agent on Filecoin with CrewAI through a beginner-friendly, step-by-step workflow."
+      "filecoinPinDeveloperGuide": {
+        "title": "Filecoin Pin developer guide",
+        "description": "A comprehensive introduction to Filecoin Pin and how web developers can use it to store data on decentralized infrastructure.",
+        "cta": "Learn more"
       },
-      "day6": {
-        "title": "Day 6 — Hot Storage + dApp Building",
-        "description": "Get hands-on with Akave's hot-storage solution, then explore FILFrame — your starting point for building a dApp."
+      "trustlessAiAgentsWithFilecoin": {
+        "title": "Trustless AI agents with Filecoin",
+        "description": "Learn how to combine AI agents and decentralized storage to create verifiable AI systems.",
+        "cta": "Learn more"
       },
-      "day7": {
-        "title": "Day 7 — Product-a-thon & Model Storage",
-        "description": "Prepare for the Product-a-thon: explore real project examples storing AI model data on Filecoin and find problem statements to build on."
+      "filecoinOnchainCloudExplained": {
+        "title": "Filecoin Onchain Cloud explained",
+        "description": "Overview of the decentralized cloud stack and services powering Filecoin developer infrastructure.",
+        "cta": "Learn more"
+      }
+    },
+    "buildWithFilecoinOnchainCloud": {
+      "title": "Build with Filecoin Onchain Cloud (Video Series)",
+      "description": "A video playlist walkthrough of the Filecoin Onchain Cloud developer stack. Learn how to build decentralized storage applications, manage datasets, and integrate Filecoin services into real-world architectures.",
+      "cta": "Watch full playlist",
+      "whatIsFilecoinOnchainCloud": {
+        "title": "What is Filecoin Onchain Cloud?",
+        "description": "What makes Filecoin Onchain Cloud different from AWS or Google Cloud? In this video, we're diving into how Filecoin is building a decentralized cloud platform with verifiable storage, proof-based payments, and a global network of providers.",
+        "cta": "Watch video"
+      },
+      "storageAndPaymentFlow": {
+        "title": "Storage and payment flow",
+        "description": "Ever wondered how decentralized storage actually works end-to-end? In this video, we're walking through the complete storage and payment flow on Filecoin Onchain Cloud from setting up payments to uploading your data, proving storage, and downloading it later.",
+        "cta": "Watch video"
+      },
+      "understandingVerification": {
+        "title": "Understanding verification",
+        "description": "Why does PDP matter? It's the heartbeat that proves your data is actually safe. In this video, we're breaking down Proof of Data Possession and why it's the core verification mechanism behind Filecoin Onchain Cloud.",
+        "cta": "Watch video"
       }
     },
     "developerResources": {

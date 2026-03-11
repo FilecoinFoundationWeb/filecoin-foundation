@@ -29,22 +29,25 @@ import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 import { getGetInvolvedOptions } from '../community-hub/data/getInvolvedOptions'
 
 import { HeroSection } from './components/HeroSection'
+import { getBuildWithFilecoinOnchainCloud } from './data/buildWithFilecoinOnchainCloud'
 import { getBuiltOnFilecoin } from './data/builtOnFilecoin'
-import { getCodeNCorgiSeries } from './data/codeNcorgiSeries'
 import { getDeveloperResources } from './data/developerResources'
 import { getFilecoinFeatures } from './data/filecoinFeatures'
 import { getInvolvedImages } from './data/getInvolvedImages'
+import { getQuickstart } from './data/quickstart'
 import { getTutorialsAndGuides } from './data/tutorialsAndGuides'
+import { getWhatYouCanBuild } from './data/whatYouCanBuild'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getBadgeVariant } from './utils/getBadgeVariant'
 
 export default async function BuildOnFilecoin() {
   const metadata = await getTranslatedMetadata(PATHS.BUILD_ON_FILECOIN.path)
   const t = await getTranslations(PATHS.BUILD_ON_FILECOIN.path)
 
   const builtOnFilecoin = getBuiltOnFilecoin(t)
+  const quickstart = getQuickstart(t)
+  const whatYouCanBuild = getWhatYouCanBuild(t)
   const tutorialsAndGuides = getTutorialsAndGuides(t)
-  const codeNCorgiSeries = getCodeNCorgiSeries(t)
+  const buildWithFilecoinOnchainCloud = getBuildWithFilecoinOnchainCloud(t)
   const developerResources = getDeveloperResources(t)
   const getInvolvedOptions = getGetInvolvedOptions(t)
   const filecoinFeatures = getFilecoinFeatures(t)
@@ -59,7 +62,7 @@ export default async function BuildOnFilecoin() {
 
       <HeroSection />
 
-      <PageSection backgroundVariant="light" paddingVariant="bottomNone">
+      <PageSection backgroundVariant="gray">
         <SectionContent
           centerCTA
           centerTitle
@@ -90,25 +93,71 @@ export default async function BuildOnFilecoin() {
       </PageSection>
 
       <PageSection backgroundVariant="light">
+        <SectionContent headingTag="h2" title={t('quickstart.title')}>
+          <CardGrid as="ul" variant="smTwoXlThreeWide">
+            {quickstart.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                as="li"
+                title={title}
+                headingTag="h3"
+                description={description}
+                cta={cta}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="dark">
+        <SectionContent headingTag="h2" title={t('whatYouCanBuild.title')}>
+          <CardGrid as="ul" variant="mdTwo">
+            {whatYouCanBuild.map(({ title, description, icon, href }) => (
+              <LinkCard
+                key={title}
+                as="li"
+                title={title}
+                headingTag="h3"
+                description={description}
+                href={href}
+                icon={{ component: icon }}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="gray">
+        <SectionContent headingTag="h2" title={t('tutorials.title')}>
+          <CardGrid as="ul" variant="mdTwo">
+            {tutorialsAndGuides.map(({ title, description, cta }) => (
+              <SimpleCard
+                key={title}
+                as="li"
+                title={title}
+                headingTag="h3"
+                description={description}
+                cta={cta}
+              />
+            ))}
+          </CardGrid>
+        </SectionContent>
+      </PageSection>
+
+      <PageSection backgroundVariant="light">
         <SectionContent
           headingTag="h2"
-          title={t('tutorials.title')}
-          description={t('tutorials.description')}
+          title={t('buildWithFilecoinOnchainCloud.title')}
         >
           <CardGrid as="ul" variant="smTwoXlThreeWide">
-            {tutorialsAndGuides.map(
-              ({ title, description, cta, difficulty, difficultyLabel }) => (
-                <SimpleCard
+            {buildWithFilecoinOnchainCloud.map(
+              ({ title, description, cta, image }) => (
+                <SimpleCardWithImage
                   key={title}
-                  as="li"
                   title={title}
-                  headingTag="h3"
                   description={description}
                   cta={cta}
-                  badge={{
-                    text: difficultyLabel,
-                    variant: getBadgeVariant(difficulty),
-                  }}
+                  image={image}
                 />
               ),
             )}
@@ -116,7 +165,7 @@ export default async function BuildOnFilecoin() {
         </SectionContent>
       </PageSection>
 
-      <PageSection backgroundVariant="light" paddingVariant="topNone">
+      {/* <PageSection backgroundVariant="light" paddingVariant="topNone">
         <SectionContent
           centerCTA
           headingTag="h2"
@@ -135,7 +184,7 @@ export default async function BuildOnFilecoin() {
             ))}
           </CardGrid>
         </SectionContent>
-      </PageSection>
+      </PageSection> */}
 
       <PageSection backgroundVariant="gray">
         <SectionContent headingTag="h2" title={t('developerResources.title')}>
