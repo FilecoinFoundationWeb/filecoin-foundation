@@ -1,5 +1,5 @@
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { BASE_URL, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { STRUCTURED_DATA_IDS } from '@/constants/structuredDataConstants'
 
 import type { ServiceDetails } from '@/utils/generateServiceStructuredData'
