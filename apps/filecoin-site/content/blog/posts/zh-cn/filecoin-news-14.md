@@ -9,7 +9,7 @@ double_column_mode: false
 excerpt: ""
 image:
   alt: ""
-  url: ""
+  url: /uploads/blog-filecoin-news.webp
 main_feature_inverted: false
 related_article_1: ""
 related_article_2: ""

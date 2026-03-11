@@ -2,13 +2,13 @@
 title: Filecoin文档迁移至GitBook！
 draft: false
 excerpt: 近期，经过慎重考虑，我们决定将文档迁移至GitBook平台。
-share_image: /uploads/0FILDocsUpdate.png
+share_image: /uploads/FILDocsUpdate.webp
 date: 2023-09-26T07:45:30.078Z
 categories:
   - updates
 dim_image: true
 image:
-  url: /uploads/0FILDocsUpdate.png
+  url: /uploads/FILDocsUpdate.webp
 ---
 
 Protocol Labs文档团队一直在使用[Hugo](https://gohugo.io/)、[Doks](https://getdoks.org/)和[Fleek](https://fleek.co/)的组合来创建和托管Filecoin文档网站。这些服务和平台为我们提供了很好的服务，感谢他们长期以来的支持！近期，经过慎重考虑，我们决定将文档迁移至[GitBook](https://www.gitbook.com/)平台。

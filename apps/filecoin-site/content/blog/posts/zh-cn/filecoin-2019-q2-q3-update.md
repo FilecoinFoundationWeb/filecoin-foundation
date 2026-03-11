@@ -6,7 +6,7 @@ categories:
   - awards
   - events
 cover_feature: false
-date: ""
+date: "2019-09-24T04:00:00Z"
 dim_image: false
 double_column_inverted: false
 double_column_mode: false
