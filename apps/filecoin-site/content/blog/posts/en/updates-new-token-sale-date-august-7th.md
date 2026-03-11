@@ -13,13 +13,13 @@ excerpt: >-
   released.
 image:
   alt: ""
-  url: ""
+  url: /uploads/filecoin.webp
 main_feature: false
 main_feature_inverted: false
 related_article_1: ""
 related_article_2: ""
 related_article_3: ""
-share_image: ""
+share_image: /uploads/filecoin.webp
 title: Updates & New Token Sale Date - August 7th
 _template: blog_detail
 ---

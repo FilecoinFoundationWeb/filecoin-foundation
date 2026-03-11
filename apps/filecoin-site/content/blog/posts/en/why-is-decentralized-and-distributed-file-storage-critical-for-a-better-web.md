@@ -13,7 +13,7 @@ excerpt: >-
   much more secure and efficient web.
 image:
   alt: ""
-  url: ""
+  url: /uploads/filecoin.webp
 main_feature: false
 main_feature_inverted: false
 related_article_1: content/blog/posts/announcing-filecoin-implementations-in-rust-and-c.en.md

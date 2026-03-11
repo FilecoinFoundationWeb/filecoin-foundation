@@ -17,7 +17,7 @@ main_feature_inverted: false
 related_article_1: ""
 related_article_2: ""
 related_article_3: ""
-share_image: /uploads/124910736-31759f00-dfec-11eb-8d25-7d277322dfc0.jpg
+share_image: /uploads/124910736-31759f00-dfec-11eb-8d25-7d277322dfc0-2.webp
 title: NEAR and Filecoin Ecosystems to Accelerate the Growth of the Web3 Stack
 ---
 
