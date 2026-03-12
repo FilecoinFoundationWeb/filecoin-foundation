@@ -55,6 +55,10 @@ const FILECOIN_FOUNDATION_URLS = {
     href: `${FILECOIN_FOUNDATION_URL}/privacy-policy`,
     label: 'Privacy Policy',
   },
+  termsOfUse: {
+    href: `${FILECOIN_FOUNDATION_URL}/terms-of-use`,
+    label: 'Terms of Use',
+  },
   emails: {
     contact: 'hello@fil.org',
     devgrants: 'devgrants@fil.org',
