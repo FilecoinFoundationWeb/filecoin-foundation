@@ -9,7 +9,7 @@ export function getQuickstart(t: TranslationFunction) {
       description: t('quickstart.whatIsFilecoin.description'),
       cta: {
         href: '#',
-        text: t('builtOnFilecoin.visitWebsite'),
+        text: t('quickstart.whatIsFilecoin.cta'),
       },
     },
     {
