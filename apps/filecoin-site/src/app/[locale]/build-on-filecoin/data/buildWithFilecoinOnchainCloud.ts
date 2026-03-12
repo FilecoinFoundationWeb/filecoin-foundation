@@ -1,6 +1,10 @@
 import type { TranslationFunction } from '@/i18n/types'
 
-import imageFallback from '@/assets/graphics/image-fallback.webp'
+import { FILECOIN_CLOUD_VIDEO_URLS } from '@/constants/siteMetadata'
+
+import storageAndPaymentFlow from '@/assets/graphics/storage-and-payment-flow.webp'
+import understandingVerification from '@/assets/graphics/understanding-verification.webp'
+import whatIsFilecoinOnchainCloud from '@/assets/graphics/what-is-foc.webp'
 
 import type { SimpleCardWithImageProps } from '@/components/SimpleCardWithImage'
 
@@ -14,11 +18,11 @@ export function getBuildWithFilecoinOnchainCloud(t: TranslationFunction) {
         'buildWithFilecoinOnchainCloud.whatIsFilecoinOnchainCloud.description',
       ),
       image: {
-        src: imageFallback,
+        src: whatIsFilecoinOnchainCloud,
         alt: '',
       },
       cta: {
-        href: '#',
+        href: FILECOIN_CLOUD_VIDEO_URLS.whatIsFilecoinOnchainCloud,
         text: t('buildWithFilecoinOnchainCloud.whatIsFilecoinOnchainCloud.cta'),
       },
     },
@@ -28,11 +32,11 @@ export function getBuildWithFilecoinOnchainCloud(t: TranslationFunction) {
         'buildWithFilecoinOnchainCloud.storageAndPaymentFlow.description',
       ),
       image: {
-        src: imageFallback,
+        src: storageAndPaymentFlow,
         alt: '',
       },
       cta: {
-        href: '#',
+        href: FILECOIN_CLOUD_VIDEO_URLS.storageAndPaymentFlow,
         text: t('buildWithFilecoinOnchainCloud.storageAndPaymentFlow.cta'),
       },
     },
@@ -42,11 +46,11 @@ export function getBuildWithFilecoinOnchainCloud(t: TranslationFunction) {
         'buildWithFilecoinOnchainCloud.understandingVerification.description',
       ),
       image: {
-        src: imageFallback,
+        src: understandingVerification,
         alt: '',
       },
       cta: {
-        href: '#',
+        href: FILECOIN_CLOUD_VIDEO_URLS.understandingVerification,
         text: t('buildWithFilecoinOnchainCloud.understandingVerification.cta'),
       },
     },

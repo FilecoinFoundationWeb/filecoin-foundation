@@ -12,7 +12,10 @@ import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 import { SimpleCard } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import {
+  FILECOIN_CLOUD_VIDEO_URLS,
+  FILECOIN_FOUNDATION_URLS,
+} from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -151,7 +154,10 @@ export default async function BuildOnFilecoin() {
           title={t('buildWithFilecoinOnchainCloud.title')}
           description={t('buildWithFilecoinOnchainCloud.description')}
           cta={
-            <Button href="#" variant="primary">
+            <Button
+              href={FILECOIN_CLOUD_VIDEO_URLS.fullPlaylist}
+              variant="primary"
+            >
               {t('buildWithFilecoinOnchainCloud.cta')}
             </Button>
           }
