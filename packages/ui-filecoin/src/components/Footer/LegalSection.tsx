@@ -1,12 +1,9 @@
 import type { ComponentType, SVGProps } from 'react'
 
 import { BaseLink } from '../BaseLink'
-import {
-  InternalTextLink,
-  type InternalTextLinkProps,
-} from '../TextLink/InternalTextLink'
+import { SmartTextLink, type SmartTextLinkProps } from '../TextLink/SmartTextLink'
 
-type LegalLinkItem = Pick<InternalTextLinkProps, 'href'> & {
+type LegalLinkItem = Pick<SmartTextLinkProps, 'href'> & {
   label: string
 }
 
@@ -50,7 +47,7 @@ export function LegalSection({
         <ul className="order-1 flex items-center gap-10 text-sm text-(--color-paragraph-text) md:gap-16">
           {legalItems.map(({ href, label }) => (
             <li key={href}>
-              <InternalTextLink href={href}>{label}</InternalTextLink>
+              <SmartTextLink href={href}>{label}</SmartTextLink>
             </li>
           ))}
         </ul>

@@ -627,18 +627,6 @@
       "results": "Results"
     }
   },
-  "/privacy-policy": {
-    "metadata": {
-      "title": "Privacy Policy | Filecoin Decentralized Storage Network",
-      "description": "Review Filecoin's privacy policy to understand our data collection, usage, and protection practices in a decentralized ecosystem. We prioritize user privacy, security, and transparency without centralized control."
-    }
-  },
-  "/terms-of-use": {
-    "metadata": {
-      "title": "Terms of Use | Filecoin Decentralized Storage Platform",
-      "description": "Read Filecoin's terms of use for guidelines on accessing our network, user responsibilities, and intellectual property rights. Ensure compliance while building, storing, or providing decentralized storage services."
-    }
-  },
   "/provide-storage": {
     "metadata": {
       "title": "Become a Filecoin Storage Provider | Earn Rewards in Decentralized Network",

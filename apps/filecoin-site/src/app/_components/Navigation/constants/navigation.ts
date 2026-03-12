@@ -236,7 +236,13 @@ export function getFooterNavigationItems(
 
 export function getFooterLegalItems(t: TranslationFunction): Array<NavItem> {
   return [
-    { label: t('privacyPolicy'), href: PATHS.PRIVACY_POLICY.path },
-    { label: t('termsOfUse'), href: PATHS.TERMS_OF_USE.path },
+    {
+      label: t('privacyPolicy'),
+      href: FILECOIN_FOUNDATION_URLS.privacyPolicy.href,
+    },
+    {
+      label: t('termsOfUse'),
+      href: FILECOIN_FOUNDATION_URLS.termsOfUse.href,
+    },
   ]
 }
