@@ -16,6 +16,7 @@ import { setUIConfig } from '@filecoin-foundation/ui-filecoin/config/ui-config'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
+import { Banner } from '@/components/Banner'
 import { Footer } from '@/components/Footer/Footer'
 
 // Initialize UI config before any components render
@@ -67,6 +68,9 @@ export function SiteLayout({
               trackFileDownloads
               domain={BASE_DOMAIN}
             >
+              {locale === 'zh-cn' && (
+                <Banner text="本翻译由 Claude 提供的 AI 翻译生成，未经人工译者核实。AI 翻译仅供参考，不应用于依赖关键信息的场景。" />
+              )}
               <main>{children}</main>
               <Footer />
             </PlausibleProvider>
