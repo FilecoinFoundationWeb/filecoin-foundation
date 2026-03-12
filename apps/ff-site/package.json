@@ -40,7 +40,7 @@
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",
     "next": "^16.1.6",
-    "next-plausible": "^3.12.4",
+    "next-plausible": "^3.12.5",
     "nuqs": "^2.8.8",
     "pluralize": "^8.0.0",
     "pretty-bytes": "^7.1.0",
