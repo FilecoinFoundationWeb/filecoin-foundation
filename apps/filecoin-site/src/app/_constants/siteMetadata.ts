@@ -51,6 +51,8 @@ const FILECOIN_CLOUD_VIDEO_URLS = {
     'https://www.youtube.com/playlist?list=PL3gCWoU4wyU3zfOK6-c6Nkrub9T-AOuxE',
 } as const
 
+const FIL_FRAME_URL = 'https://github.com/FIL-Builders/fil-frame'
+
 const FILECOIN_FOUNDATION_URL = 'https://fil.org'
 const FILECOIN_FOUNDATION_URLS = {
   ecosystemExplorer: {
@@ -147,6 +149,7 @@ const ROOT_METADATA = {
 export {
   BASE_DOMAIN,
   BASE_URL,
+  FIL_FRAME_URL,
   FILECOIN_CLOUD_DOCS_URL,
   FILECOIN_CLOUD_DOCS_URLS,
   FILECOIN_CLOUD_TUTORIALS_URLS,
