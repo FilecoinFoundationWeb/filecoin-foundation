@@ -33,5 +33,8 @@
     "dompurify": "^3.3.0",
     "jsonpath-plus": "^10.3.0"
   },
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "next-plausible": "^3.12.5"
+  }
 }
