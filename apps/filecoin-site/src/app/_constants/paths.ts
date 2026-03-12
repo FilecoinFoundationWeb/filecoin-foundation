@@ -45,10 +45,6 @@ export const PATHS = {
     path: '/store-data',
     label: 'Store Data',
   },
-  PRIVACY_POLICY: {
-    path: '/privacy-policy',
-    label: 'Privacy Policy',
-  },
   PROVIDE_STORAGE: {
     path: '/provide-storage',
     label: 'Provide Storage',
@@ -57,10 +53,7 @@ export const PATHS = {
     path: '/provide-storage/onboarding',
     label: 'Onboarding',
   },
-  TERMS_OF_USE: {
-    path: '/terms-of-use',
-    label: 'Terms of Use',
-  },
+
 } as const satisfies Record<string, PathConfig>
 
 const RSS_ROUTE = `/rss.xml`
