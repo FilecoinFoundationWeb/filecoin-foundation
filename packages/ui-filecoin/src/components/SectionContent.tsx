@@ -42,7 +42,10 @@ export function SectionContent({
           isInline
             ? 'flex flex-col gap-6 md:flex-row md:items-start md:justify-between'
             : 'max-w-3xl space-y-6',
-          !isInline && centerTitle && 'mx-auto text-center',
+          centerTitle &&
+            (isInline
+              ? 'mx-auto text-center md:mx-0 md:text-start'
+              : 'mx-auto text-center'),
         )}
       >
         <div className={clsx('space-y-6', isInline && 'max-w-3xl')}>
