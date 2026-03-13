@@ -32,22 +32,22 @@ export function SectionContent({
 }: SectionContentProps) {
   const isInline = ctaPosition === 'inline'
 
+  const headerClassName = clsx(
+    isInline
+      ? 'flex flex-col gap-6 md:flex-row md:items-start md:justify-between'
+      : 'max-w-3xl space-y-6',
+    centerTitle &&
+      (isInline
+        ? 'mx-auto text-center md:mx-0 md:text-start'
+        : 'mx-auto text-center'),
+  )
+
   return (
     <div
       className="section-content space-y-15"
       id={slugify(title.toString(), { lower: true })}
     >
-      <div
-        className={clsx(
-          isInline
-            ? 'flex flex-col gap-6 md:flex-row md:items-start md:justify-between'
-            : 'max-w-3xl space-y-6',
-          centerTitle &&
-            (isInline
-              ? 'mx-auto text-center md:mx-0 md:text-start'
-              : 'mx-auto text-center'),
-        )}
-      >
+      <div className={headerClassName}>
         <div className={clsx('space-y-6', isInline && 'max-w-3xl')}>
           <Heading tag={headingTag} variant="section-heading">
             {title}
