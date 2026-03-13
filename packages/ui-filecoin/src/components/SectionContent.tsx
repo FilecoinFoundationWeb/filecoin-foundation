@@ -14,6 +14,7 @@ type SectionContentProps = {
   title: HeadingProps['children']
   children?: React.ReactNode
   cta?: ButtonRowProps['buttons']
+  ctaPosition?: 'below' | 'inline'
   centerCTA?: ButtonRowProps['centered']
   centerTitle?: boolean
 } & Partial<SectionContentDescriptionProps>
@@ -25,9 +26,12 @@ export function SectionContent({
   descriptionColorBase,
   children,
   cta,
+  ctaPosition = 'below',
   centerCTA,
   centerTitle,
 }: SectionContentProps) {
+  const isInline = ctaPosition === 'inline'
+
   return (
     <div
       className="section-content space-y-15"
@@ -35,20 +39,29 @@ export function SectionContent({
     >
       <div
         className={clsx(
-          'max-w-3xl space-y-6',
-          centerTitle && 'mx-auto text-center',
+          isInline
+            ? 'flex flex-col gap-6 md:flex-row md:items-start md:justify-between'
+            : 'max-w-3xl space-y-6',
+          !isInline && centerTitle && 'mx-auto text-center',
         )}
       >
-        <Heading tag={headingTag} variant="section-heading">
-          {title}
-        </Heading>
+        <div className={clsx('space-y-6', isInline && 'max-w-3xl')}>
+          <Heading tag={headingTag} variant="section-heading">
+            {title}
+          </Heading>
+          {description && (
+            <div className="space-y-6">
+              <SectionContentDescription
+                descriptionColorBase={descriptionColorBase}
+                description={description}
+              />
+            </div>
+          )}
+        </div>
 
-        {description && (
-          <div className="space-y-6">
-            <SectionContentDescription
-              descriptionColorBase={descriptionColorBase}
-              description={description}
-            />
+        {cta && isInline && (
+          <div className="shrink-0">
+            <ButtonRow buttons={cta} centered={centerCTA} />
           </div>
         )}
       </div>
@@ -57,7 +70,7 @@ export function SectionContent({
         <div className="flex flex-col gap-15 md:gap-30">{children}</div>
       )}
 
-      {cta && <ButtonRow buttons={cta} centered={centerCTA} />}
+      {cta && !isInline && <ButtonRow buttons={cta} centered={centerCTA} />}
     </div>
   )
 }
