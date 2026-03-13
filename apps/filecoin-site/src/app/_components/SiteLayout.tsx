@@ -68,8 +68,8 @@ export function SiteLayout({
               domain={BASE_DOMAIN}
             >
               <main>{children}</main>
+              <Footer />
             </PlausibleProvider>
-            <Footer />
 
             {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
           </NuqsAdapter>
