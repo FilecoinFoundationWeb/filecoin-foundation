@@ -9,7 +9,7 @@ import { fileURLToPath } from 'url'
 
 /** @type {NextConfig['outputFileTracingIncludes']} */
 export const outputFileTracingIncludes = {
-  '/': ['src/app/**', 'src/content/**'],
+  '/': ['src/app/**', 'src/content/**', 'content/**'],
 }
 
 /** @type {NextConfig['outputFileTracingExcludes']} */
