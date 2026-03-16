@@ -30,7 +30,7 @@
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",
     "next": "^16.1.6",
-    "next-plausible": "^3.12.4",
+    "next-plausible": "^3.12.5",
     "nuqs": "^2.8.8",
     "react": "^19.2.4",
     "react-markdown": "^10.1.0",
