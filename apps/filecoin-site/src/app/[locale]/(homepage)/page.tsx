@@ -206,7 +206,7 @@ export default async function Home({ params }: BlogProps) {
 
       <PageSection backgroundVariant="gray">
         <SectionContent
-          centerCTA
+          ctaPosition="inline"
           headingTag="h2"
           title={t('latestNews.title')}
           description={t('latestNews.description')}

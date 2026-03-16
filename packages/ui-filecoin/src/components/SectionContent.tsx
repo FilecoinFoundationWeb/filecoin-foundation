@@ -14,8 +14,9 @@ type SectionContentProps = {
   title: HeadingProps['children']
   children?: React.ReactNode
   cta?: ButtonRowProps['buttons']
-  ctaPosition?: 'below' | 'inline'
-  centerCTA?: ButtonRowProps['centered']
+  ctaPosition?: 'below' | 'below-center' | 'inline'
+  // to be removed in favor of ctaPosition
+  centerCTA?: boolean
   centerTitle?: boolean
 } & Partial<SectionContentDescriptionProps>
 
@@ -26,11 +27,12 @@ export function SectionContent({
   descriptionColorBase,
   children,
   cta,
-  ctaPosition = 'below',
   centerCTA,
+  ctaPosition = 'below',
   centerTitle,
 }: SectionContentProps) {
   const isInline = ctaPosition === 'inline'
+  const isCentered = ctaPosition === 'below-center' || centerCTA
 
   const headerClassName = clsx(
     isInline
@@ -64,7 +66,7 @@ export function SectionContent({
 
         {cta && isInline && (
           <div className="shrink-0">
-            <ButtonRow buttons={cta} centered={centerCTA} />
+            <ButtonRow buttons={cta} />
           </div>
         )}
       </div>
@@ -73,7 +75,7 @@ export function SectionContent({
         <div className="flex flex-col gap-15 md:gap-30">{children}</div>
       )}
 
-      {cta && !isInline && <ButtonRow buttons={cta} centered={centerCTA} />}
+      {cta && !isInline && <ButtonRow buttons={cta} centered={isCentered} />}
     </div>
   )
 }
