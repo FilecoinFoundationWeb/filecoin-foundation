@@ -15,13 +15,12 @@ import '@/styles/globals.css'
 
 export const metadata = ROOT_METADATA
 
+const BANNER_TEXT =
+  '本翻译由 Claude 提供的 AI 翻译生成，未经人工译者核实。AI 翻译仅供参考，不应用于依赖关键信息的场景。'
 type RootLayoutProps = {
   children: React.ReactNode
   params: Promise<UnsanitizedLocaleParams>
 }
-
-const BANNER_TEXT =
-  '本翻译由 Claude 提供的 AI 翻译生成，未经人工译者核实。AI 翻译仅供参考，不应用于依赖关键信息的场景。'
 
 export default async function RootLayout({
   children,
