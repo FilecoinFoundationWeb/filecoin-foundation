@@ -6,6 +6,7 @@ import type { Locale } from '@/i18n/types'
 
 import { clsx } from 'clsx'
 import { NextIntlClientProvider } from 'next-intl'
+import PlausibleProvider from 'next-plausible'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -60,8 +61,15 @@ export function SiteLayout({
       <body className="bg-zinc-950 font-sans text-base/5.5">
         <NextIntlClientProvider>
           <NuqsAdapter>
-            <main>{children}</main>
-            <Footer />
+            <PlausibleProvider
+              trackOutboundLinks
+              hash
+              trackFileDownloads
+              domain={BASE_DOMAIN}
+            >
+              <main>{children}</main>
+              <Footer />
+            </PlausibleProvider>
 
             {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
           </NuqsAdapter>
