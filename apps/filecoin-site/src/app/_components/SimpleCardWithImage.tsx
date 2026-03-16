@@ -30,7 +30,7 @@ export function SimpleCardWithImage({
   cta,
 }: SimpleCardWithImageProps) {
   return (
-    <li className="group focus-within:brand-outline relative flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--color-border-base)]">
+    <li className="group focus-within:brand-outline relative flex h-full flex-col overflow-hidden rounded-2xl border border-(--color-border-base)">
       <Image src={image.src} alt={image.alt} />
 
       <div className="relative flex h-full w-full flex-col gap-6 p-8 group-focus-within:bg-(--color-card-background-hover) group-hover:bg-(--color-card-background-hover)">
