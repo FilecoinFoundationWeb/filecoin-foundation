@@ -7,7 +7,7 @@ import { Banner, type BannerProps } from './Banner'
 type PersistedBannerProps = Pick<BannerProps, 'text'>
 
 export async function PersistedBanner({ text }: PersistedBannerProps) {
-  const cookieName = `banner-visibility-${hash(text)}`
+  const cookieName = `show-banner-${hash(text)}`
 
   const cookieStore = await cookies()
   const cookieValue = cookieStore.get(cookieName)?.value
