@@ -61,7 +61,6 @@ export function SiteLayout({
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
       </head>
       <body className="bg-zinc-950 font-sans text-base/5.5">
-        {banner}
         <NextIntlClientProvider>
           <NuqsAdapter>
             <PlausibleProvider
