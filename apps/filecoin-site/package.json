@@ -31,6 +31,7 @@
     "fast-glob": "^3.3.3",
     "feed": "^5.2.0",
     "gray-matter": "^4.0.3",
+    "js-cookie": "^3.0.5",
     "next": "^16.1.6",
     "next-intl": "^4.8.2",
     "next-plausible": "^3.12.5",
@@ -41,8 +42,7 @@
     "react-dom": "^19.2.4",
     "react-hook-form": "^7.71.1",
     "swr": "^2.4.0",
-    "tinacms": "^3.4.1",
-    "usehooks-ts": "^3.1.1"
+    "tinacms": "^3.4.1"
   },
   "devDependencies": {
     "@eslint/js": "9.39.2",
@@ -53,6 +53,7 @@
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.1.18",
     "@tinacms/cli": "^2.1.5",
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "^25",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",

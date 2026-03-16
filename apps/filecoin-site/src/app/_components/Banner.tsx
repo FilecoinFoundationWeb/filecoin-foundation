@@ -1,31 +1,39 @@
 'use client'
 
+import { useState } from 'react'
+
 import { XIcon } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
-import { hash } from 'ohash'
-import { useLocalStorage } from 'usehooks-ts'
+import Cookies from 'js-cookie'
 
 import { Container } from '@filecoin-foundation/ui-filecoin/Container'
 import { Icon } from '@filecoin-foundation/ui-filecoin/Icon'
+import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 
-type BannerProps = {
+export type BannerProps = {
   text: string
+  cookieName: string
 }
 
 const TOUCH_TARGET = {
-  touchAreaPadding: 'p-4',
-  touchAreaOffset: '-m-4',
-} as const
+  visibleElementSize: 18,
+  touchAreaPadding: 'p-3.5',
+  touchAreaOffset: '-m-3.5',
+} satisfies TouchTarget
 
-const STORAGE_KEY_PREFIX = 'show-banner-'
-const INITIAL_VISIBILITY_STATE = true
+const COOKIE_EXPIRY_DAYS = 365
+const BANNER_HIDE_STATE = false
 
-export function Banner({ text }: BannerProps) {
-  const [isVisible, setIsVisible] = useLocalStorage(
-    `${STORAGE_KEY_PREFIX}${hash(text)}`,
-    INITIAL_VISIBILITY_STATE,
-    { initializeWithValue: false },
-  )
+export function Banner({ text, cookieName }: BannerProps) {
+  const [isVisible, setIsVisible] = useState(true)
+
+  function hideBanner() {
+    Cookies.set(cookieName, BANNER_HIDE_STATE.toString(), {
+      expires: COOKIE_EXPIRY_DAYS,
+      sameSite: 'Lax',
+    })
+    setIsVisible(BANNER_HIDE_STATE)
+  }
 
   return (
     <div
@@ -36,7 +44,10 @@ export function Banner({ text }: BannerProps) {
       )}
     >
       <div className="overflow-hidden">
-        <div role="status" className="bg-brand-800 py-3 text-center text-white">
+        <div
+          role="status"
+          className="bg-brand-800 py-3.5 text-center text-white"
+        >
           <Container>
             <div className="flex items-center justify-between gap-4">
               <p className="grow text-center text-xs text-balance sm:text-sm/5">
@@ -48,13 +59,16 @@ export function Banner({ text }: BannerProps) {
                 aria-label="Dismiss banner"
                 tabIndex={isVisible ? 0 : -1}
                 className={clsx(
-                  'focus:brand-outline shrink-0 cursor-pointer',
+                  'shrink-0 cursor-pointer focus:outline focus:outline-white',
                   TOUCH_TARGET.touchAreaPadding,
                   TOUCH_TARGET.touchAreaOffset,
                 )}
-                onClick={() => setIsVisible(false)}
+                onClick={hideBanner}
               >
-                <Icon component={XIcon} size={16} />
+                <Icon
+                  component={XIcon}
+                  size={TOUCH_TARGET.visibleElementSize}
+                />
               </button>
             </div>
           </Container>
