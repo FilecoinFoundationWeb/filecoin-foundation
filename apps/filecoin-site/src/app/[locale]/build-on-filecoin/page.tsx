@@ -5,6 +5,7 @@ import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
+import { Card } from '@filecoin-foundation/ui-filecoin/Card'
 import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { LinkCard } from '@filecoin-foundation/ui-filecoin/LinkCard'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
@@ -115,15 +116,13 @@ export default async function BuildOnFilecoin() {
       <PageSection backgroundVariant="dark">
         <SectionContent headingTag="h2" title={t('whatYouCanBuild.title')}>
           <CardGrid as="ul" variant="mdTwo">
-            {whatYouCanBuild.map(({ title, description, icon, href }) => (
-              <LinkCard
+            {whatYouCanBuild.map(({ title, description, icon }) => (
+              <Card
                 key={title}
                 as="li"
                 title={title}
-                headingTag="h3"
                 description={description}
-                href={href}
-                icon={{ component: icon }}
+                icon={icon}
               />
             ))}
           </CardGrid>
