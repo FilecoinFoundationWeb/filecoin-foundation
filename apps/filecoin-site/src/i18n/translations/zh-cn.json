@@ -456,86 +456,84 @@
         "description": "基于 Filecoin 构建，Huddle01 是一个去中心化的实时通信网络，提供面向 Web 和移动端的实时音视频软件开发套件。"
       }
     },
-    "tutorials": {
-      "title": "教程和指南",
-      "description": "学习基础知识，开始使用 Filecoin 构建。",
-      "basics": {
-        "title": "了解 Filecoin 基础",
-        "description": "快速了解 Filecoin 作为去中心化、可验证存储网络的角色以及开发者使用它的原因。",
-        "cta": "阅读 Filecoin 基础指南"
+    "quickstart": {
+      "title": "快速入门",
+      "whatIsFilecoin": {
+        "title": "什么是 Filecoin？",
+        "description": "了解去中心化存储、证明与数据市场的核心概念。",
+        "cta": "访问网站"
       },
-      "devEnv": {
-        "title": "设置开发环境",
-        "description": "安装工具并创建与 Filecoin 兼容的钱包（例如 MetaMask），为开发做好准备。",
-        "cta": "按照设置说明操作"
+      "builderCookbook": {
+        "title": "开发者手册",
+        "description": "常见任务的步骤指南，如存储文件、检索数据与构建应用。",
+        "cta": "查看开发者手册"
       },
-      "connect": {
-        "title": "连接到 Filecoin 网络",
-        "description": "使用 Calibration 测试网安全构建。从水龙头领取 testFIL 并通过 RPC 端点连接。",
-        "cta": "连接到测试网"
-      },
-      "storeRetrieve": {
-        "title": "存储和检索您的第一个文件",
-        "description": "使用存储 API 或 SDK 上传文件，获取 CID，并通过 IPFS 网关检索。",
-        "cta": "尝试存储您的第一个文件"
-      },
-      "programmatic": {
-        "title": "在应用中进行编程化存储",
-        "description": "使用 JavaScript SDK 或 HTTP API 直接在应用逻辑中存储和检索文件。",
-        "cta": "查看代码示例"
-      },
-      "smartContract": {
-        "title": "在 FVM 上部署您的第一个智能合约",
-        "description": "部署一个简单的智能合约，在 FEVM 上存储对 Filecoin 数据的引用。",
-        "cta": "部署示例合约"
-      },
-      "firstDapp": {
-        "title": "构建您的第一个 dApp",
-        "description": "创建一个包含前端、存储后端和 FVM 智能合约协同工作的最小 dApp。",
-        "cta": "开始构建 dApp"
-      },
-      "advanced": {
-        "title": "探索高级用例",
-        "description": "了解 NFT、AI 数据集、混合云存储和跨链集成的模式。",
-        "cta": "探索高级示例"
-      },
-      "difficulty": {
-        "beginner": "初级",
-        "intermediate": "中级",
-        "advanced": "高级"
+      "filFrame": {
+        "title": "FIL Frame",
+        "description": "FIL Builders 社区的开源框架，帮助开发者快速搭建基于 Filecoin 的应用。",
+        "cta": "在 GitHub 上查看 FIL Frame"
       }
     },
-    "codeNCorgi": {
-      "title": "Code n' Corgi：探索 AI 的无限可能",
-      "description": "为期 7 天的入门系列，涵盖去中心化 AI 基础——从区块链基础到在 Filecoin 上存储 AI 模型数据。观看每节课程并跟随生态系统合作伙伴的实践指南。",
-      "watchVideo": "观看视频",
-      "day1": {
-        "title": "第 1 天 — 区块链和 Filecoin 基础",
-        "description": "学习区块链和 Filecoin（AI 的数据层）的基础知识，开启您的去中心化技术之旅。"
+    "whatYouCanBuild": {
+      "title": "你可以构建什么",
+      "decentralizedStorageApps": {
+        "title": "去中心化存储应用",
+        "description": "在 Filecoin 上存储和检索数据的应用，而非依赖中心化云服务商，例如数据管道、文件托管平台和数据集归档。"
       },
-      "day2": {
-        "title": "第 2 天 — 理解数据 DAO",
-        "description": "了解高质量数据的重要性、数据 DAO 如何解决数据所有权挑战，并设置 FoxWallet。"
+      "aiDataPipelines": {
+        "title": "AI 数据管道",
+        "description": "在可验证的去中心化基础设施上存储训练数据集、推理结果和智能体输出。"
       },
-      "day3": {
-        "title": "第 3 天 — 在 Filecoin 上存储数据（Storacha）",
-        "description": "探索去中心化存储如何支持更智能的 AI，学习如何通过 Storacha 在 Filecoin 上存储数据。"
+      "web3Infrastructure": {
+        "title": "Web3 基础设施",
+        "description": "基于去中心化存储构建服务、API 和中间件。"
       },
-      "day4": {
-        "title": "第 4 天 — 构建您的第一个子图",
-        "description": "构建、部署和管理子图，跟踪驱动 AI 代理的智能合约事件——由 Protofire 指导。"
+      "dataVerificationServices": {
+        "title": "数据验证服务",
+        "description": "利用 Filecoin 证明确保重要数据被保存且可验证。"
+      }
+    },
+    "tutorials": {
+      "title": "教程与指南",
+      "buildDecentralizedFileStorageApp": {
+        "title": "构建去中心化文件存储应用",
+        "description": "分步教程：如何使用 Filecoin 和 Synapse SDK 构建去中心化存储应用。",
+        "cta": "了解更多"
       },
-      "day5": {
-        "title": "第 5 天 — 构建您的第一个 AI 代理",
-        "description": "通过 CrewAI 在 Filecoin 上构建您的第一个 AI 代理，采用入门友好的分步工作流程。"
+      "filecoinPinDeveloperGuide": {
+        "title": "Filecoin Pin 开发者指南",
+        "description": "全面介绍 Filecoin Pin 以及 Web 开发者如何用它将数据存储在去中心化基础设施上。",
+        "cta": "了解更多"
       },
-      "day6": {
-        "title": "第 6 天 — 热存储 + dApp 构建",
-        "description": "动手实践 Akave 的热存储解决方案，然后探索 FILFrame——构建 dApp 的起点。"
+      "trustlessAiAgentsWithFilecoin": {
+        "title": "基于 Filecoin 的无信任 AI 智能体",
+        "description": "了解如何将 AI 智能体与去中心化存储结合，构建可验证的 AI 系统。",
+        "cta": "了解更多"
       },
-      "day7": {
-        "title": "第 7 天 — 产品马拉松与模型存储",
-        "description": "为产品马拉松做准备：探索在 Filecoin 上存储 AI 模型数据的真实项目示例，找到可以构建的问题陈述。"
+      "filecoinOnchainCloudExplained": {
+        "title": "Filecoin Onchain Cloud 解读",
+        "description": "概述支撑 Filecoin 开发者基础设施的去中心化云技术栈与服务。",
+        "cta": "了解更多"
+      }
+    },
+    "buildWithFilecoinOnchainCloud": {
+      "title": "使用 Filecoin Onchain Cloud 构建（视频系列）",
+      "description": "Filecoin Onchain Cloud 开发者技术栈的视频播放列表讲解。学习如何构建去中心化存储应用、管理数据集，并将 Filecoin 服务集成到实际架构中。",
+      "cta": "观看完整播放列表",
+      "whatIsFilecoinOnchainCloud": {
+        "title": "什么是 Filecoin Onchain Cloud？",
+        "description": "Filecoin Onchain Cloud 与 AWS 或 Google Cloud 有何不同？本视频将介绍 Filecoin 如何构建具备可验证存储、基于证明的支付和全球节点网络的去中心化云平台。",
+        "cta": "观看视频"
+      },
+      "storageAndPaymentFlow": {
+        "title": "存储与支付流程",
+        "description": "想了解去中心化存储的端到端流程？本视频将带你走完 Filecoin Onchain Cloud 上的完整存储与支付流程：从配置支付、上传数据、证明存储到后续下载。",
+        "cta": "观看视频"
+      },
+      "understandingVerification": {
+        "title": "理解验证机制",
+        "description": "PDP（数据持有证明）为何重要？它是证明数据真实安全的核心机制。本视频将解析数据持有证明及其作为 Filecoin Onchain Cloud 核心验证机制的原因。",
+        "cta": "观看视频"
       }
     },
     "developerResources": {

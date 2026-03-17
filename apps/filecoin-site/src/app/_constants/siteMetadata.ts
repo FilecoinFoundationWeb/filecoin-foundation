@@ -29,6 +29,30 @@ const FILECOIN_CLOUD_DOCS_URLS = {
   about: `${FILECOIN_CLOUD_DOCS_URL}/introduction/about`,
 } as const
 
+const FILECOIN_CLOUD_TUTORIALS_URLS = {
+  buildDecentralizedFileStorageApp:
+    'https://medium.com/@filbuilders/building-a-decentralized-file-storage-app-with-filecoin-and-synapse-sdk-e27553991bcc',
+  filecoinPinDeveloperGuide:
+    'https://medium.com/@filbuilders/filecoin-pin-a-comprehensive-guide-to-decentralized-storage-for-web-developers-246b1ac4b632',
+  trustlessAiAgentsWithFilecoin:
+    'https://medium.com/@filbuilders/building-trustless-ai-agent-interactions-with-erc-8004-and-filecoin-pin-42ec224c0605',
+  filecoinOnchainCloudExplained:
+    'https://medium.com/@filbuilders/filecoin-onchain-cloud-revolutionizing-decentralized-data-services-164b0a71190b',
+} as const
+
+const FILECOIN_CLOUD_VIDEO_URLS = {
+  whatIsFilecoinOnchainCloud:
+    'https://www.youtube.com/watch?v=KH378P_CTK8&list=PL3gCWoU4wyU3zfOK6-c6Nkrub9T-AOuxE&index=1',
+  storageAndPaymentFlow:
+    'https://www.youtube.com/watch?v=XD-w8bHOfkA&list=PL3gCWoU4wyU3zfOK6-c6Nkrub9T-AOuxE&index=2',
+  understandingVerification:
+    'https://www.youtube.com/watch?v=wXE0-orGao4&list=PL3gCWoU4wyU3zfOK6-c6Nkrub9T-AOuxE&index=3',
+  fullPlaylist:
+    'https://www.youtube.com/playlist?list=PL3gCWoU4wyU3zfOK6-c6Nkrub9T-AOuxE',
+} as const
+
+const FIL_FRAME_URL = 'https://github.com/FIL-Builders/fil-frame'
+
 const FILECOIN_FOUNDATION_URL = 'https://fil.org'
 const FILECOIN_FOUNDATION_URLS = {
   ecosystemExplorer: {
@@ -129,14 +153,17 @@ const ROOT_METADATA = {
 export {
   BASE_DOMAIN,
   BASE_URL,
+  FIL_FRAME_URL,
+  FILECOIN_CLOUD_DOCS_URL,
+  FILECOIN_CLOUD_DOCS_URLS,
+  FILECOIN_CLOUD_TUTORIALS_URLS,
+  FILECOIN_CLOUD_URL,
+  FILECOIN_CLOUD_VIDEO_URLS,
   FILECOIN_DOCS_URL,
   FILECOIN_DOCS_URLS,
   FILECOIN_FOUNDATION_URL,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
-  FILECOIN_CLOUD_URL,
-  FILECOIN_CLOUD_DOCS_URL,
-  FILECOIN_CLOUD_DOCS_URLS,
   ORGANIZATION_NAME,
   ROOT_METADATA,
 }

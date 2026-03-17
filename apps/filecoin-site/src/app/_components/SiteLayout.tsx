@@ -43,11 +43,13 @@ const aspekta = localFont({
 
 type SiteLayoutProps = {
   children: React.ReactNode
+  banner?: React.ReactNode
   locale?: Locale
 }
 
 export function SiteLayout({
   children,
+  banner,
   locale = DEFAULT_LOCALE,
 }: SiteLayoutProps) {
   return (
@@ -67,6 +69,7 @@ export function SiteLayout({
               trackFileDownloads
               domain={BASE_DOMAIN}
             >
+              {banner}
               <main>{children}</main>
               <Footer />
             </PlausibleProvider>
