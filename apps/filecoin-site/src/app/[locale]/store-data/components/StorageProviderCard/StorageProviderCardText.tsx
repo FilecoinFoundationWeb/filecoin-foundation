@@ -7,5 +7,5 @@ type StorageProviderCardTextProps = {
 export function StorageProviderCardText({
   children,
 }: StorageProviderCardTextProps) {
-  return <span className="text-sm text-zinc-950">{children}</span>
+  return <div className="text-sm text-zinc-950">{children}</div>
 }

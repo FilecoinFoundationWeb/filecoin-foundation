@@ -27,7 +27,7 @@ import { StorageProviderCard } from './components/StorageProviderCard/StoragePro
 import { StorageProviderSection } from './components/StorageProviderSection'
 import {
   getFilecoinStorageProviders,
-  getFeaturedFilecoinStorageProvider,
+  getFeaturedFilecoinStorageProviders,
 } from './data/storageProviders'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -36,7 +36,7 @@ export default async function StoreData() {
   const t = await getTranslations(PATHS.STORE_DATA.path)
 
   const storageProviders = getFilecoinStorageProviders(t)
-  const featuredStorageProviders = getFeaturedFilecoinStorageProvider(t)
+  const featuredStorageProviders = getFeaturedFilecoinStorageProviders(t)
 
   return (
     <>

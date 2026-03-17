@@ -42,6 +42,7 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
       logo: AkaveMiniatureLogo,
     },
     {
+      // todo: update card content
       name: 'Aurora',
       description: t('providers.aurora.description'),
       labels: [t('providers.aurora.labels.0'), t('providers.aurora.labels.1')],
@@ -125,7 +126,7 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
   ] satisfies Array<StorageProvider>
 }
 
-export function getFeaturedFilecoinStorageProvider(t: TranslationFunction) {
+export function getFeaturedFilecoinStorageProviders(t: TranslationFunction) {
   return [
     {
       name: 'Fil One',
@@ -139,11 +140,14 @@ export function getFeaturedFilecoinStorageProvider(t: TranslationFunction) {
         t('providers.filOne.keyFeatures.1'),
         t('providers.filOne.keyFeatures.2'),
       ],
-      url: 'https://fil.one/',
-      logo: StorachaMiniatureLogo,
+      // todo: update url
+      url: 'https://filecoin.io/',
+      // todo: update logo
+      logo: AkaveMiniatureLogo,
       isFeatured: true,
     },
     {
+      // todo: update card content
       name: 'Filecoin Onchain Cloud',
       description: t('providers.filecoinOnchainCloud.description'),
       labels: [
@@ -158,8 +162,8 @@ export function getFeaturedFilecoinStorageProvider(t: TranslationFunction) {
         t('providers.filecoinOnchainCloud.keyFeatures.1'),
         t('providers.filecoinOnchainCloud.keyFeatures.2'),
       ],
-      url: 'https://onchain.cloud/',
-      logo: StorachaMiniatureLogo,
+      url: 'https://filecoin.cloud/',
+      logo: AkaveMiniatureLogo,
       isFeatured: true,
     },
   ] satisfies Array<StorageProvider>
