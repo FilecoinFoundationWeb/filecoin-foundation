@@ -64,7 +64,7 @@ export function SimpleCardWithLogo({
         className="h-full border-t border-(--color-border-base) sm:border-t-0 sm:border-r"
       />
 
-      <div className="relative h-full w-full group-focus-within:bg-(--color-card-background-hover) group-hover:bg-(--color-card-background-hover)">
+      <div className="relative h-full w-full bg-(--color-card-background) group-focus-within:bg-(--color-card-background-hover) group-hover:bg-(--color-card-background-hover)">
         <div className="flex flex-col gap-6 p-8">
           <div className="mb-12 flex flex-col gap-3">
             <span className="group-focus-within:text-(--color-card-heading-hover) group-hover:text-(--color-card-heading-hover)">

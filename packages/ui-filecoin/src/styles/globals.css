@@ -78,6 +78,12 @@
   --color-card-heading-hover: theme('colors.brand.800');
 }
 
+.gray-section {
+  --color-card-background: theme('colors.white');
+  --color-card-background-hover: theme('colors.white');
+  --color-card-heading-hover: theme('colors.brand.800');
+}
+
 .dark-section {
   /* General colors */
   --color-text-base: theme('colors.zinc.50');

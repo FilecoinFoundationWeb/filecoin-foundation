@@ -1,93 +1,42 @@
 import type { TranslationFunction } from '@/i18n/types'
 
-import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
+import type { SimpleCardData } from '@filecoin-foundation/ui-filecoin/SimpleCard'
 
-
-export type TutorialsAndGuides = {
-  difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
-}
+import { FILECOIN_CLOUD_TUTORIALS_URLS } from '@/constants/siteMetadata'
 
 export function getTutorialsAndGuides(t: TranslationFunction) {
   return [
     {
-      title: t('tutorials.basics.title'),
-      description: t('tutorials.basics.description'),
-      difficulty: 'Beginner' as const,
-      difficultyLabel: t('tutorials.difficulty.beginner'),
+      title: t('tutorials.buildDecentralizedFileStorageApp.title'),
+      description: t('tutorials.buildDecentralizedFileStorageApp.description'),
       cta: {
-        href: FILECOIN_DOCS_URLS.basicsWhatIsFilecoin,
-        text: t('tutorials.basics.cta'),
+        href: FILECOIN_CLOUD_TUTORIALS_URLS.buildDecentralizedFileStorageApp,
+        text: t('tutorials.buildDecentralizedFileStorageApp.cta'),
       },
     },
     {
-      title: t('tutorials.devEnv.title'),
-      description: t('tutorials.devEnv.description'),
-      difficulty: 'Beginner' as const,
-      difficultyLabel: t('tutorials.difficulty.beginner'),
+      title: t('tutorials.filecoinPinDeveloperGuide.title'),
+      description: t('tutorials.filecoinPinDeveloperGuide.description'),
       cta: {
-        href: 'https://github.com/FIL-Builders/fil-frame',
-        text: t('tutorials.devEnv.cta'),
+        href: FILECOIN_CLOUD_TUTORIALS_URLS.filecoinPinDeveloperGuide,
+        text: t('tutorials.filecoinPinDeveloperGuide.cta'),
       },
     },
     {
-      title: t('tutorials.connect.title'),
-      description: t('tutorials.connect.description'),
-      difficulty: 'Beginner' as const,
-      difficultyLabel: t('tutorials.difficulty.beginner'),
+      title: t('tutorials.trustlessAiAgentsWithFilecoin.title'),
+      description: t('tutorials.trustlessAiAgentsWithFilecoin.description'),
       cta: {
-        href: FILECOIN_DOCS_URLS.builderCookbook,
-        text: t('tutorials.connect.cta'),
+        href: FILECOIN_CLOUD_TUTORIALS_URLS.trustlessAiAgentsWithFilecoin,
+        text: t('tutorials.trustlessAiAgentsWithFilecoin.cta'),
       },
     },
     {
-      title: t('tutorials.storeRetrieve.title'),
-      description: t('tutorials.storeRetrieve.description'),
-      difficulty: 'Beginner' as const,
-      difficultyLabel: t('tutorials.difficulty.beginner'),
+      title: t('tutorials.filecoinOnchainCloudExplained.title'),
+      description: t('tutorials.filecoinOnchainCloudExplained.description'),
       cta: {
-        href: FILECOIN_DOCS_URLS.builderCookbook,
-        text: t('tutorials.storeRetrieve.cta'),
+        href: FILECOIN_CLOUD_TUTORIALS_URLS.filecoinOnchainCloudExplained,
+        text: t('tutorials.filecoinOnchainCloudExplained.cta'),
       },
     },
-    {
-      title: t('tutorials.programmatic.title'),
-      description: t('tutorials.programmatic.description'),
-      difficulty: 'Intermediate' as const,
-      difficultyLabel: t('tutorials.difficulty.intermediate'),
-      cta: {
-        href: FILECOIN_DOCS_URLS.builderCookbook,
-        text: t('tutorials.programmatic.cta'),
-      },
-    },
-    {
-      title: t('tutorials.smartContract.title'),
-      description: t('tutorials.smartContract.description'),
-      difficulty: 'Intermediate' as const,
-      difficultyLabel: t('tutorials.difficulty.intermediate'),
-      cta: {
-        href: FILECOIN_DOCS_URLS.builderCookbook,
-        text: t('tutorials.smartContract.cta'),
-      },
-    },
-    {
-      title: t('tutorials.firstDapp.title'),
-      description: t('tutorials.firstDapp.description'),
-      difficulty: 'Intermediate' as const,
-      difficultyLabel: t('tutorials.difficulty.intermediate'),
-      cta: {
-        href: FILECOIN_DOCS_URLS.builderCookbook,
-        text: t('tutorials.firstDapp.cta'),
-      },
-    },
-    {
-      title: t('tutorials.advanced.title'),
-      description: t('tutorials.advanced.description'),
-      difficulty: 'Advanced' as const,
-      difficultyLabel: t('tutorials.difficulty.advanced'),
-      cta: {
-        href: FILECOIN_DOCS_URLS.builderCookbook,
-        text: t('tutorials.advanced.cta'),
-      },
-    },
-  ]
+  ] satisfies Array<SimpleCardData>
 }
