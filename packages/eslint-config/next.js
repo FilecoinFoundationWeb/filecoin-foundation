@@ -2,7 +2,7 @@ import pluginReactHooks from 'eslint-plugin-react-hooks'
 import pluginReact from 'eslint-plugin-react'
 import globals from 'globals'
 import pluginNext from '@next/eslint-plugin-next'
-import pluginImport from 'eslint-plugin-import'
+import pluginImport from 'eslint-plugin-import-x'
 import { config as baseConfig } from './base.js'
 import { sharedGroups } from './shared-import-rules.js'
 
@@ -59,10 +59,10 @@ export const config = [
   },
   {
     plugins: {
-      import: pluginImport,
+      'import-x': pluginImport,
     },
     rules: {
-      'import/order': [
+      'import-x/order': [
         'error',
         {
           groups: sharedGroups,
