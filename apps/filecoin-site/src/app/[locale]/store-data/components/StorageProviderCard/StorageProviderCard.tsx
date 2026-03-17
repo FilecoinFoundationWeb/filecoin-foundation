@@ -17,10 +17,12 @@ export type StorageProviderCardProps = {
   description: string
   labels: Array<string>
   cents: number
+  offer?: string
   bestFor: Array<string>
   keyFeatures: Array<string>
   url: string
   logo: IconProps['component']
+  isFeatured?: boolean
 }
 
 export function StorageProviderCard({
@@ -29,10 +31,12 @@ export function StorageProviderCard({
   description,
   labels,
   cents,
+  offer,
   bestFor,
   keyFeatures,
   url,
   logo,
+  isFeatured,
 }: StorageProviderCardProps) {
   const t = useTranslations('storageProviderCard')
 
@@ -40,12 +44,19 @@ export function StorageProviderCard({
     <Tag>
       <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-10 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 focus-within:bg-zinc-50 hover:bg-zinc-50">
         <div className="space-y-8">
-          <div className="flex items-center gap-3">
-            <Icon component={logo} size={40} />
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3">
+              <Icon component={logo} size={40} />
 
-            <Heading tag="h3" variant="card-heading">
-              {name}
-            </Heading>
+              <Heading tag="h3" variant="card-heading">
+                {name}
+              </Heading>
+            </div>
+            {isFeatured && (
+              <span>
+                <Badge variant="solid">{t('featured')}</Badge>
+              </span>
+            )}
           </div>
 
           <p className="text-(--color-paragraph-text)" title={description}>
@@ -59,7 +70,7 @@ export function StorageProviderCard({
           />
 
           <StorageProviderCardSection title={t('price')}>
-            <StorageProviderPricePerMonth>{cents}</StorageProviderPricePerMonth>
+            <StorageProviderPricePerMonth cents={cents} offer={offer} />
           </StorageProviderCardSection>
           <StorageProviderCardSection title={t('bestForLabel')}>
             <StorageProviderCardText>

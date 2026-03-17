@@ -342,10 +342,7 @@
       "description": "Find the perfect storage solution for your data on Filecoin."
     },
     "selectedSolutions": {
-      "title": "Selected storage solutions"
-    },
-    "otherSolutions": {
-      "title": "Other Filecoin-powered solutions"
+      "title": "Filecoin-powered solutions"
     },
     "seeMore": "See more Filecoin-powered solutions",
     "notSure": {
@@ -363,8 +360,38 @@
       "nftProjects": "NFT projects"
     },
     "providers": {
+      "filOne": {
+        "description": "S3-compatible object storage for large datasets.",
+        "offer": "Free trial available",
+        "labels": ["Drag and drop", "S3-compatible"],
+        "keyFeatures": [
+          "S3-compatible API",
+          "Client-side encryption",
+          "Access control"
+        ]
+      },
+      "filecoinOnchainCloud": {
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.",
+        "offer": "Free trial available",
+        "labels": ["Drag and drop", "S3-compatible"],
+        "keyFeatures": [
+          "S3-compatible API",
+          "Client-side encryption",
+          "Access control"
+        ]
+      },
       "akave": {
         "description": "Enterprise-grade hot storage for AI & data lakes.",
+        "labels": ["Drag and drop", "S3-compatible"],
+        "offer": "Free trial available",
+        "keyFeatures": [
+          "S3-compatible API",
+          "Client-side encryption",
+          "Access control"
+        ]
+      },
+      "aurora": {
+        "description": "Sed ut perspiciatis unde omnis iste natus error.",
         "labels": ["Drag and drop", "S3-compatible"],
         "keyFeatures": [
           "S3-compatible API",
@@ -375,6 +402,7 @@
       "cidgravity": {
         "description": "Simple decentralized storage backend for Nextcloud.",
         "labels": ["Drag and drop"],
+        "offer": "First 2 GiB free",
         "keyFeatures": [
           "Nextcloud integration",
           "File sync and share",
@@ -384,6 +412,7 @@
       "lighthouse": {
         "description": "Perpetual, long-term data storage.",
         "labels": ["Archival", "Drag and drop"],
+        "offer": "First 5 GB free",
         "keyFeatures": [
           "\"Pay once, store forever\" pricing mode",
           "Simple web app",
@@ -392,20 +421,13 @@
       },
       "ramo": {
         "description": "An open-access decentralized cloud network.",
+        "offer": "Free trial available",
         "labels": ["S3-compatible"],
         "keyFeatures": ["S3-compatible API", "Developer SDK/CLI"]
       },
-      "singularity": {
-        "description": "Directly manage the full deal-making lifecycle on Filecoin.",
-        "labels": ["Archival"],
-        "keyFeatures": [
-          "Prepare and upload files using the CLI",
-          "Retrieve files with Lassie",
-          "Direct negotiation with storage providers"
-        ]
-      },
       "storacha": {
         "description": "High-speed hot storage for fast data retrieval.",
+        "offer": "First 5 GB free",
         "labels": ["Drag and drop"],
         "keyFeatures": [
           "Fast access to data",
@@ -413,21 +435,6 @@
           "Optimized for content delivery and streaming",
           "Decentralized permissions with UCANs"
         ]
-      },
-      "placeholderA": {
-        "description": "Lorem ipsum dolor sit amet.",
-        "labels": ["Lorem ipsum"],
-        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
-      },
-      "placeholderB": {
-        "description": "Lorem ipsum dolor sit amet.",
-        "labels": ["Lorem ipsum"],
-        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
-      },
-      "placeholderC": {
-        "description": "Lorem ipsum dolor sit amet.",
-        "labels": ["Lorem ipsum"],
-        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
       }
     }
   },
@@ -761,6 +768,7 @@
   },
   "storageProviderCard": {
     "perMonth": "/ month",
+    "from": "From",
     "price": "Price",
     "bestForLabel": "Best For",
     "keyFeaturesLabel": "Key Features",

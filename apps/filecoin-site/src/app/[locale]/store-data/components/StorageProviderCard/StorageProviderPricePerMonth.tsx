@@ -3,11 +3,13 @@ import { useFormatter, useTranslations } from 'next-intl'
 import { StorageProviderCardText } from './StorageProviderCardText'
 
 export type StorageProviderPricePerMonthProps = {
-  children: number
+  cents: number
+  offer?: string
 }
 
 export function StorageProviderPricePerMonth({
-  children: cents,
+  cents,
+  offer,
 }: StorageProviderPricePerMonthProps) {
   const t = useTranslations('storageProviderCard')
   const format = useFormatter()
@@ -23,8 +25,14 @@ export function StorageProviderPricePerMonth({
 
   return (
     <StorageProviderCardText>
-      <span className="text-2xl font-medium">{formattedPrice}</span>{' '}
-      {t('perMonth')}
+      <div className="flex flex-col items-start gap-2">
+        <div className="flex items-center gap-2">
+          <span>{t('from')}</span>
+          <span className="text-2xl font-medium">{formattedPrice}</span>{' '}
+          {t('perMonth')}
+        </div>
+        {offer && <span className="text-brand-700 text-sm">{offer}</span>}
+      </div>
     </StorageProviderCardText>
   )
 }
