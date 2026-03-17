@@ -15,7 +15,9 @@ type SectionContentProps = {
   children?: React.ReactNode
   cta?: ButtonRowProps['buttons']
   ctaPosition?: 'below' | 'below-center' | 'inline'
-  // to be removed in favor of ctaPosition
+  /**
+   * @deprecated Use ctaPosition instead.
+   */
   centerCTA?: boolean
   centerTitle?: boolean
 } & Partial<SectionContentDescriptionProps>
@@ -38,10 +40,7 @@ export function SectionContent({
     isInline
       ? 'flex flex-col gap-6 md:flex-row md:items-start md:justify-between'
       : 'max-w-3xl space-y-6',
-    centerTitle &&
-      (isInline
-        ? 'mx-auto text-center md:mx-0 md:text-start'
-        : 'mx-auto text-center'),
+    centerTitle && 'mx-auto text-center',
   )
 
   return (
@@ -50,7 +49,7 @@ export function SectionContent({
       id={slugify(title.toString(), { lower: true })}
     >
       <div className={headerClassName}>
-        <div className={clsx('space-y-6', isInline && 'max-w-3xl')}>
+        <div className="max-w-3xl space-y-6">
           <Heading tag={headingTag} variant="section-heading">
             {title}
           </Heading>
