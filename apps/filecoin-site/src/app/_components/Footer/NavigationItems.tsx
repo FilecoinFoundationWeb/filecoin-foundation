@@ -10,7 +10,7 @@ export async function NavigationItems() {
   return (
     <>
       {getFooterNavigationItems(t).map(({ title, items }) => (
-        <div key={title} className="space-y-4">
+        <div key={title} className="space-y-5">
           <span className="block text-sm font-medium">{title}</span>
           <ul className="flex flex-col gap-3">
             {items.map(({ href, label }) => (

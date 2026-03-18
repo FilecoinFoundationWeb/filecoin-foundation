@@ -22,7 +22,7 @@ export function NewsletterForm() {
   return (
     <ControlledForm<NewsletterFormData>
       form={form}
-      className="flex flex-col gap-2"
+      className="flex flex-col gap-4"
       onSubmit={onSubmit}
     >
       <div className="relative flex items-center gap-4">
