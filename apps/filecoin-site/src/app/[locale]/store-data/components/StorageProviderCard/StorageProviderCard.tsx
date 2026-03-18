@@ -71,19 +71,26 @@ export function StorageProviderCard({
             Component={Badge}
           />
 
-          <StorageProviderCardSection title={t('price')}>
-            <StorageProviderPricePerMonth cents={cents} offer={offer} />
-          </StorageProviderCardSection>
-          <StorageProviderCardSection title={t('bestForLabel')}>
-            <div>{bestFor.join(', ')}</div>
-          </StorageProviderCardSection>
-          <StorageProviderCardSection title={t('keyFeaturesLabel')}>
-            <StorageProviderFeatures
-              direction="column"
-              list={keyFeatures}
-              Component={StorageProviderCardKeyFeature}
-            />
-          </StorageProviderCardSection>
+          <StorageProviderCardSection
+            title={t('price')}
+            content={
+              <StorageProviderPricePerMonth cents={cents} offer={offer} />
+            }
+          />
+          <StorageProviderCardSection
+            title={t('bestForLabel')}
+            content={bestFor.join(', ')}
+          />
+          <StorageProviderCardSection
+            title={t('keyFeaturesLabel')}
+            content={
+              <StorageProviderFeatures
+                direction="column"
+                list={keyFeatures}
+                Component={StorageProviderCardKeyFeature}
+              />
+            }
+          />
         </div>
 
         <Button href={url} variant="ghost">
