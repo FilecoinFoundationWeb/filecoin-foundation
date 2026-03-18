@@ -12,7 +12,7 @@ type SideBySideContentProps = {
   cta?: ButtonRowProps['buttons']
 }
 
-const gap = 'gap-8 md:gap-16'
+const padding = 'pb-15 md:pr-15'
 
 export function SplitSectionContent({
   title,
@@ -24,8 +24,8 @@ export function SplitSectionContent({
     : [description]
 
   return (
-    <div className={clsx('grid grid-cols-6', gap)}>
-      <div className="col-span-6 lg:col-span-2 lg:pr-8">
+    <div className="grid grid-cols-12">
+      <div className={clsx('col-span-12 xl:col-span-4', padding)}>
         <Heading
           tag="h3"
           className="font-sans text-2xl/8.5 text-(--color-subheading-text-muted)"
@@ -34,8 +34,8 @@ export function SplitSectionContent({
         </Heading>
       </div>
 
-      <div className={clsx('col-span-6 flex flex-col lg:col-span-4', gap)}>
-        <div className="space-y-6">
+      <div className="col-span-12 flex flex-col xl:col-span-8">
+        <div className={clsx('space-y-6', padding)}>
           {descriptionArray.map((item, index) => (
             <p key={index} className="text-xl/7 text-pretty">
               {item}
