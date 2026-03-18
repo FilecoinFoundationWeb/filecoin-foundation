@@ -12,6 +12,7 @@ const paddingVariants = {
   bottomNone: 'pt-25 md:pt-30 pb-0',
   topNone: 'pt-0 pb-25 md:pb-30',
   topCompact: 'pt-20 pb-25 md:pb-30',
+  bottomCompact: 'pt-25 md:pt-30 pb-6 md:pb-15',
   none: 'py-0',
 }
 
