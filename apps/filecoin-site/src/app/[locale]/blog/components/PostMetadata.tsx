@@ -22,7 +22,7 @@ export function PostMetadata({ author, date }: PostMetadataProps) {
     return (
       <div className={clsx('flex items-center gap-2', baseStyles)}>
         <span className="whitespace-nowrap">{formattedDate}</span>
-        <span>|</span>
+        <span aria-hidden="true">|</span>{' '}
         <span className="min-w-0 truncate">{author}</span>
       </div>
     )
