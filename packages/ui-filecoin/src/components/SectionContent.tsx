@@ -37,6 +37,12 @@ export function SectionContent({
   const isCTACentered = ctaPosition === 'below-center' || centerCTA
   const isTitleCentered = !isCTAInline && centerTitle
 
+  if (isCTAInline && centerTitle) {
+    console.warn(
+      '⚠️ SectionContent: centerTitle prop is ignored when ctaPosition="inline". Use ctaPosition="below" to center the title, or omit centerTitle.',
+    )
+  }
+
   return (
     <div
       className="section-content space-y-15"
