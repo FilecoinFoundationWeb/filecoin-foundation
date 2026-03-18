@@ -26,7 +26,7 @@ export function LogoSection({
 
   return (
     <section
-      className="logo-section flex flex-col items-center gap-10"
+      className="logo-section flex flex-col items-center gap-20"
       aria-labelledby="logo-section-title"
     >
       <Tag
