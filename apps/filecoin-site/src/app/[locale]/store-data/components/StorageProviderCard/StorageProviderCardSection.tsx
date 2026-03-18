@@ -14,7 +14,7 @@ export function StorageProviderCardSection({
       <Heading tag="h4" className="font-medium">
         {title}
       </Heading>
-      {children}
+      <div className="text-sm">{children}</div>
     </div>
   )
 }

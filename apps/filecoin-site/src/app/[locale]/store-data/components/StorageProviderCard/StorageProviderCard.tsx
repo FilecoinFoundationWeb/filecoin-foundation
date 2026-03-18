@@ -7,7 +7,6 @@ import { Icon, type IconProps } from '@filecoin-foundation/ui-filecoin/Icon'
 
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'
-import { StorageProviderCardText } from './StorageProviderCardText'
 import { StorageProviderFeatures } from './StorageProviderFeatures'
 import { StorageProviderPricePerMonth } from './StorageProviderPricePerMonth'
 
@@ -42,7 +41,7 @@ export function StorageProviderCard({
 
   return (
     <Tag>
-      <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-10 overflow-hidden rounded-2xl border border-[var(--color-border-muted)] p-8 focus-within:bg-zinc-50 hover:bg-zinc-50">
+      <article className="focus-within:brand-outline relative flex h-full flex-col justify-between space-y-10 overflow-hidden rounded-2xl border border-(--color-border-muted) p-8 focus-within:bg-zinc-50 hover:bg-zinc-50">
         <div className="space-y-8">
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3">
@@ -59,7 +58,10 @@ export function StorageProviderCard({
             )}
           </div>
 
-          <p className="text-(--color-paragraph-text)" title={description}>
+          <p
+            className="text-sm text-(--color-paragraph-text)"
+            title={description}
+          >
             {description}
           </p>
 
@@ -73,9 +75,7 @@ export function StorageProviderCard({
             <StorageProviderPricePerMonth cents={cents} offer={offer} />
           </StorageProviderCardSection>
           <StorageProviderCardSection title={t('bestForLabel')}>
-            <StorageProviderCardText>
-              {bestFor.join(', ')}
-            </StorageProviderCardText>
+            <div>{bestFor.join(', ')}</div>
           </StorageProviderCardSection>
           <StorageProviderCardSection title={t('keyFeaturesLabel')}>
             <StorageProviderFeatures
