@@ -172,7 +172,6 @@ export function getFeaturedFilecoinStorageProviders(t: TranslationFunction) {
         monthlyStorageRate: t(
           'providers.filecoinOnchainCloud.monthlyStorageRate',
         ),
-        offer: t('providers.filecoinOnchainCloud.offer'),
       },
       bestFor: [t('bestFor.developers')],
       keyFeatures: [
