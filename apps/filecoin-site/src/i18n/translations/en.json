@@ -153,10 +153,10 @@
         "description": "Advocate for Filecoin, host events, and grow the ecosystem around the world.",
         "cta": "Learn more about Orbit"
       },
-      "calls": {
-        "title": "Community calls",
-        "description": "Join recurring community calls to hear updates, meet contributors and start contributing.",
-        "cta": "Join community calls"
+      "build": {
+        "title": "Build with Filecoin",
+        "description": "Guides, APIs, and tools to store data, retrieve it, and build on Filecoin.",
+        "cta": "Explore documentation"
       }
     },
     "ecosystemGroups": {

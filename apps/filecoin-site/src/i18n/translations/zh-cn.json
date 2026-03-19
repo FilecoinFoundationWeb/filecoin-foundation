@@ -153,10 +153,10 @@
         "description": "为 Filecoin 发声、举办活动，并在全球推动生态发展。",
         "cta": "了解更多关于 Orbit"
       },
-      "calls": {
-        "title": "社区电话会议",
-        "description": "加入定期社区电话会议，了解最新动态、结识贡献者并开始参与贡献。",
-        "cta": "加入社区电话会议"
+      "build": {
+        "title": "使用 Filecoin 构建",
+        "description": "用于存储、检索数据及在 Filecoin 上构建的指南、API 和工具。",
+        "cta": "浏览文档"
       }
     },
     "ecosystemGroups": {
