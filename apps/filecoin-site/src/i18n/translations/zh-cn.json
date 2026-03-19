@@ -761,6 +761,7 @@
   },
   "storageProviderCard": {
     "from": "从",
+    "customPricing": "自定义定价",
     "price": "价格",
     "bestForLabel": "最适合",
     "keyFeaturesLabel": "主要特性",

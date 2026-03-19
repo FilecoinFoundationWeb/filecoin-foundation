@@ -11,6 +11,7 @@ import { StorageProviderFeatures } from './StorageProviderFeatures'
 import {
   PriceDisplay,
   StorageProviderPricePerMonth,
+  type StorageProviderPricePerMonthProps,
 } from './StorageProviderPricePerMonth'
 
 export type StorageProviderCardProps = {
@@ -18,9 +19,7 @@ export type StorageProviderCardProps = {
   name: string
   description: string
   labels: Array<string>
-  cents?: number
-  monthlyStorageRate?: string
-  offer?: string
+  pricing?: StorageProviderPricePerMonthProps['pricing']
   bestFor: Array<string>
   keyFeatures: Array<string>
   url: string
@@ -33,9 +32,7 @@ export function StorageProviderCard({
   name,
   description,
   labels,
-  cents,
-  monthlyStorageRate,
-  offer,
+  pricing,
   bestFor,
   keyFeatures,
   url,
@@ -43,8 +40,6 @@ export function StorageProviderCard({
   isFeatured,
 }: StorageProviderCardProps) {
   const t = useTranslations('storageProviderCard')
-
-  const hasPricing = cents && monthlyStorageRate
 
   return (
     <Tag>
@@ -81,13 +76,11 @@ export function StorageProviderCard({
           <StorageProviderCardSection
             title={t('price')}
             content={
-              (hasPricing && (
-                <StorageProviderPricePerMonth
-                  cents={cents}
-                  offer={offer}
-                  monthlyStorageRate={monthlyStorageRate}
-                />
-              )) || <PriceDisplay value="Custom pricing" />
+              pricing ? (
+                <StorageProviderPricePerMonth pricing={pricing} />
+              ) : (
+                <PriceDisplay value={t('customPricing')} />
+              )
             }
           />
           <StorageProviderCardSection

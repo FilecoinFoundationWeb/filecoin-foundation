@@ -16,12 +16,10 @@ type StorageProvider = Pick<
   | 'name'
   | 'description'
   | 'labels'
-  | 'cents'
   | 'keyFeatures'
   | 'url'
   | 'logo'
-  | 'offer'
-  | 'monthlyStorageRate'
+  | 'pricing'
   | 'isFeatured'
 > & {
   bestFor: Array<string>
@@ -33,9 +31,11 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
       name: 'Akave Cloud',
       description: t('providers.akave.description'),
       labels: [t('providers.akave.labels.0'), t('providers.akave.labels.1')],
-      cents: 1_499,
-      monthlyStorageRate: t('providers.akave.monthlyStorageRate'),
-      offer: t('providers.akave.offer'),
+      pricing: {
+        cents: 1_499,
+        monthlyStorageRate: t('providers.akave.monthlyStorageRate'),
+        offer: t('providers.akave.offer'),
+      },
       bestFor: [t('bestFor.enterprises'), t('bestFor.aiMlDevelopers')],
       keyFeatures: [
         t('providers.akave.keyFeatures.0'),
@@ -66,9 +66,11 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
       name: 'CIDgravity',
       description: t('providers.cidgravity.description'),
       labels: [t('providers.cidgravity.labels.0')],
-      cents: 500,
-      monthlyStorageRate: t('providers.cidgravity.monthlyStorageRate'),
-      offer: t('providers.cidgravity.offer'),
+      pricing: {
+        cents: 500,
+        monthlyStorageRate: t('providers.cidgravity.monthlyStorageRate'),
+        offer: t('providers.cidgravity.offer'),
+      },
       bestFor: [t('bestFor.developers')],
       keyFeatures: [
         t('providers.cidgravity.keyFeatures.0'),
@@ -85,9 +87,11 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
         t('providers.lighthouse.labels.0'),
         t('providers.lighthouse.labels.1'),
       ],
-      cents: 1_200,
-      monthlyStorageRate: t('providers.lighthouse.monthlyStorageRate'),
-      offer: t('providers.lighthouse.offer'),
+      pricing: {
+        cents: 1_200,
+        monthlyStorageRate: t('providers.lighthouse.monthlyStorageRate'),
+        offer: t('providers.lighthouse.offer'),
+      },
       bestFor: [
         t('bestFor.developers'),
         t('bestFor.nftProjects'),
@@ -105,7 +109,6 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
       name: 'Ramo',
       description: t('providers.ramo.description'),
       labels: [t('providers.ramo.labels.0')],
-      offer: t('providers.ramo.offer'),
       bestFor: [t('bestFor.developers')],
       keyFeatures: [
         t('providers.ramo.keyFeatures.0'),
@@ -118,9 +121,11 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
       name: 'Storacha',
       description: t('providers.storacha.description'),
       labels: [t('providers.storacha.labels.0')],
-      cents: 1_000,
-      monthlyStorageRate: t('providers.storacha.monthlyStorageRate'),
-      offer: t('providers.storacha.offer'),
+      pricing: {
+        cents: 1_000,
+        monthlyStorageRate: t('providers.storacha.monthlyStorageRate'),
+        offer: t('providers.storacha.offer'),
+      },
       bestFor: [t('bestFor.developers')],
       keyFeatures: [
         t('providers.storacha.keyFeatures.0'),
@@ -140,9 +145,11 @@ export function getFeaturedFilecoinStorageProviders(t: TranslationFunction) {
       name: 'Fil One',
       description: t('providers.filOne.description'),
       labels: [t('providers.filOne.labels.0'), t('providers.filOne.labels.1')],
-      cents: 499,
-      monthlyStorageRate: t('providers.filOne.monthlyStorageRate'),
-      offer: t('providers.filOne.offer'),
+      pricing: {
+        cents: 499,
+        monthlyStorageRate: t('providers.filOne.monthlyStorageRate'),
+        offer: t('providers.filOne.offer'),
+      },
       bestFor: [t('bestFor.enterprises')],
       keyFeatures: [
         t('providers.filOne.keyFeatures.0'),
@@ -160,10 +167,13 @@ export function getFeaturedFilecoinStorageProviders(t: TranslationFunction) {
         t('providers.filecoinOnchainCloud.labels.0'),
         t('providers.filecoinOnchainCloud.labels.1'),
       ],
-      cents: 250,
-      monthlyStorageRate: t(
-        'providers.filecoinOnchainCloud.monthlyStorageRate',
-      ),
+      pricing: {
+        cents: 250,
+        monthlyStorageRate: t(
+          'providers.filecoinOnchainCloud.monthlyStorageRate',
+        ),
+        offer: t('providers.filecoinOnchainCloud.offer'),
+      },
       bestFor: [t('bestFor.developers')],
       keyFeatures: [
         t('providers.filecoinOnchainCloud.keyFeatures.0'),

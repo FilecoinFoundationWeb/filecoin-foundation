@@ -773,6 +773,7 @@
   },
   "storageProviderCard": {
     "from": "From",
+    "customPricing": "Custom pricing",
     "price": "Price",
     "bestForLabel": "Best For",
     "keyFeaturesLabel": "Key Features",

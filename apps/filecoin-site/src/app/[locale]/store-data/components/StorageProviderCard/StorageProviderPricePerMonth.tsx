@@ -1,21 +1,27 @@
 import { useFormatter, useTranslations } from 'next-intl'
 
 export type StorageProviderPricePerMonthProps = {
-  cents: number
-  monthlyStorageRate: string
-  offer?: string
+  pricing: {
+    cents: number
+    monthlyStorageRate: string
+    offer?: string
+  }
 }
 
 export function StorageProviderPricePerMonth({
-  cents,
-  monthlyStorageRate,
-  offer,
+  pricing,
 }: StorageProviderPricePerMonthProps) {
   const t = useTranslations('storageProviderCard')
   const format = useFormatter()
 
+  const { cents, monthlyStorageRate, offer } = pricing
+
   if (cents < 0) {
     throw new Error('Price per month cannot be negative')
+  }
+
+  if (!monthlyStorageRate) {
+    throw new Error('monthlyStorageRate cannot be empty')
   }
 
   const showWithoutDecimals = cents % 100 === 0
