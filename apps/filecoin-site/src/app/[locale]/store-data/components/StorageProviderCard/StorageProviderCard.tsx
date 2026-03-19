@@ -8,14 +8,18 @@ import { Icon, type IconProps } from '@filecoin-foundation/ui-filecoin/Icon'
 import { StorageProviderCardKeyFeature } from './StorageProviderCardKeyFeature'
 import { StorageProviderCardSection } from './StorageProviderCardSection'
 import { StorageProviderFeatures } from './StorageProviderFeatures'
-import { StorageProviderPricePerMonth } from './StorageProviderPricePerMonth'
+import {
+  PriceDisplay,
+  StorageProviderPricePerMonth,
+} from './StorageProviderPricePerMonth'
 
 export type StorageProviderCardProps = {
   as: 'li' | 'div'
   name: string
   description: string
   labels: Array<string>
-  cents: number
+  cents?: number
+  monthlyStorageRate?: string
   offer?: string
   bestFor: Array<string>
   keyFeatures: Array<string>
@@ -30,6 +34,7 @@ export function StorageProviderCard({
   description,
   labels,
   cents,
+  monthlyStorageRate,
   offer,
   bestFor,
   keyFeatures,
@@ -38,6 +43,8 @@ export function StorageProviderCard({
   isFeatured,
 }: StorageProviderCardProps) {
   const t = useTranslations('storageProviderCard')
+
+  const hasPricing = cents && monthlyStorageRate
 
   return (
     <Tag>
@@ -68,13 +75,19 @@ export function StorageProviderCard({
           <StorageProviderFeatures
             direction="row"
             list={labels}
-            Component={Badge}
+            Component={(props) => <Badge textTransform="none" {...props} />}
           />
 
           <StorageProviderCardSection
             title={t('price')}
             content={
-              <StorageProviderPricePerMonth cents={cents} offer={offer} />
+              (hasPricing && (
+                <StorageProviderPricePerMonth
+                  cents={cents}
+                  offer={offer}
+                  monthlyStorageRate={monthlyStorageRate}
+                />
+              )) || <PriceDisplay value="Custom pricing" />
             }
           />
           <StorageProviderCardSection
