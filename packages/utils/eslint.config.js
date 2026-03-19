@@ -1,4 +1,4 @@
-import pluginImport from 'eslint-plugin-import'
+import pluginImport from 'eslint-plugin-import-x'
 
 import { config as baseConfig } from '@filecoin-foundation/eslint-config/base'
 import {
@@ -11,10 +11,10 @@ export default [
   ...baseConfig,
   {
     plugins: {
-      import: pluginImport,
+      'import-x': pluginImport,
     },
     rules: {
-      'import/order': [
+      'import-x/order': [
         'error',
         {
           groups: sharedGroups,

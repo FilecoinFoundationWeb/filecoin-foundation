@@ -1,5 +1,18 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.8.6
+
+### Patch Changes
+
+- bc356e0: Fix for aligning SectionContent CTA
+
+## 0.8.5
+
+### Patch Changes
+
+- cfbeae8: Add a ctaPosition prop to SectionContent to control CTA placement
+- d5b2561: Export Network utils and set mainnet as default chain
+
 ## 0.8.4
 
 ### Patch Changes

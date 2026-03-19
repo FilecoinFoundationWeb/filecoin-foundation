@@ -50,7 +50,9 @@
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
     "@filecoin-foundation/typescript-config": "0.0.0",
-    "@filecoin-foundation/ui": "0.0.0"
+    "@filecoin-foundation/ui": "0.0.0",
+    "eslint": "^10.0.3",
+    "eslint-plugin-import-x": "^4.15.1"
   },
   "peerDependencies": {
     "@filecoin-foundation/ui": "0.0.0",
@@ -58,7 +60,7 @@
     "date-fns": "^4.1.0",
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",
-    "next": "^16.1.6",
+    "next": "^16.1.7",
     "@phosphor-icons/react": "^2.1.10",
     "schema-dts": "^1.1.5",
     "slugify": "^1.6.6",
