@@ -1,11 +1,27 @@
 [
   {
     "path": "/",
-    "score": 0.92,
+    "score": 0.97,
     "performance": 0.95,
-    "accessibility": 0.96,
+    "accessibility": 1,
     "best-practices": 1,
-    "seo": 0.75
+    "seo": 0.92
+  },
+  {
+    "path": "/agents",
+    "score": 0.99,
+    "performance": 0.97,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/agents/rfs-1",
+    "score": 0.99,
+    "performance": 0.97,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
   },
   {
     "path": "/privacy-policy",
@@ -33,10 +49,10 @@
   },
   {
     "path": "/warm-storage-service",
-    "score": 0.91,
-    "performance": 0.75,
+    "score": 0.92,
+    "performance": 0.74,
     "accessibility": 0.93,
-    "best-practices": 0.96,
+    "best-practices": 1,
     "seo": 1
   }
 ]

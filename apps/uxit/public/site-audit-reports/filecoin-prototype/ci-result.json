@@ -1,30 +1,6 @@
 [
   {
     "path": "/",
-    "score": 0.97,
-    "performance": 0.98,
-    "accessibility": 0.95,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/blog",
-    "score": 0.89,
-    "performance": 0.59,
-    "accessibility": 1,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/blog/announcing-filecoin-propgf-batch-2-general-track",
-    "score": 0.97,
-    "performance": 1,
-    "accessibility": 0.96,
-    "best-practices": 1,
-    "seo": 0.92
-  },
-  {
-    "path": "/build-on-filecoin",
     "score": 0.98,
     "performance": 0.92,
     "accessibility": 1,
@@ -32,74 +8,82 @@
     "seo": 1
   },
   {
-    "path": "/case-studies",
-    "score": 1,
-    "performance": 0.98,
+    "path": "/blog",
+    "score": 0.99,
+    "performance": 0.94,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/case-studies/starling-lab",
-    "score": 0.99,
-    "performance": 0.99,
+    "path": "/blog/filecoin-news-50",
+    "score": 0.96,
+    "performance": 0.97,
     "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 0.92
+  },
+  {
+    "path": "/build-on-filecoin",
+    "score": 0.94,
+    "performance": 0.84,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 0.92
+  },
+  {
+    "path": "/case-studies",
+    "score": 0.98,
+    "performance": 0.9,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/case-studies/victor-chang",
+    "score": 0.95,
+    "performance": 0.79,
+    "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/community-hub",
-    "score": 0.97,
-    "performance": 0.98,
-    "accessibility": 0.98,
-    "best-practices": 1,
-    "seo": 0.92
-  },
-  {
-    "path": "/learn",
-    "score": 0.96,
-    "performance": 0.99,
-    "accessibility": 0.88,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/privacy-policy",
-    "score": 1,
-    "performance": 1,
+    "score": 0.99,
+    "performance": 0.96,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/provide-storage",
-    "score": 0.96,
-    "performance": 0.92,
-    "accessibility": 0.95,
+    "path": "/learn",
+    "score": 0.97,
+    "performance": 0.94,
+    "accessibility": 0.99,
     "best-practices": 0.96,
     "seo": 1
   },
   {
+    "path": "/provide-storage",
+    "score": 0.95,
+    "performance": 0.8,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
     "path": "/provide-storage/onboarding",
-    "score": 0.99,
-    "performance": 1,
-    "accessibility": 0.96,
+    "score": 1,
+    "performance": 0.98,
+    "accessibility": 1,
     "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/store-data",
-    "score": 0.96,
-    "performance": 0.97,
-    "accessibility": 0.92,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/terms-of-use",
-    "score": 1,
-    "performance": 1,
-    "accessibility": 1,
+    "score": 0.97,
+    "performance": 0.9,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   }

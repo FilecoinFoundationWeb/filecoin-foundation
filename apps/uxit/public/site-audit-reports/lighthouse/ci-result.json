@@ -1,38 +1,6 @@
 [
   {
     "path": "/",
-    "score": 0.92,
-    "performance": 0.73,
-    "accessibility": 1,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/blogs",
-    "score": 0.93,
-    "performance": 0.75,
-    "accessibility": 1,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/blogs/Lighthouse%20Monthly%20Update%20%E2%80%93%20April%202025",
-    "score": 0.96,
-    "performance": 0.86,
-    "accessibility": 1,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/documentation",
-    "score": 0.97,
-    "performance": 0.91,
-    "accessibility": 1,
-    "best-practices": 0.96,
-    "seo": 1
-  },
-  {
-    "path": "/ecosystem",
     "score": 0.93,
     "performance": 0.74,
     "accessibility": 1,
@@ -40,19 +8,59 @@
     "seo": 1
   },
   {
+    "path": "/blogs",
+    "score": 0.91,
+    "performance": 0.68,
+    "accessibility": 1,
+    "best-practices": 0.96,
+    "seo": 1
+  },
+  {
+    "path": "/blogs/Web2%20Storage%20Challenges%20Versus%20Web3%20Solutions%20Ft.%20Lighthouse",
+    "score": 0.98,
+    "performance": 0.95,
+    "accessibility": 1,
+    "best-practices": 0.96,
+    "seo": 1
+  },
+  {
+    "path": "/documentation",
+    "score": 0.91,
+    "performance": 0.69,
+    "accessibility": 1,
+    "best-practices": 0.96,
+    "seo": 1
+  },
+  {
+    "path": "/ecosystem",
+    "score": 0.92,
+    "performance": 0.7,
+    "accessibility": 1,
+    "best-practices": 0.96,
+    "seo": 1
+  },
+  {
     "path": "/faq",
-    "score": 0.94,
-    "performance": 0.85,
+    "score": 0.9,
+    "performance": 0.67,
     "accessibility": 0.96,
     "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/pricing",
-    "score": 0.93,
-    "performance": 0.79,
+    "score": 0.95,
+    "performance": 0.87,
     "accessibility": 1,
     "best-practices": 0.93,
+    "seo": 1
+  },
+  {
+    "path": "/turby",
+    "score": 0.9,
+    "performance": 0.64,
+    "accessibility": 1,
+    "best-practices": 0.96,
     "seo": 1
   }
 ]
