@@ -241,6 +241,10 @@
       "types": "./dist/components/Network/types/index.d.ts",
       "default": "./dist/components/Network/types/index.js"
     },
+    "./Network/utils": {
+      "types": "./dist/components/Network/utils/index.d.ts",
+      "default": "./dist/components/Network/utils/index.js"
+    },
     "./Section/Section": {
       "types": "./dist/components/Section/Section.d.ts",
       "default": "./dist/components/Section/Section.js"
