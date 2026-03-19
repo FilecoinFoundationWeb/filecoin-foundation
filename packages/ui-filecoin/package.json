@@ -1,6 +1,6 @@
 {
   "name": "@filecoin-foundation/ui-filecoin",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "Filecoin branded UI components for the Filecoin ecosystem created by Filecoin Foundation",
   "private": false,
   "type": "module",
@@ -241,6 +241,10 @@
       "types": "./dist/components/Network/types/index.d.ts",
       "default": "./dist/components/Network/types/index.js"
     },
+    "./Network/utils": {
+      "types": "./dist/components/Network/utils/index.d.ts",
+      "default": "./dist/components/Network/utils/index.js"
+    },
     "./Section/Section": {
       "types": "./dist/components/Section/Section.d.ts",
       "default": "./dist/components/Section/Section.js"
@@ -371,7 +375,7 @@
   "peerDependencies": {
     "@tailwindcss/typography": "^0.5.19",
     "@tanstack/react-table": "^8.21.3",
-    "next": "^16.1.6",
+    "next": "^16.1.7",
     "nuqs": "^2.8.8",
     "react": "^19.2.4",
     "swr": "^2.4.0",

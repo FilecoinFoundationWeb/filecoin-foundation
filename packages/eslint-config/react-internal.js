@@ -1,6 +1,6 @@
 import pluginReactHooks from 'eslint-plugin-react-hooks'
 import pluginReact from 'eslint-plugin-react'
-import pluginImport from 'eslint-plugin-import'
+import pluginImport from 'eslint-plugin-import-x'
 import globals from 'globals'
 import { config as baseConfig } from './base.js'
 import { sharedGroups, sharedPathGroups } from './shared-import-rules.js'
@@ -21,7 +21,7 @@ export const config = [
   {
     plugins: {
       'react-hooks': pluginReactHooks,
-      import: pluginImport,
+      'import-x': pluginImport,
     },
     settings: {
       react: { version: 'detect' },
@@ -29,7 +29,7 @@ export const config = [
     rules: {
       ...pluginReactHooks.configs.recommended.rules,
       'react/react-in-jsx-scope': 'off',
-      'import/order': [
+      'import-x/order': [
         'error',
         {
           groups: sharedGroups,
