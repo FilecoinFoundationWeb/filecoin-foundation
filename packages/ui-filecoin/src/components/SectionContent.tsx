@@ -50,7 +50,8 @@ export function SectionContent({
     >
       <div
         className={clsx({
-          'flex flex-col gap-6 md:flex-row md:items-start': isCTAInline,
+          'flex flex-col justify-between gap-6 md:flex-row md:items-start':
+            isCTAInline,
         })}
       >
         <div
