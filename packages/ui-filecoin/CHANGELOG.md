@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.8.6
+
+### Patch Changes
+
+- bc356e0: Fix for aligning SectionContent CTA
+
 ## 0.8.5
 
 ### Patch Changes
