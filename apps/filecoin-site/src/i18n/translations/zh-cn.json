@@ -342,10 +342,7 @@
       "description": "在 Filecoin 上为您的数据找到理想的存储解决方案。"
     },
     "selectedSolutions": {
-      "title": "精选存储解决方案"
-    },
-    "otherSolutions": {
-      "title": "其他 Filecoin 驱动的解决方案"
+      "title": "Filecoin 驱动的解决方案"
     },
     "seeMore": "查看更多 Filecoin 驱动的解决方案",
     "notSure": {
@@ -366,16 +363,48 @@
       "akave": {
         "description": "面向 AI 和数据湖的企业级热存储。",
         "labels": ["拖放上传", "S3 兼容"],
+        "monthlyStorageRate": "/ TB / 月",
+        "offer": "提供免费试用",
         "keyFeatures": ["兼容 S3 的 API", "客户端加密", "访问控制"]
+      },
+      "aurora": {
+        "description": "面向安全、大规模 AI 与数据工作负载的企业级基础设施。",
+        "labels": ["拖放上传", "S3 兼容"],
+        "keyFeatures": [
+          "兼容 S3 的对象存储",
+          "不可变性与勒索软件防护",
+          "为 AI 与高性能计算工作负载而构建"
+        ]
       },
       "cidgravity": {
         "description": "面向 Nextcloud 的简易去中心化存储后端。",
         "labels": ["拖放上传"],
+        "monthlyStorageRate": "/ TB / 月",
+        "offer": "前 2 GiB 免费",
         "keyFeatures": ["Nextcloud 集成", "文件同步与共享", "REST API 编程访问"]
+      },
+      "filOne": {
+        "description": "面向大数据集的 S3 兼容对象存储。",
+        "monthlyStorageRate": "/ TB / 月",
+        "offer": "提供免费试用",
+        "labels": ["拖放上传", "S3 兼容"],
+        "keyFeatures": ["兼容 S3 的 API", "客户端加密", "访问控制"]
+      },
+      "filecoinOnchainCloud": {
+        "description": "可编程云基础设施，提供可验证的存储、检索和支付。",
+        "monthlyStorageRate": "/ TB / 月（最少 2 份副本）",
+        "labels": ["可编程", "API 优先"],
+        "keyFeatures": [
+          "通过数据持有证明 (PDP) 的可验证存储",
+          "通过智能合约的可编程支付 (Filecoin Pay)",
+          "Synapse TypeScript SDK"
+        ]
       },
       "lighthouse": {
         "description": "永久性长期数据存储。",
         "labels": ["归档", "拖放上传"],
+        "monthlyStorageRate": "/ 500 GB / 月",
+        "offer": "前 5 GB 免费",
         "keyFeatures": [
           "\"一次付费，永久存储\"定价模式",
           "简洁的 Web 应用",
@@ -384,20 +413,14 @@
       },
       "ramo": {
         "description": "开放访问的去中心化云网络。",
+        "offer": "提供免费试用",
         "labels": ["S3 兼容"],
         "keyFeatures": ["兼容 S3 的 API", "开发者 SDK/CLI"]
       },
-      "singularity": {
-        "description": "直接管理 Filecoin 上完整的交易生命周期。",
-        "labels": ["归档"],
-        "keyFeatures": [
-          "使用 CLI 准备和上传文件",
-          "使用 Lassie 检索文件",
-          "与存储提供商直接协商"
-        ]
-      },
       "storacha": {
         "description": "高速热存储，实现快速数据检索。",
+        "monthlyStorageRate": "/ 100 GB / 月",
+        "offer": "前 5 GB 免费",
         "labels": ["拖放上传"],
         "keyFeatures": [
           "快速访问数据",
@@ -405,21 +428,6 @@
           "针对内容分发和流媒体优化",
           "基于 UCAN 的去中心化权限管理"
         ]
-      },
-      "placeholderA": {
-        "description": "Lorem ipsum dolor sit amet.",
-        "labels": ["Lorem ipsum"],
-        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
-      },
-      "placeholderB": {
-        "description": "Lorem ipsum dolor sit amet.",
-        "labels": ["Lorem ipsum"],
-        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
-      },
-      "placeholderC": {
-        "description": "Lorem ipsum dolor sit amet.",
-        "labels": ["Lorem ipsum"],
-        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
       }
     }
   },
@@ -752,7 +760,8 @@
     "errorOccurred": "发生错误，请重试。"
   },
   "storageProviderCard": {
-    "perMonth": "/ 月",
+    "from": "从",
+    "customPricing": "自定义定价",
     "price": "价格",
     "bestForLabel": "最适合",
     "keyFeaturesLabel": "主要特性",

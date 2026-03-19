@@ -1,48 +1,41 @@
 import type { TranslationFunction } from '@/i18n/types'
 
-import Storacha from '@/assets/images/storacha.webp'
 import AkaveMiniatureLogo from '@/assets/miniatures/akave-miniature.svg'
+import AuroraMiniatureLogo from '@/assets/miniatures/aurora-miniature.svg'
 import CIDgravityMiniatureLogo from '@/assets/miniatures/cid-gravity-miniature.svg'
+import FilOneMiniatureLogo from '@/assets/miniatures/fil-one-miniature.svg'
+import FilecoinOnchainCloudMiniatureLogo from '@/assets/miniatures/filecoin-onchain-cloud-miniature.svg'
 import LighthouseMiniatureLogo from '@/assets/miniatures/lighthouse-miniature.svg'
 import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.svg'
-import SingularityMiniatureLogo from '@/assets/miniatures/singularity-miniature.svg'
 import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.svg'
 
-
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
-import type { StorageProviderCardWithImageProps } from '../components/StorageProviderCard/StorageProviderCardWithImage'
-
-import PlaceholderLogo from './placeholder-logo-to-be-deleted.svg'
-
-type FeaturedStorageProvider = Pick<
-  StorageProviderCardWithImageProps,
-  | 'name'
-  | 'description'
-  | 'labels'
-  | 'cents'
-  | 'keyFeatures'
-  | 'url'
-  | 'logo'
-  | 'image'
-> & {
-  bestFor: Array<string>
-}
 
 type StorageProvider = Pick<
   StorageProviderCardProps,
-  'name' | 'description' | 'labels' | 'cents' | 'keyFeatures' | 'url' | 'logo'
+  | 'name'
+  | 'description'
+  | 'labels'
+  | 'keyFeatures'
+  | 'url'
+  | 'logo'
+  | 'pricing'
+  | 'isFeatured'
 > & {
   bestFor: Array<string>
 }
 
-// todo: update price with actual prices
 export function getFilecoinStorageProviders(t: TranslationFunction) {
   return [
     {
       name: 'Akave Cloud',
       description: t('providers.akave.description'),
       labels: [t('providers.akave.labels.0'), t('providers.akave.labels.1')],
-      cents: 10_000,
+      pricing: {
+        cents: 1_499,
+        monthlyStorageRate: t('providers.akave.monthlyStorageRate'),
+        offer: t('providers.akave.offer'),
+      },
       bestFor: [t('bestFor.enterprises'), t('bestFor.aiMlDevelopers')],
       keyFeatures: [
         t('providers.akave.keyFeatures.0'),
@@ -53,10 +46,31 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
       logo: AkaveMiniatureLogo,
     },
     {
+      name: 'Aurora',
+      description: t('providers.aurora.description'),
+      labels: [t('providers.aurora.labels.0'), t('providers.aurora.labels.1')],
+      bestFor: [
+        t('bestFor.enterprises'),
+        t('bestFor.aiMlDevelopers'),
+        t('bestFor.developers'),
+      ],
+      keyFeatures: [
+        t('providers.aurora.keyFeatures.0'),
+        t('providers.aurora.keyFeatures.1'),
+        t('providers.aurora.keyFeatures.2'),
+      ],
+      url: 'https://www.aurorainfra.ai/',
+      logo: AuroraMiniatureLogo,
+    },
+    {
       name: 'CIDgravity',
       description: t('providers.cidgravity.description'),
       labels: [t('providers.cidgravity.labels.0')],
-      cents: 10_000,
+      pricing: {
+        cents: 500,
+        monthlyStorageRate: t('providers.cidgravity.monthlyStorageRate'),
+        offer: t('providers.cidgravity.offer'),
+      },
       bestFor: [t('bestFor.developers')],
       keyFeatures: [
         t('providers.cidgravity.keyFeatures.0'),
@@ -73,7 +87,11 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
         t('providers.lighthouse.labels.0'),
         t('providers.lighthouse.labels.1'),
       ],
-      cents: 10_000,
+      pricing: {
+        cents: 1_200,
+        monthlyStorageRate: t('providers.lighthouse.monthlyStorageRate'),
+        offer: t('providers.lighthouse.offer'),
+      },
       bestFor: [
         t('bestFor.developers'),
         t('bestFor.nftProjects'),
@@ -91,7 +109,6 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
       name: 'Ramo',
       description: t('providers.ramo.description'),
       labels: [t('providers.ramo.labels.0')],
-      cents: 10_000,
       bestFor: [t('bestFor.developers')],
       keyFeatures: [
         t('providers.ramo.keyFeatures.0'),
@@ -101,84 +118,70 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
       logo: RamoMiniatureLogo,
     },
     {
-      name: 'Singularity CLI',
-      description: t('providers.singularity.description'),
-      labels: [t('providers.singularity.labels.0')],
-      cents: 10_000,
-      bestFor: [t('bestFor.advancedTechnicalUsers')],
+      name: 'Storacha',
+      description: t('providers.storacha.description'),
+      labels: [t('providers.storacha.labels.0')],
+      pricing: {
+        cents: 1_000,
+        monthlyStorageRate: t('providers.storacha.monthlyStorageRate'),
+        offer: t('providers.storacha.offer'),
+      },
+      bestFor: [t('bestFor.developers')],
       keyFeatures: [
-        t('providers.singularity.keyFeatures.0'),
-        t('providers.singularity.keyFeatures.1'),
-        t('providers.singularity.keyFeatures.2'),
+        t('providers.storacha.keyFeatures.0'),
+        t('providers.storacha.keyFeatures.1'),
+        t('providers.storacha.keyFeatures.2'),
+        t('providers.storacha.keyFeatures.3'),
       ],
-      url: 'https://singularity.storage/',
-      logo: SingularityMiniatureLogo,
+      url: 'https://storacha.network/',
+      logo: StorachaMiniatureLogo,
     },
   ] satisfies Array<StorageProvider>
 }
 
-export function getFeaturedFilecoinStorageProvider(t: TranslationFunction) {
-  return {
-    image: {
-      ...Storacha,
-      alt: 'Storacha',
-    },
-    name: 'Storacha',
-    description: t('providers.storacha.description'),
-    labels: [t('providers.storacha.labels.0')],
-    cents: 10_000,
-    bestFor: [t('bestFor.developers')],
-    keyFeatures: [
-      t('providers.storacha.keyFeatures.0'),
-      t('providers.storacha.keyFeatures.1'),
-      t('providers.storacha.keyFeatures.2'),
-      t('providers.storacha.keyFeatures.3'),
-    ],
-    url: 'https://storacha.network/',
-    logo: StorachaMiniatureLogo,
-  } satisfies FeaturedStorageProvider
-}
-
-export function getOtherFilecoinPoweredSolutions(t: TranslationFunction) {
+export function getFeaturedFilecoinStorageProviders(t: TranslationFunction) {
   return [
     {
-      name: 'Ipsum Storage A',
-      description: t('providers.placeholderA.description'),
-      labels: [t('providers.placeholderA.labels.0')],
-      cents: 300,
-      bestFor: [t('bestFor.developers')],
+      name: 'Fil One',
+      description: t('providers.filOne.description'),
+      labels: [t('providers.filOne.labels.0'), t('providers.filOne.labels.1')],
+      pricing: {
+        cents: 499,
+        monthlyStorageRate: t('providers.filOne.monthlyStorageRate'),
+        offer: t('providers.filOne.offer'),
+      },
+      bestFor: [t('bestFor.enterprises')],
       keyFeatures: [
-        t('providers.placeholderA.keyFeatures.0'),
-        t('providers.placeholderA.keyFeatures.1'),
+        t('providers.filOne.keyFeatures.0'),
+        t('providers.filOne.keyFeatures.1'),
+        t('providers.filOne.keyFeatures.2'),
       ],
-      url: '#',
-      logo: PlaceholderLogo,
+      url: 'https://fil.one/',
+      logo: FilOneMiniatureLogo,
+      isFeatured: true,
     },
     {
-      name: 'Ipsum Storage B',
-      description: t('providers.placeholderB.description'),
-      labels: [t('providers.placeholderB.labels.0')],
-      cents: 300,
+      name: 'Filecoin Onchain Cloud',
+      description: t('providers.filecoinOnchainCloud.description'),
+      labels: [
+        t('providers.filecoinOnchainCloud.labels.0'),
+        t('providers.filecoinOnchainCloud.labels.1'),
+      ],
+      pricing: {
+        cents: 250,
+        monthlyStorageRate: t(
+          'providers.filecoinOnchainCloud.monthlyStorageRate',
+        ),
+      },
       bestFor: [t('bestFor.developers')],
       keyFeatures: [
-        t('providers.placeholderB.keyFeatures.0'),
-        t('providers.placeholderB.keyFeatures.1'),
+        t('providers.filecoinOnchainCloud.keyFeatures.0'),
+        t('providers.filecoinOnchainCloud.keyFeatures.1'),
+        t('providers.filecoinOnchainCloud.keyFeatures.2'),
       ],
-      url: '#',
-      logo: PlaceholderLogo,
-    },
-    {
-      name: 'Ipsum Storage C',
-      description: t('providers.placeholderC.description'),
-      labels: [t('providers.placeholderC.labels.0')],
-      cents: 300,
-      bestFor: [t('bestFor.developers')],
-      keyFeatures: [
-        t('providers.placeholderC.keyFeatures.0'),
-        t('providers.placeholderC.keyFeatures.1'),
-      ],
-      url: '#',
-      logo: PlaceholderLogo,
+      url: 'https://filecoin.cloud/',
+      logo: FilecoinOnchainCloudMiniatureLogo,
+      isFeatured: true,
     },
   ] satisfies Array<StorageProvider>
 }

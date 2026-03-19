@@ -342,10 +342,7 @@
       "description": "Find the perfect storage solution for your data on Filecoin."
     },
     "selectedSolutions": {
-      "title": "Selected storage solutions"
-    },
-    "otherSolutions": {
-      "title": "Other Filecoin-powered solutions"
+      "title": "Filecoin-powered solutions"
     },
     "seeMore": "See more Filecoin-powered solutions",
     "notSure": {
@@ -366,24 +363,60 @@
       "akave": {
         "description": "Enterprise-grade hot storage for AI & data lakes.",
         "labels": ["Drag and drop", "S3-compatible"],
+        "monthlyStorageRate": "/ TB / month",
+        "offer": "Free trial available",
         "keyFeatures": [
           "S3-compatible API",
           "Client-side encryption",
           "Access control"
         ]
       },
+      "aurora": {
+        "description": "Enterprise-ready infrastructure for secure, large-scale AI and data workloads.",
+        "labels": ["Drag and drop", "S3-compatible"],
+        "keyFeatures": [
+          "S3-compatible object storage",
+          "Immutability & ransomware protection",
+          "Built for AI & HPC workloads"
+        ]
+      },
       "cidgravity": {
         "description": "Simple decentralized storage backend for Nextcloud.",
         "labels": ["Drag and drop"],
+        "monthlyStorageRate": "/ TB / month",
+        "offer": "First 2 GiB free",
         "keyFeatures": [
           "Nextcloud integration",
           "File sync and share",
           "REST API for programmatic access"
         ]
       },
+      "filOne": {
+        "description": "S3-compatible object storage for large datasets.",
+        "monthlyStorageRate": "/ TB / month",
+        "offer": "Free trial available",
+        "labels": ["Drag and drop", "S3-compatible"],
+        "keyFeatures": [
+          "S3-compatible API",
+          "Client-side encryption",
+          "Access control"
+        ]
+      },
+      "filecoinOnchainCloud": {
+        "description": "Programmable cloud infrastructure with verifiable storage, retrieval, and payments.",
+        "monthlyStorageRate": "/ TB / month (minimum 2 copies)",
+        "labels": ["Programmable", "API-first"],
+        "keyFeatures": [
+          "Verifiable storage with Proof of Data Possession (PDP)",
+          "Programmable payments via smart contracts (Filecoin Pay)",
+          "Synapse TypeScript SDK"
+        ]
+      },
       "lighthouse": {
         "description": "Perpetual, long-term data storage.",
         "labels": ["Archival", "Drag and drop"],
+        "monthlyStorageRate": "/ 500 GB / month",
+        "offer": "First 5 GB free",
         "keyFeatures": [
           "\"Pay once, store forever\" pricing mode",
           "Simple web app",
@@ -392,20 +425,14 @@
       },
       "ramo": {
         "description": "An open-access decentralized cloud network.",
+        "offer": "Free trial available",
         "labels": ["S3-compatible"],
         "keyFeatures": ["S3-compatible API", "Developer SDK/CLI"]
       },
-      "singularity": {
-        "description": "Directly manage the full deal-making lifecycle on Filecoin.",
-        "labels": ["Archival"],
-        "keyFeatures": [
-          "Prepare and upload files using the CLI",
-          "Retrieve files with Lassie",
-          "Direct negotiation with storage providers"
-        ]
-      },
       "storacha": {
         "description": "High-speed hot storage for fast data retrieval.",
+        "monthlyStorageRate": "/ 100 GB / month",
+        "offer": "First 5 GB free",
         "labels": ["Drag and drop"],
         "keyFeatures": [
           "Fast access to data",
@@ -413,21 +440,6 @@
           "Optimized for content delivery and streaming",
           "Decentralized permissions with UCANs"
         ]
-      },
-      "placeholderA": {
-        "description": "Lorem ipsum dolor sit amet.",
-        "labels": ["Lorem ipsum"],
-        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
-      },
-      "placeholderB": {
-        "description": "Lorem ipsum dolor sit amet.",
-        "labels": ["Lorem ipsum"],
-        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
-      },
-      "placeholderC": {
-        "description": "Lorem ipsum dolor sit amet.",
-        "labels": ["Lorem ipsum"],
-        "keyFeatures": ["Lorem ipsum A", "Lorem ipsum B"]
       }
     }
   },
@@ -760,7 +772,8 @@
     "errorOccurred": "An error has occurred. Please try again."
   },
   "storageProviderCard": {
-    "perMonth": "/ month",
+    "from": "From",
+    "customPricing": "Custom pricing",
     "price": "Price",
     "bestForLabel": "Best For",
     "keyFeaturesLabel": "Key Features",
