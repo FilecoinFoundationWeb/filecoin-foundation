@@ -59,7 +59,7 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
         t('providers.aurora.keyFeatures.1'),
         t('providers.aurora.keyFeatures.2'),
       ],
-      url: 'https://www.aurora.storage/',
+      url: 'https://www.aurorainfra.ai/',
       logo: AuroraMiniatureLogo,
     },
     {
