@@ -5,6 +5,7 @@ import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
+import { CardGrid } from '@filecoin-foundation/ui-filecoin/CardGrid'
 import { LogoSection } from '@filecoin-foundation/ui-filecoin/LogoSection/LogoSection'
 import { PageHeader } from '@filecoin-foundation/ui-filecoin/PageHeader'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
@@ -22,12 +23,11 @@ import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
-import { StorageProviderCardWithImage } from './components/StorageProviderCard/StorageProviderCardWithImage'
+import { StorageProviderCard } from './components/StorageProviderCard/StorageProviderCard'
 import { StorageProviderSection } from './components/StorageProviderSection'
 import {
   getFilecoinStorageProviders,
-  getFeaturedFilecoinStorageProvider,
-  getOtherFilecoinPoweredSolutions,
+  getFeaturedFilecoinStorageProviders,
 } from './data/storageProviders'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -35,9 +35,8 @@ export default async function StoreData() {
   const metadata = await getTranslatedMetadata(PATHS.STORE_DATA.path)
   const t = await getTranslations(PATHS.STORE_DATA.path)
 
-  const featuredProvider = getFeaturedFilecoinStorageProvider(t)
   const storageProviders = getFilecoinStorageProviders(t)
-  const otherSolutions = getOtherFilecoinPoweredSolutions(t)
+  const featuredStorageProviders = getFeaturedFilecoinStorageProviders(t)
 
   return (
     <>
@@ -75,16 +74,15 @@ export default async function StoreData() {
           description={t('storeOnFilecoin.description')}
         />
         <div className="mt-20 flex flex-col gap-20">
-          <StorageProviderCardWithImage {...featuredProvider} />
+          <CardGrid as="ul" variant="mdTwo">
+            {featuredStorageProviders.map((provider) => (
+              <StorageProviderCard key={provider.name} as="li" {...provider} />
+            ))}
+          </CardGrid>
 
           <StorageProviderSection
             title={t('selectedSolutions.title')}
             providers={storageProviders}
-          />
-
-          <StorageProviderSection
-            title={t('otherSolutions.title')}
-            providers={otherSolutions}
           />
 
           <Button

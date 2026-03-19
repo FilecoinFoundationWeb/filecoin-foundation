@@ -21,9 +21,9 @@ export function PostMetadata({ author, date }: PostMetadataProps) {
   if (author) {
     return (
       <div className={clsx('flex items-center gap-2', baseStyles)}>
-        <span>{formattedDate}</span>
-        <span>|</span>
-        <span>{author}</span>
+        <span className="whitespace-nowrap">{formattedDate}</span>
+        <span aria-hidden="true">|</span>{' '}
+        <span className="min-w-0 truncate">{author}</span>
       </div>
     )
   }
