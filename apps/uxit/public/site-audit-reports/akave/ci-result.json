@@ -9,10 +9,10 @@
   },
   {
     "path": "/about-us",
-    "score": 0.89,
-    "performance": 0.65,
+    "score": 0.9,
+    "performance": 0.62,
     "accessibility": 0.97,
-    "best-practices": 0.93,
+    "best-practices": 1,
     "seo": 1
   },
   {
@@ -24,7 +24,7 @@
     "seo": 1
   },
   {
-    "path": "/blog/breaking-down-data-silos-with-akave-baselight-store-monetize-control",
+    "path": "/blog/meet-the-akave-team-at-ethdenver",
     "score": 0.97,
     "performance": 0.92,
     "accessibility": 0.97,
@@ -40,17 +40,17 @@
     "seo": 0.92
   },
   {
-    "path": "/ecosystem/xtrace",
-    "score": 0.9,
-    "performance": 0.74,
+    "path": "/ecosystem/ethernity-cloud",
+    "score": 0.91,
+    "performance": 0.75,
     "accessibility": 0.95,
     "best-practices": 1,
     "seo": 0.92
   },
   {
     "path": "/testnet",
-    "score": 0.9,
-    "performance": 0.6,
+    "score": 0.95,
+    "performance": 0.79,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
