@@ -1,8 +1,8 @@
 [
   {
     "path": "/",
-    "score": 0.97,
-    "performance": 0.92,
+    "score": 0.98,
+    "performance": 0.96,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
@@ -17,16 +17,16 @@
   },
   {
     "path": "/blog",
-    "score": 0.99,
-    "performance": 0.98,
+    "score": 0.98,
+    "performance": 0.97,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records",
+    "path": "/blog/filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill",
     "score": 0.98,
-    "performance": 0.98,
+    "performance": 0.99,
     "accessibility": 0.94,
     "best-practices": 1,
     "seo": 1
@@ -40,7 +40,7 @@
     "seo": 1
   },
   {
-    "path": "/faqs",
+    "path": "/digest/issue-1/free-softwares-paradox-losing-while-winning-and-the-need-for-decentralization",
     "score": 0.98,
     "performance": 0.96,
     "accessibility": 0.96,
@@ -48,9 +48,33 @@
     "seo": 1
   },
   {
-    "path": "/learning-resources",
+    "path": "/digest/issue-2",
+    "score": 0.95,
+    "performance": 0.84,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/digest/issue-2/built-to-last-data-lifeboats-for-distributed-digital-heritage",
     "score": 0.98,
     "performance": 0.97,
+    "accessibility": 0.94,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/faqs",
+    "score": 0.98,
+    "performance": 0.95,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/learning-resources",
+    "score": 0.95,
+    "performance": 0.83,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
@@ -65,16 +89,16 @@
   },
   {
     "path": "/projects",
-    "score": 0.96,
-    "performance": 0.94,
+    "score": 0.91,
+    "performance": 0.75,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 0.92
   },
   {
-    "path": "/projects/decentralized-future-council",
-    "score": 0.99,
-    "performance": 0.98,
+    "path": "/projects/freedom-of-the-press-foundation",
+    "score": 0.95,
+    "performance": 0.85,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
@@ -82,7 +106,7 @@
   {
     "path": "/terms-of-use",
     "score": 0.98,
-    "performance": 0.96,
+    "performance": 0.95,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1

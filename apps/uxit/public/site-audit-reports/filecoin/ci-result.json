@@ -24,12 +24,12 @@
     "seo": 0.92
   },
   {
-    "path": "/blog/posts/trusted-setup-complete-for-network-v15-upgrade/",
-    "score": 0.87,
-    "performance": 0.78,
-    "accessibility": 0.86,
+    "path": "/blog/posts/filecoin-orbit-filecoin-year-one-in-review/",
+    "score": 0.93,
+    "performance": 0.84,
+    "accessibility": 0.96,
     "best-practices": 1,
-    "seo": 0.85
+    "seo": 0.92
   },
   {
     "path": "/build/",
@@ -50,7 +50,7 @@
   {
     "path": "/store/",
     "score": 0.94,
-    "performance": 0.81,
+    "performance": 0.8,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
@@ -64,26 +64,26 @@
     "seo": 1
   },
   {
-    "path": "/zh-cn/blog/",
-    "score": 0.91,
-    "performance": 0.67,
-    "accessibility": 0.96,
-    "best-practices": 1,
-    "seo": 1
-  },
-  {
-    "path": "/zh-cn/blog/awards/",
+    "path": "/zh-cn/blog/events/",
     "score": 0.94,
-    "performance": 0.79,
+    "performance": 0.78,
     "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   },
   {
-    "path": "/zh-cn/blog/posts/filecoin-discover/",
+    "path": "/zh-cn/blog/posts/2020-12-19-1/",
+    "score": 0.95,
+    "performance": 0.84,
+    "accessibility": 0.96,
+    "best-practices": 1,
+    "seo": 1
+  },
+  {
+    "path": "/zh-cn/store/",
     "score": 0.94,
     "performance": 0.8,
-    "accessibility": 0.94,
+    "accessibility": 0.96,
     "best-practices": 1,
     "seo": 1
   }

@@ -1,64 +1,64 @@
 [
   {
     "path": "/",
-    "score": 0.89,
-    "performance": 0.86,
+    "score": 0.91,
+    "performance": 0.9,
     "accessibility": 0.87,
-    "best-practices": 0.93,
+    "best-practices": 0.96,
     "seo": 0.91
   },
   {
     "path": "/blog",
-    "score": 0.9,
+    "score": 0.91,
     "performance": 0.73,
     "accessibility": 0.92,
-    "best-practices": 0.96,
+    "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/blog/ramo-cloud-storage-for-academic-datasets",
     "score": 0.89,
-    "performance": 0.73,
+    "performance": 0.71,
     "accessibility": 0.86,
-    "best-practices": 0.96,
+    "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/cloud-services",
-    "score": 0.94,
+    "score": 0.95,
     "performance": 0.93,
     "accessibility": 0.91,
-    "best-practices": 0.93,
+    "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/events",
     "score": 0.89,
-    "performance": 0.85,
+    "performance": 0.84,
     "accessibility": 0.91,
     "best-practices": 0.89,
     "seo": 0.91
   },
   {
     "path": "/legal/privacy-policy",
-    "score": 0.95,
-    "performance": 0.91,
+    "score": 0.97,
+    "performance": 0.95,
     "accessibility": 0.92,
-    "best-practices": 0.96,
+    "best-practices": 1,
     "seo": 1
   },
   {
     "path": "/network",
-    "score": 0.93,
-    "performance": 0.86,
+    "score": 0.95,
+    "performance": 0.91,
     "accessibility": 0.91,
-    "best-practices": 0.93,
+    "best-practices": 0.96,
     "seo": 1
   },
   {
     "path": "/stake",
-    "score": 0.95,
-    "performance": 0.94,
+    "score": 0.91,
+    "performance": 0.79,
     "accessibility": 0.92,
     "best-practices": 0.93,
     "seo": 1
