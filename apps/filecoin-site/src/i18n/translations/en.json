@@ -732,7 +732,10 @@
         "error": "Please select a data volume"
       },
       "communicationOptIn": "I agree to receive other communications from Protocol Labs and Filecoin Foundation. You may unsubscribe from these communications at any time.",
-      "submit": "Submit"
+      "submit": "Submit",
+      "successMessage": "Your request has been submitted. Our team will be in touch soon.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "errorOccurred": "An error has occurred. Please try again."
     }
   },
   "/provide-storage/onboarding": {

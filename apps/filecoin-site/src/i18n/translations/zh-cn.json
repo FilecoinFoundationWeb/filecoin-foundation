@@ -720,7 +720,10 @@
         "error": "请选择数据量"
       },
       "communicationOptIn": "我同意接收来自 Protocol Labs 和 Filecoin Foundation 的其他通信。您可以随时取消订阅。",
-      "submit": "提交"
+      "submit": "提交",
+      "successMessage": "您的请求已提交。我们的团队将尽快与您联系。",
+      "errorMessage": "出了点问题。请再试一次。",
+      "errorOccurred": "发生错误。请再试一次。"
     }
   },
   "/provide-storage/onboarding": {

@@ -1,13 +1,12 @@
 'use client'
 
-import { zodResolver } from '@hookform/resolvers/zod'
 import { useTranslations } from 'next-intl'
-import { useForm } from 'react-hook-form'
 
 import { ControlledForm } from '@filecoin-foundation/ui/Form'
 import { ControlledFormCheckbox } from '@filecoin-foundation/ui/FormCheckbox'
 import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
 import { ControlledFormRadioGroup } from '@filecoin-foundation/ui/FormRadioGroup'
+import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 
 import { PATHS } from '@/constants/paths'
@@ -15,37 +14,21 @@ import { PATHS } from '@/constants/paths'
 import { PrivacyDisclaimer } from '@/components/PrivacyDisclaimer'
 
 import {
-  createTalkToExpertFormSchema,
   dataVolumeOptions,
   type TalkToExpertFormData,
 } from '../../schema/TalkToExpertFormSchema'
+import { useHubSpotForm } from '../hooks/useHubSpotForm'
 
 export function TalkToExpertForm() {
   const t = useTranslations(PATHS.STORE_DATA_TALK_TO_EXPERT.path + '.form')
 
-  const schema = createTalkToExpertFormSchema({
-    firstNameRequired: t('firstName.error'),
-    lastNameRequired: t('lastName.error'),
-    companyNameRequired: t('companyName.error'),
-    businessEmailInvalid: t('businessEmail.errorInvalid'),
-    businessEmailRequired: t('businessEmail.errorRequired'),
-    dataVolumeRequired: t('dataVolume.error'),
-  })
-
-  const form = useForm<TalkToExpertFormData>({
-    resolver: zodResolver(schema),
-    defaultValues: {
-      communicationOptIn: false,
-    },
-  })
-
-  const isSubmitting = form.formState.isSubmitting
+  const { form, isSubmitting, dialog, submitToHubSpot } = useHubSpotForm(t)
 
   return (
     <ControlledForm<TalkToExpertFormData>
       form={form}
       className="space-y-15"
-      onSubmit={(data) => console.log(data)}
+      onSubmit={submitToHubSpot}
     >
       <div className="space-y-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
@@ -100,6 +83,13 @@ export function TalkToExpertForm() {
           {t('submit')}
         </Button>
       </div>
+
+      <NotificationDialog
+        message={dialog.message}
+        isOpen={dialog.isOpen}
+        icon={dialog.icon}
+        onClose={dialog.close}
+      />
     </ControlledForm>
   )
 }
