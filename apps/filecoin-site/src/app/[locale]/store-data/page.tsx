@@ -101,7 +101,7 @@ export default async function StoreData() {
           title={t('notSure.title')}
           description={t('notSure.description')}
           cta={
-            <Button href="#todo" variant="primary">
+            <Button href={PATHS.STORE_DATA_TALK_TO_EXPERT.path} variant="primary">
               {t('notSure.cta')}
             </Button>
           }

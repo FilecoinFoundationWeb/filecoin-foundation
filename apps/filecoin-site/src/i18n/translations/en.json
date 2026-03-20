@@ -698,6 +698,12 @@
       "bookCall": "Book a call with the onboarding team"
     }
   },
+  "/store-data/talk-to-expert": {
+    "metadata": {
+      "title": "Talk to a Filecoin Storage Expert",
+      "description": "Share your details and our team will help you evaluate the best Filecoin storage solution for your use case."
+    }
+  },
   "/provide-storage/onboarding": {
     "metadata": {
       "title": "Become a Filecoin Storage Provider | Onboarding Guide",
@@ -792,5 +798,8 @@
     "next": "Next",
     "navAriaLabel": "Pagination",
     "goToPage": "Go to page {page}"
+  },
+  "privacyDisclaimer": {
+    "text": "From time to time, we would like to contact you about our products and services, as well as other content that may be of interest to you. Please review the <privacyPolicyLink>Filecoin Foundation Privacy Policy</privacyPolicyLink> for additional information on our privacy practices."
   }
 }
