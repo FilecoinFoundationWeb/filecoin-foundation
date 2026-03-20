@@ -702,6 +702,37 @@
     "metadata": {
       "title": "Talk to a Filecoin Storage Expert",
       "description": "Share your details and our team will help you evaluate the best Filecoin storage solution for your use case."
+    },
+    "heading": "Talk to a Filecoin storage expert.",
+    "description": "Share a few details below, and our team will help you evaluate the best storage solution for your use case.",
+    "form": {
+      "firstName": {
+        "label": "First name",
+        "placeholder": "Alex",
+        "error": "Your first name is required"
+      },
+      "lastName": {
+        "label": "Last name",
+        "placeholder": "Smith",
+        "error": "Your last name is required"
+      },
+      "businessEmail": {
+        "label": "Business email address",
+        "placeholder": "alex@company.com",
+        "errorInvalid": "Your company email format is invalid",
+        "errorRequired": "Your company email is required"
+      },
+      "companyName": {
+        "label": "Company name",
+        "placeholder": "Company Co",
+        "error": "Your company name is required"
+      },
+      "dataVolume": {
+        "label": "How much data are you looking to store?",
+        "error": "Please select a data volume"
+      },
+      "communicationOptIn": "I agree to receive other communications from Protocol Labs and Filecoin Foundation. You may unsubscribe from these communications at any time.",
+      "submit": "Submit"
     }
   },
   "/provide-storage/onboarding": {

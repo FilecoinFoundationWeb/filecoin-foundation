@@ -1,13 +1,15 @@
 import { z } from 'zod'
 
-const errorMessages = {
+const defaultMessages = {
   firstNameRequired: 'Your first name is required',
   lastNameRequired: 'Your last name is required',
   companyNameRequired: 'Your company name is required',
   businessEmailInvalid: 'Your company email format is invalid',
   businessEmailRequired: 'Your company email is required',
   dataVolumeRequired: 'Please select a data volume',
-} as const
+}
+
+type TalkToExpertFormMessages = typeof defaultMessages
 
 const DATA_VOLUME_OPTIONS = [
   '0-1 TB',
@@ -23,23 +25,29 @@ export const dataVolumeOptions = DATA_VOLUME_OPTIONS.map((value) => ({
   label: value,
 }))
 
-export const TalkToExpertFormSchema = z.object({
-  firstName: z
-    .string({ error: errorMessages.firstNameRequired })
-    .min(1, { error: errorMessages.firstNameRequired }),
-  lastName: z
-    .string({ error: errorMessages.lastNameRequired })
-    .min(1, { error: errorMessages.lastNameRequired }),
-  companyName: z
-    .string({ error: errorMessages.companyNameRequired })
-    .min(1, { error: errorMessages.companyNameRequired }),
-  businessEmail: z
-    .email({ error: errorMessages.businessEmailInvalid })
-    .min(1, { error: errorMessages.businessEmailRequired }),
-  dataVolume: z.enum(DATA_VOLUME_OPTIONS, {
-    error: errorMessages.dataVolumeRequired,
-  }),
-  communicationOptIn: z.boolean(),
-})
+export function createTalkToExpertFormSchema(
+  messages: TalkToExpertFormMessages = defaultMessages,
+) {
+  return z.object({
+    firstName: z
+      .string({ error: messages.firstNameRequired })
+      .min(1, { error: messages.firstNameRequired }),
+    lastName: z
+      .string({ error: messages.lastNameRequired })
+      .min(1, { error: messages.lastNameRequired }),
+    companyName: z
+      .string({ error: messages.companyNameRequired })
+      .min(1, { error: messages.companyNameRequired }),
+    businessEmail: z
+      .email({ error: messages.businessEmailInvalid })
+      .min(1, { error: messages.businessEmailRequired }),
+    dataVolume: z.enum(DATA_VOLUME_OPTIONS, {
+      error: messages.dataVolumeRequired,
+    }),
+    communicationOptIn: z.boolean(),
+  })
+}
 
-export type TalkToExpertFormData = z.infer<typeof TalkToExpertFormSchema>
+export type TalkToExpertFormData = z.infer<
+  ReturnType<typeof createTalkToExpertFormSchema>
+>
