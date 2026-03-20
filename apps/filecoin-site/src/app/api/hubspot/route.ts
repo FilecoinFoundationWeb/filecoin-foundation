@@ -32,13 +32,17 @@ export async function POST(request: NextRequest) {
           },
         ],
         legalConsentOptions: {
-          communications: [
-            {
-              value: data.communicationOptIn,
-              subscriptionTypeId: 2233676376,
-              text: `I ${data.communicationOptIn ? '' : 'do not'} agree to receive other communications from Filecoin.`,
-            },
-          ],
+          consent: {
+            consentToProcess: true,
+            text: 'I agree to allow Filecoin to store and process my personal data.',
+            communications: [
+              {
+                value: data.communicationOptIn,
+                subscriptionTypeId: 2233676376,
+                text: `I ${data.communicationOptIn ? '' : 'do not'} agree to receive other communications from Filecoin.`,
+              },
+            ],
+          },
         },
         context: {
           pageUri: PATHS.STORE_DATA_TALK_TO_EXPERT.path,
@@ -47,11 +51,19 @@ export async function POST(request: NextRequest) {
       }),
     })
 
+    const responseBody = await response.json()
+
     if (!response.ok) {
-      return Response.json({ ok: false }, { status: 502 })
+      return Response.json(
+        { ok: false, error: responseBody?.errors?.toString() },
+        { status: 400 },
+      )
     }
 
-    return Response.json({ ok: true }, { status: 200 })
+    return Response.json({
+      status: 200,
+      data: responseBody?.inlineMessage,
+    })
   } catch (error) {
     return Response.json(
       { ok: false },
