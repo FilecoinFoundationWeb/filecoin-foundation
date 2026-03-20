@@ -9,12 +9,12 @@ import {
 } from './CarouselGradient'
 
 type CarouselContentProps = React.ComponentProps<'ul'> & {
-  gradientMode?: CarouselGradientProps['variant']
+  gradientVariant?: CarouselGradientProps['variant']
 }
 
 export function CarouselContent({
   className,
-  gradientMode,
+  gradientVariant,
   ...props
 }: CarouselContentProps) {
   const { carouselRef } = useCarousel()
@@ -22,11 +22,11 @@ export function CarouselContent({
   return (
     <div
       ref={carouselRef}
-      className={clsx('overflow-hidden', gradientMode && 'relative')}
+      className={clsx('overflow-hidden', gradientVariant && 'relative')}
       data-slot="carousel-content"
     >
       <ul className={clsx('flex justify-between', className)} {...props} />
-      {gradientMode && <CarouselGradient variant={gradientMode} />}
+      {gradientVariant && <CarouselGradient variant={gradientVariant} />}
     </div>
   )
 }

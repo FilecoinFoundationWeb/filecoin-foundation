@@ -12,7 +12,7 @@ type LogoSectionProps = {
   title: string
   logos: Array<LogoItemProps>
   autoPlay?: boolean
-  gradientMode?: CarouselGradientProps['variant']
+  gradientVariant: CarouselGradientProps['variant']
 }
 
 export function LogoSection({
@@ -20,7 +20,7 @@ export function LogoSection({
   title,
   logos,
   autoPlay,
-  gradientMode,
+  gradientVariant,
 }: LogoSectionProps) {
   const Tag = headingTag
 
@@ -37,7 +37,7 @@ export function LogoSection({
       </Tag>
 
       <Carousel autoPlay={autoPlay}>
-        <CarouselContent gradientMode={gradientMode}>
+        <CarouselContent gradientVariant={gradientVariant}>
           {logos.map((logoItem, index) => (
             <CarouselItem key={index} range={logos.length}>
               <div className="grid h-full place-items-center p-0.5">
