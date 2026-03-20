@@ -39,8 +39,9 @@ export function createTalkToExpertFormSchema(
       .string({ error: messages.companyNameRequired })
       .min(1, { error: messages.companyNameRequired }),
     businessEmail: z
-      .email({ error: messages.businessEmailInvalid })
-      .min(1, { error: messages.businessEmailRequired }),
+      .string({ error: messages.businessEmailRequired })
+      .min(1, { error: messages.businessEmailRequired })
+      .pipe(z.email({ error: messages.businessEmailInvalid })),
     dataVolume: z.enum(DATA_VOLUME_OPTIONS, {
       error: messages.dataVolumeRequired,
     }),
