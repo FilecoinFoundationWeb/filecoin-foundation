@@ -25,7 +25,7 @@ export function useNewsletterForm() {
 
   async function onSubmit(values: NewsletterFormData) {
     try {
-      const response = await fetch('/api/subscribe', {
+      const response = await fetch('/api/mailchimp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: values.email }),
