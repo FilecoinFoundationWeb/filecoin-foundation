@@ -1,5 +1,11 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.8.7
+
+### Patch Changes
+
+- 5161d64: Replace text button with Play/Pause icon button in CarouselAutoScrollControls
+
 ## 0.8.6
 
 ### Patch Changes
