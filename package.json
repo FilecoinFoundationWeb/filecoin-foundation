@@ -20,14 +20,14 @@
     "publish": "changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.8",
-    "glob": "^13.0.3",
+    "@changesets/cli": "^2.30.0",
+    "glob": "^13.0.6",
     "husky": "^9.1.7",
-    "markdownlint-cli2": "^0.20.0",
+    "markdownlint-cli2": "^0.22.0",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "syncpack": "^13.0.4",
-    "turbo": "^2.8.9"
+    "syncpack": "^14.2.1",
+    "turbo": "^2.8.20"
   },
   "overrides": {
     "dompurify": "^3.3.0",
