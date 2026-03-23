@@ -9,32 +9,31 @@ import { useNotificationDialog } from '@filecoin-foundation/ui/NotificationDialo
 import { NOTIFICATION_DIALOG_ERROR_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
 
 import {
-  createTalkToExpertFormSchema,
-  type TalkToExpertFormData,
-} from '../../schema/TalkToExpertFormSchema'
+  createProvideStorageFormSchema,
+  type ProvideStorageFormSchema,
+} from '../schema/ProvideStorageFormSchema'
 
-export function useHubSpotForm(t: TranslationFunction) {
+export function useProvideStorageForm(t: TranslationFunction) {
   const dialog = useNotificationDialog()
 
-  const schema = createTalkToExpertFormSchema({
+  const schema = createProvideStorageFormSchema({
     firstNameRequired: t('firstName.error'),
     lastNameRequired: t('lastName.error'),
     companyNameRequired: t('companyName.error'),
     businessEmailInvalid: t('businessEmail.errorInvalid'),
     businessEmailRequired: t('businessEmail.errorRequired'),
-    dataVolumeRequired: t('dataVolume.error'),
   })
 
-  const form = useForm<TalkToExpertFormData>({
+  const form = useForm<ProvideStorageFormSchema>({
     resolver: zodResolver(schema),
     defaultValues: {
       communicationOptIn: false,
     },
   })
 
-  async function submitToHubSpot(data: TalkToExpertFormData) {
+  async function submitToHubSpot(data: ProvideStorageFormSchema) {
     try {
-      const response = await fetch('/api/hubspot', {
+      const response = await fetch('/api/hubspot/provide-storage', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

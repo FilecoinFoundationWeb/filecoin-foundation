@@ -742,6 +742,40 @@
     "metadata": {
       "title": "Become a Filecoin Storage Provider | Onboarding Guide",
       "description": "Start your Filecoin journey—learn how to become a storage provider with step-by-step onboarding, support resources, and community guidance."
+    },
+    "heading": "Thanks for your interest in becoming a Filecoin storage provider.",
+    "description": "Please fill out this form below, and a member of the onboarding team will reach out to guide you through next steps.",
+    "form": {
+      "firstName": {
+        "label": "First name",
+        "placeholder": "Alex",
+        "error": "Your first name is required"
+      },
+      "lastName": {
+        "label": "Last name",
+        "placeholder": "Smith",
+        "error": "Your last name is required"
+      },
+      "businessEmail": {
+        "label": "Business email address",
+        "placeholder": "alex@company.com",
+        "errorInvalid": "Your company email format is invalid",
+        "errorRequired": "Your company email is required"
+      },
+      "companyName": {
+        "label": "Company name",
+        "placeholder": "Company Co",
+        "error": "Your company name is required"
+      },
+      "additionalInfo": {
+        "label": "Additional information",
+        "placeholder": "Share details about your setup, goals, or anything you'd like us to know."
+      },
+      "communicationOptIn": "I agree to receive other communications from Protocol Labs and Filecoin Foundation. You may unsubscribe from these communications at any time.",
+      "submit": "Book onboarding call",
+      "successMessage": "Your request has been submitted. Our team will be in touch soon.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "errorOccurred": "An error has occurred. Please try again."
     }
   },
   "navigation": {

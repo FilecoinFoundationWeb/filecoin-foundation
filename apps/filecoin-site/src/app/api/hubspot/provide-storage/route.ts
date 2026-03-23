@@ -1,35 +1,40 @@
+import path from 'node:path'
+
 import { type NextRequest } from 'next/server'
 
 import { PATHS } from '@/constants/paths'
 
-import { createTalkToExpertFormSchema } from '@/store-data/schema/TalkToExpertFormSchema'
+import { HUBSPOT_FORM_API_BASE_URL } from '../config'
 
-const RequestSchema = createTalkToExpertFormSchema()
+import { createProvideStorageFormSchema } from '@/provide-storage/onboarding/schema/ProvideStorageFormSchema'
+
+const RequestSchema = createProvideStorageFormSchema()
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const data = RequestSchema.parse(body)
 
-    const hubspotUrl = process.env.HUBSPOT_STORE_DATA_FORM_URL
-    if (!hubspotUrl) {
-      throw new Error('HUBSPOT_STORE_DATA_FORM_URL is not set')
+    const portalId = process.env.HUBSPOT_PORTAL_ID
+    const formId = process.env.HUBSPOT_PROVIDE_STORAGE_FORM_ID
+    if (!portalId || !formId) {
+      throw new Error(
+        'HUBSPOT_PORTAL_ID or HUBSPOT_PROVIDE_STORAGE_FORM_ID is not set',
+      )
     }
+
+    const hubspotUrl = path.join(HUBSPOT_FORM_API_BASE_URL, portalId, formId)
 
     const response = await fetch(hubspotUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         fields: [
-          { objectTypeId: '0-1', name: 'firstname', value: data.firstName },
-          { objectTypeId: '0-1', name: 'lastname', value: data.lastName },
-          { objectTypeId: '0-1', name: 'email', value: data.businessEmail },
-          { objectTypeId: '0-1', name: 'company', value: data.companyName },
-          {
-            objectTypeId: '0-1',
-            name: 'additional_info',
-            value: `Data volume: ${data.dataVolume}`,
-          },
+          { name: 'firstname', value: data.firstName },
+          { name: 'lastname', value: data.lastName },
+          { name: 'email', value: data.businessEmail },
+          { name: 'company', value: data.companyName },
+          { name: 'additional_info', value: data.additionalInfo },
         ],
         legalConsentOptions: {
           consent: {
@@ -39,14 +44,14 @@ export async function POST(request: NextRequest) {
               {
                 value: data.communicationOptIn,
                 subscriptionTypeId: 2233676376,
-                text: `I ${data.communicationOptIn ? '' : 'do not'} agree to receive other communications from Filecoin.`,
+                text: `I ${data.communicationOptIn ? '' : 'do not '}agree to receive other communications from Filecoin.`,
               },
             ],
           },
         },
         context: {
-          pageUri: PATHS.STORE_DATA_TALK_TO_EXPERT.path,
-          pageName: PATHS.STORE_DATA_TALK_TO_EXPERT.label,
+          pageUri: PATHS.PROVIDE_STORAGE_ONBOARDING.path,
+          pageName: PATHS.PROVIDE_STORAGE_ONBOARDING.label,
         },
       }),
     })

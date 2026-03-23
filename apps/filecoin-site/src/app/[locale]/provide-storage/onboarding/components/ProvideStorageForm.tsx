@@ -1,74 +1,69 @@
 'use client'
 
-import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm } from 'react-hook-form'
+import { useTranslations } from 'next-intl'
 
 import { ControlledForm } from '@filecoin-foundation/ui/Form'
 import { ControlledFormCheckbox } from '@filecoin-foundation/ui/FormCheckbox'
 import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
 import { ControlledFormTextarea } from '@filecoin-foundation/ui/FormTextarea'
+import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
+
+import { PATHS } from '@/constants/paths'
 
 import { PrivacyDisclaimer } from '@/components/PrivacyDisclaimer'
 
-import {
-  ProvideStorageFormSchema,
-  type ProvideStorageFormData,
-} from '../../schema/ProvideStorageFormSchema'
-
+import { useProvideStorageForm } from '../hooks/useProvideStorageForm'
+import { type ProvideStorageFormSchema } from '../schema/ProvideStorageFormSchema'
 
 export function ProvideStorageForm() {
-  const form = useForm<ProvideStorageFormData>({
-    resolver: zodResolver(ProvideStorageFormSchema),
-    defaultValues: {
-      communicationOptIn: false,
-    },
-  })
+  const t = useTranslations(PATHS.PROVIDE_STORAGE_ONBOARDING.path + '.form')
 
-  const isSubmitting = form.formState.isSubmitting
+  const { form, isSubmitting, dialog, submitToHubSpot } =
+    useProvideStorageForm(t)
 
   return (
-    <ControlledForm<ProvideStorageFormData>
+    <ControlledForm<ProvideStorageFormSchema>
       form={form}
       className="space-y-15"
-      onSubmit={(data) => console.log(data)}
+      onSubmit={submitToHubSpot}
     >
       <div className="space-y-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-          <ControlledFormInput<ProvideStorageFormData>
+          <ControlledFormInput<ProvideStorageFormSchema>
             name="firstName"
-            label="First name"
-            placeholder="Alex"
+            label={t('firstName.label')}
+            placeholder={t('firstName.placeholder')}
             disabled={isSubmitting}
           />
-          <ControlledFormInput<ProvideStorageFormData>
+          <ControlledFormInput<ProvideStorageFormSchema>
             name="lastName"
-            label="Last name"
-            placeholder="Smith"
+            label={t('lastName.label')}
+            placeholder={t('lastName.placeholder')}
             disabled={isSubmitting}
           />
         </div>
 
-        <ControlledFormInput<ProvideStorageFormData>
+        <ControlledFormInput<ProvideStorageFormSchema>
           name="businessEmail"
-          label="Business email address"
+          label={t('businessEmail.label')}
           type="email"
-          placeholder="alex@company.com"
+          placeholder={t('businessEmail.placeholder')}
           disabled={isSubmitting}
         />
 
-        <ControlledFormInput<ProvideStorageFormData>
+        <ControlledFormInput<ProvideStorageFormSchema>
           name="companyName"
-          label="Company name"
-          placeholder="Company Co"
+          label={t('companyName.label')}
+          placeholder={t('companyName.placeholder')}
           disabled={isSubmitting}
         />
 
-        <ControlledFormTextarea<ProvideStorageFormData>
+        <ControlledFormTextarea<ProvideStorageFormSchema>
           addOptionalToLabel
           name="additionalInfo"
-          label="Additional information"
-          placeholder="Share details about your setup, goals, or anything you'd like us to know."
+          label={t('additionalInfo.label')}
+          placeholder={t('additionalInfo.placeholder')}
           disabled={isSubmitting}
         />
       </div>
@@ -76,17 +71,24 @@ export function ProvideStorageForm() {
       <div className="space-y-8">
         <PrivacyDisclaimer />
 
-        <ControlledFormCheckbox<ProvideStorageFormData>
+        <ControlledFormCheckbox<ProvideStorageFormSchema>
           name="communicationOptIn"
-          label="I agree to receive other communications from Protocol Labs and Filecoin Foundation. You may unsubscribe from these communications at any time."
+          label={t('communicationOptIn')}
         />
       </div>
 
       <div className="grid md:block">
         <Button variant="primary" type="submit">
-          Book onboarding call
+          {t('submit')}
         </Button>
       </div>
+
+      <NotificationDialog
+        message={dialog.message}
+        isOpen={dialog.isOpen}
+        icon={dialog.icon}
+        onClose={dialog.close}
+      />
     </ControlledForm>
   )
 }

@@ -13,32 +13,32 @@ import { PATHS } from '@/constants/paths'
 
 import { PrivacyDisclaimer } from '@/components/PrivacyDisclaimer'
 
+import { useStoreDataForm } from '../hooks/useStoreDataForm'
 import {
   dataVolumeOptions,
-  type TalkToExpertFormData,
-} from '../../schema/TalkToExpertFormSchema'
-import { useHubSpotForm } from '../hooks/useHubSpotForm'
+  type StoreDataFormSchema,
+} from '../schema/StoreDataFormSchema'
 
-export function TalkToExpertForm() {
+export function StoreDataForm() {
   const t = useTranslations(PATHS.STORE_DATA_TALK_TO_EXPERT.path + '.form')
 
-  const { form, isSubmitting, dialog, submitToHubSpot } = useHubSpotForm(t)
+  const { form, isSubmitting, dialog, submitToHubSpot } = useStoreDataForm(t)
 
   return (
-    <ControlledForm<TalkToExpertFormData>
+    <ControlledForm<StoreDataFormSchema>
       form={form}
       className="space-y-15"
       onSubmit={submitToHubSpot}
     >
       <div className="space-y-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-          <ControlledFormInput<TalkToExpertFormData>
+          <ControlledFormInput<StoreDataFormSchema>
             name="firstName"
             label={t('firstName.label')}
             placeholder={t('firstName.placeholder')}
             disabled={isSubmitting}
           />
-          <ControlledFormInput<TalkToExpertFormData>
+          <ControlledFormInput<StoreDataFormSchema>
             name="lastName"
             label={t('lastName.label')}
             placeholder={t('lastName.placeholder')}
@@ -46,7 +46,7 @@ export function TalkToExpertForm() {
           />
         </div>
 
-        <ControlledFormInput<TalkToExpertFormData>
+        <ControlledFormInput<StoreDataFormSchema>
           name="businessEmail"
           label={t('businessEmail.label')}
           type="email"
@@ -54,14 +54,14 @@ export function TalkToExpertForm() {
           disabled={isSubmitting}
         />
 
-        <ControlledFormInput<TalkToExpertFormData>
+        <ControlledFormInput<StoreDataFormSchema>
           name="companyName"
           label={t('companyName.label')}
           placeholder={t('companyName.placeholder')}
           disabled={isSubmitting}
         />
 
-        <ControlledFormRadioGroup<TalkToExpertFormData>
+        <ControlledFormRadioGroup<StoreDataFormSchema>
           name="dataVolume"
           label={t('dataVolume.label')}
           options={dataVolumeOptions}
@@ -72,7 +72,7 @@ export function TalkToExpertForm() {
       <div className="space-y-8">
         <PrivacyDisclaimer />
 
-        <ControlledFormCheckbox<TalkToExpertFormData>
+        <ControlledFormCheckbox<StoreDataFormSchema>
           name="communicationOptIn"
           label={t('communicationOptIn')}
         />
