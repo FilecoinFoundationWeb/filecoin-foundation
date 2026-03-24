@@ -31,12 +31,15 @@ jobs:
           - app: ff-site
             ready_path: /blog
             percy_token: PERCY_TOKEN_FF_SITE
+            build_script: build
           - app: ffdweb-site
             ready_path: /blog
             percy_token: PERCY_TOKEN_FFDWEB_SITE
+            build_script: build
           - app: filecoin-site
             ready_path: /blog
             percy_token: PERCY_TOKEN_FILECOIN_SITE
+            build_script: build:ci
     defaults:
       run:
         working-directory: apps/${{ matrix.app }}
@@ -63,7 +66,7 @@ jobs:
 
       - name: Build Project
         working-directory: .
-        run: npx turbo run build:ci --filter="./apps/${{ matrix.app }}"
+        run: npx turbo run ${{ matrix.build_script }} --filter="./apps/${{ matrix.app }}"
 
       - name: Start server (prod) on :3000
         run: |
