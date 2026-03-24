@@ -2,7 +2,11 @@ import { type NextRequest } from 'next/server'
 
 import { PATHS } from '@/constants/paths'
 
-import { getHubspotFormsUrl } from '../config'
+import {
+  getContext,
+  getHubspotFormsUrl,
+  getLegalConsentOptions,
+} from '../config'
 
 import { createProvideStorageFormSchema } from '@/provide-storage/onboarding/schema/ProvideStorageFormSchema'
 
@@ -29,22 +33,8 @@ export async function POST(request: NextRequest) {
           { name: 'company', value: data.companyName },
           { name: 'additional_info', value: data.additionalInfo },
         ],
-        legalConsentOptions: {
-          consent: {
-            consentToProcess: true,
-            text: 'I agree to allow Filecoin to store and process my personal data.',
-            communications: [
-              {
-                value: data.communicationOptIn,
-                text: `I ${data.communicationOptIn ? '' : 'do not '}agree to receive other communications from Filecoin.`,
-              },
-            ],
-          },
-        },
-        context: {
-          pageUri: PATHS.PROVIDE_STORAGE_ONBOARDING.path,
-          pageName: PATHS.PROVIDE_STORAGE_ONBOARDING.label,
-        },
+        legalConsentOptions: getLegalConsentOptions(data.communicationOptIn),
+        context: getContext(PATHS.PROVIDE_STORAGE_ONBOARDING),
       }),
     })
 

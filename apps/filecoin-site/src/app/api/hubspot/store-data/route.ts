@@ -2,7 +2,11 @@ import { type NextRequest } from 'next/server'
 
 import { PATHS } from '@/constants/paths'
 
-import { getHubspotFormsUrl } from '../config'
+import {
+  getContext,
+  getHubspotFormsUrl,
+  getLegalConsentOptions,
+} from '../config'
 
 import { createStoreDataFormSchema } from '@/store-data/talk-to-expert/schema/StoreDataFormSchema'
 
@@ -32,22 +36,8 @@ export async function POST(request: NextRequest) {
             value: data.dataVolume,
           },
         ],
-        legalConsentOptions: {
-          consent: {
-            consentToProcess: true,
-            text: 'I agree to allow Filecoin to store and process my personal data.',
-            communications: [
-              {
-                value: data.communicationOptIn,
-                text: `I ${data.communicationOptIn ? '' : 'do not'} agree to receive other communications from Filecoin.`,
-              },
-            ],
-          },
-        },
-        context: {
-          pageUri: PATHS.STORE_DATA_TALK_TO_EXPERT.path,
-          pageName: PATHS.STORE_DATA_TALK_TO_EXPERT.label,
-        },
+        legalConsentOptions: getLegalConsentOptions(data.communicationOptIn),
+        context: getContext(PATHS.STORE_DATA_TALK_TO_EXPERT),
       }),
     })
 

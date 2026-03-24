@@ -1,5 +1,7 @@
 import path from 'node:path'
 
+import type { PathConfig } from '@/constants/paths'
+
 /**
  * Read the HubSpot documentation for more information.
  *
@@ -22,4 +24,26 @@ export function getHubspotFormsUrl({ portalId, formId }: GetHubspotUrlParams) {
   }
 
   return path.join(HUBSPOT_FORM_API_BASE_URL, portalId, formId)
+}
+
+export function getLegalConsentOptions(optIn: boolean) {
+  return {
+    consent: {
+      consentToProcess: true,
+      text: 'I agree to allow Filecoin to store and process my personal data.',
+      communications: [
+        {
+          value: optIn,
+          text: `I ${optIn ? '' : 'do not'} agree to receive other communications from Filecoin.`,
+        },
+      ],
+    },
+  }
+}
+
+export function getContext(path: PathConfig) {
+  return {
+    pageUri: path.path,
+    pageName: path.label,
+  }
 }
