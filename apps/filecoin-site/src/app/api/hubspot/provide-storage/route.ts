@@ -19,7 +19,7 @@ const hubspotFormsUrl = getHubspotFormsUrl(
   process.env.HUBSPOT_PROVIDE_STORAGE_FORM_ID,
 )
 
-async function submitToHubSpot(request: NextRequest) {
+export const POST = withHubSpotResponseHandler(async (request: NextRequest) => {
   const body = await request.json()
   const data = RequestSchema.parse(body)
   const mappedData = {
@@ -40,6 +40,4 @@ async function submitToHubSpot(request: NextRequest) {
       context: getContext(PATHS.PROVIDE_STORAGE_ONBOARDING),
     }),
   })
-}
-
-export const POST = withHubSpotResponseHandler(submitToHubSpot)
+})

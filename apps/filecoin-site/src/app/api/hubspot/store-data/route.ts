@@ -19,7 +19,7 @@ const hubspotFormsUrl = getHubspotFormsUrl(
   process.env.HUBSPOT_STORE_DATA_FORM_ID,
 )
 
-async function submitToHubSpot(request: NextRequest) {
+export const POST = withHubSpotResponseHandler(async (request: NextRequest) => {
   const body = await request.json()
   const data = RequestSchema.parse(body)
   const mappedData = {
@@ -40,6 +40,4 @@ async function submitToHubSpot(request: NextRequest) {
       context: getContext(PATHS.STORE_DATA_TALK_TO_EXPERT),
     }),
   })
-}
-
-export const POST = withHubSpotResponseHandler(submitToHubSpot)
+})

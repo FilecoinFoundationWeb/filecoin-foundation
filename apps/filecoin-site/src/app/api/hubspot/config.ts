@@ -16,7 +16,7 @@ const HUBSPOT_FORM_API_BASE_URL =
 type fetcherFn = (request: NextRequest) => Promise<Response>
 
 export function withHubSpotResponseHandler(fetcherFn: fetcherFn) {
-  return async function POST(request: NextRequest) {
+  return async function handler(request: NextRequest) {
     try {
       const response = await fetcherFn(request)
       const responseBody = await response.json()
@@ -43,7 +43,7 @@ export function withHubSpotResponseHandler(fetcherFn: fetcherFn) {
 
 export function getHubspotFormsUrl(formId?: string) {
   if (!process.env.HUBSPOT_PORTAL_ID) {
-    throw new Error('HUBSPOT_PORTAL_ID  is not set')
+    throw new Error('HUBSPOT_PORTAL_ID is not set')
   }
 
   if (!formId) {
