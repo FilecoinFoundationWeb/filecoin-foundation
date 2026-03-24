@@ -40,7 +40,7 @@ export function ControlledFormRadioGroup<FormValues extends FieldValues>({
       render={({ field: { value, onChange, onBlur } }) => (
         <FormRadioGroup
           {...rest}
-          value={value}
+          value={value ?? ''}
           onChange={onChange}
           onBlur={onBlur}
           error={errors[name]?.message?.toString()}
