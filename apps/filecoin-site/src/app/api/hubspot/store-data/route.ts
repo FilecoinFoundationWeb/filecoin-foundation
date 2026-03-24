@@ -1,31 +1,24 @@
-import path from 'node:path'
-
 import { type NextRequest } from 'next/server'
 
 import { PATHS } from '@/constants/paths'
 
-import { HUBSPOT_FORM_API_BASE_URL } from '../config'
+import { getHubspotFormsUrl } from '../config'
 
 import { createStoreDataFormSchema } from '@/store-data/talk-to-expert/schema/StoreDataFormSchema'
 
 const RequestSchema = createStoreDataFormSchema()
+
+const hubspotFormsUrl = getHubspotFormsUrl({
+  portalId: process.env.HUBSPOT_PORTAL_ID,
+  formId: process.env.HUBSPOT_STORE_DATA_FORM_ID,
+})
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const data = RequestSchema.parse(body)
 
-    const portalId = process.env.HUBSPOT_PORTAL_ID
-    const formId = process.env.HUBSPOT_STORE_DATA_FORM_ID
-    if (!portalId || !formId) {
-      throw new Error(
-        'HUBSPOT_PORTAL_ID or HUBSPOT_STORE_DATA_FORM_ID is not set',
-      )
-    }
-
-    const hubspotUrl = path.join(HUBSPOT_FORM_API_BASE_URL, portalId, formId)
-
-    const response = await fetch(hubspotUrl, {
+    const response = await fetch(hubspotFormsUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
