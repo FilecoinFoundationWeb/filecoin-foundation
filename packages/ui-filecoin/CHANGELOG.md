@@ -1,5 +1,17 @@
 # @filecoin-foundation/ui-filecoin
 
+## 0.9.0
+
+### Minor Changes
+
+- e7d2822: Rename gradientMode to gradientVariant in LogoSection; make gradientVariant required
+
+## 0.8.7
+
+### Patch Changes
+
+- 5161d64: Replace text button with Play/Pause icon button in CarouselAutoScrollControls
+
 ## 0.8.6
 
 ### Patch Changes

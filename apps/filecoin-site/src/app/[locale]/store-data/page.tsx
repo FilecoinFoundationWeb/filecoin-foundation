@@ -64,6 +64,7 @@ export default async function StoreData() {
           headingTag="h2"
           title={t('trustedBy.title')}
           logos={trustedByLogos}
+          gradientVariant="dark"
         />
       </PageSection>
 
