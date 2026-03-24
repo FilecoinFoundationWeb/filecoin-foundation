@@ -34,7 +34,10 @@ export async function POST(request: NextRequest) {
           { name: 'lastname', value: data.lastName },
           { name: 'email', value: data.businessEmail },
           { name: 'company', value: data.companyName },
-          { name: 'additional_info', value: `Data volume: ${data.dataVolume}` },
+          {
+            name: 'how_much_data_are_you_looking_to_store',
+            value: data.dataVolume,
+          },
         ],
         legalConsentOptions: {
           consent: {
@@ -43,7 +46,6 @@ export async function POST(request: NextRequest) {
             communications: [
               {
                 value: data.communicationOptIn,
-                subscriptionTypeId: 2233676376,
                 text: `I ${data.communicationOptIn ? '' : 'do not'} agree to receive other communications from Filecoin.`,
               },
             ],

@@ -43,7 +43,6 @@ export async function POST(request: NextRequest) {
             communications: [
               {
                 value: data.communicationOptIn,
-                subscriptionTypeId: 2233676376,
                 text: `I ${data.communicationOptIn ? '' : 'do not '}agree to receive other communications from Filecoin.`,
               },
             ],
