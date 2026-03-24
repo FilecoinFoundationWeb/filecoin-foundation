@@ -2,16 +2,6 @@
   "$schema": "https://turbo.build/schema.json",
   "globalEnv": ["CI", "NEXT_RUNTIME", "NODE_ENV"],
   "tasks": {
-    "build:ci": {
-      "dependsOn": ["^build"],
-      "inputs": [
-        "$TURBO_DEFAULT$",
-        ".env.production.local",
-        ".env.production",
-        ".env"
-      ],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
-    },
     "build": {
       "dependsOn": ["^build"],
       "inputs": [
