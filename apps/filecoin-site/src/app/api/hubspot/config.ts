@@ -55,3 +55,7 @@ export function getContext(path: PathConfig) {
     pageName: path.label,
   }
 }
+
+export function getSubmittedAt() {
+  return Date.now().toString()
+}

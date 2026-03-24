@@ -7,6 +7,7 @@ import {
   getFields,
   getHubspotFormsUrl,
   getLegalConsentOptions,
+  getSubmittedAt,
 } from '../config'
 
 import { createProvideStorageFormSchema } from '@/provide-storage/onboarding/schema/ProvideStorageFormSchema'
@@ -27,6 +28,7 @@ export async function POST(request: NextRequest) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        submittedAt: getSubmittedAt(),
         fields: getFields({
           firstname: data.firstName,
           lastname: data.lastName,
