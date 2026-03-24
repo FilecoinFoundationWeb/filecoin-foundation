@@ -49,6 +49,10 @@ export const PATHS = {
     path: '/provide-storage',
     label: 'Provide Storage',
   },
+  STORE_DATA_TALK_TO_EXPERT: {
+    path: '/store-data/talk-to-expert',
+    label: 'Talk to an Expert',
+  },
   PROVIDE_STORAGE_ONBOARDING: {
     path: '/provide-storage/onboarding',
     label: 'Onboarding',

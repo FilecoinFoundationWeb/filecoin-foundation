@@ -686,6 +686,43 @@
       "bookCall": "预约入驻团队通话"
     }
   },
+  "/store-data/talk-to-expert": {
+    "metadata": {
+      "title": "咨询 Filecoin 存储专家",
+      "description": "分享您的详细信息，我们的团队将帮助您评估最适合您用例的 Filecoin 存储解决方案。"
+    },
+    "heading": "咨询 Filecoin 存储专家。",
+    "description": "请在下方填写一些信息，我们的团队将帮助您评估最适合您用例的存储解决方案。",
+    "form": {
+      "firstName": {
+        "label": "名字",
+        "placeholder": "明",
+        "error": "请输入您的名字"
+      },
+      "lastName": {
+        "label": "姓氏",
+        "placeholder": "张",
+        "error": "请输入您的姓氏"
+      },
+      "businessEmail": {
+        "label": "企业邮箱地址",
+        "placeholder": "alex@company.com",
+        "errorInvalid": "企业邮箱格式无效",
+        "errorRequired": "请输入企业邮箱"
+      },
+      "companyName": {
+        "label": "公司名称",
+        "placeholder": "示例公司",
+        "error": "请输入公司名称"
+      },
+      "dataVolume": {
+        "label": "您需要存储多少数据？",
+        "error": "请选择数据量"
+      },
+      "communicationOptIn": "我同意接收来自 Protocol Labs 和 Filecoin Foundation 的其他通信。您可以随时取消订阅。",
+      "submit": "提交"
+    }
+  },
   "/provide-storage/onboarding": {
     "metadata": {
       "title": "成为 Filecoin 存储提供者 | 入驻指南",
@@ -780,5 +817,8 @@
     "next": "下一页",
     "navAriaLabel": "分页导航",
     "goToPage": "前往第{page}页"
+  },
+  "privacyDisclaimer": {
+    "text": "我们希望不时就我们的产品和服务以及其他您可能感兴趣的内容与您联系。请查阅 <privacyPolicyLink>Filecoin 基金会隐私政策</privacyPolicyLink> 以了解更多关于我们隐私实践的信息。"
   }
 }

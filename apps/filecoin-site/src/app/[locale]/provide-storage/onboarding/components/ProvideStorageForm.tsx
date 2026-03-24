@@ -9,12 +9,13 @@ import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
 import { ControlledFormTextarea } from '@filecoin-foundation/ui/FormTextarea'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 
+import { PrivacyDisclaimer } from '@/components/PrivacyDisclaimer'
+
 import {
   ProvideStorageFormSchema,
   type ProvideStorageFormData,
 } from '../../schema/ProvideStorageFormSchema'
 
-import { ProvideStoragePrivacyDisclaimer } from './ProvideStoragePrivacyDisclaimer'
 
 export function ProvideStorageForm() {
   const form = useForm<ProvideStorageFormData>({
@@ -73,7 +74,7 @@ export function ProvideStorageForm() {
       </div>
 
       <div className="space-y-8">
-        <ProvideStoragePrivacyDisclaimer />
+        <PrivacyDisclaimer />
 
         <ControlledFormCheckbox<ProvideStorageFormData>
           name="communicationOptIn"
