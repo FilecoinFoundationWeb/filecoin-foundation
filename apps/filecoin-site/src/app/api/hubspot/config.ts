@@ -26,6 +26,14 @@ export function getHubspotFormsUrl({ portalId, formId }: GetHubspotUrlParams) {
   return path.join(HUBSPOT_FORM_API_BASE_URL, portalId, formId)
 }
 
+export function getFields(obj: Record<string, unknown>) {
+  return Object.entries(obj).map(([name, value]) => ({
+    objectTypeId: '0-1',
+    name,
+    value,
+  }))
+}
+
 export function getLegalConsentOptions(optIn: boolean) {
   return {
     consent: {

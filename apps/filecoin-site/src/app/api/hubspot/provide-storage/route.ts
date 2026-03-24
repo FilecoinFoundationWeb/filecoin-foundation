@@ -4,6 +4,7 @@ import { PATHS } from '@/constants/paths'
 
 import {
   getContext,
+  getFields,
   getHubspotFormsUrl,
   getLegalConsentOptions,
 } from '../config'
@@ -26,13 +27,13 @@ export async function POST(request: NextRequest) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        fields: [
-          { name: 'firstname', value: data.firstName },
-          { name: 'lastname', value: data.lastName },
-          { name: 'email', value: data.businessEmail },
-          { name: 'company', value: data.companyName },
-          { name: 'additional_info', value: data.additionalInfo },
-        ],
+        fields: getFields({
+          firstname: data.firstName,
+          lastname: data.lastName,
+          email: data.businessEmail,
+          company: data.companyName,
+          additional_info: data.additionalInfo,
+        }),
         legalConsentOptions: getLegalConsentOptions(data.communicationOptIn),
         context: getContext(PATHS.PROVIDE_STORAGE_ONBOARDING),
       }),
