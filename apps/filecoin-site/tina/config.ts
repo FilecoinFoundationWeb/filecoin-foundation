@@ -5,7 +5,7 @@ import { PATHS } from '@/constants/paths'
 import { blogFields } from './schema/blog'
 
 export default defineConfig({
-  branch: process.env.VERCEL_GIT_COMMIT_REF || '',
+  branch: process.env.VERCEL_GIT_COMMIT_REF || 'main',
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
   token: process.env.TINA_TOKEN,
 

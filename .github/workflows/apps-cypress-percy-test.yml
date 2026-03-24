@@ -46,6 +46,8 @@ jobs:
       BASE_URL: "http://localhost:3000"
       ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
       NEXT_TELEMETRY_DISABLED: 1
+      NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_TINA_CLIENT_ID }}
+      TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
 
     steps:
       - name: Check out code
