@@ -13,11 +13,9 @@ import {
 import { createProvideStorageFormSchema } from '@/provide-storage/onboarding/schema/ProvideStorageFormSchema'
 
 const RequestSchema = createProvideStorageFormSchema()
-
-const hubspotFormsUrl = getHubspotFormsUrl({
-  portalId: process.env.HUBSPOT_PORTAL_ID,
-  formId: process.env.HUBSPOT_PROVIDE_STORAGE_FORM_ID,
-})
+const hubspotFormsUrl = getHubspotFormsUrl(
+  process.env.HUBSPOT_PROVIDE_STORAGE_FORM_ID,
+)
 
 export async function POST(request: NextRequest) {
   try {

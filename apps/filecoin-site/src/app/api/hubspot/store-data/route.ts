@@ -14,10 +14,9 @@ import { createStoreDataFormSchema } from '@/store-data/talk-to-expert/schema/St
 
 const RequestSchema = createStoreDataFormSchema()
 
-const hubspotFormsUrl = getHubspotFormsUrl({
-  portalId: process.env.HUBSPOT_PORTAL_ID,
-  formId: process.env.HUBSPOT_STORE_DATA_FORM_ID,
-})
+const hubspotFormsUrl = getHubspotFormsUrl(
+  process.env.HUBSPOT_STORE_DATA_FORM_ID,
+)
 
 export async function POST(request: NextRequest) {
   try {
