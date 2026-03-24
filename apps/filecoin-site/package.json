@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "build": "tinacms build && npm run generate-rss && next build --webpack",
+    "build:ci": "npm run generate-rss && next build --webpack",
     "dev": "next dev --webpack",
     "generate-rss": "tsx scripts/generateRSS.ts",
     "lint": "eslint src --fix",

@@ -63,7 +63,7 @@ jobs:
 
       - name: Build Project
         working-directory: .
-        run: npx turbo run build --filter="./apps/${{ matrix.app }}"
+        run: npx turbo run build:ci --filter="./apps/${{ matrix.app }}"
 
       - name: Start server (prod) on :3000
         run: |
