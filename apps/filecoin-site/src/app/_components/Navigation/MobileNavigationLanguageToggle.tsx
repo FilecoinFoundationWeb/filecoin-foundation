@@ -5,12 +5,12 @@ import { routing } from '@/i18n/routing'
 import { Button } from '@headlessui/react'
 import { clsx } from 'clsx'
 
-import { desktopStyle } from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMainLink'
+import { mobileStyle } from '@filecoin-foundation/ui-filecoin/Navigation/NavigationMainLink'
 
 import { LANGUAGES } from './constants/languages'
 import { useLanguageToggle } from './hooks/useLanguageToggle'
 
-export function NavigationLanguageToggle() {
+export function MobileNavigationLanguageToggle() {
   const { currentLocale, switchLocale } = useLanguageToggle()
 
   return (
@@ -24,7 +24,7 @@ export function NavigationLanguageToggle() {
             type="button"
             aria-label={`Switch site language to ${name}`}
             aria-current={currentLocale === locale}
-            className={clsx(desktopStyle, 'cursor-pointer')}
+            className={clsx(mobileStyle, 'cursor-pointer')}
             onClick={() => switchLocale(locale)}
           >
             {label}

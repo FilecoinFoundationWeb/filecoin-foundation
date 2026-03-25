@@ -19,11 +19,13 @@ type HomeLogoIconLinkProps = {
 export type MobileNavigationProps = {
   items: Array<NavItem>
   HomeLogoIconLinkComponent: ComponentType<HomeLogoIconLinkProps>
+  Footer?: ComponentType
 }
 
 export function MobileNavigation({
   items,
   HomeLogoIconLinkComponent,
+  Footer,
 }: MobileNavigationProps) {
   const [open, setOpen] = useState(false)
   const { theme } = useBackground()
@@ -66,6 +68,7 @@ export function MobileNavigation({
               </li>
             ))}
           </ul>
+          {Footer && <div className="mt-auto">{<Footer />}</div>}
         </div>
       </SlideOver>
     </div>
