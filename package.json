@@ -20,10 +20,10 @@
     "publish": "changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.8",
-    "glob": "^13.0.3",
+    "@changesets/cli": "^2.30.0",
+    "glob": "^13.0.6",
     "husky": "^9.1.7",
-    "markdownlint-cli2": "^0.20.0",
+    "markdownlint-cli2": "^0.22.0",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "syncpack": "^13.0.4",
