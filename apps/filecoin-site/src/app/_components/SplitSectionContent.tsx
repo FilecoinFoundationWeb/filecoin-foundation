@@ -1,5 +1,3 @@
-import { clsx } from 'clsx'
-
 import {
   ButtonRow,
   type ButtonRowProps,
@@ -12,8 +10,6 @@ type SideBySideContentProps = {
   cta?: ButtonRowProps['buttons']
 }
 
-const padding = 'pb-15 md:pr-15'
-
 export function SplitSectionContent({
   title,
   description,
@@ -24,8 +20,8 @@ export function SplitSectionContent({
     : [description]
 
   return (
-    <div className="grid grid-cols-12">
-      <div className={clsx('col-span-12 xl:col-span-4', padding)}>
+    <div className="flex flex-col gap-15 pr-0 sm:pr-15 lg:flex-row lg:gap-30">
+      <div className="min-w-xs">
         <Heading
           tag="h3"
           className="font-sans text-2xl/8.5 text-(--color-subheading-text-muted)"
@@ -34,8 +30,8 @@ export function SplitSectionContent({
         </Heading>
       </div>
 
-      <div className="col-span-12 flex flex-col xl:col-span-8">
-        <div className={clsx('space-y-6', padding)}>
+      <div className="space-y-15">
+        <div className="space-y-6">
           {descriptionArray.map((item, index) => (
             <p key={index} className="text-xl/7 text-pretty">
               {item}
