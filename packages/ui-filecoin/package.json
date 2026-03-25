@@ -375,10 +375,10 @@
   "peerDependencies": {
     "@tailwindcss/typography": "^0.5.19",
     "@tanstack/react-table": "^8.21.3",
-    "next": "^16.1.7",
-    "nuqs": "^2.8.8",
+    "next": "^16.2.1",
+    "nuqs": "^2.8.9",
     "react": "^19.2.4",
-    "swr": "^2.4.0",
+    "swr": "^2.4.1",
     "tailwindcss": "^4.1.18"
   }
 }
