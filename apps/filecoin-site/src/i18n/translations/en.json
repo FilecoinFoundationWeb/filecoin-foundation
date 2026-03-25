@@ -734,8 +734,7 @@
       "communicationOptIn": "I agree to receive other communications from Protocol Labs and Filecoin Foundation. You may unsubscribe from these communications at any time.",
       "submit": "Submit",
       "successMessage": "Your request has been submitted. Our team will be in touch soon.",
-      "errorMessage": "Something went wrong. Please try again.",
-      "errorOccurred": "An error has occurred. Please try again."
+      "errorMessage": "Something went wrong. Please try again."
     }
   },
   "/provide-storage/onboarding": {
@@ -774,8 +773,7 @@
       "communicationOptIn": "I agree to receive other communications from Protocol Labs and Filecoin Foundation. You may unsubscribe from these communications at any time.",
       "submit": "Book onboarding call",
       "successMessage": "Your request has been submitted. Our team will be in touch soon.",
-      "errorMessage": "Something went wrong. Please try again.",
-      "errorOccurred": "An error has occurred. Please try again."
+      "errorMessage": "Something went wrong. Please try again."
     }
   },
   "navigation": {
@@ -843,7 +841,7 @@
     "alreadySubscribed": "You are already subscribed to the Filecoin newsletter.",
     "errorGeneric": "Something went wrong. Please try again.",
     "successMessage": "Check your email to confirm your subscription.",
-    "errorOccurred": "An error has occurred. Please try again."
+    "errorMessage": "An error has occurred. Please try again."
   },
   "storageProviderCard": {
     "from": "From",

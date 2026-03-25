@@ -55,7 +55,7 @@ export function useNewsletterForm() {
       form.resetField('email')
     } catch (err) {
       dialog.open({
-        message: t('errorOccurred'),
+        message: t('errorMessage'),
         duration: NOTIFICATION_DIALOG_ERROR_DURATION_MS,
         icon: { component: XCircleIcon, color: 'error' },
       })
