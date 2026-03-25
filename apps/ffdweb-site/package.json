@@ -31,7 +31,7 @@
     "gray-matter": "^4.0.3",
     "next": "^16.2.1",
     "next-plausible": "^3.12.5",
-    "nuqs": "^2.8.9",
+    "nuqs": "^2.8.8",
     "react": "^19.2.4",
     "react-markdown": "^10.1.0",
     "rehype-raw": "^7.0.0",
