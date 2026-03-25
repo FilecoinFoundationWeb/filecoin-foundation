@@ -67,15 +67,17 @@ export default async function ProvideStorage() {
               </Button>,
             ]}
           />
+        </PageSection>
+      </div>
 
-          <div className="mt-40">
-            <LogoSection
-              headingTag="h2"
-              title={t('logoSection.title')}
-              logos={storageProvidersLogos}
-              gradientVariant="dark"
-            />
-          </div>
+      <div className="mb-25">
+        <PageSection backgroundVariant="dark" paddingVariant="none">
+          <LogoSection
+            headingTag="h2"
+            title={t('logoSection.title')}
+            logos={storageProvidersLogos}
+            gradientVariant="dark"
+          />
         </PageSection>
       </div>
 
