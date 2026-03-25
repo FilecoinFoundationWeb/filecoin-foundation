@@ -20,7 +20,7 @@ export default async function TalkToExpertPage() {
   return (
     <>
       <Navigation backgroundVariant="light" />
-      <PageSection backgroundVariant="light" paddingVariant="topCompact">
+      <PageSection backgroundVariant="light">
         <div className="max-w-4xl">
           <Heading tag="h1" variant="section-heading">
             {t('heading')}

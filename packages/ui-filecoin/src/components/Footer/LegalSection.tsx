@@ -25,8 +25,8 @@ export function LegalSection({
   legalItems,
 }: LegalSectionProps) {
   return (
-    <div className="flex flex-col-reverse items-center justify-between gap-8 py-16 sm:flex-row md:gap-16">
-      <div className="flex items-center gap-4">
+    <div className="flex flex-col-reverse items-center justify-between gap-8 py-15 sm:flex-row md:gap-15">
+      <div className="flex items-center gap-3">
         <span className="text-xs text-white">{leadingText}</span>
 
         <div className="flex items-center gap-6">
