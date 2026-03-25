@@ -17,17 +17,16 @@ export function withHubSpotResponseHandler(fetcherFn: fetcherFn) {
   return async function handler(request: NextRequest) {
     try {
       const response = await fetcherFn(request)
-      const responseBody = await response.json()
 
       if (!response.ok) {
         return Response.json(
-          { error: responseBody?.errors?.toString() },
+          { error: 'Failed to submit form to HubSpot' },
           { status: response.status, statusText: response.statusText },
         )
       }
 
       return Response.json(
-        { data: responseBody?.inlineMessage },
+        { data: 'Form submitted successfully' },
         { status: 200, statusText: response.statusText },
       )
     } catch (error) {
