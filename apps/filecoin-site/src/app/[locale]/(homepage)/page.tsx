@@ -82,7 +82,7 @@ export default async function Home({ params }: BlogProps) {
         <GradientOverlay />
       </div>
 
-      <PageSection backgroundVariant="dark" paddingVariant="topCompact">
+      <PageSection backgroundVariant="dark" paddingVariant="topNone">
         <LogoSection
           headingTag="h2"
           title={t('trustedBy.title')}
