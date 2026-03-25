@@ -24,7 +24,7 @@ export const desktopStyle = clsx(
 
 export const mobileStyle = clsx(
   baseStyle,
-  'font-medium text-[var(--color-text-base)]',
+  'font-medium text-(--color-text-base)',
   TOUCH_TARGET.touchAreaPadding,
   TOUCH_TARGET.touchAreaOffset,
 )

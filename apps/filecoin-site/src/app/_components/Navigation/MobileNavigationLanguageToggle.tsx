@@ -14,7 +14,7 @@ export function MobileNavigationLanguageToggle() {
   const { currentLocale, switchLocale } = useLanguageToggle()
 
   return (
-    <div className="flex items-center gap-4 font-medium">
+    <div className="flex items-center gap-8 font-medium">
       {routing.locales.map((locale) => {
         const { label, name } = LANGUAGES[locale]
 
