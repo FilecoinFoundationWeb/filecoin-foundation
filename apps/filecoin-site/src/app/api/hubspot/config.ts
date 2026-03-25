@@ -38,13 +38,13 @@ export function withHubSpotResponseHandler(fetcherFn: fetcherFn) {
   }
 }
 
-export function getHubspotFormsUrl(formId?: string) {
+export function getHubSpotFormsUrl(formId?: string) {
   if (!process.env.HUBSPOT_PORTAL_ID) {
     throw new Error('HUBSPOT_PORTAL_ID is not set')
   }
 
   if (!formId) {
-    throw new Error('formId is missing in getHubspotFormsUrl')
+    throw new Error('formId is missing in getHubSpotFormsUrl')
   }
 
   return [

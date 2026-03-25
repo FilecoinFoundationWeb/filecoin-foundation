@@ -5,7 +5,7 @@ import { PATHS } from '@/constants/paths'
 import {
   getContext,
   getFields,
-  getHubspotFormsUrl,
+  getHubSpotFormsUrl,
   getLegalConsentOptions,
   getSubmittedAt,
   withHubSpotResponseHandler,
@@ -15,7 +15,7 @@ import { createProvideStorageFormSchema } from '@/provide-storage/onboarding/sch
 
 const RequestSchema = createProvideStorageFormSchema()
 
-const hubspotFormsUrl = getHubspotFormsUrl(
+const hubspotFormsUrl = getHubSpotFormsUrl(
   process.env.HUBSPOT_PROVIDE_STORAGE_FORM_ID,
 )
 

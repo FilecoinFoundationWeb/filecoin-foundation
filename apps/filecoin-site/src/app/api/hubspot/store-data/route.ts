@@ -5,7 +5,7 @@ import { PATHS } from '@/constants/paths'
 import {
   getContext,
   getFields,
-  getHubspotFormsUrl,
+  getHubSpotFormsUrl,
   getLegalConsentOptions,
   getSubmittedAt,
   withHubSpotResponseHandler,
@@ -15,7 +15,7 @@ import { createStoreDataFormSchema } from '@/store-data/talk-to-expert/schema/St
 
 const RequestSchema = createStoreDataFormSchema()
 
-const hubspotFormsUrl = getHubspotFormsUrl(
+const hubspotFormsUrl = getHubSpotFormsUrl(
   process.env.HUBSPOT_STORE_DATA_FORM_ID,
 )
 
