@@ -20,10 +20,10 @@
     "publish": "changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.8",
-    "glob": "^13.0.3",
+    "@changesets/cli": "^2.30.0",
+    "glob": "^13.0.6",
     "husky": "^9.1.7",
-    "markdownlint-cli2": "^0.20.0",
+    "markdownlint-cli2": "^0.22.0",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "syncpack": "^13.0.4",
@@ -33,5 +33,27 @@
     "dompurify": "^3.3.0",
     "jsonpath-plus": "^10.3.0"
   },
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "@percy/cli": "^1.31.10",
+    "@sentry/nextjs": "^10.45.0",
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^25.5.0",
+    "@unlighthouse/cli": "^0.17.7",
+    "@unlighthouse/core": "^0.17.7",
+    "@vercel/speed-insights": "^2.0.0",
+    "cypress": "^15.12.0",
+    "globals": "^17.4.0",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
+    "postcss": "^8.5.8",
+    "puppeteer": "^24.40.0",
+    "react-hook-form": "^7.72.0",
+    "react-lite-youtube-embed": "^3.5.1",
+    "slugify": "^1.6.8",
+    "swr": "^2.4.1",
+    "tailwindcss": "^4.2.2",
+    "viem": "^2.47.6",
+    "wagmi": "^3.5.0"
+  }
 }
