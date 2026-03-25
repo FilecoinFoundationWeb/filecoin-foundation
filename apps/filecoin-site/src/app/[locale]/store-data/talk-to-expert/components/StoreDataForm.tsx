@@ -1,20 +1,27 @@
 'use client'
 
+import { zodResolver } from '@hookform/resolvers/zod'
 import { useTranslations } from 'next-intl'
+import { useForm } from 'react-hook-form'
 
 import { ControlledForm } from '@filecoin-foundation/ui/Form'
 import { ControlledFormCheckbox } from '@filecoin-foundation/ui/FormCheckbox'
 import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
 import { ControlledFormRadioGroup } from '@filecoin-foundation/ui/FormRadioGroup'
-import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
+import {
+  NotificationDialog,
+  useNotificationDialog,
+} from '@filecoin-foundation/ui/NotificationDialog'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 
 import { PATHS } from '@/constants/paths'
 
+import { createHubSpotSubmitHandler } from '@/utils/createHubSpotSubmitHandler'
+
 import { PrivacyDisclaimer } from '@/components/PrivacyDisclaimer'
 
-import { useStoreDataForm } from '../hooks/useStoreDataForm'
 import {
+  createStoreDataFormSchema,
   dataVolumeOptions,
   type StoreDataFormSchema,
 } from '../schema/StoreDataFormSchema'
@@ -22,7 +29,31 @@ import {
 export function StoreDataForm() {
   const t = useTranslations(PATHS.STORE_DATA_TALK_TO_EXPERT.path + '.form')
 
-  const { form, isSubmitting, dialog, submitToHubSpot } = useStoreDataForm(t)
+  const schema = createStoreDataFormSchema({
+    firstNameRequired: t('firstName.error'),
+    lastNameRequired: t('lastName.error'),
+    companyNameRequired: t('companyName.error'),
+    businessEmailInvalid: t('businessEmail.errorInvalid'),
+    businessEmailRequired: t('businessEmail.errorRequired'),
+    dataVolumeRequired: t('dataVolume.error'),
+  })
+
+  const dialog = useNotificationDialog()
+
+  const form = useForm<StoreDataFormSchema>({
+    resolver: zodResolver(schema),
+    defaultValues: {
+      communicationOptIn: false,
+    },
+  })
+  const isSubmitting = form.formState.isSubmitting
+
+  const submitToHubSpot = createHubSpotSubmitHandler({
+    endpoint: '/api/hubspot/store-data',
+    dialog,
+    onSuccess: form.reset,
+    t,
+  })
 
   return (
     <ControlledForm<StoreDataFormSchema>

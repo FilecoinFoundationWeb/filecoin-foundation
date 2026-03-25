@@ -1,40 +1,27 @@
 import type { TranslationFunction } from '@/i18n/types'
 
-import { zodResolver } from '@hookform/resolvers/zod'
 import { CheckCircleIcon, XCircleIcon } from '@phosphor-icons/react'
 import * as Sentry from '@sentry/nextjs'
-import { useForm } from 'react-hook-form'
 
-import { useNotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
+import type { useNotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
 import { NOTIFICATION_DIALOG_ERROR_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
 
-import {
-  createStoreDataFormSchema,
-  type StoreDataFormSchema,
-} from '../schema/StoreDataFormSchema'
+type CreateHubSpotSubmitHandlerConfig = {
+  endpoint: `/api/hubspot/${string}`
+  dialog: ReturnType<typeof useNotificationDialog>
+  t: TranslationFunction
+  onSuccess?: () => void
+}
 
-export function useStoreDataForm(t: TranslationFunction) {
-  const dialog = useNotificationDialog()
-
-  const schema = createStoreDataFormSchema({
-    firstNameRequired: t('firstName.error'),
-    lastNameRequired: t('lastName.error'),
-    companyNameRequired: t('companyName.error'),
-    businessEmailInvalid: t('businessEmail.errorInvalid'),
-    businessEmailRequired: t('businessEmail.errorRequired'),
-    dataVolumeRequired: t('dataVolume.error'),
-  })
-
-  const form = useForm<StoreDataFormSchema>({
-    resolver: zodResolver(schema),
-    defaultValues: {
-      communicationOptIn: false,
-    },
-  })
-
-  async function submitToHubSpot(data: StoreDataFormSchema) {
+export function createHubSpotSubmitHandler({
+  endpoint,
+  dialog,
+  onSuccess,
+  t,
+}: CreateHubSpotSubmitHandlerConfig) {
+  return async (data: Record<string, unknown>) => {
     try {
-      const response = await fetch('/api/hubspot/store-data', {
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -56,7 +43,7 @@ export function useStoreDataForm(t: TranslationFunction) {
         message: t('successMessage'),
         icon: { component: CheckCircleIcon, color: 'success' },
       })
-      form.reset()
+      onSuccess?.()
     } catch (err) {
       dialog.open({
         message: t('errorMessage'),
@@ -65,12 +52,5 @@ export function useStoreDataForm(t: TranslationFunction) {
       })
       Sentry.captureException(err)
     }
-  }
-
-  return {
-    form,
-    dialog,
-    submitToHubSpot,
-    isSubmitting: form.formState.isSubmitting,
   }
 }

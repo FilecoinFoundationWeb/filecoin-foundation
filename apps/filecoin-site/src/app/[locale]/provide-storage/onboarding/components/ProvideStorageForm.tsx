@@ -1,26 +1,57 @@
 'use client'
 
+import { zodResolver } from '@hookform/resolvers/zod'
 import { useTranslations } from 'next-intl'
+import { useForm } from 'react-hook-form'
 
 import { ControlledForm } from '@filecoin-foundation/ui/Form'
 import { ControlledFormCheckbox } from '@filecoin-foundation/ui/FormCheckbox'
 import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
 import { ControlledFormTextarea } from '@filecoin-foundation/ui/FormTextarea'
-import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
+import {
+  NotificationDialog,
+  useNotificationDialog,
+} from '@filecoin-foundation/ui/NotificationDialog'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 
 import { PATHS } from '@/constants/paths'
 
+import { createHubSpotSubmitHandler } from '@/utils/createHubSpotSubmitHandler'
+
 import { PrivacyDisclaimer } from '@/components/PrivacyDisclaimer'
 
-import { useProvideStorageForm } from '../hooks/useProvideStorageForm'
-import { type ProvideStorageFormSchema } from '../schema/ProvideStorageFormSchema'
+import {
+  createProvideStorageFormSchema,
+  type ProvideStorageFormSchema,
+} from '../schema/ProvideStorageFormSchema'
 
 export function ProvideStorageForm() {
   const t = useTranslations(PATHS.PROVIDE_STORAGE_ONBOARDING.path + '.form')
 
-  const { form, isSubmitting, dialog, submitToHubSpot } =
-    useProvideStorageForm(t)
+  const schema = createProvideStorageFormSchema({
+    firstNameRequired: t('firstName.error'),
+    lastNameRequired: t('lastName.error'),
+    companyNameRequired: t('companyName.error'),
+    businessEmailInvalid: t('businessEmail.errorInvalid'),
+    businessEmailRequired: t('businessEmail.errorRequired'),
+  })
+
+  const dialog = useNotificationDialog()
+
+  const form = useForm<ProvideStorageFormSchema>({
+    resolver: zodResolver(schema),
+    defaultValues: {
+      communicationOptIn: false,
+    },
+  })
+  const isSubmitting = form.formState.isSubmitting
+
+  const submitToHubSpot = createHubSpotSubmitHandler({
+    endpoint: '/api/hubspot/provide-storage',
+    dialog,
+    onSuccess: form.reset,
+    t,
+  })
 
   return (
     <ControlledForm<ProvideStorageFormSchema>
