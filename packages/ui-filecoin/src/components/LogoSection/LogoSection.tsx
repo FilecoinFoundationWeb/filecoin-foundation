@@ -1,3 +1,5 @@
+'use client'
+
 import { type HeadingProps } from '../Heading'
 
 import { Carousel } from './Carousel/Carousel'
