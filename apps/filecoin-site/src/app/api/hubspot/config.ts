@@ -1,5 +1,3 @@
-import path from 'node:path'
-
 import type { NextRequest } from 'next/server'
 
 import type { PathConfig } from '@/constants/paths'
@@ -50,11 +48,11 @@ export function getHubspotFormsUrl(formId?: string) {
     throw new Error('formId is missing in getHubspotFormsUrl')
   }
 
-  return path.join(
+  return [
     HUBSPOT_FORM_API_BASE_URL,
     process.env.HUBSPOT_PORTAL_ID,
     formId,
-  )
+  ].join('/')
 }
 
 export function getFields(obj: Record<string, string>) {
