@@ -1,8 +1,10 @@
 import Image from 'next/image'
 
+import { ENGLISH_LOCALE } from '@/i18n/locales'
+
 import { clsx } from 'clsx'
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
@@ -37,6 +39,7 @@ import { getWhatIsFilecoinUsedFor } from './data/whatIsFilecoinUsedFor'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 export default async function Learn() {
+  const locale = await getLocale()
   const t = await getTranslations(PATHS.LEARN.path)
   const metadata = await getTranslatedMetadata(PATHS.LEARN.path)
 
@@ -120,7 +123,11 @@ export default async function Learn() {
           title={t('howDataMoves.title')}
           description={t('howDataMoves.description')}
         >
-          <SectionImage {...graphicsData.howDataMovesThroughFilecoin} />
+          <SectionImage
+            {...(locale === ENGLISH_LOCALE
+              ? { ...graphicsData.howDataMovesThroughFilecoin }
+              : { ...graphicsData.howDataMovesThroughFilecoinCn })}
+          />
         </SectionContent>
       </PageSection>
 
