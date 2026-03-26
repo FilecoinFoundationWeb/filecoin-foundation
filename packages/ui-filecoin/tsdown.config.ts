@@ -12,7 +12,5 @@ export default defineConfig({
   // `resolve` is passed through to rolldown-plugin-dts but not in tsdown's type defs
   dts: { resolve: privatePackages, eager: true } as object,
   fixedExtension: false,
-  deps: {
-    alwaysBundle: privatePackages,
-  },
+  noExternal: privatePackages,
 })
