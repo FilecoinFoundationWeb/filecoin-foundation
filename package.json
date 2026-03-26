@@ -12,8 +12,8 @@
   },
   "scripts": {
     "lint:md": "markdownlint-cli2 \"apps/**/*.md\" \"!**/node_modules/**\" --config .markdownlint.jsonc",
-    "check:versions": "syncpack list-mismatches",
-    "fix:versions": "syncpack fix-mismatches",
+    "check:versions": "syncpack lint",
+    "fix:versions": "syncpack fix",
     "prepare": "test \"$CI\" = \"true\" || husky",
     "changeset": "changeset add",
     "version": "changeset version",
