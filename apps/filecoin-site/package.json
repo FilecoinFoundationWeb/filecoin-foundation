@@ -64,7 +64,7 @@
     "eslint-plugin-only-warn": "^1.1.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.0",
-    "eslint-plugin-turbo": "^2.8.9",
+    "eslint-plugin-turbo": "^2.8.20",
     "globals": "^17.4.0",
     "tailwindcss": "^4.2.2",
     "tsx": "^4.21.0",
