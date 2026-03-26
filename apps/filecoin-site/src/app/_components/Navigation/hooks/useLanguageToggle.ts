@@ -1,5 +1,3 @@
-'use client'
-
 import { useRouter, usePathname } from '@/i18n/navigation'
 import { type Locale } from '@/i18n/types'
 
