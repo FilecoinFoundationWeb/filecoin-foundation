@@ -1,4 +1,4 @@
-import type { Locale } from 'next-intl'
+import type { Locale } from '@/i18n/types'
 
 type Languages = Record<Locale, { label: string; name: string }>
 
