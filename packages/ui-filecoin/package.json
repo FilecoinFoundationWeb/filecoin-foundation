@@ -354,7 +354,7 @@
     "slugify": "^1.6.8",
     "usehooks-ts": "^3.1.1",
     "viem": "^2.47.6",
-    "wagmi": "^3.5.0",
+    "wagmi": "^3.6.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
@@ -369,8 +369,8 @@
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
     "ts-jest": "^29.4.6",
-    "tsdown": "^0.20.3",
-    "typescript": "^5.9.3"
+    "tsdown": "^0.21.5",
+    "typescript": "^6.0.2"
   },
   "peerDependencies": {
     "@tailwindcss/typography": "^0.5.19",
