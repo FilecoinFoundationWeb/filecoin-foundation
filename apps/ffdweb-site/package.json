@@ -38,7 +38,7 @@
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.0",
     "remove-markdown": "^0.6.3",
-    "schema-dts": "^1.1.5",
+    "schema-dts": "^2.0.0",
     "tailwindcss": "^4.2.2",
     "tsx": "^4.21.0",
     "zod": "^4.3.6"
@@ -60,7 +60,7 @@
     "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import-x": "^4.15.1",
-    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-only-warn": "^1.2.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.0",
     "eslint-plugin-turbo": "^2.8.20",
