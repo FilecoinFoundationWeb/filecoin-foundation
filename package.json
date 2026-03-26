@@ -31,7 +31,9 @@
   },
   "overrides": {
     "dompurify": "^3.3.0",
-    "jsonpath-plus": "^10.3.0"
+    "jsonpath-plus": "^10.3.0",
+    "tinacms": "3.4.1",
+    "@tinacms/cli": "2.1.5"
   },
   "version": "0.0.1",
   "dependencies": {
