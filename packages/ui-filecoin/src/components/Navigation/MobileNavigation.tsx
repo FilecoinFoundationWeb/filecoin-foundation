@@ -68,7 +68,11 @@ export function MobileNavigation({
               </li>
             ))}
           </ul>
-          {Footer && <div className="mt-auto">{<Footer />}</div>}
+          {Footer && (
+            <div className="mt-auto">
+              <Footer />
+            </div>
+          )}
         </div>
       </SlideOver>
     </div>
