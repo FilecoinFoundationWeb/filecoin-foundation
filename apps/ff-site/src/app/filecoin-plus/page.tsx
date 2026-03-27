@@ -5,7 +5,6 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
-import { attributes as allocatorsAttributes } from '@/content/pages/filecoin-plus/allocators.md'
 import { attributes } from '@/content/pages/filecoin-plus/filecoin-plus.md'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -44,7 +43,7 @@ export default function FilPlus() {
         <CTAButtonGroup
           cta={[
             {
-              href: FIL_PLUS_URLS.dataCapApplication,
+              href: FIL_PLUS_URLS.dataCap.applicationDocs,
               text: 'Apply for DataCap',
             },
             {
@@ -79,7 +78,7 @@ export default function FilPlus() {
         <Button
           variant="ghost"
           className="sm:self-center"
-          href={FIL_PLUS_URLS.dataCapMetrics}
+          href={FIL_PLUS_URLS.dataCap.metrics}
         >
           View Fil+ Dashboard
         </Button>

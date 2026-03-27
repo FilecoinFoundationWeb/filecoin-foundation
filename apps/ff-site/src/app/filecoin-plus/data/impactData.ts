@@ -25,7 +25,7 @@ export const impactData: Array<ImpactData> = [
       "Becoming an allocator involves understanding the program's principles, submitting an application that outlines your background and evaluation approach, and participating in a transparent community review process.",
     ],
     cta: {
-      href: FIL_PLUS_URLS.allocators.blog,
+      href: FIL_PLUS_URLS.dataCap.allocatorsApplication,
       text: 'Apply to Become an Allocator',
     },
     image: graphicsData.filPlusAbout2,
@@ -38,7 +38,7 @@ export const impactData: Array<ImpactData> = [
       'When you accept deals backed by DataCap, your Quality Adjusted Power increases—improving your ability to earn block rewards. These deals often come from clients who are working on public-good projects and value long-term reliability.',
     ],
     cta: {
-      href: FIL_PLUS_URLS.documentation,
+      href: FIL_PLUS_URLS.dataCap.docs,
       text: 'Learn more about DataCap',
     },
     image: graphicsData.filPlusAbout1,

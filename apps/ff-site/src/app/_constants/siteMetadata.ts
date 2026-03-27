@@ -20,8 +20,14 @@ const FIL_PLUS_URLS = {
     rfa: 'https://blog.allocator.tech/2024/04/allocator-tech-blog.html',
     site: 'https://allocator.tech/',
   },
-  dataCapApplication: '#todo',
-  dataCapMetrics: 'https://datacapstats.io/',
+  dataCap: {
+    allocatorsApplication:
+      'https://github.com/filecoin-project/Allocator-Governance?tab=readme-ov-file#how-to-apply-to-become-an-allocator-of-datacap',
+    applicationDocs:
+      'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus#acquiring-datacap-for-clients-and-builders',
+    docs: 'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus#datacap',
+    metrics: 'https://datacapstats.io/',
+  },
   documentation:
     'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus',
   filPlusParticipants:
