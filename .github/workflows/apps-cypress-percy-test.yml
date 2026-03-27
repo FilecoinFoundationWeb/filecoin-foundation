@@ -45,6 +45,9 @@ jobs:
       AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
       BASE_URL: "http://localhost:3000"
       ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
+      HUBSPOT_PORTAL_ID: "a-random-key-so-that-ci-builds-dont-fail"
+      HUBSPOT_PROVIDE_STORAGE_FORM_ID: "a-random-key-so-that-ci-builds-dont-fail"
+      HUBSPOT_STORE_DATA_FORM_ID: "a-random-key-so-that-ci-builds-dont-fail"
       NEXT_TELEMETRY_DISABLED: 1
       NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_TINA_CLIENT_ID }}
       TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
