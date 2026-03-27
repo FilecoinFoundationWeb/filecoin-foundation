@@ -20,6 +20,7 @@ const FIL_PLUS_URLS = {
     rfa: 'https://blog.allocator.tech/2024/04/allocator-tech-blog.html',
     site: 'https://allocator.tech/',
   },
+  dataCapApplication: '#todo',
   dataCapMetrics: 'https://datacapstats.io/',
   documentation:
     'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus',
