@@ -26,7 +26,9 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { BasicStatisticCard } from '@/components/StatisticCard/BasicStatisticCard'
 
+import { ImpactCard } from './components/ImpactCard'
 import { aboutData } from './data/aboutData'
+import { impactData } from './data/impactData'
 import { statisticsData } from './data/statisticsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -62,6 +64,12 @@ export default function FilPlus() {
             </CardWithBadge>
           ))}
         </BadgeCardGrid>
+      </PageSection>
+
+      <PageSection kicker="Impact" title="Impact of Fil+">
+        {impactData.map((item, index) => (
+          <ImpactCard key={index} index={index} {...item} />
+        ))}
       </PageSection>
 
       <PageSection kicker="Metrics" title="Fil+ by the Numbers">
