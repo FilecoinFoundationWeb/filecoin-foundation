@@ -29,10 +29,11 @@ export function generateStructuredData(
         '@type': 'ListItem',
         position: index + 1,
         item: {
-          '@type': 'BlogPosting',
+          '@type': 'Article',
+          '@id': `${BASE_URL}${PATHS.FIL_PLUS_MONTHLY_UPDATES.path}/${update.slug}`,
           headline: update.title,
           description: update.description,
-          image: update.image && update.image.src,
+          image: update.image?.src,
           url: `${BASE_URL}${PATHS.FIL_PLUS_MONTHLY_UPDATES.path}/${update.slug}`,
           author: {
             '@type': 'Organization',
