@@ -54,7 +54,7 @@ export function YouTubeVideo({
         playerClass="sr-only"
         params={REMOVE_MORE_VIDEOS_SUGGESTIONS}
         webp={true}
-        poster="maxresdefault"
+        poster="hqdefault"
         wrapperClass="aspect-video cursor-pointer overflow-hidden opacity-50 [&:has(iframe)]:opacity-100"
         style={{
           backgroundImage: `url(${thumbnail_url})`,
