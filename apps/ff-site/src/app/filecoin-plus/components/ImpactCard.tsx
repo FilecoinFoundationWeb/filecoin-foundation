@@ -1,4 +1,7 @@
-
+import {
+  type DescriptionProps,
+  DescriptionText,
+} from '@filecoin-foundation/ui/DescriptionText'
 import { type HeadingProps, Heading } from '@filecoin-foundation/ui/Heading'
 import { type TagProps, TagLabel } from '@filecoin-foundation/ui/TagComponents'
 import {
@@ -14,7 +17,7 @@ import { AlternatingImageCard } from '@/components/AlternatingImageCard'
 export type ImpactData = {
   label: TagProps['children']
   title: HeadingProps['children']
-  description: string
+  description: DescriptionProps['children']
   cta: { href: SmartTextLinkProps['href']; text: string }
   image: StaticImageProps
 }
@@ -38,7 +41,8 @@ export function ImpactCard({
         <Heading tag="h3" variant="lg">
           {title}
         </Heading>
-        <p>{description}</p>
+
+        <DescriptionText>{description}</DescriptionText>
         <SmartTextLink href={cta.href} baseDomain={BASE_DOMAIN}>
           {cta.text}
         </SmartTextLink>

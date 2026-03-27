@@ -18,7 +18,8 @@ export const impactData: Array<ImpactData> = [
   },
   {
     label: 'For Allocators',
-    title: 'Support the integrity of the network by guiding how DataCap is distributed',
+    title:
+      'Support the integrity of the network by guiding how DataCap is distributed',
     description: [
       'Allocators are trusted community members who help decide which clients receive DataCap. This role is central to ensuring that Filecoin is used for storing meaningful, verifiable data rather than spam or low-quality content.',
       "Becoming an allocator involves understanding the program's principles, submitting an application that outlines your background and evaluation approach, and participating in a transparent community review process.",
@@ -36,7 +37,10 @@ export const impactData: Array<ImpactData> = [
       'For storage providers, Filecoin Plus offers a direct incentive to prioritize verified, high-value data.',
       'When you accept deals backed by DataCap, your Quality Adjusted Power increases—improving your ability to earn block rewards. These deals often come from clients who are working on public-good projects and value long-term reliability.',
     ],
-    cta: { href: FIL_PLUS_URLS.documentation, text: 'Learn more about DataCap' },
+    cta: {
+      href: FIL_PLUS_URLS.documentation,
+      text: 'Learn more about DataCap',
+    },
     image: graphicsData.filPlusAbout1,
   },
 ]
