@@ -3,7 +3,6 @@ import {
   type DescriptionProps,
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
-
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
 import { CTAButtonGroup } from './CTAButtonGroup'
@@ -25,7 +24,7 @@ export function CTASection({ title, description, cta }: CTASectionProps) {
           </Heading>
           <DescriptionText>{description}</DescriptionText>
         </div>
-        {cta && <CTAButtonGroup cta={cta} />}
+        {cta && <CTAButtonGroup cta={cta} layout="section" />}
       </div>
     </section>
   )

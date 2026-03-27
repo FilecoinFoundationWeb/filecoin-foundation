@@ -6,16 +6,22 @@ import { Button } from '@/components/Button'
 
 export type CTAButtonGroupProps = {
   cta: CTAProps | Array<CTAProps>
+  layout?: 'header' | 'section'
 }
 
-export function CTAButtonGroup({ cta }: CTAButtonGroupProps) {
+export function CTAButtonGroup({
+  cta,
+  layout = 'header',
+}: CTAButtonGroupProps) {
   const ctaArray = Array.isArray(cta) ? cta : [cta]
 
   const gridClasses = clsx(
     'grid gap-4',
     ctaArray.length === 1
       ? 'lg:grid-cols-1'
-      : 'sm:grid-cols-2 sm:gap-3 lg:grid-cols-1 lg:gap-4',
+      : layout === 'section'
+        ? 'gap-4 sm:grid-cols-2 sm:gap-3'
+        : 'sm:grid-cols-2 sm:gap-3 lg:grid-cols-1 lg:gap-4',
   )
 
   return (
