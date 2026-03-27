@@ -1,5 +1,11 @@
+import { CTALink } from '@filecoin-foundation/ui/CTALink'
+import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
+import { Heading } from '@filecoin-foundation/ui/Heading'
+import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
+
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { AlternatingImageCard } from '@/components/AlternatingImageCard'
 
@@ -26,21 +32,16 @@ export function ImpactCard({
   return (
     <AlternatingImageCard index={index} image={image} as="article">
       <div className="space-y-4">
-        <span className="inline-block rounded border border-brand-400 px-2 py-1 text-xs text-brand-300">
-          {label}
-        </span>
-        <h3 className="text-brand-100 text-xl font-bold">{title}</h3>
+        <TagLabel>{label}</TagLabel>
+        <Heading tag="h3" variant="xl">
+          {title}
+        </Heading>
         <div className="space-y-4">
-          {description.map((text, i) => (
-            <p key={i}>{text}</p>
-          ))}
+          <DescriptionText>{description}</DescriptionText>
         </div>
-        <a
-          href={cta.href}
-          className="text-brand-300 hover:text-brand-100 block transition-colors"
-        >
+        <CTALink href={cta.href} baseDomain={BASE_DOMAIN}>
           {cta.text}
-        </a>
+        </CTALink>
       </div>
     </AlternatingImageCard>
   )
