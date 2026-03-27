@@ -47,7 +47,7 @@ export default function FilPlus() {
       >
         <CTAButtonGroup
           cta={[
-            { href: '#', text: 'Apply for DataCap' },
+            { href: FIL_PLUS_URLS.dataCapApplication, text: 'Apply for DataCap' },
             {
               href: FIL_PLUS_URLS.documentation,
               text: 'Learn More About Filecoin Plus',
