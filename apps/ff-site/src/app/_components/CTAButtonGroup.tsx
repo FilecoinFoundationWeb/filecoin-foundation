@@ -20,7 +20,7 @@ export function CTAButtonGroup({
     ctaArray.length === 1
       ? 'lg:grid-cols-1'
       : layout === 'section'
-        ? 'gap-4 sm:grid-cols-2 sm:gap-3'
+        ? 'sm:grid-cols-2 sm:gap-3'
         : 'sm:grid-cols-2 sm:gap-3 lg:grid-cols-1 lg:gap-4',
   )
 
