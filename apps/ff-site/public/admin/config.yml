@@ -168,6 +168,14 @@ collections:
           - *header_config
           - *meta_config
 
+      - name: "fil-plus-monthly-updates"
+        label: "Filecoin Plus - Monthly Updates"
+        file: "apps/ff-site/src/content/pages/filecoin-plus/monthly-updates.md"
+        preview_path: "filecoin-plus/monthly-updates"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "blog"
         label: "Blog"
         file: "apps/ff-site/src/content/pages/blog.md"
@@ -406,6 +414,33 @@ collections:
         widget: "string"
         required: false
         hint: "URL of the Chinese translation of this post."
+      - *image_config
+      - name: "add-table-of-contents"
+        label: "Add a table of contents to this post?"
+        widget: "boolean"
+        required: false
+        hint: "The table of contents will include headings from h1 (#) to h3 (###). It will appear above the post content and below the header image, if present."
+      - *body_config
+      - *meta_config_with_title_fallback
+
+  - name: "fil_plus_monthly_updates"
+    label: "Fil+ Monthly Updates"
+    label_singular: "Fil+ Monthly Update"
+    folder: "apps/ff-site/src/content/filecoin-plus/monthly-updates/"
+    preview_path: "filecoin-plus/monthly-updates/{{slug}}"
+    create: true
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - *created_on
+      - *updated_on
+      - *published_on
+      - name: "description"
+        label: "Description"
+        widget: "text"
       - *image_config
       - name: "add-table-of-contents"
         label: "Add a table of contents to this post?"
