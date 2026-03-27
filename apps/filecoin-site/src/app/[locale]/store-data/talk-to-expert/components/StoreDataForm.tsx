@@ -110,7 +110,7 @@ export function StoreDataForm() {
       </div>
 
       <div className="grid md:block">
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" disabled={isSubmitting}>
           {t('submit')}
         </Button>
       </div>
