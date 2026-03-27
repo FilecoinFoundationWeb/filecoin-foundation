@@ -27,7 +27,6 @@ import { PageSection } from '@/components/PageSection'
 import { BasicStatisticCard } from '@/components/StatisticCard/BasicStatisticCard'
 
 import { aboutData } from './data/aboutData'
-import { applicationData } from './data/applicationData'
 import { statisticsData } from './data/statisticsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -62,47 +61,6 @@ export default function FilPlus() {
               <Badge number={step} />
             </CardWithBadge>
           ))}
-        </BadgeCardGrid>
-      </PageSection>
-
-      <PageSection
-        kicker="Allocators"
-        title={allocatorsHeader.title}
-        description={allocatorsHeader.description}
-        image={graphicsData.filPlusAllocators}
-        cta={{
-          href: PATHS.ALLOCATORS.path,
-          text: 'Allocators List',
-        }}
-      />
-
-      <PageSection kicker="Allocator Application" title="Become an Allocator">
-        <p className="max-w-readable mb-2">
-          An allocator’s primary responsibilities include allocating DataCap,
-          ensuring trust and compliance, and participating in community
-          governance. For a full list of instructions on how to become an
-          allocator, please visit{' '}
-          <MarkdownContent.Link href={FIL_PLUS_URLS.allocators.blog}>
-            {extractDomain(FIL_PLUS_URLS.allocators.blog)}
-          </MarkdownContent.Link>
-          . We are currently prioritizing new allocators that are developing
-          pathways according to our{' '}
-          <MarkdownContent.Link href={FIL_PLUS_URLS.allocators.rfa}>
-            Request for Allocators (RFA)
-          </MarkdownContent.Link>
-          .
-        </p>
-
-        <BadgeCardGrid cols="smThree">
-          {applicationData.map((item) => {
-            const { step, title, description } = item
-
-            return (
-              <CardWithBadge key={step} title={title} description={description}>
-                <Badge number={step} />
-              </CardWithBadge>
-            )
-          })}
         </BadgeCardGrid>
       </PageSection>
 
