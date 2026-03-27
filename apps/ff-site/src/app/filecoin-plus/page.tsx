@@ -1,6 +1,9 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
+import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
@@ -15,6 +18,7 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { Button } from '@/components/Button'
+import { Card } from '@/components/Card'
 import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
@@ -27,11 +31,17 @@ import { ImpactCard } from './components/ImpactCard'
 import { aboutData } from './data/aboutData'
 import { impactData } from './data/impactData'
 import { statisticsData } from './data/statisticsData'
+import { getMonthlyUpdatesData } from './monthly-updates/utils/getMonthlyUpdateData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
-export default function FilPlus() {
+export default async function FilPlus() {
+  const latestUpdates = getFeaturedBlogPosts({
+    posts: await getMonthlyUpdatesData(),
+    limit: 4,
+  })
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
@@ -85,6 +95,51 @@ export default function FilPlus() {
       </PageSection>
 
       <FaqSection />
+
+      {latestUpdates.length > 0 && (
+        <PageSection
+          kicker="Stay Updated"
+          title="Monthly Updates"
+          description="The latest updates and announcements from the Filecoin Plus program."
+        >
+          <CardGrid as="section" cols="smTwo">
+            {latestUpdates.map(
+              ({ slug, title, description, image, publishedOn }) => (
+                <Card
+                  key={slug}
+                  as="article"
+                  metaData={[formatDate(publishedOn)]}
+                  description={{ text: description, isClamped: true }}
+                  cta={{
+                    href: `${PATHS.FIL_PLUS_MONTHLY_UPDATES.path}/${slug}`,
+                    text: 'Read Update',
+                  }}
+                  image={{
+                    ...(image || graphicsData.imageFallback.data),
+                    alt: '',
+                    objectFit: 'cover',
+                    sizes: buildImageSizeProp({
+                      startSize: '100vw',
+                      sm: '350px',
+                      md: '480px',
+                    }),
+                  }}
+                  title={{
+                    text: title,
+                  }}
+                />
+              ),
+            )}
+          </CardGrid>
+
+          <Button
+            className="sm:self-center"
+            href={PATHS.FIL_PLUS_MONTHLY_UPDATES.path}
+          >
+            View All
+          </Button>
+        </PageSection>
+      )}
 
       <CTASection
         title="Get Started"
