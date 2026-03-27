@@ -506,22 +506,22 @@
       "buildDecentralizedFileStorageApp": {
         "title": "构建去中心化文件存储应用",
         "description": "分步教程：如何使用 Filecoin 和 Synapse SDK 构建去中心化存储应用。",
-        "cta": "了解更多"
+        "cta": "使用 Filecoin 构建文件存储应用"
       },
       "filecoinPinDeveloperGuide": {
         "title": "Filecoin Pin 开发者指南",
         "description": "全面介绍 Filecoin Pin 以及 Web 开发者如何用它将数据存储在去中心化基础设施上。",
-        "cta": "了解更多"
+        "cta": "阅读 Filecoin Pin 开发者指南"
       },
       "trustlessAiAgentsWithFilecoin": {
         "title": "基于 Filecoin 的无信任 AI 智能体",
         "description": "了解如何将 AI 智能体与去中心化存储结合，构建可验证的 AI 系统。",
-        "cta": "了解更多"
+        "cta": "使用 Filecoin 构建无信任 AI 智能体"
       },
       "filecoinOnchainCloudExplained": {
         "title": "Filecoin Onchain Cloud 解读",
         "description": "概述支撑 Filecoin 开发者基础设施的去中心化云技术栈与服务。",
-        "cta": "了解更多"
+        "cta": "探索 Filecoin Onchain Cloud"
       }
     },
     "buildWithFilecoinOnchainCloud": {

@@ -39,7 +39,7 @@ export function StorageProviderPricePerMonth({
         {t('from')}
         <PriceDisplay value={formattedPrice} /> {monthlyStorageRate}
       </div>
-      {offer && <span className="text-brand-700 text-sm">{offer}</span>}
+      {offer && <span className="text-brand-800 text-sm">{offer}</span>}
     </div>
   )
 }
