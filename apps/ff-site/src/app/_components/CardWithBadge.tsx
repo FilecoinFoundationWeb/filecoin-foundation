@@ -2,7 +2,7 @@ import { Heading } from '@filecoin-foundation/ui/Heading'
 
 import type { BadgeProps } from '@/components/Badge'
 
-type CardWithBadgeProps = {
+export type CardWithBadgeProps = {
   title: string
   description: string | React.ReactNode
   children: React.ReactElement<BadgeProps>
