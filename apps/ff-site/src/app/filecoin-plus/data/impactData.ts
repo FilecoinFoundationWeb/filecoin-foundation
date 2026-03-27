@@ -3,7 +3,9 @@ import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
-export const impactData = [
+import type { ImpactData } from '../components/ImpactCard'
+
+export const impactData: Array<ImpactData> = [
   {
     label: 'For Clients',
     title: 'Store valuable data with more trust',

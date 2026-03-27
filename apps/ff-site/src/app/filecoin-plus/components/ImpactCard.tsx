@@ -1,10 +1,19 @@
+import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
+import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
+
 import { AlternatingImageCard } from '@/components/AlternatingImageCard'
 
-import type { impactData } from '../data/impactData'
+export type ImpactData = {
+  label: string
+  title: string
+  description: Array<string>
+  cta: CTAProps
+  image: StaticImageProps
+}
 
 type ImpactCardProps = {
   index: number
-} & (typeof impactData)[number]
+} & ImpactData
 
 export function ImpactCard({
   index,
