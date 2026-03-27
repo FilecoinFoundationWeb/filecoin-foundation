@@ -1,3 +1,4 @@
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
@@ -16,15 +17,18 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
+import { Button } from '@/components/Button'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
-import { PageHeader } from '@/components/PageHeader'
 import { MarkdownContent } from '@/components/MarkdownContent'
+import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { BasicStatisticCard } from '@/components/StatisticCard/BasicStatisticCard'
 
 import { aboutData } from './data/aboutData'
 import { applicationData } from './data/applicationData'
+import { statisticsData } from './data/statisticsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
@@ -100,6 +104,22 @@ export default function FilPlus() {
             )
           })}
         </BadgeCardGrid>
+      </PageSection>
+
+      <PageSection kicker="Metrics" title="Fil+ by the Numbers">
+        <CardGrid as="ul" cols="smThree">
+          {statisticsData.map((statistic, index) => (
+            <BasicStatisticCard key={index} {...statistic} />
+          ))}
+        </CardGrid>
+
+        <Button
+          variant="ghost"
+          className="sm:self-center"
+          href={FIL_PLUS_URLS.dataCapMetrics}
+        >
+          View Fil+ Dashboard
+        </Button>
       </PageSection>
 
       <PageSection kicker="Frequently Asked Questions" title="FAQs">
