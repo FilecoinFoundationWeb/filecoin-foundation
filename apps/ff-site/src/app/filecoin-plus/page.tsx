@@ -20,6 +20,7 @@ import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { Button } from '@/components/Button'
 import { CardWithBadge } from '@/components/CardWithBadge'
+import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -42,9 +43,15 @@ export default function FilPlus() {
         description={{ text: header.description }}
         image={graphicsData.filPlus}
       >
-        <Button href={FIL_PLUS_URLS.documentation}>
-          Learn More About Fil+
-        </Button>
+        <CTAButtonGroup
+          cta={[
+            { href: '#', text: 'Apply for DataCap' },
+            {
+              href: FIL_PLUS_URLS.documentation,
+              text: 'Learn More About Filecoin Plus',
+            },
+          ]}
+        />
       </PageHeader>
 
       <PageSection kicker="About" title="How Fil+ Works">
