@@ -103,12 +103,12 @@ export default function FilPlus() {
       </PageSection>
 
       <CTASection
-        title="Explore DataCap Projects"
-        description="Discover the projects that apply for and receive DataCap, review the details of their applications, and find out who the allocators are."
-        cta={{
-          text: 'DataCap Metrics for Allocators',
-          href: FIL_PLUS_URLS.dataCapMetrics,
-        }}
+        title="Get Started"
+        description="Find the right Allocator to support your storage needs or learn more about Filecoin Plus."
+        cta={[
+          { text: 'Find an Allocator', href: PATHS.ALLOCATORS.path },
+          { text: 'Learn More', href: FIL_PLUS_URLS.documentation },
+        ]}
       />
     </PageLayout>
   )
