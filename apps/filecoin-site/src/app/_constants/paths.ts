@@ -6,7 +6,7 @@ export type NextRouteWithoutLocale = TurnDynamicSegmentsIntoString<
   RemoveLocalePrefix<AppRoutes>
 >
 
-type PathConfig = {
+export type PathConfig = {
   path: NextRouteWithoutLocale
   label: string
   entriesPath?: string
@@ -57,7 +57,6 @@ export const PATHS = {
     path: '/provide-storage/onboarding',
     label: 'Onboarding',
   },
-
 } as const satisfies Record<string, PathConfig>
 
 const RSS_ROUTE = `/rss.xml`

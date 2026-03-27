@@ -9,7 +9,7 @@ const defaultMessages = {
   dataVolumeRequired: 'Please select a data volume',
 }
 
-type TalkToExpertFormMessages = typeof defaultMessages
+type StoreDataFormMessages = typeof defaultMessages
 
 const DATA_VOLUME_OPTIONS = [
   '0-1 TB',
@@ -25,8 +25,8 @@ export const dataVolumeOptions = DATA_VOLUME_OPTIONS.map((value) => ({
   label: value,
 }))
 
-export function createTalkToExpertFormSchema(
-  messages: TalkToExpertFormMessages = defaultMessages,
+export function createStoreDataFormSchema(
+  messages: StoreDataFormMessages = defaultMessages,
 ) {
   return z.object({
     firstName: z
@@ -49,6 +49,6 @@ export function createTalkToExpertFormSchema(
   })
 }
 
-export type TalkToExpertFormData = z.infer<
-  ReturnType<typeof createTalkToExpertFormSchema>
+export type StoreDataFormSchema = z.infer<
+  ReturnType<typeof createStoreDataFormSchema>
 >
