@@ -735,12 +735,12 @@
     "form": {
       "firstName": {
         "label": "名字",
-        "placeholder": "Alex",
+        "placeholder": "明",
         "error": "请输入您的名字"
       },
       "lastName": {
         "label": "姓氏",
-        "placeholder": "Smith",
+        "placeholder": "张",
         "error": "请输入您的姓氏"
       },
       "businessEmail": {
@@ -751,7 +751,7 @@
       },
       "companyName": {
         "label": "公司名称",
-        "placeholder": "Company Co",
+        "placeholder": "示例公司",
         "error": "请输入您的公司名称"
       },
       "additionalInfo": {
