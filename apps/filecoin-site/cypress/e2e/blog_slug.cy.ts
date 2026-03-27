@@ -17,7 +17,7 @@ type BlogPostFrontmatter = GenericEntryFrontmatter & {
 const { entriesPath: CONTENT_FOLDER, path: BLOG_PATH } = PATHS.BLOG
 const ENGLISH_CONTENT_FOLDER = path.join(CONTENT_FOLDER, ENGLISH_LOCALE)
 const CHINESE_CONTENT_FOLDER = path.join(CONTENT_FOLDER, CHINESE_LOCALE)
-const zhCnBlogPath = `/zh-cn${BLOG_PATH}`
+const zhCnBlogPath = `/${CHINESE_LOCALE}${BLOG_PATH}`
 
 describe('Blog Slug Page', () => {
   it(tests.metadata.prompt, () => {
