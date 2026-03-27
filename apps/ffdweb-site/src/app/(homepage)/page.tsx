@@ -3,7 +3,7 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
-import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
+import { getFeaturedPosts } from '@filecoin-foundation/utils/getFeaturedPosts'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
@@ -32,7 +32,7 @@ import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 export default async function Home() {
   const featuredProjects = await getFeaturedProjects(FEATURED_PROJECTS)
-  const featuredBlogPosts = getFeaturedBlogPosts({
+  const featuredBlogPosts = getFeaturedPosts({
     posts: await getBlogPostsData(),
     limit: 6,
   })

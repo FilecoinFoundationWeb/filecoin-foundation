@@ -6,7 +6,7 @@ type GetFeaturedBlogPostsProps<Entry extends WithPublishedOn> = {
   limit: number
 }
 
-export function getFeaturedBlogPosts<Entry extends WithPublishedOn>({
+export function getFeaturedPosts<Entry extends WithPublishedOn>({
   posts,
   limit,
 }: GetFeaturedBlogPostsProps<Entry>) {

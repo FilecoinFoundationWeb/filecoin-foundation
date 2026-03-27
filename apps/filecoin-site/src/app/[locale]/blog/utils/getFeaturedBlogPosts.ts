@@ -2,7 +2,7 @@ import type { Locale } from '@/i18n/types'
 
 import { getTranslations } from 'next-intl/server'
 
-import { getFeaturedBlogPosts as sharedGetFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
+import { getFeaturedPosts as sharedGetFeaturedPosts } from '@filecoin-foundation/utils/getFeaturedPosts'
 
 import { PATHS } from '@/constants/paths'
 
@@ -15,7 +15,7 @@ export async function getFeaturedBlogPosts(locale: Locale, limit: number) {
     getTranslations(PATHS.BLOG.path),
   ])
 
-  return sharedGetFeaturedBlogPosts({ posts, limit }).map(
+  return sharedGetFeaturedPosts({ posts, limit }).map(
     ({ categories, ...rest }) => ({
       ...rest,
       tags: categories.map((cat) => translateBlogCategory(t, cat)),

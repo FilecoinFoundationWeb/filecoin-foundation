@@ -3,7 +3,7 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
-import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
+import { getFeaturedPosts } from '@filecoin-foundation/utils/getFeaturedPosts'
 
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
@@ -37,7 +37,7 @@ import { generateStructuredData } from './utils/generateStructuredData'
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
 export default async function FilPlus() {
-  const latestUpdates = getFeaturedBlogPosts({
+  const latestUpdates = getFeaturedPosts({
     posts: await getMonthlyUpdatesData(),
     limit: 4,
   })
