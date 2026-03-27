@@ -1,8 +1,10 @@
-import { CTALink } from '@filecoin-foundation/ui/CTALink'
-import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
-import { Heading } from '@filecoin-foundation/ui/Heading'
-import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
-import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
+
+import { type HeadingProps, Heading } from '@filecoin-foundation/ui/Heading'
+import { type TagProps, TagLabel } from '@filecoin-foundation/ui/TagComponents'
+import {
+  type SmartTextLinkProps,
+  SmartTextLink,
+} from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
@@ -10,10 +12,10 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 import { AlternatingImageCard } from '@/components/AlternatingImageCard'
 
 export type ImpactData = {
-  label: string
-  title: string
-  description: Array<string>
-  cta: CTAProps
+  label: TagProps['children']
+  title: HeadingProps['children']
+  description: string
+  cta: { href: SmartTextLinkProps['href']; text: string }
   image: StaticImageProps
 }
 
@@ -33,15 +35,13 @@ export function ImpactCard({
     <AlternatingImageCard index={index} image={image} as="article">
       <div className="space-y-4">
         <TagLabel>{label}</TagLabel>
-        <Heading tag="h3" variant="xl">
+        <Heading tag="h3" variant="lg">
           {title}
         </Heading>
-        <div className="space-y-4">
-          <DescriptionText>{description}</DescriptionText>
-        </div>
-        <CTALink href={cta.href} baseDomain={BASE_DOMAIN}>
+        <p>{description}</p>
+        <SmartTextLink href={cta.href} baseDomain={BASE_DOMAIN}>
           {cta.text}
-        </CTALink>
+        </SmartTextLink>
       </div>
     </AlternatingImageCard>
   )

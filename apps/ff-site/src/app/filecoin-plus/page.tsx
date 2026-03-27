@@ -15,10 +15,8 @@ import { extractDomain } from '@/utils/extractDomain'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
-import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { Button } from '@/components/Button'
-import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
 import { MarkdownContent } from '@/components/MarkdownContent'
@@ -26,6 +24,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { BasicStatisticCard } from '@/components/StatisticCard/BasicStatisticCard'
 
+import { AboutCard } from './components/AboutCard'
 import { ImpactCard } from './components/ImpactCard'
 import { aboutData } from './data/aboutData'
 import { impactData } from './data/impactData'
@@ -33,8 +32,6 @@ import { statisticsData } from './data/statisticsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
-const { header: allocatorsHeader } =
-  PageFrontmatterSchema.parse(allocatorsAttributes)
 
 export default function FilPlus() {
   return (
@@ -47,7 +44,10 @@ export default function FilPlus() {
       >
         <CTAButtonGroup
           cta={[
-            { href: FIL_PLUS_URLS.dataCapApplication, text: 'Apply for DataCap' },
+            {
+              href: FIL_PLUS_URLS.dataCapApplication,
+              text: 'Apply for DataCap',
+            },
             {
               href: FIL_PLUS_URLS.documentation,
               text: 'Learn More About Filecoin Plus',
@@ -58,10 +58,8 @@ export default function FilPlus() {
 
       <PageSection kicker="How It Works" title="The Filecoin Plus Process">
         <BadgeCardGrid cols="smThree">
-          {aboutData.map(({ step, title, description }) => (
-            <CardWithBadge key={step} title={title} description={description}>
-              <Badge number={step} />
-            </CardWithBadge>
+          {aboutData.map((item) => (
+            <AboutCard key={item.step} {...item} />
           ))}
         </BadgeCardGrid>
       </PageSection>

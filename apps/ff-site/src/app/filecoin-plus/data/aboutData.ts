@@ -1,4 +1,6 @@
-export const aboutData = [
+import type { AboutCardProps } from '../components/AboutCard'
+
+export const aboutData: Array<AboutCardProps> = [
   {
     step: 1,
     title: 'Clients Apply for DataCap',
