@@ -720,13 +720,48 @@
         "error": "请选择数据量"
       },
       "communicationOptIn": "我同意接收来自 Protocol Labs 和 Filecoin Foundation 的其他通信。您可以随时取消订阅。",
-      "submit": "提交"
+      "submit": "提交",
+      "successMessage": "您的请求已提交。我们的团队将尽快与您联系。",
+      "errorMessage": "出了点问题。请再试一次。"
     }
   },
   "/provide-storage/onboarding": {
     "metadata": {
       "title": "成为 Filecoin 存储提供者 | 入驻指南",
       "description": "开启您的 Filecoin 之旅——通过分步入驻指南、支持资源和社区指导，了解如何成为存储提供者。"
+    },
+    "heading": "感谢您有兴趣成为 Filecoin 存储提供者。",
+    "description": "请填写以下表格，入驻团队的成员将与您联系，指导您完成后续步骤。",
+    "form": {
+      "firstName": {
+        "label": "名字",
+        "placeholder": "明",
+        "error": "请输入您的名字"
+      },
+      "lastName": {
+        "label": "姓氏",
+        "placeholder": "张",
+        "error": "请输入您的姓氏"
+      },
+      "businessEmail": {
+        "label": "企业邮箱地址",
+        "placeholder": "alex@company.com",
+        "errorInvalid": "邮箱格式无效",
+        "errorRequired": "请输入您的企业邮箱"
+      },
+      "companyName": {
+        "label": "公司名称",
+        "placeholder": "示例公司",
+        "error": "请输入您的公司名称"
+      },
+      "additionalInfo": {
+        "label": "附加信息",
+        "placeholder": "分享有关您的设置、目标或您希望我们了解的任何详情。"
+      },
+      "communicationOptIn": "我同意接收来自 Protocol Labs 和 Filecoin Foundation 的其他通讯。您可以随时取消订阅。",
+      "submit": "预约入驻电话",
+      "successMessage": "您的请求已提交。我们的团队将尽快与您联系。",
+      "errorMessage": "出了点问题，请重试。"
     }
   },
   "navigation": {
@@ -794,7 +829,7 @@
     "alreadySubscribed": "您已订阅 Filecoin 新闻。",
     "errorGeneric": "出了点问题，请重试。",
     "successMessage": "请查收邮件以确认订阅。",
-    "errorOccurred": "发生错误，请重试。"
+    "errorMessage": "发生错误，请重试。"
   },
   "storageProviderCard": {
     "from": "从",

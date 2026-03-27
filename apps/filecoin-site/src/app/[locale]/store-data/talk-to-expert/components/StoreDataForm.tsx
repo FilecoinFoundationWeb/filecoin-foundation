@@ -8,22 +8,28 @@ import { ControlledForm } from '@filecoin-foundation/ui/Form'
 import { ControlledFormCheckbox } from '@filecoin-foundation/ui/FormCheckbox'
 import { ControlledFormInput } from '@filecoin-foundation/ui/FormInput'
 import { ControlledFormRadioGroup } from '@filecoin-foundation/ui/FormRadioGroup'
+import {
+  NotificationDialog,
+  useNotificationDialog,
+} from '@filecoin-foundation/ui/NotificationDialog'
 import { Button } from '@filecoin-foundation/ui-filecoin/Button'
 
 import { PATHS } from '@/constants/paths'
 
+import { createHubSpotSubmitHandler } from '@/utils/createHubSpotSubmitHandler'
+
 import { PrivacyDisclaimer } from '@/components/PrivacyDisclaimer'
 
 import {
-  createTalkToExpertFormSchema,
+  createStoreDataFormSchema,
   dataVolumeOptions,
-  type TalkToExpertFormData,
-} from '../../schema/TalkToExpertFormSchema'
+  type StoreDataFormSchema,
+} from '../schema/StoreDataFormSchema'
 
-export function TalkToExpertForm() {
+export function StoreDataForm() {
   const t = useTranslations(PATHS.STORE_DATA_TALK_TO_EXPERT.path + '.form')
 
-  const schema = createTalkToExpertFormSchema({
+  const schema = createStoreDataFormSchema({
     firstNameRequired: t('firstName.error'),
     lastNameRequired: t('lastName.error'),
     companyNameRequired: t('companyName.error'),
@@ -32,30 +38,38 @@ export function TalkToExpertForm() {
     dataVolumeRequired: t('dataVolume.error'),
   })
 
-  const form = useForm<TalkToExpertFormData>({
+  const dialog = useNotificationDialog()
+
+  const form = useForm<StoreDataFormSchema>({
     resolver: zodResolver(schema),
     defaultValues: {
       communicationOptIn: false,
     },
   })
-
   const isSubmitting = form.formState.isSubmitting
 
+  const submitToHubSpot = createHubSpotSubmitHandler({
+    endpoint: '/api/hubspot/store-data',
+    dialog,
+    onSuccess: form.reset,
+    t,
+  })
+
   return (
-    <ControlledForm<TalkToExpertFormData>
+    <ControlledForm<StoreDataFormSchema>
       form={form}
       className="space-y-15"
-      onSubmit={(data) => console.log(data)}
+      onSubmit={submitToHubSpot}
     >
       <div className="space-y-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-          <ControlledFormInput<TalkToExpertFormData>
+          <ControlledFormInput<StoreDataFormSchema>
             name="firstName"
             label={t('firstName.label')}
             placeholder={t('firstName.placeholder')}
             disabled={isSubmitting}
           />
-          <ControlledFormInput<TalkToExpertFormData>
+          <ControlledFormInput<StoreDataFormSchema>
             name="lastName"
             label={t('lastName.label')}
             placeholder={t('lastName.placeholder')}
@@ -63,7 +77,7 @@ export function TalkToExpertForm() {
           />
         </div>
 
-        <ControlledFormInput<TalkToExpertFormData>
+        <ControlledFormInput<StoreDataFormSchema>
           name="businessEmail"
           label={t('businessEmail.label')}
           type="email"
@@ -71,14 +85,14 @@ export function TalkToExpertForm() {
           disabled={isSubmitting}
         />
 
-        <ControlledFormInput<TalkToExpertFormData>
+        <ControlledFormInput<StoreDataFormSchema>
           name="companyName"
           label={t('companyName.label')}
           placeholder={t('companyName.placeholder')}
           disabled={isSubmitting}
         />
 
-        <ControlledFormRadioGroup<TalkToExpertFormData>
+        <ControlledFormRadioGroup<StoreDataFormSchema>
           name="dataVolume"
           label={t('dataVolume.label')}
           options={dataVolumeOptions}
@@ -89,17 +103,24 @@ export function TalkToExpertForm() {
       <div className="space-y-8">
         <PrivacyDisclaimer />
 
-        <ControlledFormCheckbox<TalkToExpertFormData>
+        <ControlledFormCheckbox<StoreDataFormSchema>
           name="communicationOptIn"
           label={t('communicationOptIn')}
         />
       </div>
 
       <div className="grid md:block">
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" disabled={isSubmitting}>
           {t('submit')}
         </Button>
       </div>
+
+      <NotificationDialog
+        message={dialog.message}
+        isOpen={dialog.isOpen}
+        icon={dialog.icon}
+        onClose={dialog.close}
+      />
     </ControlledForm>
   )
 }

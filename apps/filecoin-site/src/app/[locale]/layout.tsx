@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 
+import { CHINESE_LOCALE } from '@/i18n/locales'
 import { routing } from '@/i18n/routing'
 import type { UnsanitizedLocaleParams } from '@/i18n/types'
 
@@ -38,7 +39,9 @@ export default async function RootLayout({
   return (
     <SiteLayout
       locale={locale}
-      banner={locale === 'zh-cn' && <PersistedBanner text={BANNER_TEXT} />}
+      banner={
+        locale === CHINESE_LOCALE && <PersistedBanner text={BANNER_TEXT} />
+      }
     >
       {children}
     </SiteLayout>

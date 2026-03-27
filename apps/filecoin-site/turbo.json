@@ -9,7 +9,10 @@
         "SENTRY_AUTH_TOKEN_FILECOIN_SITE",
         "NEXT_PUBLIC_TINA_CLIENT_ID",
         "TINA_TOKEN",
-        "VERCEL_GIT_COMMIT_REF"
+        "VERCEL_GIT_COMMIT_REF",
+        "HUBSPOT_PORTAL_ID",
+        "HUBSPOT_STORE_DATA_FORM_ID",
+        "HUBSPOT_PROVIDE_STORAGE_FORM_ID"
       ],
       "outputs": [".next/**", "!.next/cache/**"]
     }

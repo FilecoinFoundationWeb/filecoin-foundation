@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 
 import { Heading } from '@filecoin-foundation/ui-filecoin/Heading'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
@@ -13,19 +14,20 @@ import { Navigation } from '@/components/Navigation/Navigation'
 
 import { ProvideStorageForm } from './components/ProvideStorageForm'
 
-export default function ProvideStorageFormPage() {
+export default async function ProvideStorageFormPage() {
+  const t = await getTranslations(PATHS.PROVIDE_STORAGE_ONBOARDING.path)
+
   return (
     <>
       <Navigation backgroundVariant="light" />
       <PageSection backgroundVariant="light">
         <div className="max-w-4xl">
           <Heading tag="h1" variant="section-heading">
-            Thanks for your interest in becoming a Filecoin storage provider.
+            {t('heading')}
           </Heading>
 
           <p className="pt-6 pb-25 text-xl/7 text-pretty text-(--color-paragraph-text)">
-            Please fill out this form below, and a member of the onboarding team
-            will reach out to guide you through next steps.
+            {t('description')}
           </p>
 
           <ProvideStorageForm />

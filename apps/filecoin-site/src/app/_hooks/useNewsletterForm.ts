@@ -25,7 +25,7 @@ export function useNewsletterForm() {
 
   async function onSubmit(values: NewsletterFormData) {
     try {
-      const response = await fetch('/api/subscribe', {
+      const response = await fetch('/api/mailchimp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: values.email }),
@@ -55,7 +55,7 @@ export function useNewsletterForm() {
       form.resetField('email')
     } catch (err) {
       dialog.open({
-        message: t('errorOccurred'),
+        message: t('errorMessage'),
         duration: NOTIFICATION_DIALOG_ERROR_DURATION_MS,
         icon: { component: XCircleIcon, color: 'error' },
       })

@@ -12,7 +12,7 @@ import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
-import { TalkToExpertForm } from './components/TalkToExpertForm'
+import { StoreDataForm } from './components/StoreDataForm'
 
 export default async function TalkToExpertPage() {
   const t = await getTranslations(PATHS.STORE_DATA_TALK_TO_EXPERT.path)
@@ -30,7 +30,7 @@ export default async function TalkToExpertPage() {
             {t('description')}
           </p>
 
-          <TalkToExpertForm />
+          <StoreDataForm />
         </div>
       </PageSection>
     </>
