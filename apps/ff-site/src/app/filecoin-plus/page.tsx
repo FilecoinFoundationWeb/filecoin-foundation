@@ -1,4 +1,3 @@
-import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
@@ -18,11 +17,9 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
-import { Button } from '@/components/Button'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
-import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
@@ -54,19 +51,14 @@ export default function FilPlus() {
         />
       </PageHeader>
 
-      <PageSection kicker="About" title="How Fil+ Works">
-        <CardGrid as="ul" cols="lgThree">
-          {aboutData.map((data) => (
-            <FocusAreaCard key={data.title} {...data} />
+      <PageSection kicker="How It Works" title="The Filecoin Plus Process">
+        <BadgeCardGrid cols="smThree">
+          {aboutData.map(({ step, title, description }) => (
+            <CardWithBadge key={step} title={title} description={description}>
+              <Badge number={step} />
+            </CardWithBadge>
           ))}
-        </CardGrid>
-
-        <Button
-          className="sm:self-center"
-          href={FIL_PLUS_URLS.filPlusParticipants}
-        >
-          Learn More About Fil+ Participants
-        </Button>
+        </BadgeCardGrid>
       </PageSection>
 
       <PageSection
