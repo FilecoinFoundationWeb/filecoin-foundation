@@ -7,7 +7,17 @@ import { useCarousel } from './Carousel'
 import { CarouselNavigation } from './CarouselNavigation'
 
 export function CarouselAutoScrollControls() {
-  const { isScrolling, playAutoScroll, stopAutoScroll } = useCarousel()
+  const {
+    isScrolling,
+    playAutoScroll,
+    stopAutoScroll,
+    canScrollPrev,
+    canScrollNext,
+  } = useCarousel()
+
+  if (!canScrollPrev || !canScrollNext) {
+    return null
+  }
 
   const Icon = isScrolling ? PauseIcon : PlayIcon
   const label = isScrolling ? 'Stop auto scroll' : 'Start auto scroll'
