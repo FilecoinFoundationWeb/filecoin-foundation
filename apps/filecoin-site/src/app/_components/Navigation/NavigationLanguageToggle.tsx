@@ -16,11 +16,11 @@ const variants = {
 }
 
 type NavigationLanguageToggleProps = {
-  variant: keyof typeof variants
+  variant?: keyof typeof variants
 }
 
 export function NavigationLanguageToggle({
-  variant,
+  variant = 'compact',
 }: NavigationLanguageToggleProps) {
   const { currentLocale, switchLocale } = useLanguageToggle()
 
