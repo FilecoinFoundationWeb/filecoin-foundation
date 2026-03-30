@@ -15,7 +15,7 @@ export function CarouselAutoScrollControls() {
     canScrollNext,
   } = useCarousel()
 
-  if (!canScrollPrev || !canScrollNext) {
+  if (!canScrollPrev && !canScrollNext) {
     return null
   }
 
