@@ -11,7 +11,7 @@ seo:
 
 Slides: [December 16 Governance Call](https://docs.google.com/presentation/d/1v9pC66VXoq5XHm7pBIUNFXC6rKXHmI-VpaxEZIvQp-g/edit?usp=drive_link)
 
-Recordings: [Available on Youtube](https://www.youtube.com/watch?v=0equHmXzsAw&list=PLp3zrT1ewY0kYN1hJpERMUxTCbFC4yZwN&index=1)
+Recordings: [Available on YouTube](https://www.youtube.com/watch?v=0equHmXzsAw&list=PLp3zrT1ewY0kYN1hJpERMUxTCbFC4yZwN&index=1)
 
 ## DataCapstats.io
 
