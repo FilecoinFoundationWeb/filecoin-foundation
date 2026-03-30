@@ -41,7 +41,7 @@ export function MobileNavigation({
       <SlideOver open={open} setOpen={setOpen}>
         <div
           className={clsx(
-            'flex h-full flex-col gap-12 px-6 py-8',
+            'flex h-full flex-col px-6 py-8',
             backgroundVariants[theme],
           )}
         >
@@ -53,9 +53,10 @@ export function MobileNavigation({
               onClick={closePanel}
             />
           </div>
+
           <ul
             aria-label="Navigation options"
-            className="flex flex-col divide-y divide-(--color-border-base)"
+            className="flex flex-col divide-y divide-(--color-border-base) pt-12"
           >
             {items.map(({ href, label }) => (
               <li key={href}>
@@ -68,6 +69,7 @@ export function MobileNavigation({
               </li>
             ))}
           </ul>
+
           {Footer && <div className="mt-auto">{Footer}</div>}
         </div>
       </SlideOver>
