@@ -5,9 +5,7 @@ import InternetArchiveLogo from '@/assets/logos/internet-archive-icon-logo.svg'
 import MITOpenLearningLogo from '@/assets/logos/MIT-open-learning-icon-logo.svg'
 import SetiInstituteLogo from '@/assets/logos/seti-institute-logo.svg'
 import SmithsonianLogo from '@/assets/logos/smithsonian-icon-logo.png'
-import SolanaLogo from '@/assets/logos/solana-icon-logo.png'
 import StarlingLabLogo from '@/assets/logos/starling-lab-icon-logo.png'
-import VictorChangLogo from '@/assets/logos/victor-chang-icon-logo.svg'
 
 import type {
   ImageLogoProps,
@@ -55,19 +53,9 @@ const LOGO_CONFIG: Record<string, ImageLogoConfig | SVGLogoConfig> = {
     asset: SmithsonianLogo,
     bgColor: '#000',
   },
-  solana: {
-    type: 'image',
-    asset: SolanaLogo,
-    bgColor: '#000',
-  },
   'starling-lab': {
     type: 'image',
     asset: StarlingLabLogo,
-    bgColor: '#fff',
-  },
-  'victor-chang': {
-    type: 'svg',
-    asset: VictorChangLogo,
     bgColor: '#fff',
   },
 }

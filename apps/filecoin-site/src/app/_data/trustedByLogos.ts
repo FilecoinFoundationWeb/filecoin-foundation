@@ -7,7 +7,6 @@ import MITOpenLearningLogo from '@/assets/logos/MIT-open-learning-logo.svg'
 import SetiInstituteLogo from '@/assets/logos/seti-institute-logo.svg'
 import SmithsonianLogo from '@/assets/logos/smithsonian-logo.svg'
 import StarlingLabLogo from '@/assets/logos/starling-lab-logo.svg'
-import VictorChanLogo from '@/assets/logos/victor-chang-logo.svg'
 
 export const trustedByLogos: Array<LogoItemProps> = [
   {
@@ -45,11 +44,6 @@ export const trustedByLogos: Array<LogoItemProps> = [
     size: 24,
     alt: 'Aethir Logo',
     href: 'https://aethir.com',
-  },
-  {
-    logo: VictorChanLogo,
-    alt: 'Victor Chan Logo',
-    href: 'https://www.victorchang.edu.au/',
   },
   {
     logo: SetiInstituteLogo,
