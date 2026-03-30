@@ -37,7 +37,7 @@ export function BlogCard({
   author,
 }: BlogCardProps) {
   return (
-    <li>
+    <li className="min-w-0">
       <article
         aria-label={title}
         title={title}
