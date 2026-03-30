@@ -33,6 +33,8 @@ export function PageHeader({
         <div className="relative aspect-video">
           <Image
             fill
+            priority
+            sizes="(min-width: 1280px) 50vw, 100vw"
             src={image.src}
             alt={image.alt || ''}
             className="rounded-2xl object-cover"

@@ -75,6 +75,7 @@ export default async function Home({ params }: BlogProps) {
         <Image
           fill
           priority
+          sizes="100vw"
           src={graphicsData.earthFromDeepSpace.data}
           alt={graphicsData.earthFromDeepSpace.alt}
           className="absolute bottom-0 -z-10 h-full object-cover object-top"
