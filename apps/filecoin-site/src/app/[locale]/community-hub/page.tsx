@@ -37,7 +37,7 @@ import { getNetworkUpgrades } from './data/networkUpgrades'
 import { socialMedia } from './data/socialMedia'
 
 import { BlogCard } from '@/blog/components/BlogCard'
-import { getFeaturedPosts } from '@/blog/utils/getFeaturedPosts'
+import { getFeaturedBlogPosts } from '@/blog/utils/getFeaturedBlogPosts'
 
 type BlogProps = {
   params: Promise<LocaleParams>
@@ -47,7 +47,7 @@ export default async function CommunityHub({ params }: BlogProps) {
   const { locale } = await params
   const t = await getTranslations(PATHS.COMMUNITY_HUB.path)
 
-  const featuredBlogPosts = await getFeaturedPosts(locale, 3)
+  const featuredBlogPosts = await getFeaturedBlogPosts(locale, 3)
 
   const getInvolvedWithCommunity = getGetInvolvedWithCommunity(t)
   const ecosystemGroups = getEcosystemGroups(t)
