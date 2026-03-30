@@ -11,7 +11,7 @@ seo:
 
 Slides: [2026 January 20 Governance Call](https://docs.google.com/presentation/d/1jMBsH8jwq6KX1oJsJX_A9EzWEWQ1AHrOieWUzZto0h4/edit?usp=drive_link)
 
-Recordings: [Available on Youtube](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kYN1hJpERMUxTCbFC4yZwN)
+Recordings: [Available on YouTube](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kYN1hJpERMUxTCbFC4yZwN)
 
 ## DataCap Refresh
 
