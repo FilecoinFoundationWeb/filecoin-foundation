@@ -94,8 +94,6 @@ export default async function FilPlus() {
         </Button>
       </PageSection>
 
-      <FaqSection />
-
       {latestUpdates.length > 0 && (
         <PageSection
           kicker="Stay Updated"
@@ -140,6 +138,8 @@ export default async function FilPlus() {
           </Button>
         </PageSection>
       )}
+
+      <FaqSection />
 
       <CTASection
         title="Get Started"

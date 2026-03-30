@@ -108,6 +108,7 @@ export function MonthlyUpdatesContent({ updates }: MonthlyUpdatesContentProps) {
                 )
               })}
             </CardGrid>
+
             <div className="sm:w-fit sm:self-center">
               <Pagination pageCount={pageCount} />
             </div>
