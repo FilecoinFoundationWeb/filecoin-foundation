@@ -70,7 +70,7 @@ export default async function Learn() {
           <Image
             fill
             priority
-            sizes="100vw"
+            sizes="80vw"
             src={graphicsData.solarEclipse.data}
             alt={graphicsData.solarEclipse.alt}
             className="object-cover"
