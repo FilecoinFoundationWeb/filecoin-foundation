@@ -170,6 +170,9 @@ const config = {
       'ts-jest',
       {
         useESM: true,
+        tsconfig: {
+          ignoreDeprecations: '6.0',
+        },
       },
     ],
   },
