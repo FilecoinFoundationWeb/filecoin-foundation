@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, type ComponentType } from 'react'
+import { useState, type ComponentType, type ReactNode } from 'react'
 
 import { ListIcon, XIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
@@ -19,7 +19,7 @@ type HomeLogoIconLinkProps = {
 export type MobileNavigationProps = {
   items: Array<NavItem>
   HomeLogoIconLinkComponent: ComponentType<HomeLogoIconLinkProps>
-  Footer?: ComponentType
+  Footer?: ReactNode
 }
 
 export function MobileNavigation({
@@ -68,11 +68,7 @@ export function MobileNavigation({
               </li>
             ))}
           </ul>
-          {Footer && (
-            <div className="mt-auto">
-              <Footer />
-            </div>
-          )}
+          {Footer && <div className="mt-auto">{Footer}</div>}
         </div>
       </SlideOver>
     </div>

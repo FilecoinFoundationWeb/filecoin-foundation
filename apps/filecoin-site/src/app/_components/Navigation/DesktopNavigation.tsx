@@ -26,7 +26,7 @@ export function DesktopNavigation() {
           )
         })}
       </ul>
-      <NavigationLanguageToggle />
+      <NavigationLanguageToggle variant="compact" />
     </div>
   )
 }

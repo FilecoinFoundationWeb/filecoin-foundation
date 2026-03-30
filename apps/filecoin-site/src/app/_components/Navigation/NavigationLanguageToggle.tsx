@@ -10,11 +10,22 @@ import { desktopStyle } from '@filecoin-foundation/ui-filecoin/Navigation/Naviga
 import { LANGUAGES } from './constants/languages'
 import { useLanguageToggle } from './hooks/useLanguageToggle'
 
-export function NavigationLanguageToggle() {
+const variants = {
+  compact: 'gap-4',
+  relaxed: 'gap-8',
+}
+
+type NavigationLanguageToggleProps = {
+  variant: keyof typeof variants
+}
+
+export function NavigationLanguageToggle({
+  variant,
+}: NavigationLanguageToggleProps) {
   const { currentLocale, switchLocale } = useLanguageToggle()
 
   return (
-    <div className="flex items-center gap-4 font-medium">
+    <div className={clsx(variants[variant], 'flex items-center font-medium')}>
       {routing.locales.map((locale) => {
         const { label, name } = LANGUAGES[locale]
 

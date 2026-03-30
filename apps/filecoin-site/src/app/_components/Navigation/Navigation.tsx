@@ -10,7 +10,7 @@ import {
 import { getMobileNavigationItems } from './constants/navigation'
 import { DesktopNavigation } from './DesktopNavigation'
 import { HomeLogoIconLink } from './HomeLogoIconLink'
-import { MobileNavigationLanguageToggle } from './MobileNavigationLanguageToggle'
+import { NavigationLanguageToggle } from './NavigationLanguageToggle'
 
 type NavigationProps = {
   backgroundVariant: SectionProps['backgroundVariant']
@@ -29,7 +29,7 @@ export async function Navigation({ backgroundVariant }: NavigationProps) {
             <MobileNavigation
               items={getMobileNavigationItems(t)}
               HomeLogoIconLinkComponent={HomeLogoIconLink}
-              Footer={MobileNavigationLanguageToggle}
+              Footer={<NavigationLanguageToggle variant="relaxed" />}
             />
           </div>
 
