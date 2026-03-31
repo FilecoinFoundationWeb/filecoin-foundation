@@ -1,30 +1,22 @@
-import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
+import type { AboutCardProps } from '../components/AboutCard'
 
-import { graphicsData } from '@/data/graphicsData'
-
-export type AboutData = {
-  title: string
-  description: string
-  image: StaticImageProps
-}
-
-export const aboutData: Array<AboutData> = [
+export const aboutData: Array<AboutCardProps> = [
   {
-    title: 'Initial Allocation of DataCap',
+    step: 1,
+    title: 'Clients Apply for DataCap',
     description:
-      'The Fil+ program provides Allocators with a resource called DataCap.',
-    image: graphicsData.filPlusAbout1,
+      'Organizations or individuals who want to store important data—like open datasets or cultural archives—can request DataCap.',
   },
   {
-    title: 'Distribution to Storage Clients',
+    step: 2,
+    title: 'Allocators Review Application',
     description:
-      'Allocators distribute DataCap to storage clients who want to store useful data on Filecoin.',
-    image: graphicsData.filPlusAbout2,
+      'A group of trusted community members, called Allocators, review each request. If it meets the criteria, they assign DataCap to the client.',
   },
   {
-    title: 'Securing Deals',
+    step: 3,
+    title: 'Storage Deal',
     description:
-      'The storage clients use DataCap to secure deals with storage providers, which increases their probability of earning block rewards.',
-    image: graphicsData.filPlusAbout3,
+      'With DataCap, clients can make deals on better terms. Storage Providers get higher rewards for storing this verified data.',
   },
 ]

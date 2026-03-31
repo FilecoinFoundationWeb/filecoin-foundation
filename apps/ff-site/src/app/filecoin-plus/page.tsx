@@ -1,37 +1,35 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
-import { attributes as allocatorsAttributes } from '@/content/pages/filecoin-plus/allocators.md'
 import { attributes } from '@/content/pages/filecoin-plus/filecoin-plus.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { extractDomain } from '@/utils/extractDomain'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
-import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { Button } from '@/components/Button'
-import { CardWithBadge } from '@/components/CardWithBadge'
+import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
-import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { BasicStatisticCard } from '@/components/StatisticCard/BasicStatisticCard'
 
+import { AboutCard } from './components/AboutCard'
+import { FaqSection } from './components/FaqSection'
+import { ImpactCard } from './components/ImpactCard'
 import { aboutData } from './data/aboutData'
-import { applicationData } from './data/applicationData'
+import { impactData } from './data/impactData'
+import { statisticsData } from './data/statisticsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
-const { header: allocatorsHeader } =
-  PageFrontmatterSchema.parse(allocatorsAttributes)
 
 export default function FilPlus() {
   return (
@@ -42,74 +40,59 @@ export default function FilPlus() {
         description={{ text: header.description }}
         image={graphicsData.filPlus}
       >
-        <Button href={FIL_PLUS_URLS.documentation}>
-          Learn More About Fil+
-        </Button>
+        <CTAButtonGroup
+          cta={[
+            {
+              href: FIL_PLUS_URLS.dataCap.applicationDocs,
+              text: 'Apply for DataCap',
+            },
+            {
+              href: FIL_PLUS_URLS.documentation,
+              text: 'Learn More About Filecoin Plus',
+            },
+          ]}
+        />
       </PageHeader>
 
-      <PageSection kicker="About" title="How Fil+ Works">
-        <CardGrid as="ul" cols="lgThree">
-          {aboutData.map((data) => (
-            <FocusAreaCard key={data.title} {...data} />
+      <PageSection kicker="How It Works" title="The Filecoin Plus Process">
+        <BadgeCardGrid cols="smThree">
+          {aboutData.map((item) => (
+            <AboutCard key={item.step} {...item} />
+          ))}
+        </BadgeCardGrid>
+      </PageSection>
+
+      <PageSection kicker="Impact" title="Impact of Fil+">
+        {impactData.map((item, index) => (
+          <ImpactCard key={index} index={index} {...item} />
+        ))}
+      </PageSection>
+
+      <PageSection kicker="Metrics" title="Fil+ by the Numbers">
+        <CardGrid as="ul" cols="smThree">
+          {statisticsData.map((statistic, index) => (
+            <BasicStatisticCard key={index} {...statistic} />
           ))}
         </CardGrid>
 
         <Button
+          variant="ghost"
           className="sm:self-center"
-          href={FIL_PLUS_URLS.filPlusParticipants}
+          href={FIL_PLUS_URLS.dataCap.metrics}
         >
-          Learn More About Fil+ Participants
+          View Fil+ Dashboard
         </Button>
       </PageSection>
 
-      <PageSection
-        kicker="Allocators"
-        title={allocatorsHeader.title}
-        description={allocatorsHeader.description}
-        image={graphicsData.filPlusAllocators}
-        cta={{
-          href: PATHS.ALLOCATORS.path,
-          text: 'Allocators List',
-        }}
-      />
-
-      <PageSection kicker="Allocator Application" title="Become an Allocator">
-        <p className="max-w-readable mb-2">
-          An allocator’s primary responsibilities include allocating DataCap,
-          ensuring trust and compliance, and participating in community
-          governance. For a full list of instructions on how to become an
-          allocator, please visit{' '}
-          <ExternalTextLink href={FIL_PLUS_URLS.allocators.blog}>
-            {extractDomain(FIL_PLUS_URLS.allocators.blog)}
-          </ExternalTextLink>
-          . We are currently prioritizing new allocators that are developing
-          pathways according to our{' '}
-          <ExternalTextLink href={FIL_PLUS_URLS.allocators.rfa}>
-            Request for Allocators (RFA)
-          </ExternalTextLink>
-          .
-        </p>
-
-        <BadgeCardGrid cols="smThree">
-          {applicationData.map((item) => {
-            const { step, title, description } = item
-
-            return (
-              <CardWithBadge key={step} title={title} description={description}>
-                <Badge number={step} />
-              </CardWithBadge>
-            )
-          })}
-        </BadgeCardGrid>
-      </PageSection>
+      <FaqSection />
 
       <CTASection
-        title="Explore DataCap Projects"
-        description="Discover the projects that apply for and receive DataCap, review the details of their applications, and find out who the allocators are."
-        cta={{
-          text: 'DataCap Metrics for Allocators',
-          href: FIL_PLUS_URLS.dataCapMetrics,
-        }}
+        title="Get Started"
+        description="Find the right Allocator to support your storage needs or learn more about Filecoin Plus."
+        cta={[
+          { text: 'Find an Allocator', href: PATHS.ALLOCATORS.path },
+          { text: 'Learn More', href: FIL_PLUS_URLS.documentation },
+        ]}
       />
     </PageLayout>
   )

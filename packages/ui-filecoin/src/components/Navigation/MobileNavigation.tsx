@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, type ComponentType } from 'react'
+import { useState, type ComponentType, type ReactNode } from 'react'
 
 import { ListIcon, XIcon } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
@@ -19,11 +19,13 @@ type HomeLogoIconLinkProps = {
 export type MobileNavigationProps = {
   items: Array<NavItem>
   HomeLogoIconLinkComponent: ComponentType<HomeLogoIconLinkProps>
+  Footer?: ReactNode
 }
 
 export function MobileNavigation({
   items,
   HomeLogoIconLinkComponent,
+  Footer,
 }: MobileNavigationProps) {
   const [open, setOpen] = useState(false)
   const { theme } = useBackground()
@@ -39,7 +41,7 @@ export function MobileNavigation({
       <SlideOver open={open} setOpen={setOpen}>
         <div
           className={clsx(
-            'flex h-full flex-col gap-12 px-6 py-8',
+            'flex h-full flex-col px-6 py-8',
             backgroundVariants[theme],
           )}
         >
@@ -51,9 +53,10 @@ export function MobileNavigation({
               onClick={closePanel}
             />
           </div>
+
           <ul
             aria-label="Navigation options"
-            className="flex flex-col divide-y divide-(--color-border-base)"
+            className="flex flex-col divide-y divide-(--color-border-base) pt-12"
           >
             {items.map(({ href, label }) => (
               <li key={href}>
@@ -66,6 +69,8 @@ export function MobileNavigation({
               </li>
             ))}
           </ul>
+
+          {Footer && <div className="mt-auto">{Footer}</div>}
         </div>
       </SlideOver>
     </div>

@@ -518,22 +518,22 @@
       "buildDecentralizedFileStorageApp": {
         "title": "Build a decentralized file storage app",
         "description": "A step-by-step tutorial showing how to build a decentralized storage application using Filecoin and the Synapse SDK.",
-        "cta": "Learn more"
+        "cta": "Build a file storage app with Filecoin"
       },
       "filecoinPinDeveloperGuide": {
         "title": "Filecoin Pin developer guide",
         "description": "A comprehensive introduction to Filecoin Pin and how web developers can use it to store data on decentralized infrastructure.",
-        "cta": "Learn more"
+        "cta": "Read the Filecoin Pin developer guide"
       },
       "trustlessAiAgentsWithFilecoin": {
         "title": "Trustless AI agents with Filecoin",
         "description": "Learn how to combine AI agents and decentralized storage to create verifiable AI systems.",
-        "cta": "Learn more"
+        "cta": "Build trustless AI agents with Filecoin"
       },
       "filecoinOnchainCloudExplained": {
         "title": "Filecoin Onchain Cloud explained",
         "description": "Overview of the decentralized cloud stack and services powering Filecoin developer infrastructure.",
-        "cta": "Learn more"
+        "cta": "Explore Filecoin Onchain Cloud"
       }
     },
     "buildWithFilecoinOnchainCloud": {
