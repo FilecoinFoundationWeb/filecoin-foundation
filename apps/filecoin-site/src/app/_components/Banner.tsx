@@ -39,7 +39,7 @@ export function Banner({ text, cookieName }: BannerProps) {
     <div
       aria-hidden={!isVisible}
       className={clsx(
-        'relative z-50 grid transition-[grid-template-rows] duration-500 ease-in-out',
+        'relative z-10 grid transition-[grid-template-rows] duration-500 ease-in-out',
         isVisible ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]',
       )}
     >
