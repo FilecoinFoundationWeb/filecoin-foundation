@@ -27,7 +27,7 @@
     "./getDigestArticleStaticParams": "./src/getDigestArticleStaticParams.ts",
     "./getDigestIssueData": "./src/getDigestIssueData.ts",
     "./getDigestIssueDescription": "./src/getDigestIssueDescription.ts",
-    "./getFeaturedBlogPosts": "./src/getFeaturedBlogPosts.ts",
+    "./getFeaturedPosts": "./src/getFeaturedPosts.ts",
     "./getFeaturedEntry": "./src/getFeaturedEntry.ts",
     "./getMarkdownData": "./src/getMarkdownData.ts",
     "./generateRobotsTxt": "./src/generateRobotsTxt.ts",

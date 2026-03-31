@@ -1,7 +1,7 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { getFeaturedBlogPosts } from '@filecoin-foundation/utils/getFeaturedBlogPosts'
+import { getFeaturedPosts } from '@filecoin-foundation/utils/getFeaturedPosts'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
@@ -42,7 +42,7 @@ const { header: digestPageHeader } =
   PageFrontmatterSchema.parse(digestAttributes)
 
 export default async function Home() {
-  const featuredBlogPosts = getFeaturedBlogPosts({
+  const featuredBlogPosts = getFeaturedPosts({
     posts: await getBlogPostsData(),
     limit: 4,
   })
