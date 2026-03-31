@@ -1,14 +1,14 @@
 import { sortPostsByDateDesc } from './sortBlogPosts'
 import type { WithPublishedOn } from './types/withPublishedOnType'
 
-type GetFeaturedBlogPostsProps<Entry extends WithPublishedOn> = {
+type GetFeaturedPostsProps<Entry extends WithPublishedOn> = {
   posts: Array<Entry>
   limit: number
 }
 
-export function getFeaturedBlogPosts<Entry extends WithPublishedOn>({
+export function getFeaturedPosts<Entry extends WithPublishedOn>({
   posts,
   limit,
-}: GetFeaturedBlogPostsProps<Entry>) {
+}: GetFeaturedPostsProps<Entry>) {
   return sortPostsByDateDesc(posts).slice(0, limit)
 }

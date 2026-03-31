@@ -4,12 +4,14 @@ type BlogPostPath = `/blog/${string}`
 type DigestPath = `/digest/${string}`
 type EcosystemPath = `/ecosystem/${string}`
 type EventPath = `/events/${string}`
+type FilPlusMonthlyUpdatePath = `/filecoin-plus/monthly-updates/${string}`
 
 export type DynamicPathValues =
   | BlogPostPath
   | DigestPath
   | EcosystemPath
   | EventPath
+  | FilPlusMonthlyUpdatePath
 
 export type PathValues =
   | '/'
@@ -22,6 +24,7 @@ export type PathValues =
   | '/events'
   | '/filecoin-plus'
   | '/filecoin-plus/allocators'
+  | '/filecoin-plus/monthly-updates'
   | '/governance'
   | '/governance/govhub'
   | '/grants'
@@ -78,6 +81,11 @@ export const PATHS = {
   FIL_PLUS: createPathConfig('/filecoin-plus', 'Filecoin Plus', {
     hasSubpaths: true,
   }),
+  FIL_PLUS_MONTHLY_UPDATES: createPathConfig(
+    '/filecoin-plus/monthly-updates',
+    'Fil+ Monthly Updates',
+    { hasEntries: true },
+  ),
   GOVERNANCE: createPathConfig('/governance', 'Governance', {
     hasSubpaths: true,
   }),

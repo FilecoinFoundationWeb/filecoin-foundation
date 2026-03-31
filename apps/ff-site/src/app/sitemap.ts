@@ -7,6 +7,7 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 import { getEventsData } from '@/events/utils/getEventData'
+import { getMonthlyUpdatesData } from '@/filecoin-plus/monthly-updates/utils/getMonthlyUpdateData'
 
 export default async function sitemap() {
   const routes = await generateSitemap({
@@ -24,6 +25,10 @@ export default async function sitemap() {
       {
         getData: getEventsData,
         basePath: PATHS.EVENTS.path,
+      },
+      {
+        getData: getMonthlyUpdatesData,
+        basePath: PATHS.FIL_PLUS_MONTHLY_UPDATES.path,
       },
     ],
   })
