@@ -1,6 +1,7 @@
 import type { WebPage, WithContext } from 'schema-dts'
 
 import type { SeoMetadata } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
+import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
@@ -20,12 +21,15 @@ export function generateStructuredData(
     path: PATHS.FIL_PLUS_MONTHLY_UPDATES.path,
   })
 
+  const mostRecentUpdates = sortPostsByDateDesc(updates)
+  const fiveMostRecentUpdates = mostRecentUpdates.slice(0, 5)
+
   return {
     ...baseData,
     publisher: ORGANIZATION_SCHEMA_BASE,
     mainEntity: {
       '@type': 'ItemList',
-      itemListElement: updates.slice(0, 5).map((update, index) => ({
+      itemListElement: fiveMostRecentUpdates.map((update, index) => ({
         '@type': 'ListItem',
         position: index + 1,
         item: {
