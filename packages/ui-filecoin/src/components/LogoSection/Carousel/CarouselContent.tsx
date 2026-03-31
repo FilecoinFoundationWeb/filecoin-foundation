@@ -17,7 +17,9 @@ export function CarouselContent({
   gradientVariant,
   ...props
 }: CarouselContentProps) {
-  const { carouselRef } = useCarousel()
+  const { carouselRef, canScrollPrev, canScrollNext } = useCarousel()
+
+  const isScrollable = canScrollPrev || canScrollNext
 
   return (
     <div
@@ -26,7 +28,9 @@ export function CarouselContent({
       data-slot="carousel-content"
     >
       <ul className={clsx('flex justify-between', className)} {...props} />
-      {gradientVariant && <CarouselGradient variant={gradientVariant} />}
+      {gradientVariant && isScrollable && (
+        <CarouselGradient variant={gradientVariant} />
+      )}
     </div>
   )
 }
