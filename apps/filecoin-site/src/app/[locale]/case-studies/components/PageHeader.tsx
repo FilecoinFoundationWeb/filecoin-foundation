@@ -1,11 +1,12 @@
-import Image from 'next/image'
 import type { ImageProps } from 'next/image'
+import Image from 'next/image'
 
 import { Badge } from '@filecoin-foundation/ui-filecoin/Badge'
 import {
   PageHeader as SharedPageHeader,
   type PageHeaderProps as SharedPageHeaderProps,
 } from '@filecoin-foundation/ui-filecoin/PageHeader'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
 type PageHeaderProps = {
   label?: string
@@ -33,9 +34,14 @@ export function PageHeader({
         <div className="relative aspect-video">
           <Image
             fill
+            priority
             src={image.src}
             alt={image.alt || ''}
             className="rounded-2xl object-cover"
+            sizes={buildImageSizeProp({
+              startSize: '100vw',
+              xl: '50vw',
+            })}
           />
         </div>
       )}
