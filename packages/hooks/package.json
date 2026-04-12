@@ -37,13 +37,13 @@
     "@testing-library/react": "^16.3.2",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
-    "ts-jest": "^29.4.6"
+    "ts-jest": "^29.4.9"
   },
   "peerDependencies": {
     "@filecoin-foundation/ui": "0.0.0",
     "@filecoin-foundation/utils": "0.0.0",
-    "next": "^16.2.1",
-    "nuqs": "^2.8.8",
-    "react": "^19.2.4"
+    "next": "^16.2.3",
+    "nuqs": "^2.8.9",
+    "react": "^19.2.5"
   }
 }
