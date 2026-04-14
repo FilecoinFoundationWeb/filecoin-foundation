@@ -7,12 +7,12 @@ export function getFilecoinByTheNumbers(
 ): Array<MetricCardProps> {
   return [
     {
-      title: '3.12 EiB',
+      title: '1.95 EiB',
       subTitle: t('byTheNumbers.storageCapacity.subTitle'),
       description: t('byTheNumbers.storageCapacity.description'),
     },
     {
-      title: '800+',
+      title: '482',
       subTitle: t('byTheNumbers.clients.subTitle'),
       description: t('byTheNumbers.clients.description'),
     },
