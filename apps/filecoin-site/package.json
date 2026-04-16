@@ -32,7 +32,7 @@
     "feed": "^5.2.0",
     "gray-matter": "^4.0.3",
     "js-cookie": "^3.0.5",
-    "next": "^16.2.1",
+    "next": "^16.2.4",
     "next-intl": "^4.8.3",
     "next-plausible": "^3.12.5",
     "nuqs": "^2.8.8",
