@@ -1,13 +1,13 @@
-# Migration Plan: Decap CMS & TinaCMS → Sanity CMS (Monorepo)
+# Migration Plan: Decap CMS & TinaCMS → Headless CMS (Monorepo)
 
-> **Scope:** Replace Decap CMS on `ff-site` and `ffdweb-site`, and TinaCMS on `filecoin-site`, with Sanity as the content management system for all three sites. Each site is treated as a separate migration with its own Sanity project, timeline, and cutover. The migrations share tooling conventions and can be sequenced to reduce risk.
+> **Scope:** Replace Decap CMS on `ff-site` and `ffdweb-site`, and TinaCMS on `filecoin-site`, with a headless CMS across all three sites. Two candidates have been evaluated in depth: **Sanity** and **Payload CMS**. Each site is treated as a separate migration with its own project, timeline, and cutover. The migrations share tooling conventions and can be sequenced to reduce risk. The migration phases in sections 5–7 describe the Sanity implementation path; the Payload path follows the same phase structure with different implementation details as noted in section 2.
 
 ---
 
 ## Table of Contents
 
 1. [Background & Motivation](#1-background--motivation)
-2. [Why Sanity](#2-why-sanity)
+2. [CMS Selection: Sanity vs Payload](#2-cms-selection-sanity-vs-payload)
 3. [Monorepo Architecture](#3-monorepo-architecture)
 4. [Shared Infrastructure Decisions](#4-shared-infrastructure-decisions)
 5. [ff-site (fil.org) — Migration Plan](#5-ff-site-filorg--migration-plan)
@@ -37,16 +37,165 @@ This forces editorial teams into a quasi-engineering workflow. In practice, they
 
 ---
 
-## 2. Why Sanity
+## 2. CMS Selection: Sanity vs Payload
 
-See the reasoning documented in the original `ff-site`-specific plan. The summary:
+### 2.1 Options ruled out
 
-- **No git required for publishing.** Content is stored in Sanity's hosted Content Lake. There is no git commit at any point in the publishing flow for either Decap or TinaCMS today.
-- **Covers all content types.** Sanity's schema system supports arbitrarily complex document types across all three sites' content models, including i18n for `filecoin-site`.
-- **On-demand revalidation.** Sanity webhooks trigger Next.js `revalidatePath()` calls on document publish. Content is live within ~10 seconds of the editor clicking "Publish."
-- **TypeScript-first.** `sanity typegen` generates types from schemas, replacing manual Zod type layers.
-- **Embedded Studio.** Sanity Studio deploys as a Next.js route at `/studio` on each site.
-- **Pricing.** The free tier (3 non-admin users, 500k API requests/month, unlimited documents) is sufficient per site. Each site gets its own Sanity project.
+Several CMSes were evaluated and ruled out before arriving at the two finalists:
+
+- **Ghost** — blog and pages only, no custom content types. Cannot model ecosystem projects, events, learning resources, or static page singletons. Leaves the majority of content in a git-backed workflow.
+- **Contentful** — technically capable, ruled out on cost (~$300+/month for a commercial plan with these content volumes).
+- **Strapi** — schemas are JSON files committed to git; schema changes still require a git commit. The git dependency is not fully eliminated.
+- **Directus** — UI-driven schema management with no `typegen` equivalent. Good for teams that want schema flexibility without code deploys; not a natural fit for a TypeScript-first monorepo.
+- **Storyblok / Prismic / Hygraph** — optimised for visual/component-based page building. Not suited for structured data types like events (nested program/schedule/speakers/sponsors) or ecosystem projects (20-option taxonomy, nested tech fields).
+
+The two credible candidates are **Sanity** and **Payload CMS**.
+
+---
+
+### 2.2 Sanity vs Payload: comparison
+
+Both satisfy the core migration goals: no git commits for publishing, support for arbitrary content types, TypeScript-first schemas, webhooks for on-demand revalidation, and a Next.js-native admin interface. They differ significantly in hosting model, data portability, and operational trade-offs.
+
+| Dimension | Sanity | Payload CMS |
+|---|---|---|
+| **Licence** | Studio is MIT; Content Lake is proprietary SaaS | Fully MIT open source |
+| **Data storage** | Proprietary Content Lake (Sanity-hosted) | PostgreSQL (standard, portable) |
+| **Managed hosting** | Sanity-managed, no infrastructure to run | Payload Cloud (managed) or any PostgreSQL host |
+| **Schema definition** | TypeScript objects in `sanity/schemas/` | TypeScript objects in `payload.config.ts` |
+| **Type generation** | `sanity typegen` → `types.ts` | Payload generates types natively from config |
+| **Query language** | GROQ (proprietary, Sanity-specific) | Standard database queries via Payload's local API or REST/GraphQL |
+| **Rich text** | Portable Text (open spec, Sanity-ecosystem tooling) | Lexical editor with typed custom blocks |
+| **Admin UI placement** | Embedded Next.js route at `/studio` (separate from app code) | Runs inside the Next.js app at `/admin` as a Next.js plugin — same process, same deploy |
+| **i18n support** | Via `@sanity/document-internationalization` plugin | Built-in i18n field support in core |
+| **Webhooks / revalidation** | Yes — fires on document publish | Yes — fires on document publish |
+| **Pricing (managed)** | Free tier: 3 non-admin users, 500k req/month, unlimited docs | Payload Cloud: free tier available; paid plans from ~$20/month |
+| **Pricing (self-hosted)** | Not available — Content Lake is always Sanity-managed | Free — run on any PostgreSQL provider (Neon, Supabase, Railway, self-hosted) |
+| **Exit / migration path** | Export via `sanity dataset export` (NDJSON); GROQ queries and schema tooling must be rewritten for any new CMS | Standard `pg_dump` / database migration to any PostgreSQL host; no CMS-layer changes required |
+| **Next.js ecosystem maturity** | Deep: `next-sanity`, official App Router patterns, widespread adoption | Growing fast: officially a Next.js plugin, strong community momentum |
+| **Operational burden (managed)** | Zero infrastructure to run | Zero infrastructure to run (on Payload Cloud) |
+| **Operational burden (self-hosted)** | Not applicable — cannot self-host | Standard PostgreSQL operations: backups, upgrades, connection pooling |
+
+---
+
+### 2.3 Pricing comparison: small marketing team (3–5 people)
+
+> **Note:** Pricing figures below are accurate as of April 2026. Verify current rates at [sanity.io/pricing](https://www.sanity.io/pricing) and [payloadcms.com/cloud](https://payloadcms.com/cloud) before making a final decision — both vendors adjust their plans periodically.
+
+#### Pricing models
+
+The two platforms use fundamentally different pricing models, which affects how costs scale as the team grows or as more sites are added.
+
+**Sanity** charges per non-admin user, per project, beyond the first three. Admin-role users (typically engineers) are unlimited and free — only editorial users (Editor and Author roles) count toward the billable limit. The free tier covers exactly 3 non-admin users per project.
+
+**Payload Cloud** charges per project (database instance), not per user. Editorial team size has no direct effect on the monthly bill — adding a fifth or tenth editor costs nothing extra.
+
+#### Plan tiers
+
+| | Sanity Free | Sanity Growth | Payload Cloud Starter | Payload Cloud Pro |
+|---|---|---|---|---|
+| **Monthly cost** | $0 | $15 / non-admin user / month (first 3 free) | $0 | ~$20 / project / month |
+| **Non-admin editorial users** | 3 per project | Unlimited (billed above 3) | Unlimited | Unlimited |
+| **Admin / developer users** | Unlimited | Unlimited | Unlimited | Unlimited |
+| **Projects** | Unlimited | Unlimited | 1 | Unlimited |
+| **Documents** | Unlimited | Unlimited | Limited on Starter | Unlimited |
+| **API requests** | 500k CDN req / month | Scales with usage | Included | Included |
+| **Bandwidth** | 10 GB / month | Scales with usage | Included | Included |
+| **Asset storage** | 20 GB | Scales with usage | Included | Included |
+| **Self-hosted option** | No | No | — | — |
+| **Self-hosted Payload (software cost)** | — | — | $0 (MIT) | $0 (MIT) |
+
+#### Cost scenarios for this monorepo (3 sites)
+
+The following scenarios assume all editorial users need access to all three sites' admin interfaces. If different team members work on different sites only, Sanity's per-project cost scales down.
+
+| Scenario | Sanity | Payload Cloud | Notes |
+|---|---|---|---|
+| **3 editorial users, 3 sites** | **$0 / month** | **~$60 / month** (3 × Pro) | Sanity free tier covers exactly 3 non-admin users per project |
+| **4 editorial users, 3 sites** | **$45 / month** (1 extra user × $15 × 3 projects) | **~$60 / month** | Payload Cloud cost unchanged — user count doesn't affect price |
+| **5 editorial users, 3 sites** | **$90 / month** (2 extra users × $15 × 3 projects) | **~$60 / month** | Payload becomes cheaper at 5 users |
+| **5 editorial users, 1 site** | **$30 / month** | **~$20 / month** | Closer at single-site scale |
+| **3 users, self-hosted Payload** | Not available | **$0** (software) + DB hosting (~$10–25 / month on Neon or Railway) | Payload software is free; pay only for PostgreSQL hosting |
+
+#### Key observations
+
+**Sanity is free for up to 3 non-admin editors per project.** If the editorial team stays at exactly 3 people — or if different team members have access to only one or two of the three sites — Sanity costs nothing. Engineers and admins are always free regardless of count.
+
+**Payload Cloud cost is flat regardless of team size.** Adding more editors to Payload Cloud has no marginal cost. For a growing team, Payload's pricing becomes increasingly favourable — a team of 10 editorial users on 3 Payload Cloud projects still costs ~$60/month.
+
+**The crossover point for this monorepo is 4–5 editorial users.** Below 4 non-admin Sanity users, Sanity is cheaper. At 5 or more, Payload Cloud is cheaper. The exact crossover depends on how many projects each user needs access to.
+
+**Self-hosted Payload eliminates the per-project fee entirely.** With Payload running on a self-managed PostgreSQL database (e.g. Neon's free tier for smaller sites, or a $15/month Supabase instance), the software cost is zero. Total monthly spend for all three sites could be $30–75/month in database hosting alone — cheaper than any managed CMS tier for this team size.
+
+**Sanity has no self-hosted fallback.** If Sanity's pricing increases or terms change, the only option is to pay the new price or migrate away. Payload Cloud's pricing can be escaped at any time by moving to self-hosted PostgreSQL, changing nothing but `DATABASE_URL`.
+
+---
+
+### 2.4 Vendor lock-in: the key risk with Sanity
+
+Sanity's Content Lake is a proprietary hosted service. Choosing Sanity means accepting the following lock-in surface area:
+
+**GROQ is not portable.** GROQ (Graph-Relational Object Queries) is Sanity's query language. Every data fetch in the Next.js apps — all of the `src/sanity/queries/*.ts` files written during the migration — uses GROQ syntax that has no equivalent outside Sanity. If the team ever migrates away from Sanity, every query must be rewritten for the new data layer.
+
+**The document format is proprietary.** Sanity stores content as JSON documents with Sanity-specific metadata fields (`_id`, `_type`, `_key`, `_ref`, `_weak`). Portable Text blocks carry `_type` and `_key` annotations. Migrating this data to another CMS requires a transformation layer, not a straight copy.
+
+**`sanity typegen` is Sanity-only.** The TypeScript types generated by `sanity typegen` are derived from Sanity's schema format. If the team moves to another CMS, the type generation pipeline must be rebuilt from scratch.
+
+**Data export exists but migration is expensive.** Sanity provides `sanity dataset export` which produces an NDJSON file of all documents. The data is accessible and not held hostage. But converting it to another CMS's format — and rewriting the GROQ queries, schema definitions, and typegen pipeline — is effectively a full CMS migration again. The cost of leaving Sanity is comparable to the cost of adopting it.
+
+**Pricing risk.** Sanity's free tier is generous today. If pricing changes, or if the editorial team grows beyond 3 non-admin users per project, costs increase. The team has no self-hosted alternative to fall back on — Sanity is always SaaS. See section 2.3 for a full cost breakdown by team size and site count.
+
+---
+
+### 2.5 Payload's open-source exit path
+
+Payload stores content in standard PostgreSQL. This is the decisive advantage for data portability.
+
+**Starting on Payload Cloud:** Payload Cloud provisions and manages a PostgreSQL database. There is no infrastructure to run. The developer experience is comparable to using Sanity — provision a project, get connection credentials, start building.
+
+**Moving off Payload Cloud at any time:** Because the database is standard PostgreSQL, leaving Payload Cloud is a database migration, not a CMS migration:
+
+1. Provision a PostgreSQL instance anywhere — Neon, Supabase, Railway, AWS RDS, a self-hosted VM, or any other provider.
+2. Run `pg_dump` on the Payload Cloud database.
+3. Restore the dump to the new instance.
+4. Update `DATABASE_URL` in environment variables.
+5. Done. No content transformation, no query rewrites, no schema changes.
+
+The Next.js application code — the Payload schema definitions, the admin UI, the local API calls — is unchanged. Payload the software is MIT-licensed and continues to work regardless of where the database lives or whether Payload the company exists.
+
+**Schemas are also portable.** Payload schemas are TypeScript objects in `payload.config.ts`. Unlike GROQ, the query patterns used to fetch Payload content (via Payload's local API or REST/GraphQL) use standard patterns that can be adapted to other data sources. There is no proprietary query language to relearn.
+
+---
+
+### 2.6 How migration phases differ between Sanity and Payload
+
+The phase structure in sections 5–7 describes the Sanity implementation. A Payload migration follows the same phases with these implementation differences:
+
+| Phase | Sanity | Payload |
+|---|---|---|
+| Schema design | TypeScript files in `src/sanity/schemas/` | TypeScript collections in `payload.config.ts` |
+| Migration scripts | Upload via `@sanity/client` transaction batches | Import via Payload's local API or REST API |
+| Data layer (Next.js) | `sanityFetch()` + GROQ queries | Payload local API (`payload.find()`, `payload.findByID()`) or REST |
+| Type generation | `sanity typegen` → `src/sanity/types.ts` | Payload generates types automatically from config |
+| Admin UI | `/studio` route via `next-sanity/studio` | `/admin` route via `@payloadcms/next` plugin (built into the app) |
+| Revalidation | `parseBody()` from `next-sanity/webhook` | Payload's built-in afterChange hooks or webhooks |
+| Rich text rendering | `@portabletext/react` | `@payloadcms/richtext-lexical` React renderer |
+
+---
+
+### 2.7 Recommendation
+
+**Sanity is the lower-friction path to production. Payload is the lower-risk long-term architecture.**
+
+Sanity wins on time-to-production: the Next.js integration is more mature, `sanity typegen` is excellent, and the free tier removes any cost decision for now. If the goal is to ship the migration as quickly as possible with the least new infrastructure to reason about, Sanity is the right choice.
+
+Payload wins on strategic fit: the data lives in a standard database the team controls, there is no proprietary query language to learn, the exit path is a `pg_dump`, and the MIT licence means the software cannot be taken away or repriced. Starting on Payload Cloud provides the same zero-infrastructure experience as Sanity, with the option to move to any PostgreSQL host at any time with a single environment variable change.
+
+**The deciding question is: how much does vendor lock-in matter to this organisation?**
+
+If the sites are expected to be stable for years with infrequent architectural change, Sanity's lock-in is a manageable risk. If the organisation has a principled preference for open-source infrastructure and data sovereignty — which, given that this is the Filecoin Foundation, it might — Payload's architecture is a better match for those values.
+
+Both options are presented in the migration phases that follow, with Sanity as the primary described path and Payload differences called out where they are significant.
 
 ---
 
@@ -64,39 +213,44 @@ filecoin-foundation/
 │   ├── utils/            ← shared utilities (unchanged)
 │   └── ...
 ├── scripts/
-│   └── migrate-to-sanity/  ← NEW: shared migration script utilities
-└── docs/
-    └── sanity-migration-plan.md  ← this document
+│   └── migrate-to-cms/     ← NEW: shared migration script utilities
+└── sanity-migration-plan.md  ← this document
 ```
 
-**Shared migration tooling.** Migration scripts for all three sites live in `scripts/migrate-to-sanity/`. A common `lib/` within that directory holds utilities for reading markdown files, converting markdown bodies to Portable Text, and batch-uploading documents via the Sanity client. Each site has its own subdirectory of collection-specific scripts.
+**Shared migration tooling.** Migration scripts for all three sites live in `scripts/migrate-to-cms/`. A common `lib/` within that directory holds utilities for reading markdown files, converting markdown bodies to rich text (Portable Text for Sanity; Lexical for Payload), and batch-uploading documents via the chosen CMS client. Each site has its own subdirectory of collection-specific scripts.
 
-**Separate Sanity projects per site.** Each site gets its own Sanity project ID and dataset. Editorial teams, content models, and publishing cadences differ between sites. A shared project would complicate role management and create schema coupling between independent teams. Under a shared Sanity organization, billing and user management are still centralised.
+**Separate CMS projects per site.** Each site gets its own project (Sanity project ID and dataset, or Payload Cloud project and database). Editorial teams, content models, and publishing cadences differ between sites. A shared project would complicate role management and create schema coupling between independent teams.
 
 ---
 
 ## 4. Shared Infrastructure Decisions
 
-### 4.1 Sanity Studio placement
+### 4.1 Admin UI placement
 
-Each site embeds Sanity Studio as a Next.js App Router route at `/studio`. This keeps the admin interface on the same domain without separate hosting.
+**Sanity:** Each site embeds Sanity Studio as a Next.js App Router route at `/studio`. Studio is a separate React application served from the same deployment.
+
+**Payload:** The admin UI runs at `/admin` as a native part of the Next.js app via `@payloadcms/next`. It shares the same process, build, and deployment — no separate route configuration needed.
 
 ### 4.2 On-demand revalidation
 
-All three sites use the same webhook → revalidation pattern:
+All three sites use the same webhook → revalidation pattern regardless of CMS:
 
-1. Sanity document published
-2. Sanity POST to `/api/revalidate` on the respective site
+1. Document published in the CMS
+2. CMS POSTs to `/api/revalidate` on the respective site
 3. Next.js `revalidateTag()` clears the affected cache entries
 4. Pages update within ~10 seconds, no rebuild required
 
+Sanity uses `parseBody()` from `next-sanity/webhook` for signature validation. Payload fires `afterChange` hooks or configurable webhooks.
+
 ### 4.3 Images
 
-Existing images in each site's `public/assets/` directory are not migrated. They are stored as plain URL string fields in Sanity documents and continue to be served from Vercel CDN. New images uploaded post-migration go to Sanity's asset pipeline (`cdn.sanity.io`).
+Existing images in each site's `public/assets/` directory are not migrated. They are stored as plain URL string fields in CMS documents and continue to be served from Vercel CDN. New images uploaded post-migration go to the CMS asset pipeline (Sanity CDN or Payload's configured upload storage).
 
 ### 4.4 TypeScript types
 
-Each site runs `sanity typegen` against its own schema to generate `src/sanity/types.ts`. These generated types replace the manual Zod content type layers in each app.
+**Sanity:** Each site runs `sanity typegen` against its own schema to generate `src/sanity/types.ts`.
+
+**Payload:** Types are generated automatically by Payload from `payload.config.ts` during the build step — no separate command required.
 
 ### 4.5 Sequencing recommendation
 
@@ -838,23 +992,26 @@ The filecoin-site migration is independent of ff-site and ffdweb-site. It can st
 
 ## 9. Ongoing Maintenance & Engineering Involvement
 
-### 9.1 What Sanity requires from engineering post-migration
+### 9.1 What either CMS requires from engineering post-migration
 
-**Schema changes — the main ongoing cost.** Any time the editorial team needs a new field, a new content type, or a structural change to an existing type, an engineer must update the TypeScript schema file, run `sanity typegen`, and deploy. This is not a Sanity-specific limitation — it is inherent to any typed CMS with code-defined schemas. Rough cost: 30 minutes for a simple field addition, 1–3 days for a new collection.
+The following tasks apply regardless of whether Sanity or Payload is chosen.
 
-**GROQ query updates.** If a schema change affects the shape of data returned to a page, the corresponding query and any TypeScript types that consume it need updating. This is tightly coupled to schema changes — it is the same engineering touch, not an additional one.
+**Schema changes — the main ongoing cost.** Any time the editorial team needs a new field, a new content type, or a structural change to an existing type, an engineer must update the TypeScript schema file and deploy. This is inherent to any typed CMS with code-defined schemas. Rough cost: 30 minutes for a simple field addition, 1–3 days for a new collection.
 
-**Dependency updates.** `@sanity/client`, `next-sanity`, `@portabletext/react` are npm packages updated at the same cadence as any other dependency in the monorepo. No different from updating `tailwindcss` or `next`.
+**Data layer updates.** If a schema change affects the shape of data returned to a page, the corresponding queries (GROQ for Sanity, local API calls for Payload) and TypeScript types need updating. This is tightly coupled to schema changes — the same engineering touch, not an additional one.
 
-**Webhook monitoring.** The `/api/revalidate` endpoint needs to stay healthy. If it silently breaks, content still publishes in Studio but pages serve stale cache indefinitely. This needs a Sentry alert on the endpoint from day one — it cannot be assumed to be working. Low-touch once instrumented, but cannot be ignored.
+**Dependency updates.** CMS client packages are updated at the same cadence as any other dependency in the monorepo.
 
-**The `EncryptedField` component (ff-site only).** The custom Studio component that calls `/api/encryption` is bespoke code. If the encryption endpoint contract changes, this component needs updating. Narrow surface area, but engineering-owned.
+**Webhook monitoring.** The `/api/revalidate` endpoint needs to stay healthy regardless of CMS. If it breaks silently, content publishes in the admin UI but pages serve stale cache indefinitely. Needs a Sentry alert from day one.
 
-**What requires zero engineering post-migration:**
-- Routine publishing (blog posts, events, projects, pages) — this is the whole point
-- Server maintenance, uptime, backups, SSL — Sanity is fully managed SaaS
-- Security patches on the Content Lake — Sanity's responsibility
-- Storage scaling — handled by Sanity
+**The `EncryptedField` component (ff-site only).** The custom admin input component that calls `/api/encryption` is bespoke code in either CMS. If the encryption endpoint contract changes, this component needs updating.
+
+**Sanity-specific additional task: `sanity typegen` in CI.** The type generation step must be run in CI and the output committed or checked. If generated types drift from committed types, CI should fail. Payload generates types automatically during build — no equivalent step needed.
+
+**What requires zero engineering post-migration (both CMSes):**
+- Routine publishing (blog posts, events, projects, pages)
+- Security patches on the hosted data layer (Sanity's or Payload Cloud's responsibility)
+- Storage scaling (handled by the managed service)
 
 ---
 
@@ -885,26 +1042,29 @@ A Ghost-only approach does not eliminate engineering from the publishing workflo
 
 ### 9.3 Engineering involvement: before vs after
 
-| Task | Decap / TinaCMS today | Sanity post-migration |
-|---|---|---|
-| Publish a blog post | Engineer sometimes needed (CI failure, branch conflict, git confusion) | Zero engineering |
-| Publish an event or project | Engineer sometimes needed | Zero engineering |
-| Add a field to an existing collection | Engineer required (schema + code change) | Engineer required (schema + code change + typegen) |
-| Add a new content type | Engineer required | Engineer required (schema + queries + migration script) |
-| CMS platform outage | Engineering investigates (custom Decap fork) | Sanity's problem |
-| Infrastructure / server maintenance | Netlify / Vercel managed | Vercel managed (Sanity hosted) |
-| Content visible within seconds of publishing | No (24-hour ISR, or manual cache bust) | Yes (~10s via webhook revalidation) |
-| Rollback a content mistake | Git revert — engineer required | Sanity revision history — editor self-service |
+| Task | Decap / TinaCMS today | Sanity | Payload |
+|---|---|---|---|
+| Publish a blog post | Engineer sometimes needed (CI failure, branch conflict, git confusion) | Zero engineering | Zero engineering |
+| Publish an event or project | Engineer sometimes needed | Zero engineering | Zero engineering |
+| Add a field to an existing collection | Engineer required (schema + code change) | Engineer required (schema + code change + typegen) | Engineer required (schema + code change; types auto-generated) |
+| Add a new content type | Engineer required | Engineer required (schema + queries + migration script) | Engineer required (schema + API calls + migration script) |
+| CMS platform outage | Engineering investigates (custom Decap fork) | Sanity's problem | Payload Cloud's problem (or your own DB if self-hosted) |
+| Infrastructure / server maintenance | Netlify / Vercel managed | Vercel + Sanity managed | Vercel + Payload Cloud managed (or self-managed DB) |
+| Content visible within seconds of publishing | No (24-hour ISR, or manual cache bust) | Yes (~10s via webhook revalidation) | Yes (~10s via afterChange hooks) |
+| Rollback a content mistake | Git revert — engineer required | Sanity revision history — editor self-service | Payload version history (with versions plugin) — editor self-service |
+| Migrate away from CMS | Full CMS migration | Full CMS migration (GROQ rewrites + data transform) | Database migration only — `pg_dump` + restore |
 
 ---
 
 ### 9.4 Honest assessment
 
-**Sanity reduces engineering involvement in routine publishing to zero.** That is the primary goal and it is fully achieved. The ongoing engineering cost is schema maintenance: new fields and new content types require a code change. This is true of any headless CMS with a typed content model and is not meaningfully more than Decap or TinaCMS require for the same changes today.
+**Both CMSes reduce engineering involvement in routine publishing to zero.** That is the primary goal and it is fully achieved by either choice. The ongoing engineering cost is schema maintenance — new fields and new content types require a code change in both systems. This is not meaningfully more than Decap or TinaCMS require today.
 
-**The one genuine Sanity maintenance risk** is the webhook-to-revalidation path. If `/api/revalidate` breaks silently, editors see their changes in Studio but the live site serves stale content, with no obvious error. This is mitigated by adding a Sentry alert on the endpoint from day one and by Sanity's own webhook delivery retry logic. Ghost has the same risk if used for revalidation — it is not a Sanity-specific concern.
+**The webhook-to-revalidation path** is the main operational risk in either CMS. If `/api/revalidate` breaks silently, editors see their changes in the admin UI but the live site serves stale content. Mitigate with a Sentry alert from day one regardless of which CMS is chosen.
 
-**If editorial content needs are expected to be stable** (no new collections, infrequent field additions), Sanity's post-migration maintenance burden is low. **If the sites are in active product development** with frequent schema evolution, that schema-change engineering cost is real and should be factored into the decision. It is not eliminated by choosing any other headless CMS.
+**If editorial content needs are stable** (no new collections, infrequent field additions), either CMS has a low maintenance burden. **If the sites are in active product development** with frequent schema evolution, the schema-change engineering cost is real — but it is the same for both CMSes.
+
+**The meaningful long-term difference is data sovereignty.** Sanity is easier to start with and has the more mature Next.js tooling today. Payload gives the organisation full control over its data, an unambiguous exit path (a standard database migration), and architecture that aligns with open-source values. Starting on Payload Cloud and moving to self-hosted PostgreSQL at any future point requires only an environment variable change — not a CMS migration.
 
 ---
 
@@ -928,5 +1088,5 @@ A Ghost-only approach does not eliminate engineering from the publishing workflo
 
 ---
 
-*Last updated: 2026-04-21*
-*Status: Draft — pending Phase 0 spike sign-off on ffdweb-site*
+*Last updated: 2026-04-22*
+*Status: Draft — pending CMS selection decision (Sanity vs Payload) and Phase 0 spike sign-off on ffdweb-site*
