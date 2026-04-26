@@ -92,7 +92,7 @@ jobs:
 
       - name: Notify Slack - Cleanup PR Created
         if: steps.cleanup.outputs.has_unused == 'true'
-        uses: slackapi/slack-github-action@v3.0.1
+        uses: slackapi/slack-github-action@v3.0.2
         with:
           method: chat.postMessage
           token: ${{ secrets.SLACK_BOT_TOKEN }}
@@ -104,7 +104,7 @@ jobs:
 
       - name: Notify Slack - No Cleanup Needed
         if: steps.cleanup.outputs.has_unused == 'false'
-        uses: slackapi/slack-github-action@v3.0.1
+        uses: slackapi/slack-github-action@v3.0.2
         with:
           method: chat.postMessage
           token: ${{ secrets.SLACK_BOT_TOKEN }}
