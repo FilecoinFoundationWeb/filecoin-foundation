@@ -2,18 +2,19 @@ UNUSED ASSETS REPORT
 ===================
 
 ff-site:
-  public/assets/images/2025_ffannualreport_gsr_1x.webp
-  Total: 1
+  Total: 0
 
 ffdweb-site:
   Total: 0
 
 filecoin-site:
-  Total: 0
+  public/assets/miniatures/singularity-miniature.svg
+  public/assets/images/victor-chang.webp
+  Total: 2
 
 uxit:
   Total: 0
 
-Total unused: 1
-Total deleted: 1
-Generated: 2026-03-01T03:11:10.141Z
+Total unused: 2
+Total deleted: 2
+Generated: 2026-05-01T03:17:42.533Z
