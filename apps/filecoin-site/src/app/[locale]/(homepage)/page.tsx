@@ -161,7 +161,7 @@ export default async function Home({ params }: BlogProps) {
         </SectionContent>
       </PageSection>
 
-      <PageSection paddingVariant="none" backgroundVariant="light">
+      <PageSection backgroundVariant="light">
         <SectionContentWrapper>
           <SectionContent
             descriptionColorBase
