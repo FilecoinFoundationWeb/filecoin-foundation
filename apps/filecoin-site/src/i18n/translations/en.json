@@ -23,7 +23,7 @@
         "description": "Enough to store Wikipedia's text 22 million times over"
       },
       "clients": {
-        "subTitle": "clients",
+        "subTitle": "large clients",
         "description": "With more than 1TiB active data"
       },
       "smartContracts": {

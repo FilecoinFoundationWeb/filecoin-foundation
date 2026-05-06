@@ -7,7 +7,6 @@ import FilOneMiniatureLogo from '@/assets/miniatures/fil-one-miniature.svg'
 import FilecoinOnchainCloudMiniatureLogo from '@/assets/miniatures/filecoin-onchain-cloud-miniature.svg'
 import LighthouseMiniatureLogo from '@/assets/miniatures/lighthouse-miniature.svg'
 import RamoMiniatureLogo from '@/assets/miniatures/ramo-miniature.svg'
-import StorachaMiniatureLogo from '@/assets/miniatures/storacha-miniature.svg'
 
 import type { StorageProviderCardProps } from '../components/StorageProviderCard/StorageProviderCard'
 
@@ -116,25 +115,6 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
       ],
       url: 'https://use.ramo.computer/',
       logo: RamoMiniatureLogo,
-    },
-    {
-      name: 'Storacha',
-      description: t('providers.storacha.description'),
-      labels: [t('providers.storacha.labels.0')],
-      pricing: {
-        cents: 1_000,
-        monthlyStorageRate: t('providers.storacha.monthlyStorageRate'),
-        offer: t('providers.storacha.offer'),
-      },
-      bestFor: [t('bestFor.developers')],
-      keyFeatures: [
-        t('providers.storacha.keyFeatures.0'),
-        t('providers.storacha.keyFeatures.1'),
-        t('providers.storacha.keyFeatures.2'),
-        t('providers.storacha.keyFeatures.3'),
-      ],
-      url: 'https://storacha.network/',
-      logo: StorachaMiniatureLogo,
     },
   ] satisfies Array<StorageProvider>
 }
