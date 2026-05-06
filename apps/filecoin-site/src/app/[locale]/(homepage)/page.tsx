@@ -137,27 +137,6 @@ export default async function Home({ params }: BlogProps) {
         </SectionContent>
       </PageSection>
 
-      <PageSection paddingVariant="none" backgroundVariant="light">
-        <SectionContentWrapper>
-          <SectionContent
-            descriptionColorBase
-            headingTag="h2"
-            title={t('ipfs.title')}
-            description={[t('ipfs.paragraph1'), t('ipfs.paragraph2')]}
-            cta={
-              <Button href="https://ipfs.tech/" variant="primary">
-                {t('ipfs.learnMoreCta')}
-              </Button>
-            }
-          />
-          <Image
-            src={graphicsData.IPFSIllustration.data}
-            alt={graphicsData.IPFSIllustration.alt}
-            className="h-72 min-w-80 object-contain"
-          />
-        </SectionContentWrapper>
-      </PageSection>
-
       <PageSection backgroundVariant="light">
         <SectionContent
           centerCTA
@@ -180,6 +159,27 @@ export default async function Home({ params }: BlogProps) {
             />
           </div>
         </SectionContent>
+      </PageSection>
+
+      <PageSection paddingVariant="none" backgroundVariant="light">
+        <SectionContentWrapper>
+          <SectionContent
+            descriptionColorBase
+            headingTag="h2"
+            title={t('ipfs.title')}
+            description={[t('ipfs.paragraph1'), t('ipfs.paragraph2')]}
+            cta={
+              <Button href="https://ipfs.tech/" variant="primary">
+                {t('ipfs.learnMoreCta')}
+              </Button>
+            }
+          />
+          <Image
+            src={graphicsData.IPFSIllustration.data}
+            alt={graphicsData.IPFSIllustration.alt}
+            className="h-72 min-w-80 object-contain"
+          />
+        </SectionContentWrapper>
       </PageSection>
 
       <PageSection backgroundVariant="dark" paddingVariant="bottomCompact">
