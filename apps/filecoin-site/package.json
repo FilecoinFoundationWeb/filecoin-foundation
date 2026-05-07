@@ -33,7 +33,7 @@
     "gray-matter": "^4.0.3",
     "js-cookie": "^3.0.5",
     "next": "^16.2.1",
-    "next-intl": "^4.8.3",
+    "next-intl": "^4.9.2",
     "next-plausible": "^3.12.5",
     "nuqs": "^2.8.8",
     "ohash": "^2.0.11",
