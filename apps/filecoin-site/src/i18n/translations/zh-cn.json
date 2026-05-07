@@ -769,7 +769,7 @@
     "caseStudies": "案例研究",
     "storeData": "存储数据",
     "provideStorage": "提供存储",
-    "buildOnFilecoin": "在 Filecoin 上构建",
+    "buildOnFilecoin": "开始在 Filecoin 上构建",
     "communityHub": "社区中心",
     "blog": "博客",
     "developers": "开发者",
@@ -801,7 +801,7 @@
     "descriptions": {
       "learn": "了解 Filecoin 是什么以及它如何运作",
       "caseStudies": "查看其他人如何在现实世界中使用 Filecoin",
-      "buildOnFilecoin": "开始在 Filecoin 网络上构建应用",
+      "buildOnFilecoin": "在 Filecoin 网络上构建应用",
       "documentation": "Filecoin 官方文档",
       "cookbook": "使用 Filecoin 和 FVM 构建的秘诀",
       "github": "探索 Filecoin 的开源代码库",

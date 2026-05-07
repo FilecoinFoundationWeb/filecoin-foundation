@@ -46,6 +46,11 @@ export default async function StoreData() {
           <PageHeader
             title={t('hero.title')}
             description={t('hero.description')}
+            cta={
+              <Button href={PATHS.STORE_DATA_TALK_TO_EXPERT.path} variant="primary">
+                {t('notSure.cta')}
+              </Button>
+            }
           />
         </PageSection>
 
