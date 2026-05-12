@@ -20,7 +20,7 @@ jobs:
             base_url: https://ffdweb.org
             subpath: "src/**/*.md"
           - app: filecoin-site
-            base_url: https://filecoin-site.vercel.app/
+            base_url: https://filecoin.io/
             subpath: "content/**/*.md"
 
     env:
