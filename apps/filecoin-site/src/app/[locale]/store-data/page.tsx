@@ -12,7 +12,6 @@ import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
 import { SectionContent } from '@filecoin-foundation/ui-filecoin/SectionContent'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 import { trustedByLogos } from '@/data/trustedByLogos'
@@ -24,7 +23,6 @@ import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import { StorageProviderCard } from './components/StorageProviderCard/StorageProviderCard'
-import { StorageProviderSection } from './components/StorageProviderSection'
 import {
   getFilecoinStorageProviders,
   getFeaturedFilecoinStorageProviders,
@@ -48,6 +46,11 @@ export default async function StoreData() {
           <PageHeader
             title={t('hero.title')}
             description={t('hero.description')}
+            cta={
+              <Button href={PATHS.STORE_DATA_TALK_TO_EXPERT.path} variant="primary">
+                {t('notSure.cta')}
+              </Button>
+            }
           />
         </PageSection>
 
@@ -81,18 +84,13 @@ export default async function StoreData() {
             ))}
           </CardGrid>
 
-          <StorageProviderSection
-            title={t('selectedSolutions.title')}
-            providers={storageProviders}
-          />
-
-          <Button
-            href={`${FILECOIN_FOUNDATION_URLS.ecosystemExplorer.href}?category=data-storage-management`}
-            variant="primary"
-            className="self-center"
-          >
-            {t('seeMore')}
-          </Button>
+          <CardGrid as="ul" variant="mdTwoLgThreeWide">
+            {storageProviders
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((provider) => (
+                <StorageProviderCard key={provider.name} as="li" {...provider} />
+              ))}
+          </CardGrid>
         </div>
       </PageSection>
 

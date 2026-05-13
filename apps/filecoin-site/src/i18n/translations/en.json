@@ -781,7 +781,7 @@
     "caseStudies": "Case Studies",
     "storeData": "Store Data",
     "provideStorage": "Provide Storage",
-    "buildOnFilecoin": "Build on Filecoin",
+    "buildOnFilecoin": "Start Building on Filecoin",
     "communityHub": "Community Hub",
     "blog": "Blog",
     "developers": "Developers",
@@ -813,7 +813,7 @@
     "descriptions": {
       "learn": "Understand what Filecoin is and how it works",
       "caseStudies": "See how others are using Filecoin in the real world",
-      "buildOnFilecoin": "Start building apps on the Filecoin network",
+      "buildOnFilecoin": "Build apps on the Filecoin network",
       "documentation": "Official documentation for Filecoin",
       "cookbook": "Recipes for building with Filecoin and the FVM",
       "github": "Explore Filecoin's open-source repositories",
