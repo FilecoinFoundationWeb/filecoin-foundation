@@ -945,4 +945,14 @@ export const redirects = [
     destination: '/zh-cn/blog/bridging-the-filecoin-and-ethereum-communities',
     permanent: true,
   },
+  {
+    source: '/blog/posts/:slug',
+    destination: '/blog/:slug',
+    permanent: true,
+  },
+  {
+    source: '/zh-cn/blog/posts/:slug',
+    destination: '/zh-cn/blog/:slug',
+    permanent: true,
+  },
 ]
