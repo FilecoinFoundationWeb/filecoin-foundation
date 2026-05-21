@@ -1,0 +1,434 @@
+name: PR Explainer for Designers
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: write
+  deployments: read
+
+concurrency:
+  group: pr-explainer-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  explain-pr:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Gather PR data and generate explanation
+        id: explain
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_BRANCH: ${{ github.event.pull_request.head.ref }}
+          PR_BASE: ${{ github.event.pull_request.base.ref }}
+        run: |
+          set -euo pipefail
+
+          # ──────────────────────────────────────────────
+          # 1. Collect changed files from the GitHub API
+          # ──────────────────────────────────────────────
+          CHANGED_FILES=$(gh pr view "$PR_NUMBER" --json files --jq '.files[].path')
+          FILE_COUNT=$(echo "$CHANGED_FILES" | wc -l | tr -d ' ')
+          PR_STATS=$(gh pr view "$PR_NUMBER" --json files --jq '{additions: [.files[].additions] | add, deletions: [.files[].deletions] | add}')
+          ADDITIONS=$(echo "$PR_STATS" | jq '.additions // 0')
+          DELETIONS=$(echo "$PR_STATS" | jq '.deletions // 0')
+
+          # ──────────────────────────────────────────────
+          # 2. Categorize files by type and affected app
+          # ──────────────────────────────────────────────
+          FF_CONTENT="" ; FF_COMPONENTS="" ; FF_STYLES="" ; FF_CONFIG="" ; FF_OTHER=""
+          FFDWEB_CONTENT="" ; FFDWEB_COMPONENTS="" ; FFDWEB_STYLES="" ; FFDWEB_CONFIG="" ; FFDWEB_OTHER=""
+          FIL_CONTENT="" ; FIL_COMPONENTS="" ; FIL_STYLES="" ; FIL_CONFIG="" ; FIL_OTHER=""
+          PKG_FILES="" ; ROOT_FILES="" ; CI_FILES="" ; UXIT_FILES=""
+          AFFECTED_APPS=""
+
+          while IFS= read -r file; do
+            [[ -z "$file" ]] && continue
+
+            # Detect app
+            if [[ "$file" == apps/ff-site/* ]]; then
+              AFFECTED_APPS="$AFFECTED_APPS ff-site"
+              case "$file" in
+                apps/ff-site/src/content/*.md) FF_CONTENT="$FF_CONTENT\n- \`$file\`" ;;
+                apps/ff-site/src/app/*_components/*|apps/ff-site/src/app/*components/*) FF_COMPONENTS="$FF_COMPONENTS\n- \`$file\`" ;;
+                *.css|*.scss) FF_STYLES="$FF_STYLES\n- \`$file\`" ;;
+                apps/ff-site/next.config*|apps/ff-site/tsconfig*|apps/ff-site/package.json) FF_CONFIG="$FF_CONFIG\n- \`$file\`" ;;
+                *) FF_OTHER="$FF_OTHER\n- \`$file\`" ;;
+              esac
+
+            elif [[ "$file" == apps/ffdweb-site/* ]]; then
+              AFFECTED_APPS="$AFFECTED_APPS ffdweb-site"
+              case "$file" in
+                apps/ffdweb-site/src/content/*.md) FFDWEB_CONTENT="$FFDWEB_CONTENT\n- \`$file\`" ;;
+                apps/ffdweb-site/src/app/*_components/*|apps/ffdweb-site/src/app/*components/*) FFDWEB_COMPONENTS="$FFDWEB_COMPONENTS\n- \`$file\`" ;;
+                *.css|*.scss) FFDWEB_STYLES="$FFDWEB_STYLES\n- \`$file\`" ;;
+                apps/ffdweb-site/next.config*|apps/ffdweb-site/tsconfig*|apps/ffdweb-site/package.json) FFDWEB_CONFIG="$FFDWEB_CONFIG\n- \`$file\`" ;;
+                *) FFDWEB_OTHER="$FFDWEB_OTHER\n- \`$file\`" ;;
+              esac
+
+            elif [[ "$file" == apps/filecoin-site/* ]]; then
+              AFFECTED_APPS="$AFFECTED_APPS filecoin-site"
+              case "$file" in
+                apps/filecoin-site/src/content/*) FIL_CONTENT="$FIL_CONTENT\n- \`$file\`" ;;
+                apps/filecoin-site/src/app/*_components/*|apps/filecoin-site/src/app/*components/*) FIL_COMPONENTS="$FIL_COMPONENTS\n- \`$file\`" ;;
+                *.css|*.scss) FIL_STYLES="$FIL_STYLES\n- \`$file\`" ;;
+                apps/filecoin-site/next.config*|apps/filecoin-site/tsconfig*|apps/filecoin-site/package.json) FIL_CONFIG="$FIL_CONFIG\n- \`$file\`" ;;
+                *) FIL_OTHER="$FIL_OTHER\n- \`$file\`" ;;
+              esac
+
+            elif [[ "$file" == apps/uxit/* ]]; then
+              AFFECTED_APPS="$AFFECTED_APPS uxit"
+              UXIT_FILES="$UXIT_FILES\n- \`$file\`"
+
+            elif [[ "$file" == packages/* ]]; then
+              PKG_FILES="$PKG_FILES\n- \`$file\`"
+              # Shared packages affect all apps
+              AFFECTED_APPS="$AFFECTED_APPS all-apps"
+
+            elif [[ "$file" == .github/* ]]; then
+              CI_FILES="$CI_FILES\n- \`$file\`"
+
+            else
+              ROOT_FILES="$ROOT_FILES\n- \`$file\`"
+            fi
+          done <<< "$CHANGED_FILES"
+
+          # Deduplicate affected apps
+          AFFECTED_APPS=$(echo "$AFFECTED_APPS" | tr ' ' '\n' | sort -u | grep -v '^$' | tr '\n' ' ')
+
+          # ──────────────────────────────────────────────
+          # 3. Detect what type of change this is
+          # ──────────────────────────────────────────────
+          CHANGE_TYPE=""
+          HAS_CONTENT=false
+          HAS_CODE=false
+          HAS_STYLES=false
+          HAS_CONFIG=false
+          HAS_PACKAGES=false
+          HAS_CI=false
+          HAS_IMAGES=false
+
+          while IFS= read -r file; do
+            [[ -z "$file" ]] && continue
+            case "$file" in
+              *.md) HAS_CONTENT=true ;;
+              *.tsx|*.ts|*.jsx|*.js) HAS_CODE=true ;;
+              *.css|*.scss) HAS_STYLES=true ;;
+              *.json|*.yaml|*.yml|next.config*) HAS_CONFIG=true ;;
+              .github/*) HAS_CI=true ;;
+              *.png|*.jpg|*.jpeg|*.svg|*.webp|*.gif|*.ico|*.pdf) HAS_IMAGES=true ;;
+            esac
+            [[ "$file" == packages/* ]] && HAS_PACKAGES=true
+          done <<< "$CHANGED_FILES"
+
+          # ──────────────────────────────────────────────
+          # 4. Analyze content changes in detail
+          # ──────────────────────────────────────────────
+          CONTENT_SUMMARY=""
+          CONTENT_MD_FILES=$(echo "$CHANGED_FILES" | grep '\.md$' || true)
+          if [[ -n "$CONTENT_MD_FILES" ]]; then
+            while IFS= read -r md_file; do
+              [[ -z "$md_file" ]] && continue
+              [[ ! -f "$md_file" ]] && continue
+
+              # Extract frontmatter title if present
+              TITLE=$(sed -n '/^---$/,/^---$/{ /^title:/s/^title:[[:space:]]*["'\'']*\([^"'\'']*\)["'\'']*$/\1/p; }' "$md_file" 2>/dev/null | head -1)
+
+              # Determine content type from path
+              CONTENT_TYPE=""
+              case "$md_file" in
+                */content/blog/*) CONTENT_TYPE="Blog Post" ;;
+                */content/events/*) CONTENT_TYPE="Event" ;;
+                */content/ecosystem-explorer/*) CONTENT_TYPE="Ecosystem Project" ;;
+                */content/digest/*) CONTENT_TYPE="Digest" ;;
+                */content/pages/*) CONTENT_TYPE="Page" ;;
+                */content/learning-resources/*) CONTENT_TYPE="Learning Resource" ;;
+                */content/projects/*) CONTENT_TYPE="Project" ;;
+                */content/filecoin-plus/*) CONTENT_TYPE="Filecoin Plus" ;;
+                *) CONTENT_TYPE="Content" ;;
+              esac
+
+              if [[ -n "$TITLE" ]]; then
+                CONTENT_SUMMARY="$CONTENT_SUMMARY\n- **$CONTENT_TYPE**: \"$TITLE\""
+              else
+                CONTENT_SUMMARY="$CONTENT_SUMMARY\n- **$CONTENT_TYPE**: \`$(basename "$md_file")\`"
+              fi
+            done <<< "$CONTENT_MD_FILES"
+          fi
+
+          # ──────────────────────────────────────────────
+          # 5. Detect new vs modified pages
+          # ──────────────────────────────────────────────
+          NEW_PAGES=""
+          MODIFIED_PAGES=""
+          PAGE_FILES=$(echo "$CHANGED_FILES" | grep -E 'src/app/.*/page\.(tsx|ts|jsx|js)$' || true)
+          if [[ -n "$PAGE_FILES" ]]; then
+            while IFS= read -r page_file; do
+              [[ -z "$page_file" ]] && continue
+              # Check if file is new (not in base branch)
+              if ! git show "$PR_BASE":"$page_file" &>/dev/null 2>&1; then
+                # Extract route from path
+                ROUTE=$(echo "$page_file" | sed -E 's|apps/[^/]+/src/app||; s|/page\.(tsx|ts|jsx|js)$||; s|\([^)]+\)/||g; s|^$|/|')
+                [[ -z "$ROUTE" ]] && ROUTE="/"
+                NEW_PAGES="$NEW_PAGES\n- \`$ROUTE\` (from \`$page_file\`)"
+              else
+                ROUTE=$(echo "$page_file" | sed -E 's|apps/[^/]+/src/app||; s|/page\.(tsx|ts|jsx|js)$||; s|\([^)]+\)/||g; s|^$|/|')
+                [[ -z "$ROUTE" ]] && ROUTE="/"
+                MODIFIED_PAGES="$MODIFIED_PAGES\n- \`$ROUTE\` (from \`$page_file\`)"
+              fi
+            done <<< "$PAGE_FILES"
+          fi
+
+          # ──────────────────────────────────────────────
+          # 6. Check for potential issues
+          # ──────────────────────────────────────────────
+          WARNINGS=""
+
+          # Check for deleted files that might break links
+          DELETED_FILES=$(git diff --name-only --diff-filter=D "origin/$PR_BASE"..."HEAD" 2>/dev/null || true)
+          if [[ -n "$DELETED_FILES" ]]; then
+            DELETED_CONTENT=$(echo "$DELETED_FILES" | grep -E '\.md$' || true)
+            DELETED_IMAGES=$(echo "$DELETED_FILES" | grep -E '\.(png|jpg|jpeg|svg|webp|gif|pdf)$' || true)
+            if [[ -n "$DELETED_CONTENT" ]]; then
+              WARNINGS="$WARNINGS\n- **Deleted content files** — pages that link to this content may show 404 errors"
+              while IFS= read -r df; do
+                [[ -n "$df" ]] && WARNINGS="$WARNINGS\n  - \`$df\`"
+              done <<< "$DELETED_CONTENT"
+            fi
+            if [[ -n "$DELETED_IMAGES" ]]; then
+              WARNINGS="$WARNINGS\n- **Deleted images/assets** — pages using these may show broken images"
+              while IFS= read -r df; do
+                [[ -n "$df" ]] && WARNINGS="$WARNINGS\n  - \`$df\`"
+              done <<< "$DELETED_IMAGES"
+            fi
+          fi
+
+          # Check for missing frontmatter fields in new content
+          if [[ -n "$CONTENT_MD_FILES" ]]; then
+            while IFS= read -r md_file; do
+              [[ -z "$md_file" ]] && continue
+              [[ ! -f "$md_file" ]] && continue
+              if ! grep -q '^title:' "$md_file" 2>/dev/null; then
+                WARNINGS="$WARNINGS\n- **Missing title** in \`$md_file\` — this may cause build errors"
+              fi
+            done <<< "$CONTENT_MD_FILES"
+          fi
+
+          # Check for shared package changes
+          if [[ "$HAS_PACKAGES" == true ]]; then
+            WARNINGS="$WARNINGS\n- **Shared package changes** — changes in \`packages/\` can affect multiple websites. All apps should be tested"
+          fi
+
+          # Check for config changes
+          if echo "$CHANGED_FILES" | grep -qE '(next\.config|vercel\.json|\.env)'; then
+            WARNINGS="$WARNINGS\n- **Configuration changes detected** — these affect how the site builds and deploys. Double-check the Vercel preview deployment"
+          fi
+
+          # Check for large PRs
+          if [[ $FILE_COUNT -gt 20 ]]; then
+            WARNINGS="$WARNINGS\n- **Large PR** ($FILE_COUNT files) — consider breaking into smaller PRs for easier review"
+          fi
+
+          # ──────────────────────────────────────────────
+          # 7. Build the comment
+          # ──────────────────────────────────────────────
+          COMMENT="## 🔍 PR Change Explainer\n\n"
+          COMMENT+="*This automated summary helps you understand what this PR changes and how it affects the website.*\n\n"
+
+          # Quick stats
+          COMMENT+="### 📊 Quick Stats\n"
+          COMMENT+="| | |\n|---|---|\n"
+          COMMENT+="| **Files changed** | $FILE_COUNT |\n"
+          COMMENT+="| **Lines added** | +$ADDITIONS |\n"
+          COMMENT+="| **Lines removed** | -$DELETIONS |\n"
+
+          # Affected websites
+          COMMENT+="\n### 🌐 Affected Websites\n\n"
+          if echo "$AFFECTED_APPS" | grep -q "all-apps"; then
+            COMMENT+="⚠️ **All websites** may be affected (shared packages were changed)\n\n"
+          fi
+          if echo "$AFFECTED_APPS" | grep -q "ff-site"; then
+            COMMENT+="- **fil.org** (ff-site)\n"
+          fi
+          if echo "$AFFECTED_APPS" | grep -q "ffdweb-site"; then
+            COMMENT+="- **ffdweb.org** (ffdweb-site)\n"
+          fi
+          if echo "$AFFECTED_APPS" | grep -q "filecoin-site"; then
+            COMMENT+="- **filecoin.io** (filecoin-site)\n"
+          fi
+          if echo "$AFFECTED_APPS" | grep -q "uxit"; then
+            COMMENT+="- **uxit.fil.org** (uxit)\n"
+          fi
+          if [[ -z "$AFFECTED_APPS" ]]; then
+            COMMENT+="No app-specific changes — this PR modifies repo-level files (CI, docs, config).\n"
+          fi
+
+          # What changed — plain language
+          COMMENT+="\n### 📝 What Changed (Plain Language)\n\n"
+
+          if [[ "$HAS_CONTENT" == true ]] && [[ "$HAS_CODE" != true ]] && [[ "$HAS_STYLES" != true ]]; then
+            COMMENT+="This is a **content-only change**. It updates text, blog posts, events, or other written content on the website. "
+            COMMENT+="The layout and design of the website are **not affected**.\n\n"
+          elif [[ "$HAS_CODE" == true ]] && [[ "$HAS_CONTENT" != true ]]; then
+            COMMENT+="This is a **code change**. It modifies how the website works or looks — this could include layout changes, "
+            COMMENT+="new features, bug fixes, or structural updates.\n\n"
+          elif [[ "$HAS_CONTENT" == true ]] && [[ "$HAS_CODE" == true ]]; then
+            COMMENT+="This PR includes **both content and code changes**. It updates written content AND modifies how the website works or looks.\n\n"
+          elif [[ "$HAS_STYLES" == true ]]; then
+            COMMENT+="This is a **styling change**. It modifies the visual appearance of the website (colors, spacing, fonts, layout, etc.).\n\n"
+          elif [[ "$HAS_CI" == true ]] && [[ "$HAS_CODE" != true ]]; then
+            COMMENT+="This is a **CI/automation change**. It modifies GitHub Actions workflows or build tooling. "
+            COMMENT+="The website itself is **not affected**.\n\n"
+          elif [[ "$HAS_CONFIG" == true ]] && [[ "$HAS_CODE" != true ]]; then
+            COMMENT+="This is a **configuration change**. It modifies build settings, dependencies, or project configuration.\n\n"
+          else
+            COMMENT+="This PR modifies project files. Review the details below.\n\n"
+          fi
+
+          if [[ "$HAS_IMAGES" == true ]]; then
+            COMMENT+="📸 **Images/assets were added or modified** — check the preview to verify they display correctly.\n\n"
+          fi
+
+          # Content details
+          if [[ -n "$CONTENT_SUMMARY" ]]; then
+            COMMENT+="#### Content Updates\n"
+            COMMENT+="$(echo -e "$CONTENT_SUMMARY")\n\n"
+          fi
+
+          # New pages
+          if [[ -n "$NEW_PAGES" ]]; then
+            COMMENT+="#### 🆕 New Pages\n"
+            COMMENT+="These are **brand new pages** being added to the website:\n"
+            COMMENT+="$(echo -e "$NEW_PAGES")\n\n"
+          fi
+
+          # Modified pages
+          if [[ -n "$MODIFIED_PAGES" ]]; then
+            COMMENT+="#### ✏️ Modified Pages\n"
+            COMMENT+="These existing pages were updated:\n"
+            COMMENT+="$(echo -e "$MODIFIED_PAGES")\n\n"
+          fi
+
+          # Detailed file breakdown per app
+          COMMENT+="### 📂 Detailed File Breakdown\n\n"
+          COMMENT+="<details>\n<summary>Click to expand full file list</summary>\n\n"
+
+          if [[ -n "$FF_CONTENT$FF_COMPONENTS$FF_STYLES$FF_CONFIG$FF_OTHER" ]]; then
+            COMMENT+="#### fil.org (ff-site)\n"
+            [[ -n "$FF_CONTENT" ]] && COMMENT+="**Content files:**\n$(echo -e "$FF_CONTENT")\n\n"
+            [[ -n "$FF_COMPONENTS" ]] && COMMENT+="**Components (UI):**\n$(echo -e "$FF_COMPONENTS")\n\n"
+            [[ -n "$FF_STYLES" ]] && COMMENT+="**Styles:**\n$(echo -e "$FF_STYLES")\n\n"
+            [[ -n "$FF_CONFIG" ]] && COMMENT+="**Config:**\n$(echo -e "$FF_CONFIG")\n\n"
+            [[ -n "$FF_OTHER" ]] && COMMENT+="**Other:**\n$(echo -e "$FF_OTHER")\n\n"
+          fi
+
+          if [[ -n "$FFDWEB_CONTENT$FFDWEB_COMPONENTS$FFDWEB_STYLES$FFDWEB_CONFIG$FFDWEB_OTHER" ]]; then
+            COMMENT+="#### ffdweb.org (ffdweb-site)\n"
+            [[ -n "$FFDWEB_CONTENT" ]] && COMMENT+="**Content files:**\n$(echo -e "$FFDWEB_CONTENT")\n\n"
+            [[ -n "$FFDWEB_COMPONENTS" ]] && COMMENT+="**Components (UI):**\n$(echo -e "$FFDWEB_COMPONENTS")\n\n"
+            [[ -n "$FFDWEB_STYLES" ]] && COMMENT+="**Styles:**\n$(echo -e "$FFDWEB_STYLES")\n\n"
+            [[ -n "$FFDWEB_CONFIG" ]] && COMMENT+="**Config:**\n$(echo -e "$FFDWEB_CONFIG")\n\n"
+            [[ -n "$FFDWEB_OTHER" ]] && COMMENT+="**Other:**\n$(echo -e "$FFDWEB_OTHER")\n\n"
+          fi
+
+          if [[ -n "$FIL_CONTENT$FIL_COMPONENTS$FIL_STYLES$FIL_CONFIG$FIL_OTHER" ]]; then
+            COMMENT+="#### filecoin.io (filecoin-site)\n"
+            [[ -n "$FIL_CONTENT" ]] && COMMENT+="**Content files:**\n$(echo -e "$FIL_CONTENT")\n\n"
+            [[ -n "$FIL_COMPONENTS" ]] && COMMENT+="**Components (UI):**\n$(echo -e "$FIL_COMPONENTS")\n\n"
+            [[ -n "$FIL_STYLES" ]] && COMMENT+="**Styles:**\n$(echo -e "$FIL_STYLES")\n\n"
+            [[ -n "$FIL_CONFIG" ]] && COMMENT+="**Config:**\n$(echo -e "$FIL_CONFIG")\n\n"
+            [[ -n "$FIL_OTHER" ]] && COMMENT+="**Other:**\n$(echo -e "$FIL_OTHER")\n\n"
+          fi
+
+          if [[ -n "$UXIT_FILES" ]]; then
+            COMMENT+="#### uxit.fil.org (uxit)\n"
+            COMMENT+="$(echo -e "$UXIT_FILES")\n\n"
+          fi
+
+          if [[ -n "$PKG_FILES" ]]; then
+            COMMENT+="#### Shared Packages\n"
+            COMMENT+="⚠️ These are shared across all websites:\n$(echo -e "$PKG_FILES")\n\n"
+          fi
+
+          if [[ -n "$CI_FILES" ]]; then
+            COMMENT+="#### CI / GitHub Actions\n$(echo -e "$CI_FILES")\n\n"
+          fi
+
+          if [[ -n "$ROOT_FILES" ]]; then
+            COMMENT+="#### Root / Config\n$(echo -e "$ROOT_FILES")\n\n"
+          fi
+
+          COMMENT+="</details>\n\n"
+
+          # Warnings
+          if [[ -n "$WARNINGS" ]]; then
+            COMMENT+="### ⚠️ Potential Issues\n\n"
+            COMMENT+="Please review these before merging:\n"
+            COMMENT+="$(echo -e "$WARNINGS")\n\n"
+          fi
+
+          # Preview deployment info
+          COMMENT+="### 🚀 Preview & Next Steps\n\n"
+          COMMENT+="1. **Wait for the Vercel preview** — a preview link will appear in this PR as a separate comment from the Vercel bot\n"
+          COMMENT+="2. **Click the preview link** to see exactly how your changes look on the live site\n"
+          COMMENT+="3. **Test your changes:**\n"
+
+          if [[ -n "$CONTENT_SUMMARY" ]]; then
+            COMMENT+="   - Navigate to the page(s) where your content appears\n"
+            COMMENT+="   - Verify text, images, and links display correctly\n"
+            COMMENT+="   - Check the page on mobile (resize your browser window)\n"
+          fi
+
+          if [[ "$HAS_CODE" == true ]] || [[ "$HAS_STYLES" == true ]]; then
+            COMMENT+="   - Check all affected pages for visual correctness\n"
+            COMMENT+="   - Test on mobile and desktop views\n"
+            COMMENT+="   - Click through any interactive elements (buttons, links, forms)\n"
+          fi
+
+          COMMENT+="4. **Check the status checks below** — all checks should pass (green checkmarks) before merging\n"
+          COMMENT+="5. **When ready**, request a review or merge the PR\n\n"
+
+          # Glossary
+          COMMENT+="<details>\n<summary>📖 Glossary (click to expand)</summary>\n\n"
+          COMMENT+="| Term | What it means |\n"
+          COMMENT+="|------|---------------|\n"
+          COMMENT+="| **PR (Pull Request)** | A proposed set of changes waiting to be merged into the main website |\n"
+          COMMENT+="| **Preview deployment** | A temporary version of the website showing your changes (not public) |\n"
+          COMMENT+="| **Merge** | Applying your changes to the main website — this triggers a production deploy |\n"
+          COMMENT+="| **Build** | The process of converting code into a working website |\n"
+          COMMENT+="| **Status checks** | Automated tests that verify your changes don't break anything |\n"
+          COMMENT+="| **Content file (.md)** | A Markdown file containing text content (blog posts, events, etc.) |\n"
+          COMMENT+="| **Component (.tsx)** | A reusable piece of the website's UI (buttons, cards, headers, etc.) |\n"
+          COMMENT+="| **Frontmatter** | The metadata at the top of content files (title, date, description, etc.) |\n"
+          COMMENT+="| **Shared package** | Code used by multiple websites — changes here affect all sites |\n"
+          COMMENT+="</details>\n\n"
+
+          COMMENT+="---\n*🤖 This comment was generated automatically to help explain PR changes. If something looks wrong, ask a developer for help.*"
+
+          # Write comment to file (handles multiline safely)
+          echo -e "$COMMENT" > /tmp/pr-comment.md
+
+      - name: Find existing bot comment
+        id: find-comment
+        uses: peter-evans/find-comment@v3
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: github-actions[bot]
+          body-includes: "PR Change Explainer"
+
+      - name: Post or update PR comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body-path: /tmp/pr-comment.md
+          edit-mode: replace
