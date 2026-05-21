@@ -103,7 +103,7 @@ jobs:
           done <<< "$CHANGED_FILES"
 
           # Deduplicate affected apps
-          AFFECTED_APPS=$(echo "$AFFECTED_APPS" | tr ' ' '\n' | sort -u | grep -v '^$' | tr '\n' ' ')
+          AFFECTED_APPS=$(echo "$AFFECTED_APPS" | tr ' ' '\n' | sort -u | (grep -v '^$' || true) | tr '\n' ' ')
 
           # ──────────────────────────────────────────────
           # 3. Detect what type of change this is
