@@ -2,6 +2,8 @@
 title: 'Announcing Filecoin ProPGF Batch 3: General Track'
 excerpt: 'We''re excited to announce Filecoin Public Goods Funding (ProPGF) Batch 3 - General Track, a $2M milestone-based funding round dedicated to key ecosystem focus areas. '
 share_image: /uploads/FIL-ProPGF.webp
+image:
+  url: /uploads/FIL-ProPGF.webp
 author: ProPGF Team
 date: 2026-05-21T14:37:07.160Z
 categories:
@@ -12,7 +14,7 @@ related_article_2: content/blog/posts/en/announcing-the-propgf-selection-committ
 related_article_3: content/blog/posts/en/filecoin-propgf-batch-1-36m-awarded-to-ecosystem-builders.md
 ---
 
-We're excited to announce Filecoin Public Goods Funding (ProPGF) Batch 3 - General Track, a $2M milestone-based funding round dedicated to two areas where the ecosystem has the clearest, highest-leverage needs: 
+We're excited to announce Filecoin Public Goods Funding (ProPGF) Batch 3 - General Track, a $2M milestone-based funding round dedicated to two areas where the ecosystem has the clearest, highest-leverage needs:
 
 1. Maintaining the core infrastructure the network depends on
 2. Delivering against published Requests for Proposals (RFPs) that support working group structures called, “pods,” each focused on product-market fit (PMF) exploration in key verticals –– including Web3 Builders and Web2 Object Storage.
@@ -35,7 +37,7 @@ Funding for projects submitted in response to specific RFPs that will be publish
 
 ## Funding Model: Milestone-Based
 
-All grants under this program are milestone-based. Detailed funding parameters and the full evaluation framework will be shared on filpgf.io 
+All grants under this program are milestone-based. Detailed funding parameters and the full evaluation framework will be shared on filpgf.io
 
 ### Key Dates
 
@@ -60,7 +62,7 @@ Applications open on May 26, 2026, via filpgf.io. Find the application on the we
 
 For updates, join our Telegram group
 
-Questions? Reach out in the telegram group or email sejal.rekhan\@protocol.ai or erin.oconnor\@protocol.ai
+Questions? Reach out in the telegram group or email [sejal.rekhan@protocol.ai](mailto:sejal.rekhan@protocol.ai) or [erin.oconnor@protocol.ai](mailto:erin.oconnor@protocol.ai)
 
 ### About ProPGF
 
