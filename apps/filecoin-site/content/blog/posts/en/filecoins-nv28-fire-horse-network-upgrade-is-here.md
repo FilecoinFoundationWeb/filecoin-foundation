@@ -3,10 +3,7 @@ title: Filecoin’s NV28 Fire Horse Network Upgrade is Here
 excerpt: >-
   The Filecoin network upgrade NV28 "Fire Horse" is now live on mainnet, making
   the network more usable, trustworthy, and performant for the real businesses
-  running real workloads on the network today. Smart contracts can now verify
-  the health, status, and expiration of any storage sector in real time,
-  applications can authenticate users with passkeys instead of seed phrases,
-  and the gas fee mechanism now reflects how Filecoin actually produces blocks.
+  running real workloads on the network today. 
 share_image: /uploads/NV28_Blog_2000x1125.webp
 image:
   url: /uploads/NV28_Blog_2000x1125.webp
