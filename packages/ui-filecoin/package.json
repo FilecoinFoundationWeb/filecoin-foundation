@@ -340,7 +340,7 @@
   "author": "Filecoin Foundation",
   "license": "MIT",
   "dependencies": {
-    "@headlessui/react": "^2.2.9",
+    "@headlessui/react": "^2.2.10",
     "@phosphor-icons/react": "^2.1.10",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -353,9 +353,9 @@
     "remark-gfm": "^4.0.0",
     "slugify": "^1.6.8",
     "usehooks-ts": "^3.1.1",
-    "viem": "^2.47.6",
-    "wagmi": "^3.6.0",
-    "zod": "^4.3.6"
+    "viem": "^2.52.2",
+    "wagmi": "^3.6.16",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "0.0.0",
@@ -365,18 +365,18 @@
     "@filecoin-foundation/utils": "0.0.0",
     "@testing-library/react": "^16.3.2",
     "@types/jest": "^30.0.0",
-    "@types/react": "19.2.14",
-    "jest": "^30.3.0",
-    "jest-environment-jsdom": "^30.3.0",
-    "ts-jest": "^29.4.6",
-    "tsdown": "^0.20.3",
-    "typescript": "^5.9.3"
+    "@types/react": "19.2.17",
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1",
+    "ts-jest": "^29.4.11",
+    "tsdown": "^0.22.2",
+    "typescript": "^6.0.3"
   },
   "peerDependencies": {
     "@tailwindcss/typography": "^0.5.19",
     "@tanstack/react-table": "^8.21.3",
-    "next": "^16.2.1",
-    "nuqs": "^2.8.8",
+    "next": "^16.2.7",
+    "nuqs": "^2.8.9",
     "react": "^19.2.4",
     "swr": "^2.4.1",
     "tailwindcss": "^4.2.2"
