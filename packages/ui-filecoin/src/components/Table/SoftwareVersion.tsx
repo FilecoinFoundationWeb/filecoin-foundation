@@ -33,7 +33,9 @@ export function SoftwareVersion({ info, githubUrl }: SoftwareVersionProps) {
 }
 
 export function parseVersionString(input: string) {
-  const regex = /^(\d+\.\d+\.\d+)\+([a-z]+)\+(git_[a-f0-9]+)_(.+)$/
+  // The semver core may carry a prerelease suffix (e.g. `-rc1`, `-beta.1`).
+  const regex =
+    /^(\d+\.\d+\.\d+(?:-[0-9A-Za-z.]+)?)\+([a-z]+)\+(git_[a-f0-9]+)_(.+)$/
   const match = input.match(regex)
 
   if (!match) {
