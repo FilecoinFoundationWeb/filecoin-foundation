@@ -1,5 +1,21 @@
 export const redirects = [
   {
+    source: '/slack',
+    destination: 'https://rebrand.ly/filecoin-project-slack',
+    permanent: false,
+  },
+  {
+    source: '/discord',
+    destination: 'https://discord.gg/yeQ2hcd2TD',
+    permanent: false,
+  },
+  {
+    source: '/intro',
+    destination:
+      'https://docs.filecoin.io/intro/intro-to-filecoin/what-is-filecoin/',
+    permanent: false,
+  },
+  {
     source: '/blog/ann-filecoin-token-sale-and-new-paper',
     destination:
       '/blog/announcing-the-filecoin-token-sale-and-upgraded-whitepaper',
