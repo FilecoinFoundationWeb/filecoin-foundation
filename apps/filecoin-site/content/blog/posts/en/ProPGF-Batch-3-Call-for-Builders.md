@@ -16,7 +16,7 @@ Filecoin is in the middle of one of the most exciting transformations of any dec
 
 [FIL-ProPGF Batch 3](https://filpgf.io/propgf/) is the funding round powering that transformation. The General Track is $2M of grants for outside teams — companies, builder collectives, and independent projects — ready to ship work that advances [Filecoin's 2026 goals](https://www.filecoin.io/blog/the-2026-filecoin-network-strategy) and helps the network capture the moment. A quick note on scope: Batch 3 also funds core infrastructure (the “kernel”) in parallel — the protocol-level and core-client work that keeps Filecoin running. This post and the RFP below are funded via FIL-ProPGF Batch 3 General Track as well. This RFP is a public, opinionated view of the four areas where outside teams can have the biggest impact this year. It's a guide, not a gate. Strong proposals outside these areas will still be read on their merits.
 
-### A Living Document 
+### A Living Document
 
 This RFP is the clear starting set of requests for Batch 3, but we expect to refine it through working sessions at the Filecoin Dev Summit in New York, starting June 9, and in the days following, as ecosystem leaders and the broader community weigh in. Check back after the Summit, and if you see a gap before then, contact us on Telegram or Slack.
 
@@ -65,8 +65,9 @@ AI is the most significant demand driver for storage infrastructure in a decade,
 * Verifiable-compute and audit services — productized services pairing Filecoin storage with verifiable execution (vector databases, RAG pipelines, inference checkpoints, agent audit trails) sold as managed infrastructure with SLAs.
 * Training-data provenance products — commercial offerings that solve the audit, licensing, and provenance problem for AI training corpora — sold to model developers, regulators, or rights-holders.
 * Cross-stack verifiable-AI infrastructure — products pairing Filecoin storage with adjacent AI infrastructure (compute attestation, model registries, dataset marketplaces) where the funded team owns the product and customer.
+* \* Machine-readable ecosystem knowledge: Services that create, maintain, and improve technical documentation, knowledge bases, and machine-readable content that can be consumed by both developers and AI systems.
 
-Not in scope: Open-source framework integrations, SDKs, developer-experience tooling, documentation, and DevRel — that work sits inside the relevant pod. General-purpose AI products that incidentally use Filecoin, research-only projects, or open-source contributions without a customer-facing product are also out.
+Not in scope: General-purpose products that incidentally use Filecoin, research-only projects, or open-source contributions without a customer-facing product are also out.
 
 A strong proposal: An AI-infra team ships a verifiable agent-memory service with tamper-evident audit logs, sold under SLA, with three named regulated-industry customers in production within six months.
 
@@ -89,7 +90,7 @@ A strong proposal: A protocol-engineering team ships a fee-and-burn module that 
 #### How to apply
 
 * Applications open: May 26, 2026, on filpgf.io. [(Apply here)](https://filpgf.io/propgf/#funding-round-timeline)
-*  Funding: $2M total · $300K soft cap per project · \~$200K average grant · six-month default horizon · milestone-based payouts.
+* Funding: $2M total · $300K soft cap per project · \~$200K average grant · six-month default horizon · milestone-based payouts.
 * Decision waves: Wave 1 by June 30, 2026; Wave 2 by July 15, 2026. Agreements and compliance are complete by July 30, 2026.
 * Review: Three-phase flow — AI-assisted shortlist, committee vetting, final allocation — evaluated against Filecoin’s 2026 network objectives.
 
