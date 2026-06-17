@@ -17,8 +17,10 @@ type StorageProvider = Pick<
   | 'labels'
   | 'keyFeatures'
   | 'url'
+  | 'ctaLabel'
   | 'logo'
   | 'pricing'
+  | 'priceLabel'
   | 'isFeatured'
 > & {
   bestFor: Array<string>
@@ -29,19 +31,21 @@ export function getFilecoinStorageProviders(t: TranslationFunction) {
     {
       name: 'Akave Cloud',
       description: t('providers.akave.description'),
-      labels: [t('providers.akave.labels.0'), t('providers.akave.labels.1')],
-      pricing: {
-        cents: 1_499,
-        monthlyStorageRate: t('providers.akave.monthlyStorageRate'),
-        offer: t('providers.akave.offer'),
-      },
-      bestFor: [t('bestFor.enterprises'), t('bestFor.aiMlDevelopers')],
+      labels: [
+        t('providers.akave.labels.0'),
+        t('providers.akave.labels.1'),
+        t('providers.akave.labels.2'),
+      ],
+      priceLabel: t('providers.akave.price'),
+      bestFor: [t('bestFor.dataLakesAnalyticsBackups')],
       keyFeatures: [
         t('providers.akave.keyFeatures.0'),
         t('providers.akave.keyFeatures.1'),
         t('providers.akave.keyFeatures.2'),
+        t('providers.akave.keyFeatures.3'),
       ],
-      url: 'https://www.akave.ai/',
+      url: 'https://akave.com/free-trial',
+      ctaLabel: t('providers.akave.cta'),
       logo: AkaveMiniatureLogo,
     },
     {

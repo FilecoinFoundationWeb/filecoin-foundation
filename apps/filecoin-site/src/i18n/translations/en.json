@@ -355,20 +355,22 @@
       "archivalStorage": "Archival storage",
       "advancedTechnicalUsers": "Advanced technical users",
       "creators": "Creators",
+      "dataLakesAnalyticsBackups": "Data lakes, analytics and enterprise backups",
       "developers": "Developers",
       "enterprises": "Enterprises",
       "nftProjects": "NFT projects"
     },
     "providers": {
       "akave": {
-        "description": "Enterprise-grade hot storage for AI & data lakes.",
-        "labels": ["Drag and drop", "S3-compatible"],
-        "monthlyStorageRate": "/ TB / month",
-        "offer": "Free trial available",
+        "description": "AI-ready sovereign object storage with verifiable control.",
+        "labels": ["S3-compatible", "AI-ready", "Enterprise-grade"],
+        "price": "Enterprise plans available",
+        "cta": "Start Free Trial",
         "keyFeatures": [
-          "S3-compatible API",
-          "Client-side encryption",
-          "Access control"
+          "S3-compatible APIs",
+          "Snowflake & Apache Iceberg support",
+          "Immutable audit trail",
+          "Zero egress fees"
         ]
       },
       "aurora": {
