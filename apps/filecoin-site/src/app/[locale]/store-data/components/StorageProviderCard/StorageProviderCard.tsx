@@ -20,9 +20,11 @@ export type StorageProviderCardProps = {
   description: string
   labels: Array<string>
   pricing?: StorageProviderPricePerMonthProps['pricing']
+  priceLabel?: string
   bestFor: Array<string>
   keyFeatures: Array<string>
   url: string
+  ctaLabel?: string
   logo: IconProps['component']
   isFeatured?: boolean
 }
@@ -33,9 +35,11 @@ export function StorageProviderCard({
   description,
   labels,
   pricing,
+  priceLabel,
   bestFor,
   keyFeatures,
   url,
+  ctaLabel,
   logo,
   isFeatured,
 }: StorageProviderCardProps) {
@@ -79,7 +83,7 @@ export function StorageProviderCard({
               pricing ? (
                 <StorageProviderPricePerMonth pricing={pricing} />
               ) : (
-                <PriceDisplay value={t('customPricing')} />
+                <PriceDisplay value={priceLabel ?? t('customPricing')} />
               )
             }
           />
@@ -100,7 +104,7 @@ export function StorageProviderCard({
         </div>
 
         <Button href={url} variant="ghost">
-          {t('storeWith', { name })}
+          {ctaLabel ?? t('storeWith', { name })}
         </Button>
       </article>
     </Tag>

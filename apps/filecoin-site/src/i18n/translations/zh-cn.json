@@ -355,17 +355,23 @@
       "archivalStorage": "归档存储",
       "advancedTechnicalUsers": "高级技术用户",
       "creators": "创作者",
+      "dataLakesAnalyticsBackups": "数据湖、分析和企业备份",
       "developers": "开发者",
       "enterprises": "企业",
       "nftProjects": "NFT 项目"
     },
     "providers": {
       "akave": {
-        "description": "面向 AI 和数据湖的企业级热存储。",
-        "labels": ["拖放上传", "S3 兼容"],
-        "monthlyStorageRate": "/ TB / 月",
-        "offer": "提供免费试用",
-        "keyFeatures": ["兼容 S3 的 API", "客户端加密", "访问控制"]
+        "description": "AI 就绪的主权对象存储，具备可验证的控制权。",
+        "labels": ["S3 兼容", "AI 就绪", "企业级"],
+        "price": "提供企业版方案",
+        "cta": "开始免费试用",
+        "keyFeatures": [
+          "兼容 S3 的 API",
+          "支持 Snowflake 和 Apache Iceberg",
+          "不可变审计追踪",
+          "零出口费用"
+        ]
       },
       "aurora": {
         "description": "面向安全、大规模 AI 与数据工作负载的企业级基础设施。",
