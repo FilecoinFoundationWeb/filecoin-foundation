@@ -21,6 +21,7 @@ export const trustedByLogos: Array<LogoItemProps> = [
   // },
   {
     logo: SmithsonianLogo,
+    size: 80,
     alt: 'Smithsonian Logo',
     href: 'https://www.si.edu',
   },
