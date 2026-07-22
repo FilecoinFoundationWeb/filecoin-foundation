@@ -27,7 +27,7 @@
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "syncpack": "^14.2.1",
-    "turbo": "^2.8.20"
+    "turbo": "^2.9.14"
   },
   "overrides": {
     "dompurify": "^3.3.0",
