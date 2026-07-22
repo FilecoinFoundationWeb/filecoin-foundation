@@ -52,7 +52,7 @@
     "@next/eslint-plugin-next": "^16.2.1",
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.2.2",
-    "@tinacms/cli": "^2.1.5",
+    "@tinacms/cli": "^2.5.1",
     "@types/js-cookie": "^3.0.6",
     "@types/node": "^25.5.0",
     "@types/react": "19.2.14",
