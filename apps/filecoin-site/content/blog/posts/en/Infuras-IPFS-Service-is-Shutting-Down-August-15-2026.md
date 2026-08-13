@@ -1,5 +1,5 @@
 ---
-title: 'Infura''s IPFS Service is Shutting Down August 15, 2026'
+title: Infura's IPFS Service Is Shutting Down. Here’s How to Move to Storage That Can Prove It.
 excerpt: 'Infura is ending its IPFS service. Here’s how to rescue your CIDs first. '
 date: 2026-08-12T17:00:46.403Z
 categories:
