@@ -10,25 +10,23 @@ related_article_2: ''
 related_article_3: ''
 ---
 
-Infura's IPFS service shuts down on August 15. If your application depends on content pinned or served through Infura, you need to move it before then without changing its CIDs.
+On August 15, 2026, Infura is ending its IPFS service.
 
-After that date, the IPFS API (`ipfs.infura.io:5001`) and every `*.infura-ipfs.io` dedicated gateway goes offline. New uploads and pinning already stopped on August 3. Only the IPFS product is affected; Infura accounts and Infura's other APIs will keep working.
+After that date, the IPFS API (`ipfs.infura.io:5001`) and every \*`.infura-ipfs.io` dedicated gateway goes offline. New uploads and pinning already stopped on August 3. Only the IPFS product is affected. Infura accounts and the other APIs keep working.
 
-Moving your data isn't enough. You need to preserve your CIDs. Those CIDs may already be referenced in applications, smart contracts, metadata, or other systems you don't control. Without careful migration, every one of those references now points to content that doesn't exist. A block Infura stops serving on August 15 can't be recovered afterward.
+When a pinning service goes away, your data doesn't just need a new home — every link pointing to it breaks. Here's how to get your pins off Infura with their CIDs intact, then put them somewhere that proves it still holds them.
 
-## Don’t Just Move to Another Pinning Provider
+If your app resolves content through an Infura endpoint, or your pins were used as a backup, this is a hard deadline. A block Infura stops serving on August 15 can't be recovered afterwards.
 
-The instinct is to treat this like a change of address: find another pinning service, point your app at it, done. But that just resets the clock. Pinning services get discontinued, gateways get deprecated, and the same failure repeats the next time a vendor changes its roadmap.
+## The Migration Guide
 
-Content addressing is what makes the rescue possible in the first place since the identifier is derived from the data and its exact structure, so preserve that structure and the CID holds. That property is the thing worth protecting. It's also the reason where you land matters as much as how you get there.
+When you download your files, re-upload them somewhere else, and get new CIDs, all of its previous onchain references break. New CIDs mean every existing link, every onchain reference, every pointer embedded in someone else's app is now wrong. You've moved the data and broken the web around it.
 
-Filecoin Onchain Cloud is built for exactly this failure mode: storage providers hold your data and prove — onchain, continuously — that they still have it, rather than asserting it in a status page. Moving your CIDs there gets you three things a pinning service can't guarantee:
+Content addressing helps prevent this: the identifier is derived from the data and its structure. Preserve the structure exactly, and the CID stays the same. Re-chunk it, and it doesn't.
 
-* **Same CIDs**. Existing IPFS references, onchain or off, keep resolving. Nothing downstream has to change.
-* **Verifiable persistence**. Storage providers prove they continue holding your data through Proof of Data Possession (PDP).
-* **Open retrieval**. Content stays retrievable through the IPFS ecosystem itself, not a single company's gateway.
+To rescue your data at the block level, walk each pinned DAG block by block, verify every block against its CID, and write it to a CAR file, the standard IPFS archive format. That's content plus exact structure, which is what keeps your CIDs unchanged.
 
-That's the difference between migrating and fixing the underlying problem.
+`infura-rescue` does that in one command.
 
 ## Step 1: Get the Data Out by August 15
 
