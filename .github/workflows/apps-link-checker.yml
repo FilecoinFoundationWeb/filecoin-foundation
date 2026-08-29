@@ -28,7 +28,7 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Lychee Link Checker
         uses: lycheeverse/lychee-action@v2.8.0
@@ -48,7 +48,7 @@ jobs:
 
       - name: Notify Slack on Link Check Results
         if: always()
-        uses: slackapi/slack-github-action@v3.0.1
+        uses: slackapi/slack-github-action@v3.0.3
         with:
           method: chat.postMessage
           token: ${{ secrets.SLACK_BOT_TOKEN }}
