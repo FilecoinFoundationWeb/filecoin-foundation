@@ -46,7 +46,7 @@
     "globals": "^17.4.0",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
-    "postcss": "^8.5.8",
+    "postcss": "^8.5.10",
     "puppeteer": "^24.40.0",
     "react-hook-form": "^7.72.0",
     "react-lite-youtube-embed": "^3.5.1",
