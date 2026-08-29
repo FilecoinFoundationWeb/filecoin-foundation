@@ -23,7 +23,7 @@
   },
   "peerDependencies": {
     "@filecoin-foundation/utils": "0.0.0",
-    "@percy/cypress": "^3.1.7",
+    "@percy/cypress": "^3.1.8",
     "cypress": "^15.13.0",
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3"
