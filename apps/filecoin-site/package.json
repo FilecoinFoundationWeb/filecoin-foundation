@@ -31,7 +31,7 @@
     "fast-glob": "^3.3.3",
     "feed": "^5.2.0",
     "gray-matter": "^4.0.3",
-    "js-cookie": "^3.0.5",
+    "js-cookie": "^3.0.7",
     "next": "^16.2.1",
     "next-intl": "^4.8.3",
     "next-plausible": "^3.12.5",
