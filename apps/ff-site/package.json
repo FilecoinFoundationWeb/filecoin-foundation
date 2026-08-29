@@ -62,7 +62,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.0",
+    "@babel/core": "^7.29.6",
     "@babel/preset-react": "^7.27.1",
     "@eslint/js": "^10.0.1",
     "@filecoin-foundation/cypress": "0.0.0",
