@@ -1,5 +1,5 @@
 ---
-title: Real world assets are onchain. What about the data behind them?
+title: Real World Assets Are Onchain. What About the Data Behind Them?
 excerpt: 'A reference architecture for verifiable offchain data for tokenized assets using Avalanche, IPFS and Filecoin'
 date: 2026-09-16T16:05:42.306Z
 categories:
@@ -31,9 +31,9 @@ The result is a durable link between an onchain asset and the exact offchain dat
 
 This builds on the [Avalanche and Filecoin cross-chain data bridge](https://www.filecoin.io/blog/new-avalanche-x-filecoin-data-bridge-unlocks-cross-chain-value), live since May 2025, which connects Avalanche's C-Chain to the Filecoin network.
 
-**See it in action: [a property record](https://sgtpooki.github.io/Avalanche-IPFS-Filecoin-RWA-reference-Architecture/) **
+\*\*See it in action: [a property record](https://sgtpooki.github.io/Avalanche-IPFS-Filecoin-RWA-reference-Architecture/) \*\*
 
-The working example publishes a synthetic property record set for 123 Main Street, Fairview, issued by a fictional county recorder: a deed, a survey, a parcel file and two tax assessments. 
+The working example publishes a synthetic property record set for 123 Main Street, Fairview, issued by a fictional county recorder: a deed, a survey, a parcel file and two tax assessments.
 
 Each document is content-addressed with IPFS, stored on Filecoin, and listed in a manifest whose CID is anchored on Avalanche. It runs live on Avalanche Fuji and Filecoin Calibration (both testnets), and trying it doesn’t require a wallet.
 
@@ -54,7 +54,7 @@ Because the CID is derived from content, editing the underlying document produce
 | deed.pdf (original)                 | bafkreidh5qsi5z6uo2thzvynr27ioajoviafqiveunrielhugyj65l6rzu |
 | deed-tampered.pdf (one line edited) | bafkreiausintabvl4n4hvgv2jdmazvy35bg26gku2ufu2bosxhrd7dzxqi |
 
-In the demo's "Check a document" view, either file is hashed in the browser and nothing is uploaded. The edited copy comes back flagged as not a document of record. 
+In the demo's "Check a document" view, either file is hashed in the browser and nothing is uploaded. The edited copy comes back flagged as not a document of record.
 
 Filecoin stores the record and keeps proving it's still there. That lets anyone check it themselves whether the record has been altered.
 
@@ -72,7 +72,7 @@ In a hybrid onchain/offchain architecture, the token can represent ownership or 
 
 The implementation is open source, with a registry contract on Avalanche Fuji and a data set [you can inspect directly](https://pdp.filecoin.cloud/calibration/dataset/54), including its Filecoin storage proofs.
 
- Verification needs no private key, wallet, or funds:
+Verification needs no private key, wallet, or funds:
 
 ```
 git clone https://github.com/SgtPooki/Avalanche-IPFS-Filecoin-RWA-reference-Architecture.git
@@ -84,6 +84,6 @@ npm run verify
 
 ### Building real world assets on Avalanche?
 
-Available now: the reference architecture for verifiable offchain data for tokenized assets and [working demo](https://docs.filecoin.io/build-on-filecoin/cookbook/rwa-reference-architecture). 
+Available now: the reference architecture for verifiable offchain data for tokenized assets and [working demo](https://docs.filecoin.io/build-on-filecoin/cookbook/rwa-reference-architecture).
 
 We’re looking for RWA teams to apply this architecture to production data. Talk to the Filecoin team at [filecoin.cloud/contact](https://filecoin.cloud/contact).
