@@ -1,30 +1,32 @@
 import { PATHS } from '@/constants/paths'
 
-import termsOfUseMarkdown from '@/content/pages/terms-of-use.md'
+import { termsOfUsePageItem } from '@/qino/items/termsOfUsePage'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { MarkdownPageSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { MarkdownPage } from '@/components/MarkdownPage'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { attributes, body } = MarkdownPageSchema.parse(termsOfUseMarkdown)
+export default async function TermsOfUse() {
+  const { header, seo, markdown } = await termsOfUsePageItem.getEntry()
 
-export default function TermsOfUse() {
   return (
     <MarkdownPage
-      title={attributes.header.title}
-      structuredData={generateStructuredData(attributes.seo)}
+      title={header.title}
+      structuredData={generateStructuredData(seo)}
     >
-      {body}
+      {markdown}
     </MarkdownPage>
   )
 }
 
-export const metadata = createMetadata({
-  title: attributes.seo.title,
-  description: attributes.seo.description,
-  path: PATHS.TERMS_OF_USE.path,
-})
+export async function generateMetadata() {
+  const { seo } = await termsOfUsePageItem.getEntry()
+
+  return createMetadata({
+    title: seo.title,
+    description: seo.description,
+    path: PATHS.TERMS_OF_USE.path,
+  })
+}

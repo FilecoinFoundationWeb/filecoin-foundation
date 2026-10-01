@@ -1,13 +1,6 @@
-import { getDigestArticlesWithIssueContext as sharedGetDigestArticlesWithIssueContext } from '@filecoin-foundation/utils/getDigestArticlesWithIssueContext'
-import type { DigestIssueFrontmatter } from '@filecoin-foundation/utils/schemas/DigestIssueFrontmatterSchema'
+import { getDigestArticlesData } from './getDigestArticleData'
 
-import { PATHS } from '@/constants/paths'
-
-export async function getDigestArticlesWithIssueContext(
-  issueNumber: DigestIssueFrontmatter['issue-number'],
-) {
-  return sharedGetDigestArticlesWithIssueContext({
-    issueNumber,
-    directoryPath: PATHS.DIGEST.articlesContentPath,
-  })
+export async function getDigestArticlesWithIssueContext(issueNumber: number) {
+  const articles = await getDigestArticlesData()
+  return articles.filter((article) => article.issueNumber === issueNumber)
 }

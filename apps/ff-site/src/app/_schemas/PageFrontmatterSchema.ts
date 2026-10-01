@@ -7,14 +7,11 @@ import { MarkdownEntryPathSchema } from './MarkdownEntryPathSchema'
 const TitleSchema = z.string()
 const DescriptionSchema = z.string().or(z.array(z.string()))
 
-export const MarkdownPageSchema = z.object({
-  attributes: z.object({
-    header: z.object({
-      title: TitleSchema,
-    }),
-    seo: SeoMetadataSchema,
+export const MarkdownPageFrontmatterSchema = z.object({
+  header: z.object({
+    title: TitleSchema,
   }),
-  body: z.string(),
+  seo: SeoMetadataSchema,
 })
 
 export const PageFrontmatterSchema = z.object({

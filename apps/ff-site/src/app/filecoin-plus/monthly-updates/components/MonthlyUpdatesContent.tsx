@@ -72,7 +72,13 @@ export function MonthlyUpdatesContent({ updates }: MonthlyUpdatesContentProps) {
           <>
             <CardGrid as="section" cols="smThree">
               {paginatedResults.map((update, i) => {
-                const { slug, title, description, image, publishedOn } = update
+                const {
+                  _meta: { slug },
+                  title,
+                  description,
+                  image,
+                  publishedOn,
+                } = update
 
                 const isFirstThreeImages = i < 3
 

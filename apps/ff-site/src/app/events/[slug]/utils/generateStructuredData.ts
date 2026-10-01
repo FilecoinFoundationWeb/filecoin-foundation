@@ -21,12 +21,12 @@ type LocationType = Place | VirtualLocation
 type GetLocationProps = {
   location: Event['location']
   externalLink: Event['externalLink']
-  slug: Event['slug']
+  slug: Event['_meta']['slug']
 }
 
 export function generateStructuredData(data: Event): WithContext<EventSchema> {
   const {
-    slug,
+    _meta: { slug },
     description,
     startDate,
     endDate,

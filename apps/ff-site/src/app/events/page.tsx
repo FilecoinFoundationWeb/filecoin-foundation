@@ -4,18 +4,16 @@ import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-import { getFeaturedEntry } from '@filecoin-foundation/utils/getFeaturedEntry'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/events.md'
+import { eventsPageItem } from '@/qino/items/eventsPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
+import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -33,9 +31,9 @@ type Props = {
   searchParams: AsyncQueryParams
 }
 
-const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
-
 export default async function Events(props: Props) {
+  const { seo, featured_entry } = await eventsPageItem.getEntry()
+
   const searchParams = await props.searchParams
   const events = await getEventsData()
 
@@ -62,7 +60,7 @@ export default async function Events(props: Props) {
           objectFit: 'cover',
         }}
       >
-        <Button href={`${PATHS.EVENTS.path}/${featuredEvent.slug}`}>
+        <Button href={`${PATHS.EVENTS.path}/${featuredEvent._meta.slug}`}>
           {DEFAULT_CTA_TEXT}
         </Button>
       </PageHeader>
@@ -109,9 +107,13 @@ export default async function Events(props: Props) {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  image: graphicsData.events1.data.src,
-  path: PATHS.EVENTS.path,
-})
+export async function generateMetadata() {
+  const { seo } = await eventsPageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    image: graphicsData.events1.data.src,
+    path: PATHS.EVENTS.path,
+  })
+}

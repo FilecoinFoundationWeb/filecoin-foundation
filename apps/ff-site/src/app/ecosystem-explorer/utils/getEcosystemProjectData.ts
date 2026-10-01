@@ -1,39 +1,28 @@
-import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
-import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
+import { ecosystemProjectCollection } from '@/qino/collections/ecosystemProjects'
 
-import { PATHS } from '@/constants/paths'
+import { assertEntryExists } from '@/utils/assertEntryExists'
+import { camelcaseEntry } from '@/utils/camelcaseEntry'
 
 import { METADATA_TITLE_SUFFIX } from '../constants/metadata'
-import { EcosystemProjectFrontmatterSchema } from '../schemas/EcosystemProjectFrontmatterSchema'
 
-export const ECOSYSTEM_EXPLORER_DIRECTORY_PATH =
-  PATHS.ECOSYSTEM_EXPLORER.entriesPath
+type EcosystemProjectEntry = Awaited<
+  ReturnType<typeof ecosystemProjectCollection.getEntry>
+>
 
 export async function getEcosystemProjectData(slug: string) {
-  const data = await getEcosystemProjectMarkdownData(slug)
-  return transformEcosystemProjectData(data)
+  await assertEntryExists(ecosystemProjectCollection, slug)
+  const project = await ecosystemProjectCollection.getEntry(slug)
+  return transformEcosystemProjectData(project)
 }
 
 export async function getEcosystemProjectsData() {
-  const allProjects = await getAllMarkdownData({
-    directoryPath: ECOSYSTEM_EXPLORER_DIRECTORY_PATH,
-    zodSchema: EcosystemProjectFrontmatterSchema,
-  })
-
-  return allProjects.map(transformEcosystemProjectData)
+  const projects = await ecosystemProjectCollection.getEntries()
+  return projects.map(transformEcosystemProjectData)
 }
 
-function getEcosystemProjectMarkdownData(slug: string) {
-  return getMarkdownData({
-    slug,
-    directoryPath: ECOSYSTEM_EXPLORER_DIRECTORY_PATH,
-    zodSchema: EcosystemProjectFrontmatterSchema,
-  })
-}
+function transformEcosystemProjectData(entry: EcosystemProjectEntry) {
+  const project = camelcaseEntry(entry)
 
-function transformEcosystemProjectData(
-  project: Awaited<ReturnType<typeof getEcosystemProjectMarkdownData>>,
-) {
   return {
     ...project,
     seo: {

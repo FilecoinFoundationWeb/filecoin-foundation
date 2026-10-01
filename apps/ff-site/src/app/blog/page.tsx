@@ -3,17 +3,15 @@ import { Suspense } from 'react'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
-import { getFeaturedEntry } from '@filecoin-foundation/utils/getFeaturedEntry'
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/blog.md'
+import { blogPageItem } from '@/qino/items/blogPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
+import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
 import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader'
@@ -23,9 +21,9 @@ import { BlogContent } from './components/BlogContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 
-const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
-
 export default async function Blog() {
+  const { seo, featured_entry } = await blogPageItem.getEntry()
+
   const posts = await getBlogPostsData()
 
   const featuredPost = getFeaturedEntry({
@@ -36,7 +34,7 @@ export default async function Blog() {
   return (
     <PageLayout>
       <StructuredDataScript
-        structuredData={generateStructuredData(posts, seo)}
+        structuredData={await generateStructuredData(posts, seo)}
       />
 
       <PageHeader
@@ -50,7 +48,7 @@ export default async function Blog() {
           objectFit: 'cover',
         }}
       >
-        <Button href={`${PATHS.BLOG.path}/${featuredPost.slug}`}>
+        <Button href={`${PATHS.BLOG.path}/${featuredPost._meta.slug}`}>
           Read Featured Post
         </Button>
       </PageHeader>
@@ -67,9 +65,13 @@ export default async function Blog() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  image: graphicsData.blog.data.src,
-  path: PATHS.BLOG.path,
-})
+export async function generateMetadata() {
+  const { seo } = await blogPageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    image: graphicsData.blog.data.src,
+    path: PATHS.BLOG.path,
+  })
+}

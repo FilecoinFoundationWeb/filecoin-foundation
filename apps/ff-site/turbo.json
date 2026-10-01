@@ -17,7 +17,8 @@
       "outputs": [
         ".next/**",
         "!.next/cache/**",
-        "src/app/_data/cmsConfigSchema.json"
+        "src/app/_data/cmsConfigSchema.json",
+        "qino/_generated/**"
       ]
     }
   }

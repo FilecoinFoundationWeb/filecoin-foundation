@@ -5,13 +5,11 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/security/bug-bounty/bug-bounty.md'
+import { bugBountyPageItem } from '@/qino/items/bugBountyPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -25,9 +23,9 @@ import { Leaderboard } from './components/Leaderboard'
 import { bugBountyProgramData } from './data/bugBountyProgramData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
+export default async function BugBounty() {
+  const { header, seo } = await bugBountyPageItem.getEntry()
 
-export default function BugBounty() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
@@ -121,9 +119,13 @@ export default function BugBounty() {
   )
 }
 
-export const metadata = createMetadata({
-  title: seo.title,
-  description: seo.description,
-  image: graphicsData.security4.data.src,
-  path: PATHS.BUG_BOUNTY.path,
-})
+export async function generateMetadata() {
+  const { seo } = await bugBountyPageItem.getEntry()
+
+  return createMetadata({
+    title: seo.title,
+    description: seo.description,
+    image: graphicsData.security4.data.src,
+    path: PATHS.BUG_BOUNTY.path,
+  })
+}

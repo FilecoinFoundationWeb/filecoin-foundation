@@ -6,13 +6,11 @@ import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/orbit.md'
+import { orbitPageItem } from '@/qino/items/orbitPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -35,13 +33,13 @@ import { programGoalsData } from './data/programGoalsData'
 import { statisticsData } from './data/statisticsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
-
 type Props = {
   searchParams: AsyncQueryParams
 }
 
 export default async function Orbit(props: Props) {
+  const { header, seo } = await orbitPageItem.getEntry()
+
   const searchParams = await props.searchParams
 
   return (
@@ -314,9 +312,13 @@ export default async function Orbit(props: Props) {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  image: graphicsData.orbit.data.src,
-  path: PATHS.ORBIT.path,
-})
+export async function generateMetadata() {
+  const { seo } = await orbitPageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    image: graphicsData.orbit.data.src,
+    path: PATHS.ORBIT.path,
+  })
+}

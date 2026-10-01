@@ -1,17 +1,15 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { getFeaturedEntry } from '@filecoin-foundation/utils/getFeaturedEntry'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/ecosystem-explorer/ecosystem-explorer.md'
+import { ecosystemExplorerPageItem } from '@/qino/items/ecosystemExplorerPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
+import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
 import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
@@ -26,9 +24,9 @@ type Props = {
   searchParams: AsyncQueryParams
 }
 
-const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
-
 export default async function EcosystemExplorer(props: Props) {
+  const { seo, featured_entry } = await ecosystemExplorerPageItem.getEntry()
+
   const searchParams = await props.searchParams
   const ecosystemProjects = await getEcosystemProjectsData()
 
@@ -53,7 +51,7 @@ export default async function EcosystemExplorer(props: Props) {
         }}
       >
         <Button
-          href={`${PATHS.ECOSYSTEM_EXPLORER.path}/${featuredProject.slug}`}
+          href={`${PATHS.ECOSYSTEM_EXPLORER.path}/${featuredProject._meta.slug}`}
         >
           View Project Details
         </Button>
@@ -82,9 +80,13 @@ export default async function EcosystemExplorer(props: Props) {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  image: graphicsData.ecosystem.data.src,
-  path: PATHS.ECOSYSTEM_EXPLORER.path,
-})
+export async function generateMetadata() {
+  const { seo } = await ecosystemExplorerPageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    image: graphicsData.ecosystem.data.src,
+    path: PATHS.ECOSYSTEM_EXPLORER.path,
+  })
+}

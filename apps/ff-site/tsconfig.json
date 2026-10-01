@@ -14,6 +14,7 @@
       "@/cypress/*": ["./cypress/*"],
       "@/data/*": ["./src/app/_data/*"],
       "@/hooks/*": ["./src/app/_hooks/*"],
+      "@/qino/*": ["./qino/*"],
       "@/schemas/*": ["./src/app/_schemas/*"],
       "@/styles/*": ["./src/app/_styles/*"],
       "@/support/*": ["./cypress/support/*"],

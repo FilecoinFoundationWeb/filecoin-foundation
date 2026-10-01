@@ -107,7 +107,7 @@ export function BlogContent({ posts }: BlogContentProps) {
               <CardGrid as="section" cols="smTwo">
                 {paginatedResults.map((post, i) => {
                   const {
-                    slug,
+                    _meta: { slug },
                     category,
                     title,
                     description,

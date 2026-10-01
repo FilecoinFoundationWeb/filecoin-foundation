@@ -1,30 +1,32 @@
 import { PATHS } from '@/constants/paths'
 
-import privacyPolicyMarkdown from '@/content/pages/privacy-policy.md'
+import { privacyPolicyPageItem } from '@/qino/items/privacyPolicyPage'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { MarkdownPageSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { MarkdownPage } from '@/components/MarkdownPage'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { attributes, body } = MarkdownPageSchema.parse(privacyPolicyMarkdown)
+export default async function PrivacyPolicy() {
+  const { header, seo, markdown } = await privacyPolicyPageItem.getEntry()
 
-export default function PrivacyPolicy() {
   return (
     <MarkdownPage
-      title={attributes.header.title}
-      structuredData={generateStructuredData(attributes.seo)}
+      title={header.title}
+      structuredData={generateStructuredData(seo)}
     >
-      {body}
+      {markdown}
     </MarkdownPage>
   )
 }
 
-export const metadata = createMetadata({
-  title: attributes.seo.title,
-  description: attributes.seo.description,
-  path: PATHS.PRIVACY_POLICY.path,
-})
+export async function generateMetadata() {
+  const { seo } = await privacyPolicyPageItem.getEntry()
+
+  return createMetadata({
+    title: seo.title,
+    description: seo.description,
+    path: PATHS.PRIVACY_POLICY.path,
+  })
+}

@@ -4,22 +4,20 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/security/bug-bounty/leaderboard.md'
+import { leaderboardPageItem } from '@/qino/items/leaderboardPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { BugBountyCTASection } from '../components/BugBountyCTASection'
 import { Leaderboard as LeaderboardComponent } from '../components/Leaderboard'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
+export default async function Leaderboard() {
+  const { header, seo } = await leaderboardPageItem.getEntry()
 
-export default function Leaderboard() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
@@ -33,9 +31,13 @@ export default function Leaderboard() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  image: graphicsData.security4.data.src,
-  path: PATHS.SECURITY_BUG_BOUNTY_LEADERBOARD.path,
-})
+export async function generateMetadata() {
+  const { seo } = await leaderboardPageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    image: graphicsData.security4.data.src,
+    path: PATHS.SECURITY_BUG_BOUNTY_LEADERBOARD.path,
+  })
+}

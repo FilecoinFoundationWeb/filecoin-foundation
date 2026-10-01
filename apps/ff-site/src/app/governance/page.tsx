@@ -4,13 +4,11 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/governance/governance.md'
+import { governancePageItem } from '@/qino/items/governancePage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -20,12 +18,14 @@ import { CTAPageSection } from './components/CTAPageSection'
 import { governanceDocsData } from './data/governanceDocsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
+export default async function Governance() {
+  const { header, seo } = await governancePageItem.getEntry()
 
-export default function Governance() {
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={generateStructuredData(seo)} />
+      <StructuredDataScript
+        structuredData={await generateStructuredData(seo)}
+      />
       <PageHeader
         title={header.title}
         description={{ text: header.description }}
@@ -76,9 +76,13 @@ export default function Governance() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  image: graphicsData.governance2.data.src,
-  path: PATHS.GOVERNANCE.path,
-})
+export async function generateMetadata() {
+  const { seo } = await governancePageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    image: graphicsData.governance2.data.src,
+    path: PATHS.GOVERNANCE.path,
+  })
+}

@@ -1,37 +1,26 @@
-import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
-import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
+import { monthlyUpdateCollection } from '@/qino/collections/monthlyUpdates'
 
-import { PATHS } from '@/constants/paths'
+import { assertEntryExists } from '@/utils/assertEntryExists'
+import { camelcaseEntry } from '@/utils/camelcaseEntry'
 
-import { MonthlyUpdateFrontmatterSchema } from '../schemas/MonthlyUpdateFrontmatterSchema'
-
-const MONTHLY_UPDATES_DIRECTORY_PATH = PATHS.FIL_PLUS_MONTHLY_UPDATES.entriesPath
+type MonthlyUpdateEntry = Awaited<
+  ReturnType<typeof monthlyUpdateCollection.getEntry>
+>
 
 export async function getMonthlyUpdateData(slug: string) {
-  const data = await getMonthlyUpdateMarkdownData(slug)
-  return transformMonthlyUpdateData(data)
+  await assertEntryExists(monthlyUpdateCollection, slug)
+  const update = await monthlyUpdateCollection.getEntry(slug)
+  return transformMonthlyUpdateData(update)
 }
 
 export async function getMonthlyUpdatesData() {
-  const allUpdates = await getAllMarkdownData({
-    directoryPath: MONTHLY_UPDATES_DIRECTORY_PATH,
-    zodSchema: MonthlyUpdateFrontmatterSchema,
-  })
-
-  return allUpdates.map(transformMonthlyUpdateData)
+  const updates = await monthlyUpdateCollection.getEntries()
+  return updates.map(transformMonthlyUpdateData)
 }
 
-function getMonthlyUpdateMarkdownData(slug: string) {
-  return getMarkdownData({
-    slug,
-    directoryPath: MONTHLY_UPDATES_DIRECTORY_PATH,
-    zodSchema: MonthlyUpdateFrontmatterSchema,
-  })
-}
+function transformMonthlyUpdateData(entry: MonthlyUpdateEntry) {
+  const update = camelcaseEntry(entry)
 
-function transformMonthlyUpdateData(
-  update: Awaited<ReturnType<typeof getMonthlyUpdateMarkdownData>>,
-) {
   return {
     ...update,
     seo: {

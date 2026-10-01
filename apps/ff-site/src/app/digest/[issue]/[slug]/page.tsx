@@ -3,7 +3,6 @@ import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { getDigestArticleStaticParams } from '@filecoin-foundation/utils/getDigestArticleStaticParams'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -36,7 +35,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
     articleNumber,
     image,
     authors,
-    content,
+    markdown,
     articlePath,
   } = data
 
@@ -54,7 +53,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
             alt: '',
           }}
         />
-        {content && <MarkdownContent>{content}</MarkdownContent>}
+        {markdown && <MarkdownContent>{markdown}</MarkdownContent>}
         <ShareArticle
           sectionTitle="Share Article"
           articleTitle={title}
@@ -68,7 +67,11 @@ export default async function DigestArticle(props: DigestArticleProps) {
 
 export async function generateStaticParams() {
   const articles = await getDigestArticlesData()
-  return getDigestArticleStaticParams({ articles })
+
+  return articles.map(({ articlePath }) => {
+    const [issue, slug] = articlePath.split('/')
+    return { issue, slug }
+  })
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
