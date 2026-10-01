@@ -5,17 +5,15 @@ import { getFeaturedPosts } from '@filecoin-foundation/utils/getFeaturedPosts'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
-import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
+import { getOrganizationSchemaBase } from '@/constants/structuredDataConstants'
 
-import { attributes as digestAttributes } from '@/content/pages/digest.md'
-import { attributes } from '@/content/pages/home.md'
+import { digestPageItem } from '@/qino/items/digestPage'
+import { homePageItem } from '@/qino/items/homePage'
 
 import { filecoinEcosystemData } from '@/data/filecoinEcosystemData'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Button } from '@/components/Button'
 import { CTAButtonGroup } from '@/components/CTAButtonGroup'
@@ -27,21 +25,15 @@ import { PageSection } from '@/components/PageSection'
 import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
 import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
-import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 import { getFeaturedEcosystemProjects } from '@/ecosystem-explorer/utils/getFeaturedEcosystemProjects'
 
-const {
-  header,
-  seo,
-  featured_ecosystem_projects: featuredEcosystemProjectPaths,
-} = FrontmatterSchema.parse(attributes)
-
-const { header: digestPageHeader } =
-  PageFrontmatterSchema.parse(digestAttributes)
-
 export default async function Home() {
+  const { header, featured_ecosystem_projects: featuredEcosystemProjectPaths } =
+    await homePageItem.getEntry()
+  const { header: digestPageHeader } = await digestPageItem.getEntry()
+
   const featuredBlogPosts = getFeaturedPosts({
     posts: await getBlogPostsData(),
     limit: 4,
@@ -56,7 +48,9 @@ export default async function Home() {
   return (
     <NoBreadCrumbsLayout>
       <PageLayout>
-        <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
+        <StructuredDataScript
+          structuredData={await getOrganizationSchemaBase()}
+        />
         <PageHeader
           title={header.title}
           description={{ text: header.description }}
@@ -160,9 +154,13 @@ export default async function Home() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  path: PATHS.HOME.path,
-  image: graphicsData.home.data.src,
-})
+export async function generateMetadata() {
+  const { seo } = await homePageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    path: PATHS.HOME.path,
+    image: graphicsData.home.data.src,
+  })
+}

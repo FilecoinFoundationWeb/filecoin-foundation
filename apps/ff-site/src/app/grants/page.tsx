@@ -6,7 +6,7 @@ import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextL
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/grants.md'
+import { grantsPageItem } from '@/qino/items/grantsPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -26,25 +26,26 @@ import { FeaturedGrantGraduates } from './components/FeaturedGrantGraduates'
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
-import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 import { getFeaturedEcosystemProjects } from '@/ecosystem-explorer/utils/getFeaturedEcosystemProjects'
 
-const {
-  header,
-  seo,
-  featured_grant_graduates: featuredGrantGraduatesPaths,
-} = FrontmatterSchema.parse(attributes)
-
 export default async function Grants() {
+  const {
+    header,
+    seo,
+    featured_grant_graduates: featuredGrantGraduatesPaths,
+  } = await grantsPageItem.getEntry()
+
   const featuredGrantGraduates = await getFeaturedEcosystemProjects(
     featuredGrantGraduatesPaths,
   )
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={generateStructuredData(seo)} />
+      <StructuredDataScript
+        structuredData={await generateStructuredData(seo)}
+      />
       <PageHeader
         title={header.title}
         description={{ text: header.description }}
@@ -164,9 +165,13 @@ export default async function Grants() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  image: graphicsData.grants.data.src,
-  path: PATHS.GRANTS.path,
-})
+export async function generateMetadata() {
+  const { seo } = await grantsPageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    image: graphicsData.grants.data.src,
+    path: PATHS.GRANTS.path,
+  })
+}

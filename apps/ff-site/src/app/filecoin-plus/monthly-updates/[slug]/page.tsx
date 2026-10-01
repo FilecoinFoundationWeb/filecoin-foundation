@@ -30,11 +30,13 @@ export default async function MonthlyUpdatePost(props: MonthlyUpdateProps) {
   const { slug } = await props.params
   const data = await getMonthlyUpdateData(slug)
 
-  const { title, image, content, publishedOn, addTableOfContents } = data
+  const { title, image, markdown, publishedOn, addTableOfContents } = data
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={generateStructuredData(data)} />
+      <StructuredDataScript
+        structuredData={await generateStructuredData(data)}
+      />
       <ArticleLayout>
         <ArticleHeader
           image={{
@@ -47,7 +49,7 @@ export default async function MonthlyUpdatePost(props: MonthlyUpdateProps) {
         </ArticleHeader>
 
         <MarkdownContent addTableOfContents={addTableOfContents}>
-          {content}
+          {markdown}
         </MarkdownContent>
 
         <ShareArticle
@@ -63,7 +65,7 @@ export default async function MonthlyUpdatePost(props: MonthlyUpdateProps) {
 
 export async function generateStaticParams() {
   const entries = await getMonthlyUpdatesData()
-  return entries.map(({ slug }) => ({ slug }))
+  return entries.map(({ _meta }) => ({ slug: _meta.slug }))
 }
 
 export async function generateMetadata(props: MonthlyUpdateProps) {
@@ -74,7 +76,7 @@ export async function generateMetadata(props: MonthlyUpdateProps) {
     title: data.seo.title,
     description: data.seo.description,
     image: data.image?.src || graphicsData.filPlus.data.src,
-    path: `${PATHS.FIL_PLUS_MONTHLY_UPDATES.path}/${data.slug}`,
+    path: `${PATHS.FIL_PLUS_MONTHLY_UPDATES.path}/${data._meta.slug}`,
     openGraph: { type: 'article' },
   })
 }

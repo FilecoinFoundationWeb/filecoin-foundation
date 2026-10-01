@@ -9,7 +9,7 @@ image:
   src: /assets/images/031224-fvm-anniversary.png
 seo:
   description: "Celebrating one year of programmability on Filecoin. Explore the growth
-  of smart contracts and DApps."
+    of smart contracts and DApps."
 ---
 
 One year ago at 3:14 PM UTC on March 14, 2023 (epoch 2,683,348), the launch of the [Filecoin Virtual Machine](https://fvm.filecoin.io/) (FVM) brought onchain programmability and smart contracts to Filecoin Mainnet. Dapps can tap into storage primitives on Filecoin with valuable workflows including perpetual storage, data access control, compute-over-data, Data DAOs, and more. These capabilities solidify Filecoin’s position as the Layer-1 blockchain uniquely positioned to power an open data economy.

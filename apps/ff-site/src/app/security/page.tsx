@@ -5,13 +5,11 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/security/security.md'
+import { securityPageItem } from '@/qino/items/securityPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
@@ -22,9 +20,9 @@ import { PageSection } from '@/components/PageSection'
 import { developerSupportData } from './data/developerSupportData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
+export default async function Security() {
+  const { header, seo } = await securityPageItem.getEntry()
 
-export default function Security() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
@@ -124,9 +122,13 @@ export default function Security() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  image: graphicsData.security.data.src,
-  path: PATHS.SECURITY.path,
-})
+export async function generateMetadata() {
+  const { seo } = await securityPageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    image: graphicsData.security.data.src,
+    path: PATHS.SECURITY.path,
+  })
+}

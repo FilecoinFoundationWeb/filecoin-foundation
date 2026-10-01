@@ -30,7 +30,7 @@ export default async function BlogPost(props: BlogPostProps) {
   const {
     title,
     image,
-    content,
+    markdown,
     publishedOn,
     category,
     addTableOfContents,
@@ -39,7 +39,9 @@ export default async function BlogPost(props: BlogPostProps) {
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={generateStructuredData(data)} />
+      <StructuredDataScript
+        structuredData={await generateStructuredData(data)}
+      />
       <ArticleLayout>
         <BlogPostHeader
           title={title}
@@ -56,7 +58,7 @@ export default async function BlogPost(props: BlogPostProps) {
         />
 
         <MarkdownContent addTableOfContents={addTableOfContents}>
-          {content}
+          {markdown}
         </MarkdownContent>
 
         <ShareArticle
@@ -72,7 +74,7 @@ export default async function BlogPost(props: BlogPostProps) {
 
 export async function generateStaticParams() {
   const entries = await getBlogPostsData()
-  return entries.map(({ slug }) => ({ slug }))
+  return entries.map(({ _meta }) => ({ slug: _meta.slug }))
 }
 
 export async function generateMetadata(props: BlogPostProps) {
@@ -83,7 +85,7 @@ export async function generateMetadata(props: BlogPostProps) {
     title: data.seo.title,
     description: data.seo.description,
     image: data.image?.src || graphicsData.blog.data.src,
-    path: `${PATHS.BLOG.path}/${data.slug}`,
+    path: `${PATHS.BLOG.path}/${data._meta.slug}`,
     openGraph: { type: 'article' },
   })
 }

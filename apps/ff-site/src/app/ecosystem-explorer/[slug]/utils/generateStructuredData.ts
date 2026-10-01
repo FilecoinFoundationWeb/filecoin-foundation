@@ -10,6 +10,6 @@ export function generateStructuredData(data: EcosystemProject) {
   return generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
-    path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}` as DynamicPathValues,
+    path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data._meta.slug}` as DynamicPathValues,
   })
 }

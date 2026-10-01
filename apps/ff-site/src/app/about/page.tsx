@@ -10,13 +10,11 @@ import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizePro
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/about.md'
+import { aboutPageItem } from '@/qino/items/aboutPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -30,12 +28,14 @@ import { focusAreasData } from './data/focusAreasData'
 import { reportsData } from './data/reportsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
+export default async function About() {
+  const { header, seo } = await aboutPageItem.getEntry()
 
-export default function About() {
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={generateStructuredData(seo)} />
+      <StructuredDataScript
+        structuredData={await generateStructuredData(seo)}
+      />
 
       <PageHeader
         title={header.title}
@@ -141,9 +141,13 @@ export default function About() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  image: graphicsData.about.data.src,
-  path: PATHS.ABOUT.path,
-})
+export async function generateMetadata() {
+  const { seo } = await aboutPageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    image: graphicsData.about.data.src,
+    path: PATHS.ABOUT.path,
+  })
+}

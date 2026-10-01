@@ -83,6 +83,7 @@ export const config = [
               position: 'before',
             },
             { pattern: '@/content/**', group: 'internal', position: 'before' },
+            { pattern: '@/qino/**', group: 'internal', position: 'before' },
             { pattern: '@/data/**', group: 'internal', position: 'before' },
             { pattern: '@/assets/**', group: 'internal', position: 'before' },
             { pattern: '@/utils/**', group: 'internal', position: 'before' },

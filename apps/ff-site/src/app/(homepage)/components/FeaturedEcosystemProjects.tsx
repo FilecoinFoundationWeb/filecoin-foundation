@@ -20,36 +20,38 @@ export function FeaturedEcosystemProjects({
 }: FeaturedEcosystemProjectsProps) {
   return (
     <CardGrid as="section" cols="smTwoLgThree">
-      {ecosystemProjects.map(({ slug, title, description, image }) => (
-        <Card
-          key={slug}
-          as="article"
-          description={{ text: description, isClamped: true }}
-          borderColor="lighter"
-          cta={{
-            href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
-            text: 'Learn More',
-            icon: {
-              component: MagnifyingGlassIcon,
-            },
-          }}
-          image={{
-            ...(image || graphicsData.imageFallback.data),
-            alt: '',
-            objectFit: 'contain',
-            padding: Boolean(image),
-            sizes: buildImageSizeProp({
-              startSize: '100vw',
-              sm: '320px',
-              md: '440px',
-              lg: '280px',
-            }),
-          }}
-          title={{
-            text: title,
-          }}
-        />
-      ))}
+      {ecosystemProjects.map(
+        ({ _meta: { slug }, title, description, image }) => (
+          <Card
+            key={slug}
+            as="article"
+            description={{ text: description, isClamped: true }}
+            borderColor="lighter"
+            cta={{
+              href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
+              text: 'Learn More',
+              icon: {
+                component: MagnifyingGlassIcon,
+              },
+            }}
+            image={{
+              ...(image || graphicsData.imageFallback.data),
+              alt: '',
+              objectFit: 'contain',
+              padding: Boolean(image),
+              sizes: buildImageSizeProp({
+                startSize: '100vw',
+                sm: '320px',
+                md: '440px',
+                lg: '280px',
+              }),
+            }}
+            title={{
+              text: title,
+            }}
+          />
+        ),
+      )}
     </CardGrid>
   )
 }

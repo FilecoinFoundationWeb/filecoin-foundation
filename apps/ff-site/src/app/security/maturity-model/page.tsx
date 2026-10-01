@@ -3,13 +3,11 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/security/maturity-model.md'
+import { maturityModelPageItem } from '@/qino/items/maturityModelPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -25,9 +23,9 @@ import { MobileTableOfContentsWrapper } from './components/MobileTableOfContents
 import { applicationAndUseData } from './data/applicationAndUseData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
+export default async function MaturityModel() {
+  const { header, seo } = await maturityModelPageItem.getEntry()
 
-export default function MaturityModel() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
@@ -78,9 +76,13 @@ export default function MaturityModel() {
   )
 }
 
-export const metadata = createMetadata({
-  title: seo.title,
-  description: seo.description,
-  image: graphicsData.security5.data.src,
-  path: PATHS.MATURITY_MODEL.path,
-})
+export async function generateMetadata() {
+  const { seo } = await maturityModelPageItem.getEntry()
+
+  return createMetadata({
+    title: seo.title,
+    description: seo.description,
+    image: graphicsData.security5.data.src,
+    path: PATHS.MATURITY_MODEL.path,
+  })
+}

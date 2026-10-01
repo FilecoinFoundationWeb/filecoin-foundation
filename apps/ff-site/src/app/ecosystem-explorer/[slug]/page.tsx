@@ -38,7 +38,7 @@ export default async function EcosystemProject(props: EcosystemProjectProps) {
   const {
     image,
     title,
-    content,
+    markdown,
     videoUrl,
     website,
     repo,
@@ -59,7 +59,7 @@ export default async function EcosystemProject(props: EcosystemProjectProps) {
 
       <Article
         title={title}
-        content={content}
+        content={markdown}
         videoUrl={videoUrl}
         website={website}
         repo={repo}
@@ -98,7 +98,7 @@ export default async function EcosystemProject(props: EcosystemProjectProps) {
 
 export async function generateStaticParams() {
   const entries = await getEcosystemProjectsData()
-  return entries.map(({ slug }) => ({ slug }))
+  return entries.map(({ _meta }) => ({ slug: _meta.slug }))
 }
 
 export async function generateMetadata(props: EcosystemProjectProps) {
@@ -109,7 +109,7 @@ export async function generateMetadata(props: EcosystemProjectProps) {
     title: data.seo.title,
     description: data.seo.description,
     image: graphicsData.ecosystem.data.src,
-    path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}`,
+    path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data._meta.slug}`,
     openGraph: { type: 'article' },
   })
 }

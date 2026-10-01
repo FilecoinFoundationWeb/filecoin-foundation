@@ -22,7 +22,14 @@ export function FeaturedBlogPosts({
   return (
     <CardGrid as="section" cols="smTwo">
       {featuredBlogPosts.map(
-        ({ title, description, slug, image, category, publishedOn }) => {
+        ({
+          title,
+          description,
+          _meta: { slug },
+          image,
+          category,
+          publishedOn,
+        }) => {
           const categoryLabel = getCategoryLabel({
             collectionName: 'blog_posts',
             category,

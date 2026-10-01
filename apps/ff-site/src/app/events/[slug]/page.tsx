@@ -137,7 +137,7 @@ export default async function EventEntry(props: EventProps) {
 
 export async function generateStaticParams() {
   const entries = await getEventsData()
-  return entries.map(({ slug }) => ({ slug }))
+  return entries.map(({ _meta }) => ({ slug: _meta.slug }))
 }
 
 export async function generateMetadata(props: EventProps) {
@@ -148,7 +148,7 @@ export async function generateMetadata(props: EventProps) {
     title: data.seo.title,
     description: data.seo.description,
     image: graphicsData.events1.data.src,
-    path: `${PATHS.EVENTS.path}/${data.slug}`,
+    path: `${PATHS.EVENTS.path}/${data._meta.slug}`,
     openGraph: { type: 'article' },
   })
 }

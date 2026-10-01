@@ -10,7 +10,7 @@ export type MarkdownTemplateParams = {
   category: EcosystemProject['category']
   tech: Array<Tech>
   description: EcosystemProject['description']
-  content: NonNullable<EcosystemProject['content']>
+  content: EcosystemProject['markdown']
   yearJoined: NonNullable<EcosystemProject['yearJoined']>
   website: NonNullable<EcosystemProject['website']>
   createdOn: EcosystemProject['createdOn']

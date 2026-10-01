@@ -5,16 +5,16 @@ import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
-import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
+import { getOrganizationSchemaBase } from '@/constants/structuredDataConstants'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 import type { MonthlyUpdate } from '../types/monthlyUpdateType'
 
-export function generateStructuredData(
+export async function generateStructuredData(
   updates: Array<MonthlyUpdate>,
   seo: SeoMetadata,
-): WithContext<WebPage> {
+): Promise<WithContext<WebPage>> {
   const baseData = generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
@@ -26,7 +26,7 @@ export function generateStructuredData(
 
   return {
     ...baseData,
-    publisher: ORGANIZATION_SCHEMA_BASE,
+    publisher: await getOrganizationSchemaBase(),
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: fiveMostRecentUpdates.map((update, index) => ({
@@ -34,11 +34,11 @@ export function generateStructuredData(
         position: index + 1,
         item: {
           '@type': 'Article',
-          '@id': `${BASE_URL}${PATHS.FIL_PLUS_MONTHLY_UPDATES.path}/${update.slug}`,
+          '@id': `${BASE_URL}${PATHS.FIL_PLUS_MONTHLY_UPDATES.path}/${update._meta.slug}`,
           headline: update.title,
           description: update.description,
           image: update.image?.src,
-          url: `${BASE_URL}${PATHS.FIL_PLUS_MONTHLY_UPDATES.path}/${update.slug}`,
+          url: `${BASE_URL}${PATHS.FIL_PLUS_MONTHLY_UPDATES.path}/${update._meta.slug}`,
           author: {
             '@type': 'Organization',
             name: ORGANIZATION_NAME,

@@ -6,13 +6,11 @@ import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
+import { projectFormPageItem } from '@/qino/items/projectFormPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { getGroupedCategoryOptions } from '../utils/getGroupedCategoryOptions'
 
@@ -24,8 +22,6 @@ import { SearchParamsSchema } from './schema/SearchParamsSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getFormInitialValue } from './utils/getFormInitialValue'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
-
 const groupedCategoryOptions = getGroupedCategoryOptions()
 
 type Props = {
@@ -33,6 +29,8 @@ type Props = {
 }
 
 export default async function EcosystemExplorerProjectForm(props: Props) {
+  const { header, seo } = await projectFormPageItem.getEntry()
+
   const searchParams = await props.searchParams
   const safeParams = SearchParamsSchema.safeParse(searchParams)
 
@@ -62,9 +60,13 @@ export default async function EcosystemExplorerProjectForm(props: Props) {
   )
 }
 
-export const metadata = createMetadata({
-  title: seo.title,
-  description: seo.description,
-  image: graphicsData.ecosystem.data.src,
-  path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
-})
+export async function generateMetadata() {
+  const { seo } = await projectFormPageItem.getEntry()
+
+  return createMetadata({
+    title: seo.title,
+    description: seo.description,
+    image: graphicsData.ecosystem.data.src,
+    path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
+  })
+}

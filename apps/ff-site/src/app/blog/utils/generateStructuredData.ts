@@ -4,17 +4,16 @@ import type { SeoMetadata } from '@filecoin-foundation/utils/schemas/SeoMetadata
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
-import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
+import { getOrganizationSchemaBase } from '@/constants/structuredDataConstants'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
-
 import type { BlogPost } from '../types/blogPostType'
 
-export function generateStructuredData(
+export async function generateStructuredData(
   posts: Array<BlogPost>,
   seo: SeoMetadata,
-): WithContext<WebPage> {
+): Promise<WithContext<WebPage>> {
   const baseData = generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
@@ -23,7 +22,7 @@ export function generateStructuredData(
 
   return {
     ...baseData,
-    publisher: ORGANIZATION_SCHEMA_BASE,
+    publisher: await getOrganizationSchemaBase(),
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: posts.slice(0, 5).map((post, index) => ({
@@ -34,7 +33,7 @@ export function generateStructuredData(
           headline: post.title,
           description: post.description,
           image: post.image && post.image.src,
-          url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
+          url: `${BASE_URL}${PATHS.BLOG.path}/${post._meta.slug}`,
           author: {
             '@type': 'Organization',
             name: ORGANIZATION_NAME,

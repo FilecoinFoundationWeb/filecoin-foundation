@@ -134,7 +134,7 @@ export default function EventsContent({
               <CardGrid as="section" cols="smTwo">
                 {paginatedResults.map((event, i) => {
                   const {
-                    slug,
+                    _meta: { slug },
                     title,
                     image,
                     category,

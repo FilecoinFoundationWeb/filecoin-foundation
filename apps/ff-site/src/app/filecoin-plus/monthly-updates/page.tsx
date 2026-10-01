@@ -7,27 +7,25 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/filecoin-plus/monthly-updates.md'
+import { monthlyUpdatesPageItem } from '@/qino/items/monthlyUpdatesPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
-
 import { MonthlyUpdatesContent } from './components/MonthlyUpdatesContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getMonthlyUpdatesData } from './utils/getMonthlyUpdateData'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
-
 export default async function MonthlyUpdates() {
+  const { header, seo } = await monthlyUpdatesPageItem.getEntry()
+
   const updates = await getMonthlyUpdatesData()
 
   return (
     <PageLayout>
       <StructuredDataScript
-        structuredData={generateStructuredData(updates, seo)}
+        structuredData={await generateStructuredData(updates, seo)}
       />
 
       <section>
@@ -46,9 +44,13 @@ export default async function MonthlyUpdates() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  image: graphicsData.filPlus.data.src,
-  path: PATHS.FIL_PLUS_MONTHLY_UPDATES.path,
-})
+export async function generateMetadata() {
+  const { seo } = await monthlyUpdatesPageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    image: graphicsData.filPlus.data.src,
+    path: PATHS.FIL_PLUS_MONTHLY_UPDATES.path,
+  })
+}

@@ -1,42 +1,30 @@
 import { isBefore } from 'date-fns'
 
-import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
-import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
+import { eventCollection } from '@/qino/collections/events'
 
-import { PATHS } from '@/constants/paths'
+import { assertEntryExists } from '@/utils/assertEntryExists'
+import { camelcaseEntry } from '@/utils/camelcaseEntry'
 
 import { METADATA_TITLE_SUFFIX } from '../constants/metadata'
-import { EventFrontmatterSchema } from '../schemas/EventFrontmatterSchema'
 
-const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesPath
+type EventEntry = Awaited<ReturnType<typeof eventCollection.getEntry>>
+type CamelcasedEventEntry = ReturnType<typeof camelcaseEntry<EventEntry>>
 
 export async function getEventData(slug: string) {
-  const data = await getEventMarkdownData(slug)
-  validateEndIsAfterStart(data)
-  return transformEventData(data)
+  await assertEntryExists(eventCollection, slug)
+  const event = await eventCollection.getEntry(slug)
+  return transformEventData(event)
 }
 
 export async function getEventsData() {
-  const allEvents = await getAllMarkdownData({
-    directoryPath: EVENTS_DIRECTORY_PATH,
-    zodSchema: EventFrontmatterSchema,
-  })
-
-  allEvents.forEach(validateEndIsAfterStart)
-  return allEvents.map(transformEventData)
+  const events = await eventCollection.getEntries()
+  return events.map(transformEventData)
 }
 
-function getEventMarkdownData(slug: string) {
-  return getMarkdownData({
-    slug,
-    directoryPath: EVENTS_DIRECTORY_PATH,
-    zodSchema: EventFrontmatterSchema,
-  })
-}
+function transformEventData(entry: EventEntry) {
+  const event = camelcaseEntry(entry)
+  validateEndIsAfterStart(event)
 
-function transformEventData(
-  event: Awaited<ReturnType<typeof getEventMarkdownData>>,
-) {
   return {
     ...event,
     seo: {
@@ -46,9 +34,7 @@ function transformEventData(
   }
 }
 
-function validateEndIsAfterStart(
-  event: Awaited<ReturnType<typeof getEventMarkdownData>>,
-) {
+function validateEndIsAfterStart(event: CamelcasedEventEntry) {
   const { startDate, endDate, program, schedule } = event
 
   if (endDate && isBefore(endDate, startDate)) {

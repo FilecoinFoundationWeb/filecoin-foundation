@@ -3,13 +3,11 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/filecoin-plus/allocators.md'
+import { allocatorsPageItem } from '@/qino/items/allocatorsPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -17,9 +15,9 @@ import { PageSection } from '@/components/PageSection'
 import { AllocatorsTableSection } from './components/AllocatorsTableSection'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
+export default async function Allocators() {
+  const { header, seo } = await allocatorsPageItem.getEntry()
 
-export default function Allocators() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
@@ -36,9 +34,13 @@ export default function Allocators() {
   )
 }
 
-export const metadata = createMetadata({
-  title: { absolute: seo.title },
-  description: seo.description,
-  image: graphicsData.filPlusAllocators.data.src,
-  path: PATHS.ALLOCATORS.path,
-})
+export async function generateMetadata() {
+  const { seo } = await allocatorsPageItem.getEntry()
+
+  return createMetadata({
+    title: { absolute: seo.title },
+    description: seo.description,
+    image: graphicsData.filPlusAllocators.data.src,
+    path: PATHS.ALLOCATORS.path,
+  })
+}

@@ -47,3 +47,6 @@ src/app/_data/cmsConfigSchema.json
 
 # cypress
 /cypress/screenshots
+
+# qino
+qino/_generated/

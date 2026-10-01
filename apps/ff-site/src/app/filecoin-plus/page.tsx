@@ -8,13 +8,11 @@ import { getFeaturedPosts } from '@filecoin-foundation/utils/getFeaturedPosts'
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/filecoin-plus/filecoin-plus.md'
+import { filecoinPlusPageItem } from '@/qino/items/filecoinPlusPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { Button } from '@/components/Button'
@@ -34,9 +32,9 @@ import { statisticsData } from './data/statisticsData'
 import { getMonthlyUpdatesData } from './monthly-updates/utils/getMonthlyUpdateData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
-
 export default async function FilPlus() {
+  const { header, seo } = await filecoinPlusPageItem.getEntry()
+
   const latestUpdates = getFeaturedPosts({
     posts: await getMonthlyUpdatesData(),
     limit: 4,
@@ -102,7 +100,7 @@ export default async function FilPlus() {
         >
           <CardGrid as="section" cols="smTwo">
             {latestUpdates.map(
-              ({ slug, title, description, image, publishedOn }) => (
+              ({ _meta: { slug }, title, description, image, publishedOn }) => (
                 <Card
                   key={slug}
                   as="article"
@@ -153,9 +151,13 @@ export default async function FilPlus() {
   )
 }
 
-export const metadata = createMetadata({
-  title: seo.title,
-  description: seo.description,
-  image: graphicsData.filPlus.data.src,
-  path: PATHS.FIL_PLUS.path,
-})
+export async function generateMetadata() {
+  const { seo } = await filecoinPlusPageItem.getEntry()
+
+  return createMetadata({
+    title: seo.title,
+    description: seo.description,
+    image: graphicsData.filPlus.data.src,
+    path: PATHS.FIL_PLUS.path,
+  })
+}

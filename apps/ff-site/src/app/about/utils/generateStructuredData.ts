@@ -3,12 +3,13 @@ import type { WebPage, WithContext } from 'schema-dts'
 import type { SeoMetadata } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
 
 import { PATHS } from '@/constants/paths'
-import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
+import { getOrganizationSchemaBase } from '@/constants/structuredDataConstants'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
-
-export function generateStructuredData(seo: SeoMetadata): WithContext<WebPage> {
+export async function generateStructuredData(
+  seo: SeoMetadata,
+): Promise<WithContext<WebPage>> {
   const baseData = generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
@@ -17,6 +18,6 @@ export function generateStructuredData(seo: SeoMetadata): WithContext<WebPage> {
 
   return {
     ...baseData,
-    about: ORGANIZATION_SCHEMA_BASE,
+    about: await getOrganizationSchemaBase(),
   }
 }

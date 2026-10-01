@@ -4,18 +4,19 @@ import { generateBlogPostStructuredData } from '@filecoin-foundation/utils/gener
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
-import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
+import { getOrganizationSchemaBase } from '@/constants/structuredDataConstants'
 
 import type { MonthlyUpdate } from '../../types/monthlyUpdateType'
 
-export function generateStructuredData(
+export async function generateStructuredData(
   data: MonthlyUpdate,
-): WithContext<BlogPosting> {
+): Promise<WithContext<BlogPosting>> {
   return generateBlogPostStructuredData({
     ...data,
+    slug: data._meta.slug,
     organizationName: ORGANIZATION_NAME,
     baseUrl: BASE_URL,
     basePath: PATHS.FIL_PLUS_MONTHLY_UPDATES.path,
-    organizationSchema: ORGANIZATION_SCHEMA_BASE,
+    organizationSchema: await getOrganizationSchemaBase(),
   })
 }

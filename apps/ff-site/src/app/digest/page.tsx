@@ -9,13 +9,11 @@ import { getDigestIssueDescription } from '@filecoin-foundation/utils/getDigestI
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/digest.md'
+import { digestPageItem } from '@/qino/items/digestPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Card } from '@/components/Card'
 import { CTASection } from '@/components/CTASection'
@@ -29,9 +27,9 @@ import {
   getDigestIssueData,
 } from './utils/getDigestIssueData'
 
-const { header, seo } = PageFrontmatterSchema.parse(attributes)
-
 export default async function Digest() {
+  const { header, seo } = await digestPageItem.getEntry()
+
   const allIssues = await getDigestIssuesData()
 
   const issueNumber = allIssues[0].issueNumber
@@ -117,9 +115,13 @@ export default async function Digest() {
   )
 }
 
-export const metadata = createMetadata({
-  title: seo.title,
-  description: seo.description,
-  image: graphicsData.digest.data.src,
-  path: PATHS.DIGEST.path,
-})
+export async function generateMetadata() {
+  const { seo } = await digestPageItem.getEntry()
+
+  return createMetadata({
+    title: seo.title,
+    description: seo.description,
+    image: graphicsData.digest.data.src,
+    path: PATHS.DIGEST.path,
+  })
+}

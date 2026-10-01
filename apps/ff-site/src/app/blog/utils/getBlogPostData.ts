@@ -1,37 +1,24 @@
-import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
-import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
+import { blogPostCollection } from '@/qino/collections/blogPosts'
 
-import { PATHS } from '@/constants/paths'
+import { assertEntryExists } from '@/utils/assertEntryExists'
+import { camelcaseEntry } from '@/utils/camelcaseEntry'
 
-import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
-
-const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesPath
+type BlogPostEntry = Awaited<ReturnType<typeof blogPostCollection.getEntry>>
 
 export async function getBlogPostData(slug: string) {
-  const data = await getBlogPostMarkdownData(slug)
-  return transformBlogPostData(data)
+  await assertEntryExists(blogPostCollection, slug)
+  const post = await blogPostCollection.getEntry(slug)
+  return transformBlogPostData(post)
 }
 
 export async function getBlogPostsData() {
-  const allPosts = await getAllMarkdownData({
-    directoryPath: BLOG_DIRECTORY_PATH,
-    zodSchema: BlogPostFrontmatterSchema,
-  })
-
-  return allPosts.map(transformBlogPostData)
+  const posts = await blogPostCollection.getEntries()
+  return posts.map(transformBlogPostData)
 }
 
-function getBlogPostMarkdownData(slug: string) {
-  return getMarkdownData({
-    slug,
-    directoryPath: BLOG_DIRECTORY_PATH,
-    zodSchema: BlogPostFrontmatterSchema,
-  })
-}
+function transformBlogPostData(entry: BlogPostEntry) {
+  const post = camelcaseEntry(entry)
 
-function transformBlogPostData(
-  post: Awaited<ReturnType<typeof getBlogPostMarkdownData>>,
-) {
   return {
     ...post,
     seo: {

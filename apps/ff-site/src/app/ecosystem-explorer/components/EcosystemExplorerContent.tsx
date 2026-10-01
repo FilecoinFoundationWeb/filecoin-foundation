@@ -104,7 +104,7 @@ export function EcosystemExplorerContent({
               <CardGrid as="section" cols="smTwo">
                 {paginatedResults.map((project, i) => {
                   const {
-                    slug,
+                    _meta: { slug },
                     title,
                     description,
                     image,
