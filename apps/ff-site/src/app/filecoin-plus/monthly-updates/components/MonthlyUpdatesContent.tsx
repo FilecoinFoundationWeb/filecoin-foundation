@@ -20,6 +20,8 @@ import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { PATHS } from '@/constants/paths'
 
+import type { MonthlyUpdate } from '@/qino/collections/monthlyUpdates'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { getSortOptions } from '@/utils/getSortOptions'
@@ -28,10 +30,9 @@ import { Card } from '@/components/Card'
 import { Sort } from '@/components/Sort'
 
 import { entryViewConfigs } from '../constants/viewConfigs'
-import type { MonthlyUpdate } from '../types/monthlyUpdateType'
 
 type MonthlyUpdatesContentProps = {
-  updates: Array<MonthlyUpdate>
+  updates: Array<Omit<MonthlyUpdate, 'markdown' | 'raw'>>
 }
 
 export function MonthlyUpdatesContent({ updates }: MonthlyUpdatesContentProps) {
