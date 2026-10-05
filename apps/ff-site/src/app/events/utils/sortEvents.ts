@@ -3,7 +3,7 @@ import { compareAsc, compareDesc, isAfter, isBefore } from 'date-fns'
 import { getTodayISODateOnly } from '@filecoin-foundation/utils/dateUtils'
 import type { NonEmptyMutableArray } from '@filecoin-foundation/utils/types/utilTypes'
 
-import type { Event } from '../types/eventType'
+import type { Event } from '@/qino/collections/events'
 
 type DateFields = Pick<Event, 'startDate' | 'endDate'>
 type CompareFunction = typeof compareAsc | typeof compareDesc

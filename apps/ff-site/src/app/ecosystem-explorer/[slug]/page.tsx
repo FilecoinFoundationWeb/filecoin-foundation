@@ -8,18 +8,17 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import { ecosystemProjectCollection } from '@/qino/collections/ecosystemProjects'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
+import { getEntryOrNotFound } from '@/utils/getEntryOrNotFound'
 
 import { CTASection } from '@/components/CTASection'
 
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
-import {
-  getEcosystemProjectData,
-  getEcosystemProjectsData,
-} from '../utils/getEcosystemProjectData'
 
 import { Article } from './components/Article'
 import { PageHeader } from './components/PageHeader'
@@ -33,7 +32,7 @@ const categories = getEcosystemCMSCategories()
 
 export default async function EcosystemProject(props: EcosystemProjectProps) {
   const { slug } = await props.params
-  const data = await getEcosystemProjectData(slug)
+  const data = await getEntryOrNotFound(ecosystemProjectCollection, slug)
 
   const {
     image,
@@ -97,13 +96,13 @@ export default async function EcosystemProject(props: EcosystemProjectProps) {
 }
 
 export async function generateStaticParams() {
-  const entries = await getEcosystemProjectsData()
-  return entries.map(({ _meta }) => ({ slug: _meta.slug }))
+  const slugs = await ecosystemProjectCollection.getAllSlugs()
+  return slugs.map((slug) => ({ slug }))
 }
 
 export async function generateMetadata(props: EcosystemProjectProps) {
   const { slug } = await props.params
-  const data = await getEcosystemProjectData(slug)
+  const data = await getEntryOrNotFound(ecosystemProjectCollection, slug)
 
   return createMetadata({
     title: data.seo.title,

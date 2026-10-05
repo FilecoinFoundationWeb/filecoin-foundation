@@ -7,20 +7,21 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 
 import { PATHS } from '@/constants/paths'
 
+import { monthlyUpdateCollection } from '@/qino/collections/monthlyUpdates'
 import { monthlyUpdatesPageItem } from '@/qino/items/monthlyUpdatesPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { omitMarkdown } from '@/utils/omitMarkdown'
 
 import { MonthlyUpdatesContent } from './components/MonthlyUpdatesContent'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getMonthlyUpdatesData } from './utils/getMonthlyUpdateData'
 
 export default async function MonthlyUpdates() {
   const { header, seo } = await monthlyUpdatesPageItem.getEntry()
 
-  const updates = await getMonthlyUpdatesData()
+  const updates = await monthlyUpdateCollection.getEntries()
 
   return (
     <PageLayout>
@@ -29,7 +30,7 @@ export default async function MonthlyUpdates() {
       />
 
       <section>
-        <div className="mb-6 max-w-readable space-y-4">
+        <div className="max-w-readable mb-6 space-y-4">
           <Heading tag="h1" variant="4xl">
             {header.title}
           </Heading>
@@ -37,7 +38,7 @@ export default async function MonthlyUpdates() {
         </div>
 
         <Suspense>
-          <MonthlyUpdatesContent updates={updates} />
+          <MonthlyUpdatesContent updates={updates.map(omitMarkdown)} />
         </Suspense>
       </section>
     </PageLayout>

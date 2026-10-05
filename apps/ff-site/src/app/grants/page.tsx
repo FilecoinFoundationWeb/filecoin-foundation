@@ -28,18 +28,9 @@ import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-import { getFeaturedEcosystemProjects } from '@/ecosystem-explorer/utils/getFeaturedEcosystemProjects'
-
 export default async function Grants() {
-  const {
-    header,
-    seo,
-    featured_grant_graduates: featuredGrantGraduatesPaths,
-  } = await grantsPageItem.getEntry()
-
-  const featuredGrantGraduates = await getFeaturedEcosystemProjects(
-    featuredGrantGraduatesPaths,
-  )
+  const { header, seo, featuredGrantGraduates } =
+    await grantsPageItem.getEntry()
 
   return (
     <PageLayout>

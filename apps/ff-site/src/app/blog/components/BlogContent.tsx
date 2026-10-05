@@ -24,6 +24,8 @@ import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { PATHS } from '@/constants/paths'
 
+import type { BlogPost } from '@/qino/collections/blogPosts'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
@@ -37,10 +39,9 @@ import { FilterContainer } from '@/components/FilterContainer'
 import { Sort } from '@/components/Sort'
 
 import { entryViewConfigs } from '../constants/viewConfigs'
-import type { BlogPost } from '../types/blogPostType'
 
 type BlogContentProps = {
-  posts: Array<BlogPost>
+  posts: Array<Omit<BlogPost, 'markdown' | 'raw'>>
 }
 
 export function BlogContent({ posts }: BlogContentProps) {

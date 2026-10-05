@@ -14,7 +14,7 @@ import {
   SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL,
 } from '@/constants/structuredDataConstants'
 
-import type { Event } from '../../types/eventType'
+import type { Event } from '@/qino/collections/events'
 
 type LocationType = Place | VirtualLocation
 

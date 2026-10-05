@@ -1,6 +1,6 @@
 import { type EntryViewConfig } from '@filecoin-foundation/hooks/useEntryView/types'
 
-import { type EcosystemProject } from '../types/ecosystemProjectType'
+import type { EcosystemProject } from '@/qino/collections/ecosystemProjects'
 
 import {
   sortEcosystemProjectsAlphabeticalAsc,

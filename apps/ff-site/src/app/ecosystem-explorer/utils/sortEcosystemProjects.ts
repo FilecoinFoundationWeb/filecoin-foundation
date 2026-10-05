@@ -1,6 +1,6 @@
 import type { FFSortKey } from '@/types/sortTypes'
 
-import type { EcosystemProject } from '../types/ecosystemProjectType'
+import type { EcosystemProject } from '@/qino/collections/ecosystemProjects'
 
 export function sortEcosystemProjectsAlphabeticalAsc(
   projects: Array<EcosystemProject>,

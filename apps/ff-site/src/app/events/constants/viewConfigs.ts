@@ -1,6 +1,6 @@
 import type { EntryViewConfig } from '@filecoin-foundation/hooks/useEntryView/types'
 
-import { type Event } from '../types/eventType'
+import type { Event } from '@/qino/collections/events'
 
 import {
   getPastEvents,

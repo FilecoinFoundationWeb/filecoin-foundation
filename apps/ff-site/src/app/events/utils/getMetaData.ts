@@ -2,8 +2,7 @@ import { isSameDay } from 'date-fns'
 
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
-
-import type { Event } from '../types/eventType'
+import type { Event } from '@/qino/collections/events'
 
 type getMetaDataParams = {
   startDate: Event['startDate']

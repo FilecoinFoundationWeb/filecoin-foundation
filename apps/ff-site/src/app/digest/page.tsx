@@ -9,6 +9,7 @@ import { getDigestIssueDescription } from '@filecoin-foundation/utils/getDigestI
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import { digestIssueCollection } from '@/qino/collections/digestIssues'
 import { digestPageItem } from '@/qino/items/digestPage'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -22,21 +23,14 @@ import { PageSection } from '@/components/PageSection'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getDigestArticlesWithIssueContext } from './utils/getDigestArticlesWithIssueContext'
-import {
-  getDigestIssuesData,
-  getDigestIssueData,
-} from './utils/getDigestIssueData'
 
 export default async function Digest() {
   const { header, seo } = await digestPageItem.getEntry()
 
-  const allIssues = await getDigestIssuesData()
-
-  const issueNumber = allIssues[0].issueNumber
+  const [issue] = await digestIssueCollection.getEntries()
+  const { issueNumber } = issue
 
   const articles = await getDigestArticlesWithIssueContext(issueNumber)
-
-  const issue = await getDigestIssueData(issueNumber)
 
   return (
     <PageLayout>

@@ -1,11 +1,12 @@
 import { notFound } from 'next/navigation'
 
-type CollectionWithSlugs = {
+type CollectionWithSlugs<Entry> = {
   getAllSlugs: () => Promise<Array<string>>
+  getEntry: (slug: string) => Promise<Entry>
 }
 
-export async function assertEntryExists(
-  collection: CollectionWithSlugs,
+export async function getEntryOrNotFound<Entry>(
+  collection: CollectionWithSlugs<Entry>,
   slug: string,
 ) {
   const slugs = await collection.getAllSlugs()
@@ -14,4 +15,6 @@ export async function assertEntryExists(
     console.error(`Entry not found: ${slug}`)
     notFound()
   }
+
+  return collection.getEntry(slug)
 }

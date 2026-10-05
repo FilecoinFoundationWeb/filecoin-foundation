@@ -8,16 +8,16 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
+import { digestArticleCollection } from '@/qino/collections/digestArticles'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getEntryOrNotFound } from '@/utils/getEntryOrNotFound'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
-import {
-  getDigestArticleData,
-  getDigestArticlesData,
-} from '../../utils/getDigestArticleData'
+import { getDigestArticlesData } from '../../utils/getDigestArticleData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -27,7 +27,7 @@ type DigestArticleProps = {
 
 export default async function DigestArticle(props: DigestArticleProps) {
   const { slug } = await props.params
-  const data = await getDigestArticleData(slug)
+  const data = await getEntryOrNotFound(digestArticleCollection, slug)
 
   const {
     title,
@@ -76,7 +76,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: DigestArticleProps) {
   const { slug } = await props.params
-  const { seo, image, articlePath } = await getDigestArticleData(slug)
+  const { seo, image, articlePath } = await getEntryOrNotFound(
+    digestArticleCollection,
+    slug,
+  )
 
   return createMetadata({
     title: seo.title,

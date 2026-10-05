@@ -4,12 +4,12 @@ import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes
 
 import { PATHS } from '@/constants/paths'
 
+import { ecosystemProjectCollection } from '@/qino/collections/ecosystemProjects'
 import { ecosystemExplorerPageItem } from '@/qino/items/ecosystemExplorerPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
 import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
@@ -18,22 +18,17 @@ import { PageSection } from '@/components/PageSection'
 
 import { EcosystemExplorerContent } from './components/EcosystemExplorerContent'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
 type Props = {
   searchParams: AsyncQueryParams
 }
 
 export default async function EcosystemExplorer(props: Props) {
-  const { seo, featured_entry } = await ecosystemExplorerPageItem.getEntry()
+  const { seo, featuredEntry: featuredProject } =
+    await ecosystemExplorerPageItem.getEntry()
 
   const searchParams = await props.searchParams
-  const ecosystemProjects = await getEcosystemProjectsData()
-
-  const featuredProject = getFeaturedEntry({
-    entries: ecosystemProjects,
-    featuredEntryPath: featured_entry,
-  })
+  const ecosystemProjects = await ecosystemProjectCollection.getEntries()
 
   return (
     <PageLayout>

@@ -4,13 +4,13 @@ import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 import { PATHS } from '@/constants/paths'
 
+import type { BlogPost } from '@/qino/collections/blogPosts'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { Card } from '@/components/Card'
-
-import type { BlogPost } from '@/blog/types/blogPostType'
 
 type FeaturedBlogPostsProps = {
   featuredBlogPosts: Array<BlogPost>

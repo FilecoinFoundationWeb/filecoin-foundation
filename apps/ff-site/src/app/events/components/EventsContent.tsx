@@ -22,6 +22,8 @@ import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { PATHS } from '@/constants/paths'
 
+import type { Event } from '@/qino/collections/events'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
@@ -39,7 +41,6 @@ import {
   eventsViewConfigs,
   getDefaultViewConfig,
 } from '../constants/viewConfigs'
-import type { Event } from '../types/eventType'
 import { entryMatchesLocationQuery } from '../utils/filterUtils'
 import { getLocationListboxOptions } from '../utils/getLocationFilterOptions'
 import { getMetaData } from '../utils/getMetaData'

@@ -5,13 +5,13 @@ description: Use when adding Qino (@qino/cms) to a JavaScript or TypeScript proj
 
 # Set up Qino CMS
 
+If the installed version is newer and an API here doesn't match, the live docs win.
+
 ## Overview
 
 Qino is a flat-file CMS: content lives as `.md`, `.mdx`, `.markdown`, or `.json` files, definitions live in a `qino/` folder, and a `qino` CLI validates everything and generates slug types.
 
 **Done means:** `qino build` exits 0 and, in TypeScript projects, `tsc --noEmit` passes. Don't stop before both.
-
-Written for `@qino/cms` 0.4. If the installed version is newer and an API here doesn't match, the live docs win.
 
 Match the target project's code style (quotes, semicolons, import paths, validator).
 
@@ -33,6 +33,8 @@ Before writing anything, find:
 - **Validator.** Any [Standard Schema](https://standardschema.dev) library works. If the project already has one (zod, valibot, arktype), use it. Otherwise also install `zod`.
 - **Framework.** Look for `next.config.*` or similar.
 - **Existing content.** Look for folders of `.md`/`.mdx`/`.markdown`/`.json` content, and a static folder (`public/`) for `mediaFolder`.
+
+The CLI supports `compilerOptions.paths` aliases from the nearest `tsconfig.json` walking up from the working directory, including paths inherited through `extends`. Use the project's aliases in the instance, definitions, and shared schemas. Keep their import chain free of CSS, images, and Markdown imports that need bundler loaders.
 
 ### Starting point
 
@@ -73,12 +75,11 @@ import { z } from "zod";
 import qino from "../";
 
 export const postCollection = qino.defineCollection({
-  directory: "/posts",
+  directory: "posts",
   extension: ".md",
   schema: z.object({
     title: z.string(),
     date: z.string().optional(),
-    markdown: z.string(),
   }),
 });
 ```
@@ -126,13 +127,22 @@ Don't move, rename, or restructure files without the user's agreement. Model wha
 
 If they decline, skip the folder and flag it.
 
+**Self-named files inside their folder** (`guides/guides.md`): offer to move the file beside the folder (`guides.md`), or model it as an item. If declined, skip it and flag it.
+
 ### Inferring schemas
 
 - **Read every file**, not a sample. A field missing from some files becomes `.optional()`. One that's sometimes `null` becomes `.nullable()`.
-- **Markdown bodies:** declare `markdown: z.string()`. Only declare `raw: z.string()` if the app needs the untouched source.
-- **Use a plain `z.object`.** Strict objects reject the undeclared `markdown` and `raw` that Qino supplies.
+- **Markdown bodies:** model frontmatter only. Qino adds `markdown` (body) and `raw` (source) to every Markdown entry after validation. Never declare them; it's a type error. Files without frontmatter get `z.object({})`.
 - **YAML is 1.2 core:** unquoted dates arrive as strings (use `z.string()` or `z.iso.date()`, never `z.date()`), and `yes`/`no` are strings. See `/guide/frontmatter`.
-- **Reserved keys:** a top-level `_meta`, or `markdown`/`raw` in frontmatter, is an error. Tell the user; don't rename them.
+- **Reserved keys:** a top-level `_meta`, or `markdown`/`raw` in Markdown frontmatter, is an error. Tell the user; don't rename them.
+- **YAML syntax errors:** Qino's parser is stricter than some older ones, so files that parsed before may fail (e.g. under-indented continuation lines). Show the file and error and propose a minimal whitespace or quoting fix. Apply it only with the user's agreement. If the error doesn't name the file, parse the folder's files one by one to find it.
+
+### Existing schemas
+
+If the app already validates its content, reuse those schemas instead of inferring new ones. This avoids drift and keeps existing refinements and enums. Adapt them:
+
+- Remove the field that held the body, whatever its name. Never add `markdown` or `raw`: Qino adds them after validation, and declaring them is an error.
+- Replace `z.date()` with an ISO string format, e.g. `z.iso.date()` or `z.iso.datetime()` (or the equivalent in other validators).
 
 ### Shared entities and relations
 
@@ -149,14 +159,24 @@ When several files repeat the same entity (e.g. `author_name` + `author_title` o
 
 Do this directly for new content. For existing content, offer it first and list the app code that reads the old fields. If the user declines, keep the fields as they are. Values that are already content paths can be linked as relations without restructuring. Bare slugs (`author: jane`) stay `z.string()`.
 
+### Migrating existing content loaders
+
+If the app already reads content with its own code and you replace it with Qino getters:
+
+- **Field mapping:** slug → `_meta.slug`, body → `markdown`. `_meta.filePath` is relative to the working directory, not absolute.
+- **Key transforms:** utilities that rename or filter keys (case conversion, sanitizers) can mangle `_meta`. Exclude it.
+- **Async:** synchronous, build-time content imports become async getters. List the affected call sites before changing them.
+- **Parity check:** capture the old loader output before switching, then deep-compare it with the new output. Types don't catch value drift.
+
 ## 4. Wire it up
 
-- **`package.json`.** Add `"prebuild": "qino build"`. If a `prebuild` already exists, chain onto it (`qino build && <existing>`). Never replace it. Run the build once and confirm `qino build` output appears: Yarn 2+ doesn't run `pre*` scripts, so if it didn't run, chain it into `build` instead (`qino build && <existing build>`).
+- **`package.json`.** Add `"prebuild": "qino build"`. If a `prebuild` already exists, chain onto it; never replace it. Order matters: put `qino build` after existing steps that generate files the schemas or content depend on, and before the rest. Run the build once and confirm `qino build` output appears: Yarn 2+ doesn't run `pre*` scripts, so if it didn't run, chain it into `build` instead (`qino build && <existing build>`).
+- **Generated types.** `qino/_generated/` is gitignored, so on a fresh clone `tsc` and the editor fail until `qino build` runs. Also run it before dev (`predev` or equivalent). In monorepos with task caching, add `qino/_generated/**` to the build task's cache outputs.
 - **`.gitignore`.** Add `qino/_generated/`.
 - **`tsconfig.json`.** `include` must cover `qino/`. If it's narrowed (e.g. `["src"]`), add `"qino"`.
-- **Next.js.** Merge `transpilePackages: ["@qino/cms"]` into the existing `next.config.*`.
-- **Other frameworks.** See the framework examples at https://www.qino.works/docs/examples. If yours isn't listed, don't invent config.
-- **Runtime.** Qino reads the file system. Call getters only in server code, never in client components or edge runtimes. If pages render on request, the deployed server needs the content folder; see `/guide/installation#runtime`.
+- **Frameworks.** See the framework examples at https://www.qino.works/docs/examples. If yours isn't listed, don't invent config.
+- **Runtime.** Qino reads the file system. Call getters only in server code, never in client components or edge runtimes. If pages render on request, the deployed server needs the content folder; check the deploy's file tracing includes it. See `/guide/installation#runtime`.
+- **Dynamic routes.** Check route params against `getAllSlugs()` before calling `getEntry(slug)`, and return a 404 if the slug isn't there. Unknown slugs throw a raw file-system error, and unchecked params shouldn't reach the file system.
 
 ## 5. Verify
 
@@ -165,8 +185,8 @@ Run the CLI's `build` command. Fix each reported error and rerun until it exits 
 Look up each error message at https://www.qino.works/docs/api/errors. The ones setup usually hits:
 
 - `Tree: folder "<path>" is missing its sibling file…`: add the anchor file, or convert the `index.md` layout.
-- `Validation failed for <filePath>:`: make the field optional or fix its type. Don't edit content to fit the schema.
-- `…fields reserved for Qino cannot appear…`: `_meta`, `markdown`, or `raw` in frontmatter. Flag it to the user.
+- `Validation failed for <filePath>:`: make the field optional or fix its type. Don't edit content to fit the schema. YAML syntax errors are different; see "Inferring schemas".
+- `…fields reserved for Qino cannot appear…`: `_meta`, `markdown`, or `raw` in frontmatter or schema output. Flag frontmatter conflicts to the user; drop them from schemas.
 - `Relation "<key>"…expected value under "<dir>/"…`: the value is a bare slug. Keep it as `z.string()`, or convert it to a path.
 
 Report back:
@@ -174,6 +194,7 @@ Report back:
 - the primitives you defined and their paths
 - the files and fields you made optional
 - anything you flagged and left alone
+- the parity-check result, if you migrated existing loaders
 
 ## Quick reference
 
@@ -185,12 +206,13 @@ Report back:
 
 ## Common mistakes
 
-| Mistake                                         | Fix                                                         |
-| ----------------------------------------------- | ----------------------------------------------------------- |
-| `directory: "posts"`                            | Start with a slash: `"/posts"`                              |
-| Overwrote an existing `prebuild`                | Chain it                                                    |
-| `import qino from "../"` fails under `NodeNext` | Use the project's convention, e.g. `"../index.js"`          |
-| Collection pointed at a nested folder           | Nested files are ignored; use a tree or several collections |
+| Mistake                                         | Fix                                                                            |
+| ----------------------------------------------- | ------------------------------------------------------------------------------ |
+| `directory: "/posts"`                           | No leading slash: `"posts"` (relative to `contentFolder`)                      |
+| Overwrote an existing `prebuild`                | Chain it                                                                       |
+| `import qino from "../"` fails under `NodeNext` | Use the project's convention, e.g. `"../index.js"`                             |
+| Collection pointed at a nested folder           | Nested files are ignored; use a tree or several collections                    |
+| Script fails with `No "exports" main defined`   | `@qino/cms` is ESM-only; run the script as ESM (`.mts`, or `"type": "module"`) |
 
 ## Docs
 

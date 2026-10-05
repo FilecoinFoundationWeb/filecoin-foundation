@@ -1,7 +1,8 @@
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
+import type { Event } from '@/qino/collections/events'
+
 import { DEFAULT_CTA_TEXT } from '../../constants/constants'
-import type { Event } from '../../types/eventType'
 
 type Links = {
   externalLink?: Event['externalLink']

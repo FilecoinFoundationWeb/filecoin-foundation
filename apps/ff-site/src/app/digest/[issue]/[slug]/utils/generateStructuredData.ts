@@ -2,12 +2,12 @@ import type { WebPage, WithContext } from 'schema-dts'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
+import type { DigestArticleEntry } from '@/qino/collections/digestArticles'
+
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
-import type { DigestArticleData } from '@/digest/utils/getDigestArticleData'
-
 export function generateStructuredData(
-  data: DigestArticleData,
+  data: DigestArticleEntry,
 ): WithContext<WebPage> {
   const { seo, articlePath } = data
 

@@ -8,14 +8,15 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
+import { blogPostCollection } from '@/qino/collections/blogPosts'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
+import { getEntryOrNotFound } from '@/utils/getEntryOrNotFound'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
-
-import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -25,7 +26,7 @@ type BlogPostProps = {
 
 export default async function BlogPost(props: BlogPostProps) {
   const { slug } = await props.params
-  const data = await getBlogPostData(slug)
+  const data = await getEntryOrNotFound(blogPostCollection, slug)
 
   const {
     title,
@@ -73,13 +74,13 @@ export default async function BlogPost(props: BlogPostProps) {
 }
 
 export async function generateStaticParams() {
-  const entries = await getBlogPostsData()
-  return entries.map(({ _meta }) => ({ slug: _meta.slug }))
+  const slugs = await blogPostCollection.getAllSlugs()
+  return slugs.map((slug) => ({ slug }))
 }
 
 export async function generateMetadata(props: BlogPostProps) {
   const { slug } = await props.params
-  const data = await getBlogPostData(slug)
+  const data = await getEntryOrNotFound(blogPostCollection, slug)
 
   return createMetadata({
     title: data.seo.title,

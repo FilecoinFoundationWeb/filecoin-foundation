@@ -2,7 +2,8 @@ import { useMemo } from 'react'
 
 import { groupBy } from 'ramda'
 
-import type { EcosystemProject } from '../types/ecosystemProjectType'
+import type { EcosystemProject } from '@/qino/collections/ecosystemProjects'
+
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
 
 type UseEcosystemCategoryProps<Entry extends EcosystemProject> = {

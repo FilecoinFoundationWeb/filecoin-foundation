@@ -6,7 +6,7 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import { getOrganizationSchemaBase } from '@/constants/structuredDataConstants'
 
-import type { MonthlyUpdate } from '../../types/monthlyUpdateType'
+import type { MonthlyUpdate } from '@/qino/collections/monthlyUpdates'
 
 export async function generateStructuredData(
   data: MonthlyUpdate,
