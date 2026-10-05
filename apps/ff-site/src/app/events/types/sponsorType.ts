@@ -1,4 +1,4 @@
-import type { Event } from './eventType'
+import type { Event } from '@/qino/collections/events'
 
 export type Sponsors = NonNullable<Event['sponsors']>
 export type SponsorTier = keyof Sponsors

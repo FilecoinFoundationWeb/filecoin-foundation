@@ -1,10 +1,10 @@
 import { PATHS } from '@/constants/paths'
 
+import type { Event } from '@/qino/collections/events'
+
 import { Button } from '@/components/Button'
 import { PageSection } from '@/components/PageSection'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
-
-import type { Event } from '../../types/eventType'
 
 type RecapSectionProps = {
   youtubeEmbedUrl: NonNullable<NonNullable<Event['recap']>['youtubeEmbedUrl']>

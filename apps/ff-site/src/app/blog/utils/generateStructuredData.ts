@@ -6,9 +6,9 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import { getOrganizationSchemaBase } from '@/constants/structuredDataConstants'
 
-import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
+import type { BlogPost } from '@/qino/collections/blogPosts'
 
-import type { BlogPost } from '../types/blogPostType'
+import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 export async function generateStructuredData(
   posts: Array<BlogPost>,

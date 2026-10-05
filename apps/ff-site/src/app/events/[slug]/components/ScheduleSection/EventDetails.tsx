@@ -6,9 +6,10 @@ import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
+import type { Event } from '@/qino/collections/events'
+
 import { BasicCard } from '@/components/BasicCard'
 
-import type { Event } from '../../../types/eventType'
 import { formatTime } from '../../utils/dateUtils'
 
 import { Participants } from './Participants'
@@ -31,7 +32,7 @@ export function EventDetails({
   return (
     <BasicCard>
       <div className="grid gap-6 lg:grid-cols-3">
-        <div className="flex gap-6 text-brand-300 lg:flex-col lg:gap-1">
+        <div className="text-brand-300 flex gap-6 lg:flex-col lg:gap-1">
           <div className="text-sm font-bold">
             <span>{formatTime(startTime)}</span>
             {endTime && <span> – {formatTime(endTime)}</span>}

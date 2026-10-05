@@ -4,7 +4,7 @@ import {
   sortPostsByDateDesc,
 } from '@filecoin-foundation/utils/sortBlogPosts'
 
-import { type MonthlyUpdate } from '../types/monthlyUpdateType'
+import type { MonthlyUpdate } from '@/qino/collections/monthlyUpdates'
 
 export const entryViewConfigs = [
   {

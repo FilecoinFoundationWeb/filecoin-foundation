@@ -4,7 +4,7 @@ import {
   sortPostsByDateDesc,
 } from '@filecoin-foundation/utils/sortBlogPosts'
 
-import { type BlogPost } from '../types/blogPostType'
+import type { BlogPost } from '@/qino/collections/blogPosts'
 
 export const entryViewConfigs = [
   {

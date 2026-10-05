@@ -2,11 +2,12 @@ import { MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr'
 
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 
+import type { Event } from '@/qino/collections/events'
+
 import { Card } from '@/components/Card'
 import { PageSection } from '@/components/PageSection'
 
 import { DEFAULT_CTA_TEXT } from '../../constants/constants'
-import type { Event } from '../../types/eventType'
 import { getMetaData } from '../../utils/getMetaData'
 
 type ProgramSectionProps = NonNullable<Event['program']>

@@ -1,8 +1,8 @@
 import { Suspense } from 'react'
 
-import { PageSection } from '@/components/PageSection'
+import type { Event } from '@/qino/collections/events'
 
-import type { Event } from '../../../types/eventType'
+import { PageSection } from '@/components/PageSection'
 
 import { Tabs } from './Tabs'
 

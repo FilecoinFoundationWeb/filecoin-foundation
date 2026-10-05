@@ -1,6 +1,6 @@
 import { compareAsc } from 'date-fns'
 
-import type { Event } from '../../types/eventType'
+import type { Event } from '@/qino/collections/events'
 
 import { createUTCDateFromTime } from './dateUtils'
 

@@ -6,7 +6,7 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import { getOrganizationSchemaBase } from '@/constants/structuredDataConstants'
 
-import type { BlogPost } from '../../types/blogPostType'
+import type { BlogPost } from '@/qino/collections/blogPosts'
 
 export async function generateStructuredData(
   data: BlogPost,

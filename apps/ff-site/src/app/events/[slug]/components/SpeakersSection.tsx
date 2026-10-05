@@ -1,9 +1,9 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { KeyMemberCard } from '@filecoin-foundation/ui/KeyMemberCard'
 
-import { PageSection } from '@/components/PageSection'
+import type { Event } from '@/qino/collections/events'
 
-import type { Event } from '../../types/eventType'
+import { PageSection } from '@/components/PageSection'
 
 type SpeakersSectionProps = {
   speakers: NonNullable<Event['speakers']>

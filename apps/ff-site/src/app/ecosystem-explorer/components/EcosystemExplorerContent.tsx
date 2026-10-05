@@ -20,6 +20,8 @@ import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
 import { PATHS } from '@/constants/paths'
 
+import type { EcosystemProject } from '@/qino/collections/ecosystemProjects'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { getSortOptions } from '@/utils/getSortOptions'
@@ -33,7 +35,6 @@ import { CategoryFilters } from '../components/CategoryFilters'
 import { CategoryFiltersSlider } from '../components/CategoryFiltersSlider'
 import { ecosystemProjectsViewConfigs } from '../constants/viewConfigs'
 import { useEcosystemCategoryTree } from '../hooks/useEcosystemCategoryTree'
-import type { EcosystemProject } from '../types/ecosystemProjectType'
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
 import { parseCategoryQueryParam } from '../utils/parseCategoryQueryParam'
 

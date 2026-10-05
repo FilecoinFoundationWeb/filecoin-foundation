@@ -2,7 +2,7 @@ import { isBefore } from 'date-fns'
 
 import { getTodayISODateOnly } from '@filecoin-foundation/utils/dateUtils'
 
-import type { Event } from '../types/eventType'
+import type { Event } from '@/qino/collections/events'
 
 export function isEventConcluded(
   startDate: Event['startDate'],

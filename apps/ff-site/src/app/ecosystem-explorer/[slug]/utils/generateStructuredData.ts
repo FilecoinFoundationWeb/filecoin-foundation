@@ -1,8 +1,8 @@
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
+import type { EcosystemProject } from '@/qino/collections/ecosystemProjects'
 
-import type { EcosystemProject } from '../../types/ecosystemProjectType'
+import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 export function generateStructuredData(data: EcosystemProject) {
   const { seo } = data
