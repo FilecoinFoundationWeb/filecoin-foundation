@@ -9,16 +9,14 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
+import { monthlyUpdateCollection } from '@/qino/collections/monthlyUpdates'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getEntryOrNotFound } from '@/utils/getEntryOrNotFound'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
-
-import {
-  getMonthlyUpdateData,
-  getMonthlyUpdatesData,
-} from '../utils/getMonthlyUpdateData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -28,7 +26,7 @@ type MonthlyUpdateProps = {
 
 export default async function MonthlyUpdatePost(props: MonthlyUpdateProps) {
   const { slug } = await props.params
-  const data = await getMonthlyUpdateData(slug)
+  const data = await getEntryOrNotFound(monthlyUpdateCollection, slug)
 
   const { title, image, markdown, publishedOn, addTableOfContents } = data
 
@@ -64,13 +62,13 @@ export default async function MonthlyUpdatePost(props: MonthlyUpdateProps) {
 }
 
 export async function generateStaticParams() {
-  const entries = await getMonthlyUpdatesData()
-  return entries.map(({ _meta }) => ({ slug: _meta.slug }))
+  const slugs = await monthlyUpdateCollection.getAllSlugs()
+  return slugs.map((slug) => ({ slug }))
 }
 
 export async function generateMetadata(props: MonthlyUpdateProps) {
   const { slug } = await props.params
-  const data = await getMonthlyUpdateData(slug)
+  const data = await getEntryOrNotFound(monthlyUpdateCollection, slug)
 
   return createMetadata({
     title: data.seo.title,

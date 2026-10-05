@@ -8,6 +8,7 @@ import { getFeaturedPosts } from '@filecoin-foundation/utils/getFeaturedPosts'
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
+import { monthlyUpdateCollection } from '@/qino/collections/monthlyUpdates'
 import { filecoinPlusPageItem } from '@/qino/items/filecoinPlusPage'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -29,14 +30,13 @@ import { ImpactCard } from './components/ImpactCard'
 import { aboutData } from './data/aboutData'
 import { impactData } from './data/impactData'
 import { statisticsData } from './data/statisticsData'
-import { getMonthlyUpdatesData } from './monthly-updates/utils/getMonthlyUpdateData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 export default async function FilPlus() {
   const { header, seo } = await filecoinPlusPageItem.getEntry()
 
   const latestUpdates = getFeaturedPosts({
-    posts: await getMonthlyUpdatesData(),
+    posts: await monthlyUpdateCollection.getEntries(),
     limit: 4,
   })
 

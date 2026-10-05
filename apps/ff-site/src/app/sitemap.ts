@@ -3,12 +3,13 @@ import { generateSitemap } from '@filecoin-foundation/utils/generateSitemap'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { blogPostCollection } from '@/qino/collections/blogPosts'
+import { digestIssueCollection } from '@/qino/collections/digestIssues'
+import { ecosystemProjectCollection } from '@/qino/collections/ecosystemProjects'
+import { eventCollection } from '@/qino/collections/events'
+import { monthlyUpdateCollection } from '@/qino/collections/monthlyUpdates'
+
 import { getDigestArticlesData } from '@/digest/utils/getDigestArticleData'
-import { getDigestIssuesData } from '@/digest/utils/getDigestIssueData'
-import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
-import { getEventsData } from '@/events/utils/getEventData'
-import { getMonthlyUpdatesData } from '@/filecoin-plus/monthly-updates/utils/getMonthlyUpdateData'
 
 export default async function sitemap() {
   const routes = await generateSitemap({
@@ -16,19 +17,19 @@ export default async function sitemap() {
     baseUrl: BASE_URL,
     dynamicRoutes: [
       {
-        getData: withSlug(getBlogPostsData),
+        getData: withSlug(blogPostCollection),
         basePath: PATHS.BLOG.path,
       },
       {
-        getData: withSlug(getEcosystemProjectsData),
+        getData: withSlug(ecosystemProjectCollection),
         basePath: PATHS.ECOSYSTEM_EXPLORER.path,
       },
       {
-        getData: withSlug(getEventsData),
+        getData: withSlug(eventCollection),
         basePath: PATHS.EVENTS.path,
       },
       {
-        getData: withSlug(getMonthlyUpdatesData),
+        getData: withSlug(monthlyUpdateCollection),
         basePath: PATHS.FIL_PLUS_MONTHLY_UPDATES.path,
       },
     ],
@@ -43,18 +44,18 @@ type EntryWithMeta = {
   _meta: { slug: string }
 }
 
-function withSlug<Entry extends EntryWithMeta>(
-  getData: () => Promise<Array<Entry>>,
-) {
+function withSlug<Entry extends EntryWithMeta>(collection: {
+  getEntries: () => Promise<Array<Entry>>
+}) {
   return async function () {
-    const entries = await getData()
+    const entries = await collection.getEntries()
     return entries.map((entry) => ({ ...entry, slug: entry._meta.slug }))
   }
 }
 
 async function generateDigestRoutes() {
   const [issues, articles] = await Promise.all([
-    getDigestIssuesData(),
+    digestIssueCollection.getEntries(),
     getDigestArticlesData(),
   ])
 

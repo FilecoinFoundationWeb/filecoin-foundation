@@ -5,17 +5,19 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
 
+import { eventCollection } from '@/qino/collections/events'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
+import { getEntryOrNotFound } from '@/utils/getEntryOrNotFound'
 
 import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 
 import { getInvolvedData } from '../data/getInvolvedData'
-import { getEventData, getEventsData } from '../utils/getEventData'
 import { getMetaData } from '../utils/getMetaData'
 import { isEventConcluded } from '../utils/isEventConcluded'
 import { sortNonEmptyEventsAsc } from '../utils/sortEvents'
@@ -34,7 +36,7 @@ type EventProps = {
 
 export default async function EventEntry(props: EventProps) {
   const { slug } = await props.params
-  const data = await getEventData(slug)
+  const data = await getEntryOrNotFound(eventCollection, slug)
   const sponsorEventData = getInvolvedData[0]
 
   const {
@@ -136,13 +138,13 @@ export default async function EventEntry(props: EventProps) {
 }
 
 export async function generateStaticParams() {
-  const entries = await getEventsData()
-  return entries.map(({ _meta }) => ({ slug: _meta.slug }))
+  const slugs = await eventCollection.getAllSlugs()
+  return slugs.map((slug) => ({ slug }))
 }
 
 export async function generateMetadata(props: EventProps) {
   const { slug } = await props.params
-  const data = await getEventData(slug)
+  const data = await getEntryOrNotFound(eventCollection, slug)
 
   return createMetadata({
     title: data.seo.title,
