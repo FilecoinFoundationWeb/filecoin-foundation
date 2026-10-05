@@ -8,12 +8,12 @@ import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes
 
 import { PATHS } from '@/constants/paths'
 
+import { eventCollection } from '@/qino/collections/events'
 import { eventsPageItem } from '@/qino/items/eventsPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -24,7 +24,6 @@ import EventsContent from './components/EventsContent'
 import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getEventsData } from './utils/getEventData'
 import { getMetaData } from './utils/getMetaData'
 
 type Props = {
@@ -32,15 +31,10 @@ type Props = {
 }
 
 export default async function Events(props: Props) {
-  const { seo, featured_entry } = await eventsPageItem.getEntry()
+  const { seo, featuredEntry: featuredEvent } = await eventsPageItem.getEntry()
 
   const searchParams = await props.searchParams
-  const events = await getEventsData()
-
-  const featuredEvent = getFeaturedEntry({
-    entries: events,
-    featuredEntryPath: featured_entry,
-  })
+  const events = await eventCollection.getEntries()
 
   return (
     <PageLayout>

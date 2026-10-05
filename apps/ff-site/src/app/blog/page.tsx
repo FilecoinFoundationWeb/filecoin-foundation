@@ -6,12 +6,13 @@ import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 import { PATHS } from '@/constants/paths'
 
+import { blogPostCollection } from '@/qino/collections/blogPosts'
 import { blogPageItem } from '@/qino/items/blogPage'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
+import { omitMarkdown } from '@/utils/omitMarkdown'
 
 import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader'
@@ -19,17 +20,11 @@ import { PageSection } from '@/components/PageSection'
 
 import { BlogContent } from './components/BlogContent'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getBlogPostsData } from './utils/getBlogPostData'
 
 export default async function Blog() {
-  const { seo, featured_entry } = await blogPageItem.getEntry()
+  const { seo, featuredEntry: featuredPost } = await blogPageItem.getEntry()
 
-  const posts = await getBlogPostsData()
-
-  const featuredPost = getFeaturedEntry({
-    entries: posts,
-    featuredEntryPath: featured_entry,
-  })
+  const posts = await blogPostCollection.getEntries()
 
   return (
     <PageLayout>
@@ -58,7 +53,7 @@ export default async function Blog() {
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
         <Suspense>
-          <BlogContent posts={posts} />
+          <BlogContent posts={posts.map(omitMarkdown)} />
         </Suspense>
       </PageSection>
     </PageLayout>

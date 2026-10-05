@@ -7,6 +7,7 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 import { getOrganizationSchemaBase } from '@/constants/structuredDataConstants'
 
+import { blogPostCollection } from '@/qino/collections/blogPosts'
 import { digestPageItem } from '@/qino/items/digestPage'
 import { homePageItem } from '@/qino/items/homePage'
 
@@ -26,24 +27,16 @@ import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
 import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
 
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
-import { getFeaturedEcosystemProjects } from '@/ecosystem-explorer/utils/getFeaturedEcosystemProjects'
-
 export default async function Home() {
-  const { header, featured_ecosystem_projects: featuredEcosystemProjectPaths } =
-    await homePageItem.getEntry()
+  const { header, featuredEcosystemProjects } = await homePageItem.getEntry()
   const { header: digestPageHeader } = await digestPageItem.getEntry()
 
   const featuredBlogPosts = getFeaturedPosts({
-    posts: await getBlogPostsData(),
+    posts: await blogPostCollection.getEntries(),
     limit: 4,
   })
 
   const hasFeaturedBlogPosts = featuredBlogPosts.length > 0
-
-  const featuredEcosystemProjects = await getFeaturedEcosystemProjects(
-    featuredEcosystemProjectPaths,
-  )
 
   return (
     <NoBreadCrumbsLayout>

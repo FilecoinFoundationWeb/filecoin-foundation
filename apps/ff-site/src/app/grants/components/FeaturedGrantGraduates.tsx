@@ -5,11 +5,11 @@ import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizePro
 
 import { PATHS } from '@/constants/paths'
 
+import type { EcosystemProject } from '@/qino/collections/ecosystemProjects'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { Card } from '@/components/Card'
-
-import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 
 type FeaturedGrantsGraduatesProps = {
   grantGraduates: Array<EcosystemProject>
