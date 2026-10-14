@@ -143,6 +143,8 @@ Earlier this year, the [Filecoin Incentive Design Lab (FIDL)](/ecosystem-explore
 
 To better support the community and builders looking to engage with the program, the Fil+team has improved the supporting documentation for the Fil+ program by consolidating more information on fil.org/filecoin-plus.
 
+_Editor's note (October 2026): The Fil+ pages on fil.org, including the Allocator Registry, are no longer available. For current information on Filecoin Plus (Fil+), see the [Filecoin documentation](https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus)._
+
 ### Events: Building the Global Filecoin Community
 
 ![](/assets/images/frame-4127.webp)
