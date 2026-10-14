@@ -131,7 +131,7 @@ FF introduced Filecoin Improvement Proposal (FIP) one-pagers. These one-pagers o
 
 #### New Allocator Dashboard to Support Clients' Storage Needs
 
-In October, Filecoin Foundation added an Allocator Registry to the [Filecoin Plus (Fil+) website](/filecoin-plus/allocators) as part of its ongoing efforts to simplify how data clients can connect with prospective Allocators. Users can use the registry to learn more about each Allocator, and utilize its filters to find allocators based on their needs.
+In October, Filecoin Foundation added an Allocator Registry to the Filecoin Plus (Fil+) website as part of its ongoing efforts to simplify how data clients can connect with prospective Allocators. Users can use the registry to learn more about each Allocator, and utilize its filters to find allocators based on their needs.
 
 #### Request for Allocators (RFA) for New Pathway Creations
 
@@ -141,7 +141,7 @@ Earlier this year, the [Filecoin Incentive Design Lab (FIDL)](/ecosystem-explore
 
 #### Improved Documentation for Builders
 
-To better support the community and builders looking to engage with the program, the Fil+team has improved the supporting documentation for the Fil+ program by consolidating more information on [fil.org/filecoin-plus](/filecoin-plus).
+To better support the community and builders looking to engage with the program, the Fil+team has improved the supporting documentation for the Fil+ program by consolidating more information on fil.org/filecoin-plus.
 
 ### Events: Building the Global Filecoin Community
 

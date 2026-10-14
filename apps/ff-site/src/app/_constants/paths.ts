@@ -4,14 +4,12 @@ type BlogPostPath = `/blog/${string}`
 type DigestPath = `/digest/${string}`
 type EcosystemPath = `/ecosystem/${string}`
 type EventPath = `/events/${string}`
-type FilPlusMonthlyUpdatePath = `/filecoin-plus/monthly-updates/${string}`
 
 export type DynamicPathValues =
   | BlogPostPath
   | DigestPath
   | EcosystemPath
   | EventPath
-  | FilPlusMonthlyUpdatePath
 
 export type PathValues =
   | '/'
@@ -22,9 +20,6 @@ export type PathValues =
   | '/ecosystem-explorer/project-form'
   | '/employee-privacy-policy'
   | '/events'
-  | '/filecoin-plus'
-  | '/filecoin-plus/allocators'
-  | '/filecoin-plus/monthly-updates'
   | '/governance'
   | '/governance/govhub'
   | '/grants'
@@ -43,7 +38,6 @@ export const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 
 export const PATHS = {
   ABOUT: createPathConfig('/about', 'About'),
-  ALLOCATORS: createPathConfig('/filecoin-plus/allocators', 'Allocators'),
   BLOG: createPathConfig('/blog', 'Blog', {
     hasEntries: true,
   }),
@@ -78,14 +72,6 @@ export const PATHS = {
   EVENTS: createPathConfig('/events', 'Events', {
     hasEntries: true,
   }),
-  FIL_PLUS: createPathConfig('/filecoin-plus', 'Filecoin Plus', {
-    hasSubpaths: true,
-  }),
-  FIL_PLUS_MONTHLY_UPDATES: createPathConfig(
-    '/filecoin-plus/monthly-updates',
-    'Fil+ Monthly Updates',
-    { hasEntries: true },
-  ),
   GOVERNANCE: createPathConfig('/governance', 'Governance', {
     hasSubpaths: true,
   }),

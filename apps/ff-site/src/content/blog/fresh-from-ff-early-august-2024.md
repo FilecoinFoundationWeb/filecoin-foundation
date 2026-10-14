@@ -45,7 +45,7 @@ Due to popular demand, the [Developer Working Group](https://github.com/filecoin
 ### Fil Plus
 
 - Rolling allocator applications are open for submissions. Allocators are a core part of the Fil+ program and help incentivize the storage of useful data on the Filecoin network. Visit the [FIDL blog](https://blog.allocator.tech/2024/05/rolling-applications-are-open-for.html) for application instructions and a walkthrough.
-- [The Fil+ page](/filecoin-plus) is live on fil.org. Learn about the purpose of Fil+ and how to become an allocator, and explore DataCap projects within the program.
+- The Fil+ page is live on fil.org. Learn about the purpose of Fil+ and how to become an allocator, and explore DataCap projects within the program.
 - The FIL Plus team is conducting audits on the initial 5 Pib of DataCap distribution as part of the ongoing DataCap refresh. These allocators will either receive a full, partial, or no DataCap refresh.
 
 ## Comms, Marketing, & Events

@@ -74,4 +74,4 @@ Allocators play a key role in the Filecoin Plus program by verifying and onboard
 
 DataCap is a network resource used in deals to incentivize Filecoin storage actors that are facilitating value-additive activities to the network, such as providing hardware capacity, providing data storage, or providing retrieval of stored data. Clients can use DataCap to pay storage providers as part of a storage deal, which increases a storage provider’s probability of earning block rewards. 
 
-Clients can request DataCap from allocators, each of whom has their own application process. FF recently added an allocator registry to the [Filecoin Plus web page](/filecoin-plus/allocators) to help data clients connect with prospective allocators.
+Clients can request DataCap from allocators, each of whom has their own application process. FF recently added an allocator registry to the Filecoin Plus web page to help data clients connect with prospective allocators.

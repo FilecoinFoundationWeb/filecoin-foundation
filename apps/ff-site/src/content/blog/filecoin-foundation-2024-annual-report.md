@@ -255,7 +255,7 @@ Allocators play a key role in the Fil+ program by verifying and onboarding real 
 
 DataCap is a network resource used in deals to incentivize Filecoin storage actors that are facilitating value-additive activities to the network, such as providing hardware capacity, providing data storage, or providing retrieval of stored data. Clients can use DataCap to pay storage providers as part of a storage deal, which increases a storage provider’s probability of earning block rewards. This year, over 860 PiBs of DataCap have been distributed to 66 allocators, serving 984 clients with active deals. 
 
-Clients can request DataCap from allocators, each of whom has their own application process. FF recently added an allocator registry to the [Fil+ web page](/filecoin-plus/allocators) to help data clients connect with prospective allocators. 
+Clients can request DataCap from allocators, each of whom has their own application process. FF recently added an allocator registry to the Fil+ web page to help data clients connect with prospective allocators. 
 
 FF’s request for new allocator pathways helps the Filecoin community develop and run novel meta-pathways. This program resulted in 86 pathways joining the program in Q1 of 2024, which promotes faster allocation of DataCap to clients. Each pathway receives an individual audit to ensure compliant storage deals between the allocators, storage providers, and clients, contributing to a growing, healthy storage marketplace. 
 
@@ -288,7 +288,7 @@ User Experience Improvement Team (UXIT) by the numbers: 
 
 In 2024, FF’s UXIT supported teams and organizations building on the network by identifying usability challenges, addressing performance gaps, and providing actionable feedback on accessibility, search engine optimization (SEO), and development best practices. UXIT completed 17 dogfooding sessions for organizations across the ecosystem, helping improve products and platforms. Additionally, UXIT refreshed crucial network documentation, including Fil+, filecoin.io, and Boost docs, ensuring developers and users have up-to-date, reliable resources.
 
-In addition to this support, FF’s UXIT led the fil.org website relaunch, revamping its design and improving the user experience based on community-driven user interviews. The relaunch enhanced performance, SEO, and introduced new pages and resources requested by the Filecoin community, including [GovHub](/governance/govhub), [Ecosystem Explorer](/ecosystem-explorer), [Fil+ Allocator Registry](/filecoin-plus/allocators), [Orbit Hub](/orbit), [Events Page](/events), [Security Bug Bounty Program](/security/bug-bounty), [Web3 Security Maturity Model](/security/maturity-model), and the [Ecosystem Digest](/digest).
+In addition to this support, FF’s UXIT led the fil.org website relaunch, revamping its design and improving the user experience based on community-driven user interviews. The relaunch enhanced performance, SEO, and introduced new pages and resources requested by the Filecoin community, including [GovHub](/governance/govhub), [Ecosystem Explorer](/ecosystem-explorer), Fil+ Allocator Registry, [Orbit Hub](/orbit), [Events Page](/events), [Security Bug Bounty Program](/security/bug-bounty), [Web3 Security Maturity Model](/security/maturity-model), and the [Ecosystem Digest](/digest).
 
 ## Communications and Marketing: Showcasing and Empowering Ecosystem Success
 
