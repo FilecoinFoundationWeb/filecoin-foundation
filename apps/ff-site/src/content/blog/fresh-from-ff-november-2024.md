@@ -38,7 +38,7 @@ Announcing new speakers for [FIL Bangkok](https://lu.ma/aqyqwupe) and [FIL Dev S
 
 ### Fil Plus
 
-- Introducing the [Fil+ Allocator page](/filecoin-plus/allocators). Allocators play a key role in the Fil+ program by verifying and onboarding real client data to the Filecoin network, incentivizing the storage of useful data. To help clients match with the right Allocator for their data needs, the Foundation added a repository of active Allocators with details including organization name, Allocator type, region, and required replicas.
+- Introducing the Fil+ Allocator page. Allocators play a key role in the Fil+ program by verifying and onboarding real client data to the Filecoin network, incentivizing the storage of useful data. To help clients match with the right Allocator for their data needs, the Foundation added a repository of active Allocators with details including organization name, Allocator type, region, and required replicas. _Editor's note (October 2026): The Fil+ Allocator Registry on fil.org is no longer available. For current information on Filecoin Plus (Fil+), see the [Filecoin documentation](https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus)._
 - The Fil+ team will lead the Fil+ Updates and Gathering track at Fil Dev Summit. This workshop will highlight recent Fil+ updates, showcase tooling developments, and discuss key topics with allocators. Sessions will cover the current state of Fil+, macroeconomic factors affecting datacap flow, and the development of new allocator pathways.
 
 ## Comms, Marketing and Events

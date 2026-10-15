@@ -49,7 +49,6 @@ The governance segment addressed how the Filecoin FIP process operates, offering
 - [FIL Gov Slack Channel](https://filecoinproject.slack.com/?redir=%2Farchives%2FC0535S9TUUF%3Fname%3DC0535S9TUUF)
 - [GovHub - Filecoin Governance + PowerVote](/governance/govhub) 
 - [Upcoming Governance Calls](/governance) 
-- [FIL+ Allocator Page](/filecoin-plus/allocators)
 - [Filecoin FIPs (github)](https://github.com/filecoin-project/FIPs)
 
 ## Filecoin Plus Program

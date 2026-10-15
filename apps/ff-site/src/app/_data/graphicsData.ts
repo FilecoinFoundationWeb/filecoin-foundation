@@ -7,11 +7,6 @@ import ecosystem from '@/assets/graphics/Filorg_Ecosystem_Explorer.webp'
 import events1 from '@/assets/graphics/Filorg_Events1.webp'
 import events2 from '@/assets/graphics/Filorg_Events2.webp'
 import events3 from '@/assets/graphics/Filorg_Events3.webp'
-import filPlus from '@/assets/graphics/Filorg_Fil_Plus.webp'
-import filPlusAbout1 from '@/assets/graphics/Filorg_Fil_Plus_About1.webp'
-import filPlusAbout2 from '@/assets/graphics/Filorg_Fil_Plus_About2.webp'
-import filPlusAbout3 from '@/assets/graphics/Filorg_Fil_Plus_About3.webp'
-import filPlusAllocators from '@/assets/graphics/Filorg_Fil_Plus_Allocators.webp'
 import governance1 from '@/assets/graphics/Filorg_Governance1.webp'
 import governance2 from '@/assets/graphics/Filorg_Governance2.webp'
 import governance3 from '@/assets/graphics/Filorg_Governance3.webp'
@@ -62,26 +57,6 @@ export const graphicsData = {
   events3: {
     data: events3,
     alt: 'Speaker presenting to a full audience in a dark auditorium, with attendees attentively listening and engaged in the presentation.',
-  },
-  filPlus: {
-    data: filPlus,
-    alt: 'Long row of modern, sleek server racks in a bright, white room, with blue LED lights glowing from within, creating a futuristic and high-tech atmosphere.',
-  },
-  filPlusAbout1: {
-    data: filPlusAbout1,
-    alt: 'Stacked glossy white cubes arranged on a light surface.',
-  },
-  filPlusAbout2: {
-    data: filPlusAbout2,
-    alt: 'Floating and stacked glossy white cubes in a futuristic, reflective room.',
-  },
-  filPlusAbout3: {
-    data: filPlusAbout3,
-    alt: 'Glossy white cube with a glowing blue sphere inside.',
-  },
-  filPlusAllocators: {
-    data: filPlusAllocators,
-    alt: 'An abstract, minimalist graphic featuring a large folder with a checkmark symbol, positioned next to a rubber stamp. Several similar stamps are scattered in the background, along with small cube-like objects, suggesting themes of approval, validation, or document processing.',
   },
   governance1: {
     data: governance1,

@@ -7,7 +7,6 @@ import { blogPostCollection } from '@/qino/collections/blogPosts'
 import { digestIssueCollection } from '@/qino/collections/digestIssues'
 import { ecosystemProjectCollection } from '@/qino/collections/ecosystemProjects'
 import { eventCollection } from '@/qino/collections/events'
-import { monthlyUpdateCollection } from '@/qino/collections/monthlyUpdates'
 
 import { getDigestArticlesData } from '@/digest/utils/getDigestArticleData'
 
@@ -27,10 +26,6 @@ export default async function sitemap() {
       {
         getData: withSlug(eventCollection),
         basePath: PATHS.EVENTS.path,
-      },
-      {
-        getData: withSlug(monthlyUpdateCollection),
-        basePath: PATHS.FIL_PLUS_MONTHLY_UPDATES.path,
       },
     ],
   })
