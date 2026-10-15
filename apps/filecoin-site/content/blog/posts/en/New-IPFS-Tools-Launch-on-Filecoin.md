@@ -1,5 +1,5 @@
 ---
-title: New IPFS Tools Launch on Filecoin
+title: New IPFS Tool Launch on Filecoin
 excerpt: Migrate pinned CIDs to Filecoin unchanged
 date: 2026-09-30T20:12:28.204Z
 categories:
@@ -13,21 +13,21 @@ Filecoin was built from day one to persist the InterPlanetary File System (IPFS)
 
 ## Storing IPFS data? You might be paying too much to pin.
 
-IPFS doesn't promise that your data sticks around on its own. Nothing on the network is obligated to keep a copy, so most people pay a pinning service (such as Pinata, or previously Infura or Storacha) to guarantee their files stay hosted and reachable, the way you'd pay for web hosting. You can now get that same guarantee from Filecoin: your pinned IPFS data, same CIDs, no changes needed, at roughly a third the cost of the cheapest pinning alternative we compared. 
+IPFS doesn't promise that your data sticks around on its own. Nothing on the network is obligated to keep a copy, so most people pay a pinning service (such as Pinata, or previously Infura or Storacha) to guarantee their files stay hosted and reachable, the way you'd pay for web hosting. You can now get that same guarantee from Filecoin: your pinned IPFS data, same CIDs, no changes needed, at roughly a third the cost of the cheapest pinning alternative we compared.
 
 ## Step one: [Meet IPFS → Filecoin](http://filecoin.cloud/ipfs2filecoin)
 
 Migrate your existing CIDs from any public IPFS gateway.
 
 * **Your CIDs don't change**. Nothing is re-chunked. Every CID stays byte-identical and keeps resolving from any public IPFS gateway.
-* **A fraction of pinning-service pricing**. $2.50 per TiB per month per copy, two copies by default. You pay storage providers directly, streamed per epoch, with no plan tiers and no minimum commitment. 
+* **A fraction of pinning-service pricing**. $2.50 per TiB per month per copy, two copies by default. You pay storage providers directly, streamed per epoch, with no plan tiers and no minimum commitment.
 * **Verifiable proof**. Storage providers prove possession onchain on a schedule. You get a receipt with transaction links, and you can check any piece yourself.
 * **Your wallet holds it.** No signup and no vendor account to lose. The data set belongs to your wallet address.
 * **Reading never touches your key**. Retrieval works straight from any public IPFS gateway, so your content stays reachable no matter what happens to that wallet.
 
 If you're already paying a vendor to pin data you don't fully control, this is a way to keep the same links working while holding the guarantee yourself, at a fraction of the price.
 
-The process is scriptable, too. You can hand a coding agent like Claude Code or Cursor a single line and let it read the migration guide and run the steps itself. 
+The process is scriptable, too. You can hand a coding agent like Claude Code or Cursor a single line and let it read the migration guide and run the steps itself.
 
 ## Step two: pin everything new on [Filecoin Pin](https://docs.filecoin.io/build-on-filecoin/cookbook/filecoin-pin) from now on.
 
@@ -35,13 +35,13 @@ The process is scriptable, too. You can hand a coding agent like Claude Code or 
 
 It's available now as a CLI, JS library, and GitHub Action, with dedicated [migration guides](https://docs.filecoin.io/build-on-filecoin/cookbook/filecoin-pin/migrate-ipfs-pins) for moving pins from any IPFS gateway, including a [command-line walkthrough](https://docs.filecoin.io/build-on-filecoin/cookbook/filecoin-pin/migrate-ipfs-pins/command-line).
 
-You use Filecoin Pin the way you'd use any pinning service. The difference is what's underneath: proofs run onchain where anyone can check them, and the storage itself is spread across a decentralized network of providers instead of living on one company's servers. 
+You use Filecoin Pin the way you'd use any pinning service. The difference is what's underneath: proofs run onchain where anyone can check them, and the storage itself is spread across a decentralized network of providers instead of living on one company's servers.
 
 When you pin a file through Filecoin Pin, your IPFS content is uploaded to an audited Filecoin storage provider. Each provider must verify continuous data storage and access. Payments and uptime are handled automatically through Filecoin Pay. If proofs fail, streaming payments pause.
 
 ### Who's already migrating to Filecoin
 
-Teams are already choosing to store their pinned IPFS data on Filecoin, from NFT platforms to institutions with legal and compliance obligations around their data. 
+Teams are already choosing to store their pinned IPFS data on Filecoin, from NFT platforms to institutions with legal and compliance obligations around their data.
 
 **Large-scale content platforms**. Some products embed IPFS CIDs directly into customer-facing records at a scale where a single point of failure becomes a real production risk. NFT platforms are a great example: metadata and media for millions of live tokens, all needing to keep resolving indefinitely. Moving that volume onto Filecoin trades a vendor's uptime promise for onchain proof and a network of dedicated storage providers. [NFTs2Me](https://nfts2me.com/) is a no-code NFT creation platform with more than 2.17 million IPFS CIDs associated with NFT artwork and metadata, now using Filecoin as its storage layer.
 
