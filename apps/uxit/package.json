@@ -35,7 +35,7 @@
     "eslint-plugin-react-hooks": "^7.0.0",
     "eslint-plugin-turbo": "^2.8.20",
     "globals": "^17.4.0",
-    "postcss": "^8.5.8",
+    "postcss": "^8.5.10",
     "puppeteer": "^24.40.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
