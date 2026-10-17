@@ -5,7 +5,7 @@ import FlickrFoundationLogo from '@/assets/logos/flickr-foundation-logo.svg'
 import InternetArchiveLogo from '@/assets/logos/internet-archive-logo.svg'
 // import MITOpenLearningLogo from '@/assets/logos/MIT-open-learning-logo.svg'
 import SetiInstituteLogo from '@/assets/logos/seti-institute-logo.svg'
-// import SmithsonianLogo from '@/assets/logos/smithsonian-logo.svg'
+import SmithsonianLogo from '@/assets/logos/smithsonian-logo.svg'
 import StarlingLabLogo from '@/assets/logos/starling-lab-logo.svg'
 
 export const trustedByLogos: Array<LogoItemProps> = [
@@ -19,11 +19,12 @@ export const trustedByLogos: Array<LogoItemProps> = [
   //   alt: 'MIT Open Learning Logo',
   //   href: 'https://openlearning.mit.edu',
   // },
-  // {
-  //   logo: SmithsonianLogo,
-  //   alt: 'Smithsonian Logo',
-  //   href: 'https://www.si.edu',
-  // },
+  {
+    logo: SmithsonianLogo,
+    size: 80,
+    alt: 'Smithsonian Logo',
+    href: 'https://www.si.edu',
+  },
   {
     logo: FlickrFoundationLogo,
     alt: 'Flickr Foundation Logo',
