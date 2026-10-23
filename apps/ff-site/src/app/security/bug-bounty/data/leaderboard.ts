@@ -30,6 +30,11 @@ export const leaderboardData = [
     profileLink: 'https://x.com/joranhonig',
   },
   {
+    reporter: 'keizo',
+    points: 325,
+    profileLink: null,
+  },
+  {
     reporter: 'CircuitCrusher3',
     points: 323,
     profileLink: null,
@@ -178,6 +183,16 @@ export const leaderboardData = [
     reporter: 'Anupam Singh',
     points: 13,
     profileLink: 'https://www.linkedin.com/in/anupam-singh-226463201/',
+  },
+  {
+    reporter: 'uint256vieet',
+    points: 11,
+    profileLink: null,
+  },
+  {
+    reporter: 'rev3rse',
+    points: 10.75,
+    profileLink: null,
   },
   {
     reporter: 'ItsUnixIKnowThis',
