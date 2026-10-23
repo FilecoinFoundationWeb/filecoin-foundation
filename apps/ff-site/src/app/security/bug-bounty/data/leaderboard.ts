@@ -120,6 +120,11 @@ export const leaderboardData = [
     profileLink: null,
   },
   {
+    reporter: 'thesniper',
+    points: 47.5,
+    profileLink: null,
+  },
+  {
     reporter: 'Quasar',
     points: 40,
     profileLink: 'https://x.com/quasar249',
