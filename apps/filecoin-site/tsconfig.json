@@ -15,6 +15,7 @@
       "@/styles/*": ["./src/app/_styles/*"],
       "@/utils/*": ["./src/app/_utils/*"],
       "@/i18n/*": ["./src/i18n/*"],
+      "@/qino/*": ["./qino/*"],
       "@/next/types/*": ["./.next/dev/types/*", "./.next/types/*"]
     },
     "plugins": [{ "name": "next" }]

@@ -12,7 +12,9 @@
     "not firefox < 85"
   ],
   "scripts": {
+    "prebuild": "qino build",
     "build": "tinacms build && npm run generate-rss && next build --webpack",
+    "predev": "qino build",
     "dev": "next dev --webpack",
     "generate-rss": "tsx scripts/generateRSS.ts",
     "lint": "eslint src --fix",
@@ -27,6 +29,7 @@
     "@filecoin-foundation/utils": "0.0.0",
     "@hookform/resolvers": "^5.2.2",
     "@phosphor-icons/react": "^2.1.10",
+    "@qino/cms": "^0.16.0",
     "@sentry/nextjs": "^10.46.0",
     "fast-glob": "^3.3.3",
     "feed": "^5.2.0",
