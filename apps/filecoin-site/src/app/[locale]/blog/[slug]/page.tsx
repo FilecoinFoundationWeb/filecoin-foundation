@@ -11,14 +11,16 @@ import type { SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
+import { blogPostCollections } from '@/qino/collections/blogPosts'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getEntryOrNotFound } from '@/utils/getEntryOrNotFound'
 import { getLocalePath } from '@/utils/getLocalePath'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
-import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 import { translateBlogCategory } from '../utils/translateBlogCategory'
 
 import { BlogPostHeader } from './components/BlogPostHeader'
@@ -33,8 +35,8 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
   setRequestLocale(locale)
 
-  const data = await getBlogPostData(slug, locale)
-  const { image, categories, author, publishedOn, title, content } = data
+  const data = await getEntryOrNotFound(blogPostCollections[locale], slug)
+  const { image, categories, author, publishedOn, title, markdown } = data
 
   const t = await getTranslations(PATHS.BLOG.path)
   const translatedCategories = categories.map((category) =>
@@ -61,7 +63,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
             }}
           />
 
-          <MarkdownContent>{content}</MarkdownContent>
+          <MarkdownContent>{markdown}</MarkdownContent>
         </div>
       </PageSection>
     </>
@@ -71,11 +73,15 @@ export default async function BlogPost({ params }: BlogPostProps) {
 export async function generateStaticParams() {
   const locales = routing.locales
 
-  const entriesByLocale = await Promise.all(locales.map(getBlogPostsData))
+  const entriesByLocale = await Promise.all(
+    locales.map((locale) =>
+      blogPostCollections[locale].getEntries({ view: 'published' }),
+    ),
+  )
 
   const params = entriesByLocale.flatMap((entries, index) => {
     const locale = locales[index]
-    return entries.map(({ slug }) => ({ slug, locale }))
+    return entries.map(({ _meta: { slug } }) => ({ slug, locale }))
   })
 
   return params
@@ -83,7 +89,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: BlogPostProps) {
   const { slug, locale } = await props.params
-  const { image, seo, excerpt } = await getBlogPostData(slug, locale)
+  const { image, seo, excerpt } = await getEntryOrNotFound(
+    blogPostCollections[locale],
+    slug,
+  )
 
   return createMetadata({
     path: await getLocalePath(`${PATHS.BLOG.path}/${slug}`),

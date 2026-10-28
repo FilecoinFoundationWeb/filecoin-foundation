@@ -6,16 +6,19 @@ import { getFeaturedPosts as sharedGetFeaturedPosts } from '@filecoin-foundation
 
 import { PATHS } from '@/constants/paths'
 
-import { getBlogPostsData } from './getBlogPostData'
+import { blogPostCollections } from '@/qino/collections/blogPosts'
+
+import { omitMarkdown } from '@/utils/omitMarkdown'
+
 import { translateBlogCategory } from './translateBlogCategory'
 
 export async function getFeaturedBlogPosts(locale: Locale, limit: number) {
   const [posts, t] = await Promise.all([
-    getBlogPostsData(locale),
+    blogPostCollections[locale].getEntries({ view: 'published' }),
     getTranslations(PATHS.BLOG.path),
   ])
 
-  return sharedGetFeaturedPosts({ posts, limit }).map(
+  return sharedGetFeaturedPosts({ posts: posts.map(omitMarkdown), limit }).map(
     ({ categories, ...rest }) => ({
       ...rest,
       tags: categories.map((cat) => translateBlogCategory(t, cat)),

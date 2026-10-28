@@ -1,7 +1,8 @@
 import { DEFAULT_FILTER_ID } from '@filecoin-foundation/hooks/useFilter/constants'
 
+import type { BlogPostPreview } from '@/qino/collections/blogPosts'
+
 import type { BlogCategoryKey } from '../data/blogCategories'
-import type { BlogPostPreview } from '../types/blogPostType'
 
 export function postMatchesCategory(
   post: BlogPostPreview,

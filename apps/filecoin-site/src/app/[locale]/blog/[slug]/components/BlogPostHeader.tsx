@@ -7,17 +7,18 @@ import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
+import type { BlogPost } from '@/qino/collections/blogPosts'
+
 import { SectionDivider } from '@/components/SectionDivider'
 
 import { Categories } from '../../components/Categories'
 import { PostMetadata } from '../../components/PostMetadata'
-import type { BlogPost } from '../../types/blogPostType'
 
 type BlogPostHeaderProps = {
   categories: Array<string>
   title: BlogPost['title']
   date: BlogPost['publishedOn']
-  slug: BlogPost['slug']
+  slug: BlogPost['_meta']['slug']
   image: ImageProps
   author?: BlogPost['author']
 }

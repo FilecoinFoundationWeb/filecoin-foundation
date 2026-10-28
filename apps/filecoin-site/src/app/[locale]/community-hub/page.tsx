@@ -205,7 +205,15 @@ export default async function CommunityHub({ params }: BlogProps) {
         >
           <CardGrid as="ul" variant="mdTwoLgThreeWide">
             {featuredBlogPosts.map(
-              ({ title, slug, excerpt, tags, image, author, publishedOn }) => (
+              ({
+                title,
+                _meta: { slug },
+                excerpt,
+                tags,
+                image,
+                author,
+                publishedOn,
+              }) => (
                 <BlogCard
                   key={title}
                   slug={slug}

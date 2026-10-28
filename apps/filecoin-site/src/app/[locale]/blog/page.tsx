@@ -7,22 +7,23 @@ import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
-import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
 
 import { PATHS } from '@/constants/paths'
+
+import { blogPostCollections } from '@/qino/collections/blogPosts'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getLocalePath } from '@/utils/getLocalePath'
 import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
+import { omitMarkdown } from '@/utils/omitMarkdown'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import { BlogPageHeader } from './components/BlogPageHeader'
 import { BlogPostList } from './components/BlogPostList'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getBlogPostsData } from './utils/getBlogPostData'
 
 type BlogProps = {
   params: Promise<LocaleParams>
@@ -31,9 +32,10 @@ type BlogProps = {
 export default async function Blog({ params }: BlogProps) {
   const { locale } = await params
 
-  const posts = await getBlogPostsData(locale)
-  const sortedPosts = sortPostsByDateDesc(posts)
-  const featuredPost = sortedPosts[0]
+  const posts = await blogPostCollections[locale].getEntries({
+    view: 'published',
+  })
+  const featuredPost = posts[0]
 
   const t = await getTranslations(PATHS.BLOG.path)
   const metadata = await getTranslatedMetadata(PATHS.BLOG.path)
@@ -41,7 +43,7 @@ export default async function Blog({ params }: BlogProps) {
   return (
     <>
       <StructuredDataScript
-        structuredData={generateStructuredData(metadata, sortedPosts)}
+        structuredData={generateStructuredData(metadata, posts)}
       />
       <Navigation backgroundVariant="light" />
 
@@ -49,7 +51,7 @@ export default async function Blog({ params }: BlogProps) {
         <BlogPageHeader
           title={featuredPost.title}
           description={featuredPost.excerpt}
-          slug={featuredPost.slug}
+          slug={featuredPost._meta.slug}
           badgeText={t('featuredPost.badge')}
           ctaText={t('featuredPost.cta')}
           image={{
@@ -61,7 +63,7 @@ export default async function Blog({ params }: BlogProps) {
 
       <PageSection backgroundVariant="light" paddingVariant="topNone">
         <Suspense>
-          <BlogPostList posts={sortedPosts} />
+          <BlogPostList posts={posts.map(omitMarkdown)} />
         </Suspense>
       </PageSection>
     </>

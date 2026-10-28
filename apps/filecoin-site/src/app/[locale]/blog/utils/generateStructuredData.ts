@@ -4,7 +4,7 @@ import type { StructuredDataParams } from '@filecoin-foundation/utils/types/stru
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import type { BlogPostPreview } from '../types/blogPostType'
+import type { BlogPostPreview } from '@/qino/collections/blogPosts'
 
 import { generateBlogStructuredData } from './generateBlogStructuredData'
 
@@ -15,7 +15,7 @@ export function generateStructuredData(
   return generateBlogStructuredData({
     name: seo.title,
     items: sortedPosts.map((post) => ({
-      url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
+      url: `${BASE_URL}${PATHS.BLOG.path}/${post._meta.slug}`,
       name: post.title,
     })),
   })

@@ -9,17 +9,18 @@ import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils'
 
 import { PATHS } from '@/constants/paths'
 
+import type { BlogPost } from '@/qino/collections/blogPosts'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { TagGroup } from '@/components/TagGroup/TagGroup'
 
-import type { BlogPost } from '../types/blogPostType'
 
 import { PostMetadata } from './PostMetadata'
 
 export type BlogCardProps = {
   title: BlogPost['title']
-  slug: BlogPost['slug']
+  slug: BlogPost['_meta']['slug']
   tags: Array<string>
   description: BlogPost['excerpt']
   image?: CardImageProps
