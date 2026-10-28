@@ -7,7 +7,7 @@ import type { Locale } from '@/i18n/types'
 import { getBlogRSSPath, PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { blogPostCollections } from '@/qino/collections/blogPosts'
 
 const FEED_METADATA: Record<Locale, { title: string; description: string }> = {
   en: {
@@ -40,18 +40,16 @@ async function generateFeedForLocale(locale: Locale) {
     },
   })
 
-  const posts = await getBlogPostsData(locale)
+  const posts = await blogPostCollections[locale].getEntries({
+    view: 'published',
+  })
   console.log(`[${locale}] Found ${posts.length} blog posts`)
 
-  const sortedPosts = posts.toSorted(
-    (a, b) => b.publishedOn.getTime() - a.publishedOn.getTime(),
-  )
-
-  sortedPosts.forEach((post) => {
+  posts.forEach((post) => {
     feed.addItem({
       title: post.title,
-      id: `${blogBaseUrl}/${post.slug}`,
-      link: `${blogBaseUrl}/${post.slug}`,
+      id: `${blogBaseUrl}/${post._meta.slug}`,
+      link: `${blogBaseUrl}/${post._meta.slug}`,
       description: post.excerpt,
       date: post.publishedOn,
     })

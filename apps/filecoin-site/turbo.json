@@ -14,7 +14,7 @@
         "HUBSPOT_STORE_DATA_FORM_ID",
         "HUBSPOT_PROVIDE_STORAGE_FORM_ID"
       ],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**", "qino/_generated/**"]
     }
   }
 }

@@ -17,10 +17,11 @@ import {
 import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
+import type { BlogPostPreview } from '@/qino/collections/blogPosts'
+
 import { SectionDivider } from '@/components/SectionDivider'
 
 import { useCategoryState } from '../hooks/useCategoryState'
-import type { BlogPostPreview } from '../types/blogPostType'
 import { postMatchesCategory } from '../utils/postMatchesCategory'
 import { translateBlogCategory } from '../utils/translateBlogCategory'
 
@@ -91,7 +92,7 @@ export function BlogPostList({ posts }: BlogPostListProps) {
             {paginatedResults.map((post: BlogPostPreview) => {
               const {
                 title,
-                slug,
+                _meta: { slug },
                 excerpt,
                 categories,
                 image,

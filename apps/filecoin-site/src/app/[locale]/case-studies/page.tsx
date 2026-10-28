@@ -21,7 +21,7 @@ import { Navigation } from '@/components/Navigation/Navigation'
 import { CaseStudiesGrid } from './components/CaseStudiesGrid'
 import { PageHeader } from './components/PageHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getCaseStudiesByFeaturedStatus } from './utils/getCaseStudyData'
+import { getCaseStudiesByFeaturedStatus } from './utils/getCaseStudiesByFeaturedStatus'
 
 type CaseStudiesProps = {
   params: Promise<LocaleParams>

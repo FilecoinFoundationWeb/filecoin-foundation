@@ -3,6 +3,7 @@ import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
+import { getEntryOrNotFound } from '@filecoin-foundation/utils/getEntryOrNotFound'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -14,7 +15,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
-import { getEntryOrNotFound } from '@/utils/getEntryOrNotFound'
 
 import { CTASection } from '@/components/CTASection'
 

@@ -7,12 +7,12 @@ import { buildImageSizeProp } from '@filecoin-foundation/ui-filecoin/utils'
 
 import { PATHS } from '@/constants/paths'
 
-import type { BlogPost } from '../types/blogPostType'
+import type { BlogPost } from '@/qino/collections/blogPosts'
 
 type BlogPageHeaderProps = {
   title: BlogPost['title']
   description: BlogPost['excerpt']
-  slug: BlogPost['slug']
+  slug: BlogPost['_meta']['slug']
   image: ImageProps
   badgeText: string
   ctaText: string

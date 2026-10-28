@@ -5,8 +5,8 @@ import { generateSitemap } from '@filecoin-foundation/utils/generateSitemap'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
-import { getCaseStudiesData } from '@/case-studies/utils/getCaseStudyData'
+import { blogPostCollections } from '@/qino/collections/blogPosts'
+import { caseStudyCollections } from '@/qino/collections/caseStudies'
 
 export default function sitemap() {
   return generateSitemap({
@@ -26,18 +26,22 @@ export default function sitemap() {
 }
 
 async function getAllBlogPosts() {
-  const posts = await getLocalizedData(getBlogPostsData)
+  const posts = await getLocalizedData((locale) =>
+    blogPostCollections[locale].getEntries({ view: 'published' }),
+  )
 
-  return posts.map(({ slug, publishedOn }) => ({
+  return posts.map(({ _meta: { slug }, publishedOn }) => ({
     slug,
     updatedOn: publishedOn,
   }))
 }
 
 async function getAllCaseStudies() {
-  const caseStudies = await getLocalizedData(getCaseStudiesData)
+  const caseStudies = await getLocalizedData((locale) =>
+    caseStudyCollections[locale].getEntries(),
+  )
 
-  return caseStudies.map(({ slug, publishedOn, updatedOn }) => ({
+  return caseStudies.map(({ _meta: { slug }, publishedOn, updatedOn }) => ({
     slug,
     updatedOn: updatedOn || publishedOn,
   }))

@@ -10,6 +10,8 @@ import { PATHS } from '@/constants/paths'
 import { SEO } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
+import { blogPostCollection } from '@/qino/collections/blogPosts'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -28,12 +30,10 @@ import { FEATURED_PROJECTS } from './constants/featuredProjects'
 import { learningResources } from './constants/learningResources'
 import { getFeaturedProjects } from './utils/getFeaturedProjects'
 
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
-
 export default async function Home() {
   const featuredProjects = await getFeaturedProjects(FEATURED_PROJECTS)
   const featuredBlogPosts = getFeaturedPosts({
-    posts: await getBlogPostsData(),
+    posts: await blogPostCollection.getEntries(),
     limit: 6,
   })
 
@@ -69,32 +69,34 @@ export default async function Home() {
         title="Building Decentralized Solutions for Real-World Impact"
       >
         <CardGrid as="section" cols="mdThree">
-          {featuredProjects.map(({ title, description, slug, image }) => {
-            return (
-              <Card
-                key={slug}
-                as="article"
-                description={{ text: description, isClamped: true }}
-                cta={{
-                  href: `${PATHS.PROJECTS.path}/${slug}`,
-                  text: 'About the Project',
-                  icon: CARET_RIGHT,
-                }}
-                image={{
-                  ...(image || graphicsData.imageFallback.data),
-                  alt: '',
-                  objectFit: 'contain',
-                  sizes: buildImageSizeProp({
-                    startSize: '100vw',
-                    md: '310px',
-                  }),
-                }}
-                title={{
-                  text: title,
-                }}
-              />
-            )
-          })}
+          {featuredProjects.map(
+            ({ title, description, _meta: { slug }, image }) => {
+              return (
+                <Card
+                  key={slug}
+                  as="article"
+                  description={{ text: description, isClamped: true }}
+                  cta={{
+                    href: `${PATHS.PROJECTS.path}/${slug}`,
+                    text: 'About the Project',
+                    icon: CARET_RIGHT,
+                  }}
+                  image={{
+                    ...(image || graphicsData.imageFallback.data),
+                    alt: '',
+                    objectFit: 'contain',
+                    sizes: buildImageSizeProp({
+                      startSize: '100vw',
+                      md: '310px',
+                    }),
+                  }}
+                  title={{
+                    text: title,
+                  }}
+                />
+              )
+            },
+          )}
         </CardGrid>
 
         <Button href={PATHS.PROJECTS.path} className="sm:self-center">
@@ -139,8 +141,14 @@ export default async function Home() {
       >
         <CardGrid as="section" cols="smTwoLgThree">
           {featuredBlogPosts.map((post) => {
-            const { slug, category, title, description, image, publishedOn } =
-              post
+            const {
+              _meta: { slug },
+              category,
+              title,
+              description,
+              image,
+              publishedOn,
+            } = post
 
             const categoryLabel = getCategoryLabel({
               collectionName: 'blog_posts',

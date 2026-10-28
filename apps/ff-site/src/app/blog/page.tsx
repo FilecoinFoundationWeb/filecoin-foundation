@@ -3,6 +3,7 @@ import { Suspense } from 'react'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
+import { omitMarkdown } from '@filecoin-foundation/utils/omitMarkdown'
 
 import { PATHS } from '@/constants/paths'
 
@@ -12,7 +13,6 @@ import { blogPageItem } from '@/qino/items/blogPage'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { omitMarkdown } from '@/utils/omitMarkdown'
 
 import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader'

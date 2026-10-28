@@ -28,13 +28,13 @@ import { graphicsData } from '@/data/graphicsData'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 
+import type { BlogPostPreview } from '@/qino/collections/blogPosts'
+
 import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'
 
-import type { BlogPost } from '../types/blogPostType'
-
 type BlogContentProps = {
-  posts: Array<BlogPost>
+  posts: Array<BlogPostPreview>
 }
 
 const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
@@ -88,8 +88,14 @@ export function BlogContent({ posts }: BlogContentProps) {
     >
       <CardGrid as="section" cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {
-          const { slug, category, title, description, image, publishedOn } =
-            post
+          const {
+            _meta: { slug },
+            category,
+            title,
+            description,
+            image,
+            publishedOn,
+          } = post
 
           const isFirstTwoImages = i < 3
           const categoryLabel = getCategoryLabel({

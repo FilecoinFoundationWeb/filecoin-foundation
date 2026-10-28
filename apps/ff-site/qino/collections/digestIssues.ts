@@ -1,11 +1,10 @@
 import type { Infer } from '@qino/cms'
 
 import { buildIssuePath } from '@filecoin-foundation/utils/buildDigestPath'
+import { camelcaseKeysDeep } from '@filecoin-foundation/utils/camelcaseKeysDeep'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { DigestIssueFrontmatterSchema } from '@filecoin-foundation/utils/schemas/DigestIssueFrontmatterSchema'
-
-import { camelcaseKeysDeep } from '@/utils/camelcaseKeysDeep'
-import { withSeoTitleFallback } from '@/utils/withSeoTitleFallback'
+import { withSeoTitleFallback } from '@filecoin-foundation/utils/withSeoTitleFallback'
 
 import qino from '../'
 

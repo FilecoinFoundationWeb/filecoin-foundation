@@ -1,6 +1,7 @@
 import type { EntryViewConfig } from '@filecoin-foundation/hooks/useEntryView/types'
 
-import type { Project } from '../types/ProjectType'
+import type { ProjectPreview } from '@/qino/collections/projects'
+
 import {
   filterByCurrentPartnership,
   filterByPastPartnership,
@@ -17,4 +18,4 @@ export const projectsViewConfigs = [
     name: 'Past Partnerships',
     filterOrSortFn: filterByPastPartnership,
   },
-] as const satisfies ReadonlyArray<EntryViewConfig<Project>>
+] as const satisfies ReadonlyArray<EntryViewConfig<ProjectPreview>>
