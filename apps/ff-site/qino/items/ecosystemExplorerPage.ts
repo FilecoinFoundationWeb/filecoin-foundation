@@ -1,4 +1,4 @@
-import { camelcaseKeysDeep } from '@/utils/camelcaseKeysDeep'
+import { camelcaseKeysDeep } from '@filecoin-foundation/utils/camelcaseKeysDeep'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 

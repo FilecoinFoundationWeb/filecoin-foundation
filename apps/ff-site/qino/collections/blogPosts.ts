@@ -1,8 +1,8 @@
 import type { Infer } from '@qino/cms'
 import { compareDesc } from 'date-fns'
 
-import { camelcaseKeysDeep } from '@/utils/camelcaseKeysDeep'
-import { withSeoTitleFallback } from '@/utils/withSeoTitleFallback'
+import { camelcaseKeysDeep } from '@filecoin-foundation/utils/camelcaseKeysDeep'
+import { withSeoTitleFallback } from '@filecoin-foundation/utils/withSeoTitleFallback'
 
 import qino from '../'
 

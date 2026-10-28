@@ -3,6 +3,7 @@ import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { getEntryOrNotFound } from '@filecoin-foundation/utils/getEntryOrNotFound'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -13,7 +14,6 @@ import { digestArticleCollection } from '@/qino/collections/digestArticles'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getEntryOrNotFound } from '@/utils/getEntryOrNotFound'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 

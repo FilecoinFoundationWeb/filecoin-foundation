@@ -4,8 +4,7 @@ import type { Locale } from '@/i18n/types'
 import type { Infer } from '@qino/cms'
 import { compareDesc } from 'date-fns'
 
-
-import { camelcaseKeysDeep } from '@/utils/camelcaseKeysDeep'
+import { camelcaseKeysDeep } from '@filecoin-foundation/utils/camelcaseKeysDeep'
 
 import qino from '../'
 

@@ -3,6 +3,7 @@ import { BlogPostHeader } from '@filecoin-foundation/ui/BlogPostHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { getEntryOrNotFound } from '@filecoin-foundation/utils/getEntryOrNotFound'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -14,7 +15,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
-import { getEntryOrNotFound } from '@/utils/getEntryOrNotFound'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 

@@ -4,6 +4,7 @@ import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { omitMarkdown } from '@filecoin-foundation/utils/omitMarkdown'
 
 import { PATHS } from '@/constants/paths'
 
@@ -13,7 +14,6 @@ import { monthlyUpdatesPageItem } from '@/qino/items/monthlyUpdatesPage'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { omitMarkdown } from '@/utils/omitMarkdown'
 
 import { MonthlyUpdatesContent } from './components/MonthlyUpdatesContent'
 import { generateStructuredData } from './utils/generateStructuredData'

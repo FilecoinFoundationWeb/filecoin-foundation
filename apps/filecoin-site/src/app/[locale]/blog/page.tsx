@@ -7,6 +7,7 @@ import { getTranslations } from 'next-intl/server'
 
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
+import { omitMarkdown } from '@filecoin-foundation/utils/omitMarkdown'
 
 import { PATHS } from '@/constants/paths'
 
@@ -17,7 +18,6 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 import { getLocalePath } from '@/utils/getLocalePath'
 import { getTranslatedMetadata } from '@/utils/getTranslatedMetadata'
-import { omitMarkdown } from '@/utils/omitMarkdown'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 

@@ -3,12 +3,11 @@ import type { Locale } from '@/i18n/types'
 import { getTranslations } from 'next-intl/server'
 
 import { getFeaturedPosts as sharedGetFeaturedPosts } from '@filecoin-foundation/utils/getFeaturedPosts'
+import { omitMarkdown } from '@filecoin-foundation/utils/omitMarkdown'
 
 import { PATHS } from '@/constants/paths'
 
 import { blogPostCollections } from '@/qino/collections/blogPosts'
-
-import { omitMarkdown } from '@/utils/omitMarkdown'
 
 import { translateBlogCategory } from './translateBlogCategory'
 

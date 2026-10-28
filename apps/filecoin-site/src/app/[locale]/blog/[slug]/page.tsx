@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { MarkdownContent } from '@filecoin-foundation/ui-filecoin/Markdown/MarkdownContent'
 import { PageSection } from '@filecoin-foundation/ui-filecoin/PageSection'
+import { getEntryOrNotFound } from '@filecoin-foundation/utils/getEntryOrNotFound'
 import type { SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -16,7 +17,6 @@ import { blogPostCollections } from '@/qino/collections/blogPosts'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getEntryOrNotFound } from '@/utils/getEntryOrNotFound'
 import { getLocalePath } from '@/utils/getLocalePath'
 
 import { Navigation } from '@/components/Navigation/Navigation'

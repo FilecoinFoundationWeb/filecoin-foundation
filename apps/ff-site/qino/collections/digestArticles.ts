@@ -2,10 +2,9 @@ import type { Infer } from '@qino/cms'
 import removeMarkdown from 'remove-markdown'
 
 import { buildArticlePath } from '@filecoin-foundation/utils/buildDigestPath'
+import { camelcaseKeysDeep } from '@filecoin-foundation/utils/camelcaseKeysDeep'
 import { DigestArticleFrontmatterSchema } from '@filecoin-foundation/utils/schemas/DigestArticleFrontmatterSchema'
-
-import { camelcaseKeysDeep } from '@/utils/camelcaseKeysDeep'
-import { withSeoTitleFallback } from '@/utils/withSeoTitleFallback'
+import { withSeoTitleFallback } from '@filecoin-foundation/utils/withSeoTitleFallback'
 
 import qino from '../'
 
