@@ -113,6 +113,34 @@ All three also take `schema`, and optionally `relations` and `views`.
 - Items suit one-off files such as the home page or site settings.
 - One primitive owns one extension. For mixed folders, use the dominant extension and flag the rest.
 
+### Localized content (one folder per locale)
+
+Qino has no i18n. For `blog/en/`, `blog/zh-cn/`, define one collection per locale folder, all sharing one schema, built with a generic factory:
+
+```ts
+function defineBlogPostCollection<L extends Locale>(locale: L) {
+  return qino.defineCollection({
+    directory: `blog/${locale}`,
+    extension: ".md",
+    schema: BlogPostSchema,
+  });
+}
+
+export const blogPostEnCollection = defineBlogPostCollection("en");
+export const blogPostZhCnCollection = defineBlogPostCollection("zh-cn");
+
+export const blogPostCollections = {
+  en: blogPostEnCollection,
+  "zh-cn": blogPostZhCnCollection,
+} satisfies Record<Locale, unknown>;
+```
+
+- **Export each collection by name.** The CLI only picks up top-level exports that are primitives. If the collections only live in an object or array, `lint`, `check`, and `build` ignore them.
+- The generic `L` keeps `directory` a literal, so every locale gets its own slug type (`BlogEnSlug`, `BlogZhCnSlug`).
+- The locale map lets app code call `blogPostCollections[locale]`. `satisfies Record<Locale, …>` turns a newly added locale with no collection into a type error.
+- If the project has locale constants (`LOCALES`, a `Locale` type), import them. Keep the import chain free of framework runtime imports; use `import type` for types.
+- Sibling folders that aren't locales (e.g. `pending/`) aren't covered by any collection. Leave them and flag them.
+
 ### Layouts that don't fit
 
 Don't move, rename, or restructure files without the user's agreement. Model what fits, and report what you skipped and why.
@@ -188,6 +216,7 @@ Look up each error message at https://www.qino.works/docs/api/errors. The ones s
 - `Validation failed for <filePath>:`: make the field optional or fix its type. Don't edit content to fit the schema. YAML syntax errors are different; see "Inferring schemas".
 - `…fields reserved for Qino cannot appear…`: `_meta`, `markdown`, or `raw` in frontmatter or schema output. Flag frontmatter conflicts to the user; drop them from schemas.
 - `Relation "<key>"…expected value under "<dir>/"…`: the value is a bare slug. Keep it as `z.string()`, or convert it to a path.
+- `<n> missing media files in "<mediaFolder>":`: content references local files that aren't in `mediaFolder`. Links to pages with a dot in the slug (`/blog/foo.bar/`) are false positives; exclude those routes with `cli: { check: { localAssetReferences: { exclude: ["/blog/**"] } } }` in `initQino`. The rest are broken references (often a renamed extension, e.g. `.png` → `.webp`). List them for the user and don't edit content without their agreement.
 
 Report back:
 
@@ -212,6 +241,7 @@ Report back:
 | Overwrote an existing `prebuild`                | Chain it                                                                       |
 | `import qino from "../"` fails under `NodeNext` | Use the project's convention, e.g. `"../index.js"`                             |
 | Collection pointed at a nested folder           | Nested files are ignored; use a tree or several collections                    |
+| Collections exported only inside an object      | The CLI ignores them; also export each one by name                             |
 | Script fails with `No "exports" main defined`   | `@qino/cms` is ESM-only; run the script as ESM (`.mts`, or `"type": "module"`) |
 
 ## Docs
