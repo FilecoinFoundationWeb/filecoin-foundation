@@ -1,10 +1,10 @@
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
+import type { Project } from '@/qino/collections/projects'
+
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
-import type { Project } from '../../types/ProjectType'
-
-export function generateStructuredData({ seo, slug }: Project) {
+export function generateStructuredData({ seo, _meta: { slug } }: Project) {
   return generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,

@@ -24,6 +24,8 @@ import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
 
+import type { ProjectPreview } from '@/qino/collections/projects'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
@@ -32,13 +34,12 @@ import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndVali
 import { Card } from '@/components/Card'
 
 import { projectsViewConfigs } from '../constants/viewConfigs'
-import type { Project } from '../types/ProjectType'
 
 import { PartnershipToggleFilter } from './PartnershipToggleFilter'
 import { ProjectsFilterContainer } from './ProjectsFilterContainer'
 
 type ProjectsContentProps = {
-  projects: Array<Project>
+  projects: Array<ProjectPreview>
 }
 
 const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
@@ -99,8 +100,14 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
     >
       <CardGrid as="section" cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {
-          const { slug, title, description, image, publishedOn, category } =
-            post
+          const {
+            _meta: { slug },
+            title,
+            description,
+            image,
+            publishedOn,
+            category,
+          } = post
 
           const isFirstThreeImages = i < 3
           const categoryLabel = getCategoryLabel({

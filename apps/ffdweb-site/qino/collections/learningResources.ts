@@ -18,3 +18,4 @@ export const learningResourceCollection = qino.defineCollection({
 export type LearningResource = Infer<
   typeof learningResourceCollection
 >['output']
+export type LearningResourcePreview = Omit<LearningResource, 'markdown' | 'raw'>

@@ -16,3 +16,4 @@ export const projectCollection = qino.defineCollection({
 })
 
 export type Project = Infer<typeof projectCollection>['output']
+export type ProjectPreview = Omit<Project, 'markdown' | 'raw'>

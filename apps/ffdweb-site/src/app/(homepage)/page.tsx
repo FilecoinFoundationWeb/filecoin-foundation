@@ -69,32 +69,34 @@ export default async function Home() {
         title="Building Decentralized Solutions for Real-World Impact"
       >
         <CardGrid as="section" cols="mdThree">
-          {featuredProjects.map(({ title, description, slug, image }) => {
-            return (
-              <Card
-                key={slug}
-                as="article"
-                description={{ text: description, isClamped: true }}
-                cta={{
-                  href: `${PATHS.PROJECTS.path}/${slug}`,
-                  text: 'About the Project',
-                  icon: CARET_RIGHT,
-                }}
-                image={{
-                  ...(image || graphicsData.imageFallback.data),
-                  alt: '',
-                  objectFit: 'contain',
-                  sizes: buildImageSizeProp({
-                    startSize: '100vw',
-                    md: '310px',
-                  }),
-                }}
-                title={{
-                  text: title,
-                }}
-              />
-            )
-          })}
+          {featuredProjects.map(
+            ({ title, description, _meta: { slug }, image }) => {
+              return (
+                <Card
+                  key={slug}
+                  as="article"
+                  description={{ text: description, isClamped: true }}
+                  cta={{
+                    href: `${PATHS.PROJECTS.path}/${slug}`,
+                    text: 'About the Project',
+                    icon: CARET_RIGHT,
+                  }}
+                  image={{
+                    ...(image || graphicsData.imageFallback.data),
+                    alt: '',
+                    objectFit: 'contain',
+                    sizes: buildImageSizeProp({
+                      startSize: '100vw',
+                      md: '310px',
+                    }),
+                  }}
+                  title={{
+                    text: title,
+                  }}
+                />
+              )
+            },
+          )}
         </CardGrid>
 
         <Button href={PATHS.PROJECTS.path} className="sm:self-center">

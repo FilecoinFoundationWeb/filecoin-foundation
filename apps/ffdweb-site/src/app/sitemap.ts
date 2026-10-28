@@ -5,8 +5,7 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { blogPostCollection } from '@/qino/collections/blogPosts'
-
-import { getProjectsData } from '@/projects/utils/getProjectData'
+import { projectCollection } from '@/qino/collections/projects'
 
 export default async function sitemap() {
   const routes = await generateSitemap({
@@ -18,7 +17,7 @@ export default async function sitemap() {
         basePath: PATHS.BLOG.path,
       },
       {
-        getData: getProjectsData,
+        getData: withSlug(projectCollection),
         basePath: PATHS.PROJECTS.path,
       },
     ],
