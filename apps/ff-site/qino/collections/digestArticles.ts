@@ -11,9 +11,9 @@ import qino from '../'
 export const digestArticleCollection = qino.defineCollection({
   directory: 'digest/articles',
   extension: '.md',
-  schema: DigestArticleFrontmatterSchema.omit({ content: true })
-    .transform(camelcaseKeysDeep)
-    .transform((article) => withSeoTitleFallback(article)),
+  schema: DigestArticleFrontmatterSchema.transform(camelcaseKeysDeep).transform(
+    (article) => withSeoTitleFallback(article),
+  ),
   views: (view) => ({
     default: view({
       augment: (article) => ({

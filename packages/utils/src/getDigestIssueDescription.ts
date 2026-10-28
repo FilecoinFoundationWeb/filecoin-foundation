@@ -1,8 +1,11 @@
-import type { DigestIssueData } from './getDigestIssueData'
+type GuestEditor = {
+  fullName: string
+  title: string
+}
 
 export function getDigestIssueDescription(
-  description: DigestIssueData['description'],
-  guestEditor: DigestIssueData['guestEditor'],
+  description: string,
+  guestEditor: GuestEditor,
 ) {
   return [
     `Featuring Guest Editor ${guestEditor.fullName}, ${guestEditor.title}.`,

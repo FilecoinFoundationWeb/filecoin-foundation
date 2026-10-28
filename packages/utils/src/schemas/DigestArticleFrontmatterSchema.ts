@@ -18,7 +18,6 @@ const DigestArticleFrontmatterFields = {
       }),
     )
     .min(1),
-  content: z.string(),
 }
 
 export const DigestArticleFrontmatterSchema = z.strictObject({
