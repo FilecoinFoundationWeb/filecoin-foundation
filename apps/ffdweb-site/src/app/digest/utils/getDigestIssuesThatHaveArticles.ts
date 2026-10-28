@@ -1,5 +1,8 @@
+import { getEntryOrNotFound } from '@filecoin-foundation/utils/getEntryOrNotFound'
+
+import { digestIssueCollection } from '@/qino/collections/digestIssues'
+
 import { getDigestArticlesData } from './getDigestArticleData'
-import { getDigestIssueData } from './getDigestIssueData'
 
 export async function getDigestIssuesThatHaveArticles() {
   const allArticles = await getDigestArticlesData()
@@ -9,7 +12,9 @@ export async function getDigestIssuesThatHaveArticles() {
   )
 
   const allIssues = await Promise.all(
-    allIssueNumbers.map((issueNumber) => getDigestIssueData(issueNumber)),
+    allIssueNumbers.map((issueNumber) =>
+      getEntryOrNotFound(digestIssueCollection, issueNumber.toString()),
+    ),
   )
 
   return allIssues.sort((a, b) => b.issueNumber - a.issueNumber)

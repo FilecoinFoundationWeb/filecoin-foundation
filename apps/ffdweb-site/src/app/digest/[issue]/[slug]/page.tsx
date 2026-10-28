@@ -3,11 +3,13 @@ import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { getDigestArticleStaticParams } from '@filecoin-foundation/utils/getDigestArticleStaticParams'
+import { getEntryOrNotFound } from '@filecoin-foundation/utils/getEntryOrNotFound'
 import type { DigestArticleParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
+
+import { digestArticleCollection } from '@/qino/collections/digestArticles'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -15,10 +17,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
-import {
-  getDigestArticleData,
-  getDigestArticlesData,
-} from '../../utils/getDigestArticleData'
+import { getDigestArticlesData } from '../../utils/getDigestArticleData'
 
 import { AuthorBio } from './components/AuthorBio'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -29,7 +28,7 @@ type DigestArticleProps = {
 
 export default async function DigestArticle(props: DigestArticleProps) {
   const { slug: articleSlug } = await props.params
-  const article = await getDigestArticleData(articleSlug)
+  const article = await getEntryOrNotFound(digestArticleCollection, articleSlug)
   const {
     title,
     issueNumber,
@@ -37,7 +36,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
     articleNumber,
     image,
     authors,
-    content,
+    markdown,
   } = article
 
   const atLeastOneAuthorHasBio = authors.some((author) => author.bio)
@@ -57,7 +56,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
           }}
         />
 
-        {content && <MarkdownContent>{content}</MarkdownContent>}
+        {markdown && <MarkdownContent>{markdown}</MarkdownContent>}
 
         {atLeastOneAuthorHasBio && (
           <aside className="flex flex-col gap-5 sm:w-2/3">
@@ -80,13 +79,19 @@ export default async function DigestArticle(props: DigestArticleProps) {
 
 export async function generateStaticParams() {
   const articles = await getDigestArticlesData()
-  return getDigestArticleStaticParams({ articles })
+
+  return articles.map(({ articlePath }) => {
+    const [issue, slug] = articlePath.split('/')
+    return { issue, slug }
+  })
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
   const { slug: articleSlug } = await props.params
-  const article = await getDigestArticleData(articleSlug)
-  const { seo, image, articlePath } = article
+  const { seo, image, articlePath } = await getEntryOrNotFound(
+    digestArticleCollection,
+    articleSlug,
+  )
 
   return createMetadata({
     path: `${PATHS.DIGEST.path}/${articlePath}`,

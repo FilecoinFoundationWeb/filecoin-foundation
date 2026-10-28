@@ -1,11 +1,13 @@
-import { generateDigestSitemapRoutes } from '@filecoin-foundation/utils/generateDigestSitemapRoutes'
 import { generateSitemap } from '@filecoin-foundation/utils/generateSitemap'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { blogPostCollection } from '@/qino/collections/blogPosts'
+import { digestIssueCollection } from '@/qino/collections/digestIssues'
 import { projectCollection } from '@/qino/collections/projects'
+
+import { getDigestArticlesData } from '@/digest/utils/getDigestArticleData'
 
 export default async function sitemap() {
   const routes = await generateSitemap({
@@ -23,14 +25,7 @@ export default async function sitemap() {
     ],
   })
 
-  const { path, issuesContentPath, articlesContentPath } = PATHS.DIGEST
-
-  const digestRoutes = await generateDigestSitemapRoutes({
-    digestPath: path,
-    baseUrl: BASE_URL,
-    issuesContentPath,
-    articlesContentPath,
-  })
+  const digestRoutes = await generateDigestRoutes()
 
   return [...routes, ...digestRoutes]
 }
@@ -46,4 +41,23 @@ function withSlug<Entry extends EntryWithMeta>(collection: {
     const entries = await collection.getEntries()
     return entries.map((entry) => ({ ...entry, slug: entry._meta.slug }))
   }
+}
+
+async function generateDigestRoutes() {
+  const [issues, articles] = await Promise.all([
+    digestIssueCollection.getEntries(),
+    getDigestArticlesData(),
+  ])
+
+  const issueRoutes = issues.map(({ issuePath, updatedOn }) => ({
+    url: `${BASE_URL}${PATHS.DIGEST.path}/${issuePath}`,
+    lastModified: updatedOn.toISOString(),
+  }))
+
+  const articleRoutes = articles.map(({ articlePath, updatedOn }) => ({
+    url: `${BASE_URL}${PATHS.DIGEST.path}/${articlePath}`,
+    lastModified: updatedOn.toISOString(),
+  }))
+
+  return [...issueRoutes, ...articleRoutes]
 }
