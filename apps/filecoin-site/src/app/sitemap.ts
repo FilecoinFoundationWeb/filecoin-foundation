@@ -6,8 +6,7 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { blogPostCollections } from '@/qino/collections/blogPosts'
-
-import { getCaseStudiesData } from '@/case-studies/utils/getCaseStudyData'
+import { caseStudyCollections } from '@/qino/collections/caseStudies'
 
 export default function sitemap() {
   return generateSitemap({
@@ -38,9 +37,11 @@ async function getAllBlogPosts() {
 }
 
 async function getAllCaseStudies() {
-  const caseStudies = await getLocalizedData(getCaseStudiesData)
+  const caseStudies = await getLocalizedData((locale) =>
+    caseStudyCollections[locale].getEntries(),
+  )
 
-  return caseStudies.map(({ slug, publishedOn, updatedOn }) => ({
+  return caseStudies.map(({ _meta: { slug }, publishedOn, updatedOn }) => ({
     slug,
     updatedOn: updatedOn || publishedOn,
   }))

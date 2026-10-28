@@ -11,14 +11,15 @@ import type { SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
+import { caseStudyCollections } from '@/qino/collections/caseStudies'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getEntryOrNotFound } from '@/utils/getEntryOrNotFound'
 import { getLocalePath } from '@/utils/getLocalePath'
 
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import { PageHeader } from '../components/PageHeader'
-import { getCaseStudyData, getCaseStudiesData } from '../utils/getCaseStudyData'
 
 import { TextCard } from './components/TextCard'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -34,13 +35,13 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
   const t = await getTranslations(PATHS.CASE_STUDIES.path)
 
   // #todo: Add all case studies and make challenge, solution, and results required
-  const data = await getCaseStudyData(slug, locale)
+  const data = await getEntryOrNotFound(caseStudyCollections[locale], slug)
 
   const {
     title,
     cardDescription,
     pageDescription,
-    content,
+    markdown,
     image,
     challenge,
     solution,
@@ -73,10 +74,10 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
         </PageSection>
       )}
 
-      {content && pageDescription && (
+      {markdown && pageDescription && (
         <PageSection backgroundVariant="light">
           <div className="mx-auto max-w-3xl">
-            <BaseMarkdownContent>{content}</BaseMarkdownContent>
+            <BaseMarkdownContent>{markdown}</BaseMarkdownContent>
           </div>
         </PageSection>
       )}
@@ -87,8 +88,8 @@ export default async function CaseStudyArticle(props: CaseStudyArticleProps) {
 export async function generateStaticParams() {
   const params = await Promise.all(
     LOCALES.map(async (locale) => {
-      const caseStudies = await getCaseStudiesData(locale)
-      return caseStudies.map(({ slug }) => ({ slug, locale }))
+      const caseStudies = await caseStudyCollections[locale].getEntries()
+      return caseStudies.map(({ _meta: { slug } }) => ({ slug, locale }))
     }),
   )
 
@@ -97,7 +98,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: CaseStudyArticleProps) {
   const { slug, locale } = await props.params
-  const { seo, image } = await getCaseStudyData(slug, locale)
+  const { seo, image } = await getEntryOrNotFound(
+    caseStudyCollections[locale],
+    slug,
+  )
 
   return createMetadata({
     path: await getLocalePath(`${PATHS.CASE_STUDIES.path}/${slug}`),
