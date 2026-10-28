@@ -11,9 +11,9 @@ import { BlogPostFrontmatterSchema } from '@/blog/schemas/BlogPostFrontmatterSch
 export const blogPostCollection = qino.defineCollection({
   directory: 'blog',
   extension: '.md',
-  schema: BlogPostFrontmatterSchema.omit({ content: true })
-    .transform(camelcaseKeysDeep)
-    .transform((post) => withSeoTitleFallback(post)),
+  schema: BlogPostFrontmatterSchema.transform(camelcaseKeysDeep).transform(
+    (post) => withSeoTitleFallback(post),
+  ),
   views: (view) => ({
     default: view({
       augment: (post) => ({
@@ -24,3 +24,4 @@ export const blogPostCollection = qino.defineCollection({
 })
 
 export type BlogPost = Infer<typeof blogPostCollection>['output']
+export type BlogPostPreview = Omit<BlogPost, 'markdown' | 'raw'>

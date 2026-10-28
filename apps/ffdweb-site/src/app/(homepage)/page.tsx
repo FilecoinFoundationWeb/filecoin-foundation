@@ -10,6 +10,8 @@ import { PATHS } from '@/constants/paths'
 import { SEO } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
+import { blogPostCollection } from '@/qino/collections/blogPosts'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -28,12 +30,10 @@ import { FEATURED_PROJECTS } from './constants/featuredProjects'
 import { learningResources } from './constants/learningResources'
 import { getFeaturedProjects } from './utils/getFeaturedProjects'
 
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
-
 export default async function Home() {
   const featuredProjects = await getFeaturedProjects(FEATURED_PROJECTS)
   const featuredBlogPosts = getFeaturedPosts({
-    posts: await getBlogPostsData(),
+    posts: await blogPostCollection.getEntries(),
     limit: 6,
   })
 
@@ -139,8 +139,14 @@ export default async function Home() {
       >
         <CardGrid as="section" cols="smTwoLgThree">
           {featuredBlogPosts.map((post) => {
-            const { slug, category, title, description, image, publishedOn } =
-              post
+            const {
+              _meta: { slug },
+              category,
+              title,
+              description,
+              image,
+              publishedOn,
+            } = post
 
             const categoryLabel = getCategoryLabel({
               collectionName: 'blog_posts',

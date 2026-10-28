@@ -4,7 +4,8 @@ import { generateSitemap } from '@filecoin-foundation/utils/generateSitemap'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { blogPostCollection } from '@/qino/collections/blogPosts'
+
 import { getProjectsData } from '@/projects/utils/getProjectData'
 
 export default async function sitemap() {
@@ -13,7 +14,7 @@ export default async function sitemap() {
     baseUrl: BASE_URL,
     dynamicRoutes: [
       {
-        getData: getBlogPostsData,
+        getData: withSlug(blogPostCollection),
         basePath: PATHS.BLOG.path,
       },
       {
@@ -33,4 +34,17 @@ export default async function sitemap() {
   })
 
   return [...routes, ...digestRoutes]
+}
+
+type EntryWithMeta = {
+  _meta: { slug: string }
+}
+
+function withSlug<Entry extends EntryWithMeta>(collection: {
+  getEntries: () => Promise<Array<Entry>>
+}) {
+  return async function () {
+    const entries = await collection.getEntries()
+    return entries.map((entry) => ({ ...entry, slug: entry._meta.slug }))
+  }
 }
