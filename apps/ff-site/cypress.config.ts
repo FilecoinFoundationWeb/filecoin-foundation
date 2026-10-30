@@ -4,6 +4,7 @@ import {
   getEntryFrontmatter,
   getPageFrontmatterSeo,
   getRandomSlug,
+  requestExternalLink,
 } from '@filecoin-foundation/cypress/tasks'
 
 export default defineConfig({
@@ -16,6 +17,7 @@ export default defineConfig({
         getEntryFrontmatter,
         getPageFrontmatterSeo,
         getRandomSlug,
+        requestExternalLink,
       })
     },
   },
