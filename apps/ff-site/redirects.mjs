@@ -256,6 +256,11 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/ecosystem-explorer/dvol',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
     source: '/ecosystem-explorer/e-ipfs',
     destination: '/ecosystem-explorer',
     permanent: true,
@@ -271,13 +276,38 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/ecosystem-explorer/filecoin-saturn',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/fission',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/fleek',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
     source: '/ecosystem-explorer/guaridos',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/lurk-lab',
     destination: '/ecosystem-explorer',
     permanent: true,
   },
   {
     source: '/ecosystem/muckrock',
     destination: '/ecosystem-explorer/muckrock',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/nft-storage',
+    destination: '/ecosystem-explorer',
     permanent: true,
   },
   {
@@ -296,12 +326,22 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/ecosystem-explorer/starchain',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
     source: '/ecosystem-explorer/stfil',
     destination: '/ecosystem-explorer',
     permanent: true,
   },
   {
     source: '/ecosystem-explorer/waterlily-ai',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/web3-storage',
     destination: '/ecosystem-explorer',
     permanent: true,
   },
