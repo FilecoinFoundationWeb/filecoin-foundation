@@ -25,17 +25,19 @@ import {
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
+import type { LearningResourcePreview } from '@/qino/collections/learningResources'
+
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
+
 
 import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'
 
-import type { LearningResource } from '../types/learningResourceType'
 import { entryMatchesResourceQuery } from '../utils/entryMatchesResourceQuery'
 
 type LearningResourcesContentProps = {
-  resources: Array<LearningResource>
+  resources: Array<LearningResourcePreview>
 }
 
 const LEARNING_RESOURCES_COLLECTION_NAME = 'learning_resources'
@@ -131,8 +133,14 @@ export function LearningResourcesContent({
     >
       <CardGrid as="section" cols="smTwo" hasGridAutoRows={false}>
         {paginatedResults.map((resource) => {
-          const { slug, title, description, category, resourceType, link } =
-            resource
+          const {
+            _meta: { slug },
+            title,
+            description,
+            category,
+            resourceType,
+            link,
+          } = resource
 
           const categoryLabel = getCategoryLabel({
             collectionName: LEARNING_RESOURCES_COLLECTION_NAME,

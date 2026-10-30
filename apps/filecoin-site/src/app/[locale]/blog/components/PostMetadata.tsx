@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { useFormatter } from 'next-intl'
 
-import type { BlogPost } from '../types/blogPostType'
+import type { BlogPost } from '@/qino/collections/blogPosts'
 
 type PostMetadataProps = {
   author?: BlogPost['author']

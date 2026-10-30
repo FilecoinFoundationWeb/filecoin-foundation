@@ -8,10 +8,13 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { TagGroup } from '@filecoin-foundation/ui/TagComponents'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { getEntryOrNotFound } from '@filecoin-foundation/utils/getEntryOrNotFound'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
+
+import { projectCollection } from '@/qino/collections/projects'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -19,8 +22,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { CTALink } from '@/components/CTALink'
-
-import { getProjectData, getProjectsData } from '../utils/getProjectData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -30,7 +31,7 @@ type ProjectProps = {
 
 export default async function Project(props: ProjectProps) {
   const { slug } = await props.params
-  const data = await getProjectData(slug)
+  const data = await getEntryOrNotFound(projectCollection, slug)
   const {
     category,
     title,
@@ -102,13 +103,13 @@ export default async function Project(props: ProjectProps) {
 }
 
 export async function generateStaticParams() {
-  const entries = await getProjectsData()
-  return entries.map(({ slug }) => ({ slug }))
+  const entries = await projectCollection.getEntries()
+  return entries.map(({ _meta: { slug } }) => ({ slug }))
 }
 
 export async function generateMetadata(props: ProjectProps) {
   const { slug } = await props.params
-  const { image, seo } = await getProjectData(slug)
+  const { image, seo } = await getEntryOrNotFound(projectCollection, slug)
 
   return createMetadata({
     path: `${PATHS.PROJECTS.path}/${slug}`,

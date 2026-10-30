@@ -8,12 +8,12 @@ import { PATHS } from '@/constants/paths'
 
 import { SimpleCardWithLogo } from '@/components/SimpleCardWithLogo'
 
-import { getCaseStudiesData } from '../utils/getCaseStudyData'
+import type { getCaseStudiesByFeaturedStatus } from '../utils/getCaseStudiesByFeaturedStatus'
 
-type CaseStudiesProps = {
-  featured: Awaited<ReturnType<typeof getCaseStudiesData>>
-  upcoming: Awaited<ReturnType<typeof getCaseStudiesData>>
-}
+type CaseStudiesProps = Pick<
+  Awaited<ReturnType<typeof getCaseStudiesByFeaturedStatus>>,
+  'featured' | 'upcoming'
+>
 
 export async function CaseStudiesGrid({
   featured,
@@ -31,18 +31,20 @@ export async function CaseStudiesGrid({
             description={t('featured.description')}
           >
             <CardGrid as="ul" variant="lgTwoWide">
-              {featured.map(({ title, cardDescription, logo, slug }) => (
-                <SimpleCardWithLogo
-                  key={slug}
-                  title={title}
-                  description={cardDescription}
-                  logo={logo}
-                  cta={{
-                    href: `${PATHS.CASE_STUDIES.path}/${slug}`,
-                    text: t('featured.readCaseStudy'),
-                  }}
-                />
-              ))}
+              {featured.map(
+                ({ title, cardDescription, logo, _meta: { slug } }) => (
+                  <SimpleCardWithLogo
+                    key={slug}
+                    title={title}
+                    description={cardDescription}
+                    logo={logo}
+                    cta={{
+                      href: `${PATHS.CASE_STUDIES.path}/${slug}`,
+                      text: t('featured.readCaseStudy'),
+                    }}
+                  />
+                ),
+              )}
             </CardGrid>
           </SectionContent>
         </PageSection>
@@ -57,7 +59,13 @@ export async function CaseStudiesGrid({
           >
             <CardGrid as="ul" variant="lgTwoWide">
               {upcoming.map(
-                ({ title, cardDescription, logo, website, slug }) => (
+                ({
+                  title,
+                  cardDescription,
+                  logo,
+                  website,
+                  _meta: { slug },
+                }) => (
                   <SimpleCardWithLogo
                     key={slug}
                     title={title}

@@ -2,9 +2,12 @@ import { Suspense } from 'react'
 
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { omitMarkdown } from '@filecoin-foundation/utils/omitMarkdown'
 
 import { PATHS } from '@/constants/paths'
 import { FFDW_URLS } from '@/constants/siteMetadata'
+
+import { learningResourceCollection } from '@/qino/collections/learningResources'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -16,10 +19,9 @@ import { PageHeader } from '@/components/PageHeader'
 import { LearningResourcesContent } from './components/LearningResourcesContent'
 import { LEARNING_RESOURCES_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getLearningResourcesData } from './utils/getLearningResourceData'
 
 export default async function LearningResources() {
-  const resources = await getLearningResourcesData()
+  const resources = await learningResourceCollection.getEntries()
 
   return (
     <PageLayout gap="large">
@@ -33,7 +35,7 @@ export default async function LearningResources() {
       />
 
       <Suspense>
-        <LearningResourcesContent resources={resources} />
+        <LearningResourcesContent resources={resources.map(omitMarkdown)} />
       </Suspense>
 
       <CTASection

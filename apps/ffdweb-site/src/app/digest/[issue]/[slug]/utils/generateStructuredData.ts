@@ -1,13 +1,13 @@
 import type { WebPage, WithContext } from 'schema-dts'
 
-import type { DigestArticleData } from '@filecoin-foundation/utils/types/digestType'
-
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
+
+import type { DigestArticleEntry } from '@/qino/collections/digestArticles'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 export function generateStructuredData(
-  data: DigestArticleData,
+  data: DigestArticleEntry,
 ): WithContext<WebPage> {
   const { seo, articlePath } = data
 

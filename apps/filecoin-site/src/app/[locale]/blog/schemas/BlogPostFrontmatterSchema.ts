@@ -25,15 +25,12 @@ export const BlogPostFrontmatterSchema = z.strictObject({
       alt: z.string().optional(),
     })
     .optional(),
-  date: z
-    .union([z.string().transform(transformDate), z.date()])
-    .pipe(z.coerce.date()),
+  date: z.string().transform(transformDate).pipe(z.coerce.date()),
   categories: z
     .array(z.string())
     .transform(transformCategories)
     .pipe(z.array(AllowedCategoriesSchema)),
   dim_image: z.boolean().optional(),
-  content: z.string(),
   seo: SeoMetadataWithOptionalTitleSchema.optional(),
   double_column_inverted: z.boolean().optional(),
   double_column_mode: z.boolean().optional(),
@@ -46,7 +43,7 @@ export const BlogPostFrontmatterSchema = z.strictObject({
   _template: z.string().optional(),
 })
 
-function transformDate(date: string | Date | undefined) {
+function transformDate(date: string) {
   if (!date) {
     return new Date()
   }

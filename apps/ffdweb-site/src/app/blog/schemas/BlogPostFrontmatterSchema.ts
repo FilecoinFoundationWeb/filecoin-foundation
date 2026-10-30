@@ -15,7 +15,6 @@ const CategorySchema = createEnumSchema(validCategoryIds)
 const BlogPostFields = {
   title: z.string(),
   category: CategorySchema,
-  content: z.string(),
 }
 
 export const BlogPostFrontmatterSchema = z.strictObject({

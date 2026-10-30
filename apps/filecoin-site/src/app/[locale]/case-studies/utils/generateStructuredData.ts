@@ -3,7 +3,7 @@ import type { StructuredDataParams } from '@filecoin-foundation/utils/types/stru
 
 import { PATHS } from '@/constants/paths'
 
-import type { CaseStudy } from '../types/caseStudyType'
+import type { CaseStudy } from '@/qino/collections/caseStudies'
 
 import { generateCaseStudiesListStructuredData } from './generateCaseStudiesListStructuredData'
 
@@ -14,11 +14,13 @@ export function generateStructuredData(
   return generateCaseStudiesListStructuredData({
     name: seo.title,
     description: seo.description,
-    items: sortedCaseStudies.map(({ slug, title, pageDescription, image }) => ({
-      path: `${PATHS.CASE_STUDIES.path}/${slug}`,
-      headline: title,
-      description: pageDescription,
-      image: image?.src, // #todo: Make image required
-    })),
+    items: sortedCaseStudies.map(
+      ({ _meta: { slug }, title, pageDescription, image }) => ({
+        path: `${PATHS.CASE_STUDIES.path}/${slug}`,
+        headline: title,
+        description: pageDescription,
+        image: image?.src, // #todo: Make image required
+      }),
+    ),
   })
 }

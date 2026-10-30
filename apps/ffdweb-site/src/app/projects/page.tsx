@@ -2,8 +2,11 @@ import { Suspense } from 'react'
 
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { omitMarkdown } from '@filecoin-foundation/utils/omitMarkdown'
 
 import { PATHS } from '@/constants/paths'
+
+import { projectCollection } from '@/qino/collections/projects'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -15,10 +18,9 @@ import { PageHeader } from '@/components/PageHeader'
 import { ProjectsContent } from './components/ProjectsContent'
 import { PROJECTS_SEO } from './constants/seo'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getProjectsData } from './utils/getProjectData'
 
 export default async function Projects() {
-  const projects = await getProjectsData()
+  const projects = await projectCollection.getEntries()
 
   return (
     <PageLayout gap="large">
@@ -33,7 +35,7 @@ export default async function Projects() {
       />
 
       <Suspense>
-        <ProjectsContent projects={projects} />
+        <ProjectsContent projects={projects.map(omitMarkdown)} />
       </Suspense>
 
       <ContactCTA />

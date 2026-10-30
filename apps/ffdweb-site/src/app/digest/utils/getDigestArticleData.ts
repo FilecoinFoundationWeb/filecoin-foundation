@@ -1,14 +1,9 @@
-import {
-  getDigestArticleData as sharedGetDigestArticleData,
-  getDigestArticlesData as sharedGetDigestArticlesData,
-} from '@filecoin-foundation/utils/getDigestArticleData'
+import { validateUniqueArticleNumbers } from '@filecoin-foundation/utils/validateUniqueArticleNumbers'
 
-import { PATHS } from '@/constants/paths'
-
-export async function getDigestArticleData(slug: string) {
-  return sharedGetDigestArticleData(slug, PATHS.DIGEST.articlesContentPath)
-}
+import { digestArticleCollection } from '@/qino/collections/digestArticles'
 
 export async function getDigestArticlesData() {
-  return sharedGetDigestArticlesData(PATHS.DIGEST.articlesContentPath)
+  const articles = await digestArticleCollection.getEntries()
+  validateUniqueArticleNumbers(articles)
+  return articles
 }

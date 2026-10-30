@@ -45,3 +45,6 @@ rss.xml
 
 # sentry Config File
 .env.sentry-build-plugin
+
+# qino
+qino/_generated/

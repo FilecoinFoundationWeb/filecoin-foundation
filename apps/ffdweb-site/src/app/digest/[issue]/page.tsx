@@ -3,11 +3,14 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { getDigestIssueDescription } from '@filecoin-foundation/utils/getDigestIssueDescription'
+import { getEntryOrNotFound } from '@filecoin-foundation/utils/getEntryOrNotFound'
 import type { DigestIssueParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { CARET_RIGHT } from '@/constants/cardCTAIcons'
 import { PATHS } from '@/constants/paths'
 import { ORGANIZATION_NAME_SHORT } from '@/constants/siteMetadata'
+
+import { digestIssueCollection } from '@/qino/collections/digestIssues'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -19,10 +22,6 @@ import { PageSection } from '@/components/PageSection'
 import { DIGEST_SEO } from '../constants/seo'
 import { generateStructuredData } from '../utils/generateStructuredData'
 import { getDigestArticlesWithIssueContext } from '../utils/getDigestArticlesWithIssueContext'
-import {
-  getDigestIssueData,
-  getDigestIssuesData,
-} from '../utils/getDigestIssueData'
 import { parseIssueSlug } from '../utils/parseDigestParams'
 
 type DigestIssueProps = {
@@ -33,8 +32,10 @@ export default async function DigestIssue(props: DigestIssueProps) {
   const { issue } = await props.params
   const issueNumber = parseIssueSlug(issue)
 
-  const { kicker, title, description, guestEditor } =
-    await getDigestIssueData(issueNumber)
+  const { kicker, title, description, guestEditor } = await getEntryOrNotFound(
+    digestIssueCollection,
+    issueNumber.toString(),
+  )
 
   const articles = await getDigestArticlesWithIssueContext(issueNumber)
 
@@ -102,7 +103,7 @@ export default async function DigestIssue(props: DigestIssueProps) {
 }
 
 export async function generateStaticParams() {
-  const allIssues = await getDigestIssuesData()
+  const allIssues = await digestIssueCollection.getEntries()
 
   return allIssues.map(({ issuePath }) => ({
     issue: issuePath,
@@ -113,7 +114,10 @@ export async function generateMetadata(props: DigestIssueProps) {
   const { issue } = await props.params
   const issueNumber = parseIssueSlug(issue)
 
-  const digestIssue = await getDigestIssueData(issueNumber)
+  const digestIssue = await getEntryOrNotFound(
+    digestIssueCollection,
+    issueNumber.toString(),
+  )
   const { seo, image, issuePath } = digestIssue
 
   return createMetadata({
