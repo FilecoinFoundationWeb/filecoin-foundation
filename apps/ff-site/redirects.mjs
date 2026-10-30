@@ -215,6 +215,11 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/ecosystem-explorer/akave',
+    destination: '/ecosystem-explorer/akave-cloud',
+    permanent: true,
+  },
+  {
     source: '/ecosystem-explorer/algovera',
     destination: '/ecosystem-explorer',
     permanent: true,
@@ -357,6 +362,11 @@ export const redirects = [
   },
   {
     source: '/ecosystem-explorer/stfil',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/storacha-network',
     destination: '/ecosystem-explorer',
     permanent: true,
   },
