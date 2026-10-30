@@ -15,23 +15,19 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
-import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import EventsContent from './components/EventsContent'
-import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getMetaData } from './utils/getMetaData'
 
 type Props = {
   searchParams: AsyncQueryParams
 }
 
 export default async function Events(props: Props) {
-  const { seo, featuredEntry: featuredEvent } = await eventsPageItem.getEntry()
+  const { seo } = await eventsPageItem.getEntry()
 
   const searchParams = await props.searchParams
   const events = await eventCollection.getEntries()
@@ -39,25 +35,7 @@ export default async function Events(props: Props) {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
-      <PageHeader
-        sectionDividerTitle="Featured"
-        title={featuredEvent.title}
-        description={{ text: featuredEvent.description }}
-        metaData={getMetaData({
-          startDate: featuredEvent.startDate,
-          endDate: featuredEvent.endDate,
-          location: featuredEvent.location.primary,
-        })}
-        image={{
-          ...(featuredEvent.image || graphicsData.imageFallback.data),
-          alt: '',
-          objectFit: 'cover',
-        }}
-      >
-        <Button href={`${PATHS.EVENTS.path}/${featuredEvent._meta.slug}`}>
-          {DEFAULT_CTA_TEXT}
-        </Button>
-      </PageHeader>
+      <h1 className="sr-only">Events</h1>
       <PageSection kicker="Events" title="Network Events">
         <EventsContent searchParams={searchParams} events={events} />
       </PageSection>
