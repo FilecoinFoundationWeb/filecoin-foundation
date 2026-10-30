@@ -1,6 +1,8 @@
 import '@percy/cypress'
 
 const IMAGE_WARMUP_TIMEOUT_MS = 120000
+// The optimizer caches one variant per negotiated format, so match a browser
+const IMAGE_ACCEPT_HEADER = 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
 
 export function testVisualSnapshot(path: string) {
   cy.visit(path)
@@ -22,7 +24,11 @@ export function testVisualSnapshot(path: string) {
 function warmOptimizedImages() {
   cy.window().then({ timeout: IMAGE_WARMUP_TIMEOUT_MS }, async (win) => {
     const urls = getOptimizedImageUrls(win.document)
-    await Promise.allSettled(urls.map((url) => win.fetch(url)))
+    await Promise.allSettled(
+      urls.map((url) =>
+        win.fetch(url, { headers: { Accept: IMAGE_ACCEPT_HEADER } }),
+      ),
+    )
   })
 }
 
