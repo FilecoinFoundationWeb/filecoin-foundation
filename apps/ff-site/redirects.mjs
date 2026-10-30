@@ -215,6 +215,11 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/ecosystem-explorer/algovera',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
     source: '/ecosystem/project/artifact-labs',
     destination: '/ecosystem-explorer',
     permanent: true,
@@ -236,6 +241,11 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/ecosystem-explorer/clover',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
     source: '/ecosystem-explorer/cooperdb',
     destination: '/ecosystem-explorer',
     permanent: true,
@@ -247,6 +257,11 @@ export const redirects = [
   },
   {
     source: '/ecosystem/project/datahaus',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/decentroge',
     destination: '/ecosystem-explorer',
     permanent: true,
   },
@@ -311,6 +326,11 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/ecosystem-explorer/niftyguilds',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
     source: '/ecosystem-explorer/opengate',
     destination: '/ecosystem-explorer',
     permanent: true,
@@ -322,6 +342,11 @@ export const redirects = [
   },
   {
     source: '/ecosystem-explorer/solmedia',
+    destination: '/ecosystem-explorer',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem-explorer/spex',
     destination: '/ecosystem-explorer',
     permanent: true,
   },

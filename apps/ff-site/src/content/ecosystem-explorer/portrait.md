@@ -11,7 +11,7 @@ tech:
   - ipfs
 image:
   src: /assets/images/659751868be4ed306bb8b8df_portrait.png
-website: "https://portrait.gg/"
+website: "https://portrait.so/"
 repo: "https://github.com/portraitgg"
 twitter: "https://twitter.com/portrait_gg"
 category: arts-collectibles-nfts
