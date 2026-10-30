@@ -16,7 +16,7 @@ A new proposal, Solstice, aims to make one of the most significant changes to Fi
 
 The basic idea is straightforward: instead of requiring providers to complete a special approval process to earn higher rewards, network consensus providers would receive full rewards automatically. At the same time, a portion of block rewards would be programmatically directed toward the services that attract customers, onboard data, and work directly with storage providers.
 
-The Filecoin Improvement Proposal (FIP) 0118 is still a draft and is open for community feedback at: [Create fip 0118-solstice.md by irenegia · Pull Request #1270 · filecoin-project/FIPs ](https://github.com/filecoin-project/FIPs/pull/1270)
+The Filecoin Improvement Proposal (FIP) 0118 is still a draft and is open for community feedback at: [Create fip 0118-solstice.md by irenegia · Pull Request #1270 · filecoin-project/FIPs](https://github.com/filecoin-project/FIPs/pull/1270)
 
 ## Background on the Current System
 

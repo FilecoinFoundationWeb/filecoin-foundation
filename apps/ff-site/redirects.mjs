@@ -66,13 +66,21 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/filecoin-plus/:path*',
+    destination:
+      'https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus',
+    permanent: true,
+  },
+  {
     source: '/filplus',
-    destination: '/filecoin-plus',
+    destination:
+      'https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus',
     permanent: true,
   },
   {
     source: '/filplus/%20%22Filecoin%20Plus%22',
-    destination: '/filecoin-plus',
+    destination:
+      'https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus',
     permanent: true,
   },
   {

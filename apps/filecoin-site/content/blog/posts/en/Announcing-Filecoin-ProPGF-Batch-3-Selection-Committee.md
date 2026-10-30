@@ -21,7 +21,7 @@ As Proactive Public Goods Funding (ProPGF) enters its third batch, our goal is t
 
 The Batch 3 Selection Committee brings together experts from across decentralized storage, crypto-economics, public goods funding, governance, ecosystem development, and open source operations. Members were chosen for their domain expertise, and demonstrated commitment to strengthening the Filecoin ecosystem.
 
-### Selection Committee Members (Batch 3):
+### Selection Committee Members (Batch 3)
 
 * Akersh Srivastava - Head of Product, Filecoin Foundation
 * Clara Tsao - A Founding Officer, Filecoin Foundation
@@ -55,7 +55,7 @@ The Selection Committee plays a pivotal role in ensuring milestone-based funding
 
 ### 1. Assessing Alignment with Filecoin Network Growth
 
-* **Core Infrastructure Maintenance **Committee members assess whether a project contributes to the foundational work that keeps the protocol reliable, performant, and safe. This includes implementations, critical libraries, dependencies, and essential services that the rest of the ecosystem builds on top of.
+* **Core Infrastructure Maintenance**: Committee members assess whether a project contributes to the foundational work that keeps the protocol reliable, performant, and safe. This includes implementations, critical libraries, dependencies, and essential services that the rest of the ecosystem builds on top of.
 * **RFP Responses**: Committee members evaluate whether a project meaningfully responds to published RFPs and delivers support or innovation work in service of ecosystem pods (working group structures focused on product-market fit exploration in key verticals, including Web3 Builders and Web2 Object Storage).
 
 ### 2. Reviewing Application Responses Thoughtfully

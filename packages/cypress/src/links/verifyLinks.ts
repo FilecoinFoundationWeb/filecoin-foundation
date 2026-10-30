@@ -1,5 +1,8 @@
+import type { ExternalLinkResult } from '@filecoin-foundation/cypress/tasks'
+
 const REQUEST_DENIED_STATUS_CODE = 999
 const CLIENT_ERROR_THRESHOLD = 400
+const TASK_TIMEOUT_MS = 40000
 
 export function verifyLinks(path: string, excludedLinks?: string[]) {
   cy.visit(path)
@@ -21,15 +24,21 @@ export function verifyLinks(path: string, excludedLinks?: string[]) {
   })
 }
 
+// Requests run in Node so a slow or unreachable third-party host is logged
+// instead of failing the run (cy.request always throws on timeout)
 function verifyExternalLink(url: string) {
-  cy.request({ url, failOnStatusCode: false, timeout: 60000 }).then(
-    (response) => {
-      if (isClientOrServerError(response.status)) {
-        const errorMessage = getErrorMessage(response)
-        cy.log(`Broken link: ${url} - ${errorMessage}`)
-      }
-    },
-  )
+  cy.task<ExternalLinkResult>('requestExternalLink', url, {
+    timeout: TASK_TIMEOUT_MS,
+  }).then((result) => {
+    if ('error' in result) {
+      cy.log(`Unreachable link: ${url} - ${result.error}`)
+      return
+    }
+
+    if (isClientOrServerError(result.status)) {
+      cy.log(`Broken link: ${url} - ${getErrorMessage(result)}`)
+    }
+  })
 }
 
 function isClientOrServerError(status: number) {
@@ -38,6 +47,12 @@ function isClientOrServerError(status: number) {
   )
 }
 
-function getErrorMessage(response: Cypress.Response<unknown>) {
-  return `Status code: ${response.status} (${response.statusText})`
+function getErrorMessage({
+  status,
+  statusText,
+}: {
+  status: number
+  statusText: string
+}) {
+  return `Status code: ${status} (${statusText})`
 }

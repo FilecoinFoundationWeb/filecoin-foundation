@@ -3,6 +3,7 @@ import { defineConfig } from 'cypress'
 import {
   getEntryFrontmatter,
   getRandomSlug,
+  requestExternalLink,
 } from '@filecoin-foundation/cypress/tasks'
 
 export default defineConfig({
@@ -13,6 +14,7 @@ export default defineConfig({
     setupNodeEvents(on) {
       on('task', {
         getRandomSlug,
+        requestExternalLink,
         getEntryFrontmatter,
       })
     },

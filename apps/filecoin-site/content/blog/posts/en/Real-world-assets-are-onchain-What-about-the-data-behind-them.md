@@ -18,7 +18,7 @@ That matters especially for assets like private credit and structured products, 
 
 Using Avalanche, Interplanetary File System (IPFS), and Filecoin together, engineers in the Filecoin ecosystem, built a working reference architecture to address that problem and it's now live on public testnets, open source, and free to adapt.
 
-### A hybrid architecture for real world assets
+## A hybrid architecture for real world assets
 
 | Layer             | Role                                                     | Output                                             |
 | ----------------- | -------------------------------------------------------- | -------------------------------------------------- |
@@ -37,7 +37,7 @@ The working example publishes a synthetic property record set for 123 Main Stree
 
 Each document is content-addressed with IPFS, stored on Filecoin, and listed in a manifest whose CID is anchored on Avalanche. It runs live on Avalanche Fuji and Filecoin Calibration (both testnets), and trying it doesn’t require a wallet.
 
-### How it works
+## How it works
 
 1. Store the source record. An issuer adds an offchain record: a deed, appraisal, or certification.
 2. Create a content-addressed reference. IPFS derives a CID from the content itself. Change the record, and the CID changes too.
@@ -58,7 +58,7 @@ In the demo's "Check a document" view, either file is hashed in the browser and 
 
 Filecoin stores the record and keeps proving it's still there. That lets anyone check it themselves whether the record has been altered.
 
-### Why this matters for RWA
+## Why this matters for RWA
 
 Real world assets often carry more supporting data than belongs directly onchain. The opportunity here is to create a cryptographically verifiable relationship between an onchain asset and the offchain information supporting it.
 
@@ -68,13 +68,13 @@ In a hybrid onchain/offchain architecture, the token can represent ownership or 
 * **Persistence**: keep supporting data available beyond the lifecycle of any single application, database, or cloud account.
 * **Portability**: reference the same content-addressed data across applications and infrastructure.
 
-### Build it yourself
+## Build it yourself
 
 The implementation is open source, with a registry contract on Avalanche Fuji and a data set [you can inspect directly](https://pdp.filecoin.cloud/calibration/dataset/54), including its Filecoin storage proofs.
 
 Verification needs no private key, wallet, or funds:
 
-```
+```bash
 git clone https://github.com/SgtPooki/Avalanche-IPFS-Filecoin-RWA-reference-Architecture.git
 cd Avalanche-IPFS-Filecoin-RWA-reference-Architecture
 npm ci
@@ -82,7 +82,7 @@ npm run verify
 
 ```
 
-### Building real world assets on Avalanche?
+## Building real world assets on Avalanche?
 
 Available now: the reference architecture for verifiable offchain data for tokenized assets and [working demo](https://docs.filecoin.io/build-on-filecoin/cookbook/rwa-reference-architecture).
 

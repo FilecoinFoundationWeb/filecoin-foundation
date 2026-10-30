@@ -14,28 +14,6 @@ export const ROOT_METADATA = {
   metadataBase: new URL(BASE_URL),
 } satisfies Metadata
 
-const FIL_PLUS_URLS = {
-  allocators: {
-    blog: 'https://blog.allocator.tech/',
-    rfa: 'https://blog.allocator.tech/2024/04/allocator-tech-blog.html',
-    site: 'https://allocator.tech/',
-  },
-  dataCap: {
-    allocatorsApplication:
-      'https://github.com/filecoin-project/Allocator-Governance?tab=readme-ov-file#how-to-apply-to-become-an-allocator-of-datacap',
-    applicationDocs:
-      'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus#acquiring-datacap-for-clients-and-builders',
-    docs: 'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus#datacap',
-    metrics: 'https://datacapstats.io/',
-  },
-  documentation:
-    'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus',
-  filPlusParticipants:
-    'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus#filecoin-processes-and-participants',
-  notary: 'https://github.com/filecoin-project/Allocator-Governance',
-  slack: 'https://filecoinproject.slack.com/archives/C01DLAPKDGX',
-}
-
 const FILECOIN_DOCS_URLS = {
   site: 'https://docs.filecoin.io/',
   waysToContribute:
@@ -191,7 +169,6 @@ const FILECOIN_URLS = {
 export {
   BASE_DOMAIN,
   BASE_URL,
-  FIL_PLUS_URLS,
   FILECOIN_DOCS_URLS,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
