@@ -11,7 +11,7 @@ related_article_3: ''
 
 Filecoin was built from day one to persist the InterPlanetary File System (IPFS): cryptographic proof that content-addressed data is actually still there. That's been the idea since before the network existed. Thousands of developers already rely on IPFS to host websites, apps, datasets, and agents, and today new tools make that premise ready to use right now.
 
-## Storing IPFS data? You might be paying too much to pin.
+## Storing IPFS data? You might be paying too much to pin
 
 IPFS doesn't promise that your data sticks around on its own. Nothing on the network is obligated to keep a copy, so most people pay a pinning service (such as Pinata, or previously Infura or Storacha) to guarantee their files stay hosted and reachable, the way you'd pay for web hosting. You can now get that same guarantee from Filecoin: your pinned IPFS data, same CIDs, no changes needed, at roughly a third the cost of the cheapest pinning alternative we compared.
 
@@ -29,7 +29,7 @@ If you're already paying a vendor to pin data you don't fully control, this is a
 
 The process is scriptable, too. You can hand a coding agent like Claude Code or Cursor a single line and let it read the migration guide and run the steps itself.
 
-## Step two: pin everything new on [Filecoin Pin](https://docs.filecoin.io/build-on-filecoin/cookbook/filecoin-pin) from now on.
+## Step two: pin everything new on [Filecoin Pin](https://docs.filecoin.io/build-on-filecoin/cookbook/filecoin-pin) from now on
 
 **Filecoin Pin** connects IPFS and Filecoin directly, persisting content-addressed data on a verifiable storage network, with no separate migration step required.
 
@@ -55,4 +55,4 @@ Teams are already choosing to store their pinned IPFS data on Filecoin, from NFT
 
 IPFS public gateway infrastructure is [changing](https://blog.ipfs.tech/2026-08-beyond-sponsored-gateways/) but whatever happens at the gateway layer, the CIDs themselves don't have to depend on it. Once your data is on Filecoin, it stays stored, verifiable, and retrievable.
 
-Migrate your CIDs to Filecoin here: [https://filecoin.cloud/ipfs2filecoin ](https://filecoin.cloud/ipfs2filecoin)
+Migrate your CIDs to Filecoin here: [https://filecoin.cloud/ipfs2filecoin](https://filecoin.cloud/ipfs2filecoin)

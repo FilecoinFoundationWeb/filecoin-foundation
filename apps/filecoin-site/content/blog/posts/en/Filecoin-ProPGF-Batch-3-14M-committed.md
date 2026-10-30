@@ -76,7 +76,7 @@ Chain sync and public RPC, providing critical redundancy across the network's en
 
 The network-wide indexer that advertises CID content records so applications, gateways, and storage providers can discover where data is stored — a real dependency for retrieval across the ecosystem.
 
-[Filecoin Data Portal ](https://app.filpgf.io/applications/APP-0QLIOMS2-JSK1EM)- $140,000
+[Filecoin Data Portal](https://app.filpgf.io/applications/APP-0QLIOMS2-JSK1EM)- $140,000
 
 Aggregates Filecoin on- and off-chain data into open, queryable datasets and dashboards — a vendor-neutral open-data layer for the ecosystem.
 
