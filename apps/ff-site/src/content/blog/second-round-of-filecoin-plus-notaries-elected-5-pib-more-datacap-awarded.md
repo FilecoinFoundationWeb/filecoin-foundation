@@ -33,4 +33,4 @@ Missed the election but want to get involved with Filecoin Plus? Join the [\#fil
 
 You can also [read the recap](https://filecoinfoundation.medium.com/missed-the-first-filecoin-plus-day-weve-got-you-covered-638f9eba7abf) of our first Filecoin Plus Day, which outlined the basics of the program and drew more than 100 participants, including Filecoin Plus users, project architects, cryptoecon experts, and miners. If you are interested in receiving DataCap to have your storage needs served through Filecoin, you can find a list of active allocators on the Filecoin Plus Allocators page.
 
-_Editor's note (October 2026): The Filecoin Plus Allocators page on fil.org is no longer available. For current information on DataCap and allocators, see the [Filecoin documentation](https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus)._
+_Editor's note (October 2026): The Filecoin Plus Allocators page on fil.org is no longer available. See the [Filecoin documentation](https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus) for current information on DataCap and allocators._
