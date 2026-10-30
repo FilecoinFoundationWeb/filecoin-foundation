@@ -333,7 +333,7 @@ Additionally, UXIT designed and developed the Filecoin Pin demo, which enabled d
 
 UXIT also delivered a wide range of improvements across fil.org, including upgraded Bug Bounty, Leaderboard, and Filecoin events pages, new Filecoin Plus, Allocators, and GovHub pages, and continued design support for the emerging Fil Poll initiative. The team also released the ecosystem project form, enabling contributors to directly submit their projects for ecosystem-wide visibility. Together, these efforts created a more unified, discoverable, and coherent ecosystem presence.
 
-_Editor's note (October 2026): The Filecoin Plus and Allocators pages on fil.org are no longer available. See the [Filecoin documentation](https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus) for current information on Filecoin Plus (Fil+)._
+_Editor's note (October 2026): The Filecoin Plus (Fil+) program has been sunset, and its pages on fil.org, including Allocators, are no longer available. Read about [Solstice](https://filecoin.io/blog/Solstice-A-New-Reward-Mechanism-for-the-Filecoin-Network), a new reward mechanism for the Filecoin network._
 
 ## Marketing and Communications: Showcasing and Empowering Ecosystem Success
 

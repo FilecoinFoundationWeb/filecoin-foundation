@@ -68,19 +68,19 @@ export const redirects = [
   {
     source: '/filecoin-plus/:path*',
     destination:
-      'https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus',
+      'https://filecoin.io/blog/Solstice-A-New-Reward-Mechanism-for-the-Filecoin-Network',
     permanent: true,
   },
   {
     source: '/filplus',
     destination:
-      'https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus',
+      'https://filecoin.io/blog/Solstice-A-New-Reward-Mechanism-for-the-Filecoin-Network',
     permanent: true,
   },
   {
     source: '/filplus/%20%22Filecoin%20Plus%22',
     destination:
-      'https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus',
+      'https://filecoin.io/blog/Solstice-A-New-Reward-Mechanism-for-the-Filecoin-Network',
     permanent: true,
   },
   {

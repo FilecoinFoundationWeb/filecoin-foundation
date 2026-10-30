@@ -76,4 +76,4 @@ DataCap is a network resource used in deals to incentivize Filecoin storage acto
 
 Clients can request DataCap from allocators, each of whom has their own application process. FF recently added an allocator registry to the Filecoin Plus web page to help data clients connect with prospective allocators.
 
-_Editor's note (October 2026): The Fil+ Allocator Registry on fil.org is no longer available. See the [Filecoin documentation](https://docs.filecoin.io/getting-started/how-storage-works/filecoin-plus) for current information on Filecoin Plus (Fil+)._
+_Editor's note (October 2026): The Filecoin Plus (Fil+) program has been sunset, and the Fil+ Allocator Registry on fil.org is no longer available. Read about [Solstice](https://filecoin.io/blog/Solstice-A-New-Reward-Mechanism-for-the-Filecoin-Network), a new reward mechanism for the Filecoin network._
