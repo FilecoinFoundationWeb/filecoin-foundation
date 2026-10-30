@@ -210,6 +210,11 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: '/ecosystem-explorer/akave',
+    destination: '/ecosystem-explorer/akave-cloud',
+    permanent: true,
+  },
+  {
     source: '/ecosystem/project/akave',
     destination: '/ecosystem-explorer/akave-cloud',
     permanent: true,
