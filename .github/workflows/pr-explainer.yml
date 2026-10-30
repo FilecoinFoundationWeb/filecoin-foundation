@@ -175,13 +175,13 @@ jobs:
             while IFS= read -r page_file; do
               [[ -z "$page_file" ]] && continue
               # Check if file is new (not in base branch)
-              if ! git show "$PR_BASE":"$page_file" &>/dev/null 2>&1; then
+              if ! git show "origin/$PR_BASE":"$page_file" &>/dev/null 2>&1; then
                 # Extract route from path
-                ROUTE=$(echo "$page_file" | sed -E 's|apps/[^/]+/src/app||; s|/page\.(tsx|ts|jsx|js)$||; s|\([^)]+\)/||g; s|^$|/|')
+                ROUTE=$(echo "$page_file" | sed -E 's#apps/[^/]+/src/app##; s#/page\.(tsx|ts|jsx|js)$##; s#/\([^)]+\)##g; s#^$#/#')
                 [[ -z "$ROUTE" ]] && ROUTE="/"
                 NEW_PAGES="$NEW_PAGES\n- \`$ROUTE\` (from \`$page_file\`)"
               else
-                ROUTE=$(echo "$page_file" | sed -E 's|apps/[^/]+/src/app||; s|/page\.(tsx|ts|jsx|js)$||; s|\([^)]+\)/||g; s|^$|/|')
+                ROUTE=$(echo "$page_file" | sed -E 's#apps/[^/]+/src/app##; s#/page\.(tsx|ts|jsx|js)$##; s#/\([^)]+\)##g; s#^$#/#')
                 [[ -z "$ROUTE" ]] && ROUTE="/"
                 MODIFIED_PAGES="$MODIFIED_PAGES\n- \`$ROUTE\` (from \`$page_file\`)"
               fi
