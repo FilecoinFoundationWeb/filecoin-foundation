@@ -2,18 +2,28 @@ UNUSED ASSETS REPORT
 ===================
 
 ff-site:
-  public/assets/images/2025_ffannualreport_gsr_1x.webp
-  Total: 1
+  public/assets/images/starchain.jpg
+  public/assets/images/dvol.png
+  public/assets/images/6598749d492fd7a346d84c3b_nft.storage_logo_white.png
+  public/assets/images/659872f1c67584b1fd35fdf7_filecoinsaturn_logo_white.png
+  public/assets/images/65974d3c02cb39557a1ffd52_web3.Storage-Logo.png
+  public/assets/images/65974a30749bbcefd1c904e3_fleek-xyz-logo-dark-866fe3a5fd4b25673eebd25c841bfe30.png
+  public/assets/images/65974a282128bbdde2005e43_fission.png
+  Total: 7
 
 ffdweb-site:
   Total: 0
 
 filecoin-site:
-  Total: 0
+  public/assets/miniatures/storacha-miniature.svg
+  public/assets/miniatures/singularity-miniature.svg
+  public/assets/images/victor-chang.webp
+  public/assets/images/storacha.webp
+  Total: 4
 
 uxit:
   Total: 0
 
-Total unused: 1
-Total deleted: 1
-Generated: 2026-03-01T03:11:10.141Z
+Total unused: 11
+Total deleted: 11
+Generated: 2026-11-01T08:59:00.821Z
