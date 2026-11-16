@@ -42,7 +42,7 @@ export default async function Grants() {
         description={{ text: header.description }}
         image={graphicsData.grants}
       >
-        <Button href={FILECOIN_FOUNDATION_URLS.grants.github}>Apply Now</Button>
+        <Button href={FILECOIN_FOUNDATION_URLS.grants.propgf}>Apply Now</Button>
       </PageHeader>
 
       <PageSection
@@ -148,7 +148,7 @@ export default async function Grants() {
           </>
         }
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.grants.github,
+          href: FILECOIN_FOUNDATION_URLS.grants.propgf,
           text: 'Apply Now',
         }}
       />
