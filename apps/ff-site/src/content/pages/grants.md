@@ -3,7 +3,6 @@ header:
   title: "Filecoin Grants"
   description:
     [
-      "For the moment, funding requests are being reviewed through ProPGF, the Filecoin network’s public goods funding program, which is funded in part by Filecoin Foundation. Upcoming ProPGF programs, dates and criteria are posted at filpgf.io/propgf.",
       "Filecoin Foundation uses this repository when specific priorities or needs arise.",
     ]
 featured_grant_graduates:

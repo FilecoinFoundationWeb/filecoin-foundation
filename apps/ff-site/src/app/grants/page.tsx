@@ -39,8 +39,22 @@ export default async function Grants() {
       />
       <PageHeader
         title={header.title}
-        description={{ text: header.description }}
         image={graphicsData.grants}
+        description={{
+          text: [
+            <>
+              For the moment, funding requests are being reviewed through
+              ProPGF, the Filecoin network’s public goods funding program, which
+              is funded in part by Filecoin Foundation. Upcoming ProPGF
+              programs, dates and criteria are posted at{' '}
+              <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.grants.propgf}>
+                filpgf.io/propgf
+              </ExternalTextLink>
+              .
+            </>,
+            ...[header.description].flat(),
+          ],
+        }}
       >
         <Button href={FILECOIN_FOUNDATION_URLS.grants.propgf}>Apply Now</Button>
       </PageHeader>
