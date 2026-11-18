@@ -3,8 +3,7 @@ header:
   title: "Filecoin Grants"
   description:
     [
-      "Filecoin Foundation awards grant funding for development projects to foster a more decentralized, efficient, and robust foundation for humanity’s information.",
-      "Grants support a wide range of projects — from developer and data tooling and integrations to applications and research — that benefit ecosystem participants like developers and storage providers.",
+      "Filecoin Foundation uses this repository when specific priorities or needs arise.",
     ]
 featured_grant_graduates:
   [
