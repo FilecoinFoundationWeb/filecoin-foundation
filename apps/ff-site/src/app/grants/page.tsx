@@ -13,18 +13,13 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
-import { Badge } from '@/components/Badge'
-import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { Button } from '@/components/Button'
-import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { FeaturedGrantGraduates } from './components/FeaturedGrantGraduates'
-import { applicationProcessData } from './data/applicationProcessData'
-import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -59,58 +54,8 @@ export default async function Grants() {
         <Button href={FILECOIN_FOUNDATION_URLS.grants.propgf}>Apply Now</Button>
       </PageHeader>
 
-      <PageSection
-        kicker="Opportunities"
-        title="Grants and Funding Opportunities"
-        description="Filecoin Foundation is seeking proposals for developer and data tooling, integrations, research and protocols, storage, retrieval, and the Filecoin Virtual Machine (FVM). These grants fall under the following categories."
-      >
-        <CardGrid as="ul" cols="lgThree">
-          {opportunitiesData.map((card) => {
-            const { title, description, icon, cta } = card
-
-            return (
-              <ExploreSectionCard
-                key={title}
-                cta={cta}
-                heading={{
-                  tag: 'h3',
-                  variant: 'lg',
-                  children: title,
-                  iconProps: {
-                    component: icon,
-                  },
-                }}
-              >
-                {description}
-              </ExploreSectionCard>
-            )
-          })}
-        </CardGrid>
-      </PageSection>
-
       <PageSection kicker="Past Recipients" title="Grant Graduates">
         <FeaturedGrantGraduates grantGraduates={featuredGrantGraduates} />
-      </PageSection>
-
-      <PageSection
-        kicker="Application Process"
-        title="The Filecoin Grants Process"
-      >
-        <BadgeCardGrid cols="smThree">
-          {applicationProcessData.map((card) => {
-            const { step, title, description } = card
-
-            return (
-              <CardWithBadge
-                key={title}
-                title={title}
-                description={description}
-              >
-                <Badge number={step} />
-              </CardWithBadge>
-            )
-          })}
-        </BadgeCardGrid>
       </PageSection>
 
       <PageSection
