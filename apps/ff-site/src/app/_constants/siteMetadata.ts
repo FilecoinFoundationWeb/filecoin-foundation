@@ -73,6 +73,7 @@ const FILECOIN_FOUNDATION_URLS = {
   },
   grants: {
     github: 'https://github.com/filecoin-project/devgrants',
+    propgf: 'https://www.filpgf.io/propgf',
     email: {
       label: 'Ecosystem grants inquiries',
       href: 'mailto:grants@fil.org',
